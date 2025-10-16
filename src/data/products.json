@@ -1,0 +1,101 @@
+[
+  {
+    "slug": "metaspeed-sky-4",
+    "name": "ASICS Metaspeed Sky 4",
+    "brandSlug": "asics",
+    "description": "Carbon-plated marathon racer engineered for efficient stride lengths and max propulsion.",
+    "price": 250,
+    "image": "/shoes/placeholder.jpg",
+    "tags": ["tempo", "race"],
+    "category": "Race Day",
+    "weight": "7.0 oz (198 g)",
+    "stackHeight": "39.5 mm / 34.5 mm",
+    "drop": "5 mm",
+    "surface": "Road",
+    "idealFor": "Marathon racing, fast long runs",
+    "features": [
+      "FF Blast Turbo foam for energetic rebound",
+      "Full-length carbon plate tuned for propulsive toe-off",
+      "MotionWrap upper for lightweight containment"
+    ],
+    "rating": 4.8,
+    "reviews": [
+      {
+        "author": "Keita",
+        "rating": 5,
+        "comment": "Propulsive feel with smooth transitions—ideal for negative split marathons."
+      },
+      {
+        "author": "Amelia",
+        "rating": 4.5,
+        "comment": "Super light and fast, though the fit is snug for wider feet."
+      }
+    ]
+  },
+  {
+    "slug": "on-cloudsurfer-max",
+    "name": "On Cloudsurfer Max",
+    "brandSlug": "on",
+    "description": "Max cushioned trainer with re-engineered CloudTec Phase geometry for buttery landings.",
+    "price": 170,
+    "image": "/shoes/placeholder.jpg",
+    "tags": ["cushion", "daily"],
+    "category": "Daily Trainer",
+    "weight": "9.5 oz (269 g)",
+    "stackHeight": "38 mm / 32 mm",
+    "drop": "6 mm",
+    "surface": "Road",
+    "idealFor": "Easy miles, recovery runs",
+    "features": [
+      "CloudTec Phase midsole for rolling transitions",
+      "Helion superfoam blend for soft yet stable landings",
+      "Engineered mesh upper balances airflow and structure"
+    ],
+    "rating": 4.6,
+    "reviews": [
+      {
+        "author": "Noah",
+        "rating": 4.7,
+        "comment": "The smoothest easy-day shoe in my rotation—legs stay fresh after long efforts."
+      },
+      {
+        "author": "Sara",
+        "rating": 4.4,
+        "comment": "Love the plush ride, but would appreciate a lighter build for uptempo days."
+      }
+    ]
+  },
+  {
+    "slug": "nike-pegasus-41",
+    "name": "Nike Air Zoom Pegasus 41",
+    "brandSlug": "nike",
+    "description": "All-round daily trainer blending ZoomX foam with a snappy forefoot Air Zoom unit.",
+    "price": 140,
+    "image": "/shoes/placeholder.jpg",
+    "tags": ["daily", "tempo"],
+    "category": "Daily Trainer",
+    "weight": "9.0 oz (255 g)",
+    "stackHeight": "37 mm / 27 mm",
+    "drop": "10 mm",
+    "surface": "Road",
+    "idealFor": "Daily miles, progression runs",
+    "features": [
+      "ZoomX carrier midsole for soft landings",
+      "Forefoot Air Zoom unit adds pop at toe-off",
+      "Waffle-inspired outsole grips in variable conditions"
+    ],
+    "rating": 4.4,
+    "reviews": [
+      {
+        "author": "Miguel",
+        "rating": 4.5,
+        "comment": "Versatile workhorse—handles easy days and strides without compromise."
+      },
+      {
+        "author": "Jenna",
+        "rating": 4.2,
+        "comment": "Comfortable and dependable, though the higher drop takes a run to adjust."
+      }
+    ]
+  }
+]
