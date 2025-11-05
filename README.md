@@ -1,3 +1,10 @@
+<<<<<<< HEAD
+=======
+# runningshoes
+러닝화 비교 안내
+
+
+>>>>>>> refs/remotes/origin/main
 # Running Shoes Hub
 
 러닝화 정보를 모아 비교할 수 있는 Next.js 14 앱입니다. 브랜드별 정적 페이지, 제품 상세 페이지, 비교 테이블 등을 제공하며, 샘플 데이터로 빠르게 UI를 확인할 수 있도록 구성했습니다.
