@@ -3,54 +3,93 @@
 @tailwind utilities;
 
 :root {
-  --background: 0 0% 100%;
-  --foreground: 240 10% 3.9%;
+  --background: 224 45% 95%;
+  --foreground: 237 38% 12%;
   --card: 0 0% 100%;
-  --card-foreground: 240 10% 3.9%;
+  --card-foreground: 237 38% 12%;
   --popover: 0 0% 100%;
-  --popover-foreground: 240 10% 3.9%;
-  --primary: 222.2 47.4% 11.2%;
+  --popover-foreground: 237 38% 12%;
+  --primary: 243 82% 70%;
   --primary-foreground: 210 40% 98%;
-  --secondary: 210 40% 96.1%;
-  --secondary-foreground: 222.2 47.4% 11.2%;
-  --muted: 210 40% 96.1%;
-  --muted-foreground: 215.4 16.3% 46.9%;
-  --accent: 210 40% 96.1%;
-  --accent-foreground: 222.2 47.4% 11.2%;
-  --destructive: 0 84.2% 60.2%;
+  --secondary: 257 79% 76%;
+  --secondary-foreground: 237 38% 12%;
+  --muted: 220 40% 96%;
+  --muted-foreground: 233 15% 40%;
+  --accent: 202 92% 62%;
+  --accent-foreground: 237 38% 12%;
+  --destructive: 354 70% 54%;
   --destructive-foreground: 210 40% 98%;
-  --border: 214.3 31.8% 91.4%;
-  --input: 214.3 31.8% 91.4%;
-  --ring: 222.2 84% 4.9%;
-  --radius: 0.75rem;
+  --border: 232 32% 84%;
+  --input: 224 32% 89%;
+  --ring: 249 83% 68%;
+  --radius: 1.25rem;
 }
 
 .dark {
-  --background: 222.2 84% 4.9%;
+  --background: 229 46% 10%;
   --foreground: 210 40% 98%;
-  --card: 222.2 84% 4.9%;
+  --card: 229 46% 12%;
   --card-foreground: 210 40% 98%;
-  --popover: 222.2 84% 4.9%;
+  --popover: 229 46% 12%;
   --popover-foreground: 210 40% 98%;
-  --primary: 210 40% 98%;
-  --primary-foreground: 222.2 47.4% 11.2%;
-  --secondary: 217.2 32.6% 17.5%;
-  --secondary-foreground: 210 40% 98%;
-  --muted: 217.2 32.6% 17.5%;
-  --muted-foreground: 215 20.2% 65.1%;
-  --accent: 217.2 32.6% 17.5%;
-  --accent-foreground: 210 40% 98%;
-  --destructive: 0 62.8% 30.6%;
+  --primary: 249 83% 68%;
+  --primary-foreground: 229 46% 12%;
+  --secondary: 257 79% 76%;
+  --secondary-foreground: 229 46% 12%;
+  --muted: 229 40% 18%;
+  --muted-foreground: 228 32% 74%;
+  --accent: 202 92% 62%;
+  --accent-foreground: 229 46% 12%;
+  --destructive: 355 70% 52%;
   --destructive-foreground: 210 40% 98%;
-  --border: 217.2 32.6% 17.5%;
-  --input: 217.2 32.6% 17.5%;
-  --ring: 212.7 26.8% 83.9%;
+  --border: 229 32% 24%;
+  --input: 229 32% 24%;
+  --ring: 249 82% 70%;
 }
 
-body {
-  min-height: 100%;
-  background-color: hsl(var(--background));
-  color: hsl(var(--foreground));
-  font-feature-settings: "rlig" 1, "calt" 0;
-  font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply min-h-screen bg-transparent text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 0;
+    font-family: var(--font-sans), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    position: relative;
+  }
+
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -2;
+    background: linear-gradient(120deg, #667eea, #764ba2, #f093fb, #4facfe, #00f2fe);
+    background-size: 400% 400%;
+    animation: gradient 18s ease infinite;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background: radial-gradient(circle at 20% 20%, rgba(255, 255, 255, 0.45), transparent 55%),
+      radial-gradient(circle at 80% 0%, rgba(118, 75, 162, 0.35), transparent 60%),
+      radial-gradient(circle at 50% 80%, rgba(79, 172, 254, 0.4), transparent 65%);
+    opacity: 0.9;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply tracking-tight text-foreground;
+  }
+
+  main {
+    @apply relative z-10;
+  }
 }

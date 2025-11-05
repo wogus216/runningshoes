@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
-import type { ReactNode } from "react";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { ArrowRight, ExternalLink } from "lucide-react";
-import { getBrands, getProductsByBrand } from "@/lib/data";
-import { Badge } from "@/components/ui/badge";
-import { Separator } from "@/components/ui/separator";
-import { ProductCard } from "@/components/product-card";
-import { Button } from "@/components/ui/button";
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
+import Link from 'next/link';
+import { notFound } from 'next/navigation';
+import { ArrowRight, ExternalLink } from 'lucide-react';
+import { getBrands, getProductsByBrand } from '@/lib/data';
+import { Badge } from '@/components/ui/badge';
+import { Separator } from '@/components/ui/separator';
+import { ProductCard } from '@/components/product-card';
+import { Button } from '@/components/ui/button';
 
 type BrandPageProps = {
   params: {
@@ -24,8 +24,8 @@ export function generateMetadata({ params }: BrandPageProps): Metadata {
 
   if (!brand) {
     return {
-      title: "Brand Not Found",
-      description: "The requested brand could not be located.",
+      title: 'Brand Not Found',
+      description: 'The requested brand could not be located.',
     };
   }
 
@@ -69,10 +69,10 @@ export default function BrandPage({ params }: BrandPageProps) {
           <BrandFact
             label="Official Site"
             value={
-              <Link href={brand.website} className="inline-flex items-center gap-2 text-primary" target="_blank" rel="noreferrer">
+              <a href={brand.website} className="inline-flex items-center gap-2 text-primary" target="_blank" rel="noreferrer">
                 Visit {brand.name}
                 <ExternalLink className="h-4 w-4" />
-              </Link>
+              </a>
             }
           />
         </div>
@@ -82,7 +82,7 @@ export default function BrandPage({ params }: BrandPageProps) {
         <div className="flex items-center justify-between">
           <h2 className="text-2xl font-semibold">Top Models</h2>
           <Button asChild variant="ghost">
-            <Link href={`/compare?ids=${products.map((product) => product.slug).join(",")}`}>
+            <Link href={`/compare?ids=${products.map((product) => product.slug).join(',')}`}>
               Compare lineup
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>

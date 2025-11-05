@@ -61,6 +61,28 @@ const config: Config = {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
       keyframes: {
+        gradient: {
+          "0%": { backgroundPosition: "0% 50%" },
+          "50%": { backgroundPosition: "100% 50%" },
+          "100%": { backgroundPosition: "0% 50%" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "fade-in-up": {
+          "0%": { opacity: "0", transform: "translateY(20px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in-down": {
+          "0%": { opacity: "0", transform: "translateY(-16px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        float: {
+          "0%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+          "100%": { transform: "translateY(0)" },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -71,6 +93,11 @@ const config: Config = {
         },
       },
       animation: {
+        gradient: "gradient 15s ease infinite",
+        "fade-in": "fade-in 1s ease forwards",
+        "fade-in-up": "fade-in-up 0.6s ease forwards",
+        "fade-in-down": "fade-in-down 0.8s ease forwards",
+        float: "float 4s ease-in-out infinite",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
