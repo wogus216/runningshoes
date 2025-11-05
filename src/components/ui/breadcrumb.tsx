@@ -9,7 +9,7 @@ const Breadcrumb = ({ className, ...props }: React.HTMLAttributes<HTMLElement>) 
 );
 Breadcrumb.displayName = "Breadcrumb";
 
-const BreadcrumbList = ({ className, ...props }: React.HTMLAttributes<ol>) => (
+const BreadcrumbList = ({ className, ...props }: React.HTMLAttributes<HTMLOListElement>) => (
   <ol className={cn("flex flex-wrap items-center gap-1.5", className)} {...props} />
 );
 BreadcrumbList.displayName = "BreadcrumbList";

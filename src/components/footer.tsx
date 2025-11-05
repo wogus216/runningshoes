@@ -1,21 +1,10 @@
-import Link from "next/link";
-
 export function Footer() {
   return (
-    <footer className="border-t bg-background">
-      <div className="container flex flex-col gap-3 py-8 text-sm text-muted-foreground md:flex-row md:items-center md:justify-between">
-        <p>&copy; {new Date().getFullYear()} Running Shoes Hub. All rights reserved.</p>
-        <div className="flex flex-wrap items-center gap-4">
-          <Link href="/brands" className="transition-colors hover:text-primary">
-            Brands
-          </Link>
-          <Link href="/compare?ids=metaspeed-sky-4,on-cloudsurfer-max" className="transition-colors hover:text-primary">
-            Compare
-          </Link>
-          <Link href="https://example.com/sitemap.xml" className="transition-colors hover:text-primary">
-            Sitemap
-          </Link>
-        </div>
+    <footer className="mt-20 border-t border-white/20 bg-white/10 backdrop-blur-2xl">
+      <div className="container mx-auto max-w-6xl px-6 py-8">
+        <p className="text-center text-sm font-medium text-slate-600">
+          &copy; {new Date().getFullYear()} 러닝화 계급도. 생동감 있는 러닝화 가이드.
+        </p>
       </div>
     </footer>
   );
