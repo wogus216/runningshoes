@@ -15,8 +15,131 @@ export const categoryOrder: string[] = [
 ];
 
 const shoes: Shoe[] = [
-  // Nike
-  { brand: "Nike", name: "페가수스 41", category: "입문화", rating: 4 },
+  // Nike - 페가수스 41 (완전한 데이터)
+  {
+    id: 'nike-pegasus-41',
+    slug: 'nike-pegasus-41',
+    brand: "Nike",
+    name: "페가수스 41",
+    category: "입문화",
+    rating: 4,
+    price: 159000,
+    description: '초보부터 중급까지, 모든 러너를 위한 올라운더 러닝화입니다. 편안한 착화감(76% 구매 결정 1순위)과 충분한 쿠셔닝으로 첫 러닝화로 완벽한 선택입니다.',
+    tags: ['입문화', '데일리 러닝', '쿠셔닝 우수'],
+
+    specs: {
+      weight: 280,
+      cushioning: 9,
+      responsiveness: 7,
+      stability: 8,
+      drop: 10,
+      durability: 550
+    },
+
+    biomechanics: {
+      stackHeight: {
+        heel: 32,
+        forefoot: 22
+      },
+      drop: 10,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'ReactX Foam',
+      optimalPace: '5:00-7:00 min/km'
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'caution',
+      shinSplints: 'excellent'
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: false,
+      winterCompatibility: 'good'
+    },
+
+    targetUsers: {
+      recommended: [
+        '러닝 입문자 (쿠셔닝 중시)',
+        '무릎 보호가 필요한 러너',
+        '장거리 편안함 원하는 분',
+        '가성비 좋은 올라운더 찾는 분',
+        '뒤꿈치 착지(RFS) 러너 (~85%)',
+        '데일리 5-10km 주행'
+      ],
+      notRecommended: [
+        '마라톤 기록 단축 목표',
+        '초경량 레이싱화 찾는 분',
+        '강한 반발력 원하는 상급자',
+        '대회용 전문 러닝화 필요'
+      ]
+    },
+
+    features: [
+      '최상급 착화감 (76% 1순위)',
+      '충분한 쿠셔닝 (초보자 최우선)',
+      '적정 무게 (280g)',
+      '뛰어난 가성비 (15만원대)'
+    ],
+
+    priceAnalysis: {
+      msrp: 159000,
+      streetPrice: 135000,
+      costPerKm: 280,
+      valueRating: 9,
+      priceTier: 'mid',
+      alternatives: [
+        '아식스 쿠무루스 27',
+        '뉴발란스 880 V14',
+        '호카 클리프턴 10'
+      ]
+    },
+
+    reviews: [
+      {
+        userType: '입문 러너',
+        rating: 5,
+        text: '처음 러닝 시작하면서 구매했는데 발이 너무 편해요. 쿠션이 푹신해서 무릎에 무리가 안 가는 느낌이고, 5km 뛰고 나서도 발이 안 아파서 놀랐습니다. 디자인도 예뻐서 일상에서도 신고 다녀요! 가성비 최고!'
+      },
+      {
+        userType: '중급 러너',
+        rating: 4,
+        text: '데일리 러닝용으로는 정말 좋습니다. 편안하고 안정적이에요. 다만 마라톤 기록 단축을 원한다면 조금 무거울 수 있어요. 훈련용으로는 최고지만 레이스용은 베이퍼플라이 따로 준비했습니다. 발볼이 표준이라 와이드 옵션 있으면 더 좋겠어요.'
+      },
+      {
+        userType: '가성비 중시',
+        rating: 5,
+        text: '나이키 페가수스는 "검증된 올라운더"라는 말이 괜히 있는 게 아니에요. 15만원대 가격에 이 정도 성능이면 정말 만족스럽습니다. 500km 넘게 신었는데 아직도 쿠션이 살아있어요. 주변에도 많이 추천했어요! 초보 러너 첫 신발로 강력 추천합니다.'
+      },
+      {
+        userType: '평발 러너',
+        rating: 3,
+        text: '평발인데 아치 서포트가 적당해서 괜찮았어요. 다만 심한 과내전이 있다면 GT-2000 같은 안정화가 더 나을 것 같아요. 발볼이 넓은 편인데 표준 폭이라 약간 답답했습니다. 와이드 사이즈가 있으면 완벽할 것 같아요.'
+      }
+    ],
+
+    detailedSpecs: {
+      weight: '280g (남성 US 9 기준) / 240g (여성 US 7)',
+      stackHeight: '힐 32mm / 포어풋 22mm (최적 범위 초과)',
+      drop: '10mm (표준 드롭, 뒤꿈치 착지 유도)',
+      midsole: 'ReactX 폼 (EVA보다 우수한 에너지 리턴)',
+      plate: '없음 (자연스러운 발 움직임, 초보자 안전)',
+      outsole: '고무 + 와플 패턴 (내구성 우수)',
+      upper: '엔지니어드 메쉬 (통기성 우수)',
+      width: '표준 (와이드 옵션 없음 - 한국인 발에 주의)',
+      durability: '500-600km (내구성 우수)',
+      price: '₩159,000 (MSRP) / 세일 시 ₩120,000~',
+      costPerKm: '약 ₩280/km (550km 기준 - 가성비 우수)',
+      footType: '평발 OK / 높은 아치 OK / 발볼 넓음 주의',
+      landingPattern: '뒤꿈치 착지(RFS) 최적 (~85% 러너)'
+    },
+
+    similarShoes: ['adidas-supernova-rise-2', 'asics-cumulus-27', 'newbalance-880-v14', 'hoka-clifton-10']
+  },
   { brand: "Nike", name: "페가수스 프리미엄", category: "입문화", rating: 4 },
   { brand: "Nike", name: "보메로 18", category: "맥스쿠션화", rating: 5 },
   { brand: "Nike", name: "인빈시블 3", category: "맥스쿠션화", rating: 5 },
@@ -105,4 +228,8 @@ export function groupShoesByBrand(shoesList: Shoe[] = shoes): Record<string, Sho
 
 export function getBrandsFromShoes(shoesList: Shoe[] = shoes): string[] {
   return Array.from(new Set(shoesList.map((shoe) => shoe.brand))).sort();
+}
+
+export function getShoeBySlug(slug: string): Shoe | undefined {
+  return shoes.find((shoe) => shoe.slug === slug);
 }

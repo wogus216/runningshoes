@@ -1,4 +1,5 @@
 import { memo } from "react";
+import Link from "next/link";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
@@ -26,13 +27,14 @@ function getStatus(shoe: Shoe): Shoe["status"] | undefined {
 
 export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProps) {
   const status = getStatus(shoe);
+  const href = shoe.slug ? `/shoes/${shoe.slug}` : "#";
 
-  return (
+  const cardContent = (
     <Card
       className={cn(
         "group/card relative overflow-hidden border-white/20 bg-white/10 text-slate-900 shadow-[0_20px_45px_-30px_rgba(15,23,42,0.6)]",
         "backdrop-blur-2xl transition-all duration-300 ease-out hover:-translate-y-2 hover:border-white/40 hover:shadow-[0_24px_50px_-28px_rgba(88,119,255,0.6)]",
-        "animate-fade-in-up"
+        "animate-fade-in-up cursor-pointer"
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 80}ms` }}
     >
@@ -82,4 +84,10 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProp
       </div>
     </Card>
   );
+
+  if (shoe.slug) {
+    return <Link href={href as `/shoes/${string}`}>{cardContent}</Link>;
+  }
+
+  return cardContent;
 });
