@@ -140,66 +140,319 @@ const shoes: Shoe[] = [
 
     similarShoes: ['adidas-supernova-rise-2', 'asics-cumulus-27', 'newbalance-880-v14', 'hoka-clifton-10']
   },
+  // Nike - 입문화
   { brand: "Nike", name: "페가수스 프리미엄", category: "입문화", rating: 4 },
+  { brand: "Nike", name: "리액트 인피니티 런 4", category: "입문화", rating: 4 },
+
+  // Nike - 맥스쿠션화
   { brand: "Nike", name: "보메로 18", category: "맥스쿠션화", rating: 5 },
   { brand: "Nike", name: "인빈시블 3", category: "맥스쿠션화", rating: 5 },
+  { brand: "Nike", name: "인빈시블 런 플라이니트 3", category: "맥스쿠션화", rating: 4 },
+
+  // Nike - 안정화
   { brand: "Nike", name: "스트럭처 26", category: "안정화", rating: 4 },
+
+  // Nike - 울트라
+  { brand: "Nike", name: "올트라플라이 4", category: "울트라", rating: 4 },
+
+  // Nike - 경량트레일러닝
+  { brand: "Nike", name: "스트리크 플라이", category: "경량트레일러닝", rating: 4 },
+
+  // Nike - 플레이트
   { brand: "Nike", name: "알파플라이 3", category: "플레이트", rating: 5 },
+
+  // Nike - 슈퍼트레이너
   { brand: "Nike", name: "발할라 8", category: "슈퍼트레이너", rating: 4 },
+
+  // Nike - 카본플레이트
   { brand: "Nike", name: "줌 플라이 6", category: "카본플레이트", rating: 4 },
-  // Adidas
+  { brand: "Nike", name: "베이퍼플라이 3", category: "카본플레이트", rating: 5 },
+
+  // Nike - 중거리
+  { brand: "Nike", name: "스트리크레이서 6", category: "중거리", rating: 4 },
+
+  // Nike - 레이싱
+  { brand: "Nike", name: "베이퍼플라이 넥스트% 3", category: "레이싱", rating: 5 },
+  { brand: "Nike", name: "알파플라이 3", category: "레이싱", rating: 5 },
+
+  // Adidas - 입문화
   { brand: "Adidas", name: "아디스타 3", category: "입문화", rating: 4 },
-  { brand: "Adidas", name: "슈퍼노바 라이즈2", category: "입문화", rating: 4 },
-  { brand: "Adidas", name: "슈퍼노바 프리미엄", category: "맥스쿠션화", rating: 4 },
-  { brand: "Adidas", name: "글라이드라이드 맥스", category: "안정화", rating: 4 },
-  { brand: "Adidas", name: "아디지로 9", category: "데일리", rating: 4 },
+  { brand: "Adidas", name: "슈퍼노바 라이즈 2", category: "입문화", rating: 4 },
+  { brand: "Adidas", name: "슈퍼노바 솔루션", category: "입문화", rating: 4 },
+
+  // Adidas - 맥스쿠션화
+  { brand: "Adidas", name: "슈퍼노바 프라임", category: "맥스쿠션화", rating: 4 },
+  { brand: "Adidas", name: "슈퍼노바 프라임 X", category: "맥스쿠션화", rating: 4 },
+
+  // Adidas - 데일리
+  { brand: "Adidas", name: "아디제로 SL2", category: "데일리", rating: 4 },
+
+  // Adidas - 안정화
+  { brand: "Adidas", name: "슈퍼노바 솔루션 (안정화)", category: "안정화", rating: 4 },
+  { brand: "Adidas", name: "프라임 X 스트라운드", category: "안정화", rating: 4 },
+
+  // Adidas - 경량트레일러닝
   { brand: "Adidas", name: "보스턴 12", category: "경량트레일러닝", rating: 5 },
-  { brand: "Adidas", name: "아디제로 프로 3", category: "레이싱", rating: 5 },
-  // Asics
+
+  // Adidas - 슈퍼트레이너
+  { brand: "Adidas", name: "아디제로 SL", category: "슈퍼트레이너", rating: 4 },
+
+  // Adidas - 카본플레이트
+  { brand: "Adidas", name: "아디제로 아디오스 프로 3", category: "카본플레이트", rating: 5 },
+
+  // Adidas - 중거리
+  { brand: "Adidas", name: "타카우미 센 10", category: "중거리", rating: 4 },
+
+  // Adidas - 레이싱
+  { brand: "Adidas", name: "아디제로 아디오스 8", category: "레이싱", rating: 5 },
+  { brand: "Adidas", name: "아디제로 5", category: "레이싱", rating: 4 },
+  { brand: "Adidas", name: "아디제로 프라임 X 스트라운드 V3", category: "레이싱", rating: 4 },
+
+  // Asics - 입문화
   { brand: "Asics", name: "쿠무루스 27", category: "입문화", rating: 4 },
-  { brand: "Asics", name: "캘리포니아 27", category: "맥스쿠션화", rating: 4 },
-  { brand: "Asics", name: "글라이드라이드 맥스", category: "안정화", rating: 4 },
-  { brand: "Asics", name: "님버스 코스트 3", category: "울트라", rating: 4 },
+  { brand: "Asics", name: "GT-2000 13", category: "입문화", rating: 4 },
+
+  // Asics - 맥스쿠션화
+  { brand: "Asics", name: "님버스 27", category: "맥스쿠션화", rating: 4 },
+  { brand: "Asics", name: "노보블라스트 5", category: "맥스쿠션화", rating: 4 },
+  { brand: "Asics", name: "글라이드라이드 맥스", category: "맥스쿠션화", rating: 4 },
+
+  // Asics - 데일리
+  { brand: "Asics", name: "노바블라스트 4", category: "데일리", rating: 4 },
+
+  // Asics - 안정화
+  { brand: "Asics", name: "카야노 31", category: "안정화", rating: 4 },
+  { brand: "Asics", name: "GT-4000 3", category: "안정화", rating: 4 },
+  { brand: "Asics", name: "GT-2000 13 (안정화)", category: "안정화", rating: 4 },
+
+  // Asics - 울트라
+  { brand: "Asics", name: "님버스 미라이 3", category: "울트라", rating: 4 },
+
+  // Asics - 경량트레일러닝
+  { brand: "Asics", name: "하이퍼스피드 4", category: "경량트레일러닝", rating: 4 },
+
+  // Asics - 플레이트
   { brand: "Asics", name: "슈퍼블라스트 2", category: "플레이트", rating: 5 },
-  { brand: "Asics", name: "메타스피드 스카이+", category: "레이싱", rating: 5 },
-  // New Balance
+  { brand: "Asics", name: "매직스피드 4", category: "플레이트", rating: 4 },
+
+  // Asics - 카본플레이트
+  { brand: "Asics", name: "메타스피드 스카이+", category: "카본플레이트", rating: 5 },
+  { brand: "Asics", name: "메타스피드 엣지+", category: "카본플레이트", rating: 5 },
+
+  // Asics - 레이싱
+  { brand: "Asics", name: "메타스피드 스카이 5+", category: "레이싱", rating: 5 },
+  { brand: "Asics", name: "메타레이서", category: "레이싱", rating: 4 },
+
+  // New Balance - 입문화
+  { brand: "New Balance", name: "프레시폼 880 V14", category: "입문화", rating: 4 },
   { brand: "New Balance", name: "퓨얼셀 프로펠 V5", category: "입문화", rating: 4 },
-  { brand: "New Balance", name: "프레시폼 880 V14", category: "데일리", rating: 4 },
+  { brand: "New Balance", name: "프레시폼 1080 V14", category: "입문화", rating: 5 },
+
+  // New Balance - 맥스쿠션화
+  { brand: "New Balance", name: "프레시폼 모어 V5", category: "맥스쿠션화", rating: 4 },
+
+  // New Balance - 데일리
+  { brand: "New Balance", name: "퓨얼셀 레벨 V4", category: "데일리", rating: 4 },
+  { brand: "New Balance", name: "프레시폼 템포 V2", category: "데일리", rating: 4 },
+
+  // New Balance - 안정화
+  { brand: "New Balance", name: "프레시폼 860 V14", category: "안정화", rating: 4 },
   { brand: "New Balance", name: "프레시폼 알고 V6", category: "안정화", rating: 4 },
+
+  // New Balance - 울트라
+  { brand: "New Balance", name: "SC 트레이너 V3", category: "울트라", rating: 4 },
+
+  // New Balance - 플레이트
   { brand: "New Balance", name: "퓨얼셀 슈퍼콤프 트레이너 V3", category: "플레이트", rating: 5 },
+
+  // New Balance - 슈퍼트레이너
+  { brand: "New Balance", name: "퓨얼셀 리벨 V4", category: "슈퍼트레이너", rating: 4 },
+
+  // New Balance - 카본플레이트
   { brand: "New Balance", name: "SC 엘리트 V4", category: "카본플레이트", rating: 5 },
-  // Saucony
-  { brand: "Saucony", name: "액솔 3", category: "입문화", rating: 4 },
+  { brand: "New Balance", name: "SC 페이서 V3", category: "카본플레이트", rating: 4 },
+
+  // New Balance - 레이싱
+  { brand: "New Balance", name: "퓨얼셀 슈퍼콤프 엘리트 V4", category: "레이싱", rating: 5 },
+  { brand: "New Balance", name: "SC 엘리트 V3", category: "레이싱", rating: 4 },
+
+  // Saucony - 입문화
+  { brand: "Saucony", name: "라이드 18", category: "입문화", rating: 4 },
+  { brand: "Saucony", name: "가이드 18", category: "입문화", rating: 4 },
+  { brand: "Saucony", name: "엑솔 3", category: "입문화", rating: 4 },
+
+  // Saucony - 맥스쿠션화
   { brand: "Saucony", name: "트라이엄프 22", category: "맥스쿠션화", rating: 4 },
-  { brand: "Saucony", name: "템포 2", category: "데일리", rating: 4 },
-  { brand: "Saucony", name: "라이드 18", category: "안정화", rating: 4 },
-  { brand: "Saucony", name: "킨바라 15", category: "경량트레일러닝", rating: 4 },
-  // Puma
-  { brand: "Puma", name: "벨로시티 니트로 4", category: "데일리", rating: 4 },
+  { brand: "Saucony", name: "템포 넥스트%", category: "맥스쿠션화", rating: 4 },
+
+  // Saucony - 데일리
+  { brand: "Saucony", name: "킨바라 15", category: "데일리", rating: 4 },
+  { brand: "Saucony", name: "스피드 4", category: "데일리", rating: 4 },
+
+  // Saucony - 안정화
+  { brand: "Saucony", name: "가이드 18 (안정화)", category: "안정화", rating: 4 },
+  { brand: "Saucony", name: "템포 2", category: "안정화", rating: 4 },
+
+  // Saucony - 플레이트
+  { brand: "Saucony", name: "엔도르핀 프로 4", category: "플레이트", rating: 5 },
+
+  // Saucony - 카본플레이트
+  { brand: "Saucony", name: "엔도르핀 엘리트", category: "카본플레이트", rating: 5 },
+
+  // Saucony - 레이싱
+  { brand: "Saucony", name: "엔도르핀 스피드 4", category: "레이싱", rating: 4 },
+
+  // Puma - 입문화
+  { brand: "Puma", name: "벨로시티 니트로 3", category: "입문화", rating: 4 },
+
+  // Puma - 데일리
+  { brand: "Puma", name: "리벨 니트로 3", category: "데일리", rating: 4 },
+
+  // Puma - 맥스쿠션화
   { brand: "Puma", name: "메그니파이 니트로 3", category: "맥스쿠션화", rating: 4 },
+
+  // Puma - 울트라
   { brand: "Puma", name: "포에버런 니트로", category: "울트라", rating: 4 },
-  { brand: "Puma", name: "데비에이트 니트로 3", category: "카본플레이트", rating: 4 },
-  // Hoka
+
+  // Puma - 경량트레일러닝
+  { brand: "Puma", name: "라피도 니트로 3", category: "경량트레일러닝", rating: 4 },
+
+  // Puma - 슈퍼트레이너
+  { brand: "Puma", name: "데비에이트 니트로 3", category: "슈퍼트레이너", rating: 4 },
+
+  // Puma - 카본플레이트
+  { brand: "Puma", name: "데비에이트 니트로 엘리트 3", category: "카본플레이트", rating: 4 },
+
+  // Puma - 레이싱
+  { brand: "Puma", name: "패스트-R 니트로 엘리트 2", category: "레이싱", rating: 4 },
+
+  // Hoka - 입문화
   { brand: "Hoka", name: "클리프턴 10", category: "입문화", rating: 5 },
+  { brand: "Hoka", name: "클리프턴 LS", category: "입문화", rating: 4 },
+
+  // Hoka - 맥스쿠션화
   { brand: "Hoka", name: "본디 9", category: "맥스쿠션화", rating: 4 },
-  { brand: "Hoka", name: "마크 3", category: "데일리", rating: 4 },
+  { brand: "Hoka", name: "메그니파이 니트로 3", category: "맥스쿠션화", rating: 4 },
+  { brand: "Hoka", name: "트랜스포터 3", category: "맥스쿠션화", rating: 4 },
+
+  // Hoka - 데일리
+  { brand: "Hoka", name: "마하 6", category: "데일리", rating: 4 },
+  { brand: "Hoka", name: "린콘 4", category: "데일리", rating: 4 },
+
+  // Hoka - 안정화
   { brand: "Hoka", name: "아라히 7", category: "안정화", rating: 4 },
+  { brand: "Hoka", name: "게이터 8", category: "안정화", rating: 4 },
+
+  // Hoka - 플레이트
   { brand: "Hoka", name: "스카이워드 X", category: "플레이트", rating: 5 },
-  // Brooks
-  { brand: "Brooks", name: "고스트 17", category: "데일리", rating: 5 },
-  { brand: "Brooks", name: "글리세린 22", category: "맥스쿠션화", rating: 5 },
-  { brand: "Brooks", name: "GTS 25", category: "안정화", rating: 4 },
+  { brand: "Hoka", name: "카본 X4", category: "플레이트", rating: 5 },
+  { brand: "Hoka", name: "마하 6", category: "플레이트", rating: 4 },
+
+  // Hoka - 카본플레이트
+  { brand: "Hoka", name: "로켓 X2", category: "카본플레이트", rating: 5 },
+  { brand: "Hoka", name: "시에나 X2", category: "카본플레이트", rating: 4 },
+
+  // Hoka - 레이싱
+  { brand: "Hoka", name: "카본 엑스 4", category: "레이싱", rating: 5 },
+
+  // Brooks - 입문화
+  { brand: "Brooks", name: "고스트 맥스 2", category: "입문화", rating: 5 },
+  { brand: "Brooks", name: "고스트 17", category: "입문화", rating: 5 },
+
+  // Brooks - 맥스쿠션화
+  { brand: "Brooks", name: "글리세린 21", category: "맥스쿠션화", rating: 5 },
+  { brand: "Brooks", name: "글리세린 GTS 21", category: "맥스쿠션화", rating: 4 },
+
+  // Brooks - 데일리
+  { brand: "Brooks", name: "고스트 맥스 3", category: "데일리", rating: 4 },
+  { brand: "Brooks", name: "런치 10", category: "데일리", rating: 4 },
+
+  // Brooks - 안정화
+  { brand: "Brooks", name: "고스트 GTS 17", category: "안정화", rating: 4 },
+  { brand: "Brooks", name: "글리세린 GTS 22", category: "안정화", rating: 4 },
+
+  // Brooks - 경량트레일러닝
+  { brand: "Brooks", name: "하이퍼리온 2", category: "경량트레일러닝", rating: 4 },
+
+  // Brooks - 플레이트
   { brand: "Brooks", name: "하이퍼리온 템포 2", category: "플레이트", rating: 4 },
-  // Mizuno
-  { brand: "Mizuno", name: "웨이브 라이더 28", category: "데일리", rating: 4 },
+
+  // Brooks - 슈퍼트레이너
+  { brand: "Brooks", name: "하이퍼리온 맥스", category: "슈퍼트레이너", rating: 4 },
+
+  // Brooks - 카본플레이트
+  { brand: "Brooks", name: "하이퍼리온 엘리트 4", category: "카본플레이트", rating: 4 },
+
+  // Brooks - 레이싱
+  { brand: "Brooks", name: "하이퍼리온 엘리트 4", category: "레이싱", rating: 4 },
+
+  // Mizuno - 입문화
+  { brand: "Mizuno", name: "웨이브 라이더 28", category: "입문화", rating: 4 },
+  { brand: "Mizuno", name: "웨이브 호라이즌 7", category: "입문화", rating: 4 },
+  { brand: "Mizuno", name: "웨이브 라이더 27", category: "입문화", rating: 4 },
+
+  // Mizuno - 맥스쿠션화
+  { brand: "Mizuno", name: "웨이브 스카이 8", category: "맥스쿠션화", rating: 4 },
   { brand: "Mizuno", name: "네오 코스모", category: "맥스쿠션화", rating: 4 },
-  { brand: "Mizuno", name: "웨이브 스카이 8", category: "안정화", rating: 4 },
+
+  // Mizuno - 데일리
+  { brand: "Mizuno", name: "웨이브 네오 울트라", category: "데일리", rating: 4 },
+  { brand: "Mizuno", name: "웨이브 스카이 플라이 2", category: "데일리", rating: 4 },
+
+  // Mizuno - 안정화
+  { brand: "Mizuno", name: "웨이브 인스파이어 20", category: "안정화", rating: 4 },
+
+  // Mizuno - 울트라
+  { brand: "Mizuno", name: "웨이브 스카이 라이즈", category: "울트라", rating: 4 },
+
+  // Mizuno - 경량트레일러닝
+  { brand: "Mizuno", name: "웨이브 듀얼 소닉", category: "경량트레일러닝", rating: 4 },
+
+  // Mizuno - 슈퍼트레이너
+  { brand: "Mizuno", name: "웨이브 리벨리온 소닉", category: "슈퍼트레이너", rating: 4 },
+
+  // Mizuno - 카본플레이트
   { brand: "Mizuno", name: "웨이브 리벨리온 프로 2", category: "카본플레이트", rating: 5 },
-  // On
+  { brand: "Mizuno", name: "웨이브 리벨리온 프로 플래시", category: "카본플레이트", rating: 5 },
+
+  // Mizuno - 레이싱
+  { brand: "Mizuno", name: "웨이브 리벨리온 프로", category: "레이싱", rating: 5 },
+  { brand: "Mizuno", name: "웨이브 듀얼 프로", category: "레이싱", rating: 4 },
+
+  // On - 입문화
   { brand: "On", name: "클라우드 서퍼 7", category: "입문화", rating: 4 },
+  { brand: "On", name: "클라우드러너 2", category: "입문화", rating: 4 },
+
+  // On - 맥스쿠션화
   { brand: "On", name: "클라우드몬스터 2", category: "맥스쿠션화", rating: 4 },
-  { brand: "On", name: "클라우드스트라토스 3", category: "플레이트", rating: 5 },
+  { brand: "On", name: "클라우드몬스터 하이퍼", category: "맥스쿠션화", rating: 4 },
+
+  // On - 데일리
+  { brand: "On", name: "클라우드스위프트 4", category: "데일리", rating: 4 },
+  { brand: "On", name: "클라우드플로우 4", category: "데일리", rating: 4 },
+
+  // On - 안정화
+  { brand: "On", name: "클라우드스트라토스 3", category: "안정화", rating: 4 },
+
+  // On - 울트라
+  { brand: "On", name: "클라우드울트라", category: "울트라", rating: 4 },
+
+  // On - 경량트레일러닝
+  { brand: "On", name: "클라우드에코 3", category: "경량트레일러닝", rating: 4 },
+
+  // On - 플레이트
+  { brand: "On", name: "클라우드스트라토스 3 (플레이트)", category: "플레이트", rating: 5 },
+
+  // On - 슈퍼트레이너
+  { brand: "On", name: "클라우드붐 4", category: "슈퍼트레이너", rating: 4 },
+
+  // On - 카본플레이트
+  { brand: "On", name: "클라우드붐 스트라이크 LS", category: "카본플레이트", rating: 4 },
+
+  // On - 레이싱
   { brand: "On", name: "클라우드붐 에코 3", category: "레이싱", rating: 4 },
+  { brand: "On", name: "클라우드스파이더", category: "레이싱", rating: 4 },
+  { brand: "On", name: "클라우드플래시", category: "레이싱", rating: 4 },
 ];
 
 export function getShoes(): Shoe[] {

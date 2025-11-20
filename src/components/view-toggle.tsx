@@ -44,7 +44,7 @@ export function ViewToggle({ view, onChange }: ViewToggleProps) {
               )}
               onClick={() => onChange(option.value)}
             >
-              <span>{option.label}</span>
+              <span className="whitespace-nowrap">{option.label}</span>
               <span className="text-[10px] font-medium uppercase tracking-widest text-slate-500 group-hover:text-slate-700 sm:hidden">
                 {option.description}
               </span>

@@ -37,7 +37,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
             <Badge
               key={tag}
               variant="secondary"
-              className="bg-gradient-to-br from-[#667eea15] to-[#764ba215] text-[#667eea] font-semibold px-4 py-1"
+              className="bg-white border-2 border-[#667eea] text-[#667eea] font-bold px-4 py-2 hover:bg-gradient-to-r hover:from-[#667eea] hover:to-[#764ba2] hover:text-white transition-all duration-300"
             >
               {tag}
             </Badge>
