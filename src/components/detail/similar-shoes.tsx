@@ -58,7 +58,7 @@ export function SimilarShoes({ similarShoes = [] }: SimilarShoesProps) {
               className="bg-white rounded-2xl p-5 text-center cursor-pointer transition-all duration-300 shadow-md hover:shadow-xl hover:-translate-y-3"
             >
               <div className="text-6xl mb-4">🏃</div>
-              <div className="text-sm font-semibold text-[#667eea] mb-2">{shoe.brand}</div>
+              <div className="text-sm font-semibold text-[#4facfe] mb-2">{shoe.brand}</div>
               <div className="font-bold text-gray-900 mb-2">{shoe.name}</div>
               <div className="text-yellow-500 text-sm mb-2">
                 {"★".repeat(shoe.rating)}

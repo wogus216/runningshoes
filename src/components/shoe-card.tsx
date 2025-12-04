@@ -38,7 +38,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProp
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 80}ms` }}
     >
-      <span className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-gradient-to-r from-[#667eea] via-[#f093fb] to-[#4facfe] transition-transform duration-300 ease-out group-hover/card:scale-x-100" />
+      <span className="pointer-events-none absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-[#4facfe] transition-transform duration-300 ease-out group-hover/card:scale-x-100" />
       <div className="absolute -top-6 -right-6 h-24 w-24 rounded-full bg-gradient-to-br from-[#4facfe]/40 via-[#f093fb]/40 to-transparent blur-3xl" />
 
       <div className="group/card relative flex flex-col gap-4 p-5">

@@ -1,0 +1,420 @@
+{
+  "title": "Running Shoe Review Skill",
+  "version": "2.0",
+  "file_url": "/mnt/data/running-shoe-review-skill.pdf",
+  "languages": [
+    "ko",
+    "en"
+  ],
+  "description": "Evidence-based running shoe review framework with biomechanics research + Korean market consumer insights.",
+  "sections": [
+    {
+      "id": "1-skill-main-framework",
+      "name": "Running Shoe Review - Main Framework",
+      "slug": "main-framework",
+      "page_range": [3, 13],
+      "summary": "연구 기반 러닝화 평가 메인 프레임워크. 러닝화를 평가할 때 고려해야 할 과학적·소비자 관점 요소를 정리한 섹션.",
+      "core_objects": {
+        "consumer_priority_hierarchy": {
+          "description": "한국 러너들이 실제 구매 시 무엇을 먼저 보는지에 대한 우선순위.",
+          "priority_order": [
+            "Comfort/Fit (착화감)",
+            "Cushioning",
+            "Price/Value",
+            "Stability",
+            "Weight",
+            "Responsiveness/Energy Return",
+            "Design",
+            "Brand Reputation"
+          ],
+          "runner_type_breakdown": {
+            "beginner": ["Comfort", "Cushioning", "Price", "Stability"],
+            "marathon": ["Performance", "Weight", "Responsiveness", "Comfort"],
+            "fun_runner": ["Comfort", "Design", "Experience", "Price"]
+          }
+        },
+        "biomechanical_dimensions": [
+          "Midsole Stack Height & Cushioning",
+          "Longitudinal Bending Stiffness / Carbon Plate",
+          "Heel-to-Toe Drop",
+          "Shoe Weight"
+        ],
+        "injury_prevention_profile": {
+          "common_injuries_by_incidence": [
+            "Achilles tendinopathy",
+            "Medial tibial stress syndrome",
+            "Patellofemoral pain syndrome",
+            "Plantar fasciitis",
+            "Ankle sprains"
+          ],
+          "focus_areas": [
+            "Plantar fasciitis 예방 설계",
+            "무릎/PFPS 관련 설계",
+            "아킬레스/발목 부상 관련 설계",
+            "TARS(테크놀로지 러닝화)의 역할"
+          ]
+        },
+        "runner_type_suitability": {
+          "by_price_range_krw": [
+            "Entry: 10–15만원 (입문자, 캐주얼)",
+            "Mid: 15–20만원 (시리어스 초보)",
+            "Premium: 20–25만원 (고급 데일리)",
+            "Super Premium: 25–35만원+ (카본 레이싱)"
+          ],
+          "by_footstrike": ["RFS", "MFS", "FFS"],
+          "by_pronation": ["Overpronation", "Neutral", "Supination"],
+          "by_experience": ["Novice", "Intermediate", "Advanced"],
+          "by_distance_purpose": ["Daily", "Tempo", "Racing", "Ultra"]
+        },
+        "korean_foot_characteristics": [
+          "Wider forefoot → 넓은 토박스 선호",
+          "Flatter arch prevalence → 안정화/지지 필요",
+          "Foot volume & 겨울 두꺼운 양말 고려"
+        ],
+        "performance_characteristics": [
+          "Running economy 영향",
+          "Foam 에너지 리턴",
+          "무게와 효율",
+          "내구성(400–600km 기준)"
+        ],
+        "comfort_fit_principles": {
+          "comfort_filter_paradigm": "편안한 신발이 부상 예방에서 가장 중요한 지표라는 연구 흐름.",
+          "fit_checklist": [
+            "Heel lock & counter stability",
+            "Midfoot security",
+            "Toe box width & 1cm 여유",
+            "Upper 통기성"
+          ]
+        },
+        "review_structure_template": {
+          "intro": ["포지셔닝", "타깃 러너", "핵심 기술"],
+          "technical_specs": ["Stack", "Drop", "Weight", "Midsole", "Plate", "Outsole", "Upper"],
+          "biomechanical_analysis": true,
+          "injury_prevention_assessment": true,
+          "performance_characteristics": true,
+          "runner_suitability_matrix": {
+            "best_for": [],
+            "avoid_if": [],
+            "ideal_use_cases": []
+          },
+          "comfort_fit_notes": true,
+          "price_value": true,
+          "design_aesthetics": true,
+          "community_brand_reputation": true,
+          "verdict": true,
+          "rating_system": {
+            "metrics": [
+              "Cushioning",
+              "Responsiveness",
+              "Stability",
+              "Weight",
+              "Durability",
+              "Comfort/Fit",
+              "Design",
+              "Injury Prevention",
+              "Performance",
+              "Value",
+              "Overall"
+            ],
+            "scale": "1–10"
+          }
+        },
+        "guidelines": {
+          "language_style": [
+            "연구 근거 기반 but 비전공자도 이해 가능",
+            "절대 단정 대신 ‘may’, ‘can’, ‘suggests’ 사용"
+          ],
+          "contextual_emphasis": [
+            "개인 차이 강조",
+            "카테고리 내 비교",
+            "한국 시장 맥락(착화감, 가성비, 온라인 구매 비중, 커뮤니티 영향)"
+          ]
+        }
+      }
+    },
+    {
+      "id": "2-biomechanics-reference",
+      "name": "Biomechanics Reference - Scientific Research",
+      "slug": "biomechanics-reference",
+      "page_range": [14, 26],
+      "summary": "러닝화 설계 요소(미드솔, 드롭, 카본 플레이트 등)가 인체 역학과 부상 위험에 어떻게 영향을 주는지에 대한 상세 연구 정리.",
+      "core_objects": {
+        "midsole_technology": {
+          "stack_height": {
+            "optimal_range_mm": [15, 20],
+            "thick_midsole_effects": [
+              "충격 흡수 향상",
+              "지면 감각 감소",
+              "슈퍼슈즈/맥스쿠션 트렌드와 연결"
+            ],
+            "thin_midsole_effects": [
+              "프로프리오셉션 향상",
+              "적응 없으면 부상 리스크 증가"
+            ]
+          },
+          "hardness": {
+            "optimal_asker_c": [50, 55],
+            "soft": ["충격 감소", "근육 부담↑ 가능"],
+            "firm": ["에너지 리턴↑", "너무 딱딱하면 피크 하중↑"]
+          },
+          "materials": ["EVA", "PEBA", "TPU"]
+        },
+        "carbon_plate_technology": {
+          "economy_improvement_percent": [1.4, 4.2],
+          "effective_pace_kmh": [14, 18],
+          "design_variables": [
+            "Plate shape (curved vs flat)",
+            "Plate stiffness (high vs moderate)",
+            "Plate location (high-/mid-/low-loaded)"
+          ],
+          "injury_considerations": [
+            "Navicular stress",
+            "Plantar fasciitis",
+            "Metatarsal stress",
+            "필수: 4–8주 적응"
+          ]
+        },
+        "heel_to_toe_drop": {
+          "classes_mm": {
+            "zero": 0,
+            "minimal_max": 4,
+            "low_range": [4, 8],
+            "traditional_range": [10, 12],
+            "high_min": 12
+          },
+          "effects": {
+            "high_drop": [
+              "RFS 유도",
+              "Achilles 부담 감소",
+              "무릎 부하 증가 가능"
+            ],
+            "low_drop": [
+              "MFS/FFS 유도",
+              "Achilles/종아리 부하 증가",
+              "무릎 부하 감소 가능"
+            ]
+          }
+        },
+        "footstrike_patterns": {
+          "RFS": {
+            "prevalence": 0.85,
+            "so": ["수직 임팩트↑", "무릎 부하↑"],
+            "shoe_recs": ["높은 드롭", "힐 쿠션 강조"]
+          },
+          "MFS": {
+            "prevalence": 0.1,
+            "traits": ["밸런스 로딩", "전반적으로 부상률 낮은 편"]
+          },
+          "FFS": {
+            "prevalence": 0.05,
+            "traits": ["Achilles/calf 부하↑", "전족부 스트레스↑"]
+          }
+        },
+        "injury_modules": [
+          "Plantar Fasciitis",
+          "Achilles Tendinopathy",
+          "Patellofemoral Pain",
+          "Medial Tibial Stress Syndrome"
+        ],
+        "tars_definition": {
+          "name": "Technologically Advanced Running Shoes",
+          "features": ["두꺼운 리질리언트 폼", "카본 플레이트", "록커 형상", "경량"],
+          "advantages": [
+            "ankle joint reaction force 감소",
+            "soleus/peroneus force 감소",
+            "러닝 이코노미 향상"
+          ],
+          "caveats": [
+            "연구는 주로 엘리트 대상",
+            "개인차 큼",
+            "적응 필요"
+          ]
+        },
+        "comfort_filter": {
+          "principle": "편안함이 개인의 ‘preferred movement path’를 유지시켜 부상 위험을 줄인다.",
+          "practical_rules": [
+            "여러 신발을 실제로 신어볼 것",
+            "1km 이상 짧은 러닝에서 편안함 평가",
+            "불편하면 스펙이 좋아도 패스"
+          ]
+        },
+        "individual_variation": [
+          "신체치수, 체중",
+          "기존 부상 내역",
+          "주당 주행거리",
+          "표면(도로, 트레일, 트랙)",
+          "성별/연령 차이"
+        ]
+      }
+    },
+    {
+      "id": "3-korean-market-insights",
+      "name": "Korean Market Insights - Consumer Analysis",
+      "slug": "korean-market-insights",
+      "page_range": [27, 41],
+      "summary": "한국 러닝화 소비자의 우선순위, 가격대 인식, 커뮤니티 문화, 발 모양 특성 등을 정리한 섹션. 리뷰를 한국 시장에 최적화하기 위한 인사이트 제공.",
+      "core_objects": {
+        "priority_rankings": [
+          "Comfort/Fit",
+          "Cushioning",
+          "Stability",
+          "Weight",
+          "Responsiveness",
+          "Price/Value",
+          "Design",
+          "Brand Reputation"
+        ],
+        "segment_profiles": {
+          "beginner": {
+            "needs": ["착화감", "쿠션", "안정성", "가성비", "멀티 유즈"],
+            "price_preference_krw": "<=150000",
+            "common_questions": [
+              "무릎 괜찮나요?",
+              "초보도 신을 수 있나요?",
+              "가성비 괜찮나요?"
+            ]
+          },
+          "advanced_marathon": {
+            "needs": ["경량", "반발력", "카본", "레이스 최적화"],
+            "price_acceptance_krw": "up to 250000+",
+            "focus": ["PR 향상", "엘리트 사용 모델"]
+          },
+          "fun_runner": {
+            "needs": ["편안함", "디자인", "SNS 친화력"],
+            "typical_models": ["Invincible", "Bondi", "Cloudmonster"]
+          }
+        },
+        "korean_foot": {
+          "wider_forefoot": true,
+          "flat_feet_prevalence": "higher",
+          "brand_fit_notes": {
+            "wide_recommended": ["Mizuno", "ASICS (wide)", "Altra", "New Balance 2E/4E"],
+            "narrow_caution": ["Nike Vaporfly", "일부 adidas/부스트 계열"]
+          }
+        },
+        "price_brackets_krw": [
+          "Under 100k: 입문/아울렛",
+          "100–150k: 초보 스윗스팟",
+          "150–200k: 시리어스 초보~중급",
+          "200–250k: 프리미엄 데일리",
+          "250k+: 카본/플래그십"
+        ],
+        "community_influence": {
+          "channels": ["Naver 카페", "DC 러닝갤", "YouTube", "SNS"],
+          "phenomena": [
+            "등급(티어) 시스템",
+            "세일 정보 공유",
+            "이전 시즌 모델 추천 문화",
+            "‘가성비 갓신발’ 찾기"
+          ]
+        },
+        "multi_purpose_expectations": [
+          "러닝 + 헬스장 + 일상 착화 원함",
+          "전문화된 러닝화와의 트레이드오프 설명 필요"
+        ],
+        "purchase_channels": {
+          "online_ratio": 0.63,
+          "offline_ratio": 0.37,
+          "hybrid_pattern": "온라인 정보 → 오프라인 피팅 → 온라인 구매"
+        },
+        "seasonality": [
+          "봄/가을: 마라톤 시즌, 구매 피크",
+          "겨울: 세일·가성비 시즌, 트레드밀 고려"
+        ],
+        "faq_for_reviews": [
+          "발에 편한가요?",
+          "무릎에 무리 없나요?",
+          "가격 대비 괜찮나요?",
+          "초보도 신을 수 있나요?",
+          "몇 km 정도 신을 수 있나요?",
+          "평소에도 신을 수 있나요?",
+          "발볼 넓은데 괜찮나요?"
+        ]
+      }
+    },
+    {
+      "id": "4-model-examples",
+      "name": "Model Examples - Category References",
+      "slug": "model-examples",
+      "page_range": [42, 55],
+      "summary": "카테고리별 대표 러닝화 예시 목록. 리뷰에서 비교·포지셔닝용 레퍼런스로 사용.",
+      "core_objects": {
+        "categories": [
+          {
+            "name": "Entry-Level / Beginner",
+            "price_krw": [100000, 180000],
+            "examples": ["NB 1080", "ASICS Gel-Nimbus", "Nike Pegasus", "Brooks Ghost", "Mizuno Wave Rider"]
+          },
+          {
+            "name": "Daily Training",
+            "examples": ["adidas Ultraboost", "HOKA Clifton", "Saucony Triumph", "On Cloudstratus"]
+          },
+          {
+            "name": "Tempo/Training",
+            "examples": ["Nike Invincible", "Saucony Endorphin Speed", "NB FuelCell Rebel", "HOKA Mach"]
+          },
+          {
+            "name": "Carbon-Plated Racing",
+            "examples": ["Nike Vaporfly/Alphafly", "adidas Adios Pro", "ASICS Metaspeed Sky/Edge", "Saucony Endorphin Pro", "NB SC Elite", "HOKA Carbon X"]
+          },
+          {
+            "name": "Stability",
+            "examples": ["ASICS GT-2000", "ASICS Kayano", "Brooks Adrenaline GTS", "NB 860"]
+          },
+          {
+            "name": "Lightweight/Minimal",
+            "examples": ["Nike Free Run", "Altra Escalante", "Saucony Kinvara"]
+          },
+          {
+            "name": "Trail",
+            "examples": ["Salomon Speedcross", "HOKA Speedgoat", "Nike Pegasus Trail"]
+          },
+          {
+            "name": "Super Cushioned / Max",
+            "examples": ["HOKA Bondi", "NB More", "Nike Invincible"]
+          }
+        ],
+        "brand_positioning_korea": {
+          "premium": ["Nike (Vaporfly)", "On", "HOKA"],
+          "trusted_traditional": ["ASICS", "New Balance", "Brooks"],
+          "performance_value": ["Saucony", "Mizuno", "361°"],
+          "fashion_crossover": ["Nike", "adidas", "New Balance"]
+        },
+        "lifecycle_pricing": {
+          "new_release": "가격↑, 재고↓, 하드코어 러너용",
+          "one_two_seasons_old": "성능 검증 + 가격↓, 베스트 밸런스",
+          "outlet_discontinued": "가성비 최고, 색상/사이즈 제한"
+        },
+        "scenarios": [
+          "Complete Beginner",
+          "Progressing Runner",
+          "Marathon Prep",
+          "Race Day",
+          "Fun Runner",
+          "Budget-Conscious",
+          "Wide Feet"
+        ],
+        "price_performance_sweetspots": {
+          "under_150k": ["Prev. season Pegasus", "Saucony Ride", "Wave Rider"],
+          "150k_180k": ["NB 1080", "ASICS Cumulus", "Brooks Ghost"],
+          "180k_220k": ["HOKA Clifton", "Saucony Triumph", "Fresh Foam X"],
+          "220k_280k": ["Endorphin Speed", "ZoomX Invincible", "Gel-Nimbus"],
+          "280k_plus": ["카본 레이싱 (Vaporfly, Adios Pro, Metaspeed 등)"]
+        },
+        "underrated_gems": [
+          "Saucony Endorphin Speed",
+          "Mizuno Wave Rider",
+          "NB FuelCell Rebel",
+          "Brooks Ghost"
+        ],
+        "model_specific_notes": {
+          "Nike Pegasus": "만능형, safe pick, 입문자 추천용",
+          "ASICS Nimbus": "맥스 쿠션, 보수적·안정적, 다소 무거움",
+          "Nike Vaporfly": "레이스 성능 기준, 심리적 부스트, 훈련용 X",
+          "HOKA Clifton": "‘게이트웨이 HOKA’, 가볍고 쿠션 높음",
+          "Saucony Endorphin Speed": "가성비 카본 느낌, 훈련+레이스 겸용"
+        }
+      }
+    }
+  ]
+}

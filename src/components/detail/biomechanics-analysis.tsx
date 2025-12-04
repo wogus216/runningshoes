@@ -12,8 +12,8 @@ type BiomechCardProps = {
 
 function BiomechCard({ title, value, description }: BiomechCardProps) {
   return (
-    <div className="bg-gradient-to-br from-[#667eea05] to-[#764ba205] rounded-2xl p-6 border-l-4 border-[#667eea]">
-      <h4 className="text-lg font-bold text-[#667eea] mb-3">{title}</h4>
+    <div className="bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-6 border-l-4 border-[#4facfe]">
+      <h4 className="text-lg font-bold text-[#4facfe] mb-3">{title}</h4>
       <div className="text-3xl font-black text-gray-900 mb-3">{value}</div>
       <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
@@ -59,8 +59,8 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
         />
       </div>
 
-      <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] border-l-4 border-[#667eea] rounded-xl p-5">
-        <div className="font-bold text-[#667eea] mb-2 text-lg">
+      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
+        <div className="font-bold text-[#4facfe] mb-2 text-lg">
           💡 러닝 이코노미 영향
         </div>
         <p className="text-gray-700 leading-relaxed">

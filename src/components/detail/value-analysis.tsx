@@ -51,7 +51,7 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
             <ul className="space-y-2 text-gray-600">
               {priceAnalysis.alternatives.map((alt) => (
                 <li key={alt} className="flex items-start gap-2">
-                  <span className="text-[#667eea] mt-1">•</span>
+                  <span className="text-[#4facfe] mt-1">•</span>
                   <span>{alt}</span>
                 </li>
               ))}
@@ -62,7 +62,7 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
 
       {/* Price Tiers */}
       <div>
-        <h3 className="text-xl font-bold mb-4 text-[#667eea]">가격대별 비교</h3>
+        <h3 className="text-xl font-bold mb-4 text-[#4facfe]">가격대별 비교</h3>
         <div className="space-y-4">
           <div className="bg-white rounded-xl p-5 border-2 border-gray-100">
             <strong className="text-gray-900">더 저렴한 대안 (10-13만원):</strong>
@@ -72,8 +72,8 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
             </p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] rounded-xl p-5 border-2 border-[#667eea]">
-            <strong className="text-[#667eea] text-lg">
+          <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] rounded-xl p-5 border-2 border-[#4facfe]">
+            <strong className="text-[#4facfe] text-lg">
               비슷한 가격 (15-18만원): ✅ 페가수스 41 여기!
             </strong>
             <p className="text-gray-700 mt-2">
@@ -92,8 +92,8 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
       </div>
 
       {/* Purchase Tips */}
-      <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] border-l-4 border-[#667eea] rounded-xl p-5">
-        <div className="font-bold text-[#667eea] mb-2 text-lg">💰 구매 팁 (한국 시장)</div>
+      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
+        <div className="font-bold text-[#4facfe] mb-2 text-lg">💰 구매 팁 (한국 시장)</div>
         <div className="text-gray-700 space-y-2">
           <p>
             <strong>세일 시기:</strong> ABC마트 연말/설날 세일, 아울렛에서 12-13만원대 구매

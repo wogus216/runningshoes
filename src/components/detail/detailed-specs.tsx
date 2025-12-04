@@ -39,7 +39,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
           <TableBody>
             {specRows.map((row, index) => (
               <TableRow key={row.label} className={index % 2 === 0 ? "bg-gray-50" : ""}>
-                <TableCell className="font-bold text-[#667eea] w-1/3">
+                <TableCell className="font-bold text-[#4facfe] w-1/3">
                   {row.label}
                 </TableCell>
                 <TableCell>{row.value}</TableCell>

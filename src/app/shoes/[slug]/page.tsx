@@ -3,6 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getShoeBySlug, getShoes } from "@/lib/data/shoes";
 import { HeroSection } from "@/components/detail/hero-section";
+import { ResearchBadge } from "@/components/detail/research-badge";
 import { QuickSpecs } from "@/components/detail/quick-specs";
 import { TargetRecommendation } from "@/components/detail/target-recommendation";
 import { BiomechanicsAnalysis } from "@/components/detail/biomechanics-analysis";
@@ -17,6 +18,8 @@ import { ValueAnalysis } from "@/components/detail/value-analysis";
 import { SimilarShoes } from "@/components/detail/similar-shoes";
 import { FinalRating } from "@/components/detail/final-rating";
 import { FinalCTA } from "@/components/detail/final-cta";
+import { ReferencesSection } from "@/components/detail/references-section";
+import { SectionNav } from "@/components/detail/section-nav";
 
 type ShoeDetailPageProps = {
   params: {
@@ -80,94 +83,126 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         {/* Hero Section */}
         <HeroSection shoe={shoe} />
 
+        {/* Research Badge - 신뢰성 표시 */}
+        {hasCompleteData && <ResearchBadge papersCount={5} />}
+
         {hasCompleteData ? (
           <>
+            {/* Section Navigation */}
+            <SectionNav
+              availableSections={[
+                shoe.specs ? "quick-specs" : "",
+                shoe.targetUsers ? "target-users" : "",
+                shoe.biomechanics ? "biomechanics" : "",
+                shoe.injuryPrevention ? "injury-prevention" : "",
+                shoe.koreanFootFit ? "korean-foot" : "",
+                shoe.specs ? "radar-chart" : "",
+                shoe.features && shoe.features.length > 0 ? "features" : "",
+                "comparison",
+                shoe.reviews && shoe.reviews.length > 0 ? "reviews" : "",
+                shoe.detailedSpecs ? "detailed-specs" : "",
+                shoe.priceAnalysis ? "value-analysis" : "",
+                shoe.similarShoes && shoe.similarShoes.length > 0 ? "similar-shoes" : "",
+                shoe.specs ? "final-rating" : "",
+                "references",
+              ].filter(Boolean)}
+            />
+
             {/* QuickSpecs */}
-            {shoe.specs && <QuickSpecs specs={shoe.specs} />}
+            {shoe.specs && (
+              <div id="quick-specs" className="scroll-mt-24">
+                <QuickSpecs specs={shoe.specs} />
+              </div>
+            )}
 
             {/* Section Cards */}
             <div className="space-y-8">
               {/* Target Recommendation */}
               {shoe.targetUsers && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="target-users" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <TargetRecommendation targetUsers={shoe.targetUsers} />
                 </div>
               )}
 
               {/* Biomechanics Analysis */}
               {shoe.biomechanics && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="biomechanics" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <BiomechanicsAnalysis biomechanics={shoe.biomechanics} />
                 </div>
               )}
 
               {/* Injury Prevention */}
               {shoe.injuryPrevention && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="injury-prevention" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
                 </div>
               )}
 
               {/* Korean Foot Fit */}
               {shoe.koreanFootFit && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="korean-foot" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <KoreanFootFit koreanFootFit={shoe.koreanFootFit} />
                 </div>
               )}
 
               {/* Spec Radar Chart */}
               {shoe.specs && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="radar-chart" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <SpecRadarChart specs={shoe.specs} priceValueRating={shoe.priceAnalysis?.valueRating} />
                 </div>
               )}
 
               {/* Key Features */}
               {shoe.features && shoe.features.length > 0 && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="features" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <KeyFeatures features={shoe.features} />
                 </div>
               )}
 
               {/* Comparison Table */}
-              <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+              <div id="comparison" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                 <ComparisonTable />
               </div>
 
               {/* Reviews Section */}
               {shoe.reviews && shoe.reviews.length > 0 && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="reviews" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <ReviewsSection reviews={shoe.reviews} />
                 </div>
               )}
 
               {/* Detailed Specs */}
               {shoe.detailedSpecs && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="detailed-specs" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <DetailedSpecs specs={shoe.detailedSpecs} />
                 </div>
               )}
 
               {/* Value Analysis */}
               {shoe.priceAnalysis && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="value-analysis" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <ValueAnalysis priceAnalysis={shoe.priceAnalysis} />
                 </div>
               )}
 
               {/* Similar Shoes */}
               {shoe.similarShoes && shoe.similarShoes.length > 0 && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="similar-shoes" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <SimilarShoes similarShoes={shoe.similarShoes} />
                 </div>
               )}
 
               {/* Final Rating */}
               {shoe.specs && (
-                <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
+                <div id="final-rating" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
                   <FinalRating specs={shoe.specs} priceAnalysis={shoe.priceAnalysis} />
                 </div>
               )}
+
+              {/* References Section */}
+              <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
+                <ReferencesSection />
+              </div>
 
               {/* Final CTA */}
               <FinalCTA />

@@ -24,7 +24,7 @@ function InjuryCard({ icon, title, incidence, status, description }: InjuryCardP
   const iconEmoji = status === "caution" || status === "warning" ? "⚠️" : "✅";
 
   return (
-    <div className="bg-white rounded-2xl p-6 border-2 border-gray-100 transition-all duration-300 hover:border-[#667eea] hover:translate-x-1">
+    <div className="bg-white rounded-2xl p-6 border-2 border-gray-100 transition-all duration-300 hover:border-[#4facfe] hover:translate-x-1">
       <div className="flex items-center justify-between mb-4 flex-wrap gap-3">
         <div className="flex items-center gap-3">
           <div className="text-3xl">{iconEmoji}</div>
@@ -87,8 +87,8 @@ export function InjuryPrevention({ injuryPrevention }: InjuryPreventionProps) {
         />
       </div>
 
-      <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] border-l-4 border-[#667eea] rounded-xl p-5">
-        <div className="font-bold text-[#667eea] mb-2 text-lg">📚 연구 기반 인사이트</div>
+      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
+        <div className="font-bold text-[#4facfe] mb-2 text-lg">📚 연구 기반 인사이트</div>
         <p className="text-gray-700 leading-relaxed">
           기술적으로 진보된 러닝화(TARS)는 기존 쿠셔닝화 대비{" "}
           <strong>발목 관절 반력을 1.84 체중만큼 감소</strong>시키는 것으로 연구되었습니다.

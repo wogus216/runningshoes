@@ -15,7 +15,7 @@ function FootCharCard({ icon, label, value, description }: FootCharCardProps) {
   return (
     <div className="bg-white rounded-2xl p-6 border-2 border-gray-100 text-center transition-all duration-300 hover:shadow-lg">
       <div className="text-5xl mb-4">{icon}</div>
-      <div className="font-bold text-[#667eea] mb-2">{label}</div>
+      <div className="font-bold text-[#4facfe] mb-2">{label}</div>
       <div className="text-2xl font-black mb-3">{value}</div>
       <p className="text-sm text-gray-600">{description}</p>
     </div>
@@ -81,8 +81,8 @@ export function KoreanFootFit({ koreanFootFit }: KoreanFootFitProps) {
         />
       </div>
 
-      <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] border-l-4 border-[#667eea] rounded-xl p-5">
-        <div className="font-bold text-[#667eea] mb-2 text-lg">🇰🇷 한국 시장 팁</div>
+      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
+        <div className="font-bold text-[#4facfe] mb-2 text-lg">🇰🇷 한국 시장 팁</div>
         <p className="text-gray-700 leading-relaxed">
           <strong>발볼이 넓으신 분</strong>: 미즈노 웨이브 라이더, 아식스 GT-2000 와이드,
           알트라 시리즈를 대안으로 고려하세요. 페가수스는 표준 폭이라 발볼 넓은 한국인에게는

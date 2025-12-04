@@ -37,9 +37,9 @@ export function KeyFeatures({ features }: KeyFeaturesProps) {
           return (
             <div
               key={feature}
-              className="bg-gradient-to-br from-[#667eea05] to-[#764ba205] rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
+              className="bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-6 transition-all duration-300 hover:-translate-y-2 hover:shadow-lg"
             >
-              <h4 className="text-xl font-bold text-[#667eea] mb-3 flex items-center gap-2">
+              <h4 className="text-xl font-bold text-[#4facfe] mb-3 flex items-center gap-2">
                 <span className="text-2xl">{detail.icon}</span>
                 {feature}
               </h4>

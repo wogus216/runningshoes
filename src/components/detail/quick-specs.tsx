@@ -13,9 +13,9 @@ type SpecCardProps = {
 
 function SpecCard({ icon, label, value, percentage }: SpecCardProps) {
   return (
-    <div className="group relative bg-white rounded-2xl p-8 text-center transition-all duration-300 border-[3px] border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-[#667eea] overflow-hidden">
+    <div className="group relative bg-white rounded-2xl p-8 text-center transition-all duration-300 border-[3px] border-gray-100 shadow-md hover:shadow-xl hover:-translate-y-2 hover:border-[#4facfe] overflow-hidden">
       {/* Hover top bar */}
-      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#667eea] to-[#764ba2] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-[#4facfe] opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
       <div className="text-5xl mb-4">{icon}</div>
 
@@ -30,7 +30,7 @@ function SpecCard({ icon, label, value, percentage }: SpecCardProps) {
       {/* Progress bar */}
       <div className="h-2.5 bg-gray-100 rounded-full overflow-hidden shadow-inner">
         <div
-          className="h-full bg-gradient-to-r from-[#667eea] to-[#764ba2] rounded-full shadow-md transition-all duration-1000 ease-out"
+          className="h-full bg-[#4facfe] rounded-full shadow-md transition-all duration-1000 ease-out"
           style={{ width: `${percentage}%` }}
         />
       </div>

@@ -29,10 +29,13 @@ export function BrandView({ shoes }: BrandViewProps) {
           return a.name.localeCompare(b.name, "ko");
         });
 
+        const sectionId = `brand-${brand.replace(/\s+/g, '-')}`;
+
         const section = (
           <section
             key={brand}
-            className="rounded-[32px] border border-white/20 bg-white/10 p-6 shadow-[0_30px_60px_-55px_rgba(15,23,42,0.65)] backdrop-blur-2xl transition hover:border-white/40 lg:p-8"
+            id={sectionId}
+            className="rounded-[32px] border border-white/20 bg-white/10 p-6 shadow-[0_30px_60px_-55px_rgba(15,23,42,0.65)] backdrop-blur-2xl transition hover:border-white/40 lg:p-8 scroll-mt-32"
           >
             <header className="flex flex-wrap items-end justify-between gap-4">
               <div>

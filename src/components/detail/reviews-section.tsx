@@ -6,16 +6,16 @@ type ReviewsSectionProps = {
 
 function ReviewCard({ review }: { review: Review }) {
   const userTypeColors: Record<string, string> = {
-    "입문 러너": "bg-[#667eea]",
-    "중급 러너": "bg-[#764ba2]",
-    "상급 러너": "bg-[#f093fb]",
+    "입문 러너": "bg-[#4facfe]",
+    "중급 러너": "bg-[#2d9cdb]",
+    "상급 러너": "bg-[#1a73e8]",
     "평발 러너": "bg-[#f59e0b]",
     "가성비 중시": "bg-[#10b981]",
     "Fun Runner": "bg-[#4facfe]",
   };
 
   return (
-    <div className="bg-gradient-to-br from-[#667eea05] to-[#764ba205] rounded-2xl p-6 border-l-4 border-[#667eea]">
+    <div className="bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-6 border-l-4 border-[#4facfe]">
       <div className="flex justify-between items-center mb-4 flex-wrap gap-3">
         <div className="text-yellow-500 text-xl">
           {"★".repeat(review.rating)}

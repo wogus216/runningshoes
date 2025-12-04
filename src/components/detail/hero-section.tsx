@@ -24,11 +24,11 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
       {/* Shoe Info */}
       <div className="space-y-6">
-        <Badge className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white font-bold text-sm px-4 py-2 uppercase tracking-wider">
+        <Badge className="bg-[#4facfe] text-white font-bold text-sm px-4 py-2 uppercase tracking-wider">
           {shoe.brand}
         </Badge>
 
-        <h1 className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-[#667eea] to-[#764ba2] bg-clip-text text-transparent">
+        <h1 className="text-4xl lg:text-5xl font-black text-[#4facfe]">
           {shoe.name}
         </h1>
 
@@ -37,7 +37,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
             <Badge
               key={tag}
               variant="secondary"
-              className="bg-white border-2 border-[#667eea] text-[#667eea] font-bold px-4 py-2 hover:bg-gradient-to-r hover:from-[#667eea] hover:to-[#764ba2] hover:text-white transition-all duration-300"
+              className="bg-white border-2 border-[#4facfe] text-[#4facfe] font-bold px-4 py-2 hover:bg-[#4facfe] hover:text-white transition-all duration-300"
             >
               {tag}
             </Badge>
@@ -49,7 +49,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
         </p>
 
         <div className="flex items-center gap-3 flex-wrap">
-          <div className="text-3xl lg:text-4xl font-black text-[#667eea]">
+          <div className="text-3xl lg:text-4xl font-black text-[#4facfe]">
             ₩{shoe.price?.toLocaleString()}
           </div>
           {shoe.priceAnalysis && (
@@ -70,7 +70,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
         <Button
           size="lg"
-          className="bg-gradient-to-r from-[#667eea] to-[#764ba2] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+          className="bg-[#4facfe] hover:bg-[#3d9be8] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
         >
           구매하기
         </Button>

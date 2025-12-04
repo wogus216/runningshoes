@@ -14,9 +14,9 @@ type RatingCardProps = {
 
 function RatingCard({ label, score, description, highlight = false }: RatingCardProps) {
   return (
-    <div className="bg-white rounded-xl p-5 border-2 border-gray-100 hover:border-[#667eea] transition-colors">
+    <div className="bg-white rounded-xl p-5 border-2 border-gray-100 hover:border-[#4facfe] transition-colors">
       <div className="text-sm text-gray-400 mb-2">{label}</div>
-      <div className={`text-4xl font-black mb-2 ${highlight ? "text-[#10b981]" : "text-[#667eea]"}`}>
+      <div className={`text-4xl font-black mb-2 ${highlight ? "text-[#10b981]" : "text-[#4facfe]"}`}>
         {score}/10
       </div>
       <div className="text-sm text-gray-600">{description}</div>
@@ -61,7 +61,7 @@ export function FinalRating({ specs, priceAnalysis }: FinalRatingProps) {
       </div>
 
       {/* Overall Verdict */}
-      <div className="bg-gradient-to-r from-[#667eea] to-[#764ba2] text-white rounded-3xl p-8 lg:p-12 text-center">
+      <div className="bg-[#4facfe] text-white rounded-3xl p-8 lg:p-12 text-center">
         <div className="text-xl opacity-95 mb-4">종합 평점</div>
         <div className="text-6xl lg:text-7xl font-black mb-4">{overallScore}/10</div>
         <div className="text-2xl font-bold mb-6">초보 러너 첫 신발로 강력 추천!</div>

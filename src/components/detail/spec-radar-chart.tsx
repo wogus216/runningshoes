@@ -46,17 +46,17 @@ export function SpecRadarChart({ specs, priceValueRating = 9 }: SpecRadarChartPr
       <div className="bg-white rounded-2xl p-8 shadow-md">
         <ResponsiveContainer width="100%" height={400}>
           <RadarChart data={data}>
-            <PolarGrid stroke="rgba(102, 126, 234, 0.1)" />
+            <PolarGrid stroke="rgba(79, 172, 254, 0.1)" />
             <PolarAngleAxis
               dataKey="subject"
-              tick={{ fill: '#667eea', fontSize: 13, fontWeight: 700 }}
+              tick={{ fill: '#4facfe', fontSize: 13, fontWeight: 700 }}
             />
             <PolarRadiusAxis angle={90} domain={[0, 10]} tick={{ fontSize: 12, fontWeight: 600 }} />
             <Radar
               name="페가수스 41"
               dataKey="value"
-              stroke="#667eea"
-              fill="rgba(102, 126, 234, 0.2)"
+              stroke="#4facfe"
+              fill="rgba(79, 172, 254, 0.2)"
               fillOpacity={0.6}
               strokeWidth={3}
             />
@@ -65,7 +65,7 @@ export function SpecRadarChart({ specs, priceValueRating = 9 }: SpecRadarChartPr
 
         <p className="text-center text-sm text-gray-500 mt-4">
           * 한국 소비자 조사:{" "}
-          <strong className="text-[#667eea]">착화감이 76%로 구매 결정 1순위</strong>
+          <strong className="text-[#4facfe]">착화감이 76%로 구매 결정 1순위</strong>
         </p>
       </div>
     </section>

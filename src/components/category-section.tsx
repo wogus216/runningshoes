@@ -16,12 +16,16 @@ export const CategorySection = memo(function CategorySection({
   indexOffset = 0,
   className,
 }: CategorySectionProps) {
+  const sectionId = `category-${category.replace(/\s+/g, '-')}`;
+
   return (
     <section
+      id={sectionId}
       className={cn(
         "grid gap-4 rounded-[30px] border border-white/20 bg-white/10 p-4 backdrop-blur-2xl transition hover:border-white/40 lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-6 lg:p-6",
         "shadow-[0_30px_60px_-50px_rgba(15,23,42,0.45)]",
         "animate-fade-in-up",
+        "scroll-mt-32",
         className
       )}
     >

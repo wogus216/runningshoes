@@ -13,8 +13,8 @@ export function TargetRecommendation({ targetUsers }: TargetRecommendationProps)
       </h2>
 
       {/* Recommended */}
-      <div className="bg-gradient-to-br from-[#667eea10] to-[#764ba210] border-2 border-[#667eea] rounded-2xl p-6 lg:p-8">
-        <h3 className="text-xl font-bold text-[#667eea] mb-6">
+      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-2 border-[#4facfe] rounded-2xl p-6 lg:p-8">
+        <h3 className="text-xl font-bold text-[#4facfe] mb-6">
           ✅ 이런 분께 추천해요
         </h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

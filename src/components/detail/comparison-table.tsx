@@ -86,7 +86,7 @@ export function ComparisonTable() {
       <div className="overflow-x-auto bg-white rounded-2xl shadow-md">
         <Table>
           <TableHeader>
-            <TableRow className="bg-gradient-to-r from-[#667eea] to-[#764ba2]">
+            <TableRow className="bg-[#4facfe]">
               <TableHead className="text-white font-bold text-center">평가 항목</TableHead>
               <TableHead className="text-white font-bold text-center">초보 러너</TableHead>
               <TableHead className="text-white font-bold text-center">
@@ -97,7 +97,7 @@ export function ComparisonTable() {
           <TableBody>
             {comparisonData.map((row) => (
               <TableRow key={row.category}>
-                <TableCell className="font-bold text-[#667eea]">{row.category}</TableCell>
+                <TableCell className="font-bold text-[#4facfe]">{row.category}</TableCell>
                 <TableCell>
                   <div className="space-y-2">
                     <StarRating rating={row.beginnerRating} />

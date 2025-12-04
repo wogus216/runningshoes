@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import { BrandView } from "@/components/brand-view";
 import { HierarchyView } from "@/components/hierarchy-view";
 import { ViewToggle, type ViewMode } from "@/components/view-toggle";
-import { getShoes } from "@/lib/data/shoes";
+import { getShoes, categoryOrder, getBrandsFromShoes } from "@/lib/data/shoes";
 
 export default function HomePage() {
   const [view, setView] = useState<ViewMode>("hierarchy");
@@ -12,12 +12,19 @@ export default function HomePage() {
   const totalBrands = useMemo(() => new Set(shoes.map((shoe) => shoe.brand)).size, [shoes]);
   const totalCategories = useMemo(() => new Set(shoes.map((shoe) => shoe.category)).size, [shoes]);
 
+  const categories = useMemo(() => {
+    const existingCategories = new Set(shoes.map((shoe) => shoe.category));
+    return categoryOrder.filter((cat) => existingCategories.has(cat));
+  }, [shoes]);
+
+  const brands = useMemo(() => getBrandsFromShoes(shoes), [shoes]);
+
   return (
     <div className="space-y-12 pb-16">
       <section className="text-center animate-fade-in-down">
         <h1 className="text-5xl font-black tracking-tight text-slate-900 sm:text-6xl md:text-7xl lg:text-[5rem]" style={{ letterSpacing: '-0.05em' }}>
           러닝화 계급도
-          <span className="block bg-gradient-to-r from-[#667eea] via-[#764ba2] to-[#4facfe] bg-clip-text text-transparent">
+          <span className="block text-[#4facfe]">
             2025
           </span>
         </h1>
@@ -26,7 +33,7 @@ export default function HomePage() {
         </p>
       </section>
 
-      <ViewToggle view={view} onChange={setView} />
+      <ViewToggle view={view} onChange={setView} categories={categories} brands={brands} />
 
       {view === "hierarchy" ? <HierarchyView shoes={shoes} /> : <BrandView shoes={shoes} />}
     </div>
