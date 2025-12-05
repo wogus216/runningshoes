@@ -2,9 +2,31 @@ import type { PriceAnalysis } from "@/types/shoe";
 
 type ValueAnalysisProps = {
   priceAnalysis: PriceAnalysis;
+  shoeName: string;
+  brand: string;
+  category: string;
 };
 
-export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
+export function ValueAnalysis({ priceAnalysis, shoeName, brand, category }: ValueAnalysisProps) {
+  // 가격대별 설명 생성
+  const getPriceTierDescription = () => {
+    const price = priceAnalysis.msrp;
+    if (price < 130000) return "10만원대 초반";
+    if (price < 160000) return "15만원대 중반";
+    if (price < 200000) return "20만원 미만";
+    if (price < 250000) return "20만원대";
+    if (price < 300000) return "30만원 미만 프리미엄";
+    return "30만원대 이상 최상급";
+  };
+
+  const getValueDescription = () => {
+    const rating = priceAnalysis.valueRating;
+    if (rating >= 9) return "최고의 가성비";
+    if (rating >= 8) return "뛰어남";
+    if (rating >= 7) return "양호";
+    if (rating >= 6) return "적정";
+    return "프리미엄";
+  };
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
@@ -15,12 +37,19 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
       {/* Value Highlight */}
       <div className="bg-gradient-to-br from-[#10b98110] to-[#10b98120] border-l-4 border-[#10b981] rounded-2xl p-6 lg:p-8">
         <h3 className="text-xl font-black text-[#10b981] mb-4">
-          ✅ 가성비 평가: {priceAnalysis.valueRating}/10 (뛰어남)
+          ✅ 가성비 평가: {priceAnalysis.valueRating}/10 ({getValueDescription()})
         </h3>
         <p className="text-gray-700 mb-6 leading-relaxed">
-          <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은 한국 소비자가 가장 선호하는{" "}
-          <strong>&ldquo;15만원대 중반&rdquo;</strong> 가격대입니다. 초보 러너들이 &ldquo;부담스럽지 않으면서
-          성능이 검증된&rdquo; 가격으로 평가합니다.
+          <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은{" "}
+          <strong>&ldquo;{getPriceTierDescription()}&rdquo;</strong> 가격대입니다.{" "}
+          {category === "레이싱"
+            ? "레이싱화 중에서는 합리적인 가격으로 평가됩니다."
+            : category === "쿠션화"
+            ? "쿠셔닝화 중에서 가격 대비 성능이 뛰어납니다."
+            : category === "안정화"
+            ? "안정화 카테고리에서 가격 대비 좋은 선택입니다."
+            : "데일리 러닝화로서 적절한 가격대입니다."
+          }
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -74,10 +103,10 @@ export function ValueAnalysis({ priceAnalysis }: ValueAnalysisProps) {
 
           <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] rounded-xl p-5 border-2 border-[#4facfe]">
             <strong className="text-[#4facfe] text-lg">
-              비슷한 가격 (15-18만원): ✅ 페가수스 41 여기!
+              현재 가격대 ({getPriceTierDescription()}): ✅ {brand} {shoeName} 여기!
             </strong>
             <p className="text-gray-700 mt-2">
-              뉴발란스 1080 (18만원), 아식스 님버스 (20만원) - 페가수스가 가장 균형 잡힌 선택
+              {priceAnalysis.alternatives.slice(0, 2).join(", ")} 등과 비교하여 좋은 선택입니다.
             </p>
           </div>
 

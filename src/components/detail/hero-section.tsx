@@ -68,12 +68,14 @@ export function HeroSection({ shoe }: HeroSectionProps) {
           </div>
         )}
 
+{/* 구글 애드센스용 주석 처리
         <Button
           size="lg"
           className="bg-[#4facfe] hover:bg-[#3d9be8] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
         >
           구매하기
         </Button>
+*/}
       </div>
     </div>
   );

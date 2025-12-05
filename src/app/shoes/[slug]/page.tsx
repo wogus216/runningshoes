@@ -181,7 +181,12 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
               {/* Value Analysis */}
               {shoe.priceAnalysis && (
                 <div id="value-analysis" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <ValueAnalysis priceAnalysis={shoe.priceAnalysis} />
+                  <ValueAnalysis
+                    priceAnalysis={shoe.priceAnalysis}
+                    shoeName={shoe.name}
+                    brand={shoe.brand}
+                    category={shoe.category}
+                  />
                 </div>
               )}
 
@@ -195,7 +200,14 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
               {/* Final Rating */}
               {shoe.specs && (
                 <div id="final-rating" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <FinalRating specs={shoe.specs} priceAnalysis={shoe.priceAnalysis} />
+                  <FinalRating
+                    specs={shoe.specs}
+                    priceAnalysis={shoe.priceAnalysis}
+                    shoeName={shoe.name}
+                    brand={shoe.brand}
+                    category={shoe.category}
+                    durabilityKm={shoe.specs?.durability ? { min: shoe.specs.durability - 100, max: shoe.specs.durability } : undefined}
+                  />
                 </div>
               )}
 
@@ -205,7 +217,11 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
               </div>
 
               {/* Final CTA */}
-              <FinalCTA />
+              <FinalCTA
+                shoeName={shoe.name}
+                brand={shoe.brand}
+                category={shoe.category}
+              />
             </div>
           </>
         ) : (

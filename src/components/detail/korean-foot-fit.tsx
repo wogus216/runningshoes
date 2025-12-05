@@ -63,7 +63,7 @@ export function KoreanFootFit({ koreanFootFit }: KoreanFootFitProps) {
           icon="🦶"
           label="평발 적합성"
           value={flatFootText}
-          description="적절한 아치 서포트로 평발 러너에게 좋습니다. 과내전 교정은 약하므로 심한 평발은 GT-2000 고려."
+          description="적절한 아치 서포트로 평발 러너에게 좋습니다. 과내전 교정은 약하므로 심한 평발은 젤 카야노 고려."
         />
 
         <FootCharCard
@@ -84,7 +84,7 @@ export function KoreanFootFit({ koreanFootFit }: KoreanFootFitProps) {
       <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
         <div className="font-bold text-[#4facfe] mb-2 text-lg">🇰🇷 한국 시장 팁</div>
         <p className="text-gray-700 leading-relaxed">
-          <strong>발볼이 넓으신 분</strong>: 미즈노 웨이브 라이더, 아식스 GT-2000 와이드,
+          <strong>발볼이 넓으신 분</strong>: 미즈노 웨이브 라이더, 뉴발란스 860 와이드,
           알트라 시리즈를 대안으로 고려하세요. 페가수스는 표준 폭이라 발볼 넓은 한국인에게는
           온라인 구매 전 <strong>매장 착화 권장</strong>합니다.
         </p>
