@@ -1,6 +1,6 @@
+import { ShoppingBag } from 'lucide-react';
 import type { Shoe } from "@/types/shoe";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -13,12 +13,20 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     return "bg-[#f59e0b20] text-[#f59e0b]";
   };
 
+  // 내구성 범위 계산
+  const getDurabilityRange = () => {
+    const durability = shoe.specs?.durability || 500;
+    const min = Math.max(durability - 100, 300);
+    const max = durability;
+    return `${min}-${max}km`;
+  };
+
   return (
     <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center animate-fade-in-up bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
       {/* Shoe Image */}
       <div className="text-center">
-        <div className="text-[8rem] lg:text-[12rem] drop-shadow-2xl animate-float">
-          🏃
+        <div className="w-48 h-48 lg:w-64 lg:h-64 mx-auto bg-gradient-to-br from-[#4facfe10] to-[#4facfe30] rounded-full flex items-center justify-center drop-shadow-2xl animate-float">
+          <ShoppingBag className="w-24 h-24 lg:w-32 lg:h-32 text-[#4facfe]" />
         </div>
       </div>
 
@@ -63,7 +71,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
         {shoe.priceAnalysis && (
           <div className="text-sm text-gray-500">
-            예상 수명: {shoe.specs?.durability || 500}-600km | 코스트: 약 ₩
+            예상 수명: {getDurabilityRange()} | 코스트: 약 ₩
             {shoe.priceAnalysis.costPerKm}/km
           </div>
         )}

@@ -1,3 +1,4 @@
+import { ClipboardList } from 'lucide-react';
 import type { DetailedSpecs as DetailedSpecsType } from "@/types/shoe";
 import {
   Table,
@@ -30,7 +31,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <span className="text-4xl">📋</span>
+        <ClipboardList className="h-8 w-8 text-[#4facfe]" />
         상세 스펙
       </h2>
 

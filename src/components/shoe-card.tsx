@@ -1,9 +1,12 @@
+'use client';
+
 import { memo } from "react";
 import Link from "next/link";
 import { Star } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import type { Shoe } from "@/types/shoe";
 
 type ShoeCardProps = {
@@ -67,19 +70,22 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProp
           </div>
         </div>
 
-        <div className="mt-1 flex items-center gap-1 text-xs font-medium text-slate-600">
-          {Array.from({ length: 5 }).map((_, starIndex) => {
-            const isActive = starIndex < Math.round(shoe.rating);
-            return (
-              <Star
-                key={starIndex}
-                className={cn("h-3.5 w-3.5", isActive ? "fill-[#ffd700] stroke-[#ffd700]" : "stroke-slate-400")}
-              />
-            );
-          })}
-          <span className="ml-1 rounded-full bg-slate-900/5 px-2 py-0.5 text-[11px] font-semibold text-slate-600">
-            {shoe.rating.toFixed(1)}
-          </span>
+        <div className="mt-1 flex items-center justify-between">
+          <div className="flex items-center gap-1 text-xs font-medium text-slate-600">
+            {Array.from({ length: 5 }).map((_, starIndex) => {
+              const isActive = starIndex < Math.round(shoe.rating);
+              return (
+                <Star
+                  key={starIndex}
+                  className={cn("h-3.5 w-3.5", isActive ? "fill-[#ffd700] stroke-[#ffd700]" : "stroke-slate-400")}
+                />
+              );
+            })}
+            <span className="ml-1 rounded-full bg-slate-900/5 px-2 py-0.5 text-[11px] font-semibold text-slate-600">
+              {shoe.rating.toFixed(1)}
+            </span>
+          </div>
+          {shoe.specs && <AddToCompareButton shoe={shoe} variant="icon" />}
         </div>
       </div>
     </Card>

@@ -3,8 +3,8 @@ export type ShoeStatus = "new" | "updated" | "featured" | "great";
 export type InjuryPreventionLevel = 'excellent' | 'good' | 'caution' | 'warning';
 export type ToBoxWidth = 'narrow' | 'standard' | 'wide';
 export type CompatibilityLevel = 'excellent' | 'good' | 'fair' | 'poor';
-export type PriceTier = 'budget' | 'mid' | 'premium' | 'super-premium';
-export type PlateType = 'curved' | 'flat' | null;
+export type PriceTier = 'budget' | 'mid' | 'premium' | 'super-premium' | 'high';
+export type PlateType = 'curved' | 'flat' | string | null;
 
 export interface BiomechanicsData {
   stackHeight: {
@@ -39,10 +39,11 @@ export interface PriceAnalysis {
   valueRating: number;    // 1-10
   priceTier: PriceTier;
   alternatives: string[]; // similar price alternatives
+  valueAdvantages?: string[]; // 가격 대비 장점 (브랜드별 맞춤)
 }
 
 export interface Review {
-  userType: '입문 러너' | '중급 러너' | '상급 러너' | '평발 러너' | '가성비 중시' | 'Fun Runner';
+  userType: string;
   rating: number;
   text: string;
 }
@@ -62,19 +63,19 @@ export interface TargetUsers {
 }
 
 export interface DetailedSpecs {
-  weight: string;
-  stackHeight: string;
-  drop: string;
-  midsole: string;
-  plate: string;
-  outsole: string;
-  upper: string;
-  width: string;
-  durability: string;
-  price: string;
-  costPerKm: string;
-  footType: string;
-  landingPattern: string;
+  weight?: string;
+  stackHeight?: string;
+  drop?: string;
+  midsole?: string;
+  plate?: string;
+  outsole?: string;
+  upper?: string;
+  width?: string;
+  durability?: string;
+  price?: string;
+  costPerKm?: string;
+  footType?: string;
+  landingPattern?: string;
 }
 
 export interface Shoe {

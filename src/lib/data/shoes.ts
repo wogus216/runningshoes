@@ -2384,6 +2384,52 @@ const shoes: Shoe[] = [
       footType: '중립, 약간의 과내전',
       landingPattern: '뒤꿈치/중족부 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+
+    priceAnalysis: {
+      msrp: 169000,
+      streetPrice: 169000,
+      costPerKm: 280,
+      valueRating: 9,
+      priceTier: 'mid',
+      alternatives: ['brooks-ghost-17', 'asics-gel-nimbus-27'],
+      valueAdvantages: ['맥스 쿠션 중 합리적 가격', '다양한 발볼 옵션', '무릎 보호에 탁월'],
+    },
+
+    targetUsers: {
+      recommended: ['입문 러너', '무릎 부담을 줄이고 싶은 러너', '장거리 편안함을 원하는 러너', '넓은 발볼 옵션이 필요한 러너'],
+      notRecommended: ['가벼운 신발을 원하는 러너', '빠른 페이스 훈련용', '워킹/캐주얼 용도'],
+    },
+
+    features: [
+      '힐 39.7mm, 전족부 35.4mm의 맥시멀 쿠셔닝 (RunRepeat Lab Test)',
+      '로커 지오메트리로 부드러운 착지-이탈 전환',
+      'Torsional rigidity 5/5로 높은 스택에도 안정성 유지',
+      '두꺼운 텅 패딩과 힐 슬립 방지 설계',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 85,
+        text: '1080급 스택 높이를 합리적 가격에 제공하는 맥시멀 쿠션화. 이전 버전보다 무겁고 단단해졌지만, 무릎 보호와 안정성이 뛰어남.',
+      },
+    ],
+
+    similarShoes: ['new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-27'],
   },
 
   // New Balance - 쿠션화
@@ -2434,6 +2480,52 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '뒤꿈치/중족부 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'narrow',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+
+    priceAnalysis: {
+      msrp: 219000,
+      streetPrice: 219000,
+      costPerKm: 400,
+      valueRating: 8,
+      priceTier: 'premium',
+      alternatives: ['asics-gel-nimbus-27', 'brooks-glycerin-22'],
+      valueAdvantages: ['클라우드 소프트 쿠셔닝', '뛰어난 내구성', '프리미엄 어퍼'],
+    },
+
+    targetUsers: {
+      recommended: ['편안함을 최우선으로 하는 러너', '리커버리 러닝용', '장거리 러너', '무릎 보호가 필요한 러너'],
+      notRecommended: ['가벼운 신발을 원하는 러너', '빠른 페이스 훈련용', '넓은 토박스가 필요한 러너'],
+    },
+
+    features: [
+      '142 SA 충격 흡수력 (RunRepeat Lab Test) - 최상위 수준',
+      '11.9 HA 초소프트 미드솔로 구름 같은 착화감',
+      '4/5 통기성 - 트리플 레이어 메쉬로도 우수한 환기',
+      '프리미엄 재킷 메쉬 어퍼로 최고급 착화감',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 86,
+        text: '안정성이 개선되었지만 무게가 늘었음. 토박스가 좁아 발볼 넓은 러너는 주의. 내구성과 통기성이 뛰어나고 리커버리 러닝에 최적.',
+      },
+    ],
+
+    similarShoes: ['new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-27'],
   },
 
   // New Balance - 데일리
@@ -2484,6 +2576,53 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'good',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+
+    priceAnalysis: {
+      msrp: 179000,
+      streetPrice: 179000,
+      costPerKm: 360,
+      valueRating: 9,
+      priceTier: 'mid',
+      alternatives: ['saucony-kinvara-15', 'hoka-mach-6', 'asics-noosa-tri-16'],
+      valueAdvantages: ['v4 대비 모든 단점 개선', '같은 가격 유지', '경량 + 소프트 폼의 조화'],
+    },
+
+    targetUsers: {
+      recommended: ['중족부/전족부 착지 러너', '빠르고 가벼운 러닝을 원하는 러너', '데일리+템포 겸용 신발을 찾는 러너', 'v4의 힐 칼라 문제로 고생한 러너'],
+      notRecommended: ['최대 반발력을 원하는 러너', '젖은 노면/비포장에서 달리는 러너', '맥시멀 쿠셔닝을 원하는 러너'],
+    },
+
+    features: [
+      '힐 145 SA 충격흡수 - 전작 대비 크게 개선 (RunRepeat Lab Test)',
+      '11.5 HA 울트라소프트 FuelCell 폼 - 구름 같은 착화감',
+      '220g 경량 설계로 데일리+템포 겸용 가능',
+      'v4의 짧은 혀/힐 칼라 자극 문제 완전 해결',
+      '75mm 넓은 토박스로 발가락 여유 공간 확보',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 91,
+        text: 'v4의 모든 단점을 개선한 강력한 업그레이드. 충격흡수 개선, 힐 칼라 자극 해결, 가격 동결까지. 경량+소프트+유연한 라이드가 정말 즐겁다. 통기성과 어퍼 내구성만 주의.',
+      },
+    ],
+
+    similarShoes: ['hoka-mach-6', 'saucony-kinvara-15', 'asics-noosa-tri-16'],
   },
 
   // New Balance - 안정화
@@ -2524,7 +2663,7 @@ const shoes: Shoe[] = [
       stackHeight: '힐 36.8mm / 포어풋 27.5mm (실측)',
       drop: '9.3mm (실측) / 8mm (브랜드 공식)',
       midsole: 'Fresh Foam X + 메디얼 포스트 (안정성 강화)',
-      plate: '없음',
+      plate: 'EVA Film Plate (안정성용)',
       outsole: '고무 아웃솔',
       upper: '엔지니어드 메쉬',
       width: '표준 (D), 와이드 (2E) 옵션',
@@ -2534,6 +2673,53 @@ const shoes: Shoe[] = [
       footType: '과내전, 평발',
       landingPattern: '뒤꿈치 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'excellent',
+      shinSplints: 'excellent',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'excellent',
+      wideOptions: true,
+      winterCompatibility: 'fair',
+    },
+
+    priceAnalysis: {
+      msrp: 179000,
+      streetPrice: 179000,
+      costPerKm: 300,
+      valueRating: 8,
+      priceTier: 'mid',
+      alternatives: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'saucony-guide-17'],
+      valueAdvantages: ['듀얼 레이어 미드솔 기술', '4가지 발볼 옵션', '과내전 러너를 위한 합리적 가격'],
+    },
+
+    targetUsers: {
+      recommended: ['과내전/평발 러너', '뒤꿈치 착지 러너', '안정성이 필요한 입문 러너', '880/1080의 안정화 버전을 원하는 러너'],
+      notRecommended: ['가벼운 신발을 원하는 러너', '빠른 페이스 훈련용', '뛰어난 통기성을 원하는 러너'],
+    },
+
+    features: [
+      '듀얼 레이어 Fresh Foam X - 소프트 10.9 HA + 단단한 23.8 HA 조합',
+      'EVA Film Plate로 과내전 제어 및 발 중심 유지',
+      '넓은 힐 베이스 93.6mm로 뒤꿈치 안정성 강화',
+      '힐 60.8%, 전족부 66.3% 에너지 리턴 (RunRepeat Lab Test)',
+      'Narrow/Standard/Wide/X-Wide 4가지 발볼 옵션',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 85,
+        text: '쿠션과 안정성의 균형이 좋은 마일드 안정화. 880/1080 팬에게 더 많은 서포트를 제공. 통기성과 어퍼 내구성은 개선 필요. 무겁지만 일상 훈련용으로 신뢰할 수 있는 선택.',
+      },
+    ],
+
+    similarShoes: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'saucony-guide-17'],
   },
 
   // New Balance - 장거리/템포
@@ -2574,16 +2760,63 @@ const shoes: Shoe[] = [
       stackHeight: '힐 36.8mm / 포어풋 29.5mm (실측)',
       drop: '7.3mm (실측) / 6mm (브랜드 공식)',
       midsole: 'FuelCell (20% PEBA + 80% EVA) + 풀렝스 카본 플레이트',
-      plate: '풀렝스 카본 플레이트',
+      plate: '풀렝스 카본 플레이트 (Energy Arc)',
       outsole: '고무 아웃솔',
-      upper: '엔지니어드 메쉬',
-      width: '표준 (D)',
+      upper: 'FANTOMFIT 메쉬',
+      width: '표준 (D), 와이드 옵션',
       durability: '500km+',
       price: '249,000원',
       costPerKm: '약 500원/km',
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+
+    priceAnalysis: {
+      msrp: 249000,
+      streetPrice: 249000,
+      costPerKm: 500,
+      valueRating: 8,
+      priceTier: 'premium',
+      alternatives: ['saucony-endorphin-speed-4', 'asics-magic-speed-4', 'hoka-mach-x-2'],
+      valueAdvantages: ['카본 플레이트 슈퍼트레이너 중 합리적 가격', '뛰어난 안정성', '마라톤 훈련 최적화'],
+    },
+
+    targetUsers: {
+      recommended: ['마라톤 훈련 중인 러너', 'SC Elite v4 팬의 훈련용', '카본 플레이트 장거리 훈련화를 원하는 러너', '중족부 착지 러너'],
+      notRecommended: ['가벼운 신발을 원하는 러너', '최대 반발력을 원하는 러너', '자갈길에서 뛰는 러너'],
+    },
+
+    features: [
+      '힐 144 SA 충격흡수 + 66.1% 에너지 리턴 (RunRepeat Lab Test)',
+      '8.8 HA 울트라소프트 FuelCell 폼 - 구름 같은 착화감',
+      'Energy Arc 카본 플레이트 + 로커로 추진력 강화',
+      '넓은 전족부 미드솔 117.7mm로 뛰어난 안정성',
+      'FANTOMFIT 어퍼로 프리미엄 핏 제공',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 85,
+        text: '시리즈 최고 버전. 뛰어난 안정성, 좋은 그립, 개선된 에너지 리턴. 카본 플레이트 슈퍼트레이너 중 합리적 가격. 다만 100% PEBA 경쟁작보다 반발력이 약하고 무게가 약간 있음.',
+      },
+    ],
+
+    similarShoes: ['saucony-endorphin-speed-4', 'asics-magic-speed-4', 'hoka-mach-x-2'],
   },
 
   // New Balance - 레이싱
@@ -2634,6 +2867,54 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'good',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+
+    priceAnalysis: {
+      msrp: 299000,
+      streetPrice: 299000,
+      costPerKm: 997,
+      valueRating: 7,
+      priceTier: 'super-premium',
+      alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
+      valueAdvantages: ['v4 대비 30g 이상 경량화', '개선된 플레이트 곡률', '뛰어난 그립력', '경쟁작 대비 넓은 토박스'],
+    },
+
+    targetUsers: {
+      recommended: ['뉴발란스 팬 러너', '올드스쿨 레이싱 플랫 느낌을 원하는 러너', '슈퍼슈즈 중 넓은 토박스를 원하는 러너', '이전 버전이 무거웠던 마라토너'],
+      notRecommended: ['안정성이 필요한 러너', '최경량을 원하는 러너', '과내전 러너'],
+    },
+
+    features: [
+      '힐 144 SA 충격흡수 + 74.8% 에너지 리턴 (RunRepeat Lab Test)',
+      '15.2 HA 울트라소프트 100% PEBA FuelCell 폼',
+      '198g 경량 설계 - v4 대비 30g+ 감량',
+      '새로운 Energy Arc 플레이트 곡률로 빠른 전환',
+      '0.61 뛰어난 그립력 - 젖은 노면에서도 안정적',
+      '74.5mm 넓은 토박스 - 슈퍼슈즈 중 가장 여유로운 핏',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 92,
+        text: 'Elite v5는 뉴발란스의 확실한 진보. 더 가볍고 빠르며, 개선된 락다운과 그립. 에너지 넘치면서도 편안한 슈퍼슈즈. 다만 여전히 최상위 슈퍼슈즈와의 격차는 존재.',
+      },
+    ],
+
+    similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
   },
 
   // Saucony - 입문화
@@ -2714,6 +2995,13 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '후족부/중족부 착지',
     },
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 89,
+        text: 'Ride 18은 v17 대비 255g으로 33g 감량하면서 141 SA 충격흡수로 오히려 쿠셔닝은 향상되었습니다. 통기성 5/5로 최상위급이며, PWRRUN+ 인솔(7mm)이 추가 쿠션을 제공합니다. 단단한 미드솔(26.1 HA)로 푹신한 느낌은 아니지만, 유연하고 안정적인 데일리 트레이너입니다.',
+      },
+    ],
   },
 
   // Saucony - 입문화 (안정화)
@@ -2794,6 +3082,13 @@ const shoes: Shoe[] = [
       footType: '안정화 (과내전 지원)',
       landingPattern: '후족부/중족부 착지',
     },
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 80,
+        text: 'Guide 18은 안정화 중에서 최상위 통기성(5/5)과 넓은 플랫폼(121.9mm 전족부)을 제공합니다. 124 SA 충격흡수와 61.3% 에너지 리턴으로 데일리 러닝에 충분하며, PWRRUN PB 인솔(6.1mm)이 추가 반응성을 제공합니다. 다만 노출된 폼이 많아 내구성 주의가 필요합니다.',
+      },
+    ],
   },
 
   // Saucony - 쿠션화
@@ -2874,6 +3169,13 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '후족부/중족부 착지',
     },
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 90,
+        text: 'Triumph 23은 v22 대비 크게 향상되었습니다. 149 SA 충격흡수(전족부 136 SA)와 67.6% 에너지 리턴(전족부 71.2%)으로 장거리 러닝에 최적화되어 있습니다. 272g으로 경량화되었고, 42.3mm 힐 스택의 맥시멀 쿠셔닝, 넓은 플랫폼(124mm)으로 안정적입니다. 통기성 3/5가 아쉽지만 프리미엄 데일리 트레이너로 손색없습니다.',
+      },
+    ],
   },
 
   // Saucony - 안정화 (프리미엄)
@@ -2954,6 +3256,13 @@ const shoes: Shoe[] = [
       footType: '안정화 (과내전 지원)',
       landingPattern: '후족부/중족부 착지',
     },
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 77,
+        text: 'Hurricane 25는 v24 대비 크게 향상되었습니다. 151 SA 충격흡수(전족부 140 SA)와 68.4% 에너지 리턴(전족부 74.0%)으로 안정화 중 최상위급 성능입니다. 286g으로 1온스 경량화되었고, PWRRUN PB + PWRRUN Cradle 조합으로 소프트하면서도(16.6 HA) 안정적입니다. 넓은 플랫폼(124.4mm)과 7.1mm 드롭으로 과내전 러너에게 최적화되어 있습니다. 통기성 2/5가 아쉽습니다.',
+      },
+    ],
   },
 
   // Saucony - 데일리 (경량)
@@ -3034,6 +3343,14 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 84,
+        text: 'Kinvara 15 기준 - 킨바라 시리즈는 미니멀리스트 러닝화의 전통을 유지합니다. 194g 초경량에 117 SA 충격흡수, 57.2% 에너지 리턴으로 적당한 성능입니다. 4.4mm 로우드롭과 27.9mm 힐 스택으로 지면 감각이 뛰어나고, 통기성 5/5 최상위급입니다. PWRRUN+ 인솔이 반응성을 더합니다. 토박스 내구성 1/5가 약점입니다.',
+      },
+    ],
   },
 
   // Saucony - 레이싱 (카본 슈퍼화)
@@ -3114,6 +3431,14 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 87,
+        text: 'Endorphin Pro 4는 슈퍼슈즈 중 가장 편안한 착용감을 제공합니다. 139 SA 충격흡수와 71.7% 에너지 리턴으로 뒤꿈치 착지자에게 최적화되어 있습니다. 220g으로 v3보다 무거워졌지만, 내구성(토박스 4/5, 아웃솔 0.6mm 마모)과 쿠셔닝이 크게 향상되었습니다. 통기성 5/5 최상위급이며, 넓은 플랫폼(전족부 118.9mm)으로 안정적입니다. $225로 슈퍼슈즈 중 가성비 우수합니다.',
+      },
+    ],
   },
 
   // Saucony - 레이싱 (엘리트 슈퍼화)
@@ -3194,6 +3519,14 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 86,
+        text: 'Endorphin Elite 2는 역대 최고의 에너지 리턴(80.6% heel, 82.1% forefoot)을 기록한 혁신적 슈퍼슈즈입니다. 6.5 HA 초소프트 IncrediRUN 폼으로 마라톤 최적화되었으며, 157 SA 충격흡수와 197g 경량으로 성능 극대화합니다. 통기성 5/5, 토박스 내구성 5/5로 우수하나, 극도로 소프트한 미드솔로 안정성이 낮아(torsional 4/5) 완벽한 폼이 필요합니다. $290 프리미엄 가격에 걸맞은 최상위 레이싱화입니다.',
+      },
+    ],
   },
 
   // Saucony - 템포/데일리
@@ -3274,6 +3607,14 @@ const shoes: Shoe[] = [
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 82,
+        text: 'Endorphin Speed 5는 템포슈즈의 정석입니다. 슈퍼슈즈급 에너지 리턴(73.2% heel, 78.2% forefoot)을 $175에 제공하며, 18.5 HA PWRRUN PB 폼으로 v4보다 소프트해졌습니다. 241g으로 약간 무거워졌지만, 나일론 플레이트(12.9N 유연성)로 데일리부터 레이싱까지 버사타일합니다. 통기성 5/5 최상위급, 트랙션 0.52 우수합니다. 토박스 높이 29.3mm로 넉넉해졌고, 반사 요소도 있습니다.',
+      },
+    ],
   },
 
   // Saucony - 쿠션화/트레이너
@@ -3289,23 +3630,23 @@ const shoes: Shoe[] = [
     tags: ['쿠션화', '트레이너', 'IncrediRUN', '프리미엄'],
 
     specs: {
-      weight: 270,
+      weight: 285,
       cushioning: 8,
       responsiveness: 8,
       stability: 6,
-      drop: 8,
+      drop: 7,
       durability: 600,
     },
 
     biomechanics: {
       stackHeight: {
-        heel: 37,
-        forefoot: 29,
+        heel: 38.9,
+        forefoot: 32,
       },
-      drop: 8,
-      carbonPlate: false,
-      plateType: null,
-      midsoleType: 'IncrediRUN',
+      drop: 6.9,
+      carbonPlate: true,
+      plateType: 'flat',
+      midsoleType: 'IncrediRUN + PWRRUN',
       optimalPace: '4:30-6:30 min/km',
     },
 
@@ -3328,7 +3669,7 @@ const shoes: Shoe[] = [
       notRecommended: ['입문 러너', '레이싱 전용', '과내전 러너'],
     },
 
-    features: ['IncrediRUN 미드솔', '프리미엄 트레이너', '8mm 드롭', '엘리트급 에너지 리턴'],
+    features: ['IncrediRUN 미드솔', '3/4 카본 플레이트', '6.9mm 드롭', '엘리트급 에너지 리턴'],
 
     priceAnalysis: {
       msrp: 219000,
@@ -3336,24 +3677,32 @@ const shoes: Shoe[] = [
       costPerKm: 365,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['나이키 페가수스 프리미엄', '아식스 슈퍼블라스트 2', '호카 맥 X2'],
+      alternatives: ['나이키 줌플라이 6', '아식스 슈퍼블라스트 2', '뉴발란스 SC 트레이너 v3'],
     },
 
     detailedSpecs: {
-      weight: '270g (추정)',
-      stackHeight: '힐 37mm / 포어풋 29mm (추정)',
-      drop: '8mm (브랜드 공식)',
-      midsole: 'IncrediRUN (엘리트급 에너지 리턴)',
-      plate: '없음',
-      outsole: '러버 아웃솔',
-      upper: '메쉬',
-      width: '표준 (D)',
+      weight: '285g (Lab)',
+      stackHeight: '힐 38.9mm / 포어풋 32mm (Lab)',
+      drop: '6.9mm (Lab 측정)',
+      midsole: 'IncrediRUN + PWRRUN (듀얼 폼)',
+      plate: '3/4 길이 카본 플레이트',
+      outsole: '러버 + 강화 EVA',
+      upper: '메쉬 (고통기성)',
+      width: '표준 (D) - 토박스 좁음',
       durability: '600km+',
       price: '219,000원',
       costPerKm: '약 365원/km',
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 77,
+        text: 'Endorphin Trainer는 독특한 듀얼폼 슈퍼트레이너입니다. 5.9 HA IncrediRUN(역대 최소프트) + 37.8 HA PWRRUN(초단단) 조합으로 특이한 느낌을 제공합니다. 68.8% heel, 76.3% forefoot 에너지 리턴으로 전족부 착지자에게 최적화되어 있습니다. 285g으로 무겁지만, 넓은 플랫폼(121.7mm forefoot, 100.1mm heel)으로 안정적입니다. 통기성 5/5 최상위급, torsional 5/5로 단단합니다. 토박스가 좁아(70.1mm) 넓은발 주의가 필요합니다.',
+      },
+    ],
   },
 
   // Puma - 입문화/데일리
@@ -3633,13 +3982,13 @@ const shoes: Shoe[] = [
 
     biomechanics: {
       stackHeight: {
-        heel: 37,
-        forefoot: 27,
+        heel: 37.4,
+        forefoot: 27.3,
       },
-      drop: 10,
-      carbonPlate: false,
-      plateType: 'PWRPLATE (TPU)',
-      midsoleType: 'Nitro Foam',
+      drop: 10.1,
+      carbonPlate: true,
+      plateType: 'curved',
+      midsoleType: 'Nitro Foam + Nitro Elite',
       optimalPace: '4:00-5:30 min/km',
     },
 
@@ -3662,7 +4011,7 @@ const shoes: Shoe[] = [
       notRecommended: ['입문 러너', '느린 회복 러닝', '최대 쿠셔닝 필요'],
     },
 
-    features: ['Nitro Foam', 'PWRPLATE (TPU 플레이트)', '훈련용 내구성'],
+    features: ['Nitro Foam + Nitro Elite 듀얼폼', '카본 플레이트 (PWRPLATE)', '훈련용 내구성'],
 
     priceAnalysis: {
       msrp: 219000,
@@ -3683,13 +4032,13 @@ const shoes: Shoe[] = [
 
     detailedSpecs: {
       weight: '268g (남성 US 9 기준)',
-      stackHeight: '힐 37mm / 포어풋 27mm',
-      drop: '10mm (Lab 측정치)',
-      midsole: 'Nitro Foam',
-      plate: 'PWRPLATE (TPU, 탄소 아님)',
+      stackHeight: '힐 37.4mm / 포어풋 27.3mm',
+      drop: '10.1mm (Lab 측정치)',
+      midsole: 'Nitro Foam + Nitro Elite 듀얼폼',
+      plate: '카본 플레이트 (PWRPLATE)',
       outsole: 'PumaGrip 러버',
-      upper: '엔지니어드 메쉬',
-      width: '표준',
+      upper: '니트 어퍼',
+      width: '좁음~표준',
     },
   },
 
@@ -3716,12 +4065,12 @@ const shoes: Shoe[] = [
 
     biomechanics: {
       stackHeight: {
-        heel: 39,
-        forefoot: 29,
+        heel: 39.2,
+        forefoot: 28.6,
       },
-      drop: 11,
+      drop: 10.6,
       carbonPlate: true,
-      plateType: 'Carbon',
+      plateType: 'curved',
       midsoleType: 'Nitro Elite (A-TPU)',
       optimalPace: '3:30-4:30 min/km',
     },
@@ -3766,12 +4115,12 @@ const shoes: Shoe[] = [
 
     detailedSpecs: {
       weight: '204g (남성 US 9 기준)',
-      stackHeight: '힐 39mm / 포어풋 29mm',
-      drop: '11mm (Lab 측정치)',
+      stackHeight: '힐 39.2mm / 포어풋 28.6mm',
+      drop: '10.6mm (Lab 측정치)',
       midsole: 'Nitro Elite 폼 (A-TPU 기반)',
       plate: '카본 플레이트 (풀 렝스)',
-      outsole: '미니멀 러버',
-      upper: '초경량 메쉬',
+      outsole: 'PumaGrip 미니멀',
+      upper: 'Ultraweave 경량 메쉬',
       width: '표준 (좁음)',
     },
   },
@@ -3799,12 +4148,12 @@ const shoes: Shoe[] = [
 
     biomechanics: {
       stackHeight: {
-        heel: 39,
-        forefoot: 30,
+        heel: 38.5,
+        forefoot: 30.2,
       },
-      drop: 8,
+      drop: 8.3,
       carbonPlate: true,
-      plateType: 'Carbon (PWRPLATE)',
+      plateType: 'curved',
       midsoleType: 'Nitro Elite (A-TPU)',
       optimalPace: '3:00-4:30 min/km',
     },
@@ -4786,87 +5135,6 @@ const shoes: Shoe[] = [
     tags: ['안정화', 'GuideRails', '오버프로네이션', '평발'],
   },
 
-  // Brooks - 데일리
-  {
-    id: 'brooks-hyperion-max-3',
-    slug: 'brooks-hyperion-max-3',
-    brand: 'Brooks',
-    name: '하이퍼리온 맥스 3',
-    category: '데일리',
-    rating: 5,
-    status: 'new',
-    price: 219000,
-    image: '/shoes/brooks-hyperion-max-3.png',
-    description: '슈퍼 트레이너. DNA Gold (PEBA) + DNA Flash v2 듀얼 폼과 나일론 플레이트로 고급 훈련에 최적화.',
-    specs: {
-      weight: 283,
-      cushioning: 8,
-      responsiveness: 9,
-      stability: 6,
-      drop: 11,
-      durability: 600,
-    },
-    biomechanics: {
-      stackHeight: { heel: 46, forefoot: 35 },
-      drop: 11,
-      carbonPlate: false,
-      plateType: 'flat',
-      midsoleType: 'DNA Gold (PEBA) + DNA Flash v2',
-      optimalPace: '4:00-5:30 min/km',
-    },
-    injuryPrevention: {
-      plantarFasciitis: 'good',
-      achillesTendinopathy: 'good',
-      kneeIssues: 'good',
-      shinSplints: 'good',
-    },
-    koreanFootFit: {
-      toBoxWidth: 'standard',
-      flatFootCompatibility: 'fair',
-      wideOptions: false,
-      winterCompatibility: 'fair',
-    },
-    targetUsers: {
-      recommended: ['고급 훈련 러너', '템포런/롱런 병행 러너', '슈퍼 트레이너 원하는 러너'],
-      notRecommended: ['입문 러너', '안정화 필요 러너'],
-    },
-    features: [
-      'DNA Gold (PEBA) + DNA Flash v2 듀얼 폼',
-      '나일론 SpeedVault 플레이트',
-      '63.9% 에너지 리턴',
-      '슈퍼 트레이너',
-    ],
-    priceAnalysis: {
-      msrp: 219000,
-      costPerKm: 365,
-      valueRating: 8,
-      priceTier: 'premium',
-      alternatives: ['아식스 슈퍼블라스트 2', '나이키 페가수스 플러스'],
-    },
-    reviews: [
-      { userType: '상급 러너', rating: 5, text: '훈련화 중 최고입니다. 레이싱화 느낌이에요.' },
-      { userType: '중급 러너', rating: 5, text: '템포런도 롱런도 다 가능한 만능 신발.' },
-      { userType: 'Fun Runner', rating: 4, text: '좋긴 한데 가격이 좀 비싸요.' },
-    ],
-    detailedSpecs: {
-      weight: '283g (US 9 Lab 측정)',
-      stackHeight: '힐 45.6mm / 포어풋 35.0mm (Lab)',
-      drop: '10.6mm (Lab 측정)',
-      midsole: 'DNA Gold (PEBA) + DNA Flash v2',
-      plate: '나일론 SpeedVault 플레이트',
-      outsole: '러버 아웃솔',
-      upper: '엔지니어드 메쉬',
-      width: '표준',
-      durability: '600km',
-      price: '₩219,000',
-      costPerKm: '₩365/km',
-      footType: '중립',
-      landingPattern: '미드풋~포어풋',
-    },
-    similarShoes: ['asics-superblast-2', 'nike-pegasus-plus', 'saucony-endorphin-speed-4'],
-    tags: ['슈퍼 트레이너', 'PEBA', '템포런', '훈련화'],
-  },
-
   // Brooks - 레이싱
   {
     id: 'brooks-hyperion-elite-5',
@@ -4946,6 +5214,169 @@ const shoes: Shoe[] = [
     },
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
     tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용'],
+  },
+
+  // Brooks - 안정화 (GTS = Go-To-Shoe for stability)
+  {
+    id: 'brooks-adrenaline-gts-25',
+    slug: 'brooks-adrenaline-gts-25',
+    brand: 'Brooks',
+    name: '아드레날린 GTS 25',
+    category: '안정화',
+    rating: 4,
+    status: 'new',
+    price: 189000,
+    image: '/shoes/brooks-adrenaline-gts-25.png',
+    description: '브룩스의 대표 안정화. GuideRails 기술로 과내전을 자연스럽게 교정하며, DNA Loft v3로 부드러운 쿠셔닝을 제공합니다.',
+    specs: {
+      weight: 300,
+      cushioning: 8,
+      responsiveness: 6,
+      stability: 9,
+      drop: 10,
+      durability: 800,
+    },
+    biomechanics: {
+      stackHeight: { heel: 37, forefoot: 27 },
+      drop: 10,
+      carbonPlate: false,
+      midsoleType: 'DNA Loft v3',
+      optimalPace: '5:30-7:00 min/km',
+    },
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'excellent',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+    targetUsers: {
+      recommended: ['과내전(오버프로네이션) 러너', '안정성이 필요한 러너', '평발 러너', '무릎 보호가 필요한 러너', '장거리 러너'],
+      notRecommended: ['빠른 페이스 선호 러너', '중립 착지 러너', '초경량화 원하는 러너'],
+    },
+    features: [
+      'GuideRails 안정화 시스템',
+      'DNA Loft v3 질소 주입 쿠셔닝',
+      '포어풋 +3mm 업데이트 (전작 대비)',
+      '플랫 니트 어퍼로 편안한 착화감',
+    ],
+    priceAnalysis: {
+      msrp: 189000,
+      costPerKm: 236,
+      valueRating: 8,
+      priceTier: 'mid',
+      alternatives: ['아식스 젤-카야노 31', '뉴발란스 860 v14', '호카 아라히 7'],
+    },
+    reviews: [
+      { userType: '중급 러너', rating: 5, text: 'GuideRails가 정말 효과 있어요. 무릎 통증이 많이 줄었습니다.' },
+      { userType: '평발 러너', rating: 5, text: '평발에 최적화된 안정화입니다. 아치 서포트가 적절해요.' },
+      { userType: '입문 러너', rating: 4, text: '안정감은 좋지만 쿠셔닝이 딱딱하다는 느낌도 있어요.' },
+    ],
+    detailedSpecs: {
+      weight: '300g (US 9 기준)',
+      stackHeight: '힐 37mm / 포어풋 27mm',
+      drop: '10mm',
+      midsole: 'DNA Loft v3 (질소 주입 EVA)',
+      plate: '없음',
+      outsole: '러버 아웃솔',
+      upper: '플랫 니트 엔지니어드 메쉬',
+      width: '표준 (와이드 옵션 있음)',
+      durability: '800km',
+      price: '₩189,000',
+      costPerKm: '₩236/km',
+      footType: '오버프로네이션 (과내전)',
+      landingPattern: '힐스트라이크',
+    },
+    similarShoes: ['asics-gel-kayano-31', 'new-balance-860-v14', 'hoka-arahi-7'],
+    tags: ['안정화', 'GuideRails', '과내전 교정', '평발'],
+  },
+
+  // Brooks - 슈퍼트레이너 (데일리 맥스)
+  {
+    id: 'brooks-hyperion-max-3',
+    slug: 'brooks-hyperion-max-3',
+    brand: 'Brooks',
+    name: '하이퍼리온 맥스 3',
+    category: '쿠션화',
+    rating: 5,
+    status: 'new',
+    price: 259000,
+    image: '/shoes/brooks-hyperion-max-3.png',
+    description: '브룩스 최초의 진정한 슈퍼트레이너. DNA Gold (PEBA) 폼과 나일론 플레이트로 63.9% 에너지 리턴과 맥시멀 쿠셔닝을 제공합니다.',
+    specs: {
+      weight: 283,
+      cushioning: 9,
+      responsiveness: 8,
+      stability: 6,
+      drop: 11,
+      durability: 700,
+    },
+    biomechanics: {
+      stackHeight: { heel: 45.6, forefoot: 35 },
+      drop: 10.6,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'DNA Gold (PEBA) + DNA Flash v2',
+      optimalPace: '4:30-6:00 min/km',
+    },
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'good',
+      shinSplints: 'excellent',
+    },
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: false,
+      winterCompatibility: 'good',
+    },
+    targetUsers: {
+      recommended: ['장거리 러너', '맥시멀 쿠셔닝 원하는 러너', '템포런 겸용 원하는 러너', '마라톤 훈련 러너'],
+      notRecommended: ['안정성 필요한 러너', '초경량화 원하는 러너', '저드롭 선호 러너'],
+    },
+    features: [
+      'DNA Gold (PEBA) 상단 폼 - 업계 최고 수준 쿠셔닝',
+      '63.9% 에너지 리턴 (힐) / 66.2% (포어풋)',
+      'SpeedVault 나일론 플레이트',
+      'RapidRoll 로커 지오메트리',
+      '45.6mm 맥시멀 힐 스택',
+      '프리미엄 니트 어퍼',
+    ],
+    priceAnalysis: {
+      msrp: 259000,
+      costPerKm: 370,
+      valueRating: 7,
+      priceTier: 'premium',
+      alternatives: ['아식스 슈퍼블라스트 2', '나이키 줌 플라이 6', '뉴발란스 SC 트레이너 v3'],
+    },
+    reviews: [
+      { userType: '중급 러너', rating: 5, text: '브룩스에서 드디어 제대로 된 슈퍼트레이너가 나왔습니다. DNA Gold 폼이 정말 좋아요.' },
+      { userType: '입문 러너', rating: 5, text: '장거리에서 쿠셔닝이 끝까지 살아있어요. 무릎 보호에 최고.' },
+      { userType: '상급 러너', rating: 4, text: '쿠셔닝은 최고인데 무게가 조금 아쉽습니다. 템포런에는 살짝 무거워요.' },
+    ],
+    detailedSpecs: {
+      weight: '283g (US 9 Lab 측정)',
+      stackHeight: '힐 45.6mm / 포어풋 35.0mm (Lab)',
+      drop: '10.6mm (Lab 측정, 브랜드 표기 6mm)',
+      midsole: 'DNA Gold (PEBA 상단) + DNA Flash v2 (하단)',
+      plate: 'SpeedVault 나일론 플레이트',
+      outsole: '4개 구역 그린 러버 + 노출 미드솔',
+      upper: '프리미엄 니트 (양말형 칼라)',
+      width: '표준 (94.9mm)',
+      durability: '700km',
+      price: '₩259,000 ($200)',
+      costPerKm: '₩370/km',
+      footType: '중립',
+      landingPattern: '힐스트라이크~미드풋',
+    },
+    similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro'],
+    tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
   },
 
   // Mizuno - 데일리
@@ -5183,6 +5614,245 @@ const shoes: Shoe[] = [
     similarShoes: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
   },
 
+  // Mizuno - 쿠션화 (맥시멀)
+  {
+    id: 'mizuno-wave-sky-9',
+    slug: 'mizuno-wave-sky-9',
+    brand: 'Mizuno',
+    name: '웨이브 스카이 9',
+    category: '쿠션화',
+    rating: 4,
+    status: 'new',
+    price: 215000,
+    description: 'Mizuno의 최고 쿠셔닝 데일리 트레이너. 완전히 새로 설계되어 ENERZY NXT 질소 주입 폼으로 구름 위를 달리는 듯한 느낌을 제공합니다.',
+    tags: ['쿠션화', '맥시멀', '장거리'],
+    specs: {
+      weight: 290,
+      cushioning: 9,
+      responsiveness: 6,
+      stability: 7,
+      drop: 6,
+      durability: 800,
+    },
+    biomechanics: {
+      stackHeight: { heel: 44, forefoot: 38 },
+      drop: 6,
+      carbonPlate: false,
+      midsoleType: 'ENERZY NXT (질소 주입)',
+      optimalPace: '5:30-7:30 min/km',
+    },
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+    targetUsers: {
+      recommended: ['장거리 러너', '무릎/관절 보호 필요한 러너', '맥시멀 쿠셔닝 원하는 러너', '체중 있는 러너'],
+      notRecommended: ['빠른 페이스 원하는 러너', '가벼운 신발 선호 러너', '저드롭 원하는 러너'],
+    },
+    features: [
+      'ENERZY NXT 질소 주입 폼 - 부드럽고 탄력있는 쿠셔닝',
+      '44mm 맥시멀 힐 스택',
+      '로커 지오메트리로 부드러운 전환',
+      '넓은 미드솔 플랫폼으로 안정성 확보',
+      '전체 러버 아웃솔로 내구성 우수',
+    ],
+    priceAnalysis: {
+      msrp: 215000,
+      costPerKm: 269,
+      valueRating: 7,
+      priceTier: 'premium',
+      alternatives: ['호카 본디 9', '브룩스 글리세린 21', '아식스 젤-님버스 26'],
+    },
+    reviews: [
+      { userType: '중급 러너', rating: 5, text: '구름 위를 걷는 느낌입니다. 장거리에서 발 피로가 확 줄었어요.' },
+      { userType: '입문 러너', rating: 4, text: '쿠셔닝이 정말 푹신해요. 다만 무게감이 있습니다.' },
+    ],
+    detailedSpecs: {
+      weight: '290g (남성)',
+      stackHeight: '힐 44mm / 포어풋 38mm',
+      drop: '6mm',
+      midsole: 'ENERZY NXT (질소 주입)',
+      plate: '없음',
+      outsole: '전체 러버 커버리지',
+      upper: '플러시 우븐 어퍼',
+      width: '표준',
+      durability: '800km',
+      price: '₩215,000 ($165)',
+      costPerKm: '₩269/km',
+      footType: '중립',
+      landingPattern: '힐스트라이크',
+    },
+    similarShoes: ['hoka-bondi-9', 'brooks-glycerin-21', 'asics-gel-nimbus-26'],
+  },
+
+  // Mizuno - 레이싱 (템포/레이스데이)
+  {
+    id: 'mizuno-wave-rebellion-flash-3',
+    slug: 'mizuno-wave-rebellion-flash-3',
+    brand: 'Mizuno',
+    name: '웨이브 리벨리온 플래시 3',
+    category: '레이싱',
+    rating: 4,
+    status: 'new',
+    price: 229000,
+    description: '서브 3시간 30분 마라토너를 위한 레이싱화. ENERZY XP + ENERZY NXT 듀얼 폼과 유리섬유 나일론 플레이트로 부드럽고 반응성 좋은 라이드를 제공합니다.',
+    tags: ['레이싱', '템포', '마라톤'],
+    specs: {
+      weight: 244,
+      cushioning: 7,
+      responsiveness: 8,
+      stability: 6,
+      drop: 3,
+      durability: 500,
+    },
+    biomechanics: {
+      stackHeight: { heel: 37.5, forefoot: 34.5 },
+      drop: 3,
+      carbonPlate: false,
+      plateType: 'flat',
+      midsoleType: 'ENERZY XP (TPEE) + ENERZY NXT (EVA)',
+      optimalPace: '4:00-5:00 min/km',
+    },
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'caution',
+      shinSplints: 'good',
+    },
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+    },
+    targetUsers: {
+      recommended: ['서브 3:30 목표 러너', '템포런 원하는 러너', '미드풋 착지 러너', '레이스데이용 찾는 러너'],
+      notRecommended: ['입문 러너', '힐스트라이커', '안정성 필요한 러너'],
+    },
+    features: [
+      'ENERZY XP (TPEE) 상단 + ENERZY NXT (EVA) 하단 듀얼 폼',
+      '유리섬유 강화 나일론 플레이트',
+      '3mm 로우 드롭 - 미드풋 착지에 최적화',
+      '전체 러버 아웃솔 - 젖은 노면에서도 우수한 그립',
+      '90% 이상 재활용 소재 사용 (지속가능성)',
+    ],
+    priceAnalysis: {
+      msrp: 229000,
+      costPerKm: 458,
+      valueRating: 7,
+      priceTier: 'premium',
+      alternatives: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'new-balance-fuelcell-rebel-v4'],
+    },
+    reviews: [
+      { userType: '상급 러너', rating: 4, text: '플래시 2보다 더 부드럽고 반응성이 좋아졌어요. 템포런에 최고!' },
+      { userType: '중급 러너', rating: 4, text: '마라톤 레이스데이용으로 좋습니다. 드롭이 낮아서 적응 필요해요.' },
+    ],
+    detailedSpecs: {
+      weight: '244g (남성 US 9)',
+      stackHeight: '힐 37.5mm / 포어풋 34.5mm',
+      drop: '3mm',
+      midsole: 'ENERZY XP (TPEE) + ENERZY NXT (EVA) 듀얼',
+      plate: '유리섬유 강화 나일론 플레이트',
+      outsole: '전체 러버',
+      upper: '엔지니어드 메쉬 (90%+ 재활용)',
+      width: '표준',
+      durability: '500km',
+      price: '₩229,000 ($180)',
+      costPerKm: '₩458/km',
+      footType: '중립',
+      landingPattern: '미드풋~포어풋',
+    },
+    similarShoes: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'new-balance-fuelcell-rebel-v4'],
+  },
+
+  // Mizuno - 안정화 (프리미엄)
+  {
+    id: 'mizuno-wave-horizon-8',
+    slug: 'mizuno-wave-horizon-8',
+    brand: 'Mizuno',
+    name: '웨이브 호라이즌 8',
+    category: '안정화',
+    rating: 4,
+    status: 'new',
+    price: 219000,
+    description: '미즈노의 프리미엄 안정화. ENERZY NXT + ENERZY 듀얼 폼과 미디얼 러버월로 높은 수준의 안정성과 쿠셔닝을 동시에 제공합니다.',
+    tags: ['안정화', '과내전', '프리미엄'],
+    specs: {
+      weight: 323,
+      cushioning: 8,
+      responsiveness: 6,
+      stability: 9,
+      drop: 8,
+      durability: 900,
+    },
+    biomechanics: {
+      stackHeight: { heel: 42, forefoot: 34 },
+      drop: 8,
+      carbonPlate: false,
+      midsoleType: 'ENERZY NXT (상단) + ENERZY (하단)',
+      optimalPace: '6:00-8:00 min/km',
+    },
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+    koreanFootFit: {
+      toBoxWidth: 'wide',
+      flatFootCompatibility: 'excellent',
+      wideOptions: true,
+      winterCompatibility: 'good',
+    },
+    targetUsers: {
+      recommended: ['과내전(오버프로네이션) 러너', '높은 안정성 필요 러너', '평발 러너', '장거리/올데이 사용'],
+      notRecommended: ['빠른 페이스 원하는 러너', '가벼운 신발 선호 러너', '중립 착지 러너'],
+    },
+    features: [
+      'ENERZY NXT 상단 폼 - 부드럽고 탄력있는 착지',
+      'ENERZY 하단 폼 - 안정적인 푸시오프',
+      '미디얼 러버월 - 강력한 내측 안정성',
+      'Wave 디자인 - 전방 추진력',
+      '넓은 핏 - 볼넓은 발에 적합',
+      '뛰어난 내구성 - 워킹/스탠딩에도 적합',
+    ],
+    priceAnalysis: {
+      msrp: 219000,
+      costPerKm: 243,
+      valueRating: 8,
+      priceTier: 'premium',
+      alternatives: ['brooks-beast-gts-24', 'asics-gel-kayano-31', 'new-balance-860-v14'],
+    },
+    reviews: [
+      { userType: '평발 러너', rating: 5, text: '안정성이 정말 뛰어납니다. 무릎 통증이 많이 줄었어요.' },
+      { userType: '중급 러너', rating: 4, text: '쿠셔닝과 안정성 모두 좋아요. 다만 무게가 있어서 빠른 페이스는 어려워요.' },
+    ],
+    detailedSpecs: {
+      weight: '323g (남성 US 9)',
+      stackHeight: '힐 42mm / 포어풋 34mm',
+      drop: '8mm',
+      midsole: 'ENERZY NXT (상단) + ENERZY (하단) 듀얼',
+      plate: 'Wave Plate',
+      outsole: '두꺼운 러버 - 뛰어난 내구성',
+      upper: '자카드 에어 메쉬',
+      width: '넓음 (2E Wide 옵션 있음)',
+      durability: '900km',
+      price: '₩219,000 ($170)',
+      costPerKm: '₩243/km',
+      footType: '오버프로네이션 (과내전)',
+      landingPattern: '힐스트라이크',
+    },
+    similarShoes: ['brooks-beast-gts-24', 'asics-gel-kayano-31', 'new-balance-860-v14'],
+  },
+
   // On - 입문화
   {
     id: 'on-cloudsurfer-2',
@@ -5219,10 +5889,42 @@ const shoes: Shoe[] = [
     koreanFootFit: {
       toBoxWidth: 'standard',
       flatFootCompatibility: 'fair',
-      wideOptions: false,
+      wideOptions: true,
       winterCompatibility: 'good',
     },
-    similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-cumulus-27'],
+
+    priceAnalysis: {
+      msrp: 199000,
+      streetPrice: 199000,
+      costPerKm: 398,
+      valueRating: 6,
+      priceTier: 'premium',
+      alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'adidas-adizero-evo-sl'],
+      valueAdvantages: ['프리미엄 소재 품질', '뛰어난 내구성', '일상용으로도 활용 가능', '반사 로고'],
+    },
+
+    targetUsers: {
+      recommended: ['프리미엄 디자인을 원하는 캐주얼 러너', '편안함과 내구성을 중시하는 러너', '러닝과 일상 겸용을 원하는 러너'],
+      notRecommended: ['빠른 페이스를 원하는 러너', '반발력이 중요한 러너', '가성비를 중시하는 러너'],
+    },
+
+    features: [
+      '힐 137 SA 충격흡수 + 52.6% 에너지 리턴 (RunRepeat Lab Test)',
+      '25.5 HA 균형 잡힌 Helion 폼 - 단단하지만 CloudTec Phase로 압축감 제공',
+      '254g 경량 설계로 데일리 트레이너로 적합',
+      '0.6mm 아웃솔 마모 - 뛰어난 내구성',
+      'CloudTec Phase 기술로 자연스러운 전방 전환',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 90,
+        text: 'Cloudsurfer 2는 프리미엄 소재와 뛰어난 내구성을 제공하는 편안한 데일리 트레이너. 다만 가격 대비 반발력이 부족하며, 이름과 달리 구름 같은 착화감은 아님.',
+      },
+    ],
+
+    similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-novablast-5'],
   },
   {
     id: 'on-cloudrunner-2',
@@ -5259,9 +5961,41 @@ const shoes: Shoe[] = [
     koreanFootFit: {
       toBoxWidth: 'standard',
       flatFootCompatibility: 'good',
-      wideOptions: false,
+      wideOptions: true,
       winterCompatibility: 'good',
     },
+
+    priceAnalysis: {
+      msrp: 189000,
+      streetPrice: 189000,
+      costPerKm: 378,
+      valueRating: 7,
+      priceTier: 'mid',
+      alternatives: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'hoka-arahi-7'],
+      valueAdvantages: ['프리미엄 빌드 품질', '뛰어난 통기성', '일상용 착용 가능', '추위에 강한 Helion 폼'],
+    },
+
+    targetUsers: {
+      recommended: ['지지력 있는 데일리 트레이너를 원하는 러너', '중립~약간 안정 사이 신발이 필요한 러너', 'On 팬 러너', '종일 착용과 러닝 겸용 원하는 러너'],
+      notRecommended: ['푹신한 쿠셔닝을 원하는 러너', '가벼운 신발을 원하는 러너', '반발력이 중요한 러너'],
+    },
+
+    features: [
+      '힐 126 SA 충격흡수 + 57.1% 에너지 리턴 (RunRepeat Lab Test)',
+      '27.3 HA Helion 폼 - v1 대비 소프트해진 착화감',
+      '5/5 힐 카운터 - 최대 안정성',
+      '4/5 통기성 - 프리미엄 메쉬 어퍼',
+      '추위에 17%만 경화 - 겨울 러닝에 최적',
+    ],
+
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 88,
+        text: 'Cloudrunner 2는 v1 대비 확실한 업그레이드. 가벼워지고 유연해졌으며 Helion 폼으로 소프트해짐. 다만 여전히 단단한 편이고 아웃솔 내구성 개선 필요.',
+      },
+    ],
+
     similarShoes: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'nike-structure-26'],
   },
 
@@ -5304,6 +6038,34 @@ const shoes: Shoe[] = [
       wideOptions: false,
       winterCompatibility: 'good',
     },
+    priceAnalysis: {
+      msrp: 229000,
+      streetPrice: 229000,
+      costPerKm: 458,
+      valueRating: 6,
+      priceTier: 'premium',
+      alternatives: ['hoka-bondi-9', 'asics-nimbus-27', 'newbalance-more-v5'],
+      valueAdvantages: ['맥시멀 쿠션감', '충격 흡수 우수', '장거리 러닝 적합', '토박스 내구성 5/5'],
+    },
+    targetUsers: {
+      recommended: ['최대 쿠션을 원하는 장거리 러너', '관절 보호가 중요한 러너', '무겁지만 편안한 착화감을 원하는 러너', '과체중 러너'],
+      notRecommended: ['빠른 페이스를 원하는 러너', '경량화를 선호하는 러너', '통기성이 중요한 러너', '가성비를 중시하는 러너'],
+    },
+    features: [
+      '힐 137 SA 충격흡수 + 56.5% 에너지 리턴 (RunRepeat Lab Test)',
+      '37.9mm 힐 스택으로 맥시멀 쿠션 제공',
+      '292g 무게 - 안정적인 맥시멀 러닝화',
+      '토박스 내구성 5/5 - 매우 우수한 내마모성',
+      '통기성 2/5 - 더운 날씨에는 부적합',
+      'Helion HF + CloudTec 조합으로 반응성 향상',
+    ],
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 89,
+        text: 'Cloudmonster 2는 맥시멀 쿠션 러닝화 중에서도 뛰어난 충격 흡수(137 SA)와 적절한 에너지 리턴(56.5%)을 제공합니다. 292g으로 무겁지만, 장거리에서 관절 보호가 필요한 러너에게 최적입니다. 토박스 내구성이 5/5로 매우 우수하며, 다만 통기성(2/5)이 약해 더운 날씨에는 적합하지 않습니다.',
+      },
+    ],
     similarShoes: ['hoka-bondi-9', 'asics-nimbus-27', 'newbalance-more-v5'],
   },
   {
@@ -5344,6 +6106,34 @@ const shoes: Shoe[] = [
       wideOptions: false,
       winterCompatibility: 'good',
     },
+    priceAnalysis: {
+      msrp: 259000,
+      streetPrice: 259000,
+      costPerKm: 575,
+      valueRating: 5,
+      priceTier: 'premium',
+      alternatives: ['saucony-endorphin-speed-4', 'nike-pegasus-plus', 'asics-superblast-2'],
+      valueAdvantages: ['프리미엄 Helion HF 폼', '258g 경량화', '아웃솔 내구성 우수', 'Pebax 기반 폼'],
+    },
+    targetUsers: {
+      recommended: ['경량 맥시멀 쿠션을 원하는 러너', '미드풋/앞발 착지 러너', '템포런과 장거리 겸용을 원하는 러너', 'On 브랜드 선호 러너'],
+      notRecommended: ['뒤꿈치 착지 러너', '높은 에너지 리턴을 원하는 러너', '가성비를 중시하는 러너', '통기성이 중요한 러너'],
+    },
+    features: [
+      '힐 138 SA 충격흡수 + 54.4% 에너지 리턴 (RunRepeat Lab Test)',
+      '39.7mm 힐 스택으로 맥시멀 쿠션 제공',
+      '258g 경량 설계 - Cloudmonster 2 대비 34g 감량',
+      'Pebax 기반 Helion HF 폼으로 반응성 향상',
+      'Speedboard 제거로 유연성 증가 (15.8N)',
+      '통기성 3/5 - 적당한 수준',
+    ],
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 89,
+        text: 'Cloudmonster Hyper는 Cloudmonster 2의 쿠션감을 유지하면서 258g으로 경량화한 모델입니다. 138 SA 충격흡수는 우수하나, 에너지 리턴(54.4%)이 평균 이하로 슈퍼트레이너 가격대비 아쉽습니다. 미드풋/앞발 착지 러너에게 최적화된 설계이며, 뒤꿈치 착지 러너에게는 비추천입니다.',
+      },
+    ],
     similarShoes: ['saucony-endorphin-speed-4', 'nike-pegasus-plus', 'hoka-mach-7'],
   },
 
@@ -5390,7 +6180,30 @@ const shoes: Shoe[] = [
       recommended: ['템포런/인터벌 중심 러너', '빠른 페이스 선호 러너', '하프마라톤 페이스 훈련용', '반응성 좋은 신발 원하는 분'],
       notRecommended: ['느린 페이스 조깅 러너', '푹신한 쿠션 선호', '장거리 편안함 우선', '초보 러너'],
     },
-    features: ['Helion HF 초임계 폼 (상단)', 'Speedboard 플레이트 (유리섬유-나일론)', '빠른 페이스에서 뛰어난 에너지 리턴', '우수한 통기성'],
+    features: [
+      '힐 125 SA 충격흡수 + 56.3% 에너지 리턴 (RunRepeat Lab Test - CF4 기준)',
+      'Helion HF 초임계 폼 (상단) - 17.5 HA 소프트',
+      'Speedboard 플레이트 (유리섬유-나일론)로 안정성 확보',
+      '245g 경량 설계 - 데일리 트레이너 중 최경량급',
+      '통기성 4/5 - 여름 러닝에 적합',
+      '단단한 미드솔 (28.3 HA) - 빠른 페이스에 최적화',
+    ],
+    priceAnalysis: {
+      msrp: 219000,
+      streetPrice: 219000,
+      costPerKm: 487,
+      valueRating: 6,
+      priceTier: 'premium',
+      alternatives: ['saucony-kinvara-15', 'adidas-boston-12', 'nike-pegasus-41'],
+      valueAdvantages: ['경량화 (245g)', '높은 통기성', 'Speedboard 안정성', '겨울 성능 유지'],
+    },
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 90,
+        text: 'Cloudflow는 On의 대표적인 데일리/템포 트레이너로, 245g의 경량과 단단한 미드솔(28.3 HA)이 특징입니다. 충격흡수(125 SA)는 평균 수준이며, 에너지 리턴(56.3%)도 가격대비 아쉽습니다. 빠른 페이스에서 빛나지만, 느린 조깅이나 장거리에는 불편할 수 있습니다.',
+      },
+    ],
     similarShoes: ['saucony-kinvara-15', 'adidas-boston-12', 'nike-pegasus-41'],
   },
 
@@ -5428,11 +6241,40 @@ const shoes: Shoe[] = [
       shinSplints: 'caution',
     },
     koreanFootFit: {
-      toBoxWidth: 'narrow',
+      toBoxWidth: 'standard',
       flatFootCompatibility: 'poor',
       wideOptions: false,
-      winterCompatibility: 'poor',
+      winterCompatibility: 'excellent',
     },
+    priceAnalysis: {
+      msrp: 329000,
+      streetPrice: 329000,
+      costPerKm: 1097,
+      valueRating: 7,
+      priceTier: 'super-premium',
+      alternatives: ['nike-alphafly-3', 'adidas-adizero-adios-pro-4', 'asics-metaspeed-sky-paris'],
+      valueAdvantages: ['72.1% 에너지 리턴 (최상위급)', '201g 경량', '뛰어난 그립력 (0.62)', '겨울 성능 우수 (6% 변화)'],
+    },
+    targetUsers: {
+      recommended: ['미드풋/앞발 착지 러너', '마라톤/하프 레이싱용', 'On 팬으로 슈퍼슈즈 원하는 러너', '5K~마라톤 전 거리 레이서'],
+      notRecommended: ['뒤꿈치 착지 러너', '안정성이 필요한 러너', '넓은 발폭 러너', '가성비를 중시하는 러너'],
+    },
+    features: [
+      '힐 139 SA 충격흡수 + 72.1% 에너지 리턴 (RunRepeat Lab Test)',
+      '전족부 127 SA + 73.4% 에너지 리턴 - 슈퍼슈즈급 성능',
+      '201g 경량으로 38.1mm 스택 대비 뛰어난 경량화',
+      '3.2mm 로우드롭 - 미드풋/앞발 착지에 최적화',
+      '풀렝스 카본 플레이트 + Pebax Helion HF 폼',
+      '트랙션 0.62 - 슈퍼슈즈 중 최상위 그립력',
+      '겨울 성능 6% 변화 - Pebax 폼 특유의 온도 안정성',
+    ],
+    reviews: [
+      {
+        userType: 'RunRepeat 전문 리뷰어',
+        rating: 92,
+        text: 'Cloudboom Strike는 On의 최고 슈퍼슈즈로, Echo 3 대비 대폭 개선되었습니다. 72.1% 에너지 리턴은 최상위급이며, 139 SA 충격흡수와 201g 경량이 인상적입니다. 3.2mm 로우드롭으로 미드풋/앞발 착지에 최적화되어 있어 힐스트라이커에게는 부적합합니다. 핏도 이전 모델 대비 넓어져 더 많은 러너에게 적합해졌습니다.',
+      },
+    ],
     similarShoes: ['nike-alphafly-3', 'adidas-adizero-adios-pro-4', 'asics-metaspeed-sky-paris'],
   },
 ];
@@ -5467,4 +6309,48 @@ export function getBrandsFromShoes(shoesList: Shoe[] = shoes): string[] {
 
 export function getShoeBySlug(slug: string): Shoe | undefined {
   return shoes.find((shoe) => shoe.slug === slug);
+}
+
+// 비슷한 신발 정보를 가져오는 함수 (필요한 필드만 추출)
+export type SimilarShoeInfo = {
+  slug: string;
+  brand: string;
+  name: string;
+  rating: number;
+  category: string;
+  specs?: {
+    cushioning: number;
+    weight: number;
+    stability: number;
+  };
+  priceAnalysis?: {
+    valueRating: number;
+  };
+};
+
+export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
+  const result: SimilarShoeInfo[] = [];
+
+  for (const slug of slugs) {
+    const shoe = shoes.find((s) => s.slug === slug);
+    if (shoe && shoe.slug) {
+      result.push({
+        slug: shoe.slug,
+        brand: shoe.brand,
+        name: shoe.name,
+        rating: shoe.rating,
+        category: shoe.category,
+        specs: shoe.specs ? {
+          cushioning: shoe.specs.cushioning,
+          weight: shoe.specs.weight,
+          stability: shoe.specs.stability,
+        } : undefined,
+        priceAnalysis: shoe.priceAnalysis ? {
+          valueRating: shoe.priceAnalysis.valueRating,
+        } : undefined,
+      });
+    }
+  }
+
+  return result;
 }

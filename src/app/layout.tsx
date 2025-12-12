@@ -4,6 +4,8 @@ import "@/app/globals.css";
 import { cn } from "@/lib/utils";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { CompareProvider } from "@/contexts/compare-context";
+import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -41,13 +43,16 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
-        <div className="relative flex min-h-screen flex-col">
-          <Header />
-          <main className="container relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col gap-12 py-12 lg:gap-16 lg:py-16">
-            {children}
-          </main>
-          <Footer />
-        </div>
+        <CompareProvider>
+          <div className="relative flex min-h-screen flex-col">
+            <Header />
+            <main className="container relative z-10 mx-auto flex w-full max-w-6xl flex-1 flex-col gap-12 px-4 py-12 lg:gap-16 lg:py-16">
+              {children}
+            </main>
+            <Footer />
+          </div>
+          <CompareFloatingButton />
+        </CompareProvider>
       </body>
     </html>
   );

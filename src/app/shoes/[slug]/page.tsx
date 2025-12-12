@@ -1,25 +1,11 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { getShoeBySlug, getShoes } from "@/lib/data/shoes";
+import { getShoeBySlug, getShoes, getSimilarShoesData } from "@/lib/data/shoes";
 import { HeroSection } from "@/components/detail/hero-section";
 import { ResearchBadge } from "@/components/detail/research-badge";
-import { QuickSpecs } from "@/components/detail/quick-specs";
-import { TargetRecommendation } from "@/components/detail/target-recommendation";
-import { BiomechanicsAnalysis } from "@/components/detail/biomechanics-analysis";
-import { InjuryPrevention } from "@/components/detail/injury-prevention";
-import { KoreanFootFit } from "@/components/detail/korean-foot-fit";
-import { SpecRadarChart } from "@/components/detail/spec-radar-chart";
-import { KeyFeatures } from "@/components/detail/key-features";
-import { ComparisonTable } from "@/components/detail/comparison-table";
-import { ReviewsSection } from "@/components/detail/reviews-section";
-import { DetailedSpecs } from "@/components/detail/detailed-specs";
-import { ValueAnalysis } from "@/components/detail/value-analysis";
-import { SimilarShoes } from "@/components/detail/similar-shoes";
-import { FinalRating } from "@/components/detail/final-rating";
+import { ShoeDetailTabs } from "@/components/detail/shoe-detail-tabs";
 import { FinalCTA } from "@/components/detail/final-cta";
-import { ReferencesSection } from "@/components/detail/references-section";
-import { SectionNav } from "@/components/detail/section-nav";
 
 type ShoeDetailPageProps = {
   params: {
@@ -66,13 +52,50 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   // Check if shoe has complete data
   const hasCompleteData = shoe.specs && shoe.biomechanics && shoe.injuryPrevention;
 
+  // 비슷한 신발 데이터 가져오기 (서버에서 미리 로드)
+  const similarShoesData = shoe.similarShoes ? getSimilarShoesData(shoe.similarShoes) : [];
+
+  // JSON-LD 구조화 데이터
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": `${shoe.brand} ${shoe.name}`,
+    "description": shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
+    "brand": {
+      "@type": "Brand",
+      "name": shoe.brand,
+    },
+    "category": "러닝화",
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": shoe.rating,
+      "bestRating": 5,
+      "worstRating": 1,
+      "ratingCount": shoe.reviews?.length || 1,
+    },
+    ...(shoe.priceAnalysis?.msrp && {
+      "offers": {
+        "@type": "Offer",
+        "price": shoe.priceAnalysis.msrp,
+        "priceCurrency": "KRW",
+        "availability": "https://schema.org/InStock",
+      },
+    }),
+  };
+
   return (
     <div className="min-h-screen">
+      {/* JSON-LD 구조화 데이터 */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* Back Button */}
       <div className="container mx-auto px-4 py-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 text-white px-6 py-3 rounded-xl font-semibold transition-all hover:bg-white/30 hover:-translate-x-1"
+          className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md border border-white/30 text-slate-700 px-6 py-3 rounded-xl font-semibold transition-all hover:bg-white/30 hover:-translate-x-1 min-h-[44px]"
         >
           ← 목록으로
         </Link>
@@ -88,141 +111,15 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
         {hasCompleteData ? (
           <>
-            {/* Section Navigation */}
-            <SectionNav
-              availableSections={[
-                shoe.specs ? "quick-specs" : "",
-                shoe.targetUsers ? "target-users" : "",
-                shoe.biomechanics ? "biomechanics" : "",
-                shoe.injuryPrevention ? "injury-prevention" : "",
-                shoe.koreanFootFit ? "korean-foot" : "",
-                shoe.specs ? "radar-chart" : "",
-                shoe.features && shoe.features.length > 0 ? "features" : "",
-                "comparison",
-                shoe.reviews && shoe.reviews.length > 0 ? "reviews" : "",
-                shoe.detailedSpecs ? "detailed-specs" : "",
-                shoe.priceAnalysis ? "value-analysis" : "",
-                shoe.similarShoes && shoe.similarShoes.length > 0 ? "similar-shoes" : "",
-                shoe.specs ? "final-rating" : "",
-                "references",
-              ].filter(Boolean)}
+            {/* 탭 기반 UI */}
+            <ShoeDetailTabs shoe={shoe} similarShoesData={similarShoesData} />
+
+            {/* Final CTA */}
+            <FinalCTA
+              shoeName={shoe.name}
+              brand={shoe.brand}
+              category={shoe.category}
             />
-
-            {/* QuickSpecs */}
-            {shoe.specs && (
-              <div id="quick-specs" className="scroll-mt-24">
-                <QuickSpecs specs={shoe.specs} />
-              </div>
-            )}
-
-            {/* Section Cards */}
-            <div className="space-y-8">
-              {/* Target Recommendation */}
-              {shoe.targetUsers && (
-                <div id="target-users" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <TargetRecommendation targetUsers={shoe.targetUsers} />
-                </div>
-              )}
-
-              {/* Biomechanics Analysis */}
-              {shoe.biomechanics && (
-                <div id="biomechanics" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <BiomechanicsAnalysis biomechanics={shoe.biomechanics} />
-                </div>
-              )}
-
-              {/* Injury Prevention */}
-              {shoe.injuryPrevention && (
-                <div id="injury-prevention" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
-                </div>
-              )}
-
-              {/* Korean Foot Fit */}
-              {shoe.koreanFootFit && (
-                <div id="korean-foot" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <KoreanFootFit koreanFootFit={shoe.koreanFootFit} />
-                </div>
-              )}
-
-              {/* Spec Radar Chart */}
-              {shoe.specs && (
-                <div id="radar-chart" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <SpecRadarChart specs={shoe.specs} priceValueRating={shoe.priceAnalysis?.valueRating} />
-                </div>
-              )}
-
-              {/* Key Features */}
-              {shoe.features && shoe.features.length > 0 && (
-                <div id="features" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <KeyFeatures features={shoe.features} />
-                </div>
-              )}
-
-              {/* Comparison Table */}
-              <div id="comparison" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                <ComparisonTable />
-              </div>
-
-              {/* Reviews Section */}
-              {shoe.reviews && shoe.reviews.length > 0 && (
-                <div id="reviews" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <ReviewsSection reviews={shoe.reviews} />
-                </div>
-              )}
-
-              {/* Detailed Specs */}
-              {shoe.detailedSpecs && (
-                <div id="detailed-specs" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <DetailedSpecs specs={shoe.detailedSpecs} />
-                </div>
-              )}
-
-              {/* Value Analysis */}
-              {shoe.priceAnalysis && (
-                <div id="value-analysis" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <ValueAnalysis
-                    priceAnalysis={shoe.priceAnalysis}
-                    shoeName={shoe.name}
-                    brand={shoe.brand}
-                    category={shoe.category}
-                  />
-                </div>
-              )}
-
-              {/* Similar Shoes */}
-              {shoe.similarShoes && shoe.similarShoes.length > 0 && (
-                <div id="similar-shoes" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <SimilarShoes similarShoes={shoe.similarShoes} />
-                </div>
-              )}
-
-              {/* Final Rating */}
-              {shoe.specs && (
-                <div id="final-rating" className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                  <FinalRating
-                    specs={shoe.specs}
-                    priceAnalysis={shoe.priceAnalysis}
-                    shoeName={shoe.name}
-                    brand={shoe.brand}
-                    category={shoe.category}
-                    durabilityKm={shoe.specs?.durability ? { min: shoe.specs.durability - 100, max: shoe.specs.durability } : undefined}
-                  />
-                </div>
-              )}
-
-              {/* References Section */}
-              <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg scroll-mt-24">
-                <ReferencesSection />
-              </div>
-
-              {/* Final CTA */}
-              <FinalCTA
-                shoeName={shoe.name}
-                brand={shoe.brand}
-                category={shoe.category}
-              />
-            </div>
           </>
         ) : (
           <div className="bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg text-center">

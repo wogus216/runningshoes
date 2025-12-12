@@ -1,3 +1,4 @@
+import { ClipboardCheck } from 'lucide-react';
 import type { ShoeSpecs, PriceAnalysis } from "@/types/shoe";
 
 type FinalRatingProps = {
@@ -43,7 +44,7 @@ export function FinalRating({ specs, priceAnalysis, shoeName, brand, category, d
     if (durabilityKm) {
       return `${durabilityKm.min}-${durabilityKm.max}km 주행 가능`;
     }
-    return "500-600km 주행 가능";
+    return `${specs.durability}km 주행 가능`;
   };
 
   const getCategoryRecommendation = () => {
@@ -61,20 +62,34 @@ export function FinalRating({ specs, priceAnalysis, shoeName, brand, category, d
     }
   };
 
+  // 착화감 점수 동적 계산 (쿠셔닝 + 안정성 기반)
+  const getComfortScore = () => {
+    const base = (specs.cushioning * 0.5 + specs.stability * 0.3);
+    if (base >= 8) return 9;
+    if (base >= 6) return 8;
+    return 7;
+  };
+
+  // 가성비 설명 동적 생성
+  const getValueDescription = () => {
+    if (!priceAnalysis?.msrp) return "가격 정보 없음";
+    const costPerKm = priceAnalysis.costPerKm || Math.round(priceAnalysis.msrp / specs.durability);
+    return `${(priceAnalysis.msrp / 10000).toFixed(1)}만원의 가치 (₩${costPerKm}/km)`;
+  };
+
   const ratings = [
     { label: "쿠셔닝", score: specs.cushioning, description: specs.cushioning >= 9 ? "최상급 충격 흡수" : specs.cushioning >= 7 ? "우수한 충격 흡수" : "적절한 쿠셔닝" },
     { label: "반발력", score: specs.responsiveness, description: specs.responsiveness >= 9 ? "탁월한 에너지 리턴" : specs.responsiveness >= 7 ? "좋은 반발력" : "적당한 반발력" },
     { label: "안정성", score: specs.stability, description: specs.stability >= 9 ? "최고의 안정성" : specs.stability >= 7 ? "안정적인 지지력" : "기본 안정성" },
     { label: "경량성", score: specs.weight < 200 ? 10 : specs.weight < 230 ? 9 : specs.weight < 260 ? 8 : specs.weight < 290 ? 7 : 6, description: getWeightDescription() },
-    { label: "내구성", score: durabilityKm && durabilityKm.max >= 600 ? 9 : 8, description: getDurabilityDescription() },
-    { label: "착화감", score: 9, description: "편안한 착화감" },
-    { label: "디자인", score: 8, description: "세련된 디자인" },
-    { label: "부상 예방", score: specs.stability >= 8 ? 9 : 8, description: specs.stability >= 8 ? "부상 위험 크게 감소" : "기본적인 보호" },
+    { label: "내구성", score: durabilityKm && durabilityKm.max >= 600 ? 9 : specs.durability >= 600 ? 9 : specs.durability >= 400 ? 8 : 7, description: getDurabilityDescription() },
+    { label: "착화감", score: getComfortScore(), description: getComfortScore() >= 9 ? "매우 편안한 착화감" : "편안한 착화감" },
+    { label: "부상 예방", score: specs.stability >= 8 && specs.cushioning >= 7 ? 9 : specs.stability >= 6 ? 8 : 7, description: specs.stability >= 8 ? "부상 위험 크게 감소" : "기본적인 보호" },
     { label: "성능", score: Math.round((specs.cushioning + specs.responsiveness + specs.stability) / 3), description: `${category}용으로 최적화된 성능` },
     {
       label: "가성비",
-      score: priceAnalysis?.valueRating || 8,
-      description: `${((priceAnalysis?.msrp || 159000) / 10000).toFixed(1)}만원의 가치 (₩${priceAnalysis?.costPerKm || 280}/km)`,
+      score: priceAnalysis?.valueRating || 7,
+      description: getValueDescription(),
       highlight: true,
     },
   ];
@@ -86,7 +101,7 @@ export function FinalRating({ specs, priceAnalysis, shoeName, brand, category, d
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <span className="text-4xl">📝</span>
+        <ClipboardCheck className="h-8 w-8 text-[#4facfe]" />
         종합 평가
       </h2>
 
@@ -110,9 +125,10 @@ export function FinalRating({ specs, priceAnalysis, shoeName, brand, category, d
             ? <><strong>과내전 교정</strong>이 필요한 러너를 위한 신발로, <strong>안정성과 지지력</strong>에서 뛰어납니다.</>
             : <><strong>다목적 러닝</strong>에 적합한 신발로, <strong>균형 잡힌 성능</strong>을 제공합니다.</>
           }{" "}
-          {priceAnalysis?.msrp && `${(priceAnalysis.msrp / 10000).toFixed(1)}만원`}이라는 가격에{" "}
-          {durabilityKm ? `${durabilityKm.min}-${durabilityKm.max}km` : "500-600km"}의 내구성으로{" "}
-          <strong>₩{priceAnalysis?.costPerKm || 280}/km의 코스트</strong>를 보입니다.
+          {priceAnalysis?.msrp ? `${(priceAnalysis.msrp / 10000).toFixed(1)}만원이라는 가격에 ` : ''}{" "}
+          {durabilityKm ? `${durabilityKm.min}-${durabilityKm.max}km` : `${specs.durability}km`}의 내구성으로{" "}
+          {priceAnalysis?.costPerKm && <strong>₩{priceAnalysis.costPerKm}/km의 코스트</strong>}
+          {!priceAnalysis?.costPerKm && priceAnalysis?.msrp && <strong>₩{Math.round(priceAnalysis.msrp / specs.durability)}/km의 코스트</strong>}를 보입니다.
         </p>
       </div>
     </section>

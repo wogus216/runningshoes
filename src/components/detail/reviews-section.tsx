@@ -1,3 +1,4 @@
+import { MessageSquareText } from 'lucide-react';
 import type { Review } from "@/types/shoe";
 
 type ReviewsSectionProps = {
@@ -36,7 +37,7 @@ export function ReviewsSection({ reviews }: ReviewsSectionProps) {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <span className="text-4xl">💬</span>
+        <MessageSquareText className="h-8 w-8 text-[#4facfe]" />
         실사용자 리뷰
       </h2>
       <p className="text-gray-600">

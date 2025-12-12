@@ -1,5 +1,7 @@
 "use client";
 
+import { BookOpen, Microscope, BadgeCheck } from 'lucide-react';
+
 type ResearchBadgeProps = {
   papersCount?: number;
 };
@@ -20,17 +22,17 @@ export function ResearchBadge({ papersCount = 5 }: ResearchBadgeProps) {
           onClick={scrollToReferences}
           className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#4facfe10] text-[#4facfe] font-semibold hover:bg-[#4facfe20] transition-colors"
         >
-          <span>📚</span>
+          <BookOpen className="h-4 w-4" />
           <span>연구 기반 분석</span>
         </button>
 
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 text-gray-700 font-medium">
-          <span>🔬</span>
+          <Microscope className="h-4 w-4" />
           <span>{papersCount}개 논문 참고</span>
         </div>
 
         <div className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#10b98110] text-[#10b981] font-semibold">
-          <span>✅</span>
+          <BadgeCheck className="h-4 w-4" />
           <span>전문가 검토</span>
         </div>
       </div>
