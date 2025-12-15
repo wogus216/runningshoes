@@ -5,9 +5,10 @@ import { CategorySection } from "@/components/category-section";
 
 type HierarchyViewProps = {
   shoes: Shoe[];
+  onTagClick?: (tag: string) => void;
 };
 
-export function HierarchyView({ shoes }: HierarchyViewProps) {
+export function HierarchyView({ shoes, onTagClick }: HierarchyViewProps) {
   const grouped = useMemo(() => groupShoesByCategory(shoes), [shoes]);
   const orderedCategories = useMemo(() => {
     const known = categoryOrder.filter((category) => grouped[category]?.length);
@@ -35,7 +36,7 @@ export function HierarchyView({ shoes }: HierarchyViewProps) {
         });
 
         const section = (
-          <CategorySection category={category} shoes={sortedModels} indexOffset={runningIndex} key={category} />
+          <CategorySection category={category} shoes={sortedModels} indexOffset={runningIndex} key={category} onTagClick={onTagClick} />
         );
 
         runningIndex += sortedModels.length;

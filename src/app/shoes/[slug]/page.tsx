@@ -6,6 +6,7 @@ import { HeroSection } from "@/components/detail/hero-section";
 import { ResearchBadge } from "@/components/detail/research-badge";
 import { ShoeDetailTabs } from "@/components/detail/shoe-detail-tabs";
 import { FinalCTA } from "@/components/detail/final-cta";
+import { MobileQuickActions } from "@/components/detail/mobile-quick-actions";
 
 type ShoeDetailPageProps = {
   params: {
@@ -130,6 +131,9 @@ export default function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           </div>
         )}
       </div>
+
+      {/* 모바일 빠른 액션 버튼 */}
+      <MobileQuickActions shoe={shoe} />
     </div>
   );
 }

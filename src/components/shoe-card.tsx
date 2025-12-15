@@ -2,7 +2,7 @@
 
 import { memo } from "react";
 import Link from "next/link";
-import { Star } from "lucide-react";
+import { Star, TrendingUp, Snowflake, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -12,6 +12,7 @@ import type { Shoe } from "@/types/shoe";
 type ShoeCardProps = {
   shoe: Shoe;
   index?: number;
+  onTagClick?: (tag: string) => void;
 };
 
 const statusLabels: Record<NonNullable<Shoe["status"]>, { label: string; className: string }> = {
@@ -28,9 +29,20 @@ function getStatus(shoe: Shoe): Shoe["status"] | undefined {
   return shoe.rating >= 5 ? "great" : undefined;
 }
 
-export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProps) {
+export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: ShoeCardProps) {
   const status = getStatus(shoe);
   const href = shoe.slug ? `/shoes/${shoe.slug}` : "#";
+
+  // 가성비 배지 (valueRating 8 이상)
+  const isGoodValue = shoe.priceAnalysis?.valueRating && shoe.priceAnalysis.valueRating >= 8;
+  // 겨울 호환 배지 (excellent or good)
+  const isWinterReady = shoe.koreanFootFit?.winterCompatibility &&
+    ['excellent', 'good'].includes(shoe.koreanFootFit.winterCompatibility);
+  // 카본 플레이트 배지
+  const hasCarbonPlate = shoe.biomechanics?.carbonPlate;
+
+  // 클릭 가능한 태그 (최대 2개)
+  const clickableTags = shoe.tags?.slice(0, 2) || [];
 
   const cardContent = (
     <Card
@@ -47,18 +59,51 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0 }: ShoeCardProp
       <div className="group/card relative flex flex-col gap-4 p-5">
         <div className="flex items-center justify-between text-xs font-semibold uppercase tracking-[0.2em] text-slate-600">
           <span>{shoe.brand}</span>
-          {status ? (
-            <Badge className={cn("border-none px-2 py-0.5 text-[10px] tracking-[0.2em]", statusLabels[status].className)}>
-              {statusLabels[status].label}
-            </Badge>
-          ) : null}
+          <div className="flex items-center gap-1.5">
+            {isGoodValue && (
+              <Badge className="border-none bg-green-500/20 text-green-600 px-1.5 py-0.5 text-[9px] tracking-normal flex items-center gap-0.5">
+                <TrendingUp className="h-2.5 w-2.5" />
+                가성비
+              </Badge>
+            )}
+            {isWinterReady && (
+              <Badge className="border-none bg-sky-500/20 text-sky-600 px-1.5 py-0.5 text-[9px] tracking-normal flex items-center gap-0.5">
+                <Snowflake className="h-2.5 w-2.5" />
+                겨울
+              </Badge>
+            )}
+            {hasCarbonPlate && (
+              <Badge className="border-none bg-amber-500/20 text-amber-600 px-1.5 py-0.5 text-[9px] tracking-normal flex items-center gap-0.5">
+                <Zap className="h-2.5 w-2.5" />
+                카본
+              </Badge>
+            )}
+            {status && !isGoodValue && !isWinterReady && !hasCarbonPlate && (
+              <Badge className={cn("border-none px-2 py-0.5 text-[10px] tracking-[0.2em]", statusLabels[status].className)}>
+                {statusLabels[status].label}
+              </Badge>
+            )}
+          </div>
         </div>
 
         <div className="flex items-start justify-between gap-3">
           <div className="space-y-2">
             <h3 className="text-lg font-bold tracking-tight text-slate-900 drop-shadow-sm">{shoe.name}</h3>
-            <div className="flex items-center gap-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
+            <div className="flex flex-wrap items-center gap-1 text-xs font-semibold uppercase tracking-wide text-slate-500">
               <span className="rounded-full bg-slate-900/5 px-2 py-1 text-xs text-slate-600">{shoe.category}</span>
+              {clickableTags.map(tag => (
+                <button
+                  key={tag}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    onTagClick?.(tag);
+                  }}
+                  className="rounded-full bg-[#4facfe]/10 px-2 py-1 text-xs text-[#4facfe] hover:bg-[#4facfe]/20 transition-colors normal-case tracking-normal"
+                >
+                  #{tag}
+                </button>
+              ))}
             </div>
           </div>
 

@@ -13,14 +13,26 @@ function ReviewCard({ review }: { review: Review }) {
     "평발 러너": "bg-[#f59e0b]",
     "가성비 중시": "bg-[#10b981]",
     "Fun Runner": "bg-[#4facfe]",
+    "RunRepeat 전문 리뷰어": "bg-[#e11d48]",
   };
+
+  // 전문 리뷰어는 100점 만점, 일반 리뷰어는 5점 만점
+  const isExpertReview = review.userType === 'RunRepeat 전문 리뷰어';
+  const displayRating = isExpertReview
+    ? Math.round(review.rating / 20) // 100점 -> 5점 변환
+    : Math.min(5, Math.max(0, Math.round(review.rating))); // 안전하게 0-5 범위로
 
   return (
     <div className="bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-6 border-l-4 border-[#4facfe]">
       <div className="flex justify-between items-center mb-4 flex-wrap gap-3">
-        <div className="text-yellow-500 text-xl">
-          {"★".repeat(review.rating)}
-          {"☆".repeat(5 - review.rating)}
+        <div className="flex items-center gap-2">
+          <div className="text-yellow-500 text-xl">
+            {"★".repeat(displayRating)}
+            {"☆".repeat(5 - displayRating)}
+          </div>
+          {isExpertReview && (
+            <span className="text-sm font-bold text-[#e11d48]">{review.rating}/100</span>
+          )}
         </div>
         <span
           className={`${userTypeColors[review.userType] || "bg-gray-500"} text-white px-3 py-1.5 rounded-lg text-sm font-semibold`}

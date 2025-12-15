@@ -1,7 +1,8 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
-import { Star, Check, ArrowRight } from 'lucide-react';
+import { Star, Check, ArrowRight, ChevronDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
@@ -14,6 +15,26 @@ type ResultCardProps = {
 
 export function ResultCard({ shoe, rank }: ResultCardProps) {
   const isTopPick = rank === 1;
+  const [showDetails, setShowDetails] = useState(isTopPick);
+
+  // 비교 아이콘 결정
+  const getComparisonIcon = (value: number, inverted = false) => {
+    const isPositive = inverted ? value < 0 : value > 0;
+    const isNegative = inverted ? value > 0 : value < 0;
+
+    if (isPositive) return <TrendingUp className="h-3 w-3 text-emerald-500" />;
+    if (isNegative) return <TrendingDown className="h-3 w-3 text-rose-500" />;
+    return <Minus className="h-3 w-3 text-slate-400" />;
+  };
+
+  const getComparisonText = (value: number, unit: string, inverted = false) => {
+    if (value === 0) return '평균';
+    const absValue = Math.abs(value);
+    const direction = inverted
+      ? (value < 0 ? '+' : '-')
+      : (value > 0 ? '+' : '-');
+    return `${direction}${absValue}${unit}`;
+  };
 
   return (
     <div
@@ -88,7 +109,7 @@ export function ResultCard({ shoe, rank }: ResultCardProps) {
         </div>
       </div>
 
-      {/* 추천 이유 */}
+      {/* 추천 이유 태그 */}
       {shoe.matchReasons.length > 0 && (
         <div className="mb-4">
           <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
@@ -105,6 +126,71 @@ export function ResultCard({ shoe, rank }: ResultCardProps) {
               </span>
             ))}
           </div>
+        </div>
+      )}
+
+      {/* 상세 추천 이유 (접기/펼치기) */}
+      {shoe.detailedReason && (
+        <div className="mb-4">
+          <button
+            onClick={() => setShowDetails(!showDetails)}
+            className="flex items-center gap-2 text-sm font-medium text-[#4facfe] hover:text-[#3d9be8] transition-colors"
+          >
+            <ChevronDown className={cn("h-4 w-4 transition-transform", showDetails && "rotate-180")} />
+            {showDetails ? '간단히 보기' : '상세 분석 보기'}
+          </button>
+
+          {showDetails && (
+            <div className="mt-3 p-4 rounded-xl bg-gradient-to-br from-slate-50 to-slate-100 border border-slate-200">
+              <p className="text-sm text-slate-700 leading-relaxed">
+                {shoe.detailedReason}
+              </p>
+
+              {/* 평균 대비 스펙 비교 */}
+              {shoe.comparisonToAvg && (
+                <div className="mt-4 pt-3 border-t border-slate-200">
+                  <p className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2">
+                    추천 신발 평균 대비
+                  </p>
+                  <div className="grid grid-cols-3 gap-2">
+                    <div className="flex items-center gap-1 text-xs">
+                      {getComparisonIcon(shoe.comparisonToAvg.cushioning)}
+                      <span className="text-slate-600">쿠셔닝</span>
+                      <span className={cn(
+                        "font-medium",
+                        shoe.comparisonToAvg.cushioning > 0 ? "text-emerald-600" :
+                        shoe.comparisonToAvg.cushioning < 0 ? "text-rose-600" : "text-slate-500"
+                      )}>
+                        {getComparisonText(shoe.comparisonToAvg.cushioning, '')}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1 text-xs">
+                      {getComparisonIcon(shoe.comparisonToAvg.weight, true)}
+                      <span className="text-slate-600">무게</span>
+                      <span className={cn(
+                        "font-medium",
+                        shoe.comparisonToAvg.weight < 0 ? "text-emerald-600" :
+                        shoe.comparisonToAvg.weight > 0 ? "text-rose-600" : "text-slate-500"
+                      )}>
+                        {getComparisonText(shoe.comparisonToAvg.weight, 'g', true)}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-1 text-xs">
+                      {getComparisonIcon(shoe.comparisonToAvg.durability)}
+                      <span className="text-slate-600">내구성</span>
+                      <span className={cn(
+                        "font-medium",
+                        shoe.comparisonToAvg.durability > 0 ? "text-emerald-600" :
+                        shoe.comparisonToAvg.durability < 0 ? "text-rose-600" : "text-slate-500"
+                      )}>
+                        {getComparisonText(shoe.comparisonToAvg.durability, 'km')}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              )}
+            </div>
+          )}
         </div>
       )}
 

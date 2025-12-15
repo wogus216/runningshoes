@@ -1,4 +1,4 @@
-import { Footprints, Ruler, PersonStanding, Package, Snowflake, MapPin } from 'lucide-react';
+import { Footprints, Ruler, PersonStanding, Package, Snowflake, Sun, MapPin } from 'lucide-react';
 import type { KoreanFootFit as KoreanFootFitType, ToBoxWidth, CompatibilityLevel } from "@/types/shoe";
 
 type KoreanFootFitProps = {
@@ -59,6 +59,17 @@ function getWinterDescription(compatibility: CompatibilityLevel): string {
   return descriptions[compatibility];
 }
 
+// 여름 호환성 설명 생성
+function getSummerDescription(compatibility: CompatibilityLevel): string {
+  const descriptions: Record<CompatibilityLevel, string> = {
+    excellent: '가볍고 통기성이 뛰어나 여름 러닝에 최적화되어 있습니다.',
+    good: '적절한 통기성과 무게로 여름 러닝에 적합합니다.',
+    fair: '여름철 사용 가능하나 다소 무겁거나 통기성이 보통입니다.',
+    poor: '무겁거나 통기성이 부족해 여름 러닝에는 권장되지 않습니다.',
+  };
+  return descriptions[compatibility];
+}
+
 // 브랜드별 대안 추천
 function getAlternativeRecommendation(brand: string): string {
   const alternatives: Record<string, string> = {
@@ -96,6 +107,13 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
     poor: "낮음",
   }[koreanFootFit.winterCompatibility];
 
+  const summerText = koreanFootFit.summerCompatibility ? {
+    excellent: "우수",
+    good: "양호",
+    fair: "보통",
+    poor: "낮음",
+  }[koreanFootFit.summerCompatibility] : null;
+
   // 토박스 공간 설명 동적 생성
   const getToBoxDescription = (): string => {
     if (koreanFootFit.toBoxWidth === 'wide') {
@@ -118,7 +136,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
       </h2>
       <p className="text-gray-600">한국인 발 형태에 맞는지 평가</p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
         <FootCharCard
           icon={<Ruler className="h-6 w-6" />}
           label="발볼 너비"
@@ -146,6 +164,15 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           value={winterText}
           description={getWinterDescription(koreanFootFit.winterCompatibility)}
         />
+
+        {summerText && koreanFootFit.summerCompatibility && (
+          <FootCharCard
+            icon={<Sun className="h-6 w-6" />}
+            label="여름 호환성"
+            value={summerText}
+            description={getSummerDescription(koreanFootFit.summerCompatibility)}
+          />
+        )}
       </div>
 
       <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">

@@ -3,6 +3,23 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { Shoe } from '@/types/shoe';
 
+export type SortOption =
+  | 'rating-desc'
+  | 'price-asc'
+  | 'price-desc'
+  | 'weight-asc'
+  | 'value-desc'
+  | 'name-asc';
+
+export const sortLabels: Record<SortOption, string> = {
+  'rating-desc': '평점 높은순',
+  'price-asc': '가격 낮은순',
+  'price-desc': '가격 높은순',
+  'weight-asc': '무게 가벼운순',
+  'value-desc': '가성비순',
+  'name-asc': '이름순',
+};
+
 export type FilterState = {
   categories: string[];
   brands: string[];
@@ -27,6 +44,7 @@ const initialFilters: FilterState = {
 
 export function useShoeFilters(shoes: Shoe[]) {
   const [filters, setFilters] = useState<FilterState>(initialFilters);
+  const [sortBy, setSortBy] = useState<SortOption>('rating-desc');
 
   // 필터 옵션 추출
   const filterOptions = useMemo(() => {
@@ -46,8 +64,8 @@ export function useShoeFilters(shoes: Shoe[]) {
     };
   }, [shoes]);
 
-  // 필터링된 신발 목록
-  const filteredShoes = useMemo(() => {
+  // 필터링된 신발 목록 (필터만 적용)
+  const filteredShoesUnsorted = useMemo(() => {
     return shoes.filter(shoe => {
       // 검색어 필터
       if (filters.searchQuery) {
@@ -116,6 +134,27 @@ export function useShoeFilters(shoes: Shoe[]) {
       return true;
     });
   }, [shoes, filters]);
+
+  // 정렬 적용
+  const filteredShoes = useMemo(() => {
+    return [...filteredShoesUnsorted].sort((a, b) => {
+      switch (sortBy) {
+        case 'price-asc':
+          return (a.priceAnalysis?.msrp || a.price || 0) - (b.priceAnalysis?.msrp || b.price || 0);
+        case 'price-desc':
+          return (b.priceAnalysis?.msrp || b.price || 0) - (a.priceAnalysis?.msrp || a.price || 0);
+        case 'weight-asc':
+          return (a.specs?.weight || 999) - (b.specs?.weight || 999);
+        case 'value-desc':
+          return (b.priceAnalysis?.valueRating || 0) - (a.priceAnalysis?.valueRating || 0);
+        case 'name-asc':
+          return a.name.localeCompare(b.name, 'ko');
+        case 'rating-desc':
+        default:
+          return b.rating - a.rating;
+      }
+    });
+  }, [filteredShoesUnsorted, sortBy]);
 
   // 필터 업데이트 함수들
   const setSearchQuery = useCallback((query: string) => {
@@ -197,6 +236,8 @@ export function useShoeFilters(shoes: Shoe[]) {
     filterOptions,
     filteredShoes,
     activeFilterCount,
+    sortBy,
+    setSortBy,
     setSearchQuery,
     toggleCategory,
     toggleBrand,

@@ -8,6 +8,7 @@ type CategorySectionProps = {
   shoes: Shoe[];
   indexOffset?: number;
   className?: string;
+  onTagClick?: (tag: string) => void;
 };
 
 export const CategorySection = memo(function CategorySection({
@@ -15,6 +16,7 @@ export const CategorySection = memo(function CategorySection({
   shoes,
   indexOffset = 0,
   className,
+  onTagClick,
 }: CategorySectionProps) {
   const sectionId = `category-${category.replace(/\s+/g, '-')}`;
 
@@ -42,7 +44,7 @@ export const CategorySection = memo(function CategorySection({
 
       <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
         {shoes.map((shoe, shoeIndex) => (
-          <ShoeCard key={`${category}-${shoe.name}`} shoe={shoe} index={indexOffset + shoeIndex} />
+          <ShoeCard key={`${category}-${shoe.name}`} shoe={shoe} index={indexOffset + shoeIndex} onTagClick={onTagClick} />
         ))}
       </div>
     </section>

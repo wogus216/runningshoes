@@ -1,6 +1,7 @@
 'use client';
 
-import { X } from 'lucide-react';
+import { useState } from 'react';
+import { X, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
@@ -78,117 +79,159 @@ function LevelBadge({ level }: { level: string | undefined }) {
   );
 }
 
-// 모바일용 카드 컴포넌트
+// 모바일용 아코디언 카드 컴포넌트
 function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: string) => void }) {
+  const [isExpanded, setIsExpanded] = useState(false);
   const widthLabels: Record<string, string> = { narrow: '좁음', standard: '표준', wide: '넓음' };
-  const tierLabels: Record<string, string> = {
-    budget: '저가',
-    mid: '중가',
-    premium: '프리미엄',
-    'super-premium': '슈퍼 프리미엄',
-    high: '고가',
-  };
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 space-y-4">
-      {/* 헤더 */}
-      <div className="flex items-start justify-between">
-        <div>
-          <p className="text-xs font-medium text-slate-500 uppercase">{shoe.brand}</p>
-          <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-slate-900 hover:text-[#4facfe]">
-            {shoe.name}
-          </Link>
-          <p className="text-sm text-slate-400">{shoe.category}</p>
+    <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
+      {/* 헤더 (항상 보임) */}
+      <div className="p-4">
+        <div className="flex items-start justify-between">
+          <div className="flex-1">
+            <p className="text-xs font-medium text-slate-500 uppercase">{shoe.brand}</p>
+            <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-slate-900 hover:text-[#4facfe]">
+              {shoe.name}
+            </Link>
+            <p className="text-sm text-slate-400">{shoe.category}</p>
+          </div>
+          {onRemove && (
+            <button
+              onClick={() => onRemove(shoe.id || shoe.slug || '')}
+              className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-slate-100 text-slate-400 hover:bg-red-100 hover:text-red-500"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          )}
         </div>
-        {onRemove && (
-          <button
-            onClick={() => onRemove(shoe.id || shoe.slug || '')}
-            className="p-2 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full bg-slate-100 text-slate-400 hover:bg-red-100 hover:text-red-500"
+
+        {/* 핵심 정보 (항상 보임) */}
+        <div className="grid grid-cols-4 gap-2 mt-4">
+          <div className="text-center bg-slate-50 rounded-lg p-2">
+            <p className="text-[10px] text-slate-500">가격</p>
+            <p className="font-bold text-xs">{shoe.priceAnalysis?.msrp ? `${Math.round(shoe.priceAnalysis.msrp / 10000)}만` : '-'}</p>
+          </div>
+          <div className="text-center bg-slate-50 rounded-lg p-2">
+            <p className="text-[10px] text-slate-500">평점</p>
+            <p className="font-bold text-xs">{shoe.rating}</p>
+          </div>
+          <div className="text-center bg-slate-50 rounded-lg p-2">
+            <p className="text-[10px] text-slate-500">무게</p>
+            <p className="font-bold text-xs">{shoe.specs?.weight ? `${shoe.specs.weight}g` : '-'}</p>
+          </div>
+          <div className="text-center bg-slate-50 rounded-lg p-2">
+            <p className="text-[10px] text-slate-500">쿠션</p>
+            <p className="font-bold text-xs">{shoe.specs?.cushioning || '-'}</p>
+          </div>
+        </div>
+
+        {/* 더보기/접기 버튼 */}
+        <button
+          onClick={() => setIsExpanded(!isExpanded)}
+          className="w-full mt-4 py-3 flex items-center justify-center gap-2 text-sm font-medium text-[#4facfe] bg-[#4facfe]/5 rounded-xl hover:bg-[#4facfe]/10 transition-colors min-h-[44px]"
+        >
+          {isExpanded ? (
+            <>
+              접기 <ChevronUp className="h-4 w-4" />
+            </>
+          ) : (
+            <>
+              상세 스펙 보기 <ChevronDown className="h-4 w-4" />
+            </>
+          )}
+        </button>
+      </div>
+
+      {/* 확장된 상세 정보 */}
+      {isExpanded && (
+        <div className="border-t border-slate-100 p-4 space-y-4 bg-slate-50/50 animate-fade-in-up">
+          {/* 전체 스펙 */}
+          <div>
+            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">전체 스펙</p>
+            <div className="grid grid-cols-3 gap-2">
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">반응성</p>
+                <p className="font-semibold text-sm">{shoe.specs?.responsiveness ? `${shoe.specs.responsiveness}/10` : '-'}</p>
+              </div>
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">안정성</p>
+                <p className="font-semibold text-sm">{shoe.specs?.stability ? `${shoe.specs.stability}/10` : '-'}</p>
+              </div>
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">내구성</p>
+                <p className="font-semibold text-sm">{shoe.specs?.durability ? `${shoe.specs.durability}km` : '-'}</p>
+              </div>
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">드롭</p>
+                <p className="font-semibold text-sm">{shoe.biomechanics?.drop ? `${shoe.biomechanics.drop}mm` : '-'}</p>
+              </div>
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">카본</p>
+                <p className="font-semibold text-sm">{shoe.biomechanics?.carbonPlate ? '있음' : '없음'}</p>
+              </div>
+              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+                <p className="text-xs text-slate-500">가성비</p>
+                <p className="font-semibold text-sm">{shoe.priceAnalysis?.valueRating ? `${shoe.priceAnalysis.valueRating}/10` : '-'}</p>
+              </div>
+            </div>
+          </div>
+
+          {/* 부상 예방 */}
+          <div>
+            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">부상 예방</p>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">족저근막염</span>
+                <LevelBadge level={shoe.injuryPrevention?.plantarFasciitis} />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">아킬레스</span>
+                <LevelBadge level={shoe.injuryPrevention?.achillesTendinopathy} />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">무릎</span>
+                <LevelBadge level={shoe.injuryPrevention?.kneeIssues} />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">정강이</span>
+                <LevelBadge level={shoe.injuryPrevention?.shinSplints} />
+              </div>
+            </div>
+          </div>
+
+          {/* 한국인 발 적합도 */}
+          <div>
+            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">한국인 발 적합도</p>
+            <div className="grid grid-cols-2 gap-2">
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">발볼</span>
+                <span className="text-sm font-medium">{shoe.koreanFootFit?.toBoxWidth ? widthLabels[shoe.koreanFootFit.toBoxWidth] : '-'}</span>
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">평발</span>
+                <LevelBadge level={shoe.koreanFootFit?.flatFootCompatibility} />
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">와이드 옵션</span>
+                <span className="text-sm font-medium">{shoe.koreanFootFit?.wideOptions ? '있음' : '없음'}</span>
+              </div>
+              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+                <span className="text-xs text-slate-500">km당 비용</span>
+                <span className="text-sm font-medium">{shoe.priceAnalysis?.costPerKm ? `₩${shoe.priceAnalysis.costPerKm}` : '-'}</span>
+              </div>
+            </div>
+          </div>
+
+          {/* 상세 페이지 링크 */}
+          <Link
+            href={`/shoes/${shoe.slug}`}
+            className="block w-full py-3 text-center text-sm font-semibold text-white bg-[#4facfe] rounded-xl hover:bg-[#4facfe]/90 transition-colors min-h-[44px]"
           >
-            <X className="h-5 w-5" />
-          </button>
-        )}
-      </div>
-
-      {/* 기본 정보 */}
-      <div className="grid grid-cols-2 gap-3">
-        <div className="bg-slate-50 rounded-xl p-3">
-          <p className="text-xs text-slate-500">가격</p>
-          <p className="font-bold text-slate-900">
-            {shoe.priceAnalysis?.msrp ? `₩${shoe.priceAnalysis.msrp.toLocaleString()}` : '-'}
-          </p>
+            상세 페이지 보기
+          </Link>
         </div>
-        <div className="bg-slate-50 rounded-xl p-3">
-          <p className="text-xs text-slate-500">평점</p>
-          <p className="font-bold text-slate-900">{shoe.rating} / 5</p>
-        </div>
-      </div>
-
-      {/* 스펙 */}
-      <div>
-        <p className="text-xs font-semibold text-slate-500 uppercase mb-2">스펙</p>
-        <div className="grid grid-cols-3 gap-2">
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">무게</p>
-            <p className="font-semibold text-sm">{shoe.specs?.weight ? `${shoe.specs.weight}g` : '-'}</p>
-          </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">쿠셔닝</p>
-            <p className="font-semibold text-sm">{shoe.specs?.cushioning ? `${shoe.specs.cushioning}/10` : '-'}</p>
-          </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">반응성</p>
-            <p className="font-semibold text-sm">{shoe.specs?.responsiveness ? `${shoe.specs.responsiveness}/10` : '-'}</p>
-          </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">안정성</p>
-            <p className="font-semibold text-sm">{shoe.specs?.stability ? `${shoe.specs.stability}/10` : '-'}</p>
-          </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">내구성</p>
-            <p className="font-semibold text-sm">{shoe.specs?.durability ? `${shoe.specs.durability}km` : '-'}</p>
-          </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
-            <p className="text-xs text-slate-500">드롭</p>
-            <p className="font-semibold text-sm">{shoe.biomechanics?.drop ? `${shoe.biomechanics.drop}mm` : '-'}</p>
-          </div>
-        </div>
-      </div>
-
-      {/* 부상 예방 */}
-      <div>
-        <p className="text-xs font-semibold text-slate-500 uppercase mb-2">부상 예방</p>
-        <div className="flex flex-wrap gap-2">
-          <div className="flex items-center gap-1">
-            <span className="text-xs text-slate-500">족저근막염:</span>
-            <LevelBadge level={shoe.injuryPrevention?.plantarFasciitis} />
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="text-xs text-slate-500">아킬레스:</span>
-            <LevelBadge level={shoe.injuryPrevention?.achillesTendinopathy} />
-          </div>
-          <div className="flex items-center gap-1">
-            <span className="text-xs text-slate-500">무릎:</span>
-            <LevelBadge level={shoe.injuryPrevention?.kneeIssues} />
-          </div>
-        </div>
-      </div>
-
-      {/* 적합도 */}
-      <div>
-        <p className="text-xs font-semibold text-slate-500 uppercase mb-2">적합도</p>
-        <div className="flex flex-wrap gap-2 text-sm">
-          <span className="bg-slate-100 px-2 py-1 rounded">
-            발볼: {shoe.koreanFootFit?.toBoxWidth ? widthLabels[shoe.koreanFootFit.toBoxWidth] : '-'}
-          </span>
-          <span className="bg-slate-100 px-2 py-1 rounded">
-            카본: {shoe.biomechanics?.carbonPlate ? '있음' : '없음'}
-          </span>
-          <span className="bg-slate-100 px-2 py-1 rounded">
-            가성비: {shoe.priceAnalysis?.valueRating ? `${shoe.priceAnalysis.valueRating}/10` : '-'}
-          </span>
-        </div>
-      </div>
+      )}
     </div>
   );
 }

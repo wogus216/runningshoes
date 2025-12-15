@@ -1,6 +1,8 @@
-import { Gem, Check, BadgeDollarSign, ShoppingCart } from 'lucide-react';
+import Link from 'next/link';
+import { Gem, Check, BadgeDollarSign, ShoppingCart, ArrowRight } from 'lucide-react';
 import type { PriceAnalysis } from "@/types/shoe";
 import type { ShoeSpecs } from "@/types/shoe";
+import { getShoes } from "@/lib/data/shoes";
 
 type ValueAnalysisProps = {
   priceAnalysis: PriceAnalysis;
@@ -9,6 +11,20 @@ type ValueAnalysisProps = {
   category: string;
   specs?: ShoeSpecs;
 };
+
+// alternatives 문자열을 slug로 변환하는 함수
+function findShoeByAlternativeName(altName: string) {
+  const shoes = getShoes();
+  const normalizedAlt = altName.toLowerCase().replace(/\s+/g, '');
+
+  return shoes.find(shoe => {
+    const shoeName = `${shoe.brand} ${shoe.name}`.toLowerCase().replace(/\s+/g, '');
+    const shoeNameOnly = shoe.name.toLowerCase().replace(/\s+/g, '');
+    return shoeName.includes(normalizedAlt) ||
+           normalizedAlt.includes(shoeNameOnly) ||
+           shoeNameOnly.includes(normalizedAlt);
+  });
+}
 
 // 브랜드별 기본 장점 생성
 function getBrandAdvantages(brand: string): string[] {
@@ -134,12 +150,25 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
           <div>
             <strong className="text-gray-900 block mb-3">비슷한 가격대:</strong>
             <ul className="space-y-2 text-gray-600">
-              {priceAnalysis.alternatives.map((alt) => (
-                <li key={alt} className="flex items-start gap-2">
-                  <span className="text-[#4facfe] mt-1">•</span>
-                  <span>{alt}</span>
-                </li>
-              ))}
+              {priceAnalysis.alternatives.map((alt) => {
+                const matchedShoe = findShoeByAlternativeName(alt);
+                return (
+                  <li key={alt} className="flex items-start gap-2">
+                    <span className="text-[#4facfe] mt-1">•</span>
+                    {matchedShoe?.slug ? (
+                      <Link
+                        href={`/shoes/${matchedShoe.slug}`}
+                        className="text-[#4facfe] hover:underline flex items-center gap-1"
+                      >
+                        {alt}
+                        <ArrowRight className="h-3 w-3" />
+                      </Link>
+                    ) : (
+                      <span>{alt}</span>
+                    )}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>

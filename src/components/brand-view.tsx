@@ -6,9 +6,10 @@ import { ShoeCard } from "@/components/shoe-card";
 
 type BrandViewProps = {
   shoes: Shoe[];
+  onTagClick?: (tag: string) => void;
 };
 
-export function BrandView({ shoes }: BrandViewProps) {
+export function BrandView({ shoes, onTagClick }: BrandViewProps) {
   const grouped = useMemo(() => groupShoesByBrand(shoes), [shoes]);
   const brands = useMemo(() => getBrandsFromShoes(shoes), [shoes]);
 
@@ -49,7 +50,7 @@ export function BrandView({ shoes }: BrandViewProps) {
 
             <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
               {sortedModels.map((shoe, index) => (
-                <ShoeCard key={`${brand}-${shoe.name}`} shoe={shoe} index={runningIndex + index} />
+                <ShoeCard key={`${brand}-${shoe.name}`} shoe={shoe} index={runningIndex + index} onTagClick={onTagClick} />
               ))}
             </div>
           </section>

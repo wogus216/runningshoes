@@ -1,9 +1,10 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect, useCallback, Suspense } from 'react';
+import { useSearchParams, useRouter } from 'next/navigation';
 import Link from 'next/link';
-import { Search, ArrowLeft, X } from 'lucide-react';
-import { getShoes } from '@/lib/data/shoes';
+import { Search, ArrowLeft, X, Check, Link2 } from 'lucide-react';
+import { getShoes, getShoeBySlug } from '@/lib/data/shoes';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { Card, CardContent } from '@/components/ui/card';
@@ -13,10 +14,69 @@ import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 
 export default function ComparePage() {
+  return (
+    <Suspense fallback={<ComparePageSkeleton />}>
+      <ComparePageContent />
+    </Suspense>
+  );
+}
+
+function ComparePageSkeleton() {
+  return (
+    <div className="space-y-8 pb-16">
+      <div className="h-10 w-32 bg-slate-200 rounded animate-pulse" />
+      <header className="text-center">
+        <div className="h-10 w-48 bg-slate-200 rounded mx-auto animate-pulse" />
+        <div className="h-6 w-64 bg-slate-100 rounded mx-auto mt-2 animate-pulse" />
+      </header>
+      <div className="h-40 bg-slate-100 rounded-3xl animate-pulse" />
+    </div>
+  );
+}
+
+function ComparePageContent() {
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const allShoes = useMemo(() => getShoes().filter(s => s.specs), []);
   const [selectedShoes, setSelectedShoes] = useState<Shoe[]>([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [showSearch, setShowSearch] = useState(true);
+  const [copied, setCopied] = useState(false);
+
+  // URL에서 신발 로드
+  useEffect(() => {
+    const shoesParam = searchParams.get('shoes');
+    if (shoesParam) {
+      const slugs = shoesParam.split(',');
+      const loadedShoes = slugs
+        .map(slug => getShoeBySlug(slug))
+        .filter((shoe): shoe is Shoe => shoe !== undefined && shoe.specs !== undefined);
+      if (loadedShoes.length > 0) {
+        setSelectedShoes(loadedShoes);
+        setShowSearch(false);
+      }
+    }
+  }, [searchParams]);
+
+  // URL 업데이트
+  const updateUrl = useCallback((shoes: Shoe[]) => {
+    if (shoes.length > 0) {
+      const slugs = shoes.map(s => s.slug).join(',');
+      router.replace(`/compare?shoes=${slugs}`, { scroll: false });
+    } else {
+      router.replace('/compare', { scroll: false });
+    }
+  }, [router]);
+
+  // URL 복사
+  const copyShareUrl = () => {
+    if (selectedShoes.length === 0) return;
+    const slugs = selectedShoes.map(s => s.slug).join(',');
+    const url = `${window.location.origin}/compare?shoes=${slugs}`;
+    navigator.clipboard.writeText(url);
+    setCopied(true);
+    setTimeout(() => setCopied(false), 2000);
+  };
 
   const filteredShoes = useMemo(() => {
     if (!searchQuery) return allShoes.slice(0, 20);
@@ -31,16 +91,21 @@ export default function ComparePage() {
 
   const addShoe = (shoe: Shoe) => {
     if (selectedShoes.length < 4 && !selectedShoes.some(s => (s.id || s.slug) === (shoe.id || shoe.slug))) {
-      setSelectedShoes([...selectedShoes, shoe]);
+      const newShoes = [...selectedShoes, shoe];
+      setSelectedShoes(newShoes);
+      updateUrl(newShoes);
     }
   };
 
   const removeShoe = (shoeId: string) => {
-    setSelectedShoes(selectedShoes.filter(s => (s.id || s.slug) !== shoeId));
+    const newShoes = selectedShoes.filter(s => (s.id || s.slug) !== shoeId);
+    setSelectedShoes(newShoes);
+    updateUrl(newShoes);
   };
 
   const clearAll = () => {
     setSelectedShoes([]);
+    updateUrl([]);
   };
 
   return (
@@ -78,14 +143,39 @@ export default function ComparePage() {
                 </button>
               )}
             </div>
-            <Button
-              variant="outline"
-              size="sm"
-              onClick={() => setShowSearch(!showSearch)}
-              className="rounded-full"
-            >
-              {showSearch ? '신발 선택 닫기' : '신발 추가하기'}
-            </Button>
+            <div className="flex items-center gap-2">
+              {selectedShoes.length >= 2 && (
+                <Button
+                  variant="outline"
+                  size="sm"
+                  onClick={copyShareUrl}
+                  className={cn(
+                    "rounded-full transition-all",
+                    copied && "bg-green-50 border-green-300 text-green-600"
+                  )}
+                >
+                  {copied ? (
+                    <>
+                      <Check className="h-4 w-4 mr-2" />
+                      복사됨!
+                    </>
+                  ) : (
+                    <>
+                      <Link2 className="h-4 w-4 mr-2" />
+                      URL 공유
+                    </>
+                  )}
+                </Button>
+              )}
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={() => setShowSearch(!showSearch)}
+                className="rounded-full"
+              >
+                {showSearch ? '신발 선택 닫기' : '신발 추가하기'}
+              </Button>
+            </div>
           </div>
 
           {/* 선택된 신발 카드 */}

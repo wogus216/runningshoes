@@ -51,6 +51,26 @@ const questions: Question[] = [
     ],
   },
   {
+    id: 'targetPace',
+    title: '목표 페이스는 어떻게 되나요?',
+    description: '주로 뛰는 페이스를 선택해주세요',
+    options: [
+      { value: 'slow', label: '6분대 이상', description: '편안한 조깅, 회복 러닝' },
+      { value: 'medium', label: '5-6분대', description: '중간 템포, 꾸준한 훈련' },
+      { value: 'fast', label: '5분 미만', description: '빠른 템포, 스피드 훈련' },
+    ],
+  },
+  {
+    id: 'season',
+    title: '주로 뛰는 계절은 언제인가요?',
+    description: '계절에 맞는 신발을 추천드려요',
+    options: [
+      { value: 'summer', label: '여름', description: '통기성, 가벼운 무게 중시' },
+      { value: 'winter', label: '겨울', description: '보온성, 접지력 중시' },
+      { value: 'all', label: '사계절', description: '계절 무관하게 사용' },
+    ],
+  },
+  {
     id: 'footArch',
     title: '발 아치(족궁) 유형이 어떤가요?',
     description: '발바닥 아치 높이를 선택해주세요',
@@ -100,6 +120,8 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
     experience: '',
     weeklyDistance: '',
     purpose: '',
+    targetPace: '',
+    season: '',
     footArch: '',
     footWidth: '',
     injuries: [],
@@ -135,6 +157,8 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         experience: answers.experience as UserProfile['experience'],
         weeklyDistance: answers.weeklyDistance as UserProfile['weeklyDistance'],
         purpose: answers.purpose as UserProfile['purpose'],
+        targetPace: answers.targetPace as UserProfile['targetPace'],
+        season: answers.season as UserProfile['season'],
         footArch: answers.footArch as UserProfile['footArch'],
         footWidth: answers.footWidth as UserProfile['footWidth'],
         injuries: (answers.injuries as string[]) || [],
@@ -193,22 +217,22 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               key={option.value}
               onClick={() => handleSelect(option.value)}
               className={cn(
-                "w-full text-left rounded-2xl border-2 p-5 transition-all",
+                "w-full text-left rounded-2xl border-2 p-4 sm:p-5 transition-all min-h-[72px]",
                 isSelected
                   ? "border-[#4facfe] bg-[#4facfe]/10"
                   : "border-slate-200 bg-white hover:border-[#4facfe]/50 hover:bg-[#4facfe]/5"
               )}
             >
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-bold text-slate-900">{option.label}</p>
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex-1">
+                  <p className="font-bold text-slate-900 text-base sm:text-lg">{option.label}</p>
                   {option.description && (
                     <p className="text-sm text-slate-500 mt-1">{option.description}</p>
                   )}
                 </div>
                 <div
                   className={cn(
-                    "w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all",
+                    "w-7 h-7 sm:w-6 sm:h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0",
                     isSelected
                       ? "border-[#4facfe] bg-[#4facfe]"
                       : "border-slate-300"
@@ -231,24 +255,24 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
       </div>
 
       {/* 네비게이션 */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between gap-4">
         <Button
           variant="outline"
           onClick={handleBack}
           disabled={currentStep === 0}
-          className="rounded-full"
+          className="rounded-full min-h-[48px] px-6"
         >
-          <ChevronLeft className="h-4 w-4 mr-2" />
+          <ChevronLeft className="h-5 w-5 mr-2" />
           이전
         </Button>
 
         <Button
           onClick={handleNext}
           disabled={!canProceed}
-          className="rounded-full bg-[#4facfe] hover:bg-[#4facfe]/90"
+          className="rounded-full bg-[#4facfe] hover:bg-[#4facfe]/90 min-h-[48px] px-6"
         >
           {currentStep === questions.length - 1 ? '결과 보기' : '다음'}
-          <ChevronRight className="h-4 w-4 ml-2" />
+          <ChevronRight className="h-5 w-5 ml-2" />
         </Button>
       </div>
     </div>

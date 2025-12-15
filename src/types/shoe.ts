@@ -30,6 +30,7 @@ export interface KoreanFootFit {
   flatFootCompatibility: CompatibilityLevel;
   wideOptions: boolean;
   winterCompatibility: CompatibilityLevel;
+  summerCompatibility?: CompatibilityLevel;
 }
 
 export interface PriceAnalysis {

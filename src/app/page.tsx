@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from "react";
+import { useMemo, useState, useCallback } from "react";
 import { BrandView } from "@/components/brand-view";
 import { HierarchyView } from "@/components/hierarchy-view";
 import { ViewToggle, type ViewMode } from "@/components/view-toggle";
@@ -20,6 +20,7 @@ export default function HomePage() {
     setSearchQuery,
     toggleCategory,
     toggleBrand,
+    setPriceRange,
     toggleToBoxWidth,
     toggleFlatFootCompatibility,
     setCarbonPlate,
@@ -36,6 +37,11 @@ export default function HomePage() {
   }, [filteredShoes]);
 
   const brands = useMemo(() => getBrandsFromShoes(filteredShoes), [filteredShoes]);
+
+  // 태그 클릭 시 검색어로 설정
+  const handleTagClick = useCallback((tag: string) => {
+    setSearchQuery(tag);
+  }, [setSearchQuery]);
 
   return (
     <div className="space-y-8 pb-16">
@@ -59,6 +65,7 @@ export default function HomePage() {
         onSearchChange={setSearchQuery}
         onToggleCategory={toggleCategory}
         onToggleBrand={toggleBrand}
+        onSetPriceRange={setPriceRange}
         onToggleToBoxWidth={toggleToBoxWidth}
         onToggleFlatFoot={toggleFlatFootCompatibility}
         onToggleCarbonPlate={setCarbonPlate}
@@ -66,17 +73,29 @@ export default function HomePage() {
         onReset={resetFilters}
       />
 
-      {/* 필터 결과 표시 */}
-      {activeFilterCount > 0 && (
-        <p className="text-center text-sm text-slate-600">
-          <span className="font-semibold text-[#4facfe]">{filteredShoes.length}</span>개 신발이 검색되었습니다
+      {/* 필터 결과 */}
+      <div className="flex items-center justify-center">
+        <p className="text-sm text-slate-600">
+          {activeFilterCount > 0 ? (
+            <>
+              <span className="font-semibold text-[#4facfe]">{filteredShoes.length}</span>개 신발이 검색되었습니다
+            </>
+          ) : (
+            <>
+              총 <span className="font-semibold text-[#4facfe]">{filteredShoes.length}</span>개 신발
+            </>
+          )}
         </p>
-      )}
+      </div>
 
       <ViewToggle view={view} onChange={setView} categories={categories} brands={brands} />
 
       {filteredShoes.length > 0 ? (
-        view === "hierarchy" ? <HierarchyView shoes={filteredShoes} /> : <BrandView shoes={filteredShoes} />
+        view === "hierarchy" ? (
+          <HierarchyView shoes={filteredShoes} onTagClick={handleTagClick} />
+        ) : (
+          <BrandView shoes={filteredShoes} onTagClick={handleTagClick} />
+        )
       ) : (
         <div className="text-center py-16">
           <p className="text-xl text-slate-500">검색 결과가 없습니다</p>

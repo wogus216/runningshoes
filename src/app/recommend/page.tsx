@@ -7,6 +7,7 @@ import { getShoes } from '@/lib/data/shoes';
 import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
+import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
 import { Button } from '@/components/ui/button';
 
 export default function RecommendPage() {
@@ -34,6 +35,8 @@ export default function RecommendPage() {
     experience: { beginner: '입문', intermediate: '중급', advanced: '상급' },
     weeklyDistance: { low: '20km 미만', medium: '20-40km', high: '40km 이상' },
     purpose: { training: '훈련', racing: '레이스', recovery: '회복', all: '다목적' },
+    targetPace: { slow: '6분대 이상', medium: '5-6분대', fast: '5분 미만' },
+    season: { summer: '여름', winter: '겨울', all: '사계절' },
     footArch: { flat: '평발', normal: '정상', high: '높은 아치' },
     footWidth: { narrow: '좁음', standard: '표준', wide: '넓음' },
     budget: { low: '15만원 이하', mid: '15-25만원', high: '25만원 이상' },
@@ -44,14 +47,14 @@ export default function RecommendPage() {
       {/* 헤더 */}
       <div className="flex items-center justify-between">
         <Link href="/">
-          <Button variant="ghost" className="rounded-full">
-            <ArrowLeft className="h-4 w-4 mr-2" />
+          <Button variant="ghost" className="rounded-full min-h-[44px] px-4">
+            <ArrowLeft className="h-5 w-5 mr-2" />
             돌아가기
           </Button>
         </Link>
         {profile && (
-          <Button variant="outline" onClick={handleReset} className="rounded-full">
-            <RotateCcw className="h-4 w-4 mr-2" />
+          <Button variant="outline" onClick={handleReset} className="rounded-full min-h-[44px] px-4">
+            <RotateCcw className="h-5 w-5 mr-2" />
             다시 하기
           </Button>
         )}
@@ -103,6 +106,12 @@ export default function RecommendPage() {
               <ProfileBadge label="경험" value={profileLabels.experience[profile.experience]} />
               <ProfileBadge label="주간 거리" value={profileLabels.weeklyDistance[profile.weeklyDistance]} />
               <ProfileBadge label="목적" value={profileLabels.purpose[profile.purpose]} />
+              {profile.targetPace && (
+                <ProfileBadge label="페이스" value={profileLabels.targetPace[profile.targetPace]} />
+              )}
+              {profile.season && (
+                <ProfileBadge label="계절" value={profileLabels.season[profile.season]} />
+              )}
               <ProfileBadge label="발 아치" value={profileLabels.footArch[profile.footArch]} />
               <ProfileBadge label="발볼" value={profileLabels.footWidth[profile.footWidth]} />
               <ProfileBadge label="예산" value={profileLabels.budget[profile.budget]} />
@@ -111,6 +120,11 @@ export default function RecommendPage() {
               )}
             </div>
           </div>
+
+          {/* 부상별 분석 (부상이 있는 경우에만 표시) */}
+          {profile.injuries.length > 0 && (
+            <InjuryAnalysis injuries={profile.injuries} allShoes={allShoes} />
+          )}
 
           {/* 추천 결과 */}
           {recommendations.length > 0 ? (
