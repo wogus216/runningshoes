@@ -243,7 +243,7 @@ export const adidasShoes: Shoe[] = [
       costPerKm: 343,
       valueRating: 9,
       priceTier: 'mid',
-      alternatives: ['나이키 줌 플라이 6', '사코니 엔도르핀 스피드 4'],
+      alternatives: ['나이키 줌 플라이 6', '써코니 엔돌핀 스피드 4'],
     },
     detailedSpecs: {
       weight: '254g (US 9 기준)',
@@ -480,5 +480,5 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus'],
-  }
+  },
 ];

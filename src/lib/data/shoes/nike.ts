@@ -928,7 +928,7 @@ export const nikeShoes: Shoe[] = [
       costPerKm: 1745,
       valueRating: 6,
       priceTier: 'super-premium',
-      alternatives: ['아디다스 아디오스 프로 4', '아식스 메타스피드 스카이+', '사코니 엔도르핀 엘리트'],
+      alternatives: ['아디다스 아디오스 프로 4', '아식스 메타스피드 스카이+', '써코니 엔돌핀 엘리트'],
     },
     detailedSpecs: {
       weight: '201g (US 9 기준)',
@@ -982,7 +982,8 @@ export const nikeShoes: Shoe[] = [
     category: '레이싱',
     rating: 4,
     price: 199000,
-    description: '베이퍼플라이의 기술을 훈련용으로 옮긴 슈퍼트레이너. ZoomX + SR-02 폼과 카본 Flyplate로 빠른 페이스 훈련과 레이스 모두 가능. 61% 에너지 리턴으로 내구성과 성능 모두 잡은 가성비 우수 모델.',
+    description:
+      '베이퍼플라이의 기술을 훈련용으로 옮긴 슈퍼트레이너. ZoomX + SR-02 폼과 카본 Flyplate로 빠른 페이스 훈련과 레이스 모두 가능. 61% 에너지 리턴으로 내구성과 성능 모두 잡은 가성비 우수 모델.',
     tags: ['레이싱', '템포', '카본플레이트', '훈련용'],
     specs: {
       weight: 248,
@@ -1024,7 +1025,7 @@ export const nikeShoes: Shoe[] = [
       costPerKm: 497,
       valueRating: 9,
       priceTier: 'premium',
-      alternatives: ['아식스 매직스피드 4', '사코니 엔도르핀 스피드 4', '뉴발란스 퓨얼셀 레벨 V5'],
+      alternatives: ['아식스 매직스피드 4', '써코니 엔돌핀 스피드 4', '뉴발란스 퓨얼셀 레벨 V5'],
     },
     detailedSpecs: {
       weight: '248g (US 9 기준)',
@@ -1120,7 +1121,7 @@ export const nikeShoes: Shoe[] = [
       costPerKm: 1196,
       valueRating: 7,
       priceTier: 'super-premium',
-      alternatives: ['아식스 메타스피드 스카이+', '아디다스 아디오스 프로 4', '사코니 엔도르핀 프로 4'],
+      alternatives: ['아식스 메타스피드 스카이+', '아디다스 아디오스 프로 4', '써코니 엔돌핀 프로 4'],
     },
     detailedSpecs: {
       weight: '190g (US 9 기준)',
@@ -1261,5 +1262,5 @@ export const nikeShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-metaspeed-ray'],
-  }
+  },
 ];

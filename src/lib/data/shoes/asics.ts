@@ -410,7 +410,7 @@ export const asicsShoes: Shoe[] = [
       costPerKm: 520,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['나이키 줌 플라이 6', '사코니 엔도르핀 스피드 4', '뉴발란스 SC 트레이너 V3'],
+      alternatives: ['나이키 줌 플라이 6', '써코니 엔돌핀 스피드 4', '뉴발란스 SC 트레이너 V3'],
     },
     detailedSpecs: {
       weight: '252g (US 9 기준)',
@@ -501,7 +501,7 @@ export const asicsShoes: Shoe[] = [
       costPerKm: 628,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['나이키 줌 플라이 6', '사코니 엔도르핀 스피드 4', '뉴발란스 퓨얼셀 SC 페이서 V3'],
+      alternatives: ['나이키 줌 플라이 6', '써코니 엔돌핀 스피드 4', '뉴발란스 퓨얼셀 SC 페이서 V3'],
     },
     detailedSpecs: {
       weight: '237g (US 9 기준)',
@@ -592,7 +592,7 @@ export const asicsShoes: Shoe[] = [
       costPerKm: 1280,
       valueRating: 7,
       priceTier: 'super-premium',
-      alternatives: ['나이키 베이퍼플라이 3', '아디다스 아디오스 프로 4', '사코니 엔도르핀 프로 4'],
+      alternatives: ['나이키 베이퍼플라이 3', '아디다스 아디오스 프로 4', '써코니 엔돌핀 프로 4'],
     },
     detailedSpecs: {
       weight: '205g (US 9 기준)',
@@ -683,7 +683,7 @@ export const asicsShoes: Shoe[] = [
       costPerKm: 1280,
       valueRating: 7,
       priceTier: 'super-premium',
-      alternatives: ['나이키 알파플라이 3', '아디다스 아디오스 프로 4', '사코니 엔도르핀 프로 4'],
+      alternatives: ['나이키 알파플라이 3', '아디다스 아디오스 프로 4', '써코니 엔돌핀 프로 4'],
     },
     detailedSpecs: {
       weight: '208g (US 9 기준)',
@@ -718,5 +718,5 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'saucony-endorphin-pro-4'],
-  }
+  },
 ];
