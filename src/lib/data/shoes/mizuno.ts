@@ -6,6 +6,7 @@ export const mizunoShoes: Shoe[] = [
     slug: 'mizuno-wave-rider-29',
     brand: 'Mizuno',
     name: '웨이브 라이더 29',
+    image: '/images/shoes/mizuno/WAVE_RIDER29.jpg',
     category: '데일리',
     rating: 4,
     price: 169000,
@@ -55,7 +56,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 211,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['asics-gel-nimbus-26', 'nike-pegasus-41', 'saucony-ride-18'],
+      alternatives: ['asics-gel-nimbus-27', 'nike-pegasus-41', 'saucony-ride-18'],
     },
     reviews: [
       {
@@ -81,13 +82,14 @@ export const mizunoShoes: Shoe[] = [
       footType: '정상~넓은발',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['asics-gel-nimbus-26', 'brooks-ghost-16', 'saucony-ride-18'],
+    similarShoes: ['asics-gel-nimbus-27', 'brooks-ghost-17', 'saucony-ride-18'],
   },
   {
     id: 'mizuno-wave-inspire-21',
     slug: 'mizuno-wave-inspire-21',
     brand: 'Mizuno',
     name: '웨이브 인스파이어 21',
+    image: '/images/shoes/mizuno/WAVE_INSPIRE21.jpg',
     category: '안정화',
     rating: 4,
     price: 159000,
@@ -137,7 +139,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 177,
       valueRating: 9,
       priceTier: 'mid',
-      alternatives: ['asics-gel-kayano-31', 'brooks-adrenaline-gts-24', 'nike-structure-26'],
+      alternatives: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
     },
     reviews: [
       {
@@ -163,13 +165,14 @@ export const mizunoShoes: Shoe[] = [
       footType: '평발, 과내전',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['asics-gel-kayano-31', 'brooks-adrenaline-gts-24', 'nike-structure-26'],
+    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
   },
   {
     id: 'mizuno-wave-rebellion-flash-2',
     slug: 'mizuno-wave-rebellion-flash-2',
     brand: 'Mizuno',
     name: '웨이브 리벨리온 플래시 2',
+    image: '/images/shoes/mizuno/WAVE_REBELLION_FLASH2.jpg',
     category: '레이싱',
     rating: 4,
     price: 199000,
@@ -220,7 +223,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 332,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
+      alternatives: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
     },
     reviews: [
       {
@@ -246,13 +249,14 @@ export const mizunoShoes: Shoe[] = [
       footType: '정상발',
       landingPattern: '미드풋~포어풋',
     },
-    similarShoes: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
+    similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
   },
   {
     id: 'mizuno-wave-sky-9',
     slug: 'mizuno-wave-sky-9',
     brand: 'Mizuno',
     name: '웨이브 스카이 9',
+    image: '/images/shoes/mizuno/WAVE_SKY9.jpg',
     category: '쿠션화',
     rating: 4,
     status: 'new',
@@ -303,7 +307,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 269,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['호카 본디 9', '브룩스 글리세린 21', '아식스 젤-님버스 26'],
+      alternatives: ['hoka-bondi-9', 'brooks-glycerin-22', 'asics-gel-nimbus-27'],
     },
     reviews: [
       {
@@ -329,13 +333,14 @@ export const mizunoShoes: Shoe[] = [
       footType: '중립',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['hoka-bondi-9', 'brooks-glycerin-21', 'asics-gel-nimbus-26'],
+    similarShoes: ['hoka-bondi-9', 'brooks-glycerin-22', 'asics-gel-nimbus-27'],
   },
   {
     id: 'mizuno-wave-rebellion-flash-3',
     slug: 'mizuno-wave-rebellion-flash-3',
     brand: 'Mizuno',
     name: '웨이브 리벨리온 플래시 3',
+    image: '/images/shoes/mizuno/WAVE_REBELLION_FLASH3.jpg',
     category: '레이싱',
     rating: 4,
     status: 'new',
@@ -387,7 +392,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 458,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'new-balance-fuelcell-rebel-v4'],
+      alternatives: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'new-balance-rebel-v5'],
     },
     reviews: [
       {
@@ -413,13 +418,14 @@ export const mizunoShoes: Shoe[] = [
       footType: '중립',
       landingPattern: '미드풋~포어풋',
     },
-    similarShoes: ['saucony-endorphin-speed-4', 'adidas-adizero-evo-sl', 'new-balance-fuelcell-rebel-v4'],
+    similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'new-balance-rebel-v5'],
   },
   {
     id: 'mizuno-wave-horizon-8',
     slug: 'mizuno-wave-horizon-8',
     brand: 'Mizuno',
     name: '웨이브 호라이즌 8',
+    image: '/images/shoes/mizuno/WAVE_HORIZON8.jpg',
     category: '안정화',
     rating: 4,
     status: 'new',
@@ -471,7 +477,7 @@ export const mizunoShoes: Shoe[] = [
       costPerKm: 243,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['brooks-beast-gts-24', 'asics-gel-kayano-31', 'new-balance-860-v14'],
+      alternatives: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
     },
     reviews: [
       {
@@ -497,6 +503,6 @@ export const mizunoShoes: Shoe[] = [
       footType: '오버프로네이션 (과내전)',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['brooks-beast-gts-24', 'asics-gel-kayano-31', 'new-balance-860-v14'],
+    similarShoes: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
   }
 ];

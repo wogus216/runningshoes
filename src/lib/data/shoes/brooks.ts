@@ -6,11 +6,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-ghost-17',
     brand: 'Brooks',
     name: '고스트 17',
+    image: '/images/shoes/brooks/ghost17.avif',
     category: '입문화',
     rating: 5,
     status: 'featured',
     price: 169000,
-    image: '/shoes/brooks-ghost-17.png',
     description: '브룩스의 대표 입문화. DNA Loft v3 쿠셔닝으로 부드러운 착지감과 안정적인 주행을 제공합니다.',
     specs: {
       weight: 289,
@@ -55,7 +55,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 211,
       valueRating: 9,
       priceTier: 'mid',
-      alternatives: ['아식스 젤-님버스 26', '나이키 페가수스 41'],
+      alternatives: ['asics-gel-nimbus-27', 'nike-pegasus-41'],
     },
     reviews: [
       {
@@ -82,7 +82,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립~약간 오버프로네이션',
       landingPattern: '힐스트라이크~미드풋',
     },
-    similarShoes: ['asics-gel-nimbus-26', 'nike-pegasus-41', 'saucony-ride-18'],
+    similarShoes: ['asics-gel-nimbus-27', 'nike-pegasus-41', 'saucony-ride-18'],
     tags: ['입문화', '데일리 러닝', '안정성', '쿠셔닝'],
   },
   {
@@ -90,11 +90,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-ghost-max-3',
     brand: 'Brooks',
     name: '고스트 맥스 3',
+    image: '/images/shoes/brooks/ghost_max3.avif',
     category: '쿠션화',
     rating: 5,
     status: 'new',
     price: 179000,
-    image: '/shoes/brooks-ghost-max-3.png',
     description: '고스트 시리즈의 맥시멀 쿠션 버전. 두꺼운 DNA Loft v3로 극대화된 충격 흡수를 제공합니다.',
     specs: {
       weight: 303,
@@ -139,7 +139,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 256,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['호카 본디 9', '아식스 젤-님버스 26'],
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-27'],
     },
     reviews: [
       {
@@ -166,7 +166,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립~평발',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-26', 'new-balance-fresh-foam-more-v5'],
+    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14'],
     tags: ['쿠션화', '맥시멀', '관절 보호', '장거리'],
   },
   {
@@ -174,11 +174,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-glycerin-22',
     brand: 'Brooks',
     name: '글리세린 22',
+    image: '/images/shoes/brooks/glycerin22.avif',
     category: '쿠션화',
     rating: 5,
     status: 'featured',
     price: 209000,
-    image: '/shoes/brooks-glycerin-22.png',
     description: '브룩스 최고급 쿠션화. DNA Tuned 듀얼 밀도 폼으로 체중과 보폭에 맞게 반응합니다.',
     specs: {
       weight: 293,
@@ -223,7 +223,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 261,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['아식스 젤-님버스 26', '나이키 인비저블 4'],
+      alternatives: ['asics-gel-nimbus-27', 'nike-vomero-18'],
     },
     reviews: [
       {
@@ -250,7 +250,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립',
       landingPattern: '힐스트라이크~미드풋',
     },
-    similarShoes: ['asics-gel-nimbus-26', 'nike-invincible-4', 'new-balance-fresh-foam-1080-v14'],
+    similarShoes: ['asics-gel-nimbus-27', 'nike-vomero-18', 'new-balance-1080-v14'],
     tags: ['쿠션화', '프리미엄', '장거리', '데일리'],
   },
   {
@@ -258,11 +258,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-glycerin-max',
     brand: 'Brooks',
     name: '글리세린 맥스',
+    image: '/images/shoes/brooks/glycerin_max2.avif',
     category: '쿠션화',
     rating: 5,
     status: 'new',
     price: 239000,
-    image: '/shoes/brooks-glycerin-max.png',
     description: '글리세린의 맥시멀 쿠션 버전. 42mm 힐 스택으로 극대화된 충격 흡수를 제공합니다.',
     specs: {
       weight: 305,
@@ -307,7 +307,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 341,
       valueRating: 6,
       priceTier: 'premium',
-      alternatives: ['호카 본디 9', '아식스 젤-님버스 26'],
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-27'],
     },
     reviews: [
       {
@@ -334,7 +334,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립~평발',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-26', 'brooks-ghost-max-3'],
+    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'brooks-ghost-max-3'],
     tags: ['쿠션화', '맥시멀', '관절 보호', '프리미엄'],
   },
   {
@@ -342,11 +342,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-glycerin-gts-22',
     brand: 'Brooks',
     name: '글리세린 GTS 22',
+    image: '/images/shoes/brooks/glycerin_gts22.avif',
     category: '안정화',
     rating: 5,
     status: 'featured',
     price: 209000,
-    image: '/shoes/brooks-glycerin-gts-22.png',
     description: '글리세린 22에 GuideRails 안정화 시스템을 더한 모델. 과도한 움직임을 제어합니다.',
     specs: {
       weight: 305,
@@ -391,7 +391,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 261,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['아식스 젤-카야노 31', '나이키 스트럭처 26'],
+      alternatives: ['asics-gel-kayano-32', 'nike-structure-26'],
     },
     reviews: [
       {
@@ -418,7 +418,7 @@ export const brooksShoes: Shoe[] = [
       footType: '오버프로네이션~평발',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['asics-gel-kayano-31', 'nike-structure-26'],
+    similarShoes: ['asics-gel-kayano-32', 'nike-structure-26'],
     tags: ['안정화', 'GuideRails', '오버프로네이션', '평발'],
   },
   {
@@ -426,11 +426,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-hyperion-elite-5',
     brand: 'Brooks',
     name: '하이퍼리온 엘리트 5',
+    image: '/images/shoes/brooks/hyperion_elite5.avif',
     category: '레이싱',
     rating: 5,
     status: 'new',
     price: 299000,
-    image: '/shoes/brooks-hyperion-elite-5.png',
     description: '브룩스 최고급 레이싱화. DNA Gold (PEBA)와 SpeedVault+ 카본 플레이트로 76.9% 에너지 리턴.',
     specs: {
       weight: 204,
@@ -476,7 +476,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 997,
       valueRating: 6,
       priceTier: 'super-premium',
-      alternatives: ['나이키 알파플라이 3', '아식스 메타스피드 스카이 파리'],
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus'],
     },
     reviews: [
       {
@@ -503,7 +503,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립~언더프로네이션',
       landingPattern: '미드풋~포어풋',
     },
-    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
+    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
     tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용'],
   },
   {
@@ -511,11 +511,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-adrenaline-gts-25',
     brand: 'Brooks',
     name: '아드레날린 GTS 25',
+    image: '/images/shoes/brooks/adrenaline_gts25.avif',
     category: '안정화',
     rating: 4,
     status: 'new',
     price: 189000,
-    image: '/shoes/brooks-adrenaline-gts-25.png',
     description: '브룩스의 대표 안정화. GuideRails 기술로 과내전을 자연스럽게 교정하며, DNA Loft v3로 부드러운 쿠셔닝을 제공합니다.',
     specs: {
       weight: 300,
@@ -560,7 +560,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 236,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['아식스 젤-카야노 31', '뉴발란스 860 v14', '호카 아라히 7'],
+      alternatives: ['asics-gel-kayano-32', 'new-balance-860-v14', 'hoka-gaviota-5'],
     },
     reviews: [
       {
@@ -587,7 +587,7 @@ export const brooksShoes: Shoe[] = [
       footType: '오버프로네이션 (과내전)',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['asics-gel-kayano-31', 'new-balance-860-v14', 'hoka-arahi-7'],
+    similarShoes: ['asics-gel-kayano-32', 'new-balance-860-v14', 'hoka-gaviota-5'],
     tags: ['안정화', 'GuideRails', '과내전 교정', '평발'],
   },
   {
@@ -595,11 +595,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-hyperion-max-3',
     brand: 'Brooks',
     name: '하이퍼리온 맥스 3',
+    image: '/images/shoes/brooks/hyperion_max3.avif',
     category: '쿠션화',
     rating: 5,
     status: 'new',
     price: 259000,
-    image: '/shoes/brooks-hyperion-max-3.png',
     description: '브룩스 최초의 진정한 슈퍼트레이너. DNA Gold (PEBA) 폼과 나일론 플레이트로 63.9% 에너지 리턴과 맥시멀 쿠셔닝을 제공합니다.',
     specs: {
       weight: 283,
@@ -647,7 +647,7 @@ export const brooksShoes: Shoe[] = [
       costPerKm: 370,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['아식스 슈퍼블라스트 2', '나이키 줌 플라이 6', '뉴발란스 SC 트레이너 v3'],
+      alternatives: ['asics-superblast-2', 'nike-zoom-fly-6', 'new-balance-sc-trainer-v3'],
     },
     reviews: [
       {
@@ -674,7 +674,7 @@ export const brooksShoes: Shoe[] = [
       footType: '중립',
       landingPattern: '힐스트라이크~미드풋',
     },
-    similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro'],
+    similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro-2'],
     tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
   }
 ];

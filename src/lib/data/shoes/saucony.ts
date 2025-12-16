@@ -6,6 +6,7 @@ export const sauconyShoes: Shoe[] = [
     slug: 'saucony-ride-18',
     brand: 'Saucony',
     name: '라이드 18',
+    image: '/images/shoes/saucony/ride18.jpg',
     category: '입문화',
     rating: 4,
     price: 159000,
@@ -61,7 +62,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 265,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['아식스 젤 님버스 27', '호카 클리프턴 10', '뉴발란스 Fresh Foam 1080v14'],
+      alternatives: ['asics-gel-nimbus-27', 'hoka-clifton-10', 'new-balance-1080-v14'],
     },
 
     detailedSpecs: {
@@ -86,12 +87,15 @@ export const sauconyShoes: Shoe[] = [
         text: '15만원대 최고의 가성비 입문 러닝화입니다. "초보도 신을 수 있나요?" 라이드 시리즈는 입문자를 위해 만들어진 신발입니다. v17 대비 33g 감량(255g)되었고 141 SA 충격흡수로 무릎 보호가 좋습니다. 통기성 5/5 최상위급으로 여름에도 쾌적하고, 와이드 옵션이 있어 발볼 넓은 분도 편합니다. 26.1 HA로 푹신한 느낌보다는 단단하고 안정적인 라이드를 제공해, 첫 러닝화로 안전한 선택입니다. 600km+ 내구성으로 오래 신을 수 있습니다.',
       },
     ],
+
+    similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-27', 'hoka-clifton-10', 'new-balance-880-v15'],
   },
   {
     id: 'saucony-guide-18',
     slug: 'saucony-guide-18',
     brand: 'Saucony',
     name: '가이드 18',
+    image: '/images/shoes/saucony/guide18.jpg',
     category: '안정화',
     rating: 4,
     price: 159000,
@@ -147,7 +151,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 265,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['아식스 GT-2000 13', '브룩스 아드레날린 GTS 24', '뉴발란스 860v14'],
+      alternatives: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'new-balance-860-v14'],
     },
 
     detailedSpecs: {
@@ -172,12 +176,15 @@ export const sauconyShoes: Shoe[] = [
         text: '평발이나 과내전으로 고민하는 입문 러너를 위한 가성비 안정화입니다. 15만원대로 카야노(26만원)의 절반 가격이면서, 121.9mm 넓은 플랫폼으로 착지 안정성이 뛰어납니다. 통기성 5/5 최상위급으로 여름철 러닝에도 쾌적하고, 한국인에게 흔한 평발 특성에 적합합니다. 다만 노출된 폼이 많아 내구성이 약하고, 61.3% 에너지 리턴으로 반발력은 평균 수준입니다. "무릎 괜찮나요?" 질문하는 과내전 입문 러너에게 부담 없이 추천할 수 있습니다.',
       },
     ],
+
+    similarShoes: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'hoka-gaviota-5'],
   },
   {
     id: 'saucony-triumph-23',
     slug: 'saucony-triumph-23',
     brand: 'Saucony',
     name: '트라이엄프 23',
+    image: '/images/shoes/saucony/triumph23.jpg',
     category: '쿠션화',
     rating: 4,
     price: 189000,
@@ -233,7 +240,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 315,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['호카 본디 9', '아식스 젤 님버스 27', '뉴발란스 Fresh Foam 1080v14'],
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14'],
     },
 
     detailedSpecs: {
@@ -258,12 +265,15 @@ export const sauconyShoes: Shoe[] = [
         text: '장거리 러닝에서 무릎과 발목 보호가 필요한 러너에게 최적의 프리미엄 쿠션화입니다. 42.3mm 힐 스택과 149 SA 충격흡수로 "무릎 괜찮나요?" 질문에 자신있게 추천할 수 있습니다. 18만원대로 본디9(26만원)보다 가성비 좋으면서 PEBA 폼의 67.6% 에너지 리턴으로 반발력도 좋습니다. 124mm 넓은 플랫폼으로 안정적이고, 와이드 옵션이 있어 발볼 넓은 한국 러너도 편합니다. 272g으로 맥시멀 쿠션화 중 가벼운 편이라 느린 조깅부터 5분대 페이스까지 활용도가 높습니다.',
       },
     ],
+
+    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14', 'brooks-glycerin-22'],
   },
   {
     id: 'saucony-hurricane-25',
     slug: 'saucony-hurricane-25',
     brand: 'Saucony',
     name: '허리케인 25',
+    image: '/images/shoes/saucony/hurricane25.jpg',
     category: '안정화',
     rating: 4,
     price: 189000,
@@ -319,7 +329,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 315,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['아식스 젤 카야노 32', '브룩스 글리세린 GTS 22', '뉴발란스 Vongo v6'],
+      alternatives: ['asics-gel-kayano-32', 'brooks-glycerin-gts-22', 'new-balance-860-v14'],
     },
 
     detailedSpecs: {
@@ -344,12 +354,15 @@ export const sauconyShoes: Shoe[] = [
         text: '심한 과내전이나 평발로 기존 안정화가 부족했던 러너를 위한 프리미엄 안정화입니다. 124.4mm 초광폭 플랫폼과 PWRRUN Cradle이 강력한 안정성을 제공하면서도, 16.6 HA 소프트 폼으로 착화감이 편안합니다. 151 SA 충격흡수로 관절 보호도 최상위급입니다. 18만원대로 카야노 대비 가성비 좋고, 와이드 옵션도 있어 발볼 넓은 러너에게 좋습니다. 다만 통기성 2/5로 여름에는 더울 수 있고, 286g으로 무거운 편이라 5분/km 이상 느린 페이스에 적합합니다.',
       },
     ],
+
+    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'hoka-gaviota-5', 'new-balance-860-v14'],
   },
   {
     id: 'saucony-kinvara-16',
     slug: 'saucony-kinvara-16',
     brand: 'Saucony',
     name: '킨바라 16',
+    image: '/images/shoes/saucony/kinvara16.jpg',
     category: '데일리',
     rating: 4,
     price: 159000,
@@ -405,7 +418,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 318,
       valueRating: 7,
       priceTier: 'mid',
-      alternatives: ['나이키 페가수스 42', '뉴발란스 FuelCell Rebel v4', '호카 맥 X2'],
+      alternatives: ['nike-pegasus-41', 'new-balance-rebel-v5', 'hoka-mach-6'],
     },
 
     detailedSpecs: {
@@ -431,12 +444,15 @@ export const sauconyShoes: Shoe[] = [
         text: '지면 감각과 경량을 중시하는 중급 이상 러너에게 적합한 미니멀 러닝화입니다. 194g 초경량과 4.4mm 로우드롭으로 자연스러운 주법을 추구하는 러너에게 좋습니다. 15만원대 가성비와 통기성 5/5로 여름 러닝에 최적이지만, 쿠셔닝(117 SA)이 맥시멀 쿠션화의 절반 수준이라 무릎이 약하거나 입문자에게는 비추천입니다. 토박스 내구성이 약해(1/5) 발가락 벽면이 빨리 닳을 수 있으니 500km 내구성을 감안하세요. "초보도 신을 수 있나요?" 기초 근력이 있는 러너에게만 추천합니다.',
       },
     ],
+
+    similarShoes: ['hoka-mach-6', 'nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
   },
   {
     id: 'saucony-endorphin-pro-4',
     slug: 'saucony-endorphin-pro-4',
     brand: 'Saucony',
     name: '엔돌핀 프로 4',
+    image: '/images/shoes/saucony/endorphin_Pro4.jpg',
     category: '레이싱',
     rating: 5,
     price: 269000,
@@ -492,7 +508,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 897,
       valueRating: 6,
       priceTier: 'premium',
-      alternatives: ['나이키 알파플라이 3', '아식스 메타스피드 스카이+', '아디다스 아디오스 프로 3'],
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
     },
 
     detailedSpecs: {
@@ -518,12 +534,15 @@ export const sauconyShoes: Shoe[] = [
         text: '서브4~서브3:30 목표 러너를 위한 가성비 슈퍼슈즈입니다. 26만원대로 베이퍼플라이(31만원)보다 저렴하면서, 71.7% 에너지 리턴과 139 SA 충격흡수로 하프~풀마라톤에 최적화되어 있습니다. 특히 118.9mm 넓은 전족부 플랫폼으로 슈퍼슈즈 중 안정성이 높아, 슈퍼슈즈 처음 신는 러너에게 추천합니다. 220g으로 v3보다 무거워졌지만 내구성이 좋아져 훈련 겸용도 가능합니다. 토박스가 좁아 발볼 넓은 러너는 착화감 확인이 필요합니다.',
       },
     ],
+
+    similarShoes: ['nike-vaporfly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'puma-deviate-nitro-elite-3'],
   },
   {
     id: 'saucony-endorphin-elite-2',
     slug: 'saucony-endorphin-elite-2',
     brand: 'Saucony',
     name: '엔돌핀 엘리트 2',
+    image: '/images/shoes/saucony/endorphin_elite2.jpg',
     category: '레이싱',
     rating: 5,
     price: 339000,
@@ -579,7 +598,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 1695,
       valueRating: 5,
       priceTier: 'super-premium',
-      alternatives: ['나이키 알파플라이 3', '아식스 메타스피드 엣지+', '아디다스 아디제로 프로 에보 1'],
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'adidas-adios-pro-4'],
     },
 
     detailedSpecs: {
@@ -605,12 +624,15 @@ export const sauconyShoes: Shoe[] = [
         text: '서브3 이하 엘리트 러너를 위한 최상위 레이싱화입니다. 역대 최고 에너지 리턴(80.6%)과 197g 초경량으로 기록 단축에 최적화되어 있습니다. 33만원 프리미엄 가격이지만, IncrediRUN 폼의 극강 반발력은 알파플라이와 비교해도 손색없습니다. 다만 6.5 HA 극소프트 미드솔로 안정성이 낮아 완벽한 러닝 폼이 필요하고, 토박스가 좁아 발볼 넓은 한국 러너에게는 맞지 않을 수 있습니다. "초보도 신을 수 있나요?" 아닙니다. 월 200km 이상 훈련하는 시리어스 러너 전용입니다.',
       },
     ],
+
+    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
   },
   {
     id: 'saucony-endorphin-speed-5',
     slug: 'saucony-endorphin-speed-5',
     brand: 'Saucony',
     name: '엔돌핀 스피드 5',
+    image: '/images/shoes/saucony/endorphin_speed5.jpg',
     category: '데일리',
     rating: 5,
     price: 209000,
@@ -666,7 +688,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 418,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['나이키 페가수스 플러스', '아식스 노바블라스트 5', '뉴발란스 SC Trainer v3'],
+      alternatives: ['nike-pegasus-plus', 'asics-novablast-5', 'new-balance-sc-trainer-v3'],
     },
 
     detailedSpecs: {
@@ -692,12 +714,15 @@ export const sauconyShoes: Shoe[] = [
         text: '가성비 최강의 템포/레이싱 겸용 러닝화입니다. 20만원대에 슈퍼슈즈급 에너지 리턴(73.2%)을 제공하며, 러닝 커뮤니티에서 "가성비 갓신발"로 불립니다. 나일론 플레이트로 카본보다 유연해 데일리 훈련에도 부담없고, 템포런/하프마라톤에서도 충분한 성능입니다. v4보다 소프트해져(18.5 HA) 착화감이 좋아졌고, 통기성 5/5로 여름에도 쾌적합니다. 서브4~서브3:30 목표 러너가 슈퍼슈즈 전에 먼저 경험해볼 추천 모델입니다. 토박스가 넓어져 발볼 걱정도 줄었습니다.',
       },
     ],
+
+    similarShoes: ['asics-superblast-2', 'hoka-mach-x-3', 'puma-deviate-nitro-3', 'nike-vomero-18'],
   },
   {
     id: 'saucony-endorphin-trainer',
     slug: 'saucony-endorphin-trainer',
     brand: 'Saucony',
     name: '엔돌핀 트레이너',
+    image: '/images/shoes/saucony/endorphin_Trainer.jpg',
     category: '쿠션화',
     rating: 4,
     price: 219000,
@@ -753,7 +778,7 @@ export const sauconyShoes: Shoe[] = [
       costPerKm: 365,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['나이키 줌플라이 6', '아식스 슈퍼블라스트 2', '뉴발란스 SC 트레이너 v3'],
+      alternatives: ['nike-zoom-fly-6', 'asics-superblast-2', 'new-balance-sc-trainer-v3'],
     },
 
     detailedSpecs: {
@@ -779,5 +804,7 @@ export const sauconyShoes: Shoe[] = [
         text: '엔돌핀 엘리트의 IncrediRUN 폼을 훈련에서 경험하고 싶은 시리어스 러너를 위한 슈퍼트레이너입니다. 21만원대로 엘리트급 에너지 리턴(76.3% forefoot)을 데일리 훈련에서 누릴 수 있습니다. 121.7mm 초광폭 플랫폼으로 안정성이 뛰어나고, 600km+ 내구성으로 가격 대비 오래 신을 수 있습니다. 다만 285g으로 무겁고, 토박스가 좁아(70.1mm) 발볼 넓은 한국 러너는 착화감이 불편할 수 있습니다. 템포런보다는 장거리 훈련에 더 적합합니다.',
       },
     ],
+
+    similarShoes: ['asics-superblast-2', 'new-balance-sc-trainer-v3', 'hoka-mach-x-3', 'nike-vomero-18'],
   },
 ];

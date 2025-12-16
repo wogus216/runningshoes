@@ -6,6 +6,7 @@ export const hokaShoes: Shoe[] = [
     slug: 'hoka-clifton-10',
     brand: 'Hoka',
     name: '클리프톤 10',
+    image: '/images/shoes/hoka/clifton10.webp',
     category: '입문화',
     rating: 5,
     price: 189000,
@@ -61,7 +62,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 320,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['나이키 페가수스 41', '아식스 쿠무루스 27', '뉴발란스 880 V14'],
+      alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-880-v15'],
     },
 
     reviews: [
@@ -97,12 +98,15 @@ export const hokaShoes: Shoe[] = [
       footType: '표준~넓은 발볼 / 평발 OK / 와이드 옵션 있음',
       landingPattern: '힐스트라이크 (로커 기술로 자연스러운 전환)',
     },
+
+    similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-27', 'new-balance-880-v15', 'brooks-ghost-max-3'],
   },
   {
     id: 'hoka-bondi-9',
     slug: 'hoka-bondi-9',
     brand: 'Hoka',
     name: '본디 9',
+    image: '/images/shoes/hoka/bondi9.webp',
     category: '쿠션화',
     rating: 5,
     price: 229000,
@@ -158,7 +162,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 350,
       valueRating: 7,
       priceTier: 'high',
-      alternatives: ['아식스 젤 님버스 27', '뉴발란스 프레시폼 1080 V14', '브룩스 글리세린 22'],
+      alternatives: ['asics-gel-nimbus-27', 'new-balance-1080-v14', 'brooks-glycerin-22'],
     },
 
     reviews: [
@@ -194,12 +198,15 @@ export const hokaShoes: Shoe[] = [
       footType: '표준~넓은 발볼 / 평발 OK / 관절 보호 필요한 러너',
       landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
     },
+
+    similarShoes: ['asics-gel-nimbus-27', 'new-balance-1080-v14', 'brooks-glycerin-22', 'puma-magnify-nitro-3'],
   },
   {
     id: 'hoka-mach-6',
     slug: 'hoka-mach-6',
     brand: 'Hoka',
     name: '마하 6',
+    image: '/images/shoes/hoka/mach6.webp',
     category: '데일리',
     rating: 4,
     price: 199000,
@@ -255,7 +262,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 380,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['나이키 페가수스 41', '아식스 노바블라스트 5', '뉴발란스 프레시폼 X 1080 V14'],
+      alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-1080-v14'],
     },
 
     reviews: [
@@ -291,12 +298,15 @@ export const hokaShoes: Shoe[] = [
       footType: '표준 발볼 / 와이드 옵션 있음',
       landingPattern: '힐스트라이크~미드풋',
     },
+
+    similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'puma-velocity-nitro-4', 'saucony-kinvara-16'],
   },
   {
     id: 'hoka-gaviota-5',
     slug: 'hoka-gaviota-5',
     brand: 'Hoka',
     name: '가비오타 5',
+    image: '/images/shoes/hoka/gaviota6.webp',
     category: '안정화',
     rating: 4,
     price: 219000,
@@ -352,7 +362,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 370,
       valueRating: 7,
       priceTier: 'high',
-      alternatives: ['아식스 젤 카야노 31', '브룩스 고스트 GTS 17', '뉴발란스 860 V15'],
+      alternatives: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14'],
     },
 
     reviews: [
@@ -383,12 +393,15 @@ export const hokaShoes: Shoe[] = [
       footType: '평발 / 과내전 러너 / 와이드 옵션 있음',
       landingPattern: '힐스트라이크~미드풋 (J-Frame 안정화)',
     },
+
+    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'saucony-hurricane-25'],
   },
   {
     id: 'hoka-mach-x-3',
     slug: 'hoka-mach-x-3',
     brand: 'Hoka',
     name: '마하 X 3',
+    image: '/images/shoes/hoka/mach_X3.webp',
     category: '쿠션화',
     rating: 5,
     price: 279000,
@@ -444,7 +457,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 480,
       valueRating: 8,
       priceTier: 'high',
-      alternatives: ['나이키 보메로 18', '아식스 슈퍼블라스트 3', '뉴발란스 SC 트레이너 V3'],
+      alternatives: ['nike-vomero-18', 'asics-superblast-2', 'new-balance-sc-trainer-v3'],
     },
 
     reviews: [
@@ -480,12 +493,15 @@ export const hokaShoes: Shoe[] = [
       footType: '표준 발볼 / 중상급 러너',
       landingPattern: '미드풋~전방 착지',
     },
+
+    similarShoes: ['asics-superblast-2', 'nike-vomero-18', 'new-balance-sc-trainer-v3', 'puma-deviate-nitro-3'],
   },
   {
     id: 'hoka-rocket-x-3',
     slug: 'hoka-rocket-x-3',
     brand: 'Hoka',
     name: '로켓 X 3',
+    image: '/images/shoes/hoka/rocket_X3.webp',
     category: '레이싱',
     rating: 5,
     price: 319000,
@@ -541,7 +557,7 @@ export const hokaShoes: Shoe[] = [
       costPerKm: 930,
       valueRating: 7,
       priceTier: 'premium',
-      alternatives: ['나이키 알파플라이 3', '아식스 메타스피드 스카이+ 파리', '뉴발란스 SC 엘리트 V4'],
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5'],
     },
 
     reviews: [
@@ -577,5 +593,7 @@ export const hokaShoes: Shoe[] = [
       footType: '발볼 좁은~표준 / 엘리트 러너',
       landingPattern: '전방 착지 (레이싱)',
     },
-  }
+
+    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-pro-4'],
+  },
 ];

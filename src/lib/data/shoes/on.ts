@@ -6,6 +6,7 @@ export const onShoes: Shoe[] = [
     slug: 'on-cloudsurfer-2',
     brand: 'On',
     name: '클라우드서퍼 2',
+    image: '/images/shoes/on/cloudsurfer2.avif',
     category: '입문화',
     rating: 4,
     price: 199000,
@@ -95,6 +96,7 @@ export const onShoes: Shoe[] = [
     slug: 'on-cloudrunner-2',
     brand: 'On',
     name: '클라우드러너 2',
+    image: '/images/shoes/on/cloudrunner2.avif',
     category: '입문화',
     rating: 4,
     price: 189000,
@@ -136,7 +138,7 @@ export const onShoes: Shoe[] = [
       costPerKm: 378,
       valueRating: 7,
       priceTier: 'mid',
-      alternatives: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'hoka-arahi-7'],
+      alternatives: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'hoka-gaviota-5'],
       valueAdvantages: ['프리미엄 빌드 품질', '뛰어난 통기성', '일상용 착용 가능', '추위에 강한 Helion 폼'],
     },
 
@@ -177,13 +179,14 @@ export const onShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋 (안정화)',
     },
 
-    similarShoes: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'nike-structure-26'],
+    similarShoes: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
   },
   {
     id: 'on-cloudmonster-2',
     slug: 'on-cloudmonster-2',
     brand: 'On',
     name: '클라우드몬스터 2',
+    image: '/images/shoes/on/cloudmonster2.avif',
     category: '쿠션화',
     rating: 4.5,
     price: 219000,
@@ -224,7 +227,7 @@ export const onShoes: Shoe[] = [
       costPerKm: 458,
       valueRating: 6,
       priceTier: 'premium',
-      alternatives: ['hoka-bondi-9', 'asics-nimbus-27', 'newbalance-more-v5'],
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14'],
       valueAdvantages: ['맥시멀 쿠션감', '충격 흡수 우수', '장거리 러닝 적합', '토박스 내구성 5/5'],
     },
     targetUsers: {
@@ -263,13 +266,14 @@ export const onShoes: Shoe[] = [
       landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
     },
 
-    similarShoes: ['hoka-bondi-9', 'asics-nimbus-27', 'newbalance-more-v5'],
+    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14'],
   },
   {
     id: 'on-cloudmonster-hyper',
     slug: 'on-cloudmonster-hyper',
     brand: 'On',
     name: '클라우드몬스터 하이퍼',
+    image: '/images/shoes/on/cloudmonster_Hyper.avif',
     category: '쿠션화',
     rating: 4.5,
     price: 259000,
@@ -310,7 +314,7 @@ export const onShoes: Shoe[] = [
       costPerKm: 575,
       valueRating: 5,
       priceTier: 'premium',
-      alternatives: ['saucony-endorphin-speed-4', 'nike-pegasus-plus', 'asics-superblast-2'],
+      alternatives: ['saucony-endorphin-speed-5', 'nike-pegasus-plus', 'asics-superblast-2'],
       valueAdvantages: ['프리미엄 Helion HF 폼', '258g 경량화', '아웃솔 내구성 우수', 'Pebax 기반 폼'],
     },
     targetUsers: {
@@ -349,13 +353,14 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋~전방 착지',
     },
 
-    similarShoes: ['saucony-endorphin-speed-4', 'nike-pegasus-plus', 'hoka-mach-7'],
+    similarShoes: ['saucony-endorphin-speed-5', 'nike-pegasus-plus', 'hoka-mach-6'],
   },
   {
     id: 'on-cloudflow-5',
     slug: 'on-cloudflow-5',
     brand: 'On',
     name: '클라우드플로우 5',
+    image: '/images/shoes/on/cloudflow5.avif',
     category: '데일리',
     rating: 4,
     price: 219000,
@@ -408,7 +413,7 @@ export const onShoes: Shoe[] = [
       costPerKm: 487,
       valueRating: 6,
       priceTier: 'premium',
-      alternatives: ['saucony-kinvara-15', 'adidas-boston-12', 'nike-pegasus-41'],
+      alternatives: ['saucony-kinvara-16', 'adidas-boston-13', 'nike-pegasus-41'],
       valueAdvantages: ['경량화 (245g)', '높은 통기성', 'Speedboard 안정성', '겨울 성능 유지'],
     },
     reviews: [
@@ -435,13 +440,14 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋~전방 착지 (템포런)',
     },
 
-    similarShoes: ['saucony-kinvara-15', 'adidas-boston-12', 'nike-pegasus-41'],
+    similarShoes: ['saucony-kinvara-16', 'adidas-boston-13', 'nike-pegasus-41'],
   },
   {
     id: 'on-cloudboom-strike',
     slug: 'on-cloudboom-strike',
     brand: 'On',
     name: '클라우드붐 스트라이크',
+    image: '/images/shoes/on/cloudboomStrike.avif',
     category: '레이싱',
     rating: 5,
     price: 329000,
@@ -482,7 +488,7 @@ export const onShoes: Shoe[] = [
       costPerKm: 1097,
       valueRating: 7,
       priceTier: 'super-premium',
-      alternatives: ['nike-alphafly-3', 'adidas-adizero-adios-pro-4', 'asics-metaspeed-sky-paris'],
+      alternatives: ['nike-alphafly-3', 'adidas-adios-pro-4', 'asics-metaspeed-sky-plus'],
       valueAdvantages: ['72.1% 에너지 리턴 (최상위급)', '201g 경량', '뛰어난 그립력 (0.62)', '겨울 성능 우수 (6% 변화)'],
     },
     targetUsers: {
@@ -522,6 +528,6 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋~전방 착지 (로우드롭)',
     },
 
-    similarShoes: ['nike-alphafly-3', 'adidas-adizero-adios-pro-4', 'asics-metaspeed-sky-paris'],
+    similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'asics-metaspeed-sky-plus'],
   }
 ];

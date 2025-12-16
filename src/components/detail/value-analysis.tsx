@@ -12,11 +12,16 @@ type ValueAnalysisProps = {
   specs?: ShoeSpecs;
 };
 
-// alternatives 문자열을 slug로 변환하는 함수
-function findShoeByAlternativeName(altName: string) {
+// alternatives slug로 신발 찾기
+function findShoeBySlug(slugOrName: string) {
   const shoes = getShoes();
-  const normalizedAlt = altName.toLowerCase().replace(/\s+/g, '');
 
+  // 먼저 slug로 직접 찾기
+  const bySlug = shoes.find(shoe => shoe.slug === slugOrName);
+  if (bySlug) return bySlug;
+
+  // slug가 아닌 경우 (레거시 데이터) 이름으로 찾기
+  const normalizedAlt = slugOrName.toLowerCase().replace(/\s+/g, '');
   return shoes.find(shoe => {
     const shoeName = `${shoe.brand} ${shoe.name}`.toLowerCase().replace(/\s+/g, '');
     const shoeNameOnly = shoe.name.toLowerCase().replace(/\s+/g, '');
@@ -151,16 +156,16 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
             <strong className="text-gray-900 block mb-3">비슷한 가격대:</strong>
             <ul className="space-y-2 text-gray-600">
               {priceAnalysis.alternatives.map((alt) => {
-                const matchedShoe = findShoeByAlternativeName(alt);
+                const matchedShoe = findShoeBySlug(alt);
                 return (
                   <li key={alt} className="flex items-start gap-2">
                     <span className="text-[#4facfe] mt-1">•</span>
-                    {matchedShoe?.slug ? (
+                    {matchedShoe ? (
                       <Link
                         href={`/shoes/${matchedShoe.slug}`}
                         className="text-[#4facfe] hover:underline flex items-center gap-1"
                       >
-                        {alt}
+                        {matchedShoe.brand} {matchedShoe.name}
                         <ArrowRight className="h-3 w-3" />
                       </Link>
                     ) : (
@@ -182,7 +187,10 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
             현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
           </strong>
           <p className="text-gray-700 mt-2">
-            비슷한 가격대의 {priceAnalysis.alternatives.slice(0, 3).join(", ")} 등과 비교하여 선택하세요.
+            비슷한 가격대의 {priceAnalysis.alternatives.slice(0, 3).map(alt => {
+              const shoe = findShoeBySlug(alt);
+              return shoe ? `${shoe.brand} ${shoe.name}` : alt;
+            }).join(", ")} 등과 비교하여 선택하세요.
           </p>
         </div>
       )}

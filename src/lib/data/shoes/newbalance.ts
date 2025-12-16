@@ -6,6 +6,7 @@ export const newbalanceShoes: Shoe[] = [
     slug: 'new-balance-880-v15',
     brand: 'New Balance',
     name: '880 V15',
+    image: '/images/shoes/newbalance/880V15.jpg',
     category: '입문화',
     rating: 4,
     price: 169000,
@@ -101,6 +102,7 @@ export const newbalanceShoes: Shoe[] = [
     slug: 'new-balance-1080-v14',
     brand: 'New Balance',
     name: '1080 V14',
+    image: '/images/shoes/newbalance/1080v14.jpg',
     category: '쿠션화',
     rating: 5,
     price: 219000,
@@ -196,6 +198,7 @@ export const newbalanceShoes: Shoe[] = [
     slug: 'new-balance-rebel-v5',
     brand: 'New Balance',
     name: '레벨 V5',
+    image: '/images/shoes/newbalance/revelV5.jpg',
     category: '데일리',
     rating: 4,
     price: 179000,
@@ -260,7 +263,7 @@ export const newbalanceShoes: Shoe[] = [
       costPerKm: 360,
       valueRating: 9,
       priceTier: 'mid',
-      alternatives: ['saucony-kinvara-15', 'hoka-mach-6', 'asics-noosa-tri-16'],
+      alternatives: ['saucony-kinvara-16', 'hoka-mach-6', 'asics-novablast-5'],
       valueAdvantages: ['v4 대비 모든 단점 개선', '같은 가격 유지', '경량 + 소프트 폼의 조화'],
     },
 
@@ -285,13 +288,14 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['hoka-mach-6', 'saucony-kinvara-15', 'asics-noosa-tri-16'],
+    similarShoes: ['hoka-mach-6', 'saucony-kinvara-16', 'asics-novablast-5'],
   },
   {
     id: 'new-balance-860-v14',
     slug: 'new-balance-860-v14',
     brand: 'New Balance',
     name: '860 V14',
+    image: '/images/shoes/newbalance/860V14.jpg',
     category: '안정화',
     rating: 4,
     price: 179000,
@@ -356,7 +360,7 @@ export const newbalanceShoes: Shoe[] = [
       costPerKm: 300,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'saucony-guide-17'],
+      alternatives: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
       valueAdvantages: ['듀얼 레이어 미드솔 기술', '4가지 발볼 옵션', '과내전 러너를 위한 합리적 가격'],
     },
 
@@ -381,13 +385,14 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['asics-gt-2000-13', 'brooks-adrenaline-gts-24', 'saucony-guide-17'],
+    similarShoes: ['asics-gt-2000-14', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
   },
   {
     id: 'new-balance-sc-trainer-v3',
     slug: 'new-balance-sc-trainer-v3',
     brand: 'New Balance',
     name: 'SC Trainer V3',
+    image: '/images/shoes/newbalance/trainerV3.jpg',
     category: '쿠션화',
     rating: 5,
     price: 249000,
@@ -452,7 +457,7 @@ export const newbalanceShoes: Shoe[] = [
       costPerKm: 500,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['saucony-endorphin-speed-4', 'asics-magic-speed-4', 'hoka-mach-x-2'],
+      alternatives: ['saucony-endorphin-speed-5', 'asics-magic-speed-4', 'hoka-mach-x-3'],
       valueAdvantages: ['카본 플레이트 슈퍼트레이너 중 합리적 가격', '뛰어난 안정성', '마라톤 훈련 최적화'],
     },
 
@@ -477,13 +482,14 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['saucony-endorphin-speed-4', 'asics-magic-speed-4', 'hoka-mach-x-2'],
+    similarShoes: ['saucony-endorphin-speed-5', 'asics-magic-speed-4', 'hoka-mach-x-3'],
   },
   {
     id: 'new-balance-sc-elite-v5',
     slug: 'new-balance-sc-elite-v5',
     brand: 'New Balance',
     name: 'SC Elite V5',
+    image: '/images/shoes/newbalance/elite5.jpg',
     category: '레이싱',
     rating: 5,
     price: 299000,
@@ -548,7 +554,7 @@ export const newbalanceShoes: Shoe[] = [
       costPerKm: 997,
       valueRating: 7,
       priceTier: 'super-premium',
-      alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
+      alternatives: ['nike-vaporfly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
       valueAdvantages: ['v4 대비 30g 이상 경량화', '개선된 플레이트 곡률', '뛰어난 그립력', '경쟁작 대비 넓은 토박스'],
     },
 
@@ -574,6 +580,6 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-paris', 'adidas-adizero-adios-pro-4'],
+    similarShoes: ['nike-vaporfly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
   }
 ];

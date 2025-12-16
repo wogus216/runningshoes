@@ -6,6 +6,7 @@ export const pumaShoes: Shoe[] = [
     slug: 'puma-velocity-nitro-4',
     brand: 'Puma',
     name: '벨로시티 나이트로 4',
+    image: '/images/shoes/puma/velocity_Nitro4 .avif',
     category: '입문화',
     rating: 5,
     price: 179000,
@@ -61,7 +62,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 280,
       valueRating: 10,
       priceTier: 'mid',
-      alternatives: ['나이키 페가수스 41', '아식스 노바블라스트 5', '뉴발란스 레벨 V5'],
+      alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
     },
 
     reviews: [
@@ -97,12 +98,15 @@ export const pumaShoes: Shoe[] = [
       footType: '발볼 좁은 러너 / 와이드 옵션 있음',
       landingPattern: '힐스트라이크~미드풋',
     },
+
+    similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'hoka-mach-6', 'saucony-ride-18'],
   },
   {
     id: 'puma-magmax-nitro-2',
     slug: 'puma-magmax-nitro-2',
     brand: 'Puma',
     name: '매그맥스 나이트로 2',
+    image: '/images/shoes/puma/magMax_NITRO2.avif',
     category: '쿠션화',
     rating: 4,
     price: 239000,
@@ -158,7 +162,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 400,
       valueRating: 8,
       priceTier: 'mid',
-      alternatives: ['나이키 보메로 18', '아식스 슈퍼블라스트 3', '호카 마하 X 3'],
+      alternatives: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3'],
     },
 
     reviews: [
@@ -189,12 +193,15 @@ export const pumaShoes: Shoe[] = [
       footType: '표준 발볼 / 평발 OK',
       landingPattern: '미드풋~전방 착지',
     },
+
+    similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
   },
   {
     id: 'puma-magnify-nitro-3',
     slug: 'puma-magnify-nitro-3',
     brand: 'Puma',
     name: '매그니파이 나이트로 3',
+    image: '/images/shoes/puma/magnifyNITRO3.avif',
     category: '쿠션화',
     rating: 4,
     price: 199000,
@@ -250,7 +257,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 340,
       valueRating: 7,
       priceTier: 'mid',
-      alternatives: ['호카 본디 9', '아식스 젤 님버스 27', '뉴발란스 1080 V14'],
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14'],
     },
 
     reviews: [
@@ -281,12 +288,15 @@ export const pumaShoes: Shoe[] = [
       footType: '표준 발볼 / 평발 OK / 관절 보호 필요한 러너',
       landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
     },
+
+    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-27', 'new-balance-1080-v14', 'saucony-triumph-23'],
   },
   {
     id: 'puma-deviate-nitro-3',
     slug: 'puma-deviate-nitro-3',
     brand: 'Puma',
     name: '디비에이트 나이트로 3',
+    image: '/images/shoes/puma/deviate_NITRO3.avif',
     category: '쿠션화',
     rating: 4,
     price: 219000,
@@ -342,7 +352,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 410,
       valueRating: 7,
       priceTier: 'high',
-      alternatives: ['나이키 보메로 18', '아식스 슈퍼블라스트 3', '호카 마하 X 3'],
+      alternatives: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3'],
     },
 
     reviews: [
@@ -373,12 +383,15 @@ export const pumaShoes: Shoe[] = [
       footType: '발볼 좁은~표준 / 중상급 러너',
       landingPattern: '미드풋~전방 착지',
     },
+
+    similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
   },
   {
     id: 'puma-deviate-nitro-elite-3',
     slug: 'puma-deviate-nitro-elite-3',
     brand: 'Puma',
     name: '디비에이트 나이트로 엘리트 3',
+    image: '/images/shoes/puma/deviate_NITROElite3.avif',
     category: '레이싱',
     rating: 5,
     price: 289000,
@@ -434,7 +447,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 830,
       valueRating: 8,
       priceTier: 'premium',
-      alternatives: ['나이키 베이퍼플라이 3', '아식스 메타스피드 스카이+ 파리', '호카 로켓 X 3'],
+      alternatives: ['nike-vaporfly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3'],
     },
 
     reviews: [
@@ -465,12 +478,15 @@ export const pumaShoes: Shoe[] = [
       footType: '발볼 좁은 러너 / 반사이즈 업 권장',
       landingPattern: '전방 착지 (레이싱)',
     },
+
+    similarShoes: ['nike-vaporfly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-4'],
   },
   {
     id: 'puma-fast-r-nitro-elite-3',
     slug: 'puma-fast-r-nitro-elite-3',
     brand: 'Puma',
     name: '패스트알 나이트로 엘리트 3',
+    image: '/images/shoes/puma/fAST-R_NITROElite3.avif',
     category: '레이싱',
     rating: 4,
     price: 379000,
@@ -526,7 +542,7 @@ export const pumaShoes: Shoe[] = [
       costPerKm: 1040,
       valueRating: 6,
       priceTier: 'premium',
-      alternatives: ['나이키 알파플라이 3', '아식스 메타스피드 에지+ 파리', '뉴발란스 SC 엘리트 V4'],
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5'],
     },
 
     reviews: [
@@ -557,5 +573,7 @@ export const pumaShoes: Shoe[] = [
       footType: '발볼 좁은 러너 / 반사이즈 업 필수',
       landingPattern: '전방 착지 (풀 마라톤 레이싱)',
     },
+
+    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-elite-2'],
   }
 ];
