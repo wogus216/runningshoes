@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ShoppingBag } from 'lucide-react';
 import type { Shoe } from "@/types/shoe";
 import { Badge } from "@/components/ui/badge";
@@ -25,8 +26,19 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center animate-fade-in-up bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
       {/* Shoe Image */}
       <div className="text-center">
-        <div className="w-48 h-48 lg:w-64 lg:h-64 mx-auto bg-gradient-to-br from-[#4facfe10] to-[#4facfe30] rounded-full flex items-center justify-center drop-shadow-2xl animate-float">
-          <ShoppingBag className="w-24 h-24 lg:w-32 lg:h-32 text-[#4facfe]" />
+        <div className="w-48 h-48 lg:w-64 lg:h-64 mx-auto bg-gradient-to-br from-[#4facfe10] to-[#4facfe30] rounded-full flex items-center justify-center drop-shadow-2xl animate-float overflow-hidden">
+          {shoe.image ? (
+            <Image
+              src={shoe.image}
+              alt={`${shoe.brand} ${shoe.name}`}
+              width={256}
+              height={256}
+              className="w-full h-full object-contain p-4"
+              priority
+            />
+          ) : (
+            <ShoppingBag className="w-24 h-24 lg:w-32 lg:h-32 text-[#4facfe]" />
+          )}
         </div>
       </div>
 

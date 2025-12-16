@@ -2,6 +2,7 @@
 
 import { memo } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Star, TrendingUp, Snowflake, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Card } from "@/components/ui/card";
@@ -99,7 +100,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
                     e.stopPropagation();
                     onTagClick?.(tag);
                   }}
-                  className="rounded-full bg-[#4facfe]/10 px-2 py-1 text-xs text-[#4facfe] hover:bg-[#4facfe]/20 transition-colors normal-case tracking-normal"
+                  className="rounded-full bg-[#4facfe]/15 px-2 py-1 text-xs text-slate-700 hover:bg-[#4facfe]/25 transition-colors normal-case tracking-normal font-medium"
                 >
                   #{tag}
                 </button>
@@ -109,9 +110,20 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
 
           <div
             aria-hidden="true"
-            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/30 bg-white/40 text-2xl shadow-inner transition-transform duration-500 ease-out group-hover/card:-translate-y-1 group-hover/card:rotate-3 group-hover/card:scale-110"
+            className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-white/30 bg-white/40 text-2xl shadow-inner transition-transform duration-500 ease-out group-hover/card:-translate-y-1 group-hover/card:rotate-3 group-hover/card:scale-110 overflow-hidden"
           >
-            🏃
+            {shoe.image ? (
+              <Image
+                src={shoe.image}
+                alt={shoe.name}
+                width={48}
+                height={48}
+                className="w-full h-full object-contain"
+                loading="lazy"
+              />
+            ) : (
+              <span>🏃</span>
+            )}
           </div>
         </div>
 

@@ -1,12 +1,12 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { QuickSpecs } from '@/components/detail/quick-specs';
 import { TargetRecommendation } from '@/components/detail/target-recommendation';
 import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis';
 import { InjuryPrevention } from '@/components/detail/injury-prevention';
 import { KoreanFootFit } from '@/components/detail/korean-foot-fit';
-import { SpecRadarChart } from '@/components/detail/spec-radar-chart';
 import { KeyFeatures } from '@/components/detail/key-features';
 import { ReviewsSection } from '@/components/detail/reviews-section';
 import { DetailedSpecs } from '@/components/detail/detailed-specs';
@@ -16,6 +16,16 @@ import { FinalRating } from '@/components/detail/final-rating';
 import { ReferencesSection } from '@/components/detail/references-section';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
+
+// Recharts가 무거워서 dynamic import로 분리 (스펙 탭 클릭 시에만 로드)
+const SpecRadarChart = dynamic(() => import('@/components/detail/spec-radar-chart').then(mod => ({ default: mod.SpecRadarChart })), {
+  loading: () => (
+    <div className="h-[300px] flex items-center justify-center text-slate-400">
+      차트 로딩 중...
+    </div>
+  ),
+  ssr: false,
+});
 
 type ShoeDetailTabsProps = {
   shoe: Shoe;
