@@ -42,7 +42,7 @@ export const CategorySection = memo(function CategorySection({
         </div>
       </div>
 
-      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
         {shoes.map((shoe, shoeIndex) => (
           <ShoeCard key={`${category}-${shoe.name}`} shoe={shoe} index={indexOffset + shoeIndex} onTagClick={onTagClick} />
         ))}

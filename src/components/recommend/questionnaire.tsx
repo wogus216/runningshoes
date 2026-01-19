@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronRight, ChevronLeft } from 'lucide-react';
+import { ChevronRight, ChevronLeft, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { Button } from '@/components/ui/button';
 import type { UserProfile } from '@/lib/recommendation';
 
 type QuestionnaireProps = {
@@ -146,7 +145,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
   };
 
   const canProceed = isMultiple
-    ? true // 부상은 없어도 됨
+    ? true
     : currentAnswer && currentAnswer.length > 0;
 
   const handleNext = () => {
@@ -179,34 +178,45 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* 진행바 */}
-      <div className="mb-8">
-        <div className="flex items-center justify-between mb-2">
-          <span className="text-sm font-medium text-slate-600">
+      {/* 진행 상황 표시 */}
+      <div className="section-card p-6 mb-6">
+        <div className="flex items-center justify-between mb-3">
+          <span className="text-sm font-medium text-primary">
             {currentStep + 1} / {questions.length}
           </span>
-          <span className="text-sm text-slate-500">
+          <span className="text-sm text-tertiary">
             {Math.round(progress)}% 완료
           </span>
         </div>
-        <div className="h-2 bg-slate-200 rounded-full overflow-hidden">
-          <div
-            className="h-full bg-gradient-to-r from-[#4facfe] to-[#00f2fe] transition-all duration-500"
-            style={{ width: `${progress}%` }}
-          />
+
+        {/* 단계 표시 */}
+        <div className="flex gap-1.5">
+          {questions.map((_, idx) => (
+            <div
+              key={idx}
+              className={cn(
+                "h-1.5 flex-1 rounded-full transition-colors",
+                idx < currentStep
+                  ? "bg-accent"
+                  : idx === currentStep
+                  ? "bg-accent"
+                  : "bg-border"
+              )}
+            />
+          ))}
         </div>
       </div>
 
-      {/* 질문 */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-slate-900 mb-2">
+      {/* 질문 카드 */}
+      <div className="section-card p-6 mb-6">
+        <h2 className="text-xl font-bold text-primary mb-2">
           {currentQuestion.title}
         </h2>
-        <p className="text-slate-600">{currentQuestion.description}</p>
+        <p className="text-secondary text-sm">{currentQuestion.description}</p>
       </div>
 
       {/* 옵션 */}
-      <div className="space-y-3 mb-8">
+      <div className="space-y-3 mb-6">
         {currentQuestion.options.map(option => {
           const isSelected = isMultiple
             ? (currentAnswer as string[])?.includes(option.value)
@@ -217,35 +227,29 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               key={option.value}
               onClick={() => handleSelect(option.value)}
               className={cn(
-                "w-full text-left rounded-2xl border-2 p-4 sm:p-5 transition-all min-h-[72px]",
+                "w-full text-left rounded-xl border p-4 transition-all",
                 isSelected
-                  ? "border-[#4facfe] bg-[#4facfe]/10"
-                  : "border-slate-200 bg-white hover:border-[#4facfe]/50 hover:bg-[#4facfe]/5"
+                  ? "border-accent bg-accent/5"
+                  : "border-border bg-white hover:border-accent/50"
               )}
             >
               <div className="flex items-center justify-between gap-4">
                 <div className="flex-1">
-                  <p className="font-bold text-slate-900 text-base sm:text-lg">{option.label}</p>
+                  <p className="font-semibold text-primary">{option.label}</p>
                   {option.description && (
-                    <p className="text-sm text-slate-500 mt-1">{option.description}</p>
+                    <p className="text-sm text-secondary mt-0.5">{option.description}</p>
                   )}
                 </div>
                 <div
                   className={cn(
-                    "w-7 h-7 sm:w-6 sm:h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0",
+                    "w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0",
                     isSelected
-                      ? "border-[#4facfe] bg-[#4facfe]"
-                      : "border-slate-300"
+                      ? "border-accent bg-accent"
+                      : "border-border"
                   )}
                 >
                   {isSelected && (
-                    <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
-                      <path
-                        fillRule="evenodd"
-                        d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
+                    <Check className="w-4 h-4 text-white" />
                   )}
                 </div>
               </div>
@@ -254,26 +258,62 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         })}
       </div>
 
+      {/* 이전 선택 요약 */}
+      {currentStep > 0 && (
+        <div className="section-card p-4 mb-6">
+          <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">이전 선택</p>
+          <div className="flex flex-wrap gap-2">
+            {questions.slice(0, currentStep).map((q, idx) => {
+              const answer = answers[q.id];
+              if (!answer || (Array.isArray(answer) && answer.length === 0)) return null;
+
+              const label = Array.isArray(answer)
+                ? answer.map(a => q.options.find(o => o.value === a)?.label).join(', ')
+                : q.options.find(o => o.value === answer)?.label;
+
+              return (
+                <span
+                  key={idx}
+                  className="inline-flex items-center gap-1 px-3 py-1 bg-surface rounded-full text-xs text-primary"
+                >
+                  <Check className="w-3 h-3 text-positive" />
+                  {label}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
       {/* 네비게이션 */}
       <div className="flex items-center justify-between gap-4">
-        <Button
-          variant="outline"
+        <button
           onClick={handleBack}
           disabled={currentStep === 0}
-          className="rounded-full min-h-[48px] px-6"
+          className={cn(
+            "flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition",
+            currentStep === 0
+              ? "text-tertiary cursor-not-allowed"
+              : "text-primary border border-border hover:bg-surface"
+          )}
         >
-          <ChevronLeft className="h-5 w-5 mr-2" />
+          <ChevronLeft className="h-4 w-4" />
           이전
-        </Button>
+        </button>
 
-        <Button
+        <button
           onClick={handleNext}
           disabled={!canProceed}
-          className="rounded-full bg-[#4facfe] hover:bg-[#4facfe]/90 min-h-[48px] px-6"
+          className={cn(
+            "flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition",
+            canProceed
+              ? "bg-accent text-white hover:opacity-90"
+              : "bg-border text-tertiary cursor-not-allowed"
+          )}
         >
           {currentStep === questions.length - 1 ? '결과 보기' : '다음'}
-          <ChevronRight className="h-5 w-5 ml-2" />
-        </Button>
+          <ChevronRight className="h-4 w-4" />
+        </button>
       </div>
     </div>
   );

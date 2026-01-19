@@ -7,9 +7,9 @@ type CompareRadarChartProps = {
   shoes: Shoe[];
 };
 
-const CHART_SIZE = 300;
+const CHART_SIZE = 400;
 const CENTER = CHART_SIZE / 2;
-const RADIUS = 120;
+const RADIUS = 150;
 const LEVELS = 5;
 
 const metrics = [
@@ -85,7 +85,7 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
 
   // 라벨 위치
   const labels = metrics.map((metric, idx) => {
-    const pos = polarToCartesian(idx * angleStep, RADIUS + 25);
+    const pos = polarToCartesian(idx * angleStep, RADIUS + 30);
     return { ...metric, x: pos.x, y: pos.y };
   });
 

@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>러닝의 모든것 - 메인</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: '#666666',
+            tertiary: '#999999',
+            accent: '#0066FF',
+            positive: '#00C853',
+            warning: '#FF9500',
+            negative: '#FF3B30',
+            surface: '#F5F5F7',
+            border: '#E5E5E5',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+    .card-hover { transition: all 0.2s ease; }
+    .card-hover:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    }
+
+    .tag-scroll::-webkit-scrollbar { display: none; }
+    .tag-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="bg-white text-primary">
+
+  <!-- 헤더 -->
+  <header class="bg-white/80 backdrop-blur-lg border-b border-border sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <a href="prototype-main.html" class="text-lg font-bold">러닝의 모든것</a>
+
+        <nav class="hidden md:flex items-center gap-6">
+          <a href="#" class="text-sm text-primary font-medium">전체</a>
+          <a href="#" class="text-sm text-secondary hover:text-primary transition">입문화</a>
+          <a href="#" class="text-sm text-secondary hover:text-primary transition">데일리</a>
+          <a href="#" class="text-sm text-secondary hover:text-primary transition">쿠션화</a>
+          <a href="#" class="text-sm text-secondary hover:text-primary transition">레이싱</a>
+          <a href="#" class="text-sm text-secondary hover:text-primary transition">안정화</a>
+        </nav>
+
+        <div class="flex items-center gap-2">
+          <button class="p-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </button>
+          <a href="#" class="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 bg-surface rounded-full hover:bg-border transition">
+            비교
+            <span class="bg-primary text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">2</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- 히어로 -->
+  <section class="py-16 md:py-24">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <p class="text-sm text-secondary mb-3">94개 모델 · 10개 브랜드 · 전문 데이터 분석</p>
+      <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 tracking-tight leading-[1.1]">
+        나에게 맞는 러닝화,<br>
+        <span class="text-accent">데이터로 찾다</span>
+      </h1>
+      <p class="text-secondary max-w-lg mx-auto mb-8">
+        RunRepeat Lab 데이터와 한국 러너 리뷰를 기반으로<br class="hidden sm:block">
+        당신에게 딱 맞는 러닝화를 추천해드려요
+      </p>
+
+      <!-- 질문형 태그 -->
+      <div class="flex flex-wrap justify-center gap-2 mb-8">
+        <button class="px-4 py-2 bg-surface rounded-full text-sm font-medium hover:bg-border transition">
+          🏃 첫 마라톤 준비 중
+        </button>
+        <button class="px-4 py-2 bg-surface rounded-full text-sm font-medium hover:bg-border transition">
+          🦵 무릎이 아파요
+        </button>
+        <button class="px-4 py-2 bg-surface rounded-full text-sm font-medium hover:bg-border transition">
+          👟 발볼이 넓어요
+        </button>
+        <button class="px-4 py-2 bg-surface rounded-full text-sm font-medium hover:bg-border transition">
+          💰 가성비 좋은 신발
+        </button>
+      </div>
+
+      <a href="#" class="inline-flex items-center gap-2 bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-primary/90 transition">
+        맞춤 추천 받기
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- 카테고리 필터 -->
+  <section class="border-t border-border">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center gap-2 py-4 overflow-x-auto tag-scroll">
+        <button class="px-4 py-2 bg-primary text-white rounded-full text-sm font-medium whitespace-nowrap">전체 94</button>
+        <button class="px-4 py-2 bg-surface text-secondary rounded-full text-sm font-medium whitespace-nowrap hover:bg-border transition">입문화 12</button>
+        <button class="px-4 py-2 bg-surface text-secondary rounded-full text-sm font-medium whitespace-nowrap hover:bg-border transition">데일리 28</button>
+        <button class="px-4 py-2 bg-surface text-secondary rounded-full text-sm font-medium whitespace-nowrap hover:bg-border transition">쿠션화 18</button>
+        <button class="px-4 py-2 bg-surface text-secondary rounded-full text-sm font-medium whitespace-nowrap hover:bg-border transition">레이싱 24</button>
+        <button class="px-4 py-2 bg-surface text-secondary rounded-full text-sm font-medium whitespace-nowrap hover:bg-border transition">안정화 12</button>
+        <span class="w-px h-6 bg-border mx-2"></span>
+        <button class="px-4 py-2 border border-border rounded-full text-sm font-medium whitespace-nowrap hover:border-primary transition flex items-center gap-1">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z"/>
+          </svg>
+          필터
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 신발 그리드 -->
+  <section class="py-8">
+    <div class="max-w-6xl mx-auto px-4">
+
+      <!-- 섹션 헤더 -->
+      <div class="flex items-end justify-between mb-6">
+        <div>
+          <h2 class="text-xl font-bold">평발 러너를 위한 추천</h2>
+          <p class="text-sm text-secondary mt-1">안정성과 지지력을 갖춘 모델</p>
+        </div>
+        <a href="#" class="text-sm text-accent font-medium hover:underline">전체보기</a>
+      </div>
+
+      <!-- 카드 그리드 -->
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+
+        <!-- 카드 1 -->
+        <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+          <div class="aspect-square bg-surface flex items-center justify-center relative">
+            <img src="https://via.placeholder.com/300x300/f5f5f7/999999?text=AI+Image" alt="" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">안정화</span>
+          </div>
+          <div class="p-3 md:p-4">
+            <p class="text-xs text-tertiary mb-0.5">Asics</p>
+            <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">젤 카야노 32</h3>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-sm font-bold">₩230,000</span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                평발
+              </span>
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                무릎보호
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 카드 2 -->
+        <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+          <div class="aspect-square bg-surface flex items-center justify-center relative">
+            <img src="https://via.placeholder.com/300x300/e8f4ff/0066ff?text=AI+Image" alt="" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">안정화</span>
+          </div>
+          <div class="p-3 md:p-4">
+            <p class="text-xs text-tertiary mb-0.5">Brooks</p>
+            <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">아드레날린 GTS 24</h3>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-sm font-bold">₩190,000</span>
+              <span class="text-xs text-positive bg-positive/10 px-1.5 py-0.5 rounded">가성비</span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                평발
+              </span>
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                발볼넓음
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 카드 3 -->
+        <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+          <div class="aspect-square bg-surface flex items-center justify-center relative">
+            <img src="https://via.placeholder.com/300x300/e8fff0/00c853?text=AI+Image" alt="" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">안정화</span>
+          </div>
+          <div class="p-3 md:p-4">
+            <p class="text-xs text-tertiary mb-0.5">New Balance</p>
+            <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">860 v14</h3>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-sm font-bold">₩179,000</span>
+              <span class="text-xs text-positive bg-positive/10 px-1.5 py-0.5 rounded">가성비</span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                초보추천
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- 카드 4 -->
+        <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+          <div class="aspect-square bg-surface flex items-center justify-center relative">
+            <img src="https://via.placeholder.com/300x300/fff8e8/ff9500?text=AI+Image" alt="" class="w-full h-full object-cover">
+            <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">안정화</span>
+          </div>
+          <div class="p-3 md:p-4">
+            <p class="text-xs text-tertiary mb-0.5">Saucony</p>
+            <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">가이드 18</h3>
+            <div class="flex items-center gap-2 mb-2">
+              <span class="text-sm font-bold">₩175,000</span>
+            </div>
+            <div class="flex flex-wrap gap-1">
+              <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                가벼움
+              </span>
+              <span class="inline-flex items-center gap-0.5 text-xs text-warning">
+                <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/></svg>
+                좁음
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <!-- 두번째 섹션 -->
+      <div class="mt-12">
+        <div class="flex items-end justify-between mb-6">
+          <div>
+            <h2 class="text-xl font-bold">입문자를 위한 추천</h2>
+            <p class="text-sm text-secondary mt-1">처음 러닝을 시작하는 분들을 위한 신발</p>
+          </div>
+          <a href="#" class="text-sm text-accent font-medium hover:underline">전체보기</a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
+
+          <!-- 카드 -->
+          <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+            <div class="aspect-square bg-surface flex items-center justify-center relative">
+              <img src="https://via.placeholder.com/300x300/f5f5f7/999999?text=AI+Image" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">입문화</span>
+            </div>
+            <div class="p-3 md:p-4">
+              <p class="text-xs text-tertiary mb-0.5">Nike</p>
+              <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">페가수스 41</h3>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-sm font-bold">₩159,000</span>
+                <span class="text-xs text-positive bg-positive/10 px-1.5 py-0.5 rounded">베스트</span>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  초보추천
+                </span>
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  올라운더
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+            <div class="aspect-square bg-surface flex items-center justify-center relative">
+              <img src="https://via.placeholder.com/300x300/e8f4ff/0066ff?text=AI+Image" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">입문화</span>
+            </div>
+            <div class="p-3 md:p-4">
+              <p class="text-xs text-tertiary mb-0.5">Asics</p>
+              <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">젤 컨텐드 9</h3>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-sm font-bold">₩99,000</span>
+                <span class="text-xs text-positive bg-positive/10 px-1.5 py-0.5 rounded">가성비</span>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  10만원 이하
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+            <div class="aspect-square bg-surface flex items-center justify-center relative">
+              <img src="https://via.placeholder.com/300x300/e8fff0/00c853?text=AI+Image" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">입문화</span>
+            </div>
+            <div class="p-3 md:p-4">
+              <p class="text-xs text-tertiary mb-0.5">Hoka</p>
+              <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">클리프톤 10</h3>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-sm font-bold">₩195,000</span>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  쿠션최고
+                </span>
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  가벼움
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <a href="prototype-detail.html" class="bg-white border border-border rounded-2xl overflow-hidden card-hover block">
+            <div class="aspect-square bg-surface flex items-center justify-center relative">
+              <img src="https://via.placeholder.com/300x300/fff8e8/ff9500?text=AI+Image" alt="" class="w-full h-full object-cover">
+              <span class="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium">입문화</span>
+            </div>
+            <div class="p-3 md:p-4">
+              <p class="text-xs text-tertiary mb-0.5">New Balance</p>
+              <h3 class="font-semibold text-sm md:text-base mb-1.5 truncate">프레시폼 X 1080 v14</h3>
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-sm font-bold">₩230,000</span>
+              </div>
+              <div class="flex flex-wrap gap-1">
+                <span class="inline-flex items-center gap-0.5 text-xs text-positive">
+                  <svg class="w-3 h-3" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+                  프리미엄
+                </span>
+              </div>
+            </div>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 브랜드 섹션 -->
+  <section class="py-12 bg-surface">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-xl font-bold mb-6 text-center">브랜드</h2>
+      <div class="grid grid-cols-5 md:grid-cols-10 gap-4">
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">N</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">A</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">NB</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">H</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">B</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">S</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">On</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">M</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">P</a>
+        <a href="#" class="aspect-square bg-white rounded-xl flex items-center justify-center text-2xl hover:shadow-md transition">+</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 비교 플로팅 바 -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-border py-3 px-4 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-3 overflow-x-auto">
+        <span class="text-sm font-medium whitespace-nowrap">비교 (2/3)</span>
+        <div class="flex items-center gap-2">
+          <span class="px-3 py-1 bg-surface rounded-full text-sm whitespace-nowrap">카야노 32 ×</span>
+          <span class="px-3 py-1 bg-surface rounded-full text-sm whitespace-nowrap">님버스 28 ×</span>
+          <button class="px-3 py-1 border border-dashed border-border rounded-full text-sm text-tertiary hover:border-primary transition whitespace-nowrap">
+            + 추가
+          </button>
+        </div>
+      </div>
+      <button class="bg-primary text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-primary/90 transition whitespace-nowrap ml-4">
+        비교하기
+      </button>
+    </div>
+  </div>
+
+  <div class="h-20"></div>
+
+  <!-- 푸터 -->
+  <footer class="bg-surface border-t border-border py-10">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+        <div>
+          <h3 class="font-bold mb-2">러닝의 모든것</h3>
+          <p class="text-sm text-secondary">한국 러너를 위한 전문 러닝화 리뷰</p>
+        </div>
+        <div class="flex gap-12">
+          <div>
+            <h4 class="font-medium text-sm mb-3">카테고리</h4>
+            <ul class="space-y-2 text-sm text-secondary">
+              <li><a href="#" class="hover:text-primary">입문화</a></li>
+              <li><a href="#" class="hover:text-primary">데일리</a></li>
+              <li><a href="#" class="hover:text-primary">레이싱</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-medium text-sm mb-3">정보</h4>
+            <ul class="space-y-2 text-sm text-secondary">
+              <li><a href="#" class="hover:text-primary">데이터 출처</a></li>
+              <li><a href="#" class="hover:text-primary">리뷰 기준</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="border-t border-border mt-8 pt-6 text-center text-xs text-tertiary">
+        © 2025 러닝의 모든것
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

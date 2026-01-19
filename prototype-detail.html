@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>젤 카야노 32 - 러닝의 모든것</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: '#666666',
+            tertiary: '#999999',
+            accent: '#0066FF',
+            positive: '#00C853',
+            warning: '#FF9500',
+            negative: '#FF3B30',
+            surface: '#F5F5F7',
+            border: '#E5E5E5',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+    .tab-btn { position: relative; color: #999; }
+    .tab-btn.active { color: #111; }
+    .tab-btn.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #111;
+    }
+
+    .section-card {
+      background: white;
+      border: 1px solid #E5E5E5;
+      border-radius: 16px;
+    }
+
+    .spec-bar {
+      height: 6px;
+      background: #E5E5E5;
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .spec-bar-fill {
+      height: 100%;
+      border-radius: 3px;
+    }
+
+    /* 이미지 슬라이더 */
+    .slider-container {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+    .slider-track {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slider-slide {
+      min-width: 100%;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #F5F5F7;
+    }
+    .slider-dots {
+      position: absolute;
+      bottom: 16px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+    }
+    .slider-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.2);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .slider-dot.active {
+      background: #0066FF;
+      width: 24px;
+      border-radius: 4px;
+    }
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40px;
+      height: 40px;
+      background: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.3s;
+      z-index: 10;
+    }
+    .slider-container:hover .slider-arrow {
+      opacity: 1;
+    }
+    .slider-arrow:hover {
+      background: #F5F5F7;
+    }
+    .slider-arrow.prev { left: 12px; }
+    .slider-arrow.next { right: 12px; }
+  </style>
+</head>
+<body class="bg-surface text-primary">
+
+  <!-- 헤더 -->
+  <header class="bg-white/80 backdrop-blur-lg border-b border-border sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <div class="flex items-center gap-4">
+          <a href="prototype-main.html" class="p-2 -ml-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </a>
+          <a href="prototype-main.html" class="text-lg font-bold">러닝의 모든것</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button class="p-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+            </svg>
+          </button>
+          <button class="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 bg-surface rounded-full hover:bg-border transition">
+            + 비교함
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-5xl mx-auto px-4 py-6">
+
+    <!-- 히어로 섹션 -->
+    <section class="section-card p-6 md:p-8 mb-4">
+      <div class="grid md:grid-cols-2 gap-6 md:gap-10">
+        <!-- 이미지 슬라이더 -->
+        <div class="slider-container" id="heroSlider">
+          <div class="slider-track" id="sliderTrack">
+            <div class="slider-slide">
+              <img src="https://via.placeholder.com/400x400/f5f5f7/666666?text=Image+1" alt="젤 카야노 32 - 측면" class="w-full h-full object-contain p-8">
+            </div>
+            <div class="slider-slide">
+              <img src="https://via.placeholder.com/400x400/f5f5f7/666666?text=Image+2" alt="젤 카야노 32 - 상단" class="w-full h-full object-contain p-8">
+            </div>
+            <div class="slider-slide">
+              <img src="https://via.placeholder.com/400x400/f5f5f7/666666?text=Image+3" alt="젤 카야노 32 - 밑창" class="w-full h-full object-contain p-8">
+            </div>
+          </div>
+
+          <!-- 좌우 화살표 -->
+          <button class="slider-arrow prev" onclick="prevSlide()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </button>
+          <button class="slider-arrow next" onclick="nextSlide()">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+            </svg>
+          </button>
+
+          <!-- 인디케이터 닷 -->
+          <div class="slider-dots" id="sliderDots">
+            <div class="slider-dot active" onclick="goToSlide(0)"></div>
+            <div class="slider-dot" onclick="goToSlide(1)"></div>
+            <div class="slider-dot" onclick="goToSlide(2)"></div>
+          </div>
+        </div>
+
+        <!-- 정보 -->
+        <div class="flex flex-col justify-center">
+          <!-- 브랜드 & 카테고리 -->
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-sm text-secondary">Asics</span>
+            <span class="text-secondary">·</span>
+            <span class="text-sm px-2 py-0.5 bg-surface rounded">안정화</span>
+          </div>
+
+          <!-- 이름 -->
+          <h1 class="text-3xl md:text-4xl font-bold mb-4">젤 카야노 32</h1>
+
+          <!-- 태그 -->
+          <div class="flex flex-wrap gap-2 mb-5">
+            <span class="px-3 py-1 bg-surface rounded-full text-sm">과내전</span>
+            <span class="px-3 py-1 bg-surface rounded-full text-sm">서포트</span>
+            <span class="px-3 py-1 bg-surface rounded-full text-sm">장거리</span>
+          </div>
+
+          <!-- 설명 (description) -->
+          <p class="text-secondary text-sm leading-relaxed mb-6">
+            아식스의 전설적인 안정화. 4D Guidance System과 FF Blast+ ECO 폼으로 과내전 교정과 편안함을 동시에 제공. 30년 역사의 신뢰성.
+          </p>
+
+          <!-- 가격 (priceAnalysis) -->
+          <div class="flex items-baseline gap-3 mb-2">
+            <span class="text-3xl font-bold">₩230,000</span>
+            <span class="text-sm text-tertiary line-through">₩250,000</span>
+          </div>
+          <p class="text-sm text-secondary">
+            예상 수명 600-700km · 약 ₩329/km
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 한줄 요약 -->
+    <section class="bg-primary text-white rounded-2xl p-5 mb-4">
+      <div class="flex items-start gap-3">
+        <span class="text-xl">💡</span>
+        <div>
+          <p class="text-xs text-white/60 mb-1">한줄 요약</p>
+          <p class="font-medium">"평발인데 무겁지 않은 안정화 찾는다면 이거"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 핵심 3박스 (targetUsers + features) -->
+    <section class="grid md:grid-cols-3 gap-3 mb-4">
+      <!-- 추천 대상 -->
+      <div class="section-card p-5">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-6 h-6 bg-positive rounded-md flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          </span>
+          <h3 class="font-semibold text-sm">추천 대상</h3>
+        </div>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li>• 평발/과내전 러너</li>
+          <li>• 체중이 있는 러너</li>
+          <li>• 장거리 러닝</li>
+          <li>• 무릎/발목 부상 이력</li>
+        </ul>
+      </div>
+
+      <!-- 비추천 대상 -->
+      <div class="section-card p-5">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-6 h-6 bg-negative rounded-md flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+          </span>
+          <h3 class="font-semibold text-sm">비추천 대상</h3>
+        </div>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li>• 스피드 훈련 위주</li>
+          <li>• 가벼운 신발 선호</li>
+          <li>• 중립 발 + 반발력 중시</li>
+        </ul>
+      </div>
+
+      <!-- 핵심 특징 -->
+      <div class="section-card p-5">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="w-6 h-6 bg-accent rounded-md flex items-center justify-center">
+            <svg class="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          </span>
+          <h3 class="font-semibold text-sm">핵심 특징</h3>
+        </div>
+        <ul class="space-y-2 text-sm text-secondary">
+          <li>• 4D Guidance System</li>
+          <li>• FF Blast+ ECO 폼</li>
+          <li>• 30년 역사의 신뢰성</li>
+          <li>• 와이드 옵션 제공</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 탭 네비게이션 -->
+    <div class="section-card mb-4 sticky top-14 z-40">
+      <div class="flex overflow-x-auto border-b border-border">
+        <button class="tab-btn active px-5 py-3 text-sm font-medium whitespace-nowrap">스펙</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap">생체역학</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap">부상 예방</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap">한국인 발</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap">가격</button>
+        <button class="tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap">리뷰</button>
+      </div>
+    </div>
+
+    <!-- 스펙 섹션 (specs + detailedSpecs) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">빠른 스펙</h2>
+
+      <!-- 스펙 바 -->
+      <div class="space-y-4 mb-6">
+        <div>
+          <div class="flex justify-between text-sm mb-1.5">
+            <span>쿠셔닝</span>
+            <span class="font-medium">8/10</span>
+          </div>
+          <div class="spec-bar">
+            <div class="spec-bar-fill bg-accent" style="width: 80%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1.5">
+            <span>반발력</span>
+            <span class="font-medium">5/10</span>
+          </div>
+          <div class="spec-bar">
+            <div class="spec-bar-fill bg-accent" style="width: 50%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1.5">
+            <span>안정성</span>
+            <span class="font-medium">9/10</span>
+          </div>
+          <div class="spec-bar">
+            <div class="spec-bar-fill bg-positive" style="width: 90%"></div>
+          </div>
+        </div>
+        <div>
+          <div class="flex justify-between text-sm mb-1.5">
+            <span>내구성</span>
+            <span class="font-medium">700km</span>
+          </div>
+          <div class="spec-bar">
+            <div class="spec-bar-fill bg-accent" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 상세 스펙 그리드 -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-surface rounded-xl p-4 text-center">
+          <p class="text-xl font-bold">300g</p>
+          <p class="text-xs text-tertiary mt-1">무게 (US 9)</p>
+        </div>
+        <div class="bg-surface rounded-xl p-4 text-center">
+          <p class="text-xl font-bold">40mm</p>
+          <p class="text-xs text-tertiary mt-1">힐 스택</p>
+        </div>
+        <div class="bg-surface rounded-xl p-4 text-center">
+          <p class="text-xl font-bold">10mm</p>
+          <p class="text-xs text-tertiary mt-1">드롭</p>
+        </div>
+        <div class="bg-surface rounded-xl p-4 text-center">
+          <p class="text-xl font-bold text-warning">좁음</p>
+          <p class="text-xs text-tertiary mt-1">토박스</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 생체역학 (biomechanics) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">생체역학 분석</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="space-y-3">
+          <div class="flex justify-between py-2.5 border-b border-border text-sm">
+            <span class="text-secondary">스택 하이트</span>
+            <span class="font-medium">힐 40mm / 포어풋 30mm</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-border text-sm">
+            <span class="text-secondary">드롭</span>
+            <span class="font-medium">10mm</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-border text-sm">
+            <span class="text-secondary">미드솔</span>
+            <span class="font-medium">FF Blast+ ECO</span>
+          </div>
+          <div class="flex justify-between py-2.5 border-b border-border text-sm">
+            <span class="text-secondary">카본 플레이트</span>
+            <span class="font-medium">없음</span>
+          </div>
+          <div class="flex justify-between py-2.5 text-sm">
+            <span class="text-secondary">최적 페이스</span>
+            <span class="font-medium">5:00-7:00 min/km</span>
+          </div>
+        </div>
+        <div class="bg-surface rounded-xl aspect-square flex items-center justify-center">
+          <div class="text-center text-tertiary">
+            <svg class="w-10 h-10 mx-auto mb-2 opacity-40" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2 10a8 8 0 018-8v8h8a8 8 0 11-16 0z"/>
+            </svg>
+            <p class="text-sm">레이더 차트</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 부상 예방 (injuryPrevention) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">부상 예방 분석</h2>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+        <div class="bg-positive/5 border border-positive/20 rounded-xl p-4 text-center">
+          <p class="text-2xl mb-1">🦵</p>
+          <p class="font-medium text-sm">무릎</p>
+          <p class="text-xs text-positive mt-1">우수</p>
+        </div>
+        <div class="bg-positive/5 border border-positive/20 rounded-xl p-4 text-center">
+          <p class="text-2xl mb-1">🦶</p>
+          <p class="font-medium text-sm">발목</p>
+          <p class="text-xs text-positive mt-1">우수</p>
+        </div>
+        <div class="bg-warning/5 border border-warning/20 rounded-xl p-4 text-center">
+          <p class="text-2xl mb-1">🦶</p>
+          <p class="font-medium text-sm">족저근막</p>
+          <p class="text-xs text-warning mt-1">양호</p>
+        </div>
+        <div class="bg-positive/5 border border-positive/20 rounded-xl p-4 text-center">
+          <p class="text-2xl mb-1">🦵</p>
+          <p class="font-medium text-sm">아킬레스</p>
+          <p class="text-xs text-positive mt-1">우수</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 한국인 발 (koreanFootFit) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">한국인 발 적합성</h2>
+
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="space-y-3">
+          <div class="flex items-center justify-between p-3 bg-surface rounded-xl">
+            <div>
+              <p class="font-medium text-sm">토박스 너비</p>
+              <p class="text-xs text-tertiary">발볼 맞춤</p>
+            </div>
+            <span class="px-2.5 py-1 bg-warning/10 text-warning text-xs font-medium rounded-full">좁음</span>
+          </div>
+          <div class="flex items-center justify-between p-3 bg-surface rounded-xl">
+            <div>
+              <p class="font-medium text-sm">평발 적합성</p>
+              <p class="text-xs text-tertiary">아치 서포트</p>
+            </div>
+            <span class="px-2.5 py-1 bg-positive/10 text-positive text-xs font-medium rounded-full">우수</span>
+          </div>
+          <div class="flex items-center justify-between p-3 bg-surface rounded-xl">
+            <div>
+              <p class="font-medium text-sm">와이드 옵션</p>
+              <p class="text-xs text-tertiary">넓은 발볼용</p>
+            </div>
+            <span class="px-2.5 py-1 bg-positive/10 text-positive text-xs font-medium rounded-full">있음</span>
+          </div>
+          <div class="flex items-center justify-between p-3 bg-surface rounded-xl">
+            <div>
+              <p class="font-medium text-sm">겨울 적합성</p>
+              <p class="text-xs text-tertiary">보온/방수</p>
+            </div>
+            <span class="px-2.5 py-1 bg-positive/10 text-positive text-xs font-medium rounded-full">좋음</span>
+          </div>
+        </div>
+
+        <div class="bg-warning/5 border border-warning/20 rounded-xl p-5">
+          <h4 class="font-semibold text-sm mb-3 flex items-center gap-2">
+            ⚠️ 한국 러너 참고사항
+          </h4>
+          <p class="text-sm text-secondary leading-relaxed">
+            토박스가 좁은 편이라 <strong class="text-primary">발볼 넓은 한국 러너는 와이드(2E) 버전을 권장</strong>합니다.
+            평발 적합성은 우수하며, 4D Guidance System이 과내전을 효과적으로 제어합니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 가격 분석 (priceAnalysis) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">가격 분석</h2>
+
+      <div class="grid md:grid-cols-3 gap-3 mb-5">
+        <div class="bg-surface rounded-xl p-4">
+          <p class="text-xs text-tertiary mb-1">정가 (MSRP)</p>
+          <p class="text-xl font-bold">₩230,000</p>
+        </div>
+        <div class="bg-surface rounded-xl p-4">
+          <p class="text-xs text-tertiary mb-1">시중가</p>
+          <p class="text-xl font-bold">₩195,000</p>
+          <p class="text-xs text-positive mt-1">15% 할인</p>
+        </div>
+        <div class="bg-surface rounded-xl p-4">
+          <p class="text-xs text-tertiary mb-1">km당 비용</p>
+          <p class="text-xl font-bold">₩329</p>
+          <p class="text-xs text-tertiary mt-1">700km 기준</p>
+        </div>
+      </div>
+
+      <div class="bg-accent/5 border border-accent/20 rounded-xl p-4">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="text-sm font-semibold text-accent">가성비 평가</span>
+          <span class="px-2 py-0.5 bg-accent text-white text-xs font-bold rounded">8/10</span>
+        </div>
+        <p class="text-sm text-secondary">
+          프리미엄 안정화 중에서는 합리적인 가격대. 700km+ 내구성으로 장기적 관점에서 가성비 우수.
+        </p>
+      </div>
+
+      <!-- 대안 신발 (alternatives) -->
+      <div class="mt-5 pt-5 border-t border-border">
+        <p class="text-sm font-medium mb-3">비슷한 가격대 대안</p>
+        <div class="flex gap-2 overflow-x-auto pb-2">
+          <a href="#" class="flex-shrink-0 px-4 py-2 bg-surface rounded-full text-sm hover:bg-border transition">브룩스 아드레날린 GTS 24</a>
+          <a href="#" class="flex-shrink-0 px-4 py-2 bg-surface rounded-full text-sm hover:bg-border transition">뉴발란스 860 v14</a>
+          <a href="#" class="flex-shrink-0 px-4 py-2 bg-surface rounded-full text-sm hover:bg-border transition">아식스 GT-2000 13</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 리뷰 (reviews) -->
+    <section class="section-card p-6 mb-4">
+      <h2 class="font-bold mb-5">리뷰</h2>
+
+      <div class="space-y-4">
+        <!-- 전문 리뷰 -->
+        <div class="bg-surface rounded-xl p-4">
+          <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center gap-2">
+              <span class="px-2 py-0.5 bg-accent/10 text-accent text-xs font-medium rounded">전문 리뷰어</span>
+              <span class="text-xs text-tertiary">RunRepeat</span>
+            </div>
+            <div class="flex items-center gap-1">
+              <span class="text-yellow-500 text-sm">★</span>
+              <span class="text-sm font-medium">89/100</span>
+            </div>
+          </div>
+          <p class="text-sm text-secondary leading-relaxed">
+            "평발인데 무겁지 않은 안정화 추천해주세요"에 가장 먼저 떠오르는 아식스의 라이트 안정화입니다.
+            FF Blast+ ECO로 업그레이드되어 이전 버전보다 쿠셔닝과 반발력이 향상됐습니다.
+            4D Guidance System으로 충분한 안정성을 제공하면서도 300g으로 가볍습니다.
+          </p>
+        </div>
+
+        <!-- 사용자 리뷰 1 -->
+        <div class="bg-surface rounded-xl p-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs text-tertiary">평발 러너</span>
+            <span class="text-yellow-500 text-sm">★★★★★</span>
+          </div>
+          <p class="text-sm text-secondary leading-relaxed">
+            평발이라 항상 안정화를 신는데, 카야노 32는 정말 편해요.
+            장거리 뛰어도 발목이 안 아프고, 무릎 충격도 잘 흡수해줘요.
+            와이드 버전 구매했는데 딱 맞아요.
+          </p>
+        </div>
+
+        <!-- 사용자 리뷰 2 -->
+        <div class="bg-surface rounded-xl p-4">
+          <div class="flex items-center justify-between mb-3">
+            <span class="text-xs text-tertiary">중급 러너</span>
+            <span class="text-yellow-500 text-sm">★★★★</span>
+          </div>
+          <p class="text-sm text-secondary leading-relaxed">
+            안정성은 최고인데, 반발력은 좀 아쉬워요.
+            템포런보다는 편안한 조깅이나 장거리 LSD에 적합합니다.
+            가격이 좀 있지만 내구성이 좋아서 오래 신을 수 있어요.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 비슷한 신발 (similarShoes) -->
+    <section class="section-card p-6 mb-4">
+      <div class="flex items-center justify-between mb-5">
+        <h2 class="font-bold">비슷한 신발</h2>
+        <button id="compareSelectedBtn" class="hidden items-center gap-2 px-4 py-2 bg-accent text-white rounded-full text-sm font-medium hover:bg-accent/90 transition">
+          <span id="compareCount">0</span>개 비교하기
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- 현재 신발 (항상 선택됨) -->
+      <div class="mb-4">
+        <p class="text-xs text-tertiary mb-2">현재 보고 있는 신발</p>
+        <div class="bg-accent/5 border-2 border-accent rounded-xl p-4 flex items-center gap-4">
+          <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+            <span class="text-xl">👟</span>
+          </div>
+          <div class="flex-1 min-w-0">
+            <p class="text-sm font-medium">젤 카야노 32</p>
+            <p class="text-xs text-tertiary">Asics · ₩230,000</p>
+          </div>
+          <span class="px-2.5 py-1 bg-accent text-white text-xs font-medium rounded-full flex-shrink-0">기준</span>
+        </div>
+      </div>
+
+      <!-- 비교할 신발 선택 -->
+      <p class="text-xs text-tertiary mb-2">비교할 신발 선택 (최대 2개)</p>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="similarShoesGrid">
+        <label class="similar-shoe-card cursor-pointer">
+          <input type="checkbox" class="hidden compare-checkbox" data-name="아드레날린 GTS 24" data-brand="Brooks" data-price="190000">
+          <div class="bg-surface rounded-xl p-4 flex items-center gap-4 border-2 border-transparent hover:border-accent/30 transition">
+            <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">👟</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium">아드레날린 GTS 24</p>
+              <p class="text-xs text-tertiary">Brooks · ₩190,000</p>
+              <div class="flex gap-1 mt-1">
+                <span class="text-xs px-1.5 py-0.5 bg-positive/10 text-positive rounded">안정화</span>
+                <span class="text-xs px-1.5 py-0.5 bg-surface text-tertiary rounded">10mm 드롭</span>
+              </div>
+            </div>
+            <div class="checkbox-indicator w-6 h-6 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0 transition">
+              <svg class="w-4 h-4 text-white hidden check-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </label>
+
+        <label class="similar-shoe-card cursor-pointer">
+          <input type="checkbox" class="hidden compare-checkbox" data-name="860 v14" data-brand="New Balance" data-price="179000">
+          <div class="bg-surface rounded-xl p-4 flex items-center gap-4 border-2 border-transparent hover:border-accent/30 transition">
+            <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">👟</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium">860 v14</p>
+              <p class="text-xs text-tertiary">New Balance · ₩179,000</p>
+              <div class="flex gap-1 mt-1">
+                <span class="text-xs px-1.5 py-0.5 bg-positive/10 text-positive rounded">안정화</span>
+                <span class="text-xs px-1.5 py-0.5 bg-accent/10 text-accent rounded">가성비</span>
+              </div>
+            </div>
+            <div class="checkbox-indicator w-6 h-6 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0 transition">
+              <svg class="w-4 h-4 text-white hidden check-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </label>
+
+        <label class="similar-shoe-card cursor-pointer">
+          <input type="checkbox" class="hidden compare-checkbox" data-name="GT-2000 13" data-brand="Asics" data-price="180000">
+          <div class="bg-surface rounded-xl p-4 flex items-center gap-4 border-2 border-transparent hover:border-accent/30 transition">
+            <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">👟</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium">GT-2000 13</p>
+              <p class="text-xs text-tertiary">Asics · ₩180,000</p>
+              <div class="flex gap-1 mt-1">
+                <span class="text-xs px-1.5 py-0.5 bg-positive/10 text-positive rounded">라이트 안정화</span>
+                <span class="text-xs px-1.5 py-0.5 bg-surface text-tertiary rounded">가벼움</span>
+              </div>
+            </div>
+            <div class="checkbox-indicator w-6 h-6 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0 transition">
+              <svg class="w-4 h-4 text-white hidden check-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </label>
+
+        <label class="similar-shoe-card cursor-pointer">
+          <input type="checkbox" class="hidden compare-checkbox" data-name="가이드 18" data-brand="Saucony" data-price="175000">
+          <div class="bg-surface rounded-xl p-4 flex items-center gap-4 border-2 border-transparent hover:border-accent/30 transition">
+            <div class="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0">
+              <span class="text-xl">👟</span>
+            </div>
+            <div class="flex-1 min-w-0">
+              <p class="text-sm font-medium">가이드 18</p>
+              <p class="text-xs text-tertiary">Saucony · ₩175,000</p>
+              <div class="flex gap-1 mt-1">
+                <span class="text-xs px-1.5 py-0.5 bg-positive/10 text-positive rounded">안정화</span>
+                <span class="text-xs px-1.5 py-0.5 bg-accent/10 text-accent rounded">PWRRUN+</span>
+              </div>
+            </div>
+            <div class="checkbox-indicator w-6 h-6 rounded-full border-2 border-border flex items-center justify-center flex-shrink-0 transition">
+              <svg class="w-4 h-4 text-white hidden check-icon" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+          </div>
+        </label>
+      </div>
+
+      <!-- 빠른 비교 미리보기 (선택 시 표시) -->
+      <div id="quickComparePreview" class="hidden mt-6 pt-6 border-t border-border">
+        <h3 class="font-semibold text-sm mb-4">빠른 비교</h3>
+        <div class="overflow-x-auto">
+          <table class="w-full text-sm">
+            <thead>
+              <tr class="border-b border-border">
+                <th class="text-left py-2 pr-4 font-medium text-tertiary"></th>
+                <th class="text-center py-2 px-3 font-medium">
+                  <span class="text-accent">젤 카야노 32</span>
+                </th>
+                <th id="compareCol1" class="text-center py-2 px-3 font-medium hidden"></th>
+                <th id="compareCol2" class="text-center py-2 px-3 font-medium hidden"></th>
+              </tr>
+            </thead>
+            <tbody id="compareTableBody">
+              <tr class="border-b border-border/50">
+                <td class="py-2.5 pr-4 text-tertiary">가격</td>
+                <td class="text-center py-2.5 px-3 font-medium">₩230,000</td>
+                <td id="price1" class="text-center py-2.5 px-3 hidden"></td>
+                <td id="price2" class="text-center py-2.5 px-3 hidden"></td>
+              </tr>
+              <tr class="border-b border-border/50">
+                <td class="py-2.5 pr-4 text-tertiary">무게</td>
+                <td class="text-center py-2.5 px-3">300g</td>
+                <td id="weight1" class="text-center py-2.5 px-3 hidden">295g</td>
+                <td id="weight2" class="text-center py-2.5 px-3 hidden">-</td>
+              </tr>
+              <tr class="border-b border-border/50">
+                <td class="py-2.5 pr-4 text-tertiary">쿠셔닝</td>
+                <td class="text-center py-2.5 px-3">
+                  <span class="inline-block w-16 h-1.5 bg-border rounded-full overflow-hidden">
+                    <span class="block h-full bg-accent rounded-full" style="width:80%"></span>
+                  </span>
+                </td>
+                <td id="cushion1" class="text-center py-2.5 px-3 hidden"></td>
+                <td id="cushion2" class="text-center py-2.5 px-3 hidden"></td>
+              </tr>
+              <tr class="border-b border-border/50">
+                <td class="py-2.5 pr-4 text-tertiary">안정성</td>
+                <td class="text-center py-2.5 px-3">
+                  <span class="inline-block w-16 h-1.5 bg-border rounded-full overflow-hidden">
+                    <span class="block h-full bg-positive rounded-full" style="width:90%"></span>
+                  </span>
+                </td>
+                <td id="stability1" class="text-center py-2.5 px-3 hidden"></td>
+                <td id="stability2" class="text-center py-2.5 px-3 hidden"></td>
+              </tr>
+              <tr>
+                <td class="py-2.5 pr-4 text-tertiary">토박스</td>
+                <td class="text-center py-2.5 px-3"><span class="text-warning">좁음</span></td>
+                <td id="toebox1" class="text-center py-2.5 px-3 hidden"></td>
+                <td id="toebox2" class="text-center py-2.5 px-3 hidden"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button id="fullCompareBtn" class="w-full mt-4 py-3 bg-primary text-white rounded-xl text-sm font-medium hover:bg-primary/90 transition flex items-center justify-center gap-2">
+          상세 비교 페이지로 이동
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+          </svg>
+        </button>
+      </div>
+    </section>
+
+    <script>
+      // 비교 기능 스크립트
+      const checkboxes = document.querySelectorAll('.compare-checkbox');
+      const compareBtn = document.getElementById('compareSelectedBtn');
+      const compareCount = document.getElementById('compareCount');
+      const quickPreview = document.getElementById('quickComparePreview');
+      const compareCol1 = document.getElementById('compareCol1');
+      const compareCol2 = document.getElementById('compareCol2');
+
+      // 신발 데이터 (실제로는 서버에서 가져옴)
+      const shoeData = {
+        '아드레날린 GTS 24': { price: '₩190,000', weight: '295g', cushion: 75, stability: 85, toebox: '표준' },
+        '860 v14': { price: '₩179,000', weight: '303g', cushion: 70, stability: 80, toebox: '넓음' },
+        'GT-2000 13': { price: '₩180,000', weight: '265g', cushion: 65, stability: 75, toebox: '좁음' },
+        '가이드 18': { price: '₩175,000', weight: '283g', cushion: 72, stability: 78, toebox: '표준' }
+      };
+
+      checkboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', updateCompare);
+      });
+
+      function updateCompare() {
+        const checked = document.querySelectorAll('.compare-checkbox:checked');
+        const count = checked.length;
+
+        // 최대 2개 제한
+        if (count > 2) {
+          this.checked = false;
+          alert('최대 2개까지 선택할 수 있습니다.');
+          return;
+        }
+
+        // 버튼 업데이트
+        if (count > 0) {
+          compareBtn.classList.remove('hidden');
+          compareBtn.classList.add('flex');
+          compareCount.textContent = count;
+          quickPreview.classList.remove('hidden');
+        } else {
+          compareBtn.classList.add('hidden');
+          compareBtn.classList.remove('flex');
+          quickPreview.classList.add('hidden');
+        }
+
+        // 체크박스 스타일 업데이트
+        checkboxes.forEach(cb => {
+          const card = cb.closest('.similar-shoe-card');
+          const indicator = card.querySelector('.checkbox-indicator');
+          const checkIcon = card.querySelector('.check-icon');
+          const cardBg = card.querySelector('.bg-surface');
+
+          if (cb.checked) {
+            indicator.classList.add('bg-accent', 'border-accent');
+            indicator.classList.remove('border-border');
+            checkIcon.classList.remove('hidden');
+            cardBg.classList.add('border-accent');
+            cardBg.classList.remove('border-transparent');
+          } else {
+            indicator.classList.remove('bg-accent', 'border-accent');
+            indicator.classList.add('border-border');
+            checkIcon.classList.add('hidden');
+            cardBg.classList.remove('border-accent');
+            cardBg.classList.add('border-transparent');
+          }
+        });
+
+        // 비교 테이블 업데이트
+        updateCompareTable(checked);
+      }
+
+      function updateCompareTable(checked) {
+        const names = Array.from(checked).map(cb => cb.dataset.name);
+
+        // 컬럼 표시/숨김
+        const cols1 = [compareCol1, document.getElementById('price1'), document.getElementById('weight1'),
+                       document.getElementById('cushion1'), document.getElementById('stability1'), document.getElementById('toebox1')];
+        const cols2 = [compareCol2, document.getElementById('price2'), document.getElementById('weight2'),
+                       document.getElementById('cushion2'), document.getElementById('stability2'), document.getElementById('toebox2')];
+
+        if (names.length >= 1) {
+          const data = shoeData[names[0]];
+          cols1.forEach(col => col.classList.remove('hidden'));
+          compareCol1.textContent = names[0];
+          document.getElementById('price1').innerHTML = `<span class="${getPriceColor(data.price)}">${data.price}</span>`;
+          document.getElementById('weight1').textContent = data.weight;
+          document.getElementById('cushion1').innerHTML = getBarHTML(data.cushion);
+          document.getElementById('stability1').innerHTML = getBarHTML(data.stability, 'positive');
+          document.getElementById('toebox1').innerHTML = getToeboxHTML(data.toebox);
+        } else {
+          cols1.forEach(col => col.classList.add('hidden'));
+        }
+
+        if (names.length >= 2) {
+          const data = shoeData[names[1]];
+          cols2.forEach(col => col.classList.remove('hidden'));
+          compareCol2.textContent = names[1];
+          document.getElementById('price2').innerHTML = `<span class="${getPriceColor(data.price)}">${data.price}</span>`;
+          document.getElementById('weight2').textContent = data.weight;
+          document.getElementById('cushion2').innerHTML = getBarHTML(data.cushion);
+          document.getElementById('stability2').innerHTML = getBarHTML(data.stability, 'positive');
+          document.getElementById('toebox2').innerHTML = getToeboxHTML(data.toebox);
+        } else {
+          cols2.forEach(col => col.classList.add('hidden'));
+        }
+      }
+
+      function getBarHTML(value, color = 'accent') {
+        return `<span class="inline-block w-16 h-1.5 bg-border rounded-full overflow-hidden">
+          <span class="block h-full bg-${color} rounded-full" style="width:${value}%"></span>
+        </span>`;
+      }
+
+      function getPriceColor(price) {
+        const num = parseInt(price.replace(/[^0-9]/g, ''));
+        return num < 200000 ? 'text-positive font-medium' : '';
+      }
+
+      function getToeboxHTML(value) {
+        const colors = { '좁음': 'text-warning', '표준': 'text-primary', '넓음': 'text-positive' };
+        return `<span class="${colors[value] || ''}">${value}</span>`;
+      }
+    </script>
+
+    <!-- 데이터 출처 -->
+    <section class="section-card p-5 mb-20">
+      <div class="flex items-start gap-3">
+        <span class="text-lg">📊</span>
+        <div>
+          <p class="font-medium text-sm mb-1">데이터 출처</p>
+          <p class="text-xs text-secondary">
+            RunRepeat Lab Test · Doctors of Running · 한국 러너 설문 (n=94)
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 하단 고정 CTA -->
+  <div class="fixed bottom-0 left-0 right-0 bg-white border-t border-border py-3 px-4 z-50">
+    <div class="max-w-5xl mx-auto flex items-center justify-between">
+      <div>
+        <p class="font-bold">₩230,000</p>
+        <p class="text-xs text-tertiary">젤 카야노 32</p>
+      </div>
+      <div class="flex items-center gap-2">
+        <button class="px-4 py-2.5 border border-border rounded-full text-sm font-medium hover:bg-surface transition">
+          + 비교함
+        </button>
+        <button class="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-medium hover:bg-primary/90 transition">
+          구매처 보기
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- 이미지 슬라이더 스크립트 -->
+  <script>
+    // 슬라이더 변수
+    let currentSlide = 0;
+    const totalSlides = 3;
+    const sliderTrack = document.getElementById('sliderTrack');
+    const dots = document.querySelectorAll('.slider-dot');
+    let autoSlideInterval;
+
+    // 슬라이드 이동 함수
+    function goToSlide(index) {
+      currentSlide = index;
+      if (currentSlide < 0) currentSlide = totalSlides - 1;
+      if (currentSlide >= totalSlides) currentSlide = 0;
+
+      sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+
+      // 닷 인디케이터 업데이트
+      dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === currentSlide);
+      });
+
+      // 자동 슬라이드 리셋
+      resetAutoSlide();
+    }
+
+    function nextSlide() {
+      goToSlide(currentSlide + 1);
+    }
+
+    function prevSlide() {
+      goToSlide(currentSlide - 1);
+    }
+
+    // 자동 슬라이드 (3초마다)
+    function startAutoSlide() {
+      autoSlideInterval = setInterval(() => {
+        nextSlide();
+      }, 3000);
+    }
+
+    function resetAutoSlide() {
+      clearInterval(autoSlideInterval);
+      startAutoSlide();
+    }
+
+    // 슬라이더에 마우스 올리면 자동 슬라이드 일시 정지
+    const heroSlider = document.getElementById('heroSlider');
+    heroSlider.addEventListener('mouseenter', () => {
+      clearInterval(autoSlideInterval);
+    });
+    heroSlider.addEventListener('mouseleave', () => {
+      startAutoSlide();
+    });
+
+    // 터치 스와이프 지원
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    heroSlider.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+      clearInterval(autoSlideInterval);
+    }, { passive: true });
+
+    heroSlider.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipe();
+      startAutoSlide();
+    }, { passive: true });
+
+    function handleSwipe() {
+      const swipeThreshold = 50;
+      const diff = touchStartX - touchEndX;
+
+      if (diff > swipeThreshold) {
+        nextSlide(); // 왼쪽으로 스와이프 → 다음
+      } else if (diff < -swipeThreshold) {
+        prevSlide(); // 오른쪽으로 스와이프 → 이전
+      }
+    }
+
+    // 자동 슬라이드 시작
+    startAutoSlide();
+  </script>
+
+</body>
+</html>

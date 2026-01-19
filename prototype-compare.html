@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>신발 비교 - 러닝의 모든것</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: '#666666',
+            tertiary: '#999999',
+            accent: '#0066FF',
+            positive: '#00C853',
+            warning: '#FF9500',
+            negative: '#FF3B30',
+            surface: '#F5F5F7',
+            border: '#E5E5E5',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+    .section-card {
+      background: white;
+      border: 1px solid #E5E5E5;
+      border-radius: 16px;
+    }
+
+    .spec-bar {
+      height: 8px;
+      background: #E5E5E5;
+      border-radius: 4px;
+      overflow: hidden;
+    }
+    .spec-bar-fill {
+      height: 100%;
+      border-radius: 4px;
+    }
+
+    .winner {
+      background: linear-gradient(135deg, #00C85310 0%, #00C85305 100%);
+      border-color: #00C853 !important;
+    }
+    .winner-badge {
+      background: #00C853;
+      color: white;
+    }
+  </style>
+</head>
+<body class="bg-surface text-primary">
+
+  <!-- 헤더 -->
+  <header class="bg-white/80 backdrop-blur-lg border-b border-border sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <div class="flex items-center gap-4">
+          <a href="prototype-main.html" class="p-2 -ml-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </a>
+          <a href="prototype-main.html" class="text-lg font-bold">러닝의 모든것</a>
+        </div>
+
+        <div class="flex items-center gap-2">
+          <button class="p-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-6">
+
+    <!-- 페이지 헤더 -->
+    <section class="mb-6">
+      <h1 class="text-2xl font-bold mb-2">신발 비교</h1>
+      <p class="text-secondary text-sm">최대 3개 신발을 나란히 비교해보세요</p>
+    </section>
+
+    <!-- 비교 신발 선택 영역 -->
+    <section class="section-card p-5 mb-6">
+      <div class="grid grid-cols-3 gap-4">
+        <!-- 신발 1 (선택됨) -->
+        <div class="relative">
+          <div class="bg-accent/5 border-2 border-accent rounded-xl p-4">
+            <div class="aspect-square bg-white rounded-lg mb-3 flex items-center justify-center">
+              <span class="text-4xl">👟</span>
+            </div>
+            <p class="text-xs text-tertiary">Asics</p>
+            <p class="font-semibold text-sm">젤 카야노 32</p>
+            <p class="text-sm text-accent font-medium mt-1">₩230,000</p>
+            <button class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full shadow flex items-center justify-center hover:bg-surface transition">
+              <svg class="w-4 h-4 text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 신발 2 (선택됨) -->
+        <div class="relative">
+          <div class="bg-surface border-2 border-border rounded-xl p-4">
+            <div class="aspect-square bg-white rounded-lg mb-3 flex items-center justify-center">
+              <span class="text-4xl">👟</span>
+            </div>
+            <p class="text-xs text-tertiary">Brooks</p>
+            <p class="font-semibold text-sm">아드레날린 GTS 24</p>
+            <p class="text-sm text-positive font-medium mt-1">₩190,000</p>
+            <button class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full shadow flex items-center justify-center hover:bg-surface transition">
+              <svg class="w-4 h-4 text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- 신발 3 (선택됨) -->
+        <div class="relative">
+          <div class="bg-surface border-2 border-border rounded-xl p-4">
+            <div class="aspect-square bg-white rounded-lg mb-3 flex items-center justify-center">
+              <span class="text-4xl">👟</span>
+            </div>
+            <p class="text-xs text-tertiary">New Balance</p>
+            <p class="font-semibold text-sm">860 v14</p>
+            <p class="text-sm text-positive font-medium mt-1">₩179,000</p>
+            <button class="absolute top-2 right-2 w-6 h-6 bg-white rounded-full shadow flex items-center justify-center hover:bg-surface transition">
+              <svg class="w-4 h-4 text-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 신발 추가 버튼 -->
+      <button class="w-full mt-4 py-3 border-2 border-dashed border-border rounded-xl text-sm text-tertiary hover:border-accent hover:text-accent transition flex items-center justify-center gap-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>
+        </svg>
+        다른 신발 추가
+      </button>
+    </section>
+
+    <!-- AI 요약 -->
+    <section class="bg-primary text-white rounded-2xl p-5 mb-6">
+      <div class="flex items-start gap-3">
+        <span class="text-xl">🤖</span>
+        <div>
+          <p class="text-xs text-white/60 mb-1">AI 비교 요약</p>
+          <p class="font-medium leading-relaxed">
+            <strong class="text-accent">뉴발란스 860 v14</strong>가 가성비 면에서 가장 뛰어납니다.
+            안정성이 필요하다면 <strong class="text-white">젤 카야노 32</strong>,
+            발볼이 넓다면 <strong class="text-white">860 v14</strong>를 추천드립니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 빠른 비교 요약 카드 -->
+    <section class="grid grid-cols-3 gap-3 mb-6">
+      <div class="section-card p-4 text-center">
+        <p class="text-xs text-tertiary mb-1">가격 최저</p>
+        <p class="font-bold text-positive">860 v14</p>
+        <p class="text-xs text-secondary">₩179,000</p>
+      </div>
+      <div class="section-card p-4 text-center">
+        <p class="text-xs text-tertiary mb-1">안정성 최고</p>
+        <p class="font-bold text-accent">카야노 32</p>
+        <p class="text-xs text-secondary">9/10</p>
+      </div>
+      <div class="section-card p-4 text-center">
+        <p class="text-xs text-tertiary mb-1">가장 가벼움</p>
+        <p class="font-bold">GTS 24</p>
+        <p class="text-xs text-secondary">295g</p>
+      </div>
+    </section>
+
+    <!-- 레이더 차트 -->
+    <section class="section-card p-6 mb-6">
+      <h2 class="font-bold mb-6">스펙 비교 차트</h2>
+
+      <div class="flex flex-col lg:flex-row items-center gap-8">
+        <!-- 레이더 차트 SVG (400x400) -->
+        <div class="flex-shrink-0">
+          <svg width="400" height="400" viewBox="0 0 400 400" class="overflow-visible">
+            <!-- 배경 그리드 (5단계) - 중심 200, 반경 150 -->
+            <polygon points="200,50 330,140 280,310 120,310 70,140" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+            <polygon points="200,80 304,152 262,280 138,280 96,152" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+            <polygon points="200,110 278,164 244,250 156,250 122,164" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+            <polygon points="200,140 252,176 226,220 174,220 148,176" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+            <polygon points="200,170 226,188 214,205 186,205 174,188" fill="none" stroke="#E5E5E5" stroke-width="1"/>
+
+            <!-- 축 라인 -->
+            <line x1="200" y1="200" x2="200" y2="50" stroke="#E5E5E5" stroke-width="1"/>
+            <line x1="200" y1="200" x2="330" y2="140" stroke="#E5E5E5" stroke-width="1"/>
+            <line x1="200" y1="200" x2="280" y2="310" stroke="#E5E5E5" stroke-width="1"/>
+            <line x1="200" y1="200" x2="120" y2="310" stroke="#E5E5E5" stroke-width="1"/>
+            <line x1="200" y1="200" x2="70" y2="140" stroke="#E5E5E5" stroke-width="1"/>
+
+            <!-- 젤 카야노 32 (파란색) - 쿠셔닝8, 반응성5, 안정성9, 내구성8.5, 가성비8 -->
+            <polygon
+              points="200,80 278,164 262,280 132,268 96,152"
+              fill="rgba(0, 102, 255, 0.15)"
+              stroke="#0066FF"
+              stroke-width="2.5"
+            />
+
+            <!-- 아드레날린 GTS 24 (핑크색) - 쿠셔닝7.5, 반응성5.5, 안정성8.5, 내구성7, 가성비8.5 -->
+            <polygon
+              points="200,95 291,158 253,265 144,250 89,146"
+              fill="rgba(240, 147, 251, 0.15)"
+              stroke="#f093fb"
+              stroke-width="2.5"
+            />
+
+            <!-- 860 v14 (초록색) - 쿠셔닝7, 반응성6, 안정성8, 내구성7.5, 가성비9 -->
+            <polygon
+              points="200,110 291,152 244,250 138,262 83,152"
+              fill="rgba(0, 200, 83, 0.15)"
+              stroke="#00C853"
+              stroke-width="2.5"
+            />
+
+            <!-- 데이터 포인트 - 카야노 -->
+            <circle cx="200" cy="80" r="5" fill="#0066FF" stroke="white" stroke-width="2"/>
+            <circle cx="278" cy="164" r="5" fill="#0066FF" stroke="white" stroke-width="2"/>
+            <circle cx="262" cy="280" r="5" fill="#0066FF" stroke="white" stroke-width="2"/>
+            <circle cx="132" cy="268" r="5" fill="#0066FF" stroke="white" stroke-width="2"/>
+            <circle cx="96" cy="152" r="5" fill="#0066FF" stroke="white" stroke-width="2"/>
+
+            <!-- 데이터 포인트 - GTS 24 -->
+            <circle cx="200" cy="95" r="5" fill="#f093fb" stroke="white" stroke-width="2"/>
+            <circle cx="291" cy="158" r="5" fill="#f093fb" stroke="white" stroke-width="2"/>
+            <circle cx="253" cy="265" r="5" fill="#f093fb" stroke="white" stroke-width="2"/>
+            <circle cx="144" cy="250" r="5" fill="#f093fb" stroke="white" stroke-width="2"/>
+            <circle cx="89" cy="146" r="5" fill="#f093fb" stroke="white" stroke-width="2"/>
+
+            <!-- 데이터 포인트 - 860 v14 -->
+            <circle cx="200" cy="110" r="5" fill="#00C853" stroke="white" stroke-width="2"/>
+            <circle cx="291" cy="152" r="5" fill="#00C853" stroke="white" stroke-width="2"/>
+            <circle cx="244" cy="250" r="5" fill="#00C853" stroke="white" stroke-width="2"/>
+            <circle cx="138" cy="262" r="5" fill="#00C853" stroke="white" stroke-width="2"/>
+            <circle cx="83" cy="152" r="5" fill="#00C853" stroke="white" stroke-width="2"/>
+
+            <!-- 라벨 -->
+            <text x="200" y="30" text-anchor="middle" class="text-sm font-medium fill-secondary">쿠셔닝</text>
+            <text x="355" y="140" text-anchor="start" class="text-sm font-medium fill-secondary">반응성</text>
+            <text x="295" y="335" text-anchor="middle" class="text-sm font-medium fill-secondary">안정성</text>
+            <text x="105" y="335" text-anchor="middle" class="text-sm font-medium fill-secondary">내구성</text>
+            <text x="45" y="140" text-anchor="end" class="text-sm font-medium fill-secondary">가성비</text>
+          </svg>
+        </div>
+
+        <!-- 범례 & 수치 -->
+        <div class="flex-1">
+          <h4 class="text-sm font-semibold mb-4">범례</h4>
+          <div class="space-y-3 mb-6">
+            <div class="flex items-center gap-3">
+              <span class="w-4 h-4 rounded-full bg-accent"></span>
+              <div>
+                <p class="text-xs text-tertiary">Asics</p>
+                <p class="text-sm font-semibold">젤 카야노 32</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-4 h-4 rounded-full" style="background: #f093fb"></span>
+              <div>
+                <p class="text-xs text-tertiary">Brooks</p>
+                <p class="text-sm font-semibold">아드레날린 GTS 24</p>
+              </div>
+            </div>
+            <div class="flex items-center gap-3">
+              <span class="w-4 h-4 rounded-full bg-positive"></span>
+              <div>
+                <p class="text-xs text-tertiary">New Balance</p>
+                <p class="text-sm font-semibold">860 v14</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 상세 수치 -->
+          <div class="pt-4 border-t border-border">
+            <h4 class="text-sm font-semibold mb-3">상세 수치</h4>
+            <div class="space-y-2">
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-tertiary w-14">쿠셔닝</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF">8/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(240,147,251,0.1); color: #f093fb">7.5/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,200,83,0.1); color: #00C853">7/10</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-tertiary w-14">반응성</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF">5/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(240,147,251,0.1); color: #f093fb">5.5/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,200,83,0.1); color: #00C853">6/10</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-tertiary w-14">안정성</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF">9/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(240,147,251,0.1); color: #f093fb">8.5/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,200,83,0.1); color: #00C853">8/10</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-tertiary w-14">내구성</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF">700km</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(240,147,251,0.1); color: #f093fb">600km</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,200,83,0.1); color: #00C853">650km</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-tertiary w-14">가성비</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,102,255,0.1); color: #0066FF">8/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(240,147,251,0.1); color: #f093fb">8.5/10</span>
+                <span class="text-xs font-medium px-2 py-1 rounded" style="background: rgba(0,200,83,0.1); color: #00C853">9/10</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 상세 비교 테이블 -->
+    <section class="section-card overflow-hidden mb-6">
+      <!-- 테이블 헤더 -->
+      <div class="grid grid-cols-4 border-b border-border bg-surface/50">
+        <div class="p-4 font-medium text-sm">비교 항목</div>
+        <div class="p-4 text-center border-l border-border">
+          <p class="font-semibold text-sm">젤 카야노 32</p>
+          <p class="text-xs text-tertiary">Asics</p>
+        </div>
+        <div class="p-4 text-center border-l border-border">
+          <p class="font-semibold text-sm">아드레날린 GTS 24</p>
+          <p class="text-xs text-tertiary">Brooks</p>
+        </div>
+        <div class="p-4 text-center border-l border-border">
+          <p class="font-semibold text-sm">860 v14</p>
+          <p class="text-xs text-tertiary">New Balance</p>
+        </div>
+      </div>
+
+      <!-- 기본 정보 -->
+      <div class="border-b border-border">
+        <div class="grid grid-cols-4 bg-surface/30">
+          <div class="p-3 font-semibold text-xs text-tertiary col-span-4">기본 정보</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">가격</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">₩230,000</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">₩190,000</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm font-medium text-positive winner">
+            ₩179,000
+            <span class="ml-1 text-xs bg-positive text-white px-1.5 py-0.5 rounded">최저가</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">카테고리</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">안정화</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">안정화</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">안정화</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">무게 (US 9)</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">300g</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm font-medium text-positive winner">
+            295g
+            <span class="ml-1 text-xs bg-positive text-white px-1.5 py-0.5 rounded">최경량</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">303g</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">드롭</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">10mm</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">10mm</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">10mm</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">스택 하이트</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">40mm / 30mm</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">38mm / 28mm</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">36mm / 26mm</div>
+        </div>
+      </div>
+
+      <!-- 성능 스펙 -->
+      <div class="border-b border-border">
+        <div class="grid grid-cols-4 bg-surface/30">
+          <div class="p-3 font-semibold text-xs text-tertiary col-span-4">성능 스펙</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">쿠셔닝</div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 80%"></div>
+              </div>
+              <span class="text-sm font-medium">8/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 75%"></div>
+              </div>
+              <span class="text-sm font-medium">7.5/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 70%"></div>
+              </div>
+              <span class="text-sm font-medium">7/10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">안정성</div>
+          <div class="p-4 border-l border-border/50 winner">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-positive" style="width: 90%"></div>
+              </div>
+              <span class="text-sm font-medium text-positive">9/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-positive" style="width: 85%"></div>
+              </div>
+              <span class="text-sm font-medium">8.5/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-positive" style="width: 80%"></div>
+              </div>
+              <span class="text-sm font-medium">8/10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">반발력</div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 50%"></div>
+              </div>
+              <span class="text-sm font-medium">5/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 55%"></div>
+              </div>
+              <span class="text-sm font-medium">5.5/10</span>
+            </div>
+          </div>
+          <div class="p-4 border-l border-border/50">
+            <div class="flex items-center justify-center gap-2">
+              <div class="spec-bar w-20">
+                <div class="spec-bar-fill bg-accent" style="width: 60%"></div>
+              </div>
+              <span class="text-sm font-medium">6/10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">내구성</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm font-medium text-positive winner">
+            700km
+            <span class="ml-1 text-xs bg-positive text-white px-1.5 py-0.5 rounded">최고</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">600km</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">650km</div>
+        </div>
+      </div>
+
+      <!-- 한국인 발 적합성 -->
+      <div class="border-b border-border">
+        <div class="grid grid-cols-4 bg-surface/30">
+          <div class="p-3 font-semibold text-xs text-tertiary col-span-4">한국인 발 적합성</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">토박스 너비</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-warning">좁음</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm">표준</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50 winner">
+            <span class="text-sm font-medium text-positive">넓음</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">평발 적합성</div>
+          <div class="p-4 text-center border-l border-border/50 winner">
+            <span class="text-sm font-medium text-positive">우수</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-positive">좋음</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-positive">좋음</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">와이드 옵션</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-positive">있음 (2E)</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-positive">있음 (2E)</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="text-sm text-positive">있음 (2E, 4E)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 부상 예방 -->
+      <div class="border-b border-border">
+        <div class="grid grid-cols-4 bg-surface/30">
+          <div class="p-3 font-semibold text-xs text-tertiary col-span-4">부상 예방</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">무릎</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">우수</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">우수</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">좋음</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">발목</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">우수</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">좋음</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">좋음</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">족저근막</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-warning/10 text-warning text-xs rounded-full">양호</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">좋음</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">좋음</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 가성비 -->
+      <div>
+        <div class="grid grid-cols-4 bg-surface/30">
+          <div class="p-3 font-semibold text-xs text-tertiary col-span-4">가성비 분석</div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">km당 비용</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">₩329</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm">₩317</div>
+          <div class="p-4 text-center border-l border-border/50 text-sm font-medium text-positive winner">
+            ₩275
+            <span class="ml-1 text-xs bg-positive text-white px-1.5 py-0.5 rounded">최저</span>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-4 border-t border-border/50">
+          <div class="p-4 text-sm text-secondary">가성비 점수</div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2.5 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">8/10</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50">
+            <span class="px-2.5 py-1 bg-accent/10 text-accent text-sm font-medium rounded-full">8.5/10</span>
+          </div>
+          <div class="p-4 text-center border-l border-border/50 winner">
+            <span class="px-2.5 py-1 bg-positive text-white text-sm font-medium rounded-full">9/10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 결론 카드 -->
+    <section class="section-card p-6 mb-6">
+      <h2 class="font-bold mb-4">결론: 어떤 신발을 선택할까?</h2>
+
+      <div class="space-y-4">
+        <div class="flex gap-4 p-4 bg-accent/5 rounded-xl border border-accent/20">
+          <div class="w-12 h-12 bg-accent rounded-lg flex items-center justify-center text-white text-xl flex-shrink-0">
+            👟
+          </div>
+          <div>
+            <p class="font-semibold mb-1">젤 카야노 32</p>
+            <p class="text-sm text-secondary">
+              <strong class="text-primary">평발/과내전</strong>이 심하거나 <strong class="text-primary">장거리 러닝</strong>이 목적이라면 최고의 선택.
+              안정성과 내구성이 뛰어나 투자 가치가 있습니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 p-4 bg-surface rounded-xl">
+          <div class="w-12 h-12 bg-secondary rounded-lg flex items-center justify-center text-white text-xl flex-shrink-0">
+            👟
+          </div>
+          <div>
+            <p class="font-semibold mb-1">아드레날린 GTS 24</p>
+            <p class="text-sm text-secondary">
+              <strong class="text-primary">가벼운 안정화</strong>를 원하거나 <strong class="text-primary">발볼이 보통</strong>이라면 좋은 선택.
+              DNA LOFT v2 쿠셔닝이 편안합니다.
+            </p>
+          </div>
+        </div>
+
+        <div class="flex gap-4 p-4 bg-positive/5 rounded-xl border border-positive/20">
+          <div class="w-12 h-12 bg-positive rounded-lg flex items-center justify-center text-white text-xl flex-shrink-0">
+            👟
+          </div>
+          <div>
+            <p class="font-semibold mb-1">860 v14 <span class="text-xs font-normal text-positive ml-1">가성비 추천</span></p>
+            <p class="text-sm text-secondary">
+              <strong class="text-primary">발볼이 넓거나</strong> <strong class="text-primary">예산</strong>이 제한적이라면 최고의 선택.
+              넓은 토박스와 합리적인 가격이 장점입니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 하단 CTA -->
+    <section class="grid grid-cols-3 gap-3 mb-20">
+      <a href="prototype-detail.html" class="section-card p-4 text-center hover:border-accent transition">
+        <p class="text-sm font-medium mb-1">젤 카야노 32</p>
+        <p class="text-xs text-accent">상세 보기 →</p>
+      </a>
+      <a href="#" class="section-card p-4 text-center hover:border-accent transition">
+        <p class="text-sm font-medium mb-1">아드레날린 GTS 24</p>
+        <p class="text-xs text-accent">상세 보기 →</p>
+      </a>
+      <a href="#" class="section-card p-4 text-center hover:border-accent transition">
+        <p class="text-sm font-medium mb-1">860 v14</p>
+        <p class="text-xs text-accent">상세 보기 →</p>
+      </a>
+    </section>
+
+  </main>
+
+</body>
+</html>

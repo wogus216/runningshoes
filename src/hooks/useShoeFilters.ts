@@ -2,6 +2,7 @@
 
 import { useState, useMemo, useCallback } from 'react';
 import type { Shoe } from '@/types/shoe';
+import { useDebounce } from './useDebounce';
 
 export type SortOption =
   | 'rating-desc'
@@ -46,6 +47,9 @@ export function useShoeFilters(shoes: Shoe[]) {
   const [filters, setFilters] = useState<FilterState>(initialFilters);
   const [sortBy, setSortBy] = useState<SortOption>('rating-desc');
 
+  // 검색어 debounce (300ms)
+  const debouncedSearchQuery = useDebounce(filters.searchQuery, 300);
+
   // 필터 옵션 추출
   const filterOptions = useMemo(() => {
     const categories = Array.from(new Set(shoes.map(s => s.category)));
@@ -67,9 +71,9 @@ export function useShoeFilters(shoes: Shoe[]) {
   // 필터링된 신발 목록 (필터만 적용)
   const filteredShoesUnsorted = useMemo(() => {
     return shoes.filter(shoe => {
-      // 검색어 필터
-      if (filters.searchQuery) {
-        const query = filters.searchQuery.toLowerCase();
+      // 검색어 필터 (debounced)
+      if (debouncedSearchQuery) {
+        const query = debouncedSearchQuery.toLowerCase();
         const matchesName = shoe.name.toLowerCase().includes(query);
         const matchesBrand = shoe.brand.toLowerCase().includes(query);
         const matchesTags = shoe.tags?.some(tag => tag.toLowerCase().includes(query));
@@ -133,7 +137,7 @@ export function useShoeFilters(shoes: Shoe[]) {
 
       return true;
     });
-  }, [shoes, filters]);
+  }, [shoes, filters.categories, filters.brands, filters.priceRange, filters.toBoxWidth, filters.flatFootCompatibility, filters.carbonPlate, filters.injuryType, debouncedSearchQuery]);
 
   // 정렬 적용
   const filteredShoes = useMemo(() => {

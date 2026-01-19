@@ -48,7 +48,7 @@ export function BrandView({ shoes, onTagClick }: BrandViewProps) {
               </Badge>
             </header>
 
-            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+            <div className="mt-6 grid gap-4 sm:grid-cols-2 xl:grid-cols-3 auto-rows-fr">
               {sortedModels.map((shoe, index) => (
                 <ShoeCard key={`${brand}-${shoe.name}`} shoe={shoe} index={runningIndex + index} onTagClick={onTagClick} />
               ))}

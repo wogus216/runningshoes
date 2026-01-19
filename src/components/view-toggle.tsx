@@ -12,14 +12,14 @@ type ViewToggleProps = {
 
 const options: { label: string; value: ViewMode; description: string }[] = [
   {
-    label: "계급도 보기",
+    label: "카테고리별",
     value: "hierarchy",
-    description: "카테고리별 티어 정리",
+    description: "용도별 티어 정리",
   },
   {
-    label: "브랜드별 보기",
+    label: "브랜드별",
     value: "brand",
-    description: "브랜드 라인업 스포트라이트",
+    description: "브랜드 라인업",
   },
 ];
 

@@ -18,19 +18,21 @@ const config: Config = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
+        // 프로토타입 디자인 시스템 색상
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        tertiary: "var(--tertiary)",
+        accent: "var(--accent)",
+        positive: "var(--positive)",
+        warning: "var(--warning)",
+        negative: "var(--negative)",
+        surface: "var(--surface)",
+        border: "var(--border)",
+        background: "var(--background)",
+        foreground: "var(--foreground)",
+        // shadcn 호환
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
           foreground: "hsl(var(--destructive-foreground))",
@@ -38,10 +40,6 @@ const config: Config = {
         muted: {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -58,14 +56,9 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["var(--font-sans)", ...fontFamily.sans],
+        sans: ["Pretendard", ...fontFamily.sans],
       },
       keyframes: {
-        gradient: {
-          "0%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-          "100%": { backgroundPosition: "0% 50%" },
-        },
         "fade-in": {
           "0%": { opacity: "0" },
           "100%": { opacity: "1" },
@@ -93,7 +86,6 @@ const config: Config = {
         },
       },
       animation: {
-        gradient: "gradient 15s ease infinite",
         "fade-in": "fade-in 1s ease forwards",
         "fade-in-up": "fade-in-up 0.6s ease forwards",
         "fade-in-down": "fade-in-down 0.8s ease forwards",

@@ -80,13 +80,14 @@ export interface DetailedSpecs {
 }
 
 export interface Shoe {
-  id?: string;
-  slug?: string;
+  id: string;
+  slug: string;
   brand: string;
   name: string;
   category: string;
   rating: number;
   image?: string;
+  images?: string[];  // 여러 이미지 (슬라이더용)
   status?: ShoeStatus;
   price?: number;
 
@@ -136,3 +137,88 @@ export const categoryOrder = [
 ] as const;
 
 export type Category = typeof categoryOrder[number];
+
+// ============================================
+// 유틸리티 타입
+// ============================================
+
+/**
+ * 완전한 데이터가 있는 신발 (상세 페이지에서 모든 정보 표시 가능)
+ */
+export type CompleteShoe = Shoe & Required<Pick<Shoe,
+  | 'specs'
+  | 'biomechanics'
+  | 'injuryPrevention'
+  | 'koreanFootFit'
+  | 'targetUsers'
+  | 'priceAnalysis'
+  | 'features'
+  | 'reviews'
+>>;
+
+/**
+ * 기본 정보만 있는 신발 (카드 표시용)
+ */
+export type BasicShoe = Pick<Shoe,
+  | 'id'
+  | 'slug'
+  | 'brand'
+  | 'name'
+  | 'category'
+  | 'rating'
+  | 'image'
+  | 'price'
+  | 'tags'
+  | 'description'
+>;
+
+/**
+ * 비교용 신발 데이터
+ */
+export type ComparableShoe = Shoe & Required<Pick<Shoe, 'specs' | 'biomechanics'>>;
+
+// ============================================
+// 타입 가드
+// ============================================
+
+/**
+ * 신발이 완전한 데이터를 가지고 있는지 확인
+ */
+export function isCompleteShoe(shoe: Shoe): shoe is CompleteShoe {
+  return !!(
+    shoe.specs &&
+    shoe.biomechanics &&
+    shoe.injuryPrevention &&
+    shoe.koreanFootFit &&
+    shoe.targetUsers &&
+    shoe.priceAnalysis &&
+    shoe.features &&
+    shoe.reviews
+  );
+}
+
+/**
+ * 신발이 비교 가능한 데이터를 가지고 있는지 확인
+ */
+export function isComparableShoe(shoe: Shoe): shoe is ComparableShoe {
+  return !!(shoe.specs && shoe.biomechanics);
+}
+
+// ============================================
+// 브랜드 타입
+// ============================================
+
+export const brandList = [
+  'Nike',
+  'Adidas',
+  'Asics',
+  'New Balance',
+  'Hoka',
+  'Brooks',
+  'Saucony',
+  'On',
+  'Mizuno',
+  'Puma'
+] as const;
+
+export type Brand = typeof brandList[number];

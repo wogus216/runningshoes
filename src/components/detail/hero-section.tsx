@@ -1,18 +1,15 @@
-import Image from 'next/image';
-import { ShoppingBag } from 'lucide-react';
+'use client';
+
 import type { Shoe } from "@/types/shoe";
-import { Badge } from "@/components/ui/badge";
+import { ImageSlider } from "./image-slider";
 
 type HeroSectionProps = {
   shoe: Shoe;
 };
 
 export function HeroSection({ shoe }: HeroSectionProps) {
-  const getValueBadgeColor = (rating: number) => {
-    if (rating >= 9) return "bg-[#10b98120] text-[#10b981]";
-    if (rating >= 7) return "bg-[#3b82f620] text-[#3b82f6]";
-    return "bg-[#f59e0b20] text-[#f59e0b]";
-  };
+  // 이미지 배열 준비 (images가 있으면 사용, 없으면 image를 배열로)
+  const images = shoe.images?.length ? shoe.images : (shoe.image ? [shoe.image] : []);
 
   // 내구성 범위 계산
   const getDurabilityRange = () => {
@@ -23,80 +20,67 @@ export function HeroSection({ shoe }: HeroSectionProps) {
   };
 
   return (
-    <div className="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center animate-fade-in-up bg-white/95 rounded-3xl p-8 lg:p-12 shadow-lg">
-      {/* Shoe Image */}
-      <div className="text-center">
-        <div className="w-48 h-48 lg:w-64 lg:h-64 mx-auto bg-gradient-to-br from-[#4facfe10] to-[#4facfe30] rounded-full flex items-center justify-center drop-shadow-2xl animate-float overflow-hidden">
-          {shoe.image ? (
-            <Image
-              src={shoe.image}
-              alt={`${shoe.brand} ${shoe.name}`}
-              width={256}
-              height={256}
-              className="w-full h-full object-contain p-4"
-              priority
-            />
-          ) : (
-            <ShoppingBag className="w-24 h-24 lg:w-32 lg:h-32 text-[#4facfe]" />
-          )}
-        </div>
-      </div>
+    <section className="section-card p-6 md:p-8">
+      <div className="grid md:grid-cols-2 gap-6 md:gap-10">
+        {/* 이미지 슬라이더 */}
+        <ImageSlider
+          images={images}
+          alt={`${shoe.brand} ${shoe.name}`}
+        />
 
-      {/* Shoe Info */}
-      <div className="space-y-6">
-        <Badge className="bg-[#4facfe] text-white font-bold text-sm px-4 py-2 uppercase tracking-wider">
-          {shoe.brand}
-        </Badge>
-
-        <h1 className="text-4xl lg:text-5xl font-black text-[#4facfe]">
-          {shoe.name}
-        </h1>
-
-        <div className="flex flex-wrap gap-2">
-          {shoe.tags?.map((tag) => (
-            <Badge
-              key={tag}
-              variant="secondary"
-              className="bg-white border-2 border-[#4facfe] text-[#4facfe] font-bold px-4 py-2 hover:bg-[#4facfe] hover:text-white transition-all duration-300"
-            >
-              {tag}
-            </Badge>
-          ))}
-        </div>
-
-        <p className="text-base lg:text-lg text-gray-600 leading-relaxed">
-          {shoe.description}
-        </p>
-
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="text-3xl lg:text-4xl font-black text-[#4facfe]">
-            ₩{shoe.price?.toLocaleString()}
+        {/* 신발 정보 */}
+        <div className="flex flex-col justify-center">
+          {/* 브랜드 & 카테고리 */}
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-sm text-secondary">{shoe.brand}</span>
+            <span className="text-secondary">·</span>
+            <span className="text-sm px-2 py-0.5 bg-surface rounded text-primary">{shoe.category}</span>
           </div>
+
+          {/* 이름 */}
+          <h1 className="text-3xl md:text-4xl font-bold mb-4 text-primary">{shoe.name}</h1>
+
+          {/* 태그 */}
+          {shoe.tags && shoe.tags.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-5">
+              {shoe.tags.slice(0, 4).map((tag) => (
+                <span
+                  key={tag}
+                  className="px-3 py-1 bg-surface rounded-full text-sm text-primary"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+
+          {/* 설명 */}
+          {shoe.description && (
+            <p className="text-secondary text-sm leading-relaxed mb-6">
+              {shoe.description}
+            </p>
+          )}
+
+          {/* 가격 */}
+          <div className="flex items-baseline gap-3 mb-2">
+            <span className="text-3xl font-bold text-primary">
+              ₩{shoe.price?.toLocaleString()}
+            </span>
+            {shoe.priceAnalysis?.msrp && shoe.priceAnalysis.msrp > (shoe.price || 0) && (
+              <span className="text-sm text-tertiary line-through">
+                ₩{shoe.priceAnalysis.msrp.toLocaleString()}
+              </span>
+            )}
+          </div>
+
+          {/* 예상 수명 & 코스트 */}
           {shoe.priceAnalysis && (
-            <Badge
-              className={`font-bold px-4 py-2 text-sm ${getValueBadgeColor(shoe.priceAnalysis.valueRating)}`}
-            >
-              가성비 우수
-            </Badge>
+            <p className="text-sm text-secondary">
+              예상 수명 {getDurabilityRange()} · 약 ₩{shoe.priceAnalysis.costPerKm}/km
+            </p>
           )}
         </div>
-
-        {shoe.priceAnalysis && (
-          <div className="text-sm text-gray-500">
-            예상 수명: {getDurabilityRange()} | 코스트: 약 ₩
-            {shoe.priceAnalysis.costPerKm}/km
-          </div>
-        )}
-
-{/* 구글 애드센스용 주석 처리
-        <Button
-          size="lg"
-          className="bg-[#4facfe] hover:bg-[#3d9be8] hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-        >
-          구매하기
-        </Button>
-*/}
       </div>
-    </div>
+    </section>
   );
 }

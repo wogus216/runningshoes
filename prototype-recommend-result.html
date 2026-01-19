@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>추천 결과 - 러닝의 모든것</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#111111',
+            secondary: '#666666',
+            tertiary: '#999999',
+            accent: '#0066FF',
+            positive: '#00C853',
+            warning: '#FF9500',
+            negative: '#FF3B30',
+            surface: '#F5F5F7',
+            border: '#E5E5E5',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, sans-serif; }
+
+    .section-card {
+      background: white;
+      border: 1px solid #E5E5E5;
+      border-radius: 16px;
+    }
+
+    .match-ring {
+      background: conic-gradient(#0066FF 0deg, #0066FF calc(var(--match) * 3.6deg), #E5E5E5 calc(var(--match) * 3.6deg));
+    }
+
+    .top-pick {
+      background: linear-gradient(135deg, #0066FF08 0%, #0066FF02 100%);
+      border: 2px solid #0066FF;
+    }
+  </style>
+</head>
+<body class="bg-surface text-primary">
+
+  <!-- 헤더 -->
+  <header class="bg-white/80 backdrop-blur-lg border-b border-border sticky top-0 z-50">
+    <div class="max-w-2xl mx-auto px-4">
+      <div class="flex items-center justify-between h-14">
+        <div class="flex items-center gap-4">
+          <a href="prototype-recommend.html" class="p-2 -ml-2 hover:bg-surface rounded-full transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 19l-7-7 7-7"/>
+            </svg>
+          </a>
+          <span class="text-lg font-bold">추천 결과</span>
+        </div>
+
+        <button class="flex items-center gap-1.5 text-sm font-medium px-3 py-1.5 bg-surface rounded-full hover:bg-border transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/>
+          </svg>
+          공유
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-6">
+
+    <!-- 사용자 프로필 요약 -->
+    <section class="section-card p-5 mb-6">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="font-bold text-sm">나의 러너 프로필</h2>
+        <button class="text-xs text-accent hover:underline">수정하기</button>
+      </div>
+
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1.5 bg-surface rounded-full text-xs flex items-center gap-1">
+          <span>🏃</span> 초보 러너
+        </span>
+        <span class="px-3 py-1.5 bg-surface rounded-full text-xs flex items-center gap-1">
+          <span>📏</span> 주 20-40km
+        </span>
+        <span class="px-3 py-1.5 bg-surface rounded-full text-xs flex items-center gap-1">
+          <span>🦶</span> 정상 아치
+        </span>
+        <span class="px-3 py-1.5 bg-accent/10 text-accent rounded-full text-xs flex items-center gap-1">
+          <span>👣</span> 넓은 발볼
+        </span>
+        <span class="px-3 py-1.5 bg-surface rounded-full text-xs flex items-center gap-1">
+          <span>💪</span> 부상 이력 없음
+        </span>
+        <span class="px-3 py-1.5 bg-surface rounded-full text-xs flex items-center gap-1">
+          <span>💰</span> 15-20만원
+        </span>
+      </div>
+    </section>
+
+    <!-- AI 추천 요약 -->
+    <section class="bg-primary text-white rounded-2xl p-5 mb-6">
+      <div class="flex items-start gap-3">
+        <span class="text-2xl">🎯</span>
+        <div>
+          <p class="text-xs text-white/60 mb-1">AI 맞춤 추천</p>
+          <p class="font-medium leading-relaxed">
+            <strong>넓은 발볼</strong>과 <strong>초보 러너</strong>에 적합한 신발을 분석했습니다.
+            쿠셔닝이 좋고 안정적인 신발을 우선적으로 추천드립니다.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOP PICK -->
+    <section class="mb-6">
+      <div class="flex items-center gap-2 mb-4">
+        <span class="px-2 py-0.5 bg-accent text-white text-xs font-bold rounded">TOP PICK</span>
+        <span class="text-sm text-secondary">가장 잘 맞는 신발</span>
+      </div>
+
+      <div class="top-pick rounded-2xl p-5">
+        <div class="flex gap-4">
+          <!-- 이미지 & 매칭률 -->
+          <div class="relative flex-shrink-0">
+            <div class="w-28 h-28 bg-white rounded-xl flex items-center justify-center">
+              <span class="text-5xl">👟</span>
+            </div>
+            <!-- 매칭률 뱃지 -->
+            <div class="absolute -bottom-2 -right-2 w-12 h-12 match-ring rounded-full flex items-center justify-center" style="--match: 94">
+              <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center">
+                <span class="text-xs font-bold text-accent">94%</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 정보 -->
+          <div class="flex-1 min-w-0">
+            <p class="text-xs text-tertiary">New Balance</p>
+            <h3 class="text-lg font-bold mb-1">Fresh Foam X 1080 v14</h3>
+            <p class="text-xl font-bold text-accent mb-2">₩199,000</p>
+
+            <div class="flex flex-wrap gap-1.5">
+              <span class="px-2 py-0.5 bg-positive/10 text-positive text-xs rounded-full">넓은 토박스</span>
+              <span class="px-2 py-0.5 bg-accent/10 text-accent text-xs rounded-full">초보 추천</span>
+              <span class="px-2 py-0.5 bg-surface text-secondary text-xs rounded-full">쿠셔닝 최고</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 추천 이유 -->
+        <div class="mt-4 pt-4 border-t border-accent/20">
+          <p class="text-sm font-medium mb-2">추천 이유</p>
+          <ul class="space-y-1.5 text-sm text-secondary">
+            <li class="flex items-start gap-2">
+              <span class="text-positive">✓</span>
+              <span>넓은 토박스로 <strong class="text-primary">발볼 넓은 러너</strong>에게 최적</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-positive">✓</span>
+              <span>Fresh Foam X로 <strong class="text-primary">충격 흡수</strong> 우수, 무릎 보호</span>
+            </li>
+            <li class="flex items-start gap-2">
+              <span class="text-positive">✓</span>
+              <span>예산 범위 내 <strong class="text-primary">최고 쿠셔닝</strong> 제공</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 버튼 -->
+        <div class="flex gap-2 mt-4">
+          <a href="prototype-detail.html" class="flex-1 py-3 bg-accent text-white rounded-xl text-sm font-medium text-center hover:bg-accent/90 transition">
+            상세 정보 보기
+          </a>
+          <button class="px-4 py-3 border border-border rounded-xl text-sm font-medium hover:bg-surface transition">
+            + 비교함
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 다른 추천 -->
+    <section class="mb-6">
+      <h2 class="font-bold mb-4">이것도 괜찮아요</h2>
+
+      <div class="space-y-3">
+        <!-- 추천 2 -->
+        <div class="section-card p-4">
+          <div class="flex gap-4">
+            <div class="relative flex-shrink-0">
+              <div class="w-20 h-20 bg-surface rounded-xl flex items-center justify-center">
+                <span class="text-3xl">👟</span>
+              </div>
+              <div class="absolute -bottom-1 -right-1 w-8 h-8 match-ring rounded-full flex items-center justify-center" style="--match: 89">
+                <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-[10px] font-bold text-accent">89%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-xs text-tertiary">Hoka</p>
+                  <h3 class="font-semibold">클리프톤 10</h3>
+                </div>
+                <p class="font-bold">₩195,000</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1 mt-2">
+                <span class="px-1.5 py-0.5 bg-positive/10 text-positive text-xs rounded">가벼움</span>
+                <span class="px-1.5 py-0.5 bg-surface text-secondary text-xs rounded">쿠셔닝</span>
+              </div>
+
+              <p class="text-xs text-secondary mt-2 line-clamp-1">
+                가벼우면서도 푹신한 쿠셔닝, 메타로커로 자연스러운 롤링
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-2 mt-3 pt-3 border-t border-border">
+            <a href="#" class="flex-1 py-2 text-center text-sm text-accent font-medium hover:bg-accent/5 rounded-lg transition">
+              상세 보기
+            </a>
+            <button class="flex-1 py-2 text-center text-sm text-secondary font-medium hover:bg-surface rounded-lg transition">
+              + 비교함
+            </button>
+          </div>
+        </div>
+
+        <!-- 추천 3 -->
+        <div class="section-card p-4">
+          <div class="flex gap-4">
+            <div class="relative flex-shrink-0">
+              <div class="w-20 h-20 bg-surface rounded-xl flex items-center justify-center">
+                <span class="text-3xl">👟</span>
+              </div>
+              <div class="absolute -bottom-1 -right-1 w-8 h-8 match-ring rounded-full flex items-center justify-center" style="--match: 85">
+                <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-[10px] font-bold text-accent">85%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-xs text-tertiary">Asics</p>
+                  <h3 class="font-semibold">젤 컨텐드 9</h3>
+                </div>
+                <div class="text-right">
+                  <p class="font-bold text-positive">₩99,000</p>
+                  <p class="text-xs text-tertiary">가성비</p>
+                </div>
+              </div>
+
+              <div class="flex flex-wrap gap-1 mt-2">
+                <span class="px-1.5 py-0.5 bg-positive/10 text-positive text-xs rounded">10만원 이하</span>
+                <span class="px-1.5 py-0.5 bg-surface text-secondary text-xs rounded">입문화</span>
+              </div>
+
+              <p class="text-xs text-secondary mt-2 line-clamp-1">
+                합리적인 가격에 기본기를 갖춘 입문용 러닝화
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-2 mt-3 pt-3 border-t border-border">
+            <a href="#" class="flex-1 py-2 text-center text-sm text-accent font-medium hover:bg-accent/5 rounded-lg transition">
+              상세 보기
+            </a>
+            <button class="flex-1 py-2 text-center text-sm text-secondary font-medium hover:bg-surface rounded-lg transition">
+              + 비교함
+            </button>
+          </div>
+        </div>
+
+        <!-- 추천 4 -->
+        <div class="section-card p-4">
+          <div class="flex gap-4">
+            <div class="relative flex-shrink-0">
+              <div class="w-20 h-20 bg-surface rounded-xl flex items-center justify-center">
+                <span class="text-3xl">👟</span>
+              </div>
+              <div class="absolute -bottom-1 -right-1 w-8 h-8 match-ring rounded-full flex items-center justify-center" style="--match: 82">
+                <div class="w-6 h-6 bg-white rounded-full flex items-center justify-center">
+                  <span class="text-[10px] font-bold text-accent">82%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex-1 min-w-0">
+              <div class="flex items-start justify-between">
+                <div>
+                  <p class="text-xs text-tertiary">Nike</p>
+                  <h3 class="font-semibold">페가수스 41</h3>
+                </div>
+                <p class="font-bold">₩159,000</p>
+              </div>
+
+              <div class="flex flex-wrap gap-1 mt-2">
+                <span class="px-1.5 py-0.5 bg-warning/10 text-warning text-xs rounded">발볼 보통</span>
+                <span class="px-1.5 py-0.5 bg-surface text-secondary text-xs rounded">올라운더</span>
+              </div>
+
+              <p class="text-xs text-secondary mt-2 line-clamp-1">
+                다재다능한 데일리 러닝화, React 폼 쿠셔닝
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-2 mt-3 pt-3 border-t border-border">
+            <a href="#" class="flex-1 py-2 text-center text-sm text-accent font-medium hover:bg-accent/5 rounded-lg transition">
+              상세 보기
+            </a>
+            <button class="flex-1 py-2 text-center text-sm text-secondary font-medium hover:bg-surface rounded-lg transition">
+              + 비교함
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 비교하기 CTA -->
+    <section class="section-card p-5 mb-6">
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 bg-accent/10 rounded-xl flex items-center justify-center">
+          <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+          </svg>
+        </div>
+        <div class="flex-1">
+          <p class="font-semibold text-sm">아직 결정이 어려우신가요?</p>
+          <p class="text-xs text-secondary">추천 신발들을 나란히 비교해보세요</p>
+        </div>
+        <a href="prototype-compare.html" class="px-4 py-2 bg-accent text-white rounded-full text-sm font-medium hover:bg-accent/90 transition">
+          비교하기
+        </a>
+      </div>
+    </section>
+
+    <!-- 다시하기 -->
+    <section class="text-center mb-20">
+      <button class="text-sm text-tertiary hover:text-accent transition">
+        <svg class="w-4 h-4 inline-block mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+        </svg>
+        다시 추천받기
+      </button>
+    </section>
+
+  </main>
+
+</body>
+</html>

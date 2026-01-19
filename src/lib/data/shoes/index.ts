@@ -65,6 +65,8 @@ export type SimilarShoeInfo = {
   name: string;
   rating: number;
   category: string;
+  image?: string;
+  price?: number;
   specs?: {
     cushioning: number;
     weight: number;
@@ -72,6 +74,9 @@ export type SimilarShoeInfo = {
   };
   priceAnalysis?: {
     valueRating: number;
+  };
+  koreanFootFit?: {
+    toBoxWidth: string;
   };
 };
 
@@ -87,6 +92,8 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
         name: shoe.name,
         rating: shoe.rating,
         category: shoe.category,
+        image: shoe.image,
+        price: shoe.price,
         specs: shoe.specs ? {
           cushioning: shoe.specs.cushioning,
           weight: shoe.specs.weight,
@@ -94,6 +101,9 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
         } : undefined,
         priceAnalysis: shoe.priceAnalysis ? {
           valueRating: shoe.priceAnalysis.valueRating,
+        } : undefined,
+        koreanFootFit: shoe.koreanFootFit ? {
+          toBoxWidth: shoe.koreanFootFit.toBoxWidth,
         } : undefined,
       });
     }

@@ -1,5 +1,6 @@
 'use client';
 
+import { memo } from 'react';
 import { Scale, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { useCompare } from '@/contexts/compare-context';
@@ -11,7 +12,7 @@ type AddToCompareButtonProps = {
   className?: string;
 };
 
-export function AddToCompareButton({ shoe, variant = 'button', className }: AddToCompareButtonProps) {
+export const AddToCompareButton = memo(function AddToCompareButton({ shoe, variant = 'button', className }: AddToCompareButtonProps) {
   const { addToCompare, removeFromCompare, isInCompare, canAddMore } = useCompare();
   const shoeId = shoe.id || shoe.slug || '';
   const isAdded = isInCompare(shoeId);
@@ -66,4 +67,4 @@ export function AddToCompareButton({ shoe, variant = 'button', className }: AddT
       {isAdded ? "비교함에 추가됨" : canAddMore ? "비교하기" : "비교함 가득 참"}
     </button>
   );
-}
+});
