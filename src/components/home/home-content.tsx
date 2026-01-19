@@ -78,19 +78,19 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
   return (
     <div className="space-y-6">
       {/* 히어로 */}
-      <section className="py-8 text-center">
+      <section className="py-4 md:py-8 text-center">
         <p className="text-sm text-secondary mb-2">{initialShoes.length}개 모델 · {totalBrands}개 브랜드 · 전문 데이터 분석</p>
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight leading-tight text-primary">
           나에게 맞는 러닝화,<br/>
           <span className="text-accent">데이터로 찾다</span>
         </h1>
-        <p className="text-secondary text-sm max-w-lg mx-auto mb-6">
+        <p className="text-secondary text-sm max-w-lg mx-auto px-4 md:px-0 mb-4 md:mb-6">
           스펙, 착화감, 가성비까지 꼼꼼하게 분석해서<br className="hidden sm:block"/>
           당신에게 딱 맞는 러닝화를 찾아드려요
         </p>
 
         {/* 질문형 태그 */}
-        <div className="flex flex-wrap justify-center gap-2 mb-6">
+        <div className="flex flex-wrap justify-center gap-2 px-4 md:px-0 mb-4 md:mb-6">
           <button
             onClick={() => setSearchQuery('마라톤')}
             className="px-3 py-1.5 bg-surface rounded-full text-sm hover:bg-border transition"

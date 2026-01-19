@@ -46,10 +46,10 @@ export function QuickSpecs({ specs, koreanFootFit }: QuickSpecsProps) {
 
   return (
     <div>
-      <h2 className="font-bold mb-5 text-primary">빠른 스펙</h2>
+      <h2 className="font-bold mb-4 md:mb-5 text-primary">빠른 스펙</h2>
 
       {/* 스펙 바 */}
-      <div className="space-y-4 mb-6">
+      <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
         <SpecBar label="쿠셔닝" value={`${specs.cushioning}/10`} percentage={specs.cushioning * 10} />
         <SpecBar label="반발력" value={`${specs.responsiveness}/10`} percentage={specs.responsiveness * 10} />
         <SpecBar label="안정성" value={`${specs.stability}/10`} percentage={specs.stability * 10} color="positive" />
@@ -57,21 +57,21 @@ export function QuickSpecs({ specs, koreanFootFit }: QuickSpecsProps) {
       </div>
 
       {/* 상세 스펙 그리드 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div className="bg-surface rounded-xl p-4 text-center">
-          <p className="text-xl font-bold text-primary">{specs.weight}g</p>
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
+        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+          <p className="text-lg md:text-xl font-bold text-primary">{specs.weight}g</p>
           <p className="text-xs text-tertiary mt-1">무게 (US 9)</p>
         </div>
-        <div className="bg-surface rounded-xl p-4 text-center">
-          <p className="text-xl font-bold text-primary">40mm</p>
+        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+          <p className="text-lg md:text-xl font-bold text-primary">40mm</p>
           <p className="text-xs text-tertiary mt-1">힐 스택</p>
         </div>
-        <div className="bg-surface rounded-xl p-4 text-center">
-          <p className="text-xl font-bold text-primary">{specs.drop || 10}mm</p>
+        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+          <p className="text-lg md:text-xl font-bold text-primary">{specs.drop || 10}mm</p>
           <p className="text-xs text-tertiary mt-1">드롭</p>
         </div>
-        <div className="bg-surface rounded-xl p-4 text-center">
-          <p className={cn("text-xl font-bold", toebox.color)}>{toebox.text}</p>
+        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+          <p className={cn("text-lg md:text-xl font-bold", toebox.color)}>{toebox.text}</p>
           <p className="text-xs text-tertiary mt-1">토박스</p>
         </div>
       </div>

@@ -30,12 +30,12 @@ type ShoeDetailTabsProps = {
 };
 
 const tabs = [
-  { id: 'specs', label: '스펙' },
-  { id: 'biomechanics', label: '생체역학' },
-  { id: 'injury', label: '부상 예방' },
-  { id: 'koreanfoot', label: '한국인 발' },
-  { id: 'price', label: '가격' },
-  { id: 'reviews', label: '리뷰' },
+  { id: 'specs', label: '스펙', mobileLabel: '스펙' },
+  { id: 'biomechanics', label: '생체역학', mobileLabel: '역학' },
+  { id: 'injury', label: '부상 예방', mobileLabel: '부상' },
+  { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발형' },
+  { id: 'price', label: '가격', mobileLabel: '가격' },
+  { id: 'reviews', label: '리뷰', mobileLabel: '리뷰' },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
@@ -53,11 +53,12 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={cn(
-                "tab-btn px-5 py-3 text-sm font-medium whitespace-nowrap transition",
+                "tab-btn px-3 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-medium whitespace-nowrap transition",
                 activeTab === tab.id && "active"
               )}
             >
-              {tab.label}
+              <span className="md:hidden">{tab.mobileLabel}</span>
+              <span className="hidden md:inline">{tab.label}</span>
             </button>
           ))}
         </div>

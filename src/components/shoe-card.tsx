@@ -81,7 +81,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
       style={{ animationDelay: `${Math.min(index, 12) * 60}ms` }}
     >
       {/* 이미지 영역 - 고정 비율, 이미지 크기 통일 */}
-      <div className="aspect-square bg-white flex items-center justify-center relative flex-shrink-0 p-4">
+      <div className="aspect-square bg-white flex items-center justify-center relative flex-shrink-0 p-2 md:p-4">
         {shoe.image ? (
           <Image
             src={shoe.image}
@@ -94,12 +94,12 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         ) : (
           <span className="text-4xl">👟</span>
         )}
-        <span className="absolute top-3 left-3 px-2 py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium text-primary">
+        <span className="absolute top-2 left-2 md:top-3 md:left-3 px-1.5 md:px-2 py-0.5 md:py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium text-primary">
           {shoe.category}
         </span>
         {/* 비교 버튼 */}
         {shoe.specs && (
-          <div className="absolute top-3 right-3">
+          <div className="absolute top-2 right-2 md:top-3 md:right-3">
             <AddToCompareButton shoe={shoe} variant="icon" />
           </div>
         )}

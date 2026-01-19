@@ -20,8 +20,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
   };
 
   return (
-    <section className="section-card p-6 md:p-8">
-      <div className="grid md:grid-cols-2 gap-6 md:gap-10">
+    <section className="section-card p-4 md:p-6 lg:p-8">
+      <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {/* 이미지 슬라이더 */}
         <ImageSlider
           images={images}
@@ -62,8 +62,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
           )}
 
           {/* 가격 */}
-          <div className="flex items-baseline gap-3 mb-2">
-            <span className="text-3xl font-bold text-primary">
+          <div className="flex items-baseline gap-2 md:gap-3 mb-2">
+            <span className="text-2xl md:text-3xl font-bold text-primary">
               ₩{shoe.price?.toLocaleString()}
             </span>
             {shoe.priceAnalysis?.msrp && shoe.priceAnalysis.msrp > (shoe.price || 0) && (

@@ -58,6 +58,11 @@
     background-color: var(--surface);
     color: var(--primary);
     font-feature-settings: "rlig" 1, "calt" 0;
+    overflow-x: hidden;
+  }
+
+  html {
+    overflow-x: hidden;
   }
 
   h1,
