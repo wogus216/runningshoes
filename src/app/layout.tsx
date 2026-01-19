@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     images: [DEFAULT_OG_IMAGE],
   },
   verification: {
-    google: "", // 도메인 연결 후 Google Search Console 인증 코드 추가
+    google: "idX7BnOdE2DO1nqx_LUww1v5bmpxFW2ucMQPndpbqqI",
   },
   alternates: {
     canonical: "/",
