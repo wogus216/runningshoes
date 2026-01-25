@@ -7,3 +7,6 @@ export const SITE_DESCRIPTION = '76개 러닝화 스펙·착화감·가성비 �
 
 // OG 이미지
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-default.png`;
+
+// AdSense 설정
+export const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-5040630448523471';

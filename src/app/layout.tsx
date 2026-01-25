@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID } from "@/lib/constants";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -134,7 +134,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5040630448523471"
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />

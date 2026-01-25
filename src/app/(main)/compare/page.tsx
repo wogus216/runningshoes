@@ -2,12 +2,12 @@
 
 import { useState, useMemo, useEffect, useCallback, Suspense, DragEvent } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
-import Link from 'next/link';
 import Image from 'next/image';
 import { Search, X, Check, Link2, GripVertical } from 'lucide-react';
 import { getShoes, getShoeBySlug } from '@/lib/data/shoes';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
+import { CompareAd } from '@/components/ads/ad-unit';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 
@@ -41,11 +41,18 @@ function ComparePageContent() {
   const [draggedShoe, setDraggedShoe] = useState<Shoe | null>(null);
   const [dragOverSlot, setDragOverSlot] = useState<number | null>(null);
 
-  // URL에서 신발 로드
+  // URL에서 신발 로드 (보안: slug 형식 검증)
   useEffect(() => {
     const shoesParam = searchParams.get('shoes');
     if (shoesParam) {
-      const slugs = shoesParam.split(',');
+      const MAX_SLUGS = 4;
+      const VALID_SLUG_PATTERN = /^[a-z0-9-]+$/;
+
+      const slugs = shoesParam
+        .split(',')
+        .slice(0, MAX_SLUGS)
+        .filter(slug => VALID_SLUG_PATTERN.test(slug));
+
       const loadedShoes = slugs
         .map(slug => getShoeBySlug(slug))
         .filter((shoe): shoe is Shoe => shoe !== undefined && shoe.specs !== undefined);
@@ -327,6 +334,9 @@ function ComparePageContent() {
           </>
         )}
       </section>
+
+      {/* 광고 - 비교 결과 전 */}
+      {selectedShoes.length >= 2 && <CompareAd />}
 
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
