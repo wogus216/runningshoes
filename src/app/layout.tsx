@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Script from "next/script";
 import "@/app/globals.css";
 import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
@@ -130,22 +131,25 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <head>
-        <script
+      <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5040630448523471"
           crossOrigin="anonymous"
+          strategy="afterInteractive"
         />
-        <script
+        <Script
+          id="website-jsonld"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <script
+        <Script
+          id="organization-jsonld"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
-      </head>
-      <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
         <CompareProvider>
           {children}
           <CompareFloatingButton />

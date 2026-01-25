@@ -1,14 +1,15 @@
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import { getShoeBySlug, getShoes, getSimilarShoesData } from "@/lib/data/shoes";
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from "@/lib/constants";
-import { isCompleteShoe } from "@/types/shoe";
-import { HeroSection } from "@/components/detail/hero-section";
-import { OnelinerSummary } from "@/components/detail/oneliner-summary";
-import { CoreBoxes } from "@/components/detail/core-boxes";
-import { ShoeDetailTabs } from "@/components/detail/shoe-detail-tabs";
-import { MobileQuickActions } from "@/components/detail/mobile-quick-actions";
-import { DetailFooterAd } from "@/components/ads/ad-unit";
+import { notFound } from 'next/navigation';
+import type { Metadata } from 'next';
+import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { isCompleteShoe } from '@/types/shoe';
+import { Breadcrumb } from '@/components/detail/breadcrumb';
+import { HeroSection } from '@/components/detail/hero-section';
+import { OnelinerSummary } from '@/components/detail/oneliner-summary';
+import { CoreBoxes } from '@/components/detail/core-boxes';
+import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
+import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
+import { DetailFooterAd } from '@/components/ads/ad-unit';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -31,8 +32,8 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
 
   if (!shoe) {
     return {
-      title: "신발을 찾을 수 없습니다",
-      description: "요청하신 러닝화를 찾을 수 없습니다.",
+      title: '신발을 찾을 수 없습니다',
+      description: '요청하신 러닝화를 찾을 수 없습니다.',
     };
   }
 
@@ -68,7 +69,9 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     shoe.koreanFootFit?.toBoxWidth === 'wide' ? '발볼 넓은 러닝화' : null,
     shoe.koreanFootFit?.flatFootCompatibility === 'excellent' || shoe.koreanFootFit?.flatFootCompatibility === 'good' ? '평발 러닝화' : null,
     shoe.biomechanics?.carbonPlate ? '카본 플레이트 러닝화' : null,
-  ].filter(Boolean).join(', ');
+  ]
+    .filter(Boolean)
+    .join(', ');
 
   // 이미지 URL (첫 번째 이미지 또는 기본 이미지)
   const imageUrl = shoe.image || DEFAULT_OG_IMAGE;
@@ -141,80 +144,98 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
   // BreadcrumbList 구조화 데이터
   const breadcrumbJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    'itemListElement': [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "홈",
-        "item": SITE_URL,
+        '@type': 'ListItem',
+        'position': 1,
+        'name': '홈',
+        'item': SITE_URL,
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "러닝화",
-        "item": SITE_URL,
+        '@type': 'ListItem',
+        'position': 2,
+        'name': '러닝화',
+        'item': SITE_URL,
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": shoe.brand,
-        "item": `${SITE_URL}/brands/${shoe.brand.toLowerCase().replace(/\s+/g, '-')}`,
+        '@type': 'ListItem',
+        'position': 3,
+        'name': shoe.brand,
+        'item': `${SITE_URL}/brands/${shoe.brand.toLowerCase().replace(/\s+/g, '-')}`,
       },
       {
-        "@type": "ListItem",
-        "position": 4,
-        "name": `${shoe.brand} ${shoe.name}`,
-        "item": `${SITE_URL}/shoes/${slug}`,
+        '@type': 'ListItem',
+        'position': 4,
+        'name': `${shoe.brand} ${shoe.name}`,
+        'item': `${SITE_URL}/shoes/${slug}`,
       },
     ],
   };
 
+  // rating 값을 1-5 범위로 정규화하는 함수
+  const normalizeRating = (rating: number): number => {
+    if (rating > 5) {
+      // 100점 만점 → 5점 만점 변환 (예: 88 → 4.4)
+      const normalized = (rating / 100) * 5;
+      // 소수점 1자리로 반올림
+      return Math.round(normalized * 10) / 10;
+    }
+    return rating;
+  };
+
   // Review 구조화 데이터 (신발 리뷰 데이터 활용)
-  const reviewsJsonLd = shoe.reviews?.map((review, index) => ({
-    "@type": "Review",
-    "author": {
-      "@type": "Person",
-      "name": review.userType || `러너${index + 1}`,
-    },
-    "reviewRating": {
-      "@type": "Rating",
-      "ratingValue": review.rating || shoe.rating,
-      "bestRating": 5,
-      "worstRating": 1,
-    },
-    "reviewBody": review.text,
-  })) || [];
+  const reviewsJsonLd =
+    shoe.reviews?.map((review, index) => {
+      const ratingValue = normalizeRating(review.rating || shoe.rating);
+
+      return {
+        '@type': 'Review',
+        'author': {
+          '@type': 'Person',
+          'name': review.userType || `러너${index + 1}`,
+        },
+        'reviewRating': {
+          '@type': 'Rating',
+          'ratingValue': Math.min(5, Math.max(1, ratingValue)), // 1-5 범위 강제
+          'bestRating': 5,
+          'worstRating': 1,
+        },
+        'reviewBody': review.text,
+      };
+    }) || [];
+
+  const normalizedShoeRating = normalizeRating(shoe.rating);
 
   // Product JSON-LD 구조화 데이터 (Review 포함)
   const productJsonLd = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    "name": `${shoe.brand} ${shoe.name}`,
-    "description": shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
-    "image": shoe.image || DEFAULT_OG_IMAGE,
-    "brand": {
-      "@type": "Brand",
-      "name": shoe.brand,
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    'name': `${shoe.brand} ${shoe.name}`,
+    'description': shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
+    'image': shoe.image || DEFAULT_OG_IMAGE,
+    'brand': {
+      '@type': 'Brand',
+      'name': shoe.brand,
     },
-    "category": "러닝화",
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": shoe.rating,
-      "bestRating": 5,
-      "worstRating": 1,
-      "ratingCount": shoe.reviews?.length || 1,
-      "reviewCount": shoe.reviews?.length || 1,
+    'category': '러닝화',
+    'aggregateRating': {
+      '@type': 'AggregateRating',
+      'ratingValue': Math.min(5, Math.max(1, normalizedShoeRating)), // 1-5 범위 강제
+      'bestRating': 5,
+      'worstRating': 1,
+      'ratingCount': shoe.reviews?.length || 1,
+      'reviewCount': shoe.reviews?.length || 1,
     },
-    ...(reviewsJsonLd.length > 0 && { "review": reviewsJsonLd }),
+    ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
     ...(shoe.priceAnalysis?.msrp && {
-      "offers": {
-        "@type": "Offer",
-        "price": shoe.priceAnalysis.msrp,
-        "priceCurrency": "KRW",
-        "availability": "https://schema.org/InStock",
-        "url": `${SITE_URL}/shoes/${slug}`,
+      'offers': {
+        '@type': 'Offer',
+        'price': shoe.priceAnalysis.msrp,
+        'priceCurrency': 'KRW',
+        'availability': 'https://schema.org/InStock',
+        'url': `${SITE_URL}/shoes/${slug}`,
       },
     }),
   };
@@ -222,17 +243,14 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   return (
     <>
       {/* BreadcrumbList JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Product + Review JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
-      />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
 
       <div className="space-y-4">
+        {/* 브레드크럼 */}
+        <Breadcrumb brand={shoe.brand} category={shoe.category} shoeName={shoe.name} />
+
         {/* Hero Section */}
         <HeroSection shoe={shoe} />
 
@@ -250,9 +268,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         ) : (
           <div className="section-card p-8 lg:p-12 text-center">
             <h2 className="text-2xl font-bold mb-4 text-primary">상세 정보 준비 중</h2>
-            <p className="text-secondary">
-              이 신발의 상세 정보는 곧 업데이트될 예정입니다.
-            </p>
+            <p className="text-secondary">이 신발의 상세 정보는 곧 업데이트될 예정입니다.</p>
           </div>
         )}
 
@@ -260,17 +276,18 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         <DetailFooterAd />
 
         {/* 데이터 출처 */}
-        <section className="section-card p-5 mb-20">
+        <section className="section-card p-5">
           <div className="flex items-start gap-3">
             <span className="text-lg">📊</span>
             <div>
               <p className="font-medium text-sm mb-1 text-primary">데이터 출처</p>
-              <p className="text-xs text-secondary">
-                RunRepeat Lab Test · Doctors of Running · 한국 러너 설문 (n=94)
-              </p>
+              <p className="text-xs text-secondary">RunRepeat Lab Test · Doctors of Running · 한국 러너 설문 (n=94)</p>
             </div>
           </div>
         </section>
+
+        {/* 모바일 하단 여백 (고정 바 때문에) */}
+        <div className="h-32 md:h-0" aria-hidden="true" />
       </div>
 
       {/* 모바일 빠른 액션 버튼 */}

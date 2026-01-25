@@ -102,7 +102,111 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    similarShoes: ['new-balance-1080-v15', 'new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+  },
+  {
+    id: 'new-balance-1080-v15',
+    slug: 'new-balance-1080-v15',
+    brand: 'New Balance',
+    name: '1080 V15',
+    image: '/images/shoes/newbalance/1080v15/side.webp',
+    images: [
+      '/images/shoes/newbalance/1080v15/side.webp',
+      '/images/shoes/newbalance/1080v15/front.webp',
+      '/images/shoes/newbalance/1080v15/back.webp',
+      '/images/shoes/newbalance/1080v15/angle.webp',
+      '/images/shoes/newbalance/1080v15/outsole.webp',
+    ],
+    category: '쿠션화',
+    rating: 4.5,
+    price: 220000,
+    description: 'Fresh Foam X를 대체한 새로운 Infinion 미드솔이 적용된 뉴발란스 플래그십 쿠션화. 기존보다 가볍고 내구성이 향상되었으며, 프리미엄 어퍼로 업그레이드되었습니다.',
+    tags: ['쿠션화', '장거리', '데일리'],
+
+    specs: {
+      weight: 261,
+      cushioning: 9,
+      responsiveness: 7,
+      stability: 6,
+      drop: 6,
+      durability: 600,
+    },
+
+    biomechanics: {
+      stackHeight: {
+        heel: 40,
+        forefoot: 34,
+      },
+      drop: 6,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'Infinion (Supercritical EVA)',
+      optimalPace: '5:00-6:30 min/km',
+    },
+
+    detailedSpecs: {
+      weight: '261g (남성 US 9 기준)',
+      stackHeight: '힐 39.9mm / 포어풋 33.9mm',
+      drop: '6mm',
+      midsole: 'Infinion (슈퍼크리티컬 EVA - Fresh Foam X 대체)',
+      plate: '없음',
+      outsole: '고무 아웃솔',
+      upper: '더블 레이어 메쉬 + 거셋 텅',
+      width: '표준 (D), 와이드 (2E) 옵션',
+      durability: '600km+ (Infinion 폼으로 내구성 향상)',
+      price: '220,000원',
+      costPerKm: '약 367원/km',
+      footType: '중립',
+      landingPattern: '뒤꿈치/중족부 착지',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'excellent',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'narrow',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+      summerCompatibility: 'excellent',
+    },
+
+    priceAnalysis: {
+      msrp: 220000,
+      streetPrice: 220000,
+      costPerKm: 367,
+      valueRating: 7,
+      priceTier: 'premium',
+      alternatives: ['asics-gel-nimbus-28', 'brooks-glycerin-22', 'new-balance-880-v15'],
+      valueAdvantages: ['v14 대비 24g 경량화', '향상된 내구성', '프리미엄 어퍼'],
+    },
+
+    targetUsers: {
+      recommended: ['편안함을 최우선으로 하는 러너', '장거리 러너', '무릎 보호가 필요한 러너', '1080 시리즈 팬'],
+      notRecommended: ['발볼이 매우 넓은 러너 (와이드 옵션 필수)', '안정성이 필요한 러너', '최경량 신발을 원하는 러너'],
+    },
+
+    features: [
+      '새로운 Infinion 슈퍼크리티컬 폼으로 내구성과 반발력 지속성 향상',
+      'v14 대비 24g 경량화 (285g → 261g)',
+      '더블 레이어 메쉬 + 거셋 텅으로 프리미엄한 착화감',
+      '39.9mm 힐 스택으로 뛰어난 충격 흡수',
+      '부드러운 전환과 충분한 쿠셔닝',
+    ],
+
+    reviews: [
+      {
+        userType: 'Believe in the Run 리뷰어',
+        rating: 73,
+        text: '모든 것이 바뀌었지만 여전히 1080입니다. Infinion 폼은 Fresh Foam X보다 반발력이 오래 지속되고, 새로운 어퍼는 부드럽고 프리미엄합니다. v14보다 가벼워졌지만(261g), 핏이 좁아지고 길어진 것이 단점입니다. 발볼 넓은 러너는 반드시 와이드 옵션을 선택해야 합니다. v14에 있던 안정성이 줄어들어 다시 순수 중립화로 돌아갔습니다. 22만원에 믿을 수 있는 데일리 워크호스를 원한다면 좋은 선택이지만, 최고의 버전은 아닐 수 있습니다.',
+      },
+    ],
+
+    similarShoes: ['new-balance-1080-v14', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
   },
   {
     id: 'new-balance-1080-v14',
@@ -205,7 +309,7 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    similarShoes: ['new-balance-1080-v15', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
   },
   {
     id: 'new-balance-rebel-v5',

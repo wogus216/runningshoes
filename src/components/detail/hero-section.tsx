@@ -2,12 +2,15 @@
 
 import type { Shoe } from "@/types/shoe";
 import { ImageSlider } from "./image-slider";
+import { Scale, Layers, ArrowDownUp, Footprints } from "lucide-react";
 
 type HeroSectionProps = {
   shoe: Shoe;
 };
 
 export function HeroSection({ shoe }: HeroSectionProps) {
+  const specs = shoe.specs;
+  const koreanFootFit = shoe.koreanFootFit;
   // 이미지 배열 준비 (images가 있으면 사용, 없으면 image를 배열로)
   const images = shoe.images?.length ? shoe.images : (shoe.image ? [shoe.image] : []);
 
@@ -75,9 +78,37 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
           {/* 예상 수명 & 코스트 */}
           {shoe.priceAnalysis && (
-            <p className="text-sm text-secondary">
+            <p className="text-sm text-secondary mb-4">
               예상 수명 {getDurabilityRange()} · 약 ₩{shoe.priceAnalysis.costPerKm}/km
             </p>
+          )}
+
+          {/* 핵심 스펙 뱃지 */}
+          {specs && (
+            <div className="grid grid-cols-4 gap-2">
+              <div className="bg-surface rounded-lg p-2 text-center">
+                <Scale className="w-4 h-4 mx-auto mb-1 text-tertiary" />
+                <p className="text-sm font-bold text-primary">{specs.weight}g</p>
+                <p className="text-[10px] text-tertiary">무게</p>
+              </div>
+              <div className="bg-surface rounded-lg p-2 text-center">
+                <Layers className="w-4 h-4 mx-auto mb-1 text-tertiary" />
+                <p className="text-sm font-bold text-primary">40mm</p>
+                <p className="text-[10px] text-tertiary">스택</p>
+              </div>
+              <div className="bg-surface rounded-lg p-2 text-center">
+                <ArrowDownUp className="w-4 h-4 mx-auto mb-1 text-tertiary" />
+                <p className="text-sm font-bold text-primary">{specs.drop || 10}mm</p>
+                <p className="text-[10px] text-tertiary">드롭</p>
+              </div>
+              <div className="bg-surface rounded-lg p-2 text-center">
+                <Footprints className="w-4 h-4 mx-auto mb-1 text-tertiary" />
+                <p className={`text-sm font-bold ${koreanFootFit?.toBoxWidth === 'wide' ? 'text-positive' : koreanFootFit?.toBoxWidth === 'narrow' ? 'text-warning' : 'text-primary'}`}>
+                  {koreanFootFit?.toBoxWidth === 'wide' ? '넓음' : koreanFootFit?.toBoxWidth === 'narrow' ? '좁음' : '표준'}
+                </p>
+                <p className="text-[10px] text-tertiary">발볼</p>
+              </div>
+            </div>
           )}
         </div>
       </div>

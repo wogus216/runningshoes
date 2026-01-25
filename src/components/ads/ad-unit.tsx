@@ -15,12 +15,7 @@ interface AdUnitProps {
   className?: string;
 }
 
-export function AdUnit({
-  slot,
-  format = 'auto',
-  responsive = true,
-  className = ''
-}: AdUnitProps) {
+export function AdUnit({ slot, format = 'auto', responsive = true, className = '' }: AdUnitProps) {
   const adRef = useRef<HTMLModElement>(null);
   const isLoaded = useRef(false);
 
@@ -38,7 +33,7 @@ export function AdUnit({
   }, []);
 
   return (
-    <div className={`ad-container my-6 ${className}`}>
+    <div className={`ad-container my-4 ${className}`}>
       <ins
         ref={adRef}
         className="adsbygoogle"
@@ -54,31 +49,15 @@ export function AdUnit({
 
 // 메인 페이지 히어로 아래 광고
 export function MainHeroAd() {
-  return (
-    <AdUnit
-      slot="YOUR_AD_SLOT_1"
-      format="horizontal"
-      className="max-w-4xl mx-auto"
-    />
-  );
+  return <AdUnit slot="8834471707" format="horizontal" className="max-w-4xl mx-auto" />;
 }
 
 // 상세 페이지 스펙 아래 광고
 export function DetailSpecAd() {
-  return (
-    <AdUnit
-      slot="YOUR_AD_SLOT_2"
-      format="rectangle"
-    />
-  );
+  return <AdUnit slot="3504285605" format="auto" />;
 }
 
 // 상세 페이지 하단 광고
 export function DetailFooterAd() {
-  return (
-    <AdUnit
-      slot="YOUR_AD_SLOT_3"
-      format="horizontal"
-    />
-  );
+  return <AdUnit slot="3504285605" format="horizontal" />;
 }

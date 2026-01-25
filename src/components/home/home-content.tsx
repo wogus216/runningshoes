@@ -3,6 +3,7 @@
 import { useMemo, useState, useCallback, useEffect } from "react";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
+import { Sparkles, GitCompare, SlidersHorizontal } from "lucide-react";
 import { BrandView } from "@/components/brand-view";
 import { HierarchyView } from "@/components/hierarchy-view";
 import { ViewToggle, type ViewMode } from "@/components/view-toggle";
@@ -128,11 +129,40 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </Link>
       </section>
 
-      {/* 광고 */}
-      <MainHeroAd />
+      {/* 기능 소개 */}
+      <section className="grid grid-cols-3 gap-3 px-4 md:px-0">
+        <Link
+          href="/recommend"
+          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-accent/30 hover:shadow-sm transition text-center"
+        >
+          <span className="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center">
+            <Sparkles className="w-5 h-5 text-accent" />
+          </span>
+          <span className="text-xs md:text-sm font-medium text-primary">맞춤 추천</span>
+        </Link>
+        <Link
+          href="/compare"
+          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-positive/30 hover:shadow-sm transition text-center"
+        >
+          <span className="w-10 h-10 bg-positive/10 rounded-xl flex items-center justify-center">
+            <GitCompare className="w-5 h-5 text-positive" />
+          </span>
+          <span className="text-xs md:text-sm font-medium text-primary">신발 비교</span>
+        </Link>
+        <button
+          onClick={() => document.getElementById('filter-panel')?.scrollIntoView({ behavior: 'smooth' })}
+          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-warning/30 hover:shadow-sm transition text-center"
+        >
+          <span className="w-10 h-10 bg-warning/10 rounded-xl flex items-center justify-center">
+            <SlidersHorizontal className="w-5 h-5 text-warning" />
+          </span>
+          <span className="text-xs md:text-sm font-medium text-primary">상세 필터</span>
+        </button>
+      </section>
 
       {/* 필터 패널 */}
-      <FilterPanel
+      <div id="filter-panel">
+        <FilterPanel
         filters={filters}
         filterOptions={filterOptions}
         activeFilterCount={activeFilterCount}
@@ -145,7 +175,8 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         onToggleCarbonPlate={setCarbonPlate}
         onToggleInjuryType={toggleInjuryType}
         onReset={resetFilters}
-      />
+        />
+      </div>
 
       {/* 필터 결과 */}
       <div className="flex items-center justify-center">
@@ -176,6 +207,9 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
           <p className="text-sm text-tertiary mt-2">필터 조건을 변경해보세요</p>
         </div>
       )}
+
+      {/* 광고 - 신발 목록 아래 */}
+      <MainHeroAd />
     </div>
   );
 }
