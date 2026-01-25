@@ -286,12 +286,12 @@ export function FilterPanel({
           <Sparkles className="h-4 w-4 text-[#4facfe]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">빠른 필터</span>
         </div>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
           {filterPresets.map((preset) => (
             <button
               key={preset.id}
               onClick={() => applyPreset(preset)}
-              className="group relative rounded-full border border-white/30 bg-white/40 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10 hover:text-[#4facfe]"
+              className="group relative rounded-full border border-white/30 bg-white/40 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10 hover:text-[#4facfe] whitespace-nowrap flex-shrink-0"
               title={preset.description}
             >
               {preset.label}
@@ -365,7 +365,7 @@ export function FilterPanel({
 
         {/* 활성 필터 칩 */}
         {activeFilterCount > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-4 flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
             {filters.categories.map(cat => (
               <FilterChip key={cat} label={cat} onRemove={() => onToggleCategory(cat)} />
             ))}
@@ -641,7 +641,7 @@ function FilterButton({
 
 function FilterChip({ label, onRemove }: { label: string; onRemove: () => void }) {
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-[#4facfe]/20 px-3 py-2 text-xs font-semibold text-[#4facfe] min-h-[36px]">
+    <span className="inline-flex items-center gap-1 rounded-full bg-[#4facfe]/20 px-3 py-2 text-xs font-semibold text-[#4facfe] min-h-[36px] whitespace-nowrap flex-shrink-0">
       {label}
       <button
         onClick={onRemove}

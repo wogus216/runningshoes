@@ -17,10 +17,17 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
   return (
     <div>
       <div className="flex justify-between text-sm mb-1.5">
-        <span className="text-primary">{label}</span>
+        <span className="text-primary" id={`spec-${label}`}>{label}</span>
         <span className="font-medium text-primary">{value}</span>
       </div>
-      <div className="spec-bar">
+      <div
+        className="spec-bar"
+        role="progressbar"
+        aria-labelledby={`spec-${label}`}
+        aria-valuenow={percentage}
+        aria-valuemin={0}
+        aria-valuemax={100}
+      >
         <div
           className={cn(
             "spec-bar-fill",

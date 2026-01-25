@@ -229,10 +229,14 @@ function ComparePageContent() {
               <p className="font-medium text-sm text-primary truncate">{shoe.name}</p>
             </div>
           ))}
-          {/* 빈 슬롯 - 드롭 가능 */}
+          {/* 빈 슬롯 - 추천 신발 표시 */}
           {Array.from({ length: 4 - selectedShoes.length }).map((_, idx) => {
             const slotIndex = selectedShoes.length + idx;
             const isOver = dragOverSlot === slotIndex;
+            // 선택되지 않은 인기 신발 추천
+            const suggestedShoe = allShoes
+              .filter(s => !selectedShoes.some(sel => (sel.id || sel.slug) === (s.id || s.slug)))
+              .slice(idx, idx + 1)[0];
 
             return (
               <div
@@ -241,17 +245,33 @@ function ComparePageContent() {
                 onDragLeave={handleDragLeave}
                 onDrop={(e) => handleDrop(e, slotIndex)}
                 className={cn(
-                  "rounded-xl border-2 border-dashed p-4 flex flex-col items-center justify-center min-h-[100px] transition-all",
+                  "rounded-xl border-2 border-dashed p-4 flex flex-col items-center justify-center min-h-[100px] transition-all cursor-pointer",
                   isOver
                     ? "border-accent bg-accent/10 scale-105"
-                    : "border-border"
+                    : "border-border hover:border-accent/50 hover:bg-accent/5"
                 )}
+                onClick={() => suggestedShoe && addShoe(suggestedShoe)}
               >
-                <span className="text-sm text-tertiary">
-                  {isOver ? '여기에 놓기' : '빈 슬롯'}
-                </span>
-                {!isOver && (
-                  <span className="text-xs text-tertiary mt-1">드래그하여 추가</span>
+                {isOver ? (
+                  <span className="text-sm text-accent font-medium">여기에 놓기</span>
+                ) : suggestedShoe ? (
+                  <>
+                    <div className="w-10 h-10 bg-white rounded-lg mb-1 flex items-center justify-center overflow-hidden opacity-60">
+                      {suggestedShoe.image ? (
+                        <Image src={suggestedShoe.image} alt={suggestedShoe.name} width={40} height={40} className="object-contain" />
+                      ) : (
+                        <span className="text-lg">👟</span>
+                      )}
+                    </div>
+                    <span className="text-xs text-tertiary">{suggestedShoe.brand}</span>
+                    <span className="text-xs text-secondary truncate max-w-full">{suggestedShoe.name}</span>
+                    <span className="text-[10px] text-accent mt-1">클릭하여 추가</span>
+                  </>
+                ) : (
+                  <>
+                    <span className="text-sm text-tertiary">빈 슬롯</span>
+                    <span className="text-xs text-tertiary mt-1">드래그하여 추가</span>
+                  </>
                 )}
               </div>
             );

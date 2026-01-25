@@ -167,7 +167,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
                   e.stopPropagation();
                   onTagClick(tag);
                 }}
-                className="text-xs px-2 py-0.5 bg-surface rounded text-secondary hover:bg-border transition truncate max-w-[80px]"
+                className="text-xs px-2 py-0.5 bg-surface rounded text-primary/70 hover:bg-border hover:text-primary transition truncate max-w-[80px]"
                 aria-label={`${tag} 태그로 필터링`}
               >
                 #{tag}
