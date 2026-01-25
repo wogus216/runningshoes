@@ -210,7 +210,10 @@ function ComparePageContent() {
               className="relative bg-surface rounded-xl p-4 border border-border group"
             >
               <button
-                onClick={() => removeShoe(shoe.id || shoe.slug || '')}
+                onClick={() => {
+                  const shoeId = shoe.id || shoe.slug;
+                  if (shoeId) removeShoe(shoeId);
+                }}
                 className="absolute -top-2 -right-2 p-1 rounded-full bg-negative text-white hover:opacity-80 z-10"
               >
                 <X className="h-3 w-3" />

@@ -42,10 +42,8 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
   useEffect(() => {
     const urlView = searchParams.get('view');
     const newView: ViewMode = urlView === 'brand' ? 'brand' : 'hierarchy';
-    if (newView !== view) {
-      setView(newView);
-    }
-  }, [searchParams, view]);
+    setView(newView);
+  }, [searchParams]);
 
   const {
     filters,

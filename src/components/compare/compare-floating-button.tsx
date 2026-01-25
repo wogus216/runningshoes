@@ -22,6 +22,7 @@ export function CompareFloatingButton() {
             <button
               onClick={clearCompare}
               className="text-xs text-tertiary hover:text-negative"
+              aria-label="비교함 전체 삭제"
             >
               전체 삭제
             </button>
@@ -40,6 +41,7 @@ export function CompareFloatingButton() {
                 <button
                   onClick={() => removeFromCompare(shoe.id || shoe.slug || '')}
                   className="ml-2 text-tertiary hover:text-negative"
+                  aria-label={`${shoe.name} 비교함에서 제거`}
                 >
                   <X className="h-4 w-4" />
                 </button>

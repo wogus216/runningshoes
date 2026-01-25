@@ -14,15 +14,26 @@ import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
 import { DetailSpecAd } from '@/components/ads/ad-unit';
 
-// Recharts가 무거워서 dynamic import로 분리
-const SpecRadarChart = dynamic(() => import('@/components/detail/spec-radar-chart').then(mod => ({ default: mod.SpecRadarChart })), {
-  loading: () => (
-    <div className="h-[300px] flex items-center justify-center text-tertiary">
-      차트 로딩 중...
-    </div>
-  ),
-  ssr: false,
-});
+// Recharts가 무거워서 dynamic import로 분리 (에러 처리 포함)
+const SpecRadarChart = dynamic(
+  () => import('@/components/detail/spec-radar-chart')
+    .then(mod => ({ default: mod.SpecRadarChart }))
+    .catch(() => ({
+      default: () => (
+        <div className="h-[300px] flex items-center justify-center text-tertiary">
+          차트를 불러올 수 없습니다
+        </div>
+      )
+    })),
+  {
+    loading: () => (
+      <div className="h-[300px] flex items-center justify-center text-tertiary">
+        차트 로딩 중...
+      </div>
+    ),
+    ssr: false,
+  }
+);
 
 type ShoeDetailTabsProps = {
   shoe: Shoe;

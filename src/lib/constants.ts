@@ -8,5 +8,11 @@ export const SITE_DESCRIPTION = '76개 러닝화 스펙·착화감·가성비 �
 // OG 이미지
 export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-default.png`;
 
-// AdSense 설정
-export const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || 'ca-pub-5040630448523471';
+// AdSense 설정 (공개 ID - 페이지 소스에 노출되므로 폴백 허용)
+export const ADSENSE_CLIENT_ID = (() => {
+  const envId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  if (!envId && typeof window !== 'undefined') {
+    console.warn('[AdSense] NEXT_PUBLIC_ADSENSE_CLIENT_ID 환경 변수가 설정되지 않았습니다.');
+  }
+  return envId || 'ca-pub-5040630448523471';
+})();

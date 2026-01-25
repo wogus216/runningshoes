@@ -45,6 +45,8 @@ function AdBlockMessage() {
       <button
         onClick={() => setShowHelp(!showHelp)}
         className="mt-2 text-accent text-xs hover:underline"
+        aria-expanded={showHelp}
+        aria-label={showHelp ? '도움말 닫기' : '광고 차단 해제 방법 보기'}
       >
         {showHelp ? '닫기' : '광고 차단 해제 방법'}
       </button>
@@ -101,13 +103,15 @@ export function AdUnit({
   useEffect(() => {
     if (!isVisible || isLoaded.current) return;
 
+    let timeoutId: NodeJS.Timeout;
+
     try {
       if (typeof window !== 'undefined' && adRef.current) {
         (window.adsbygoogle = window.adsbygoogle || []).push({});
         isLoaded.current = true;
 
         // AdBlock 감지: 2초 후 광고 높이 확인
-        setTimeout(() => {
+        timeoutId = setTimeout(() => {
           const adElement = adRef.current;
           if (adElement) {
             const rect = adElement.getBoundingClientRect();
@@ -119,10 +123,16 @@ export function AdUnit({
         }, 2000);
       }
     } catch (error) {
-      console.error('AdSense error:', error);
+      if (process.env.NODE_ENV === 'development') {
+        console.error('AdSense error:', error);
+      }
       setIsAdBlocked(true);
       setIsLoading(false);
     }
+
+    return () => {
+      if (timeoutId) clearTimeout(timeoutId);
+    };
   }, [isVisible]);
 
   // AdSense 스크립트 존재 확인
