@@ -12,6 +12,7 @@ import { useShoeFilters } from "@/hooks/useShoeFilters";
 import { categoryOrder, getBrandsFromShoes } from "@/lib/data/shoes";
 import type { Shoe } from "@/types/shoe";
 import { MainHeroAd, MainMidListAd } from "@/components/ads/ad-unit";
+import { TechBanner } from "@/components/home/tech-banner";
 
 interface HomeContentProps {
   initialShoes: Shoe[];
@@ -157,6 +158,9 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
           <span className="text-xs md:text-sm font-medium text-primary">상세 필터</span>
         </button>
       </section>
+
+      {/* 러닝 신발 테크 배너 */}
+      <TechBanner />
 
       {/* 필터 패널 */}
       <div id="filter-panel">

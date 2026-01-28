@@ -7,15 +7,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '클리프톤 10',
     image: '/images/shoes/hoka/clifton10/side.webp',
-    images: [
-      '/images/shoes/hoka/clifton10/side.webp',
-      '/images/shoes/hoka/clifton10/front.webp',
-      '/images/shoes/hoka/clifton10/back.webp',
-      '/images/shoes/hoka/clifton10/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/clifton10/side.webp', '/images/shoes/hoka/clifton10/front.webp', '/images/shoes/hoka/clifton10/back.webp', '/images/shoes/hoka/clifton10/outsole.webp'],
     category: '입문화',
     rating: 5,
-    price: 189000,
+    price: 199000,
     description: '호카의 대표 입문화로, 가볍고 푹신한 쿠셔닝과 로커 기술로 편안한 러닝을 제공합니다. 초보 러너부터 회복 러닝까지 폭넓게 활용 가능합니다.',
     tags: ['입문화', '맥시멀 쿠셔닝', '로커 기술'],
 
@@ -63,8 +58,8 @@ export const hokaShoes: Shoe[] = [
     features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감'],
 
     priceAnalysis: {
-      msrp: 189000,
-      streetPrice: 160000,
+      msrp: 199000,
+      streetPrice: 189000,
       costPerKm: 320,
       valueRating: 8,
       priceTier: 'mid',
@@ -113,12 +108,7 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '본디 9',
     image: '/images/shoes/hoka/bondi9/side.webp',
-    images: [
-      '/images/shoes/hoka/bondi9/side.webp',
-      '/images/shoes/hoka/bondi9/front.webp',
-      '/images/shoes/hoka/bondi9/back.webp',
-      '/images/shoes/hoka/bondi9/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/bondi9/side.webp', '/images/shoes/hoka/bondi9/front.webp', '/images/shoes/hoka/bondi9/back.webp', '/images/shoes/hoka/bondi9/outsole.webp'],
     category: '쿠션화',
     rating: 5,
     price: 229000,
@@ -219,15 +209,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '마하 6',
     image: '/images/shoes/hoka/mach6/side.webp',
-    images: [
-      '/images/shoes/hoka/mach6/side.webp',
-      '/images/shoes/hoka/mach6/front.webp',
-      '/images/shoes/hoka/mach6/top.webp',
-      '/images/shoes/hoka/mach6/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/mach6/side.webp', '/images/shoes/hoka/mach6/front.webp', '/images/shoes/hoka/mach6/top.webp', '/images/shoes/hoka/mach6/outsole.webp'],
     category: '데일리',
     rating: 4,
-    price: 199000,
+    price: 185000,
     description: '가볍고 반응성 좋은 데일리 트레이너입니다. 템포 러닝부터 일상 훈련까지 다양하게 활용 가능한 올라운더입니다.',
     tags: ['데일리 트레이너', '경량', '반응성'],
 
@@ -275,8 +260,8 @@ export const hokaShoes: Shoe[] = [
     features: ['경량 디자인', 'Supercritical EVA', '메타 로커', '다용도 활용'],
 
     priceAnalysis: {
-      msrp: 199000,
-      streetPrice: 170000,
+      msrp: 185000,
+      streetPrice: 156500,
       costPerKm: 380,
       valueRating: 8,
       priceTier: 'mid',
@@ -325,15 +310,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '아라히 8',
     image: '/images/shoes/hoka/arahi8/side.webp',
-    images: [
-      '/images/shoes/hoka/arahi8/side.webp',
-      '/images/shoes/hoka/arahi8/front.webp',
-      '/images/shoes/hoka/arahi8/back.webp',
-      '/images/shoes/hoka/arahi8/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/arahi8/side.webp', '/images/shoes/hoka/arahi8/front.webp', '/images/shoes/hoka/arahi8/back.webp', '/images/shoes/hoka/arahi8/outsole.webp'],
     category: '안정화',
     rating: 5,
-    price: 189000,
+    price: 199000,
     description: 'H-Frame 안정화 시스템을 탑재한 호카의 라이트 안정화. 전작 대비 더 부드러운 폼과 높아진 스택으로 평발/과내전 러너에게 쿠셔닝과 안정성을 동시에 제공합니다.',
     tags: ['안정화', '라이트 스태빌리티', 'H-Frame', '평발'],
     specs: {
@@ -371,7 +351,7 @@ export const hokaShoes: Shoe[] = [
     },
     features: ['H-Frame 안정화', '39.4mm 힐 스택', 'Early-Stage Meta Rocker', '11.3mm 하이드롭', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 189000,
+      msrp: 199000,
       streetPrice: 160000,
       costPerKm: 290,
       valueRating: 9,
@@ -428,15 +408,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '가비오타 6',
     image: '/images/shoes/hoka/gaviota6/side.webp',
-    images: [
-      '/images/shoes/hoka/gaviota6/side.webp',
-      '/images/shoes/hoka/gaviota6/front.webp',
-      '/images/shoes/hoka/gaviota6/top.webp',
-      '/images/shoes/hoka/gaviota6/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/gaviota6/side.webp', '/images/shoes/hoka/gaviota6/front.webp', '/images/shoes/hoka/gaviota6/top.webp', '/images/shoes/hoka/gaviota6/outsole.webp'],
     category: '안정화',
     rating: 4,
-    price: 219000,
+    price: 239000,
     description: '호카의 프리미엄 안정화로, 과내전 러너를 위한 J-Frame 기술을 탑재했습니다. 안정성과 쿠셔닝을 동시에 제공합니다.',
     tags: ['안정화', '과내전 교정', 'J-Frame'],
 
@@ -484,8 +459,8 @@ export const hokaShoes: Shoe[] = [
     features: ['J-Frame 안정화 기술', '낮은 드롭 (2mm)', '듀얼 폼 시스템', '넓은 베이스'],
 
     priceAnalysis: {
-      msrp: 219000,
-      streetPrice: 185000,
+      msrp: 239000,
+      streetPrice: 229000,
       costPerKm: 370,
       valueRating: 7,
       priceTier: 'high',
@@ -529,15 +504,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '마하 X 3',
     image: '/images/shoes/hoka/machX3/side.webp',
-    images: [
-      '/images/shoes/hoka/machX3/side.webp',
-      '/images/shoes/hoka/machX3/front.webp',
-      '/images/shoes/hoka/machX3/top.webp',
-      '/images/shoes/hoka/machX3/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/machX3/side.webp', '/images/shoes/hoka/machX3/front.webp', '/images/shoes/hoka/machX3/top.webp', '/images/shoes/hoka/machX3/outsole.webp'],
     category: '쿠션화',
     rating: 5,
-    price: 279000,
+    price: 249000,
     description: '레이싱과 훈련의 경계를 넘나드는 슈퍼트레이너입니다. PEBA 폼과 Pebax 플레이트로 레이싱화 수준의 반응성을 제공하면서도 내구성이 뛰어납니다.',
     tags: ['슈퍼트레이너', 'PEBA 폼', 'Pebax 플레이트'],
 
@@ -585,8 +555,8 @@ export const hokaShoes: Shoe[] = [
     features: ['PEBA 폼', 'Pebax 플레이트', '레이싱급 반응성', '훈련용 내구성'],
 
     priceAnalysis: {
-      msrp: 279000,
-      streetPrice: 240000,
+      msrp: 249000,
+      streetPrice: 189200,
       costPerKm: 480,
       valueRating: 8,
       priceTier: 'high',
@@ -635,15 +605,10 @@ export const hokaShoes: Shoe[] = [
     brand: 'Hoka',
     name: '로켓 X 3',
     image: '/images/shoes/hoka/rocketX3/side.webp',
-    images: [
-      '/images/shoes/hoka/rocketX3/side.webp',
-      '/images/shoes/hoka/rocketX3/front.webp',
-      '/images/shoes/hoka/rocketX3/top.webp',
-      '/images/shoes/hoka/rocketX3/outsole.webp',
-    ],
+    images: ['/images/shoes/hoka/rocketX3/side.webp', '/images/shoes/hoka/rocketX3/front.webp', '/images/shoes/hoka/rocketX3/top.webp', '/images/shoes/hoka/rocketX3/outsole.webp'],
     category: '레이싱',
     rating: 5,
-    price: 319000,
+    price: 299000,
     description: '호카의 플래그십 레이싱화로, 듀얼 레이어 PEBA 폼과 카본 플레이트로 극강의 반응성과 추진력을 제공합니다. 마라톤 기록 단축을 위한 최고의 선택입니다.',
     tags: ['레이싱', '카본 플레이트', 'PEBA 폼'],
 
@@ -691,8 +656,8 @@ export const hokaShoes: Shoe[] = [
     features: ['듀얼 레이어 PEBA', '카본 플레이트', '초경량 220g', '극강 반응성'],
 
     priceAnalysis: {
-      msrp: 319000,
-      streetPrice: 280000,
+      msrp: 299000,
+      streetPrice: 289000,
       costPerKm: 930,
       valueRating: 7,
       priceTier: 'premium',

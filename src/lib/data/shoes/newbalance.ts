@@ -16,7 +16,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
     category: '입문화',
     rating: 4,
-    price: 169000,
+    price: 189000,
     description: '뉴발란스의 대표적인 입문용 러닝화로, Fresh Foam X 미드솔이 편안한 쿠셔닝을 제공합니다. 안정성과 쿠셔닝의 균형이 좋아 첫 러닝화로 적합합니다.',
     tags: ['입문화', '데일리 러닝', '안정적'],
 
@@ -51,8 +51,8 @@ export const newbalanceShoes: Shoe[] = [
       upper: '엔지니어드 메쉬',
       width: '표준 (D), 와이드 (2E) 옵션',
       durability: '600km+',
-      price: '169,000원',
-      costPerKm: '약 280원/km',
+      price: '189,000원',
+      costPerKm: '약 315원/km',
       footType: '중립, 약간의 과내전',
       landingPattern: '뒤꿈치/중족부 착지',
     },
@@ -73,10 +73,10 @@ export const newbalanceShoes: Shoe[] = [
     },
 
     priceAnalysis: {
-      msrp: 169000,
-      streetPrice: 169000,
-      costPerKm: 280,
-      valueRating: 9,
+      msrp: 189000,
+      streetPrice: 189000,
+      costPerKm: 315,
+      valueRating: 8,
       priceTier: 'mid',
       alternatives: ['brooks-ghost-17', 'asics-gel-nimbus-28'],
       valueAdvantages: ['맥스 쿠션 중 합리적 가격', '다양한 발볼 옵션', '무릎 보호에 탁월'],
@@ -109,22 +109,24 @@ export const newbalanceShoes: Shoe[] = [
     slug: 'new-balance-1080-v15',
     brand: 'New Balance',
     name: '1080 V15',
-    image: '/images/shoes/newbalance/1080v15/side.webp',
+    image: '/images/shoes/newbalance/1080v15/side2.webp',
     images: [
+      '/images/shoes/newbalance/1080v15/side2.webp',
       '/images/shoes/newbalance/1080v15/side.webp',
-      '/images/shoes/newbalance/1080v15/front.webp',
       '/images/shoes/newbalance/1080v15/back.webp',
       '/images/shoes/newbalance/1080v15/angle.webp',
+      '/images/shoes/newbalance/1080v15/top.webp',
       '/images/shoes/newbalance/1080v15/outsole.webp',
     ],
     category: '쿠션화',
-    rating: 4.5,
-    price: 220000,
-    description: 'Fresh Foam X를 대체한 새로운 Infinion 미드솔이 적용된 뉴발란스 플래그십 쿠션화. 기존보다 가볍고 내구성이 향상되었으며, 프리미엄 어퍼로 업그레이드되었습니다.',
-    tags: ['쿠션화', '장거리', '데일리'],
+    rating: 4.9,
+    price: 209000,
+    description:
+      '질소 주입 인피니온(슈퍼크리티컬) 폼으로 향상된 쿠셔닝과 에너지 반환을 제공하는 뉴발란스 플래그십 쿠션화. v14 대비 69g 경량화되었으며, 2E/4E 와이드 옵션으로 발볼 넓은 러너도 편안하게 착용 가능합니다.',
+    tags: ['쿠션화', '장거리', '데일리', '경량'],
 
     specs: {
-      weight: 261,
+      weight: 216,
       cushioning: 9,
       responsiveness: 7,
       stability: 6,
@@ -140,22 +142,22 @@ export const newbalanceShoes: Shoe[] = [
       drop: 6,
       carbonPlate: false,
       plateType: null,
-      midsoleType: 'Infinion (Supercritical EVA)',
+      midsoleType: 'Infinion (질소 주입 슈퍼크리티컬 폼)',
       optimalPace: '5:00-6:30 min/km',
     },
 
     detailedSpecs: {
-      weight: '261g (남성 US 9 기준)',
-      stackHeight: '힐 39.9mm / 포어풋 33.9mm',
+      weight: '216g (남성 기준) / 208g (여성 기준)',
+      stackHeight: '힐 40mm / 포어풋 34mm',
       drop: '6mm',
-      midsole: 'Infinion (슈퍼크리티컬 EVA - Fresh Foam X 대체)',
+      midsole: '인피니온 (질소 주입 슈퍼크리티컬 폼) - 향상된 쿠셔닝, 에너지 반환, 반응성, 경량화',
       plate: '없음',
-      outsole: '고무 아웃솔',
-      upper: '더블 레이어 메쉬 + 거셋 텅',
-      width: '표준 (D), 와이드 (2E) 옵션',
-      durability: '600km+ (Infinion 폼으로 내구성 향상)',
-      price: '220,000원',
-      costPerKm: '약 367원/km',
+      outsole: '고무 아웃솔 (전족부 접지 면적 효율 개선, 힐 안정성 보강)',
+      upper: 'Breathable Mesh + 리플렉티브 디테일',
+      width: '2E(약간 넓음), 4E(넓음) 옵션',
+      durability: '600km+',
+      price: '209,000원',
+      costPerKm: '약 348원/km',
       footType: '중립',
       landingPattern: '뒤꿈치/중족부 착지',
     },
@@ -168,7 +170,7 @@ export const newbalanceShoes: Shoe[] = [
     },
 
     koreanFootFit: {
-      toBoxWidth: 'narrow',
+      toBoxWidth: 'standard',
       flatFootCompatibility: 'good',
       wideOptions: true,
       winterCompatibility: 'good',
@@ -176,33 +178,33 @@ export const newbalanceShoes: Shoe[] = [
     },
 
     priceAnalysis: {
-      msrp: 220000,
-      streetPrice: 220000,
-      costPerKm: 367,
-      valueRating: 7,
+      msrp: 209000,
+      streetPrice: 209000,
+      costPerKm: 348,
+      valueRating: 8,
       priceTier: 'premium',
       alternatives: ['asics-gel-nimbus-28', 'brooks-glycerin-22', 'new-balance-880-v15'],
-      valueAdvantages: ['v14 대비 24g 경량화', '향상된 내구성', '프리미엄 어퍼'],
+      valueAdvantages: ['v14 대비 69g 경량화 (285g → 216g)', '향상된 쿠셔닝과 에너지 반환', '2E/4E 발볼 옵션'],
     },
 
     targetUsers: {
-      recommended: ['편안함을 최우선으로 하는 러너', '장거리 러너', '무릎 보호가 필요한 러너', '1080 시리즈 팬'],
-      notRecommended: ['발볼이 매우 넓은 러너 (와이드 옵션 필수)', '안정성이 필요한 러너', '최경량 신발을 원하는 러너'],
+      recommended: ['편안함을 최우선으로 하는 러너', '장거리 러너', '무릎 보호가 필요한 러너', '1080 시리즈 팬', '가벼운 쿠션화를 원하는 러너'],
+      notRecommended: ['안정성이 필요한 러너', '최대 반발력을 원하는 러너'],
     },
 
     features: [
-      '새로운 Infinion 슈퍼크리티컬 폼으로 내구성과 반발력 지속성 향상',
-      'v14 대비 24g 경량화 (285g → 261g)',
-      '더블 레이어 메쉬 + 거셋 텅으로 프리미엄한 착화감',
-      '39.9mm 힐 스택으로 뛰어난 충격 흡수',
-      '부드러운 전환과 충분한 쿠셔닝',
+      '질소 주입 인피니온 슈퍼크리티컬 폼 - 향상된 쿠셔닝, 에너지 반환, 통기성',
+      'v14 대비 69g 경량화 (285g → 216g)',
+      '2E(약간 넓음), 4E(넓음) 발볼 옵션으로 한국인 발에 적합',
+      'Breathable Mesh 갑피 + 리플렉티브 디테일',
+      '힐 안정성 보강된 아웃솔 설계',
     ],
 
     reviews: [
       {
-        userType: 'Believe in the Run 리뷰어',
-        rating: 73,
-        text: '모든 것이 바뀌었지만 여전히 1080입니다. Infinion 폼은 Fresh Foam X보다 반발력이 오래 지속되고, 새로운 어퍼는 부드럽고 프리미엄합니다. v14보다 가벼워졌지만(261g), 핏이 좁아지고 길어진 것이 단점입니다. 발볼 넓은 러너는 반드시 와이드 옵션을 선택해야 합니다. v14에 있던 안정성이 줄어들어 다시 순수 중립화로 돌아갔습니다. 22만원에 믿을 수 있는 데일리 워크호스를 원한다면 좋은 선택이지만, 최고의 버전은 아닐 수 있습니다.',
+        userType: 'NB Korea 고객 리뷰',
+        rating: 98,
+        text: '전 모델에 비해서 날렵해지고 쿠션이 상당히 좋아졌습니다. 처음 신었을때는 너무 이질적이다고 생각했는데 가볍게 10km 정도 뛰니까 어느정도 적응되고 만족스러운 정도로 꺼졌습니다. 발볼 넓으신분들은 4E 그렇지 않으신분들은 2E 가주세요. 95%가 "아주 좋아요"라고 평가 (58개 리뷰 기준, 4.9점).',
       },
     ],
 
@@ -223,7 +225,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
     category: '쿠션화',
     rating: 5,
-    price: 219000,
+    price: 199000,
     description: '뉴발란스 최고급 쿠션화로, Fresh Foam X 미드솔이 풍부한 쿠셔닝과 부드러운 착지감을 제공합니다. 장거리 러닝에 최적화되어 있습니다.',
     tags: ['쿠션화', '장거리', '프리미엄'],
 
@@ -280,8 +282,8 @@ export const newbalanceShoes: Shoe[] = [
     },
 
     priceAnalysis: {
-      msrp: 219000,
-      streetPrice: 219000,
+      msrp: 199000,
+      streetPrice: 199000,
       costPerKm: 400,
       valueRating: 8,
       priceTier: 'premium',
@@ -326,7 +328,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
     category: '데일리',
     rating: 4,
-    price: 179000,
+    price: 189000,
     description: 'FuelCell 폼을 사용한 경량 데일리 트레이너로, PEBA+EVA 블렌드가 반발력과 쿠셔닝의 균형을 제공합니다. 빠른 페이스의 훈련에 적합합니다.',
     tags: ['데일리', '경량', '반발력'],
 
@@ -361,8 +363,8 @@ export const newbalanceShoes: Shoe[] = [
       upper: '엔지니어드 메쉬',
       width: '표준 (D)',
       durability: '500km+',
-      price: '179,000원',
-      costPerKm: '약 360원/km',
+      price: '199,000원',
+      costPerKm: '약 398원/km',
       footType: '중립',
       landingPattern: '중족부/전족부 착지',
     },
@@ -377,19 +379,19 @@ export const newbalanceShoes: Shoe[] = [
     koreanFootFit: {
       toBoxWidth: 'standard',
       flatFootCompatibility: 'good',
-      wideOptions: true,
+      wideOptions: false,
       winterCompatibility: 'good',
       summerCompatibility: 'fair',
     },
 
     priceAnalysis: {
-      msrp: 179000,
+      msrp: 189000,
       streetPrice: 179000,
-      costPerKm: 360,
-      valueRating: 9,
+      costPerKm: 398,
+      valueRating: 8,
       priceTier: 'mid',
       alternatives: ['saucony-kinvara-16', 'hoka-mach-6', 'asics-novablast-5'],
-      valueAdvantages: ['v4 대비 모든 단점 개선', '같은 가격 유지', '경량 + 소프트 폼의 조화'],
+      valueAdvantages: ['v4 대비 모든 단점 개선', '경량 + 소프트 폼의 조화'],
     },
 
     targetUsers: {
@@ -638,7 +640,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 5,
-    price: 299000,
+    price: 319000,
     description: '뉴발란스 최고의 레이싱화로, 100% PEBA FuelCell 폼과 카본 플레이트가 최상의 에너지 리턴을 제공합니다. 마라톤 기록 단축을 목표로 하는 러너에게 추천합니다.',
     tags: ['레이싱', '카본 플레이트', '엘리트'],
 
@@ -695,7 +697,7 @@ export const newbalanceShoes: Shoe[] = [
     },
 
     priceAnalysis: {
-      msrp: 299000,
+      msrp: 319000,
       streetPrice: 299000,
       costPerKm: 997,
       valueRating: 7,
@@ -727,5 +729,5 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
-  }
+  },
 ];

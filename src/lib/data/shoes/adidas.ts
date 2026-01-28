@@ -7,13 +7,10 @@ export const adidasShoes: Shoe[] = [
     brand: 'Adidas',
     name: '슈퍼노바 라이즈 3',
     image: '/images/shoes/adidas/supernovarise3/main.webp',
-    images: [
-      '/images/shoes/adidas/supernovarise3/main.webp',
-      '/images/shoes/adidas/supernovarise3/supernova2.webp',
-    ],
+    images: ['/images/shoes/adidas/supernovarise3/main.webp', '/images/shoes/adidas/supernovarise3/supernova2.webp'],
     category: '쿠션화',
     rating: 5,
-    price: 169000,
+    price: 159000,
     description: 'Dreamstrike+ 폼이 20% 더 부드럽고 탄력 있게 업그레이드된 Adidas의 프리미엄 쿠션화. 힐 37mm, 포어풋 29mm의 넉넉한 스택으로 장거리 러너와 무릎 보호가 필요한 러너에게 최적.',
     tags: ['쿠션화', '장거리', '입문화', '무릎 보호'],
     specs: {
@@ -51,7 +48,7 @@ export const adidasShoes: Shoe[] = [
     },
     features: ['Dreamstrike+ 20% 업그레이드', '37mm 힐 스택', 'PRIMEWEAVE 어퍼', '거셋 텅', '풀 아웃솔 커버리지'],
     priceAnalysis: {
-      msrp: 169000,
+      msrp: 159000,
       streetPrice: 145000,
       costPerKm: 260,
       valueRating: 8,
@@ -110,7 +107,7 @@ export const adidasShoes: Shoe[] = [
     image: '/images/shoes/adidas/supernovarise2.webp',
     category: '입문화',
     rating: 4,
-    price: 159000,
+    price: 149000,
     description: 'Dreamstrike+ 폼을 탑재한 Adidas의 주력 입문화. 부드러운 쿠셔닝과 안정적인 승차감으로 장거리 입문자에게 최적.',
     tags: ['입문화', '쿠셔닝', '장거리'],
     specs: {
@@ -148,7 +145,7 @@ export const adidasShoes: Shoe[] = [
     },
     features: ['Dreamstrike+ 폼', '두꺼운 쿠셔닝', '와이드 옵션', '안정적인 라이드'],
     priceAnalysis: {
-      msrp: 159000,
+      msrp: 149000,
       streetPrice: 135000,
       costPerKm: 265,
       valueRating: 8,
@@ -302,14 +299,10 @@ export const adidasShoes: Shoe[] = [
     brand: 'Adidas',
     name: '보스턴 13',
     image: '/images/shoes/adidas/boston13/boston1.webp',
-    images: [
-      '/images/shoes/adidas/boston13/boston1.webp',
-      '/images/shoes/adidas/boston13/boston2.webp',
-      '/images/shoes/adidas/boston13/boston3.webp',
-    ],
+    images: ['/images/shoes/adidas/boston13/boston1.webp', '/images/shoes/adidas/boston13/boston2.webp', '/images/shoes/adidas/boston13/boston3.webp'],
     category: '데일리',
     rating: 5,
-    price: 189000,
+    price: 179000,
     description: 'Adidas의 대표 템포 트레이너. Lightstrike Pro와 카본 Energy Rods 2.0으로 훈련과 레이스 모두에 적합한 만능 러닝화.',
     tags: ['데일리', '템포', '다목적'],
     specs: {
@@ -347,7 +340,7 @@ export const adidasShoes: Shoe[] = [
     },
     features: ['Lightstrike Pro', '카본 Energy Rods 2.0', '254g', '훈련/레이스 겸용'],
     priceAnalysis: {
-      msrp: 189000,
+      msrp: 179000,
       streetPrice: 165000,
       costPerKm: 343,
       valueRating: 9,
@@ -406,13 +399,15 @@ export const adidasShoes: Shoe[] = [
     image: '/images/shoes/adidas/evosl/side.webp',
     images: [
       '/images/shoes/adidas/evosl/side.webp',
+      '/images/shoes/adidas/evosl/angle.webp',
+      '/images/shoes/adidas/evosl/back.webp',
       '/images/shoes/adidas/evosl/outsole.webp',
       '/images/shoes/adidas/evosl/top.webp',
-      '/images/shoes/adidas/evosl/pair.webp',
+      '/images/shoes/adidas/evosl/detail.webp',
     ],
     category: '데일리',
     rating: 5,
-    price: 150000,
+    price: 209000,
     description: '100% Lightstrike Pro 미드솔과 컨티넨탈 아웃솔을 갖춘 혁신적 가성비 신발. 데일리 트레이너 가격에 슈퍼폼 성능을 제공하며, 족저근막염 예방에도 탁월.',
     tags: ['데일리', '경량', '가성비', '다목적'],
     specs: {
@@ -448,7 +443,7 @@ export const adidasShoes: Shoe[] = [
       recommended: ['다목적 러너', '가성비 중시', '데일리~템포런', '장거리 러닝', '족저근막염 예방'],
       notRecommended: ['안정성 필요', '과내전 러너'],
     },
-    features: ['100% Lightstrike Pro', '초경량 223g', '컨티넨탈 러버', '74% 에너지 리턴', '와이드 옵션'],
+    features: ['100% Lightstrike Pro', '초경량 223g', '컨티넨탈 러버', '83% 에너지 리턴', '와이드 옵션'],
     priceAnalysis: {
       msrp: 150000,
       streetPrice: 130000,
@@ -476,7 +471,7 @@ export const adidasShoes: Shoe[] = [
       {
         userType: 'RunRepeat 전문 리뷰어',
         rating: 93,
-        text: '2024년 러닝화 가성비 끝판왕입니다. 100% Lightstrike Pro(아디오스 프로 3와 동일 폼)를 223g 초경량에 15만원대로 제공합니다. 74% 에너지 리턴으로 슈퍼폼 성능을 데일리 트레이너 가격에 얻을 수 있습니다. 컨티넨탈 러버 아웃솔로 그립도 최상급이고, 500km 내구성으로 km당 300원 수준입니다. 와이드 옵션이 있어 발볼 넓은 한국 러너도 선택 가능합니다. 족저근막염 예방에도 탁월해 런리핏 Top 1% 신발입니다. 데일리부터 템포런, 하프마라톤까지 다목적으로 사용 가능합니다. 다만 안정성이 부족해 과내전 러너는 피하세요.',
+        text: '2024년 러닝화 가성비 끝판왕입니다. 100% Lightstrike Pro(아디오스 프로 3와 동일 폼)를 223g 초경량에 15만원대로 제공합니다. 83% 에너지 리턴(RunRepeat Lab 측정)으로 슈퍼폼 성능을 데일리 트레이너 가격에 얻을 수 있습니다. 컨티넨탈 러버 아웃솔로 그립도 최상급이고, 500km 내구성으로 km당 300원 수준입니다. 와이드 옵션이 있어 발볼 넓은 한국 러너도 선택 가능합니다. 족저근막염 예방에도 탁월해 런리핏 Top 1% 신발입니다. 데일리부터 템포런, 하프마라톤까지 다목적으로 사용 가능합니다. 다만 안정성이 부족해 과내전 러너는 피하세요.',
       },
       {
         userType: '중급 러너',
@@ -507,11 +502,7 @@ export const adidasShoes: Shoe[] = [
     brand: 'Adidas',
     name: '아디제로 아디오스 프로 4',
     image: '/images/shoes/adidas/adiospro4/adiospro1.webp',
-    images: [
-      '/images/shoes/adidas/adiospro4/adiospro1.webp',
-      '/images/shoes/adidas/adiospro4/adiospro2.webp',
-      '/images/shoes/adidas/adiospro4/adiospro3.webp',
-    ],
+    images: ['/images/shoes/adidas/adiospro4/adiospro1.webp', '/images/shoes/adidas/adiospro4/adiospro2.webp', '/images/shoes/adidas/adiospro4/adiospro3.webp'],
     category: '레이싱',
     rating: 5,
     price: 299000,

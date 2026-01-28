@@ -286,8 +286,8 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           </div>
         </section>
 
-        {/* 모바일 하단 여백 (고정 바 때문에) */}
-        <div className="h-32 md:h-0" aria-hidden="true" />
+        {/* 하단 여백 (고정 바 때문에) */}
+        <div className="h-20" aria-hidden="true" />
       </div>
 
       {/* 모바일 빠른 액션 버튼 */}

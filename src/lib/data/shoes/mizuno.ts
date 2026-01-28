@@ -51,13 +51,7 @@ export const mizunoShoes: Shoe[] = [
       recommended: ['입문 러너', '중급 러너', '매일 달리는 러너', '편안한 쿠셔닝을 원하는 러너'],
       notRecommended: ['빠른 페이스를 원하는 러너', '가벼운 신발을 선호하는 러너'],
     },
-    features: [
-      'Enerzy NXT 미드솔로 53.3% 에너지 리턴',
-      'Wave 플레이트로 안정적인 착지',
-      '전체 아웃솔 커버리지로 내구성 우수',
-      '평균보다 넓은 발볼 (98.4mm)',
-      '힐스트라이커에게 최적화'
-    ],
+    features: ['Enerzy NXT 미드솔로 53.3% 에너지 리턴', 'Wave 플레이트로 안정적인 착지', '전체 아웃솔 커버리지로 내구성 우수', '평균보다 넓은 발볼 (98.4mm)', '힐스트라이커에게 최적화'],
     priceAnalysis: {
       msrp: 169000,
       costPerKm: 211,
@@ -146,7 +140,7 @@ export const mizunoShoes: Shoe[] = [
       'Enerzy NXT 폼으로 개선된 쿠셔닝',
       '하이 드롭(12.9mm)으로 힐스트라이커에 최적',
       '넓은 미드솔 플랫폼 (힐 94mm, 포어풋 118.1mm)',
-      'X10 전체 아웃솔로 뛰어난 내구성'
+      'X10 전체 아웃솔로 뛰어난 내구성',
     ],
     priceAnalysis: {
       msrp: 159000,
@@ -196,7 +190,7 @@ export const mizunoShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 4,
-    price: 199000,
+    price: 189000,
     description: 'Mizuno의 템포/스피드 트레이너로, 독특한 Wave 지오메트리와 유리섬유 플레이트로 중족부 착지 러너에게 재미있고 역동적인 주행감을 제공합니다.',
     tags: ['레이싱', '템포', '중족부 착지'],
     specs: {
@@ -237,10 +231,10 @@ export const mizunoShoes: Shoe[] = [
       'Enerzy Lite+ (PEBA) 폼으로 54.9% 에너지 리턴',
       '유리섬유 Wave 플레이트로 추진력 제공',
       '극단적인 힐 베벨로 중족부 착지에 최적화',
-      'G3 러버 아웃솔로 우수한 그립'
+      'G3 러버 아웃솔로 우수한 그립',
     ],
     priceAnalysis: {
-      msrp: 199000,
+      msrp: 189000,
       costPerKm: 332,
       valueRating: 7,
       priceTier: 'premium',
@@ -288,7 +282,7 @@ export const mizunoShoes: Shoe[] = [
     category: '쿠션화',
     rating: 4,
     status: 'new',
-    price: 215000,
+    price: 189000,
     description: 'Mizuno의 최고 쿠셔닝 데일리 트레이너. 완전히 새로 설계되어 ENERZY NXT 질소 주입 폼으로 구름 위를 달리는 듯한 느낌을 제공합니다.',
     tags: ['쿠션화', '맥시멀', '장거리'],
     specs: {
@@ -323,15 +317,9 @@ export const mizunoShoes: Shoe[] = [
       recommended: ['장거리 러너', '무릎/관절 보호 필요한 러너', '맥시멀 쿠셔닝 원하는 러너', '체중 있는 러너'],
       notRecommended: ['빠른 페이스 원하는 러너', '가벼운 신발 선호 러너', '저드롭 원하는 러너'],
     },
-    features: [
-      'ENERZY NXT 질소 주입 폼 - 부드럽고 탄력있는 쿠셔닝',
-      '44mm 맥시멀 힐 스택',
-      '로커 지오메트리로 부드러운 전환',
-      '넓은 미드솔 플랫폼으로 안정성 확보',
-      '전체 러버 아웃솔로 내구성 우수',
-    ],
+    features: ['ENERZY NXT 질소 주입 폼 - 부드럽고 탄력있는 쿠셔닝', '44mm 맥시멀 힐 스택', '로커 지오메트리로 부드러운 전환', '넓은 미드솔 플랫폼으로 안정성 확보', '전체 러버 아웃솔로 내구성 우수'],
     priceAnalysis: {
-      msrp: 215000,
+      msrp: 189000,
       costPerKm: 269,
       valueRating: 7,
       priceTier: 'premium',
@@ -379,7 +367,7 @@ export const mizunoShoes: Shoe[] = [
     category: '레이싱',
     rating: 4,
     status: 'new',
-    price: 229000,
+    price: 199000,
     description: '서브 3시간 30분 마라토너를 위한 레이싱화. ENERZY XP + ENERZY NXT 듀얼 폼과 유리섬유 나일론 플레이트로 부드럽고 반응성 좋은 라이드를 제공합니다.',
     tags: ['레이싱', '템포', '마라톤'],
     specs: {
@@ -423,7 +411,7 @@ export const mizunoShoes: Shoe[] = [
       '90% 이상 재활용 소재 사용 (지속가능성)',
     ],
     priceAnalysis: {
-      msrp: 229000,
+      msrp: 199000,
       costPerKm: 458,
       valueRating: 7,
       priceTier: 'premium',
@@ -471,7 +459,7 @@ export const mizunoShoes: Shoe[] = [
     category: '안정화',
     rating: 4,
     status: 'new',
-    price: 219000,
+    price: 179000,
     description: '미즈노의 프리미엄 안정화. ENERZY NXT + ENERZY 듀얼 폼과 미디얼 러버월로 높은 수준의 안정성과 쿠셔닝을 동시에 제공합니다.',
     tags: ['안정화', '과내전', '프리미엄'],
     specs: {
@@ -515,7 +503,7 @@ export const mizunoShoes: Shoe[] = [
       '뛰어난 내구성 - 워킹/스탠딩에도 적합',
     ],
     priceAnalysis: {
-      msrp: 219000,
+      msrp: 179000,
       costPerKm: 243,
       valueRating: 8,
       priceTier: 'premium',
@@ -546,5 +534,5 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
-  }
+  },
 ];

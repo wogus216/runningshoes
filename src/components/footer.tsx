@@ -23,6 +23,7 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-secondary">
                 <li><a href="#" className="hover:text-primary transition">데이터 출처</a></li>
                 <li><a href="#" className="hover:text-primary transition">리뷰 기준</a></li>
+                <li><a href="mailto:sanchokwon216@gmail.com" className="hover:text-primary transition">문의하기</a></li>
               </ul>
             </div>
           </div>

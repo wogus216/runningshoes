@@ -7,11 +7,7 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '라이드 18',
     image: '/images/shoes/saucony/ride18.webp',
-    images: [
-      '/images/shoes/saucony/ride18/side.webp',
-      '/images/shoes/saucony/ride18/top.webp',
-      '/images/shoes/saucony/ride18/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/ride18/side.webp', '/images/shoes/saucony/ride18/top.webp', '/images/shoes/saucony/ride18/outsole.webp'],
     category: '입문화',
     rating: 4,
     price: 159000,
@@ -101,11 +97,7 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '가이드 18',
     image: '/images/shoes/saucony/guide18.webp',
-    images: [
-      '/images/shoes/saucony/guide18/side.webp',
-      '/images/shoes/saucony/guide18/top.webp',
-      '/images/shoes/saucony/guide18/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/guide18/side.webp', '/images/shoes/saucony/guide18/top.webp', '/images/shoes/saucony/guide18/outsole.webp'],
     category: '안정화',
     rating: 4,
     price: 159000,
@@ -195,14 +187,10 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '트라이엄프 23',
     image: '/images/shoes/saucony/triumph23.webp',
-    images: [
-      '/images/shoes/saucony/triumph23/side.webp',
-      '/images/shoes/saucony/triumph23/top.webp',
-      '/images/shoes/saucony/triumph23/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/triumph23/side.webp', '/images/shoes/saucony/triumph23/top.webp', '/images/shoes/saucony/triumph23/outsole.webp'],
     category: '쿠션화',
     rating: 4,
-    price: 189000,
+    price: 199000,
     description: 'Saucony의 프리미엄 쿠션화로, PWRRUN PB (Pebax) 미드솔로 맥시멀 쿠셔닝과 부드러운 반응성을 제공합니다. 장거리 편안함을 추구하는 러너에게 적합합니다.',
     tags: ['쿠션화', '맥시멀', '장거리', 'PEBA'],
 
@@ -250,7 +238,7 @@ export const sauconyShoes: Shoe[] = [
     features: ['PWRRUN PB (Pebax)', '맥시멀 스택', '10mm 드롭', '풀 PEBA 미드솔'],
 
     priceAnalysis: {
-      msrp: 189000,
+      msrp: 199000,
       streetPrice: 169000,
       costPerKm: 315,
       valueRating: 7,
@@ -289,14 +277,10 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '허리케인 25',
     image: '/images/shoes/saucony/hurricane25.webp',
-    images: [
-      '/images/shoes/saucony/hurricane25/side.webp',
-      '/images/shoes/saucony/hurricane25/top.webp',
-      '/images/shoes/saucony/hurricane25/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/hurricane25/side.webp', '/images/shoes/saucony/hurricane25/top.webp', '/images/shoes/saucony/hurricane25/outsole.webp'],
     category: '안정화',
     rating: 4,
-    price: 189000,
+    price: 199000,
     description: 'Saucony의 프리미엄 안정화로, PWRRUN PB + PWRRUN 크래들 조합으로 맥시멀 쿠셔닝과 강력한 안정성을 동시에 제공합니다.',
     tags: ['안정화', '맥시멀', '과내전 지원', '프리미엄'],
 
@@ -344,7 +328,7 @@ export const sauconyShoes: Shoe[] = [
     features: ['PWRRUN PB + PWRRUN Cradle', '프리미엄 안정화', '7.1mm 드롭', '맥시멀 쿠셔닝'],
 
     priceAnalysis: {
-      msrp: 189000,
+      msrp: 199000,
       streetPrice: 169000,
       costPerKm: 315,
       valueRating: 7,
@@ -383,11 +367,7 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '킨바라 16',
     image: '/images/shoes/saucony/kinvara16.webp',
-    images: [
-      '/images/shoes/saucony/kinvara16/side.webp',
-      '/images/shoes/saucony/kinvara16/top.webp',
-      '/images/shoes/saucony/kinvara16/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/kinvara16/side.webp', '/images/shoes/saucony/kinvara16/top.webp', '/images/shoes/saucony/kinvara16/outsole.webp'],
     category: '데일리',
     rating: 4,
     price: 159000,
@@ -478,11 +458,7 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '엔돌핀 프로 4',
     image: '/images/shoes/saucony/endorphin_Pro4.webp',
-    images: [
-      '/images/shoes/saucony/endorphinpro4/side.webp',
-      '/images/shoes/saucony/endorphinpro4/top.webp',
-      '/images/shoes/saucony/endorphinpro4/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/endorphinpro4/side.webp', '/images/shoes/saucony/endorphinpro4/top.webp', '/images/shoes/saucony/endorphinpro4/outsole.webp'],
     category: '레이싱',
     rating: 5,
     price: 269000,
@@ -573,11 +549,7 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '엔돌핀 엘리트 2',
     image: '/images/shoes/saucony/endorphin_elite2.webp',
-    images: [
-      '/images/shoes/saucony/endorphinelite2/side.webp',
-      '/images/shoes/saucony/endorphinelite2/top.webp',
-      '/images/shoes/saucony/endorphinelite2/outsole.webp',
-    ],
+    images: ['/images/shoes/saucony/endorphinelite2/side.webp', '/images/shoes/saucony/endorphinelite2/top.webp', '/images/shoes/saucony/endorphinelite2/outsole.webp'],
     category: '레이싱',
     rating: 5,
     price: 339000,
@@ -668,13 +640,10 @@ export const sauconyShoes: Shoe[] = [
     brand: 'Saucony',
     name: '엔돌핀 스피드 5',
     image: '/images/shoes/saucony/endorphin_speed5.webp',
-    images: [
-      '/images/shoes/saucony/endorphinspeed5/side.webp',
-      '/images/shoes/saucony/endorphinspeed5/top.webp',
-    ],
+    images: ['/images/shoes/saucony/endorphinspeed5/side.webp', '/images/shoes/saucony/endorphinspeed5/top.webp'],
     category: '데일리',
     rating: 5,
-    price: 209000,
+    price: 219000,
     description: 'Saucony의 인기 템포 러닝화로, PWRRUN PB 미드솔과 나일론 플레이트로 레이싱과 트레이닝 모두에 적합한 버사타일한 신발입니다.',
     tags: ['템포', '데일리', '나일론 플레이트', '버사타일'],
 
@@ -722,7 +691,7 @@ export const sauconyShoes: Shoe[] = [
     features: ['PWRRUN PB 미드솔', '나일론 플레이트', '10.6mm 드롭', '버사타일'],
 
     priceAnalysis: {
-      msrp: 209000,
+      msrp: 219000,
       streetPrice: 179000,
       costPerKm: 418,
       valueRating: 8,

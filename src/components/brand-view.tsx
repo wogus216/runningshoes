@@ -1,7 +1,10 @@
 import { useMemo } from "react";
+import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
+import { FlaskConical } from "lucide-react";
 import type { Shoe } from "@/types/shoe";
 import { getBrandsFromShoes, groupShoesByBrand } from "@/lib/data/shoes";
+import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { ShoeCard } from "@/components/shoe-card";
 
 type BrandViewProps = {
@@ -32,6 +35,8 @@ export function BrandView({ shoes, onTagClick }: BrandViewProps) {
 
         const sectionId = `brand-${brand.replace(/\s+/g, '-')}`;
 
+        const techUrl = getBrandTechnologyUrl(brand);
+
         const section = (
           <section
             key={brand}
@@ -41,7 +46,18 @@ export function BrandView({ shoes, onTagClick }: BrandViewProps) {
             <header className="flex flex-wrap items-end justify-between gap-4">
               <div>
                 <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Brand</p>
-                <h3 className="text-3xl font-black tracking-tight text-slate-900">{brand}</h3>
+                <div className="flex items-center gap-3">
+                  <h3 className="text-3xl font-black tracking-tight text-slate-900">{brand}</h3>
+                  {techUrl && (
+                    <Link
+                      href={techUrl as `/brands/${string}/technology`}
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-accent/10 text-accent text-xs font-medium rounded-full hover:bg-accent/20 transition"
+                    >
+                      <FlaskConical className="w-3.5 h-3.5" />
+                      기술 보기
+                    </Link>
+                  )}
+                </div>
               </div>
               <Badge className="border-white/20 bg-white/20 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-slate-700">
                 {models.length} models

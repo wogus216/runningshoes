@@ -376,6 +376,29 @@ take_snapshot()
 // 필요 시 evaluate_script로 데이터 추출
 ```
 
+### 가격 데이터 원칙
+
+> ⚠️ **중요**: 가격은 반드시 **한국 공식 사이트** 기준으로 입력합니다. USD 가격을 환산하지 마세요.
+
+**한국 공식 사이트 목록:**
+| 브랜드 | 한국 공식 사이트 |
+|--------|-----------------|
+| Nike | https://www.nike.com/kr/ |
+| Adidas | https://www.adidas.co.kr/ |
+| Asics | https://www.asics.co.kr/ |
+| Brooks | https://www.brooksrunning.co.kr/ |
+| Hoka | https://www.hoka.com/ko-kr/ |
+| New Balance | https://www.nbkorea.com/ |
+| Saucony | https://www.saucony.co.kr/ |
+| On | https://www.on-running.com/ko-kr/ |
+| Puma | https://kr.puma.com/ |
+| Mizuno | https://www.mizunokorea.co.kr/ |
+
+**가격 수집 우선순위:**
+1. 한국 공식 사이트 MSRP (정가)
+2. 공식 사이트 접근 불가 시 → 네이버 쇼핑에서 공식 판매가 확인
+3. 한국 미출시 제품 → `price: null` 또는 해당 신발 제외
+
 ### 데이터 수집 체크리스트
 
 신발 데이터 추가 시 수집해야 할 항목:
@@ -384,7 +407,7 @@ take_snapshot()
 - [ ] 무게 (g, US M9 기준)
 - [ ] 스택 높이 (힐/전족부, mm)
 - [ ] 드롭 (mm)
-- [ ] 가격 (USD → KRW 환산)
+- [ ] 가격 (**한국 공식 사이트 MSRP**, 원 단위)
 - [ ] 출시일
 
 **RunRepeat 랩 데이터:**

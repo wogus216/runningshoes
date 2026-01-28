@@ -1,8 +1,10 @@
 'use client';
 
+import Link from "next/link";
 import type { Shoe } from "@/types/shoe";
 import { ImageSlider } from "./image-slider";
-import { Scale, Layers, ArrowDownUp, Footprints } from "lucide-react";
+import { Scale, Layers, ArrowDownUp, Footprints, FlaskConical } from "lucide-react";
+import { getBrandTechnologyUrl } from "@/lib/data/brands";
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -36,6 +38,15 @@ export function HeroSection({ shoe }: HeroSectionProps) {
           {/* 브랜드 & 카테고리 */}
           <div className="flex items-center gap-2 mb-3">
             <span className="text-sm text-secondary">{shoe.brand}</span>
+            {getBrandTechnologyUrl(shoe.brand) && (
+              <Link
+                href={getBrandTechnologyUrl(shoe.brand) as `/brands/${string}/technology`}
+                className="flex items-center gap-1 px-2 py-0.5 bg-accent/10 text-accent text-xs font-medium rounded hover:bg-accent/20 transition"
+              >
+                <FlaskConical className="w-3 h-3" />
+                기술
+              </Link>
+            )}
             <span className="text-secondary">·</span>
             <span className="text-sm px-2 py-0.5 bg-surface rounded text-primary">{shoe.category}</span>
           </div>

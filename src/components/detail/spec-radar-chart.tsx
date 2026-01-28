@@ -65,25 +65,27 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
         성능 한눈에 보기
       </h2>
 
-      <div className="bg-white rounded-2xl p-8 shadow-md">
-        <ResponsiveContainer width="100%" height={400}>
-          <RadarChart data={data}>
-            <PolarGrid stroke="rgba(79, 172, 254, 0.1)" />
-            <PolarAngleAxis
-              dataKey="subject"
-              tick={{ fill: '#4facfe', fontSize: 13, fontWeight: 700 }}
-            />
-            <PolarRadiusAxis angle={90} domain={[0, 10]} tick={{ fontSize: 12, fontWeight: 600 }} />
-            <Radar
-              name={shoeName || "성능"}
-              dataKey="value"
-              stroke="#4facfe"
-              fill="rgba(79, 172, 254, 0.2)"
-              fillOpacity={0.6}
-              strokeWidth={3}
-            />
-          </RadarChart>
-        </ResponsiveContainer>
+      <div className="bg-white rounded-2xl p-4 md:p-8 shadow-md">
+        <div className="h-[280px] md:h-[400px]">
+          <ResponsiveContainer width="100%" height="100%">
+            <RadarChart data={data} outerRadius="65%">
+              <PolarGrid stroke="rgba(79, 172, 254, 0.1)" />
+              <PolarAngleAxis
+                dataKey="subject"
+                tick={{ fill: '#4facfe', fontSize: 11, fontWeight: 700 }}
+              />
+              <PolarRadiusAxis angle={90} domain={[0, 10]} tick={{ fontSize: 10, fontWeight: 600 }} />
+              <Radar
+                name={shoeName || "성능"}
+                dataKey="value"
+                stroke="#4facfe"
+                fill="rgba(79, 172, 254, 0.2)"
+                fillOpacity={0.6}
+                strokeWidth={3}
+              />
+            </RadarChart>
+          </ResponsiveContainer>
+        </div>
 
         <p className="text-center text-sm text-gray-500 mt-4">
           * 한국 소비자 조사:{" "}

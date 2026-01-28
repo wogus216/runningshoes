@@ -9,7 +9,7 @@ export const asicsShoes: Shoe[] = [
     image: '/images/shoes/asics/gel_Nimbus28.webp',
     category: '쿠션화',
     rating: 4.5,
-    price: 247000,
+    price: 199000,
     description: '아식스의 플래그십 맥시멀 쿠션화. 전작 대비 약 20g 가벼워진 281g으로 더 경쾌해졌으며, FF BLAST PLUS 폼으로 부드럽고 스무스한 라이드 제공. 새로운 니트 어퍼로 착화감 향상.',
     tags: ['쿠션화', '맥시멀', '장거리', '충격흡수'],
     specs: {
@@ -47,8 +47,8 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['43.5mm 맥시멀 스택', 'FF BLAST PLUS 폼', '경량화 설계 (-20g)', '새로운 니트 어퍼', '와이드/X-와이드 옵션'],
     priceAnalysis: {
-      msrp: 247000,
-      streetPrice: 210000,
+      msrp: 199000,
+      streetPrice: 180000,
       costPerKm: 323,
       valueRating: 7,
       priceTier: 'premium',
@@ -108,7 +108,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '데일리',
     rating: 5,
-    price: 180000,
+    price: 169000,
     description: '아식스의 바운시 데일리 트레이너. FF Blast+ 폼으로 탁월한 반발력과 재미있는 라이드 제공. 다양한 페이스에 적합한 올라운더.',
     tags: ['데일리', '바운시', '반발력', '올라운더'],
     specs: {
@@ -146,7 +146,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['FF Blast+ 폼', '41mm 스택하이트', '바운시 라이드', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 180000,
+      msrp: 169000,
       streetPrice: 155000,
       costPerKm: 300,
       valueRating: 9,
@@ -207,7 +207,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '안정화',
     rating: 4,
-    price: 230000,
+    price: 199000,
     description: '아식스의 전설적인 안정화. 4D Guidance System과 FF Blast+ ECO 폼으로 과내전 교정과 편안함을 동시에 제공. 30년 역사의 신뢰성.',
     tags: ['안정화', '과내전', '서포트', '장거리'],
     specs: {
@@ -245,8 +245,8 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['4D Guidance System', 'FF Blast+ ECO 폼', 'PureGEL 충격흡수', '와이드/X-와이드 옵션'],
     priceAnalysis: {
-      msrp: 230000,
-      streetPrice: 200000,
+      msrp: 199000,
+      streetPrice: 180000,
       costPerKm: 328,
       valueRating: 7,
       priceTier: 'premium',
@@ -306,7 +306,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 5,
-    price: 260000,
+    price: 249000,
     description: '아식스 최고의 슈퍼트레이너. FF Turbo+ 폼으로 71% 에너지 리턴을 실현하면서도 일상 훈련에 적합한 내구성 제공. 카본 플레이트 없이도 최상급 성능.',
     tags: ['슈퍼트레이너', '고반발', '데일리레이서', '훈련용'],
     specs: {
@@ -344,7 +344,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['FF Turbo+ 폼 71% 에너지 리턴', '43mm 스택하이트', '카본 없이 최상급 반발력', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 260000,
+      msrp: 249000,
       streetPrice: 225000,
       costPerKm: 520,
       valueRating: 8,
@@ -405,7 +405,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 4,
-    price: 220000,
+    price: 199000,
     description: '아식스의 가성비 카본 레이싱화. FF Blast+ 폼에 카본 플레이트를 탑재해 레이스와 템포 훈련 모두 가능. 메타스피드의 합리적 대안.',
     tags: ['레이싱', '카본플레이트', '템포', '가성비'],
     specs: {
@@ -443,7 +443,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['FF Blast+ + FF Turbo 폼', '풀렝스 카본 플레이트', '메타스피드 대비 가성비', '43mm 스택하이트'],
     priceAnalysis: {
-      msrp: 220000,
+      msrp: 199000,
       streetPrice: 185000,
       costPerKm: 628,
       valueRating: 8,
@@ -504,7 +504,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 5,
-    price: 320000,
+    price: 329000,
     description: '아식스 최상위 마라톤 레이싱화. FF Turbo+ 폼에 카본 플레이트로 최고 수준의 에너지 리턴. 스트라이드 러너에게 최적화된 설계.',
     tags: ['레이싱', '마라톤', '카본플레이트', '슈퍼슈즈'],
     specs: {
@@ -542,7 +542,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['FF Turbo+ 폼', '풀렝스 카본 플레이트', '스트라이드 최적화', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 320000,
+      msrp: 329000,
       streetPrice: 280000,
       costPerKm: 1280,
       valueRating: 7,
@@ -603,7 +603,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '레이싱',
     rating: 5,
-    price: 320000,
+    price: 329000,
     description: '케이던스 러너를 위한 아식스 슈퍼슈즈. 스카이+보다 낮은 스택과 빠른 턴오버에 최적화. 빠른 피치 러너에게 최고의 선택.',
     tags: ['레이싱', '마라톤', '카본플레이트', '케이던스'],
     specs: {
@@ -641,7 +641,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['FF Turbo+ 폼', '케이던스 최적화 설계', '208g 경량', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 320000,
+      msrp: 329000,
       streetPrice: 280000,
       costPerKm: 1280,
       valueRating: 7,
@@ -697,7 +697,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '쿠션화',
     rating: 5,
-    price: 290000,
+    price: 299000,
     description: '아식스 최고의 맥시멀 쿠션화. FF Blast Turbo로 48mm 초고 스택에서 83% 에너지 리턴 제공. 218g 초경량으로 맥시멀 쿠션과 경쾌함을 동시에.',
     tags: ['맥시멀', '초경량', '고반발', '쿠션화', '장거리'],
     specs: {
@@ -735,7 +735,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['48mm 초고 스택', 'FF Blast Turbo (83% 에너지 리턴)', '218g 초경량 (맥시멀 기준)', '15.5 HA 초소프트', '82.6mm 넓은 토박스'],
     priceAnalysis: {
-      msrp: 290000,
+      msrp: 299000,
       streetPrice: 250000,
       costPerKm: 580,
       valueRating: 8,
@@ -796,7 +796,7 @@ export const asicsShoes: Shoe[] = [
     ],
     category: '쿠션화',
     rating: 5,
-    price: 230000,
+    price: 229000,
     description: '메가블라스트의 합리적 대안. 카본 플레이트가 탑재된 맥시멀 쿠션화로 쿠션과 반발력을 동시에. 18만원대 가성비로 메가블라스트 성능의 80%.',
     tags: ['맥시멀', '카본플레이트', '쿠션화', '가성비', '장거리'],
     specs: {
@@ -834,7 +834,7 @@ export const asicsShoes: Shoe[] = [
     },
     features: ['48mm 초고 스택', 'FF Blast+ + 카본 플레이트', '83% 에너지 리턴', '메가블라스트 대비 가성비', '82.6mm 넓은 토박스'],
     priceAnalysis: {
-      msrp: 230000,
+      msrp: 229000,
       streetPrice: 180000,
       costPerKm: 460,
       valueRating: 9,

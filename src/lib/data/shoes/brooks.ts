@@ -51,12 +51,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['입문 러너', '데일리 러너', '안정적인 주행 원하는 러너'],
       notRecommended: ['빠른 페이스 선호 러너', '초경량화 원하는 러너'],
     },
-    features: [
-      'DNA Loft v3 쿠셔닝',
-      '53.8% 에너지 리턴',
-      '넓은 토박스',
-      '안정적인 주행감',
-    ],
+    features: ['DNA Loft v3 쿠셔닝', '53.8% 에너지 리턴', '넓은 토박스', '안정적인 주행감'],
     priceAnalysis: {
       msrp: 169000,
       costPerKm: 211,
@@ -142,12 +137,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['무릎/관절 보호 필요 러너', '장거리 러너', '체중 있는 러너'],
       notRecommended: ['빠른 템포 선호 러너', '가벼운 신발 선호 러너'],
     },
-    features: [
-      '맥시멀 DNA Loft v3 쿠셔닝',
-      '51.3% 에너지 리턴',
-      '로우 드롭 (7mm)',
-      '관절 보호에 최적화',
-    ],
+    features: ['맥시멀 DNA Loft v3 쿠셔닝', '51.3% 에너지 리턴', '로우 드롭 (7mm)', '관절 보호에 최적화'],
     priceAnalysis: {
       msrp: 179000,
       costPerKm: 256,
@@ -233,12 +223,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['프리미엄 쿠셔닝 원하는 러너', '장거리 러너', '데일리 러너'],
       notRecommended: ['가성비 중시 러너', '빠른 템포 선호 러너'],
     },
-    features: [
-      'DNA Tuned 듀얼 밀도 폼',
-      '54.8% 에너지 리턴',
-      '체중/보폭 반응형 쿠셔닝',
-      '프리미엄 편안함',
-    ],
+    features: ['DNA Tuned 듀얼 밀도 폼', '54.8% 에너지 리턴', '체중/보폭 반응형 쿠셔닝', '프리미엄 편안함'],
     priceAnalysis: {
       msrp: 209000,
       costPerKm: 261,
@@ -324,12 +309,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['최대 쿠셔닝 원하는 러너', '무릎/관절 보호 필요', '체중 있는 러너'],
       notRecommended: ['빠른 템포 러너', '경량화 선호 러너'],
     },
-    features: [
-      '맥시멀 DNA Tuned 쿠셔닝',
-      '52.0% 에너지 리턴',
-      '42mm 힐 스택',
-      '극대화된 충격 흡수',
-    ],
+    features: ['맥시멀 DNA Tuned 쿠셔닝', '52.0% 에너지 리턴', '42mm 힐 스택', '극대화된 충격 흡수'],
     priceAnalysis: {
       msrp: 239000,
       costPerKm: 341,
@@ -415,12 +395,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['오버프로네이션 러너', '평발 러너', '안정성 필요 러너'],
       notRecommended: ['중립 보행 러너', '가벼운 신발 선호 러너'],
     },
-    features: [
-      'GuideRails 안정화 시스템',
-      'DNA Tuned 쿠셔닝',
-      '53.1% 에너지 리턴',
-      '과도한 움직임 제어',
-    ],
+    features: ['GuideRails 안정화 시스템', 'DNA Tuned 쿠셔닝', '53.1% 에너지 리턴', '과도한 움직임 제어'],
     priceAnalysis: {
       msrp: 209000,
       costPerKm: 261,
@@ -507,12 +482,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['엘리트 러너', '서브3 목표 러너', '대회용 레이싱화 필요 러너'],
       notRecommended: ['입문 러너', '훈련용으로 사용', '평발/오버프로네이션 러너'],
     },
-    features: [
-      'DNA Gold (PEBA) 최고급 폼',
-      'SpeedVault+ 카본 플레이트',
-      '76.9% 에너지 리턴 (업계 최고 수준)',
-      '204g 초경량',
-    ],
+    features: ['DNA Gold (PEBA) 최고급 폼', 'SpeedVault+ 카본 플레이트', '76.9% 에너지 리턴 (업계 최고 수준)', '204g 초경량'],
     priceAnalysis: {
       msrp: 299000,
       costPerKm: 997,
@@ -598,12 +568,7 @@ export const brooksShoes: Shoe[] = [
       recommended: ['과내전(오버프로네이션) 러너', '안정성이 필요한 러너', '평발 러너', '무릎 보호가 필요한 러너', '장거리 러너'],
       notRecommended: ['빠른 페이스 선호 러너', '중립 착지 러너', '초경량화 원하는 러너'],
     },
-    features: [
-      'GuideRails 안정화 시스템',
-      'DNA Loft v3 질소 주입 쿠셔닝',
-      '포어풋 +3mm 업데이트 (전작 대비)',
-      '플랫 니트 어퍼로 편안한 착화감',
-    ],
+    features: ['GuideRails 안정화 시스템', 'DNA Loft v3 질소 주입 쿠셔닝', '포어풋 +3mm 업데이트 (전작 대비)', '플랫 니트 어퍼로 편안한 착화감'],
     priceAnalysis: {
       msrp: 189000,
       costPerKm: 236,
@@ -643,7 +608,7 @@ export const brooksShoes: Shoe[] = [
     id: 'brooks-hyperion-max-3',
     slug: 'brooks-hyperion-max-3',
     brand: 'Brooks',
-    name: '하이퍼리온 맥스 3',
+    name: '하이페리온 맥스 3',
     image: '/images/shoes/brooks/hyperionmax3/side.webp',
     images: [
       '/images/shoes/brooks/hyperionmax3/side.webp',
@@ -655,7 +620,7 @@ export const brooksShoes: Shoe[] = [
     category: '쿠션화',
     rating: 5,
     status: 'new',
-    price: 259000,
+    price: 219000,
     description: '브룩스 최초의 진정한 슈퍼트레이너. DNA Gold (PEBA) 폼과 나일론 플레이트로 63.9% 에너지 리턴과 맥시멀 쿠셔닝을 제공합니다.',
     specs: {
       weight: 283,
@@ -699,7 +664,7 @@ export const brooksShoes: Shoe[] = [
       '프리미엄 니트 어퍼',
     ],
     priceAnalysis: {
-      msrp: 259000,
+      msrp: 219000,
       costPerKm: 370,
       valueRating: 7,
       priceTier: 'premium',
@@ -732,5 +697,5 @@ export const brooksShoes: Shoe[] = [
     },
     similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro-2'],
     tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
-  }
+  },
 ];
