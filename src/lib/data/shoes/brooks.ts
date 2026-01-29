@@ -85,6 +85,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋',
     },
     similarShoes: ['asics-gel-nimbus-28', 'nike-pegasus-41', 'saucony-ride-18'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5zX9BD95' }],
     tags: ['입문화', '데일리 러닝', '안정성', '쿠셔닝'],
   },
   {
@@ -171,6 +172,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F3YG0bMm' }],
     tags: ['쿠션화', '맥시멀', '관절 보호', '장거리'],
   },
   {
@@ -257,6 +259,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋',
     },
     similarShoes: ['asics-gel-nimbus-28', 'nike-vomero-18', 'new-balance-1080-v14'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLx7T' }],
     tags: ['쿠션화', '프리미엄', '장거리', '데일리'],
   },
   {
@@ -343,6 +346,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'brooks-ghost-max-3'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLyzM' }],
     tags: ['쿠션화', '맥시멀', '관절 보호', '프리미엄'],
   },
   {
@@ -429,13 +433,14 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['asics-gel-kayano-32', 'nike-structure-26'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLy0J' }],
     tags: ['안정화', 'GuideRails', '오버프로네이션', '평발'],
   },
   {
     id: 'brooks-hyperion-elite-5',
     slug: 'brooks-hyperion-elite-5',
     brand: 'Brooks',
-    name: '하이퍼리온 엘리트 5',
+    name: '하이페리온 엘리트 5',
     image: '/images/shoes/brooks/hyperionelite5/side.webp',
     images: [
       '/images/shoes/brooks/hyperionelite5/side.webp',
@@ -516,6 +521,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '미드풋~포어풋',
     },
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLzHI' }],
     tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용'],
   },
   {
@@ -602,6 +608,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['asics-gel-kayano-32', 'new-balance-860-v14', 'hoka-gaviota-6'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FvQD1VES' }],
     tags: ['안정화', 'GuideRails', '과내전 교정', '평발'],
   },
   {
@@ -696,6 +703,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋',
     },
     similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro-2'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6svgS' }],
     tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
   },
 ];

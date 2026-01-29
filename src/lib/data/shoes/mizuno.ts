@@ -84,6 +84,7 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['asics-gel-nimbus-28', 'brooks-ghost-17', 'saucony-ride-18'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F2nAQfXh' }],
   },
   {
     id: 'mizuno-wave-inspire-21',
@@ -174,6 +175,7 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6krfEy' }],
   },
   {
     id: 'mizuno-wave-rebellion-flash-2',
@@ -265,6 +267,7 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '미드풋~포어풋',
     },
     similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GGC23bti' }],
   },
   {
     id: 'mizuno-wave-sky-9',
@@ -350,6 +353,7 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['hoka-bondi-9', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6krfEy' }],
   },
   {
     id: 'mizuno-wave-rebellion-flash-3',
@@ -442,6 +446,7 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '미드풋~포어풋',
     },
     similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'new-balance-rebel-v5'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKUd9' }],
   },
   {
     id: 'mizuno-wave-horizon-8',
@@ -534,5 +539,6 @@ export const mizunoShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKUVK' }],
   },
 ];

@@ -103,6 +103,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['new-balance-1080-v15', 'new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GRurbDtu' }],
   },
   {
     id: 'new-balance-1080-v15',
@@ -209,6 +210,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['new-balance-1080-v14', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xAA0rggd' }],
   },
   {
     id: 'new-balance-1080-v14',
@@ -312,6 +314,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['new-balance-1080-v15', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GPlbVErM' }],
   },
   {
     id: 'new-balance-rebel-v5',
@@ -416,6 +419,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['hoka-mach-6', 'saucony-kinvara-16', 'asics-novablast-5'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5dA8aEyH' }],
   },
   {
     id: 'new-balance-860-v14',
@@ -520,6 +524,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6qn39' }],
   },
   {
     id: 'new-balance-sc-trainer-v3',
@@ -624,6 +629,7 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['saucony-endorphin-speed-5', 'asics-magic-speed-4', 'hoka-mach-x-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GiahurkU' }],
   },
   {
     id: 'new-balance-sc-elite-v5',
@@ -729,5 +735,6 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLwgI' }],
   },
 ];

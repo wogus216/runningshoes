@@ -90,6 +90,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-880-v15'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKnfe' }],
   },
   {
     id: 'saucony-guide-18',
@@ -180,6 +181,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'hoka-gaviota-6'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKpwt' }],
   },
   {
     id: 'saucony-triumph-23',
@@ -270,6 +272,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKqYG' }],
   },
   {
     id: 'saucony-hurricane-25',
@@ -360,6 +363,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'hoka-gaviota-6', 'new-balance-860-v14'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKrEs' }],
   },
   {
     id: 'saucony-kinvara-16',
@@ -451,6 +455,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['hoka-mach-6', 'nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKtnn' }],
   },
   {
     id: 'saucony-endorphin-pro-4',
@@ -542,6 +547,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'puma-deviate-nitro-elite-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/57QzqCm0' }],
   },
   {
     id: 'saucony-endorphin-elite-2',
@@ -633,6 +639,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKvcw' }],
   },
   {
     id: 'saucony-endorphin-speed-5',
@@ -724,6 +731,7 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['asics-superblast-2', 'hoka-mach-x-3', 'puma-deviate-nitro-3', 'nike-vomero-18'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GuDSfLaW' }],
   },
   {
     id: 'saucony-endorphin-trainer',
@@ -821,5 +829,6 @@ export const sauconyShoes: Shoe[] = [
     ],
 
     similarShoes: ['asics-superblast-2', 'new-balance-sc-trainer-v3', 'hoka-mach-x-3', 'nike-vomero-18'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKxM0' }],
   },
 ];

@@ -97,6 +97,7 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-novablast-5'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xumQduZr' }],
   },
   {
     id: 'on-cloudrunner-2',
@@ -194,6 +195,7 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/Ig4lczAV' }],
   },
   {
     id: 'on-cloudmonster-2',
@@ -288,6 +290,7 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FgTYWGaO' }],
   },
   {
     id: 'on-cloudmonster-hyper',
@@ -382,6 +385,7 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['saucony-endorphin-speed-5', 'nike-pegasus-plus', 'hoka-mach-6'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G7CmL0U2' }],
   },
   {
     id: 'on-cloudflow-5',
@@ -476,6 +480,7 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['saucony-kinvara-16', 'adidas-boston-13', 'nike-pegasus-41'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5qcGx7yW' }],
   },
   {
     id: 'on-cloudboom-strike',
@@ -571,5 +576,6 @@ export const onShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'asics-metaspeed-sky-plus'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/Fc5D2chz' }],
   }
 ];

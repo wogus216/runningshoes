@@ -107,6 +107,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'hoka-mach-6', 'saucony-ride-18'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZ9hMP' }],
   },
   {
     id: 'puma-magmax-nitro-2',
@@ -209,6 +210,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKZ52' }],
   },
   {
     id: 'puma-magnify-nitro-3',
@@ -311,6 +313,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14', 'saucony-triumph-23'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK16h' }],
   },
   {
     id: 'puma-deviate-nitro-4',
@@ -413,6 +416,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['saucony-endorphin-speed-5', 'asics-sonicblast', 'nike-zoom-fly-6', 'hoka-mach-x-3'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK3Ul' }],
   },
   {
     id: 'puma-deviate-nitro-3',
@@ -515,6 +519,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5dA8sEdt' }],
   },
   {
     id: 'puma-deviate-nitro-elite-3',
@@ -617,6 +622,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-4'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK5Yh' }],
   },
   {
     id: 'puma-fast-r-nitro-elite-3',
@@ -719,5 +725,6 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-elite-2'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK6Nc' }],
   }
 ];

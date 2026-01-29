@@ -9,6 +9,7 @@ import { OnelinerSummary } from '@/components/detail/oneliner-summary';
 import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
+import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
 import { DetailFooterAd } from '@/components/ads/ad-unit';
 
 type ShoeDetailPageProps = {
@@ -253,6 +254,11 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
         {/* Hero Section */}
         <HeroSection shoe={shoe} />
+
+        {/* 제휴 링크 고지 (purchaseLinks가 있을 때만) */}
+        {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
+          <AffiliateDisclosure />
+        )}
 
         {hasCompleteData ? (
           <>

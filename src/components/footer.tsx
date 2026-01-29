@@ -23,13 +23,25 @@ export function Footer() {
               <ul className="space-y-2 text-sm text-secondary">
                 <li><a href="#" className="hover:text-primary transition">데이터 출처</a></li>
                 <li><a href="#" className="hover:text-primary transition">리뷰 기준</a></li>
-                <li><a href="mailto:sanchokwon216@gmail.com" className="hover:text-primary transition">문의하기</a></li>
+                <li>
+                  <span className="block">협찬 및 문의</span>
+                  <a href="mailto:sanchokwon216@gmail.com" className="hover:text-primary transition">sanchokwon216@gmail.com</a>
+                </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className="border-t border-border mt-8 pt-6 text-center text-xs text-tertiary">
-          © {new Date().getFullYear()} 러닝의 모든것
+        {/* 법적 고지 */}
+        <div className="border-t border-border mt-8 pt-6">
+          <p className="text-xs text-tertiary leading-relaxed max-w-3xl mx-auto text-center mb-4">
+            <strong>러닝의 모든것</strong>은 상품 판매 당사자가 아니며, 제휴 업체가 제공하는 상품 정보 및 거래에 대하여 법적 책임을 지지 않습니다.
+            상품의 상태, 배송, 환불 및 정품 여부 등에 관한 모든 책임은 실제 판매처에 있습니다.
+            게시된 링크를 통해 구매 시 파트너스 활동의 일환으로 일정액의 수수료를 제공받을 수 있습니다.{' '}
+            <Link href="/legal" className="underline hover:text-secondary">자세히 보기</Link>
+          </p>
+          <p className="text-center text-xs text-tertiary">
+            © {new Date().getFullYear()} 러닝의 모든것
+          </p>
         </div>
       </div>
     </footer>

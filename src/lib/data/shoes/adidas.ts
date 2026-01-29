@@ -195,6 +195,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-pegasus-premium', 'hoka-clifton-10'],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLvsV' }],
   },
   {
     id: 'adidas-adizero-sl2',
@@ -292,6 +293,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-rival-fly-4', 'saucony-kinvara-16'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FE3AfoAm' }],
   },
   {
     id: 'adidas-boston-13',
@@ -390,6 +392,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FIN7KQvW' }],
   },
   {
     id: 'adidas-adizero-evo-sl',
@@ -495,6 +498,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-rebel-v5', 'nike-pegasus-plus'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/546TgvGh' }],
   },
   {
     id: 'adidas-adios-pro-4',
@@ -593,5 +597,6 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F4L8aJHj' }],
   },
 ];

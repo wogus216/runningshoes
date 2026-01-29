@@ -49,6 +49,13 @@ export interface Review {
   text: string;
 }
 
+export interface PurchaseLink {
+  store: string;       // '쿠팡', '네이버', '공식몰', 'ABC마트' 등
+  url: string;
+  price?: number;      // 해당 스토어 가격 (선택)
+  isOfficial?: boolean; // 공식 스토어 여부
+}
+
 export interface ShoeSpecs {
   weight: number;       // g
   cushioning: number;   // 1-10
@@ -126,6 +133,9 @@ export interface Shoe {
 
   // 비슷한 신발
   similarShoes?: string[]; // shoe ids
+
+  // 구매 링크
+  purchaseLinks?: PurchaseLink[];
 }
 
 export const categoryOrder = [

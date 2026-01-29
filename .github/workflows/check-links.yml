@@ -1,0 +1,92 @@
+name: 구매 링크 체크
+
+on:
+  schedule:
+    # 매월 1일, 14일 오전 9시 (KST) = 0시 UTC
+    - cron: '0 0 1,14 * *'
+  workflow_dispatch: # 수동 실행 가능
+
+jobs:
+  check-links:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci
+
+      - name: 구매 링크 체크 실행
+        id: check
+        run: |
+          npx tsx scripts/check-purchase-links.ts 2>&1 | tee link-check-output.txt
+          # 품절/에러가 있으면 후속 단계 실행
+          if grep -q '🔴\|❌' link-check-output.txt; then
+            echo "has_issues=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "has_issues=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: 문제 발견 시 이메일 알림
+        if: steps.check.outputs.has_issues == 'true'
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: '🔗 구매 링크 점검 필요 (${{ github.run_id }})'
+          to: wogus2169@gmail.com
+          from: 러닝의모든것 링크체커
+          body: |
+            구매 링크 자동 점검에서 문제가 발견되었습니다.
+
+            아래 결과를 확인하고 링크를 업데이트해주세요.
+
+            ---
+            ${{ steps.check.outputs.has_issues == 'true' && '문제가 발견되었습니다. 첨부 로그를 확인하세요.' || '정상' }}
+
+            전체 로그: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+      - name: 문제 발견 시 Issue 생성
+        if: steps.check.outputs.has_issues == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const output = fs.readFileSync('link-check-output.txt', 'utf8');
+            const issues = output.split('\n').filter(l => l.includes('🔴') || l.includes('❌'));
+
+            const body = `## 구매 링크 점검 결과
+
+            자동 점검에서 문제가 발견되었습니다.
+
+            \`\`\`
+            ${issues.join('\n')}
+            \`\`\`
+
+            <details>
+            <summary>전체 결과</summary>
+
+            \`\`\`
+            ${output}
+            \`\`\`
+            </details>
+
+            > 자동 생성된 이슈입니다. \`npx tsx scripts/check-purchase-links.ts\`로 재확인하세요.
+            `.replace(/^            /gm, '');
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title: `🔗 구매 링크 점검 필요 (${new Date().toISOString().slice(0, 10)})`,
+              body,
+              labels: ['link-check']
+            });

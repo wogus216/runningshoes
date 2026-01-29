@@ -92,6 +92,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-1080-v14', 'hoka-clifton-10', 'brooks-glycerin-22'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FzsydpCq' }],
   },
   {
     id: 'asics-novablast-5',
@@ -191,6 +192,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-pegasus-41', 'new-balance-rebel-v5', 'hoka-mach-x-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xg7JMoYz' }],
   },
   {
     id: 'asics-gel-kayano-32',
@@ -290,6 +292,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['brooks-adrenaline-gts-25', 'new-balance-860-v14', 'hoka-gaviota-6'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GxLH2kjm' }],
   },
   {
     id: 'asics-superblast-2',
@@ -389,6 +392,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5', 'new-balance-sc-trainer-v3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GnRnwT4x' }],
   },
   {
     id: 'asics-magic-speed-4',
@@ -488,6 +492,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5', 'new-balance-sc-trainer-v3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FYqW0XcA' }],
   },
   {
     id: 'asics-metaspeed-sky-plus',
@@ -587,6 +592,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'saucony-endorphin-pro-4'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfMR1O' }],
   },
   {
     id: 'asics-metaspeed-edge-plus',
@@ -681,6 +687,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-alphafly-3', 'adidas-adios-pro-4', 'saucony-endorphin-pro-4'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfMR1O' }],
   },
   {
     id: 'asics-megablast',
@@ -780,6 +787,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZwq76' }],
   },
   {
     id: 'asics-sonicblast',
@@ -879,5 +887,6 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-megablast', 'hoka-bondi-9', 'brooks-glycerin-max'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5IiG2z0P' }],
   },
 ];

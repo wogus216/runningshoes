@@ -7,6 +7,7 @@ import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis'
 import { InjuryPrevention } from '@/components/detail/injury-prevention';
 import { KoreanFootFit } from '@/components/detail/korean-foot-fit';
 import { ValueAnalysis } from '@/components/detail/value-analysis';
+import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ReviewsSection } from '@/components/detail/reviews-section';
 import { SimilarShoes } from '@/components/detail/similar-shoes';
 import { cn } from '@/lib/utils';
@@ -134,15 +135,26 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
 
         {/* 가격 탭 */}
         {activeTab === 'price' && shoe.priceAnalysis && (
-          <div className="section-card p-6">
-            <ValueAnalysis
-              priceAnalysis={shoe.priceAnalysis}
-              shoeName={shoe.name}
-              brand={shoe.brand}
-              category={shoe.category}
-              specs={shoe.specs}
-            />
-          </div>
+          <>
+            <div className="section-card p-6">
+              <ValueAnalysis
+                priceAnalysis={shoe.priceAnalysis}
+                shoeName={shoe.name}
+                brand={shoe.brand}
+                category={shoe.category}
+                specs={shoe.specs}
+              />
+            </div>
+            {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
+              <div className="section-card p-6">
+                <PurchaseLinks
+                  purchaseLinks={shoe.purchaseLinks}
+                  shoeName={shoe.name}
+                  brand={shoe.brand}
+                />
+              </div>
+            )}
+          </>
         )}
 
         {/* 리뷰 탭 */}

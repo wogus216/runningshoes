@@ -101,6 +101,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'brooks-ghost-max-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5no2qeeM' }],
   },
   {
     id: 'hoka-bondi-9',
@@ -202,6 +203,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22', 'puma-magnify-nitro-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5TQWU20i' }],
   },
   {
     id: 'hoka-mach-6',
@@ -303,6 +305,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'puma-velocity-nitro-4', 'saucony-kinvara-16'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfwsEh' }],
   },
   {
     id: 'hoka-arahi-8',
@@ -401,6 +404,7 @@ export const hokaShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18', 'new-balance-860-v14'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6kvVq' }],
   },
   {
     id: 'hoka-gaviota-6',
@@ -497,6 +501,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'saucony-hurricane-25'],
+    purchaseLinks: [{ store: '네이버', url: 'https://brand.naver.com/hoka/products/12839097291' }],
   },
   {
     id: 'hoka-mach-x-3',
@@ -598,6 +603,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['asics-superblast-2', 'nike-vomero-18', 'new-balance-sc-trainer-v3', 'puma-deviate-nitro-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xNnMDilg' }],
   },
   {
     id: 'hoka-rocket-x-3',
@@ -699,5 +705,6 @@ export const hokaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-pro-4'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xslD1XqM' }],
   },
 ];
