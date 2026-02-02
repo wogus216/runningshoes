@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Scale, Sparkles, FlaskConical } from 'lucide-react';
+import { Scale, Sparkles, FlaskConical, Beaker } from 'lucide-react';
 
 export function Header() {
   return (
@@ -20,6 +20,14 @@ export function Header() {
             <FlaskConical className="h-4 w-4" />
             <span className="hidden sm:inline">러닝 신발 테크</span>
             <span className="sm:hidden">테크</span>
+          </Link>
+          <Link
+            href="/gels"
+            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-white hover:from-emerald-600 hover:to-teal-700 transition shadow-md shadow-emerald-500/25"
+          >
+            <Beaker className="h-4 w-4" />
+            <span className="hidden sm:inline">에너지 젤</span>
+            <span className="sm:hidden">젤</span>
           </Link>
           <Link
             href="/recommend"

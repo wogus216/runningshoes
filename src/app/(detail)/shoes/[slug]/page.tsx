@@ -257,7 +257,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
         {/* 제휴 링크 고지 (purchaseLinks가 있을 때만) */}
         {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
-          <AffiliateDisclosure />
+          <AffiliateDisclosure purchaseLinks={shoe.purchaseLinks} />
         )}
 
         {hasCompleteData ? (

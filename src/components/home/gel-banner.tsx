@@ -1,11 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { FlaskConical, ChevronRight, Sparkles } from 'lucide-react';
+import { Beaker, ChevronRight, Sparkles } from 'lucide-react';
 
-export function TechBanner() {
+export function GelBanner() {
   return (
-    <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-violet-500 via-purple-500 to-indigo-500 p-6 md:p-8 h-full">
+    <section className="relative overflow-hidden rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 p-6 md:p-8 h-full">
       {/* 배경 패턴 */}
       <div className="absolute inset-0 opacity-20">
         <div className="absolute top-0 left-0 w-40 h-40 bg-white rounded-full blur-3xl" />
@@ -22,21 +22,21 @@ export function TechBanner() {
             </span>
           </div>
           <h2 className="text-xl md:text-2xl font-bold text-white mb-2 drop-shadow-md">
-            러닝 신발 테크
+            에너지 젤 가이드
           </h2>
           <p className="text-white text-sm leading-relaxed drop-shadow-sm">
-            ZoomX, React, Boost...<br />
-            브랜드별 핵심 기술 비교
+            Maurten, GU, 양갱까지<br />
+            성분·위장·가성비 완전 분석
           </p>
         </div>
 
         {/* CTA 버튼 */}
         <Link
-          href="/brands/nike/technology"
-          className="inline-flex items-center justify-center gap-2 bg-white text-purple-600 px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition shadow-lg shadow-purple-900/20 group w-fit"
+          href="/gels"
+          className="inline-flex items-center justify-center gap-2 bg-white text-teal-600 px-6 py-3 rounded-full text-sm font-semibold hover:bg-white/90 transition shadow-lg shadow-teal-900/20 group w-fit"
         >
-          <FlaskConical className="w-4 h-4" />
-          기술 살펴보기
+          <Beaker className="w-4 h-4" />
+          젤 비교하기
           <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
         </Link>
       </div>

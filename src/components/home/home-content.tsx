@@ -13,6 +13,7 @@ import { categoryOrder, getBrandsFromShoes } from "@/lib/data/shoes";
 import type { Shoe } from "@/types/shoe";
 import { MainHeroAd, MainMidListAd } from "@/components/ads/ad-unit";
 import { TechBanner } from "@/components/home/tech-banner";
+import { GelBanner } from "@/components/home/gel-banner";
 
 interface HomeContentProps {
   initialShoes: Shoe[];
@@ -159,8 +160,11 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </button>
       </section>
 
-      {/* 러닝 신발 테크 배너 */}
-      <TechBanner />
+      {/* 러닝 신발 테크 & 에너지 젤 배너 */}
+      <div className="grid md:grid-cols-2 gap-4">
+        <TechBanner />
+        <GelBanner />
+      </div>
 
       {/* 필터 패널 */}
       <div id="filter-panel">

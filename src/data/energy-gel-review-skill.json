@@ -1,0 +1,937 @@
+{
+  "title": "Energy Gel Review Skill",
+  "version": "2.0",
+  "last_updated": "2026-02-01",
+  "languages": ["ko", "en"],
+  "description": "Evidence-based energy gel review framework integrating sports nutrition science (SGLT1/GLUT5, gut training, osmolality) and Korean runner consumer insights. 러닝 중 에너지 보충제(젤, 츄, 양갱 등)를 과학적·소비자 관점에서 평가하기 위한 프레임워크.",
+  "sections": [
+    {
+      "id": "1-evaluation-framework",
+      "name": "Evaluation Framework",
+      "slug": "evaluation-framework",
+      "summary": "에너지 젤 평가의 핵심 지표. 한국 러너 특성에 맞춘 우선순위, 거리/페이스별 가이드, 리뷰 템플릿.",
+      "core_objects": {
+        "consumer_priority_hierarchy": {
+          "description": "한국 러너들이 에너지 젤 구매 및 재구매 시 고려하는 결정적 우선순위.",
+          "priority_order": [
+            "위장 안정성/속편함 (GI Tolerance)",
+            "목넘김/점도 (Texture/Viscosity)",
+            "에너지 체감 및 성분 배합 (Energy Delivery)",
+            "가성비 및 개당 가격 (Price/Value)",
+            "맛 선호도 및 텁텁함 유무 (Taste)",
+            "휴대성 및 개봉 편의성 (Portability/Openability)",
+            "성분 투명성/알레르기 (Ingredient Transparency)",
+            "브랜드 신뢰도 (Brand Trust)"
+          ],
+          "runner_type_breakdown": {
+            "beginner": ["GI Tolerance", "Taste/Texture", "Price", "Ease of Use"],
+            "marathon_sub4": ["Carb Delivery Rate", "GI Tolerance", "Caffeine Strategy", "Proven Performance"],
+            "marathon_sub3": ["Max Carb Oxidation (90g/hr+)", "Hydrogel/Isotonic Tech", "Caffeine Timing", "Zero GI Risk"],
+            "fun_runner": ["Taste", "Price", "Convenience", "Natural Ingredients", "SNS Appeal"],
+            "ultra": ["Calorie Density", "Flavor Fatigue Resistance", "Real Food Options", "Sodium Content", "Variety"]
+          }
+        },
+        "nutritional_dimensions": [
+          "탄수화물 종류 및 비율 (Carb Source & Ratio - maltodextrin:fructose)",
+          "탄수화물 총량 (Total Carbs per serving, g)",
+          "삼투압/농도 (Osmolality, mOsm/kg)",
+          "카페인 함량 (Caffeine, mg)",
+          "나트륨/전해질 구성 (Electrolyte Profile, mg)",
+          "칼로리 밀도 (kcal per gram)",
+          "서빙 사이즈/중량 (Serving Size, g or ml)"
+        ],
+        "runner_type_suitability": {
+          "by_distance": {
+            "10k": "보충 불필요 또는 1개 (선택). 카페인 젤 1개로 부스트 가능.",
+            "half_marathon": "1-2개 (30-60g carbs total). 8-10km, 15-17km 시점.",
+            "marathon": "4-6개 (목표: 60-90g/hr). 첫 젤 30-45분, 이후 20-30분 간격.",
+            "ultra": "시간당 60-90g + 고체 음식 병행. 맛 로테이션 필수."
+          },
+          "by_pace": {
+            "sub3": "카페인 전략 + 고농도 듀얼 소스 (Maurten 320, SiS Beta Fuel). 90g/hr 목표.",
+            "sub4": "검증된 중가 젤 (GU, SiS Go) + 후반부 카페인. 60-75g/hr.",
+            "sub5": "가성비 젤 or 양갱 + 편의성 우선. 45-60g/hr.",
+            "completion": "양갱/바나나 등 익숙한 음식 OK. 30-45g/hr."
+          },
+          "by_gi_sensitivity": {
+            "very_sensitive": ["Maurten (hydrogel)", "양갱", "SiS Isotonic", "Tailwind (음료)"],
+            "normal": ["GU, PowerGel, 엔돌핀 등 대부분 (물 동반 필수)"],
+            "iron_stomach": ["고농도 젤, 에너지 바, 실제 음식 병행 가능"]
+          }
+        },
+        "review_structure_template": {
+          "intro": ["브랜드 스토리 및 포지셔닝 (대회용 vs 훈련용)", "타깃 러너", "핵심 기술/성분"],
+          "nutritional_specs": ["Carb Source (성분표 1순위 확인)", "Carb Amount (g)", "Glucose:Fructose Ratio", "Calories", "Caffeine (mg)", "Sodium (mg)", "Other Electrolytes", "Osmolality Type", "Serving Size (g/ml)", "Allergens"],
+          "carb_science_analysis": "성분표 기반 듀얼 소스 여부, 삼투압 분류, 흡수 효율 평가",
+          "gi_tolerance_assessment": "제형(isotonic/hypertonic/hydrogel), 물 필요 여부, 커뮤니티 GI 후기",
+          "texture_viscosity_evaluation": "점도(묽은/걸쭉한/젤리형), 목넘김 용이성, 입안 잔여감",
+          "taste_evaluation": "맛 분류(상큼/달달/텁텁), 한국인 선호도, 후반부 맛 피로 가능성",
+          "field_test": "실제 20km+ 장거리 주행 시 흡수 체감, 위장 반응, 에너지 체감 시점",
+          "field_test_protocol": {
+            "description": "제품 간 공정한 비교를 위한 표준화된 필드 테스트 템플릿",
+            "template": {
+              "distance_km": "20km 이상 (마라톤 페이스 러닝 권장)",
+              "pace": "목표 레이스 페이스 ±10%",
+              "temperature_c": "기록 필수 (10-15°C 표준, 25°C+ 하절기 별도 표기)",
+              "humidity_percent": "기록 권장",
+              "intake_timing": "첫 젤 시점(분), 이후 간격(분), 총 개수",
+              "water_pairing": "물 동반 여부 및 양(ml)",
+              "gi_response": {
+                "scale": "0=없음, 1=미미, 2=불편하나 지속 가능, 3=페이스 저하, 4=중단",
+                "timing": "증상 발생 시점 (섭취 후 몇 분)"
+              },
+              "energy_onset_minutes": "섭취 후 에너지 체감까지 소요 시간",
+              "energy_duration_minutes": "에너지 효과 지속 체감 시간",
+              "taste_fatigue": "3개 이상 연속 섭취 시 맛 피로 여부",
+              "notes": "자유 기술 (개봉 편의성, 점도 변화, 기타)"
+            }
+          },
+          "portability_packaging": "패킷 크기, 개봉 용이성(장갑/땀 상태), 쓰레기 처리, 꼭지 탈락 여부",
+          "timing_strategy": "거리별 섭취 시점 가이드, 물 페어링, 에이드 스테이션 활용법",
+          "runner_suitability_matrix": {
+            "best_for": [],
+            "avoid_if": [],
+            "ideal_use_cases": []
+          },
+          "price_value": "개당 가격, 마라톤 1회 총 비용, 묶음 구매 가격, 양갱 대비 가성비",
+          "korean_market_comparison": "같은 가격대 경쟁 제품 비교, 한국 구매처, 커뮤니티 평판",
+          "regulatory_note": "건강기능식품 vs 일반식품 분류, 과대광고 여부",
+          "verdict": "종합 평가 및 타깃 러너 명시",
+          "rating_system": {
+            "metrics": [
+              "에너지 체감도 (Energy Kick) - 탄수화물 전달 속도 및 체감",
+              "위장 편안함 (GI Comfort) - 제형, 삼투압, 실사용 후기",
+              "목넘김/점도 (Texture) - 점도, 입안 잔여감, 섭취 용이성",
+              "맛 (Taste) - 한국인 입맛 기준, 맛 피로 여부",
+              "카페인 전략 (Caffeine) - 함량 적정성, 타이밍 활용도",
+              "전해질 (Electrolytes) - 나트륨 함량, 별도 보충 필요 여부",
+              "패키징/개봉 (Portability) - 휴대성, 개봉 편의, 쓰레기 처리",
+              "가성비 (Value) - 개당 가격, 마라톤 총 비용",
+              "성분 투명성 (Transparency) - 성분표 명확성, 알레르기 표기",
+              "종합 (Overall)"
+            ],
+            "scale": "1-10",
+            "score_anchors": {
+              "9-10": "카테고리 내 최상위. 해당 항목에서 경쟁 제품 대비 명확한 우위. (예: GI Comfort 10 = Maurten급 위장 안정성)",
+              "7-8": "우수. 대부분의 러너에게 만족스러운 수준. 약간의 단점은 있으나 실사용에서 문제 없음.",
+              "5-6": "보통. 장단점이 공존. 특정 조건에서만 적합하거나, 가격 대비 기대에 미치지 못함.",
+              "3-4": "미흡. 해당 항목에서 명확한 약점. 대안 제품 권장.",
+              "1-2": "부적합. 해당 항목에서 심각한 문제. (예: GI Comfort 1 = 다수 사용자 GI 이슈 보고)"
+            },
+            "weighted_scoring_by_runner_type": {
+              "description": "러너 타입별 가중치 (합계 100%). 종합 점수 산출 시 적용.",
+              "beginner": {"gi_comfort": 30, "taste": 20, "value": 20, "texture": 15, "portability": 15},
+              "marathon_sub4": {"energy_kick": 25, "gi_comfort": 25, "caffeine": 15, "value": 15, "electrolytes": 10, "texture": 10},
+              "marathon_sub3": {"energy_kick": 30, "gi_comfort": 20, "caffeine": 20, "electrolytes": 15, "transparency": 15},
+              "fun_runner": {"taste": 30, "value": 25, "portability": 20, "gi_comfort": 15, "transparency": 10},
+              "ultra": {"taste": 20, "gi_comfort": 20, "energy_kick": 20, "electrolytes": 20, "value": 10, "portability": 10}
+            }
+          }
+        },
+        "ingredient_label_reading_guide": {
+          "description": "소비자가 뒷면 성분표를 보고 젤 품질을 판단하는 기준.",
+          "rules": [
+            "성분 1순위가 maltodextrin/glucose polymer → 삼투압 낮아 위장 안전",
+            "성분 1순위가 sugar/glucose syrup → 삼투압 높을 수 있음",
+            "fructose가 2-3순위에 있으면 → 듀얼 소스 (긍정적)",
+            "fructose가 1순위 → 과당 과다 위험 (주의)",
+            "sodium citrate/sodium chloride 포함 → 전해질 보충 (긍정적)",
+            "BCAA/beta-alanine/taurine → 마케팅 성분 (무시 가능)",
+            "sorbitol/xylitol/mannitol(polyol) → 삼투성 설사 직접 유발 (경고 🔴). 소량이라도 GI 민감자는 회피",
+            "gelatin 포함 → 비건 불가",
+            "contains milk/soy → 알레르기 주의"
+          ],
+          "additional_nutrient_fields": {
+            "description": "성분표에서 추가로 확인해야 할 영양소 (특히 real food 젤 비교 시)",
+            "fiber_g": "식이섬유 (g). 2g 이상이면 소화 지연 가능 → 고강도 주의. Spring Energy 등 자연식 젤에서 주요.",
+            "fat_g": "지방 (g). 1g 이상이면 위배출 지연. MCT oil 함유 젤 확인.",
+            "protein_g": "단백질 (g). 대부분 0-1g. GU Roctane 등 BCAA 포함 제품에서 소량 존재.",
+            "sodium_mg": "나트륨은 반드시 mg 단위로 표준화. 제품마다 mg/packet vs mg/100g 표기가 달라 혼동 주의. 리뷰 시 항상 '1서빙 기준 mg'으로 통일."
+          }
+        },
+        "guidelines": {
+          "language_style": [
+            "연구 근거 기반 but 비전공자도 이해 가능",
+            "절대 단정 대신 'may', 'can', 'suggests' 사용",
+            "개인차 강조 (GI tolerance는 매우 개인적)",
+            "단순히 성분 나열 금지 - 실전 의미로 해석"
+          ],
+          "contextual_emphasis": [
+            "반드시 훈련에서 먼저 테스트 강조 (대회 당일 첫 시도 절대 금지)",
+            "카테고리 내 비교 (같은 가격대, 같은 용도끼리)",
+            "한국 시장 맥락 (가격, 구매처, 커뮤니티 평판)",
+            "양갱 대비 비교는 필수 (한국 러너 기준점)"
+          ],
+          "bad_review_example": "Maltodextrin + Fructose 2:1 비율, 22g 탄수화물, 나트륨 55mg, 카페인 없음...",
+          "good_review_example": "풀코스 서브4 러너가 25분마다 1개씩 5개를 먹으면 시간당 약 55g의 탄수화물을 섭취하게 됩니다. 듀얼 소스라 SGLT1 포화 없이 흡수되지만, 고삼투압(~500mOsm)이라 에이드에서 반드시 물 150ml와 함께 먹어야 합니다. 양갱(개당 800원) 대비 4배 비싸지만 흡수 속도와 카페인 옵션이 있어 기록 도전 시 가치 있습니다."
+        }
+      }
+    },
+    {
+      "id": "2-carbohydrate-science-reference",
+      "name": "Carbohydrate Science & Ingredients Reference",
+      "slug": "carbohydrate-science",
+      "summary": "운동 중 탄수화물 대사, 흡수 경로, 최적 섭취량, 카페인/전해질/기타 성분에 대한 과학적 연구 정리.",
+      "core_objects": {
+        "carbohydrate_oxidation": {
+          "single_source_max": {
+            "rate_g_per_hour": 60,
+            "transporter": "SGLT1 (sodium-glucose linked transporter 1)",
+            "location": "소장 상피세포",
+            "limiting_factor": "SGLT1 수용체 포화 → 60g/hr 이상 섭취해도 흡수 안 됨",
+            "sources": ["glucose", "maltodextrin", "sucrose (glucose portion)", "amylopectin"]
+          },
+          "dual_source_max": {
+            "rate_g_per_hour": [90, 105],
+            "recent_research_up_to": 120,
+            "transporters": {
+              "SGLT1": "glucose/maltodextrin 흡수 (최대 ~60g/hr)",
+              "GLUT5": "fructose 흡수 (최대 ~30-50g/hr, 장 훈련 시 증가)"
+            },
+            "key_insight": "서로 다른 수송체를 사용하므로 동시에 독립적으로 흡수 가능 → 총 흡수량 대폭 증가"
+          },
+          "optimal_ratios": {
+            "classic": {
+              "glucose_to_fructose": "2:1",
+              "evidence": "Jeukendrup et al. 2004-2010 다수 연구. 가장 많은 근거.",
+              "max_oxidation": "~90g/hr",
+              "products_using": "GU, PowerGel, Hammer 등 대부분"
+            },
+            "updated": {
+              "glucose_to_fructose": "1:0.8",
+              "evidence": "최근 연구(2020+)에서 과당 비율 높여도 효과적. 총 산화율 더 높을 수 있음.",
+              "max_oxidation": "~105-120g/hr (gut-trained athletes)",
+              "products_using": "Maurten, SiS Beta Fuel 등 최신 제품",
+              "note": "장 훈련이 전제되어야 함"
+            }
+          },
+          "practical_guidelines": {
+            "under_1_hour": "보충 불필요 (체내 글리코겐 충분). 카페인 mouth rinse만으로 효과 가능.",
+            "1_to_2_hours": "30-60g/hr (단일 소스 OK). 하프마라톤 대부분 여기.",
+            "2_to_3_hours": "60-90g/hr (듀얼 소스 권장). 풀마라톤 서브4 이상.",
+            "over_3_hours": "80-120g/hr (듀얼 소스 필수, 장 훈련 2-4주 선행). 울트라/서브3+"
+          }
+        },
+        "carbohydrate_sources": {
+          "maltodextrin": {
+            "type": "glucose polymer (DE 3-20)",
+            "gi_index": "high (~95-105)",
+            "absorption": "SGLT1 경로, 포도당과 동일하게 흡수",
+            "advantage": "낮은 삼투압 (같은 칼로리에서 덜 달고 위장 부담 적음)",
+            "disadvantage": "단독으로는 60g/hr 한계",
+            "common_in": "대부분의 에너지 젤 (성분표 1순위 확인)",
+            "label_check": "성분표 1순위가 maltodextrin이면 긍정적 신호"
+          },
+          "glucose_dextrose": {
+            "type": "단당류",
+            "gi_index": "100 (기준치)",
+            "absorption": "SGLT1",
+            "advantage": "가장 빠른 혈당 상승",
+            "disadvantage": "높은 삼투압 → 과다 시 GI 이슈. 같은 g에서 maltodextrin보다 삼투압 높음."
+          },
+          "fructose": {
+            "type": "단당류 (과일당)",
+            "gi_index": "low (~23)",
+            "absorption": "GLUT5 (SGLT1과 독립 경로)",
+            "advantage": "듀얼 소스의 핵심. SGLT1과 별도 경로로 총 흡수량 크게 증가.",
+            "disadvantage": "단독 과량 섭취 시 GI 이슈",
+            "malabsorption_threshold": {
+              "untrained": "~25-30g/hr에서 GI 증상 시작",
+              "trained": "~40-50g/hr까지 증가 가능 (GLUT5 upregulation)"
+            },
+            "label_check": "성분표 2-3순위에 fructose → 듀얼 소스 (좋음). 1순위면 주의."
+          },
+          "sucrose": {
+            "type": "이당류 (포도당 + 과당 1:1)",
+            "absorption": "소장에서 sucrase 효소가 분해 → SGLT1 + GLUT5 동시 흡수",
+            "advantage": "자연적으로 듀얼 소스. 꿀, 설탕 기반 젤에 해당.",
+            "common_in": "Spring Energy, Honey Stinger 등 자연식 기반 젤"
+          },
+          "palatinose_isomaltulose": {
+            "type": "이당류 (느린 흡수형 glucose+fructose)",
+            "gi_index": "low (~32)",
+            "advantage": "혈당 급등 방지, 지속적 에너지 공급",
+            "disadvantage": "산화율 낮아 고강도(서브3 페이스)에서 에너지 공급 부족",
+            "use_case": "저강도/울트라/장시간 훈련"
+          }
+        },
+        "osmolality": {
+          "definition": "용액 내 용질 농도 (mOsm/kg). 혈액은 ~280-300 mOsm/kg.",
+          "why_it_matters": "삼투압이 혈액보다 높으면 장에서 수분을 빼앗아 GI 이슈 유발. 젤 선택의 핵심 기준.",
+          "data_availability_note": "대부분의 브랜드가 삼투압을 공개하지 않음. 랩 테스트(RunRepeat, 학술 논문) 또는 성분 기반 proxy 추정 필요.",
+          "proxy_estimation": {
+            "method": "성분표의 탄수화물 농도(g/ml)와 주 탄수화물 종류로 추정",
+            "rules": [
+              "maltodextrin 기반 + 60ml 이상 서빙 → isotonic~mild hypertonic (300-450 mOsm)",
+              "glucose/sugar syrup 기반 + 30-40ml 서빙 → hypertonic (500-700 mOsm)",
+              "hydrogel 표시 (alginate+pectin) → 기능적 isotonic (위배출 기준)",
+              "isotonic 라벨 표시 제품 → 270-330 mOsm (브랜드 claim)"
+            ],
+            "basis_field": {
+              "description": "개별 젤 리뷰 시 삼투압 데이터의 출처를 명시",
+              "values": {
+                "measured": "랩 테스트 또는 학술 논문에서 실측된 값",
+                "estimated": "성분표 기반 proxy 추정값",
+                "brand_claim": "브랜드가 주장하는 값 (독립 검증 없음)",
+                "unknown": "데이터 없음"
+              }
+            }
+          },
+          "categories": {
+            "hypotonic": {
+              "range_mOsm": [0, 270],
+              "absorption": "가장 빠른 위배출. 수분 흡수 촉진.",
+              "example": "물, 묽은 스포츠 음료",
+              "gel_note": "대부분의 젤은 여기에 해당하지 않음"
+            },
+            "isotonic": {
+              "range_mOsm": [270, 330],
+              "absorption": "혈액과 동일 농도. 빠른 흡수, 수분 이동 최소.",
+              "example": "SiS Go Isotonic, HIGH5 Isotonic",
+              "advantage": "물 없이 섭취 가능. GI 이슈 위험 낮음.",
+              "trade_off": "탄수화물 농도가 상대적으로 낮음 (20-25g/서빙)"
+            },
+            "hypertonic": {
+              "range_mOsm_min": 330,
+              "typical_range": [400, 700],
+              "absorption": "느린 위배출. 장으로 수분을 끌어당겨 탈수 + GI 이슈.",
+              "example": "GU, PowerGel, Hammer, Clif Shot 등 대부분의 일반 젤",
+              "mandatory": "반드시 150-200ml 물과 함께 섭취",
+              "note": "물 없이 먹으면 GI 이슈 확률 급증"
+            }
+          },
+          "hydrogel_technology": {
+            "brand": "Maurten",
+            "mechanism": "alginate(해조류) + pectin(과일 펙틴)이 위산(pH ~2)을 만나면 하이드로젤 매트릭스 형성 → 고농도 탄수화물을 캡슐화하여 위를 빠르게 통과 → 소장에서 서서히 방출",
+            "claimed_benefit": "고농도 탄수화물(최대 80g/서빙)을 GI 이슈 없이 전달",
+            "evidence_status": {
+              "positive": [
+                "Pettersson et al. 2020: 마라톤 중 GI 증상 감소 경향",
+                "엘리트 선수 사용률 매우 높음 (Kipchoge, Ingebrigtsen 등)",
+                "실전 후기에서 GI 이슈 보고 매우 적음"
+              ],
+              "skeptical": [
+                "Baur et al. 2019: hydrogel이 위배출 속도에 유의미한 차이 없음 (실험실 환경)",
+                "위약 효과/브랜드 효과 가능성",
+                "높은 가격이 효과 인지에 영향 (price-placebo)"
+              ],
+              "consensus": "기전은 논란 있으나, 실전 GI tolerance는 우수하다는 것이 다수 의견"
+            }
+          }
+        },
+        "caffeine": {
+          "mechanism": [
+            "아데노신 수용체 길항 → 피로 인지 감소 (가장 확실한 기전)",
+            "중추신경계 자극 → 집중력/각성 향상",
+            "근수축력 향상 가능 (고용량 시)",
+            "지방산 동원 촉진 → 글리코겐 절약 (초기 연구, 최근 논란)"
+          ],
+          "dosing": {
+            "ergogenic_range_mg_per_kg": [3, 6],
+            "example_70kg": "210-420mg (젤 4-8개 분량. 보통 레이스 중 1-3개로 분산 섭취)",
+            "typical_gel_content_mg": [25, 50],
+            "high_caffeine_gels_mg": [75, 100],
+            "max_safe_single_dose_mg": 200,
+            "timing": {
+              "onset": "30-60분 후 효과 시작",
+              "peak": "45-90분 후 피크",
+              "duration": "3-5시간 (반감기)"
+            }
+          },
+          "strategy_by_distance": {
+            "10k": "레이스 30-45분 전 카페인 젤 1개 (50mg). 또는 커피로 대체.",
+            "half_marathon": "레이스 30분 전 1개 + 15km 지점 1개 (총 50-100mg).",
+            "marathon": "25-30km 이후 카페인 젤 1-2개 투입 (총 100-200mg). 전반부는 일반 젤.",
+            "ultra": "밤 구간/극후반부에 전략적 사용. 총 카페인 과다 주의."
+          },
+          "korean_coffee_culture_note": {
+            "issue": "한국인 하루 평균 커피 2-3잔 (카페인 200-300mg). 습관적 음용자는 카페인 젤 효과 감소.",
+            "recommendation": "대회 2-3일 전 카페인 감량(washout)으로 민감도 회복 가능. 단, 금단 증상(두통) 주의.",
+            "practical_tip": "커피 많이 마시는 사람은 카페인 젤 75-100mg짜리로, 적게 마시는 사람은 25-50mg으로."
+          },
+          "cautions": [
+            "내성 형성 → 습관적 커피 음용자는 효과 감소 (washout 고려)",
+            "CYP1A2 유전자 다형성 → 'slow metabolizer'는 효과↓ 부작용↑ (개인차 매우 큼)",
+            "GI 이슈 악화 가능 (민감한 사람은 카페인+고삼투압 조합 회피)",
+            "수면 방해 (오후/저녁 대회, 울트라 밤 구간에서 의도적 활용 가능)",
+            "이뇨 작용 (운동 중에는 미미하나, 탈수 상태에서는 주의)"
+          ]
+        },
+        "electrolytes": {
+          "sodium": {
+            "role": "수분 흡수 촉진 (SGLT1과 co-transport), 혈장량 유지, 저나트륨혈증 예방",
+            "sweat_loss_rate_mg_per_hour": [300, 1500],
+            "recommended_intake_mg_per_hour": [300, 600],
+            "gel_typical_mg": [20, 160],
+            "gap_analysis": "대부분의 젤(20-70mg)은 시간당 손실(300-1500mg)의 5-20%만 보충. 별도 전해질 보충 필수.",
+            "korean_summer_note": "한국 여름(30°C+, 고습도) 대회 시 나트륨 손실 극대화 → 전해질 탭/음료 병행 강력 권장"
+          },
+          "potassium": {
+            "role": "근수축, 신경 전달, 세포 내 수분 균형",
+            "gel_typical_mg": [10, 60],
+            "note": "젤 내 함량 미미. 일반적으로 별도 보충 불필요 (식사로 충분)."
+          },
+          "magnesium": {
+            "role": "근경련 예방, ATP 대사 보조, 근이완",
+            "note": "일부 프리미엄 젤에만 포함. 한국 시장에서 마케팅 소구점으로 활용됨.",
+            "evidence": "급성 보충의 경련 예방 효과는 근거 부족. 만성 결핍 시에만 의미."
+          }
+        },
+        "other_ingredients": {
+          "bcaa_amino_acids": {
+            "evidence": "운동 중 에너지 젤 내 BCAA(2-3g)의 급성 퍼포먼스 효과 근거 부족",
+            "verdict": "마케팅 > 과학. 젤에서의 BCAA는 가격 인상 요인일 뿐.",
+            "exception": "GU Roctane 등 프리미엄 젤에 포함. 해가 되지는 않음."
+          },
+          "beta_alanine": {
+            "evidence": "4-10주 만성 보충 시 근카르노신 증가 → 완충 능력 향상. 젤 1회 섭취로는 효과 없음.",
+            "verdict": "젤 성분으로는 의미 없음. 입가 따끔거림(paresthesia)만 유발."
+          },
+          "taurine": {
+            "evidence": "일부 항산화/항피로 효과 보고. but 에너지 젤 맥락(소량, 급성)에서 근거 부족.",
+            "verdict": "있으면 나쁘지 않지만 구매 결정 요인은 아님."
+          },
+          "mct_oil": {
+            "evidence": "지방 산화 촉진 주장. 그러나 운동 중 지방 소화는 느리고 GI 이슈 위험 높음.",
+            "verdict": "울트라(저강도/장시간)에서 일부 사용. 마라톬 이하 고강도에서는 불필요/유해."
+          },
+          "sodium_bicarbonate": {
+            "evidence": "혈액 pH 완충 → 고강도 퍼포먼스 향상 가능. but 젤 내 소량으로는 효과 미미.",
+            "verdict": "별도 프로토콜로만 의미 있음. 젤 성분으로는 무시."
+          }
+        },
+        "allergen_and_dietary_info": {
+          "common_allergens_in_gels": ["milk/dairy (일부 프로틴 함유 젤)", "soy (레시틴)", "tree nuts (일부 natural 젤)"],
+          "vegan_concerns": "gelatin 함유 젤은 비건 불가 (Honey Stinger 일부 제품)",
+          "gluten": "대부분의 젤은 글루텐 프리. maltodextrin은 옥수수/감자 유래가 대부분이나 밀 유래 가능 → 라벨 확인."
+        }
+      }
+    },
+    {
+      "id": "3-gi-distress-and-gut-training",
+      "name": "GI Distress & Gut Training Protocol",
+      "slug": "gi-distress-gut-training",
+      "summary": "러닝 중 위장 장애의 원인, 예방법, 장 훈련(gut training) 프로토콜, 수분 페어링 전략.",
+      "core_objects": {
+        "gi_distress_during_running": {
+          "prevalence": "마라톤 러너의 30-50%가 GI 증상 경험. 울트라에서는 60-80%.",
+          "upper_gi": ["구역질 (Nausea)", "역류 (Reflux)", "트림 (Belching)", "팽만감 (Bloating)"],
+          "lower_gi": ["복통/경련 (Cramps)", "긴급 배변 (Urgency)", "설사 (Diarrhea)", "혈변 (드물지만 울트라에서 보고)"],
+          "mechanism": [
+            "혈류 재분배: 운동 시 장 혈류 최대 80% 감소 → 장 점막 손상/투과성 증가",
+            "기계적 진동: 러닝의 상하 충격이 장 내용물 이동 촉진",
+            "탈수: 체중 2% 이상 탈수 시 장 투과성 급증",
+            "고삼투압 용액: 장 내로 수분 유입 → 경련/설사",
+            "과당 흡수 한계: GLUT5 포화 시 미흡수 과당이 장내 발효 → 가스/설사",
+            "스트레스/불안: 교감신경 활성화 → 장운동 변화",
+            "NSAIDs (이부프로펜): 장 투과성 증가. 대회 중 진통제 복용 시 GI 이슈 배가."
+          ]
+        },
+        "gel_composition_and_gi_risk": {
+          "high_risk_combinations": [
+            "고삼투압 젤 (>500 mOsm) + 물 없이 섭취 → 가장 흔한 실수",
+            "과당 단독 고용량 (>30g/hr) → GLUT5 포화",
+            "고지방/고섬유 성분 젤 → 소화 지연",
+            "인공감미료 (소르비톨, 만니톨) → 삼투성 설사",
+            "카페인 + 고삼투압 + 탈수 → 최악의 조합"
+          ],
+          "low_risk_strategies": [
+            "등장(isotonic) 젤 선택 (SiS Go 등)",
+            "하이드로젤 기술 (Maurten)",
+            "말토덱스트린 + 과당 2:1 비율 (검증된 조합)",
+            "소량 자주 섭취 (한번에 많이 X)",
+            "에이드에서 반드시 물 동반 섭취",
+            "4주 이상 장 훈련 (gut training)"
+          ]
+        },
+        "gut_training_protocol": {
+          "principle": "장의 탄수화물 흡수 능력은 훈련 가능. 반복 노출로 SGLT1/GLUT5 수송체 발현 증가.",
+          "evidence": [
+            "Cox et al. 2010: 28일 고탄수화물 섭취 훈련 → 외인성 탄수화물 산화율 유의미 증가",
+            "Jeukendrup 2017: 'Train the Gut' 리뷰. 위배출, 장 흡수, GI 편안함 모두 개선 가능."
+          ],
+          "protocol": {
+            "duration_weeks": [2, 4],
+            "method": "훈련 중 레이스와 동일한 제품/양/타이밍으로 반복 연습",
+            "weekly_progression": [
+              "1주차: 30-40g/hr로 시작. GI 반응 관찰.",
+              "2주차: 50-60g/hr로 증량. 불편하면 유지.",
+              "3주차: 60-80g/hr. 듀얼 소스 제품 사용.",
+              "4주차: 목표 섭취량 도달 (80-90g/hr). 레이스 시뮬레이션."
+            ],
+            "key_rules": [
+              "레이스에서 먹을 정확한 제품으로 훈련 (브랜드/맛 포함)",
+              "장거리 훈련(LSD, 25km+)에서 반복 연습",
+              "GI 증상 일지 기록 (언제, 무엇을, 얼마나, 증상)",
+              "절대 대회 당일 처음 시도하지 않기",
+              "물 페어링도 동일하게 연습"
+            ]
+          },
+          "fructose_adaptation": {
+            "threshold_untrained": "~25-30g/hr에서 GI 증상 시작",
+            "threshold_after_training": "~40-50g/hr까지 증가 가능",
+            "mechanism": "GLUT5 transporter upregulation + 장내 미생물 발효 능력 적응",
+            "practical_tip": "과당이 포함된 젤을 2주 이상 꾸준히 훈련에서 사용하면 내성 생김"
+          }
+        },
+        "timing_and_hydration_strategy": {
+          "pre_race": {
+            "3_4_hours_before": "고탄수화물 식사 (2-4g/kg 체중). 검증된 음식만.",
+            "1_hour_before": "가벼운 탄수화물 (바나나 1개 or 에너지 바 반 개)",
+            "15_30_min_before": "젤 1개 (선택적). GI 위험이 있으므로 훈련에서 테스트한 경우만.",
+            "caffeine_timing": "카페인 젤은 레이스 30-45분 전 (10k/하프) 또는 레이스 중 25-30km 시점 (마라톤)"
+          },
+          "during_race_marathon": {
+            "first_gel": "30-45분 시점 (에너지 필요 전에 선제 섭취)",
+            "frequency": "매 20-30분 또는 5-7km마다 1개",
+            "pattern": "일정한 간격 유지 >> 한번에 몰아 먹기. 배고프기 전에 먹는 것이 핵심.",
+            "caffeine_gel_timing": "25-30km 시점 (골인 60-90분 전). 피크 타이밍에 맞춤.",
+            "last_gel": "35-38km. 이후 섭취는 소화 시간 부족으로 효과 미미.",
+            "aid_station_strategy": "젤은 에이드 200m 전에 입에 넣고 → 에이드에서 물과 함께 삼킴"
+          },
+          "during_race_half": {
+            "simple_plan": "8-10km에 1개, 15-17km에 1개 (총 2개)",
+            "caffeine_option": "15km에 카페인 젤 투입 (선택)"
+          },
+          "during_ultra": {
+            "hourly_target": "60-90g/hr",
+            "solid_food_ratio": "젤 70% + 고체 음식 30% (맛 피로 방지)",
+            "flavor_rotation": "같은 맛 3개 이상 연속 금지. 달달 → 짭짤 → 상큼 로테이션.",
+            "sodium_strategy": "나트륨 별도 보충 필수 (전해질 탭/캡슐)"
+          },
+          "water_pairing_guide": {
+            "hypertonic_gel": "반드시 150-200ml 물과 함께. 물 없이 먹으면 GI 이슈 확률 3배↑.",
+            "isotonic_gel": "물 없이 섭취 가능. 단, 수분 보충은 별도로 필요.",
+            "hydrogel": "물 없이 섭취 가능. 디자인 자체가 물 불필요.",
+            "tip": "대회 에이드에서 물컵 먼저 들고 → 젤 섭취 → 물로 입 헹구기"
+          }
+        },
+        "temperature_and_storage": {
+          "summer_heat": {
+            "issue": "30°C+ 환경에서 젤 점도 변화. 양갱은 녹아서 변형.",
+            "solution": "서늘한 곳 보관, 레이스 벨트 안쪽에 휴대. 아이스 베스트 활용.",
+            "affected_products": "양갱 (녹음), Spring Energy (실온 보관 주의), 일부 자연식 젤"
+          },
+          "winter_cold": {
+            "issue": "5°C 이하에서 젤이 굳어 짜기 어려움.",
+            "solution": "체온 가까이 보관 (장갑 안, 허리 벨트 안쪽).",
+            "affected_products": "점도 높은 젤 (GU, Hammer)"
+          },
+          "shelf_life": {
+            "typical": "제조일로부터 12-24개월",
+            "note": "유통기한 확인 필수. 대량 구매 시 특히 주의.",
+            "natural_gels": "Spring Energy 등 자연식 기반은 유통기한 짧을 수 있음"
+          }
+        }
+      }
+    },
+    {
+      "id": "4-korean-market-insights",
+      "name": "Korean Market Insights & Consumer Analysis",
+      "slug": "korean-market-insights",
+      "summary": "한국 에너지 젤 소비자의 우선순위, 양갱 문화, 가격대 분류, 커뮤니티 영향, 대안 제품, 규제 정보.",
+      "core_objects": {
+        "segment_profiles": {
+          "beginner": {
+            "needs": ["위장 편안함", "맛/거부감 없음", "가성비", "사용 편의성"],
+            "price_preference_krw": "<=2,000원/개",
+            "common_questions": [
+              "처음인데 뭐 먹어야 하나요?",
+              "속이 안 아플까요?",
+              "양갱이 낫나요 젤이 낫나요?",
+              "몇 km마다 먹어야 하나요?",
+              "하프마라톤에도 필요한가요?"
+            ],
+            "recommendation": "양갱으로 시작 → 엔돌핀 스포츠 → GU/SiS 업그레이드"
+          },
+          "sub4_marathon": {
+            "needs": ["검증된 듀얼 소스 탄수화물", "카페인 후반부 전략", "GI 안정"],
+            "price_acceptance_krw": "3,000-4,000원/개",
+            "focus": ["60-75g/hr 탄수화물", "30km 이후 카페인 부스트"],
+            "recommendation": "GU Roctane, SiS Go Isotonic, PowerGel + 카페인 젤 1-2개"
+          },
+          "sub3_elite": {
+            "needs": ["최고 흡수율(90g/hr+)", "고농도 듀얼 소스", "검증된 엘리트 성능"],
+            "price_acceptance_krw": "가격 무관 (마라톤당 3-4만원 투자 가능)",
+            "focus": ["hydrogel 기술", "1:0.8 비율", "카페인 정밀 타이밍"],
+            "recommendation": "Maurten 160 + 320 Caf 100, SiS Beta Fuel"
+          },
+          "fun_runner": {
+            "needs": ["맛있는 것", "편하게 먹을 수 있는 것", "SNS 인증 가능한 패키징"],
+            "typical_products": ["양갱", "Honey Stinger", "Spring Energy", "편의점 젤리"],
+            "focus": ["맛 우선", "자연 성분 선호", "디자인/브랜딩"]
+          },
+          "ultra_runner": {
+            "needs": ["맛 피로 방지", "고칼로리 밀도", "고체 음식 병행", "고나트륨"],
+            "focus": ["다양한 맛 로테이션", "실제 음식 기반 젤", "전해질 고함량"],
+            "recommendation": "Spring Energy + Maurten + 고체 음식 (김밥, 감자 등)"
+          }
+        },
+        "korean_specific": {
+          "yanggang_culture": {
+            "description": "양갱 = 한국 러너의 독자적 에너지 보충 문화. 전 세계에서 유일.",
+            "nutritional_profile": {
+              "carbs_per_piece_g": [20, 35],
+              "calories_per_piece": [80, 130],
+              "main_carb_source": "설탕 + 물엿 (sucrose + glucose syrup)",
+              "fiber": "한천(agar)으로 식이섬유 소량 포함",
+              "sodium_mg": [5, 15],
+              "caffeine": 0
+            },
+            "price_krw": [500, 1200],
+            "advantages": [
+              "GI 이슈 거의 없음 (고체, 저삼투압, 익숙한 성분)",
+              "익숙한 맛과 식감 (심리적 편안함)",
+              "매우 저렴 (젤의 1/3-1/5 가격)",
+              "편의점에서 언제든 구매 가능 (접근성 최고)",
+              "별도의 gut training 불필요"
+            ],
+            "disadvantages": [
+              "흡수 속도 젤보다 느림 (씹기 → 소화 → 흡수 단계 필요)",
+              "듀얼 소스 최적화 안 됨 (SGLT1 위주)",
+              "전해질/카페인 없음 (별도 보충 필요)",
+              "여름(30°C+) 녹음/변형",
+              "섭취 중 호흡 방해 (달리면서 씹기 어려움)",
+              "고강도(서브3 페이스)에서 에너지 전달 속도 부족"
+            ],
+            "community_meme": "'양갱이 진리', '외국인은 모르는 K-에너지젤'",
+            "scientific_verdict": "서브5+ 러너, 가성비 추구, GI 민감자에게 실질적 대안. 서브3.5 이하 기록 도전 시에는 듀얼 소스 과학적 젤(90g/hr)이 우위. 양갱은 '먹을 수 있는 탄수화물'이지 '최적화된 연료'는 아님."
+          },
+          "taste_preference": {
+            "top_flavors": [
+              "오렌지/감귤 (압도적 1위, 상큼함 + 입정리)",
+              "레몬/라임 (2위, 청량감)",
+              "포도 (3위, 친숙한 맛)",
+              "사과/배 (4위, 부드러운 과일)"
+            ],
+            "disliked": [
+              "초콜릿 (너무 달고 느끼함, 입안에 남음)",
+              "바닐라 (인공적 느낌)",
+              "솔티드 카라멜 (텁텁함)",
+              "베리 블렌드 (인공 색소 느낌)"
+            ],
+            "texture_preference": "묽은 > 걸쭉한. 목넘김 좋고 입안에 안 남는 것 선호.",
+            "trend": "과일 맛 상큼한 계열 압도적 선호. 후반부 맛 피로 시 짭짤한 것 찾는 경향."
+          },
+          "price_sensitivity": {
+            "psychological_barrier_krw": 2000,
+            "premium_perception_krw": 5000,
+            "budget_per_marathon_krw": [10000, 35000],
+            "cost_comparison": {
+              "yanggang_marathon": "양갱 5개 = 2,500-6,000원",
+              "mid_gel_marathon": "GU 5개 = 15,000원",
+              "premium_gel_marathon": "Maurten 5개 = 25,000-30,000원"
+            },
+            "bulk_buying": "20-50개 묶음 할인 구매 일반적. 쿠팡 로켓배송 인기.",
+            "co_purchase": "러닝 크루/네이버 카페 공동구매 활발 (10-30% 할인)"
+          }
+        },
+        "price_brackets_krw": {
+          "budget": {
+            "range": "500-1,500원/개",
+            "products": ["양갱 (편의점)", "국산 스포츠 젤리"],
+            "target": "입문자, 가성비 추구, 훈련용"
+          },
+          "entry": {
+            "range": "1,500-2,500원/개",
+            "products": ["엔돌핀 스포츠", "국산 에너지 젤", "PowerGel (할인가)"],
+            "target": "초보~중급, 첫 대회 준비"
+          },
+          "mid": {
+            "range": "2,500-3,500원/개",
+            "products": ["GU Original", "GU Roctane (할인)", "PowerGel", "Hammer Gel"],
+            "target": "서브4 러너, 정기 대회 참가자"
+          },
+          "premium": {
+            "range": "3,500-5,000원/개",
+            "products": ["SiS Go Isotonic", "SiS Beta Fuel", "GU Roctane", "Clif Shot", "Honey Stinger"],
+            "target": "서브3.5 러너, GI 민감자"
+          },
+          "super_premium": {
+            "range": "5,000원+/개",
+            "products": ["Maurten 100/160/320", "Precision Fuel & Hydration", "Spring Energy"],
+            "target": "엘리트/서브3, 최적 퍼포먼스 추구"
+          }
+        },
+        "purchase_channels": {
+          "online": {
+            "ratio": 0.75,
+            "platforms": ["쿠팡 (로켓배송, 묶음 할인)", "네이버 쇼핑 (최저가 비교)", "마라톤몰/러너스하이", "iHerb (GU/Clif 직구)", "Maurten 공식몰 (직배송)"],
+            "trend": "대량 구매 시 온라인 최저가 비교. 대회 2개월 전 구매 피크."
+          },
+          "offline": {
+            "ratio": 0.25,
+            "locations": ["대형 스포츠용품점 (데카트론 등)", "마라톤 엑스포 (샘플링 + 할인)", "편의점 (양갱/에너지 젤리)", "러닝 전문매장"],
+            "note": "대회 현장은 정가의 2-3배. 미리 준비 필수."
+          }
+        },
+        "community_influence": {
+          "channels": [
+            "네이버 카페 (달리기 사랑, 마라톤온라인 등)",
+            "DC 러닝 갤러리 (솔직한 후기, 양갱 밈 발원지)",
+            "YouTube (러닝 유튜버 섭취 전략 공유)",
+            "인스타그램 (대회 후기에 젤 인증샷)"
+          ],
+          "phenomena": [
+            "양갱 vs 젤 논쟁 (매년 반복, 결론 없음)",
+            "Maurten 프리미엄 논란 ('비싸지만 위장이 편하다' vs '위약 효과')",
+            "해외 직구 꿀팁 공유 (iHerb 세일 정보)",
+            "대회별 에이드 스테이션 정보 공유 (어디서 물/바나나 나오는지)",
+            "섭취 전략 공유 ('몇 km에 무엇을 먹었다')",
+            "신제품 출시 시 단체 시식 후기"
+          ]
+        },
+        "korean_race_aid_stations": {
+          "typical_provision": "물, 스포츠 음료 (포카리/게토레이), 바나나 (일부 구간)",
+          "no_gel_provided": "한국 대회는 젤을 에이드에서 제공하지 않음. 100% 자체 준비.",
+          "strategy": "에이드 위치를 사전에 확인하고, 젤 섭취 시점을 에이드 직전으로 맞추기"
+        },
+        "alternatives": {
+          "solid_food": {
+            "yanggang": {"carbs_g": [20, 35], "price_krw": [500, 1200], "pros": "위장 안전, 저렴, 접근성", "cons": "느린 흡수, 씹기 번거로움"},
+            "banana": {"carbs_g": 25, "pros": "에이드에서 무료, 칼륨 풍부", "cons": "휴대 불편, 껍질 처리"},
+            "rice_cake": {"carbs_g": [20, 30], "pros": "위장 편안, 한국 친숙, 울트라 인기", "cons": "휴대/섭취 불편"},
+            "dates": {"carbs_g": 18, "pros": "자연 당분, 식이섬유, 칼륨", "cons": "씹어야 함, 씨 주의"},
+            "gimbap_potato": {"note": "울트라에서 한국 러너 고유 보급 (김밥 1줄, 삶은 감자). 젤과 병행."}
+          },
+          "chews_gummy": {
+            "description": "젤리/츄 형태 에너지 보충",
+            "examples": ["GU Energy Chews", "Clif Bloks", "Haribo 곰젤리 (비공식, 러닝갤 인기)"],
+            "pros": "씹는 만족감, 맛 다양, 맛 피로 방지",
+            "cons": "흡수 느림 (고체 소화), 고강도에서 씹기 불편, 질식 위험"
+          },
+          "drink_mix": {
+            "description": "탄수화물 음료 (젤의 액체 대안)",
+            "examples": ["Maurten Drink Mix 160/320", "SiS Go Electrolyte", "Tailwind Endurance Fuel"],
+            "pros": "수분+탄수화물 동시 보충, GI 이슈 최소, 맛 피로 적음",
+            "cons": "대회에서 자체 보틀/플라스크 필요, 에이드 물과 농도 조절 어려움"
+          }
+        },
+        "regulatory_info": {
+          "korea_classification": {
+            "general_food": "대부분의 에너지 젤은 '일반식품(과자류/캔디류)'으로 분류",
+            "health_functional_food": "건강기능식품 인증 받은 제품은 별도 (드묾)",
+            "implication": "건기식이 아닌 제품은 '피로회복' '체력증진' 등 효능 표시 불가"
+          },
+          "advertising_guidelines": {
+            "reference": "공정위 표시광고 심사지침",
+            "watch_for": [
+              "'에너지 200% 부스트' → 과대광고",
+              "'과학적으로 증명된 퍼포먼스 향상' → 근거 확인 필요",
+              "'프로 선수가 쓰는' → 스폰서십일 수 있음"
+            ]
+          }
+        },
+        "faq_for_reviews": [
+          "속이 안 아플까요? → 제형(isotonic/hydrogel)과 물 동반 여부가 핵심",
+          "양갱이랑 뭐가 다른가요? → 흡수 속도, 듀얼 소스, 전해질/카페인 유무",
+          "가격 대비 괜찮나요? → 마라톤 총 비용으로 비교 (양갱 3천원 vs Maurten 3만원)",
+          "처음인데 뭘 사야 하나요? → 양갱으로 시작, 불편하면 SiS Isotonic",
+          "카페인 있는 거 먹어도 되나요? → 커피 습관에 따라 다름. 후반부 전략적 사용 권장.",
+          "몇 km마다 먹어야 하나요? → 20-30분 간격. 배고프기 전에 선제 섭취.",
+          "물이랑 같이 먹어야 하나요? → 고삼투압 젤은 필수. 등장/하이드로젤은 선택.",
+          "대회 전에 연습해야 하나요? → 반드시. 최소 2-4주 전부터 장거리 훈련에서 동일 제품 테스트.",
+          "하프마라톤에도 필요한가요? → 선택. 1-2개면 충분. 카페인 젤 1개로 부스트 가능."
+        ],
+        "seasonality": {
+          "spring_fall": "마라톤 시즌. 구매 피크. 대회 엑스포에서 샘플링/할인.",
+          "summer": "탈수 주의 → 전해질 보충 중요성↑. 양갱 녹음 주의. 젤 보관 온도 관리.",
+          "winter": "트레드밀 시즌. 수분 필요량↓. 시즌오프 세일 기간. 젤 굳음 주의."
+        }
+      }
+    },
+    {
+      "id": "5-product-examples",
+      "name": "Product Examples & Comparison Matrix",
+      "slug": "product-examples",
+      "summary": "카테고리별 대표 에너지 젤, 비교 매트릭스, 시나리오별 추천. 리뷰에서 비교·포지셔닝용 레퍼런스.",
+      "core_objects": {
+        "categories": [
+          {
+            "name": "Isotonic Gel (등장 젤)",
+            "description": "물 없이 섭취 가능. GI 이슈 최소. 삼투압 270-330 mOsm.",
+            "examples": ["SiS Go Isotonic", "HIGH5 Isotonic Energy Gel"],
+            "carb_per_serving_g": [22, 30],
+            "key_feature": "묽은 제형, 대용량 패킷(60ml+), 목넘김 우수",
+            "trade_off": "서빙당 탄수화물 낮음(22-30g). 고용량 섭취 시 패킷 수↑."
+          },
+          {
+            "name": "Hydrogel Technology",
+            "description": "위산에서 하이드로젤 형성. 고농도 탄수화물을 GI 이슈 없이 전달.",
+            "examples": ["Maurten 100 (25g carb)", "Maurten 160 (40g)", "Maurten 320 Caf 100 (80g, 100mg caffeine)"],
+            "carb_per_serving_g": [25, 80],
+            "key_feature": "alginate + pectin hydrogel. 물 없이 고용량 섭취 가능.",
+            "trade_off": "최고가. 맛이 거의 없음 (무미). 일부 러너는 맛 부재가 불편."
+          },
+          {
+            "name": "Standard Gel (일반 젤)",
+            "description": "가장 보편적. 고삼투압. 물과 함께 섭취 필수.",
+            "examples": ["GU Original", "PowerGel Original", "Hammer Gel", "Clif Shot"],
+            "carb_per_serving_g": [20, 27],
+            "key_feature": "maltodextrin + fructose 기본 배합. 다양한 맛 옵션.",
+            "trade_off": "물 없이 먹으면 GI 이슈. 점도 높은 제품 많음."
+          },
+          {
+            "name": "Premium Performance Gel",
+            "description": "고함량 탄수화물 + 최적 비율 + 추가 성분 (카페인, 아미노산).",
+            "examples": ["GU Roctane", "SiS Beta Fuel Gel (40g carb)", "Precision Fuel PF 30/90"],
+            "carb_per_serving_g": [25, 45],
+            "key_feature": "듀얼 소스 최적 비율. 서빙당 탄수화물 높음. 카페인 옵션.",
+            "trade_off": "프리미엄 가격. 일부 추가 성분(BCAA 등)은 과학적 근거 부족."
+          },
+          {
+            "name": "Natural/Real Food Gel",
+            "description": "실제 음식 기반. 가공 최소화. 클린 라벨.",
+            "examples": ["Spring Energy (Awesome Sauce, Canaberry, Long Jing)", "Honey Stinger", "Huma Gel", "Näak"],
+            "carb_per_serving_g": [20, 45],
+            "key_feature": "꿀, 과일, 쌀 등 자연 성분. 인공 성분 최소.",
+            "trade_off": "유통기한 짧을 수 있음. 일부 GI 이슈 (고섬유). 가격 높음."
+          },
+          {
+            "name": "Korean Alternatives (한국 대안)",
+            "description": "한국 러너 고유의 에너지 보충 옵션.",
+            "examples": ["양갱 (팥/고구마/밤)", "엔돌핀 스포츠 젤", "편의점 에너지 젤리", "꿀물 (자체 제작)"],
+            "carb_per_serving_g": [20, 35],
+            "key_feature": "가성비, GI 안전성, 접근성 최고. 양갱은 K-러닝 문화의 아이콘.",
+            "trade_off": "흡수 속도/효율 열위. 전해질/카페인 없음. 고강도 부적합."
+          }
+        ],
+        "brand_positioning_korea": {
+          "premium_elite": {
+            "brands": ["Maurten", "Precision Fuel & Hydration"],
+            "perception": "엘리트 전용, 과학적, 비싸지만 확실한"
+          },
+          "performance_trusted": {
+            "brands": ["SiS", "GU", "PowerBar"],
+            "perception": "검증된 성능, 합리적 가격, 다양한 옵션"
+          },
+          "natural_premium": {
+            "brands": ["Spring Energy", "Honey Stinger", "Huma"],
+            "perception": "자연 성분, 클린 라벨, SNS 인기"
+          },
+          "value_domestic": {
+            "brands": ["엔돌핀 스포츠", "국산 브랜드"],
+            "perception": "가성비, 한국인 맛, 접근성"
+          },
+          "budget_alternative": {
+            "brands": ["양갱", "편의점 젤리", "자체 제작 (꿀물/설탕물)"],
+            "perception": "가성비 최강, 위장 안전, 입문자 친화"
+          }
+        },
+        "comparison_matrix": {
+          "price_metadata": {
+            "price_checked_at": "2026-02-01",
+            "price_source": "쿠팡/네이버 쇼핑 최저가 기준 (공식몰 정가와 다를 수 있음)",
+            "currency": "KRW",
+            "update_policy": "가격은 분기별 갱신 권장. 리뷰 시 price_checked_at 확인 필수."
+          },
+          "headers": ["브랜드/제품", "탄수화물(g)", "Carb Source", "카페인(mg)", "나트륨(mg/서빙)", "타입", "가격(원)", "물 필요", "GI 안전", "목넘김"],
+          "data": [
+            ["Maurten 100", 25, "Maltodextrin+Fructose", 0, 28, "Hydrogel", "~5,000", "No", "★★★★★", "★★★★☆"],
+            ["Maurten 160", 40, "Maltodextrin+Fructose", 0, 45, "Hydrogel", "~5,500", "No", "★★★★★", "★★★★☆"],
+            ["Maurten 320 Caf 100", 80, "Maltodextrin+Fructose", 100, 90, "Hydrogel", "~6,000", "No", "★★★★☆", "★★★☆☆"],
+            ["SiS Go Isotonic", 22, "Maltodextrin", 0, 20, "Isotonic", "~3,500", "No", "★★★★☆", "★★★★★"],
+            ["SiS Beta Fuel", 40, "Maltodextrin+Fructose 1:0.8", 0, 40, "Isotonic", "~4,500", "No", "★★★★☆", "★★★★☆"],
+            ["GU Original", 22, "Maltodextrin+Fructose", 0, 55, "Standard", "~3,000", "Yes", "★★★☆☆", "★★★☆☆"],
+            ["GU Roctane", 25, "Maltodextrin+Fructose+BCAA", 35, 70, "Premium", "~4,000", "Yes", "★★★☆☆", "★★★☆☆"],
+            ["PowerGel Original", 27, "Maltodextrin+Fructose", 0, 50, "Standard", "~2,500", "Yes", "★★★☆☆", "★★☆☆☆"],
+            ["Spring Energy Awesome Sauce", 28, "Rice+Honey+Fruit", 0, 20, "Natural", "~5,000", "Optional", "★★★★☆", "★★★★☆"],
+            ["Honey Stinger", 24, "Honey+Glucose", 0, 50, "Natural", "~3,500", "Yes", "★★★☆☆", "★★★☆☆"],
+            ["엔돌핀 스포츠", 25, "Maltodextrin+Sugar", 0, 30, "Standard", "~2,000", "Yes", "★★★☆☆", "★★★☆☆"],
+            ["양갱 (편의점)", "20-35", "Sugar+Starch", 0, "5-15", "Solid", "500-1,200", "Optional", "★★★★☆", "N/A (고체)"]
+          ]
+        },
+        "scenarios": {
+          "first_marathon": {
+            "recommendation": "양갱 or 엔돌핀으로 훈련 시작 → 대회 전 GU/SiS로 업그레이드",
+            "strategy": "30분/45분/60분/75분/90분에 1개씩, 총 5개. 에이드에서 물 함께.",
+            "budget_krw": "2,500-15,000",
+            "critical_rule": "대회 4주 전부터 장거리 훈련에서 동일 제품 반복 테스트"
+          },
+          "sub4_goal": {
+            "recommendation": "GU Roctane or SiS Go + 카페인 젤 1-2개",
+            "strategy": "매 25분마다 1개. 30km에 카페인 젤 투입. 목표 60-75g/hr.",
+            "budget_krw": "12,000-20,000"
+          },
+          "sub3_goal": {
+            "recommendation": "Maurten 160 (일반) + 320 Caf 100 (30km 이후)",
+            "strategy": "90g/hr 목표. 젤 + Maurten Drink Mix 병행 가능.",
+            "budget_krw": "25,000-35,000",
+            "prerequisite": "4주 gut training 완료 필수"
+          },
+          "gi_sensitive": {
+            "recommendation": "Maurten 100/160 or SiS Go Isotonic or 양갱",
+            "strategy": "gut training 4주 필수. 30g/hr부터 시작, 매주 10g/hr 증량.",
+            "key_tip": "물 페어링 철저, 카페인 젤 회피, 인공감미료 없는 제품"
+          },
+          "budget_conscious": {
+            "recommendation": "양갱 3-4개 + 카페인 젤 1개 (30km용)",
+            "strategy": "양갱은 20분 전 미리 섭취 (소화 시간). 카페인 젤은 에이드에서 물과 함께.",
+            "budget_krw": "3,500-6,000",
+            "note": "양갱 마라톤 1회 비용 < 프리미엄 젤 1개 가격"
+          },
+          "half_marathon": {
+            "recommendation": "젤 1-2개면 충분. 양갱 or GU 1개 + 카페인 젤 1개(선택).",
+            "strategy": "8-10km에 1개, 15km에 카페인(선택). 과다 섭취 불필요.",
+            "budget_krw": "1,000-8,000"
+          }
+        },
+        "packaging_openability_ranking": {
+          "description": "달리면서, 땀 묻은 손으로, 장갑 끼고 뜯기 편한 순서.",
+          "easy": ["SiS (큰 탭, 잘 뜯김)", "Maurten (심플 탭)", "Spring Energy (Flask 타입도 있음)"],
+          "moderate": ["GU (작은 탭, 연습 필요)", "Honey Stinger (뜯는 부분 작음)"],
+          "difficult": ["PowerGel (탭이 미끄러움)", "일부 국산 젤 (꼭지 탈락 이슈)"],
+          "tip": "훈련에서 개봉 연습 필수. 레이스 전 상단을 미리 찢어두는 방법도 있음."
+        },
+        "environmental_note": {
+          "issue": "마라톤 대회 후 젤 포장지 쓰레기 문제 심각",
+          "trend": "일부 브랜드 재활용 가능 패키징 도입 (Spring Energy 등)",
+          "korean_etiquette": "대회 중 쓰레기는 에이드 스테이션 근처 지정 장소에 버리기. 코스에 투기 금지.",
+          "reusable_option": "Flask 타입 젤 (Spring Energy) 또는 재사용 젤 플라스크에 옮겨 담기"
+        },
+        "key_research_references": [
+          {
+            "citation": "Jeukendrup, A.E. (2014). A step towards personalized sports nutrition: carbohydrate intake during exercise. Sports Medicine, 44(S1), 25-33.",
+            "evidence_level": "narrative_review",
+            "takeaway": "듀얼 소스(glucose+fructose)로 90g/hr 이상 탄수화물 산화 가능. SGLT1/GLUT5 독립 경로가 핵심.",
+            "limits": "리뷰 논문으로 새로운 데이터 없음. 주로 실험실 환경 연구 기반."
+          },
+          {
+            "citation": "Jeukendrup, A.E. (2017). Training the gut for athletes. Sports Medicine, 47(S1), 101-110.",
+            "evidence_level": "narrative_review",
+            "takeaway": "장 훈련(gut training)으로 SGLT1 발현 증가, 위배출 개선, GI 증상 감소 가능.",
+            "limits": "구체적 프로토콜(기간, 용량)의 최적값은 아직 확립 안 됨."
+          },
+          {
+            "citation": "Cox, G.R. et al. (2010). Daily training with high carbohydrate availability increases exogenous carbohydrate oxidation. J Appl Physiol, 109(1), 126-134.",
+            "evidence_level": "RCT",
+            "takeaway": "28일 고탄수화물 훈련 → 외인성 탄수화물 산화율 유의미 증가. 장 훈련의 직접적 근거.",
+            "limits": "소규모 표본(n=16). 훈련된 사이클리스트 대상 → 일반 러너 적용 시 주의."
+          },
+          {
+            "citation": "Baur, D.A. et al. (2019). Slow-absorbing modified starch and alginate hydrogel beverage. Int J Sport Nutr Exerc Metab, 29(5), 487-493.",
+            "evidence_level": "RCT",
+            "takeaway": "하이드로젤이 위배출 속도에 유의미한 차이를 보이지 않음 (실험실 환경).",
+            "limits": "안정 상태(resting) 측정. 실제 운동 중 효과와 다를 수 있음. Maurten 회사 제품 미사용."
+          },
+          {
+            "citation": "Pettersson, S. et al. (2020). Hydrogel carbohydrate-electrolyte supplementation during marathon. Nutrients, 12(5), 1258.",
+            "evidence_level": "observational",
+            "takeaway": "마라톤 중 hydrogel 섭취 시 GI 증상 감소 경향.",
+            "limits": "관찰 연구, 비블라인드. 위약 효과/브랜드 효과 배제 불가."
+          },
+          {
+            "citation": "Guest, N.S. et al. (2021). International society of sports nutrition position stand: caffeine and exercise performance. JISSN, 18(1), 1.",
+            "evidence_level": "position_stand (systematic_review 기반)",
+            "takeaway": "카페인 3-6mg/kg가 지구력 퍼포먼스에 유의미한 ergogenic effect. CYP1A2 유전자 다형성이 반응 차이 결정.",
+            "limits": "대부분 실험실 환경 연구. 실제 레이스 조건의 교란 변수 미반영."
+          },
+          "Stellingwerff, T. & Cox, G.R. (2014). Systematic review: Carbohydrate supplementation on exercise performance. Curr Sports Med Rep, 13(4), 203-210.",
+          "de Oliveira, E.P. et al. (2014). Gastrointestinal complaints during exercise: prevalence, etiology, and nutritional recommendations. Sports Medicine, 44(S1), 79-85.",
+          "Rowlands, D.S. et al. (2015). Fructose-glucose composite carbohydrates and endurance performance. Sports Medicine, 45(11), 1527-1543.",
+          "공정거래위원회 (2024). 식품 등의 표시·광고에 관한 심사지침."
+        ]
+      }
+    }
+  ]
+}
