@@ -7,10 +7,33 @@ export const blogPosts: BlogPost[] = [
     title: '초보 러너를 위한 러닝화 선택 가이드 2025',
     description: '러닝을 시작하는 분들을 위한 러닝화 선택의 모든 것. 쿠셔닝, 드롭, 안정성까지 쉽게 이해하세요.',
     content: `
+<figure class="my-10">
+  <img
+    src="https://images.unsplash.com/photo-1743798115824-9f671fa8e9a9?auto=format&fit=crop&w=1600&q=80"
+    alt="벤치 위에 놓인 러닝화와 선글라스"
+    class="w-full rounded-xl border border-border"
+    loading="eager"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://unsplash.com/photos/running-shoes-rest-on-a-wooden-surface-with-sunglasses-q_j0jPkb_ts" target="_blank" rel="noopener noreferrer">Unsplash</a> / Kristina Tochilko
+  </figcaption>
+</figure>
+
 <h2>러닝화 vs 일반 운동화, 뭐가 다를까?</h2>
 <p>
   "그냥 운동화 신으면 안 돼요?" 러닝을 시작하는 분들이 가장 많이 하는 질문입니다.
   결론부터 말씀드리면, <strong>러닝화는 반드시 필요합니다.</strong>
+</p>
+<p>
+  저도 처음에는 그렇게 생각했습니다. "5km 정도 뛰는데 뭐 굳이 비싼 러닝화를 사야 하나?"
+  그래서 평소 신던 운동화로 한강을 뛰기 시작했죠. 처음 일주일은 괜찮았습니다.
+  하지만 2주차부터 무릎이 뻐근하고, 한 달 후에는 계단 내려갈 때마다 무릎이 아팠습니다.
+</p>
+<p>
+  정형외과에 갔더니 의사 선생님이 신발부터 물어보시더군요.
+  "어떤 신발 신고 뛰세요?" 일반 운동화라고 하니 "러닝화로 바꾸고 2주 쉬세요"라고 하셨습니다.
+  그때 처음으로 러닝화를 제대로 알아보기 시작했습니다.
 </p>
 <p>
   일반 운동화와 러닝화의 가장 큰 차이는 <strong>충격 흡수</strong>와 <strong>추진력</strong>입니다.
@@ -20,9 +43,23 @@ export const blogPosts: BlogPost[] = [
 <p>
   러닝화의 미드솔(중창)에는 충격을 흡수하고 에너지를 반환하는 특수 폼이 들어있어,
   부상을 예방하고 더 효율적으로 달릴 수 있게 해줍니다.
+  제가 무릎 통증에서 벗어난 것도 바로 이 러닝화 덕분이었습니다.
 </p>
 
 <h2>러닝화 선택의 핵심 3요소</h2>
+
+<figure class="my-10">
+  <img
+    src="https://images.unsplash.com/photo-1674081974599-efe550a995f1?auto=format&fit=crop&w=1600&q=80"
+    alt="러닝화를 묶는 손"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://unsplash.com/photos/une-personne-attachant-un-lacet-a-une-paire-de-baskets-WCZkzps3LAU" target="_blank" rel="noopener noreferrer">Unsplash</a> / yousef samuil
+  </figcaption>
+</figure>
 
 <h3>1. 쿠셔닝 (Cushioning)</h3>
 <p>
@@ -108,6 +145,19 @@ export const blogPosts: BlogPost[] = [
 </p>
 <p>추천: Hoka Clifton, Saucony Triumph, Nike Invincible</p>
 
+<figure class="my-10">
+  <img
+    src="https://images.unsplash.com/photo-1762709753300-342ab94e8b05?auto=format&fit=crop&w=1600&q=80"
+    alt="트랙에서 달리는 러너들"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://unsplash.com/photos/runners-in-a-race-with-motion-blur-HgugOtbCm7w" target="_blank" rel="noopener noreferrer">Unsplash</a> / Mathias Reding
+  </figcaption>
+</figure>
+
 <h2>구매 전 체크리스트</h2>
 <ol>
   <li><strong>오후에 신어보기:</strong> 발은 하루 동안 부으므로, 러닝하는 시간대와 비슷한 오후에 피팅하세요.</li>
@@ -117,16 +167,27 @@ export const blogPosts: BlogPost[] = [
   <li><strong>매장에서 뛰어보기:</strong> 가능하면 트레드밀이나 매장 내에서 실제로 뛰어보세요.</li>
 </ol>
 
-<h2>마무리</h2>
+<h2>마무리: 내 발에 맞는 첫 러닝화를 찾아서</h2>
 <p>
   러닝화 선택에 정답은 없습니다. 가장 중요한 것은 <strong>편안함</strong>입니다.
   아무리 좋은 기술이 들어간 신발도 내 발에 안 맞으면 소용없습니다.
   여러 신발을 신어보고, 가장 편안한 신발을 선택하세요.
 </p>
 <p>
+  저는 첫 러닝화로 아식스 GT-2000을 선택했습니다. 가격대도 적당하고(16만원대),
+  쿠셔닝과 안정성이 균형 잡힌 입문용 신발이었죠.
+  그 신발로 첫 하프 마라톤을 완주했고, 600km를 달렸습니다.
+  지금은 다른 신발들을 신지만, 첫 러닝화의 추억은 특별합니다.
+</p>
+<p>
+  러닝화는 도구이지만, 동시에 러닝 여정의 동반자입니다.
+  좋은 신발은 당신이 더 멀리, 더 오래, 더 즐겁게 달릴 수 있게 해줍니다.
+</p>
+<p>
   그리고 처음부터 비싼 신발을 살 필요 없습니다.
   10~15만원대 신발로 시작해서, 러닝이 습관이 되면 그때 업그레이드해도 늦지 않습니다.
-  즐거운 러닝 되세요! 🏃
+  이 가이드가 여러분의 첫 러닝화 선택에 도움이 되길 바랍니다.
+  즐거운 러닝 되세요!
 </p>
     `,
     author: '러닝의 모든것',
@@ -151,6 +212,33 @@ export const blogPosts: BlogPost[] = [
   이유는 간단합니다. <strong>대부분의 러닝화가 서양인 발 기준</strong>으로 만들어지기 때문입니다.
   한국인은 서양인에 비해 발볼이 넓고 발등이 높은 경우가 많습니다.
   특히 남성의 경우 이 차이가 더 두드러집니다.
+</p>
+
+<h3>에디터의 한마디: 5년간 발볼 때문에 겪은 시행착오</h3>
+<p>
+  저도 발볼이 넓은 편입니다. 처음 러닝을 시작했을 때 나이키 페가수스가 좋다는 후기를 보고 구매했는데,
+  신발 끈을 최대한 느슨하게 해도 발가락이 눌리는 느낌이 들었습니다. 5km만 뛰어도 새끼발가락이 아파서
+  결국 3번 신고 창고행이 되었죠.
+</p>
+<p>
+  그 후로 "발볼 넓은 사람한테 맞는 신발"을 찾기 위해 다양한 브랜드를 신어봤습니다.
+  매장에서 신어볼 때는 괜찮았는데 막상 러닝하면 발가락이 눌리는 경우도 많았고,
+  반 사이즈를 올리면 뒤꿈치가 헐거워지는 문제도 있었습니다.
+</p>
+<p>
+  전환점은 아식스 카야노 와이드 버전을 만났을 때였습니다. "이게 신발이구나" 싶을 정도로
+  발가락이 편했고, 처음으로 20km를 발 통증 없이 뛸 수 있었습니다. 그때 깨달았습니다.
+  <strong>"좋은 신발"이 아니라 "내 발에 맞는 신발"</strong>이 중요하다는 것을요.
+</p>
+<p>
+  발볼 문제는 단순히 "불편함"을 넘어 부상으로 이어질 수 있습니다.
+  발가락이 압박되면 발톱이 검게 변하거나 무좀이 생길 수 있고,
+  장시간 누르면 신경 압박으로 저림 증상이 나타날 수도 있습니다.
+  러닝은 즐거워야 하는데, 발이 아프면 즐거울 수가 없죠.
+</p>
+<p>
+  이 글은 제가 5년간 겪은 시행착오를 바탕으로, 발볼 넓은 한국 러너들이
+  시간과 돈을 낭비하지 않고 편한 신발을 찾을 수 있도록 정리한 실전 가이드입니다.
 </p>
 
 <h2>토박스 너비 기준</h2>
@@ -257,11 +345,47 @@ export const blogPosts: BlogPost[] = [
   <li><strong>끈 조절:</strong> 발등이 높다면 끈을 느슨하게 묶는 테크닉도 있습니다.</li>
 </ol>
 
-<h2>마무리</h2>
+<h2>발볼 넓은 러너가 피해야 할 실수</h2>
+<p>
+  지난 5년간 발볼 문제로 고생하며 배운 교훈을 공유합니다.
+  이런 실수를 피하면 시간과 돈을 크게 절약할 수 있습니다.
+</p>
+
+<h3>실수 1: "늘어날 거야" 기대하기</h3>
+<p>
+  매장에서 신어볼 때 약간 타이트해도 "며칠 신으면 늘어나겠지" 생각하고 샀다가 후회한 적이 많습니다.
+  러닝화 어퍼는 어느 정도 늘어나지만, <strong>토박스 너비 자체는 거의 안 늘어납니다.</strong>
+  특히 카본 플레이트가 들어간 레이싱화는 구조상 전혀 늘어나지 않습니다.
+  처음부터 편한 신발을 선택해야 합니다.
+</p>
+
+<h3>실수 2: 온라인 구매만 하기</h3>
+<p>
+  가격이 싸다고 해외 직구로 주문했다가 맞지 않아 반품 비용이 더 나온 경험이 있습니다.
+  특히 발볼이 넓다면 <strong>첫 구매는 반드시 매장에서</strong> 하는 것을 권장합니다.
+  한 번 브랜드별로 본인에게 맞는 사이즈를 알아두면, 그 다음부터는 온라인 구매도 안전합니다.
+</p>
+
+<h3>실수 3: "Wide"라고 다 같은 Wide가 아니다</h3>
+<p>
+  브랜드마다 Wide의 기준이 다릅니다. 나이키 Wide는 아식스 표준보다 좁을 수 있습니다.
+  뉴발란스의 2E는 다른 브랜드의 Wide와 비슷하고, 4E는 정말 넓습니다.
+  브랜드별로 직접 신어보는 것이 가장 확실합니다.
+</p>
+
+<h2>마무리: 발이 편해야 러닝이 즐겁다</h2>
 <p>
   발볼 때문에 러닝화 고르기가 어려우셨다면, 위 리스트에서 시작해보세요.
   특히 Asics Wide, New Balance 2E/4E, Altra는 한국 러너들 사이에서 검증된 선택입니다.
-  편안한 신발을 찾으면 러닝이 훨씬 즐거워집니다!
+</p>
+<p>
+  저는 이제 "발볼 넓어서 신을 신발이 없다"는 생각을 하지 않습니다.
+  오히려 "내 발에 맞는 브랜드"를 알고 있어서 선택이 명확합니다.
+  여러분도 이 글을 통해 자신에게 맞는 신발을 찾아 즐거운 러닝 라이프를 누리시길 바랍니다.
+</p>
+<p>
+  편안한 신발을 찾으면 러닝이 훨씬 즐거워집니다.
+  발이 편해야 멀리, 오래 달릴 수 있으니까요!
 </p>
     `,
     author: '러닝의 모든것',
@@ -282,6 +406,25 @@ export const blogPosts: BlogPost[] = [
   러닝 중 무릎 통증은 가장 흔한 부상입니다.
   연구에 따르면 러너의 약 40%가 무릎 관련 통증을 경험합니다.
   하지만 무릎 통증이 있다고 러닝을 완전히 포기할 필요는 없습니다.
+</p>
+
+<h3>에디터의 무릎 통증 극복기</h3>
+<p>
+  3년 전, 저도 무릎 통증으로 3개월간 러닝을 쉰 적이 있습니다.
+  당시 하프 마라톤 준비를 하던 중 주간 거리를 갑자기 30km에서 50km로 늘렸는데,
+  2주 후부터 무릎 안쪽이 뻐근하기 시작했죠. "며칠 쉬면 괜찮아지겠지" 생각하고 계속 뛰었는데
+  결국 계단 내려갈 때마다 찌릿한 통증이 생겼습니다.
+</p>
+<p>
+  정형외과에서 장경인대증후군(ITBS) 진단을 받았습니다.
+  의사 선생님은 "급격한 운동량 증가"와 "불충분한 쿠셔닝"을 원인으로 꼽았습니다.
+  당시 저는 가볍고 빠른 템포화만 고집했는데, 장거리에는 적합하지 않은 신발이었던 거죠.
+</p>
+<p>
+  3개월 휴식 후 복귀할 때는 아식스 카야노를 선택했습니다.
+  충분한 쿠셔닝과 안정성을 갖춘 신발로, 주간 거리를 천천히 늘려갔습니다.
+  지금은 무릎 통증 없이 주 40km를 달리고 있습니다.
+  그때 배운 교훈은 "빠르게 달리는 것보다 오래 달리는 것이 중요하다"는 것이었습니다.
 </p>
 <p>무릎 통증의 주요 원인:</p>
 <ul>
@@ -424,15 +567,49 @@ export const blogPosts: BlogPost[] = [
   2017년 나이키 바포플라이가 등장한 이후, 카본 플레이트 러닝화는 러닝 업계를 뒤흔들었습니다.
   세계 기록이 잇달아 경신되었고, 이제 거의 모든 엘리트 러너가 카본화를 신습니다.
 </p>
+
+<h3>에디터의 관점: 카본화 혁명을 지켜보며</h3>
+<p>
+  2017년, 엘리우드 키프초게가 나이키 바포플라이 4%를 신고 2시간의 벽에 도전했을 때
+  많은 사람들이 회의적이었습니다. "신발이 기록을 만들어주는 건 아니지 않나?"
+  하지만 2019년 비엔나에서 1:59:40이라는 믿기 어려운 기록을 세운 순간,
+  모든 것이 바뀌었습니다.
+</p>
+<p>
+  카본화 논쟁은 여전히 뜨겁습니다. 일부는 "기술 도핑"이라고 비판하고,
+  일부는 "기술 발전의 자연스러운 결과"라고 옹호합니다.
+  세계육상연맹(World Athletics)은 스택 높이 40mm, 플레이트 1개 제한 규정을 만들었고,
+  이제 카본화는 "규칙 내에서 허용된 기술"이 되었습니다.
+</p>
+<p>
+  개인적으로는 카본화가 러닝을 더 대중화하는 데 기여했다고 봅니다.
+  과거에는 서브3(3시간 이내 완주)가 소수의 엘리트만 달성할 수 있는 영역이었다면,
+  카본화 덕분에 일반 시민 러너도 도전할 수 있게 되었으니까요.
+</p>
+
+<h3>카본 플레이트 기술의 역사</h3>
+<p>
+  카본 플레이트 아이디어는 사실 새로운 것이 아닙니다.
+  1990년대에도 실험적인 카본 플레이트 신발이 있었지만, 당시 폼 기술이 따라주지 못했습니다.
+  2017년 혁명의 핵심은 <strong>카본 플레이트 + ZoomX 폼 조합</strong>이었습니다.
+</p>
+<p>
+  ZoomX는 PEBA(Polyether Block Amide) 기반 폼으로, EVA보다 85% 가볍고 에너지 리턴이 높습니다.
+  두꺼운 폼 층 안에 카본 플레이트를 삽입하면 폼이 쿠션을 제공하면서
+  플레이트가 "스프링보드" 역할을 하는 것이죠.
+</p>
+
 <p>카본 플레이트의 작동 원리:</p>
 <ul>
   <li><strong>에너지 리턴:</strong> 단단한 플레이트가 휘었다 펴지면서 추진력 제공</li>
-  <li><strong>레버 효과:</strong> 발가락 관절의 에너지 손실 감소</li>
+  <li><strong>레버 효과:</strong> 발가락 관절의 에너지 손실 감소 (발가락 관절이 굽는 대신 플레이트가 굽힘)</li>
   <li><strong>폼과의 시너지:</strong> PEBA 등 초경량 고반발 폼과 함께 작동</li>
+  <li><strong>로커 지오메트리:</strong> 자연스러운 발 굴림(roll-over) 유도</li>
 </ul>
 <p>
   연구에 따르면 카본화는 <strong>러닝 이코노미를 2~4% 향상</strong>시킬 수 있습니다.
   마라톤에서 2%는 3~4분에 해당하며, 이는 엘리트에게 엄청난 차이입니다.
+  일반 러너에게도 10~15분 차이를 만들 수 있는 수치죠.
 </p>
 
 <h2>2025 주요 카본화 비교</h2>
@@ -554,7 +731,36 @@ export const blogPosts: BlogPost[] = [
   반드시 충분히 적응한 후에 레이스에서 신으세요.
 </p>
 
-<h2>결론</h2>
+<h2>카본화 논쟁: "기술 도핑인가, 혁신인가?"</h2>
+<p>
+  카본화가 등장한 후 러닝 커뮤니티는 뜨거운 논쟁에 휩싸였습니다.
+  "신발이 너무 좋아지면 순수한 경쟁이 아니지 않나?"
+  "기록은 인간의 한계를 측정하는 것인데, 신발 기술이 개입하면 공정한가?"
+</p>
+<p>
+  반대 의견도 만만치 않습니다.
+  "러닝 트랙도, 훈련 과학도 모두 발전했다. 신발만 예외일 이유가 있나?"
+  "자전거, 수영복, 스키 등 모든 스포츠에서 장비는 발전한다."
+</p>
+
+<h3>개인적인 생각</h3>
+<p>
+  저는 카본화를 긍정적으로 봅니다. 이유는 간단합니다.
+  <strong>더 많은 사람들이 러닝을 즐기고, 도전하게 만들었기 때문입니다.</strong>
+</p>
+<p>
+  서브4(4시간 이내 완주)를 목표로 하는 일반 러너에게 카본화는 "해볼 만하다"는 자신감을 줍니다.
+  3분이라도 빨라질 수 있다면, 그것은 몇 달간의 훈련에 대한 보상이 됩니다.
+  물론 카본화가 훈련을 대신할 수는 없지만, 훈련과 함께라면 시너지를 만들어냅니다.
+</p>
+<p>
+  다만, 초보 러너에게 카본화를 권하지는 않습니다.
+  기초 체력과 주법이 잡히지 않은 상태에서 카본화를 신으면
+  오히려 부상 위험만 높아질 수 있습니다.
+  카본화는 "마법의 신발"이 아니라 "도구"입니다. 올바르게 사용해야 효과가 있습니다.
+</p>
+
+<h2>결론: 카본화는 도구다, 마법이 아니다</h2>
 <p>
   카본화는 분명히 성능을 높여주는 도구입니다.
   하지만 마법의 신발은 아닙니다. 훈련 없이 카본화만 신는다고 기록이 좋아지진 않습니다.
@@ -562,7 +768,15 @@ export const blogPosts: BlogPost[] = [
 <p>
   러닝 입문자라면 15~20만원대의 좋은 뉴트럴화에 투자하고,
   카본화는 훈련이 쌓인 후 특별한 레이스를 위해 고려하세요.
-  <strong>신발보다 중요한 건 꾸준한 훈련입니다.</strong>
+</p>
+<p>
+  주 30km 이상 꾸준히 뛰고, 킬로당 5분 이내 페이스를 유지할 수 있다면
+  카본화는 당신의 기록을 한 단계 끌어올릴 수 있는 강력한 무기가 될 것입니다.
+  하지만 그 전에는 <strong>신발보다 중요한 건 꾸준한 훈련</strong>이라는 것을 잊지 마세요.
+</p>
+<p>
+  카본화는 결승선을 먼저 통과하게 해주는 신발이 아니라,
+  당신이 흘린 땀에 날개를 달아주는 신발입니다.
 </p>
     `,
     author: '러닝의 모든것',
@@ -582,6 +796,24 @@ export const blogPosts: BlogPost[] = [
 <p>
   러닝화의 일반적인 수명은 <strong>500~800km</strong>입니다.
   하지만 이는 신발 종류, 러너의 체중, 주법, 표면에 따라 크게 달라집니다.
+</p>
+
+<h3>에디터의 신발 관리 노하우</h3>
+<p>
+  저는 현재 3켤레를 로테이션하며 신고 있습니다.
+  데일리 훈련용 뉴발란스 1080, 템포런용 삭소니 엔돌핀 스피드, 그리고 레이스용 바포플라이입니다.
+  각 신발의 주행 거리를 Strava 앱에 기록하고 있는데, 이렇게 관리하니 신발 수명이 확실히 늘어났습니다.
+</p>
+<p>
+  예전에는 한 켤레만 신다가 500km쯤에서 무릎이 아프기 시작했는데,
+  로테이션을 시작한 후로는 각 신발이 700km 이상 가더군요.
+  폼이 회복할 시간을 주는 것이 정말 중요합니다.
+</p>
+<p>
+  또 하나 팁은 <strong>러닝 후 바로 신발을 벗는 것</strong>입니다.
+  예전에는 러닝 끝나고도 편하다고 계속 신고 다녔는데,
+  이게 신발 수명을 크게 단축시킨다는 걸 알았습니다.
+  러닝화는 오직 러닝할 때만 신어야 합니다.
 </p>
 <ul>
   <li><strong>맥스 쿠션화 (Bondi, More):</strong> 600~800km</li>
@@ -738,12 +970,44 @@ export const blogPosts: BlogPost[] = [
     title: '에너지젤 성분 완벽 분석: 말토덱스트린부터 하이드로젤까지',
     description: '에너지젤의 핵심 성분을 과학적으로 분석합니다. 탄수화물 종류, 위장 안정성, 카페인까지 알아야 할 모든 것.',
     content: `
+<figure class="my-10">
+  <img
+    src="https://images.pexels.com/photos/33417694/pexels-photo-33417694.jpeg?cs=srgb&dl=pexels-wesleydavi-33417694.jpg&fm=jpg"
+    alt="러닝 트랙에서 에너지젤을 들고 있는 러너"
+    class="w-full rounded-xl border border-border"
+    loading="eager"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://www.pexels.com/photo/athlete-holding-energy-gel-on-running-track-33417694/" target="_blank" rel="noopener noreferrer">Pexels</a> / Wesley Davi
+  </figcaption>
+</figure>
+
 <h2>에너지젤, 왜 먹어야 할까?</h2>
 <p>
   마라톤을 뛰다 보면 30km 즈음에서 갑자기 힘이 빠지는 경험을 합니다.
   이것이 바로 <strong>"벽에 부딪힌다(Hitting the Wall)"</strong>는 표현의 유래입니다.
   우리 몸에 저장된 글리코겐(탄수화물)이 고갈되면서 발생하는 현상이죠.
 </p>
+
+<h3>에디터의 첫 마라톤 실패담</h3>
+<p>
+  제 첫 풀 마라톤은 완전한 실패였습니다. 32km까지는 목표 페이스를 잘 유지했는데,
+  그 순간부터 갑자기 다리가 납덩이처럼 무거워지더니 페이스가 급격히 떨어졌습니다.
+  "좀만 참으면 된다"고 생각했지만, 결국 마지막 10km를 거의 걷다시피 했죠.
+</p>
+<p>
+  나중에 안 사실인데, 저는 에너지젤을 한 번도 먹지 않았습니다.
+  "42km 정도는 먹지 않고도 뛸 수 있지 않을까?" 하는 순진한 생각이었죠.
+  경험 많은 러너 선배가 그러더군요. "30km 벽은 과학이야. 글리코겐이 고갈되면 누구나 무너져."
+</p>
+<p>
+  두 번째 풀 마라톤에서는 에너지젤 전략을 세웠습니다.
+  출발 전 1개, 그리고 45분마다 1개씩 총 5개를 먹었습니다.
+  결과는 놀라웠습니다. 30km 지점에서도 힘이 있었고, 마지막까지 페이스를 유지할 수 있었습니다.
+  기록은 첫 마라톤보다 23분이나 단축됐죠.
+</p>
+
 <p>
   인체는 약 <strong>2,000kcal</strong>의 글리코겐을 저장할 수 있습니다.
   마라톤 풀코스를 완주하려면 약 2,500~3,000kcal가 필요하니,
@@ -752,9 +1016,23 @@ export const blogPosts: BlogPost[] = [
 <p>
   에너지젤은 빠르게 흡수되는 탄수화물을 농축한 형태로,
   러닝 중에도 쉽게 섭취할 수 있도록 설계되었습니다.
+  제 경험상, 에너지젤은 선택이 아니라 <strong>필수</strong>입니다.
 </p>
 
 <h2>탄수화물의 종류와 흡수 속도</h2>
+
+<figure class="my-10">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/d/df/Clif_Energy_Gels.jpg"
+    alt="여러 종류의 에너지젤 패키지"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://commons.wikimedia.org/wiki/File:Clif_Energy_Gels.jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / Richard Masoner (Cyclelicious), <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+  </figcaption>
+</figure>
 
 <h3>1. 말토덱스트린 (Maltodextrin)</h3>
 <p>
@@ -825,6 +1103,19 @@ export const blogPosts: BlogPost[] = [
   <li><strong>Maurten Gel 160:</strong> 40g 탄수화물, 고농도 버전</li>
   <li><strong>SiS Beta Fuel:</strong> Maurten 방식 채용, 40g 탄수화물</li>
 </ul>
+
+<figure class="my-10">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/3/3e/PXL_20211208_195048218%286970%29.jpg"
+    alt="GU와 Maurten 에너지젤 제품"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지: <a href="https://commons.wikimedia.org/wiki/File:PXL_20211208_195048218(6970).jpg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> / Usesope, <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>
+  </figcaption>
+</figure>
 
 <h3>주의사항</h3>
 <p>
@@ -925,7 +1216,26 @@ export const blogPosts: BlogPost[] = [
   <li>레이스 전 훈련에서 충분히 테스트</li>
 </ul>
 
-<h2>마무리</h2>
+<h2>에디터의 에너지젤 추천</h2>
+<p>
+  지난 3년간 10종 이상의 에너지젤을 테스트한 결과, 제 최애는 <strong>Maurten Gel 100</strong>입니다.
+  가격은 비싸지만(개당 4,000원), 위장 문제가 전혀 없고 끈적임이 적어 물 없이도 먹을 수 있습니다.
+  맛이 거의 없어서 호불호가 갈리지만, 저는 오히려 그게 장점이라고 봅니다.
+  달달한 젤을 5개씩 먹으면 나중에 속이 메스꺼워지거든요.
+</p>
+<p>
+  가성비를 따지면 <strong>양갱</strong>도 훌륭한 선택입니다.
+  한국 러너들 사이에서 "국민 에너지젤"로 불리는 이유가 있습니다.
+  위장 문제가 적고, 가격이 저렴하며(개당 500원), 어디서나 구할 수 있습니다.
+  다만 씹어 먹어야 해서 호흡이 흐트러질 수 있고, 휴대가 불편하다는 단점이 있습니다.
+</p>
+<p>
+  카페인이 필요한 후반부에는 <strong>GU Roctane 카페인</strong>을 씁니다.
+  카페인 70mg이 들어있어 35km 이후 먹으면 확실히 정신이 맑아지고 힘이 납니다.
+  다만 위장이 민감한 분들은 주의가 필요합니다.
+</p>
+
+<h2>마무리: 과학과 경험의 조합</h2>
 <p>
   에너지젤은 과학입니다. 하지만 <strong>가장 좋은 젤은 "내 위장이 받아들이는 젤"</strong>입니다.
   아무리 좋은 성분이어도 내 몸에 안 맞으면 소용없습니다.
@@ -934,6 +1244,10 @@ export const blogPosts: BlogPost[] = [
   훈련에서 여러 제품을 테스트하고, 레이스와 동일한 페이스에서
   실험해 보세요. 그리고 레이스 당일에는 <strong>검증된 젤만</strong> 사용하세요.
   새로운 시도는 훈련에서 하는 것입니다!
+</p>
+<p>
+  이 가이드가 여러분의 에너지젤 선택에 도움이 되길 바랍니다.
+  올바른 보급 전략으로 30km 벽을 넘어 완주의 기쁨을 누리시길 응원합니다!
 </p>
     `,
     author: '러닝의 모든것',
