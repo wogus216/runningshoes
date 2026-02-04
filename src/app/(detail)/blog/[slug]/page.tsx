@@ -128,14 +128,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div
           className="prose prose-lg prose-slate dark:prose-invert max-w-none
             prose-headings:font-bold prose-headings:text-primary
-            prose-h2:text-2xl prose-h2:mt-12 prose-h2:mb-6 prose-h2:pb-3 prose-h2:border-b prose-h2:border-border
-            prose-h3:text-xl prose-h3:mt-10 prose-h3:mb-4
+            [&>h2]:text-2xl [&>h2]:mt-24 [&>h2]:mb-8 [&>h2]:pb-4 [&>h2]:border-b [&>h2]:border-border [&>h2]:first:mt-0
+            [&>h3]:text-xl [&>h3]:mt-16 [&>h3]:mb-6
             prose-p:text-secondary prose-p:leading-loose prose-p:mb-6
             prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
             prose-strong:text-primary prose-strong:font-semibold
-            prose-ul:my-6 prose-ul:space-y-3 prose-ul:pl-6 prose-li:text-secondary prose-li:leading-relaxed
-            prose-ol:my-6 prose-ol:space-y-3 prose-ol:pl-6
-            prose-table:my-8 prose-table:w-full prose-table:border-collapse
+            prose-ul:my-8 prose-ul:space-y-4 prose-ul:pl-6 prose-li:text-secondary prose-li:leading-relaxed
+            prose-ol:my-8 prose-ol:space-y-4 prose-ol:pl-6
+            prose-table:my-10 prose-table:w-full prose-table:border-collapse
             prose-th:bg-gray-100 prose-th:dark:bg-gray-800 prose-th:p-3 prose-th:text-left prose-th:font-semibold
             prose-td:p-3 prose-td:border-b prose-td:border-border
           "
