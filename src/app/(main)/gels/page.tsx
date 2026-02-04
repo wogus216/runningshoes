@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getGels, groupGelsByCategory } from '@/lib/data/gels';
 import { SITE_NAME } from '@/lib/constants';
 import { gelCategoryOrder } from '@/types/gel';
@@ -54,9 +55,19 @@ export default function GelsPage() {
                   href={`/gels/${gel.slug}`}
                   className="section-card p-4 hover:shadow-lg transition group"
                 >
-                  {/* 이미지 플레이스홀더 */}
-                  <div className="aspect-square bg-surface rounded-lg mb-3 flex items-center justify-center text-4xl">
-                    🧴
+                  {/* 이미지 */}
+                  <div className="aspect-square bg-surface rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                    {gel.image ? (
+                      <Image
+                        src={gel.image}
+                        alt={gel.name}
+                        width={200}
+                        height={200}
+                        className="object-contain w-full h-full p-2 group-hover:scale-105 transition-transform"
+                      />
+                    ) : (
+                      <span className="text-4xl">🧴</span>
+                    )}
                   </div>
 
                   {/* 브랜드 */}

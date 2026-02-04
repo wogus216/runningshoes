@@ -104,31 +104,46 @@ export function AdUnit({
     if (!isVisible || isLoaded.current) return;
 
     let timeoutId: NodeJS.Timeout;
+    let retryCount = 0;
+    const maxRetries = 10;
 
-    try {
-      if (typeof window !== 'undefined' && adRef.current) {
-        (window.adsbygoogle = window.adsbygoogle || []).push({});
-        isLoaded.current = true;
-
-        // AdBlock 감지: 2초 후 광고 높이 확인
-        timeoutId = setTimeout(() => {
-          const adElement = adRef.current;
-          if (adElement) {
-            const rect = adElement.getBoundingClientRect();
-            if (rect.height === 0) {
-              setIsAdBlocked(true);
-            }
+    const tryLoadAd = () => {
+      try {
+        if (typeof window !== 'undefined' && adRef.current && containerRef.current) {
+          // 컨테이너 너비가 0이면 로드 지연
+          const containerWidth = containerRef.current.getBoundingClientRect().width;
+          if (containerWidth === 0 && retryCount < maxRetries) {
+            retryCount++;
+            timeoutId = setTimeout(tryLoadAd, 100);
+            return;
           }
-          setIsLoading(false);
-        }, 2000);
+
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+          isLoaded.current = true;
+
+          // AdBlock 감지: 2초 후 광고 높이 확인
+          timeoutId = setTimeout(() => {
+            const adElement = adRef.current;
+            if (adElement) {
+              const rect = adElement.getBoundingClientRect();
+              if (rect.height === 0) {
+                setIsAdBlocked(true);
+              }
+            }
+            setIsLoading(false);
+          }, 2000);
+        }
+      } catch (error) {
+        if (process.env.NODE_ENV === 'development') {
+          console.error('AdSense error:', error);
+        }
+        setIsAdBlocked(true);
+        setIsLoading(false);
       }
-    } catch (error) {
-      if (process.env.NODE_ENV === 'development') {
-        console.error('AdSense error:', error);
-      }
-      setIsAdBlocked(true);
-      setIsLoading(false);
-    }
+    };
+
+    // 약간의 지연 후 로드 시도 (렌더링 완료 대기)
+    timeoutId = setTimeout(tryLoadAd, 50);
 
     return () => {
       if (timeoutId) clearTimeout(timeoutId);
@@ -165,18 +180,27 @@ export function AdUnit({
       ) : !isVisible ? (
         <AdSkeleton minHeight={minHeight} />
       ) : (
-        <>
-          {isLoading && <AdSkeleton minHeight={minHeight} />}
+        <div className="relative">
+          {isLoading && (
+            <div className="absolute inset-0 z-10">
+              <AdSkeleton minHeight={minHeight} />
+            </div>
+          )}
           <ins
             ref={adRef}
             className="adsbygoogle"
-            style={{ display: isLoading ? 'none' : 'block' }}
+            style={{
+              display: 'block',
+              minHeight: minHeight,
+              opacity: isLoading ? 0 : 1,
+              transition: 'opacity 0.3s ease-in-out',
+            }}
             data-ad-client={ADSENSE_CLIENT_ID}
             data-ad-slot={slot}
             data-ad-format={format}
             data-full-width-responsive={responsive ? 'true' : 'false'}
           />
-        </>
+        </div>
       )}
     </div>
   );
