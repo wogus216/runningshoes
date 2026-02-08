@@ -60,18 +60,18 @@ const references: Reference[] = [
 ];
 
 const categoryLabels: Record<Reference["category"], { label: string; color: string }> = {
-  biomechanics: { label: "생체역학", color: "bg-[#4facfe20] text-[#4facfe]" },
+  biomechanics: { label: "생체역학", color: "bg-stone-100 text-stone-700" },
   injury: { label: "부상 예방", color: "bg-[#ef444420] text-[#ef4444]" },
   consumer: { label: "소비자 연구", color: "bg-[#10b98120] text-[#10b981]" },
   footwear: { label: "신발 과학", color: "bg-[#f59e0b20] text-[#f59e0b]" },
-  data: { label: "데이터 출처", color: "bg-[#8b5cf620] text-[#8b5cf6]" },
+  data: { label: "데이터 출처", color: "bg-amber-100 text-amber-700" },
 };
 
 export const ReferencesSection = forwardRef<HTMLElement>(function ReferencesSection(_, ref) {
   return (
     <section ref={ref} id="references" className="space-y-6 scroll-mt-32">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <BookMarked className="h-8 w-8 text-[#4facfe]" />
+        <BookMarked className="h-8 w-8 text-stone-700" />
         참고 문헌 및 데이터 출처
       </h2>
       <p className="text-gray-600">
@@ -79,14 +79,14 @@ export const ReferencesSection = forwardRef<HTMLElement>(function ReferencesSect
       </p>
 
       {/* 데이터 출처 안내 */}
-      <div className="bg-gradient-to-br from-purple-50 to-purple-100 border border-purple-200 rounded-2xl p-5 mb-6">
+      <div className="bg-stone-50 border border-stone-200 rounded-2xl p-5 mb-6">
         <div className="flex items-start gap-3">
-          <div className="w-10 h-10 rounded-xl bg-purple-200 flex items-center justify-center flex-shrink-0">
-            <Database className="h-5 w-5 text-purple-700" />
+          <div className="w-10 h-10 rounded-xl bg-stone-200 flex items-center justify-center flex-shrink-0">
+            <Database className="h-5 w-5 text-stone-700" />
           </div>
           <div>
-            <p className="font-bold text-purple-800 mb-2">데이터 측정 기준</p>
-            <ul className="text-sm text-purple-700 space-y-1">
+            <p className="font-bold text-stone-800 mb-2">데이터 측정 기준</p>
+            <ul className="text-sm text-stone-700 space-y-1">
               <li>• <strong>스택 높이, 드롭, 무게</strong>: RunRepeat Lab 실측 데이터 (2024년 기준)</li>
               <li>• <strong>쿠셔닝/반응성/안정성</strong>: 전문 리뷰어 평가 종합 (1-10점)</li>
               <li>• <strong>부상 예방 등급</strong>: 학술 연구 기반 평가 + 전문가 의견</li>
@@ -102,9 +102,9 @@ export const ReferencesSection = forwardRef<HTMLElement>(function ReferencesSect
           return (
             <div
               key={reference.id}
-              className="flex gap-4 p-4 rounded-xl border border-gray-100 hover:border-[#4facfe] hover:bg-gray-50 transition-all"
+              className="flex gap-4 p-4 rounded-xl border border-gray-100 hover:border-[stone-500] hover:bg-gray-50 transition-all"
             >
-              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#4facfe] text-white font-bold flex items-center justify-center text-sm">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[stone-500] text-white font-bold flex items-center justify-center text-sm">
                 {reference.id}
               </div>
               <div className="flex-1 min-w-0">
@@ -125,7 +125,7 @@ export const ReferencesSection = forwardRef<HTMLElement>(function ReferencesSect
                     href={reference.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1 text-xs text-[#4facfe] hover:underline mt-2 min-h-[32px]"
+                    className="inline-flex items-center gap-1 text-xs text-stone-700 hover:underline mt-2 min-h-[32px]"
                   >
                     <ExternalLink className="h-3 w-3" />
                     출처 확인
@@ -137,8 +137,8 @@ export const ReferencesSection = forwardRef<HTMLElement>(function ReferencesSect
         })}
       </div>
 
-      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
-        <div className="font-bold text-[#4facfe] mb-2 text-lg flex items-center gap-2">
+      <div className="bg-stone-50 border-l-4 border-stone-300 rounded-xl p-5">
+        <div className="font-bold text-stone-700 mb-2 text-lg flex items-center gap-2">
           <AlertCircle className="h-5 w-5" />
           면책 조항
         </div>

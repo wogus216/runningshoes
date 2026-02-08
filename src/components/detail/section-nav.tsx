@@ -97,8 +97,8 @@ export function SectionNav({ availableSections }: SectionNavProps) {
               onClick={() => scrollToSection(section.id)}
               className={`flex items-center gap-1.5 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all ${
                 activeSection === section.id
-                  ? "bg-[#4facfe] text-white shadow-lg scale-105"
-                  : "bg-gray-100 text-gray-700 hover:bg-[#4facfe20] hover:text-[#4facfe]"
+                  ? "bg-[stone-600] text-white shadow-lg scale-105"
+                  : "bg-gray-100 text-gray-700 hover:bg-[stone-60020] hover:text-[stone-600]"
               }`}
             >
               <IconComponent className="h-4 w-4" />

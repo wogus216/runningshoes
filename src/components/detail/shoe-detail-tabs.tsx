@@ -47,7 +47,7 @@ const tabs = [
   { id: 'injury', label: '부상 예방', mobileLabel: '부상' },
   { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발형' },
   { id: 'price', label: '가격', mobileLabel: '가격' },
-  { id: 'reviews', label: '리뷰', mobileLabel: '리뷰' },
+  { id: 'reviews', label: '분석', mobileLabel: '분석' },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
@@ -79,63 +79,63 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
       {/* 탭 콘텐츠 */}
       <div className="space-y-4">
         {/* 스펙 탭 */}
-        {activeTab === 'specs' && (
-          <>
-            {shoe.specs && (
-              <div className="section-card p-6">
-                <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} />
-              </div>
-            )}
-            {shoe.specs && (
-              <div className="section-card p-6">
-                <h2 className="font-bold mb-5 text-primary">스펙 차트</h2>
-                <SpecRadarChart
-                  specs={shoe.specs}
-                  priceValueRating={shoe.priceAnalysis?.valueRating}
-                  shoeName={shoe.name}
-                />
-              </div>
-            )}
-            {/* 스펙 아래 광고 */}
-            <DetailSpecAd />
-          </>
-        )}
+        <div className={activeTab === 'specs' ? '' : 'hidden'}>
+          {shoe.specs && (
+            <div className="section-card p-6">
+              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} />
+            </div>
+          )}
+          {shoe.specs && (
+            <div className="section-card p-6">
+              <h2 className="font-bold mb-5 text-primary">스펙 차트</h2>
+              <SpecRadarChart
+                specs={shoe.specs}
+                priceValueRating={shoe.priceAnalysis?.valueRating}
+                shoeName={shoe.name}
+              />
+            </div>
+          )}
+          {/* 스펙 아래 광고 */}
+          <DetailSpecAd />
+        </div>
 
         {/* 생체역학 탭 */}
-        {activeTab === 'biomechanics' && shoe.biomechanics && (
-          <div className="section-card p-6">
-            <BiomechanicsAnalysis biomechanics={shoe.biomechanics} weight={shoe.specs?.weight} />
-          </div>
-        )}
+        <div className={activeTab === 'biomechanics' ? '' : 'hidden'}>
+          {shoe.biomechanics && (
+            <div className="section-card p-6">
+              <BiomechanicsAnalysis biomechanics={shoe.biomechanics} weight={shoe.specs?.weight} />
+            </div>
+          )}
+        </div>
 
         {/* 부상 예방 탭 */}
-        {activeTab === 'injury' && shoe.injuryPrevention && (
-          <div className="section-card p-6">
-            <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
-          </div>
-        )}
+        <div className={activeTab === 'injury' ? '' : 'hidden'}>
+          {shoe.injuryPrevention && (
+            <div className="section-card p-6">
+              <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
+            </div>
+          )}
+        </div>
 
         {/* 한국인 발 탭 */}
-        {activeTab === 'koreanfoot' && (
-          <>
-            {shoe.koreanFootFit && (
-              <div className="section-card p-6">
-                <KoreanFootFit
-                  koreanFootFit={shoe.koreanFootFit}
-                  shoeName={shoe.name}
-                  brand={shoe.brand}
-                />
-              </div>
-            )}
-            {similarShoesData && similarShoesData.length > 0 && (
-              <SimilarShoes currentShoe={shoe} similarShoesData={similarShoesData} currentCategory={shoe.category} />
-            )}
-          </>
-        )}
+        <div className={activeTab === 'koreanfoot' ? '' : 'hidden'}>
+          {shoe.koreanFootFit && (
+            <div className="section-card p-6">
+              <KoreanFootFit
+                koreanFootFit={shoe.koreanFootFit}
+                shoeName={shoe.name}
+                brand={shoe.brand}
+              />
+            </div>
+          )}
+          {similarShoesData && similarShoesData.length > 0 && (
+            <SimilarShoes currentShoe={shoe} similarShoesData={similarShoesData} currentCategory={shoe.category} />
+          )}
+        </div>
 
         {/* 가격 탭 */}
-        {activeTab === 'price' && shoe.priceAnalysis && (
-          <>
+        <div className={activeTab === 'price' ? '' : 'hidden'}>
+          {shoe.priceAnalysis && (
             <div className="section-card p-6">
               <ValueAnalysis
                 priceAnalysis={shoe.priceAnalysis}
@@ -145,20 +145,20 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
                 specs={shoe.specs}
               />
             </div>
-            {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
-              <div className="section-card p-6">
-                <PurchaseLinks
-                  purchaseLinks={shoe.purchaseLinks}
-                  shoeName={shoe.name}
-                  brand={shoe.brand}
-                />
-              </div>
-            )}
-          </>
-        )}
+          )}
+          {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
+            <div className="section-card p-6">
+              <PurchaseLinks
+                purchaseLinks={shoe.purchaseLinks}
+                shoeName={shoe.name}
+                brand={shoe.brand}
+              />
+            </div>
+          )}
+        </div>
 
         {/* 리뷰 탭 */}
-        {activeTab === 'reviews' && (
+        <div className={activeTab === 'reviews' ? '' : 'hidden'}>
           <div className="section-card p-6">
             {shoe.reviews && shoe.reviews.length > 0 ? (
               <ReviewsSection reviews={shoe.reviews} />
@@ -168,7 +168,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               </div>
             )}
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

@@ -14,7 +14,7 @@ type PurchaseLinksProps = {
 const storeStyles: Record<string, { bg: string; text: string }> = {
   '쿠팡': { bg: 'bg-[#f02c3e10]', text: 'text-[#f02c3e]' },
   '네이버': { bg: 'bg-[#03c7510]', text: 'text-[#03c75a]' },
-  '공식몰': { bg: 'bg-[#4facfe10]', text: 'text-[#4facfe]' },
+  '공식몰': { bg: 'bg-stone-100', text: 'text-stone-700' },
   'ABC마트': { bg: 'bg-[#ff660010]', text: 'text-[#ff6600]' },
   '무신사': { bg: 'bg-[#00000010]', text: 'text-gray-900' },
   '기본': { bg: 'bg-gray-100', text: 'text-gray-700' },
@@ -39,7 +39,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
   return (
     <section className="space-y-4">
       <h2 className="text-2xl font-bold flex items-center gap-3">
-        <ExternalLink className="h-6 w-6 text-[#4facfe]" />
+        <ExternalLink className="h-6 w-6 text-stone-600" />
         구매처
       </h2>
 
@@ -67,7 +67,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
                   {link.store}
                 </span>
                 {link.isOfficial && (
-                  <span className="inline-flex items-center gap-1 text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full">
+                  <span className="inline-flex items-center gap-1 text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">
                     <ShieldCheck className="h-3 w-3" />
                     공식
                   </span>

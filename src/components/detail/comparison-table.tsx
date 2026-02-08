@@ -129,7 +129,7 @@ export function ComparisonTable({ specs, priceAnalysis, shoeName, category }: Co
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <Search className="h-8 w-8 text-[#4facfe]" />
+        <Search className="h-8 w-8 text-stone-700" />
         초보 vs 상급 러너 평가
       </h2>
       <p className="text-gray-600">러너 수준별 니즈 차이 (한국 소비자 연구 기반)</p>
@@ -137,7 +137,7 @@ export function ComparisonTable({ specs, priceAnalysis, shoeName, category }: Co
       <div className="overflow-x-auto bg-white rounded-2xl shadow-md">
         <Table>
           <TableHeader>
-            <TableRow className="bg-[#4facfe]">
+            <TableRow className="bg-stone-700">
               <TableHead className="text-white font-bold text-center">평가 항목</TableHead>
               <TableHead className="text-white font-bold text-center">초보 러너</TableHead>
               <TableHead className="text-white font-bold text-center">
@@ -148,7 +148,7 @@ export function ComparisonTable({ specs, priceAnalysis, shoeName, category }: Co
           <TableBody>
             {baseComparisonData.map((row) => (
               <TableRow key={row.category}>
-                <TableCell className="font-bold text-[#4facfe]">{row.category}</TableCell>
+                <TableCell className="font-bold text-stone-700">{row.category}</TableCell>
                 <TableCell>
                   <div className="space-y-2">
                     <StarRating rating={row.beginnerRating} />
@@ -176,8 +176,8 @@ export function ComparisonTable({ specs, priceAnalysis, shoeName, category }: Co
       </div>
 
       {/* 카테고리별 추가 인사이트 */}
-      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
-        <div className="font-bold text-[#4facfe] mb-2 text-lg">
+      <div className="bg-stone-50 border-l-4 border-stone-300 rounded-xl p-5">
+        <div className="font-bold text-stone-700 mb-2 text-lg">
           {category === '레이싱' ? '레이싱화' :
            category === '쿠션화' ? '쿠셔닝화' :
            category === '안정화' ? '안정화' :

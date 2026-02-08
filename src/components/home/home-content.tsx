@@ -80,7 +80,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
   return (
     <div className="space-y-6">
       {/* 히어로 */}
-      <section className="py-4 md:py-8 text-center">
+      <section className="py-4 md:py-8 text-center bg-gradient-to-br from-white via-amber-50/30 to-orange-50/20 rounded-2xl">
         <p className="text-sm text-secondary mb-2">{initialShoes.length}개 모델 · {totalBrands}개 브랜드 · 전문 데이터 분석</p>
         <h1 className="text-3xl md:text-4xl font-bold mb-4 tracking-tight leading-tight text-primary">
           나에게 맞는 러닝화,<br/>
@@ -95,25 +95,25 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         <div className="flex flex-wrap justify-center gap-2 px-4 md:px-0 mb-4 md:mb-6">
           <button
             onClick={() => setSearchQuery('마라톤')}
-            className="px-3 py-1.5 bg-surface rounded-full text-sm hover:bg-border transition"
+            className="px-3 py-1.5 bg-white/80 rounded-full text-sm hover:bg-white transition shadow-sm"
           >
             🏃 첫 마라톤 준비 중
           </button>
           <button
             onClick={() => setSearchQuery('무릎')}
-            className="px-3 py-1.5 bg-surface rounded-full text-sm hover:bg-border transition"
+            className="px-3 py-1.5 bg-white/80 rounded-full text-sm hover:bg-white transition shadow-sm"
           >
             🦵 무릎이 아파요
           </button>
           <button
             onClick={() => setSearchQuery('발볼')}
-            className="px-3 py-1.5 bg-surface rounded-full text-sm hover:bg-border transition"
+            className="px-3 py-1.5 bg-white/80 rounded-full text-sm hover:bg-white transition shadow-sm"
           >
             👟 발볼이 넓어요
           </button>
           <button
             onClick={() => setSearchQuery('가성비')}
-            className="px-3 py-1.5 bg-surface rounded-full text-sm hover:bg-border transition"
+            className="px-3 py-1.5 bg-white/80 rounded-full text-sm hover:bg-white transition shadow-sm"
           >
             💰 가성비 좋은 신발
           </button>
@@ -134,7 +134,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
       <section className="grid grid-cols-3 gap-3 px-4 md:px-0">
         <Link
           href="/recommend"
-          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-accent/30 hover:shadow-sm transition text-center"
+          className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-white to-blue-50/30 rounded-2xl border border-border hover:border-accent/30 hover:shadow-sm transition text-center"
         >
           <span className="w-10 h-10 bg-accent/10 rounded-xl flex items-center justify-center">
             <Sparkles className="w-5 h-5 text-accent" />
@@ -143,7 +143,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </Link>
         <Link
           href="/compare"
-          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-positive/30 hover:shadow-sm transition text-center"
+          className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-white to-green-50/30 rounded-2xl border border-border hover:border-positive/30 hover:shadow-sm transition text-center"
         >
           <span className="w-10 h-10 bg-positive/10 rounded-xl flex items-center justify-center">
             <GitCompare className="w-5 h-5 text-positive" />
@@ -152,7 +152,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </Link>
         <button
           onClick={() => document.getElementById('filter-panel')?.scrollIntoView({ behavior: 'smooth' })}
-          className="flex flex-col items-center gap-2 p-4 bg-white rounded-2xl border border-border hover:border-warning/30 hover:shadow-sm transition text-center"
+          className="flex flex-col items-center gap-2 p-4 bg-gradient-to-br from-white to-orange-50/30 rounded-2xl border border-border hover:border-warning/30 hover:shadow-sm transition text-center"
         >
           <span className="w-10 h-10 bg-warning/10 rounded-xl flex items-center justify-center">
             <SlidersHorizontal className="w-5 h-5 text-warning" />

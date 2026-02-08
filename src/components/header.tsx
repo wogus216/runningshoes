@@ -15,7 +15,7 @@ export function Header() {
         <nav className="flex items-center gap-1.5 sm:gap-2">
           <Link
             href="/brands/nike/technology"
-            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-violet-500 to-purple-600 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-white hover:from-violet-600 hover:to-purple-700 transition shadow-md shadow-purple-500/25"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-stone-700 px-3 sm:px-4 min-h-[44px] text-[10px] sm:text-sm font-medium text-white hover:bg-stone-800 transition"
           >
             <FlaskConical className="h-4 w-4" />
             <span className="hidden sm:inline">러닝 신발 테크</span>
@@ -23,7 +23,7 @@ export function Header() {
           </Link>
           <Link
             href="/gels"
-            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-white hover:from-emerald-600 hover:to-teal-700 transition shadow-md shadow-emerald-500/25"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-emerald-600 px-3 sm:px-4 min-h-[44px] text-[10px] sm:text-sm font-medium text-white hover:bg-emerald-700 transition"
           >
             <Beaker className="h-4 w-4" />
             <span className="hidden sm:inline">에너지 젤</span>
@@ -31,7 +31,7 @@ export function Header() {
           </Link>
           <Link
             href="/blog"
-            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-gradient-to-r from-orange-500 to-amber-600 px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-white hover:from-orange-600 hover:to-amber-700 transition shadow-md shadow-orange-500/25"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-amber-600 px-3 sm:px-4 min-h-[44px] text-[10px] sm:text-sm font-medium text-white hover:bg-amber-700 transition"
           >
             <BookOpen className="h-4 w-4" />
             <span className="hidden sm:inline">가이드</span>
@@ -39,7 +39,7 @@ export function Header() {
           </Link>
           <Link
             href="/recommend"
-            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-accent px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-white hover:opacity-90 transition"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full bg-accent px-3 sm:px-4 min-h-[44px] text-[10px] sm:text-sm font-medium text-white hover:opacity-90 transition"
           >
             <Sparkles className="h-4 w-4" />
             <span className="hidden sm:inline">맞춤 추천</span>
@@ -47,7 +47,7 @@ export function Header() {
           </Link>
           <Link
             href="/compare"
-            className="flex flex-col sm:flex-row items-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full border border-border bg-white px-3 sm:px-4 py-1.5 sm:py-2 text-[10px] sm:text-sm font-medium text-primary hover:bg-surface transition"
+            className="flex flex-col sm:flex-row items-center justify-center gap-0.5 sm:gap-1.5 rounded-2xl sm:rounded-full border border-border bg-white px-3 sm:px-4 min-h-[44px] text-[10px] sm:text-sm font-medium text-primary hover:bg-surface transition"
           >
             <Scale className="h-4 w-4" />
             <span className="hidden sm:inline">비교하기</span>

@@ -20,7 +20,7 @@ export function ResearchBadge({ papersCount = 5 }: ResearchBadgeProps) {
         <button
           type="button"
           onClick={scrollToReferences}
-          className="flex items-center gap-2 px-4 py-2 rounded-full bg-[#4facfe10] text-[#4facfe] font-semibold hover:bg-[#4facfe20] transition-colors"
+          className="flex items-center gap-2 px-4 py-2 rounded-full bg-[stone-60010] text-[stone-600] font-semibold hover:bg-[stone-60020] transition-colors"
         >
           <BookOpen className="h-4 w-4" />
           <span>연구 기반 분석</span>

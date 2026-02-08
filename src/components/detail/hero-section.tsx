@@ -104,7 +104,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
               </div>
               <div className="bg-surface rounded-lg p-2 text-center">
                 <Layers className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-                <p className="text-sm font-bold text-primary">40mm</p>
+                <p className="text-sm font-bold text-primary">{shoe.biomechanics?.stackHeight?.heel || '-'}mm</p>
                 <p className="text-[10px] text-tertiary">스택</p>
               </div>
               <div className="bg-surface rounded-lg p-2 text-center">

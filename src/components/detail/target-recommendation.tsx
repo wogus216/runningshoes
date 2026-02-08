@@ -9,13 +9,13 @@ export function TargetRecommendation({ targetUsers }: TargetRecommendationProps)
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <Users className="h-8 w-8 text-[#4facfe]" />
+        <Users className="h-8 w-8 text-emerald-700" />
         이 신발은 누구에게?
       </h2>
 
       {/* Recommended */}
-      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-2 border-[#4facfe] rounded-2xl p-6 lg:p-8">
-        <h3 className="text-xl font-bold text-[#4facfe] mb-6 flex items-center gap-2">
+      <div className="bg-emerald-50 border-2 border-emerald-300 rounded-2xl p-6 lg:p-8">
+        <h3 className="text-xl font-bold text-emerald-700 mb-6 flex items-center gap-2">
           <ThumbsUp className="h-5 w-5" />
           이런 분께 추천해요
         </h3>
@@ -32,7 +32,7 @@ export function TargetRecommendation({ targetUsers }: TargetRecommendationProps)
       </div>
 
       {/* Not Recommended */}
-      <div className="bg-gradient-to-br from-[#ef444410] to-[#ef444420] border-2 border-[#ef4444] rounded-2xl p-6 lg:p-8">
+      <div className="bg-red-50 border-2 border-[#ef4444] rounded-2xl p-6 lg:p-8">
         <h3 className="text-xl font-bold text-[#ef4444] mb-6 flex items-center gap-2">
           <ThumbsDown className="h-5 w-5" />
           이런 분께는 다른 모델 추천

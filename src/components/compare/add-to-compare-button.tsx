@@ -36,9 +36,9 @@ export const AddToCompareButton = memo(function AddToCompareButton({ shoe, varia
         className={cn(
           "flex h-8 w-8 items-center justify-center rounded-full transition-all",
           isAdded
-            ? "bg-[#4facfe] text-white"
+            ? "bg-[emerald-600] text-white"
             : canAddMore
-            ? "bg-white/50 text-slate-600 hover:bg-[#4facfe]/20 hover:text-[#4facfe]"
+            ? "bg-white/50 text-slate-600 hover:bg-[emerald-600]/20 hover:text-[emerald-600]"
             : "bg-slate-100 text-slate-300 cursor-not-allowed",
           className
         )}
@@ -56,9 +56,9 @@ export const AddToCompareButton = memo(function AddToCompareButton({ shoe, varia
       className={cn(
         "flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold transition-all",
         isAdded
-          ? "bg-[#4facfe] text-white"
+          ? "bg-[emerald-600] text-white"
           : canAddMore
-          ? "border border-[#4facfe]/30 bg-[#4facfe]/10 text-[#4facfe] hover:bg-[#4facfe]/20"
+          ? "border border-[emerald-600]/30 bg-[emerald-600]/10 text-[emerald-600] hover:bg-[emerald-600]/20"
           : "border border-slate-200 bg-slate-100 text-slate-400 cursor-not-allowed",
         className
       )}

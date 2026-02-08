@@ -38,7 +38,7 @@ export function KeyFeatures({ features }: KeyFeaturesProps) {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <Sparkles className="h-8 w-8 text-[#4facfe]" />
+        <Sparkles className="h-8 w-8 text-stone-700" />
         핵심 특징
       </h2>
 
@@ -49,10 +49,10 @@ export function KeyFeatures({ features }: KeyFeaturesProps) {
           return (
             <div
               key={`${feature}-${index}`}
-              className="flex items-start gap-4 bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+              className="flex items-start gap-4 bg-stone-50 rounded-2xl p-5 transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
-              <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-[#4facfe]/10 flex items-center justify-center">
-                <IconComponent className="h-5 w-5 text-[#4facfe]" />
+              <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-stone-100 flex items-center justify-center">
+                <IconComponent className="h-5 w-5 text-stone-700" />
               </div>
               <p className="text-gray-700 font-medium leading-relaxed pt-2">
                 {feature}

@@ -61,6 +61,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
               alt={`${gel.brand} ${gel.name}`}
               width={400}
               height={400}
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="w-full h-auto object-contain max-h-[400px]"
             />
           ) : (

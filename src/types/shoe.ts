@@ -47,6 +47,8 @@ export interface Review {
   userType: string;
   rating: number;
   text: string;
+  source?: string;  // 'editor' | 'community'
+  sourceUrl?: string;  // 출처 URL (에디터 분석 시 참조 링크)
 }
 
 export interface PurchaseLink {
@@ -136,6 +138,12 @@ export interface Shoe {
 
   // 구매 링크
   purchaseLinks?: PurchaseLink[];
+
+  // 신발별 고유 한줄 요약
+  oneliner?: string;
+
+  // 에디터 분석 (2-4문장)
+  editorComment?: string;
 }
 
 export const categoryOrder = [

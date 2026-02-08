@@ -23,7 +23,7 @@ export function FinalCTA({ shoeName, brand, category }: FinalCTAProps) {
   };
 
   return (
-    <section className="bg-[#4facfe] text-white rounded-3xl p-8 lg:p-12 text-center">
+    <section className="bg-stone-700 text-white rounded-3xl p-8 lg:p-12 text-center">
       <h2 className="text-3xl lg:text-4xl font-black mb-4">
         나에게 맞는 러닝화를 찾으셨나요?
       </h2>
@@ -33,7 +33,7 @@ export function FinalCTA({ shoeName, brand, category }: FinalCTAProps) {
 {/* 구글 애드센스용 주석 처리
       <Button
         size="lg"
-        className="bg-white text-[#4facfe] hover:bg-gray-100 font-bold text-lg px-8 py-6 shadow-xl"
+        className="bg-white text-stone-700 hover:bg-gray-100 font-bold text-lg px-8 py-6 shadow-xl"
       >
         지금 구매하기
       </Button>

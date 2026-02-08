@@ -52,7 +52,7 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
                 className={cn(
                   "group flex-1 items-center justify-between gap-2 rounded-full border-white/20 px-5 py-6 text-sm font-semibold uppercase tracking-[0.25em] transition-all duration-200",
                   isActive
-                    ? "bg-[#4facfe] text-white shadow-[0_20px_45px_-30px_rgba(79,172,254,0.7)]"
+                    ? "bg-[stone-600] text-white shadow-[0_20px_45px_-30px_rgba(79,172,254,0.7)]"
                     : "bg-white/20 text-slate-700 hover:border-white/40 hover:bg-white/40"
                 )}
                 onClick={() => onChange(option.value)}
@@ -77,7 +77,7 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
                 key={chip}
                 type="button"
                 onClick={() => scrollToSection(targetId)}
-                className="rounded-full border border-white/30 bg-white/30 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all duration-200 hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10 hover:text-[#4facfe] active:scale-95"
+                className="rounded-full border border-white/30 bg-white/30 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all duration-200 hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] active:scale-95"
               >
                 {chip}
               </button>

@@ -15,8 +15,8 @@ export default function AboutPage() {
         {/* 미션 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900">
-              <Target className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+            <div className="p-3 rounded-xl bg-stone-100 dark:bg-stone-800">
+              <Target className="w-6 h-6 text-stone-600 dark:text-stone-400" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">우리의 미션</h2>
@@ -55,8 +55,8 @@ export default function AboutPage() {
         {/* 데이터 출처 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-purple-100 dark:bg-purple-900">
-              <Database className="w-6 h-6 text-purple-600 dark:text-purple-400" />
+            <div className="p-3 rounded-xl bg-amber-100 dark:bg-amber-900">
+              <Database className="w-6 h-6 text-amber-600 dark:text-amber-400" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">데이터 출처</h2>
@@ -65,19 +65,19 @@ export default function AboutPage() {
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                   <strong>RunRepeat</strong> - 랩 테스트 데이터 (충격흡수, 에너지리턴, 경도, 토박스 너비)
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                   <strong>Believe in the Run</strong> - 전문 러너 리뷰 및 착화 평가
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                   <strong>Doctors of Running</strong> - 물리치료사/의사 관점의 생체역학 분석
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="w-2 h-2 rounded-full bg-purple-500"></span>
+                  <span className="w-2 h-2 rounded-full bg-amber-500"></span>
                   <strong>공식 브랜드 사이트</strong> - 한국 정가 및 스펙 정보
                 </li>
               </ul>

@@ -34,6 +34,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     description: post.description,
     keywords: post.tags.join(', '),
     authors: [{ name: post.author }],
+    alternates: {
+      canonical: `https://runningshoes.pages.dev/blog/${slug}`,
+    },
     openGraph: {
       type: 'article',
       title: post.title,
@@ -77,7 +80,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       <header className="section-card p-6 lg:p-8 space-y-4">
         {/* 카테고리 */}
         <div className="flex items-center gap-2">
-          <span className="inline-block px-3 py-1 text-sm font-medium rounded-md bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+          <span className="inline-block px-3 py-1 text-sm font-medium rounded-md bg-stone-100 text-stone-700 dark:bg-stone-800 dark:text-stone-300">
             {categoryLabels[post.category]}
           </span>
           {post.featured && (
@@ -131,7 +134,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             [&>h2]:text-2xl [&>h2]:mt-24 [&>h2]:mb-8 [&>h2]:pb-4 [&>h2]:border-b [&>h2]:border-border [&>h2]:first:mt-0
             [&>h3]:text-xl [&>h3]:mt-16 [&>h3]:mb-6
             prose-p:text-secondary prose-p:leading-loose prose-p:mb-6
-            prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+            prose-a:text-accent prose-a:no-underline hover:prose-a:underline
             prose-strong:text-primary prose-strong:font-semibold
             prose-ul:my-8 prose-ul:space-y-4 prose-ul:pl-6 prose-li:text-secondary prose-li:leading-relaxed
             prose-ol:my-8 prose-ol:space-y-4 prose-ol:pl-6

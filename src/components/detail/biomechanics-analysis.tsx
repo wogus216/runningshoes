@@ -14,8 +14,8 @@ type BiomechCardProps = {
 
 function BiomechCard({ title, value, description }: BiomechCardProps) {
   return (
-    <div className="bg-gradient-to-br from-[#4facfe05] to-[#4facfe10] rounded-2xl p-6 border-l-4 border-[#4facfe]">
-      <h4 className="text-lg font-bold text-[#4facfe] mb-3">{title}</h4>
+    <div className="bg-stone-50 rounded-2xl p-6 border-l-4 border-stone-400">
+      <h4 className="text-lg font-bold text-stone-700 mb-3">{title}</h4>
       <div className="text-3xl font-black text-gray-900 mb-3">{value}</div>
       <p className="text-gray-600 leading-relaxed">{description}</p>
     </div>
@@ -95,7 +95,7 @@ export function BiomechanicsAnalysis({ biomechanics, weight }: BiomechanicsAnaly
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <Microscope className="h-8 w-8 text-[#4facfe]" />
+        <Microscope className="h-8 w-8 text-stone-700" />
         생체역학적 분석
       </h2>
       <p className="text-gray-600">과학적 연구 기반 신발 특성 분석</p>
@@ -130,8 +130,8 @@ export function BiomechanicsAnalysis({ biomechanics, weight }: BiomechanicsAnaly
         />
       </div>
 
-      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
-        <div className="font-bold text-[#4facfe] mb-2 text-lg flex items-center gap-2">
+      <div className="bg-gradient-to-br from-[stone-60010] to-[stone-60020] border-l-4 border-[stone-600] rounded-xl p-5">
+        <div className="font-bold text-stone-700 mb-2 text-lg flex items-center gap-2">
           <Lightbulb className="h-5 w-5" />
           러닝 이코노미 영향
         </div>

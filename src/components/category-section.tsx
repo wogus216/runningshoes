@@ -32,7 +32,7 @@ export const CategorySection = memo(function CategorySection({
       )}
     >
       <div className="relative overflow-hidden rounded-3xl border border-white/20 bg-white/20 p-4 md:p-6 text-slate-900 shadow-inner backdrop-blur-2xl lg:sticky lg:top-24">
-        <div className="absolute -top-14 -right-10 h-24 w-24 rounded-full bg-gradient-to-br from-[#f093fb]/40 to-transparent blur-3xl" />
+        <div className="absolute -top-14 -right-10 h-24 w-24 rounded-full bg-stone-200/40 blur-3xl" />
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-500">Category</p>
           <h3 className="text-lg md:text-2xl font-black leading-tight tracking-tight text-slate-900">{category}</h3>

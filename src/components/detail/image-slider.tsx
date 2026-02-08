@@ -76,7 +76,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   // 이미지가 없는 경우
   if (!images || images.length === 0) {
     return (
-      <div className="relative aspect-square bg-gradient-to-br from-slate-100 to-slate-200 rounded-2xl flex items-center justify-center">
+      <div className="relative aspect-square bg-slate-100 rounded-2xl flex items-center justify-center">
         <ShoppingBag className="w-24 h-24 text-slate-300" />
       </div>
     );
@@ -90,6 +90,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
           src={images[0]}
           alt={alt}
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="object-contain p-6"
           priority
         />
@@ -117,6 +118,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
               src={image}
               alt={`${alt} - ${index + 1}`}
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
               className="object-contain p-6"
               priority={index === 0}
             />
@@ -149,7 +151,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
             className={cn(
               "h-2 rounded-full transition-all duration-300",
               currentIndex === index
-                ? "w-6 bg-blue-500"
+                ? "w-6 bg-stone-600"
                 : "w-2 bg-black/20 hover:bg-black/40"
             )}
             aria-label={`${index + 1}번 이미지로 이동`}

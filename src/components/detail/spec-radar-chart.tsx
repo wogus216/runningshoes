@@ -61,7 +61,7 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <BarChart3 className="h-8 w-8 text-[#4facfe]" />
+        <BarChart3 className="h-8 w-8 text-stone-700" />
         성능 한눈에 보기
       </h2>
 
@@ -69,17 +69,17 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
         <div className="h-[280px] md:h-[400px]">
           <ResponsiveContainer width="100%" height="100%">
             <RadarChart data={data} outerRadius="65%">
-              <PolarGrid stroke="rgba(79, 172, 254, 0.1)" />
+              <PolarGrid stroke="rgba(120, 113, 108, 0.15)" />
               <PolarAngleAxis
                 dataKey="subject"
-                tick={{ fill: '#4facfe', fontSize: 11, fontWeight: 700 }}
+                tick={{ fill: '#57534e', fontSize: 11, fontWeight: 700 }}
               />
               <PolarRadiusAxis angle={90} domain={[0, 10]} tick={{ fontSize: 10, fontWeight: 600 }} />
               <Radar
                 name={shoeName || "성능"}
                 dataKey="value"
-                stroke="#4facfe"
-                fill="rgba(79, 172, 254, 0.2)"
+                stroke="#57534e"
+                fill="rgba(120, 113, 108, 0.2)"
                 fillOpacity={0.6}
                 strokeWidth={3}
               />
@@ -88,8 +88,7 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
         </div>
 
         <p className="text-center text-sm text-gray-500 mt-4">
-          * 한국 소비자 조사:{" "}
-          <strong className="text-[#4facfe]">착화감이 76%로 구매 결정 1순위</strong>
+          * 6가지 핵심 항목을 10점 만점으로 평가했습니다
         </p>
       </div>
     </section>

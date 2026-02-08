@@ -19,7 +19,7 @@ export function BlogCard({ post }: BlogCardProps) {
         <div className="p-5 space-y-3">
           {/* 카테고리 배지 */}
           <div className="flex items-center gap-2">
-            <span className="inline-block px-2 py-1 text-xs font-medium rounded-md bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-300">
+            <span className="inline-block px-2 py-1 text-xs font-medium rounded-md bg-stone-100 text-stone-700 dark:bg-stone-800 dark:text-stone-300">
               {categoryLabels[post.category]}
             </span>
             {post.featured && (
@@ -30,7 +30,7 @@ export function BlogCard({ post }: BlogCardProps) {
           </div>
 
           {/* 제목 */}
-          <h3 className="text-lg font-bold text-primary group-hover:text-blue-600 dark:group-hover:text-blue-400 line-clamp-2 transition-colors">
+          <h3 className="text-lg font-bold text-primary group-hover:text-accent line-clamp-2 transition-colors">
             {post.title}
           </h3>
 

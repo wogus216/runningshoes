@@ -116,12 +116,12 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <Gem className="h-8 w-8 text-[#4facfe]" />
+        <Gem className="h-8 w-8 text-stone-600" />
         가격 분석 & 가성비
       </h2>
 
       {/* Value Highlight */}
-      <div className="bg-gradient-to-br from-[#10b98110] to-[#10b98120] border-l-4 border-[#10b981] rounded-2xl p-6 lg:p-8">
+      <div className="bg-emerald-50 border-l-4 border-[#10b981] rounded-2xl p-6 lg:p-8">
         <h3 className="text-xl font-black text-[#10b981] mb-4 flex items-center gap-2">
           <BadgeDollarSign className="h-5 w-5" />
           가성비 평가: {priceAnalysis.valueRating}/10 ({getValueDescription()})
@@ -159,11 +159,11 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
                 const matchedShoe = findShoeBySlug(alt);
                 return (
                   <li key={alt} className="flex items-start gap-2">
-                    <span className="text-[#4facfe] mt-1">•</span>
+                    <span className="text-stone-600 mt-1">•</span>
                     {matchedShoe ? (
                       <Link
                         href={`/shoes/${matchedShoe.slug}`}
-                        className="text-[#4facfe] hover:underline flex items-center gap-1"
+                        className="text-stone-600 hover:underline flex items-center gap-1"
                       >
                         {matchedShoe.brand} {matchedShoe.name}
                         <ArrowRight className="h-3 w-3" />
@@ -181,8 +181,8 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
 
       {/* 비슷한 가격대 비교 */}
       {priceAnalysis.alternatives.length > 0 && (
-        <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] rounded-xl p-5 border-2 border-[#4facfe]">
-          <strong className="text-[#4facfe] text-lg flex items-center gap-2">
+        <div className="bg-stone-50 rounded-xl p-5 border-2 border-stone-300">
+          <strong className="text-stone-600 text-lg flex items-center gap-2">
             <Check className="h-5 w-5" />
             현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
           </strong>
@@ -196,8 +196,8 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
       )}
 
       {/* Purchase Tips */}
-      <div className="bg-gradient-to-br from-[#4facfe10] to-[#4facfe20] border-l-4 border-[#4facfe] rounded-xl p-5">
-        <div className="font-bold text-[#4facfe] mb-2 text-lg flex items-center gap-2">
+      <div className="bg-stone-50 border-l-4 border-stone-300 rounded-xl p-5">
+        <div className="font-bold text-stone-600 mb-2 text-lg flex items-center gap-2">
           <ShoppingCart className="h-5 w-5" />
           구매 팁
         </div>

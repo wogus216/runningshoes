@@ -4,6 +4,7 @@ import { cn } from "@/lib/utils";
 type QuickSpecsProps = {
   specs: ShoeSpecs;
   koreanFootFit?: KoreanFootFit;
+  heelStack?: number;
 };
 
 type SpecBarProps = {
@@ -40,7 +41,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
   );
 }
 
-export function QuickSpecs({ specs, koreanFootFit }: QuickSpecsProps) {
+export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps) {
   // 토박스 너비 표시
   const getToeboxLabel = () => {
     if (!koreanFootFit?.toBoxWidth) return { text: '표준', color: 'text-primary' };
@@ -70,7 +71,7 @@ export function QuickSpecs({ specs, koreanFootFit }: QuickSpecsProps) {
           <p className="text-xs text-tertiary mt-1">무게 (US 9)</p>
         </div>
         <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
-          <p className="text-lg md:text-xl font-bold text-primary">40mm</p>
+          <p className="text-lg md:text-xl font-bold text-primary">{heelStack || '-'}mm</p>
           <p className="text-xs text-tertiary mt-1">힐 스택</p>
         </div>
         <div className="bg-surface rounded-xl p-3 md:p-4 text-center">

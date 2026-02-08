@@ -40,7 +40,7 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
             key={idx}
             className={cn(
               "py-3 px-4 text-sm text-center",
-              isHighlighted && "bg-[#4facfe]/10 text-[#4facfe] font-semibold"
+              isHighlighted && "bg-emerald-50 text-emerald-700 font-semibold"
             )}
           >
             {format ? format(value) : value}
@@ -56,7 +56,7 @@ function LevelBadge({ level }: { level: string | undefined }) {
 
   const colors: Record<string, string> = {
     excellent: 'bg-emerald-100 text-emerald-700',
-    good: 'bg-blue-100 text-blue-700',
+    good: 'bg-stone-100 text-stone-700',
     fair: 'bg-amber-100 text-amber-700',
     poor: 'bg-red-100 text-red-700',
     caution: 'bg-amber-100 text-amber-700',
@@ -91,7 +91,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <p className="text-xs font-medium text-slate-500 uppercase">{shoe.brand}</p>
-            <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-slate-900 hover:text-[#4facfe]">
+            <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-slate-900 hover:text-[stone-600]">
               {shoe.name}
             </Link>
             <p className="text-sm text-slate-400">{shoe.category}</p>
@@ -130,7 +130,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
         {/* 더보기/접기 버튼 */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full mt-4 py-3 flex items-center justify-center gap-2 text-sm font-medium text-[#4facfe] bg-[#4facfe]/5 rounded-xl hover:bg-[#4facfe]/10 transition-colors min-h-[44px]"
+          className="w-full mt-4 py-3 flex items-center justify-center gap-2 text-sm font-medium text-[stone-600] bg-[stone-600]/5 rounded-xl hover:bg-[stone-600]/10 transition-colors min-h-[44px]"
         >
           {isExpanded ? (
             <>
@@ -227,7 +227,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           {/* 상세 페이지 링크 */}
           <Link
             href={`/shoes/${shoe.slug}`}
-            className="block w-full py-3 text-center text-sm font-semibold text-white bg-[#4facfe] rounded-xl hover:bg-[#4facfe]/90 transition-colors min-h-[44px]"
+            className="block w-full py-3 text-center text-sm font-semibold text-white bg-[stone-600] rounded-xl hover:bg-[stone-600]/90 transition-colors min-h-[44px]"
           >
             상세 페이지 보기
           </Link>
@@ -282,7 +282,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                     </p>
                     <Link
                       href={`/shoes/${shoe.slug}`}
-                      className="text-base font-bold text-slate-900 hover:text-[#4facfe]"
+                      className="text-base font-bold text-slate-900 hover:text-[stone-600]"
                     >
                       {shoe.name}
                     </Link>

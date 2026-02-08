@@ -31,7 +31,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
   return (
     <section className="space-y-6">
       <h2 className="text-3xl font-black flex items-center gap-4">
-        <ClipboardList className="h-8 w-8 text-[#4facfe]" />
+        <ClipboardList className="h-8 w-8 text-stone-700" />
         상세 스펙
       </h2>
 
@@ -40,7 +40,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
           <TableBody>
             {specRows.map((row, index) => (
               <TableRow key={row.label} className={index % 2 === 0 ? "bg-gray-50" : ""}>
-                <TableCell className="font-bold text-[#4facfe] w-1/3">
+                <TableCell className="font-bold text-stone-700 w-1/3">
                   {row.label}
                 </TableCell>
                 <TableCell>{row.value}</TableCell>

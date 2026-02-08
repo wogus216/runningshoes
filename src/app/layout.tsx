@@ -16,7 +16,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰 2025`,
+    default: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰 2026`,
     template: `%s | ${SITE_NAME}`,
   },
   description: `${SITE_DESCRIPTION} Nike, Asics, Hoka, Brooks 등 10개 브랜드 완벽 비교.`,
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     "Asics 러닝화",
     "Hoka 러닝화",
     "Brooks 러닝화",
-    "2025 러닝화",
+    "2026 러닝화",
   ],
   authors: [{ name: SITE_NAME }],
   creator: SITE_NAME,

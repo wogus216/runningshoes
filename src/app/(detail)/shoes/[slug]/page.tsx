@@ -6,6 +6,7 @@ import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
 import { HeroSection } from '@/components/detail/hero-section';
 import { OnelinerSummary } from '@/components/detail/oneliner-summary';
+import { EditorComment } from '@/components/detail/editor-comment';
 import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
@@ -193,10 +194,9 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
       return {
         '@type': 'Review',
-        'author': {
-          '@type': 'Person',
-          'name': review.userType || `러너${index + 1}`,
-        },
+        'author': review.userType === '에디터 분석'
+          ? { '@type': 'Organization', 'name': '러닝의모든것' }
+          : { '@type': 'Person', 'name': review.userType || `러너${index + 1}` },
         'reviewRating': {
           '@type': 'Rating',
           'ratingValue': Math.min(5, Math.max(1, ratingValue)), // 1-5 범위 강제
@@ -265,6 +265,15 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             {/* 한줄 요약 */}
             <OnelinerSummary shoe={shoe} />
 
+            {/* 에디터 코멘트 (선택적) */}
+            {shoe.editorComment && shoe.targetUsers && (
+              <EditorComment
+                comment={shoe.editorComment}
+                recommendFor={shoe.targetUsers.recommended || []}
+                notRecommendFor={shoe.targetUsers.notRecommended || []}
+              />
+            )}
+
             {/* 핵심 3박스: 추천/비추천/특징 */}
             <CoreBoxes shoe={shoe} />
 
@@ -287,7 +296,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             <span className="text-lg">📊</span>
             <div>
               <p className="font-medium text-sm mb-1 text-primary">데이터 출처</p>
-              <p className="text-xs text-secondary">RunRepeat Lab Test · Doctors of Running · 한국 러너 설문 (n=94)</p>
+              <p className="text-xs text-secondary">RunRepeat Lab Test · Doctors of Running · 에디터 분석</p>
             </div>
           </div>
         </section>

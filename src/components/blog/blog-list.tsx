@@ -37,7 +37,7 @@ export function BlogList({ allPosts, featuredPosts }: BlogListProps) {
           onClick={() => setSelectedCategory('all')}
           className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
             selectedCategory === 'all'
-              ? 'bg-blue-600 text-white'
+              ? 'bg-stone-800 text-white'
               : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
           }`}
         >
@@ -49,7 +49,7 @@ export function BlogList({ allPosts, featuredPosts }: BlogListProps) {
             onClick={() => setSelectedCategory(category)}
             className={`px-4 py-2 rounded-lg font-medium text-sm transition-colors ${
               selectedCategory === category
-                ? 'bg-blue-600 text-white'
+                ? 'bg-stone-800 text-white'
                 : 'bg-gray-100 text-gray-700 hover:bg-gray-200 dark:bg-gray-800 dark:text-gray-300 dark:hover:bg-gray-700'
             }`}
           >

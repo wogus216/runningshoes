@@ -88,6 +88,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             alt={shoe.name}
             width={300}
             height={300}
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
             className="w-full h-full object-contain"
             loading="lazy"
           />
@@ -106,15 +107,15 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
       </div>
 
       {/* 정보 영역 - 고정 높이 */}
-      <div className="p-3 md:p-4 flex flex-col flex-1">
+      <div className="p-4 md:p-5 flex flex-col flex-1">
         {/* 브랜드 & 이름 - 고정 영역 */}
-        <div className="mb-2">
-          <p className="text-xs text-tertiary mb-0.5">{shoe.brand}</p>
+        <div className="mb-3">
+          <p className="text-xs text-tertiary mb-1">{shoe.brand}</p>
           <h3 className="font-semibold text-sm md:text-base text-primary line-clamp-1">{shoe.name}</h3>
         </div>
 
         {/* 가격 + 배지 - 한 줄 고정 */}
-        <div className="flex items-center gap-1.5 mb-2 h-6 overflow-hidden">
+        <div className="flex items-center gap-2 mb-3 h-6 overflow-hidden">
           <span className="text-sm font-bold text-primary flex-shrink-0">
             ₩{shoe.price?.toLocaleString()}
           </span>
@@ -137,7 +138,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         </div>
 
         {/* 추천 태그 - 고정 높이 영역 (항상 공간 확보) */}
-        <div className="h-5 flex items-center gap-2 overflow-hidden">
+        <div className="h-5 flex items-center gap-3 overflow-hidden">
           {recommendTags.map((tag, idx) => (
             <span
               key={idx}
@@ -158,7 +159,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
 
         {/* 해시태그 - 하단 고정 (mt-auto로 밀어내기) */}
         {shoe.tags && shoe.tags.length > 0 && onTagClick && (
-          <div className="flex gap-1 mt-auto pt-2 overflow-hidden">
+          <div className="flex gap-1.5 mt-auto pt-3 overflow-hidden">
             {shoe.tags.slice(0, 2).map(tag => (
               <button
                 key={tag}

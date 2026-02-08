@@ -48,19 +48,19 @@ const faqs: FAQItem[] = [
         </p>
         <ul className="space-y-2 mb-3">
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>
               <strong>New Balance</strong> - 대부분 모델에서 와이드(2E/4E) 옵션 제공. 1080, Fresh Foam X 시리즈 추천
             </div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>
               <strong>Hoka</strong> - 기본 모델도 넓은 편 (73-75mm). Bondi, Clifton 시리즈
             </div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>
               <strong>Brooks</strong> - Ghost Wide, Adrenaline GTS Wide 등 와이드 옵션 다양
             </div>
@@ -148,19 +148,19 @@ const faqs: FAQItem[] = [
         </p>
         <ul className="space-y-2 mb-3">
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>반품/교환 정책 확인 (무료 반품 기간)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>리뷰에서 사이즈 언급 확인 (&quot;작게 나와요&quot;, &quot;크게 나와요&quot;)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>본 사이트의 토박스 너비 데이터 확인</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-purple-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div>실내에서 먼저 착화 후 실외 러닝 (반품 가능하도록)</div>
           </li>
         </ul>
@@ -259,15 +259,15 @@ const faqs: FAQItem[] = [
         </p>
         <ul className="space-y-2 mb-3">
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div><strong>데일리 트레이닝용</strong> - 쿠셔닝 좋은 신발 (예: Hoka Clifton, New Balance 1080)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div><strong>스피드 훈련용</strong> - 가볍고 반발력 좋은 신발 (예: New Balance Rebel, Saucony Kinvara)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-indigo-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-stone-400 mt-2 flex-shrink-0"></span>
             <div><strong>레이스용</strong> - 카본 플레이트 신발 (예: Nike Vaporfly, Asics Metaspeed)</div>
           </li>
         </ul>
@@ -591,12 +591,53 @@ function FAQAccordion({ item }: { item: FAQItem }) {
   );
 }
 
+// Helper to extract plain text from React elements for structured data
+function extractTextFromReactNode(node: React.ReactNode): string {
+  if (typeof node === 'string') return node;
+  if (typeof node === 'number') return String(node);
+  if (Array.isArray(node)) return node.map(extractTextFromReactNode).join(' ');
+  if (
+    typeof node === 'object' &&
+    node !== null &&
+    'props' in node &&
+    typeof node.props === 'object' &&
+    node.props !== null &&
+    'children' in node.props
+  ) {
+    const nodeProps = node.props as { children?: React.ReactNode };
+    return extractTextFromReactNode(nodeProps.children);
+  }
+  return '';
+}
+
 export default function FAQPage() {
   const categories = Array.from(new Set(faqs.map((faq) => faq.category)));
 
+  // Generate FAQ structured data
+  const faqStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text:
+          typeof faq.answer === 'string'
+            ? faq.answer
+            : extractTextFromReactNode(faq.answer),
+      },
+    })),
+  };
+
   return (
-    <div className="max-w-4xl mx-auto">
-      <div className="mb-8">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
+      />
+      <div className="max-w-4xl mx-auto">
+        <div className="mb-8">
         <h1 className="text-3xl font-bold mb-3">자주 묻는 질문 (FAQ)</h1>
         <p className="text-secondary">
           러닝화 선택, 구매, 관리, 부상 예방, 에너지 젤에 대한 자주 묻는 질문에 답변드립니다.
@@ -620,7 +661,7 @@ export default function FAQPage() {
         ))}
       </div>
 
-      <div className="mt-8 section-card p-6 bg-blue-50 dark:bg-blue-950/30 border-blue-200 dark:border-blue-800">
+      <div className="mt-8 section-card p-6 bg-stone-50 dark:bg-stone-900/30 border-stone-200 dark:border-stone-700">
         <h3 className="font-semibold text-primary mb-2">답변을 찾지 못하셨나요?</h3>
         <p className="text-secondary mb-3">
           추가 질문이나 사이트 관련 문의는 아래 이메일로 연락 주세요.
@@ -634,6 +675,7 @@ export default function FAQPage() {
       </div>
 
       <p className="text-sm text-tertiary mt-6">최종 수정일: 2026년 2월 4일</p>
-    </div>
+      </div>
+    </>
   );
 }

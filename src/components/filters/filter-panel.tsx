@@ -67,10 +67,10 @@ function MobileBottomSheet({
         {/* 헤더 */}
         <div className="flex items-center justify-between border-b border-slate-100 px-5 pb-4">
           <div className="flex items-center gap-2">
-            <Filter className="h-5 w-5 text-[#4facfe]" />
+            <Filter className="h-5 w-5 text-[stone-600]" />
             <h3 className="text-lg font-bold text-slate-900">{title}</h3>
             {activeFilterCount > 0 && (
-              <Badge className="bg-[#4facfe] text-white text-xs px-2">
+              <Badge className="bg-[stone-600] text-white text-xs px-2">
                 {activeFilterCount}
               </Badge>
             )}
@@ -92,7 +92,7 @@ function MobileBottomSheet({
         <div className="border-t border-slate-100 p-4 bg-white">
           <Button
             onClick={onClose}
-            className="w-full rounded-full bg-[#4facfe] py-4 text-base font-semibold text-white hover:bg-[#4facfe]/90 min-h-[52px]"
+            className="w-full rounded-full bg-[stone-600] py-4 text-base font-semibold text-white hover:bg-[stone-600]/90 min-h-[52px]"
           >
             {activeFilterCount > 0 ? `${activeFilterCount}개 필터 적용됨 - 결과 보기` : '필터 적용'}
           </Button>
@@ -283,7 +283,7 @@ export function FilterPanel({
       {/* 빠른 필터 프리셋 */}
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-2 mb-3">
-          <Sparkles className="h-4 w-4 text-[#4facfe]" />
+          <Sparkles className="h-4 w-4 text-[stone-600]" />
           <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">빠른 필터</span>
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
@@ -291,7 +291,7 @@ export function FilterPanel({
             <button
               key={preset.id}
               onClick={() => applyPreset(preset)}
-              className="group relative rounded-full border border-white/30 bg-white/40 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10 hover:text-[#4facfe] whitespace-nowrap flex-shrink-0"
+              className="group relative rounded-full border border-white/30 bg-white/40 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] whitespace-nowrap flex-shrink-0"
               title={preset.description}
             >
               {preset.label}
@@ -311,7 +311,7 @@ export function FilterPanel({
               placeholder="신발 이름, 브랜드, 특징 검색..."
               value={filters.searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              className="w-full rounded-full border border-white/30 bg-white/50 py-3 pl-11 pr-4 text-sm text-slate-700 placeholder:text-slate-400 focus:border-[#4facfe]/50 focus:outline-none focus:ring-2 focus:ring-[#4facfe]/20"
+              className="w-full rounded-full border border-white/30 bg-white/50 py-3 pl-11 pr-4 text-sm text-slate-700 placeholder:text-slate-400 focus:border-[stone-600]/50 focus:outline-none focus:ring-2 focus:ring-[stone-600]/20"
             />
             {filters.searchQuery && (
               <button
@@ -331,13 +331,13 @@ export function FilterPanel({
               onClick={handleFilterToggle}
               className={cn(
                 "rounded-full border-white/30 bg-white/30 px-4 py-3 text-sm font-semibold transition-all min-h-[44px]",
-                (isExpanded || isMobileSheetOpen) && "border-[#4facfe]/50 bg-[#4facfe]/10 text-[#4facfe]"
+                (isExpanded || isMobileSheetOpen) && "border-[stone-600]/50 bg-[stone-600]/10 text-[stone-600]"
               )}
             >
               <Filter className="mr-2 h-4 w-4" />
               필터
               {activeFilterCount > 0 && (
-                <Badge className="ml-2 bg-[#4facfe] text-white text-xs px-2">
+                <Badge className="ml-2 bg-[stone-600] text-white text-xs px-2">
                   {activeFilterCount}
                 </Badge>
               )}
@@ -426,7 +426,7 @@ export function FilterPanel({
           {/* 빠른 필터 프리셋 (모바일 시트 내) */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="h-4 w-4 text-[#4facfe]" />
+              <Sparkles className="h-4 w-4 text-[stone-600]" />
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">빠른 필터</span>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -434,7 +434,7 @@ export function FilterPanel({
                 <button
                   key={preset.id}
                   onClick={() => applyPreset(preset)}
-                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10 hover:text-[#4facfe] min-h-[44px]"
+                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] min-h-[44px]"
                 >
                   {preset.label}
                 </button>
@@ -630,8 +630,8 @@ function FilterButton({
       className={cn(
         "rounded-full border px-4 py-2.5 text-sm font-medium transition-all min-h-[44px]",
         isActive
-          ? "border-[#4facfe] bg-[#4facfe]/20 text-[#4facfe]"
-          : "border-white/30 bg-white/30 text-slate-600 hover:border-[#4facfe]/50 hover:bg-[#4facfe]/10"
+          ? "border-[stone-600] bg-[stone-600]/20 text-[stone-600]"
+          : "border-white/30 bg-white/30 text-slate-600 hover:border-[stone-600]/50 hover:bg-[stone-600]/10"
       )}
     >
       {label}
@@ -641,11 +641,11 @@ function FilterButton({
 
 function FilterChip({ label, onRemove }: { label: string; onRemove: () => void }) {
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-[#4facfe]/20 px-3 py-2 text-xs font-semibold text-[#4facfe] min-h-[36px] whitespace-nowrap flex-shrink-0">
+    <span className="inline-flex items-center gap-1 rounded-full bg-[stone-600]/20 px-3 py-2 text-xs font-semibold text-[stone-600] min-h-[36px] whitespace-nowrap flex-shrink-0">
       {label}
       <button
         onClick={onRemove}
-        className="ml-1 hover:text-[#4facfe]/70 p-1 min-w-[24px] min-h-[24px] flex items-center justify-center"
+        className="ml-1 hover:text-[stone-600]/70 p-1 min-w-[24px] min-h-[24px] flex items-center justify-center"
       >
         <X className="h-3.5 w-3.5" />
       </button>

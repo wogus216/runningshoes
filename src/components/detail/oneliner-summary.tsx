@@ -1,5 +1,3 @@
-'use client';
-
 import type { Shoe } from '@/types/shoe';
 
 type OnelinerSummaryProps = {
@@ -9,6 +7,10 @@ type OnelinerSummaryProps = {
 export function OnelinerSummary({ shoe }: OnelinerSummaryProps) {
   // 신발 특성에 따른 한줄 요약 생성
   const getSummary = (): string => {
+    // 직접 입력된 oneliner 사용
+    if (shoe.oneliner) {
+      return shoe.oneliner;
+    }
     // 평발 + 안정화
     if (shoe.koreanFootFit?.flatFootCompatibility === 'excellent' && shoe.category === '안정화') {
       return `"평발인데 무겁지 않은 안정화 찾는다면 이거"`;

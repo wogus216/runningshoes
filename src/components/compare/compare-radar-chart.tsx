@@ -21,7 +21,7 @@ const metrics = [
 ];
 
 const colors = [
-  { stroke: '#4facfe', fill: 'rgba(79, 172, 254, 0.2)' },
+  { stroke: '#57534e', fill: 'rgba(87, 83, 78, 0.2)' },
   { stroke: '#f093fb', fill: 'rgba(240, 147, 251, 0.2)' },
   { stroke: '#00f2fe', fill: 'rgba(0, 242, 254, 0.2)' },
   { stroke: '#ffd700', fill: 'rgba(255, 215, 0, 0.2)' },
