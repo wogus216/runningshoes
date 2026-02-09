@@ -73,9 +73,9 @@ export const metadata: Metadata = {
     images: [DEFAULT_OG_IMAGE],
   },
   verification: {
-    google: "idX7BnOdE2DO1nqx_LUww1v5bmpxFW2ucMQPndpbqqI",
+    google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
     other: {
-      "naver-site-verification": "afbdaf6b8808d8e44502455c68379b06f421ba4d",
+      "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION || '',
     },
   },
   alternates: {
@@ -149,27 +149,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
           type="application/ld+json"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
-        />
-        <Script
-          id="content-protection"
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function(){
-                document.addEventListener('contextmenu',function(e){e.preventDefault()});
-                document.addEventListener('selectstart',function(e){
-                  if(e.target.tagName==='INPUT'||e.target.tagName==='TEXTAREA')return;
-                  e.preventDefault();
-                });
-                document.addEventListener('copy',function(e){e.preventDefault()});
-                document.addEventListener('keydown',function(e){
-                  if((e.ctrlKey||e.metaKey)&&(e.key==='u'||e.key==='s'||e.key==='a'))e.preventDefault();
-                  if(e.key==='F12')e.preventDefault();
-                  if((e.ctrlKey||e.metaKey)&&e.shiftKey&&(e.key==='I'||e.key==='J'||e.key==='C'))e.preventDefault();
-                });
-              })();
-            `,
-          }}
         />
         <CompareProvider>
           {children}

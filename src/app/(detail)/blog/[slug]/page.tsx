@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft, Calendar, Clock, User, Tag } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/data/blog';
 import { categoryLabels } from '@/types/blog';
@@ -142,7 +143,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             prose-th:bg-gray-100 prose-th:dark:bg-gray-800 prose-th:p-3 prose-th:text-left prose-th:font-semibold
             prose-td:p-3 prose-td:border-b prose-td:border-border
           "
-          dangerouslySetInnerHTML={{ __html: post.content }}
+          dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content, {
+            ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub'],
+            ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height'],
+          }) }}
         />
       </article>
 

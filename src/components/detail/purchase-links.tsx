@@ -24,6 +24,24 @@ function getStoreStyle(store: string) {
   return storeStyles[store] || storeStyles['기본'];
 }
 
+const ALLOWED_PURCHASE_DOMAINS = [
+  'naver.me', 'naver.com', 'brand.naver.com',
+  'coupang.com', 'link.coupang.com',
+  'nike.com', 'adidas.co.kr', 'asics.co.kr',
+  'nbkorea.com', 'hoka.com', 'brooksrunning.co.kr',
+  'saucony.co.kr', 'on-running.com', 'kr.puma.com', 'mizunokorea.co.kr',
+  'abcmart.co.kr', 'musinsa.com',
+];
+
+function isValidPurchaseUrl(url: string): boolean {
+  try {
+    const parsed = new URL(url);
+    return ALLOWED_PURCHASE_DOMAINS.some(domain => parsed.hostname === domain || parsed.hostname.endsWith('.' + domain));
+  } catch {
+    return false;
+  }
+}
+
 export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksProps) {
   if (!purchaseLinks || purchaseLinks.length === 0) {
     return null;
@@ -48,7 +66,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
 
       {/* 구매 링크 목록 */}
       <div className="grid gap-3 sm:grid-cols-2">
-        {sortedLinks.map((link, index) => {
+        {sortedLinks.filter(link => isValidPurchaseUrl(link.url)).map((link, index) => {
           const style = getStoreStyle(link.store);
           return (
             <a
