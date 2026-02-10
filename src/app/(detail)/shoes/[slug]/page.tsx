@@ -78,6 +78,9 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   // 이미지 URL (첫 번째 이미지 또는 기본 이미지)
   const imageUrl = shoe.image || DEFAULT_OG_IMAGE;
 
+  // 불완전한 데이터 신발은 noindex 처리 (thin content 방지)
+  const shouldIndex = isCompleteShoe(shoe);
+
   return {
     title,
     description,
@@ -86,10 +89,10 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     creator: SITE_NAME,
     publisher: SITE_NAME,
     robots: {
-      index: true,
+      index: shouldIndex,
       follow: true,
       googleBot: {
-        index: true,
+        index: shouldIndex,
         follow: true,
         'max-video-preview': -1,
         'max-image-preview': 'large',

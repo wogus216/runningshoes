@@ -2,207 +2,24 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
-    id: 'beginner-guide',
-    slug: 'beginner-running-shoe-guide-2025',
-    title: '초보 러너를 위한 러닝화 선택 가이드 2025',
-    description: '러닝을 시작하는 분들을 위한 러닝화 선택의 모든 것. 쿠셔닝, 드롭, 안정성까지 쉽게 이해하세요.',
-    content: `
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1743798115824-9f671fa8e9a9?auto=format&fit=crop&w=1600&q=80"
-    alt="벤치 위에 놓인 러닝화와 선글라스"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/running-shoes-rest-on-a-wooden-surface-with-sunglasses-q_j0jPkb_ts" target="_blank" rel="noopener noreferrer">Unsplash</a> / Kristina Tochilko
-  </figcaption>
-</figure>
-
-<h2>러닝화 vs 일반 운동화, 뭐가 다를까?</h2>
-<p>
-  "그냥 운동화 신으면 안 돼요?" 러닝을 시작하는 분들이 가장 많이 하는 질문입니다.
-  결론부터 말씀드리면, <strong>러닝화는 반드시 필요합니다.</strong>
-</p>
-<p>
-  저도 처음에는 그렇게 생각했습니다. "5km 정도 뛰는데 뭐 굳이 비싼 러닝화를 사야 하나?"
-  그래서 평소 신던 운동화로 한강을 뛰기 시작했죠. 처음 일주일은 괜찮았습니다.
-  하지만 2주차부터 무릎이 뻐근하고, 한 달 후에는 계단 내려갈 때마다 무릎이 아팠습니다.
-</p>
-<p>
-  정형외과에 갔더니 의사 선생님이 신발부터 물어보시더군요.
-  "어떤 신발 신고 뛰세요?" 일반 운동화라고 하니 "러닝화로 바꾸고 2주 쉬세요"라고 하셨습니다.
-  그때 처음으로 러닝화를 제대로 알아보기 시작했습니다.
-</p>
-<p>
-  일반 운동화와 러닝화의 가장 큰 차이는 <strong>충격 흡수</strong>와 <strong>추진력</strong>입니다.
-  러닝할 때 발에 가해지는 충격은 체중의 2~3배에 달합니다. 5km만 뛰어도 수천 번의 착지가 발생하는데,
-  이 충격을 흡수하지 못하면 무릎, 발목, 허리에 부담이 누적됩니다.
-</p>
-<p>
-  러닝화의 미드솔(중창)에는 충격을 흡수하고 에너지를 반환하는 특수 폼이 들어있어,
-  부상을 예방하고 더 효율적으로 달릴 수 있게 해줍니다.
-  제가 무릎 통증에서 벗어난 것도 바로 이 러닝화 덕분이었습니다.
-</p>
-
-<h2>러닝화 선택의 핵심 3요소</h2>
-
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1674081974599-efe550a995f1?auto=format&fit=crop&w=1600&q=80"
-    alt="러닝화를 묶는 손"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/une-personne-attachant-un-lacet-a-une-paire-de-baskets-WCZkzps3LAU" target="_blank" rel="noopener noreferrer">Unsplash</a> / yousef samuil
-  </figcaption>
-</figure>
-
-<h3>1. 쿠셔닝 (Cushioning)</h3>
-<p>
-  쿠셔닝은 착지할 때 충격을 얼마나 흡수하는지를 나타냅니다.
-  초보 러너라면 <strong>중간 이상의 쿠셔닝</strong>을 추천합니다.
-  너무 딱딱하면 관절에 무리가 가고, 너무 푹신하면 안정성이 떨어질 수 있어요.
-</p>
-<ul>
-  <li><strong>소프트 쿠셔닝:</strong> 구름 위를 걷는 느낌, 장거리에 유리 (예: Hoka Bondi, Nike Invincible)</li>
-  <li><strong>미디엄 쿠셔닝:</strong> 균형 잡힌 느낌, 입문자 추천 (예: Nike Pegasus, Asics Nimbus)</li>
-  <li><strong>펌 쿠셔닝:</strong> 지면 감각이 좋음, 빠른 페이스에 유리 (예: Saucony Kinvara)</li>
-</ul>
-
-<h3>2. 드롭 (Drop)</h3>
-<p>
-  드롭은 뒤꿈치와 앞꿈치의 높이 차이입니다.
-  전통적인 러닝화는 10~12mm 드롭이고, 미니멀 러닝화는 0~4mm입니다.
-</p>
-<ul>
-  <li><strong>높은 드롭 (10mm+):</strong> 뒤꿈치 착지에 익숙한 러너, 아킬레스 부담 감소</li>
-  <li><strong>중간 드롭 (6~9mm):</strong> 대부분의 러너에게 적합</li>
-  <li><strong>낮은 드롭 (0~5mm):</strong> 자연스러운 주법, 적응 기간 필요</li>
-</ul>
-<p>
-  <strong>초보자 추천:</strong> 8~10mm 드롭으로 시작하는 것이 안전합니다.
-  낮은 드롭은 종아리와 아킬레스에 부담을 줄 수 있어 점진적으로 적응해야 합니다.
-</p>
-
-<h3>3. 안정성 (Stability)</h3>
-<p>
-  발이 안쪽으로 과도하게 꺾이는 것을 <strong>오버프로네이션</strong>이라고 합니다.
-  평발이거나 발목이 약한 분들은 안정화(Stability Shoe)가 도움이 됩니다.
-</p>
-<ul>
-  <li><strong>뉴트럴화:</strong> 정상 아치, 특별한 교정 기능 없음</li>
-  <li><strong>안정화:</strong> 내측에 단단한 소재로 과도한 회내를 제어</li>
-  <li><strong>모션 컨트롤:</strong> 심한 오버프로네이션용, 매우 단단함</li>
-</ul>
-
-<h2>발 유형별 추천</h2>
-
-<h3>평발 (Low Arch)</h3>
-<p>
-  평발은 아치가 낮아 발이 안쪽으로 꺾이기 쉽습니다.
-  <strong>안정화</strong>나 <strong>가벼운 지지력</strong>이 있는 신발을 추천합니다.
-</p>
-<p>추천 모델: Asics Kayano, Brooks Adrenaline GTS, Asics GT-2000</p>
-
-<h3>정상 아치 (Normal Arch)</h3>
-<p>
-  대부분의 뉴트럴화가 잘 맞습니다.
-  선택의 폭이 넓어 쿠셔닝, 무게, 용도에 따라 고르시면 됩니다.
-</p>
-<p>추천 모델: Nike Pegasus, New Balance 1080, Hoka Clifton</p>
-
-<h3>요족 (High Arch)</h3>
-<p>
-  아치가 높으면 발바닥 외측에 압력이 집중됩니다.
-  <strong>쿠셔닝이 풍부한 뉴트럴화</strong>를 추천합니다.
-</p>
-<p>추천 모델: Hoka Bondi, New Balance Fresh Foam More, Nike Invincible</p>
-
-<h2>가격대별 추천</h2>
-
-<h3>10~15만원: 입문 스윗스팟</h3>
-<p>
-  이 가격대에서 충분히 좋은 러닝화를 구매할 수 있습니다.
-  이전 시즌 모델이나 세일 제품을 노리면 프리미엄 신발도 이 가격에 살 수 있어요.
-</p>
-<p>추천: Saucony Ride, Mizuno Wave Rider, Nike Pegasus (이전 시즌)</p>
-
-<h3>15~20만원: 시리어스 러너</h3>
-<p>
-  대부분의 메인 러닝화가 이 가격대입니다.
-  일주일에 3회 이상 꾸준히 뛴다면 이 정도 투자가 적절합니다.
-</p>
-<p>추천: Asics Nimbus, New Balance 1080, Brooks Ghost</p>
-
-<h3>20만원+: 프리미엄</h3>
-<p>
-  최신 기술이 적용된 플래그십 모델들입니다.
-  하프 마라톤 이상 목표가 있다면 고려해볼 만합니다.
-</p>
-<p>추천: Hoka Clifton, Saucony Triumph, Nike Invincible</p>
-
-<figure class="my-10">
-  <img
-    src="https://images.unsplash.com/photo-1762709753300-342ab94e8b05?auto=format&fit=crop&w=1600&q=80"
-    alt="트랙에서 달리는 러너들"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    이미지: <a href="https://unsplash.com/photos/runners-in-a-race-with-motion-blur-HgugOtbCm7w" target="_blank" rel="noopener noreferrer">Unsplash</a> / Mathias Reding
-  </figcaption>
-</figure>
-
-<h2>구매 전 체크리스트</h2>
-<ol>
-  <li><strong>오후에 신어보기:</strong> 발은 하루 동안 부으므로, 러닝하는 시간대와 비슷한 오후에 피팅하세요.</li>
-  <li><strong>러닝 양말 착용:</strong> 실제 러닝할 때 신을 양말과 함께 신어보세요.</li>
-  <li><strong>엄지발가락 여유:</strong> 앞쪽에 1~1.5cm 여유가 있어야 합니다.</li>
-  <li><strong>뒤꿈치 고정:</strong> 뒤꿈치가 들리지 않는지 확인하세요.</li>
-  <li><strong>매장에서 뛰어보기:</strong> 가능하면 트레드밀이나 매장 내에서 실제로 뛰어보세요.</li>
-</ol>
-
-<h2>마무리: 내 발에 맞는 첫 러닝화를 찾아서</h2>
-<p>
-  러닝화 선택에 정답은 없습니다. 가장 중요한 것은 <strong>편안함</strong>입니다.
-  아무리 좋은 기술이 들어간 신발도 내 발에 안 맞으면 소용없습니다.
-  여러 신발을 신어보고, 가장 편안한 신발을 선택하세요.
-</p>
-<p>
-  저는 첫 러닝화로 아식스 GT-2000을 선택했습니다. 가격대도 적당하고(16만원대),
-  쿠셔닝과 안정성이 균형 잡힌 입문용 신발이었죠.
-  그 신발로 첫 하프 마라톤을 완주했고, 600km를 달렸습니다.
-  지금은 다른 신발들을 신지만, 첫 러닝화의 추억은 특별합니다.
-</p>
-<p>
-  러닝화는 도구이지만, 동시에 러닝 여정의 동반자입니다.
-  좋은 신발은 당신이 더 멀리, 더 오래, 더 즐겁게 달릴 수 있게 해줍니다.
-</p>
-<p>
-  그리고 처음부터 비싼 신발을 살 필요 없습니다.
-  10~15만원대 신발로 시작해서, 러닝이 습관이 되면 그때 업그레이드해도 늦지 않습니다.
-  이 가이드가 여러분의 첫 러닝화 선택에 도움이 되길 바랍니다.
-  즐거운 러닝 되세요!
-</p>
-    `,
-    author: '러닝의 모든것',
-    publishedAt: '2025-02-01',
-    category: 'guide',
-    tags: ['초보', '가이드', '러닝화 선택', '입문'],
-    readingTime: 8,
-    featured: true,
-  },
-  {
     id: 'wide-feet-korea',
     slug: 'wide-feet-running-shoes-korea',
     title: '발볼 넓은 한국인을 위한 러닝화 추천 TOP 10',
-    description: '한국인의 넓은 발볼에 맞는 러닝화를 찾기 어려우셨나요? 브랜드별 와이드 옵션과 추천 모델을 정리했습니다.',
+    description: '한국인의 발이 서양인보다 넓다는 연구 결과와 RunRepeat 700개 신발 실측 데이터를 바탕으로 발볼 넓은 러너를 위한 러닝화를 추천합니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1600&q=80',
     content: `
+<figure class="my-8 -mx-4 sm:mx-0">
+  <img
+    src="https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1600&q=80"
+    alt="러닝화 매장 진열 - 발볼 넓은 한국인을 위한 러닝화 가이드"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    Photo by <a href="https://unsplash.com" class="underline hover:text-gray-700" target="_blank" rel="noopener">Unsplash</a>
+  </figcaption>
+</figure>
+
 <h2>왜 발볼이 중요한가?</h2>
 <p>
   "신발이 예쁜데 발이 안 들어가요", "양쪽 새끼발가락이 눌려서 아파요"
@@ -212,6 +29,23 @@ export const blogPosts: BlogPost[] = [
   이유는 간단합니다. <strong>대부분의 러닝화가 서양인 발 기준</strong>으로 만들어지기 때문입니다.
   한국인은 서양인에 비해 발볼이 넓고 발등이 높은 경우가 많습니다.
   특히 남성의 경우 이 차이가 더 두드러집니다.
+</p>
+
+<h3>한국인 발이 정말 더 넓을까? 연구 데이터로 확인하기</h3>
+<p>
+  "한국인은 발볼이 넓다"는 말은 단순한 속설이 아니라 <strong>과학적 사실</strong>입니다.
+  Nature Scientific Reports에 발표된 연구(120만 건의 발 스캔 분석)에 따르면,
+  아시아인의 발은 유럽인과 북미인에 비해 같은 발 길이 대비 <strong>발볼 너비가 유의미하게 넓습니다.</strong>
+</p>
+<p>
+  한국 남성의 경우 더욱 두드러집니다. 2019년 국방부 연구에서 56만 명의 19세 남성을 조사한 결과,
+  <strong>평발 비율이 20% 이상</strong>으로 나타났으며, 이는 발볼이 넓고 발등이 낮은 특성과 관련이 있습니다.
+  평발은 아치가 낮아 발이 지면에 닿을 때 발볼이 더 퍼지는 구조이기 때문입니다.
+</p>
+<p>
+  문제는 대부분의 글로벌 러닝화 브랜드가 유럽과 북미 시장을 기준으로 제작된다는 점입니다.
+  나이키, 아디다스 등은 서양인의 평균적인 발 형태를 기준으로 토박스 너비를 설계하기 때문에,
+  한국 러너들이 "발이 안 들어가요", "새끼발가락이 눌려요"라는 불만을 토로하는 것입니다.
 </p>
 
 <h3>에디터의 한마디: 5년간 발볼 때문에 겪은 시행착오</h3>
@@ -241,13 +75,71 @@ export const blogPosts: BlogPost[] = [
   시간과 돈을 낭비하지 않고 편한 신발을 찾을 수 있도록 정리한 실전 가이드입니다.
 </p>
 
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&q=80"
+    alt="러닝화 측면 클로즈업 - 토박스 너비 비교"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    토박스 너비는 발볼 넓은 러너에게 가장 중요한 스펙입니다 · Photo by Unsplash
+  </figcaption>
+</figure>
+
 <h2>토박스 너비 기준</h2>
 <p>러닝화의 앞코 너비(토박스)를 기준으로 분류하면:</p>
 <ul>
-  <li><strong>좁음 (Narrow):</strong> 68mm 미만 - 발볼 넓은 사람은 피해야 함</li>
-  <li><strong>표준 (Standard):</strong> 68~75mm - 대부분의 러너에게 적합</li>
-  <li><strong>넓음 (Wide):</strong> 75mm 초과 - 발볼 넓은 러너에게 추천</li>
+  <li><strong>좁음 (Narrow):</strong> 70mm 미만 - 발볼 넓은 사람은 피해야 함</li>
+  <li><strong>표준 (Standard):</strong> 70~76mm - 대부분의 러너에게 적합</li>
+  <li><strong>넓음 (Wide):</strong> 76mm 초과 - 발볼 넓은 러너에게 추천</li>
 </ul>
+<p><strong>참고:</strong> RunRepeat이 700개 이상의 러닝화를 US M9 기준으로 실측한 결과, 평균 토박스 너비는 73.3mm입니다.</p>
+
+<h3>주요 러닝화 토박스 너비 실측 비교 (RunRepeat Lab)</h3>
+<p>아래는 RunRepeat 연구소에서 젤 몰드 방식으로 정밀 측정한 엄지발가락 부위 토박스 너비입니다 (US M9 기준, new method).</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>토박스 너비</th><th>전체 너비</th><th>판정</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Altra Torin 8</td><td><strong>83.6mm</strong></td><td>95.3mm</td><td>매우 넓음</td></tr>
+    <tr><td>Mizuno Wave Rider 28</td><td><strong>77.2mm</strong></td><td>96.7mm</td><td>넓음</td></tr>
+    <tr><td>Asics Gel-Kayano 31</td><td>74.8mm</td><td>98.9mm</td><td>표준 (넉넉)</td></tr>
+    <tr><td>Asics Gel-Nimbus 27</td><td>73.8mm</td><td>-</td><td>표준</td></tr>
+    <tr><td>Saucony Triumph 22</td><td>73.6mm</td><td>97.5mm</td><td>표준</td></tr>
+    <tr><td>Asics GT-2000 13</td><td>73.3mm</td><td>96.0mm</td><td>표준 (평균)</td></tr>
+    <tr><td>Hoka Clifton 10</td><td>73.1mm</td><td>-</td><td>표준</td></tr>
+    <tr><td>Nike Pegasus 41</td><td>72.9mm</td><td>94.6mm</td><td>표준 (좁은 편)</td></tr>
+    <tr><td>Brooks Ghost 16</td><td>72.1mm</td><td>96.1mm</td><td>좁은 편</td></tr>
+    <tr><td>New Balance 1080 v14</td><td>69.8mm</td><td>-</td><td>좁음 (주의!)</td></tr>
+    <tr><td>Hoka Bondi 8</td><td>69.2mm</td><td>92.2mm</td><td>좁음 (주의!)</td></tr>
+  </tbody>
+</table>
+<p>
+  <strong>주목할 점:</strong> New Balance 1080 v14(69.8mm)는 v13(77.9mm) 대비 토박스가 <strong>8mm 이상 좁아졌습니다.</strong>
+  1080 시리즈를 발볼 때문에 선택하셨다면 v14부터는 반드시 와이드(2E) 이상을 선택하세요.
+  Hoka Bondi 8도 69.2mm로 의외로 좁습니다. <strong>반드시 Wide 버전</strong>을 선택해야 합니다.
+</p>
+
+<h2>러닝화 너비 시스템 이해하기</h2>
+<p>브랜드별로 "Wide"의 기준이 다르기 때문에, 국제 너비 코드를 이해하면 도움이 됩니다.</p>
+<table>
+  <thead>
+    <tr><th>너비 코드</th><th>남성 기준</th><th>여성 기준</th><th>표준 대비</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>B</td><td>좁음 (Narrow)</td><td><strong>표준 (Standard)</strong></td><td>-6mm</td></tr>
+    <tr><td>D</td><td><strong>표준 (Standard)</strong></td><td>넓음 (Wide)</td><td>기준</td></tr>
+    <tr><td>2E</td><td>넓음 (Wide)</td><td>매우 넓음 (Extra Wide)</td><td>+6mm</td></tr>
+    <tr><td>4E</td><td>매우 넓음 (Extra Wide)</td><td>-</td><td>+12mm</td></tr>
+  </tbody>
+</table>
+<p>
+  <strong>알아두세요:</strong> 대부분의 브랜드는 와이드 버전을 만들 때 <strong>어퍼(갑피)만 넓히고 미드솔 플랫폼은 동일</strong>하게 유지합니다.
+  즉, 착지 안정성은 같으면서 발가락 공간만 넓어지는 구조입니다.
+  발볼이 넓다면 남성은 2E, 발이 아주 넓다면 4E를 선택하세요.
+</p>
 
 <h2>브랜드별 특징</h2>
 
@@ -269,71 +161,126 @@ export const blogPosts: BlogPost[] = [
 
 <h2>발볼 넓은 러너를 위한 TOP 10</h2>
 
-<h3>1. Asics Gel-Kayano Wide (4E)</h3>
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80"
+    alt="러닝화 컬렉션 - 발볼 넓은 러너를 위한 추천 모델"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    발볼에 맞는 신발을 찾으면 러닝이 훨씬 즐거워집니다 · Photo by Unsplash
+  </figcaption>
+</figure>
+
+<h3>1. Altra Torin 8 - 토박스 83.6mm (최고 추천)</h3>
+<p>
+  RunRepeat 실측 <strong>83.6mm</strong>로 주요 러닝화 중 가장 넓은 토박스를 자랑합니다.
+  FootShape 디자인으로 발가락이 자연스럽게 펴지는 구조이며,
+  일반 신발 대비 테이퍼(좁아지는 비율)가 12.3%에 불과합니다(평균 23%).
+  제로 드롭이라 2~4주 적응 기간이 필요하지만, 발볼 문제로 고생하셨다면 꼭 신어보세요.
+  "발가락이 숨 쉰다"는 후기가 가장 많은 모델입니다.
+</p>
+
+<h3>2. Mizuno Wave Rider 28 - 토박스 77.2mm</h3>
+<p>
+  일본 브랜드답게 아시아인 발형을 잘 이해합니다.
+  실측 토박스 <strong>77.2mm</strong>로 기본 버전도 평균보다 4mm 넓습니다.
+  웨이브 플레이트의 안정감이 특징이고, Wide 옵션도 제공합니다.
+  다만 드롭이 14.7mm로 높은 편이니 참고하세요.
+</p>
+
+<h3>3. Asics Gel-Kayano 31 Wide (4E) - 토박스 74.8mm</h3>
 <p>
   안정화의 대명사 카야노의 와이드 버전입니다.
+  표준 버전도 토박스 <strong>74.8mm</strong>, 전체 너비 98.9mm로 넉넉하고,
+  4E 와이드는 +12mm 추가되어 발볼 걱정이 없습니다.
   평발이면서 발볼이 넓은 분들에게 최적의 선택입니다.
   FF Blast+ 폼으로 쿠셔닝과 반발력 모두 우수합니다.
 </p>
 
-<h3>2. New Balance Fresh Foam 1080 v14 (2E/4E)</h3>
-<p>
-  뉴발란스의 플래그십 쿠션화입니다.
-  2E, 4E 옵션을 제공하며, Fresh Foam X가 푹신하면서도 반응성이 좋습니다.
-  발볼 넓은 러너들 사이에서 "이건 된다"는 평가를 받는 모델입니다.
-</p>
-
-<h3>3. Altra Torin 7</h3>
-<p>
-  FootShape 토박스로 발가락이 자연스럽게 펴지는 구조입니다.
-  제로 드롭이라 적응 기간이 필요하지만, 발볼 문제로 고생하셨다면 꼭 신어보세요.
-  "발가락이 숨 쉰다"는 후기가 많습니다.
-</p>
-
-<h3>4. Asics GT-2000 Wide</h3>
+<h3>4. Asics GT-2000 13 Wide - 토박스 73.3mm</h3>
 <p>
   카야노보다 가볍고 저렴한 라이트 안정화입니다.
-  와이드 옵션이 있어 발볼 넓은 평발 러너에게 가성비 좋은 선택입니다.
+  표준 토박스 <strong>73.3mm</strong>로 평균 수준이지만, 와이드(2E/4E) 옵션이 있어
+  발볼 넓은 평발 러너에게 가성비 좋은 선택입니다.
+  가격이 카야노보다 5만원 이상 저렴합니다.
 </p>
 
-<h3>5. Brooks Ghost Wide</h3>
+<h3>5. New Balance Fresh Foam 1080 v14 (2E/4E)</h3>
 <p>
-  브룩스의 베스트셀러 뉴트럴화입니다.
-  Wide 옵션이 실제로 넓고, DNA LOFT 폼이 편안합니다.
-  "신발 신는 게 아니라 신발이 발을 감싸는 느낌"이라는 평가입니다.
+  뉴발란스의 플래그십 쿠션화입니다.
+  <strong>주의:</strong> v14 표준 토박스가 69.8mm로 v13(77.9mm) 대비 크게 좁아졌습니다.
+  <strong>반드시 2E 또는 4E를 선택하세요.</strong>
+  4E 옵션은 표준 대비 +12mm로 충분한 여유를 제공합니다.
+  Fresh Foam X가 푹신하면서도 반응성이 좋습니다.
 </p>
 
-<h3>6. Mizuno Wave Rider</h3>
-<p>
-  일본 브랜드답게 아시아인 발형을 잘 이해합니다.
-  기본 버전도 토박스가 넉넉한 편이고, Wide 옵션도 있습니다.
-  웨이브 플레이트의 안정감이 특징입니다.
-</p>
-
-<h3>7. Hoka Bondi (Wide)</h3>
-<p>
-  맥스 쿠션의 대명사 본다이의 와이드 버전입니다.
-  푹신한 착화감과 넉넉한 토박스로 장거리에 적합합니다.
-  다만 무게가 있어 속도를 내기엔 부적합합니다.
-</p>
-
-<h3>8. Saucony Triumph 22</h3>
+<h3>6. Saucony Triumph 22 - 토박스 73.6mm</h3>
 <p>
   삭소니의 프리미엄 쿠션화입니다.
-  기본 토박스가 넉넉한 편이고, Wide 옵션도 있습니다.
-  PWRRUN+ 폼의 반발력이 인상적입니다.
+  기본 토박스 <strong>73.6mm</strong>, 전체 너비 97.5mm로 평균보다 넉넉합니다.
+  PWRRUN+ 폼의 에너지 리턴(60.9%)이 인상적이며, Wide 옵션도 있습니다.
+</p>
+
+<h3>7. Brooks Ghost 16 Wide - 토박스 72.1mm</h3>
+<p>
+  브룩스의 베스트셀러 뉴트럴화입니다.
+  표준 토박스 72.1mm는 좁은 편이므로 <strong>반드시 Wide 버전</strong>을 선택하세요.
+  DNA LOFT 폼이 편안하고, Wide 옵션은 실제로 넓다는 평가입니다.
+  "신발 신는 게 아니라 신발이 발을 감싸는 느낌"이라는 후기가 많습니다.
+</p>
+
+<h3>8. Hoka Bondi 8 (Wide) - 토박스 69.2mm (표준)</h3>
+<p>
+  맥스 쿠셔닝의 대명사 본다이입니다.
+  <strong>주의:</strong> 표준 버전 토박스가 69.2mm로 상당히 좁습니다.
+  발볼 넓은 분은 <strong>반드시 Wide 버전</strong>을 선택해야 합니다.
+  푹신한 착화감은 장거리에 탁월하지만, 무게(307g)가 있어 속도를 내기엔 부적합합니다.
 </p>
 
 <h3>9. New Balance Fresh Foam More v4 (2E/4E)</h3>
 <p>
   1080보다 더 푹신한 맥스 쿠션화입니다.
+  2E, 4E 옵션이 있어 넓은 발에 안성맞춤이며,
   발볼 넓은 러너들이 "처음으로 편한 러닝화를 만났다"고 하는 모델입니다.
 </p>
 
-<h3>10. Nike Pegasus (표준 너비지만 니트 소재)</h3>
+<h3>10. Nike Pegasus 41 - 토박스 72.9mm</h3>
 <p>
-  나이키 중에서 그나마 발볼이 넓은 분들도 시도해볼 만한 모델입니다.
-  니트 어퍼가 어느 정도 늘어나지만, 본인이 발볼이 많이 넓다면 피하세요.
+  나이키 중에서 그나마 시도해볼 만한 모델입니다.
+  실측 토박스 72.9mm, 전체 너비 94.6mm로 나이키 중에서는 넉넉한 편이며
+  니트 어퍼가 어느 정도 늘어납니다.
+  하지만 테이퍼 비율이 22.9%(Altra는 12.3%)로 발가락 쪽이 좁아지므로,
+  발볼이 많이 넓다면 다른 브랜드를 권장합니다.
+</p>
+
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?auto=format&fit=crop&w=1200&q=80"
+    alt="러닝화 매장에서 피팅하는 모습"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    첫 구매는 반드시 매장에서 직접 신어보세요 · Photo by Unsplash
+  </figcaption>
+</figure>
+
+<h2>집에서 하는 DIY 피팅 테스트</h2>
+<p>
+  매장에 가기 전에 현재 신발이 본인 발볼에 맞는지 간단히 확인할 수 있습니다.
+  RunRepeat 연구팀이 권장하는 방법입니다.
+</p>
+<ol>
+  <li>러닝화에서 <strong>인솔(깔창)을 꺼내세요.</strong></li>
+  <li>인솔을 바닥에 놓고, 그 위에 <strong>체중을 실어 서세요</strong> (러닝할 때처럼).</li>
+  <li>아래를 내려다보세요. <strong>발이 인솔 가장자리 밖으로 삐져나오면</strong> 그 신발은 너무 좁은 것입니다.</li>
+  <li>특히 <strong>새끼발가락 쪽</strong>과 <strong>엄지발가락 측면</strong>을 확인하세요.</li>
+</ol>
+<p>
+  이 테스트에서 발이 삐져나온다면 와이드(2E) 이상 모델로 교체를 고려하세요.
+  양쪽 모두 1~2mm 정도 여유가 있는 것이 이상적입니다.
 </p>
 
 <h2>구매 팁</h2>
@@ -343,6 +290,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>두꺼운 양말로 테스트:</strong> 실제 러닝할 때 신을 양말과 함께 신어보세요.</li>
   <li><strong>사이즈업 고려:</strong> 너비가 안 맞으면 반 사이즈 올려보는 것도 방법입니다.</li>
   <li><strong>끈 조절:</strong> 발등이 높다면 끈을 느슨하게 묶는 테크닉도 있습니다.</li>
+  <li><strong>양말 두께로 미세 조정:</strong> 약간 헐렁하다면 두꺼운 양말, 타이트하다면 얇은 양말로 핏을 조절할 수 있습니다.</li>
 </ol>
 
 <h2>발볼 넓은 러너가 피해야 할 실수</h2>
@@ -388,23 +336,37 @@ export const blogPosts: BlogPost[] = [
   발이 편해야 멀리, 오래 달릴 수 있으니까요!
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-01-28',
     category: 'review',
-    tags: ['발볼', '와이드', '한국인', '추천'],
-    readingTime: 7,
+    tags: ['발볼', '와이드', '한국인', '추천', '토박스', 'RunRepeat', '넓은발'],
+    readingTime: 12,
     featured: true,
   },
   {
     id: 'knee-pain',
     slug: 'knee-pain-running-shoes',
     title: '무릎 통증 러너를 위한 러닝화 선택법',
-    description: '무릎이 아프면 러닝을 포기해야 할까요? 올바른 신발 선택과 주법 개선으로 무릎 통증을 줄일 수 있습니다.',
+    description: '무릎이 아프면 러닝을 포기해야 할까요? 연구 기반 신발 선택과 주법 개선으로 무릎 통증을 줄일 수 있습니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80',
     content: `
+<figure class="my-8 -mx-4 sm:mx-0">
+  <img
+    src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1600&q=80"
+    alt="러닝 중 무릎 스트레칭 - 무릎 통증 관리 가이드"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    Photo by <a href="https://unsplash.com" class="underline hover:text-gray-700" target="_blank" rel="noopener">Unsplash</a>
+  </figcaption>
+</figure>
+
 <h2>무릎 통증, 왜 생길까?</h2>
 <p>
   러닝 중 무릎 통증은 가장 흔한 부상입니다.
-  연구에 따르면 러너의 약 40%가 무릎 관련 통증을 경험합니다.
+  슬개대퇴통증증후군(Runner's Knee, PFPS)은 전체 러닝 부상의 약 25%를 차지하는 가장 흔한 러닝 부상입니다
+  (출처: "A Contemporary Approach to Patellofemoral Pain in Runners", PMC7740062).
   하지만 무릎 통증이 있다고 러닝을 완전히 포기할 필요는 없습니다.
 </p>
 
@@ -435,6 +397,18 @@ export const blogPosts: BlogPost[] = [
   <li><strong>부적절한 신발:</strong> 본인 발에 안 맞는 신발</li>
 </ul>
 
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1200&q=80"
+    alt="러닝 중인 러너의 다리 - 쿠셔닝과 무릎 보호"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    올바른 러닝화 선택은 무릎 부담을 크게 줄여줍니다 · Photo by Unsplash
+  </figcaption>
+</figure>
+
 <h2>러닝화가 무릎에 미치는 영향</h2>
 
 <h3>쿠셔닝의 역할</h3>
@@ -449,17 +423,53 @@ export const blogPosts: BlogPost[] = [
   <strong>적당한 쿠셔닝</strong>이 핵심입니다.
 </p>
 
-<h3>드롭(Drop)과 무릎 부하</h3>
+<h3>쿠셔닝 효과: 연구 결과</h3>
+<p>
+  쿠셔닝이 부상 예방에 도움이 된다는 연구 결과가 있지만, <strong>개인차가 큽니다</strong>:
+</p>
+<ul>
+  <li><strong>2020년 RCT 연구 (848명 러너):</strong> 부드러운 신발이 <strong>가벼운 러너</strong>의 부상 위험을 줄였지만, 무거운 러너에게는 차이가 없었습니다.</li>
+  <li><strong>2025 European Journal of Sport Science:</strong> 충격 흡수율이 높은 신발일수록 부상 위험이 낮았습니다.</li>
+  <li><strong>2025 Nature Scientific Reports:</strong> 첨단 러닝화는 착지를 중족부/전족부로 이동시켜 부상 관련 생체역학적 요인을 감소시켰습니다.</li>
+</ul>
+<p>
+  <strong>핵심 교훈:</strong> 쿠셔닝은 도움이 되지만, 체중과 러닝 스타일에 따라 개인화되어야 합니다.
+  가벼운 러너라면 부드러운 쿠셔닝이 효과적이지만, 무거운 러너는 안정성이 더 중요할 수 있습니다.
+</p>
+
+<h3>맥시멀리스트 vs 트래디셔널: 스택 높이의 함정</h3>
+<p>
+  높은 스택 높이(맥시멀리스트 신발)는 쿠셔닝이 많아 보이지만, 실제로는 복잡합니다:
+</p>
+<ul>
+  <li><strong>충격이 사라지지 않고 이동합니다:</strong> 지면 충격은 줄지만, 무릎과 고관절에 가해지는 힘이 증가합니다.</li>
+  <li><strong>로딩률(loading rates)과 최대 충격력 증가:</strong> 전통적인 신발보다 관절에 더 높은 순간 부하가 걸릴 수 있습니다.</li>
+  <li><strong>지면 감각 감소:</strong> 두꺼운 폼은 발의 고유감각(proprioception)을 감소시켜 착지 조절 능력이 떨어집니다.</li>
+  <li><strong>회복 러닝에는 유용:</strong> 피로한 상태나 부상 회복 중에는 두꺼운 쿠셔닝이 도움이 될 수 있습니다.</li>
+</ul>
+<p>
+  (출처: Doctors of Running 생체역학 분석)
+</p>
+
+<h3>드롭(Drop)과 무릎 부하: 생체역학적 근거</h3>
 <p>
   힐-투-토 드롭은 무릎 부하에 영향을 줍니다:
 </p>
 <ul>
-  <li><strong>높은 드롭 (10mm+):</strong> 뒤꿈치 착지를 유도, 무릎에 수직 충격 증가 가능</li>
-  <li><strong>낮은 드롭 (4mm 이하):</strong> 중족부/전족부 착지 유도, 무릎 부하 감소하지만 아킬레스/종아리 부담 증가</li>
+  <li><strong>낮은 드롭 (4mm 이하):</strong> 무릎 내전(knee adduction)을 감소시켜 무릎과 고관절에 가해지는 힘을 줄입니다. 슬개대퇴 관절 부하를 약 30% 감소시킵니다.</li>
+  <li><strong>하지만:</strong> 낮은 드롭은 아킬레스건과 종아리 근육에 부담을 증가시킵니다.</li>
+  <li><strong>높은 드롭 (10mm+):</strong> 발목 모멘트를 최소화하여 아킬레스건을 보호하지만, 뒤꿈치 착지를 유도해 무릎에 수직 충격이 증가할 수 있습니다.</li>
 </ul>
 <p>
-  <strong>무릎 통증이 있다면:</strong> 8~10mm의 중간 드롭으로 시작하고,
-  점진적으로 낮은 드롭에 적응하는 것을 고려해보세요.
+  <strong>부상 이력에 따라 선택하세요:</strong>
+</p>
+<ul>
+  <li>무릎 통증이 있다면 → 낮은 드롭(4-6mm) 고려</li>
+  <li>아킬레스건 통증이 있다면 → 높은 드롭(10mm+) 유지</li>
+  <li>부상 이력이 없다면 → 8mm 중간 드롭으로 시작</li>
+</ul>
+<p>
+  <strong>주의:</strong> 드롭을 갑자기 바꾸지 마세요. 점진적으로 적응하는 것이 중요합니다.
 </p>
 
 <h3>안정성과 프로네이션</h3>
@@ -470,6 +480,18 @@ export const blogPosts: BlogPost[] = [
 </p>
 
 <h2>무릎 통증 러너를 위한 추천 신발</h2>
+
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?auto=format&fit=crop&w=1200&q=80"
+    alt="쿠셔닝이 좋은 러닝화 - 무릎 보호에 적합한 모델"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    충분한 쿠셔닝은 무릎 충격을 효과적으로 흡수합니다 · Photo by Unsplash
+  </figcaption>
+</figure>
 
 <h3>쿠셔닝 + 안정성: Asics Gel-Kayano</h3>
 <p>
@@ -507,12 +529,28 @@ export const blogPosts: BlogPost[] = [
   안정적인 플랫폼이 무릎에 가해지는 비틀림을 줄여줍니다.
 </p>
 
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?auto=format&fit=crop&w=1200&q=80"
+    alt="야외 러닝 - 다양한 지면에서 훈련하기"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    신발 선택과 함께 훈련 방법 개선도 중요합니다 · Photo by Unsplash
+  </figcaption>
+</figure>
+
 <h2>신발 외에 할 수 있는 것들</h2>
 
 <h3>1. 점진적 운동량 증가</h3>
 <p>
   "10% 규칙"을 따르세요. 주간 운동량을 10% 이상 늘리지 마세요.
   급격한 증가는 무릎 통증의 가장 큰 원인입니다.
+</p>
+<p>
+  <strong>예시:</strong> 이번 주 20km를 뛰었다면, 다음 주는 최대 22km까지만 늘리세요.
+  20km → 30km는 50% 증가로 부상 위험이 매우 높습니다!
 </p>
 
 <h3>2. 케이던스 높이기</h3>
@@ -534,6 +572,38 @@ export const blogPosts: BlogPost[] = [
   가능하면 다양한 표면에서 러닝하세요.
 </p>
 
+<h2>신발로 해결 vs 병원 가야 할 때</h2>
+<p>
+  무릎 통증이 생겼을 때, 신발을 바꾸면 해결될까요? 아니면 병원에 가야 할까요?
+  다음 가이드를 참고하세요:
+</p>
+
+<h3>즉시 병원에 가야 하는 경우</h3>
+<ul>
+  <li><strong>무릎이 붓거나 열이 나는 경우</strong></li>
+  <li><strong>무릎이 꺾이거나 힘이 빠지는 경우 (giving way)</strong></li>
+  <li><strong>체중을 실을 수 없을 정도로 아픈 경우</strong></li>
+</ul>
+
+<h3>2-3주 내에 병원 방문이 필요한 경우</h3>
+<ul>
+  <li>RICE 요법(휴식, 냉찜질, 압박, 거상)을 해도 통증이 개선되지 않는 경우</li>
+  <li>한 달 이상 통증이 지속되는 경우</li>
+  <li>한 달에 여러 번 진통제를 복용해야 하는 경우</li>
+</ul>
+
+<h3>신발 교체로 개선 가능한 경우</h3>
+<ul>
+  <li>신발이 500km 이상 닳아서 쿠셔닝이 소진된 경우</li>
+  <li>러닝 중에만 가벼운 불편감이 있는 경우 (일상생활 통증 없음)</li>
+  <li>구조적 손상 없이 오버유즈로 인한 통증인 경우</li>
+</ul>
+
+<p>
+  <strong>중요:</strong> 새 신발은 증상을 완화할 수 있지만, 근본 원인을 해결하지는 못합니다.
+  통증이 지속되면 물리치료사나 스포츠의학 전문의의 생체역학 평가를 받으세요.
+</p>
+
 <h2>주의사항</h2>
 <p>
   <strong>심한 통증이나 붓기가 있다면 전문의 상담을 먼저 받으세요.</strong>
@@ -549,19 +619,32 @@ export const blogPosts: BlogPost[] = [
   천천히, 꾸준히, 현명하게 달리세요!
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-01-25',
     category: 'tips',
-    tags: ['무릎', '부상', '안정화', '쿠셔닝'],
-    readingTime: 9,
+    tags: ['무릎', '부상', '안정화', '쿠셔닝', 'PFPS', '러너스니', '드롭'],
+    readingTime: 12,
     featured: true,
   },
   {
     id: 'carbon-plate-2025',
     slug: 'carbon-plate-shoes-comparison-2025',
     title: '2025 카본 플레이트 러닝화 완벽 비교',
-    description: '바포플라이부터 메타스피드까지, 카본화의 모든 것. 일반 러너에게 카본화가 필요한지도 솔직하게 분석합니다.',
+    description: '바포플라이부터 메타스피드까지, 2025 최신 연구 데이터로 분석한 카본화의 모든 것. 일반 러너에게 카본화가 필요한지도 솔직하게 분석합니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1600&q=80',
     content: `
+<figure class="my-8 -mx-4 sm:mx-0">
+  <img
+    src="https://images.unsplash.com/photo-1539185441755-769473a23570?auto=format&fit=crop&w=1600&q=80"
+    alt="러닝화 클로즈업 - 카본 플레이트 러닝화 비교 가이드"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    Photo by <a href="https://unsplash.com" class="underline hover:text-gray-700" target="_blank" rel="noopener">Unsplash</a>
+  </figcaption>
+</figure>
+
 <h2>카본 플레이트, 어떻게 작동하나?</h2>
 <p>
   2017년 나이키 바포플라이가 등장한 이후, 카본 플레이트 러닝화는 러닝 업계를 뒤흔들었습니다.
@@ -606,112 +689,293 @@ export const blogPosts: BlogPost[] = [
   <li><strong>폼과의 시너지:</strong> PEBA 등 초경량 고반발 폼과 함께 작동</li>
   <li><strong>로커 지오메트리:</strong> 자연스러운 발 굴림(roll-over) 유도</li>
 </ul>
+
+<h3>실제 효과는 어느 정도일까?</h3>
 <p>
-  연구에 따르면 카본화는 <strong>러닝 이코노미를 2~4% 향상</strong>시킬 수 있습니다.
-  마라톤에서 2%는 3~4분에 해당하며, 이는 엘리트에게 엄청난 차이입니다.
-  일반 러너에게도 10~15분 차이를 만들 수 있는 수치죠.
+  2023년 메타 분석에 따르면 카본화의 러닝 이코노미 향상 효과는 <strong>평균 2~4%</strong>이지만,
+  개인차가 매우 큽니다. 연구 결과를 정리하면:
 </p>
+<ul>
+  <li><strong>평균 효과:</strong> -1.1%부터 +9.7%까지, 평균 약 2~4% 향상</li>
+  <li><strong>플레이트 형태:</strong> 커브드 플레이트 3.45% vs 플랫 플레이트 0.19% (커브드가 압도적)</li>
+  <li><strong>속도 의존성:</strong> 14-18km/h에서 2.7-4.2% 향상, 12km/h에서는 1.4%에 불과</li>
+  <li><strong>개인차:</strong> 러너의 31%는 오히려 효율이 감소 (모든 러너에게 유리하지 않음)</li>
+</ul>
+<p>
+  마라톤에서 2%는 3~4분, 4%는 6~8분에 해당합니다.
+  하지만 <strong>빠른 페이스(킬로당 3:20~4:15, 14-18km/h)에서만 최대 효과</strong>를 볼 수 있고,
+  느린 페이스(킬로당 5:00 이상, 12km/h 이하)에서는 효과가 미미합니다.
+</p>
+
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1562183241-b937e95585b6?auto=format&fit=crop&w=1200&q=80"
+    alt="마라톤 레이스 현장 - 카본 플레이트 러닝화를 신은 러너들"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    이제 거의 모든 엘리트 러너가 카본화를 신고 레이스에 나섭니다 · Photo by Unsplash
+  </figcaption>
+</figure>
 
 <h2>2025 주요 카본화 비교</h2>
 
-<h3>Nike Vaporfly 3</h3>
-<table>
-  <tr><td>무게</td><td>188g (US M9)</td></tr>
-  <tr><td>스택</td><td>40mm (힐) / 32mm (전족부)</td></tr>
-  <tr><td>드롭</td><td>8mm</td></tr>
-  <tr><td>가격</td><td>289,000원</td></tr>
-</table>
 <p>
-  카본화의 원조이자 기준입니다. ZoomX 폼의 탁월한 에너지 리턴과
-  풀 카본 플레이트의 조합이 여전히 최고 수준입니다.
-  단점은 좁은 토박스와 그립력이 약한 아웃솔입니다.
+  에너지 리턴(Energy Return)은 가장 중요한 성능 지표입니다.
+  RunRepeat Lab Test 데이터 기준으로 주요 모델을 비교했습니다.
 </p>
 
-<h3>Nike Alphafly 3</h3>
-<table>
-  <tr><td>무게</td><td>215g (US M9)</td></tr>
-  <tr><td>스택</td><td>40mm (힐) / 40mm (전족부)</td></tr>
-  <tr><td>드롭</td><td>0mm (체감 4mm)</td></tr>
-  <tr><td>가격</td><td>349,000원</td></tr>
+<table class="w-full border-collapse">
+  <thead>
+    <tr class="bg-gray-100">
+      <th class="border p-2 text-left">모델</th>
+      <th class="border p-2">무게</th>
+      <th class="border p-2">스택 (힐/전족)</th>
+      <th class="border p-2">드롭</th>
+      <th class="border p-2">에너지 리턴 (힐/전족)</th>
+      <th class="border p-2">가격</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="border p-2"><strong>Nike Vaporfly 3</strong></td>
+      <td class="border p-2">184g</td>
+      <td class="border p-2">38-40mm / 30-32mm</td>
+      <td class="border p-2">8mm</td>
+      <td class="border p-2"><strong>78.1% / 74.5%</strong></td>
+      <td class="border p-2">289,000원</td>
+    </tr>
+    <tr>
+      <td class="border p-2"><strong>Nike Alphafly 3</strong></td>
+      <td class="border p-2">184g</td>
+      <td class="border p-2">40mm / 32mm</td>
+      <td class="border p-2">8mm</td>
+      <td class="border p-2"><strong>73.7% / 76.7%</strong></td>
+      <td class="border p-2">349,000원</td>
+    </tr>
+    <tr>
+      <td class="border p-2"><strong>Adidas Adios Pro 4</strong></td>
+      <td class="border p-2">200g</td>
+      <td class="border p-2">39mm / 33mm</td>
+      <td class="border p-2">6mm</td>
+      <td class="border p-2"><strong>80.4% / 80.3%</strong> (최고!)</td>
+      <td class="border p-2">299,000원</td>
+    </tr>
+    <tr>
+      <td class="border p-2"><strong>Asics Metaspeed Sky Paris</strong></td>
+      <td class="border p-2">183g</td>
+      <td class="border p-2">39mm / 34mm</td>
+      <td class="border p-2">5mm</td>
+      <td class="border p-2"><strong>78.5% / 78.2%</strong></td>
+      <td class="border p-2">269,000원</td>
+    </tr>
+    <tr>
+      <td class="border p-2"><strong>Asics Metaspeed Edge Paris</strong></td>
+      <td class="border p-2">185g</td>
+      <td class="border p-2">39.5mm / 34.5mm</td>
+      <td class="border p-2">5mm</td>
+      <td class="border p-2"><strong>-</strong> (커브드 플레이트)</td>
+      <td class="border p-2">269,000원</td>
+    </tr>
+    <tr>
+      <td class="border p-2"><strong>Saucony Endorphin Elite 2</strong></td>
+      <td class="border p-2">203g</td>
+      <td class="border p-2">40mm / 32mm</td>
+      <td class="border p-2">8mm</td>
+      <td class="border p-2"><strong>80.6% / 82.1%</strong> (전족 최고!)</td>
+      <td class="border p-2">299,000원</td>
+    </tr>
+    <tr class="bg-yellow-50">
+      <td class="border p-2"><strong>Hoka Cielo X1 2.0</strong></td>
+      <td class="border p-2">207g</td>
+      <td class="border p-2">46mm / 39mm</td>
+      <td class="border p-2">7mm</td>
+      <td class="border p-2"><strong>-</strong></td>
+      <td class="border p-2">-</td>
+    </tr>
+  </tbody>
 </table>
-<p>
-  바포플라이의 업그레이드 버전으로, Air Zoom 유닛까지 탑재했습니다.
-  더 많은 쿠셔닝과 에너지 리턴을 제공하지만, 적응이 필요합니다.
-  "로켓을 신은 느낌"이라는 평가가 많습니다.
+
+<p class="mt-4 text-sm text-gray-600">
+  ⚠️ <strong>Hoka Cielo X1 2.0</strong>는 46mm 스택으로 World Athletics 규정(40mm 제한)을 초과하여
+  <strong>공식 대회 착용 금지</strong> 신발입니다.
 </p>
 
-<h3>Adidas Adios Pro 3</h3>
-<table>
-  <tr><td>무게</td><td>215g (US M9)</td></tr>
-  <tr><td>스택</td><td>39.5mm (힐) / 32mm (전족부)</td></tr>
-  <tr><td>드롭</td><td>6.5mm</td></tr>
-  <tr><td>가격</td><td>279,000원</td></tr>
-</table>
+<h3>모델별 상세 분석</h3>
+
+<h4>Nike Vaporfly 3 - 카본화의 기준</h4>
+<p>
+  ZoomX 폼의 탁월한 에너지 리턴(78.1%)과 풀 카본 플레이트의 조합이 여전히 최고 수준입니다.
+  184g의 초경량이며, 28만원대로 가격도 합리적입니다.
+  단점은 좁은 토박스(발볼 좁음)와 그립력이 약한 아웃솔입니다.
+</p>
+
+<h4>Nike Alphafly 3 - 최대 쿠션, 최대 추진력</h4>
+<p>
+  바포플라이에 Air Zoom 유닛을 추가한 "맥시멀" 카본화입니다.
+  에너지 리턴은 바포플라이와 비슷하지만(73.7%/76.7%), 듀얼 에어 줌 유닛이 폭발적인 반발력을 제공합니다.
+  35만원으로 가장 비싸며, 적응 기간이 필요합니다. "로켓을 신은 느낌"이라는 평가가 많습니다.
+</p>
+
+<h4>Adidas Adios Pro 4 - 에너지 리턴 챔피언</h4>
 <p>
   Lightstrike Pro 폼과 Energy Rods(5개의 탄소 막대)가 특징입니다.
+  <strong>에너지 리턴 80.4%/80.3%로 테스트된 모델 중 최고 수준</strong>입니다.
   바포플라이보다 안정적이고 편안하다는 평가가 많습니다.
-  세계 기록 보유 신발이기도 합니다.
+  200g으로 약간 무겁지만, 내구성이 뛰어나며 세계 기록 보유 신발이기도 합니다.
 </p>
 
-<h3>Asics Metaspeed Sky Paris</h3>
-<table>
-  <tr><td>무게</td><td>185g (US M9)</td></tr>
-  <tr><td>스택</td><td>41.5mm (힐) / 36.5mm (전족부)</td></tr>
-  <tr><td>드롭</td><td>5mm</td></tr>
-  <tr><td>가격</td><td>299,000원</td></tr>
-</table>
+<h4>Asics Metaspeed Sky Paris - 스트라이드 러너의 선택</h4>
 <p>
   FF Turbo+ 폼과 풀 카본 플레이트 조합입니다.
-  스트라이드 러너(보폭이 긴 러너)에 최적화되어 있습니다.
-  토박스가 넉넉해 발볼 넓은 러너에게도 맞습니다.
+  에너지 리턴 78.5%/78.2%로 우수하며, 스트라이드 러너(보폭이 긴 러너)에 최적화되어 있습니다.
+  <strong>토박스가 넉넉해 발볼 넓은 한국 러너에게도 맞습니다.</strong>
+  183g으로 가장 가볍고, 26만원대로 가성비도 훌륭합니다.
 </p>
 
-<h3>Saucony Endorphin Elite</h3>
-<table>
-  <tr><td>무게</td><td>198g (US M9)</td></tr>
-  <tr><td>스택</td><td>40mm (힐) / 32mm (전족부)</td></tr>
-  <tr><td>드롭</td><td>8mm</td></tr>
-  <tr><td>가격</td><td>299,000원</td></tr>
-</table>
+<h4>Asics Metaspeed Edge Paris - 케이던스 러너의 선택</h4>
+<p>
+  Sky와 달리 커브드 플레이트를 사용하여 높은 케이던스(보폭 짧고 빠른 회전) 러너에게 최적화되었습니다.
+  연구에 따르면 커브드 플레이트는 플랫 플레이트보다 3.45% 더 효율적입니다.
+  스펙은 Sky와 유사하며 가격도 26만원대입니다.
+</p>
+
+<h4>Saucony Endorphin Elite 2 - 전족부 에너지 리턴 최강</h4>
 <p>
   PWRRUN PB 폼이 바운시하면서도 안정적입니다.
-  "처음 신는 카본화로 좋다"는 평가가 많습니다.
-  가격도 비교적 합리적입니다.
+  <strong>전족부 에너지 리턴 82.1%로 테스트된 모델 중 최고</strong>이며, 힐도 80.6%로 우수합니다.
+  "처음 신는 카본화로 좋다"는 평가가 많으며, 29만원으로 합리적인 가격입니다.
+  203g으로 약간 무겁지만, 안정성이 뛰어나 초보 카본화 러너에게 추천합니다.
+</p>
+
+<h4>Hoka Cielo X1 2.0 - 대회 착용 불가 (참고용)</h4>
+<p>
+  46mm 스택으로 극한의 쿠셔닝을 제공하지만, <strong>World Athletics 규정(40mm 제한) 위반으로
+  공식 대회에서 착용할 수 없습니다.</strong> 훈련용이나 비공인 레이스에서만 사용 가능합니다.
+</p>
+
+<figure class="my-8">
+  <img
+    src="https://images.unsplash.com/photo-1594882645126-14020914d58d?auto=format&fit=crop&w=1200&q=80"
+    alt="러닝화 밑창 - 카본 플레이트 구조"
+    class="w-full rounded-xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    카본화는 훈련용이 아닌 레이스 데이를 위한 도구입니다 · Photo by Unsplash
+  </figcaption>
+</figure>
+
+<h2>World Athletics 규정: 대회에서 신을 수 있는 신발</h2>
+<p>
+  2020년 이후 카본화가 급증하자, World Athletics(세계육상연맹)는 공정성을 위해 신발 규정을 강화했습니다.
+  <strong>공식 대회에 출전한다면 반드시 규정을 확인하세요.</strong>
+</p>
+
+<h3>2025년 기준 World Athletics 신발 규정</h3>
+<ul>
+  <li><strong>로드 레이스 (마라톤, 하프 등):</strong> 최대 스택 높이 40mm</li>
+  <li><strong>트랙 경기 (800m 이상):</strong> 최대 스택 높이 25mm</li>
+  <li><strong>플레이트 개수:</strong> 단단한(rigid) 플레이트 1개만 허용</li>
+  <li><strong>상업적 판매:</strong> 대회 4개월 전부터 일반 판매되어야 함</li>
+</ul>
+
+<h3>2025년 대회 착용 금지 신발</h3>
+<p>다음 신발들은 스택 높이 초과로 공식 대회에서 착용할 수 없습니다:</p>
+<ul>
+  <li><strong>Adidas Prime X2 Strung:</strong> 50mm 스택 (훈련용 전용)</li>
+  <li><strong>Asics Superblast:</strong> 45.5mm 스택 (카본화 아님, 훈련용)</li>
+  <li><strong>Hoka Cielo X1 2.0:</strong> 46mm 스택 (규정 위반)</li>
+</ul>
+
+<p>
+  국내 마라톤 대회 대부분은 World Athletics 규정을 따르므로,
+  공식 기록을 목표로 한다면 <strong>40mm 이하 스택의 신발</strong>을 선택하세요.
 </p>
 
 <h2>훈련용 vs 레이스용</h2>
 <p>
   <strong>카본화는 레이스용입니다.</strong> 훈련에서 매일 신으면 안 됩니다.
 </p>
+
+<h3>카본화의 내구성: 생각보다 오래 간다?</h3>
+<p>
+  과거에는 "카본화는 200-300km만 버틴다"는 말이 많았지만, 2025년 연구 결과는 다릅니다:
+</p>
 <ul>
-  <li><strong>내구성 문제:</strong> 카본화는 200~300km 정도에서 성능이 떨어집니다</li>
+  <li><strong>실제 수명:</strong> 240-480km (러너 체중과 러닝 스타일에 따라 차이)</li>
+  <li><strong>피크 성능:</strong> 처음 160km까지가 최고 성능 구간</li>
+  <li><strong>400km 테스트:</strong> 400km를 달린 Alphafly도 새 신발과 비슷한 성능 유지 (2025년 연구)</li>
+  <li><strong>PEBA 폼 특성:</strong> 사용하지 않아도 시간이 지나면 경화됨 (1-2년 후 성능 저하)</li>
+</ul>
+
+<p><strong>카본화를 레이스용으로만 써야 하는 이유:</strong></p>
+<ul>
   <li><strong>가격 문제:</strong> 25~35만원짜리 신발을 훈련에 쓰면 비용 부담이 큽니다</li>
   <li><strong>적응 문제:</strong> 매일 신으면 카본화 없이는 달리기 어려워질 수 있습니다</li>
   <li><strong>부상 위험:</strong> 두꺼운 스택과 불안정한 플랫폼은 발목 부상 위험을 높입니다</li>
+  <li><strong>훈련 효과:</strong> 일반 러닝화로 훈련해야 근력과 안정성이 발달합니다</li>
 </ul>
+
+<p><strong>카본화 사용 전략 (권장):</strong></p>
+<ul>
+  <li>레이스 당일 + 레이스 전 마지막 스피드 워크아웃 2-3회</li>
+  <li>총 사용: 마라톤 1회당 약 60-100km (적응 훈련 포함)</li>
+  <li>이렇게 하면 한 켤레로 3-4번의 마라톤 레이스 가능</li>
+</ul>
+
 <p>
   훈련용으로는 <strong>Saucony Endorphin Speed</strong>나 <strong>New Balance FuelCell Rebel</strong>처럼
-  카본 느낌의 플레이트화를 추천합니다.
+  카본 느낌의 나일론/TPU 플레이트화를 추천합니다. 가격은 절반(15-18만원)이고 내구성은 2배(600km+)입니다.
 </p>
 
 <h2>일반 러너에게 카본화가 필요한가?</h2>
 <p>솔직히 말씀드리면, <strong>대부분의 일반 러너에게 카본화는 필수가 아닙니다.</strong></p>
-<p>카본화가 유용한 경우:</p>
+
+<h3>페이스별 카본화 효과 (연구 기반)</h3>
+<p>카본화의 효과는 페이스에 따라 극명하게 달라집니다:</p>
+<ul>
+  <li><strong>14-18 km/h (3:20-4:15/km):</strong> 2.7-4.2% 향상 → <strong>큰 효과</strong></li>
+  <li><strong>12 km/h (5:00/km):</strong> 1.4% 향상 → <strong>제한적 효과</strong></li>
+  <li><strong>12 km/h 미만 (5:00/km 이상):</strong> 거의 효과 없음, 불편할 수 있음</li>
+</ul>
+
+<p><strong>카본화가 유용한 러너:</strong></p>
 <ul>
   <li>풀/하프 마라톤에서 기록 단축이 목표인 경우</li>
   <li>이미 충분한 훈련 베이스가 있는 경우 (주 30km 이상)</li>
-  <li>페이스가 어느 정도 빠른 경우 (킬로당 5분 이내)</li>
+  <li><strong>페이스가 킬로당 4:15 이내</strong> (특히 3:20-4:15 구간에서 최대 효과)</li>
+  <li>서브3, 서브3:30, 서브4 같은 목표 시간이 명확한 경우</li>
 </ul>
-<p>카본화가 불필요한 경우:</p>
+
+<p><strong>카본화가 불필요하거나 위험한 러너:</strong></p>
 <ul>
-  <li>러닝을 막 시작한 초보 러너</li>
+  <li>러닝을 막 시작한 초보 러너 (부상 위험)</li>
   <li>건강/취미 목적의 조깅</li>
   <li>10km 이하 단거리 러닝</li>
-  <li>느린 페이스 (킬로당 6분 이상)</li>
+  <li><strong>페이스가 킬로당 5:00 이상</strong> (효과 미미, 불편함만 증가)</li>
 </ul>
+
+<h3>초보 러너를 위한 경고: 카본화는 부상 위험이 있다</h3>
 <p>
-  카본화의 효과는 페이스가 빠를수록 두드러집니다.
-  킬로당 6분 이상의 페이스에서는 효과가 미미하거나 오히려 불편할 수 있습니다.
+  카본화는 초보 러너에게 다음과 같은 부상 위험을 증가시킵니다:
+</p>
+<ul>
+  <li><strong>중족골 스트레스 골절:</strong> 카본 플레이트가 발 앞부분에 과도한 압력을 가함</li>
+  <li><strong>족저근막염:</strong> 높은 스택과 불안정한 플랫폼이 발바닥에 부담</li>
+  <li><strong>발목 염좌:</strong> 두꺼운 스택이 불안정하여 넘어지기 쉬움, 특히 과회내(overpronation) 러너</li>
+  <li><strong>느린 페이스에서 불편함:</strong> 카본화는 빠른 페이스에 최적화되어 조깅 속도에서는 어색함</li>
+</ul>
+
+<p>
+  <strong>연구 결과:</strong> 초보 러너는 숙련 러너와 다른 생체역학적 반응을 보입니다.
+  카본화가 주는 효율 향상보다 불안정성으로 인한 에너지 손실이 더 클 수 있습니다.
+</p>
+
+<p>
+  <strong>권장:</strong> 최소 6개월 이상 꾸준히 달리고, 주 30km 이상 소화할 수 있으며,
+  킬로당 5분 이내 페이스를 유지할 수 있을 때 카본화를 고려하세요.
 </p>
 
 <h2>카본화 적응 기간</h2>
@@ -779,11 +1043,11 @@ export const blogPosts: BlogPost[] = [
   당신이 흘린 땀에 날개를 달아주는 신발입니다.
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-01-20',
     category: 'review',
-    tags: ['카본', '레이싱', '바포플라이', '비교'],
-    readingTime: 10,
+    tags: ['카본', '레이싱', '바포플라이', '비교', '메타스피드', '아디오스프로', '에너지리턴'],
+    readingTime: 13,
     featured: false,
   },
   {
@@ -1084,7 +1348,7 @@ export const blogPosts: BlogPost[] = [
   <li>British Journal of Sports Medicine (2019). The effect of shoe age on running biomechanics. 53(7), 389-395.</li>
 </ul>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-02-04',
     category: 'guide',
     tags: ['러닝화', '수명', '교체주기', '관리법', '로테이션', '슈퍼슈즈', '부상예방', '500km', 'PEBA', '과학'],
@@ -1377,7 +1641,7 @@ export const blogPosts: BlogPost[] = [
   올바른 보급 전략으로 30km 벽을 넘어 완주의 기쁨을 누리시길 응원합니다!
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-02-02',
     category: 'guide',
     tags: ['에너지젤', '마라톤', '탄수화물', '하이드로젤', 'Maurten'],
@@ -1597,7 +1861,7 @@ export const blogPosts: BlogPost[] = [
   <strong>좋은 페이스, 강한 멘탈로 개인 최고 기록을 세우시길 응원합니다!</strong>
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2025-02-04',
     category: 'guide',
     tags: ['마라톤', '페이스', '멘탈', '하프마라톤', '5km', '10km', '사점'],
@@ -1619,7 +1883,7 @@ export const blogPosts: BlogPost[] = [
     decoding="async"
   />
   <figcaption class="text-sm text-secondary mt-2">
-    AI 생성 이미지 (Gemini) | 2026 러닝화 3대 트렌드를 한눈에
+    2026 러닝화 3대 트렌드: 슈퍼 트레이너, 초임계 폼, 규격 외 스택
   </figcaption>
 </figure>
 
@@ -1641,7 +1905,7 @@ export const blogPosts: BlogPost[] = [
     decoding="async"
   />
   <figcaption class="text-sm text-secondary mt-2">
-    AI 생성 이미지 (Gemini) | 카본 레이싱화 → 슈퍼 트레이너로의 진화
+    카본 레이싱화(2024)에서 슈퍼 트레이너(2026)로의 기술 이전 흐름
   </figcaption>
 </figure>
 
@@ -1676,7 +1940,7 @@ export const blogPosts: BlogPost[] = [
     decoding="async"
   />
   <figcaption class="text-sm text-secondary mt-2">
-    AI 생성 이미지 (Gemini) | EVA vs 초임계 폼의 미세구조 비교
+    전통 EVA 폼(좌)과 초임계 질소 폼(우)의 미세구조 차이
   </figcaption>
 </figure>
 
@@ -1744,7 +2008,7 @@ export const blogPosts: BlogPost[] = [
     decoding="async"
   />
   <figcaption class="text-sm text-secondary mt-2">
-    AI 생성 이미지 (Gemini) | 40mm 규정을 초과하는 '규격 외' 러닝화들
+    World Athletics 40mm 규정(점선) 대비 맥시멀리스트 트레이너의 스택 높이 비교
   </figcaption>
 </figure>
 
@@ -1841,7 +2105,7 @@ export const blogPosts: BlogPost[] = [
   <strong>어떤 선택이든, 2026년의 기술이 당신을 뒷받침해 줄 것입니다.</strong>
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2026-02-04',
     category: 'news',
     tags: ['러닝화', '트렌드', '2026', 'EVA', '슈퍼트레이너', '초임계폼', 'PEBA', '한국러닝'],
@@ -2061,7 +2325,7 @@ export const blogPosts: BlogPost[] = [
   </ul>
 </div>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2026-02-04',
     category: 'guide',
     tags: ['내전', 'Pronation', '과내전', '안정화', '러닝화선택', '부상예방', '평발', '발분석', '생체역학'],
@@ -2073,7 +2337,20 @@ export const blogPosts: BlogPost[] = [
     slug: 'first-running-shoe-guide-2026',
     title: '2026 초보 러너를 위한 인생 첫 러닝화 추천 TOP 8',
     description: '예산과 발 타입에 맞춰 실패 없는 첫 러닝화를 선택하세요. 뉴트럴, 안정화, 슈퍼 트레이너까지 용도별 베스트 모델 완벽 정리.',
+    thumbnail: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80',
     content: `
+<figure class="my-8 -mx-4 sm:mx-0">
+  <img
+    src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=1600&q=80"
+    alt="러닝화 클로즈업 - 2026 초보 러너를 위한 첫 러닝화 가이드"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    Photo by <a href="https://unsplash.com" class="underline hover:text-gray-700" target="_blank" rel="noopener">Unsplash</a>
+  </figcaption>
+</figure>
+
 <p>
   러닝 입문을 결심했다면 가장 먼저 마주하는 난관이 바로 <strong>"어떤 신발을 사야 하는가?"</strong>입니다.
   2026년 현재, 기술의 상향 평준화로 '나쁜 신발'은 없지만 <strong>'나에게 안 맞는 신발'</strong>은 여전히 존재합니다.
@@ -2125,7 +2402,7 @@ export const blogPosts: BlogPost[] = [
 
 <figure class="my-8">
   <img
-    src="/images/shoes/newbalance/1080v15/1.webp"
+    src="/images/shoes/newbalance/1080v14/side.webp"
     alt="뉴발란스 1080 v15 측면"
     class="w-full max-w-md mx-auto rounded-xl border border-border"
     loading="lazy"
@@ -2165,7 +2442,7 @@ export const blogPosts: BlogPost[] = [
 
 <figure class="my-8">
   <img
-    src="/images/shoes/brooks/ghost17/1.webp"
+    src="/images/shoes/brooks/ghost17/side.webp"
     alt="브룩스 고스트 17"
     class="w-full max-w-md mx-auto rounded-xl border border-border"
     loading="lazy"
@@ -2214,7 +2491,7 @@ export const blogPosts: BlogPost[] = [
 
 <figure class="my-8">
   <img
-    src="/images/shoes/brooks/adrenalinegts25/1.webp"
+    src="/images/shoes/brooks/adrenalinegts25/side.webp"
     alt="브룩스 아드레날린 GTS 25"
     class="w-full max-w-md mx-auto rounded-xl border border-border"
     loading="lazy"
@@ -2263,7 +2540,7 @@ export const blogPosts: BlogPost[] = [
 
 <figure class="my-8">
   <img
-    src="/images/shoes/puma/velocitynitro4/1.webp"
+    src="/images/shoes/puma/velocitynitro4/side.webp"
     alt="푸마 벨로시티 나이트로 4"
     class="w-full max-w-md mx-auto rounded-xl border border-border"
     loading="lazy"
@@ -2308,11 +2585,231 @@ export const blogPosts: BlogPost[] = [
   위 가이드를 참고해 자신에게 맞는 첫 파트너를 찾아보세요!
 </p>
     `,
-    author: '러닝의 모든것',
+    author: '산초 에디터',
     publishedAt: '2026-02-04',
     category: 'guide',
     tags: ['초보러너', '첫러닝화', '입문화', '뉴트럴', '안정화', '2026추천', '러닝화선택'],
     readingTime: 7,
+    featured: true,
+  },
+  {
+    id: 'seoul-running-guide-2026',
+    slug: 'seoul-running-course-shower-guide-2026',
+    title: '2026 서울 러닝 가이드: 남산 무료 샤워장 꿀팁부터 10대 핵심 코스까지',
+    description: '남산 북측순환로 상세 분석, 중부공원여가센터 무료 샤워장, 서울 베스트 러닝 코스 10곳 총정리. 서울 도심 러닝의 모든 것.',
+    content: `
+<figure class="my-10">
+  <img
+    src="https://flexible.img.hani.co.kr/flexible/normal/816/489/imgdb/child/2025/0706/53_17517602257869_20250702503848.jpg"
+    alt="서울 도심을 달리는 러너들"
+    class="w-full rounded-xl border border-border"
+    loading="eager"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지 출처: <a href="https://www.hani.co.kr" target="_blank" rel="noopener noreferrer">한겨레</a>
+  </figcaption>
+</figure>
+
+<h2>서울, 거대한 러닝 트랙이 되다</h2>
+<p>
+  서울의 러닝 인구가 폭발적으로 늘어나며 도심은 거대한 러닝 트랙으로 변모했습니다.
+  특히 남산은 단순한 산책로를 넘어 체계적인 훈련과 힐링이 공존하는 <strong>러너들의 메카</strong>로 자리 잡았죠.
+  오늘 포스팅에서는 <strong>남산의 숨겨진 무료 샤워장 정보</strong>와 서울의 <strong>베스트 러닝 코스 10곳</strong>을 총정리해 드립니다.
+</p>
+
+<h2>러너의 마지막 고민 해결: 무료 샤워장 &amp; 짐 보관</h2>
+<p>
+  땀에 젖은 채 지하철을 타는 민망함은 이제 끝입니다. 남산 러너들을 위한 오아시스 같은 공간을 소개합니다.
+</p>
+
+<h3>[강력 추천] 중부공원여가센터 무료 샤워장</h3>
+<ul>
+  <li><strong>위치:</strong> 서울시 중구 삼일대로 231 (남산 예장공원 인근)</li>
+  <li><strong>특징:</strong> 남산 러닝 후 <strong>무료로 샤워</strong>를 할 수 있는 가장 매력적인 거점입니다.</li>
+  <li><strong>짐 보관:</strong> 샤워장 내 <strong>물품 보관함</strong>이 마련되어 있어, 러닝 복장으로 갈아입은 뒤 소지품을 안전하게 맡기고 가벼운 몸으로 남산을 달릴 수 있습니다.</li>
+  <li><strong>동선 팁:</strong> 충무로역이나 명동역에서 접근하기 좋으며, 샤워 후 바로 인근 카페나 식당으로 이동하기에 최적의 위치입니다.</li>
+</ul>
+
+<h3>지하철역 기반 러너지원공간 (2025.10 신설)</h3>
+<ul>
+  <li><strong>회현역 (4호선):</strong> 남산 코스의 시작점으로, <strong>탈의실·물품보관함·파우더룸</strong>을 갖춘 <strong>러너지원공간(Runner's Base)</strong>이 운영 중입니다. (샤워티슈 자판기 비치)</li>
+  <li><strong>여의나루역 (5호선):</strong> 여의도 안내센터 1층 <strong>무료 개방형 샤워장</strong> (06:30~22:00, 개인 세면도구 지참 필수).</li>
+  <li><strong>광화문역 &amp; 월드컵경기장역:</strong> 정비와 샤워가 가능한 베이스캠프 및 <strong>러닝용품 자동판매기</strong> (양말, 파스 등 구매 가능).</li>
+</ul>
+
+<h2>남산 집중 분석: 북측순환로 vs 순환로</h2>
+<p>
+  남산은 목적에 따라 크게 두 가지 코스로 나뉩니다. 훈련 강도와 선호에 따라 골라보세요.
+</p>
+
+<figure class="my-10">
+  <img
+    src="https://i.ytimg.com/vi/CMjnA1hUHoc/maxresdefault.jpg"
+    alt="남산 북측순환로 러닝 코스"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    남산 북측순환로 - 보행자 전용 도로로 안전한 러닝이 가능합니다
+  </figcaption>
+</figure>
+
+<h3>남산 북측순환로 (훈련 &amp; 무릎 보호)</h3>
+<ul>
+  <li><strong>거리:</strong> 왕복 약 6.6km (편도 3.3km)</li>
+  <li><strong>특징:</strong> <strong>보행자 전용 도로</strong>로 차량과 자전거가 없어 안전합니다. <strong>포장 상태가 양호</strong>하여 무릎 충격이 적습니다.</li>
+  <li><strong>난이도:</strong> 중 (적당한 업힐 구간이 있어 심폐지구력과 하체 근력 훈련에 인기).</li>
+</ul>
+
+<h3>남산 순환로 (LSD &amp; 조망)</h3>
+<ul>
+  <li><strong>특징:</strong> 남산 전체를 크게 도는 코스로, <strong>신호등이 없어</strong> 장거리 지속주(LSD) 훈련에 최적입니다.</li>
+  <li><strong>뷰 포인트:</strong> 남산서울타워와 서울 시내 전경을 한눈에 담을 수 있어 관광 러닝의 재미도 쏠쏠합니다.</li>
+</ul>
+
+<figure class="my-10">
+  <img
+    src="https://storage.heypop.kr/assets/2025/09/11001137/20250910_151122-%EC%8D%B8%EB%84%A4%EC%9D%BC-scaled.jpg"
+    alt="한강 러닝 풍경"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지 출처: <a href="https://heypop.kr" target="_blank" rel="noopener noreferrer">헤이팝</a>
+  </figcaption>
+</figure>
+
+<h2>서울 10대 핵심 러닝 코스 분석</h2>
+<p>
+  지형적 특성과 인프라를 고려하여 선정된 서울의 대표 러닝 코스입니다.
+</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>순위</th>
+      <th>코스 명칭</th>
+      <th>거리</th>
+      <th>특징 및 지면 상태</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1</strong></td>
+      <td>남산 북측순환로</td>
+      <td>왕복 6.6km</td>
+      <td><strong>포장 양호</strong>, 차량 통제, 경사도 훈련 최적</td>
+    </tr>
+    <tr>
+      <td><strong>2</strong></td>
+      <td>반포-잠수교</td>
+      <td>5.5km</td>
+      <td>세빛섬 야경과 무지개 분수를 즐기는 <strong>야경 성지</strong></td>
+    </tr>
+    <tr>
+      <td><strong>3</strong></td>
+      <td>올림픽공원 (토성길)</td>
+      <td>2.2km</td>
+      <td>능선을 따르는 업힐 <strong>깔딱고개</strong>로 강도 높은 훈련 가능</td>
+    </tr>
+    <tr>
+      <td><strong>4</strong></td>
+      <td>석촌호수</td>
+      <td>2.5km</td>
+      <td><strong>100m 간격 거리 표기</strong>로 정밀 페이스 조절 가능</td>
+    </tr>
+    <tr>
+      <td><strong>5</strong></td>
+      <td>여의도공원 루프</td>
+      <td>2.5km</td>
+      <td>빌딩 숲 사이 평지 직선 구간으로 <strong>인터벌 훈련</strong> 용이</td>
+    </tr>
+    <tr>
+      <td><strong>6</strong></td>
+      <td>월드컵공원 (하늘공원)</td>
+      <td>6.0km</td>
+      <td><strong>291개 하늘계단</strong>과 억새밭 조망의 생태 복원 코스</td>
+    </tr>
+    <tr>
+      <td><strong>7</strong></td>
+      <td>서울숲 내부</td>
+      <td>3.0km</td>
+      <td>메타세콰이어 길과 거울연못을 지나는 <strong>힐링 코스</strong></td>
+    </tr>
+    <tr>
+      <td><strong>8</strong></td>
+      <td>청계천로</td>
+      <td>8.1km</td>
+      <td>전 구간 평지, 도심 어디서든 진출입 쉬운 접근성 최고 (왕복 시 16km)</td>
+    </tr>
+    <tr>
+      <td><strong>9</strong></td>
+      <td>경복궁 돌담길</td>
+      <td>2.6km</td>
+      <td>차도가 없어 안전하며 역사적 정취를 느끼는 <strong>시티런</strong></td>
+    </tr>
+    <tr>
+      <td><strong>10</strong></td>
+      <td>노들섬 둘레길</td>
+      <td>1.5km</td>
+      <td>한강 중앙 고립미, 500원 코인 라커 이용 가능</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>함께 달리고 싶다면? 7979 서울 러닝크루</h2>
+
+<figure class="my-10">
+  <img
+    src="https://hangang.seoul.go.kr/www/file/editorImage.do?fileNm=2ce1ad8562724b418bcd2d0e4d06f892.jpg&day=202404"
+    alt="7979 서울 러닝크루 단체 러닝"
+    class="w-full rounded-xl border border-border"
+    loading="lazy"
+    decoding="async"
+  />
+  <figcaption class="text-sm text-secondary mt-2">
+    이미지 출처: <a href="https://hangang.seoul.go.kr" target="_blank" rel="noopener noreferrer">한강사업본부</a>
+  </figcaption>
+</figure>
+
+<p>
+  의지가 부족하거나 제대로 된 주법을 배우고 싶다면 매주 목요일 저녁에 열리는 공공 프로그램을 추천합니다.
+</p>
+<ul>
+  <li><strong>운영 기간:</strong> 매년 4월 ~ 10월 말</li>
+  <li><strong>시간:</strong> 매주 목요일 오후 7시 ~ 9시</li>
+  <li><strong>참여 장소:</strong> 청계광장(초급), 반포한강공원(중급), 여의도공원(상급) 분리 운영</li>
+  <li><strong>특별 혜택:</strong> 육상 전문가 코치 지도, 완주 시 생수/에너지바 제공</li>
+</ul>
+
+<h2>코스별 추천 러닝화</h2>
+<p>
+  코스 특성에 맞는 러닝화를 선택하면 훈련 효과가 배가됩니다.
+</p>
+<ul>
+  <li><strong>남산 업힐 (북측순환로):</strong> 안정성과 쿠셔닝이 좋은 <a href="/shoes/asics-gel-kayano-31">아식스 카야노 31</a> 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></li>
+  <li><strong>한강 평지 (반포, 여의도):</strong> 가벼운 데일리화 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> 또는 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 v14</a></li>
+  <li><strong>인터벌 훈련 (석촌호수, 올림픽공원):</strong> 반응성 높은 <a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a> 또는 <a href="/shoes/adidas-adizero-boston-12">아디다스 보스턴 12</a></li>
+  <li><strong>장거리 LSD (청계천, 남산순환):</strong> 최고 쿠셔닝의 <a href="/shoes/hoka-bondi-9">호카 본디 9</a> 또는 <a href="/shoes/asics-gel-nimbus-27">아식스 님버스 27</a></li>
+</ul>
+
+<h2>마치며</h2>
+<p>
+  서울의 길을 달린다는 것은 이 도시의 역사와 자연, 활기찬 에너지를 온몸으로 흡수하는 과정입니다.
+  오늘 소개한 <strong>남산 무료 샤워장</strong>과 <strong>10대 코스</strong> 정보를 활용해 더욱 쾌적하고 즐거운 러닝 라이프를 시작해 보세요!
+</p>
+<p>
+  더 궁금한 코스 정보나 각 코스에 맞는 러닝화 추천이 필요하시면 <a href="/recommend">맞춤 추천</a> 페이지를 활용해 보세요.
+</p>
+    `,
+    author: '산초 에디터',
+    publishedAt: '2026-02-08',
+    category: 'guide',
+    tags: ['서울러닝', '남산러닝', '러닝코스', '무료샤워장', '북측순환로', '한강러닝', '러닝크루', '시티런'],
+    readingTime: 10,
     featured: true,
   },
 ];

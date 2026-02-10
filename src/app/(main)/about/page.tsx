@@ -163,11 +163,45 @@ export default function AboutPage() {
           </div>
         </section>
 
+        {/* 에디터 소개 */}
+        <section className="section-card p-6">
+          <div className="flex items-start gap-4">
+            <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900">
+              <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+            </div>
+            <div>
+              <h2 className="text-xl font-semibold text-primary mb-3">에디터 소개</h2>
+              <div className="flex items-start gap-4 mb-4">
+                <div className="w-14 h-14 rounded-full bg-stone-200 flex items-center justify-center text-lg font-bold text-stone-500 shrink-0">
+                  산
+                </div>
+                <div>
+                  <p className="font-semibold text-primary text-lg">산초 에디터</p>
+                  <p className="text-sm mt-1">러닝화 데이터 분석 에디터 · 하프마라톤/10K 완주</p>
+                </div>
+              </div>
+              <p className="leading-relaxed mb-3">
+                2년차 러너로, 직접 러닝화를 찾으면서 &quot;한국어로 된 제대로 된 러닝화 정보가 없다&quot;는
+                답답함에서 이 사이트를 시작했습니다.
+              </p>
+              <p className="leading-relaxed mb-3">
+                AI를 활용한 학술 논문 분석(PubMed, Nature Scientific Reports 등)과 RunRepeat 700개 이상
+                러닝화의 랩 테스트 데이터, Doctors of Running의 생체역학 리뷰를 교차 검증해
+                데이터 기반의 객관적인 분석을 제공합니다.
+              </p>
+              <p className="leading-relaxed">
+                모든 신발 리뷰에는 실측 수치(토박스 너비, 에너지 리턴율, 충격흡수 SA값 등)를 포함하며,
+                &quot;이 신발 발볼 넓은 사람도 괜찮나요?&quot;에 숫자로 답하는 것이 목표입니다.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* 독립성 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
             <div className="p-3 rounded-xl bg-teal-100 dark:bg-teal-900">
-              <Users className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+              <Shield className="w-6 h-6 text-teal-600 dark:text-teal-400" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">독립성과 투명성</h2>
@@ -191,13 +225,13 @@ export default function AboutPage() {
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">문의</h2>
               <p className="leading-relaxed mb-2">
-                사이트 관련 문의, 데이터 수정 요청, 협업 제안은 아래 이메일로 연락 주세요.
+                사이트 관련 문의, 데이터 수정 요청, 협업 제안은 아래로 연락 주세요.
               </p>
               <a
-                href="mailto:sanchokwon216@gmail.com"
+                href="/contact"
                 className="text-accent hover:underline font-medium"
               >
-                sanchokwon216@gmail.com
+                문의 페이지 바로가기 →
               </a>
             </div>
           </div>
@@ -205,7 +239,7 @@ export default function AboutPage() {
 
         {/* 최종 수정일 */}
         <p className="text-sm text-tertiary pt-4">
-          최종 수정일: 2026년 2월 3일
+          최종 수정일: 2026년 2월 10일
         </p>
       </div>
     </div>

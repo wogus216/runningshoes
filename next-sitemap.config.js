@@ -5,7 +5,7 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ["/api/*", "/_next/*"],
+  exclude: ["/api/*", "/_next/*", "/icon.svg"],
   robotsTxtOptions: {
     policies: [
       {

@@ -10,3 +10,6 @@ export const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-default.png`;
 
 // AdSense 설정
 export const ADSENSE_CLIENT_ID = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || '';
+
+// GA4 설정
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';

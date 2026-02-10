@@ -30,7 +30,7 @@ export function Footer() {
               <h4 className="font-medium text-sm mb-3 text-primary">가이드</h4>
               <ul className="space-y-2 text-sm text-secondary">
                 <li><Link href="/blog" className="hover:text-primary transition">전체 보기</Link></li>
-                <li><Link href="/blog/beginner-running-shoe-guide-2025" className="hover:text-primary transition">초보자 가이드</Link></li>
+                <li><Link href="/blog/first-running-shoe-guide-2026" className="hover:text-primary transition">초보자 가이드</Link></li>
                 <li><Link href="/blog/wide-feet-running-shoes-korea" className="hover:text-primary transition">발볼 넓은 분</Link></li>
               </ul>
             </div>
@@ -40,10 +40,7 @@ export function Footer() {
                 <li><Link href="/about" className="hover:text-primary transition">사이트 소개</Link></li>
                 <li><Link href="/faq" className="hover:text-primary transition">자주 묻는 질문</Link></li>
                 <li><Link href="/privacy" className="hover:text-primary transition">개인정보처리방침</Link></li>
-                <li>
-                  <span className="block">협찬 및 문의</span>
-                  <a href="mailto:sanchokwon216@gmail.com" className="hover:text-primary transition">sanchokwon216@gmail.com</a>
-                </li>
+                <li><Link href="/contact" className="hover:text-primary transition">문의하기</Link></li>
               </ul>
             </div>
           </div>

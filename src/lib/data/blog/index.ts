@@ -46,6 +46,21 @@ export function getPostsByTag(tag: string): BlogPost[] {
 }
 
 /**
+ * HTML content에서 첫 번째 img 태그의 src 추출
+ */
+export function extractThumbnail(content: string): string | null {
+  const match = content.match(/<img[^>]+src=["']([^"']+)["']/);
+  return match ? match[1] : null;
+}
+
+/**
+ * 포스트의 썸네일 가져오기 (명시적 thumbnail > content 첫 이미지)
+ */
+export function getPostThumbnail(post: BlogPost): string | null {
+  return post.thumbnail || extractThumbnail(post.content);
+}
+
+/**
  * 관련 포스트 가져오기 (같은 카테고리 또는 태그 공유)
  */
 export function getRelatedPosts(slug: string, limit: number = 3): BlogPost[] {

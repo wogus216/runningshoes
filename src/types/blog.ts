@@ -13,6 +13,7 @@ export interface BlogPost {
   tags: string[];
   readingTime: number;
   featured?: boolean;
+  thumbnail?: string;
 }
 
 export const categoryLabels: Record<BlogCategory, string> = {
