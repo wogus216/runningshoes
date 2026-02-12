@@ -6,6 +6,20 @@ const nextConfig = {
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [48, 96, 128, 256, 384],
   },
+  async redirects() {
+    return [
+      {
+        source: '/blog/beginner-running-shoe-guide-2025',
+        destination: '/blog/first-running-shoe-guide-2026',
+        permanent: true,
+      },
+      {
+        source: '/blog/running-shoe-lifespan-care',
+        destination: '/blog/running-shoe-lifespan-replacement-guide',
+        permanent: true,
+      },
+    ];
+  },
   async headers() {
     return [
       {

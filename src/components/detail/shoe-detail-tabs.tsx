@@ -13,7 +13,6 @@ import { SimilarShoes } from '@/components/detail/similar-shoes';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
-import { DetailSpecAd } from '@/components/ads/ad-unit';
 
 // Recharts가 무거워서 dynamic import로 분리 (에러 처리 포함)
 const SpecRadarChart = dynamic(
@@ -95,8 +94,6 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               />
             </div>
           )}
-          {/* 스펙 아래 광고 */}
-          <DetailSpecAd />
         </div>
 
         {/* 생체역학 탭 */}

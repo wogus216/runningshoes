@@ -7,7 +7,6 @@ import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/re
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
-import { RecommendAd } from '@/components/ads/ad-unit';
 
 export default function RecommendPage() {
   const allShoes = useMemo(() => getShoes(), []);
@@ -117,8 +116,6 @@ export default function RecommendPage() {
               <InjuryAnalysis injuries={profile.injuries} allShoes={allShoes} />
             )}
 
-            {/* 광고 - 추천 결과 전 (4개 이상일 때) */}
-            {recommendations.length >= 4 && <RecommendAd />}
 
             {/* 추천 결과 */}
             {recommendations.length > 0 ? (

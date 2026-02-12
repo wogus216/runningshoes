@@ -7,7 +7,6 @@ import { Search, X, Check, Link2, GripVertical } from 'lucide-react';
 import { getShoes, getShoeBySlug } from '@/lib/data/shoes';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
-import { CompareAd } from '@/components/ads/ad-unit';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 
@@ -358,8 +357,6 @@ function ComparePageContent() {
         )}
       </section>
 
-      {/* 광고 - 비교 결과 전 */}
-      {selectedShoes.length >= 2 && <CompareAd />}
 
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (

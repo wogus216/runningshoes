@@ -15,6 +15,8 @@ type BlogPostPageProps = {
   }>;
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   const posts = getAllPosts();
   return posts.map((post) => ({

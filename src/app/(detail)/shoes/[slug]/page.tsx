@@ -11,7 +11,6 @@ import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
-import { DetailFooterAd } from '@/components/ads/ad-unit';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -290,8 +289,6 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           </div>
         )}
 
-        {/* 하단 광고 */}
-        <DetailFooterAd />
 
         {/* 데이터 출처 */}
         <section className="section-card p-5">

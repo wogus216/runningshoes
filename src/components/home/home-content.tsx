@@ -11,7 +11,6 @@ import { FilterPanel } from "@/components/filters/filter-panel";
 import { useShoeFilters } from "@/hooks/useShoeFilters";
 import { categoryOrder, getBrandsFromShoes } from "@/lib/data/shoes";
 import type { Shoe } from "@/types/shoe";
-import { MainHeroAd, MainMidListAd } from "@/components/ads/ad-unit";
 import { TechBanner } from "@/components/home/tech-banner";
 import { GelBanner } from "@/components/home/gel-banner";
 import { GuideBanner } from "@/components/home/guide-banner";
@@ -203,8 +202,6 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
 
       <ViewToggle view={view} onChange={handleViewChange} categories={categories} brands={brands} />
 
-      {/* 광고 - 신발 목록 전 (20개 이상일 때) */}
-      {filteredShoes.length >= 20 && <MainMidListAd />}
 
       {filteredShoes.length > 0 ? (
         view === "hierarchy" ? (
@@ -219,8 +216,6 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </div>
       )}
 
-      {/* 광고 - 신발 목록 아래 */}
-      <MainHeroAd />
     </div>
   );
 }
