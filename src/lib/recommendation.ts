@@ -251,13 +251,18 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
         keywords.some(kw => rec.includes(kw))
       );
       if (hasMatch) {
-        score += 22;
+        // racing 목적인데 카테고리가 레이싱이 아니면 키워드 보너스 축소
+        if (profile.purpose === 'racing' && shoe.category !== '레이싱') {
+          score += 8;
+        } else {
+          score += 22;
+        }
         reasons.push(`${purposeLabels[profile.purpose]}으로 적합`);
       }
     }
-    // 카테고리 직접 매핑 (레이싱은 강화)
+    // 카테고리 직접 매핑 (레이싱은 대폭 강화)
     if (purposeCategoryMap[profile.purpose]?.includes(shoe.category)) {
-      const categoryBoost = profile.purpose === 'racing' ? 18 : 8;
+      const categoryBoost = profile.purpose === 'racing' ? 25 : 8;
       score += categoryBoost;
       reasons.push(`${purposeLabels[profile.purpose]} 카테고리`);
     }
@@ -346,7 +351,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
     if (profile.targetPace) {
       const paceCategories = paceRanges[profile.targetPace].categories;
       if (paceCategories.includes(shoe.category)) {
-        score += 18;
+        score += 25;
         reasons.push(`${paceRanges[profile.targetPace].label} 페이스에 적합`);
       }
       // 빠른 페이스에는 카본 플레이트, 가벼운 무게, 높은 반응성
