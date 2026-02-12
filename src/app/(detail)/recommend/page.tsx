@@ -36,7 +36,7 @@ export default function RecommendPage() {
     season: { summer: '여름', winter: '겨울', all: '사계절' },
     footArch: { flat: '평발', normal: '정상', high: '높은 아치' },
     footWidth: { narrow: '좁음', standard: '표준', wide: '넓음' },
-    budget: { low: '15만원 이하', mid: '15-25만원', high: '25만원 이상' },
+    budget: { low: '20만원 이하', mid: '15-30만원', high: '20만원 이상' },
   };
 
   return (

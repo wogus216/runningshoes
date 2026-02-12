@@ -701,11 +701,11 @@ export const pumaShoes: Shoe[] = [
     features: ['Nitro Elite 폼', '카본 플레이트', '40mm 맥시멀 스택', '마라톤 특화'],
 
     priceAnalysis: {
-      msrp: 299000,
+      msrp: 379000,
       streetPrice: 260000,
-      costPerKm: 1040,
-      valueRating: 6,
-      priceTier: 'premium',
+      costPerKm: 1516,
+      valueRating: 5,
+      priceTier: 'super-premium',
       alternatives: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5'],
     },
 

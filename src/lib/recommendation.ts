@@ -7,7 +7,7 @@ export type UserProfile = {
   footArch: 'flat' | 'normal' | 'high';
   footWidth: 'narrow' | 'standard' | 'wide';
   injuries: string[]; // plantarFasciitis, achillesTendinopathy, kneeIssues, shinSplints
-  budget: 'low' | 'mid' | 'high'; // ~15만, 15-25만, 25만+
+  budget: 'low' | 'mid' | 'high'; // ~20만, 15-30만, 20만+
   preferredBrands: string[];
   season?: 'summer' | 'winter' | 'all'; // 계절 선택
   targetPace?: 'slow' | 'medium' | 'fast'; // 목표 페이스
@@ -91,7 +91,7 @@ export function getTopShoesForInjury(shoes: Shoe[], injuryType: string): Shoe[] 
 const paceRanges = {
   slow: { label: '6분대 이상', categories: ['쿠션화', '입문화'] },
   medium: { label: '5-6분대', categories: ['데일리', '쿠션화'] },
-  fast: { label: '5분 미만', categories: ['레이싱', '데일리'] },
+  fast: { label: '5분 미만', categories: ['레이싱'] },
 };
 
 const experienceMap = {
@@ -123,9 +123,9 @@ const purposeCategoryMap: Record<string, string[]> = {
 };
 
 const budgetRanges = {
-  low: { min: 0, max: 150000 },
-  mid: { min: 150000, max: 250000 },
-  high: { min: 250000, max: Infinity },
+  low: { min: 0, max: 200000 },
+  mid: { min: 150000, max: 300000 },
+  high: { min: 200000, max: Infinity },
 };
 
 export function recommendShoes(shoes: Shoe[], profile: UserProfile): RecommendedShoe[] {
@@ -138,11 +138,11 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
     let score = 0;
     const reasons: string[] = [];
 
-    // 1. 예산 필터 (필수)
-    const price = shoe.priceAnalysis?.msrp || shoe.price || 0;
+    // 1. 예산 필터 (필수) - 상한+하한 모두 체크
+    const price = shoe.price || shoe.priceAnalysis?.msrp || 0;
     const budgetRange = budgetRanges[profile.budget];
-    if (price > 0 && price > budgetRange.max) {
-      continue; // 예산 초과 시 제외
+    if (price > 0 && (price > budgetRange.max || price < budgetRange.min)) {
+      continue; // 예산 범위 밖 제외
     }
     if (price > 0 && price >= budgetRange.min && price <= budgetRange.max) {
       score += 10;
@@ -183,30 +183,41 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
       }
     }
 
-    // 4. 부상 예방 체크
+    // 4. 부상 예방 체크 (강화: warning은 제외, 가중치 상향)
     if (profile.injuries.length > 0 && shoe.injuryPrevention) {
-      const goodLevels = ['excellent', 'good'];
-      const badLevels = ['warning', 'caution'];
       let injuryBonus = 0;
+      let hasWarning = false;
+
+      const injuryLabels: Record<string, string> = {
+        plantarFasciitis: '족저근막염',
+        achillesTendinopathy: '아킬레스',
+        kneeIssues: '무릎',
+        shinSplints: '정강이',
+      };
 
       for (const injury of profile.injuries) {
         const level = shoe.injuryPrevention[injury as keyof typeof shoe.injuryPrevention];
         if (level) {
-          if (goodLevels.includes(level)) {
-            injuryBonus += 15;
-            const injuryLabels: Record<string, string> = {
-              plantarFasciitis: '족저근막염',
-              achillesTendinopathy: '아킬레스',
-              kneeIssues: '무릎',
-              shinSplints: '정강이',
-            };
+          if (level === 'excellent') {
+            injuryBonus += 30;
+            reasons.push(`${injuryLabels[injury]} 예방에 매우 좋음`);
+          } else if (level === 'good') {
+            injuryBonus += 8;
             reasons.push(`${injuryLabels[injury]} 예방에 좋음`);
-          } else if (badLevels.includes(level)) {
+          } else if (level === 'warning') {
+            hasWarning = true;
+          } else if (level === 'caution') {
             score -= 20;
           }
         }
       }
-      score += Math.min(injuryBonus, 30);
+
+      // warning 레벨이 있는 신발은 부상 러너에게 추천하지 않음
+      if (hasWarning) {
+        continue;
+      }
+
+      score += Math.min(injuryBonus, 60);
     }
 
     // 5. 경험 수준에 따른 추천 매칭 (키워드 + 카테고리 직접 매핑)
@@ -244,9 +255,10 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
         reasons.push(`${purposeLabels[profile.purpose]}으로 적합`);
       }
     }
-    // 카테고리 직접 매핑
+    // 카테고리 직접 매핑 (레이싱은 강화)
     if (purposeCategoryMap[profile.purpose]?.includes(shoe.category)) {
-      score += 8;
+      const categoryBoost = profile.purpose === 'racing' ? 18 : 8;
+      score += categoryBoost;
       reasons.push(`${purposeLabels[profile.purpose]} 카테고리`);
     }
 
@@ -330,20 +342,24 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
       }
     }
 
-    // 14. 페이스 기반 추천
+    // 14. 페이스 기반 추천 (강화: fast에 레이싱 특화)
     if (profile.targetPace) {
       const paceCategories = paceRanges[profile.targetPace].categories;
       if (paceCategories.includes(shoe.category)) {
-        score += 15;
+        score += 18;
         reasons.push(`${paceRanges[profile.targetPace].label} 페이스에 적합`);
       }
-      // 빠른 페이스에는 카본 플레이트와 가벼운 무게
+      // 빠른 페이스에는 카본 플레이트, 가벼운 무게, 높은 반응성
       if (profile.targetPace === 'fast') {
         if (shoe.biomechanics?.carbonPlate) {
-          score += 10;
+          score += 15;
+          reasons.push('카본 플레이트로 스피드 지원');
         }
         if (shoe.specs.weight && shoe.specs.weight < 220) {
-          score += 5;
+          score += 8;
+        }
+        if (shoe.specs.responsiveness && shoe.specs.responsiveness >= 8) {
+          score += 8;
         }
       }
     }
@@ -354,15 +370,31 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
         score += 5;
         reasons.push('입문자 적정 무게');
       } else if (profile.experience === 'advanced' && shoe.specs.weight < 230) {
-        score += 5;
+        score += 8;
         reasons.push('가벼운 무게');
+      }
+    }
+
+    // 15-1. 상급자 전용 가점 (레이싱/고반응성 신발 우대)
+    if (profile.experience === 'advanced') {
+      if (shoe.category === '레이싱') {
+        score += 15;
+        reasons.push('상급자에 적합한 레이싱화');
+      }
+      if (shoe.specs.responsiveness && shoe.specs.responsiveness >= 8) {
+        score += 8;
+        reasons.push('높은 반응성');
+      }
+      if (shoe.biomechanics?.carbonPlate) {
+        score += 8;
+        reasons.push('카본 플레이트 탑재');
       }
     }
 
     // 16. 반응성 점수 (목적별)
     if (shoe.specs.responsiveness) {
       if (profile.purpose === 'racing' && shoe.specs.responsiveness >= 8) {
-        score += 8;
+        score += 10;
         reasons.push('뛰어난 반응성');
       } else if (profile.purpose === 'recovery' && shoe.specs.responsiveness <= 5) {
         score += 5;
@@ -454,7 +486,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
         ...shoe,
         matchScore: 0, // 나중에 정규화
         rawScore: score,
-        matchReasons: reasons.filter(r => !r.includes('부적합') && !r.includes('맞지 않을')),
+        matchReasons: reasons.filter(r => !r.includes('부적합') && !r.includes('맞지 않을')).slice(0, 5),
       });
     }
   }
@@ -477,7 +509,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
 
   // 정규화된 점수 계산 및 상세 이유 생성
   const normalizedRecommendations = recommendations.map(r => {
-    const matchScore = Math.round(50 + ((r.rawScore - minScore) / scoreRange) * 50);
+    const matchScore = Math.round(30 + ((r.rawScore - minScore) / scoreRange) * 70);
 
     // 스펙 비교 (평균 대비)
     const comparisonToAvg = {

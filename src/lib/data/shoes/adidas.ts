@@ -458,8 +458,8 @@ export const adidasShoes: Shoe[] = [
     },
     features: ['100% Lightstrike Pro', '초경량 223g', '컨티넨탈 러버', '83% 에너지 리턴', '와이드 옵션'],
     priceAnalysis: {
-      msrp: 150000,
-      streetPrice: 130000,
+      msrp: 209000,
+      streetPrice: 150000,
       costPerKm: 300,
       valueRating: 10,
       priceTier: 'mid',

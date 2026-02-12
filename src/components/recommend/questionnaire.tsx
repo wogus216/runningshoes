@@ -92,9 +92,10 @@ const questions: Question[] = [
   {
     id: 'injuries',
     title: '과거 또는 현재 부상이 있나요?',
-    description: '해당하는 부상을 모두 선택해주세요 (없으면 건너뛰기)',
+    description: '해당하는 부상을 모두 선택해주세요',
     multiple: true,
     options: [
+      { value: 'none', label: '없음', description: '부상 이력 없음' },
       { value: 'plantarFasciitis', label: '족저근막염', description: '발바닥 통증' },
       { value: 'achillesTendinopathy', label: '아킬레스 건염', description: '아킬레스 건 통증' },
       { value: 'kneeIssues', label: '무릎 통증', description: '러너스 니, 슬개골 문제' },
@@ -106,9 +107,9 @@ const questions: Question[] = [
     title: '예산은 어느 정도인가요?',
     description: '신발 구매 예산을 선택해주세요',
     options: [
-      { value: 'low', label: '15만원 이하', description: '가성비 중시' },
-      { value: 'mid', label: '15-25만원', description: '중간 가격대' },
-      { value: 'high', label: '25만원 이상', description: '프리미엄, 슈퍼슈즈' },
+      { value: 'low', label: '20만원 이하', description: '입문~가성비 중시' },
+      { value: 'mid', label: '15-30만원', description: '중간 가격대' },
+      { value: 'high', label: '20만원 이상', description: '프리미엄, 슈퍼슈즈 포함' },
     ],
   },
 ];
@@ -135,9 +136,23 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
   const handleSelect = (value: string) => {
     if (isMultiple) {
       const current = (currentAnswer as string[]) || [];
-      const updated = current.includes(value)
-        ? current.filter(v => v !== value)
-        : [...current, value];
+      let updated: string[];
+      if (currentQuestion.id === 'injuries') {
+        if (value === 'none') {
+          // '없음' 선택 시 다른 부상 모두 해제
+          updated = current.includes('none') ? [] : ['none'];
+        } else {
+          // 부상 선택 시 '없음' 해제
+          const withoutNone = current.filter(v => v !== 'none');
+          updated = withoutNone.includes(value)
+            ? withoutNone.filter(v => v !== value)
+            : [...withoutNone, value];
+        }
+      } else {
+        updated = current.includes(value)
+          ? current.filter(v => v !== value)
+          : [...current, value];
+      }
       setAnswers({ ...answers, [currentQuestion.id]: updated });
     } else {
       setAnswers({ ...answers, [currentQuestion.id]: value });
@@ -160,7 +175,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         season: answers.season as UserProfile['season'],
         footArch: answers.footArch as UserProfile['footArch'],
         footWidth: answers.footWidth as UserProfile['footWidth'],
-        injuries: (answers.injuries as string[]) || [],
+        injuries: ((answers.injuries as string[]) || []).filter(v => v !== 'none'),
         budget: answers.budget as UserProfile['budget'],
         preferredBrands: [],
       };
