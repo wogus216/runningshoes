@@ -271,9 +271,9 @@ export const onShoes: Shoe[] = [
       summerCompatibility: 'good',
     },
     priceAnalysis: {
-      msrp: 229000,
-      streetPrice: 229000,
-      costPerKm: 458,
+      msrp: 219000,
+      streetPrice: 219000,
+      costPerKm: 438,
       valueRating: 6,
       priceTier: 'premium',
       alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14'],

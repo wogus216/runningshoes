@@ -1194,9 +1194,9 @@ export const nikeShoes: Shoe[] = [
     },
     features: ['128g 초경량 (트랙 스파이크급)', 'ZoomX + 카본 Flyplate', '77% 에너지 리턴', '4mm 로우드롭'],
     priceAnalysis: {
-      msrp: 179000,
+      msrp: 219000,
       streetPrice: 155000,
-      costPerKm: 895,
+      costPerKm: 1095,
       valueRating: 8,
       priceTier: 'premium',
       alternatives: ['asics-metaspeed-edge-plus', 'adidas-adizero-sl2'],

@@ -262,7 +262,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
     }
     // 카테고리 직접 매핑 (레이싱은 대폭 강화)
     if (purposeCategoryMap[profile.purpose]?.includes(shoe.category)) {
-      const categoryBoost = profile.purpose === 'racing' ? 25 : 8;
+      const categoryBoost = profile.purpose === 'racing' ? 35 : 8;
       score += categoryBoost;
       reasons.push(`${purposeLabels[profile.purpose]} 카테고리`);
     }
@@ -281,7 +281,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
 
     // 8. 레이싱 목적이면 카본 플레이트 가점
     if (profile.purpose === 'racing' && shoe.biomechanics?.carbonPlate) {
-      score += 10;
+      score += 15;
       reasons.push('카본 플레이트 탑재');
     }
 
@@ -383,7 +383,7 @@ export function recommendShoes(shoes: Shoe[], profile: UserProfile): Recommended
     // 15-1. 상급자 전용 가점 (레이싱/고반응성 신발 우대)
     if (profile.experience === 'advanced') {
       if (shoe.category === '레이싱') {
-        score += 15;
+        score += 25;
         reasons.push('상급자에 적합한 레이싱화');
       }
       if (shoe.specs.responsiveness && shoe.specs.responsiveness >= 8) {

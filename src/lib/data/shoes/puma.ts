@@ -66,9 +66,9 @@ export const pumaShoes: Shoe[] = [
     features: ['풀 Nitro Foam', 'PumaGrip 아웃솔', '경량 224g', '67.5% 에너지 리턴'],
 
     priceAnalysis: {
-      msrp: 169000,
+      msrp: 179000,
       streetPrice: 140000,
-      costPerKm: 280,
+      costPerKm: 298,
       valueRating: 10,
       priceTier: 'mid',
       alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
