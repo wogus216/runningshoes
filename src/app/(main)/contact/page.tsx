@@ -4,6 +4,7 @@ import { Mail, MessageSquare, AlertCircle } from 'lucide-react';
 export const metadata: Metadata = {
   title: '문의하기',
   description: '러닝의 모든것에 문의, 데이터 수정 요청, 협업 제안을 보내주세요.',
+  alternates: { canonical: '/contact' },
 };
 
 export default function ContactPage() {

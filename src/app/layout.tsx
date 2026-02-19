@@ -160,16 +160,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />
-        <Script
-          id="website-jsonld"
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
-        <Script
-          id="organization-jsonld"
+        <script
           type="application/ld+json"
-          strategy="afterInteractive"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <CompareProvider>

@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: '러닝 가이드 & 팁',
   description: '러닝화 선택 가이드, 러닝 팁, 부상 예방법, 신제품 리뷰 등 러너를 위한 유용한 정보를 제공합니다.',
   keywords: '러닝 가이드, 러닝화 선택, 러닝 팁, 부상 예방, 러닝화 리뷰',
+  alternates: { canonical: '/blog' },
 };
 
 export default function BlogPage() {

@@ -4,6 +4,7 @@ import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe } fro
 export const metadata: Metadata = {
   title: '사이트 소개',
   description: '러닝의 모든것은 한국 러너를 위한 데이터 기반 러닝화 정보 사이트입니다. 객관적인 데이터와 전문적인 분석으로 당신에게 맞는 러닝화를 찾아드립니다.',
+  alternates: { canonical: '/about' },
 };
 
 export default function AboutPage() {

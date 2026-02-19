@@ -5,7 +5,7 @@ import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/data/blog';
 import { categoryLabels } from '@/types/blog';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { BlogCard } from '@/components/blog/blog-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     keywords: post.tags.join(', '),
     authors: [{ name: post.author }],
     alternates: {
-      canonical: `${SITE_URL}/blog/${slug}`,
+      canonical: `/blog/${slug}`,
     },
     openGraph: {
       type: 'article',
@@ -70,7 +70,33 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     day: 'numeric',
   });
 
+  const articleJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.description,
+    author: { '@type': 'Person', name: post.author },
+    publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE } },
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt || post.publishedAt,
+    mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    keywords: post.tags.join(', '),
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: '블로그', item: `${SITE_URL}/blog` },
+      { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}` },
+    ],
+  };
+
   return (
+    <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
     <div className="max-w-[768px] mx-auto xl:max-w-none xl:flex xl:justify-center xl:gap-10">
       {/* 메인 콘텐츠 */}
       <div className="w-full max-w-[768px]">
@@ -187,5 +213,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* Velog 스타일 TOC 사이드바 */}
       <TableOfContents />
     </div>
+    </>
   );
 }

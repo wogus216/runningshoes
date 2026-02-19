@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: `에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석 - ${SITE_NAME}`,
   description: '마라톤·러닝용 에너지 젤 10종 비교 분석. Maurten, SiS, GU, 양갱까지. 위장 안정성, 탄수화물 과학, 가성비 기준으로 평가.',
   keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS',
+  alternates: { canonical: '/gels' },
 };
 
 const categoryDescriptions: Record<string, { emoji: string; desc: string }> = {

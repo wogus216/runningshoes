@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: '법적 고지 | 러닝의 모든것',
   description: '러닝의 모든것 사이트의 법적 고지, 면책 조항 및 제휴 마케팅 안내',
+  alternates: { canonical: '/legal' },
 };
 
 export default function LegalPage() {
