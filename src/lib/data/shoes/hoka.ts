@@ -726,4 +726,97 @@ export const hokaShoes: Shoe[] = [
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-pro-4'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xslD1XqM' }],
   },
+  {
+    id: 'hoka-cielo-x1',
+    slug: 'hoka-cielo-x1',
+    brand: 'Hoka',
+    name: '씨엘로 X1',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 5,
+    status: 'new',
+    price: 329000,
+    description: '호카의 엘리트 카본 레이싱화. 듀얼 덴시티 PEBA 미드솔과 카본 파이버 플레이트, 46mm 슈퍼맥스 스택으로 풀마라톤에서 최고의 쿠셔닝과 추진력을 제공합니다.',
+    oneliner: '208g에 46mm PEBA 스택, 호카 최고의 레이서',
+    editorComment: '씨엘로 X1은 호카의 아이코닉한 맥시멀 쿠셔닝을 레이싱화에 담은 모델입니다. 208g(2.0 기준)으로 전작(249g) 대비 41g 감량했고, 46mm 힐/39mm 전족부 슈퍼맥스 스택에 듀얼 덴시티 PEBA 폼과 카본 플레이트를 결합했습니다. 공격적인 전족부 로커와 울트라 반응성 미드솔이 빠른 전환을 돕고, 풀마라톤 후반부에서도 쿠셔닝이 유지됩니다. 32만 9천원으로 로켓 X3(29만 9천원)보다 3만원 비싸지만, 호카 레이싱 라인업의 정점입니다.',
+    tags: ['레이싱', '카본', 'PEBA', '맥시멀', '풀마라톤'],
+
+    specs: {
+      weight: 208,
+      cushioning: 8,
+      responsiveness: 9,
+      stability: 5,
+      drop: 7,
+      durability: 300,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 46, forefoot: 39 },
+      drop: 7,
+      carbonPlate: true,
+      plateType: 'full-length carbon fiber',
+      midsoleType: 'Dual-Density PEBA',
+      optimalPace: '3:30-4:30 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'good',
+      shinSplints: 'caution',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'excellent',
+    },
+
+    targetUsers: {
+      recommended: ['풀마라톤 대회용', '서브3:30 마라토너', '호카 로커 선호', '맥시멀 쿠셔닝+레이싱 겸용'],
+      notRecommended: ['입문 러너', '데일리 훈련용', '좁은 발 러너', '과내전 러너'],
+    },
+
+    features: ['듀얼 덴시티 PEBA 미드솔', '카본 파이버 플레이트', '46mm 슈퍼맥스 스택', '공격적 전족부 로커', '208g 경량 (2.0 기준)'],
+
+    priceAnalysis: {
+      msrp: 329000,
+      costPerKm: 1097,
+      valueRating: 6,
+      priceTier: 'super-premium',
+      alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3'],
+    },
+
+    detailedSpecs: {
+      weight: '208g (US M9, 2.0 기준)',
+      stackHeight: '힐 46mm / 포어풋 39mm',
+      drop: '7mm',
+      midsole: '듀얼 덴시티 PEBA 폼',
+      plate: '풀렝스 카본 파이버 플레이트',
+      outsole: '러버 아웃솔',
+      upper: '경량 엔지니어드 메쉬',
+      width: '표준',
+      durability: '300km',
+      price: '₩329,000',
+      costPerKm: '₩1,097/km',
+      footType: '중립 (레이싱)',
+      landingPattern: '중족부/전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 89,
+        text: '씨엘로 X1은 호카의 맥시멀 DNA를 레이싱에 녹인 결과물입니다. 46mm 스택에서 오는 쿠셔닝은 풀마라톤 35km 이후에도 발이 살아있게 해주고, PEBA+카본의 추진력이 페이스 유지를 돕습니다. 208g(2.0)으로 무겁지 않으면서 안정감이 좋아, 베이퍼플라이의 불안정함이 싫은 러너에게 강력 추천합니다. 32만 9천원은 슈퍼슈즈 중 중간 가격대이며, 300km 내구성은 대회 전용으로 적합합니다.',
+      },
+      { userType: '상급 러너', rating: 5, text: '서울마라톤 서브3:20으로 완주했습니다. 씨엘로의 46mm 스택이 35km 이후 진가를 발휘합니다. 다리가 지쳐도 로커가 굴러가듯 전환시켜주고, PEBA의 반발이 살아있어서 후반부 페이스 드롭이 적었어요. 베이퍼플라이보다 안정적이고 쿠셔닝이 풍부해서 풀마라톤에 더 적합하다고 봅니다.' },
+      { userType: '중급 러너', rating: 4, text: '하프마라톤 1시간 40분 목표 러너입니다. 씨엘로 X1으로 하프 PB를 3분 단축했어요. 다만 10K 이하 짧은 거리에서는 베이퍼플라이가 더 빠른 느낌입니다. 풀마라톤이나 하프에서 진가를 발휘하는 신발이에요. 32만 9천원이라 대회 전용으로만 신고 있습니다.' },
+    ],
+
+    similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-5'],
+    purchaseLinks: [],
+  },
 ];

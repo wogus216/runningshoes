@@ -907,4 +907,190 @@ export const asicsShoes: Shoe[] = [
     similarShoes: ['asics-megablast', 'hoka-bondi-9', 'brooks-glycerin-max'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5IiG2z0P' }],
   },
+  {
+    id: 'asics-magic-speed-5',
+    slug: 'asics-magic-speed-5',
+    brand: 'Asics',
+    name: '매직스피드 5',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 4.5,
+    status: 'new',
+    price: 229000,
+    description: '아식스의 가성비 카본 레이싱화. FF Leap + FF Blast+ 듀얼 폼과 포크형 카본 플레이트로 전작 대비 50g 경량화되어 템포런부터 대회까지 폭넓게 활용 가능합니다.',
+    oneliner: '193g에 포크형 카본, 50g 감량된 가성비 레이서',
+    editorComment: '매직스피드 5는 전작(242g) 대비 50g 감량한 193g으로 완전히 다른 신발이 되었습니다. FF Leap 상층+FF Blast+ 하층의 듀얼 폼 구성으로 에너지 리턴이 64.6%/62.6%(힐/전족부)에 달합니다. 포크형 카본 플레이트는 풀렝스보다 유연해 전환이 자연스럽고, 초보자도 부담 없이 접근할 수 있습니다. 22만 9천원으로 메타스피드(39만 9천원)의 절반 가격에 카본 레이싱을 경험할 수 있어 가성비가 뛰어납니다.',
+    tags: ['레이싱', '카본', '템포', '가성비'],
+
+    specs: {
+      weight: 193,
+      cushioning: 6,
+      responsiveness: 8,
+      stability: 5,
+      drop: 7,
+      durability: 400,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 37, forefoot: 30 },
+      drop: 7,
+      carbonPlate: true,
+      plateType: 'forked carbon fiber',
+      midsoleType: 'FF Leap + FF Blast+',
+      optimalPace: '3:30-5:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'caution',
+      achillesTendinopathy: 'caution',
+      kneeIssues: 'good',
+      shinSplints: 'caution',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'good',
+    },
+
+    targetUsers: {
+      recommended: ['템포런/인터벌 훈련', '대회 입문 러너', '카본화 첫 경험', '가성비 레이싱'],
+      notRecommended: ['데일리 이지런', '과내전 러너', '발볼 넓은 러너'],
+    },
+
+    features: ['FF Leap + FF Blast+ 듀얼 폼', '포크형 카본 파이버 플레이트', '193g 초경량 (전작 대비 -50g)', '에너지 리턴 64.6%/62.6%', 'ASICSGRIP 아웃솔'],
+
+    priceAnalysis: {
+      msrp: 229000,
+      costPerKm: 573,
+      valueRating: 8,
+      priceTier: 'premium',
+      alternatives: ['nike-zoom-fly-6', 'adidas-boston-13', 'saucony-endorphin-speed-5'],
+    },
+
+    detailedSpecs: {
+      weight: '193g (US M9)',
+      stackHeight: '힐 37mm / 포어풋 30mm',
+      drop: '7mm',
+      midsole: 'FF Leap (상층) + FF Blast+ (하층)',
+      plate: '포크형 카본 파이버 플레이트',
+      outsole: 'ASICSGRIP 러버',
+      upper: '경량 엔지니어드 메쉬',
+      width: '표준',
+      durability: '400km',
+      price: '₩229,000',
+      costPerKm: '₩573/km',
+      footType: '중립',
+      landingPattern: '중족부/전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 87,
+        text: '매직스피드 5는 50g 감량으로 완전히 새로운 신발이 되었습니다. 포크형 카본이 풀렝스보다 자연스러운 전환을 만들어주고, 카본 플레이트 경험이 없는 러너도 부담 없이 적응할 수 있습니다. 22만 9천원에 FF Leap 폼을 경험할 수 있어, "카본화를 처음 사봐도 될까요?"라는 질문에 가장 먼저 추천하는 모델입니다. 줌플라이 6(22만 9천원)과 동일 가격에 50g 더 가볍고, 템포런부터 하프마라톤 대회까지 커버합니다.',
+      },
+      { userType: '중급 러너', rating: 5, text: 'MS4에서 업그레이드했는데 50g 차이가 체감됩니다. 여의도 트랙에서 인터벌 훈련(1km×5, 4:00/km)에 쓰고 있는데, 포크형 카본이 풀렝스보다 전환이 부드러워요. 전작의 무겁고 딱딱한 느낌이 싹 사라졌습니다. 22만원대 카본화 중 최고의 선택입니다.' },
+      { userType: '입문 러너', rating: 4, text: '10K 대회 준비용으로 첫 카본화를 사봤어요. 275mm 착용 중인데 핏이 딱 맞습니다. 카본화가 딱딱할 줄 알았는데 포크형이라 그런지 전환이 자연스럽고 부담이 없어요. 5분/km 페이스에서도 추진력이 느껴집니다. 다만 400km 내구성은 아쉽습니다.' },
+    ],
+
+    similarShoes: ['nike-zoom-fly-6', 'adidas-boston-13', 'saucony-endorphin-speed-5', 'asics-magic-speed-4'],
+    purchaseLinks: [],
+  },
+  {
+    id: 'asics-metaspeed-ray',
+    slug: 'asics-metaspeed-ray',
+    brand: 'Asics',
+    name: '메타스피드 레이',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 5,
+    status: 'new',
+    price: 399000,
+    description: '아식스의 초경량 엘리트 레이싱화. 129g이라는 놀라운 무게에 FF Leap ATPU 폼과 3/4 카본 플레이트로 전족부 착지 러너에게 최고의 에너지 리턴(81%)을 제공합니다.',
+    oneliner: '129g 초경량, 81% 에너지 리턴의 전족부 특화 레이서',
+    editorComment: '메타스피드 레이는 129g이라는 시장 최경량 무게로 "가벼움의 극한"을 추구한 엘리트 레이싱화입니다. FF Leap(ATPU) 폼은 FF Turbo+ 대비 15% 가볍고 13.7% 더 탄성 있으며, 전족부 에너지 리턴 81%는 업계 최고 수준입니다. 3/4 카본 플레이트라는 파격적 선택으로 전족부 착지 러너에게 최적화되어 있지만, 힐스트라이커에겐 비추천입니다. 39만 9천원으로 메타스피드 스카이(32만 9천원)보다 비싸지만, 5K~마라톤 전 거리에서 기록 단축을 노리는 엘리트에게 새로운 무기입니다.',
+    tags: ['레이싱', '카본', '엘리트', '초경량', '전족부'],
+
+    specs: {
+      weight: 129,
+      cushioning: 6,
+      responsiveness: 10,
+      stability: 3,
+      drop: 5,
+      durability: 200,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 39.5, forefoot: 34.5 },
+      drop: 5,
+      carbonPlate: true,
+      plateType: '3/4-length carbon',
+      midsoleType: 'FF Leap (ATPU)',
+      optimalPace: '3:00-4:30 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'warning',
+      achillesTendinopathy: 'caution',
+      kneeIssues: 'caution',
+      shinSplints: 'caution',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'narrow',
+      flatFootCompatibility: 'poor',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'excellent',
+    },
+
+    targetUsers: {
+      recommended: ['전족부/중족부 착지 엘리트', '서브3 마라토너', '5K/10K 기록 도전', '초경량 레이서 선호'],
+      notRecommended: ['힐스트라이커', '입문 러너', '데일리 훈련용', '과내전/안정화 필요', '발볼 넓은 러너'],
+    },
+
+    features: ['129g 시장 최경량', 'FF Leap ATPU 미드솔', '3/4 카본 플레이트', '81% 전족부 에너지 리턴', '전족부 착지 최적화'],
+
+    priceAnalysis: {
+      msrp: 399000,
+      costPerKm: 1995,
+      valueRating: 5,
+      priceTier: 'super-premium',
+      alternatives: ['asics-metaspeed-sky-plus', 'nike-alphafly-3', 'saucony-endorphin-elite-2'],
+    },
+
+    detailedSpecs: {
+      weight: '129g (US M9)',
+      stackHeight: '힐 39.5mm / 포어풋 34.5mm',
+      drop: '5mm',
+      midsole: 'FF Leap (ATPU 기반, FF Turbo+ 대비 15% 경량)',
+      plate: '3/4 카본 플레이트',
+      outsole: '최소 러버',
+      upper: '초경량 메쉬',
+      width: '좁음',
+      durability: '200km',
+      price: '₩399,000',
+      costPerKm: '₩1,995/km',
+      footType: '전족부/중족부 착지 전용',
+      landingPattern: '전족부 착지 전용',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 90,
+        text: '129g이라는 무게는 손에 들면 "이게 러닝화가 맞나?"라는 생각이 들 정도입니다. FF Leap의 81% 전족부 에너지 리턴은 측정치 기준 최상위이며, 5K~풀마라톤까지 기록 단축을 실현합니다. 하지만 3/4 카본이 만드는 불안정성은 양날의 검이라, 전족부 착지가 아닌 러너에게는 위험할 수 있습니다. 39만 9천원+200km 내구성은 대회 전용으로만 써야 하는 제약이지만, 기록 단축의 가치를 생각하면 엘리트에게 합리적입니다.',
+      },
+      { userType: '상급 러너', rating: 5, text: '서브2:50 마라토너입니다. 레이를 신고 하프 PB를 1분 20초 단축했습니다. 전족부 착지하는 저에게 이 신발은 완벽합니다. 129g은 신발을 안 신은 것 같은 느낌이고, 카본의 스냅이 전족부에 집중되어 추진력이 엄청납니다. 다만 중족부가 좁아서 아치 부분이 불안정한 느낌은 있어요.' },
+      { userType: '중급 러너', rating: 3, text: '10K 대회용으로 샀는데, 힐스트라이커인 저에게는 맞지 않았습니다. 3/4 카본이라 뒤꿈치 착지 시 지지가 없고 미끄러지는 느낌입니다. 전족부 착지 러너 전용이라는 것을 간과했어요. 메타스피드 스카이로 교환하길 추천합니다.' },
+    ],
+
+    similarShoes: ['asics-metaspeed-sky-plus', 'asics-metaspeed-edge-plus', 'nike-alphafly-3', 'saucony-endorphin-elite-2'],
+    purchaseLinks: [],
+  },
 ];

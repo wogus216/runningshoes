@@ -722,4 +722,97 @@ export const brooksShoes: Shoe[] = [
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6svgS' }],
     tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
   },
+  {
+    id: 'brooks-glycerin-max-2',
+    slug: 'brooks-glycerin-max-2',
+    brand: 'Brooks',
+    name: '글리세린 맥스 2',
+    image: '',
+    images: [],
+    category: '쿠션화',
+    rating: 4,
+    status: 'new',
+    price: 249000,
+    description: '브룩스의 맥시멀 쿠션화. DNA Tuned 미드솔과 47mm 힐 스택으로 극강의 쿠셔닝과 로커 기반 스무스 라이드를 제공합니다.',
+    oneliner: '312g에 47mm 스택, 극강의 맥시멀 쿠셔닝',
+    editorComment: '글리세린 맥스 2는 47mm 힐/41mm 전족부라는 맥시멀 스택으로 극강의 충격흡수를 제공합니다. v1 대비 로커가 강화되고 피팅이 스너그해져 안정성이 개선되었지만, DNA Tuned 폼이 전작보다 단단해져 "재미"가 줄었다는 평가가 있습니다. 312g(US M9)으로 무거운 편이지만, 리커버리런과 이지데이에 최적화된 신발입니다. 24만 9천원으로 글리세린 맥스 v1(23만 9천원)보다 1만원 올랐고, 본디 9(22만 9천원)보다 2만원 비싸지만 스택이 7mm 더 높습니다.',
+    tags: ['쿠션화', '맥시멀', '리커버리', '장거리'],
+
+    specs: {
+      weight: 312,
+      cushioning: 10,
+      responsiveness: 4,
+      stability: 7,
+      drop: 6,
+      durability: 600,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 47, forefoot: 41 },
+      drop: 6,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'DNA Tuned',
+      optimalPace: '5:30-7:00+ min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'excellent',
+      shinSplints: 'excellent',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+      summerCompatibility: 'fair',
+    },
+
+    targetUsers: {
+      recommended: ['리커버리 러닝', '장거리 이지런', '맥시멀 쿠셔닝 선호', '무릎/관절 보호 필요', '체중 있는 러너'],
+      notRecommended: ['빠른 페이스 러닝', '경량화 선호', '템포런/인터벌'],
+    },
+
+    features: ['47mm 맥시멀 힐 스택', 'DNA Tuned 미드솔', '강화된 로커 지오메트리', '트리플 자카드 메쉬 어퍼', '스너그 피팅'],
+
+    priceAnalysis: {
+      msrp: 249000,
+      costPerKm: 415,
+      valueRating: 6,
+      priceTier: 'premium',
+      alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+    },
+
+    detailedSpecs: {
+      weight: '312g (US M9)',
+      stackHeight: '힐 47mm / 포어풋 41mm',
+      drop: '6mm',
+      midsole: 'DNA Tuned (질소 주입 폼)',
+      plate: '없음',
+      outsole: '러버 아웃솔',
+      upper: '트리플 자카드 메쉬',
+      width: '표준 (와이드 옵션 있음)',
+      durability: '600km',
+      price: '₩249,000',
+      costPerKm: '₩415/km',
+      footType: '중립',
+      landingPattern: '힐스트라이크~미드풋',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 78,
+        text: '47mm 스택이 주는 맥시멀 쿠셔닝은 리커버리와 이지데이에 최적입니다. v1의 DNA Tuned이 가진 팝과 에너지가 v2에서 줄어든 것이 아쉽지만, 로커가 강화되어 전환은 더 매끄럽습니다. 312g으로 무거워서 5분/km 이하 페이스에는 비적합하고, 6분/km 이상 느린 이지런에서 진가를 발휘합니다. 관절 보호가 필요한 러너에게 가장 추천하는 맥시멀 쿠션화입니다.',
+      },
+      { userType: '입문 러너', rating: 4, text: '무릎이 안 좋아서 쿠셔닝 좋은 신발을 찾다가 구매했어요. 북한산 둘레길 8km 걷기+달리기에서 무릎 통증이 확실히 줄었습니다. 다만 312g이라 신발이 묵직한 느낌은 있어요. 와이드 275mm 착용 중인데 핏이 꽉 맞는 편이라 반 사이즈 업 추천합니다.' },
+      { userType: '중급 러너', rating: 3, text: 'v1이 너무 좋아서 v2도 바로 샀는데, 솔직히 실망했습니다. DNA Tuned이 v1보다 단단해져서 "구름 위를 걷는" 느낌이 사라졌어요. 로커는 좋아졌지만 리커버리 슈즈의 핵심인 푹신함이 후퇴한 건 아쉽습니다. 여전히 좋은 맥시멀 쿠션화이지만, v1 만큼의 감동은 없어요.' },
+    ],
+
+    similarShoes: ['hoka-bondi-9', 'brooks-glycerin-max', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+    purchaseLinks: [],
+  },
 ];

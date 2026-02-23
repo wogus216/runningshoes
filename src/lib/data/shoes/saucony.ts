@@ -876,4 +876,283 @@ export const sauconyShoes: Shoe[] = [
     similarShoes: ['asics-superblast-2', 'new-balance-sc-trainer-v3', 'hoka-mach-x-3', 'nike-vomero-18'],
     purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKxM0' }],
   },
+  {
+    id: 'saucony-endorphin-pro-5',
+    slug: 'saucony-endorphin-pro-5',
+    brand: 'Saucony',
+    name: '엔돌핀 프로 5',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 5,
+    status: 'new',
+    price: 299000,
+    description: '써코니의 최상위 카본 레이싱화. PWRRUN HG + PWRRUN PB 듀얼 폼과 슬롯형 카본 플레이트로 풀마라톤/하프 대회에서 최고의 추진력을 제공합니다.',
+    oneliner: '206g에 슬롯 카본 플레이트, 검증된 장거리 레이서',
+    editorComment: '엔돌핀 프로 5는 전작과 동일한 206g/39.5mm 스택/8mm 드롭을 유지하면서 카본 플레이트를 슬롯 디자인으로 변경해 전환 효율을 높였습니다. PWRTRAC 아웃솔이 새로 적용되어 그립력이 향상되었고, PWRRUN HG 상층+PWRRUN PB 하층의 듀얼 폼 구성은 그대로입니다. 29만 9천원으로 베이퍼플라이 4(30만 9천원)보다 1만원 저렴하면서 더 넓은 핏을 제공합니다. 단, 레이싱 전용이라 내구성(300km)이 짧고 데일리 훈련에는 비적합합니다.',
+    tags: ['레이싱', '카본', '풀마라톤', '하프마라톤'],
+
+    specs: {
+      weight: 206,
+      cushioning: 7,
+      responsiveness: 9,
+      stability: 5,
+      drop: 8,
+      durability: 300,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 39.5, forefoot: 31.5 },
+      drop: 8,
+      carbonPlate: true,
+      plateType: 'full-length carbon (slotted)',
+      midsoleType: 'PWRRUN HG + PWRRUN PB',
+      optimalPace: '3:30-4:30 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'caution',
+      achillesTendinopathy: 'caution',
+      kneeIssues: 'good',
+      shinSplints: 'caution',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'good',
+    },
+
+    targetUsers: {
+      recommended: ['서브3:30 마라토너', '하프/10K 대회용', '경험 있는 러너', '전족부 착지 러너'],
+      notRecommended: ['입문 러너', '데일리 훈련용', '과내전 러너', '발볼 넓은 러너'],
+    },
+
+    features: ['슬롯형 카본 파이버 플레이트', 'PWRRUN HG + PB 듀얼 폼', 'SPEEDROLL 지오메트리', 'PWRTRAC 아웃솔 (신규)', '206g 경량'],
+
+    priceAnalysis: {
+      msrp: 299000,
+      costPerKm: 997,
+      valueRating: 6,
+      priceTier: 'super-premium',
+      alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    },
+
+    detailedSpecs: {
+      weight: '206g (US M9)',
+      stackHeight: '힐 39.5mm / 포어풋 31.5mm',
+      drop: '8mm',
+      midsole: 'PWRRUN HG (상층) + PWRRUN PB (하층)',
+      plate: '풀렝스 슬롯형 카본 파이버 플레이트',
+      outsole: 'PWRTRAC 러버',
+      upper: '경량 엔지니어드 메쉬',
+      width: '표준 (D)',
+      durability: '300km',
+      price: '₩299,000',
+      costPerKm: '₩997/km',
+      footType: '중립 (전족부/중족부 착지 최적)',
+      landingPattern: '전족부/중족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 88,
+        text: '프로 4의 안정적인 베이스를 유지하면서 슬롯 카본 플레이트로 전환 효율을 높인 정석적 업데이트입니다. 206g으로 베이퍼플라이(185g)보다 무겁지만, 넓은 핏과 안정적인 플랫폼이 장거리 레이스에서 강점입니다. PWRTRAC 아웃솔이 젖은 노면에서도 그립을 유지해줍니다. 29만 9천원 가격이 부담되지만 레이스당 비용으로 생각하면 합리적입니다.',
+      },
+      { userType: '상급 러너', rating: 5, text: '서울마라톤 서브3:15 목표로 구매했습니다. 275mm 착용 중인데 토박스가 넉넉한 편이라 발볼 걱정이 없어요. 35km 이후에도 카본의 추진력이 살아있어서 후반부 페이스 유지에 큰 도움이 됩니다. 베이퍼플라이보다 안정감이 좋아서 풀마라톤에서는 프로 5가 더 낫다고 봅니다.' },
+      { userType: '중급 러너', rating: 4, text: '하프마라톤 1시간 35분 목표 러너입니다. 프로 4에서 업그레이드했는데 슬롯 플레이트 덕분에 전환이 더 자연스러워졌어요. 다만 300km 내구성은 대회 전용으로만 써야 하는 제약이 있습니다. 훈련은 스피드 5로, 대회는 프로 5로 나눠 신고 있어요.' },
+    ],
+
+    similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4', 'saucony-endorphin-elite-2'],
+    purchaseLinks: [],
+  },
+  {
+    id: 'saucony-endorphin-azura',
+    slug: 'saucony-endorphin-azura',
+    brand: 'Saucony',
+    name: '엔돌핀 아주라',
+    image: '',
+    images: [],
+    category: '데일리',
+    rating: 4,
+    status: 'new',
+    price: 189000,
+    description: '써코니의 논-플레이트 데일리 퍼포먼스 트레이너. PWRRUN PB 슈퍼폼과 SPEEDROLL 지오메트리로 카본 없이도 빠르고 부드러운 주행감을 제공합니다.',
+    oneliner: '240g에 PWRRUN PB 슈퍼폼, 플레이트 없는 데일리 스피드',
+    editorComment: '엔돌핀 아주라는 엔돌핀 스피드에서 나일론 플레이트를 빼고 스택을 40mm로 높인 "플레이트리스 퍼포먼스 트레이너"입니다. PWRRUN PB 슈퍼폼과 SPEEDROLL 로커가 만드는 스냅피한 전환감이 핵심이며, 이지런부터 템포런까지 다양한 페이스에서 자연스러운 라이드를 제공합니다. 18만 9천원으로 스피드 5(21만 9천원)보다 3만원 저렴하면서 일상 훈련에 더 적합합니다. 경쟁 모델은 아디다스 에보 SL, 뉴발란스 레벨 v5, 푸마 벨로시티 나이트로 4입니다.',
+    tags: ['데일리', '퍼포먼스 트레이너', '논플레이트', '스피드'],
+
+    specs: {
+      weight: 240,
+      cushioning: 7,
+      responsiveness: 8,
+      stability: 6,
+      drop: 8,
+      durability: 600,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 40, forefoot: 32 },
+      drop: 8,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'PWRRUN PB',
+      optimalPace: '4:00-6:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'good',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: false,
+      winterCompatibility: 'good',
+      summerCompatibility: 'good',
+    },
+
+    targetUsers: {
+      recommended: ['데일리 퍼포먼스 훈련', '템포런~이지런 겸용', '가벼운 트레이너 선호', '엔돌핀 라인 입문'],
+      notRecommended: ['대회 레이싱', '안정화 필요 러너', '맥시멀 쿠셔닝 선호'],
+    },
+
+    features: ['PWRRUN PB 슈퍼폼', 'SPEEDROLL 로커 지오메트리', 'XT-900 아웃솔', '논-플레이트 디자인', '240g 경량'],
+
+    priceAnalysis: {
+      msrp: 189000,
+      costPerKm: 315,
+      valueRating: 8,
+      priceTier: 'mid',
+      alternatives: ['adidas-adizero-evo-sl', 'new-balance-rebel-v5', 'puma-velocity-nitro-4'],
+    },
+
+    detailedSpecs: {
+      weight: '240g (US M9)',
+      stackHeight: '힐 40mm / 포어풋 32mm',
+      drop: '8mm',
+      midsole: 'PWRRUN PB (PEBA 기반 슈퍼폼)',
+      plate: '없음',
+      outsole: 'XT-900 러버',
+      upper: '엔지니어드 메쉬',
+      width: '표준 (D)',
+      durability: '600km',
+      price: '₩189,000',
+      costPerKm: '₩315/km',
+      footType: '중립',
+      landingPattern: '중족부/전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 84,
+        text: '18만 9천원에 PWRRUN PB 슈퍼폼을 데일리 트레이너에 담은 것이 아주라의 가치입니다. 플레이트 없이도 SPEEDROLL 로커가 빠른 전환을 만들어주고, 40mm 스택이 장거리에서도 쿠셔닝을 유지합니다. 스피드 5처럼 5K 인터벌에 쓰기엔 반발력이 부족하지만, 6분/km 이지런부터 4:30/km 템포런까지 편안하게 커버합니다. 발볼이 표준 사이즈라 넓은 발 러너는 시착 필수입니다.',
+      },
+      { userType: '중급 러너', rating: 4, text: '스피드 5와 고민하다가 데일리용으로 아주라를 선택했어요. 한강 뚝섬에서 주 4회 10km씩 뛰는데, 5분/km 페이스에서 SPEEDROLL의 굴러가는 느낌이 정말 좋습니다. 플레이트가 없어서 발목에 부담이 덜하고 매일 신기 편해요. 다만 에보 SL(20만 9천원)과 비교하면 바운스가 좀 약한 느낌입니다.' },
+      { userType: '입문 러너', rating: 4, text: '러닝 6개월차, 처음으로 퍼포먼스 트레이너를 사봤습니다. 이전에 라이드 18 신었는데 아주라가 확실히 가볍고 반응이 좋아요. 265mm로 딱 맞게 신고 있는데 통기성도 괜찮습니다. 18만원대에 이 정도 성능이면 만족입니다.' },
+    ],
+
+    similarShoes: ['adidas-adizero-evo-sl', 'new-balance-rebel-v5', 'puma-velocity-nitro-4', 'saucony-endorphin-speed-5'],
+    purchaseLinks: [],
+  },
+  {
+    id: 'saucony-ride-19',
+    slug: 'saucony-ride-19',
+    brand: 'Saucony',
+    name: '라이드 19',
+    image: '',
+    images: [],
+    category: '입문화',
+    rating: 4,
+    status: 'new',
+    price: 179000,
+    description: '써코니의 대표 데일리 트레이너. 개선된 SCF PWRRUN+ 폼으로 전작보다 부드럽고 반응성 좋은 주행감을 제공하며, 10mm 넓어진 전족부로 편안한 핏을 갖췄습니다.',
+    oneliner: '255g에 개선된 PWRRUN+, 더 부드럽고 넓어진 데일리 트레이너',
+    editorComment: '라이드 19는 전작(라이드 18) 대비 SCF PWRRUN+ 폼을 개선해 "더 가볍고, 부드럽고, 반응성 좋은" 착지감을 실현했습니다. 전족부가 10mm 넓어져 한국 러너의 넓은 발볼에 더 친화적이며, 255g 무게는 전작과 동일합니다. 17만 9천원으로 라이드 18(15만 9천원)보다 2만원 올랐지만, 미국 기준 $145로 같은 카테고리 중 합리적인 가격입니다. 와이드 옵션 제공으로 발볼 걱정을 덜어주며, 주 3-5회 데일리 훈련에 가장 신뢰할 수 있는 중립화입니다.',
+    tags: ['입문화', '데일리', '쿠셔닝', '중립'],
+
+    specs: {
+      weight: 255,
+      cushioning: 7,
+      responsiveness: 6,
+      stability: 6,
+      drop: 8,
+      durability: 700,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 36, forefoot: 28 },
+      drop: 8,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'SCF PWRRUN+',
+      optimalPace: '5:00-7:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'good',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: true,
+      winterCompatibility: 'good',
+      summerCompatibility: 'good',
+    },
+
+    targetUsers: {
+      recommended: ['입문 러너', '데일리 트레이닝', '중립 발', '편안한 쿠셔닝 선호'],
+      notRecommended: ['레이싱', '빠른 템포 러닝', '과내전 러너'],
+    },
+
+    features: ['개선된 SCF PWRRUN+ 미드솔', 'FORMFIT 기술', '10mm 넓어진 전족부', '와이드 옵션 제공', '8mm 드롭'],
+
+    priceAnalysis: {
+      msrp: 179000,
+      costPerKm: 256,
+      valueRating: 8,
+      priceTier: 'mid',
+      alternatives: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'brooks-ghost-17'],
+    },
+
+    detailedSpecs: {
+      weight: '255g (US M9)',
+      stackHeight: '힐 36mm / 포어풋 28mm',
+      drop: '8mm (8.5mm 실측)',
+      midsole: 'SCF PWRRUN+ (개선된 질소 주입 TPU)',
+      plate: '없음',
+      outsole: 'PWRTRAC 러버',
+      upper: '엔지니어드 메쉬',
+      width: '표준 (D), 와이드 (2E) 옵션',
+      durability: '700km',
+      price: '₩179,000',
+      costPerKm: '₩256/km',
+      footType: '중립',
+      landingPattern: '후족부/중족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 85,
+        text: '라이드 19는 전작의 장점을 유지하면서 쿠셔닝을 부드럽게 개선한 안정적 업데이트입니다. 개선된 SCF PWRRUN+ 폼이 전작의 단단한 느낌(26.1 HA)을 줄이고 더 쿠션감 있는 착지를 제공합니다. 전족부 10mm 확장은 발볼 넓은 한국 러너에게 큰 장점이며, 와이드 옵션까지 있습니다. 17만 9천원에 700km 내구성이면 km당 256원으로 가성비 우수합니다. 페가수스 41(15만 9천원/550km)보다 내구성이 좋고, 고스트 17(16만 9천원/800km)보다 가볍습니다.',
+      },
+      { userType: '입문 러너', rating: 5, text: '라이드 18에서 업그레이드했어요. 265mm 와이드 착용 중인데, 전족부가 넓어져서 이전보다 편합니다. 한강 잠원~반포 구간 주 3회 5km 뛰는데, 확실히 착지가 부드러워졌어요. 처음 러닝화를 고르는 친구한테도 추천하고 싶은 신발입니다.' },
+      { userType: '중급 러너', rating: 4, text: '주간 35km 데일리 훈련용으로 쓰고 있습니다. 5분30초/km 페이스에서 발이 편안하고, 18보다 쿠셔닝이 부드러워져서 장거리에서 피로감이 덜해요. 다만 빠른 페이스(4:30/km 이하)에서는 여전히 물렁한 느낌이라 템포런은 다른 신발로 돌리고 있습니다.' },
+    ],
+
+    similarShoes: ['saucony-ride-18', 'nike-pegasus-41', 'brooks-ghost-17', 'asics-gel-nimbus-28'],
+    purchaseLinks: [],
+  },
 ];

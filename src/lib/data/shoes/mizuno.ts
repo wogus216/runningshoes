@@ -553,4 +553,283 @@ export const mizunoShoes: Shoe[] = [
     similarShoes: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
     purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKUVK' }],
   },
+  {
+    id: 'mizuno-hyperwarp-pure',
+    slug: 'mizuno-hyperwarp-pure',
+    brand: 'Mizuno',
+    name: '하이퍼워프 퓨어',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 5,
+    status: 'new',
+    price: 399000,
+    description: '미즈노의 초경량 엘리트 레이싱화. 139g이라는 극한의 경량에 PEBA 미드솔과 카본 플레이트를 결합해 5K~10K 단거리 레이스에 특화되었습니다.',
+    oneliner: '139g 극한 경량, 5K/10K 단거리 특화 레이서',
+    editorComment: '하이퍼워프 퓨어는 139g이라는 경이적 무게로 미즈노 레이싱 역사를 새로 썼습니다. PEBA 미드솔과 카본 플레이트가 만드는 공격적인 라이드는 빠르게 달릴수록 진가를 발휘합니다. 34mm 힐/30.5mm 전족부의 로우 스택과 3.5mm 드롭은 자연스러운 전족부 착지를 유도하며, 5K~10K에서 기록 단축을 노리는 엘리트에게 최적화되어 있습니다. 39만 9천원으로 비싸지만, 200km 내구성의 순수 레이싱 무기입니다. 반 사이즈 업 권장.',
+    tags: ['레이싱', '카본', '초경량', '단거리', 'PEBA'],
+
+    specs: {
+      weight: 139,
+      cushioning: 5,
+      responsiveness: 10,
+      stability: 4,
+      drop: 4,
+      durability: 200,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 34, forefoot: 30.5 },
+      drop: 3.5,
+      carbonPlate: true,
+      plateType: 'full-length carbon',
+      midsoleType: 'PEBA',
+      optimalPace: '2:50-4:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'warning',
+      achillesTendinopathy: 'caution',
+      kneeIssues: 'caution',
+      shinSplints: 'warning',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'narrow',
+      flatFootCompatibility: 'poor',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'excellent',
+    },
+
+    targetUsers: {
+      recommended: ['5K/10K 엘리트 레이서', '서브3 마라토너', '전족부 착지 러너', '초경량 선호'],
+      notRecommended: ['입문 러너', '데일리 훈련용', '장거리 마라톤', '발볼 넓은 러너', '힐스트라이커'],
+    },
+
+    features: ['139g 극한 경량', 'PEBA 미드솔', '풀렝스 카본 플레이트', '3.5mm 로우 드롭', '5K/10K 특화'],
+
+    priceAnalysis: {
+      msrp: 399000,
+      costPerKm: 1995,
+      valueRating: 5,
+      priceTier: 'super-premium',
+      alternatives: ['asics-metaspeed-ray', 'nike-streakfly-2', 'saucony-endorphin-elite-2'],
+    },
+
+    detailedSpecs: {
+      weight: '139g (US M9)',
+      stackHeight: '힐 34mm / 포어풋 30.5mm',
+      drop: '3.5mm',
+      midsole: 'PEBA (초경량 폼)',
+      plate: '풀렝스 카본 플레이트',
+      outsole: '최소 러버',
+      upper: '초경량 메쉬',
+      width: '좁음 (반 사이즈 업 권장)',
+      durability: '200km',
+      price: '₩399,000',
+      costPerKm: '₩1,995/km',
+      footType: '전족부/중족부 착지',
+      landingPattern: '전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 88,
+        text: '139g은 메타스피드 레이(129g) 다음으로 가벼운 수치이며, 미즈노가 드디어 슈퍼슈즈 경쟁에 본격 참전한 결과물입니다. PEBA의 반응성이 뛰어나고 카본이 추진력을 더하지만, 34mm 로우 스택으로 풀마라톤에는 쿠셔닝이 부족할 수 있습니다. 5K/10K에서 기록 단축을 노리는 엘리트에게 최적이며, 반 사이즈 업 필수입니다.',
+      },
+      { userType: '상급 러너', rating: 5, text: '10K 대회에서 PB를 30초 단축했습니다. 139g이라 발에 아무것도 없는 느낌이에요. 카본의 스냅이 전족부에서 확실하게 느껴지고, 로우 드롭이 자연스러운 전방 추진을 만들어줍니다. 단 핏이 좁아서 280mm에 반 사이즈 업해서 285로 신고 있어요.' },
+      { userType: '중급 러너', rating: 4, text: '풀마라톤에 신고 뛰었는데, 30km 이후 쿠셔닝 부족이 느껴졌습니다. 34mm 스택은 풀마라톤에는 짧아요. 하프 이하 거리에서만 사용하기로 했습니다. 5K에서는 정말 빠릅니다.' },
+    ],
+
+    similarShoes: ['asics-metaspeed-ray', 'nike-streakfly-2', 'mizuno-hyperwarp-elite'],
+    purchaseLinks: [],
+  },
+  {
+    id: 'mizuno-hyperwarp-elite',
+    slug: 'mizuno-hyperwarp-elite',
+    brand: 'Mizuno',
+    name: '하이퍼워프 엘리트',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 5,
+    status: 'new',
+    price: 349000,
+    description: '미즈노의 풀마라톤 카본 레이싱화. 170g에 38mm 스택으로 퓨어보다 쿠셔닝이 풍부하며, PEBA 미드솔과 카본 플레이트로 장거리에서 안정적인 추진력을 제공합니다.',
+    oneliner: '170g에 38mm 스택, 풀마라톤 특화 카본 레이서',
+    editorComment: '하이퍼워프 엘리트는 퓨어(139g/34mm)와 프로(201g/39mm) 사이에서 최적의 균형점을 찾은 마라톤 레이싱화입니다. 170g에 38mm 스택은 풀마라톤 후반부에서도 충분한 쿠셔닝을 제공하면서 가벼움을 유지합니다. 3-3.5mm 로우 드롭과 PEBA+카본 조합이 효율적인 전방 추진을 만들어내며, 서브엘리트~엘리트 러너의 마라톤 무기로 최적입니다. 34만 9천원으로 베이퍼플라이(30만 9천원)와 경쟁하며, 안정적인 플랫폼이 장점입니다.',
+    tags: ['레이싱', '카본', 'PEBA', '마라톤', '엘리트'],
+
+    specs: {
+      weight: 170,
+      cushioning: 7,
+      responsiveness: 9,
+      stability: 5,
+      drop: 4,
+      durability: 300,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 38, forefoot: 34.5 },
+      drop: 3.5,
+      carbonPlate: true,
+      plateType: 'full-length carbon',
+      midsoleType: 'PEBA',
+      optimalPace: '3:00-4:30 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'caution',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'good',
+      shinSplints: 'caution',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'narrow',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'excellent',
+    },
+
+    targetUsers: {
+      recommended: ['풀마라톤 엘리트', '하프마라톤 대회용', '서브3:30 마라토너', '안정적인 카본 레이서 선호'],
+      notRecommended: ['입문 러너', '데일리 훈련용', '발볼 넓은 러너', '힐스트라이커'],
+    },
+
+    features: ['170g 경량', 'PEBA 미드솔', '풀렝스 카본 플레이트', '38mm 마라톤 최적 스택', '3.5mm 로우 드롭'],
+
+    priceAnalysis: {
+      msrp: 349000,
+      costPerKm: 1163,
+      valueRating: 6,
+      priceTier: 'super-premium',
+      alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'saucony-endorphin-pro-5'],
+    },
+
+    detailedSpecs: {
+      weight: '170g (US M9)',
+      stackHeight: '힐 38mm / 포어풋 34.5mm',
+      drop: '3-3.5mm',
+      midsole: 'PEBA 폼',
+      plate: '풀렝스 카본 플레이트',
+      outsole: '러버 아웃솔',
+      upper: '경량 메쉬',
+      width: '좁음 (반 사이즈 업 권장)',
+      durability: '300km',
+      price: '₩349,000',
+      costPerKm: '₩1,163/km',
+      footType: '전족부/중족부 착지',
+      landingPattern: '중족부/전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 90,
+        text: '하이퍼워프 엘리트는 미즈노 하이퍼워프 3형제 중 가장 균형 잡힌 마라톤 레이싱화입니다. 170g으로 충분히 가벼우면서 38mm 스택이 풀마라톤 후반부까지 쿠셔닝을 보장합니다. PEBA+카본의 자연스러운 추진감이 인상적이며, "빠르면서도 와일드하지 않은" 컨트롤 가능한 라이드가 핵심입니다. 34만 9천원은 슈퍼슈즈 중 중간대이며, 미즈노의 새로운 레이싱 시대를 연 상징적 모델입니다.',
+      },
+      { userType: '상급 러너', rating: 5, text: '풀마라톤 서브3 목표로 구매했습니다. 38mm 스택이 35km 이후에도 쿠셔닝을 유지해주고, 3.5mm 드롭이 전방 추진을 자연스럽게 만들어줍니다. 베이퍼플라이보다 안정감이 좋고, 씨엘로보다 가볍습니다. 미즈노의 레이싱화가 이렇게 좋아질 줄 몰랐어요.' },
+      { userType: '중급 러너', rating: 4, text: '하프마라톤 1시간 35분에서 3분 단축했습니다. 핏이 좁아서 반 사이즈 업 필수이고, 한국 러너 발볼에는 빡빡할 수 있습니다. 성능은 인정하지만 와이드 옵션이 없는 것이 아쉽습니다.' },
+    ],
+
+    similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'mizuno-hyperwarp-pure', 'mizuno-hyperwarp-pro'],
+    purchaseLinks: [],
+  },
+  {
+    id: 'mizuno-hyperwarp-pro',
+    slug: 'mizuno-hyperwarp-pro',
+    brand: 'Mizuno',
+    name: '하이퍼워프 프로',
+    image: '',
+    images: [],
+    category: '레이싱',
+    rating: 4,
+    status: 'new',
+    price: 319000,
+    description: '미즈노의 슈퍼트레이너/레이서. 201g에 Enerzy XP 미드솔과 카본 인퓨즈드 나일론 플레이트로 훈련과 대회를 겸용할 수 있는 하이퍼워프 라인의 가장 접근성 높은 모델입니다.',
+    oneliner: '201g에 39mm 스택, 훈련+대회 겸용 슈퍼트레이너',
+    editorComment: '하이퍼워프 프로는 퓨어/엘리트의 공격적인 성격을 순화해 접근성을 높인 슈퍼트레이너입니다. 201g으로 가볍고 39mm 스택이 충분한 쿠셔닝을 제공하며, 카본 인퓨즈드 나일론 플레이트는 순수 카본보다 유연해 전환이 자연스럽습니다. Enerzy XP 미드솔은 PEBA보다 안정적이어서 템포런부터 대회까지 폭넓게 활용 가능합니다. 31만 9천원으로 3형제 중 가장 저렴하며, 극단적 측면 플레어가 발목 안정성에 도움을 줍니다.',
+    tags: ['레이싱', '슈퍼트레이너', '카본', '겸용'],
+
+    specs: {
+      weight: 201,
+      cushioning: 8,
+      responsiveness: 8,
+      stability: 6,
+      drop: 6,
+      durability: 400,
+    },
+
+    biomechanics: {
+      stackHeight: { heel: 39, forefoot: 33.5 },
+      drop: 5.5,
+      carbonPlate: true,
+      plateType: 'carbon-infused nylon',
+      midsoleType: 'Enerzy XP',
+      optimalPace: '3:30-5:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'good',
+      achillesTendinopathy: 'good',
+      kneeIssues: 'good',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: false,
+      winterCompatibility: 'good',
+      summerCompatibility: 'good',
+    },
+
+    targetUsers: {
+      recommended: ['템포런/인터벌 훈련', '하프/풀마라톤 대회', '슈퍼트레이너 겸 레이서', '발목 불안정 러너'],
+      notRecommended: ['이지런/리커버리', '맥시멀 쿠셔닝 선호', '조용한 신발 선호'],
+    },
+
+    features: ['Enerzy XP 미드솔', '카본 인퓨즈드 나일론 플레이트', '39mm 높은 스택', '극단적 측면 플레어', '201g 경량'],
+
+    priceAnalysis: {
+      msrp: 319000,
+      costPerKm: 798,
+      valueRating: 7,
+      priceTier: 'super-premium',
+      alternatives: ['hoka-mach-x-3', 'asics-superblast-2', 'saucony-endorphin-trainer'],
+    },
+
+    detailedSpecs: {
+      weight: '201g (US M9)',
+      stackHeight: '힐 39mm / 포어풋 33.5mm',
+      drop: '5.5mm',
+      midsole: 'Enerzy XP (바운시 폼)',
+      plate: '카본 인퓨즈드 나일론 플레이트',
+      outsole: '러버 아웃솔',
+      upper: '엔지니어드 메쉬',
+      width: '표준',
+      durability: '400km',
+      price: '₩319,000',
+      costPerKm: '₩798/km',
+      footType: '중립',
+      landingPattern: '중족부/전족부 착지',
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 84,
+        text: '하이퍼워프 프로는 3형제 중 가장 실용적인 선택입니다. 카본 인퓨즈드 나일론이 순수 카본보다 부드럽고, Enerzy XP가 PEBA보다 안정적이어서 템포런부터 대회까지 매일 신을 수 있습니다. 201g에 39mm 스택은 슈퍼트레이너 카테고리에서 경쟁력 있으며, 극단적 측면 플레어가 발목 불안정 러너에게 도움이 됩니다. 다만 측면 플레어 때문에 뒤꿈치가 투박하고, 미드솔 소음이 있다는 점은 아쉽습니다.',
+      },
+      { userType: '중급 러너', rating: 4, text: '매주 인터벌+장거리를 소화하는데, 프로 하나로 두 가지를 다 커버합니다. 201g이 인터벌(4:00/km)에서도 가볍게 느껴지고, 39mm 스택이 20km 장거리에서 쿠셔닝을 유지해줍니다. 마하 X3(24만 9천원)보다 7만원 비싸지만 미즈노의 안정감이 차별점입니다.' },
+      { userType: '입문~중급 러너', rating: 4, text: '첫 슈퍼트레이너로 구매했어요. 카본 인퓨즈드라 그런지 순수 카본화보다 전환이 부드럽고 자연스럽습니다. 측면 플레어 덕분에 발목이 안정적인데, 계단 내려갈 때 뒤꿈치가 걸리는 느낌은 있어요. 대회에서도 써볼 예정입니다.' },
+    ],
+
+    similarShoes: ['hoka-mach-x-3', 'asics-superblast-2', 'saucony-endorphin-trainer', 'mizuno-hyperwarp-elite'],
+    purchaseLinks: [],
+  },
 ];
