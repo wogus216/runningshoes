@@ -115,10 +115,8 @@ export const classicGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: '네이버 스마트스토어 (earthpass)',
-        url: 'https://smartstore.naver.com/earthpass/products/11578886848',
-        price: 92800,
-        isOfficial: false,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dR0dui',
       },
     ],
   },
@@ -233,10 +231,8 @@ export const classicGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: '네이버 브랜드스토어 (코오롱제약)',
-        url: 'https://brand.naver.com/kolonpharm/products/9968179269',
-        price: 18400,
-        isOfficial: true,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dR0eUY',
       },
     ],
   },
@@ -345,6 +341,13 @@ export const classicGels: Gel[] = [
         userType: '가성비 마라토너',
         rating: 5,
         text: '마라톤 5번 뛰면서 한번도 양갱으로 탈난 적 없음. 비싼 젤 안 사도 완주는 충분합니다.',
+      },
+    ],
+
+    purchaseLinks: [
+      {
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dR0gpW',
       },
     ],
 
@@ -461,10 +464,8 @@ export const classicGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: '네이버 브랜드스토어 (요헤미티)',
-        url: 'https://brand.naver.com/yohemite/products/11255489201',
-        price: 39000,
-        isOfficial: true,
+        store: '네이버',
+        url: 'https://naver.me/FfsbmE4Y',
       },
     ],
   },
@@ -702,10 +703,8 @@ export const classicGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: '네이버 브랜드스토어 (스포식스)',
-        url: 'https://brand.naver.com/sportsix/products/12449697480',
-        price: 25900,
-        isOfficial: true,
+        store: '네이버',
+        url: 'https://naver.me/xnrJdjJo',
       },
     ],
   },

@@ -84,10 +84,8 @@ export const koreanGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: 'UP 공식몰',
-        url: 'https://ultimatepotential.co.kr',
-        price: 12800,
-        isOfficial: true,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dRZ8a2',
       },
     ],
 
@@ -197,10 +195,8 @@ export const koreanGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: 'highvibe',
-        url: 'https://highvibe.co.kr',
-        price: 21000,
-        isOfficial: false,
+        store: '네이버',
+        url: 'https://naver.me/5kP8K4RR',
       },
     ],
 
@@ -310,10 +306,8 @@ export const koreanGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: '엔업 공식몰',
-        url: 'https://www.sportsnutri.co.kr/shop/goods/goods_view.php?goodsno=221',
-        price: 22500,
-        isOfficial: true,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dR0blo',
       },
     ],
 
@@ -424,10 +418,8 @@ export const koreanGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: 'Amazon JP',
-        url: 'https://www.amazon.co.jp/dp/B01LRUN7FG',
-        price: 30441,
-        isOfficial: false,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dR0cub',
       },
     ],
 

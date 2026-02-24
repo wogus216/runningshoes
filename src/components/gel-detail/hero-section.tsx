@@ -1,8 +1,9 @@
 'use client';
 
 import type { Gel } from "@/types/gel";
-import { Star, Zap, Droplets, Coffee } from "lucide-react";
+import { Star, Zap, Droplets, Coffee, ExternalLink } from "lucide-react";
 import Image from "next/image";
+import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
 
 type HeroSectionProps = {
   gel: Gel;
@@ -116,6 +117,31 @@ export function HeroSection({ gel }: HeroSectionProps) {
                 ₩{gel.price.toLocaleString()}
               </span>
               <span className="text-sm text-tertiary">/ 개</span>
+            </div>
+          )}
+
+          {/* 구매 링크 */}
+          {gel.purchaseLinks && gel.purchaseLinks.length > 0 && (
+            <div className="flex flex-wrap gap-2 mb-4">
+              {gel.purchaseLinks.map((link, i) => (
+                <a
+                  key={i}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white rounded-lg text-sm font-medium hover:opacity-90 transition"
+                >
+                  {link.store}에서 구매
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </a>
+              ))}
+            </div>
+          )}
+
+          {/* 제휴 링크 고지 */}
+          {gel.purchaseLinks && gel.purchaseLinks.length > 0 && (
+            <div className="mb-4">
+              <AffiliateDisclosure purchaseLinks={gel.purchaseLinks} />
             </div>
           )}
 

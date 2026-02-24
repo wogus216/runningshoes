@@ -727,8 +727,11 @@ export const brooksShoes: Shoe[] = [
     slug: 'brooks-glycerin-max-2',
     brand: 'Brooks',
     name: '글리세린 맥스 2',
-    image: '',
-    images: [],
+    image: '/images/shoes/brooks/glycerinmax2/side.webp',
+    images: [
+      '/images/shoes/brooks/glycerinmax2/side.webp',
+      '/images/shoes/brooks/glycerinmax2/top.webp',
+    ],
     category: '쿠션화',
     rating: 4,
     status: 'new',
@@ -813,6 +816,6 @@ export const brooksShoes: Shoe[] = [
     ],
 
     similarShoes: ['hoka-bondi-9', 'brooks-glycerin-max', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
-    purchaseLinks: [],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GM36EYXT' }],
   },
 ];

@@ -85,9 +85,8 @@ export const premiumGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: 'LIXLI',
-        url: 'https://lixli.co.kr/product/%EB%AA%A8%EB%A5%B4%ED%85%90-%ED%82%B5%EC%B4%88%EA%B2%8C-%EC%97%90%EB%84%88%EC%A7%80%EC%A0%A4-%ED%8C%8C%EC%9B%8C%EC%A0%A4-12%EA%B0%9C%EC%9E%85-maurten-gel-100-%EB%A7%88%EB%9D%BC%ED%86%A4-%EC%B2%A0%EC%9D%B8-%EC%9E%90%EC%A0%84%EA%B1%B0-%EB%9F%AC%EB%8B%9D-%EB%93%B1%EC%82%B0-%EB%B3%B4%EA%B8%89%EC%8B%9D/46/',
-        price: 76900,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dRZ2Xe',
       },
     ],
 
@@ -228,6 +227,13 @@ export const premiumGels: Gel[] = [
       },
     ],
 
+    purchaseLinks: [
+      {
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dRZ5q5',
+      },
+    ],
+
     similarGels: ['maurten-gel-100', '226ers-high-energy', 'gu-roctane-energy-gel'],
   },
   {
@@ -314,9 +320,8 @@ export const premiumGels: Gel[] = [
 
     purchaseLinks: [
       {
-        store: 'Key Power Sports',
-        url: 'https://keypowersports.sg/products/226ers-high-energy-gel-76g-caffeine-cherry',
-        price: 7000,
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/dRZ7ck',
       },
     ],
 
