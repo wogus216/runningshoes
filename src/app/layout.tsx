@@ -82,6 +82,9 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   category: "sports",
+  other: {
+    'google-adsense-account': 'ca-pub-5040630448523471',
+  },
 };
 
 type RootLayoutProps = {
@@ -153,12 +156,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             />
           </>
         )}
-        {/* AdSense */}
+        {/* AdSense - head에 로드되어야 Auto Ads 동작 */}
         <Script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="beforeInteractive"
         />
         <script
           type="application/ld+json"
