@@ -19,6 +19,48 @@ All product images used in this project are sourced from official brand websites
 | Puma | [puma.com](https://www.puma.com) |
 | Saucony | [saucony.com](https://www.saucony.com) |
 
+## Puma Deviate NITRO Elite 4
+
+- Source: PUMA Korea official product page (https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `angle`, `detail`)
+
+## On Cloudrunner 3
+
+- Source: On South Korea official product page (https://www.on.com/products/cloudrunner-3-m-3mg1007/mens/glacier-alloy-shoes-3MG10071536)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
+## On Cloudsurfer Max
+
+- Source: On South Korea official product page (https://www.on.com/products/cloudsurfer-max-m-3mf3043/mens/black-eclipse-shoes-3MF30430106)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
+## On Cloudmonster 3
+
+- Source: On South Korea official product page (https://www.on.com/products/cloudmonster-3-m-3mg1005/mens/wolf-wolf-shoes-3MG10054747)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
+## On Cloudmonster 3 Hyper
+
+- Source: On South Korea official product page (https://www.on.com/products/cloudmonster-3-hyper-3mg1006/mens/lily-limelight-shoes-3MG10064906)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
+## ASICS Superblast 3
+
+- Source: Doctors of Running review images (https://www.doctorsofrunning.com/2026/03/asics-superblast-3-review-2026.html)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
+## New Balance 860 V15
+
+- Source: New Balance Korea official product page (https://m.nbkorea.com/product/productDetail.action?colCode=16&styleCode=NBPFGS110L)
+- Date: 2026-03-23
+- Images: 5 (`side`, `front`, `back`, `top`, `angle`)
+
 ## Disclaimer / 면책 조항
 
 All trademarks, logos, and images are the property of their respective owners. These images are used under fair use for educational and informational purposes related to running shoe reviews and comparisons.

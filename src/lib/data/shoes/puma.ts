@@ -637,6 +637,135 @@ export const pumaShoes: Shoe[] = [
     purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK5Yh' }],
   },
   {
+    id: 'puma-deviate-nitro-elite-4',
+    slug: 'puma-deviate-nitro-elite-4',
+    brand: 'Puma',
+    name: '디비에이트 나이트로 엘리트 4',
+    image: '/images/shoes/puma/deviatenitroelite4/side.webp',
+    images: [
+      '/images/shoes/puma/deviatenitroelite4/side.webp',
+      '/images/shoes/puma/deviatenitroelite4/front.webp',
+      '/images/shoes/puma/deviatenitroelite4/back.webp',
+      '/images/shoes/puma/deviatenitroelite4/angle.webp',
+      '/images/shoes/puma/deviatenitroelite4/detail.webp',
+    ],
+    status: 'new',
+    category: '레이싱',
+    rating: 5,
+    price: 289000,
+    description: '푸마의 최신 카본 레이싱화로, ATPU 기반 NITROFOAM ELITE와 PWRPLATE를 결합해 5K부터 마라톤까지 빠른 전개를 노리는 PR 체이서용 모델입니다.',
+    oneliner: '170g 초경량과 더 부드러워진 ATPU 폼, 푸마의 가장 현실적인 마라톤 슈퍼슈즈',
+    editorComment: '푸마 코리아 공식 스펙 기준 Deviate NITRO Elite 4는 170g(UK 8), 40/32mm 스택, 8mm 드롭, 권장 수명 400km의 최신 레이스데이 모델입니다. Believe in the Run 리뷰에서도 전작보다 확실히 더 가볍고 부드러워졌으며, Fast-R 3보다 덜 공격적이지만 훨씬 접근하기 쉬운 마라톤 슈퍼슈즈로 평가했습니다. 한국 러너 기준으로는 카본화 입문까지 노려볼 수 있는 타입이지만, 안정화 대체재로 보기엔 여전히 레이스 중심 플랫폼입니다.',
+    tags: ['레이싱', '카본 플레이트', 'NITROFOAM ELITE', '신규'],
+
+    specs: {
+      weight: 170,
+      cushioning: 8,
+      responsiveness: 10,
+      stability: 6,
+      drop: 8,
+      durability: 400,
+    },
+
+    biomechanics: {
+      stackHeight: {
+        heel: 40,
+        forefoot: 32,
+      },
+      drop: 8,
+      carbonPlate: true,
+      plateType: 'curved',
+      midsoleType: 'NITROFOAM ELITE (듀얼 레이어)',
+      optimalPace: '3:00-4:30 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'caution',
+      achillesTendinopathy: 'caution',
+      kneeIssues: 'caution',
+      shinSplints: 'good',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'fair',
+      wideOptions: false,
+      winterCompatibility: 'fair',
+      summerCompatibility: 'excellent',
+    },
+
+    targetUsers: {
+      recommended: ['5K~마라톤 레이스', 'PB 경신 목표 러너', '첫 카본 레이싱화 후보', '중족부 스트라이드 러너'],
+      notRecommended: ['일상 조깅', '회복 러닝', '강한 안정성 필요', '극단적으로 공격적인 토스프링 선호'],
+    },
+
+    features: [
+      'NITROFOAM ELITE 듀얼 레이어 미드솔',
+      'PWRPLATE 카본 플레이트',
+      'PUMAGRIP 아웃솔',
+      '170g 초경량 (UK 8 기준)',
+      '공식 권장 수명 400km',
+    ],
+
+    priceAnalysis: {
+      msrp: 289000,
+      streetPrice: 289000,
+      costPerKm: 723,
+      valueRating: 8,
+      priceTier: 'premium',
+      alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
+      valueAdvantages: ['최신 푸마 레이싱 플랫폼', '공식 170g 초경량', '풀마라톤 대응 스택', '공식몰 판매 확인'],
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 93,
+        text: '푸마 코리아 공식 정보 기준으로 Elite 4는 170g, 40/32mm, 8mm 드롭, 400km 수명을 제시하는 최신 레이스데이 모델입니다. 289,000원 가격은 상위 카본 레이싱화 시장에서 경쟁 가능한 수준이고, 5K부터 마라톤까지 명확히 레이스 전용으로 포지셔닝되어 있습니다. 로컬 데이터에는 아직 없던 최신 푸마 슈퍼슈즈라 우선 반영 가치가 높습니다.',
+        source: 'editor',
+        sourceUrl: 'https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06',
+      },
+      {
+        userType: 'Believe in the Run',
+        rating: 92,
+        text: 'Believe in the Run은 Elite 4를 전작보다 더 부드럽고 가벼운 업그레이드로 평가했고, 와이드한 발에도 true-to-size로 무난하며 Fast-R 3보다 훨씬 접근하기 쉬운 레이싱화라고 봤습니다. 특히 ATPU 폼이 더 생기 있게 압축-반발하고, 카본 플레이트 감각도 더 또렷해졌다는 점을 장점으로 꼽았습니다.',
+        source: 'editor',
+        sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',
+      },
+      {
+        userType: 'Believe in the Run',
+        rating: 88,
+        text: '단점으로는 평소의 푸마그립만큼 끈끈한 접지감이 아니라는 점과, Fast-R 3 같은 더 공격적인 토스프링을 기대한 러너에겐 살짝 무난하게 느껴질 수 있다는 점이 언급됐습니다. 그래도 최종 평가는 지금까지 나온 Deviate Elite 중 최고이자, 푸마의 가장 완성도 높은 마라톤 레이스화에 가깝다는 쪽입니다.',
+        source: 'editor',
+        sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',
+      },
+    ],
+
+    detailedSpecs: {
+      weight: '170g (UK 8 기준, 공식)',
+      stackHeight: '힐 40mm / 포어풋 32mm (공식)',
+      drop: '8mm (공식)',
+      midsole: 'ATPU 기반 NITROFOAM ELITE 쿠셔닝 (질소 주입 듀얼 레이어)',
+      plate: 'PWRPLATE 카본 플레이트',
+      outsole: 'PUMAGRIP 퍼포먼스 러버',
+      upper: 'ULTRAWEAVE + PWRTAPE',
+      width: '표준~약간 여유 (와이드 옵션 없음)',
+      durability: '400km (공식 권장 수명)',
+      price: '₩289,000 (공식몰)',
+      costPerKm: '약 ₩723/km (400km 기준)',
+      footType: '기록 지향 러너 / 중립 발 / 중족부 스트라이드 선호',
+      landingPattern: '중족부~전족부 착지',
+    },
+
+    similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
+    purchaseLinks: [{
+      store: '푸마 공식몰',
+      url: 'https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06',
+      price: 289000,
+      isOfficial: true,
+    }],
+  },
+  {
     id: 'puma-fast-r-nitro-elite-3',
     slug: 'puma-fast-r-nitro-elite-3',
     brand: 'Puma',
