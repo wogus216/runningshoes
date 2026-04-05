@@ -5,33 +5,36 @@ import { Beaker, ChevronRight, Sparkles } from 'lucide-react';
 
 export function GelBanner() {
   return (
-    <section className="relative overflow-hidden rounded-2xl bg-emerald-700 p-6 md:p-8 h-full">
+    <section className="relative h-full overflow-hidden rounded-[28px] border border-sky-950/20 bg-[linear-gradient(160deg,#0a1830_0%,#123253_52%,#0f766e_155%)] p-6 md:p-8">
+      <div className="pointer-events-none absolute inset-0">
+        <div className="absolute -left-3 bottom-0 h-28 w-28 rounded-full bg-teal-300/12 blur-2xl" />
+        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#22d3ee_0%,#14b8a6_52%,#38bdf8_100%)]" />
+      </div>
       <div className="flex flex-col justify-between h-full gap-4">
-        {/* 텍스트 영역 */}
         <div>
           <div className="flex items-center gap-2 mb-2">
-            <span className="inline-flex items-center gap-1 px-2.5 py-1 bg-white/15 text-white text-xs font-medium rounded-full">
+            <span className="inline-flex items-center gap-1 rounded-full bg-white/12 px-2.5 py-1 text-xs font-medium text-white">
               <Sparkles className="w-3 h-3" />
-              NEW
+              FUEL
             </span>
           </div>
-          <h2 className="text-xl md:text-2xl font-bold text-white mb-2">
+          <h2 className="mb-2 text-xl font-black tracking-tight text-white md:text-2xl">
             에너지 젤 가이드
           </h2>
-          <p className="text-emerald-100 text-sm leading-relaxed">
-            Maurten, GU, 양갱까지<br />
-            성분·위장·가성비 완전 분석
+          <p className="text-sm leading-relaxed text-cyan-100/90">
+            Maurten부터 양갱까지.
+            <br />
+            위장 부담과 가격까지 같이 봅니다.
           </p>
         </div>
 
-        {/* CTA 버튼 */}
         <Link
           href="/gels"
-          className="inline-flex items-center justify-center gap-2 bg-white text-emerald-700 px-6 py-3 rounded-full text-sm font-semibold hover:bg-emerald-50 transition group w-fit"
+          className="group inline-flex w-fit items-center justify-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-teal-800 transition hover:bg-cyan-50"
         >
           <Beaker className="w-4 h-4" />
           젤 비교하기
-          <ChevronRight className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
+          <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5" />
         </Link>
       </div>
     </section>

@@ -27,6 +27,13 @@ export function Footer() {
               </ul>
             </div>
             <div>
+              <h4 className="font-medium text-sm mb-3 text-primary">마라톤 대회</h4>
+              <ul className="space-y-2 text-sm text-secondary">
+                <li><Link href="/marathon" className="hover:text-primary transition">전체 일정</Link></li>
+                <li><Link href={{ pathname: '/marathon', query: { status: '접수중' } }} className="hover:text-primary transition">접수중 대회</Link></li>
+              </ul>
+            </div>
+            <div>
               <h4 className="font-medium text-sm mb-3 text-primary">가이드</h4>
               <ul className="space-y-2 text-sm text-secondary">
                 <li><Link href="/blog" className="hover:text-primary transition">전체 보기</Link></li>

@@ -6,22 +6,26 @@
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
 
 :root {
-  /* 프로토타입 디자인 시스템 */
-  --primary: #111111;
-  --secondary: #666666;
-  --tertiary: #767676; /* WCAG AA 준수: 4.54:1 대비 (이전 #999999는 2.85:1) */
-  --accent: #0066FF;
-  --positive: #00C853;
-  --warning: #FF9500;
+  /* Performance Editorial */
+  --primary: #0f172a;
+  --secondary: #475569;
+  --tertiary: #64748b;
+  --accent: #0ea5e9;
+  --positive: #0f766e;
+  --warning: #f97316;
   --negative: #FF3B30;
-  --surface: #F5F5F7;
-  --border: #E5E5E5;
-  --background: #FFFFFF;
-  --foreground: #111111;
+  --surface: #f7fbff;
+  --border: #dbe5f0;
+  --background: #f4f9fd;
+  --foreground: #0f172a;
 
-  /* 따뜻한 배경색 */
-  --bg-warm: #fafaf9; /* stone-50 */
-  --bg-warm-alt: #fffbeb; /* amber-50 */
+  --bg-warm: #f4f9fd;
+  --bg-warm-alt: #edf6ff;
+  --surface-strong: #e2f1fb;
+  --navy: #081226;
+  --navy-soft: #13233d;
+  --accent-soft: #d8eefb;
+  --accent-line: rgba(14, 165, 233, 0.18);
 
   /* shadcn 호환 변수 */
   --card: 0 0% 100%;
@@ -32,8 +36,8 @@
   --muted-foreground: 0 0% 40%;
   --destructive: 4 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --input: 0 0% 90%;
-  --ring: 213 100% 50%;
+  --input: 210 30% 90%;
+  --ring: 198 89% 48%;
   --radius: 1rem;
 }
 
@@ -59,7 +63,10 @@
 
   body {
     @apply min-h-screen antialiased;
-    background-color: var(--bg-warm);
+    background:
+      radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 26%),
+      radial-gradient(circle at 82% 4%, rgba(56, 189, 248, 0.08), transparent 18%),
+      linear-gradient(180deg, #f6fbff 0%, #f4f9fd 48%, #eef5fb 100%);
     color: var(--primary);
     font-feature-settings: "rlig" 1, "calt" 0;
     overflow-x: hidden;
@@ -115,10 +122,10 @@
 
   /* 섹션 카드 */
   .section-card {
-    background: linear-gradient(135deg, #ffffff 0%, #fffef9 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.98) 0%, rgba(245, 250, 255, 0.98) 100%);
     border-radius: 1rem;
-    border: 1px solid rgba(231, 229, 228, 0.8); /* stone-200 투명 */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+    border: 1px solid rgba(219, 229, 240, 0.9);
+    box-shadow: 0 10px 30px rgba(8, 18, 38, 0.05);
   }
 
   /* 다크모드 */

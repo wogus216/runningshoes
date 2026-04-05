@@ -30,12 +30,12 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
         {specs.map((spec, index) => (
           <div
             key={index}
-            className={`flex justify-between items-center p-3 rounded-lg ${
-              spec.highlight ? 'bg-accent/10 border border-accent/20' : 'bg-surface'
+            className={`flex items-center justify-between rounded-xl p-3 ${
+              spec.highlight ? 'border border-sky-200 bg-sky-50' : 'border border-stone-900/6 bg-[rgba(248,250,252,0.86)]'
             }`}
           >
             <span className="text-sm text-secondary">{spec.label}</span>
-            <span className={`text-sm font-medium ${spec.highlight ? 'text-accent' : 'text-primary'}`}>
+            <span className={`text-sm font-medium ${spec.highlight ? 'text-sky-700' : 'text-primary'}`}>
               {spec.value}
             </span>
           </div>
@@ -43,22 +43,22 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
       </div>
 
       {/* 주요 영양소 하이라이트 */}
-      <div className="mt-6 p-4 bg-surface rounded-xl">
+      <div className="mt-6 rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
         <h3 className="text-sm font-bold text-primary mb-3">주요 영양소</h3>
         <div className="space-y-2 text-sm text-secondary">
           <p>
-            <span className="text-accent font-medium">탄수화물:</span>{' '}
+            <span className="font-medium text-sky-700">탄수화물:</span>{' '}
             {nutrition.carbSource}
           </p>
           {nutrition.glucoseFructoseRatio && (
             <p>
-              <span className="text-accent font-medium">비율:</span>{' '}
+              <span className="font-medium text-sky-700">비율:</span>{' '}
               {nutrition.glucoseFructoseRatio} (포도당:과당)
             </p>
           )}
           {nutrition.caffeine > 0 && (
             <p>
-              <span className="text-warning font-medium">카페인:</span>{' '}
+              <span className="font-medium text-amber-700">카페인:</span>{' '}
               {nutrition.caffeine}mg (커피 약 {Math.round(nutrition.caffeine / 100)}잔)
             </p>
           )}

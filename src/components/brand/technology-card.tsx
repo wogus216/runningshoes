@@ -22,8 +22,8 @@ export function TechnologyCard({ technology, isSelected, onSelect, shoeCount }: 
     <div
       className={`section-card p-6 transition-all duration-200 cursor-pointer ${
         isSelected
-          ? `ring-2 ${colorClasses.border.replace('border-', 'ring-')} ${colorClasses.bg}`
-          : 'hover:border-accent/30'
+          ? `ring-2 ${colorClasses.border.replace('border-', 'ring-')} ${colorClasses.bg} shadow-[0_18px_34px_-28px_rgba(8,18,38,0.24)]`
+          : 'hover:border-sky-200 hover:bg-white/92'
       }`}
       onClick={onSelect}
     >
@@ -121,7 +121,7 @@ export function TechnologyCard({ technology, isSelected, onSelect, shoeCount }: 
 
       {/* 적용 신발 수 - 클릭 유도 */}
       {shoeCount !== undefined && shoeCount > 0 && (
-        <div className={`flex items-center gap-2 px-3 py-2 rounded-lg ${isSelected ? 'bg-white/50' : colorClasses.bg} mb-4`}>
+        <div className={`mb-4 flex items-center gap-2 rounded-lg px-3 py-2 ${isSelected ? 'bg-white/70' : colorClasses.bg}`}>
           <MousePointerClick className={`w-4 h-4 ${colorClasses.text}`} />
           <span className={`text-xs font-medium ${colorClasses.text}`}>
             {shoeCount}개 신발에 적용 · 클릭해서 보기
@@ -145,7 +145,7 @@ export function TechnologyCard({ technology, isSelected, onSelect, shoeCount }: 
           e.stopPropagation(); // 카드 선택 이벤트 방지
           setIsExpanded(!isExpanded);
         }}
-        className="w-full mt-4 pt-3 border-t border-border flex items-center justify-center gap-1 text-xs text-tertiary hover:text-accent transition"
+        className="mt-4 flex w-full items-center justify-center gap-1 border-t border-sky-100 pt-3 text-xs text-tertiary transition hover:text-sky-700"
       >
         {isExpanded ? (
           <>

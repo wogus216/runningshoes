@@ -15,10 +15,10 @@ export function HeroSection({ gel }: HeroSectionProps) {
   // GI 편안함 등급에 따른 색상
   const getGIColor = () => {
     switch (gel.giTolerance.overall) {
-      case 'excellent': return 'text-positive';
-      case 'good': return 'text-accent';
-      case 'moderate': return 'text-warning';
-      case 'poor': return 'text-negative';
+      case 'excellent': return 'text-sky-700';
+      case 'good': return 'text-sky-700';
+      case 'moderate': return 'text-amber-700';
+      case 'poor': return 'text-rose-600';
       default: return 'text-primary';
     }
   };
@@ -52,10 +52,10 @@ export function HeroSection({ gel }: HeroSectionProps) {
   };
 
   return (
-    <section className="section-card p-4 md:p-6 lg:p-8">
+    <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] md:p-6 lg:p-8">
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {/* 이미지 */}
-        <div className="flex items-center justify-center bg-surface rounded-2xl p-6 md:p-8">
+        <div className="flex items-center justify-center rounded-2xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
           {gel.image ? (
             <Image
               src={gel.image}
@@ -76,9 +76,9 @@ export function HeroSection({ gel }: HeroSectionProps) {
         <div className="flex flex-col justify-center">
           {/* 브랜드 & 카테고리 */}
           <div className="flex items-center gap-2 mb-3">
-            <span className="text-sm text-secondary">{gel.brand}</span>
+            <span className="text-sm font-medium text-sky-700">{gel.brand}</span>
             <span className="text-secondary">·</span>
-            <span className="text-sm px-2 py-0.5 bg-surface rounded text-primary">{gel.category}</span>
+            <span className="rounded bg-sky-50 px-2 py-0.5 text-sm text-primary">{gel.category}</span>
           </div>
 
           {/* 이름 */}
@@ -129,7 +129,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  className="inline-flex items-center gap-1.5 px-4 py-2 bg-accent text-white rounded-lg text-sm font-medium hover:opacity-90 transition"
+                  className="inline-flex items-center gap-1.5 rounded-full bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
                 >
                   {link.store}에서 구매
                   <ExternalLink className="w-3.5 h-3.5" />
@@ -147,29 +147,29 @@ export function HeroSection({ gel }: HeroSectionProps) {
 
           {/* 빠른 스탯 */}
           <div className="grid grid-cols-5 gap-2">
-            <div className="bg-surface rounded-lg p-2 text-center">
+            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
               <Zap className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.calories}</p>
               <p className="text-[10px] text-tertiary">kcal</p>
             </div>
-            <div className="bg-surface rounded-lg p-2 text-center">
+            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
               <Droplets className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.totalCarbs}g</p>
               <p className="text-[10px] text-tertiary">탄수화물</p>
             </div>
-            <div className="bg-surface rounded-lg p-2 text-center">
+            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
               <Coffee className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.caffeine}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
-            <div className="bg-surface rounded-lg p-2 text-center">
+            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
               <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
                 <span className="text-xs">🧂</span>
               </div>
               <p className="text-sm font-bold text-primary">{nutrition.sodium}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
-            <div className="bg-surface rounded-lg p-2 text-center">
+            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
               <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
                 <span className="text-xs">🫃</span>
               </div>

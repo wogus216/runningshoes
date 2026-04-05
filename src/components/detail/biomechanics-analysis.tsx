@@ -14,10 +14,10 @@ type BiomechCardProps = {
 
 function BiomechCard({ title, value, description }: BiomechCardProps) {
   return (
-    <div className="bg-stone-50 rounded-2xl p-6 border-l-4 border-stone-400">
-      <h4 className="text-lg font-bold text-stone-700 mb-3">{title}</h4>
-      <div className="text-3xl font-black text-gray-900 mb-3">{value}</div>
-      <p className="text-gray-600 leading-relaxed">{description}</p>
+    <div className="rounded-[26px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.5)]">
+      <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">{title}</p>
+      <div className="mb-3 mt-3 text-3xl font-black tracking-tight text-slate-950">{value}</div>
+      <p className="text-sm leading-7 text-slate-600">{description}</p>
     </div>
   );
 }
@@ -94,11 +94,14 @@ function getRunningEconomyInsight(weight?: number): string {
 export function BiomechanicsAnalysis({ biomechanics, weight }: BiomechanicsAnalysisProps) {
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl font-black flex items-center gap-4">
-        <Microscope className="h-8 w-8 text-stone-700" />
-        생체역학적 분석
-      </h2>
-      <p className="text-gray-600">과학적 연구 기반 신발 특성 분석</p>
+      <div className="space-y-2">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Biomechanics</p>
+        <h2 className="flex items-center gap-3 text-3xl font-black tracking-tight text-slate-950">
+          <Microscope className="h-7 w-7 text-stone-700" />
+          주행 감각의 구조
+        </h2>
+        <p className="text-sm leading-relaxed text-slate-600">쿠셔닝 높이, 드롭, 플레이트, 폼 조합이 어떤 주행 성향을 만드는지 정리했습니다.</p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <BiomechCard
@@ -130,12 +133,12 @@ export function BiomechanicsAnalysis({ biomechanics, weight }: BiomechanicsAnaly
         />
       </div>
 
-      <div className="bg-gradient-to-br from-[stone-60010] to-[stone-60020] border-l-4 border-[stone-600] rounded-xl p-5">
-        <div className="font-bold text-stone-700 mb-2 text-lg flex items-center gap-2">
+      <div className="rounded-[26px] border border-blue-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
+        <div className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
           <Lightbulb className="h-5 w-5" />
           러닝 이코노미 영향
         </div>
-        <p className="text-gray-700 leading-relaxed">
+        <p className="text-sm leading-7 text-slate-700">
           {getRunningEconomyInsight(weight)}
         </p>
       </div>

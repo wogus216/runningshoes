@@ -22,10 +22,10 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
   }
 
   return (
-    <section className="section-card p-6 border-warning/30">
+    <section className="rounded-[30px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(236,248,255,0.98),rgba(255,255,255,0.95))] p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.24)]">
       <div className="flex items-center gap-3 mb-4">
-        <div className="p-2 rounded-xl bg-warning/10">
-          <Shield className="h-5 w-5 text-warning" />
+        <div className="rounded-xl bg-sky-50 p-2">
+          <Shield className="h-5 w-5 text-sky-700" />
         </div>
         <div>
           <h3 className="text-lg font-bold text-primary">부상별 맞춤 분석</h3>
@@ -46,7 +46,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
               key={injuryKey}
               className={cn(
                 "rounded-xl border overflow-hidden transition-all",
-                isExpanded ? "border-warning bg-white" : "border-border bg-surface"
+                isExpanded ? "border-sky-200 bg-white" : "border-border bg-surface"
               )}
             >
               <button
@@ -56,11 +56,11 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                 <div className="flex items-center gap-3">
                   <div className={cn(
                     "w-10 h-10 rounded-full flex items-center justify-center",
-                    isExpanded ? "bg-warning/10" : "bg-surface"
+                    isExpanded ? "bg-sky-50" : "bg-surface"
                   )}>
                     <AlertTriangle className={cn(
                       "h-5 w-5",
-                      isExpanded ? "text-warning" : "text-tertiary"
+                      isExpanded ? "text-sky-700" : "text-tertiary"
                     )} />
                   </div>
                   <span className="font-semibold text-primary">{injury.name}</span>
@@ -76,7 +76,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                   {/* 추천 신발 TOP 3 */}
                   <div>
                     <p className="text-sm font-semibold text-primary mb-3 flex items-center gap-2">
-                      <Star className="h-4 w-4 text-warning" />
+                      <Star className="h-4 w-4 text-sky-700" />
                       {injury.name} 예방에 좋은 신발 TOP 3
                     </p>
                     {topShoes.length > 0 ? (
@@ -85,18 +85,18 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                           <Link
                             key={shoe.id || shoe.slug}
                             href={`/shoes/${shoe.slug}`}
-                            className="flex items-center gap-3 p-3 rounded-xl bg-surface hover:bg-border/50 transition-colors group"
+                            className="group flex items-center gap-3 rounded-xl bg-surface p-3 transition-colors hover:bg-sky-50/60"
                           >
                             <span className={cn(
                               "w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold",
-                              idx === 0 ? "bg-warning text-white" :
-                              idx === 1 ? "bg-tertiary text-white" :
-                              "bg-warning/20 text-warning"
+                              idx === 0 ? "bg-[var(--navy)] text-white" :
+                              idx === 1 ? "bg-sky-100 text-sky-700" :
+                              "bg-slate-100 text-slate-700"
                             )}>
                               {idx + 1}
                             </span>
                             <div className="flex-1 min-w-0">
-                              <p className="font-medium text-primary truncate group-hover:text-accent">
+                              <p className="truncate font-medium text-primary group-hover:text-sky-700">
                                 {shoe.brand} {shoe.name}
                               </p>
                               <p className="text-xs text-tertiary">{shoe.category}</p>
@@ -105,8 +105,8 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                               <span className={cn(
                                 "text-xs px-2 py-1 rounded-full font-medium",
                                 shoe.injuryPrevention?.[injuryKey as keyof typeof shoe.injuryPrevention] === 'excellent'
-                                  ? "bg-positive/10 text-positive"
-                                  : "bg-accent/10 text-accent"
+                                  ? "bg-sky-50 text-sky-700"
+                                  : "bg-slate-100 text-slate-700"
                               )}>
                                 {shoe.injuryPrevention?.[injuryKey as keyof typeof shoe.injuryPrevention] === 'excellent'
                                   ? '매우 좋음'
@@ -125,14 +125,14 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
 
                   {/* 관리 팁 */}
                   <div>
-                    <p className="text-sm font-semibold text-positive mb-2 flex items-center gap-2">
+                    <p className="mb-2 flex items-center gap-2 text-sm font-semibold text-sky-700">
                       <Check className="h-4 w-4" />
                       신발 선택 팁
                     </p>
                     <ul className="space-y-1.5">
                       {injury.tips.map((tip, idx) => (
                         <li key={idx} className="flex items-start gap-2 text-sm text-secondary">
-                          <span className="text-positive mt-0.5">•</span>
+                          <span className="mt-0.5 text-sky-700">•</span>
                           {tip}
                         </li>
                       ))}

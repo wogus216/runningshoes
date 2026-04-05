@@ -42,13 +42,16 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
   if (similarShoesData.length === 0) return null;
 
   return (
-    <section className="section-card p-6">
-      <div className="flex items-center justify-between mb-5">
-        <h2 className="font-bold text-primary">비슷한 신발</h2>
+    <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+      <div className="mb-5 flex items-center justify-between">
+        <div>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Similar Picks</p>
+          <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">비슷한 신발</h2>
+        </div>
         {selectedSlugs.length > 0 && (
           <Link
             href={getCompareUrl()}
-            className="flex items-center gap-2 px-4 py-2 bg-accent text-white rounded-full text-sm font-medium hover:opacity-90 transition"
+            className="flex items-center gap-2 rounded-full bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
           >
             {selectedSlugs.length}개 비교하기
             <ChevronRight className="w-4 h-4" />
@@ -58,8 +61,8 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
 
       {/* 현재 신발 (항상 선택됨) */}
       <div className="mb-4">
-        <p className="text-xs text-tertiary mb-2">현재 보고 있는 신발</p>
-        <div className="bg-accent/5 border-2 border-accent rounded-xl p-4 flex items-center gap-4">
+        <p className="mb-2 text-xs text-tertiary">현재 보고 있는 신발</p>
+        <div className="flex items-center gap-4 rounded-[24px] border border-sky-200 bg-sky-50/70 p-4">
           <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
             {currentShoe.image ? (
               <Image
@@ -77,12 +80,12 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
             <p className="text-sm font-medium text-primary">{currentShoe.name}</p>
             <p className="text-xs text-tertiary">{currentShoe.brand} · ₩{currentShoe.price?.toLocaleString()}</p>
           </div>
-          <span className="px-2.5 py-1 bg-accent text-white text-xs font-medium rounded-full flex-shrink-0">기준</span>
+          <span className="flex-shrink-0 rounded-full bg-[var(--navy)] px-2.5 py-1 text-xs font-medium text-white">기준</span>
         </div>
       </div>
 
       {/* 비교할 신발 선택 */}
-      <p className="text-xs text-tertiary mb-2">비교할 신발 선택 (최대 2개)</p>
+      <p className="mb-2 text-xs text-tertiary">비교할 신발 선택 (최대 2개)</p>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
         {similarShoesData.map((shoe) => {
           const isSelected = selectedSlugs.includes(shoe.slug || '');
@@ -94,12 +97,12 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
               onClick={() => canSelect && handleToggleShoe(shoe.slug || '')}
               disabled={!canSelect}
               className={cn(
-                "bg-surface rounded-xl p-4 flex items-center gap-4 border-2 transition text-left w-full",
+                "flex w-full items-center gap-4 rounded-[24px] p-4 text-left transition border",
                 isSelected
-                  ? "border-accent bg-accent/5"
+                  ? "border-sky-300 bg-sky-50/70"
                   : canSelect
-                  ? "border-transparent hover:border-accent/30"
-                  : "border-transparent opacity-50 cursor-not-allowed"
+                  ? "border-sky-100 bg-white/78 hover:border-sky-300"
+                  : "border-stone-900/10 bg-white/60 opacity-50 cursor-not-allowed"
               )}
             >
               <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
@@ -119,11 +122,11 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                 <p className="text-sm font-medium text-primary">{shoe.name}</p>
                 <p className="text-xs text-tertiary">{shoe.brand} · ₩{shoe.price?.toLocaleString()}</p>
                 <div className="flex gap-1 mt-1 flex-wrap">
-                  <span className="text-xs px-1.5 py-0.5 bg-positive/10 text-positive rounded">
+                  <span className="rounded-full bg-sky-50 px-2 py-0.5 text-xs text-sky-700">
                     {shoe.category || currentCategory}
                   </span>
                   {shoe.specs?.weight && (
-                    <span className="text-xs px-1.5 py-0.5 bg-surface text-tertiary rounded border border-border">
+                    <span className="rounded-full border border-border bg-surface px-2 py-0.5 text-xs text-tertiary">
                       {shoe.specs.weight}g
                     </span>
                   )}
@@ -133,7 +136,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                 className={cn(
                   "w-6 h-6 rounded-full border-2 flex items-center justify-center flex-shrink-0 transition",
                   isSelected
-                    ? "bg-accent border-accent"
+                    ? "bg-[var(--navy)] border-[var(--navy)]"
                     : "border-border"
                 )}
               >
@@ -146,14 +149,14 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
 
       {/* 빠른 비교 미리보기 */}
       {selectedShoes.length > 0 && (
-        <div className="mt-6 pt-6 border-t border-border">
-          <h3 className="font-semibold text-sm mb-4 text-primary">빠른 비교</h3>
+        <div className="mt-6 border-t border-border pt-6">
+          <h3 className="mb-4 text-sm font-semibold text-primary">빠른 비교</h3>
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-border">
                   <th className="text-left py-2 pr-4 font-medium text-tertiary"></th>
-                  <th className="text-center py-2 px-3 font-medium text-accent">
+                  <th className="text-center py-2 px-3 font-medium text-sky-700">
                     {currentShoe.name}
                   </th>
                   {selectedShoes.map((shoe) => (
@@ -172,7 +175,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                   {selectedShoes.map((shoe) => (
                     <td key={shoe.slug} className={cn(
                       "text-center py-2.5 px-3",
-                      (shoe.price || 0) < (currentShoe.price || 0) && "text-positive font-medium"
+                      (shoe.price || 0) < (currentShoe.price || 0) && "font-medium text-sky-700"
                     )}>
                       ₩{shoe.price?.toLocaleString()}
                     </td>
@@ -186,7 +189,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                   {selectedShoes.map((shoe) => (
                     <td key={shoe.slug} className={cn(
                       "text-center py-2.5 px-3",
-                      (shoe.specs?.weight || 999) < (currentShoe.specs?.weight || 0) && "text-positive font-medium"
+                      (shoe.specs?.weight || 999) < (currentShoe.specs?.weight || 0) && "font-medium text-sky-700"
                     )}>
                       {shoe.specs?.weight}g
                     </td>
@@ -230,7 +233,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           </div>
           <Link
             href={getCompareUrl()}
-            className="w-full mt-4 py-3 bg-primary text-white rounded-xl text-sm font-medium hover:opacity-90 transition flex items-center justify-center gap-2"
+            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-medium text-white transition hover:opacity-90"
           >
             상세 비교 페이지로 이동
             <ChevronRight className="w-4 h-4" />
@@ -243,11 +246,11 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
 
 function SpecBar({ value, color = 'blue' }: { value: number; color?: 'blue' | 'green' }) {
   return (
-    <span className="inline-block w-16 h-1.5 bg-border rounded-full overflow-hidden">
+    <span className="inline-block h-1.5 w-16 overflow-hidden rounded-full bg-sky-100">
       <span
         className={cn(
           "block h-full rounded-full",
-          color === 'green' ? "bg-positive" : "bg-accent"
+          color === 'green' ? "bg-slate-700" : "bg-sky-600"
         )}
         style={{ width: `${value}%` }}
       />
@@ -257,9 +260,9 @@ function SpecBar({ value, color = 'blue' }: { value: number; color?: 'blue' | 'g
 
 function ToeboxBadge({ width }: { width?: string }) {
   const labels: Record<string, { text: string; color: string }> = {
-    narrow: { text: '좁음', color: 'text-warning' },
+    narrow: { text: '좁음', color: 'text-amber-700' },
     standard: { text: '표준', color: 'text-primary' },
-    wide: { text: '넓음', color: 'text-positive' },
+    wide: { text: '넓음', color: 'text-sky-700' },
   };
   const info = labels[width || 'standard'] || labels.standard;
   return <span className={info.color}>{info.text}</span>;

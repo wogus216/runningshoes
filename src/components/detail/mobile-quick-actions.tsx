@@ -25,23 +25,23 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
   if (!isVisible) return null;
 
   // 첫 번째 구매 링크 (공식몰 우선)
-  const primaryLink = shoe.purchaseLinks?.sort((a, b) => {
+  const primaryLink = [...(shoe.purchaseLinks || [])].sort((a, b) => {
     if (a.isOfficial && !b.isOfficial) return -1;
     if (!a.isOfficial && b.isOfficial) return 1;
     return 0;
   })[0];
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-border py-3 px-4 z-50">
-      <div className="max-w-5xl mx-auto flex items-center justify-between">
-        <div>
+    <div className="fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+4rem)] z-40 md:hidden">
+      <div className="mx-auto flex max-w-5xl items-center justify-between rounded-[28px] border border-stone-900/10 bg-white/94 px-4 py-3 shadow-[0_26px_50px_-28px_rgba(15,23,42,0.55)] backdrop-blur-xl">
+        <div className="min-w-0 pr-3">
           <p className="font-bold text-primary">₩{shoe.price?.toLocaleString()}</p>
-          <p className="text-xs text-tertiary">{shoe.name}</p>
+          <p className="truncate text-xs text-tertiary">{shoe.name}</p>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-shrink-0 items-center gap-2">
           <Link
             href={`/compare?shoes=${shoe.slug}`}
-            className="px-4 py-2.5 border border-border rounded-full text-sm font-medium hover:bg-surface transition text-primary"
+            className="rounded-full border border-stone-900/10 px-4 py-2.5 text-sm font-medium text-primary transition hover:bg-surface"
           >
             + 비교함
           </Link>
@@ -50,7 +50,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
               href={primaryLink.url}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="px-5 py-2.5 bg-primary text-white rounded-full text-sm font-medium hover:opacity-90 transition flex items-center gap-1.5"
+              className="flex items-center gap-1.5 rounded-full bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
             >
               구매처 보기
               <ExternalLink className="h-3.5 w-3.5" />

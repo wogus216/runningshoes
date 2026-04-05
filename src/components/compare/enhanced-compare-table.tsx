@@ -24,8 +24,8 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
   const maxVal = Math.max(...numericValues);
 
   return (
-    <tr className="border-b border-slate-100">
-      <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50 whitespace-nowrap">
+    <tr className="border-b border-sky-100">
+      <td className="whitespace-nowrap bg-sky-50 py-3 px-4 text-sm font-medium text-slate-600">
         {label}
       </td>
       {values.map((value, idx) => {
@@ -40,7 +40,7 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
             key={idx}
             className={cn(
               "py-3 px-4 text-sm text-center",
-              isHighlighted && "bg-emerald-50 text-emerald-700 font-semibold"
+              isHighlighted && "bg-sky-50 text-sky-700 font-semibold"
             )}
           >
             {format ? format(value) : value}
@@ -55,8 +55,8 @@ function LevelBadge({ level }: { level: string | undefined }) {
   if (!level) return <span className="text-slate-300">-</span>;
 
   const colors: Record<string, string> = {
-    excellent: 'bg-emerald-100 text-emerald-700',
-    good: 'bg-stone-100 text-stone-700',
+    excellent: 'bg-sky-100 text-sky-700',
+    good: 'bg-slate-100 text-slate-700',
     fair: 'bg-amber-100 text-amber-700',
     poor: 'bg-red-100 text-red-700',
     caution: 'bg-amber-100 text-amber-700',
@@ -85,13 +85,13 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
   const widthLabels: Record<string, string> = { narrow: '좁음', standard: '표준', wide: '넓음' };
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white overflow-hidden">
-      {/* 헤더 (항상 보임) */}
+    <div className="overflow-hidden rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(241,248,255,0.95))] shadow-[0_18px_36px_-30px_rgba(8,18,38,0.18)]">
       <div className="p-4">
+        <div className="mb-4 h-1 rounded-full bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_58%,#f97316_100%)]" />
         <div className="flex items-start justify-between">
           <div className="flex-1">
-            <p className="text-xs font-medium text-slate-500 uppercase">{shoe.brand}</p>
-            <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-slate-900 hover:text-[stone-600]">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">{shoe.brand}</p>
+            <Link href={`/shoes/${shoe.slug}`} className="text-lg font-black tracking-tight text-slate-950 hover:text-sky-700">
               {shoe.name}
             </Link>
             <p className="text-sm text-slate-400">{shoe.category}</p>
@@ -99,7 +99,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           {onRemove && (
             <button
               onClick={() => onRemove(shoe.id || shoe.slug || '')}
-              className="p-2 min-w-[44px] min-h-[44px] flex items-center justify-center rounded-full bg-slate-100 text-slate-400 hover:bg-red-100 hover:text-red-500"
+              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-sky-50 p-2 text-slate-400 hover:bg-red-100 hover:text-red-500"
               aria-label={`${shoe.name} 비교에서 제거`}
             >
               <X className="h-5 w-5" />
@@ -107,30 +107,28 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           )}
         </div>
 
-        {/* 핵심 정보 (항상 보임) */}
         <div className="grid grid-cols-4 gap-2 mt-4">
-          <div className="text-center bg-slate-50 rounded-lg p-2">
+          <div className="rounded-2xl bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">가격</p>
             <p className="font-bold text-xs">{shoe.priceAnalysis?.msrp ? `${Math.round(shoe.priceAnalysis.msrp / 10000)}만` : '-'}</p>
           </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
+          <div className="rounded-2xl bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">평점</p>
             <p className="font-bold text-xs">{shoe.rating}</p>
           </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
+          <div className="rounded-2xl bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">무게</p>
             <p className="font-bold text-xs">{shoe.specs?.weight ? `${shoe.specs.weight}g` : '-'}</p>
           </div>
-          <div className="text-center bg-slate-50 rounded-lg p-2">
+          <div className="rounded-2xl bg-sky-50 p-2 text-center">
             <p className="text-[10px] text-slate-500">쿠션</p>
             <p className="font-bold text-xs">{shoe.specs?.cushioning || '-'}</p>
           </div>
         </div>
 
-        {/* 더보기/접기 버튼 */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="w-full mt-4 py-3 flex items-center justify-center gap-2 text-sm font-medium text-[stone-600] bg-[stone-600]/5 rounded-xl hover:bg-[stone-600]/10 transition-colors min-h-[44px]"
+          className="mt-4 flex min-h-[44px] w-full items-center justify-center gap-2 rounded-xl bg-sky-50 py-3 text-sm font-medium text-sky-800 transition-colors hover:bg-sky-100"
         >
           {isExpanded ? (
             <>
@@ -146,88 +144,84 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
 
       {/* 확장된 상세 정보 */}
       {isExpanded && (
-        <div className="border-t border-slate-100 p-4 space-y-4 bg-slate-50/50 animate-fade-in-up">
-          {/* 전체 스펙 */}
+        <div className="animate-fade-in-up space-y-4 border-t border-sky-100 bg-sky-50/40 p-4">
           <div>
-            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">전체 스펙</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">전체 스펙</p>
             <div className="grid grid-cols-3 gap-2">
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">반응성</p>
                 <p className="font-semibold text-sm">{shoe.specs?.responsiveness ? `${shoe.specs.responsiveness}/10` : '-'}</p>
               </div>
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">안정성</p>
                 <p className="font-semibold text-sm">{shoe.specs?.stability ? `${shoe.specs.stability}/10` : '-'}</p>
               </div>
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">내구성</p>
                 <p className="font-semibold text-sm">{shoe.specs?.durability ? `${shoe.specs.durability}km` : '-'}</p>
               </div>
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">드롭</p>
                 <p className="font-semibold text-sm">{shoe.biomechanics?.drop ? `${shoe.biomechanics.drop}mm` : '-'}</p>
               </div>
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">카본</p>
                 <p className="font-semibold text-sm">{shoe.biomechanics?.carbonPlate ? '있음' : '없음'}</p>
               </div>
-              <div className="text-center bg-white rounded-lg p-2 border border-slate-100">
+              <div className="rounded-lg border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">가성비</p>
                 <p className="font-semibold text-sm">{shoe.priceAnalysis?.valueRating ? `${shoe.priceAnalysis.valueRating}/10` : '-'}</p>
               </div>
             </div>
           </div>
 
-          {/* 부상 예방 */}
           <div>
-            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">부상 예방</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">부상 예방</p>
             <div className="grid grid-cols-2 gap-2">
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">족저근막염</span>
                 <LevelBadge level={shoe.injuryPrevention?.plantarFasciitis} />
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">아킬레스</span>
                 <LevelBadge level={shoe.injuryPrevention?.achillesTendinopathy} />
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">무릎</span>
                 <LevelBadge level={shoe.injuryPrevention?.kneeIssues} />
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">정강이</span>
                 <LevelBadge level={shoe.injuryPrevention?.shinSplints} />
               </div>
             </div>
           </div>
 
-          {/* 한국인 발 적합도 */}
           <div>
-            <p className="text-xs font-semibold text-slate-500 uppercase mb-2">한국인 발 적합도</p>
+            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">한국인 발 적합도</p>
             <div className="grid grid-cols-2 gap-2">
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">발볼</span>
                 <span className="text-sm font-medium">{shoe.koreanFootFit?.toBoxWidth ? widthLabels[shoe.koreanFootFit.toBoxWidth] : '-'}</span>
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">평발</span>
                 <LevelBadge level={shoe.koreanFootFit?.flatFootCompatibility} />
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">와이드 옵션</span>
                 <span className="text-sm font-medium">{shoe.koreanFootFit?.wideOptions ? '있음' : '없음'}</span>
               </div>
-              <div className="flex items-center justify-between bg-white rounded-lg p-2 border border-slate-100">
+              <div className="flex items-center justify-between rounded-lg border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">km당 비용</span>
                 <span className="text-sm font-medium">{shoe.priceAnalysis?.costPerKm ? `₩${shoe.priceAnalysis.costPerKm}` : '-'}</span>
               </div>
             </div>
           </div>
 
-          {/* 상세 페이지 링크 */}
           <Link
             href={`/shoes/${shoe.slug}`}
-            className="block w-full py-3 text-center text-sm font-semibold text-white bg-[stone-600] rounded-xl hover:bg-[stone-600]/90 transition-colors min-h-[44px]"
+            className="block min-h-[44px] w-full rounded-xl bg-[var(--navy)] py-3 text-center text-sm font-semibold text-white transition-colors hover:bg-[var(--navy-soft)]"
           >
             상세 페이지 보기
           </Link>
@@ -249,18 +243,18 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
   return (
     <>
       {/* 모바일 카드 뷰 */}
-      <div className="md:hidden space-y-4">
+      <div className="space-y-4 md:hidden">
         {shoes.map(shoe => (
           <MobileCompareCard key={shoe.id || shoe.slug} shoe={shoe} onRemove={onRemove} />
         ))}
       </div>
 
       {/* 데스크톱 테이블 뷰 */}
-      <div className="hidden md:block overflow-x-auto">
+      <div className="hidden overflow-x-auto md:block">
         <table className="w-full min-w-[600px]">
           <thead>
-            <tr className="border-b-2 border-slate-200">
-              <th className="py-4 px-4 text-left text-sm font-semibold text-slate-900 bg-slate-50 w-40">
+            <tr className="border-b-2 border-sky-100">
+              <th className="w-40 bg-sky-50 py-4 px-4 text-left text-sm font-semibold text-slate-900">
                 항목
               </th>
               {shoes.map(shoe => (

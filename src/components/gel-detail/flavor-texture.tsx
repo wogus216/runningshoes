@@ -11,20 +11,20 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
 
   // 점도에 따른 색상
   const getViscosityColor = (viscosity: number) => {
-    if (viscosity <= 3) return 'bg-accent';
-    if (viscosity <= 6) return 'bg-warning';
-    return 'bg-positive';
+    if (viscosity <= 3) return 'bg-sky-500';
+    if (viscosity <= 6) return 'bg-amber-500';
+    return 'bg-slate-700';
   };
 
   // 맛 피로도 색상
   const getTasteFatigueColor = () => {
     switch (flavor.tasteFatigueRisk) {
       case '낮음':
-        return 'text-positive';
+        return 'text-sky-700';
       case '보통':
-        return 'text-warning';
+        return 'text-amber-700';
       case '높음':
-        return 'text-negative';
+        return 'text-rose-600';
       default:
         return 'text-primary';
     }
@@ -37,14 +37,14 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       {/* 맛 옵션 */}
       <div className="mb-5">
         <div className="flex items-center gap-2 mb-3">
-          <Utensils className="w-4 h-4 text-accent" />
+          <Utensils className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">맛 옵션</h3>
         </div>
         <div className="flex flex-wrap gap-2">
           {flavor.flavors.map((flavorName, index) => (
             <span
               key={index}
-              className="px-3 py-1.5 bg-accent/10 border border-accent/20 text-accent rounded-lg text-sm font-medium"
+              className="rounded-lg border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700"
             >
               {flavorName}
             </span>
@@ -53,7 +53,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       </div>
 
       {/* 식감 */}
-      <div className="bg-surface rounded-xl p-4 mb-4">
+      <div className="mb-4 rounded-xl border border-sky-100 bg-white/82 p-4">
         <h3 className="text-sm font-bold text-primary mb-2">식감</h3>
         <p className="text-secondary text-sm">{flavor.texture}</p>
       </div>
@@ -61,11 +61,11 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       {/* 점도 바 */}
       <div className="mb-5">
         <div className="flex items-center gap-2 mb-3">
-          <Droplet className="w-4 h-4 text-accent" />
+          <Droplet className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">점도</h3>
           <span className="text-sm text-secondary ml-auto">{flavor.viscosity}/10</span>
         </div>
-        <div className="h-3 bg-surface rounded-full overflow-hidden">
+        <div className="h-3 overflow-hidden rounded-full bg-sky-100">
           <div
             className={cn(
               "h-full transition-all rounded-full",
@@ -81,7 +81,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       </div>
 
       {/* 뒷맛 */}
-      <div className="bg-surface rounded-xl p-4 mb-4">
+      <div className="mb-4 rounded-xl border border-sky-100 bg-white/82 p-4">
         <h3 className="text-sm font-bold text-primary mb-2">뒷맛</h3>
         <p className="text-secondary text-sm">{flavor.aftertaste}</p>
       </div>
@@ -90,9 +90,9 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       <div
         className={cn(
           "rounded-xl p-4 border",
-          flavor.tasteFatigueRisk === '낮음' ? 'bg-positive/5 border-positive/20' :
-          flavor.tasteFatigueRisk === '보통' ? 'bg-warning/5 border-warning/20' :
-          'bg-negative/5 border-negative/20'
+          flavor.tasteFatigueRisk === '낮음' ? 'border-sky-200 bg-sky-50' :
+          flavor.tasteFatigueRisk === '보통' ? 'border-amber-200 bg-amber-50' :
+          'border-rose-200 bg-rose-50'
         )}
       >
         <h3 className="text-sm font-bold text-primary mb-2">맛 피로도</h3>

@@ -55,16 +55,18 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
   });
 
   return (
-    <section className="space-y-4">
-      <h2 className="text-2xl font-bold flex items-center gap-3">
-        <ExternalLink className="h-6 w-6 text-stone-600" />
-        구매처
-      </h2>
+    <section className="space-y-5">
+      <div className="space-y-2">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
+        <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">
+          <ExternalLink className="h-6 w-6 text-stone-600" />
+          구매처
+        </h2>
+        <p className="text-sm leading-relaxed text-slate-600">{brand} {shoeName}의 구매 링크를 공식몰 우선으로 정리했습니다.</p>
+      </div>
 
-      {/* 제휴 링크 고지 (공정거래위원회 지침 준수) */}
       <AffiliateDisclosure purchaseLinks={purchaseLinks} />
 
-      {/* 구매 링크 목록 */}
       <div className="grid gap-3 sm:grid-cols-2">
         {sortedLinks.filter(link => isValidPurchaseUrl(link.url)).map((link, index) => {
           const style = getStoreStyle(link.store);
@@ -75,8 +77,8 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
               target="_blank"
               rel="noopener noreferrer nofollow"
               className={`
-                flex items-center justify-between p-4 rounded-xl border-2
-                transition-all hover:shadow-md hover:scale-[1.02]
+                flex items-center justify-between rounded-[24px] border p-4
+                transition-all hover:-translate-y-0.5 hover:shadow-[0_18px_36px_-30px_rgba(15,23,42,0.45)]
                 ${style.bg} border-current/10
               `}
             >
@@ -104,9 +106,8 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
         })}
       </div>
 
-      {/* 구매 안내 */}
-      <div className="bg-gray-50 rounded-lg p-4 text-sm text-gray-600">
-        <p className="font-medium text-gray-700 mb-2">구매 전 확인하세요</p>
+      <div className="rounded-[24px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(248,248,246,0.92))] p-4 text-sm text-gray-600">
+        <p className="mb-2 font-medium text-gray-700">구매 전 확인하세요</p>
         <ul className="space-y-1 text-xs">
           <li>- 가격은 변동될 수 있으며, 실제 판매가는 각 스토어에서 확인하세요.</li>
           <li>- 정품 여부는 판매처에서 보증하며, 본 사이트는 책임지지 않습니다.</li>

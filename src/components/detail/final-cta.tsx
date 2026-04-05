@@ -1,5 +1,3 @@
-import { Button } from "@/components/ui/button";
-
 type FinalCTAProps = {
   shoeName: string;
   brand: string;

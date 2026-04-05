@@ -58,19 +58,19 @@ function MobileBottomSheet({
       />
 
       {/* 하단 시트 */}
-      <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] rounded-t-[28px] bg-white shadow-2xl animate-slide-up overflow-hidden">
+      <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] overflow-hidden rounded-t-[28px] border-t border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.99),rgba(240,248,255,0.98))] shadow-2xl animate-slide-up">
         {/* 핸들 */}
         <div className="flex justify-center py-3">
           <div className="h-1.5 w-12 rounded-full bg-slate-300" />
         </div>
 
         {/* 헤더 */}
-        <div className="flex items-center justify-between border-b border-slate-100 px-5 pb-4">
+        <div className="flex items-center justify-between border-b border-sky-100 px-5 pb-4">
           <div className="flex items-center gap-2">
-            <Filter className="h-5 w-5 text-[stone-600]" />
+            <Filter className="h-5 w-5 text-sky-700" />
             <h3 className="text-lg font-bold text-slate-900">{title}</h3>
             {activeFilterCount > 0 && (
-              <Badge className="bg-[stone-600] text-white text-xs px-2">
+              <Badge className="bg-[var(--navy)] px-2 text-xs text-white">
                 {activeFilterCount}
               </Badge>
             )}
@@ -89,10 +89,10 @@ function MobileBottomSheet({
         </div>
 
         {/* 하단 버튼 */}
-        <div className="border-t border-slate-100 p-4 bg-white">
+        <div className="border-t border-sky-100 bg-white/80 p-4">
           <Button
             onClick={onClose}
-            className="w-full rounded-full bg-[stone-600] py-4 text-base font-semibold text-white hover:bg-[stone-600]/90 min-h-[52px]"
+            className="min-h-[52px] w-full rounded-full bg-[var(--navy)] py-4 text-base font-semibold text-white hover:bg-[var(--navy-soft)]"
           >
             {activeFilterCount > 0 ? `${activeFilterCount}개 필터 적용됨 - 결과 보기` : '필터 적용'}
           </Button>
@@ -279,19 +279,19 @@ export function FilterPanel({
   };
 
   return (
-    <div className="rounded-[28px] border border-white/20 bg-white/20 backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(15,23,42,0.6)]">
+    <div className="rounded-[30px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(240,248,255,0.94))] backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(8,18,38,0.2)]">
       {/* 빠른 필터 프리셋 */}
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-2 mb-3">
-          <Sparkles className="h-4 w-4 text-[stone-600]" />
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">빠른 필터</span>
+          <Sparkles className="h-4 w-4 text-sky-700" />
+          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">빠른 필터</span>
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
           {filterPresets.map((preset) => (
             <button
               key={preset.id}
               onClick={() => applyPreset(preset)}
-              className="group relative rounded-full border border-white/30 bg-white/40 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] whitespace-nowrap flex-shrink-0"
+              className="group relative whitespace-nowrap rounded-full border border-sky-100 bg-white/82 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-sky-300 hover:bg-sky-50 hover:text-slate-950 flex-shrink-0"
               title={preset.description}
             >
               {preset.label}
@@ -305,13 +305,13 @@ export function FilterPanel({
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           {/* 검색바 */}
           <div className="relative flex-1">
-            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-sky-700/70" />
             <input
               type="text"
               placeholder="신발 이름, 브랜드, 특징 검색..."
               value={filters.searchQuery}
               onChange={(e) => onSearchChange(e.target.value)}
-              className="w-full rounded-full border border-white/30 bg-white/50 py-3 pl-11 pr-4 text-sm text-slate-700 placeholder:text-slate-400 focus:border-[stone-600]/50 focus:outline-none focus:ring-2 focus:ring-[stone-600]/20"
+              className="w-full rounded-full border border-sky-100 bg-white/88 py-3 pl-11 pr-4 text-sm text-slate-700 placeholder:text-slate-400 focus:border-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-200"
             />
             {filters.searchQuery && (
               <button
@@ -330,14 +330,14 @@ export function FilterPanel({
               variant="outline"
               onClick={handleFilterToggle}
               className={cn(
-                "rounded-full border-white/30 bg-white/30 px-4 py-3 text-sm font-semibold transition-all min-h-[44px]",
-                (isExpanded || isMobileSheetOpen) && "border-[stone-600]/50 bg-[stone-600]/10 text-[stone-600]"
+                "min-h-[44px] rounded-full border-sky-100 bg-white/88 px-4 py-3 text-sm font-semibold text-slate-700 transition-all hover:border-sky-300 hover:bg-white",
+                (isExpanded || isMobileSheetOpen) && "border-sky-300 bg-sky-50 text-sky-800"
               )}
             >
               <Filter className="mr-2 h-4 w-4" />
               필터
               {activeFilterCount > 0 && (
-                <Badge className="ml-2 bg-[stone-600] text-white text-xs px-2">
+                <Badge className="ml-2 bg-[var(--navy)] px-2 text-xs text-white">
                   {activeFilterCount}
                 </Badge>
               )}
@@ -354,7 +354,7 @@ export function FilterPanel({
               <Button
                 variant="ghost"
                 onClick={onReset}
-                className="rounded-full px-4 py-3 text-sm font-semibold text-slate-600 hover:text-slate-900 min-h-[44px]"
+                className="min-h-[44px] rounded-full px-4 py-3 text-sm font-semibold text-slate-600 hover:bg-sky-50 hover:text-slate-900"
               >
                 <RotateCcw className="mr-2 h-4 w-4" />
                 초기화
@@ -399,7 +399,7 @@ export function FilterPanel({
 
       {/* 데스크톱: 확장된 필터 패널 */}
       {isExpanded && !isMobile && (
-        <div className="border-t border-white/10 p-4 sm:p-5 space-y-6">
+        <div className="space-y-6 border-t border-sky-100 p-4 sm:p-5">
           <FilterContent
             filters={filters}
             filterOptions={filterOptions}
@@ -426,15 +426,15 @@ export function FilterPanel({
           {/* 빠른 필터 프리셋 (모바일 시트 내) */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="h-4 w-4 text-[stone-600]" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">빠른 필터</span>
+              <Sparkles className="h-4 w-4 text-sky-700" />
+              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">빠른 필터</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {filterPresets.map((preset) => (
                 <button
                   key={preset.id}
                   onClick={() => applyPreset(preset)}
-                  className="rounded-full border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] min-h-[44px]"
+                  className="min-h-[44px] rounded-full border border-sky-100 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-sky-300 hover:bg-sky-50 hover:text-slate-950"
                 >
                   {preset.label}
                 </button>
@@ -608,7 +608,7 @@ function FilterContent({
 function FilterSection({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">{title}</h4>
+      <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">{title}</h4>
       {children}
     </div>
   );
@@ -628,10 +628,10 @@ function FilterButton({
       type="button"
       onClick={onClick}
       className={cn(
-        "rounded-full border px-4 py-2.5 text-sm font-medium transition-all min-h-[44px]",
+        "min-h-[44px] rounded-full border px-4 py-2.5 text-sm font-medium transition-all",
         isActive
-          ? "border-[stone-600] bg-[stone-600]/20 text-[stone-600]"
-          : "border-white/30 bg-white/30 text-slate-600 hover:border-[stone-600]/50 hover:bg-[stone-600]/10"
+          ? "border-sky-300 bg-sky-50 text-sky-800"
+          : "border-sky-100 bg-white/82 text-slate-600 hover:border-sky-300 hover:bg-sky-50 hover:text-slate-950"
       )}
     >
       {label}
@@ -641,11 +641,11 @@ function FilterButton({
 
 function FilterChip({ label, onRemove }: { label: string; onRemove: () => void }) {
   return (
-    <span className="inline-flex items-center gap-1 rounded-full bg-[stone-600]/20 px-3 py-2 text-xs font-semibold text-[stone-600] min-h-[36px] whitespace-nowrap flex-shrink-0">
+    <span className="inline-flex min-h-[36px] flex-shrink-0 items-center gap-1 whitespace-nowrap rounded-full bg-sky-50 px-3 py-2 text-xs font-semibold text-sky-800">
       {label}
       <button
         onClick={onRemove}
-        className="ml-1 hover:text-[stone-600]/70 p-1 min-w-[24px] min-h-[24px] flex items-center justify-center"
+        className="ml-1 flex min-h-[24px] min-w-[24px] items-center justify-center p-1 hover:text-sky-600"
       >
         <X className="h-3.5 w-3.5" />
       </button>

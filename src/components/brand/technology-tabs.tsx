@@ -71,8 +71,11 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
   return (
     <section className="space-y-4">
       {/* 탭 네비게이션 */}
-      <div className="section-card sticky top-14 z-40">
-        <div className="flex overflow-x-auto scrollbar-hide border-b border-border">
+      <div className="sticky top-14 z-40 overflow-hidden rounded-[28px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] shadow-[0_22px_44px_-36px_rgba(8,18,38,0.52)] backdrop-blur-xl">
+        <div className="mb-2 px-4 pt-3">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-sky-100/45">Tech Filters</p>
+        </div>
+        <div className="flex overflow-x-auto scrollbar-hide">
           {availableTabs.map((tab) => {
             const isActive = activeTab === tab.id;
             const count = categoryCounts[tab.id] || 0;
@@ -86,8 +89,8 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
                   setSelectedTech(null); // 탭 변경 시 선택 해제
                 }}
                 className={`
-                  relative flex items-center gap-1.5 px-4 md:px-5 py-3 md:py-4 text-sm font-medium whitespace-nowrap transition-colors
-                  ${isActive ? 'text-primary' : 'text-tertiary hover:text-secondary'}
+                  relative flex items-center gap-1.5 whitespace-nowrap rounded-full px-4 py-3 text-sm font-medium transition-colors md:px-5 md:py-4
+                  ${isActive ? 'bg-white text-slate-950' : 'text-white/65 hover:bg-white/8 hover:text-white'}
                 `}
               >
                 <tab.icon className={`w-4 h-4 ${isActive && tabColorClass ? tabColorClass.text : ''}`} />
@@ -97,7 +100,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
                   <span
                     className={`
                       ml-1 px-1.5 py-0.5 text-xs rounded-full
-                      ${isActive ? 'bg-accent/10 text-accent' : 'bg-surface text-tertiary'}
+                      ${isActive ? 'bg-sky-50 text-sky-700' : 'bg-white/10 text-white/65'}
                     `}
                   >
                     {count}
@@ -107,7 +110,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
                 {/* 활성 탭 표시선 */}
                 {isActive && (
                   <span
-                    className={`absolute bottom-0 left-0 right-0 h-0.5 ${tabColorClass ? tabColorClass.bg.replace('/10', '') : 'bg-primary'}`}
+                    className={`absolute bottom-0 left-3 right-3 h-0.5 rounded-full ${tabColorClass ? tabColorClass.bg.replace('/10', '') : 'bg-sky-100'}`}
                   />
                 )}
               </button>
@@ -118,7 +121,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
 
       {/* 선택된 기술 표시 */}
       {selectedTech && (
-        <div className={`section-card p-4 ${colorClass?.bg} border-l-4 ${colorClass?.border}`}>
+        <div className={`section-card border ${colorClass?.border} ${colorClass?.bg} p-4`}>
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <span className={`text-lg font-bold ${colorClass?.text}`}>{selectedTech.name}</span>
@@ -156,7 +159,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
 
       {/* 선택된 기술의 신발 목록 */}
       {selectedTech && filteredShoes.length > 0 && (
-        <div className="section-card p-6 animate-fade-in-up">
+        <div className="section-card border border-[var(--accent-line)] bg-white/88 p-6 animate-fade-in-up">
           <h3 className="text-lg font-bold text-primary mb-4">
             <span className={colorClass?.text}>{selectedTech.name}</span> 적용 신발
           </h3>
@@ -165,7 +168,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
               <Link
                 key={shoe.id}
                 href={`/shoes/${shoe.slug}`}
-                className="group block p-4 bg-surface rounded-xl hover:bg-border transition"
+                className="group block rounded-[22px] border border-sky-100 bg-white/84 p-4 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60"
               >
                 {/* 이미지 */}
                 <div className="relative aspect-square mb-3 bg-white rounded-lg overflow-hidden">
@@ -187,7 +190,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
                 {/* 정보 */}
                 <div>
                   <p className="text-xs text-secondary mb-1">{shoe.category}</p>
-                  <p className="font-medium text-primary group-hover:text-accent transition">
+                  <p className="font-medium text-primary transition group-hover:text-sky-700">
                     {shoe.name}
                   </p>
                   {shoe.price && (

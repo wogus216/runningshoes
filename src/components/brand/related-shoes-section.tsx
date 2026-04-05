@@ -14,7 +14,7 @@ export function RelatedShoesSection({ brand, shoes }: RelatedShoesSectionProps) 
   const displayShoes = shoes.slice(0, 6);
 
   return (
-    <section className="section-card p-6">
+    <section className="section-card border border-[var(--accent-line)] bg-white/84 p-6">
       <div className="flex items-center justify-between mb-4">
         <div>
           <h2 className="text-xl font-bold text-primary">{brand.name} 러닝화</h2>
@@ -31,7 +31,7 @@ export function RelatedShoesSection({ brand, shoes }: RelatedShoesSectionProps) 
           <Link
             key={shoe.id}
             href={`/shoes/${shoe.slug}`}
-            className="group block p-3 bg-surface rounded-xl hover:bg-border transition"
+            className="group block rounded-[22px] border border-sky-100 bg-white/84 p-3 transition hover:-translate-y-0.5 hover:border-sky-200 hover:bg-sky-50/60"
           >
             {/* 이미지 */}
             <div className="relative aspect-square mb-2 bg-white rounded-lg overflow-hidden">
@@ -53,7 +53,7 @@ export function RelatedShoesSection({ brand, shoes }: RelatedShoesSectionProps) 
             {/* 정보 */}
             <div>
               <p className="text-xs text-secondary">{shoe.category}</p>
-              <p className="text-sm font-medium text-primary truncate group-hover:text-accent transition">
+              <p className="truncate text-sm font-medium text-primary transition group-hover:text-sky-700">
                 {shoe.name}
               </p>
               {shoe.price && (
@@ -71,7 +71,7 @@ export function RelatedShoesSection({ brand, shoes }: RelatedShoesSectionProps) 
         <div className="mt-4 pt-4 border-t border-border text-center">
           <Link
             href={`/?brand=${brand.name}`}
-            className="inline-flex items-center gap-2 text-accent text-sm font-medium hover:underline"
+            className="inline-flex items-center gap-2 text-sm font-medium text-sky-700 hover:underline"
           >
             {brand.name} 전체 신발 보기 ({shoes.length}개)
             <ArrowRight className="w-4 h-4" />

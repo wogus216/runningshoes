@@ -1,11 +1,14 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { ArrowUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const pathname = usePathname();
+  const isDetailPage = pathname.startsWith('/shoes/');
 
   useEffect(() => {
     const toggleVisibility = () => {
@@ -35,12 +38,14 @@ export function ScrollToTop() {
     <button
       onClick={scrollToTop}
       className={cn(
-        'fixed bottom-20 left-4 z-40 md:bottom-6 md:left-6',
-        'flex h-10 w-10 items-center justify-center',
-        'rounded-full bg-white border border-border shadow-lg',
+        'fixed left-4 z-30 md:bottom-6 md:left-6',
+        'bottom-[calc(env(safe-area-inset-bottom)+6rem)]',
+        isDetailPage ? 'hidden md:flex' : 'flex',
+        'h-10 w-10 items-center justify-center',
+        'rounded-full border border-stone-900/10 bg-white/92 shadow-[0_22px_45px_-30px_rgba(15,23,42,0.5)] backdrop-blur-xl',
         'transition-all duration-300 ease-in-out',
-        'hover:bg-surface hover:scale-110 hover:shadow-xl',
-        'focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2',
+        'hover:-translate-y-0.5 hover:bg-white hover:shadow-xl',
+        'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2',
         'md:h-12 md:w-12',
         isVisible
           ? 'opacity-100 translate-y-0'

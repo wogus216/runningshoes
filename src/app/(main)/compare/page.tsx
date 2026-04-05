@@ -3,7 +3,7 @@
 import { useState, useMemo, useEffect, useCallback, Suspense, DragEvent } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
-import { Search, X, Check, Link2, GripVertical } from 'lucide-react';
+import { Search, X, Check, Link2, GripVertical, Sparkles, Scale, ArrowRightLeft } from 'lucide-react';
 import { getShoes, getShoeBySlug } from '@/lib/data/shoes';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
@@ -20,10 +20,10 @@ export default function ComparePage() {
 
 function ComparePageSkeleton() {
   return (
-    <div className="min-h-screen bg-surface">
-      <div className="max-w-5xl mx-auto px-4 py-6">
-        <div className="h-10 w-32 bg-white rounded animate-pulse" />
-        <div className="h-40 bg-white rounded-2xl animate-pulse mt-6" />
+    <div className="min-h-screen">
+      <div className="mx-auto max-w-6xl px-4 py-6">
+        <div className="h-14 w-56 animate-pulse rounded-full bg-white/70" />
+        <div className="mt-6 h-56 animate-pulse rounded-[32px] bg-white/70" />
       </div>
     </div>
   );
@@ -39,6 +39,11 @@ function ComparePageContent() {
   const [copied, setCopied] = useState(false);
   const [draggedShoe, setDraggedShoe] = useState<Shoe | null>(null);
   const [dragOverSlot, setDragOverSlot] = useState<number | null>(null);
+  const compareSummary = [
+    { label: '비교 가능', value: '최대 4개' },
+    { label: '현재 선택', value: `${selectedShoes.length}개` },
+    { label: '스펙 데이터', value: `${allShoes.length}+` },
+  ];
 
   // URL에서 신발 로드 (보안: slug 형식 검증)
   useEffect(() => {
@@ -162,28 +167,75 @@ function ComparePageContent() {
   };
 
   return (
-    <div className="space-y-4">
-      {/* 타이틀 */}
-      <div className="text-center py-4">
-        <h1 className="text-2xl font-bold text-primary">신발 비교</h1>
-        <p className="mt-1 text-sm text-secondary">최대 4개의 신발을 비교해보세요</p>
-      </div>
+    <div className="space-y-5">
+      <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(240,248,255,0.94)_46%,rgba(228,244,255,0.92)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.28)] md:px-8 md:py-8">
+        <div className="pointer-events-none absolute inset-0">
+          <div className="absolute -left-8 top-4 h-32 w-32 rounded-full bg-[rgba(14,165,233,0.16)] blur-3xl" />
+          <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.12)] blur-3xl" />
+        </div>
 
-      {/* 선택된 신발 */}
-      <section className="section-card p-6">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="font-semibold text-primary">
-            선택된 신발 <span className="text-accent">({selectedShoes.length}/4)</span>
-          </h2>
+        <div className="relative grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
+          <div className="space-y-5">
+            <div className="flex flex-wrap gap-2">
+              {compareSummary.map((item) => (
+                <span
+                  key={item.label}
+                  className="inline-flex items-center gap-2 rounded-full border border-stone-900/10 bg-white/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.22em] text-slate-600 backdrop-blur"
+                >
+                  <span className="text-slate-950">{item.value}</span>
+                  {item.label}
+                </span>
+              ))}
+            </div>
+
+            <div className="space-y-3">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-sky-700">Compare Board</p>
+              <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
+                감이 아니라 나란히 놓고 고르게.
+              </h1>
+              <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+                무게, 쿠셔닝, 안정성, 발볼, 가격까지 한 번에 올려두고 차이를 빠르게 읽을 수 있게 다시 정리했습니다.
+              </p>
+            </div>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+              <Sparkles className="h-5 w-5 text-accent" />
+              <p className="mt-4 text-sm font-semibold text-slate-950">추천 조합</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">비어 있는 슬롯은 바로 추가 가능한 후보를 먼저 보여줍니다.</p>
+            </div>
+            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+              <Scale className="h-5 w-5 text-sky-700" />
+              <p className="mt-4 text-sm font-semibold text-slate-950">빠른 판단</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">모바일에서도 핵심 스펙과 부상/핏 정보를 바로 비교합니다.</p>
+            </div>
+            <div className="rounded-[24px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white shadow-[0_22px_40px_-30px_rgba(8,18,38,0.62)]">
+              <ArrowRightLeft className="h-5 w-5 text-white" />
+              <p className="mt-4 text-sm font-semibold">공유 가능</p>
+              <p className="mt-1 text-xs leading-6 text-white/65">선택한 비교 조합을 URL로 복사해 그대로 공유할 수 있습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+        <div className="mb-4 flex items-center justify-between">
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Selection Dock</p>
+            <h2 className="mt-2 text-xl font-black tracking-tight text-slate-950">
+              선택된 신발 <span className="text-accent">({selectedShoes.length}/4)</span>
+            </h2>
+          </div>
           <div className="flex items-center gap-2">
             {selectedShoes.length >= 2 && (
               <button
                 onClick={copyShareUrl}
                 className={cn(
-                  "flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm font-medium transition",
+                  "flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium transition",
                   copied
-                    ? "bg-positive/10 text-positive"
-                    : "bg-surface text-secondary hover:bg-border"
+                    ? "bg-sky-50 text-sky-700"
+                    : "bg-sky-50 text-secondary hover:bg-sky-100"
                 )}
               >
                 {copied ? <Check className="w-4 h-4" /> : <Link2 className="w-4 h-4" />}
@@ -193,7 +245,7 @@ function ComparePageContent() {
             {selectedShoes.length > 0 && (
               <button
                 onClick={clearAll}
-                className="text-sm text-secondary hover:text-negative transition"
+                className="text-sm text-secondary transition hover:text-negative"
               >
                 전체 삭제
               </button>
@@ -201,12 +253,11 @@ function ComparePageContent() {
           </div>
         </div>
 
-        {/* 선택된 신발 카드 + 빈 슬롯 */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {selectedShoes.map((shoe, idx) => (
+        <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          {selectedShoes.map((shoe) => (
             <div
               key={shoe.id || shoe.slug}
-              className="relative bg-surface rounded-xl p-4 border border-border group"
+              className="group relative rounded-[24px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.94))] p-4 shadow-[0_18px_36px_-34px_rgba(8,18,38,0.16)]"
             >
               <button
                 onClick={() => {
@@ -217,15 +268,16 @@ function ComparePageContent() {
               >
                 <X className="h-3 w-3" />
               </button>
-              <div className="w-12 h-12 bg-white rounded-lg mb-2 flex items-center justify-center overflow-hidden">
+              <div className="mb-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white">
                 {shoe.image ? (
-                  <Image src={shoe.image} alt={shoe.name} width={48} height={48} className="object-contain" />
+                  <Image src={shoe.image} alt={shoe.name} width={56} height={56} className="object-contain" />
                 ) : (
                   <span className="text-xl">👟</span>
                 )}
               </div>
-              <p className="text-xs text-tertiary">{shoe.brand}</p>
-              <p className="font-medium text-sm text-primary truncate">{shoe.name}</p>
+              <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">{shoe.brand}</p>
+              <p className="mt-1 line-clamp-2 text-sm font-semibold text-slate-950">{shoe.name}</p>
+              <p className="mt-2 text-xs text-slate-600">{shoe.category}</p>
             </div>
           ))}
           {/* 빈 슬롯 - 추천 신발 표시 */}
@@ -244,15 +296,15 @@ function ComparePageContent() {
                 onDragLeave={handleDragLeave}
                 onDrop={(e) => handleDrop(e, slotIndex)}
                 className={cn(
-                  "rounded-xl border-2 border-dashed p-4 flex flex-col items-center justify-center min-h-[100px] transition-all cursor-pointer",
+                  "flex min-h-[132px] cursor-pointer flex-col items-center justify-center rounded-[24px] border-2 border-dashed p-4 text-center transition-all",
                   isOver
-                    ? "border-accent bg-accent/10 scale-105"
-                    : "border-border hover:border-accent/50 hover:bg-accent/5"
+                    ? "scale-105 border-sky-300 bg-sky-50"
+                    : "border-sky-100 bg-white/70 hover:border-sky-300 hover:bg-sky-50"
                 )}
                 onClick={() => suggestedShoe && addShoe(suggestedShoe)}
               >
                 {isOver ? (
-                  <span className="text-sm text-accent font-medium">여기에 놓기</span>
+                    <span className="text-sm font-medium text-accent">여기에 놓기</span>
                 ) : suggestedShoe ? (
                   <>
                     <div className="w-10 h-10 bg-white rounded-lg mb-1 flex items-center justify-center overflow-hidden opacity-60">
@@ -263,8 +315,8 @@ function ComparePageContent() {
                       )}
                     </div>
                     <span className="text-xs text-tertiary">{suggestedShoe.brand}</span>
-                    <span className="text-xs text-secondary truncate max-w-full">{suggestedShoe.name}</span>
-                    <span className="text-[10px] text-accent mt-1">클릭하여 추가</span>
+                    <span className="max-w-full truncate text-xs text-secondary">{suggestedShoe.name}</span>
+                    <span className="mt-1 text-[10px] text-accent">클릭하여 추가</span>
                   </>
                 ) : (
                   <>
@@ -278,10 +330,12 @@ function ComparePageContent() {
         </div>
       </section>
 
-      {/* 신발 검색/선택 - 항상 표시 옵션 */}
-      <section className="section-card p-6">
+      <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
         <div className="flex items-center justify-between mb-4">
-          <h2 className="font-semibold text-primary">신발 선택</h2>
+          <div>
+            <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Add Shoes</p>
+            <h2 className="mt-2 font-black text-xl tracking-tight text-slate-950">비교할 신발 찾기</h2>
+          </div>
           <button
             onClick={() => setShowSearch(!showSearch)}
             className="text-sm text-accent hover:underline"
@@ -299,7 +353,7 @@ function ComparePageContent() {
                 placeholder="신발 이름, 브랜드 검색..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                className="w-full rounded-full border border-border bg-white py-3 pl-11 pr-4 text-sm focus:border-accent focus:outline-none focus:ring-2 focus:ring-accent/20"
+                className="w-full rounded-full border border-sky-100 bg-white py-3 pl-11 pr-4 text-sm focus:border-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-200"
               />
             </div>
 
@@ -317,13 +371,13 @@ function ComparePageContent() {
                     onDragEnd={handleDragEnd}
                     onClick={() => !isSelected && canAdd && addShoe(shoe)}
                     className={cn(
-                      "text-left rounded-xl border p-4 transition-all cursor-pointer select-none",
+                      "cursor-pointer select-none rounded-[22px] border p-4 text-left transition-all",
                       isDragging && "opacity-50 scale-95",
                       isSelected
-                        ? "border-accent bg-accent/5 cursor-default"
+                        ? "border-sky-300 bg-sky-50 cursor-default"
                         : canAdd
-                        ? "border-border bg-white hover:border-accent/50 hover:shadow-md"
-                        : "border-border bg-surface opacity-50 cursor-not-allowed"
+                        ? "border-sky-100 bg-white hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-[0_16px_30px_-24px_rgba(8,18,38,0.16)]"
+                        : "border-stone-900/10 bg-surface opacity-50 cursor-not-allowed"
                     )}
                   >
                     <div className="flex items-center gap-3">
@@ -346,7 +400,7 @@ function ComparePageContent() {
                         <p className="text-xs text-tertiary">{shoe.category}</p>
                       </div>
                       {isSelected && (
-                        <span className="px-2 py-1 bg-accent text-white text-xs rounded-full flex-shrink-0">선택됨</span>
+                        <span className="flex-shrink-0 rounded-full bg-[var(--navy)] px-2 py-1 text-xs text-white">선택됨</span>
                       )}
                     </div>
                   </div>
@@ -361,15 +415,19 @@ function ComparePageContent() {
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
         <>
-          {/* 레이더 차트 */}
-          <section className="section-card p-6">
-            <h2 className="font-bold text-primary mb-6">스펙 비교 차트</h2>
+          <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="mb-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Radar View</p>
+              <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">스펙 비교 차트</h2>
+            </div>
             <CompareRadarChart shoes={selectedShoes} />
           </section>
 
-          {/* 상세 비교 테이블 */}
-          <section className="section-card p-6">
-            <h2 className="font-bold text-primary mb-6">상세 비교</h2>
+          <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="mb-6">
+              <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Detail Rows</p>
+              <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">상세 비교</h2>
+            </div>
             <EnhancedCompareTable shoes={selectedShoes} onRemove={removeShoe} />
           </section>
         </>

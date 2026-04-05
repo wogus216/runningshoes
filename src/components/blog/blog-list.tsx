@@ -19,42 +19,39 @@ export function BlogList({ allPosts }: BlogListProps) {
 
   return (
     <div className="space-y-6">
-      {/* Velog 스타일 탭 필터 */}
-      <div className="flex items-center gap-1 border-b border-gray-200 mb-2">
+      <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/82 p-3 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+        <div className="mb-3 px-2">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Category Filter</p>
+        </div>
+        <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
         <button
           onClick={() => setSelectedCategory('all')}
-          className={`px-4 py-3 text-sm font-semibold transition-colors relative ${
+          className={`rounded-full px-4 py-2.5 text-sm font-semibold transition-colors relative ${
             selectedCategory === 'all'
-              ? 'text-gray-900'
-              : 'text-gray-400 hover:text-gray-600'
+              ? 'bg-[var(--navy)] text-white'
+              : 'text-gray-500 hover:bg-sky-50 hover:text-gray-700'
           }`}
         >
           전체
-          {selectedCategory === 'all' && (
-            <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-900" />
-          )}
         </button>
         {categoryOrder.map((category) => (
           <button
             key={category}
             onClick={() => setSelectedCategory(category)}
-            className={`px-4 py-3 text-sm font-semibold transition-colors relative ${
+            className={`rounded-full px-4 py-2.5 text-sm font-semibold transition-colors relative ${
               selectedCategory === category
-                ? 'text-gray-900'
-                : 'text-gray-400 hover:text-gray-600'
+                ? 'bg-[var(--navy)] text-white'
+                : 'text-gray-500 hover:bg-sky-50 hover:text-gray-700'
             }`}
           >
             {categoryLabels[category]}
-            {selectedCategory === category && (
-              <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-gray-900" />
-            )}
           </button>
         ))}
+        </div>
       </div>
 
-      {/* 포스트 그리드 */}
       {filteredPosts.length > 0 ? (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {filteredPosts.map((post) => (
             <BlogCard key={post.id} post={post} />
           ))}

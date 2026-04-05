@@ -32,7 +32,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
         <div
           className={cn(
             "spec-bar-fill",
-            color === 'positive' ? "bg-positive" : "bg-accent"
+            color === 'positive' ? "bg-slate-700" : "bg-sky-500"
           )}
           style={{ width: `${percentage}%` }}
         />
@@ -45,8 +45,8 @@ export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps)
   // 토박스 너비 표시
   const getToeboxLabel = () => {
     if (!koreanFootFit?.toBoxWidth) return { text: '표준', color: 'text-primary' };
-    if (koreanFootFit.toBoxWidth === 'narrow') return { text: '좁음', color: 'text-warning' };
-    if (koreanFootFit.toBoxWidth === 'wide') return { text: '넓음', color: 'text-positive' };
+    if (koreanFootFit.toBoxWidth === 'narrow') return { text: '좁음', color: 'text-amber-700' };
+    if (koreanFootFit.toBoxWidth === 'wide') return { text: '넓음', color: 'text-sky-700' };
     return { text: '표준', color: 'text-primary' };
   };
 
@@ -66,19 +66,19 @@ export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps)
 
       {/* 상세 스펙 그리드 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
-        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
           <p className="text-lg md:text-xl font-bold text-primary">{specs.weight}g</p>
           <p className="text-xs text-tertiary mt-1">무게 (US 9)</p>
         </div>
-        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
           <p className="text-lg md:text-xl font-bold text-primary">{heelStack || '-'}mm</p>
           <p className="text-xs text-tertiary mt-1">힐 스택</p>
         </div>
-        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
           <p className="text-lg md:text-xl font-bold text-primary">{specs.drop || 10}mm</p>
           <p className="text-xs text-tertiary mt-1">드롭</p>
         </div>
-        <div className="bg-surface rounded-xl p-3 md:p-4 text-center">
+        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
           <p className={cn("text-lg md:text-xl font-bold", toebox.color)}>{toebox.text}</p>
           <p className="text-xs text-tertiary mt-1">토박스</p>
         </div>

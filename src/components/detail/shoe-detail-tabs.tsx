@@ -55,17 +55,21 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
   const [activeTab, setActiveTab] = useState<TabId>('specs');
 
   return (
-    <div className="space-y-4">
-      {/* 탭 네비게이션 */}
-      <div className="section-card sticky top-14 z-40">
-        <div className="flex overflow-x-auto border-b border-border scrollbar-hide">
+    <div className="space-y-5">
+      <div className="sticky top-16 z-40 overflow-hidden rounded-[30px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] p-2 shadow-[0_24px_48px_-38px_rgba(8,18,38,0.62)] backdrop-blur-xl">
+        <div className="mb-2 px-3 pt-1">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-100/45">Detail Panel</p>
+        </div>
+        <div className="flex overflow-x-auto scrollbar-hide">
           {tabs.map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
               className={cn(
-                "tab-btn px-3 md:px-5 py-2.5 md:py-3 text-xs md:text-sm font-medium whitespace-nowrap transition",
-                activeTab === tab.id && "active"
+                "min-h-[44px] whitespace-nowrap rounded-full px-4 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] transition-all md:px-5 md:text-sm",
+                activeTab === tab.id
+                  ? "bg-white text-slate-950 shadow-[0_16px_32px_-22px_rgba(255,255,255,0.7)]"
+                  : "text-white/60 hover:bg-white/8 hover:text-white"
               )}
             >
               <span className="md:hidden">{tab.mobileLabel}</span>
@@ -75,18 +79,19 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
         </div>
       </div>
 
-      {/* 탭 콘텐츠 */}
       <div className="space-y-4">
-        {/* 스펙 탭 */}
         <div className={activeTab === 'specs' ? '' : 'hidden'}>
           {shoe.specs && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} />
             </div>
           )}
           {shoe.specs && (
-            <div className="section-card p-6">
-              <h2 className="font-bold mb-5 text-primary">스펙 차트</h2>
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(239,247,255,0.92))] p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] md:p-6">
+              <div className="mb-5">
+                <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Spec Chart</p>
+                <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">숫자로 보는 성향</h2>
+              </div>
               <SpecRadarChart
                 specs={shoe.specs}
                 priceValueRating={shoe.priceAnalysis?.valueRating}
@@ -96,28 +101,25 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
           )}
         </div>
 
-        {/* 생체역학 탭 */}
         <div className={activeTab === 'biomechanics' ? '' : 'hidden'}>
           {shoe.biomechanics && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <BiomechanicsAnalysis biomechanics={shoe.biomechanics} weight={shoe.specs?.weight} />
             </div>
           )}
         </div>
 
-        {/* 부상 예방 탭 */}
         <div className={activeTab === 'injury' ? '' : 'hidden'}>
           {shoe.injuryPrevention && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
             </div>
           )}
         </div>
 
-        {/* 한국인 발 탭 */}
         <div className={activeTab === 'koreanfoot' ? '' : 'hidden'}>
           {shoe.koreanFootFit && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <KoreanFootFit
                 koreanFootFit={shoe.koreanFootFit}
                 shoeName={shoe.name}
@@ -130,10 +132,9 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
           )}
         </div>
 
-        {/* 가격 탭 */}
         <div className={activeTab === 'price' ? '' : 'hidden'}>
           {shoe.priceAnalysis && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <ValueAnalysis
                 priceAnalysis={shoe.priceAnalysis}
                 shoeName={shoe.name}
@@ -144,7 +145,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
             </div>
           )}
           {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
-            <div className="section-card p-6">
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <PurchaseLinks
                 purchaseLinks={shoe.purchaseLinks}
                 shoeName={shoe.name}
@@ -154,9 +155,8 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
           )}
         </div>
 
-        {/* 리뷰 탭 */}
         <div className={activeTab === 'reviews' ? '' : 'hidden'}>
-          <div className="section-card p-6">
+          <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
             {shoe.reviews && shoe.reviews.length > 0 ? (
               <ReviewsSection reviews={shoe.reviews} />
             ) : (

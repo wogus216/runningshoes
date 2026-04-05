@@ -302,7 +302,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         </section>
 
         {/* 하단 여백 (고정 바 때문에) */}
-        <div className="h-20" aria-hidden="true" />
+        <div className="h-32 md:h-20" aria-hidden="true" />
       </div>
 
       {/* 모바일 빠른 액션 버튼 */}

@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:allrunabout.com)",
+      "Bash(if grep -q \"id: ''$slug''\" src/lib/data/shoes/*.ts)",
+      "Bash(else)",
+      "Bash(node:*)",
+      "Read(//Users/kwonjaehyeon/Programming/sancho/runningshoes/public/images/shoes/**)",
+      "WebFetch(domain:brand.naver.com)",
+      "WebFetch(domain:marathongo.co.kr)",
+      "WebFetch(domain:www.kaaf.or.kr)",
+      "WebFetch(domain:gorunning.kr)",
+      "WebFetch(domain:www.runbung.app)",
+      "WebFetch(domain:www.roadrun.co.kr)",
+      "WebFetch(domain:marathon.pe.kr)",
+      "WebFetch(domain:www.mondaq.com)",
+      "WebFetch(domain:aims-worldrunning.org)",
+      "WebFetch(domain:www.lexology.com)",
+      "WebFetch(domain:www.data.go.kr)",
+      "WebFetch(domain:marathon365.co.kr)",
+      "WebFetch(domain:runningwikii.com)",
+      "WebFetch(domain:rankingmarathon.com)"
+    ],
+    "additionalDirectories": [
+      "/Users/kwonjaehyeon/Programming/sancho/runningshoes/public/images/shoes/saucony",
+      "/Users/kwonjaehyeon/Programming/sancho/runningshoes/src/app/(detail)/marathon"
+    ]
+  }
+}

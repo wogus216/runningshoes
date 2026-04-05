@@ -142,10 +142,10 @@ export default async function BrandTechnologyPage({ params }: BrandTechnologyPag
 
       <div className="space-y-6">
         {/* 브레드크럼 */}
-        <nav className="text-sm text-secondary">
+        <nav className="rounded-[22px] border border-[var(--accent-line)] bg-white/80 px-4 py-3 text-sm text-secondary">
           <ol className="flex items-center gap-2">
             <li>
-              <Link href="/" className="hover:text-accent transition">
+              <Link href="/" className="transition hover:text-sky-700">
                 홈
               </Link>
             </li>
@@ -155,7 +155,7 @@ export default async function BrandTechnologyPage({ params }: BrandTechnologyPag
             </li>
             <li className="text-tertiary">/</li>
             <li>
-              <span className="text-accent font-medium">기술 가이드</span>
+              <span className="font-medium text-sky-700">기술 가이드</span>
             </li>
           </ol>
         </nav>

@@ -193,8 +193,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
   return (
     <div className="max-w-2xl mx-auto">
-      {/* 진행 상황 표시 */}
-      <div className="section-card p-6 mb-6">
+      <div className="mb-6 rounded-[30px] border border-stone-900/10 bg-white/82 p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.45)] backdrop-blur">
         <div className="flex items-center justify-between mb-3">
           <span className="text-sm font-medium text-primary">
             {currentStep + 1} / {questions.length}
@@ -212,9 +211,9 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               className={cn(
                 "h-1.5 flex-1 rounded-full transition-colors",
                 idx < currentStep
-                  ? "bg-accent"
+                  ? "bg-sky-500"
                   : idx === currentStep
-                  ? "bg-accent"
+                  ? "bg-sky-500"
                   : "bg-border"
               )}
             />
@@ -222,15 +221,14 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         </div>
       </div>
 
-      {/* 질문 카드 */}
-      <div className="section-card p-6 mb-6">
-        <h2 className="text-xl font-bold text-primary mb-2">
+      <div className="mb-6 rounded-[30px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(239,246,255,0.88))] p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.45)]">
+        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Question {currentStep + 1}</p>
+        <h2 className="mb-2 text-2xl font-black tracking-tight text-primary">
           {currentQuestion.title}
         </h2>
-        <p className="text-secondary text-sm">{currentQuestion.description}</p>
+        <p className="text-secondary text-sm leading-7">{currentQuestion.description}</p>
       </div>
 
-      {/* 옵션 */}
       <div className="space-y-3 mb-6">
         {currentQuestion.options.map(option => {
           const isSelected = isMultiple
@@ -242,10 +240,10 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               key={option.value}
               onClick={() => handleSelect(option.value)}
               className={cn(
-                "w-full text-left rounded-xl border p-4 transition-all",
+                "w-full rounded-[24px] border p-4 text-left transition-all shadow-[0_16px_32px_-30px_rgba(15,23,42,0.35)]",
                 isSelected
-                  ? "border-accent bg-accent/5"
-                  : "border-border bg-white hover:border-accent/50"
+                  ? "border-sky-300 bg-sky-50/70"
+                  : "border-stone-900/10 bg-white hover:-translate-y-0.5 hover:border-sky-200"
               )}
             >
               <div className="flex items-center justify-between gap-4">
@@ -259,7 +257,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
                   className={cn(
                     "w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all flex-shrink-0",
                     isSelected
-                      ? "border-accent bg-accent"
+                      ? "border-sky-500 bg-sky-500"
                       : "border-border"
                   )}
                 >
@@ -275,8 +273,8 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
       {/* 이전 선택 요약 */}
       {currentStep > 0 && (
-        <div className="section-card p-4 mb-6">
-          <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">이전 선택</p>
+        <div className="mb-6 rounded-[24px] border border-stone-900/10 bg-white/70 p-4 shadow-[0_16px_32px_-30px_rgba(15,23,42,0.35)]">
+          <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-tertiary">이전 선택</p>
           <div className="flex flex-wrap gap-2">
             {questions.slice(0, currentStep).map((q, idx) => {
               const answer = answers[q.id];
@@ -291,7 +289,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
                   key={idx}
                   className="inline-flex items-center gap-1 px-3 py-1 bg-surface rounded-full text-xs text-primary"
                 >
-                  <Check className="w-3 h-3 text-positive" />
+                  <Check className="w-3 h-3 text-sky-700" />
                   {label}
                 </span>
               );
@@ -309,7 +307,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
             "flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition",
             currentStep === 0
               ? "text-tertiary cursor-not-allowed"
-              : "text-primary border border-border hover:bg-surface"
+              : "text-primary border border-stone-900/10 bg-white/75 hover:bg-white"
           )}
         >
           <ChevronLeft className="h-4 w-4" />
@@ -322,7 +320,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
           className={cn(
             "flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition",
             canProceed
-              ? "bg-accent text-white hover:opacity-90"
+              ? "bg-stone-950 text-white hover:bg-stone-900"
               : "bg-border text-tertiary cursor-not-allowed"
           )}
         >

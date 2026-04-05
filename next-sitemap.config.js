@@ -26,6 +26,15 @@ module.exports = {
         lastmod: new Date().toISOString(),
       };
     }
+    // 마라톤 대회 페이지
+    if (path === "/marathon") {
+      return {
+        loc: path,
+        changefreq: "daily",
+        priority: 0.8,
+        lastmod: new Date().toISOString(),
+      };
+    }
     // 메인, 추천, 비교 페이지
     if (path === "/" || path === "/recommend" || path === "/compare") {
       return {

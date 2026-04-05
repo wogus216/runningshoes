@@ -35,13 +35,13 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
   const chipPrefix = view === "hierarchy" ? "category" : "brand";
 
   return (
-    <div className="flex flex-col gap-4 rounded-[28px] border border-white/20 bg-white/20 p-4 backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(15,23,42,0.6)] sm:p-5">
+    <div className="flex flex-col gap-3 rounded-[26px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,255,0.96))] p-4 shadow-[0_24px_50px_-38px_rgba(8,18,38,0.18)] sm:gap-4 sm:rounded-[32px] sm:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
-          <p className="text-xs font-semibold uppercase tracking-[0.35em] text-slate-600">View Mode</p>
-          <p className="text-base font-bold text-slate-900">어떤 방식으로 살펴볼까요?</p>
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs sm:tracking-[0.35em]">View Mode</p>
+          <p className="text-sm font-bold text-slate-950 sm:text-base">어떤 기준으로 좁혀볼까요?</p>
         </div>
-        <div className="flex w-full flex-col gap-2 sm:w-auto sm:flex-row">
+        <div className="grid w-full grid-cols-1 gap-2 rounded-[24px] border border-sky-100 bg-white/85 p-1 sm:w-auto sm:grid-cols-2 sm:rounded-full">
           {options.map((option) => {
             const isActive = view === option.value;
             return (
@@ -50,15 +50,18 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
                 type="button"
                 variant={isActive ? "default" : "outline"}
                 className={cn(
-                  "group flex-1 items-center justify-between gap-2 rounded-full border-white/20 px-5 py-6 text-sm font-semibold uppercase tracking-[0.25em] transition-all duration-200",
+                  "group h-auto items-center justify-start gap-2 rounded-[18px] border-0 px-4 py-3 text-sm font-semibold tracking-tight transition-all duration-200 sm:justify-between sm:rounded-full sm:px-5 sm:py-4 sm:uppercase sm:tracking-[0.22em]",
                   isActive
-                    ? "bg-[stone-600] text-white shadow-[0_20px_45px_-30px_rgba(79,172,254,0.7)]"
-                    : "bg-white/20 text-slate-700 hover:border-white/40 hover:bg-white/40"
+                    ? "bg-[var(--navy)] text-white shadow-[0_18px_30px_-20px_rgba(2,132,199,0.48)]"
+                    : "bg-transparent text-slate-600 hover:bg-sky-50 hover:text-slate-950"
                 )}
                 onClick={() => onChange(option.value)}
               >
                 <span className="whitespace-nowrap">{option.label}</span>
-                <span className="text-[10px] font-medium uppercase tracking-widest text-slate-500 group-hover:text-slate-700 sm:hidden">
+                <span className={cn(
+                  "text-[11px] font-medium text-right sm:hidden",
+                  isActive ? "text-sky-100/75" : "text-slate-400"
+                )}>
                   {option.description}
                 </span>
               </Button>
@@ -68,21 +71,23 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
       </div>
 
       {chips.length > 0 && (
-        <div className="flex flex-wrap gap-2 pt-2 border-t border-white/10">
-          <span className="text-xs font-medium text-slate-500 self-center mr-1">바로가기</span>
-          {chips.map((chip) => {
-            const targetId = `${chipPrefix}-${chip.replace(/\s+/g, '-')}`;
-            return (
-              <button
-                key={chip}
-                type="button"
-                onClick={() => scrollToSection(targetId)}
-                className="rounded-full border border-white/30 bg-white/30 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all duration-200 hover:border-[stone-600]/50 hover:bg-[stone-600]/10 hover:text-[stone-600] active:scale-95"
-              >
-                {chip}
-              </button>
-            );
-          })}
+        <div className="border-t border-sky-100 pt-2">
+          <div className="mb-2 text-xs font-medium text-slate-500">바로가기</div>
+          <div className="-mx-1 flex gap-2 overflow-x-auto px-1 pb-1">
+            {chips.map((chip) => {
+              const targetId = `${chipPrefix}-${chip.replace(/\s+/g, '-')}`;
+              return (
+                <button
+                  key={chip}
+                  type="button"
+                  onClick={() => scrollToSection(targetId)}
+                  className="shrink-0 rounded-full border border-sky-100 bg-white/80 px-3 py-1.5 text-xs font-semibold text-slate-700 transition-all duration-200 hover:border-sky-200 hover:bg-sky-50 hover:text-slate-950 active:scale-95"
+                >
+                  {chip}
+                </button>
+              );
+            })}
+          </div>
         </div>
       )}
     </div>

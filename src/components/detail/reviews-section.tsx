@@ -23,8 +23,8 @@ function ReviewCard({ review }: { review: Review }) {
     : Math.min(5, Math.max(0, Math.round(review.rating))); // 안전하게 0-5 범위로
 
   return (
-    <div className="bg-stone-50 rounded-2xl p-6 border-l-4 border-stone-300">
-      <div className="flex justify-between items-center mb-4 flex-wrap gap-3">
+    <div className="rounded-[26px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <div className="text-yellow-500 text-xl">
             {"★".repeat(displayRating)}
@@ -35,12 +35,12 @@ function ReviewCard({ review }: { review: Review }) {
           )}
         </div>
         <span
-          className={`${userTypeColors[review.userType] || "bg-gray-500"} text-white px-3 py-1.5 rounded-lg text-sm font-semibold`}
+          className={`${userTypeColors[review.userType] || "bg-gray-500"} rounded-full px-3 py-1.5 text-sm font-semibold text-white`}
         >
           {review.userType}
         </span>
       </div>
-      <p className="text-gray-700 leading-relaxed text-base">{review.text}</p>
+      <p className="text-sm leading-7 text-slate-700 md:text-base">{review.text}</p>
     </div>
   );
 }
@@ -48,13 +48,14 @@ function ReviewCard({ review }: { review: Review }) {
 export function ReviewsSection({ reviews }: ReviewsSectionProps) {
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl font-black flex items-center gap-4">
-        <MessageSquareText className="h-8 w-8 text-stone-700" />
-        러너 유형별 분석
-      </h2>
-      <p className="text-gray-600">
-        에디터 분석과 러너 유형별 사용 시나리오를 정리했습니다
-      </p>
+      <div className="space-y-2">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Review Notes</p>
+        <h2 className="flex items-center gap-3 text-3xl font-black tracking-tight text-slate-950">
+          <MessageSquareText className="h-7 w-7 text-stone-700" />
+          러너 유형별 분석
+        </h2>
+        <p className="text-sm leading-relaxed text-slate-600">에디터 분석과 사용자 시나리오를 읽기 쉽게 분리했습니다.</p>
+      </div>
 
       <div className="grid gap-5">
         {reviews.map((review, index) => (

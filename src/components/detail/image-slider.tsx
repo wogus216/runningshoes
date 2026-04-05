@@ -76,7 +76,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   // 이미지가 없는 경우
   if (!images || images.length === 0) {
     return (
-      <div className="relative aspect-square bg-slate-100 rounded-2xl flex items-center justify-center">
+      <div className="relative aspect-square rounded-[30px] border border-white/10 bg-[rgba(255,255,255,0.08)] flex items-center justify-center">
         <ShoppingBag className="w-24 h-24 text-slate-300" />
       </div>
     );
@@ -85,13 +85,13 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   // 이미지가 1개인 경우
   if (images.length === 1) {
     return (
-      <div className="relative aspect-square bg-white rounded-2xl overflow-hidden">
+      <div className="relative aspect-square overflow-hidden rounded-[30px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]">
         <Image
           src={images[0]}
           alt={alt}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
-          className="object-contain p-6"
+          className="object-contain p-6 md:p-8"
           priority
         />
       </div>
@@ -100,7 +100,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
 
   return (
     <div
-      className="relative aspect-square rounded-2xl overflow-hidden bg-white group"
+      className="group relative aspect-square overflow-hidden rounded-[30px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}
@@ -119,7 +119,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
               alt={`${alt} - ${index + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"
-              className="object-contain p-6"
+              className="object-contain p-6 md:p-8"
               priority={index === 0}
             />
           </div>
@@ -129,14 +129,14 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
       {/* 좌우 화살표 */}
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+        className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-stone-900/10 bg-white/90 shadow-lg transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:bg-white"
         aria-label="이전 이미지"
       >
         <ChevronLeft className="w-5 h-5 text-slate-700" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-white/90 hover:bg-white rounded-full flex items-center justify-center shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10"
+        className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-stone-900/10 bg-white/90 shadow-lg transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:bg-white"
         aria-label="다음 이미지"
       >
         <ChevronRight className="w-5 h-5 text-slate-700" />
@@ -151,7 +151,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
             className={cn(
               "h-2 rounded-full transition-all duration-300",
               currentIndex === index
-                ? "w-6 bg-stone-600"
+                ? "w-6 bg-stone-950"
                 : "w-2 bg-black/20 hover:bg-black/40"
             )}
             aria-label={`${index + 1}번 이미지로 이동`}

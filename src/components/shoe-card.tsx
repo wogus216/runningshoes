@@ -72,61 +72,107 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     return tags.slice(0, 2); // 최대 2개
   }, [shoe.koreanFootFit, shoe.injuryPrevention, shoe.targetUsers]);
 
+  const statChips = useMemo(() => {
+    const chips: string[] = [];
+
+    if (shoe.specs?.weight) {
+      chips.push(`${shoe.specs.weight}g`);
+    }
+    if (shoe.biomechanics?.drop !== undefined) {
+      chips.push(`드롭 ${shoe.biomechanics.drop}mm`);
+    }
+    if (shoe.priceAnalysis?.valueRating) {
+      chips.push(`가치 ${shoe.priceAnalysis.valueRating.toFixed(1)}`);
+    }
+
+    return chips.slice(0, 2);
+  }, [shoe.specs?.weight, shoe.biomechanics?.drop, shoe.priceAnalysis?.valueRating]);
+
+  const mobileBadge = badges[0];
+  const mobileTag = recommendTags[0];
+
   const cardContent = (
     <div
       className={cn(
-        "bg-white border border-border rounded-2xl overflow-hidden card-hover block h-full flex flex-col",
+        "group flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)]",
+        "bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(245,250,255,0.96))]",
+        "shadow-[0_20px_40px_-34px_rgba(8,18,38,0.32)]",
+        "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(2,132,199,0.24)]",
         "animate-fade-in-up"
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 60}ms` }}
     >
-      {/* 이미지 영역 - 고정 비율, 이미지 크기 통일 */}
-      <div className="aspect-square bg-white flex items-center justify-center relative flex-shrink-0 p-2 md:p-4">
+      <div className="relative aspect-[4/3] overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
+        <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_48%,#f97316_100%)]" />
+        <div className="absolute inset-x-2.5 top-2.5 z-10 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
+          <span className="rounded-full border border-sky-200 bg-white/90 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.14em] text-sky-800 backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
+            {shoe.category}
+          </span>
+          {shoe.specs && <AddToCompareButton shoe={shoe} variant="icon" className="bg-white/80 backdrop-blur hover:bg-white" />}
+        </div>
+
         {shoe.image ? (
           <Image
             src={shoe.image}
             alt={shoe.name}
             width={300}
             height={300}
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-            className="w-full h-full object-contain"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
             loading="lazy"
           />
         ) : (
           <span className="text-4xl">👟</span>
         )}
-        <span className="absolute top-2 left-2 md:top-3 md:left-3 px-1.5 md:px-2 py-0.5 md:py-1 bg-white/90 backdrop-blur rounded-md text-xs font-medium text-primary">
-          {shoe.category}
-        </span>
-        {/* 비교 버튼 */}
-        {shoe.specs && (
-          <div className="absolute top-2 right-2 md:top-3 md:right-3">
-            <AddToCompareButton shoe={shoe} variant="icon" />
-          </div>
-        )}
       </div>
 
-      {/* 정보 영역 - 고정 높이 */}
-      <div className="p-4 md:p-5 flex flex-col flex-1">
-        {/* 브랜드 & 이름 - 고정 영역 */}
-        <div className="mb-3">
-          <p className="text-xs text-tertiary mb-1">{shoe.brand}</p>
-          <h3 className="font-semibold text-sm md:text-base text-primary line-clamp-1">{shoe.name}</h3>
+      <div className="flex flex-1 flex-col p-3 md:p-5">
+        <div className="mb-2.5 flex items-start justify-between gap-2 md:mb-3 md:gap-3">
+          <div className="min-w-0">
+            <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 md:mb-1 md:text-[11px] md:tracking-[0.18em]">{shoe.brand}</p>
+            <h3 className="line-clamp-2 min-h-[2.25rem] text-[13px] font-bold leading-4.5 text-slate-950 md:min-h-[3rem] md:text-base md:leading-5">
+              {shoe.name}
+            </h3>
+          </div>
+          <div className="flex-shrink-0 rounded-2xl bg-[var(--navy)] px-2 py-1 text-right text-white shadow-[0_14px_28px_-20px_rgba(2,132,199,0.85)] md:px-2.5">
+            <p className="text-[9px] uppercase tracking-[0.14em] text-sky-100/55 md:text-[10px] md:tracking-[0.18em]">Score</p>
+            <p className="text-[13px] font-black md:text-sm">{shoe.rating.toFixed(1)}</p>
+          </div>
         </div>
 
-        {/* 가격 + 배지 - 한 줄 고정 */}
-        <div className="flex items-center gap-2 mb-3 h-6 overflow-hidden">
-          <span className="text-sm font-bold text-primary flex-shrink-0">
+        <div className="mb-2 flex flex-wrap items-center gap-1.5 md:hidden">
+          <span className="rounded-full bg-[var(--navy)] px-2.5 py-1 text-[11px] font-bold text-white">
+            ₩{shoe.price?.toLocaleString()}
+          </span>
+          {mobileBadge && (
+            <span
+              className={cn(
+                "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-semibold",
+                mobileBadge.color === 'positive' && "bg-teal-50 text-teal-700",
+                mobileBadge.color === 'warning' && "bg-orange-50 text-orange-700",
+                mobileBadge.color === 'accent' && "bg-sky-50 text-sky-700"
+              )}
+            >
+              {mobileBadge.icon === 'value' && <TrendingUp className="w-3 h-3" />}
+              {mobileBadge.icon === 'carbon' && <Zap className="w-3 h-3" />}
+              {mobileBadge.icon === 'winter' && <Snowflake className="w-3 h-3" />}
+              {mobileBadge.text}
+            </span>
+          )}
+        </div>
+
+        <div className="mb-3 hidden flex-wrap items-center gap-1.5 md:flex">
+          <span className="rounded-full bg-[var(--navy)] px-2.5 py-1 text-xs font-bold text-white">
             ₩{shoe.price?.toLocaleString()}
           </span>
           {badges.map((badge, idx) => (
             <span
               key={idx}
               className={cn(
-                "text-xs px-1.5 py-0.5 rounded flex items-center gap-0.5 flex-shrink-0",
-                badge.color === 'positive' && "text-positive bg-positive/10",
-                badge.color === 'warning' && "text-warning bg-warning/10",
-                badge.color === 'accent' && "text-accent bg-accent/10"
+                "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[11px] font-semibold",
+                badge.color === 'positive' && "bg-teal-50 text-teal-700",
+                badge.color === 'warning' && "bg-orange-50 text-orange-700",
+                badge.color === 'accent' && "bg-sky-50 text-sky-700"
               )}
             >
               {badge.icon === 'value' && <TrendingUp className="w-3 h-3" />}
@@ -137,14 +183,44 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           ))}
         </div>
 
-        {/* 추천 태그 - 고정 높이 영역 (항상 공간 확보) */}
-        <div className="h-5 flex items-center gap-3 overflow-hidden">
+        {statChips.length > 0 && (
+          <div className="mb-3 hidden flex-wrap gap-1.5 md:flex">
+            {statChips.map((chip) => (
+              <span
+                key={chip}
+                className="rounded-full border border-sky-100 bg-white/78 px-2.5 py-1 text-[11px] font-medium text-slate-600"
+              >
+                {chip}
+              </span>
+            ))}
+          </div>
+        )}
+
+        <div className="min-h-[1rem] md:hidden">
+          {mobileTag && (
+            <span
+              className={cn(
+                "inline-flex items-center gap-1 text-[10px] font-semibold",
+                mobileTag.type === 'positive' ? "text-teal-700" : "text-orange-700"
+              )}
+            >
+              {mobileTag.type === 'positive' ? (
+                <Check className="w-3 h-3" />
+              ) : (
+                <AlertTriangle className="w-3 h-3" />
+              )}
+              {mobileTag.text}
+            </span>
+          )}
+        </div>
+
+        <div className="hidden min-h-[1.25rem] items-center gap-3 overflow-hidden md:flex">
           {recommendTags.map((tag, idx) => (
             <span
               key={idx}
               className={cn(
-                "inline-flex items-center gap-0.5 text-xs flex-shrink-0",
-                tag.type === 'positive' ? "text-positive" : "text-warning"
+                "inline-flex items-center gap-1 text-[11px] font-semibold flex-shrink-0",
+                tag.type === 'positive' ? "text-teal-700" : "text-orange-700"
               )}
             >
               {tag.type === 'positive' ? (
@@ -157,10 +233,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           ))}
         </div>
 
-        {/* 해시태그 - 하단 고정 (mt-auto로 밀어내기) */}
         {shoe.tags && shoe.tags.length > 0 && onTagClick && (
-          <div className="flex gap-1.5 mt-auto pt-3 overflow-hidden">
-            {shoe.tags.slice(0, 2).map(tag => (
+          <div className="mt-auto hidden gap-1.5 overflow-hidden pt-3 md:flex">
+            {shoe.tags.slice(0, 2).map((tag) => (
               <button
                 key={tag}
                 onClick={(e) => {
@@ -168,7 +243,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
                   e.stopPropagation();
                   onTagClick(tag);
                 }}
-                className="text-xs px-2 py-0.5 bg-surface rounded text-primary/70 hover:bg-border hover:text-primary transition truncate max-w-[80px]"
+                className="max-w-[88px] truncate rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 transition hover:bg-sky-100 hover:text-slate-950"
                 aria-label={`${tag} 태그로 필터링`}
               >
                 #{tag}

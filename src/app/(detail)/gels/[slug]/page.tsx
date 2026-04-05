@@ -213,11 +213,11 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
 
       <div className="space-y-4">
         {/* 브레드크럼 */}
-        <nav className="section-card px-4 py-2.5" aria-label="breadcrumb">
+        <nav className="section-card border border-[var(--accent-line)] bg-white/80 px-4 py-3" aria-label="breadcrumb">
           <ol className="flex items-center gap-1.5 text-sm">
-            <li><Link href="/" className="text-secondary hover:text-primary transition">홈</Link></li>
+            <li><Link href="/" className="text-secondary transition hover:text-sky-700">홈</Link></li>
             <li className="text-tertiary">/</li>
-            <li><Link href="/gels" className="text-secondary hover:text-primary transition">에너지 젤</Link></li>
+            <li><Link href="/gels" className="text-secondary transition hover:text-sky-700">에너지 젤</Link></li>
             <li className="text-tertiary">/</li>
             <li className="text-primary font-medium truncate">{gel.brand} {gel.name}</li>
           </ol>
@@ -229,12 +229,12 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
         {/* 핵심 특징 박스 */}
         <div className="grid md:grid-cols-3 gap-3">
           {/* 추천 대상 */}
-          <div className="section-card p-4">
-            <h3 className="text-sm font-bold text-green-600 dark:text-green-400 mb-2">추천 대상</h3>
+          <div className="section-card border border-sky-200 bg-sky-50/70 p-4">
+            <h3 className="mb-2 text-sm font-bold text-sky-700">추천 대상</h3>
             <ul className="space-y-1.5">
               {gel.usageGuide.bestFor.slice(0, 4).map((item, i) => (
                 <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="text-green-500 mt-0.5">✓</span>
+                  <span className="mt-0.5 text-sky-700">✓</span>
                   {item}
                 </li>
               ))}
@@ -242,12 +242,12 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
           </div>
 
           {/* 비추천 대상 */}
-          <div className="section-card p-4">
-            <h3 className="text-sm font-bold text-red-600 dark:text-red-400 mb-2">이런 분은 비추</h3>
+          <div className="section-card border border-rose-200 bg-rose-50/80 p-4">
+            <h3 className="mb-2 text-sm font-bold text-rose-600">이런 분은 비추</h3>
             <ul className="space-y-1.5">
               {gel.usageGuide.avoidIf.slice(0, 4).map((item, i) => (
                 <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="text-red-500 mt-0.5">✕</span>
+                  <span className="mt-0.5 text-rose-600">✕</span>
                   {item}
                 </li>
               ))}
@@ -255,12 +255,12 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
           </div>
 
           {/* 핵심 특징 */}
-          <div className="section-card p-4">
-            <h3 className="text-sm font-bold text-accent mb-2">핵심 특징</h3>
+          <div className="section-card border border-[var(--accent-line)] bg-white/84 p-4">
+            <h3 className="mb-2 text-sm font-bold text-sky-700">핵심 특징</h3>
             <ul className="space-y-1.5">
               {gel.features.slice(0, 4).map((feature, i) => (
                 <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
-                  <span className="text-accent mt-0.5">→</span>
+                  <span className="mt-0.5 text-sky-700">→</span>
                   {feature}
                 </li>
               ))}
@@ -272,7 +272,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
         <GelDetailTabs gel={gel} similarGelsData={similarGelsData} />
 
         {/* 데이터 출처 */}
-        <section className="section-card p-5">
+        <section className="section-card border border-[var(--accent-line)] bg-white/84 p-5">
           <div className="flex items-start gap-3">
             <span className="text-lg">🧪</span>
             <div>
@@ -282,7 +282,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
           </div>
         </section>
 
-        <div className="h-20" aria-hidden="true" />
+        <div className="h-28 md:h-20" aria-hidden="true" />
       </div>
     </>
   );

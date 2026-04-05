@@ -28,9 +28,9 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
   const appliedShoes = shoes.filter((shoe) => technology.usedInShoes.includes(shoe.slug));
 
   return (
-    <section className="section-card overflow-hidden">
+    <section className="section-card overflow-hidden border border-[var(--accent-line)] bg-white/88 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)]">
       {/* 헤더 - 카테고리 색상 배경 */}
-      <div className={`${colorClasses.bg} px-6 py-4 border-b border-border`}>
+      <div className={`border-b border-[var(--accent-line)] px-6 py-4 ${colorClasses.bg}`}>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-3">
             <span className={`px-3 py-1 bg-white/80 ${colorClasses.text} text-xs font-bold rounded-full`}>
@@ -56,9 +56,9 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
         </p>
 
         {/* 기술 원리 */}
-        <div className="bg-surface rounded-xl p-5">
+        <div className="rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-5">
           <h3 className="flex items-center gap-2 text-sm font-bold text-primary mb-3">
-            <FlaskConical className="w-4 h-4 text-accent" />
+            <FlaskConical className="w-4 h-4 text-sky-700" />
             기술 원리
           </h3>
           <p className="text-sm text-secondary leading-relaxed">
@@ -136,7 +136,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
           {/* 주요 장점 */}
           <div>
             <h3 className="flex items-center gap-2 text-sm font-bold text-primary mb-3">
-              <Sparkles className="w-4 h-4 text-warning" />
+              <Sparkles className="w-4 h-4 text-sky-700" />
               주요 장점
             </h3>
             <ul className="space-y-2">
@@ -152,7 +152,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
 
         {/* 적용 신발 */}
         {appliedShoes.length > 0 && (
-          <div className="pt-4 border-t border-border">
+          <div className="border-t border-[var(--accent-line)] pt-4">
             <h3 className="text-sm font-bold text-primary mb-3">
               이 기술이 적용된 신발 ({appliedShoes.length}개)
             </h3>
@@ -164,7 +164,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                     href={`/shoes/${shoe.slug}`}
                     className="flex-shrink-0 w-32 group"
                   >
-                    <div className="relative aspect-square bg-surface rounded-xl overflow-hidden mb-2">
+                    <div className="relative mb-2 aspect-square overflow-hidden rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
                       {shoe.image ? (
                         <Image
                           src={shoe.image}
@@ -180,7 +180,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                       )}
                     </div>
                     <p className="text-xs text-secondary truncate">{shoe.category}</p>
-                    <p className="text-sm font-medium text-primary group-hover:text-accent transition truncate">
+                    <p className="truncate text-sm font-medium text-primary transition group-hover:text-sky-700">
                       {shoe.name}
                     </p>
                   </Link>
@@ -232,7 +232,7 @@ export function TechnologyList({ brand, shoes }: TechnologyListProps) {
   return (
     <div className="space-y-6">
       {/* 목차 (빠른 이동) */}
-      <nav className="section-card p-4">
+      <nav className="section-card border border-[var(--accent-line)] bg-white/84 p-4">
         <p className="text-xs text-tertiary mb-2">빠른 이동</p>
         <div className="flex flex-wrap gap-2">
           {brand.technologies.map((tech) => {
@@ -241,7 +241,7 @@ export function TechnologyList({ brand, shoes }: TechnologyListProps) {
               <a
                 key={tech.id}
                 href={`#${tech.id}`}
-                className={`px-3 py-1.5 ${colorClasses.bg} ${colorClasses.text} text-sm font-medium rounded-full hover:opacity-80 transition flex items-center gap-1`}
+                className={`flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium transition hover:-translate-y-0.5 ${colorClasses.bg} ${colorClasses.text}`}
               >
                 {tech.name}
                 <ChevronRight className="w-3 h-3" />

@@ -16,13 +16,13 @@ type FitItemProps = {
 
 function FitItem({ title, subtitle, status, statusColor }: FitItemProps) {
   const colorClasses = {
-    positive: "bg-positive/10 text-positive",
-    warning: "bg-warning/10 text-warning",
-    primary: "bg-surface text-primary",
+    positive: "bg-sky-50 text-sky-700",
+    warning: "bg-amber-50 text-amber-700",
+    primary: "bg-slate-100 text-primary",
   };
 
   return (
-    <div className="flex items-center justify-between p-3 bg-surface rounded-xl">
+    <div className="flex items-center justify-between rounded-[22px] border border-stone-900/8 bg-white/80 p-4 shadow-[0_16px_30px_-28px_rgba(15,23,42,0.4)]">
       <div>
         <p className="font-medium text-sm text-primary">{title}</p>
         <p className="text-xs text-tertiary">{subtitle}</p>
@@ -80,8 +80,12 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
   };
 
   return (
-    <div>
-      <h2 className="font-bold mb-5 text-primary">한국인 발 적합성</h2>
+    <section className="space-y-6">
+      <div className="space-y-2">
+        <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
+        <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
+        <p className="text-sm leading-relaxed text-slate-600">{brand} {shoeName}가 발볼, 평발, 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
+      </div>
 
       <div className="grid md:grid-cols-2 gap-4">
         <div className="space-y-3">
@@ -111,11 +115,11 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           />
         </div>
 
-        <div className="bg-warning/5 border border-warning/20 rounded-xl p-5">
-          <h4 className="font-semibold text-sm mb-3 flex items-center gap-2 text-primary">
-            <span>⚠️</span> 한국 러너 참고사항
+        <div className="rounded-[26px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.24)]">
+          <h4 className="mb-3 flex items-center gap-2 text-sm font-semibold text-primary">
+            <span>ℹ️</span> 한국 러너 참고사항
           </h4>
-          <p className="text-sm text-secondary leading-relaxed">
+          <p className="text-sm leading-7 text-secondary">
             {getNote()}
             {koreanFootFit.wideOptions && (
               <strong className="text-primary"> 와이드 옵션이 제공되니 참고하세요.</strong>
@@ -123,6 +127,6 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

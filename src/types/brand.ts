@@ -46,33 +46,33 @@ export const categoryLabels: Record<TechnologyCategory, { label: string; color: 
 // 색상 매핑 (Tailwind 클래스)
 export const categoryColorClasses: Record<TechnologyCategory, { bg: string; text: string; border: string }> = {
   midsole: {
-    bg: 'bg-accent/10',
-    text: 'text-accent',
-    border: 'border-accent',
+    bg: 'bg-sky-50',
+    text: 'text-sky-700',
+    border: 'border-sky-200',
   },
   plate: {
-    bg: 'bg-positive/10',
-    text: 'text-positive',
-    border: 'border-positive',
+    bg: 'bg-slate-100',
+    text: 'text-slate-700',
+    border: 'border-slate-200',
   },
   cushioning: {
-    bg: 'bg-warning/10',
-    text: 'text-warning',
-    border: 'border-warning',
+    bg: 'bg-amber-50',
+    text: 'text-amber-700',
+    border: 'border-amber-200',
   },
   stability: {
-    bg: 'bg-negative/10',
-    text: 'text-negative',
-    border: 'border-negative',
+    bg: 'bg-cyan-50',
+    text: 'text-cyan-700',
+    border: 'border-cyan-200',
   },
   upper: {
-    bg: 'bg-surface',
-    text: 'text-secondary',
-    border: 'border-border',
+    bg: 'bg-stone-100',
+    text: 'text-stone-700',
+    border: 'border-stone-200',
   },
   outsole: {
-    bg: 'bg-accent/10',
-    text: 'text-accent',
-    border: 'border-accent',
+    bg: 'bg-sky-50',
+    text: 'text-sky-700',
+    border: 'border-sky-200',
   },
 };
