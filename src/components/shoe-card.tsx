@@ -119,7 +119,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             height={300}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
-            loading="lazy"
+            {...(index !== undefined && index < 4 ? { priority: true } : { loading: 'lazy' as const })}
           />
         ) : (
           <span className="text-4xl">👟</span>
