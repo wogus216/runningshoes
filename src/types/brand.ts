@@ -35,12 +35,12 @@ export interface Brand {
 
 // 카테고리 라벨 및 색상
 export const categoryLabels: Record<TechnologyCategory, { label: string; color: string }> = {
-  midsole: { label: '미드솔', color: 'accent' },
-  plate: { label: '플레이트', color: 'positive' },
-  cushioning: { label: '쿠셔닝', color: 'warning' },
-  stability: { label: '안정화', color: 'negative' },
-  upper: { label: '어퍼', color: 'secondary' },
-  outsole: { label: '아웃솔', color: 'accent' },
+  midsole: { label: '미드솔', color: 'sky' },
+  plate: { label: '플레이트', color: 'slate' },
+  cushioning: { label: '쿠셔닝', color: 'teal' },
+  stability: { label: '안정화', color: 'cyan' },
+  upper: { label: '어퍼', color: 'stone' },
+  outsole: { label: '아웃솔', color: 'sky' },
 };
 
 // 색상 매핑 (Tailwind 클래스)
@@ -56,9 +56,9 @@ export const categoryColorClasses: Record<TechnologyCategory, { bg: string; text
     border: 'border-slate-200',
   },
   cushioning: {
-    bg: 'bg-amber-50',
-    text: 'text-amber-700',
-    border: 'border-amber-200',
+    bg: 'bg-teal-50',
+    text: 'text-teal-700',
+    border: 'border-teal-200',
   },
   stability: {
     bg: 'bg-cyan-50',

@@ -42,7 +42,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
             key={star}
             className={`w-3 h-3 ${
               star <= rating
-                ? 'fill-warning text-warning'
+                ? 'fill-sky-500 text-sky-500'
                 : 'text-border'
             }`}
           />
@@ -187,7 +187,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     "h-full rounded-full transition-all",
                     gel.priceAnalysis.valueRating >= 8 ? "bg-sky-600" :
                     gel.priceAnalysis.valueRating >= 6 ? "bg-sky-500" :
-                    "bg-warning"
+                    "bg-sky-400"
                   )}
                   style={{ width: `${gel.priceAnalysis.valueRating * 10}%` }}
                 />

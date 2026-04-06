@@ -42,7 +42,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
             key={star}
             className={`w-4 h-4 ${
               star <= rating
-                ? 'fill-warning text-warning'
+                ? 'fill-sky-500 text-sky-500'
                 : 'text-border'
             }`}
           />
