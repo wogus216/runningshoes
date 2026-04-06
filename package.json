@@ -7,7 +7,10 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src",
-    "postbuild": "next-sitemap"
+    "validate": "node scripts/validate.js",
+    "images": "node scripts/process-images.js",
+    "postbuild": "next-sitemap",
+    "prepare": "husky"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
@@ -37,6 +40,7 @@
     "baseline-browser-mapping": "^2.10.11",
     "eslint": "^10.1.0",
     "globals": "^17.4.0",
+    "husky": "^9.1.7",
     "postcss": "8.4.35",
     "sharp": "^0.34.5",
     "tailwindcss": "3.4.3",

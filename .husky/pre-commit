@@ -1,0 +1,11 @@
+# 신발 데이터 파일이 변경된 경우에만 검증 실행
+SHOE_FILES=$(git diff --cached --name-only | grep "src/lib/data/shoes/")
+
+if [ -n "$SHOE_FILES" ]; then
+  echo "🔍 신발 데이터 변경 감지 — 무결성 검증 실행..."
+  node scripts/validate.js
+  if [ $? -ne 0 ]; then
+    echo "❌ 데이터 검증 실패. 에러를 수정 후 다시 커밋하세요."
+    exit 1
+  fi
+fi

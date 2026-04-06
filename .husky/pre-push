@@ -1,0 +1,8 @@
+# push 전 빌드 체크 — SSG 빌드 실패 시 배포 방지
+echo "🏗️  빌드 검증 중... (push 전 체크)"
+npm run build
+if [ $? -ne 0 ]; then
+  echo "❌ 빌드 실패. 에러를 수정 후 다시 push하세요."
+  exit 1
+fi
+echo "✅ 빌드 성공 — push 진행"
