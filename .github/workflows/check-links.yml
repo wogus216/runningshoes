@@ -43,7 +43,7 @@ jobs:
           username: ${{ secrets.MAIL_USERNAME }}
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: '🔗 구매 링크 점검 필요 (${{ github.run_id }})'
-          to: wogus2169@gmail.com
+          to: wogus21694@gmail.com
           from: 러닝의모든것 링크체커
           body: |
             구매 링크 자동 점검에서 문제가 발견되었습니다.
