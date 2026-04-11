@@ -6,6 +6,7 @@ import Image from "next/image";
 import { TrendingUp, Snowflake, Zap, Check, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
+import { SaveButton } from "@/components/saved/save-button";
 import type { Shoe } from "@/types/shoe";
 
 type ShoeCardProps = {
@@ -92,37 +93,42 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
   const mobileTag = recommendTags[0];
 
   const cardContent = (
-    <div
+    <article
       className={cn(
-        "group flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)]",
+        "group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)]",
         "bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(245,250,255,0.96))]",
         "shadow-[0_20px_40px_-34px_rgba(8,18,38,0.32)]",
         "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(2,132,199,0.24)]",
+        "focus-within:ring-2 focus-within:ring-sky-500 focus-within:ring-offset-2",
+        "motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:animate-none",
         "animate-fade-in-up"
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 60}ms` }}
     >
       <div className="relative aspect-[4/3] overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
-        <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_48%,#f97316_100%)]" />
-        <div className="absolute inset-x-2.5 top-2.5 z-10 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
+        <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_48%,#f97316_100%)]" aria-hidden="true" />
+        <div className="absolute inset-x-2.5 top-2.5 z-20 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
           <span className="rounded-full border border-sky-200 bg-white/90 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.14em] text-sky-800 backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
             {shoe.category}
           </span>
-          {shoe.specs && <AddToCompareButton shoe={shoe} variant="icon" className="bg-white/80 backdrop-blur hover:bg-white" />}
+          <div className="flex items-center gap-1.5">
+            {shoe.slug && <SaveButton slug={shoe.slug} className="h-8 w-8" />}
+            {shoe.specs && <AddToCompareButton shoe={shoe} variant="icon" className="bg-white/80 backdrop-blur hover:bg-white" />}
+          </div>
         </div>
 
         {shoe.image ? (
           <Image
             src={shoe.image}
-            alt={shoe.name}
+            alt={`${shoe.brand} ${shoe.name}`}
             width={300}
             height={300}
             sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
-            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03]"
+            className="h-full w-full object-contain transition-transform duration-300 group-hover:scale-[1.03] motion-reduce:transition-none motion-reduce:group-hover:scale-100"
             {...(index !== undefined && index < 4 ? { priority: true } : { loading: 'lazy' as const })}
           />
         ) : (
-          <span className="text-4xl">👟</span>
+          <span className="text-4xl" aria-hidden="true">👟</span>
         )}
       </div>
 
@@ -131,7 +137,17 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           <div className="min-w-0">
             <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 md:mb-1 md:text-[11px] md:tracking-[0.18em]">{shoe.brand}</p>
             <h3 className="line-clamp-2 min-h-[2.25rem] text-[13px] font-bold leading-4.5 text-slate-950 md:min-h-[3rem] md:text-base md:leading-5">
-              {shoe.name}
+              {shoe.slug ? (
+                <Link
+                  href={href as `/shoes/${string}`}
+                  className="outline-none after:absolute after:inset-0 after:rounded-[28px] after:content-[''] focus-visible:outline-none"
+                  aria-label={`${shoe.brand} ${shoe.name} 상세 보기`}
+                >
+                  {shoe.name}
+                </Link>
+              ) : (
+                shoe.name
+              )}
             </h3>
           </div>
           <div className="flex-shrink-0 rounded-2xl bg-[var(--navy)] px-2 py-1 text-right text-white shadow-[0_14px_28px_-20px_rgba(2,132,199,0.85)] md:px-2.5">

@@ -1,5 +1,3 @@
-'use client';
-
 import type { Shoe } from '@/types/shoe';
 import { Check, X, Star } from 'lucide-react';
 

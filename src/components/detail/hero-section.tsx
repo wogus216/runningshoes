@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Shoe } from "@/types/shoe";
 import { ImageSlider } from "./image-slider";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
+import { SaveButton } from "@/components/saved/save-button";
 import { Scale, Layers, ArrowDownUp, Footprints, FlaskConical, ArrowUpRight, Sparkles, ShieldCheck, Gauge, Activity } from "lucide-react";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
 
@@ -207,6 +208,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
                 </a>
               ) : null}
               <AddToCompareButton shoe={shoe} className="min-h-[48px] justify-center" />
+              <SaveButton slug={shoe.slug ?? ''} variant="full" className="min-h-[48px]" />
             </div>
           </div>
         </div>

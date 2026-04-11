@@ -1,11 +1,5 @@
 import { ClipboardList } from 'lucide-react';
 import type { DetailedSpecs as DetailedSpecsType } from "@/types/shoe";
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableRow,
-} from "@/components/ui/table";
 
 type DetailedSpecsProps = {
   specs: DetailedSpecsType;
@@ -23,31 +17,35 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
     { label: "발볼 너비", value: specs.width },
     { label: "추천 주행거리", value: specs.durability },
     { label: "가격", value: specs.price },
-    { label: "코스트-퍼-km", value: specs.costPerKm },
+    { label: "km당 비용", value: specs.costPerKm },
     { label: "발 형태 적합성", value: specs.footType },
     { label: "착지 패턴", value: specs.landingPattern },
-  ];
+  ].filter((r) => r.value && String(r.value).trim().length > 0);
+
+  if (specRows.length < 3) return null;
 
   return (
-    <section className="space-y-6">
-      <h2 className="text-3xl font-black flex items-center gap-4">
-        <ClipboardList className="h-8 w-8 text-stone-700" />
-        상세 스펙
-      </h2>
+    <section className="space-y-4">
+      <div>
+        <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Detailed Spec Sheet</p>
+        <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950 flex items-center gap-2">
+          <ClipboardList className="h-6 w-6 text-sky-700" />
+          상세 스펙 시트
+        </h2>
+      </div>
 
-      <div className="overflow-hidden bg-white rounded-2xl shadow-md">
-        <Table>
-          <TableBody>
-            {specRows.map((row, index) => (
-              <TableRow key={row.label} className={index % 2 === 0 ? "bg-gray-50" : ""}>
-                <TableCell className="font-bold text-stone-700 w-1/3">
-                  {row.label}
-                </TableCell>
-                <TableCell>{row.value}</TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
+      <div className="overflow-hidden rounded-2xl border border-border bg-white">
+        <dl className="divide-y divide-border">
+          {specRows.map((row, i) => (
+            <div
+              key={row.label}
+              className={`flex items-start gap-4 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-surface/50' : ''}`}
+            >
+              <dt className="w-28 shrink-0 font-semibold text-tertiary">{row.label}</dt>
+              <dd className="flex-1 text-primary">{row.value}</dd>
+            </div>
+          ))}
+        </dl>
       </div>
     </section>
   );

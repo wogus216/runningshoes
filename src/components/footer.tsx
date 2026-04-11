@@ -17,6 +17,7 @@ export function Footer() {
                 <li><Link href="/best/daily-trainer" className="hover:text-primary transition">데일리</Link></li>
                 <li><Link href="/best/racing" className="hover:text-primary transition">레이싱</Link></li>
                 <li><Link href="/best" className="hover:text-primary transition">전체 가이드 →</Link></li>
+                <li><Link href="/saved" className="hover:text-primary transition">찜한 목록 ♡</Link></li>
               </ul>
             </div>
             <div>

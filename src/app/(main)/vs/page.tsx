@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllPairs } from '@/lib/pseo/pairs';
+import { categoryOrder } from '@/types/shoe';
 import { SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -23,8 +24,6 @@ export default function VsHubPage() {
     acc[p.category].push(p);
     return acc;
   }, {});
-  const categoryOrder = ['입문화', '데일리', '쿠션화', '레이싱', '안정화'];
-
   return (
     <div className="space-y-10">
       <header className="space-y-3">

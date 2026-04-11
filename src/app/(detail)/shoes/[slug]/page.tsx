@@ -161,80 +161,33 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       {
         '@type': 'ListItem',
         'position': 2,
-        'name': '러닝화',
-        'item': SITE_URL,
-      },
-      {
-        '@type': 'ListItem',
-        'position': 3,
         'name': shoe.brand,
         'item': `${SITE_URL}/brands/${shoe.brand.toLowerCase().replace(/\s+/g, '-')}`,
       },
       {
         '@type': 'ListItem',
-        'position': 4,
+        'position': 3,
         'name': `${shoe.brand} ${shoe.name}`,
         'item': `${SITE_URL}/shoes/${slug}`,
       },
     ],
   };
 
-  // rating 값을 1-5 범위로 정규화하는 함수
-  const normalizeRating = (rating: number): number => {
-    if (rating > 5) {
-      // 100점 만점 → 5점 만점 변환 (예: 88 → 4.4)
-      const normalized = (rating / 100) * 5;
-      // 소수점 1자리로 반올림
-      return Math.round(normalized * 10) / 10;
-    }
-    return rating;
-  };
-
-  // Review 구조화 데이터 (신발 리뷰 데이터 활용)
-  const reviewsJsonLd =
-    shoe.reviews?.map((review, index) => {
-      const ratingValue = normalizeRating(review.rating || shoe.rating);
-
-      return {
-        '@type': 'Review',
-        'author': review.userType === '에디터 분석'
-          ? { '@type': 'Organization', 'name': '러닝의모든것' }
-          : { '@type': 'Person', 'name': review.userType || `러너${index + 1}` },
-        'reviewRating': {
-          '@type': 'Rating',
-          'ratingValue': Math.min(5, Math.max(1, ratingValue)), // 1-5 범위 강제
-          'bestRating': 5,
-          'worstRating': 1,
-        },
-        'reviewBody': review.text,
-      };
-    }) || [];
-
-  const normalizedShoeRating = normalizeRating(shoe.rating);
-
-  // Product JSON-LD 구조화 데이터 (Review 포함)
+  // Product JSON-LD 구조화 데이터
+  // NOTE: aggregateRating과 review는 에디터 분석만으로 구성돼 있어 의도적으로 제외.
+  // Google의 review snippet 정책은 실제 사용자 리뷰를 요구하며, 자체 편집 리뷰만으로는
+  // 수동 조치 리스크가 있음. 실사용자 리뷰 확보 후 재도입 예정.
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': `${shoe.brand} ${shoe.name}`,
     'description': shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
-    'image': shoe.image || DEFAULT_OG_IMAGE,
+    ...(shoe.image && { 'image': `${SITE_URL}${shoe.image}` }),
     'brand': {
       '@type': 'Brand',
       'name': shoe.brand,
     },
     'category': '러닝화',
-    ...(shoe.reviews && shoe.reviews.length > 0 && {
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': Math.min(5, Math.max(1, normalizedShoeRating)),
-        'bestRating': 5,
-        'worstRating': 1,
-        'ratingCount': shoe.reviews.length,
-        'reviewCount': shoe.reviews.length,
-      },
-    }),
-    ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
     ...(shoe.priceAnalysis?.msrp && {
       'offers': {
         '@type': 'Offer',

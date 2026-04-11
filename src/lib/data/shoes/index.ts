@@ -1,4 +1,5 @@
 import type { Shoe } from '@/types/shoe';
+import { categoryOrder as sharedCategoryOrder } from '@/types/shoe';
 import { nikeShoes } from './nike';
 import { adidasShoes } from './adidas';
 import { asicsShoes } from './asics';
@@ -10,7 +11,8 @@ import { brooksShoes } from './brooks';
 import { mizunoShoes } from './mizuno';
 import { onShoes } from './on';
 
-export const categoryOrder: string[] = ['입문화', '데일리', '쿠션화', '레이싱', '안정화'];
+// Re-export from types/shoe.ts to keep a single source of truth
+export const categoryOrder: readonly string[] = sharedCategoryOrder;
 
 export const shoes: Shoe[] = [
   ...nikeShoes,
@@ -30,27 +32,41 @@ export function getShoes(): Shoe[] {
   return shoes;
 }
 
-export function groupShoesByCategory(shoesList: Shoe[] = shoes): Record<string, Shoe[]> {
-  return shoesList.reduce<Record<string, Shoe[]>>((acc, shoe) => {
-    if (!acc[shoe.category]) {
-      acc[shoe.category] = [];
-    }
-    acc[shoe.category].push(shoe);
+// Memoized defaults — computed once per module load (static at build time)
+let _defaultByCategory: Record<string, Shoe[]> | null = null;
+let _defaultByBrand: Record<string, Shoe[]> | null = null;
+let _defaultBrands: string[] | null = null;
+
+function groupByKey(list: Shoe[], key: 'category' | 'brand'): Record<string, Shoe[]> {
+  return list.reduce<Record<string, Shoe[]>>((acc, shoe) => {
+    const k = shoe[key];
+    if (!acc[k]) acc[k] = [];
+    acc[k].push(shoe);
     return acc;
   }, {});
+}
+
+export function groupShoesByCategory(shoesList: Shoe[] = shoes): Record<string, Shoe[]> {
+  if (shoesList === shoes) {
+    if (!_defaultByCategory) _defaultByCategory = groupByKey(shoes, 'category');
+    return _defaultByCategory;
+  }
+  return groupByKey(shoesList, 'category');
 }
 
 export function groupShoesByBrand(shoesList: Shoe[] = shoes): Record<string, Shoe[]> {
-  return shoesList.reduce<Record<string, Shoe[]>>((acc, shoe) => {
-    if (!acc[shoe.brand]) {
-      acc[shoe.brand] = [];
-    }
-    acc[shoe.brand].push(shoe);
-    return acc;
-  }, {});
+  if (shoesList === shoes) {
+    if (!_defaultByBrand) _defaultByBrand = groupByKey(shoes, 'brand');
+    return _defaultByBrand;
+  }
+  return groupByKey(shoesList, 'brand');
 }
 
 export function getBrandsFromShoes(shoesList: Shoe[] = shoes): string[] {
+  if (shoesList === shoes) {
+    if (!_defaultBrands) _defaultBrands = Array.from(new Set(shoes.map((s) => s.brand))).sort();
+    return _defaultBrands;
+  }
   return Array.from(new Set(shoesList.map((shoe) => shoe.brand))).sort();
 }
 

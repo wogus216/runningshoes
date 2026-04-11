@@ -1,6 +1,4 @@
-'use client';
-
-import { ExternalLink, ShieldCheck } from 'lucide-react';
+import { ExternalLink, ShieldCheck, TrendingDown, Sparkles } from 'lucide-react';
 import type { PurchaseLink } from '@/types/shoe';
 import { AffiliateDisclosure } from './affiliate-disclosure';
 
@@ -8,6 +6,7 @@ type PurchaseLinksProps = {
   purchaseLinks: PurchaseLink[];
   shoeName: string;
   brand: string;
+  msrp?: number;
 };
 
 // 스토어별 아이콘/색상
@@ -42,17 +41,36 @@ function isValidPurchaseUrl(url: string): boolean {
   }
 }
 
-export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksProps) {
+export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: PurchaseLinksProps) {
   if (!purchaseLinks || purchaseLinks.length === 0) {
     return null;
   }
 
-  // 공식몰 우선 정렬
-  const sortedLinks = [...purchaseLinks].sort((a, b) => {
+  const validLinks = purchaseLinks.filter((link) => isValidPurchaseUrl(link.url));
+  if (validLinks.length === 0) return null;
+
+  // 최저가 식별
+  const pricedLinks = validLinks.filter((l) => typeof l.price === 'number');
+  const lowestPrice = pricedLinks.length > 0
+    ? Math.min(...pricedLinks.map((l) => l.price as number))
+    : undefined;
+  const cheapestLink = lowestPrice !== undefined
+    ? pricedLinks.find((l) => l.price === lowestPrice)
+    : undefined;
+
+  // 정렬: 최저가 → 공식 → 나머지 (가격순)
+  const sortedLinks = [...validLinks].sort((a, b) => {
+    if (a === cheapestLink) return -1;
+    if (b === cheapestLink) return 1;
     if (a.isOfficial && !b.isOfficial) return -1;
     if (!a.isOfficial && b.isOfficial) return 1;
-    return 0;
+    const ap = a.price ?? Number.MAX_SAFE_INTEGER;
+    const bp = b.price ?? Number.MAX_SAFE_INTEGER;
+    return ap - bp;
   });
+
+  const savings = msrp && lowestPrice && lowestPrice < msrp ? msrp - lowestPrice : 0;
+  const savingsPct = savings && msrp ? Math.round((savings / msrp) * 100) : 0;
 
   return (
     <section className="space-y-5">
@@ -60,58 +78,108 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand }: PurchaseLinksP
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
         <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">
           <ExternalLink className="h-6 w-6 text-stone-600" />
-          구매처
+          스토어별 가격 비교
         </h2>
-        <p className="text-sm leading-relaxed text-slate-600">{brand} {shoeName}의 구매 링크를 공식몰 우선으로 정리했습니다.</p>
+        <p className="text-sm leading-relaxed text-slate-600">
+          {brand} {shoeName}의 {validLinks.length}개 스토어 가격을 한눈에 비교하세요.
+        </p>
       </div>
+
+      {cheapestLink && lowestPrice !== undefined && (
+        <a
+          href={cheapestLink.url}
+          target="_blank"
+          rel="noopener noreferrer nofollow"
+          className="block rounded-[28px] border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 p-5 shadow-[0_20px_40px_-28px_rgba(16,185,129,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_48px_-28px_rgba(16,185,129,0.45)] md:p-6"
+        >
+          <div className="flex flex-wrap items-start justify-between gap-4">
+            <div>
+              <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+                <Sparkles className="h-3 w-3" />
+                최저가
+              </div>
+              <p className="mt-3 text-xs uppercase tracking-wide text-emerald-700 font-semibold">
+                {cheapestLink.store} {cheapestLink.isOfficial ? '공식몰' : ''}
+              </p>
+              <p className="mt-1 text-3xl md:text-4xl font-black text-slate-950">
+                {lowestPrice.toLocaleString()}<span className="text-xl">원</span>
+              </p>
+              {savings > 0 && (
+                <p className="mt-1 flex items-center gap-1 text-sm text-emerald-700 font-semibold">
+                  <TrendingDown className="h-4 w-4" />
+                  정가 대비 {savings.toLocaleString()}원 ({savingsPct}%) 절약
+                </p>
+              )}
+            </div>
+            <div className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition group-hover:bg-slate-800">
+              {cheapestLink.store}에서 구매
+              <ExternalLink className="h-4 w-4" />
+            </div>
+          </div>
+        </a>
+      )}
 
       <AffiliateDisclosure purchaseLinks={purchaseLinks} />
 
-      <div className="grid gap-3 sm:grid-cols-2">
-        {sortedLinks.filter(link => isValidPurchaseUrl(link.url)).map((link, index) => {
-          const style = getStoreStyle(link.store);
-          return (
-            <a
-              key={index}
-              href={link.url}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className={`
-                flex items-center justify-between rounded-[24px] border p-4
-                transition-all hover:-translate-y-0.5 hover:shadow-[0_18px_36px_-30px_rgba(15,23,42,0.45)]
-                ${style.bg} border-current/10
-              `}
-            >
-              <div className="flex items-center gap-3">
-                <span className={`font-bold ${style.text}`}>
-                  {link.store}
-                </span>
-                {link.isOfficial && (
-                  <span className="inline-flex items-center gap-1 text-xs bg-emerald-100 text-emerald-700 px-2 py-0.5 rounded-full">
-                    <ShieldCheck className="h-3 w-3" />
-                    공식
-                  </span>
-                )}
-              </div>
-              <div className="flex items-center gap-2">
-                {link.price && (
-                  <span className="font-semibold text-gray-900">
-                    {link.price.toLocaleString()}원
-                  </span>
-                )}
-                <ExternalLink className="h-4 w-4 text-gray-400" />
-              </div>
-            </a>
-          );
-        })}
+      <div className="overflow-hidden rounded-[24px] border border-border bg-white">
+        <div className="hidden sm:grid grid-cols-[1fr_auto_auto] gap-4 bg-surface px-5 py-3 text-xs font-semibold uppercase tracking-wider text-tertiary">
+          <div>스토어</div>
+          <div className="text-right">가격</div>
+          <div className="w-20 text-right">이동</div>
+        </div>
+        <ul className="divide-y divide-border">
+          {sortedLinks.map((link, index) => {
+            const style = getStoreStyle(link.store);
+            const isCheapest = link === cheapestLink;
+            return (
+              <li key={index}>
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-surface/50 ${
+                    isCheapest ? 'bg-emerald-50/50' : ''
+                  }`}
+                >
+                  <div className="flex items-center gap-2 min-w-0">
+                    <span className={`font-bold ${style.text}`}>{link.store}</span>
+                    {link.isOfficial && (
+                      <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-semibold">
+                        <ShieldCheck className="h-3 w-3" />
+                        공식
+                      </span>
+                    )}
+                    {isCheapest && (
+                      <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-semibold">
+                        최저가
+                      </span>
+                    )}
+                  </div>
+                  <div className="text-right">
+                    {link.price ? (
+                      <span className={`font-bold ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
+                        {link.price.toLocaleString()}원
+                      </span>
+                    ) : (
+                      <span className="text-xs text-tertiary">가격 확인</span>
+                    )}
+                  </div>
+                  <div className="hidden sm:flex w-20 items-center justify-end text-slate-400">
+                    <ExternalLink className="h-4 w-4" />
+                  </div>
+                </a>
+              </li>
+            );
+          })}
+        </ul>
       </div>
 
-      <div className="rounded-[24px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(248,248,246,0.92))] p-4 text-sm text-gray-600">
-        <p className="mb-2 font-medium text-gray-700">구매 전 확인하세요</p>
-        <ul className="space-y-1 text-xs">
-          <li>- 가격은 변동될 수 있으며, 실제 판매가는 각 스토어에서 확인하세요.</li>
-          <li>- 정품 여부는 판매처에서 보증하며, 본 사이트는 책임지지 않습니다.</li>
-          <li>- 가능하면 매장에서 착화 후 사이즈를 확인하세요.</li>
+      <div className="rounded-[20px] border border-stone-900/10 bg-surface/60 p-4 text-xs text-slate-600">
+        <p className="mb-2 font-semibold text-slate-700">구매 전 확인</p>
+        <ul className="space-y-1">
+          <li>- 가격은 수시로 변동됩니다. 실제 판매가는 각 스토어에서 확인하세요.</li>
+          <li>- 정품 여부는 판매처 보증 기준이며 본 사이트는 책임지지 않습니다.</li>
+          <li>- 사이즈가 걱정이라면 매장 착화 후 온라인 주문을 권장합니다.</li>
         </ul>
       </div>
     </section>

@@ -3,11 +3,14 @@
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 import { QuickSpecs } from '@/components/detail/quick-specs';
+import { DetailedSpecs } from '@/components/detail/detailed-specs';
 import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis';
 import { InjuryPrevention } from '@/components/detail/injury-prevention';
 import { KoreanFootFit } from '@/components/detail/korean-foot-fit';
+import { FitHelper } from '@/components/detail/fit-helper';
 import { ValueAnalysis } from '@/components/detail/value-analysis';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
+import { ReplacementCalculator } from '@/components/detail/replacement-calculator';
 import { ReviewsSection } from '@/components/detail/reviews-section';
 import { SimilarShoes } from '@/components/detail/similar-shoes';
 import { cn } from '@/lib/utils';
@@ -99,6 +102,11 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               />
             </div>
           )}
+          {shoe.detailedSpecs && (
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+              <DetailedSpecs specs={shoe.detailedSpecs} />
+            </div>
+          )}
         </div>
 
         <div className={activeTab === 'biomechanics' ? '' : 'hidden'}>
@@ -127,6 +135,15 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               />
             </div>
           )}
+          {shoe.koreanFootFit && (
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+              <FitHelper
+                koreanFootFit={shoe.koreanFootFit}
+                shoeName={shoe.name}
+                brand={shoe.brand}
+              />
+            </div>
+          )}
           {similarShoesData && similarShoesData.length > 0 && (
             <SimilarShoes currentShoe={shoe} similarShoesData={similarShoesData} currentCategory={shoe.category} />
           )}
@@ -144,12 +161,21 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
               />
             </div>
           )}
+          {shoe.specs && (
+            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+              <ReplacementCalculator
+                durabilityKm={shoe.specs.durability}
+                shoeName={shoe.name}
+              />
+            </div>
+          )}
           {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
             <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <PurchaseLinks
                 purchaseLinks={shoe.purchaseLinks}
                 shoeName={shoe.name}
                 brand={shoe.brand}
+                msrp={shoe.priceAnalysis?.msrp ?? shoe.price}
               />
             </div>
           )}

@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge } from 'lucide-react';
+import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 
 type MarathonDetailPageProps = {
   params: Promise<{
@@ -331,6 +332,9 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             ))}
           </div>
         </div>
+
+        {/* 대회 준비용 러닝화 브릿지 */}
+        <MarathonShoeBridge distances={event.distances} eventName={event.name} />
 
         {/* 대회 정보 */}
         <div className="section-card border border-[var(--accent-line)] bg-white/84 p-6">

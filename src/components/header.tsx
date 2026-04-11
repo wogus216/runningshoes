@@ -3,12 +3,16 @@
 import Link from 'next/link';
 import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown } from 'lucide-react';
 import { getAllBrands } from '@/lib/data/brands';
+import { SearchPalette } from '@/components/search/search-palette';
+import { getSearchIndex } from '@/lib/search-index';
 
 const brandLinks = getAllBrands().map((b) => ({
   id: b.id,
   name: b.name,
   nameKo: b.nameKo ?? '',
 }));
+
+const searchItems = getSearchIndex();
 
 export function Header() {
   return (
@@ -98,6 +102,9 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
+          <div className="hidden sm:block">
+            <SearchPalette items={searchItems} />
+          </div>
           <Link
             href="/compare"
             className="inline-flex min-h-[44px] items-center gap-2 rounded-full border border-[var(--accent-line)] bg-white/84 px-3.5 py-2 text-sm font-semibold text-slate-900 transition-all duration-200 hover:border-sky-300 hover:bg-white"
