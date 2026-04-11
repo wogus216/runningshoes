@@ -7,6 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint src",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
     "validate": "node scripts/validate.js",
     "images": "node scripts/process-images.js",
     "postbuild": "next-sitemap",
@@ -36,6 +39,7 @@
     "@types/node": "20.11.30",
     "@types/react": "^19.2.7",
     "@types/react-dom": "^19.2.3",
+    "@vitest/coverage-v8": "^4.1.4",
     "autoprefixer": "10.4.17",
     "baseline-browser-mapping": "^2.10.11",
     "eslint": "^10.1.0",
@@ -46,6 +50,7 @@
     "tailwindcss": "3.4.3",
     "tailwindcss-animate": "1.0.7",
     "typescript": "5.4.3",
-    "typescript-eslint": "^8.57.2"
+    "typescript-eslint": "^8.57.2",
+    "vitest": "^4.1.4"
   }
 }

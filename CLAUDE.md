@@ -2,13 +2,15 @@
 
 ## 프로젝트 개요
 
-**한국 러너를 위한 러닝화 비교/추천 사이트** - Next.js 14 App Router 기반
+**한국 러너를 위한 러닝화 비교/추천 사이트** - Next.js 15 App Router 기반
 
 ### 기술 스택
-- **Framework**: Next.js 14.2 (App Router)
-- **Language**: TypeScript
+- **Framework**: Next.js 15.5 (App Router, typedRoutes)
+- **React**: 19.2
+- **Language**: TypeScript 5.4
 - **Styling**: Tailwind CSS + shadcn/ui
 - **Charts**: Recharts
+- **Testing**: Vitest
 - **Build**: Static Site Generation (SSG)
 
 ### 핵심 기능
