@@ -169,9 +169,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
                 mobileBadge.color === 'accent' && "bg-sky-50 text-sky-700"
               )}
             >
-              {mobileBadge.icon === 'value' && <TrendingUp className="w-3 h-3" />}
-              {mobileBadge.icon === 'carbon' && <Zap className="w-3 h-3" />}
-              {mobileBadge.icon === 'winter' && <Snowflake className="w-3 h-3" />}
+              {mobileBadge.icon === 'value' && <TrendingUp className="w-3 h-3" aria-hidden="true" />}
+              {mobileBadge.icon === 'carbon' && <Zap className="w-3 h-3" aria-hidden="true" />}
+              {mobileBadge.icon === 'winter' && <Snowflake className="w-3 h-3" aria-hidden="true" />}
               {mobileBadge.text}
             </span>
           )}
@@ -191,9 +191,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
                 badge.color === 'accent' && "bg-sky-50 text-sky-700"
               )}
             >
-              {badge.icon === 'value' && <TrendingUp className="w-3 h-3" />}
-              {badge.icon === 'carbon' && <Zap className="w-3 h-3" />}
-              {badge.icon === 'winter' && <Snowflake className="w-3 h-3" />}
+              {badge.icon === 'value' && <TrendingUp className="w-3 h-3" aria-hidden="true" />}
+              {badge.icon === 'carbon' && <Zap className="w-3 h-3" aria-hidden="true" />}
+              {badge.icon === 'winter' && <Snowflake className="w-3 h-3" aria-hidden="true" />}
               {badge.text}
             </span>
           ))}
@@ -221,9 +221,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               )}
             >
               {mobileTag.type === 'positive' ? (
-                <Check className="w-3 h-3" />
+                <Check className="w-3 h-3" aria-hidden="true" />
               ) : (
-                <AlertTriangle className="w-3 h-3" />
+                <AlertTriangle className="w-3 h-3" aria-hidden="true" />
               )}
               {mobileTag.text}
             </span>
@@ -240,9 +240,9 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               )}
             >
               {tag.type === 'positive' ? (
-                <Check className="w-3 h-3" />
+                <Check className="w-3 h-3" aria-hidden="true" />
               ) : (
-                <AlertTriangle className="w-3 h-3" />
+                <AlertTriangle className="w-3 h-3" aria-hidden="true" />
               )}
               {tag.text}
             </span>
@@ -250,16 +250,13 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         </div>
 
         {shoe.tags && shoe.tags.length > 0 && onTagClick && (
-          <div className="mt-auto hidden gap-1.5 overflow-hidden pt-3 md:flex">
+          <div className="relative z-10 mt-auto hidden gap-1.5 overflow-hidden pt-3 md:flex">
             {shoe.tags.slice(0, 2).map((tag) => (
               <button
                 key={tag}
-                onClick={(e) => {
-                  e.preventDefault();
-                  e.stopPropagation();
-                  onTagClick(tag);
-                }}
-                className="max-w-[88px] truncate rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 transition hover:bg-sky-100 hover:text-slate-950"
+                type="button"
+                onClick={() => onTagClick(tag)}
+                className="max-w-[88px] truncate rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 transition-colors hover:bg-sky-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
                 aria-label={`${tag} 태그로 필터링`}
               >
                 #{tag}
@@ -268,16 +265,8 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
           </div>
         )}
       </div>
-    </div>
+    </article>
   );
-
-  if (shoe.slug) {
-    return (
-      <Link href={href as `/shoes/${string}`} className="block h-full">
-        {cardContent}
-      </Link>
-    );
-  }
 
   return cardContent;
 });
