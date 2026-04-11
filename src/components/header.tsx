@@ -1,7 +1,14 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy } from 'lucide-react';
+import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown } from 'lucide-react';
+import { getAllBrands } from '@/lib/data/brands';
+
+const brandLinks = getAllBrands().map((b) => ({
+  id: b.id,
+  name: b.name,
+  nameKo: b.nameKo ?? '',
+}));
 
 export function Header() {
   return (
@@ -21,13 +28,45 @@ export function Header() {
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
-          <Link
-            href="/brands/nike/technology"
-            className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-white/85 hover:text-slate-950"
-          >
-            <FlaskConical className="h-4 w-4" />
-            <span>테크</span>
-          </Link>
+          <div className="group relative">
+            <Link
+              href="/brands"
+              className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-white/85 hover:text-slate-950 group-hover:bg-white/85 group-hover:text-slate-950"
+              aria-haspopup="true"
+            >
+              <FlaskConical className="h-4 w-4" />
+              <span>브랜드</span>
+              <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
+            </Link>
+            <div className="invisible absolute left-0 top-full z-40 w-56 translate-y-1 pt-1 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+              <div className="rounded-xl border border-[var(--accent-line)] bg-white/95 p-2 shadow-lg backdrop-blur-xl">
+                <ul className="grid grid-cols-1 gap-0.5">
+                  {brandLinks.map((b) => (
+                    <li key={b.id}>
+                      <Link
+                        href={`/brands/${b.id}`}
+                        className="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-medium text-slate-700 transition-colors hover:bg-sky-50 hover:text-slate-950"
+                      >
+                        <span>{b.name}</span>
+                        {b.nameKo && (
+                          <span className="text-xs text-slate-400">{b.nameKo}</span>
+                        )}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+                <div className="mt-1 border-t border-slate-100 pt-1">
+                  <Link
+                    href="/brands"
+                    className="flex items-center justify-between rounded-lg px-3 py-2 text-sm font-semibold text-sky-700 hover:bg-sky-50"
+                  >
+                    <span>전체 브랜드 비교</span>
+                    <ArrowUpRight className="h-3 w-3" />
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
           <Link
             href="/gels"
             className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-white/70 hover:text-slate-950"
@@ -48,6 +87,13 @@ export function Header() {
           >
             <BookOpen className="h-4 w-4" />
             <span>가이드</span>
+          </Link>
+          <Link
+            href="/best"
+            className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-white/70 hover:text-slate-950"
+          >
+            <Award className="h-4 w-4" />
+            <span>베스트</span>
           </Link>
         </nav>
 
