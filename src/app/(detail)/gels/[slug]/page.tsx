@@ -186,14 +186,16 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
       'name': gel.brand,
     },
     'category': '에너지 젤',
-    'aggregateRating': {
-      '@type': 'AggregateRating',
-      'ratingValue': Math.min(5, Math.max(1, normalizedRating)),
-      'bestRating': 5,
-      'worstRating': 1,
-      'ratingCount': gel.reviews?.length || 1,
-      'reviewCount': gel.reviews?.length || 1,
-    },
+    ...(gel.reviews && gel.reviews.length > 0 && {
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': Math.min(5, Math.max(1, normalizedRating)),
+        'bestRating': 5,
+        'worstRating': 1,
+        'ratingCount': gel.reviews.length,
+        'reviewCount': gel.reviews.length,
+      },
+    }),
     ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
     ...(gel.priceAnalysis?.msrp && {
       'offers': {

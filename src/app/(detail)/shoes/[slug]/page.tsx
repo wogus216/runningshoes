@@ -11,6 +11,7 @@ import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
+import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -223,14 +224,16 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       'name': shoe.brand,
     },
     'category': '러닝화',
-    'aggregateRating': {
-      '@type': 'AggregateRating',
-      'ratingValue': Math.min(5, Math.max(1, normalizedShoeRating)), // 1-5 범위 강제
-      'bestRating': 5,
-      'worstRating': 1,
-      'ratingCount': shoe.reviews?.length || 1,
-      'reviewCount': shoe.reviews?.length || 1,
-    },
+    ...(shoe.reviews && shoe.reviews.length > 0 && {
+      'aggregateRating': {
+        '@type': 'AggregateRating',
+        'ratingValue': Math.min(5, Math.max(1, normalizedShoeRating)),
+        'bestRating': 5,
+        'worstRating': 1,
+        'ratingCount': shoe.reviews.length,
+        'reviewCount': shoe.reviews.length,
+      },
+    }),
     ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
     ...(shoe.priceAnalysis?.msrp && {
       'offers': {
@@ -289,6 +292,9 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           </div>
         )}
 
+
+        {/* PSEO 교차 링크 */}
+        <ShoeCrossLinks shoe={shoe} />
 
         {/* 데이터 출처 */}
         <section className="section-card p-5">
