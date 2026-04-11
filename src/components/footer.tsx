@@ -13,9 +13,10 @@ export function Footer() {
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">카테고리</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link href="/?category=입문화" className="hover:text-primary transition">입문화</Link></li>
-                <li><Link href="/?category=데일리" className="hover:text-primary transition">데일리</Link></li>
-                <li><Link href="/?category=레이싱" className="hover:text-primary transition">레이싱</Link></li>
+                <li><Link href="/best/beginner" className="hover:text-primary transition">입문화</Link></li>
+                <li><Link href="/best/daily-trainer" className="hover:text-primary transition">데일리</Link></li>
+                <li><Link href="/best/racing" className="hover:text-primary transition">레이싱</Link></li>
+                <li><Link href="/best" className="hover:text-primary transition">전체 가이드 →</Link></li>
               </ul>
             </div>
             <div>
