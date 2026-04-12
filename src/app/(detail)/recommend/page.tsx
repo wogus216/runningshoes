@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo } from 'react';
-import { RotateCcw, Sparkles, Loader2, ArrowUpRight, Activity } from 'lucide-react';
+import { RotateCcw, Sparkles, ArrowUpRight, Activity } from 'lucide-react';
 import { getShoes } from '@/lib/data/shoes';
 import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
 import { Questionnaire } from '@/components/recommend/questionnaire';
@@ -12,15 +12,10 @@ export default function RecommendPage() {
   const allShoes = useMemo(() => getShoes(), []);
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [recommendations, setRecommendations] = useState<RecommendedShoe[]>([]);
-  const [isLoading, setIsLoading] = useState(false);
-
-  const handleComplete = async (userProfile: UserProfile) => {
-    setIsLoading(true);
-    await new Promise(resolve => setTimeout(resolve, 800));
+  const handleComplete = (userProfile: UserProfile) => {
     const results = recommendShoes(allShoes, userProfile);
     setRecommendations(results);
     setProfile(userProfile);
-    setIsLoading(false);
   };
 
   const handleReset = () => {
@@ -110,26 +105,10 @@ export default function RecommendPage() {
         </div>
       </section>
 
-        {/* 로딩 상태 */}
-        {isLoading && (
-          <div className="flex flex-col items-center justify-center rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-12 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
-            <div className="relative">
-              <div className="absolute inset-0 bg-accent rounded-full blur-xl opacity-30 animate-pulse" />
-              <Loader2 className="h-16 w-16 text-accent animate-spin relative" />
-            </div>
-            <p className="mt-6 text-xl font-semibold text-primary">
-              맞춤 신발을 찾고 있어요
-            </p>
-            <p className="mt-2 text-secondary">
-              {allShoes.length}개 신발을 분석하고 있습니다...
-            </p>
-          </div>
-        )}
-
         {/* 설문 또는 결과 */}
-        {!isLoading && !profile ? (
+        {!profile ? (
           <Questionnaire onComplete={handleComplete} />
-        ) : !isLoading && profile ? (
+        ) : (
           <div className="space-y-6">
             <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
               <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">
@@ -190,7 +169,7 @@ export default function RecommendPage() {
               </div>
             )}
           </div>
-        ) : null}
+        )}
     </div>
   );
 }

@@ -89,6 +89,20 @@
   main {
     @apply relative z-10;
   }
+
+  /* 전역 focus-visible — 키보드 사용자 초점 표시 (WCAG 2.4.7) */
+  a:focus-visible,
+  button:focus-visible,
+  input:focus-visible,
+  select:focus-visible,
+  textarea:focus-visible,
+  [tabindex]:focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2 ring-offset-white;
+  }
+
+  summary:focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2 ring-offset-white;
+  }
 }
 
 @layer utilities {

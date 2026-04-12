@@ -156,12 +156,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
             />
           </>
         )}
-        {/* AdSense - head에 로드되어야 Auto Ads 동작 */}
+        {/* AdSense — afterInteractive로 렌더 블로킹 방지 (Auto Ads는 onLoad 후에도 동작) */}
         <Script
           async
           src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
           crossOrigin="anonymous"
-          strategy="beforeInteractive"
+          strategy="afterInteractive"
         />
         <script
           type="application/ld+json"
