@@ -2,7 +2,13 @@ import Link from 'next/link';
 import { Gem, Check, BadgeDollarSign, ShoppingCart, ArrowRight } from 'lucide-react';
 import type { PriceAnalysis } from "@/types/shoe";
 import type { ShoeSpecs } from "@/types/shoe";
-import { getShoes } from "@/lib/data/shoes";
+
+export type ResolvedAlternative = {
+  key: string;         // 원본 slug or name (alternatives 배열의 원본 값)
+  slug?: string;       // 매칭된 신발의 slug (있으면 링크)
+  brand?: string;
+  name?: string;
+};
 
 type ValueAnalysisProps = {
   priceAnalysis: PriceAnalysis;
@@ -10,26 +16,8 @@ type ValueAnalysisProps = {
   brand: string;
   category: string;
   specs?: ShoeSpecs;
+  resolvedAlternatives?: ResolvedAlternative[];
 };
-
-// alternatives slug로 신발 찾기
-function findShoeBySlug(slugOrName: string) {
-  const shoes = getShoes();
-
-  // 먼저 slug로 직접 찾기
-  const bySlug = shoes.find(shoe => shoe.slug === slugOrName);
-  if (bySlug) return bySlug;
-
-  // slug가 아닌 경우 (레거시 데이터) 이름으로 찾기
-  const normalizedAlt = slugOrName.toLowerCase().replace(/\s+/g, '');
-  return shoes.find(shoe => {
-    const shoeName = `${shoe.brand} ${shoe.name}`.toLowerCase().replace(/\s+/g, '');
-    const shoeNameOnly = shoe.name.toLowerCase().replace(/\s+/g, '');
-    return shoeName.includes(normalizedAlt) ||
-           normalizedAlt.includes(shoeNameOnly) ||
-           shoeNameOnly.includes(normalizedAlt);
-  });
-}
 
 // 브랜드별 기본 장점 생성
 function getBrandAdvantages(brand: string): string[] {
@@ -60,7 +48,9 @@ function getCategoryAdvantages(category: string): string[] {
   return categoryMap[category] || ['다목적 활용 가능'];
 }
 
-export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs }: ValueAnalysisProps) {
+export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs, resolvedAlternatives }: ValueAnalysisProps) {
+  const altByKey = new Map((resolvedAlternatives ?? []).map(a => [a.key, a]));
+  const findAlt = (key: string): ResolvedAlternative => altByKey.get(key) ?? { key };
   // 가격대별 설명 생성
   const getPriceTierDescription = () => {
     const price = priceAnalysis.msrp;
@@ -158,13 +148,13 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
             <strong className="mb-3 block text-slate-950">비슷한 가격대</strong>
             <ul className="space-y-2 text-sm text-slate-600">
               {priceAnalysis.alternatives.map((alt) => {
-                const matchedShoe = findShoeBySlug(alt);
+                const matchedShoe = findAlt(alt);
                 return (
                   <li key={alt} className="flex items-start gap-2">
                     <span className="text-stone-600 mt-1">•</span>
-                    {matchedShoe ? (
+                    {matchedShoe.slug ? (
                       <Link
-                        href={`/shoes/${matchedShoe.slug}`}
+                        href={`/shoes/${matchedShoe.slug}` as `/shoes/${string}`}
                         className="flex items-center gap-1 text-sky-700 hover:underline"
                       >
                         {matchedShoe.brand} {matchedShoe.name}
@@ -189,8 +179,8 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs 
           </strong>
           <p className="mt-2 text-sm leading-7 text-slate-700">
             비슷한 가격대의 {priceAnalysis.alternatives.slice(0, 3).map(alt => {
-              const shoe = findShoeBySlug(alt);
-              return shoe ? `${shoe.brand} ${shoe.name}` : alt;
+              const shoe = findAlt(alt);
+              return shoe.brand && shoe.name ? `${shoe.brand} ${shoe.name}` : alt;
             }).join(", ")} 등과 비교하여 선택하세요.
           </p>
         </div>

@@ -147,6 +147,25 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   // 비슷한 신발 데이터 가져오기 (서버에서 미리 로드)
   const similarShoesData = shoe.similarShoes ? getSimilarShoesData(shoe.similarShoes) : [];
 
+  // priceAnalysis.alternatives → 서버에서 slug/brand/name으로 미리 resolve
+  // (클라이언트에서 getShoes() 호출 제거 → 번들 경량화)
+  const resolvedAlternatives = shoe.priceAnalysis?.alternatives
+    ? shoe.priceAnalysis.alternatives.map((key) => {
+        const allShoes = getShoes();
+        const bySlug = allShoes.find((s) => s.slug === key);
+        if (bySlug) return { key, slug: bySlug.slug, brand: bySlug.brand, name: bySlug.name };
+        const normalized = key.toLowerCase().replace(/\s+/g, '');
+        const byName = allShoes.find((s) => {
+          const full = `${s.brand} ${s.name}`.toLowerCase().replace(/\s+/g, '');
+          const nameOnly = s.name.toLowerCase().replace(/\s+/g, '');
+          return full.includes(normalized) || normalized.includes(nameOnly) || nameOnly.includes(normalized);
+        });
+        return byName
+          ? { key, slug: byName.slug, brand: byName.brand, name: byName.name }
+          : { key };
+      })
+    : [];
+
   // BreadcrumbList 구조화 데이터
   const breadcrumbJsonLd = {
     '@context': 'https://schema.org',
@@ -236,7 +255,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             <CoreBoxes shoe={shoe} />
 
             {/* 탭 기반 UI */}
-            <ShoeDetailTabs shoe={shoe} similarShoesData={similarShoesData} />
+            <ShoeDetailTabs shoe={shoe} similarShoesData={similarShoesData} resolvedAlternatives={resolvedAlternatives} />
           </>
         ) : (
           <div className="section-card p-8 lg:p-12 text-center">

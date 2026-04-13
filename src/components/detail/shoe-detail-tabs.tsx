@@ -8,7 +8,7 @@ import { BiomechanicsAnalysis } from '@/components/detail/biomechanics-analysis'
 import { InjuryPrevention } from '@/components/detail/injury-prevention';
 import { KoreanFootFit } from '@/components/detail/korean-foot-fit';
 import { FitHelper } from '@/components/detail/fit-helper';
-import { ValueAnalysis } from '@/components/detail/value-analysis';
+import { ValueAnalysis, type ResolvedAlternative } from '@/components/detail/value-analysis';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ReplacementCalculator } from '@/components/detail/replacement-calculator';
 import { ReviewsSection } from '@/components/detail/reviews-section';
@@ -41,6 +41,7 @@ const SpecRadarChart = dynamic(
 type ShoeDetailTabsProps = {
   shoe: Shoe;
   similarShoesData?: SimilarShoeInfo[];
+  resolvedAlternatives?: ResolvedAlternative[];
 };
 
 const tabs = [
@@ -54,7 +55,7 @@ const tabs = [
 
 type TabId = typeof tabs[number]['id'];
 
-export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) {
+export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }: ShoeDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('specs');
 
   return (
@@ -153,6 +154,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData }: ShoeDetailTabsProps) 
           {shoe.priceAnalysis && (
             <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <ValueAnalysis
+                resolvedAlternatives={resolvedAlternatives}
                 priceAnalysis={shoe.priceAnalysis}
                 shoeName={shoe.name}
                 brand={shoe.brand}
