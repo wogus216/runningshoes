@@ -9,14 +9,14 @@ import { HierarchyView } from "@/components/hierarchy-view";
 import { ViewToggle, type ViewMode } from "@/components/view-toggle";
 import { FilterPanel } from "@/components/filters/filter-panel";
 import { useShoeFilters } from "@/hooks/useShoeFilters";
-import { categoryOrder, getBrandsFromShoes } from "@/lib/data/shoes";
-import type { Shoe } from "@/types/shoe";
+import { categoryOrder } from "@/types/shoe";
+import type { CardShoe } from "@/lib/data/shoes";
 import { TechBanner } from "@/components/home/tech-banner";
 import { GelBanner } from "@/components/home/gel-banner";
 import { GuideBanner } from "@/components/home/guide-banner";
 
 interface HomeContentProps {
-  initialShoes: Shoe[];
+  initialShoes: CardShoe[];
 }
 
 export function HomeContent({ initialShoes }: HomeContentProps) {
@@ -81,7 +81,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
     return categoryOrder.filter((cat) => existingCategories.has(cat));
   }, [filteredShoes]);
 
-  const brands = useMemo(() => getBrandsFromShoes(filteredShoes), [filteredShoes]);
+  const brands = useMemo(() => Array.from(new Set(filteredShoes.map(s => s.brand))).sort(), [filteredShoes]);
 
   const handleTagClick = useCallback((tag: string) => {
     setSearchQuery(tag);

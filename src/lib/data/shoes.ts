@@ -9,6 +9,8 @@ export {
   getBrandsFromShoes,
   getShoeBySlug,
   getSimilarShoesData,
+  toCardShoe,
+  getCardShoes,
 } from './shoes/index';
 
-export type { SimilarShoeInfo } from './shoes/index';
+export type { SimilarShoeInfo, CardShoe } from './shoes/index';

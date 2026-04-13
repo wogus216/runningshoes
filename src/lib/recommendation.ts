@@ -1,4 +1,5 @@
 import type { Shoe } from '@/types/shoe';
+import type { CardShoe } from '@/lib/data/shoes';
 
 export type UserProfile = {
   experience: 'beginner' | 'intermediate' | 'advanced';
@@ -13,7 +14,7 @@ export type UserProfile = {
   targetPace?: 'slow' | 'medium' | 'fast'; // 목표 페이스
 };
 
-export type RecommendedShoe = Shoe & {
+export type RecommendedShoe = CardShoe & {
   matchScore: number;       // 정규화된 점수 (0-100)
   rawScore: number;         // 원시 점수
   matchReasons: string[];
@@ -128,7 +129,7 @@ const budgetRanges = {
   high: { min: 200000, max: Infinity },
 };
 
-export function recommendShoes(shoes: Shoe[], profile: UserProfile): RecommendedShoe[] {
+export function recommendShoes(shoes: CardShoe[], profile: UserProfile): RecommendedShoe[] {
   const recommendations: RecommendedShoe[] = [];
 
   for (const shoe of shoes) {

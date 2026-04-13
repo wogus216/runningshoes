@@ -128,4 +128,48 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
   return result;
 }
 
+/**
+ * 카드/필터 표시용 경량 타입 — reviews, detailedSpecs, editorComment,
+ * purchaseLinks, similarShoes, images 등 무거운 필드 제거.
+ * 클라이언트 번들 ~50% 절감 목표 (461KB → ~200KB).
+ */
+export type CardShoe = Pick<Shoe,
+  | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
+  | 'image' | 'price' | 'tags' | 'oneliner' | 'status'
+  | 'specs' | 'biomechanics' | 'injuryPrevention' | 'koreanFootFit'
+  | 'targetUsers' | 'priceAnalysis' | 'features' | 'description'
+>;
+
+export function toCardShoe(shoe: Shoe): CardShoe {
+  // 제외 필드 (클라이언트 번들 절감):
+  // reviews, detailedSpecs, editorComment, purchaseLinks, similarShoes, images
+  // priceAnalysis.alternatives/valueAdvantages, biomechanics.optimalPace 는 포함되나
+  // 크기가 작아 top-level 제외만으로 ~250KB 절감 예상.
+  return {
+    id: shoe.id,
+    slug: shoe.slug,
+    brand: shoe.brand,
+    name: shoe.name,
+    category: shoe.category,
+    rating: shoe.rating,
+    image: shoe.image,
+    price: shoe.price,
+    tags: shoe.tags,
+    oneliner: shoe.oneliner,
+    status: shoe.status,
+    description: shoe.description,
+    features: shoe.features,
+    specs: shoe.specs,
+    biomechanics: shoe.biomechanics,
+    injuryPrevention: shoe.injuryPrevention,
+    koreanFootFit: shoe.koreanFootFit,
+    targetUsers: shoe.targetUsers,
+    priceAnalysis: shoe.priceAnalysis,
+  };
+}
+
+export function getCardShoes(): CardShoe[] {
+  return shoes.map(toCardShoe);
+}
+
 export default shoes;

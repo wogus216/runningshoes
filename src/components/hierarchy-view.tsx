@@ -1,19 +1,21 @@
 import { useMemo } from "react";
-import type { Shoe } from "@/types/shoe";
-import { categoryOrder, groupShoesByCategory } from "@/lib/data/shoes";
+import { categoryOrder } from "@/types/shoe";
+import type { CardShoe } from "@/lib/data/shoes";
+import { groupByCategory } from "@/lib/shoes-utils";
 import { CategorySection } from "@/components/category-section";
 
 type HierarchyViewProps = {
-  shoes: Shoe[];
+  shoes: CardShoe[];
   onTagClick?: (tag: string) => void;
 };
 
 export function HierarchyView({ shoes, onTagClick }: HierarchyViewProps) {
-  const grouped = useMemo(() => groupShoesByCategory(shoes), [shoes]);
+  const grouped = useMemo(() => groupByCategory(shoes), [shoes]);
   const orderedCategories = useMemo(() => {
     const known = categoryOrder.filter((category) => grouped[category]?.length);
+    const knownSet = new Set<string>(categoryOrder);
     const remaining = Object.keys(grouped)
-      .filter((category) => !categoryOrder.includes(category))
+      .filter((category) => !knownSet.has(category))
       .sort();
     return [...known, ...remaining];
   }, [grouped]);

@@ -2,19 +2,19 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical } from "lucide-react";
-import type { Shoe } from "@/types/shoe";
-import { getBrandsFromShoes, groupShoesByBrand } from "@/lib/data/shoes";
+import type { CardShoe } from "@/lib/data/shoes";
+import { groupByBrand, uniqueBrands } from "@/lib/shoes-utils";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { ShoeCard } from "@/components/shoe-card";
 
 type BrandViewProps = {
-  shoes: Shoe[];
+  shoes: CardShoe[];
   onTagClick?: (tag: string) => void;
 };
 
 export function BrandView({ shoes, onTagClick }: BrandViewProps) {
-  const grouped = useMemo(() => groupShoesByBrand(shoes), [shoes]);
-  const brands = useMemo(() => getBrandsFromShoes(shoes), [shoes]);
+  const grouped = useMemo(() => groupByBrand(shoes), [shoes]);
+  const brands = useMemo(() => uniqueBrands(shoes), [shoes]);
 
   let runningIndex = 0;
 
