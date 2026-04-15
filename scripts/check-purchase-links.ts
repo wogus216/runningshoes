@@ -28,9 +28,22 @@ type CheckResult = {
   status: number | string;
   ok: boolean;
   soldOut: boolean;
+  unchecked?: boolean; // 봇 차단 등으로 확인 불가 (실제 오류 아님)
   soldOutKeyword?: string;
   redirectUrl?: string;
 };
+
+// 봇 차단 도메인 목록 (4xx여도 실제 오류가 아닌 도메인)
+const BOT_BLOCKED_DOMAINS = [
+  'link.coupang.com',       // 쿠팡 파트너스 (403)
+  'search.shopping.naver.com', // 네이버 쇼핑 검색 (418)
+  'naver.me',               // 네이버 단축 URL (429 rate limit)
+  'brand.naver.com',        // 네이버 브랜드 스토어 (429 rate limit)
+];
+
+function isBotBlockedDomain(url: string): boolean {
+  return BOT_BLOCKED_DOMAINS.some((domain) => url.includes(domain));
+}
 
 async function checkLink(url: string): Promise<CheckResult> {
   try {
@@ -47,6 +60,10 @@ async function checkLink(url: string): Promise<CheckResult> {
     });
 
     if (!response.ok) {
+      // 쿠팡 파트너스/네이버 쇼핑 등 봇 차단 도메인은 4xx여도 링크 자체는 유효
+      if ([403, 418, 429].includes(response.status) && isBotBlockedDomain(url)) {
+        return { status: response.status, ok: true, soldOut: false, unchecked: true };
+      }
       return { status: response.status, ok: false, soldOut: false };
     }
 
@@ -105,6 +122,9 @@ async function main() {
       if (!result.ok) {
         icon = '❌';
         note = ` [${result.status}]`;
+      } else if (result.unchecked) {
+        icon = '⚠️';
+        note = ' [확인불가: 파트너스 링크]';
       } else if (result.soldOut) {
         icon = '🔴';
         note = ` [품절: "${result.soldOutKeyword}"]`;
@@ -117,13 +137,15 @@ async function main() {
   // 요약
   const failed = results.filter((r) => !r.ok);
   const soldOut = results.filter((r) => r.ok && r.soldOut);
-  const healthy = results.filter((r) => r.ok && !r.soldOut);
+  const unchecked = results.filter((r) => r.ok && r.unchecked);
+  const healthy = results.filter((r) => r.ok && !r.soldOut && !r.unchecked);
 
   console.log(`\n${'='.repeat(60)}`);
   console.log(`📊 결과 요약`);
   console.log(`  ✅ 정상: ${healthy.length}개`);
   console.log(`  🔴 품절: ${soldOut.length}개`);
   console.log(`  ❌ 에러: ${failed.length}개`);
+  console.log(`  ⚠️  파트너스(확인불가): ${unchecked.length}개`);
   console.log(`  ⚪ 링크없음: ${noLinks.length}개`);
 
   if (soldOut.length > 0) {

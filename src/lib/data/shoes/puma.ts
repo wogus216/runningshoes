@@ -758,12 +758,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
-    purchaseLinks: [{
-      store: '푸마 공식몰',
-      url: 'https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06',
-      price: 289000,
-      isOfficial: true,
-    }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=푸마+데비에이트+니트로+엘리트+4' }],
   },
   {
     id: 'puma-fast-r-nitro-elite-3',

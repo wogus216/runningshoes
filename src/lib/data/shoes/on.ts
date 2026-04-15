@@ -539,7 +539,7 @@ export const onShoes: Shoe[] = [
       landingPattern: '힐스트라이크 중심',
     },
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
-    purchaseLinks: [{ store: 'On', url: 'https://www.on.com/products/cloudrunner-3-m-3mg1007/mens/glacier-alloy-shoes-3MG10071536' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드러너+3' }],
   },
   {
     id: 'on-cloudsurfer-max',
@@ -645,7 +645,7 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋~힐스트라이크',
     },
     similarShoes: ['asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-1080-v15'],
-    purchaseLinks: [{ store: 'On', url: 'https://www.on.com/products/cloudsurfer-max-m-3mf3043/mens/black-eclipse-shoes-3MF30430106' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드서퍼+맥스' }],
   },
   {
     id: 'on-cloudmonster-3',
@@ -751,7 +751,7 @@ export const onShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋',
     },
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
-    purchaseLinks: [{ store: 'On', url: 'https://www.on.com/products/cloudmonster-3-m-3mg1005/mens/wolf-wolf-shoes-3MG10054747' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3' }],
   },
   {
     id: 'on-cloudmonster-3-hyper',
@@ -857,7 +857,7 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋 중심',
     },
     similarShoes: ['asics-superblast-2', 'saucony-endorphin-trainer', 'new-balance-sc-trainer-v3'],
-    purchaseLinks: [{ store: 'On', url: 'https://www.on.com/products/cloudmonster-3-hyper-3mg1006/mens/lily-limelight-shoes-3MG10064906' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3+하이퍼' }],
   },
   {
     id: 'on-cloudflow-5',

@@ -596,7 +596,7 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
-    purchaseLinks: [{ store: 'New Balance', url: 'https://m.nbkorea.com/product/productDetail.action?colCode=16&styleCode=NBPFGS110L' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=뉴발란스+860+v15' }],
   },
   {
     id: 'new-balance-860-v14',
