@@ -207,15 +207,15 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       'name': shoe.brand,
     },
     'category': '러닝화',
-    ...(shoe.priceAnalysis?.msrp && {
-      'offers': {
-        '@type': 'Offer',
+    'offers': {
+      '@type': 'Offer',
+      'priceCurrency': 'KRW',
+      'availability': 'https://schema.org/InStock',
+      'url': `${SITE_URL}/shoes/${slug}`,
+      ...(shoe.priceAnalysis?.msrp && {
         'price': shoe.priceAnalysis.msrp,
-        'priceCurrency': 'KRW',
-        'availability': 'https://schema.org/InStock',
-        'url': `${SITE_URL}/shoes/${slug}`,
-      },
-    }),
+      }),
+    },
   };
 
   return (

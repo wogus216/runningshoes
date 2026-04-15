@@ -145,11 +145,18 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     '대회종료': 'https://schema.org/EventScheduled',
   };
 
+  const eventAvailability = event.status === '접수중'
+    ? 'https://schema.org/InStock'
+    : 'https://schema.org/SoldOut';
+
   const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: event.name,
     startDate: event.date,
+    endDate: event.date,
+    description: event.description ||
+      `${event.name} - ${event.location}에서 개최되는 ${event.distances.join(', ')} 마라톤 대회입니다.`,
     eventStatus: eventStatusMap[event.status],
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
@@ -161,8 +168,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
         addressRegion: event.region,
       },
     },
+    organizer: {
+      '@type': 'Organization',
+      name: event.name,
+    },
     sport: 'Marathon',
-    ...(event.description && { description: event.description }),
     ...(event.website && { url: event.website }),
     ...(event.raceInfo?.expectedParticipants && {
       maximumAttendeeCapacity: event.raceInfo.expectedParticipants,
@@ -179,11 +189,18 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
       name: `${event.name} ${fee.distance}`,
       price: fee.fee,
       priceCurrency: 'KRW',
-      availability: event.status === '접수중'
-        ? 'https://schema.org/InStock'
-        : 'https://schema.org/SoldOut',
+      availability: eventAvailability,
       ...(event.website && { url: event.website }),
     }));
+  } else {
+    // entryFees 없는 경우 기본 Offer (접수 링크만)
+    jsonLd.offers = {
+      '@type': 'Offer',
+      name: event.name,
+      priceCurrency: 'KRW',
+      availability: eventAvailability,
+      ...(event.website && { url: event.website }),
+    };
   }
 
   const breadcrumbJsonLd = {
