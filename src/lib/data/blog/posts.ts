@@ -45,6 +45,16 @@ export const blogPosts: BlogPost[] = [
 
 <h2>당일 프로그램</h2>
 
+<figure class="my-8">
+  <img
+    src="/images/blog/2026-icebucket-run-seoul-photo.webp"
+    alt="아이스버킷 챌린지 RUN in Seoul 그룹 러닝 - 한강 산책로"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">전문 페이서와 함께 한강 산책로를 달리는 그룹 런 (출처: withice.or.kr)</figcaption>
+</figure>
+
 <table>
   <thead>
     <tr><th>시간</th><th>프로그램</th></tr>
