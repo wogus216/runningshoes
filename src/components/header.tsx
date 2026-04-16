@@ -22,12 +22,41 @@ export function Header() {
           href="/"
           className="group flex min-w-0 items-center gap-3 transition-transform duration-200 hover:-translate-y-0.5"
         >
-          <div className="grid h-11 w-11 flex-shrink-0 place-items-center rounded-2xl bg-[var(--navy)] text-sm font-black tracking-[0.24em] text-white shadow-[0_16px_28px_-18px_rgba(2,132,199,0.9)]">
-            RA
-          </div>
+          {/* Logo mark — 3 speed-streak bars */}
+          <svg
+            width="44"
+            height="44"
+            viewBox="0 0 44 44"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="flex-shrink-0"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="logo-grad" x1="0" y1="44" x2="44" y2="0" gradientUnits="userSpaceOnUse">
+                <stop offset="0%" stopColor="#0ea5e9" />
+                <stop offset="100%" stopColor="#081226" />
+              </linearGradient>
+              <linearGradient id="streak-grad" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+                <stop offset="0%" stopColor="#38bdf8" stopOpacity="0.55" />
+                <stop offset="100%" stopColor="white" stopOpacity="1" />
+              </linearGradient>
+            </defs>
+            {/* Background square — sharp corners, editorial */}
+            <rect width="44" height="44" rx="10" fill="url(#logo-grad)" />
+            {/* Ambient glow overlay */}
+            <rect width="44" height="44" rx="10" fill="url(#logo-grad)" opacity="0.18" />
+            {/* Speed streaks — 3 parallel diagonal bars, bold & precise */}
+            {/* Bar 1 — bottom, longest */}
+            <rect x="8" y="27" width="28" height="5" rx="2.5" fill="url(#streak-grad)" transform="rotate(-22 8 27)" />
+            {/* Bar 2 — middle */}
+            <rect x="11" y="19" width="21" height="4" rx="2" fill="url(#streak-grad)" opacity="0.78" transform="rotate(-22 11 19)" />
+            {/* Bar 3 — top, shortest */}
+            <rect x="14" y="12" width="14" height="3" rx="1.5" fill="url(#streak-grad)" opacity="0.48" transform="rotate(-22 14 12)" />
+          </svg>
           <div className="min-w-0">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-sky-700">Performance Index</p>
-            <p className="truncate text-base font-semibold text-slate-950 md:text-lg">러닝화를 판단하는 기준</p>
+            <p className="text-[9px] font-bold uppercase tracking-[0.38em] text-sky-600/80">All Run About</p>
+            <p className="truncate text-[15px] font-bold leading-tight tracking-tight text-slate-900 md:text-base">러닝의 모든것</p>
           </div>
         </Link>
 
@@ -90,7 +119,7 @@ export function Header() {
             className="inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm font-medium text-slate-600 transition-colors hover:bg-white/70 hover:text-slate-950"
           >
             <BookOpen className="h-4 w-4" />
-            <span>가이드</span>
+            <span>블로그</span>
           </Link>
           <Link
             href="/best"

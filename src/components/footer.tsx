@@ -36,7 +36,7 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <h4 className="font-medium text-sm mb-3 text-primary">가이드</h4>
+              <h4 className="font-medium text-sm mb-3 text-primary">블로그</h4>
               <ul className="space-y-2 text-sm text-secondary">
                 <li><Link href="/blog" className="hover:text-primary transition">전체 보기</Link></li>
                 <li><Link href="/blog/first-running-shoe-guide-2026" className="hover:text-primary transition">초보자 가이드</Link></li>
