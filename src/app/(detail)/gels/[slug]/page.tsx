@@ -180,7 +180,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
     '@type': 'Product',
     'name': `${gel.brand} ${gel.name}`,
     'description': gel.description,
-    'image': gel.image || DEFAULT_OG_IMAGE,
+    'image': `${SITE_URL}${gel.image || DEFAULT_OG_IMAGE}`,
     'brand': {
       '@type': 'Brand',
       'name': gel.brand,
@@ -206,6 +206,13 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
         'price': gel.priceAnalysis.msrp,
       }),
     },
+    'additionalProperty': [
+      { '@type': 'PropertyValue', name: '탄수화물', value: `${gel.nutritionFacts.totalCarbs}g` },
+      { '@type': 'PropertyValue', name: '칼로리', value: `${gel.nutritionFacts.calories}kcal` },
+      ...(gel.nutritionFacts.caffeine > 0 ? [{ '@type': 'PropertyValue', name: '카페인', value: `${gel.nutritionFacts.caffeine}mg` }] : []),
+      { '@type': 'PropertyValue', name: '위장 안정성', value: gel.giTolerance.overall },
+      { '@type': 'PropertyValue', name: '카테고리', value: gel.category },
+    ],
   };
 
   return (

@@ -2,13 +2,13 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getGels, groupGelsByCategory } from '@/lib/data/gels';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { gelCategoryOrder } from '@/types/gel';
 
 export const metadata: Metadata = {
   title: `에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석 - ${SITE_NAME}`,
-  description: '마라톤·러닝용 에너지 젤 10종 비교 분석. Maurten, SiS, GU, 양갱까지. 위장 안정성, 탄수화물 과학, 가성비 기준으로 평가.',
-  keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS',
+  description: '마라톤·러닝용 에너지 젤 13종 비교 분석. Maurten, SiS, GU, 양갱까지 프리미엄·스테디셀러·가성비 3개 카테고리. 위장 안정성, 탄수화물 과학, 가성비 기준으로 한국 러너 관점에서 평가.',
+  keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS, 마라톤 보급식, 위장 안정성',
   alternates: { canonical: '/gels' },
 };
 
@@ -19,17 +19,48 @@ const categoryDescriptions: Record<string, { emoji: string; desc: string }> = {
 };
 
 export default function GelsPage() {
-  const grouped = groupGelsByCategory(getGels());
+  const allGels = getGels();
+  const grouped = groupGelsByCategory(allGels);
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: '마라톤 에너지 젤 비교 분석',
+    description: `마라톤·러닝용 에너지 젤 ${allGels.length}종 비교 분석`,
+    numberOfItems: allGels.length,
+    itemListElement: allGels.map((gel, index) => ({
+      '@type': 'ListItem',
+      position: index + 1,
+      item: {
+        '@type': 'Product',
+        name: `${gel.brand} ${gel.name}`,
+        url: `${SITE_URL}/gels/${gel.slug}`,
+        image: gel.image ? `${SITE_URL}${gel.image}` : undefined,
+        brand: { '@type': 'Brand', name: gel.brand },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'KRW',
+          price: gel.price,
+          availability: 'https://schema.org/InStock',
+        },
+      },
+    })),
+  };
 
   return (
     <div className="space-y-8">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+
       {/* 헤더 */}
       <div className="text-center py-8">
         <h1 className="text-3xl md:text-4xl font-bold text-primary mb-3">
           에너지 젤 리뷰
         </h1>
         <p className="text-secondary max-w-2xl mx-auto">
-          마라톤·러닝용 에너지 젤 10종을 탄수화물 과학, 위장 안정성, 한국 러너 관점에서 분석했습니다.
+          마라톤·러닝용 에너지 젤 {allGels.length}종을 탄수화물 과학, 위장 안정성, 한국 러너 관점에서 분석했습니다.
         </p>
       </div>
 
