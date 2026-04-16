@@ -2,6 +2,143 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-dongma-halfyear-marathon-schedule',
+    slug: '2026-dongma-halfyear-marathon-schedule',
+    title: '2026 하반기 동마 대회 접수 일정 총정리 | 서울레이스·공주백제·경주국제마라톤',
+    description: '동마클럽이 공개한 2026 하반기 3대 마라톤 대회 접수 일정을 정리했습니다. 우선 접수(5/11~15)와 본접수(선착순) 날짜, 대회별 준비 팁까지 한눈에 확인하세요.',
+    thumbnail: 'https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1600&q=80',
+    content: `
+<figure class="my-8 -mx-4 sm:mx-0">
+  <img
+    src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1600&q=80"
+    alt="마라톤 대회 출발선의 러너들"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">
+    2026 하반기 마라톤 시즌이 시작됩니다
+  </figcaption>
+</figure>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">선착순 마감 주의</p>
+    <p>본접수는 선착순으로 마감됩니다. 특히 경주·서울레이스는 인기 대회라 오픈 직후 수분 내 마감된 전례가 있습니다. 접수 시간을 달력에 미리 저장해두세요.</p>
+  </div>
+</div>
+
+<h2>2026 하반기 동마 대회 3종 한눈에 보기</h2>
+
+<p>동마클럽(@dongmaclub)이 2026 하반기 주요 마라톤 대회 접수 일정을 공식 발표했습니다. 이번 하반기는 <strong>공주백제마라톤</strong>, <strong>경주국제마라톤</strong>, <strong>서울레이스</strong> 3개 대회가 예정되어 있으며, 5월부터 접수가 시작됩니다.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>대회명</th>
+      <th>대회 일자</th>
+      <th>본접수 시작</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>공주백제마라톤</strong></td>
+      <td>9월 20일 (일)</td>
+      <td>5월 21일(목) 19시</td>
+    </tr>
+    <tr>
+      <td><strong>서울레이스</strong></td>
+      <td>10월 11일 (일)</td>
+      <td>5월 27일(수) 하프 19시 / 10K 21시</td>
+    </tr>
+    <tr>
+      <td><strong>경주국제마라톤</strong></td>
+      <td>10월 17일 (토)</td>
+      <td>5월 26일(화) 19시</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>접수 일정 상세 안내</h2>
+
+<h3>1단계 — 우선 접수 (5월 11일 ~ 15일)</h3>
+
+<p>일반 본접수보다 먼저 신청할 수 있는 <strong>우선 접수 기간</strong>이 있습니다. 해당되는 분들은 놓치지 마세요.</p>
+
+<ul>
+  <li><strong>기간:</strong> 5월 11일(월) 10시 ~ 5월 15일(금) 15시</li>
+  <li><strong>접수처:</strong> 동마클럽 홈페이지 (dongma.club)</li>
+  <li><strong>서울레이스 우선 접수 대상:</strong> 2025 서울레이스 동마크루</li>
+  <li><strong>공주백제·경주국제 우선 접수 대상:</strong> 2026 동아마라톤 멤버십 가입자</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">동아마라톤 멤버십이란?</p>
+    <p>동마클럽에서 운영하는 멤버십으로 가입 시 하반기 대회 우선 접수 혜택을 받을 수 있습니다. 아직 미가입이라면 우선 접수 전 확인해두세요.</p>
+  </div>
+</div>
+
+<h3>2단계 — 본접수 (선착순)</h3>
+
+<p>우선 접수 대상이 아니라면 본접수를 노려야 합니다. <strong>선착순</strong>이므로 시간을 정확히 맞춰 접속하는 것이 중요합니다.</p>
+
+<ul>
+  <li><strong>공주백제마라톤:</strong> 5월 21일(목) 19시</li>
+  <li><strong>경주국제마라톤:</strong> 5월 26일(화) 19시</li>
+  <li><strong>서울레이스 하프:</strong> 5월 27일(수) 19시</li>
+  <li><strong>서울레이스 10K:</strong> 5월 27일(수) 21시</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">선착순 접수 꿀팁</p>
+    <p>접수 10분 전에 동마클럽 홈페이지에 미리 로그인해두세요. 결제 수단도 미리 등록해두면 접수 속도가 훨씬 빨라집니다. 모바일보다 PC 접속이 상대적으로 안정적입니다.</p>
+  </div>
+</div>
+
+<h2>대회별 특징 & 러닝화 추천</h2>
+
+<h3>공주백제마라톤 (9월 20일)</h3>
+<p>9월 초가을에 열리는 대회로, 충남 공주 금강변을 코스로 합니다. 가을 초입이라 기온이 아직 높을 수 있어 <strong>통기성</strong>과 <strong>쿠셔닝</strong>이 중요합니다. 금강 둔치 코스는 비교적 평탄하여 기록을 노리기 좋습니다.</p>
+
+<h3>서울레이스 (10월 11일)</h3>
+<p>서울 도심을 달리는 도시형 마라톤. 하프(21.1km)와 10K 두 종목으로 나뉘어 진행됩니다. 서울 시내 복잡한 노면 특성상 <strong>안정성</strong>이 좋은 러닝화가 유리합니다.</p>
+
+<h3>경주국제마라톤 (10월 17일)</h3>
+<p>역사 도시 경주를 달리는 국제 마라톤. 10월 중순이라 날씨가 쾌적하고 코스가 아름다워 PB(개인 최고 기록)를 노리기에 좋은 대회입니다. 비교적 평탄한 코스로 카본 플레이트 러닝화 효과를 제대로 볼 수 있습니다.</p>
+
+<h2>하반기 대회를 앞둔 지금, 준비할 것들</h2>
+
+<p>접수만큼 중요한 것이 훈련과 장비 준비입니다. 5월 접수 후 대회까지 넉넉한 준비 기간이 있으니 지금부터 차근차근 준비해보세요.</p>
+
+<ul>
+  <li><strong>훈련 계획:</strong> 대회 12~16주 전부터 본격적인 빌드업 시작</li>
+  <li><strong>러닝화 선택:</strong> 새 러닝화는 대회 6~8주 전에 구입해 길들이기 필요</li>
+  <li><strong>영양 전략:</strong> 하프 이상 거리는 에너지젤 등 보충식 계획 필수</li>
+  <li><strong>숙박·이동:</strong> 지방 대회(공주·경주)는 전날 이동 및 숙박 예약 권장</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">추가 공지 예정</p>
+    <p>2027 서울마라톤 접수 일정도 곧 발표될 예정입니다. 동마클럽(@dongmaclub) 인스타그램과 홈페이지를 즐겨찾기해두면 빠르게 확인할 수 있습니다.</p>
+  </div>
+</div>
+
+<p>하반기 대회 접수 관련 추가 공지는 각 대회 공식 인스타그램(@seoulrace, @gongju_marathon, @gyeongju__marathon)과 동마클럽 홈페이지에서 확인하실 수 있습니다.</p>
+`,
+    author: '산초 에디터',
+    publishedAt: '2026-04-16',
+    category: 'news' as const,
+    tags: ['마라톤', '대회 일정', '서울레이스', '공주백제마라톤', '경주국제마라톤', '동아마라톤', '하반기 대회'],
+    readingTime: 5,
+    featured: false,
+  },
+  {
     id: 'wide-feet-korea',
     slug: 'wide-feet-running-shoes-korea',
     title: '발볼 넓은 한국인을 위한 러닝화 추천 TOP 10',
