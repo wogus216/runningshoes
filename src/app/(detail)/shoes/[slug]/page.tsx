@@ -201,7 +201,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
     '@type': 'Product',
     'name': `${shoe.brand} ${shoe.name}`,
     'description': shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
-    ...(shoe.image && { 'image': `${SITE_URL}${shoe.image}` }),
+    'image': shoe.image ? `${SITE_URL}${shoe.image}` : `${SITE_URL}${DEFAULT_OG_IMAGE}`,
     'brand': {
       '@type': 'Brand',
       'name': shoe.brand,

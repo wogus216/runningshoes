@@ -197,15 +197,15 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
       },
     }),
     ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
-    ...(gel.priceAnalysis?.msrp && {
-      'offers': {
-        '@type': 'Offer',
+    'offers': {
+      '@type': 'Offer',
+      'priceCurrency': 'KRW',
+      'availability': 'https://schema.org/InStock',
+      'url': `${SITE_URL}/gels/${slug}`,
+      ...(gel.priceAnalysis?.msrp && {
         'price': gel.priceAnalysis.msrp,
-        'priceCurrency': 'KRW',
-        'availability': 'https://schema.org/InStock',
-        'url': `${SITE_URL}/gels/${slug}`,
-      },
-    }),
+      }),
+    },
   };
 
   return (
