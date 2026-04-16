@@ -2,6 +2,113 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-icebucket-run-seoul',
+    slug: '2026-icebucket-run-seoul',
+    title: '2026 아이스버킷 챌린지 RUN in Seoul | 반포한강공원 러닝 이벤트 총정리',
+    description: '6월 20일 반포한강공원에서 열리는 아이스버킷 챌린지 런 행사 정보를 정리했습니다. 3/5/8km 그룹 런과 아이스버킷 챌린지, SEAN 오프닝 콘서트까지 — 선착순 2,000명.',
+    thumbnail: '/images/blog/2026-icebucket-run-seoul.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-04-16',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['러닝 이벤트', '한강 러닝', '아이스버킷', '서울 대회', '펀런'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 오픈 임박 — 4월 20일(일)</p>
+    <p>선착순 2,000명 마감입니다. 4월 20일 오픈과 동시에 접수하지 않으면 놓칠 수 있어요. 지금 달력에 저장해두세요.</p>
+  </div>
+</div>
+
+<h2>어떤 행사인가요?</h2>
+
+<p><strong>2026 아이스버킷 챌린지 RUN in Seoul</strong>은 루게릭병(ALS) 환우와 가족을 위한 희망 러닝 이벤트입니다. 승일희망재단이 주최하고 KB손해보험이 후원하며, 참가비 수익금 전액은 중증근육성 희귀질환자를 위한 승일희망요양병원 운영에 사용됩니다.</p>
+
+<p>단순한 경쟁 레이스가 아니라 <strong>그룹 런 + 아이스버킷 챌린지 + 오프닝 콘서트</strong>가 어우러진 축제형 행사입니다. 기록보다는 함께 달리는 즐거움과 의미 있는 기부에 초점을 맞춘 <a href="/recommend">펀런 이벤트</a>예요.</p>
+
+<h2>핵심 정보 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>일시</td><td>2026년 6월 20일(토) AM 08:30</td></tr>
+    <tr><td>장소</td><td>반포 한강공원 달빛광장<br><small>서울시 서초구 신반포로 11길 40</small></td></tr>
+    <tr><td>코스</td><td>3km · 5km · 8km (선택)</td></tr>
+    <tr><td>정원</td><td>선착순 2,000명</td></tr>
+    <tr><td>참가비</td><td>개인 50,000원 / 단체(10인↑) 45,000원</td></tr>
+    <tr><td>접수 오픈</td><td>2026년 4월 20일(일)</td></tr>
+  </tbody>
+</table>
+
+<h2>당일 프로그램</h2>
+
+<table>
+  <thead>
+    <tr><th>시간</th><th>프로그램</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>08:30 ~ 09:50</td><td>참가자 체크인</td></tr>
+    <tr><td>09:50 ~ 10:30</td><td>개회식 및 오프닝 콘서트 (가수 SEAN)</td></tr>
+    <tr><td>10:30 ~ 12:30</td><td>그룹 러닝 (3/5/8km)</td></tr>
+    <tr><td>12:30 ~ 13:00</td><td>아이스버킷 챌린지</td></tr>
+    <tr><td>13:00 ~</td><td>럭키드로우 추첨 및 행사 마무리</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">그룹 런이란?</p>
+    <p>개인 기록 경쟁이 아닌, 10~20명씩 팀을 이루어 전문 페이서와 함께 한강 산책로를 달리는 방식입니다. 코스는 당일 상황에 따라 변경될 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>셀러브리티 라인업</h2>
+
+<p>오프닝 콘서트는 가수 <strong>SEAN</strong>이 진행합니다. MC는 <strong>이슈 & 박지혜</strong>가 Special Double MC로 함께합니다. 러닝 전에 신나게 몸을 풀고 가볍게 즐길 수 있어요.</p>
+
+<h2>어떤 러너에게 어울릴까?</h2>
+
+<p>기록 단축이 목적인 레이스가 아니라 <strong>의미 있는 참여와 한강 러닝 경험</strong>을 원하는 분께 어울립니다.</p>
+
+<ul>
+  <li>러닝을 처음 시작하는 입문자 (3km 코스)</li>
+  <li>한강 러닝 코스를 경험해보고 싶은 분</li>
+  <li>기부와 러닝을 함께하고 싶은 분</li>
+  <li>친구·동료와 단체로 참가하고 싶은 팀 (10인 이상 단체 할인)</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">펀런 이벤트 참가 팁</p>
+    <p>이런 축제형 이벤트는 쿠션감 좋은 데일리 러닝화가 제격입니다. 기록보다 편안함 위주로 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a>이나 <a href="/shoes/hoka-clifton-9">호카 클리프톤</a> 같은 맥시멀 쿠션화를 추천합니다.</p>
+  </div>
+</div>
+
+<h2>참가자 기념품</h2>
+
+<p>참가자 전원에게 <strong>The North Face T셔츠</strong>가 제공됩니다.</p>
+
+<h2>접수 방법</h2>
+
+<p>위드아이스 공식 홈페이지(withice.or.kr)에서 4월 20일부터 온라인 접수할 수 있습니다. 단체 참가(10인 이상)는 결제 전 승일희망재단(02-3453-6865)으로 먼저 문의해야 합니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">이동 방법</p>
+    <p>반포한강공원 달빛광장은 지하철 9호선 <strong>구반포역</strong> 또는 <strong>사평역</strong>에서 도보 10분 거리입니다. 대회 당일 주차는 혼잡하니 대중교통을 이용하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: 위드아이스(withice.or.kr) 공식 홈페이지</small></p>
+`,
+  },
+  {
     id: '2026-dongma-halfyear-marathon-schedule',
     slug: '2026-dongma-halfyear-marathon-schedule',
     title: '2026 하반기 동마 대회 접수 일정 총정리 | 서울레이스·공주백제·경주국제마라톤',
