@@ -232,8 +232,8 @@ export default async function ComparePairPage({ params }: PageProps) {
     headline: `${a.brand} ${a.name} vs ${b.brand} ${b.name}`,
     url: `${SITE_URL}/vs/${pair}`,
     about: [
-      { '@type': 'Product', name: `${a.brand} ${a.name}`, brand: a.brand },
-      { '@type': 'Product', name: `${b.brand} ${b.name}`, brand: b.brand },
+      { '@type': 'Thing', name: `${a.brand} ${a.name}`, url: `${SITE_URL}/shoes/${a.slug}` },
+      { '@type': 'Thing', name: `${b.brand} ${b.name}`, url: `${SITE_URL}/shoes/${b.slug}` },
     ],
   };
 
