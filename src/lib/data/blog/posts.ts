@@ -6,17 +6,17 @@ export const blogPosts: BlogPost[] = [
     slug: '2026-dongma-halfyear-marathon-schedule',
     title: '2026 하반기 동마 대회 접수 일정 총정리 | 서울레이스·공주백제·경주국제마라톤',
     description: '동마클럽이 공개한 2026 하반기 3대 마라톤 대회 접수 일정을 정리했습니다. 우선 접수(5/11~15)와 본접수(선착순) 날짜, 대회별 준비 팁까지 한눈에 확인하세요.',
-    thumbnail: 'https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1600&q=80',
+    thumbnail: '/images/blog/2026-dongma-halfyear-marathon-schedule.webp',
     content: `
 <figure class="my-8 -mx-4 sm:mx-0">
   <img
-    src="https://images.unsplash.com/photo-1571008887538-b36bb32f4571?auto=format&fit=crop&w=1600&q=80"
-    alt="마라톤 대회 출발선의 러너들"
+    src="/images/blog/2026-dongma-halfyear-marathon-schedule.webp"
+    alt="2026 하반기 동마 대회 접수 일정 - 동마클럽 공식 공지"
     class="w-full rounded-2xl"
     loading="lazy"
   />
   <figcaption class="text-sm text-gray-500 mt-2 text-center">
-    2026 하반기 마라톤 시즌이 시작됩니다
+    출처: 동마클럽(@dongmaclub) 인스타그램
   </figcaption>
 </figure>
 
