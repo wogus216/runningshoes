@@ -8,18 +8,6 @@ export const blogPosts: BlogPost[] = [
     description: '동마클럽이 공개한 2026 하반기 3대 마라톤 대회 접수 일정을 정리했습니다. 우선 접수(5/11~15)와 본접수(선착순) 날짜, 대회별 준비 팁까지 한눈에 확인하세요.',
     thumbnail: '/images/blog/2026-dongma-halfyear-marathon-schedule.webp',
     content: `
-<figure class="my-8 -mx-4 sm:mx-0">
-  <img
-    src="/images/blog/2026-dongma-halfyear-marathon-schedule.webp"
-    alt="2026 하반기 동마 대회 접수 일정 - 동마클럽 공식 공지"
-    class="w-full rounded-2xl"
-    loading="lazy"
-  />
-  <figcaption class="text-sm text-gray-500 mt-2 text-center">
-    출처: 동마클럽(@dongmaclub) 인스타그램
-  </figcaption>
-</figure>
-
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
