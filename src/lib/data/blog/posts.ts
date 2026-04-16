@@ -20,6 +20,14 @@ export const blogPosts: BlogPost[] = [
   </figcaption>
 </figure>
 
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">핵심 팁</p>
+    <p>발볼 넓은 러너는 표준 사이즈 구매 전 반드시 와이드 옵션을 먼저 확인하세요. 와이드 버전이 없다면 토박스 76mm 이상 모델을 선택하는 것이 안전합니다.</p>
+  </div>
+</div>
+
 <h2>왜 발볼이 중요한가?</h2>
 <p>
   "신발이 예쁜데 발이 안 들어가요", "양쪽 새끼발가락이 눌려서 아파요"
@@ -75,6 +83,14 @@ export const blogPosts: BlogPost[] = [
   시간과 돈을 낭비하지 않고 편한 신발을 찾을 수 있도록 정리한 실전 가이드입니다.
 </p>
 
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">에디터 경험담 요약</p>
+    <p>"좋은 신발"이 아니라 <strong>"내 발에 맞는 신발"</strong>이 중요합니다. 아무리 리뷰가 좋아도 내 발볼에 맞지 않으면 의미가 없습니다. 매장에서 30분 이상 걷거나 가볍게 뛰어본 후 구매를 결정하세요.</p>
+  </div>
+</div>
+
 <figure class="my-8">
   <img
     src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?auto=format&fit=crop&w=1200&q=80"
@@ -121,6 +137,14 @@ export const blogPosts: BlogPost[] = [
   1080 시리즈를 발볼 때문에 선택하셨다면 v14부터는 반드시 와이드(2E) 이상을 선택하세요.
   Hoka Bondi 8도 69.2mm로 의외로 좁습니다. <strong>반드시 Wide 버전</strong>을 선택해야 합니다.
 </p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">버전 업그레이드 시 반드시 재확인</p>
+    <p>New Balance 1080 v13 → v14처럼 신발 버전이 바뀌면 토박스 너비가 크게 달라질 수 있습니다. 이전 버전을 잘 신었더라도 새 버전은 꼭 매장에서 직접 착용해보세요.</p>
+  </div>
+</div>
 
 <h2>러닝화 너비 시스템 이해하기</h2>
 <p>브랜드별로 "Wide"의 기준이 다르기 때문에, 국제 너비 코드를 이해하면 도움이 됩니다.</p>

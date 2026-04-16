@@ -12,6 +12,7 @@
     "test:coverage": "vitest run --coverage",
     "validate": "node scripts/validate.js",
     "images": "node scripts/process-images.js",
+    "generate:blog": "tsx scripts/generate-blog-post.ts",
     "postbuild": "next-sitemap",
     "prepare": "husky"
   },
@@ -34,6 +35,7 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
+    "@anthropic-ai/sdk": "^0.89.0",
     "@imgly/background-removal-node": "^1.4.3",
     "@next/bundle-analyzer": "^16.2.3",
     "@next/eslint-plugin-next": "^16.2.1",
@@ -50,6 +52,7 @@
     "sharp": "^0.34.5",
     "tailwindcss": "3.4.3",
     "tailwindcss-animate": "1.0.7",
+    "tsx": "^4.21.0",
     "typescript": "5.4.3",
     "typescript-eslint": "^8.57.2",
     "vitest": "^4.1.4"

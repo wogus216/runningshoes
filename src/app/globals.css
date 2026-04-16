@@ -222,3 +222,193 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ── 블로그 콘텐츠 타이포그래피 ───────────────────── */
+[data-blog-content] h2 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #0f172a;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.625rem;
+  border-bottom: 2px solid #e2f1fb;
+  position: relative;
+  letter-spacing: -0.02em;
+}
+[data-blog-content] h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 2.5rem;
+  height: 2px;
+  background: #0ea5e9;
+  border-radius: 1px;
+}
+[data-blog-content] h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.015em;
+}
+[data-blog-content] p {
+  line-height: 1.85;
+  color: #374151;
+  margin-bottom: 1.1rem;
+  font-size: 1.0625rem;
+}
+[data-blog-content] blockquote {
+  border-left: 3px solid #0ea5e9;
+  background: rgba(14,165,233,0.05);
+  padding: 1rem 1.25rem;
+  border-radius: 0 0.75rem 0.75rem 0;
+  margin: 1.75rem 0;
+  color: #475569;
+  font-style: normal;
+}
+[data-blog-content] blockquote p { margin-bottom: 0; color: inherit; }
+
+/* 테이블 */
+[data-blog-content] table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.75rem 0;
+  font-size: 0.9rem;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  box-shadow: 0 1px 3px rgba(8,18,38,0.08);
+}
+[data-blog-content] th {
+  background: linear-gradient(135deg, #e2f1fb 0%, #dbeafe 100%);
+  color: #0f172a;
+  font-weight: 700;
+  padding: 0.75rem 1rem;
+  text-align: left;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+}
+[data-blog-content] td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  color: #475569;
+}
+[data-blog-content] tbody tr:last-child td { border-bottom: none; }
+[data-blog-content] tbody tr:nth-child(even) { background: rgba(241,250,255,0.6); }
+[data-blog-content] tbody tr:hover { background: rgba(224,242,254,0.5); }
+
+/* 이미지 */
+[data-blog-content] img {
+  border-radius: 1rem;
+  box-shadow: 0 8px 28px rgba(8,18,38,0.1);
+  width: 100%;
+  height: auto;
+}
+[data-blog-content] figure { margin: 2rem 0; }
+[data-blog-content] figcaption {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: #94a3b8;
+  margin-top: 0.625rem;
+}
+
+/* 리스트 */
+[data-blog-content] ul { list-style: none; padding-left: 0; margin: 1rem 0; }
+[data-blog-content] ul li {
+  padding-left: 1.5rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+  color: #374151;
+  line-height: 1.75;
+  font-size: 1.0625rem;
+}
+[data-blog-content] ul li::before {
+  content: '';
+  position: absolute;
+  left: 0.25rem;
+  top: 0.65em;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #0ea5e9;
+}
+[data-blog-content] ol { padding-left: 1.5rem; margin: 1rem 0; }
+[data-blog-content] ol li {
+  margin-bottom: 0.5rem;
+  color: #374151;
+  line-height: 1.75;
+  font-size: 1.0625rem;
+}
+[data-blog-content] strong { color: #0f172a; font-weight: 700; }
+
+/* 구분선 */
+[data-blog-content] hr {
+  border: none;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #cbd5e1, transparent);
+  margin: 2.5rem 0;
+}
+
+/* ── 콜아웃 박스 (HTML에서 class로 사용) ─────────── */
+[data-blog-content] .callout {
+  border-radius: 0.875rem;
+  padding: 1rem 1.25rem;
+  margin: 1.75rem 0;
+  border: 1px solid;
+  display: flex;
+  gap: 0.75rem;
+  align-items: flex-start;
+}
+[data-blog-content] .callout-icon { font-size: 1.1rem; flex-shrink: 0; margin-top: 0.1rem; }
+[data-blog-content] .callout-body { flex: 1; }
+[data-blog-content] .callout-body p { margin-bottom: 0; font-size: 0.9375rem; }
+[data-blog-content] .callout-title { font-weight: 700; margin-bottom: 0.25rem; font-size: 0.875rem; letter-spacing: 0.02em; }
+
+[data-blog-content] .callout.tip {
+  background: rgba(15,118,110,0.06);
+  border-color: rgba(15,118,110,0.22);
+}
+[data-blog-content] .callout.tip .callout-title { color: #0f766e; }
+[data-blog-content] .callout.tip .callout-body p { color: #134e4a; }
+
+[data-blog-content] .callout.warning {
+  background: rgba(249,115,22,0.06);
+  border-color: rgba(249,115,22,0.22);
+}
+[data-blog-content] .callout.warning .callout-title { color: #c2410c; }
+[data-blog-content] .callout.warning .callout-body p { color: #7c2d12; }
+
+[data-blog-content] .callout.info {
+  background: rgba(14,165,233,0.06);
+  border-color: rgba(14,165,233,0.22);
+}
+[data-blog-content] .callout.info .callout-title { color: #0369a1; }
+[data-blog-content] .callout.info .callout-body p { color: #0c4a6e; }
+
+[data-blog-content] .callout.success {
+  background: rgba(22,163,74,0.06);
+  border-color: rgba(22,163,74,0.22);
+}
+[data-blog-content] .callout.success .callout-title { color: #15803d; }
+[data-blog-content] .callout.success .callout-body p { color: #14532d; }
+
+/* 하이라이트 박스 */
+[data-blog-content] .highlight-box {
+  background: linear-gradient(135deg, rgba(8,18,38,0.97) 0%, rgba(12,74,110,0.96) 100%);
+  color: white;
+  border-radius: 1rem;
+  padding: 1.25rem 1.5rem;
+  margin: 2rem 0;
+}
+[data-blog-content] .highlight-box p { color: rgba(255,255,255,0.85); margin-bottom: 0; }
+[data-blog-content] .highlight-box strong { color: white; }
+
+/* 제품 추천 카드 내 링크 */
+[data-blog-content] a {
+  color: #0284c7;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(2,132,199,0.3);
+  transition: border-color 0.15s;
+}
+[data-blog-content] a:hover { border-bottom-color: #0284c7; }

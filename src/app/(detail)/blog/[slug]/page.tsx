@@ -142,26 +142,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* 구분선 */}
         <hr className="border-gray-200 mb-10" />
 
+        {/* 히어로 이미지 */}
+        {post.thumbnail && (
+          <div className="relative -mx-4 mb-10 aspect-[21/9] overflow-hidden rounded-[28px] sm:-mx-0">
+            <img
+              src={post.thumbnail}
+              alt={post.title}
+              className="h-full w-full object-cover"
+              style={{ margin: 0, borderRadius: '28px', boxShadow: 'none' }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-[28px]" />
+          </div>
+        )}
+
         {/* 본문 - 카드 래퍼 없음, 깔끔한 타이포그래피 */}
         <article>
           <div
             data-blog-content
-            className="prose prose-lg prose-slate max-w-none
-              prose-headings:font-bold prose-headings:text-gray-900
-              [&>h2]:text-[1.5rem] [&>h2]:mt-12 [&>h2]:mb-4 [&>h2]:first:mt-0
-              [&>h3]:text-xl [&>h3]:mt-8 [&>h3]:mb-3
-              prose-p:text-gray-600 prose-p:leading-[1.8] prose-p:mb-4 prose-p:text-[1.0625rem]
-              prose-a:text-teal-600 prose-a:no-underline hover:prose-a:underline
-              prose-strong:text-gray-900 prose-strong:font-semibold
-              prose-ul:my-4 prose-ul:space-y-2 prose-ul:pl-6 prose-li:text-gray-600 prose-li:leading-relaxed prose-li:text-[1.0625rem]
-              prose-ol:my-4 prose-ol:space-y-2 prose-ol:pl-6
-              prose-table:my-8 prose-table:w-full prose-table:border-collapse prose-table:text-sm
-              prose-th:bg-gray-50 prose-th:p-3 prose-th:text-left prose-th:font-semibold prose-th:text-gray-700
-              prose-td:p-3 prose-td:border-b prose-td:border-gray-100 prose-td:text-gray-600
-              [&_figure]:my-8
-              [&_figcaption]:text-center [&_figcaption]:text-sm [&_figcaption]:text-gray-400 [&_figcaption]:mt-3
-              [&_img]:rounded-lg
-            "
             dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content, {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
               ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height'],
