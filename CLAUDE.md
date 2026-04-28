@@ -207,10 +207,12 @@ FF Blast Max로 업그레이드되어 이전 버전보다 쿠셔닝과 에너지
 
 ### 새 신발 추가 시
 
-1. **리뷰 데이터 수집** (Chrome DevTools MCP 사용)
+1. **리뷰 데이터 수집** (`oh-my-claudecode:researcher` 서브에이전트 사용 — 토큰 효율)
    - RunRepeat: 랩 테스트 데이터 (SA, HA, 에너지 리턴%, 무게, 스택, 드롭, 토박스 너비)
    - Believe in the Run / Doctors of Running: 전문가 리뷰
+   - Nike/Adidas/Asics 등 한국 공식 사이트: MSRP
    - 자세한 방법은 아래 "리뷰 데이터 수집 가이드" 참조
+   - 봇 차단/JS 렌더링 필수일 때만 Chrome DevTools MCP로 폴백
 
 2. **해당 브랜드 파일에 추가** (`src/lib/data/shoes/{brand}.ts`)
 
@@ -227,9 +229,122 @@ FF Blast Max로 업그레이드되어 이전 버전보다 쿠셔닝과 에너지
 
 ---
 
-## 리뷰 데이터 수집 가이드 (Chrome DevTools MCP)
+## 리뷰 데이터 수집 가이드
 
-### RunRepeat 랩 데이터 수집
+### 기본 방식: `oh-my-claudecode:researcher` 서브에이전트 (권장)
+
+**왜 이 방식인가:**
+- 에이전트가 자체 컨텍스트에서 WebFetch/WebSearch 반복 → **정제된 JSON만** 메인 컨텍스트로 반환
+- Chrome DevTools MCP 스냅샷(10k~30k 토큰) 대비 1k~2k 토큰으로 해결
+- RunRepeat/BITR/DOR은 대부분 정적 HTML이라 WebFetch로 충분
+
+**호출 템플릿:**
+
+```
+Agent({
+  subagent_type: "oh-my-claudecode:researcher",
+  description: "페가수스 42 데이터 수집",
+  prompt: `러닝화 리뷰 데이터를 수집해서 아래 JSON 스키마로 반환해줘.
+
+대상: Nike Pegasus 42
+
+수집 소스 (WebFetch 우선, 실패 시 WebSearch):
+1. **RunRepeat 랩 데이터** — https://runrepeat.com/{brand}-{model}
+   - weight(g), heelStack/forefootStack(mm), drop(mm)
+   - SA(힐/전족부), HA, energyReturn%(힐/전족부), toeBoxWidth(mm)
+   - ⚠️ 신상(출시 <3개월)은 미게시 흔함 → 이전 버전(N-1) 수치를 참고용으로 병행 수집
+2. **Believe in the Run 리뷰** — https://believeintherun.com/shoe-reviews/{model}-review/
+   - 장점 3-5개, 단점 2-4개, 추천/비추천 대상
+   - 점수: **신 Tier 시스템**(A/B/C/D) 또는 구 숫자(X/15) 둘 중 실제 표기 그대로
+   - 핵심 인용 1-2개 (한국어 리뷰 작성 소스)
+   - 이미지 URL 5-8개 (side/front/back/angle/outsole — 다운로드용)
+3. **Road Trail Run 리뷰** — roadtrailrun.com 검색 (신상 리뷰 빠름, 기술 비교 상세)
+4. **Doctors of Running 리뷰** (있으면) — 의학적 관점 (평발/무릎/아킬레스)
+5. **제조사 Newsroom 공식 발표** — about.nike.com/newsroom 등
+   - 이전 버전 대비 변경점 (미드솔 폼, 스택, 드롭, 무게)
+   - 제조사 주장 (예: "에너지 리턴 +15%")
+6. **한국 공식 가격** — 브랜드 공식 사이트 우선, 봇 차단 시 WebSearch로 네이버 쇼핑 공식가 + 블로그 교차 확인 (Nike/Adidas Korea는 사실상 항상 봇 차단이므로 WebSearch 병행을 기본으로 가정)
+
+반환 JSON 스키마:
+{
+  "labData": { weight, heelStack, forefootStack, drop, saHeel, saForefoot, ha, energyReturnHeel, energyReturnForefoot, toeBoxWidth, durabilityNote },
+  "bitrReview": { scoringSystem, totalScore, pros: [], cons: [], recommendedFor: [], notRecommendedFor: [], keyQuotes: [], imageUrls: [] },
+  "rtrReview": { keyPoints: [], comparison: "..." },
+  "dorReview": { keyPoints: [], medicalPerspective },
+  "price": { msrp_krw, source, wideOptionAvailable, releaseDate, releaseStatus },
+  "changesFromPrevVersion": [ "..." ],
+  "prevVersionLabDataForReference": { /* N-1 버전 RunRepeat 수치, 42의 랩 미게시 시 추정 기준 */ },
+  "sourcesUsed": [...],
+  "sourcesFailed": [ { source, reason } ]
+}
+
+실패한 소스는 sourcesFailed에 이유와 함께 명시. 추측 금지 — 데이터 없으면 null.`
+})
+```
+
+**수집한 데이터 → Shoe 타입 매핑:**
+
+```typescript
+// labData → specs (1-10 점수)
+specs: {
+  weight: labData.weight,
+  cushioning: /* SA 기반: 140+ → 9, 120-140 → 8, 100-120 → 7 */,
+  responsiveness: /* 에너지 리턴%: 65%+ → 8, 55-65% → 7, 45-55% → 6 */,
+  stability: /* 카테고리 + 리뷰 기반 판단 */,
+  drop: labData.drop,
+  durability: /* 아웃솔 평가 기반 500-700km */,
+}
+
+// labData → biomechanics
+biomechanics: {
+  stackHeight: { heel: labData.heelStack, forefoot: labData.forefootStack },
+  drop: labData.drop,
+  // ...
+}
+
+// labData.toeBoxWidth → koreanFootFit
+// narrow(<68mm) / standard(68-75mm) / wide(>75mm)
+koreanFootFit: { toBoxWidth: /* 위 기준 */ }
+```
+
+### 신상 신발 대응 프로토콜 (RunRepeat/DOR 랩 미게시 시)
+
+출시 직후(<3개월) 신발은 RunRepeat 랩 테스트가 없고 DOR 리뷰도 없는 경우가 많다. 이때 다음 프로토콜을 따른다.
+
+**1. 추정의 3단계 원칙**
+- 1순위: **이전 버전(N-1) RunRepeat 수치를 기준선**으로 사용
+- 2순위: **제조사 공식 발표의 변경폭**을 반영 (예: Nike "에너지 리턴 +15%")
+- 3순위: **BITR/RTR 주관 평가**로 크로스 체크 (예: "전작보다 부드럽다" → SA 상향)
+
+**2. 추정값 표기 의무**
+- `detailedSpecs`에 수치 뒤 **`(추정)`** 표기 필수
+  - 예: `weight: '286g (추정, 공식 발표 기준)'`
+  - 예: `cushioning: '힐 SA 추정 140+ (41 125 + 스택 +3.4mm)'`
+- `specs` 점수는 보수적으로 (추정 불확실 시 0.5~1점 하향)
+
+**3. editorComment 신상 면책**
+- editorComment 첫 문장에 명시: `"2026-04-09 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 수치는 페가수스 41 기준 + 공식 변경점 추정치입니다."`
+
+**4. 후속 업데이트 트리거**
+- `/Users/kwonjaehyeon/Programming/sancho/runningshoes/.omc/todo-estimates.md` (없으면 생성)에 기록:
+  ```
+  - [ ] nike-pegasus-42: RunRepeat 랩 데이터 게시 확인 후 specs/detailedSpecs 업데이트 (추가 2026-04-22)
+  ```
+- 3~6개월 뒤 재확인 시 해당 파일 참조
+
+**5. 리뷰 작성 원칙 (추정 기반일 때)**
+- 수치 나열 최소화, **변경점 중심**으로 서술
+- "전작 대비 X가 Y로 개선됐다" 구조 선호
+- 확정 가능한 소비자 경험 (가격, 출시일, 변경 설계) 우선
+
+### 폴백: Chrome DevTools MCP (researcher 실패 시)
+
+아래 케이스에서만 사용:
+- Nike Korea 등 봇 차단 사이트 가격 확인 필요
+- JS 렌더링으로만 보이는 데이터
+- 이미지 URL 추출 (리뷰 사이트에서 이미지 다운로드용)
+
+### RunRepeat 랩 데이터 수집 (폴백)
 
 **1. Chrome DevTools MCP로 페이지 접속:**
 
@@ -478,27 +593,31 @@ take_snapshot()
 
 ### 빠른 참고: 데이터 수집 워크플로우
 
+**권장 (researcher 서브에이전트 1회 호출):**
+
+```
+1. Agent(oh-my-claudecode:researcher, 위 "호출 템플릿") → 정제된 JSON 반환
+2. JSON → Shoe 타입 매핑하여 src/lib/data/shoes/{brand}.ts 입력
+3. npm run validate && npm run build
+```
+
+**폴백 (Chrome DevTools MCP, researcher 실패 시):**
+
 ```bash
-# 1. Chrome DevTools MCP로 RunRepeat 접속
+# 1. RunRepeat 접속
 mcp navigate https://runrepeat.com/{brand}-{model}
-
-# 2. 스냅샷으로 페이지 확인
 mcp take_snapshot
-
-# 3. evaluate_script로 랩 데이터 추출
 mcp evaluate_script <위의 RunRepeat 스크립트>
 
-# 4. Believe in the Run 접속
+# 2. Believe in the Run 접속
 mcp navigate https://believeintherun.com/shoe-reviews/{model}-review/
-
-# 5. 스냅샷으로 리뷰 내용 확인
 mcp take_snapshot
 
-# 6. 데이터를 브랜드 파일에 입력
+# 3. 데이터를 브랜드 파일에 입력
 # Edit src/lib/data/shoes/{brand}.ts
 
-# 7. 빌드 확인
-npm run build
+# 4. 빌드 확인
+npm run validate && npm run build
 ```
 
 ### 모델 버전 업데이트 시

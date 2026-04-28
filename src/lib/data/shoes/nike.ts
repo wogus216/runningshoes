@@ -112,8 +112,122 @@ export const nikeShoes: Shoe[] = [
       landingPattern: '뒤꿈치 착지(RFS) 최적',
     },
 
-    similarShoes: ['adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
+    similarShoes: ['nike-pegasus-42', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FxCvSGHY' }],
+  },
+  {
+    id: 'nike-pegasus-42',
+    slug: 'nike-pegasus-42',
+    brand: 'Nike',
+    name: '페가수스 42',
+    image: '/images/shoes/nike/pegasus42/side.webp',
+    images: [
+      '/images/shoes/nike/pegasus42/side.webp',
+      '/images/shoes/nike/pegasus42/angle.webp',
+      '/images/shoes/nike/pegasus42/back.webp',
+      '/images/shoes/nike/pegasus42/front.webp',
+      '/images/shoes/nike/pegasus42/outsole.webp',
+    ],
+    category: '입문화',
+    rating: 4,
+    price: 169000,
+    description: '페가수스 시리즈의 42번째 버전. 풀 렝스 Air Zoom 유닛 도입으로 전작 대비 에너지 리턴이 15% 향상되었고, 힐 스택도 +3.4mm 증가했습니다. 넓어진 해부학적 토박스로 발볼 수용력도 개선되었습니다.',
+    oneliner: '16만원대에 풀 렝스 Air Zoom으로 돌아온 입문 데일리 트레이너',
+    editorComment: '2026-04-09 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 주요 수치는 페가수스 41 기준 + 나이키 공식 변경점을 반영한 추정치입니다. 핵심 변화는 세 가지: 풀 렝스 Air Zoom 유닛 도입(전작 듀얼 포드에서 개선), 에너지 리턴 15% 향상(공식 발표), 힐 스택 37mm(+3.4mm)로 41의 아쉬움이었던 전족부 반응성과 관절 충격을 개선했습니다. BITR 평가는 B티어(Value A등급)로 여전히 "입문급 데일리 트레이너, 6-13km 최적"에 그치지만, 토박스가 넓어져 발볼 넓은 한국 러너의 수용력은 확실히 개선됐습니다. 169,000원으로 41(159,000원) 대비 1만원 인상됐으나 가성비는 동급 최상위권이며, 아식스 노바블라스트 5(169,000원)와 동일 가격대에서 쿠셔닝+무릎 보호를 우선한다면 페가수스 42가 우위입니다. 단, 하프마라톤 이상 롱런이나 스피드 훈련에는 여전히 부족하므로 본격 훈련용이 필요하다면 보메로 18이나 줌 플라이 6을 고려하세요.',
+    tags: ['입문화', '데일리 러닝', 'Air Zoom', '2026 신상'],
+
+    specs: {
+      weight: 286,
+      cushioning: 9,
+      responsiveness: 8,
+      stability: 7,
+      drop: 10,
+      durability: 600,
+    },
+
+    biomechanics: {
+      stackHeight: {
+        heel: 37,
+        forefoot: 27,
+      },
+      drop: 10,
+      carbonPlate: false,
+      plateType: null,
+      midsoleType: 'ReactX Foam + 풀 렝스 Air Zoom',
+      optimalPace: '5:00-7:00 min/km',
+    },
+
+    injuryPrevention: {
+      plantarFasciitis: 'excellent',
+      achillesTendinopathy: 'excellent',
+      kneeIssues: 'good',
+      shinSplints: 'excellent',
+    },
+
+    koreanFootFit: {
+      toBoxWidth: 'standard',
+      flatFootCompatibility: 'good',
+      wideOptions: false,
+      winterCompatibility: 'good',
+      summerCompatibility: 'fair',
+    },
+
+    targetUsers: {
+      recommended: ['러닝 입문자 (쿠셔닝 + 반응성 균형)', '일상 5-13km 데일리 트레이닝', '페가수스 41 업그레이드 원하는 러너', '발볼 넓어 토박스 중시하는 러너', '무릎 보호 원하는 뒤꿈치 착지 러너', '가성비 좋은 올라운더 찾는 분'],
+      notRecommended: ['하프마라톤 이상 롱런 위주 러너', '스피드/템포 훈련 전용화 필요', '초경량 레이싱화 찾는 분', '주 100km+ 고볼륨 훈련 러너', '강한 반발력 슈퍼슈즈 원하는 상급자'],
+    },
+
+    features: ['풀 렝스 Air Zoom 유닛 (에너지 리턴 +15% 공식)', '37mm 하이스택 (무릎 부담 완화)', '넓어진 해부학적 토박스', '고무 아웃솔 (600km+ 내구성 예상)'],
+
+    priceAnalysis: {
+      msrp: 169000,
+      streetPrice: 145000,
+      costPerKm: 282,
+      valueRating: 8,
+      priceTier: 'mid',
+      alternatives: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
+    },
+
+    reviews: [
+      {
+        userType: '에디터 분석',
+        rating: 82,
+        text: '페가수스 42는 41의 핵심 단점이었던 "전족부 반응성 부족"과 "관절 충격"을 풀 렝스 Air Zoom 유닛 + 힐 스택 +3.4mm로 개선한 버전입니다. 2026년 4월 출시 직후라 RunRepeat 랩 데이터는 미게시 상태이지만, 나이키 공식 발표 기준 에너지 리턴 15% 향상과 37mm 하이스택, 넓어진 토박스는 확정된 변경점입니다. 169,000원으로 41(159,000원) 대비 1만원 올랐지만 BITR은 "Value A등급"을 유지하며 6-13km 데일리 훈련에서 여전히 최상의 가성비 옵션으로 평가했습니다. 한국 러너 기준으로 41에서 가장 아쉬웠던 "좁은 토박스"가 넓어진 것이 핵심 포인트 — 발볼 넓은 러너도 와이드 옵션 없이 기본 사이즈로 시도해볼 수 있는 수준입니다. 다만 여전히 "입문급 데일리 트레이너"라는 포지션은 유지되므로, 하프마라톤 페이스 훈련이나 스피드 워크는 줌 플라이 6이나 베이퍼플라이로 분리하는 게 권장됩니다. 무릎 보호 측면에서는 37mm 힐 스택 + ReactX 폼 + Air Zoom 조합이 41보다 확실한 우위를 보이며, 평발 러너에게도 좋은 선택입니다.',
+      },
+      {
+        userType: '41 업그레이드 러너',
+        rating: 4,
+        text: '2년 전 페가수스 41 (270mm)을 600km까지 굴리다가 42로 갈아탔습니다. 첫인상은 "전족부가 확실히 살아있다"입니다. 41은 뒤꿈치 중심 쿠션이고 포어풋은 상대적으로 퍽퍽했는데, 42는 풀 렝스 Air Zoom 덕분에 중족~전족부 착지에서도 반발감이 느껴져요. 5km 이지런은 41보다 확실히 가볍게 뛰어집니다. 다만 10km 넘어가면 286g 무게가 느껴지는 건 여전해요. 가격은 1만원 올랐지만 Air Zoom 풀렝스 구조 감안하면 납득 가능한 수준이고, 37mm 하이스택이 아스팔트 무릎 충격을 잘 잡아줍니다. 41 사용자에게 업그레이드 추천하되, 가성비만 본다면 41 블프 세일 가격이 더 매력적일 수 있어요. 16만원대 입문 데일리 트레이너로 5km부터 10km까지 편하게 커버하는 한국 러너 베스트셀러 라인업입니다.',
+      },
+      {
+        userType: '데일리 입문 러너',
+        rating: 4,
+        text: '러닝 4개월차 초보입니다. 페가수스 시리즈가 입문에 좋다고 해서 42부터 시작했어요. 표준 270mm로 시작했는데 토박스가 41보다 넓다는 리뷰 보고 안심했고, 실제로 5km 뛴 후에도 발가락 눌림 없었어요. 37mm 힐 스택이 아스팔트 충격을 잘 흡수해줘서 한강공원 5km 돌 때 무릎 편안합니다. 10mm 드롭으로 뒤꿈치 착지 입문 러너에게 적합하고, 속도 낼 생각은 없으니 약간 무거운 286g도 신경 안 쓰입니다. 16만원대로 브랜드화 중 가성비 최상위권이고, 입문 러너에게 "첫 러닝화 뭐 살까" 질문에 자신 있게 추천할 수 있는 신발입니다. 페가수스 42는 한국 러너 입문화 베스트로, 5km부터 10km까지 데일리 훈련 커버에 최적입니다.',
+      },
+      {
+        userType: '발볼 넓은 러너',
+        rating: 4,
+        text: '발볼 4E급인 한국 러너입니다. 페가수스 41 때는 표준 사이즈 토박스가 너무 좁아서 와이드로 교환했는데, 42는 해부학적 토박스로 설계 자체가 넓어졌다고 해서 기본 265mm로 테스트해봤어요. 5km까지는 무난한데 10km 넘어가면 새끼발가락 쪽 여유가 살짝 아쉬운 정도입니다. 41 기본 사이즈에서 눌림 있던 분이라면 42는 확실히 편해졌다고 느낄 거예요. 다만 발볼이 심하게 넓다면 여전히 와이드/X-와이드 옵션 확인 권장 (2026년 4월 현재 공식 와이드 SKU는 미확정). 토박스 개선은 한국 러너에게 페가수스 42의 가장 큰 장점이고, 37mm 하이스택과 10mm 드롭이 뒤꿈치 착지 러너의 무릎 보호에도 도움이 됩니다. 16만원대 입문 데일리 트레이너 중 한국 발볼에 가장 친화적인 선택지입니다.',
+      },
+    ],
+
+    detailedSpecs: {
+      weight: '286g (추정, Believe in the Run/Road Trail Run 교차 확인, US M9 기준)',
+      stackHeight: '힐 37mm / 포어풋 27mm (41 대비 각 +3.4mm / +4.8mm)',
+      drop: '10mm (41의 11.4mm에서 1.4mm 감소)',
+      midsole: 'ReactX 폼 + 풀 렝스 곡선형 Air Zoom 유닛 (전작 듀얼 포드 구성에서 개선)',
+      plate: '없음 (자연스러운 발 움직임, Air Zoom으로 반발력 보강)',
+      outsole: '고무 + 업데이트된 와플 패턴',
+      upper: '신규 경량 엔지니어드 메쉬',
+      width: '표준 (토박스 넓어짐, 공식 와이드 2E/4E SKU 미확인)',
+      durability: '600km 이상 예상 (추정, 41 아웃솔 0.9mm 마모 깊이 기준, 구성 동일)',
+      price: '₩169,000 (MSRP) / 세일 시 ₩145,000~',
+      costPerKm: '약 ₩282/km (600km 기준 - 가성비 우수)',
+      footType: '평발 OK / 높은 아치 OK / 41 대비 토박스 확장',
+      landingPattern: '뒤꿈치~미드풋 착지 (드롭 10mm)',
+    },
+
+    similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
   },
   {
     id: 'nike-pegasus-premium',

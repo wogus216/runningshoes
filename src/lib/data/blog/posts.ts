@@ -2,6 +2,111 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-mudo-run-coupang-play',
+    slug: '2026-mudo-run-coupang-play',
+    title: '2026 무한도전 Run with 쿠팡플레이 | 상암 10km 이벤트 총정리',
+    description: '2026년 6월 7일 상암 문화비축기지에서 열리는 무한도전 Run with 쿠팡플레이 이벤트 정보를 정리했습니다. 10km 단일 코스, 5월 7일 예매 시작 — 스포츠 패스 가입자는 정오부터, 일반은 저녁 8시부터.',
+    author: '산초 에디터',
+    publishedAt: '2026-04-28',
+    category: 'news' as const,
+    readingTime: 4,
+    thumbnail: '/images/blog/2026-mudo-run-coupang-play.webp',
+    tags: ['러닝 이벤트', '무한도전', '쿠팡플레이', '상암', '이색마라톤', '10km', '펀런'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">예매 오픈 D-9 — 5월 7일(목)</p>
+    <p>쿠팡플레이 스포츠 패스 가입자는 <strong>오후 12시</strong>부터, 일반 예매는 <strong>오후 8시</strong>부터 시작됩니다. 쿠팡플레이 앱을 미리 설치하고 로그인 상태를 확인해두세요.</p>
+  </div>
+</div>
+
+<h2>어떤 행사인가요?</h2>
+
+<p><strong>2026 무한도전 Run with 쿠팡플레이</strong>는 레전드 예능 '무한도전'을 모티브로 한 참여형 러닝 이벤트입니다. 올해 레이스 테마는 무한도전 대표 에피소드와 최근 놀이 트렌드를 결합한 <strong>'경찰과 도둑(경도)' 추격전 콘셉트</strong>로, 러닝 이벤트 최초로 도입된 방식입니다.</p>
+
+<p><strong>박명수·정준하·하하</strong>가 참석을 확정했으며, 특유의 티키타카와 캐릭터를 직접 만날 수 있습니다.</p>
+
+<h2>핵심 정보 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>일시</td><td>2026년 6월 7일(일) 오전 7시 출발</td></tr>
+    <tr><td>장소</td><td>서울 상암 문화비축기지</td></tr>
+    <tr><td>코스</td><td>10km 단일 코스</td></tr>
+    <tr><td>출연진</td><td>박명수 · 정준하 · 하하</td></tr>
+    <tr><td>콘셉트</td><td>'경찰과 도둑' 추격전</td></tr>
+    <tr><td>참가비</td><td>99,000원 (전년도 기준, 변동 가능)</td></tr>
+    <tr><td>기념품</td><td>참가자 전원 한정판 레이스팩 지급</td></tr>
+    <tr><td>신청처</td><td>쿠팡플레이 앱</td></tr>
+  </tbody>
+</table>
+
+<h2>예매 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>날짜·시간</th><th>대상</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>선예매</strong></td><td>5월 7일(목) 오후 12시</td><td>쿠팡플레이 스포츠 패스 가입자</td></tr>
+    <tr><td><strong>일반예매</strong></td><td>5월 7일(목) 오후 8시</td><td>쿠팡 와우회원 + 스포츠 패스 가입자</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">스포츠 패스 가입자 우선 혜택</p>
+    <p>쿠팡플레이 스포츠 패스 구독자는 일반 예매보다 8시간 먼저 신청할 수 있습니다. 이 행사를 목표로 구독을 고려 중이라면 참가비와 구독료를 함께 계산해보세요.</p>
+  </div>
+</div>
+
+<h2>어떤 러너에게 어울릴까?</h2>
+
+<p>기록 단축보다 <strong>특별한 러닝 경험</strong>을 원하는 분께 잘 맞는 행사입니다.</p>
+
+<ul>
+  <li>무한도전 팬이라면 감성 하나만으로도 충분한 이유가 됩니다</li>
+  <li>10km를 달릴 수 있는 체력이면 누구나 참가 가능 — 입문자도 도전할 수 있는 거리</li>
+  <li>이색 러닝 이벤트를 찾는 분</li>
+  <li>친구·연인과 함께 특별한 주말 활동을 원하는 분</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">10km 이벤트 러닝화 추천</p>
+    <p>기록보다 즐거움이 목적인 펀런에는 쿠션 좋은 데일리화가 제격입니다. <a href="/shoes/hoka-clifton-9">호카 클리프톤</a>이나 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a> 같은 맥시멀 쿠션화로 발의 피로를 줄이고 행사 자체를 즐기는 데 집중하세요. 맞춤 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 이용해보세요.</p>
+  </div>
+</div>
+
+<h2>접수 방법</h2>
+
+<ol>
+  <li>쿠팡플레이 앱 설치 (iOS / Android)</li>
+  <li>쿠팡 계정 로그인 또는 신규 가입</li>
+  <li>5월 7일 오후 12시(스포츠 패스) 또는 오후 8시(일반) 접수 시작</li>
+  <li>결제 수단 미리 등록 — 오픈과 동시에 빠르게 진행해야 합니다</li>
+</ol>
+
+<p>상세 요강과 최종 참가비는 공식 발표 시 변동될 수 있으니, 쿠팡플레이 앱 공지 또는 <a href="https://www.instagram.com/runjoa_official/" rel="noopener noreferrer">런조아 공식 인스타그램 @runjoa_official</a>을 팔로우해 최신 정보를 확인하세요.</p>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">6월 다른 대회도 함께 검토해보세요</p>
+    <p>6월에 열리는 다른 국내 마라톤·러닝 이벤트도 <a href="/marathon">2026 마라톤 캘린더</a>에서 한눈에 확인할 수 있습니다. 무한도전 런 접수에 실패했을 때 대안 찾기에도 유용합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 런조아 공식 인스타그램 @runjoa_official / 상세 요강은 쿠팡플레이 앱 공식 공지에서 확인하세요.</small></p>
+`,
+  },
+  {
     id: '2027-seoul-marathon-registration-schedule',
     slug: '2027-seoul-marathon-registration-schedule',
     title: '2027 서울마라톤 접수 일정 완전 정리 | 풀코스 그룹별·10K·우선접수 총정리',

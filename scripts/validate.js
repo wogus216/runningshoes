@@ -212,12 +212,12 @@ console.log(`   ❌ 에러: ${errors}개`);
 console.log(`   ⚠️  경고: ${warnings}개\n`);
 
 if (errors > 0) {
-  console.log('❌ 검증 실패 — 에러를 수정해주세요.\n');
+  console.log('❌ 검증 실패 — 에러를 수정해주세요.');
   process.exit(1);
 } else if (warnings > 0) {
-  console.log('⚠️  경고가 있지만 통과 (경고는 커밋 가능)\n');
+  console.log('⚠️  경고가 있지만 통과 (경고는 커밋 가능)');
   process.exit(0);
 } else {
-  console.log('✅ 모든 검증 통과!\n');
+  console.log('✅ 모든 검증 통과!');
   process.exit(0);
 }
