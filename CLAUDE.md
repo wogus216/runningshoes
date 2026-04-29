@@ -65,6 +65,56 @@
 
 ---
 
+## 인스타그램 → 블로그 반자동 파이프라인
+
+사용자가 인스타그램 URL을 주면 **확인 없이 끝까지 자동 실행**한다.
+
+### 모니터링 대상 계정 (우선순위 순)
+
+| 계정 | 주력 콘텐츠 |
+|------|------------|
+| `@runninglife_korea` | 러닝화 용어·장비 리뷰·정보카드 |
+| `@runjoa_official` | 러닝 이벤트·대회 일정 |
+| `@dongmaclub` | 동아마라톤 계열 접수 일정 |
+| `@runners_now` | 국내 마라톤 대회 정보 |
+
+### 실행 파이프라인 (URL 입력 → 배포까지)
+
+```
+1. researcher 서브에이전트로 인스타 콘텐츠 추출
+   → WebFetch 우선 / 실패 시 Chrome DevTools
+   → 반환: 텍스트·이미지URL·핵심정보 JSON
+
+2. 블로그 포스트 작성 (산초 에디터 스타일)
+   → slug/category/tags 자동 결정
+   → 내부 링크는 실존 slug만 사용 (grep으로 확인)
+
+3. 썸네일 이미지 제작
+   → HTML/CSS 인포그래픽 → Chrome DevTools 스크린샷 → WebP
+   → 가능하면 public/images/shoes/ 실제 신발 이미지 활용
+
+4. posts.ts 맨 앞에 추가 → npm run build
+
+5. git add + commit + push → Vercel 자동 배포
+```
+
+### 컨텍스트 절약 원칙
+
+- 인스타 콘텐츠 추출은 반드시 **`researcher` 서브에이전트**에 위임 (take_snapshot 직접 사용 금지)
+- 썸네일은 1회에 완성 (반복 스크린샷 최소화)
+- posts.ts는 편집(Edit)만 사용, Read 반복 금지
+
+### 카테고리 자동 판단 기준
+
+| 내용 유형 | category |
+|----------|----------|
+| 대회 접수·일정·이벤트 | `news` |
+| 러닝화 구조·용어·선택법 | `guide` |
+| 훈련 팁·스트레칭·루틴 | `tips` |
+| 러닝화 상세 리뷰 | `review` |
+
+---
+
 ## 프로젝트 구조
 
 ```
