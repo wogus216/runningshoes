@@ -2,6 +2,317 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-chuncheon-marathon-registration-guide',
+    slug: '2026-chuncheon-marathon-registration-guide',
+    title: '2026 춘천마라톤 풀코스 접수 D-53 | 6월 24일 14시 광클 전략과 코스 분석',
+    description: '국내 최고 PB 친화 코스로 꼽히는 조선일보 춘천마라톤. 풀코스 접수가 6월 24일(화) 14시로 예상됩니다. 광클 전략·25km 오르막·교통/숙박·신발 선택까지 출전 준비 완전 가이드.',
+    thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-02',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['춘천마라톤', '조선일보 춘천마라톤', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 풀코스 접수 6월 24일(화) 14시 — D-53</p>
+    <p>본 글의 일정·접수 시각은 2025년 패턴(매년 6월 마지막 주 화요일 14시 풀코스 접수 오픈) 기준 예측치입니다. <strong>2026년 공식 발표는 5월 중하순 공개 예정</strong>이니, 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>을 함께 모니터링하세요.</p>
+  </div>
+</div>
+
+<h2>춘천마라톤이 뭐길래</h2>
+
+<p>1946년 창설된 국내 최고(最古) 마라톤 중 하나. 의암호 수변 AIMS 국제공인 코스에서 매년 10월 마지막 주 일요일 열립니다. <strong>"춘마는 뛰어야 진짜 러너"</strong>라는 말이 있을 정도로 국내 마라톤 커뮤니티에서 가장 상징적인 가을 대회입니다.</p>
+
+<p>이 대회가 특별한 이유 세 가지:</p>
+
+<ul>
+  <li><strong>PB 친화적 평탄 코스</strong> — 의암호 따라 도는 흐름이 자연스럽고 고저차가 작음</li>
+  <li><strong>10월 말 서늘한 기온</strong> — 풀코스 페이스 유지에 이상적</li>
+  <li><strong>의암호 단풍 절경</strong> — 풍경이 좋아 심리적 페이스 유지에도 도움</li>
+</ul>
+
+<p>국내 메이저 풀코스(서울·JTBC·춘천) 중 PB 도전에 가장 자주 추천되는 대회가 춘천입니다.</p>
+
+<h2>2026 접수 예상 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>접수 오픈 (예측)</th><th>참가비</th><th>컷오프</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스 (42.195km)</strong></td><td>2026년 6월 24일(화) 14:00</td><td>100,000원</td><td>5시간 30분</td></tr>
+    <tr><td><strong>10K</strong></td><td>2026년 6월 26일(목) 14:00</td><td>80,000원</td><td>1시간 30분</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">신청과 결제는 분리 운영</p>
+    <p>춘천마라톤은 신청(선착순)과 결제가 별도로 이루어집니다. 신청 성공 후 결제 기한(접수 후 약 1주일) 안에 입금하지 않으면 자격이 자동 소멸합니다. <strong>2025년부터 단체 신청은 폐지</strong>되었으니 모두 개인 접수입니다.</p>
+  </div>
+</div>
+
+<p>풀코스는 만 18세 이상(대회일 기준), 10K는 연령 제한 없습니다. 조선일보 정기 구독자 본인은 결제 시 <strong>10% 할인</strong>이 적용되며, 대리신청·타인 적용은 불가합니다.</p>
+
+<h2>광클 D-Day 전 준비 — 7단계 체크리스트</h2>
+
+<p>풀코스 접수는 매년 오픈 후 수분 내 마감됩니다. 시간이 아니라 <strong>초 단위 경쟁</strong>이라고 보면 됩니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 전날까지 끝낼 7가지</p>
+    <p>① 공식 홈페이지(chuncheonmarathon.com) 회원가입 ② 개인정보·비상연락처 사전 입력 ③ 카드 결제 한도 확인(10만원 이상 가능) ④ <strong>유선랜 연결 PC 준비</strong> — 모바일보다 압도적 안정 ⑤ 브라우저 캐시 삭제, 불필요한 탭 모두 닫기 ⑥ 자동 입력 저장으로 입력 시간 단축 ⑦ <code>time.navyism.com</code>으로 시계 동기화</p>
+  </div>
+</div>
+
+<p>당일 13시 50분에는 로그인 상태로 대기하세요. 평소엔 5분 일찍 들어가도 충분하지만, 춘마 같은 빅 이벤트는 트래픽 폭주로 로그인 자체가 안 되는 경우가 종종 발생합니다.</p>
+
+<p>접수 성공 후 <strong>결제 기한(7월 1~2일경)</strong>은 캘린더에 알람 설정해두세요. 신청만 하고 결제 깜빡해서 자격 잃는 사례가 매년 반복됩니다.</p>
+
+<h2>코스 분석 — 의암호 한 바퀴</h2>
+
+<p>출발 후 의암호 서쪽 수변길을 따라 신매대교까지 내려갔다가 반환, 귀로에서 서상대교·춘천댐 쪽으로 진행하는 구조입니다. 전반적으로 평탄하지만 <strong>오르막이 3구간 집중</strong>됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>0~5km</strong></td><td>출발 직후 삼천사거리까지 완만한 오르막. 무리하지 말 것</td></tr>
+    <tr><td><strong>약 17km</strong></td><td>강원애니고 방향 약 300m 단거리 오르막. 짧지만 가파름</td></tr>
+    <tr><td><strong>25~30km</strong></td><td>서상대교·춘천댐 구간 — <strong>가장 가파르고 체력 최저점과 겹침</strong>. 매년 기권자 최다 발생</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">초반 의암호 풍경에 오버페이스 주의</p>
+    <p>춘천 풀코스에서 가장 흔한 실패 패턴: 0~15km 구간 풍경에 들떠 목표보다 빠르게 달리고, 25km 댐 구간에서 무너집니다. 처음 20km는 목표 페이스보다 5~10초 느리게, 안정 페이스를 유지하는 게 정석입니다.</p>
+  </div>
+</div>
+
+<h2>교통과 숙박 — 접수와 동시에 예약</h2>
+
+<h3>공식 셔틀버스 (왕복 2만원)</h3>
+
+<p>서울 4개 거점에서 새벽 6시 일제 출발, 귀가편은 오후 2시 30분~4시 만차순 출발입니다. 공식 홈페이지 사전 예약 필수이며 매년 조기 마감.</p>
+
+<ul>
+  <li>시청역 2번 출구</li>
+  <li>잠실역 6번 출구</li>
+  <li>신도림역 1번 출구</li>
+  <li>사당역 12번 출구</li>
+</ul>
+
+<h3>ITX 청춘 (강력 추천)</h3>
+
+<table>
+  <thead>
+    <tr><th>출발역</th><th>소요 시간</th><th>요금</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>용산역 → 춘천역</td><td>74~80분</td><td>9,800원</td></tr>
+    <tr><td>청량리역 → 춘천역</td><td>58~64분</td><td>7,100원</td></tr>
+  </tbody>
+</table>
+
+<p>대회 당일 오전 5시 30분 이전 출발 권장. 주말 좌석은 빠른 매진 — <strong>대회 접수 직후 기차표도 함께 예매</strong>하세요. 춘천역에서 대회장(공지천 의암공원)까지는 도보 20분 또는 택시 5~10분.</p>
+
+<h3>숙박 — 전날 1박 강력 권장</h3>
+
+<p>당일치기는 셔틀(새벽 6시) 또는 ITX(새벽 5시 30분) 출발이라 체력 소모가 큽니다. 풀코스 PB가 목표라면 무조건 전날 숙박이 유리합니다.</p>
+
+<ul>
+  <li>공지천 인근(더잭슨나인스호텔, 에스턴호텔, 호텔공지천): 도보 5~10분 — 최적</li>
+  <li>대회 시즌 9월부터 만실 시작 — 접수 성공 즉시 예약 필수</li>
+  <li>저녁 메뉴는 익숙한 한식 카보로딩 권장. 처음 가는 닭갈비집은 모험 금물</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용은 비추천</p>
+    <p>대회 당일 오전 7시~오후 3시 30분 교통통제. 자가용 이용 시 새벽 5시 이전 도착해야 하며, 공지천 공영주차장(약 50대)은 조기 만차됩니다.</p>
+  </div>
+</div>
+
+<h2>풀코스 신발 선택 — 평탄 PB 코스에 맞춰</h2>
+
+<p>춘천 풀코스는 평탄·서늘 조건이 갖춰져 카본 플레이트 레이싱화가 가장 빛을 발하는 환경입니다. 다만 본인 페이스에 맞는 선택이 중요합니다.</p>
+
+<ul>
+  <li><strong>서브3 (목표 4:15/km 이하):</strong> 카본 슈퍼슈즈 — <a href="/best/racing">레이싱화 추천</a>에서 비교</li>
+  <li><strong>서브4 (목표 5:40/km):</strong> 카본화 또는 슈퍼트레이너. 30km 이후 쿠션 유지가 관건</li>
+  <li><strong>완주 목표 (5시간 내외):</strong> 쿠션 든든한 데일리 트레이너가 안전 — <a href="/best/max-cushion">맥스 쿠션 신발</a></li>
+  <li><strong>처음 풀코스 도전:</strong> 카본화 신지 마세요. 페이스 유지 + 부상 방지가 우선 — <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+</ul>
+
+<p>레이스용 신발은 <strong>대회 6~8주 전 구입</strong>해 40~60km 정도 길들이고 출전하세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>훈련 일정 — 5월 시작이 표준</h2>
+
+<p>10월 25일 전후 대회 기준, <strong>16~20주 빌드업이 표준</strong>입니다. 지금(5월 초) 시작하면 정확히 24주 — 기초 체력부터 다질 시간이 충분합니다.</p>
+
+<ul>
+  <li><strong>5~7월 (기초기):</strong> 주 30~50km, LSD 위주로 베이스 구축</li>
+  <li><strong>8~9월 (강화기):</strong> 인터벌·템포런 추가, 주 50~70km</li>
+  <li><strong>10월 초중순 (피크):</strong> 32~35km 장거리 1회 필수</li>
+  <li><strong>대회 2주 전 (테이퍼링):</strong> 거리 절반으로 감소, 회복 우선</li>
+</ul>
+
+<p>풀코스 후반(20km+) 에너지 보충 전략은 <a href="/gels">에너지젤 가이드</a>에서 확인하세요.</p>
+
+<h2>접수 마감 후 대안</h2>
+
+<p>풀코스는 매년 분 단위로 마감되므로 광클 실패 가능성이 적지 않습니다. 실패 시 대안:</p>
+
+<ul>
+  <li><strong>공식 인스타 추가접수 공지 모니터링</strong> — 결제 기한 내 미납자가 발생하면 추가 오픈하는 경우 있음</li>
+  <li><strong>10K로 종목 변경</strong> — 6/26 접수 오픈, 풀코스보다 경쟁 덜함</li>
+  <li><strong>JTBC 서울마라톤 (11월 1일)</strong> — 추첨제이지만 도시형 코스라는 다른 매력</li>
+  <li><strong>경주국제마라톤 (10월 17일)</strong> — 동마클럽 계열 메이저 대회. 자세한 일정은 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정</a>에서</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🍂</span>
+  <div class="callout-body">
+    <p class="callout-title">춘마는 PB 도전과 가을 여행을 함께</p>
+    <p>대회 자체도 좋지만, 가족·친구와 함께 1박 2일 춘천 여행 코스로 묶으면 추억까지 남습니다. 의암호 단풍, 닭갈비, 카페 — 풀코스 완주 후 보상으로 더할 나위 없죠.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 02-724-6333~6336</p>
+
+<p>국내 다른 가을 마라톤도 함께 검토하시려면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교해보세요.</p>
+
+<p><small>출처: 춘천마라톤 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a> · 러닝위키 춘천마라톤 가이드 / 작성일 2026년 5월 2일 기준 / 2026년 정확한 접수 일정은 공식 발표(5월 중하순 예정) 후 업데이트 예정입니다.</small></p>
+`,
+  },
+  {
+    id: '2026-anyangcheon-rose-marathon',
+    slug: '2026-anyangcheon-rose-marathon',
+    title: '2026 안양천 장미꽃축제 마라톤 | 5월 23일(토) · 접수 5월 14일 마감',
+    description: '서울 영등포 신정교에서 열리는 2026 안양천 장미꽃축제 마라톤 정보를 정리했습니다. 하프·10K·5K 종목별 참가비, 평탄 코스, 5월 하순 무더위 대응까지 — 접수 마감은 5월 14일.',
+    thumbnail: '/images/blog/2026-anyangcheon-rose-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-02',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['안양천 마라톤', '장미꽃축제', '서울 마라톤', '봄 마라톤', '하프마라톤', '대회 일정'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 마감 D-12 — 5월 14일(목)까지</p>
+    <p>대회는 5월 23일(토), 접수는 5월 14일(목)까지입니다. 매년 정원이 차면 조기 마감되는 종목이 있어 참가 의향이 있다면 이번 주 안에 결정하시는 게 좋습니다.</p>
+  </div>
+</div>
+
+<h2>한 눈에 보는 대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 안양천 장미꽃축제 마라톤</td></tr>
+    <tr><td><strong>일시</strong></td><td>2026년 5월 23일(토)</td></tr>
+    <tr><td><strong>장소</strong></td><td>신정교 하부 영롱이 억새구장 (서울 영등포구 영등포로2길 62)</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프(21.1km) · 10K · 5K</td></tr>
+    <tr><td><strong>접수 마감</strong></td><td>2026년 5월 14일(목)</td></tr>
+    <tr><td><strong>주최</strong></td><td>(사)대한생활체육연맹</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="https://roserun.kr/join/register.asp" rel="noopener noreferrer">roserun.kr</a></td></tr>
+  </tbody>
+</table>
+
+<h2>종목별 참가비와 출발 시간</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>출발 시간 (공식 홈페이지 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>하프 (21.1km)</strong></td><td>50,000원</td><td>오전 8:00</td></tr>
+    <tr><td><strong>10K</strong></td><td>50,000원</td><td>오전 8:15</td></tr>
+    <tr><td><strong>5K</strong></td><td>45,000원</td><td>오전 8:45</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">출발 시간은 공식 홈페이지 재확인 필수</p>
+    <p>외부 집계 사이트마다 출발 시간이 09:00 단일로 표기된 곳도 있습니다. 위 시간은 공식 홈페이지(roserun.kr) 기준이며, 대회 1주일 전 최종 안내 문자/이메일을 반드시 확인하세요.</p>
+  </div>
+</div>
+
+<h2>평탄 안양천 자전거도로 — 페이스 유지에 유리</h2>
+
+<p>안양천 마라톤 코스의 가장 큰 매력은 <strong>거의 평탄한 직선 위주의 자전거도로</strong>라는 점입니다. 신정교 출발 후 안양천 수변로를 따라 왕복하는 형태로, 고저차가 거의 없어서 페이스 유지가 쉽습니다.</p>
+
+<ul>
+  <li><strong>노면:</strong> 자전거도로·수변 산책로 포장 양호 — 발목 부담 적음</li>
+  <li><strong>고저차:</strong> 무시할 수준 — PB 도전이나 첫 하프 도전 모두 적합</li>
+  <li><strong>풍경:</strong> 5월 하순 안양천변 장미와 녹음, 강변 자전거도로 특유의 개방감</li>
+  <li><strong>혼잡:</strong> 주말 자전거·산책객과 공유 구간 — 우측 주행 엄수 필수</li>
+</ul>
+
+<h2>5월 23일 — 무더위 대응이 핵심</h2>
+
+<p>5월 하순 서울의 오전 기온은 이미 한여름에 가깝습니다. 평년 5월 23일 서울 일 최고기온은 <strong>약 23~26℃</strong>이며, 자외선 지수는 '매우 높음' 수준입니다. 하프 종목은 8시 출발이라도 골인 직전 10시경에는 이미 20℃를 훌쩍 넘는 경우가 많습니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">초여름 마라톤 체크리스트</p>
+    <p>① 모자/선캡 + 선글라스 필수 ② 자외선 차단제는 땀에 강한 스포츠용 ③ 급수대에서 물 + 머리·목 적시기 ④ 컨디션 이상 시 즉시 페이스 다운 — 이 시기는 PB보다 안전 완주가 우선입니다.</p>
+  </div>
+</div>
+
+<h2>봄~초여름 어떤 러닝화로 뛸까</h2>
+
+<p>안양천 평탄 코스는 신발 선택의 폭이 넓은 편입니다. 본인 목표에 맞춰 고르면 됩니다.</p>
+
+<ul>
+  <li><strong>첫 하프 도전:</strong> 쿠셔닝 든든한 데일리 트레이너가 정답입니다. 안전 완주가 목표라면 무리해서 카본화를 신을 필요가 없어요. <a href="/best/max-cushion">쿠션 러닝화 추천</a>에서 확인하세요.</li>
+  <li><strong>PB 도전 (하프 1:30~2:00 권):</strong> 평탄·서늘한 시간대라면 <a href="/best/daily-trainer">데일리 트레이너 추천</a>도 충분합니다.</li>
+  <li><strong>PB 도전 (서브3 페이스):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a>을 참고하세요.</li>
+  <li><strong>5K 가족 참여:</strong> 평소 신는 데일리화면 충분합니다.</li>
+</ul>
+
+<p>본인 발볼·체중·주간 거리에 맞는 러닝화가 궁금하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
+
+<h2>접수 전 마지막 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프/10K/5K)</li>
+  <li>roserun.kr 회원가입 및 신청서 작성</li>
+  <li>참가비 입금 — 하나은행 364-910019-84004 / (사)대한생활체육연맹</li>
+  <li>대중교통 이용 권장 — 5호선 오목교역·까치산역 도보 15~20분</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·집결 시각)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🌹</span>
+  <div class="callout-body">
+    <p class="callout-title">대회 후엔 장미꽃축제도 함께</p>
+    <p>안양천 장미꽃축제는 5월 중순부터 6월 초까지 이어집니다. 완주 후 메달 걸고 장미터널 산책 — 봄 시즌 대회만의 특권입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 02-2636-7775 / start@roserun.kr</p>
+
+<p>국내 다른 봄·여름 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 확인할 수 있습니다.</p>
+
+<p><small>출처: 안양천 장미꽃축제 마라톤 공식 홈페이지 <a href="https://roserun.kr/" rel="noopener noreferrer">roserun.kr</a> · 작성일 2026년 5월 2일 기준 / 출발 시각·코스는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+  {
     id: 'running-shoe-terminology-guide',
     slug: 'running-shoe-terminology-guide',
     title: '러닝화 용어 총정리 | 미드솔·아웃솔·어퍼, 20만원짜리 신발 제대로 알고 신자',
