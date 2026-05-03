@@ -13,6 +13,15 @@ export const blogPosts: BlogPost[] = [
     readingTime: 5,
     tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
     content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 5일(월) 광화문광장 앞 출발 → 무교로 도착, 하프·10K 평탄 도심 코스</li>
+    <li>접수 마감 5월 10일(일) 선착순, 하프 80,000원 · 10K 60,000원</li>
+    <li>풀코스 없음 — 풀이 목표라면 춘천(10/25 예상), 도심 분위기·페이스메이커 운영을 원하면 이 대회</li>
+  </ul>
+</div>
+
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
@@ -21,7 +30,57 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
-<h2>한 눈에 보는 대회 정보</h2>
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/5 (월)</span>
+    <span class="stat-sub">오전 7:30 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 21.0975km</span>
+    <span class="stat-value">80,000원</span>
+    <span class="stat-sub">만 18세 이상</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">연령 제한 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">5/10 (일)</span>
+    <span class="stat-sub">선착순</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item done">
+    <span class="timeline-date">2026.04.23 (목)</span>
+    <span class="timeline-title">접수 시작</span>
+    <p class="timeline-desc">seoulopen.or.kr에서 선착순 접수 오픈</p>
+  </div>
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.10 (일) — D-6</span>
+    <span class="timeline-title">접수 마감</span>
+    <p class="timeline-desc">정원 도달 시 조기 마감 가능. 결정은 이번 주 안에</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 말</span>
+    <span class="timeline-title">레이스 키트 수령 안내</span>
+    <p class="timeline-desc">대회 약 1주 전 공식 안내문 발송 (출발·집결 시각 최종 확정)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.05 (월)</span>
+    <span class="timeline-title">대회 당일 — 광화문광장 출발 7:30</span>
+    <p class="timeline-desc">개천절(10/3 토) 연휴 직후 평일. 임시공휴일 지정 여부 확인 필수</p>
+  </div>
+</div>
+
+<h2>대회 기본 정보</h2>
 
 <table>
   <thead>
@@ -29,24 +88,10 @@ export const blogPosts: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>대회명</strong></td><td>2026 서울 오픈 마라톤 대회</td></tr>
-    <tr><td><strong>일시</strong></td><td>2026년 10월 5일(월) 오전 7:30 출발</td></tr>
     <tr><td><strong>장소</strong></td><td>광화문광장 앞 대로변 출발 → 무교로 도착 (예정)</td></tr>
-    <tr><td><strong>종목</strong></td><td>하프(21.0975km) · 10km</td></tr>
-    <tr><td><strong>접수 기간</strong></td><td>2026년 4월 23일 ~ 5월 10일(일) 선착순</td></tr>
     <tr><td><strong>주최</strong></td><td>서울오픈마라톤 조직위원회 · (사)한국체육개발원</td></tr>
     <tr><td><strong>접수처</strong></td><td><a href="https://seoulopen.or.kr/sub/register.php" rel="noopener noreferrer">seoulopen.or.kr</a></td></tr>
-  </tbody>
-</table>
-
-<h2>종목별 참가비</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>참가비</th><th>참가 자격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>하프 (21.0975km)</strong></td><td>80,000원</td><td>만 18세 이상 신체 건강한 남녀</td></tr>
-    <tr><td><strong>10K</strong></td><td>60,000원</td><td>제한 없음</td></tr>
+    <tr><td><strong>문의</strong></td><td>070-7766-1238 / somarathon@naver.com</td></tr>
   </tbody>
 </table>
 
@@ -71,22 +116,25 @@ export const blogPosts: BlogPost[] = [
 
 <h2>이 대회는 누구에게 잘 맞나</h2>
 
-<h3>✅ 추천</h3>
-
-<ul>
-  <li><strong>가을 첫 하프 도전자</strong> — 평탄 도심 코스 + 페이스메이커 운영으로 부담 적음</li>
-  <li><strong>춘천마라톤 광클 실패한 러너</strong> — 같은 10월 초 도심 대회로 가을 시즌 워밍업/대안 가능</li>
-  <li><strong>서울 거주 러너</strong> — 셔틀·숙박 부담 없이 당일 참가 가능</li>
-  <li><strong>도심 러닝 사진을 좋아하는 러너</strong> — 광화문 출발 인증샷 매력</li>
-</ul>
-
-<h3>❌ 비추</h3>
-
-<ul>
-  <li><strong>풀코스가 목표인 러너</strong> — 풀코스 종목 없음. 풀이 목표라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
-  <li><strong>10월 5일(월) 출근 러너</strong> — 평일 대회. 휴무 조정 필수 (개천절 10/3 토요일 → 10/5 월요일은 임시공휴일 지정 여부 확인)</li>
-  <li><strong>경치 풍부한 코스를 원하는 러너</strong> — 도심 코스 특성상 의암호·강변 같은 자연 풍경은 없음</li>
-</ul>
+<div class="pros-cons">
+  <div class="pros">
+    <div class="pros-title">✓ 이런 러너에게 추천</div>
+    <ul>
+      <li><strong>가을 첫 하프 도전자</strong> — 평탄 도심 코스 + 페이스메이커 운영으로 부담 적음</li>
+      <li><strong>춘천마라톤 광클 실패</strong> — 같은 10월 초 도심 대회로 가을 시즌 대안</li>
+      <li><strong>서울 거주 러너</strong> — 셔틀·숙박 부담 없이 당일 참가 가능</li>
+      <li><strong>도심 러닝 사진</strong>을 좋아하는 러너 — 광화문 출발 인증샷</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <div class="cons-title">✕ 이런 러너에겐 비추</div>
+    <ul>
+      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
+      <li><strong>10월 5일(월) 출근 러너</strong> — 평일 대회, 임시공휴일 지정 여부 확인 필수</li>
+      <li><strong>경치 풍부한 자연 코스 선호</strong> — 의암호·강변 같은 자연 풍경 없음</li>
+    </ul>
+  </div>
+</div>
 
 <h2>10월 가을 도심 마라톤 신발 선택</h2>
 
