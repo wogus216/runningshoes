@@ -8,6 +8,7 @@ import { categoryLabels } from '@/types/blog';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { BlogCard } from '@/components/blog/blog-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
+import { FaqSection } from '@/components/blog/faq-section';
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -93,10 +94,58 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     ],
   };
 
+  const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: post.faqs.map((faq) => ({
+      '@type': 'Question',
+      name: faq.question,
+      acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+    })),
+  } : null;
+
+  const eventJsonLd = post.event ? {
+    '@context': 'https://schema.org',
+    '@type': 'SportsEvent',
+    name: post.event.name,
+    startDate: post.event.startDate,
+    ...(post.event.endDate && { endDate: post.event.endDate }),
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: post.event.location.name,
+      ...(post.event.location.address && {
+        address: { '@type': 'PostalAddress', streetAddress: post.event.location.address, addressCountry: 'KR' },
+      }),
+    },
+    ...(post.event.organizer && {
+      organizer: { '@type': 'Organization', name: post.event.organizer },
+    }),
+    ...(post.event.url && { url: post.event.url }),
+    ...(post.event.offers && post.event.offers.length > 0 && {
+      offers: post.event.offers.map((offer) => ({
+        '@type': 'Offer',
+        name: offer.name,
+        price: offer.priceKrw,
+        priceCurrency: 'KRW',
+        availability: 'https://schema.org/InStock',
+        ...(offer.availabilityEnds && { validThrough: offer.availabilityEnds }),
+        ...(offer.url && { url: offer.url }),
+      })),
+    }),
+  } : null;
+
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
+      {eventJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(eventJsonLd) }} />
+      )}
     <div className="max-w-[768px] mx-auto xl:max-w-none xl:flex xl:justify-center xl:gap-10">
       {/* 메인 콘텐츠 */}
       <div className="w-full max-w-[768px]">
@@ -165,6 +214,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             }) }}
           />
         </article>
+
+        {/* FAQ 섹션 (faqs 데이터 있을 때만) */}
+        {post.faqs && post.faqs.length > 0 && <FaqSection faqs={post.faqs} />}
 
         {/* 하단 구분선 */}
         <hr className="border-gray-200 my-12" />
