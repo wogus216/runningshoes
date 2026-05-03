@@ -2,6 +2,130 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-seoul-open-marathon-registration',
+    slug: '2026-seoul-open-marathon-registration',
+    title: '2026 서울 오픈 마라톤 접수 D-6 | 10월 5일(월) 광화문 출발 · 5월 10일 마감',
+    description: '광화문광장에서 출발하는 2026 서울 오픈 마라톤(10월 5일 월요일) 접수가 5월 10일까지입니다. 하프 8만원, 10km 6만원, 페이스메이커 운영. 도심 평탄 코스를 노리는 가을 PB 도전자에게 대안.',
+    thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-04',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 마감 D-6 — 5월 10일(일)까지</p>
+    <p>대회는 10월 5일(월), 접수는 <strong>2026년 5월 10일(일)까지 선착순</strong>입니다. 정원이 차면 조기 마감 가능성 있어요. 광화문 도심 코스라 대회 분위기 자체에 매력을 느낀다면 이번 주 안에 결정하시는 게 좋습니다.</p>
+  </div>
+</div>
+
+<h2>한 눈에 보는 대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 서울 오픈 마라톤 대회</td></tr>
+    <tr><td><strong>일시</strong></td><td>2026년 10월 5일(월) 오전 7:30 출발</td></tr>
+    <tr><td><strong>장소</strong></td><td>광화문광장 앞 대로변 출발 → 무교로 도착 (예정)</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프(21.0975km) · 10km</td></tr>
+    <tr><td><strong>접수 기간</strong></td><td>2026년 4월 23일 ~ 5월 10일(일) 선착순</td></tr>
+    <tr><td><strong>주최</strong></td><td>서울오픈마라톤 조직위원회 · (사)한국체육개발원</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="https://seoulopen.or.kr/sub/register.php" rel="noopener noreferrer">seoulopen.or.kr</a></td></tr>
+  </tbody>
+</table>
+
+<h2>종목별 참가비</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>참가 자격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>하프 (21.0975km)</strong></td><td>80,000원</td><td>만 18세 이상 신체 건강한 남녀</td></tr>
+    <tr><td><strong>10K</strong></td><td>60,000원</td><td>제한 없음</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">컷오프·정원·교통통제 안내는 공식 사이트 확인</p>
+    <p>현재(5월 4일 기준) 컷오프 시간, 종목별 정원, 교통통제 상세 안내가 공식 사이트에 별도 명시돼 있지 않습니다. 정확한 사항은 대회 직전 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">공식 홈페이지</a> 또는 070-7766-1238로 문의하세요.</p>
+  </div>
+</div>
+
+<h2>광화문 도심 코스 — 가을 도시 러닝의 매력</h2>
+
+<p>국내 가을 마라톤 중 <strong>광화문광장에서 출발하는 대회</strong>는 흔하지 않습니다. 서울 오픈 마라톤의 가장 큰 매력은 도심 한복판 출발 — 경복궁·청계천·시청을 배경으로 달리는 경험입니다.</p>
+
+<ul>
+  <li><strong>출발지:</strong> 광화문광장 앞 대로변 (지하철 5호선 광화문역 도보 1분)</li>
+  <li><strong>도착지:</strong> 무교로 (도착 후 시청·청계천 산책 가능)</li>
+  <li><strong>지형:</strong> 서울 도심 평탄 코스 (구체적 언덕 정보 미공개)</li>
+  <li><strong>페이스메이커:</strong> 광화문 페이싱팀 운영 예정 — 초보 러너에게 유리</li>
+</ul>
+
+<h2>이 대회는 누구에게 잘 맞나</h2>
+
+<h3>✅ 추천</h3>
+
+<ul>
+  <li><strong>가을 첫 하프 도전자</strong> — 평탄 도심 코스 + 페이스메이커 운영으로 부담 적음</li>
+  <li><strong>춘천마라톤 광클 실패한 러너</strong> — 같은 10월 초 도심 대회로 가을 시즌 워밍업/대안 가능</li>
+  <li><strong>서울 거주 러너</strong> — 셔틀·숙박 부담 없이 당일 참가 가능</li>
+  <li><strong>도심 러닝 사진을 좋아하는 러너</strong> — 광화문 출발 인증샷 매력</li>
+</ul>
+
+<h3>❌ 비추</h3>
+
+<ul>
+  <li><strong>풀코스가 목표인 러너</strong> — 풀코스 종목 없음. 풀이 목표라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
+  <li><strong>10월 5일(월) 출근 러너</strong> — 평일 대회. 휴무 조정 필수 (개천절 10/3 토요일 → 10/5 월요일은 임시공휴일 지정 여부 확인)</li>
+  <li><strong>경치 풍부한 코스를 원하는 러너</strong> — 도심 코스 특성상 의암호·강변 같은 자연 풍경은 없음</li>
+</ul>
+
+<h2>10월 가을 도심 마라톤 신발 선택</h2>
+
+<p>10월 초 서울 평년 기온은 오전 15~20℃ 수준으로 러닝 최적기. 광화문~무교로 도심 평탄 코스라 신발 선택 폭이 넓습니다.</p>
+
+<ul>
+  <li><strong>하프 PB 도전 (1:30 미만):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a></li>
+  <li><strong>하프 안전 완주 (1:30~2:30):</strong> 슈퍼트레이너·데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+  <li><strong>10K 가벼운 참가:</strong> 평소 신는 데일리화면 충분</li>
+</ul>
+
+<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>접수 전 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프/10K)</li>
+  <li>10월 5일(월) 일정 확인 — 평일 대회</li>
+  <li>seoulopen.or.kr 회원가입 및 신청서 작성</li>
+  <li>참가비 결제</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발·집결 시각, 교통통제)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
+    <p>같은 10월에 열리는 가을 메이저 대회를 함께 검토해보세요 — 동마클럽 계열 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a>. 본인 목표(완주/PB/풀/하프)에 맞춰 1~2개 선택이 정석입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 070-7766-1238 / somarathon@naver.com</p>
+
+<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
+
+<p><small>출처: 서울오픈마라톤 공식 홈페이지 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">seoulopen.or.kr</a> · 마라톤GO 대회 정보 / 작성일 2026년 5월 4일 기준 / 코스·출발 시각·교통통제는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+  {
     id: '2026-adidas-adios-pro-evo-3-korea-release',
     slug: '2026-adidas-adios-pro-evo-3-korea-release',
     title: '아디다스 아디오스 프로 에보 3 한국 래플 D-2 | 97g 서브2 신발의 정체',
