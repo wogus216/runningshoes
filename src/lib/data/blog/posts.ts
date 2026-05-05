@@ -2,6 +2,254 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-gyeongpo-gangneung-marathon',
+    slug: '2026-gyeongpo-gangneung-marathon',
+    title: '2026 경포마라톤 접수 D-13 | 10월 10일 강릉 경포해변 동해안 하프 코스',
+    description: '2026 경포마라톤 접수가 5월 18일(월) 시작됩니다. 10월 10일(토) 강릉 경포해변 출발, 하프·10km·4.7km 동해안 해안선 코스. 풀코스 없음. 2025년 9,300명 역대 최다 — 가족·입문자 친화 가을 대회 총정리.',
+    thumbnail: '/images/blog/2026-gyeongpo-gangneung-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-05',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['경포마라톤', '강릉 마라톤', '강원도 마라톤', '하프마라톤', '가을 마라톤', '동해안 마라톤', '대회 일정'],
+    event: {
+      name: '2026 경포마라톤',
+      startDate: '2026-10-10T08:30:00+09:00',
+      location: {
+        name: '경포해변 중앙광장',
+        address: '강원특별자치도 강릉시 경포로 513',
+      },
+      organizer: '강원도민일보',
+      url: 'http://www.xn--289av7rnxbd06bmrc.com/',
+      offers: [
+        { name: '하프마라톤 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+        { name: '10km', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+        { name: '4.7km 건강달리기', priceKrw: 30000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '풀코스(42.195km)도 있나요?',
+        answer: '아니요, 2026 경포마라톤은 하프(21.0975km)·10km·4.7km 건강달리기 세 종목만 운영합니다. 2022년 이후 4년 연속 풀코스가 없으며 하프가 최장 거리입니다. 가을 풀코스가 목표라면 같은 10월 25일(예상) 춘천마라톤이 정답입니다.',
+      },
+      {
+        question: '참가비는 얼마인가요?',
+        answer: '2026년 공식 참가비는 5월 18일 접수 오픈 시 발표됩니다. 2025년 기준 하프·10km 40,000원, 5km(현 4.7km) 30,000원이었으며 2026년에는 인상 가능성이 있습니다. 정확한 금액은 공식 홈페이지(경포마라톤.com)에서 접수 시작 후 확인하세요.',
+      },
+      {
+        question: '서울에서 강릉까지 KTX로 갈 수 있나요?',
+        answer: 'KTX 강릉선으로 서울역·청량리역에서 강릉역까지 약 2시간 소요됩니다. 강릉역에서 경포해변 중앙광장까지는 약 6km, 시내버스 25분 또는 택시 10분 거리입니다. 2025년에는 강릉종합운동장~경포 셔틀버스도 운영됐으며 2026년 운영 여부는 추후 공지 예정입니다.',
+      },
+      {
+        question: '컷오프 시간은 어떻게 되나요?',
+        answer: '2025년 기준 하프 2시간 30분, 10km 2시간이었습니다. 2026년 정식 공지는 대회 전 공식 홈페이지에서 확인하세요. 입문자가 부담 없이 도전할 수 있는 넉넉한 컷오프입니다.',
+      },
+      {
+        question: '발볼 넓은 한국 러너에게 추천할 신발이 있나요?',
+        answer: '경포마라톤 코스는 동해안 해안 도로로 거의 평탄합니다. 하프 PB 도전이라면 카본 레이싱화, 안전 완주는 데일리 트레이너가 적합하며 발볼이 넓다면 와이드 옵션이 있는 모델이 유리합니다. 본인 발 특성에 맞는 추천은 1분 러닝화 추천 페이지를 참고하세요.',
+      },
+      {
+        question: '주차 가능한가요?',
+        answer: '대회 당일 경포해변 중앙광장~강원도립대 후문(영진) 구간이 약 2시간 30분 통제됩니다(2025년 기준 8:20~11:00). 자가용은 권장하지 않으며 KTX·셔틀버스 이용이 안전합니다. 전날 강릉 숙박이 가장 편한 옵션입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 10일(토) 강릉 경포해변 중앙광장 출발, 하프·10km·4.7km 동해안 해안선 코스 (풀코스 없음)</li>
+    <li>접수 5월 18일(월) 시작 → 6월 23일(화) 마감, 공식 홈페이지 경포마라톤.com 직접 접수</li>
+    <li>2025년 9,300명 역대 최다 참가 — 가족·입문자 친화 축제형 대회, 강릉 여행과 결합 최적</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 시작 D-13 — 5월 18일(월) 오픈</p>
+    <p>대회는 10월 10일(토), 접수는 <strong>2026년 5월 18일(월)부터 6월 23일(화)까지</strong>입니다. 2025년에는 9,300명이 참가해 역대 최다를 기록했고 정원 1만명 기준 빠르게 마감됐습니다. 강릉 가을 여행과 함께 묶을 계획이라면 KTX 좌석부터 확보해두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/10 (토)</span>
+    <span class="stat-sub">8:30 집결</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 21.0975km</span>
+    <span class="stat-value">최장 거리</span>
+    <span class="stat-sub">컷오프 2:30 (2025 기준)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10km · 4.7km</span>
+    <span class="stat-value">3종목</span>
+    <span class="stat-sub">풀코스 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 기간</span>
+    <span class="stat-value">5/18 ~ 6/23</span>
+    <span class="stat-sub">공식 홈페이지 직접 접수</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.18 (월) — D-13</span>
+    <span class="timeline-title">접수 시작</span>
+    <p class="timeline-desc">공식 홈페이지 경포마라톤.com에서 접수 오픈 (단체 25인 이상 별도 신청)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.23 (화)</span>
+    <span class="timeline-title">접수 마감</span>
+    <p class="timeline-desc">2025년 정원(1만명) 기준 조기 마감 가능. 마감일 전 결제 완료 권장</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 말 ~ 10월 초</span>
+    <span class="timeline-title">레이스팩 안내 / 통제 공지</span>
+    <p class="timeline-desc">기념품 수령 방법, 셔틀버스 운영, 교통통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.10 (토)</span>
+    <span class="timeline-title">대회 당일 — 경포해변 중앙광장 8:30 집결</span>
+    <p class="timeline-desc">교통통제 8:20~11:00 (2025년 기준), 셔틀버스 운영 시 강릉종합운동장~경포 노선</p>
+  </div>
+</div>
+
+<h2>대회 기본 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 경포마라톤 (12회차 추정)</td></tr>
+    <tr><td><strong>출발 / 도착</strong></td><td>경포해변 중앙광장 (강원특별자치도 강릉시 경포로 513) — 원점 복귀</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프마라톤 21.0975km · 10km · 4.7km 건강달리기</td></tr>
+    <tr><td><strong>주최 · 주관</strong></td><td>강원도민일보 · 강릉시육상연맹</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> (공식 홈페이지 직접 접수)</td></tr>
+    <tr><td><strong>문의</strong></td><td>033-651-0112 / kkang7705@naver.com</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">참가비·정원·기념품은 5월 18일 접수 오픈 시 확정</p>
+    <p>2026년 공식 참가비와 종목별 정원은 5월 18일 접수 시작과 함께 발표될 예정입니다. <strong>2025년 기준 참가비는 하프·10km 40,000원, 5km 30,000원</strong>이었고 2024년 대비 인상이 있었던 만큼 2026년에도 변동 가능성이 있습니다. 2025년 시상품은 갤럭시 버즈3(1~5위)·아머핏 종아리 기어(6~10위)였고 기념품은 별도 공지로 안내됐습니다.</p>
+  </div>
+</div>
+
+<h2>동해안 해안선 코스 — 솔향·바다향·커피향</h2>
+
+<p>경포마라톤의 가장 큰 매력은 <strong>강릉 동해안을 따라 달리는 해안선 코스</strong>입니다. 도시 마라톤과 달리 신호 대기·교차로 정차가 적고, 바닷바람과 솔숲을 동시에 만나는 풍경이 한국 가을 대회 중에서도 손꼽히는 매력으로 통합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>코스 (2025년 기준)</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프</strong></td>
+      <td>경포해변 중앙광장 → 경포해안로 → 경포인공폭포 → 연곡해변 → 영진해변 반환 → 원점</td>
+      <td>거의 평탄, 해발 차 미미. 사천·연곡·영진 해변 풍경 연속</td>
+    </tr>
+    <tr>
+      <td><strong>10km</strong></td>
+      <td>경포해변 중앙광장 → 사천 하평교 반환 → 원점</td>
+      <td>하프 코스 축약 버전. 해안 풍경 그대로</td>
+    </tr>
+    <tr>
+      <td><strong>4.7km</strong></td>
+      <td>경포해변 → 경포인공폭포 → 사근진 → 순포습지 → 원점</td>
+      <td>건강달리기. 가족·입문자용. 칩 타이밍 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>코스 전체가 평탄하고 풍경이 좋아 <strong>첫 하프 도전</strong>이나 <strong>가족 동반 러닝 여행</strong>에 잘 맞습니다. 정확한 2026년 코스는 대회 전 공식 홈페이지에서 재확인하세요.</p>
+
+<h2>이 대회는 누구에게 잘 맞나</h2>
+
+<div class="pros-cons">
+  <div class="pros">
+    <div class="pros-title">✓ 이런 러너에게 추천</div>
+    <ul>
+      <li><strong>첫 하프 도전자</strong> — 평탄 해안 코스 + 컷오프 2:30(넉넉)으로 부담 적음</li>
+      <li><strong>가족·커플 러닝 여행</strong> — 4.7km 건강달리기로 함께 참가 가능</li>
+      <li><strong>춘천 광클 실패한 가을 러너</strong> — 같은 10월 동해안 대안 (10/10 토요일)</li>
+      <li><strong>강릉 여행을 좋아하는 러너</strong> — 경포호·안목커피거리·초당순두부와 결합 최적</li>
+      <li><strong>축제형 대회 분위기를 원하는 러너</strong> — 2025년 9,300명 + 관람객 1.2만명 운집</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <div class="cons-title">✕ 이런 러너에겐 비추</div>
+    <ul>
+      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
+      <li><strong>토요일 출근 러너</strong> — 토요일 대회, 일정 조정 필수</li>
+      <li><strong>당일치기 수도권 러너</strong> — KTX 왕복 4시간 + 대회 시간 부담. 1박 2일 권장</li>
+      <li><strong>도심 러닝 분위기 선호</strong> — 광화문·여의도 같은 도시 풍경 없음 (자연 코스 위주)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>강릉 여행과 묶는 1박 2일 모델</h2>
+
+<p>경포마라톤이 토요일 오전에 끝나는 점을 활용하면 가을 강릉 여행과 자연스럽게 이어집니다.</p>
+
+<ul>
+  <li><strong>금요일 오후:</strong> KTX 강릉선 청량리역 → 강릉역(약 2시간), 경포 인근 숙소 체크인</li>
+  <li><strong>금요일 저녁:</strong> 초당순두부·강릉 회센터에서 가벼운 식사 (탄수화물 위주)</li>
+  <li><strong>토요일 오전:</strong> 8:30 경포해변 중앙광장 집결 → 11시 전후 완주</li>
+  <li><strong>토요일 오후:</strong> 안목커피거리·경포호 산책·오죽헌 (회복 산책 겸 관광)</li>
+  <li><strong>일요일:</strong> 정동진·주문진 또는 강릉 카페 투어 후 KTX 복귀</li>
+</ul>
+
+<h2>가을 강릉 마라톤 신발 선택</h2>
+
+<p>10월 강릉 평년 기온은 오전 10~16℃ 수준. 해안 도로 평탄 코스라 신발 선택 폭이 넓습니다.</p>
+
+<ul>
+  <li><strong>하프 PB 도전 (1:30~2:00):</strong> 카본 플레이트 레이싱화 또는 슈퍼트레이너. <a href="/best/racing">레이싱화 추천</a></li>
+  <li><strong>하프 안전 완주 (2:00~2:30):</strong> 쿠셔닝 좋은 데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+  <li><strong>10km · 4.7km 가족 참가:</strong> 평소 신는 데일리화면 충분</li>
+  <li><strong>발볼 넓은 한국 러너:</strong> 와이드 옵션이 있는 모델 우선. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인 러닝화 추천</a> 참고</li>
+</ul>
+
+<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>접수 전 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프 / 10km / 4.7km 건강달리기)</li>
+  <li>5월 18일(월) 접수 시작 알람 — 정원 1만명 기준 조기 마감 가능</li>
+  <li>경포마라톤.com 회원가입 사전 준비 (공식 홈페이지 직접 접수)</li>
+  <li>KTX 좌석 선예약 (10월 9~10일 강릉선 빠르게 매진)</li>
+  <li>강릉 숙소 예약 (경포해변·교동 일대 가을 성수기 주의)</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·교통통제·셔틀버스)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
+    <p>같은 10월 가을 메이저 대회를 함께 검토해보세요 — <a href="/blog/2026-seoul-open-marathon-registration">서울 오픈 마라톤(10/5 광화문, 5/10 마감)</a>, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상, 풀코스)</a>. 본인 목표(완주/PB/풀/하프)와 일정에 맞춰 1~2개 선택이 정석입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 033-651-0112 / kkang7705@naver.com</p>
+
+<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
+
+<p><small>출처: 경포마라톤 공식 홈페이지 <a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> · <a href="https://marathongo.co.kr/raceDetail/domestic/2026-gyeongpo-marathon" rel="noopener noreferrer">마라톤GO 2026 경포마라톤</a> · 강원도민일보 2025 대회 보도 / 작성일 2026년 5월 5일 기준 / 참가비·정원·기념품·코스·교통통제는 5월 18일 접수 오픈 후 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+  {
     id: '2026-seoul-open-marathon-registration',
     slug: '2026-seoul-open-marathon-registration',
     title: '2026 서울 오픈 마라톤 접수 D-6 | 10월 5일(월) 광화문 출발 · 5월 10일 마감',
