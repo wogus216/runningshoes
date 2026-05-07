@@ -2,6 +2,309 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-andong-marathon',
+    slug: '2026-andong-marathon',
+    title: '2026 안동마라톤 접수 시작 D+1 | 10월 4일 획득고도 700m+ 국내 최상급 난코스, 작년 며칠 만에 조기 마감',
+    description: '2026 안동마라톤 접수가 5월 6일(수) 시작됐습니다. 10월 4일(일) 안동시민운동장 출발, 풀·하프·10K·5K 4종목 선착순 1만 명. 획득고도 700m+ 국내 최고 난도 코스, 2026년 신코스 도입(안동호+안포선 고개), 풀 우승자에게 해외 마라톤 참가권 — 작년 며칠 만에 마감된 핫한 가을 도전 마라톤.',
+    thumbnail: '/images/blog/2026-andong-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['안동마라톤', '안동 마라톤', '경상북도 마라톤', '난코스 마라톤', '가을 마라톤', '도전형 마라톤', '하회마을', '대회 일정'],
+    event: {
+      name: '2026 안동마라톤대회',
+      startDate: '2026-10-04T08:00:00+09:00',
+      location: {
+        name: '안동시민운동장',
+        address: '경상북도 안동시 정하동 417-1',
+      },
+      organizer: '안동시·매일신문사 (대행: ㈜파란상상)',
+      url: 'https://admarathon.kr/andong/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '하프 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '10K', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '5K', priceKrw: 30000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '안동마라톤이 정말 그렇게 어려운가요?',
+        answer: '국내 풀코스 마라톤 중 손꼽히는 난도입니다. 러너 커뮤니티에서 "획득고도 700m+"로 알려져 있고, 12km 이후부터 본격 업다운, 38km 이후 업힐 반복으로 마지막 4km가 가장 힘듭니다. 평지 마라톤(공주백제·서울)에서 sub-3:30이 가능한 러너도 안동에서는 30~40분 늦게 들어옵니다. 평지 PB 도전이 목표라면 안동은 비추천이고, "도전 자체가 목적"이라면 안동만 한 코스가 없습니다.',
+      },
+      {
+        question: '작년에 며칠 만에 마감됐다는 게 사실인가요?',
+        answer: '2025년 안동마라톤은 1만 명 정원이 접수 개시 며칠 만에 조기 마감됐습니다. 2024년 5천 명에서 2배로 늘어난 정원이 그대로 채워졌습니다. 2026년은 신코스 도입으로 관심도가 더 높아졌으니, 풀코스 도전을 마음먹었다면 5월 중에는 결제 완료를 권장합니다.',
+      },
+      {
+        question: '서울에서 안동까지 어떻게 가나요?',
+        answer: 'KTX-이음으로 청량리역·서울역에서 안동역까지 약 2시간~2시간 40분(하행 1일 4회 운행)이 가장 빠릅니다. 안동역에서 안동시민운동장까지는 차량 10분 내외(시내버스 순환2번)입니다. 대회 당일 새벽 첫차로 당일치기도 가능하지만, 7시 집결·8시 출발 시간을 고려하면 전날 안동 시내 숙박이 안전합니다. 동서울터미널 → 안동버스터미널은 약 3시간 소요되며 KTX보다 저렴합니다.',
+      },
+      {
+        question: '풀코스 우승자에게 해외 참가권을 준다는 게 사실인가요?',
+        answer: '2025년 대회 기준 풀·하프 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권 특전이 제공됐습니다. 2026년에도 유사한 특전이 예상되며 정확한 내용은 admarathon.kr/andong/ 공식 공지를 확인하세요. 일반 러너에게도 안동 탈춤페스티벌(10월 초 동시 개최) 연계 혜택과 안동찜닭·간고등어 등 지역 음식 부스가 매력입니다.',
+      },
+      {
+        question: '난코스인 안동에 어떤 신발이 좋은가요?',
+        answer: '획득고도 700m+ 구릉형 도로 코스라 평지용 카본 레이싱화는 부적합합니다. 가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. 추천: ① 풀코스 도전 → 안정성 + 쿠션의 "슈퍼 트레이너" (ASICS 카야노 32, 브룩스 글리세린 22). ② 하프·10K → 데일리 트레이너 (페가수스 42, 1080 v15, GT-2000 14). ③ 5K → 경량 슈퍼 트레이너 (페가수스 플러스). 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 4일(일) 안동시민운동장 출발 — 풀·하프·10K·5K 4종목, 선착순 <strong>1만 명</strong></li>
+    <li>접수 <strong>5월 6일(수) 시작</strong>(어제 오픈) — 작년 며칠 만에 마감됐으니 풀코스 도전이라면 5월 안에 결제 권장</li>
+    <li>국내 최상급 난코스 — <strong>획득고도 700m+</strong>, 12km 이후 업다운 + 38km 이후 업힐 반복. 평지 PB가 아닌 "도전형 풀코스"의 정답</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 시작 D+1 — 작년 며칠 만에 조기 마감</p>
+    <p>2025년 안동마라톤은 정원 1만 명이 접수 개시 며칠 만에 채워져 조기 마감됐습니다. 2024년 5천 명 → 2025년 1만 명으로 정원이 2배 증가했음에도 입장권이 빠르게 동났고, 2026년은 신코스 도입(안동호 + 안포선 고개) 발표로 관심도가 더 높아졌습니다. 풀코스 도전을 마음먹었다면 5월 안에 결제를 마쳐두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/4 (일)</span>
+    <span class="stat-sub">8:00 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 시작</span>
+    <span class="stat-value">5/6 (수)~</span>
+    <span class="stat-sub">선착순 1만 명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">획득고도</span>
+    <span class="stat-value">700m+</span>
+    <span class="stat-sub">국내 최상급</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀코스</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">제한시간 5시간</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.06 (수) — D+1</span>
+    <span class="timeline-title">접수 시작 — 어제 오픈</span>
+    <p class="timeline-desc">admarathon.kr/andong/ 에서 4종목 모두 일반 선착순 신청. 정원 1만 명</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.31 (일) (예상)</span>
+    <span class="timeline-title">접수 마감 또는 정원 도달 시</span>
+    <p class="timeline-desc">선착순 1만 명 채워지면 조기 마감 — 작년 며칠 만에 마감됐던 전례</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품, 셔틀버스 운영 여부, 코스 통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.04 (일)</span>
+    <span class="timeline-title">대회 당일 — 안동시민운동장 7시 집결</span>
+    <p class="timeline-desc">10월 초 안동 평균 18-22도, 일교차 큼. 강수 가능성 (작년 강우)</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비</th><th>제한시간 (2025 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>5시간</td></tr>
+    <tr><td>하프</td><td>21.0975km</td><td>50,000원</td><td>2시간 30분</td></tr>
+    <tr><td>10K</td><td>10km</td><td>50,000원</td><td>1시간 30분</td></tr>
+    <tr><td>5K</td><td>5km</td><td>30,000원</td><td>1시간</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">풀·하프 남녀 1위 — 해외 마라톤 참가권 특전</p>
+    <p>2025년 대회 기준 풀코스·하프코스 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권이 제공됐습니다. 2026년 특전 내역은 5월 중후반 admarathon.kr 공지에서 확인 가능합니다. 일반 러너에게도 <strong>안동 탈춤페스티벌(10월 초 동시 개최)</strong>과 안동찜닭·간고등어 부스가 매력입니다.</p>
+  </div>
+</div>
+
+<h2>왜 안동이 "지옥 코스"라 불리는가</h2>
+
+<p>안동마라톤은 러너 커뮤니티에서 <strong>국내 풀코스 중 가장 어려운 코스 중 하나</strong>로 통합니다. 평지 마라톤(공주백제·서울)과는 완전히 다른 카테고리입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특성</th><th>실전 대응</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>0-12km</strong></td>
+      <td>안동시민운동장 출발 → 용정교 → 시내 통과, 평지 위주</td>
+      <td>페이스 욕심 금지, 본 게임은 12km 이후</td>
+    </tr>
+    <tr>
+      <td><strong>12-25km</strong></td>
+      <td>문화관광단지·안동댐 인근, 본격 업다운 시작</td>
+      <td>오르막 짧게·내리막 가볍게, 심박 80% 이하 유지</td>
+    </tr>
+    <tr>
+      <td><strong>25-38km</strong></td>
+      <td>낙동강변 강변로 + 안동호 일부 구간</td>
+      <td>강풍 주의, 보급 포인트 사이 거리 확인</td>
+    </tr>
+    <tr>
+      <td><strong>38-42km</strong></td>
+      <td>업힐 반복 — 마지막 4km가 가장 힘든 구간</td>
+      <td>젤·소금 알약 비축, 워킹 브레이크 허용</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">평지 PB 기록을 그대로 적용하지 마세요</p>
+    <p>평지 마라톤(공주백제·서울)에서 Sub-3:30이 가능한 러너도 안동에서는 보통 30~40분 늦게 들어옵니다. 페이싱 전략은 <strong>"평지 PB + 30분"</strong>을 기준으로 잡고, 첫 12km는 의도적으로 더 천천히 가세요. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a>의 "구릉형 코스" 섹션 참고.</p>
+  </div>
+</div>
+
+<h2>2026년 신코스 — 안동호 + 안포선 고개</h2>
+
+<p>2026년 안동마라톤은 <strong>도심 교통통제 부담을 줄이고 자연친화 환경을 강화</strong>한 신코스를 도입했습니다 (2026-01-20 매일신문 보도). 핵심 변경:</p>
+
+<ul>
+  <li><strong>안동호 수변 코스 확장</strong> — 기존 "안동호 악코스" 구간 유지 + 추가 강변 통과</li>
+  <li><strong>안포선 고개 구간 신설</strong> — 마지막 4km 업힐의 마지막 보스 구간</li>
+  <li><strong>도심 통제 최소화</strong> — 시내 비통제 시간 확보로 시민 불편 감소</li>
+  <li><strong>상세 코스도 미공개</strong> — 5월 중후반 공식 발표 예상</li>
+</ul>
+
+<p>신코스로 작년보다 더 어려워질 가능성이 있으니, 풀코스 도전자는 <strong>구릉형 LSD(장거리 지속주) 훈련</strong>을 6-8월에 누적해두세요.</p>
+
+<h2>10월 안동 — 어떤 신발을 신을까</h2>
+
+<p>구릉형 도로 코스 + 10월 초 18-22도 환경에서는 <strong>평지 카본 레이싱화가 부적합</strong>합니다. 종목별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀코스 도전 (난코스 완주)</strong></td>
+      <td>안정성 + 쿠션 슈퍼 트레이너</td>
+      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a>, <a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프 (안전 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (적정 페이스)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>5K (가벼운 도전)</strong></td>
+      <td>경량 데일리</td>
+      <td><a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">카본 플레이트 레이싱화 비추천</p>
+    <p>가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. <strong>안동에서 베이퍼플라이/아디오스 프로를 신었다가 경련으로 DNF</strong>하는 사례가 매년 보고됩니다. 도전형 코스에는 안정성·쿠션 모두 갖춘 슈퍼 트레이너가 정답입니다.</p>
+  </div>
+</div>
+
+<h2>교통·숙박</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX-이음 (권장)</strong></td>
+      <td>청량리역·서울역 → 안동역 (1일 4회) → 시민운동장 차로 10분</td>
+      <td>약 2시간 ~ 2시간 40분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>동서울터미널 → 안동버스터미널</td>
+      <td>약 3시간</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>중앙고속도로 → 서안동IC</td>
+      <td>약 3시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>대회 당일 7시 집결 → 8시 출발이라 새벽 KTX 첫차 도착으로는 빡빡합니다. <strong>전날 안동 시내 숙박</strong>이 안전합니다. 안동 구도심 한옥 게스트하우스나 안동찜닭 골목 인근 호텔이 인기인데, 10월 첫째 주는 <strong>탈춤페스티벌과 겹쳐</strong> 숙박 마감이 매우 빠르니 접수 확정 직후 예약하세요.</p>
+
+<h2>안동의 매력 — 마라톤 + 1박 2일 관광</h2>
+
+<p>안동은 한국 정신문화의 수도로 불리며, 대회 후 1박 2일로 머물기 좋은 도시입니다.</p>
+
+<ul>
+  <li><strong>하회마을 (유네스코 세계문화유산)</strong> — 풍산 류씨 종택, 600년 전통 마을</li>
+  <li><strong>도산서원</strong> — 퇴계 이황의 학문 공간, 사적 170호</li>
+  <li><strong>월영교</strong> — 한국 최장 목책교, 야경이 압권</li>
+  <li><strong>안동찜닭</strong> — 구시장 골목의 본고장, 대회 후 회복 식사</li>
+  <li><strong>간고등어</strong> — 안동 전통 소금 절임, 선물용 인기</li>
+  <li><strong>안동 탈춤페스티벌</strong> — 10월 초 동시 개최, 하회별신굿탈놀이</li>
+</ul>
+
+<h2>2025년 대회로 본 분위기</h2>
+
+<p>2025년 안동마라톤은 <strong>참가자 1만 명, 풀코스 우승 이건희(2:44:37) / 김은아(3:08:03)</strong>를 기록하며 역대 최고 흥행을 기록했습니다. 비가 내리는 악조건에서도 시민 응원이 성황을 이뤘고, "지옥 코스인데 또 오고 싶다"는 후기가 다수였습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 비교 (2025 안동 vs 평지 대회)</p>
+    <p>안동 풀코스 우승자 2:44:37은 평지 대회(서울국제·공주백제) 동급 러너의 기록 대비 약 5-7분 늦은 수치입니다. 5천 명에서 1만 명으로 정원 2배 확장에도 며칠 만에 마감된 인기는 "고난도 코스 도전" 자체를 즐기는 마니아층 두께를 보여줍니다.</p>
+  </div>
+</div>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 안에 결제 끝내기 위한 준비</h3>
+  <ul>
+    <li>✅ <strong>참가 종목 결정</strong> — 풀(60K) / 하프(50K) / 10K(50K) / 5K(30K)</li>
+    <li>✅ <strong>본인 기록 확인</strong> — 풀코스 5시간 컷오프, 하프 2:30, 10K 1:30</li>
+    <li>✅ <strong>구릉형 LSD 훈련 일정</strong> — 6~8월에 30km LSD 4회 이상 누적</li>
+    <li>✅ <strong>전날 숙박 예약</strong> — 탈춤페스티벌 겹침, 결제 직후 즉시</li>
+    <li>✅ <strong>러닝화 결정</strong> — 안정성 + 쿠션 슈퍼 트레이너 (카본 비추천), <a href="/recommend">1분 추천</a> 활용</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">admarathon.kr/andong</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">안동마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DX-wut6j2up/" target="_blank" rel="noopener">@runninglife_korea 5월 캘린더</a>, 매일신문(2025·2026 보도), runningwikii(코스·제한시간), 러너 커뮤니티(획득고도 700m+ 추정). 2026년 공식 접수 마감일·신코스 상세도는 admarathon.kr 공지로 최종 확인하세요.
+</p>
+`,
+  },
+  {
     id: '2026-gongju-baekje-marathon',
     slug: '2026-gongju-baekje-marathon',
     title: '2026 공주백제마라톤 우선접수 D-4 | 9월 20일 금강변 평지 풀코스, 동마클럽 멤버십 5/11 오픈',
