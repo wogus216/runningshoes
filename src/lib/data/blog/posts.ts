@@ -2,6 +2,426 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-best-trail-running-shoes',
+    slug: '2026-best-trail-running-shoes',
+    title: '2026 트레일 러닝화 TOP 7 | 북한산·관악산 한국 산악 기준 카테고리별 베스트',
+    description: '2026년 트레일 러닝화 7개 카테고리 베스트를 RunRepeat 랩 데이터 + 한국 공식 가격 + 북한산·관악산·도봉산 적용성으로 정리했습니다. 종합 베스트(테렉스 아그라빅 4)·충격 흡수(메타후지 트레일)·반발력(테크톤 X 3)·레이스(울트라플라이)·테크니컬(어질리티 피크 6)·속도(스피드 울트라)·가성비(젤 벤처 10) — 발볼 넓은 한국 러너 친화도까지 함께.',
+    thumbnail: '/images/blog/2026-best-trail-running-shoes.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-08',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['트레일 러닝화', '트레일 러닝', '2026 트레일화', '북한산 러닝', '관악산 러닝', '도봉산 러닝', '굿러너 스카이레이스', '산악 러닝화', '한국 트레일'],
+    faqs: [
+      {
+        question: '로드 러닝화로 트레일 뛰면 안 되나요?',
+        answer: '대모산·청계산·둘레길 같은 완만한 임도 5km는 로드 신발로도 가능하지만, 북한산·관악산·도봉산처럼 화강암 슬랩과 급경사 암릉이 있는 정식 트레일 코스에서는 위험합니다. 로드 신발은 그립 패턴이 부드러운 도로용이라 젖은 화강암에서 미끄러지고, 록 플레이트가 없어 돌·바위 밟을 때 발바닥 보호가 안 됩니다. 정식 트레일 입문이면 ASICS 젤 벤처 10(89,000원)부터 시작하는 게 안전합니다.',
+      },
+      {
+        question: '발볼 넓은 한국 러너에게 맞는 트레일화는 뭔가요?',
+        answer: '발볼 친화도 기준으로 추천 순서: ① Merrell 어질리티 피크 6 (한국 공식 와이드 SKU 출시, 199,000원) → ② Nike 울트라플라이 (실측 토박스 76.7mm, 와이드 옵션 불필요) → ③ ASICS 젤 벤처 10 (와이드 버전 한국 출시). 반대로 HOKA 테크톤 X 3, 아디다스 스피드 울트라, ASICS 메타후지 트레일은 토박스가 좁아 발볼 넓은 한국 러너에게는 부적합합니다. 와이드 옵션이 없는 모델은 무조건 오프라인 피팅 후 구매하세요.',
+      },
+      {
+        question: '북한산·도봉산 처음인데 어떤 신발이 정답인가요?',
+        answer: '북한산·도봉산은 화강암 슬랩과 바위 구간이 핵심이라 그립이 가장 중요합니다. 정답: Merrell 어질리티 피크 6 (Vibram Megagrip + Traction Lug, 와이드 옵션, 199,000원). 그 다음 적합 옵션은 Adidas 테렉스 아그라빅 4 (Continental 아웃솔). 반대로 Nike 울트라플라이(러그 3mm)와 Adidas 스피드 울트라(러그 2.5mm)는 슬랩에서 슬립 위험이 있어 비추천입니다.',
+      },
+      {
+        question: '트레일 레이스 처음인데 어떤 신발이 좋나요?',
+        answer: '굿러너 스카이레이스 시리즈(동해·계룡 등) 같은 임도+싱글트랙 혼합 코스 50K 이하라면 ① 카본 플레이트가 필요한 PB 도전 → HOKA 테크톤 X 3 (PEBA 100% + Vibram, 339,000원, 발볼 표준 이하 한정). ② 발볼 넓고 임도 비중 큰 코스 → Nike 울트라플라이 (ZoomX + 카본, 299,000원). 50K 이상 울트라는 충격 흡수 우선해 ASICS 메타후지 트레일(279,000원, 힐 스택 45mm)도 좋은 선택입니다.',
+      },
+      {
+        question: '트레일 입문에 얼마짜리부터 시작하면 되나요?',
+        answer: '입문 코스(대모산·청계산·둘레길) → 89,000원 ASICS 젤 벤처 10이 가성비 정답입니다. 정식 트레일(북한산·관악산) → 199,000원 머렐 어질리티 피크 6. 본격 레이스 → 299,000~339,000원대 카본 트레일화. 처음부터 카본 플레이트 트레일화를 살 필요는 없으며, 입문 단계에서는 그립과 발 보호만 갖춰도 충분합니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 트레일 러닝화 <strong>7개 카테고리 베스트</strong> — 종합·충격흡수·반발력·레이스·테크니컬·속도·가성비, RunRepeat 랩 + 한국 공식 가격 기준 정리</li>
+    <li><strong>발볼 친화도 양극화</strong> — Merrell 어질리티 피크 6(와이드 정식)·Nike 울트라플라이(76.7mm)·젤 벤처 10(와이드 출시)는 발볼 넓은 한국 러너 적합 / HOKA 테크톤 X 3·아디다스 스피드 울트라·메타후지 트레일은 좁음 주의</li>
+    <li><strong>한국 산악 정답</strong> — 북한산·도봉산 화강암 슬랩에는 Vibram Megagrip 우선(어질리티 피크 6), 굿러너 스카이레이스 임도 코스에는 카본 트레일화(테크톤 X 3·울트라플라이) 분리 운용</li>
+  </ul>
+</div>
+
+<figure class="my-8">
+  <img
+    src="/images/blog/2026-best-trail-running-shoes.webp"
+    alt="2026 트레일 러닝화 TOP 7 — 북한산·관악산 한국 산악 기준 카테고리별 베스트"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">2026 트레일 러닝화 7개 카테고리 베스트 — 한국 산악 적용성 기준</figcaption>
+</figure>
+
+<h2>한국 트레일 러닝의 지형 — 신발 선택의 출발점</h2>
+
+<p>한국 트레일 러닝은 외국과 결정적으로 다릅니다. 미국·유럽 트레일이 흙길과 임도 위주라면, 수도권 3대 산(<strong>북한산·관악산·도봉산</strong>)은 화강암 슬랩과 급경사 암릉이 핵심입니다. 어떤 신발을 신느냐에 따라 즐거운 산행과 미끄러져 다치는 경험이 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>코스 유형</th><th>대표 지역</th><th>핵심 요구사항</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>입문 임도·둘레길</strong></td>
+      <td>대모산·청계산·관악산 둘레길</td>
+      <td>기본 그립 + 충격 흡수 (가성비 OK)</td>
+    </tr>
+    <tr>
+      <td><strong>정식 트레일</strong></td>
+      <td>북한산·도봉산·관악산 정상 코스</td>
+      <td>Vibram Megagrip / Continental 같은 점착 고무 필수</td>
+    </tr>
+    <tr>
+      <td><strong>스카이레이스</strong></td>
+      <td>굿러너 스카이레이스 시리즈 (동해·계룡 등)</td>
+      <td>임도+싱글트랙 복합, 카본 플레이트 효율</td>
+    </tr>
+    <tr>
+      <td><strong>울트라 트레일</strong></td>
+      <td>50K+ 산악 레이스</td>
+      <td>충격 흡수 + 게이터 호환 + 록 플레이트</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>2026 카테고리별 베스트 7</h2>
+
+<h3>🏆 1. 종합 베스트 — Adidas Terrex Agravic 4</h3>
+
+<table>
+  <thead>
+    <tr><th colspan="2">스펙 요약</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 가격</td><td>한국 공식가 미확인 (SS26 출시, 미국 $140 기준 약 19~22만원 예상)</td></tr>
+    <tr><td>무게 / 드롭</td><td>260g / 8mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>36mm / 28mm</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 4-5mm)</td></tr>
+    <tr><td>미드솔</td><td>Lightstrike 3 (단일 밀도, 소프트 튜닝)</td></tr>
+    <tr><td>RunRepeat 점수</td><td>81/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: Continental 아웃솔이 젖은 노면 그립에서 신뢰성 높음. 260g 경량 + 36mm 힐 스택의 가성비 조합으로 데일리 산악 트레이닝에 무난한 올라운더.</p>
+<p><strong>약점</strong>: 에너지 리턴이 평균 이하라 추진력 부족. 어퍼 내구성도 낮음(RunRepeat 토박스 내구성 1/5).</p>
+<p><strong>한국 러너 노트</strong>: Continental 아웃솔이 북한산 화강암 슬랩·도봉산 암릉에서 안정적이지만, 와이드 옵션 미확인이라 발볼 넓은 러너는 오프라인 피팅 권장. 한국 공식 입점 시점은 2026년 봄~여름 예상.</p>
+
+<h3>🛡 2. 충격 흡수 — ASICS Metafuji Trail</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>279,000원 (asics.co.kr / 굿러너컴퍼니)</td></tr>
+    <tr><td>무게 / 드롭</td><td>258g / 10mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>45mm / 34mm</td></tr>
+    <tr><td>아웃솔</td><td>ASICSGRIP (삼각형·화살형 패턴)</td></tr>
+    <tr><td>미드솔</td><td>FF Blast+ (베이스) + FF Turbo (탑) 이중 폼</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 힐 스택 <strong>45mm</strong>로 트레일화 최상위권 충격 흡수. ASICSGRIP 아웃솔 점착력 최상. 258g 경량으로 이중 폼 빌드 대비 놀라운 무게.</p>
+<p><strong>약점</strong>: FF Blast+ 베이스 레이어 때문에 에너지 리턴 제한적, 추진력 낮음. 토박스 좁고 어퍼 내구성 낮음(1/5).</p>
+<p><strong>한국 러너 노트</strong>: 45mm 힐 스택이 북한산·관악산 장거리 하산 무릎 충격을 효과적으로 흡수하지만, 토박스가 좁아 <strong>발볼 넓은 한국 러너 다수에게 불리</strong>. 공식 와이드 옵션 없으므로 오프라인 착화 필수.</p>
+
+<h3>⚡ 3. 반발력 — HOKA Tecton X 3</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>339,000원 (KREAM 발매가 / 굿러너컴퍼니)</td></tr>
+    <tr><td>무게 / 드롭</td><td>275g / 7mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>38mm / 31mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip</td></tr>
+    <tr><td>미드솔</td><td>PEBA 100% (프리미엄 슈퍼폼) + 카본 플레이트</td></tr>
+    <tr><td>RunRepeat 점수</td><td>84/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 순수 PEBA 폼 — 트레일 슈퍼슈즈 중 최상위 에너지 리턴. Vibram Megagrip 내구성·그립 모두 우수. 카본 플레이트 + MATRYX 어퍼로 장거리 레이스 효율성 최상.</p>
+<p><strong>약점</strong>: 339,000원 트레일화 국내 최고가권. 토박스 협소 — RunRepeat가 "발볼 넓은 러너에 절대 부적합"으로 명시.</p>
+<p><strong>한국 러너 노트</strong>: PEBA 폼 반발력은 굿러너 스카이레이스 업힐 구간에서 확실한 이점이나, <strong>좁은 토박스는 발볼 넓은 한국 러너에게 치명적</strong>. 발볼 표준 이하 러너에게만 권장.</p>
+
+<h3>🏁 4. 레이스 — Nike Ultrafly</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>299,000원 (Nike Korea / KREAM)</td></tr>
+    <tr><td>무게 / 드롭</td><td>299g / 12mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>37mm / 25mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip Litebase (풀 길이, 러그 3mm)</td></tr>
+    <tr><td>미드솔</td><td>ZoomX (Pebax 계열) + 카본 포크 플레이트</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+    <tr><td>토박스</td><td>76.7mm — 넓은 핏</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: ZoomX + 카본 포크 플레이트 — 완만한 트레일·임도·자갈길 에너지 리턴 우수. <strong>토박스 76.7mm 와이드 핏</strong>으로 발볼 넓은 한국 러너에게 희귀하게 유리한 트레일 슈퍼슈즈. Vibram Megagrip 그립력으로 그루밍된 트레일에서 신뢰성.</p>
+<p><strong>약점</strong>: Vaporweave 어퍼 내구성 최하(1/5) — 암릉·가시덤불에 취약. 3mm 얕은 러그로 진흙·가파른 기술 지형에서 한계.</p>
+<p><strong>한국 러너 노트</strong>: 발볼 넓은 한국 러너에게 추천 가능한 카본 트레일화. 단, <strong>3mm 얕은 러그로 화강암 슬랩·가파른 하산 많은 북한산·도봉산에는 부적합</strong>. 관악산 임도·완만한 싱글트랙·로드-투-트레일 혼합 대회에 적합.</p>
+
+<h3>🪨 5. 테크니컬 지형 — Merrell Agility Peak 6</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>199,000원 (merrellkorea.co.kr, 와이드 SKU 동일가)</td></tr>
+    <tr><td>무게 / 드롭</td><td>278g / 6mm (실측 11.5mm)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>36mm / 25mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip + Traction Lug Technology</td></tr>
+    <tr><td>미드솔</td><td>FloatPro EVA</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+    <tr><td>와이드 옵션</td><td>한국 공식 와이드 SKU 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: Vibram Megagrip + Traction Lug — 테크니컬 지형 그립 최상위. <strong>와이드 버전 한국 공식 출시</strong>로 발볼 넓은 러너에게 호재. 278g 경량 + 안정적 아치 지지로 힐 스트라이커 적합.</p>
+<p><strong>약점</strong>: FloatPro EVA 폼 — 에너지 리턴·충격 흡수 모두 평균 이하. 실측 드롭 11.5mm로 브랜드 주장(6mm) 대비 괴리 큼.</p>
+<p><strong>한국 러너 노트</strong>: <strong>북한산 인수봉 접근로·도봉산 바위 구간 그립은 국내 트레일화 중 최상위권</strong>. 와이드 옵션이 정식 출시된 유일한 Vibram 트레일화로 발볼 넓은 한국 러너에게 사실상 유일한 정답.</p>
+
+<h3>💨 6. 속도형 — Adidas Terrex Agravic Speed Ultra</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>279,000원 (1세대 기준, 2세대 미확인)</td></tr>
+    <tr><td>무게 / 드롭</td><td>259g / 0mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>31mm / 30mm</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (풀 길이, 러그 2.5mm)</td></tr>
+    <tr><td>미드솔</td><td>Lightstrike Pro (풀 길이, 카본 없음)</td></tr>
+    <tr><td>RunRepeat 점수</td><td>89/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 전족부 에너지 리턴 70.5% — 트레일화 최상위권 추진력. 259g 초경량 + Lightstrike Pro 조합. Continental 아웃솔로 건식 그립 우수.</p>
+<p><strong>약점</strong>: 러그 2.5mm 매우 얕음 — 진흙·가파른 기술 지형에서 슬립 위험. <strong>토박스 70.5mm 협소 + 미드풋 매우 타이트</strong>로 발볼 넓은 러너 완전 배제.</p>
+<p><strong>한국 러너 노트</strong>: 0mm 드롭 + 2.5mm 러그로 북한산·관악산 테크니컬 지형에는 부적합. 반면 <strong>굿러너 스카이레이스 임도 구간·그루밍된 평탄 트레일에서는 국내 트레일화 최상위 스피드</strong>. 발볼 좁은 러너 한정 추천.</p>
+
+<h3>💰 7. 가성비 — ASICS Gel Venture 10</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td><strong>89,000원</strong> (asics.co.kr / 무신사)</td></tr>
+    <tr><td>무게 / 드롭</td><td>322g / 12mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>35mm / 23mm</td></tr>
+    <tr><td>아웃솔</td><td>세그먼트 투피스 고무 (화살형 러그 3.7mm)</td></tr>
+    <tr><td>미드솔</td><td>Amplifoam (소프트 리포뮬레이션)</td></tr>
+    <tr><td>RunRepeat 점수</td><td>84/100</td></tr>
+    <tr><td>와이드 옵션</td><td>D(스탠다드)·와이드 한국 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: <strong>89,000원 — 트레일화 국내 최저가권</strong>. 트레킹·입문용 가성비 최고. 내구성 우수. 와이드 버전 한국 출시로 발볼 넓은 입문자에게 옵션 존재.</p>
+<p><strong>약점</strong>: 322g 무거움 — 동급 대비 최중량. 저온에서 미드솔 경도 42% 상승(겨울 산행 쿠션감 저하).</p>
+<p><strong>한국 러너 노트</strong>: <strong>89,000원으로 트레일 진입 장벽을 크게 낮춘 선택지</strong>. 북한산·관악산 정식 트레일보다는 청계산·대모산·둘레길 수준 입문 코스에 적합. 트레킹화 대체로도 활용 가능.</p>
+
+<h2>한 눈에 보는 7대 비교표</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>카테고리</th><th>한국가</th><th>무게</th><th>한국 발볼</th><th>한국 산악 적합성</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adidas Terrex Agravic 4</td>
+      <td>종합 베스트</td>
+      <td>미확인</td>
+      <td>260g</td>
+      <td>표준</td>
+      <td>북한산 OK</td>
+    </tr>
+    <tr>
+      <td>ASICS Metafuji Trail</td>
+      <td>충격 흡수</td>
+      <td>279,000원</td>
+      <td>258g</td>
+      <td>좁음 ⚠️</td>
+      <td>장거리 하산 강점</td>
+    </tr>
+    <tr>
+      <td>HOKA Tecton X 3</td>
+      <td>반발력</td>
+      <td>339,000원</td>
+      <td>275g</td>
+      <td>좁음 ⚠️</td>
+      <td>스카이레이스 임도 강점</td>
+    </tr>
+    <tr>
+      <td>Nike Ultrafly</td>
+      <td>레이스</td>
+      <td>299,000원</td>
+      <td>299g</td>
+      <td>넓음 ✅</td>
+      <td>임도·완만 트레일 한정</td>
+    </tr>
+    <tr>
+      <td><strong>Merrell Agility Peak 6</strong></td>
+      <td><strong>테크니컬</strong></td>
+      <td><strong>199,000원</strong></td>
+      <td>278g</td>
+      <td><strong>와이드 정식 ✅</strong></td>
+      <td><strong>북한산·도봉산 정답</strong></td>
+    </tr>
+    <tr>
+      <td>Adidas Speed Ultra</td>
+      <td>속도형</td>
+      <td>279,000원</td>
+      <td>259g</td>
+      <td>좁음 ⚠️</td>
+      <td>스카이레이스 임도 한정</td>
+    </tr>
+    <tr>
+      <td>ASICS Gel Venture 10</td>
+      <td>가성비</td>
+      <td>89,000원</td>
+      <td>322g</td>
+      <td>와이드 ✅</td>
+      <td>둘레길·입문 OK</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>트레일 러닝화 핵심 스펙 5가지 — 알고 사면 후회 없다</h2>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">로드 러닝화에 없는 5가지 기능</p>
+    <p>일반 러닝화 가이드에서 보던 "쿠션·반발력·드롭" 외에 트레일에서만 필요한 5가지를 알아두면 구매 결정이 훨씬 명확해집니다.</p>
+  </div>
+</div>
+
+<h3>1. Lug Depth (러그 깊이, mm)</h3>
+<p>아웃솔 돌기의 깊이로 지형 파고들기 능력을 결정합니다. <strong>2-3mm는 완만한 임도·자갈길</strong>, <strong>4-5mm 이상은 진흙·급경사 기술 지형</strong>에 적합. 북한산·도봉산 암릉에서는 러그 깊이보다 <strong>고무 재질(Vibram Megagrip·Continental)</strong>이 더 중요합니다.</p>
+
+<h3>2. Rock Plate (록 플레이트)</h3>
+<p>미드솔 내부에 삽입된 딱딱한 플레이트(나일론·탄소섬유)로 돌·바위 밟을 때 발바닥을 보호합니다. 카본 플레이트와 다른 개념으로, <strong>록 플레이트는 추진력이 아닌 바닥 보호가 목적</strong>. 한국 화강암 지형에서는 록 플레이트 유무가 발바닥 피로도에 직접 영향을 줍니다.</p>
+
+<h3>3. Gusseted Tongue (구쎄드 텅)</h3>
+<p>신발 혀(텅)와 어퍼 측면이 분리되지 않고 봉제된 구조로, <strong>모래·자갈·나뭇잎 등 이물질이 신발 내부로 유입되는 것을 차단</strong>. 트레일에서 게이터(스패츠) 착용이 번거로운 러너에게 중요합니다.</p>
+
+<h3>4. Gaiter Compatibility (게이터 호환성)</h3>
+<p>발목 스패츠를 신발에 부착할 수 있는 후크·루프 구조의 유무. 장거리 울트라 트레일에서 이물질 유입 방지에 필수. <strong>HOKA Tecton X 3처럼 전용 게이터 어태치먼트를 제공하는 모델</strong>이 편의성이 높습니다.</p>
+
+<h3>5. Drainage (배수 구조)</h3>
+<p>물이 신발 내부로 들어왔을 때 빠져나가는 구멍·메시 구조. 계곡 도하나 장마철 트레일에서 중요. <strong>방수(GTX) 모델은 배수가 불리</strong>해 물이 들어오면 빠지지 않으므로, 한국 여름 트레일에서는 <strong>비방수+고배수</strong>가 실용적인 경우가 많습니다.</p>
+
+<h2>상황별 추천 — 어떤 신발을 사야 하나</h2>
+
+<table>
+  <thead>
+    <tr><th>당신의 상황</th><th>추천 모델</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>처음 트레일 경험 (대모산·청계산·둘레길)</td>
+      <td>ASICS Gel Venture 10 (89,000원)</td>
+      <td>가성비 + 와이드 옵션, 진입 장벽 최저</td>
+    </tr>
+    <tr>
+      <td>북한산·도봉산 암릉 도전</td>
+      <td>Merrell Agility Peak 6 (199,000원)</td>
+      <td>Vibram Megagrip + 와이드 정식</td>
+    </tr>
+    <tr>
+      <td>발볼 넓은 한국 러너 + 임도 위주</td>
+      <td>Nike Ultrafly (299,000원)</td>
+      <td>토박스 76.7mm + ZoomX 카본</td>
+    </tr>
+    <tr>
+      <td>굿러너 스카이레이스 PB 도전 (좁은 발폭)</td>
+      <td>HOKA Tecton X 3 (339,000원)</td>
+      <td>PEBA 100% + 카본, 임도 반발력 최상</td>
+    </tr>
+    <tr>
+      <td>50K+ 울트라 트레일</td>
+      <td>ASICS Metafuji Trail (279,000원)</td>
+      <td>45mm 힐 스택, 충격 흡수 최상</td>
+    </tr>
+    <tr>
+      <td>완만 트레일 스피드 훈련 (좁은 발폭)</td>
+      <td>Adidas Speed Ultra (279,000원)</td>
+      <td>0드롭 + 70.5% 에너지 리턴</td>
+    </tr>
+    <tr>
+      <td>한 켤레로 다 해보고 싶다</td>
+      <td>Adidas Terrex Agravic 4 (한국 입점 시)</td>
+      <td>Continental + 260g 올라운더</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 켤레로 시작하면 어떤 게 정답?</p>
+    <p>한국 러너 90%에게 정답은 <strong>Merrell Agility Peak 6 (199,000원, 와이드 옵션)</strong>입니다. 이유: ① 북한산·도봉산 암릉부터 둘레길까지 모든 한국 트레일을 커버하는 Vibram Megagrip, ② 발볼 넓은 한국 러너에게 사실상 유일한 와이드 SKU 정식 출시, ③ 199,000원으로 도전화·메인화 양쪽 포지셔닝 모두 가능. 카본 플레이트 트레일화는 본격 레이스에 들어선 다음 단계입니다.</p>
+  </div>
+</div>
+
+<h2>한국 트레일 입문 코스 가이드</h2>
+
+<table>
+  <thead>
+    <tr><th>입문 단계</th><th>추천 코스</th><th>적합 신발</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1단계 — 둘레길</strong></td>
+      <td>북한산·관악산 둘레길, 한강 둔치 자갈길</td>
+      <td>젤 벤처 10 또는 일반 러닝화</td>
+    </tr>
+    <tr>
+      <td><strong>2단계 — 임도</strong></td>
+      <td>대모산·청계산 임도, 안산 자락길</td>
+      <td>젤 벤처 10, 어질리티 피크 6</td>
+    </tr>
+    <tr>
+      <td><strong>3단계 — 정식 트레일</strong></td>
+      <td>관악산 정상, 도봉산 우이암</td>
+      <td>어질리티 피크 6, 아그라빅 4</td>
+    </tr>
+    <tr>
+      <td><strong>4단계 — 테크니컬</strong></td>
+      <td>북한산 백운대, 인수봉 접근로</td>
+      <td>어질리티 피크 6 (Vibram 필수)</td>
+    </tr>
+    <tr>
+      <td><strong>5단계 — 스카이레이스</strong></td>
+      <td>굿러너 동해·계룡 스카이레이스</td>
+      <td>테크톤 X 3, 울트라플라이</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>로드 러닝화에서 트레일로 — 어떻게 갈아탈까</h2>
+
+<p>로드 러닝화로 1년 정도 달리고 트레일을 시작하려는 러너가 가장 자주 하는 실수가 두 가지입니다.</p>
+
+<ul>
+  <li><strong>실수 1: 카본 트레일화부터 산다</strong> — Tecton X 3, Ultrafly 같은 카본 트레일화는 본격 레이스용입니다. 입문 단계에서 사면 가격(30만원+)도 부담이고, 카본 플레이트가 입문 러너의 발목·종아리 부하를 키웁니다. <strong>입문은 99,000원 젤 벤처 10이나 199,000원 어질리티 피크 6부터.</strong></li>
+  <li><strong>실수 2: 발볼 좁은 신발을 사이즈 업으로 해결하려 한다</strong> — 메타후지 트레일·테크톤 X 3 같은 좁은 토박스 모델을 한 사이즈 키워도 발볼 압박은 해결되지 않습니다. 트레일은 하산 시 발이 앞으로 쏠려 발가락 까지는 부상이 흔한데, <strong>토박스 너비가 안 맞으면 그게 더 심해집니다</strong>. 와이드 SKU가 있는 모델로 가세요.</li>
+</ul>
+
+<p>로드 러닝과 다른 점도 미리 알아두면 좋습니다. <a href="/blog/running-shoe-terminology-guide">러닝화 용어 가이드</a>에서 다룬 미드솔·아웃솔 개념은 트레일에서도 동일하지만, 트레일 추가로 위에서 설명한 <strong>러그·록 플레이트·구쎄드 텅·게이터·배수 5가지</strong>를 추가로 보세요.</p>
+
+<h2>마무리 — 한국 러너의 트레일 첫걸음</h2>
+
+<p>2026년 트레일 러닝 시장은 어느 때보다 다양해졌습니다. 89,000원 입문화부터 339,000원 카본 슈퍼슈즈까지, 본인의 단계와 발 특성에 맞는 신발을 고르는 게 핵심입니다.</p>
+
+<p>한국 러너에게 가장 중요한 두 가지를 다시 짚으면:</p>
+
+<ul>
+  <li><strong>발볼 친화도</strong> — Merrell 어질리티 피크 6 / Nike 울트라플라이 / 젤 벤처 10이 와이드 친화 / 메타후지·테크톤 X 3·스피드 울트라는 좁음 주의</li>
+  <li><strong>한국 산악 그립</strong> — 북한산·도봉산 화강암에서는 Vibram Megagrip 또는 Continental 점착 고무 우선, 얕은 러그(2-3mm) 모델은 임도·완만 트레일 한정</li>
+</ul>
+
+<p>다음 단계는 본인의 발에 맞는 모델을 직접 신어보는 것. 로드 러닝화도 동일한 원칙이 적용되니 <a href="/recommend">맞춤 신발 추천</a>으로 본인 발볼·아치 타입을 확인해두면 트레일 신발 고를 때도 도움이 됩니다.</p>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://runrepeat.com" target="_blank" rel="noopener">RunRepeat 랩 테스트</a>(7개 모델 모두), <a href="https://believeintherun.com" target="_blank" rel="noopener">Believe in the Run</a>, Road Trail Run, 머렐 코리아·굿러너컴퍼니·KREAM·무신사·Nike Korea 한국 공식 가격, <a href="https://www.instagram.com/runninglife_korea/p/DXyJkIljzdd/" target="_blank" rel="noopener">@runninglife_korea TOP 7 가이드(2026-04-30)</a>. Adidas Terrex Agravic 4 한국 공식가는 SS26 출시 후 유통 확정 시점에 추가 확인 예정.
+</p>
+`,
+  },
+  {
     id: '2026-daecheongho-marathon',
     slug: '2026-daecheongho-marathon',
     title: '2026 청원생명쌀 대청호마라톤 10km·5km D-4 | 풀·하프 매진, 기안84의 호수 코스 마지막 슬롯',
