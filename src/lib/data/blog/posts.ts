@@ -2,6 +2,359 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2027-seoul-marathon-priority-d10',
+    slug: '2027-seoul-marathon-priority-d10',
+    title: '2027 서울마라톤 우선접수 D-10 | 5/18 오픈 — 풀 그룹별 본접수까지 실전 가이드',
+    description: '기록 제출(5/11 마감) 직후 우선접수가 5월 18일(월) 10시에 오픈됩니다. 동마클럽 멤버십·동마크루·번호표 반납자·공식 클래스 수료자·sub3 헌액자 5조건. 풀 그룹별 본접수(6/1~2)와 10K 선착순(6/3 19시) 실전 노하우 + 동마 4개 대회 5월 캘린더 한눈에.',
+    thumbnail: '/images/blog/2027-seoul-marathon-priority-d10.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-08',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동아마라톤', '동마클럽', '우선접수', '런카이브', '풀코스 그룹', '대회 일정'],
+    event: {
+      name: '2027 서울마라톤',
+      startDate: '2027-03-21T08:00:00+09:00',
+      location: {
+        name: '광화문 → 잠실종합운동장',
+        address: '서울특별시 종로구 ~ 송파구',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://dongma.club/',
+      offers: [
+        { name: '풀코스 (그룹 A~H 본접수, 6/1~6/2)', priceKrw: 60000, availabilityEnds: '2026-06-02', url: 'https://dongma.club/' },
+        { name: '10K (선착순, 6/3 19시)', priceKrw: 40000, availabilityEnds: '2026-06-03', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '우선접수 5조건이 정확히 뭔가요?',
+        answer: '아래 5개 중 하나라도 해당하면 5월 18일~22일 우선접수 가능합니다: ① 2026 동아마라톤 멤버십(동마클럽) 가입자, ② 2026 서울마라톤 동마크루, ③ 2026 서울마라톤 번호표 반납자, ④ 2026 서울마라톤 대비 공식 클래스 수료자, ⑤ 명예의 전당 헌액자 중 2024~25 서울/공주/경주 또는 2026 서울마라톤 sub3 달성자. 다섯 조건 모두 본접수 그룹별 시간 경쟁 없이 안정적으로 풀코스를 확보할 수 있는 핵심 루트입니다.',
+      },
+      {
+        question: '기록 제출 안 하면 어떻게 되나요?',
+        answer: '5월 11일(월) 15시까지 런카이브에 공인 기록을 제출하지 않으면 가장 후순위인 H그룹으로 자동 배정됩니다. H그룹은 6월 2일(화) 22시 본접수 가장 마지막 슬롯이라 풀코스 정원이 채워졌을 가능성이 매우 높습니다. 기록증이 있다면 마감 전에 무조건 제출하세요. 유효기간은 2024년 1월 1일 ~ 2026년 5월 10일 사이 공인 기록입니다.',
+      },
+      {
+        question: '동마클럽 ID는 어떻게 만드나요?',
+        answer: '동마클럽 회원가입 시 자동 발급되는 고유 식별자입니다. dongma.club 회원가입 후 마이페이지에서 확인할 수 있고, 런카이브 기록 제출 시 \'추가 정보 → 동마클럽 ID\' 항목에 입력해야 정상 처리됩니다. ID 누락 시 기록은 제출되지만 2027 서울마라톤 참가용 기록으로는 인정되지 않으니 회원가입과 ID 확인을 우선 처리하세요.',
+      },
+      {
+        question: '풀 그룹별 본접수에서 PC가 다운되면 어떻게 하나요?',
+        answer: '본접수 시각(19시·20시·21시·22시) 정시에 트래픽이 폭주하므로 ① PC + 모바일 + 태블릿 3중 백업 접속, ② 유선랜 우선(WiFi 비추), ③ 브라우저 자동입력으로 개인정보 입력 시간 단축, ④ 결제 수단 사전 등록(카드 정보 + 간편결제 둘 다)이 표준 전략입니다. 특히 시계 동기화는 필수 — `time.navyism.com`으로 초 단위까지 맞춰두세요. 3년 연속 풀 못 잡은 러너들 대부분이 시계 오차 또는 결제 수단 미등록이 원인이었습니다.',
+      },
+      {
+        question: '10K 선착순은 정말 그렇게 빨리 마감되나요?',
+        answer: '2026 서울마라톤 10K는 접수 오픈 5분 만에 마감됐습니다. 2027은 카카오 러너스카드 도입(JTBC 서울마라톤 사례) 가능성으로 시스템이 바뀔 수도 있으니 5월 말 동마클럽 공지를 반드시 확인하세요. 현재 기준으로는 6월 3일(수) 19시 정각에 dongma.club에서 선착순 접수, 풀과 동일한 PC 셋업 + 시계 동기화가 필수입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2027 서울마라톤(2027.3.21 일) 우선접수 <strong>5월 18일(월) 10시 D-10</strong> 오픈 — 동마 멤버십·동마크루·번호표 반납·공식 클래스 수료·sub3 헌액자 5조건</li>
+    <li>풀 본접수 6월 1~2일 그룹별(A→H 시간대 분리), 10K 본접수 6월 3일 19시 선착순 — <strong>기록 제출 5/11 15시까지</strong> 런카이브 필수</li>
+    <li>5월에 동마 4개 대회(서울·서울레이스·공주백제·경주국제) 모두 접수 오픈 — 한 시즌 전체 캘린더로 페이스 잡기</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">우선접수 D-10 — 5조건 해당 여부부터 확인하세요</p>
+    <p>5월 18일(월) 10시 오픈까지 10일. 우선접수에 해당된다면 본접수의 그룹별 경쟁 없이 안정적으로 풀코스를 확보할 수 있습니다. 본인이 5조건 중 하나라도 해당하는지 <strong>지금 즉시 확인</strong>하고, 동마클럽 회원가입·로그인·결제 수단 등록까지 마쳐두세요. 우선접수 한 번 놓치면 6월 1일 그룹별 본접수의 1초 경쟁으로 들어가야 합니다.</p>
+  </div>
+</div>
+
+<h2>핵심 일정 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">우선접수</span>
+    <span class="stat-value">5/18 ~ 5/22</span>
+    <span class="stat-sub">D-10 → D-14</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀 본접수</span>
+    <span class="stat-value">6/1 ~ 6/2</span>
+    <span class="stat-sub">그룹 A→H 시간대</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K 본접수</span>
+    <span class="stat-value">6/3 (수)</span>
+    <span class="stat-sub">19시 선착순</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">2027.3.21</span>
+    <span class="stat-sub">광화문 출발</span>
+  </div>
+</div>
+
+<h2>지금부터 D-Day까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.08 (목) — 오늘</span>
+    <span class="timeline-title">우선접수 D-10 / 기록 제출 D-3</span>
+    <p class="timeline-desc">우선접수 5조건 해당 여부 확인 + 런카이브에서 기록 제출 + 동마클럽 ID 확인</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.11 (월) 15시</span>
+    <span class="timeline-title">기록 제출 마감 — 절대 늦지 말 것</span>
+    <p class="timeline-desc">미제출 시 자동 H그룹 배정 (6/2 22시 본접수, 사실상 잔여석 없음)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.18 (월) 10시</span>
+    <span class="timeline-title">우선접수 오픈 + 골드패키지 시작</span>
+    <p class="timeline-desc">5조건 해당자 안정적 슬롯 확보 — dongma.club</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.22 (금) 15시</span>
+    <span class="timeline-title">우선접수 마감</span>
+    <p class="timeline-desc">우선접수 미접수 시 6/1 그룹별 본접수로 진입</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.01~02</span>
+    <span class="timeline-title">풀코스 본접수 — 그룹 A~H 시간대별</span>
+    <p class="timeline-desc">A(6/1 19시) → H(6/2 22시) 1시간 간격 분리, 시계 동기화 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.03 (수) 19시</span>
+    <span class="timeline-title">10K 선착순 본접수 — 5분 컷 가능성</span>
+    <p class="timeline-desc">PC 3중 백업 + 시계 동기화 + 결제 수단 등록 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2027.03.21 (일)</span>
+    <span class="timeline-title">대회 당일 — 광화문 출발</span>
+    <p class="timeline-desc">8시 풀코스 출발 (예상), 잠실종합운동장 피니시</p>
+  </div>
+</div>
+
+<h2>우선접수 5조건 — 해당되면 무조건 활용</h2>
+
+<table>
+  <thead>
+    <tr><th>조건</th><th>해당 대상</th><th>증빙</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>① 동마클럽 멤버십</strong></td>
+      <td>2026 동아마라톤 멤버십 가입자</td>
+      <td>회원 ID</td>
+    </tr>
+    <tr>
+      <td><strong>② 동마크루</strong></td>
+      <td>2026 서울마라톤 동마크루 활동자</td>
+      <td>크루 등록 정보</td>
+    </tr>
+    <tr>
+      <td><strong>③ 번호표 반납자</strong></td>
+      <td>2026 서울마라톤 번호표 반납 처리 완료자</td>
+      <td>반납 확인 메일</td>
+    </tr>
+    <tr>
+      <td><strong>④ 공식 클래스 수료</strong></td>
+      <td>2026 서울마라톤 대비 공식 클래스(잠스트 등) 수료자</td>
+      <td>수료증·등록 정보</td>
+    </tr>
+    <tr>
+      <td><strong>⑤ Sub-3 헌액자</strong></td>
+      <td>명예의 전당 + 2024~25 서울/공주/경주 또는 2026 서울 sub3</td>
+      <td>기록증·헌액 정보</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">멤버십 신규 가입은 이미 늦었다</p>
+    <p>2026 동마 멤버십은 이미 모집이 마감됐습니다. 2027 서울 우선접수에는 <strong>2026 멤버십 가입자만</strong> 해당됩니다. 다음 시즌(2027 멤버십)을 노리고 가입하면 2028 서울마라톤 우선접수 자격을 얻습니다. 멤버십은 보통 매년 12월~다음해 1월 모집되며, 가을 동마 시리즈(공주백제·경주국제) 참가권이 함께 포함됩니다.</p>
+  </div>
+</div>
+
+<h2>풀 본접수 그룹별 시간 — 1초가 승부 가른다</h2>
+
+<p>풀코스 본접수는 제출한 공인 기록 기반으로 A~H 그룹이 배정되고, 그룹별로 정해진 시각에만 접수 창이 열립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>날짜</th><th>그룹</th><th>접수 시각</th><th>대상 기록 (예상)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="4">6/1 (월)</td><td><strong>A</strong></td><td>19시</td><td>Sub-2:50</td></tr>
+    <tr><td>B</td><td>20시</td><td>Sub-3:00</td></tr>
+    <tr><td>C</td><td>21시</td><td>Sub-3:15</td></tr>
+    <tr><td>D</td><td>22시</td><td>Sub-3:30</td></tr>
+    <tr><td rowspan="4">6/2 (화)</td><td>E</td><td>19시</td><td>Sub-3:45</td></tr>
+    <tr><td>F</td><td>20시</td><td>Sub-4:00</td></tr>
+    <tr><td>G</td><td>21시</td><td>Sub-4:30</td></tr>
+    <tr><td><strong>H</strong></td><td>22시</td><td>기록 미제출 / Sub-4:30 외</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 기록 그룹 기준은 2026 완주자 기록 분포에 따라 5월 중 동마클럽 공지로 확정됩니다. 위 표는 2026년 기준 추정.</small></p>
+
+<h2>실전 접수 노하우 — PC 셋업부터 시계 동기화까지</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 D-Day 직전 체크리스트</p>
+    <ol style="margin-top:8px;">
+      <li><strong>유선랜 PC 우선</strong> — WiFi는 패킷 손실 가능성. 가능하면 데스크톱 + 모바일 동시 접속</li>
+      <li><strong>브라우저 2개 이상</strong> — Chrome + 시크릿 창 또는 다른 브라우저로 동시 시도</li>
+      <li><strong>로그인 미리</strong> — 접수 시각 30분 전 로그인 완료, 마이페이지 진입 확인</li>
+      <li><strong>개인정보 자동입력</strong> — 이름·생년월일·연락처·주소 모두 브라우저 저장</li>
+      <li><strong>결제 수단 2가지 등록</strong> — 카드 정보 + 카카오/네이버페이 둘 다 사전 등록</li>
+      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code>에서 1초 단위 동기화 (휴대폰 기본 시계 1~2초 오차 흔함)</li>
+      <li><strong>접속 페이지 미리</strong> — 19시 정각 직전 접수 페이지 로딩 → F5 새로고침 대기</li>
+    </ol>
+  </div>
+</div>
+
+<h2>런카이브·동마클럽 ID — 제출 시스템 정밀 가이드</h2>
+
+<p>2026년부터 2027 서울마라톤 기록 제출은 <strong>런카이브(runarchive.com)</strong> 시스템 통합으로 운영됩니다. 동마클럽 별도 시스템과 연계되므로 두 시스템 모두 회원가입·ID 입력이 필요합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>단계</th><th>해야 할 것</th><th>주의사항</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. 런카이브 회원가입</td>
+      <td>runarchive.com 회원가입 + 이메일 인증</td>
+      <td>자주 사용하는 이메일 사용 (인증번호 수신)</td>
+    </tr>
+    <tr>
+      <td>2. 동마클럽 회원가입</td>
+      <td>dongma.club 회원가입 → 마이페이지에서 동마클럽 ID 확인</td>
+      <td>이미 가입돼 있으면 ID만 확인</td>
+    </tr>
+    <tr>
+      <td>3. 기록 제출</td>
+      <td>런카이브 → \'2027 서울마라톤\' 클릭 → 기록증 업로드</td>
+      <td><strong>\'2027 서울마라톤\' 클릭 안 하면 참가용 기록으로 안 잡힘</strong></td>
+    </tr>
+    <tr>
+      <td>4. 추가 정보 입력</td>
+      <td>동마클럽 ID 정확히 입력</td>
+      <td>ID 오타 시 기록 인정 안 됨</td>
+    </tr>
+    <tr>
+      <td>5. 승인 확인</td>
+      <td>제출 후 며칠 내 \'승인\' 처리 확인</td>
+      <td>승인 안 되면 마감 전 재제출</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">가장 흔한 실수 — \'2027 서울마라톤\' 미클릭</p>
+    <p>런카이브에서 기록을 제출할 때 반드시 <strong>\'2027 서울마라톤\' 항목을 클릭한 뒤 제출</strong>해야 참가용 기록으로 잡힙니다. 그냥 기록증만 업로드하면 시스템엔 등록되지만 2027 서울 참가 자격으로는 인정되지 않습니다. 5월 11일 마감 직전 이 실수를 발견해도 재처리 시간이 부족하니 지금 처리하세요.</p>
+  </div>
+</div>
+
+<h2>5월 동마 4개 대회 캘린더 — 시즌 전체로 보기</h2>
+
+<p>2027 서울마라톤만 신경 쓰면 동마 가을 시리즈를 놓칩니다. 동마클럽 멤버십(15만원)으로 4개 대회 패키지 운용이 정답:</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>대회일</th><th>5월 접수</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>2027 서울마라톤</strong></td>
+      <td>2027.03.21 (일)</td>
+      <td>우선 5/18~22 / 본 6/1~3</td>
+      <td>이 글 (D-10 임박)</td>
+    </tr>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>2026.09.20 (일)</td>
+      <td>우선 5/11~15 / 본 5/21</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">평지 입문 풀코스</a></td>
+    </tr>
+    <tr>
+      <td>2026 경주국제마라톤</td>
+      <td>2026.10.17 (토)</td>
+      <td>본접수 5/26 19시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+    <tr>
+      <td>2026 서울레이스 (하프·10K)</td>
+      <td>2026.10.11 (일)</td>
+      <td>본접수 5/27 19시·21시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>전체 26/27 시즌 일정 가이드와 그룹별 본접수 시스템의 더 자세한 설명은 <a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a>에서 다뤘습니다.</p>
+
+<h2>대회까지 9개월 — 훈련·장비 빌드업</h2>
+
+<p>2027 서울마라톤은 2027년 3월 21일이라 접수 완료 후에도 <strong>약 9~10개월 준비 기간</strong>이 있습니다. 표준 빌드업 계획:</p>
+
+<ul>
+  <li><strong>6~8월: 베이스 빌딩</strong> — 주 30~50km 누적, LSD 25km 목표</li>
+  <li><strong>9~10월: 가을 대회 페이스메이커</strong> — 공주백제·경주·춘천·JTBC로 실전 감각</li>
+  <li><strong>11~12월: 본격 빌드업 시작</strong> — 16~20주 풀 마라톤 프로그램 시작</li>
+  <li><strong>1~2월: 피크 마일리지</strong> — 주 70~90km, 30km LSD 4회 이상</li>
+  <li><strong>3월 1~2주차: 테이퍼링</strong> — 거리 50% 감소, 회복 우선</li>
+  <li><strong>3.21: D-Day</strong> — 광화문 출발</li>
+</ul>
+
+<table>
+  <thead>
+    <tr><th>준비 항목</th><th>추천</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>레이스 신발</strong></td>
+      <td>대회 6~8주 전 구입 → 40~60km 길들이기. <a href="/best/best-carbon-plate-2025">카본 플레이트 비교</a> 또는 <a href="/recommend">맞춤 추천</a></td>
+    </tr>
+    <tr>
+      <td>훈련용 데일리화</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+    </tr>
+    <tr>
+      <td>에너지젤</td>
+      <td>20km부터 30~40분 간격 — <a href="/blog/energy-gel-guide">에너지젤 가이드</a></td>
+    </tr>
+    <tr>
+      <td>페이싱</td>
+      <td><a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a> + 가을 대회 실전 검증</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 18일 우선접수 D-10 — 지금 해야 할 것</h3>
+  <ul>
+    <li>✅ <strong>우선접수 5조건 확인</strong> — 멤버십·동마크루·번호표 반납·공식 클래스·sub3 헌액</li>
+    <li>✅ <strong>기록 제출</strong> — 5월 11일(월) 15시까지 런카이브, \'2027 서울마라톤\' 클릭 필수</li>
+    <li>✅ <strong>동마클럽 ID 확인</strong> — dongma.club 마이페이지</li>
+    <li>✅ <strong>로그인·결제 수단 등록</strong> — 카드 + 간편결제 둘 다</li>
+    <li>✅ <strong>시계 동기화 도구 북마크</strong> — time.navyism.com</li>
+    <li>✅ <strong>5/18 10시 알람 설정</strong> — 우선접수 정시 오픈</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · <a href="https://runarchive.com/" target="_blank" rel="noopener">runarchive.com</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽 공식</a>, <a href="https://www.instagram.com/seoul_marathon/" target="_blank" rel="noopener">@seoul_marathon</a>(런카이브·동마클럽 ID 시스템 공지), <a href="https://www.instagram.com/dongmaclub/" target="_blank" rel="noopener">@dongmaclub</a>(5월 접수 캘린더). 그룹별 기록 기준과 정확한 본접수 시각은 5월 중 동마클럽 공식 공지로 확정됩니다.
+</p>
+`,
+  },
+  {
     id: '2026-best-trail-running-shoes',
     slug: '2026-best-trail-running-shoes',
     title: '2026 트레일 러닝화 TOP 7 | 북한산·관악산 한국 산악 기준 카테고리별 베스트',
