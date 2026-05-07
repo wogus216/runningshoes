@@ -5,22 +5,17 @@
 
 ## 미처리
 
-- [ ] **nike-pegasus-42** (추가: 2026-04-22, 출시: 2026-04-09)
-  - 소스: Believe in the Run + Road Trail Run + Nike Newsroom
-  - 추정 항목:
-    - `specs.cushioning: 9` (41의 SA 125 → 42 37mm 스택 + Air Zoom으로 140+ 추정)
-    - `specs.responsiveness: 8` (41의 에너지리턴 힐 55.5%/전족부 61.4% + 공식 +15% → 힐 64%/전족부 71% 추정)
-    - `specs.durability: 600` (41 아웃솔 0.9mm 마모 기준, 구성 동일)
-    - `detailedSpecs.weight: '286g (추정)'`
-    - `koreanFootFit.toBoxWidth: 'standard'` (41의 72.9mm에서 넓어졌다고만 발표, 정확한 mm 미공개)
-    - `koreanFootFit.wideOptions: false` (공식 와이드 2E/4E SKU 미확인, 보수적으로 false)
-  - 확정 항목:
-    - 가격 169,000원, 출시일 2026-04-09
-    - 힐/전족부 스택 37mm/27mm, 드롭 10mm
-    - 풀 렝스 Air Zoom 유닛 도입
-  - 재확인 URL: https://runrepeat.com/nike-pegasus-42
-  - 재확인 시점 권장: 2026-07 이후 (출시 후 3개월)
+(없음)
 
 ## 완료
 
-(없음)
+- [x] **nike-pegasus-42** (추정 입력 2026-04-22 → 실측 갱신 2026-05-07)
+  - RunRepeat 랩 데이터 2026-04-25 게시 확인 → 추정에서 실측으로 업데이트
+  - 주요 발견:
+    - 공식 vs 실측 5mm 불일치 (전족부 27→22mm, 드롭 10→14mm)
+    - "에너지 리턴 +15%" 공식 주장 → 실측 힐 +1.6%p / 전족부 0%p
+    - 토박스 "확대" 주장 → 실측 41(72.9mm) → 42(72.3mm)로 미세 감소
+    - 한국 와이드 옵션 정식 출시 (남성·여성 169,000원 동일) → `wideOptions: true`로 수정
+  - `specs.cushioning: 9 → 8` (실측 SA 131 기준 하향)
+  - `specs.responsiveness: 8 → 7` (실측 에너지 리턴 기준 하향)
+  - 블로그 단독 리뷰 발행: `/blog/nike-pegasus-42-review`
