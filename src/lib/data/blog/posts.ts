@@ -2,6 +2,300 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-gongju-baekje-marathon',
+    slug: '2026-gongju-baekje-marathon',
+    title: '2026 공주백제마라톤 우선접수 D-4 | 9월 20일 금강변 평지 풀코스, 동마클럽 멤버십 5/11 오픈',
+    description: '2026 공주백제마라톤 동마클럽 우선접수가 5월 11일(월) 시작됩니다. 9월 20일(일) 공주시민운동장 출발, 금강변 백제큰길 왕복 평지 코스. 풀·32K·하프·10K·5K 5종목, 유네스코 세계유산 공산성·무령왕릉 인근 통과. 본접수는 5월 21일 — 동마 가을 입문 풀코스 정답.',
+    thumbnail: '/images/blog/2026-gongju-baekje-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['공주백제마라톤', '공주백제 마라톤', '동마클럽', '동아마라톤', '가을 마라톤', '풀코스 입문', '금강 마라톤', '대회 일정'],
+    event: {
+      name: '2026 공주백제마라톤',
+      startDate: '2026-09-20T08:00:00+09:00',
+      location: {
+        name: '공주시민운동장',
+        address: '충청남도 공주시',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://dongma.club/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '32K', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '하프 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '5K', priceKrw: 20000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '우선접수랑 본접수가 뭐가 다른가요?',
+        answer: '우선접수(5월 11~15일)는 동아마라톤 멤버십(동마클럽) 가입자만 신청 가능하며, 본접수(5월 21일~ 선착순) 전에 자리를 먼저 확보할 수 있습니다. 멤버십은 연회비 15만원으로 공주백제·경주국제마라톤 참가권 + 2027 서울마라톤 우선신청권이 모두 포함되어, 1년에 동마 시리즈 3대회를 다 뛸 계획이라면 본접수 단발 결제보다 가성비가 좋습니다.',
+      },
+      {
+        question: '풀코스 첫 도전인데 공주백제 괜찮나요?',
+        answer: '동마 시리즈 중 가장 입문 친화적입니다. 금강변 백제큰길 왕복 평지 코스로 누적 고도가 매우 낮아 기록 단축에 유리하며, 풀코스 제한시간이 5시간으로 넉넉합니다. 9월 20일 충남 평균 기온 20-24도로 가을 풀코스 입문 적기입니다. 단, 9월 중순은 아직 따뜻할 수 있으니 초반 페이스 관리와 보급 전략이 중요합니다.',
+      },
+      {
+        question: '서울에서 공주까지 어떻게 가나요?',
+        answer: 'KTX(호남선) 서울역·용산역에서 공주역까지 약 1시간 15분, 공주역에서 대회장까지 차로 25분입니다. 자가용은 대회 당일 조기 만차 빈번하므로 비추천이며, 전날 공주 시내 숙박이 가장 안전합니다. 셔틀버스 운영 여부는 대회 2주 전 dongma.club 공지를 확인하세요.',
+      },
+      {
+        question: '32K 종목은 왜 있나요?',
+        answer: '풀코스(42.195km) 직전 단계의 LSD(장거리 지구력) 훈련 또는 가을 풀코스 시즌 막바지 컨디셔닝용으로 기획된 종목입니다. 동마 시리즈 특유의 옵션으로, "풀은 부담스럽지만 하프(21km)는 짧다"는 중간 러너에게 유용합니다. 참가비는 풀과 동일(60,000원, 멤버십 50,000원)입니다.',
+      },
+      {
+        question: '어떤 러닝화를 신어야 하나요?',
+        answer: '금강변 평지 아스팔트 + 9월 중순 20-25도 환경에 따라 두 갈래로 나뉩니다. ① 풀코스 PB 도전 → 카본 플레이트 레이싱화 (아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4 등). ② 입문·완주 목적 → 쿠션 데일리 트레이너 (아식스 GT-2000 14, 뉴발란스 1080 v15, 나이키 페가수스 42). 평지 코스라 안정화는 굳이 필요 없으며, 발볼 넓다면 와이드 옵션이 있는 모델 권장.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 9월 20일(일) 공주시민운동장 출발 — 금강변 백제큰길 왕복 평지 코스, 풀·32K·하프·10K·5K 5종목</li>
+    <li>우선접수 <strong>5월 11일(월) ~ 5월 15일(금)</strong> 동마클럽 멤버십 전용 → 본접수 <strong>5월 21일(목)</strong> 오픈 선착순 (정원 약 12,000명)</li>
+    <li>유네스코 세계문화유산 <strong>공산성·무령왕릉 인근 통과</strong>, 동마 시리즈 중 가장 입문 친화적 풀코스 — 가을 PB 도전 + 백제 고도 관광 동시 가능</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">우선접수 D-4 — 5월 11일(월) 오픈</p>
+    <p>동마클럽 멤버십(연회비 15만원) 가입자는 본접수 전인 <strong>5월 11일(월) ~ 5월 15일(금)</strong>에 우선 신청 가능합니다. 멤버십에는 공주백제·경주국제 참가권과 2027 서울마라톤 우선신청권이 포함돼 있어, 동마 가을 시리즈를 다 뛰려면 단발 결제보다 멤버십이 유리합니다. 본접수는 5월 21일(목) 오픈, 정원 약 12,000명 선착순으로 작년 풀코스는 조기 마감됐습니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">9/20 (일)</span>
+    <span class="stat-sub">2026 가을</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀코스 42.195km</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">제한시간 5시간</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">코스 특징</span>
+    <span class="stat-value">금강변 평지</span>
+    <span class="stat-sub">고도차 거의 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">우선접수</span>
+    <span class="stat-value">5/11 ~ 5/15</span>
+    <span class="stat-sub">멤버십 전용</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.11 (월) — D-4</span>
+    <span class="timeline-title">우선접수 시작 (멤버십 전용)</span>
+    <p class="timeline-desc">동마클럽 멤버십 가입자 대상 — 5일간 운영, 전 종목 신청 가능</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.15 (금)</span>
+    <span class="timeline-title">우선접수 마감</span>
+    <p class="timeline-desc">멤버십 자리 확보 마지막 기회</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.21 (목)</span>
+    <span class="timeline-title">본접수 오픈 (일반 선착순)</span>
+    <p class="timeline-desc">dongma.club에서 일반 신청 시작 — 풀·32K 종목은 빠르게 마감 예상</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 초중순</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품 수령, 셔틀버스, 교통통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09.20 (일)</span>
+    <span class="timeline-title">대회 당일 — 공주시민운동장</span>
+    <p class="timeline-desc">금강변 백제큰길 왕복 코스, 충남 9월 평균 20-24도</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준 — 2026년 동일 추정)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>일반</th><th>멤버십</th><th>제한시간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>50,000원</td><td>5시간</td></tr>
+    <tr><td>32K</td><td>32km</td><td>60,000원</td><td>50,000원</td><td>4시간</td></tr>
+    <tr><td>하프</td><td>21.0975km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
+    <tr><td>10K</td><td>10km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
+    <tr><td>5K</td><td>5km</td><td>20,000원</td><td>10,000원</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">참가비는 2025년 기준 — 2026년 공식 발표 전</p>
+    <p>위 금액은 2025년 공주백제마라톤 기준으로, 2026년 정식 공지는 5월 11일 우선접수 오픈 시 dongma.club에 게시됩니다. 일반적으로 동마 시리즈는 전년 대비 변동 없거나 5,000~10,000원 인상이 있을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>왜 공주백제가 풀코스 입문에 좋은가</h2>
+
+<p>동마클럽이 운영하는 가을 시리즈 3개 대회(서울국제·공주백제·경주국제) 중 <strong>공주백제는 가장 입문자 친화적인 풀코스</strong>로 평가됩니다. 이유는 세 가지입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>특징</th><th>공주백제</th><th>일반 도시 마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>코스 고도</strong></td>
+      <td>금강변 평지, 누적 고도 거의 없음</td>
+      <td>도심 굴곡 있음 (서울국제 잠실 일대 약 50m)</td>
+    </tr>
+    <tr>
+      <td><strong>풀 제한시간</strong></td>
+      <td>5시간 (넉넉)</td>
+      <td>4-5시간 (대회 따라)</td>
+    </tr>
+    <tr>
+      <td><strong>참가 규모</strong></td>
+      <td>약 12,000명 (혼잡 적음)</td>
+      <td>30,000명+ (출발 정체)</td>
+    </tr>
+    <tr>
+      <td><strong>지역 매력</strong></td>
+      <td>유네스코 백제 고도, 가을 단풍</td>
+      <td>도심 풍경 중심</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>코스 매력 — 백제 1500년 위에서 달린다</h2>
+
+<p>공주는 <strong>475년 백제의 두 번째 수도(웅진)</strong>로, 무령왕릉을 품은 송산리 고분군과 공산성이 2015년 유네스코 세계문화유산으로 등재된 곳입니다. 코스는 공주시민운동장에서 출발해 금강변 백제큰길을 따라 왕복하며, 공산성 성벽과 무령왕릉 인근을 지나갑니다.</p>
+
+<ul>
+  <li><strong>금강 수변 풍경</strong> — 9월 중순 가을 초입의 단풍과 강변 풍경, 사진 찍기 좋은 구간 다수</li>
+  <li><strong>공산성 통과</strong> — 백제·고려·조선 3시대를 관통하는 토석성. 16km/26km 인근 지점에서 좌측 시야</li>
+  <li><strong>무령왕릉 인근</strong> — 백제 25대 왕 무령왕의 무덤. 코스 중간 보급 포인트와 가까움</li>
+  <li><strong>도심 통과 구간</strong> — 공주 시내 약 5km 구간 교통통제, 시민 응원 활발</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 단축 도전자에게 좋은 이유</p>
+    <p>금강변 평지 코스는 강풍만 없으면 사실상 무굴곡입니다. 9월 20일 충남 평균 기온이 20-24도로 다소 따뜻한 편이지만, 출발 시간(보통 8시) 기준 18-20도로 시작해 풀코스 종료 시점까지 25도 안쪽이라 기록 도전 환경으로는 합격선입니다. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a>을 미리 잡고 입장하세요.</p>
+  </div>
+</div>
+
+<h2>9월 공주 — 어떤 신발을 신을까</h2>
+
+<p>금강변 평지 + 20-25도 + 5시간 제한이라는 조건에서 신발 선택은 <strong>"기록 도전 vs 안전 완주"</strong> 두 갈래로 나뉩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀 PB 도전 (Sub-3:30~4:00)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>완주 목표 입문 (4:30~5:00)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/asics-gt-2000-14">ASICS GT-2000 14</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td>
+    </tr>
+    <tr>
+      <td><strong>32K 훈련용 LSD</strong></td>
+      <td>맥시멀 쿠션</td>
+      <td><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프·10K (가벼운 페이스)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 있는 모델을 우선하세요 (페가수스 42·1080 v15·GT-2000 14는 한국 와이드 SKU 정식 출시). <a href="/recommend">맞춤 신발 추천</a>에서 본인 발 특성에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
+
+<h2>교통·숙박 가이드</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (권장)</strong></td>
+      <td>서울역·용산역 → 공주역 (호남선) → 대회장 차로 25분</td>
+      <td>약 1시간 40분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>서울 경부터미널 → 공주종합버스터미널 → 택시 10분</td>
+      <td>약 1시간 40분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 천안논산고속도로 → 공주IC</td>
+      <td>약 2시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚗</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용보다 KTX + 전날 숙박</p>
+    <p>대회 당일 공주시민운동장 인근 주차장은 새벽 6시 전 만차됩니다. KTX로 당일 오전 도착도 가능하지만, 풀코스 출발(8시 추정) 시간을 고려하면 <strong>전날 공주 시내 숙박</strong>이 가장 안전합니다. 공주 시내 호텔·게스트하우스는 대회 한 달 전부터 빠르게 마감되니 접수 확정 직후 예약하세요.</p>
+  </div>
+</div>
+
+<h2>2025년 대회로 본 분위기</h2>
+
+<p>2025년 공주백제마라톤은 <strong>참가자 약 1만 명</strong>이 모여 "공주의 가을을 달렸다"는 보도가 나왔습니다. 참가자 후기 공통점:</p>
+
+<ul>
+  <li>"평지 코스라 PB 욕심 안 부리고 안전하게 풀 완주" — 입문자 다수</li>
+  <li>"백제 사적 코스 + 가을 단풍, 관광 겸 마라톤으로 최고" — 가족 단위</li>
+  <li>"교통통제 구간이 짧아 보급 포인트 사이 거리가 좀 멀게 느껴짐" — 경험자 의견</li>
+  <li>"대회 후 공주 한옥마을·공산성 관광 일정으로 잡으면 1박 2일 일정 완성" — 지역 추천</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 11일(월) 우선접수 전 준비할 것</h3>
+  <ul>
+    <li>✅ <strong>동마클럽 멤버십</strong> 가입 여부 확인 (연회비 15만원, 가을 3대회 + 2027 서울 우선권)</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 풀(60,000원) / 32K(60,000원) / 하프(40,000원) / 10K(40,000원) / 5K(20,000원)</li>
+    <li>✅ <strong>본인 기록 확인</strong> (풀코스 5시간 컷오프 통과 가능 여부)</li>
+    <li>✅ <strong>전날 숙박 예약</strong> — 공주 시내 호텔·게스트하우스 (접수 확정 후 즉시)</li>
+    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽 공식</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 접수 캘린더</a>, runningwikii(2025년 참가비·정원 기준). 2026년 공식 참가비·셔틀·정원은 5월 11일 우선접수 오픈 시점 dongma.club 공지로 최종 확인하세요.
+</p>
+`,
+  },
+  {
     id: 'nike-pegasus-42-review',
     slug: 'nike-pegasus-42-review',
     title: '나이키 페가수스 42 솔직 리뷰 | 41과 뭐가 달라졌나, 16만원 그 값을 할까',
