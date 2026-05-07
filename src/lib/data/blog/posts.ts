@@ -2,6 +2,317 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-daecheongho-marathon',
+    slug: '2026-daecheongho-marathon',
+    title: '2026 청원생명쌀 대청호마라톤 10km·5km D-4 | 풀·하프 매진, 기안84의 호수 코스 마지막 슬롯',
+    description: '제24회 청원생명쌀 대청호마라톤(10/17 토) 풀·하프 이미 매진. 10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시 순차 오픈됩니다. 대청호 호수 둘레 + 청남대 통과 코스, 누적 고도 485m 중상급 난이도. 기안84 효과로 작년 6,500명 역대 최대, 청원생명쌀 4kg 기념품 — 2026 가을 첫 메달의 정답.',
+    thumbnail: '/images/blog/2026-daecheongho-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['대청호마라톤', '청원생명쌀 대청호', '청주 마라톤', '충북 마라톤', '기안84 마라톤', '가을 마라톤', '호수 마라톤', '대회 일정'],
+    event: {
+      name: '제24회 청원생명쌀 대청호마라톤대회',
+      startDate: '2026-10-17T08:40:00+09:00',
+      location: {
+        name: '문의체육공원 (대청호반 일원)',
+        address: '충북 청주시 상당구 문의면 미천리 138-1',
+      },
+      organizer: '청주시체육회 (주관: MBC충북·K-water 대청지사)',
+      url: 'https://race.cjsports.or.kr/',
+      offers: [
+        { name: '단축코스 (10km, 5/11 10:00 오픈)', priceKrw: 45000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
+        { name: '건강코스 (5km, 5/14 10:00 오픈)', priceKrw: 25000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '풀코스랑 하프는 정말 매진된 건가요?',
+        answer: '5월 4일에 풀코스(800명), 5월 7일에 하프코스(1,400명) 접수가 순차 오픈됐고 인스타 @runninglife_korea 게시물 기준 "전코스 매진"으로 안내됐습니다. 정확한 잔여 여부는 race.cjsports.or.kr에서 확인하거나 대회 사무국(043-279-8029)에 문의하세요. 매진이 확정이라면 10km(5/11 오픈)·5km(5/14 오픈)가 2026 가을 대청호 메달의 마지막 기회입니다.',
+      },
+      {
+        question: '10km·5km도 어렵다는 게 사실인가요?',
+        answer: '대청호마라톤 풀코스는 누적 획득고도 485m로 전국 마라톤 중 두 번째로 어려운 수준이지만, 10km·5km는 코스 일부만 사용하므로 누적 고도가 훨씬 낮습니다. 다만 호수 둘레 도로의 특성상 완전 평지는 아니며 짧은 오르막이 포함됩니다. 5km는 입문자도 무난, 10km는 평지 10km PB 대비 5-10분 정도 늦어진다고 보면 됩니다.',
+      },
+      {
+        question: '기안84가 정말 참가하나요?',
+        answer: 'MBC \'나 혼자 산다\'에서 2023년 대청호마라톤 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 대회의 전국 인지도가 급상승했습니다. 2026년 공식 홍보대사 임명 여부는 공식 공지로는 확인되지 않지만, 인스타그램 홍보에 그의 이름이 등장합니다. 기안84의 출연 여부와 별개로 \'나 혼자 산다 코스\'라는 정체성으로 자리 잡은 대회입니다.',
+      },
+      {
+        question: '서울에서 대청호까지 어떻게 가나요?',
+        answer: 'KTX 오송역(서울역에서 약 50분)에서 청주 시내로 환승 후 차량으로 약 30분, 또는 청주 도착 후 택시로 문의면까지 20-30분이 가장 빠릅니다. 자가용은 남청주IC 또는 신탄진IC에서 진입해 호반 주차장·문의중학교 임시주차장을 이용할 수 있지만, 대회 당일 8시-14시 일부 도로 통제가 있어 새벽 도착 또는 전날 청주 시내 숙박이 안전합니다. 셔틀버스 운영 여부는 대회 1개월 전 공지로 확인.',
+      },
+      {
+        question: '10km·5km에 어떤 신발을 신어야 하나요?',
+        answer: '대청호 둘레 아스팔트·포장 수변도로 + 짧은 오르막이 섞인 환경에서는 데일리 트레이너가 정답입니다. 10km는 페가수스 42·1080 v15·GT-2000 14처럼 쿠션과 안정성이 균형 잡힌 모델, 5km는 노바블라스트 5·페가수스 플러스 같은 경량 슈퍼 트레이너도 OK. 카본 레이싱화는 짧은 거리·평지가 아니라 호수 굴곡 코스에서는 효과 대비 부담이 큽니다. 발볼 넓다면 와이드 옵션이 정식 출시된 모델 우선.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>제24회 청원생명쌀 대청호마라톤 — 2026년 10월 17일(토) 충북 청주 문의체육공원 출발, 대청호 호수 둘레 + <strong>청남대 통과</strong> 코스</li>
+    <li>풀(5/4 오픈)·하프(5/7 오픈) 이미 매진 → <strong>10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시</strong> 순차 오픈, 마감일 6월 12일</li>
+    <li>기안84 \'나 혼자 산다\' 효과로 작년 <strong>역대 최대 6,500명</strong> 참가, 청원생명쌀 4kg + 완주 메달 + 비빔밥·떡 현장 제공</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">10km·5km D-4 / D-7 — 2026 가을 첫 메달 마지막 기회</p>
+    <p>풀코스(800명)와 하프코스(1,400명)는 5월 4일·5월 7일 오픈과 함께 빠르게 매진됐습니다. 남은 슬롯은 단축코스(10km, 2,000명) <strong>5월 11일(월) 오전 10시</strong>와 건강코스(5km, 1,800명) <strong>5월 14일(목) 오전 10시</strong>입니다. 기안84 효과로 인기가 매년 급상승 중이라 10km는 빠르게 마감될 가능성이 높습니다. 알람 설정해두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/17 (토)</span>
+    <span class="stat-sub">8:40 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10km 오픈</span>
+    <span class="stat-value">5/11 (월)</span>
+    <span class="stat-sub">오전 10:00</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">5km 오픈</span>
+    <span class="stat-value">5/14 (목)</span>
+    <span class="stat-sub">오전 10:00</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">6/12 (금)</span>
+    <span class="stat-sub">또는 정원 마감 시</span>
+  </div>
+</div>
+
+<h2>접수 일정 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.04 (월) — 완료</span>
+    <span class="timeline-title">풀코스 800명 매진</span>
+    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 5시간</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.07 (목) — 완료</span>
+    <span class="timeline-title">하프코스 1,400명 매진</span>
+    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 3시간</p>
+  </div>
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.11 (월) — D-4</span>
+    <span class="timeline-title">단축코스 10km 오픈 (잔여 슬롯)</span>
+    <p class="timeline-desc">정원 2,000명, 참가비 45,000원(학생 30,000원), 제한시간 2시간</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.14 (목) — D-7</span>
+    <span class="timeline-title">건강코스 5km 오픈 (잔여 슬롯)</span>
+    <p class="timeline-desc">정원 1,800명, 참가비 25,000원(학생 15,000원)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.12 (금)</span>
+    <span class="timeline-title">전체 접수 최종 마감</span>
+    <p class="timeline-desc">또는 정원 채워짐 시 조기 마감. 접수 후 7일 내 입금 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.17 (토)</span>
+    <span class="timeline-title">대회 당일 — 문의체육공원 7:30 집결</span>
+    <p class="timeline-desc">10월 중순 충북 평균 15-20도, 호수 단풍 절정</p>
+  </div>
+</div>
+
+<h2>종목별 참가비·정원·매진 현황</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>정원</th><th>참가비 (일반/학생)</th><th>제한시간</th><th>현황</th></tr>
+  </thead>
+  <tbody>
+    <tr style="opacity:0.5;">
+      <td>풀코스</td>
+      <td>42.195km</td>
+      <td>800명</td>
+      <td>45,000 / 30,000원</td>
+      <td>5시간</td>
+      <td><span class="badge-warning">매진</span></td>
+    </tr>
+    <tr style="opacity:0.5;">
+      <td>하프코스</td>
+      <td>21.0975km</td>
+      <td>1,400명</td>
+      <td>45,000 / 30,000원</td>
+      <td>3시간</td>
+      <td><span class="badge-warning">매진</span></td>
+    </tr>
+    <tr>
+      <td><strong>단축코스</strong></td>
+      <td><strong>10km</strong></td>
+      <td><strong>2,000명</strong></td>
+      <td><strong>45,000 / 30,000원</strong></td>
+      <td>2시간</td>
+      <td><span class="badge-positive">5/11 오픈</span></td>
+    </tr>
+    <tr>
+      <td><strong>건강코스</strong></td>
+      <td><strong>5km</strong></td>
+      <td><strong>1,800명</strong></td>
+      <td><strong>25,000 / 15,000원</strong></td>
+      <td>—</td>
+      <td><span class="badge-positive">5/14 오픈</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">10km도 45,000원? — 청원생명쌀 4kg 포함</p>
+    <p>10km 참가비가 풀·하프와 동일한 45,000원으로 다소 비싸 보일 수 있는데, <strong>완주자 전원에게 청원생명쌀 4kg + 대회 티셔츠 + 완주 메달</strong>이 제공됩니다. 시중 청원생명쌀 4kg 시세(약 25,000원) + 기념품 가치를 고려하면 사실상 가성비 가을 마라톤 중 최상위입니다. 5km는 25,000원으로 입문자·가족 단위 적합.</p>
+  </div>
+</div>
+
+<h2>왜 대청호인가 — 호수 + 청남대 + 기안84</h2>
+
+<p>대청호마라톤은 대청호 호수 둘레와 <strong>청남대(전직 대통령 전용 별장)</strong>를 통과하는 풍경 코스로 유명합니다. 충북 청주시 문의면 일대에서 열리며, 시간대(8:40 출발) 기준 호반 안개와 가을 단풍이 절정에 이르는 구간을 지납니다.</p>
+
+<p>2023년 MBC \'나 혼자 산다\'에서 기안84가 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 인지도가 폭발적으로 증가했습니다. 2024년 5천 명대 → 2025년 6,500명(역대 최대) → 2026년 풀·하프 조기 매진으로 이어지는 흐름입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>특징</th><th>대청호마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>코스 풍경</strong></td><td>대청호 수면, 청남대, 코스모스 꽃길, 가을 단풍</td></tr>
+    <tr><td><strong>풀코스 난이도</strong></td><td>누적 고도 485m — 전국 두 번째 수준 (안동 700m보다는 낮지만 평지 대회 대비 2배)</td></tr>
+    <tr><td><strong>10km·5km 난이도</strong></td><td>풀·하프 코스 일부 사용으로 짧은 오르막 포함, 입문자 도전 가능</td></tr>
+    <tr><td><strong>기념품</strong></td><td>청원생명쌀 4kg(10km 이상) + 티셔츠 + 완주 메달</td></tr>
+    <tr><td><strong>현장 먹거리</strong></td><td>청원생명쌀 비빔밥, 생명쌀떡, 김밥</td></tr>
+    <tr><td><strong>매년 개최 시기</strong></td><td>10월 셋째 주 토요일 (가을 단풍 절정)</td></tr>
+  </tbody>
+</table>
+
+<h2>10km·5km 코스 미리 보기</h2>
+
+<p>풀코스가 누적 고도 485m로 난도가 높은 반면, <strong>10km·5km는 호수 둘레 진입부와 회귀 구간 위주</strong>로 운영됩니다. 풀코스의 격렬한 업힐 구간(전반 17km)은 포함되지 않지만, 호반 도로 특성상 완전 평지는 아닙니다.</p>
+
+<ul>
+  <li><strong>5km</strong> — 문의체육공원 출발·복귀 호반 짧은 루프. 입문자도 안전하게 완주 가능. 호수 풍경 충분.</li>
+  <li><strong>10km</strong> — 호반 둘레 일부 + 청남대 진입로 인접 구간. 짧은 오르막 1-2회 포함. 평지 10km PB 대비 5-10분 늦어진다고 보면 적정.</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">10월 17일 충북 날씨</p>
+    <p>10월 중순 충북 평균 기온 15-20도, 대청호 인근은 새벽 안개가 자주 끼지만 대회 시간(8:40 출발)에는 해소됩니다. 출발 시 13-16도, 종료 시 18-21도 정도로 가을 마라톤 황금 조건입니다. 호수 풍경 + 가을 단풍 + 적정 기온 = 사진 찍기 좋은 환경.</p>
+  </div>
+</div>
+
+<h2>10월 대청호 — 어떤 신발을 신을까</h2>
+
+<p>호반 아스팔트·포장 수변도로 + 짧은 오르막 환경에서는 <strong>데일리 트레이너 또는 경량 슈퍼 트레이너</strong>가 정답입니다. 종목별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>10km (적정 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+    </tr>
+    <tr>
+      <td><strong>10km (PB 도전)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>5km (가족 단위)</strong></td>
+      <td>일반 데일리</td>
+      <td><a href="/shoes/asics-novablast-5">노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
+    </tr>
+    <tr>
+      <td><strong>입문 러너 (첫 메달)</strong></td>
+      <td>안정성+쿠션</td>
+      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발볼·아치·무게에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
+
+<h2>교통·숙박</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (권장)</strong></td>
+      <td>서울역 → 오송역(약 50분) → 청주 시내 환승 → 문의체육공원 차량 30분</td>
+      <td>약 1시간 50분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>동서울·강남 → 청주 시외터미널 → 택시 약 30분</td>
+      <td>약 2시간 30분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 남청주IC 또는 신탄진IC → 문의면</td>
+      <td>약 2시간</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚗</span>
+  <div class="callout-body">
+    <p class="callout-title">대회 당일 도로 통제 — 새벽 도착 또는 전날 숙박</p>
+    <p>대회 당일 오전 8시-오후 2시 일부 도로가 통제되며, 호반 주차장·문의중학교 임시주차장은 새벽에 빠르게 만차됩니다. 7시 30분 집결을 고려하면 <strong>전날 청주 시내 숙박</strong>이 안전합니다. 청주 시내 호텔 + 대회 후 청남대 관광 + 청주 한옥마을 1박 2일 일정도 추천. 셔틀버스 운영 여부는 9월 중순 race.cjsports.or.kr 공지로 확인.</p>
+  </div>
+</div>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 제23회 대청호마라톤은 <strong>역대 최대 6,500명</strong>이 참가하며 성황리에 마무리됐습니다. 후기 공통점:</p>
+
+<ul>
+  <li>"호수 풍경 + 가을 단풍 풍경 = 사진 천국, 완주 만족도 매우 높음"</li>
+  <li>"풀코스 오르막 구간 난도 높지만 도전 욕구 자극"</li>
+  <li>"청원생명쌀 4kg + 비빔밥 + 떡 = 가성비 마라톤 최상위"</li>
+  <li>"10km라도 호반 짧은 오르막 있어 평지 10km보다 약간 어려움"</li>
+  <li>"기안84 효과로 가족 단위 참가자 다수, 분위기 친근"</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>10km(5/11)·5km(5/14) 오전 10시 알람 + 준비</h3>
+  <ul>
+    <li>✅ <strong>스마트폰 알람</strong> — 5월 11일 09:55 (10km), 5월 14일 09:55 (5km)</li>
+    <li>✅ <strong>회원가입 미리</strong> — race.cjsports.or.kr 사전 가입으로 접수 시 시간 단축</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 10km(45K) / 5km(25K), 학생 할인 확인</li>
+    <li>✅ <strong>입금 일정</strong> — 접수 완료 후 <strong>7일 이내 입금</strong> 필수</li>
+    <li>✅ <strong>전날 청주 숙박 예약</strong> — 가을 단풍 시즌이라 빠른 마감 주의</li>
+    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">race.cjsports.or.kr</a> (사무국 043-279-8029)</li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">청원생명쌀 대청호마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DYBzCxejySN/" target="_blank" rel="noopener">@runninglife_korea 게시물</a>, <a href="https://www.ngonews.kr/news/articleView.html?idxno=216337" target="_blank" rel="noopener">2025 대회 6,500명 성료 보도</a>, runningwikii. 풀·하프 매진 여부는 인스타 게시물 기반이며, 실시간 확정 매진 여부는 race.cjsports.or.kr에서 확인하세요.
+</p>
+`,
+  },
+  {
     id: '2026-andong-marathon',
     slug: '2026-andong-marathon',
     title: '2026 안동마라톤 접수 시작 D+1 | 10월 4일 획득고도 700m+ 국내 최상급 난코스, 작년 며칠 만에 조기 마감',
