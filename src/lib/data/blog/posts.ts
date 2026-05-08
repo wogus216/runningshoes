@@ -2,6 +2,407 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-gyeongju-international-marathon',
+    slug: '2026-gyeongju-international-marathon',
+    title: '2026 경주국제마라톤 D-17 | 5/26 접수, World Athletics 엘리트 라벨 + 유네스코 신라 유적 코스',
+    description: '동아일보 2026 경주국제마라톤(10/17 토) 동마클럽 멤버십 우선접수가 5월 26일(화) 19시 시작됩니다. 첨성대·대릉원·동궁과월지 통과, 총 획득고도 146m 완만 코스, 23.5~33km 내리막 기록 단축 구간. 2025년 World Athletics 엘리트 라벨 승격(국내 유일) + 역대 최대 15,000명 — 동마 3대장 가을 시즌 완결편.',
+    thumbnail: '/images/blog/2026-gyeongju-international-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-09',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['경주국제마라톤', '경주 마라톤', '경상북도 마라톤', '동마클럽', '신라 마라톤', '유네스코 마라톤', 'World Athletics 엘리트 라벨', '대회 일정'],
+    event: {
+      name: '동아일보 2026 경주국제마라톤대회',
+      startDate: '2026-10-17T08:00:00+09:00',
+      location: {
+        name: '경주시민운동장',
+        address: '경상북도 경주시 시민운동장 일원',
+      },
+      organizer: '동아일보 (동마클럽) · 경주시·경상북도',
+      url: 'https://www.gyeongjumarathon.com/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '하프코스 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '5월 26일 19시가 멤버십 우선접수인가요, 본접수인가요?',
+        answer: '동마클럽 5월 캘린더 기준 5월 26일(화) 19시는 우선접수 또는 본접수 시작 일자로 안내됐으나 정확한 구분은 5월 중 동마클럽 공지로 확정됩니다. 2025년 패턴(우선 5/26~30 → 본 6/3 19시)을 따른다면 5/26은 멤버십 우선접수 가능성이 큽니다. 동마 멤버십 가입자는 5/26 19시 정각에 dongma.club 접속, 일반 러너는 별도 공지된 본접수일을 대비하세요.',
+      },
+      {
+        question: '경주국제마라톤이 World Athletics 엘리트 라벨이라는 게 무슨 의미인가요?',
+        answer: '2025년에 World Athletics(세계육상연맹) 엘리트 라벨로 승격됐고, 이는 국내 지방 대회 중 유일한 등급입니다. 등급 순서는 라벨 → 엘리트 → 골드 → 플래티넘이며, 서울마라톤(플래티넘)·대구마라톤(골드)에 이어 한국 3번째 국제 공인 마라톤입니다. 엘리트 라벨 승격은 코스 정확성·안전·해외 엘리트 선수 초청·공식 페이서·도핑 검사 등 국제 기준을 충족했다는 의미로, 풀코스 기록을 국제 공인 기록으로 인정받을 수 있습니다.',
+      },
+      {
+        question: '코스에 불국사도 포함되나요?',
+        answer: '아쉽게도 코스에는 불국사·석굴암이 포함되지 않습니다. 코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조로, 5~16km 구간에 첨성대·대릉원·천마총·동궁과월지를 연속 통과합니다. 불국사·석굴암은 시내에서 차로 20분 거리 외곽이라 별도 통과는 안 됩니다. 대회 전날 또는 완주 후 1박2일 관광으로 방문하는 게 정석입니다.',
+      },
+      {
+        question: '코스 난이도는 어느 정도인가요?',
+        answer: '동마 3대장 중 가장 쉬운 편입니다. 총 획득고도 146m로 공주백제(평지)와 안동(700m+) 사이 난이도이며, 16~24km 구간 북천 오르막(약 30m 상승)이 유일한 관문입니다. 23.5~33km 구간은 완만한 내리막으로 기록 단축 황금 구간이며, 36~42km 마무리는 잔잔한 낙타등이 반복됩니다. 10월 중순 경주 평균 17~19도로 마라톤 최적 조건이라 풀코스 PB 도전에 매우 유리합니다.',
+      },
+      {
+        question: '마라톤 + 경주 관광 1박 2일 일정은 어떻게 짜나요?',
+        answer: '추천 일정: ① 토요일 오전 KTX 신경주역 도착 → 점심 황남빵·교리김밥 → 오후 불국사·석굴암 관람 → 저녁 동궁과월지(안압지) 야경 → 경주 시내 숙박. ② 일요일 새벽 경주시민운동장 집결 → 8시 출발 → 풀코스 완주(목표 4-5시간) → 점심 회복식(경주 한정식) → 오후 KTX 복귀. 첨성대·대릉원은 코스 위에서 직접 통과하며 관람할 수 있어 별도 일정이 필요 없습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>동아일보 2026 경주국제마라톤 — 2026년 10월 17일(토) 경주시민운동장 출발, 풀·하프·10K 3종목, 정원 약 15,000명 (2025년 역대 최대)</li>
+    <li><strong>5월 26일(화) 19시 dongma.club 접수 시작</strong> — 2025년 패턴 기준 동마 멤버십 우선접수, 일반 본접수는 6월 초 별도 공지</li>
+    <li><strong>World Athletics 엘리트 라벨</strong>(2025 승격, 국내 유일 지방 대회) + 첨성대·대릉원·동궁과월지 코스 통과 — 동마 3대장 가을 완결편</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 26일(화) 19시 D-17 — 동마클럽 로그인 사전 점검</p>
+    <p>경주국제마라톤은 2025년 15,000명 정원이 빠르게 채워졌습니다. 5월 26일 19시 정각에 dongma.club 접속해 멤버십 또는 본접수 진입을 시도하려면 사전에 회원가입·로그인·결제 수단 등록·시계 동기화까지 마쳐두는 게 안전합니다. 정확한 우선/본접수 구분은 5월 중 동마클럽 공식 공지로 확정됩니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/17 (토)</span>
+    <span class="stat-sub">경주시민운동장</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 시작</span>
+    <span class="stat-value">5/26 (화)</span>
+    <span class="stat-sub">19시 / dongma.club</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">정원</span>
+    <span class="stat-value">15,000명</span>
+    <span class="stat-sub">2025 역대 최대</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">국제 공인</span>
+    <span class="stat-value">엘리트 라벨</span>
+    <span class="stat-sub">국내 유일 지방 대회</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.26 (화) 19시 — D-17</span>
+    <span class="timeline-title">접수 오픈 (멤버십 우선 또는 일반 본접수)</span>
+    <p class="timeline-desc">동마클럽 5월 캘린더에 명시된 일정. 우선/본접수 구분은 5월 중 공식 공지</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06 초 (예상)</span>
+    <span class="timeline-title">일반 본접수 (2025년 6/3 패턴 시)</span>
+    <p class="timeline-desc">멤버십 우선접수 후 잔여석 일반 선착순. 정확 일정은 동마클럽 공지로 확정</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품, 셔틀버스 운영, 코스 통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.17 (토)</span>
+    <span class="timeline-title">대회 당일 — 경주시민운동장 7~7:30 집결, 8시 출발(추정)</span>
+    <p class="timeline-desc">10월 중순 경주 평균 17-19도, 최저 12도 — 마라톤 최적 조건</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비 (2025 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td></tr>
+    <tr><td>하프코스</td><td>21.0975km</td><td>50,000원</td></tr>
+    <tr><td>10K</td><td>10km</td><td>40,000원</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 공식 참가비는 5/26 접수 오픈 시 확정</p>
+    <p>위 금액은 2025년 기준이며, 2026년 정식 공지는 5월 26일 접수 오픈 시점 dongma.club·gyeongjumarathon.com에 게시됩니다. 동마 시리즈 전체로 보면 2025년 대비 변동 없거나 5,000원 이내 인상이 일반적입니다.</p>
+  </div>
+</div>
+
+<h2>왜 경주국제마라톤이 특별한가 — 동마 3대장 완결편</h2>
+
+<p>동마클럽이 운영하는 가을 시리즈 3개 대회 중 경주국제는 <strong>가장 늦게 열리는 가을 마라톤이자, 국제 위상이 가장 높은 대회</strong>입니다. 핵심 차별 포인트:</p>
+
+<table>
+  <thead>
+    <tr><th>차별 포인트</th><th>경주국제마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>국제 공인 등급</strong></td>
+      <td>World Athletics <strong>엘리트 라벨</strong> (2025 승격, 국내 유일 지방 대회)</td>
+    </tr>
+    <tr>
+      <td><strong>코스 위 유적지</strong></td>
+      <td>첨성대·대릉원·천마총·동궁과월지·오릉 — 신라 천년고도 직접 통과</td>
+    </tr>
+    <tr>
+      <td><strong>코스 난이도</strong></td>
+      <td>총 획득고도 146m, 완만 — 풀코스 PB 도전에 적합</td>
+    </tr>
+    <tr>
+      <td><strong>날씨</strong></td>
+      <td>10월 중순 경주 평균 17-19도 — 마라톤 최적 조건</td>
+    </tr>
+    <tr>
+      <td><strong>참가 규모</strong></td>
+      <td>15,000명 (2025 역대 최대) — 동마 시리즈 최대</td>
+    </tr>
+    <tr>
+      <td><strong>관광 시너지</strong></td>
+      <td>불국사·석굴암 + 황남빵·동궁과월지 야경 1박2일 황금 코스</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>World Athletics 엘리트 라벨이라는 의미</h2>
+
+<p>2025년 경주국제마라톤은 <strong>World Athletics 엘리트 라벨</strong>로 승격됐습니다. 등급 순서는 다음과 같습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>등급</th><th>한국 사례</th><th>주요 조건</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>플래티넘 (최상위)</td><td>서울마라톤</td><td>해외 엘리트 30+, 경기 운영 최상급</td></tr>
+    <tr><td>골드</td><td>대구마라톤</td><td>해외 엘리트 20+, 도핑·페이서 정식</td></tr>
+    <tr><td><strong>엘리트</strong></td><td><strong>경주국제마라톤</strong></td><td>국제 공인 코스, 정식 페이서·도핑</td></tr>
+    <tr><td>라벨</td><td>(다수 도시 대회)</td><td>기본 국제 인증</td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">엘리트 라벨에서 풀코스 기록의 가치</p>
+    <p>엘리트 라벨 이상에서 달성한 풀코스 기록은 World Athletics 공식 기록으로 인정됩니다. 보스턴마라톤 자격 기록(BQ)이나 다른 메이저 마라톤 신청 시 활용 가능. <strong>2027 서울마라톤 풀코스 그룹 배정용 기록증</strong>으로도 인정됩니다.</p>
+  </div>
+</div>
+
+<h2>코스 — 신라 천년고도 위를 달리는 42.195km</h2>
+
+<p>코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조입니다. 구간별 특징:</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특성</th><th>공략 포인트</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>0-5km</strong></td>
+      <td>경주시민운동장 → 시내 진입, 평지</td>
+      <td>오버페이스 금지, 페이스 안정화</td>
+    </tr>
+    <tr>
+      <td><strong>5-16km</strong> ⭐</td>
+      <td>유적지 황금 구간 — 첨성대·대릉원·천마총·동궁과월지 연속 통과</td>
+      <td>풍경 즐기되 페이스 일정 유지</td>
+    </tr>
+    <tr>
+      <td><strong>16-24km</strong></td>
+      <td>북천 오르막 — 약 30m 상승, 코스 최난구간</td>
+      <td>심박 80% 이하, 짧은 보폭으로 효율</td>
+    </tr>
+    <tr>
+      <td><strong>23.5-33km</strong> 🏆</td>
+      <td>완만한 내리막 — 기록 단축 황금 구간</td>
+      <td>페이스 끌어올리기 적기, 다리 회복</td>
+    </tr>
+    <tr>
+      <td><strong>33-42km</strong></td>
+      <td>잔잔한 낙타등 반복, 마무리</td>
+      <td>젤·소금 알약 비축, 의지력 게임</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">🏛</span>
+  <div class="callout-body">
+    <p class="callout-title">코스에 없는 것 — 불국사·석굴암</p>
+    <p>경주의 대표 유적인 불국사·석굴암은 코스에서 통과하지 않습니다. 시내에서 차로 20분 거리 외곽이라 별도 일정이 필요합니다. <strong>대회 전날 도착하면 오후 시간에 불국사·석굴암 → 저녁 동궁과월지 야경</strong> 코스가 정석. 완주 후 일정 여유가 있다면 일요일 오전에 다녀와도 OK.</p>
+  </div>
+</div>
+
+<h2>10월 경주 — 어떤 신발을 신을까</h2>
+
+<p>총 획득고도 146m + 23.5-33km 내리막 + 17-19도 + 아스팔트 시내 코스 — 한 마디로 <strong>풀코스 PB 도전에 가장 좋은 환경</strong>입니다. 종목별·목적별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀 PB 도전 (Sub-3:00~3:30)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>풀 안전 완주 (4:00~5:00)</strong></td>
+      <td>슈퍼 트레이너 (쿠션+가벼움)</td>
+      <td><a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프 (안정 페이스)</strong></td>
+      <td>경량 카본 또는 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (즐기는 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">⛰</span>
+  <div class="callout-body">
+    <p class="callout-title">23.5-33km 내리막 대비 — 힐 쿠셔닝 우선</p>
+    <p>경주국제마라톤의 황금 구간(23.5-33km 내리막)에서는 페이스를 끌어올리되, 동시에 무릎과 종아리에 충격이 누적됩니다. 카본 플레이트화 중에서도 <strong>힐 쿠셔닝이 충분한 모델</strong>(아디오스 프로·메타스피드 에지)이 알파플라이·베이퍼플라이보다 안전합니다. 풀코스 후반 30km 이후 경련 위험을 줄이는 핵심.</p>
+  </div>
+</div>
+
+<h2>교통·숙박 — 경주는 KTX보다 시내 접근성이 핵심</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (빠름)</strong></td>
+      <td>서울역 → 신경주역(건천읍) → 시내버스·택시 20-30분</td>
+      <td>약 2시간 10분 + α</td>
+    </tr>
+    <tr>
+      <td><strong>고속버스 (편함)</strong></td>
+      <td>서울 경부 → 경주 시외터미널 → 대회장 택시 10분</td>
+      <td>약 3시간 30분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 경주IC</td>
+      <td>약 4시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚄</span>
+  <div class="callout-body">
+    <p class="callout-title">신경주역은 시내가 아니라 건천읍</p>
+    <p>KTX 신경주역은 건천읍 외곽에 있어 경주 시내까지 추가 이동(20-30분)이 필요합니다. 가성비를 따진다면 <strong>고속버스가 사실상 더 편할 수 있습니다</strong> — 시외터미널이 시내 한가운데 있어 대회장·숙소 접근성이 좋습니다. 대회 당일 셔틀버스는 운영되지만 조기 마감되니 사전 신청 확인 필수.</p>
+  </div>
+</div>
+
+<h2>경주 1박 2일 마라톤 + 관광 추천 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>시점</th><th>일정</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>토요일 오전</strong></td><td>KTX 신경주역 도착 → 시내 이동 → 점심 (황남빵·교리김밥)</td></tr>
+    <tr><td>토요일 오후</td><td>불국사·석굴암 (외곽 30분 거리)</td></tr>
+    <tr><td>토요일 저녁</td><td>동궁과월지(안압지) 야경 → 경주 시내 한정식 → 호텔 체크인 (경주 시내 도보권)</td></tr>
+    <tr><td><strong>일요일 새벽</strong></td><td>06:00 기상 → 체조·간단한 식사 → 경주시민운동장 집결 (도보·셔틀)</td></tr>
+    <tr><td>일요일 오전</td><td>08:00 출발 → 풀코스 완주 (목표 4-5시간)</td></tr>
+    <tr><td>일요일 오후</td><td>회복식 → 황남빵 선물 → KTX 복귀</td></tr>
+  </tbody>
+</table>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 경주국제마라톤은 <strong>역대 최대 15,000명</strong>이 참가하며 World Athletics 엘리트 라벨 첫 해를 기념했습니다. 풀코스 우승은 아일랜드 퍼갈 커틴이 차지했고, APEC 정상회의 시점과 겹쳐 국제 관광 효과까지 누렸습니다.</p>
+
+<ul>
+  <li>"평지에 가까운 코스 + 가을 최적 기온 = PB 잘 나오는 마라톤"</li>
+  <li>"23.5-33km 내리막 구간에서 페이스 끌어올리기 황금 시간"</li>
+  <li>"첨성대·대릉원 통과할 때 풍경에 압도, 페이스 까먹지 말 것"</li>
+  <li>"동궁과월지 야경 + 황남빵 선물 = 가족 단위 만족도 최상"</li>
+  <li>"불국사 미통과는 아쉽지만 전날 다녀오면 충분"</li>
+</ul>
+
+<h2>5월 동마 4개 대회 캘린더 — 이번 시즌 종합</h2>
+
+<p>경주국제마라톤은 동마 가을 시리즈의 <strong>마지막 퍼즐</strong>입니다. 4개 대회 모두 5월에 접수가 열리니 시즌 전체 일정으로 잡으면 효율적:</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>대회일</th><th>접수일</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2027 서울마라톤</td>
+      <td>2027.03.21</td>
+      <td>우선 5/18~22 / 본 6/1~3</td>
+      <td><a href="/blog/2027-seoul-marathon-priority-d10">우선접수 D-10 가이드</a></td>
+    </tr>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>2026.09.20</td>
+      <td>우선 5/11~15 / 본 5/21</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">평지 입문 풀코스</a></td>
+    </tr>
+    <tr>
+      <td>2026 서울레이스 (하프·10K)</td>
+      <td>2026.10.11</td>
+      <td>본접수 5/27 19시·21시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+    <tr>
+      <td><strong>2026 경주국제마라톤</strong></td>
+      <td><strong>2026.10.17</strong></td>
+      <td><strong>접수 5/26 19시</strong></td>
+      <td><strong>이 글</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>10월 17일에는 같은 날 충북 청주에서 <a href="/blog/2026-daecheongho-marathon">청원생명쌀 대청호마라톤</a>도 열립니다. 경주(엘리트 라벨, 풀 PB 도전)와 대청호(가성비, 10km·5km 입문)는 성격이 완전히 달라서 동시에 도전 가능한 옵션입니다.</p>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 26일(화) 19시 D-Day 준비</h3>
+  <ul>
+    <li>✅ <strong>동마클럽 회원가입·로그인 사전 확인</strong> — dongma.club 마이페이지 접속 가능 상태</li>
+    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 카카오/네이버페이 둘 다 사전 등록</li>
+    <li>✅ <strong>시계 동기화</strong> — time.navyism.com (1초 단위)</li>
+    <li>✅ <strong>5/26 18:55 알람 설정</strong> — 5분 전 PC 셋업</li>
+    <li>✅ <strong>전날 경주 숙박 예약</strong> — 가을 단풍 + APEC 후 관광 붐, 빠른 마감</li>
+    <li>✅ <strong>러닝화 결정</strong> — PB 도전이라면 카본 레이싱화 6-8주 전 길들이기, <a href="/recommend">맞춤 추천</a> 활용</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">gyeongjumarathon.com</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">경주국제마라톤 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 참가비·코스), 한국육상연맹·sports.news.nate.com(2025 대회 보도). 우선/본접수 정확 구분과 2026년 참가비는 5월 중 동마클럽 공식 공지로 확정됩니다.
+</p>
+`,
+  },
+  {
     id: '2027-seoul-marathon-priority-d10',
     slug: '2027-seoul-marathon-priority-d10',
     title: '2027 서울마라톤 우선접수 D-10 | 5/18 오픈 — 풀 그룹별 본접수까지 실전 가이드',
