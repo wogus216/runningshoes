@@ -2,6 +2,346 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-seoul-race',
+    slug: '2026-seoul-race',
+    title: '2026 서울레이스 D-18 | 5/27 접수, 청계광장 출발 도심 하프·10K — 5분 컷 마감 주의',
+    description: '2026 서울레이스(SEOUL RACE) 본접수가 5월 27일(수) 하프 19시·10K 21시에 시작됩니다. 청계광장 출발, 종로·숭례문·시청·청계천·DDP 통과 도심 평지 코스. 동마 시리즈 유일 가을 도심 하프 전용 — 작년 하프 9,100명 역대 최다, 오픈 5분 내 마감 빈번. 풀코스 없는 도심 페스티벌형 마라톤.',
+    thumbnail: '/images/blog/2026-seoul-race.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-09',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['서울레이스', 'Seoul Race', '서울 마라톤', '도심 마라톤', '동마클럽', '하프마라톤', '청계광장', '대회 일정'],
+    event: {
+      name: '2026 서울레이스 (SEOUL RACE)',
+      startDate: '2026-10-11T08:00:00+09:00',
+      location: {
+        name: '청계광장 앞 세종대로 → 무교로 골인',
+        address: '서울특별시 종로구 청계광장 앞 세종대로',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://www.seoul-race.co.kr/',
+      offers: [
+        { name: '하프마라톤 (5/27 19시 본접수)', priceKrw: 70000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '10K (5/27 21시 본접수)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '서울레이스가 서울마라톤이랑 뭐가 다른가요?',
+        answer: '서울마라톤(매년 3월, 풀코스 중심)이 도시 전체를 관통하는 본격 풀코스 대회라면, 서울레이스(매년 10월)는 풀코스 없이 도심 하프·10K만 운영하는 가을 도심 페스티벌입니다. 출발이 광화문이 아니라 청계광장이고, 코스도 청계천·종로·을지로·DDP를 잇는 도심 순환형이라 풀 마라톤보다 짧고 입문 친화적입니다. 운영은 둘 다 동마클럽(동아일보)이 합니다.',
+      },
+      {
+        question: '5월 27일 하프 19시·10K 21시가 무슨 뜻인가요?',
+        answer: '같은 날 두 종목의 접수 오픈 시각이 시간 분리됐다는 뜻입니다. 하프(8,500명)는 19시 정각에, 10K(4,000명)는 21시 정각에 dongma.club에서 동시 선착순 시작합니다. 한 사람이 둘 다 도전하려면 두 시간대 모두 PC 앞에 앉아 있어야 합니다. 작년 하프는 오픈 5분 내 마감됐으니 결제 수단 등록·시계 동기화는 두 시간대 모두 미리 해두세요.',
+      },
+      {
+        question: '하프 70,000원, 10K 60,000원이 좀 비싼 거 아닌가요?',
+        answer: '동마 시리즈 다른 대회(공주백제 하프 50K·10K 40K, 경주국제 하프 50K·10K 40K)보다 2만원 정도 비쌉니다. 이유는 ① 서울 도심 코스 운영 비용(교통통제·경찰·구조 인력), ② PUMA 협찬 공식 티셔츠 + 완주 메달, ③ DDP·청계광장 등 랜드마크 사용료. 서울 도심에서 하프 뛰는 경험과 PUMA 티셔츠 가치를 더하면 가성비는 합리적이라는 평가가 다수입니다.',
+      },
+      {
+        question: '도심 코스에 어떤 신발이 좋나요?',
+        answer: '청계광장~종로~을지로~청계천~DDP 100% 아스팔트 평지 코스라 ① 하프 PB 도전 → 카본 플레이트 레이싱화(아디오스 프로 4·베이퍼플라이 4·메타스피드 에지) ② 하프 안전 완주 → 슈퍼 트레이너(슈퍼블라스트 2·페가수스 플러스) ③ 10K 가벼운 페이스 → 데일리 트레이너(페가수스 42·1080 v15)가 정답입니다. 평지라 안정화는 굳이 필요 없고, 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
+      },
+      {
+        question: '같은 주말에 경주국제마라톤도 있는데 어디 가야 하나요?',
+        answer: '서울레이스 10월 11일(일), 경주국제마라톤 10월 17일(토) — 한 주 차이입니다. 둘 다 도전은 권장하지 않으며 (회복 시간 부족) 성격에 따라 갈라야 합니다. ① 서울에서 도심 하프·10K 페스티벌 분위기 + 풀코스 부담 없이 → 서울레이스. ② 풀코스 PB 도전 + 신라 유적 코스 + 1박2일 관광 → 경주국제마라톤. 동마 멤버십 가입자라면 둘 다 우선접수 가능하지만 한쪽만 선택하는 게 현실적입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026 서울레이스 — 2026년 10월 11일(일) 청계광장 출발 → 종로·숭례문·시청·청계천·DDP 통과 → 무교로 골인 도심 평지 코스</li>
+    <li>본접수 <strong>5월 27일(수) 하프 19시 / 10K 21시</strong> dongma.club — 작년 하프 5분 내 마감, PC 셋업 + 시계 동기화 필수</li>
+    <li>풀코스 없는 도심 하프·10K 전용 — <strong>동마 시리즈 유일 가을 도심 페스티벌형</strong>, 작년 12,800명 역대 최다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 27일 D-18 — 시간 분리 오픈, 두 번 PC 앞에 앉아야</p>
+    <p>하프(8,500명)는 5/27 19시, 10K(4,000명)는 21시로 <strong>같은 날 다른 시각</strong>에 오픈됩니다. 작년 하프는 오픈 5분 내 마감됐으니 한 종목만 노린다고 안심하면 안 됩니다. PC 셋업·결제 수단 등록·시계 동기화는 19시·21시 두 차례 모두 적용. 동마클럽 회원가입과 로그인은 지금 미리 해두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/11 (일)</span>
+    <span class="stat-sub">청계광장 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 접수</span>
+    <span class="stat-value">5/27 19시</span>
+    <span class="stat-sub">정원 8,500명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K 접수</span>
+    <span class="stat-value">5/27 21시</span>
+    <span class="stat-sub">정원 4,000명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">2025 참가</span>
+    <span class="stat-value">12,800명</span>
+    <span class="stat-sub">역대 최다</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.27 (수) 19시 — D-18</span>
+    <span class="timeline-title">하프마라톤 본접수 시작</span>
+    <p class="timeline-desc">정원 8,500명 선착순 — 작년 5분 내 마감, dongma.club</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.27 (수) 21시</span>
+    <span class="timeline-title">10K 본접수 시작 (같은 날 2시간 후)</span>
+    <p class="timeline-desc">정원 4,000명 선착순 — 하프 도전한 사람도 다시 PC 앞으로</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">PUMA 티셔츠 사이즈 확인, 청계광장 일대 통제 시간 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.11 (일)</span>
+    <span class="timeline-title">대회 당일 — 청계광장 7시 집결, 8시 출발(추정)</span>
+    <p class="timeline-desc">10월 둘째 주 서울 평균 10-15도, 강수 적은 쾌청 시즌</p>
+  </div>
+</div>
+
+<h2>종목별 참가비·정원 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비</th><th>정원</th><th>제한시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프마라톤</strong></td>
+      <td>21.0975km</td>
+      <td>70,000원</td>
+      <td>8,500명</td>
+      <td>2시간 30분</td>
+    </tr>
+    <tr>
+      <td>10K</td>
+      <td>10km</td>
+      <td>60,000원</td>
+      <td>4,000명</td>
+      <td>1시간 40분</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 70,000원? — 도심 코스 + PUMA 협찬</p>
+    <p>서울레이스 하프 70,000원은 동마 다른 대회(공주백제·경주국제 하프 50,000원)보다 2만원 비쌉니다. 이유: ① <strong>서울 도심 교통통제 비용</strong>(경찰·구조 인력·DDP/청계광장 사용료), ② <strong>PUMA 공식 티셔츠</strong>(시중 4-5만원 가치), ③ 완주 메달 + 도심 페스티벌 운영. 도심 하프 경험 + PUMA 티셔츠를 합치면 가성비는 합리적이라는 평가가 많습니다.</p>
+  </div>
+</div>
+
+<h2>코스 — 서울 도심 랜드마크 21.0975km</h2>
+
+<p>출발은 <strong>청계광장 앞 세종대로</strong>, 도착은 <strong>무교로</strong>(청계광장 인근)로 사실상 같은 지점에서 시작·종료합니다. 도심 평지 100% 아스팔트 코스로, 평소 차량 전용 도로를 달리는 색다른 경험이 핵심 매력입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>통과 랜드마크</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>출발 (Start)</strong></td>
+      <td>청계광장 앞 세종대로 → 종로1가</td>
+    </tr>
+    <tr>
+      <td>0-5km</td>
+      <td>종로1가 → 동대문역 → DDP 인근</td>
+    </tr>
+    <tr>
+      <td>5-10km</td>
+      <td>세종대로 사거리 → 숭례문 → 한국은행</td>
+    </tr>
+    <tr>
+      <td>10-15km</td>
+      <td>시청삼거리 → 을지로3가역 → 청계천 인근</td>
+    </tr>
+    <tr>
+      <td>15-21km</td>
+      <td>청계천 → DDP → 무교로 골인</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">🏛</span>
+  <div class="callout-body">
+    <p class="callout-title">평지 코스 + 가을 최적 기온 = 하프 PB 도전 적기</p>
+    <p>서울 도심은 고도 변화가 거의 없고 10월 둘째 주 평균 기온 10-15도로 하프 마라톤 최적 환경입니다. 다만 출발 직후 종로1가 좁은 구간 정체와 5km까지의 페이스 욕심이 함정 — 첫 5km는 의도적으로 천천히, 5-15km에서 페이스 끌어올리는 전략이 정석입니다. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a> 참고.</p>
+  </div>
+</div>
+
+<h2>동마 가을 시리즈 내 서울레이스의 포지션</h2>
+
+<p>동마클럽이 운영하는 가을 대회는 4개. 서울레이스는 그중 유일하게 <strong>풀코스 없이 도심 하프·10K만 운영하는 페스티벌형</strong>입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>일자</th><th>종목</th><th>코스 성격</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>9/20 (일)</td>
+      <td>풀·32K·하프·10K·5K</td>
+      <td>금강변 평지 입문 풀코스</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">D-4 우선접수</a></td>
+    </tr>
+    <tr>
+      <td><strong>2026 서울레이스</strong></td>
+      <td><strong>10/11 (일)</strong></td>
+      <td><strong>하프·10K</strong></td>
+      <td><strong>서울 도심 평지 페스티벌</strong></td>
+      <td><strong>이 글</strong></td>
+    </tr>
+    <tr>
+      <td>2026 경주국제마라톤</td>
+      <td>10/17 (토)</td>
+      <td>풀·하프·10K</td>
+      <td>신라 유적 코스 / 엘리트 라벨</td>
+      <td><a href="/blog/2026-gyeongju-international-marathon">D-17 접수</a></td>
+    </tr>
+    <tr>
+      <td>2027 서울마라톤</td>
+      <td>2027.3.21 (일)</td>
+      <td>풀·10K</td>
+      <td>서울 도심 풀코스 (플래티넘)</td>
+      <td><a href="/blog/2027-seoul-marathon-priority-d10">D-10 우선접수</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">서울레이스 vs 경주국제 — 한 주 차이 선택 가이드</p>
+    <p>10/11 서울레이스와 10/17 경주국제는 일주일 차이라 둘 다 뛰는 건 회복상 부담이 큽니다. 선택 기준: ① <strong>풀코스 PB 도전 + 1박2일 관광 + 신라 유적</strong> → 경주, ② <strong>서울에서 도심 하프 페스티벌 + 풀코스 부담 없이 + 당일치기</strong> → 서울레이스. 둘 다 도전한다면 서울레이스 10K(가벼운 페이스) + 경주 풀(메인) 조합이 그나마 현실적.</p>
+  </div>
+</div>
+
+<h2>10월 서울 도심 — 어떤 신발을 신을까</h2>
+
+<p>100% 아스팔트 평지 + 10-15도 + 하프 또는 10K 환경에서는 종목·목표별로 추천이 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프 PB 도전 (Sub-1:30~1:45)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>하프 안전 완주 (1:45~2:30)</strong></td>
+      <td>슈퍼 트레이너</td>
+      <td><a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (PB 도전)</strong></td>
+      <td>경량 카본 또는 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (즐기는 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발에 맞는 모델 1분 안에 확인할 수 있습니다.</p>
+
+<h2>접수 실전 노하우 — 5분 컷 마감 대비</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">⚡</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 27일 D-Day 직전 체크리스트</p>
+    <ol style="margin-top:8px;">
+      <li><strong>동마클럽 사전 회원가입·로그인</strong> — 5/27 18:30까지 완료</li>
+      <li><strong>유선랜 PC + 모바일 동시 접속</strong> — 트래픽 폭주 대비 백업</li>
+      <li><strong>결제 수단 2가지 등록</strong> — 카드 + 카카오/네이버페이</li>
+      <li><strong>브라우저 자동입력</strong> — 이름·생년월일·연락처·주소 모두 저장</li>
+      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code>으로 1초 단위 (휴대폰 기본 시계 1-2초 오차 흔함)</li>
+      <li><strong>19시·21시 두 차례 알람</strong> — 하프·10K 모두 노린다면 두 시각 모두</li>
+      <li><strong>접속 페이지 사전 로딩</strong> — 정시 직전 dongma.club 접수 페이지 → F5 대기</li>
+    </ol>
+  </div>
+</div>
+
+<h2>교통 — 대중교통 강력 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>지하철</th><th>역</th><th>도보</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1·2호선</td><td>시청역</td><td>1-2분 (서울광장 인접)</td></tr>
+    <tr><td>5호선</td><td>광화문역</td><td>2분 (청계광장 인접)</td></tr>
+    <tr><td>1호선</td><td>종각역</td><td>3분 (종로 방면)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚇</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용 절대 비추천</p>
+    <p>대회 당일 청계광장·세종대로·을지로·DDP 일대 전 구간 차량 통제됩니다. 자가용은 진입조차 불가능. 8시 출발에 맞추려면 7시 이전 도착이 안전한데, 시청역·광화문역 첫차(5:30~) 이용으로 충분합니다. 경기·인천 거주자는 광역버스 이용 가능.</p>
+  </div>
+</div>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 서울레이스는 <strong>참가자 12,800명, 하프 9,100명 역대 최다</strong>를 기록하며 가을 도심 마라톤의 대표 주자로 자리 잡았습니다. 후기 공통점:</p>
+
+<ul>
+  <li>"서울 도심 평지 코스 + 가을 최적 기온 = 하프 PB 잘 나온다"</li>
+  <li>"평소 차량으로만 다니던 종로·을지로·세종대로를 달리는 경험 압권"</li>
+  <li>"PUMA 협찬 티셔츠 디자인 만족도 매우 높음"</li>
+  <li>"청계천 인근 구간 도시 풍경 사진 찍기 좋음"</li>
+  <li>"하프 5분 내 마감 — 미리 준비 안 하면 진짜 못 들어감"</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 27일(수) 19시·21시 — 지금 해야 할 것</h3>
+  <ul>
+    <li>✅ <strong>동마클럽 회원가입</strong> — dongma.club, 마이페이지 진입 가능 확인</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 하프(70K) / 10K(60K) / 둘 다</li>
+    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 간편결제</li>
+    <li>✅ <strong>5/27 18:55, 20:55 알람</strong> — 하프·10K 두 시각 5분 전</li>
+    <li>✅ <strong>러닝화 결정</strong> — 도심 평지 + PB 도전이라면 카본, 안전 완주는 슈퍼 트레이너. <a href="/recommend">맞춤 추천</a></li>
+    <li>✅ <strong>시계 동기화 도구 북마크</strong> — time.navyism.com</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">seoul-race.co.kr</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">서울레이스 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 코스·참가비), sports.news.nate.com(2025년 12,800명 보도). 2026년 정확한 참가비·정원·집결 시간은 5월 27일 본접수 오픈 시 dongma.club·seoul-race.co.kr에 게시됩니다.
+</p>
+`,
+  },
+  {
     id: '2026-gyeongju-international-marathon',
     slug: '2026-gyeongju-international-marathon',
     title: '2026 경주국제마라톤 D-17 | 5/26 접수, World Athletics 엘리트 라벨 + 유네스코 신라 유적 코스',
