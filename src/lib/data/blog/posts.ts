@@ -2,6 +2,502 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-bape-adidas-evo-sl-release',
+    slug: '2026-bape-adidas-evo-sl-release',
+    title: 'BAPE × 아디다스 에보 SL D-21 | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
+    description: '6월 1일(월) 전 세계 동시 발매되는 BAPE × adidas Adizero Evo SL (KJ5751). 좌우 짝짝이 핑크/베이비블루 + ABC 카모 + Shooting Star 로고가 합쳐진 협업. 글로벌 $200 / 한국가 추정, 베이스 모델 가성비 슈퍼폼(83% 에너지 리턴) 그대로. 한국에서 살 수 있는 경로와 BAPE Store 서울·아디다스 앱 셋업까지.',
+    thumbnail: '/images/blog/2026-bape-adidas-evo-sl-release.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['BAPE', '아디다스', '아디제로 에보 SL', '콜라보', '한정판', '러닝화 발매', '슈퍼폼'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>BAPE × 아디다스 아디제로 에보 SL (KJ5751) — <strong>2026년 6월 1일(월) 전 세계 동시 발매</strong></li>
+    <li>좌우 비대칭 디자인(좌 베이비 블루 / 우 핑크) + ABC 카모(칼라·라이너·레이스) + 한 쪽 3-스트라이프 / 다른 쪽 Shooting Star</li>
+    <li>글로벌 정가 <strong>$200</strong> — 일반 에보 SL($150 / 한국 209,000원) 대비 약 33% 프리미엄. 한국 매장 BAPE 압구정·홍대 + 아디다스 앱 KR 가능성</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">발매 D-21 — 지금부터 해둬야 할 셋업</p>
+    <p>한정판 협업은 발매 당일 결제까지 가는 게 진짜 게임입니다. ① <strong>아디다스 KR 앱</strong> 회원가입 + 본인인증 + 결제 카드 등록, ② <strong>BAPE Store</strong> 압구정·홍대 매장 입고 문의 (전화/인스타 DM), ③ adidas Confirmed 앱 다운로드(글로벌 한정 발매 진행 채널) — 이 3가지는 5월 안에 끝내두세요.</p>
+  </div>
+</div>
+
+<h2>일단 무슨 신발인가</h2>
+
+<p>이번 협업은 BAPE(A Bathing Ape)와 아디다스의 2026 시즌 4번째 공동 작업입니다. 2월의 BAPE × adidas 풋볼 컬렉티브(World Cup 컬렉션) 이후, 이번엔 <strong>아디다스에서 가장 잘 팔리는 데일리 트레이너</strong>인 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>을 베이스로 골랐습니다.</p>
+
+<p>왜 에보 SL을 골랐는지 잠깐 짚자면, 이 신발이 2025~2026 글로벌 슈퍼폼 트렌드의 가성비 정답이기 때문입니다. <strong>아디오스 프로 3와 동일한 100% Lightstrike Pro 미드솔</strong>을 데일리 트레이너 가격(15만원)에 풀어 RunRepeat 83% 에너지 리턴 측정으로 화제가 됐죠. 223g 초경량 + 컨티넨탈 러버 아웃솔까지, 단가 대비 성능이 가장 균형 잡힌 모델입니다.</p>
+
+<h2>디자인 — 좌우 짝짝이가 핵심</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">발매일</span>
+    <span class="stat-value">6/1 (월)</span>
+    <span class="stat-sub">전 세계 동시</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">스타일 코드</span>
+    <span class="stat-value">KJ5751</span>
+    <span class="stat-sub">남녀 공용</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">글로벌 가격</span>
+    <span class="stat-value">$200</span>
+    <span class="stat-sub">≒ 한국 28만원대 추정</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">베이스 모델</span>
+    <span class="stat-value">에보 SL</span>
+    <span class="stat-sub">100% Lightstrike Pro</span>
+  </div>
+</div>
+
+<p>실물 이미지를 보면 한 번에 알 수 있는 포인트가 5가지입니다.</p>
+
+<ul>
+  <li><strong>좌우 비대칭 컬러:</strong> 한쪽은 베이비 블루 + 핑크 토 캡, 반대쪽은 핑크 + 블루 토 캡. 신발 한 켤레가 좌·우가 다른 색입니다. 멀리서 봐도 콜라보임을 알 수 있는 시그니처.</li>
+  <li><strong>ABC 카모 패턴:</strong> BAPE 시그니처 ABC(에이프) 카모가 칼라·라이너·레이스에만 적용. 어퍼 본체는 깔끔한 단색으로 유지.</li>
+  <li><strong>로고 짝짝이:</strong> 한쪽 사이드는 아디다스 <strong>3-스트라이프</strong>, 다른 쪽 사이드는 BAPE <strong>Shooting Star</strong> 로고. 두 브랜드를 한 켤레에 동등하게 박은 디자인.</li>
+  <li><strong>골드 디테일:</strong> 힐 카운터와 텅 라벨에 골드 액센트. 프리미엄 협업 톤을 잡아주는 포인트.</li>
+  <li><strong>퍼포먼스는 그대로:</strong> 미드솔(100% Lightstrike Pro), 아웃솔(컨티넨탈 러버), 무게(223g), 스택(힐 36mm / 전족부 28mm) — 베이스 모델과 동일. <strong>러닝화 성능은 손대지 않았다</strong>는 게 중요합니다.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 좌우 비대칭인가</p>
+    <p>BAPE × adidas 2026 시즌의 공통 디자인 언어입니다. 2월 풋볼 컬렉션 운동화도 같은 비대칭 패턴이었어요. 두 브랜드의 정체성을 한쪽씩 나누는 방식인데, 실제로 신었을 때 좌우 색이 다르면 도드라지기 때문에 호불호가 갈립니다. 출근·일상화로 쓸 거면 한 번 더 고민할 디자인입니다.</p>
+  </div>
+</div>
+
+<h2>한국에서 어떻게 사나 — 채널별 현실성</h2>
+
+<table>
+  <thead>
+    <tr><th>경로</th><th>현실성</th><th>가격대</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>① BAPE Store 서울(압구정·홍대)</strong></td>
+      <td>오프라인 발매 가능성 가장 높음. 줄서기 또는 응모 방식 예상</td>
+      <td>한국 정가 28~30만원대 추정</td>
+    </tr>
+    <tr>
+      <td><strong>② 아디다스 KR 앱·웹 (adidas.com/kr)</strong></td>
+      <td>2026년 BAPE 협업 풋볼 컬렉션이 한국 앱에서 동시 발매됐던 전례 있음</td>
+      <td>한국 정가</td>
+    </tr>
+    <tr>
+      <td><strong>③ adidas Confirmed 앱 (글로벌)</strong></td>
+      <td>아디다스 글로벌 한정 발매 공식 채널. 한국 IP에서 응모 가능하나 배송은 별도 확인</td>
+      <td>$200 + 배송비·관세</td>
+    </tr>
+    <tr>
+      <td><strong>④ BAPE.com 글로벌</strong></td>
+      <td>발매 직후 즉시 매진 패턴. 한국 직배송은 가능하나 관세 별도</td>
+      <td>$200 + 관·배송</td>
+    </tr>
+    <tr>
+      <td><strong>⑤ 리셀 (KREAM, StockX)</strong></td>
+      <td>발매 직후 프리미엄 30~50% 예상. 사이즈 빠른 매진 우려</td>
+      <td>35~45만원 추정</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 정식 발매 여부는 5월 마지막 주에 확정</p>
+    <p>현재(D-21 시점) 아디다스 코리아가 한국 발매를 공식 공지하지는 않았습니다. 통상 BAPE 협업은 발매 1~2주 전 인스타그램(@adidaskr / @bape_kr)에서 한국 발매 채널을 발표하는데, 5월 마지막 주 공지를 주시하세요.</p>
+  </div>
+</div>
+
+<h2>그래서 살 만한가 — 러너 관점 냉정한 평가</h2>
+
+<h3>✅ 사도 되는 사람</h3>
+
+<ul>
+  <li><strong>BAPE·스니커헤드 컬렉터</strong> — 운동화 패션 가치 우선. 좌우 비대칭 + 카모 + 골드는 BAPE 협업 중에서도 색감이 강한 편</li>
+  <li><strong>러닝 + 데일리 겸용 1켤레로 끝내고 싶은 러너</strong> — 베이스 모델 성능 그대로니까 5~10km 데일리 러닝과 출근까지 한 켤레로 커버 가능</li>
+  <li><strong>일반 에보 SL을 어차피 살 예정이었던 러너</strong> — 한국가 추정 28~30만원이면 정가 209,000원 대비 +7~9만원. 한정판 가치 더하면 본전 이상</li>
+</ul>
+
+<h3>❌ 안 사도 되는 사람</h3>
+
+<ul>
+  <li><strong>순수 퍼포먼스 목적 러너</strong> — 같은 미드솔의 일반 에보 SL이 15만원(세일가)에 살 수 있습니다. 좌우 짝짝이 색감이 거슬리면 본전 못 뽑음</li>
+  <li><strong>안정화·과내전 러너</strong> — 에보 SL은 안정성 6/10. 베이스 자체가 중립~빠른 페이스용이라 발 안정성 필요한 러너에게는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/new-balance-860-v15">860 v15</a>가 정답</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — BAPE 협업 버전은 표준 폭만 출시. 와이드 옵션 없음. 일반 에보 SL의 와이드(2E)를 살 거면 그쪽이 더 합리적</li>
+</ul>
+
+<h2>2026 아디다스 협업 흐름 정리</h2>
+
+<p>이번 BAPE × 에보 SL은 아디다스의 2026 협업 라인업 중에서도 러닝 성능과 패션이 균형 잡힌 모델입니다. 같은 시즌 다른 발매와 비교하면 위치가 분명해집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>발매</th><th>한국가</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>BAPE × 에보 SL</strong></td>
+      <td>2026.6.1</td>
+      <td>28~30만원 추정</td>
+      <td>러닝 + 패션 협업</td>
+    </tr>
+    <tr>
+      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td>
+      <td>2026.5.4 래플 / 가을 확대</td>
+      <td>74만원~</td>
+      <td>서브2 슈퍼슈즈, 100km 소모품</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/adidas-adizero-evo-sl">일반 에보 SL</a></td>
+      <td>상시</td>
+      <td>209,000원 (세일 15만원대)</td>
+      <td>가성비 슈퍼폼 데일리</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td>
+      <td>상시</td>
+      <td>약 32만원</td>
+      <td>데일리 가능한 카본화</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>요약 — D-21 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5/11~):</strong> 아디다스 KR 앱 회원가입·본인인증·결제카드 등록 / BAPE 압구정·홍대 매장 입고 문의 (@bape_kr DM)</li>
+  <li><strong>5월 마지막 주:</strong> 아디다스 코리아·BAPE 코리아 인스타그램 한국 발매 채널 공지 확인</li>
+  <li><strong>발매 전날 (5/31):</strong> adidas Confirmed 앱 알림 설정, 사이즈 미리 결정(에보 SL은 보통 사이즈 그대로 또는 발볼 넓으면 +0.5)</li>
+  <li><strong>6월 1일(월) 발매 당일:</strong> 발매 시각(보통 한국 오전 10시 또는 자정) 직전 앱 로그인 유지, 결제 단계까지 한 번에</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 우선이라면 일반 에보 SL이 정답</p>
+    <p>BAPE 협업이 끌리지 않거나 한정판 게임이 부담스럽다면, 일반 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>이 같은 성능을 15만원(세일가)에 제공합니다. 와이드 옵션까지 있어 한국 러너에게 더 적합. 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: Sneaker Bar Detroit / Sneaker News / Sole Retriever / WWD Footwear News / Modern Notoriety / Sneaker Freaker / Just Fresh Kicks / 작성일 2026년 5월 11일 기준 / 한국 정가·발매 채널은 아디다스 코리아·BAPE 코리아 공식 공지에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-heavy-runner-running-shoes',
+    slug: '2026-heavy-runner-running-shoes',
+    title: '2026 과체중 러너를 위한 러닝화 추천 TOP 10 | 80kg+ 러너의 무릎·발목을 지키는 쿠션·안정성·내구성 기준',
+    description: '체중 80kg 이상 러너는 착지 충격이 체중의 3~5배까지 올라가 일반 러너용 신발로는 부상 위험이 높습니다. 95종 러닝화 DB에서 ① 스택 36mm 이상 충분한 쿠션, ② 안정화 또는 넓은 베이스, ③ 600km 이상 내구성을 갖춘 10종을 가격대별·체형별로 정리했습니다. Bondi 9·Glycerin Max부터 가성비 860 v15까지.',
+    thumbnail: '/images/blog/2026-heavy-runner-running-shoes.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['과체중 러너', '러닝화 추천', '쿠션화', '안정화', '무릎 보호', '발목 보호', '맥스 쿠션', '가이드'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>체중 80kg+ 러너의 착지 충격은 체중의 3~5배(240~400kg) — <strong>일반 러너용 220~260g 경량화는 부상 직행</strong></li>
+    <li>선택 기준 3가지: ① <strong>힐 스택 36mm 이상</strong> 쿠션, ② <strong>안정화/넓은 베이스</strong> 또는 가이드레일, ③ <strong>아웃솔 600km+</strong> 내구성</li>
+    <li>1순위 추천: <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a>·<a href="/shoes/brooks-glycerin-max-2">Glycerin Max 2</a>·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a> — 가성비는 <a href="/shoes/new-balance-860-v15">NB 860 v15</a></li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저 — 이 글의 "과체중" 정의</p>
+    <p>이 글은 의학적 비만이 아니라 <strong>러닝 기준 체중 부담군</strong>을 다룹니다. 남성 80kg+ / 여성 65kg+ 또는 BMI 25 이상이면서 러닝을 시작하거나 주간 30km 이상 뛰는 분이 대상입니다. 본인 체중이 작더라도 무릎 통증·족저근막염 이력이 있다면 같은 기준으로 신발을 골라야 합니다.</p>
+  </div>
+</div>
+
+<h2>왜 과체중 러너는 신발이 다른 기준이어야 하나</h2>
+
+<p>러닝 중 한 발이 지면에 닿는 순간, <strong>충격력은 체중의 3~5배까지</strong> 올라갑니다. 일반 조깅 페이스(6:00/km)에서도 80kg 러너의 한 걸음 충격은 240~400kg. 이게 1km에 평균 1,400~1,600번 반복됩니다. 같은 거리를 뛰어도 60kg 러너 대비 누적 충격은 33% 이상 큽니다.</p>
+
+<p>이 차이가 신발에서 가장 먼저 드러나는 게 <strong>미드솔 압축률</strong>입니다. 일반 220g 경량 트레이너의 미드솔은 60kg 러너에게는 적절한 반발을 주지만, 80kg+ 러너에게는 <strong>바닥까지 눌려(bottoming out)</strong> 쿠션 기능을 잃습니다. 충격이 무릎·정강이·족저근막에 직접 전달돼 부상으로 이어집니다.</p>
+
+<h3>과체중 러너용 신발 3대 선택 기준</h3>
+
+<table>
+  <thead>
+    <tr><th>기준</th><th>최소값</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>힐 스택 높이</strong></td>
+      <td>36mm 이상 (가능하면 40mm+)</td>
+      <td>두꺼운 폼이 바닥까지 눌리는 걸 막아 쿠션 기능을 유지. 일반 트레이너 28~32mm로는 부족</td>
+    </tr>
+    <tr>
+      <td><strong>안정성 / 베이스 폭</strong></td>
+      <td>안정화(가이드레일) 또는 베이스 112mm+</td>
+      <td>체중이 클수록 측면 흔들림이 커지고 발목 염좌·과내전 위험 증가. 넓은 베이스가 좌우 안정을 잡아줌</td>
+    </tr>
+    <tr>
+      <td><strong>아웃솔 내구성</strong></td>
+      <td>600km 이상</td>
+      <td>체중 비례로 미드솔·아웃솔 마모가 가속. 일반 400~500km 신발은 300km에서 쿠션 사망</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">카본 플레이트 슈퍼슈즈는 추천하지 않습니다</p>
+    <p>Vaporfly·Adios Pro 같은 카본화는 ① 폼이 너무 부드러워 80kg+ 체중에서 바닥까지 눌리고, ② 마일리지 400km(레이서는 100km)로 가성비가 나쁘고, ③ 강한 로커가 아킬레스 부하를 증가시킵니다. 과체중 러너가 카본화로 입문하면 <strong>족저근막염·아킬레스건염 발병률이 2배 이상</strong>이라는 보고가 있습니다.</p>
+  </div>
+</div>
+
+<h2>가격대별 TOP 10 — 과체중 러너 우선순위 순</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">맥스 쿠션 1순위</span>
+    <span class="stat-value">Bondi 9</span>
+    <span class="stat-sub">229,000원 / 303g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">최강 쿠션</span>
+    <span class="stat-value">Glycerin Max 2</span>
+    <span class="stat-sub">249,000원 / 312g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">균형형 1위</span>
+    <span class="stat-value">Nimbus 28</span>
+    <span class="stat-sub">199,000원 / 281g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">안정화 1위</span>
+    <span class="stat-value">Kayano 32</span>
+    <span class="stat-sub">199,000원 / 300g</span>
+  </div>
+</div>
+
+<h3>1위. <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> — 과체중 러너의 정답</h3>
+
+<p><strong>가격 229,000원 · 무게 303g · 힐 스택 43mm · 평점 5.0</strong></p>
+
+<p>호카가 처음부터 "맥스 쿠션 카테고리"를 만든 모델의 9세대. 힐 스택 43mm + 메타로커 지오메트리가 체중을 분산시켜 <strong>80~100kg 러너에게도 무릎 충격을 최소화</strong>합니다. 전작 대비 SuperCritical EVA 폼으로 업그레이드되어 무거웠던 쿠션감이 더 부드러워졌습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ 입문~중급, 무릎 통증 이력, 7:00~6:00/km 데일리 페이스</li>
+  <li><strong>주의:</strong> 토박스 표준(73mm) — 발볼 매우 넓으면 와이드(2E) 권장</li>
+</ul>
+
+<h3>2위. <a href="/shoes/brooks-glycerin-max-2">Brooks Glycerin Max 2</a> — 최대 쿠션 + 흔들림 방지</h3>
+
+<p><strong>가격 249,000원 · 무게 312g · 평점 4.0</strong></p>
+
+<p>Glycerin 시리즈 최상위. DNA Tuned 폼(<strong>힐 12% 더 부드럽고 / 전족부 25% 더 반응적</strong>인 듀얼 셀 구조)이 과체중 러너의 두 가지 니즈를 동시에 만족시킵니다. 312g으로 무겁지만 그만큼 안정적이며, 베이스가 넓어 측면 흔들림이 거의 없습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 85kg+, 장거리(15km+) 추천, 발에 안정감을 원하는 러너</li>
+  <li><strong>주의:</strong> 가격 부담, 빠른 페이스(5:00/km 이하)에는 적합하지 않음</li>
+</ul>
+
+<h3>3위. <a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 균형형 1위</h3>
+
+<p><strong>가격 199,000원 · 무게 281g · 평점 4.5</strong></p>
+
+<p>FF Blast Max 미드솔 + PureGel 힐 인서트의 조합. <strong>맥스 쿠션 중 가장 가볍고(281g)</strong> 한국 러너 베스트셀러. 토박스가 73mm로 표준이라 발볼 보통 러너에게 무난하고, 와이드(2E) 옵션도 정식 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~95kg, 데일리부터 하프마라톤까지 다목적, 가성비 우선</li>
+  <li><strong>주의:</strong> 안정성은 중성(neutral) — 심한 과내전이면 카야노 32로</li>
+</ul>
+
+<h3>4위. <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32</a> — 안정화 1순위</h3>
+
+<p><strong>가격 199,000원 · 무게 300g · 안정화 · 평점 4.0</strong></p>
+
+<p>과체중 + 평발 + 과내전 트리플 조합 러너에게 최우선. 4D Guidance System이 발이 안쪽으로 무너지는 걸 잡아주고, FF Blast Plus Eco 폼이 충분한 쿠션을 제공합니다. 같은 199,000원에 안정화 카테고리에서는 거의 무적.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ + 평발/과내전, 발목 안쪽으로 굴러가는 러너, 부상 이력 多</li>
+  <li><strong>주의:</strong> 300g으로 묵직 — 가벼운 신발 좋아하면 다른 옵션</li>
+</ul>
+
+<h3>5위. <a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — 와이드 옵션 최강</h3>
+
+<p><strong>가격 209,000원 · 무게 216g · 힐 스택 40mm · 평점 4.9</strong></p>
+
+<p>v14 대비 69g 경량화(285→216g)에도 힐 스택은 40mm 유지. Infinion(질소 주입 슈퍼크리티컬 폼)이 가벼우면서도 충분한 쿠션 제공. <strong>2E·4E 와이드 옵션이 정식 출시</strong>되는 거의 유일한 맥스 쿠션이라 발볼 넓은 한국 러너 1순위.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~90kg + 발볼 넓음, 가벼운 쿠션화를 원하는 러너</li>
+  <li><strong>주의:</strong> 안정성 6/10 — 과내전이면 860 v15가 정답</li>
+</ul>
+
+<h3>6위. <a href="/shoes/brooks-glycerin-22">Brooks Glycerin 22</a> — 가성비 쿠션화</h3>
+
+<p><strong>가격 209,000원 · 무게 293g · 평점 5.0</strong></p>
+
+<p>Glycerin Max 2의 동생 모델. 같은 DNA Loft v3 폼을 사용하면서 4만원 저렴. 312g→293g으로 더 가볍고, 쿠션감은 90% 이상 유지됩니다. <strong>처음 과체중 러너용 신발을 사보는 러너</strong>에게 진입 부담이 가장 낮은 선택지.</p>
+
+<ul>
+  <li><strong>적합:</strong> 첫 쿠션화 입문, 체중 75~85kg, 주 3~4회 데일리</li>
+  <li><strong>주의:</strong> Glycerin Max 2 대비 안정감 약간 떨어짐 — 흔들리는 느낌 있으면 GTS(안정화 버전)로</li>
+</ul>
+
+<h3>7위. <a href="/shoes/saucony-triumph-23">Saucony Triumph 23</a> — 슈퍼크리티컬 폼 최경량</h3>
+
+<p><strong>가격 199,000원 · 무게 272g · 평점 4.0</strong></p>
+
+<p>PWRRUN PB 슈퍼크리티컬 폼이 <strong>맥스 쿠션 중에서도 반발력이 좋은 편</strong>. 272g으로 이 카테고리에서 가벼운 편이라 6:00/km 페이스도 부담 없이 소화합니다. 와이드 옵션 정식 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~85kg + 페이스도 챙기고 싶은 러너, 하프마라톤 도전</li>
+  <li><strong>주의:</strong> 쿠션감은 Bondi·Glycerin Max보다 얇음 — 100% 푹신함 우선이면 다른 선택</li>
+</ul>
+
+<h3>8위. <a href="/shoes/on-cloudmonster-3">On Cloudmonster 3</a> — 디자인 + 클라우드텍 폼</h3>
+
+<p><strong>가격 229,000원 · 무게 295g · 평점 4.5</strong></p>
+
+<p>On의 시그니처 CloudTec 폼 14개가 큰 사이즈로 적용된 모델. <strong>탱탱한 반발과 푹신한 쿠션이 동시에</strong> 느껴지는 독특한 착화감. 일상화 디자인으로도 좋아 출퇴근 겸용으로 한 켤레로 쓰기 좋습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~90kg, 출퇴근 + 러닝 겸용, 패션도 신경 쓰는 러너</li>
+  <li><strong>주의:</strong> On 특유의 빈 공간(클라우드)이 작은 돌 끼이는 경우 있음, 평발에는 비추</li>
+</ul>
+
+<h3>9위. <a href="/shoes/mizuno-wave-sky-9">Mizuno Wave Sky 9</a> — 안정형 쿠션</h3>
+
+<p><strong>가격 189,000원 · 평점 4.0</strong></p>
+
+<p>Mizuno Enerzy 폼 + Wave 플레이트가 만드는 <strong>"부드럽지만 흔들리지 않는"</strong> 착화감. 미즈노 특유의 안정감이 과체중 러너의 측면 흔들림을 잘 잡아줍니다. 가격이 18만원대로 합리적.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ + 평발·과내전 약간, 한국 마라톤 대회에서 자주 보이는 미즈노 라인업 좋아하는 러너</li>
+  <li><strong>주의:</strong> 토박스 표준 — 발볼 매우 넓으면 다른 브랜드</li>
+</ul>
+
+<h3>10위. <a href="/shoes/new-balance-860-v15">New Balance 860 v15</a> — 가성비 안정화</h3>
+
+<p><strong>가격 189,000원 · 무게 330g · 안정화 · 평점 4.5</strong></p>
+
+<p>안정화 카테고리에서 <strong>가성비 최강</strong>. 330g으로 무거운 편이지만 그만큼 묵직한 안정성을 제공. 한쪽 사이드에 Stability Plane이 적용돼 평발 러너의 안쪽 무너짐을 잡습니다. 4E 와이드 옵션 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 85kg+ + 평발 + 발볼 넓음 + 예산 20만원 이하</li>
+  <li><strong>주의:</strong> 330g은 진짜 무겁습니다 — 입문 단계가 아니라면 페이스 트레이닝용으로는 부적합</li>
+</ul>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>순위</th><th>모델</th><th>가격</th><th>무게</th><th>스택</th><th>카테고리</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>Hoka Bondi 9</strong></td><td>229,000원</td><td>303g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>2</td><td><strong>Glycerin Max 2</strong></td><td>249,000원</td><td>312g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>3</td><td><strong>Nimbus 28</strong></td><td>199,000원</td><td>281g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>4</td><td><strong>Kayano 32</strong></td><td>199,000원</td><td>300g</td><td>40mm</td><td>안정화</td><td>2E</td></tr>
+    <tr><td>5</td><td><strong>NB 1080 v15</strong></td><td>209,000원</td><td>216g</td><td>40mm</td><td>쿠션화</td><td>2E·4E</td></tr>
+    <tr><td>6</td><td><strong>Glycerin 22</strong></td><td>209,000원</td><td>293g</td><td>38mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>7</td><td><strong>Triumph 23</strong></td><td>199,000원</td><td>272g</td><td>37mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>8</td><td><strong>Cloudmonster 3</strong></td><td>229,000원</td><td>295g</td><td>34mm</td><td>쿠션화</td><td>없음</td></tr>
+    <tr><td>9</td><td><strong>Wave Sky 9</strong></td><td>189,000원</td><td>290g</td><td>40mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>10</td><td><strong>NB 860 v15</strong></td><td>189,000원</td><td>330g</td><td>34mm</td><td>안정화</td><td>2E·4E</td></tr>
+  </tbody>
+</table>
+
+<h2>본인 상황별 최종 추천</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>1순위 추천</th><th>2순위</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>입문 + 체중 80~90kg + 발볼 보통</strong></td>
+      <td>Hoka Bondi 9</td>
+      <td>Asics Nimbus 28</td>
+    </tr>
+    <tr>
+      <td><strong>체중 90kg+ + 무릎 통증 이력</strong></td>
+      <td>Brooks Glycerin Max 2</td>
+      <td>Hoka Bondi 9</td>
+    </tr>
+    <tr>
+      <td><strong>평발 + 과내전 + 체중 80kg+</strong></td>
+      <td>Asics Gel-Kayano 32</td>
+      <td>NB 860 v15</td>
+    </tr>
+    <tr>
+      <td><strong>발볼 넓은 한국 러너</strong></td>
+      <td>NB 1080 v15 (4E)</td>
+      <td>NB 860 v15 (4E)</td>
+    </tr>
+    <tr>
+      <td><strong>예산 20만원 이하</strong></td>
+      <td>Mizuno Wave Sky 9</td>
+      <td>NB 860 v15</td>
+    </tr>
+    <tr>
+      <td><strong>출퇴근 + 러닝 1켤레</strong></td>
+      <td>On Cloudmonster 3</td>
+      <td>Asics Nimbus 28</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>구매 전 체크리스트</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">신발 사기 전 5가지 확인</p>
+    <ol>
+      <li><strong>본인 발볼 측정</strong> — 자 들고 평발 위로 가장 넓은 부분 측정. 100mm+면 와이드 옵션 필수</li>
+      <li><strong>평발 여부 확인</strong> — 젖은 발로 종이에 발자국. 안쪽 아치가 안 나오면 평발 → 안정화 카테고리</li>
+      <li><strong>오후 5시 이후 신어보기</strong> — 발이 가장 부어 있는 시간. 매장 방문 시간 조절</li>
+      <li><strong>러닝 양말 신고 신어보기</strong> — 평소 신는 양말 두께로 핏 확인. 사이즈 0.5 차이가 결과를 좌우</li>
+      <li><strong>30일 환불 정책 확인</strong> — 호카·브룩스·아식스는 30일 시범 착화 후 환불 가능 매장 있음</li>
+    </ol>
+  </div>
+</div>
+
+<h2>1켤레로 시작한다면</h2>
+
+<p>10종 다 보면 결정이 더 어렵죠. 산초 에디터 결론은 두 가지로 압축합니다.</p>
+
+<ol>
+  <li><strong>첫 신발이고 발볼 보통이면 → <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> 229,000원.</strong> 맥스 쿠션 카테고리의 정답이고 한국 러너 후기가 가장 많아 시행착오 적음.</li>
+  <li><strong>평발 + 발볼 넓은 한국 러너면 → <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32 (와이드)</a> 199,000원.</strong> 평발·과내전 + 한국인 발 모두 잡는 거의 유일한 글로벌 안정화.</li>
+</ol>
+
+<p>본인 발에 맞는 신발을 1분 진단으로 좁혀보고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국인 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 무릎 통증 있다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>도 함께 참고.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 + 체중 감량을 동시에 노린다면</p>
+    <p>과체중 상태에서 무리한 러닝은 부상 직행입니다. 시작은 <strong>걷기 5분 + 조깅 1분</strong> 반복 10세트로 잡고, 주 3회·30분 페이스 6:30~7:30/km를 8주간 유지한 뒤 거리를 늘리세요. 신발은 위 추천 중 하나만 사고, 같은 신발을 한 달에 100km 이상 신지 마세요. 미드솔 회복 시간이 필요합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 95종 러닝화 자체 DB / @runninglife_korea / RunRepeat 랩 데이터 / Doctors of Running / Believe in the Run / 호카·브룩스·아식스·뉴발란스 한국 공식 사이트 / 작성일 2026년 5월 11일 기준 / 가격은 공식 MSRP이며 세일가는 별도.</small></p>
+`,
+  },
+  {
     id: '2026-seoul-race',
     slug: '2026-seoul-race',
     title: '2026 서울레이스 D-18 | 5/27 접수, 청계광장 출발 도심 하프·10K — 5분 컷 마감 주의',
