@@ -2,6 +2,320 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-asics-kayano-33-launch',
+    slug: '2026-asics-kayano-33-launch',
+    title: 'ASICS GEL-KAYANO 33 D-21 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
+    description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 13년간 유지된 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
+    thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['아식스', 'Asics', 'GEL-KAYANO 33', '카야노', '안정화', 'FLUIDSUPPORT', 'FF BLAST MAX', '러닝화 발매'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 추정 199,000원~209,000원</li>
+    <li>13년간 유지된 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
+    <li>스택 40mm·드롭 8mm·무게 298g — 32와 거의 동일한 외형이지만 <strong>착화감은 완전히 다른 방향</strong>으로 진화. 32 재고 세일이 33 발매 직후 시작될 것</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">발매 D-21 — 핵심 셋업</p>
+    <p>아디다스 코리아 공식 발표 기준 33은 <strong>6월 1일 ASICS 공식 사이트(asics.co.kr) + 직영 매장 + 주요 멀티숍 동시 출시</strong> 예정. 사이즈 빠른 매진 우려는 적지만 <strong>한국 인기 컬러(블랙/네이비/화이트)</strong>는 발매 첫 주가 안전합니다.</p>
+  </div>
+</div>
+
+<h2>왜 이번 33이 중요한가</h2>
+
+<p>카야노 시리즈는 1993년 1세대 출시 이후 33세대까지 이어진 ASICS의 <strong>안정화 플래그십</strong>입니다. 한국 러너 사이에서도 "평발이면 카야노", "발목 안쪽으로 무너지면 카야노"가 거의 공식처럼 굳어진 모델이죠. <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>에서도 카야노 32를 안정화 1순위로 추천한 이유입니다.</p>
+
+<p>그런데 이번 33은 단순한 마이너 업데이트가 아닙니다. <strong>2013년 카야노 19부터 13년간 유지된 4D Guidance System을 통째로 폐지</strong>하고 새 안정성 시스템(FLUIDSUPPORT)을 도입했습니다. 카야노의 정체성이라 할 미디얼 포스트(안쪽 단단한 폼)·트러스틱(Trusstic) 구조가 사라지는 첫 세대라는 뜻입니다.</p>
+
+<h2>한 눈에 보는 카야노 33</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>공식명</strong></td><td>ASICS GEL-KAYANO 33</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2026년 6월 1일</td></tr>
+    <tr><td><strong>글로벌 정가</strong></td><td>$170</td></tr>
+    <tr><td><strong>한국 정가 (예상)</strong></td><td>199,000원~209,000원 (32와 동일~+1만원)</td></tr>
+    <tr><td><strong>무게</strong></td><td>298g (남성 US 9) / 259g (여성 US 8)</td></tr>
+    <tr><td><strong>스택</strong></td><td>힐 40mm / 전족부 32mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td></tr>
+    <tr><td><strong>안정성 시스템</strong></td><td><strong>FLUIDSUPPORT</strong> (듀얼 폼 + 지오메트리 기반)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF BLAST MAX (탑) + FF BLAST PLUS (하단)</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>재설계된 엔지니어드 메쉬</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>AHARPLUS 러버</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 ① — 4D Guidance System 폐지, FLUIDSUPPORT 도입</h2>
+
+<p>전작 카야노 32까지의 안정성 메커니즘은 <strong>"단단한 폼으로 발 무너짐을 막는다"</strong>는 발상이었습니다. 미디얼 포스트가 안쪽에 박혀 있고, 4D Guidance System이 발이 안쪽으로 회전하는 걸 단계적으로 잡아주는 구조였죠.</p>
+
+<p>33의 FLUIDSUPPORT는 정반대 접근입니다. <strong>"부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡아준다"</strong>는 발상. 단단한 부품을 박는 게 아니라 폼 자체의 지오메트리(외측 더 두껍게 / 내측 더 단단하게)와 듀얼 레이어 구성으로 안정성을 만듭니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기존 카야노 팬이 주의할 점</p>
+    <p>"카야노 = 든든한 안정감"의 정체성이 바뀌었습니다. 32까지의 그 단단하고 살짝 묵직한 안쪽 지지감을 좋아했다면, 33은 <strong>"더 부드럽고 자연스러운 안정성"</strong>으로 느껴질 수 있습니다. 호불호 갈릴 수 있는 변화입니다.</p>
+  </div>
+</div>
+
+<h2>핵심 변화 ② — FF BLAST MAX 듀얼 폼</h2>
+
+<p>카야노 시리즈에 처음으로 <strong>FF BLAST MAX</strong>가 들어갑니다. 이 폼은 <a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>·<a href="/shoes/asics-novablast-5">Novablast 5</a>에서 검증된 ASICS 최상위 슈퍼크리티컬 폼으로, FF BLAST PLUS 대비 <strong>에너지 리턴 ~10%, 경량성 ~15% 향상</strong>됩니다.</p>
+
+<p>33의 미드솔 구조는 듀얼 레이어:</p>
+<ul>
+  <li><strong>탑 레이어 (발 닿는 쪽):</strong> FF BLAST MAX — 부드러운 착화감 + 높은 반발</li>
+  <li><strong>바텀 레이어 (지면 쪽):</strong> FF BLAST PLUS — 안정성 + 내구성</li>
+</ul>
+
+<p>지금까지 카야노는 "안정화라 쿠션은 좀 단단했음"이라는 평이 많았는데, 33부터는 <strong>Nimbus급 쿠션 + 안정성</strong>을 동시에 노립니다.</p>
+
+<h2>32와 33 직접 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>변화</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>300g</td><td>298g</td><td>거의 동일</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
+    <tr><td><strong>드롭</strong></td><td>10mm</td><td>8mm</td><td><strong>-2mm (더 평탄)</strong></td></tr>
+    <tr><td><strong>안정성 시스템</strong></td><td>4D Guidance System</td><td><strong>FLUIDSUPPORT</strong></td><td>구조 완전 교체</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF Blast Plus Eco (싱글)</td><td><strong>FF BLAST MAX + PLUS (듀얼)</strong></td><td>최상위 폼 채택</td></tr>
+    <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000~209,000원 예상</td><td>유지~소폭 상승</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>2E (정식 출시)</td><td>2E 예상 (미발표)</td><td>유지 예상</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 — 33을 사야 하나, 32를 사야 하나</h2>
+
+<h3>✅ 33을 사야 하는 사람</h3>
+
+<ul>
+  <li><strong>카야노 32까지 "안정성은 좋은데 쿠션이 좀 단단했다"는 사람</strong> — FF BLAST MAX 도입으로 정확히 그 불만이 해소됩니다</li>
+  <li><strong>처음 안정화를 사는 평발·과내전 러너</strong> — 어차피 처음이면 32의 단단한 느낌도 어색할 수 있으니, 더 부드러운 33으로 시작하는 게 적응 빠름</li>
+  <li><strong>아킬레스건염·종아리 부하 줄이고 싶은 러너</strong> — 드롭 10mm → 8mm로 낮아져 발목·종아리 부하 약간 줄어듬</li>
+  <li><strong>주간 50km+ 장거리 러너</strong> — 듀얼 폼 + 새 메쉬 어퍼로 장시간 착용 편의성 향상 기대</li>
+</ul>
+
+<h3>❌ 32 재고 세일을 노려야 하는 사람</h3>
+
+<ul>
+  <li><strong>이미 카야노 31·32를 좋아하던 러너</strong> — 33의 FLUIDSUPPORT가 어떻게 느껴질지 검증 안 됨. 익숙한 32를 세일가에 한 켤레 더 확보가 안전</li>
+  <li><strong>예산 16만원 이하</strong> — 33 발매 직후 32 재고가 30~40% 할인 들어갈 가능성 큼 (199,000원 → 13~14만원대)</li>
+  <li><strong>"카야노 = 단단한 지지감" 정체성 좋아하는 러너</strong> — 33이 더 부드러워진 게 본인에게 맞을지 매장 시착 전엔 알 수 없음</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">진짜 똑똑한 선택 — 7월 매장 시착 후 결정</p>
+    <p>33이 6/1 출시되면 ASICS 직영(강남·잠실)에서 시착 가능. <strong>7월 중순쯤이면 32 재고 세일도 본격화</strong>되므로, 33을 한 번 신어보고 마음에 들면 33, 32의 단단함이 더 좋으면 32 세일가 구매가 합리적입니다. 굳이 D-21에 미리 결정할 필요 없음.</p>
+  </div>
+</div>
+
+<h2>다른 안정화와 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>한국가</th><th>무게</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Kayano 33</strong></td>
+      <td>199,000~209,000원 예상</td>
+      <td>298g</td>
+      <td>FLUIDSUPPORT + 듀얼 폼, 부드러운 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-gel-kayano-32">Kayano 32</a></td>
+      <td>199,000원</td>
+      <td>300g</td>
+      <td>4D Guidance, 단단한 안정성, 13년 검증</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/brooks-glycerin-gts-22">Brooks Glycerin GTS 22</a></td>
+      <td>209,000원</td>
+      <td>293g</td>
+      <td>GuideRails 측면 가이드, 자연스러운 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/new-balance-860-v15">NB 860 v15</a></td>
+      <td>189,000원</td>
+      <td>330g</td>
+      <td>Stability Plane, 가성비 + 4E 와이드</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/saucony-tempus-2">Saucony Tempus 2</a></td>
+      <td>219,000원</td>
+      <td>278g</td>
+      <td>PWRRUN PB 슈퍼크리티컬 + 외측 가이드 프레임</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>요약 — D-21 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5/11~):</strong> 32에 만족하면 매장에서 사이즈 미리 확인, 33 시착할 때 비교 위해</li>
+  <li><strong>6월 1일 (출시일):</strong> 강남·잠실 ASICS 직영점에서 33 시착 가능. 1~2km 매장 내 트레드밀 시승 권장</li>
+  <li><strong>7월 중순:</strong> 32 재고 세일 본격화 예상. 33에 확신 없으면 32 세일가 잡기</li>
+  <li><strong>가을 마라톤 시즌 전(8~9월):</strong> 본인 메인 러닝화 결정 — 33 or 32 or 다른 안정화</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼·체중·페이스로 후보 좁히기</p>
+    <p>본인 발볼·평발 여부·체중·러닝 페이스에 맞는 안정화 후보를 1분 진단으로 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 과체중 + 안정성 둘 다 필요하면 <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: ASICS US 공식 / WWD Footwear News / Canadian Running Magazine / T3 / Gear Patrol / KicksOnFire / Sundried Reviews / 작성일 2026년 5월 11일 기준 / 한국 정가·출시 일정은 ASICS 코리아 공식 발표에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-nb-1080v15-tryout-popup-d3',
+    slug: '2026-nb-1080v15-tryout-popup-d3',
+    title: 'NB 1080 v15 무료 트라이얼 POP-UP D-3 | 5/14 마감 — 경복궁·부산 OYM에서 신상 쿠션화 직접 신어보기',
+    description: '뉴발란스 1080 v15·Rebel v5 신상 컬러를 매장에서 무료 시착할 수 있는 ON YOUR MARK 팝업이 5월 14일(수)에 종료됩니다. 경복궁·부산 두 매장에서 진행, 트라이얼 시 무료 커피 쿠폰. NB의 플래그십 쿠션화(216g, 인피니온 폼, 2E·4E 와이드)를 사기 전에 신어볼 수 있는 거의 유일한 기회.',
+    thumbnail: '/images/blog/2026-nb-1080v15-tryout-popup-d3.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['뉴발란스', 'New Balance', '1080 v15', 'Rebel v5', '온유어마크', 'OYM', '러닝화 시착', 'POP-UP'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>NB <strong>1080 v15 + Rebel v5 무료 트라이얼 팝업</strong>이 5월 14일(수)에 종료 — D-3</li>
+    <li>장소: <strong>ON YOUR MARK 경복궁점 / 부산점</strong> 2곳. 트라이얼 시 무료 커피 쿠폰 제공</li>
+    <li>1080 v15(216g·인피니온 폼·2E·4E 와이드)와 Rebel v5(220g·FuelCell)를 사기 전 매장 시착 가능한 거의 유일한 기회</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">D-3 — 5월 14일(수) 영업 종료까지</p>
+    <p>온유어마크 경복궁점은 <strong>5월 1일~14일</strong>, 부산점은 <strong>5월 2일~14일</strong>까지 진행. 평일 마지막 날이라 퇴근 후 방문이 어려울 수 있으니 토요일(5/10) 또는 이번 주 중반에 가는 게 안전합니다.</p>
+  </div>
+</div>
+
+<h2>이번 팝업이 왜 중요한가</h2>
+
+<p>NB 1080 v15는 2026년 발매된 뉴발란스 플래그십 쿠션화입니다. 전작 v14 대비 <strong>69g 경량화(285→216g)</strong> + 인피니온(질소 주입 슈퍼크리티컬 폼) 채택으로 거의 다른 신발이 됐죠. <a href="/shoes/new-balance-1080-v15">1080 v15</a>를 한국 러너에게 매력적으로 만드는 핵심 3가지:</p>
+
+<ul>
+  <li><strong>216g 경량 쿠션화</strong> — 맥스 쿠션(40mm 스택) 신발이 200g대로 떨어진 거의 유일한 모델</li>
+  <li><strong>2E·4E 와이드 옵션 정식 출시</strong> — 발볼 넓은 한국 러너에게 거의 유일한 맥스 쿠션 선택지</li>
+  <li><strong>인피니온 폼</strong> — Fresh Foam X보다 통기성·반응성·에너지 리턴이 향상된 NB 최신 폼</li>
+</ul>
+
+<p>문제는 <strong>"신어보지 않고 209,000원짜리 신발을 사는 건 부담"</strong>이라는 점. 1080 v14의 narrow 토박스를 피했던 러너라도 v15는 폭이 어떻게 바뀌었는지 실제로 신어봐야 알 수 있습니다.</p>
+
+<h2>팝업 정보 정리</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>이벤트명</strong></td><td>New Balance × ON YOUR MARK 1080v15 & Rebel v5 Summer Run POP-UP</td></tr>
+    <tr><td><strong>경복궁점 기간</strong></td><td>5월 1일(목) ~ 5월 14일(수)</td></tr>
+    <tr><td><strong>부산점 기간</strong></td><td>5월 2일(금) ~ 5월 14일(수)</td></tr>
+    <tr><td><strong>혜택 ①</strong></td><td>1080 v15 + Rebel v5 <strong>무료 트라이얼</strong></td></tr>
+    <tr><td><strong>혜택 ②</strong></td><td>트라이얼 이용 시 <strong>무료 커피 쿠폰</strong></td></tr>
+    <tr><td><strong>주관</strong></td><td>NBRC Seoul · NB Run Hub · ON YOUR MARK</td></tr>
+  </tbody>
+</table>
+
+<h2>두 신발 중 어느 쪽을 신어봐야 하나</h2>
+
+<h3>① <a href="/shoes/new-balance-1080-v15">1080 v15</a> — 데일리 쿠션화의 정답 후보</h3>
+
+<p><strong>209,000원 · 216g · 힐 스택 40mm · 평점 4.9</strong></p>
+
+<p>맥스 쿠션 카테고리에서 v15의 위치는 분명합니다. <strong>"가장 가볍고 발에 맞는 옵션이 많은 맥스 쿠션"</strong>. <a href="/shoes/hoka-bondi-9">Bondi 9</a>(303g)·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>(281g)보다 70~85g 가볍습니다.</p>
+
+<p>매장에서 확인할 3가지:</p>
+<ol>
+  <li><strong>토박스 핏</strong> — v14 narrow에서 v15는 standard로 개선. 발볼 보통이면 무난, 넓으면 2E 또는 4E 시착</li>
+  <li><strong>힐 컵 핏</strong> — 216g 경량화 과정에서 힐 카운터가 부드러워짐. 뒤꿈치가 헐거우면 사이즈 -0.5 시도</li>
+  <li><strong>인피니온 폼 반응</strong> — 매장 내 가볍게 점프하거나 빠르게 걸을 때 Fresh Foam X 대비 반응이 빠른 느낌 체크</li>
+</ol>
+
+<h3>② <a href="/shoes/new-balance-rebel-v5">Rebel v5</a> — 가벼운 페이스 트레이너</h3>
+
+<p><strong>189,000원 · 220g · 데일리/템포 · 평점 4.5</strong></p>
+
+<p>Rebel은 1080과 성격이 완전히 다릅니다. 데일리·템포 페이스(5:30/km 이하)에서 빠른 반응을 원하는 러너용 경량 트레이너. <strong>1080이 "푹신함"이라면 Rebel은 "통통 튕김"</strong>. FuelCell 폼 + 카본 플레이트 없는 가벼운 구조라 비-카본화 카테고리에서 빠른 페이스 좋아하는 러너에게 인기.</p>
+
+<p>매장에서는 1080 신은 후 Rebel을 신어 비교하면 차이가 즉시 느껴집니다. <strong>"나는 데일리 페이스 우선" → 1080 / "스피드도 챙기고 싶다" → Rebel</strong>.</p>
+
+<h2>매장 위치·운영 시간</h2>
+
+<table>
+  <thead>
+    <tr><th>매장</th><th>주소·이동</th><th>운영 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>OYM 경복궁점</strong></td>
+      <td>서울 종로구 청운효자동 / 3호선 경복궁역 도보 5분</td>
+      <td>평일 11:00~20:00 (변동 가능)</td>
+    </tr>
+    <tr>
+      <td><strong>OYM 부산점</strong></td>
+      <td>부산 / @onyourmark_running 인스타그램 DM 확인 권장</td>
+      <td>매장 공지 확인</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">시착 전 준비물</p>
+    <p>① <strong>러닝 양말</strong> — 평소 신는 양말 두께로 핏 확인 필수, ② <strong>발 측정 기록</strong> — 가능하면 본인 발 길이(mm) + 발볼 너비 미리 측정, ③ <strong>오후 4시 이후 방문</strong> — 하루 중 발이 가장 부어 있는 시간이라 실제 러닝 시 핏과 가깝습니다.</p>
+  </div>
+</div>
+
+<h2>같이 보면 좋은 NB 소식</h2>
+
+<ul>
+  <li><strong>NB Run Hub Yeouido</strong> — 2026년 5월 9일(토) 여의나루 이크루즈에 NB 러닝 성지 팝업 오픈. 러닝 슈즈·의류 무료 대여 + 짐 보관 + 커피·타월 제공</li>
+  <li><strong>Grey Days 한정판</strong> — 1080 v15 + Rebel v5 Grey Days 시즌 한정 컬러 출시. 팝업에서 시착·구매 가능 (재고 한정)</li>
+</ul>
+
+<h2>요약 — 액션 플랜</h2>
+
+<ol>
+  <li><strong>이번 주 중반(5/12~13):</strong> 평일 오후 경복궁/부산 OYM 방문 — 1080 v15·Rebel v5 시착 + 사이즈 결정</li>
+  <li><strong>5월 14일(수):</strong> 마지막 날 — 결정 못 했으면 평일 점심 시간 활용</li>
+  <li><strong>이후:</strong> 매장 또는 NB 공식 사이트(nbkorea.com)에서 결정한 사이즈·컬러 구매. Grey Days 한정 컬러 노린다면 빠른 결정 필요</li>
+</ol>
+
+<p>본인 발에 맞는 쿠션화 후보를 더 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>, 발볼 넓은 한국 러너 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
+
+<p><small>출처: @nbrc_seoul / @newbalance_runhub / @onyourmark_running 인스타그램 / 작성일 2026년 5월 11일 기준 / 팝업 일정·혜택은 매장 사정에 따라 변동될 수 있으니 방문 전 인스타그램 확인 권장.</small></p>
+`,
+  },
+  {
     id: '2026-bape-adidas-evo-sl-release',
     slug: '2026-bape-adidas-evo-sl-release',
     title: 'BAPE × 아디다스 에보 SL D-21 | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
