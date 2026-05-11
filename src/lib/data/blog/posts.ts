@@ -2,6 +2,312 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2030-seoul-marathon-100th-dongma-chip',
+    slug: '2030-seoul-marathon-100th-dongma-chip',
+    title: '2030 서울마라톤 100주년 동마칩 안내 | "ROAD TO 100TH" 4년 여정 시작',
+    description: '동마클럽이 2026년 5월 8일 "2030 서울마라톤 100주년" 공식 카운트다운을 발표했습니다. 1931년 첫 대회 이후 한국에서 가장 오래된 도로 마라톤이 100주년을 맞이하기까지 4년. 새로 도입되는 "동마칩(DONGMA CHIP)" 프로그램과 ROAD TO 100TH 프로젝트의 의미, 한국 러너가 지금부터 챙겨야 할 것까지.',
+    thumbnail: '/images/blog/2030-seoul-marathon-100th-dongma-chip.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['서울마라톤', '동아마라톤', '100주년', '동마칩', 'ROAD TO 100TH', '동마클럽', '2030 서울마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>동마클럽이 2026년 5월 8일 <strong>"2030 서울마라톤 100주년" 공식 카운트다운</strong>을 발표 — D-1,400일대</li>
+    <li>4년 여정 프로젝트명 <strong>ROAD TO 100TH</strong>, 새로 도입되는 <strong>"DONGMA CHIP" 프로그램</strong>(상세는 추후 공개) 첫 안내</li>
+    <li>한국 러너 액션: <strong>동마클럽 공지채널</strong>(공식 발표 실시간 알람) 등록 + 동마클럽 ID 활성 유지 — 100주년 관련 우선접수·이벤트 기준</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 8일 공식 발표 — 정보 단편 정리</p>
+    <p>동마클럽 공식 인스타그램(<a href="https://www.instagram.com/dongmaclub/" target="_blank" rel="noopener">@dongmaclub</a>)이 "2030년, 100주년 서울마라톤 DONGMA CHIP 안내" 카드뉴스를 게시했습니다. <strong>"동마칩 상세 내용은 피드를 통해 추후 공개"</strong>로 명시되어 있어 본 글은 발표 직후 시점의 확정 정보만 정리합니다. 세부 혜택·획득 조건은 동마클럽 후속 공지 시 업데이트 예정.</p>
+  </div>
+</div>
+
+<h2>지금 확정된 사실 4가지</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>100주년 대회 시점</strong></td><td>2030년 서울마라톤 (동마클럽 공식 발표)</td></tr>
+    <tr><td><strong>역사</strong></td><td>1931년 첫 대회 이후 한국 최고(最古) 도로 마라톤 시리즈 — "Since 1931" 동마클럽 공식 표기</td></tr>
+    <tr><td><strong>프로젝트명</strong></td><td><strong>ROAD TO 100TH SEOUL MARATHON</strong></td></tr>
+    <tr><td><strong>새 프로그램</strong></td><td><strong>DONGMA CHIP (동마칩)</strong> 도입 발표 — 상세 미공개</td></tr>
+  </tbody>
+</table>
+
+<h2>"ROAD TO 100TH"가 한국 러너에게 의미하는 것</h2>
+
+<p>한국에서 100년을 넘긴 스포츠 이벤트는 거의 없습니다. 서울마라톤은 1931년 동아일보가 창설한 마라톤 대회로, 일제강점기·해방·전쟁·올림픽을 통과해 2030년 100주년을 맞게 됩니다. 같은 시리즈를 운영하는 동마클럽이 4년 전부터 "100주년 카운트다운"을 공식화한 건, 이 마일스톤이 단순한 회차 숫자가 아니라 <strong>한국 러닝씬 전체의 정체성 이벤트</strong>로 만들겠다는 신호로 읽힙니다.</p>
+
+<p>관련 정황 3가지:</p>
+
+<ul>
+  <li><strong>동마클럽 공지채널 신설</strong> — 5월 초 동마클럽이 "공지채널"을 별도 오픈하면서 "서울마라톤 100주년 관련 소식"을 핵심 알림 카테고리로 분류. 1년 1~2회의 특집 발표가 아닌 <strong>4년 연속 시즌제 콘텐츠</strong>로 운영될 가능성</li>
+  <li><strong>동마칩(DONGMA CHIP) 도입</strong> — "칩"이라는 표현은 통상 ① 누적 마일리지·완주 기록을 저장하는 멤버십 포인트, ② 100주년 한정 굿즈·메달 시스템, ③ 우선접수 자격 부여 시스템 등으로 활용됩니다. 동마클럽이 어느 방향을 갈지는 후속 공지에서 확인 필요</li>
+  <li><strong>동마 시리즈 통합 운영 강화</strong> — 동마클럽은 이미 서울마라톤·서울레이스·공주백제·경주국제 4개 대회를 통합 운영 중이며, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 시리즈 일정</a> 가이드처럼 이 4개 대회 간 연계가 갈수록 강해지는 추세. 동마칩이 시리즈 통합 보상 시스템일 가능성</li>
+</ul>
+
+<h2>한국 러너가 지금부터 챙겨야 할 3가지</h2>
+
+<h3>① 동마클럽 공지채널 등록</h3>
+
+<p>동마클럽 인스타그램 프로필 → 링크트리 하단 "공지채널"에서 가입. 동마칩 상세 발표·100주년 관련 이벤트·우선접수 변경 사항이 가장 빠르게 통보되는 공식 채널입니다. 5월 초 오픈된 신규 시스템이라 가입자 수가 적을 때 등록해두는 게 노이즈 적음.</p>
+
+<h3>② 동마클럽 ID 활성 유지</h3>
+
+<p>이미 동마 시리즈 대회에 참가하면서 동마클럽 ID를 발급받은 러너라면, ID 정보(이메일·전화번호·기록 제출 이력)가 최신 상태인지 확인. 100주년 관련 우선접수·동마칩 적립 등 모든 시스템이 동마클럽 ID 기반으로 운영될 가능성 큼.</p>
+
+<h3>③ 2027~2029 시즌 동마 시리즈 참가 기록 누적</h3>
+
+<p>4년 카운트다운이라는 건 <strong>2027·2028·2029 시즌 참가 이력이 2030 100주년 대회의 자격 요건이 될 수 있다</strong>는 신호로 읽혀집니다. 매년 동마 시리즈 4개 대회 중 최소 1개 이상 완주 또는 동마클럽 멤버십 유지가 100주년 우선접수 트랙을 만드는 기준이 될 가능성. 확정은 아니지만 2027 서울마라톤(이미 풀코스 추첨 종료)부터 차근차근 기록을 남기는 게 안전합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">"100주년" 표기에 대한 보충</p>
+    <p>동마클럽 공식 발표는 "2030년 = 100주년"으로 표기합니다. 1931년 1회 대회 이후 일제강점기·전쟁기 중단 기간을 어떻게 계산하느냐에 따라 회차와 햇수가 일반적으로 일치하지 않습니다. 본 글은 동마클럽의 공식 표기를 그대로 따릅니다. 정확한 회차 정보는 2030년 대회 운영 안내 시점에 공식 확정 예정.</p>
+  </div>
+</div>
+
+<h2>이미 정해진 2027~2029 동마 시리즈 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>시즌</th><th>대회</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>2026 가을</strong></td><td><a href="/blog/2026-gongju-baekje-marathon">공주백제마라톤</a> 9/20 · <a href="/blog/2026-seoul-race">서울레이스</a> 10/11 · <a href="/blog/2026-gyeongju-international-marathon">경주국제마라톤</a> 10/17</td><td>D-130~D-159</td></tr>
+    <tr><td><strong>2027 봄</strong></td><td><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤</a> 3/21</td><td>풀코스 추첨 5월 마감 (D-313)</td></tr>
+    <tr><td><strong>2027~2029</strong></td><td>동마 시리즈 4개 대회 연간 운영 예상</td><td>100주년 카운트다운 시즌</td></tr>
+    <tr><td><strong>2030</strong></td><td><strong>제100주년 서울마라톤</strong></td><td>ROAD TO 100TH 최종 도착점</td></tr>
+  </tbody>
+</table>
+
+<h2>요약 — 100주년 4년 전 시점에서 해야 할 것</h2>
+
+<ol>
+  <li><strong>오늘:</strong> 동마클럽 공지채널 등록 → 동마칩 상세 발표 알림 수신</li>
+  <li><strong>이번 가을 시즌(9~10월):</strong> 동마 시리즈 중 1개 이상 참가 — 공주백제·서울레이스·경주국제 중 본인 일정과 페이스에 맞는 1개</li>
+  <li><strong>2027 봄:</strong> 2027 서울마라톤 대회일(3/21) 결과 관리 — 풀 또는 10K 완주 기록을 동마클럽 ID에 누적</li>
+  <li><strong>지속:</strong> 동마칩 상세 공개 시 즉시 본 글 업데이트 + 후속 가이드 발행</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 첫 동마 대회로 시작하기</p>
+    <p>2026 하반기 동마 시리즈 3개 대회의 접수 일정·코스·참가비를 한 번에 보려면 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정 총정리</a>를, 2027 서울마라톤 우선접수 가이드는 <a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10</a>을 참고하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: @dongmaclub 인스타그램 공식 발표(2026-05-08) / 동마클럽 공지채널 / 작성일 2026년 5월 12일 기준 / 동마칩 상세 내용은 동마클럽 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2026-pohang-iron-run',
+    slug: '2026-pohang-iron-run',
+    title: '2026 포항 아이언런 D-19 | 7/4 영일대 — 3.8·7.87·15.38km 철의 도시 컨셉, 5/31 마감',
+    description: '포스코노동조합이 주최하는 2026 포항 아이언런(IRON RUN)이 7월 4일(토) 영일대해수욕장 장미광장에서 열립니다. 거리 의미가 독특 — 3.8km(포스코 노조 38주년), 7.87km(철의 비중 7.87g/㎤), 15.38km(철의 녹는점 1,538℃). 정원 5,000명, 5월 31일까지 접수.',
+    thumbnail: '/images/blog/2026-pohang-iron-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['포항 아이언런', 'IRON RUN', '포항 마라톤', '영일대', '포스코', '여름 러닝 대회', '대회 일정'],
+    event: {
+      name: '2026 포항 아이언런 (IRON RUN)',
+      startDate: '2026-07-04T08:00:00+09:00',
+      location: {
+        name: '영일대해수욕장 장미광장',
+        address: '경상북도 포항시 북구 영일대해수욕장 장미광장',
+      },
+      organizer: '포스코노동조합',
+      url: 'https://ironrun.kr',
+      offers: [
+        { name: '1코스 3.8km (포스코 노조 38주년)', priceKrw: 25000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+        { name: '2코스 7.87km (철의 비중)', priceKrw: 35000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+        { name: '3코스 15.38km (철의 녹는점)', priceKrw: 40000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+      ],
+    },
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026 포항 아이언런 — <strong>2026년 7월 4일(토) 영일대해수욕장 장미광장 출발</strong>. 정원 5,000명, 4/1~5/31 선착순 접수</li>
+    <li>거리 셋 모두 "철의 도시" 컨셉 — <strong>3.8km(포스코 노조 38주년) / 7.87km(철의 비중 7.87g/㎤) / 15.38km(철의 녹는점 1,538℃ ÷ 100)</strong></li>
+    <li>참가비 25K/35K/40K, 메달+티셔츠+배번+기록증+간식. 7월 초 여름 포항 바닷가 새벽 출발(08:00~08:20)</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 D-19 — 5월 31일(일) 마감</p>
+    <p>4월 1일부터 5천 명 선착순. 5월 둘째 주 시점에는 일부 종목 자리가 남아 있지만, 작년 기준 <strong>15.38km 3코스가 가장 먼저 마감</strong>됐습니다. 단체 신청(2인 이상)도 가능하니 크루 단위라면 5월 안에 결정하세요.</p>
+  </div>
+</div>
+
+<h2>왜 이번 대회가 흥미로운가</h2>
+
+<p>국내 마라톤 대회 중 거리에 산업·과학적 의미를 부여한 사례는 손에 꼽힙니다. 포항 아이언런의 세 거리는 단순한 라운드 넘버가 아니라 <strong>"철의 도시 포항"이라는 정체성을 거리 자체로 표현</strong>한 케이스입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>코스</th><th>거리</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1코스</strong></td>
+      <td>3.8km</td>
+      <td><strong>포스코노동조합 창립 38주년</strong> — 주최 단체의 역사를 거리로</td>
+    </tr>
+    <tr>
+      <td><strong>2코스</strong></td>
+      <td>7.87km</td>
+      <td><strong>철의 비중 7.87 g/㎤</strong> — 물 1g/㎤ 대비 7.87배 무거운 철의 밀도</td>
+    </tr>
+    <tr>
+      <td><strong>3코스</strong></td>
+      <td>15.38km</td>
+      <td><strong>철의 녹는점 1,538℃</strong> ÷ 100 — 액상 철이 시작되는 온도</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>러너 입장에서 의미가 큰 건 <strong>15.38km</strong>입니다. 국내 일반 마라톤이 5K·10K·하프(21.1km)·풀(42.2km)에 거리가 고정돼 있는데, <strong>10K~하프 사이의 중장거리 옵션</strong>이 거의 없습니다. 15.38km는 하프 도전을 준비하는 러너의 훈련 거리로도 딱 맞고, 10K를 졸업한 러너가 다음 단계로 시도하기에 부담이 적은 거리입니다.</p>
+
+<h2>대회 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">7/4 (토)</span>
+    <span class="stat-sub">08:00 첫 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">5/31 (일)</span>
+    <span class="stat-sub">선착순 5,000명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">장소</span>
+    <span class="stat-value">영일대</span>
+    <span class="stat-sub">장미광장</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">주최</span>
+    <span class="stat-value">포스코</span>
+    <span class="stat-sub">노동조합</span>
+  </div>
+</div>
+
+<h2>종목별 상세</h2>
+
+<table>
+  <thead>
+    <tr><th>코스</th><th>거리</th><th>참가비</th><th>정원</th><th>출발</th><th>제한 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>3코스</strong></td><td>15.38km</td><td>40,000원</td><td>2,500명</td><td>08:00</td><td>150분</td></tr>
+    <tr><td><strong>2코스</strong></td><td>7.87km</td><td>35,000원</td><td>1,500명</td><td>08:10</td><td>100분</td></tr>
+    <tr><td><strong>1코스</strong></td><td>3.8km</td><td>25,000원</td><td>1,000명</td><td>08:20</td><td>60분</td></tr>
+  </tbody>
+</table>
+
+<h2>코스·날씨 — 7월 초 포항 바닷가</h2>
+
+<p>출발·도착 모두 영일대해수욕장 장미광장. 코스는 영일대 해변로 일대를 도는 평지 위주로 알려져 있고, 큰 오르막은 없습니다. 7월 초 포항 평균:</p>
+
+<ul>
+  <li><strong>오전 8시 기온:</strong> 평균 22~25℃, 습도 75~85%</li>
+  <li><strong>일출:</strong> 약 5:15 — 출발 시간에는 이미 해가 떠 있어 자외선 차단 필수</li>
+  <li><strong>바람:</strong> 해변 코스 특성상 바다 쪽 풍속이 변수. 평소 3~5m/s 수준이라 큰 부담은 없음</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">☀️</span>
+  <div class="callout-body">
+    <p class="callout-title">여름 대회 — 페이스 -20초 / km 보수적으로</p>
+    <p>봄가을 대회 기준 자기 페이스에서 km당 15~20초 늦추는 것이 안전합니다. 15.38km 코스라면 평소 하프 페이스보다 1~2분 정도 늦은 페이스로 잡고, 1km마다 물·전해질 보충 권장. 출발 직전 햇볕 노출 최소화(모자·선글라스·자외선 차단제) 필수.</p>
+  </div>
+</div>
+
+<h2>한국 러너 관점 — 어느 코스를 고를까</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>추천 코스</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 입문 1년 차 / 5K~10K 완주 경험</strong></td>
+      <td>1코스 3.8km</td>
+      <td>여름 첫 대회로 부담 최소. 완주 메달 받는 경험에 집중</td>
+    </tr>
+    <tr>
+      <td><strong>10K 완주, 하프 도전 전</strong></td>
+      <td>2코스 7.87km</td>
+      <td>거리 적응 + 여름 페이스 컨트롤 훈련</td>
+    </tr>
+    <tr>
+      <td><strong>하프 완주 경험 있음, 가을 마라톤 준비 중</strong></td>
+      <td>3코스 15.38km</td>
+      <td>장거리 페이스 유지 + 여름 더위 적응 훈련. 가을 풀 시즌 빌드업 시점에 딱</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>신발 선택 — 여름 평지 코스 기준</h2>
+
+<p>7월 초 28℃ 가까운 더위 + 평지 해변 코스라는 조건에 맞는 신발 후보:</p>
+
+<ul>
+  <li><strong>1코스 3.8km / 2코스 7.87km — 경량 데일리:</strong> <a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 에보 SL</a>(223g)·<a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>·<a href="/shoes/new-balance-rebel-v5">NB 레벨 v5</a></li>
+  <li><strong>3코스 15.38km / PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>3코스 15.38km / 안전 완주 — 슈퍼 트레이너 또는 쿠션화:</strong> <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(216g)·<a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a></li>
+</ul>
+
+<p>발볼이 넓으면 와이드 옵션을 우선하고, 여름 대회는 통기성 좋은 메쉬 어퍼가 필수입니다. 본인 발에 맞는 신발이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
+
+<h2>기념품·접수 방법</h2>
+
+<ul>
+  <li><strong>기념품:</strong> 메달, 기념 티셔츠, 배번표, 기록증, 음료·간식</li>
+  <li><strong>접수:</strong> 공식 홈페이지 <a href="https://ironrun.kr" target="_blank" rel="noopener">ironrun.kr</a></li>
+  <li><strong>접수 방식:</strong> 개인 신청 / 단체 신청(2인 이상)</li>
+  <li><strong>문의:</strong> 070-7718-7577 (평일 11:00~17:00)</li>
+</ul>
+
+<h2>요약 — D-19 액션 플랜</h2>
+
+<ol>
+  <li><strong>이번 주:</strong> 본인 페이스·하프 도전 시점·여름 더위 적응 수준 고려해서 코스 결정</li>
+  <li><strong>5월 안:</strong> ironrun.kr에서 접수 — 15.38km 3코스 우선 마감 우려</li>
+  <li><strong>6월:</strong> 여름 페이스 훈련 시작 — 평소 페이스에서 20초 늦춰 30~60분 베이스런 주 3회</li>
+  <li><strong>대회 1주 전:</strong> 포항 1박 또는 새벽 출발 교통편 확정, 배번·물품 보관 일정 체크</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">여름 대회와 가을 마라톤 빌드업</p>
+    <p>7월 포항 아이언런이 7~9월 여름 훈련의 좋은 중간 점검 대회가 됩니다. 가을 풀코스 도전이 목표라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 접수 가이드</a>, 동마 시리즈와 묶고 싶다면 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: ironrun.kr 공식 / @runners_now 인스타그램 / runningwikii / 작성일 2026년 5월 12일 기준 / 정원·참가비·코스는 주최측 공지에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
     id: '2026-asics-kayano-33-launch',
     slug: '2026-asics-kayano-33-launch',
     title: 'ASICS GEL-KAYANO 33 D-21 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
