@@ -5,7 +5,21 @@
 
 ## 미처리
 
-(없음)
+- [ ] **asics-gel-kayano-33** (추정 입력 2026-05-12, 출시 D-20)
+  - 출시일: 2026-06-01 글로벌
+  - 공식 발표 기준: 무게 298g · 힐 40mm/포어풋 32mm · 드롭 8mm · FLUIDSUPPORT · FF BLAST MAX+PLUS 듀얼 폼
+  - 추정값 영역:
+    - `specs.cushioning: 9` (FF BLAST MAX 도입, 32 동일 유지 — 향상 가능)
+    - `specs.responsiveness: 7` (32의 6 대비 +1)
+    - `specs.stability: 9` (32의 10 대비 -1, FLUIDSUPPORT 검증 부족)
+    - `specs.durability: 650km` (32의 700km보다 보수적)
+    - `priceAnalysis.msrp: 209000` (글로벌 $170 + 32 한국가 199,000 참고)
+    - `koreanFootFit.wideOptions: true` (32 패턴 유지 예상)
+  - 후속 확인 시점: 2026-09 (출시 +3개월)
+  - 우선 확인 항목:
+    - RunRepeat SA 힐/전족부, HA, 에너지 리턴%, 토박스 너비
+    - 한국 정가 (asics.co.kr 확정)
+    - 와이드 옵션(2E·X-와이드) 한국 발매 여부
 
 ## 완료
 
