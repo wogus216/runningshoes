@@ -1,0 +1,144 @@
+import type { MarathonEvent } from '@/types/marathon';
+
+export const octoberEvents: MarathonEvent[] = [
+  {
+    id: 'andong-marathon-2026',
+    name: '2026 안동마라톤',
+    date: '2026-10-04',
+    month: '10월',
+    location: '안동시민운동장',
+    region: '경북',
+    distances: ['풀코스', '하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://admarathon.kr/andong/',
+    description:
+      '획득고도 700m+ 국내 최상급 난코스. 10,000명 선착순, 작년 며칠 만에 조기 마감. 5/31 접수 마감.',
+    courseInfo: {
+      terrain: '언덕',
+      difficulty: '상급',
+      elevationGain: 700,
+      certification: 'KAF',
+      courseDescription: '획득고도 700m+ 의 국내 최상급 난이도 풀코스.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 60000 },
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 50000 },
+        { distance: '5K', fee: 30000 },
+      ],
+      expectedParticipants: 10000,
+      startTime: '08:00',
+    },
+  },
+  {
+    id: 'seoul-open-marathon-2026',
+    name: '2026 서울 오픈 마라톤',
+    date: '2026-10-05',
+    month: '10월',
+    location: '광화문광장 앞 대로변',
+    region: '서울',
+    distances: ['하프', '10K'],
+    status: '마감',
+    isMajor: false,
+    website: 'https://seoulopen.or.kr/',
+    description:
+      '광화문 출발 도심 하프·10K. 월요일(공휴일) 개최. 본접수 5/10 마감됨.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: '없음',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 80000 },
+        { distance: '10K', fee: 60000 },
+      ],
+      startTime: '07:30',
+    },
+  },
+  {
+    id: 'gyeongpo-marathon-2026',
+    name: '2026 경포마라톤',
+    date: '2026-10-10',
+    month: '10월',
+    location: '경포해변 중앙광장',
+    region: '강원',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'http://www.xn--289av7rnxbd06bmrc.com/',
+    description: '강릉 경포해변 동해안 하프 코스. 6/23 접수 마감.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription: '동해안 평지 해변 코스.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 40000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '4.7K 건강달리기', fee: 30000 },
+      ],
+      startTime: '08:30',
+    },
+  },
+  {
+    id: 'seoul-race-2026',
+    name: '2026 서울레이스 (SEOUL RACE)',
+    date: '2026-10-11',
+    month: '10월',
+    location: '청계광장 앞 세종대로',
+    region: '서울',
+    distances: ['하프', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://www.seoul-race.co.kr/',
+    description:
+      '동마 시리즈 유일 가을 도심 페스티벌형 하프·10K. 청계광장→종로→숭례문→시청→청계천→DDP. 우선접수 5/11~5/15, 본접수 5/27 19시 하프·21시 10K. 2025년 12,800명 역대 최다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: 'KAF',
+      courseDescription: '도심 100% 아스팔트 평지 순환형. 하프 PB 친화적.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 70000 },
+        { distance: '10K', fee: 60000 },
+      ],
+      expectedParticipants: 12500,
+      startTime: '08:00',
+    },
+  },
+  {
+    id: 'gyeongju-international-marathon-2026',
+    name: '2026 경주국제마라톤',
+    date: '2026-10-17',
+    month: '10월',
+    location: '경주시민운동장',
+    region: '경북',
+    distances: ['풀코스', '하프', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://dongma.club/',
+    description:
+      '동아일보 주최, World Athletics 엘리트 라벨. 유네스코 신라 유적(첨성대·황룡사지) 통과 코스. 동마 가을 시리즈 마무리.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: 'IAAF',
+      courseDescription: '경주 유적지 통과 평지 풀코스. PB 친화적.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 60000 },
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 40000 },
+      ],
+      startTime: '08:00',
+    },
+  },
+];
