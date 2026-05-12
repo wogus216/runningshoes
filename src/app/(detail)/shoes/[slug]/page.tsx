@@ -196,12 +196,19 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   // NOTE: aggregateRating과 review는 에디터 분석만으로 구성돼 있어 의도적으로 제외.
   // Google의 review snippet 정책은 실제 사용자 리뷰를 요구하며, 자체 편집 리뷰만으로는
   // 수동 조치 리스크가 있음. 실사용자 리뷰 확보 후 재도입 예정.
+  const productImages = (shoe.images && shoe.images.length > 0
+    ? shoe.images
+    : [shoe.image || DEFAULT_OG_IMAGE]
+  ).map((img) => (img.startsWith('http') ? img : `${SITE_URL}${img}`));
+
+  const productPrice = shoe.priceAnalysis?.msrp ?? shoe.price;
+
   const productJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Product',
     'name': `${shoe.brand} ${shoe.name}`,
     'description': shoe.description || `${shoe.brand} ${shoe.name} 러닝화`,
-    'image': shoe.image ? `${SITE_URL}${shoe.image}` : `${SITE_URL}${DEFAULT_OG_IMAGE}`,
+    'image': productImages,
     'brand': {
       '@type': 'Brand',
       'name': shoe.brand,
@@ -212,18 +219,95 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       'priceCurrency': 'KRW',
       'availability': 'https://schema.org/InStock',
       'url': `${SITE_URL}/shoes/${slug}`,
-      ...(shoe.priceAnalysis?.msrp && {
-        'price': shoe.priceAnalysis.msrp,
+      ...(productPrice && {
+        'price': productPrice,
       }),
     },
   };
+
+  // FAQ JSON-LD — 신발 데이터로 동적 생성 (한국 러너 관점 5문항)
+  // 실제 데이터가 있을 때만 해당 Q&A 포함 → 부정확한 답변 방지
+  const faqItems: Array<{ q: string; a: string }> = [];
+
+  const widthMap: Record<string, string> = {
+    narrow: '좁음',
+    standard: '표준',
+    wide: '넓음',
+  };
+  if (shoe.koreanFootFit?.toBoxWidth) {
+    const widthLabel = widthMap[shoe.koreanFootFit.toBoxWidth] || shoe.koreanFootFit.toBoxWidth;
+    const wideOpt = shoe.koreanFootFit.wideOptions ? ' 와이드(2E·4E) 옵션이 정식 출시되어 발볼 넓은 한국 러너도 안심하고 선택할 수 있습니다.' : ' 와이드 옵션이 없어 발볼 매우 넓은 러너는 사이즈 +0.5를 권장하거나 다른 와이드 옵션 모델을 고려하세요.';
+    faqItems.push({
+      q: `${shoe.brand} ${shoe.name}이 발볼 넓은 한국 러너에게 맞나요?`,
+      a: `토박스 너비가 ${widthLabel} 등급으로 분류됩니다.${wideOpt}`,
+    });
+  }
+
+  const flatMap: Record<string, string> = {
+    excellent: '매우 적합 — 강한 안정성 시스템과 충분한 아치 서포트로 평발 러너의 안쪽 무너짐을 효과적으로 잡아줍니다.',
+    good: '적합 — 적절한 안정성을 제공하며 평발 러너가 부담 없이 사용할 수 있습니다.',
+    fair: '주의 필요 — 중립 또는 약한 안정성이라 심한 평발은 부담될 수 있습니다.',
+    poor: '비추천 — 안정성이 부족해 평발 러너에게는 부상 위험이 있습니다.',
+  };
+  if (shoe.koreanFootFit?.flatFootCompatibility) {
+    faqItems.push({
+      q: `평발인데 ${shoe.name} 신을 수 있나요?`,
+      a: flatMap[shoe.koreanFootFit.flatFootCompatibility] || '평발 적합성 정보를 확인 중입니다.',
+    });
+  }
+
+  const kneeMap: Record<string, string> = {
+    excellent: '무릎 보호에 매우 좋은 신발입니다. 충분한 쿠셔닝과 부드러운 착지로 무릎 충격을 효과적으로 줄입니다.',
+    good: '무릎 보호 측면에서 양호합니다. 통상적인 무릎 통증 러너에게 무리 없는 선택입니다.',
+    caution: '무릎 통증 이력이 있다면 주의가 필요합니다. 짧은 거리부터 시작해 본인에게 맞는지 확인하세요.',
+    warning: '무릎 통증 러너에게는 권장하지 않습니다. 더 부드러운 쿠션의 신발을 고려하세요.',
+  };
+  if (shoe.injuryPrevention?.kneeIssues) {
+    faqItems.push({
+      q: `무릎 통증이 있는데 ${shoe.name} 신어도 괜찮나요?`,
+      a: kneeMap[shoe.injuryPrevention.kneeIssues] || '무릎 보호 등급 정보를 확인 중입니다.',
+    });
+  }
+
+  if (shoe.category && shoe.targetUsers?.recommended) {
+    const beginnerFriendly = ['입문화', '데일리', '쿠션화'].includes(shoe.category);
+    const recList = shoe.targetUsers.recommended.slice(0, 3).join(', ');
+    faqItems.push({
+      q: `${shoe.brand} ${shoe.name}은 누구에게 추천되나요?`,
+      a: `${shoe.category} 카테고리 신발로, 주로 ${recList} 같은 러너에게 추천됩니다.${beginnerFriendly ? ' 입문~중급 러너도 부담 없이 신을 수 있는 카테고리입니다.' : ' 일정 수준의 러닝 경험이 있는 러너에게 더 적합합니다.'}`,
+    });
+  }
+
+  if (shoe.biomechanics?.optimalPace) {
+    faqItems.push({
+      q: `${shoe.name}의 최적 페이스 구간은 어떻게 되나요?`,
+      a: `${shoe.biomechanics.optimalPace} 페이스 구간에서 가장 좋은 성능을 발휘합니다. 더 빠른 페이스나 훨씬 느린 페이스에서는 다른 카테고리 신발을 고려하세요.`,
+    });
+  }
+
+  const faqJsonLd = faqItems.length > 0 ? {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    'mainEntity': faqItems.map((item) => ({
+      '@type': 'Question',
+      'name': item.q,
+      'acceptedAnswer': {
+        '@type': 'Answer',
+        'text': item.a,
+      },
+    })),
+  } : null;
 
   return (
     <>
       {/* BreadcrumbList JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
-      {/* Product + Review JSON-LD */}
+      {/* Product JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
+      {/* FAQ JSON-LD (동적 생성, 데이터 있을 때만) */}
+      {faqJsonLd && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      )}
 
       <div className="space-y-4">
         {/* 브레드크럼 */}
