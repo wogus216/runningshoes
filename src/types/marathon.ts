@@ -2,7 +2,7 @@
 // 마라톤 대회 타입 정의
 // ============================================
 
-export type EventMonth = '3월' | '4월' | '5월' | '6월';
+export type EventMonth = '3월' | '4월' | '5월' | '6월' | '7월';
 
 export type EventRegion =
   | '서울'
@@ -87,7 +87,7 @@ export interface MarathonEvent {
   logistics?: Logistics;
 }
 
-export const EVENT_MONTHS: EventMonth[] = ['3월', '4월', '5월', '6월'];
+export const EVENT_MONTHS: EventMonth[] = ['3월', '4월', '5월', '6월', '7월'];
 
 export const EVENT_REGIONS: EventRegion[] = [
   '서울', '경기', '인천', '강원',
