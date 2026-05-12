@@ -21,3 +21,6 @@ pnpm-debug.log*
 # Misc
 .DS_Store
 .gstack/
+
+# Claude Code runtime artifacts
+.claude/scheduled_tasks.lock
