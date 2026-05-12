@@ -2,6 +2,336 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-songdo-lee-bongju-marathon',
+    slug: '2026-songdo-lee-bongju-marathon',
+    title: '제1회 송도 이봉주 마라톤 D-3 | 5/15 마감, 6/28 인천 송도 10K·5K — 한국 마라톤 레전드 이름 단 첫 대회',
+    description: '한국 마라톤 최고의 레전드 이봉주 선수의 이름을 단 첫 마라톤이 2026년 6월 28일(일) 인천대학교 송도캠퍼스에서 열립니다. 10km·5km, 각 50,000원, 정원 10,000명 선착순. 접수가 5월 15일까지로 D-3 — 첫 회 대회 정보·코스·신청 전략·신발 추천까지.',
+    thumbnail: '/images/blog/2026-songdo-lee-bongju-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['송도 이봉주 마라톤', '이봉주', '인천 마라톤', '송도', '6월 마라톤', '대회 일정', '10K', '5K'],
+    event: {
+      name: '제1회 2026 송도 이봉주 마라톤',
+      startDate: '2026-06-28T08:00:00+09:00',
+      location: {
+        name: '인천대학교 송도캠퍼스',
+        address: '인천광역시 연수구 송도동 인천대학교',
+      },
+      organizer: '인천광역시육상연맹, 이상커뮤니케이션즈',
+      url: 'https://runsongdo.co.kr',
+      offers: [
+        { name: '10km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
+        { name: '5km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
+      ],
+    },
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>한국 마라톤 전설 이봉주의 이름을 단 첫 대회</strong> — 2026년 6월 28일(일) 인천대학교 송도캠퍼스 08:00 출발</li>
+    <li>10km·5km <strong>각 50,000원</strong>, 정원 10,000명 선착순, 접수 4/20~<strong>5/15(금)</strong> — D-3</li>
+    <li>송도 평지 코스 + 6월 말 한여름 직전 새벽 출발 — 첫 회 대회라 정보가 적지만 이봉주 IP·기념품·만 명 규모로 빠른 매진 우려</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">D-3 — 5월 15일(금) 접수 마감</p>
+    <p>첫 회 + 한국 마라톤 전설 이름 + 만 명 정원의 조합은 6월 대회 중 가장 매진 압력이 큰 라인업입니다. 결정했다면 오늘 안에 <a href="https://runsongdo.co.kr/entryperson.php" target="_blank" rel="noopener">runsongdo.co.kr</a>에서 결제까지 끝내세요. 환불 기한은 5월 29일(금) 17시까지로 비교적 여유 있음.</p>
+  </div>
+</div>
+
+<h2>왜 이번 대회가 특별한가</h2>
+
+<p>이봉주 선수는 1996 애틀랜타 올림픽 마라톤 은메달, 2001 보스턴 마라톤 우승, 한국 최고 기록(2:07:20) 보유자입니다. 한국 러닝의 황금기를 이끈 인물이자 대중적 인지도가 가장 높은 마라토너죠. 그의 이름을 단 마라톤이 <strong>정식 대회로 출범하는 것은 이번이 처음</strong>입니다.</p>
+
+<p>첫 회 대회는 통상 두 가지 성격을 띱니다:</p>
+
+<ul>
+  <li><strong>① 운영 미숙 리스크</strong> — 셔틀버스·물품보관·식수공급·완주 보급 등 처음이라 시행착오 가능</li>
+  <li><strong>② 가치 상승 잠재력</strong> — 1회 완주 메달은 향후 시리즈가 성장할수록 희소성 가치 발생. 1회 참가는 "오리지널 멤버"라는 상징성</li>
+</ul>
+
+<p>이봉주 마라톤은 인천광역시육상연맹이 공동 주최하므로 운영 측면에서 어느 정도 신뢰 가능하지만, 첫 회는 항상 보수적으로 접근하는 게 안전합니다.</p>
+
+<h2>한 눈에 보는 대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>제1회 2026 송도 이봉주 마라톤</td></tr>
+    <tr><td><strong>대회일</strong></td><td>2026년 6월 28일(일) 08:00 출발 (07:00 집결)</td></tr>
+    <tr><td><strong>장소</strong></td><td>인천대학교 송도캠퍼스</td></tr>
+    <tr><td><strong>종목</strong></td><td>10km / 5km</td></tr>
+    <tr><td><strong>참가비</strong></td><td>10km <strong>50,000원</strong> / 5km <strong>50,000원</strong> (동일)</td></tr>
+    <tr><td><strong>정원</strong></td><td>10,000명 선착순</td></tr>
+    <tr><td><strong>접수 기간</strong></td><td>2026년 4월 20일 ~ <strong>5월 15일(금)</strong></td></tr>
+    <tr><td><strong>기념품</strong></td><td>기념품, 배번호, 완주메달, 온라인 기록증, 기록칩</td></tr>
+    <tr><td><strong>환불 기한</strong></td><td>5월 29일(금) 17:00까지</td></tr>
+    <tr><td><strong>주최</strong></td><td>인천광역시육상연맹, 이상커뮤니케이션즈</td></tr>
+    <tr><td><strong>접수 사이트</strong></td><td><a href="https://runsongdo.co.kr" target="_blank" rel="noopener">runsongdo.co.kr</a></td></tr>
+    <tr><td><strong>문의</strong></td><td>1866-1718</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">10km와 5km 참가비가 같은 이유</p>
+    <p>일반적으로 10K가 5K보다 5,000~10,000원 비싼데, 이번 대회는 둘 다 50,000원입니다. 첫 회 + 만 명 규모 + 동일 보급·기념품 구성을 노린 가격 책정으로 보입니다. <strong>5km 러너 입장에서는 다소 비싸게 느낄 수 있지만, 10km 러너 입장에서는 합리적</strong>인 가격입니다.</p>
+  </div>
+</div>
+
+<h2>송도 코스 — 평지 + 6월 말 한여름 직전</h2>
+
+<p>인천 송도는 매립 신도시 특성상 <strong>거의 100% 평지</strong>입니다. 송도캠퍼스를 중심으로 센트럴파크·송도해변·국제업무지구·인천대교 방면 등 어디로 코스를 그려도 평탄. PB 친화적 환경입니다.</p>
+
+<p>다만 6월 28일은 <strong>여름의 가장자리</strong>입니다:</p>
+
+<ul>
+  <li><strong>인천 6월 말 평균:</strong> 오전 8시 기온 22~24℃, 습도 75~85%, 일출 5:13</li>
+  <li><strong>바닷가·바람 변수:</strong> 송도는 해안가 매립지라 바람이 강한 날 영향이 있을 수 있음. 출발 시각 8시면 통상 미풍 정도</li>
+  <li><strong>자외선:</strong> 8시 출발이면 이미 자외선 지수 3~5 (보통~높음). 모자·선글라스 권장</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">☀️</span>
+  <div class="callout-body">
+    <p class="callout-title">6월 말 페이스 컨트롤</p>
+    <p>봄·가을 페이스에서 km당 10~15초 늦추는 게 안전합니다. 평소 10K 50분이면 51~52분 목표가 합리적. PB 도전은 부담스럽다면 첫 회 대회 분위기 체험 + 완주 메달 수집에 집중하는 게 현명합니다.</p>
+  </div>
+</div>
+
+<h2>코스별 본인 매칭</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>추천 종목</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 입문 1년 차 / 5K 완주 경험</strong></td>
+      <td>5km</td>
+      <td>여름 첫 대회로 부담 최소, 완주 메달 + 첫 회 IP 가치</td>
+    </tr>
+    <tr>
+      <td><strong>10K 완주 경험, 하프 도전 전</strong></td>
+      <td>10km</td>
+      <td>평지 + 같은 50K 참가비 → 가성비 우위</td>
+    </tr>
+    <tr>
+      <td><strong>10K PB 도전 (50분 이하)</strong></td>
+      <td>10km</td>
+      <td>송도 평지 + 6월 말 새벽 → 시즌 첫 PB 도전 가능 환경</td>
+    </tr>
+    <tr>
+      <td><strong>가을 풀코스 빌드업 중</strong></td>
+      <td>10km</td>
+      <td>여름 페이스 적응 + 빠른 페이스 점검</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>신발 선택 — 송도 평지 6월 새벽</h2>
+
+<p>6월 말 28℃ 가까운 더위 + 평지 도심 코스 조건에 맞는 후보:</p>
+
+<ul>
+  <li><strong>5km / 10K 가벼운 페이스 — 데일리 트레이너:</strong> <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>·<a href="/shoes/adidas-adizero-evo-sl">아디다스 에보 SL</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+  <li><strong>10K PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a></li>
+  <li><strong>5km 첫 대회 — 안정감 우선:</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></li>
+</ul>
+
+<p>발볼 넓으면 와이드 옵션 우선, 여름 대회는 통기성 좋은 메쉬 어퍼 필수. 발에 맞는 신발 후보가 막막하다면 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a> 참고.</p>
+
+<h2>D-3 액션 플랜</h2>
+
+<ol>
+  <li><strong>오늘~내일 (5/12~13):</strong> 종목 결정(5K vs 10K) → 참가비 50K 결제 → 본인 정보 확인</li>
+  <li><strong>5/15(금):</strong> 최종 마감 — 결정 못 했으면 미루지 말기 (만 명 매진 우려)</li>
+  <li><strong>5/29(금) 17:00:</strong> 환불·정보변경 마지막 기한</li>
+  <li><strong>6월 1~3주차:</strong> 여름 페이스 적응 훈련 (km당 +10초 페이스로 30~50분 베이스런 주 3회)</li>
+  <li><strong>6/28(일) 07:00:</strong> 송도캠퍼스 집결, 08:00 출발</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">같은 날 6/28 다른 대회와 비교</p>
+    <p>같은 6월 28일(일)에 <strong>2026 서울런</strong>도 열립니다(서울·하프/10K/5K, 접수 6/17 마감). 인천 거주·송도 접근성 좋음·이봉주 IP 선호 → 송도 / 서울 거주·하프 옵션 필요 → 서울런. 한 쪽만 선택 가능합니다.</p>
+  </div>
+</div>
+
+<p>여름~가을 마라톤 큐레이션은 <a href="/blog/2026-pohang-iron-run">2026 포항 아이언런 D-19</a>(7/4) → <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 풀코스 접수 가이드</a>(6/24 접수) → <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a> 순으로 빌드업하는 게 자연스럽습니다.</p>
+
+<p><small>출처: runsongdo.co.kr 공식 / runningwikii / 작성일 2026년 5월 12일 기준 / 코스·페이스메이커·이봉주 선수 직접 참여 여부는 주최측 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2026-nike-alphafly-4-prototype',
+    slug: '2026-nike-alphafly-4-prototype',
+    title: '나이키 알파플라이 4 프로토타입 정체 공개 | 보스턴 미국 남자 역대 2위 + Nike-Dev 16141 WA 등록',
+    description: '2026 보스턴 마라톤에서 미국 남자 역대 2위를 만든 그 신발. World Athletics 승인 신발 리스트에 "Nike-Dev 16141"로 등록된 알파플라이 4 프로토타입의 정체와 기술 변화, 정식 출시 시점(시카고 마라톤 11월), 그리고 아디다스 아디오스 프로 에보 3와의 슈퍼슈즈 4파전 구도까지 정리.',
+    thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>나이키 <strong>알파플라이 4 프로토타입</strong>이 2026 보스턴 마라톤에서 Charles Hicks의 <strong>미국 남자 역대 2위</strong>를 만들며 정체 노출 — World Athletics 등록 코드 <strong>Nike-Dev 16141</strong></li>
+    <li>핵심 변화: <strong>드롭 4-6mm로 하향</strong> + 전족부 ZoomX 증량 + <strong>듀얼 Air Zoom 유닛 + 연속형 바텀</strong>(힐~전족부 갭 제거) + 카본 플레이트 신지오메트리</li>
+    <li>정식 출시는 <strong>2026년 11월 시카고 마라톤 직전</strong> 예상. 같은 해 발매된 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>(97g)와의 슈퍼슈즈 4파전 본격화</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"Nike-Dev 16141"가 의미하는 것</p>
+    <p>나이키가 World Athletics 공식 승인 신발 리스트에 새 코드(Nike-Dev 16141)를 등록했다는 건, <strong>"이미 엘리트 레이스에서 합법적으로 사용할 수 있는 단계"</strong>로 개발이 진척됐다는 뜻입니다. 보통 정식 발매 6~9개월 전 단계. 아디다스가 아디오스 프로 에보 3로 서브2를 만든 직후, 나이키의 본격 반격이 시작됐다는 신호입니다.</p>
+  </div>
+</div>
+
+<h2>발견 경위 — 보스턴 마라톤 2위가 만든 화제</h2>
+
+<p>2026년 4월 21일 보스턴 마라톤. 미국 마라톤의 신예 <strong>Charles Hicks가 미국 남자 역대 2위</strong>로 결승선을 끊었습니다. 그가 신은 신발은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>도 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>도 아닌, 처음 보는 흰색·그레이 톤의 프로토타입.</p>
+
+<p>곧이어 World Athletics 승인 신발 리스트가 업데이트되면서 정체가 드러났습니다 — <strong>Nike-Dev 16141</strong>. 같은 시기 케냐의 Faith Kipyegon(여자 1,500m 세계기록), 미국의 Grant Fisher(트랙 챔피언), Mary Ngugi-Cooper도 같은 신발을 신은 모습이 포착되었습니다. <strong>나이키 엘리트 풀에 베타 모델이 광범위하게 배포된 상태</strong>입니다.</p>
+
+<h2>알파플라이 3 → 4 핵심 변화 4가지</h2>
+
+<h3>① 드롭 8mm → 4-6mm</h3>
+
+<p>알파플라이 3의 8mm 드롭을 4-6mm 수준으로 낮춰 <strong>"더 평평한 신발"</strong>로 가는 방향. 이건 단순한 수치 변경이 아니라 미드솔 구조의 본질적 재설계입니다. 드롭이 낮아지면 전족부에 더 두꺼운 폼을 박을 수 있어 World Athletics 40mm 상한 내에서 <strong>더 큰 에너지 저장소</strong>를 만들 수 있습니다.</p>
+
+<h3>② 전족부 ZoomX 폼 증량 + 신 포뮬러</h3>
+
+<p>알파플라이 3에서도 ZoomX는 업계 최고 에너지 리턴 폼 중 하나로 평가됐는데, 4세대에서는 <strong>새 포뮬러 + 전족부 적층량 증가</strong>로 전족부 추진력을 강화합니다. 마라톤 후반(30km 이후)의 다리 무너짐을 줄이는 핵심 변화로 평가됩니다.</p>
+
+<h3>③ 듀얼 Air Zoom + 연속형 바텀 유닛</h3>
+
+<p>알파플라이 3까지는 힐과 전족부 Air Zoom 유닛 사이에 <strong>물리적 갭</strong>이 있었습니다(미드풋 부분). 4세대에서는 이 갭을 없애고 <strong>힐~전족부가 하나의 연속 바텀 유닛</strong>으로 연결됩니다. 결과는 보행 사이클의 미드풋 전환 단계에서 에너지 손실 감소 + 더 부드러운 롤링.</p>
+
+<h3>④ 카본 플레이트 지오메트리 변경 + 와이드 미드풋</h3>
+
+<p>Flyplate(카본 플레이트)의 위치·곡률이 재설계되고, 미드풋이 더 넓어집니다. 이는 <strong>안정성 향상</strong>을 노린 변화로, 알파플라이 3의 미드풋 흔들림 불만(특히 마라톤 후반)을 직접 겨냥한 개선입니다.</p>
+
+<h2>알파플라이 3 vs 4 — 알려진 정보 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>알파플라이 3 (현행)</th><th>알파플라이 4 (예상)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>220g (US M9)</td><td>경량화 (구체값 미공개)</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td><strong>4-6mm</strong></td></tr>
+    <tr><td><strong>미드솔</strong></td><td>ZoomX (기존 포뮬러)</td><td><strong>ZoomX 신 포뮬러</strong></td></tr>
+    <tr><td><strong>Air Zoom 유닛</strong></td><td>힐+전족부 분리</td><td><strong>연속형 바텀 (갭 제거)</strong></td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td>Flyplate (기존)</td><td>지오메트리 변경</td></tr>
+    <tr><td><strong>미드풋</strong></td><td>표준</td><td><strong>와이드 (안정성 강화)</strong></td></tr>
+    <tr><td><strong>WA 코드</strong></td><td>공개됨</td><td>Nike-Dev 16141</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2024년 1월</td><td>2026년 11월 시카고 마라톤 직전 예상</td></tr>
+    <tr><td><strong>글로벌 정가</strong></td><td>$285</td><td>$285~330 예상</td></tr>
+  </tbody>
+</table>
+
+<h2>2026 슈퍼슈즈 4파전 구도</h2>
+
+<p>지난 12개월 동안 메이저 브랜드들이 차세대 슈퍼슈즈를 모두 갱신했거나 갱신 진행 중입니다. <strong>2026년은 슈퍼슈즈 역사상 가장 경쟁이 치열한 해</strong>로 기록될 전망입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>무게</th><th>출시</th><th>한국가</th><th>포지션</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디다스 아디오스 프로 에보 3</a></td>
+      <td><strong>97g</strong></td>
+      <td>2026.4 (래플)</td>
+      <td>74만원~</td>
+      <td>업계 최경량, 1~2회 레이스 전용</td>
+    </tr>
+    <tr>
+      <td><strong>나이키 알파플라이 4</strong></td>
+      <td>경량화 예상</td>
+      <td>2026.11 예상</td>
+      <td>40만원대 추정</td>
+      <td>풀코스 30km+ 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td>
+      <td>166g</td>
+      <td>2025.3</td>
+      <td>약 35만원</td>
+      <td>대중적 PB 도전 표준</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></td>
+      <td>159g</td>
+      <td>2025</td>
+      <td>약 29만원</td>
+      <td>가성비 슈퍼슈즈</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/saucony-endorphin-elite-2">서코니 엔돌핀 엘리트 2</a></td>
+      <td>195g</td>
+      <td>2025</td>
+      <td>약 32만원</td>
+      <td>발볼 넓음, 한국 친화적</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 — 알파플라이 4를 기다려야 하나</h2>
+
+<h3>✅ 기다릴 가치가 있는 사람</h3>
+
+<ul>
+  <li><strong>가을 풀코스(춘천·서울·JTBC) PB 도전</strong> — 11월 시카고 직전 출시면 한국 가을 마라톤(10월 중순~11월)과 시기 겹침. 메인 PB 신발로 적합</li>
+  <li><strong>알파플라이 3의 미드풋 흔들림이 거슬렸던 러너</strong> — 와이드 미드풋 + 연속형 바텀으로 안정성 직접 개선</li>
+  <li><strong>30km 이후 다리 무너짐이 문제였던 러너</strong> — 전족부 ZoomX 증량은 마라톤 후반 추진력 보강을 노린 변화</li>
+  <li><strong>"가장 최신 슈퍼슈즈"를 신고 싶은 컬렉터·러너</strong></li>
+</ul>
+
+<h3>❌ 안 기다려도 되는 사람</h3>
+
+<ul>
+  <li><strong>봄 마라톤(5~6월) PB 도전 러너</strong> — 출시 시점이 가을 이후. 지금 필요한 신발이면 베이퍼플라이 4가 정답</li>
+  <li><strong>서브3 이상 페이스 러너</strong> — 알파플라이 시리즈의 강점(30km+ 안정성)이 발휘되는 페이스는 서브3 이하. 그 이상이면 베이퍼플라이 4가 더 가성비 좋음</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — 와이드 미드풋이라도 알파플라이 시리즈의 토박스는 통상 narrow~standard. 발볼 큰 러너는 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>가 더 안전</li>
+  <li><strong>예산 30만원 이하</strong> — 정식 출시가 40만원대 추정. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 또는 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(15만원대)이 합리적</li>
+</ul>
+
+<h2>요약 — 가을 PB 시즌 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5월):</strong> 봄 대회용은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 또는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>로 진행</li>
+  <li><strong>여름 (6~8월):</strong> 가을 PB 도전을 위한 베이스 + 인터벌 빌드업. 신발은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a> 같은 슈퍼 트레이너로 훈련</li>
+  <li><strong>가을 초 (9~10월):</strong> 알파플라이 4 한국 출시 공지 모니터링 — 나이키 SNKRS 앱 + 나이키 한국 공식 채널</li>
+  <li><strong>가을 마라톤 (10월 중순~11월):</strong> 알파플라이 4 또는 기존 슈퍼슈즈 중 본인 페이스·발에 맞는 모델로 결정</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">카본화 입문이 막막하다면</p>
+    <p>카본 플레이트 슈퍼슈즈는 부상 위험과 비용이 모두 큰 카테고리입니다. 본인 발볼·체중·페이스에 맞는 후보를 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 한국 카본화 전반 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 완벽 비교</a>, 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: Sneaker News / Sole Retriever / Gear Patrol / Marathon Handbook / Sundried / World Marathoner / 작성일 2026년 5월 12일 기준 / 무게·스택·가격·출시일 등 미공개 항목은 나이키 공식 발표 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
     id: '2030-seoul-marathon-100th-dongma-chip',
     slug: '2030-seoul-marathon-100th-dongma-chip',
     title: '2030 서울마라톤 100주년 동마칩 안내 | "ROAD TO 100TH" 4년 여정 시작',
