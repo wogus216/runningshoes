@@ -3,6 +3,71 @@ User-agent: *
 Allow: /
 Disallow: /api/*
 
+# GPTBot
+User-agent: GPTBot
+Allow: /
+Disallow: /api/*
+
+# ChatGPT-User
+User-agent: ChatGPT-User
+Allow: /
+Disallow: /api/*
+
+# OAI-SearchBot
+User-agent: OAI-SearchBot
+Allow: /
+Disallow: /api/*
+
+# ClaudeBot
+User-agent: ClaudeBot
+Allow: /
+Disallow: /api/*
+
+# Claude-Web
+User-agent: Claude-Web
+Allow: /
+Disallow: /api/*
+
+# anthropic-ai
+User-agent: anthropic-ai
+Allow: /
+Disallow: /api/*
+
+# PerplexityBot
+User-agent: PerplexityBot
+Allow: /
+Disallow: /api/*
+
+# Perplexity-User
+User-agent: Perplexity-User
+Allow: /
+Disallow: /api/*
+
+# Google-Extended
+User-agent: Google-Extended
+Allow: /
+Disallow: /api/*
+
+# Applebot-Extended
+User-agent: Applebot-Extended
+Allow: /
+Disallow: /api/*
+
+# CCBot
+User-agent: CCBot
+Allow: /
+Disallow: /api/*
+
+# Bytespider
+User-agent: Bytespider
+Allow: /
+Disallow: /api/*
+
+# Meta-ExternalAgent
+User-agent: Meta-ExternalAgent
+Allow: /
+Disallow: /api/*
+
 # Host
 Host: https://allrunabout.com
 

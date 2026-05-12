@@ -6,6 +6,7 @@ import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
 import { HeroSection } from '@/components/detail/hero-section';
 import { OnelinerSummary } from '@/components/detail/oneliner-summary';
+import { AtAGlance } from '@/components/detail/at-a-glance';
 import { EditorComment } from '@/components/detail/editor-comment';
 import { CoreBoxes } from '@/components/detail/core-boxes';
 import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
@@ -325,6 +326,9 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           <>
             {/* 한줄 요약 */}
             <OnelinerSummary shoe={shoe} />
+
+            {/* 한눈에 보기 — 데이터 기반 사실 요약 (AI 인용 친화) */}
+            <AtAGlance shoe={shoe} />
 
             {/* 에디터 코멘트 (선택적) */}
             {shoe.editorComment && shoe.targetUsers && (

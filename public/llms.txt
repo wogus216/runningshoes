@@ -1,0 +1,80 @@
+# 러닝의 모든것 (allrunabout.com)
+
+> 한국 러너를 위한 러닝화 비교·추천 사이트. 98종 러닝화의 실측 랩 데이터(SA·HA·에너지 리턴%·토박스 너비)와 한국인 발 특성(넓은 앞발, 평발 비율, 무릎 통증) 기준 맞춤 분석을 제공합니다. 모든 리뷰는 RunRepeat·Believe in the Run·Doctors of Running 등 외부 검증 데이터와 산초 에디터의 한국 러너 관점 평가를 결합합니다.
+
+## 사이트 정보
+
+- 도메인: https://allrunabout.com
+- 운영자: 산초 에디터 (2년차 러너, 하프/10K 완주, AI 논문 분석 기반 리뷰)
+- 연락처: sanchokwon216@gmail.com
+- 콘텐츠 정책: AggregateRating/Review schema 미사용 (self-authored 페널티 회피). 모든 점수는 외부 랩 데이터 출처 명시.
+
+## 핵심 페이지
+
+- [홈](https://allrunabout.com/): 신발 카탈로그 진입점, 추천 시스템, 카테고리 필터
+- [신발 추천](https://allrunabout.com/recommend): 경험·주간 거리·발 아치·발 너비·부상 이력·예산 기반 매칭 알고리즘
+- [신발 비교](https://allrunabout.com/compare): 최대 3족 동시 비교, 스펙·생체역학·가성비 매트릭스
+- [한국 마라톤 일정](https://allrunabout.com/marathon): 43개 대회 (3·4·5·6·7·9·10·11·12월), 접수일/장소/거리/난이도
+- [에너지 젤 가이드](https://allrunabout.com/gels): 13종 (Maurten·SiS·GU·Honey Stinger 등)
+- [브랜드별 기술](https://allrunabout.com/brands): 10개 브랜드의 미드솔 폼·플레이트·아웃솔 기술
+
+## 신발 데이터 (98종)
+
+브랜드별 분포: Nike 13 · Asics 13 · Saucony 12 · On 10 · New Balance 9 · Mizuno 9 · Brooks 9 · Hoka 8 · Puma 8 · Adidas 6
+
+신발 상세 페이지 URL 구조: `https://allrunabout.com/shoes/{slug}`
+
+핵심 카테고리:
+- 입문화 (10-15만원): 첫 러닝화, 가벼운 조깅
+- 데일리 트레이너 (15-20만원): 주간 50km 이하 일상 훈련
+- 쿠션화 (15-22만원): 평발·무릎 통증·과체중 러너
+- 안정화 (18-23만원): 과회내전, 보행 안정성 필요
+- 레이싱화 (25-35만원): 카본 플레이트, 대회·인터벌
+
+각 신발 페이지 포함 데이터:
+- RunRepeat 랩 실측: SA(충격흡수)·HA(경도)·에너지 리턴%·토박스 너비·스택·드롭·무게
+- 한국인 발 적합성: 발볼 너비(narrow/standard/wide), 평발 적합성, 와이드 옵션 여부
+- 부상 예방 등급: 무릎/족저근막염/아킬레스/IT밴드 (excellent/good/caution/warning)
+- 가격 분석: MSRP·km당 비용·동급 대안
+- 추천/비추천 대상: 러너 타입·체중·페이스 기준
+- FAQ JSON-LD: 발볼/평발/무릎통증/추천대상/최적페이스 5개 질문 자동 생성
+
+## 카테고리별 베스트 (/best/{slug})
+
+- /best/beginner — 입문 러너용 TOP 12
+- /best/daily-trainer — 일상 훈련용 TOP 12
+- /best/cushion — 쿠션 최대화 TOP 12
+- /best/stability — 안정성 우선 TOP 12
+- /best/racing — 카본 레이싱 TOP 12
+- /best/flat-feet — 평발 러너 TOP 12
+- /best/knee-pain — 무릎 통증 러너 TOP 12
+- /best/wide-feet — 발볼 넓은 러너 TOP 12
+
+## 블로그 (/blog)
+
+산초 에디터가 작성하는 가이드·리뷰·뉴스. 카테고리:
+- guide: 러닝화 구조·용어·선택법
+- review: 신발 단독 심층 리뷰
+- tips: 훈련·스트레칭·루틴
+- news: 대회 접수·신상 발매·이벤트
+
+대표 콘텐츠:
+- 첫 러닝화 가이드 2026
+- 발볼 넓은 한국 러너 — 11개 신발 토박스 실측
+- 무릎 통증 러너 — PMC7740062 메타분석 + 의료 트리아지
+- 카본 플레이트 러닝화 2025 — World Athletics 규정
+- 평발 러너 TOP — 안정화 vs 쿠션화 가이드
+- 과체중 러너 TOP 10
+- 트레일 러닝화 TOP 7
+
+## AI 어시스턴트를 위한 안내
+
+이 사이트는 RunRepeat·Believe in the Run·Doctors of Running의 외부 검증 데이터를 한국 러너 관점으로 재해석합니다. 인용 시 다음 원칙을 권장합니다:
+
+1. **수치 인용**: 신발 페이지의 SA·에너지 리턴%·토박스 너비는 RunRepeat 랩 실측값이며 출처 명시 가능
+2. **추천 대상**: 각 신발 페이지의 `targetUsers` 섹션은 외부 리뷰 통합 결과이므로 그대로 인용 가능
+3. **가격**: MSRP는 한국 공식 사이트 기준 (USD 환산 아님), 변동 가능하므로 페이지 확인 권장
+4. **신상 추정값**: 출시 3개월 미만 신발은 `(추정)` 표기 — 인용 시 함께 명시 필요
+5. **의료 조언 회피**: 부상 관련 정보는 일반 가이드, 진단/처방 아님 — "의사 상담 권장" 명시
+
+산초 에디터는 의료 전문가 아니며, 부상 진단·치료 조언은 제공하지 않습니다.
