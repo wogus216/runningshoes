@@ -114,6 +114,29 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'chuncheon-marathon-2026',
+    name: '2026 조선일보 춘천마라톤',
+    date: '2026-10-25',
+    month: '10월',
+    location: '춘천 의암호',
+    region: '강원',
+    distances: ['풀코스', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://www.chuncheonmarathon.com/',
+    description:
+      '"가을의 전설" — 1946년 시작된 80년 역사의 풀코스. 의암호 단풍 코스, 25km 지점 오르막이 핵심 변수. 본접수 6/24(화) 14시 광클 — 정원 빠른 매진 우려. 대회일은 매년 10월 넷째 주 일요일, 2026년은 10/25 유력(공식 확정 전).',
+    courseInfo: {
+      terrain: '언덕',
+      difficulty: '상급',
+      certification: 'IAAF',
+      courseDescription: '의암호 둘레 코스 + 25km 오르막. PB 친화적이지만 후반 페이스 관리 필수.',
+    },
+    raceInfo: {
+      startTime: '09:00',
+    },
+  },
+  {
     id: 'gyeongju-international-marathon-2026',
     name: '2026 경주국제마라톤',
     date: '2026-10-17',
