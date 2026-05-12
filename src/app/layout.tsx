@@ -95,10 +95,12 @@ type RootLayoutProps = {
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
   name: SITE_NAME,
   alternateName: ["러닝화 추천", "러닝화 비교"],
   url: SITE_URL,
   description: SITE_DESCRIPTION,
+  inLanguage: "ko-KR",
   potentialAction: {
     "@type": "SearchAction",
     target: {
@@ -107,27 +109,41 @@ const websiteJsonLd = {
     },
     "query-input": "required name=search_term_string",
   },
-  publisher: {
-    "@type": "Organization",
-    name: SITE_NAME,
-    logo: {
-      "@type": "ImageObject",
-      url: DEFAULT_OG_IMAGE,
-    },
-  },
+  publisher: { "@id": `${SITE_URL}/#organization` },
 };
 
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": `${SITE_URL}/#organization`,
   name: SITE_NAME,
+  alternateName: "러닝의 모든것 (allrunabout)",
   url: SITE_URL,
-  logo: DEFAULT_OG_IMAGE,
-  sameAs: [],
+  logo: {
+    "@type": "ImageObject",
+    url: DEFAULT_OG_IMAGE,
+    width: 1200,
+    height: 630,
+  },
+  description: SITE_DESCRIPTION,
+  knowsAbout: [
+    "러닝화",
+    "러닝화 비교",
+    "러닝화 추천",
+    "러닝 생체역학",
+    "한국 러너",
+    "마라톤",
+    "에너지 젤",
+  ],
+  knowsLanguage: ["ko", "en"],
+  areaServed: { "@type": "Country", name: "South Korea" },
+  founder: { "@id": `${SITE_URL}/about#sancho-editor` },
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
+    email: "sanchokwon216@gmail.com",
     availableLanguage: "Korean",
+    url: `${SITE_URL}/contact`,
   },
 };
 

@@ -71,16 +71,33 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     day: 'numeric',
   });
 
+  const articleImage = post.thumbnail
+    ? (post.thumbnail.startsWith('http') ? post.thumbnail : `${SITE_URL}${post.thumbnail}`)
+    : DEFAULT_OG_IMAGE;
+
   const articleJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
     headline: post.title,
     description: post.description,
-    author: { '@type': 'Person', name: post.author },
-    publisher: { '@type': 'Organization', name: SITE_NAME, logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE } },
+    image: [articleImage],
+    author: {
+      '@type': 'Person',
+      '@id': `${SITE_URL}/about#sancho-editor`,
+      name: post.author,
+      url: `${SITE_URL}/about`,
+    },
+    publisher: {
+      '@type': 'Organization',
+      '@id': `${SITE_URL}/#organization`,
+      name: SITE_NAME,
+      logo: { '@type': 'ImageObject', url: DEFAULT_OG_IMAGE },
+    },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt || post.publishedAt,
     mainEntityOfPage: `${SITE_URL}/blog/${slug}`,
+    articleSection: categoryLabels[post.category],
+    inLanguage: 'ko-KR',
     keywords: post.tags.join(', '),
   };
 

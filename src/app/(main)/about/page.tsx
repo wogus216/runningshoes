@@ -1,5 +1,6 @@
 import { Metadata } from 'next';
 import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe } from 'lucide-react';
+import { SITE_URL, SITE_NAME } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: '사이트 소개',
@@ -7,9 +8,60 @@ export const metadata: Metadata = {
   alternates: { canonical: '/about' },
 };
 
+const personJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Person',
+  '@id': `${SITE_URL}/about#sancho-editor`,
+  name: '산초 에디터',
+  alternateName: 'Sancho Editor',
+  jobTitle: '러닝화 데이터 분석 에디터',
+  description:
+    '2년차 러너, 하프마라톤·10K 완주. AI 기반 학술 논문 분석(PubMed, Nature Scientific Reports)과 RunRepeat 700+ 러닝화 랩 테스트 데이터, Doctors of Running 생체역학 리뷰를 교차 검증해 한국 러너 관점의 데이터 기반 러닝화 분석을 제공.',
+  url: `${SITE_URL}/about`,
+  email: 'sanchokwon216@gmail.com',
+  knowsAbout: [
+    '러닝화',
+    '러닝화 리뷰',
+    '러닝화 비교',
+    '러닝 생체역학',
+    '평발 러닝',
+    '무릎 통증 러닝',
+    '발볼 넓은 러너',
+    '한국 러닝 시장',
+    'RunRepeat 랩 데이터 해석',
+    '마라톤',
+  ],
+  knowsLanguage: ['ko', 'en'],
+  worksFor: {
+    '@type': 'Organization',
+    '@id': `${SITE_URL}/#organization`,
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+};
+
+const aboutPageJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  url: `${SITE_URL}/about`,
+  name: '사이트 소개',
+  description:
+    '러닝의 모든것 사이트 운영 배경, 데이터 출처(RunRepeat·Believe in the Run·Doctors of Running), 평가 기준, 한국 러너 특화 정보, 에디터 소개, 독립성 정책.',
+  inLanguage: 'ko-KR',
+  isPartOf: {
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}/#website`,
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+  mainEntity: { '@id': `${SITE_URL}/about#sancho-editor` },
+};
+
 export default function AboutPage() {
   return (
     <div className="max-w-4xl mx-auto">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageJsonLd) }} />
       <h1 className="text-3xl font-bold mb-8">사이트 소개</h1>
 
       <div className="space-y-10 text-secondary">
