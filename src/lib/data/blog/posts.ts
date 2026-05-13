@@ -2,6 +2,307 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-garmin-forerunner-70-170-korea',
+    slug: '2026-garmin-forerunner-70-170-korea',
+    title: '가민 포러너 70·170 한국 5/20 출시 D-6 | 39.9만원 입문 모델에 Training Readiness·Running Power 탑재 — FR55 5년 만의 대변신',
+    description: '2026년 5월 12일 가민이 Forerunner 70·170·170 Music을 동시 발표했습니다. 한국 5월 20일 정식 출시, 각 39.9·47.9·55.9만원. 입문 모델에 Training Readiness·HRV Status·손목 기반 Running Power 탑재 — 기존 60만원대 FR265 전용 기능이 처음으로 입문 라인까지 내려왔습니다.',
+    thumbnail: '/images/blog/2026-garmin-forerunner-70-170-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['가민', 'Garmin', 'Forerunner 70', 'Forerunner 170', '가민 포러너', '러닝 시계', '러닝 워치', 'Training Readiness', 'Running Power', '데이터 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가민이 5월 12일 Forerunner 70·170·170 Music을 동시 발표</strong> — 한국 정식 출시 5월 20일, 각 <strong>39.9 / 47.9 / 55.9만원</strong></li>
+    <li><strong>FR70(39.9만원) 입문 모델에 Training Readiness·HRV Status·손목 기반 Running Power 탑재</strong> — 기존엔 60만원대 FR265부터 가능했던 코칭 SW가 처음으로 입문 라인까지 내려왔습니다</li>
+    <li>Forerunner 전 라인 AMOLED 전환 완성, FR55 → FR70 약 5년 만의 대변신. 단 멀티밴드 GPS·맵·ECG는 여전히 상위 모델 영역</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 출시 일정 D-6</p>
+    <p>글로벌 판매는 5월 15일(목)부터, <strong>한국 가민 공식 홈페이지(garmin.co.kr) 정식 판매는 5월 20일(화)</strong>입니다. 사전판매 페이지는 발표 시점 미오픈 상태로, 5월 20일 이후 다나와·네이버 스마트스토어·공식몰에서 동시 등록될 예정입니다.</p>
+  </div>
+</div>
+
+<h2>3개 모델 한 눈에</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>한국 가격</th><th>핵심 차이</th><th>이런 러너에게</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Forerunner 70</strong></td>
+      <td><strong>399,000원</strong></td>
+      <td>입문 베이스 — AMOLED·GPS·HRV·Training Readiness·Running Power</td>
+      <td>5K~하프 입문, 첫 데이터 훈련 시계</td>
+    </tr>
+    <tr>
+      <td><strong>Forerunner 170</strong></td>
+      <td><strong>479,000원</strong></td>
+      <td>+기압 고도계·나침반·자이로·온도·Garmin Pay·오픈워터 수영</td>
+      <td>하프~풀 빌드업, 언덕·트레일 입문</td>
+    </tr>
+    <tr>
+      <td><strong>Forerunner 170 Music</strong></td>
+      <td><strong>559,000원</strong></td>
+      <td>+Spotify·Amazon Music·Deezer 오프라인 재생, Wi-Fi</td>
+      <td>휴대폰 없이 음악 들으며 LSD 뛰는 러너</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">💸</span>
+  <div class="callout-body">
+    <p class="callout-title">170 Music — 80,000원 더 낼 가치가 있나</p>
+    <p>오프라인 음악 재생 시 <strong>GPS 배터리가 20시간 → 약 7.5시간으로 큰 폭 감소</strong>합니다. 풀코스 5시간 + 워밍업 고려하면 충분하지만, 100K·울트라까지 보면 부족. 평소 러닝 시 휴대폰을 들고 다닌다면 80,000원 절약하고 FR170으로 충분합니다.</p>
+  </div>
+</div>
+
+<h2>왜 이번 발표가 큰가 — "코칭 SW의 민주화"</h2>
+
+<p>가민 Forerunner 라인의 기존 가격 — 기능 구조는 이랬습니다:</p>
+
+<ul>
+  <li><strong>FR55(30만원대):</strong> 기본 GPS·심박·기본 트레이닝 — 데이터는 보여주지만 "오늘 뛰어야 하나"는 안 알려줌</li>
+  <li><strong>FR265(60만원대):</strong> Training Readiness·HRV Status·Running Power·AMOLED — "오늘 컨디션 7/10, 베이스런 추천" 식의 진짜 코칭</li>
+  <li><strong>FR965(80만원대):</strong> 위 기능 + 멀티밴드 GPS·맵·터치·LED 플래시</li>
+</ul>
+
+<p>입문 러너가 데이터 기반 훈련에 입문하려면 <strong>60만원짜리 FR265까지 점프해야 했다</strong>는 의미입니다. 30만원대 FR55를 사면 "5km 뛰었다"는 사실은 알지만, "내일 인터벌 해도 되나"라는 판단은 받지 못했죠.</p>
+
+<p>이번 FR70은 그 벽을 깼습니다. <strong>39.9만원에 Training Readiness · HRV Status · 손목 기반 Running Power · Running Dynamics가 모두 들어갔습니다.</strong> 외부 풋팟 없이 손목만으로 파워 기반 훈련이 가능하다는 의미입니다.</p>
+
+<h2>입문 모델 FR70에 들어간 "민주화 기능들"</h2>
+
+<table>
+  <thead>
+    <tr><th>기능</th><th>이전에는</th><th>FR70에서</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Training Readiness</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 매일 아침 0~100점으로 훈련 강도 추천</td>
+    </tr>
+    <tr>
+      <td><strong>HRV Status</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 야간 심박변이도 추세로 회복 상태 추적</td>
+    </tr>
+    <tr>
+      <td><strong>Training Load</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 7일 누적 부하 vs 적정 범위 시각화</td>
+    </tr>
+    <tr>
+      <td><strong>Running Power(손목)</strong></td>
+      <td>FR265 + Running Dynamics Pod 필요</td>
+      <td>✅ 손목만으로 추정 — 외부 센서 0개</td>
+    </tr>
+    <tr>
+      <td><strong>Running Dynamics</strong></td>
+      <td>FR265+ 또는 외부 센서</td>
+      <td>✅ 케이던스·수직 진폭·접지 시간·보폭</td>
+    </tr>
+    <tr>
+      <td><strong>AMOLED 디스플레이</strong></td>
+      <td>FR165(40만원대)부터</td>
+      <td>✅ 1.2인치 — 햇빛 아래 가독성 대폭 향상</td>
+    </tr>
+    <tr>
+      <td><strong>Trail VO2max</strong></td>
+      <td>Fenix 7 / Epix 2 이상</td>
+      <td>✅ 탑재 — 트레일 러닝 별도 VO2max 추적</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>전작 FR55(2021년 출시)와 비교하면 약 5년 만의 세대 점프 폭이 컸습니다:</p>
+
+<ul>
+  <li>디스플레이: 1.0인치 MIP → <strong>1.2인치 AMOLED 터치스크린</strong> (5버튼 병행)</li>
+  <li>케이스: 42mm → 43mm, 무게 37g → 40g (3g 증가는 미미)</li>
+  <li>배터리 GPS 모드: 20시간 → <strong>23시간</strong></li>
+  <li>스마트워치 모드: 약 2주 → <strong>약 13일</strong> (AMOLED 도입에도 유지)</li>
+  <li>스포츠 프로필 60+개 신규 추가</li>
+  <li>퀵 워크아웃 크리에이터 — 휴대폰 없이 시계만으로 인터벌 설계</li>
+</ul>
+
+<h2>FR70 vs FR170 — 8만원 차이의 의미</h2>
+
+<p>두 모델 모두 같은 1.2인치 AMOLED·같은 코칭 SW를 공유합니다. 8만원 가격 차이는 <strong>"하드웨어 센서"</strong>에서 옵니다.</p>
+
+<table>
+  <thead>
+    <tr><th>센서·기능</th><th>FR70 (39.9만원)</th><th>FR170 (47.9만원)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>광학 심박</td><td>✅ Elevate V4</td><td>✅ Elevate V4</td></tr>
+    <tr><td>SpO2 (혈중산소)</td><td>✅</td><td>✅</td></tr>
+    <tr><td><strong>기압 고도계</strong></td><td>❌</td><td>✅ <strong>언덕·트레일 고도 정확</strong></td></tr>
+    <tr><td><strong>3축 나침반</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td><strong>자이로스코프</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td><strong>온도계</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td>오픈워터 수영 메트릭</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Garmin Pay 비접촉 결제</td><td>❌</td><td>✅</td></tr>
+    <tr><td>파워미터 연동 (자전거)</td><td>❌</td><td>✅</td></tr>
+  </tbody>
+</table>
+
+<div class="callout success">
+  <span class="callout-icon">🏔</span>
+  <div class="callout-body">
+    <p class="callout-title">언덕·트레일 뛴다면 기압 고도계는 필수</p>
+    <p>FR70은 GPS 신호로 고도를 추정해서 오차가 큽니다(±10~20m 흔함). FR170은 기압 고도계로 실시간 압력을 측정해 <strong>±1~3m 정확도</strong>. 청계산·관악산 트레일이나 남산·인왕산 도시 러닝의 누적고도 측정이 일상이라면 8만원 추가 가치가 있습니다.</p>
+  </div>
+</div>
+
+<h2>경쟁 모델 비교 — COROS Pace 4가 직격</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격(약)</th><th>GPS</th><th>디스플레이</th><th>강점</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Garmin FR70</strong></td>
+      <td>39.9만원</td>
+      <td>싱글밴드</td>
+      <td>AMOLED 1.2"</td>
+      <td>코칭 SW(Training Readiness)·생태계·Garmin Coach</td>
+    </tr>
+    <tr>
+      <td><strong>COROS Pace 4</strong></td>
+      <td>약 35만원<sup>※</sup></td>
+      <td><strong>듀얼밴드(멀티)</strong></td>
+      <td>AMOLED</td>
+      <td>GPS 정확도·배터리(31h GPS)·음악 기본</td>
+    </tr>
+    <tr>
+      <td><strong>Polar Pacer Pro</strong></td>
+      <td>약 40만원<sup>※</sup></td>
+      <td>싱글밴드</td>
+      <td>MIP(비 AMOLED)</td>
+      <td>Polar 러닝 파워·훈련 부하 분석</td>
+    </tr>
+    <tr>
+      <td><strong>Apple Watch S10 (GPS)</strong></td>
+      <td>59.9만원</td>
+      <td>L1+L5</td>
+      <td>AMOLED</td>
+      <td>iOS 통합·범용성</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small><sup>※</sup> COROS·Polar는 한국 공식 원화 정가가 변동적이라 USD 환산 + 네이버 쇼핑 평균가 기준 추정.</small></p>
+
+<p>가장 직접적인 경쟁은 <strong>COROS Pace 4</strong>입니다. 비슷한 가격대에 <strong>듀얼밴드 GPS를 탑재했고 배터리도 31시간</strong>으로 더 깁니다. 순수 GPS 정확도와 배터리를 중시하면 COROS가 유리합니다.</p>
+
+<p>가민이 우위에 서는 지점은 <strong>"생태계"</strong>입니다. Garmin Connect 앱의 깊이, Connect IQ 워치페이스/앱 스토어, Garmin Coach 무료 훈련 플랜(5K·10K·하프 마라톤), 신발 사용거리 추적, 한국 러닝 크루의 압도적 점유율(가민 사용자 간 공유·비교 문화). 데이터를 혼자 보는 게 아니라 <strong>크루와 공유·경쟁하는 문화</strong>를 원한다면 가민이 답입니다.</p>
+
+<h2>한계점 — 멀티밴드 GPS가 빠진 게 큰가</h2>
+
+<p>FR70·170 모두 <strong>싱글밴드(L1) GPS</strong>입니다. 멀티밴드(L1+L5)는 FR265($449)부터입니다. 멀티밴드가 의미 있는 환경은:</p>
+
+<ul>
+  <li><strong>도심 고층빌딩 협곡:</strong> 강남대로·여의도 IFC 주변·테헤란로 — 빌딩 반사로 GPS 트랙이 지그재그</li>
+  <li><strong>울창한 숲 트레일:</strong> 청계산·북한산·관악산 정상부 능선·계곡 구간</li>
+  <li><strong>지하·터널 직후:</strong> 한강 다리 진출입부·고가도로 하부</li>
+</ul>
+
+<p>위 환경에서 PB나 누적거리 데이터가 정확해야 한다면 멀티밴드(FR265 이상)가 필요합니다. 반대로 <strong>한강 평지·송도·공원 트랙 위주</strong>라면 싱글밴드로도 충분 — DCRainmaker는 가민 싱글밴드 GPS가 타사 멀티밴드와 비슷한 수준이라고 평했습니다.</p>
+
+<p>그 외 빠진 것들:</p>
+
+<ul>
+  <li><strong>지도(맵) 없음</strong> — 코스 추종(경로 따라가기)은 가능하지만 실제 지도 뷰는 없음. Up Ahead 거리 마커로 다음 보급지 표시는 됨</li>
+  <li><strong>ECG·피부 온도</strong> 미지원 — 의료 등급 데이터 원하면 Venu/Fenix 라인</li>
+  <li><strong>LED 플래시라이트</strong> 미탑재 — 새벽·야간 LSD 자주 뛴다면 Fenix/Enduro 라인</li>
+</ul>
+
+<h2>누구에게 추천하나 — 5가지 시나리오</h2>
+
+<table>
+  <thead>
+    <tr><th>러너 유형</th><th>추천 모델</th><th>왜</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 시작 1년 차 / 첫 시계</strong></td>
+      <td>FR70 39.9만원</td>
+      <td>Training Readiness로 "오늘 뛰어야 하나" 판단 자동화 — 초보의 가장 큰 고민 해결</td>
+    </tr>
+    <tr>
+      <td><strong>3~5년차, FR55/45 쓰던 러너 업그레이드</strong></td>
+      <td>FR70 또는 FR170</td>
+      <td>AMOLED·HRV·Running Power 세대 점프 폭 큼. 평지 위주면 FR70, 언덕 끼면 FR170</td>
+    </tr>
+    <tr>
+      <td><strong>하프~풀 빌드업 + 트레일 입문</strong></td>
+      <td>FR170 47.9만원</td>
+      <td>기압 고도계로 누적고도 정확. 풀코스 GPS 모드 20시간 충분</td>
+    </tr>
+    <tr>
+      <td><strong>휴대폰 없이 LSD 즐기는 러너</strong></td>
+      <td>FR170 Music 55.9만원</td>
+      <td>Spotify·Deezer 오프라인 — 단 음악 재생 시 GPS 7.5시간만 가능</td>
+    </tr>
+    <tr>
+      <td><strong>GPS 정확도·배터리 최우선·생태계 관심 적음</strong></td>
+      <td>COROS Pace 4(약 35만원)</td>
+      <td>듀얼밴드 + 31시간 GPS. 가민 생태계 매력 못 느끼면 합리적 대안</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>시계 + 신발 — 데이터 훈련 풀스택</h2>
+
+<p>FR70/170의 진짜 가치는 <strong>"손목 기반 Running Power + Running Dynamics"</strong>입니다. 케이던스·수직 진폭·접지 시간이 함께 잡히면, 신발 선택에 데이터 근거가 생깁니다.</p>
+
+<ul>
+  <li><strong>케이던스 170spm 이하 + 수직 진폭 9cm 이상:</strong> 착지 충격이 큰 폼 → 쿠셔닝 강한 데일리 트레이너 추천. <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+  <li><strong>케이던스 180spm + 짧은 접지 시간(200ms 이하):</strong> 효율적 폼 → 가벼운 반응성 모델 활용 가능. <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>·<a href="/shoes/adidas-adizero-evo-sl">아디다스 에보 SL</a></li>
+  <li><strong>10K~하프 PB 도전 + Running Power 안정적:</strong> 슈퍼 트레이너 또는 카본화. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>안정성·평발 우려 + Running Dynamics에서 좌우 비대칭 큼:</strong> 안정화. <a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></li>
+</ul>
+
+<p>시계가 데이터를 잡고, 신발이 그 데이터에 맞춘다 — 가민이 노리는 "데이터 → 장비 의사결정" 풀스택의 입문 진입가가 39.9만원으로 낮아졌다는 게 이번 발표의 핵심 의미입니다.</p>
+
+<p>본인 발 특성·부상 이력·예산을 입력하면 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>D-6 액션 플랜</h2>
+
+<ol>
+  <li><strong>5/14~5/19:</strong> 모델 결정 — 평지 위주 FR70 / 언덕·트레일 FR170 / 음악 LSD FR170 Music</li>
+  <li><strong>5/20(화) 09:00~:</strong> 가민 코리아 공식 홈페이지(garmin.co.kr) 정식 판매 개시 — 초기 재고 한정 가능성</li>
+  <li><strong>5/20~5/22:</strong> 다나와·네이버 스마트스토어 등록 후 가격 비교 (공식가 ±2~3% 변동)</li>
+  <li><strong>구매 후 첫 주:</strong> 매일 같은 시각 손목 착용 → HRV·Training Readiness 베이스라인 학습(약 7일 소요)</li>
+  <li><strong>2주차부터:</strong> Training Readiness 권고치 기반 훈련 강도 조절 시작</li>
+</ol>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">기존 FR165/FR265 사용자라면 살 필요 있나</p>
+    <p>FR165(작년 발매·약 42만원)는 AMOLED·HRV·Running Power 다 있어서 FR70 대비 큰 격차 없습니다. <strong>업그레이드 메리트 거의 없음</strong>. FR265는 멀티밴드 GPS·맵·더 큰 디스플레이가 FR170 대비 우위이므로 다운그레이드도 의미 없음. 이번 발표의 진짜 타깃은 <strong>FR55·FR45·Apple Watch 시리즈 4~6 / 첫 러닝 시계 입문자</strong>입니다.</p>
+  </div>
+</div>
+
+<p>같은 5월 발매 라인은 <a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 D-21</a>(6/1 출시)도 주목할 만합니다. 시계 + 신발 동시 세대 교체 시기.</p>
+
+<p><small>출처: Garmin Newsroom 공식 보도자료 / 가민 코리아 뉴스와이어 보도자료(2026-05-13) / DCRainmaker FR70 리뷰 / The 5K Runner FR70·170 런치 분석 / T3 영국 가격 / 작성일 2026년 5월 14일 기준. 한국 출시 후 실제 매장 가격·재고 상황은 5/20 이후 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
     id: '2026-songdo-lee-bongju-marathon',
     slug: '2026-songdo-lee-bongju-marathon',
     title: '제1회 송도 이봉주 마라톤 D-3 | 5/15 마감, 6/28 인천 송도 10K·5K — 한국 마라톤 레전드 이름 단 첫 대회',
