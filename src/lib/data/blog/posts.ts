@@ -2,6 +2,470 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2027-seoul-marathon-group-criteria',
+    slug: '2027-seoul-marathon-group-criteria',
+    title: '2027 서울마라톤 본접수 D-18 | A~I 그룹별 기준 기록 + 6/1·6/2 그룹별 본접수 시각 — 본인 어느 조에서 출발할지 정리',
+    description: '2027 서울마라톤 본접수가 6월 1·2일 동마클럽에서 열립니다. 풀코스 완주 기록에 따라 S부터 I까지 9개 그룹으로 분류되고 그룹별로 다른 시각에 선착순 접수 — 본인 기록이 어느 그룹에 속하는지 D-18 전 미리 확인하세요. 기록 유효기간 2024.1.1.~2026.5.10.',
+    thumbnail: '/images/blog/2027-seoul-marathon-group-criteria.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동마클럽', '본접수', '그룹 기준', '명예의 전당', 'Sub-3', '마라톤 기록', '풀코스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2027 서울마라톤 본접수가 6월 1·2일</strong> 동마클럽(dongma.club)에서 열립니다 — D-18</li>
+    <li>풀코스 완주 기록 기준 <strong>S·A·B·C·D·E·F·G·H·I 9개 그룹</strong>으로 분류, 그룹별로 다른 시각에 선착순 접수</li>
+    <li>기록 유효기간 <strong>2024.1.1. ~ 2026.5.10.</strong> — 이미 제출 마감, 본인 그룹 확인하고 해당 시각에 광클 준비</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">D-18 — 6월 1일(월) 본접수 1일차 19시 시작</p>
+    <p>풀코스 본접수는 <strong>6월 1일(월) 19시 A그룹부터 시작</strong>해 시간대별로 그룹이 분리됩니다. 본인 기록이 어느 그룹인지 미리 확인하고 그룹 시각에 정시 접속하는 게 핵심. 10K 본접수는 풀코스 본접수 마감 후 별도 진행 — 본 글은 풀코스 기준입니다.</p>
+  </div>
+</div>
+
+<h2>그룹별 기준 기록 (출처: 서울마라톤 공식 5/7 공지)</h2>
+
+<table>
+  <thead>
+    <tr><th>그룹</th><th>기준 기록</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>S</strong></td>
+      <td>명예의 전당 헌액자 + 추가 자격</td>
+      <td>명예의 전당 회원 중 <strong>2024~25 서울/공주/경주마라톤, 2026 서울마라톤 Sub-3 달성자</strong></td>
+    </tr>
+    <tr>
+      <td><strong>A · 명예의 전당</strong></td>
+      <td>~ 02:00:35<sup>※</sup></td>
+      <td>최상위 그룹 (정확한 컷오프는 동마클럽 공식 안내 확인)</td>
+    </tr>
+    <tr>
+      <td><strong>B</strong></td>
+      <td>~ 03:11:59</td>
+      <td>Sub-3:12 (서브3 + 약 12분)</td>
+    </tr>
+    <tr>
+      <td><strong>C</strong></td>
+      <td>03:12:00 ~ 03:21:59</td>
+      <td>Sub-3:22</td>
+    </tr>
+    <tr>
+      <td><strong>D</strong></td>
+      <td>03:22:00 ~ 03:29:59</td>
+      <td>Sub-3:30 — 많은 진지한 아마추어 러너의 1차 목표</td>
+    </tr>
+    <tr>
+      <td><strong>E</strong></td>
+      <td>03:30:00 ~ 03:39:59</td>
+      <td>Sub-3:40</td>
+    </tr>
+    <tr>
+      <td><strong>F</strong></td>
+      <td>03:40:00 ~ 03:50:59</td>
+      <td>Sub-3:51</td>
+    </tr>
+    <tr>
+      <td><strong>G</strong></td>
+      <td>03:51:00 ~ 04:00:59</td>
+      <td>Sub-4 직전 구간 — 인원이 많은 그룹</td>
+    </tr>
+    <tr>
+      <td><strong>H</strong></td>
+      <td>04:01:00 ~ 04:20:59</td>
+      <td>Sub-4:21</td>
+    </tr>
+    <tr>
+      <td><strong>I</strong></td>
+      <td>04:21:00 ~ 04:59:59</td>
+      <td>5시간 이내</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small><sup>※</sup> A그룹/명예의 전당 컷오프는 인스타 공식 게시물 이미지 기준으로 추출했으나 OCR 가독성 한계로 표기 차이 발생 가능. 본인 기록이 1:59~2:35 사이라면 동마클럽 공지 또는 1866-1718 문의로 정확 그룹 확정 필요.</small></p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 유효기간 — 2024.1.1. ~ 2026.5.10.</p>
+    <p>본접수 그룹 배정에 인정되는 기록은 <strong>2024년 1월 1일부터 2026년 5월 10일까지 공인 측정된 풀코스 완주 기록</strong>입니다. 그 이전 기록(2022·2023년 등)이나 비공인 기록은 인정되지 않습니다. 런카이브 기록 제출은 이미 5월 11일 15시에 마감됐으므로, 추가 제출 불가 — 현재 시점 가능한 일은 본인 등록된 기록 확인뿐입니다.</p>
+  </div>
+</div>
+
+<h2>그룹별 본접수 시각 — 6월 1·2일 2일간</h2>
+
+<table>
+  <thead>
+    <tr><th>날짜</th><th>그룹</th><th>접수 시각</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="4"><strong>6월 1일(월)</strong></td><td>A</td><td><strong>19:00</strong></td></tr>
+    <tr><td>B</td><td>20:00</td></tr>
+    <tr><td>C</td><td>21:00</td></tr>
+    <tr><td>D</td><td>22:00</td></tr>
+    <tr><td rowspan="4"><strong>6월 2일(화)</strong></td><td>E</td><td><strong>19:00</strong></td></tr>
+    <tr><td>F</td><td>20:00</td></tr>
+    <tr><td>G</td><td>21:00</td></tr>
+    <tr><td>H</td><td>22:00</td></tr>
+  </tbody>
+</table>
+
+<p>※ S그룹과 I그룹 본접수 시각은 공식 게시물 본문에 명시되지 않았습니다. 동마클럽 후속 공지(5월 말~6월 1일 사이) 확인 필요.</p>
+
+<div class="callout success">
+  <span class="callout-icon">⚡</span>
+  <div class="callout-body">
+    <p class="callout-title">선착순 + 그룹별 인원 할당</p>
+    <p>서울마라톤 본접수는 <strong>선착순이며 기록대(그룹)별로 할당 인원이 있습니다</strong>. 즉 본인 그룹에서 빠르게 접속한 순서대로 마감됩니다. 작년(2026) 일부 그룹은 정시 후 1~5분 내 마감된 사례가 있어 PC 셋업·시계 동기화·결제 수단 등록 필수.</p>
+  </div>
+</div>
+
+<h2>그룹별 광클 전략</h2>
+
+<ul>
+  <li><strong>A·B 그룹 (서브3·서브3:12):</strong> 인원 자체가 적어 상대적으로 마감 압력 낮음. 정시 ±30초 안에 접속하면 무리 없음</li>
+  <li><strong>C·D 그룹 (서브3:30 진영):</strong> 진지한 아마추어 다수 분포. 작년 D그룹 5분 내 마감 사례 — <strong>정시 ±10초 접속 권장</strong></li>
+  <li><strong>E·F 그룹 (서브3:51):</strong> Sub-4 노린 러너들이 한 단계 위로 도전. 인원 많음 — 정시 접속 + 결제 자동입력 셋업</li>
+  <li><strong>G·H 그룹 (Sub-4 ~ 4:21):</strong> 가장 인원이 많은 구간. <strong>광클 압력 최고치</strong> — PC + 모바일 + 태블릿 3중 백업, 유선랜 권장</li>
+</ul>
+
+<h2>광클 셋업 체크리스트</h2>
+
+<ol>
+  <li><strong>D-7 (5/25~5/26):</strong> 동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록 완료</li>
+  <li><strong>D-3 (5/29):</strong> 본인 등록된 기록·그룹 최종 확인 (마이페이지)</li>
+  <li><strong>D-1 (5/31):</strong> 시계 동기화 <code>time.navyism.com</code> 1초 단위 — 휴대폰 기본 시계 1~2초 오차 흔함</li>
+  <li><strong>D-0 (6/1·6/2):</strong>
+    <ul>
+      <li>그룹 시각 5분 전 PC + 모바일 + 태블릿 모두 dongma.club 로그인 상태</li>
+      <li>유선랜 우선 (WiFi는 트래픽 폭주 시 끊김 위험)</li>
+      <li>브라우저 자동입력으로 개인정보 시간 단축</li>
+      <li>카드 정보 + 간편결제(카카오페이/네이버페이) 둘 다 사전 등록</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>본인 기록이 그룹 경계에 걸려있다면</h2>
+
+<p>예를 들어 본인 최고 기록이 <strong>3:30:05</strong>라면 E그룹(3:30:00~), 3:29:50이라면 D그룹(~3:29:59). 5초 차이로 그룹이 갈리고 접수 시각이 한 시간 차이 납니다. 마이페이지에서 본인 인정 기록이 어느 그룹으로 배정됐는지 <strong>D-7 전까지는 반드시 확인</strong>하세요. 시스템 오기재나 분초 누락 발견 시 1866-1718 문의로 정정 요청 가능 (단 기간 한정).</p>
+
+<h2>본접수 후 — 풀코스 준비</h2>
+
+<p>본접수 완료 후 7월~2027년 3월까지 약 9개월 빌드업 사이클이 남습니다. 풀코스 풀 빌드업 자료는 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a> 참고하세요.</p>
+
+<p>풀코스 신발 후보(서울마라톤 도심 평지 + 3월 초 차가운 새벽):</p>
+
+<ul>
+  <li><strong>Sub-3 도전 (A·B 그룹):</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> — 카본 슈퍼슈즈</li>
+  <li><strong>Sub-3:30 ~ 4 (C~G 그룹):</strong> <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>Sub-5 완주 목표 (H·I 그룹):</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 부상 없이 완주 우선</li>
+</ul>
+
+<p>본인 발 특성·부상 이력에 맞는 풀코스 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<p>2027 서울마라톤 우선접수(5/18) 관련 사전 정리는 <a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a>, 전체 접수 흐름은 <a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a>에서 확인하세요.</p>
+
+<p><small>출처: 서울마라톤 공식 인스타그램 2026-05-07 게시물(@seoul_marathon) / 동마클럽 dongma.club / 작성일 2026년 5월 14일 기준. A그룹·S그룹·I그룹 정확 시각은 동마클럽 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: 'nb-runhub-yeouido-2026-popup',
+    slug: 'nb-runhub-yeouido-2026-popup',
+    title: '여의도 NB 런허브(Grey Days) D-31 운영 중 | 5,000원에 최신 러닝화 빌려서 한강 한 바퀴 — 6/14까지 5주 한정',
+    description: '뉴발란스가 여의도 이크루즈 2F에 5주 한정 팝업 런허브를 운영합니다. 신상 러닝화 대여 5,000원, 의류 3,000원, 라커룸·라운지 무료. 2026.05.09~06.14, 평일 12~21시·주말 8~20시. 가방 들고 퇴근하다 빈손으로 들러 한강 러닝 후 커피 한 잔까지 가능.',
+    thumbnail: '/images/blog/nb-runhub-yeouido-2026-popup.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['뉴발란스', 'New Balance', 'NB 런허브', 'RunHub', '여의도', 'Grey Days', '러닝화 시승', '한강 러닝', '러닝 팝업'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>뉴발란스 런허브(Grey Days)</strong>가 여의도 이크루즈 2F에서 <strong>5월 9일~6월 14일 5주 한정</strong> 운영 중 — D-31</li>
+    <li>신상 러닝화 대여 <strong>5,000원</strong> + 의류 3,000원 + 라커룸·피팅룸·스트레칭 라운지 무료 — 빈손으로 가서 한강 한 바퀴</li>
+    <li>러닝 후 SNS 인증 시 젤라또·커피·웻티슈 기프트 — 노트북 가방 메고 퇴근하다 들르기 좋은 동선</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📍</span>
+  <div class="callout-body">
+    <p class="callout-title">기본 정보</p>
+    <ul>
+      <li><strong>장소:</strong> 서울특별시 영등포구 여의동로 290, 이크루즈 2F</li>
+      <li><strong>운영 기간:</strong> 2026.05.09(토) ~ 2026.06.14(일) (5주 한정)</li>
+      <li><strong>운영 시간:</strong> 평일 12:00~21:00 / 주말·공휴일 08:00~20:00</li>
+      <li><strong>예약:</strong> 불필요 — 현장 접수</li>
+    </ul>
+  </div>
+</div>
+
+<h2>왜 이게 의미 있나 — "퇴근길 빈손 러닝"의 동선 해결</h2>
+
+<p>여의도·강남 직장인 러너의 가장 큰 마찰은 <strong>"러닝 짐"</strong>입니다. 정장·노트북·외투를 들고 한강 가서 갈아입고 뛰고 씻고 다시 옷 갈아입고 집까지. 사물함 하나 빌리려고 한강 쪽 헬스장이나 사우나를 회원권 끊는 경우도 흔합니다.</p>
+
+<p>NB 런허브는 <strong>이 동선 자체를 압축</strong>합니다:</p>
+
+<ol>
+  <li>퇴근 후 정장 차림으로 여의도 이크루즈 2F 도착</li>
+  <li>무거운 가방·외투 → 무료 라커룸에 보관</li>
+  <li>의류 대여(3,000원) + 러닝화 대여(5,000원)</li>
+  <li>피팅룸에서 환복 → 라운지에서 스트레칭</li>
+  <li>여의도 한강공원 한 바퀴 (이크루즈에서 도보 5분)</li>
+  <li>돌아와서 다시 환복 + 가방 회수 + 커피 한 잔(기프트)</li>
+</ol>
+
+<p>총 비용 <strong>8,000원으로 신상 NB 러닝화 시승 + 한강 러닝 + 시설 이용</strong>이 끝납니다. 신발 한 켤레 정가 20만 원대를 생각하면 사기 전 실제 페이스로 시승해볼 수 있는 가장 저렴한 방법입니다.</p>
+
+<h2>이용 가격 정리</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>가격</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>신상 러닝화 대여</strong></td><td>5,000원</td><td>NB 신상 러닝화 라인업 (구체 모델은 매장 현장 안내)</td></tr>
+    <tr><td><strong>의류 대여</strong></td><td>3,000원</td><td>상하의 별도 — 둘 다면 합산</td></tr>
+    <tr><td><strong>프라이빗 라커룸</strong></td><td>무료</td><td>가방·외투·정장 보관 가능</td></tr>
+    <tr><td><strong>피팅룸</strong></td><td>무료</td><td>환복용</td></tr>
+    <tr><td><strong>단독 라운지·스트레칭 존</strong></td><td>무료</td><td>러닝 전 스트레칭, 후 회복</td></tr>
+  </tbody>
+</table>
+
+<div class="callout success">
+  <span class="callout-icon">🎁</span>
+  <div class="callout-body">
+    <p class="callout-title">대여 반납자 기프트</p>
+    <ul>
+      <li><strong>쿼시 웻티슈</strong> — 땀 닦고 개운하게 귀가</li>
+      <li><strong>아이스 커피 1잔</strong> — 갈증 해소</li>
+      <li><strong>젤라또</strong> — SNS 인증 시 제공</li>
+    </ul>
+  </div>
+</div>
+
+<h2>"빌릴 만한" 후보 — 사이트에서 데이터 확인하고 가세요</h2>
+
+<p>NB 런허브는 신상 라인업을 시승용으로 비치합니다. 시승 전 <strong>본인 발에 맞는지 데이터로 거르고</strong> 매장에서 신어보는 게 효율적. 신어볼 만한 NB 신상 후보:</p>
+
+<ul>
+  <li><strong>데일리 트레이너 — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 2026 출시 신상 쿠션화. 평발 적합성·발볼 표준·무릎 보호 우수. 토박스 75mm로 한국 발에 친화적. 하루 5~10km 베이스런부터 하프 페이스 러닝까지 범용</li>
+  <li><strong>속도 트레이너 — <a href="/shoes/new-balance-rebel-v5">NB Rebel v5</a>:</strong> FuelCell + 카본 플레이트가 아닌 TPU 인서트로 부드러운 반응성. 10K~하프 페이스 러닝 / 인터벌</li>
+  <li><strong>레이싱 카본 — <a href="/shoes/new-balance-sc-elite-v5">NB SuperComp Elite v5</a>:</strong> 풀코스 PB용 카본 슈퍼슈즈. 시승만으로 본인 폼과 맞는지 판단 가능</li>
+</ul>
+
+<p>본인 발 특성·기록 목표가 어떤 NB 모델과 맞는지 데이터 매칭은 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/brands/new-balance">뉴발란스 러닝화 전체 보기</a>에서 확인할 수 있습니다.</p>
+
+<h2>방문 동선 팁</h2>
+
+<ul>
+  <li><strong>여의도역(5호선·9호선) 2번 출구</strong>에서 도보 약 10~12분 (이크루즈 방면)</li>
+  <li><strong>여의나루역(5호선) 2번 출구</strong>에서 한강공원 가는 길에 이크루즈 위치 — 한강 러닝 직전 들르기 가장 자연스러운 동선</li>
+  <li>평일 오후 6~8시 직장인 러너 집중 시간대 — 빠른 회전 위해 사전 준비(러닝 양말·심박계 시계 등 본인 물품)는 미리 챙겨가기</li>
+  <li>주말 새벽 8시 오픈은 <strong>주말 LSD 러닝 직전</strong> 들르기 최적 — 6시 출발은 어려우니 8시 오픈 시간대 활용</li>
+</ul>
+
+<h2>한정 운영 — 시계가 빠르게 간다</h2>
+
+<p>5/9 운영 시작 후 <strong>약 5주만</strong> 운영됩니다(6/14 마감). 같은 기간 다른 러닝 이벤트는:</p>
+
+<ul>
+  <li><strong>5/20(화):</strong> 가민 <a href="/blog/2026-garmin-forerunner-70-170-korea">Forerunner 70·170</a> 한국 정식 출시</li>
+  <li><strong>5/27(수):</strong> 2026 서울레이스 본접수 (<a href="/blog/2026-seoul-race">5/27 접수 가이드</a>)</li>
+  <li><strong>6/1·6/2:</strong> 2027 서울마라톤 풀코스 본접수 (<a href="/blog/2027-seoul-marathon-group-criteria">A~I 그룹 가이드</a>)</li>
+  <li><strong>6/14(일):</strong> NB 런허브 마지막 운영일 — 마지막 주말 매우 혼잡 예상</li>
+</ul>
+
+<p>러닝화 구매를 고민 중이거나 NB 신발이 본인 발에 맞을지 확인하고 싶다면 <strong>5월 중 평일 저녁에 미리 다녀오는 것</strong>이 가장 여유롭습니다. 6월 들어가면 본접수·신상 출시 이벤트가 겹쳐 매장 회전이 빠를 가능성 큼.</p>
+
+<p><small>출처: @runninglife_korea 2026-05-11 게시물 / 뉴발란스 코리아 Grey Days 공식 이벤트 / 작성일 2026년 5월 14일 기준. 운영 시간·대여 모델 라인업은 매장 현장 변동 가능, 정확 정보는 NB 코리아 SNS 공지 확인.</small></p>
+`,
+  },
+  {
+    id: 'lsd-training-beginner-guide-korea',
+    slug: 'lsd-training-beginner-guide-korea',
+    title: 'LSD 훈련법 입문자 완벽 가이드 | "조금만 뛰어도 숨차다"면 페이스부터 잘못 — Zone 2 심박·대화 페이스·주 1회 루틴',
+    description: 'LSD(Long Slow Distance)는 빠르게 뛰기 위한 훈련이 아닌 오래 버틸 몸을 만드는 기초 체력 훈련입니다. Zone 2 심박존·대화 가능 페이스·시간 기준 시작·주 1회 루틴까지 — 초보 러너가 후반부 체력 급락에서 벗어나는 가장 빠른 길.',
+    thumbnail: '/images/blog/lsd-training-beginner-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['LSD', 'LSD 훈련', 'Long Slow Distance', 'Zone 2', '심박존', '러닝 훈련', '러닝 입문', '러닝 기초', '베이스 빌딩', '유산소'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>LSD = Long Slow Distance</strong> — 길게·천천히·편하게 달리는 유산소 지구력 훈련. 빠르게 뛰는 게 아니라 <strong>오래 버틸 수 있는 몸</strong>을 만듭니다</li>
+    <li>핵심: <strong>대화 가능한 페이스 + Zone 2 심박존</strong> 유지. 처음엔 거리 아닌 <strong>시간(30~60분)</strong> 기준으로 시작</li>
+    <li>"조금만 뛰어도 숨차다 / 후반부 체력 급락"이라면 인터벌·페이스런이 부족한 게 아니라 <strong>LSD 베이스가 부족</strong>한 것 — 주 1회 LSD부터 6주만 해도 변화 체감</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 입문자일수록 LSD가 더 중요한가</p>
+    <p>입문자가 빠지기 쉬운 함정: "더 빨리 뛰면 실력 늘겠지" → 매번 힘들게 뛰다 무릎·아킬레스 부상. 실제로는 <strong>주 훈련의 70~80%를 편한 페이스로 채워야</strong> 몸이 모세혈관·미토콘드리아·근건을 발달시키며 천천히 강해집니다. 엘리트 마라토너들도 훈련의 80%는 LSD입니다.</p>
+  </div>
+</div>
+
+<h2>LSD가 정확히 뭐냐</h2>
+
+<table>
+  <thead>
+    <tr><th>요소</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>L · Long</strong></td><td>길게 — 30분 ~ 2시간+ (수준에 따라)</td></tr>
+    <tr><td><strong>S · Slow</strong></td><td>천천히 — 평소 5K 페이스보다 1~2분/km 느리게</td></tr>
+    <tr><td><strong>D · Distance</strong></td><td>오래 달리기 (장거리) — 초반 의도는 거리보다 "버틴 시간"</td></tr>
+  </tbody>
+</table>
+
+<p>한 줄로: <strong>"옆 사람과 대화하면서도 가능한 페이스로 30분~1시간 이상 멈추지 않고 뛰는 것"</strong>이 LSD입니다.</p>
+
+<h2>핵심 5가지 원칙 (RIFE WIKI 정리 기반)</h2>
+
+<h3>① 대화 가능한 페이스 유지</h3>
+
+<p>가장 단순하고 정확한 강도 가늠법 — <strong>Talk Test</strong>. 옆 사람에게 "오늘 날씨 좋네요, 어디까지 갔다 오실 거예요?" 정도 문장이 끊김 없이 나오면 LSD 페이스. 한 단어씩 끊겨 나오면 너무 빠른 겁니다.</p>
+
+<h3>② Zone 2 심박존 권장</h3>
+
+<table>
+  <thead>
+    <tr><th>심박존</th><th>%MHR</th><th>느낌</th><th>용도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zone 1</td><td>50~60%</td><td>걷거나 매우 느린 조깅</td><td>회복 / 쿨다운</td></tr>
+    <tr><td><strong>Zone 2</strong></td><td><strong>60~70%</strong></td><td><strong>대화 가능, 약간 호흡 가빠짐</strong></td><td><strong>LSD / 베이스 빌딩</strong></td></tr>
+    <tr><td>Zone 3</td><td>70~80%</td><td>대화 짧게만 가능</td><td>템포런 / 마라톤 페이스</td></tr>
+    <tr><td>Zone 4</td><td>80~90%</td><td>대화 불가, 호흡 거침</td><td>인터벌 / 10K 페이스</td></tr>
+    <tr><td>Zone 5</td><td>90~100%</td><td>최대 노력, 1~5분만 가능</td><td>스프린트 / VO2max</td></tr>
+  </tbody>
+</table>
+
+<p><strong>최대심박수(MHR) 간단 추정:</strong> 220 - 나이. 예) 35세 → MHR 약 185. Zone 2는 185 × 0.6~0.7 = <strong>111~130bpm</strong>.</p>
+
+<p>가민·애플워치·폴라 등 시계가 있다면 자동 측정. 없다면 손목·목 동맥 6초 측정 × 10 = bpm.</p>
+
+<h3>③ 처음엔 거리보다 "시간" 기준</h3>
+
+<p>"오늘 10km 뛰어야지" 가 아니라 "오늘 45분 뛰어야지". 페이스를 천천히 유지해야 하는데 거리 목표가 있으면 자꾸 빠르게 가게 됩니다. 시간 기준으로 시작 → 8~12주 후 거리 기준으로 전환.</p>
+
+<table>
+  <thead>
+    <tr><th>러닝 경험</th><th>첫 LSD 시간</th><th>4~8주 후 목표</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>완전 입문 (5K 첫 완주 전)</td><td>30분 (걷기 섞어도 OK)</td><td>45~60분 연속</td></tr>
+    <tr><td>5K 완주 경험</td><td>40~50분</td><td>70~90분</td></tr>
+    <tr><td>10K 완주 경험</td><td>60~75분</td><td>90~120분</td></tr>
+    <tr><td>하프 완주 경험</td><td>90~110분</td><td>120~150분</td></tr>
+  </tbody>
+</table>
+
+<h3>④ 주 1회 LSD + 나머지는 짧은 조깅·회복런</h3>
+
+<p>입문 러너 표준 주간 구성:</p>
+
+<ul>
+  <li><strong>주 1회 LSD</strong> — 보통 주말 (긴 시간 확보 쉬움)</li>
+  <li><strong>주 2회 짧은 베이스런</strong> — 평일 30~40분, 역시 Zone 2 페이스</li>
+  <li><strong>주 1회 회복런 또는 휴식</strong></li>
+</ul>
+
+<p>중급 이상이면 여기에 인터벌·템포런 1회 추가. <strong>입문~중급 단계에서는 LSD가 곧 핵심 훈련</strong>이고, 빠른 훈련은 보조입니다.</p>
+
+<h3>⑤ 기록보다 "리듬·유지 시간"</h3>
+
+<p>LSD에서는 페이스 기록을 보지 마세요. 보면 자꾸 "어 이거 너무 느리지 않나" 싶어 빨라집니다. 시계 화면을 시간/심박만 보이게 설정하고, 페이스는 끝나고 확인. <strong>일정한 호흡 리듬으로 멈추지 않고 끝까지 갔는가</strong>가 성공 기준.</p>
+
+<h2>한국 러너 입문자의 흔한 실수 3가지</h2>
+
+<h3>실수 1: LSD인데 자꾸 빨라진다</h3>
+
+<p>특히 한강공원·올림픽공원처럼 다른 러너 많은 곳에서 흔합니다. 옆 러너 추월하고 싶은 본능 → 페이스 1분/km 빨라짐 → 후반 30분에 폭망. <strong>해결:</strong> 시계 알람 설정 (심박 130bpm 초과 시 진동) 또는 의도적으로 가장 느린 구간을 골라 뛰기.</p>
+
+<h3>실수 2: 매번 같은 코스 같은 거리</h3>
+
+<p>한강 잠수교~반포 5km 왕복만 반복하면 거리 늘리기 어렵습니다. <strong>해결:</strong> 시간 기준으로 새 코스 개척. 30분 → 다음 주 35분 → 그 다음 주 40분 식으로 10%씩 점진 증가.</p>
+
+<h3>실수 3: 신발이 LSD와 안 맞음</h3>
+
+<p>레이싱화나 매우 가벼운 트레이너로 LSD 뛰면 후반부 다리·발 피로 폭증. LSD에는 <strong>충분한 쿠셔닝 + 안정성</strong>이 우선. 추천 카테고리:</p>
+
+<ul>
+  <li><strong>입문~중급 LSD 데일리 — <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>:</strong> 부드러운 착지, 발볼 표준~넓음 친화적, km당 250~300원 가성비</li>
+  <li><strong>장시간 LSD·발 부담 큰 러너 — <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>:</strong> 최상위 쿠셔닝, 평발 안정성, 90분+ LSD에서 무릎·발목 보호</li>
+  <li><strong>균형형 LSD — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 토박스 75mm로 한국 발 친화적, 쿠셔닝 + 적당한 반응성</li>
+  <li><strong>레이스 페이스 가까운 LSD — <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>:</strong> 데일리 트레이너, 좀 더 가볍게 가고 싶을 때</li>
+</ul>
+
+<h2>6주 LSD 입문 프로그램 (5K 완주자 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>주말 LSD</th><th>평일 베이스런</th><th>목표</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1주</td><td>40분 (걷기 포함)</td><td>30분 × 2회</td><td>Zone 2 감각 익히기</td></tr>
+    <tr><td>2주</td><td>45분 연속</td><td>30분 × 2회</td><td>대화 페이스 유지</td></tr>
+    <tr><td>3주</td><td>50분 연속</td><td>35분 × 2회</td><td>걷기 없이 완주</td></tr>
+    <tr><td>4주</td><td>55분 연속</td><td>35분 × 2회</td><td>심박 130bpm 이내 유지</td></tr>
+    <tr><td>5주</td><td>65분 연속</td><td>40분 × 2회</td><td>1시간 벽 돌파</td></tr>
+    <tr><td>6주</td><td>75분 또는 12km</td><td>40분 × 2회</td><td>거리 기준 전환 시작</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">📈</span>
+  <div class="callout-body">
+    <p class="callout-title">10% 규칙</p>
+    <p>주간 총 러닝 거리(또는 시간)는 <strong>전주 대비 10% 이상 늘리지 말기</strong>. 부상의 가장 큰 원인은 갑작스러운 거리 증가. 6주차 75분이면 7주차는 80~82분이 안전 상한.</p>
+  </div>
+</div>
+
+<h2>LSD 후 회복 — 다음 LSD까지 무엇을 할까</h2>
+
+<ul>
+  <li><strong>당일:</strong> 단백질 + 탄수화물 30분 내 섭취. 가벼운 정적 스트레칭 10~15분</li>
+  <li><strong>다음날:</strong> 휴식 또는 매우 가벼운 회복 조깅 20~30분 (Zone 1)</li>
+  <li><strong>2~3일차:</strong> 30~40분 베이스런 (Zone 2)</li>
+  <li><strong>4~5일차:</strong> 인터벌·언덕 등 빠른 훈련 (있다면)</li>
+  <li><strong>6일차:</strong> 가벼운 조깅 또는 휴식</li>
+  <li><strong>7일차:</strong> 다음 LSD</li>
+</ul>
+
+<h2>LSD 다음 단계 — 언제 페이스런·인터벌 추가하나</h2>
+
+<p>다음 조건 모두 충족 시:</p>
+
+<ol>
+  <li>주 1회 LSD 90분 또는 12km 이상 무리 없이 가능</li>
+  <li>주간 총 거리 30km+ 4주 연속 무부상</li>
+  <li>10K 완주 경험 있고 다음 목표가 하프 또는 마라톤</li>
+</ol>
+
+<p>그때 LSD 유지 + 주 1회 페이스런 / 격주 인터벌 추가. 마라톤 페이스 가이드는 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지</a>에서 확인하세요.</p>
+
+<p>대회 준비 중이라면 <a href="/blog/first-running-shoe-guide-2026">2026 초보 러너 첫 러닝화 추천 TOP 8</a> + <a href="/recommend">1분 러닝화 추천</a>으로 LSD에 맞는 신발 후보를 잡는 게 우선입니다.</p>
+
+<p><small>출처: @runninglife_korea RIFE WIKI 2026-05-13 게시물 / Daniels Running Formula(Jack Daniels) / Hansons Marathon Method / 작성일 2026년 5월 14일 기준. 개인 심박존은 안정시 심박·체력 수준에 따라 다르며, 정확한 측정은 운동부하검사(GXT) 또는 락테이트 테스트 필요.</small></p>
+`,
+  },
+  {
     id: '2026-garmin-forerunner-70-170-korea',
     slug: '2026-garmin-forerunner-70-170-korea',
     title: '가민 포러너 70·170 한국 5/20 출시 D-6 | 39.9만원 입문 모델에 Training Readiness·Running Power 탑재 — FR55 5년 만의 대변신',
