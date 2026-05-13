@@ -9,7 +9,10 @@ import {
   getMatrixShoes,
 } from '@/lib/pseo/matrices';
 import { getAllPairs } from '@/lib/pseo/pairs';
+import { getShoes } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
+
+const SHOE_COUNT = getShoes().length;
 
 type PageProps = {
   params: Promise<{ slug: string }>;
@@ -280,7 +283,7 @@ export default async function BestPage({ params }: PageProps) {
       <section className="bg-surface rounded-lg p-6">
         <h2 className="text-base font-semibold text-primary mb-2">더 정확한 추천을 받고 싶다면</h2>
         <p className="text-sm text-secondary mb-3">
-          본인의 발 특성, 부상 이력, 예산을 입력하면 95개 신발 중 맞춤 매칭 결과를 제공합니다.
+          본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
         </p>
         <Link
           href="/recommend"

@@ -2,12 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Footprints, MapPin, Heart, Wallet, Layers } from 'lucide-react';
 import { getAllMatrices, getMatrixShoes } from '@/lib/pseo/matrices';
+import { getShoes } from '@/lib/data/shoes';
 import { SITE_NAME } from '@/lib/constants';
+
+const SHOE_COUNT = getShoes().length;
 
 export const metadata: Metadata = {
   title: '러닝화 베스트 가이드 — 카테고리/발특성/예산별 추천',
   description:
-    '95개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.',
+    `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
   alternates: { canonical: '/best' },
   openGraph: {
     type: 'website',
@@ -15,7 +18,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: '러닝화 베스트 가이드',
     description:
-      '95개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.',
+      `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
   },
 };
 
@@ -54,7 +57,7 @@ export default function BestHubPage() {
       <header className="space-y-4">
         <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-2 text-sky-700">
           <Footprints className="h-5 w-5" aria-hidden="true" />
-          <span className="text-sm font-semibold">95개 신발 데이터 기반</span>
+          <span className="text-sm font-semibold">{SHOE_COUNT}개 신발 데이터 기반</span>
         </div>
         <h1 className="text-balance text-3xl font-black leading-tight text-primary md:text-4xl">
           러닝화 베스트 가이드
@@ -146,7 +149,7 @@ export default function BestHubPage() {
           더 정확한 추천을 받고 싶다면
         </h2>
         <p className="text-sm text-secondary mb-3">
-          본인의 발 특성, 부상 이력, 예산을 입력하면 95개 신발 중 맞춤 매칭 결과를 제공합니다.
+          본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
         </p>
         <Link
           href="/recommend"

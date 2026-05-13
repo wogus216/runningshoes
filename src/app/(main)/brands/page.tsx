@@ -114,7 +114,7 @@ export default function BrandsIndexPage() {
           브랜드보다 본인 발에 맞는 신발이 먼저
         </h2>
         <p className="text-sm text-secondary mb-3">
-          브랜드 충성도보다 본인의 발 특성, 부상 이력, 러닝 목적에 맞는 신발을 고르는 게 중요합니다. 발볼·아치·예산을 입력하면 95개 신발 중 최적 매칭을 찾아드립니다.
+          브랜드 충성도보다 본인의 발 특성, 부상 이력, 러닝 목적에 맞는 신발을 고르는 게 중요합니다. 발볼·아치·예산을 입력하면 {allShoes.length}개 신발 중 최적 매칭을 찾아드립니다.
         </p>
         <Link
           href="/recommend"

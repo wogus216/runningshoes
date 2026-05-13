@@ -7,6 +7,10 @@ import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID } from "@/lib/constants";
+import { getShoes } from "@/lib/data/shoes";
+
+const SHOE_COUNT = getShoes().length;
+const SITE_DESCRIPTION_WITH_COUNT = `${SHOE_COUNT}개 ${SITE_DESCRIPTION}`;
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,7 +23,7 @@ export const metadata: Metadata = {
     default: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰 2026`,
     template: `%s | ${SITE_NAME}`,
   },
-  description: `${SITE_DESCRIPTION} Nike, Asics, Hoka, Brooks 등 10개 브랜드 완벽 비교.`,
+  description: `${SITE_DESCRIPTION_WITH_COUNT} Nike, Asics, Hoka, Brooks 등 10개 브랜드 완벽 비교.`,
   keywords: [
     "러닝화",
     "러닝화 추천",
@@ -56,7 +60,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     siteName: SITE_NAME,
     title: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰`,
-    description: SITE_DESCRIPTION,
+    description: SITE_DESCRIPTION_WITH_COUNT,
     images: [
       {
         url: DEFAULT_OG_IMAGE,
@@ -69,7 +73,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰`,
-    description: SITE_DESCRIPTION,
+    description: SITE_DESCRIPTION_WITH_COUNT,
     images: [DEFAULT_OG_IMAGE],
   },
   verification: {
@@ -99,7 +103,7 @@ const websiteJsonLd = {
   name: SITE_NAME,
   alternateName: ["러닝화 추천", "러닝화 비교"],
   url: SITE_URL,
-  description: SITE_DESCRIPTION,
+  description: SITE_DESCRIPTION_WITH_COUNT,
   inLanguage: "ko-KR",
   potentialAction: {
     "@type": "SearchAction",
@@ -125,7 +129,7 @@ const organizationJsonLd = {
     width: 1200,
     height: 630,
   },
-  description: SITE_DESCRIPTION,
+  description: SITE_DESCRIPTION_WITH_COUNT,
   knowsAbout: [
     "러닝화",
     "러닝화 비교",
