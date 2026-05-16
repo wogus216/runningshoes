@@ -2,6 +2,504 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2027-seoul-marathon-domestic-registration-guide',
+    slug: '2027-seoul-marathon-domestic-registration-guide',
+    title: '2027 서울마라톤 국내 참가자 신청 안내 D-2 | 우선접수·골드패키지·본접수 3개 트랙 + 풀코스/10K 자격 + 환불 데드라인 한 장 정리',
+    description: '2027 서울마라톤 국내 참가자 신청이 5월 18일 시작됩니다. 풀코스는 2024.1.1~2026.5.10 공식 기록 제출자만 신청 가능, 10K는 누구나 가능. 우선접수 → 골드패키지 → 본접수(6/1·6/2) 3개 트랙 + 11월 30일 14시 환불 데드라인까지 시기별 행동 가이드.',
+    thumbnail: '/images/blog/2027-seoul-marathon-domestic-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동마클럽', '우선접수', '골드패키지', '본접수', '풀코스', '10K', '마라톤 신청'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2027 서울마라톤 국내 참가자 신청이 5월 18일 시작</strong> — 대회일 2027년 3월 21일(일)</li>
+    <li>신청 트랙은 <strong>3개</strong>: 우선접수(기한 내) → 골드패키지 → 본접수(6/1·6/2 선착순). 풀코스는 <strong>2024.1.1.~2026.5.10. 공식 기록 제출자만</strong>, 10K는 누구나 신청 가능</li>
+    <li>취소·환불 데드라인 <strong>2026년 11월 30일 14시</strong> — 이후 전액 환불 불가. 본인 트랙·환불 시한 미리 캘린더 등록 필수</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 15일 공식 발표 — 국내 참가자 신청 안내</p>
+    <p>서울마라톤 공식(@seoul_marathon)이 2026년 5월 15일 <strong>2027 서울마라톤 국내 참가자 신청 안내</strong>를 공식 게시했습니다. 본 글은 해당 공식 게시물과 5월 7·12일 사전 공지를 종합해 D-2 시점의 행동 체크리스트로 정리한 것입니다.</p>
+  </div>
+</div>
+
+<h2>2027 서울마라톤 기본 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회일</strong></td><td>2027년 <strong>3월 21일(일)</strong></td></tr>
+    <tr><td><strong>코스</strong></td><td>광화문 → 잠실종합운동장 (서울특별시 도심)</td></tr>
+    <tr><td><strong>부문</strong></td><td>풀코스 42.195km / 10km</td></tr>
+    <tr><td><strong>주최</strong></td><td>서울특별시 · 대한육상연맹 · 동아일보</td></tr>
+    <tr><td><strong>운영 채널</strong></td><td><a href="https://dongma.club" target="_blank" rel="noopener noreferrer">dongma.club</a> (동마클럽)</td></tr>
+  </tbody>
+</table>
+
+<h2>3개 신청 트랙 — 본인 어느 줄에 서야 하는가</h2>
+
+<p>2027 서울마라톤 신청은 <strong>우선접수 → 골드패키지 → 본접수</strong> 순으로 3개 트랙이 순차 진행됩니다. 본인 자격·예산·여유에 따라 트랙이 달라집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>트랙</th><th>방식</th><th>대상</th><th>시작 시점</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. 우선접수</strong></td>
+      <td>기한 내 접수 (선착순 아님)</td>
+      <td>명예의 전당·S그룹 등 우선 자격자</td>
+      <td><strong>5월 18일</strong> 추정</td>
+    </tr>
+    <tr>
+      <td><strong>2. 골드패키지</strong></td>
+      <td>기한 내 접수</td>
+      <td>골드패키지 구매 의사자 (풀코스/10K 모두)</td>
+      <td>우선접수 직후</td>
+    </tr>
+    <tr>
+      <td><strong>3. 본접수</strong></td>
+      <td>그룹별 선착순</td>
+      <td>일반 참가자 (풀코스는 기록 제출자)</td>
+      <td><strong>6월 1·2일</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>풀코스 본접수는 <strong>2024.1.1.~2026.5.10. 공식대회 유효기록을 5월 11일 15시까지 제출한 자만</strong> 신청 가능합니다. 기록이 없으면 본접수 풀코스 신청 자체가 불가하니, 본인이 기록 제출을 완료했는지 동마클럽 마이페이지에서 확인하세요. 10K는 기록 제출 의무가 없어 누구나 본접수 신청 가능합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">풀코스 본접수는 그룹별 다른 시각 — 5초 차이로 출발선이 바뀝니다</p>
+    <p>본접수 풀코스는 기록에 따라 S부터 I까지 9개 그룹으로 분류되고, 그룹마다 본접수 시각이 다릅니다(6월 1·2일 19~22시). 본인 기록이 어느 그룹인지 미리 확인하지 않으면 다른 그룹 시각에 접속해 마감되는 사고가 발생합니다. <a href="/blog/2027-seoul-marathon-group-criteria">그룹별 기준 기록 + 6/1·6/2 시각 정리 →</a></p>
+  </div>
+</div>
+
+<h2>골드패키지 vs 일반 — 가격 + 가치 판단</h2>
+
+<p>5월 15일 공식 게시물과 동시에 공개된 <strong>2027 서울마라톤 골드패키지 안내</strong>(별도 게시물)에 따르면 골드패키지는 풀코스·10K 모두 별도 트랙으로 제공됩니다. 골드패키지는 본접수 선착순 트래픽을 피해 안정적으로 자리를 잡는 동시에 한정 굿즈·기념품이 포함되는 프리미엄 패키지입니다.</p>
+
+<ul>
+  <li><strong>일반 풀코스 참가비:</strong> 댓글·러닝 커뮤니티에서 <strong>15만원</strong>이 언급되고 있으나 본 글 작성 시점(5/16) 공식 가격표 미확인 — 5월 18일 본 접수 시작 시점에 공식 발표 예정</li>
+  <li><strong>10K 참가비:</strong> 댓글 기준 <strong>10만원</strong> 언급 — 동일하게 공식 발표 대기</li>
+  <li><strong>골드패키지 추가 옵션:</strong> 한정 굿즈(러닝화·바람막이 등 패키지별 다름) — 2026 골드패키지 기준 약 25~30만원대였으나 2027 가격은 미확정</li>
+</ul>
+
+<p>가격 인상 이슈로 인스타 공식 게시물 댓글에는 "15만원 시대...", "10K 10만원은 좀..." 등 가격 부담을 호소하는 의견이 다수입니다. 다만 도쿄·런던·뉴욕 등 메이저 마라톤이 모두 도시 마라톤 트렌드와 함께 가격이 상승해온 흐름과 같은 맥락. <strong>본인이 어느 정도 비용을 지불할 의향이 있는지 + 골드패키지의 굿즈 가치를 따져보는 게 핵심</strong>입니다.</p>
+
+<h2>취소·환불 데드라인 — 11월 30일 14시</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">💳</span>
+  <div class="callout-body">
+    <p class="callout-title">2026년 11월 30일 오후 2시까지 전액 환불</p>
+    <p>이 시한 이후로는 <strong>취소 및 환불이 일절 불가</strong>합니다. 부상·일정 변경 가능성이 있다면 11/30 14:00 전 결정해야 환불받을 수 있습니다. 캘린더에 <strong>"2026-11-30 13:00 — 서마 환불 결정"</strong> 알람 등록 권장.</p>
+  </div>
+</div>
+
+<h2>D-2 ~ D+1주 행동 체크리스트</h2>
+
+<ol>
+  <li><strong>D-2 (5/16 ~ 5/17):</strong>
+    <ul>
+      <li>동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록</li>
+      <li>마이페이지에서 본인 풀코스 기록 등록 여부 확인 (런카이브 제출 5/11 마감 완료)</li>
+      <li>본인 기록이 어느 그룹인지 사전 확인 (<a href="/blog/2027-seoul-marathon-group-criteria">그룹별 기준 기록 표 참고</a>)</li>
+    </ul>
+  </li>
+  <li><strong>D-Day (5/18, 추정):</strong>
+    <ul>
+      <li>우선접수 자격자라면 동마클럽 우선접수 트랙 진입</li>
+      <li>골드패키지 구매 의사자는 골드패키지 접수 시작 시점 확인 (공식 후속 공지)</li>
+      <li>일반 참가자는 본접수(6/1·6/2)까지 약 2주 대기 — 광클 셋업 준비</li>
+    </ul>
+  </li>
+  <li><strong>D+15 ~ D+16 (6/1·6/2):</strong> 본접수 광클. PC + 모바일 + 태블릿 3중 백업, 유선랜 권장</li>
+  <li><strong>D+199 (11/30 14시):</strong> 환불 데드라인 — 부상·일정 점검 후 잔류/환불 결정</li>
+</ol>
+
+<h2>풀코스 신발 — 9개월 빌드업 사이클</h2>
+
+<p>본접수 완료 후 2027년 3월 대회까지 약 9~10개월 빌드업이 가능합니다. 서울마라톤 도심 평지 + 3월 초 차가운 새벽 기온(평균 5~10℃)을 고려한 신발 후보:</p>
+
+<ul>
+  <li><strong>Sub-3 도전:</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></li>
+  <li><strong>Sub-3:30 ~ 4 (대다수 진지한 아마추어):</strong> <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-5">매직 스피드 5</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></li>
+  <li><strong>Sub-5 완주 목표:</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+</ul>
+
+<p>본인 발 특성·부상 이력에 맞는 풀코스 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>관련 정리</h2>
+
+<ul>
+  <li><a href="/blog/2027-seoul-marathon-group-criteria">2027 서울마라톤 본접수 D-Day | A~I 9개 그룹별 기준 기록 + 6/1·6/2 시각 정리</a></li>
+  <li><a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a></li>
+  <li><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a></li>
+  <li><a href="/blog/2030-seoul-marathon-100th-dongma-chip">2030 제100회 서울마라톤 동마칩 안내</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+</ul>
+
+<p><small>출처: 서울마라톤 공식 인스타그램(@seoul_marathon) 2026-05-15 게시물 / 2026-05-12·05-07 사전 공지 / 동마클럽 dongma.club. 가격(15만원/10만원)은 공식 게시물 댓글 기반 추정으로 공식 가격표는 5월 18일 본접수 시작 시점 확정 공개 예정. 본 글은 공식 발표 후 가격·우선접수 정확 시각 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: 'tempo-run-training-guide-korea',
+    slug: 'tempo-run-training-guide-korea',
+    title: '템포런 완전 정복 | 젖산 역치 페이스 = 10K 기록 +5~10초, 80~90% HRmax, 20~40분 지속주 — 한국 아마추어 러너 기준 적용 매뉴얼',
+    description: '템포런(Tempo Run)은 젖산 역치 페이스에서 20~40분 또는 6~12km를 유지하는 훈련입니다. 강도는 최대 심박수의 80~90%, 페이스는 본인 10K 기록보다 5~10초 느리게. LSD와 인터벌 사이를 채우는 핵심 훈련으로 마라톤 완주 기록 단축의 80%를 책임집니다.',
+    thumbnail: '/images/blog/tempo-run-training-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['템포런', 'Tempo Run', '젖산 역치', '훈련법', '마라톤 훈련', '심박수', '페이스', '러닝 가이드', 'LT 페이스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>템포런 = 젖산 역치 페이스 지속주</strong> — 본인 <strong>10K 최고기록 페이스 +5~10초</strong>, 심박수 80~90% HRmax, 20~40분 또는 6~12km</li>
+    <li>LSD(여유 조깅)와 인터벌(전력 질주) 사이를 채우는 <strong>"힘들지만 버틸 수 있는" 강도</strong> — 마라톤 완주 기록 단축의 80%를 책임지는 핵심 훈련</li>
+    <li>주 1회 충분, 빌드업 사이클에서 거리 또는 시간을 점진적으로 늘리는 게 정석 — 매번 PR 욕심 내다 부상 직행하는 가장 흔한 실수</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 지금 템포런 글을 쓰는가</p>
+    <p>2027 서울마라톤·춘마·경주마라톤 등 가을~봄 풀코스 시즌이 다가오면서 "LSD는 알겠는데 그다음은?"이라는 질문이 늘고 있습니다. RIFE 러닝라이프(@runninglife_korea)가 5월 15일 템포런 가이드를 게시한 것도 같은 맥락. 본 글은 해당 게시물 + 한국 아마추어 러너 기준 적용 매뉴얼 + 댓글에서 나온 디테일까지 종합한 정리본입니다.</p>
+  </div>
+</div>
+
+<h2>템포런이 정확히 뭔가</h2>
+
+<p><strong>템포런(Tempo Run)은 젖산 역치(Lactate Threshold, LT) 페이스에서 일정 시간 또는 거리를 유지하는 훈련</strong>입니다. 젖산 역치란 운동 강도가 올라가면서 근육에 젖산이 쌓이기 시작하는 임계점 — 이 구간을 자주 자극할수록 몸이 더 빠른 페이스에서도 젖산을 처리해내는 능력을 키웁니다.</p>
+
+<p>쉽게 말하면 <strong>"숨은 차지만 1단어씩 말은 할 수 있는 페이스"</strong>입니다. 옆 사람과 긴 대화는 어렵지만 "오케이", "더 가자" 같은 짧은 단어는 가능한 정도.</p>
+
+<h2>페이스 — 본인 10K 기록 +5~10초가 정답</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">⏱️</span>
+  <div class="callout-body">
+    <p class="callout-title">템포 페이스 공식 (한국 아마추어 표준)</p>
+    <p><strong>본인 10K 최고기록 평균 페이스 + 5~10초/km</strong><br/>예: 10K 최고기록 50:00(5:00/km) → 템포 페이스 5:05~5:10/km</p>
+  </div>
+</div>
+
+<p>RIFE 게시물 댓글에서 한 러너가 정확히 짚었는데, "목표 페이스가 아닌 현재 본인 10K TT 기록 페이스 +10초"라는 표현이 더 정확합니다. <strong>목표 페이스가 아니라 현재 본인 실력 기준 페이스</strong>가 핵심 — 목표 페이스로 템포런을 하면 거의 인터벌 강도가 되어 회복 불능 상태에 빠집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>본인 10K 기록</th><th>10K 평균 페이스</th><th>템포 페이스 (10K +5~10초)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>40:00 (Sub-40)</td><td>4:00/km</td><td>4:05~4:10/km</td></tr>
+    <tr><td>45:00</td><td>4:30/km</td><td>4:35~4:40/km</td></tr>
+    <tr><td>50:00</td><td>5:00/km</td><td>5:05~5:10/km</td></tr>
+    <tr><td>55:00</td><td>5:30/km</td><td>5:35~5:40/km</td></tr>
+    <tr><td>60:00 (Sub-60)</td><td>6:00/km</td><td>6:05~6:10/km</td></tr>
+  </tbody>
+</table>
+
+<h2>강도 — 심박수 80~90% HRmax</h2>
+
+<p>페이스가 GPS 오차나 신호 끊김으로 부정확할 때 더 신뢰할 만한 지표가 심박수입니다. 템포 강도는 <strong>최대 심박수의 80~90% 구간</strong>이며, 5존 시스템에서는 <strong>Zone 4 영역</strong>에 해당합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>최대 심박수</th><th>80% HRmax</th><th>90% HRmax</th><th>템포 목표 구간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>180 bpm (40대~)</td><td>144</td><td>162</td><td>144~162</td></tr>
+    <tr><td>190 bpm (30대)</td><td>152</td><td>171</td><td>152~171</td></tr>
+    <tr><td>200 bpm (20대)</td><td>160</td><td>180</td><td>160~180</td></tr>
+  </tbody>
+</table>
+
+<p>가민·코로스·애플워치 등에서 본인 최대 심박수가 정확히 측정됐는지 먼저 확인하세요. <strong>"220 - 나이"</strong> 공식은 오차가 ±10~15bpm로 크기 때문에, 가능하면 한 번 풀 인터벌이나 5K TT에서 실측한 값을 기준으로 잡는 게 정확합니다.</p>
+
+<h2>시간·거리 — 20~40분 또는 6~12km</h2>
+
+<p>템포런 1회 분량은 <strong>20분에서 40분 사이</strong>가 표준입니다. 거리로 환산하면 약 6~12km. 빌드업 사이클에서 한 번에 늘리지 말고 다음 단계로 점진적 증가:</p>
+
+<ul>
+  <li><strong>입문(1~2개월):</strong> 20분 또는 5~6km</li>
+  <li><strong>적응(3~4개월):</strong> 25~30분 또는 7~8km</li>
+  <li><strong>심화(5~6개월):</strong> 35~40분 또는 10~12km</li>
+  <li><strong>마라톤 빌드업 피크:</strong> 마라톤 페이스 또는 약간 빠른 페이스로 60분 (메디오 템포)</li>
+</ul>
+
+<h2>1회 세션 구성 — 워밍업·메인·쿨다운</h2>
+
+<ol>
+  <li><strong>워밍업 (10~15분):</strong> 6:30~7:00/km 페이스 조깅 + 5분 다이내믹 스트레칭 + 100m 가속주 3~4회</li>
+  <li><strong>메인 템포 (20~40분):</strong> 본인 템포 페이스로 지속주. 페이스 변동 ±5초 이내 유지</li>
+  <li><strong>쿨다운 (10분):</strong> 7:00~7:30/km 회복 조깅 + 정적 스트레칭</li>
+</ol>
+
+<p>총 시간 약 45~70분. 평일 저녁에 충분히 가능한 분량이고, 풀코스 빌드업 사이클에서 <strong>주 1회</strong>가 표준입니다.</p>
+
+<h2>흔한 실수 4가지</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">❌</span>
+  <div class="callout-body">
+    <p class="callout-title">템포런에서 가장 자주 하는 실수</p>
+    <ol>
+      <li><strong>목표 페이스로 달리기:</strong> 현재 실력보다 빠른 페이스 = 사실상 인터벌. 회복 1주일 필요 + 부상 위험</li>
+      <li><strong>매번 PR 욕심:</strong> 템포런은 PR 잡는 훈련이 아니라 페이스 유지력 키우는 훈련. <strong>같은 페이스에서 더 오래 가능해지는 것</strong>이 진보</li>
+      <li><strong>워밍업 없이 시작:</strong> 추운 날 + 워밍업 부족 = 종아리·아킬레스 직격탄. 10~15분 워밍업은 비협상 사항</li>
+      <li><strong>주 2회 이상:</strong> 회복 시간 부족 → 누적 피로 → 페이스 저하 → 부상. <strong>주 1회로 충분</strong>, 주 2회는 엘리트급에서나 가능</li>
+    </ol>
+  </div>
+</div>
+
+<h2>한국 러너 FAQ</h2>
+
+<h3>Q. LSD와 템포런 중 뭐가 더 중요?</h3>
+<p>둘 다 필요합니다. LSD는 유산소 베이스 구축(주 50~70% 분량), 템포런은 그 베이스를 더 빠른 페이스에서 활용 가능하게 만드는 훈련. 비유하면 LSD는 연료탱크 크기 키우기, 템포런은 그 연료를 더 빠르게 태우는 엔진 튜닝. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
+
+<h3>Q. 초보(연 1~2번 10K)도 템포런 해야 하나요?</h3>
+<p>주 1회 이상 안정적으로 LSD를 30~40분 가능한 단계가 된 후가 적기입니다. 통상 러닝 시작 후 3~6개월. 그 이전엔 일관된 베이스 만들기에 집중하고, 템포런은 첫 풀코스·하프 빌드업 시작 시점에 도입하면 됩니다.</p>
+
+<h3>Q. 신발 추천?</h3>
+<p>템포런은 카본 슈퍼슈즈 쓰는 단계가 아닙니다. <strong>슈퍼 트레이너</strong> 카테고리 — 반발력 좋고 내구성 있는 데일리 트레이너가 정답:</p>
+<ul>
+  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 템포·롱런 양용으로 가장 많이 추천되는 슈퍼 트레이너</li>
+  <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능한 가성비</li>
+  <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트 조합</li>
+</ul>
+
+<h2>주 1회 템포런 12주 빌드업 예시</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>분량</th><th>페이스 (10K 50:00 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1~2주</td><td>20분 또는 4km</td><td>5:10/km</td></tr>
+    <tr><td>3~4주</td><td>25분 또는 5km</td><td>5:10/km</td></tr>
+    <tr><td>5~6주</td><td>30분 또는 6km</td><td>5:05/km</td></tr>
+    <tr><td>7~8주</td><td>35분 또는 7km</td><td>5:05/km</td></tr>
+    <tr><td>9~10주</td><td>40분 또는 8km</td><td>5:00/km</td></tr>
+    <tr><td>11~12주</td><td>40분 + 1km 빠른 마무리</td><td>5:00/km → 4:50</td></tr>
+  </tbody>
+</table>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 — 천천히 달리기부터</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+  <li><a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전 — 스택·드롭·에너지 리턴 1분 정리</a></li>
+</ul>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-15 게시물 "TEMPO RUN 그거 왜 해야 되는데?" + Jack Daniels Running Formula(2014) + Pfitzinger Advanced Marathoning 페이스 기준. 본 글의 페이스 환산표·심박수 표는 한국 아마추어 러너 평균 데이터 기반 추정치로, 개인별 ±5초/km 편차 가능.</small></p>
+`,
+  },
+  {
+    id: 'nsm-norwegian-singles-method-training',
+    slug: 'nsm-norwegian-singles-method-training',
+    title: 'NSM 노르웨이식 훈련법 완전 가이드 | 잉에브릭센 형제가 만든 Sub-T 더블 트레숄드 — 강도 낮추고 볼륨 늘려 부상 없이 PR 깨는 법',
+    description: 'NSM(Norwegian Singles Method)은 노르웨이 잉에브릭센 형제가 정립한 훈련법으로, 강도는 Z3 후반~Z4(Sub-Threshold)로 낮추고 빈도와 볼륨을 늘리는 게 핵심입니다. 부상 부담 줄이며 페이스 유지력을 끌어올리는 가성비 전략 — 인터벌이 부담되고 LSD만으론 아쉬운 중급 러너에게 최적.',
+    thumbnail: '/images/blog/nsm-norwegian-singles-method-training.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['NSM', '노르웨이식 훈련법', 'Norwegian Singles Method', '잉에브릭센', 'Sub-Threshold', '젖산 역치', '더블 트레숄드', '훈련법', '마라톤 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>NSM = Norwegian Singles Method</strong> — 잉에브릭센 형제가 정립한 훈련법, 강도를 <strong>Z3 후반~Z4(Sub-Threshold)</strong>로 낮추고 빈도·볼륨을 늘리는 전략</li>
+    <li>전력 인터벌 대신 <strong>"몸이 완전히 무너지기 전 멈추는" Sub-T 반복</strong> — 부상 부담 ↓, 젖산 처리 능력 ↑, 페이스 유지력 ↑</li>
+    <li><strong>인터벌이 부담스럽고 LSD만으론 아쉬운 중급 러너에게 최적</strong> — 풀코스 PR 단축 가성비 1위 훈련법</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🇳🇴</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 지금 NSM 글을 쓰는가</p>
+    <p>잉에브릭센 형제(Jakob·Henrik·Filip Ingebrigtsen)가 1500m·5000m·하프마라톤 세계 무대를 휩쓸며 NSM이 글로벌 트렌드로 자리잡았습니다. 한국 러닝 커뮤니티에서도 2024~2025년부터 "노르웨이식"이 회자됐고, RIFE 러닝라이프(@runninglife_korea)가 5월 14일 NSM 가이드를 게시하면서 본격 대중화 단계에 진입했습니다. 본 글은 RIFE 게시물 + 코치 학술 자료 + 한국 아마추어 적용 매뉴얼을 종합한 정리본입니다.</p>
+  </div>
+</div>
+
+<h2>NSM이 뭐고 왜 다른가</h2>
+
+<p>NSM은 <strong>강도를 낮추고 빈도와 볼륨을 늘리는</strong> 노르웨이식 러닝 훈련법입니다. 전통적인 인터벌(VO2 max 95~100% 강도로 전력 질주)과 본질적으로 다른 접근:</p>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>전통 인터벌</th><th>NSM (Sub-T)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>강도</strong></td><td>VO2 max 95~100% (Z5)</td><td>Sub-Threshold (Z3 후반~Z4)</td></tr>
+    <tr><td><strong>1회 부담</strong></td><td>매우 큼 (회복 2~3일)</td><td>작음 (다음 날 또 가능)</td></tr>
+    <tr><td><strong>주간 빈도</strong></td><td>1회</td><td>2~3회</td></tr>
+    <tr><td><strong>장기 효과</strong></td><td>VO2 max 향상</td><td>젖산 처리·페이스 유지력</td></tr>
+    <tr><td><strong>부상 위험</strong></td><td>높음</td><td>낮음</td></tr>
+  </tbody>
+</table>
+
+<p>핵심 차이는 <strong>"몸이 완전히 무너지기 전 훈련을 마무리하는 것"</strong>. 전력 질주가 아니라 "지속 가능한 빠름"의 누적이 NSM의 본질입니다.</p>
+
+<h2>강도 존(Zone) 이해 — Z3·Z4·Sub-T가 정확히 뭔가</h2>
+
+<table>
+  <thead>
+    <tr><th>존</th><th>심박수 % HRmax</th><th>호흡·대화</th><th>주관적 노력 (RPE)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Z2 (LSD)</strong></td><td>60~70%</td><td>긴 대화 가능</td><td>3~4 / 10</td></tr>
+    <tr><td><strong>Z3 (마라톤 페이스)</strong></td><td>70~80%</td><td>짧은 대화 가능</td><td>5~6 / 10</td></tr>
+    <tr><td><strong>Z3 후반~Z4 (Sub-T)</strong></td><td><strong>80~88%</strong></td><td><strong>단어 단위</strong></td><td><strong>6~7 / 10</strong></td></tr>
+    <tr><td><strong>Z4 후반 (LT/템포)</strong></td><td>88~92%</td><td>거의 대화 불가</td><td>7~8 / 10</td></tr>
+    <tr><td><strong>Z5 (VO2 max)</strong></td><td>92~100%</td><td>대화 불가</td><td>9~10 / 10</td></tr>
+  </tbody>
+</table>
+
+<p>NSM 핵심 구간은 <strong>Z3 후반~Z4 (Sub-Threshold)</strong>입니다. 젖산 역치 바로 아래 — "힘들지만 무너지지는 않는" 구간. <a href="/blog/tempo-run-training-guide-korea">전통 템포런(Z4 후반)</a>보다 한 단계 낮은 강도라는 점이 중요합니다.</p>
+
+<h2>대표 NSM 1주 루틴 — 더블 트레숄드 방식</h2>
+
+<p>잉에브릭센 형제의 시그니처는 <strong>더블 트레숄드(Double Threshold) Day</strong> — 하루에 Sub-T 세션을 오전·오후 2회 분할 수행. 다만 아마추어 러너에게는 부담이 크기 때문에, RIFE 게시물 기준 한국 일반 러너용 단순화 1주 루틴을 제안합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>요일</th><th>훈련</th><th>분량·강도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>월</td><td>회복 조깅</td><td>30~40분 Z2 (6:30~7:00/km)</td></tr>
+    <tr><td><strong>화</strong></td><td><strong>NSM 세션 1</strong></td><td><strong>2km × 5~6세트, 세트간 1분 휴식, Z3 후반~Z4 (4:50~5:00/km)</strong></td></tr>
+    <tr><td>수</td><td>회복 조깅</td><td>40~50분 Z2</td></tr>
+    <tr><td><strong>목</strong></td><td><strong>NSM 세션 2</strong></td><td><strong>1km × 8~10세트, 세트간 30초~1분, Z4 (4:40~4:50/km)</strong></td></tr>
+    <tr><td>금</td><td>휴식 또는 회복 조깅</td><td>30분 Z2 또는 OFF</td></tr>
+    <tr><td>토</td><td>LSD (장거리)</td><td>90~120분 Z2 (6:00~6:30/km)</td></tr>
+    <tr><td>일</td><td>가볍게 또는 휴식</td><td>30~40분 Z2 또는 OFF</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 위 페이스는 본인 10K 기록 50:00(5:00/km) 기준 예시. 본인 기록에 맞춰 ±10~20초 조정 필요.</small></p>
+
+<h2>NSM 세션 진행 핵심 4가지</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">NSM이 인터벌과 결정적으로 다른 4가지</p>
+    <ol>
+      <li><strong>"무너지기 전 멈춘다":</strong> 마지막 세트에 토할 것 같으면 NSM이 아니라 인터벌. 80% 페이스 유지 가능한 선에서 멈추는 게 정답</li>
+      <li><strong>세트 사이 휴식은 짧게:</strong> 30초~1분 정도. 완전 회복 X — 적당한 피로 누적 유지가 핵심</li>
+      <li><strong>심박수 모니터링 필수:</strong> 페이스만 보면 후반 가속해서 Z5 진입 위험. 가민·코로스 등으로 <strong>88~90% HRmax 상한 설정</strong></li>
+      <li><strong>주 2회까지만:</strong> 주 3회는 잉에브릭센 같은 엘리트급. 한국 아마추어는 화·목 2회로 충분 (몸이 적응한 후 3회 시도 가능)</li>
+    </ol>
+  </div>
+</div>
+
+<h2>NSM이 잘 맞는 러너 vs 안 맞는 러너</h2>
+
+<table>
+  <thead>
+    <tr><th>잘 맞는 러너</th><th>안 맞는 러너</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>인터벌이 부담스러운 중급자</td>
+      <td>러닝 시작 6개월 미만 입문자</td>
+    </tr>
+    <tr>
+      <td>LSD만 해서 페이스가 안 오르는 러너</td>
+      <td>부상 회복 직후 (1~3개월)</td>
+    </tr>
+    <tr>
+      <td>풀코스 PR 5~10분 단축이 목표</td>
+      <td>주 3회 이하만 가능한 시간 부족 러너</td>
+    </tr>
+    <tr>
+      <td>심박계 사용에 익숙한 러너</td>
+      <td>5K 첫 도전 단계</td>
+    </tr>
+    <tr>
+      <td>주 4~5회 러닝 가능한 시간 여유</td>
+      <td>스피드 폭발력이 목표인 단거리 러너</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>입문자라면 NSM 이전에 LSD 베이스부터</strong>. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
+
+<h2>한국 러너 FAQ</h2>
+
+<h3>Q. NSM과 템포런의 차이는?</h3>
+<p>강도가 다릅니다. 전통 템포런은 <strong>Z4 후반(80~90% HRmax)</strong>에서 한 번에 20~40분 지속주, NSM은 <strong>Z3 후반~Z4(80~88%)</strong>에서 짧은 세트를 여러 번 반복. 즉 NSM이 약간 더 낮은 강도 + 분할 형식. <a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 →</a></p>
+
+<h3>Q. 주간 총 거리는 얼마나 되나?</h3>
+<p>위 1주 루틴 예시 기준 약 55~70km/주. 풀코스 빌드업 사이클 피크 주에는 80~90km까지 늘릴 수 있습니다. 인터벌 위주 훈련(40~50km/주)보다 절대 거리가 큰 게 NSM의 특징.</p>
+
+<h3>Q. NSM에 맞는 신발은?</h3>
+<p>NSM은 주간 볼륨이 큰 훈련법이라 <strong>내구성·완충·반발 균형이 좋은 데일리 트레이너 또는 슈퍼 트레이너</strong>가 핵심. 카본 슈퍼슈즈는 NSM 세션엔 안 어울립니다(레이스용).</p>
+
+<ul>
+  <li><strong>NSM 세션용 (Sub-T 페이스):</strong>
+    <ul>
+      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 슈퍼 트레이너 카테고리 1위, 템포·NSM·롱런 모두 가능</li>
+      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능, 페이스 트레이닝용</li>
+      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트</li>
+    </ul>
+  </li>
+  <li><strong>LSD·회복 조깅용:</strong>
+    <ul>
+      <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 회복일 부담 최소</li>
+      <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가벼운 데일리 트레이너</li>
+      <li><a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — Fresh Foam X, 폼 부드러움</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Q. 평발·무릎 약한데 가능?</h3>
+<p>NSM은 강도가 낮은 편이라 인터벌보다 평발·무릎 부담이 적습니다. 다만 <strong>주간 볼륨이 늘어나는 만큼 신발 선택이 중요</strong> — 안정화 또는 맥시멀 쿠셔닝 권장. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드 →</a></p>
+
+<h2>NSM 도입 8주 빌드업</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>NSM 세션 분량</th><th>주간 총 거리</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1~2주</td><td>주 1회 (2km × 3세트)</td><td>40km</td></tr>
+    <tr><td>3~4주</td><td>주 1회 (2km × 4세트)</td><td>50km</td></tr>
+    <tr><td>5~6주</td><td>주 2회 (2km × 4세트 + 1km × 6세트)</td><td>60km</td></tr>
+    <tr><td>7~8주</td><td>주 2회 (2km × 5세트 + 1km × 8세트)</td><td>70km</td></tr>
+  </tbody>
+</table>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 — 젖산 역치 페이스 매뉴얼</a></li>
+  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드</a></li>
+</ul>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-14 게시물 "NSM 훈련법" + Casado et al., "Training Periodization, Methods, Intensity Distribution, and Volume in Highly Trained and Elite Distance Runners"(2022) + Marius Bakken NSM Public Notes(2020~). 본 글의 페이스 환산표·주간 루틴은 한국 아마추어 러너 평균 데이터 기반 예시로, 개인별 적용은 본인 심박수·회복 능력에 따라 조정 필요.</small></p>
+`,
+  },
+  {
     id: '2027-seoul-marathon-group-criteria',
     slug: '2027-seoul-marathon-group-criteria',
     title: '2027 서울마라톤 본접수 D-18 | A~I 그룹별 기준 기록 + 6/1·6/2 그룹별 본접수 시각 — 본인 어느 조에서 출발할지 정리',
