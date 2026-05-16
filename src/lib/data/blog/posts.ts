@@ -2,6 +2,170 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2027-seoul-marathon-gold-package',
+    slug: '2027-seoul-marathon-gold-package',
+    title: '2027 서울마라톤 골드패키지 안내 | 풀코스 45만원·10K 40만원 — 아디다스 뉴 에디션 레이싱화 사전 배송 포함, 선착순·한정 수량',
+    description: '2027 서울마라톤 골드패키지가 공식 발표됐습니다. 풀코스 450,000원·10K 400,000원. 1월 사전 배송되는 아디다스 뉴 에디션 레이싱화 + 반팔 또는 싱글렛 + 완주판초·메달 + 프리미엄 물품보관·전용 포토존까지. 선착순·한정 수량 + 풀코스는 사전 기록 제출 필수.',
+    thumbnail: '/images/blog/2027-seoul-marathon-gold-package.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['2027 서울마라톤', '서울마라톤', '골드패키지', '동마클럽', '아디다스', '아디오스 프로', '레이싱화', '마라톤 신청', '본접수'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>풀코스 450,000원 · 10km 400,000원</strong> — 5월 15일 서울마라톤 공식 발표</li>
+    <li>구성: <strong>아디다스 뉴 에디션 레이싱화(1월 사전 배송)</strong> + 반팔/싱글렛 택1 + 완주판초·메달 + 프리미엄 물품보관 + 전용 포토존</li>
+    <li><strong>선착순·한정 수량 + 풀코스는 사전 기록 제출 필수</strong> — 제출 안 한 풀코스 골드패키지 결제는 자동 취소</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 15일 공식 발표 — 골드패키지 안내</p>
+    <p>서울마라톤 공식(@seoul_marathon)이 2026년 5월 15일 <strong>2027 서울마라톤 골드패키지 안내</strong>를 게시했습니다. 같은 날 발표된 <a href="/blog/2027-seoul-marathon-domestic-registration-guide">국내 참가자 신청 안내</a>와 짝을 이루는 프리미엄 패키지로, 본접수(6/1·6/2 선착순) 트래픽을 피해 골드패키지 전용 트랙으로 자리를 잡는 옵션입니다.</p>
+  </div>
+</div>
+
+<h2>가격 — 풀코스 45만원 / 10K 40만원</h2>
+
+<table>
+  <thead>
+    <tr><th>부문</th><th>골드패키지 가격</th><th>참고: 일반 추정가</th><th>차액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스 42.195km</strong></td><td><strong>450,000원</strong></td><td>약 150,000원 추정</td><td>+300,000원</td></tr>
+    <tr><td><strong>10km</strong></td><td><strong>400,000원</strong></td><td>약 100,000원 추정</td><td>+300,000원</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 일반 참가비는 공식 가격표 미확정 시점(5/16 기준)이며, 5월 18일 본 접수 시작 시점 공식 발표 예정. 댓글·러닝 커뮤니티 추정값 기준.</small></p>
+
+<p>차액 30만원의 가치를 어디서 회수하느냐가 핵심 질문입니다. <strong>아디다스 뉴 에디션 레이싱화 시판가만 25~30만원대</strong>이고, 여기에 본접수 광클 회피 + 한정 굿즈 + 프리미엄 서비스가 묶입니다. 신발 가치만으로 차액 회수가 가능한 구조.</p>
+
+<h2>골드패키지 6대 구성</h2>
+
+<ol>
+  <li><strong>2027 서울마라톤 아디다스 뉴 에디션 레이싱화</strong>
+    <ul>
+      <li>1월 중 <strong>국내 출시일보다 먼저 택배로 사전 배송</strong></li>
+      <li>모델명 미공개 — 공식 게시물 댓글에서 "프로5?", "프로4 동사이즈 가면 되나요?" 등 추측 다수</li>
+      <li>참고: 2026 골드패키지는 <a href="/shoes/adidas-adios-pro-evo-3">아디오스 프로 에보 3</a>였음. 2027은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 또는 차세대 에보 모델일 가능성</li>
+    </ul>
+  </li>
+  <li><strong>반팔 티셔츠 또는 싱글렛 중 택 1</strong> — 2027 한정 에디션</li>
+  <li><strong>완주판초 + 완주메달</strong> — 모든 참가자 공통 굿즈</li>
+  <li><strong>번호표 + 기록측정용 칩</strong> — 대회 필수 물품</li>
+  <li><strong>프리미엄 물품보관 서비스</strong> — 일반 참가자와 분리된 별도 보관소</li>
+  <li><strong>전용 포토존</strong> — 골드패키지 전용 인증 공간</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">레이싱화 사전 배송 = 가장 큰 가치</p>
+    <p>1월 사전 배송이 골드패키지의 진짜 무기입니다. 일반 출시일보다 약 2개월 앞당겨 받으면 <strong>대회 전 충분한 페이스 빌드업과 어댑테이션 시간</strong>이 확보됩니다. 카본 슈퍼슈즈는 약 100~150km 길들이기가 필요한데, 1월 수령 → 2~3월 빌드업 → 3월 21일 대회 완벽한 사이클.</p>
+  </div>
+</div>
+
+<h2>⚠️ 풀코스 골드패키지 — 사전 기록 제출 필수</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 제출 안 한 풀코스 골드패키지 결제는 자동 취소</p>
+    <p>공식 게시물 명시: "기록을 사전 제출하지 않은 풀코스 골드패키지 구매자는 결제를 완료한 후에도 자동 취소됩니다."</p>
+    <p>풀코스 골드패키지 = <strong>본접수 풀코스와 동일한 자격 요건</strong>(2024.1.1.~2026.5.10. 공인 풀코스 기록 + 런카이브 5/11 15시까지 제출). 기록이 없으면 결제해도 무조건 취소. 10K 골드패키지는 기록 의무 없음.</p>
+  </div>
+</div>
+
+<p>본인이 풀코스 기록을 제출했는지 동마클럽 마이페이지에서 먼저 확인하세요. 미제출자는 풀코스 골드패키지 결제를 시도하지 말고 <strong>10K 골드패키지로 전환하거나 일반 본접수 10K</strong>로 가야 합니다.</p>
+
+<h2>골드패키지 vs 일반 본접수 — 어느 쪽을 택할 것인가</h2>
+
+<table>
+  <thead>
+    <tr><th>비교 항목</th><th>골드패키지</th><th>일반 본접수</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>풀 45만 / 10K 40만</td><td>풀 ~15만 / 10K ~10만 (추정)</td></tr>
+    <tr><td><strong>레이싱화</strong></td><td>1월 사전 배송</td><td>없음 (별도 구매)</td></tr>
+    <tr><td><strong>티셔츠</strong></td><td>한정 에디션 반팔 또는 싱글렛</td><td>기본 굿즈만</td></tr>
+    <tr><td><strong>물품보관</strong></td><td>프리미엄 (분리 보관)</td><td>일반 단체 보관</td></tr>
+    <tr><td><strong>접수 트랙</strong></td><td>선착순·한정 (전용 트랙)</td><td>본접수 그룹별 광클 (6/1·6/2)</td></tr>
+    <tr><td><strong>풀코스 기록 요건</strong></td><td>필수 (미제출 자동 취소)</td><td>필수 (그룹 배정)</td></tr>
+    <tr><td><strong>광클 부담</strong></td><td>중간 (한정 수량이라 조기 마감 가능)</td><td>높음 (그룹별 5분 내 마감 사례)</td></tr>
+  </tbody>
+</table>
+
+<h2>골드패키지가 적합한 러너</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">골드패키지를 골라야 하는 4가지 상황</p>
+    <ol>
+      <li><strong>본접수 광클 안 하고 싶은 사람:</strong> 그룹별 시각에 PC 앞에 앉아 결제 광클하는 스트레스를 30만원으로 회수. 댓글의 "신발보다 동마칩이랑 접수령 에너지 쏟고 싶지 않다"가 정확한 표현</li>
+      <li><strong>아디다스 카본 슈퍼슈즈를 어차피 살 계획인 러너:</strong> 신발만으로 25~30만원 회수. 차액 ~5만원에 한정 굿즈·프리미엄 서비스 추가</li>
+      <li><strong>1월 빌드업에 신상 카본 슈즈 적응하고 싶은 러너:</strong> 사전 배송 = 2~3개월 빌드업 사이클 확보. 일반 출시(3월 초)는 대회까지 너무 촉박</li>
+      <li><strong>1년에 1개 대회 — 비용 절감보다 경험에 투자:</strong> 풀코스 한 번에 모든 걸 쏟는 러너에게는 30만원 차액이 충분히 정당화됨</li>
+    </ol>
+  </div>
+</div>
+
+<h2>골드패키지가 부담스러운 러너</h2>
+
+<ul>
+  <li><strong>본인 신발이 이미 명확한 러너:</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 등 본인 신발이 정해져 있으면 일반 본접수가 합리적</li>
+  <li><strong>가격 민감 + 광클 자신 있는 러너:</strong> 본접수 광클로 15만원에 자리 잡고 30만원은 다른 데(여행·합숙·코칭) 투자</li>
+  <li><strong>풀코스 기록 미제출자:</strong> 풀코스 골드패키지 결제 자동 취소. 10K 골드패키지 또는 일반 본접수만 가능</li>
+  <li><strong>1년에 3~4번 대회 — 분산 투자:</strong> 1개 대회 45만원보다 4개 대회 15만원씩이 누적 경험 더 큼</li>
+</ul>
+
+<h2>골드패키지 신청 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-2 (5/16~5/17):</strong>
+    <ul>
+      <li>동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록</li>
+      <li>풀코스 골드패키지 검토자: 본인 기록 제출 여부 마이페이지 확인</li>
+    </ul>
+  </li>
+  <li><strong>D-Day (5/18 추정 — 골드패키지 접수 시작):</strong> 우선접수 직후 골드패키지 트랙 진입. 정확한 시각은 동마클럽 후속 공지 확인</li>
+  <li><strong>한정 수량 — 정시 ±30초 접속 권장:</strong> 본접수 정도의 폭주는 아니지만 한정 수량이라 안전하게 정시 접속</li>
+  <li><strong>결제 완료 후:</strong> 풀코스 골드패키지는 기록 검증 후 최종 확정. 미제출자는 자동 취소되니 안내 메일 확인</li>
+  <li><strong>1월 신발 사전 배송 수령:</strong> 배송지·연락처 정확히 등록. 모델 공개는 사전 배송 직전 동마클럽 공지 예정</li>
+</ol>
+
+<h2>아디다스 뉴 에디션 레이싱화 — 후보 모델</h2>
+
+<p>공식 게시물에 모델명이 비공개되어 있어 댓글에서 추측이 활발합니다. 2026 골드패키지가 <a href="/shoes/adidas-adios-pro-evo-3">아디오스 프로 에보 3</a>였던 점, 2027 신상 출시 사이클을 고려한 가능성:</p>
+
+<ul>
+  <li><strong>아디다스 아디오스 프로 EVO 4 (가장 유력):</strong> 에보 시리즈 후속 모델로 2027 출시 예정. 골드패키지 = "신상 사전 공급" 콘셉트와 부합</li>
+  <li><strong>아디다스 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>:</strong> 댓글 "프로4 동사이즈"에서 등장. 이미 출시된 모델이라 "뉴 에디션 = 한정 컬러"일 가능성</li>
+  <li><strong>아디다스 아디오스 프로 5:</strong> 댓글 "프로5?"에서 등장. 차세대 모델로 2027 신상 가능성</li>
+</ul>
+
+<p><strong>정확한 모델 공개는 1월 사전 배송 직전 동마클럽 공지</strong> 예정. 본 글은 모델 공개 시 업데이트 예정입니다.</p>
+
+<h2>관련 정리</h2>
+
+<ul>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 안내 D-2 — 3개 트랙 정리</a></li>
+  <li><a href="/blog/2027-seoul-marathon-group-criteria">2027 서울마라톤 본접수 — A~I 9개 그룹별 기준 기록 + 6/1·6/2 시각</a></li>
+  <li><a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a></li>
+  <li><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a></li>
+  <li><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3 한국 출시 정리</a></li>
+</ul>
+
+<p><small>출처: 서울마라톤 공식 인스타그램(@seoul_marathon) 2026-05-15 게시물 "2027 서울마라톤 골드패키지 안내" / 동마클럽 dongma.club. 일반 참가비 추정값(풀 15만/10K 10만)은 공식 게시물 댓글 기반으로 공식 가격표는 5월 18일 본접수 시작 시점 확정 공개 예정. 신발 모델 추정은 댓글 + 출시 사이클 분석이며 공식 발표 시 본 글 업데이트.</small></p>
+`,
+  },
+  {
     id: '2027-seoul-marathon-domestic-registration-guide',
     slug: '2027-seoul-marathon-domestic-registration-guide',
     title: '2027 서울마라톤 국내 참가자 신청 안내 D-2 | 우선접수·골드패키지·본접수 3개 트랙 + 풀코스/10K 자격 + 환불 데드라인 한 장 정리',
