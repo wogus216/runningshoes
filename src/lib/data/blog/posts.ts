@@ -2,6 +2,283 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-bogwangjung-suyuk-run',
+    slug: '2026-bogwangjung-suyuk-run',
+    title: '보광정 수육런 D-14 | 5월 30일 토 8AM 남산 북측순환로 — 기록 측정 없는 펀런, 수육·생수·기념 티셔츠 제공',
+    description: '보광정이 작년에 이어 2년째 5월 30일 토요일 보광정 수육런을 개최합니다. 국립극장 해오름극장 출발, 남산 북측순환로 코스, 8AM 시작. 순위·기록 측정 없는 펀런 이벤트로 가족·초보 러너 환영. 5월 15일 10시부터 구글폼 선착순 접수.',
+    thumbnail: '/images/blog/2026-bogwangjung-suyuk-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['보광정', '보광정 수육런', '남산 북측순환로', '국립극장', '펀런', '서울 마라톤 일정', '가족 러닝', '도심 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>보광정 수육런</strong> 2년차 — <strong>5월 30일(토) 8AM</strong>, 국립극장 해오름극장 출발 + 남산 북측순환로</li>
+    <li><strong>순위·기록 측정 없는 펀런</strong> — 남녀노소 누구나, 기념 티셔츠·수육·생수 제공, 경품 추첨</li>
+    <li>접수: <strong>5월 15일 10시부터 선착순</strong> — 보광정 인스타그램 프로필 구글폼 링크 / 문의 010-8794-9272</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥩</span>
+  <div class="callout-body">
+    <p class="callout-title">"수육런"이 뭔가</p>
+    <p>국립극장 옆에 위치한 보광정(@bogwangjung_official) 음식점이 작년에 이어 개최하는 <strong>러닝 + 수육 제공</strong> 이벤트입니다. 작년에 큰 관심과 사랑을 받아 올해 2년차 — 5월의 마지막 날 5월 30일(토)에 열립니다. 가정의 달 마무리를 가족이나 러닝메이트와 도심 트레일에서 보내는 콘셉트.</p>
+  </div>
+</div>
+
+<h2>대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>일시</strong></td><td>2026년 <strong>5월 30일(토) 8AM 시작</strong></td></tr>
+    <tr><td><strong>출발지</strong></td><td>국립극장 해오름극장</td></tr>
+    <tr><td><strong>코스</strong></td><td>남산 북측순환로 (도심 트레일)</td></tr>
+    <tr><td><strong>참가 자격</strong></td><td>신체 건강한 남녀노소 누구나</td></tr>
+    <tr><td><strong>기록·순위</strong></td><td>측정하지 않음 (이벤트 펀런)</td></tr>
+    <tr><td><strong>기념품</strong></td><td>참가자 전원 기념 티셔츠 (별도 택배 발송)</td></tr>
+    <tr><td><strong>현장 제공</strong></td><td>생수, 수육</td></tr>
+    <tr><td><strong>경품</strong></td><td>상품권 및 굿즈 추첨</td></tr>
+    <tr><td><strong>접수 시작</strong></td><td><strong>2026년 5월 15일 10:00</strong> — 선착순 마감</td></tr>
+    <tr><td><strong>접수 방법</strong></td><td>보광정 인스타그램(@bogwangjung_official) 프로필 하단 구글폼 링크</td></tr>
+    <tr><td><strong>문의</strong></td><td>010-8794-9272 (12:00~18:00)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">📸</span>
+  <div class="callout-body">
+    <p class="callout-title">사진 마케팅 활용 동의 필수</p>
+    <p>행사에 촬영된 사진은 마케팅 목적으로 활용될 예정입니다. <strong>해당 내용에 동의하는 경우에만 행사 참여가 가능</strong>합니다. 사진 노출이 부담스럽다면 신청 전 약관 확인 필수.</p>
+  </div>
+</div>
+
+<h2>남산 북측순환로 — 어떤 코스인가</h2>
+
+<p>국립극장 해오름극장에서 출발해 <strong>남산 북측순환로</strong>를 도는 코스. 정확한 거리는 공식 공지에 명시되지 않았으나 보통 북측순환로 한 바퀴는 약 4~5km 수준. 펀런 성격이라 본인 페이스에 맞게 조절 가능합니다.</p>
+
+<ul>
+  <li><strong>지형:</strong> 남산 능선을 따라 완만한 경사 — 도심 트레일에 가까움</li>
+  <li><strong>풍경:</strong> 남산 숲길 + N서울타워 조망. 5월 말 신록 절정 시기</li>
+  <li><strong>교통:</strong> 동대입구역(3호선) 또는 충무로역(3·4호선)에서 도보 10~15분 + 셔틀버스</li>
+  <li><strong>주의:</strong> 다른 보행자·일반 산책객과 코스 공유 — 안전이 최우선, 추월 매너 필수 (공식 공지에서도 양해 요청)</li>
+</ul>
+
+<h2>이런 러너에게 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">보광정 수육런이 어울리는 사람</p>
+    <ol>
+      <li><strong>러닝 입문자·가족:</strong> 기록 부담 없는 첫 러닝 이벤트. 자녀와 함께도 가능</li>
+      <li><strong>도심 트레일 처음 도전:</strong> 평지 도로 러닝만 해본 사람의 첫 트레일 입문</li>
+      <li><strong>러닝 후 좋은 음식 마무리 좋아하는 사람:</strong> 수육 + 생수 = 카브 로딩과 단백질 보충 완벽 조합</li>
+      <li><strong>커뮤니티 분위기 좋아하는 사람:</strong> 240명 안팎 소규모 추정, 작년 후기 분위기 좋았다는 평</li>
+    </ol>
+  </div>
+</div>
+
+<h2>이런 러너에게는 비추</h2>
+
+<ul>
+  <li><strong>기록 목표가 있는 러너:</strong> 측정 없음 + 일반 보행자 공유 코스라 PR 도전엔 부적합</li>
+  <li><strong>5km 이상 진지한 훈련 필요한 시기:</strong> 풀코스/하프 빌드업 중이라면 본인 훈련 페이스를 우선</li>
+  <li><strong>이른 새벽 기상 어려운 사람:</strong> 8AM 시작 = 5~6AM 기상 + 7AM 도착이 표준</li>
+</ul>
+
+<h2>신발 추천</h2>
+
+<p>남산 북측순환로는 포장도로 + 일부 짧은 비포장 구간 — <strong>일반 데일리 러닝화로 충분</strong>합니다. 트레일화까지는 불필요. 펀런 성격이라 본인 가장 편한 데일리 트레이너 추천:</p>
+
+<ul>
+  <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 무릎 부담 최소</li>
+  <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가볍고 부드러운 데일리</li>
+  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Fresh Foam X, 폭이 넓어 발 편함</li>
+  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 페이스 살짝 올리고 싶은 러너용</li>
+</ul>
+
+<p>본인 발 특성에 맞는 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>D-14 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-14 (5/16):</strong> @bogwangjung_official 인스타그램 프로필 하단 구글폼 링크 통해 신청. 선착순이라 5/15 접수 시작 후 빠른 마감 가능성</li>
+  <li><strong>D-7 (5/23):</strong> 기념 티셔츠 사이즈 안내 확인 (택배 발송 일정)</li>
+  <li><strong>D-3 (5/27):</strong> 남산 북측순환로 1회 답사 — 코스 감각·경사 미리 체크</li>
+  <li><strong>D-1 (5/29):</strong> 8AM 시작이라 새벽 4~5시 기상 패턴 맞춰 일찍 취침</li>
+  <li><strong>D-Day (5/30):</strong> 6:30~7:00 국립극장 해오름극장 도착. 신분증·기념품 수령</li>
+</ol>
+
+<h2>관련 5~6월 도심 러닝 이벤트</h2>
+
+<ul>
+  <li><a href="/blog/2026-icebucket-run-seoul">2026 아이스버킷 런 서울</a> — 자선 펀런</li>
+  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 대회 접수 안내</li>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
+</ul>
+
+<p><small>출처: 러너스나우(@runners_now) 2026-05-11 게시물 + 보광정(@bogwangjung_official) 공식 공지. 일정·접수 방법은 변경될 수 있으니 신청 직전 @bogwangjung_official 최신 공지 + 문의 010-8794-9272(12:00~18:00) 확인 필수.</small></p>
+`,
+  },
+  {
+    id: '2026-descente-awaken-ekiden-race',
+    slug: '2026-descente-awaken-ekiden-race',
+    title: '데센테 어웨이큰 에키덴 레이스 D-37 | 6/22~23 용산 전쟁기념관 지하 주차장 야간 릴레이 — 240명 무료, 추첨 선정, 5/25 마감',
+    description: '데센테 러닝이 6월 22~23일 용산 전쟁기념관 지하 주차장에서 어웨이큰 에키덴 레이스를 개최합니다. 일반 240명 모집(추첨 선정), 참가비 무료, 남 2인·여 2인·혼성 4인 릴레이 3개 부문. 5월 25일 마감. 일본식 도로 릴레이 포맷 + 도심 지하 야간이라는 독특한 컨셉.',
+    thumbnail: '/images/blog/2026-descente-awaken-ekiden-race.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['데센테', 'Descente', '어웨이큰 에키덴', 'Awaken Ekiden', '에키덴', '릴레이 마라톤', '용산 전쟁기념관', '야간 러닝', '도심 러닝', '러닝 크루'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>데센테 어웨이큰 에키덴 레이스</strong> — 6월 22일(월)~23일(화) 20:00~22:00, <strong>용산 전쟁기념관 지하 주차장</strong> 야간 진행</li>
+    <li><strong>일반 부문 240명 무료 + 추첨 선정</strong>, 남 2인 릴레이 / 여 2인 릴레이 / 혼성 4인 릴레이(남2·여2) 3개 부문</li>
+    <li>접수: <strong>2026년 5월 11일~5월 25일(월)</strong> — D-9, 데센테러닝(@descenterunning) 채널 통해 신청</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌃</span>
+  <div class="callout-body">
+    <p class="callout-title">"지하 주차장 야간 에키덴" 컨셉이 핵심</p>
+    <p>데센테 러닝이 5월 4일 공식 발표한 신규 레이스로, 한국에서는 흔치 않은 <strong>일본식 에키덴(駅伝) 릴레이 포맷</strong> + <strong>용산 전쟁기념관 지하 주차장 야간 진행</strong>이라는 독특한 컨셉입니다. 일반인 추첨 240명 + 사전 초청 크루 9개 팀으로 구성된 양일 진행 이벤트.</p>
+  </div>
+</div>
+
+<h2>에키덴(駅伝)이 정확히 뭔가</h2>
+
+<p><strong>에키덴(駅伝, Ekiden)</strong>은 일본에서 발상한 도로 릴레이 마라톤 포맷입니다. 1917년 도카이도(東海道) 첫 개최 이후 일본 운동 문화의 상징이 됐고, 매년 1월 1일 도쿄~하코네 왕복 217.1km를 10명이 이어 달리는 <strong>하코네 에키덴(箱根駅伝)</strong>이 대표적입니다.</p>
+
+<ul>
+  <li><strong>구조:</strong> 1개 팀(보통 2~10명)이 구간을 나눠 이어달리는 릴레이</li>
+  <li><strong>특징:</strong> 개인 PR보다 <strong>팀 합산 기록</strong>이 핵심 — 동료 신뢰·바통(襷, 다스키) 전달이 중요</li>
+  <li><strong>한국 상황:</strong> 한강 에키덴·잠스트 에키덴 등 산발적으로 개최되지만 메이저급 정착은 미흡 — 데센테 어웨이큰 에키덴이 그 공백을 노린 포지셔닝</li>
+</ul>
+
+<h2>일반 참가 부문 — 5/25 마감</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 22일(월) 20:00~22:00</strong></td></tr>
+    <tr><td><strong>장소</strong></td><td><strong>용산 전쟁기념관 지하 주차장</strong></td></tr>
+    <tr><td><strong>참가비</strong></td><td><strong>무료</strong></td></tr>
+    <tr><td><strong>참가 인원</strong></td><td>총 240명</td></tr>
+    <tr><td><strong>부문</strong></td><td>남자 2인 릴레이 / 여자 2인 릴레이 / 혼성 4인 릴레이(남2·여2)</td></tr>
+    <tr><td><strong>모집 기간</strong></td><td>2026년 <strong>5월 11일(월) ~ 5월 25일(월)</strong></td></tr>
+    <tr><td><strong>선정 방식</strong></td><td>신청 기간 내 접수된 팀을 대상으로 <strong>운영 기준에 따라 추첨 선정</strong></td></tr>
+    <tr><td><strong>접수 채널</strong></td><td>데센테 러닝(@descenterunning) 공식 채널</td></tr>
+  </tbody>
+</table>
+
+<h2>크루 초청 부문 — 9개 크루 사전 초청</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 23일(화) 20:00~22:00</strong></td></tr>
+    <tr><td><strong>장소</strong></td><td>용산 전쟁기념관 지하 주차장 (일반 부문과 동일)</td></tr>
+    <tr><td><strong>진행 방식</strong></td><td>9개 러닝 크루 사전 초청 진행</td></tr>
+    <tr><td><strong>참가 방법</strong></td><td><strong>모집 없음</strong> — 사전 초청된 러닝 크루 한정</td></tr>
+  </tbody>
+</table>
+
+<p>크루 초청 부문은 일반 모집과 별개로, 데센테 측이 사전 초청한 9개 러닝 크루를 대상으로 진행됩니다. 일반 러너가 신청할 수 있는 부문은 <strong>6/22 일반 참가 부문 240명</strong>뿐입니다.</p>
+
+<h2>왜 "지하 주차장 야간"인가</h2>
+
+<p>한국에서 처음 시도되는 컨셉이라 호기심을 끄는 포인트. 도심 도로 폐쇄 없이 안정적 코스 확보가 가능하고, 야간 + 조명 + 음악 등 페스티벌형 연출에 유리합니다. 일본 도쿄·오사카에서 진행된 유사 형식 야간 에키덴 이벤트와 같은 흐름:</p>
+
+<ul>
+  <li><strong>코스:</strong> 지하 주차장 내 일정 거리 루프 (정확한 거리·구간 미공개 — 대회 접수 전까지 순차 공개 예정)</li>
+  <li><strong>분위기:</strong> 조명·음악 연출 가능, 도심 한복판 야간 러닝이라는 비주얼 임팩트</li>
+  <li><strong>날씨:</strong> 6월 말 한국 야외 야간 = 25~28℃ 습도 높음. 지하 주차장은 상대적으로 시원함</li>
+  <li><strong>접근성:</strong> 삼각지역(4·6호선)·이태원역(6호선) 도보권. 야간 진행이라 직장인 참가 용이</li>
+</ul>
+
+<h2>이런 러너에게 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">데센테 어웨이큰 에키덴이 어울리는 사람</p>
+    <ol>
+      <li><strong>러닝 크루·메이트 있는 러너:</strong> 2인·4인 팀 구성이 필수. 평소 같이 뛰는 사람과 한 팀 구성</li>
+      <li><strong>에키덴 포맷 처음 경험하는 러너:</strong> 한국에서 흔치 않은 릴레이 마라톤 경험 가치</li>
+      <li><strong>참가비 0원에 신상 데센테 굿즈 노리는 러너:</strong> 무료 + 데센테 후원 → 굿즈·기념품 기대치 ↑</li>
+      <li><strong>지하 야간 러닝 비주얼·콘텐츠가 좋은 러너:</strong> 인스타그램 콘텐츠 가치 큼</li>
+      <li><strong>직장인 평일 야간 가능:</strong> 월요일 20:00 시작 — 퇴근 후 참가 가능</li>
+    </ol>
+  </div>
+</div>
+
+<h2>이런 러너에게는 비추</h2>
+
+<ul>
+  <li><strong>혼자 뛰는 러너:</strong> 2~4인 팀 구성 필수. 팀 못 구하면 신청 자체 불가</li>
+  <li><strong>월요일 평일 야간 어려운 사람:</strong> 6/22(월) 20:00 시작 — 다음 날 화요일 출근 부담</li>
+  <li><strong>지하 환기·공기 민감한 러너:</strong> 지하 주차장 = 환기 제한적, 호흡기 민감자 주의</li>
+  <li><strong>개인 PR 목표 러너:</strong> 릴레이 포맷 + 추첨 선정 = PR 도전엔 부적합</li>
+</ul>
+
+<h2>릴레이용 신발 추천</h2>
+
+<p>에키덴은 1인당 거리가 짧고(추정 2~5km 구간) 빠른 페이스 유지가 핵심 — <strong>레이싱 슈즈 또는 슈퍼 트레이너</strong>가 정답입니다. 카본 슈퍼슈즈로 잠깐 빠르게 + 회복 + 다시 출전 사이클이 어울림.</p>
+
+<ul>
+  <li><strong>레이싱(2~5km 짧은 구간 + 전력):</strong>
+    <ul>
+      <li><a href="/shoes/nike-vaporfly-4">Nike Vaporfly 4</a> — 짧은 구간 폭발력</li>
+      <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 라이트스트라이크 프로 + 카본</li>
+      <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a></li>
+    </ul>
+  </li>
+  <li><strong>슈퍼 트레이너(편하면서 빠른 페이스):</strong>
+    <ul>
+      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 카본 없이 가볍고 반발 좋음</li>
+      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 + 데일리 가능</li>
+      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>D-9 신청 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-9 (5/16):</strong> 팀원 2명(또는 혼성 부문은 4명) 미리 컨택. 부문 결정 (남2/여2/혼성4)</li>
+  <li><strong>D-5 (5/20):</strong> 데센테러닝(@descenterunning) 공식 채널 접수 링크 확인. 팀명·연락처·SNS 등 사전 준비</li>
+  <li><strong>D-Day 신청 마감 (5/25 월):</strong> 마감 직전 트래픽 피하기 위해 D-3~D-2 사이 접수 완료</li>
+  <li><strong>D+10 ~ D+15 (6/4~6/9 추정):</strong> 추첨 결과 발표 (정확 일정은 데센테 후속 공지)</li>
+  <li><strong>D-Day (6/22 월 20:00):</strong> 용산 전쟁기념관 지하 주차장. 18:30~19:00 도착, 팀 체크인</li>
+</ol>
+
+<h2>관련 6월 도심 러닝 이벤트</h2>
+
+<ul>
+  <li><a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런 D-14</a> — 5/30 토 8AM 남산 펀런</li>
+  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 도심 대회</li>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
+</ul>
+
+<p><small>출처: 러너스나우(@runners_now) 2026-05-04 게시물 + 데센테러닝(@descenterunning) 공식 공지. 세부 운영 방식·코스 거리·참가 신청 링크는 대회 접수 전까지 순차 공개 예정. 최신 정보는 @descenterunning 채널에서 확인 필수.</small></p>
+`,
+  },
+  {
     id: '2027-seoul-marathon-gold-package',
     slug: '2027-seoul-marathon-gold-package',
     title: '2027 서울마라톤 골드패키지 안내 | 풀코스 45만원·10K 40만원 — 아디다스 뉴 에디션 레이싱화 사전 배송 포함, 선착순·한정 수량',
