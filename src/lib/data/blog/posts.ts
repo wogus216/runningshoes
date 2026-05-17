@@ -2,6 +2,202 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'nike-pegasus-41-vs-42-comparison',
+    slug: 'nike-pegasus-41-vs-42-comparison',
+    title: '나이키 페가수스 41 vs 42 비교 | 1만원 차이로 갈리는 선택 — 41 할인 13만원 살까, 42 신상 16만원 살까',
+    description: '페가수스 41(159,000원)과 42(169,000원)을 RunRepeat 실측·BITR·RTR 데이터로 직접 비교. 풀 렝스 Air Zoom 추가, 힐 스택 +2.4mm, 한국 와이드 정식 출시 등 5가지 핵심 변화 + 상황별 구매 결정 매트릭스 + 블프 시나리오까지 한 장 정리.',
+    thumbnail: '/images/blog/nike-pegasus-41-vs-42-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 11,
+    tags: ['나이키 페가수스', '페가수스 41', '페가수스 42', '러닝화 비교', '나이키', '입문 데일리 트레이너', '와이드 러닝화', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가격 1만원 차이</strong> (41 159,000원 / 42 169,000원) — 단 41은 이미 이월 할인 12~13만원대 풀림, 실제 차이는 <strong>3~4만원</strong></li>
+    <li>42의 진짜 변화 3가지: <strong>풀 렝스 Air Zoom 추가</strong> + <strong>힐 스택 +2.4mm 실측 부드러움</strong> + <strong>한국 와이드 SKU 정식 출시</strong></li>
+    <li>나이키 "에너지 리턴 +15%" 주장 → 실측 +1.6%p (마케팅). 가성비만 보면 <strong>41 이월 할인</strong>이 답, 발볼 4E급·뒤꿈치 착지 부드러움 우선이면 <strong>42 신상</strong> 정답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 랩 실측(2026-04-25 공개) + Believe in the Run B티어 평가 + Road Trail Run 8.79/10 + 한국 나이키 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 5~10km 한 달 사용기. 양 신발 단독 리뷰는 <a href="/shoes/nike-pegasus-41">페가수스 41 상세</a> · <a href="/shoes/nike-pegasus-42">페가수스 42 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 41</th><th>페가수스 42</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-04-09</strong></td><td>2년차</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>169,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>120,000~135,000원</strong></td><td>145,000원</td><td>실제 차이 ~3만원</td></tr>
+    <tr><td><strong>무게 (US M9 실측)</strong></td><td>281g</td><td>286g</td><td>+5g</td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>33.6mm</td><td><strong>36mm</strong></td><td>+2.4mm</td></tr>
+    <tr><td><strong>전족부 스택 (실측)</strong></td><td>22mm</td><td>22mm</td><td>동일 (공식 27mm와 불일치)</td></tr>
+    <tr><td><strong>드롭 (공식 / 실측)</strong></td><td>11mm</td><td>10mm / 14mm</td><td>공식·실측 5mm 불일치</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>ReactX 폼</td><td><strong>ReactX + 풀 렝스 Air Zoom</strong></td><td>Air Zoom 풀 추가</td></tr>
+    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>125</td><td><strong>131</strong></td><td>+6 (부드러움)</td></tr>
+    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>55.5% / 61.4%</td><td>57.1% / 61.2%</td><td>+1.6%p / 0 (마케팅 +15%와 큰 격차)</td></tr>
+    <tr><td><strong>토박스 너비 (실측)</strong></td><td>72.9mm</td><td>72.3mm</td><td>거의 동일</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>있음 (구색 부족)</td><td><strong>있음 (남·여 정식 출시 동일가)</strong></td><td>접근성 ↑</td></tr>
+    <tr><td><strong>내구성 (예상)</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 280원</td><td>약 282원</td><td>거의 동일</td></tr>
+    <tr><td><strong>BITR 평가</strong></td><td>B티어</td><td>B티어 (Design A / Value A / Performance C)</td><td>동급</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 5가지 — 마케팅 vs 실제</h2>
+
+<h3>1. 풀 렝스 Air Zoom 추가 ✅ 진짜 변화</h3>
+<p>41의 듀얼 포드(힐+전족부 분리 Zoom) → 42에서 풀 렝스 곡선형 Air Zoom으로 교체. 중족~전족부 착지 시 반발감이 확실히 개선됐고, 41 사용자들이 "전족부가 살아있다"고 체감하는 가장 큰 이유. 5km 이지런에서 41보다 약간 통통 튀는 느낌.</p>
+
+<h3>2. 힐 스택 +2.4mm 실측 부드러움 ✅ 진짜 변화</h3>
+<p>RunRepeat 실측: 힐 스택 33.6→36mm, 힐 SA(충격 흡수) 125→131(+6). 한강 아스팔트 5~10km 데일리에서 뒤꿈치 착지 시 무릎 충격 흡수가 확실히 부드러워짐. <strong>무릎 약한 러너에게 42가 더 유리</strong>.</p>
+
+<h3>3. 한국 와이드 SKU 정식 출시 ✅ 한국 러너 핵심 변화</h3>
+<p>41까지는 한국 나이키 공식몰에서 와이드 SKU 찾기가 쉽지 않았고 가끔 풀려도 컬러·사이즈 선택지 제한적. <strong>42는 출시 시점부터 남성·여성 와이드 모두 169,000원 동일가</strong>로 정식 출시. 발볼 4E급 한국 러너에게는 이게 가장 의미 있는 업그레이드.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">4. "에너지 리턴 +15%" 마케팅 vs 실측 ❌ 과장</p>
+    <p>나이키 공식 발표 "전작 대비 에너지 리턴 +15%". RunRepeat 실측 결과: 힐 55.5→57.1% (+1.6%p), 전족부 61.4→61.2% (±0). <strong>실제 체감은 거의 없는 마케팅 수치</strong>. 반발력 우선이라면 페가수스 플러스(ZoomX 풀렝스) 또는 노바블라스트 5(FF Blast Max)가 답.</p>
+  </div>
+</div>
+
+<h3>5. 토박스 너비 ❌ 마케팅 vs 실측 불일치</h3>
+<p>나이키는 "42에서 토박스 확대" 주장. RunRepeat 실측 토박스: 41 72.9mm → 42 72.3mm로 <strong>오히려 미세하게 좁아짐</strong>. 다만 와이드 SKU 정식 출시로 발볼 4E급도 안전하게 갈 수 있게 됐으니, 표준 SKU 비교는 사실상 동급으로 봐도 됨.</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>41 이월 12~13만원</strong></td><td>실제 사용감 차이 미미, 3~4만원 절약</td></tr>
+    <tr><td>발볼 4E급 + 와이드 필수</td><td><strong>42 와이드</strong></td><td>한국 정식 출시 SKU 안정성</td></tr>
+    <tr><td>뒤꿈치 착지 + 무릎 약함</td><td><strong>42</strong></td><td>힐 스택 +2.4mm + SA +6 부드러움</td></tr>
+    <tr><td>전족 착지 위주 + 가벼운 반발</td><td>42 (Air Zoom 풀렝스)</td><td>전족부 반발감 개선</td></tr>
+    <tr><td>5km 이하 단거리 데일리</td><td>41 (가성비) 또는 42 (취향)</td><td>둘 다 충분, 가격으로 선택</td></tr>
+    <tr><td>10km 이상 데일리</td><td><strong>42</strong></td><td>5g 무게 부담보다 힐 안정감이 우선</td></tr>
+    <tr><td>월 100km+ 고볼륨</td><td>둘 다 비추</td><td>보메로 18 또는 슈퍼블라스트 3 고려</td></tr>
+    <tr><td>하프마라톤 이상 롱런</td><td>둘 다 비추</td><td>줌 플라이 6, 페가수스 플러스 분리</td></tr>
+    <tr><td>41 600km 이내 멀쩡함</td><td><strong>41 계속</strong></td><td>업그레이드 가치 미미</td></tr>
+    <tr><td>41 수명 다 됨 + 발볼 4E급</td><td><strong>42 와이드</strong></td><td>표준 가격 와이드 SKU 가치</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — 언제 사는 게 가장 합리적인가</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">시즌별 가격 변동 예측</p>
+    <ul>
+      <li><strong>지금(2026 5~6월):</strong> 41 이월 13만원대 / 42 신상 16~17만원 — 3~4만원 차이</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 41 12만원대 가능 / 42 15만원대 — 차이 더 벌어짐</li>
+      <li><strong>블프 (11월):</strong> 41 10만원대 가능 / 42 13~14만원 — 가성비 41 압승</li>
+      <li><strong>12월~1월:</strong> 41 재고 소진 시작 → 사이즈·컬러 선택지 줄어듦. 와이드는 더 빠르게 품절</li>
+      <li><strong>2027년 3월~ (42 이월 시작):</strong> 42 13만원대로 떨어지면서 43(추정) 출시 사이클</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>지금 사야 한다면:</strong> 41 이월 할인 + 본인 사이즈·컬러 잡히면 41이 가성비 최강. 단 발볼 4E급은 42 와이드 정가가 안전.</p>
+<p><strong>3개월 기다릴 수 있다면:</strong> 여름 시즌 오프~블프 노리고 41 10만원대 사냥. 발볼 표준이면 거의 무조건 이게 답.</p>
+
+<h2>한국 와이드 옵션 비교 — 발볼 4E급의 진짜 차이</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 41 와이드</th><th>페가수스 42 와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정식 출시</td><td>있음 (구색 제한)</td><td><strong>있음 (남·여 정식 출시)</strong></td></tr>
+    <tr><td>가격</td><td>159,000원 (표준과 동일)</td><td>169,000원 (표준과 동일)</td></tr>
+    <tr><td>컬러 선택지</td><td>2~3종</td><td>5~6종</td></tr>
+    <tr><td>사이즈 재고</td><td>인기 사이즈 빠른 품절</td><td>출시 직후라 안정적</td></tr>
+    <tr><td>실제 토박스</td><td>72.9mm + 와이드 확장</td><td>72.3mm + 와이드 확장</td></tr>
+  </tbody>
+</table>
+
+<p>발볼 4E급이라면 둘 다 와이드 SKU로 가야 하고, <strong>컬러·사이즈 선택지가 풍부한 42 와이드가 유리</strong>. 단 본인 사이즈가 41 와이드로 잡힌다면 가격 메리트 살릴 수 있음.</p>
+
+<h2>부상·체형별 권장</h2>
+
+<ul>
+  <li><strong>평발:</strong> 둘 다 안정화는 아니지만 ReactX 폼이 잘 받쳐줌. 무릎까지 약하면 42 권장(힐 스택 +2.4mm). 과내전 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 같은 정식 안정화</li>
+  <li><strong>무릎 통증 이력:</strong> <strong>42</strong> (힐 SA 131, 36mm 스택). <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></li>
+  <li><strong>아킬레스건염:</strong> 11mm(41) 또는 10mm/14mm(42 공식/실측) 드롭 모두 OK</li>
+  <li><strong>족저근막염:</strong> 둘 다 excellent — 36mm 힐 스택(42)이 약간 유리</li>
+  <li><strong>정강이 부목:</strong> 둘 다 충분, 41이 무게(281g) 미세하게 유리</li>
+</ul>
+
+<h2>비슷한 가격대 대안</h2>
+
+<p>16만원대 입문 데일리 트레이너에서 페가수스가 정답은 아닐 수도. 같은 가격대 비교:</p>
+
+<ul>
+  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 맥시멀 쿠션 + 모자이드 락커, 페가수스보다 가볍고 부드러움</li>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 200,000원대지만 쿠셔닝 최상. 가성비는 페가수스가 우위</li>
+  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 폼 부드러움 1위. 발볼 넓은 라스트, 발볼 4E급에 추천</li>
+  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — ZoomX 풀렝스, 페가수스 42보다 반발력 강함 (단 가격 +5만원대)</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 41 → 42 업그레이드 가치 있나요?</h3>
+<p>41이 600km 안 신었다면 그냥 41 굴리세요. 41이 수명 다 됐고 발볼 4E급이면 42 와이드(정식 출시)가 답. 표준 발볼이고 가성비만 본다면 41 블프 세일이 더 매력적.</p>
+
+<h3>Q. 42를 사면 41 대비 뭐가 가장 좋아지나요?</h3>
+<p>두 가지: ① <strong>뒤꿈치 착지 부드러움</strong>(힐 스택 +2.4mm, SA +6 실측), ② <strong>한국 와이드 SKU 안정 공급</strong>. 그 외 변화(에너지 리턴, 토박스 확대)는 마케팅과 실측이 다름.</p>
+
+<h3>Q. 둘 다 처음이라면 41 사도 되나요?</h3>
+<p>완전 OK. 41은 한국 입문화 부동의 1위였고, 42가 압도적 개선판은 아닙니다. 이월 13만원대로 살 수 있다면 가성비 최강. 단 발볼 4E급이라면 42 와이드 권장(41 와이드는 재고 빠르게 줄어드는 중).</p>
+
+<h3>Q. 카본 슈즈로 가야 할까요?</h3>
+<p>페가수스 41·42 모두 카본 슈즈가 아닌 데일리 트레이너입니다. 카본 슈즈는 풀코스/하프 레이스 + 페이스 훈련 전용. 데일리 훈련은 페가수스 같은 일반 트레이너가 정답. 카본 슈즈 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 →</a></p>
+
+<h3>Q. 10km 넘어가는 거리도 쓸 수 있나요?</h3>
+<p>둘 다 10~13km까지는 무난하지만 그 이상은 비추. BITR도 42를 "6-13km 스윗스팟의 원 트릭 포니"로 평가. 하프 이상은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, 또는 줌 플라이 6 분리.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">90% 한국 러너에게는 41 이월 + 가성비</p>
+    <p>표준 발볼 + 5~10km 데일리 + 가성비 우선이라면 <strong><a href="/shoes/nike-pegasus-41">41 이월 13만원대</a></strong>가 거의 무조건 답. 42의 실제 개선은 풀 렝스 Air Zoom + 힐 스택 +2.4mm 정도이고, 3~4만원 추가 지출 가치는 본인 발 조건에 따라 갈림.</p>
+    <p>단 <strong>발볼 4E급(와이드 필수)</strong>이거나 <strong>무릎 약한 뒤꿈치 착지 러너</strong>라면 망설이지 말고 <strong><a href="/shoes/nike-pegasus-42">42 와이드</a></strong>로 가세요. 한국 정식 SKU 안정성과 힐 부드러움이 3~4만원 가치를 만듭니다.</p>
+  </div>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/nike-pegasus-42-review">나이키 페가수스 42 솔직 리뷰 — 단독 평가</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 11개 신발 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/running-shoe-trends-2026-eva-replacement">2026 러닝화 트렌드 — EVA 대체 폼</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 랩 데이터(페가수스 41/42, 2026-04-25 게시) / Believe in the Run 페가수스 42 리뷰 / Road Trail Run 8.79/10 / 한국 나이키 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 5~10km 한 달 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
     id: '2026-bogwangjung-suyuk-run',
     slug: '2026-bogwangjung-suyuk-run',
     title: '보광정 수육런 D-14 | 5월 30일 토 8AM 남산 북측순환로 — 기록 측정 없는 펀런, 수육·생수·기념 티셔츠 제공',
