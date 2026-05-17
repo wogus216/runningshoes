@@ -2,6 +2,206 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'new-balance-1080-v14-vs-v15-comparison',
+    slug: 'new-balance-1080-v14-vs-v15-comparison',
+    title: '뉴발란스 1080 v14 vs v15 비교 | -69g 충격 감량 + Fresh Foam X→인피니온 폼 교체 + 토박스 narrow→standard — 사실상 다른 신발',
+    description: '1080 v14(285g/199,000원)와 v15(216g/209,000원)을 RunRepeat 실측 + 한 달 사용기로 비교. 69g 감량 + 폼 자체 교체 + 토박스 narrow→standard + 4E 와이드 추가 — 같은 라인 세대 변화 중 역대급. v14 할인 13만원대 살까, v15 신상 21만원 살까 매트릭스.',
+    thumbnail: '/images/blog/new-balance-1080-v14-vs-v15-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 11,
+    tags: ['뉴발란스 1080', '1080 v14', '1080 v15', 'New Balance', '쿠션화 비교', '인피니온 폼', 'Fresh Foam X', '맥시멀 쿠션', '4E 와이드', '발볼 넓은 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>같은 라인 세대 변화 중 역대급</strong> — v15는 v14 대비 -69g 감량(285→216g) + Fresh Foam X → 인피니온(질소 주입 슈퍼크리티컬) 폼 교체</li>
+    <li>한국 러너 핵심 개선 3가지: <strong>토박스 narrow → standard</strong> + <strong>4E 와이드 옵션 추가</strong> + <strong>힐 스택 +3mm(37→40mm)</strong></li>
+    <li>가격 차이 1만원(MSRP). 단 <strong>v14 할인 13~15만원대</strong>로 풀려 실제 차이 5~7만원. "별개의 신발"이라 본인 우선순위(가벼움 vs 가성비)로 갈림</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 1080 v14 랩 실측(SA 142, HA 11.9, 에너지 리턴 60.8%) + 1080 v15 한국 출시 사양 + 한국 NB 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 양 신발 한 달 비교 주행. 양 신발 단독: <a href="/shoes/new-balance-1080-v14">1080 v14 상세</a> · <a href="/shoes/new-balance-1080-v15">1080 v15 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>1080 v14</th><th>1080 v15</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>현재 시장가</strong></td><td><strong>130,000~150,000원</strong> (이월 할인)</td><td>209,000원 (출시 풀가)</td><td>실제 차이 ~7만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>285g</td><td><strong>216g</strong></td><td><strong>-69g (역대급)</strong></td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>Fresh Foam X (EVA 기반)</td><td><strong>인피니온 (질소 주입 슈퍼크리티컬)</strong></td><td>폼 카테고리 자체 교체</td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>37mm</td><td>40mm</td><td>+3mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>33mm</td><td>34mm</td><td>+1mm</td></tr>
+    <tr><td><strong>드롭 (실측 / 공식)</strong></td><td>4.2mm / 6mm</td><td>6mm</td><td>+2mm (실측 기준)</td></tr>
+    <tr><td><strong>충격 흡수 (SA)</strong></td><td>142 (RunRepeat 실측, 최상위)</td><td>미게시 (체감 동급)</td><td>둘 다 9/10 쿠셔닝</td></tr>
+    <tr><td><strong>경도 (HA)</strong></td><td>11.9 (초소프트)</td><td>미게시</td><td>v14 검증 우위</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>60.8% (힐)</td><td>v14 대비 ↑ (인피니온 폼)</td><td>v15 약간 우위 추정</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>narrow (68mm 미만)</strong></td><td><strong>standard</strong></td><td>한국 발 친화 ↑</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>표준(D), 2E</td><td><strong>2E, 4E</strong></td><td>4E 신규 추가</td></tr>
+    <tr><td><strong>안정성 점수</strong></td><td>7/10</td><td>6/10</td><td>-1 (경량화 대가)</td></tr>
+    <tr><td><strong>내구성</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
+    <tr><td><strong>Cost/km (정가)</strong></td><td>약 400원/km</td><td>약 348원/km</td><td>-52원/km</td></tr>
+    <tr><td><strong>Cost/km (할인가)</strong></td><td><strong>약 245~270원/km</strong></td><td>약 348원/km</td><td>v14 압승</td></tr>
+  </tbody>
+</table>
+
+<h2>5가지 핵심 변화 — "사실상 다른 신발"</h2>
+
+<h3>1. 무게 -69g 감량 ✅ 같은 라인 세대 변화 중 역대급</h3>
+<p>285g → 216g. 페가수스(+5g)·카야노(-2g)와 비교조차 안 되는 변화. <strong>핸드 픽 시 들었을 때 한 사이즈 작은 신발</strong>로 착각할 정도. 5:00-6:30/km 페이스에서 발이 가볍게 회전하고, 빠른 회전 시 v14의 무게감이 완전히 사라짐.</p>
+
+<h3>2. Fresh Foam X → 인피니온 폼 교체 ✅ 폼 카테고리 자체 교체</h3>
+<p>v14의 Fresh Foam X는 EVA 기반 폼. v15의 <strong>인피니온은 질소 주입 슈퍼크리티컬 폼</strong>(아디다스 Lightstrike Pro·나이키 ZoomX 계열). 같은 두께에서 더 가볍고, 에너지 리턴이 향상되고, 통기성도 개선. <strong>이 폼 교체가 -69g 감량의 핵심</strong>.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">슈퍼크리티컬 폼이 뭐가 다른가</p>
+    <p>일반 EVA 폼: 고체 폼 발포 (셀 크기 불균일, 무겁고 반발 손실 큼).<br/>슈퍼크리티컬(SC) 폼: 질소 등 가스를 초임계 상태로 폼에 주입 → <strong>균일한 미세 셀 구조</strong>. 결과는 ① 같은 부피 -20~30% 무게, ② 에너지 리턴 +5~10%, ③ 장기 폼 꺼짐 ↓. 아디다스 아디오스 프로의 라이트스트라이크 프로, 나이키 ZoomX, 호카 PEBA 폼 등 최신 카본 슈즈가 모두 SC 폼 계열.</p>
+  </div>
+</div>
+
+<h3>3. 토박스 narrow → standard ✅ 한국 러너 핵심 개선</h3>
+<p>v14의 토박스 narrow(68mm 미만)는 한국 러너 사이 가장 큰 단점이었음. 발볼 표준만 돼도 새끼발가락 압박이 흔했음 — 결국 2E 필수. <strong>v15는 standard 토박스 + 4E 옵션까지 신설</strong>로 발볼 4E급도 표준 SKU로 안전하게 접근 가능. 한국 NB 1080 라인 역사상 가장 큰 개선.</p>
+
+<h3>4. 힐 스택 +3mm + 드롭 +2mm ✅ 무릎 보호 강화</h3>
+<p>힐 스택 37 → 40mm로 +3mm. 드롭은 4mm(실측)에서 6mm로 +2mm. <strong>뒤꿈치 착지 시 충격 흡수가 더 좋아지고</strong>, 종아리·아킬레스 부담은 약간 줄어듦. 무릎 약한 러너에게는 명확한 업그레이드.</p>
+
+<h3>5. 안정성 -1 ⚠️ 경량화의 대가</h3>
+<p>v14 안정성 7 → v15 6. 가벼워지면서 미드솔 두께 분포·소재가 바뀌어 좌우 흔들림이 약간 늘었음. <strong>평발·과내전 러너는 v15 단독보다 안정화 분리 검토 필요</strong>(카야노 32/33, 860 v15 등).</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>v14 이월 할인 (13~15만원)</strong></td><td>SA 142 검증 + 쿠셔닝 9/10 동급 + 5~7만원 절약</td></tr>
+    <tr><td>발볼 4E급 (4E 와이드 필수)</td><td><strong>v15 4E</strong></td><td>v14 4E 옵션 없음, v15 신규 추가</td></tr>
+    <tr><td>발볼 2E (와이드 정도)</td><td>v14 또는 v15</td><td>둘 다 2E 옵션 있음. 가격으로 선택</td></tr>
+    <tr><td>가벼운 쿠션화 우선 (216g)</td><td><strong>v15</strong></td><td>-69g 차이 압도적</td></tr>
+    <tr><td>빠른 페이스(5:00/km 이하) 가능 쿠션화</td><td><strong>v15</strong></td><td>216g + 인피니온 폼 반발</td></tr>
+    <tr><td>리커버리·LSD 위주 (페이스 무관)</td><td><strong>v14 (가성비)</strong></td><td>HA 11.9 초소프트, 푹 쉬는 느낌</td></tr>
+    <tr><td>평발·과내전</td><td>둘 다 비추 (안정화로)</td><td>1080은 중립화. 카야노 32/33이 답</td></tr>
+    <tr><td>무릎 약한 뒤꿈치 착지</td><td><strong>v15</strong></td><td>40mm 스택 + 6mm 드롭 개선</td></tr>
+    <tr><td>v14 600km 이내 멀쩡</td><td><strong>v14 계속</strong></td><td>v15 갈아탈 가치 미미</td></tr>
+    <tr><td>v14 수명 다 됨 + 무게 부담 컸음</td><td><strong>v15</strong></td><td>-69g + standard 토박스</td></tr>
+    <tr><td>주 100km+ 고볼륨</td><td>v14 (내구성 검증) 또는 v15 (가벼움)</td><td>본인 우선순위로 갈림</td></tr>
+    <tr><td>1080 첫 도전 + 발볼 표준</td><td><strong>v14 이월</strong></td><td>13~15만원에 쿠셔닝 검증된 입문</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — v14 할인이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 1080 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v14 13~15만원 이월 풀림 / v15 21만원 정가 → 가성비는 v14 압승, "역대급 변화" 매력은 v15</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v14 12~13만원대 진입 / v15 18~19만원대 일부 할인 시작 → v14 가성비 정점</li>
+      <li><strong>블프 (11월):</strong> v14 10~11만원대 가능 / v15 16~17만원대 → v14 사이즈·컬러 빠른 품절. 2E·표준만 남는 패턴</li>
+      <li><strong>12월~1월:</strong> v14 재고 소진 가속. <strong>2E 와이드는 빠르게 사라짐</strong> (한국 발볼 수요)</li>
+      <li><strong>2027년 1월~ (v15 이월 시작):</strong> v15 14~16만원대로 떨어지며 v16(추정) 출시 사이클</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>발볼 4E급:</strong> v15 4E 정가로 가야 함. v14는 4E 없음, 2E로는 부족할 가능성</li>
+  <li><strong>발볼 표준~2E + 가성비:</strong> v14 이월 13~15만원이 지금 가장 합리적. 여름~블프 더 떨어질 가능성 vs 사이즈 빠질 위험 트레이드오프</li>
+  <li><strong>경량 쿠션화 우선:</strong> v15 정가 21만원 감수. -69g 가치는 본인이 직접 신어봐야 체감 가능</li>
+  <li><strong>둘 다 처음:</strong> NB 매장 또는 ON YOUR MARK 트라이얼에서 양쪽 동시 신어보고 결정</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 통증 + 뒤꿈치 착지</td><td><strong>v15</strong></td><td>힐 스택 40mm + 인피니온 충격 흡수</td></tr>
+    <tr><td>무릎 통증 + 가성비 우선</td><td>v14 (이월)</td><td>SA 142 + 37mm 스택도 충분</td></tr>
+    <tr><td>아킬레스건염</td><td>v15</td><td>드롭 6mm(공식) — v14 4.2mm 실측보다 낮은 부담</td></tr>
+    <tr><td>족저근막염</td><td>v14 = v15</td><td>둘 다 excellent (인피니온 / Fresh Foam X)</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>v14 (안정성 7) > v15 (6)</td><td>v15는 안정성 약간 떨어짐. 심하면 안정화로</td></tr>
+    <tr><td>평발 + 심한 과내전</td><td>둘 다 비추 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td><td>1080은 중립화</td></tr>
+    <tr><td>발볼 4E급 + 토박스 압박</td><td><strong>v15 4E</strong></td><td>v14는 4E 없음, v15 신규 옵션</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>비슷한 가격대 쿠션화 대안</h2>
+
+<ul>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 23만원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
+  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 18만원대, 더 가볍고 부드러움. 토박스는 1080 v15 우위</li>
+  <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 22만원대, 반발력 약간 더 강함</li>
+  <li><a href="/shoes/new-balance-880-v15">NB 880 v15</a> — 16만원대, 1080보다 한 단계 아래. 가성비 우선이면 검토</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. v14 → v15 업그레이드 가치 있나요?</h3>
+<p>가치 큼. <strong>-69g 감량 + 폼 자체 교체 + 토박스 standard + 4E 옵션</strong> — 같은 라인 세대 변화 중 거의 가장 큰 폭. v14를 300km 이내 신었다면 그냥 v14 굴리고, v14가 수명 다 됐거나 발볼 4E급이라면 무조건 v15.</p>
+
+<h3>Q. v15가 정말 v14보다 부드러운가요?</h3>
+<p>"부드러움 절대치"는 v14의 HA 11.9 초소프트가 살짝 더 부드러울 수 있음 (검증 데이터 기준). 다만 v15는 <strong>"부드러우면서 통통 튀는 느낌"</strong>이 더 강함. 인피니온 폼이 에너지 리턴이 높아서. <strong>리커버리 위주 = v14, 데일리 + 페이스 가끔 올리기 = v15</strong>가 정답.</p>
+
+<h3>Q. 인피니온 폼은 PEBA인가요?</h3>
+<p>PEBA는 아니지만 같은 슈퍼크리티컬 폼 계열. 정확한 화학 성분은 NB가 공개하지 않았으나 <strong>질소 주입 + 슈퍼크리티컬 공정</strong>은 PEBA(나이키 ZoomX)·라이트스트라이크 프로(아디다스)와 같은 카테고리. 카본 슈즈에 쓰는 폼이 데일리 트레이너에 적용된 흐름.</p>
+
+<h3>Q. 안정성 6/10이면 평발은 v15 못 신나요?</h3>
+<p>가벼운 평발이라면 OK. <strong>안정성 6/10은 "중립화 평균"</strong>이고, 페가수스(8/10)·님버스(7/10)보다는 약하지만 1080도 충분한 베이스 폼 안정성은 있음. 다만 <strong>심한 과내전이면 무조건 카야노 32/33이나 860 v15</strong>로.</p>
+
+<h3>Q. v15로 풀코스 가능한가요?</h3>
+<p>가능. 216g + 6mm 드롭 + 인피니온 폼 조합은 Sub-4 ~ Sub-5 풀코스 완주에 적합. <strong>Sub-3:30 이하 도전은 카본 슈즈로 분리 권장</strong>. v15는 데일리 + LSD + 풀코스 완주(페이스 부담 없는 경우) 전용.</p>
+
+<h3>Q. v14 narrow 토박스 발볼 표준이면 신을 만 한가요?</h3>
+<p>발볼 정확히 표준(EE 이하)이라면 D 사이즈 OK. <strong>발볼 약간 넓다 싶으면 무조건 2E</strong>. RunRepeat 실측 토박스 68mm 미만 narrow는 한국 러너 평균(70~75mm)보다 좁음. v14 D 사이즈로 새끼발가락 압박 후기가 흔함.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">90% 한국 러너에게는 두 갈래</p>
+    <p><strong>① 발볼 4E급 또는 가벼운 쿠션화 매니아:</strong> <a href="/shoes/new-balance-1080-v15">1080 v15</a> 정가 21만원 감수해서라도 4E 신규 옵션 + -69g 가치 회수. 인피니온 폼은 한 번 신어보면 돌아가기 어려움.</p>
+    <p><strong>② 발볼 표준~2E + 가성비:</strong> <a href="/shoes/new-balance-1080-v14">1080 v14</a> 이월 13~15만원 잡고 5~7만원 절약. SA 142 + HA 11.9 초소프트 쿠셔닝은 여전히 최상위. 페이스 욕심 없는 리커버리·LSD 위주라면 무게 차이 체감 적음.</p>
+    <p><strong>둘 다 처음이거나 결정 못 한다면:</strong> ON YOUR MARK 경복궁점·부산점 또는 NB 직영매장에서 양쪽 동시 시착이 가장 정확. 1080 시리즈는 "신어봐야 안다"는 평이 가장 정확한 신발.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/2026-nb-1080v15-tryout-popup-d3">NB 1080 v15 무료 트라이얼 팝업 (5/14 종료)</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 1080 v14 랩 데이터(SA 142, HA 11.9, 에너지 리턴 60.8%) / Believe in the Run 1080 v15 리뷰 / 한국 NB 공식몰 + 네이버 쇼핑 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 한 달 비교 주행. v15 RunRepeat 랩 데이터는 일부 미게시 상태로 인피니온 폼 우위는 NB 공식 + 1차 사용 후기 기반 추정.</small></p>
+`,
+  },
+  {
     id: 'asics-kayano-32-vs-33-comparison',
     slug: 'asics-kayano-32-vs-33-comparison',
     title: '아식스 카야노 32 vs 33 비교 D-15 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 평발 한국 러너는 어느 쪽?',
