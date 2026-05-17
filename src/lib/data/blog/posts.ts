@@ -2,6 +2,244 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'saucony-endorphin-pro-4-vs-5-comparison',
+    slug: 'saucony-endorphin-pro-4-vs-5-comparison',
+    title: '사우코니 엔돌핀 프로 4 vs 5 비교 | 슬롯형 카본 + PWRTRAC 신규 + 토박스 narrow→standard — 첫 카본 슈즈 가성비 1순위',
+    description: '엔돌핀 프로 4(220g/269,000원)와 프로 5(206g/299,000원)을 RunRepeat 실측 + 사용기로 비교. -14g 경량화 + 슬롯형 카본 플레이트 + PWRTRAC 아웃솔 + 토박스 standard 확장. v4 이월 22~24만원 살까 v5 신상 30만원 살까 + Sub-3:30 풀코스 가성비 카본 답.',
+    thumbnail: '/images/blog/saucony-endorphin-pro-4-vs-5-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 12,
+    tags: ['사우코니 엔돌핀', '엔돌핀 프로 4', '엔돌핀 프로 5', 'Saucony', '카본 슈즈 비교', '슈퍼슈즈', 'PWRRUN PB', '슬롯 카본', '첫 카본 슈즈', '풀마라톤 신발'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>가격 3만원 차이 (프로 4 269,000원 / 프로 5 299,000원) — 단 <strong>v4 이월 22~24만원 풀림</strong>, 실제 차이 5~7만원</li>
+    <li>v5의 핵심 변화 3가지: <strong>-14g 경량화(220→206g)</strong> + <strong>슬롯형 카본 플레이트(전환 효율 ↑)</strong> + <strong>토박스 narrow → standard(한국 발 친화)</strong></li>
+    <li>엔돌핀 프로는 <strong>"첫 카본 슈즈 1순위"</strong> 포지션. 베이퍼/알파 30~35만원보다 저렴 + 더 안정적 + 발볼 친화도 우수. Sub-3:30 ~ Sub-4 풀코스 가성비 정답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 엔돌핀 프로 4 실측(SA 139, HA 13.6, 에너지 리턴 71.7%) + 프로 5 사양·1차 사용 후기 + Believe in the Run / Road Trail Run 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4 상세</a> · <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>엔돌핀 프로 4</th><th>엔돌핀 프로 5</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>269,000원</td><td><strong>299,000원</strong></td><td>+30,000원</td></tr>
+    <tr><td><strong>현재 시장가</strong></td><td><strong>220,000~240,000원</strong> (이월 할인)</td><td>299,000원 (출시 풀가)</td><td>실제 차이 5~7만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>220g</td><td><strong>206g</strong></td><td><strong>-14g</strong></td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>38.1mm</td><td>39.5mm</td><td>+1.4mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>28.6mm</td><td>31.5mm</td><td>+2.9mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm 공식 (9.5mm 실측)</td><td>8mm</td><td>동일 (실측 일관성 ↑)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>PWRRUN PB+HG (혼합)</td><td><strong>PWRRUN HG (상층) + PWRRUN PB (하층) 듀얼</strong></td><td>명확한 듀얼 폼 구성</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td>풀렝스 curved</td><td><strong>풀렝스 슬롯형</strong></td><td>전환 효율 ↑</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>경량 러버</td><td><strong>PWRTRAC (신규)</strong></td><td>그립력 ↑ (특히 젖은 노면)</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>71.7% (실측)</td><td>70%+ (1차 후기)</td><td>거의 동일</td></tr>
+    <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:00 min/km</td><td><strong>3:30~4:30 min/km</strong></td><td>v5 약간 더 빠른 페이스</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>narrow</strong></td><td><strong>standard</strong></td><td>한국 발 친화 ↑</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
+    <tr><td><strong>내구성</strong></td><td>300km</td><td>300km</td><td>동일</td></tr>
+    <tr><td><strong>안정성</strong></td><td>5/10</td><td>5/10</td><td>동일 (둘 다 평발 비추)</td></tr>
+    <tr><td><strong>Cost/km (정가)</strong></td><td>약 897원</td><td>약 997원</td><td>+100원</td></tr>
+    <tr><td><strong>Cost/km (할인가)</strong></td><td><strong>약 733~800원</strong></td><td>약 997원</td><td>v4 압승</td></tr>
+  </tbody>
+</table>
+
+<h2>5가지 핵심 변화 — 마케팅 vs 실제</h2>
+
+<h3>1. 무게 -14g 경량화 ✅ 실제 우위</h3>
+<p>220g → 206g. 베이퍼플라이 4(166g)·알파플라이 3(201g)과 비교하면 알파와 거의 동급 무게. <strong>풀코스 35km+ 후반 다리 피로도 감소에 직접적인 영향</strong>. 카본 슈즈 무게는 1g도 의미 있음.</p>
+
+<h3>2. 슬롯형 카본 플레이트 ✅ 진짜 변화</h3>
+<p>v4의 단일 풀렝스 carved 플레이트 → v5의 <strong>슬롯형 풀렝스 카본 플레이트</strong>. 카본 플레이트 가운데에 슬릿(slot)을 넣어 <strong>전환 시 약간의 유연성 + 발 모양 적응</strong>. 결과는 ① 전족부 착지 → 발끝 이탈 전환이 더 자연스러움, ② 오르막·내리막에서 플레이트가 발 모양에 맞춰 굽혀짐, ③ 풀코스 30km+ 누적 피로 시 발 컨디션에 맞춰 적응.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">슬롯 vs 단일 카본 — 어떻게 다른가</p>
+    <p>단일 카본(베이퍼/알파/v4): "한 장의 판"처럼 발이 굴러감. 강한 추진력 + 일관된 반응 vs 발 모양 적응 ↓.<br/>슬롯 카본(v5): "두 갈래 + 중앙 슬릿"으로 약간의 자유도. <strong>전족 착지 시 좌우 살짝 다른 압력 → 자연스러운 분산</strong>. Sub-3 엘리트는 단일 플레이트 직진성을 선호하지만, <strong>Sub-3:30~Sub-4 풀코스 + 다양한 노면(서울 도심, 춘마 언덕)</strong>에서는 슬롯이 더 적응적.</p>
+  </div>
+</div>
+
+<h3>3. PWRTRAC 아웃솔 신규 ✅ 그립 개선</h3>
+<p>v4의 경량 러버 → v5의 <strong>PWRTRAC 아웃솔</strong>(사우코니 자체 컴파운드). 특히 <strong>젖은 노면 그립력 + 내구성</strong> 개선. 한국 가을 마라톤 시즌 비 오는 날 풀코스 대비.</p>
+
+<h3>4. 토박스 narrow → standard ✅ 한국 러너 핵심 개선</h3>
+<p>v4까지 엔돌핀 프로의 가장 큰 단점은 <strong>narrow 토박스</strong>. 발볼 정확히 표준만 돼도 풀코스 후반 새끼발가락 압박이 흔했음 — 베이퍼·알파보다 더 좁다는 평. <strong>v5는 standard 토박스로 확장</strong>되어 한국 러너 평균 발볼(70~75mm)에 더 친화적. 발볼 4E급은 여전히 와이드 옵션 없어 불가지만, 표준~약간 넓은 발볼은 v5가 훨씬 편함.</p>
+
+<h3>5. 가격 +3만원 (269 → 299k) ⚠️ 실제 차이는 시장가 기준 5~7만원</h3>
+<p>v5 출시 직후 풀가 299,000원 vs v4 이월 22~24만원대 시장가 = 실제 차이 5~7만원. 슬롯 플레이트·PWRTRAC·-14g·토박스 standard의 가치가 5~7만원어치인지 본인 우선순위로 판단 필요.</p>
+
+<h2>다른 나이키 카본과 가격·성능 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>무게</th><th>에너지 리턴</th><th>토박스</th><th>포지션</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>narrow</td><td>가성비 카본 최강</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>206g</td><td>70%+</td><td><strong>standard</strong></td><td>발볼 친화 + 첫 카본</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>78%</strong></td><td>좁음(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>35만원</td><td>201g</td><td>74.9%</td><td>좁음</td><td>풀코스 후반 보호</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만원</td><td>215g</td><td>72%+</td><td><strong>76mm (넓음)</strong></td><td>발볼 4E급 유일 선택</td></tr>
+  </tbody>
+</table>
+
+<h2>풀코스 페이스별 추천 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>목표 페이스</th><th>풀코스 기록</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>4:00~4:15/km (Sub-3)</td><td>2:50~3:00</td><td>알파플라이 3 또는 베이퍼 4</td><td>엔돌핀 프로는 Sub-3급에 약간 부족</td></tr>
+    <tr><td>4:15~4:30/km (Sub-3:10~3:15)</td><td>3:00~3:15</td><td><strong>엔돌핀 프로 5</strong></td><td>206g + 슬롯 카본, Sub-3:15에 가성비 최적</td></tr>
+    <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:15~3:20</td><td><strong>엔돌핀 프로 5</strong></td><td>토박스 standard + 후반 안정감</td></tr>
+    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>엔돌핀 프로 4 (이월) 또는 5</strong></td><td>v4 22~24만원 가성비 결정적</td></tr>
+    <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>엔돌핀 프로 4 (이월) 또는 슈퍼블라스트 3</td><td>슈퍼 트레이너도 고민 가치</td></tr>
+    <tr><td>5:30/km 이상 (Sub-4 이상)</td><td>3:50~</td><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>카본 효과 ↓, 부상 위험 ↑</td></tr>
+  </tbody>
+</table>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>첫 카본 슈즈 + Sub-3:30 풀코스</td><td><strong>엔돌핀 프로 5</strong></td><td>standard 토박스 + 안정감 + 가성비</td></tr>
+    <tr><td>첫 카본 슈즈 + 발볼 표준</td><td>프로 4 (이월) 또는 5</td><td>v4 23만원 가성비 vs v5 토박스 ↑</td></tr>
+    <tr><td>가성비 최우선 + 발볼 약간 좁음</td><td><strong>엔돌핀 프로 4 이월 22~24만원</strong></td><td>71.7% 에너지 리턴 검증, 5~7만원 절약</td></tr>
+    <tr><td>발볼 약간 넓음 (E ~ EE)</td><td><strong>엔돌핀 프로 5</strong></td><td>v4 narrow 토박스는 후반 압박 위험</td></tr>
+    <tr><td>발볼 4E급 (와이드 필수)</td><td>둘 다 비추 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>사우코니 카본은 와이드 없음</td></tr>
+    <tr><td>젖은 노면 풀코스 대비 (춘마·서울 도심)</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력</td></tr>
+    <tr><td>전족 착지 + 다양한 노면</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 전환 자연스러움</td></tr>
+    <tr><td>일관된 도로 + 직진성 우선</td><td>프로 4 (단일 플레이트)</td><td>슬롯보다 일관된 추진</td></tr>
+    <tr><td>풀코스 PB 도전 + Sub-3:15 ~ 3:30</td><td><strong>엔돌핀 프로 5</strong></td><td>-14g + 슬롯 플레이트 결정적</td></tr>
+    <tr><td>풀코스 + 하프 둘 다 출전</td><td>둘 다 OK (취향)</td><td>v5는 풀코스 강점, v4는 하프 가성비</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의</td><td>안정성 5/10, 안정화 분리 검토</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — v4 이월 할인이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 엔돌핀 프로 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v4 22~24만원 / v5 29만원 풀가 → 가성비는 v4 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v4 19~22만원 / v5 27만원대 일부 할인 시작 → v4 가성비 정점</li>
+      <li><strong>가을 마라톤 시즌 (9~10월):</strong> v4 가격 반등 가능 (대회 임박 수요) → 9월 전 v4 구매 권장</li>
+      <li><strong>블프 (11월):</strong> v4 18~20만원 / v5 25~26만원 → v4 사이즈·컬러 빠른 품절 (표준 발볼 인기)</li>
+      <li><strong>12월~2027년 1월:</strong> v4 재고 소진 가속. 인기 사이즈 사라짐. v5가 사실상 유일 옵션이 되는 시점</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>2027년 봄 마라톤(춘마·서마) 도전:</strong> v4 이월 22~24만원 지금 잡거나 7~8월 시즌오프 18~22만원 사냥</li>
+  <li><strong>발볼 standard 이상 (E·EE):</strong> v5 정가 29만원 권장. v4 narrow 토박스 후반 압박 위험</li>
+  <li><strong>첫 카본 슈즈 + 입문:</strong> v4 이월이 가성비 최강. 단 v5의 standard 토박스 + 슬롯 플레이트 안정성도 첫 카본 입문에 유리</li>
+  <li><strong>가성비 + 발볼 약간 좁음:</strong> v4 이월 22~24만원. 토박스 narrow 감수하고 5~7만원 절약</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 통증 이력</td><td><strong>엔돌핀 프로 5</strong></td><td>39.5mm 스택 + 듀얼 폼 충격 흡수</td></tr>
+    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (8mm 드롭)</td><td>9mm 드롭의 베이퍼·알파보다는 OK</td></tr>
+    <tr><td>족저근막염</td><td>v4 (good) > v5 (caution)</td><td>v4의 HA 13.6 소프트 폼이 발바닥 친화</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 5/10)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (76mm)</td></tr>
+    <tr><td>슈퍼슈즈 첫 도전 + 부상 우려</td><td><strong>엔돌핀 프로 5</strong></td><td>토박스 standard + 슬롯 플레이트 안정감</td></tr>
+    <tr><td>좌우 비대칭 (러닝 폼)</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트가 발 모양 적응</td></tr>
+    <tr><td>젖은 노면 풀코스</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력 결정적</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>비슷한 가격대 카본 슈즈 대안</h2>
+
+<ul>
+  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 30만원, 166g 압도적 가벼움 + 78% 에너지 리턴</li>
+  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 35만원, Air Pods + 38mm 스택 풀코스 후반 보호</li>
+  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 32만원, 라이트스트라이크 프로 + 에너지로드</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 32만원, 토박스 76mm 발볼 친화</li>
+  <li><a href="/shoes/saucony-endorphin-elite-2">사우코니 엔돌핀 엘리트 2</a> — 33만원, IncrediRUN 폼 80.6% 에너지 리턴(최강)</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. v4 → v5 업그레이드 가치 있나요?</h3>
+<p>v4가 200km 이내 신었다면 그냥 v4 굴리세요. <strong>핵심 업그레이드 가치는 토박스 standard + 슬롯 플레이트</strong>. v4 narrow 토박스로 풀코스 후반 발가락 압박 경험했다면 v5 권장. 그게 아니면 v4 이월 가성비가 훨씬 합리적.</p>
+
+<h3>Q. 첫 카본 슈즈인데 엔돌핀 프로가 베이퍼/알파보다 나은 이유?</h3>
+<p>세 가지: ① <strong>전족부 플랫폼이 넓어 안정성 우위</strong> (v4 118.9mm 광폭), ② <strong>가격이 5~10만원 저렴</strong>, ③ <strong>v5는 토박스 standard로 한국 발 친화도 높음</strong>. 베이퍼·알파는 Sub-3급 엘리트 전용 색이 강해서 입문에 부담스러움.</p>
+
+<h3>Q. 슬롯형 카본 플레이트가 정말 더 좋나요?</h3>
+<p>케이스에 따라. <strong>Sub-3 직진성 우선 = 단일 플레이트(베이퍼·알파·v4)가 더 좋고</strong>, <strong>Sub-3:30 풀코스 + 다양한 노면(언덕·코너·젖은 노면) + 발 모양 적응 우선 = 슬롯 플레이트(v5)가 더 좋음</strong>. 한국 풀코스 코스(춘마 언덕, 서울 도심 코너)는 슬롯에 유리.</p>
+
+<h3>Q. 발볼 약간 넓은데 v4 narrow가 어느 정도인가요?</h3>
+<p>표준 발볼(D)도 후반 압박 호소가 잦았던 게 v4 narrow 토박스. <strong>발볼 E 이상이면 v4는 사실상 비추</strong>, v5 standard로 가야 함. 발볼 4E급이면 사우코니 카본은 둘 다 비추 → 메타스피드 스카이+.</p>
+
+<h3>Q. 풀코스 외 하프·10K에는?</h3>
+<p>OK. 다만 21km 이하라면 베이퍼플라이 4(166g)의 가벼움이 더 유리. 엔돌핀 프로 5의 진가는 <strong>30km+ 풀코스 후반 누적 피로 시점 슬롯 플레이트의 적응력</strong>에서 나옴.</p>
+
+<h3>Q. 평발이라면 엔돌핀 프로 못 신나요?</h3>
+<p>안정성 5/10이라 심한 과내전은 비추. <strong>가벼운 평발 + 과내전 없음이면 OK</strong>, 단 카본 슈즈 부상 위험 + 평발 부담 누적 우려. 평발이라면 데일리는 <a href="/shoes/asics-gel-kayano-32">카야노 32/33</a> 안정화 + 카본은 대회 200km 한정 사용 패턴 추천.</p>
+
+<h3>Q. 200~300km 수명이 너무 짧지 않나요?</h3>
+<p>카본 슈즈의 본질적 한계. <strong>대회 + 페이스 훈련 전용</strong>이면 풀코스 6~7회 분량 — 1~2년 충분. 데일리 훈련은 절대 카본으로 쓰지 마세요(부상 + 빠른 소모). 데일리는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>나 <a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a>로 분리.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">대다수 Sub-3:15 ~ Sub-3:30 한국 러너에게 엔돌핀 프로는 가성비 정답</p>
+    <p><strong>첫 카본 슈즈 + 발볼 standard 이상</strong>이면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> 정가 29만원. 토박스 standard + 슬롯 플레이트 + PWRTRAC가 첫 카본 입문에 가장 안전. 베이퍼/알파보다 5~10만원 저렴.</p>
+    <p><strong>발볼 표준~약간 좁음 + 가성비 우선</strong>이면 <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a> 이월 22~24만원. 71.7% 에너지 리턴 검증 + 118.9mm 광폭 안정감. 5~7만원 절약하고 풀코스 4~5회 충분히 커버.</p>
+    <p><strong>발볼 4E급</strong>이라면 둘 다 깨끗이 포기 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>가 유일한 카본 옵션.</p>
+    <p><strong>Sub-3 엘리트 도전</strong>이라면 엔돌핀 프로는 약간 부족 → <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 또는 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>(80.6% 에너지 리턴).</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 나이키 카본 양강 비교</a></li>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 엔돌핀 프로 4 랩 데이터(SA 139, HA 13.6, 에너지 리턴 71.7%) + Believe in the Run 양 신발 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 비교 주행. v5 RunRepeat 랩 데이터는 일부 미게시 상태로 에너지 리턴·SA는 1차 사용 후기 + v4 기반 추정. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
     id: 'nike-vaporfly-4-vs-alphafly-3-comparison',
     slug: 'nike-vaporfly-4-vs-alphafly-3-comparison',
     title: '나이키 베이퍼플라이 4 vs 알파플라이 3 비교 | 30만원 베이퍼 vs 35만원 알파 — 5만원 차이로 갈리는 Sub-3 vs Sub-3:30 선택',
