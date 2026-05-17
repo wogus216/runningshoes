@@ -2,6 +2,218 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'asics-kayano-32-vs-33-comparison',
+    slug: 'asics-kayano-32-vs-33-comparison',
+    title: '아식스 카야노 32 vs 33 비교 D-15 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 평발 한국 러너는 어느 쪽?',
+    description: '6월 1일 출시 카야노 33(209,000원 추정)과 검증된 32(199,000원, 곧 세일 진입). 13년 만의 구조 대변혁 — 4D Guidance System 폐지·FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
+    thumbnail: '/images/blog/asics-kayano-32-vs-33-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 12,
+    tags: ['아식스 카야노', '카야노 32', '카야노 33', '안정화 비교', 'FLUIDSUPPORT', 'FF BLAST MAX', '4D Guidance', '평발 러닝화', '과내전', '안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>13년 만의 구조 대변혁</strong> — 33은 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
+    <li>안정 철학이 정반대: <strong>32 = 단단한 폼으로 발 무너짐 막기</strong>, <strong>33 = 부드러운 폼이 발 모양에 맞춰 변형되며 잡기</strong></li>
+    <li>가격 차이 ~1만원(MSRP). 단 <strong>33 출시 직후 32 세일 30~40% 전망</strong> — 13년 검증된 32가 평발 한국 러너에게 더 안전한 선택일 수 있음</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">D-15 — 카야노 33 6월 1일 출시</p>
+    <p>ASICS GEL-KAYANO 33은 <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 한국 가격은 209,000원 추정(글로벌 $170 + 32 한국가 199,000원 기준). 출시 후 1~3개월 내 <strong>32 세일이 30~40% 진행</strong>될 가능성이 큼. 본 글은 신상 33을 살지, 검증된 32를 세일로 살지 결정하기 위한 비교입니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-06-01</strong></td><td>2년차 / 신상 D-15</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원 추정</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>190,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>300g</td><td>298g</td><td>-2g (사실상 동일)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>32mm</td><td>32mm</td><td>동일</td></tr>
+    <tr><td><strong>드롭</strong></td><td>10mm (공식)</td><td><strong>8mm</strong></td><td>-2mm (아킬레스 부담 ↓)</td></tr>
+    <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (13년 검증)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>FF Blast+ ECO 단일 폼</td><td><strong>FF BLAST MAX (탑) + FF BLAST PLUS (하단) 듀얼</strong></td><td>최초 듀얼 폼</td></tr>
+    <tr><td><strong>안정성 점수</strong></td><td>10/10 (검증)</td><td>9/10 (검증 부족)</td><td>-1</td></tr>
+    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>7/10</td><td>+1 (FF BLAST MAX)</td></tr>
+    <tr><td><strong>내구성</strong></td><td>700km</td><td>650km (추정)</td><td>-50km</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>AHAR+</td><td>AHARPLUS</td><td>업데이트</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>재설계 엔지니어드 메쉬</td><td>리뉴얼</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>표준/와이드/X-와이드</td><td>표준/와이드 (X-와이드 출시 확정 X)</td><td>X-와이드 출시 미확정</td></tr>
+    <tr><td><strong>RunRepeat 랩 데이터</strong></td><td>게시됨</td><td>미게시 (출시 직후)</td><td>33은 추정 기반</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 — 4D Guidance vs FLUIDSUPPORT</h2>
+
+<p>32와 33의 가장 중요한 차이는 <strong>안정성을 구현하는 방식의 철학</strong> 자체가 정반대로 바뀌었다는 점입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔄</span>
+  <div class="callout-body">
+    <p class="callout-title">단단한 안정 vs 부드러운 안정 — 안정화 패러다임 전환</p>
+    <table>
+      <thead>
+        <tr><th></th><th>32 — 4D Guidance System (구)</th><th>33 — FLUIDSUPPORT (신)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>발상</strong></td><td>단단한 폼으로 발이 안쪽으로 무너지는 걸 막는다</td><td>부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡는다</td></tr>
+        <tr><td><strong>구조</strong></td><td>중창 안쪽에 단단한 EVA 인서트 (직접 교정력)</td><td>지오메트리(밑창 형상) + 듀얼 폼 (간접 안내)</td></tr>
+        <tr><td><strong>장점</strong></td><td>심한 과내전에도 확실한 교정. 13년 검증</td><td>발이 자연스럽게 움직이면서 안정성 확보. 단단함이 사라져 편안함 ↑</td></tr>
+        <tr><td><strong>단점</strong></td><td>"안정화는 딱딱하다"는 평가의 원인</td><td>심한 과내전에는 교정력 부족 가능성 (검증 부족)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p>이건 단순한 미드솔 폼 변경이 아니라 <strong>안정화 카테고리 전체의 방향 전환</strong>입니다. 호카 ARAHI, 브룩스 글리세린 GTS, NB 1080 안정화 버전 등 최근 안정화 트렌드와 같은 흐름 — 단단한 인서트 대신 폼 형상·구성으로 안정성을 만드는 방향.</p>
+
+<h2>5가지 핵심 변화 점검</h2>
+
+<h3>1. 4D Guidance System 폐지 ⚠️ 가장 큰 변화</h3>
+<p>13년간 카야노의 정체성이었던 단단한 EVA 인서트가 사라졌습니다. <strong>32까지의 "단단한 안정감"에 익숙했던 평발 러너에게는 33이 낯설게 느껴질 가능성</strong>이 큽니다. 반대로 "안정화라 그런가 쿠션이 좀 단단했다"고 느꼈던 러너에게는 환영할 변화.</p>
+
+<h3>2. FF BLAST MAX 도입 ✅ 쿠션 부드러움 개선</h3>
+<p>슈퍼블라스트 3·노바블라스트 5 등에서 호평 받은 FF BLAST MAX가 카야노 시리즈에 처음 도입. 32의 FF Blast+ ECO 대비 <strong>더 부드럽고 반발력도 약간 개선</strong>. "안정화인데 가볍게 통통 튀는 느낌"이 카야노 33의 정체성이 될 가능성.</p>
+
+<h3>3. 드롭 10mm → 8mm ✅ 아킬레스 부담 ↓</h3>
+<p>드롭 2mm 감소. 아킬레스건염 이력이 있는 러너에게 유리. 다만 11mm/10mm 드롭에 익숙한 러너는 종아리 부담이 약간 늘 수 있어 적응 기간 필요.</p>
+
+<h3>4. 무게 -2g (300 → 298g) ↔ 사실상 동일</h3>
+<p>거의 의미 없는 수치 변화. 안정화 카테고리에서 300g대는 표준 — 둘 다 "묵직한 안정화" 영역.</p>
+
+<h3>5. X-와이드 옵션 미확정 ⚠️ 발볼 4E+ 한국 러너 주의</h3>
+<p>32는 표준·와이드·X-와이드 3종. <strong>33은 표준·와이드 2종만 발표</strong>되었으며 X-와이드 출시 여부는 미확정. 발볼 4E 초과(EE 이상)이라면 32 X-와이드를 세일 시점에 잡는 게 안전.</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>심한 과내전 + 13년 검증 안전 우선</td><td><strong>32 (세일 대기)</strong></td><td>4D Guidance 강한 교정력, FLUIDSUPPORT 검증 부족</td></tr>
+    <tr><td>발볼 4E+ (X-와이드 필수)</td><td><strong>32 X-와이드 (세일)</strong></td><td>33 X-와이드 출시 미확정</td></tr>
+    <tr><td>가성비 우선 + 표준~와이드 발볼</td><td><strong>32 (세일 12~14만원)</strong></td><td>33 출시 후 30~40% 세일 시점</td></tr>
+    <tr><td>"안정화는 단단하다"고 느꼈던 러너</td><td><strong>33</strong></td><td>FF BLAST MAX 도입으로 쿠션 부드러움 ↑</td></tr>
+    <tr><td>아킬레스건염 이력</td><td><strong>33</strong></td><td>드롭 10→8mm 감소로 부담 ↓</td></tr>
+    <tr><td>무릎 통증 + 평발</td><td>둘 다 OK</td><td>40mm 힐 스택 동일</td></tr>
+    <tr><td>32 사용 중 + 600km 이내 멀쩡</td><td><strong>32 계속</strong></td><td>업그레이드 가치 미미</td></tr>
+    <tr><td>안정화 첫 도전 (가벼운 과내전)</td><td>33 (시착 후) 또는 32 (검증)</td><td>매장 시착 후 결정 권장</td></tr>
+    <tr><td>풀코스/하프 안정화 1켤레</td><td><strong>32 검증된 700km 내구성</strong></td><td>33 내구성 미검증</td></tr>
+    <tr><td>주 100km+ 고볼륨 안정화</td><td><strong>32</strong></td><td>장기 검증, 33은 신뢰 데이터 부족</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — 32 세일 타이밍이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 카야노 가격 변동 예측</p>
+    <ul>
+      <li><strong>지금 (2026 5월 D-15):</strong> 32 정가 19만원대 / 33 출시 직전 → 32 살까 33 기다릴까 가장 애매한 시점</li>
+      <li><strong>6/1 (33 출시):</strong> 33 21만원대 / 32 가격 변동 시작 → 직영점·공식몰 17만원대 인하 시작 가능</li>
+      <li><strong>7~8월 (시즌 오프):</strong> 32 14~15만원대 / 33 20만원대 → 32 가성비 본격 시작</li>
+      <li><strong>11월 (블프):</strong> 32 12~13만원대 가능 / 33 18~19만원대 → 32 가성비 최강, 단 사이즈·컬러 빠진 옵션 다수</li>
+      <li><strong>12월~1월:</strong> 32 재고 소진. X-와이드는 더 빨리 사라짐. 33이 사실상 유일 옵션</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>심한 과내전·발볼 4E+:</strong> 6월 출시 직후 32 X-와이드 본인 사이즈 확보. 7~8월 세일까지 기다리면 X-와이드는 품절 위험</li>
+  <li><strong>표준~와이드 + 가성비:</strong> 7~8월 시즌 오프 또는 11월 블프까지 기다려 32 세일가 12~14만원대 사냥</li>
+  <li><strong>33의 새로운 부드러움 우선:</strong> 6/1 출시 첫 주에 매장 시착 후 결정. 신상 풀가 부담스러우면 9~10월까지 기다려 33 가격 안정화 노림</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>평발 + 심한 과내전</td><td><strong>32</strong></td><td>4D Guidance 강한 교정력 검증</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>33</td><td>FLUIDSUPPORT 자연스러운 안내 + 부드러움</td></tr>
+    <tr><td>무릎 통증 (러너스 니, 장경인대염)</td><td>32 = 33</td><td>40mm 힐 스택 동일</td></tr>
+    <tr><td>아킬레스건염</td><td><strong>33</strong></td><td>드롭 10→8mm 부담 ↓</td></tr>
+    <tr><td>족저근막염</td><td>32 = 33</td><td>둘 다 excellent (PureGEL 또는 FLUIDSUPPORT)</td></tr>
+    <tr><td>정강이 부목 (Shin Splints)</td><td>32 = 33</td><td>40mm 스택 충격 흡수</td></tr>
+    <tr><td>발목 부상 이력</td><td><strong>32</strong></td><td>강한 안정화 + 안정성 10/10</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다. 평발·무릎 통증 종합 가이드: <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></p>
+
+<h2>비슷한 가격대 안정화 대안</h2>
+
+<p>카야노 외 안정화 옵션도 검토할 가치:</p>
+
+<ul>
+  <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 13년 검증된 4D Guidance, 평발 1순위</li>
+  <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
+  <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 19만원대</li>
+  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (294g)</li>
+  <li><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> — 맥시멀 쿠션 + 안정화 결합</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 32 → 33 업그레이드 가치 있나요?</h3>
+<p>32가 500km 이내 멀쩡하다면 그냥 굴리세요. <strong>32의 단단한 안정성에 만족하는 평발 러너라면 33으로 갈 이유 없음</strong>. 반대로 "단단함이 좀 거슬렸다"면 33이 답.</p>
+
+<h3>Q. 신상 33을 사면 검증 부족 리스크가 큰가요?</h3>
+<p>출시 직후 3~6개월간은 RunRepeat 랩 데이터·장기 사용 후기가 부족합니다. 다만 카야노 시리즈는 안전성·신뢰성에서 30년 역사를 가진 라인 — 큰 결함 가능성은 낮음. 단 <strong>FLUIDSUPPORT의 과내전 교정력은 실제 사용 후기가 쌓여야 평가 가능</strong>.</p>
+
+<h3>Q. 매장 시착 시 어떤 점 체크해야 하나요?</h3>
+<p>3가지: ① 본인 발 안쪽이 안으로 무너지는지(과내전 교정 체감), ② 5분 정도 걸어보면서 미드솔 단단함 정도(32 사용자라면 비교 즉시 가능), ③ 토박스 너비 — 33은 X-와이드 미확정이라 발볼 4E+면 표준 토박스가 부족할 수 있음.</p>
+
+<h3>Q. 평발인데 안정화가 꼭 필요한가요?</h3>
+<p>평발이 자동으로 안정화를 의미하지는 않습니다. <strong>본인이 과내전이 심한지가 핵심</strong>. 가벼운 평발이라면 페가수스 41/42·1080 v15 같은 중립화로도 충분. 정형외과 또는 러닝 전문점에서 보행 분석 1회 받아보면 명확해짐. <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a></p>
+
+<h3>Q. 둘 다 풀코스 가능한가요?</h3>
+<p>OK. 다만 안정화 특성상 무게 300g대로 빠른 페이스는 부담. <strong>Sub-4 ~ Sub-5 풀코스 완주 목표 + 무릎/평발 안전 우선이라면 두 모델 모두 적합</strong>. Sub-3:30 이하 도전이라면 안정화는 부담스럽고 카본 슈즈 분리 권장.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
+    <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 13년 검증·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
+    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 신상 풀가 21만원대를 감수하더라도 새로운 부드러운 안정성의 가치 ↑.</p>
+    <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 D-21 — 6/1 출시 상세 안내</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+</ul>
+
+<p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33은 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 본 글의 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입, FLUIDSUPPORT) 기반 추정. 33 실측 데이터 게시 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
     id: 'nike-pegasus-41-vs-42-comparison',
     slug: 'nike-pegasus-41-vs-42-comparison',
     title: '나이키 페가수스 41 vs 42 비교 | 1만원 차이로 갈리는 선택 — 41 할인 13만원 살까, 42 신상 16만원 살까',
