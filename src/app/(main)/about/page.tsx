@@ -1,6 +1,8 @@
 import { Metadata } from 'next';
-import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe } from 'lucide-react';
+import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe, Activity } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { getShoes } from '@/lib/data/shoes';
+import { blogPosts } from '@/lib/data/blog/posts';
 
 export const metadata: Metadata = {
   title: '사이트 소개',
@@ -58,11 +60,45 @@ const aboutPageJsonLd = {
 };
 
 export default function AboutPage() {
+  const shoeCount = getShoes().length;
+  const postCount = blogPosts.length;
+  const reviewCount = blogPosts.filter((p) => p.category === 'review').length;
+  const guideCount = blogPosts.filter((p) => p.category === 'guide').length;
+  const newsCount = blogPosts.filter((p) => p.category === 'news').length;
+
+  const siteStats = [
+    { label: '러닝화 분석', value: `${shoeCount}개`, desc: '10개 브랜드 데이터 검증' },
+    { label: '블로그 글', value: `${postCount}개`, desc: `리뷰 ${reviewCount} · 가이드 ${guideCount} · 뉴스 ${newsCount}` },
+    { label: '데이터 출처', value: '4개', desc: 'RunRepeat · BITR · DOR · 공식 브랜드' },
+    { label: '운영 시작', value: '2025년', desc: '한국 러너 전용 데이터 분석' },
+  ];
+
   return (
     <div className="max-w-4xl mx-auto">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutPageJsonLd) }} />
       <h1 className="text-3xl font-bold mb-8">사이트 소개</h1>
+
+      {/* 사이트 실적 통계 (E-E-A-T 신뢰도 시그널) */}
+      <section className="section-card p-6 mb-10">
+        <div className="flex items-start gap-4">
+          <div className="p-3 rounded-xl bg-sky-100 dark:bg-sky-900">
+            <Activity className="w-6 h-6 text-sky-600 dark:text-sky-400" />
+          </div>
+          <div className="flex-1">
+            <h2 className="text-xl font-semibold text-primary mb-3">사이트 실적</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {siteStats.map((stat) => (
+                <div key={stat.label} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                  <div className="text-2xl font-bold text-primary">{stat.value}</div>
+                  <div className="text-sm font-medium text-primary mt-1">{stat.label}</div>
+                  <div className="text-xs text-tertiary mt-1">{stat.desc}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
 
       <div className="space-y-10 text-secondary">
         {/* 미션 */}
@@ -235,17 +271,28 @@ export default function AboutPage() {
               </div>
               <p className="leading-relaxed mb-3">
                 2년차 러너로, 직접 러닝화를 찾으면서 &quot;한국어로 된 제대로 된 러닝화 정보가 없다&quot;는
-                답답함에서 이 사이트를 시작했습니다.
+                답답함에서 이 사이트를 시작했습니다. 한강 일대(여의도·잠실·반포)에서 주 4~5회
+                러닝 중이며, 하프마라톤·10K 완주 후 풀코스 도전 준비 중입니다.
               </p>
               <p className="leading-relaxed mb-3">
                 AI를 활용한 학술 논문 분석(PubMed, Nature Scientific Reports 등)과 RunRepeat 700개 이상
                 러닝화의 랩 테스트 데이터, Doctors of Running의 생체역학 리뷰를 교차 검증해
                 데이터 기반의 객관적인 분석을 제공합니다.
               </p>
-              <p className="leading-relaxed">
+              <p className="leading-relaxed mb-3">
                 모든 신발 리뷰에는 실측 수치(토박스 너비, 에너지 리턴율, 충격흡수 SA값 등)를 포함하며,
                 &quot;이 신발 발볼 넓은 사람도 괜찮나요?&quot;에 숫자로 답하는 것이 목표입니다.
               </p>
+              <div className="rounded-lg bg-blue-50 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/40 p-4 text-sm">
+                <div className="font-semibold text-primary mb-1">분석 검증 프로세스</div>
+                <ol className="space-y-1 text-secondary list-decimal list-inside">
+                  <li>RunRepeat 랩 실측(SA, HA, 에너지 리턴%, 토박스 너비) 1차 수집</li>
+                  <li>Believe in the Run · Road Trail Run · Doctors of Running 정성 평가 교차 검증</li>
+                  <li>한국 공식몰 가격 + 와이드 옵션 + 출시일 확인</li>
+                  <li>한국 러너 평균 발 데이터(평발 비율 35%, 발볼 평균 76mm 기준) 반영</li>
+                  <li>편집 후 1차 시승 → 데일리·페이스 훈련 비교 → 발행</li>
+                </ol>
+              </div>
             </div>
           </div>
         </section>
@@ -292,7 +339,7 @@ export default function AboutPage() {
 
         {/* 최종 수정일 */}
         <p className="text-sm text-tertiary pt-4">
-          최종 수정일: 2026년 2월 10일
+          최종 수정일: 2026년 5월 19일
         </p>
       </div>
     </div>
