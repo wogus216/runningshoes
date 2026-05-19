@@ -34,6 +34,7 @@ export default function GelsPage() {
       item: {
         '@type': 'Product',
         name: `${gel.brand} ${gel.name}`,
+        description: gel.description,
         url: `${SITE_URL}/gels/${gel.slug}`,
         image: gel.image ? `${SITE_URL}${gel.image}` : undefined,
         brand: { '@type': 'Brand', name: gel.brand },

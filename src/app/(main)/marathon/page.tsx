@@ -57,17 +57,26 @@ export default function MarathonPage() {
         ...(event.raceInfo?.expectedParticipants && {
           maximumAttendeeCapacity: event.raceInfo.expectedParticipants,
         }),
-        ...(event.raceInfo?.entryFees && event.raceInfo.entryFees.length > 0 && {
-          offers: event.raceInfo.entryFees.map((fee) => ({
-            '@type': 'Offer',
-            name: fee.distance,
-            price: fee.fee,
-            priceCurrency: 'KRW',
-            availability: event.status === '접수중'
-              ? 'https://schema.org/InStock'
-              : 'https://schema.org/SoldOut',
-          })),
-        }),
+        offers: event.raceInfo?.entryFees && event.raceInfo.entryFees.length > 0
+          ? event.raceInfo.entryFees.map((fee) => ({
+              '@type': 'Offer',
+              name: fee.distance,
+              price: fee.fee,
+              priceCurrency: 'KRW',
+              availability: event.status === '접수중'
+                ? 'https://schema.org/InStock'
+                : 'https://schema.org/SoldOut',
+            }))
+          : {
+              '@type': 'Offer',
+              url: event.website || `${SITE_URL}/marathon/${event.id}`,
+              priceCurrency: 'KRW',
+              availability: event.status === '접수중'
+                ? 'https://schema.org/InStock'
+                : event.status === '마감'
+                  ? 'https://schema.org/SoldOut'
+                  : 'https://schema.org/PreOrder',
+            },
       },
     })),
   };
