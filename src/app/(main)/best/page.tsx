@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Footprints, MapPin, Heart, Wallet, Layers } from 'lucide-react';
 import { getAllMatrices, getMatrixShoes } from '@/lib/pseo/matrices';
 import { getShoes } from '@/lib/data/shoes';
-import { SITE_NAME } from '@/lib/constants';
+import { SITE_NAME, SITE_URL } from '@/lib/constants';
 
 const SHOE_COUNT = getShoes().length;
 
@@ -52,8 +52,46 @@ const compactGroups = ['attribute', 'price', 'brand-category'] as const;
 export default function BestHubPage() {
   const all = getAllMatrices();
 
+  const collectionJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    '@id': `${SITE_URL}/best#collection`,
+    url: `${SITE_URL}/best`,
+    name: '러닝화 베스트 가이드',
+    description: `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
+    inLanguage: 'ko-KR',
+    isPartOf: { '@id': `${SITE_URL}/#website` },
+    mainEntity: {
+      '@type': 'ItemList',
+      numberOfItems: all.length,
+      itemListElement: all.map((m, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        url: `${SITE_URL}/best/${m.slug}`,
+        name: m.h1,
+      })),
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: '베스트', item: `${SITE_URL}/best` },
+    ],
+  };
+
   return (
     <div className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(collectionJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <header className="space-y-4">
         <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-2 text-sky-700">
           <Footprints className="h-5 w-5" aria-hidden="true" />

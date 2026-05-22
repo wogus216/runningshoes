@@ -1684,7 +1684,7 @@ export const blogPosts: BlogPost[] = [
     <ul>
       <li>1월 중 <strong>국내 출시일보다 먼저 택배로 사전 배송</strong></li>
       <li>모델명 미공개 — 공식 게시물 댓글에서 "프로5?", "프로4 동사이즈 가면 되나요?" 등 추측 다수</li>
-      <li>참고: 2026 골드패키지는 <a href="/shoes/adidas-adios-pro-evo-3">아디오스 프로 에보 3</a>였음. 2027은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 또는 차세대 에보 모델일 가능성</li>
+      <li>참고: 2026 골드패키지는 아디오스 프로 에보 3였음. 2027은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 또는 차세대 에보 모델일 가능성</li>
     </ul>
   </li>
   <li><strong>반팔 티셔츠 또는 싱글렛 중 택 1</strong> — 2027 한정 에디션</li>
@@ -1773,7 +1773,7 @@ export const blogPosts: BlogPost[] = [
 
 <h2>아디다스 뉴 에디션 레이싱화 — 후보 모델</h2>
 
-<p>공식 게시물에 모델명이 비공개되어 있어 댓글에서 추측이 활발합니다. 2026 골드패키지가 <a href="/shoes/adidas-adios-pro-evo-3">아디오스 프로 에보 3</a>였던 점, 2027 신상 출시 사이클을 고려한 가능성:</p>
+<p>공식 게시물에 모델명이 비공개되어 있어 댓글에서 추측이 활발합니다. 2026 골드패키지가 아디오스 프로 에보 3였던 점, 2027 신상 출시 사이클을 고려한 가능성:</p>
 
 <ul>
   <li><strong>아디다스 아디오스 프로 EVO 4 (가장 유력):</strong> 에보 시리즈 후속 모델로 2027 출시 예정. 골드패키지 = "신상 사전 공급" 콘셉트와 부합</li>
@@ -3853,7 +3853,7 @@ export const blogPosts: BlogPost[] = [
       <td>Stability Plane, 가성비 + 4E 와이드</td>
     </tr>
     <tr>
-      <td><a href="/shoes/saucony-tempus-2">Saucony Tempus 2</a></td>
+      <td>Saucony Tempus 2</td>
       <td>219,000원</td>
       <td>278g</td>
       <td>PWRRUN PB 슈퍼크리티컬 + 외측 가이드 프레임</td>
@@ -4688,7 +4688,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">🏛</span>
   <div class="callout-body">
     <p class="callout-title">평지 코스 + 가을 최적 기온 = 하프 PB 도전 적기</p>
-    <p>서울 도심은 고도 변화가 거의 없고 10월 둘째 주 평균 기온 10-15도로 하프 마라톤 최적 환경입니다. 다만 출발 직후 종로1가 좁은 구간 정체와 5km까지의 페이스 욕심이 함정 — 첫 5km는 의도적으로 천천히, 5-15km에서 페이스 끌어올리는 전략이 정석입니다. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a> 참고.</p>
+    <p>서울 도심은 고도 변화가 거의 없고 10월 둘째 주 평균 기온 10-15도로 하프 마라톤 최적 환경입니다. 다만 출발 직후 종로1가 좁은 구간 정체와 5km까지의 페이스 욕심이 함정 — 첫 5km는 의도적으로 천천히, 5-15km에서 페이스 끌어올리는 전략이 정석입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a> 참고.</p>
   </div>
 </div>
 
@@ -4767,7 +4767,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>10K (즐기는 페이스)</strong></td>
       <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
     </tr>
   </tbody>
 </table>
@@ -5114,7 +5114,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>10K (즐기는 페이스)</strong></td>
       <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
     </tr>
   </tbody>
 </table>
@@ -5566,15 +5566,15 @@ export const blogPosts: BlogPost[] = [
     </tr>
     <tr>
       <td>훈련용 데일리화</td>
-      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
     </tr>
     <tr>
       <td>에너지젤</td>
-      <td>20km부터 30~40분 간격 — <a href="/blog/energy-gel-guide">에너지젤 가이드</a></td>
+      <td>20km부터 30~40분 간격 — <a href="/blog/energy-gel-science-guide">에너지젤 가이드</a></td>
     </tr>
     <tr>
       <td>페이싱</td>
-      <td><a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a> + 가을 대회 실전 검증</td>
+      <td><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a> + 가을 대회 실전 검증</td>
     </tr>
   </tbody>
 </table>
@@ -6243,7 +6243,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>10km (적정 페이스)</strong></td>
       <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
     </tr>
     <tr>
       <td><strong>10km (PB 도전)</strong></td>
@@ -6505,7 +6505,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">평지 PB 기록을 그대로 적용하지 마세요</p>
-    <p>평지 마라톤(공주백제·서울)에서 Sub-3:30이 가능한 러너도 안동에서는 보통 30~40분 늦게 들어옵니다. 페이싱 전략은 <strong>"평지 PB + 30분"</strong>을 기준으로 잡고, 첫 12km는 의도적으로 더 천천히 가세요. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a>의 "구릉형 코스" 섹션 참고.</p>
+    <p>평지 마라톤(공주백제·서울)에서 Sub-3:30이 가능한 러너도 안동에서는 보통 30~40분 늦게 들어옵니다. 페이싱 전략은 <strong>"평지 PB + 30분"</strong>을 기준으로 잡고, 첫 12km는 의도적으로 더 천천히 가세요. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>의 "구릉형 코스" 섹션 참고.</p>
   </div>
 </div>
 
@@ -6539,7 +6539,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>하프 (안전 페이스)</strong></td>
       <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/asics-gt-2000-14">GT-2000 14</a></td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
     </tr>
     <tr>
       <td><strong>10K (적정 페이스)</strong></td>
@@ -6826,7 +6826,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">기록 단축 도전자에게 좋은 이유</p>
-    <p>금강변 평지 코스는 강풍만 없으면 사실상 무굴곡입니다. 9월 20일 충남 평균 기온이 20-24도로 다소 따뜻한 편이지만, 출발 시간(보통 8시) 기준 18-20도로 시작해 풀코스 종료 시점까지 25도 안쪽이라 기록 도전 환경으로는 합격선입니다. <a href="/blog/marathon-pacing-strategy">마라톤 페이싱 전략</a>을 미리 잡고 입장하세요.</p>
+    <p>금강변 평지 코스는 강풍만 없으면 사실상 무굴곡입니다. 9월 20일 충남 평균 기온이 20-24도로 다소 따뜻한 편이지만, 출발 시간(보통 8시) 기준 18-20도로 시작해 풀코스 종료 시점까지 25도 안쪽이라 기록 도전 환경으로는 합격선입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>을 미리 잡고 입장하세요.</p>
   </div>
 </div>
 
@@ -6847,7 +6847,7 @@ export const blogPosts: BlogPost[] = [
     <tr>
       <td><strong>완주 목표 입문 (4:30~5:00)</strong></td>
       <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/asics-gt-2000-14">ASICS GT-2000 14</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td>
+      <td>ASICS GT-2000 14, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td>
     </tr>
     <tr>
       <td><strong>32K 훈련용 LSD</strong></td>
@@ -7155,7 +7155,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><strong>아스팔트 무릎 충격 완화</strong> — SA 131의 힐 쿠셔닝은 입문 러너의 첫 800km 동안 무릎 부담을 의미 있게 줄여줍니다. 평발이거나 뒤꿈치 착지인 러너에게 특히 도움.</li>
   <li><strong>드롭 14mm(실측)의 양면성</strong> — 뒤꿈치 착지 러너에게 자연스럽게 무게 전환을 유도하지만, 미드풋 착지를 시도하려는 중급자에게는 인위적인 느낌이 됩니다.</li>
-  <li><strong>족저근막염·아킬레스건염 예방 좋음</strong> — 36mm + 풀 렝스 Air Zoom 조합이 발바닥 근막에 가해지는 충격을 분산시킵니다. <a href="/blog/knee-pain">무릎 통증 예방 가이드</a>의 "쿠션 우선화" 카테고리에 해당.</li>
+  <li><strong>족저근막염·아킬레스건염 예방 좋음</strong> — 36mm + 풀 렝스 Air Zoom 조합이 발바닥 근막에 가해지는 충격을 분산시킵니다. <a href="/blog/knee-pain-running-shoes">무릎 통증 예방 가이드</a>의 "쿠션 우선화" 카테고리에 해당.</li>
 </ul>
 
 <div class="callout tip">
@@ -8510,7 +8510,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">10km 이벤트 러닝화 추천</p>
-    <p>기록보다 즐거움이 목적인 펀런에는 쿠션 좋은 데일리화가 제격입니다. <a href="/shoes/hoka-clifton-9">호카 클리프톤</a>이나 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a> 같은 맥시멀 쿠션화로 발의 피로를 줄이고 행사 자체를 즐기는 데 집중하세요. 맞춤 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 이용해보세요.</p>
+    <p>기록보다 즐거움이 목적인 펀런에는 쿠션 좋은 데일리화가 제격입니다. <a href="/shoes/hoka-clifton-10">호카 클리프톤</a>이나 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a> 같은 맥시멀 쿠션화로 발의 피로를 줄이고 행사 자체를 즐기는 데 집중하세요. 맞춤 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 이용해보세요.</p>
   </div>
 </div>
 
@@ -8806,7 +8806,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">펀런 이벤트 참가 팁</p>
-    <p>이런 축제형 이벤트는 쿠션감 좋은 데일리 러닝화가 제격입니다. 기록보다 편안함 위주로 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a>이나 <a href="/shoes/hoka-clifton-9">호카 클리프톤</a> 같은 맥시멀 쿠션화를 추천합니다.</p>
+    <p>이런 축제형 이벤트는 쿠션감 좋은 데일리 러닝화가 제격입니다. 기록보다 편안함 위주로 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080</a>이나 <a href="/shoes/hoka-clifton-10">호카 클리프톤</a> 같은 맥시멀 쿠션화를 추천합니다.</p>
   </div>
 </div>
 
@@ -11767,10 +11767,10 @@ export const blogPosts: BlogPost[] = [
   코스 특성에 맞는 러닝화를 선택하면 훈련 효과가 배가됩니다.
 </p>
 <ul>
-  <li><strong>남산 업힐 (북측순환로):</strong> 안정성과 쿠셔닝이 좋은 <a href="/shoes/asics-gel-kayano-31">아식스 카야노 31</a> 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></li>
+  <li><strong>남산 업힐 (북측순환로):</strong> 안정성과 쿠셔닝이 좋은 <a href="/shoes/asics-gel-kayano-33">아식스 카야노 31</a> 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></li>
   <li><strong>한강 평지 (반포, 여의도):</strong> 가벼운 데일리화 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> 또는 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 v14</a></li>
   <li><strong>인터벌 훈련 (석촌호수, 올림픽공원):</strong> 반응성 높은 <a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a> 또는 <a href="/shoes/adidas-adizero-boston-12">아디다스 보스턴 12</a></li>
-  <li><strong>장거리 LSD (청계천, 남산순환):</strong> 최고 쿠셔닝의 <a href="/shoes/hoka-bondi-9">호카 본디 9</a> 또는 <a href="/shoes/asics-gel-nimbus-27">아식스 님버스 27</a></li>
+  <li><strong>장거리 LSD (청계천, 남산순환):</strong> 최고 쿠셔닝의 <a href="/shoes/hoka-bondi-9">호카 본디 9</a> 또는 <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 27</a></li>
 </ul>
 
 <h2>마치며</h2>
