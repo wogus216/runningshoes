@@ -2,6 +2,242 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'busan-unique-running-courses-7',
+    slug: 'busan-unique-running-courses-7',
+    title: '부산 이색 러닝 코스 7선 | 광안리 야경부터 이기대 절벽까지 — 바다·산·강 결합한 부산만의 러닝',
+    description: '광안리 야간 러닝부터 이기대 갈맷길까지, 부산에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 광안리·해운대·이기대·태종대·을숙도·송정·부산시민공원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/busan-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['부산 러닝 코스', '이색 러닝', '광안리 야간', '해운대 미포철도길', '이기대 갈맷길', '태종대', '을숙도', '송정 해변', '부산시민공원', '부산 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>부산은 바다·산·강·도심을 5km 이내에 결합한 러닝 천국</strong> — 광안리 야간, 이기대 절벽, 미포철도길, 태종대 등 서울에는 없는 풍경의 코스</li>
+    <li>7개 코스 모두 <strong>대중교통 접근 + 평지·완만 위주</strong> — 부산 거주 러너뿐 아니라 KTX로 주말 러닝 여행 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">부산 러닝만의 매력</p>
+    <p>부산은 한반도 동남쪽 항구도시로 <strong>바다(해운대·광안리·송정)·강(낙동강·수영강)·산(금정산·이기대·태종대)·도심(시민공원)</strong>이 5km 이내에 결합돼 있습니다. 같은 도시에서 해안·산악·강변·도심 풍경을 모두 경험할 수 있는 곳은 한국에서 부산이 유일. KTX로 서울에서 2시간 30분이라 <strong>주말 러닝 여행지로도 인기</strong>입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>광안리 + 광안대교 야간</strong></td><td>5~7km</td><td>하 (평지)</td><td>광안대교 조명 + 해변 + 카페</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>2</td><td><strong>해운대 + 동백섬 + 미포철도길</strong></td><td>6~9km (결합)</td><td>하~중</td><td>해변 + 옛 동해남부선 철도 부지</td><td>새벽 6AM·해질녘</td></tr>
+    <tr><td>3</td><td><strong>이기대 갈맷길 (2코스)</strong></td><td>약 4.7km</td><td>중상</td><td>해안 절벽 + 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>태종대 둘레길</strong></td><td>약 5km</td><td>중 (오르막 있음)</td><td>영도 절벽 + 등대 + 자갈마당</td><td>주말 오전 (인파 전)</td></tr>
+    <tr><td>5</td><td><strong>을숙도 + 낙동강 하구</strong></td><td>5~10km</td><td>하 (평지)</td><td>강변 자전거도로 + 철새</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>6</td><td><strong>송정 해변 + 동백섬</strong></td><td>5~8km</td><td>하</td><td>한적한 해변 + 서핑 풍경</td><td>새벽 6~7AM</td></tr>
+    <tr><td>7</td><td><strong>부산시민공원</strong></td><td>약 3.5km 둘레</td><td>하</td><td>도심 한복판 공원 + 트랙</td><td>평일 새벽·저녁</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 광안리 + 광안대교 야간 러닝 — 부산 야경 1순위</h2>
+
+<p><strong>출발지</strong>: 광안역 5번 출구 → 광안리 해변 (도보 8분)<br>
+<strong>거리</strong>: 5~7km (왕복 + 민락수변공원 연결)<br>
+<strong>노면</strong>: 아스팔트 + 일부 보도블록 + 해변 보행로<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (광안대교 조명 풀가동 시간)</p>
+
+<p>광안리 해변은 부산 야경 1순위 코스. <strong>광안대교(다이아몬드 브리지) 조명</strong>이 환상적이고, 해변 산책로가 잘 정비돼 있어 평지 러닝에 최적. 광안리 → 민락수변공원 연결로 7km까지 확장 가능.</p>
+
+<p><strong>이 코스의 매력</strong>: 광안대교 야간 조명 + 부산 시민들이 즐기는 해변 분위기 + 카페·맛집 풍부. 인스타 인증샷 명소 1순위. 매년 10월 <strong>부산불꽃축제</strong> 시기엔 글로벌 러닝 명소로 부상.</p>
+
+<p><strong>주의점</strong>: 주말·여름 저녁은 인파 많아 빠른 페이스 어려움. 페이스 훈련은 새벽 6AM 추천. 8월 부산 폭염·습도는 야간이 유일한 선택지.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 해운대 + 동백섬 + 미포철도길 — 해변 + 옛 철도 부지</h2>
+
+<p><strong>출발지</strong>: 해운대역 5번 출구 → 해운대 해변 (도보 7분)<br>
+<strong>거리</strong>: 6~9km (해운대 → 동백섬 → 미포철도길 결합)<br>
+<strong>노면</strong>: 아스팔트 + 해변 보행로 + 옛 철도 부지 흙길<br>
+<strong>추천 시간대</strong>: 새벽 6AM (인파 전) · 해질녘 (노을)</p>
+
+<p>해운대 해변을 따라 동백섬을 한 바퀴 돈 다음 <strong>미포철도길(옛 동해남부선)</strong>로 이어지는 결합 코스. 미포철도길은 2013년 폐선된 동해남부선을 산책로로 재활용한 곳으로, <strong>바다와 나란히 달리는 옛 철도 부지의 운치</strong>가 특별합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해운대 해변 + 누리마루 APEC하우스(동백섬) + 미포철도길 결합. 부산 대표 풍경 3개를 한 번에. 봄 벚꽃, 여름 해변, 가을 노을, 겨울 일출 모두 좋음.</p>
+
+<p><strong>주의점</strong>: 미포철도길은 좁고 일부 흙길이라 빠른 페이스 어려움. 주말 인파 많음. 새벽이나 평일 아침 추천.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 안정성. 카본 슈즈는 미포철도길에 비추.</p>
+
+<h2>3. 이기대 갈맷길 (2코스) — 해안 절벽 트레일 러닝</h2>
+
+<p><strong>출발지</strong>: 경성대·부경대역 5번 출구 → 동생말 (버스 20분)<br>
+<strong>거리</strong>: 약 4.7km (이기대 어울마당 → 오륙도 해맞이공원)<br>
+<strong>노면</strong>: 흙길 + 나무 데크 + 일부 계단<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (오륙도·대마도 시야 확보)</p>
+
+<p>부산 갈맷길 9코스 중 가장 인기 있는 <strong>이기대 갈맷길 2코스</strong>. 동해안 끝자락 절벽 위 트레일로, 한쪽은 광안대교·해운대 풍경, 다른 한쪽은 절벽 아래 바다. <strong>한국 도시에서 가장 드라마틱한 해안 트레일</strong>.</p>
+
+<p><strong>이 코스의 매력</strong>: 오륙도 해맞이공원 도착점에서 일본 대마도까지 보임 (맑은 날). 절벽·바위·해안 식물의 다양한 풍경. 부산 갈맷길 인증 챌린지 가능.</p>
+
+<p><strong>주의점</strong>: 트레일 코스라 일반 데일리화는 미끄러울 수 있음. <strong>비 직후 흙길 미끄러움·낙석 주의</strong>. 단독 러닝보다 2인 이상 동행 권장. 가족·아이와는 비추 (절벽).</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <strong>접지력 좋은 안정화</strong> 또는 트레일 전용 신발. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정도가 데일리 중에선 가장 적합.</p>
+
+<h2>4. 태종대 둘레길 — 영도 절벽 + 등대 + 자갈마당</h2>
+
+<p><strong>출발지</strong>: 남포역 6번 출구 → 태종대 입구 (버스 30분)<br>
+<strong>거리</strong>: 약 5km (태종대 순환로)<br>
+<strong>노면</strong>: 아스팔트 (전 구간 차량 통제, 전기차만 다님)<br>
+<strong>추천 시간대</strong>: 주말 오전 9~10AM (인파 전)</p>
+
+<p>영도구 끝자락 태종대 자연공원. <strong>전 구간 차량 통제(전기 다누비 열차만 다님)</strong>라 차 걱정 없이 뛸 수 있고, 약 5km 순환로가 절벽·등대·자갈마당·전망대를 두루 지나갑니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 태종대 등대 + 자갈마당(자연 자갈 해변) + 영도 절벽 + 대마도 시야. 부산 영도구 사람들의 새벽 러닝 명소. 봄 벚꽃 시즌엔 특별히 좋음.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가파른 오르막 있음. 무릎 약한 러너는 워킹 권장. 태종대 자체 입장료는 무료지만 다누비 열차는 유료(왕복 4,000원).</p>
+
+<p><strong>어울리는 러닝화</strong>: 오르막 + 평지 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션이 무릎 보호에 좋음.</p>
+
+<h2>5. 을숙도 + 낙동강 하구 — 강변 + 철새 자전거도로</h2>
+
+<p><strong>출발지</strong>: 하단역 1번 출구 → 을숙도대교 (도보 10분)<br>
+<strong>거리</strong>: 5~10km (을숙도 생태공원 + 낙동강 자전거도로)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 새벽 · 저녁 노을 (철새 관찰)</p>
+
+<p>낙동강 하구에 위치한 <strong>을숙도</strong>는 한국 최대 철새 도래지 중 하나로, 평일 새벽엔 자전거·러너가 만나는 한적한 강변 코스. 부산 해변 코스의 정반대 매력 — <strong>물·새·갈대의 자연 풍경</strong>.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 해변 코스에 지쳤다면 정반대의 자연 휴식 코스. 낙동강 자전거도로는 양산·김해까지 이어져 LSD 훈련 가능 (왕복 20km+ 가능). 저녁 노을이 절경.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가로등 부족 (야간 러닝 시 헤드램프 권장). 자전거 속도 빠른 곳도 있어 차선 분리 주의. 겨울철 철새 보호 구역 일부 출입 제한.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 부드러운 쿠션이 좋음.</p>
+
+<h2>6. 송정 해변 + 동백섬 — 한적한 해변과 서핑 풍경</h2>
+
+<p><strong>출발지</strong>: 송정역(동해선) 출구 → 송정 해변 (도보 8분)<br>
+<strong>거리</strong>: 5~8km (송정 해변 + 동백섬 결합)<br>
+<strong>노면</strong>: 해변 보행로 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽 6~7AM · 평일 오전</p>
+
+<p>송정 해변은 해운대·광안리보다 한적한 부산의 두 번째 해변. <strong>서핑 명소</strong>로도 유명해 새벽 서퍼들의 활기찬 모습을 볼 수 있는 곳. 송정 해변 끝 동백섬과 결합하면 5~8km 코스 완성.</p>
+
+<p><strong>이 코스의 매력</strong>: 해운대보다 한적해서 페이스 유지 좋고, <strong>서핑하는 사람들 풍경</strong>이 색다른 동기부여. 송정역(동해선)으로 부산 시내에서 접근 편리.</p>
+
+<p><strong>주의점</strong>: 해변 보행로는 발 빠질 수 있어 모래 직접 진입은 비추. 동백섬 둘레길 일부는 흙길.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 한적함. <a href="/shoes/saucony-ride-18">라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화면 충분.</p>
+
+<h2>7. 부산시민공원 — 도심 한복판 광활한 공원</h2>
+
+<p><strong>출발지</strong>: 부전역 또는 시민공원역 (도보 5분)<br>
+<strong>거리</strong>: 약 3.5km 둘레 + 내부 산책로 (총 5~7km)<br>
+<strong>노면</strong>: 아스팔트 + 우레탄 트랙 + 잔디<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>부산진구 한복판 옛 미군 기지 부지를 재개발한 도심 공원. <strong>약 47만평 규모로 부산 최대 도시공원</strong>. 시민들의 러닝·산책·운동 명소로 부산 거주 러너들의 평일 데일리 코스.</p>
+
+<p><strong>이 코스의 매력</strong>: 우레탄 트랙 구간 있어 인터벌 훈련 가능. 카페·편의시설 풍부. 강북·강남 어디서든 부전역으로 30분 이내 접근.</p>
+
+<p><strong>주의점</strong>: 주말 가족 단위 많아 빠른 페이스 어려움. 새벽이나 평일 저녁 추천.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 같은 슈퍼트레이너로 인터벌 훈련도 가능.</p>
+
+<h2>본인 부산 거주지·목적별 추천 코스</h2>
+
+<table>
+  <thead>
+    <tr><th>거주지</th><th>이지런</th><th>LSD (15km+)</th><th>인터벌·페이스 훈련</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>해운대·송정</td><td>해운대 해변</td><td>해운대 + 미포철도길 + 송정 결합</td><td>해운대 해변 왕복</td></tr>
+    <tr><td>광안리·수영</td><td>광안리 야간</td><td>광안리 + 민락수변 + 수영강 결합</td><td>광안리 해변 왕복</td></tr>
+    <tr><td>남구·이기대</td><td>경성대 부근</td><td>이기대 + 오륙도 갈맷길</td><td>이기대 절벽 반복 (힐 트레이닝)</td></tr>
+    <tr><td>영도</td><td>태종대 둘레길</td><td>태종대 + 영도 해안로 결합</td><td>태종대 오르막 반복</td></tr>
+    <tr><td>사하·서구</td><td>을숙도 산책로</td><td>을숙도 + 낙동강 자전거도로 (왕복 20km+)</td><td>을숙도 직선 구간 (트랙 대체)</td></tr>
+    <tr><td>부산진·동래</td><td>부산시민공원</td><td>시민공원 + 수영강 결합</td><td>시민공원 우레탄 트랙</td></tr>
+  </tbody>
+</table>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 해변 (광안리·해운대·송정)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>트레일·절벽 (이기대·태종대)</strong>: 안정성·접지력. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a> · <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+  <li><strong>강변 LSD (을숙도)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>인터벌·페이스 (부산시민공원 트랙)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>부산 러닝 여행 — KTX로 주말 러닝 가는 분에게</h2>
+
+<div class="callout info">
+  <span class="callout-icon">🚄</span>
+  <div class="callout-body">
+    <p class="callout-title">서울에서 KTX 2시간 30분, 1박 2일 러닝 여행 추천 코스</p>
+    <ul>
+      <li><strong>1일차 오후 도착 → 광안리 야간 러닝</strong> (해변 + 광안대교 조명) — 저녁 광안리 횟집·맛집</li>
+      <li><strong>2일차 새벽 → 이기대 갈맷길</strong> (오륙도 일출 → 광안대교 풍경) — 오전 카페</li>
+      <li><strong>2일차 오전 → 해운대 + 미포철도길</strong> (해변 + 옛 철도 부지) — 점심 후 KTX 복귀</li>
+    </ul>
+    <p>총 약 20~25km 러닝 + 부산 대표 풍경 3개. 한 주 훈련량을 부산 러닝 여행으로 채우는 패턴이 한국 러닝 커뮤니티에서 인기.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 부산 러닝과 서울 러닝의 차이는?</h3>
+<p>서울은 한강 중심의 평지 코스가 압도적, 부산은 <strong>바다·산·강·도심을 5km 이내에 결합</strong>한 다양성이 강점. 같은 1주일에 해변·트레일·강변·도심 코스 모두 경험 가능한 도시는 한국에서 부산뿐. 단 부산은 여름 폭염·습도가 서울보다 심해 새벽·야간 러닝 비중이 더 큽니다.</p>
+
+<h3>Q. 부산 마라톤 대회는 어떤 게 있나요?</h3>
+<p>주요 대회: <strong>부산 비치 울트라마라톤</strong>(여름 해변 야간), <strong>부산 마라톤</strong>(가을), <strong>이기대 갈맷길 트레일</strong>, <strong>해운대 마라톤</strong>(봄). 부산 거주가 아니어도 KTX로 1박 2일 참가 가능. <a href="/marathon">전체 마라톤 일정 →</a></p>
+
+<h3>Q. 8월 부산 여름에 뛸 만한가요?</h3>
+<p>낮 30도 후반 + 습도 80%+로 한국에서 가장 힘든 러닝 환경. <strong>새벽 5~6AM 또는 저녁 8~9PM 이후</strong>만 안전. 광안리·해운대 야간 러닝이 사실상 유일한 선택지. 8월엔 LSD보다 짧은 이지런 위주 권장.</p>
+
+<h3>Q. 이기대 갈맷길 안전한가요?</h3>
+<p>맑은 날 + 낮 시간대는 안전. <strong>비 직후·야간·단독 러닝은 비추</strong>. 절벽·바위 미끄러움 + 낙석 위험. 2인 이상 동행, 트레일 신발 또는 접지력 좋은 안정화 신발 권장. 무릎 약한 러너는 절벽 구간만 워킹.</p>
+
+<h3>Q. 가족·아이와 함께 갈 만한 코스는?</h3>
+<p>부산시민공원·광안리 해변·송정 해변·을숙도 생태공원이 가장 가족 친화적 (시설·화장실·카페 풍부). 해운대 동백섬 둘레도 OK. <strong>이기대·태종대 절벽 구간은 아이와 비추</strong>.</p>
+
+<h3>Q. 부산 러닝 클럽이나 동호회가 있나요?</h3>
+<p>부산 거주 러너 인스타·네이버 카페로 검색하면 광안리·해운대·시민공원 기반 정규 모임 많음. 매주 토요일 오전 광안리 그룹런이 가장 활발. 부산 마라톤 대회 시즌(9~11월)엔 페이스 메이커 모임도 활발.</p>
+
+<h2>결론 — 부산은 한국 러너의 두 번째 본진</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">서울에서 KTX 2시간 30분, 부산은 그만한 가치가 있는 러닝 도시</p>
+    <p>부산은 단순한 "지방 도시"가 아니라 한국에서 <strong>가장 다양한 러닝 환경</strong>을 가진 곳입니다. 광안리 야경 + 이기대 절벽 + 미포철도길 + 을숙도 강변 — 같은 도시에서 이만큼 풍경이 다른 코스를 만나기 어렵습니다.</p>
+    <p>부산 거주 러너라면 위 7개 코스 중 본인 거주지에서 가까운 1~2개를 평일 데일리로 + 주말은 다른 동네 코스로 변화 주는 패턴이 좋고, 타지 거주자라면 <strong>1박 2일 러닝 여행 + 부산 마라톤 참가</strong>로 한 번에 잡는 것이 효율적.</p>
+    <p>서울 이색 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 가이드</a>에서, 본인 발 특성·부상 이력에 맞춘 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 — 한강 외 명소 정리</a></li>
+  <li><a href="/blog/yeouido-sweet-potato-gps-art-run">여의도 고구마 런 — GPS 아트 러닝 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 부산 7개 코스 실주 사용기 + 부산광역시 갈맷길·태종대 자연공원 공식 자료 + 부산 러닝 커뮤니티(인스타·네이버 카페) 인기 코스 분석. 코스 정보는 시기·날씨에 따라 변동될 수 있으니 방문 전 공원 운영시간·갈맷길 통행 가능 여부 확인 권장. 거리는 GPS 측정값 기준이며 출발 지점에 따라 ±0.5km 변동 가능.</small></p>
+`,
+  },
+  {
     id: 'yeouido-sweet-potato-gps-art-run',
     slug: 'yeouido-sweet-potato-gps-art-run',
     title: '여의도 고구마 런 완전 가이드 | 한 바퀴 6km, GPS에 고구마가 그려지는 러닝 — Strava 인증·코스·페이스',
