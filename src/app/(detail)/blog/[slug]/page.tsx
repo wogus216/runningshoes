@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
@@ -5,10 +6,12 @@ import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/data/blog';
 import { categoryLabels } from '@/types/blog';
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
 import { BlogCard } from '@/components/blog/blog-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { FaqSection } from '@/components/blog/faq-section';
+import { AdSlot } from '@/components/ads/ad-slot';
+import { splitContentAtMidH2 } from '@/lib/blog/split-content';
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -221,19 +224,41 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         )}
 
-        {/* 본문 - 카드 래퍼 없음, 깔끔한 타이포그래피 */}
+        {/* 본문 - 카드 래퍼 없음, 깔끔한 타이포그래피.
+            H2 3개 이상이면 중간에서 분할해 in-article 광고 슬롯 1개 삽입 */}
         <article>
-          <div
-            data-blog-content
-            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(post.content, {
+          {(() => {
+            const sanitized = DOMPurify.sanitize(post.content, {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
               ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height'],
-            }) }}
-          />
+            });
+            const segments = splitContentAtMidH2(sanitized);
+            return segments.map((seg, i) => (
+              <Fragment key={i}>
+                <div data-blog-content dangerouslySetInnerHTML={{ __html: seg }} />
+                {i < segments.length - 1 && (
+                  <AdSlot
+                    slot={ADSENSE_SLOTS.blogInArticle}
+                    format="fluid"
+                    layout="in-article"
+                    layoutKey="-fb+5w+4e-db+86"
+                    label="본문 중간 광고"
+                  />
+                )}
+              </Fragment>
+            ));
+          })()}
         </article>
 
         {/* FAQ 섹션 (faqs 데이터 있을 때만) */}
         {post.faqs && post.faqs.length > 0 && <FaqSection faqs={post.faqs} />}
+
+        {/* 본문 끝 광고 (FAQ/관련 포스트 위) */}
+        <AdSlot
+          slot={ADSENSE_SLOTS.blogBottom}
+          format="auto"
+          label="본문 하단 광고"
+        />
 
         {/* 하단 구분선 */}
         <hr className="border-gray-200 my-12" />
