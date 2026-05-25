@@ -2,6 +2,402 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'yeouido-sweet-potato-gps-art-run',
+    slug: 'yeouido-sweet-potato-gps-art-run',
+    title: '여의도 고구마 런 완전 가이드 | 한 바퀴 6km, GPS에 고구마가 그려지는 러닝 — Strava 인증·코스·페이스',
+    description: '여의도 한강공원 외곽 한 바퀴를 돌면 Strava·Garmin Connect 지도에 고구마 모양이 그려지는 한국 러닝 커뮤니티 인기 챌린지. 출발지·거리(약 6km)·노면·시간대·인증 방법·페이스 가이드 + 다른 GPS 아트 러닝 사례까지 한 번에 정리.',
+    thumbnail: '/images/blog/yeouido-sweet-potato-gps-art-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['여의도 고구마 런', 'GPS 아트', '러닝 챌린지', '여의도 한강공원', 'Strava', '러닝 인증', '서울 러닝', '한강 러닝', '이색 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>여의도 한강공원 외곽 한 바퀴 = 약 6km</strong> — 시계방향·반시계방향 모두 가능, 평지 + 잘 정비된 산책로</li>
+    <li>완주하면 <strong>Strava·Garmin Connect GPS 지도에 정확히 고구마 모양이 그려짐</strong> — 인스타·러닝 커뮤니티 인증샷 1위 챌린지</li>
+    <li>여의나루역 1번 출구 출발 + 30~40분 페이스 권장. <strong>인파 적은 새벽 6AM 또는 평일 늦은 저녁 9PM 이후</strong>가 깨끗한 GPS 트랙에 유리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🍠</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 "고구마 런"인가</p>
+    <p>여의도는 한강 가운데에 위치한 인공섬으로, <strong>섬 외곽선이 자연스럽게 길쭉한 타원형 (고구마 모양)</strong>입니다. 동서로 약 2.4km, 남북으로 약 0.6km. 외곽 산책로 한 바퀴를 정확히 돌면 GPS 트랙이 고구마 형태로 닫힌 도형을 그립니다. 한국 러닝 커뮤니티(Strava 클럽·인스타 러닝러 그룹)에서 자연발생적으로 만들어진 인증 챌린지로, 2023년 무렵부터 본격 인기.</p>
+  </div>
+</div>
+
+<h2>한눈에 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>거리</strong></td><td>약 6km (한 바퀴) / 약 12km (두 바퀴 = "왕 고구마")</td></tr>
+    <tr><td><strong>출발지 권장</strong></td><td>여의나루역 1번 출구 (한강공원 진입 가장 빠름)</td></tr>
+    <tr><td><strong>대체 출발지</strong></td><td>여의도역 5번 출구 / 국회의사당역 6번 출구</td></tr>
+    <tr><td><strong>노면</strong></td><td>아스팔트 + 일부 보도블록 (전 구간 잘 정비됨)</td></tr>
+    <tr><td><strong>난이도</strong></td><td>하 (전 구간 평지)</td></tr>
+    <tr><td><strong>추천 페이스</strong></td><td>5:30~6:30/km (즐기는 페이스) / 4:30~5:00/km (페이스 훈련)</td></tr>
+    <tr><td><strong>예상 시간</strong></td><td>33~40분 (이지런) / 27~30분 (페이스 훈련)</td></tr>
+    <tr><td><strong>추천 시간대</strong></td><td>새벽 6AM 또는 평일 저녁 9PM 이후 (인파·자전거 적음)</td></tr>
+    <tr><td><strong>인증 도구</strong></td><td>Strava / Garmin Connect / 코로스 / 폴라 (GPS 정확도 ↑)</td></tr>
+    <tr><td><strong>핵심 인증샷 명소</strong></td><td>63빌딩 앞 (남측) · 서강대교 아래 · 원효대교 아래 · 국회의사당 (북측)</td></tr>
+  </tbody>
+</table>
+
+<h2>코스 상세 — 시계방향 한 바퀴 (권장)</h2>
+
+<p><strong>출발지</strong>: 여의나루역 1번 출구 → 한강공원 진입 (도보 3분)</p>
+
+<p>여의나루역 1번 출구에서 한강공원으로 내려가서 <strong>시계방향</strong>으로 출발하는 것이 권장됩니다. 자전거 진행 방향과 같아 안전하고, GPS 트랙도 깔끔하게 닫힙니다.</p>
+
+<h3>구간별 풍경 (시계방향 기준)</h3>
+
+<ol>
+  <li><strong>0~1.5km: 동쪽 → 북쪽 (서강대교 방향)</strong> — 출발 직후 한강 동측을 따라 북상. 마포대교·서강대교 차례로 통과. 강남 방면 한강 풍경.</li>
+  <li><strong>1.5~3km: 북쪽 → 서쪽 (국회의사당 방향)</strong> — 여의도 북측 산책로. 국회의사당 정면을 옆으로 끼고 진행. <strong>인증샷 포인트 1번</strong>: 국회의사당 + 한강 배경.</li>
+  <li><strong>3~4.5km: 서쪽 → 남쪽 (원효대교 방향)</strong> — 여의도 서측 끝 돌아서 남측 진입. 원효대교 통과. 강서·여의도 동측 빌딩 군 풍경.</li>
+  <li><strong>4.5~6km: 남쪽 → 동쪽 (63빌딩 → 출발지)</strong> — 여의도 남측 한강공원 따라 동진. <strong>인증샷 포인트 2번</strong>: 63빌딩 앞. 출발지(여의나루역)로 복귀.</li>
+</ol>
+
+<p><strong>예상 거리</strong>: GPS 측정값 기준 약 5.8~6.2km (지점에 따라 ±0.3km). 두 바퀴 돌면 약 12km로 "왕 고구마" 챌린지 가능.</p>
+
+<h2>GPS 아트 인증 방법</h2>
+
+<h3>1. 앱·기기 준비</h3>
+
+<ul>
+  <li><strong>Strava (가장 인기)</strong> — 무료. 운동 끝나면 자동으로 지도 위에 트랙 표시. 인스타 공유 기능 강력.</li>
+  <li><strong>Garmin Connect</strong> — 가민 GPS 시계 사용자. Strava 연동 가능.</li>
+  <li><strong>코로스·폴라·애플 워치</strong> — 각 앱에서 동일하게 GPS 트랙 기록.</li>
+  <li><strong>스마트폰만</strong> — Strava 모바일 앱으로도 가능 (단 GPS 정확도가 시계보다 낮음).</li>
+</ul>
+
+<h3>2. 깨끗한 GPS 트랙 만드는 팁</h3>
+
+<ul>
+  <li><strong>GPS 신호 안정화 후 출발</strong> — 시계가 위성 잡을 시간 30초~1분 주기. 출발 전 한강공원 입구에서 잠깐 대기.</li>
+  <li><strong>고가도로·다리 아래 GPS 튐 주의</strong> — 마포대교·서강대교·원효대교 통과 시 GPS가 흔들릴 수 있음. 가능한 빠르게 통과.</li>
+  <li><strong>스마트폰은 윗 주머니 또는 암밴드</strong> — 신호 가리지 않게.</li>
+  <li><strong>일정한 페이스 유지</strong> — 일관된 페이스가 깔끔한 트랙 만듦.</li>
+</ul>
+
+<h3>3. 인증샷 공유</h3>
+
+<ul>
+  <li><strong>Strava 운동 화면</strong>: 운동 종료 후 → "지도" 탭 → 캡처 → 인스타 스토리·피드</li>
+  <li><strong>해시태그</strong>: #여의도고구마런 #yeouidosweetpotato #stravaart #gpsart #한강러닝 (한국 러닝 커뮤니티 인기 태그)</li>
+  <li><strong>러닝 클럽 인증</strong>: 동호회·매장 주최 챌린지에서 인증 수단으로 활용</li>
+</ul>
+
+<h2>다른 GPS 아트 러닝 사례</h2>
+
+<h3>한국</h3>
+<ul>
+  <li><strong>잠실 종합운동장 둥근 트랙</strong> — 동그라미·반달 모양 그리기 가능. 잠실역 출발.</li>
+  <li><strong>올림픽공원 평화의 광장</strong> — 1.8km 둘레 + 외곽 결합으로 8자·꽃 모양 가능.</li>
+  <li><strong>북서울꿈의숲</strong> — 강북구 GPS 아트 명소. 약 3.5km 둘레 + 내부 산책로 결합으로 다양한 형태.</li>
+  <li><strong>월드컵공원 + 하늘공원</strong> — 평화의 광장 + 하늘공원 결합으로 큰 그림 가능.</li>
+</ul>
+
+<h3>해외 — Strava Art 글로벌</h3>
+<ul>
+  <li><strong>도쿄 + 런던</strong> — 도시 격자를 활용해 글자·동물 그리는 GPS 아트 챌린지 활발</li>
+  <li><strong>Strava 공식 챌린지</strong> — 매년 글자·심볼 그리는 전 세계 이벤트 진행</li>
+</ul>
+
+<h2>어울리는 러닝화 — 평지 6km 데일리에 맞춰</h2>
+
+<p>여의도 고구마 런은 전 구간 평지 + 잘 정비된 아스팔트라 <strong>가벼운 데일리 트레이너</strong>가 가장 잘 맞습니다.</p>
+
+<ul>
+  <li><strong>가성비 + 통기성 (여름 한강 추천)</strong>: <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a> (13~14만원 이월) · <a href="/shoes/nike-pegasus-41">페가수스 41</a> (13만원대 이월)</li>
+  <li><strong>발볼 넓은 한국 러너</strong>: <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (4E 와이드) · <a href="/shoes/saucony-ride-19">라이드 19</a> (전족부 +10mm 확장)</li>
+  <li><strong>맥스 쿠션 + 무릎 보호</strong>: <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></li>
+  <li><strong>페이스 훈련 겸용 (4:30/km 이하)</strong>: <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></li>
+</ul>
+
+<p>본인 발 특성·부상 이력 맞춤은 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 정말 고구마처럼 그려지나요?</h3>
+<p>네, 여의도 외곽선이 자연스럽게 길쭉한 타원형이라 GPS 트랙이 닫힌 고구마 형태로 그려집니다. <strong>일관된 페이스 + 깔끔한 코스 유지</strong>가 비결. 다리 아래 GPS 튐만 조심하면 깨끗한 고구마 모양 나옵니다.</p>
+
+<h3>Q. 자전거랑 부딪힐 위험은?</h3>
+<p>여의도 한강공원은 <strong>자전거도로와 산책로가 분리</strong>돼 있어 비교적 안전. 단 일부 구간 자전거가 산책로 쪽으로 침범하기도 합니다. 야간·새벽이 가장 안전.</p>
+
+<h3>Q. 두 바퀴(왕 고구마) 도전할 만한가요?</h3>
+<p>약 12km라 LSD 훈련용으로 적합. 단 <strong>같은 풍경 반복</strong>이라 정신적으로 지루할 수 있음. 첫 바퀴 시계방향 + 두 번째 바퀴 반시계방향으로 변화 주는 것도 방법. 평일 저녁 또는 주말 새벽 추천.</p>
+
+<h3>Q. 비 오는 날 가능한가요?</h3>
+<p>전 구간 평지·아스팔트라 비 직후도 큰 문제 없음. 단 <strong>잠수교 다리는 잠길 수 있으니</strong> 여의도→반포 한강공원 연결 경로는 비 직후 회피. GPS 신호는 비와 무관하게 정상 작동.</p>
+
+<h3>Q. 처음 가는데 길 잃을까 걱정돼요</h3>
+<p>여의도 한강공원 외곽 산책로는 <strong>한 방향으로 계속 진행하면 자연스럽게 출발지로 복귀</strong>합니다. 길 잃을 가능성 거의 없음. 분기점에선 항상 한강 쪽으로 진행. 첫 시도면 새벽이나 평일 저녁(밝은 시간대)이 안심.</p>
+
+<h3>Q. 인증샷 어디서 찍는 게 좋나요?</h3>
+<p>3가지 핵심 포인트: ① <strong>63빌딩 앞 (남측 구간)</strong> — 빌딩 + 한강 배경, ② <strong>국회의사당 옆 (북측)</strong> — 한국 랜드마크 인증, ③ <strong>완주 후 Strava 지도 캡처</strong> — 고구마 모양 인증샷.</p>
+
+<h2>결론 — 처음이면 한 바퀴부터, 인증샷은 필수</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">여의도 고구마 런은 "재미 + 인증 + 운동" 다 잡는 코스</p>
+    <p>처음 도전하면 <strong>새벽 6AM 또는 평일 저녁 9PM 이후 시계방향 한 바퀴</strong>(약 6km, 33~40분)부터 추천. 일관된 페이스 유지 + 다리 아래 GPS 튐만 조심하면 깔끔한 고구마 트랙 완성.</p>
+    <p>인증샷은 63빌딩·국회의사당·완주 후 Strava 지도 캡처 3종 세트. 인스타 #여의도고구마런 #stravaart 해시태그로 한국 러닝 커뮤니티에 공유하면 동기부여 ↑.</p>
+    <p>여의도 외 다른 이색 서울 코스 6개는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 가이드</a>에서 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 — 한강 외 명소 정리</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 — 데일리 가성비 비교</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 가성비 데일리</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 여의도 고구마 런 다회 실주 사용기 + 여의도 한강공원 공식 안내 + Strava·Garmin Connect GPS 트랙 분석 + 한국 러닝 커뮤니티(인스타·네이버 카페) 인기 챌린지 패턴. 거리·코스 정보는 출발 지점·GPS 정확도에 따라 ±0.3km 변동 가능. 자전거·인파 상황은 시즌·시간대에 따라 다를 수 있음.</small></p>
+`,
+  },
+  {
+    id: 'seoul-unique-running-courses-7',
+    slug: 'seoul-unique-running-courses-7',
+    title: '서울 이색 러닝 코스 7선 | 한강 말고 이런 곳도 있어요 — 남산 차 없는 길부터 응봉산 야경까지',
+    description: '한강 자전거도로 말고 서울에서 진짜 뛸 만한 이색 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 남산 북측순환로·잠수교 야간·응봉산·양재천·월드컵공원·북서울꿈의숲·올림픽공원 코스별 출발지·주의점 가이드.',
+    thumbnail: '/images/blog/seoul-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['서울 러닝 코스', '이색 러닝', '남산 러닝', '잠수교 야간 러닝', '응봉산', '서울숲', '양재천', '월드컵공원', '북서울꿈의숲', '올림픽공원'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>한강 외에도 서울에 의외의 이색 코스 많음</strong> — 차 없는 산악 둘레길(남산·응봉산), 야간 명소(잠수교), 도심 속 숲(서울숲·꿈의숲), 강 외 강변(양재천)</li>
+    <li>7개 코스 모두 <strong>대중교통 30분 이내·러닝 후 카페·편의시설 인근</strong> — 평일 퇴근 후 1시간 러닝부터 주말 LSD 20km까지 활용 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 가이드의 사용법</p>
+    <p>각 코스마다 <strong>출발지(지하철 출구) · 코스 길이 · 추천 시간대 · 노면 · 주의점</strong>을 정리했습니다. 본인 거주지에서 가까운 코스 + 본인 러닝 목적(LSD·인터벌·이지런·트레일 입문)에 맞춰 골라 활용하세요. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>남산 북측순환로</strong></td><td>약 7.5km (왕복)</td><td>중 (오르막 있음)</td><td>차 없는 길 + 서울 한복판</td><td>토요일 오전 (8AM)</td></tr>
+    <tr><td>2</td><td><strong>한강 잠수교 야간</strong></td><td>5~10km (반복)</td><td>하</td><td>반포대교 무지개 분수 야간 조명</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>3</td><td><strong>올림픽공원 평화의 광장</strong></td><td>1.8km × N바퀴</td><td>하</td><td>광활한 광장 + 5km 둘레길 결합</td><td>새벽 6AM~7AM</td></tr>
+    <tr><td>4</td><td><strong>서울숲 + 응봉산</strong></td><td>5~8km (조합)</td><td>중상 (응봉산 가파름)</td><td>도심 속 숲 + 야경 산악 결합</td><td>해질녘 (응봉산 야경)</td></tr>
+    <tr><td>5</td><td><strong>양재천 5km</strong></td><td>5~10km (왕복)</td><td>하</td><td>한강 외 강변 + 교통량 적음</td><td>퇴근 후 7~9PM</td></tr>
+    <tr><td>6</td><td><strong>월드컵공원 + 하늘공원</strong></td><td>5~7km</td><td>중 (하늘공원 언덕)</td><td>평화의 광장 + 야경 + 억새</td><td>가을 늦은 오후</td></tr>
+    <tr><td>7</td><td><strong>북서울꿈의숲</strong></td><td>약 3.5km 둘레</td><td>하~중</td><td>강북구 도심 속 숲 + 카페</td><td>평일 오전·주말 이른 아침</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 남산 북측순환로 — 차 없는 서울 한복판 트레일 입문</h2>
+
+<p><strong>출발지</strong>: 동대입구역 6번 출구 → 국립극장 정문 (도보 5분)<br>
+<strong>거리</strong>: 약 7.5km (왕복 12km)<br>
+<strong>노면</strong>: 아스팔트 (포장도로, 단 차량 통제)<br>
+<strong>추천 시간대</strong>: 토요일 오전 8AM (보광정 수육런 코스로도 사용됨)</p>
+
+<p>국립극장 해오름극장에서 출발해 남산 북측순환로를 따라 도는 코스. <strong>차량 통제 구간</strong>이라 도심에서 흔치 않게 차 신경 안 쓰고 뛸 수 있고, 약 200m의 완만한 오르막이 자연스러운 트레일 입문 효과를 줍니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 코스 곳곳 N서울타워가 보이는 뷰. 봄·가을 단풍·벚꽃 시즌엔 트레일 러너들이 몰립니다. <a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런</a>처럼 가끔 이벤트도 열림.</p>
+
+<p><strong>주의점</strong>: 휴일 차량 통제 시간(보통 토·일 오전 7~10시) 외에는 차량이 지나갈 수 있으니 미리 확인. 화장실·생수는 국립극장 정문 근처가 마지막.</p>
+
+<p><strong>어울리는 러닝화</strong>: 약간 오르막이 있어 <strong>안정성·접지력</strong>이 있는 데일리 트레이너. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-18">사우코니 라이드 18</a> 같은 표준 데일리화면 충분.</p>
+
+<h2>2. 한강 잠수교 야간 러닝 — 반포대교 무지개 분수 보면서</h2>
+
+<p><strong>출발지</strong>: 신반포역 3번 출구 → 잠수교 진입 (도보 8분)<br>
+<strong>거리</strong>: 5~10km (왕복 + 반포 한강공원 일부)<br>
+<strong>노면</strong>: 아스팔트 + 일부 보도블록<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (반포대교 무지개 분수 가동 시간)</p>
+
+<p>잠수교(반포대교 아래)는 일반 차량이 다니지만 야간엔 차량 통행이 적고, 무엇보다 <strong>반포대교 무지개 분수</strong>가 야간에 가동돼 환상적인 풍경을 만듭니다. 무지개 분수는 4~10월 평일 12시·8시·9시·10시 정각 약 20분씩.</p>
+
+<p><strong>이 코스의 매력</strong>: 한강의 야간 풍경 + 시원한 바람 + 반포 한강공원에서 휴식 가능. 인증샷 포인트 많음. 인스타 러닝 인플루언서들도 많이 가는 코스.</p>
+
+<p><strong>주의점</strong>: 잠수교는 비 오는 날 잠길 수 있으니 우천 시 회피. 야간엔 자전거 속도 빠른 곳도 있어 차선 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 위주라 가벼운 데일리화. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 모델이 여름밤 러닝에 쾌적.</p>
+
+<h2>3. 올림픽공원 평화의 광장 — 광활한 광장 + 둘레길 결합</h2>
+
+<p><strong>출발지</strong>: 올림픽공원역 3번 출구 → 평화의 광장 (도보 3분)<br>
+<strong>거리</strong>: 1.8km × N바퀴 (둘레 약 5km)<br>
+<strong>노면</strong>: 우레탄 트랙 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽 6~7AM (사람 적고 공기 좋음)</p>
+
+<p>올림픽공원은 광활한 평화의 광장(약 1.8km 둘레)을 중심으로 외곽 둘레길 약 5km까지 결합 가능. <strong>우레탄 트랙 구간</strong>이 일부 있어 인터벌 훈련에도 적합.</p>
+
+<p><strong>이 코스의 매력</strong>: 잔디·나무 많아 아스팔트 부담 ↓. 88올림픽 조각상·평화의 광장 광활함이 정서적으로 시원함. 카페·편의점 인근.</p>
+
+<p><strong>주의점</strong>: 주말 오전엔 가족 단위 방문객 많아 빠른 페이스 어려움. 새벽이나 평일 저녁 추천. 광장 외 구간은 일반 아스팔트라 신발 선택에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 우레탄 트랙 + 아스팔트 혼합이라 <strong>다목적 데일리</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 같은 슈퍼트레이너로 인터벌 훈련도 가능.</p>
+
+<h2>4. 서울숲 + 응봉산 — 도심 속 숲 + 야경 산악 결합</h2>
+
+<p><strong>출발지</strong>: 서울숲역 3번 출구 → 서울숲 (도보 5분) → 응봉산 (도보 10분)<br>
+<strong>거리</strong>: 5~8km (서울숲 둘레 + 응봉산 정상 왕복)<br>
+<strong>노면</strong>: 흙길 + 일부 계단 (응봉산)<br>
+<strong>추천 시간대</strong>: 해질녘 (응봉산 야경 + 서울숲 산책)</p>
+
+<p>서울숲(약 35만평 도심 속 숲) 둘레를 한 바퀴 돈 다음 <strong>응봉산 정상(94m)</strong>까지 올라가는 결합 코스. 응봉산은 짧지만 가파른 등산로로, 트레일 러닝 입문에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 응봉산 정상에서 <strong>한강·서울숲·강남 야경</strong>이 한눈에 들어옵니다. 서울에서 가장 가성비 좋은 야경 포인트. 봄 개나리, 여름 녹음, 가을 단풍 시즌이 특히 좋음.</p>
+
+<p><strong>주의점</strong>: 응봉산 정상부는 가파르고 계단이 많아 무릎 약한 러너는 비추 (걷기 권장). 비 온 직후엔 흙길 미끄러움 주의. 야간엔 가로등이 일부 없는 구간도 있어 헤드램프 권장.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+산악 결합이라 <strong>안정성·접지력 우수한 모델</strong>. <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 안정·맥스 쿠션이 좋음. 응봉산 흙길 때문에 카본 슈즈는 비추.</p>
+
+<h2>5. 양재천 5km — 한강 외 강변 + 교통량 적음</h2>
+
+<p><strong>출발지</strong>: 양재시민의숲역 1번 출구 → 양재천 (도보 3분)<br>
+<strong>거리</strong>: 5~10km (왕복)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 퇴근 후 7~9PM</p>
+
+<p>양재천은 한강 외 서울의 대표적 도시 강. <strong>한강 자전거도로보다 자전거·인파 적어 페이스 유지하기 좋음</strong>. 양재시민의숲에서 시작해 강남 한복판까지 이어집니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 봄 벚꽃·여름 녹음이 인상적. <strong>강 양쪽에 잘 정비된 산책로</strong>가 있어 왕복으로 페이스 조절 가능. 카페 거리·매봉터널 근처에서 휴식 가능.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가로등 어두운 곳 있음. 너무 늦은 야간은 비추. 비 오는 날 일부 저지대는 잠길 수 있음.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 가성비 데일리. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>(15만원대)·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 이월(13만원대)이 가성비 정답.</p>
+
+<h2>6. 월드컵공원 + 하늘공원 — 평화의 광장 + 야경 + 가을 억새</h2>
+
+<p><strong>출발지</strong>: 월드컵경기장역 1번 출구 → 월드컵공원 (도보 5분)<br>
+<strong>거리</strong>: 5~7km (월드컵공원 둘레 + 하늘공원 왕복)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길 (하늘공원 입구 계단 + 정상부)<br>
+<strong>추천 시간대</strong>: 가을 늦은 오후 (억새 시즌 + 노을)</p>
+
+<p>월드컵공원 평화의 광장을 한 바퀴 돈 다음 <strong>하늘공원(98m)</strong>까지 올라가는 결합 코스. 하늘공원은 쓰레기 매립지를 공원으로 만든 곳으로, <strong>광활한 억새밭</strong>이 특징.</p>
+
+<p><strong>이 코스의 매력</strong>: 가을 9~10월 <strong>억새 축제</strong> 시기엔 사진 명소. 하늘공원 정상에서 한강·여의도·강남 전경. 응봉산보다 완만한 오르막이라 산악 입문에 더 친절.</p>
+
+<p><strong>주의점</strong>: 하늘공원 입구 약 290계단은 러닝으로 오르기 어려움 (걷기 권장). 정상부는 풀숲·나무로 가로등 부족.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+오르막 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션이 계단 후 무릎 보호에 좋음.</p>
+
+<h2>7. 북서울꿈의숲 — 강북구 도심 속 숲 + 카페</h2>
+
+<p><strong>출발지</strong>: 4·19민주묘지역 1번 출구 → 북서울꿈의숲 정문 (도보 10분)<br>
+<strong>거리</strong>: 약 3.5km 둘레 + 내부 산책로 (총 5~7km 가능)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 평일 오전·주말 이른 아침</p>
+
+<p>강북구의 옛 드림랜드 부지를 공원으로 만든 곳. <strong>강북·도봉·노원 거주 러너들의 비밀 명소</strong>. 한강·올림픽공원 같은 인기 코스보다 한적해서 페이스 유지에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 속 숲인데도 잘 정비된 산책로 + 카페·전망대·창포원 등 시설 완비. 봄 벚꽃·가을 단풍이 예쁘고 사진 명소도 많음. <strong>강북 거주자라면 한강까지 안 가도 충분한 러닝 환경</strong>.</p>
+
+<p><strong>주의점</strong>: 일부 구간 좁은 산책로라 빠른 페이스는 어려움. 가족 단위 방문객 많은 주말 오후는 비추.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+산책로 위주. <a href="/shoes/saucony-ride-19">라이드 19</a>·<a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> 같은 가벼운 데일리화면 충분.</p>
+
+<h2>본인 거주지·목적별 추천 코스</h2>
+
+<table>
+  <thead>
+    <tr><th>거주지</th><th>이지런</th><th>LSD (15km+)</th><th>인터벌·페이스 훈련</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>강북·도봉·노원</td><td>북서울꿈의숲</td><td>북서울꿈의숲 + 우이천 결합</td><td>북서울꿈의숲 둘레 반복</td></tr>
+    <tr><td>중구·종로·용산</td><td>남산 북측순환로</td><td>남산 + 한강 결합</td><td>남산 오르막 반복 (힐 트레이닝)</td></tr>
+    <tr><td>마포·서대문</td><td>월드컵공원</td><td>월드컵공원 + 하늘공원 + 한강</td><td>월드컵공원 둘레 + 평화의 광장</td></tr>
+    <tr><td>강남·서초</td><td>양재천</td><td>양재천 + 한강 결합</td><td>양재시민의숲 트랙</td></tr>
+    <tr><td>송파</td><td>올림픽공원</td><td>올림픽공원 + 한강 결합</td><td>올림픽공원 평화의 광장 반복</td></tr>
+    <tr><td>성동·광진</td><td>서울숲</td><td>서울숲 + 응봉산 + 한강 결합</td><td>응봉산 오르막 반복 (힐 트레이닝)</td></tr>
+  </tbody>
+</table>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 데일리 (양재천·잠수교·꿈의숲)</strong>: 가성비 데일리화. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>오르막 + 산악 (남산·응봉산·하늘공원)</strong>: 안정성 + 접지력. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a> · <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a></li>
+  <li><strong>장거리 LSD (15km+)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>인터벌·페이스 훈련 (올림픽공원·트랙)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>보너스 — GPS 아트 러닝 (여의도 고구마 런)</h2>
+
+<div class="callout info">
+  <span class="callout-icon">🍠</span>
+  <div class="callout-body">
+    <p class="callout-title">완주하면 GPS에 고구마가 그려지는 러닝</p>
+    <p>위 7개 코스가 "어디서 뛰느냐"의 선택지라면, <strong>여의도 고구마 런</strong>은 한국 러닝 커뮤니티가 좋아하는 <strong>"뛰면 지도에 그림이 그려지는"</strong> GPS 아트 러닝의 대표 코스입니다. 여의도 한강공원 외곽선이 고구마 모양이라, Strava·Garmin Connect로 한 바퀴 돌면 정확히 고구마가 그려져요. 약 6~7km 코스 + 평지 + 인증샷까지 한 방에 가능. <strong>상세 가이드는 <a href="/blog/yeouido-sweet-potato-gps-art-run">여의도 고구마 런 완전 가이드</a></strong>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 한강 자전거도로보다 이 코스들이 정말 좋은가요?</h3>
+<p>"좋다"기보다 <strong>"다른 매력이 있다"</strong>가 맞습니다. 한강은 거리 확보·평지·인프라가 우월하지만, 위 7개 코스는 <strong>차 없는 길·숲·산악·야경·한적함</strong> 등 한강에 없는 요소를 제공합니다. 한강 위주로만 뛰던 분들에게 변화·동기부여 차원에서 추천.</p>
+
+<h3>Q. 야간 러닝 안전한가요?</h3>
+<p>잠수교·올림픽공원·꿈의숲은 비교적 안전 (가로등·CCTV·인적). <strong>응봉산·하늘공원 정상부는 야간 비추</strong> (가로등 없는 구간 있음). 야간 러닝 시 <strong>반사 조끼·헤드램프</strong> 필수, 가능하면 2인 이상 동행.</p>
+
+<h3>Q. 비 오는 날 어떤 코스가 좋나요?</h3>
+<p>잠수교는 잠길 수 있으니 회피. <strong>올림픽공원·서울숲·북서울꿈의숲</strong>은 일부 구간 비를 피할 수 있는 나무 그늘이나 처마 있음. 단 미끄러운 흙길은 비 직후 피하고, 우천용 신발 (방수 또는 빨리 마르는 메쉬) 권장.</p>
+
+<h3>Q. 가족·아이와 함께 갈 만한 코스는?</h3>
+<p>올림픽공원·북서울꿈의숲이 가장 가족 친화적 (시설·화장실·카페 풍부). 양재천도 안전한 산책 코스. 남산·응봉산·하늘공원은 오르막이 있어 아이와는 비추.</p>
+
+<h3>Q. 마라톤 훈련용으로 어떤 코스가 적합한가요?</h3>
+<p>LSD(롱런)는 한강 결합이 가장 효율적이라 양재천·서울숲·월드컵공원에서 한강으로 빠지는 게 좋음. 페이스 훈련은 올림픽공원 평화의 광장 1.8km 반복이 트랙처럼 활용 가능. 힐 트레이닝은 남산·응봉산 오르막 반복. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 →</a></p>
+
+<h2>결론 — 본인 거주지·목적에 맞춰 골라 가세요</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">한강 외에도 서울 곳곳에 좋은 코스가 있습니다</p>
+    <p>한강 자전거도로는 분명 좋지만, <strong>매번 같은 풍경은 동기부여 떨어뜨립니다</strong>. 위 7개 코스 중 본인 거주지에서 가까운 1~2개를 한강과 번갈아 가며 활용하면 러닝 루틴이 훨씬 풍성해집니다.</p>
+    <p>특히 <strong>남산 북측순환로 토요일 오전</strong>과 <strong>잠수교 여름 야간 무지개 분수</strong>는 한 번쯤 꼭 경험해보길 추천. 사진·동기부여·일상 환기 모두 좋습니다.</p>
+    <p>본인 발 특성·부상 이력에 맞춰 러닝화 후보를 받으시려면 <a href="/recommend">1분 러닝화 추천</a>을 활용하세요.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런 — 남산 북측순환로 펀런 이벤트</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 서울 7개 코스 실주 사용기 + 서울시 한강사업본부·공원녹지국 공식 자료 + 보광정 수육런 코스 안내(2026) + 인스타 러닝 커뮤니티 인기 코스 분석. 코스 정보는 시기·날씨에 따라 변동될 수 있으니 방문 전 공원 운영시간·차량 통제 시간 확인 권장.</small></p>
+`,
+  },
+  {
     id: 'saucony-ride-18-vs-19-comparison',
     slug: 'saucony-ride-18-vs-19-comparison',
     title: '사우코니 라이드 18 vs 19 비교 | 부드러워진 신상 19 살까, 통기성 5/5 가성비 18 살까',
