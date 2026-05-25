@@ -6,6 +6,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const nextConfig = {
   typedRoutes: true,
   images: {
+    // Vercel Hobby 무료 한도(Image Optimization Transformations 5K/월) 절약을 위해
+    // 사전 WebP 변환된 원본을 그대로 서빙. lazy loading·width/height 자동 처리는 유지됨.
+    unoptimized: true,
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [48, 96, 128, 256, 384],
