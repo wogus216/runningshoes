@@ -633,3 +633,91 @@
   line-height: 1.55;
   margin: 0;
 }
+
+/* Affiliate CTA — 비교 글 결론 직후 양 신발 구매 버튼 */
+[data-blog-content] .affiliate-cta {
+  margin: 1.75rem 0 1.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f0f9ff, #f8fafc);
+  border: 1px solid #e0f2fe;
+  border-radius: 14px;
+}
+[data-blog-content] .affiliate-cta-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #0369a1;
+  margin: 0 0 0.75rem 0;
+}
+[data-blog-content] .affiliate-cta-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+@media (min-width: 640px) {
+  [data-blog-content] .affiliate-cta-buttons { grid-template-columns: 1fr 1fr; }
+}
+[data-blog-content] .affiliate-btn {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.875rem 1.125rem;
+  border-radius: 10px;
+  text-decoration: none !important;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  color: #fff !important;
+  background: linear-gradient(135deg, #0ea5e9, #0284c7);
+  box-shadow: 0 1px 2px rgba(2,132,199,0.08);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, filter 0.15s ease;
+}
+[data-blog-content] .affiliate-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(2,132,199,0.22);
+  filter: brightness(1.05);
+}
+[data-blog-content] .affiliate-btn.coupang {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  box-shadow: 0 1px 2px rgba(220,38,38,0.08);
+}
+[data-blog-content] .affiliate-btn.coupang:hover { box-shadow: 0 6px 16px rgba(220,38,38,0.22); }
+[data-blog-content] .affiliate-btn.naver {
+  background: linear-gradient(135deg, #16a34a, #15803d);
+  box-shadow: 0 1px 2px rgba(21,128,61,0.08);
+}
+[data-blog-content] .affiliate-btn.naver:hover { box-shadow: 0 6px 16px rgba(21,128,61,0.22); }
+[data-blog-content] .affiliate-btn.pending {
+  background: #f1f5f9;
+  color: #475569 !important;
+  border: 1px dashed #cbd5e1;
+  box-shadow: none;
+}
+[data-blog-content] .affiliate-btn.pending:hover {
+  background: #e2e8f0;
+  box-shadow: none;
+  filter: none;
+}
+[data-blog-content] .affiliate-btn .affiliate-btn-store {
+  display: inline-block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.1875rem 0.5rem;
+  background: rgba(255,255,255,0.22);
+  border-radius: 4px;
+  letter-spacing: 0.02em;
+  flex-shrink: 0;
+}
+[data-blog-content] .affiliate-btn.pending .affiliate-btn-store {
+  background: #e2e8f0;
+  color: #64748b;
+}
+[data-blog-content] .affiliate-btn .affiliate-btn-product { flex: 1; text-align: right; }
+[data-blog-content] .affiliate-disclosure {
+  font-size: 0.6875rem;
+  color: #94a3b8;
+  text-align: right;
+  margin: 0.625rem 0 0 0;
+  line-height: 1.5;
+}

@@ -271,6 +271,21 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GnRnwT4x" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">슈퍼블라스트 2 최저가 →</span>
+    </a>
+    <a href="/shoes/asics-superblast-3" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">슈퍼블라스트 3 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
 <h2>관련 글</h2>
 
 <ul>
@@ -510,6 +525,21 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/57QzqCm0" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">엔돌핀 프로 4 최저가 →</span>
+    </a>
+    <a href="https://link.coupang.com/a/dRV51m" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">엔돌핀 프로 5 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
 <h2>관련 글</h2>
 
 <ul>
@@ -733,6 +763,21 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/5KqWcsAl" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">베이퍼플라이 4 최저가 →</span>
+    </a>
+    <a href="https://naver.me/F2ny4AOj" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">알파플라이 3 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
 <h2>관련 글</h2>
 
 <ul>
@@ -932,6 +977,21 @@ export const blogPosts: BlogPost[] = [
     <p><strong>② 발볼 표준~2E + 가성비:</strong> <a href="/shoes/new-balance-1080-v14">1080 v14</a> 이월 13~15만원 잡고 5~7만원 절약. SA 142 + HA 11.9 초소프트 쿠셔닝은 여전히 최상위. 페이스 욕심 없는 리커버리·LSD 위주라면 무게 차이 체감 적음.</p>
     <p><strong>둘 다 처음이거나 결정 못 한다면:</strong> ON YOUR MARK 경복궁점·부산점 또는 NB 직영매장에서 양쪽 동시 시착이 가장 정확. 1080 시리즈는 "신어봐야 안다"는 평이 가장 정확한 신발.</p>
   </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GPlbVErM" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">1080 v14 최저가 →</span>
+    </a>
+    <a href="https://naver.me/xAA0rggd" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">1080 v15 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>관련 글</h2>
@@ -1146,6 +1206,21 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GxLH2kjm" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">카야노 32 최저가 →</span>
+    </a>
+    <a href="/shoes/asics-gel-kayano-33" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">카야노 33 정보 (6/1 출시) →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
 <h2>다른 카테고리 세대 비교</h2>
 
 <p>카야노가 "안정화"라면, 데일리·장거리·레이스 카테고리는 다른 신발이 답입니다. 안정화 유저라도 Sub-3:30 이하 도전이나 빠른 페이스 훈련엔 카본/슈퍼트레이너 분리가 권장돼요.</p>
@@ -1350,6 +1425,21 @@ export const blogPosts: BlogPost[] = [
     <p>표준 발볼 + 5~10km 데일리 + 가성비 우선이라면 <strong><a href="/shoes/nike-pegasus-41">41 이월 13만원대</a></strong>가 거의 무조건 답. 42의 실제 개선은 풀 렝스 Air Zoom + 힐 스택 +2.4mm 정도이고, 3~4만원 추가 지출 가치는 본인 발 조건에 따라 갈림.</p>
     <p>단 <strong>발볼 4E급(와이드 필수)</strong>이거나 <strong>무릎 약한 뒤꿈치 착지 러너</strong>라면 망설이지 말고 <strong><a href="/shoes/nike-pegasus-42">42 와이드</a></strong>로 가세요. 한국 정식 SKU 안정성과 힐 부드러움이 3~4만원 가치를 만듭니다.</p>
   </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FxCvSGHY" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">페가수스 41 최저가 →</span>
+    </a>
+    <a href="/shoes/nike-pegasus-42" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">페가수스 42 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
