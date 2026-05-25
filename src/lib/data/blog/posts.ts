@@ -2,6 +2,382 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudmonster-2-vs-3-comparison',
+    slug: 'on-cloudmonster-2-vs-3-comparison',
+    title: 'On 클라우드몬스터 2 vs 3 비교 | "푹신함" vs "굴러가는 느낌" — 토박스 좁은 2 살까, 핏 넓어진 3 살까',
+    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 확장 + 힐 스택 -2.9mm 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
+    thumbnail: '/images/blog/on-cloudmonster-2-vs-3-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 10,
+    tags: ['On 클라우드몬스터', '클라우드몬스터 2', '클라우드몬스터 3', '러닝화 비교', 'On 러닝', '맥스 쿠션', '무릎 보호', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"좁은 토박스 + 푹신함"의 2</strong>에서 <strong>"넓어진 핏 + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
+    <li>3의 진짜 변화 3가지: <strong>앞발 핏 확장 (2의 약점 보강)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 스택 -2.9mm 약간 단단해진 라이드</strong></li>
+    <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 좁아서 불편했다면 3가 답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>On 한국 공식 가격(2026-05-25 기준) + 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) + Doctors of Running·Believe in the Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2 상세</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>클라우드몬스터 2</th><th>클라우드몬스터 3</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>219,000원</td><td><strong>229,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>175,000~195,000원</strong></td><td>215,000~225,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>292g</td><td>295g</td><td>+3g (거의 동일)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37.9mm</td><td>35mm</td><td>-2.9mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>31.3mm</td><td>29mm</td><td>-2.3mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>6.6mm</td><td>6mm</td><td>-0.6mm</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>Helion HF + CloudTec 더블 레이어</td><td>Helion HF + CloudTec</td><td>포뮬레이션 미세 조정</td></tr>
+    <tr><td><strong>록커</strong></td><td>보통</td><td><strong>강한 록커</strong></td><td>굴러가는 느낌 ↑</td></tr>
+    <tr><td><strong>앞발 핏</strong></td><td>표준 (좁다는 평 많음)</td><td><strong>넓어진 핏</strong></td><td>전작 약점 보강</td></tr>
+    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>137 (RunRepeat)</td><td>비슷 (Lab 미공개)</td><td>맥스 쿠션 영역 유지</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>56.5%</td><td>약간 감소 추정</td><td>반발보다 안정 지향</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
+    <tr><td><strong>내구성</strong></td><td>500km</td><td>500km</td><td>동일</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩438</td><td>약 ₩458</td><td>+₩20 살짝 악화</td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>5:00~6:30/km</td><td>5:10~6:30/km</td><td>동일 (느린 조깅)</td></tr>
+  </tbody>
+</table>
+
+<h2>3의 진짜 변화 3가지</h2>
+
+<h3>1. 앞발 핏 확장 — 2의 가장 큰 약점 보강</h3>
+
+<p>클라우드몬스터 2의 사용자 후기에서 가장 많이 나오는 불만이 "<strong>토박스가 좁다</strong>"였습니다. 한국 발볼 표준 사이즈(D)인데도 발가락 압박을 느낀다는 평이 흔했고, 와이드 옵션도 없어 발볼 4E급은 선택 자체가 어려웠습니다.</p>
+
+<p>3는 <strong>앞발 공간을 의도적으로 넓혔습니다</strong>. On이 공식적으로 "easier-fitting toe box" 표현을 사용했고, 실제 착화 후기들도 앞발 압박 감소를 확인합니다. 다만 <strong>와이드 옵션은 여전히 없음</strong> — 발볼 4E급은 메가 와이드 필요라면 여전히 부적합.</p>
+
+<h3>2. 강한 록커 — "푹신함"에서 "굴러가는 느낌"으로</h3>
+
+<p>2의 더블 레이어 CloudTec은 Cloud pod가 개별 압축되면서 만들어내는 <strong>"푹신한 착지감"</strong>이 핵심 정체성이었습니다. 호불호 갈리지만 무릎 약한 러너에게는 큰 매력.</p>
+
+<p>3는 <strong>록커 지오메트리를 강화</strong>해 착지 후 자연스럽게 앞으로 밀어주는 라이드를 만들었습니다. 5~7분/km 조깅에서 발이 자동으로 굴러가는 느낌. 호카 클리프턴·본디 같은 강한 록커 신발의 사상에 더 가까워진 셈입니다.</p>
+
+<p><strong>체감 차이</strong>: 2는 무릎 보호 + 푹신함이 결정적, 3는 자연스러운 페이스 유지가 강점.</p>
+
+<h3>3. 힐 스택 -2.9mm — 약간 단단해진 라이드</h3>
+
+<p>37.9mm → 35mm로 힐 스택이 줄었습니다. 절대 수치로는 여전히 맥스 쿠션 영역(33mm 이상이 일반적 max cushion 기준)이지만, 2의 압도적 푹신함은 약간 누그러진 셈입니다.</p>
+
+<p>대신 록커 강화와 결합돼 <strong>"부드럽지만 흐물거리지 않는"</strong> 라이드를 만듭니다. 빠른 페이스(5분/km 안팎)에서는 3가 약간 더 자연스럽고, 매우 느린 LSD 회복 페이스에서는 2의 푹신함이 그리울 수 있습니다.</p>
+
+<h2>가격 시나리오 — 2 이월 vs 3 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 클라우드몬스터 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 2 18~20만원 (이월 풀림) / 3 22만원 정가 → 가성비는 2 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 2 17~18만원 / 3 21~22만원 일부 할인 시작 → 2 가성비 정점, 인기 사이즈 빠짐 시작</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 2 18만원 (재고 빠르게 감소) / 3 22만원 안정 → 2 사이즈 빠짐 주의</li>
+      <li><strong>블랙프라이데이 (11월):</strong> 2 14~17만원 (특가) / 3 18~20만원 → 양쪽 매력적</li>
+      <li><strong>12월~2027년 1월:</strong> 2 사실상 단종 임박 / 3 18~20만원 안정 → 3 위주로 흐름 전환</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 약함 + 푹신한 쿠션 우선</td><td><strong>2 이월 18~20만원</strong></td><td>137 SA 충격흡수 + 더블 CloudTec 푹신함</td></tr>
+    <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 정가 22만원</strong></td><td>앞발 핏 확장이 결정적</td></tr>
+    <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>37.9mm 스택의 푹신함이 후반부 결정적</td></tr>
+    <tr><td>데일리 easy run (5~10km)</td><td>3</td><td>강한 록커가 자연스러운 페이스 유지</td></tr>
+    <tr><td>발볼 표준 + 가성비</td><td>2 블프 14~17만원</td><td>km당 ₩438 최저 가격대 진입</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td></tr>
+    <tr><td>여름 한강·서울숲 러닝</td><td>둘 다 주의</td><td>통기성 약점 (2/5). <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 쿠션화 고려</td></tr>
+    <tr><td>심한 과내전·평발</td><td>둘 다 비추</td><td>중립화. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a> 같은 안정화 권장</td></tr>
+  </tbody>
+</table>
+
+<h2>다른 맥스 쿠션 옵션과 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (227g, 219,000원)</strong> — 인피니온 폼 + 4E 와이드 옵션. 발볼 넓은 한국 러너 최우선 대안. 무게도 -68g 가벼움</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 230,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터와 비슷</li>
+  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
+  <li><strong><a href="/shoes/on-cloudmonster-hyper">On 클라우드몬스터 하이퍼</a> (258g, 259,000원)</strong> — 같은 라인업 Pebax 폼 + Speedboard. 템포런 겸용 슈퍼트레이너 사상. 4만원 추가 비용으로 페이스 욕심 가능</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
+<p>2가 500km 안 신었다면 그냥 2 굴리세요. 2의 푹신함에 만족했다면 3는 미묘하게 단단해진 라이드라 만족도가 약간 떨어질 수 있습니다. 반대로 <strong>"2 토박스가 좁아서 발가락 압박 있었다"</strong>면 3가 답. <strong>"좀 더 굴러가는 느낌이 필요하다"</strong> 싶어도 3.</p>
+
+<h3>Q. On 클라우드몬스터가 처음인데 2와 3 중 뭐가 좋나요?</h3>
+<p>발볼 표준이면 <strong>2 이월 18~20만원</strong>이 가성비 최강. 137 SA 충격흡수와 푹신한 CloudTec 착지감은 On의 본질을 잘 보여주고, 4만원 절약. 발볼이 표준보다 약간 넓다면 <strong>3 정가</strong>. 매장 착화로 양쪽 비교가 가장 정확합니다.</p>
+
+<h3>Q. 풀코스 가능한가요?</h3>
+<p>2는 무겁지만 137 SA 충격흡수가 풀코스 30~35km 이후 무릎 보호에 유리. 다만 <strong>292~295g 무게</strong>로 빠른 페이스(Sub-3:30 이하)는 부담. Sub-4 ~ Sub-5 완주 목표 + 무릎 안전 우선이라면 두 모델 모두 OK. 페이스 욕심 있다면 <a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a> 또는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 분리.</p>
+
+<h3>Q. 한여름 한강 러닝에 적합한가요?</h3>
+<p><strong>둘 다 비추</strong>. RunRepeat 통기성 2/5로 7~8월 한강 러닝에는 발이 답답할 수 있습니다. 여름 전용으론 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이나 <a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 모델 추천. 봄·가을·겨울이 클라우드몬스터 시즌입니다.</p>
+
+<h3>Q. 발볼 넓은데 클라우드몬스터 살 수 있나요?</h3>
+<p>3가 2보다 핏이 넓어졌지만 <strong>와이드 옵션은 양쪽 모두 없음</strong>. 발볼 standard~약간 넓음까지는 3로 커버 가능, 4E급이면 비추. 4E라면 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v15(4E 옵션)</a>가 사실상 유일한 맥스 쿠션 대안. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드 →</a></p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">푹신함·가성비 vs 록커·넓은 핏 — 본인 우선순위로 명확히 갈리는 선택</p>
+    <p><strong>무릎 약함 + 푹신한 쿠션 + 가성비 우선</strong>이라면 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a> 이월 18~20만원. 137 SA 충격흡수와 더블 CloudTec 푹신함은 On 맥스 쿠션의 본질이고, 3보다 4만원 절약. 블프(11월)에 14~17만원까지 갈 가능성 있지만 인기 사이즈 빠짐 주의.</p>
+    <p><strong>토박스 넓은 핏 + 굴러가는 페이스 유지</strong>가 우선이면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정가 22만원. 앞발 공간이 명확히 넓어졌고 강한 록커가 자연스러운 페이스 유지를 도와줍니다. 데일리 easy run에 가장 자연스러운 라이드.</p>
+    <p><strong>발볼 4E급 또는 여름 전용 한국 러너</strong>는 둘 다 부적합. 4E는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션), 여름은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 더 적합한 선택입니다.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FgTYWGaO" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">클라우드몬스터 2 최저가 →</span>
+    </a>
+    <a href="/shoes/on-cloudmonster-3" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">클라우드몬스터 3 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>클라우드몬스터가 "맥스 쿠션 데일리"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
+
+<ul>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (4E 와이드 옵션 + 인피니온 폼)</li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (가벼운 데일리 옵션)</li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 + 무릎 보호)</li>
+  <li><a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 — 가성비 카본 레이서</a> (페이스 훈련 분리용)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련용)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
+</ul>
+
+<p><small>출처: On 한국 공식 가격(2026-05-25 기준) / 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) / Doctors of Running·Believe in the Run 리뷰 / 산초 에디터 easy run·LSD 비교 사용기. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'asics-magic-speed-4-vs-5-comparison',
+    slug: 'asics-magic-speed-4-vs-5-comparison',
+    title: '아식스 매직스피드 4 vs 5 비교 | 50g 차이의 의미 — 풀렝스 카본 4 살까, 193g 신상 5 살까',
+    description: '매직스피드 4(237g/199,000원)와 5(193g/229,000원)을 풀데이터로 직접 비교. 50g 경량화 + 풀렝스 → 포크형 카본 전환 + FF Leap 듀얼 폼 + km당 비용 ₩628→₩573 개선. 가성비 카본 입문에 4와 5 중 누가 답인지 상황별 매트릭스로 정리.',
+    thumbnail: '/images/blog/asics-magic-speed-4-vs-5-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 10,
+    tags: ['아식스 매직스피드', '매직스피드 4', '매직스피드 5', '러닝화 비교', '아식스', '가성비 카본', '카본 입문', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>50g 차이의 무게</strong> (4 237g / 5 193g) — 한국 가성비 카본 시장에서 <strong>"풀렝스 카본의 4" vs "초경량 포크형 5"</strong>로 명확히 갈림</li>
+    <li>5의 진짜 변화 3가지: <strong>포크형 카본 → 힐스트라이커도 자연스러운 전환</strong> + <strong>FF Leap + FF Blast+ 듀얼 폼 (에너지 리턴 64.6%)</strong> + <strong>400km 내구성으로 km당 ₩573</strong></li>
+    <li>대신 5는 힐 스택 -6mm (43 → 37mm) — 풀코스 후반 쿠션 욕심나면 4 이월 가격 더 매력적. 22만원대 카본 입문에서 둘 다 합리적</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>아식스 한국 공식몰 가격(2026-05-25 기준) + 산초 에디터 매직스피드 4·5 비교 사용기 + Believe in the Run·Road Trail Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/asics-magic-speed-4">매직스피드 4 상세</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>매직스피드 4</th><th>매직스피드 5</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>199,000원</td><td><strong>229,000원</strong></td><td>+30,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>165,000~185,000원</strong></td><td>210,000~220,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>237g</td><td><strong>193g</strong></td><td><strong>-44g (-19%)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>43mm</td><td>37mm</td><td>-6mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>35mm</td><td>30mm</td><td>-5mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td>7mm</td><td>-1mm</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF Blast+ + FF Turbo</td><td><strong>FF Leap + FF Blast+</strong></td><td>신소재 듀얼</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td><strong>풀렝스</strong></td><td><strong>포크형 (3/4)</strong></td><td>유연성 ↑, 입문 친절</td></tr>
+    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>약 60% (참고치)</td><td>64.6% / 62.6%</td><td>+4~5%p</td></tr>
+    <tr><td><strong>토박스</strong></td><td>표준</td><td>표준</td><td>동일</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
+    <tr><td><strong>내구성</strong></td><td>350km</td><td>400km</td><td>+50km</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩628</td><td><strong>약 ₩573</strong></td><td><strong>-₩55 개선</strong></td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>3:30~5:00/km</td><td>3:30~5:00/km</td><td>동일</td></tr>
+  </tbody>
+</table>
+
+<h2>5의 진짜 변화 3가지</h2>
+
+<h3>1. 무게 -44g — 같은 라인업 중에서 가장 큰 폭의 경량화</h3>
+
+<p>237g → 193g, <strong>-19% 경량화</strong>는 비교 시리즈에서 본 변화 중 압도적으로 큰 폭입니다. 페가수스 41 → 42가 +5g(쿠션 강화 트레이드오프), NB 1080 v14 → v15가 -69g 정도였는데 매직스피드는 카본 레이서치고는 큰 폭의 다이어트입니다.</p>
+
+<p><strong>체감 차이</strong>: 인터벌 1km 반복주에서 8~10세트 진행했을 때 매직스피드 4는 마지막 2세트에서 발이 무거워지는 느낌이 있지만, 5는 끝까지 가볍게 굴러갑니다. 하프 레이스 끝까지 갈 때도 다리 피로도가 명확히 차이 납니다.</p>
+
+<h3>2. 포크형 카본 — 풀렝스 대비 자연스러운 전환</h3>
+
+<p>매직스피드 4의 풀렝스 카본은 강한 추진력을 주지만 <strong>전족부 착지가 안 되면 카본 효과가 반감</strong>되는 단점이 있었습니다. 힐스트라이커는 어색하게 강제 전환되는 느낌.</p>
+
+<p>5는 카본을 <strong>3/4 포크형으로 바꿔서 전족부에만 위치</strong>합니다. 메타스피드 레이의 3/4 카본과 같은 사상으로, 힐스트라이커가 자연스럽게 미드풋·포어풋 전환할 수 있도록 도와줍니다. <strong>카본 입문자에게 결정적 친절함</strong>입니다.</p>
+
+<h3>3. FF Leap + FF Blast+ 듀얼 폼 — 에너지 리턴 64.6%</h3>
+
+<p>전작의 FF Blast+ + FF Turbo 조합이 FF Leap(상층) + FF Blast+(하층) <strong>듀얼 구조</strong>로 바뀌었습니다. FF Leap는 메타스피드 레이에 들어간 ATPU 폼 — 가볍고 탄성이 높은 신소재입니다.</p>
+
+<p>그 결과 <strong>에너지 리턴 64.6%(힐) / 62.6%(전족부)</strong>의 명확한 수치 개선. 매직스피드 4 시절엔 정확한 에너지 리턴 수치 공개가 없었지만 5는 RunRepeat 실측 + 공식 데이터 모두 공개됐습니다.</p>
+
+<h2>가격 시나리오 — v4 이월 vs v5 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 매직스피드 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 4 17~19만원 (이월 풀림) / 5 22만원 정가 → 가성비는 4 압승, 신상은 5</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 4 16~17만원 / 5 21~22만원 일부 할인 시작 → 4 가성비 정점</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 4 17~18만원 (재고 빠지기 시작) / 5 22만원 안정 → 4 사이즈 빠짐 주의</li>
+      <li><strong>블랙프라이데이 (11월):</strong> 4 13~15만원 (특가) / 5 18~20만원 → 양쪽 모두 매력적</li>
+      <li><strong>12월~2027년 1월:</strong> 4 사실상 단종 임박 / 5 18~20만원 안정 → 5 위주로 흐름 전환</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>첫 카본 슈즈 + 힐스트라이커</td><td><strong>5 (정가 또는 세일)</strong></td><td>포크형 카본이 자연스러운 전환 도와줌</td></tr>
+    <tr><td>가성비 우선 + 풀렝스 카본 선호</td><td><strong>4 이월 17~19만원</strong></td><td>3~4만원 절약 + 풀렝스 추진력</td></tr>
+    <tr><td>인터벌·하프 PB 도전</td><td>5</td><td>-44g 경량이 후반부 결정적</td></tr>
+    <tr><td>풀코스 30~35km까지 카본 사용</td><td>4</td><td>43mm 힐 스택이 후반 쿠션 우위</td></tr>
+    <tr><td>대회 + 템포 훈련 병용</td><td>5</td><td>400km 내구성 + km당 ₩573 가성비</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a> 또는 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td></tr>
+    <tr><td>예산 18만원 이하</td><td>4 블프 세일</td><td>13~15만원대 진입 가능, 카본 입문 끝장 가성비</td></tr>
+  </tbody>
+</table>
+
+<h2>다른 카본 레이서와 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> (218g, 23만원)</strong> — 5와 비슷한 무게대. 카본이 아닌 나일론 플레이트라 부담 적음. 카본 vs 나일론 차이가 결정 포인트</li>
+  <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (250g, 21만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
+  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 33만원)</strong> — 진짜 엘리트 카본. 가격 +10만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (227g, 29만원)</strong> — 풀카본 + PWRTRAC. 평발·standard 발볼 친절. 매직스피드보다 무게 ↑ 가격 ↑</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 첫 카본화로 4와 5 중에 뭐가 좋나요?</h3>
+<p><strong>힐스트라이커라면 5</strong> 권장. 포크형 카본이 강제 전족부 착지 부담 없이 자연스러운 전환을 만들어줍니다. <strong>이미 포어풋·미드풋 착지에 익숙</strong>하다면 4 이월이 가성비. 풀렝스 카본의 강한 추진력을 즐길 수 있습니다.</p>
+
+<h3>Q. 풀코스 카본화로 적합한가요?</h3>
+<p>둘 다 <strong>풀코스 권장은 아닙니다</strong>. 매직스피드는 본질적으로 "가성비 카본 입문 + 인터벌·하프 레이서"입니다. Sub-3:15 이하 풀코스 도전이면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>나 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 권장. Sub-3:30~Sub-4 풀코스 + 가성비 우선이면 4의 43mm 스택이 약간 유리하지만 30km 이후 쿠션이 빠지는 느낌이 있습니다.</p>
+
+<h3>Q. 발볼 넓은데 매직스피드 살 수 있나요?</h3>
+<p><strong>4·5 모두 와이드 옵션 없음</strong>. 토박스는 표준이라 발볼 standard~약간 좁음 러너에게 맞습니다. 발볼 2E 이상이면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>(아식스에서 유일하게 와이드 있는 카본) 또는 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(토박스 약간 넉넉) 권장. 또는 매장 착화로 확인하세요.</p>
+
+<h3>Q. 5가 6mm 힐 스택이 줄었는데 무릎 부담은?</h3>
+<p>37mm도 여전히 데일리 트레이너 수준 쿠션입니다 (페가수스 42가 36mm). 다만 <strong>5는 인터벌·하프 페이스 전용</strong>이라 무릎 약한 러너가 풀코스에 쓰면 후반부 부담 가능. 무릎 이력 있다면 데일리는 페가수스 42·1080 v15 같은 데일리 트레이너로 분리하고, 매직스피드는 페이스 훈련 + 레이스 전용으로만 운용하세요. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 가이드 →</a></p>
+
+<h3>Q. 4 이월이 매력적인데 사이즈 빨리 빠지나요?</h3>
+<p>네, <strong>5월 말부터 가을까지 인기 사이즈(260~275mm) 빠르게 빠집니다</strong>. 본인 사이즈가 표준 영역이면 7~8월 시즌오프 16~17만원 시점에서 잡는 게 안전. 블프(11월) 13~15만원까지 기다리면 사이즈 못 잡을 위험.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">무게·전환 부드러움 vs 풀렝스 추진력·가성비로 명확히 갈리는 선택</p>
+    <p><strong>첫 카본 슈즈 + 힐스트라이커</strong>라면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 정가 22만원 또는 7~8월 21만원대 진입 시. 포크형 카본 + 193g 경량 + FF Leap 듀얼 폼은 카본 입문에 가장 친절한 조합입니다.</p>
+    <p><strong>풀렝스 카본 추진력 + 가성비 우선</strong>이라면 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 이월 17~19만원. 5보다 3~4만원 절약 + 43mm 힐 스택의 풀코스 후반 쿠션 + 풀렝스 카본의 직진성. 블프 13~15만원까지 갈 가능성 있지만 사이즈 빠짐 주의.</p>
+    <p><strong>발볼 4E급 한국 러너</strong>는 둘 다 적합하지 않습니다. 와이드 옵션이 양쪽 모두 없어 토박스 압박 가능. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>가 아식스 카본 중 유일한 와이드 선택지입니다.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FYqW0XcA" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">매직스피드 4 최저가 →</span>
+    </a>
+    <a href="https://naver.me/FNtPEotN" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">매직스피드 5 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>매직스피드가 "가성비 카본 레이서"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
+
+<ul>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 풀카본 가성비 비교</a> (Sub-3:30 ~ Sub-4 풀코스 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·엘리트 레이스)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련 분리용)</li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (매직스피드와 데일리 분리할 때)</li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 카본 부담될 때 데일리)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+</ul>
+
+<p><small>출처: 아식스 한국 공식몰 가격(2026-05-25 기준) / 매직스피드 4·5 신발 DB 풀데이터 / Believe in the Run·Road Trail Run 리뷰 / 산초 에디터 인터벌·하프 레이스 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
     id: 'asics-superblast-2-vs-3-comparison',
     slug: 'asics-superblast-2-vs-3-comparison',
     title: '아식스 슈퍼블라스트 2 vs 3 비교 | FF Turbo+ "템포 무기" vs FF LEAP "롱런 부드러움" — 와이드 옵션 v2 vs 스택 +3.5mm v3, 카본 없는 슈퍼슈즈 가성비',
