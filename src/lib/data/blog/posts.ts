@@ -1146,6 +1146,18 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>카야노가 "안정화"라면, 데일리·장거리·레이스 카테고리는 다른 신발이 답입니다. 안정화 유저라도 Sub-3:30 이하 도전이나 빠른 페이스 훈련엔 카본/슈퍼트레이너 분리가 권장돼요.</p>
+
+<ul>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a> (5~10km 데일리 훈련용)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 + 부드러움 우선 중립화)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km+ 페이스 훈련 분리용)</li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
+</ul>
+
 <h2>관련 글</h2>
 
 <ul>
@@ -1153,7 +1165,7 @@ export const blogPosts: BlogPost[] = [
   <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
   <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
   <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
 </ul>
 
 <p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33은 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 본 글의 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입, FLUIDSUPPORT) 기반 추정. 33 실측 데이터 게시 시 본 글 업데이트 예정.</small></p>
@@ -1341,6 +1353,18 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>페가수스가 "데일리 트레이너"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 RunRepeat 실측 + BITR + 한국 가격 + 와이드 SKU 동일 포맷.</p>
+
+<ul>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a> (평발·과내전 + 무릎 보호 우선)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 데일리 + 부드러움 우선)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km 이상 + 페이스 훈련 분리용)</li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
+</ul>
 
 <h2>관련 글</h2>
 
