@@ -2,6 +2,141 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-breathing-guide-korea',
+    slug: 'running-breathing-guide-korea',
+    title: '러닝 호흡법 완벽 가이드 | "조금만 뛰어도 숨차다"면 호흡부터 — 코호흡 vs 입호흡, 2:2 리듬, 옆구리 결림 방지',
+    description: '달리기가 금방 숨차는 이유는 대부분 페이스가 아니라 호흡에 있습니다. 코호흡 vs 입호흡 진실, 발걸음에 맞춘 2:2·3:3 호흡 리듬, 복식호흡, 옆구리 결림(side stitch) 방지, 강도별 호흡까지 — 초보 러너를 위한 호흡법 실전 가이드.',
+    thumbnail: '/images/blog/running-breathing-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'tips' as const,
+    readingTime: 9,
+    tags: ['러닝 호흡법', '달리기 호흡', '코호흡', '입호흡', '호흡 리듬', '복식호흡', '옆구리 결림', '러닝 초보', '숨차다'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>코로만 쉬어야 한다는 건 오해</strong> — 저강도에선 코호흡이 좋지만, 페이스가 올라가면 산소 요구량이 커져 <strong>입과 코를 함께 쓰는 게 정상</strong>입니다</li>
+    <li>발걸음에 호흡을 맞추세요 — 편한 페이스는 <strong>2:2(2보 들숨·2보 날숨)</strong>, 힘들면 2:1, 아주 느린 회복런은 3:3. 가슴이 아니라 <strong>배(횡격막)로 깊게</strong></li>
+    <li>옆구리 결림(side stitch)은 대부분 <strong>얕은 호흡 + 식후 러닝</strong>이 원인 — 복식호흡과 식사 타이밍으로 막을 수 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌬️</span>
+  <div class="callout-body">
+    <p class="callout-title">"조금만 뛰어도 숨이 차요"</p>
+    <p>러닝 입문자가 가장 많이 호소하는 문제입니다. 원인은 대개 체력이 아니라 <strong>(1) 페이스가 너무 빠르거나, (2) 호흡이 얕고 불규칙</strong>한 데 있습니다. 페이스 문제는 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>에서 다뤘으니, 이 글은 "호흡" 자체를 파고듭니다. 호흡만 고쳐도 같은 페이스가 훨씬 편해집니다.</p>
+  </div>
+</div>
+
+<h2>1. 코호흡 vs 입호흡 — 무엇이 맞나?</h2>
+
+<p>"러닝은 코로만 쉬어야 한다"는 말을 들어보셨을 겁니다. 반은 맞고 반은 틀립니다.</p>
+
+<p><strong>코호흡의 장점</strong>: 코로 들이쉬면 공기가 데워지고 습해지며 먼지가 걸러집니다. 또 호흡이 자연히 느려져 <strong>저강도 러닝에서 안정적</strong>입니다. 코호흡이 편하게 유지되는 페이스가 곧 "유산소 베이스" 구간이라, 일부러 코호흡으로 페이스를 통제하는 훈련법도 있습니다.</p>
+
+<p><strong>현실</strong>: 페이스가 올라가면 몸의 산소 요구량이 급증합니다. 이때 코만으로는 충분한 공기를 들이쉴 수 없어 <strong>입을 함께 쓰는 게 정상이자 효율적</strong>입니다. 무리하게 코호흡만 고집하면 오히려 산소 부족으로 더 힘들어집니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">정답: 강도에 따라 유연하게</p>
+    <p>가볍게 뛰는 회복런·워밍업은 <strong>코호흡</strong>으로 페이스를 통제하고, 본 러닝·빠른 페이스에서는 <strong>입과 코를 함께</strong> 쓰세요. "코로만 vs 입으로만"의 이분법이 아니라, <strong>강도에 맞춰 바꾸는 것</strong>이 핵심입니다.</p>
+  </div>
+</div>
+
+<h2>2. 발걸음에 맞추는 호흡 리듬 — 2:2가 기본</h2>
+
+<p>호흡이 불규칙하면 금방 지칩니다. 발걸음 수에 호흡을 맞추면 리듬이 안정됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>리듬</th><th>패턴</th><th>적합한 강도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>3:3</strong></td><td>3보 들숨 · 3보 날숨</td><td>아주 느린 회복런·워밍업</td></tr>
+    <tr><td><strong>2:2</strong> (기본)</td><td>2보 들숨 · 2보 날숨</td><td>편안한 일반 러닝·LSD</td></tr>
+    <tr><td><strong>2:1</strong></td><td>2보 들숨 · 1보 날숨</td><td>템포·빠른 페이스</td></tr>
+    <tr><td><strong>1:1</strong></td><td>1보 들숨 · 1보 날숨</td><td>인터벌·전력 구간(짧게)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>대부분의 러너에게 2:2가 출발점</strong>입니다. 강도가 올라갈수록 날숨 보폭을 줄여(2:1) 더 자주 내뱉으면 됩니다. 처음엔 의식적으로 세다가, 익숙해지면 몸이 알아서 리듬을 잡습니다.</p>
+
+<p><strong>한 가지 팁</strong>: 날숨을 들숨보다 신경 쓰세요. 폐에 묵은 공기를 충분히 비워야 다음 들숨에 신선한 공기가 더 들어옵니다. "잘 내쉬면 들숨은 알아서 된다"고 생각하면 편합니다.</p>
+
+<h2>3. 가슴이 아니라 배로 — 복식호흡(횡격막 호흡)</h2>
+
+<p>긴장하거나 숨이 차면 어깨와 가슴이 들썩이는 <strong>얕은 흉식호흡</strong>이 되기 쉽습니다. 이러면 공기가 폐 위쪽만 채워 비효율적이고 더 빨리 지칩니다.</p>
+
+<p><strong>복식호흡(횡격막 호흡)</strong>은 배를 부풀리며 횡격막을 아래로 내려 폐 아래쪽까지 공기를 채웁니다. 한 번에 더 많은 산소를 들이쉴 수 있어 효율적입니다.</p>
+
+<ul>
+  <li><strong>연습법</strong>: 누워서 배에 손을 얹고, 숨을 들이쉴 때 <strong>배가 부풀어 오르는지</strong> 확인하세요. 가슴이 아니라 배가 움직여야 합니다.</li>
+  <li>익숙해지면 서서, 그다음 걷거나 천천히 뛰면서 연습합니다.</li>
+  <li>러닝 중에는 자세도 중요합니다 — 상체를 너무 숙이면 횡격막이 눌려 호흡이 얕아집니다. <strong>상체를 곧게</strong> 펴세요.</li>
+</ul>
+
+<h2>4. 옆구리 결림(Side Stitch) — 원인과 방지법</h2>
+
+<p>뛰다 보면 옆구리(주로 오른쪽 갈비뼈 아래)가 결리는 경험, 흔하죠. 정확한 기전은 아직 논쟁적이지만 <strong>횡격막 부담·얕은 호흡·식후 러닝</strong>이 주요 유발 요인으로 꼽힙니다.</p>
+
+<p><strong>방지법</strong>:</p>
+<ul>
+  <li><strong>식사 후 1.5~2시간 이상</strong> 지나고 뛰기 — 위가 차 있으면 횡격막을 눌러 결림이 잘 생깁니다.</li>
+  <li><strong>복식호흡으로 깊고 규칙적으로</strong> — 얕고 빠른 호흡이 횡격막을 긴장시킵니다.</li>
+  <li>워밍업으로 천천히 시작 — 갑자기 빠르게 뛰면 횡격막이 적응할 시간이 없습니다.</li>
+</ul>
+
+<p><strong>이미 결렸다면</strong>: 페이스를 늦추고, 결린 쪽 반대 발이 땅에 닿을 때 길게 내쉬어 보세요. 손으로 해당 부위를 가볍게 누르며 상체를 살짝 비트는 것도 도움이 됩니다.</p>
+
+<h2>5. 강도별 호흡 — 내 페이스가 맞는지 확인하는 법</h2>
+
+<p>호흡 상태는 <strong>운동 강도를 가늠하는 가장 쉬운 지표</strong>입니다.</p>
+
+<ul>
+  <li><strong>대화가 문장으로 가능</strong> = 저강도(Zone 2)·LSD 구간. 코호흡이 편하게 유지됩니다 → <a href="/blog/running-fat-loss-zone2-guide">지방 태우는 Zone 2 러닝</a></li>
+  <li><strong>짧은 문장만 끊어서 가능</strong> = 중강도. 입·코 병행, 2:2~2:1.</li>
+  <li><strong>단어만 겨우</strong> = 고강도(템포·인터벌). 호흡이 가빠집니다 → <a href="/blog/tempo-run-training-guide-korea">템포런 가이드</a></li>
+</ul>
+
+<p>입문자가 "숨차다"고 느낀다면 십중팔구 <strong>중강도 이상으로 뛰고 있는 것</strong>입니다. 대화가 가능한 페이스로 늦추면 호흡이 안정되고 더 오래 달릴 수 있습니다.</p>
+
+<h2>6. 초보가 흔히 하는 호흡 실수</h2>
+
+<ul>
+  <li><strong>숨 참기</strong>: 힘든 구간에서 무의식적으로 숨을 참습니다. 산소가 끊겨 더 빨리 지칩니다. 의식적으로 계속 내쉬세요.</li>
+  <li><strong>얕고 빠른 호흡</strong>: 헐떡이면 폐 위쪽만 씁니다. 느리고 깊게가 핵심.</li>
+  <li><strong>호흡에만 집중하다 페이스 무시</strong>: 호흡이 계속 가쁘면 호흡 기술 문제가 아니라 <strong>페이스가 빠른 것</strong>입니다. 먼저 속도를 늦추세요.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">호흡이 편해지려면 페이스부터</p>
+    <p>호흡법은 도구일 뿐, 근본은 <strong>본인 체력에 맞는 페이스</strong>입니다. 편안한 데일리화로 천천히 거리를 쌓는 게 먼저예요. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 쿠션 좋은 입문 데일리화면 충분합니다. 본인 발에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 러닝할 때 코로만 숨 쉬는 게 정말 좋나요?</h3>
+<p>저강도에서는 코호흡이 공기를 데우고 거르며 호흡을 안정시켜 좋습니다. 하지만 페이스가 올라가면 산소가 더 필요해 <strong>입을 함께 쓰는 게 정상이자 효율적</strong>입니다. 강도에 따라 유연하게 바꾸세요. 코호흡만 고집하다 산소 부족으로 더 힘들어지는 경우가 많습니다.</p>
+
+<h3>Q. 호흡 리듬은 꼭 2:2로 맞춰야 하나요?</h3>
+<p>2:2(2보 들숨·2보 날숨)는 편안한 페이스의 출발점일 뿐 규칙은 아닙니다. 힘들면 2:1로 더 자주 내쉬고, 아주 느린 회복런은 3:3도 좋습니다. 익숙해지면 몸이 알아서 리듬을 잡으니 처음에만 의식적으로 세어보세요.</p>
+
+<h3>Q. 뛰면 옆구리가 결리는데 왜 그런가요?</h3>
+<p>얕고 빠른 호흡으로 횡격막이 부담을 받거나, 식후 너무 빨리 뛰면 잘 생깁니다. <strong>식사 후 1.5~2시간 이상</strong> 지나 뛰고, 복식호흡으로 깊고 규칙적으로 쉬며, 워밍업으로 천천히 시작하면 예방됩니다. 결렸을 땐 페이스를 늦추고 길게 내쉬세요.</p>
+
+<h3>Q. 호흡법을 익혀도 계속 숨이 차요.</h3>
+<p>그렇다면 호흡 기술이 아니라 <strong>페이스가 본인 체력보다 빠른 것</strong>입니다. "옆 사람과 문장으로 대화 가능한" 속도로 늦춰보세요. 그래도 힘들면 걷기·달리기를 반복하며 유산소 베이스를 쌓는 게 먼저입니다 → <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a></p>
+
+<p><small>출처: 굿러너컴퍼니(@goodrunner_co) 코호흡·맨발 러닝 워크샵(2026-05) 착안 + 운동생리학 일반 원리(호흡 리듬·횡격막 호흡·side stitch). 개인차가 있으며 호흡곤란·흉통이 지속되면 전문가와 상담하세요.</small></p>
+`,
+  },
+  {
     id: 'running-fat-loss-zone2-guide',
     slug: 'running-fat-loss-zone2-guide',
     title: '러닝 다이어트 완벽 가이드 | 지방을 가장 많이 태우는 Zone 2 — "빠르게 뛸수록 안 빠진다"는 진실·공복런·근손실 방지',
