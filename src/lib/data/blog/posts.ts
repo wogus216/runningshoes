@@ -2,6 +2,145 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-fat-loss-zone2-guide',
+    slug: 'running-fat-loss-zone2-guide',
+    title: '러닝 다이어트 완벽 가이드 | 지방을 가장 많이 태우는 Zone 2 — "빠르게 뛸수록 안 빠진다"는 진실·공복런·근손실 방지',
+    description: '살 빼려고 달리는데 왜 안 빠질까? 지방을 가장 많이 태우는 Zone 2(저강도) 러닝의 원리, 빠르게 뛸수록 오히려 지방 비율이 줄어드는 이유, 공복런의 효과와 함정, 근손실 방지, 체중이 안 줄 때 식단 점검까지 — 다이어트 목적 러너를 위한 실전 가이드.',
+    thumbnail: '/images/blog/running-fat-loss-zone2-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'tips' as const,
+    readingTime: 10,
+    tags: ['러닝 다이어트', 'Zone 2 러닝', '지방 연소', '체중 감량', '공복런', '저강도 유산소', '러닝 살빼기', '근손실 방지', '심박존'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>지방을 가장 높은 "비율"로 태우는 구간은 Zone 2(최대심박 60~70%, 옆 사람과 대화 가능한 저강도)</strong> — 빠르게 뛸수록 탄수화물 의존이 커져 지방 비율은 오히려 떨어집니다</li>
+    <li>단 <strong>"지방 비율"과 "총 체지방 감소"는 다릅니다</strong> — 어떤 강도든 살은 결국 <strong>칼로리 적자</strong>로 빠집니다. Zone 2의 진짜 강점은 부상 없이 오래·자주 지속할 수 있다는 점</li>
+    <li>유산소만 하면 근육도 함께 빠집니다 — <strong>근력 운동 + 단백질 + 식단 관리</strong>를 반드시 병행하세요. 심박존 계산·페이스 세팅은 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>에 자세히 정리돼 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">"달리는데 왜 살이 안 빠지죠?"</p>
+    <p>다이어트로 러닝을 시작한 분들이 가장 많이 하는 질문입니다. 답은 대부분 <strong>(1) 너무 빨리 뛰어서 오래 못 하거나, (2) 운동 후 보상 식사로 칼로리 적자가 안 만들어지거나, (3) 체중계 숫자만 보고 체성분 변화를 놓치는</strong> 세 가지에 있습니다. 이 글은 "지방을 효율적으로 태우는 강도"인 Zone 2를 중심으로, 다이어트 러너가 흔히 빠지는 함정을 하나씩 짚습니다. 본인 체중·무릎 상태에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>에서 후보를 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>1. 왜 Zone 2가 지방을 가장 많이 태우나 — Fatmax 구간</h2>
+
+<p>우리 몸은 운동 강도에 따라 <strong>지방과 탄수화물(글리코겐)을 섞어</strong> 연료로 씁니다. 강도가 낮을수록 지방 비중이 높고, 강도가 올라갈수록 빠르게 에너지를 내기 위해 탄수화물 의존이 커집니다.</p>
+
+<p><strong>지방 산화가 최대가 되는 강도</strong>를 운동생리학에서 "Fatmax"라고 부르며, 대체로 <strong>최대심박의 60~70%, 즉 Zone 2 구간</strong>에 위치합니다. 이 구간은 "옆 사람과 문장을 끊기지 않고 말할 수 있는" 편안한 페이스입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>강도</th><th>심박(HRmax)</th><th>주 연료</th><th>다이어트 관점</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>걷기·아주 가벼움</td><td>~60%</td><td>지방 위주</td><td>지방 비율 높지만 총 소모 적음</td></tr>
+    <tr><td><strong>Zone 2 (대화 가능)</strong></td><td><strong>60~70%</strong></td><td><strong>지방 비율 최대</strong></td><td><strong>오래 지속 가능 → 다이어트 핵심</strong></td></tr>
+    <tr><td>Zone 3 (약간 힘듦)</td><td>70~80%</td><td>지방+탄수 혼합</td><td>지방 "비율" 감소 시작</td></tr>
+    <tr><td>Zone 4~5 (헐떡임)</td><td>80%+</td><td>탄수 위주</td><td>총 칼로리 큼·지방비율 낮음·오래 못함</td></tr>
+  </tbody>
+</table>
+
+<h2>2. "빠르게 뛸수록 살 빠진다"의 함정</h2>
+
+<p>많은 다이어터가 "이왕 뛰는 거 힘들게 뛰어야 살이 빠진다"고 생각합니다. 반은 맞고 반은 틀립니다.</p>
+
+<p><strong>맞는 부분</strong>: 고강도(Zone 4~5)는 <strong>같은 시간당 총 칼로리 소모가 큽니다</strong>. 운동 후 추가 소모(EPOC, 애프터번)도 약간 있습니다.</p>
+
+<p><strong>틀린 부분</strong>: 고강도는 ① <strong>지방 "비율"이 오히려 낮고</strong>(탄수 위주), ② <strong>20~30분 이상 지속하기 어렵고</strong>, ③ 초보·과체중 러너에겐 <strong>무릎·발목 부상 위험</strong>이 큽니다. EPOC도 흔히 과대평가돼 있어, 체지방 감량의 결정 변수는 결국 <strong>총 에너지 적자</strong>입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">다이어트 러너에게 Zone 2가 현실적인 이유</p>
+    <p>고강도 30분으로 헐떡이다 3일 쉬는 것보다, <strong>Zone 2로 50분을 주 4~5회 꾸준히</strong> 하는 쪽이 한 주 총 소모량과 지속성에서 앞섭니다. "한 번에 많이"가 아니라 <strong>"부상 없이 오래·자주"</strong>가 체지방 감량의 핵심입니다. 더 빠른 강도 훈련(템포·인터벌)은 체력이 붙은 뒤 섞으면 됩니다 → <a href="/blog/tempo-run-training-guide-korea">템포런 가이드</a></p>
+  </div>
+</div>
+
+<h2>3. 내 Zone 2 심박, 어떻게 구하나</h2>
+
+<p>간단 공식은 <strong>(220 − 나이) × 0.6~0.7</strong>입니다. 예를 들어 35세라면 최대심박 추정 185 × 0.6~0.7 = <strong>약 111~130bpm</strong>이 Zone 2.</p>
+
+<p>다만 "220 − 나이"는 오차가 ±10~15bpm로 커서, 심박계(가민·애플워치 등)로 실측한 최대심박을 쓰는 게 정확합니다. 심박계가 없다면 <strong>"대화 테스트"</strong>가 가장 쉬운 대용입니다 — 문장을 끊김 없이 말할 수 있으면 Zone 2, 단어만 겨우 내뱉으면 너무 빠른 겁니다.</p>
+
+<p>심박존 계산·페이스 세팅·주간 루틴의 디테일은 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a>에 표와 함께 정리해뒀으니 함께 보세요. (LSD = 기록 향상용 베이스 훈련, 이 글 = 체중 감량 목적 — 강도 구간은 같지만 목적·실전이 다릅니다.)</p>
+
+<h2>4. 공복런 — 효과와 함정</h2>
+
+<p>아침 <strong>공복 상태의 저강도 유산소</strong>는 간 글리코겐이 낮아 지방 동원 비율이 더 올라갈 수 있어 다이어트 러너에게 인기입니다. 단, 주의가 필요합니다.</p>
+
+<ul>
+  <li><strong>효과</strong>: 같은 Zone 2라도 공복이면 지방 산화 비율이 약간 더 높아질 수 있음. 아침 루틴화가 쉬움.</li>
+  <li><strong>함정 1 (강도)</strong>: 공복에서 무리하면 저혈당·어지럼·근손실 위험. 반드시 <strong>저강도(Zone 2) + 60분 이내</strong>로.</li>
+  <li><strong>함정 2 (총량)</strong>: 공복런이 "마법"은 아닙니다. 하루 전체 칼로리 적자가 없으면 체지방은 안 빠집니다.</li>
+</ul>
+
+<p>속이 약하거나 저혈당 경험이 있다면 바나나 반 개·물 정도는 먹고 뛰는 게 안전합니다.</p>
+
+<h2>5. 근손실 방지 — 유산소만 하면 근육도 빠진다</h2>
+
+<p>다이어트 중 유산소만 과하게 하면 <strong>체지방과 함께 근육도 빠져</strong> 기초대사량이 낮아지고, 결국 "더 안 빠지는 몸"이 됩니다. 이를 막으려면:</p>
+
+<ul>
+  <li><strong>근력 운동 병행</strong>: 주 2~3회 스쿼트·런지·코어 등. 러닝 부상 예방에도 도움.</li>
+  <li><strong>단백질 충분히</strong>: 체중 1kg당 1.2~1.6g 목표. 근육 유지의 핵심.</li>
+  <li><strong>과한 칼로리 적자 금지</strong>: 급격한 굶기는 근손실을 가속합니다. 완만한 적자(하루 300~500kcal)가 지속 가능.</li>
+</ul>
+
+<h2>6. 체중이 안 줄 때 — 식단과 체성분 점검</h2>
+
+<p>"열심히 뛰는데 체중계가 안 움직인다"면 대개 다음 중 하나입니다.</p>
+
+<ul>
+  <li><strong>보상 식사</strong>: 30분 러닝으로 태우는 건 보통 250~350kcal. 운동 후 "고생했으니까" 먹는 음료·간식이 이를 쉽게 상쇄합니다. <strong>러닝은 식단을 못 이깁니다.</strong></li>
+  <li><strong>체성분 변화</strong>: 운동 초기엔 근육이 늘고 지방이 줄어 <strong>체중은 그대로여도 몸은 달라집니다</strong>. 체중계 숫자보다 <strong>체지방률·허리둘레·옷 핏</strong>을 보세요.</li>
+  <li><strong>수분·글리코겐</strong>: 초기 체중 변화는 수분·글리코겐이라 들쭉날쭉합니다. <strong>2~4주 추세</strong>로 판단하세요.</li>
+</ul>
+
+<h2>7. 다이어트 러너 실전 루틴</h2>
+
+<p><strong>입문(1~4주)</strong>: Zone 2 또는 걷기·달리기 반복, 20~30분, 주 3~4회. 무리한 페이스·매일 달리기 금지.<br>
+<strong>적응(5~8주)</strong>: Zone 2 40~50분, 주 4~5회 + 근력 주 2회.<br>
+<strong>발전(9주~)</strong>: Zone 2 베이스 유지 + 주 1회 템포·인터벌로 대사·체력 자극.</p>
+
+<p>핵심은 <strong>점진적 증가</strong>입니다. 주간 거리·시간을 한 번에 10% 이상 늘리지 마세요. 과체중 상태에서 갑자기 거리를 늘리면 무릎·정강이 부상으로 오히려 운동을 못 하게 됩니다.</p>
+
+<h2>8. 다이어트 러너의 러닝화 — 무릎 보호가 1순위</h2>
+
+<p>체중이 있는 상태로 달리면 무릎·발목에 가해지는 충격이 큽니다. 다이어트 입문 러너에게는 <strong>속도보다 쿠션·안정성</strong>이 우선입니다.</p>
+
+<ul>
+  <li><strong>맥스 쿠션 데일리화</strong>: <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> — 두툼한 쿠션으로 충격을 흡수해 무릎 부담을 줄입니다.</li>
+  <li><strong>가성비 데일리화</strong>: <a href="/shoes/nike-pegasus-41">페가수스 41</a> — 무난한 쿠션 + 통기성으로 입문 Zone 2에 적합.</li>
+</ul>
+
+<p>발볼이 넓거나 평발이라면 안정성·와이드 옵션도 함께 고려하세요. 본인 발 특성·무릎 이력에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 매일 뛰어야 살이 더 빠지나요?</h3>
+<p>아닙니다. 특히 입문·과체중 상태에서 매일 달리면 회복이 안 돼 부상으로 이어지기 쉽습니다. <strong>주 4~5회 Zone 2 + 휴식·근력</strong> 조합이 부상 없이 오래 지속돼 결과적으로 더 많이 빠집니다.</p>
+
+<h3>Q. 공복에 뛰는 게 정말 더 효과적인가요?</h3>
+<p>공복 저강도 유산소는 지방 산화 비율을 약간 높일 수 있지만, <strong>체지방 감량을 결정하는 건 하루 전체 칼로리 적자</strong>입니다. 공복런은 선택이지 필수가 아니며, 저혈당·근손실 위험이 있으니 저강도·60분 이내로 제한하세요.</p>
+
+<h3>Q. 빠르게 뛰는 인터벌이 살 빼는 데 더 좋지 않나요?</h3>
+<p>고강도는 시간당 칼로리 소모가 크지만 지방 "비율"은 낮고, 오래 못 하며 초보에겐 부상 위험이 큽니다. <strong>먼저 Zone 2로 유산소 베이스와 체력을 만든 뒤</strong> 인터벌·<a href="/blog/tempo-run-training-guide-korea">템포런</a>을 주 1회 섞는 순서를 권합니다.</p>
+
+<h3>Q. 체중이 안 줄어요. 뭐가 문제일까요?</h3>
+<p>대개 <strong>운동 후 보상 식사</strong>로 칼로리 적자가 안 만들어졌거나, 근육이 늘어 <strong>체중은 그대로지만 체지방은 줄고 있는</strong> 경우입니다. 체중계 숫자보다 체지방률·허리둘레·옷 핏을 2~4주 추세로 보고, 식단(특히 음료·간식)을 함께 점검하세요. 러닝만으로 식단을 이기긴 어렵습니다.</p>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-23 게시물 "Zone 2 러닝" 착안 + 운동생리학 일반 원리(지방 산화·Fatmax·EPOC). 개인차가 크며 의학적 조언이 아닙니다. 기저질환·관절 이력이 있으면 전문가와 상담하세요.</small></p>
+`,
+  },
+  {
     id: 'rainy-season-running-guide-korea',
     slug: 'rainy-season-running-guide-korea',
     title: '장마철 러닝 완전 가이드 | 우중런 준비물부터 비 맞은 러닝화 관리까지 — 방수 vs 배수, 물집·미끄럼 대비',
@@ -6331,11 +6470,12 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-seoul-race',
     slug: '2026-seoul-race',
-    title: '2026 서울레이스 D-18 | 5/27 접수, 청계광장 출발 도심 하프·10K — 5분 컷 마감 주의',
-    description: '2026 서울레이스(SEOUL RACE) 본접수가 5월 27일(수) 하프 19시·10K 21시에 시작됩니다. 청계광장 출발, 종로·숭례문·시청·청계천·DDP 통과 도심 평지 코스. 동마 시리즈 유일 가을 도심 하프 전용 — 작년 하프 9,100명 역대 최다, 오픈 5분 내 마감 빈번. 풀코스 없는 도심 페스티벌형 마라톤.',
+    title: '2026 서울레이스 접수 시작 | 10/11 청계광장 도심 하프·10K — 본접수 5/27 오픈, 선착순 마감 임박',
+    description: '2026 서울레이스(SEOUL RACE) 본접수가 5월 27일(수) 시작됐습니다(하프 19시·10K 21시 dongma.club). 10월 11일 청계광장 출발, 종로·숭례문·시청·청계천·DDP 통과 도심 평지 하프·10K. 작년 하프 5분 내 마감 — 이미 마감됐을 수 있으니 dongma.club에서 잔여·취소표 확인. 풀코스 없는 도심 페스티벌형 마라톤.',
     thumbnail: '/images/blog/2026-seoul-race.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-09',
+    updatedAt: '2026-05-28',
     category: 'news' as const,
     readingTime: 7,
     tags: ['서울레이스', 'Seoul Race', '서울 마라톤', '도심 마라톤', '동마클럽', '하프마라톤', '청계광장', '대회 일정'],
@@ -6380,7 +6520,7 @@ export const blogPosts: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>2026 서울레이스 — 2026년 10월 11일(일) 청계광장 출발 → 종로·숭례문·시청·청계천·DDP 통과 → 무교로 골인 도심 평지 코스</li>
-    <li>본접수 <strong>5월 27일(수) 하프 19시 / 10K 21시</strong> dongma.club — 작년 하프 5분 내 마감, PC 셋업 + 시계 동기화 필수</li>
+    <li>본접수 <strong>5월 27일(수) 시작됨</strong> (하프 19시·10K 21시 dongma.club) — 하프는 작년 5분 내 마감, <strong>이미 마감됐을 수 있어 잔여·취소표 확인 필수</strong></li>
     <li>풀코스 없는 도심 하프·10K 전용 — <strong>동마 시리즈 유일 가을 도심 페스티벌형</strong>, 작년 12,800명 역대 최다</li>
   </ul>
 </div>
@@ -6388,8 +6528,8 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">🔥</span>
   <div class="callout-body">
-    <p class="callout-title">5월 27일 D-18 — 시간 분리 오픈, 두 번 PC 앞에 앉아야</p>
-    <p>하프(8,500명)는 5/27 19시, 10K(4,000명)는 21시로 <strong>같은 날 다른 시각</strong>에 오픈됩니다. 작년 하프는 오픈 5분 내 마감됐으니 한 종목만 노린다고 안심하면 안 됩니다. PC 셋업·결제 수단 등록·시계 동기화는 19시·21시 두 차례 모두 적용. 동마클럽 회원가입과 로그인은 지금 미리 해두세요.</p>
+    <p class="callout-title">본접수 시작됨 (5/27 오픈) — 선착순 마감 임박, 잔여부터 확인</p>
+    <p>하프(8,500명)는 5/27 19시, 10K(4,000명)는 21시에 오픈됐습니다. 작년 하프가 오픈 5분 내 마감됐던 만큼 <strong>이미 마감됐을 가능성이 높습니다</strong>. 참가를 원한다면 dongma.club에서 <strong>잔여 슬롯·취소표 여부</strong>를 먼저 확인하세요. 취소표는 대회 전까지 간헐적으로 풀리니 알림을 켜두는 것도 방법입니다. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
   </div>
 </div>
 
@@ -6422,9 +6562,9 @@ export const blogPosts: BlogPost[] = [
 
 <div class="timeline">
   <div class="timeline-item active">
-    <span class="timeline-date">2026.05.27 (수) 19시 — D-18</span>
+    <span class="timeline-date">2026.05.27 (수) 19시 — 접수 시작됨</span>
     <span class="timeline-title">하프마라톤 본접수 시작</span>
-    <p class="timeline-desc">정원 8,500명 선착순 — 작년 5분 내 마감, dongma.club</p>
+    <p class="timeline-desc">정원 8,500명 선착순 — 작년 5분 내 마감, 현재 잔여·취소표 확인 (dongma.club)</p>
   </div>
   <div class="timeline-item">
     <span class="timeline-date">2026.05.27 (수) 21시</span>
@@ -6602,15 +6742,15 @@ export const blogPosts: BlogPost[] = [
 <div class="callout tip">
   <span class="callout-icon">⚡</span>
   <div class="callout-body">
-    <p class="callout-title">5월 27일 D-Day 직전 체크리스트</p>
+    <p class="callout-title">마감됐다면 — 취소표 노리기 체크리스트 (취소표도 선착순)</p>
     <ol style="margin-top:8px;">
-      <li><strong>동마클럽 사전 회원가입·로그인</strong> — 5/27 18:30까지 완료</li>
+      <li><strong>동마클럽 회원가입·로그인</strong> — 마이페이지 진입 가능 상태로 유지</li>
       <li><strong>유선랜 PC + 모바일 동시 접속</strong> — 트래픽 폭주 대비 백업</li>
       <li><strong>결제 수단 2가지 등록</strong> — 카드 + 카카오/네이버페이</li>
       <li><strong>브라우저 자동입력</strong> — 이름·생년월일·연락처·주소 모두 저장</li>
-      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code>으로 1초 단위 (휴대폰 기본 시계 1-2초 오차 흔함)</li>
-      <li><strong>19시·21시 두 차례 알람</strong> — 하프·10K 모두 노린다면 두 시각 모두</li>
-      <li><strong>접속 페이지 사전 로딩</strong> — 정시 직전 dongma.club 접수 페이지 → F5 대기</li>
+      <li><strong>취소표 알림 설정</strong> — 마감 후 풀리는 잔여를 놓치지 않도록</li>
+      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code> (취소표가 정시에 풀릴 때 1초 차이가 갈림)</li>
+      <li><strong>접속 페이지 사전 로딩</strong> — dongma.club 접수 페이지 → 새로고침 대기</li>
     </ol>
   </div>
 </div>
@@ -6651,31 +6791,32 @@ export const blogPosts: BlogPost[] = [
 <h2>접수 체크리스트</h2>
 
 <div class="cta-box">
-  <h3>5월 27일(수) 19시·21시 — 지금 해야 할 것</h3>
+  <h3>신청·취소표 대비 체크리스트</h3>
   <ul>
+    <li>✅ <strong>잔여·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
     <li>✅ <strong>동마클럽 회원가입</strong> — dongma.club, 마이페이지 진입 가능 확인</li>
     <li>✅ <strong>참가 종목 결정</strong> — 하프(70K) / 10K(60K) / 둘 다</li>
     <li>✅ <strong>결제 수단 등록</strong> — 카드 + 간편결제</li>
-    <li>✅ <strong>5/27 18:55, 20:55 알람</strong> — 하프·10K 두 시각 5분 전</li>
+    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 모니터링</li>
     <li>✅ <strong>러닝화 결정</strong> — 도심 평지 + PB 도전이라면 카본, 안전 완주는 슈퍼 트레이너. <a href="/recommend">맞춤 추천</a></li>
-    <li>✅ <strong>시계 동기화 도구 북마크</strong> — time.navyism.com</li>
     <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">seoul-race.co.kr</a></li>
   </ul>
 </div>
 
 <p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">서울레이스 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 코스·참가비), sports.news.nate.com(2025년 12,800명 보도). 2026년 정확한 참가비·정원·집결 시간은 5월 27일 본접수 오픈 시 dongma.club·seoul-race.co.kr에 게시됩니다.
+※ 데이터 출처: <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">서울레이스 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 코스·참가비), sports.news.nate.com(2025년 12,800명 보도). 2026년 참가비·정원·집결 시간은 5월 27일 본접수와 함께 dongma.club·seoul-race.co.kr에 게시됐습니다. 잔여·취소표 여부는 dongma.club에서 실시간 확인하세요.
 </p>
 `,
   },
   {
     id: '2026-gyeongju-international-marathon',
     slug: '2026-gyeongju-international-marathon',
-    title: '2026 경주국제마라톤 D-17 | 5/26 접수, World Athletics 엘리트 라벨 + 유네스코 신라 유적 코스',
-    description: '동아일보 2026 경주국제마라톤(10/17 토) 동마클럽 멤버십 우선접수가 5월 26일(화) 19시 시작됩니다. 첨성대·대릉원·동궁과월지 통과, 총 획득고도 146m 완만 코스, 23.5~33km 내리막 기록 단축 구간. 2025년 World Athletics 엘리트 라벨 승격(국내 유일) + 역대 최대 15,000명 — 동마 3대장 가을 시즌 완결편.',
+    title: '2026 경주국제마라톤 접수 진행 중 | 10/17 신라 유적 코스 + World Athletics 엘리트 라벨 — 본접수 5/26 오픈',
+    description: '동아일보 2026 경주국제마라톤(10/17 토) 본접수가 5월 26일(화) 19시 시작됐습니다(dongma.club). 첨성대·대릉원·동궁과월지 통과, 총 획득고도 146m 완만 코스, 23.5~33km 내리막 기록 단축 구간. 2025년 World Athletics 엘리트 라벨 승격(국내 유일) + 정원 약 1.6만명 — 동마 3대장 가을 시즌 완결편. 선착순이라 잔여 여부 확인 권장.',
     thumbnail: '/images/blog/2026-gyeongju-international-marathon.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-09',
+    updatedAt: '2026-05-28',
     category: 'news' as const,
     readingTime: 8,
     tags: ['경주국제마라톤', '경주 마라톤', '경상북도 마라톤', '동마클럽', '신라 마라톤', '유네스코 마라톤', 'World Athletics 엘리트 라벨', '대회 일정'],
@@ -6697,7 +6838,7 @@ export const blogPosts: BlogPost[] = [
     faqs: [
       {
         question: '5월 26일 19시가 멤버십 우선접수인가요, 본접수인가요?',
-        answer: '동마클럽 5월 캘린더 기준 5월 26일(화) 19시는 우선접수 또는 본접수 시작 일자로 안내됐으나 정확한 구분은 5월 중 동마클럽 공지로 확정됩니다. 2025년 패턴(우선 5/26~30 → 본 6/3 19시)을 따른다면 5/26은 멤버십 우선접수 가능성이 큽니다. 동마 멤버십 가입자는 5/26 19시 정각에 dongma.club 접속, 일반 러너는 별도 공지된 본접수일을 대비하세요.',
+        answer: '2026년은 5월 26일(화) 19시가 dongma.club 본접수 시작으로 공식 공지됐습니다(선착순). 동마 멤버십 우선접수가 그 이전에 별도로 진행됐을 수 있으나, 일반 러너 기준 핵심 일정은 5/26 본접수입니다. 현재는 접수가 시작된 상태이므로, 신청을 원한다면 dongma.club에서 종목별 잔여·취소표 여부를 먼저 확인하세요.',
       },
       {
         question: '경주국제마라톤이 World Athletics 엘리트 라벨이라는 게 무슨 의미인가요?',
@@ -6721,7 +6862,7 @@ export const blogPosts: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>동아일보 2026 경주국제마라톤 — 2026년 10월 17일(토) 경주시민운동장 출발, 풀·하프·10K 3종목, 정원 약 15,000명 (2025년 역대 최대)</li>
-    <li><strong>5월 26일(화) 19시 dongma.club 접수 시작</strong> — 2025년 패턴 기준 동마 멤버십 우선접수, 일반 본접수는 6월 초 별도 공지</li>
+    <li><strong>본접수 5월 26일(화) 19시 dongma.club에서 시작됨</strong> — 선착순 진행 중, 정원 빠르게 차므로 잔여·취소표 확인 권장</li>
     <li><strong>World Athletics 엘리트 라벨</strong>(2025 승격, 국내 유일 지방 대회) + 첨성대·대릉원·동궁과월지 코스 통과 — 동마 3대장 가을 완결편</li>
   </ul>
 </div>
@@ -6729,8 +6870,8 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">🔥</span>
   <div class="callout-body">
-    <p class="callout-title">5월 26일(화) 19시 D-17 — 동마클럽 로그인 사전 점검</p>
-    <p>경주국제마라톤은 2025년 15,000명 정원이 빠르게 채워졌습니다. 5월 26일 19시 정각에 dongma.club 접속해 멤버십 또는 본접수 진입을 시도하려면 사전에 회원가입·로그인·결제 수단 등록·시계 동기화까지 마쳐두는 게 안전합니다. 정확한 우선/본접수 구분은 5월 중 동마클럽 공식 공지로 확정됩니다.</p>
+    <p class="callout-title">본접수 시작됨 (5/26 19시 오픈) — 선착순, 잔여부터 확인</p>
+    <p>경주국제마라톤은 2025년 정원이 빠르게 채워졌고, 2026 본접수는 5월 26일(화) 19시 dongma.club에서 시작됐습니다. 풀·하프·10K 합산 정원이 크지만 인기 종목은 조기 마감될 수 있으니, 참가를 원한다면 <strong>dongma.club에서 잔여 슬롯·취소표 여부를 먼저 확인</strong>하세요. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
   </div>
 </div>
 
@@ -6763,14 +6904,14 @@ export const blogPosts: BlogPost[] = [
 
 <div class="timeline">
   <div class="timeline-item active">
-    <span class="timeline-date">2026.05.26 (화) 19시 — D-17</span>
-    <span class="timeline-title">접수 오픈 (멤버십 우선 또는 일반 본접수)</span>
-    <p class="timeline-desc">동마클럽 5월 캘린더에 명시된 일정. 우선/본접수 구분은 5월 중 공식 공지</p>
+    <span class="timeline-date">2026.05.26 (화) 19시 — 접수 시작됨</span>
+    <span class="timeline-title">본접수 시작 (dongma.club)</span>
+    <p class="timeline-desc">선착순 진행 중 — 현재 잔여·취소표 여부 확인</p>
   </div>
   <div class="timeline-item">
-    <span class="timeline-date">2026.06 초 (예상)</span>
-    <span class="timeline-title">일반 본접수 (2025년 6/3 패턴 시)</span>
-    <p class="timeline-desc">멤버십 우선접수 후 잔여석 일반 선착순. 정확 일정은 동마클럽 공지로 확정</p>
+    <span class="timeline-date">2026.06 ~ 09 (대회 전까지)</span>
+    <span class="timeline-title">취소표·잔여 슬롯 간헐 오픈</span>
+    <p class="timeline-desc">본접수 마감 후에도 취소표가 간헐적으로 풀립니다 — dongma.club 알림을 켜고 모니터링</p>
   </div>
   <div class="timeline-item">
     <span class="timeline-date">2026.09 중후반</span>
@@ -6801,7 +6942,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">ℹ️</span>
   <div class="callout-body">
     <p class="callout-title">2026 공식 참가비는 5/26 접수 오픈 시 확정</p>
-    <p>위 금액은 2025년 기준이며, 2026년 정식 공지는 5월 26일 접수 오픈 시점 dongma.club·gyeongjumarathon.com에 게시됩니다. 동마 시리즈 전체로 보면 2025년 대비 변동 없거나 5,000원 이내 인상이 일반적입니다.</p>
+    <p>위 금액은 2025년 기준입니다. 2026년 본접수가 5월 26일 시작되며 정식 참가비·정원이 dongma.club·gyeongjumarathon.com에 게시됐으니, 신청 전 공식 페이지에서 최신 금액을 확인하세요. (2026년은 종목별로 1만원 안팎 인상된 것으로 보도됩니다.)</p>
   </div>
 </div>
 
@@ -7052,12 +7193,12 @@ export const blogPosts: BlogPost[] = [
 <h2>접수 체크리스트</h2>
 
 <div class="cta-box">
-  <h3>5월 26일(화) 19시 D-Day 준비</h3>
+  <h3>접수 진행 중 — 신청·잔여 확인 체크리스트</h3>
   <ul>
-    <li>✅ <strong>동마클럽 회원가입·로그인 사전 확인</strong> — dongma.club 마이페이지 접속 가능 상태</li>
-    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 카카오/네이버페이 둘 다 사전 등록</li>
-    <li>✅ <strong>시계 동기화</strong> — time.navyism.com (1초 단위)</li>
-    <li>✅ <strong>5/26 18:55 알람 설정</strong> — 5분 전 PC 셋업</li>
+    <li>✅ <strong>잔여 슬롯·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
+    <li>✅ <strong>동마클럽 회원가입·로그인</strong> — dongma.club 마이페이지 접속 가능 상태</li>
+    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 카카오/네이버페이</li>
+    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 풀리는 취소표 모니터링</li>
     <li>✅ <strong>전날 경주 숙박 예약</strong> — 가을 단풍 + APEC 후 관광 붐, 빠른 마감</li>
     <li>✅ <strong>러닝화 결정</strong> — PB 도전이라면 카본 레이싱화 6-8주 전 길들이기, <a href="/recommend">맞춤 추천</a> 활용</li>
     <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">gyeongjumarathon.com</a></li>
@@ -7065,7 +7206,7 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">경주국제마라톤 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 참가비·코스), 한국육상연맹·sports.news.nate.com(2025 대회 보도). 우선/본접수 정확 구분과 2026년 참가비는 5월 중 동마클럽 공식 공지로 확정됩니다.
+※ 데이터 출처: <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">경주국제마라톤 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 참가비·코스), 한국육상연맹·sports.news.nate.com(2025 대회 보도). 2026년 본접수(5/26 시작)·참가비·정원은 dongma.club·gyeongjumarathon.com 공식 공지로 확정됐으니, 신청 전 최신 정보를 확인하세요.
 </p>
 `,
   },
