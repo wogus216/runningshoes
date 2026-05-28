@@ -105,14 +105,6 @@ const websiteJsonLd = {
   url: SITE_URL,
   description: SITE_DESCRIPTION_WITH_COUNT,
   inLanguage: "ko-KR",
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${SITE_URL}/?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
   publisher: { "@id": `${SITE_URL}/#organization` },
 };
 
