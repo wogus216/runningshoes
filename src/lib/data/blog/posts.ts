@@ -7785,27 +7785,27 @@ export const blogPosts: BlogPost[] = [
 
 <h2>2026 카테고리별 베스트 7</h2>
 
-<h3>🏆 1. 종합 베스트 — Adidas Terrex Agravic 4</h3>
+<h3>🏆 1. 종합 베스트 — <a href="/shoes/adidas-terrex-agravic-4">Adidas Terrex Agravic 4</a></h3>
 
 <table>
   <thead>
     <tr><th colspan="2">스펙 요약</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 가격</td><td>한국 공식가 미확인 (SS26 출시, 미국 $140 기준 약 19~22만원 예상)</td></tr>
-    <tr><td>무게 / 드롭</td><td>260g / 8mm</td></tr>
-    <tr><td>스택 (힐/포어풋)</td><td>36mm / 28mm</td></tr>
+    <tr><td>한국 가격</td><td>약 209,000원 (추정, 한국 정가 미확정 · 미국 $145)</td></tr>
+    <tr><td>무게 / 드롭</td><td>283g / 9mm (RunRepeat 실측)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>33mm / 24mm</td></tr>
     <tr><td>아웃솔</td><td>Continental Rubber (러그 4-5mm)</td></tr>
     <tr><td>미드솔</td><td>Lightstrike 3 (단일 밀도, 소프트 튜닝)</td></tr>
     <tr><td>RunRepeat 점수</td><td>81/100</td></tr>
   </tbody>
 </table>
 
-<p><strong>강점</strong>: Continental 아웃솔이 젖은 노면 그립에서 신뢰성 높음. 260g 경량 + 36mm 힐 스택의 가성비 조합으로 데일리 산악 트레이닝에 무난한 올라운더.</p>
+<p><strong>강점</strong>: Continental 아웃솔이 젖은 노면 그립에서 신뢰성 높음. 283g 무게 + 33mm 힐 스택의 균형 잡힌 빌드로 데일리 산악 트레이닝에 무난한 올라운더.</p>
 <p><strong>약점</strong>: 에너지 리턴이 평균 이하라 추진력 부족. 어퍼 내구성도 낮음(RunRepeat 토박스 내구성 1/5).</p>
 <p><strong>한국 러너 노트</strong>: Continental 아웃솔이 북한산 화강암 슬랩·도봉산 암릉에서 안정적이지만, 와이드 옵션 미확인이라 발볼 넓은 러너는 오프라인 피팅 권장. 한국 공식 입점 시점은 2026년 봄~여름 예상.</p>
 
-<h3>🛡 2. 충격 흡수 — ASICS Metafuji Trail</h3>
+<h3>🛡 2. 충격 흡수 — <a href="/shoes/asics-metafuji-trail">ASICS Metafuji Trail</a></h3>
 
 <table>
   <tbody>
@@ -7822,7 +7822,7 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: FF Blast+ 베이스 레이어 때문에 에너지 리턴 제한적, 추진력 낮음. 토박스 좁고 어퍼 내구성 낮음(1/5).</p>
 <p><strong>한국 러너 노트</strong>: 45mm 힐 스택이 북한산·관악산 장거리 하산 무릎 충격을 효과적으로 흡수하지만, 토박스가 좁아 <strong>발볼 넓은 한국 러너 다수에게 불리</strong>. 공식 와이드 옵션 없으므로 오프라인 착화 필수.</p>
 
-<h3>⚡ 3. 반발력 — HOKA Tecton X 3</h3>
+<h3>⚡ 3. 반발력 — <a href="/shoes/hoka-tecton-x-3">HOKA Tecton X 3</a></h3>
 
 <table>
   <tbody>
@@ -7839,7 +7839,7 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: 339,000원 트레일화 국내 최고가권. 토박스 협소 — RunRepeat가 "발볼 넓은 러너에 절대 부적합"으로 명시.</p>
 <p><strong>한국 러너 노트</strong>: PEBA 폼 반발력은 굿러너 스카이레이스 업힐 구간에서 확실한 이점이나, <strong>좁은 토박스는 발볼 넓은 한국 러너에게 치명적</strong>. 발볼 표준 이하 러너에게만 권장.</p>
 
-<h3>🏁 4. 레이스 — Nike Ultrafly</h3>
+<h3>🏁 4. 레이스 — <a href="/shoes/nike-ultrafly">Nike Ultrafly</a></h3>
 
 <table>
   <tbody>
@@ -7875,7 +7875,7 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: FloatPro EVA 폼 — 에너지 리턴·충격 흡수 모두 평균 이하. 실측 드롭 11.5mm로 브랜드 주장(6mm) 대비 괴리 큼.</p>
 <p><strong>한국 러너 노트</strong>: <strong>북한산 인수봉 접근로·도봉산 바위 구간 그립은 국내 트레일화 중 최상위권</strong>. 와이드 옵션이 정식 출시된 유일한 Vibram 트레일화로 발볼 넓은 한국 러너에게 사실상 유일한 정답.</p>
 
-<h3>💨 6. 속도형 — Adidas Terrex Agravic Speed Ultra</h3>
+<h3>💨 6. 속도형 — <a href="/shoes/adidas-terrex-agravic-speed-ultra">Adidas Terrex Agravic Speed Ultra</a></h3>
 
 <table>
   <tbody>
@@ -7892,7 +7892,7 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: 러그 2.5mm 매우 얕음 — 진흙·가파른 기술 지형에서 슬립 위험. <strong>토박스 70.5mm 협소 + 미드풋 매우 타이트</strong>로 발볼 넓은 러너 완전 배제.</p>
 <p><strong>한국 러너 노트</strong>: 0mm 드롭 + 2.5mm 러그로 북한산·관악산 테크니컬 지형에는 부적합. 반면 <strong>굿러너 스카이레이스 임도 구간·그루밍된 평탄 트레일에서는 국내 트레일화 최상위 스피드</strong>. 발볼 좁은 러너 한정 추천.</p>
 
-<h3>💰 7. 가성비 — ASICS Gel Venture 10</h3>
+<h3>💰 7. 가성비 — <a href="/shoes/asics-gel-venture-10">ASICS Gel Venture 10</a></h3>
 
 <table>
   <tbody>
