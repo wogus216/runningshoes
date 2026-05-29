@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'daejeon-unique-running-courses-7',
+    slug: 'daejeon-unique-running-courses-7',
+    title: '대전 이색 러닝 코스 7선 | 계족산 황톳길 맨발런부터 대청호 둘레까지 — 황토·하천·호수·숲 결합한 대전만의 러닝',
+    description: '계족산 황톳길 맨발 러닝부터 갑천 도심 하천, 대청호 오백리길, 장태산 메타세쿼이아 숲까지 대전에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 계족산·갑천·대청호·한밭수목원·보문산·장태산·유등천 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/daejeon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['대전 러닝 코스', '이색 러닝', '계족산 황톳길', '맨발 러닝', '갑천', '대청호 오백리길', '한밭수목원', '보문산', '장태산 메타세쿼이아', '대전 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>대전은 황톳길·3대 하천·호수·숲을 결합한 중부권 러닝 거점</strong> — 특히 계족산 황톳길(14.5km 맨발 황토)은 전국에서 찾는 대전만의 이색 코스</li>
+    <li>갑천·유등천·대전천 3대 하천이 도심을 흐르고, 대청호·장태산·보문산이 외곽을 둘러싼 <strong>"숲의 도시"</strong></li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌲</span>
+  <div class="callout-body">
+    <p class="callout-title">대전 러닝만의 매력</p>
+    <p>대전은 <strong>황톳길(계족산)·도심 하천(갑천·유등천·대전천)·호수(대청호)·숲(장태산·한밭수목원)·산(보문산)</strong>이 어우러진 중부권 도시입니다. 무엇보다 <strong>계족산 황톳길</strong>은 14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는 전국적 명소로, 다른 도시엔 없는 대전만의 시그니처 코스. 도심엔 3대 하천이 흘러 평지 러닝이 풍부하고, 외곽 대청호·장태산은 숲과 호수 트레일을 제공합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>계족산 황톳길</strong></td><td>약 14.5km (임도 순환)</td><td>중 (완만 임도)</td><td>맨발 황토 + 편백숲 — 대전 시그니처</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>갑천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대전의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>대청호 오백리길</strong></td><td>5~12km (구간 선택)</td><td>중 (트레일)</td><td>호수 둘레 + 전망</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>한밭수목원 + 엑스포시민광장</strong></td><td>약 3~5km</td><td>하 (평지)</td><td>국내 최대 도심 수목원 + 분수</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>보문산</strong></td><td>약 4~7km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>장태산자연휴양림</strong></td><td>약 4~6km</td><td>하~중</td><td>메타세쿼이아 숲 + 스카이워크</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>7</td><td><strong>유등천·대전천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 하천 + 합류부</td><td>새벽·야간</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 계족산 황톳길 — 맨발로 달리는 대전 시그니처</h2>
+
+<p><strong>출발지</strong>: 계족산 장동산림욕장 입구 (대덕구, 버스·차량)<br>
+<strong>거리</strong>: 약 14.5km (임도 순환)<br>
+<strong>노면</strong>: 황토 + 임도 흙길<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (비 온 직후 제외)</p>
+
+<p>계족산 황톳길은 <strong>14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는</strong> 전국적 명소로, 대전을 대표하는 이색 코스입니다. 편백숲과 어우러진 황톳길을 맨발로 밟는 경험은 다른 도시에선 할 수 없는 대전만의 것. 산소길·둘레길과 연결돼 거리를 조절할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 맨발 황토 러닝이라는 독보적 경험 + 편백 피톤치드. 황토가 발 충격을 부드럽게 받아주지만, <strong>맨발은 부상·이물질 위험</strong>이 있으니 처음엔 걷기부터, 발 상태를 보며 천천히. 비 온 직후엔 질척이고 미끄러워 피하세요. 입구에 세족장이 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 맨발 체험이 핵심이라 신발을 벗는 구간이 많지만, 신고 뛴다면 <strong>가벼운 트레일화나 배수 좋은 신발</strong>. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화가 무난합니다. 맨발 입문은 무리하지 말고 짧게 시작하세요.</p>
+
+<h2>2. 갑천 둔치 — 대전의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 한밭대교·갑천대교 등 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~15km (도심 종주, 거리 자유)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>갑천은 대전 서부를 관통하는 하천으로, <strong>둔산·엑스포 일대를 흐르는 대전 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 한밭수목원·엑스포광장과 가까워 도심 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
+
+<h2>3. 대청호 오백리길 — 호수 둘레 트레일</h2>
+
+<p><strong>출발지</strong>: 대청호 인근 구간별 입구 (동구·대덕구, 차량)<br>
+<strong>거리</strong>: 5~12km (구간 선택)<br>
+<strong>노면</strong>: 흙길 + 데크 + 일부 임도·아스팔트<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>대청호 오백리길은 <strong>충청권 식수원인 대청호 둘레</strong>를 잇는 트레일로, 호수와 숲을 끼고 달리는 풍경이 일품입니다. 전체는 길지만 구간을 끊어 5~12km로 조절할 수 있어 트레일 입문~중급 모두 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 멀지 않은 호수 트레일. 물안개 낀 새벽·단풍철이 특히 아름답습니다. 다만 <strong>흙길·데크·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 일부 구간은 한적하니 단독 야간 러닝은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 한밭수목원 + 엑스포시민광장 — 도심 속 국내 최대 수목원</h2>
+
+<p><strong>출발지</strong>: 대전 지하철 1호선 정부청사역·시청역 (도보 10분)<br>
+<strong>거리</strong>: 약 3~5km (수목원 + 광장 루프)<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>한밭수목원은 <strong>국내 최대 규모의 도심 인공 수목원</strong>으로, 둔산 도심 한복판에 있습니다. 엑스포시민광장·갑천과 연결돼 평탄한 산책로 루프를 달릴 수 있고, 나무가 많아 그늘이 풍부합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 수목원 평지 + 풍부한 그늘 + 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 엑스포광장 분수와 야간 조명도 운치를 더합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
+
+<h2>5. 보문산 — 도심 근접 산 트레일</h2>
+
+<p><strong>출발지</strong>: 대전 중구 보문산공원 입구 (버스·차량)<br>
+<strong>거리</strong>: 약 4~7km (둘레·전망대 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>보문산은 대전 도심 남쪽에 바로 붙은 산으로, <strong>보운대(전망대)와 둘레길</strong>을 따라 트레일 러닝이 가능합니다. 전망대에서는 대전 시가지가 한눈에 들어오고, 도심에서 가까워 산악 러닝 입문에 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 무리한 정상보다 둘레·전망대 코스를 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 일반 데일리·카본화는 비추.</p>
+
+<h2>6. 장태산자연휴양림 — 메타세쿼이아 숲길</h2>
+
+<p><strong>출발지</strong>: 장태산자연휴양림 (서구, 차량)<br>
+<strong>거리</strong>: 약 4~6km (숲길·둘레)<br>
+<strong>노면</strong>: 흙길 + 데크 + 완만한 임도<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>장태산자연휴양림은 <strong>하늘로 쭉 뻗은 메타세쿼이아 숲</strong>으로 유명한 곳으로, 스카이워크와 어우러진 숲길이 매력적입니다. 비교적 완만해 트레일 입문자도 부담 없이 숲의 정취를 즐기며 달릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 이국적인 메타세쿼이아 숲 러닝 + 피톤치드. 숲 그늘 덕에 한낮에도 시원하고, 가을 단풍이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하고, 휴양림 운영 시간을 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난합니다.</p>
+
+<h2>7. 유등천·대전천 둔치 — 도심 하천과 합류부</h2>
+
+<p><strong>출발지</strong>: 유등천·대전천 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~10km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>유등천과 대전천은 대전 도심 남부·중심을 흐르는 하천으로, 갑천과 함께 <strong>대전 3대 하천</strong>을 이룹니다. 둔산 위주의 갑천과 달리 원도심·중구 쪽 러너에게 가까운 평지 코스이며, 세 하천이 만나는 합류부까지 연결됩니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 원도심 접근성 + 신호 없는 평지 + 거리 조절. 갑천보다 한적한 구간이 많아 차분한 러닝에 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>본인 대전 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>둔산·서구 거주</strong>: <strong>갑천 둔치</strong>(도심 하천 LSD) + <strong>한밭수목원</strong>(평지 루프)</li>
+  <li><strong>중구·원도심 거주</strong>: <strong>유등천·대전천</strong>(도심 하천) 또는 <strong>보문산</strong>(도심 산)</li>
+  <li><strong>대덕구·동구 거주</strong>: <strong>계족산 황톳길</strong>(맨발 이색) 또는 <strong>대청호 오백리길</strong>(호수 트레일)</li>
+  <li><strong>이색 경험·힐링</strong>: <strong>계족산 황톳길</strong>(맨발 황토) · <strong>장태산</strong>(메타세쿼이아 숲)</li>
+  <li><strong>트레일 입문</strong>: <strong>보문산</strong>(도심 근접) → <strong>대청호 오백리길</strong>(호수 트레일)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·수목원 (갑천·유등천·한밭)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>하천 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>산·호수 트레일 (보문산·대청호·계족산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>숲 힐링런 (장태산)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>대전 러닝 — 황톳길 맨발런과 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">계족산 황톳길, 맨발 러닝 안전하게 즐기는 법</p>
+    <p>대전의 시그니처 <strong>계족산 황톳길</strong>은 맨발 경험이 핵심입니다. ① 처음엔 <strong>걷기부터</strong> 시작해 발바닥을 적응시키고, ② 유리·돌 등 이물질에 주의하며, ③ 비 온 직후는 미끄러우니 피하고, ④ 끝나면 입구 <strong>세족장</strong>에서 발을 씻으세요. 당뇨 등으로 발 감각이 둔한 분은 맨발을 피하는 게 안전합니다. KTX·SRT로 서울에서 약 1시간이라 주말 러닝 여행도 좋습니다 — 계족산 황톳길 + 대청호를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 계족산 황톳길은 정말 맨발로 뛰어야 하나요?</h3>
+<p>맨발이 핵심 경험이지만 필수는 아닙니다. 처음엔 걷기로 발을 적응시키고, 부담되면 가벼운 신발이나 아쿠아슈즈를 신어도 됩니다. 황토가 충격을 부드럽게 받아주지만 이물질·미끄럼 위험이 있으니 무리하지 말고, 발 감각이 둔한 기저질환자는 신발 착용을 권합니다.</p>
+
+<h3>Q. 대전에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>갑천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>한밭수목원·엑스포광장</strong> 일대도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 계족산·대청호·보문산·장태산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 보문산·대청호 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 대전 마라톤 대회는 어떤 게 있나요?</h3>
+<p>대전 3대 하천(갑천·유등천·대전천) 둔치를 활용한 도심 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'jeju-unique-running-courses-7',
     slug: 'jeju-unique-running-courses-7',
     title: '제주 이색 러닝 코스 7선 | 올레길 해안 절경부터 새별오름 억새까지 — 바다·숲·오름 결합한 제주만의 러닝',
