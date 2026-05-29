@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'ulsan-unique-running-courses-7',
+    slug: 'ulsan-unique-running-courses-7',
+    title: '울산 이색 러닝 코스 7선 | 태화강 십리대숲부터 영남알프스 억새까지 — 강·바다·억새산 결합한 울산만의 러닝',
+    description: '태화강 국가정원 십리대숲 러닝부터 대왕암 해안 절벽, 영남알프스 간월재 억새, 간절곶 일출까지 울산에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 태화강·대왕암·영남알프스·울산대공원·간절곶·진하해변·슬도 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/ulsan-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['울산 러닝 코스', '이색 러닝', '태화강 국가정원', '십리대숲', '대왕암공원', '영남알프스 간월재', '간절곶 일출', '울산대공원', '진하해변', '울산 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>울산은 강·바다·억새산을 한 도시에 결합한 동남권 러닝 도시</strong> — 태화강 십리대숲, 대왕암 해안 절벽, 영남알프스 억새, 간절곶 일출 등 산업도시 이미지와 전혀 다른 풍경</li>
+    <li>울산의 시그니처는 <strong>태화강 국가정원과 십리대숲</strong>(국내 2호 국가정원) — 산업도시에서 생태도시로 거듭난 상징적 러닝 코스</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎋</span>
+  <div class="callout-body">
+    <p class="callout-title">울산 러닝만의 매력</p>
+    <p>울산은 <strong>강(태화강)·바다(대왕암·간절곶·진하)·억새산(영남알프스)·도심 공원(울산대공원)</strong>이 어우러진 동남권 도시입니다. 공업도시로 알려졌지만, 도심을 흐르는 <strong>태화강과 십리대숲</strong>은 국내 2호 국가정원으로 지정될 만큼 생태가 회복됐고, 동쪽으론 대왕암·간절곶 해안이, 서쪽으론 <strong>영남알프스</strong>의 국내 최대 억새 능선이 펼쳐집니다. 강·바다·산을 짧은 이동으로 오갈 수 있는 점이 매력. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>태화강 국가정원 + 십리대숲</strong></td><td>5~12km</td><td>하 (평지)</td><td>대나무숲 + 강변 — 울산 시그니처</td><td>새벽·저녁</td></tr>
+    <tr><td>2</td><td><strong>대왕암공원</strong></td><td>약 4~6km</td><td>하~중</td><td>해안 절벽 + 송림 + 출렁다리</td><td>새벽·해질녘</td></tr>
+    <tr><td>3</td><td><strong>영남알프스 간월재</strong></td><td>약 8~12km</td><td>중상</td><td>국내 최대 억새 능선 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>울산대공원</strong></td><td>약 4~5km 루프</td><td>하 (평지)</td><td>도심 대형공원 + 장미원</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>간절곶</strong></td><td>5~8km</td><td>하 (평지)</td><td>한반도 첫 일출 + 해안 산책로</td><td>일출·해안 산책</td></tr>
+    <tr><td>6</td><td><strong>진하해변 + 명선도</strong></td><td>5~7km</td><td>하</td><td>해변 + 서핑 + 명선도 뷰</td><td>새벽·해질녘</td></tr>
+    <tr><td>7</td><td><strong>슬도 소리길 (방어진)</strong></td><td>4~6km</td><td>하</td><td>해안 산책로 + 바람·파도 소리</td><td>새벽·해질녘</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 태화강 국가정원 + 십리대숲 — 대나무숲을 달리는 울산 시그니처</h2>
+
+<p><strong>출발지</strong>: 태화강 국가정원 (중구·남구, 버스·차량)<br>
+<strong>거리</strong>: 5~12km (강변 + 대숲 + 둔치 연결)<br>
+<strong>노면</strong>: 우레탄 산책로 + 대숲 흙길 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·저녁</p>
+
+<p>태화강 국가정원은 <strong>국내 2호 국가정원</strong>으로, 강변을 따라 약 10리(4km)에 걸친 <strong>십리대숲</strong>이 핵심입니다. 빽빽한 대나무 터널을 달리는 경험은 다른 도시엔 없는 울산만의 것. 강변 둔치와 연결해 거리를 자유롭게 늘릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 대나무숲 터널 + 강변 평지 + 신호 없는 거리 무제한. 산업도시가 생태도시로 거듭난 상징적 코스로, 여름 대숲은 그늘과 시원함을 줍니다. 데일리부터 LSD까지 폭넓게 소화하는 울산 러닝의 중심입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 약간의 흙길. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 데일리화, 장거리엔 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>.</p>
+
+<h2>2. 대왕암공원 — 해안 절벽과 송림 트레일</h2>
+
+<p><strong>출발지</strong>: 대왕암공원 (동구, 버스·차량)<br>
+<strong>거리</strong>: 약 4~6km (공원 + 해안 산책로)<br>
+<strong>노면</strong>: 송림 흙길 + 해안 데크 + 일부 계단<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>대왕암공원은 <strong>기암괴석 해안 절벽과 100년 송림, 출렁다리</strong>가 어우러진 동해안 명소. 울창한 소나무 숲을 지나 해안 절벽을 끼고 달리는 풍경이 일품이고, 대왕암 출렁다리에서 보는 바다가 압권입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해안 절벽 + 송림 + 출렁다리의 드라마틱한 조합. 다만 <strong>흙길·데크·계단</strong>이 섞여 미끄럼에 주의하고, 관광객이 많아 이른 새벽이 한적합니다. 평지 러닝보다 풍경을 즐기는 코스에 가깝습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 흙길·데크 + 접지력. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발. 카본 슈즈는 비추.</p>
+
+<h2>3. 영남알프스 간월재 — 국내 최대 억새 능선</h2>
+
+<p><strong>출발지</strong>: 간월산휴양림·배내고개 (울주군, 차량)<br>
+<strong>거리</strong>: 약 8~12km (간월재 왕복·능선)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>영남알프스는 <strong>국내 최대 규모의 억새 산군</strong>으로, 간월재·신불산 일대의 황금빛 억새 능선이 가을이면 장관을 이룹니다. 본격 산악 트레일로, 광활한 억새밭과 능선 조망이 트레일 러너의 버킷리스트로 꼽힙니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 끝없이 펼쳐진 억새 능선 + 영남알프스 조망. 다만 <strong>가파른 오르막·돌길·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨 변화·일몰에 대비해야 합니다. 충분한 물·행동식 필수, 초보는 간월재까지만.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>4. 울산대공원 — 도심 대형공원 루프</h2>
+
+<p><strong>출발지</strong>: 울산대공원 (남구, 버스·차량)<br>
+<strong>거리</strong>: 약 4~5km 루프<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>울산대공원은 <strong>대규모 도심 공원</strong>으로, SK가 조성해 기부한 것으로도 유명합니다. 장미원·호수·숲이 어우러진 평탄한 산책로 루프가 잘 정비돼 있어 도심 러닝의 중심입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 평지 + 풍부한 그늘 + 장미원 등 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 거리가 딱 떨어져 페이스 훈련에도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
+
+<h2>5. 간절곶 — 한반도에서 가장 먼저 해가 뜨는 곳</h2>
+
+<p><strong>출발지</strong>: 간절곶 (울주군, 차량)<br>
+<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
+<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
+<strong>추천 시간대</strong>: 일출 + 해안 산책</p>
+
+<p>간절곶은 <strong>한반도 육지에서 가장 먼저 일출을 볼 수 있는 곳</strong>으로, 등대와 소망우체통이 명물입니다. 해안 산책로를 따라 일출을 보며 달리는 경험은 새해·기념일에 특히 의미가 깊습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한반도 첫 일출이라는 상징성 + 평탄한 해안 러닝. 일출 러닝 명소로, 해안도로를 따라 거리를 늘릴 수 있습니다. 다만 바람이 강한 날이 많으니 윈드재킷을 챙기세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
+
+<h2>6. 진하해변 + 명선도 — 해변과 서핑 풍경</h2>
+
+<p><strong>출발지</strong>: 진하해수욕장 (울주군, 버스·차량)<br>
+<strong>거리</strong>: 5~7km (해변 + 해안 산책로)<br>
+<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>진하해변은 <strong>서핑 명소이자 명선도를 배경으로 한 해변</strong>으로, 잔잔한 해변 풍경과 서핑하는 사람들이 어우러집니다. 평탄한 해변 산책로를 따라 가볍게 달리기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 서핑 풍경 + 명선도 + 평지 해변. 새벽·노을 시간대가 특히 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 떨어집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화.</p>
+
+<h2>7. 슬도 소리길 (방어진) — 바람과 파도 소리의 해안길</h2>
+
+<p><strong>출발지</strong>: 방어진항·슬도 (동구, 버스·차량)<br>
+<strong>거리</strong>: 4~6km (해안 산책로)<br>
+<strong>노면</strong>: 해안 데크 + 산책로<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>슬도는 방어진 끝의 작은 섬으로, <strong>구멍 뚫린 바위에 파도가 부딪혀 나는 소리</strong>에서 "소리섬"이라는 이름이 붙었습니다. 슬도 소리길을 따라 대왕암공원 방향으로 이어지는 해안 산책로가 차분한 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 바람·파도 소리의 독특한 해안 분위기 + 등대. 평탄한 해안 데크라 부담이 적고, 대왕암공원과 연계하면 거리를 늘릴 수 있습니다. 한적해서 사색하며 달리기 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 울산 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>중구·남구(도심) 거주</strong>: <strong>태화강 국가정원</strong>(대숲 강변 LSD) + <strong>울산대공원</strong>(평지 루프)</li>
+  <li><strong>동구 거주</strong>: <strong>대왕암공원</strong>(해안 절벽) · <strong>슬도 소리길</strong>(해안 산책)</li>
+  <li><strong>울주군 거주</strong>: <strong>간절곶</strong>(일출 해안) · <strong>진하해변</strong>(서핑 해변)</li>
+  <li><strong>트레일·산악</strong>: <strong>영남알프스 간월재</strong>(억새 능선, 트레일화 필수)</li>
+  <li><strong>일출 러닝</strong>: <strong>간절곶</strong> — 한반도 첫 일출</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 강변·해변·공원 (태화강·간절곶·울산대공원)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD·맥스 쿠션 (태화강 장거리)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>영남알프스·대왕암 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (울산대공원 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>울산 러닝 — 십리대숲과 억새, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌅</span>
+  <div class="callout-body">
+    <p class="callout-title">강·바다·억새를 하루에 — 울산 러닝 여행</p>
+    <p>울산은 <strong>강·바다·억새산을 짧은 이동으로 오갈 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>태화강 십리대숲·울산대공원</strong>, ② 해안은 <strong>대왕암·간절곶·진하해변</strong>, ③ 본격 트레일은 <strong>영남알프스 간월재</strong>(억새)로 묶으면 좋습니다. 특히 새해엔 <strong>간절곶 일출 러닝</strong>이 특별. KTX로 서울에서 약 2시간 10분이라 주말 러닝 여행도 가능 — 태화강 대숲 + 영남알프스 억새를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 울산 러닝과 다른 도시의 차이는?</h3>
+<p>울산은 공업도시 이미지와 달리, <strong>태화강 십리대숲</strong>(국가정원)이라는 독특한 대나무숲 강변 코스를 중심으로 대왕암·간절곶 해안과 영남알프스 억새 산을 모두 갖췄습니다. 강·바다·산을 짧은 이동으로 오갈 수 있어, 하루에 여러 풍경을 묶어 달릴 수 있는 게 매력입니다.</p>
+
+<h3>Q. 울산에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>태화강 국가정원·울산대공원</strong>이 1순위입니다. 조명이 있는 평지라 야간 LSD·루프에 좋습니다. 반면 영남알프스·대왕암·간절곶·해변은 야간에 어둡고 위험하니 낮·새벽(일출)에 뛰세요. 십리대숲은 야간 조명 구간을 확인하고 이용하세요.</p>
+
+<h3>Q. 영남알프스 간월재 트레일은 어떤 신발이 필요한가요?</h3>
+<p>가파른 오르막·돌길·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 울산 마라톤 대회는 어떤 게 있나요?</h3>
+<p>태화강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'gwangju-unique-running-courses-7',
     slug: 'gwangju-unique-running-courses-7',
     title: '광주 이색 러닝 코스 7선 | 무등산 주상절리부터 푸른길 폐철도까지 — 산·하천·폐철도·호수 결합한 광주만의 러닝',
