@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'gwangju-unique-running-courses-7',
+    slug: 'gwangju-unique-running-courses-7',
+    title: '광주 이색 러닝 코스 7선 | 무등산 주상절리부터 푸른길 폐철도까지 — 산·하천·폐철도·호수 결합한 광주만의 러닝',
+    description: '무등산 트레일부터 광주천 도심 하천, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길까지 광주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 무등산·광주천·푸른길공원·광주호·5·18기념공원·풍암호수·영산강 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/gwangju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['광주 러닝 코스', '이색 러닝', '무등산', '광주천', '푸른길공원', '광주호 메타세쿼이아', '5·18기념공원', '풍암호수공원', '영산강', '광주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>광주는 산·하천·폐철도·호수를 결합한 호남권 러닝 거점</strong> — 무등산 주상절리, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길 등 다른 도시엔 없는 풍경</li>
+    <li>도심을 관통하는 <strong>광주천</strong>과 광주의 상징 <strong>무등산</strong>이 러닝의 양대 축, 여기에 폐철도 그린웨이 "푸른길"이라는 이색 코스가 더해집니다</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌳</span>
+  <div class="callout-body">
+    <p class="callout-title">광주 러닝만의 매력</p>
+    <p>광주는 <strong>산(무등산)·도심 하천(광주천)·폐철도 선형공원(푸른길)·호수(광주호·풍암)·강(영산강·황룡강)</strong>이 어우러진 호남권 도시입니다. 광주의 상징 <strong>무등산</strong>은 주상절리(입석대·서석대)로 유명한 트레일 명소이고, 폐철도를 녹지로 되살린 <strong>푸른길공원</strong>은 도심을 가로지르는 광주만의 이색 그린웨이. 도심엔 광주천이 흐르고, 5·18 민주화의 역사가 곳곳에 새겨져 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>무등산 (중머리재 등)</strong></td><td>약 6~10km</td><td>중상</td><td>주상절리 + 본격 산악 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>광주천 둔치</strong></td><td>5~12km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 광주의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>푸른길공원</strong></td><td>약 8km (선형)</td><td>하 (평지)</td><td>폐철도 재생 그린웨이 — 이색</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>4</td><td><strong>광주호 호수생태원 + 메타세쿼이아길</strong></td><td>5~8km</td><td>하~중</td><td>호수 + 메타세쿼이아 숲</td><td>오전·해질녘</td></tr>
+    <tr><td>5</td><td><strong>5·18기념공원 + 상무시민공원</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>역사 + 도심 공원</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>6</td><td><strong>풍암호수공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>도심 호수 루프</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>7</td><td><strong>영산강·황룡강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 무등산 — 주상절리를 품은 광주의 상징</h2>
+
+<p><strong>출발지</strong>: 증심사 입구 (동구, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (중머리재·장불재 코스)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 돌계단<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>무등산은 광주를 대표하는 명산으로, <strong>입석대·서석대 주상절리</strong>로 유명합니다. 증심사에서 중머리재·장불재로 이어지는 트레일은 광주 산악 러닝의 핵심 코스. 정상부 주상절리와 광주 시가지 조망이 압권입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 주상절리라는 독특한 지질 풍경 + 본격 산악 트레일. 다만 <strong>돌길·돌계단·고도차</strong>가 커서 일반 데일리화·카본화는 절대 비추. 충분한 물·행동식과 일몰 시간을 확인하고, 입문자는 중머리재까지만 가볍게.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>2. 광주천 둔치 — 광주의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 광주천 도심 다리마다 진입 (양동·금남로 일대)<br>
+<strong>거리</strong>: 5~12km (도심 종주, 거리 자유)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>광주천은 광주 도심을 관통하는 하천으로, <strong>광주 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 12km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 도심 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a>.</p>
+
+<h2>3. 푸른길공원 — 폐철도를 되살린 도심 그린웨이</h2>
+
+<p><strong>출발지</strong>: 푸른길공원 구간별 진입 (동구·남구 도심)<br>
+<strong>거리</strong>: 약 8km (선형, 구간 조절)<br>
+<strong>노면</strong>: 우레탄·블록 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>푸른길공원은 <strong>도심을 지나던 폐철도를 녹지로 재생한 선형공원</strong>으로, 광주만의 이색 코스입니다. 옛 철길을 따라 도심을 가로지르며 달리는 경험이 독특하고, 나무가 우거져 도심 속 그린 터널을 이룹니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 폐철도 재생이라는 스토리 + 도심 한복판 그린웨이. 평탄하고 신호 구간이 정비돼 있어 가벼운 러닝·출퇴근 런에 좋습니다. 단 도심 횡단 구간은 보행자·교차로에 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>4. 광주호 호수생태원 + 메타세쿼이아길 — 호수와 숲</h2>
+
+<p><strong>출발지</strong>: 광주호 호수생태원 (북구, 담양 경계, 차량)<br>
+<strong>거리</strong>: 5~8km (생태원 + 메타세쿼이아길 연결)<br>
+<strong>노면</strong>: 데크 + 흙길 + 가로수길 아스팔트<br>
+<strong>추천 시간대</strong>: 오전·해질녘</p>
+
+<p>광주호 호수생태원은 <strong>호수와 습지, 생태 숲</strong>을 갖춘 명소로, 인근 담양 <strong>메타세쿼이아 가로수길</strong>과 연결해 호수+숲 러닝을 즐길 수 있습니다. 도심을 벗어난 자연 속 코스로 힐링 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 호수 + 메타세쿼이아 숲이라는 이국적 풍경. 평탄·완만해 부담이 적고, 가을 단풍·메타세쿼이아 낙엽철이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>5. 5·18기념공원 + 상무시민공원 — 역사와 도심 공원</h2>
+
+<p><strong>출발지</strong>: 광주 지하철 1호선 운천역·상무역 (도보)<br>
+<strong>거리</strong>: 약 3~4km (공원 루프)<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>상무지구의 5·18기념공원과 상무시민공원을 잇는 도심 공원 코스. <strong>5·18 민주화운동의 역사</strong>가 새겨진 공간을 달리며, 평탄한 산책로와 녹지가 잘 정비돼 있어 도심 러닝에 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 역사적 의미 + 신호 없는 도심 공원 평지. 나무가 많아 그늘이 풍부하고 접근성이 좋아 입문·회복 러닝에 좋습니다. 운천저수지와 연계하면 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
+
+<h2>6. 풍암호수공원 — 도심 호수 루프</h2>
+
+<p><strong>출발지</strong>: 풍암호수공원 (남구, 버스·차량)<br>
+<strong>거리</strong>: 약 2~3km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>풍암호수공원은 남구의 도심 호수공원으로, <strong>평탄한 호수 둘레 루프</strong>가 잘 정비돼 있습니다. 거리가 딱 떨어져 랩 카운트·페이스 훈련에 좋고, 야간 조명과 분수가 운치를 더합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프라 인터벌·템포 훈련에 최적. 노면이 부드러워 무릎 부담이 적고, 가족 단위 방문객이 많아 한적함을 원하면 새벽·평일을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스 훈련. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
+
+<h2>7. 영산강·황룡강 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 영산강·황룡강 자전거길 진입점 (광산구 등, 차량·버스)<br>
+<strong>거리</strong>: 5~15km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>영산강·황룡강 자전거길은 광주 서부를 흐르는 강을 따라 길게 이어지는 <strong>평지 강변 코스</strong>입니다. 신호 없이 장거리 LSD를 소화하기 좋고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 다만 그늘이 적고 일부 구간은 한적하니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>본인 광주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>동구·남구(도심) 거주</strong>: <strong>광주천</strong>(도심 하천 LSD) + <strong>푸른길공원</strong>(폐철도 그린웨이)</li>
+  <li><strong>서구·상무지구 거주</strong>: <strong>5·18기념공원</strong>(도심 공원) 또는 <strong>풍암호수공원</strong>(호수 루프)</li>
+  <li><strong>북구·담양 방면 거주</strong>: <strong>광주호 호수생태원 + 메타세쿼이아길</strong>(호수·숲)</li>
+  <li><strong>광산구 거주</strong>: <strong>영산강·황룡강 자전거길</strong>(강변 LSD)</li>
+  <li><strong>트레일·산악</strong>: <strong>무등산</strong>(주상절리 트레일, 트레일화 필수)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·폐철도·공원 (광주천·푸른길·5·18)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변·호수 LSD (영산강·풍암)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>무등산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (풍암호수 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>광주 러닝 — 무등산과 푸른길, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🚂</span>
+  <div class="callout-body">
+    <p class="callout-title">광주에서 뛰는 법 — 폐철도 그린웨이와 명산</p>
+    <p>광주는 <strong>도심 그린웨이와 명산을 함께 즐길 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>광주천·푸른길공원</strong>, ② 본 러닝은 <strong>무등산 트레일</strong>(주상절리), ③ 힐링은 <strong>광주호 메타세쿼이아길</strong>, ④ 강변 LSD는 <strong>영산강</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30~50분이라 주말 러닝 여행도 가능 — 푸른길 도심런 + 무등산 트레일을 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 광주 러닝과 다른 도시의 차이는?</h3>
+<p>광주는 도심 하천(광주천)·명산(무등산)이라는 기본 축에 <strong>폐철도를 재생한 푸른길공원</strong>이라는 독특한 그린웨이가 더해집니다. 무등산 주상절리 트레일과 광주호 메타세쿼이아 숲 등 자연 코스도 풍부해, 도심과 자연을 짧은 이동으로 오갈 수 있는 점이 매력입니다.</p>
+
+<h3>Q. 광주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>광주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>풍암호수공원·5·18기념공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 무등산·광주호·영산강 일부 구간은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 무등산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>돌길·돌계단·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 광주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>광주천·영산강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'daejeon-unique-running-courses-7',
     slug: 'daejeon-unique-running-courses-7',
     title: '대전 이색 러닝 코스 7선 | 계족산 황톳길 맨발런부터 대청호 둘레까지 — 황토·하천·호수·숲 결합한 대전만의 러닝',
