@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'jeonju-unique-running-courses-7',
+    slug: 'jeonju-unique-running-courses-7',
+    title: '전주 이색 러닝 코스 7선 | 한옥마을 새벽런부터 완산칠봉 꽃동산까지 — 한옥·하천·연꽃호수 결합한 전주만의 러닝',
+    description: '전주한옥마을 새벽 러닝부터 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 꽃동산까지 전주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 한옥마을·전주천·덕진공원·완산칠봉·건지산 편백·삼천·전주수목원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/jeonju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['전주 러닝 코스', '이색 러닝', '전주한옥마을', '전주천 한벽당', '덕진공원 연꽃', '완산칠봉', '건지산 편백숲', '삼천 자전거길', '전주수목원', '전주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>전주는 한옥·도심 하천·연꽃호수·꽃동산을 결합한 전통의 러닝 도시</strong> — 한옥마을 새벽런, 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 봄 꽃동산 등 정취 가득한 풍경</li>
+    <li>전주의 시그니처는 <strong>한옥마을 새벽 러닝</strong> — 관광객이 몰리기 전 이른 새벽, 600여 채 한옥과 오목대를 달리는 경험은 전주만의 것</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏘️</span>
+  <div class="callout-body">
+    <p class="callout-title">전주 러닝만의 매력</p>
+    <p>전주는 <strong>한옥마을·도심 하천(전주천)·연꽃호수(덕진공원)·꽃동산(완산칠봉)·편백숲(건지산)·강변(삼천)</strong>이 어우러진 전통과 슬로시티의 도시입니다. 600여 채 한옥이 모인 <strong>전주한옥마을</strong>은 관광객이 몰리기 전 새벽에 달리면 고즈넉한 정취가 일품. 도심을 흐르는 전주천은 한벽당·청연루 같은 명소를 끼고 있고, 덕진공원 연꽃과 완산칠봉 봄꽃은 계절 러닝의 백미입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>전주한옥마을 + 오목대</strong></td><td>3~5km</td><td>하~중</td><td>600채 한옥 + 전망 — 시그니처</td><td>이른 새벽(인파 전)</td></tr>
+    <tr><td>2</td><td><strong>전주천 (한벽당~남천교)</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 + 한벽당</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>덕진공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>연꽃 호수 + 연화교</td><td>여름 새벽(연꽃)</td></tr>
+    <tr><td>4</td><td><strong>완산칠봉 (완산공원)</strong></td><td>약 3~5km</td><td>중 (오르막)</td><td>도심 산 + 봄 꽃동산</td><td>맑은 날 오전·봄</td></tr>
+    <tr><td>5</td><td><strong>건지산 편백숲 + 오송제</strong></td><td>약 4~6km</td><td>하~중</td><td>편백숲 + 저수지 산책</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>6</td><td><strong>삼천 자전거길</strong></td><td>5~12km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>7</td><td><strong>전주수목원 (한국도로공사)</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>도심 수목원 숲길 (무료)</td><td>오전·한낮(그늘)</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 전주한옥마을 + 오목대 — 한옥을 달리는 새벽 러닝</h2>
+
+<p><strong>출발지</strong>: 한옥마을 입구·경기전 일대<br>
+<strong>거리</strong>: 3~5km (한옥마을 + 오목대·이목대 + 전주천 연계)<br>
+<strong>노면</strong>: 돌·보도블록 + 오목대 계단<br>
+<strong>추천 시간대</strong>: 이른 새벽 (인파 전)</p>
+
+<p>전주한옥마을은 <strong>600여 채 한옥이 모인 전주의 시그니처</strong>입니다. 낮엔 관광객으로 붐비지만, <strong>이른 새벽엔 고즈넉한 한옥 골목을 달리는 특별한 경험</strong>이 가능합니다. 오목대·이목대에 오르면 한옥마을 전경이 한눈에 들어옵니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 전통 한옥을 달리는 독보적 정취 + 오목대 전망. 다만 <strong>골목이 좁고 돌·보도블록</strong>이라 빠른 페이스보다 가벼운 조깅·산책런에 적합하고, 관광 시간엔 러닝이 어렵습니다. 전주천과 연계하면 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 보도블록 + 계단 + 회복 조깅. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 쿠션 데일리.</p>
+
+<h2>2. 전주천 (한벽당~남천교) — 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 한벽당·남천교 등 전주천 다리마다 진입<br>
+<strong>거리</strong>: 5~10km (도심 종주)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>전주천은 전주 도심을 관통하는 하천으로, <strong>한벽당·청연루</strong> 같은 전통 명소를 끼고 흐릅니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 한옥마을과 가까워 역사 코스와 연계하기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 한벽당 전통 풍경 + 거리 무제한. 신호 없는 평지라 데일리·LSD에 적합하고, 맑은 물에서 다슬기·물고기를 볼 수 있을 만큼 수질이 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/nike-pegasus-41">페가수스 41</a>.</p>
+
+<h2>3. 덕진공원 — 연꽃 가득한 호수공원</h2>
+
+<p><strong>출발지</strong>: 덕진공원 (덕진구, 버스·차량)<br>
+<strong>거리</strong>: 약 2~3km 둘레 (인근 확장)<br>
+<strong>노면</strong>: 우레탄 산책로 + 연화교 데크<br>
+<strong>추천 시간대</strong>: 여름 새벽 (연꽃 개화)</p>
+
+<p>덕진공원은 <strong>연꽃으로 유명한 호수공원</strong>으로, 여름이면 호수를 가득 메운 연꽃과 연화교(현수교)가 장관을 이룹니다. 평탄한 둘레 산책로를 따라 가볍게 달리며 계절 정취를 즐기기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 연꽃 호수라는 계절 명소 + 평지 둘레. 여름 새벽 연꽃이 필 때가 백미. 둘레가 짧아 여러 바퀴 돌거나 전북대·건지산 방향으로 확장 가능합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
+
+<h2>4. 완산칠봉 (완산공원) — 도심 속 봄 꽃동산</h2>
+
+<p><strong>출발지</strong>: 완산공원 입구 (완산구, 버스)<br>
+<strong>거리</strong>: 약 3~5km (둘레·전망 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (봄 꽃철 인기)</p>
+
+<p>완산칠봉은 전주 도심 남쪽의 일곱 봉우리 산으로, <strong>봄이면 철쭉·겹벚꽃이 가득한 꽃동산</strong>으로 유명합니다. 도심에서 가까운 산 트레일로, 전망대에서 전주 시가지가 한눈에 들어옵니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 + 봄 꽃동산 풍경. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 둘레·전망 코스 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문 또는 접지력 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비 트레일)·<a href="/shoes/asics-gel-kayano-32">카야노 32</a>(안정 데일리). 본격 트레일은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>5. 건지산 편백숲 + 오송제 — 편백 향 가득한 숲길</h2>
+
+<p><strong>출발지</strong>: 전북대 후문·건지산 입구 (덕진구)<br>
+<strong>거리</strong>: 약 4~6km (편백숲 + 오송제 둘레)<br>
+<strong>노면</strong>: 흙길 + 임도 + 저수지 데크<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>건지산은 전북대 인근의 도심 산으로, <strong>편백숲과 오송제 저수지</strong>가 어우러진 완만한 숲길이 매력적입니다. 편백 향 가득한 숲을 달리는 힐링 러닝이 가능하고, 비교적 완만해 입문자도 부담 없습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 편백숲 피톤치드 + 저수지 + 완만한 흙길. 숲 그늘 덕에 한낮에도 시원하고, 전북대 캠퍼스와 연계해 거리를 늘릴 수 있습니다. 데크·흙길은 미끄럼에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>6. 삼천 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 삼천 자전거길 진입점 (효자동·삼천동 일대)<br>
+<strong>거리</strong>: 5~12km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>삼천은 전주 서남부를 흐르는 하천으로, <strong>전주천과 합류하며 길게 이어지는 자전거길</strong>이 평지 LSD에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>7. 전주수목원 (한국도로공사) — 무료 도심 수목원</h2>
+
+<p><strong>출발지</strong>: 한국도로공사 전주수목원 (덕진구, 버스·차량)<br>
+<strong>거리</strong>: 약 3~4km (수목원 산책로)<br>
+<strong>노면</strong>: 흙길 + 데크 + 산책로<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>전주수목원은 한국도로공사가 조성한 <strong>무료 개방 도심 수목원</strong>으로, 다양한 수목과 연못, 숲길이 어우러져 있습니다. 도심에서 가까우면서도 숲의 정취를 즐길 수 있어 힐링 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 무료 도심 수목원 + 풍부한 그늘 + 사계절 풍경. 평탄·완만해 부담이 적고, 가족 단위 방문이 많아 새벽·평일이 한적합니다. 운영 시간을 확인하고 이용하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 전주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>완산구·한옥마을 일대 거주</strong>: <strong>전주한옥마을(새벽)</strong> + <strong>전주천</strong>(한벽당) + <strong>완산칠봉</strong></li>
+  <li><strong>덕진구·전북대 일대 거주</strong>: <strong>덕진공원</strong>(연꽃) · <strong>건지산 편백숲</strong> · <strong>전주수목원</strong></li>
+  <li><strong>효자동·서부 거주</strong>: <strong>삼천 자전거길</strong>(강변 LSD)</li>
+  <li><strong>역사·정취 러닝</strong>: <strong>한옥마을 + 전주천 한벽당</strong> — 전주의 정수</li>
+  <li><strong>트레일·산</strong>: <strong>완산칠봉</strong>(봄 꽃동산) → <strong>건지산</strong>(편백숲)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·연꽃호수·수목원 (전주천·덕진·삼천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD·맥스 쿠션 (삼천)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>완산칠봉·건지산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>한옥마을 새벽 조깅 (보도블록)</strong>: 쿠션·안정성. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>전주 러닝 — 한옥 새벽런과 슬로시티 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌸</span>
+  <div class="callout-body">
+    <p class="callout-title">전통과 정취를 달리다 — 전주 러닝 여행</p>
+    <p>전주는 <strong>전통과 슬로시티의 정취를 달릴 수 있는</strong> 도시입니다. ① 정취 러닝은 <strong>이른 새벽 한옥마을 + 전주천 한벽당</strong>, ② 계절 명소는 <strong>덕진공원 연꽃(여름)·완산칠봉 꽃동산(봄)</strong>, ③ 힐링은 <strong>건지산 편백숲·전주수목원</strong>, ④ 강변 LSD는 <strong>삼천</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30분, 러닝 후 전주 비빔밥·콩나물국밥까지 즐기는 미식 러닝 여행으로 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 전주한옥마을에서 러닝해도 되나요?</h3>
+<p>가능하지만 <strong>이른 새벽이 정답</strong>입니다. 낮엔 관광객이 많아 빠른 러닝이 어렵고 민폐가 될 수 있습니다. 새벽엔 고즈넉한 한옥 골목을 즐길 수 있지만, 골목이 좁고 돌·보도블록이라 가벼운 조깅·산책런에 적합합니다. 전주천과 연계해 거리를 늘리는 걸 권합니다.</p>
+
+<h3>Q. 전주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>전주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 한벽당·청연루 야경도 아름답습니다. <strong>덕진공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 완산칠봉·건지산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 완산칠봉·건지산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌계단·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화나 안정성 데일리</strong>가 좋고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 전주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>전주천·삼천 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'suwon-unique-running-courses-7',
     slug: 'suwon-unique-running-courses-7',
     title: '수원 이색 러닝 코스 7선 | 수원화성 성곽길부터 광교호수까지 — 세계유산·호수·산 결합한 수원만의 러닝',
