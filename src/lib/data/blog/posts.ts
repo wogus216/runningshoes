@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'gyeongju-unique-running-courses-7',
+    slug: 'gyeongju-unique-running-courses-7',
+    title: '경주 이색 러닝 코스 7선 | 첨성대 야경부터 남산 노천 박물관까지 — 신라 유적·호수·산 결합한 경주만의 러닝',
+    description: '대릉원·첨성대·동궁과월지 신라 유적 야경 러닝부터 보문호수, 남산 노천 박물관 트레일까지 경주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 대릉원·보문호·남산·황룡사지·토함산·형산강·양동마을 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/gyeongju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['경주 러닝 코스', '이색 러닝', '대릉원 첨성대', '보문호수', '경주 남산', '황룡사지 월성', '토함산 불국사', '형산강', '양동마을', '경주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>경주는 신라 천년 유적·호수·산을 한 도시에 결합한 역사 러닝의 끝판왕</strong> — 첨성대·대릉원·동궁과월지 야경, 보문호 벚꽃, 남산 노천 박물관 등 도시 전체가 박물관</li>
+    <li>경주의 시그니처는 <strong>대릉원·첨성대·동궁과월지 야간 러닝</strong> — 조명 켜진 신라 유적 사이를 달리는 경험은 경주에서만 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏛️</span>
+  <div class="callout-body">
+    <p class="callout-title">경주 러닝만의 매력</p>
+    <p>경주는 도시 전체가 유네스코 세계유산인 <strong>신라 천년 고도</strong>로, <strong>유적 도심(대릉원·첨성대·동궁과월지)·호수(보문호)·산(남산·토함산)·왕경 평지(황룡사지·월성)·강(형산강)·전통마을(양동)</strong>이 어우러져 있습니다. 무엇보다 <strong>조명 켜진 신라 유적 사이를 달리는 야간 러닝</strong>은 경주만의 독보적 경험. 봄 보문호 벚꽃, 노천 박물관이라 불리는 남산의 마애불·석탑 트레일까지, 역사와 자연을 함께 달릴 수 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>대릉원·첨성대·동궁과월지</strong></td><td>5~8km</td><td>하 (평지)</td><td>신라 유적 + 야경 — 시그니처</td><td>해질녘·야간(조명)</td></tr>
+    <tr><td>2</td><td><strong>보문호수 둘레</strong></td><td>약 8~10km</td><td>하 (평지)</td><td>관광단지 호수 + 벚꽃</td><td>봄 새벽·저녁</td></tr>
+    <tr><td>3</td><td><strong>경주 남산</strong></td><td>약 6~10km</td><td>중상</td><td>노천 박물관 — 마애불·석탑 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>황룡사지·월성·계림</strong></td><td>5~9km</td><td>하 (평지)</td><td>신라 왕경 드넓은 들판</td><td>새벽·해질녘</td></tr>
+    <tr><td>5</td><td><strong>토함산·불국사</strong></td><td>약 6~10km</td><td>중상</td><td>본격 산악 트레일 + 석굴암</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>형산강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>7</td><td><strong>양동마을</strong></td><td>4~6km</td><td>하~중</td><td>유네스코 전통마을 + 둘레</td><td>이른 새벽·오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 대릉원·첨성대·동궁과월지 — 신라 유적을 달리는 야경 러닝</h2>
+
+<p><strong>출발지</strong>: 대릉원·첨성대 일대 (시내 중심)<br>
+<strong>거리</strong>: 5~8km (대릉원·첨성대·동궁과월지·월정교 연계)<br>
+<strong>노면</strong>: 흙길 + 우레탄 산책로 + 보도<br>
+<strong>추천 시간대</strong>: 해질녘·야간 (조명)</p>
+
+<p>경주의 시그니처 코스. <strong>대릉원(천마총)·첨성대·동궁과월지(안압지)·월정교</strong>를 잇는 도심 유적 러닝으로, 특히 <strong>밤이면 조명을 받은 신라 유적</strong>이 환상적입니다. 평탄해 부담이 적고, 도시 전체가 박물관인 경주의 정수를 한 번에 느낄 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 조명 켜진 신라 유적 야간 러닝이라는 독보적 경험. 첨성대·동궁과월지 야경은 인생샷 명소. 평지라 누구나 즐길 수 있지만, 관광객이 많은 구간은 페이스보다 풍경을 즐기는 러닝으로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 보문호수 둘레 — 관광단지 호수와 벚꽃</h2>
+
+<p><strong>출발지</strong>: 보문관광단지 (보문호, 버스·차량)<br>
+<strong>거리</strong>: 약 8~10km (호수 일주)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
+
+<p>보문호수는 경주 관광단지의 중심 호수로, <strong>둘레를 따라 약 8~10km 평탄한 산책로</strong>가 이어집니다. 봄철 보문호 벚꽃은 전국적 명소로, 호수를 끼고 달리는 벚꽃 러닝이 백미입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 일주 + 봄 벚꽃 + 매끄러운 노면. 거리가 충분해 LSD·페이스 훈련에 좋고, 호반 리조트·카페가 많아 러닝 여행 베이스로 적합합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·페이스. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(맥스 쿠션)·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(슈퍼트레이너).</p>
+
+<h2>3. 경주 남산 — 노천 박물관 트레일</h2>
+
+<p><strong>출발지</strong>: 삼릉·서남산 주차장 등 (남산 입구)<br>
+<strong>거리</strong>: 약 6~10km (코스별)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 바위 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>경주 남산은 <strong>마애불·석탑·절터가 산 전체에 흩어진 "노천 박물관"</strong>으로 불리는 명산입니다. 삼릉 가는 길·금오봉 코스를 따라 트레일을 달리며 신라 불교 유적을 만나는 경험은 경주에서만 가능합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 산 곳곳의 마애불·석탑이라는 독특한 트레일 풍경. 다만 <strong>돌길·바위·오르막</strong>이 많아 일반 데일리화·카본화는 비추, 유적 보호 구역이라 정해진 탐방로를 지켜야 합니다. 입문자는 삼릉~상선암 구간 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 황룡사지·월성·계림 — 신라 왕경 드넓은 들판</h2>
+
+<p><strong>출발지</strong>: 황룡사지·월성 일대 (대릉원 인근)<br>
+<strong>거리</strong>: 5~9km<br>
+<strong>노면</strong>: 흙길 + 잔디 + 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>황룡사지·월성(반월성)·계림 일대는 <strong>신라 왕경이 펼쳐졌던 드넓은 평지 유적</strong>입니다. 옛 황룡사 터의 광활한 들판과 첨성대·계림을 잇는 코스로, 시원하게 트인 평지에서 신라의 스케일을 느끼며 달릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 드넓은 왕경 들판 + 첨성대·계림 연계의 평지 러닝. 해질녘·새벽 빛이 유적과 어우러져 아름답습니다. 1번 유적 코스와 묶으면 경주 도심 역사 러닝이 완성됩니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·잔디. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 데일리·안정화.</p>
+
+<h2>5. 토함산·불국사 — 본격 산악 트레일과 석굴암</h2>
+
+<p><strong>출발지</strong>: 불국사 주차장 (토함산 입구, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (불국사~석굴암~토함산)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (일출 명소)</p>
+
+<p>토함산은 <strong>불국사와 석굴암을 품은 경주의 명산</strong>으로, 본격 산악 트레일입니다. 토함산 일출은 경주 대표 명소이며, 불국사에서 석굴암으로 이어지는 길은 역사와 산을 함께 즐기는 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 세계유산 불국사·석굴암 + 토함산 일출. 다만 <strong>돌길·임도·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨·일몰에 대비해야 합니다. 입문자는 불국사 둘레·완만 구간 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 본격 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>6. 형산강 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 형산강 자전거길 진입점 (시내·강변)<br>
+<strong>거리</strong>: 5~15km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>형산강은 경주를 지나 포항으로 흐르는 강으로, <strong>강변 자전거길이 길게 이어져 평지 LSD</strong>에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>7. 양동마을 — 유네스코 전통마을 둘레</h2>
+
+<p><strong>출발지</strong>: 양동마을 (경주 북부 안강, 차량)<br>
+<strong>거리</strong>: 4~6km (마을 + 둘레 구릉)<br>
+<strong>노면</strong>: 흙길 + 마을 길 + 완만한 구릉<br>
+<strong>추천 시간대</strong>: 이른 새벽·오전</p>
+
+<p>양동마을은 <strong>유네스코 세계유산으로 등재된 조선시대 전통 양반 마을</strong>입니다. 기와집·초가가 구릉을 따라 자리한 마을과 주변 둘레길을 달리며 전통 정취를 느낄 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 살아있는 전통 마을이라는 독특한 풍경. 다만 주민이 거주하는 마을이라 <strong>이른 새벽·조용한 러닝</strong>이 예의이고, 마을 안은 가볍게, 주변 구릉·들판에서 거리를 늘리세요. 신라 유적 도심과는 또 다른 조선 전통의 정취입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 흙길·마을길 + 완만 구릉. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 안정성 있는 신발.</p>
+
+<h2>본인 경주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>시내(중심) 거주·여행자</strong>: <strong>대릉원·첨성대·동궁과월지(야경)</strong> + <strong>황룡사지·월성</strong> — 역사 도심 러닝</li>
+  <li><strong>보문단지 일대·여행 숙박</strong>: <strong>보문호수 둘레</strong>(벚꽃·LSD)</li>
+  <li><strong>외동·불국사 방면</strong>: <strong>토함산·불국사</strong>(산악 트레일)</li>
+  <li><strong>트레일·유적 동시</strong>: <strong>경주 남산</strong>(노천 박물관, 트레일화 필수)</li>
+  <li><strong>강변 LSD / 전통마을</strong>: <strong>형산강 자전거길</strong> · <strong>양동마을</strong>(새벽)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 유적·호수·강 (대릉원·황룡사지·보문호·형산강)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>호수·강 LSD (보문호·형산강)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>남산·토함산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (보문호 코스)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>경주 러닝 — 신라 유적 야경런과 역사 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌙</span>
+  <div class="callout-body">
+    <p class="callout-title">천년 고도를 달리다 — 경주 러닝 여행</p>
+    <p>경주는 <strong>도시 전체가 박물관인 역사 러닝의 끝판왕</strong>입니다. ① 야경 러닝은 <strong>대릉원·첨성대·동궁과월지</strong>(조명 켜진 신라 유적), ② 봄엔 <strong>보문호 벚꽃 LSD</strong>, ③ 유적 트레일은 <strong>남산</strong>(노천 박물관)·<strong>토함산</strong>(불국사·석굴암), ④ 전통은 <strong>양동마을</strong>로 묶으면 좋습니다. KTX로 서울에서 약 2시간, 러닝 후 신라 유적 관광까지 더하면 완벽한 역사 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 경주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>대릉원·첨성대·동궁과월지</strong>가 1순위입니다. 조명을 받은 신라 유적 사이를 달리는 경험은 경주에서만 가능하고, 평지라 안전합니다. <strong>보문호수</strong>도 조명·산책로가 잘 돼 있어 야간 러닝에 좋습니다. 반면 남산·토함산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 경주 남산·토함산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>돌길·바위·오르막이 많아 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 남산은 유적 보호 구역이니 정해진 탐방로를 지키세요.</p>
+
+<h3>Q. 경주 유적지에서 러닝해도 되나요?</h3>
+<p>대릉원·첨성대·동궁과월지 주변 산책로·평지는 러닝이 가능하지만, <strong>유적 보호 구역과 잔디·고분 위는 들어가면 안 됩니다.</strong> 정해진 탐방로·산책로를 이용하고, 관광객이 많은 시간엔 페이스보다 풍경을 즐기는 러닝을 권합니다. 양동마을은 주민 거주지라 새벽 조용한 러닝이 예의입니다.</p>
+
+<h3>Q. 경주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>경주국제마라톤을 비롯해 신라 유적·보문호 일대를 활용한 대회들이 열립니다. 유적을 지나는 코스라 분위기가 특별하고 대부분 평지·완만이라 기록 도전에도 좋습니다. 대회 상세는 <a href="/blog/2026-gyeongju-international-marathon">2026 경주국제마라톤 안내</a>를 참고하고, 본인 목적에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'jeonju-unique-running-courses-7',
     slug: 'jeonju-unique-running-courses-7',
     title: '전주 이색 러닝 코스 7선 | 한옥마을 새벽런부터 완산칠봉 꽃동산까지 — 한옥·하천·연꽃호수 결합한 전주만의 러닝',
