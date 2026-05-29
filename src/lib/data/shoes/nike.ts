@@ -1365,6 +1365,7 @@ export const nikeShoes: Shoe[] = [
     slug: 'nike-ultrafly',
     brand: 'Nike',
     name: '울트라플라이',
+    image: '/images/shoes/nike/ultrafly/side.webp',
     category: '트레일',
     rating: 4,
     price: 299000,

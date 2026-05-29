@@ -838,6 +838,7 @@ export const hokaShoes: Shoe[] = [
     slug: 'hoka-tecton-x-3',
     brand: 'Hoka',
     name: '테크톤 X 3',
+    image: '/images/shoes/hoka/tectonx3/side.webp',
     category: '트레일',
     rating: 4.5,
     price: 339000,

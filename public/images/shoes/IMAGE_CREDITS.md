@@ -63,6 +63,42 @@ All product images used in this project are sourced from official brand websites
 
 ## Disclaimer / 면책 조항
 
+## Adidas Terrex Agravic 4
+
+- Source: adidas Korea official product page (KJ8872)
+- Date: 2026-05-29
+- Images: 1 (`side`)
+
+## Adidas Terrex Agravic Speed Ultra 2
+
+- Source: adidas Korea official product page (HQ5066)
+- Date: 2026-05-29
+- Images: 1 (`side`)
+
+## ASICS Metafuji Trail
+
+- Source: ASICS Korea official product page (AKR_112610307-400)
+- Date: 2026-05-29
+- Images: 4 (`side`, `front`, `back`, `outsole`)
+
+## ASICS Gel-Venture 10
+
+- Source: ASICS Korea official product page (AKR_112510272-700)
+- Date: 2026-05-29
+- Images: 4 (`side`, `front`, `back`, `outsole`)
+
+## HOKA Tecton X 3
+
+- Source: HOKA official product page (1155112)
+- Date: 2026-05-29
+- Images: 1 (`side`)
+
+## Nike ACG Ultrafly Trail
+
+- Source: Nike Korea official launch page (IR7317-001)
+- Date: 2026-05-29
+- Images: 1 (`side`)
+
 All trademarks, logos, and images are the property of their respective owners. These images are used under fair use for educational and informational purposes related to running shoe reviews and comparisons.
 
 모든 상표, 로고, 이미지는 각 소유자의 재산입니다. 이 이미지들은 러닝화 리뷰 및 비교와 관련된 교육적, 정보 제공 목적의 공정 사용 원칙에 따라 사용됩니다.
