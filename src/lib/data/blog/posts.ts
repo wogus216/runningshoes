@@ -2,6 +2,188 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'daegu-unique-running-courses-7',
+    slug: 'daegu-unique-running-courses-7',
+    title: '대구 이색 러닝 코스 7선 | 수성못 야경부터 팔공산 트레일까지 — 호수·도심하천·강·산 결합한 대구만의 러닝',
+    description: '수성못 야간 러닝부터 신천 도심 하천, 팔공산 트레일까지 대구에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수성못·신천·금호강 아양기찻길·두류공원·앞산·팔공산·달성습지 각 코스별 출발지·노면·주의점 가이드. 분지 폭염 대비 야간 러닝 팁 포함.',
+    thumbnail: '/images/blog/daegu-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['대구 러닝 코스', '이색 러닝', '수성못', '신천 둔치', '금호강 아양기찻길', '두류공원', '앞산', '팔공산 트레일', '달성습지', '대구 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>대구는 호수·도심하천·강·산을 분지 안에 결합한 러닝 도시</strong> — 수성못 야경, 신천 도심 종주, 팔공산 단풍 트레일, 달성습지 등 내륙 도시만의 풍경</li>
+    <li>분지 지형이라 <strong>여름 폭염("대프리카")이 변수</strong> — 7~8월은 수성못·신천 야간 러닝, 산 코스는 이른 오전이 정답</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏞️</span>
+  <div class="callout-body">
+    <p class="callout-title">대구 러닝만의 매력</p>
+    <p>대구는 분지 지형의 내륙 도시로 <strong>호수(수성못)·도심 하천(신천)·강(금호강·낙동강)·산(앞산·팔공산)·습지(달성)</strong>가 시가지를 둘러싸고 있습니다. 바다는 없지만 도심을 남북으로 관통하는 <strong>신천</strong>이 서울의 한강 같은 역할을 하고, 수성못 야경과 팔공산 단풍은 대구를 대표하는 러닝 풍경입니다. 다만 분지라 <strong>여름 폭염이 전국 최고 수준</strong>이라, 시즌과 시간대 선택이 다른 도시보다 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>수성못</strong></td><td>약 2km 둘레 (확장 5km)</td><td>하 (평지)</td><td>호수 야경 + 음악분수 + 카페</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>2</td><td><strong>신천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대구의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>금호강 아양기찻길 + 동촌유원지</strong></td><td>5~8km</td><td>하 (평지)</td><td>옛 철교 보행교 + 강변</td><td>새벽·해질녘</td></tr>
+    <tr><td>4</td><td><strong>두류공원 + 83타워</strong></td><td>약 3~4km 루프</td><td>하 (완만)</td><td>도심 대공원 + 83타워 야경</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>앞산 고산골</strong></td><td>약 4~6km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>팔공산 둘레길</strong></td><td>약 6~8km</td><td>중상</td><td>본격 산악 트레일 + 단풍</td><td>맑은 날 오전</td></tr>
+    <tr><td>7</td><td><strong>달성습지 + 화원유원지</strong></td><td>5~9km</td><td>하 (평지)</td><td>낙동강·금호강 합류 습지 + 데크</td><td>새벽·저녁 노을</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 수성못 — 대구 야경 1순위 호수 러닝</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 2호선 수성못역 → 수성못 (도보 5분)<br>
+<strong>거리</strong>: 약 2km 둘레 (인근 보행로 연결 시 5km까지)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (음악분수·야경 시간)</p>
+
+<p>수성못은 대구를 대표하는 호수 명소. 둘레 약 2km의 평탄한 산책로를 따라 <strong>야간 조명과 음악분수, 호반 카페</strong>가 어우러져 대구 야경 러닝 1순위입니다. 둘레가 짧아 여러 바퀴 돌거나 인근 들안길·수성유원지로 확장하면 5km까지 가능.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 야경 + 카페. 분지 폭염이 심한 여름엔 해가 진 뒤 시원해지는 저녁 시간대가 최적이고, 야간 조명 덕에 안전합니다. 평지라 페이스·인터벌 훈련에도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 신천 둔치 — 대구의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 수성교·대봉교·신천교 등 도심 다리마다 진입 (지하철 접근 다양)<br>
+<strong>거리</strong>: 5~15km (도심 종주, 거리 자유 조절)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·야간 (여름 폭염 회피)</p>
+
+<p>신천은 대구 도심을 남북으로 관통하는 하천으로, <strong>서울의 한강 같은 대구 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 대구 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 단 <strong>여름 폭염엔 새벽·야간이 필수</strong>이고, 그늘이 적어 한낮은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
+
+<h2>3. 금호강 아양기찻길 + 동촌유원지 — 옛 철교와 강변</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 1호선 아양교역·동촌역<br>
+<strong>거리</strong>: 5~8km (강변 + 유원지 연결)<br>
+<strong>노면</strong>: 강변 산책로 + 보행교 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>금호강을 가로지르는 <strong>아양기찻길(옛 동촌역 철교를 개조한 보행교)</strong>과 동촌유원지를 잇는 강변 코스. 옛 철길의 정취와 금호강 풍경이 어우러져 도심 하천(신천)과는 또 다른 강변 분위기를 줍니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 옛 철교 + 강변 + 유원지의 여유로운 분위기. 평지라 부담 없고, 동촌유원지 쪽으로 거리를 늘릴 수 있습니다. 강바람이 있어 여름에도 신천보다 체감이 조금 낫습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 쿠션.</p>
+
+<h2>4. 두류공원 + 83타워 — 도심 대공원과 야경</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 2호선 두류역·감삼역 (도보 7분)<br>
+<strong>거리</strong>: 약 3~4km 루프<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>두류공원은 이월드와 <strong>83타워(우방타워)</strong>를 품은 도심 대형공원. 평탄한 산책로 루프가 잘 정비돼 있고, 야간엔 83타워 조명이 배경이 되어 도심 야경 러닝을 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 루프 + 83타워 야경 + 그늘. 나무가 많아 여름에도 신천보다 그늘이 많고, 가족 단위 방문객이 많아 새벽·평일이 한적합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
+
+<h2>5. 앞산 고산골 — 도심 근접 산 트레일</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 1호선 안지랑역·현충로역 → 앞산공원·고산골 (도보 15분~버스)<br>
+<strong>거리</strong>: 약 4~6km (둘레·전망대 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 일부 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>앞산은 대구 도심 남쪽에 바로 붙은 산으로, <strong>고산골·앞산공원을 통해 접근하는 트레일</strong>이 잘 나 있습니다. 전망대에서는 대구 시가지가 한눈에 들어오고, 도심에서 지하철로 닿는 산악 러닝 입문 코스로 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 지하철로 닿는 도심 근접 트레일. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 트레일 입문자는 무리한 정상 코스보다 둘레·전망대 코스를 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화로 시작하거나, 접지력 좋은 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 트레일화 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>6. 팔공산 둘레길 — 본격 산악 트레일과 단풍</h2>
+
+<p><strong>출발지</strong>: 시내에서 버스 (동화사·갓바위 방면)<br>
+<strong>거리</strong>: 약 6~8km (둘레길 구간)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (가을 단풍철 인기)</p>
+
+<p>팔공산은 대구를 대표하는 명산으로, <strong>동화사·갓바위와 둘레길</strong>을 따라 본격 산악 트레일을 즐길 수 있습니다. 특히 가을 단풍철엔 전국에서 찾는 명소. 앞산보다 규모가 크고 기술적이라 산악 러닝 경험자에게 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 대구 최고의 산악 트레일 + 단풍. 다만 <strong>거친 돌길·임도·고도차</strong>가 있어 그립과 발 보호가 중요하고, 일반 데일리화·카본화는 절대 비추. 충분한 물과 행동식, 일몰 시간을 반드시 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>(Vibram + 쿠션) 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>7. 달성습지 + 화원유원지 — 두 강이 만나는 습지</h2>
+
+<p><strong>출발지</strong>: 화원유원지·사문진나루터 (차량·버스)<br>
+<strong>거리</strong>: 5~9km (습지 데크 + 강변)<br>
+<strong>노면</strong>: 목재 데크 + 흙길 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>달성습지는 <strong>낙동강과 금호강이 만나는 합류부의 대규모 습지</strong>로, 맹꽁이 서식지이자 철새 도래지입니다. 화원유원지·사문진나루터와 연결돼 강변과 습지를 함께 달릴 수 있는 대구의 이색 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 보기 힘든 습지·강 합류 풍경. 노을 시간대가 특히 아름답습니다. 다만 <strong>목재 데크·흙길이 섞여</strong> 미끄럼에 주의해야 하고, 일부 구간은 한적하니 야간 단독 러닝은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 데크·흙길 약간. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발.</p>
+
+<h2>본인 대구 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>수성구 거주</strong>: <strong>수성못</strong>(야간 평지) — 야경 + 페이스 러닝</li>
+  <li><strong>도심(중구·남구) 거주</strong>: <strong>신천 둔치</strong> — 거리 무제한 LSD, 대구의 한강</li>
+  <li><strong>동구·동촌 거주</strong>: <strong>금호강 아양기찻길</strong> — 옛 철교 + 강변</li>
+  <li><strong>서구·달서구 거주</strong>: <strong>두류공원 + 83타워</strong>(도심 공원) 또는 <strong>달성습지</strong>(이색 습지)</li>
+  <li><strong>트레일 입문</strong>: <strong>앞산 고산골</strong> — 지하철로 닿는 도심 근접 산</li>
+  <li><strong>산악 러닝 경험자</strong>: <strong>팔공산 둘레길</strong> — 본격 트레일 + 단풍 (트레일화 필수)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·하천 (수성못·신천·두류)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD (신천·금호강·달성)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>산 트레일 (앞산·팔공산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (수성못·두류 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>대구 러닝 — 폭염 대비와 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌡️</span>
+  <div class="callout-body">
+    <p class="callout-title">"대프리카" 폭염, 대구에서 안전하게 뛰는 법</p>
+    <p>대구는 분지 지형이라 <strong>여름 폭염이 전국 최고 수준</strong>입니다. ① 7~8월 한낮(11~16시) 러닝은 피하고 <strong>새벽·야간</strong>으로, ② 평지는 <strong>수성못·신천 야간</strong>(조명 있는 코스), 산은 <strong>이른 오전</strong>으로, ③ 수분·전해질을 평소보다 넉넉히 챙기세요. KTX로 서울에서 약 1시간 50분이라 주말 러닝 여행도 가능 — 수성못 야경 + 팔공산 단풍을 묶으면 좋습니다. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 대구 러닝과 다른 도시의 차이는?</h3>
+<p>대구는 바다가 없는 분지 내륙 도시라, 서울처럼 <strong>도심 하천(신천)</strong>이 러닝 중심이고 수성못·팔공산 같은 호수·산이 더해집니다. 가장 큰 변수는 <strong>여름 폭염</strong> — 분지 지형 탓에 전국에서 가장 더워 시즌·시간대 선택이 다른 도시보다 중요합니다.</p>
+
+<h3>Q. 대구에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>수성못</strong>이 1순위입니다. 호수 둘레 조명과 음악분수가 있어 야경이 뛰어나고 평지라 안전합니다. <strong>신천 둔치</strong>도 도심 구간은 조명이 있어 야간 LSD에 좋습니다. 반면 앞산·팔공산·달성습지는 야간에 어둡고 위험하니 낮·이른 오전에 뛰세요.</p>
+
+<h3>Q. 팔공산·앞산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>일반 도로화로는 위험합니다. 흙길·돌길·오르막이 섞여 <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 모델, 본격 산악은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 대구 마라톤 대회는 어떤 게 있나요?</h3>
+<p>대구국제마라톤을 비롯해 신천·강변 코스를 활용한 도심 대회들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'running-breathing-guide-korea',
     slug: 'running-breathing-guide-korea',
     title: '러닝 호흡법 완벽 가이드 | "조금만 뛰어도 숨차다"면 호흡부터 — 코호흡 vs 입호흡, 2:2 리듬, 옆구리 결림 방지',
