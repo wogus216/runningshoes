@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'suwon-unique-running-courses-7',
+    slug: 'suwon-unique-running-courses-7',
+    title: '수원 이색 러닝 코스 7선 | 수원화성 성곽길부터 광교호수까지 — 세계유산·호수·산 결합한 수원만의 러닝',
+    description: '유네스코 세계유산 수원화성 성곽길 러닝부터 광교호수공원, 광교산 트레일, 정조의 서호까지 수원에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수원화성·광교호수·광교산·서호·만석공원·수원천·영흥수목원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/suwon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['수원 러닝 코스', '이색 러닝', '수원화성 성곽길', '광교호수공원', '광교산', '서호공원 축만제', '만석공원', '수원천', '영흥수목원', '수원 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>수원은 세계유산 성곽·신도시 호수·명산을 한 도시에 결합한 경기권 러닝 거점</strong> — 유네스코 수원화성 성곽길, 광교호수공원, 광교산 등 역사와 현대가 공존하는 풍경</li>
+    <li>수원의 시그니처는 <strong>수원화성 성곽길</strong>(약 5.7km 성곽 한 바퀴) — 세계유산을 달리는 국내에서 손꼽히는 이색 러닝</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏯</span>
+  <div class="callout-body">
+    <p class="callout-title">수원 러닝만의 매력</p>
+    <p>수원은 인구 120만의 국내 최대 기초자치단체로, <strong>유네스코 세계유산 수원화성·신도시 호수(광교)·명산(광교산)·정조 시대 저수지(서호·만석거)·도심 하천(수원천)</strong>이 어우러져 있습니다. 무엇보다 <strong>수원화성 성곽길</strong>은 약 5.7km 성곽을 따라 달리며 세계유산을 온몸으로 느끼는 국내 유일급 코스. 광교 신도시의 대형 호수공원과 광교산 트레일까지, 역사와 현대를 짧은 이동으로 오갈 수 있는 점이 매력입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>수원화성 성곽길</strong></td><td>약 5.7km (성곽 일주)</td><td>중 (계단·완만 오르막)</td><td>유네스코 세계유산 성곽 — 시그니처</td><td>새벽·야간(조명)</td></tr>
+    <tr><td>2</td><td><strong>광교호수공원</strong></td><td>약 5~7km</td><td>하 (평지)</td><td>신도시 대형 호수 + 데크</td><td>저녁·야간</td></tr>
+    <tr><td>3</td><td><strong>광교산</strong></td><td>약 6~10km</td><td>중상</td><td>수원 명산 + 전망 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>서호공원 (축만제)</strong></td><td>약 2~4km 둘레</td><td>하 (평지)</td><td>정조 시대 저수지 + 노을</td><td>해질녘·평일 새벽</td></tr>
+    <tr><td>5</td><td><strong>만석공원</strong></td><td>약 1.5~3km 둘레</td><td>하 (평지)</td><td>도심 호수공원 루프</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>6</td><td><strong>수원천</strong></td><td>5~8km</td><td>하 (평지)</td><td>화성 관통 도심 하천</td><td>새벽·야간</td></tr>
+    <tr><td>7</td><td><strong>영흥수목원</strong></td><td>약 3~5km</td><td>하~중</td><td>도심 수목원 숲길</td><td>오전·한낮(그늘)</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 수원화성 성곽길 — 세계유산을 달리다</h2>
+
+<p><strong>출발지</strong>: 화성행궁·장안문·팔달문 등 성곽 진입점<br>
+<strong>거리</strong>: 약 5.7km (성곽 한 바퀴)<br>
+<strong>노면</strong>: 성곽 보행로 + 흙길 + 계단 + 완만한 오르막<br>
+<strong>추천 시간대</strong>: 새벽·야간(조명)</p>
+
+<p>수원화성은 정조가 축조한 <strong>유네스코 세계유산</strong>으로, 약 5.7km 성곽을 따라 한 바퀴 달리는 코스가 수원의 시그니처입니다. 장안문·화서문·팔달문·창룡문과 서장대·동장대를 거치며 성곽과 도심 풍경을 함께 즐기는 경험은 다른 도시엔 없습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 세계유산을 달리는 독보적 경험 + 야간 성곽 조명. 다만 <strong>계단·완만한 오르막(팔달산 구간)</strong>이 있어 평지 LSD와는 다르고, 관광객이 많아 이른 새벽·야간이 쾌적합니다. 흙길·돌 구간은 미끄럼에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 계단·완만 오르막 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커·안정성. 인파 구간은 페이스보다 풍경을 즐기는 회복 조깅으로.</p>
+
+<h2>2. 광교호수공원 — 신도시 대형 호수 루프</h2>
+
+<p><strong>출발지</strong>: 신분당선 광교중앙역·광교호수공원 (도보 5분)<br>
+<strong>거리</strong>: 약 5~7km (원천호수·신대호수 연결)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 저녁·야간</p>
+
+<p>광교호수공원은 <strong>원천호수와 신대호수를 품은 신도시 대형 호수공원</strong>으로, 평탄한 데크와 산책로가 호수를 따라 길게 이어집니다. 잘 정비된 신도시 코스라 페이스 유지가 쉽고, 야간 조명과 마천루 야경이 운치를 더합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 평지 + 신도시 야경 + 매끄러운 노면. 인터벌·템포 훈련에도 좋고 무릎 부담이 적습니다. 광교 신도시 거주 러너의 홈 코스.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 페이스 훈련. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
+
+<h2>3. 광교산 — 수원 명산 트레일</h2>
+
+<p><strong>출발지</strong>: 광교산 입구(상광교·반딧불이화장실 등, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (형제봉·시루봉 코스)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>광교산은 수원·용인에 걸친 명산으로, <strong>형제봉·시루봉 능선</strong>을 따라 트레일 러닝이 가능합니다. 수원 시민이 가장 즐겨 찾는 산으로, 능선에서 보는 광교 신도시와 수원 시가지 조망이 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌길·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 형제봉까지만 가볍게.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 서호공원 (축만제) — 정조 시대 저수지의 노을</h2>
+
+<p><strong>출발지</strong>: 1호선 화서역 → 서호공원 (도보 10분)<br>
+<strong>거리</strong>: 약 2~4km 둘레<br>
+<strong>노면</strong>: 흙길 + 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 해질녘·평일 새벽</p>
+
+<p>서호(축만제)는 <strong>정조가 수원화성을 지으며 만든 농업용 저수지</strong>로, 역사적 의미가 깊은 호수입니다. 둘레를 따라 달리며 보는 서호 노을이 수원 8경 중 하나로 꼽힐 만큼 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 역사 + 노을 명소 + 평탄한 호수 둘레. 거리가 짧아 여러 바퀴 돌거나 인근 농촌진흥청 부지·여기산으로 확장 가능. 한적해서 차분한 러닝에 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 데일리화.</p>
+
+<h2>5. 만석공원 — 도심 호수공원 루프</h2>
+
+<p><strong>출발지</strong>: 만석공원 (장안구, 버스)<br>
+<strong>거리</strong>: 약 1.5~3km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>만석공원은 정조 시대 저수지 <strong>만석거</strong>를 기반으로 한 도심 호수공원으로, 평탄한 둘레 루프가 잘 정비돼 있습니다. 거리가 짧아 랩 카운트·인터벌 훈련에 좋고, 도심 접근성이 뛰어납니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 도심 접근성. 노면이 부드러워 무릎 부담이 적고, 운동시설·트랙도 함께 있어 다목적입니다. 가족 단위가 많아 새벽·평일이 한적합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 데일리.</p>
+
+<h2>6. 수원천 — 화성을 관통하는 도심 하천</h2>
+
+<p><strong>출발지</strong>: 수원천 도심 다리마다 진입 (화성 일대)<br>
+<strong>거리</strong>: 5~8km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>수원천은 <strong>수원화성을 관통해 흐르는 도심 하천</strong>으로, 화홍문·방화수류정 등 화성 명소를 끼고 달릴 수 있습니다. 둔치 산책로를 따라 평지 러닝이 가능하고, 성곽길과 연계하면 역사 코스를 길게 만들 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 화성 명소 조망. 화홍문·방화수류정 구간은 야간 조명이 아름답습니다. 신호 없는 평지라 데일리 러닝에 적합합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>7. 영흥수목원 — 도심 속 수목원 숲길</h2>
+
+<p><strong>출발지</strong>: 영흥수목원 (영통구, 버스·차량)<br>
+<strong>거리</strong>: 약 3~5km (수목원 + 인근 공원)<br>
+<strong>노면</strong>: 데크 + 흙길 + 산책로<br>
+<strong>추천 시간대</strong>: 오전·한낮(숲 그늘)</p>
+
+<p>영흥수목원은 영통구에 조성된 <strong>도심 수목원</strong>으로, 다양한 수목과 숲길이 어우러져 힐링 러닝에 좋습니다. 광교호수공원·신도시 코스와는 다른 숲의 정취를 도심에서 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 속 숲 러닝 + 풍부한 그늘. 데크·흙길이 섞여 부드럽고, 여름에도 그늘 덕에 시원합니다. 비교적 신설이라 한적하고 정비 상태가 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 수원 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>팔달구·장안구(원도심) 거주</strong>: <strong>수원화성 성곽길</strong>(세계유산) + <strong>수원천</strong>(화성 하천) + <strong>만석공원</strong></li>
+  <li><strong>영통구·광교 거주</strong>: <strong>광교호수공원</strong>(신도시 호수) · <strong>영흥수목원</strong>(숲)</li>
+  <li><strong>권선구·서둔동 거주</strong>: <strong>서호공원 축만제</strong>(정조 저수지 노을)</li>
+  <li><strong>트레일·산악</strong>: <strong>광교산</strong>(형제봉·시루봉, 트레일화 권장)</li>
+  <li><strong>역사·관광 러닝</strong>: <strong>수원화성 성곽길 + 수원천</strong> — 세계유산 한 바퀴</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·하천 (광교호수·수원천·만석)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>성곽길 계단·완만 오르막 (수원화성)</strong>: 안정성·록커. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+  <li><strong>광교산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (광교호수·만석 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>수원 러닝 — 세계유산 성곽런과 신도시 호수런</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🏯</span>
+  <div class="callout-body">
+    <p class="callout-title">역사와 현대를 한 도시에서 — 수원 러닝 가이드</p>
+    <p>수원은 <strong>세계유산과 신도시를 함께 달릴 수 있는</strong> 보기 드문 도시입니다. ① 역사 러닝은 <strong>수원화성 성곽길 + 수원천</strong>(화홍문·방화수류정), ② 현대 러닝은 <strong>광교호수공원</strong>(신도시 야경), ③ 힐링은 <strong>서호 노을·영흥수목원</strong>, ④ 트레일은 <strong>광교산</strong>으로 묶으면 좋습니다. 수도권이라 지하철·신분당선으로 접근이 쉬워 주말 러닝 나들이에도 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 수원화성 성곽길은 러닝하기 괜찮나요?</h3>
+<p>약 5.7km 성곽 일주는 세계유산을 달리는 특별한 경험이지만, <strong>계단과 팔달산 구간의 완만한 오르막</strong>이 있어 평지 LSD와는 다릅니다. 관광객이 많은 낮보다 <strong>이른 새벽·야간(조명)</strong>이 쾌적하고, 흙·돌 구간은 미끄럼에 주의하세요. 페이스보다 풍경을 즐기는 코스에 가깝습니다.</p>
+
+<h3>Q. 수원에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>광교호수공원</strong>이 1순위입니다. 신도시 조명과 야경, 평탄한 데크로 야간 러닝에 최적입니다. <strong>수원화성 성곽길·수원천</strong>도 야간 조명이 아름답고, <strong>만석공원</strong>도 조명이 있어 평지 야간 러닝에 좋습니다. 광교산은 야간에 위험하니 낮에 뛰세요.</p>
+
+<h3>Q. 광교산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 수원 마라톤 대회는 어떤 게 있나요?</h3>
+<p>수원화성·광교호수·수원천 일대를 활용한 도심 마라톤들이 열립니다. 화성 코스는 역사적 분위기가, 호수·하천 코스는 평지 기록 도전이 매력입니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'ulsan-unique-running-courses-7',
     slug: 'ulsan-unique-running-courses-7',
     title: '울산 이색 러닝 코스 7선 | 태화강 십리대숲부터 영남알프스 억새까지 — 강·바다·억새산 결합한 울산만의 러닝',
