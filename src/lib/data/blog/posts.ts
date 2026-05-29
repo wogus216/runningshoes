@@ -7720,7 +7720,7 @@ export const blogPosts: BlogPost[] = [
       },
       {
         question: '북한산·도봉산 처음인데 어떤 신발이 정답인가요?',
-        answer: '북한산·도봉산은 화강암 슬랩과 바위 구간이 핵심이라 그립이 가장 중요합니다. 정답: Merrell 어질리티 피크 6 (Vibram Megagrip + Traction Lug, 와이드 옵션, 199,000원). 그 다음 적합 옵션은 Adidas 테렉스 아그라빅 4 (Continental 아웃솔). 반대로 Nike 울트라플라이(러그 3mm)와 Adidas 스피드 울트라(러그 2.5mm)는 슬랩에서 슬립 위험이 있어 비추천입니다.',
+        answer: '북한산·도봉산은 화강암 슬랩과 바위 구간이 핵심이라 그립이 가장 중요합니다. 정답: Merrell 어질리티 피크 6 (Vibram Megagrip + Traction Lug, 와이드 옵션, 199,000원). 그 다음 적합 옵션은 Adidas 테렉스 아그라빅 4 (Continental 아웃솔). 반대로 Nike 울트라플라이(러그 3mm)와 Adidas 스피드 울트라 2(평탄 트레일 특화)는 가파른 슬랩에서 불리해 비추천입니다.',
       },
       {
         question: '트레일 레이스 처음인데 어떤 신발이 좋나요?',
@@ -7875,22 +7875,22 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: FloatPro EVA 폼 — 에너지 리턴·충격 흡수 모두 평균 이하. 실측 드롭 11.5mm로 브랜드 주장(6mm) 대비 괴리 큼.</p>
 <p><strong>한국 러너 노트</strong>: <strong>북한산 인수봉 접근로·도봉산 바위 구간 그립은 국내 트레일화 중 최상위권</strong>. 와이드 옵션이 정식 출시된 유일한 Vibram 트레일화로 발볼 넓은 한국 러너에게 사실상 유일한 정답.</p>
 
-<h3>💨 6. 속도형 — <a href="/shoes/adidas-terrex-agravic-speed-ultra">Adidas Terrex Agravic Speed Ultra</a></h3>
+<h3>💨 6. 속도형 — <a href="/shoes/adidas-terrex-agravic-speed-ultra">Adidas Terrex Agravic Speed Ultra 2</a></h3>
 
 <table>
   <tbody>
-    <tr><td><strong>한국 가격</strong></td><td>279,000원 (1세대 기준, 2세대 미확인)</td></tr>
-    <tr><td>무게 / 드롭</td><td>259g / 0mm</td></tr>
-    <tr><td>스택 (힐/포어풋)</td><td>31mm / 30mm</td></tr>
-    <tr><td>아웃솔</td><td>Continental Rubber (풀 길이, 러그 2.5mm)</td></tr>
-    <tr><td>미드솔</td><td>Lightstrike Pro (풀 길이, 카본 없음)</td></tr>
-    <tr><td>RunRepeat 점수</td><td>89/100</td></tr>
+    <tr><td><strong>한국 가격</strong></td><td>약 279,000원 (추정, 2세대 정가 미확정)</td></tr>
+    <tr><td>무게 / 드롭</td><td>265g / 8mm (1세대 0.3mm에서 전환)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>44mm / 36mm (1세대 31/30에서 대폭 증가)</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 3~4mm, 1세대 2.5mm에서 강화)</td></tr>
+    <tr><td>미드솔</td><td>Lightstrike Pro 소프트 리튜닝 + Energy Rods (카본 아님)</td></tr>
+    <tr><td>랩 데이터</td><td>RunRepeat 미게시 (2025-12 출시, 공식 발표 기준)</td></tr>
   </tbody>
 </table>
 
-<p><strong>강점</strong>: 전족부 에너지 리턴 70.5% — 트레일화 최상위권 추진력. 259g 초경량 + Lightstrike Pro 조합. Continental 아웃솔로 건식 그립 우수.</p>
-<p><strong>약점</strong>: 러그 2.5mm 매우 얕음 — 진흙·가파른 기술 지형에서 슬립 위험. <strong>토박스 70.5mm 협소 + 미드풋 매우 타이트</strong>로 발볼 넓은 러너 완전 배제.</p>
-<p><strong>한국 러너 노트</strong>: 0mm 드롭 + 2.5mm 러그로 북한산·관악산 테크니컬 지형에는 부적합. 반면 <strong>굿러너 스카이레이스 임도 구간·그루밍된 평탄 트레일에서는 국내 트레일화 최상위 스피드</strong>. 발볼 좁은 러너 한정 추천.</p>
+<p><strong>강점</strong>: 힐 슬링샷 구조 신설로 1세대 최대 약점이던 힐 안정성 대폭 개선. 부드럽게 리튜닝된 Lightstrike Pro로 장거리 쿠션 피로 감소. Energy Rods 추진력은 유지돼 완만 트레일에서 슈퍼슈즈급 스피드. 러그 3~4mm로 트랙션 강화.</p>
+<p><strong>약점</strong>: 제로드롭 → 8mm 드롭 전환으로 1세대 제로드롭 팬에겐 호불호. 극도로 테크니컬한 암릉에서는 공격적 반응성이 컨트롤 방해. 토박스는 여전히 좁은 편(2세대 실측 미공개)으로 발볼 넓은 러너 주의.</p>
+<p><strong>한국 러너 노트</strong>: 1세대 대비 힐 안정성·드롭이 개선돼 다운힐 부담이 줄었지만, 북한산·관악산 같은 거친 암릉보다는 <strong>굿러너 스카이레이스 임도·그루밍된 평탄 트레일 50K 이하 레이스에서 진가</strong>를 발휘합니다. 전족·미드풋 스트라이커에게 추천. (2025-12 출시로 RunRepeat 랩 미게시 — 수치는 공식 발표·전문 리뷰 기준)</p>
 
 <h3>💰 7. 가성비 — <a href="/shoes/asics-gel-venture-10">ASICS Gel Venture 10</a></h3>
 
@@ -7958,10 +7958,10 @@ export const blogPosts: BlogPost[] = [
       <td><strong>북한산·도봉산 정답</strong></td>
     </tr>
     <tr>
-      <td>Adidas Speed Ultra</td>
+      <td>Adidas Speed Ultra 2</td>
       <td>속도형</td>
       <td>279,000원</td>
-      <td>259g</td>
+      <td>265g</td>
       <td>좁음 ⚠️</td>
       <td>스카이레이스 임도 한정</td>
     </tr>
@@ -8035,7 +8035,7 @@ export const blogPosts: BlogPost[] = [
     </tr>
     <tr>
       <td>완만 트레일 스피드 훈련 (좁은 발폭)</td>
-      <td>Adidas Speed Ultra (279,000원)</td>
+      <td>Adidas Speed Ultra 2 (279,000원)</td>
       <td>0드롭 + 70.5% 에너지 리턴</td>
     </tr>
     <tr>
