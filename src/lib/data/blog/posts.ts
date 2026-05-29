@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'gangneung-unique-running-courses-7',
+    slug: 'gangneung-unique-running-courses-7',
+    title: '강릉 이색 러닝 코스 7선 | 경포호수 벚꽃부터 정동진 일출까지 — 호수·바다·솔숲 결합한 강릉만의 러닝',
+    description: '경포호수 둘레 러닝부터 안목 커피거리 해변, 정동진 일출, 강릉 바우길 트레일까지 강릉에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 경포호·경포해변·정동진·바우길·송정 솔숲·남대천·안반데기 각 코스별 출발지·노면·주의점 가이드. 러닝 여행자 필독.',
+    thumbnail: '/images/blog/gangneung-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['강릉 러닝 코스', '이색 러닝', '경포호수', '안목 커피거리', '정동진 일출', '강릉 바우길', '송정 솔숲', '남대천', '안반데기', '강릉 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>강릉은 호수·동해·솔숲·고지대를 결합한 강원권 러닝 여행지</strong> — 경포호 벚꽃, 안목 커피거리 해변, 정동진 일출, 바우길 트레일 등 관광과 러닝을 묶기 좋은 풍경</li>
+    <li>강릉의 시그니처는 <strong>경포호수 둘레 + 경포해변</strong> — 호수와 동해를 한 코스에서 오가는 평지 러닝</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☕</span>
+  <div class="callout-body">
+    <p class="callout-title">강릉 러닝만의 매력</p>
+    <p>강릉은 <strong>호수(경포호)·동해 바다(경포·안목·정동진)·솔숲(송정·경포)·둘레 트레일(바우길)·고지대(안반데기·대관령)</strong>가 어우러진 강원권 러닝 여행지입니다. 경포호 둘레를 돌다 바로 경포해변으로 이어지고, <strong>안목 커피거리</strong>에서 커피 한잔으로 마무리하는 러닝은 강릉만의 낭만. 정동진 일출, 바우길 둘레 트레일, 솔향 가득한 송림까지 관광과 러닝을 함께 즐기기 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>경포호수 둘레</strong></td><td>약 4~6km 둘레</td><td>하 (평지)</td><td>경포대 + 벚꽃 + 호수 — 시그니처</td><td>봄 새벽·저녁</td></tr>
+    <tr><td>2</td><td><strong>경포해변 ~ 안목 커피거리</strong></td><td>5~8km</td><td>하 (평지)</td><td>동해 해변 + 커피거리</td><td>새벽·해질녘</td></tr>
+    <tr><td>3</td><td><strong>정동진 해안</strong></td><td>5~8km</td><td>하</td><td>한반도 일출 명소 + 모래시계공원</td><td>일출</td></tr>
+    <tr><td>4</td><td><strong>강릉 바우길 (바다호숫길)</strong></td><td>약 8~14km</td><td>중</td><td>호수·바다·솔숲 둘레 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>5</td><td><strong>송정해변 솔숲</strong></td><td>약 4~6km</td><td>하</td><td>해변 + 소나무 숲길</td><td>오전·해질녘</td></tr>
+    <tr><td>6</td><td><strong>남대천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 LSD</td><td>새벽·야간</td></tr>
+    <tr><td>7</td><td><strong>안반데기</strong></td><td>약 4~6km</td><td>중상</td><td>고지대 운해·일출 + 배추밭</td><td>새벽·일출</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 경포호수 둘레 — 호수와 벚꽃, 강릉의 시그니처</h2>
+
+<p><strong>출발지</strong>: 경포대·경포호 (버스·차량)<br>
+<strong>거리</strong>: 약 4~6km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
+
+<p>경포호수는 강릉을 대표하는 호수로, <strong>경포대와 벚꽃길</strong>이 어우러진 둘레 산책로가 평탄하게 이어집니다. 봄철 경포호 벚꽃은 전국적 명소이며, 호수를 돌다 바로 경포해변으로 이어져 호수+바다를 한 번에 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 둘레 + 봄 벚꽃 + 바다 연계. 평지라 누구나 즐길 수 있고, 거리를 늘리려면 경포해변·가시연습지로 확장 가능합니다. 강릉 러닝 여행의 베이스 코스.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 경포해변 ~ 안목 커피거리 — 동해 해변과 커피</h2>
+
+<p><strong>출발지</strong>: 경포해변 (안목해변 방면)<br>
+<strong>거리</strong>: 5~8km (경포~안목 해안)<br>
+<strong>노면</strong>: 해변 산책로 + 데크 + 일부 모래<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>경포해변에서 안목해변(커피거리)까지 이어지는 <strong>동해 해변 코스</strong>입니다. 넓은 백사장과 솔숲을 끼고 달리다, <strong>안목 커피거리</strong>에서 바다를 보며 커피로 마무리하는 강릉만의 러닝 루틴이 매력적입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 동해 해변 + 커피거리 마무리라는 강릉 특유의 낭만. 평탄한 해변 산책로라 부담이 적고, 일출·노을 시간이 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해변 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
+
+<h2>3. 정동진 해안 — 한반도 일출 명소</h2>
+
+<p><strong>출발지</strong>: 정동진역·모래시계공원 (차량·기차)<br>
+<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
+<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
+<strong>추천 시간대</strong>: 일출</p>
+
+<p>정동진은 <strong>바다와 가장 가까운 기차역이자 일출 명소</strong>로, 모래시계공원과 해안 산책로를 따라 일출을 보며 달리는 경험이 특별합니다. 새해·기념일 일출 러닝지로 인기입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한반도 대표 일출 + 평탄한 해안 러닝. 정동진~썬크루즈 방면으로 거리를 늘릴 수 있습니다. 바람이 강한 날이 많으니 윈드재킷을 챙기고, 일출 시간을 미리 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
+
+<h2>4. 강릉 바우길 (바다호숫길) — 호수·바다·솔숲 둘레 트레일</h2>
+
+<p><strong>출발지</strong>: 바우길 구간별 입구 (경포·사천 일대)<br>
+<strong>거리</strong>: 약 8~14km (구간 선택)<br>
+<strong>노면</strong>: 흙길 + 솔숲 + 해안 데크 + 일부 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>바우길은 강릉을 한 바퀴 잇는 둘레길로, 특히 <strong>바다호숫길(5구간)</strong>은 경포호·경포해변·솔숲을 두루 지나는 인기 코스입니다. 호수·바다·숲을 한 코스에서 만나는 강릉 트레일의 정수입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 호수+바다+솔숲을 잇는 다채로운 둘레 트레일. 다만 <strong>흙길·임도·완만한 오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 구간이 길어 거리·체력에 맞게 끊어 뛰세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>5. 송정해변 솔숲 — 해변과 소나무 숲길</h2>
+
+<p><strong>출발지</strong>: 송정해변 (강릉 시내 인근)<br>
+<strong>거리</strong>: 약 4~6km (해변 + 솔숲)<br>
+<strong>노면</strong>: 솔숲 흙길 + 해변 산책로<br>
+<strong>추천 시간대</strong>: 오전·해질녘</p>
+
+<p>송정해변은 <strong>울창한 소나무 숲과 백사장이 어우러진 해변</strong>으로, "솔향 강릉"을 대표하는 솔숲 러닝이 가능합니다. 해변과 솔숲을 오가며 달리는 코스로, 한적하고 그늘이 많아 여름에도 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 소나무 숲 그늘 + 해변의 조합. 솔숲 흙길이 발 충격을 덜어주고 피톤치드가 가득합니다. 경포·안목 방면으로 연결해 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 솔숲 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>6. 남대천 둔치 — 도심 관통 하천 LSD</h2>
+
+<p><strong>출발지</strong>: 남대천 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~10km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>남대천은 강릉 도심을 관통해 동해로 흐르는 하천으로, <strong>둔치 산책로를 따라 평지 LSD</strong>가 가능합니다. 대관령에서 발원해 바다로 이어지는 물길을 따라 거리 조절이 자유롭습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 하천 평지 + 거리 무제한. 강릉 시내 거주 러너의 데일리 코스로, 단오제가 열리는 남대천 일대의 정취도 느낄 수 있습니다. 여름엔 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션.</p>
+
+<h2>7. 안반데기 — 고지대 운해와 일출</h2>
+
+<p><strong>출발지</strong>: 안반데기 (왕산면, 차량)<br>
+<strong>거리</strong>: 약 4~6km (전망·둘레 코스)<br>
+<strong>노면</strong>: 흙길 + 임도 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 새벽·일출</p>
+
+<p>안반데기는 해발 1,100m 고지대의 <strong>고랭지 배추밭과 운해·일출 명소</strong>입니다. 능선을 따라 펼쳐진 배추밭과 풍력발전기, 새벽 운해가 어우러진 풍경이 압권으로, 고지대 트레일·일출 러닝의 특별한 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 고지대 운해·일출이라는 드라마틱한 풍경. 다만 <strong>가파른 오르막·흙길·고도</strong>가 있어 일반 데일리화로는 한계가 있고, 새벽엔 추우니 보온에 유의하세요. 차량 접근 후 가볍게 뛰는 코스에 가깝습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>본인 강릉 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>경포·강문 일대 거주·여행자</strong>: <strong>경포호수 둘레 + 경포해변~안목 커피거리</strong> — 호수·바다 한 번에</li>
+  <li><strong>강릉 시내 거주</strong>: <strong>남대천 둔치</strong>(도심 하천 LSD) · <strong>송정 솔숲</strong></li>
+  <li><strong>정동진·옥계 방면</strong>: <strong>정동진 해안</strong>(일출)</li>
+  <li><strong>둘레·트레일</strong>: <strong>강릉 바우길</strong>(바다호숫길) → <strong>안반데기</strong>(고지대 일출)</li>
+  <li><strong>커피+러닝 낭만</strong>: <strong>경포해변~안목 커피거리</strong> — 러닝 후 바다 커피</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·해변·하천 (경포호·경포해변·남대천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>해변·하천 LSD (남대천·정동진)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>바우길·안반데기 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>솔숲 힐링런 (송정)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>강릉 러닝 — 커피와 바다, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">커피의 도시에서 달리다 — 강릉 러닝 여행</p>
+    <p>강릉은 <strong>바다·호수·커피를 한 번에 즐기는</strong> 러닝 여행지입니다. ① 도착 첫날은 <strong>경포호수 둘레 + 경포해변</strong>, ② 커피 러닝은 <strong>안목 커피거리</strong>(러닝 후 바다 커피), ③ 일출은 <strong>정동진·안반데기</strong>, ④ 본격 트레일은 <strong>바우길</strong>로 묶으면 좋습니다. KTX로 서울에서 약 1시간 50분, 러닝 후 강릉 커피·초당두부까지 더하면 완벽한 미식 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주</a>·<a href="/blog/gyeongju-unique-running-courses-7">경주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 강릉 러닝 여행, 어디부터 뛰면 좋나요?</h3>
+<p><strong>경포호수 둘레 + 경포해변</strong>이 1순위입니다. 호수와 동해를 한 코스에서 오가는 평지라 부담이 없고, <strong>안목 커피거리</strong>에서 커피로 마무리하면 강릉다운 러닝이 완성됩니다. 일출을 원하면 정동진, 트레일은 바우길을 추가하세요.</p>
+
+<h3>Q. 강릉에서 일출 러닝하기 좋은 곳은?</h3>
+<p><strong>정동진</strong>이 대표 일출 명소입니다. 해안 산책로를 따라 일출을 보며 달릴 수 있습니다. 고지대 운해·일출을 원하면 <strong>안반데기</strong>(해발 1,100m)가 특별하지만 차량 접근이 필요하고 새벽엔 추우니 보온에 유의하세요. 경포해변도 동해 일출이 아름답습니다.</p>
+
+<h3>Q. 바우길·안반데기 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·임도·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 강릉 마라톤 대회는 어떤 게 있나요?</h3>
+<p>경포·동해안·남대천 일대를 활용한 해안·도심 마라톤들이 열립니다. 바닷바람이 변수지만 경관이 빼어나고 대부분 평지라 기록 도전에도 좋습니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'gyeongju-unique-running-courses-7',
     slug: 'gyeongju-unique-running-courses-7',
     title: '경주 이색 러닝 코스 7선 | 첨성대 야경부터 남산 노천 박물관까지 — 신라 유적·호수·산 결합한 경주만의 러닝',
