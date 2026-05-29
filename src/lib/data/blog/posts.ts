@@ -2,6 +2,187 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'jeju-unique-running-courses-7',
+    slug: 'jeju-unique-running-courses-7',
+    title: '제주 이색 러닝 코스 7선 | 올레길 해안 절경부터 새별오름 억새까지 — 바다·숲·오름 결합한 제주만의 러닝',
+    description: '제주올레 해안 트레일부터 사려니숲, 협재 에메랄드 해변, 새별오름까지 제주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 올레 7코스·사려니숲길·협재해변·용두암 해안도로·함덕 서우봉·새별오름·한라산 둘레길 가이드. 러닝 여행자 필독.',
+    thumbnail: '/images/blog/jeju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['제주 러닝 코스', '이색 러닝', '제주올레', '사려니숲길', '협재해변', '용두암 해안도로', '새별오름', '한라산 둘레길', '러닝 여행', '제주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>제주는 바다·숲·오름·해안도로를 한 섬에 결합한 러닝 여행의 끝판왕</strong> — 올레길 해안 절경, 사려니 삼나무숲, 협재 에메랄드 해변, 새별오름 억새 등 육지엔 없는 풍경</li>
+    <li>관광과 러닝을 묶기 좋은 시즌 명소 — 다만 <strong>바람·현무암 돌길·변덕스러운 날씨</strong>가 변수라 코스·신발 선택이 중요</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">제주 러닝만의 매력</p>
+    <p>제주는 <strong>해안(올레·협재·함덕)·숲(사려니·한라산 둘레)·오름(새별·서우봉)·해안도로(용두암~이호)</strong>가 섬 곳곳에 흩어진 러닝 여행지입니다. 에메랄드빛 바다를 끼고 달리다 삼나무 숲으로 들어가고, 억새 가득한 오름을 오르는 경험은 제주에서만 가능. 다만 <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 육지 도시 러닝보다 코스·신발·시간대 선택이 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>제주올레 7코스 (외돌개~월평)</strong></td><td>약 15km (구간 분할 가능)</td><td>중 (해안 트레일)</td><td>해안 절벽 + 외돌개 + 돌길</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>사려니숲길</strong></td><td>약 10km (왕복 조절)</td><td>하~중 (평탄 흙길)</td><td>삼나무 숲 힐링 트레일</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>3</td><td><strong>협재·금능 해변</strong></td><td>5~8km</td><td>하 (평지)</td><td>에메랄드 바다 + 비양도 뷰</td><td>새벽·해질녘</td></tr>
+    <tr><td>4</td><td><strong>용두암~이호테우 해안도로</strong></td><td>5~9km</td><td>하 (평지)</td><td>제주시 해안 + 말등대 + 일몰</td><td>해질녘·야간</td></tr>
+    <tr><td>5</td><td><strong>함덕해변 + 서우봉</strong></td><td>5~7km (해변+오름)</td><td>하~중</td><td>해변 + 오름 둘레 전망</td><td>새벽·오전</td></tr>
+    <tr><td>6</td><td><strong>새별오름</strong></td><td>약 1.8km 둘레 (확장)</td><td>중 (오르막)</td><td>억새 화산 언덕 + 전망</td><td>맑은 날 오전·해질녘</td></tr>
+    <tr><td>7</td><td><strong>한라산 둘레길 (동백길 등)</strong></td><td>약 7~10km</td><td>중상</td><td>원시림 숲 트레일</td><td>맑은 날 오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 제주올레 7코스 — 외돌개에서 만나는 해안 절경 트레일</h2>
+
+<p><strong>출발지</strong>: 외돌개 (서귀포 시내 인근, 버스·차량)<br>
+<strong>거리</strong>: 약 15km (구간 분할 가능)<br>
+<strong>노면</strong>: 해안 흙길 + 돌길 + 일부 데크·아스팔트<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>제주올레 중에서도 손꼽히는 해안 절경 코스. <strong>외돌개·돔베낭길·서건도</strong>를 거치며 서귀포 해안 절벽과 바다를 끼고 달립니다. 전 구간 트레일에 가깝고 풍경이 압도적이라, 제주 러닝 여행의 하이라이트로 꼽힙니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한국 최고 수준의 해안 트레일 풍경. 다만 <strong>돌길·흙길·계단이 섞여</strong> 일반 도로화로는 발이 배기고 미끄럽습니다. 15km 전체가 부담되면 외돌개~돔베낭길 구간만 짧게 끊어 뛰어도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력 있는 트레일화 또는 안정성 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화나 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>2. 사려니숲길 — 삼나무 숲 힐링 트레일</h2>
+
+<p><strong>출발지</strong>: 사려니숲길 입구 (비자림로, 버스·차량)<br>
+<strong>거리</strong>: 약 10km (왕복·구간 조절 가능)<br>
+<strong>노면</strong>: 평탄 흙길 + 화산송이(스코리아)<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>사려니숲길은 <strong>쭉 뻗은 삼나무·편백 숲</strong>을 따라 이어지는 평탄한 트레일. 비교적 완만하고 노면이 부드러워 트레일 입문자도 부담 없이 달릴 수 있고, 숲 그늘 덕에 한낮에도 시원합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 평탄한 숲 트레일이라 진입 장벽이 낮고, 피톤치드 가득한 힐링 러닝. 화산송이(붉은 흙) 노면이 무릎 충격을 덜어줍니다. 다만 비 온 뒤엔 질척이고, 일부 구간은 통제될 수 있으니 개방 여부를 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평탄 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난하고, 비 온 뒤엔 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화.</p>
+
+<h2>3. 협재·금능 해변 — 에메랄드 바다와 비양도</h2>
+
+<p><strong>출발지</strong>: 협재해수욕장 (한림, 버스·차량)<br>
+<strong>거리</strong>: 5~8km (협재~금능 해변 연결)<br>
+<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>협재·금능은 <strong>제주에서 가장 에메랄드빛이 선명한 해변</strong>으로, 비양도를 배경으로 달리는 풍경이 일품입니다. 해변을 잇는 산책로가 평탄해 가벼운 러닝과 인증샷에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 에메랄드 바다 + 비양도 뷰의 평지 러닝. 새벽·노을 시간대가 특히 아름답습니다. 단 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 크게 떨어집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>4. 용두암~이호테우 해안도로 — 제주시 일몰 러닝</h2>
+
+<p><strong>출발지</strong>: 용두암 (제주시, 공항 근접·버스)<br>
+<strong>거리</strong>: 5~9km (해안도로 따라)<br>
+<strong>노면</strong>: 해안 아스팔트 + 보행로<br>
+<strong>추천 시간대</strong>: 해질녘·야간 (일몰·조명)</p>
+
+<p>제주시 용두암에서 이호테우해변까지 이어지는 <strong>해안도로</strong>는 평탄하고 접근성이 좋아 제주시 러너의 데일리 코스입니다. 이호테우의 <strong>말 모양 등대</strong>와 일몰이 명물.</p>
+
+<p><strong>이 코스의 매력</strong>: 평지 해안도로 + 일몰 + 공항 근접. <strong>제주 여행 첫날·마지막날 공항 근처에서 가볍게</strong> 뛰기 좋습니다. 야간엔 조명이 있어 비교적 안전하나, 차도 인접 구간은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 야간 시인성. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리화.</p>
+
+<h2>5. 함덕해변 + 서우봉 — 해변과 오름을 한 번에</h2>
+
+<p><strong>출발지</strong>: 함덕해수욕장 (제주시 동부, 버스·차량)<br>
+<strong>거리</strong>: 5~7km (해변 + 서우봉 둘레)<br>
+<strong>노면</strong>: 해변 산책로 + 오름 흙길·계단<br>
+<strong>추천 시간대</strong>: 새벽·오전</p>
+
+<p>함덕해변의 에메랄드 바다와 바로 옆 <strong>서우봉 오름</strong>을 묶은 코스. 평탄한 해변을 달리다 서우봉 둘레길로 올라 함덕 전경과 바다를 내려다보는 구성이 매력적입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해변(평지)과 오름(오르막)을 한 번에. 서우봉 정상에서 보는 함덕 바다가 압권입니다. 오름 구간은 흙길·계단이라 미끄럼에 주의하고, 봄철엔 유채꽃이 더해집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 오름 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션, 오름 흙길이 많으면 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>.</p>
+
+<h2>6. 새별오름 — 억새로 뒤덮인 화산 언덕</h2>
+
+<p><strong>출발지</strong>: 새별오름 주차장 (제주 서부, 차량)<br>
+<strong>거리</strong>: 약 1.8km 둘레 (인근 확장 가능)<br>
+<strong>노면</strong>: 흙길 + 잔디 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전·해질녘</p>
+
+<p>새별오름은 <strong>억새로 유명한 제주 대표 오름</strong>으로, 가을 억새철엔 전국에서 찾는 명소입니다. 둘레는 짧지만 가파른 오르막이 있어 짧고 강한 언덕 훈련에 좋고, 정상 전망이 일품입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 제주 특유의 화산 오름 + 억새 풍경. 거리는 짧아도 경사가 가팔라 <strong>힐 트레이닝·인터벌</strong> 효과가 큽니다. 다만 잔디·흙 경사라 우천 후 매우 미끄럽고, 바람이 강하니 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 가파른 오르막 + 흙·잔디 그립. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a> 같은 접지력 좋은 트레일화. 일반 데일리화는 미끄러워 위험합니다.</p>
+
+<h2>7. 한라산 둘레길 — 원시림 숲 트레일</h2>
+
+<p><strong>출발지</strong>: 둘레길 구간별 입구 (동백길 등, 차량)<br>
+<strong>거리</strong>: 약 7~10km (구간별)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>한라산 둘레길은 <strong>한라산 중산간을 수평으로 잇는 원시림 트레일</strong>로, 정상 등반과 달리 완만하게 숲을 즐길 수 있습니다(동백길·수악길 등). 깊은 숲의 고요함과 제주 특유의 식생이 매력입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 본격 숲 트레일 + 원시림. 다만 <strong>돌길·흙길·고도차</strong>가 있어 그립과 발 보호가 중요하고, 통신·날씨 변화에 대비해야 합니다. 일부 구간은 통제되니 개방 여부와 일몰 시간을 반드시 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>제주 여행 첫날·공항 근처</strong>: <strong>용두암~이호테우 해안도로</strong> — 평지 일몰 러닝</li>
+  <li><strong>인증샷·에메랄드 바다</strong>: <strong>협재·금능 해변</strong> 또는 <strong>함덕 + 서우봉</strong></li>
+  <li><strong>힐링·숲</strong>: <strong>사려니숲길</strong>(평탄) 또는 <strong>한라산 둘레길</strong>(본격)</li>
+  <li><strong>해안 절경 트레일</strong>: <strong>제주올레 7코스</strong> — 제주 러닝의 하이라이트</li>
+  <li><strong>짧고 강한 언덕 훈련</strong>: <strong>새별오름</strong> — 억새 + 경사</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 해변·해안도로 (협재·용두암·함덕)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>해변 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>올레·오름·한라산 둘레 트레일 (돌길·흙길)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>숲 힐링런 (사려니)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>제주 러닝 여행 — 비행기로 떠나는 러닝</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">✈️</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 여행지로 제주를 200% 즐기는 법</p>
+    <p>제주는 <strong>관광과 러닝을 묶기 가장 좋은 국내 여행지</strong>입니다. ① 도착 첫날·마지막날은 <strong>용두암~이호테우 해안도로</strong>(공항 근접)에서 가볍게, ② 본 러닝은 <strong>올레 7코스·협재 해변</strong>, ③ 힐링은 <strong>사려니숲길</strong>, ④ 짧고 강하게는 <strong>새별오름</strong>으로 묶으면 완벽한 러닝 여행이 됩니다. 단 <strong>제주는 바람·날씨가 변덕스러우니</strong> 윈드재킷과 여벌, 트레일 코스용 신발을 챙기세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 제주 러닝과 육지 도시 러닝의 차이는?</h3>
+<p>제주는 도심 하천·공원 위주의 육지 도시와 달리 <strong>해안 트레일(올레)·오름·삼나무숲·해안도로</strong>가 중심입니다. 관광과 묶기 좋은 대신, <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 트레일 대응 신발과 날씨 대비가 더 중요합니다.</p>
+
+<h3>Q. 제주 여행 가서 가볍게 뛸 만한 곳은?</h3>
+<p>공항과 가까운 <strong>용두암~이호테우 해안도로</strong>가 1순위입니다. 평지에 접근성이 좋아 여행 첫날·마지막날 가볍게 뛰기 좋고, 일몰이 아름답습니다. 에메랄드 바다를 원하면 <strong>협재·금능 해변</strong>도 평탄해 부담 없습니다.</p>
+
+<h3>Q. 올레길·오름은 어떤 신발이 필요한가요?</h3>
+<p>올레길과 오름은 현무암 돌길·흙길·경사가 많아 일반 도로화로는 미끄럽고 발이 배깁니다. <strong>접지력 좋은 트레일화</strong>가 필요하며, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 제주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>제주국제관광마라톤 등 해안·중산간 경관을 활용한 대회들이 열립니다. 바닷바람과 업다운이 변수라 페이스 관리가 중요하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
     id: 'daegu-unique-running-courses-7',
     slug: 'daegu-unique-running-courses-7',
     title: '대구 이색 러닝 코스 7선 | 수성못 야경부터 팔공산 트레일까지 — 호수·도심하천·강·산 결합한 대구만의 러닝',
