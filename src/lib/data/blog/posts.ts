@@ -2,6 +2,345 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-garmin-run-korea-half-marathon',
+    slug: '2026-garmin-run-korea-half-marathon',
+    title: '2026 가민런 코리아, 하프 신설 + 1만 2천명 확대 | "접수 2분컷" 대회가 돌아온다 — 일정·접수·코스 총정리',
+    description: '작년 3,000명 정원이 접수 2분 만에 마감된 가민런 코리아가 2026년 약 1만 2천명 규모로 확대 개최됩니다. 기존 10K에 더해 하프코스 신설, 2026년 11월 15일 고양종합운동장, 7월 1~3일 래플(추첨) 접수. 가민 워치 연계 데이터 러닝 대회의 일정·접수 방식·코스·준비 팁을 한 번에 정리.',
+    thumbnail: '/images/blog/2026-garmin-run-korea-half-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-01',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['가민런', '가민런 코리아', '2026 가민런', '하프마라톤', '고양 마라톤', '가민 워치', '마라톤 접수', '래플 추첨', '데이터 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 가민런 코리아</strong>가 <strong>2026년 11월 15일 고양종합운동장</strong>에서 약 <strong>1만 2천명 규모</strong>로 확대 개최됩니다(작년 3,000명)</li>
+    <li>올해 최대 변화는 <strong>하프코스(21.1km) 신설</strong> — 기존 10K에 더해 더 많은 러너가 참가할 수 있게 됐습니다</li>
+    <li>접수는 <strong>7월 1~3일 신청 → 7월 7일 발표</strong>의 <strong>래플(추첨)</strong> 방식. 작년처럼 선착순 "2분컷"이 아니라 추첨이라 부담이 줄었습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⌚</span>
+  <div class="callout-body">
+    <p class="callout-title">"접수 2분컷" 대회가 뭐길래</p>
+    <p>가민런 코리아는 GPS 워치 브랜드 <strong>가민(Garmin)</strong>이 주최하는 데이터 기반 러닝 대회입니다. <strong>2025년 첫 대회(하남)</strong> 때 정원 3,000명이 <strong>접수 시작 약 2분 만에 전량 마감</strong>되며 화제가 됐죠. 소규모 정원 + 각인 메달·기록 포스터 같은 프리미엄 경험 + 가민 워치 연계 혜택이 인기 요인이었습니다. 그 대회가 2026년 <strong>4배 규모로 확대 + 하프 신설</strong>로 돌아옵니다.</p>
+  </div>
+</div>
+
+<h2>2026 가민런 코리아 한눈에</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>대회일</td><td><strong>2026년 11월 15일(일)</strong></td></tr>
+    <tr><td>장소</td><td><strong>고양종합운동장</strong></td></tr>
+    <tr><td>규모</td><td>약 1만 2천명 (작년 3,000명 → 4배 확대)</td></tr>
+    <tr><td>코스</td><td><strong>하프(21.1km) 신설</strong> + 10K</td></tr>
+    <tr><td>접수 신청</td><td>2026년 7월 1일 ~ 7월 3일</td></tr>
+    <tr><td>당첨 발표</td><td>2026년 7월 7일</td></tr>
+    <tr><td>접수 방식</td><td><strong>래플(추첨)</strong></td></tr>
+  </tbody>
+</table>
+
+<p class="caption">일정·코스 정보는 주최 측 공지 및 러닝 정보 채널 기준입니다. 참가비·정원 세부 배분 등 일부 항목은 공식 접수 페이지 오픈 시 확정되니, 신청 전 가민 공식 채널을 한 번 더 확인하세요.</p>
+
+<h2>가장 큰 변화 ① — 하프코스 신설</h2>
+
+<p>그동안 가민런은 10K·5K 중심이라 "하프를 뛰고 싶다"는 수요가 많았습니다. 2026년 <strong>하프코스(21.1km)가 새로 생기면서</strong>, 풀코스는 아직 부담스럽지만 10K는 넘어선 중급 러너들이 도전하기 좋아졌습니다. 11월 중순 개최라 <strong>가을~초겨울 시즌 하프 도전</strong>으로 일정을 잡기에도 적당합니다.</p>
+
+<h2>가장 큰 변화 ② — 선착순 대신 래플(추첨)</h2>
+
+<p>작년의 "2분컷" 선착순 트라우마를 의식한 듯, 2026년은 <strong>래플(추첨) 방식</strong>입니다. <strong>7월 1~3일 사이 신청</strong>해두면 <strong>7월 7일 당첨자를 발표</strong>합니다. 접수창 오픈 순간 서버와 싸울 필요가 없어졌지만, 인기가 높은 만큼 <strong>경쟁률은 높을 것</strong>으로 보입니다. 신청 기간을 놓치지 않는 게 핵심입니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 캘린더에 미리 등록</p>
+    <p><strong>7월 1일(신청 시작)</strong>과 <strong>7월 7일(발표)</strong>을 미리 알림으로 등록해두세요. 래플은 신청만 해두면 되니 선착순처럼 긴장할 필요는 없지만, <strong>신청 마감(7/3)</strong>을 놓치면 끝입니다. 다른 가을 대회와 일정이 겹치는지도 함께 확인하세요.</p>
+  </div>
+</div>
+
+<h2>가민런만의 특징 — "데이터로 달리는" 대회</h2>
+
+<p>가민런은 단순 완주 대회가 아니라 <strong>가민의 'Beat Yesterday'(어제의 나를 이긴다) 철학</strong>을 담은 데이터 러닝 대회입니다. 2025년 1회 기준으로 다음과 같은 경험을 제공했습니다(2026년 세부는 변동 가능).</p>
+
+<ul>
+  <li><strong>기록 각인 메달·기록 포스터</strong> — 완주 후 개인 기록이 새겨진 메달과 포토월</li>
+  <li><strong>가민 워치 체험 부스</strong> — 최신 포러너 등 직접 착용 체험</li>
+  <li><strong>페이스별 스타트 그룹</strong> — 기록 제출 시 그룹을 나눠 기록 도전 환경 제공</li>
+  <li><strong>기능성 기념품</strong> — 한정 기능성 티셔츠, 완주 기념품 패키지</li>
+</ul>
+
+<p>한국은 가민 글로벌 데이터에서 주간 평균·최장 러닝 거리 모두 세계 최상위권일 만큼 러닝 열기가 뜨거운데, 그 흐름과 잘 맞는 대회입니다.</p>
+
+<h2>하프 첫 도전이라면 — 지금부터 준비</h2>
+
+<p>11월 대회면 7월 발표 후 <strong>약 4개월</strong>의 준비 기간이 있습니다. 하프가 처음이라면 지금부터 거리를 차근차근 늘리는 게 안전합니다.</p>
+
+<ul>
+  <li><strong>주력 훈련</strong>: 천천히 오래 달리는 LSD로 기초 지구력부터. <a href="/blog/lsd-training-beginner-guide-korea">초보 LSD 훈련 가이드</a></li>
+  <li><strong>페이스 전략</strong>: 하프는 페이스 배분이 완주를 좌우합니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략</a></li>
+  <li><strong>여름 훈련</strong>: 7~9월 무더위·장마 대비. <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 가이드</a></li>
+  <li><strong>신발 준비</strong>: 하프 완주용 데일리·쿠션화 선택. <a href="/recommend">1분 러닝화 추천</a>으로 본인 조건에 맞는 후보 찾기</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">다른 가을 대회도 함께 보기</p>
+    <p>가민런 추첨에서 떨어지더라도 가을엔 대회가 많습니다. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a> 등 가을 대표 대회 일정을 함께 확인해 플랜 B를 준비해두세요. 마라톤 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한눈에 볼 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 접수는 선착순인가요?</h3>
+<p>아닙니다. <strong>2026년은 래플(추첨)</strong> 방식입니다. <strong>7월 1~3일</strong> 사이에 신청하면 <strong>7월 7일</strong> 당첨자를 발표합니다. 작년의 "2분컷" 선착순과 달리 접수창 오픈 순간 경쟁할 필요는 없지만, 신청 기간(7/3 마감)은 꼭 지켜야 합니다.</p>
+
+<h3>Q. 하프코스가 새로 생긴 게 맞나요?</h3>
+<p>네. 2026년 가장 큰 변화가 <strong>하프(21.1km) 신설</strong>입니다. 기존 10K에 더해 하프가 추가돼 중급 러너의 선택지가 넓어졌습니다. 코스 세부는 공식 접수 페이지에서 확정 발표될 예정입니다.</p>
+
+<h3>Q. 가민 워치가 없어도 참가할 수 있나요?</h3>
+<p>네, 워치 보유와 무관하게 참가할 수 있습니다. 다만 가민런은 데이터 러닝 콘셉트라 GPS 워치가 있으면 기록·페이스 관리가 더 즐겁습니다. 현장 부스에서 가민 워치를 체험할 수도 있습니다.</p>
+
+<h3>Q. 대회까지 4개월, 하프 준비 어떻게 시작하죠?</h3>
+<p>지금 10K를 무리 없이 뛴다면 <strong>주 1회 LSD로 거리를 5~10%씩 점진적으로 늘리는 것</strong>부터 시작하세요. 무더위·장마가 겹치는 시기라 수분·페이스 관리가 중요합니다. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>와 <a href="/blog/marathon-pacing-mental-strategy-guide">페이싱 전략</a>을 참고하세요.</p>
+`,
+  },
+  {
+    id: 'li-ning-red-hare-9-ultra-budget-supertrainer',
+    slug: 'li-ning-red-hare-9-ultra-budget-supertrainer',
+    title: '리닝 적토끼 9 울트라 — "10만원대 카본급" 진짜일까? | 커뮤니티 난리 난 중국 슈퍼 트레이너 팩트체크',
+    description: '러닝 커뮤니티에서 화제인 리닝(Li-Ning) 적토끼 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구)·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크.',
+    thumbnail: '/images/blog/li-ning-red-hare-9-ultra-budget-supertrainer.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-01',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['리닝', '적토끼 9 울트라', 'Li-Ning Red Hare', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>리닝 적토끼 9 울트라</strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
+    <li>단, <strong>"카본화"는 오해</strong> — 이 모델은 카본이 아닌 <strong>유리섬유 플레이트</strong>입니다(카본은 같은 세대 9 PRO). 레이스용이 아니라 <strong>LSD·훈련용 트레이너</strong></li>
+    <li><strong>한국 공식 유통이 없어 직구</strong>(타오바오·알리·KREAM)해야 하고, <strong>미드풋 78mm로 좁아</strong> 발볼 넓은 한국 러너는 주의가 필요합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 갑자기 화제인가</p>
+    <p>2025년 말 출시 후 2026년 들어 해외 러닝 커뮤니티(Reddit r/RunningShoeGeeks)와 국내 러너들 사이에서 "<strong>이 가격에 PEBA?</strong>"라며 입소문을 탄 신발입니다. 중국 브랜드 리닝(Li-Ning)이 <strong>47mm 맥스 스택 + PEBA 기반 3층 미드솔</strong>을 11만원대에 내놓으면서, 25만원이 넘는 서구 카본 슈퍼슈즈와 자주 비교됩니다. 다만 마케팅과 실제 스펙 사이엔 짚어둘 차이가 있습니다.</p>
+  </div>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">팩트체크 ① — "카본화" 아닙니다</p>
+    <p>커뮤니티에서 "가성비 카본화"로 불리지만, <strong>적토끼 9 울트라의 플레이트는 카본이 아니라 유리섬유(글라스 파이버)</strong>입니다. 리닝이 "슈퍼 카본" 류의 마케팅을 쓰지만 실제 소재는 유리섬유 지지 플레이트 + 캡슐 폼 조합이에요. <strong>카본 플레이트는 같은 세대의 적토끼 9 PRO</strong>(낮은 스택, 더 안정적인 레이싱 지향)에 들어갑니다. 카본 슈퍼슈즈의 추진력을 기대하고 사면 다를 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>적토끼 9 울트라</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무게</td><td>약 220~246g (US 9~9.5)</td><td>맥스 스택 치고 가벼운 편</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>47 / 42mm</td><td>맥스 쿠션 — 충격 흡수 우수</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>힐 착지에 무난</td></tr>
+    <tr><td>미드솔</td><td>PEBA 기반 3층 (캡슐 폼)</td><td>소프트 + 고반발 "트램펄린" 느낌</td></tr>
+    <tr><td>플레이트</td><td>유리섬유 (카본 ❌)</td><td>지지·안정용, 추진용 아님</td></tr>
+    <tr><td>미드풋 너비</td><td>약 78mm</td><td>좁은 편 — 발볼 넓으면 주의</td></tr>
+    <tr><td>아웃솔 내구</td><td>~640km+ 확인</td><td>고무 와플, 내구 양호</td></tr>
+  </tbody>
+</table>
+
+<p class="caption">출시 직후 신상이라 RunRepeat 등 독립 랩의 정식 측정치는 아직 미게시 상태입니다. 위 수치는 제조사 발표 + 해외 리뷰어(Road Trail Run·WeeViews 등) 실측을 종합한 값으로, 일부는 추정치입니다.</p>
+
+<h2>가격과 구매처 — 한국은 직구</h2>
+
+<p>중국 공식가 <strong>CNY 599(약 11만~13만원)</strong>, 글로벌 직구 시 $130~150 수준입니다. <strong>한국 공식 유통이 없어</strong> 직접 구매해야 합니다.</p>
+
+<ul>
+  <li><strong>중국 직구</strong>(가장 저렴): 타오바오·알리익스프레스 → 배대지 경유. 11만원대 + 배송비</li>
+  <li><strong>리셀/플랫폼</strong>: KREAM·POIZON(더우)·StockX — 편하지만 프리미엄 가격</li>
+  <li><strong>주의</strong>: 사이즈 교환·반품이 까다롭습니다. 아래 사이즈 팁을 꼭 확인하세요</li>
+</ul>
+
+<h2>장점과 단점</h2>
+
+<div class="pros-cons">
+  <div class="pros">
+    <h3>👍 장점</h3>
+    <ul>
+      <li>소프트하면서 반발 강한 "트램펄린" 라이드 — 쿠션화 중 최상위 바운스</li>
+      <li>47mm 맥스 스택인데 220~246g로 가벼운 편</li>
+      <li>아웃솔 내구 우수(640km+), 힐 홀드·핏 정확</li>
+      <li>$250급 트레이너(아식스 슈퍼블라스트 등) 반발을 11만원대에 경험</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <h3>👎 단점</h3>
+    <ul>
+      <li><strong>안정성 부족</strong> — 흔들림이 있어 초보·안정화 필요자 부적합</li>
+      <li><strong>좁은 핏</strong>(미드풋 78mm) — 발볼 넓은 한국 러너 불편</li>
+      <li>실제 카본이 없어 <strong>레이스 페이스 이상 고강도에선 둔함</strong></li>
+      <li>한국 공식 유통 없음 — 사이즈·반품 리스크</li>
+    </ul>
+  </div>
+</div>
+
+<h2>누구에게 맞고, 누구에겐 아닌가</h2>
+
+<p><strong>추천</strong>: LSD·마라톤 페이스 훈련용 트레이너를 저렴하게 찾는 러너, 탄성 있는 쿠션을 부담 없이 경험하고 싶은 취미 러너, 슈퍼슈즈 입문 전 "플레이트 없는 맥스 쿠션" 감각을 익히고 싶은 분. <strong>좁은~표준 발볼</strong>이면 더 잘 맞습니다.</p>
+
+<p><strong>비추천</strong>: <strong>발볼 넓은 한국 러너</strong>(78mm 미드풋 + 와이드 옵션 미확인), 과내전으로 <strong>안정화가 필요한 러너</strong>, 트랙·인터벌 등 <strong>속도 훈련</strong> 중심 러너. 이런 경우 검증된 정규 라인업이 안전합니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">사이즈·발볼 팁</p>
+    <p>미드풋이 좁아 평소 사이즈가 빡빡할 수 있습니다. 발볼이 넓다면 <strong>0.5 사이즈 업</strong>을 고려하거나, 애초에 와이드 토박스 모델을 권합니다. 직구는 교환이 어려우니 본인 발 길이·발볼을 정확히 재고 사이즈 차트를 대조하세요. 발볼·아치별 신발 선택은 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 유형별 가이드</a>를 참고하세요.</p>
+  </div>
+</div>
+
+<h2>검증된 대안과 비교하고 싶다면</h2>
+
+<p>"가성비 슈퍼 트레이너"가 끌리지만 직구·안정성·발볼이 부담된다면, 한국에서 정식 유통되고 랩 데이터가 검증된 슈퍼 트레이너·고반발 데일리를 먼저 보세요. <a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a>(나일론 플레이트 슈퍼 트레이너), <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 같은 고반발 데일리가 대표적입니다. 진짜 카본 레이싱이 목적이라면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 비교</a>를, 신발 용어가 헷갈리면 <a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전</a>을 함께 보세요. 본인 조건에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 정말 카본 슈퍼슈즈처럼 빠른가요?</h3>
+<p>아닙니다. <strong>유리섬유 플레이트 + 고반발 폼</strong>이라 "푹신하면서 통통 튀는" 느낌은 강하지만, 카본 특유의 단단한 추진(롤링)은 약합니다. 리뷰어들도 레이스 페이스 이상에선 둔하다고 평가합니다. <strong>훈련·LSD용 트레이너</strong>로 보는 게 정확합니다.</p>
+
+<h3>Q. 발볼 넓은데 신어도 될까요?</h3>
+<p>주의가 필요합니다. 미드풋 78mm로 좁은 편이고 와이드 옵션도 확인되지 않았습니다. 발볼이 넓다면 새끼발가락 압박·물집 위험이 있어, 0.5 사이즈 업을 고려하거나 토박스 넓은 다른 모델을 권합니다.</p>
+
+<h3>Q. 초보가 첫 신발로 사도 되나요?</h3>
+<p>권하지 않습니다. <strong>안정성이 부족</strong>해 흔들림이 있고, 직구라 사이즈 실패 리스크도 큽니다. 첫 러닝화는 검증된 데일리화가 안전합니다 — <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보세요.</p>
+
+<h3>Q. 마케팅 문구를 어디까지 믿어야 하나요?</h3>
+<p>"95% 에너지 리턴" 같은 제조사 주장은 <strong>독립 랩 검증 전까진 참고만</strong> 하세요. 신상이라 RunRepeat 등의 측정치가 아직 없습니다. 광고 카피가 아닌 데이터로 신발 고르는 법은 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 정리했습니다.</p>
+`,
+  },
+  {
+    id: 'running-shoe-data-not-marketing-guide-2026',
+    slug: 'running-shoe-data-not-marketing-guide-2026',
+    title: '러닝화, 광고에 속지 말고 데이터로 고르세요 | "역대급 반발력"의 진실 — 랩 테스트 5대 지표 읽는 법',
+    description: '"착용감 최고·역대급 반발력·에너지 리턴 폭발" 같은 광고 문구는 왜 다 비슷하게 들릴까? RunRepeat 같은 랩 테스트가 측정하는 무게·스택·드롭·에너지 리턴·경도·토박스 5대 지표를 한국 러너 관점에서 읽는 법. 마케팅 카피 대신 객관 데이터로 내 발에 맞는 러닝화 고르는 실전 가이드.',
+    thumbnail: '/images/blog/running-shoe-data-not-marketing-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-01',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['러닝화 고르는 법', '랩 테스트', 'RunRepeat', '에너지 리턴', '스택 높이', '드롭', '토박스 너비', '러닝화 데이터', '광고 문구', '러닝화 구매 가이드'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>"착용감 최고·역대급 반발력·에너지 리턴 폭발"은 모든 신발이 똑같이 쓰는 카피</strong> — 광고 문구만으로는 신발을 구분할 수 없습니다</li>
+    <li>믿을 건 <strong>랩에서 같은 방식으로 측정한 객관 수치</strong> — 무게·스택·드롭·에너지 리턴·경도·토박스 너비 6가지가 신발의 성격을 결정합니다</li>
+    <li>이 글은 <strong>각 지표가 실제 달릴 때 뭘 의미하는지</strong>를 한국 러너 관점에서 풀고, 광고가 아닌 데이터로 고르는 체크리스트를 제시합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔍</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 이 글을 쓰나</p>
+    <p>러닝화 상세페이지를 보면 <strong>"착용감 최고, 엄청 가벼움, 반발력 역대급, 에너지 리턴 폭발"</strong> — 읽을수록 헷갈리고 뭐가 진짜인지 감이 안 옵니다. 문제는 이 표현들이 <strong>모든 브랜드가 똑같이 쓰는 마케팅 카피</strong>라는 점입니다. 광고·협찬에 휘둘리지 않으려면, 신발을 <strong>같은 방식으로 측정한 객관 데이터</strong>로 읽어야 합니다. <a href="https://runrepeat.com" target="_blank" rel="noopener">RunRepeat</a> 같은 랩 테스트 사이트가 그 데이터를 제공하고, 이 사이트의 <a href="/shoes">신발 DB</a>도 그 수치를 한국 러너 기준으로 해석해 담았습니다.</p>
+  </div>
+</div>
+
+<h2>광고 문구가 절대 말해주지 않는 것</h2>
+
+<p>"에너지 리턴 폭발"이라는 문장에는 <strong>숫자가 없습니다</strong>. 에너지 리턴이 60%인지 70%인지, 어떤 기준으로 측정했는지 알 수 없죠. "엄청 가볍다"도 마찬가지입니다 — 같은 신발도 사이즈에 따라 무게가 다르고, "가볍다"의 기준은 데일리화냐 레이싱화냐에 따라 완전히 다릅니다.</p>
+
+<p>마케팅 카피는 <strong>모든 신발에 동시에 참인 표현</strong>을 고릅니다. 그래서 다 비슷하게 들리는 겁니다. 반대로 랩 테스트는 <strong>모든 신발을 같은 저울·같은 기계로</strong> 재기 때문에, 비로소 "이 신발이 저 신발보다 30g 무겁다"는 비교가 가능해집니다. 핵심은 절대 수치 하나가 아니라 <strong>같은 잣대의 비교 가능성</strong>입니다.</p>
+
+<h2>데이터로 봐야 할 6대 지표</h2>
+
+<p>러닝화의 성격은 사실 몇 개의 숫자로 거의 결정됩니다. 아래 6가지가 "이 신발이 나한테 맞을까?"의 90%를 설명합니다.</p>
+
+<h3>1. 무게 (g) — 가벼울수록 무조건 좋은 게 아니다</h3>
+<p>US 9 기준 250g 이하면 가벼운 편, 280g 이상이면 묵직한 편입니다. 다만 <strong>가벼움 = 쿠션·내구 희생</strong>인 경우가 많습니다. 데일리 조깅·LSD라면 280g대라도 쿠션이 두툼한 쪽이 발이 편하고, 레이스·템포에서는 250g 이하 경량화가 유리합니다. "가벼움"을 강조하는 카피보다 <strong>실제 g 수치와 용도</strong>를 보세요.</p>
+
+<h3>2. 스택 높이 (mm) — 쿠션의 절대량</h3>
+<p>발바닥과 지면 사이 폼 두께입니다. 힐 40mm 이상이면 맥스 쿠션, 30mm 안팎이면 중간, 25mm 이하면 지면 감각형입니다. <strong>무릎·발목 충격이 걱정되는 입문자·고체중 러너</strong>는 스택이 높은 쪽이 안전하고, 지면 반응을 즐기는 러너는 낮은 쪽을 선호합니다. "푹신하다"는 말보다 <strong>힐/전족부 스택 mm</strong>가 정확합니다.</p>
+
+<h3>3. 드롭 (mm) — 힐과 전족부의 높이 차</h3>
+<p>힐 스택에서 전족부 스택을 뺀 값입니다. 8~12mm는 힐 착지에 편하고, 0~6mm는 미드풋·포어풋 착지에 가깝습니다. <strong>아킬레스·종아리가 약한 러너는 드롭이 높은 쪽</strong>이 부담이 적고, 갑자기 저드롭으로 바꾸면 종아리 부상이 오기 쉽습니다. 자세한 용어는 <a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전</a>에서 정리했습니다.</p>
+
+<h3>4. 에너지 리턴 (%) — "반발력"의 실체</h3>
+<p>"반발력 역대급"의 정체가 바로 이 수치입니다. 폼이 눌렸다 돌아올 때 에너지를 얼마나 돌려주는지를 %로 잰 값으로, <strong>55% 안팎이면 보통, 65% 이상이면 우수</strong>합니다. PEBA·카본 플레이트 신발이 이 수치가 높습니다. 다만 에너지 리턴이 높다고 모두에게 좋은 건 아닙니다 — 입문자에겐 불안정하게 느껴질 수 있어요. <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 비교</a>에서 이 수치의 함정을 다뤘습니다.</p>
+
+<h3>5. 경도 (HA) — 폼이 단단한가 부드러운가</h3>
+<p>미드솔 폼의 무름 정도입니다. 숫자가 낮을수록 부드럽고(쿠션 위주), 높을수록 단단합니다(반응·안정 위주). <strong>차가운 날엔 폼이 더 단단해진다</strong>는 점도 한국 겨울 러닝에선 알아둘 만합니다. "부드럽다/단단하다"는 주관 표현 대신 HA 수치로 보면 신발 성격이 한눈에 보입니다.</p>
+
+<h3>6. 토박스 너비 (mm) — 한국 러너에게 가장 중요</h3>
+<p>한국인은 발볼이 넓은 편이라 <strong>이 지표가 착화감을 좌우</strong>합니다. 전족부 너비가 68mm 미만이면 좁고, 75mm 초과면 넓습니다. 발볼 넓은 분이 좁은 토박스 신발을 사면 새끼발가락 통증·물집이 생기니, <strong>좁은 모델은 반드시 와이드(2E/4E) 버전</strong>을 확인하세요. 발 너비·아치별 선택은 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 유형별 러닝화 가이드</a>를 참고하세요.</p>
+
+<h2>랩 테스트는 어떻게 측정할까</h2>
+
+<p>RunRepeat 같은 랩은 같은 신발을 <strong>실제로 잘라보고 기계로 측정</strong>합니다. 디지털 저울로 무게를, 캘리퍼로 스택과 토박스를, 듀로미터로 경도를, 충격 흡수·에너지 리턴 측정기로 폼의 반응을 잽니다. 핵심은 <strong>모든 신발을 똑같은 절차로</strong> 잰다는 것 — 그래서 브랜드 마케팅과 무관하게 신발끼리 줄 세울 수 있습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">단, 신상은 데이터가 늦게 나온다</p>
+    <p>출시 직후(3개월 이내) 신발은 랩 데이터가 아직 없는 경우가 많습니다. 이럴 땐 <strong>전작(이전 버전) 수치 + 제조사가 밝힌 변경점</strong>으로 추정할 수밖에 없습니다. "에너지 리턴 +15% 개선" 같은 제조사 주장은 참고하되, 출시 초기 리뷰는 추정치임을 감안하세요. 이 사이트도 신상은 추정 표기를 달아둡니다.</p>
+  </div>
+</div>
+
+<h2>한국 러너를 위한 실전 체크리스트</h2>
+
+<p>매장이나 상세페이지에서 신발을 볼 때, 광고 문구 대신 이 순서로 확인하세요.</p>
+
+<ul>
+  <li><strong>① 용도부터</strong> — 데일리 조깅인가, 템포·레이스인가, LSD인가? 용도가 무게·스택·드롭의 기준선을 정합니다</li>
+  <li><strong>② 토박스 너비</strong> — 발볼 넓으면 68mm대 좁은 모델은 와이드 버전 확인. 한국 러너에겐 1순위</li>
+  <li><strong>③ 스택·드롭으로 충격 성향</strong> — 무릎·아킬레스 이력 있으면 스택 높고 드롭 8mm+ 쪽</li>
+  <li><strong>④ 에너지 리턴·경도로 성격 확인</strong> — 입문은 부드럽고 안정적인 쪽, 기록은 반발·단단한 쪽</li>
+  <li><strong>⑤ 가격 대비 내구</strong> — 아웃솔 내구 수명(보통 500~800km)으로 km당 비용을 따져보기. <a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a> 참고</li>
+</ul>
+
+<h2>이 사이트를 데이터 도구로 쓰는 법</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🛠️</span>
+  <div class="callout-body">
+    <p class="callout-title">광고 대신 데이터로 — 3가지 활용법</p>
+    <p>① <a href="/recommend">1분 러닝화 추천</a> — 경험·주간 거리·목적·발 너비·부상 이력을 입력하면 데이터 기반으로 후보를 좁혀줍니다. ② <a href="/compare">신발 비교</a> — 두세 신발의 무게·스택·드롭·에너지 리턴을 나란히 놓고 같은 잣대로 봅니다. ③ <a href="/shoes">신발 DB</a> — 각 신발 상세페이지는 랩 수치를 한국 러너 관점(발볼·평발·무릎)으로 해석해 담았습니다. 처음이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>부터 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 그래서 "에너지 리턴 폭발"은 거짓말인가요?</h3>
+<p>거짓말이라기보다 <strong>검증 불가능한 표현</strong>입니다. 숫자도 측정 기준도 없으니 비교가 안 되죠. 같은 신발이라도 랩에서 재면 "에너지 리턴 67%"처럼 구체적 수치가 나오고, 그제야 다른 신발과 줄 세울 수 있습니다. 카피를 무시하라는 게 아니라, <strong>카피 옆의 숫자를 찾아보라</strong>는 뜻입니다.</p>
+
+<h3>Q. 랩 수치가 좋으면 무조건 좋은 신발인가요?</h3>
+<p>아닙니다. <strong>나에게 맞는지가 핵심</strong>입니다. 에너지 리턴 70%·저드롭 카본화는 엘리트에겐 최고지만 입문자에겐 불안정하고 부상 위험이 큽니다. 수치는 신발의 <strong>성격</strong>을 알려줄 뿐, "좋다/나쁘다"는 본인 용도·발·실력에 달렸습니다.</p>
+
+<h3>Q. 매장에서 신어보는 것보다 데이터가 중요한가요?</h3>
+<p>둘 다 필요합니다. <strong>착화감은 반드시 신어봐야</strong> 알고(특히 토박스·뒤꿈치 홀드), 데이터는 <strong>후보를 좁히고 신어볼 신발을 고르는</strong> 단계에서 강력합니다. 데이터로 3~4개로 줄이고, 매장에서 그 신발들만 신어보면 실패 확률이 크게 줍니다.</p>
+
+<h3>Q. 발볼 넓은데 어떤 수치를 먼저 봐야 하나요?</h3>
+<p><strong>토박스 너비(전족부 mm)</strong>가 1순위입니다. 75mm 이상이면 넓은 편이라 편하고, 68mm 미만이면 좁으니 와이드 버전을 찾으세요. 발볼 넓은 한국 러너를 위한 신발은 <a href="/recommend">1분 추천</a>에서 발 너비를 "넓음"으로 선택하면 걸러집니다.</p>
+`,
+  },
+  {
     id: 'gangneung-unique-running-courses-7',
     slug: 'gangneung-unique-running-courses-7',
     title: '강릉 이색 러닝 코스 7선 | 경포호수 벚꽃부터 정동진 일출까지 — 호수·바다·솔숲 결합한 강릉만의 러닝',
