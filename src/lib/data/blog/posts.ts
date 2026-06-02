@@ -2,6 +2,178 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'korea-trail-skyrace-guide-2026',
+    slug: 'korea-trail-skyrace-guide-2026',
+    title: '한국 트레일·스카이레이스 대회 가이드 2026 | 스카이레이스란? 운탄고도부터 트랜스제주 UTMB까지 — 시즌·난이도·장비 총정리',
+    description: '트레일 러닝 한 단계 위, 스카이레이스(SkyRace)란 무엇일까? ISF 기준과 트레일 러닝의 차이부터 한국 2026 주요 대회(운탄고도·춘천 스카이레이스·KOREA 50K·TNF100·트랜스제주 UTMB·영남알프스 UTNP)를 봄/가을 시즌·거리·난이도별로 정리. 누적고도·컷오프·ITRA 개념과 필수 장비, 트레일화 선택까지 입문 가이드.',
+    thumbnail: '/images/blog/korea-trail-skyrace-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-02',
+    category: 'guide' as const,
+    readingTime: 13,
+    tags: ['트레일 러닝', '스카이레이스', '트레일 대회', '운탄고도', '트랜스제주 UTMB', 'KOREA 50K', 'TNF100', '영남알프스 UTNP', '누적고도', '트레일화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>스카이레이스(SkyRace)는 트레일 러닝의 하위 장르</strong> — ISF 기준 고도 2,000m 이상 또는 가파른 경사(30%+)의 산악 러닝으로, 일반 트레일보다 고도·기술 난이도가 높습니다</li>
+    <li>한국 2026 시즌은 <strong>4~6월 봄(제주·강원)</strong>과 <strong>9~10월 가을(서울·영남·제주)</strong>로 나뉘며, 운탄고도·KOREA 50K·TNF100·트랜스제주 UTMB·영남알프스 UTNP 등 12개+ 대회가 열립니다</li>
+    <li>거리(km)보다 <strong>누적고도(D+)·컷오프</strong>가 체감 난이도를 좌우 — 입문은 10~20K부터, 필수 장비(트레일화·베스트·필수장비)를 갖추고 단계적으로 올라가세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">트레일 러닝의 한 단계 위, 스카이레이스</p>
+    <p>도심 주로를 벗어나 산을 달리는 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝</a>이 메가 트렌드가 되면서, 더 가파르고 높은 곳을 달리는 <strong>'스카이레이스'</strong>도 빠르게 인기를 얻고 있습니다. 운탄고도 스카이레이스, 트랜스제주 UTMB 같은 대회는 매년 매진되고, 굿러너·코오롱·블랙야크·노스페이스 등 브랜드 주최 대회도 늘고 있죠. 이 글은 <strong>스카이레이스가 뭔지, 한국엔 어떤 대회가 있는지, 어떻게 입문하는지</strong>를 한 번에 정리한 가이드입니다.</p>
+  </div>
+</div>
+
+<h2>스카이레이스 vs 트레일 러닝 — 뭐가 다른가</h2>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>트레일 러닝</th><th>스카이레이스</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>관할</td><td>ITRA (국제트레일러닝협회)</td><td>ISF (국제스카이러닝연맹)</td></tr>
+    <tr><td>지형</td><td>산·비포장 자연 지형 전반</td><td>고도 2,000m+ 또는 경사 30%+ 험지</td></tr>
+    <tr><td>핵심</td><td>거리·자연 경험</td><td>고도·경사·기술 난이도</td></tr>
+    <tr><td>이미지</td><td>숲길·둘레길도 포함</td><td>"하늘 아래 가장 높은 곳"을 달림</td></tr>
+  </tbody>
+</table>
+
+<p>쉽게 말해 <strong>모든 스카이레이스는 트레일 러닝이지만, 모든 트레일이 스카이레이스는 아닙니다.</strong> 스카이레이스는 그중에서도 <strong>고도와 경사가 극단적인</strong> 종목이에요. ISF는 종목을 이렇게 나눕니다.</p>
+
+<ul>
+  <li><strong>SKY</strong> — 20~49km, 누적고도 1,200m+ (스카이레이스 대표 종목)</li>
+  <li><strong>SKYULTRA</strong> — 50~99km, 누적고도 3,000m+ (장거리)</li>
+  <li><strong>VERTICAL (버티컬 킬로미터, VK)</strong> — 5km 이내, 1,000m 수직 상승 (순수 오르막)</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">📐</span>
+  <div class="callout-body">
+    <p class="callout-title">거리보다 '누적고도(D+)'를 보라</p>
+    <p>트레일에서 <strong>거리(km)는 절반의 정보</strong>입니다. 진짜 난이도는 <strong>누적고도(D+, Elevation Gain)</strong> — 코스에서 올라간 고도를 전부 더한 값이 결정합니다. 같은 20km라도 D+ 500m와 1,500m는 전혀 다른 대회예요. 로드 러너에게 <strong>D+ 1,000m면 상당한 다리 피로</strong>를 줍니다. 또 보급소마다 <strong>컷오프(통과 제한시간)</strong>가 있어 초과하면 강제 탈락(DNF)이니, 입문자는 km당 10분 이상으로 여유 있게 계산하세요.</p>
+  </div>
+</div>
+
+<h2>한국 2026 트레일·스카이레이스 캘린더</h2>
+
+<h3>🌸 봄 시즌 (4~6월) — 제주·강원 집중</h3>
+
+<table>
+  <thead>
+    <tr><th>일정</th><th>대회</th><th>장소</th><th>거리</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>4/10~12</td><td><strong>파타고니아 제주국제트레일러닝</strong></td><td>제주 한라산</td><td>10·36·100K</td></tr>
+    <tr><td>4/18~19</td><td><strong>코오롱 트레일런</strong></td><td>강원 횡성 웰리힐리</td><td>15·35K·버티컬</td></tr>
+    <tr><td>4/25</td><td><strong>KOREA 50K 동두천(DDC)</strong></td><td>경기 동두천</td><td>5·10·20·50K</td></tr>
+    <tr><td>4/25</td><td><strong>블랙야크 트레일런 제주</strong></td><td>제주 한라산 둘레</td><td>25·57K</td></tr>
+    <tr><td>5/16</td><td><strong>TNF100 코리아</strong></td><td>강원 강릉 경포</td><td>10·22·50·100K</td></tr>
+    <tr><td>6/6</td><td><strong>한라산 100 트레일런</strong></td><td>제주 돈내코</td><td>10·36·50·100K·100M</td></tr>
+    <tr><td>6/7</td><td><strong>KOREA 50K 춘천(CC)</strong> — CC20은 SKY RACE® 인증</td><td>강원 춘천 삼악산</td><td>20·50K</td></tr>
+    <tr><td>6/13~14</td><td><strong>운탄고도 스카이레이스</strong> (HOKA)</td><td>강원 정선 하이원</td><td>12·20·42K</td></tr>
+  </tbody>
+</table>
+
+<h3>🍂 가을 시즌 (9~10월) — 서울·영남·제주</h3>
+
+<table>
+  <thead>
+    <tr><th>일정</th><th>대회</th><th>장소</th><th>거리</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>9/12~13</td><td><strong>춘천 스카이레이스</strong> (밀레 후원, 굿러너)</td><td>강원 엘리시안 강촌</td><td>SKY HALF·SKY RUN·키즈</td></tr>
+    <tr><td>9/19~20</td><td><strong>서울 100K</strong> — 도심 울트라 트레일</td><td>광화문~인왕산~북한산~한강</td><td>20·50·100K</td></tr>
+    <tr><td>10/2~4</td><td><strong>트랜스제주 by UTMB</strong> — UTMB 공식</td><td>제주</td><td>20·60·100K·100M</td></tr>
+    <tr><td>10/23~25</td><td><strong>울주 트레일 나인피크(UTNP)</strong> — 영남알프스 9봉</td><td>경남 울주</td><td>1~9PEAKS(최대 124K)</td></tr>
+  </tbody>
+</table>
+
+<p class="caption">일정·종목은 주최 측 공지 기준이며 일부는 미확정·예상입니다. 신청 전 각 대회 공식 페이지에서 최종 확인하세요. 운탄고도 정규 대회와 별개로 Nike ACG 협업 'ACG 나이트 트레일'(추첨제 야간 special session)도 운영됐습니다.</p>
+
+<h2>난이도별 — 어디서 시작할까</h2>
+
+<h3>🟢 입문 (10~20K, 첫 트레일 대회)</h3>
+<p>로드 러너가 처음 도전하기 좋은 짧은 종목. 누적고도가 낮고 컷오프가 여유롭습니다.</p>
+<ul>
+  <li><strong>코오롱 트레일런 15K</strong>(D+670m, 컷오프 4h) · <strong>KOREA 50K DDC 5·10K</strong> · <strong>TNF100 10K</strong></li>
+  <li><strong>트랜스제주 Jeju20K</strong>(D+420m) — UTMB 공식 대회 분위기를 낮은 고도로 경험</li>
+</ul>
+
+<h3>🟡 중급 (20~42K, 본격 트레일·스카이레이스)</h3>
+<ul>
+  <li><strong>운탄고도 스카이레이스 12·20K</strong> — 해발 1,330m 고원, 스카이레이스 고도감 입문에 최적</li>
+  <li><strong>KOREA 50K CC20</strong> — SKY RACE® 공식 인증, 삼악산 협곡 기술 코스</li>
+  <li><strong>파타고니아 제주 36K</strong> · <strong>블랙야크 제주 25K</strong> · <strong>코오롱 35K</strong>(D+1,691m)</li>
+</ul>
+
+<h3>🔴 울트라 (50K~100M, 상급자)</h3>
+<ul>
+  <li><strong>UTNP 9PEAKS</strong> — 124km·누적고도 9,210m, ITRA 6포인트. 국내 최고 난이도</li>
+  <li><strong>트랜스제주 100M·100K</strong> — UTMB World Series. UTMB Index 보유 필요</li>
+  <li><strong>TNF100 100K</strong> — 2년 내 50K 완주 기록 필수 · <strong>한라산 100</strong> · <strong>서울 100K</strong></li>
+</ul>
+
+<h2>필수 장비 — 산은 편의점이 없다</h2>
+
+<p>트레일·스카이레이스는 안전을 위해 <strong>필수장비(mandatory gear) 규정</strong>이 엄격합니다. 미착용 시 출발 불가·페널티가 부과됩니다.</p>
+
+<ul>
+  <li><strong>트레일화</strong> — 러그(돌기) 아웃솔 필수. 로드화 불가 (가장 중요)</li>
+  <li><strong>러닝 베스트</strong> — 물·보급·필수장비 수납. 핸드캐리 불가 대회 多</li>
+  <li><strong>물 1L + 개인컵</strong> — 친환경 정책으로 1회용컵 미제공이 표준</li>
+  <li><strong>방풍·방수 자켓</strong> — 고지대 급변 날씨 대비</li>
+  <li><strong>서바이벌 블랭킷·호루라기·비상식량·휴대폰</strong> — 구조·생존용</li>
+  <li><strong>헤드랜턴</strong> — 야간 구간 있는 50K+ 필수 (300루멘 이상)</li>
+  <li><strong>트레킹 폴(스틱)</strong> — 필수는 아니나 D+1,500m 이상에서 강력 권장</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">대회 코스·난이도별 트레일화</p>
+    <p>입문·가성비는 <a href="/shoes/asics-gel-venture-10">아식스 젤 벤처 10</a>, 접지력·안정성 균형은 <a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>, 장거리 울트라는 <a href="/shoes/adidas-terrex-agravic-speed-ultra">테렉스 아그라빅 스피드 울트라</a>·<a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>, 카본 플레이트 레이싱은 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>·<a href="/shoes/nike-ultrafly">나이키 울트라플라이</a>가 대표적입니다. 코스 난이도별 자세한 비교는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>입문자를 위한 4가지 조언</h2>
+
+<ul>
+  <li><strong>① 트레일 경험부터</strong> — 대회 전 북한산·관악산 등에서 실제 산을 달려보세요. <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a></li>
+  <li><strong>② 거리보다 누적고도</strong> — D+를 보고 대회를 고르세요. 같은 20K라도 고도에 따라 완전히 다릅니다</li>
+  <li><strong>③ 오르막은 걷는다</strong> — 트레일에선 파워 하이킹이 기본. 끝까지 뛰려 하지 마세요</li>
+  <li><strong>④ 필수장비 미리 준비</strong> — 베스트·개인컵·블랭킷 등은 대회 직전에 사면 적응이 안 됩니다. 미리 훈련에 써보세요</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">코스 답사 겸 트레일 여행</p>
+    <p>대회 코스를 미리 달려보는 답사 러닝은 완주 확률을 크게 높입니다. <a href="/blog/gangneung-unique-running-courses-7">강릉 바우길</a> 등 둘레 트레일로 감각을 익히고, 가을 로드 대회와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요. 본인 발·부상 이력에 맞는 트레일화 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 스카이레이스와 트레일 러닝, 꼭 구분해야 하나요?</h3>
+<p>입문 단계에선 크게 신경 쓰지 않아도 됩니다. 다만 <strong>"스카이레이스/SKY 인증"이 붙은 종목은 고도·경사가 더 가파르다</strong>는 신호로 보세요. KOREA 50K의 CC20처럼 SKY RACE® 인증 종목은 같은 거리라도 일반 트레일보다 기술 난이도가 높습니다.</p>
+
+<h3>Q. 로드 마라톤만 뛰었는데 바로 트레일 대회 나가도 되나요?</h3>
+<p>가능하지만 <strong>10~20K 입문 종목부터</strong> 시작하세요. 로드 풀코스를 뛰어도 트레일은 쓰는 근육과 페이스가 완전히 달라, 같은 거리도 1.5~2배 힘듭니다. 대회 전 실제 산에서 몇 번 달려보는 게 필수입니다.</p>
+
+<h3>Q. UTMB가 뭔가요? 트랜스제주랑 무슨 관계죠?</h3>
+<p>UTMB는 프랑스 몽블랑에서 열리는 <strong>세계 최고 권위의 울트라 트레일 대회</strong>이고, 트랜스제주는 그 <strong>공식 아시아 시리즈(UTMB World Series)</strong> 대회입니다. 트랜스제주를 완주하면 <strong>UTMB Index</strong>가 적립돼, 본토 몽블랑 대회 참가 자격을 쌓을 수 있습니다.</p>
+
+<h3>Q. 어떤 신발을 사야 하나요?</h3>
+<p>반드시 <strong>트레일화</strong>가 필요합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 모델, 본격 산악은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>, 울트라는 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>을 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 보세요.</p>
+`,
+  },
+  {
     id: '2026-seonsa-marathon-gangdong',
     slug: '2026-seonsa-marathon-gangdong',
     title: '2026 선사마라톤축제 — 참가비 3만원에 바람막이까지 | 6천년 암사동 유적에서 한강까지, 일정·접수·코스 총정리',
