@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
+import { AdSlot } from '@/components/ads/ad-slot';
 import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
 import { HeroSection } from '@/components/detail/hero-section';
@@ -347,6 +348,15 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             {/* 핵심 3박스: 추천/비추천/특징 */}
             <CoreBoxes shoe={shoe} />
 
+            {/* 본문 중간 광고 (핵심 정보 후, 상세 탭 전) */}
+            <AdSlot
+              slot={ADSENSE_SLOTS.shoeInArticle}
+              format="fluid"
+              layout="in-article"
+              layoutKey="-fb+5w+4e-db+86"
+              label="본문 중간 광고"
+            />
+
             {/* 탭 기반 UI */}
             <ShoeDetailTabs shoe={shoe} similarShoesData={similarShoesData} resolvedAlternatives={resolvedAlternatives} />
           </>
@@ -357,6 +367,12 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           </div>
         )}
 
+        {/* 본문 하단 광고 (상세 후, 교차 링크 위) */}
+        <AdSlot
+          slot={ADSENSE_SLOTS.shoeBottom}
+          format="auto"
+          label="본문 하단 광고"
+        />
 
         {/* PSEO 교차 링크 */}
         <ShoeCrossLinks shoe={shoe} />
