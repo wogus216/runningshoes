@@ -26,8 +26,11 @@ jobs:
         id: check
         run: |
           npx tsx scripts/check-purchase-links.ts 2>&1 | tee link-check-output.txt
-          # 품절/에러가 있으면 후속 단계 실행
-          if grep -q '🔴\|❌' link-check-output.txt; then
+          # 요약의 실제 카운트로 판정 (요약 라인의 🔴/❌ 이모지 오탐 방지)
+          # 품절/에러가 1개 이상일 때만 후속 단계(메일·이슈) 실행
+          soldout=$(grep -oE '🔴 품절: [0-9]+개' link-check-output.txt | grep -oE '[0-9]+' | head -1)
+          errors=$(grep -oE '❌ 에러: [0-9]+개' link-check-output.txt | grep -oE '[0-9]+' | head -1)
+          if [ "${soldout:-0}" -gt 0 ] || [ "${errors:-0}" -gt 0 ]; then
             echo "has_issues=true" >> "$GITHUB_OUTPUT"
           else
             echo "has_issues=false" >> "$GITHUB_OUTPUT"
@@ -44,7 +47,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: '🔗 구매 링크 점검 필요 (${{ github.run_id }})'
           to: wogus21694@gmail.com
-          from: 러닝의모든것 링크체커
+          from: 러닝의모든것 링크체커 <${{ secrets.MAIL_USERNAME }}>
           body: |
             구매 링크 자동 점검에서 문제가 발견되었습니다.
 
