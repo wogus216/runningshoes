@@ -2,6 +2,133 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'trail-running-appeal-beginner-guide-2026',
+    slug: 'trail-running-appeal-beginner-guide-2026',
+    title: '산으로 가는 러너들 — 트레일 러닝의 매력과 입문 가이드 | 로드와 뭐가 다를까? 왜 빠질까?',
+    description: '주로를 벗어나 자연을 달리는 트레일 러닝이 메가 트렌드로 떠올랐습니다. 대형 대회는 연일 매진, 전문 스페셜티 스토어도 속속 오픈. 로드 러닝과 무엇이 다른지, 왜 빠져드는지(정신적·신체적 효과), 그리고 입문 5단계와 한국 산 코스·트레일화 선택까지 한 번에 정리한 트레일 러닝 입문 가이드.',
+    thumbnail: '/images/blog/trail-running-appeal-beginner-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-02',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['트레일 러닝', '트레일 러닝 입문', '트레일화', '산악 러닝', '로드 vs 트레일', '북한산 러닝', '트레일 러닝 매력', '오프로드 러닝', '트레일 러닝 효과'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>트레일 러닝은 메가 트렌드</strong> — 대형 대회는 연일 매진, 도심 전문 스페셜티 스토어도 속속 오픈하며 러너들의 거점이 빠르게 확대되고 있습니다</li>
+    <li>로드와 다른 매력은 <strong>① 자연 속 몰입 ② 지면 변화가 주는 재미 ③ 하체·균형 근육 단련 ④ 정신적 환기</strong> — "속도"가 아니라 "경험"을 달리는 러닝</li>
+    <li>이 글은 <strong>로드 vs 트레일 차이 → 빠져드는 이유 → 입문 5단계 → 한국 산 코스·트레일화 선택</strong>까지, 처음 산으로 향하는 러너를 위한 가이드입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 다들 산으로 갈까</p>
+    <p>최근 주로(도로)를 벗어나 <strong>자연 그대로를 달리는 트레일 러닝</strong>이 뜨거운 트렌드로 자리 잡았습니다. 글로벌 아웃도어 브랜드가 주도하는 대형 대회는 연일 매진되고, 도심 속 전문 스페셜티 스토어까지 잇달아 오픈하며 트레일 러너들의 거점이 빠르게 늘고 있죠. 로드 러닝의 속도감에 익숙해진 러너들이 <strong>"산이 주는 전혀 다른 러닝"</strong>에 빠져드는 이유를 짚어봅니다.</p>
+  </div>
+</div>
+
+<h2>로드 러닝 🆚 트레일 러닝, 무엇이 다른가</h2>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>로드 러닝</th><th>트레일 러닝</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>지면</td><td>평탄한 아스팔트·우레탄</td><td>흙·돌·뿌리·자갈 — 매 걸음 다름</td></tr>
+    <tr><td>핵심 가치</td><td>속도·기록·페이스</td><td>경험·풍경·완주·자연</td></tr>
+    <tr><td>쓰는 근육</td><td>전후 추진 중심</td><td>좌우 균형·발목 안정근까지 총동원</td></tr>
+    <tr><td>강도 측정</td><td>페이스(분/km)</td><td>고도·시간·노면 — 페이스 의미 적음</td></tr>
+    <tr><td>충격</td><td>일정한 반복 충격</td><td>충격 분산되나 발목·접질림 위험</td></tr>
+    <tr><td>신발</td><td>로드화(쿠션·반발)</td><td>트레일화(접지력·보호·안정)</td></tr>
+  </tbody>
+</table>
+
+<p>가장 큰 차이는 <strong>"페이스를 버린다"</strong>는 점입니다. 트레일에서는 같은 거리라도 고도와 노면에 따라 체감 강도가 완전히 달라, 분/km로 자신을 채찍질하던 로드 러너가 <strong>시간과 풍경 중심으로 사고를 전환</strong>하게 됩니다. 이 전환이 트레일 러닝의 첫 번째 해방감입니다.</p>
+
+<h2>러너들이 트레일에 빠지는 4가지 이유</h2>
+
+<h3>1. 자연 속 몰입 — "달리는 명상"</h3>
+<p>매 걸음 바뀌는 노면은 <strong>발밑에 온전히 집중</strong>하게 만듭니다. 스마트폰도, 페이스 알림도 끼어들 틈이 없죠. 숲의 소리와 흙냄새 속에서 달리다 보면 잡념이 사라지는 <strong>'무브먼트 명상'</strong> 효과를 경험합니다. 도시의 스트레스에서 벗어나는 정신적 환기가 트레일의 가장 큰 매력으로 꼽힙니다.</p>
+
+<h3>2. 지루하지 않다 — 매 순간 다른 자극</h3>
+<p>같은 코스를 반복하는 로드와 달리, 트레일은 <strong>오르막·내리막·계곡·능선이 끊임없이 변주</strong>됩니다. 몸이 늘 새로운 움직임에 반응해야 하니 지루할 틈이 없고, "다음 모퉁이엔 뭐가 있을까" 하는 탐험의 재미가 있습니다.</p>
+
+<h3>3. 온몸을 쓰는 운동 — 균형·코어·하체 강화</h3>
+<p>불규칙한 지면은 <strong>발목 안정근, 둔근, 코어, 좌우 균형근</strong>을 총동원하게 합니다. 평지에서 잘 안 쓰는 근육까지 자극해 <strong>고유수용감각(균형 감각)</strong>이 발달하고, 이는 로드 러닝 부상 예방에도 도움이 됩니다. 오르막은 천연 인터벌, 내리막은 근력·민첩성 훈련이 됩니다.</p>
+
+<h3>4. 충격 분산 — 관절에 다른 방식의 부담</h3>
+<p>부드러운 흙길은 아스팔트보다 <strong>반복 충격이 적어</strong> 무릎 등 관절 피로를 덜어줄 수 있습니다. 다만 트레일은 <strong>발목 접질림·낙상</strong>이라는 다른 위험이 있으니, 충격이 적다고 무방비로 달려선 안 됩니다(아래 입문 단계 참고).</p>
+
+<div class="callout tip">
+  <span class="callout-icon">🧠</span>
+  <div class="callout-body">
+    <p class="callout-title">데이터로 본 트레일 러닝</p>
+    <p>자연 환경에서의 운동(이른바 '그린 엑서사이즈')은 실내·도심 운동보다 <strong>기분·활력 개선 효과가 크다</strong>는 연구가 꾸준히 보고됩니다. 또 불규칙 지면 트레이닝은 <strong>발목 고유수용감각과 균형 능력 향상</strong>에 기여한다고 알려져 있죠. 트레일 러너들이 입을 모아 말하는 "달리고 나면 머리가 맑아진다"는 경험에는 이런 배경이 있습니다.</p>
+  </div>
+</div>
+
+<h2>트레일 러닝 입문 5단계</h2>
+
+<p>로드에서 트레일로 넘어갈 때, 욕심내지 말고 단계적으로 접근하는 게 안전합니다.</p>
+
+<ul>
+  <li><strong>① 가벼운 흙길부터</strong> — 처음부터 험한 산을 가지 마세요. 한강 둔치 흙길, 둘레길, 도심 야산의 완만한 임도부터 시작합니다</li>
+  <li><strong>② 걷기를 두려워 말 것</strong> — 트레일에선 오르막을 걷는 게 정상입니다("파워 하이킹"). 끝까지 뛰려 하지 말고 심박·체력에 맞춰 걷고 뛰기를 섞으세요</li>
+  <li><strong>③ 시선은 3~4m 앞에</strong> — 발밑만 보면 길을 못 읽고, 멀리만 보면 돌부리에 걸립니다. 노면을 미리 읽는 시선 처리가 핵심</li>
+  <li><strong>④ 내리막은 천천히</strong> — 초보 부상 1순위가 내리막 낙상입니다. 보폭을 줄이고 무릎을 살짝 굽혀 충격을 흡수하세요</li>
+  <li><strong>⑤ 물·간식·휴대폰 필수</strong> — 산은 편의점이 없습니다. 짧은 코스라도 물과 에너지 보충, 그리고 안전을 위한 휴대폰·기본 정보를 챙기세요</li>
+</ul>
+
+<h2>한국에서 트레일 시작하기 좋은 곳</h2>
+
+<p>한국은 도심 가까이 산이 많아 트레일 러닝 입문 환경이 훌륭합니다.</p>
+
+<ul>
+  <li><strong>입문(완만한 둘레길)</strong>: 서울 둘레길, 남산 순환로, 한강 인근 야산 — 흙길 위주로 부담이 적습니다</li>
+  <li><strong>중급(본격 산악)</strong>: 북한산·관악산·청계산 — 돌·계단·급경사가 섞여 접지력 좋은 트레일화가 필요합니다</li>
+  <li><strong>여행 트레일</strong>: <a href="/blog/gangneung-unique-running-courses-7">강릉 바우길</a>, 제주 올레·오름 등 관광과 묶기 좋은 코스</li>
+</ul>
+
+<p>코스별 난이도와 시작 팁은 도시별 이색 러닝 코스 시리즈(<a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/gangneung-unique-running-courses-7">강릉</a> 등)에서도 트레일 구간을 함께 다루고 있습니다.</p>
+
+<h2>트레일화, 로드화와 뭐가 다른가</h2>
+
+<p>트레일 러닝의 안전과 재미는 <strong>신발</strong>에서 절반이 결정됩니다. 로드화로 산에 가면 미끄러지고 발이 보호되지 않습니다. 트레일화는 다음이 다릅니다.</p>
+
+<ul>
+  <li><strong>아웃솔 러그(돌기)</strong> — 흙·돌·진흙에서 미끄러지지 않는 깊은 접지 패턴</li>
+  <li><strong>발 보호</strong> — 토 가드(앞코 보호), 락 플레이트(돌 충격 차단)</li>
+  <li><strong>안정성</strong> — 낮고 넓은 플랫폼으로 발목 접질림 위험 감소</li>
+  <li><strong>내구성</strong> — 거친 노면에 견디는 질긴 어퍼</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">입문용부터 본격 산악까지 — 트레일화 고르기</p>
+    <p>가성비 입문은 <a href="/shoes/asics-gel-venture-10">아식스 젤 벤처 10</a>, 접지력·안정성 균형은 <a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>, 장거리·울트라 지향은 <a href="/shoes/adidas-terrex-agravic-speed-ultra">테렉스 아그라빅 스피드 울트라</a>, 카본 플레이트 레이싱은 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>·<a href="/shoes/nike-ultrafly">나이키 울트라플라이</a>, 험지 대응은 <a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>이 대표적입니다. 코스 난이도별 자세한 비교는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서, 본인 조건에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 로드화로 트레일을 뛰면 안 되나요?</h3>
+<p>완만한 흙길 입문 정도는 가능하지만, <strong>본격 산악에서는 위험</strong>합니다. 로드화는 접지 러그가 얕아 흙·돌에서 미끄러지고, 토 가드가 없어 돌부리에 발가락을 다칠 수 있습니다. 산을 자주 갈 거라면 트레일화는 안전을 위한 필수 투자입니다.</p>
+
+<h3>Q. 평소 10K 뛰는데 트레일 10K도 비슷한가요?</h3>
+<p>전혀 다릅니다. 트레일 10K는 고도·노면 때문에 <strong>로드 10K보다 1.5~2배 힘들게</strong> 느껴질 수 있습니다. 페이스(분/km)로 생각하지 말고 <strong>시간·완주 중심</strong>으로 접근하세요. 오르막은 걷는 게 정상입니다.</p>
+
+<h3>Q. 무릎이 안 좋은데 트레일이 도움이 될까요?</h3>
+<p>부드러운 흙길은 아스팔트보다 반복 충격이 적어 도움이 될 수 있지만, <strong>내리막과 접질림은 오히려 무릎 부담</strong>이 됩니다. 완만한 코스부터, 내리막은 천천히, 스틱(폴) 활용도 고려하세요. 무릎 통증이 있다면 <a href="/recommend">신발 추천</a>에서 부상 이력을 반영해 후보를 받는 것을 권합니다.</p>
+
+<h3>Q. 첫 트레일화는 뭘 사야 하나요?</h3>
+<p>입문이라면 무리한 고가 모델보다 <strong>접지력·안정성이 검증된 가성비 모델</strong>이 좋습니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 입문 트레일화로 시작해, 산행 빈도가 늘면 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a> 같은 본격 모델로 업그레이드하세요. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+`,
+  },
+  {
     id: '2026-garmin-run-korea-half-marathon',
     slug: '2026-garmin-run-korea-half-marathon',
     title: '2026 가민런 코리아, 하프 신설 + 1만 2천명 확대 | "접수 2분컷" 대회가 돌아온다 — 일정·접수·코스 총정리',
