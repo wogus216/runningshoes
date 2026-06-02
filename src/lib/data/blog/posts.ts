@@ -2,6 +2,116 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-seonsa-marathon-gangdong',
+    slug: '2026-seonsa-marathon-gangdong',
+    title: '2026 선사마라톤축제 — 참가비 3만원에 바람막이까지 | 6천년 암사동 유적에서 한강까지, 일정·접수·코스 총정리',
+    description: '서울 강동구 암사동 유적에서 출발해 한강을 달리는 제20회 2026 선사마라톤축제. 2026년 9월 20일 개최, 하프·10K·5K(달리기/걷기) 종목에 전 종목 참가비 3만원 + 초경량 러닝자켓 제공. 강동구민 6/8·일반 6/11 선착순 접수(총 2,800명). 교통통제 없는 한강 평지 코스의 일정·접수·코스·준비 팁을 정리.',
+    thumbnail: '/images/blog/2026-seonsa-marathon-gangdong.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-02',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['선사마라톤', '선사마라톤축제', '강동구 마라톤', '암사동 유적', '한강 마라톤', '2026 마라톤', '가을 마라톤', '하프마라톤', '마라톤 접수'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>제20회 2026 선사마라톤축제</strong>가 <strong>2026년 9월 20일(일)</strong> 서울 강동구 <strong>암사동 유적</strong>에서 출발해 한강을 달립니다</li>
+    <li><strong>전 종목 참가비 3만원 + 초경량 러닝자켓(바람막이)</strong> 제공 — 가성비 좋은 가을 대회. 하프·10K·5K(달리기/걷기) 4종목</li>
+    <li>접수는 <strong>강동구민 6/8, 일반 6/11 오전 10시 선착순</strong>(총 2,800명). 작년보다 한 달 앞당겨졌고 빠르게 마감되니 서두르세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏛️</span>
+  <div class="callout-body">
+    <p class="callout-title">6천년 신석기 유적에서 한강까지</p>
+    <p>선사마라톤축제는 국내 최대 신석기 유적인 <strong>서울 암사동 유적</strong>을 알리기 위해 강동구가 여는 대회로, 올해 <strong>20회</strong>를 맞습니다. <strong>암사초록길을 따라 한강으로 바로 진입</strong>하는 평지 코스라 교통통제 없이 안전하고, 10월의 강동선사문화축제(10/16~18)를 앞두고 분위기를 띄우는 선행 행사이기도 합니다. "가을바람 맞으며 한강 뛰고, 참가비 3만원에 바람막이까지" 받는 가성비 대회로 입소문을 타고 있습니다.</p>
+  </div>
+</div>
+
+<h2>2026 선사마라톤축제 한눈에</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>대회일</td><td><strong>2026년 9월 20일(일) 오전 9시</strong></td></tr>
+    <tr><td>출발지</td><td>서울 강동구 <strong>암사동 유적</strong> 앞 특설무대</td></tr>
+    <tr><td>종목</td><td><strong>하프(21.1km) · 10km · 5km 달리기 · 5km 걷기</strong></td></tr>
+    <tr><td>참가비</td><td><strong>전 종목 3만원</strong> (초경량 러닝자켓 포함)</td></tr>
+    <tr><td>규모</td><td>총 2,800명 (작년 대비 확대)</td></tr>
+    <tr><td>접수(구민)</td><td>6월 8일 10시 · 선착순 1,000명</td></tr>
+    <tr><td>접수(일반)</td><td><strong>6월 11일 10시 · 선착순 1,800명</strong></td></tr>
+    <tr><td>접수처</td><td>gomarathon.co.kr</td></tr>
+  </tbody>
+</table>
+
+<p class="caption">일정·정원은 주최(강동구 육상연맹) 공지 기준입니다. 종목별 세부 정원·코스 표지 등은 공식 접수 페이지에서 최종 확인하세요.</p>
+
+<h2>핵심 ① — 참가비 3만원에 바람막이까지</h2>
+
+<p>이 대회의 최대 매력은 <strong>가성비</strong>입니다. 하프부터 5km 걷기까지 <strong>전 종목 3만원</strong>인데, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 줍니다. 가을·겨울 러닝에 바로 쓰는 기능성 자켓이라 사실상 참가비 값을 하는 셈이죠. 완주자에게는 <strong>완주메달과 기록증</strong>도 제공됩니다.</p>
+
+<h2>핵심 ② — 교통통제 없는 한강 평지 코스</h2>
+
+<p>출발지인 암사동 유적 광장에서 <strong>암사초록길과 암사 토끼굴(생태 터널)</strong>을 지나 <strong>광나루~잠실 한강공원</strong> 구간으로 진입합니다. 한강을 따라 달리는 <strong>평지 코스라 고도 부담이 거의 없어</strong> 기록 도전에도 유리합니다. 일반 도로를 막지 않는 안전한 코스 설계라 초보·가족 참가자도 부담이 적습니다.</p>
+
+<ul>
+  <li><strong>하프(21.1km)</strong> — 제한시간 3시간. 한강 평지라 첫 하프·기록 도전 모두 적합</li>
+  <li><strong>10km</strong> — 제한시간 1시간 30분</li>
+  <li><strong>5km 달리기</strong> — 제한시간 1시간. 입문·가족 추천</li>
+  <li><strong>5km 걷기</strong> — 제한시간 1시간 30분. 누구나 참가 가능</li>
+</ul>
+
+<h2>핵심 ③ — 접수가 한 달 앞당겨졌다, 서두르세요</h2>
+
+<p>작년(19회)은 7월에 접수를 시작했는데, <strong>올해는 6월로 한 달 앞당겨졌습니다.</strong> 강동구민은 <strong>6월 8일</strong>, 일반(비구민)은 <strong>6월 11일 오전 10시</strong>부터 선착순입니다. 정원이 총 2,800명으로 한정적이라 <strong>인기 종목은 빠르게 마감</strong>될 수 있으니, 신청 시각에 맞춰 접속하는 걸 권합니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 D-DAY 체크</p>
+    <p><strong>일반 참가자는 6월 11일(목) 오전 10시</strong>를 알림으로 등록해두세요. 선착순이라 오픈 직후 접속이 중요합니다. <a href="https://www.gomarathon.co.kr" target="_blank" rel="noopener">gomarathon.co.kr</a>에서 신청하며, 강동구민은 사흘 빠른 6월 8일에 별도 페이지로 접수합니다.</p>
+  </div>
+</div>
+
+<h2>9월 대회, 지금부터 준비하면 충분</h2>
+
+<p>9월 20일이면 <strong>약 3개월 반</strong>의 준비 기간이 있습니다. 무더위·장마가 끼는 시기라 안전하게 거리를 쌓는 게 핵심입니다.</p>
+
+<ul>
+  <li><strong>하프 도전</strong>: 천천히 오래 달리는 LSD로 기초 지구력부터. <a href="/blog/lsd-training-beginner-guide-korea">초보 LSD 훈련 가이드</a></li>
+  <li><strong>페이스 전략</strong>: 평지 한강 코스는 페이스 배분이 기록을 좌우. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략</a></li>
+  <li><strong>여름 훈련</strong>: 6~8월 폭염·장마 대비. <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 가이드</a></li>
+  <li><strong>신발 준비</strong>: 한강 평지 완주용 데일리·쿠션화. <a href="/recommend">1분 러닝화 추천</a>으로 본인 조건에 맞는 후보 찾기</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">한강 러닝이 처음이라면</p>
+    <p>대회 전 코스를 미리 달려보고 싶다면, 광나루~잠실 한강공원 구간을 가볍게 뛰어보세요. 서울 한강·도심 러닝 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>에서 정리했습니다. 다른 가을 대회와 함께 일정을 짜려면 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 강동구민이 아니어도 참가할 수 있나요?</h3>
+<p>네. 일반(비구민)은 <strong>6월 11일 오전 10시</strong>부터 선착순 1,800명을 모집합니다. 강동구민은 사흘 빠른 6월 8일에 별도로 1,000명을 접수합니다. 둘 다 <strong>gomarathon.co.kr</strong>에서 신청합니다.</p>
+
+<h3>Q. 참가비 3만원에 정말 바람막이를 주나요?</h3>
+<p>네. 전 종목 참가비가 3만원으로 동일하고, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 제공합니다. 완주자에게는 메달과 기록증도 주어져, 가을 대회 중 가성비가 좋은 편입니다.</p>
+
+<h3>Q. 하프가 처음인데 코스가 어렵나요?</h3>
+<p>암사초록길에서 한강으로 진입하는 <strong>평지 위주 코스</strong>라 고도 부담이 적고, 교통통제 없는 안전한 설계입니다. 첫 하프 도전에 적합하지만, 9월까지 LSD로 거리를 점진적으로 늘려두세요. <a href="/blog/lsd-training-beginner-guide-korea">LSD 가이드</a>를 참고하세요.</p>
+
+<h3>Q. 가족과 함께 참가하고 싶어요.</h3>
+<p><strong>5km 걷기(제한시간 1시간 30분)</strong> 종목이 있어 어린이·노약자도 함께할 수 있습니다. 달리기가 부담되면 5km 걷기로 신청해 암사동 유적과 한강을 가볍게 즐기기 좋습니다.</p>
+`,
+  },
+  {
     id: 'trail-running-appeal-beginner-guide-2026',
     slug: 'trail-running-appeal-beginner-guide-2026',
     title: '산으로 가는 러너들 — 트레일 러닝의 매력과 입문 가이드 | 로드와 뭐가 다를까? 왜 빠질까?',
