@@ -2,6 +2,103 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'celebrity-runners-shoe-choices-guide',
+    slug: 'celebrity-runners-shoe-choices-guide',
+    title: '연예인들은 러닝할 때 어떤 신발 신을까 | "스타 따라 사기" 전에 — 셀럽이 고르는 러닝화 3유형과 내 발에 맞추는 법',
+    description: '러닝이 셀럽들의 라이프스타일로 자리 잡으며 "그 연예인이 신은 러닝화"에 관심이 쏠립니다. 셀럽들이 고르는 러닝화를 기록용 슈퍼슈즈·프리미엄 데일리·맥스 쿠션 3유형으로 나눠 RunRepeat 데이터 관점에서 정리하고, "스타가 신었다고 나에게 맞는 건 아니다" — 내 발·실력에 맞게 고르는 법까지 안내합니다.',
+    thumbnail: '/images/blog/celebrity-runners-shoe-choices-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-02',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['셀럽 러닝화', '연예인 러닝', '러닝 트렌드', '슈퍼슈즈', '데일리 러닝화', '러닝화 추천', '러닝화 고르는 법', 'Stars on Track'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>러닝이 셀럽들의 라이프스타일</strong>로 자리 잡으며 "그 연예인이 신은 러닝화"에 관심이 쏠립니다 — 대회 출전부터 일상 러닝까지</li>
+    <li>셀럽들이 고르는 러닝화는 대체로 <strong>① 기록용 슈퍼슈즈 ② 프리미엄 데일리 ③ 맥스 쿠션</strong> 3유형으로 나뉩니다</li>
+    <li>핵심은 <strong>"스타가 신었다고 나에게 맞는 건 아니다"</strong> — 셀럽의 목적·실력과 내 조건은 다릅니다. 유형을 이해하고 <strong>내 발·실력에 맞게</strong> 고르세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⭐</span>
+  <div class="callout-body">
+    <p class="callout-title">Stars on Track — 러닝하는 셀럽의 시대</p>
+    <p>요즘 러닝을 즐기는 연예인이 눈에 띄게 늘었습니다. 마라톤 풀코스를 완주하는 스타부터 일상 러닝을 SNS에 올리는 셀럽까지, 러닝은 하나의 라이프스타일이 됐죠. 자연스럽게 <strong>"저 연예인이 신은 러닝화"</strong>에 관심이 쏠립니다. 그런데 같은 러닝화라도 <strong>기록에 도전하느냐, 가볍게 즐기느냐</strong>에 따라 선택이 완전히 달라집니다. 셀럽들의 선택을 유형으로 풀어보고, 내게 맞는 기준을 찾아봅니다.</p>
+  </div>
+</div>
+
+<h2>셀럽이 고르는 러닝화 3유형</h2>
+
+<h3>① 기록용 슈퍼슈즈 — "대회·기록 도전" 셀럽</h3>
+<p>마라톤 대회에 진심인 셀럽은 <strong>카본 플레이트 슈퍼슈즈</strong>를 신습니다. PEBA 폼과 카본 플레이트로 <strong>에너지 리턴이 높아 기록 단축에 유리</strong>한 신발이죠. 다만 <strong>딱딱하고 불안정</strong>해 초보에겐 부담이 됩니다.</p>
+<ul>
+  <li>대표 모델: <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>, <a href="/shoes/nike-alphafly-3">알파플라이 3</a>, <a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></li>
+  <li><strong>RunRepeat 관점</strong>: 에너지 리턴 65%+ · 가벼운 무게. 단, 내구성이 짧고(레이스 전용) 가격이 25만원+</li>
+  <li><strong>이런 사람에게</strong>: 서브3~4 기록 도전, 풀코스 경험자. <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a> 참고</li>
+</ul>
+
+<h3>② 프리미엄 데일리 — "일상 러닝" 셀럽</h3>
+<p>대부분의 러닝하는 셀럽이 평소 신는 유형입니다. <strong>적당한 쿠션과 반발</strong>로 매일 뛰기 좋고, 디자인도 세련돼 일상에서도 신기 좋죠. <strong>가장 무난하고 실용적</strong>이라 일반 러너에게도 1순위입니다.</p>
+<ul>
+  <li>대표 모델: <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/on-cloudmonster-3">온 클라우드몬스터 3</a>, <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a></li>
+  <li><strong>RunRepeat 관점</strong>: 균형 잡힌 스택·드롭에 500~700km 내구성. 가성비와 범용성 최고</li>
+  <li><strong>이런 사람에게</strong>: 입문~중급, 주 3~4회 데일리 러닝. 첫 러닝화로도 적합 → <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a></li>
+</ul>
+
+<h3>③ 맥스 쿠션 — "편하게 즐기는" 셀럽</h3>
+<p>기록보다 <strong>무릎 보호와 편안함</strong>을 중시하는 셀럽은 두툼한 맥스 쿠션화를 고릅니다. 스택이 높아 <strong>충격을 잘 흡수</strong>해 장거리·회복 러닝, 고체중 러너에게 좋습니다.</p>
+<ul>
+  <li>대표 모델: <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>, <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></li>
+  <li><strong>RunRepeat 관점</strong>: 힐 스택 40mm+ · 높은 충격 흡수(SA). 무릎·발목 부담이 큰 러너에게 유리</li>
+  <li><strong>이런 사람에게</strong>: 무릎 걱정, 장거리 LSD, 편안함 우선. 발볼 넓으면 와이드 옵션 확인</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">"스타가 신었다고 나에게 맞는 건 아니다"</p>
+    <p>셀럽이 슈퍼슈즈를 신는다고 따라 사면 낭패를 볼 수 있습니다. 그 셀럽은 <strong>이미 충분한 러닝 경력과 기록 목표</strong>가 있어 그 신발이 맞는 것이죠. 카본 슈퍼슈즈는 <strong>초보가 신으면 불안정하고 부상 위험</strong>이 큽니다. 반대로 일상 러닝만 한다면 25만원짜리 레이싱화보다 <strong>프리미엄 데일리</strong>가 훨씬 실용적입니다. <strong>신발은 셀럽의 이름이 아니라 내 발·실력·목적에 맞춰야</strong> 합니다.</p>
+  </div>
+</div>
+
+<h2>그래서, 나는 어떻게 골라야 하나</h2>
+
+<p>"저 연예인 신발"이 궁금했다면, 이제 <strong>유형</strong>을 알았으니 내 조건에 대입해보세요.</p>
+
+<ul>
+  <li><strong>목적</strong>: 기록 도전 → 슈퍼슈즈 / 매일 러닝 → 데일리 / 편한 조깅·무릎 보호 → 맥스 쿠션</li>
+  <li><strong>실력</strong>: 입문이면 슈퍼슈즈는 보류. 데일리·쿠션부터 시작</li>
+  <li><strong>발볼</strong>: 한국 러너는 토박스 너비가 1순위. 좁은 모델은 와이드 확인</li>
+  <li><strong>예산</strong>: 일상용이면 15~20만원 데일리로 충분. 카본은 목표가 분명할 때</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🛠️</span>
+  <div class="callout-body">
+    <p class="callout-title">셀럽 이름 말고 데이터로</p>
+    <p>셀럽 마케팅에 휘둘리지 않으려면 <strong>광고 카피가 아닌 객관 데이터</strong>로 신발을 보세요 — <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 무게·스택·드롭·에너지 리턴 읽는 법을 정리했습니다. 본인 조건(경험·목적·발 너비·부상 이력)에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁히고, 두세 모델을 <a href="/compare">신발 비교</a>로 나란히 보면 실패가 줄어듭니다.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 연예인이 신은 러닝화를 사면 나도 빨라지나요?</h3>
+<p>신발만으로 빨라지지 않습니다. 슈퍼슈즈가 기록을 일부 도와주는 건 맞지만, 그 효과는 <strong>충분한 훈련량과 러닝 능력</strong>이 있을 때 발휘됩니다. 초보가 카본화를 신으면 오히려 불안정해 부상 위험이 큽니다. <strong>실력에 맞는 신발</strong>이 가장 빠른 길입니다.</p>
+
+<h3>Q. 입문자인데 셀럽처럼 슈퍼슈즈 신어도 되나요?</h3>
+<p>권하지 않습니다. 카본 슈퍼슈즈는 <strong>딱딱하고 불안정</strong>해 러닝 폼이 안정되지 않은 입문자에겐 무리입니다. <strong>프리미엄 데일리</strong>(페가수스·라이드 등)로 기초를 다진 뒤, 기록 목표가 생기면 그때 슈퍼슈즈를 고려하세요.</p>
+
+<h3>Q. 일상 러닝만 하는데 비싼 러닝화가 필요할까요?</h3>
+<p>아닙니다. 주 3~4회 일상 러닝이라면 <strong>15~20만원대 프리미엄 데일리</strong>로 충분합니다. 25만원짜리 레이싱화는 내구성도 짧아 일상용으로는 비효율적입니다. 무릎이 걱정되면 맥스 쿠션을 고려하세요.</p>
+
+<h3>Q. 발볼이 넓은데 셀럽이 신는 모델이 좁다면요?</h3>
+<p>같은 모델의 <strong>와이드(2E·4E) 버전</strong>이 있는지 확인하세요. 한국 러너는 발볼이 넓은 편이라 토박스가 좁으면 새끼발가락 통증·물집이 생깁니다. 발 너비를 "넓음"으로 두고 <a href="/recommend">1분 추천</a>을 받으면 맞는 모델이 걸러집니다.</p>
+`,
+  },
+  {
     id: 'korea-trail-skyrace-guide-2026',
     slug: 'korea-trail-skyrace-guide-2026',
     title: '한국 트레일·스카이레이스 대회 가이드 2026 | 스카이레이스란? 운탄고도부터 트랜스제주 UTMB까지 — 시즌·난이도·장비 총정리',
