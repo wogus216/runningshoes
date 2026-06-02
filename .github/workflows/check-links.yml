@@ -13,11 +13,11 @@ jobs:
       issues: write
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          node-version: '20'
+          node-version: '22'
           cache: 'npm'
 
       - run: npm ci
@@ -35,7 +35,7 @@ jobs:
 
       - name: 문제 발견 시 이메일 알림
         if: steps.check.outputs.has_issues == 'true'
-        uses: dawidd6/action-send-mail@4226df7daafa6fc901a43789c49bf7ab309066e7 # v3
+        uses: dawidd6/action-send-mail@42942bc2f8fba4e611b459a018967a6a7c78c68c # v17
         with:
           server_address: smtp.gmail.com
           server_port: 465
@@ -57,7 +57,7 @@ jobs:
 
       - name: 문제 발견 시 Issue 생성
         if: steps.check.outputs.has_issues == 'true'
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         with:
           script: |
             const fs = require('fs');
