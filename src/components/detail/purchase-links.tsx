@@ -72,25 +72,32 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
   const savings = msrp && lowestPrice && lowestPrice < msrp ? msrp - lowestPrice : 0;
   const savingsPct = savings && msrp ? Math.round((savings / msrp) * 100) : 0;
 
+  // 가격이 매겨진 스토어가 2곳 이상일 때만 "최저가 비교" 모드로 노출.
+  // 그 외(단일 스토어 / 가격 미기재)는 깔끔한 구매처 바로가기로.
+  const hasComparison = pricedLinks.length >= 2;
+
   return (
     <section className="space-y-5">
       <div className="space-y-2">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
         <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">
           <ExternalLink className="h-6 w-6 text-stone-600" />
-          스토어별 가격 비교
+          {hasComparison ? '스토어별 최저가 비교' : '구매처 바로가기'}
         </h2>
         <p className="text-sm leading-relaxed text-slate-600">
-          {brand} {shoeName}의 {validLinks.length}개 스토어 가격을 한눈에 비교하세요.
+          {hasComparison
+            ? `${brand} ${shoeName}의 ${validLinks.length}개 스토어 가격을 한눈에 비교하세요.`
+            : `${brand} ${shoeName}을(를) 판매 스토어에서 바로 만나보세요. 가격은 스토어에서 최종 확인하세요.`}
         </p>
       </div>
 
-      {cheapestLink && lowestPrice !== undefined && (
+      {hasComparison && cheapestLink && lowestPrice !== undefined ? (
+        // ── 최저가 강조 카드 (가격 비교 가능 시) ──
         <a
           href={cheapestLink.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="block rounded-[28px] border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 p-5 shadow-[0_20px_40px_-28px_rgba(16,185,129,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_48px_-28px_rgba(16,185,129,0.45)] md:p-6"
+          className="group block rounded-[28px] border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 p-5 shadow-[0_20px_40px_-28px_rgba(16,185,129,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_48px_-28px_rgba(16,185,129,0.45)] md:p-6"
         >
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
@@ -117,62 +124,104 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
             </div>
           </div>
         </a>
+      ) : (
+        // ── 구매처 바로가기 CTA (단일 스토어 / 가격 미기재) ──
+        <div className="grid gap-3 sm:grid-cols-2">
+          {sortedLinks.map((link, index) => {
+            const style = getStoreStyle(link.store);
+            return (
+              <a
+                key={index}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                className="group flex items-center justify-between gap-3 rounded-[20px] border border-border bg-white p-4 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_18px_36px_-28px_rgba(15,23,42,0.45)] sm:p-5"
+              >
+                <div className="flex items-center gap-3 min-w-0">
+                  <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${style.bg}`}>
+                    <ExternalLink className={`h-5 w-5 ${style.text}`} />
+                  </span>
+                  <div className="min-w-0">
+                    <p className="flex items-center gap-1.5 font-bold text-slate-950">
+                      <span className={style.text}>{link.store}</span>
+                      {link.isOfficial && (
+                        <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700">
+                          <ShieldCheck className="h-3 w-3" />
+                          공식
+                        </span>
+                      )}
+                    </p>
+                    <p className="text-xs text-tertiary">
+                      {link.price ? `${link.price.toLocaleString()}원` : '스토어에서 구매하기'}
+                    </p>
+                  </div>
+                </div>
+                <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-slate-800">
+                  구매
+                  <ExternalLink className="h-4 w-4" />
+                </span>
+              </a>
+            );
+          })}
+        </div>
       )}
 
       <AffiliateDisclosure purchaseLinks={purchaseLinks} />
 
-      <div className="overflow-hidden rounded-[24px] border border-border bg-white">
-        <div className="hidden sm:grid grid-cols-[1fr_auto_auto] gap-4 bg-surface px-5 py-3 text-xs font-semibold uppercase tracking-wider text-tertiary">
-          <div>스토어</div>
-          <div className="text-right">가격</div>
-          <div className="w-20 text-right">이동</div>
+      {hasComparison && (
+        <div className="overflow-hidden rounded-[24px] border border-border bg-white">
+          <div className="hidden sm:grid grid-cols-[1fr_auto_auto] gap-4 bg-surface px-5 py-3 text-xs font-semibold uppercase tracking-wider text-tertiary">
+            <div>스토어</div>
+            <div className="text-right">가격</div>
+            <div className="w-20 text-right">이동</div>
+          </div>
+          <ul className="divide-y divide-border">
+            {sortedLinks.map((link, index) => {
+              const style = getStoreStyle(link.store);
+              const isCheapest = link === cheapestLink;
+              return (
+                <li key={index}>
+                  <a
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-surface/50 ${
+                      isCheapest ? 'bg-emerald-50/50' : ''
+                    }`}
+                  >
+                    <div className="flex items-center gap-2 min-w-0">
+                      <span className={`font-bold ${style.text}`}>{link.store}</span>
+                      {link.isOfficial && (
+                        <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-semibold">
+                          <ShieldCheck className="h-3 w-3" />
+                          공식
+                        </span>
+                      )}
+                      {isCheapest && (
+                        <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-semibold">
+                          최저가
+                        </span>
+                      )}
+                    </div>
+                    <div className="text-right">
+                      {link.price ? (
+                        <span className={`font-bold ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
+                          {link.price.toLocaleString()}원
+                        </span>
+                      ) : (
+                        <span className="text-xs text-tertiary">가격 확인</span>
+                      )}
+                    </div>
+                    <div className="hidden sm:flex w-20 items-center justify-end text-slate-400">
+                      <ExternalLink className="h-4 w-4" />
+                    </div>
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
         </div>
-        <ul className="divide-y divide-border">
-          {sortedLinks.map((link, index) => {
-            const style = getStoreStyle(link.store);
-            const isCheapest = link === cheapestLink;
-            return (
-              <li key={index}>
-                <a
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-surface/50 ${
-                    isCheapest ? 'bg-emerald-50/50' : ''
-                  }`}
-                >
-                  <div className="flex items-center gap-2 min-w-0">
-                    <span className={`font-bold ${style.text}`}>{link.store}</span>
-                    {link.isOfficial && (
-                      <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-semibold">
-                        <ShieldCheck className="h-3 w-3" />
-                        공식
-                      </span>
-                    )}
-                    {isCheapest && (
-                      <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-semibold">
-                        최저가
-                      </span>
-                    )}
-                  </div>
-                  <div className="text-right">
-                    {link.price ? (
-                      <span className={`font-bold ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
-                        {link.price.toLocaleString()}원
-                      </span>
-                    ) : (
-                      <span className="text-xs text-tertiary">가격 확인</span>
-                    )}
-                  </div>
-                  <div className="hidden sm:flex w-20 items-center justify-end text-slate-400">
-                    <ExternalLink className="h-4 w-4" />
-                  </div>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
-      </div>
+      )}
 
       <div className="rounded-[20px] border border-stone-900/10 bg-surface/60 p-4 text-xs text-slate-600">
         <p className="mb-2 font-semibold text-slate-700">구매 전 확인</p>
