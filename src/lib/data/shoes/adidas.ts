@@ -100,6 +100,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['hoka-clifton-10', 'asics-novablast-5', 'nike-pegasus-premium'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G6Rk6mVq' }],
   },
   {
     id: 'adidas-supernova-rise-2',
@@ -694,6 +695,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-metafuji-trail', 'hoka-tecton-x-3'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FkarcfZr' }],
   },
   {
     id: 'adidas-terrex-agravic-speed-ultra',
@@ -778,5 +780,6 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-metafuji-trail', 'nike-ultrafly'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5c8NGYoA' }],
   },
 ];

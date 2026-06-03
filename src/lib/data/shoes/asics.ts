@@ -1496,5 +1496,6 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['adidas-terrex-agravic-4'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F4Wo3zOy' }],
   },
 ];

@@ -228,6 +228,7 @@ export const nikeShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xG0f5GZl' }],
   },
   {
     id: 'nike-pegasus-premium',
@@ -1443,5 +1444,6 @@ export const nikeShoes: Shoe[] = [
       },
     ],
     similarShoes: ['hoka-tecton-x-3', 'asics-metafuji-trail'],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5jXn3l3X' }],
   },
 ];
