@@ -2,6 +2,84 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'seoul-dulle-trail-156km-ultra-fkt-guide',
+    slug: 'seoul-dulle-trail-156km-ultra-fkt-guide',
+    title: '서울을 하루에 한 바퀴 — 서울둘레길 156.5km "도시 100마일" 도전 | FKT·울트라 러닝이란? 그리고 우리는 이렇게 즐기는 법',
+    description: '프랑스 울트라 러닝 브랜드 와이즈가 도봉산역에서 출발해 서울둘레길 156.5km를 한 번에 도는 "서울 트레일 FKT"에 도전했습니다. 산·도로·계단·한강·밤과 새벽이 이어지는 도시 100마일이란 무엇인지, FKT와 울트라 러닝의 개념, 그리고 일반 러너가 21개 코스를 나눠 완주하며 스탬프 인증으로 즐기는 법, 어떤 신발이 맞는지까지 정리했습니다.',
+    thumbnail: '/images/blog/seoul-dulle-trail-156km-ultra-fkt-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-04',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['서울둘레길', '울트라 러닝', 'FKT', '도시 100마일', '서울 트레일', '트레일 러닝', '장거리 러닝', '러닝 코스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>프랑스 울트라 러닝 브랜드 <strong>와이즈(WAA)</strong>의 창립자들이 도봉산역에서 출발해 <strong>서울둘레길 156.5km를 한 번에 도는 "서울 트레일 FKT"</strong>에 도전했습니다 — 산·도로·계단·한강을, 밤과 새벽을 통과하는 "도시 100마일"</li>
+    <li><strong>서울둘레길은 총 156.5km·21개 코스</strong>의 순환형 길. 한 번에 다 도는 건 극소수 울트라 러너의 영역이고, 일반 러너에겐 <strong>코스를 나눠 완주하며 28개 스탬프를 모으는 방식</strong>이 정답입니다</li>
+    <li>이런 장거리엔 신발이 갈립니다 — <strong>트레일과 로드가 섞인 하이브리드 노면</strong>이라 쿠션·내구성·접지력의 균형이 중요합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"서울 둘레길 156.5km를 22시간에 완주할 수 있을까?"</p>
+    <p>러너에게 서울은 출근길이나 익숙한 생활 배경이 아니라, <strong>산과 도로·계단과 한강·밤과 새벽이 이어지는 하나의 긴 코스</strong>가 됩니다. 프랑스 울트라 러닝 브랜드 <strong>와이즈 울트라 러닝</strong>의 두 창립자 기욤(Guillaume)과 악셀(Axelle)은 굿러너 컴퍼니와 함께, 도봉산역을 출발해 서울을 통째로 한 바퀴 도는 <strong>"서울 트레일 FKT"</strong>에 도전했습니다. 도시 한복판에서 펼쳐진 100마일(약 160km)급 도전이죠.</p>
+  </div>
+</div>
+
+<h2>서울둘레길 156.5km란</h2>
+<p>서울둘레길은 2014년 개통한 <strong>순환형 도보 여행길</strong>로, 서울 외곽의 산·하천·마을길을 이어 <strong>서울을 한 바퀴 감싸는 총 156.5km</strong> 코스입니다. 2024년 기존 8개 코스를 <strong>21개 코스로 세분화</strong>해, 코스당 평균 길이를 20km에서 8km로 줄였습니다. 평균 완주 시간도 코스당 8시간 → 약 3시간으로 짧아져 부담이 크게 줄었죠.</p>
+<ul>
+  <li><strong>가장 어려운 구간</strong>: 수락산 코스(1코스) — 암벽·계단식 절개면과 '채석장 전망대'의 독특한 경관</li>
+  <li><strong>전망 명소</strong>: 망우·용마산 코스(4코스) — 용마산 스카이워크에서 서울 전경 조망</li>
+  <li><strong>가족·꽃놀이</strong>: 안양천 코스(13~14코스) — 봄 벚꽃 명소, 평지라 입문 친화적</li>
+</ul>
+<p>도심 한강 코스만 달려봤다면, 둘레길의 산길은 완전히 다른 결입니다 → <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a></p>
+
+<h2>"도시 100마일" — FKT라는 도전</h2>
+<p><strong>FKT(Fastest Known Time)</strong>는 정해진 구간을 가장 빠르게 주파한 비공식 기록을 뜻합니다. 마라톤 같은 정식 대회가 아니라, <strong>러너가 스스로 코스를 정하고 시간을 측정</strong>하는 자유로운 형식이죠. 와이즈의 도전처럼 "서울둘레길 전 구간"을 한 번에 도는 것도 하나의 FKT 프로젝트입니다.</p>
+<p>156.5km를 한 번에 달린다는 건 단순히 거리가 긴 게 아닙니다.</p>
+<ul>
+  <li><strong>밤을 통과한다</strong>: 22시간이면 해가 지고 다시 뜹니다. 헤드랜턴·야간 시야·졸음과 싸워야 합니다.</li>
+  <li><strong>노면이 계속 바뀐다</strong>: 산악 트레일 → 계단 → 아스팔트 → 한강 둔치까지. 발과 신발에 가해지는 부하가 다채롭습니다.</li>
+  <li><strong>보급이 생존이다</strong>: 수분·전해질·탄수화물을 끊임없이 채워야 합니다 → <a href="/blog/energy-gel-science-guide">에너지젤 성분 완벽 분석</a></li>
+</ul>
+
+<h2>울트라 러닝, 일반 러너와 뭐가 다를까</h2>
+<p>보통 <strong>마라톤(42.195km)을 넘는 거리</strong>를 울트라 러닝이라 부릅니다. 50km·100km·100마일(약 160km)이 대표적이죠. 일반 러닝과 결정적으로 다른 점은:</p>
+<ul>
+  <li><strong>속도가 아니라 "계속 움직이기"</strong>가 목표 — 걷기와 달리기를 섞고, 보급·휴식을 전략적으로 배치합니다.</li>
+  <li><strong>장비가 곧 안전</strong> — 배낭·물통·랜턴·여벌 양말까지. 와이즈 같은 브랜드가 장비를 강조하는 이유입니다.</li>
+  <li><strong>멘탈 관리</strong>가 거리만큼 중요 — 긴 시간을 잘게 쪼개 "다음 보급지까지"로 버팁니다. 거리별 멘탈·페이스 전략은 → <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이스·멘탈 가이드</a></li>
+</ul>
+<p>트레일 러닝 자체가 처음이라면, 로드와 무엇이 다른지부터 → <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝의 매력과 입문 가이드</a></p>
+
+<div class="callout warning">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">우리는 이렇게 즐기자 — 156.5km를 "나눠서" 완주</p>
+    <p>156.5km를 한 번에 도는 건 극소수 울트라 러너의 영역입니다. 일반 러너에게 서울둘레길의 진짜 매력은 <strong>21개 코스를 주말마다 하나씩</strong> 정복하는 데 있습니다. 코스마다 있는 <strong>28개 스탬프</strong>를 모두 찍으면 <strong>완주 인증서와 기념 배지</strong>를 받습니다. 한 번에 8km, 3시간이면 충분하니 입문자도 부담 없죠. "서울 한 바퀴"라는 같은 목표를, 내 페이스로 몇 달에 걸쳐 이루는 겁니다.</p>
+  </div>
+</div>
+
+<h2>어떤 신발로 달려야 할까</h2>
+<p>서울둘레길은 <strong>산길과 포장로가 섞인 하이브리드 노면</strong>이라 신발 선택이 까다롭습니다.</p>
+<ul>
+  <li><strong>산악 비중이 큰 코스(수락산·북한산·관악산 구간)</strong> → 접지력·발 보호가 중요한 <strong>트레일화</strong>. 카테고리별 추천은 → <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a></li>
+  <li><strong>한강·안양천 등 포장로 위주</strong> → 쿠션·통기성 좋은 일반 데일리화로 충분합니다.</li>
+  <li><strong>장시간·장거리</strong> → 발이 붓는 걸 감안해 <strong>반 사이즈 여유</strong>, 그리고 통기성·내구성을 챙기세요. 여름이라면 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
+</ul>
+
+<h2>한 줄 결론</h2>
+<p>와이즈의 "서울 트레일 FKT"는 도시를 새로운 눈으로 보게 합니다. 우리가 매일 지나치는 서울이, 누군가에겐 산과 한강·밤과 새벽이 이어지는 160km짜리 모험이 되는 거죠. 그 도전을 응원하되, 우리는 우리 방식으로 — <strong>21개 코스를 하나씩, 스탬프를 모으며</strong> 서울을 한 바퀴 완성해보면 어떨까요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 와이즈 울트라 러닝의 서울 트레일 FKT 도전은 온큐레이션(@oncuration)·굿러너 컴퍼니(@goodrunner_co)의 공개 콘텐츠를 참고했으며, 서울둘레길 코스 정보는 서울시 공식 자료를 바탕으로 했습니다.</p>
+`,
+  },
+  {
     id: 'hot-weather-summer-running-safety-guide-korea',
     slug: 'hot-weather-summer-running-safety-guide-korea',
     title: '폭염 러닝 안전 가이드 | "몇 도부터 뛰면 위험할까" — 심부체온·WBGT·수분 전략과 열사병 막는 법 (한국 여름 기준)',
