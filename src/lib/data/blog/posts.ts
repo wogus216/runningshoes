@@ -2,6 +2,82 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'lotte-world-tower-skyrun-tower-running-guide',
+    slug: 'lotte-world-tower-skyrun-tower-running-guide',
+    title: '계단으로 하늘을 오른다 — 롯데월드타워 스카이런과 "타워러닝" 완전 입문 | 123층·2,917계단·555m, 수직 마라톤이란?',
+    description: '롯데월드타워 스카이런은 123층·2,917개 계단·555m를 오르는 국내 대표 수직 마라톤입니다. 2026년 4월 대회는 성료됐지만, 계단 오르기 레이스(타워러닝)는 누구나 일상에서 준비할 수 있는 종목입니다. 타워러닝이란 무엇인지, 계단 운동의 효과와 주의점, 평소 훈련법, 그리고 내년 참가를 위한 접수 팁까지 정리했습니다.',
+    thumbnail: '/images/blog/lotte-world-tower-skyrun-tower-running-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-04',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['롯데월드타워 스카이런', '타워러닝', '수직 마라톤', '계단 오르기', '이색 마라톤', '계단 운동', '스카이레이스', '러닝 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>롯데월드타워 스카이런</strong>은 <strong>123층·2,917개 계단·높이 555m</strong>를 오르는 국내 대표 수직 마라톤입니다 — 2026년 대회는 <strong>4월 19일 성료</strong>(2,200명, 참가비 7만원)</li>
+    <li>이런 <strong>"타워러닝(수직 마라톤)"</strong>은 짧지만 심박이 순식간에 치솟는 고강도 종목. 거리는 짧아도 <strong>심폐·하체 근력</strong> 요구가 일반 러닝과 완전히 다릅니다</li>
+    <li>대회는 끝났지만 계단은 어디에나 있습니다 — <strong>평소 계단 훈련</strong>은 러너의 심폐·근력에도 큰 도움이 됩니다. 내년 참가를 노린다면 접수 방식(선착순+래플)만 알아두면 됩니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏢</span>
+  <div class="callout-body">
+    <p class="callout-title">"걸어서 하늘을 오르다" — 2,917개 계단 끝의 풍경</p>
+    <p>2026년 4월 19일, 2,200명의 참가자가 <strong>롯데월드타워 1층부터 123층 전망대(555m)까지</strong> 오직 계단으로 올랐습니다. 총 <strong>2,917개</strong>의 계단을 밟는 이 대회는 "수직 마라톤(Vertical Marathon)"으로 불립니다. 올해는 휴머노이드 로봇 'ROY'가 계단을 완주해 화제가 되기도 했죠. 올해 대회는 끝났지만, <strong>타워러닝이라는 종목 자체</strong>는 알아둘 만합니다 — 도시 한복판에서 즐기는 가장 독특한 러닝이니까요.</p>
+  </div>
+</div>
+
+<h2>타워러닝(수직 마라톤)이란</h2>
+<p><strong>타워러닝(Tower Running)</strong>은 고층 빌딩의 계단을 최대한 빠르게 오르는 종목입니다. 수평으로 달리는 일반 러닝과 달리 <strong>오직 수직 상승</strong>만 합니다. 전 세계적으로 <strong>타워러닝 투어(Towerrunning Tour)</strong>, <strong>버티컬 월드 서킷(Vertical World Circuit)</strong> 같은 국제 시리즈가 있고, 엠파이어 스테이트 빌딩·상하이 타워 등 랜드마크에서 열립니다. 롯데월드타워 스카이런은 그 한국판인 셈이죠.</p>
+<ul>
+  <li><strong>거리는 짧다</strong>: 555m 상승은 수평 거리로 치면 짧지만, 시간은 보통 <strong>10~20분대</strong>(상급자는 더 빠름)에 끝납니다.</li>
+  <li><strong>강도는 극단적이다</strong>: 시작하자마자 심박이 최대치 가까이 치솟아 끝까지 유지됩니다. "짧은 고통의 압축판"이죠.</li>
+  <li><strong>장비가 단순하다</strong>: 평지가 없으니 <strong>가볍고 전족부 접지가 좋은 신발</strong>이 유리합니다.</li>
+</ul>
+<p>'수직으로 오른다'는 점에서 산을 빠르게 오르는 <a href="/blog/korea-trail-skyrace-guide-2026">스카이레이스</a>와 통하는 면이 있습니다 — 둘 다 상승력이 핵심입니다.</p>
+
+<h2>계단 오르기, 몸에 좋을까 — 효과와 주의점</h2>
+<p>계단 운동은 효율이 매우 높은 운동입니다. 다만 강도가 높은 만큼 주의도 필요합니다.</p>
+<table>
+  <thead>
+    <tr><th>구분</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>심폐 강화</strong></td><td>짧은 시간에 최대심박 근처까지 올라 심폐 지구력·VO₂max 향상에 효율적</td></tr>
+    <tr><td><strong>하체 근력</strong></td><td>대퇴사두·둔근·종아리를 집중 자극 — 러너의 업힐·막판 스퍼트 근력에 직결</td></tr>
+    <tr><td><strong>관절 부담(주의)</strong></td><td>오를 때는 충격이 적지만, <strong>내려올 때</strong> 무릎 부담이 큼 → 하행은 엘리베이터 권장</td></tr>
+    <tr><td><strong>심혈관 주의</strong></td><td>혈압·심박이 급상승 → 고혈압·심장질환자는 무리 금물, 전문의 상담 필요</td></tr>
+  </tbody>
+</table>
+<p>계단에선 호흡이 금방 가빠집니다. 리듬 호흡으로 버티는 법은 → <a href="/blog/running-breathing-guide-korea">러닝 호흡법 완벽 가이드</a>, 무릎이 걱정이라면 → <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a></p>
+
+<h2>평소에 이렇게 훈련하자</h2>
+<p>대회가 아니어도, 계단 훈련은 러너의 무기가 됩니다. 별도 장소 없이 아파트·지하철 계단으로 가능하죠.</p>
+<ul>
+  <li><strong>인터벌식으로</strong>: 한 번에 다 오르려 하지 말고, <strong>몇 개 층 빠르게 → 회복</strong>을 반복하세요. 막판 스퍼트 근력이 붙습니다.</li>
+  <li><strong>한 칸씩 vs 두 칸씩</strong>: 한 칸씩은 심폐·리듬, 두 칸씩은 둔근·파워 강화. 번갈아 쓰면 좋습니다.</li>
+  <li><strong>내려올 땐 걷거나 엘리베이터</strong>: 하행 반복은 무릎에 독입니다. 올라가는 것만 훈련으로 삼으세요.</li>
+  <li><strong>주 1~2회면 충분</strong>: 강도가 높아 회복이 필요합니다. 평소 <a href="/blog/lsd-training-beginner-guide-korea">LSD 러닝</a>에 양념처럼 더하는 정도가 적당합니다.</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">🎟️</span>
+  <div class="callout-body">
+    <p class="callout-title">내년 참가를 노린다면 — 접수 방식만 기억하자</p>
+    <p>2026년 대회는 <strong>2,200명 모집, 참가비 7만원</strong>이었고, 접수는 <strong>① 선착순(빠른 마감) ② 래플(무작위 추첨)</strong> 두 방식으로 진행됐습니다. 보호자와 아이가 함께 뛰는 <strong>키즈 스카이런</strong>(추첨·무료)도 있었죠. 보통 <strong>대회 약 한 달 전(3월경) 접수</strong>가 열리니, 내년에 노린다면 <strong>2~3월에 롯데온·롯데월드타워 공지</strong>를 챙기세요. 선착순은 빠르게 마감되므로 래플도 함께 노리는 게 안전합니다.</p>
+  </div>
+</div>
+
+<h2>한 줄 결론</h2>
+<p>롯데월드타워 스카이런은 "도시에서 하늘을 향해 달리는" 가장 이색적인 도전입니다. 올해 대회는 끝났지만, <strong>계단은 1년 내내 우리 곁에</strong> 있습니다. 엘리베이터 대신 계단을 택하는 작은 습관이, 다음 봄 555m 정상에서 마주할 풍경의 첫 걸음이 될 수 있어요. 다른 이색 도전이 궁금하다면 → <a href="/blog/seoul-dulle-trail-156km-ultra-fkt-guide">서울둘레길 156.5km 도시 100마일</a>도 함께 보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 대회 정보(일정·참가비·코스)는 2026년 기준 공개 보도와 롯데월드타워 공식 자료를 참고했습니다. 계단 운동 관련 내용은 일반적인 건강 정보로, 기저질환이 있다면 전문의와 상담하세요.</p>
+`,
+  },
+  {
     id: 'seoul-dulle-trail-156km-ultra-fkt-guide',
     slug: 'seoul-dulle-trail-156km-ultra-fkt-guide',
     title: '서울을 하루에 한 바퀴 — 서울둘레길 156.5km "도시 100마일" 도전 | FKT·울트라 러닝이란? 그리고 우리는 이렇게 즐기는 법',
