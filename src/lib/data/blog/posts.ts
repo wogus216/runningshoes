@@ -2,6 +2,98 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'hot-weather-summer-running-safety-guide-korea',
+    slug: 'hot-weather-summer-running-safety-guide-korea',
+    title: '폭염 러닝 안전 가이드 | "몇 도부터 뛰면 위험할까" — 심부체온·WBGT·수분 전략과 열사병 막는 법 (한국 여름 기준)',
+    description: '한국 여름은 고온다습에 열대야까지 겹쳐 러닝 중 열질환 위험이 큽니다. 기온이 아니라 습도·복사열을 합친 WBGT로 판단해야 하는 이유, 심부체온이 40°C를 넘으면 벌어지는 일, 시간당 수분·전해질 보충량, 새벽런 vs 야간런, 그리고 열탈진·열사병·저나트륨혈증을 구분하고 대처하는 법까지 — 무더위에 안전하게 달리는 실전 가이드입니다.',
+    thumbnail: '/images/blog/hot-weather-summer-running-safety-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-04',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['폭염 러닝', '여름 러닝', '열사병 예방', '러닝 수분 보충', '전해질', 'WBGT', '새벽 러닝', '열질환'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>여름 러닝의 위험은 <strong>기온이 아니라 습도</strong>에서 옵니다. 땀이 증발해야 체온이 떨어지는데, 습하면 증발이 막혀 <strong>심부체온이 급상승</strong> — 그래서 기온·습도·복사열을 합친 <strong>WBGT(폭염 지수)</strong>로 판단해야 합니다</li>
+    <li>심부체온이 <strong>40°C</strong>를 넘으면 <strong>열사병</strong>(생명 위협)입니다. 그 전 단계인 <strong>열탈진</strong>(어지럼·메스꺼움·식은땀) 신호가 오면 <strong>즉시 멈추고 식혀야</strong> 합니다</li>
+    <li>핵심 대비는 <strong>① 시간대 회피(새벽·야간) ② 강도 낮추기 ③ 시간당 0.5~1L 수분 + 전해질 ④ 통기성 복장</strong>. 단, 물만 과음하면 <strong>저나트륨혈증</strong>이라는 또 다른 위험이 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🌡️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 여름은 "더운" 게 아니라 "습해서" 위험합니다</p>
+    <p>유럽·미국 서부의 35°C와 한국의 31°C는 몸이 받는 부담이 다릅니다. 한국 여름은 <strong>습도가 높아</strong> 땀이 증발하지 못하고 흐르기만 하죠. 땀은 <strong>증발할 때</strong> 체온을 떨어뜨리는데, 습하면 이 냉각 시스템이 고장 납니다. 결과적으로 같은 기온이라도 <strong>한국에서 심부체온이 더 빨리, 더 높이</strong> 오릅니다. "어제는 괜찮았는데 오늘 갑자기 힘들다"면 기온이 아니라 <strong>습도가 올랐을 가능성</strong>이 큽니다.</p>
+  </div>
+</div>
+
+<h2>몇 도부터 위험할까 — 기온 말고 WBGT</h2>
+<p>날씨 앱의 기온만 보면 안 됩니다. 운동 안전의 국제 표준은 <strong>WBGT(Wet Bulb Globe Temperature, 습구흑구온도)</strong>입니다. 기온 + <strong>습도</strong> + <strong>직사광선(복사열)</strong>을 모두 반영한 "체감 열 스트레스" 지수죠. 한국 기상청도 여름철 <strong>WBGT 기반 더위 단계와 운동 지침</strong>을 제공합니다.</p>
+<ul>
+  <li><strong>관심·주의 단계</strong>: 평소대로 뛰되 수분을 의식적으로 챙깁니다.</li>
+  <li><strong>경고 단계</strong>: 강도를 낮추고 거리를 줄이며, 그늘·시간대를 적극 활용합니다.</li>
+  <li><strong>위험 단계(통상 WBGT 31°C 이상)</strong>: <strong>야외 러닝을 피하는 것</strong>이 원칙입니다. 실내 트레드밀이나 휴식으로 전환하세요.</li>
+</ul>
+<p>WBGT는 기상청·날씨 앱의 "더위체감지수/온열질환 지수"로 확인할 수 있습니다. 같은 30°C라도 <strong>습도 80%와 50%는 완전히 다른 날</strong>이라는 점만 기억하면 됩니다.</p>
+
+<h2>심부체온이 40°C를 넘으면 — 열질환 3단계</h2>
+<p>여름 러닝 사고는 대부분 <strong>심부체온(몸 속 온도) 상승</strong>에서 시작됩니다. 단계별 신호를 알아야 제때 멈춥니다.</p>
+<table>
+  <thead>
+    <tr><th>단계</th><th>심부체온 기준</th><th>주요 신호</th><th>대처</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>열경련</strong></td><td>정상~약간 상승</td><td>종아리·허벅지 근육 경련, 다량 발한</td><td>멈추고 전해질·수분 보충, 스트레칭</td></tr>
+    <tr><td><strong>열탈진</strong></td><td>38°C 초과~40°C 미만</td><td>어지럼·두통·메스꺼움, 빠른 맥박, <strong>차갑고 끈끈한 식은땀</strong>, 무력감</td><td><strong>즉시 중단</strong>, 그늘·시원한 곳, 눕고 다리 올리기, 수분</td></tr>
+    <tr><td><strong>열사병 🚨</strong></td><td><strong>40°C 초과</strong></td><td>혼란·헛소리, 의식 저하, <strong>땀이 멈추고 피부가 뜨겁고 건조</strong>, 경련</td><td><strong>119 즉시 신고</strong>, 몸을 적극 냉각하며 구조 대기</td></tr>
+  </tbody>
+</table>
+<div class="callout info">
+  <span class="callout-icon">❗</span>
+  <div class="callout-body">
+    <p class="callout-title">가장 중요한 경고 신호: "땀이 멈췄다"</p>
+    <p>열탈진까지는 땀을 흘리지만, <strong>열사병으로 넘어가면 땀이 멈추고 피부가 건조·뜨거워집니다</strong>. 이건 몸의 냉각 시스템이 붕괴했다는 응급 신호입니다. 또 <strong>오한(춥다는 느낌)·소름</strong>이 더운 날 달리는 중에 온다면 위험 신호이니 즉시 멈추세요.</p>
+  </div>
+</div>
+
+<h2>수분·전해질 — 많이 마신다고 좋은 게 아니다</h2>
+<p>탈수도 위험하지만, <strong>물만 과하게</strong> 마시는 것도 위험합니다. 둘 다 피하는 균형이 핵심입니다.</p>
+<ul>
+  <li><strong>얼마나</strong>: 더운 날 러닝 중 <strong>시간당 약 0.5~1L</strong>가 일반적 기준입니다. 다만 발한량은 개인차가 커서, <strong>운동 전후 체중을 재서 빠진 만큼</strong> 채우는 게 가장 정확합니다(빠진 1kg ≈ 물 1L 손실).</li>
+  <li><strong>전해질</strong>: <strong>60~90분을 넘는 러닝</strong>이나 땀을 많이 흘리는 날은 물에 <strong>나트륨 등 전해질</strong>을 더하세요. 땀으로 나트륨이 빠지는데 맹물만 보충하면 농도가 더 희석됩니다.</li>
+  <li><strong>저나트륨혈증 주의</strong>: <strong>시간당 1.4L를 초과</strong>하는 과도한 물 섭취는 혈중 나트륨을 위험하게 떨어뜨려 <strong>메스꺼움·혼란·경련</strong>을 일으킬 수 있습니다(물 중독). "무조건 많이"가 아니라 <strong>땀 흘린 만큼 + 전해질</strong>이 정답입니다.</li>
+  <li><strong>소변 색 체크</strong>: <strong>옅은 노란색</strong>이 이상적입니다. 진한 노랑이면 부족, 완전 무색이면 과음 신호입니다.</li>
+</ul>
+<p>장거리에서 젤·전해질을 함께 쓴다면 → <a href="/blog/energy-gel-science-guide">에너지젤 성분 완벽 분석</a>을 참고하세요.</p>
+
+<h2>실전 — 여름에 안전하게 달리는 6가지</h2>
+<ul>
+  <li><strong>① 시간대를 옮긴다</strong>: 가장 강력한 대비책. <strong>일출 직후(새벽)</strong>가 기온·복사열이 가장 낮습니다. 야간런은 시원하지만 <strong>열대야로 습도가 높고</strong> 낮 동안 달궈진 아스팔트 복사열이 남아있어 새벽보다 불리할 수 있습니다.</li>
+  <li><strong>② 강도를 낮춘다</strong>: 같은 페이스도 더위에선 심박이 더 오릅니다. 여름엔 기록 욕심을 내려놓고 <strong>대화 가능한 저강도(Zone 2)</strong> 위주로 → <a href="/blog/running-fat-loss-zone2-guide">Zone 2 가이드</a>. 더위 적응에는 2주 정도 걸립니다.</li>
+  <li><strong>③ 통기성 복장·신발</strong>: 땀 배출이 생명입니다. 밝은색·흡습속건 옷, 통기성 좋은 메쉬 러닝화로 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
+  <li><strong>④ 머리·목을 식힌다</strong>: 챙모자·선글라스로 직사광선을 막고, 얼음·쿨토시로 목덜미·손목(굵은 혈관)을 식히면 체감 온도가 크게 낮아집니다.</li>
+  <li><strong>⑤ 코스를 바꾼다</strong>: 그늘·강변·숲길 위주로. 아스팔트·복사열 강한 도심 직선 코스는 피하세요.</li>
+  <li><strong>⑥ 무리하지 않는다</strong>: 컨디션 난조·전날 음주·수면 부족이면 <strong>쉬는 게 훈련</strong>입니다. 여름 며칠 빠진다고 실력이 사라지지 않습니다.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">🌧️</span>
+  <div class="callout-body">
+    <p class="callout-title">장마철이라면 — 비는 오히려 기회일 수도</p>
+    <p>기온이 떨어진 비 오는 날은 폭염보다 달리기 좋을 수 있습니다. 다만 미끄럼·젖은 발 관리가 관건이죠. 우중런 준비물과 비 맞은 러닝화 관리는 → <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 완전 가이드</a>에서 따로 다룹니다.</p>
+  </div>
+</div>
+
+<h2>한 줄 결론</h2>
+<p>여름 러닝의 원칙은 단순합니다. <strong>기온이 아니라 WBGT로 판단하고, 시간대를 옮기고, 강도를 낮추고, 땀 흘린 만큼 전해질과 함께 보충하라.</strong> 그리고 어지럼·메스꺼움·오한·땀 멈춤 같은 신호가 오면 <strong>기록이고 뭐고 즉시 멈추세요</strong>. 무더위는 매년 돌아오지만, 몸은 하나뿐입니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 Mayo Clinic, OSHA, ACSM 등의 일반 열질환·운동 안전 지침을 종합한 것으로, 개인의 건강 상태에 따른 의학적 처방을 대체하지 않습니다. 심혈관 질환·고령·기저질환이 있다면 무더위 운동 전 전문의와 상의하세요.</p>
+`,
+  },
+  {
     id: 'joyce-hubner-367-consecutive-marathons-world-record',
     slug: 'joyce-hubner-367-consecutive-marathons-world-record',
     title: '매일 풀코스 367일, 그리고 멈추지 않는다 | 독일 러너 조이스 휘브너의 세계기록 — "495일·21,000km" 도전의 진실과 매일 마라톤의 과학',
