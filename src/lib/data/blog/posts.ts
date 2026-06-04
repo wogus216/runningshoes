@@ -2,6 +2,99 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'joyce-hubner-367-consecutive-marathons-world-record',
+    slug: 'joyce-hubner-367-consecutive-marathons-world-record',
+    title: '매일 풀코스 367일, 그리고 멈추지 않는다 | 독일 러너 조이스 휘브너의 세계기록 — "495일·21,000km" 도전의 진실과 매일 마라톤의 과학',
+    description: '독일의 38세 러너 조이스 휘브너가 367일 연속 마라톤 풀코스 완주로 여성 세계기록을 경신했습니다. 기존 기록(벨기에 힐데 도소뉴 366일)을 넘겼지만 도전은 진행 중 — 최종 목표는 495일·21,000km·독일 2,000개 도시 잇기입니다. 그녀가 누구인지, 어떻게 매일 버티는지, 그리고 "매일 마라톤"이 몸에 무슨 일을 일으키는지(왜 일반 러너는 따라 하면 안 되는지)를 과학적으로 풀어봅니다.',
+    thumbnail: '/images/blog/joyce-hubner-367-consecutive-marathons-world-record.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-04',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['조이스 휘브너', '연속 마라톤 세계기록', '매일 마라톤', '울트라 러닝', '마라톤 회복', '러닝 동기부여', '러닝 과학', '러너 스토리'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>독일 38세 러너 <strong>조이스 휘브너</strong>가 6월 2일 <strong>367일 연속 마라톤 풀코스(42.195km)</strong> 완주로 여성 세계기록을 경신했습니다 — 기존 기록(벨기에 힐데 도소뉴 366일)을 하루 넘긴 순간</li>
+    <li>놀랍게도 <strong>도전은 아직 진행 중</strong>. 최종 목표는 <strong>495일 연속·총 21,000km</strong>로 독일 2,000개 도시·마을을 잇는 것, 오는 <strong>10월 8일 베를린</strong>에서 피니시 예정입니다</li>
+    <li>단일 마라톤도 몸이 회복하는 데 <strong>1~2주</strong>가 필요합니다. 매일 달리는 그녀의 비결은 "기록이 아닌 완주", 데이터 모니터링과 전담 팀 — <strong>일반 러너가 따라 할 일이 절대 아닙니다</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🇩🇪</span>
+  <div class="callout-body">
+    <p class="callout-title">기록은 깨졌고, 그녀는 여전히 달리는 중입니다</p>
+    <p>2026년 6월 2일, 독일 니더작센주의 작은 길 위에서 한 여성이 <strong>367번째 마라톤</strong>을 완주했습니다. 그냥 367번이 아니라 <strong>367일 동안 하루도 빠짐없이</strong> 매일 42.195km를 달린 끝의 한 걸음이었죠. 이 순간 그녀는 여성 연속 마라톤 세계기록을 새로 썼습니다. 그런데 더 놀라운 건 — 그녀가 아직 <strong>멈추지 않았다</strong>는 사실입니다.</p>
+  </div>
+</div>
+
+<h2>조이스 휘브너는 누구인가</h2>
+<p>조이스 휘브너(Joyce Hübner, 38세)는 베를린을 기반으로 활동하는 러닝 인플루언서이자 울트라 러너입니다. 의외인 건 그녀가 <strong>타고난 엘리트 선수가 아니라는 점</strong>입니다.</p>
+<ul>
+  <li><strong>달리기를 시작한 건 불과 11년 전</strong>, 첫 마라톤 완주는 2018년이었습니다.</li>
+  <li>2023년에는 <strong>독일 국경을 따라 143일간 120회 마라톤</strong>을 달리는 도전을 완수했습니다.</li>
+  <li>이후 <strong>마요르카 섬 한 바퀴</strong>를 돈 뒤, 가장 야심 찬 목표인 "독일 전역 잇기"에 도전하고 있습니다.</li>
+</ul>
+<p>즉, 평범하게 시작해 차근차근 거리를 쌓아 올린 러너가 만들어낸 기록이라는 점에서 더 큰 울림을 줍니다.</p>
+
+<h2>367일이라는 숫자의 의미</h2>
+<p>이번 기록의 무게를 이해하려면 몇 가지 맥락이 필요합니다.</p>
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>기존 세계기록</td><td>벨기에 러너 힐데 도소뉴 — <strong>366일</strong> 연속(2024년 윤년에 매일 완주)</td></tr>
+    <tr><td>조이스의 기록</td><td><strong>367일</strong> 연속(2026년 6월 2일 경신, 진행 중)</td></tr>
+    <tr><td>시작일</td><td>2025년 6월 1일, 독일 헬름슈테트</td></tr>
+    <tr><td>최종 목표</td><td><strong>495일</strong> 연속 · 독일 도시·마을 <strong>2,000곳</strong> · 총 <strong>약 21,000km</strong></td></tr>
+    <tr><td>피니시 예정</td><td>2026년 <strong>10월 8일 베를린</strong></td></tr>
+  </tbody>
+</table>
+<p>21,000km는 서울에서 부산까지(약 400km)를 <strong>52번 왕복</strong>하는 거리입니다. 그것도 매일 멈추지 않고, 1년 4개월 넘게요.</p>
+
+<h2>매일 마라톤, 몸에는 무슨 일이 일어날까</h2>
+<p>여기서부터가 러너라면 진짜 궁금한 부분입니다. <strong>마라톤을 매일 뛰는 게 신체적으로 가능한 일</strong>일까요?</p>
+<p>의학 연구가 말하는 답은 분명합니다. <strong>단 한 번의 마라톤</strong>만으로도 몸에는 상당한 부하가 걸립니다.</p>
+<ul>
+  <li>달릴 때마다 다리뼈는 미세하게 손상되고, 근섬유는 찢어집니다. 이 손상은 <strong>쉬고 자고 먹는 동안</strong> 회복되며 더 강해집니다 — 즉 <strong>회복이 곧 훈련</strong>입니다.</li>
+  <li>마라톤 직후 심장·신장·간 등의 바이오마커에 이상 신호가 나타나며, 보통 <strong>1~3일</strong> 내 변화가 가장 크고 <strong>1주</strong> 안에 정상화됩니다.</li>
+  <li>내분비계와 대사가 <strong>완전히 회복</strong>되는 데에는 <strong>1~2주</strong>가 걸립니다.</li>
+</ul>
+<p>다시 말해, 정석대로라면 <strong>마라톤 한 번 뛰고 1~2주는 회복</strong>해야 합니다. 조이스는 그 회복 기간을 <strong>0일</strong>로 두고 367일을 버틴 셈입니다. 의학 연구조차 "매일 마라톤"은 다루지 않는데, <strong>충분한 회복을 원천적으로 막아 매우 위험</strong>하기 때문입니다.</p>
+
+<h3>그럼 그녀는 어떻게 버틸까</h3>
+<p>핵심은 <strong>"기록 경쟁이 아니라 완주"</strong>라는 데 있습니다. 1년 4개월을 가야 하므로 매일을 전력으로 달릴 수 없습니다. 보도에 따르면 그녀조차 흔히 말하는 <strong>'러너스 하이'를 거의 느끼지 못한다</strong>고 할 만큼, 속도를 낮춰 몸에 가는 충격을 관리합니다. 여기에:</p>
+<ul>
+  <li><strong>전담 서포트 팀</strong>이 이동·보급·컨디션을 챙기고,</li>
+  <li><strong>웨어러블(COROS) 데이터</strong>로 심박·부하·회복 상태를 매일 모니터링하며,</li>
+  <li>지속 가능한 <strong>영양 보충 루틴</strong>으로 매일의 에너지·전해질을 채웁니다.</li>
+</ul>
+<p>철저한 페이스 관리·모니터링·팀 지원이 받쳐주기에 가능한, <strong>극도로 통제된 도전</strong>이라는 뜻입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">감동은 받되, 절대 따라 하지 마세요</p>
+    <p>이런 기록은 영감을 주지만, <strong>일반 러너가 흉내 낼 영역이 아닙니다</strong>. 회복 없이 누적되는 부하는 피로 골절·건염·면역 저하·심장 부담으로 이어집니다. "매일 뛰어야 는다"는 흔한 오해는 오히려 부상으로 가는 지름길입니다. 초보일수록 <strong>주 3~4회 + 회복일</strong>이 정답입니다. 페이스부터 잡고 싶다면 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a>를, 무릎이 걱정이라면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>을 참고하세요.</p>
+  </div>
+</div>
+
+<h2>우리가 가져갈 진짜 교훈</h2>
+<p>조이스의 도전에서 일반 러너가 배울 건 "매일 풀코스"가 아니라, 그 <strong>밑에 깔린 원칙</strong>들입니다.</p>
+<ul>
+  <li><strong>강도보다 꾸준함</strong> — 그녀는 매일을 전력으로 달리지 않습니다. 느리게, 그러나 멈추지 않죠. 아마추어에게도 <strong>편한 페이스의 누적 거리</strong>가 실력을 만듭니다.</li>
+  <li><strong>회복과 데이터를 신뢰한다</strong> — 감이 아니라 심박·부하 데이터로 몸 상태를 읽습니다. 부상 없이 볼륨을 늘리는 접근은 <a href="/blog/nsm-norwegian-singles-method-training">노르웨이식 훈련법(NSM)</a>의 철학과도 통합니다.</li>
+  <li><strong>목표를 잘게 쪼갠다</strong> — 495일이라는 거대한 숫자도 결국 "오늘 하루"의 반복입니다. 풀코스 완주 전략을 거리별로 나누는 법은 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이스·멘탈 가이드</a>에서 다룹니다.</li>
+</ul>
+<p>10월 8일 베를린에서 그녀가 495번째 피니시 라인을 통과하는 순간까지, 멈추지 않는 조이스 휘브너의 여정에 응원을 보냅니다. 그리고 우리는 우리 페이스대로, 오늘 하루의 러닝을 꾸준히 이어가면 됩니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 기사는 동마클럽(@dongmaclub) 및 해외 매체(Yahoo Sports, SRF, t-online 등) 보도를 종합·재구성했습니다. 회복·신체 영향 관련 내용은 일반적인 의학 정보이며, 개인의 운동 처방을 대체하지 않습니다.</p>
+`,
+  },
+  {
     id: 'summer-breathable-running-shoes-2026',
     slug: 'summer-breathable-running-shoes-2026',
     title: '여름에 발이 안 무르는 통기성 러닝화 TOP 10 | 메쉬 어퍼·배수·경량 — 한국 무더위·장마 기준 카테고리별 베스트',
