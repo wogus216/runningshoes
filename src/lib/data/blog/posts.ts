@@ -2,6 +2,134 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'summer-breathable-running-shoes-2026',
+    slug: 'summer-breathable-running-shoes-2026',
+    title: '여름에 발이 안 무르는 통기성 러닝화 TOP 10 | 메쉬 어퍼·배수·경량 — 한국 무더위·장마 기준 카테고리별 베스트',
+    description: '한국 여름은 고온다습 + 장마라 통기성이 안 좋은 러닝화는 발이 무르고 물집·악취로 이어집니다. RunRepeat 통기성(breathability) 점수와 어퍼 소재를 기준으로, 우리 DB에서 통기성 최상위급 러닝화 10종을 입문·데일리·쿠션·안정·레이싱 카테고리별로 정리했습니다. 무게·가격·발볼까지 한국 러너 기준으로 비교합니다.',
+    thumbnail: '/images/blog/summer-breathable-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-04',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['여름 러닝화', '통기성 러닝화', '메쉬 어퍼', '여름 러닝', '경량 러닝화', '러닝화 추천', '장마 러닝', '발 무름 방지'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>한국 여름은 <strong>고온다습 + 장마</strong>라, 통기성이 떨어지는 러닝화는 땀과 습기가 갇혀 <strong>발 무름·물집·악취</strong>로 직결됩니다 — 여름엔 쿠션보다 <strong>통기성과 무게</strong>가 우선순위</li>
+    <li>러닝화 통기성은 감이 아니라 <strong>RunRepeat 통기성 점수(1~5)와 어퍼 소재(엔지니어드 메쉬)</strong>로 확인할 수 있습니다 — 이 글의 10종은 모두 <strong>통기성 4~5/5 최상위급</strong></li>
+    <li><strong>입문·데일리·쿠션·안정·레이싱</strong> 카테고리별로 나눴으니, 내 목적에 맞는 걸 고르세요. 여름 한정이라면 <strong>가벼운 데일리 통기화</strong>가 가장 무난합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☀️</span>
+  <div class="callout-body">
+    <p class="callout-title">여름엔 왜 "통기성"이 1순위가 될까</p>
+    <p>한국 여름은 기온도 높지만 <strong>습도</strong>가 진짜 문제입니다. 발은 운동 중 컵 하나 분량(약 200ml)의 땀을 흘리는데, 통기성이 나쁜 어퍼는 이 땀과 습기를 가둡니다. 젖은 양말 + 마찰 = <strong>물집</strong>, 습한 환경 = <strong>무좀·악취</strong>, 무거워진 신발 = <strong>체온 상승과 피로</strong>로 이어지죠. 겨울엔 보온이 미덕이지만, 여름엔 <strong>땀을 얼마나 빨리 내보내느냐</strong>가 신발의 핵심 경쟁력이 됩니다. 장마철 우중런이라면 통기성과 함께 <strong>배수(물이 빠지는 능력)</strong>도 같이 봐야 합니다 → <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 완전 가이드</a></p>
+  </div>
+</div>
+
+<h2>러닝화 통기성, 어떻게 확인하나</h2>
+<p>"메쉬니까 시원하겠지"는 너무 막연합니다. 통기성은 <strong>데이터로 검증</strong>할 수 있습니다.</p>
+<ul>
+  <li><strong>RunRepeat 통기성 점수(1~5)</strong>: 랩에서 신발 안에 연기를 넣고 어퍼로 빠져나가는 정도를 측정합니다. <strong>5/5면 빛이 비칠 만큼 뚫린 구조</strong>, 1/2면 방수·겨울용에 가깝습니다. 이 글의 10종은 전부 4~5점.</li>
+  <li><strong>어퍼 소재</strong>: 같은 메쉬라도 "엔지니어드 메쉬"는 부위별로 구멍 밀도를 설계해 통기성과 지지력을 동시에 잡습니다. 니트·방수 멤브레인(GTX)은 여름엔 피하세요.</li>
+  <li><strong>무게</strong>: 통기성 좋은 어퍼는 대체로 가볍습니다. 여름엔 발이 붓기 쉬워 <strong>가벼운 신발</strong>이 체감 피로를 크게 줄입니다.</li>
+</ul>
+<p>광고 문구가 아니라 이런 <strong>랩 데이터로 고르는 법</strong>은 따로 정리해뒀습니다 → <a href="/blog/running-shoe-data-not-marketing-guide-2026">광고에 속지 말고 데이터로 고르세요</a></p>
+
+<h2>여름 통기성 러닝화 TOP 10 — 카테고리별</h2>
+
+<h3>① 입문·데일리 가성비 — "여름 한정으로 부담 없이"</h3>
+<p>매일 신고 막 뛰기 좋은 15~18만원대. 여름철 첫 러닝화나 "장마용 막신"으로도 딱입니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-ride-18">사우코니 라이드 18</a></td><td>5/5</td><td>255g</td><td>15.9만</td><td>여름 데일리 가성비 정답. 통기성·쿠션 균형 최고</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-19">사우코니 라이드 19</a></td><td>5/5</td><td>255g</td><td>17.9만</td><td>18의 후속, 더 부드러워진 쿠션 + 통기성 유지</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>우수</td><td>281g</td><td>15.9만</td><td>국민 데일리화. 엔지니어드 메쉬로 여름도 무난</td></tr>
+    <tr><td><a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a></td><td>최상</td><td>224g</td><td>17.9만</td><td>224g 경량 + 통기성. 단 토박스 좁아 발볼 넓으면 주의</td></tr>
+  </tbody>
+</table>
+<p>첫 러닝화로 고민 중이라면 → <a href="/blog/first-running-shoe-guide-2026">초보 러너 인생 첫 러닝화 가이드</a></p>
+
+<h3>② 경량 데일리·템포 — "빠른 페이스도 시원하게"</h3>
+<p>가볍고 통기성 좋아 여름 인터벌·템포런에 최적. 발이 더 붓는 여름엔 이 가벼움이 체감으로 옵니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-kinvara-16">사우코니 킨바라 16</a></td><td>5/5</td><td>198g</td><td>15.9만</td><td>198g 최경량. 여름 스피드 훈련용 1순위</td></tr>
+    <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>최상</td><td>232g</td><td>18.5만</td><td>경량 + 통기성 + 적당한 반발. 만능 여름 데일리</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a></td><td>5/5</td><td>241g</td><td>21.9만</td><td>나일론 플레이트 템포화. 여름 템포런도 쾌적</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>4/5</td><td>278g</td><td>21.9만</td><td>탄탄한 반발 + 통기성. 도심 데일리·템포 겸용</td></tr>
+  </tbody>
+</table>
+
+<h3>③ 쿠션화 — "여름 장거리 LSD도 쾌적하게"</h3>
+<p>두툼한 쿠션화는 통기성이 떨어지기 쉬운데, 아래 3종은 <strong>맥스 쿠션 + 통기성</strong>을 동시에 잡았습니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td><td>5/5</td><td>293g</td><td>20.9만</td><td>통기성 5/5 + 무릎 보호 최상급. 여름 LSD 명품</td></tr>
+    <tr><td><a href="/shoes/puma-magnify-nitro-3">푸마 매그니파이 나이트로 3</a></td><td>최상</td><td>264g</td><td>19.9만</td><td>두툼한 쿠션 대비 가볍고 시원한 가성비 쿠션화</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-max">브룩스 글리세린 맥스</a></td><td>5/5</td><td>305g</td><td>23.9만</td><td>맥스 쿠션 + 와이드 토박스. 발볼 넓은 러너 환영</td></tr>
+  </tbody>
+</table>
+
+<h3>④ 안정화 — "평발·과내전인데 여름엔 시원하게"</h3>
+<p>안정화는 지지 구조 때문에 답답하기 쉽지만, 아래 2종은 통기성 5/5를 확보했습니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a></td><td>5/5</td><td>278g</td><td>15.9만</td><td>가성비 안정화 + 통기성. 입문 평발 러너에 추천</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>5/5</td><td>305g</td><td>20.9만</td><td>글리세린 22의 안정화 버전. 부드러운 지지 + 통기성</td></tr>
+  </tbody>
+</table>
+<p>발볼 넓은 한국 러너라면 토박스 너비도 꼭 확인하세요 → <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 TOP 10</a></p>
+
+<h3>⑤ 레이싱 — "여름 대회·기록 도전"</h3>
+<p>여름 대회는 거의 없지만, 가을 시즌을 통기성 좋은 카본화로 준비한다면:</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-5">브룩스 하이페리온 엘리트 5</a></td><td>5/5</td><td>204g</td><td>29.9만</td><td>통기성 5/5 카본 레이서. 겨울에 8%만 단단해져 사계절 OK</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">신발만 시원해선 부족 — 여름 러닝 3가지 디테일</p>
+    <ul>
+      <li><strong>양말이 절반이다</strong>: 아무리 통기성 좋은 신발도 면양말이면 땀이 갇힙니다. <strong>쿨맥스·메리노 같은 흡습속건 소재</strong>로 바꾸면 물집이 크게 줍니다.</li>
+      <li><strong>배수 ≠ 방수</strong>: 장마철엔 방수(GTX)보다 <strong>물이 빨리 빠지는 메쉬</strong>가 낫습니다. 방수화는 한번 물이 들어오면 안 빠져 더 무겁습니다.</li>
+      <li><strong>여름엔 반 사이즈 여유</strong>: 더위에 발이 붓기 때문에, 통기성 좋은 신발이라도 꽉 끼면 물집·발톱 멍이 생깁니다.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>한 줄 결론 — 여름엔 이렇게 고르세요</h2>
+<ul>
+  <li><strong>여름 한정 막신/입문</strong> → <a href="/shoes/saucony-ride-18">라이드 18</a> (15.9만, 통기성 5/5 가성비)</li>
+  <li><strong>가볍게 매일 + 가끔 빠르게</strong> → <a href="/shoes/hoka-mach-6">마하 6</a> 또는 <a href="/shoes/saucony-kinvara-16">킨바라 16</a></li>
+  <li><strong>무릎 보호 + 여름 장거리</strong> → <a href="/shoes/brooks-glycerin-22">글리세린 22</a></li>
+  <li><strong>평발·안정성 필요</strong> → <a href="/shoes/saucony-guide-18">가이드 18</a></li>
+</ul>
+<p>여름은 러닝화의 약점이 가장 잘 드러나는 계절입니다. 통기성 데이터를 확인하고 양말·사이즈까지 챙기면, 무더위 속에서도 쾌적하게 거리를 늘릴 수 있습니다.</p>
+`,
+  },
+  {
     id: 'celebrity-runners-shoe-choices-guide',
     slug: 'celebrity-runners-shoe-choices-guide',
     title: '연예인들은 러닝할 때 어떤 신발 신을까 | "스타 따라 사기" 전에 — 셀럽이 고르는 러닝화 3유형과 내 발에 맞추는 법',
