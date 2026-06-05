@@ -54,3 +54,4 @@
   - `specs.cushioning: 9 → 8` (실측 SA 131 기준 하향)
   - `specs.responsiveness: 8 → 7` (실측 에너지 리턴 기준 하향)
   - 블로그 단독 리뷰 발행: `/blog/nike-pegasus-42-review`
+- [ ] puma-deviate-pure-nitro: RunRepeat 랩 데이터 게시 확인 후 specs/detailedSpecs 업데이트 (추가 2026-06-05, 출시 2026-06-04 — 3~6개월 뒤 재확인)

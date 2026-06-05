@@ -2,6 +2,80 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'puma-deviate-pure-nitro-review',
+    slug: 'puma-deviate-pure-nitro-review',
+    title: '푸마 디비에이트 나이트로 퓨어 리뷰 | 카본 뺀 100% PEBA 슈퍼폼 — 18.9만원 무플레이트 트레이너의 정체',
+    description: '푸마가 디비에이트 나이트로 4에서 카본 PWRPLATE를 덜어낸 "퓨어" 버전을 6월 출시했습니다. 100% PEBA NITROFOAM 단일 폼으로 220g 경량을 달성한 무플레이트 슈퍼폼 트레이너. 디비4와 무엇이 다른지, 누구에게 맞는지, 18만 9천원 가성비는 어떤지를 한국 러너 관점에서 정리했습니다.',
+    thumbnail: '/images/blog/puma-deviate-pure-nitro-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-05',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['푸마 디비에이트 퓨어', '디비에이트 나이트로 퓨어', '무플레이트 슈퍼폼', 'PEBA 러닝화', '푸마 나이트로', '데일리 트레이너', '슈퍼트레이너'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>디비에이트 나이트로 퓨어는 <strong>디비에이트 나이트로 4에서 카본 PWRPLATE를 뺀 "플레이트 없는" 버전</strong> — 100% PEBA 단일 폼으로 <strong>220g</strong> 경량을 달성했습니다(2026년 6월 출시)</li>
+    <li>플레이트 특유의 경직감 없이 <strong>유연하고 부드러운 라이드</strong>로, 데일리 러닝부터 스피드 훈련까지 한 켤레로 소화하는 만능 트레이너입니다</li>
+    <li><strong>18만 9천원</strong>으로 디비4(₩219,000)보다 3만원 저렴 — Road Trail Run이 9.5/10을 줄 만큼 "슈퍼슈즈만큼 가볍고 비싸지 않다"는 평입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">"카본을 뺀다"는 역발상</p>
+    <p>요즘 러닝화 트렌드는 카본 플레이트를 넣는 방향입니다. 그런데 푸마는 인기 슈퍼트레이너 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a>에서 <strong>오히려 카본 플레이트를 덜어낸</strong> '퓨어' 버전을 내놨습니다. 대신 미드솔을 <strong>100% PEBA NITROFOAM 단일 폼</strong>으로 채워, 플레이트의 튕기는 느낌 대신 <strong>폼 본연의 부드럽고 유연한 반발</strong>을 살렸죠. "스피드를 더 쉽게(speed made accessible)"가 푸마의 설명입니다.</p>
+  </div>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🧪</span>
+  <div class="callout-body">
+    <p class="callout-title">신상 데이터 안내</p>
+    <p>2026년 6월 출시 직후라 <strong>RunRepeat 랩 테스트(SA·HA·에너지 리턴·토박스 너비)는 아직 미게시</strong>입니다. 본문의 일부 수치는 형제 모델 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 기준 추정치이며, 무게·스택·드롭·가격은 공식 확정값입니다. 랩 데이터가 공개되면 <a href="/shoes/puma-deviate-pure-nitro">상세 페이지</a>를 업데이트할 예정입니다.</p>
+  </div>
+</div>
+
+<h2>디비4 vs 퓨어 — 무엇이 다른가</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>디비에이트 나이트로 4</th><th>디비에이트 나이트로 <strong>퓨어</strong></th></tr>
+  </thead>
+  <tbody>
+    <tr><td>플레이트</td><td>카본 합성 PWRPLATE</td><td><strong>없음</strong></td></tr>
+    <tr><td>미드솔 폼</td><td>듀얼 레이어 (PEBAX + PEBA)</td><td><strong>100% PEBA 단일</strong></td></tr>
+    <tr><td>무게</td><td>250g</td><td><strong>220g (-30g)</strong></td></tr>
+    <tr><td>스택 / 드롭</td><td>38 / 30mm · 8mm</td><td>38 / 30mm · 8mm (동일)</td></tr>
+    <tr><td>라이드</td><td>탄탄하고 추진력 있는</td><td><strong>유연하고 부드러운</strong></td></tr>
+    <tr><td>가격</td><td>₩219,000</td><td><strong>₩189,000</strong></td></tr>
+    <tr><td>성격</td><td>업템포·레이싱 지향</td><td><strong>데일리 + 스피드 만능</strong></td></tr>
+  </tbody>
+</table>
+<p>스택·드롭은 같지만, <strong>플레이트 유무와 폼 구성</strong>에서 성격이 갈립니다. 퓨어는 더 가볍고 유연하며, 디비4는 더 단단하고 추진력이 있습니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>✅ 추천</strong>: 카본 플레이트의 경직감이 부담스러운 러너, 데일리부터 템포까지 한 켤레로 쓰고 싶은 러너, 가벼운 슈퍼폼을 합리적 가격에 원하는 러너</li>
+  <li><strong>❌ 비추천</strong>: 탄탄하고 직접적인 피드백을 좋아하면 <a href="/shoes/puma-deviate-nitro-4">디비4</a>, 바닥감 명확한 레이싱화를 원하면 카본 레이서가 낫습니다</li>
+</ul>
+<p>"플레이트 없는 슈퍼폼 트레이너"라는 점에서 <a href="/shoes/hoka-mach-6">호카 마하 6</a>, <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>와 같은 결입니다. 카본 플레이트가 정말 필요한지 고민된다면 → <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 완벽 비교</a></p>
+
+<h2>한국 러너 관점</h2>
+<ul>
+  <li><strong>가격</strong>: 18만 9천원에 800km 설계라 km당 약 236원. 슈퍼폼 트레이너 중 가성비가 좋습니다.</li>
+  <li><strong>발볼</strong>: 토박스는 표준으로 추정되며, <strong>와이드 옵션은 출시 시점 미확인</strong>입니다. 발볼 넓은 러너는 매장 착화를 권합니다.</li>
+  <li><strong>여름</strong>: 통기성 좋은 경량 메쉬라 더운 날 데일리로 제격입니다 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
+</ul>
+
+<h2>한 줄 결론</h2>
+<p>디비에이트 나이트로 퓨어는 "카본이 답"이라는 흐름에 <strong>"좋은 폼이면 플레이트 없이도 충분하다"</strong>고 답하는 신발입니다. 가볍고 부드럽고 비싸지 않은, <strong>매일 신기 좋은 슈퍼폼 트레이너</strong>를 찾는다면 유력한 후보입니다. 자세한 스펙·추천 대상은 <a href="/shoes/puma-deviate-pure-nitro">디비에이트 나이트로 퓨어 상세 페이지</a>에서 확인하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙·가격은 푸마 공식(kr.puma.com)과 Road Trail Run 등 해외 리뷰를 종합했으며, 랩 수치 일부는 형제 모델 기준 추정치입니다.</p>
+`,
+  },
+  {
     id: 'chuncheon-unique-running-courses-7',
     slug: 'chuncheon-unique-running-courses-7',
     title: '춘천 이색 러닝 코스 7선 | 의암호 호반길부터 김유정 실레길까지 — 호수·강·산 결합한 호반의 도시 러닝',

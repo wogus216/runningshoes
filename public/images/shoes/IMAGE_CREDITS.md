@@ -106,3 +106,8 @@ All trademarks, logos, and images are the property of their respective owners. T
 If you are a copyright holder and believe your content has been used inappropriately, please contact us for removal.
 
 저작권자로서 귀하의 콘텐츠가 부적절하게 사용되었다고 생각되시면 삭제 요청을 위해 연락해 주세요.
+
+## PUMA Deviate NITRO Pure (디비에이트 나이트로 퓨어)
+- Source: PUMA 공식 (images.puma.com / kr.puma.com, SKU 313904)
+- Date: 2026-06-05
+- Images: 6 (side, front, back, angle, angle2, outsole)
