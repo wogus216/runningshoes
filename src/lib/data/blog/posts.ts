@@ -2,6 +2,159 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'chuncheon-unique-running-courses-7',
+    slug: 'chuncheon-unique-running-courses-7',
+    title: '춘천 이색 러닝 코스 7선 | 의암호 호반길부터 김유정 실레길까지 — 호수·강·산 결합한 호반의 도시 러닝',
+    description: '춘천마라톤의 성지 의암호 호반길부터 강원 3대 러닝 코스 공지천, 소양강 스카이워크, 삼악산 트레일, 강촌 북한강 자전거길, 봉의산 도심 트레일, 김유정 실레이야기길까지. 호반의 도시 춘천에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리했습니다.',
+    thumbnail: '/images/blog/chuncheon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-05',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['춘천 러닝 코스', '이색 러닝', '의암호', '공지천', '소양강 스카이워크', '삼악산', '강촌 북한강', '춘천마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>춘천은 의암호·소양강·북한강이 도시를 감싸는 "호반의 도시"</strong> — 수변 평지 러닝부터 삼악산 트레일까지, 물과 산을 한 도시에서 즐기는 러닝 여행지</li>
+    <li>춘천의 시그니처는 <strong>의암호 호반길</strong> — 춘천마라톤이 달리는 바로 그 호수, 차량 통제 수변 도로의 평지 러닝</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🚣</span>
+  <div class="callout-body">
+    <p class="callout-title">춘천 러닝만의 매력</p>
+    <p>춘천은 <strong>의암호·소양강·북한강 같은 물길과 삼악산·봉의산 같은 산</strong>이 어우러진 강원권 대표 러닝 여행지입니다. 도시 어디서 달려도 호수와 강이 따라오고, <strong>춘천마라톤</strong>의 무대인 의암호 호반길은 전국 러너의 버킷리스트죠. 수변 평지로 가볍게 LSD를 즐기다, 삼악산·봉의산으로 트레일까지 맛볼 수 있는 게 춘천의 강점입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>의암호 호반길</strong></td><td>약 6~12km</td><td>하 (평지)</td><td>춘천마라톤 코스 + 의암호 스카이워크 — 시그니처</td><td>새벽·저녁</td></tr>
+    <tr><td>2</td><td><strong>공지천 호수공원</strong></td><td>약 4~7km</td><td>하 (평지)</td><td>강원 3대 러닝 + 사이로248 출렁다리</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>소양강 스카이워크 강변</strong></td><td>약 4~6km</td><td>하</td><td>소양강처녀상 + 투명유리 스카이워크</td><td>일몰·야간</td></tr>
+    <tr><td>4</td><td><strong>삼악산 등선폭포 트레일</strong></td><td>약 5~9km</td><td>중상</td><td>의암호 조망 + 폭포 계곡 산길</td><td>맑은 날 오전</td></tr>
+    <tr><td>5</td><td><strong>강촌 ~ 북한강 자전거길</strong></td><td>약 6~15km</td><td>하~중</td><td>북한강변 + 경춘선 폐선 산책로</td><td>오전</td></tr>
+    <tr><td>6</td><td><strong>봉의산</strong></td><td>약 3~5km</td><td>중</td><td>도심 속 산 + 춘천 시내 조망</td><td>오전</td></tr>
+    <tr><td>7</td><td><strong>김유정 실레이야기길</strong></td><td>약 4~7km</td><td>하~중</td><td>문학 마을 + 금병산 자락 흙길</td><td>오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 의암호 호반길 — 춘천마라톤이 달리는 그 호수</h2>
+
+<p><strong>출발지</strong>: 공지천·의암호 일대 (버스·차량)<br>
+<strong>거리</strong>: 약 6~12km (구간 선택)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크 + 수변 도로<br>
+<strong>추천 시간대</strong>: 새벽·저녁</p>
+
+<p>의암호는 춘천을 대표하는 호수로, <strong>코스의 절반 이상이 호수를 끼고 달리는 수변 도로</strong>입니다. 차량이 통제된 조용한 구간에서 신발 소리와 호흡 소리만 들으며 달릴 수 있고, 중간에 <strong>의암호 스카이워크</strong>(수면 위 12m 투명유리)를 만납니다. 무엇보다 <strong>춘천마라톤이 달리는 바로 그 코스</strong>라 의미가 남다릅니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 둘레 평지 + 춘천마라톤 코스 답사. 거리를 자유롭게 조절할 수 있고, 가을 단풍철 풍경이 특히 아름답습니다. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>을 준비한다면 실전 코스 적응에 최고입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 공지천 호수공원 — 강원 3대 러닝 코스</h2>
+
+<p><strong>출발지</strong>: 공지천 유원지·근화동 (도심 인근)<br>
+<strong>거리</strong>: 약 4~7km<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>공지천 호수공원은 경포호수 둘레길·속초 해맞이공원과 함께 흔히 <strong>'강원 3대 러닝 코스'</strong>로 꼽히는 춘천 인기 러닝지입니다. 의암호로 흘러드는 공지천을 따라 평탄한 산책로가 이어지고, 최근 개통한 <strong>사이로248 출렁다리</strong>(248m)가 공지천 의암공원과 근화동 생태공원을 이어 코스가 더 넓어졌습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 가까운 평지 호수 러닝 + 출렁다리. 의암호 호반길과 자연스럽게 연결돼 거리를 늘리기 좋고, 야간 조명도 잘 갖춰져 있습니다. 에티오피아 한국전 참전 기념 공간 등 볼거리도 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 통기성. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 데일리화.</p>
+
+<h2>3. 소양강 스카이워크 강변 — 소양강처녀상과 투명유리길</h2>
+
+<p><strong>출발지</strong>: 소양강 스카이워크·소양2교 (도심)<br>
+<strong>거리</strong>: 약 4~6km (강변 왕복)<br>
+<strong>노면</strong>: 강변 데크 + 산책로<br>
+<strong>추천 시간대</strong>: 일몰·야간</p>
+
+<p>소양강 스카이워크는 <strong>전체 길이 174m, 그중 156m가 투명 강화유리</strong>로 된 춘천의 랜드마크입니다. <strong>소양강처녀상</strong>과 소양2교 옆에 자리해 강변을 따라 달리다 들르기 좋습니다. 노을 질 무렵 소양강 물빛이 특히 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 춘천 대표 포토 스폿 + 평탄한 강변 러닝. 거리는 길지 않지만 공지천·의암호 코스와 묶으면 충분합니다. 관광객이 많은 낮보다 <strong>이른 아침·저녁</strong>이 달리기 쾌적합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 강변 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
+
+<h2>4. 삼악산 등선폭포 트레일 — 의암호를 내려다보는 산길</h2>
+
+<p><strong>출발지</strong>: 삼악산 등선폭포 입구 (강촌 방면)<br>
+<strong>거리</strong>: 약 5~9km (구간 선택)<br>
+<strong>노면</strong>: 산악 트레일 + 계곡 바위 + 계단<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>삼악산은 의암호를 끼고 솟은 산으로, <strong>등선폭포 계곡을 따라 오르는 트레일</strong>이 인기입니다. 능선에서는 의암호와 춘천 시내가 한눈에 내려다보이죠. 본격 등산로라 러닝보다 <strong>트레일 러닝·하이킹</strong>에 가깝습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 호수를 내려다보는 산악 트레일. 다만 <strong>바위·계단·급경사</strong>가 많아 일반 데일리화로는 위험하고, 거리·체력에 맞게 끊어 뛰어야 합니다. 우천 직후엔 계곡 바위가 미끄럽습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 + 접지력. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>5. 강촌 ~ 북한강 자전거길 — 북한강변 슬로 러닝</h2>
+
+<p><strong>출발지</strong>: 강촌유원지·강촌역 (춘천 남부)<br>
+<strong>거리</strong>: 약 6~15km (거리 자유)<br>
+<strong>노면</strong>: 자전거길 + 데크 + 폐선 산책로<br>
+<strong>추천 시간대</strong>: 오전</p>
+
+<p>강촌은 <strong>북한강 변을 따라 긴 산책로</strong>가 이어지는 유원지로, 서울~춘천을 잇는 <strong>북한강(경춘선) 자전거길</strong>의 한 구간입니다. 옛 경춘선 폐선 구간을 따라 강을 끼고 평탄하게 달릴 수 있어 장거리 LSD에 제격입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 북한강 절경을 따라 거리 무제한 평지 러닝. 자전거길과 공유하므로 보행·주행 방향을 지키고, 라이더와의 안전거리에 유의하세요. 강촌역 레일바이크 등 볼거리도 함께 즐길 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 + 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 쿠션 데일리.</p>
+
+<h2>6. 봉의산 — 도심 한복판의 산</h2>
+
+<p><strong>출발지</strong>: 봉의산 등산로 입구 (춘천 시내)<br>
+<strong>거리</strong>: 약 3~5km<br>
+<strong>노면</strong>: 산길 흙길 + 계단<br>
+<strong>추천 시간대</strong>: 오전</p>
+
+<p>봉의산은 춘천 도심 한가운데 솟은 산(약 301m)으로, <strong>시내에서 바로 접근하는 도심 트레일</strong>입니다. 짧지만 오르막이 또렷해 <strong>업힐 훈련·계단 훈련</strong>에 좋고, 정상에서는 춘천 시내와 호수가 두루 보입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 가장 가까운 산 트레일 + 시내 조망. 거리는 짧아도 경사가 있어 심폐·하체 자극이 확실합니다. 하산은 무릎 부담이 크니 천천히, 비 온 뒤엔 흙길이 미끄럽습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 짧은 트레일 + 접지력. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a> 같은 트레일화.</p>
+
+<h2>7. 김유정 실레이야기길 — 문학 마을의 흙길</h2>
+
+<p><strong>출발지</strong>: 김유정역·김유정문학촌 (춘천 남부)<br>
+<strong>거리</strong>: 약 4~7km<br>
+<strong>노면</strong>: 마을길 + 금병산 자락 흙길<br>
+<strong>추천 시간대</strong>: 오전</p>
+
+<p>소설가 김유정의 고향 실레마을에는 <strong>'봄·봄', '동백꽃'의 배경을 잇는 실레이야기길</strong>이 조성돼 있습니다. 금병산 자락을 따라 이어지는 한적한 마을길·흙길로, 문학적 정취와 함께 달리는 운치 있는 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심을 벗어난 조용한 문학 산책 트레일. 평탄한 마을길과 완만한 흙길이 섞여 부담이 적고, 계절감이 뚜렷합니다. 일부 비포장·완만한 오르막이 있어 가벼운 트레일 대응이 되는 신발이 편합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 흙길 + 쿠션. <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 데일리·가벼운 트레일.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">춘천 러닝 여행 팁</p>
+    <ul>
+      <li><strong>호수+강 평지 위주</strong>: 의암호·공지천·소양강·북한강은 모두 평지라 입문자·장거리에 좋습니다. 삼악산·봉의산만 트레일 대응이 필요합니다.</li>
+      <li><strong>대중교통</strong>: ITX·경춘선으로 서울에서 1시간대. 강촌·김유정은 역에서 바로 접근됩니다.</li>
+      <li><strong>여름엔 새벽·야간</strong>: 분지 지형이라 한낮 더위가 만만치 않습니다 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></li>
+    </ul>
+  </div>
+</div>
+
+<h2>마무리 — 호반의 도시를 달리다</h2>
+<p>춘천은 어느 코스를 달려도 물과 산이 함께하는 도시입니다. 춘천마라톤 무대인 의암호에서 가볍게 시작해, 공지천·소양강으로 거리를 잇고, 삼악산·봉의산으로 트레일까지 맛볼 수 있죠. 다른 도시 이색 코스가 궁금하다면 인접한 → <a href="/blog/gangneung-unique-running-courses-7">강릉 이색 러닝 코스 7선</a>, 그리고 → <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>도 함께 보세요. 가을 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다.</p>
+`,
+  },
+  {
     id: '2026-garmin-run-korea-medal-race-package',
     slug: '2026-garmin-run-korea-medal-race-package',
     title: '2026 가민런 코리아 메달·레이스 패키지 공개 | 포러너 스페셜팩 6/23 오픈 D-18 — 참가 기념품·스폰서 기프트·접수 일정',
