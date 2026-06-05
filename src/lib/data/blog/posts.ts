@@ -2,6 +2,84 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-garmin-run-korea-medal-race-package',
+    slug: '2026-garmin-run-korea-medal-race-package',
+    title: '2026 가민런 코리아 메달·레이스 패키지 공개 | 포러너 스페셜팩 6/23 오픈 D-18 — 참가 기념품·스폰서 기프트·접수 일정',
+    description: '2026 가민런 코리아가 10K·HALF 완주 메달과 참가자 레이스 패키지를 공개했습니다. 6월 23일 포러너 170/70 스페셜팩 오픈, 7월 1~3일 본접수(래플), 7월 7일 당첨자 발표로 이어지는 접수 일정과 HDEX·콘티넨탈·샥즈·아미노바이탈 공식 파트너 기프트까지 정리했습니다.',
+    thumbnail: '/images/blog/2026-garmin-run-korea-medal-race-package.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-05',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['가민런 코리아', '가민런 메달', '레이스 패키지', '가민 포러너', '마라톤 기념품', '가민런 접수', '포러너 170', '래플 추첨'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026 가민런 코리아가 <strong>10K·HALF 완주 메달</strong>과 <strong>참가자 레이스 패키지(기념품)</strong>를 공개했습니다 — "다음 도전을 기념할 메달"</li>
+    <li>접수는 <strong>6/23 포러너 170/70 스페셜팩 오픈(D-18)</strong> → <strong>7/1~7/3 본접수(래플)</strong> → <strong>7/7 당첨자 발표</strong> 순서로 진행됩니다</li>
+    <li>공식 파트너 <strong>HDEX·콘티넨탈타이어·샥즈·아미노바이탈</strong>의 기프트도 함께 제공됩니다. 11월 15일 고양종합운동장</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏅</span>
+  <div class="callout-body">
+    <p class="callout-title">메달부터 공개 — "당신의 다음 도전을 기념할"</p>
+    <p>가민코리아가 대회 5개월 전부터 <strong>완주 메달 디자인</strong>을 먼저 공개했습니다. 10K부터 HALF 마라톤까지, 종목별로 다음 도전을 기념하는 메달이죠. 가민런 코리아는 작년 첫 대회 때 <strong>각인 메달·기록 포스터 같은 프리미엄 완주 경험</strong>으로 화제가 됐던 만큼, 올해 메달에도 관심이 쏠립니다. <em>(실제 메달은 공개 이미지와 다를 수 있습니다.)</em></p>
+  </div>
+</div>
+
+<h2>참가자 레이스 패키지 — 무엇이 들어있나</h2>
+<p>가민은 "목표를 정했다면 준비도 달라져야 한다"며 참가자에게 제공되는 <strong>특별 레이스 패키지</strong>를 공개했습니다. 구체 구성품은 대회가 가까워지며 확정되지만, 공식 파트너 라인업을 보면 어떤 기프트가 함께할지 짐작할 수 있습니다.</p>
+<table>
+  <thead>
+    <tr><th>공식 파트너</th><th>분야</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>HDEX(에이치덱스)</strong></td><td>스포츠·러닝 용품</td></tr>
+    <tr><td><strong>콘티넨탈타이어</strong></td><td>타이어(고무·접지 기술) — 러닝화 아웃솔 협업으로도 친숙</td></tr>
+    <tr><td><strong>샥즈(Shokz)</strong></td><td>골전도 러닝 이어폰</td></tr>
+    <tr><td><strong>아미노바이탈</strong></td><td>아미노산·러닝 보충제</td></tr>
+  </tbody>
+</table>
+<p><em>※ 레이스 패키지 구성품·디자인은 예고 없이 변경될 수 있습니다.</em></p>
+
+<h2>접수 일정 — 6/23 포러너 스페셜팩부터</h2>
+<p>이번 대회의 핵심은 <strong>3단계 접수</strong>입니다. 특히 <strong>가민 워치가 포함된 스페셜팩</strong>이 본접수보다 먼저 열립니다.</p>
+<table>
+  <thead>
+    <tr><th>일정</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>6/23 (화)</strong></td><td><strong>포러너 170/70 스페셜팩</strong> 오픈 <strong>(D-18)</strong> — 워치 포함 패키지</td></tr>
+    <tr><td><strong>7/1 (수) ~ 7/3 (금)</strong></td><td><strong>본 접수 신청 (래플/추첨)</strong></td></tr>
+    <tr><td><strong>7/7 (화)</strong></td><td>본 접수 <strong>당첨자 발표</strong></td></tr>
+  </tbody>
+</table>
+<p>가민 입문 워치 <strong>포러너 70/170</strong>은 올해 새로 출시된 모델로, 스페셜팩은 "워치 + 대회 참가"를 묶은 구성입니다. 워치 자체가 궁금하다면 → <a href="/blog/2026-garmin-forerunner-70-170-korea">가민 포러너 70·170 출시 정리</a></p>
+
+<div class="callout warning">
+  <span class="callout-icon">🎟️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 전략 — 스페셜팩 vs 래플</p>
+    <p>워치까지 새로 장만할 생각이라면 <strong>6/23 스페셜팩</strong>이 참가를 확정 짓는 가장 빠른 길입니다. 워치가 이미 있다면 <strong>7/1~7/3 래플</strong>에 신청하세요. 래플은 선착순이 아니라 <strong>기간 내 신청만 하면 추첨</strong> 대상이 되므로 서버와 싸울 필요는 없지만, <strong>신청 마감(7/3)</strong>을 놓치면 끝입니다. 작년 "2분컷"의 인기를 생각하면 경쟁률은 높을 전망입니다.</p>
+  </div>
+</div>
+
+<h2>대회 한눈에</h2>
+<ul>
+  <li><strong>일정</strong>: 2026년 11월 15일 (일)</li>
+  <li><strong>장소</strong>: 고양종합운동장</li>
+  <li><strong>종목</strong>: HALF, 10K</li>
+  <li><strong>공식 파트너</strong>: HDEX · 콘티넨탈타이어 · 샥즈 · 아미노바이탈</li>
+</ul>
+<p>일정·코스·규모 등 대회 전반의 자세한 정리는 → <a href="/blog/2026-garmin-run-korea-half-marathon">2026 가민런 코리아 일정·접수·코스 총정리</a>에서 확인하세요. 다른 가을 대회와 함께 일정을 짜려면 → <a href="/marathon">마라톤 캘린더</a></p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 메달·레이스 패키지·접수 일정은 가민코리아 공식 채널(@garmin_korea) 공개 정보 기준이며, 구성품·일정은 변경될 수 있으니 신청 전 공식 채널을 한 번 더 확인하세요.</p>
+`,
+  },
+  {
     id: 'lotte-world-tower-skyrun-tower-running-guide',
     slug: 'lotte-world-tower-skyrun-tower-running-guide',
     title: '계단으로 하늘을 오른다 — 롯데월드타워 스카이런과 "타워러닝" 완전 입문 | 123층·2,917계단·555m, 수직 마라톤이란?',
