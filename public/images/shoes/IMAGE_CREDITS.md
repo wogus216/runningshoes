@@ -111,3 +111,8 @@ If you are a copyright holder and believe your content has been used inappropria
 - Source: PUMA 공식 (images.puma.com / kr.puma.com, SKU 313904)
 - Date: 2026-06-05
 - Images: 6 (side, front, back, angle, angle2, outsole)
+
+## ASICS GEL-KAYANO 33 (젤 카야노 33)
+- Source: ASICS 공식 (images.asics.com, SKU 1011C167-100 White/Energy Aqua, 투명 PNG)
+- Date: 2026-06-05
+- Images: 5 (side, front, back, angle, outsole)
