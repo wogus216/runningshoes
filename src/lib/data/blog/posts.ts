@@ -2,6 +2,80 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-disney-run-incheon-virtual-run',
+    slug: '2026-disney-run-incheon-virtual-run',
+    title: '디즈니런 2026 인천 + 디즈니 버추얼런 최초 공개 | 6/11 티켓 오픈 — 토이스토리·모아나·주토피아 3색 버추얼런부터 10/24 인천까지',
+    description: '2025 여의도에서 1.5만 명을 모은 디즈니런이 2026년 인천으로 돌아옵니다. 게다가 시간·장소 구애 없이 즐기는 디즈니 버추얼런이 최초 도입돼 토이스토리·모아나·주토피아 3색 테마로 진행됩니다. 6/11 1차 티켓 오픈, 10/24 인천 상상플랫폼 본 대회까지 일정·테마·티켓 오픈을 한 번에 정리했습니다.',
+    thumbnail: '/images/blog/2026-disney-run-incheon-virtual-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-05',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['디즈니런', '디즈니런 2026', '디즈니 버추얼런', '디즈니런 인천', '버추얼런', '러닝 이벤트', '토이스토리', '인천 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2025 여의도에서 1.5만 명을 모았던 <strong>디즈니런이 2026년 인천(상상플랫폼)으로</strong> 돌아옵니다 — 본 대회는 <strong>10월 24일(토)</strong></li>
+    <li>올해 처음으로 <strong>디즈니 버추얼런</strong>이 도입돼, <strong>토이스토리·모아나·주토피아 3색 테마</strong>로 어디서나 달릴 수 있습니다</li>
+    <li>가장 빠른 일정은 <strong>버추얼런 1차(토이스토리) 티켓 오픈 6/11(목) — D-6</strong>. 공식 홈페이지는 6/5 오픈, 상세는 6/9 공개</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏰</span>
+  <div class="callout-body">
+    <p class="callout-title">"Fun, Together!" — 디즈니런이 인천으로</p>
+    <p>2025년 여의도공원에서 약 1.5만 명이 참가하며 화제가 된 <strong>국내 첫 디즈니 테마 러닝</strong>이, 2026년에는 <strong>인천 상상플랫폼</strong>으로 무대를 옮겨 돌아옵니다. 여기에 올해는 시간과 장소에 구애받지 않고 즐기는 <strong>'디즈니 버추얼런'이 최초로 도입</strong>돼, 본 대회 전부터 디즈니 캐릭터와 함께 달릴 수 있게 됐습니다.</p>
+  </div>
+</div>
+
+<h2>① 디즈니 버추얼런 — 어디서나, 3색 테마 (최초 도입)</h2>
+<p>버추얼런은 <strong>정해진 기간 안에 원하는 장소에서 달리고 기록을 인증</strong>하는 방식입니다. 1차부터 3차까지 각기 다른 디즈니 캐릭터 테마로 진행됩니다.</p>
+<table>
+  <thead>
+    <tr><th>차수</th><th>테마</th><th>러닝 기간</th><th>티켓 오픈</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>1차</strong></td><td>토이 스토리</td><td>6/24(수) ~ 7/10(금)</td><td><strong>6/11(목)</strong></td></tr>
+    <tr><td><strong>2차</strong></td><td>모아나</td><td>7/15(수) ~ 7/31(금)</td><td>7/9(목)</td></tr>
+    <tr><td><strong>3차</strong></td><td>주토피아</td><td>8/12(수) ~ 8/24(월)</td><td>8/6(목)</td></tr>
+  </tbody>
+</table>
+<p>장소는 <strong>"어디에서나!"</strong> — 한강이든 동네 공원이든 본인 코스에서 달리면 됩니다. 여름 더위를 감안하면 새벽·야간 러닝이 좋겠죠 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></p>
+
+<h2>② 디즈니런 2026 인천 — 본 대회</h2>
+<ul>
+  <li><strong>장소</strong>: 인천 <strong>상상플랫폼</strong> (인천 내항 일대)</li>
+  <li><strong>일정</strong>: <strong>10월 24일(토)</strong></li>
+  <li><strong>티켓 오픈</strong>: <strong>8/31(월) 예정</strong></li>
+</ul>
+<p>2025 여의도 대회는 3km·10km 종목으로 진행됐는데, 인천 대회의 구체 종목·코스·참가비는 아직 미공개입니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을 참고하세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🎟️</span>
+  <div class="callout-body">
+    <p class="callout-title">일정 한눈에 + 놓치면 안 될 날짜</p>
+    <ul>
+      <li><strong>6/5(금)</strong> — 공식 홈페이지 오픈(disneyrunincheon2026.com)</li>
+      <li><strong>6/9</strong> — 상세 정보 공개</li>
+      <li><strong>6/11(목)</strong> — 버추얼런 1차(토이스토리) 티켓 오픈 <strong>(D-6)</strong></li>
+      <li><strong>8/31(월)</strong> — 디즈니런 2026 인천 본 대회 티켓 오픈</li>
+    </ul>
+    <p>2025 디즈니런이 인기로 빠르게 마감됐던 만큼, 원하는 차수·종목은 <strong>티켓 오픈일을 미리 알림 설정</strong>해두는 게 안전합니다.</p>
+  </div>
+</div>
+
+<h2>버추얼런, 처음이라면</h2>
+<p>버추얼런은 대회장에 가지 않고도 <strong>기간 내 정해진 거리를 달리고 앱·기록으로 인증</strong>하면 완주로 인정되는 형식입니다. 보통 <strong>참가 키트(메달·티셔츠·캐릭터 굿즈)</strong>가 제공돼, 기록보다 <strong>테마를 즐기고 굿즈를 모으는 재미</strong>가 큽니다. 가족·친구와 함께, 아이와 함께 부담 없이 즐기기 좋아 디즈니 테마와 잘 어울립니다.</p>
+
+<h2>마무리</h2>
+<p>2025년의 인기를 잇는 디즈니런이 <strong>버추얼런(여름) → 인천 본 대회(가을)</strong>로 한 해를 길게 채웁니다. 우선 6/11 토이스토리 버추얼런부터 챙기고, 10/24 인천 본 대회는 8/31 티켓 오픈을 기다리면 됩니다. 다른 가을 러닝 이벤트와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 일정·테마·장소는 디즈니코리아(@disneykorea) 공식 발표(2026-06-04) 기준이며, 종목·참가비 등 세부 정보는 6/9 및 공식 홈페이지 공개 시 확정됩니다. 신청 전 공식 채널을 한 번 더 확인하세요.</p>
+`,
+  },
+  {
     id: 'asics-gel-kayano-33-review',
     slug: 'asics-gel-kayano-33-review',
     title: '아식스 젤 카야노 33 솔직 리뷰 | 13년 만의 구조 대변혁 — 부드러워졌지만 호불호가 갈리는 이유',
