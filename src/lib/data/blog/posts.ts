@@ -2,6 +2,96 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'asics-gel-kayano-33-review',
+    slug: 'asics-gel-kayano-33-review',
+    title: '아식스 젤 카야노 33 솔직 리뷰 | 13년 만의 구조 대변혁 — 부드러워졌지만 호불호가 갈리는 이유',
+    description: '카야노 33은 4D Guidance System을 버리고 FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼으로 안정성의 방향 자체를 바꿨습니다. "역대 가장 부드럽고 일관됐다"는 호평과 "전작이 더 좋았다"는 혹평이 극명히 갈리죠. 확정 스펙과 미게시 랩 데이터를 구분해 정리하고, 평발·과내전 한국 러너에게 32와 33 중 무엇이 맞는지 답합니다.',
+    thumbnail: '/images/blog/asics-gel-kayano-33-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-05',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['카야노 33', '젤 카야노 33', 'FLUIDSUPPORT', '안정화 러닝화', '평발 러닝화', '과내전', '아식스 리뷰', '카야노 32 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>카야노 33은 <strong>13년 이어온 4D Guidance System(가이드레일)을 폐지</strong>하고 <strong>FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼</strong>으로 — 안정성을 "교정"이 아닌 "부드러운 가이드"로 바꾼 대변혁작입니다</li>
+    <li>평가가 <strong>극명히 갈립니다</strong>: "역대 가장 부드럽고 일관된 카야노"(호평) vs "전작의 통통 튀는 반발이 사라져 단단하고 밋밋하다"(혹평, Doctors of Running은 C+ 등급)</li>
+    <li>결론은 명확합니다 — <strong>반발·경쾌함을 원하면 전작 32, 차분하고 부드러운 안정·장거리·워킹용이면 33</strong>. 발 성향에 따라 선택이 갈립니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔧</span>
+  <div class="callout-body">
+    <p class="callout-title">13년 만에 "안정성을 만드는 방식"이 바뀌었다</p>
+    <p>카야노는 오랫동안 <strong>딱딱한 의료 포스트·가이드 시스템</strong>으로 발이 안쪽으로 무너지는 걸 막아주는 정통 안정화였습니다. 33은 이 공식을 버렸습니다. 발 아치를 밀어내는 장치 없이, <strong>넓어진 바닥 + 폼 밀도 차이 + 미드솔 지오메트리(직선 라스트·미디얼 플레어)</strong>로 자연스럽게 발을 잡아주는 "지오메트릭 안정성"으로 전환했죠. ASICS의 표현으로는 <strong>"움직임을 교정하기보다 보행 단계마다 안내한다"</strong>는 철학입니다.</p>
+  </div>
+</div>
+
+<h2>무엇이 바뀌었나 — 32 → 33</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>안정성 방식</td><td>4D Guidance System (가이드레일)</td><td><strong>FLUIDSUPPORT</strong> (지오메트리·폼밀도)</td></tr>
+    <tr><td>미드솔 폼</td><td>FF Blast+ ECO 단일</td><td><strong>FF Blast Max(상) + FF Blast Plus(하)</strong> 듀얼</td></tr>
+    <tr><td>젤</td><td>후방 PureGel</td><td>후방 PureGel 유지</td></tr>
+    <tr><td>라이드 성격</td><td>통통 튀는 반발감</td><td><strong>부드럽고 차분, 더 단단·압축적</strong></td></tr>
+  </tbody>
+</table>
+<p>상단의 <strong>FF Blast Max</strong>는 아식스의 통통 튀는 쿠션화 노바블라스트 계열에서 온 폼으로, 처음 신었을 때 <strong>구름 같은 부드러움</strong>을 줍니다. 그 아래 더 단단한 FF Blast Plus가 받쳐 안정성을 만드는 구조죠. 자세한 항목별 비교는 → <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a>에서 다룹니다.</p>
+
+<h2>스펙 — 확정값과 "아직 모르는 값"</h2>
+<div class="callout warning">
+  <span class="callout-icon">🧪</span>
+  <div class="callout-body">
+    <p class="callout-title">신상 데이터 안내</p>
+    <p>2026년 6월 출시 직후라 <strong>RunRepeat의 독립 절단 랩 테스트가 카야노 33에 대해 아직 미게시</strong>입니다. 즉 <strong>충격흡수(SA)·경도(HA)·에너지 리턴%·토박스 너비</strong> 같은 정밀 랩 수치는 33에 대해 확정값이 없습니다. 아래 확정 스펙은 제조사·리뷰어 스펙시트 기준이며, 랩 수치는 전작 32를 참고로만 병기합니다.</p>
+  </div>
+</div>
+<ul>
+  <li><strong>무게</strong>: 약 <strong>298g</strong> (남성 US 9 기준). 전작 32(스펙 304g·랩 실측 295g)와 <strong>사실상 동일</strong> 수준 — 소스별 편차가 있어 정확한 증감은 단정하기 어렵습니다.</li>
+  <li><strong>스택 / 드롭</strong>: 힐 약 <strong>40mm</strong> / 전족 약 <strong>31mm</strong>, <strong>드롭 8mm</strong>(카야노 라인 중 낮은 편, 32 계승)</li>
+  <li><strong>충격흡수·경도·토박스</strong>: 33 랩 미게시 → <strong>(참고) 카야노 32</strong>는 RunRepeat 기준 부드러운 쿠션·표준 토박스대였습니다. 33은 폼이 바뀌어 <strong>더 압축적·단단하다는 평</strong>이라 32 수치를 그대로 적용하면 안 됩니다.</li>
+  <li><strong>내구성</strong>: 카야노 전통대로 아웃솔이 튼튼해 <strong>장거리 데일리 600km+</strong>를 기대할 수 있습니다.</li>
+</ul>
+
+<h2>평가가 갈린다 — 양쪽 다 들어보자</h2>
+<p>카야노 33만큼 전문가 평이 엇갈린 신상도 드뭅니다.</p>
+<h3>👎 혹평 — "전작이 더 좋았다"</h3>
+<p>의학 관점 리뷰로 권위 있는 <strong>Doctors of Running</strong>의 Matt Klein(물리치료 박사)은 <strong>32를 "2025 올해의 안정화"로 꼽았지만, 33은 2026 top-3에도 못 든다</strong>며 성능 <strong>C+ 등급</strong>을 줬습니다. 근거는:</p>
+<ul>
+  <li><strong>"비반응성 미드솔"</strong> — 전작 4D Guidance의 통통 튀는 반발이 사라짐</li>
+  <li><strong>과도하게 압축적이고 단단한 라이드</strong>, 어색한 힐 전환</li>
+  <li>"빠르게 달리기보다 <strong>걷거나 느린 페이스</strong>에 가장 잘 맞는다"</li>
+</ul>
+<h3>👍 호평 — "역대 가장 부드럽고 일관됐다"</h3>
+<p>반면 일부 매체·리테일러는 <strong>"달려보니 가장 부드럽고 일관된 카야노"</strong>, 안정성이 거슬리지 않고 자연스럽다고 평합니다. 가이드레일이 아치를 밀어내던 이질감이 사라져 <strong>더 편안하다</strong>는 거죠. 다만 이쪽은 전문 랩·의료 리뷰보다 소스 강도가 낮은 편입니다.</p>
+<p>두 평가는 사실 <strong>같은 변화를 다르게 본 것</strong>입니다 — "반발이 사라졌다"(혹평)와 "이질감이 사라졌다"(호평)는 동전의 양면이죠.</p>
+
+<h2>그래서 누구에게 맞나</h2>
+<ul>
+  <li><strong>✅ 잘 맞는 사람</strong>: <a href="/blog/pronation-type-running-shoe-guide-2026">과내전·평발</a>이면서 <strong>부드럽고 차분한 안정</strong>을 원하는 러너, <strong>장거리 LSD·회복 러닝·오래 서있는 직업</strong>, 가이드레일의 밀어내는 느낌이 불편했던 사람</li>
+  <li><strong>❌ 안 맞는 사람</strong>: <strong>반발·경쾌함</strong>을 중시하거나 <strong>빠른 템포</strong>를 자주 뛰는 러너 → 전작 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(할인 시)나 다른 안정화가 낫습니다</li>
+</ul>
+
+<h2>한국 러너 관점</h2>
+<ul>
+  <li><strong>가격</strong>: 한국 공식가 <strong>209,000원</strong>. 프리미엄 안정화 정가대이며, 32가 할인에 들어가면 가성비는 32가 앞섭니다.</li>
+  <li><strong>발볼</strong>: 토박스 표준 + <strong>와이드 옵션 제공</strong>(카야노 전통)이라 발볼 넓은 한국 러너도 대응 가능. 평발 적합성은 최상위급입니다.</li>
+  <li><strong>경쟁 안정화</strong>: 부드러운 안정 + 통기성을 원하면 <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>, 가벼운 안정화는 <a href="/shoes/new-balance-860-v15">뉴발란스 860 v15</a>도 함께 비교해 보세요.</li>
+</ul>
+
+<h2>한 줄 결론</h2>
+<p>카야노 33은 "더 좋아진 카야노"가 아니라 <strong>"방향이 달라진 카야노"</strong>입니다. 통통 튀는 안정 쿠션을 사랑했다면 33의 변화가 아쉬울 수 있고, 가이드레일의 이질감이 싫었다면 33이 더 편할 수 있습니다. <strong>가능하면 매장에서 32와 33을 번갈아 신어보고</strong> 본인 발에 맞는 쪽을 고르세요. 스펙·추천 대상 요약은 <a href="/shoes/asics-gel-kayano-33">카야노 33 상세 페이지</a>, 출시 정보는 <a href="/blog/2026-asics-kayano-33-launch">출시 안내글</a>에서 확인할 수 있습니다. 무릎·관절이 걱정이라면 → <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 러닝화 선택법</a>도 참고하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 리뷰는 Doctors of Running, Canadian Running, ASICS 공식 등 다중 소스를 교차 검증해 작성했으며, RunRepeat 랩 미게시 항목은 추정·미확정으로 구분했습니다. 개인 발 특성에 따라 체감은 다를 수 있습니다.</p>
+`,
+  },
+  {
     id: 'puma-deviate-pure-nitro-review',
     slug: 'puma-deviate-pure-nitro-review',
     title: '푸마 디비에이트 나이트로 퓨어 리뷰 | 카본 뺀 100% PEBA 슈퍼폼 — 18.9만원 무플레이트 트레이너의 정체',
