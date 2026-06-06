@@ -2,6 +2,96 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'mind-vs-im-bank-marathon-2026-seoul',
+    slug: 'mind-vs-im-bank-marathon-2026-seoul',
+    title: '내일 서울, 같은 시각 두 하프 — 마인드 마라톤 vs iM뱅크 코리아오픈마라톤 | 서울광장 기부런 vs 여의도 한강 코스 한눈 비교',
+    description: '6월 7일(일) 오전 7시 30분, 서울 한복판에서 두 마라톤이 동시에 출발합니다. 서울광장에서 출발하는 1만 명 규모의 기부런 "마인드 마라톤", 그리고 여의도공원 한강변을 달리는 "iM뱅크 코리아오픈마라톤". 두 대회의 출발지·코스·성격·완주 기념품을 한눈에 비교하고, 같은 날 겹치는 교통통제와 관전·당일 체크리스트까지 정리했습니다.',
+    thumbnail: '/images/blog/mind-vs-im-bank-marathon-2026-seoul.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-06',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['마인드 마라톤', 'iM뱅크 코리아오픈마라톤', '서울 마라톤', '하프 마라톤', '여의도 마라톤', '서울광장', '6월 마라톤', '러닝 대회', '교통통제'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>6/7(일) 오전 7:30, 서울에서 두 하프가 동시에 출발</strong>합니다 — 서울광장의 <strong>마인드 마라톤</strong> vs 여의도공원의 <strong>iM뱅크 코리아오픈마라톤</strong></li>
+    <li><strong>성격이 정반대</strong>입니다. 마인드는 참가비 전액을 기부하는 <strong>1만 명 규모 도심 기부런</strong>, iM뱅크는 한강변을 달리는 <strong>8천 명 규모 리버사이드 대회</strong>(프로스펙스 하네스 완주 기념품)</li>
+    <li>둘 다 접수는 마감됐고, <strong>같은 날 서울 도심·여의도 교통통제가 겹칩니다</strong> — 참가자도 관전객도 <strong>대중교통(지하철) 필수</strong>, 통제 구간은 당일 아침 TOPIS에서 확인하세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"이번 주 일요일, 어디로 가시나요?"</p>
+    <p>한 러닝 정보 채널(@runninglife_korea)이 던진 질문이 화제였습니다. <strong>같은 날, 같은 시각(7:30), 서울 도심에서 두 하프 대회</strong>가 동시에 열리거든요. 서울광장에서 출발하는 <strong>마인드 마라톤</strong>과 여의도공원에서 출발하는 <strong>iM뱅크 코리아오픈마라톤</strong>. 둘 다 HALF·10K·5K를 운영하지만, 성격은 꽤 다릅니다. 내일 달리는 분도, 응원하러 가는 분도 참고할 수 있게 한눈에 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>한눈 비교</h2>
+<table>
+  <thead>
+    <tr><th></th><th>마인드 마라톤</th><th>iM뱅크 코리아오픈마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출발</strong></td><td>서울광장 (시청)</td><td>여의도공원 문화의 마당</td></tr>
+    <tr><td><strong>시각</strong></td><td colspan="2" style="text-align:center">6/7(일) 오전 7:30 동시 출발</td></tr>
+    <tr><td><strong>종목</strong></td><td>HALF / 10K / 5K</td><td>HALF / 10K / 5K</td></tr>
+    <tr><td><strong>규모</strong></td><td>약 1만 명</td><td>약 8천 명</td></tr>
+    <tr><td><strong>코스</strong></td><td>도심 평탄·직선 위주</td><td>한강변 리버사이드</td></tr>
+    <tr><td><strong>성격</strong></td><td>참가비 전액 기부 (마음건강)</td><td>iM뱅크 앱 추첨 (은행 대회)</td></tr>
+    <tr><td><strong>완주 기념품</strong></td><td>메달 + 음료·비타민</td><td>메달 + 프로스펙스 하네스(각인)</td></tr>
+  </tbody>
+</table>
+
+<h2>① 마인드 마라톤 — 서울광장 한복판의 기부런</h2>
+<p>가장 큰 특징은 <strong>참가비 전액이 아동·청소년 마음건강 지원 NGO에 기부</strong>된다는 점입니다. 한국수력원자력과 매체 '더버터'가 함께 열고 보건복지부·서울시가 후원하는, <strong>"달리기로 기부한다"</strong>는 취지의 대회죠. 규모도 <strong>1만 명</strong>으로 두 대회 중 더 큽니다.</p>
+<ul>
+  <li><strong>출발</strong>: 서울광장(시청) — 세종대로 일대를 도는 <strong>평탄한 직선 위주 코스</strong>로 안내됩니다</li>
+  <li><strong>기록</strong>: 넷타임(칩 계측) 방식 / 제한시간 하프 3시간·10K 1시간 30분·5K 1시간</li>
+  <li><strong>완주 기념품</strong>: 메달 + 비타500 이온킥 등 음료·비타민</li>
+  <li><strong>5K는 패밀리런</strong>(최대 4인 팀)으로 가족 단위 참가에 맞춰져 있습니다</li>
+</ul>
+<p>도심 광장에서 출발해 접근성이 좋고, "기록보다 의미"를 챙기고 싶은 러너에게 어울립니다.</p>
+
+<h2>② iM뱅크 코리아오픈마라톤 — 여의도 한강 리버사이드</h2>
+<p>이쪽은 <strong>iM뱅크(옛 대구은행)가 시중은행 전환 2주년을 기념해 처음 단독 주최</strong>하는 대회입니다. 대회 운영은 런코리아가 맡았고, 지방은행에서 시중은행으로 발돋움한 <strong>수도권 인지도 확대</strong>의 성격이 깔려 있죠. "코리아오픈마라톤"이라는 이름은 이번 iM뱅크 대회의 브랜드로, 오래된 동명 대회와는 무관합니다.</p>
+<ul>
+  <li><strong>출발</strong>: 여의도공원 문화의 마당 — <strong>여의도공원~한강변~서강대교</strong>를 경유하는 리버사이드 코스</li>
+  <li><strong>접수</strong>: iM뱅크 앱을 통한 <strong>추첨제</strong>(만 19세 이상) — 은행 고객 중심 운영이라 진입장벽이 조금 있습니다</li>
+  <li><strong>완주 기념품</strong>: 메달 + <strong>프로스펙스 경량 러닝 하네스</strong>(약 8.9만 원 상당, 무료 각인) — 실용 기념품으로 화제</li>
+</ul>
+<p>한강 경관을 즐기며 달리고 싶은 러너, 그리고 고급 완주 기념품에 끌리는 러너에게 매력적입니다.</p>
+
+<h2>그래서 뭐가 다른가 — 한 줄 정리</h2>
+<p><strong>마인드 마라톤</strong>은 "<strong>도심 광장에서 의미를 달리는</strong>" 대규모 기부런, <strong>iM뱅크 코리아오픈마라톤</strong>은 "<strong>한강을 끼고 달리는</strong>" 은행 주최 리버사이드 대회입니다. 접근성·규모·기부 취지를 본다면 마인드, 경관·완주 기념품·러닝 환경을 본다면 iM뱅크 쪽이죠. 참고로 <strong>같은 6/7에는 상암에서 '제23회 새벽강변 국제마라톤'도 열려</strong>, 서울에만 하프 대회가 셋입니다. 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 함께 확인할 수 있습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🚧</span>
+  <div class="callout-body">
+    <p class="callout-title">내일 아침 필수 — 교통통제 & 당일 체크리스트</p>
+    <p>두 대회가 같은 시각 출발하면서 <strong>서울 도심(세종대로·시청)과 여의도 일대 교통통제가 동시에</strong> 걸립니다. 구체적인 통제 구간·시간은 대회 측이 텍스트로 공개하지 않았으니, <strong>당일 아침 직접 확인</strong>이 안전합니다.</p>
+    <ul>
+      <li><strong>대중교통 필수</strong> — 마인드: 1·2호선 시청역 / iM뱅크: 5호선 여의도역·9호선 국회의사당역. 대회장 인근 주차는 사실상 불가</li>
+      <li><strong>교통통제 확인</strong>: 서울시 <a href="https://topis.seoul.go.kr" target="_blank" rel="noopener">TOPIS</a> 또는 서울경찰청 <a href="https://www.spatic.go.kr" target="_blank" rel="noopener">교통정보센터</a>에서 전날 밤~당일 아침 최신 현황을</li>
+      <li><strong>참가자 막판 체크</strong>: 기록칩(배번) 부착 확인, 짐 보관소 위치, 완주 기념품 수령 창구 — 출발 전 미리 동선 파악</li>
+      <li>하프 선두는 출발 70~80분 뒤 <strong>오전 8:40~9:00경 결승</strong> — 응원 타이밍 참고</li>
+    </ul>
+  </div>
+</div>
+
+<h2>6월 러닝, 더위부터 챙기세요</h2>
+<p>6월 초라도 오전 7시 30분 출발이면 후반부엔 기온이 빠르게 오릅니다. 하프를 뛴다면 <strong>수분·페이스 관리</strong>가 기록보다 중요합니다. 여름 러닝 준비는 <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a>를, 호흡이 가빠 옆구리가 결릴 땐 <a href="/blog/running-breathing-guide-korea">러닝 호흡법</a>을 참고하세요. 통기성 좋은 신발이 필요하다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 추천</a>도 있습니다.</p>
+
+<h2>마무리</h2>
+<p>같은 날, 같은 시각, 서울 한복판의 두 하프. <strong>마인드 마라톤</strong>이든 <strong>iM뱅크 코리아오픈마라톤</strong>이든, 내일 출발선에 서는 모든 러너의 안전한 완주를 응원합니다. 접수가 끝난 대회지만, "내년엔 어디로 갈까"를 고민한다면 두 대회의 성격 차이가 좋은 기준이 될 거예요. 다른 하프 대회 일정은 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>와 <a href="/marathon">마라톤 캘린더</a>에서 이어서 확인하세요. 🏅</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 각 대회 공식 홈페이지(mindmarathon.kr, imrun.kr)와 보도자료, @runninglife_korea(2026-06-04)를 종합한 정보입니다. 코스 상세 경로와 교통통제 구간은 대회 측 미공개분이 있어 실제와 다를 수 있으니, 참가 전 공식 채널과 TOPIS를 반드시 확인하세요.</p>
+`,
+  },
+  {
     id: 'side-stitch-running-causes-relief-korea',
     slug: 'side-stitch-running-causes-relief-korea',
     title: '러닝 중 옆구리가 찌릿 — 왜 아프고, 어떻게 멈출까 | 사이드 스티치 원인·즉시 대처 4단계·예방법',
