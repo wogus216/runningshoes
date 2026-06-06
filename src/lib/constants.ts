@@ -1,6 +1,14 @@
 // 사이트 URL 상수
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://allrunabout.com';
 
+// 색인 가드: Vercel '프로덕션' 배포에서만 검색엔진 색인을 허용한다.
+// 프리뷰·개발·로컬 빌드(VERCEL_ENV !== 'production')는 noindex로 처리해
+// 미완성·중복 콘텐츠가 검색에 노출되는 것을 막는다.
+// VERCEL_ENV는 Vercel이 배포 시 주입('production'|'preview'|'development')하며,
+// 프로덕션 배포에만 'production'이 들어온다. 명시적으로 'production'만 true로 판정해
+// 프로덕션이 실수로 noindex 되는 일이 없도록 한다.
+export const IS_PRODUCTION_DEPLOY = process.env.VERCEL_ENV === 'production';
+
 // 사이트 정보
 export const SITE_NAME = '러닝의 모든것';
 // 신발 개수는 layout.tsx 등 호출부에서 getShoes().length로 동적으로 prefix.

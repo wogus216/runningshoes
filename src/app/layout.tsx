@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
 import { getShoes } from "@/lib/data/shoes";
 
 const SHOE_COUNT = getShoes().length;
@@ -45,11 +45,11 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   robots: {
-    index: true,
-    follow: true,
+    index: IS_PRODUCTION_DEPLOY,
+    follow: IS_PRODUCTION_DEPLOY,
     googleBot: {
-      index: true,
-      follow: true,
+      index: IS_PRODUCTION_DEPLOY,
+      follow: IS_PRODUCTION_DEPLOY,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,

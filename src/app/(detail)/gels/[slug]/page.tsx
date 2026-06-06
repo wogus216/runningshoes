@@ -2,7 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getGelBySlug, getGels, getSimilarGelsData } from '@/lib/data/gels';
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
 import { HeroSection } from '@/components/gel-detail/hero-section';
 import { GelDetailTabs } from '@/components/gel-detail/gel-detail-tabs';
 
@@ -67,11 +67,11 @@ export async function generateMetadata({ params }: GelDetailPageProps): Promise<
     creator: SITE_NAME,
     publisher: SITE_NAME,
     robots: {
-      index: true,
-      follow: true,
+      index: IS_PRODUCTION_DEPLOY,
+      follow: IS_PRODUCTION_DEPLOY,
       googleBot: {
-        index: true,
-        follow: true,
+        index: IS_PRODUCTION_DEPLOY,
+        follow: IS_PRODUCTION_DEPLOY,
         'max-video-preview': -1,
         'max-image-preview': 'large',
         'max-snippet': -1,

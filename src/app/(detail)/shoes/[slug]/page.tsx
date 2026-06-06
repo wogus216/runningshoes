@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
-import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
@@ -81,7 +81,8 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   const imageUrl = shoe.image || DEFAULT_OG_IMAGE;
 
   // 불완전한 데이터 신발은 noindex 처리 (thin content 방지)
-  const shouldIndex = isCompleteShoe(shoe);
+  // + 프로덕션 배포에서만 색인 (프리뷰/로컬은 noindex)
+  const shouldIndex = IS_PRODUCTION_DEPLOY && isCompleteShoe(shoe);
 
   return {
     title,
@@ -92,10 +93,10 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     publisher: SITE_NAME,
     robots: {
       index: shouldIndex,
-      follow: true,
+      follow: IS_PRODUCTION_DEPLOY,
       googleBot: {
         index: shouldIndex,
-        follow: true,
+        follow: IS_PRODUCTION_DEPLOY,
         'max-video-preview': -1,
         'max-image-preview': 'large',
         'max-snippet': -1,
