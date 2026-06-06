@@ -39,7 +39,7 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.sonkeechungrun.com',
     description:
-      '약 2만 명 규모 고양 출발 제2자유로 코스. 11월 둘째~셋째 일요일 개최 패턴(2025년 11/16) 기준 추정 일정 — 공식 발표 시 확정.',
+      '약 2만 명 규모 고양 출발 제2자유로 코스. 2026년 일정 미발표(2026-06 기준) — 11월 둘째~셋째 일요일 개최 패턴상 11/8 또는 11/15 유력하며, 여기서는 셋째 일요일(11/15)로 잠정 표기. 접수는 통상 9월 시작(2025년 9/13). 공식 발표 시 확정 예정.',
   },
   {
     id: 'sangju-gotgam-marathon-2026',
