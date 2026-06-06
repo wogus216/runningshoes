@@ -2,6 +2,110 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'side-stitch-running-causes-relief-korea',
+    slug: 'side-stitch-running-causes-relief-korea',
+    title: '러닝 중 옆구리가 찌릿 — 왜 아프고, 어떻게 멈출까 | 사이드 스티치 원인·즉시 대처 4단계·예방법',
+    description: '달리다 갑자기 옆구리가 찌릿했던 경험, 초보 러너라면 한 번쯤 겪습니다. 대부분은 부상이 아니라 호흡 리듬·횡격막 긴장에서 오는 사이드 스티치(ETAP, 운동유발 일과성 복통)입니다. 왜 생기는지, 통증이 왔을 때 즉시 멈추는 4단계 대처법, 다음 러닝부터 예방하는 체크리스트, 그리고 "이건 사이드 스티치가 아닐 수도 있다"는 위험 신호까지 정리했습니다.',
+    thumbnail: '/images/blog/side-stitch-running-causes-relief-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-06',
+    category: 'tips' as const,
+    readingTime: 7,
+    tags: ['옆구리 통증', '사이드 스티치', '러닝 통증', '러닝 호흡법', '초보 러너', '복식호흡', 'ETAP', '러닝 팁', '횡격막', '러닝 부상'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>달리다 생기는 옆구리 통증은 대부분 부상이 아니라 <strong>사이드 스티치(ETAP·운동유발 일과성 복통)</strong> — 호흡 리듬, 횡격막 긴장, 식후 러닝이 주범입니다</li>
+    <li>통증이 오면 <strong>속도를 줄이고 → 깊게 내쉬고 → 통증 부위를 누르며 상체를 숙이고 → 호흡 리듬을 맞추는</strong> 4단계로 보통 1~2분 안에 가라앉습니다</li>
+    <li>예방의 핵심은 <strong>식사 2~3시간 전 마치기 + 워밍업 + 복식호흡 리듬 + 점진적 페이스</strong>. 초보일수록 자주 겪지만 달리기에 적응하면 빈도가 확 줄어듭니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저, 겁먹지 마세요 — 대부분 부상이 아닙니다</p>
+    <p>"달리다 옆구리가 찌릿"한 통증의 정식 명칭은 <strong>ETAP(Exercise-Related Transient Abdominal Pain), 운동유발 일과성 복통</strong>입니다. 흔히 <strong>사이드 스티치(side stitch)</strong>라 부르죠. 이름에 '일과성(transient)'이 들어간 데서 알 수 있듯, <strong>잠깐 왔다 사라지는 증상</strong>이지 근육 파열이나 장기 손상이 아닙니다. 러너의 약 70%가 한 번쯤 겪고, 특히 <strong>달리기를 막 시작한 초보에게 더 자주</strong> 나타납니다.</p>
+  </div>
+</div>
+
+<h2>왜 옆구리가 찌릿할까 — 유력한 3가지 원인</h2>
+<p>의학적으로 단 하나의 원인이 확정된 건 아니지만, 연구에서 가장 유력하게 꼽히는 가설은 셋입니다.</p>
+<ol>
+  <li><strong>횡격막 긴장·피로</strong> — 호흡을 담당하는 횡격막이 달리기 중 과하게 쓰이며 일시적으로 산소가 부족해지고 경련하듯 뭉칩니다. 얕고 빠른 호흡일수록 잘 생깁니다.</li>
+  <li><strong>내장 인대가 당겨지는 자극</strong> — 위·간 같은 장기는 인대로 횡격막에 매달려 있습니다. 달릴 때 상하 진동이 이 인대를 잡아당겨 자극하는데, <strong>대부분 통증이 오른쪽 옆구리</strong>에 오는 이유(간이 오른쪽에 있음)로 설명됩니다.</li>
+  <li><strong>위가 차 있을 때</strong> — 식후 곧바로 달리거나 농도 높은 음료(고당분 이온음료 등)를 마신 직후엔 위가 무거워져 인대 자극과 통증이 커집니다.</li>
+</ol>
+
+<h2>왜 초보 러너에게 더 자주 올까</h2>
+<p>인스타 러닝 정보 카드에서도 "처음 달리기 시작한 러너라면 한 번쯤 겪는다"고 짚는데, 이유가 분명합니다.</p>
+<ul>
+  <li><strong>호흡이 아직 얕고 불규칙</strong>합니다 — 가슴으로만 빠르게 숨 쉬면 횡격막이 더 쉽게 지칩니다</li>
+  <li><strong>코어(몸통) 근력이 약해</strong> 진동을 덜 잡아주고, 그만큼 내장 인대에 충격이 더 갑니다</li>
+  <li><strong>페이스 조절이 서툴러</strong> 초반에 무리하게 빨라지기 쉽습니다</li>
+</ul>
+<p>바꿔 말하면 <strong>달리기에 몸이 적응하고 호흡·코어가 자리 잡으면 빈도가 급격히 줄어듭니다</strong>. 옆구리 통증은 대개 "초보 딱지"와 함께 사라집니다.</p>
+
+<h2>통증이 왔을 때 — 즉시 대처 4단계</h2>
+<p>무작정 참고 뛰는 게 가장 안 좋습니다. 다음 순서대로 하면 보통 <strong>1~2분 안에</strong> 가라앉습니다.</p>
+<div class="callout info">
+  <span class="callout-icon">🆘</span>
+  <div class="callout-body">
+    <p class="callout-title">사이드 스티치 응급 대처 4단계</p>
+    <ol>
+      <li><strong>속도를 확 낮춥니다</strong> — 멈추지 않아도 됩니다. 걷기 직전 수준까지 페이스를 떨어뜨리세요.</li>
+      <li><strong>깊게, 길게 내쉽니다</strong> — 들이쉬기보다 <strong>내쉬기에 집중</strong>. 입술을 오므려 "후—" 하고 길게 뱉으면 횡격막 긴장이 풀립니다.</li>
+      <li><strong>통증 부위를 손으로 누르며 상체를 살짝 숙입니다</strong> — 아픈 곳을 지그시 누르고 몸을 앞으로 굽히면 인대 장력이 줄어듭니다.</li>
+      <li><strong>호흡과 발 박자를 맞춥니다</strong> — <strong>통증 반대쪽 발</strong>이 땅에 닿는 순간에 숨을 내쉬세요. 오른쪽이 아프면 왼발 착지에 맞춰 "후".</li>
+    </ol>
+  </div>
+</div>
+<p>그래도 안 가라앉으면 잠깐 걸으면서 <strong>아픈 쪽 팔을 머리 위로 올려 옆구리를 늘려주는 스트레칭</strong>을 더하세요. 깊은 호흡과의 연결이 궁금하다면 <a href="/blog/running-breathing-guide-korea">러닝 호흡법 가이드</a>를 함께 보면 좋습니다.</p>
+
+<h2>다음 러닝부터 — 예방 체크리스트</h2>
+<ul>
+  <li><strong>식사는 러닝 2~3시간 전에 마치기</strong> — 위를 비우는 게 가장 효과 큰 예방입니다. 공복이 부담되면 바나나 반 개 정도만</li>
+  <li><strong>직전 고농도 음료 피하기</strong> — 진한 이온음료·주스보다 물 또는 묽은 음료를</li>
+  <li><strong>워밍업으로 천천히 시작</strong> — 처음 5분은 대화 가능한 페이스로. 갑자기 빨라지지 않기</li>
+  <li><strong>복식호흡 리듬 만들기</strong> — 2~3걸음에 들이쉬고 2걸음에 내쉬는 식으로 규칙적으로. 배가 부풀도록 깊게</li>
+  <li><strong>코어 강화</strong> — 플랭크 같은 몸통 운동이 진동을 잡아 장기적으로 빈도를 줄입니다</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">이건 사이드 스티치가 아닐 수도 — 병원 신호</p>
+    <p>사이드 스티치는 <strong>달리기를 멈추면 사라지는</strong> 게 특징입니다. 아래라면 다른 문제일 수 있으니 무리하지 말고 진료를 받으세요.</p>
+    <ul>
+      <li>운동을 멈춰도 통증이 <strong>계속되거나 점점 심해질 때</strong></li>
+      <li>오른쪽 윗배(갈비뼈 아래)가 <strong>쥐어짜듯 심하게</strong> 아프거나 발열·구토를 동반할 때(담낭·간 문제 가능)</li>
+      <li>가슴 압박감, 식은땀, 어지럼을 동반할 때 — <strong>즉시 중단하고 응급 대응</strong></li>
+      <li>매번 같은 자리에 <strong>찌르는 통증이 반복</strong>될 때</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 통증이 오면 멈춰야 하나요, 참고 뛰어야 하나요?</h3>
+<p>멈출 필요는 없지만 <strong>참고 그대로 뛰는 건 금물</strong>입니다. 속도를 낮추고 위의 4단계를 적용하면 달리면서도 가라앉는 경우가 많습니다.</p>
+
+<h3>Q. 왜 항상 오른쪽만 아플까요?</h3>
+<p>간이 오른쪽 윗배에 있어 그쪽 인대가 더 자극받기 때문이라는 설명이 유력합니다. 왼쪽에 오는 경우도 있으니 위치만으로 걱정할 필요는 없습니다.</p>
+
+<h3>Q. 신발이나 자세도 영향이 있나요?</h3>
+<p>상하 진동이 크면 인대 자극도 커지므로, <strong>쿠션이 받쳐주는 신발과 안정적인 상체 자세</strong>가 간접적으로 도움이 됩니다. 입문 단계라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법</a>부터 점검해 보세요. 무릎 등 다른 통증이 함께 있다면 <a href="/blog/knee-pain-running-shoes">러닝 무릎 통증 가이드</a>도 참고하세요.</p>
+
+<h3>Q. 거리를 늘리면 더 자주 생기나요?</h3>
+<p>오히려 반대인 경우가 많습니다. <a href="/blog/lsd-training-beginner-guide-korea">LSD(천천히 길게) 훈련</a>처럼 편한 페이스로 꾸준히 달리면 호흡·코어가 적응해 통증 빈도가 줄어듭니다. 문제는 거리가 아니라 <strong>갑작스러운 페이스</strong>입니다.</p>
+
+<h2>마무리</h2>
+<p>러닝 중 옆구리 통증은 <strong>"내 몸이 아직 달리기에 적응 중"</strong>이라는 신호에 가깝습니다. 부상이 아니니 겁먹지 말고, 통증이 오면 <strong>속도↓ · 깊은 날숨 · 부위 압박 · 호흡 박자</strong> 4단계로 다스리세요. 그리고 식사 타이밍과 워밍업, 복식호흡만 챙겨도 다음 러닝부터 확연히 줄어듭니다. 달리는 횟수가 쌓일수록 옆구리는 점점 조용해집니다. 🏃</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 건강 정보로, 개인의 의학적 진단을 대체하지 않습니다. 운동과 무관하게 지속되거나 심한 복통은 반드시 의료진의 진료를 받으세요. (참고 글감: @runninglife_korea RIFEWIKI, 2026-06-05)</p>
+`,
+  },
+  {
     id: 'li-ning-red-hare-9-ultra-truth-2026',
     slug: 'li-ning-red-hare-9-ultra-truth-2026',
     title: '화제의 "중국 카본화" 정체 — 라이닝 레드헤어 9 울트라는 카본이 아닙니다 | 10만 원대 가성비 슈퍼트레이너의 진실',
