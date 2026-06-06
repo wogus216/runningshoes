@@ -31,7 +31,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '부산 다대포 해수욕장',
     region: '부산',
     distances: ['울트라'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     description: '50km 울트라마라톤',
   },
@@ -43,7 +43,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '서울 여의도',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -54,7 +54,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '경기 고양',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -65,7 +65,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '경남 거제',
     region: '경남',
     distances: ['하프', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -76,7 +76,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '서울 광화문광장',
     region: '서울',
     distances: ['풀코스', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: true,
     website: 'https://seoul-marathon.com',
     description: '국내 최대 규모 마라톤 대회. 동아일보·서울시 주최.',
@@ -116,7 +116,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '충남 내포신도시',
     region: '충남',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -127,7 +127,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '전북 정읍',
     region: '전북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -138,7 +138,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '인천 문학경기장',
     region: '인천',
     distances: ['하프', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -149,7 +149,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '서울 광화문광장',
     region: '서울',
     distances: ['하프', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -160,7 +160,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '울산 태화강 국가정원',
     region: '울산',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -171,7 +171,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '세종 금강보행교',
     region: '세종',
     distances: ['울트라'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     description: '100K/50K 울트라마라톤',
   },
@@ -183,7 +183,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '경기 김포',
     region: '경기',
     distances: ['풀코스', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -194,7 +194,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '경남 합천',
     region: '경남',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
   },
   {
@@ -205,7 +205,7 @@ export const marchEvents: MarathonEvent[] = [
     location: '서울 월드컵공원',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '대회종료',
     isMajor: false,
   },
 ];

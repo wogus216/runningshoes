@@ -6,6 +6,8 @@ import { juneEvents } from './june';
 import { julyEvents } from './july';
 import { septemberEvents } from './september';
 import { octoberEvents } from './october';
+import { novemberEvents } from './november';
+import { decemberEvents } from './december';
 
 export const marathonEvents: MarathonEvent[] = [
   ...marchEvents,
@@ -15,6 +17,8 @@ export const marathonEvents: MarathonEvent[] = [
   ...julyEvents,
   ...septemberEvents,
   ...octoberEvents,
+  ...novemberEvents,
+  ...decemberEvents,
 ];
 
 export function getMarathonEvents(): MarathonEvent[] {

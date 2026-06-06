@@ -1,0 +1,57 @@
+import type { MarathonEvent } from '@/types/marathon';
+
+export const novemberEvents: MarathonEvent[] = [
+  {
+    id: 'jtbc-seoul-marathon-2026',
+    name: '2026 JTBC 서울마라톤',
+    date: '2026-11-01',
+    month: '11월',
+    location: '서울 상암동 평화의 광장',
+    region: '서울',
+    distances: ['풀코스', '10K'],
+    status: '마감',
+    isMajor: true,
+    website: 'http://marathon.jtbc.com',
+    description:
+      '국내 최대 규모 가을 풀코스 마라톤. 상암 출발 → 여의도 → 잠실 코스. 추첨제 운영(본접수 4월 마감).',
+  },
+  {
+    id: 'ulsan-human-rights-marathon-2026',
+    name: '2026 울산인권마라톤',
+    date: '2026-11-01',
+    month: '11월',
+    location: '울산 태화강 둔치',
+    region: '울산',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    description: '태화강변 코스를 달리는 울산 대표 시민 마라톤.',
+  },
+  {
+    id: 'sonkeechung-peace-marathon-2026',
+    name: '2026 손기정평화마라톤',
+    date: '2026-11-15',
+    month: '11월',
+    location: '경기 고양종합운동장',
+    region: '경기',
+    distances: ['풀코스', '하프', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://www.sonkeechungrun.com',
+    description:
+      '약 2만 명 규모 고양 출발 제2자유로 코스. 11월 둘째~셋째 일요일 개최 패턴(2025년 11/16) 기준 추정 일정 — 공식 발표 시 확정.',
+  },
+  {
+    id: 'sangju-gotgam-marathon-2026',
+    name: '2026 상주 곶감 마라톤',
+    date: '2026-11-15',
+    month: '11월',
+    location: '경북 상주시민운동장',
+    region: '경북',
+    distances: ['풀코스', '하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'http://www.sangjugotgommarathon.com',
+    description: '상주 곶감 축제와 연계된 가을 풀코스 마라톤. 접수 5/6~10/15.',
+  },
+];
