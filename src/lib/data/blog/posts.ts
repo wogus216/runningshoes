@@ -2,6 +2,122 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'li-ning-red-hare-9-ultra-truth-2026',
+    slug: 'li-ning-red-hare-9-ultra-truth-2026',
+    title: '화제의 "중국 카본화" 정체 — 라이닝 레드헤어 9 울트라는 카본이 아닙니다 | 10만 원대 가성비 슈퍼트레이너의 진실',
+    description: '러닝 커뮤니티가 "이 가격에 카본?"으로 들썩이는 라이닝(Li-Ning) 레드헤어 9 울트라. 하지만 해외 실측 리뷰를 종합하면 이 신발은 카본 레이싱화가 아니라 유리섬유 플레이트를 단 맥스쿠션 슈퍼트레이너입니다. 슈퍼블라스트·메가블라스트 절반 가격이라는 가성비의 실체, "적토끼"가 아닌 "적토마"인 이유, 발볼 좁은 한국 러너가 사기 전 꼭 알아야 할 3가지를 데이터로 정리했습니다.',
+    thumbnail: '/images/blog/li-ning-red-hare-9-ultra-truth-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-06',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['라이닝', '레드헤어 9 울트라', '적토마', 'Li-Ning', '중국 러닝화', '슈퍼트레이너', '가성비 러닝화', 'PEBA', '카본화', '슈퍼블라스트'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>커뮤니티가 "이 가격에 카본?"으로 띄우지만, <strong>레드헤어 9 울트라는 카본 플레이트가 아니라 유리섬유(글라스파이버) 플레이트</strong>를 단 <strong>맥스쿠션 슈퍼트레이너</strong>입니다 — 레이싱화가 아닙니다</li>
+    <li>진짜 매력은 <strong>PEBA 3중 미드솔 + 46mm급 스택을 10만 원대</strong>에 담은 가성비 — 아식스 메가블라스트(30만)·슈퍼블라스트(26만)의 <strong>절반 가격</strong>입니다</li>
+    <li>단, <strong>발볼이 좁고(와이드 옵션 없음)</strong> 한국 정식 출시·랩 검증이 아직 없어, <strong>발볼 넓은 러너와 안정화가 필요한 러너에겐 비추천</strong>입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 이 신발이 화제일까</p>
+    <p>요즘 러닝 커뮤니티에서 가장 많이 언급되는 신발 중 하나가 중국 브랜드 <strong>라이닝(Li-Ning)의 레드헤어 9 울트라</strong>입니다. "PEBA 폼에 글라스파이버 플레이트, 46mm 스택을 갖추고도 <strong>10만 원대</strong>"라는 스펙표가 돌면서 "이 가격에 카본?", "가성비 슈퍼트레이너"라는 반응이 쏟아지고 있죠. 그런데 정작 <strong>이 신발의 정체가 잘못 알려진 부분</strong>이 있습니다. 해외 실측 리뷰(Road Trail Run·WeeViews 등)와 스펙을 교차 검증해 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>먼저, 이름부터 — '적토끼'가 아니라 '적토마'</h2>
+<p>국내에선 흔히 <strong>"적토끼 9 울트라"</strong>로 불립니다. 하지만 "Red Hare(赤兔)"는 <strong>적토마</strong> — 삼국지 여포·관우가 탔던 그 명마를 뜻합니다. 라이닝은 이 적토마 라인을 데일리·트레이닝용으로, 별도의 <strong>비전(飞电, Feidian)</strong> 라인을 풀카본 레이싱 전용으로 운영합니다. 즉 <strong>이름 단계에서 이미 "이건 레이싱 카본화가 아니다"</strong>라는 신호가 들어 있는 셈입니다.</p>
+
+<h2>카본화? 아닙니다 — 플레이트의 정체</h2>
+<p>가장 큰 오해가 여기 있습니다. 레드헤어 9 울트라에 들어간 건 <strong>탄소섬유 풀카본 플레이트가 아니라 'Wing Fiber'라 부르는 유리섬유(글라스파이버) 미드풋 플레이트</strong>입니다. 역할도 다릅니다.</p>
+<ul>
+  <li><strong>카본 레이싱화의 플레이트</strong>(<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>·<a href="/shoes/asics-metaspeed-ray">메타스피드</a> 등): 발 전체를 가로지르며 <strong>추진력(롤링)</strong>을 만드는 게 목적</li>
+  <li><strong>레드헤어 9 울트라의 유리섬유 플레이트</strong>: 미드풋에만 들어가 <strong>비틀림(토션)을 잡아주는 안정 보조</strong>가 목적 — 해외 리뷰에선 "달릴 때 플레이트 반발이 거의 느껴지지 않는다"고 평가합니다</li>
+</ul>
+<p>일부 판매 페이지가 "CARBON-FIBER PLATE"로 표기하기도 하지만, 복수의 실측 해부 리뷰는 유리섬유로 일치합니다. <strong>카본화의 톡톡 튀는 추진감을 기대하고 사면 실망</strong>할 수 있다는 뜻입니다. 광고 문구와 실제 데이터가 어떻게 다른지는 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 따로 정리해 두었습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">"95% 에너지 리턴"도 제조사 주장입니다</p>
+    <p>라이닝은 미드솔의 Super Boom 캡슐이 "95% 에너지 리턴"을 낸다고 홍보합니다. 하지만 이는 <strong>제조사 자체 측정치</strong>로, RunRepeat 같은 독립 랩이 같은 기준으로 잰 수치가 아직 없습니다. 신상 + 비주류 브랜드라 <strong>객관 랩 데이터가 부재</strong>한 상태이니, 마케팅 수치는 참고만 하세요.</p>
+  </div>
+</div>
+
+<h2>그럼 정체는? 10만 원대 맥스쿠션 슈퍼트레이너</h2>
+<p>오해를 걷어내면 정체가 분명해집니다. 레드헤어 9 울트라는 <strong>PEBA 기반 3중 미드솔 + 43~46mm급 스택</strong>의 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 데일리 조깅부터 LSD·마라톤 훈련까지 푹신하게 받쳐주는 성격으로, 경쟁 상대는 카본 레이싱화가 아니라 <strong>아식스 슈퍼블라스트·메가블라스트, 나이키 보메로 계열</strong>입니다. 그리고 바로 거기서 가성비가 빛납니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>포지션</th><th>플레이트</th><th>한국 가격(정가/병행)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>라이닝 레드헤어 9 울트라</strong></td><td>맥스쿠션 슈퍼트레이너</td><td>유리섬유(토션)</td><td><strong>13~17만 원대</strong> (병행·구매대행)</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></td><td>슈퍼트레이너/레이싱</td><td>없음(트윈 폼)</td><td>259,000원</td></tr>
+    <tr><td><a href="/shoes/asics-megablast">아식스 메가블라스트</a></td><td>맥스쿠션 트레이너</td><td>없음</td><td>299,000원</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-premium">나이키 보메로 프리미엄</a></td><td>맥스쿠션 데일리</td><td>없음</td><td>289,000원</td></tr>
+  </tbody>
+</table>
+<p>같은 "푹신한 PEBA 맥스쿠션" 카테고리에서 <strong>국내 메이저 브랜드가 26~30만 원</strong>을 받는 자리에, 라이닝이 <strong>그 절반 값</strong>으로 비슷한 스펙표를 들고 들어온 게 화제의 본질입니다. 알리익스프레스 직구로는 10~13만 원까지도 내려갑니다.</p>
+
+<h2>한국 러너가 사기 전 꼭 알아야 할 3가지</h2>
+<p>가성비는 분명하지만, 한국 러너 관점에서 짚어야 할 단점도 또렷합니다.</p>
+<ol>
+  <li><strong>발볼이 좁습니다.</strong> 해외 리뷰들이 입을 모아 "동급 중국 슈퍼트레이너 중 가장 좁은 편"이라 평가합니다. <strong>와이드 옵션도 없어</strong>, 발볼 넓은 한국 러너에겐 가장 큰 걸림돌입니다. (내 발볼이 어느 정도인지 모른다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 가이드</a>를 먼저 보세요.)</li>
+  <li><strong>측방 안정성이 약합니다.</strong> 높은 스택 + 부드러운 폼 조합이라 발이 안쪽/바깥쪽으로 흔들리기 쉽습니다. <strong>오버프로네이션이 있거나 안정화가 필요한 러너</strong>에겐 맞지 않습니다.</li>
+  <li><strong>국내 AS·정식 유통이 없습니다.</strong> KREAM·POIZON·알리익스프레스·타오바오 등 <strong>병행수입·구매대행</strong>에만 의존하고, 사이즈 교환이나 하자 대응이 까다롭습니다. 발볼이 좁은 만큼 <strong>사이즈는 평소보다 여유 있게</strong> 보는 후기가 많습니다.</li>
+</ol>
+
+<h2>그래서 살까 말까 — 러너 타입별 정리</h2>
+<div class="callout info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">사도 좋은 사람</p>
+    <ul>
+      <li>발볼이 <strong>보통~좁은 편</strong>이고, 푹신한 쿠션의 <strong>LSD·데일리 훈련화</strong>를 저렴하게 원하는 러너</li>
+      <li>이미 슈퍼블라스트·메가블라스트 같은 슈퍼트레이너를 써봤고 <strong>비슷한 감각을 절반 값</strong>에 추가하고 싶은 러너</li>
+      <li>중국 러닝 브랜드의 성장세를 직접 체험해보고 싶은 얼리어답터</li>
+    </ul>
+  </div>
+</div>
+<div class="callout warning">
+  <span class="callout-icon">🚫</span>
+  <div class="callout-body">
+    <p class="callout-title">사면 후회할 수 있는 사람</p>
+    <ul>
+      <li><strong>발볼 넓은 한국 러너</strong> — 와이드가 없습니다. <a href="/shoes/asics-megablast">메가블라스트</a>나 <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>처럼 정식 출시 + 폭 여유 있는 대안이 안전합니다</li>
+      <li><strong>카본화의 추진력</strong>을 기대하는 러너 — 이건 레이싱화가 아닙니다. 카본을 원하면 <a href="/best/racing">카본 레이싱화</a> 쪽을 보세요</li>
+      <li><strong>안정화가 필요한 오버프로네이터</strong>, 그리고 AS·교환 리스크를 감수하기 싫은 러너</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 진짜 카본 플레이트가 들어 있나요?</h3>
+<p>아닙니다. 미드풋에 들어간 건 <strong>유리섬유(글라스파이버) 토션 플레이트</strong>로, 추진보다 비틀림을 잡는 안정 보조용입니다. 카본 레이싱화의 롤링 추진감과는 다릅니다.</p>
+
+<h3>Q. 마라톤 대회용으로 신어도 되나요?</h3>
+<p>레이스 기록용보다는 <strong>훈련·LSD용</strong>에 적합합니다. 대회에서 기록을 노린다면 <a href="/best/racing">카본 레이싱화</a>가 맞고, 풀코스를 "완주 목표로 편하게"라면 이 신발의 푹신함도 선택지가 됩니다.</p>
+
+<h3>Q. 발볼 넓은데 사이즈를 키우면 되나요?</h3>
+<p>한 치수 키우면 길이는 늘지만 <strong>발볼(폭)은 비례해서 넓어지지 않아</strong> 근본 해결이 안 됩니다. 발볼이 넓다면 처음부터 와이드 옵션이 있는 모델을 권합니다.</p>
+
+<h3>Q. 10만 원대인데 품질은 믿을 만한가요?</h3>
+<p>아웃솔 내구성과 미드솔 반발은 해외 후기에서 대체로 긍정적입니다. 다만 <strong>독립 랩 검증이 아직 없고</strong> 폼 통합도(반발이 부드러운 폼에 흡수돼 어색하다는 지적)에 대한 호불호가 있어, "메이저 브랜드만큼 검증된 신발"로 보긴 이릅니다.</p>
+
+<h2>마무리</h2>
+<p>레드헤어 9 울트라의 진짜 이야기는 "10만 원대 카본화"가 아니라 <strong>"10만 원대 PEBA 맥스쿠션 슈퍼트레이너"</strong>입니다. 카본화로 오해하고 사면 실망하지만, <strong>슈퍼블라스트·메가블라스트의 절반 값짜리 푹신한 훈련화</strong>로 보면 충분히 매력적입니다. 핵심은 둘뿐입니다 — <strong>내 발볼이 좁은 편인가</strong>, 그리고 <strong>병행수입·AS 리스크를 감수할 수 있는가</strong>. 두 가지에 "예"라면 올해 가장 재미있는 가성비 선택이 될 수 있습니다.</p>
+<p>정식 출시된 슈퍼트레이너로 안전하게 비교하고 싶다면 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a>와 <a href="/best/max-cushion">쿠션화 추천</a>을 함께 보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 라이닝 공식 자료와 Road Trail Run·WeeViews 등 해외 실측 리뷰, 국내 커뮤니티 후기(@runninglife_korea, 2026-06-01)를 교차 정리한 내용입니다. 라이닝 레드헤어 9 울트라는 한국 정식 출시 전이며 독립 랩(RunRepeat 등) 측정치가 아직 없어, 일부 수치는 해외 실측·제조사 발표 기준입니다. 가격은 병행수입·구매대행 시세로 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: '2026-disney-run-incheon-virtual-run',
     slug: '2026-disney-run-incheon-virtual-run',
     title: '디즈니런 2026 인천 + 디즈니 버추얼런 최초 공개 | 6/11 티켓 오픈 — 토이스토리·모아나·주토피아 3색 버추얼런부터 10/24 인천까지',
