@@ -1526,7 +1526,15 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<p class="caption">일정·종목은 주최 측 공지 기준이며 일부는 미확정·예상입니다. 신청 전 각 대회 공식 페이지에서 최종 확인하세요. 운탄고도 정규 대회와 별개로 Nike ACG 협업 'ACG 나이트 트레일'(추첨제 야간 special session)도 운영됐습니다.</p>
+<p class="caption">일정·종목은 주최 측 공지 기준이며 일부는 미확정·예상입니다. 신청 전 각 대회 공식 페이지에서 최종 확인하세요.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🌝</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 운탄고도 'ACG 나이트 트레일' — 10주년 첫 야간 세션</p>
+    <p>운탄고도 정규 스카이레이스(6/13~14)와 별개로, 2026년엔 <strong>10주년 기념 사상 첫 야간 트레일</strong>인 'ACG 나이트 트레일'(나이키 ACG 협업)이 <strong>6월 12일(금) 하이원리조트</strong>에서 열렸습니다. <strong>16km·누적고도 +710m, 200명 한정 스페셜 세션</strong>으로, 해발 1,330m 정선 하늘길을 밤에 달리는 색다른 경험이죠. 정규 대회와 달리 <strong>추첨제</strong>로 운영돼 신청 방식이 다릅니다. 야간 트레일은 헤드램프·보온 레이어 등 장비 요구가 더 까다로우니, 아래 <strong>'필수 장비'</strong> 항목을 특히 꼼꼼히 챙기세요.</p>
+  </div>
+</div>
 
 <h2>난이도별 — 어디서 시작할까</h2>
 
