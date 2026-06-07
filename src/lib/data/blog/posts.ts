@@ -2,6 +2,95 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'seoul-7979-running-crew-free-2026',
+    slug: 'seoul-7979-running-crew-free-2026',
+    title: '서울시가 매주 목요일 밤 \'무료\'로 달린다 — 7979 서울 러닝크루 | 기록칩·코칭·간식까지 공짜, 레벨별 코스·신청법 정리',
+    description: '러닝크루에서 대회용 기록칩을 쓴다고? 서울시 미래한강본부가 운영하는 \'7979 서울 러닝크루\'는 매주 목요일 밤 광화문·반포·여의도에서 기록칩 측정, 전문 코칭, 인생샷, 물·간식까지 전부 무료로 제공합니다. 런린이부터 프로까지, 기록칩이 뭔지·레벨별 코스·선착순 신청법을 한 번에 정리했습니다.',
+    thumbnail: '/images/blog/seoul-7979-running-crew-free-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['7979 서울 러닝크루', '무료 러닝크루', '서울 러닝', '기록칩', '러닝크루', '런린이', '한강 러닝', '서울시', '목요일 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>서울시(미래한강본부)가 운영하는 무료 러닝크루 '7979'</strong>가 매주 목요일 밤 광화문·반포·여의도에서 열립니다 — 4~10월 시즌제</li>
+    <li>대회에서나 쓰는 <strong>기록칩(타이밍 칩)으로 정확한 기록 측정</strong>은 물론 전문 코칭·인생샷·물·간식까지 <strong>전부 무료</strong>, 레벨별 코스로 런린이부터 프로까지 환영</li>
+    <li>신청은 <strong>서울시 공공서비스예약 + 동마클럽</strong>에서 매주 월~수 <strong>선착순</strong>(회차당 약 60명), 현장 접수도 가능합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"러닝크루에서 기록칩을 쓴다고?"</p>
+    <p>한 러닝 채널(@dongmaclub)이 소개해 화제가 된 <strong>'7979 서울 러닝크루'</strong>는 서울시 미래한강본부가 운영하는 <strong>공식 무료 프로그램</strong>입니다. 보통 마라톤 대회에서나 차는 <strong>기록칩</strong>을 평소 훈련에 제공한다는 점이 눈길을 끌죠. 퇴근 후 목요일 밤, 도심에서 함께 달리며 내 기록까지 정확히 측정받을 수 있는 이 프로그램을 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>7979 서울 러닝크루가 뭔데?</h2>
+<p><strong>서울시 미래한강본부가 주관</strong>하는 시민 참여형 무료 러닝 프로그램입니다. 매년 <strong>4월부터 10월까지</strong> 시즌제로 운영되고, <strong>매주 목요일 저녁 7시~9시</strong>에 서울 도심 3개 권역에서 동시에 열립니다. 이제 막 시작한 런린이부터 대회를 앞둔 러너까지 누구나 참여할 수 있고, <strong>"바쁠 땐 쉬고, 여유로울 땐 어느 권역이든" 100% 자율 참여</strong>가 특징입니다.</p>
+<p>무엇보다 <strong>이 모든 게 무료</strong>입니다.</p>
+<ul>
+  <li>✔️ <strong>기록칩 측정</strong> — 내 성장을 숫자로 확인하는 정확한 기록</li>
+  <li>✔️ <strong>전문 러닝 커리큘럼</strong> — 페이스 그룹·코칭</li>
+  <li>✔️ <strong>인생샷</strong> — 세션 다음 날 배달되는 고퀄 사진</li>
+  <li>✔️ <strong>물·간식</strong> 매주 제공</li>
+</ul>
+
+<h2>핵심 — '기록칩'이 뭐길래?</h2>
+<p>러닝을 막 시작했다면 생소할 수 있는데, <strong>기록칩(타이밍 칩)</strong>은 배번이나 신발에 부착하는 작은 <strong>RFID 칩</strong>입니다. 출발·반환·결승 지점의 <strong>매트를 통과할 때 자동으로 시간이 기록</strong>돼, 손목시계나 폰 앱보다 정확한 <strong>'공식 기록'</strong>을 남깁니다.</p>
+<p>대회에서만 경험하던 이 측정을 <strong>매주 훈련에서 받는다</strong>는 게 7979의 강점입니다. 같은 코스를 주마다 달리며 <strong>내 페이스가 실제로 빨라지는지 데이터로 추적</strong>할 수 있죠. 막연한 "오늘 좀 빨랐나?"가 아니라 <strong>객관적 숫자로 성장을 확인</strong>하는 경험은 러닝 동기 부여에 큰 힘이 됩니다. 기록을 더 줄이고 싶다면 호흡 리듬부터 잡는 게 기본인데, 이건 <a href="/blog/running-breathing-guide-korea">러닝 호흡법 가이드</a>에서 정리했습니다.</p>
+
+<h2>레벨별 코스 — 내 수준에 맞춰</h2>
+<p>3개 권역이 난이도별로 나뉘어, 자기 수준에 맞는 곳을 고르면 됩니다.</p>
+<table>
+  <thead>
+    <tr><th>레벨</th><th>권역</th><th>코스 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>초급 (런린이)</strong></td><td>광화문</td><td>도심 평탄 코스, 입문자 친화</td></tr>
+    <tr><td><strong>중급</strong></td><td>반포 한강공원</td><td>한강변 러닝</td></tr>
+    <tr><td><strong>고급</strong></td><td>여의도공원</td><td>루프 코스, 페이스 훈련</td></tr>
+  </tbody>
+</table>
+<p>이제 막 달리기를 시작했다면 광화문(초급)부터, 하프 이상을 준비한다면 여의도(고급)에서 페이스 훈련을 노려볼 수 있습니다. 입문 단계라면 신발부터 점검하는 게 먼저인데 → <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법</a>.</p>
+
+<h2>신청 방법</h2>
+<ul>
+  <li><strong>접수처</strong>: <strong>서울시 공공서비스예약</strong>(yeyak.seoul.go.kr) 또는 <strong>동마클럽</strong></li>
+  <li><strong>접수 시기</strong>: 매주 <strong>월~수 선착순</strong> (세션은 목요일)</li>
+  <li><strong>정원</strong>: 회차당 약 <strong>60명</strong> — 인기 권역은 빠르게 마감</li>
+  <li><strong>현장 접수</strong>: 잔여 자리가 있으면 현장에서도 참여 가능</li>
+</ul>
+<div class="callout warning">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">참여 전 체크</p>
+    <ul>
+      <li>저녁 7시 출발이라 <strong>퇴근 후 바로 가기 좋지만</strong>, 여름철엔 <strong>수분·체온 관리</strong>가 중요합니다 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></li>
+      <li>정확한 운영 일정·권역은 시즌·주차별로 달라질 수 있으니 <strong>신청 전 서울시 공공서비스예약 공지를 확인</strong>하세요</li>
+    </ul>
+  </div>
+</div>
+
+<h2>이런 사람에게 딱</h2>
+<ul>
+  <li><strong>혼자 달리기 지루하거나 작심삼일</strong>인 런린이 — '느슨한 연대'로 꾸준함 만들기</li>
+  <li><strong>내 기록을 정확히 알고 싶은</strong> 러너 — 매주 기록칩 측정으로 성장 추적</li>
+  <li><strong>비용 부담 없이</strong> 전문 코칭을 받아보고 싶은 사람</li>
+  <li>대회를 앞두고 <strong>같은 코스 반복 훈련</strong>이 필요한 러너</li>
+</ul>
+
+<h2>마무리</h2>
+<p>러닝은 장비도, 크루 회비도 부담이 될 수 있는데 <strong>7979는 서울시가 그 문턱을 낮춰주는 프로그램</strong>입니다. 기록칩으로 내 성장을 눈으로 확인하고, 같은 목표를 가진 사람들과 도심을 달리는 목요일 밤 — 러닝을 막 시작했거나 다시 불을 붙이고 싶다면 한 번쯤 나가볼 만합니다. 서울의 다른 러닝 코스가 궁금하다면 <a href="/blog/seoul-running-course-shower-guide-2026">남산 무료 샤워장부터 10대 핵심 코스</a>를, 대회로 목표를 잡고 싶다면 <a href="/marathon">마라톤 캘린더</a>를 함께 보세요. 🍀</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 서울시 공공서비스예약·미래한강본부 안내와 언론 보도, @dongmaclub(2026-06-06)를 종합한 정보입니다. 운영 일정·권역·정원은 시즌과 주차에 따라 변동될 수 있으니 신청 전 서울시 공식 채널을 확인하세요.</p>
+`,
+  },
+  {
     id: 'mind-vs-im-bank-marathon-2026-seoul',
     slug: 'mind-vs-im-bank-marathon-2026-seoul',
     title: '내일 서울, 같은 시각 두 하프 — 마인드 마라톤 vs iM뱅크 코리아오픈마라톤 | 서울광장 기부런 vs 여의도 한강 코스 한눈 비교',
