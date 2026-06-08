@@ -2,6 +2,120 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudmonster-3-review-2026',
+    slug: 'on-cloudmonster-3-review-2026',
+    title: '회복런엔 이만한 게 없다 — On 클라우드몬스터 3 리뷰 | 넓어진 핏·강해진 록커의 데일리 쿠션화, 하이퍼와 뭐가 다른가',
+    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 3세대는 핏이 넓어져 한국 러너에게 한결 편해졌죠. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudmonster-3-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['온', 'On', '클라우드몬스터 3', '데일리 쿠션화', '회복런', 'easy run', 'Helion', '쿠션화', '입문 러닝화', 'CloudTec'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드몬스터 3는 푹신한 <strong>Helion 단일 폼 + 강한 록커</strong>로 "굴러가는 느낌"을 살린 <strong>데일리 쿠션화</strong> — 빠른 훈련보다 <strong>easy run·회복런·입문</strong>에 맞습니다</li>
+    <li>3세대의 핵심 변화는 <strong>넓어진 핏</strong> — 토박스가 여유로워져 발볼 있는 한국 러너에게 한결 편해졌습니다</li>
+    <li>단, <strong>약 295g으로 무거운 편</strong>이고 어퍼 내구성·와이드 부재가 약점. 빠른 훈련을 원하면 슈퍼트레이너인 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>가 맞습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☁️</span>
+  <div class="callout-body">
+    <p class="callout-title">'몬스터'라는 이름값</p>
+    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지하면서 <strong>핏을 넓혀</strong> 더 많은 발에 맞게 다듬었습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
+  </div>
+</div>
+
+<h2>클라우드몬스터 3, 어떤 신발인가</h2>
+<ul>
+  <li><strong>Helion 단일 폼</strong> — 부드럽고 푹신한 EVA·올레핀 블렌드. 하이퍼의 이중 밀도와 달리 단순하지만 데일리에 충분한 쿠션</li>
+  <li><strong>강한 록커</strong> — 앞으로 굴러가는 전환이 매끄러워 일정 페이스 유지가 쉽습니다</li>
+  <li><strong>스택 힐 약 38mm / 전족 32mm, 드롭 6mm</strong> — 하이퍼(45/39)보다 낮아 데일리에 안정적</li>
+</ul>
+<p>쿠션감은 충분하지만 <strong>반발력은 평이</strong>합니다(에너지 리턴 약 57~59%). 빠르게 치고 나가는 신발이 아니라, <strong>충격을 흡수하며 편하게 굴러가는</strong> 성격이죠. 무릎이 약하거나 러닝을 막 시작한 러너에게 그 푹신함이 특히 반갑습니다.</p>
+
+<h2>어떤 러닝에 맞나</h2>
+<ul>
+  <li><strong>회복런·easy run</strong> — 힘든 훈련 다음 날, 다리를 풀어주는 느린 러닝에 최적</li>
+  <li><strong>러닝 입문</strong> — 푹신한 쿠션이 초반 충격 부담을 줄여 입문자 친화적입니다 (첫 신발 고민이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고)</li>
+  <li><strong>장시간 가벼운 조깅</strong> — 편안함 위주의 데일리 마일리지 쌓기</li>
+</ul>
+
+<h2>하이퍼·라이트스프레이와 뭐가 다른가</h2>
+<p>이름이 비슷한 형제 모델과 헷갈리기 쉬우니 정리합니다. 핵심은 <strong>"데일리냐, 슈퍼트레이너냐"</strong>입니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>폼</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>클라우드몬스터 3 (이 글)</strong></td><td>229,000원</td><td>Helion 단일</td><td>데일리·회복런</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a></td><td>259,000원</td><td>Helion HF 이중</td><td>장거리·템포 슈퍼트레이너</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></td><td>319,000원</td><td>Helion HF 이중</td><td>초경량 슈퍼트레이너</td></tr>
+  </tbody>
+</table>
+<p>일반 3는 <strong>단일 폼·낮은 스택의 데일리화</strong>, 하이퍼 두 모델은 <strong>이중 밀도·높은 스택의 슈퍼트레이너</strong>입니다. "빠른 훈련도 하고 싶다"면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로 올라가는 게 맞고, "편하게 데일리만"이면 일반 3로 충분합니다. 전작과의 차이가 궁금하면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>를 보세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">사기 전 체크 — 단점도 분명합니다</p>
+    <ul>
+      <li><strong>무겁습니다</strong> — 약 295g으로 동급 데일리화 중 무거운 편. 빠른 페이스엔 둔하게 느껴집니다</li>
+      <li><strong>어퍼 내구성 주의</strong> — 랩 테스트에서 토박스 내구성이 낮게 평가됐습니다. 거친 사용엔 마모가 빠를 수 있어요</li>
+      <li><strong>와이드 옵션이 없습니다</strong> — 3세대로 핏이 넓어졌지만 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
+      <li><strong>가격</strong> — 22만 9천원은 데일리화로는 프리미엄. 가성비 데일리라면 다른 선택지도 많습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>경쟁자 — 데일리 쿠션화 비교</h2>
+<p>같은 "푹신한 데일리" 자리에는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/nike-vomero-18">나이키 보메로 18</a> 등 강력한 경쟁자가 많습니다. 클라우드몬스터 3의 차별점은 <strong>온 특유의 강한 록커와 디자인</strong>이고, 클리프턴은 가벼움, 보메로는 부드러운 쿠션이 강점입니다. 푹신함과 굴러가는 감각, 브랜드 선호로 갈리는 선택이죠.</p>
+
+<h2>살까, 말까</h2>
+<div class="callout info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">잘 맞는 사람</p>
+    <ul>
+      <li><strong>회복런·easy run용</strong> 푹신한 데일리화를 찾는 러너</li>
+      <li>러닝을 막 시작해 <strong>충격 부담이 적은</strong> 신발이 필요한 입문자</li>
+      <li>온의 <strong>록커감과 디자인</strong>을 좋아하는 러너</li>
+    </ul>
+  </div>
+</div>
+<div class="callout warning">
+  <span class="callout-icon">🚫</span>
+  <div class="callout-body">
+    <p class="callout-title">맞지 않는 사람</p>
+    <ul>
+      <li><strong>빠른 훈련·템포</strong>를 원하는 러너 → <a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a>로</li>
+      <li><strong>가벼운 신발</strong>을 원하는 러너 (약 295g은 무거운 편)</li>
+      <li><strong>발볼 매우 넓은</strong> 러너 (와이드 없음)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 클라우드몬스터 3로 마라톤 뛰어도 되나요?</h3>
+<p>완주 목표의 편한 신발로는 가능합니다. 다만 무게가 있어 <strong>기록</strong>을 노린다면 슈퍼트레이너(<a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a>)나 카본화가 낫습니다. 일반 3는 <strong>훈련·회복</strong>에 더 어울립니다.</p>
+
+<h3>Q. 입문자가 첫 신발로 사도 되나요?</h3>
+<p>푹신한 쿠션이라 입문에 무난합니다. 다만 22만 9천원이 부담이라면 더 합리적인 입문화도 많으니 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 함께 보세요.</p>
+
+<h3>Q. 하이퍼랑 가격 차이가 3만 원인데, 그냥 하이퍼 살까요?</h3>
+<p>용도가 다릅니다. <strong>데일리·회복</strong>이 목적이면 일반 3, <strong>빠른 장거리 훈련</strong>까지 원하면 하이퍼입니다. 단순 상위호환이 아니라 성격이 다른 신발이에요.</p>
+
+<h2>마무리</h2>
+<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 3세대로 핏까지 넓어져 한국 러너에게 더 편해졌고요. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat 랩 데이터, 전문 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'on-cloudmonster-3-hyper-review-2026',
     slug: 'on-cloudmonster-3-hyper-review-2026',
     title: '카본 없이 슈퍼블라스트와 맞붙는다 — On 클라우드몬스터 3 하이퍼 리뷰 | 25만 9천원 무플레이트 슈퍼트레이너의 균형점',
