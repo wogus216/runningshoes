@@ -2,6 +2,98 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-mbn-seoul-marathon-registration',
+    slug: '2026-mbn-seoul-marathon-registration',
+    title: '광화문에서 잠실까지 일직선 21km — 2026 MBN 서울마라톤 접수 임박 | 6/25 하프·6/26 10K 본접수, 코스·참가비 총정리',
+    description: 'MBN(매일방송) 주최 서울 도심 마라톤이 11월 15일(일) 돌아옵니다. 광화문광장에서 출발해 숭례문·동대문·건대를 지나 잠실종합운동장까지 달리는 일직선 하프 코스가 특징이죠. 하프 본접수 6/25, 10K 본접수 6/26으로 임박했습니다. 종목·코스·참가비·완주기념품·교통통제까지 한 번에 정리했습니다.',
+    thumbnail: '/images/blog/2026-mbn-seoul-marathon-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['MBN 서울마라톤', '서울 마라톤', '하프 마라톤', '광화문 마라톤', '잠실 마라톤', '11월 마라톤', '러닝 대회', '마라톤 접수', '가을 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 MBN 서울마라톤이 11월 15일(일) 개최</strong> 예정 — 광화문광장에서 잠실종합운동장까지 달리는 <strong>일직선 하프 코스</strong>가 핵심입니다(풀코스 없음, 하프+10K)</li>
+    <li><strong>접수가 임박</strong>했습니다 — 하프 본접수 <strong>6/25(목) 14시</strong>, 10K 본접수 <strong>6/26(금) 14시</strong>. 인기 대회라 빠른 마감 가능성</li>
+    <li>2만 5천 명 규모의 <strong>MBN·매일경제 주최 도심 대회</strong>로 TV 생중계까지 — 서울 랜드마크를 달리며 완주 메달·티셔츠를 받습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏙️</span>
+  <div class="callout-body">
+    <p class="callout-title">광화문에서 잠실까지, 서울을 가로지르다</p>
+    <p>MBN(매일방송)이 주최하는 <strong>서울 도심 마라톤</strong>이 올가을에도 돌아옵니다. 가장 큰 매력은 <strong>광화문광장에서 출발해 잠실종합운동장까지 서울 도심을 일직선으로 가로지르는 하프 코스</strong>죠. 숭례문·명동·동대문·건대입구·잠실대교를 차례로 지나는, 순환 없는 포인트-투-포인트 코스입니다. 접수가 6월 말로 임박했으니 일정을 먼저 정리해 둡니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+<table>
+  <tbody>
+    <tr><td><strong>대회일</strong></td><td>2026년 11월 15일(일) 추정 ※</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프(21.0975km) · 10K (풀코스 없음)</td></tr>
+    <tr><td><strong>출발/도착</strong></td><td>하프: 광화문광장 → 잠실종합운동장 / 10K: 잠실 일대 순환</td></tr>
+    <tr><td><strong>규모</strong></td><td>약 2만 5천 명 (2025년 기준)</td></tr>
+    <tr><td><strong>주최</strong></td><td>MBN(매일방송)·매일경제 — TV 생중계</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 11월 15일은 KorMarathon 등록 정보 기준 추정일입니다(2025년은 11/16, 셋째 주 일요일 패턴). 공식 확정 발표 시 변경될 수 있습니다.</p>
+
+<h2>접수 일정 — 임박했습니다</h2>
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">놓치면 안 될 날짜</p>
+    <ul>
+      <li><strong>우선신청</strong>(선셋마라톤·슈퍼히어로런 참가자, 매경plus 구독자 등 한정): <strong>6/22(월)~23(화)</strong></li>
+      <li><strong>하프 본접수</strong>: <strong>6/25(목) 14:00</strong></li>
+      <li><strong>10K 본접수</strong>: <strong>6/26(금) 14:00</strong></li>
+    </ul>
+    <p>접수는 공식 홈페이지(mbn-seoulmarathon.com)에서 진행됩니다. 2만 5천 명 규모 인기 대회라 <strong>오픈 직후 빠르게 마감</strong>될 수 있으니, 원하는 종목의 오픈 시각에 미리 대기하세요.</p>
+  </div>
+</div>
+
+<h2>코스 — 서울 랜드마크를 달린다</h2>
+<p><strong>하프</strong>는 광화문광장을 출발해 <strong>시청 → 숭례문 → 명동 → 충무로 → 흥인지문(동대문) → 신설동 → 장한평 → 건대입구 → 자양사거리 → 잠실대교 → 잠실종합운동장</strong>으로 이어집니다. 서울 도심의 주요 랜드마크를 한 번에 통과하는 <strong>일직선 코스</strong>라, 기록보다 "서울을 달리는 경험" 자체가 매력입니다.</p>
+<p><strong>10K</strong>는 잠실종합운동장에서 출발해 잠실역·석촌·가락시장역을 도는 <strong>강남권 순환 코스</strong>로, 초보 러너에게 친화적입니다.</p>
+
+<h2>참가비·완주 기념품</h2>
+<ul>
+  <li><strong>참가비</strong>(2025년 기준): 하프 80,000원 / 10K 60,000원 — <em>2026년 금액은 공식 발표 시 확정</em></li>
+  <li><strong>완주 기념품</strong>: 완주 메달 + 대회 기념 티셔츠 + 계측칩 배번 + 대회 보험</li>
+  <li><strong>시상</strong>: 하프·10K 남녀 1~3위 상금(최대 50만 원)</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">🚧</span>
+  <div class="callout-body">
+    <p class="callout-title">참가 전 체크 — 교통통제 & 미확정 정보</p>
+    <ul>
+      <li><strong>교통통제</strong>: 2025년 기준 오전 5:00~11:35, 광화문~잠실 5구간 통제. 2026년 통제 계획은 대회 임박 시 공지됩니다 — 참가자·시민 모두 <strong>대중교통 권장</strong></li>
+      <li><strong>2026 참가비·코스</strong>는 공식 확정 발표 전이라, 위 수치는 2025년 기준 참고값입니다. 신청 전 <strong>공식 홈페이지를 반드시 확인</strong>하세요</li>
+    </ul>
+  </div>
+</div>
+
+<h2>다른 가을 서울 대회와 비교</h2>
+<p>11월 서울은 대회가 몰립니다. 본인 목표에 맞게 고르세요.</p>
+<ul>
+  <li><strong>MBN 서울마라톤(이 글)</strong> — 광화문→잠실 일직선 하프, 도심 랜드마크, TV 생중계</li>
+  <li>봄에 열린 <a href="/blog/mind-vs-im-bank-marathon-2026-seoul">마인드 vs iM뱅크 마라톤</a>처럼 같은 날 여러 대회가 겹칠 수 있으니 일정 확인 필수</li>
+  <li>풀코스 도전이라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>, 메달·기념품 중심이면 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>도 후보</li>
+</ul>
+<p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한 번에 확인할 수 있습니다.</p>
+
+<h2>마무리</h2>
+<p>MBN 서울마라톤은 <strong>"기록 경쟁"보다 "서울 도심을 달리는 경험"</strong>에 무게가 실린 대회입니다. 광화문에서 잠실까지 서울을 가로지르는 하프, 초보 친화적인 잠실 10K — 가을 첫 하프·10K에 도전하려는 러너에게 좋은 선택지죠. 핵심은 <strong>6/25(하프)·6/26(10K) 본접수</strong>를 놓치지 않는 것입니다. 신청 전 공식 홈페이지에서 2026년 확정 정보를 한 번 더 확인하세요. 🏃</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 MBN 서울마라톤 공식·KorMarathon 등록 정보와 2025년 대회 자료를 종합한 내용입니다. 2026년 개최일(11/15 추정)·참가비·코스는 공식 확정 발표 전이라 변동될 수 있으니, 신청 전 공식 홈페이지(mbn-seoulmarathon.com)를 반드시 확인하세요. (글감: @runninglife_korea, 2026-06-08)</p>
+`,
+  },
+  {
     id: 'on-cloudrunner-2-review-2026',
     slug: 'on-cloudrunner-2-review-2026',
     title: '단종됐지만 알아둘 가치 — On 클라우드러너 2 리뷰 | 가벼운 입문 안정화, 중고로 살까 vs 클라우드러너 3로 갈까',

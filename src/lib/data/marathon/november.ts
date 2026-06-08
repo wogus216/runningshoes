@@ -54,4 +54,18 @@ export const novemberEvents: MarathonEvent[] = [
     website: 'http://www.sangjugotgommarathon.com',
     description: '상주 곶감 축제와 연계된 가을 풀코스 마라톤. 접수 5/6~10/15.',
   },
+  {
+    id: 'mbn-seoul-marathon-2026',
+    name: '2026 MBN 서울마라톤',
+    date: '2026-11-15',
+    month: '11월',
+    location: '서울 광화문광장 → 잠실종합운동장',
+    region: '서울',
+    distances: ['하프', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://mbn-seoulmarathon.com',
+    description:
+      'MBN 주최 서울 도심 마라톤. 광화문→잠실 일직선 하프 코스(약 2.5만 명, TV 생중계). 하프 본접수 6/25·10K 6/26. 11/15은 추정일(공식 확정 전).',
+  },
 ];
