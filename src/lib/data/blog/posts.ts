@@ -2,6 +2,122 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudrunner-2-review-2026',
+    slug: 'on-cloudrunner-2-review-2026',
+    title: '단종됐지만 알아둘 가치 — On 클라우드러너 2 리뷰 | 가벼운 입문 안정화, 중고로 살까 vs 클라우드러너 3로 갈까',
+    description: '온(On)의 입문 안정화 클라우드러너 2. 5/5 힐 카운터로 과내전을 잡아주면서도 가볍고 통기성 좋은 데일리·워킹 겸용화입니다. 다만 한국 공식몰에서는 단종돼 후속작 클라우드러너 3로 대체됐죠. 단단한 승차감과 마일드한 안정성의 실체, 단종 상황에서 중고로 살지 CR3로 갈지, 카야노 대비 가성비까지 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudrunner-2-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['온', 'On', '클라우드러너 2', '안정화', '힐 카운터', '과내전', '입문 러닝화', '워킹 겸용', '단종', 'On 안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드러너 2는 <strong>5/5 힐 카운터로 과내전을 잡아주는 가벼운 입문 안정화</strong> — 275g 경량에 통기성·워킹 겸용이 강점입니다</li>
+    <li>단, <strong>한국 공식몰에서는 단종</strong>돼 후속작 <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>로 대체됐습니다(중고·병행·재고로만 구매 가능)</li>
+    <li>안정성은 "거의 중립에 가까운 마일드" 수준이고 반발은 약해, <strong>심한 과내전엔 부족</strong>합니다. 지금 새로 산다면 가벼운 CR2 중고 vs 안정성 보강된 신품 CR3를 저울질하세요</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">📦</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저 — 한국 공식 단종 상태입니다</p>
+    <p><a href="/shoes/on-cloudrunner-2">클라우드러너 2</a>는 2023년 출시된 On의 입문 안정화로, 현재 <strong>한국 공식몰에서는 판매가 종료</strong>됐습니다(후속작 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3</a>로 세대교체, 방수 버전만 잔존). 즉 신품 정가 구매는 어렵고 <strong>중고·병행수입·재고</strong>로만 접할 수 있죠. 그럼에도 여전히 신는 분이 많고 중고 매물도 흔해, "지금 사도 될지"를 판단할 수 있게 정리합니다.</p>
+  </div>
+</div>
+
+<h2>클라우드러너 2, 어떤 신발인가</h2>
+<p>핵심은 <strong>힐 카운터 안정화</strong>입니다. 외부 레일형 카운터 + 내부 스티프 카운터(강성 5/5)로 발뒤꿈치를 단단히 잡아, 발이 안쪽으로 무너지는 <strong>과내전</strong>을 완화합니다. 힐 33.6mm / 전족 25.1mm 스택, <strong>275g 경량</strong>, 8.5mm 드롭으로 안정화치고 가볍고, Helion 폼은 겨울에도 17%만 경화돼 사계절 안정적입니다.</p>
+
+<h2>'안정화'의 실체 — 생각보다 마일드</h2>
+<p>이름은 안정화지만, 실제 지지는 <strong>"거의 중립에 가까운 마일드 수준"</strong>입니다(Run to the Finish는 "거의 중립화로 분류할 뻔했다"고 표현).</p>
+<ul>
+  <li><strong>힐 카운터는 강합니다</strong>(5/5) — 뒤꿈치 고정력은 확실합니다</li>
+  <li>하지만 <strong>미드풋·전족부는 중립</strong>에 가깝고, 비틀림 강성도 중간(3/5)이라 <strong>심한 과내전 교정엔 부족</strong>합니다</li>
+  <li>"불안정한 중립화는 싫지만 카야노처럼 과한 교정도 싫다"는 <strong>경미한 과내전</strong> 러너에게 맞습니다</li>
+</ul>
+
+<h2>강점 — 가볍고, 통기성 좋고, 워킹 겸용</h2>
+<ul>
+  <li><strong>275g 경량</strong> — 안정화 중 가벼운 편이라 데일리·이지런에 부담이 적습니다</li>
+  <li><strong>통기성 우수</strong> — 거의 만점급 메쉬 어퍼. 여름에도 쾌적합니다</li>
+  <li><strong>겨울 안정성</strong> — Helion 폼이 영하에서도 17%만 경화돼 사계절 착화감이 일정합니다</li>
+  <li><strong>워킹 겸용</strong> — 안정적이라 출퇴근·일상 착화에도 좋습니다</li>
+  <li><strong>가성비</strong> — 과거 정가 18만 9천원으로 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(₩259,000)보다 7만 원 저렴했습니다</li>
+</ul>
+
+<h2>약점 — 반발과 단단함</h2>
+<ul>
+  <li><strong>반발이 약합니다</strong> — 에너지 리턴 57%로, 톡 쏘는 추진력은 없습니다</li>
+  <li><strong>단단한 승차감</strong> — 27.3 HA로 "푹신한 구름"을 기대하면 의외로 딱딱합니다</li>
+  <li><strong>빠른 페이스에 둔함</strong> — 템포·인터벌용은 아닙니다</li>
+  <li><strong>사이즈 주의</strong> — 약간 크게 나온다는 후기가 있어, 중고 구매 시 실측 확인이 필요합니다</li>
+</ul>
+
+<h2>핵심 — 중고 CR2 vs 신품 CR3</h2>
+<p>지금 클라우드러너를 고민한다면 가장 현실적인 질문입니다.</p>
+<table>
+  <thead>
+    <tr><th></th><th>클라우드러너 2 (이 글·단종)</th><th><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a> (신품)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>구매</strong></td><td>중고·병행·재고만</td><td>한국 공식 판매 중</td></tr>
+    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>약 300g대</td></tr>
+    <tr><td><strong>토박스</strong></td><td>72.4mm (더 넓음)</td><td>71.0mm</td></tr>
+    <tr><td><strong>스택·안정성</strong></td><td>기본</td><td>스택↑·힐 클립 개선</td></tr>
+  </tbody>
+</table>
+<p><strong>가볍고 토박스 넓은 걸 원하고 중고 매물이 상태 좋다면 CR2</strong>, <strong>신품 보증과 보강된 안정성·쿠션을 원하면 CR3</strong>입니다. 흥미롭게도 CR2가 더 가볍고 발볼 여유가 있어, "단순 상위호환"은 아닙니다. CR3의 상세는 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3 리뷰</a>에서 다뤘습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">중고로 산다면 체크</p>
+    <ul>
+      <li><strong>한국 공식 와이드는 없습니다</strong> — 미국 On엔 Wide SKU가 있지만 한국 공식엔 없으니, 발볼 넓은 러너는 직구나 실착을 확인하세요</li>
+      <li><strong>아웃솔 내구성</strong> — On의 고질적 약점. 중고는 밑창 마모 상태를 꼭 확인(권장 교체 500km)</li>
+      <li><strong>사이즈</strong> — 약간 크게 나오는 편이라 실측 길이를 확인하세요</li>
+    </ul>
+  </div>
+</div>
+
+<h2>살까, 말까</h2>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">이렇게 정리됩니다</p>
+    <ul>
+      <li><strong>중고 CR2가 맞는 사람</strong>: 경미한 과내전 + 가벼운 데일리·워킹 겸용을 원하고, 상태 좋은 중고를 저렴하게 구할 수 있는 러너</li>
+      <li><strong>신품 CR3가 나은 사람</strong>: 보증·신품을 원하거나, 더 두툼한 쿠션·보강된 안정성을 원하는 러너 → <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a></li>
+      <li><strong>본격 안정화가 필요하면</strong>: <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>가 지지력에서 앞섭니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 지금 새로 살 수 있나요?</h3>
+<p>한국 공식몰에서는 <strong>단종</strong>됐습니다. 중고·병행수입·재고로만 구할 수 있고, 신품 보증을 원하면 후속작 <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>가 현실적입니다.</p>
+
+<h3>Q. 심한 평발·과내전인데 충분한가요?</h3>
+<p>힐 카운터는 강하지만 전체 지지는 마일드해서, <strong>심한 과내전엔 부족</strong>할 수 있습니다. 그럴 땐 <a href="/shoes/asics-gel-kayano-32">카야노</a> 같은 본격 안정화가 안전합니다.</p>
+
+<h3>Q. CR3로 그냥 가는 게 낫나요?</h3>
+<p>신품·보증·보강된 안정성을 원하면 CR3가 낫습니다. 다만 CR2가 <strong>더 가볍고 토박스가 넓어</strong>, 가벼움·발볼 여유를 우선하고 좋은 중고를 구할 수 있다면 CR2도 합리적입니다.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스 72.4mm로 표준이라 보통 발은 무난하지만, <strong>한국 공식 와이드가 없습니다</strong>. 발볼이 넓다면 직구 와이드나 매장 착화를 확인하세요.</p>
+
+<h2>마무리</h2>
+<p>클라우드러너 2는 <strong>"가볍고 통기성 좋은 입문 안정화"</strong>로 분명한 강점이 있었지만, 한국에서는 이미 세대교체로 단종됐습니다. 지금 새로 만난다면 핵심은 둘입니다 — <strong>좋은 중고를 저렴하게 구할 수 있는가</strong>, 그리고 <strong>심한 과내전이 아닌가</strong>. 두 조건에 맞으면 여전히 좋은 데일리·워킹화지만, 신품 보증이나 더 강한 안정성을 원하면 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3</a>가, 본격 교정이 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노</a>가 답입니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Doctors of Running·Run to the Finish 리뷰를 종합한 내용입니다. 무게·스택은 측정 기준에 따라 차이가 있을 수 있습니다. 클라우드러너 2는 2026-06 기준 한국 공식몰에서 단종 상태이며, 가격(₩189,000)은 과거 정가입니다.</p>
+`,
+  },
+  {
     id: 'on-cloudrunner-3-review-2026',
     slug: 'on-cloudrunner-3-review-2026',
     title: 'On식 \'가벼운 안정화\' — 클라우드러너 3 리뷰 | 카야노 같은 교정은 아니다, 편한 러닝·워킹 겸용엔 합격',
