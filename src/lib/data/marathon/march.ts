@@ -137,9 +137,11 @@ export const marchEvents: MarathonEvent[] = [
     month: '3월',
     location: '인천 문학경기장',
     region: '인천',
-    distances: ['하프', '10K'],
+    distances: ['하프', '10K', '5K'],
     status: '대회종료',
-    isMajor: false,
+    isMajor: true,
+    website: 'http://www.incheonmarathon.co.kr',
+    description: '2001년 창설된 26년 역사의 봄 대표 하프. WA 공인 코스(문학경기장~송도 해안 반환), 선착순 1.5만 명. 동아마라톤 직후 봄 첫 하프. 가을 인천마라톤(풀코스)과 별개.',
   },
   {
     id: 'seoul-k-marathon-2026',

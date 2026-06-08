@@ -2,6 +2,91 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'incheon-international-half-marathon',
+    slug: 'incheon-international-half-marathon',
+    title: '26년째 봄을 여는 인천 대표 하프 — 인천국제하프마라톤 | 송도 해안·\'통곡의 벽\'·WA 공인 코스 완전 정리',
+    description: '2001년 창설돼 26년째 이어지는 인천국제하프마라톤. 서울 동아마라톤 직후 봄 시즌 첫 하프로, 세계육상연맹(WA) 공인 코스를 문학경기장에서 달립니다. 송도국제도시 해안 바닷바람과 경기장 진입 오르막 \'통곡의 벽\', 트랙 피니시가 특징이죠. 코스·종목·참가비·기념품과 가을 인천마라톤(풀코스)과의 차이까지 정리했습니다.',
+    thumbnail: '/images/blog/incheon-international-half-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['인천국제하프마라톤', '인천 하프마라톤', '하프 마라톤', '문학경기장', '송도 러닝', '봄 마라톤', 'WA 공인 코스', '러닝 대회', '인천 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>인천국제하프마라톤은 2001년 창설된 26년 역사의 봄 대표 하프</strong> — 인천일보 주최, 세계육상연맹(WA) 공인 코스를 문학경기장에서 달립니다(하프·10K·5K)</li>
+    <li>코스 특징은 <strong>송도국제도시 해안 바닷바람</strong>과 경기장 진입 직전의 긴 오르막 — 참가자들이 <strong>'통곡의 벽'</strong>이라 부르는 마지막 고비, 그리고 <strong>트랙 피니시</strong>입니다</li>
+    <li>매년 <strong>3월 마지막 주 일요일 전후, 선착순 1.5만 명</strong> 규모. <strong>가을에 열리는 \'인천마라톤\'(풀코스)과는 완전히 별개</strong> 대회이니 혼동하지 마세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌸</span>
+  <div class="callout-body">
+    <p class="callout-title">'봄의 전령사' — 수도권 봄 시즌 첫 하프</p>
+    <p>인천국제하프마라톤은 <strong>서울 동아마라톤(3월 중순) 직후</strong>에 열려, 수도권 러너에게 <strong>봄 시즌 첫 대회</strong>로 자리 잡았습니다. 겨우내 쌓은 훈련을 점검하는 "스피드 테스트" 무대로 인기죠. 2026년 제26회는 3월 22일 인천문학경기장에서 이미 열렸고, 매년 비슷한 시기에 반복되는 전통 대회라 미리 알아두면 내년 봄 계획에 좋습니다.</p>
+  </div>
+</div>
+
+<h2>어떤 대회인가</h2>
+<ul>
+  <li><strong>역사</strong>: 2001년 제1회 창설, 2026년 <strong>제26회</strong>까지 이어진 인천 최대 규모 달리기 축제 (2021년 제21회는 코로나로 비대면 진행)</li>
+  <li><strong>주최/주관</strong>: 인천일보·대한육상연맹 주최, (사)인천마라톤조직위원회 주관</li>
+  <li><strong>베뉴</strong>: 2002 월드컵 개최지인 <strong>인천문학경기장</strong> (인천 미추홀구)</li>
+  <li><strong>성격</strong>: 엘리트와 시민 러너가 함께하는 <strong>시민 중심 국제 대회</strong>, 선착순 1.5만 명</li>
+</ul>
+
+<h2>코스 — 송도 해안과 '통곡의 벽'</h2>
+<p>WA(세계육상연맹) 공인 코스로, <strong>문학경기장 → 선학지하차도 → 동춘고가도로 → 송도1교 → 해안부대사거리(반환) → 다시 복귀 → 경기장 트랙 피니시</strong>의 왕복 반환 구조입니다.</p>
+<ul>
+  <li><strong>초반 스피드</strong> — 출발 직후 완만한 내리막이라 페이스 올리기 좋습니다</li>
+  <li><strong>송도 해안 바닷바람</strong> — 송도국제도시 해안 구간에서 바람이 강해, 기록 변수로 작용합니다</li>
+  <li><strong>'통곡의 벽'</strong> — 경기장 진입 직전의 긴 오르막이 마지막 고비. 막판 체력 안배가 관건입니다</li>
+  <li><strong>트랙 피니시</strong> — 경기장 관중석 앞 트랙에서 완주하는 짜릿한 마무리</li>
+</ul>
+<p>넓고 잘 통제된 도심 도로에 주차·화장실 등 편의시설이 좋아 대형 대회치고 운영이 안정적이라는 평이 많습니다.</p>
+
+<h2>종목·참가비·기념품</h2>
+<table>
+  <thead>
+    <tr><th>종목</th><th>제한시간</th><th>참가비(제26회 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>하프(21.0975km)</td><td>3시간</td><td>50,000원</td></tr>
+    <tr><td>10K</td><td>2시간</td><td>50,000원</td></tr>
+    <tr><td>5K</td><td>2시간</td><td>45,000원</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li><strong>완주 기념품</strong>: 완주 메달 + 기념 티셔츠(사이즈 선택) + 배번·기록칩(하프·10K) + 온라인 기록증 + 완주 간식</li>
+  <li>접수는 통상 <strong>1~2월</strong>에 진행됩니다(제26회는 1/5~2/13)</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">'인천마라톤'과 헷갈리지 마세요</p>
+    <p>이름이 비슷해 자주 혼동되는데, 둘은 <strong>완전히 다른 대회</strong>입니다.</p>
+    <ul>
+      <li><strong>인천국제하프마라톤(이 글)</strong> — 봄(3월), 문학경기장, <strong>하프·10K·5K</strong>, 2001년~, 인천일보 주최. 사이트 incheonmarathon.<strong>co.kr</strong></li>
+      <li><a href="/blog/2026-incheon-marathon">인천마라톤</a> — 가을(11월), <strong>풀코스</strong>, 2025년 신설, 인천시·대한육상연맹. 사이트 incheonmarathon.<strong>or.kr</strong></li>
+    </ul>
+    <p>풀코스를 원하면 가을 인천마라톤, 봄에 하프·단축 종목을 원하면 이 대회입니다.</p>
+  </div>
+</div>
+
+<h2>2027 제27회는?</h2>
+<p>2026-06 기준 <strong>제27회(2027) 일정은 아직 미발표</strong>입니다. 다만 매년 <strong>3월 마지막 주 일요일 전후</strong> 개최 패턴이 일정해, 2027년에도 3월 하순 개최가 유력합니다. 봄 첫 하프를 노린다면 <strong>연초(1~2월) 접수 오픈</strong>을 기다리면 됩니다. 일정이 공개되면 업데이트하겠습니다.</p>
+
+<h2>마무리</h2>
+<p>인천국제하프마라톤은 화려한 신상 대회는 아니지만, <strong>26년간 봄을 열어 온 수도권 대표 하프</strong>로서 안정적인 운영과 WA 공인 코스, '통곡의 벽'을 넘어 트랙에서 완주하는 특유의 경험을 제공합니다. 겨울 훈련 점검과 봄 시즌 워밍업에 딱 맞는 대회죠. 봄에 하프를 노린다면 매년 3월 하순을 기억해 두세요. 인천에서 평소 뛸 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을, 가을 풀코스는 <a href="/blog/2026-incheon-marathon">인천마라톤</a>을 참고하세요. 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다. 🏃</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 인천국제하프마라톤 공식·마라톤GO·KorMarathon 등록 정보와 역대 대회 자료를 종합한 내용입니다. 제26회(2026-03-22)는 종료됐고, 제27회(2027) 일정·참가비는 미발표 상태입니다. 참가비·기념품은 제26회 기준이며 회차별로 변동될 수 있으니, 참가 전 공식 홈페이지(incheonmarathon.co.kr)를 확인하세요.</p>
+`,
+  },
+  {
     id: '2026-incheon-marathon',
     slug: '2026-incheon-marathon',
     title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·접수·2025 1회 총정리',
