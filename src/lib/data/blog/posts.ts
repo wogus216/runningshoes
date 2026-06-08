@@ -2,6 +2,123 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudrunner-3-review-2026',
+    slug: 'on-cloudrunner-3-review-2026',
+    title: 'On식 \'가벼운 안정화\' — 클라우드러너 3 리뷰 | 카야노 같은 교정은 아니다, 편한 러닝·워킹 겸용엔 합격',
+    description: '온(On)의 안정화 데일리 트레이너 클라우드러너 3. 힐 가이던스(힐 클립)로 흔들림을 잡아주지만, 카야노 같은 본격 교정형 안정화를 기대하면 실망합니다. "최근 최고의 어퍼"라는 극찬과 "벽돌 같은 반발"이라는 혹평이 동시에 나오는 이 신발의 진짜 성격, 안정화 수준, 한국 와이드 부재 이슈, 클라우드러너 2와의 차이를 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudrunner-3-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['온', 'On', '클라우드러너 3', '안정화', '힐 가이던스', '과내전', '워킹 겸용', 'CloudTec', '데일리 쿠션화', 'On 안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드러너 3는 <strong>힐 가이던스(힐 클립)로 후족부를 잡아주는 "가벼운 안정화"</strong> — 카야노·아드레날린 같은 본격 교정형이 아니라 <strong>경미한 과내전</strong>용입니다</li>
+    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(약 300g대) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
+    <li>한국 공식엔 <strong>와이드가 없고</strong>(미국엔 있음) 빠른 훈련엔 부적합 — <strong>편안한 이지런·워킹 겸용 안정화</strong>를 원하는 러너에게 맞습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">"안정화는 필요한데, 카야노는 부담스럽다면"</p>
+    <p><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>는 온(On)의 안정화 데일리 트레이너입니다. 발이 안쪽으로 무너지는 <strong>과내전</strong>을 잡아주되, <a href="/shoes/asics-gel-kayano-32">카야노</a>처럼 무겁고 교정감 강한 본격 안정화와는 결이 다릅니다. 그런데 이 "애매한 포지션" 때문에 해외 리뷰 점수가 극과 극으로 갈려요. 누구에게 맞고 누구에겐 안 맞는지 솔직하게 짚어보겠습니다.</p>
+  </div>
+</div>
+
+<h2>클라우드러너 3, 어떤 신발인가</h2>
+<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g대 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
+
+<h2>'안정화'의 진실 — 얼마나 잡아주나</h2>
+<p>가장 중요한 포인트입니다. 클라우드러너 3의 안정화는 <strong>"경미한 수준(mild-to-moderate)"</strong>입니다.</p>
+<ul>
+  <li><strong>후족부만</strong> 잡아줍니다 — 힐 클립이 뒤꿈치를 고정하지만, 미드풋·전족부는 중립화에 가깝습니다</li>
+  <li><strong>본격 모션컨트롤이 아닙니다</strong> — <a href="/shoes/asics-gel-kayano-32">카야노</a>나 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린</a>보다 훨씬 가벼운 지지입니다</li>
+  <li>따라서 <strong>경미한 과내전</strong>엔 잘 맞지만, <strong>심한 과내전·평발</strong>엔 지지가 부족할 수 있습니다</li>
+</ul>
+<p>"불안정한 중립화는 싫고, 카야노처럼 과한 교정도 싫다"는 러너에게 정확히 들어맞는 중간 지대입니다.</p>
+
+<h2>강점 — 어퍼·안정감·내구성</h2>
+<ul>
+  <li><strong>최상급 어퍼</strong> — Doctors of Running이 "최근 출시작 중 최고의 어퍼"라 극찬했습니다. 발을 부드럽게 감싸 장시간 착화해도 편합니다</li>
+  <li><strong>힐 클립 제로 슬립</strong> — 뒤꿈치가 단단히 고정돼 흔들림·미끄러짐이 없습니다(Boulder Gear Lab 9.1점)</li>
+  <li><strong>내구성 우수</strong> — 아웃솔 마모 0.6mm로 오래 신어도 잘 안 닳습니다. 고중량 러너에게도 무난</li>
+  <li><strong>워킹 겸용</strong> — 안정적이라 출퇴근·종일 착화에도 편합니다</li>
+</ul>
+
+<h2>약점 — 반발과 무게</h2>
+<p>강점만큼 단점도 분명해 평가가 갈립니다.</p>
+<ul>
+  <li><strong>반발이 약합니다</strong> — Helion 폼의 에너지 리턴이 53%로 낮아, Believe in the Run은 <strong>"벽돌 같은 느낌"</strong>이라며 D티어를 줬습니다. 톡 쏘는 추진력은 없습니다</li>
+  <li><strong>무겁습니다</strong> — 약 300g대로, 빠른 페이스·인터벌엔 둔합니다</li>
+  <li><strong>통기성 제한</strong> — 한여름엔 더울 수 있습니다</li>
+</ul>
+<p>즉 RunRepeat·BGL은 "편안하고 안정적"이라 호평(90점), BITR은 "반발 없고 애매하다"고 혹평 — <strong>무엇을 기대하느냐</strong>에 따라 갈리는 신발입니다.</p>
+
+<h2>클라우드러너 2와 뭐가 다른가</h2>
+<p>전작 <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a> 대비 변화는 분명합니다.</p>
+<table>
+  <thead>
+    <tr><th></th><th>클라우드러너 2</th><th>클라우드러너 3 (이 글)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>약 275g</td><td>약 300g대 (무거워짐)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>33.6mm</td><td>36.8mm (쿠션↑)</td></tr>
+    <tr><td><strong>안정성·어퍼</strong></td><td>기본</td><td>힐 클립·어퍼 개선</td></tr>
+    <tr><td><strong>반발</strong></td><td>57%</td><td>53% (소폭↓)</td></tr>
+  </tbody>
+</table>
+<p>3세대는 <strong>쿠션·안정성·어퍼 품질이 올라간 대신 더 무거워지고 반발은 약간 떨어졌습니다.</strong> "더 안정적이고 편한 워킹 겸용"을 원하면 3, "가벼움"을 원하면 2가 낫습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 러너가 사기 전 체크</p>
+    <ul>
+      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71mm 표준이고 어퍼 볼륨은 넉넉한 편이라 보통 발은 무난하나, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
+      <li><strong>빠른 훈련엔 부적합</strong> — 반발이 약하고 무거워 템포·인터벌용은 아닙니다</li>
+      <li><strong>안정화 기대치</strong> — 심한 과내전·평발이면 지지가 부족할 수 있어 카야노 계열이 안전합니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>살까, 말까 — 경쟁자와 함께</h2>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">이렇게 정리됩니다</p>
+    <ul>
+      <li><strong>맞는 사람</strong>: 경미한 과내전 + 편안한 이지런·워킹 겸용을 원하는 러너, 어퍼 착화감과 내구성을 중시하는 러너, On 디자인을 좋아하는 러너</li>
+      <li><strong>맞지 않는 사람</strong>: 반발·속도를 원하는 러너, 심한 과내전·평발 러너, 가벼운 신발을 원하는 러너</li>
+      <li><strong>대안</strong>: 본격 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>·<a href="/shoes/nike-structure-26">나이키 스트럭처 26</a>가 지지력에서 앞섭니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 평발인데 이걸로 충분한가요?</h3>
+<p>경미한 과내전이면 힐 가이던스가 도움이 되지만, <strong>심한 평발·과내전</strong>이면 후족부만 잡아주는 이 구조로는 부족할 수 있습니다. 그럴 땐 <a href="/shoes/asics-gel-kayano-32">카야노</a> 같은 본격 안정화가 안전합니다.</p>
+
+<h3>Q. 러닝과 워킹 둘 다 되나요?</h3>
+<p>네, 그게 이 신발의 강점입니다. 안정적이고 어퍼가 편해 <strong>출퇴근 워킹 + 이지런</strong> 겸용에 잘 맞습니다. 다만 빠른 러닝엔 둔합니다.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스는 71mm 표준이지만 어퍼 볼륨이 넉넉해 보통~약간 넓은 발은 무난합니다. 단 <strong>한국 공식 와이드가 없어</strong> 발볼이 많이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
+
+<h3>Q. 입문용으로 사도 되나요?</h3>
+<p>안정적이고 내구성이 좋아 무난하지만, 반발이 약해 "달리는 재미"는 덜합니다. 안정감·편안함을 우선한다면 좋은 선택입니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고하세요.</p>
+
+<h2>마무리</h2>
+<p>클라우드러너 3는 <strong>"가벼운 안정화 + 편한 워킹 겸용"</strong>이라는 자기 자리가 분명한 신발입니다. 반발·속도를 기대하면 "벽돌"처럼 느껴지지만, <strong>안정감·어퍼 착화감·내구성</strong>을 원하면 충분히 만족스럽죠. 핵심은 기대치입니다 — "빠른 러닝화"가 아니라 "<strong>편하고 안정적인 데일리·워킹화</strong>"로 보면 제값을 합니다. 본격 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노</a>로, 더 가벼운 On을 원하면 <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a>로 눈을 돌려보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Doctors of Running·Boulder Gear Lab 리뷰를 종합한 내용입니다. 무게·스택은 측정 사이즈 기준에 따라 차이가 있을 수 있습니다(RunRepeat US M9 약 298g 등). 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'on-cloudsurfer-2-review-2026',
     slug: 'on-cloudsurfer-2-review-2026',
     title: 'On 입문 데일리, \'구름 착지감\'의 진실 — 클라우드서퍼 2 리뷰 | 내구성·디자인은 합격, 반발은 글쎄 + 맥스와 차이',
