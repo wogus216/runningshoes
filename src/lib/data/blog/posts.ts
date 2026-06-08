@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>229,000원</td><td>301g</td><td>일반 메시</td><td>데일리·회복</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>259,000원</td><td>264g</td><td>일반 메시</td><td>장거리·템포 슈퍼트레이너</td></tr>
-    <tr><td><strong>라이트스프레이 하이퍼</strong></td><td><strong>319,000원</strong></td><td><strong>205g</strong></td><td><strong>로봇 스프레이 일체형</strong></td><td>초경량 프리미엄 슈퍼트레이너</td></tr>
+    <tr><td><strong><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></strong></td><td><strong>319,000원</strong></td><td><strong>205g</strong></td><td><strong>로봇 스프레이 일체형</strong></td><td>초경량 프리미엄 슈퍼트레이너</td></tr>
   </tbody>
 </table>
 <p>핵심 차이는 <strong>어퍼와 무게</strong>입니다. 일반과 하이퍼는 같은 천 어퍼를 쓰지만, 하이퍼 두 모델은 미드솔에 <strong>Helion™ HF(상단 PEBA계 하이퍼폼) + Helion(하단)</strong> 이중 밀도를 넣어 더 반발력 있고 두툼합니다. 그리고 맨 위 <strong>라이트스프레이</strong>가 여기에 로봇 스프레이 어퍼를 더해 무게를 <strong>일반 대비 96g(약 32%)</strong>이나 덜어낸 버전입니다. 일반 3와 하이퍼의 차이가 궁금하면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>도 참고하세요.</p>
