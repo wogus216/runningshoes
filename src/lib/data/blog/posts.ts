@@ -11601,7 +11601,7 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>2026 카테고리별 베스트 7</h2>
+<h2>2026 카테고리별 베스트 8</h2>
 
 <h3>🏆 1. 종합 베스트 — <a href="/shoes/adidas-terrex-agravic-4">Adidas Terrex Agravic 4</a></h3>
 
@@ -11728,7 +11728,24 @@ export const blogPosts: BlogPost[] = [
 <p><strong>약점</strong>: 322g 무거움 — 동급 대비 최중량. 저온에서 미드솔 경도 42% 상승(겨울 산행 쿠션감 저하).</p>
 <p><strong>한국 러너 노트</strong>: <strong>89,000원으로 트레일 진입 장벽을 크게 낮춘 선택지</strong>. 북한산·관악산 정식 트레일보다는 청계산·대모산·둘레길 수준 입문 코스에 적합. 트레킹화 대체로도 활용 가능.</p>
 
-<h2>한 눈에 보는 7대 비교표</h2>
+<h3>🐐 8. 만능·그립 베스트셀러 — <a href="/shoes/hoka-speedgoat-6">HOKA Speedgoat 6</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td><strong>205,000원</strong> (HOKA 공식, 와이드 동일가 / GTX 229,000)</td></tr>
+    <tr><td>무게 / 드롭</td><td>278g / 5mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>40mm / 35mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip + Traction Lug (러그 5mm)</td></tr>
+    <tr><td>미드솔</td><td>CMEVA (압축성형 EVA, 플레이트리스)</td></tr>
+    <tr><td>토박스 / 와이드</td><td>73mm 표준(체감 좁음) · 와이드 공식 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 트레일 데일리의 대명사. Vibram Megagrip + Traction Lug 조합으로 젖은 바위·급경사·진흙까지 그립이 최상(Road Trail Run 10/10). 힐 40mm 맥스쿠션에도 내부 섀시로 안정성 A등급(Doctors of Running). 278g으로 맥스쿠션치고 가벼워 울트라에 유리하고, 와이드 옵션이 공식가로 제공됩니다.</p>
+<p><strong>약점</strong>: 에너지 리턴 48%로 빠른 페이스엔 둔함. 토박스가 표준 수치(73mm)임에도 "좁다"는 체감 평가가 많고, 텅 날개·힐 슬립 같은 핏 이슈와 노출 미드솔 마모(200~300km 후 압축)가 단점.</p>
+<p><strong>한국 러너 노트</strong>: <strong>"트레일 입문화 딱 하나만"이라면 가장 안전한 베스트셀러</strong>. 북한산·관악산 같은 거친 암릉부터 둘레길까지 두루 커버하고, <strong>와이드가 공식가(205,000원)로 나와 발볼 넓은 한국 러너에게 특히 친화적</strong>입니다. 빠른 레이스보다 LSD·장거리·산행 겸 러닝에 최적입니다.</p>
+
+<h2>한 눈에 보는 8대 비교표</h2>
 
 <table>
   <thead>
@@ -11790,6 +11807,14 @@ export const blogPosts: BlogPost[] = [
       <td>322g</td>
       <td>와이드 ✅</td>
       <td>둘레길·입문 OK</td>
+    </tr>
+    <tr>
+      <td><strong>HOKA Speedgoat 6</strong></td>
+      <td><strong>만능·그립</strong></td>
+      <td><strong>205,000원</strong></td>
+      <td>278g</td>
+      <td><strong>와이드 ✅</strong></td>
+      <td><strong>북한산~둘레길 만능</strong></td>
     </tr>
   </tbody>
 </table>
