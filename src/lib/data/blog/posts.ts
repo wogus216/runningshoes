@@ -2,6 +2,114 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudsurfer-2-review-2026',
+    slug: 'on-cloudsurfer-2-review-2026',
+    title: 'On 입문 데일리, \'구름 착지감\'의 진실 — 클라우드서퍼 2 리뷰 | 내구성·디자인은 합격, 반발은 글쎄 + 맥스와 차이',
+    description: '온(On)의 입문용 데일리 트레이너 클라우드서퍼 2. CloudTec Phase의 매끄러운 전환과 최상급 내구성, SNS에 통하는 디자인이 강점이지만, "구름 같은 착지감"이라는 이미지와 달리 실제론 단단하고 반발이 약합니다. 해외 평가가 갈리는 이 신발의 진짜 가치, 와이드 없는 발볼 이슈, 그리고 클라우드서퍼 맥스와의 차이를 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudsurfer-2-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['온', 'On', '클라우드서퍼 2', '입문 러닝화', '데일리 쿠션화', 'CloudTec Phase', 'easy run', '러닝 입문', '온 클라우드서퍼', 'On 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드서퍼 2는 온(On)의 <strong>입문용 데일리 트레이너</strong> — CloudTec Phase의 매끄러운 전환, <strong>최상급 내구성</strong>(아웃솔 마모 0.6mm), SNS에 통하는 디자인이 강점입니다</li>
+    <li>단, <strong>"구름 같은 착지감" 이미지와 달리 실제론 단단하고 반발이 약합니다</strong> — 에너지 리턴 52%로 해외 평가가 갈립니다(BITR 혹평 vs RTR 호평)</li>
+    <li><strong>와이드 옵션이 없고</strong> 10km 이상 장거리엔 단조로워, <strong>단거리 데일리·출퇴근 겸용</strong>에 맞습니다. 더 무겁고 쿠션 보강된 <a href="/blog/on-cloudsurfer-max-review-2026">맥스</a>와는 성격이 다릅니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☁️</span>
+  <div class="callout-body">
+    <p class="callout-title">On 입문, 디자인으로 사고 후회는 없을까</p>
+    <p><a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>는 "온(On) 한번 신어보고 싶다"는 러너의 첫 선택으로 자주 꼽히는 데일리 트레이너입니다. 특유의 CloudTec 디자인과 일상 겸용 스타일이 매력이죠. 그런데 막상 달려보면 <strong>"구름 같은 착지감"이라는 브랜드 이미지와 실제 감각 사이에 괴리</strong>가 있습니다. 해외 리뷰 점수도 크게 갈리고요. 19만 9천원의 값을 하는지 솔직하게 짚어보겠습니다.</p>
+  </div>
+</div>
+
+<h2>클라우드서퍼 2, 어떤 신발인가</h2>
+<p>온의 <strong>CloudTec Phase</strong>(파드가 순차 압축되며 굴러가는 구조)에 Helion 폼을 얹은 입문~데일리 트레이너입니다. 힐 37.5mm / 전족 27.1mm 스택, <strong>254g 경량</strong>, 드롭은 실측 약 10mm로 높은 편이라 힐 스트라이커에게 자연스럽습니다. 빠른 레이스보다 <strong>편안한 데일리 조깅과 일상 착화</strong>를 노린 포지션이죠.</p>
+
+<h2>강점 — 내구성·디자인·개선점</h2>
+<ul>
+  <li><strong>내구성 최상급</strong> — 아웃솔 마모가 0.6mm로 업계 평균(1.1mm)의 절반 수준. 오래 신어도 밑창이 잘 안 닳습니다</li>
+  <li><strong>1세대 대비 확실한 개선</strong> — 통기성이 크게 좋아졌고, 구형의 고질병이던 <strong>"끽끽" 소음이 완전히 사라졌습니다</strong>. 폼 밀도를 높여 내구성도 개선됐죠</li>
+  <li><strong>매끄러운 록커 전환</strong> — 힐-투-토 굴림이 자연스러워 일정 페이스 유지가 편합니다</li>
+  <li><strong>디자인·일상 겸용</strong> — 러닝 후 카페에 들러도 튀지 않는 스타일. "운동화 겸 러닝화"로 매력적입니다</li>
+</ul>
+
+<h2>약점 — '구름 착지감'의 진실</h2>
+<p>가장 솔직하게 짚어야 할 부분입니다. 클라우드서퍼 2는 이름·이미지와 달리 <strong>폭신하지 않고 단단합니다.</strong></p>
+<ul>
+  <li><strong>에너지 리턴 52%</strong> — 데일리 트레이너 평균 이하. 톡톡 튀는 반발과는 거리가 멉니다</li>
+  <li><strong>단단한 승차감</strong> — Believe in the Run은 "<strong>식탁에 놔둔 김빠진 콜라 같다</strong>"는 표현까지 썼습니다(D티어 혹평). 반면 Road Trail Run은 8.2/10으로 후하게 평가해, <strong>평가가 크게 갈립니다</strong></li>
+  <li><strong>장거리 단조로움</strong> — 5~10km까진 괜찮지만 그 이상에선 승차감이 밋밋해집니다</li>
+</ul>
+<p>즉 "구름처럼 푹신"을 기대하면 실망합니다. <strong>"단단하고 안정적인 데일리"</strong>로 받아들여야 맞습니다.</p>
+
+<h2>맥스와 뭐가 다른가</h2>
+<p>같은 클라우드서퍼 라인의 <a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a>와 헷갈리기 쉬우니 정리합니다.</p>
+<table>
+  <thead>
+    <tr><th></th><th>클라우드서퍼 2 (이 글)</th><th><a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a></th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>199,000원</td><td>219,000원</td></tr>
+    <tr><td><strong>무게</strong></td><td>254g (가벼움)</td><td>292g</td></tr>
+    <tr><td><strong>토박스</strong></td><td>73.5mm</td><td>71.4mm (더 좁음)</td></tr>
+    <tr><td><strong>성격</strong></td><td>가벼운 단거리 데일리</td><td>묵직한 안정형 장거리</td></tr>
+  </tbody>
+</table>
+<p>흥미롭게도 <strong>힐 쿠션·경도는 둘이 거의 같습니다.</strong> 클라우드서퍼 2가 더 가볍고 싸고 토박스도 넓어, "가벼운 데일리"라면 오히려 2가 낫습니다. 맥스는 전족부 쿠션과 약간의 안정감을 더할 때만 의미가 있죠 — 자세한 건 <a href="/blog/on-cloudsurfer-max-review-2026">클라우드서퍼 맥스 리뷰</a>에서 다뤘습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 러너가 사기 전 체크</p>
+    <ul>
+      <li><strong>와이드 옵션이 없습니다</strong> — 토박스 73.5mm로 표준이지만, 발볼 넓은 러너는 미드풋이 타이트할 수 있어 실착이 필수입니다</li>
+      <li><strong>장거리엔 비추천</strong> — 10km 이상 단조로워, 장거리 LSD용으론 다른 신발이 낫습니다</li>
+      <li><strong>가격 대비 성능</strong> — 19만 9천원에 반발·쿠션 성능을 기대하면 아쉽습니다. <strong>"디자인 8할, 성능 2할"</strong>로 보는 게 맞습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>살까, 말까 — 경쟁자와 함께</h2>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">이렇게 정리됩니다</p>
+    <ul>
+      <li><strong>맞는 사람</strong>: On 디자인을 좋아하고, 단거리 데일리·출퇴근 겸용 + 내구성을 원하는 러너. 단단한 안정감을 선호하는 입문자</li>
+      <li><strong>맞지 않는 사람</strong>: 폭신한 쿠션·반발을 원하는 러너, 10km 이상 장거리러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
+      <li><strong>대안</strong>: 반발·범용성을 원하면 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a>, 통통 튀는 데일리는 <a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a>가 가성비·성능에서 앞섭니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 입문용 첫 러닝화로 괜찮나요?</h3>
+<p>안정적이고 내구성이 좋아 무난하지만, 19만 9천원 가격과 "구름 착지감 기대"를 생각하면 최선은 아닐 수 있습니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>로 다른 입문화와 비교해 보세요.</p>
+
+<h3>Q. 정말 '구름처럼' 푹신한가요?</h3>
+<p>아닙니다. 마케팅 이미지와 달리 <strong>단단한 편</strong>입니다. 푹신함을 원하면 호카 클리프턴이나 뉴발 1080 쪽이 맞습니다.</p>
+
+<h3>Q. 맥스랑 뭘 살까요?</h3>
+<p><strong>가볍고 저렴한 단거리 데일리</strong>면 클라우드서퍼 2, <strong>묵직한 안정형 장거리</strong>면 맥스입니다. 힐 쿠션은 비슷하니 무게·가격·용도로 고르세요.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스가 73.5mm로 표준이라 보통 발은 무난하지만 <strong>와이드가 없습니다</strong>. 발볼이 넓다면 매장 착화가 필수입니다.</p>
+
+<h2>마무리</h2>
+<p>클라우드서퍼 2는 <strong>"성능보다 경험"으로 사는 신발</strong>입니다. 반발·쿠션 수치는 평범하지만, 최상급 내구성과 일상 겸용 디자인, On만의 록커감은 분명한 가치죠. 핵심은 기대치 조정입니다 — "구름처럼 푹신"이 아니라 "<strong>단단하고 오래 가는 데일리</strong>"로 보면 만족스럽습니다. 더 묵직한 쿠션을 원하면 <a href="/shoes/on-cloudsurfer-max">맥스</a>로, 반발·가성비를 원하면 <a href="/shoes/nike-pegasus-41">페가수스</a>·<a href="/shoes/asics-novablast-5">노바블라스트</a>로 눈을 돌려보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'on-cloudsurfer-max-review-2026',
     slug: 'on-cloudsurfer-max-review-2026',
     title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 3만원 차이',
