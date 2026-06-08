@@ -2,6 +2,114 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-lightspray-cloudmonster-3-hyper-review-2026',
+    slug: 'on-lightspray-cloudmonster-3-hyper-review-2026',
+    title: '로봇이 3분 만에 \'뿌려서\' 만든 어퍼 — On 라이트스프레이 클라우드몬스터 3 하이퍼 리뷰 | 205g 슈퍼트레이너의 정체 + 3종 라인업 정리',
+    description: '온(On)의 클라우드몬스터 3가 일반·하이퍼·라이트스프레이 하이퍼 3종으로 갈라졌습니다. 그중 화제의 라이트스프레이 버전은 로봇이 폴리머 필라멘트를 미드솔에 직접 분사해 3분 만에 완성하는 일체형 어퍼로 205g 초경량을 달성했죠. 3종이 어떻게 다른지, 라이트스프레이 기술의 실체, 힐 45mm 맥스쿠션의 안정성·통기성, 그리고 31만 9천원이라는 가격이 한국 러너에게 합당한지 정리했습니다.',
+    thumbnail: '/images/blog/on-lightspray-cloudmonster-3-hyper-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['온', 'On', '클라우드몬스터 3 하이퍼', '라이트스프레이', 'LightSpray', '슈퍼트레이너', 'Helion HF', '초경량 러닝화', '맥스쿠션', '카본 없는 슈퍼트레이너'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>온의 클라우드몬스터 3는 <strong>3종</strong>으로 나뉩니다 — 일반(₩229,000)·하이퍼(₩259,000)·<strong>라이트스프레이 하이퍼(₩319,000)</strong>. 화제작은 맨 위 라이트스프레이 버전입니다</li>
+    <li><strong>로봇이 폴리머 필라멘트 1.5km를 미드솔 위에 직접 분사해 3분 만에 어퍼를 완성</strong> — 솔기도 끈도 없는 일체형 어퍼로 <strong>205g</strong> 초경량을 달성했습니다(어퍼 무게 33g)</li>
+    <li>힐 45mm 맥스쿠션인데도 <strong>"믿기 힘들 만큼 안정적"</strong>이라는 평가 — 단, 패딩이 없어 착화가 까다롭고 족저근막염 러너는 주의, <strong>31만 9천원</strong>은 국내 슈퍼트레이너 최고가권입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🤖</span>
+  <div class="callout-body">
+    <p class="callout-title">"신발 어퍼를 로봇이 뿌려서 만든다고?"</p>
+    <p>러닝 커뮤니티에서 화제가 된 <strong>On 라이트스프레이 클라우드몬스터 3 하이퍼(LightSpray Cloudmonster 3 Hyper)</strong>는 어퍼를 천으로 재단·봉제하는 대신 <strong>로봇 팔이 열가소성 필라멘트를 미드솔 위에 직접 분사</strong>해 만듭니다. 약 3분, 8개 부품, 솔기·접착제 없음. 그 결과가 <strong>205g</strong>짜리 맥스쿠션 슈퍼트레이너죠. 그런데 사기 전에 알아야 할 게 있습니다 — 클라우드몬스터 3가 올해 <strong>세 가지 버전</strong>으로 갈라졌거든요.</p>
+  </div>
+</div>
+
+<h2>먼저 정리 — 클라우드몬스터 3가 '3종'입니다</h2>
+<p>2026년 온은 클라우드몬스터 3 패밀리를 셋으로 출시했습니다. 이름이 비슷해 헷갈리기 쉬우니 먼저 끊고 갑니다.</p>
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>무게</th><th>어퍼</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>229,000원</td><td>301g</td><td>일반 메시</td><td>데일리·회복</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>259,000원</td><td>264g</td><td>일반 메시</td><td>장거리·템포 슈퍼트레이너</td></tr>
+    <tr><td><strong>라이트스프레이 하이퍼</strong></td><td><strong>319,000원</strong></td><td><strong>205g</strong></td><td><strong>로봇 스프레이 일체형</strong></td><td>초경량 프리미엄 슈퍼트레이너</td></tr>
+  </tbody>
+</table>
+<p>핵심 차이는 <strong>어퍼와 무게</strong>입니다. 일반과 하이퍼는 같은 천 어퍼를 쓰지만, 하이퍼 두 모델은 미드솔에 <strong>Helion™ HF(상단 PEBA계 하이퍼폼) + Helion(하단)</strong> 이중 밀도를 넣어 더 반발력 있고 두툼합니다. 그리고 맨 위 <strong>라이트스프레이</strong>가 여기에 로봇 스프레이 어퍼를 더해 무게를 <strong>일반 대비 96g(약 32%)</strong>이나 덜어낸 버전입니다. 일반 3와 하이퍼의 차이가 궁금하면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>도 참고하세요.</p>
+
+<h2>라이트스프레이가 뭐길래 — 로봇이 뿌리는 어퍼</h2>
+<p>라이트스프레이(LightSpray™)는 온이 개발한 제조 기술입니다. <strong>로봇 팔이 라스트(신발 골) 위에 폴리머 필라멘트 약 1.5km를 직접 분사</strong>해, 재단·봉제·접착 없이 어퍼 한 장을 통째로 만들어 냅니다.</p>
+<ul>
+  <li><strong>3분 완성</strong> — 전통 어퍼의 수십 개 공정이 한 번의 분사로 압축됩니다</li>
+  <li><strong>솔기·끈·힐 카운터 없음</strong> — 필라멘트가 미드솔에 열로 직접 융착돼 발을 양말처럼 감쌉니다(어퍼 무게 약 33g)</li>
+  <li><strong>친환경</strong> — 온은 비교 레이싱화 대비 <strong>CO₂ 75% 저감</strong>, 자투리 원단·접착제 없음을 내세웁니다</li>
+</ul>
+<p>실제 착화감은 "두 번째 피부"에 가깝다는 평이 많습니다. 격자 구조라 <strong>통기성도 최상위</strong>(양말 색이 비칠 정도). 다만 끈이 없고 빡빡해서 <strong>처음 신을 때 당겨 신는 요령과 적응이 필요</strong>합니다.</p>
+
+<h2>실제로 어떻게 달리나</h2>
+<p>해외 전문 매체 평가는 상당히 높습니다(Believe in the Run A티어, Road Trail Run 9.31/10). 핵심은 셋입니다.</p>
+<ul>
+  <li><strong>높은 스택, 그런데 안정적</strong> — 힐 45mm / 전족 39mm의 맥스쿠션인데도 "믿기 힘들 만큼 안정적"이라는 평가. 맥스쿠션 트레이너 중 안정성 최상위권입니다</li>
+  <li><strong>부드럽지만 무너지지 않는 반발</strong> — 상단 Helion HF(소프트) + 하단 Helion(단단)의 이중 밀도가 푹신함과 탄력을 동시에. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급</li>
+  <li><strong>넓은 페이스 대응</strong> — 부드러운 로커 설계로 회복 조깅부터 마라톤 레이스 페이스까지 한 켤레로 커버. "원슈(one-shoe)" 솔루션을 원하는 러너에게 매력적입니다</li>
+</ul>
+<p>포지션은 카본 레이서와 다릅니다. 톡 쏘는 추진력의 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 무플레이트 슈퍼트레이너와 직접 경쟁하며, 라이트스프레이는 그보다도 26g 가볍습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">사기 전 꼭 알아야 할 단점</p>
+    <ul>
+      <li><strong>어퍼에 패딩이 전혀 없습니다</strong> — 힐 칼라 지지가 없어 초기 아킬레스 자극이 올 수 있어, 온이 <strong>전용 보호 양말(On Elite Run Sock)을 동봉</strong>합니다. 맨발 착화는 비추천</li>
+      <li><strong>착화 난이도</strong> — 끈 없는 빡빡한 핏이라 처음엔 신기 까다롭고, 뒤꿈치 좁은 러너는 힐 슬립이 생길 수 있습니다</li>
+      <li><strong>족저근막염·아치 통증 이력자 주의</strong> — 내측 아치 지지가 강해 불편할 수 있습니다</li>
+      <li><strong>어퍼 장기 내구성 미검증</strong> — 스프레이 TPU 소재의 장기 데이터가 아직 없습니다(아웃솔 내구성은 우수)</li>
+      <li><strong>인솔(깔창) 분리 불가</strong> — 일체형 구조라 오소틱(맞춤 깔창) 사용자에겐 부적합</li>
+    </ul>
+  </div>
+</div>
+
+<h2>한국 러너 — 살까, 말까</h2>
+<p>발볼은 토박스 72.8mm로 <strong>표준</strong>이라 보통 발에는 무난하지만, <strong>와이드 옵션이 없습니다</strong>(일체형 어퍼 특성상). 발볼이 매우 넓다면 망설여집니다. 그리고 가격 <strong>319,000원</strong>은 국내 슈퍼트레이너 중 최고가권 — "로봇 제조 어퍼"라는 기술 프리미엄이 분명히 얹혀 있습니다.</p>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">이렇게 정리됩니다</p>
+    <ul>
+      <li><strong>라이트스프레이 하이퍼(₩319,000)</strong> — 최신 제조 기술과 극강 경량(205g)에 끌리고, 통기성·안정성을 최우선하며, 가격이 부담 없는 얼리어답터</li>
+      <li><strong><a href="/shoes/on-cloudmonster-3-hyper">일반 하이퍼(₩259,000)</a></strong> — 같은 Helion HF 미드솔 성능을 6만 원 싸게. 패딩 있는 일반 어퍼라 착화·핏이 편한 게 오히려 장점. <strong>대부분의 러너에겐 이쪽이 합리적</strong></li>
+      <li><strong>가성비 슈퍼트레이너</strong>를 원한다면 → <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">라이닝 레드헤어 9 울트라</a>(10만 원대)처럼 절반 값 대안도 있습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. '클라우드몬스터 3 하이퍼'랑 '라이트스프레이'랑 같은 거 아닌가요?</h3>
+<p>다릅니다. <strong>일반 하이퍼(₩259,000)</strong>는 천 어퍼, <strong>라이트스프레이 하이퍼(₩319,000)</strong>는 로봇 스프레이 어퍼입니다. 미드솔(Helion HF 이중 밀도)은 같지만 어퍼와 무게(264g vs 205g), 가격이 다릅니다.</p>
+
+<h3>Q. 카본 레이싱화처럼 빠른가요?</h3>
+<p>방향이 다릅니다. 카본 플레이트가 없는 <strong>슈퍼트레이너</strong>라, 톡 쏘는 추진력보다는 <strong>부드럽고 안정적인 장거리·템포 라이드</strong>가 강점입니다. 레이스 기록용이면 카본화가, 훈련+장거리 겸용이면 이쪽이 맞습니다.</p>
+
+<h3>Q. 동봉 양말은 꼭 신어야 하나요?</h3>
+<p>권장합니다. 어퍼에 패딩이 없어 <strong>뒤꿈치·아킬레스 보호</strong>를 위해 온이 전용 양말을 함께 줍니다. 특히 초기 적응 기간엔 신는 게 좋습니다.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스는 표준(72.8mm)이라 보통 발은 무난하지만 <strong>와이드 옵션이 없습니다</strong>. 발볼이 매우 넓다면 신중하게, 가능하면 매장에서 신어보고 결정하세요.</p>
+
+<h2>마무리</h2>
+<p>라이트스프레이 클라우드몬스터 3 하이퍼는 "<strong>로봇이 만든 어퍼</strong>"라는 화제성과 205g 경량, 그리고 맥스쿠션치고 뛰어난 안정성으로 분명 매력적인 신발입니다. 다만 <strong>31만 9천원의 기술 프리미엄</strong>이 핵심 갈림길이죠. 그 무게와 신기술에 가치를 둔다면 만족스럽지만, "같은 성능을 더 싸게"라면 <a href="/shoes/on-cloudmonster-3-hyper">일반 하이퍼</a>가, "안정적인 데일리"라면 <a href="/shoes/on-cloudmonster-3">일반 클라우드몬스터 3</a>가 더 합리적입니다. 내 우선순위가 <strong>최신 기술·경량</strong>인지, <strong>가성비</strong>인지부터 정하면 답이 보입니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 발표와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. RunRepeat 랩 수치는 동일 미드솔을 쓰는 비(非)라이트스프레이 하이퍼 기준이며, 라이트스프레이 버전은 어퍼·무게가 다릅니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'seoul-7979-running-crew-free-2026',
     slug: 'seoul-7979-running-crew-free-2026',
     title: '서울시가 매주 목요일 밤 \'무료\'로 달린다 — 7979 서울 러닝크루 | 기록칩·코칭·간식까지 공짜, 레벨별 코스·신청법 정리',
