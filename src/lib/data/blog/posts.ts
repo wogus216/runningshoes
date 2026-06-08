@@ -2,6 +2,117 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudsurfer-max-review-2026',
+    slug: 'on-cloudsurfer-max-review-2026',
+    title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 3만원 차이',
+    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 3만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudsurfer-max-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['온', 'On', '클라우드서퍼 맥스', '클라우드서퍼 2', '맥스쿠션', '데일리 쿠션화', 'CloudTec Phase', 'easy run', '회복런', '안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드서퍼 맥스는 이름과 달리 <strong>폭신한 맥스쿠션이 아니라 "단단하고 안정적인" 데일리화</strong> — 에너지 리턴이 48%로 역대 최저권이라 반발감을 기대하면 실망합니다</li>
+    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 3만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
+    <li>그럼에도 <strong>넓은 플랫폼의 안정성·접지력·평발 지지력</strong>은 분명한 강점. "단단하고 안정적인 회복런·일상 겸용"을 원하는 러너에겐 맞습니다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🤔</span>
+  <div class="callout-body">
+    <p class="callout-title">"Max"인데 폭신하지 않다?</p>
+    <p>온이 드디어 <strong>맥스쿠션 데일리화</strong> <a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a>를 내놨습니다. 이름만 보면 호카 본디나 뉴발 1080처럼 구름 위를 걷는 폭신함을 기대하게 되죠. 그런데 해외 전문 리뷰(BITR·Road Trail Run·Doctors of Running)와 RunRepeat 랩 데이터는 한목소리로 <strong>"이름만 Max"</strong>라고 평합니다. 왜 그런지, 그리고 그럼에도 누구에게 맞는지 솔직하게 짚어보겠습니다.</p>
+  </div>
+</div>
+
+<h2>클라우드서퍼 맥스, 어떤 신발인가</h2>
+<p>온의 <strong>CloudTec Phase</strong>(압축되며 굴러가는 파드 구조)에 Helion 폼을 얹은 데일리 트레이너입니다. 힐 37.3mm / 전족 29.4mm 스택, 292g, 충격흡수(SA) 141로 <strong>보호력은 충분</strong>합니다. 전작 클라우드이클립스의 소음 나던 외부 스피드보드를 없애 라이드를 정리했고, 어퍼 품질은 최상급이라는 평이 많습니다.</p>
+<p>문제는 그 다음입니다.</p>
+
+<h2>"Max"라는 이름의 함정</h2>
+<ul>
+  <li><strong>에너지 리턴 48% — RunRepeat 역대 최저권</strong>. "바운스 대비 가격이 최악"이라는 혹평까지 나옵니다. 톡 쏘는 반발과는 거리가 멉니다</li>
+  <li><strong>경도 43.8 AC로 단단</strong> — '맥스쿠션'의 푹신하게 꺼지는 느낌이 없습니다. 진짜 맥스쿠션을 기대하면 실망합니다</li>
+  <li><strong>292g 무게</strong> — 빠른 페이스에선 둔하게 느껴집니다</li>
+</ul>
+<p>즉 클라우드서퍼 맥스는 "폭신한 맥스쿠션"이 아니라 <strong>"단단하고 묵직한 안정형 데일리"</strong>로 이해해야 합니다. 호카 본디 9 같은 포지션을 노렸지만 실제 감촉은 더 단단하죠.</p>
+
+<h2>핵심 — 클라우드서퍼 2와 뭐가 다른가</h2>
+<p>가장 냉정하게 따져볼 부분입니다. 같은 클라우드서퍼 라인의 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 비교하면:</p>
+<table>
+  <thead>
+    <tr><th></th><th>클라우드서퍼 맥스</th><th>클라우드서퍼 2</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>219,000원</td><td>199,000원</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37.3mm</td><td>37.5mm (거의 동일)</td></tr>
+    <tr><td><strong>경도</strong></td><td>43.8 AC</td><td>43.8 AC (동일)</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>48%</td><td>52% (Max가 더 낮음)</td></tr>
+    <tr><td><strong>토박스</strong></td><td>71.4mm</td><td>73.5mm (Max가 더 좁음)</td></tr>
+    <tr><td><strong>무게</strong></td><td>292g</td><td>254g (Max가 38g 무거움)</td></tr>
+  </tbody>
+</table>
+<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 3만 원 비쌉니다.</strong> 전문 리뷰어들이 "가격 프리미엄을 정당화하기 어렵다"고 입을 모으는 이유죠. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">사기 전 알아야 할 단점</p>
+    <ul>
+      <li><strong>레이싱 루프 결함</strong> — 끈을 잡아주는 패브릭 루프가 미끄러운 끈을 못 잡아 <strong>주행 중 풀린다</strong>는 지적이 많습니다. 끈도 과도하게 길어 걸릴 수 있습니다</li>
+      <li><strong>통기성 부족</strong> — 어퍼가 좋아 보여도 실제 환기는 약해, 한여름 한강 러닝엔 더울 수 있습니다</li>
+      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm로 표준 하단. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
+      <li><strong>가격</strong> — 21만 9천원은 단단한 데일리화로는 프리미엄. 가성비는 약합니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>그럼에도, 강점은 분명하다</h2>
+<ul>
+  <li><strong>안정성</strong> — 넓은 힐 플랫폼(95mm)과 단단한 폼으로 발이 안정적으로 잡힙니다. 평발·경미한 과내전 러너에게 지지력이 좋습니다(DPT 평가 B+)</li>
+  <li><strong>접지력</strong> — 젖은 보도블록에서도 미끄럼이 적습니다</li>
+  <li><strong>무릎 보호</strong> — SA 141 충격흡수로 무릎 부담이 적어 회복런·장거리 easy run에 적합합니다</li>
+  <li><strong>일상 겸용</strong> — 단단하고 안정적이라 하루 종일 걷는 날 신어도 편합니다</li>
+</ul>
+
+<h2>살까, 말까 — 경쟁자와 함께</h2>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">이렇게 정리됩니다</p>
+    <ul>
+      <li><strong>맞는 사람</strong>: "단단하고 안정적인" 회복런·일상 겸용 데일리를 원하고, 온 디자인을 좋아하며, 평발 지지가 필요한 러너</li>
+      <li><strong>맞지 않는 사람</strong>: 폭신한 맥스쿠션을 기대하는 러너, 빠른 반발을 원하는 러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
+      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(3만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 맥스쿠션이라 무릎에 좋나요?</h3>
+<p>SA 141 충격흡수로 <strong>무릎 보호엔 충분</strong>합니다. 단 "폭신하게 꺼지는" 쿠션이 아니라 "단단하게 받쳐주는" 보호라는 점을 기대치에 반영하세요.</p>
+
+<h3>Q. 그냥 클라우드서퍼 2 사는 게 낫나요?</h3>
+<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 3만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스가 71.4mm로 <strong>표준 하단</strong>이라 좁은 편이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
+
+<h3>Q. 러닝 입문용으로 사도 되나요?</h3>
+<p>안정적이라 회복·가벼운 조깅엔 무난하지만, 21만 9천원 가격과 "Max 기대치"를 생각하면 입문용으로 최선은 아닙니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보고 결정하세요.</p>
+
+<h2>마무리</h2>
+<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>3만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'on-cloudmonster-3-review-2026',
     slug: 'on-cloudmonster-3-review-2026',
     title: '회복런엔 이만한 게 없다 — On 클라우드몬스터 3 리뷰 | 넓어진 핏·강해진 록커의 데일리 쿠션화, 하이퍼와 뭐가 다른가',
