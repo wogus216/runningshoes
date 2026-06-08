@@ -68,4 +68,18 @@ export const novemberEvents: MarathonEvent[] = [
     description:
       'MBN 주최 서울 도심 마라톤. 광화문→잠실 일직선 하프 코스(약 2.5만 명, TV 생중계). 하프 본접수 6/25·10K 6/26. 11/15은 추정일(공식 확정 전).',
   },
+  {
+    id: 'incheon-marathon-2026',
+    name: '2026 인천마라톤',
+    date: '2026-11-22',
+    month: '11월',
+    location: '인천아시아드주경기장 (인천 서구)',
+    region: '인천',
+    distances: ['풀코스', '10K', '5K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://incheonmarathon.or.kr',
+    description:
+      '인천시·대한육상연맹 주최 인천 최초·유일 공식 풀코스 마라톤(제2회). 2026년 청라하늘대교 편도 코스 검토(바다 위 러닝), 약 2만 명·풀 8천. 접수 7월 오픈 예상.',
+  },
 ];

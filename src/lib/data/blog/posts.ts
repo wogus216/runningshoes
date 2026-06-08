@@ -2,6 +2,92 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-incheon-marathon',
+    slug: '2026-incheon-marathon',
+    title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·접수·2025 1회 총정리',
+    description: '인천시·대한육상연맹이 주최하는 인천 최초 풀코스 대회 \'인천마라톤\'이 11월 22일(일) 제2회로 열립니다. 2026년엔 청라하늘대교 위를 달리는 편도 코스(바다 위 러닝)가 검토되고, 풀코스 정원도 8천 명으로 확대됐죠. 2만 명 규모·해외 엘리트 초청의 이 공식 시 대회 일정·코스·참가비·접수 정보와 2025 제1회 결과를 정리했습니다.',
+    thumbnail: '/images/blog/2026-incheon-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 인천마라톤(제2회)이 11월 22일(일) 개최</strong> — 인천시·대한육상연맹이 주최하는 <strong>인천 최초·유일의 공식 풀코스 마라톤</strong>입니다</li>
+    <li>2026년 최대 변화는 <strong>청라하늘대교 위를 달리는 편도 코스</strong>(검토 중) — 바다 위를 달리는 국내에서 보기 드문 교량 러닝이 차별점입니다</li>
+    <li>2만 명 규모(풀코스 8천 명으로 확대)·해외 엘리트 초청의 <strong>"역대급" 공식 시 대회</strong>. 접수는 7월 오픈 예상이라 지금 일정을 챙겨두면 좋습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">바다 위 다리를 달리는 마라톤</p>
+    <p>인천은 <strong>1923년 경인역전경주·1959년 국제마라톤</strong>의 출발지로 한국 마라톤의 발상지로 꼽히지만, 정작 인천을 대표하는 공식 풀코스 대회는 없었습니다. 그 공백을 2025년 출범한 <strong>인천마라톤</strong>이 채웠죠. 2026년 제2회는 <strong>청라하늘대교(영종~청라 연결 교량) 위를 달리는 편도 코스</strong> 도입을 검토 중이라, "바다 위 러닝"이라는 독특한 경험으로 주목받고 있습니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+<table>
+  <tbody>
+    <tr><td><strong>대회일</strong></td><td>2026년 11월 22일(일) — 확정</td></tr>
+    <tr><td><strong>종목</strong></td><td>풀코스(42.195km, 8천 명) · 10K · 5K</td></tr>
+    <tr><td><strong>출발</strong></td><td>인천아시아드주경기장 (인천 서구)</td></tr>
+    <tr><td><strong>규모</strong></td><td>약 2만 명 (해외 엘리트 초청 포함)</td></tr>
+    <tr><td><strong>주최</strong></td><td>인천광역시 · 대한육상연맹</td></tr>
+  </tbody>
+</table>
+
+<h2>청라하늘대교 편도 코스 (2026 변경 검토)</h2>
+<p>2025년 1회 대회는 문학경기장 기점 반환 코스였는데, <strong>2026년은 청라하늘대교를 통과하는 편도 코스</strong>로 변경이 검토되고 있습니다.</p>
+<ul>
+  <li><strong>유력안</strong>: 인천아시아드주경기장 출발 → <strong>청라하늘대교</strong> → 영종 해안남로 → 씨사이드파크 도착</li>
+  <li><strong>특징</strong>: 도심의 역동성과 서해 해안 경관을 동시에. 국내에 드문 <strong>교량 위 러닝</strong></li>
+  <li><strong>10K·5K</strong>: 아시아드주경기장 출발 왕복 코스</li>
+</ul>
+<p class="caption">※ 청라하늘대교 편도 코스는 2026-04 기준 '검토 중'으로 확정 전입니다. 공식 요강 발표 시 변경될 수 있습니다.</p>
+
+<h2>2025 제1회 돌아보기</h2>
+<p>2025년 첫 대회는 <strong>2만 명, 해외 8개국 엘리트 70명</strong>이 참가하며 성황리에 출범했습니다. 남자부는 에티오피아의 <strong>게르바 베아타 디바바(2:06:52)</strong>, 여자부는 루마니아의 조안 첼리모 멜리(2:22:57)가 우승했죠. 광역자치단체 공식 풀코스 대회로는 대구마라톤에 이은 두 번째로, <strong>시비 20억 원</strong>이 투입된 인천시의 대표 마라톤 포지셔닝이 분명합니다.</p>
+
+<h2>접수·참가비</h2>
+<ul>
+  <li><strong>접수</strong>: 7월 오픈 예상(2025년은 7/10 선착순). 공식 사이트 incheonmarathon.or.kr</li>
+  <li><strong>참가비</strong>(검토 중): 풀 80,000원 / 10K 50,000원 / 5K 30,000원 — <em>2025년 대비 인상 검토, 확정 발표 전</em></li>
+  <li><strong>완주 기념품</strong>: 완주 메달 + 기능성 티셔츠 + 온라인 기록증 + 기록칩(풀·10K)</li>
+  <li><strong>상금</strong>: 국내부 총 8,600만 원(1위 1,500만 원), 해외부 36만 달러</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">참가 전 체크 — 미확정 정보 & 대회 혼동 주의</p>
+    <ul>
+      <li><strong>코스·참가비·접수일은 검토/예상</strong>입니다(2026-06 기준). 확정 요강은 7월 접수 오픈 즈음 발표되니, 신청 전 공식 사이트를 반드시 확인하세요</li>
+      <li><strong>대회 혼동 주의</strong> — 봄에 열리는 <strong>인천국제하프마라톤</strong>(3월, 문학경기장, 26년 역사)과는 <strong>완전히 별개 대회</strong>입니다. 이 글의 인천마라톤은 2025년 신설된 풀코스 대회(or.kr)예요</li>
+      <li>대중교통(인천1호선) 접근이 편리하니 차량 통제를 감안해 지하철 이용을 권합니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>다른 인천·가을 대회와 함께</h2>
+<ul>
+  <li>같은 인천이라도 성격이 다릅니다 — <a href="/blog/2026-disney-run-incheon-virtual-run">디즈니런 2026 인천</a>(10/24 테마런), <a href="/blog/2026-songdo-lee-bongju-marathon">송도 이봉주 마라톤</a>(6/28 송도)</li>
+  <li>11월 서울 대회를 함께 보려면 → <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>(11/15 광화문→잠실)</li>
+  <li>인천에서 평소 뛸 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a></li>
+</ul>
+<p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한 번에 확인하세요.</p>
+
+<h2>마무리</h2>
+<p>2026 인천마라톤은 <strong>"인천을 대표하는 첫 풀코스 대회의 2년 차"</strong>이자, <strong>바다 위 청라하늘대교를 달리는 특별한 경험</strong>을 예고하는 대회입니다. 인천 러너에겐 홈 대회, 외지 러너에겐 색다른 코스로 매력적이죠. 핵심은 <strong>11/22 일정을 기억하고 7월 접수 오픈을 놓치지 않는 것</strong>. 확정 코스·참가비는 공식 발표 시 다시 확인하세요. 🏃</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 인천시 공식 발표와 경향신문·인천in 등 언론 보도, 2025년 제1회 대회 자료를 종합한 내용입니다. 2026년 코스(청라하늘대교)·참가비·접수일은 검토/예상 단계라 변동될 수 있으니, 신청 전 공식 사이트(incheonmarathon.or.kr)를 반드시 확인하세요. 봄의 인천국제하프마라톤과는 별개 대회입니다. (글감: @runninglife_korea, 2026-06-08)</p>
+`,
+  },
+  {
     id: '2026-mbn-seoul-marathon-registration',
     slug: '2026-mbn-seoul-marathon-registration',
     title: '광화문에서 잠실까지 일직선 21km — 2026 MBN 서울마라톤 접수 임박 | 6/25 하프·6/26 10K 본접수, 코스·참가비 총정리',
