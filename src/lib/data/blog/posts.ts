@@ -2,6 +2,126 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudmonster-3-hyper-review-2026',
+    slug: 'on-cloudmonster-3-hyper-review-2026',
+    title: '카본 없이 슈퍼블라스트와 맞붙는다 — On 클라우드몬스터 3 하이퍼 리뷰 | 25만 9천원 무플레이트 슈퍼트레이너의 균형점',
+    description: '온(On)의 클라우드몬스터 3 하이퍼는 카본 플레이트 없이 Helion HF 이중 밀도 폼으로 장거리·템포 훈련을 받쳐주는 슈퍼트레이너입니다. 힐 45mm 맥스쿠션에 264g 경량, 아식스 슈퍼블라스트와 직접 경쟁하죠. 라이트스프레이 버전보다 6만 원 싸고 어퍼가 편한 이 "합리적 하이퍼"가 한국 러너에게 맞는지, 발볼·평발·가격 관점에서 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudmonster-3-hyper-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-08',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['온', 'On', '클라우드몬스터 3 하이퍼', '슈퍼트레이너', 'Helion HF', '무플레이트', '슈퍼블라스트', '마라톤 훈련화', '맥스쿠션', '카본 없는 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>클라우드몬스터 3 하이퍼는 <strong>카본 플레이트 없이</strong> Helion HF + Helion 이중 밀도 폼으로 반발력을 끌어올린 <strong>슈퍼트레이너</strong> — 힐 45mm 맥스쿠션에 264g 경량입니다</li>
+    <li>경쟁 상대는 <strong>아식스 슈퍼블라스트</strong>. 카본의 부담 없이 장거리·템포를 한 켤레로 소화하려는 러너에게 맞고, <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 버전</a>보다 <strong>6만 원 싸고 어퍼가 편합니다</strong></li>
+    <li>단, <strong>와이드 옵션이 없고</strong> 높은 스택이 평발엔 불안할 수 있으며, <strong>25만 9천원</strong>은 가성비 최우선 러너에겐 부담입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">'슈퍼트레이너'가 뭐냐면</p>
+    <p>요즘 러닝화 시장의 흐름이 <strong>"카본 레이서는 부담스럽고, 데일리화는 심심하다"</strong>는 러너를 위한 중간 지대 — 바로 <strong>슈퍼트레이너</strong>입니다. 카본 플레이트는 빼되 <strong>고반발 슈퍼폼 + 높은 스택</strong>으로 장거리·템포 훈련을 빠르고 편하게 받쳐주죠. <strong>온 클라우드몬스터 3 하이퍼</strong>는 여기에 정확히 올라탄 모델이고, 같은 자리를 노리는 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a>와 직접 맞붙습니다.</p>
+  </div>
+</div>
+
+<h2>클라우드몬스터 3 하이퍼, 뭐가 특별한가</h2>
+<p>일반 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>가 단일 Helion 폼의 데일리화라면, <strong>하이퍼</strong>는 미드솔을 <strong>이중 밀도</strong>로 업그레이드한 버전입니다.</p>
+<ul>
+  <li><strong>상단 Helion™ HF (PEBA계 하이퍼폼)</strong> — 부드럽고 반발력 있는 슈퍼폼</li>
+  <li><strong>하단 Helion + CloudTec 섀시</strong> — 단단하게 받쳐 높은 스택에서도 흔들림을 잡아줍니다</li>
+</ul>
+<p>그 결과가 <strong>힐 45mm / 전족 39mm 스택, 264g, 6mm 드롭</strong>의 무플레이트 슈퍼트레이너입니다. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급이고, RunRepeat은 89/100점을 주며 "On 역대 최고의 슈퍼트레이너"라 평했습니다. 카본의 톡 쏘는 추진력 대신 <strong>부드럽지만 무너지지 않는 반발</strong>이 핵심이죠.</p>
+
+<h2>실제로 어떻게 달리나</h2>
+<ul>
+  <li><strong>높은 스택, 그런데 안정적</strong> — 45mm 맥스쿠션인데도 하부 섀시 덕에 장거리에서 자세가 잘 유지됩니다. 슈퍼블라스트보다 하부 플랫폼이 안정적이라는 평이 많습니다</li>
+  <li><strong>범용성</strong> — 회복 조깅부터 마라톤 페이스 템포까지 한 켤레로. "인터벌과 LSD를 하나로 소화"하려는 고마일리지 러너에게 매력적입니다</li>
+  <li><strong>무릎 보호</strong> — 45mm 스택이 충격을 잘 분산해 30km 이후에도 무릎 부담이 덜합니다</li>
+</ul>
+<p>포지션은 카본화와 다릅니다. 레이스 기록 단축이 목적이면 카본 레이서가 맞고, <strong>훈련 강도를 올리면서 다리를 보호</strong>하려는 러너에게 이 신발이 빛납니다.</p>
+
+<h2>라이트스프레이 버전과 뭐가 다를까</h2>
+<p>2026년 클라우드몬스터 3 하이퍼는 <strong>두 가지</strong>로 나옵니다. 헷갈리기 쉬우니 정리합니다.</p>
+<table>
+  <thead>
+    <tr><th></th><th>일반 하이퍼 (이 글)</th><th><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>259,000원</td><td>319,000원</td></tr>
+    <tr><td><strong>무게</strong></td><td>264g</td><td>205g</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메시(패딩 있음)</td><td>로봇 스프레이 일체형(끈·패딩 없음)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td colspan="2" style="text-align:center">동일 (Helion HF + Helion 이중 밀도)</td></tr>
+  </tbody>
+</table>
+<p>핵심은 <strong>미드솔(달리는 느낌)은 같다</strong>는 점입니다. 차이는 어퍼와 무게뿐이죠. 라이트스프레이는 60g 더 가볍고 통기성이 최상이지만, 패딩이 없어 착화에 적응이 필요하고 6만 원 더 비쌉니다. <strong>대부분의 러너에겐 패딩 있고 착화 편한 일반 하이퍼가 합리적</strong>입니다. 라이트스프레이의 로봇 어퍼 기술이 궁금하다면 <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 상세 리뷰</a>를 보세요.</p>
+
+<h2>경쟁자 — 슈퍼블라스트와 비교</h2>
+<p>같은 무플레이트 슈퍼트레이너인 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a>가 직접 경쟁자입니다. 둘 다 비슷한 스택·무게지만, 클라우드몬스터 3 하이퍼는 <strong>하부 플랫폼 안정성</strong>이, 슈퍼블라스트는 <strong>톡톡 튀는 경쾌함</strong>이 상대적 강점으로 꼽힙니다. 슈퍼블라스트 세대 차이가 궁금하면 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a>도 참고하세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 러너가 사기 전 체크</p>
+    <ul>
+      <li><strong>와이드 옵션이 없습니다</strong> — 토박스 72.8mm로 표준이지만, 발볼 넓은 러너는 장거리에서 앞발이 조일 수 있습니다. 매장 착화를 권합니다</li>
+      <li><strong>평발 주의</strong> — 45mm 높은 스택이 평발 러너에겐 오히려 불안정하게 느껴질 수 있어, 안정화(카야노 계열)를 먼저 고려하는 게 나을 수 있습니다</li>
+      <li><strong>가격</strong> — 25만 9천원은 km당 약 576원으로 레이싱화급 비용입니다. 가성비가 최우선이면 <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">라이닝 레드헤어 9 울트라</a> 같은 10만 원대 대안도 있습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>살까, 말까 — 러너 타입별</h2>
+<div class="callout info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">잘 맞는 사람</p>
+    <ul>
+      <li>카본화는 부담스럽지만 <strong>훈련 강도를 올리고 싶은</strong> 러너</li>
+      <li>장거리 easy run과 마라톤 페이스 템포를 <strong>한 켤레로</strong> 소화하려는 고마일리지 러너</li>
+      <li>높은 스택의 <strong>안정감과 무릎 보호</strong>를 중시하는 러너</li>
+      <li>라이트스프레이의 기술 프리미엄(+6만 원)은 굳이 필요 없는 러너</li>
+    </ul>
+  </div>
+</div>
+<div class="callout warning">
+  <span class="callout-icon">🚫</span>
+  <div class="callout-body">
+    <p class="callout-title">맞지 않는 사람</p>
+    <ul>
+      <li><strong>발볼 넓은 러너</strong> — 와이드가 없습니다</li>
+      <li><strong>평발 러너</strong> — 높은 스택의 불안정감 주의</li>
+      <li><strong>가성비 최우선</strong> 러너 — 25만 9천원은 부담</li>
+      <li>낮은 스택의 <strong>직접적인 바닥감</strong>을 원하는 러너</li>
+    </ul>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 일반 클라우드몬스터 3랑 하이퍼, 뭐가 다른가요?</h3>
+<p>일반 3은 단일 Helion 폼의 <strong>데일리화</strong>(₩229,000), 하이퍼는 Helion HF 이중 밀도에 스택을 높인 <strong>슈퍼트레이너</strong>(₩259,000)입니다. 하이퍼가 더 두툼하고 반발력 있으며 빠른 훈련에 맞습니다.</p>
+
+<h3>Q. 마라톤 대회에 신어도 되나요?</h3>
+<p>완주·서브 목표의 훈련 겸 레이스로는 충분합니다. 다만 <strong>기록 단축</strong>이 핵심이면 카본 레이서가, <strong>훈련+장거리 겸용</strong>이면 이 신발이 맞습니다.</p>
+
+<h3>Q. 슈퍼블라스트랑 뭘 살까요?</h3>
+<p>하부 <strong>안정감</strong>을 중시하면 클라우드몬스터 3 하이퍼, 톡 쏘는 <strong>경쾌함</strong>을 원하면 슈퍼블라스트 쪽입니다. 발볼이 넓다면 둘 다 와이드가 제한적이니 착화 확인이 우선입니다.</p>
+
+<h3>Q. 발볼 넓은데 괜찮나요?</h3>
+<p>토박스는 표준(72.8mm)이라 보통 발은 무난하지만 <strong>와이드가 없습니다</strong>. 발볼이 넓다면 반 사이즈 업도 근본 해결은 아니니, 매장에서 신어보고 결정하세요.</p>
+
+<h2>마무리</h2>
+<p>클라우드몬스터 3 하이퍼는 "<strong>카본은 부담스럽고 훈련은 더 빠르게</strong>"라는 러너에게 정확히 맞는 무플레이트 슈퍼트레이너입니다. 라이트스프레이 같은 화려한 신기술은 없지만, <strong>패딩 있는 편한 어퍼와 6만 원 싼 가격</strong>으로 오히려 더 실용적이죠. 핵심 갈림길은 둘입니다 — <strong>내 발볼이 표준인가</strong>, 그리고 <strong>25만 9천원의 값을 훈련 빈도로 뽑을 수 있는가</strong>. 두 가지에 "예"라면 슈퍼블라스트와 진지하게 저울질해 볼 만합니다. 더 가벼운 극강 경량을 원하면 <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이</a>, 데일리 위주면 <a href="/shoes/on-cloudmonster-3">일반 클라우드몬스터 3</a>가 답입니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택은 측정 기준(공식 vs 랩 실측)에 따라 약간 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'on-lightspray-cloudmonster-3-hyper-review-2026',
     slug: 'on-lightspray-cloudmonster-3-hyper-review-2026',
     title: '로봇이 3분 만에 \'뿌려서\' 만든 어퍼 — On 라이트스프레이 클라우드몬스터 3 하이퍼 리뷰 | 205g 슈퍼트레이너의 정체 + 3종 라인업 정리',
