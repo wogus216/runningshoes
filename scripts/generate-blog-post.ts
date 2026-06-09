@@ -7,6 +7,10 @@
  *   npx tsx scripts/generate-blog-post.ts --url "https://..." --title "제목" --type news
  *   echo "소식 내용..." | npx tsx scripts/generate-blog-post.ts --title "제목" --type event
  *   npm run generate:blog -- --title "제목" --type event
+ *
+ * 비용 옵션 (6/15 유료화 대비):
+ *   BLOG_MODEL=claude-haiku-4-5  npm run generate:blog -- ...   # 대량 발행 시 저렴한 모델
+ *   --max-tokens 3000                                            # 출력 상한 조정 (기본 4096)
  */
 
 import Anthropic from '@anthropic-ai/sdk';
@@ -180,17 +184,39 @@ STRICT Requirements:
 10. End with a concise "에디터 한마디" section summarizing key advice
 11. Do NOT wrap in markdown code blocks — output raw HTML only`;
 
+  // 비용 절감: 모델·출력 상한을 env/인자로 조정 (기본값은 기존 동작 유지)
+  const model = process.env.BLOG_MODEL || 'claude-sonnet-4-6';
+  const maxTokens = Number(args['max-tokens']) || 4096;
+
   const message = await client.messages.create({
-    model: 'claude-sonnet-4-6',
-    max_tokens: 4096,
+    model,
+    max_tokens: maxTokens,
     messages: [{ role: 'user', content: userPrompt }],
     system: systemPrompt,
   });
 
-  const rawContent = message.content[0].type === 'text' ? message.content[0].text : '';
+  // 비용 가시성: 토큰 사용량 + 예상 비용 출력
+  const u = message.usage;
+  const PRICE: Record<string, { in: number; out: number }> = {
+    'claude-sonnet-4-6': { in: 3, out: 15 }, // USD / MTok
+    'claude-haiku-4-5': { in: 1, out: 5 },
+    'claude-opus-4-8': { in: 15, out: 75 },
+  };
+  const p = PRICE[model] || PRICE['claude-sonnet-4-6'];
+  const costUsd = (u.input_tokens * p.in + u.output_tokens * p.out) / 1_000_000;
+  console.log(
+    `   💰 ${model} | 입력 ${u.input_tokens} + 출력 ${u.output_tokens} 토큰 ≈ $${costUsd.toFixed(4)}`
+  );
+
+  const firstBlock = message.content[0];
+  const rawContent = firstBlock && firstBlock.type === 'text' ? firstBlock.text : '';
 
   if (!rawContent) {
-    console.error('❌ 콘텐츠 생성 실패: API 응답이 비어있습니다.');
+    console.error(`❌ 콘텐츠 생성 실패: API 응답이 비어있습니다. (stop_reason: ${message.stop_reason})`);
+    process.exit(1);
+  }
+  if (message.stop_reason === 'max_tokens') {
+    console.error(`⚠️  출력이 max_tokens(${maxTokens})에서 잘렸습니다. --max-tokens를 늘려 재실행하세요.`);
     process.exit(1);
   }
 
@@ -200,6 +226,30 @@ STRICT Requirements:
     .replace(/^```\s*/i, '')
     .replace(/\s*```$/, '')
     .trim();
+
+  // 출력 품질 가드: 깨진 결과를 빌드 전에 잡아 재발행/재호출 토큰 낭비 방지
+  const guardErrors: string[] = [];
+  if (/<\/?(html|body|head|script)\b/i.test(htmlContent)) {
+    guardErrors.push('금지된 래퍼 태그(html/body/head/script)가 포함됨');
+  }
+  if (htmlContent.includes('```')) {
+    guardErrors.push('markdown 코드펜스(```)가 본문에 남아 있음');
+  }
+  if (!/<(h2|h3|p)\b/i.test(htmlContent)) {
+    guardErrors.push('본문 구조 태그(h2/h3/p)가 하나도 없음');
+  }
+  // callout이 있다면 정확한 포맷인지 확인 (포맷 오류 시 스타일 깨짐)
+  const calloutOpen = (htmlContent.match(/<div class="callout (?:tip|warning|info)"/g) || []).length;
+  const calloutBody = (htmlContent.match(/<div class="callout-body">/g) || []).length;
+  if (calloutOpen !== calloutBody) {
+    guardErrors.push(`callout 포맷 불일치 (열림 ${calloutOpen} ≠ callout-body ${calloutBody})`);
+  }
+  if (guardErrors.length > 0) {
+    console.error('❌ 생성 결과 검증 실패 — posts.ts에 추가하지 않았습니다:');
+    guardErrors.forEach((e) => console.error(`   • ${e}`));
+    console.error('   프롬프트를 조정하거나 재실행하세요. (토큰 낭비 방지를 위해 파일은 그대로 둡니다)');
+    process.exit(1);
+  }
 
   // 메타데이터 생성
   const slug = generateSlug(title);
