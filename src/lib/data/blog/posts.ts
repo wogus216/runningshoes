@@ -2,6 +2,90 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'li-ning-red-hare-9-lineup-2026',
+    slug: 'li-ning-red-hare-9-lineup-2026',
+    title: '적토마 9 삼형제 완전 비교 — 울트라 vs 프로 vs 베이스, 내게 맞는 적토마는? | 라이닝 레드헤어 9 라인업 가이드',
+    description: '라이닝 적토마(레드헤어) 9는 한 세대에 울트라·프로·베이스 3종이 동시 출시됐습니다. 이름만 같지 미드솔 폼·플레이트·스택·발볼·가격이 전부 다른 별개의 신발이죠. 맥스쿠션 슈퍼트레이너(울트라), 가성비 데일리(프로), 발볼 넓은 입문(베이스) — 셋의 차이를 한눈에 비교하고, 내 발과 목적에 맞는 적토마를 고르는 법을 데이터로 정리했습니다. 인터랙티브 비교도 함께 제공합니다.',
+    thumbnail: '/images/blog/li-ning-red-hare-9-lineup-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-09',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['라이닝', '적토마', '레드헤어 9', 'Li-Ning', '중국 러닝화', '비교', '울트라', '프로', '가성비 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>적토마 9는 한 세대에 <strong>울트라·프로·베이스 3종</strong>이 동시 출시 — 이름만 같지 <strong>폼·플레이트·스택·가격이 전부 다른 별개 신발</strong>입니다</li>
+    <li>셋 다 <strong>"카본"이 아닙니다</strong>: 울트라=유리섬유, 프로=TPU 지지편, 베이스=무플레이트. 진짜 풀카본 레이서는 적토마가 아니라 라이닝 <strong>비전(飞电)</strong> 라인입니다</li>
+    <li>한 줄 정리: <strong>발볼 넓으면 베이스</strong>(전족 와이드), <strong>푹신한 장거리면 울트라</strong>, <strong>다재다능 데일리면 프로</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 헷갈릴까</p>
+    <p>2026년 1월 라이닝이 적토마 9 세대를 <strong>울트라·프로·베이스 3종 동시</strong>로 내놓으면서, "적토끼 9 울트라가 카본이라며?", "프로가 더 비싼데 더 좋은 거 아냐?" 같은 혼선이 많습니다. 결론부터 말하면 셋은 <strong>가격 순서대로 더 좋은 상위호환이 아니라, 용도가 다른 별개 모델</strong>입니다. 하나씩 뜯어보겠습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 보는 3종 비교</h2>
+<table>
+  <thead>
+    <tr><th>모델</th><th>카테고리</th><th>미드솔 / 플레이트</th><th>스택(힐/전족)·드롭</th><th>무게</th><th>발볼</th><th>직구가</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-ultra">9 울트라</a></strong></td><td>쿠션화</td><td>PEBA 3중 + Super Boom / <strong>유리섬유</strong></td><td>47/42mm · 5mm</td><td>246g</td><td>좁음</td><td>~15만</td></tr>
+    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-pro">9 프로</a></strong></td><td>데일리</td><td>2중 Boom / <strong>TPU 지지편</strong></td><td>36/28mm · 8mm</td><td>222g</td><td>좁음</td><td>~14만</td></tr>
+    <tr><td><strong><a href="/shoes/li-ning-red-hare-9">9 베이스</a></strong></td><td>입문화</td><td>단층 LIGHT FOAM / <strong>없음</strong></td><td>~32/23mm(추정) · 9mm</td><td>~320g</td><td><strong>넓음</strong></td><td>~9.5만</td></tr>
+  </tbody>
+</table>
+<p>가격(울트라 &gt; 프로 &gt; 베이스)은 "성능 순위"가 아니라 <strong>미드솔 기술의 복잡도</strong> 순서입니다. 푹신함·스택은 울트라가 최고지만, 가벼움은 프로가, 발볼 여유는 베이스가 가장 낫습니다.</p>
+
+<h2>9 울트라 — 푹신한 장거리·회복런용 맥스쿠션</h2>
+<p><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a>는 47mm 힐 스택에 PEBA 3중 미드솔을 얹은 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 셋 중 가장 푹신하고 바운시하지만 무게(246g)와 스택이 큰 만큼 빠른 인터벌에는 답답합니다. 경쟁 상대는 카본 레이서가 아니라 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a>·<a href="/shoes/asics-megablast">메가블라스트</a> 같은 슈퍼트레이너죠. <strong>LSD·회복런·마라톤 훈련</strong> 위주이고 푹신함을 최우선한다면 울트라입니다. 자세한 분석은 <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">"중국 카본화"의 진실 글</a>에서 다뤘습니다.</p>
+
+<h2>9 프로 — 다재다능한 가성비 데일리 트레이너</h2>
+<p><a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>는 36/28mm의 낮은 스택에 2중 Boom 폼을 쓴 <strong>데일리 트레이너</strong>입니다. 셋 중 가장 가볍고(222g) 단단해 이지런부터 템포까지 두루 소화합니다. 흔히 "프로가 카본 버전"으로 알려졌지만, <strong>라이닝 공식 설명은 카본이 아닌 TPU 지지편</strong>입니다(마케팅의 T400 카본 주장은 독립 검증이 없습니다). 호카 마하·노바블라스트급 데일리를 더 싸게 원한다면 프로가 답입니다.</p>
+
+<h2>9 베이스 — 발볼 넓은 한국 러너를 위한 입문</h2>
+<p><a href="/shoes/li-ning-red-hare-9">레드헤어 9(베이스)</a>는 단층 LIGHT FOAM에 플레이트가 없는 <strong>입문 트레이너</strong>로, 셋 중 가장 저렴합니다(직구 10만 원 미만). 무게는 약 320g으로 무거운 편이라 빠른 훈련용은 아니지만, 결정적 차별점이 있습니다 — <strong>울트라·프로가 좁은 핏인 반면, 베이스만 전족이 넓게 설계</strong>됐습니다. 발볼이 넓어 적토마를 포기했던 한국 러너에게는 오히려 이 베이스가 맞습니다. 입문·통근·체력검정 겸용으로도 무난합니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">3종 나란히 비교해 보기</p>
+    <p>스펙을 직접 나란히 놓고 보고 싶다면 아래 비교 도구를 쓰세요. 세 모델이 미리 선택돼 있어 쿠셔닝·무게·안정성·가성비 점수를 한 화면에서 견줄 수 있습니다.<br><strong><a href="/compare?shoes=li-ning-red-hare-9-ultra,li-ning-red-hare-9-pro,li-ning-red-hare-9">→ 적토마 9 삼형제 한눈에 비교하기</a></strong></p>
+  </div>
+</div>
+
+<h2>"카본 아니야?" — 셋 다 카본이 아닙니다</h2>
+<p>적토마 9 라인업에서 가장 흔한 오해입니다. 정리하면 이렇습니다.</p>
+<ul>
+  <li><strong>9 울트라</strong> — 미드풋 <strong>유리섬유</strong> 윙 플레이트(비틀림 제어용, 추진용 아님)</li>
+  <li><strong>9 프로</strong> — <strong>TPU</strong> 윙 지지편(공식 표기). 일부 마케팅의 "T400 카본"은 독립 검증 없음</li>
+  <li><strong>9 베이스</strong> — <strong>플레이트 없음</strong></li>
+</ul>
+<p>즉 적토마 9에는 진짜 풀카본 레이서가 없습니다. 카본의 톡톡 튀는 추진력을 원한다면 라이닝의 레이싱 전용 <strong>비전(飞电)</strong> 라인을 봐야 합니다. 광고 문구와 실제 소재가 어떻게 다른지는 <a href="/blog/running-shoe-data-not-marketing-guide-2026">러닝화, 광고에 속지 말고 데이터로 고르세요</a>에서 더 다뤘습니다.</p>
+
+<h2>그래서 내게 맞는 적토마는?</h2>
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">목적별 선택 가이드</p>
+    <p><strong>· 푹신한 장거리·회복런</strong> → 9 울트라<br><strong>· 가볍고 다재다능한 일상 훈련</strong> → 9 프로<br><strong>· 발볼이 넓거나 입문·통근 겸용·최저가</strong> → 9 베이스</p>
+  </div>
+</div>
+<p>발볼이 넓은 한국 러너라면 울트라·프로(좁은 핏)는 사이즈를 여유 있게 보거나, 애초에 전족이 넓은 베이스를 고르는 편이 안전합니다. 내 발볼이 어느 정도인지 모른다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 가이드</a>를 먼저 보세요.</p>
+
+<h2>마무리</h2>
+<p>적토마 9 삼형제는 "비싼 게 좋은 것"이 아니라 <strong>용도가 다른 세 신발</strong>입니다. 푹신함의 울트라, 다재다능의 프로, 가성비·와이드의 베이스 — 본인 발과 훈련 목적에 맞춰 고르면 됩니다. 셋 다 한국 정식 유통이 없어 <strong>직구·구매대행</strong>으로만 살 수 있고, 사이즈 교환이 까다로우니 발볼을 특히 신중히 보세요. 같은 가격대의 정식 출시 슈퍼트레이너와 비교하려면 <a href="/best/max-cushion">쿠션화 추천</a>·<a href="/best/daily-trainer">데일리 트레이너 추천</a>도 함께 참고하시기 바랍니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 라이닝 공식 자료와 Road Trail Run·WeeViews 등 해외 실측 리뷰, 중국 리테일/커뮤니티(识货) 자료를 교차 정리한 내용입니다. 적토마 9 라인업은 한국 정식 출시 전이며 독립 랩(RunRepeat 등) 측정치가 없어 일부 수치(특히 베이스 스택)는 실측·추정 기준입니다. 가격은 직구·구매대행 시세로 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'incheon-international-half-marathon',
     slug: 'incheon-international-half-marathon',
     title: '26년째 봄을 여는 인천 대표 하프 — 인천국제하프마라톤 | 송도 해안·\'통곡의 벽\'·WA 공인 코스 완전 정리',
