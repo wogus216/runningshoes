@@ -2,6 +2,89 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'seoul-100k-2026-registration',
+    slug: 'seoul-100k-2026-registration',
+    title: '서울 한복판에서 울트라트레일을 — 2026 서울 100K 접수 시작 | 신규 20K로 입문도 가능, 100K·50K 종목·자격·코스 총정리',
+    description: '광화문광장에서 출발해 인왕산·북한산·수락산·청계천·한강을 잇는 도심 울트라트레일, 2026 서울 100K가 6월 2일 선착순 접수를 시작했습니다. 9월 19~20일 개최, 올해 신설된 20K(1,700명·자격 제한 없음)는 울트라트레일 입문에 딱이죠. 100K·50K·20K 거리·누적고도·참가비·자격 요건과 필수 장비, 도심 트레일만의 매력까지 정리했습니다.',
+    thumbnail: '/images/blog/seoul-100k-2026-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-09',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['서울 100K', '울트라트레일', '도심 트레일', '트레일러닝', '20K', '광화문', '대회', '트레일화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 서울 100K</strong>(서울 국제 울트라트레일러닝 대회)가 <strong>6월 2일 선착순 접수를 시작</strong>했습니다. 9월 19~20일 광화문광장 출발, 서울의 산·둘레길·한강·청계천을 잇는 <strong>도심 울트라트레일</strong>입니다</li>
+    <li>올해 <strong>20K 종목이 신설</strong>(정원 1,700명·07:30 출발·야간 없음·자격 제한 없음)돼, 울트라트레일 입문자도 도전할 수 있게 됐습니다</li>
+    <li>단 <strong>100K·50K는 ITRA 포인트 자격이 필요</strong>하고 트레일화·헤드램프 등 의무 장비가 있습니다 — 완전 초보라면 20K부터 시작하세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌃</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 시작 — 도심에서 즐기는 울트라트레일</p>
+    <p>2019년 시작된 서울시 주최 <strong>서울 100K</strong>가 올해도 돌아옵니다. 9월 19~20일 광화문광장에서 출발해 서울의 대표 산과 둘레길, 한강과 청계천을 한 번에 달리는 독특한 대회죠. UTMB 인덱스·ITRA에도 등재돼 있습니다. <strong>6월 2일 오전 10시부터 IntheTrail에서 선착순 접수</strong>가 시작됐고, 특히 올해는 입문자용 20K가 새로 생겼습니다.</p>
+  </div>
+</div>
+
+<h2>'도심' 울트라트레일이 뭐가 특별한가</h2>
+<p>일반적인 울트라트레일이나 <a href="/blog/untangodo-skyrace-10th-anniversary-2026">운탄고도 스카이레이스</a> 같은 산악 대회는 고산·오지에서 열립니다. 반면 서울 100K는 <strong>광화문 한복판에서 출발·도착</strong>하죠. 그래서 차이가 큽니다.</p>
+<ul>
+  <li><strong>접근성</strong> — 대중교통으로 출발선까지. 응원·관람도 쉬움</li>
+  <li><strong>도심 + 자연의 혼합</strong> — 인왕산·북악산·북한산·수락산·불암산·아차산 등 서울 외곽 산을 잇고, 청계천·한강 강변과 서울 성곽길·둘레길까지 통과</li>
+  <li><strong>야경 러닝</strong> — 100K는 새벽 5시 출발해 야간 구간을 지나며, 도심 야경을 보며 달리는 경험이 독특합니다</li>
+</ul>
+<p>트레일러닝 자체가 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를, 국내 트레일·스카이레이스 시즌 전체가 궁금하면 <a href="/blog/korea-trail-skyrace-guide-2026">트레일·스카이레이스 대회 가이드</a>를 함께 보세요.</p>
+
+<h2>2026 종목 한눈에 보기</h2>
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리(실측)</th><th>누적 고도</th><th>제한 시간</th><th>참가비</th><th>정원</th><th>자격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>ULTRA 100K</strong></td><td>약 109km</td><td>약 4,700~5,200m</td><td>28시간 30분</td><td>280,000원</td><td>500</td><td>ITRA 2점</td></tr>
+    <tr><td><strong>SKY 50K</strong></td><td>약 54km</td><td>약 2,800~3,200m</td><td>14시간</td><td>200,000원</td><td>500</td><td>ITRA 1점</td></tr>
+    <tr><td><strong>20K</strong>(신규)</td><td>20km</td><td>약 1,100m</td><td>—</td><td>120,000원</td><td><strong>1,700</strong></td><td><strong>제한 없음</strong></td></tr>
+  </tbody>
+</table>
+<p>100K의 실제 거리는 약 109km, 누적 상승은 5,000m에 육박합니다(완주 시간 보통 18~26시간). 서울의 거의 모든 주요 산을 잇는 셈이라 이름만 '100K'지 난이도는 극한급이죠.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">🟢</span>
+  <div class="callout-body">
+    <p class="callout-title">입문자라면 — 올해 신설된 20K</p>
+    <p>20K는 <strong>오전 7:30 출발(야간 구간 없음)·정원 1,700명·ITRA 자격 요건 없음</strong>으로, 셋 중 가장 접근하기 좋습니다. 기존 10K 종목을 두 배로 확장한 형태로 보이며, 도심 트레일을 가볍게 경험하기에 적당하죠. 다만 <strong>2026 코스 세부와 20K 컷오프·필수 장비는 아직 공식 점검 중</strong>이니, 확정 안내는 공식 채널(seoul100k.com)에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>준비물 — 트레일화·헤드램프는 필수</h2>
+<p>서울 100K는 도심에서 출발하지만 코스 대부분이 <strong>산악 트레일</strong>입니다. 인왕산 기차바위처럼 미끄러운 암릉 구간도 있어 로드화로는 위험하죠. 의무·권장 장비는 이렇습니다.</p>
+<ul>
+  <li><strong>트레일러닝화</strong>(필수) — 그립과 보호가 중요. <a href="/best/trail">트레일화 추천</a>에서 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a> 같은 험로 대응 모델을 확인하세요</li>
+  <li><strong>헤드램프</strong> — 100K 야간 구간 필수(50K 새벽 출발도 권장)</li>
+  <li><strong>트레일 배낭 + 물통(1L↑)</strong> — 일회용 컵 미제공</li>
+  <li><strong>방수 재킷·비상식량·보조배터리·119 앱</strong> 등</li>
+</ul>
+
+<h2>접수 정보</h2>
+<ul>
+  <li><strong>접수 시작</strong> — 2026년 6월 2일(월) 오전 10시부터 <strong>선착순</strong></li>
+  <li><strong>접수처</strong> — IntheTrail (inthetrail.com)</li>
+  <li><strong>대회일</strong> — 2026년 9월 19~20일(토~일), 광화문광장</li>
+  <li><strong>참고</strong> — 100K·50K는 새벽 5시 출발이라 전날 인근 숙박 권장(노보텔 패키지 별도)</li>
+</ul>
+<p>선착순이라 인기 종목(특히 입문용 20K)은 조기 마감될 수 있으니, 도전을 마음먹었다면 서두르는 게 좋습니다.</p>
+
+<h2>마무리</h2>
+<p>서울 100K는 "도심 한복판에서 출발하는 울트라트레일"이라는, 세계적으로도 드문 포맷의 대회입니다. 100K·50K는 ITRA 포인트가 필요한 상급자용이지만, <strong>올해 신설된 20K 덕분에 트레일 입문자에게도 문이 열렸죠</strong>. 산악 스카이레이스인 <a href="/blog/untangodo-skyrace-10th-anniversary-2026">운탄고도</a>가 부담스러웠다면, 접근성 좋은 서울 100K의 20K로 첫 트레일을 경험해 보는 것도 좋은 선택입니다. 트레일화 한 켤레부터 준비해 보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 서울100K 공식 사이트·서울시 보도자료·ITRA 등재 정보를 정리한 내용입니다. 2026 코스 세부와 20K 컷오프·필수 장비 등은 공식 점검·발표 전 단계라 변동될 수 있으니, 접수·코스 확정 정보는 공식 채널(seoul100k.com, IntheTrail)에서 확인하세요. (확인 시점: 2026-06-09)</p>
+`,
+  },
+  {
     id: 'untangodo-skyrace-10th-anniversary-2026',
     slug: 'untangodo-skyrace-10th-anniversary-2026',
     title: '이번 주말, 한국 최대 스카이레이스가 10살이 된다 — 운탄고도 스카이레이스 10주년 | 스카이레이스란? 종목·코스·난이도와 내년 도전 가이드',
