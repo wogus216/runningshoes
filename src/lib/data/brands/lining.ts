@@ -26,7 +26,7 @@ export const liningBrand: Brand = {
       scienceExplanation:
         'PEBA(폴리에테르 블록 아마이드)를 초임계 발포해 펠릿 형태로 성형한 폼입니다. 나일론·EVA 기반 폼보다 밀도 대비 에너지 반환이 높고 가벼워, 슈퍼트레이너·레이싱화 미드솔에 사용됩니다.',
       performanceRating: 8,
-      usedInShoes: ['li-ning-red-hare-9-ultra'],
+      usedInShoes: ['li-ning-red-hare-9-ultra', 'li-ning-red-hare-9-pro'],
     },
     {
       id: 'li-ning-super-boom-capsule',
