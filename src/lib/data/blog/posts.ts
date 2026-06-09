@@ -1390,14 +1390,14 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <h2>그럼 정체는? 10만 원대 맥스쿠션 슈퍼트레이너</h2>
-<p>오해를 걷어내면 정체가 분명해집니다. 레드헤어 9 울트라는 <strong>PEBA 기반 3중 미드솔 + 43~46mm급 스택</strong>의 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 데일리 조깅부터 LSD·마라톤 훈련까지 푹신하게 받쳐주는 성격으로, 경쟁 상대는 카본 레이싱화가 아니라 <strong>아식스 슈퍼블라스트·메가블라스트, 나이키 보메로 계열</strong>입니다. 그리고 바로 거기서 가성비가 빛납니다.</p>
+<p>오해를 걷어내면 정체가 분명해집니다. 레드헤어 9 울트라는 <strong>PEBA 기반 3중 미드솔</strong>에 <strong>힐 47mm·전족 42mm 스택(Road Trail Run 실측, 드롭 5mm)</strong>을 얹은 <strong>맥스쿠션 슈퍼트레이너</strong>입니다. 무게도 246g(US 9.5)으로 두꺼운 스택 대비 무겁지 않죠. 데일리 조깅부터 LSD·마라톤 훈련까지 푹신하게 받쳐주는 성격으로, 경쟁 상대는 카본 레이싱화가 아니라 <strong>아식스 슈퍼블라스트·메가블라스트, 나이키 보메로 계열</strong>입니다(스펙 전체는 <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라 상세 페이지</a>에 정리해 두었습니다). 그리고 바로 거기서 가성비가 빛납니다.</p>
 
 <table>
   <thead>
     <tr><th>모델</th><th>포지션</th><th>플레이트</th><th>한국 가격(정가/병행)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>라이닝 레드헤어 9 울트라</strong></td><td>맥스쿠션 슈퍼트레이너</td><td>유리섬유(토션)</td><td><strong>13~17만 원대</strong> (병행·구매대행)</td></tr>
+    <tr><td><strong><a href="/shoes/li-ning-red-hare-9-ultra">라이닝 레드헤어 9 울트라</a></strong></td><td>맥스쿠션 슈퍼트레이너</td><td>유리섬유(토션)</td><td><strong>13~17만 원대</strong> (병행·구매대행)</td></tr>
     <tr><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></td><td>슈퍼트레이너/레이싱</td><td>없음(트윈 폼)</td><td>259,000원</td></tr>
     <tr><td><a href="/shoes/asics-megablast">아식스 메가블라스트</a></td><td>맥스쿠션 트레이너</td><td>없음</td><td>299,000원</td></tr>
     <tr><td><a href="/shoes/nike-vomero-premium">나이키 보메로 프리미엄</a></td><td>맥스쿠션 데일리</td><td>없음</td><td>289,000원</td></tr>
@@ -3033,7 +3033,7 @@ export const blogPosts: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>리닝 적토끼 9 울트라</strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
+    <li><strong><a href="/shoes/li-ning-red-hare-9-ultra">리닝 적토끼 9 울트라</a></strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
     <li>단, <strong>"카본화"는 오해</strong> — 이 모델은 카본이 아닌 <strong>유리섬유 플레이트</strong>입니다(카본은 같은 세대 9 PRO). 레이스용이 아니라 <strong>LSD·훈련용 트레이너</strong></li>
     <li><strong>한국 공식 유통이 없어 직구</strong>(타오바오·알리·KREAM)해야 하고, <strong>미드풋 78mm로 좁아</strong> 발볼 넓은 한국 러너는 주의가 필요합니다</li>
   </ul>

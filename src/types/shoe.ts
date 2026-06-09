@@ -236,7 +236,8 @@ export const brandList = [
   'Saucony',
   'On',
   'Mizuno',
-  'Puma'
+  'Puma',
+  'Li-Ning'
 ] as const;
 
 export type Brand = typeof brandList[number];
