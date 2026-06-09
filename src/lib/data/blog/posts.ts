@@ -2,6 +2,91 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'race-distance-difficulty-guide-2026',
+    slug: 'race-distance-difficulty-guide-2026',
+    title: '풀코스 완주자도 10K·하프에서 무너지는 이유 — 거리별 \'체감 난이도\'의 과학 | 에너지 시스템·페이스 배분·거리별 훈련 처방',
+    description: '"풀코스를 여러 번 완주했는데 왜 10K·하프가 더 힘들까?" 거리가 짧다고 쉬운 게 아닙니다. 거리마다 동원하는 에너지 시스템과 요구 강도가 다르기 때문이죠. 5K·10K·하프·풀코스가 각각 어떤 괴로움을 주는지, 풀 완주자가 짧은 거리에서 무너지는 진짜 이유(훈련 특이성)와 거리별 페이스 배분·훈련 처방까지 데이터로 정리했습니다.',
+    thumbnail: '/images/blog/race-distance-difficulty-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-09',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['거리별 훈련', '페이스 배분', '에너지 시스템', '10K', '하프마라톤', '풀코스', '젖산역치', '러닝 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>거리가 짧다고 쉬운 게 아닙니다 — <strong>거리마다 동원하는 에너지 시스템과 요구 강도가 다르기</strong> 때문이죠. 10K·하프는 풀코스보다 <strong>훨씬 높은 강도</strong>를 오래 버텨야 합니다</li>
+    <li>풀코스를 완주해도 10K가 힘든 건 <strong>훈련 특이성</strong> 때문 — LSD 위주로만 달리면 젖산역치 근처의 <strong>고강도 지속 능력</strong>이 길러지지 않습니다</li>
+    <li>해법은 거리별로 다른 처방: 풀=<strong>지구력(LSD)</strong>, 하프·10K=<strong>젖산역치·템포</strong>, 5K=<strong>VO2max 인터벌</strong>. 페이스 배분 실수만 줄여도 체감 난이도가 확 떨어집니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">"풀 뛴 내가 왜 10K에서 헉헉대지?"</p>
+    <p>러닝 커뮤니티에서 자주 나오는 고민입니다. 42.195km를 완주한 사람이 정작 10K 레이스나 하프에서 더 고통스러워하죠. 직관과 반대 같지만, 운동생리학적으로는 <strong>아주 당연한 현상</strong>입니다. 거리와 난이도는 비례하지 않거든요. 핵심은 '얼마나 멀리'가 아니라 '<strong>얼마나 강하게 오래</strong>'입니다.</p>
+  </div>
+</div>
+
+<h2>거리는 짧은데 왜 더 괴로울까 — '강도'의 문제</h2>
+<p>러닝의 괴로움은 거리(km)가 아니라 <strong>강도(페이스)</strong>가 결정합니다. 풀코스는 길지만 상대적으로 낮은 강도로 달립니다. 반면 10K는 거리가 1/4이지만, 젖산이 쌓이기 시작하는 <strong>젖산역치(LT) 근처</strong>를 40~60분간 버텨야 하죠. 즉 짧은 거리일수록 <strong>'더 아픈 구간'에서 더 오래 머무는</strong> 셈입니다.</p>
+<p>몸이 에너지를 만드는 방식(에너지 시스템)도 거리마다 다릅니다. 짧고 빠를수록 무산소·VO2max 영역을, 길고 느릴수록 유산소 지구력을 씁니다. 같은 '러닝'이라도 거리별로 거의 다른 운동인 셈이죠.</p>
+
+<table>
+  <thead>
+    <tr><th>거리</th><th>주 에너지 시스템</th><th>강도(젖산역치 기준)</th><th>주된 괴로움</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>5K</strong></td><td>무산소 + VO2max</td><td>역치 초과 (매우 높음)</td><td>짧고 강렬한 산소 빚 — 폐가 터질 듯</td></tr>
+    <tr><td><strong>10K</strong></td><td>젖산역치 근처</td><td>역치 줄타기 (높음)</td><td>'아픈데 멈출 수 없는' 40~50분</td></tr>
+    <tr><td><strong>하프(21.1K)</strong></td><td>역치~마라톤 페이스</td><td>중상 (지속 가능 상한)</td><td>후반 누적 피로 + 페이스 유지 압박</td></tr>
+    <tr><td><strong>풀(42.2K)</strong></td><td>유산소 지구력</td><td>중 (대화 가능 수준)</td><td>글리코겐 고갈·'마의 35km 벽'</td></tr>
+  </tbody>
+</table>
+
+<h2>풀코스 완주자가 10K에서 무너지는 진짜 이유</h2>
+<p>핵심은 <strong>훈련 특이성(specificity)</strong>입니다. 몸은 훈련한 방식대로 적응하거든요.</p>
+<ul>
+  <li><strong>마라톤 준비 = LSD 위주</strong>: 풀코스를 목표로 하면 대부분 느린 장거리(<a href="/blog/lsd-training-beginner-guide-korea">LSD</a>) 위주로 훈련합니다. 이건 유산소 지구력은 키우지만, <strong>젖산역치 근처의 고강도를 버티는 능력</strong>은 거의 길러주지 않습니다</li>
+    <li><strong>10K·하프 = 역치 능력 싸움</strong>: 정작 짧은 레이스는 그 '고강도 지속' 능력을 요구합니다. LSD만 해온 몸엔 가장 약한 부분이죠</li>
+  <li><strong>페이스 감각 부재</strong>: 마라톤 페이스에 익숙한 몸이 10K 페이스(훨씬 빠름)로 나가면, 초반에 역치를 넘겨버려 중반에 무너집니다</li>
+</ul>
+<p>즉 "풀도 뛰었는데 10K쯤이야"라며 같은 훈련으로 임하면 오히려 고전합니다. 거리가 짧아질수록 <strong>전용 고강도 훈련</strong>이 필요합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">가장 흔한 실수 — 초반 오버페이스</p>
+    <p>짧은 레이스일수록 초반 흥분으로 목표보다 빠르게 나가기 쉽습니다. 10K에서 첫 2km를 목표 페이스보다 10초/km만 빠르게 가도, 5km 지점에서 젖산이 폭발해 후반이 지옥이 됩니다. <strong>거리가 짧을수록 초반 페이스 절제가 더 중요</strong>합니다.</p>
+  </div>
+</div>
+
+<h2>거리별 훈련 처방</h2>
+<p>"체감 난이도"를 낮추는 길은 그 거리가 요구하는 능력을 콕 집어 훈련하는 것입니다.</p>
+<ul>
+  <li><strong>5K</strong> — VO2max 인터벌(400m~1km 반복). 짧고 강한 자극으로 최대산소섭취량을 끌어올립니다</li>
+  <li><strong>10K·하프</strong> — <a href="/blog/tempo-run-training-guide-korea">템포런</a>과 젖산역치 훈련이 핵심. 역치 페이스를 20~40분 지속하는 능력을 키웁니다. 볼륨과 강도를 균형 있게 쌓는 <a href="/blog/nsm-norwegian-singles-method-training">노르웨이식(NSM) 더블 트레숄드</a>도 효과적입니다</li>
+  <li><strong>풀코스</strong> — <a href="/blog/lsd-training-beginner-guide-korea">LSD</a>로 유산소 베이스와 글리코겐 효율을 키우되, 마라톤 페이스 구간 주행을 섞습니다</li>
+</ul>
+<p>고강도 구간에서 숨이 일찍 차는 게 고민이라면, 페이스 문제뿐 아니라 호흡 효율도 점검하세요 — <a href="/blog/running-breathing-guide-korea">러닝 호흡법 가이드</a>에 2:2 리듬과 코·입 호흡을 정리해 두었습니다.</p>
+
+<h2>거리별로 신발도 다르게</h2>
+<p>요구 강도가 다른 만큼, 거리·페이스에 맞는 신발이 체감 난이도를 줄여줍니다.</p>
+<ul>
+  <li><strong>10K·하프 레이스(고강도)</strong> — 반발과 추진을 주는 <a href="/best/racing">카본 레이싱화</a>가 역치 페이스 유지에 유리합니다(단, 입문자는 근력부터)</li>
+  <li><strong>데일리·템포 훈련</strong> — 다재다능한 <a href="/best/daily-trainer">데일리 트레이너</a>가 역치·템포 주행을 두루 받쳐줍니다</li>
+  <li><strong>풀코스·LSD·회복</strong> — 누적 피로를 줄이는 <a href="/best/max-cushion">맥스쿠션 슈즈</a>가 장거리 부담을 덜어줍니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>거리와 난이도는 비례하지 않습니다. 풀코스는 '오래'의 싸움이고, 10K·하프는 '강하게 오래'의 싸움이에요. 풀을 완주했다고 짧은 레이스가 거저 되는 게 아니라, <strong>각 거리가 요구하는 능력을 따로 훈련</strong>해야 그 거리의 체감 난이도가 떨어집니다. 다음 목표 거리가 정해졌다면, 그 거리에 맞는 강도 훈련과 페이스 배분부터 점검해 보세요. 그것만으로도 레이스 당일의 괴로움이 확연히 줄어듭니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 훈련·운동생리 정보로, 개인의 의학적 진단을 대체하지 않습니다. 새로운 고강도 훈련을 시작할 때는 점진적으로 강도를 올리고, 통증이 지속되면 전문가의 진료를 받으세요. (참고 글감: @dongmaclub, 2026-06-08)</p>
+`,
+  },
+  {
     id: 'li-ning-red-hare-9-lineup-2026',
     slug: 'li-ning-red-hare-9-lineup-2026',
     title: '적토마 9 삼형제 완전 비교 — 울트라 vs 프로 vs 베이스, 내게 맞는 적토마는? | 라이닝 레드헤어 9 라인업 가이드',
