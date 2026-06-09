@@ -2,6 +2,89 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'untangodo-skyrace-10th-anniversary-2026',
+    slug: 'untangodo-skyrace-10th-anniversary-2026',
+    title: '이번 주말, 한국 최대 스카이레이스가 10살이 된다 — 운탄고도 스카이레이스 10주년 | 스카이레이스란? 종목·코스·난이도와 내년 도전 가이드',
+    description: '6월 13~14일 강원 정선 하이원리조트에서 운탄고도 스카이레이스가 10주년(10회)을 맞습니다. 옛 석탄 운반로를 달리는 한국 대표 스카이레이스로, 전날 6/12엔 10주년 스페셜 나이트 트레일(16km)도 열리죠. 스카이레이스가 일반 트레일·로드와 뭐가 다른지, SKY Run·Half·Marathon 종목과 코스 난이도, 트레일화 준비물, 그리고 내년 도전을 위한 접수 팁까지 정리했습니다.',
+    thumbnail: '/images/blog/untangodo-skyrace-10th-anniversary-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-09',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['운탄고도 스카이레이스', '스카이레이스', '트레일러닝', '하이원리조트', '정선', '10주년', '트레일화', '대회'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>운탄고도 스카이레이스</strong>가 이번 주말(6/13~14, 정선 하이원리조트) <strong>10주년(2017년 1회 → 2026년 10회)</strong>을 맞습니다. 전날 6/12엔 10주년 스페셜 <strong>나이트 트레일(16km·+710m, 200명)</strong>도 열립니다</li>
+    <li>스카이레이스는 트레일러닝의 한 갈래로 <strong>누적 고도가 크고 산악 코스라 로드화로는 불가</strong> — 트레일화·배낭·방풍이 사실상 필수입니다</li>
+    <li>올해 본 대회는 이미 <strong>추첨 접수 마감</strong>(2월)이지만, 입문 종목 <strong>SKY Run 11.5km</strong>는 하프 완주자라면 내년 도전해볼 만합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏔️</span>
+  <div class="callout-body">
+    <p class="callout-title">이번 주말, 정선 고원에서</p>
+    <p>6월 13~14일 강원 정선 <strong>하이원리조트</strong>에서 <strong>운탄고도 스카이레이스</strong>가 열립니다. 2017년 시작해 올해로 <strong>10회·10주년</strong>, 세계 25개국 이상이 참가하고 UTMB 인덱스에도 등재된 한국 대표 스카이레이스죠. 호카(HOKA)가 5년 연속 메인 스폰서를 맡을 만큼 트레일 신(scene)의 간판 대회입니다. 10주년을 기념해 본 대회 전날(6/12)엔 야간 스페셜 세션까지 준비됐습니다.</p>
+  </div>
+</div>
+
+<h2>'운탄고도'가 뭔가요?</h2>
+<p>운탄고도(運炭高道)는 1960~70년대 강원도 탄광 지역에서 <strong>석탄을 나르던 옛 운반로</strong>를 뜻합니다. 영월·정선·태백 일대 해발 700~1,330m 고원 능선을 따라 이어진 <strong>총연장 173km</strong>의 길을, 하이원리조트가 '하늘길'로 정비해 대회 코스로 활용하죠. 이름의 '1330'은 최고점 만항재(1,330m)에서 왔습니다. 암벽·급경사보다 <strong>비교적 완만한 고원 숲길</strong>이 많고, 고지대라 6월에도 선선한 게 특징입니다.</p>
+
+<h2>스카이레이스 = 로드도, 일반 트레일도 아니다</h2>
+<p>스카이레이스(Skyrace)는 트레일러닝의 하위 장르로, <strong>누적 고도 상승이 크고 고지대 산악을 달리는</strong> 종목입니다. 로드 마라톤과 가장 큰 차이는 '속도'보다 <strong>오르막·내리막 기술과 등반력</strong>이 승부를 가른다는 점이에요.</p>
+<ul>
+  <li><strong>로드 러닝</strong> — 평지 포장도로, 페이스(속도) 중심</li>
+  <li><strong>일반 트레일러닝</strong> — 흙길·산길, 로드보다 기술 필요</li>
+  <li><strong>스카이레이스</strong> — 트레일 중에서도 <strong>고도 누적이 현저히 크고</strong>, 산악 코스라 로드화 사용 불가, 의무장비 규정이 더 엄격</li>
+</ul>
+<p>스카이레이스가 처음이라면 개념과 시즌 전체 흐름을 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 대회 가이드</a>에서, 트레일러닝 자체가 낯설다면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>에서 먼저 감을 잡는 걸 추천합니다.</p>
+
+<h2>2026 종목 한눈에 보기</h2>
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>누적 고도</th><th>제한 시간</th><th>참가비</th><th>난이도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>SKY Run</strong></td><td>11.5km</td><td>610m</td><td>4시간</td><td>80,000원</td><td>입문 적합</td></tr>
+    <tr><td><strong>SKY Half</strong></td><td>20.4km</td><td>1,005m</td><td>5시간</td><td>110,000원</td><td>중급</td></tr>
+    <tr><td><strong>SKY Marathon</strong></td><td>42.2km</td><td>1,910m</td><td>8시간</td><td>150,000원</td><td>상급·엘리트</td></tr>
+    <tr><td><strong>나이트 트레일</strong>(10주년)</td><td>16km</td><td>710m</td><td>—</td><td>별도</td><td>경험자(야간)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">🌙</span>
+  <div class="callout-body">
+    <p class="callout-title">10주년 스페셜 — 나이트 트레일 (6/12)</p>
+    <p>본 대회 전날인 <strong>6월 12일(금) 밤, 하이원리조트에서 16km·누적 710m</strong>의 나이트 트레일이 단 <strong>200명 한정</strong>으로 열립니다. 헤드램프를 켜고 고원을 달리는 특별 세션이죠. 사전등록(PRE-REGISTRATION) 방식으로 진행되며, <strong>참가비·출발 시각·의무장비 등 세부는 주최 측(@goodrunner_skyrace) 공지를 확인</strong>하세요(공식 페이지 정식 오픈 전 단계로 보입니다).</p>
+  </div>
+</div>
+
+<h2>입문자도 가능할까? — SKY Run 11.5km</h2>
+<p>네 종목 중 <strong>SKY Run(11.5km·누적 610m)</strong>이 가장 접근하기 좋습니다. 4시간 제한이라 여유도 있고요. 다만 <strong>로드 레이스와는 준비가 다릅니다</strong>. 하프마라톤 완주 체력이 있다면 거리 자체는 무리가 아니지만, 오르내림이 많아 무릎 부담이 크고 노면이 거칠어 <strong>트레일 특화 준비</strong>가 필요합니다. 나이트 트레일 16km는 야간+고도 조합이라 트레일 경험자에게 권합니다.</p>
+
+<h2>준비물 — 트레일화는 '선택'이 아니라 '필수'</h2>
+<p>하이원 하늘길은 돌길·흙길·뿌리 구간이 섞여 있어 <strong>로드화로는 미끄러지고 위험</strong>합니다. 실제로 2024년 참가자의 약 65%가 호카를 신었을 만큼 그립 좋은 트레일화가 표준이죠. 쿠셔닝과 접지력을 갖춘 <a href="/best/trail">트레일화</a>를 준비하세요 — 대표적으로 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a> 같은 모델이 이런 고도·거친 노면에 강합니다. 그 외 배낭(수분·비상식량), 방풍 재킷(고산 돌풍·안개 대비)도 챙기는 게 안전합니다.</p>
+
+<h2>내년에 도전하려면 — 접수 팁</h2>
+<p>올해 본 대회는 이미 <strong>추첨 접수가 마감</strong>됐습니다(매년 2월 초 접수). 2025년엔 약 2,200명 정원에 <strong>1만 명 가까이 몰릴</strong> 만큼 경쟁이 치열하죠. 내년 도전을 노린다면 이렇게 준비하세요.</p>
+<ul>
+  <li><strong>2월 접수 기간을 놓치지 마세요</strong> — 굿러너컴퍼니(goodrunner.co.kr)에서 신청 후 추첨</li>
+  <li><strong>겨울 동안 트레일 적응 훈련</strong> — 등산·언덕 반복 주행으로 등반력·하산력을 미리 키워두기</li>
+  <li><strong>트레일화부터 장만</strong> — 한 켤레로 평소 산길 훈련까지 겸하면 일석이조</li>
+  <li><strong>숙박은 일찍</strong> — 대회 기간 하이원리조트·정선 일대 숙소가 빠르게 찹니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>운탄고도 스카이레이스 10주년은 단순한 레이스를 넘어 <strong>2박 3일 축제</strong>에 가깝습니다(요가·트레이닝 사전 프로그램, 먹거리 부스 등). 올해 출전권이 없더라도 한국 스카이레이스가 어디까지 왔는지 지켜볼 만한 주말이고, 트레일에 막 관심이 생겼다면 <strong>내년을 목표로 올여름부터 산을 타보는 것</strong>이 가장 좋은 출발입니다. 로드에서 트레일로 한 발 넓히고 싶은 러너에게 운탄고도는 더없이 좋은 목표가 되어줄 겁니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 굿러너컴퍼니·강원랜드 공식 자료와 ITRA·UTMB 등재 정보, 러닝 매체 보도를 정리한 내용입니다. 나이트 트레일 등 10주년 스페셜 세부(참가비·시각·의무장비)는 공식 발표 전 단계라 변동될 수 있으니 주최 측(@goodrunner_skyrace, goodrunner.co.kr) 공지를 확인하세요. (참고 글감: @goodrunner_co, 2026-06)</p>
+`,
+  },
+  {
     id: 'race-distance-difficulty-guide-2026',
     slug: 'race-distance-difficulty-guide-2026',
     title: '풀코스 완주자도 10K·하프에서 무너지는 이유 — 거리별 \'체감 난이도\'의 과학 | 에너지 시스템·페이스 배분·거리별 훈련 처방',
