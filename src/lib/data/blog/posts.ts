@@ -2,6 +2,89 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'stability-running-shoes-overpronation-flat-feet-2026',
+    slug: 'stability-running-shoes-overpronation-flat-feet-2026',
+    title: '평발·과내전 안정화 러닝화 추천 2026 | 카야노 33부터 14만원대 가성비까지 — 발볼·무게·지지 방식별 비교',
+    description: '발이 안쪽으로 무너지는 과내전(오버프로네이션)·평발 러너에게 안정화 러닝화는 부상 예방의 핵심입니다. 아식스 카야노 33을 비롯해 브룩스 글리세린·뉴발란스 860·사코니 가이드 등 주요 안정화 11종을 지지 방식(가이드레일·프레임)·무게·발볼·가격으로 비교하고, 과내전 자가진단과 평발 한국 러너를 위한 선택법까지 정리했습니다.',
+    thumbnail: '/images/blog/stability-running-shoes-overpronation-flat-feet-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['안정화 러닝화', '평발', '과내전', '오버프로네이션', '카야노 33', '러닝화 추천', '안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>발이 안쪽으로 무너지는 <strong>과내전(오버프로네이션)·평발</strong>이라면, 안쪽을 받쳐주는 <strong>안정화 러닝화</strong>가 무릎·발목 부상을 줄여줍니다</li>
+    <li>종합 톱픽은 <strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> — 13년 만에 부드러워진 FLUIDSUPPORT로 "지지하되 딱딱하지 않은" 균형이 좋습니다(우리 사이트에서도 가장 많이 보는 안정화)</li>
+    <li>가성비라면 <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>·<a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>(15만원대), 평발 특화는 <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>가 답입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">나는 안정화가 필요할까? — 30초 자가진단</p>
+    <p>① 신던 운동화 <strong>밑창 안쪽</strong>이 유독 닳았다 ② 맨발로 서면 발 안쪽 <strong>아치가 거의 바닥에 닿는다</strong>(평발) ③ 달리면 무릎이 안쪽으로 모인다 ④ 정강이·무릎 안쪽 통증이 잦다 — 2개 이상이면 <strong>과내전</strong> 경향일 수 있어 안정화가 도움이 됩니다. 정확한 유형은 <a href="/blog/pronation-type-running-shoe-guide-2026">내전(프로네이션) 유형 가이드</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>안정화 신발, 어떻게 고를까 — 3가지 기준</h2>
+<ul>
+  <li><strong>지지 방식</strong> — 요즘 안정화는 딱딱한 기둥(미디엄 포스트) 대신, 양옆에서 부드럽게 감싸는 방식이 대세입니다. 아식스 <strong>FLUIDSUPPORT</strong>, 브룩스 <strong>GuideRails</strong>, 호카 <strong>J-Frame/H-Frame</strong>이 대표적이죠. 자연스러운 착화감을 원하면 이런 "가이드형"이 좋습니다</li>
+  <li><strong>발볼·와이드</strong> — 평발은 발볼도 넓은 경우가 많습니다. 다행히 아래 모델 대부분 <strong>와이드(2E/4E) 옵션</strong>이 있어요</li>
+  <li><strong>무게·가격</strong> — 안정화는 보통 290~330g으로 무거운 편. 가벼움을 원하면 호카 아라히, 가성비는 15만원대 사코니·미즈노가 강합니다</li>
+</ul>
+
+<h2>안정화 러닝화 비교 — 주요 11종</h2>
+<table>
+  <thead>
+    <tr><th>모델</th><th>지지 방식</th><th>무게</th><th>가격</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>209,000</td><td>종합 1위, 부드러워진 균형</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>300g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>J-Frame</td><td>299g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
+    <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 특화·4종 와이드</td></tr>
+    <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a></td><td>광폭 플랫폼</td><td>278g</td><td><strong>159,000</strong></td><td>가성비·카야노 절반값</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a></td><td>웨이브 플레이트</td><td>286g</td><td><strong>159,000</strong></td><td>900km 내구·가성비 끝판</td></tr>
+    <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a></td><td>와이드 베이스</td><td>296g</td><td>169,000</td><td>14만원대 가성비</td></tr>
+  </tbody>
+</table>
+
+<h2>👑 종합 톱픽 — 아식스 카야노 33</h2>
+<p><a href="/shoes/asics-gel-kayano-33">카야노 33</a>은 13년간 이어온 딱딱한 안정 기둥을 버리고 <strong>FLUIDSUPPORT + 듀얼 폼</strong>으로 "지지는 하되 부드러운" 방향으로 바뀌었습니다. 그만큼 호불호도 갈리는데, 자세한 변화는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 솔직 리뷰</a>와 <a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a>에서 정리했어요. 단단한 클래식 안정감을 원하면 32가, 부드러운 신형을 원하면 33이 맞습니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">대표 안정화 4종 나란히 비교</p>
+    <p>카야노 33과 가성비·평발 대안을 한 화면에서 견줘보세요 — 쿠셔닝·무게·안정성·가성비 점수가 한눈에 들어옵니다.<br><strong><a href="/compare?shoes=asics-gel-kayano-33,brooks-glycerin-gts-22,new-balance-860-v15,saucony-guide-18">→ 카야노 33 · 글리세린 · 860 · 가이드 18 비교하기</a></strong></p>
+  </div>
+</div>
+
+<h2>목적별 베스트</h2>
+<ul>
+  <li><strong>가성비 (15만원대)</strong> — <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>, <a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>. 카야노 절반 값에 충분한 안정성</li>
+  <li><strong>평발 특화·와이드</strong> — <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>(4종 와이드, 17만원대). 신상 <a href="/blog/new-balance-860-v14-vs-v15-comparison">v15와의 차이</a>도 확인하세요</li>
+  <li><strong>맥스쿠션 안정</strong> — <a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>. 무릎 부담 큰 러너의 든든한 선택</li>
+  <li><strong>가벼운 안정화</strong> — <a href="/shoes/hoka-arahi-8">호카 아라히 8</a>(259g). 안정화답지 않게 경쾌</li>
+  <li><strong>과내전 입문</strong> — <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>. 부드러운 GuideRails로 첫 안정화에 무난</li>
+</ul>
+
+<h2>평발 한국 러너가 꼭 챙길 것</h2>
+<p>평발은 아치뿐 아니라 <strong>발볼도 넓은</strong> 경우가 많습니다. 위 모델 대부분 와이드 옵션이 있으니, 매장 착화 시 <strong>2E 이상</strong>을 함께 신어보세요. 또 안정화에 의존하기보다 <a href="/blog/running-cadence-guide-2026">케이던스(보속)</a>를 점검하고, 무릎 통증이 있다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>로 신발·착지를 함께 보는 게 근본 해결에 가깝습니다. 더 많은 안정화 모델은 <a href="/best/stability">안정화 추천 페이지</a>에서 비교할 수 있습니다.</p>
+
+<h2>마무리</h2>
+<p>안정화 러닝화의 핵심은 "내 발이 얼마나 무너지느냐"에 맞는 지지를 고르는 것입니다. 잘 모르겠다면 <strong>부드러운 가이드형(카야노 33·아드레날린·가이드 18)</strong>부터 시작해 보세요 — 과하지 않게 받쳐주면서 자연스러운 착화감을 줍니다. 평발·과내전이라고 무거운 신발만 신을 필요는 없습니다. 본인 발볼과 예산에 맞춰, 위 비교표에서 한 켤레를 골라보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝화 정보로, 과내전·평발이 모두 안정화를 필요로 하는 것은 아닙니다(중립화가 더 맞는 경우도 있습니다). 통증이 지속되면 전문가의 보행 분석·진료를 받으세요. 가격은 변동될 수 있습니다.</p>
+`,
+  },
+  {
     id: 'running-cadence-guide-2026',
     slug: 'running-cadence-guide-2026',
     title: '달리기 효율은 \'보속\'에서 갈린다 — 케이던스 높이기 가이드 | \'분당 180보\' 신화의 진실·부상 예방·올리는 법',
