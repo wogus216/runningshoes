@@ -19178,7 +19178,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li><strong>남산 업힐 (북측순환로):</strong> 안정성과 쿠셔닝이 좋은 <a href="/shoes/asics-gel-kayano-33">아식스 카야노 31</a> 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></li>
   <li><strong>한강 평지 (반포, 여의도):</strong> 가벼운 데일리화 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> 또는 <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 v14</a></li>
-  <li><strong>인터벌 훈련 (석촌호수, 올림픽공원):</strong> 반응성 높은 <a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a> 또는 <a href="/shoes/adidas-adizero-boston-12">아디다스 보스턴 12</a></li>
+  <li><strong>인터벌 훈련 (석촌호수, 올림픽공원):</strong> 반응성 높은 <a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a> 또는 <a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></li>
   <li><strong>장거리 LSD (청계천, 남산순환):</strong> 최고 쿠셔닝의 <a href="/shoes/hoka-bondi-9">호카 본디 9</a> 또는 <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 27</a></li>
 </ul>
 
