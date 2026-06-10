@@ -42,7 +42,8 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   }
 
   // SEO 최적화된 제목 생성
-  const title = `${shoe.brand} ${shoe.name} 리뷰 | 스펙, 장단점, 추천 대상 분석`;
+  // 한국 러너는 "[모델명] 후기"로 검색하고, 사이즈·발볼 정보를 가장 많이 찾는다 (GSC 검증).
+  const title = `${shoe.brand} ${shoe.name} 후기 — 사이즈·발볼·장단점 총정리`;
 
   // 상세 설명 생성 (150-160자 권장)
   const specs = shoe.specs;
@@ -50,16 +51,23 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   const weight = specs?.weight;
   const category = shoe.category;
 
+  // 발볼(토박스)은 사이즈 검색 인텐트가 커서 등급과 무관하게 항상 노출
+  const footWidthMap: Record<string, string> = {
+    narrow: '발볼 좁음',
+    standard: '발볼 표준',
+    wide: '발볼 넓음',
+  };
+  const footFit = shoe.koreanFootFit?.toBoxWidth ? footWidthMap[shoe.koreanFootFit.toBoxWidth] : null;
+
   const descriptionParts = [
-    shoe.description || `${shoe.brand} ${shoe.name} 상세 리뷰`,
+    shoe.description || `${shoe.brand} ${shoe.name} 후기`,
     weight ? `무게 ${weight}g` : null,
+    footFit,
     price ? `정가 ${price}원` : null,
-    category ? `${category} 카테고리` : null,
-    shoe.koreanFootFit?.toBoxWidth === 'wide' ? '발볼 넓음' : null,
-    shoe.injuryPrevention?.kneeIssues === 'excellent' || shoe.injuryPrevention?.kneeIssues === 'good' ? '무릎 보호' : null,
+    category ? `${category} 러닝화` : null,
   ].filter(Boolean);
 
-  const description = descriptionParts.join(' | ').slice(0, 160);
+  const description = `${descriptionParts.join(' · ')} — 사이즈·장단점·추천 대상까지 한국 러너 후기`.slice(0, 160);
 
   // 키워드 생성
   const keywords = [
@@ -106,7 +114,7 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,
-      title: `${shoe.brand} ${shoe.name} - 러닝화 리뷰`,
+      title: `${shoe.brand} ${shoe.name} 후기 - 러닝화 리뷰`,
       description,
       images: [
         {
@@ -119,7 +127,7 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${shoe.brand} ${shoe.name} 리뷰`,
+      title: `${shoe.brand} ${shoe.name} 후기`,
       description,
       images: [imageUrl],
     },
