@@ -13,10 +13,12 @@
     "validate": "node scripts/validate.js",
     "images": "node scripts/process-images.js",
     "generate:blog": "tsx scripts/generate-blog-post.ts",
+    "ga": "tsx scripts/ga-report.ts",
     "postbuild": "next-sitemap",
     "prepare": "husky"
   },
   "dependencies": {
+    "@google-analytics/data": "^6.1.0",
     "@radix-ui/react-dialog": "^1.1.15",
     "@radix-ui/react-separator": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
