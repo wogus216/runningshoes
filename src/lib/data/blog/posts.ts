@@ -2,6 +2,81 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'race-timing-chip-net-gross-time-guide-2026',
+    slug: 'race-timing-chip-net-gross-time-guide-2026',
+    title: '같이 뛰었는데 내 기록이 더 빠르다? — 기록칩과 넷타임·그로스타임 완벽 정리 | RFID 원리·스타트 위치·반납까지',
+    description: '마라톤 대회에서 친구와 나란히 골인했는데 기록이 다르게 나온 경험, 있으신가요? 비밀은 기록칩과 \'넷타임 vs 그로스타임\'에 있습니다. RFID 기록칩이 어떻게 시간을 재는지, 넷타임과 그로스타임이 왜 다른지, 출발선에서 어디에 서야 손해를 안 보는지, 칩 반납 주의사항까지 마라톤 입문자가 꼭 알아야 할 기록 측정의 모든 것을 정리했습니다.',
+    thumbnail: '/images/blog/race-timing-chip-net-gross-time-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'guide' as const,
+    readingTime: 7,
+    tags: ['기록칩', '넷타임', '그로스타임', '마라톤 기록', 'RFID', '대회 입문', '러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>기록칩</strong>은 신발 끈이나 배번에 붙는 <strong>RFID 칩</strong>으로, 출발·중간·결승 지점의 매트를 밟을 때 시간을 자동 기록합니다</li>
+    <li><strong>넷타임</strong>은 '내가 출발선을 통과한 순간~결승선', <strong>그로스타임</strong>은 '출발 신호(총성)~결승선' — 뒤쪽에 서서 출발하면 둘의 차이가 커집니다</li>
+    <li>같이 골인해도 <strong>출발선 통과 시점이 다르면 넷타임이 다릅니다</strong>. 공정한 비교는 넷타임 기준이에요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⏱️</span>
+  <div class="callout-body">
+    <p class="callout-title">"분명 같이 들어왔는데 기록이 왜 달라?"</p>
+    <p>대규모 마라톤에서 친구와 나란히 결승선을 통과했는데, 나중에 보니 기록이 1~2분씩 차이 나는 일이 흔합니다. 부정 출발도, 측정 오류도 아닙니다. <strong>'언제부터 시간을 쟀느냐'</strong>가 달랐을 뿐이죠. 이 차이를 이해하면 내 기록을 정확히 읽고, 다음 대회에서 더 좋은 기록을 노리는 법도 보입니다.</p>
+  </div>
+</div>
+
+<h2>기록칩이란? — 신발에 붙는 작은 RFID</h2>
+<p>기록칩은 <strong>RFID(무선 인식) 기술</strong>을 쓰는 작은 칩입니다. 출발선·반환점·결승선 등에 깔린 <strong>감지 매트(timing mat)</strong> 위를 지날 때마다, 칩이 고유 번호와 통과 시각을 자동으로 기록하죠. 형태는 크게 두 가지입니다.</p>
+<ul>
+  <li><strong>배번 일체형</strong> — 배번(빕) 뒷면에 칩이 내장. 별도 부착·반납 불필요(요즘 대부분)</li>
+  <li><strong>슈즈칩(반납형)</strong> — 신발 끈에 케이블타이로 묶는 칩. 완주 후 <strong>반납</strong>해야 하며, 미반납 시 보증금 차감·기록 누락이 생길 수 있습니다</li>
+</ul>
+<p>매트를 제대로 밟지 않거나 칩이 떨어지면 기록이 누락될 수 있으니, 슈즈칩은 출발 전 단단히 고정하세요.</p>
+
+<h2>넷타임 vs 그로스타임 — 핵심 차이</h2>
+<p>대회 기록에는 보통 두 가지 시간이 찍힙니다.</p>
+<table>
+  <thead>
+    <tr><th>구분</th><th>측정 시작</th><th>의미</th><th>누구에게 유리?</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>그로스타임</strong><br>(Gun Time)</td><td>출발 <strong>신호(총성)</strong> 순간</td><td>공식 출발~결승. 우승·시상 기준</td><td>맨 앞 출발자</td></tr>
+    <tr><td><strong>넷타임</strong><br>(Net/Chip Time)</td><td>내가 <strong>출발선 매트</strong>를 밟은 순간</td><td>실제 내가 달린 시간</td><td>모든 참가자(공정)</td></tr>
+  </tbody>
+</table>
+<p>수천 명이 출발하는 대회에선, 뒤쪽에 선 사람이 출발선을 통과하기까지 <strong>몇 분</strong>이 걸리기도 합니다. 그동안 그로스타임은 이미 흘러가죠. 그래서 <strong>일반 참가자끼리의 기록 비교·자기 기록(PR) 판단은 넷타임이 공정</strong>합니다. 다만 <strong>대회 공식 순위·시상은 보통 그로스타임</strong> 기준이라, 상위권을 노린다면 앞쪽 출발 그룹 배정이 중요합니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">📍</span>
+  <div class="callout-body">
+    <p class="callout-title">스타트 위치 팁</p>
+    <p>기록이 목표라면 <strong>본인 예상 기록에 맞는 출발 그룹(웨이브)</strong>에 서세요. 너무 뒤에 서면 출발 정체로 초반 페이스가 흐트러지고 그로스타임 손해가 큽니다. 반대로 실력보다 앞에 서면 빠른 러너들에게 떠밀려 오버페이스하기 쉽습니다. 접수 시 기록 제출로 그룹이 배정되는 대회가 많으니 정직하게 입력하세요.</p>
+  </div>
+</div>
+
+<h2>내 기록은 어떻게 확인하나</h2>
+<p>대부분의 대회는 완주 후 <strong>문자(SMS)나 대회 홈페이지·기록 조회 사이트</strong>에서 배번/이름으로 기록을 확인할 수 있습니다. 넷타임과 그로스타임, 구간별 랩타임까지 제공되는 경우도 많죠. 구간 기록을 보면 어디서 페이스가 무너졌는지 복기할 수 있어, 다음 대회 전략에 큰 도움이 됩니다.</p>
+
+<h2>입문자가 자주 하는 실수</h2>
+<ul>
+  <li><strong>슈즈칩 반납 깜빡</strong> — 완주 직후 정신없을 때 놓치기 쉽습니다. 반납 부스 위치를 미리 확인하세요</li>
+  <li><strong>배번을 접거나 가림</strong> — 일체형 칩은 배번을 구기면 인식이 안 될 수 있습니다. 펴서 앞면에 잘 보이게 부착</li>
+  <li><strong>출발 매트 안 밟고 옆으로 출발</strong> — 넷타임 시작이 안 찍혀 기록이 그로스타임만 남거나 누락될 수 있습니다</li>
+  <li><strong>기록에 일희일비</strong> — 넷타임 기준으로 보고, 거리별로 난이도가 다르다는 점(<a href="/blog/race-distance-difficulty-guide-2026">거리별 체감 난이도</a>)도 함께 고려하세요</li>
+</ul>
+
+<h2>마무리</h2>
+<p>기록칩과 넷타임·그로스타임의 원리만 알아도 내 기록을 정확히 읽고, 출발 위치 전략까지 세울 수 있습니다. 기록 단축이 목표라면 측정 방식 이해에 더해 <a href="/blog/tempo-run-training-guide-korea">템포런</a> 같은 역치 훈련으로 실제 능력을 끌어올리는 게 핵심이고요. 다음 도전할 대회를 찾고 있다면 <a href="/marathon">마라톤 캘린더</a>에서 일정을 확인해 보세요. 정확히 알고 달리면, 숫자 너머의 내 성장도 더 잘 보입니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 대회 기록 측정 정보로, 대회마다 칩 종류·공식 기록 기준(넷/그로스)·반납 규정이 다를 수 있습니다. 참가 대회의 공식 안내를 반드시 확인하세요. (참고 글감: @dongmaclub, 2026-06-06)</p>
+`,
+  },
+  {
     id: 'seoul-100k-2026-registration',
     slug: 'seoul-100k-2026-registration',
     title: '서울 한복판에서 울트라트레일을 — 2026 서울 100K 접수 시작 | 신규 20K로 입문도 가능, 100K·50K 종목·자격·코스 총정리',
