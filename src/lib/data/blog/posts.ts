@@ -2,6 +2,298 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'achilles-tendon-running-shoes-prevention-2026',
+    slug: 'achilles-tendon-running-shoes-prevention-2026',
+    title: '러너의 아킬레스건염 — 왜 생기고 러닝화로 어떻게 줄일까 | 드롭·쿠션·예방 운동 완벽 가이드',
+    description: '아킬레스건염은 러너가 가장 흔히 겪는 부상 중 하나입니다. 갑작스러운 거리 증가, 약한 종아리, 그리고 \'낮은 드롭\' 신발이 주요 원인이죠. 아킬레스건염이 왜 생기는지, 드롭이 높은 러닝화가 어떻게 부담을 줄여주는지(보메로 18·클리프턴 10 등), 그리고 종아리 강화·워밍업 같은 예방법까지 정리했습니다.',
+    thumbnail: '/images/blog/achilles-tendon-running-shoes-prevention-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['아킬레스건염', '부상 예방', '러닝화 드롭', '종아리', '러닝 부상', '러닝 팁'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>아킬레스건염은 <strong>갑작스러운 거리·강도 증가, 약한 종아리, 낮은 드롭 신발</strong>이 겹칠 때 잘 생깁니다</li>
+    <li>러닝화에서 핵심은 <strong>드롭(힐-전족 높이차)</strong> — 드롭이 높을수록 아킬레스가 덜 늘어나 부담이 줄어듭니다(8~12mm 권장)</li>
+    <li>신발만으로는 부족 — <strong>종아리 강화(카프 레이즈)와 점진적 거리 증가</strong>가 근본 예방입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">아킬레스건염이란</p>
+    <p>아킬레스건(발뒤꿈치와 종아리를 잇는 힘줄)에 미세 손상이 누적돼 생기는 염증·통증입니다. 아침 첫발이 뻣뻣하거나, 달리기 시작·끝에 뒤꿈치 위쪽이 아프면 의심해야 하죠. 러너에게 흔하지만 <strong>한번 오면 오래 가는</strong> 부상이라, 예방이 무엇보다 중요합니다.</p>
+  </div>
+</div>
+
+<h2>왜 생길까 — 주요 원인</h2>
+<ul>
+  <li><strong>갑작스러운 거리·강도 증가</strong> — 가장 흔한 원인. 주간 거리를 한 번에 늘리면 힘줄이 적응 못 함</li>
+  <li><strong>약한 종아리·발목</strong> — 충격을 근육이 못 받으면 힘줄로 부담이 몰림</li>
+  <li><strong>낮은 드롭 신발로 급전환</strong> — 드롭이 낮으면 아킬레스가 더 늘어나는데, 익숙지 않은 발이 갑자기 신으면 무리</li>
+  <li><strong>워밍업 부족·오버페이스</strong> — 차가운 힘줄에 갑작스러운 부하</li>
+</ul>
+
+<h2>러닝화로 줄이기 — '드롭'이 핵심</h2>
+<p>드롭(힐과 전족의 높이 차)이 <strong>높을수록 발목이 덜 꺾여 아킬레스 신장이 줄어듭니다</strong>. 아킬레스가 약하거나 통증 이력이 있다면 <strong>드롭 8~12mm</strong>의 쿠션 좋은 신발이 안전합니다(낮은 드롭 4mm 이하는 아킬레스 부담이 큼).</p>
+<table>
+  <thead><tr><th>모델</th><th>드롭</th><th>특징</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td><strong>14mm</strong></td><td>높은 드롭+맥스쿠션, 아킬레스에 가장 너그러움</td></tr>
+    <tr><td><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td><td>12mm</td><td>가벼운 쿠션화, 높은 드롭</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>10mm</td><td>푹신함+안정, 종아리 편함</td></tr>
+  </tbody>
+</table>
+<p>반대로 드롭 4~6mm의 낮은 신발(예: 일부 레이싱·내추럴 슈즈)은 아킬레스가 약한 러너에겐 통증을 악화시킬 수 있으니, 전환은 아주 천천히 해야 합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">낮은 드롭으로 '갑자기' 바꾸지 마세요</p>
+    <p>맨발 트렌드·미니멀 슈즈로 급전환하다 아킬레스건염을 얻는 경우가 많습니다. 드롭을 낮추려면 <strong>몇 주에 걸쳐 점진적으로</strong>, 짧은 거리부터 적응시키세요.</p>
+  </div>
+</div>
+
+<h2>신발보다 중요한 예방 — 종아리와 점진성</h2>
+<ul>
+  <li><strong>카프 레이즈(종아리 들기)</strong> — 아킬레스 부하 운동(에센트릭)이 예방·재활에 가장 효과적. 계단 끝에서 뒤꿈치 내렸다 올리기 하루 2~3세트</li>
+  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
+  <li><strong>워밍업 필수</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 힘줄을 데우기</li>
+  <li><strong>케이던스 점검</strong> — <a href="/blog/running-cadence-guide-2026">보속</a>을 높여 오버스트라이드를 줄이면 착지 충격이 분산됩니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>아킬레스건염은 "신발 하나"로 막을 순 없지만, <strong>드롭이 높은 쿠션 신발 + 종아리 강화 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 이미 통증이 있다면 무리하지 말고 휴식과 함께 카프 레이즈로 재활하세요. 더 많은 모델은 <a href="/best/achilles">아킬레스 친화 러닝화</a>에서 비교할 수 있습니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
+`,
+  },
+  {
+    id: 'adidas-adizero-evo-sl-value-supershoe-2026',
+    slug: 'adidas-adizero-evo-sl-value-supershoe-2026',
+    title: '카본 없이 왜 빠를까 — 아디다스 아디제로 Evo SL | 아디오스 프로 폼·223g·83% 에너지 리턴의 가성비 슈퍼폼',
+    description: '아디제로 Evo SL은 카본 플레이트가 없는데도 "빠르다"는 평이 자자합니다. 비결은 레이싱화 아디오스 프로 3와 같은 100% Lightstrike Pro 슈퍼폼. 223g 초경량에 83% 에너지 리턴으로, 30만원대 카본 슈퍼슈즈의 폼을 20만원대에 담았죠. Evo SL의 정체와 누구에게 맞는지, 적토마·리벨 v5 등 가성비 경쟁 모델과의 비교까지 정리했습니다.',
+    thumbnail: '/images/blog/adidas-adizero-evo-sl-value-supershoe-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['아디제로 Evo SL', '가성비 러닝화', '슈퍼폼', 'Lightstrike Pro', '카본 대안', '템포'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>은 <strong>카본 플레이트가 없습니다</strong> — 그런데도 빠른 이유는 레이싱화 <strong>아디오스 프로 3와 똑같은 100% Lightstrike Pro 슈퍼폼</strong> 덕분이죠</li>
+    <li>223g 초경량 + <strong>83% 에너지 리턴(동급 최고)</strong> — "폼 자체가 슈퍼폼"이라 플레이트 없이도 경쾌합니다</li>
+    <li>30만원대 카본 슈퍼슈즈의 폼을 <strong>20만원대</strong>에 — 데일리부터 템포까지 한 켤레로 빠르게 굴리고 싶은 러너의 가성비 정답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⚡</span>
+  <div class="callout-body">
+    <p class="callout-title">"카본 아니라며? 근데 왜 빨라?"</p>
+    <p>요즘 러닝화는 "카본 플레이트 = 빠름"으로 알려져 있지만, 사실 속도의 절반은 <strong>폼(미드솔 소재)</strong>이 만듭니다. Evo SL은 플레이트를 뺀 대신 <strong>최상급 슈퍼폼을 통째로</strong> 넣었어요. 플레이트의 톡톡 튀는 반발 대신, 폼의 부드럽고 탄력 있는 반발로 빠르게 나가는 신발입니다.</p>
+  </div>
+</div>
+
+<h2>정체 — 아디오스 프로의 폼을 그대로</h2>
+<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>83% 에너지 리턴은 동급 최고 수준</strong>이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋고, 와이드 옵션까지 있죠.</p>
+
+<table>
+  <thead><tr><th>항목</th><th>Evo SL</th></tr></thead>
+  <tbody>
+    <tr><td>미드솔</td><td>100% Lightstrike Pro (아디오스 프로 3 동일 폼)</td></tr>
+    <tr><td>플레이트</td><td><strong>없음</strong> (카본 아님)</td></tr>
+    <tr><td>무게 / 스택 / 드롭</td><td>223g / 36·28mm / 8mm</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>83%</strong> (동급 최고)</td></tr>
+    <tr><td>발볼</td><td>표준 (와이드 옵션 O)</td></tr>
+    <tr><td>가격</td><td>209,000원</td></tr>
+  </tbody>
+</table>
+
+<h2>누구에게 맞나</h2>
+<ul>
+  <li><strong>데일리~템포를 한 켤레로</strong> — 가볍고 반발 좋아 조깅부터 빠른 훈련까지 소화</li>
+  <li><strong>카본 입문 전 단계</strong> — 카본의 강한 추진이 부담스럽거나, 발목·종아리 근력을 먼저 다지려는 러너</li>
+  <li><strong>가성비 슈퍼폼을 원하는 러너</strong> — 30만원대 카본 대신 20만원대로 슈퍼폼 경험</li>
+</ul>
+<p>반대로 <strong>레이스 기록 단축에 카본의 롤링 추진이 꼭 필요하다면</strong> Evo SL로는 아쉬울 수 있습니다 — 그땐 진짜 카본 레이서(<a href="/best/racing">레이싱화</a>)를 보세요.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">🖥️</span>
+  <div class="callout-body">
+    <p class="callout-title">가성비 슈퍼폼 4종 비교</p>
+    <p><strong><a href="/compare?shoes=adidas-adizero-evo-sl,new-balance-rebel-v5,li-ning-red-hare-9-ultra,nike-zoom-fly-6">→ Evo SL · 리벨 v5 · 적토마 9 울트라 · 줌플라이 6 비교하기</a></strong></p>
+  </div>
+</div>
+
+<h2>가성비 슈퍼폼 경쟁 — 카본 없이 빠른 신발들</h2>
+<p>Evo SL처럼 "카본 없이 폼으로 승부하는" 가성비 슈퍼폼이 요즘 대세입니다.</p>
+<ul>
+  <li><a href="/shoes/new-balance-rebel-v5">뉴발란스 리벨 v5</a> — 228g, 발랄한 FuelCell. Evo SL의 직접 경쟁</li>
+  <li><a href="/shoes/li-ning-red-hare-9-ultra">라이닝 적토마 9 울트라</a> — 유리섬유 플레이트 맥스쿠션, 10만원대(<a href="/blog/li-ning-red-hare-9-ultra-truth-2026">"중국 카본화"의 진실</a> 참고)</li>
+  <li><a href="/shoes/nike-zoom-fly-6">나이키 줌플라이 6</a> — 카본 들어간 템포 트레이너(이쪽은 플레이트 있음)</li>
+</ul>
+<p>"플레이트가 있어야 진짜 빠르다"는 통념과 달리, Evo SL은 <strong>폼만으로도 충분히 빠를 수 있다</strong>는 걸 보여주는 신발입니다.</p>
+
+<h2>마무리</h2>
+<p>Evo SL은 "카본은 없지만 카본값도 안 내는" 똑똑한 선택입니다. 레이스 기록이 목표가 아니라면, 대부분의 러너에게 <strong>슈퍼폼의 재미와 가성비</strong>를 가장 쉽게 주는 신발 중 하나죠. 데일리와 템포를 오가는 한 켤레를 찾는다면 우선순위에 올릴 만합니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 RunRepeat 랩·제조사 자료 기준이며 가격은 변동될 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'max-cushion-running-shoes-knee-protection-2026',
+    slug: 'max-cushion-running-shoes-knee-protection-2026',
+    title: '무릎 지키는 맥스쿠션 러닝화 추천 2026 | 1080 v15·님버스 28·고스트 맥스 3·본디 9 — 발볼·무게·관절 보호 비교',
+    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28·호카 본디 9(최고 쿠션), 브룩스 고스트 맥스 3(발볼 넓은 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
+    thumbnail: '/images/blog/max-cushion-running-shoes-knee-protection-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['맥스쿠션', '쿠션화', '무릎 보호', '1080 v15', '님버스 28', '고스트 맥스 3', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
+    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 216g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
+    <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·wide), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦵</span>
+  <div class="callout-body">
+    <p class="callout-title">맥스쿠션은 누구에게?</p>
+    <p>스택(폼 두께)이 두꺼운 맥스쿠션은 착지 충격을 분산해 <strong>무릎·발목 관절 부담을 덜어줍니다</strong>. ① 무릎이 약하거나 통증 이력이 있는 러너 ② 장거리·회복런 위주 ③ 체중이 있는 러너에게 특히 유리하죠. 다만 폼이 두꺼운 만큼 무겁고 반응성은 떨어져, 빠른 인터벌엔 부적합합니다.</p>
+  </div>
+</div>
+
+<h2>맥스쿠션 비교 — 주요 6종</h2>
+<table>
+  <thead>
+    <tr><th>모델</th><th>쿠션</th><th>무게</th><th>드롭</th><th>발볼</th><th>가격</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>216g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>281g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>넓음</strong></td><td><strong>179,000</strong></td><td>발볼 넓은 가성비</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>좁음</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
+  </tbody>
+</table>
+
+<h2>👑 종합 톱픽 — 뉴발란스 1080 v15</h2>
+<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 40mm 힐 스택의 푹신함을 갖추고도 <strong>216g으로 동급에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">🖥️</span>
+  <div class="callout-body">
+    <p class="callout-title">대표 맥스쿠션 4종 비교</p>
+    <p><strong><a href="/compare?shoes=new-balance-1080-v15,asics-gel-nimbus-28,brooks-ghost-max-3,hoka-bondi-9">→ 1080 v15 · 님버스 28 · 고스트 맥스 3 · 본디 9 비교하기</a></strong> — 쿠셔닝·무게·가성비 점수를 한 화면에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>목적별 베스트</h2>
+<ul>
+  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(216g)</li>
+  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
+  <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(wide·17만원대, 119mm 광폭 플랫폼)</li>
+  <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
+</ul>
+
+<h2>무릎이 아프다면 — 쿠션만으론 부족합니다</h2>
+<p>맥스쿠션이 충격을 줄여주지만, 무릎 통증의 근본 원인은 신발만으로 해결되지 않습니다. <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>로 원인을 짚고, <a href="/blog/running-cadence-guide-2026">케이던스(보속)</a>를 높여 착지 충격 자체를 줄이는 것도 병행하세요. 발이 안쪽으로 무너지는 과내전이라면 쿠션화보다 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화</a>가 더 맞을 수 있습니다. 더 많은 모델은 <a href="/best/max-cushion">쿠션화 베스트</a>에서 비교하세요.</p>
+
+<h2>마무리</h2>
+<p>맥스쿠션의 핵심은 "두껍다"가 아니라 <strong>"내 무게·발볼·관절 상태에 맞는 두께"</strong>입니다. 가볍게 두루 쓰려면 1080 v15, 최대한 푹신하게는 본디·님버스, 발볼 넓고 예산을 아끼려면 고스트 맥스 3 — 본인 우선순위 하나만 정하면 선택이 쉬워집니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝화 정보로, 무릎 통증이 지속되면 전문가의 진료를 받으세요. 가격은 변동될 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',
+    slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',
+    title: '안정화 3강 비교 — 카야노 33 vs 글리세린 GTS 22 vs 860 v15 | FLUIDSUPPORT·GuideRails·Fresh Foam, 평발 한국러너의 선택',
+    description: '안정화 러닝화 대표 3종을 정면 비교합니다. 아식스 카야노 33(부드러워진 FLUIDSUPPORT), 브룩스 글리세린 GTS 22(푹신한 GuideRails), 뉴발란스 860 v15(가성비 정공법). 스택·드롭·무게·지지 방식·가격을 한눈에 비교하고, 평발·과내전 한국 러너가 셋 중 무엇을 골라야 하는지 목적별로 정리했습니다.',
+    thumbnail: '/images/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['카야노 33', '글리세린 GTS 22', '860 v15', '안정화 비교', '평발', '과내전', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 셋 중 가장 높은 스택(40mm)에 반발도 살아 있어 "지지하되 경쾌한" 균형. 데일리 안정화의 만능형</li>
+    <li><strong><a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a></strong> — 드롭 10mm·내구 800km로 가장 푹신하고 오래가는 프리미엄. 종아리·아킬레스 편한 쪽</li>
+    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 낮은 드롭(6mm)의 정공법 안정화. 묵직하지만 든든</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">안정화 '빅3'를 한자리에</p>
+    <p>과내전·평발 러너가 가장 많이 고민하는 세 신발입니다. 셋 다 <strong>평발 적합도 최상·와이드 옵션 보유</strong>로 기본기는 비슷하지만, <strong>지지 방식과 라이드 성격이 확연히 다릅니다</strong>. 우리 사이트에서도 카야노 33이 가장 많이 조회되는 신발이죠. 무엇이 내 발에 맞는지 데이터로 갈라보겠습니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈에 비교</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 33</th><th>글리세린 GTS 22</th><th>860 v15</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>지지 방식</td><td>FLUIDSUPPORT</td><td>GuideRails</td><td>듀얼 폼+EVA 플레이트</td></tr>
+    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>32 / 26mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>6mm</td></tr>
+    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>330g</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / <strong>7</strong></td><td>9 / 6</td><td>8 / 6</td></tr>
+    <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
+    <tr><td>가격</td><td>209,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>지지 방식이 다르다 — 핵심 차이</h2>
+<ul>
+  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 13년 만에 딱딱한 기둥을 버리고 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼이라 쿠션과 반발(7)이 셋 중 가장 균형 잡혀, "안정화인데 경쾌하다"는 평. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
+  <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
+  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 6mm로 낮고 330g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">🖥️</span>
+  <div class="callout-body">
+    <p class="callout-title">3종 나란히 비교 도구</p>
+    <p>스펙 점수를 직접 견줘보세요 — 쿠셔닝·반발·안정성·가성비가 한 화면에 뜹니다.<br><strong><a href="/compare?shoes=asics-gel-kayano-33,brooks-glycerin-gts-22,new-balance-860-v15">→ 카야노 33 · 글리세린 GTS 22 · 860 v15 비교하기</a></strong></p>
+  </div>
+</div>
+
+<h2>그래서 누가 뭘 사야 할까</h2>
+<ul>
+  <li><strong>안정화인데 너무 둔하지 않길 원한다</strong> → <strong>카야노 33</strong>. 데일리부터 가벼운 템포까지 만능</li>
+  <li><strong>푹신함·내구성 최우선, 아킬레스가 약하다</strong> → <strong>글리세린 GTS 22</strong>(드롭 10mm가 종아리에 편함)</li>
+  <li><strong>예산을 아끼고 든든한 지지를 원한다</strong> → <strong>860 v15</strong>(18만원대, 정공법 안정)</li>
+</ul>
+<p>셋 다 부담된다면 더 저렴한 대안(사코니 가이드 18·미즈노 인스파이어 21 등)까지 포함한 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화 추천 전체 가이드</a>나 <a href="/best/stability">안정화 베스트</a>를 함께 보세요.</p>
+
+<h2>마무리</h2>
+<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"경쾌함(카야노) vs 푹신함(글리세린) vs 가성비(860)"</strong>로 갈립니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 제조사·실측 자료 기준이며 가격은 변동될 수 있습니다. 과내전·평발이라고 모두 안정화가 정답은 아니므로(중립화가 맞는 경우도 있음), 통증이 있다면 보행 분석을 권합니다.</p>
+`,
+  },
+  {
     id: 'stability-running-shoes-overpronation-flat-feet-2026',
     slug: 'stability-running-shoes-overpronation-flat-feet-2026',
     title: '평발·과내전 안정화 러닝화 추천 2026 | 카야노 33부터 14만원대 가성비까지 — 발볼·무게·지지 방식별 비교',
