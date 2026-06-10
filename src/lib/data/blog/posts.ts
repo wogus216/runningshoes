@@ -2,6 +2,141 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-cadence-guide-2026',
+    slug: 'running-cadence-guide-2026',
+    title: '달리기 효율은 \'보속\'에서 갈린다 — 케이던스 높이기 가이드 | \'분당 180보\' 신화의 진실·부상 예방·올리는 법',
+    description: '러닝 케이던스(보속)는 부상 예방과 효율의 숨은 열쇠입니다. "무조건 분당 180보"라는 말은 반은 맞고 반은 틀렸죠. 케이던스가 무엇인지, 180 신화의 진실(키·다리 길이에 따른 개인차), 보속을 높이면 왜 무릎 충격이 줄어드는지(오버스트라이드), 내 케이던스 확인법과 안전하게 올리는 법까지 정리했습니다.',
+    thumbnail: '/images/blog/running-cadence-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'tips' as const,
+    readingTime: 7,
+    tags: ['케이던스', '보속', '러닝 효율', '부상 예방', '러닝 폼', '오버스트라이드', '러닝 팁'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>케이던스(보속)</strong>는 1분간 양발이 땅에 닿는 횟수(spm)로, 같은 속도라도 보속이 높으면 <strong>보폭이 짧아져 착지 충격이 줄어듭니다</strong></li>
+    <li><strong>"무조건 180보"는 신화</strong> — 엘리트 평균에서 나온 수치일 뿐, 적정 케이던스는 키·다리 길이·속도에 따라 다릅니다</li>
+    <li>핵심은 절대 수치가 아니라 <strong>오버스트라이드(발이 몸 앞에 착지) 교정</strong> — 현재보다 5%씩 점진적으로 올리는 게 안전합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">케이던스가 왜 중요할까</p>
+    <p>러닝 부상의 상당수는 '어떻게 착지하느냐'에서 시작됩니다. 보폭을 크게 벌려 발이 <strong>몸보다 앞에 떨어지면(오버스트라이드)</strong>, 브레이크가 걸리며 무릎·정강이에 충격이 집중되죠. 케이던스를 살짝 높이면 자연히 보폭이 짧아지고 착지가 몸 아래로 들어와, 같은 속도에서도 충격과 부상 위험이 줄어듭니다.</p>
+  </div>
+</div>
+
+<h2>케이던스란?</h2>
+<p>케이던스는 <strong>1분 동안 양발이 지면에 닿는 총 횟수</strong>(steps per minute, spm)입니다. 한쪽 발만 세면 절반이 되죠. 대부분의 GPS 러닝 워치가 자동으로 측정해 줍니다. 같은 페이스(속도)는 '보폭 × 케이던스'로 만들어지므로, 보폭을 줄이고 케이던스를 높이면 같은 속도를 더 부드럽게 낼 수 있습니다.</p>
+
+<h2>'분당 180보' 신화의 진실</h2>
+<p>"케이던스는 180이 정답"이라는 말이 널리 퍼져 있습니다. 이 숫자는 1984년 올림픽에서 코치 잭 다니엘스가 엘리트 선수들을 관찰해 평균 180 안팎이었다는 데서 나왔죠. 하지만 이건 <strong>최정상 선수들의, 그것도 레이스 페이스에서의 평균</strong>입니다.</p>
+<ul>
+  <li><strong>키와 다리 길이</strong>에 따라 적정 케이던스가 다릅니다 — 다리가 길수록 자연 케이던스는 낮은 경향</li>
+  <li><strong>속도</strong>에 따라 변합니다 — 느린 조깅은 160대, 빠른 레이스는 180+가 자연스럽습니다</li>
+  <li>일반 러너가 무리하게 180에 맞추면 오히려 비효율적이고 종아리에 부담이 갈 수 있습니다</li>
+</ul>
+<p>즉 목표는 '180 달성'이 아니라, <strong>지금 내 케이던스가 지나치게 낮아 오버스트라이드를 유발하는지</strong> 점검하는 것입니다.</p>
+
+<h2>케이던스와 부상 — 핵심 연결고리</h2>
+<p>케이던스를 5~10% 높이면 보폭이 짧아져 발이 몸 아래쪽으로 착지하고, 무릎과 정강이에 가해지는 충격력이 줄어든다는 연구가 많습니다. <a href="/blog/knee-pain-running-shoes">무릎 통증</a>이나 정강이 통증(신스프린트)에 시달린다면, 신발 교체 전에 케이던스부터 점검할 가치가 있습니다. 착지 패턴이 고민이라면 <a href="/blog/pronation-type-running-shoe-guide-2026">내전(프로네이션) 유형 가이드</a>도 함께 보세요.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">📲</span>
+  <div class="callout-body">
+    <p class="callout-title">내 케이던스 확인법</p>
+    <p>GPS 워치가 있으면 러닝 중 평균 케이던스가 기록됩니다. 없다면 <strong>30초간 한쪽 발이 땅에 닿는 횟수를 세고 ×4</strong> 하면 됩니다(양발 ×2, 분당 ×2). 편안한 조깅에서 150 이하로 낮다면, 오버스트라이드 가능성을 의심해 볼 만합니다.</p>
+  </div>
+</div>
+
+<h2>안전하게 올리는 법</h2>
+<ol>
+  <li><strong>현재 케이던스부터 측정</strong> — 기준선을 알아야 합니다</li>
+  <li><strong>5%씩 점진적으로</strong> — 160이라면 168 정도를 다음 목표로. 한 번에 180으로 점프하지 마세요</li>
+  <li><strong>메트로놈·BPM 음악 활용</strong> — 목표 spm에 맞춘 메트로놈 앱이나 같은 BPM의 플레이리스트로 리듬을 맞춥니다</li>
+  <li><strong>"짧고 가볍게"를 의식</strong> — 발을 멀리 뻗지 말고 몸 아래에서 빠르게 회전시킨다는 느낌으로</li>
+  <li><strong>짧은 구간부터</strong> — 1km만 새 케이던스로 달리고 점차 늘립니다</li>
+</ol>
+<p>신발도 도움이 됩니다 — 과한 보폭을 부추기지 않는 적당한 드롭의 <a href="/best/daily-trainer">데일리 트레이너</a>가 케이던스 교정 연습에 무난합니다. 거리별로 페이스와 케이던스가 어떻게 달라지는지는 <a href="/blog/race-distance-difficulty-guide-2026">거리별 체감 난이도</a> 글과 함께 보면 이해가 쉽습니다.</p>
+
+<h2>마무리</h2>
+<p>케이던스는 '180이라는 정답'을 좇는 게 아니라, <strong>내 착지를 몸 아래로 가져와 충격을 줄이는 도구</strong>입니다. 무릎·정강이 통증이 반복된다면 보속을 5%만 올려보세요. 작은 변화지만 부상 위험과 효율에서 큰 차이를 만들 수 있습니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 폼·훈련 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 지속되면 전문가의 진료를 받으세요.</p>
+`,
+  },
+  {
+    id: 'running-warmup-cooldown-guide-2026',
+    slug: 'running-warmup-cooldown-guide-2026',
+    title: '러닝 전후 10분이 부상을 막는다 — 워밍업·쿨다운 완벽 루틴 | 정적 스트레칭은 \'언제\'? 동적 워밍업 동작 정리',
+    description: '달리기 전 정적 스트레칭, 사실 부상 예방에 큰 도움이 안 됩니다. 워밍업은 \'동적\'으로, 정적 스트레칭은 \'끝나고\'가 핵심이죠. 러닝 전 체온·혈류를 올리는 동적 워밍업 동작과, 달리기 후 회복을 돕는 쿨다운·정적 스트레칭 루틴을 10분 안에 끝내는 법으로 정리했습니다. 부상 없이 오래 달리고 싶은 러너를 위한 가이드입니다.',
+    thumbnail: '/images/blog/running-warmup-cooldown-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-10',
+    category: 'tips' as const,
+    readingTime: 7,
+    tags: ['워밍업', '쿨다운', '동적 스트레칭', '부상 예방', '러닝 루틴', '러닝 팁'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>달리기 <strong>전</strong>엔 정적 스트레칭이 아니라 <strong>동적 워밍업</strong>(움직이며 관절·근육 가동) — 체온과 혈류를 올려 부상을 줄이고 수행을 높입니다</li>
+    <li>정적 스트레칭(한 자세로 늘리기)은 <strong>달리기 끝난 뒤</strong>에 — 운동 전 정적 스트레칭은 오히려 순간 근력을 떨어뜨릴 수 있습니다</li>
+    <li><strong>쿨다운</strong>은 점진적 감속 + 정적 스트레칭 + 폼롤러로 — 회복을 앞당기고 다음 러닝의 질을 높입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">"바로 뛰면 안 되나요?"</p>
+    <p>차가운 엔진을 풀가속하면 무리가 가듯, 데워지지 않은 몸으로 바로 달리면 근육·힘줄 부상 위험이 커집니다. 그렇다고 출발 전 다리를 쭉쭉 늘리는 정적 스트레칭이 답은 아니에요. 운동 전엔 <strong>'움직이며 데우는' 동적 워밍업</strong>이, 운동 후엔 <strong>'늘리고 진정시키는' 정적 스트레칭</strong>이 맞습니다.</p>
+  </div>
+</div>
+
+<h2>왜 워밍업이 필요한가</h2>
+<p>워밍업은 단순히 '몸 푸는 것' 이상입니다. <strong>근육 온도와 혈류를 높여</strong> 산소 공급을 원활히 하고, 관절 가동범위를 넓히며, 신경계를 깨워 달릴 준비를 시킵니다. 그 결과 부상 위험이 줄고 초반 페이스도 한결 편해지죠. 특히 템포런·인터벌 같은 고강도 훈련 전엔 워밍업이 필수입니다.</p>
+
+<h2>달리기 전 — 동적 워밍업 (5분)</h2>
+<p>제자리 또는 이동하며 관절을 '움직여서' 데우는 동작들입니다. 각 10~15회씩.</p>
+<ul>
+  <li><strong>레그 스윙</strong> — 벽을 짚고 다리를 앞뒤·좌우로 흔들기 (고관절 가동)</li>
+  <li><strong>하이 니(High Knees)</strong> — 무릎을 가슴 쪽으로 올리며 제자리 걷기/조깅</li>
+  <li><strong>버트 킥</strong> — 발뒤꿈치를 엉덩이로 차올리기</li>
+  <li><strong>런지 워크</strong> — 앞으로 걸으며 런지 (둔근·햄스트링 활성)</li>
+  <li><strong>가벼운 조깅 2~3분</strong> — 본 운동 페이스보다 느리게 마무리 워밍업</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">달리기 전 '정적 스트레칭'은 피하세요</p>
+    <p>출발 전 다리를 한 자세로 30초씩 길게 늘리는 정적 스트레칭은, 일시적으로 근력·파워를 떨어뜨린다는 연구가 많습니다. 부상 예방 효과도 동적 워밍업만 못하죠. 정적 스트레칭은 <strong>달리기가 끝난 뒤</strong>로 미루세요.</p>
+  </div>
+</div>
+
+<h2>달리기 후 — 쿨다운 + 정적 스트레칭 (5분)</h2>
+<ol>
+  <li><strong>점진적 감속</strong> — 갑자기 멈추지 말고 2~3분간 천천히 걷거나 가볍게 조깅해 심박을 낮춥니다</li>
+  <li><strong>정적 스트레칭</strong> — 종아리·햄스트링·대퇴사두·둔근·고관절을 각 20~30초씩 늘립니다(이제는 OK)</li>
+  <li><strong>폼롤러</strong> — 종아리·허벅지·IT밴드를 굴려 뭉친 근막을 풀면 회복이 빨라집니다</li>
+</ol>
+<p>쿨다운은 다음 러닝의 컨디션을 좌우합니다. 특히 장거리·고강도 뒤에는 생략하지 마세요. 호흡이 빨리 안 가라앉는다면 <a href="/blog/running-breathing-guide-korea">호흡법 가이드</a>도 도움이 됩니다.</p>
+
+<h2>부상이 잦다면 — 워밍업부터 점검</h2>
+<p>무릎·정강이·아킬레스 통증이 반복된다면 신발 탓만 하기 전에 워밍업 습관을 돌아보세요. 그래도 통증이 지속되면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>나 <a href="/blog/pronation-type-running-shoe-guide-2026">내전 유형 가이드</a>로 신발·착지까지 함께 점검하는 게 좋습니다.</p>
+
+<h2>마무리</h2>
+<p>워밍업과 쿨다운에 드는 건 합쳐서 10분 남짓입니다. 이 10분이 부상으로 몇 주를 쉬는 일을 막아주죠. <strong>전엔 동적으로 데우고, 후엔 정적으로 풀어준다</strong> — 이 원칙만 기억하면 됩니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝 루틴·부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 지속되면 전문가의 진료를 받으세요.</p>
+`,
+  },
+  {
     id: 'race-timing-chip-net-gross-time-guide-2026',
     slug: 'race-timing-chip-net-gross-time-guide-2026',
     title: '같이 뛰었는데 내 기록이 더 빠르다? — 기록칩과 넷타임·그로스타임 완벽 정리 | RFID 원리·스타트 위치·반납까지',
