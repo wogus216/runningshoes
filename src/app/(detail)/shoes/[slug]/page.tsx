@@ -101,7 +101,8 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
 
   // 불완전한 데이터 신발은 noindex 처리 (thin content 방지)
   // + 프로덕션 배포에서만 색인 (프리뷰/로컬은 noindex)
-  const shouldIndex = IS_PRODUCTION_DEPLOY && isCompleteShoe(shoe);
+  // + shoe.noindex 명시 플래그(검색 수요 0 초니치 변종 카니발 방지)도 제외
+  const shouldIndex = IS_PRODUCTION_DEPLOY && isCompleteShoe(shoe) && !shoe.noindex;
 
   return {
     title,

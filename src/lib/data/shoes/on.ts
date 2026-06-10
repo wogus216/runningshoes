@@ -750,7 +750,7 @@ export const onShoes: Shoe[] = [
       footType: '중립',
       landingPattern: '힐스트라이크~미드풋',
     },
-    similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+    similarShoes: ['on-cloudmonster-2', 'hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
     purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3' }],
   },
   {
@@ -862,6 +862,8 @@ export const onShoes: Shoe[] = [
   {
     id: 'on-cloudmonster-3-hyper-lightspray',
     slug: 'on-cloudmonster-3-hyper-lightspray',
+    // 검색 수요 0 (GSC 2026-06 확인) — 동일 시리즈 '클라우드몬스터 3 하이퍼' 검색을 갉아먹어 색인 제외
+    noindex: true,
     brand: 'On',
     name: '클라우드몬스터 3 하이퍼 라이트스프레이',
     image: '/images/shoes/on/cloudmonster3hyperls/side.webp',

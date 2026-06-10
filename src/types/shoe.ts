@@ -98,6 +98,9 @@ export interface Shoe {
   image?: string;
   images?: string[];  // 여러 이미지 (슬라이더용)
   status?: ShoeStatus;
+  // 검색 색인 제외 플래그. 페이지는 정상 렌더되나 robots noindex 처리.
+  // 검색 수요 0인 초니치 변종이 동일 시리즈 상위 모델의 검색을 갉아먹는 카니발라이제이션 방지용.
+  noindex?: boolean;
   price?: number;
 
   // 기본 스펙

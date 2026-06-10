@@ -1,5 +1,6 @@
 const { execSync } = require("child_process");
 const path = require("path");
+const fs = require("fs");
 
 const buildTime = new Date().toISOString();
 
@@ -40,6 +41,27 @@ function shoeFileFor(slug) {
     if (slug.startsWith(prefix)) return file;
   }
   return "src/lib/data/shoes";
+}
+
+// noindex: true 플래그가 켜진 신발은 sitemap에서도 제외 (페이지 robots noindex와 일관성).
+// 신발 데이터에 noindex: true만 추가하면 자동 제외 — 별도 등록 불필요.
+const shoeFileCache = {};
+function isNoindexShoe(slug) {
+  const file = shoeFileFor(slug);
+  if (!file.endsWith(".ts")) return false;
+  if (!(file in shoeFileCache)) {
+    try {
+      shoeFileCache[file] = fs.readFileSync(path.join(__dirname, file), "utf8");
+    } catch {
+      shoeFileCache[file] = "";
+    }
+  }
+  const content = shoeFileCache[file];
+  const idx = content.indexOf(`slug: '${slug}'`);
+  if (idx === -1) return false;
+  const nextIdx = content.indexOf("slug: '", idx + 10);
+  const block = content.slice(idx, nextIdx === -1 ? content.length : nextIdx);
+  return /noindex:\s*true/.test(block);
 }
 
 // Static page → source file
@@ -127,6 +149,8 @@ module.exports = {
     const lastmod = lastModFor(urlPath);
 
     if (urlPath.startsWith("/shoes/")) {
+      const slug = urlPath.replace("/shoes/", "").replace(/\/$/, "");
+      if (isNoindexShoe(slug)) return null; // noindex 신발은 sitemap 제외
       return { loc: urlPath, changefreq: "weekly", priority: 0.9, lastmod };
     }
     if (urlPath === "/marathon") {
