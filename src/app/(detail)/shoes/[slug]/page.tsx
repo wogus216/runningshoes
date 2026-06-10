@@ -43,7 +43,16 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
 
   // SEO 최적화된 제목 생성
   // 한국 러너는 "[모델명] 후기"로 검색하고, 사이즈·발볼 정보를 가장 많이 찾는다 (GSC 검증).
-  const title = `${shoe.brand} ${shoe.name} 후기 — 사이즈·발볼·장단점 총정리`;
+  // 브랜드도 한글로 검색하므로(예: "온러닝 클라우드몬스터") 제목을 한글 브랜드명으로 시작한다.
+  // 영문 브랜드명("On")은 한글 검색어("온러닝")와 SERP 볼드 매칭이 안 돼 CTR 손실 — 특히 순위 낮은 On·호카에서 컸음.
+  // 새 브랜드 추가 시 이 맵에도 등록 (미등록 시 영문 brand로 폴백).
+  const brandLabelMap: Record<string, string> = {
+    'Nike': '나이키', 'Adidas': '아디다스', 'Asics': '아식스', 'Hoka': '호카',
+    'Brooks': '브룩스', 'Saucony': '써코니', 'Mizuno': '미즈노', 'New Balance': '뉴발란스',
+    'On': '온러닝', 'Puma': '푸마', 'Li-Ning': '라이닝',
+  };
+  const brandLabel = brandLabelMap[shoe.brand] || shoe.brand;
+  const title = `${brandLabel} ${shoe.name} 후기 — 사이즈·발볼·장단점 총정리`;
 
   // 상세 설명 생성 (150-160자 권장)
   const specs = shoe.specs;
@@ -72,8 +81,10 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   // 키워드 생성
   const keywords = [
     shoe.brand,
+    brandLabel,
     shoe.name,
     `${shoe.brand} ${shoe.name}`,
+    `${brandLabel} ${shoe.name}`,
     '러닝화',
     '러닝화 리뷰',
     shoe.category,
@@ -114,7 +125,7 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,
-      title: `${shoe.brand} ${shoe.name} 후기 - 러닝화 리뷰`,
+      title: `${brandLabel} ${shoe.name} 후기 - 러닝화 리뷰`,
       description,
       images: [
         {
@@ -127,7 +138,7 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${shoe.brand} ${shoe.name} 후기`,
+      title: `${brandLabel} ${shoe.name} 후기`,
       description,
       images: [imageUrl],
     },
