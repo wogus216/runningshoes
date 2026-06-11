@@ -166,6 +166,19 @@ export const blogPosts: BlogPost[] = [
   <li><strong>10/4 안동마라톤</strong> — 획득고도 700m+의 국내 최상급 난코스. 1만 명 선착순이 며칠 만에 조기 마감될 만큼 마니아층이 두텁습니다. "기록보다 도전"을 원하는 러너용.</li>
 </ul>
 
+<div class="callout info">
+  <span class="callout-icon">🏆</span>
+  <div class="callout-body">
+    <p class="callout-title">춘천 80주년 특별접수 — 완주 횟수가 많다면 일반 신청보다 먼저 챙기세요</p>
+    <p>올해 80주년을 맞아 춘천마라톤은 풀코스 다회 완주자를 위한 <strong>특별접수</strong>를 일반 신청(7/14)보다 앞서 진행합니다.</p>
+    <ul>
+      <li><strong>명예의 전당 헌액 예정자(Full 9회 완주자)</strong> — 전원 신청·결제 가능. 기간 <strong>6/16(화) 10시 ~ 6/19(금) 18시</strong> ('참가신청 &gt; 명예의 전당 헌액 예정자 신청' 메뉴).</li>
+      <li><strong>Full 5~8회 완주자</strong> — 구글폼 응모 후 추첨. 응모 <strong>6/29(월)~7/1(수)</strong> → 당첨자 발표·신청·결제 <strong>7/6(월)~7/9(목)</strong>.</li>
+    </ul>
+    <p>해당되는 완주 이력이 있다면 일반 선착순(7/14~)을 기다리지 말고 특별접수 기간을 먼저 노리는 게 유리합니다. 자세한 방법은 공식 홈페이지(chuncheonmarathon.com) 공지사항을 확인하세요.</p>
+  </div>
+</div>
+
 <h2>11월 — 도심 마라톤 풍년</h2>
 
 <p>11월은 서울·수도권 도심 대회가 몰리는 달입니다.</p>
