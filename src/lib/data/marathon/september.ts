@@ -67,4 +67,35 @@ export const septemberEvents: MarathonEvent[] = [
     isMajor: false,
     description: '자라섬 인근 코스를 달리는 가을 시즌 가족 참여형 마라톤.',
   },
+  {
+    id: 'ganghwa-beach-marathon-2026',
+    name: '2026 강화해변마라톤 (제26회)',
+    date: '2026-09-13',
+    month: '9월',
+    location: '강화함상공원 (인천 강화)',
+    region: '인천',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://ganghwamarathon.co.kr',
+    description:
+      '강화함상공원을 출발해 강화 해변을 달리는 바다 조망 코스. 선착순 3,500명 소규모 대회로 커플런(10K)·가족런(5K) 종목을 운영합니다. 접수 6/10(수) 14시 시작, 선착순 마감.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription: '강화함상공원 출발 해변 평지 코스. 바다를 보며 달리는 가족 친화형.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 40000 },
+        { distance: '커플런(10K)', fee: 40000 },
+        { distance: '가족런(5K)', fee: 35000 },
+      ],
+      expectedParticipants: 3500,
+      startTime: '08:30',
+    },
+  },
 ];
