@@ -125,7 +125,7 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.chuncheonmarathon.com/',
     description:
-      '"가을의 전설" — 1946년 시작된 80년 역사의 풀코스. 의암호 단풍 코스, 25km 지점 오르막이 핵심 변수. 본접수 6/24(화) 14시 광클 — 정원 빠른 매진 우려. 대회일은 매년 10월 넷째 주 일요일, 2026년은 10/25 유력(공식 확정 전). 참가비는 2025 메이저 평균 기준 추정 — 6/24 본접수 시 공식 발표 예정.',
+      '"가을의 전설" — 1946년 시작된 80주년 풀코스. 의암호 단풍 코스, 25km 지점 오르막이 핵심 변수. 2026년 대회일 10/25(일) 9시 확정. 신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순(빠른 매진 주의). 참가비 풀 15만원·10K 10만원. (2026-06-11 공식 발표)',
     courseInfo: {
       terrain: '언덕',
       difficulty: '상급',
@@ -134,8 +134,8 @@ export const octoberEvents: MarathonEvent[] = [
     },
     raceInfo: {
       entryFees: [
-        { distance: '풀코스', fee: 70000 },
-        { distance: '10K', fee: 40000 },
+        { distance: '풀코스', fee: 150000 },
+        { distance: '10K', fee: 100000 },
       ],
       startTime: '09:00',
     },

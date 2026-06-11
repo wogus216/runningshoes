@@ -139,7 +139,7 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>10/4</strong></td><td>안동마라톤</td><td>경북</td><td>풀·하프·10K·5K</td><td>마감(5/31)</td><td>확정·난코스</td></tr>
     <tr><td><strong>10/11</strong></td><td>서울레이스</td><td>서울</td><td>하프·10K</td><td>마감(5/27)</td><td>확정·도심</td></tr>
     <tr><td><strong>10/17</strong></td><td>경주국제마라톤</td><td>경북</td><td>풀·하프·10K</td><td>마감(5/26)</td><td>확정</td></tr>
-    <tr><td><strong>10/25</strong></td><td>조선일보 춘천마라톤</td><td>강원</td><td>풀·10K</td><td>6월 하순 예상</td><td>날짜 추정</td></tr>
+    <tr><td><strong>10/25</strong></td><td>조선일보 춘천마라톤</td><td>강원</td><td>풀·10K</td><td>풀 7/14·10K 7/16</td><td>확정</td></tr>
     <tr><td><strong>11/1</strong></td><td>JTBC 서울마라톤</td><td>서울</td><td>풀·10K</td><td>추첨 마감(4월)</td><td>확정</td></tr>
     <tr><td><strong>11/15</strong></td><td>MBN 서울마라톤</td><td>서울</td><td>하프·10K</td><td>6/25~26 예정</td><td>확정</td></tr>
     <tr><td><strong>11/15</strong></td><td>손기정평화마라톤</td><td>경기 고양</td><td>풀·하프·10K</td><td>9월 예상</td><td>일정 미발표</td></tr>
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
 <p>10월은 한 해 마라톤의 심장입니다. 풀코스 PB를 노린다면 이 달에 집중하세요.</p>
 
 <ul>
-  <li><strong>10/25(추정) 조선일보 춘천마라톤</strong> — "가을의 전설". 1946년 시작된 80년 역사의 풀코스로, 의암호 단풍 코스가 압권입니다. 다만 <strong>25km 지점 오르막</strong>이 후반 페이스의 변수죠. 풀코스는 선착순이고 역대 <strong>5분 내 마감</strong> 전례가 있어, 접수일(2025년엔 6/24 14시) 광클이 필수입니다. 춘천 코스를 미리 즐기고 싶다면 <a href="/blog/chuncheon-unique-running-courses-7">춘천 이색 러닝 코스 7선</a>도 참고하세요.</li>
+  <li><strong>10/25(일) 9시 조선일보 춘천마라톤 — 올해 80주년</strong>. "가을의 전설", 1946년 시작된 의암호 단풍 코스가 압권입니다. 다만 <strong>25km 지점 오르막</strong>이 후반 페이스의 변수죠. 6/11 공식 발표 기준 <strong>신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순</strong>, 참가비는 <strong>풀 15만 원·10K 10만 원</strong>입니다. 풀코스는 역대 빠르게 마감되니 접수일 광클이 필수예요(결제는 풀 7/20~21·10K 7/22~23). 춘천 코스를 미리 즐기고 싶다면 <a href="/blog/chuncheon-unique-running-courses-7">춘천 이색 러닝 코스 7선</a>도 참고하세요.</li>
   <li><strong>10/17 경주국제마라톤</strong> — 동아일보 주최, World Athletics 엘리트 라벨. 첨성대·황룡사지 등 신라 유적을 지나는 평지 코스라 PB 친화적입니다. 풀 일반 7만 원/매니아 6만 원, 총 1.6만 명 규모.</li>
   <li><strong>10/4 안동마라톤</strong> — 획득고도 700m+의 국내 최상급 난코스. 1만 명 선착순이 며칠 만에 조기 마감될 만큼 마니아층이 두텁습니다. "기록보다 도전"을 원하는 러너용.</li>
 </ul>
@@ -205,7 +205,7 @@ export const blogPosts: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>풀코스 PB</strong></td><td>경주국제(10/17)</td><td>유적지 통과 평지, 기록 친화적</td></tr>
-    <tr><td><strong>가을 단풍 풀코스</strong></td><td>춘천(10/25 추정)</td><td>의암호 단풍, 80년 역사의 명성</td></tr>
+    <tr><td><strong>가을 단풍 풀코스</strong></td><td>춘천(10/25)</td><td>의암호 단풍, 80주년의 명성</td></tr>
     <tr><td><strong>도전·난코스</strong></td><td>안동(10/4)</td><td>획득고도 700m+ 국내 최상급</td></tr>
     <tr><td><strong>첫 풀코스 / 대규모 축제</strong></td><td>JTBC서울(11/1)</td><td>국내 최대 규모, 도심 분위기</td></tr>
     <tr><td><strong>하프·10K 도심런</strong></td><td>MBN서울(11/15)</td><td>광화문~잠실 일직선, 접근성 ↑</td></tr>
@@ -215,7 +215,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>처음 풀코스나 하프에 도전한다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준에 맞는 거리를 먼저 정하고, 대회 당일 기록 측정이 헷갈린다면 <a href="/blog/race-timing-chip-net-gross-time-guide-2026">기록칩·넷타임/그로스타임 정리</a>를 미리 읽어두면 좋습니다. 전체 월별 일정은 <a href="/marathon">마라톤 캘린더</a>에서 계속 확인할 수 있습니다.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 일정은 2026-06-11 기준이며, 공식 미발표 대회(춘천·손기정·부산 등)의 날짜·접수·참가비는 추정 또는 잠정 정보입니다. 반드시 각 대회 공식 홈페이지에서 최종 확인하세요. (글감: @runninglife_korea 하반기 대회 일정 정리 + 공식 소스 교차검증, 2026-06)</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 일정은 2026-06-11 기준이며, 공식 미발표 대회(손기정·부산 등)의 날짜·접수·참가비는 추정 또는 잠정 정보입니다. 반드시 각 대회 공식 홈페이지에서 최종 확인하세요. (글감: @runninglife_korea 하반기 대회 일정 정리 + 공식 소스 교차검증, 2026-06)</p>
 `,
   },
   {
