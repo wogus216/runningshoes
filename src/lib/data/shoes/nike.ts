@@ -1047,7 +1047,7 @@ export const nikeShoes: Shoe[] = [
         text: '"좋은 장비가 좋은 결과를 만든다"는 생각에 첫 마라톤 대회용으로 질렀다가 후회했어요. 5분30초 페이스에서는 Air Zoom 포드가 오히려 불안정하고, 카본 플레이트 반발력이 종아리를 잡아당기는 느낌이에요. 연습 때 종아리 경련이 왔어요. 결국 페가수스로 대회 완주하고 알파플라이는 중고 거래했습니다. 201g 초경량이고 39.5mm 스택이 무릎 보호에는 좋지만, 느린 페이스에서는 되려 발목이 불안해요. 토박스도 좁아서 발볼 넓은 편인 제 발에는 10km 넘으면 발가락이 저렸습니다. 와이드 옵션도 없고요. km당 1,745원 가성비로 봐도 입문 러너에게는 절대 비추이며, 한국 러너라면 먼저 페가수스 41(15만원)부터 시작하세요. 평발이면 더더욱 안 맞습니다.',
       },
     ],
-    similarShoes: ['adidas-adios-pro-4', 'asics-metaspeed-sky-plus', 'saucony-endorphin-elite-2'],
+    similarShoes: ['adidas-adios-pro-4', 'asics-metaspeed-sky-plus', 'saucony-endorphin-elite-2', 'puma-fast-r-nitro-elite-3'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F2ny4AOj' }],
   },
   {
@@ -1155,7 +1155,7 @@ export const nikeShoes: Shoe[] = [
         text: '동호회 선배가 "실력 늘려면 카본 신어봐"라고 해서 질렀어요. 근데 5분40초 페이스에서는 카본 플레이트 효과를 거의 못 느끼겠어요. 차라리 페가수스 41이 훨씬 편하고 안정적이었습니다. 나중에 4분대 후반으로 들어가면 다시 꺼내 신을 계획인데, 당분간은 서랍에 모셔놓겠습니다. 248g에 40mm 힐 스택이라 무릎 보호는 나쁘지 않지만, 발볼이 좁아서 토박스가 타이트하고 와이드 옵션도 없어요. 발볼 넓은 한국 러너는 꼭 매장에서 신어보세요. 400km 기준 km당 497원 가성비는 좋은데, 느린 페이스에서 카본 효과를 못 느끼면 의미가 없습니다. 평발이면 더더욱 맞지 않으니 페가수스 41부터 시작하세요. 248g에 40mm 스택의 카본 슈퍼트레이너는 4분30초 이하 페이스에서 진가가 나타나며, 빠른 훈련을 시작한 한국 중급 러너에게 적합합니다.',
       },
     ],
-    similarShoes: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5'],
+    similarShoes: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5', 'asics-superblast-3'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GEi1eJdf' }],
   },
   {
