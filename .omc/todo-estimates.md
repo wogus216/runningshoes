@@ -41,6 +41,9 @@
     - RunRepeat SA 힐/전족부, HA, 에너지 리턴%, 토박스 너비
     - 한국 정가 (asics.co.kr 확정)
     - 와이드 옵션(2E·X-와이드) 한국 발매 여부
+  - **2026-06-12 재확인(GA 트래픽 1위라 조기 확인)**: RunRepeat 여전히 **미게시**(출시 11일). 공식 스펙(드롭 8mm·무게 298g·힐 39~40/전족 31~32mm·FF BLAST MAX+PLUS 듀얼레이어·FLUIDSUPPORT) 교차검증 확인. **DOR 리뷰 게시** — Matt Klein "32는 올해의 안정화였지만 33은 탑3에도 못 든다", non-responsive("껌처럼 달라붙음"), FLUIDSUPPORT가 4D보다 미드풋 지지 약화, 발볼 덜 좁아져 standard 적합. Meta 내구성 400-600km 추정. 한국 정가 asics.co.kr 봇차단 미확인(검색서 209,000 언급), KREAM 2E 등록=한국 와이드 발매 가능성↑. BITR/RTR 미게시. → 정량 확정 불가, 9월 재확인 유지. DOR 혹평은 향후 specs.responsiveness 하향/editorComment 반영 검토.
+
+- [ ] **adidas-terrex-agravic-4** (2026-06-12 재확인): RunRepeat 랩 **게시 확인** — DB가 이미 실측과 일치(weight 283g·힐32.6/전족23.5mm·드롭9.1·토박스73.0mm standard·와이드 false). 추가 실측: SA 힐122/전족102, 에너지리턴 힐50.3/전족55.2%. 출시 2026-02-01. BITR A등급·RTR 9.4/10. **데이터 정확성 검증 완료 — 갱신 불요**. 유일한 미확정 = 한국 정가(adidas.co.kr 403 차단, US $145). Chrome MCP 로그인 세션으로만 확인 가능. 데이터 신뢰도는 충분하나 정가 null 대신 209,000 추정 유지 중.
 
 ## 완료
 
