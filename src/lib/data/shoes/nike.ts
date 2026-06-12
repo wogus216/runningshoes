@@ -636,7 +636,7 @@ export const nikeShoes: Shoe[] = [
         text: '정가 21만원은 솔직히 고민되는 가격이에요. 보메로 18이 19만원인데 2만원 차이에 Full-length ZoomX 업그레이드면 나쁘지 않다고 판단했어요. 근데 결국 세일까지 3개월 기다려서 17만원에 샀습니다. 650km 쓴다 치면 km당 261원, 이 정도면 프리미엄 쿠션화 치고 합리적이에요. 42mm 힐 스택으로 무릎 보호가 확실하고, 와이드 옵션이 있어 발볼 넓은 한국 러너도 토박스 압박 없이 선택 가능합니다. 289g 무게는 스피드에 불리하지만 장거리 쿠션 전용으로는 최고의 가성비입니다. 평발 러너도 X-와이드 + 교정 인솔로 활용 가능합니다. Full-length ZoomX의 반발력이 보메로 18보다 확실히 살아있어 LSD 후반에도 발이 덜 피로합니다.',
       },
     ],
-    similarShoes: ['nike-vomero-18', 'hoka-bondi-9', 'new-balance-1080-v14'],
+    similarShoes: ['nike-vomero-18', 'hoka-bondi-9', 'new-balance-1080-v14', 'nike-vomero-premium'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5FEWi6hH' }],
   },
   {
