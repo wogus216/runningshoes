@@ -240,6 +240,8 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
+
 <p class="disclaimer">본 글의 일정·요금·기준은 2026년 6월 기준 공식 정보와 다수 교차검증을 바탕으로 정리했으며, 향후 대회 운영 측 발표에 따라 변경될 수 있습니다. 발롯 당락은 무작위 추첨으로 결정되며 당첨률은 보장되지 않습니다. 자선 슬롯의 모금 약정 금액, 2027 GFA·자선 접수 일정, 2028 발롯 일정은 단체·연도별로 달라지므로 신청 전 반드시 런던마라톤 공식 및 각 단체 채널에서 최신 정보를 확인하세요. 입국 서류(ETA 등)는 출발 전 영국 정부 공식 안내를 우선합니다.</p>
 `,
   },
@@ -321,6 +323,8 @@ export const blogPosts: BlogPost[] = [
 <li><strong>원정 준비를 시작한다면</strong> → <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a>로 항공·시차·결제부터 점검하세요.</li>
 </ul>
 </div>
+
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
 <p class="disclaimer">본 글은 2026년 6월 13일 기준, 베를린마라톤 공식 정보(bmw-berlin-marathon.com)와 공개된 자료를 바탕으로 정리했습니다. 추첨 일정·참가비·잔여 슬롯·항공편·비자/ETIAS 정책은 변동될 수 있으므로, 신청·출국 전 반드시 공식 사이트와 항공사·대사관 안내로 최신 정보를 재확인하시기 바랍니다. 당첨 여부나 미래 일정은 단정하지 않습니다. — 산초 에디터</p>
 `,
@@ -479,6 +483,7 @@ export const blogPosts: BlogPost[] = [
 
 <div class="callout info">
   <p><strong>면책</strong>: 본 글의 날짜·금액·정원은 NYRR(nyrr.org) 및 공식 발표 기준으로 작성됐으며, 2026년 6월 시점 정보입니다. 자선 단체별 모금액·마감, 투어 패키지 가격, 향후 사이클 접수일은 변동될 수 있으니 <strong>신청 직전 공식 페이지에서 반드시 재확인</strong>하세요. 당첨률·결과를 단정하지 않습니다. 환율 환산은 근사치입니다.</p>
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 `,
   },
   {
@@ -581,6 +586,7 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
 <p><strong>면책</strong></p>
 <p>이 글은 2026년 6월 13일 기준 worldmarathonmajors.com·abbott.com 공식 정보를 바탕으로 작성했습니다. 개최일·참가비·진입 경로·메달 정책은 변경될 수 있으며, 추첨 당첨 여부나 미래 메이저 합류(케이프타운·상하이)는 확정된 결과가 아닙니다. 비용·환율은 근사 범위이며, 실제 신청 전 각 대회 공식 사이트와 AbbottWMM 러너 포털에서 최신 정보를 반드시 직접 확인하세요. 산초 에디터는 비용·당첨·미래 일정을 보장하지 않습니다.</p>
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 `,
   },
   {
@@ -751,6 +757,8 @@ export const blogPosts: BlogPost[] = [
     <a class="mn-card" href="/blog/overseas-marathon-travel-checklist-korea"><span class="mn-emoji">🧳</span><div class="mn-label">해외 원정 준비 매뉴얼</div><div class="mn-desc">인천 출발·한국 여권 기준 공통 체크리스트. 어느 메이저든 챙길 것</div></a>
   </div>
 </div>
+
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
 <p class="disclaimer">※ BQ 자격 기준·자격 윈도·자선 모금 하한선은 baa.org 공식 발표(2026-06 확인) 기준입니다. <strong>2027 등록주간 확정일과 컷오프 수치는 2026년 9월 등록주간 전후로 발표</strong>되며, 컷오프는 매년 지원자 수에 따라 달라지므로 본문의 과거 수치(2024~2026)는 참고용일 뿐 2027 결과를 보장하지 않습니다. 신청 전 반드시 baa.org와 각 국내 대회 공식 페이지에서 최신 정보를 확인하세요.</p>
 `,
@@ -932,6 +940,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>코스 난이도 감을 먼저 잡고 싶다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 점검하고, 국내외 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
 
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
+
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문은 한국 러너의 해외 메이저 원정 준비를 일반 원칙 수준으로 정리한 매뉴얼입니다. 입국 허가 정보(미국 ESTA USD $21·2년, 영국 ETA £20·2025-01-08 한국 의무화·2년, EU ETIAS €20·2026 Q4 출시 예정·전환기 후 2027 본격 시행 예정, 호주 ETA·일본 단기 무비자)와 비행시간·시차는 2026년 6월 기준 공식·공개 자료를 바탕으로 정리했습니다. 여행자보험 보장 범위·면책, 카드 해외 수수료, 입국 허가 규정·수수료·시행일은 상품·카드사·항공사·각국 정책마다 다르고 <strong>예고 없이 변경</strong>됩니다 — 본문에 특정 상품·금액을 단정하지 않은 이유입니다. 환율은 변동분이라 본문에 단정하지 않았습니다. 보험·결제·입국·의학 관련 사항은 반드시 신청·결제 전 각 보험사·카드사·항공사·각국 입국 당국(ESTA=esta.cbp.dhs.gov, UK ETA=공식 앱/GOV.UK, ETIAS=travel-europe.europa.eu)·의료진 등 공식·전문 출처에서 최신 내용을 직접 확인하세요. 항공 소요시간·시차는 일반적 직항 기준 근사치로 편·계절에 따라 달라질 수 있습니다.</p>
 `,
   },
@@ -1033,6 +1043,8 @@ export const blogPosts: BlogPost[] = [
 
 <p>코스 난이도가 감이 안 잡힌다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하고, 국내외 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
 
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
+
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문의 일정(추첨 마감 2025-10-17·결과 2025-10-29)과 대회일(2026-08-30)은 공식 발표 기준입니다. 자선 단체별 최소 모금액·등록비, 여행 패키지 가격·보증금·예약 마감일은 단체/오퍼레이터마다 다르고 일부는 공식 미발표라 본문에 단정하지 않았습니다 — 신청 전 반드시 각 단체·오퍼레이터 공식 페이지에서 최신 금액과 마감을 확인하세요. 참가비(약 AUD $330)는 2차 출처 기반 추정치이며, 환율(AUD≈1,070~1,100원 / GBP≈1,700~1,800원 / USD≈1,350~1,400원)은 2026년 6월 기준 근사 범위로 변동될 수 있습니다.</p>
 `,
   },
@@ -1124,6 +1136,8 @@ export const blogPosts: BlogPost[] = [
 <a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">막내 메이저, 남반구 봄에 달리는 항만 코스</div></a>
 <a class="mn-card" href="/shoes/adidas-adios-pro-4"><span class="mn-emoji">👟</span><div class="mn-label">아디다스 아디오스 프로 4</div><div class="mn-desc">평지 PB 사냥용 카본 레이싱화</div></a>
 </div></div>
+
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 위 일정·금액은 시카고마라톤 공식 발표(2026년 6월 기준)를 근거로 정리했으며, 참가비·모금액은 모두 USD이고 환율(약 1,500~1,530원/$)은 결제 시점에 따라 달라집니다. 자선 최소 모금액·투어 파트너·정확한 정원 등 세부 사항은 변경될 수 있으니 신청 직전 공식 사이트(chicagomarathon.com)에서 반드시 재확인하세요. 한국 공인 투어 오퍼레이터의 구체 업체명은 공식 미발표 상태입니다.</p>
 `,
@@ -1230,6 +1244,8 @@ export const blogPosts: BlogPost[] = [
 </div>
 
 <p style="font-size:0.9em;color:#475569;margin-top:1.5em;">※ 보스턴(BQ 기록)·런던·뉴욕·베를린 등 나머지 메이저 도전 가이드도 순차 공개할 예정입니다. 첫 풀코스라면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>, 국내 대회는 <a href="/marathon">마라톤 캘린더</a>에서 함께 일정을 짜보세요.</p>
+
+<p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 도쿄마라톤·One Tokyo 공식 발표를 토대로 작성했습니다. 2027 참가비 확정액·추첨 결과 발표 정확일·자선 단체별 해외 수락 여부는 공식 미발표/단체별 상이라 변동될 수 있습니다. 신청 전 도쿄마라톤 공식(marathon.tokyo)에서 최종 확인하세요.</p>
 `,
