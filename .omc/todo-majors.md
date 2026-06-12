@@ -28,8 +28,8 @@
 - [x] **S5 뉴욕 50주년** (`new-york-marathon-2026-registration-guide`, 2026-06-13 발행) — 추첨 마감·자선($3,000~)·타임퀄 표·5개 자치구 난코스
 - [x] **B2 식스스타 메달** (`six-star-medal-challenge-korea-guide`, 2026-06-13 발행) — 시리즈 총정리 노드. ★세븐스타 아님(6개 고정, 나인스타 도입 예정) 검증. 5스포크 전부 링크
   - ✅ B1 허브 major-next에 뉴욕 추가 → 5개 도시 스포크 완비
-- [ ] S6 런던 2027 (`london-marathon-2027-registration-guide`)
-- [ ] S7 베를린 PB코스 (`berlin-marathon-2026-guide`)
+- [x] **S6 런던 2027** (`london-marathon-2027-registration-guide`, 2026-06-13 발행) — 추첨 마감·7월 결과 + 자선(£2,000~)·평지 빠른 코스. ★영국 ETA £16→£20 인상 반영
+- [x] **S7 베를린 2026** (`berlin-marathon-2026-guide`, 2026-06-13 발행) — 세계 최속 평지 PB 성지(세계기록), 에버그린 코스 가이드. 6스포크 전부 링크
 - [ ] **HUB 세계 6대 마라톤 완전정복** (`world-marathon-majors-guide-2026`) — **맨 마지막**(ItemList JSON-LD가 전부 실링크 되도록)
 
 ## 분기 CTA 레트로핏 (스포크 누적 시)
