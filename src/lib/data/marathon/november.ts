@@ -66,7 +66,17 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://mbn-seoulmarathon.com',
     description:
-      'MBN 주최 서울 도심 마라톤. 광화문→잠실 일직선 하프 코스(약 2.5만 명, TV 생중계). 하프 본접수 6/25·10K 6/26. 11/15은 추정일(공식 확정 전).',
+      'MBN 주최 서울 도심 마라톤(약 2.5만 명, TV 생중계). 광화문광장에서 잠실로 일직선으로 내려가는 하프·10K 코스(풀코스 없음). 2026.11.15(일) 07시 출발 확정. 접수: 우선신청 6/22(월) 10시~6/23(화)(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), 하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시. 참가비는 공식 미발표(2026-06-12 기준).',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: '없음',
+      courseDescription: '광화문광장 출발 → 잠실 도심 평지 코스. 접근성 좋고 도심 분위기.',
+    },
+    raceInfo: {
+      expectedParticipants: 25000,
+      startTime: '07:00',
+    },
   },
   {
     id: 'incheon-marathon-2026',

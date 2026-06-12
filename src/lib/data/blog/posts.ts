@@ -142,7 +142,7 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>10/17</strong></td><td>경주국제마라톤</td><td>경북</td><td>풀·하프·10K</td><td>마감(5/26)</td><td>확정</td></tr>
     <tr><td><strong>10/25</strong></td><td>조선일보 춘천마라톤</td><td>강원</td><td>풀·10K</td><td>풀 7/14·10K 7/16</td><td>확정</td></tr>
     <tr><td><strong>11/1</strong></td><td>JTBC 서울마라톤</td><td>서울</td><td>풀·10K</td><td>추첨 마감(4월)</td><td>확정</td></tr>
-    <tr><td><strong>11/15</strong></td><td>MBN 서울마라톤</td><td>서울</td><td>하프·10K</td><td>6/25~26 예정</td><td>확정</td></tr>
+    <tr><td><strong>11/15</strong></td><td>MBN 서울마라톤</td><td>서울</td><td>하프·10K</td><td>우선 6/22·일반 6/25~26</td><td>확정</td></tr>
     <tr><td><strong>11/15</strong></td><td>손기정평화마라톤</td><td>경기 고양</td><td>풀·하프·10K</td><td>9월 예상</td><td>일정 미발표</td></tr>
     <tr><td><strong>11/22</strong></td><td>인천마라톤(제2회)</td><td>인천</td><td>풀·10K·5K</td><td>추후 공개</td><td>날짜 확정</td></tr>
     <tr><td><strong>12/6</strong></td><td>부산국제마라톤</td><td>부산</td><td>풀·하프·10K</td><td>미발표</td><td>날짜 확정</td></tr>
@@ -186,7 +186,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
   <li><strong>11/1 JTBC 서울마라톤</strong> — 국내 최대 규모 가을 풀코스. 상암→여의도→잠실 코스로, <strong>추첨제</strong>라 4월에 이미 접수가 끝났습니다(카카오 러너스 카드 소지자 대상). 풀 15만 원.</li>
-  <li><strong>11/15 MBN 서울마라톤</strong> — 광화문에서 잠실까지 일직선으로 내려가는 하프·10K 도심 코스(풀코스 없음). <strong>하프 6/25·10K 6/26 일반접수 예정</strong>이라 지금 챙겨야 할 대회입니다. 자세한 코스는 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤 접수 정리</a>를 보세요.</li>
+  <li><strong>11/15(일) 7시 MBN 서울마라톤</strong> — 광화문광장에서 잠실까지 일직선으로 내려가는 하프·10K 도심 코스(풀코스 없음, 약 2.5만 명·TV 생중계). 접수가 임박했습니다: <strong>우선신청 6/22(월) 10시~6/23(화)</strong>(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), <strong>하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시</strong>. 지금 바로 챙겨야 할 대회입니다. 자세한 코스는 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤 접수 정리</a>를 보세요.</li>
   <li><strong>11/22 인천마라톤(제2회)</strong> — 인천 최초·유일 공식 풀코스. 2026년엔 <strong>청라하늘대교(바다 위 러닝) 코스를 추진 중</strong>이며 풀코스 정원을 8천 명으로 확대합니다. 접수·참가비는 추후 순차 공개 예정. 상세는 <a href="/blog/2026-incheon-marathon">2026 인천마라톤 정리</a> 참고.</li>
   <li><strong>11/15(추정) 손기정평화마라톤</strong> — 고양 제2자유로를 통제하는 약 2만 명 규모 대회. 선착순이라 9월 접수 오픈 시 조기 마감되니 알림 설정 필수.</li>
 </ul>
