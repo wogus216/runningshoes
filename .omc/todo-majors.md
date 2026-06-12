@@ -25,8 +25,9 @@
   - ✅ 도쿄 글 major-next 레트로핏 완료 → 도쿄↔시드니↔시카고 3노드 상호링크 가동
 - [x] **B1 해외 원정 매뉴얼** (`overseas-marathon-travel-checklist-korea`, 2026-06-13 발행) — RPM 허브. 7대 도시 입국 매트릭스(ESTA/영국ETA/EU ETIAS), FAQ JSON-LD
 - [x] **S4 보스턴 BQ** (`boston-marathon-2027-bq-guide`, 2026-06-13 발행) — 차별화 심장. BQ 기준표 + 국내 WA공인 대회(서울/경주/춘천)로 자격, 2027 내리막 페널티
-- [ ] S5 뉴욕 50주년 (`new-york-marathon-2026-registration-guide`)
-- [ ] B2 식스스타 메달 (`six-star-medal-challenge-korea-guide`)
+- [x] **S5 뉴욕 50주년** (`new-york-marathon-2026-registration-guide`, 2026-06-13 발행) — 추첨 마감·자선($3,000~)·타임퀄 표·5개 자치구 난코스
+- [x] **B2 식스스타 메달** (`six-star-medal-challenge-korea-guide`, 2026-06-13 발행) — 시리즈 총정리 노드. ★세븐스타 아님(6개 고정, 나인스타 도입 예정) 검증. 5스포크 전부 링크
+  - ✅ B1 허브 major-next에 뉴욕 추가 → 5개 도시 스포크 완비
 - [ ] S6 런던 2027 (`london-marathon-2027-registration-guide`)
 - [ ] S7 베를린 PB코스 (`berlin-marathon-2026-guide`)
 - [ ] **HUB 세계 6대 마라톤 완전정복** (`world-marathon-majors-guide-2026`) — **맨 마지막**(ItemList JSON-LD가 전부 실링크 되도록)

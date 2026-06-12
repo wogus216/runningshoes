@@ -3,6 +3,264 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'new-york-marathon-2026-registration-guide',
+    slug: 'new-york-marathon-2026-registration-guide',
+    title: '뉴욕시티마라톤 2026 신청 — 추첨 마감 후 남은 길(자선) + 5개 자치구 50주년 | 타임퀄·9+1·참가비, 인천 14시간 원정',
+    description: '2026 뉴욕시티마라톤(11/1)은 일반 추첨이 끝났습니다(24만+ 지원). 지금 한국 러너가 노릴 현실 경로는 공식 자선(최소 모금 $3,000~), 9+1·타임퀄은 다음 사이클용. 5개 자치구 50주년 난코스, 참가비·타임퀄 기준표, 인천 14시간·시차 14시간·ESTA까지 정리했습니다.',
+    thumbnail: '/images/blog/new-york-marathon-2026-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['뉴욕시티마라톤', '뉴욕마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '5개 자치구', '마라톤 추첨', 'NYRR'],
+    content: `
+<div class="deadline-strip">
+  <p><strong>2026 일반 추첨은 이미 마감(2026년 2월 25일 접수 종료, 3월 4일 발표).</strong> 2026년 6월 현재 한국 러너가 노릴 수 있는 현실 경로는 <strong>공식 자선(charity)</strong> 정도이며, 나머지는 <strong>2027 사이클</strong> 준비용입니다.</p>
+</div>
+
+<div class="tldr">
+  <p><strong>3줄 요약</strong></p>
+  <ul>
+    <li><strong>대회일</strong>: 2026년 11월 1일(일) — 5개 자치구 코스 완성 <strong>50주년</strong>. 인천 출발 기준 가장 도전적인 메이저 중 하나입니다.</li>
+    <li><strong>일반 추첨은 끝났습니다</strong>(2026년 2월 4~25일 접수, 3월 4일 발표, 역대 최다 24만+ 지원). 지금 노릴 수 있는 건 <strong>공식 자선</strong>, 나머지(9+1·타임 퀄리파이어)는 <strong>다음 사이클</strong> 대비용입니다.</li>
+    <li>한국 러너 변수: <strong>ESTA·약 14시간 비행·14시간 시차·쌀쌀한 11월 초</strong>. 그리고 다리·언덕 많은 코스라 <strong>기록보다 경험·식스스타</strong>로 접근하는 게 맞습니다.</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <p><strong>2026 일반 추첨은 종료됐습니다.</strong> 이 글은 "지금(2026년 6월) 시점에서 뉴욕을 노리는 한국 러너"를 위해 <em>① 아직 열려 있을 수 있는 경로</em>와 <em>② 다음 시즌을 위한 캘린더</em>를 함께 정리합니다. 모든 금액·날짜는 NYRR(nyrr.org) 공식 발표 기준이며 변동 가능성이 있어, 신청 직전 공식 페이지 재확인을 권합니다.</p>
+</div>
+
+<h2>1. 핵심 한 장 요약 — 뉴욕시티마라톤 2026</h2>
+<p>뉴욕시티마라톤은 세계 6대 메이저(Abbott World Marathon Majors) 중 가장 큰 규모를 자랑하는 대회입니다. 2026년은 1976년 5개 자치구 전 구간 코스가 완성된 지 <strong>50주년</strong>이 되는 해로, NYRR은 연중 기념 프로그램과 역대 최다 규모의 공식 자선 파트너(<strong>670개 이상</strong>)를 발표했습니다. "식스스타(6 Majors)"를 모으는 한국 러너에게는 마지막 퍼즐로 자주 꼽히는 대회입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th><th>신뢰도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>대회일</td><td>2026년 11월 1일(일)</td><td>확정</td></tr>
+    <tr><td>주최</td><td>New York Road Runners(NYRR)</td><td>확정</td></tr>
+    <tr><td>코스</td><td>5개 자치구(스태튼아일랜드→브루클린→퀸스→맨해튼→브롱크스→맨해튼), 베라자노-내로스 브리지 출발</td><td>확정</td></tr>
+    <tr><td>일반 추첨 접수</td><td>2026년 2월 4~25일 (<strong>마감됨</strong>)</td><td>확정</td></tr>
+    <tr><td>추첨 발표</td><td>2026년 3월 4일</td><td>확정</td></tr>
+    <tr><td>지원자 수</td><td>역대 최다 24만+ 건</td><td>확정</td></tr>
+    <tr><td>당첨자 등록 마감</td><td>2026년 9월 8일(개별 등록 링크 사용 기한)</td><td>확정</td></tr>
+    <tr><td>50주년 특이사항</td><td>공식 자선 파트너 670개+(역대 최다), 연중 기념 프로그램</td><td>확정</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <p><strong>거리 감각이 헷갈린다면</strong> 먼저 <a href="/blog/race-distance-difficulty-guide-2026">대회 거리별 난이도 가이드</a>로 풀코스 준비 상태를 점검하세요. 뉴욕은 다리 경사와 후반 1번가·5번가 언덕 때문에 "기록용"보다 "경험용" 코스로 분류됩니다.</p>
+</div>
+
+<h2>2. 지금(2026년 6월) 신청 가능한 경로는?</h2>
+<p>결론부터 말하면, <strong>일반 추첨과 타임 퀄리파이어 클레임 창은 모두 닫혔습니다</strong>(둘 다 2026년 2월에 마감). 6월 현재 한국 러너가 현실적으로 2026 대회 출전을 노릴 수 있는 거의 유일한 경로는 <strong>공식 자선(Official Charity) 모금 출전</strong>입니다. 나머지는 <strong>2027 이후를 위한 준비</strong>로 이해해야 합니다.</p>
+
+<h3>① 공식 자선(Charity) — 6월 시점에 가장 현실적</h3>
+<p>NYRR 공식 자선 파트너에 모금 약정을 하면 추첨과 무관하게 보장 출전권을 받습니다. 단, "기부"가 아니라 <strong>본인이 모금해서 채워야 하는 최소 모금액</strong>이 있고, 미달 시 본인 카드로 충당되는 구조라 부담이 큽니다.</p>
+<table>
+  <thead>
+    <tr><th>구분</th><th>내용</th><th>신뢰도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>최소 모금액</td><td>단체별 상이. NYRR 규정상 <strong>Bronze 최소 $3,000 / Silver 최소 $3,500</strong> 이상. 실제 단체는 보통 $3,500~$6,500+로 설정</td><td>확정(규정)</td></tr>
+    <tr><td>모금 마감</td><td>2026년 10월 15일까지 최소 모금액 달성(단체별로 더 이른 마감 있음)</td><td>확정</td></tr>
+    <tr><td>신청처</td><td>각 자선 단체 페이지에서 직접 신청(NYRR이 아니라 단체에 지원)</td><td>확정</td></tr>
+    <tr><td>잔여 자리</td><td>인기 단체는 조기 마감. 6월 시점 잔여 여부는 단체별 확인 필요</td><td>추정</td></tr>
+  </tbody>
+</table>
+<p>한국 러너 주의: 모금은 보통 미국 기부 플랫폼 기반이라 <strong>해외 후원자 모집이 쉽지 않습니다</strong>. $3,500을 원화로 환산하면 대략 480만 원 안팎(환율에 따라 변동). 현실적으로는 "참가비 + 자기 부담 기부"로 접근하는 한국 원정러가 많습니다.</p>
+
+<h3>② 9+1 프로그램 — 다음 사이클(2027 출전권)용</h3>
+<p>NYRR 회원이 <strong>당해 연도에 NYRR 인증 대회 9개 완주 + 자원봉사(또는 추가 1개) 1회</strong>를 채우면 다음 해 대회 보장 출전권을 얻습니다. 2026년에 9+1을 완성하면 <strong>2027 대회</strong> 출전권이 됩니다. 다만 NYRR 대회 대부분이 뉴욕 현지에서 열려, 한국 거주 러너에게는 사실상 현지 체류자용 경로입니다.</p>
+
+<h3>③ 타임 퀄리파이어(기록 출전) — 이미 마감, 2027 대비</h3>
+<p>기록 기준을 충족하면 보장 출전권을 받지만, <strong>2026 클레임 창은 2월 4~25일로 종료</strong>됐습니다. 핵심 변수: NYRR은 신청자가 몰리면 <strong>상위 일부만</strong> 받습니다. 2026의 경우 비(非)NYRR 풀코스 타임 퀄리파이어는 <strong>상위 10%</strong>만 수용해, 기준보다 약 <strong>22분 52초 더 빨라야</strong> 실제 출전이 가능했습니다. 즉 "기준 통과 = 출전 보장"이 아닙니다.</p>
+<table>
+  <thead>
+    <tr><th>연령대</th><th>남성 풀코스</th><th>여성 풀코스</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>18–34</td><td>2:53:00</td><td>3:13:00</td></tr>
+    <tr><td>35–39</td><td>2:55:00</td><td>3:15:00</td></tr>
+    <tr><td>40–44</td><td>2:58:00</td><td>3:26:00</td></tr>
+    <tr><td>45–49</td><td>3:05:00</td><td>3:38:00</td></tr>
+    <tr><td>50–54</td><td>3:14:00</td><td>3:51:00</td></tr>
+    <tr><td>55–59</td><td>3:23:00</td><td>4:10:00</td></tr>
+    <tr><td>60–64</td><td>3:34:00</td><td>4:27:00</td></tr>
+    <tr><td>65–69</td><td>3:45:00</td><td>4:50:00</td></tr>
+    <tr><td>70–74</td><td>4:10:00</td><td>5:30:00</td></tr>
+    <tr><td>75–79</td><td>4:30:00</td><td>6:00:00</td></tr>
+    <tr><td>80+</td><td>4:55:00</td><td>6:35:00</td></tr>
+  </tbody>
+</table>
+<p class="caption">기록 인정 창: 2025년 1월 1일 이후 인증 대회. 논바이너리 기준은 여성 기준과 동일. (NYRR 공식)</p>
+
+<h3>④ 국제 투어 오퍼레이터 — 패키지형 보장 출전</h3>
+<p>NYRR과 계약된 해외 공식 여행사를 통하면 <strong>출전권 + 항공·숙박 패키지</strong>로 참가할 수 있습니다. 추첨에 의존하지 않는 장점이 있지만 가격이 비싸고, 한국발 패키지는 종류가 제한적입니다. 가격·잔여는 업체별로 천차만별이라 여기서 단정하지 않습니다(추정·미발표 영역).</p>
+
+<h2>3. 참가비 — 회원/비회원/국제</h2>
+<table>
+  <thead>
+    <tr><th>구분</th><th>금액(USD)</th><th>신뢰도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>NYRR 회원</td><td>$255 + 처리수수료 $11</td><td>확정</td></tr>
+    <tr><td>비회원(국제 러너 포함)</td><td>$315 + 처리수수료 $11</td><td>확정</td></tr>
+    <tr><td>자선/투어 경로</td><td>위 참가비와 별도로 <strong>모금액·패키지 비용</strong>이 추가</td><td>확정</td></tr>
+  </tbody>
+</table>
+<p>국제 러너(비미국 거주자)도 <strong>참가비 구조는 동일</strong>합니다($315 비회원 기준). 환율에 따라 비회원 참가비는 대략 45만 원 안팎(처리수수료 포함, 근사치)입니다. 자선 경로를 택하면 여기에 최소 모금액(480만 원~)이 더해집니다.</p>
+
+<h2>4. 코스 — "기록보다 경험"인 이유</h2>
+<p>뉴욕 코스는 평탄한 베를린·시카고와 정반대입니다. 출발하자마자 <strong>베라자노-내로스 브리지</strong>의 가파른 오르막을 만나고, 5개 자치구를 잇는 다리들에서 경사·바람·노면 변화가 반복됩니다. 후반 맨해튼 1번가의 긴 직선 오르막과 센트럴파크 진입 전 5번가 언덕이 다리를 무너뜨리는 구간으로 악명 높습니다. 그래서 PB를 노리는 대회라기보다 <strong>5개 자치구를 관통하며 식스스타를 채우는 경험형 코스</strong>로 보는 게 맞습니다.</p>
+<table>
+  <thead>
+    <tr><th>자치구</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>스태튼아일랜드(출발)</td><td>베라자노 다리 오르막 — 초반 페이스 과욕 금물</td></tr>
+    <tr><td>브루클린</td><td>가장 긴 구간, 관중 응원 절정</td></tr>
+    <tr><td>퀸스 → 맨해튼</td><td>퀸스보로 다리(조용한 오르막) 뒤 1번가 함성</td></tr>
+    <tr><td>브롱크스 → 맨해튼</td><td>심리적 저점 구간, 다시 5번가 언덕</td></tr>
+    <tr><td>센트럴파크(피니시)</td><td>마지막 굴곡 — 끝까지 평지가 아님</td></tr>
+  </tbody>
+</table>
+<p>이런 코스 특성상 신발 선택이 갈립니다. 다리 경사·후반 근피로를 감안하면 무조건 최상위 레이싱화보다, 안정성과 쿠션을 갖춘 카본화가 합리적인 경우가 많습니다. 입문~중급 러너라면 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>, 기록을 노린다면 <a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a>나 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a>를 비교해 보세요(개인 발·페이스에 따라 다름).</p>
+
+<h2>5. 한국 러너 체크리스트 — 인천 출발 기준</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>입국 서류</td><td><strong>ESTA</strong>(전자여행허가) 사전 승인 필수. 한국 여권(비자면제 프로그램 대상). 출발 최소 며칠 전 신청 권장</td></tr>
+    <tr><td>항공</td><td>인천(ICN) → 뉴욕 JFK 또는 뉴어크(EWR) 직항 약 14시간</td></tr>
+    <tr><td>시차</td><td>11월 미 동부는 EST(서머타임 종료 후). 한국이 약 <strong>14시간 빠름</strong> — 도착 후 시차 적응에 며칠 필요</td></tr>
+    <tr><td>날씨</td><td>11월 초 뉴욕은 쌀쌀(아침 한 자릿수~10도 안팎 흔함). 출발 전 대기 방한 의류 필수</td></tr>
+    <tr><td>결제</td><td>한국 신용카드 해외결제 가능 여부·한도 사전 확인(참가비·모금·현지 비용)</td></tr>
+    <tr><td>일정</td><td>레이스 전날 엑스포 패킷 픽업 필수 — 도착 일정을 금~토에 여유 있게</td></tr>
+  </tbody>
+</table>
+<p>해외 원정의 항공·숙소·시차 적응·환전·짐 싸기까지 한 번에 점검하려면 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a>를 그대로 따라가면 됩니다. ESTA·14시간 비행·결제 같은 변수는 뉴욕에도 동일하게 적용됩니다.</p>
+
+<div class="major-next">
+  <h2>다음 단계 — 당신의 상황은?</h2>
+  <ul>
+    <li><strong>"2026년에 꼭 뛰고 싶다"</strong> → 6월 시점 현실 경로는 <strong>공식 자선</strong>뿐. 관심 단체 페이지에서 잔여·최소 모금액을 직접 확인하고, <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a>로 항공·숙소·ESTA를 동시에 준비하세요.</li>
+    <li><strong>"기록으로 보장 출전"</strong> → 위 타임 퀄리파이어 표를 목표로. 단 상위 일부만 수용되므로 <strong>기준보다 한참 빠르게</strong> 준비해야 합니다. <a href="/blog/boston-marathon-2027-bq-guide">보스턴 BQ 가이드</a>의 기록 전략이 그대로 도움이 됩니다.</li>
+    <li><strong>"다른 메이저도 비교 중"</strong> → 비교적 추첨 문이 넓은 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>, 접수가 더 열려 있는 <a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>, 남반구 시즌의 <a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>를 함께 검토하세요. 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><strong>면책</strong>: 본 글의 날짜·금액·정원은 NYRR(nyrr.org) 및 공식 발표 기준으로 작성됐으며, 2026년 6월 시점 정보입니다. 자선 단체별 모금액·마감, 투어 패키지 가격, 향후 사이클 접수일은 변동될 수 있으니 <strong>신청 직전 공식 페이지에서 반드시 재확인</strong>하세요. 당첨률·결과를 단정하지 않습니다. 환율 환산은 근사치입니다.</p>
+`,
+  },
+  {
+    id: 'six-star-medal-challenge-korea-guide',
+    slug: 'six-star-medal-challenge-korea-guide',
+    title: '애벗 식스스타 메달 — 6대 메이저 다 모으는 시간·돈·전략 | 세븐스타? 나인스타? 한국 러너 난이도순 완주 로드맵',
+    description: '6대 메이저(도쿄·보스턴·런던·베를린·시카고·뉴욕)를 모두 완주하면 받는 애벗 식스스타 메달. 시드니 합류로 세븐스타가 됐을까?(정답: 아직 6개 고정·나인스타 도입 예정) 한국 러너 기준 가장 쉬운 도쿄부터 가장 어려운 보스턴 BQ까지 난이도순 수집 전략, 비용·기간, 메달 등록법까지 총정리했습니다.',
+    thumbnail: '/images/blog/six-star-medal-challenge-korea-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['식스스타', '식스스타 메달', '애벗 월드 마라톤 메이저', '세븐스타', '세계 6대 마라톤', '메이저 마라톤', '식스스타 도전', '러닝 버킷리스트', '마라톤 완주', '나인스타'],
+    content: `
+<div class="callout info">
+<p><strong>식스스타 메달이란? — 그리고 "세븐스타"의 진실</strong></p>
+<p>애벗 월드 마라톤 메이저스(Abbott World Marathon Majors, AbbottWMM)의 <strong>기존 6개 대회를 모두 완주</strong>하면 받는 기념 메달입니다. 연도나 순서는 상관없습니다. 살면서 6개를 다 채우기만 하면 됩니다.</p>
+<p>2025년 8월 시드니 마라톤이 <strong>7번째 메이저</strong>로 합류했지만, 메달 명칭과 구성은 바뀌지 않았습니다. 공식 페이지(worldmarathonmajors.com)는 식스스타 메달이 <strong>"원래의 6개 대회(도쿄·보스턴·런던·베를린·시카고·뉴욕)" 완주자에게만 수여</strong>되며, 시드니는 식스스타 대상에 포함되지 않는다고 명시합니다. 즉 <strong>"세븐스타 메달"이라는 공식 메달은 없습니다.</strong> 7번째 별을 모은 러너는 있지만, 애벗은 7스타·8스타용 정식 메달을 따로 만들지 않고 <strong>메이저가 9개로 완성되는 시점에 곧장 나인스타 메달을 신설</strong>할 계획입니다. 그때도 식스스타 메달은 그대로 병존 수여됩니다.</p>
+</div>
+
+<h2>6대 메이저 한눈에 — 개최월·진입 난이도·시리즈 가이드</h2>
+
+<p>먼저 큰 그림부터 봅시다. 식스스타 대상 6개 대회는 봄(도쿄·보스턴·런던)과 가을(베를린·시카고·뉴욕)에 흩어져 있고, 지역도 아시아 1개·미국 3개·유럽 2개로 퍼져 있습니다. 아래 표에 7번째 메이저인 시드니까지 넣되, 식스스타 포함 여부를 명확히 표기했습니다. 각 대회 상세는 산초 에디터가 따로 정리한 시리즈 가이드를 연결해 두었습니다.</p>
+
+<table>
+<thead>
+<tr><th>메이저</th><th>2026 개최일</th><th>개최월</th><th>식스스타 포함</th><th>주 진입 경로</th><th>한국 러너 체감 난이도</th><th>시리즈 가이드</th></tr>
+</thead>
+<tbody>
+<tr><td>도쿄</td><td>3/1</td><td>3월</td><td>포함</td><td>추첨 + 자선</td><td>쉬움(자선)</td><td><a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a></td></tr>
+<tr><td>보스턴</td><td>4/20</td><td>4월</td><td>포함</td><td>BQ 기록 자격</td><td>가장 어려움</td><td><a href="/blog/boston-marathon-2027-bq-guide">보스턴 BQ 가이드</a></td></tr>
+<tr><td>런던</td><td>4/26</td><td>4월</td><td>포함</td><td>추첨 + 자선</td><td>추첨 매우 어려움</td><td>—</td></tr>
+<tr><td>시드니</td><td>8/30</td><td>8월</td><td><strong>미포함</strong>(7번째 메이저)</td><td>추첨</td><td>중간</td><td><a href="/blog/sydney-marathon-2026-registration-guide">시드니 마라톤 접수 가이드</a></td></tr>
+<tr><td>베를린</td><td>9/27</td><td>9월</td><td>포함</td><td>추첨 / 패키지</td><td>비교적 쉬움</td><td>—</td></tr>
+<tr><td>시카고</td><td>10/11</td><td>10월</td><td>포함</td><td>추첨 / 자선</td><td>중간</td><td><a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a></td></tr>
+<tr><td>뉴욕</td><td>11/1</td><td>11월</td><td>포함</td><td>추첨 / 자선</td><td>추첨 어려움</td><td>—</td></tr>
+</tbody>
+</table>
+
+<p>표에서 보듯 시드니는 일정상 메이저 캘린더에 들어가지만, <strong>식스스타 메달 카운트에는 잡히지 않습니다.</strong> 호주 원정을 계획한다면 "7번째 별"이라는 기념 의미로 접근하는 것이지, 식스스타 진척과는 별개로 두는 게 맞습니다.</p>
+
+<div class="callout info">
+<p><strong>미래 확장 (참고 — 아직 예정/조건부)</strong></p>
+<p>케이프타운 마라톤(남아공)이 2027년 8번째 메이저로 합류할 예정이고, 상하이 마라톤은 후보 1단계를 통과해 2026년 12월 대회에서 2년 연속 기준을 충족하면 9번째 후보가 됩니다. 두 대회가 모두 통과하면 9개 체제가 완성되며 <strong>나인스타 메달이 신설될 예정</strong>입니다. 다만 둘 다 아직 "예정·조건부" 단계이므로 확정된 일정으로 보지는 마세요.</p>
+</div>
+
+<h2>한국 러너 난이도순 수집 전략 — 쉬운 별부터, 보스턴은 별도 프로젝트</h2>
+
+<p>6개를 한 해에 다 끝내려는 건 비현실적입니다. 대회마다 추첨 시점·기록 통과 시점이 제각각이라, 보통 <strong>여러 시즌에 걸쳐 분산</strong>해서 모읍니다. 핵심은 "통제 가능한 별부터 빨리 쌓아 추진력을 만들고, 통제 불가능한 별은 매년 병행 도전한다"는 것입니다.</p>
+
+<h3>1단계 — 진입 쉬운 별로 출발 (도쿄·베를린)</h3>
+<p><strong>도쿄</strong>는 식스스타에서 가장 진입하기 쉬운 대회입니다. 일반 추첨은 경쟁이 크지만, <strong>자선 기부(charity bid)</strong> 경로로 사실상 출전을 확보할 수 있습니다. 최소 기부 단위가 10만 엔(약 100만 원대) 수준이고 최근 성공 입찰은 그보다 높게 형성되지만, "당첨 운"에 기대지 않고 출전을 확정할 수 있다는 점이 큽니다. 항공도 인천에서 가장 가깝습니다. <strong>베를린</strong> 역시 해외 투어 패키지로 배정을 확보하는 경로가 많아 비교적 진입이 수월합니다. 이 둘로 "이미 2개 모았다"는 동력을 먼저 만드세요. 자세한 도쿄 접수 절차는 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a>를 참고하세요.</p>
+
+<h3>2단계 — 추첨형 3개는 매년 병행 응모 (런던·시카고·뉴욕)</h3>
+<p>런던·시카고·뉴욕은 추첨 당첨 시점을 본인이 통제할 수 없습니다. 그래서 <strong>일찍부터 매년 동시에 응모</strong>해 두는 게 정석입니다. 떨어지면 자선 경로나 해외 투어 패키지로 백업할 수 있습니다. 런던은 세계 최대 경쟁이라 추첨만 믿기 어렵고, 뉴욕도 경쟁이 큽니다. 시카고는 셋 중 당첨 가능성이 비교적 양호한 편이라 가을 일정으로 노려볼 만합니다. 시카고 접수 흐름은 <a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a>에 정리해 두었습니다.</p>
+
+<h3>3단계 — 보스턴(BQ)은 별도 장기 프로젝트</h3>
+<p>보스턴은 식스스타의 사실상 최종 관문입니다. 다른 대회와 달리 <strong>BQ(보스턴 퀄리파잉) 기록 통과가 거의 유일한 진입 경로</strong>이기 때문입니다. 연령·성별별 기준 기록을 직접 달성해야 하므로, 돈이나 운이 아니라 <strong>기록 향상 훈련이라는 장기 프로젝트</strong>로 따로 두는 게 맞습니다. 다른 5개 별을 모으는 동안 평행하게 기록 향상에 투자하다가, 마지막 또는 후반에 도전하는 흐름이 현실적입니다. BQ 기준 기록과 전략은 <a href="/blog/boston-marathon-2027-bq-guide">보스턴 2027 BQ 가이드</a>에서 자세히 다뤘습니다.</p>
+
+<p>레이스 페이스를 끌어올려야 하는 BQ·기록 도전 구간에서는 카본 레이싱화의 도움이 큽니다. 한국에서 접근 가능한 대표 모델로는 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>, <a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a>, <a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a>, <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이 플러스</a> 등이 있습니다.</p>
+
+<h2>비용·기간 감 — 근사 범위로만</h2>
+
+<p>식스스타는 성격상 정확한 총비용을 못 박기 어렵습니다. 추첨·기부·기록 통과 시점이 다 다르기 때문입니다. 그래서 아래 수치는 모두 <strong>대략적인 범위·근사치</strong>로만 받아들이세요. 환율도 시점에 따라 변동하므로 "약 ~원대"로만 표기합니다.</p>
+
+<ul>
+<li><strong>수집 기간:</strong> 보통 <strong>여러 해(몇 시즌)에 걸쳐</strong> 모읍니다. 추첨·BQ 통과 시점이 통제 불가라 한 해에 6개를 다 끝내기는 현실적으로 어렵습니다.</li>
+<li><strong>대회별 참가비:</strong> 대회마다 다르며 대략 1개당 수십만 원대 범위(미화 200~400달러대 수준). 도쿄 자선 경로처럼 기부가 얹히면 더 올라갑니다.</li>
+<li><strong>항공(인천 출발):</strong> 도쿄를 빼면 미주 3개·유럽 2개로 모두 장거리입니다. 미주·유럽 왕복은 시즌과 예약 시점에 따라 편차가 커서 회당 수십만~수백만 원대까지 벌어질 수 있습니다.</li>
+<li><strong>숙박:</strong> 대회 주간은 성수기라 평소보다 비쌉니다. 도심 접근성을 따지면 더 올라갑니다.</li>
+</ul>
+
+<p>요약하면, <strong>1개 대회당 참가비 + 인천발 왕복 항공 + 대회 주간 숙박을 합치면 회당 수백만 원대</strong>, 6개를 누적하면 상당한 규모입니다. 한 번에 부담하기보다 <strong>몇 년에 걸쳐 분산</strong>하는 것이 비용·체력 양쪽에서 현실적입니다. 항공·숙박·환전·짐 싸기 같은 원정 실무는 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a>에 한국 여권·한국 카드 기준으로 정리해 두었으니 함께 보세요.</p>
+
+<h2>메달 등록·인증·수령법</h2>
+
+<p>별을 다 모았어도 자동으로 메달이 오는 건 아닙니다. <strong>본인 기록을 공식 시스템에 등록·인증</strong>하는 절차가 있습니다.</p>
+
+<ul>
+<li><strong>자격:</strong> 식스스타 6개 대회(도쿄·보스턴·런던·베를린·시카고·뉴욕)를 연도·순서 무관하게 모두 완주.</li>
+<li><strong>인증 — 러너 포털(Runner Portal):</strong> AbbottWMM 공식 사이트에서 계정을 만들면 공식 완주 기록이 자동으로 매칭됩니다. 오래되어 자동 매칭이 안 되는 과거 기록은 <strong>피니셔 인증서 + 신분증</strong>을 제출해 수동으로 "별 청구(claim)"할 수 있습니다. 첫 별을 모을 때부터 포털 계정을 만들어 기록을 쌓아 두면 마지막에 한꺼번에 확인하기 편합니다.</li>
+<li><strong>수령:</strong> 마지막 6번째 메이저를 완주하면 <strong>그 대회 현장(피니시 라인 인근 메달 부스)에서 식스스타 메달을 받습니다.</strong> 공식 결과가 며칠 내 AbbottWMM에 전달·처리되면 포털에 반영되고 확인 이메일이 발송됩니다.</li>
+</ul>
+
+<p>참고로 시드니 등 추가 메이저 완주는 정식 메달 대신 <strong>컬렉터블 코인/디스플레이</strong>(예: "Seven Star Sydney" 골드 코인)로 기념할 수 있습니다. 이는 기념품이지 식스스타·나인스타 같은 정식 메달이 아니라는 점을 기억하세요.</p>
+
+<div class="major-next">
+<p><strong>다음은 어디로?</strong></p>
+<p>6대 메이저는 봄·가을에 흩어져 있어, "올해 어느 별부터 노릴지"는 본인의 추첨 결과·기록·휴가 일정에 따라 달라집니다. 진입 쉬운 도쿄·베를린으로 동력을 만들고, 추첨 3개를 매년 병행 응모하며, 보스턴 BQ는 별도 장기 목표로 두는 흐름을 추천합니다.</p>
+<ul>
+<li>가장 먼저 도전하기 좋은 별 → <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 마라톤 접수 가이드</a></li>
+<li>가을 추첨 노린다면 → <a href="/blog/chicago-marathon-2026-registration-guide">시카고 마라톤 접수 가이드</a></li>
+<li>최종 관문 BQ 준비 → <a href="/blog/boston-marathon-2027-bq-guide">보스턴 2027 BQ 가이드</a></li>
+<li>7번째 별·호주 원정 → <a href="/blog/sydney-marathon-2026-registration-guide">시드니 마라톤 접수 가이드</a></li>
+<li>원정 실무 총정리 → <a href="/blog/overseas-marathon-travel-checklist-korea">해외 마라톤 원정 체크리스트</a></li>
+</ul>
+<p>대회별 거리·난이도가 헷갈린다면 <a href="/blog/race-distance-difficulty-guide-2026">레이스 거리·난이도 가이드</a>로 감을 잡고, 전체 일정은 <a href="/marathon">마라톤 일정 페이지</a>에서 확인하세요.</p>
+</div>
+
+<div class="callout warning">
+<p><strong>면책</strong></p>
+<p>이 글은 2026년 6월 13일 기준 worldmarathonmajors.com·abbott.com 공식 정보를 바탕으로 작성했습니다. 개최일·참가비·진입 경로·메달 정책은 변경될 수 있으며, 추첨 당첨 여부나 미래 메이저 합류(케이프타운·상하이)는 확정된 결과가 아닙니다. 비용·환율은 근사 범위이며, 실제 신청 전 각 대회 공식 사이트와 AbbottWMM 러너 포털에서 최신 정보를 반드시 직접 확인하세요. 산초 에디터는 비용·당첨·미래 일정을 보장하지 않습니다.</p>
+`,
+  },
+  {
     id: 'boston-marathon-2027-bq-guide',
     slug: 'boston-marathon-2027-bq-guide',
     title: '보스턴마라톤, 추첨이 없다 — 한국에서 BQ(자격기록) 만드는 현실 가이드 | 연령별 기준표·컷오프·국내 WA공인 대회로 자격 따기',
@@ -347,7 +605,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>핵심은 "남이 좋다는 신발"이 아니라 <strong>충분히 신어 본 검증된 레이스화</strong>를 들고 가는 것입니다. 처음 신는 카본화로 첫 해외 풀코스를 뛰는 건 권하지 않습니다 — 발에 맞는지, 장거리에서 어떤지 국내에서 먼저 확인하세요.</p>
 
-<div class="major-next"><p class="mn-title">도시별 신청 가이드로 — 분기해서 결정하세요</p><div class="mn-grid"><a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">인천 2시간·시차 0. 첫 메이저 1순위 — 자선·추첨·OTG 3가지 길</div></a><a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">7번째 메이저·식스스타 경관 코스 — 추첨 마감 후 자선·투어</div></a><a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">세계 최속 평지 PB 성지 — 자선·공식 투어 막차</div></a><a class="mn-card" href="/blog/boston-marathon-2027-bq-guide"><span class="mn-emoji">🦄</span><div class="mn-label">보스턴마라톤 2027</div><div class="mn-desc">추첨 없음 — 국내 공인 대회로 BQ 자격 만들기</div></a></div></div>
+<div class="major-next"><p class="mn-title">도시별 신청 가이드로 — 분기해서 결정하세요</p><div class="mn-grid"><a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">인천 2시간·시차 0. 첫 메이저 1순위 — 자선·추첨·OTG 3가지 길</div></a><a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">7번째 메이저·식스스타 경관 코스 — 추첨 마감 후 자선·투어</div></a><a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">세계 최속 평지 PB 성지 — 자선·공식 투어 막차</div></a><a class="mn-card" href="/blog/boston-marathon-2027-bq-guide"><span class="mn-emoji">🦄</span><div class="mn-label">보스턴마라톤 2027</div><div class="mn-desc">추첨 없음 — 국내 공인 대회로 BQ 자격 만들기</div></a><a class="mn-card" href="/blog/new-york-marathon-2026-registration-guide"><span class="mn-emoji">🗽</span><div class="mn-label">뉴욕시티마라톤 2026</div><div class="mn-desc">5개 자치구 50주년 — 추첨 마감 후 자선</div></a></div></div>
 
 <p>코스 난이도 감을 먼저 잡고 싶다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 점검하고, 국내외 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
 
