@@ -1,6 +1,113 @@
 import { BlogPost } from '@/types/blog';
+import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
+  {
+    id: 'tokyo-marathon-2027-registration-guide',
+    slug: 'tokyo-marathon-2027-registration-guide',
+    title: '도쿄마라톤 2027 신청 완전 가이드 — 지금 열린 자선·추첨·OTG 3가지 길 | 비행 2시간·시차 0, 한국 러너 첫 메이저 1순위',
+    description: '세계 6대 마라톤 중 지금 신청할 수 있는 건 도쿄뿐입니다. 자선(6/24~7/9, 기부 ¥10만)·무료 일반추첨(8/14~8/28)·One Tokyo Global 선행추첨 — 세 가지 길의 비용과 손익, 한국 러너가 자주 틀리는 신청 실수(¥10만은 참가비가 아니다, 단체별 해외 수락 차이)까지 공식 정보로 정리했습니다. 인천에서 2시간·시차 0인 도쿄는 첫 메이저로 가장 합리적입니다.',
+    thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['도쿄마라톤', '도쿄마라톤 2027', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
+    content: `
+<div class="deadline-strip">
+  <span class="dl-badge">📢 접수 임박</span>
+  <span class="dl-text">도쿄마라톤 2027 — 자선 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)} 오픈 ~ ${md(MAJOR_DEADLINES.tokyo2027.charity.close)} 마감 · 무료 일반추첨 ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}</span>
+</div>
+
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>세계 6대 메이저 중 지금 신청 가능한 건 도쿄뿐</strong>입니다(런던·베를린·시카고·뉴욕·시드니는 이번 사이클 마감). 도쿄 2027(${MAJOR_DEADLINES.tokyo2027.raceDate.replace(/-/g, '.')})은 신청 창이 열려 있습니다.</li>
+    <li><strong>길은 3가지</strong> — ① 자선(${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}, 최소 기부 ¥10만≈${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}) ② <strong>무료 일반추첨</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}) ③ One Tokyo Global 선행추첨(${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}).</li>
+    <li><strong>한국 러너에게 가장 현실적인 첫 메이저</strong> — 인천→하네다 약 2시간, <strong>시차 0</strong>, 도심 평지 고속 코스. 단 "¥10만이 참가비"라는 오해와 자선 단체별 해외 수락 차이를 꼭 짚어야 합니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗼</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 첫 메이저로 도쿄를 추천할까</p>
+    <p>세계 6대(2025년 시드니 합류로 7대) 마라톤은 대부분 비행 10시간 이상·시차 적응이 필요합니다. 도쿄는 다릅니다 — <strong>인천에서 약 2시간, 한일 시차 0(KST=JST)</strong>이라 시차 적응이 필요 없고, 코스도 도쿄도청에서 긴자·도쿄역으로 이어지는 <strong>평지 고속 코스</strong>라 기록도 잘 나옵니다. "메이저 데뷔전"으로 부담이 가장 적은 대회죠. 2027년은 <strong>20주년</strong> 대회이기도 합니다.</p>
+  </div>
+</div>
+
+<h2>지금 열린 3가지 길 — 한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>경로</th><th>신청 기간</th><th>비용</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>자선(RUN with HEART)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}</td><td>기부 ¥10만~ <strong>+ 참가비 별도</strong></td><td>당첨 걱정 없이 출전권 확보(단체별 조건)</td></tr>
+    <tr><td><strong>일반 추첨(무료 응모)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}</td><td>당첨 시 참가비만</td><td>경쟁률 높음. 가장 저렴하지만 운</td></tr>
+    <tr><td><strong>One Tokyo Global</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}</td><td>연회비 ¥3만 + 당첨 시 참가비</td><td>선행 추첨 + 연속 미당첨 시 특별 추첨 자격</td></tr>
+  </tbody>
+</table>
+
+<p>세 경로는 <strong>동시 신청이 안 됩니다</strong>. "확실히 가고 싶다(돈 더 써도 됨)"면 자선, "비용 최소(운에 맡김)"면 일반 추첨, "매년 도전할 거다"면 One Tokyo Global이 맞습니다.</p>
+
+<h2>자선 루트의 진실 — "¥10만이 참가비"가 아닙니다</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">💸</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 러너가 가장 많이 하는 오해 2가지</p>
+    <ul>
+      <li><strong>기부금 ¥10만은 참가비가 아니라 별도</strong> — 자선 출전권은 <strong>최소 기부 ¥10만(${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}) + 참가비(해외 러너 별도 납부)</strong>를 모두 냅니다. 실부담은 <strong>총 130만 원 이상</strong>으로 잡아야 현실적입니다.</li>
+      <li><strong>${MAJOR_DEADLINES.tokyo2027.charity.charities}개 자선단체 중 일부는 일본 거주자만</strong> 받습니다. 한국에서 신청한다면 <strong>각 단체의 해외 거주자 수락 여부를 먼저 확인</strong>해야 합니다(전체가 해외 OK가 아님).</li>
+    </ul>
+  </div>
+</div>
+
+<p>그래도 자선의 장점은 분명합니다 — <strong>추첨 운에 기대지 않고 출전권을 확보</strong>할 수 있다는 것. 신청은 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)} 오픈해서 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}에 마감되고, 기부금 납부는 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지입니다. 비용을 감수하고 "2027년에 반드시" 가고 싶은 러너에게 맞습니다.</p>
+
+<h2>무료로 가는 길 — 일반 추첨</h2>
+
+<p>가장 저렴한 건 <strong>무료 일반 추첨</strong>입니다. ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}에 응모하고, 당첨되면 그때 참가비만 냅니다(결과는 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} 발표). 참가비는 2026 대회 기준 <strong>해외 러너 약 $230(국내 ¥19,800)</strong>이었는데, <strong>2027 금액은 아직 공식 미발표</strong>라 변동될 수 있습니다.</p>
+
+<p>단점은 <strong>경쟁률</strong>입니다. 메이저인 만큼 추첨 당첨이 쉽지 않아요. "올해 안 되면 내년에 또" 식으로 여러 해 도전할 생각이라면, 선행 추첨과 연속 미당첨 보장 제도가 있는 <strong>One Tokyo Global</strong>(연회비 ¥3만)을 함께 고려할 만합니다. 단, 이 제도도 <strong>당첨 보장이 아니라 '특별 추첨 자격'</strong>이라는 점을 오해하면 안 됩니다.</p>
+
+<h2>한국 러너 신청 체크리스트</h2>
+
+<ul>
+  <li><strong>여권 영문명과 100% 일치</strong> — 신청 시 영문 이름을 여권과 다르게 적으면 입국·확인에서 문제가 됩니다.</li>
+  <li><strong>해외 결제 카드 준비</strong> — 결제는 신용카드/지정 온라인 결제만. 완료 후 <strong>환불·이름 변경·양도 불가</strong>입니다.</li>
+  <li><strong>환율은 변동分 감안</strong> — ¥10만 ≈ ${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}(2026-06 기준). 신청 시점 환율로 다시 계산하세요.</li>
+  <li><strong>거리부터 확정</strong> — 첫 풀코스라면 무리하지 말고 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하세요.</li>
+  <li><strong>신발</strong> — 평지 고속 코스라 PB를 노린다면 카본 슈퍼슈즈가 유리합니다(아래 추천).</li>
+</ul>
+
+<div class="major-next">
+  <p class="mn-title">🏁 도쿄 다음 한 걸음 — 당신의 방향은?</p>
+  <div class="mn-grid">
+    <a class="mn-card" href="/shoes/asics-metaspeed-sky-plus">
+      <span class="mn-emoji">👟</span>
+      <div class="mn-label">도쿄 평지엔 이 카본화</div>
+      <div class="mn-desc">고속 평지 코스용 아식스 메타스피드 스카이+</div>
+    </a>
+    <a class="mn-card" href="/blog/race-distance-difficulty-guide-2026">
+      <span class="mn-emoji">🏃</span>
+      <div class="mn-label">내 거리부터 정하기</div>
+      <div class="mn-desc">풀·하프·10K 거리별 난이도 가이드</div>
+    </a>
+    <a class="mn-card" href="/blog/2026-second-half-marathon-schedule-korea">
+      <span class="mn-emoji">🗓️</span>
+      <div class="mn-label">국내 가을 대회로 몸풀기</div>
+      <div class="mn-desc">2026 하반기 마라톤 캘린더</div>
+    </a>
+  </div>
+</div>
+
+<p style="font-size:0.9em;color:#475569;margin-top:1.5em;">※ 보스턴(BQ 기록)·런던·뉴욕·베를린·시카고·시드니 등 나머지 메이저 도전 가이드도 순차 공개할 예정입니다. <a href="/marathon">마라톤 캘린더</a>에서 국내 대회와 함께 일정을 짜보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 도쿄마라톤·One Tokyo 공식 발표를 토대로 작성했습니다. 2027 참가비 확정액·추첨 결과 발표 정확일·자선 단체별 해외 수락 여부는 공식 미발표/단체별 상이라 변동될 수 있습니다. 신청 전 도쿄마라톤 공식(marathon.tokyo)에서 최종 확인하세요.</p>
+`,
+  },
   {
     id: 'garmin-run-club-grc-busan-expansion-2026',
     slug: 'garmin-run-club-grc-busan-expansion-2026',
