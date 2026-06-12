@@ -19,8 +19,9 @@
 
 ## 시리즈 진행도 (허브 1 + 스포크 7 + 보조 2 = 10편)
 - [x] **S1 도쿄 2027** (`tokyo-marathon-2027-registration-guide`, 2026-06-13 발행) — 1차 배치
-- [ ] S2 시드니 2026 (`sydney-marathon-2026-registration-guide`) — 마감 임박형
-- [ ] S3 시카고 2026 (`chicago-marathon-2026-registration-guide`)
+- [x] **S2 시드니 2026** (`sydney-marathon-2026-registration-guide`, 2026-06-13 발행) — 비PB 경관코스(식스스타 포지셔닝)
+- [x] **S3 시카고 2026** (`chicago-marathon-2026-registration-guide`, 2026-06-13 발행) — 평지 PB. 자선 9/15·투어 8/16
+  - ✅ 도쿄 글 major-next 레트로핏 완료 → 도쿄↔시드니↔시카고 3노드 상호링크 가동
 - [ ] B1 해외 원정 매뉴얼 (`overseas-marathon-travel-checklist-korea`) — 최강 RPM 노드
 - [ ] S4 보스턴 BQ (`boston-marathon-2027-bq-guide`) — 차별화 심장
 - [ ] S5 뉴욕 50주년 (`new-york-marathon-2026-registration-guide`)

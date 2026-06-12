@@ -3,6 +3,199 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'sydney-marathon-2026-registration-guide',
+    slug: 'sydney-marathon-2026-registration-guide',
+    title: '시드니마라톤 2026 신청 — 추첨 마감 후 남은 두 갈래(자선·투어) | 8/30 임박, PB보다 식스스타·하버브리지 경관 코스',
+    description: '2026 시드니마라톤(8/30) 일반추첨은 끝났습니다. 한국에서 들어가는 길은 국제 자선과 공식 여행 패키지 둘뿐 — 정해진 마감보다 자리 소진이 먼저입니다. 자선 모금 티어·비용, 인천 직항 10시간·시차 +1시간·ETA, 그리고 시드니가 PB 코스가 아닌 이유(누적 +313m)까지. 7번째 메이저를 식스스타 메달로.',
+    thumbnail: '/images/blog/sydney-marathon-2026-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['시드니마라톤', '시드니마라톤 2026', '세계 7대 마라톤', '메이저 마라톤', '식스스타', '마라톤 해외원정', '자선 마라톤', '하버브리지', '마라톤 추첨', '해외 마라톤 신청'],
+    content: `
+<div class="deadline-strip"><span class="dl-badge">📢 8/30 D-마이너스</span><span class="dl-text">2026 시드니마라톤 일반추첨은 2025-10-17에 이미 마감. 지금 한국에서 들어가는 길은 <strong>공식 자선(charity)</strong>과 <strong>공식 여행 패키지</strong> 둘뿐 — 정해진 마감보다 자리 소진이 먼저입니다.</span></div>
+
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>일반추첨은 끝났다.</strong> 2025-10-17 마감·2025-10-29 결과 발표 완료. 남은 합법 경로는 공식 자선과 공식 여행 패키지 2가지뿐.</li><li><strong>막차는 "마감일"이 아니라 "자리 소진".</strong> 자선·패키지 모두 통일된 마감일이 공식 발표되지 않았고, 일부 자선은 이미 "마감(CLOSED)" 표기 — 서두를수록 유리.</li><li><strong>시드니는 PB 코스가 아니다.</strong> 누적 상승 +313m, 하버브리지·옥스퍼드 스트리트 두 오르막. 기록보다 식스스타 메달·경관이 목적인 대회.</li></ul></div>
+
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">먼저 알아둘 것 — "당첨률" 같은 수치는 공식에 없습니다</p><p>2026 시드니마라톤은 Abbott World Marathon Majors의 7번째 메이저(2025년 합류)입니다. 일반추첨(public ballot)은 무작위 추첨이었고 이미 마감됐습니다. 인터넷에 떠도는 "당첨 확률 몇 %" 류 수치는 공식 근거가 없으니 의사결정 기준으로 삼지 마세요. 이 글은 공식 페이지에서 확인된 사실만 정리했고, 자선 모금액·환율은 변동분이라 "약·범위"로만 적었습니다.</p></div></div>
+
+<h2>1. 일반추첨은 끝났다 — 지금 남은 두 갈래</h2>
+
+<p>2026 시드니마라톤은 <strong>2026년 8월 30일(일)</strong> 열립니다. 예상 참가 규모 약 40,000명으로 호주 최대 마라톤이죠. 문제는 가장 쉬운 진입로였던 일반추첨이 닫혔다는 점입니다.</p>
+
+<p>일반추첨은 2025-09-24 시작해 <strong>2025-10-17 23:59(AEST)에 마감</strong>됐고, 결과는 <strong>2025-10-29</strong>에 발표됐습니다. 공식 안내도 못을 박았습니다 — <em>"추첨이 마감된 지금, 공식 여행 패키지는 출전권을 확보할 단 두 가지 남은 방법 중 하나입니다."</em></p>
+
+<p>즉 지금 한국에서 정식으로 배번을 받는 길은 다음 둘뿐입니다.</p>
+
+<table>
+<thead><tr><th>경로</th><th>한국에서 신청</th><th>대략적 비용 성격</th><th>마감</th></tr></thead>
+<tbody>
+<tr><td><strong>① 공식 국제 자선(Charity)</strong></td><td>가능</td><td>등록비 + 최소 모금액(자선마다 상이, USD/GBP 청구 多)</td><td>통일 마감일 미발표 — 선착순 소진형</td></tr>
+<tr><td><strong>② 공식 여행 패키지</strong></td><td>가능</td><td>보장 배번 + 숙박 + 현지지원 묶음(가격 공식 미발표)</td><td>좌석 소진 시 마감</td></tr>
+</tbody>
+</table>
+
+<p>두 경로 다 "정해진 마감일"보다 <strong>자리가 먼저 없어지는</strong> 구조입니다. 막차라는 표현이 과장이 아니라, 실제로 일부 자선은 이미 신청을 닫았습니다.</p>
+
+<h2>2. ① 공식 자선 — 한국에서 바로 신청 가능</h2>
+
+<p>공식 국제 자선 페이지는 미국·영국·아일랜드·뉴질랜드 등 해외 자선 단체를 묶어 <strong>USD/GBP 모금 티어제</strong>로 운영합니다. 최소 모금액은 티어별로 나뉘는데, 확인된 기준은 대략 이렇습니다.</p>
+
+<table>
+<thead><tr><th>티어</th><th>최소 모금액(국제 자선)</th></tr></thead>
+<tbody>
+<tr><td>Platinum</td><td>USD $3,000 / £1,800 부터</td></tr>
+<tr><td>Gold</td><td>USD $6,000 / £2,000</td></tr>
+<tr><td>Silver</td><td>USD $3,000~5,000 / £1,800~2,500</td></tr>
+<tr><td>Bronze·Listed</td><td>USD $3,000~10,000 / £1,800~3,500</td></tr>
+</tbody>
+</table>
+
+<p>구체적인 예로, 영국 <strong>Save the Children UK</strong>는 등록비 <strong>£50 + 최소 모금 £1,500</strong> 구조입니다(국제 러너 참가 제한 명시 없음, 다만 "빨리 마감된다"는 안내가 붙어 있습니다). 그 외 Garvan·Lifeline Bondi·Can Too 같은 단체는 보통 AUD $3,000~5,000 수준이지만, 이들은 <strong>호주 국내 자선</strong>이라 한국 러너는 위의 국제 자선 페이지를 통하는 편이 깔끔합니다.</p>
+
+<div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">금액 감 잡기 (환율은 근사·범위로만)</p><p>2026년 6월 기준 1 GBP ≈ 1,700~1,800원, 1 USD ≈ 1,350~1,400원 선입니다. 영국 자선의 £1,500 모금이면 대략 <strong>250만~270만 원</strong>, 국제 자선 USD $3,000 티어면 대략 <strong>400만~420만 원</strong> 수준이라고 보면 됩니다. 모금액은 "기부로 채워 넣는 목표치"라서 본인 모금 활동으로 일부 충당이 가능하다는 점도 함께 고려하세요.</p></div></div>
+
+<h2>3. ② 공식 여행 패키지 — 배번이 "보장"되는 길</h2>
+
+<p>추첨 마감 후 공식이 직접 언급한 "남은 두 경로" 중 다른 하나가 공식 여행 패키지입니다. 보장 배번에 숙박과 현지 지원을 묶은 상품으로, 대표 오퍼레이터는 <strong>Marathon Tours & Travel</strong>입니다. 오세아니아·동아시아 지역 오피스를 운영하고 공식 페이지에 70여 개국 100곳 이상의 여행 파트너가 명시돼 있어, 한국에서도 글로벌 패키지 형태로 접근할 수 있습니다.</p>
+
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">패키지 가격은 공식에 없습니다 — 견적은 직접</p><p>패키지 가격·보증금·예약 마감일은 공식 페이지에 공개돼 있지 않습니다. 본문에 특정 금액을 적지 않는 이유이기도 합니다. 정확한 비용은 오퍼레이터에 직접 견적을 요청하세요. 자선이 "모금으로 채우는 부담", 패키지가 "확정 비용으로 한 번에 묶는 안심"이라고 성격을 나눠 생각하면 선택이 쉬워집니다.</p></div></div>
+
+<h2>4. 코스 — 기록 노리는 대회가 아니다</h2>
+
+<p>시드니마라톤을 "PB용"으로 잡으면 실망합니다. 출발은 North Sydney, 초반에 <strong>하버브리지</strong>를 건너고 마지막은 <strong>오페라하우스</strong> 앞에서 끝나는 세계적 경관 코스인 대신, 고저차가 만만치 않습니다.</p>
+
+<table>
+<thead><tr><th>항목</th><th>수치</th></tr></thead>
+<tbody>
+<tr><td>대회일</td><td>2026-08-30(일)</td></tr>
+<tr><td>예상 규모</td><td>약 40,000명 (호주 최대)</td></tr>
+<tr><td>누적 상승 / 하강</td><td>+313m / −396m (순 −83m)</td></tr>
+<tr><td>주요 오르막</td><td>초반 하버브리지 + 후반 옥스퍼드 스트리트</td></tr>
+</tbody>
+</table>
+
+<p>2025년 코스 개편으로 달링하버·피어몬트 구간의 급커브와 U턴이 빠지면서 이전보다 빠르고 직선화됐지만, 공식·가이드 모두 여전히 기록 코스로는 권하지 않습니다. 정리하면 <strong>"기록은 베를린·시카고에서, 시드니는 경관과 식스스타 메달을 위해"</strong>가 정직한 포지셔닝입니다.</p>
+
+<div class="callout info"><span class="callout-icon">👟</span><div class="callout-body"><p class="callout-title">시드니용 카본화는 "평지 PB용"과 결이 다르다</p><p>롤링·오르막이 섞인 시드니 코스에는, 순수 평지 PB용으로 극단적으로 세팅된 신발보다 <strong>업힐·언듈레이팅 대응이 안정적인 카본화</strong>가 맞습니다. 그래서 시드니는 <a href="/shoes/on-cloudboom-strike">온 클라우드붐 스트라이크</a>처럼 균형 잡힌 카본화를 추천합니다. 반대로 평지 PB 코스인 시카고라면 더 공격적인 세팅이 어울리죠(아래 분기 CTA 참고).</p></div></div>
+
+<h2>5. 한국 러너 실전 — 항공·시차·신청 실수·환율</h2>
+
+<p>해외 메이저는 "신청"보다 "준비물 디테일"에서 사고가 납니다. 시드니용 고정 체크리스트입니다.</p>
+
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td>✈️ 항공</td><td>인천(ICN) → 시드니(SYD) <strong>직항 약 10시간 20~35분</strong>(대한항공 등). 야간 출발편이 많아 현지 아침 도착.</td></tr>
+<tr><td>🕐 시차</td><td>8월 말은 호주 표준시(AEST) → 서울보다 <strong>+1시간</strong>. (서머타임은 10월 시작이라 8월 대회엔 적용 안 됨 — +2로 적힌 자료는 무시.)</td></tr>
+<tr><td>🛂 입국</td><td>한국 여권은 무비자 입국이 아니라 <strong>ETA(전자여행허가) 사전 발급 필수</strong>. 호주 ETA 앱으로 신청, 최대 3개월 체류.</td></tr>
+<tr><td>📝 신청 실수</td><td>자선·패키지 모두 <strong>여권 영문 성명을 정확히</strong> 입력. 결제는 <strong>해외결제 가능 카드(Visa/Master)</strong>로, 일부 자선은 GBP/USD로 청구돼 원화 환산·해외수수료가 붙음.</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning"><span class="callout-icon">💳</span><div class="callout-body"><p class="callout-title">가장 흔한 사고: 영문명·해외카드</p><p>여권과 한 글자라도 다른 영문 이름은 현지 배번 수령에서 문제가 됩니다. 신청 폼에 적는 성명은 반드시 여권과 100% 일치시키세요. 그리고 자선 모금은 GBP/£·USD/$로 청구되는 경우가 많아, 해외결제가 막힌 카드면 결제 자체가 안 됩니다. 출발 전 카드 해외결제 활성화 여부를 먼저 확인하세요. 참가비(추첨 당첨 시)는 약 AUD $330 수준으로 알려져 있는데(공식 명시가 아닌 2차 출처·추정), 1 AUD ≈ 1,070~1,100원으로 보면 대략 35만~36만 원 선입니다.</p></div></div>
+
+<div class="major-next"><p class="mn-title">다음 메이저로 — 분기해서 결정하세요</p><div class="mn-grid"><a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">가깝고 평지, 첫 메이저로 최적. 추첨·접수 일정 정리</div></a><a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">평지 PB 끝판왕. 기록 노린다면 시드니 대신 여기</div></a><a class="mn-card" href="/shoes/on-cloudboom-strike"><span class="mn-emoji">👟</span><div class="mn-label">온 클라우드붐 스트라이크</div><div class="mn-desc">시드니 오르막·롤링에 맞는 균형형 카본화</div></a></div></div>
+
+<p>코스 난이도가 감이 안 잡힌다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하고, 국내외 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문의 일정(추첨 마감 2025-10-17·결과 2025-10-29)과 대회일(2026-08-30)은 공식 발표 기준입니다. 자선 단체별 최소 모금액·등록비, 여행 패키지 가격·보증금·예약 마감일은 단체/오퍼레이터마다 다르고 일부는 공식 미발표라 본문에 단정하지 않았습니다 — 신청 전 반드시 각 단체·오퍼레이터 공식 페이지에서 최신 금액과 마감을 확인하세요. 참가비(약 AUD $330)는 2차 출처 기반 추정치이며, 환율(AUD≈1,070~1,100원 / GBP≈1,700~1,800원 / USD≈1,350~1,400원)은 2026년 6월 기준 근사 범위로 변동될 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'chicago-marathon-2026-registration-guide',
+    slug: 'chicago-marathon-2026-registration-guide',
+    title: '시카고마라톤 2026 신청 — 추첨 떨어졌어도 자선·투어 막차 | 세계 최속 평지 PB 코스, 자선 9/15·투어 8/16 마감',
+    description: '2026 시카고마라톤(10/11) 일반추첨은 마감됐지만, 자선(최소 모금 $2,200, 9/15)과 공식 투어 패키지(8/16)로 아직 들어갈 수 있습니다. 세계기록이 나온 평지 PB 성지 — 참가비·환율, 인천 직항 13.5시간·시차 14시간·ESTA, 평지용 카본화까지 한국 러너 기준으로 정리했습니다.',
+    thumbnail: '/images/blog/chicago-marathon-2026-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
+    content: `
+<div class="deadline-strip"><span class="dl-badge">📢 막차 안내</span><span class="dl-text">2026 시카고마라톤(10/11) 일반 추첨은 이미 마감. 지금 신청 가능한 건 자선(9/15) · 투어 패키지(8/16) 두 갈래뿐입니다.</span></div>
+
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>일반 추첨은 끝났습니다.</strong> 2025-11-18 신청 마감, 12-11 결과 발표로 추첨 경로는 이미 닫혔어요. 2026 대회는 10월 11일(일) 개최되는 48회입니다.</li>
+<li><strong>남은 건 두 갈래.</strong> 보장 출전이 되는 ① 국제 자선(최소 모금 $2,200, 9/15까지) ② 공식 투어 오퍼레이터 패키지(배번+호텔, 8/16까지)뿐입니다.</li>
+<li><strong>왜 시카고냐면</strong> — 세계에서 가장 평탄한 코스, 즉 PB(개인기록) 사냥터이기 때문입니다. 남녀 마라톤 세계기록이 모두 이곳에서 나왔어요.</li>
+</ul></div>
+
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">추첨으로는 더 이상 못 들어갑니다</p><p>"시카고 추첨 언제 열려요?"라는 질문을 많이 받는데, 2026 대회 기준으로는 이미 닫혔습니다. 추첨 신청은 2025년 11월 18일에 마감됐고 당락은 12월 11일에 통보됐어요. 지금 시카고를 노린다면 아래 자선·투어 두 경로가 현실적인 답입니다.</p></div></div>
+
+<h2>시카고마라톤이 'PB 성지'로 불리는 이유</h2>
+<p>여섯 개 월드 메이저(보스턴·런던·베를린·시카고·뉴욕·도쿄) 중에서도 시카고는 <strong>기록을 노리는 러너의 코스</strong>로 통합니다. 도심을 가로지르되 고저차가 거의 없는 평지 위주 코스라, 페이스를 일정하게 끌고 가기에 더없이 좋거든요. 실제로 켈빈 킵텀의 남자 마라톤 세계기록(2:00:35)과 체프응게티치의 여자 세계기록이 모두 이 코스에서 수립됐습니다. 시카고 29개 동네를 도는 길에 약 150만 명의 관중이 늘어서니, 후반부에 다리가 풀릴 때 밀어주는 응원의 힘도 만만치 않고요.</p>
+<p>규모도 압도적입니다. 2025년에는 역대 최다인 54,351명이 완주했고 120개국 이상이 참가했어요. 2026 대회 정확한 정원은 아직 공개되지 않았지만, 비슷한 5만 명 규모로 보면 됩니다.</p>
+
+<h2>지금 신청 가능한 두 경로 — 자선 vs 투어</h2>
+<p>추첨이 닫힌 이상, 한국 러너가 2026 시카고 배번을 손에 넣는 길은 사실상 둘입니다. 둘 다 '보장 출전'이라는 점은 같지만 성격과 비용 구조가 다릅니다.</p>
+
+<table>
+<thead><tr><th>구분</th><th>국제 자선(Charity)</th><th>투어 오퍼레이터</th></tr></thead>
+<tbody>
+<tr><td>신청 마감</td><td><strong>2026년 9월 15일(화)</strong> 또는 정원 소진 시</td><td><strong>2026년 8월 16일(일)</strong></td></tr>
+<tr><td>출전 보장</td><td>보장</td><td>보장</td></tr>
+<tr><td>추가 비용</td><td>최소 모금 <strong>$2,200</strong> (단체에 따라 더 높을 수 있음)</td><td>배번+호텔+현지 지원 묶음 가격(업체별 상이)</td></tr>
+<tr><td>참가비 포함 여부</td><td>참가비와 <strong>별개</strong>로 모금액 부담</td><td>대개 패키지에 배번 포함</td></tr>
+<tr><td>한국 러너 적합성</td><td>영문 모금 페이지 운영, 해외 거주자 가능</td><td>⚠️ 한국 공인 파트너 유무 사전 확인 필요</td></tr>
+</tbody>
+</table>
+
+<div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">자선 모금액은 '추가 비용'입니다</p><p>자선 엔트리의 최소 모금 $2,200(약 330만~340만 원)는 아래에서 설명할 참가비와 <strong>별도</strong>입니다. 일부 단체는 추첨 탈락 후 신청 시 $3,000을 요구하기도 해요. 결제 전 해당 자선단체 영문 모금 페이지에서 최소 금액을 반드시 확인하세요.</p></div></div>
+
+<p>투어 오퍼레이터는 국제 러너를 위한 배번+숙박+현지 지원 패키지입니다. 다만 <strong>모든 나라에 공인 시카고마라톤 투어 파트너가 있는 건 아닙니다.</strong> 한국 공인 파트너의 구체적인 업체명은 공식 발표되지 않았으니, 특정 업체 광고에 현혹되지 말고 신청 직전 공식 사이트(chicagomarathon.com)에서 한국 파트너 유무를 직접 확인하는 게 안전합니다.</p>
+
+<h2>참가비와 일정 — 숫자로 정리</h2>
+<p>참가비는 거주 국가에 따라 다릅니다. 한국 러너는 비(非)미국 거주자 요금이 적용돼요.</p>
+
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td>대회일</td><td><strong>2026년 10월 11일(일)</strong></td></tr>
+<tr><td>참가비(미국 거주자)</td><td>$250 (USD)</td></tr>
+<tr><td>참가비(한국 등 비미국)</td><td><strong>$260</strong> (USD, 약 39만~40만 원)</td></tr>
+<tr><td>환불</td><td>불가, 별도 처리수수료 부과</td></tr>
+<tr><td>투어 패키지 마감</td><td>2026년 8월 16일(일)</td></tr>
+<tr><td>자선 엔트리 마감</td><td>2026년 9월 15일(화)</td></tr>
+</tbody>
+</table>
+
+<p>참가비는 모두 USD이며 환불이 안 됩니다. 자선으로 들어가면 이 참가비에 더해 모금액까지 부담해야 한다는 점, 다시 한번 짚어둡니다.</p>
+
+<h2>한국 러너 실전 체크리스트 — 항공·시차·결제</h2>
+<p>해외 메이저는 '배번 확보'가 절반, '현지 도착과 컨디션 관리'가 나머지 절반입니다. 인천에서 출발하는 한국 러너 기준으로 꼭 챙길 것들을 정리했어요.</p>
+
+<table>
+<thead><tr><th>항목</th><th>내용</th></tr></thead>
+<tbody>
+<tr><td>항공</td><td>인천(ICN)→시카고 오헤어(ORD) <strong>직항</strong> 운항(대한항공·에어프레미아·유나이티드·델타·티웨이 등)</td></tr>
+<tr><td>비행시간</td><td>직항 약 <strong>13시간 30분</strong></td></tr>
+<tr><td>시차</td><td>한국이 시카고보다 <strong>약 14시간 빠름</strong>(중부시간)</td></tr>
+<tr><td>입국 요건</td><td><strong>ESTA(전자여행허가) 필수</strong> — 전자여권 + 출발 전 승인 시 무비자 최대 90일 관광 체류</td></tr>
+<tr><td>환율 근사</td><td>2026년 6월 기준 <strong>$1 ≈ 1,500~1,530원</strong>(변동)</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">신청할 때 가장 많이 하는 실수 두 가지</p><p><strong>① 영문 이름 불일치</strong> — 신청서의 영문 이름은 <strong>여권 영문 표기와 정확히 일치</strong>해야 합니다. 한 글자라도 다르면 현지 배번 수령이나 입국에서 문제가 생길 수 있어요. <strong>② 카드 문제</strong> — 참가비와 모금은 USD 결제이니 <strong>해외결제 가능 카드(VISA/Master 등)</strong>를 준비하고, 카드 유효기간이 대회 시점(2026년 10월) 이후인지 미리 확인하세요.</p></div></div>
+
+<p>시차가 14시간이라 도착 후 첫 이틀은 몸이 한밤중에 깨곤 합니다. 가능하면 대회 3~4일 전 도착해 햇빛을 충분히 쬐며 리듬을 맞추는 걸 추천해요. 시카고는 10월이면 아침 기온이 쌀쌀하니 출발 대기용 겉옷(버려도 되는 옷)도 챙기면 좋습니다.</p>
+
+<h2>평지 PB 코스에 맞는 카본화는?</h2>
+<p>시카고는 고저차가 거의 없는 만큼, <strong>일정한 페이스를 길게 유지할 때 에너지 리턴이 좋은 카본화</strong>가 잘 맞습니다. 기록을 노리고 평지를 밀어붙이는 코스라면 <a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a>처럼 반발력과 추진력이 강한 레이싱화가 제격이에요. 다만 슈퍼슈즈는 충분한 적응 주행 없이 풀코스에 바로 투입하면 종아리·발바닥에 부담이 옵니다. 대회 전 몇 차례 템포런으로 발에 길들인 뒤 출전하세요.</p>
+<p>풀코스 자체가 처음이라면 배번부터 덜컥 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하는 걸 권합니다. 국내외 대회 일정은 <a href="/marathon">마라톤 일정 페이지</a>에서 함께 확인할 수 있어요.</p>
+
+<div class="major-next"><p class="mn-title">다음 목적지를 정해보세요</p><div class="mn-grid">
+<a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">아시아 유일 메이저, 가까운 직항·시차 1시간</div></a>
+<a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">막내 메이저, 남반구 봄에 달리는 항만 코스</div></a>
+<a class="mn-card" href="/shoes/adidas-adios-pro-4"><span class="mn-emoji">👟</span><div class="mn-label">아디다스 아디오스 프로 4</div><div class="mn-desc">평지 PB 사냥용 카본 레이싱화</div></a>
+</div></div>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 위 일정·금액은 시카고마라톤 공식 발표(2026년 6월 기준)를 근거로 정리했으며, 참가비·모금액은 모두 USD이고 환율(약 1,500~1,530원/$)은 결제 시점에 따라 달라집니다. 자선 최소 모금액·투어 파트너·정확한 정원 등 세부 사항은 변경될 수 있으니 신청 직전 공식 사이트(chicagomarathon.com)에서 반드시 재확인하세요. 한국 공인 투어 오퍼레이터의 구체 업체명은 공식 미발표 상태입니다.</p>
+`,
+  },
+  {
     id: 'tokyo-marathon-2027-registration-guide',
     slug: 'tokyo-marathon-2027-registration-guide',
     title: '도쿄마라톤 2027 신청 완전 가이드 — 지금 열린 자선·추첨·OTG 3가지 길 | 비행 2시간·시차 0, 한국 러너 첫 메이저 1순위',
@@ -90,20 +283,20 @@ export const blogPosts: BlogPost[] = [
       <div class="mn-label">도쿄 평지엔 이 카본화</div>
       <div class="mn-desc">고속 평지 코스용 아식스 메타스피드 스카이+</div>
     </a>
-    <a class="mn-card" href="/blog/race-distance-difficulty-guide-2026">
-      <span class="mn-emoji">🏃</span>
-      <div class="mn-label">내 거리부터 정하기</div>
-      <div class="mn-desc">풀·하프·10K 거리별 난이도 가이드</div>
+    <a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide">
+      <span class="mn-emoji">🌉</span>
+      <div class="mn-label">시드니마라톤 2026</div>
+      <div class="mn-desc">7번째 메이저, 식스스타·하버브리지 경관 코스</div>
     </a>
-    <a class="mn-card" href="/blog/2026-second-half-marathon-schedule-korea">
-      <span class="mn-emoji">🗓️</span>
-      <div class="mn-label">국내 가을 대회로 몸풀기</div>
-      <div class="mn-desc">2026 하반기 마라톤 캘린더</div>
+    <a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide">
+      <span class="mn-emoji">🌆</span>
+      <div class="mn-label">시카고마라톤 2026</div>
+      <div class="mn-desc">세계 최속 평지 — PB 노린다면 여기</div>
     </a>
   </div>
 </div>
 
-<p style="font-size:0.9em;color:#475569;margin-top:1.5em;">※ 보스턴(BQ 기록)·런던·뉴욕·베를린·시카고·시드니 등 나머지 메이저 도전 가이드도 순차 공개할 예정입니다. <a href="/marathon">마라톤 캘린더</a>에서 국내 대회와 함께 일정을 짜보세요.</p>
+<p style="font-size:0.9em;color:#475569;margin-top:1.5em;">※ 보스턴(BQ 기록)·런던·뉴욕·베를린 등 나머지 메이저 도전 가이드도 순차 공개할 예정입니다. 첫 풀코스라면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>, 국내 대회는 <a href="/marathon">마라톤 캘린더</a>에서 함께 일정을 짜보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 도쿄마라톤·One Tokyo 공식 발표를 토대로 작성했습니다. 2027 참가비 확정액·추첨 결과 발표 정확일·자선 단체별 해외 수락 여부는 공식 미발표/단체별 상이라 변동될 수 있습니다. 신청 전 도쿄마라톤 공식(marathon.tokyo)에서 최종 확인하세요.</p>
 `,
