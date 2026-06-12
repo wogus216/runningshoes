@@ -29,10 +29,10 @@ export const ADSENSE_SLOTS = {
   // 블로그 본문 끝 (관련 글 위, display 형식)
   blogBottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM || '1226447608',
   // 신발 상세 본문 중간 (핵심 박스 후, 상세 탭 전 — in-article)
-  // 전용 슬롯 미설정 시 블로그 슬롯으로 폴백 → 즉시 노출, 추후 전용 슬롯 등록 시 자동 전환
-  shoeInArticle: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_IN_ARTICLE || process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_IN_ARTICLE || '4456671940',
+  // 신발 전용 슬롯 등록 완료(2026-06-12). env 미설정 시 하드코딩 전용 ID로 폴백.
+  shoeInArticle: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_IN_ARTICLE || '2940495278',
   // 신발 상세 하단 (상세 탭 후, 교차 링크 위 — display)
-  shoeBottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_BOTTOM || process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM || '1226447608',
+  shoeBottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_BOTTOM || '9314331932',
 } as const;
 
 // GA4 설정
