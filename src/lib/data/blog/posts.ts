@@ -3,6 +3,118 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'world-marathon-majors-guide-2026',
+    slug: 'world-marathon-majors-guide-2026',
+    title: '세계 6대 마라톤(애벗 메이저) 완전정복 — 한국 러너의 도전 지도 | 신청법·난이도·비용·식스스타, 어디부터 갈까',
+    description: '도쿄·보스턴·런던·베를린·시카고·뉴욕 6대 메이저(+시드니 7번째)를 한 장에. 대회별 개최월·진입방식(추첨/자선/BQ)·코스 난이도·한국 접근성 비교표 + 나에게 맞는 첫 메이저 의사결정 트리 + 식스스타 메달까지. 각 대회 상세 가이드로 바로 연결되는 시리즈 관문입니다.',
+    thumbnail: '/images/blog/world-marathon-majors-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['세계 6대 마라톤', '애벗 월드 마라톤 메이저', '메이저 마라톤', '마라톤 메이저', '식스스타', '해외 마라톤', '마라톤 버킷리스트', '도쿄마라톤', '보스턴마라톤', '러닝 가이드'],
+    faqs: [
+      { question: '세계 6대 마라톤이 뭔가요? 시드니 합류로 7대인가요?', answer: '애벗 월드 마라톤 메이저 6대는 도쿄·보스턴·런던·베를린·시카고·뉴욕입니다. 2025년 시드니가 7번째 메이저로 합류했지만, 식스스타 메달은 여전히 6개 완주 기준입니다. 향후 케이프타운·상하이까지 9대로 확대되며 나인스타 메달이 도입될 예정입니다.' },
+      { question: '한국 러너에게 가장 쉬운 메이저는 어디인가요?', answer: '도쿄마라톤입니다. 인천에서 약 2시간·시차 0인 데다 코스도 평지 고속이고, 추첨·자선·One Tokyo Global 등 진입 경로가 다양해 첫 메이저로 가장 무난합니다.' },
+      { question: '가장 어려운 메이저는 어디인가요?', answer: '보스턴마라톤입니다. 6대 중 유일하게 추첨이 없어 BQ 자격기록 또는 거액 자선으로만 출전할 수 있습니다. 다만 BQ 기록은 미국까지 갈 필요 없이 서울·경주·춘천 같은 국내 공인 대회에서 만들어 제출할 수 있습니다.' },
+      { question: '추첨과 자선은 무엇이 다른가요?', answer: '추첨(발롯)은 무료로 응모해 운에 맡기는 방식이고, 자선은 단체별 최소 모금액을 약정하고 보장 출전권을 받는 방식입니다. 추첨이 마감된 뒤에는 자선이나 공식 투어 패키지가 현실적인 잔여 경로가 됩니다.' },
+      { question: '6대 메이저를 다 돌면 비용과 기간은 얼마나 드나요?', answer: '보통 여러 해에 걸쳐 한 대회씩 모읍니다. 대회마다 항공·숙박·참가비로 회당 수백만 원이 들고, 자선 경로면 모금액이 추가됩니다. 6대를 모두 완주하면 애벗 앱에 완주 기록을 등록해 식스스타 메달을 받습니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>세계 6대 마라톤(애벗 월드 마라톤 메이저)</strong> = 도쿄·보스턴·런던·베를린·시카고·뉴욕. 2025년 <strong>시드니가 7번째 메이저</strong>로 합류했지만, 식스스타 메달은 아직 6개 기준입니다.</li>
+    <li><strong>진입 방식이 대회마다 다릅니다</strong> — 무료 추첨, 거액 자선, 그리고 보스턴만의 BQ(자격기록). 어디는 운, 어디는 돈, 어디는 실력이 필요하죠.</li>
+    <li><strong>한국 러너의 첫 메이저 1순위는 도쿄</strong>(인천 2시간·시차 0·평지). 이 글은 6대 메이저를 한 장에 비교하고, 당신에게 맞는 대회로 바로 연결하는 <strong>시리즈 관문</strong>입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 6대 메이저 도전 지도</p>
+    <p>아래 비교표 하나로 6대 메이저(+시드니)의 개최월·진입방식·코스 난이도·한국 접근성을 훑은 뒤, "나에게 맞는 첫 메이저"를 의사결정 트리로 고르세요. 각 대회의 신청법·자선·코스·비용 디테일은 <strong>개별 상세 가이드</strong>에 있고, 표와 트리에서 바로 연결됩니다. 모든 정보는 <strong>인천 출발·한국 여권</strong> 기준입니다.</p>
+  </div>
+</div>
+
+<h2>6대 메이저 한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>개최월</th><th>진입 방식</th><th>코스·난이도</th><th>한국 접근성</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/blog/tokyo-marathon-2027-registration-guide"><strong>도쿄</strong></a></td><td>3월</td><td>추첨·자선·OTG</td><td>평지 고속</td><td>★★★ 인천 2h·시차 0</td></tr>
+    <tr><td><a href="/blog/boston-marathon-2027-bq-guide"><strong>보스턴</strong></a></td><td>4월</td><td><strong>BQ 기록</strong> 또는 자선</td><td>내리막→뉴턴힐 난코스</td><td>★ ESTA·14h·시차 큼</td></tr>
+    <tr><td><a href="/blog/london-marathon-2027-registration-guide"><strong>런던</strong></a></td><td>4월</td><td>추첨(최다 경쟁)·자선</td><td>평지 빠름</td><td>★★ 영국 ETA·14h</td></tr>
+    <tr><td><a href="/blog/berlin-marathon-2026-guide"><strong>베를린</strong></a></td><td>9월</td><td>추첨·자선/투어</td><td><strong>완전 평지(세계기록)</strong></td><td>★★ 솅겐·경유</td></tr>
+    <tr><td><a href="/blog/chicago-marathon-2026-registration-guide"><strong>시카고</strong></a></td><td>10월</td><td>추첨·자선·투어</td><td>평지 PB</td><td>★★ ESTA·직항 13.5h</td></tr>
+    <tr><td><a href="/blog/new-york-marathon-2026-registration-guide"><strong>뉴욕</strong></a></td><td>11월</td><td>추첨·자선·9+1·타임퀄</td><td>5개 자치구 난코스</td><td>★★ ESTA·14h</td></tr>
+    <tr><td><a href="/blog/sydney-marathon-2026-registration-guide"><strong>시드니</strong>(7번째)</td><td>8월</td><td>추첨·자선/투어</td><td>비평지 경관(+313m)</td><td>★★ 호주 ETA·10h·시차 +1h</td></tr>
+  </tbody>
+</table>
+
+<p>※ 진입 방식의 정확한 일정·금액은 시즌마다 바뀝니다. 각 대회 셀의 링크에서 최신 상세를 확인하세요.</p>
+
+<h2>당신에게 맞는 첫 메이저는? — 의사결정 트리</h2>
+
+<ul>
+  <li><strong>🗼 첫 메이저·부담 최소</strong> → <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>. 인천 2시간·시차 0·평지 코스에 추첨/자선/OTG까지 경로가 다양해 데뷔전으로 가장 무난합니다.</li>
+  <li><strong>🏅 PB·자기기록 갱신</strong> → <a href="/blog/berlin-marathon-2026-guide">베를린</a>(세계 최속 평지) 또는 <a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>(평지 PB). 기록은 평탄한 코스에서 나옵니다.</li>
+  <li><strong>🦄 실력으로 증명하고 싶다</strong> → <a href="/blog/boston-marathon-2027-bq-guide">보스턴</a>. 추첨이 없고 BQ 자격기록이 필요한데, 그 기록은 <a href="/blog/boston-marathon-2027-bq-guide">서울·경주·춘천 국내 공인 대회</a>에서 만들 수 있습니다.</li>
+  <li><strong>🗽 대도시 축제·경험</strong> → <a href="/blog/new-york-marathon-2026-registration-guide">뉴욕</a>. 5개 자치구 200만 관중, 기록보다 경험의 대회입니다.</li>
+  <li><strong>🌉 경관·식스스타 한 칸</strong> → <a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>. PB 코스는 아니지만 하버브리지·오페라하우스 경관이 압권입니다.</li>
+  <li><strong>🎲 추첨 운에 맡기는 클래식</strong> → <a href="/blog/london-marathon-2027-registration-guide">런던</a>. 세계 최다 경쟁 발롯이지만, 당첨되면 평지 빠른 코스가 기다립니다.</li>
+</ul>
+
+<h2>진입 난이도순 — 쉬움에서 어려움까지</h2>
+
+<p>한국 러너 기준으로 "배번 확보"의 현실 난이도를 줄 세우면 대략 이렇습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>난이도</th><th>대회</th><th>핵심 이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가장 쉬움</td><td><a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a></td><td>추첨·자선·OTG 다중 경로 + 가장 가까움</td></tr>
+    <tr><td>중간</td><td>시카고·베를린·런던·시드니</td><td>추첨 마감 시 자선/투어가 잔여 경로(거액)</td></tr>
+    <tr><td>어려움</td><td><a href="/blog/new-york-marathon-2026-registration-guide">뉴욕</a></td><td>추첨 경쟁 + 자선 최소 모금 높음($3,000~)</td></tr>
+    <tr><td>가장 어려움</td><td><a href="/blog/boston-marathon-2027-bq-guide">보스턴</a></td><td>추첨 없음 — BQ 자격기록 또는 거액 자선($5,000~)만</td></tr>
+  </tbody>
+</table>
+
+<h2>6대 다 모으기 — 식스스타와 원정 준비</h2>
+
+<p>6대 메이저를 모두 완주하면 애벗 <strong>식스스타 메달</strong>을 받습니다. 보통 여러 해에 걸쳐 한 대회씩 모으죠. 수집 전략·비용·메달 등록법은 <a href="/blog/six-star-medal-challenge-korea-guide">식스스타 완주 로드맵</a>에 정리했습니다. 그리고 어느 메이저를 가든 공통으로 챙겨야 할 항공·입국허가(ESTA·ETA·ETIAS)·결제·보험·짐은 <a href="/blog/overseas-marathon-travel-checklist-korea">해외 원정 매뉴얼</a> 한 편에 묶여 있습니다.</p>
+
+<p>풀코스 자체가 처음이라면 배번부터 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 점검하고, 국내 대회로 몸을 만들고 싶다면 <a href="/marathon">마라톤 캘린더</a>에서 일정을 짜보세요.</p>
+
+<div class="major-next">
+  <p class="mn-title">🏁 지금 바로 한 걸음 — 어디부터?</p>
+  <div class="mn-grid">
+    <a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide">
+      <span class="mn-emoji">🗼</span>
+      <div class="mn-label">도쿄마라톤 2027</div>
+      <div class="mn-desc">첫 메이저 1순위 — 지금 신청 가능</div>
+    </a>
+    <a class="mn-card" href="/blog/six-star-medal-challenge-korea-guide">
+      <span class="mn-emoji">⭐</span>
+      <div class="mn-label">식스스타 완주 로드맵</div>
+      <div class="mn-desc">6대 다 모으는 시간·돈·전략</div>
+    </a>
+    <a class="mn-card" href="/blog/overseas-marathon-travel-checklist-korea">
+      <span class="mn-emoji">✈️</span>
+      <div class="mn-label">해외 원정 매뉴얼</div>
+      <div class="mn-desc">입국허가·항공·결제·보험 한 번에</div>
+    </a>
+  </div>
+</div>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 각 대회 공식 발표를 토대로 작성한 개요입니다. 대회별 접수 일정·금액·입국 규정은 시즌마다 바뀌므로, 신청 전 각 상세 가이드와 공식 사이트에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'london-marathon-2027-registration-guide',
     slug: 'london-marathon-2027-registration-guide',
     title: '런던마라톤 2027 신청 — 추첨 마감·7월 결과 대기 + 자선 잔여 경로 | 평지 빠른 코스, 영국 ETA £20·참가비 £225, 한국 러너 가이드',
