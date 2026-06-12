@@ -998,7 +998,7 @@ export const asicsShoes: Shoe[] = [
         text: '발볼 4E라서 항상 와이드 찾아 헤매는데 메가블라스트는 표준인데도 82.6mm 토박스라 전혀 안 끼어요. 나이키 265 와이드보다 편합니다 솔직히. 발가락을 자연스럽게 벌릴 수 있어서 긴 거리 뛸 때 혈액순환이 좋은 느낌이에요. 한국 러너 발에 맞춰 만든 것 같아요. 48mm 스택이라 아스팔트 충격이 거의 안 느껴지고, 무릎 통증이 있었던 저도 35km 장거리에서 전혀 불편함이 없었습니다. 15.5 HA 초소프트 경도로 쿠션이 매우 부드럽고, 83% 에너지 리턴 덕분에 맥시멀 주제에 반발력이 살아있어서 달리는 재미가 있어요. 29만원대 가격이 좀 부담스럽지만 500km 기준 km당 580원이고, 발볼 넓은 한국 러너가 와이드 찾아 헤매지 않아도 된다는 가치만으로도 충분히 납득이 됩니다.',
       },
     ],
-    similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max'],
+    similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max', 'asics-sonicblast'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZwq76' }],
   },
   {

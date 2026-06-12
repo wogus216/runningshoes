@@ -1405,6 +1405,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(wide·17만원대, 119mm 광폭 플랫폼)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
+  <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
 </ul>
 
 <h2>무릎이 아프다면 — 쿠션만으론 부족합니다</h2>
