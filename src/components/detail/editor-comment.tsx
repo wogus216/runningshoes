@@ -15,9 +15,11 @@ export function EditorComment({ comment, recommendFor, notRecommendFor }: Editor
           <h3 className="text-lg font-semibold text-foreground mb-2">
             에디터의 한마디
           </h3>
-          <p className="text-base text-foreground/90 leading-relaxed">
-            {comment}
-          </p>
+          {comment.split('\n\n').map((para, i) => (
+            <p key={i} className="text-base text-foreground/90 leading-relaxed mb-3 last:mb-0">
+              {para}
+            </p>
+          ))}
         </div>
       </div>
 
