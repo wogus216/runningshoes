@@ -3,6 +3,358 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'boston-marathon-2027-bq-guide',
+    slug: 'boston-marathon-2027-bq-guide',
+    title: '보스턴마라톤, 추첨이 없다 — 한국에서 BQ(자격기록) 만드는 현실 가이드 | 연령별 기준표·컷오프·국내 WA공인 대회로 자격 따기',
+    description: '보스턴은 6대 메이저 중 유일하게 추첨이 없습니다. BQ 기록 또는 자선뿐 — 그런데 BQ는 미국까지 갈 필요 없이 서울·경주·춘천 같은 국내 WA/AIMS 공인 대회 기록으로 제출할 수 있습니다. 연령·성별 기준표, 기준만으론 부족한 컷오프 현실, 2027 내리막 페널티 신설, 등록주간까지 한국 러너 기준으로 정리했습니다.',
+    thumbnail: '/images/blog/boston-marathon-2027-bq-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['보스턴마라톤', '보스턴마라톤 2027', 'BQ', '보스턴 퀄리파잉', '세계 6대 마라톤', '메이저 마라톤', '마라톤 자격기록', '서울마라톤', '식스스타', '마라톤 기록 단축'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>보스턴은 6대 메이저 중 유일하게 일반 추첨이 없습니다.</strong> 길은 딱 둘 — <strong>BQ(Boston Qualifying) 기록</strong>으로 출전하거나, <strong>공식 자선 단체</strong>를 통해 모금 조건으로 배번을 받는 것뿐입니다.</li>
+    <li><strong>BQ 기록은 미국까지 가서 만들 필요가 없습니다.</strong> 보스턴은 "자국 육상 관할단체(한국=대한육상연맹)가 공인한 풀코스"면 인정하므로, <strong>서울·경주·춘천 같은 국내 공인 대회에서 낸 기록을 그대로 제출</strong>할 수 있습니다.</li>
+    <li><strong>기준 통과 = 출전 확정이 아닙니다.</strong> 지원자가 정원을 넘으면 "기준보다 더 빠른 사람"만 합격하는 컷오프가 적용돼, 기준보다 <strong>최소 5분, 안전하게는 7~8분</strong> 여유를 두는 게 현실적입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦄</span>
+  <div class="callout-body">
+    <p class="callout-title">보스턴이 특별한 이유 — "운이 아니라 실력으로"</p>
+    <p>도쿄·런던·시카고·뉴욕·시드니는 모두 <strong>추첨(ballot)</strong>이 있어 빠르지 않아도 운만 좋으면 갈 수 있습니다. 하지만 <strong>보스턴 마라톤(2027년 4월 19일 개최)에는 일반 추첨이 없습니다.</strong> 정해진 연령·성별별 기준 기록(BQ)을 통과하거나, 공식 자선 단체를 통해 거액을 모금하는 것 외에 출전 경로가 없죠. 그래서 보스턴 완주는 메이저 중에서도 "자격을 증명한 러너"의 상징처럼 여겨집니다. 이 글은 한국 러너가 <strong>국내 대회만으로 BQ를 만드는 현실 경로</strong>에 초점을 둡니다.</p>
+  </div>
+</div>
+
+<h2>BQ 자격 기준표 — 연령·성별 정확히</h2>
+
+<p>BQ 기준은 <strong>대회 당일(2027년 4월 19일) 기준 만 나이</strong>로 판정합니다. 2026년 대회부터 전 연령대가 5분씩 강화됐고, <strong>2027년에도 이 강화된 기준이 그대로 유지</strong>됩니다. 아래는 보스턴육상협회(BAA) 공식 기준표입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>연령대(대회 당일)</th><th>남자</th><th>여자 / 논바이너리</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>18–34</td><td><strong>2:55:00</strong></td><td>3:25:00</td></tr>
+    <tr><td>35–39</td><td>3:00:00</td><td>3:30:00</td></tr>
+    <tr><td>40–44</td><td>3:05:00</td><td>3:35:00</td></tr>
+    <tr><td>45–49</td><td>3:15:00</td><td>3:45:00</td></tr>
+    <tr><td>50–54</td><td>3:20:00</td><td>3:50:00</td></tr>
+    <tr><td>55–59</td><td>3:30:00</td><td>4:00:00</td></tr>
+    <tr><td>60–64</td><td>3:50:00</td><td>4:20:00</td></tr>
+    <tr><td>65–69</td><td>4:05:00</td><td>4:35:00</td></tr>
+    <tr><td>70–74</td><td>4:20:00</td><td>4:50:00</td></tr>
+    <tr><td>75–79</td><td>4:35:00</td><td>5:05:00</td></tr>
+    <tr><td>80+</td><td>4:50:00</td><td>5:20:00</td></tr>
+  </tbody>
+</table>
+
+<p>예를 들어 대회 당일 기준 만 38세 남성이라면 35–39 구간이 적용돼 <strong>3시간 00분 00초</strong> 이내여야 합니다. 나이 계산 기준이 "신청 시점"이 아니라 "대회 당일"이라는 점을 꼭 기억하세요 — 1월생 러너가 본인 나이를 한 살 낮춰 잡았다가 더 빡센 기준에 걸리는 일이 종종 있습니다.</p>
+
+<h2>컷오프 현실 — 기준만으론 부족합니다</h2>
+
+<p>여기서 한국 러너가 가장 많이 오해하는 부분입니다. <strong>BQ 기준을 통과했다고 해서 출전이 확정되는 게 아닙니다.</strong> 보스턴 정원은 약 3만 명인데, 기준 통과자가 정원을 넘으면 "기준보다 더 빠른 순서대로" 합격자를 자릅니다. 이걸 <strong>컷오프(cutoff)</strong>라고 부릅니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⏱️</span>
+  <div class="callout-body">
+    <p class="callout-title">"선착순"이 아닙니다 — 등록주간에 일괄 접수 후 빠른 순으로 합격</p>
+    <p>보스턴 등록은 먼저 신청한 사람이 유리한 선착순이 아닙니다. <strong>등록주간(약 5일) 동안 일괄 접수</strong>를 받은 뒤, 기준 대비 여유 시간이 큰 순서대로 합격을 결정합니다. 그러니 등록주간 첫날에 서두를 필요는 없지만, <strong>기록 자체가 기준보다 충분히 빨라야</strong> 합니다.</p>
+  </div>
+</div>
+
+<p>과거 실제 합격선(기준보다 얼마나 더 빨라야 했는지)을 보면 감이 잡힙니다.</p>
+
+<table>
+  <thead>
+    <tr><th>대회 연도</th><th>컷오프(기준 대비 추가로 빨라야 했던 시간)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>2023</td><td>컷오프 없음(기준 통과자 전원 합격)</td></tr>
+    <tr><td>2024</td><td>5분 29초</td></tr>
+    <tr><td>2025</td><td>6분 51초</td></tr>
+    <tr><td>2026</td><td>4분 34초</td></tr>
+  </tbody>
+</table>
+
+<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월) 종료 후에야 발표</strong>되므로 지금 단정할 수 없습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
+
+<h2>★국내에서 BQ 만들기 — 미국 원정은 필요 없습니다</h2>
+
+<p>이 글의 핵심입니다. 많은 러너가 "BQ는 미국 대회에서 뛰어야 인정되는 것 아닌가?"라고 오해하는데, <strong>전혀 그렇지 않습니다.</strong> BAA 공식 규정은 다음과 같습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">📋</span>
+  <div class="callout-body">
+    <p class="callout-title">BAA 코스 인증 요건</p>
+    <ul>
+      <li>기록은 <strong>풀코스(42.195km)</strong> 완주 기록이어야 합니다(하프 환산·트레드밀·가상·실내·타임트라이얼 모두 불인정).</li>
+      <li>코스가 <strong>World Athletics / AIMS / USATF / 해당국 육상 관할단체</strong>에 의해 공인되어야 합니다. <strong>한국은 대한육상연맹(KAAF)</strong>이 관할단체입니다.</li>
+      <li><strong>트랜스폰더(칩) 계측 필수</strong>, 공식 참가자 최소 3명 이상.</li>
+    </ul>
+    <p>즉, <strong>"자국 관할단체가 공인한 코스면 어느 나라 대회든 인정"</strong>된다는 뜻입니다. 한국에서 KAAF/AIMS/WA 공인 코스로 뛴 기록을 그대로 보스턴에 제출할 수 있습니다.</p>
+  </div>
+</div>
+
+<p>여기서 꼭 구분해야 할 개념이 있습니다. <strong>"라벨(대회 등급)"과 "코스 공인(거리 측정 인증)"은 다른 것</strong>입니다. World Athletics 플래티넘·골드·엘리트 라벨은 대회의 운영·엘리트 필드 수준을 나타내는 등급이고, 보스턴이 요구하는 건 <strong>거리가 정확히 측정·인증된 공인 코스</strong>입니다. 라벨이 없어도 코스가 공인됐으면 BQ로 쓸 수 있고, 반대로 라벨이 있으면 코스 공인은 당연히 충족합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>국내 대회</th><th>공인 현황</th><th>BQ 인정</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>서울마라톤(동아)</strong></td><td>World Athletics <strong>플래티넘 라벨</strong> — 국내 유일, 보스턴·도쿄·뉴욕과 동급 최상위</td><td>✅ 가장 안전(코스·기록 신뢰 최상)</td></tr>
+    <tr><td><strong>경주국제마라톤</strong></td><td>World Athletics <strong>엘리트 라벨</strong> 공인 코스</td><td>✅ 인정</td></tr>
+    <tr><td><strong>춘천마라톤</strong></td><td><strong>AIMS 국제 공인 코스</strong> + 대한육상연맹 공인</td><td>✅ 인정</td></tr>
+    <tr><td>JTBC 서울마라톤</td><td>WA 라벨 없음(코스 공인 여부는 별개)</td><td>⚠️ 코스 공인 여부 개별 확인 권장</td></tr>
+  </tbody>
+</table>
+
+<p>실전 관점에서 보면, <strong>서울·경주·춘천 모두 하반기(가을~겨울) 단풍철에 열리는 평탄한 PB 코스</strong>라 BQ를 노리기에 최적입니다. 특히 동아 서울마라톤은 국내 유일 WA 플래티넘 대회라 기록 신뢰도와 코스 공인 모두 가장 확실합니다. 대회별 일정·코스 정보는 <a href="/marathon/seoul-marathon-2026">서울마라톤</a>, <a href="/marathon/gyeongju-international-marathon-2026">경주국제마라톤</a>, <a href="/marathon/chuncheon-marathon-2026">춘천마라톤</a> 페이지에서 확인하고, 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 살펴보세요.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🚫</span>
+  <div class="callout-body">
+    <p class="callout-title">2027년 신설 룰 — 내리막 특화 코스에 시간 페널티</p>
+    <p>2027년 등록부터 <strong>순고도 하강(net-downhill)이 큰 코스</strong>에 시간 페널티가 신설됩니다(향후 최소 2년 유지).</p>
+    <ul>
+      <li>순하강 1,500~2,999피트: 제출 기록에 <strong>+5분</strong> 가산</li>
+      <li>순하강 3,000~5,999피트: <strong>+10분</strong> 가산</li>
+      <li>순하강 6,000피트 이상: <strong>자격 인정 불가</strong></li>
+    </ul>
+    <p>한국 대회는 평탄하거나 고저차가 작아 이 페널티의 영향권 밖입니다. 오히려 미국의 "내리막 특화 BQ 사냥 대회"가 막힌 셈이라, <strong>정직한 평탄 코스인 국내 공인 대회의 가치가 더 올라갔습니다.</strong></p>
+  </div>
+</div>
+
+<h2>등록주간·자선 대안</h2>
+
+<p><strong>자격 윈도</strong>(인정 기록을 낼 수 있는 기간)는 <strong>2025년 9월 13일 이후 완주 기록</strong>부터입니다. 이 날짜 이후 국내 공인 대회에서 BQ 기록을 만들면 2027 보스턴 자격으로 제출할 수 있습니다. <strong>등록주간은 2026년 9월</strong>에 열릴 예정이지만, 정확한 날짜는 아직 공식 발표 전입니다(참고로 2026 대회 등록주간은 2025년 9월 8~12일이었습니다). 등록주간 일정은 BAA가 통상 봄~여름에 공지하므로, 기록을 만든 뒤 baa.org 공지를 확인하세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">💸</span>
+  <div class="callout-body">
+    <p class="callout-title">자선(charity) 경로 — 한국 러너에겐 현실적 차선책</p>
+    <p>BQ 기록 없이 출전하는 유일한 공식 길은 <strong>Bank of America 보스턴 마라톤 공식 자선 프로그램</strong>입니다. BAA가 비영리단체에 초청 배번을 배정하고, 러너는 모금 서약을 합니다.</p>
+    <ul>
+      <li><strong>BAA 최소 모금 기준: 배번당 $5,000</strong>(하한선). 실제 대부분 단체는 <strong>$8,500~$10,000</strong>를 요구하며, 일부는 $15,000까지 올라갑니다.</li>
+      <li>별도로 <strong>신청비 약 $375</strong>(모금액에 포함되지 않음)가 듭니다.</li>
+      <li>자선 경로는 미국 비영리단체 모금이라 <strong>한국에서 모금 동력을 확보하기가 현실적으로 어렵습니다.</strong> 한국 러너의 1순위는 어디까지나 <strong>국내 공인 대회 BQ</strong>로 잡는 게 합리적입니다.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>보스턴 코스 — 뉴턴 힐과 내리막 함정, 그리고 신발</h2>
+
+<p>보스턴 코스는 기록을 노리기에 결코 쉽지 않은 "함정 코스"입니다. 홉킨턴에서 출발한 뒤 <strong>초반이 길게 내리막</strong>이라 페이스가 잘 나오지만, 이때 대퇴사두근(허벅지 앞쪽)에 미세 손상이 누적됩니다. 그리고 <strong>32km 지점(뉴턴) 일대의 연속 언덕</strong>, 그 정점인 <strong>하트브레이크 힐</strong>이 이미 지친 다리를 강타하죠. "내리막으로 다리를 망가뜨린 뒤 오르막으로 끝장낸다"는 구조라, BQ 기록보다 더 빠른 실력이 필요한 이유이기도 합니다.</p>
+
+<p>그래서 보스턴 준비에는 <strong>내리막 근지구력 훈련</strong>(편심성 수축 대비)과 <strong>완충·반발이 좋은 카본 슈퍼슈즈</strong>가 중요합니다. 초반 내리막에서 다리 손상을 줄여주고 후반 언덕에서 에너지 리턴을 받쳐줄 신발이 유리하죠.</p>
+
+<ul>
+  <li><a href="/shoes/asics-metaspeed-edge-plus">아식스 메타스피드 엣지+</a> — 보폭을 늘리는 스트라이드형 러너에게 맞는 카본화로, 언덕 구간에서 추진력을 살리기 좋습니다.</li>
+  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 반발이 강해 PB용 슈퍼슈즈의 기준점입니다.</li>
+  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 로드러너 막대 구조로 안정감과 반발을 함께 잡은 균형형 카본화입니다.</li>
+</ul>
+
+<p>풀코스 BQ 자체가 처음이라면, 배번부터 잡기 전에 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준과 목표 페이스를 먼저 점검하길 권합니다.</p>
+
+<div class="major-next">
+  <p class="mn-title">🏁 보스턴 다음 한 걸음 — 당신의 방향은?</p>
+  <div class="mn-grid">
+    <a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">추첨이 있어 BQ 없이도 도전 가능. 인천 2시간·시차 0의 첫 메이저</div></a>
+    <a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">세계 최속 평지 PB 성지 — BQ 기록 만들기에도 유리한 코스</div></a>
+    <a class="mn-card" href="/blog/overseas-marathon-travel-checklist-korea"><span class="mn-emoji">🧳</span><div class="mn-label">해외 원정 준비 매뉴얼</div><div class="mn-desc">인천 출발·한국 여권 기준 공통 체크리스트. 어느 메이저든 챙길 것</div></a>
+  </div>
+</div>
+
+<p class="disclaimer">※ BQ 자격 기준·자격 윈도·자선 모금 하한선은 baa.org 공식 발표(2026-06 확인) 기준입니다. <strong>2027 등록주간 확정일과 컷오프 수치는 2026년 9월 등록주간 전후로 발표</strong>되며, 컷오프는 매년 지원자 수에 따라 달라지므로 본문의 과거 수치(2024~2026)는 참고용일 뿐 2027 결과를 보장하지 않습니다. 신청 전 반드시 baa.org와 각 국내 대회 공식 페이지에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
+    id: 'overseas-marathon-travel-checklist-korea',
+    slug: 'overseas-marathon-travel-checklist-korea',
+    title: '한국 러너 해외 메이저 마라톤 원정 매뉴얼 — 항공·시차·입국허가·결제·보험 끝판 체크리스트 | 인천 출발, 7대 메이저 통합 정리',
+    description: '해외 메이저 마라톤 원정, 신청보다 준비물에서 사고가 납니다. 인천(ICN) 출발·한국 여권·한국 카드 기준으로 여행자보험(스포츠 특약), 해외결제 카드(DCC 끄기), 카본화 기내반입, 빕 수령, 시차 적응까지 — 도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕 7대 메이저 물류를 한 표로 묶은 에버그린 매뉴얼. 미국 ESTA, 영국 ETA(£20·2025-01-08 의무화), EU ETIAS(2026 Q4 출시 예정) 최신 입국 허가 포함.',
+    thumbnail: '/images/blog/overseas-marathon-travel-checklist-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'tips' as const,
+    readingTime: 13,
+    tags: ['해외 마라톤', '마라톤 해외원정', '여행자보험', '해외결제 카드', 'DCC', '시차 적응', '카본화 기내반입', '메이저 마라톤', 'ESTA', '영국 ETA', 'EU ETIAS', '도쿄마라톤', '시드니마라톤', '런던마라톤', '베를린마라톤', '시카고마라톤', '보스턴마라톤', '뉴욕마라톤', '식스스타', '러닝 여행 준비물'],
+    faqs: [
+      {
+        question: '해외 마라톤 갈 때 입국 허가(ESTA·ETA·ETIAS)는 어떻게 다른가요?',
+        answer: '미국(시카고·보스턴·뉴욕)은 ESTA(USD $21·2년 유효)를 출발 72시간 전까지, 영국(런던)은 2025년 1월 8일부터 의무화된 ETA(£20·2년 유효)를 여행 3영업일 전까지 신청합니다. EU(베를린)는 2026년 6월 기준 ETIAS가 아직 필수가 아니며(2026 Q4 출시 예정, 전환기 후 2027년 본격 시행 예정), 호주(시드니)는 ETA가 필요합니다. 셋 다 비자는 아니지만 없으면 탑승이 거부되며, 규정은 자주 바뀌므로 발권 직후 공식 사이트에서 확인하세요.',
+      },
+      {
+        question: '인천에서 메이저 개최 도시까지 비행시간이 얼마나 되나요?',
+        answer: '도쿄(하네다) 약 2시간 30분, 시드니 약 10시간 20~35분, 런던(히드로) 약 13시간 30분~14시간 50분, 시카고 약 13시간 30분, 보스턴 약 13시간 50분(직항), 뉴욕(JFK) 약 14시간입니다. 베를린은 인천발 직항이 없어 프랑크푸르트(FRA) 경유로 약 14시간 45분 이상 걸립니다.',
+      },
+      {
+        question: '시차 적응은 어느 도시가 가장 힘든가요?',
+        answer: '도쿄는 시차 0이라 적응이 필요 없습니다. 유럽(런던 약 8시간, 베를린 약 7시간)은 중간 난이도입니다. 미국(시카고 약 14시간, 보스턴·뉴욕 약 13시간)이 가장 가혹해, 대회 최소 3~4일 전 도착해 현지 시간에 맞춰 자고 일어나며 아침 햇빛을 쬐는 것이 정석입니다.',
+      },
+      {
+        question: '해외에서 카드 결제는 어떻게 준비하죠?',
+        answer: '한국 카드는 Visa·Mastercard면 대부분 쓰입니다. 카드사 앱에서 해외원화결제(DCC)를 미리 차단해 현지 통화로 결제되게 하고, 해외결제 사용을 활성화한 뒤 영문 성명을 여권과 일치시키세요. 백업 카드 1장과 비상용 현지 통화 소액 현금을 함께 챙기는 조합이 안전합니다.',
+      },
+      {
+        question: '마라톤 여행자보험은 일반 여행자보험으로 충분한가요?',
+        answer: '아닐 수 있습니다. 마라톤을 위험 스포츠로 보고 면책하는 상품이 있으므로, 가입 전 약관에서 마라톤 참가 중 상해가 보장되는지 확인하세요. 특히 미국(시카고·보스턴·뉴욕)은 의료비가 매우 비싸므로 의료비 보장 한도가 충분한 상품을 권합니다.',
+      },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>원정 사고는 '신청'이 아니라 '준비물 디테일'에서 난다.</strong> 여행자보험 스포츠 보장, 해외결제 카드 DCC 끄기, 레이스화 기내반입 — 이 셋이 90%를 막는다.</li><li><strong>도시별로 항공·시차·입국허가가 다르다.</strong> 7대 메이저(도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕)를 인천 출발 기준 한 표로. 미국=ESTA, 영국=ETA(2025년부터 의무), EU=ETIAS(2026 Q4 출시 예정 — 올해는 아직 불필요). 셋 다 비자는 아니지만 없으면 탑승 거부.</li><li><strong>비자·입국·보험 규정은 자주 바뀐다.</strong> 이 글은 일반 원칙 정리용 — 결제·신청 전 반드시 각 공식 페이지에서 최신 규정을 직접 확인하세요.</li></ul></div>
+
+<div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">이 글의 위치 — 도시 가이드의 '공통 준비물' 허브</p><p>이건 특정 대회 신청 가이드가 아니라, <strong>어느 메이저에 가든 똑같이 챙겨야 하는 공통 실무</strong>를 한 번에 묶은 매뉴얼입니다. 신청 절차·자선·추첨 일정은 도시별 가이드(<a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>·<a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>·<a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>)에 있고, 이 글은 그 위에 얹는 "들고 갈 것·확인할 것" 체크리스트입니다. 모든 정보는 <strong>인천(ICN) 출발·한국 여권·한국 발급 카드</strong> 기준입니다.</p></div></div>
+
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">먼저 — 비자·입국·보험은 '자주 바뀌는 정보'입니다</p><p>입국 허가(ETA·ESTA 등)와 보험 약관은 정책이 수시로 바뀝니다. 본문은 일반적인 준비 원칙을 정리한 것이지, 개별 약관·규정의 최종 근거가 아닙니다. 환율도 변동분이라 "약·범위"로만 적었습니다. <strong>실제 신청·결제 전에는 반드시 항공사·각국 입국 당국·보험사·카드사 공식 안내에서 최신 내용을 직접 확인</strong>하세요. 의학·금융 판단은 단정하지 않고 "확인 권장" 선에서만 다룹니다.</p></div></div>
+
+<h2>1. 여행자보험 — 마라톤은 '스포츠 중 사고'라 특약 확인이 핵심</h2>
+
+<p>해외 원정에서 가장 먼저, 그리고 가장 자주 빠뜨리는 게 보험입니다. 평소 카드 부가 여행보험만 믿고 가는 분이 많은데, <strong>마라톤은 '운동(스포츠) 중 사고'로 분류</strong>될 수 있어 일반 여행자보험 기본 담보에서 빠지거나 면책되는 경우가 있습니다. 가입 전 약관에서 이 부분을 직접 확인하는 게 핵심입니다.</p>
+
+<p>확인할 포인트를 일반 가이드 수준으로 정리하면 이렇습니다.</p>
+
+<table>
+<thead><tr><th>확인 항목</th><th>왜 보는가</th></tr></thead>
+<tbody>
+<tr><td><strong>스포츠/운동 중 상해 보장 여부</strong></td><td>마라톤 참가 중 발생한 상해가 '위험한 활동' 면책에 걸리는지. 일부 상품은 아마추어 대회 참가를 보장, 일부는 제외.</td></tr>
+<tr><td><strong>해외 의료비 한도</strong></td><td>미국처럼 의료비가 극단적으로 비싼 나라는 한도가 낮으면 의미가 없음(아래 미국 경고 참고).</td></tr>
+<tr><td><strong>응급 후송·귀국 이송 담보</strong></td><td>현지 입원 후 국내 이송이 필요할 때 비용이 큼. 메이저 원정처럼 장거리일수록 중요.</td></tr>
+<tr><td><strong>휴대품/수하물 분실</strong></td><td>레이스화·기어 분실 시 보상. 위탁수하물 사고 대비(3번 항목과 연결).</td></tr>
+</tbody>
+</table>
+
+<div class="callout warning"><span class="callout-icon">🏥</span><div class="callout-body"><p class="callout-title">미국(시카고·뉴욕·보스턴) 원정이면 의료비 한도를 특히 보세요</p><p>미국은 응급실 한 번에 수백만~수천만 원이 나올 수 있는 의료비 구조입니다. 시카고처럼 미국 메이저를 갈 때는 <strong>의료비 보장 한도가 충분한 상품인지</strong>를 우선순위로 확인하는 걸 권합니다. "마라톤 같은 아마추어 스포츠 참가 중 상해가 보장되는지"를 보험사에 직접 문의해 확정해 두면 가장 안전합니다. 보장 여부·한도·면책은 상품마다 달라 여기서 특정 상품을 단정하지 않습니다 — 가입 전 본인 약관 확인이 원칙입니다.</p></div></div>
+
+<h2>2. 해외결제 카드 — DCC 끄기 하나로 수수료가 줄어든다</h2>
+
+<p>신청비·자선 모금·현지 결제는 전부 해외결제입니다. 카드 한 장 잘못 챙기면 신청 단계에서 막히거나, 알게 모르게 수수료를 더 냅니다. 일반적으로 권장되는 원칙은 이렇습니다.</p>
+
+<ul>
+<li><strong>해외원화결제(DCC)는 끈다.</strong> DCC는 해외 가맹점에서 결제 통화를 '원화(KRW)'로 보여주는 옵션인데, 이때 가맹점 환율 + 수수료가 얹혀 보통 더 비쌉니다. 카드사 앱/홈페이지에서 <strong>'해외원화결제 차단(DCC 차단)'을 미리 설정</strong>하면 현지 통화로 결제돼 불필요한 마크업을 피할 수 있습니다.</li>
+<li><strong>해외 이용 수수료를 미리 파악한다.</strong> 카드마다 해외 이용 시 브랜드 수수료(Visa/Master 등)와 해외 서비스 수수료가 붙습니다. 카드 약관에서 본인 카드 수수료율을 확인해 두면 예산 계산이 정확해집니다.</li>
+<li><strong>Visa/Master 브랜드를 1순위로.</strong> 해외 가맹점·온라인 신청 폼 호환성이 가장 넓은 건 Visa/Mastercard입니다. 일부 자선·결제 게이트웨이는 다른 브랜드를 안 받기도 하므로, 메인은 Visa/Master로 잡는 게 무난합니다.</li>
+<li><strong>유효기간을 반드시 확인한다.</strong> 원정 기간 중 카드 유효기간이 만료되면 현지에서 낭패입니다. 출발 전 만료월이 임박한 카드는 갱신하거나 다른 카드를 메인으로 두세요. 백업 카드 한 장은 따로 챙기는 걸 권합니다.</li>
+</ul>
+
+<div class="callout info"><span class="callout-icon">💳</span><div class="callout-body"><p class="callout-title">신청 단계 사고 1순위: 해외결제 막힌 카드 + 영문명 불일치</p><p>자선·패키지 결제는 USD/GBP/AUD 등으로 청구되는 경우가 많습니다. <strong>해외결제가 비활성화된 카드면 신청 자체가 실패</strong>합니다. 출발 전 카드사 앱에서 '해외결제 사용' 상태를 먼저 켜두세요. 그리고 신청 폼의 <strong>영문 성명은 여권과 100% 일치</strong>시켜야 현지 배번 수령에서 문제가 없습니다(4번 항목 참고). 환율은 변동분이라 본문에 단정하지 않습니다 — 결제 시점 환율로 보세요.</p></div></div>
+
+<h2>3. 러닝화·카본화 기내반입 — '공식 규정'이 아니라 '실용 팁'</h2>
+
+<p>레이스화, 특히 비싼 카본화는 <strong>위탁수하물에 넣지 말고 기내 휴대(캐리온)로 들고 타는 걸 권합니다.</strong> 이유는 단순합니다 — 위탁수하물이 분실·지연되면 대회 당일 검증된 내 레이스화 없이 뛰어야 하는 최악의 상황이 생기기 때문입니다.</p>
+
+<div class="callout warning"><span class="callout-icon">📌</span><div class="callout-body"><p class="callout-title">이건 항공 규정이 아니라 러너들의 실전 팁입니다</p><p>"레이스화 기내반입"은 항공사 공식 의무 규정이 아니라, <strong>수하물 사고를 피하려는 경험칙</strong>입니다. 일반 운동화는 기내 휴대에 제한이 없는 게 보통이지만, 액체·배터리(워치 충전기 보조배터리 등)·날카로운 물품은 항공사·국가별 기내 반입 규정을 따로 확인하세요. 보조배터리는 대개 위탁 금지·기내 휴대 대상입니다.</p></div></div>
+
+<p>실전 패킹 팁: <strong>대회 당일 입을 핵심 아이템(레이스화·양말·빕 고정용 핀·워치·젤)은 캐리온에 모아두면</strong> 위탁수하물이 늦게 나와도 대회를 못 뛰는 일은 막을 수 있습니다. 카본화 선택이 고민이라면 코스 성격에 맞춰 고르세요 — 평지 PB 코스(시카고)와 롤링 코스(시드니)는 추천 세팅이 다릅니다(아래 6번·CTA 참고).</p>
+
+<h2>4. 빕(배번)·패킷 수령 — expo에서, 보통 여권 지참, 전날 마감 주의</h2>
+
+<p>해외 메이저는 한국 대회처럼 우편으로 배번을 보내주지 않습니다. <strong>대회 전 며칠간 열리는 엑스포(Expo)에서 직접 수령</strong>하는 게 일반적입니다. 여기서 한국 러너가 자주 사고를 내는 지점이 둘입니다.</p>
+
+<ul>
+<li><strong>신분 확인.</strong> 수령 시 본인 확인을 위해 보통 <strong>여권(또는 신청 시 등록한 신분 정보)</strong>이 필요합니다. 신청 폼 영문명과 여권이 다르면 여기서 막힙니다 — 2번에서 영문명을 강조한 이유입니다.</li>
+<li><strong>엑스포 마감 시각.</strong> 엑스포는 보통 <strong>대회 전날 일찍 닫힙니다.</strong> 대회 당일 현장 수령이 안 되는 경우가 많으므로, 도착 일정을 엑스포 운영 기간 안에 맞춰야 합니다. 비행기 연착·시차로 늦게 도착해 엑스포를 놓치면 배번을 못 받습니다.</li>
+</ul>
+
+<div class="callout info"><span class="callout-icon">🛂</span><div class="callout-body"><p class="callout-title">도착 일정 = '대회일'이 아니라 '엑스포 마지막 날' 기준으로</p><p>항공권을 잡을 때 기준을 대회일이 아니라 <strong>엑스포 마지막 운영일 이전 도착</strong>으로 두세요. 시차로 인한 컨디션 회복 시간까지 감안하면, 대회 2~3일 전 도착이 무난합니다. 정확한 엑스포 기간·수령 요건은 도시별 가이드와 각 대회 공식 페이지에서 확인하세요.</p></div></div>
+
+<h2>5. 시차 적응 — 방향(동/서)에 따라 전략이 다르다</h2>
+
+<p>시차 적응은 일반적으로 <strong>"여행 방향"</strong>에 따라 난이도와 전략이 갈립니다. 흔히 알려진 원칙은 이렇습니다(개인차가 크므로 일반 지침으로만 참고하세요).</p>
+
+<table>
+<thead><tr><th>방향</th><th>해당 메이저(인천 기준)</th><th>일반적 원칙</th></tr></thead>
+<tbody>
+<tr><td><strong>동쪽 이동(시계가 빨라짐)</strong></td><td>시드니(+1h)</td><td>잠드는 시각을 앞당겨야 해 보통 더 힘듦. 며칠 전부터 취침·기상을 조금씩 당기고, <strong>아침 햇빛 노출</strong>을 활용하는 게 일반적 권장.</td></tr>
+<tr><td><strong>서쪽 이동(시계가 느려짐)</strong></td><td>미국(시카고 −14h·보스턴/뉴욕 −13h), 유럽(런던 −8h·베를린 −7h)</td><td>늦게 자는 쪽이라 비교적 적응이 쉽다는 게 통설. <strong>저녁 햇빛 노출</strong>로 취침을 늦추는 방향이 흔히 권장됨. 단 미국은 차이가 13~14시간으로 커 회복일을 넉넉히(3~4일).</td></tr>
+<tr><td><strong>시차 거의 없음</strong></td><td>도쿄(시차 0)</td><td>시차 적응이 사실상 불필요 — 첫 메이저로 도쿄가 유리한 큰 이유.</td></tr>
+</tbody>
+</table>
+
+<p>공통 원칙은 <strong>"도착 며칠 전부터 미리 현지 시각 쪽으로 생활 리듬을 조금씩 옮기고, 빛 노출을 방향에 맞게 활용하며, 대회 2~3일 전 도착해 회복 시간을 둔다"</strong>입니다. 시카고처럼 −14시간 차이가 나는 경우 컨디션 회복에 며칠을 잡아두는 게 안전합니다. 단, 수면제·멜라토닌 등 약물 사용은 의학적 판단 영역이라 여기서 권하지 않습니다 — 필요하면 의료진과 상담하세요.</p>
+
+<h2>6. 현지 통화·현금 — 카드 위주 + 소액 현금</h2>
+
+<p>요즘 메이저 개최 도시는 대부분 카드 결제가 잘 됩니다. 일반적인 전략은 <strong>"메인은 해외결제 카드, 보조로 소액 현지 현금"</strong>입니다.</p>
+
+<ul>
+<li><strong>현금은 소액만.</strong> 엑스포 주변 노점, 일부 교통, 팁 문화권(미국)에서 소액 현금이 필요할 수 있습니다. 큰 금액을 미리 환전해 들고 다닐 이유는 적습니다.</li>
+<li><strong>환전 팁.</strong> 도쿄(엔)·시드니(호주달러)·시카고(미국달러)처럼 통화가 다릅니다. 환율이 변동분이라 본문에 금액을 단정하지 않습니다 — 출국 전 주거래은행/환전 앱에서 그날 환율을 비교하세요. 공항 환전은 일반적으로 시내·앱보다 환율이 불리한 편이라는 게 통설입니다.</li>
+<li><strong>DCC는 현금 인출(ATM)에서도 뜬다.</strong> 현지 ATM 인출 시에도 '원화로 받겠냐'는 DCC 안내가 나오면, 현지 통화 인출을 택하는 게 일반적으로 유리합니다(2번 원칙과 동일).</li>
+</ul>
+
+<h2>7. 출발선 대기 — throwaway 의류 + GPS 워치 세팅</h2>
+
+<p>메이저는 출발 전 대기 시간이 깁니다. 코랄(corral) 배정 후 출발까지 길게는 한두 시간을 야외에서 보내기도 하죠. 이 시간의 추위·장비 관리가 레이스 초반 컨디션을 좌우합니다.</p>
+
+<ul>
+<li><strong>버리는 옷(throwaway).</strong> 출발 전 체온 유지를 위해, 출발 후 버려도 되는 헌 옷·일회용 우의를 겹쳐 입는 게 일반적입니다. 많은 메이저가 버려진 의류를 수거해 기부합니다. 비싼 옷 말고 버려도 아깝지 않은 걸로.</li>
+<li><strong>GPS 워치 충전·위성 수신.</strong> 전날 밤 <strong>워치를 100% 충전</strong>하고, 출발선에서 <strong>미리 GPS(위성) 신호를 잡아두세요.</strong> 대형 대회는 출발 직전 인파·고층 건물 때문에 위성 수신이 늦어질 수 있어, 코랄 진입 후 여유 있게 위성 픽스를 잡아두면 출발 직후 페이스가 튀는 걸 줄입니다.</li>
+<li><strong>젤·소모품.</strong> 레이스 중 보급은 대회마다 다릅니다. 평소 쓰던 젤을 직접 챙겨 가는 게 안전합니다(현지에서 같은 제품을 못 구할 수 있음).</li>
+</ul>
+
+<h2>8. 도시별 물류 매트릭스 — 7대 메이저, 인천 출발 기준 한눈에</h2>
+
+<p>위 공통 준비물 위에, 도시마다 다른 건 <strong>항공 시간·시차·입국 허가</strong> 세 가지입니다. 6대 메이저에 2025년 합류한 시드니까지, <strong>7대 메이저 개최 도시 전부</strong>를 인천(ICN) 출발·한국 여권 기준으로 정리했습니다. (시차는 각 대회 개최기 현지 서머타임 적용 기준입니다.)</p>
+
+<table>
+<thead><tr><th>도시(공항)</th><th>비행시간(인천 출발)</th><th>시차(서울 대비)</th><th>입국 허가 · 비용</th></tr></thead>
+<tbody>
+<tr><td><strong>🗼 도쿄</strong> (HND/NRT)</td><td>직항 약 <strong>2시간 30분</strong></td><td><strong>0시간</strong></td><td>일본 단기 방문 <strong>무비자</strong> · 무료</td></tr>
+<tr><td><strong>🌉 시드니</strong> (SYD)</td><td>직항 약 <strong>10시간 20~35분</strong></td><td><strong>+1시간</strong>(AEST)</td><td>호주 <strong>ETA 필수</strong> · 약 AUD $20</td></tr>
+<tr><td><strong>🇬🇧 런던</strong> (LHR)</td><td>직항 약 <strong>13.5~14.8시간</strong></td><td><strong>−8시간</strong>(BST)</td><td>영국 <strong>ETA 필수</strong> · £20</td></tr>
+<tr><td><strong>🇩🇪 베를린</strong> (BER)</td><td><strong>직항 없음</strong> — FRA 경유 약 14시간 45분+</td><td><strong>−7시간</strong>(CEST)</td><td>무비자 90일 · <strong>ETIAS 2026 Q4 예정</strong>(현재 불필요)</td></tr>
+<tr><td><strong>🌆 시카고</strong> (ORD)</td><td>직항 약 <strong>13시간 30분</strong></td><td><strong>−14시간</strong>(CDT)</td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
+<tr><td><strong>🦞 보스턴</strong> (BOS)</td><td>직항 약 <strong>13시간 50분</strong>(KE)</td><td><strong>−13시간</strong>(EDT)</td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
+<tr><td><strong>🗽 뉴욕</strong> (JFK/EWR)</td><td>직항 약 <strong>14시간</strong></td><td><strong>−13~14시간</strong></td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
+</tbody>
+</table>
+
+<p>표에서 바로 읽히는 것. ① <strong>도쿄만 시차 0</strong>이라 적응이 필요 없어 첫 메이저로 압도적으로 쉽습니다. ② <strong>미국 3개 도시(시카고·보스턴·뉴욕)는 시차 13~14시간</strong>으로 가장 가혹합니다. ③ <strong>베를린만 직항이 없어</strong> 프랑크푸르트(FRA) 경유가 강제됩니다. 입국 허가는 다음 섹션에서 도시별로 자세히 풀어갑니다.</p>
+
+<h2>8-1. 입국 허가 — ESTA · 영국 ETA · EU ETIAS 정리</h2>
+
+<p>ESTA·ETA·ETIAS는 모두 \'비자\'가 아닌 <strong>전자여행허가</strong>이지만, 없으면 항공사가 탑승 자체를 거부합니다. 한국 여권 기준으로 셋을 구분합니다. (아래 비용·시행일은 2026년 6월 기준 — 규정은 자주 바뀌므로 신청 전 공식 사이트 확인이 원칙입니다.)</p>
+
+<ul>
+<li><strong>미국 — ESTA (시카고·보스턴·뉴욕):</strong> 한국은 비자면제프로그램(VWP) 대상이라 ESTA로 90일 무비자 입국. 비용 <strong>USD $21</strong>, 유효기간 <strong>2년</strong>(여권 만료가 빠르면 그날까지). 공식 사이트 <strong>esta.cbp.dhs.gov</strong>에서만 신청하고, 규정상 <strong>출발 72시간 전까지</strong> 신청 권고.</li>
+<li><strong>영국 — ETA (런던) ★2025년부터 의무화:</strong> 영국은 <strong>2025년 1월 8일부터 한국 여권 소지자에게 ETA를 의무화</strong>했습니다. \'그냥 무비자\'로 들어가던 시절은 끝났습니다. 비용 <strong>£20</strong>(약 3만 4천~3만 6천 원), 한 번 받으면 <strong>2년간 여러 번 입국</strong>(1회 최대 6개월 체류). <strong>\'UK ETA\' 공식 앱</strong>(또는 GOV.UK)에서 신청하면 대개 몇 분 내 자동 승인되며, 권고는 <strong>여행 3영업일 전까지</strong>. 런던마라톤 지원자는 반드시 챙기세요.</li>
+<li><strong>EU — ETIAS (베를린), 아직 \'예정\':</strong> 독일 포함 솅겐 지역은 한국 여권으로 <strong>180일 중 90일 무비자</strong>입니다. 화제의 ETIAS는 2026년 6월 기준 <strong>아직 시행 전</strong>으로, 공식 일정상 <strong>2026년 4분기(Q4) 출시 예정</strong>이며 출시 후에도 전환기·유예기간을 거쳐 <strong>본격 의무화는 2027년</strong>으로 잡혀 있습니다. 즉 <strong>2026년 안에 베를린마라톤(9월 말)을 간다면 ETIAS 없이 입국</strong>됩니다. 시행 후 비용은 <strong>€20</strong>(만 18세 미만·70세 이상 무료) 예정. 이 일정은 EU가 여러 번 미뤄온 만큼 <strong>출발 전 EU 공식 사이트(travel-europe.europa.eu)에서 최신 시행 여부 확인 필수</strong>.</li>
+<li><strong>호주 — ETA (시드니):</strong> 호주는 ETA(전자여행허가)가 필요합니다. 공식 앱으로 신청하며 비용은 약 AUD $20 수준.</li>
+<li><strong>일본 — 무비자 (도쿄):</strong> 단기 방문은 무비자가 일반적. 다만 입국 규정은 변동될 수 있으니 출발 전 최신 안내 확인.</li>
+</ul>
+
+<div class="callout warning"><span class="callout-icon">🛂</span><div class="callout-body"><p class="callout-title">입국 허가, 이것만은 — 공식 사이트 · 발권 직후 · 여권 잔여기간</p><p>① ESTA·ETA·ETIAS는 사전 전자 허가라 승인에 시간이 걸릴 수 있으니 <strong>항공권을 잡으면 곧바로 신청</strong>하세요. ② <strong>반드시 공식 사이트에서만</strong>(ESTA=esta.cbp.dhs.gov, UK ETA=공식 앱/GOV.UK, ETIAS=travel-europe.europa.eu, 호주 ETA=공식 앱). 검색 상단의 유사 대행 사이트는 수수료를 얹습니다. ③ 여권 유효기간(보통 잔여 6개월 이상 권장)도 함께 체크. <strong>모든 입국 규정은 예고 없이 바뀌므로 신청 전 각국 공식 안내가 최종 기준</strong>입니다.</p></div></div>
+
+<h2>9. 카본화는 '코스 성격'에 맞춰 — 평지 vs 롤링</h2>
+
+<p>레이스화는 기내반입(3번)만 챙기면 끝이 아니라, <strong>코스 성격에 맞는 세팅</strong>을 고르는 게 기록과 직결됩니다. 같은 카본화라도 평지 PB 코스와 오르막·롤링 코스에 어울리는 결이 다릅니다.</p>
+
+<table>
+<thead><tr><th>코스 성격</th><th>대표 메이저</th><th>어울리는 카본화 결</th></tr></thead>
+<tbody>
+<tr><td><strong>평지 PB · 직선 스피드</strong></td><td>시카고(세계기록 코스)·런던·베를린</td><td>공격적 추진력 세팅 — <a href="/shoes/adidas-adios-pro-4">아디제로 아디오스 프로 4</a>, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td></tr>
+<tr><td><strong>롤링·언듈레이팅</strong></td><td>시드니(누적 +313m)·보스턴(하트브레이크 힐)</td><td>업힐 대응 균형형 — <a href="/shoes/on-cloudboom-strike">온 클라우드붐 스트라이크</a></td></tr>
+<tr><td><strong>가깝고 평지(첫 도전)</strong></td><td>도쿄·뉴욕</td><td>익숙한 검증된 레이스화 우선</td></tr>
+</tbody>
+</table>
+
+<p>핵심은 "남이 좋다는 신발"이 아니라 <strong>충분히 신어 본 검증된 레이스화</strong>를 들고 가는 것입니다. 처음 신는 카본화로 첫 해외 풀코스를 뛰는 건 권하지 않습니다 — 발에 맞는지, 장거리에서 어떤지 국내에서 먼저 확인하세요.</p>
+
+<div class="major-next"><p class="mn-title">도시별 신청 가이드로 — 분기해서 결정하세요</p><div class="mn-grid"><a class="mn-card" href="/blog/tokyo-marathon-2027-registration-guide"><span class="mn-emoji">🗼</span><div class="mn-label">도쿄마라톤 2027</div><div class="mn-desc">인천 2시간·시차 0. 첫 메이저 1순위 — 자선·추첨·OTG 3가지 길</div></a><a class="mn-card" href="/blog/sydney-marathon-2026-registration-guide"><span class="mn-emoji">🌉</span><div class="mn-label">시드니마라톤 2026</div><div class="mn-desc">7번째 메이저·식스스타 경관 코스 — 추첨 마감 후 자선·투어</div></a><a class="mn-card" href="/blog/chicago-marathon-2026-registration-guide"><span class="mn-emoji">🌆</span><div class="mn-label">시카고마라톤 2026</div><div class="mn-desc">세계 최속 평지 PB 성지 — 자선·공식 투어 막차</div></a><a class="mn-card" href="/blog/boston-marathon-2027-bq-guide"><span class="mn-emoji">🦄</span><div class="mn-label">보스턴마라톤 2027</div><div class="mn-desc">추첨 없음 — 국내 공인 대회로 BQ 자격 만들기</div></a></div></div>
+
+<p>코스 난이도 감을 먼저 잡고 싶다면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 점검하고, 국내외 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문은 한국 러너의 해외 메이저 원정 준비를 일반 원칙 수준으로 정리한 매뉴얼입니다. 입국 허가 정보(미국 ESTA USD $21·2년, 영국 ETA £20·2025-01-08 한국 의무화·2년, EU ETIAS €20·2026 Q4 출시 예정·전환기 후 2027 본격 시행 예정, 호주 ETA·일본 단기 무비자)와 비행시간·시차는 2026년 6월 기준 공식·공개 자료를 바탕으로 정리했습니다. 여행자보험 보장 범위·면책, 카드 해외 수수료, 입국 허가 규정·수수료·시행일은 상품·카드사·항공사·각국 정책마다 다르고 <strong>예고 없이 변경</strong>됩니다 — 본문에 특정 상품·금액을 단정하지 않은 이유입니다. 환율은 변동분이라 본문에 단정하지 않았습니다. 보험·결제·입국·의학 관련 사항은 반드시 신청·결제 전 각 보험사·카드사·항공사·각국 입국 당국(ESTA=esta.cbp.dhs.gov, UK ETA=공식 앱/GOV.UK, ETIAS=travel-europe.europa.eu)·의료진 등 공식·전문 출처에서 최신 내용을 직접 확인하세요. 항공 소요시간·시차는 일반적 직항 기준 근사치로 편·계절에 따라 달라질 수 있습니다.</p>
+`,
+  },
+  {
     id: 'sydney-marathon-2026-registration-guide',
     slug: 'sydney-marathon-2026-registration-guide',
     title: '시드니마라톤 2026 신청 — 추첨 마감 후 남은 두 갈래(자선·투어) | 8/30 임박, PB보다 식스스타·하버브리지 경관 코스',

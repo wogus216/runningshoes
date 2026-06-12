@@ -16,14 +16,15 @@
 - [ ] **2026-09-15**: 시카고 자선 마감
 - [ ] **2026-10-11**: 시카고 2026 대회 / 2027 추첨 오픈(10월 말)
 - [ ] **2026-11-01**: 뉴욕 2026 대회(50주년)
+- [ ] **2026 Q4**: EU ETIAS 출시 예정 → B1 원정 매뉴얼의 "EU=ETIAS 올해 불필요" 문구 재검증·갱신 (베를린·솅겐). 영국 ETA 비용/요건 변동도 함께
 
 ## 시리즈 진행도 (허브 1 + 스포크 7 + 보조 2 = 10편)
 - [x] **S1 도쿄 2027** (`tokyo-marathon-2027-registration-guide`, 2026-06-13 발행) — 1차 배치
 - [x] **S2 시드니 2026** (`sydney-marathon-2026-registration-guide`, 2026-06-13 발행) — 비PB 경관코스(식스스타 포지셔닝)
 - [x] **S3 시카고 2026** (`chicago-marathon-2026-registration-guide`, 2026-06-13 발행) — 평지 PB. 자선 9/15·투어 8/16
   - ✅ 도쿄 글 major-next 레트로핏 완료 → 도쿄↔시드니↔시카고 3노드 상호링크 가동
-- [ ] B1 해외 원정 매뉴얼 (`overseas-marathon-travel-checklist-korea`) — 최강 RPM 노드
-- [ ] S4 보스턴 BQ (`boston-marathon-2027-bq-guide`) — 차별화 심장
+- [x] **B1 해외 원정 매뉴얼** (`overseas-marathon-travel-checklist-korea`, 2026-06-13 발행) — RPM 허브. 7대 도시 입국 매트릭스(ESTA/영국ETA/EU ETIAS), FAQ JSON-LD
+- [x] **S4 보스턴 BQ** (`boston-marathon-2027-bq-guide`, 2026-06-13 발행) — 차별화 심장. BQ 기준표 + 국내 WA공인 대회(서울/경주/춘천)로 자격, 2027 내리막 페널티
 - [ ] S5 뉴욕 50주년 (`new-york-marathon-2026-registration-guide`)
 - [ ] B2 식스스타 메달 (`six-star-medal-challenge-korea-guide`)
 - [ ] S6 런던 2027 (`london-marathon-2027-registration-guide`)
