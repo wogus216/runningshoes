@@ -205,4 +205,33 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: false,
     description: '대청호를 배경으로 달리는 충북 대표 풀코스 마라톤. 가을 단풍 코스로 유명.',
   },
+  {
+    id: 'gangnam-peace-marathon-2026',
+    name: '2026 강남국제평화마라톤 (제23회)',
+    date: '2026-10-05',
+    month: '10월',
+    location: '강남구 봉은사로 (삼성1동주민센터 앞)',
+    region: '서울',
+    distances: ['풀코스', '하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://peacemarathon.co.kr',
+    description:
+      '강남구·주한미8군 공동 주최, 참가비 전액을 전쟁고아 지원에 기부하는 이색 마라톤(유니세프 한국위원회 후원). 강남페스티벌 연계로 봉은사로 강남 도심을 달립니다. 2026 제23회는 서울시 축제포털 기준 10/5(일) 예정 — 종목·참가비·접수일은 제22회(2025) 기준 추정이며 8월경 공식 발표 예상. 참가비가 풀 3만·하프/10K 2만원대로 저렴한 기부형 대회입니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: '없음',
+      courseDescription: '봉은사로 출발 강남 도심 순환 코스. 도로 통제형, 평지 위주.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 30000 },
+        { distance: '하프', fee: 20000 },
+        { distance: '10K', fee: 20000 },
+        { distance: '5K', fee: 10000 },
+      ],
+      startTime: '08:00',
+    },
+  },
 ];

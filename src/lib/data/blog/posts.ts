@@ -2,6 +2,76 @@ import { BlogPost } from '@/types/blog';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'gangnam-international-peace-marathon-2026',
+    slug: 'gangnam-international-peace-marathon-2026',
+    title: '참가비 전액이 전쟁고아에게 — 강남국제평화마라톤(국평마) | 강남구·주한미8군 공동주최, 10/5 강남 도심 기부런',
+    description: '"국평마"로 불리는 강남국제평화마라톤은 참가비 전액을 전쟁고아 지원에 기부하는 이색 대회입니다. 강남구와 주한미8군이 공동 주최하고 유니세프가 후원하죠. 풀 3만·하프 2만원대로 참가비가 저렴하고, 봉은사로 강남 도심을 달립니다. 2026 제23회는 10/5(일) 예정 — 종목·참가비·접수 일정과 이 대회가 특별한 이유를 정리했습니다.',
+    thumbnail: '/images/blog/gangnam-international-peace-marathon-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-12',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['강남국제평화마라톤', '국평마', '강남 마라톤', '기부 마라톤', '주한미8군', '강남페스티벌', '서울 마라톤', '가을 마라톤', '하반기 대회', '봉은사로'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>참가비 전액이 기부됩니다</strong> — 강남국제평화마라톤("국평마")은 참가비 전액을 전쟁고아 지원에 쓰는 기부형 대회. 강남구와 <strong>주한미8군이 공동 주최</strong>하고 유니세프 한국위원회가 후원합니다.</li>
+    <li><strong>참가비가 저렴합니다</strong> — 풀 3만 · 하프/10K 2만 · 5K 1만원대(전년 기준). 봉은사로에서 출발해 강남 도심을 달리는 평지 코스로, 강남페스티벌과 함께 열립니다.</li>
+    <li><strong>2026 제23회는 10/5(일) 예정</strong> — 서울시 축제포털 기준. 종목·참가비·접수일은 아직 공식 미발표(8월경 발표 예상)라 제22회 기준 추정입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🕊️</span>
+  <div class="callout-body">
+    <p class="callout-title">"국평마"가 다른 대회와 다른 점 — 달리기로 하는 기부</p>
+    <p>대부분의 마라톤은 참가비로 운영비를 충당하지만, 강남국제평화마라톤은 <strong>참가비 전액을 전쟁으로 고통받는 아이들을 돕는 데</strong> 씁니다. 6.25 전쟁의 상흔에서 출발한 한미 우호와 평화의 의미를 담아 <strong>강남구와 주한미8군사령부(EUSA)가 함께</strong> 여는 대회죠. "내 참가비가 곧 기부"라는 점에서, 기록보다 의미를 찾는 러너에게 특별합니다.</p>
+  </div>
+</div>
+
+<h2>강남 도심을 달린다 — 봉은사로 코스</h2>
+
+<p>출발지는 <strong>봉은사로 삼성1동주민센터 앞</strong>(봉은사역 인근)입니다. 코엑스와 봉은사로 일대 <strong>강남 도심을 통제하고 달리는 평지 코스</strong>라, 접근성이 좋고 기록도 잘 나오는 편입니다. 매년 가을 <strong>강남페스티벌</strong>과 함께 열려 축제 분위기 속에서 뛸 수 있죠. 풀코스부터 5km까지 종목이 다양해 가족 단위 참가도 많습니다.</p>
+
+<h2>종목과 참가비 — "이 가격에 기부까지"</h2>
+
+<p>가장 눈에 띄는 건 <strong>저렴한 참가비</strong>입니다. 운영보다 기부에 방점을 둔 대회라 다른 도심 마라톤(보통 6~8만원대)보다 훨씬 낮습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비(전년 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>30,000원</td></tr>
+    <tr><td><strong>하프</strong></td><td>21.1km</td><td>20,000원</td></tr>
+    <tr><td><strong>10K</strong></td><td>10km</td><td>20,000원</td></tr>
+    <tr><td><strong>5K</strong></td><td>5km</td><td>10,000원</td></tr>
+  </tbody>
+</table>
+
+<p>※ 위 참가비는 <strong>제22회(2025) 기준</strong>이며, 2026 제23회 공식 금액은 발표 후 확정됩니다. 첫 풀코스나 하프 도전을 고민 중이라면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준에 맞는 거리를 먼저 정하면 좋습니다.</p>
+
+<h2>2026 제23회 일정 — 10/5(일) 예정</h2>
+
+<p>서울시 축제포털에 <strong>2026 강남페스티벌(10/2~10/5)</strong> 프로그램으로 마라톤이 <strong>10월 5일(일)</strong>에 등재돼 있습니다. 다만 <strong>공식 홈페이지(peacemarathon.co.kr)는 아직 제22회 정보만</strong> 게시 중이라, 종목·참가비·접수 세부는 미발표 상태입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">접수는 8월경 예상 — 추첨제</p>
+    <p>전년(제22회)에는 <strong>8월 초 온라인 추첨</strong>으로 접수했고 정원은 약 1만 명이었습니다. 2026 제23회도 비슷한 패턴이면 <strong>8월경 peacemarathon.co.kr에서 접수</strong>가 열릴 것으로 보입니다. 참가 의향이 있다면 7~8월에 공식 홈페이지와 강남구 채널을 확인하세요. 대회 당일 기록 측정이 궁금하면 <a href="/blog/race-timing-chip-net-gross-time-guide-2026">기록칩·넷타임 정리</a>를 참고하면 됩니다.</p>
+  </div>
+</div>
+
+<h2>가을 강남에서, 의미 있게 한 걸음</h2>
+
+<p>강남국제평화마라톤은 "빠른 기록"보다 <strong>"달리는 행위 자체가 누군가를 돕는다"</strong>는 데 의미가 있는 대회입니다. 저렴한 참가비, 접근성 좋은 강남 도심 코스, 가족 친화 종목까지 갖춰 입문 러너나 가족 참가에도 잘 맞습니다. 10월 가을 시즌, 다른 하반기 대회와 함께 일정을 짜고 싶다면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 완전정복</a>과 <a href="/marathon">월별 마라톤 캘린더</a>를 참고하세요. 🕊️</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-12 기준이며, 2026 제23회의 대회일(10/5)은 서울시 축제포털 등재 기준, 종목·참가비·접수일은 제22회(2025) 기준 추정입니다. 공식 발표 시 강남국제평화마라톤 홈페이지(peacemarathon.co.kr)에서 최종 확인하세요.</p>
+`,
+  },
+  {
     id: 'seoul-marathon-100-years-history-1931-2030',
     slug: 'seoul-marathon-100-years-history-1931-2030',
     title: '서울마라톤 100년의 길 — 1931년 영등포에서 2030 제100회까지 | 손기정·일장기 말소사건·동아마라톤이 만든 한국 마라톤의 뿌리',
