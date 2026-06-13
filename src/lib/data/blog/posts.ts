@@ -3,6 +3,160 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'brooks-running-shoes-lineup-tier-guide-2026',
+    slug: 'brooks-running-shoes-lineup-tier-guide-2026',
+    title: '브룩스 러닝화 계급도 2026 — 고스트·글리세린·아드레날린, GTS와 DNA폼으로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
+    description:
+      '브룩스 러닝화 9종을 라인(고스트 데일리·글리세린 쿠션·아드레날린 GTS 안정화·하이페리온 레이싱)과 DNA 폼 등급으로 한 장에. 고스트 16.9만부터 하이페리온 엘리트 29.9만까지 가격·무게·폼 비교표 + "GTS=GuideRails 안정화" 신호 + "맥스" 접미사 + 안정화 명가 브룩스의 아드레날린 vs 글리세린 GTS까지 정리했습니다.',
+    thumbnail: '/images/blog/brooks-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['브룩스 러닝화', '브룩스 계급도', '러닝화 라인업', '러닝화 등급', '고스트', '글리세린', '아드레날린 GTS', 'GuideRails', 'DNA Loft', '안정화'],
+    faqs: [
+      { question: '브룩스 "GTS"는 무슨 뜻인가요?', answer: 'GTS는 "Go-To-Support"의 약자로, 브룩스의 GuideRails 안정화 기술이 들어갔다는 신호입니다. 같은 모델에도 일반 버전과 GTS 버전이 따로 있어요 — 예를 들어 글리세린 22(중립)와 글리세린 GTS 22(안정화)입니다. 평발·과내전이면 GTS가 붙은 모델을 보세요.' },
+      { question: '고스트랑 글리세린은 뭐가 다른가요?', answer: '고스트는 만능 데일리(DNA Loft v3, 16.9만), 글리세린은 프리미엄 쿠션(DNA Tuned, 20.9만)입니다. 매일 부담 없이 다양하게 쓸 거면 고스트, 더 푹신하고 고급스러운 쿠션을 원하면 글리세린입니다. 둘 다 "맥스" 버전(고스트 맥스·글리세린 맥스)이 있는데, 스택을 키운 맥시멀 쿠션입니다.' },
+      { question: '브룩스 안정화는 아드레날린이랑 글리세린 GTS 중 뭘 사야 하나요?', answer: '아드레날린 GTS 25(18.9만)는 가성비 안정화로 과내전 입문자의 정답, 글리세린 GTS 22(20.9만)는 글리세린의 프리미엄 쿠션에 GuideRails를 더한 상위 버전입니다. 처음 안정화면 아드레날린, 쿠션까지 욕심나면 글리세린 GTS입니다. 둘 다 카야노보다 저렴합니다.' },
+      { question: 'GuideRails 안정화는 다른 안정화랑 어떻게 다른가요?', answer: '대부분의 안정화가 발 안쪽을 단단한 판으로 받친다면, GuideRails는 양옆에 가드레일을 두고 무릎의 과도한 움직임을 제한하는 방식입니다. 발이 아니라 무릎 정렬을 잡아주는 셈이라 과교정 느낌이 적고 자연스럽습니다. 그래서 "안정화는 딱딱하다"는 분께 잘 맞습니다.' },
+      { question: '브룩스는 발볼 넓은 한국 러너에게 맞나요?', answer: '잘 맞습니다. 브룩스는 토박스가 넉넉한 편이고 와이드 옵션도 풍부합니다. 특히 고스트 맥스·글리세린 맥스는 기본 토박스가 넓어요. 다만 하이페리온 엘리트 같은 카본 레이싱은 좁으니 주의하세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>브룩스는 "부드러움 + 안정화 명가"</strong> — 레이싱보다 부상 없는 데일리·안정화가 강점입니다. GuideRails 안정화는 발이 아니라 무릎을 잡는 독특한 방식이에요.</li>
+    <li><strong>접미사가 신호입니다</strong> — <strong>"GTS"=GuideRails 안정화</strong>(아드레날린 GTS·글리세린 GTS), <strong>"맥스"=스택 키운 맥시멀</strong>(고스트 맥스·글리세린 맥스).</li>
+    <li><strong>라인이 곧 용도</strong> — 고스트(만능 데일리)·글리세린(프리미엄 쿠션)·아드레날린(안정화)·하이페리온(레이싱).</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔻</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 브룩스 계급도 한 장</p>
+    <p>"고스트, 글리세린, 아드레날린에 GTS랑 맥스까지 붙으니 헷갈린다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a>·<a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> 계급도와 함께 보면 브랜드 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 브룩스 읽는 법 — 라인 + "GTS" + "맥스"</h2>
+
+<p>브룩스는 화려한 레이싱보다 <strong>"부상 없이 부드럽게"</strong>가 정체성입니다. 그래서 데일리와 안정화가 특히 강해요. 라인 이름으로 용도를, 두 접미사로 변형을 읽으면 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>고스트 Ghost</strong></td><td>만능 데일리</td><td>"처음이면 고스트" — 부드러운 베스트셀러</td></tr>
+    <tr><td><strong>글리세린 Glycerin</strong></td><td>프리미엄 쿠션</td><td>"고급 푹신함" — 체중별 반응</td></tr>
+    <tr><td><strong>아드레날린 Adrenaline</strong></td><td>안정화</td><td>"과내전 입문 정답" — 카야노 절반 가격</td></tr>
+    <tr><td><strong>하이페리온 Hyperion</strong></td><td>스피드·레이싱</td><td>맥스=슈퍼트레이너 / 엘리트=카본</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 두 접미사가 핵심 신호입니다.</p>
+<ul>
+  <li><strong>"GTS" = GuideRails 안정화</strong>(Go-To-Support). 같은 모델에도 중립 버전과 GTS 버전이 따로 있습니다 — 글리세린 22(중립) vs 글리세린 GTS 22(안정화).</li>
+  <li><strong>"맥스(Max)" = 스택을 키운 맥시멀 쿠션</strong> 버전 — 고스트 맥스, 글리세린 맥스.</li>
+</ul>
+
+<h2>2. DNA 폼이 등급을 만든다 — Loft v3 → Tuned → Gold</h2>
+
+<p>브룩스 폼은 전부 "DNA" 패밀리입니다. 데일리는 DNA Loft, 프리미엄 쿠션은 DNA Tuned, 레이싱은 DNA Gold(PEBA)예요.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>DNA Loft v3</strong></td><td>부드러운 데일리</td><td>고스트 · 고스트 맥스 · 아드레날린</td></tr>
+    <tr><td><strong>DNA Tuned</strong></td><td>체중별 반응 프리미엄</td><td>글리세린 · 글리세린 맥스 · 글리세린 GTS</td></tr>
+    <tr><td><strong>DNA Gold (PEBA)</strong></td><td>레이싱 최상위 반발</td><td>하이페리온 엘리트 · 하이페리온 맥스</td></tr>
+    <tr><td><strong>+ GuideRails</strong></td><td>무릎 정렬 안정화</td><td>아드레날린 GTS · 글리세린 GTS</td></tr>
+    <tr><td><strong>+ 카본 플레이트</strong></td><td>레이싱 추진</td><td>하이페리온 엘리트</td></tr>
+  </tbody>
+</table>
+
+<h2>3. 브룩스 러닝화 계급도 — 9종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 브룩스 러닝화 9종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/brooks-ghost-17"><strong>고스트 17</strong></a></td><td>입문·만능 데일리</td><td>DNA Loft v3</td><td>16.9만</td><td>289g</td><td>800km 내구성, 검증된 안전패</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3"><strong>고스트 맥스 3</strong></a></td><td>맥스 쿠션 데일리</td><td>DNA Loft v3</td><td>17.9만</td><td>303g</td><td>119mm 광폭, 관절 보호 가성비</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>300g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-22"><strong>글리세린 22</strong></a></td><td>프리미엄 쿠션</td><td>DNA Tuned</td><td>20.9만</td><td>293g</td><td>체중별 반응하는 고급 쿠션</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>프리미엄 안정화</td><td>DNA Tuned + GuideRails</td><td>20.9만</td><td>305g</td><td>글리세린 쿠션 + 안정화</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-max-3"><strong>하이페리온 맥스 3</strong></a></td><td>슈퍼트레이너</td><td>DNA Gold (PEBA) + Flash</td><td>21.9만</td><td>283g</td><td>PEBA 첫 진성 슈퍼트레이너</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-max"><strong>글리세린 맥스</strong></a></td><td>맥시멀 쿠션</td><td>DNA Tuned</td><td>23.9만</td><td>305g</td><td>42mm·148 SA 역대 최강 충격흡수</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>312g</td><td>47mm 극강 맥시멀</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-5"><strong>하이페리온 엘리트 5</strong></a></td><td>카본 레이싱</td><td>DNA Gold (PEBA) + 카본</td><td>29.9만</td><td>204g</td><td>76.9% 에너지, 슈퍼슈즈</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 브룩스·만능 데일리</strong> → <a href="/shoes/brooks-ghost-17">고스트 17</a>. 부드러운 DNA Loft v3에 800km 내구성, 브룩스의 기준점입니다.</li>
+  <li><strong>☁️ 관절 보호·맥스 쿠션</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(가성비) 또는 47mm <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(끝판). 글리세린 맥스 세대 차이는 <a href="/blog/brooks-glycerin-max-1-vs-2-comparison">글리세린 맥스 vs 맥스 2</a>에.</li>
+  <li><strong>🛋️ 고급 푹신한 쿠션</strong> → <a href="/shoes/brooks-glycerin-22">글리세린 22</a>. 체중별로 반응하는 DNA Tuned.</li>
+  <li><strong>🦶 평발·안정(가성비)</strong> → <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>. 쿠션까지 원하면 <a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a>(아래 5번 참고). 다른 브랜드 안정화 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
+  <li><strong>⚡ 빠른 훈련</strong> → <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a>. PEBA 슈퍼트레이너로 템포·인터벌에.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a>(204g 카본).</li>
+</ul>
+
+<h2>5. 브룩스 안정화 — GuideRails 명가</h2>
+
+<p>브룩스는 <strong>안정화의 명가</strong>입니다. 아드레날린 GTS는 전 세계 안정화 추천에서 카야노와 함께 1·2위로 가장 자주 꼽히죠. 브룩스 안정화의 핵심은 <strong>GuideRails</strong> — 발 안쪽을 단단하게 받치는 대신, <strong>양옆 가드레일로 무릎의 과도한 움직임을 잡는</strong> 방식입니다. 그래서 과교정 느낌이 적고 자연스러워요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>성격</th><th>가격</th><th>이런 분께</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>가성비 안정화</td><td>18.9만</td><td>과내전 입문, 카야노가 부담스러운 분</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>프리미엄 안정화</td><td>20.9만</td><td>안정화 + 고급 쿠션 둘 다</td></tr>
+  </tbody>
+</table>
+
+<p>처음 안정화라면 <strong>아드레날린 GTS</strong>로 충분하고, 쿠션감까지 욕심나면 <strong>글리세린 GTS</strong>입니다. 카야노·860과 직접 맞붙인 비교는 <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">안정화 3강 비교</a>에 있습니다.</p>
+
+<h2>6. 발볼 — 브룩스는 한국 러너 친화적</h2>
+
+<p>브룩스는 아식스와 함께 <strong>토박스가 넉넉한 편</strong>이라 발볼 넓은 한국 러너에게 좋습니다. 특히 맥스 라인이 넓어요.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>넓음 (와이드 친화)</strong></td><td>고스트 맥스 3 · 글리세린 맥스 · 와이드 옵션 풍부</td></tr>
+    <tr><td><strong>표준</strong></td><td>고스트 17 · 글리세린 22 · 아드레날린 GTS · 글리세린 GTS · 하이페리온 맥스</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>하이페리온 엘리트 5(레이싱)</td></tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 데일리는 고스트, 맥스 쿠션은 고스트 맥스·글리세린 맥스가 무난합니다. 발볼·평발 전반의 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
+  <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'hoka-running-shoes-lineup-tier-guide-2026',
     slug: 'hoka-running-shoes-lineup-tier-guide-2026',
     title: '호카 러닝화 계급도 2026 — 클리프톤·본디·마하·아라히, 맥스 쿠션으로 읽는 전체 라인업 | 데일리부터 카본 레이싱까지 한 장 정리',
@@ -145,7 +299,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -313,7 +467,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -474,7 +628,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -645,7 +799,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
