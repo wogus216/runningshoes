@@ -3,6 +3,167 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'nike-running-shoes-lineup-tier-guide-2026',
+    slug: 'nike-running-shoes-lineup-tier-guide-2026',
+    title: '나이키 러닝화 계급도 2026 — 페가수스·보메로·스트럭처·Fly, 라인으로 읽는 전체 라인업 | 입문부터 알파플라이까지 한 장 정리',
+    description:
+      '나이키 러닝화 14종을 라인(페가수스 데일리·보메로 쿠션·스트럭처 안정화·Fly 레이싱)과 폼 등급(Cushlon·ReactX·ZoomX·카본)으로 한 장에. 라이벌 플라이 13만원부터 알파플라이 35만원까지 가격·무게·폼 비교표 + "플러스/프리미엄" 접미사 해설 + 토박스 좁은 나이키, 발볼 넓은 한국 러너의 와이드 옵션까지 정리했습니다.',
+    thumbnail: '/images/blog/nike-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['나이키 러닝화', '나이키 계급도', '러닝화 라인업', '러닝화 등급', '페가수스', '보메로', '베이퍼플라이', '알파플라이', 'ZoomX', '나이키 토박스'],
+    faqs: [
+      { question: '나이키 러닝화 라인은 어떻게 구분하나요?', answer: '숫자가 아니라 라인 이름으로 구분합니다. 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 데일리 라인이고, 이름에 Fly가 붙으면(베이퍼플라이·알파플라이·줌 플라이·스트릭플라이) 카본 레이싱 라인입니다. 라이벌 플라이는 예외적으로 Fly가 붙지만 카본 없는 가성비 템포화입니다.' },
+      { question: '페가수스 플러스, 프리미엄은 일반 페가수스와 뭐가 다른가요?', answer: '같은 라인의 상위 등급입니다. 기본(41·42)은 ReactX 폼, 플러스는 더 가벼운 ZoomX 폼, 프리미엄은 ZoomX+ReactX+에어를 겹친 맥시멀 버전입니다. 가격도 기본 16만원대 → 플러스 21만원대 → 프리미엄 27만원대로 올라갑니다. 보메로도 18 → 플러스 → 프리미엄(50mm) 순으로 같은 규칙입니다.' },
+      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 다행히 와이드·X-와이드 옵션이 있는 모델이 있습니다 — 페가수스 41·42, 스트럭처 26, 보메로 18·플러스. 반대로 페가수스 프리미엄·플러스, 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다.' },
+      { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(13.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
+      { question: 'ZoomX가 뭔가요? 다른 폼이랑 어떻게 다른가요?', answer: 'ZoomX는 나이키 최상위 PEBA 폼으로, 가볍고 반발력이 최고입니다. 원래 베이퍼플라이 같은 레이싱화에만 쓰다가 보메로·페가수스 플러스 같은 데일리로 내려왔습니다. 입문은 Cushlon, 데일리는 ReactX(안정적), 프리미엄·레이싱은 ZoomX(반발), 거기에 카본 플레이트가 더해지면 슈퍼슈즈입니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>나이키는 숫자가 아니라 "라인 이름"으로 읽습니다</strong> — 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 축, 이름에 <strong>Fly</strong>가 붙으면 카본 레이싱입니다.</li>
+    <li><strong>플러스·프리미엄 = 같은 라인의 상위 등급</strong> — 기본(ReactX) → 플러스(ZoomX 경량) → 프리미엄(맥시멀). 폼은 Cushlon→ReactX→ZoomX→카본 순으로 올라갑니다.</li>
+    <li><strong>나이키는 토박스가 좁습니다</strong> — 발볼 넓은 한국 러너는 와이드 옵션(페가수스 41·42, 스트럭처, 보메로 18·플러스)부터 확인하세요.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔵</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 나이키 계급도 한 장</p>
+    <p>"페가수스, 보메로, 베이퍼플라이… 뭐가 뭔지 모르겠다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게·토박스는 RunRepeat 실측 기준이며, 각 모델은 상세 페이지로 바로 연결됩니다. 같은 방식의 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 계급도</a>도 함께 보면 브랜드 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 나이키 읽는 법 — 숫자 말고 "라인 이름"</h2>
+
+<p>뉴발란스가 숫자(860·880·1080)로 용도를 구분한다면, <strong>나이키는 라인 이름으로 구분</strong>합니다. 핵심은 3대 데일리 라인 + Fly 레이싱입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>페가수스 Pegasus</strong></td><td>만능 데일리</td><td>"처음이면 페가수스" — 나이키의 기준점</td></tr>
+    <tr><td><strong>보메로 Vomero</strong></td><td>맥스 쿠션</td><td>"푹신함·무릎 보호" — 두툼한 장거리</td></tr>
+    <tr><td><strong>스트럭처 Structure</strong></td><td>안정화</td><td>"평발·과내전" — 나이키 유일 안정화</td></tr>
+    <tr><td><strong>○○플라이 (Fly)</strong></td><td>카본 레이싱</td><td>베이퍼·알파·줌·스트릭 — 대회용</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 라인 뒤에 붙는 <strong>접미사가 등급</strong>입니다. 기본(페가수스 42) → <strong>플러스</strong>(더 가벼운 상위) → <strong>프리미엄</strong>(맥시멀 최상위). 보메로도 18 → 플러스 → 프리미엄으로 똑같이 올라갑니다. 한 가지 함정 — <strong>라이벌 플라이(Rival Fly)</strong>는 이름에 Fly가 붙지만 카본이 없는 가성비 템포화입니다.</p>
+
+<h2>2. 폼이 등급을 만든다 — Cushlon → ReactX → ZoomX → 카본</h2>
+
+<p>나이키는 미드솔 폼으로 등급이 갈립니다. 아래로 갈수록 가볍고 반발력이 강해지며 비싸집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Cushlon</strong></td><td>가성비 입문 EVA</td><td>라이벌 플라이</td></tr>
+    <tr><td><strong>ReactX</strong></td><td>안정적인 데일리 폼</td><td>페가수스 41·42 · 스트럭처</td></tr>
+    <tr><td><strong>ZoomX</strong></td><td>PEBA — 최고 반발·경량</td><td>보메로 · 페가수스 플러스 · Fly 전 라인</td></tr>
+    <tr><td><strong>+ Air Zoom / Air Pods</strong></td><td>에어 유닛으로 반발 추가</td><td>페가수스(에어)·프리미엄·알파플라이</td></tr>
+    <tr><td><strong>+ 카본 Flyplate</strong></td><td>레이싱 추진판</td><td>베이퍼·알파·줌·스트릭플라이</td></tr>
+  </tbody>
+</table>
+
+<p>요약하면 <strong>ZoomX가 나이키 최상위 폼</strong>입니다. 원래 베이퍼플라이 전용이던 ZoomX가 보메로·페가수스 플러스 같은 데일리로 내려오면서, "비싼 데일리"는 대부분 ZoomX를 씁니다. 카본 플레이트까지 더해지면 대회용 슈퍼슈즈입니다.</p>
+
+<h2>3. 나이키 러닝화 계급도 — 14종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 나이키 러닝화 14종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/nike-rival-fly-4"><strong>라이벌 플라이 4</strong></a></td><td>가성비 템포</td><td>Cushlon</td><td>13.9만</td><td>236g</td><td>최저가 입문 템포 트레이너</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41"><strong>페가수스 41</strong></a></td><td>입문 데일리</td><td>ReactX</td><td>15.9만</td><td>281g</td><td>검증된 만능, 할인 시 최고 가성비</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-42"><strong>페가수스 42</strong></a></td><td>입문 데일리</td><td>ReactX + 풀렝스 에어</td><td>16.9만</td><td>286g</td><td>첫 나이키 1순위, 와이드 정식 출시</td></tr>
+    <tr><td><a href="/shoes/nike-structure-26"><strong>스트럭처 26</strong></a></td><td>안정화</td><td>ReactX + 미드풋 서포트</td><td>16.9만</td><td>296g</td><td>나이키 유일 안정화, 발볼 옵션 풍부</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-18"><strong>보메로 18</strong></a></td><td>맥스 쿠션</td><td>ZoomX + ReactX</td><td>18.9만</td><td>298g</td><td>43mm 힐, 무릎 보호 최우선</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-plus"><strong>보메로 플러스</strong></a></td><td>프리미엄 쿠션</td><td>풀렝스 ZoomX</td><td>20.9만</td><td>289g</td><td>42mm, 푹신함 업그레이드</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-plus"><strong>페가수스 플러스</strong></a></td><td>스피드 데일리</td><td>풀렝스 ZoomX</td><td>21.9만</td><td>244g</td><td>244g 경량, 데일리+템포</td></tr>
+    <tr><td><a href="/shoes/nike-streakfly-2"><strong>스트릭플라이 2</strong></a></td><td>단거리 레이싱</td><td>ZoomX + 카본</td><td>21.9만</td><td>128g</td><td>128g, 5K·10K 전용 초경량</td></tr>
+    <tr><td><a href="/shoes/nike-zoom-fly-6"><strong>줌 플라이 6</strong></a></td><td>슈퍼트레이너</td><td>ZoomX + 카본</td><td>22.9만</td><td>248g</td><td>베이퍼 반값, 첫 카본 입문</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-premium"><strong>페가수스 프리미엄</strong></a></td><td>맥시멀 데일리</td><td>ZoomX+ReactX+에어</td><td>27.9만</td><td>308g</td><td>43mm 3중 폼, 데일리 끝판</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-premium"><strong>보메로 프리미엄</strong></a></td><td>회복용 맥스</td><td>ZoomX + 에어팟 4개</td><td>28.9만</td><td>326g</td><td>역대 최고 50mm 스택</td></tr>
+    <tr><td><a href="/shoes/nike-ultrafly"><strong>울트라플라이</strong></a></td><td>트레일 레이싱</td><td>ZoomX + 카본</td><td>29.9만</td><td>299g</td><td>트레일 최초 ZoomX+카본</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 78% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3"><strong>알파플라이 3</strong></a></td><td>최상위 레이싱</td><td>ZoomX+에어팟+카본</td><td>34.9만</td><td>201g</td><td>킵툼 세계기록 슈즈</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 러닝화·가장 무난</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 풀렝스 에어에 와이드까지, 나이키의 정석입니다. 41과의 차이는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>에, 42의 실착 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 리뷰</a>에 정리했습니다.</li>
+  <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(13.9만) 또는 할인 중인 <a href="/shoes/nike-pegasus-41">페가수스 41</a>.</li>
+  <li><strong>☁️ 푹신하게·무릎 보호</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(43mm). 더 푹신하면 <a href="/shoes/nike-vomero-plus">보메로 플러스</a>, 극한 회복용은 50mm <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>.</li>
+  <li><strong>🦶 평발·안정</strong> → <a href="/shoes/nike-structure-26">스트럭처 26</a>. 나이키 유일 안정화로 와이드 옵션도 있습니다. 다른 브랜드 안정화와 비교하려면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>를 보세요.</li>
+  <li><strong>⚡ 가볍게·조금 빠르게</strong> → <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>(244g ZoomX).</li>
+  <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 베이퍼 반값으로 카본을 경험합니다.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(166g) 또는 최상위 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>. 둘의 차이는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼 vs 알파 비교</a>에 있습니다.</li>
+  <li><strong>💨 5K·10K 단거리 PB</strong> → <a href="/shoes/nike-streakfly-2">스트릭플라이 2</a>(128g).</li>
+</ul>
+
+<h2>5. 발볼 — 나이키 토박스, 한국 러너는 꼭 확인</h2>
+
+<p>나이키의 가장 큰 약점이 <strong>좁은 토박스</strong>입니다. 발볼 넓은 한국 러너가 많은데, 나이키는 라인마다 폭이 크게 갈리므로 사기 전에 반드시 확인해야 합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>와이드 옵션 있음 (추천)</strong></td><td>페가수스 41 · 42 · 스트럭처 26 · 보메로 18 · 보메로 플러스</td></tr>
+    <tr><td><strong>표준 (보통)</strong></td><td>페가수스 42(72.3mm) · 베이퍼플라이 4(73.2mm) · 알파플라이 3</td></tr>
+    <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 프리미엄 · 페가수스 플러스 · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 넓으면 와이드 라인 또는 다른 브랜드</p>
+    <p>흥미롭게도 <strong>프리미엄·플러스 같은 비싼 라인일수록 토박스가 좁습니다.</strong> 발볼이 넓다면 와이드가 나오는 페가수스·스트럭처·보메로를 고르거나, 토박스가 넉넉한 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>·아식스를 함께 보세요. 발볼별 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
+  </div>
+</div>
+
+<h2>6. 가격 인플레 — 28만원 데일리의 시대</h2>
+
+<p>나이키 라인업을 볼 때 놓치기 쉬운 게 <strong>가격</strong>입니다. 같은 라인에서 접미사 하나로 10만원 이상 벌어집니다.</p>
+
+<ul>
+  <li><strong>페가수스</strong>: 42(16.9만) → 플러스(21.9만) → 프리미엄(27.9만)</li>
+  <li><strong>보메로</strong>: 18(18.9만) → 플러스(20.9만) → 프리미엄(28.9만)</li>
+  <li><strong>레이싱</strong>: 줌 플라이(22.9만) → 베이퍼플라이(30.9만) → 알파플라이(34.9만)</li>
+</ul>
+
+<p>중요한 건 <strong>"프리미엄"이 항상 더 좋은 건 아니라는 점</strong>입니다. 프리미엄은 폼을 겹쳐 무겁고(페가수스 프리미엄 308g, 보메로 프리미엄 326g) 토박스도 좁아집니다. 대부분의 러너에게는 <strong>기본 페가수스 42나 보메로 18이 가성비·실용성에서 더 낫습니다.</strong> 프리미엄은 "최대 쿠션·최대 회복"이라는 특정 목적이 분명할 때만 의미가 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'new-balance-running-shoes-lineup-tier-guide-2026',
     slug: 'new-balance-running-shoes-lineup-tier-guide-2026',
     title: '뉴발란스 러닝화 계급도 2026 — 숫자가 알려주는 전체 라인업 | 6x=안정·8x=중립·10xx=프리미엄, Fresh Foam X vs FuelCell 한 장 정리',
@@ -167,6 +328,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 러닝화 계급도</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
