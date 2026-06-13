@@ -29,17 +29,37 @@ export const novemberEvents: MarathonEvent[] = [
   },
   {
     id: 'sonkeechung-peace-marathon-2026',
-    name: '2026 손기정평화마라톤',
+    name: '2026 손기정평화마라톤 (제22회)',
     date: '2026-11-15',
     month: '11월',
-    location: '경기 고양종합운동장',
+    location: '고양종합운동장 (경기 고양)',
     region: '경기',
     distances: ['풀코스', '하프', '10K'],
     status: '접수중',
     isMajor: true,
     website: 'https://www.sonkeechungrun.com',
     description:
-      '약 2만 명 규모 고양 출발 제2자유로 코스. 2026년 일정 미발표(2026-06 기준) — 11월 둘째~셋째 일요일 개최 패턴상 11/8 또는 11/15 유력하며, 여기서는 셋째 일요일(11/15)로 잠정 표기. 접수는 통상 9월 시작(2025년 9/13). 공식 발표 시 확정 예정.',
+      '1936 베를린올림픽 금메달리스트 손기정 선생을 기리는 평화·통일 테마 대회(2005년 제1회, 2026년 제22회). 평소 차량전용인 제2자유로를 두 발로 달리는 국내 유일 코스로, 직선·평지라 기록 경신에 유리합니다. 약 2만 명 선착순으로 매년 조기 마감(2025년 9/13 오픈→일주일 내 마감). ※2026 일정 미발표(2026-06 기준) — 11/15는 11월 셋째 일요일 패턴 기준 잠정이며 접수는 통상 9월 시작입니다. 참가비도 2025년 기준으로, 공식 발표 시 확정 예정.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      courseDescription:
+        '고양종합운동장 출발, 제2자유로(자동차전용도로) 왕복. 직선·평지 위주 기록 코스로 풀코스 반환점은 현천IC·능곡IC. 11월 개최라 기온이 낮고 바람이 변수입니다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 60000 },
+        { distance: '하프', fee: 55000 },
+        { distance: '10K', fee: 50000 },
+      ],
+      timeLimits: [
+        { distance: '풀코스', hours: 5, minutes: 0 },
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 1, minutes: 30 },
+      ],
+      expectedParticipants: 20000,
+      startTime: '09:00',
+    },
   },
   {
     id: 'sangju-gotgam-marathon-2026',

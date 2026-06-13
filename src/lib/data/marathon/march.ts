@@ -51,11 +51,29 @@ export const marchEvents: MarathonEvent[] = [
     name: '2026 고양특례시 하프마라톤',
     date: '2026-03-08',
     month: '3월',
-    location: '경기 고양',
+    location: '고양종합운동장 (경기 고양)',
     region: '경기',
     distances: ['하프', '10K', '5K'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://www.goyangmarathon.com',
+    description:
+      '고양시체육회·중앙일보·JTBC가 공동 주최하는 봄 하프마라톤(주관 러너블). 고양종합운동장을 출발해 일산신도시 일대(경의로·호수로)를 도는 평지 코스로 약 1.5만 명 규모입니다. 2026년 대회는 3/8(일) 종료. JTBC 서울마라톤(가을)과 함께 데상트가 후원하는 JTBC 러닝 시리즈로, 봄에 한 번만 열립니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '고양종합운동장 출발·도착, 일산신도시 경의로·섬말다리·호수로를 잇는 평지 코스. 하프·10K·5K로 가족 참가에도 적합합니다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 70000 },
+        { distance: '10K', fee: 60000 },
+        { distance: '5K', fee: 40000 },
+      ],
+      expectedParticipants: 15000,
+      startTime: '08:00',
+    },
   },
   {
     id: 'mbn-bluerace-geoje-2026',
