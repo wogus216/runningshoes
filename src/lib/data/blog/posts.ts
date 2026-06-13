@@ -3,6 +3,155 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'hoka-running-shoes-lineup-tier-guide-2026',
+    slug: 'hoka-running-shoes-lineup-tier-guide-2026',
+    title: '호카 러닝화 계급도 2026 — 클리프톤·본디·마하·아라히, 맥스 쿠션으로 읽는 전체 라인업 | 데일리부터 카본 레이싱까지 한 장 정리',
+    description:
+      '호카 러닝화 10종을 라인(클리프톤 입문·본디 맥스쿠션·마하 스피드·아라히/가비오타 안정화·X시리즈 카본)과 폼 등급으로 한 장에. 마하 6 18.5만부터 테크톤 X 33.9만까지 가격·무게·스택 비교표 + 호카가 두꺼운데 가벼운 이유(메타로커) + "X"가 붙으면 뭐가 다른지 + 안정화 아라히 vs 가비오타까지 정리했습니다.',
+    thumbnail: '/images/blog/hoka-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['호카 러닝화', '호카 계급도', '러닝화 라인업', '러닝화 등급', '클리프톤', '본디', '마하', '아라히', '맥스 쿠션', '메타로커'],
+    faqs: [
+      { question: '호카는 왜 신발이 다 두꺼운가요?', answer: '호카는 "맥스 쿠션"의 원조 브랜드입니다. 두꺼운 스택(40~46mm)으로 무릎·관절 충격을 최대한 흡수하는 게 정체성이에요. 그런데 두꺼운데도 가벼운데, 비결이 두 가지입니다 — 가벼운 EVA 기반 폼과, 바닥을 둥글게 깎아 자연스럽게 굴러가게 하는 메타로커(MetaRocker) 지오메트리입니다.' },
+      { question: '호카 모델명에 "X"가 붙으면 뭐가 다른가요?', answer: 'X는 퍼포먼스를 강화한 상위 시리즈입니다. 로켓 X·씨엘로 X·테크톤 X는 카본 플레이트가 들어간 레이싱화이고, 마하 X는 PEBA를 더한 슈퍼트레이너입니다. 일반 라인(클리프톤·본디·마하)이 데일리라면, X 시리즈는 대회·빠른 훈련용이라고 보면 됩니다.' },
+      { question: '클리프톤이랑 본디는 뭐가 다른가요?', answer: '클리프톤은 가벼운 만능 데일리(275g), 본디는 최대 쿠션 끝판왕(303g)입니다. 매일 다양하게 쓸 거면 클리프톤, 무릎 보호와 푹신함이 최우선이면 본디입니다. 본디는 123mm 초광폭 플랫폼과 와이드 옵션으로 안정감도 더 좋습니다.' },
+      { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(299g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
+      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 본디·가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 클리프톤·마하·아라히는 표준입니다. 다만 로켓 X 같은 레이싱은 좁으니 주의하세요. 호카는 대부분 와이드 옵션을 제공하므로 발볼이 넓으면 와이드를 우선 확인하세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>호카는 "맥스 쿠션"의 원조</strong> — 모든 라인이 두꺼운 스택(40~46mm)이지만, 메타로커(둥근 바닥)로 의외로 가볍고 잘 굴러갑니다. 무릎 보호가 강점이에요.</li>
+    <li><strong>"X"가 붙으면 퍼포먼스 강화</strong> — 로켓 X·씨엘로 X·테크톤 X는 카본 레이싱, 마하 X는 PEBA 슈퍼트레이너입니다.</li>
+    <li><strong>라인이 곧 용도</strong> — 클리프톤(만능 데일리)·본디(맥스 쿠션)·마하(스피드)·아라히/가비오타(안정화).</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔶</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 호카 계급도 한 장</p>
+    <p>"클리프톤, 본디, 마하, 아라히… 이름만 봐선 뭐가 윗급인지 모르겠다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게·스택은 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> 계급도와 함께 보면 브랜드 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 호카 읽는 법 — 맥스 쿠션 + 메타로커 + "X"</h2>
+
+<p>호카의 정체성은 단 하나, <strong>맥스 쿠션</strong>입니다. 다른 브랜드가 입문은 얇게, 프리미엄은 두껍게 만든다면 <strong>호카는 처음부터 다 두껍습니다</strong>(40~46mm). 대신 두 가지로 무게를 잡아요 — 가벼운 EVA 기반 폼과, 바닥을 둥글게 깎아 굴러가게 하는 <strong>메타로커(MetaRocker)</strong>. 그래서 두꺼운데 둔하지 않습니다.</p>
+
+<p>라인 이름으로 용도를, "X" 유무로 등급을 읽으면 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>클리프톤 Clifton</strong></td><td>입문·만능 데일리</td><td>"처음이면 클리프톤" — 가벼운 맥스 쿠션</td></tr>
+    <tr><td><strong>본디 Bondi</strong></td><td>맥스 쿠션 끝판왕</td><td>"무릎 보호 최우선" — 가장 두툼</td></tr>
+    <tr><td><strong>마하 Mach</strong></td><td>경량 스피드 데일리</td><td>"가볍게 빠르게" — 템포런</td></tr>
+    <tr><td><strong>아라히·가비오타</strong></td><td>안정화</td><td>아라히=경량 / 가비오타=맥스 쿠션</td></tr>
+    <tr><td><strong>○○ X (로켓·씨엘로·테크톤)</strong></td><td>카본 레이싱</td><td>"X = 퍼포먼스 강화" — 대회용</td></tr>
+  </tbody>
+</table>
+
+<h2>2. 폼이 등급을 만든다 — CMEVA → 슈퍼크리티컬 → PEBA</h2>
+
+<p>호카도 폼으로 등급이 갈립니다. 데일리는 EVA, 레이싱은 PEBA입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>CMEVA</strong></td><td>전통 압축 EVA, 안정적</td><td>클리프톤 · 아라히 · 스피드고트</td></tr>
+    <tr><td><strong>슈퍼크리티컬 EVA</strong></td><td>가볍고 탄력 있는 데일리</td><td>본디 · 마하</td></tr>
+    <tr><td><strong>PEBA (듀얼)</strong></td><td>레이싱 최상위 반발</td><td>마하 X · 로켓 X · 씨엘로 X · 테크톤 X</td></tr>
+    <tr><td><strong>+ 카본 플레이트</strong></td><td>추진력 강화</td><td>로켓 X · 씨엘로 X · 테크톤 X</td></tr>
+  </tbody>
+</table>
+
+<p>중요한 구분 — <strong>X 시리즈 중에서도 로켓 X·씨엘로 X·테크톤 X만 카본 플레이트</strong>가 들어간 풀 레이싱화입니다. 마하 X는 PEBA를 더한 슈퍼트레이너로, 카본 없이 빠른 훈련에 쓰는 한 단계 아래 포지션이에요.</p>
+
+<h2>3. 호카 러닝화 계급도 — 10종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 호카 러닝화 10종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>스택(힐)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/hoka-mach-6"><strong>마하 6</strong></a></td><td>경량 스피드 데일리</td><td>슈퍼크리티컬 EVA</td><td>18.5만</td><td>232g</td><td>36mm</td></tr>
+    <tr><td><a href="/shoes/hoka-clifton-10"><strong>클리프톤 10</strong></a></td><td>입문·만능 데일리</td><td>CMEVA</td><td>19.9만</td><td>275g</td><td>44mm</td></tr>
+    <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>CMEVA (소프트)</td><td>19.9만</td><td>259g</td><td>39mm</td></tr>
+    <tr><td><a href="/shoes/hoka-speedgoat-6"><strong>스피드고트 6</strong></a></td><td>만능 트레일</td><td>CMEVA</td><td>20.5만</td><td>278g</td><td>40mm</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9"><strong>본디 9</strong></a></td><td>맥스 쿠션 끝판</td><td>슈퍼크리티컬 EVA</td><td>22.9만</td><td>303g</td><td>41mm</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>EVA 듀얼</td><td>23.9만</td><td>299g</td><td>35mm</td></tr>
+    <tr><td><a href="/shoes/hoka-mach-x-3"><strong>마하 X 3</strong></a></td><td>슈퍼트레이너</td><td>PEBA + 슈퍼크리티컬</td><td>24.9만</td><td>264g</td><td>43mm</td></tr>
+    <tr><td><a href="/shoes/hoka-rocket-x-3"><strong>로켓 X 3</strong></a></td><td>카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>29.9만</td><td>220g</td><td>40mm</td></tr>
+    <tr><td><a href="/shoes/hoka-cielo-x1"><strong>씨엘로 X1</strong></a></td><td>최상위 카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>32.9만</td><td>208g</td><td>46mm</td></tr>
+    <tr><td><a href="/shoes/hoka-tecton-x-3"><strong>테크톤 X 3</strong></a></td><td>카본 트레일 레이싱</td><td>듀얼 PEBA + 카본</td><td>33.9만</td><td>275g</td><td>38mm</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 호카·만능 데일리</strong> → <a href="/shoes/hoka-clifton-10">클리프톤 10</a>. 44mm 맥스 쿠션인데 275g으로 가벼운 호카의 기준점입니다.</li>
+  <li><strong>☁️ 무릎 보호·최대 쿠션</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>. 123mm 초광폭 플랫폼에 와이드 옵션, 관절 부담이 큰 러너의 든든한 선택. 맥스 쿠션이 무릎에 왜 좋은지는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 무릎 보호 가이드</a>에.</li>
+  <li><strong>⚡ 가볍게·빠르게</strong> → <a href="/shoes/hoka-mach-6">마하 6</a>(232g). 통기성 최상, 데일리부터 템포까지.</li>
+  <li><strong>🦶 평발·안정</strong> → 가벼운 <a href="/shoes/hoka-arahi-8">아라히 8</a> 또는 든든한 <a href="/shoes/hoka-gaviota-6">가비오타 6</a>(아래 5번 참고). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
+  <li><strong>🏃 빠른 훈련(카본 없이)</strong> → <a href="/shoes/hoka-mach-x-3">마하 X 3</a>. PEBA 슈퍼트레이너로 템포·인터벌에.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(220g) 또는 최상위 <a href="/shoes/hoka-cielo-x1">씨엘로 X1</a>(46mm 맥스 스택 카본).</li>
+  <li><strong>⛰️ 트레일</strong> → 만능 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(베스트셀러) 또는 카본 <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>.</li>
+</ul>
+
+<h2>5. 호카 안정화 — 아라히 vs 가비오타</h2>
+
+<p>호카는 안정화가 둘이라 헷갈리기 쉬운데, 성격이 명확히 갈립니다. 호카 안정화는 단단한 플라스틱 포스트 대신 <strong>프레임(J-Frame/H-Frame)으로 자연스럽게 지지</strong>하는 방식이라 과교정 느낌이 적은 게 특징이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>성격</th><th>무게</th><th>이런 분께</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>259g</td><td>가볍게 지지받고 싶은 러너, 데일리</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>299g</td><td>지지 + 푹신함 둘 다, 발볼 넓은 러너</td></tr>
+  </tbody>
+</table>
+
+<p>가볍게 안정감만 더하고 싶으면 <strong>아라히</strong>, 무릎 보호와 두툼한 쿠션까지 원하면 <strong>가비오타</strong>입니다. 둘 다 와이드 옵션이 있어 발볼 넓은 한국 러너에게 무난합니다.</p>
+
+<h2>6. 호카의 정체성 — 두꺼운데 가볍다</h2>
+
+<p>호카 계급도에서 꼭 봐야 할 숫자가 <strong>스택 대비 무게</strong>입니다. 보통 스택이 두꺼우면 무겁기 마련인데, 호카는 메타로커와 경량 폼으로 이 공식을 깹니다.</p>
+
+<ul>
+  <li><strong>클리프톤 10</strong>: 44mm 맥스 스택인데 <strong>275g</strong> — 경쟁 맥스 쿠션화보다 가볍습니다.</li>
+  <li><strong>씨엘로 X1</strong>: 46mm 카본 레이싱인데 <strong>208g</strong> — 두툼한 레이서.</li>
+  <li><strong>본디 9</strong>: 303g으로 가장 무겁지만, 그만큼 123mm 초광폭에 가장 든든한 안정감.</li>
+</ul>
+
+<p>그래서 호카는 <strong>"무릎·관절이 걱정되는데 둔한 신발은 싫은"</strong> 러너에게 특히 잘 맞습니다. 두꺼운 쿠션의 보호와 메타로커의 경쾌함을 동시에 가져가니까요. 발볼은 본디·가비오타가 넓고, 대부분 와이드 옵션이 있어 발볼 넓은 한국 러너도 대응됩니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'asics-running-shoes-lineup-tier-guide-2026',
     slug: 'asics-running-shoes-lineup-tier-guide-2026',
     title: '아식스 러닝화 계급도 2026 — 카야노·님버스·노바블라스트·메타스피드, GEL부터 FF Blast까지 전체 라인업 | 입문부터 슈퍼슈즈까지 한 장 정리',
@@ -164,7 +313,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -325,7 +474,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -496,7 +645,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
