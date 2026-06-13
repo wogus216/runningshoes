@@ -194,12 +194,13 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://dongma.club/',
     description:
-      '동아일보 주최, World Athletics 엘리트 라벨. 유네스코 신라 유적(첨성대·황룡사지) 통과 코스. 동마 가을 시리즈 마무리.',
+      '동아일보 주최, World Athletics 엘리트 라벨. 유네스코 신라 유적(대릉원·첨성대·동궁과 월지·황룡사지)을 통과하는 평지 순환 코스로 PB 친화적입니다. 정원 1.6만 명(일반 9천 + 동마클럽 매니아 7천)으로 동마 가을 시리즈를 마무리합니다. 서울·공주백제·경주 동아 3개 대회를 모두 완주하면 런저니 메달이 별도 수여됩니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
       certification: 'IAAF',
-      courseDescription: '경주 유적지 통과 평지 풀코스. PB 친화적.',
+      courseDescription:
+        '경주시민운동장 출발·귀환 순환 코스. 5~16km 구간에 대릉원(천마총)·첨성대·동궁과 월지(안압지)·반월성·황룡사지 등 신라 유적이 밀집합니다. 획득고도 약 146m로 급경사 없는 평탄 코스이나, 16~24km 북천 오르막과 후반 기복이 변수입니다.',
     },
     raceInfo: {
       entryFees: [
@@ -207,7 +208,16 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '하프', fee: 50000 },
         { distance: '10K', fee: 40000 },
       ],
+      expectedParticipants: 16000,
       startTime: '08:00',
+    },
+    logistics: {
+      publicTransport:
+        'KTX·SRT는 경주역(2023.12 신경주역에서 역명 변경, 건천읍 외곽) 하차 후 시내버스(50·60번)나 택시로 경주시민운동장까지 이동합니다.',
+      parking:
+        '경주시민운동장 진입로·코스 구간은 주차 금지. 지정 주차장(경주 예술의전당·시립도서관)만 이용하며, 교통 통제 해제 전에는 출차가 어렵습니다.',
+      shuttle:
+        '서울 출발 왕복 셔틀버스 운영(2025년 기준). 2026 운영 여부는 동마클럽 별도 공지로, 조기 마감되니 사전 확인이 필요합니다.',
     },
   },
   {
