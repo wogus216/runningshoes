@@ -3,6 +3,306 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'new-balance-running-shoes-lineup-tier-guide-2026',
+    slug: 'new-balance-running-shoes-lineup-tier-guide-2026',
+    title: '뉴발란스 러닝화 계급도 2026 — 숫자가 알려주는 전체 라인업 | 6x=안정·8x=중립·10xx=프리미엄, Fresh Foam X vs FuelCell 한 장 정리',
+    description:
+      '뉴발란스 러닝화 9종을 번호 체계(6x 안정·8x 중립·10xx 프리미엄)와 폼 기술(Fresh Foam X·인피니온·FuelCell·PEBA) 2축으로 한 장에. 880 입문부터 SC Elite 레이싱까지 가격·무게·스택·와이드 옵션 비교표 + 발볼 넓은 한국 러너를 위한 선택 로드맵. 뉴발 안정화가 860뿐인 이유와 대안까지 정직하게 정리했습니다.',
+    thumbnail: '/images/blog/new-balance-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['뉴발란스 러닝화', '뉴발란스 계급도', '러닝화 라인업', '러닝화 등급', '뉴발란스 번호 체계', '1080', '860', '880', 'FuelCell', 'Fresh Foam X'],
+    faqs: [
+      { question: '뉴발란스 러닝화 숫자는 무슨 뜻인가요?', answer: '모델 번호의 끝 두 자리가 기능을 나타냅니다. 6x(860)는 안정화, 8x(880)는 중립 데일리, 10xx(1080)는 프리미엄 쿠션입니다. 앞자리가 클수록 더 고급 폼·쿠션 기술이 들어갑니다. 단 FuelCell 레이싱 라인(레벨·SC Trainer·SC Elite)은 번호 대신 이름으로 구분합니다.' },
+      { question: '뉴발란스 안정화는 뭘 사야 하나요?', answer: '뉴발란스 현행 안정화는 사실상 860 한 줄(V14·V15)뿐입니다. 평발·과내전이라면 860으로 시작하고, 더 강한 교정이나 더 넓은 라인업이 필요하면 아식스 카야노·브룩스 아드레날린 GTS 같은 안정화 전문 라인을 함께 보세요.' },
+      { question: '1080과 880은 뭐가 다른가요?', answer: '둘 다 중립 쿠션이지만 1080(10xx)이 상위 등급입니다. 1080 V15는 인피니온 폼으로 216g까지 경량화된 프리미엄, 880 V15는 Fresh Foam X에 40mm 맥시멀 스택을 얹은 입문~데일리입니다. 가격은 1080이 2만원 비쌉니다.' },
+      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스에 2E(약간 넓음)·4E(넓음) 옵션이 있고, 특히 860 V14는 Narrow/표준/2E/X-Wide 4가지 발볼을 제공합니다. 레벨 V5는 와이드가 없지만 토박스 자체가 넓습니다.' },
+      { question: 'Fresh Foam X와 FuelCell은 어떻게 다른가요?', answer: 'Fresh Foam X는 부드럽고 안정적인 EVA 기반 폼으로 데일리·쿠션·안정화 라인(880·1080·860)에 쓰입니다. FuelCell은 반발력 중심의 PEBA 기반 폼으로 스피드·레이싱 라인(레벨·SC Trainer·SC Elite)에 들어갑니다. 푹신함을 원하면 Fresh Foam X, 튕기는 반발을 원하면 FuelCell입니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>뉴발란스는 숫자만 읽으면 끝</strong> — 끝 두 자리가 6x=안정화(860)·8x=중립(880)·10xx=프리미엄(1080), 앞자리가 클수록 상위 등급입니다. 레이싱은 번호 대신 이름(레벨·SC).</li>
+    <li><strong>축은 두 개</strong> — 번호(용도) × 폼 기술(Fresh Foam X는 푹신·안정 / FuelCell은 반발·스피드). 이 표 하나로 9종이 정리됩니다.</li>
+    <li><strong>발볼 넓은 한국 러너에게 유리</strong> — 2E·4E 와이드 옵션이 풍부합니다. 단 뉴발 안정화는 사실상 860 하나뿐이라, 강한 교정이 필요하면 카야노·아드레날린도 함께 보세요.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔢</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 뉴발란스 계급도 한 장</p>
+    <p>"뉴발란스 러닝화 뭐가 뭔지 모르겠다"는 분을 위한 길잡이입니다. 추천 순위를 매기는 글이 아니라, <strong>숫자와 폼 기술로 전체 라인업을 한 번에 이해</strong>시키는 지도예요. 가격·무게·스택·와이드 옵션은 모두 한국 공식가와 RunRepeat 실측 기준이며, 각 모델은 상세 페이지로 바로 연결됩니다.</p>
+  </div>
+</div>
+
+<h2>1. 뉴발란스 숫자 읽는 법 — 끝 두 자리가 용도다</h2>
+
+<p>뉴발란스가 헷갈리는 이유는 모델명이 죄다 숫자라서입니다. 그런데 규칙은 단순합니다. <strong>끝 두 자리가 신발의 용도</strong>, <strong>앞자리가 등급(쿠션 레벨)</strong>이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>끝 두 자리</th><th>용도</th><th>대표 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>6x</strong></td><td>안정화 (과내전 지지)</td><td>860</td></tr>
+    <tr><td><strong>8x</strong></td><td>중립 데일리</td><td>880</td></tr>
+    <tr><td><strong>10xx</strong></td><td>프리미엄 중립 쿠션</td><td>1080</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 앞자리가 클수록 위 등급입니다. 같은 중립이라도 <strong>880(8백번대)보다 1080(천번대)</strong>이 더 두껍고 고급 폼을 씁니다. 여기까지가 'Fresh Foam X 라인'의 번호 규칙이고, <strong>스피드·레이싱은 번호를 버리고 이름으로 갑니다</strong> — 레벨(Rebel), SC Trainer, SC Elite. 이름이 붙으면 "반발력 중심 FuelCell 라인"이라고 보면 됩니다.</p>
+
+<h2>2. 폼이 두 갈래다 — Fresh Foam X vs FuelCell</h2>
+
+<p>번호만큼 중요한 두 번째 축이 미드솔 폼입니다. 뉴발란스 러닝화는 크게 네 종류 폼을 쓰는데, 성격이 확실히 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Fresh Foam X</strong></td><td>부드럽고 안정적 (EVA 기반)</td><td>880 · 1080 V14 · 860</td></tr>
+    <tr><td><strong>인피니온(Infinion)</strong></td><td>질소 주입 슈퍼크리티컬 — 가볍고 탄성↑</td><td>1080 V15</td></tr>
+    <tr><td><strong>FuelCell</strong></td><td>반발 중심 (PEBA 블렌드)</td><td>레벨 · SC Trainer · SC Elite</td></tr>
+    <tr><td><strong>PEBA + EVA 블렌드</strong></td><td>바운시한 데일리</td><td>발로스</td></tr>
+  </tbody>
+</table>
+
+<p>요약하면 <strong>푹신·안정을 원하면 Fresh Foam X 계열, 튕기는 반발·스피드를 원하면 FuelCell 계열</strong>입니다. 1080 V15만 예외적으로 인피니온이라는 신소재로 갈아타 전작보다 69g 가벼워졌다는 점이 포인트예요.</p>
+
+<h2>3. 뉴발란스 러닝화 계급도 — 9종 한눈에</h2>
+
+<p>위 두 축(번호 × 폼)으로 현재 한국에서 살 수 있는 뉴발란스 러닝화 9종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>분류</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/new-balance-880-v15"><strong>880 V15</strong></a></td><td>입문·데일리</td><td>Fresh Foam X</td><td>18.9만</td><td>286g</td><td>40mm 맥시멀 스택, 첫 러닝화</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 가성비, 발볼 4옵션</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>330g</td><td>넓어진 힐, 장거리 안정</td></tr>
+    <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>18.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v14"><strong>1080 V14</strong></a></td><td>프리미엄 쿠션</td><td>Fresh Foam X</td><td>19.9만</td><td>285g</td><td>구름 같은 클래식 부드러움</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>216g</td><td>69g 경량화, 플래그십</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-trainer-v3"><strong>SC Trainer V3</strong></a></td><td>슈퍼트레이너</td><td>FuelCell + 카본</td><td>24.9만</td><td>278g</td><td>카본 훈련화, 마라톤 준비</td></tr>
+    <tr><td><a href="/shoes/new-balance-balos-v1"><strong>발로스 V1</strong></a></td><td>바운시 데일리</td><td>PEBA 블렌드</td><td>25.9만</td><td>261g</td><td>레이싱 외 유일 PEBA, 통통</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-elite-v5"><strong>SC Elite V5</strong></a></td><td>레이싱</td><td>100% PEBA + 카본</td><td>31.9만</td><td>198g</td><td>슈퍼슈즈, 넓은 토박스</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 러닝 입문 첫 신발</strong> → <a href="/shoes/new-balance-880-v15">880 V15</a>. 40mm 스택으로 무릎 충격을 확실히 잡고, 2E 와이드까지 있어 발볼 걱정이 없습니다. 18.9만원에 600km 내구성으로 km당 약 315원.</li>
+  <li><strong>🦶 평발·과내전이라 지지가 필요</strong> → <a href="/shoes/new-balance-860-v14">860 V14</a>(가성비·발볼 4옵션) 또는 <a href="/shoes/new-balance-860-v15">860 V15</a>(넓어진 힐·장거리). 뉴발 안정화는 이 860 한 줄이 전부입니다(아래 8번 참고).</li>
+  <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 216g까지 가벼워져 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
+  <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓어 와이드 없이도 발볼이 편합니다.</li>
+  <li><strong>🏃 마라톤 훈련(카본 입문)</strong> → <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>. 풀카본 슈퍼트레이너로 레이스 감각을 훈련에서 미리 잡습니다.</li>
+  <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>. 198g 100% PEBA 슈퍼슈즈. 토박스가 74.5mm로 베이퍼플라이·알파플라이보다 넓어 발볼 넓은 러너에게 거의 유일한 선택지입니다.</li>
+  <li><strong>🎈 바운시한 프리미엄 데일리</strong> → <a href="/shoes/new-balance-balos-v1">발로스 V1</a>. 레이싱 외 유일하게 PEBA를 담은 통통 튀는 데일리. 다만 25.9만원으로 가격이 부담입니다.</li>
+</ul>
+
+<h2>5. 발볼 넓은 한국 러너 — 와이드 옵션 정리</h2>
+
+<p>뉴발란스가 한국에서 사랑받는 진짜 이유 중 하나가 <strong>발볼 옵션</strong>입니다. 토박스가 좁기로 유명한 나이키와 달리, 주요 모델에 2E·4E 와이드가 있어요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>발볼 옵션</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>860 V14</td><td>Narrow / 표준(D) / 2E / X-Wide</td><td>발볼 옵션 최강 4종</td></tr>
+    <tr><td>880 V15</td><td>표준(D) / 2E</td><td>입문 와이드</td></tr>
+    <tr><td>1080 V15</td><td>표준(D) / 2E / 4E</td><td>플래그십 와이드</td></tr>
+    <tr><td>1080 V14</td><td>표준(D) / 2E</td><td>D는 토박스 좁음 → 2E 권장</td></tr>
+    <tr><td>발로스 V1</td><td>표준(D) / 2E</td><td>—</td></tr>
+    <tr><td>레벨 V5</td><td>표준(D)만</td><td>토박스 75mm로 넓어 D로도 여유</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 넓으면 무조건 2E부터</p>
+    <p>특히 <strong>1080 V14는 표준(D)의 토박스가 68mm 미만으로 좁습니다.</strong> 발볼 넓은 한국 러너는 2E 와이드를 선택하세요. 발볼·평발 전반은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a> 가이드에 11종 토박스 실측이 정리돼 있습니다.</p>
+  </div>
+</div>
+
+<h2>6. 1080 V14 vs V15, 860 V14 vs V15 — 세대 차이</h2>
+
+<p>같은 모델의 세대 차이가 의외로 큽니다. 두 라인 모두 최근 세대에서 성격이 꽤 바뀌었어요.</p>
+
+<ul>
+  <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(216g, 인피니온)으로 <strong>69g 경량화</strong>. 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
+  <li><strong>860</strong>: V14(295g, 메디얼 포스트, 발볼 4옵션) → V15(330g, 이중 밀도 + 넓어진 힐). 발볼 옵션은 V14가, 장거리 힐 안정감은 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
+</ul>
+
+<h2>7. 정직하게 — 뉴발란스 안정화는 사실 860 하나뿐</h2>
+
+<p>"안정화 하면 뉴발란스"라는 인식이 있지만, 데이터로 보면 <strong>뉴발란스의 진짜 강점은 안정화가 아니라 중립 쿠션(1080)과 레이싱(SC) 라인</strong>입니다. 현행 안정화는 860 한 줄(V14·V15)이 전부예요. 비교해 보면 차이가 뚜렷합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>브랜드</th><th>현행 안정화 라인</th><th>층위</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>아식스</td><td>GT-1000 · GT-2000 · 카야노</td><td>입문~프리미엄 3단계</td></tr>
+    <tr><td>브룩스</td><td>아드레날린 GTS · 글리세린 GTS</td><td>경량~맥스쿠션</td></tr>
+    <tr><td><strong>뉴발란스</strong></td><td><strong>860 (V14·V15)</strong></td><td><strong>사실상 1줄</strong></td></tr>
+  </tbody>
+</table>
+
+<p>그러니 평발·과내전이 확실하고 <strong>강한 교정이나 여러 선택지</strong>가 필요하다면, 860만 보지 말고 안정화 전문 라인을 함께 비교하세요. 어떤 지지 방식이 내게 맞는지부터 정하는 게 순서입니다 — <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">평발·과내전 안정화 자가진단 가이드</a>에서 4대 지지 방식과 와이드 옵션을 정리했고, 860·카야노·글리세린 GTS를 직접 맞붙인 <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">안정화 3강 비교</a>도 참고가 됩니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
+  <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
+  <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
+    id: 'stability-shoes-self-diagnosis-fit-guide-2026',
+    slug: 'stability-shoes-self-diagnosis-fit-guide-2026',
+    title: '평발인데 안정화 뭐 신지? — 한국 러너 과내전 자가진단 + 안정화 4대 지지 방식 + 와이드 옵션 총정리 2026',
+    description:
+      '"내가 안정화가 필요한가?"부터. 신발 밑창 마모·무릎 안쪽 통증으로 하는 과내전 자가진단, 뉴발 860·아식스 카야노·브룩스 아드레날린의 지지 방식(Stability Plane·FLUIDSUPPORT·GuideRails)이 어떻게 다른지, 발볼 넓은 한국 러너를 위한 D/2E/4E 와이드 옵션 매트릭스까지. 추천 리스트를 보기 전에 읽는 안정화 길잡이입니다.',
+    thumbnail: '/images/blog/stability-shoes-self-diagnosis-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['안정화 러닝화', '평발 러닝화', '과내전', '오버프로네이션', '와이드 러닝화', '발볼 넓은 발', '카야노', '뉴발란스 860', '아드레날린 GTS', '러닝 부상 예방'],
+    faqs: [
+      { question: '제가 안정화가 필요한지 어떻게 아나요?', answer: '세 가지를 보세요. ① 평소 신발 밑창이 안쪽(엄지쪽)부터 닳는다 ② 달리고 나면 무릎·정강이 안쪽이 아프다 ③ 맨발로 섰을 때 발 안쪽 아치가 바닥에 닿는다(평발). 두 개 이상 해당하면 과내전 가능성이 높아 안정화가 도움이 됩니다. 정확한 진단은 러닝 전문 매장의 보행 분석이나 정형외과가 확실합니다.' },
+      { question: '중립인데 안정화를 신으면 안 되나요?', answer: '권장하지 않습니다. 과내전이 없는 발에 강한 지지가 들어가면 자연스러운 움직임을 방해해 오히려 발목·무릎에 부담이 될 수 있습니다(과교정). 본인이 중립이라면 중립 쿠션화가 맞습니다. 안정화는 "지지가 필요한 발"을 위한 신발입니다.' },
+      { question: '안정화 지지 방식이 다 같은 거 아닌가요?', answer: '다릅니다. 크게 ① 단단한 판으로 받치는 방식(뉴발 860의 Stability Plane·메디얼 포스트) ② 적응형 가이드(아식스 카야노 FLUIDSUPPORT) ③ 양옆 가드레일(브룩스 GuideRails) ④ 경량 프레임(호카 아라히 J-Frame)으로 나뉩니다. 강한 교정을 원하면 ①, 부드럽고 자연스러운 지지를 원하면 ③④가 맞습니다.' },
+      { question: '발볼 넓은데 안정화 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스 860 V14가 Narrow/표준/2E/X-Wide 4가지로 가장 폭넓고, 아식스 카야노도 2E·4E를 제공합니다. 브룩스 글리세린 GTS는 토박스 자체가 넓은 편입니다. 발볼 넓은 한국 러너라면 안정화일수록 와이드를 우선 고려하세요.' },
+      { question: '안정화는 무겁고 둔하지 않나요?', answer: '전통 안정화(860 330g, 카야노)는 무거운 편이 맞습니다. 하지만 호카 아라히(J-Frame)나 소커니 가이드처럼 300g 안팎의 가벼운 안정화도 늘고 있습니다. 무게가 신경 쓰이면 경량 안정화 쪽을 보세요. 다만 강한 과내전일수록 지지력이 우선입니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>순서가 중요합니다</strong> — "어떤 안정화가 좋아요?"보다 먼저 "내가 안정화가 필요한가?"를 확인하세요. 밑창 마모·무릎 안쪽 통증·평발 3가지로 자가진단합니다.</li>
+    <li><strong>지지 방식이 4가지로 갈립니다</strong> — 단단한 판(뉴발 860)·적응형 가이드(카야노)·양옆 가드레일(브룩스)·경량 프레임(호카 아라히). 강도와 무게가 다릅니다.</li>
+    <li><strong>발볼 넓은 한국 러너는 와이드부터</strong> — 860 V14가 4옵션으로 최강, 카야노 2E·4E. 추천 순위보다 "내 발에 맞는 방식·폭"을 먼저 고르는 길잡이입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🧭</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 추천 리스트 전에 읽는 길잡이</p>
+    <p>안정화 추천 순위는 이미 많습니다. 이 글은 그 전에 필요한 <strong>"진단 → 지지 방식 이해 → 발볼 매칭"</strong> 3단계를 다룹니다. 구체적인 추천 순위가 필요하면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">평발·과내전 안정화 추천 2026</a>으로, 최상위 3종 직접 비교는 <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">안정화 3강 비교</a>로 이어집니다.</p>
+  </div>
+</div>
+
+<h2>1단계. 나는 안정화가 필요한가? — 과내전 자가진단</h2>
+
+<p>안정화(stability) 러닝화는 <strong>과내전(overpronation)</strong>, 즉 착지할 때 발이 안쪽으로 과하게 무너지는 발을 잡아주는 신발입니다. 모두에게 좋은 게 아니라, <strong>지지가 필요한 발</strong>을 위한 신발이에요. 먼저 세 가지를 체크하세요.</p>
+
+<table>
+  <thead>
+    <tr><th>체크 항목</th><th>과내전 신호</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>신발 밑창 마모</strong></td><td>안쪽(엄지발가락 쪽)부터 닳는다</td></tr>
+    <tr><td><strong>달린 뒤 통증</strong></td><td>무릎 안쪽·정강이 안쪽이 아프다</td></tr>
+    <tr><td><strong>발 아치</strong></td><td>맨발로 서면 안쪽 아치가 바닥에 닿는다(평발 경향)</td></tr>
+  </tbody>
+</table>
+
+<p>두 개 이상 해당하면 과내전일 가능성이 높고, 안정화가 도움이 됩니다. 한국 러너는 평발 비율이 높은 편이라 안정화 수요가 특히 큽니다. 내전 유형의 원리와 분류는 <a href="/blog/pronation-type-running-shoe-guide-2026">내전(프로네이션) 유형별 가이드</a>에 자세히 정리했습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">중립이라면 안정화는 오히려 독</p>
+    <p>위 항목에 거의 해당하지 않는다면 당신은 <strong>중립(neutral)</strong>일 가능성이 큽니다. 중립 발에 강한 안정화 지지가 들어가면 자연스러운 움직임을 방해해 발목·무릎에 부담이 될 수 있어요(과교정). 무릎이 아프다고 무조건 안정화가 답은 아닙니다 — 무릎 통증의 원인별 신발 선택은 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>를 참고하세요.</p>
+  </div>
+</div>
+
+<h2>2단계. 안정화 4대 지지 방식 — 같은 안정화가 아니다</h2>
+
+<p>"안정화"라고 다 같지 않습니다. <strong>발을 어떻게 잡아주느냐</strong>가 브랜드마다 다르고, 이게 착화감과 교정 강도를 좌우합니다. 크게 네 갈래예요.</p>
+
+<table>
+  <thead>
+    <tr><th>지지 방식</th><th>원리</th><th>대표 신발</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>단단한 판·포스트</strong></td><td>Stability Plane / 메디얼 포스트로 안쪽을 물리적으로 받침</td><td><a href="/shoes/new-balance-860-v15">뉴발 860</a></td><td>교정 강도 높음, 묵직</td></tr>
+    <tr><td><strong>적응형 가이드</strong></td><td>FLUIDSUPPORT — 필요할 때만 단단해지는 적응형 미드솔</td><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노</a></td><td>프리미엄, 부드러운 교정</td></tr>
+    <tr><td><strong>양옆 가드레일</strong></td><td>GuideRails — 무릎 과도한 움직임을 양옆에서 제한</td><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS</a></td><td>자연스러움, 비-과교정</td></tr>
+    <tr><td><strong>경량 프레임</strong></td><td>J-Frame / Center Path — 가벼운 구조적 지지</td><td><a href="/shoes/hoka-arahi-8">호카 아라히</a> · <a href="/shoes/saucony-guide-18">소커니 가이드</a></td><td>가벼움, 데일리</td></tr>
+  </tbody>
+</table>
+
+<ul>
+  <li><strong>강한 교정이 필요하다(심한 평발·과내전)</strong> → 단단한 판 방식의 <a href="/shoes/new-balance-860-v15">860</a>이나, 프리미엄 적응형 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>. 카야노 세대 차이는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33</a>에 정리돼 있습니다.</li>
+  <li><strong>부드럽고 자연스러운 지지를 원한다</strong> → 가드레일 방식의 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS</a>, 또는 쿠션이 더 두툼한 <a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS</a>.</li>
+  <li><strong>가볍게 데일리로</strong> → 경량 프레임의 <a href="/shoes/hoka-arahi-8">아라히</a>·<a href="/shoes/saucony-guide-18">가이드</a>. "안정화는 무겁다"는 편견을 깨는 300g 안팎 라인입니다.</li>
+</ul>
+
+<h2>3단계. 발볼 — 한국 러너 와이드 옵션 매트릭스</h2>
+
+<p>지지 방식을 골랐으면 마지막은 <strong>발볼</strong>입니다. 발볼 넓은 한국 러너에게 안정화는 특히 중요한데, 지지 구조가 들어가면서 토박스가 조여질 수 있기 때문이에요. 다행히 안정화 라인은 와이드 옵션이 풍부합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>지지 방식</th><th>발볼 옵션</th><th>무게</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td><strong>Narrow / 표준 / 2E / X-Wide</strong></td><td>295g</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td>표준 / 2E</td><td>330g</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>FLUIDSUPPORT</td><td>표준 / 2E / 4E</td><td>중량급</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>표준 토박스가 넓음</td><td>쿠션급</td></tr>
+    <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>J-Frame</td><td>표준 / 와이드</td><td>경량</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 넓으면 860 V14의 4옵션이 압도적</p>
+    <p>발볼 폭이 고민이라면 <strong>뉴발란스 860 V14의 Narrow/표준/2E/X-Wide 4단계</strong>가 가장 정밀하게 맞출 수 있습니다. 발볼·평발 전반의 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 토박스 실측이 있으니 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>그래서 뭘 사지? — 상황별 정리</h2>
+
+<ul>
+  <li><strong>처음 안정화 + 발볼 넓음 + 가성비</strong> → <a href="/shoes/new-balance-860-v14">뉴발 860 V14</a>(17.9만, 발볼 4옵션).</li>
+  <li><strong>강한 교정 + 프리미엄</strong> → <a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a>.</li>
+  <li><strong>자연스러운 지지 + 두툼한 쿠션</strong> → <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>.</li>
+  <li><strong>가벼운 안정화 + 데일리</strong> → <a href="/shoes/hoka-arahi-8">호카 아라히 8</a> · <a href="/shoes/saucony-guide-18">소커니 가이드 18</a>.</li>
+  <li><strong>뉴발란스 라인업 전체가 궁금</strong> → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 안정화 외 라인까지 한 장에.</li>
+</ul>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🏆 안정화 추천 순위가 필요하면 → <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">평발·과내전 안정화 추천 2026</a></li>
+  <li>⚔️ 최상위 3종 직접 비교 → <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">카야노 33 vs 글리세린 GTS vs 860</a></li>
+  <li>🦶 평발·과내전 베스트 → <a href="/best/flat-feet">평발 러닝화 추천</a> · <a href="/best/stability">안정화 러닝화 추천</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 정보로, 자가진단은 참고용입니다. 통증이 지속되거나 심한 평발·부상 이력이 있다면 러닝 전문 매장의 보행 분석이나 정형외과 상담을 받으세요. 가격·발볼 옵션은 시즌마다 바뀔 수 있어 구매 전 각 모델 상세 페이지에서 확인하시기 바랍니다.</p>
+`,
+  },
+  {
     id: 'world-marathon-majors-guide-2026',
     slug: 'world-marathon-majors-guide-2026',
     title: '세계 6대 마라톤(애벗 메이저) 완전정복 — 한국 러너의 도전 지도 | 신청법·난이도·비용·식스스타, 어디부터 갈까',
