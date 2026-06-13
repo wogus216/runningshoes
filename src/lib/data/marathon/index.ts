@@ -4,6 +4,7 @@ import { aprilEvents } from './april';
 import { mayEvents } from './may';
 import { juneEvents } from './june';
 import { julyEvents } from './july';
+import { augustEvents } from './august';
 import { septemberEvents } from './september';
 import { octoberEvents } from './october';
 import { novemberEvents } from './november';
@@ -15,6 +16,7 @@ export const marathonEvents: MarathonEvent[] = [
   ...mayEvents,
   ...juneEvents,
   ...julyEvents,
+  ...augustEvents,
   ...septemberEvents,
   ...octoberEvents,
   ...novemberEvents,

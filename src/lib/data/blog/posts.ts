@@ -3,6 +3,130 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'danyang-moonlight-race-2026',
+    slug: 'danyang-moonlight-race-2026',
+    title: '달리고 나면 치킨에 맥주 — 2026 단양 달빛레이스 | 오후 7시 출발 야간 러닝, 남한강 달맞이길·도담삼봉 + 피니시 푸드 축제',
+    description:
+      '한여름 더위를 피해 오후 7시 출발하는 야간 러닝, 2026 단양 달빛레이스. 남한강 수변 달맞이길과 도담삼봉을 달빛 아래 달리고, 피니시 후엔 치킨·맥주·막걸리 푸드부스가 기다립니다. 8/29(토) 단양생태체육공원, 10K 5만·5K 3만, 6/10~7/17 선착순 5,000명. 코스·야간 준비물·접수까지 정리했습니다.',
+    thumbnail: '/images/blog/danyang-moonlight-race-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['단양 달빛레이스', '단양 마라톤', '야간 러닝', '야간 마라톤', '여름 마라톤', '단양 러닝', '치킨 마라톤', '충북 마라톤', '러닝 대회', '달빛레이스'],
+    event: {
+      name: '2026 단양 달빛레이스',
+      startDate: '2026-08-29T19:00:00+09:00',
+      location: {
+        name: '단양생태체육공원',
+        address: '충청북도 단양군',
+      },
+      organizer: '단양군육상연맹',
+      url: 'http://danyangmarathon.kr/',
+      offers: [
+        { name: '10km', priceKrw: 50000, availabilityEnds: '2026-07-17', url: 'http://danyangmarathon.kr/' },
+        { name: '5km', priceKrw: 30000, availabilityEnds: '2026-07-17', url: 'http://danyangmarathon.kr/' },
+      ],
+    },
+    faqs: [
+      { question: '단양 달빛레이스는 언제 열리나요?', answer: '2026년 8월 29일(토) 오후 7시에 출발하는 야간 대회입니다(개회식 18:30 예상). 한여름 낮 더위를 피해 저녁에 달리는 게 핵심 콘셉트로, 장소는 충북 단양의 단양생태체육공원입니다.' },
+      { question: '정말 치킨을 주나요?', answer: '피니시 후 행사장에 치킨·맥주·막걸리 등 푸드부스가 운영되어 "치킨 마라톤"으로 불립니다. 2024년에는 우리쌀 치킨 브랜드가 협찬사로 참여하기도 했습니다. 다만 완주자 전원 증정인지, 현장 부스에서 즐기는 방식인지는 회차마다 다를 수 있으니 정확한 기념품·먹거리 구성은 공식 요강에서 확인하세요.' },
+      { question: '야간 대회인데 뭘 준비해야 하나요?', answer: '어두운 수변 코스를 달리므로 헤드랜턴이나 암밴드 라이트, 야광·반사 소품을 챙기는 게 좋습니다. 8월 말 저녁이라 낮보다 시원하지만 습도가 높을 수 있어 수분 보충과 통기성 좋은 러닝화·복장을 권장합니다.' },
+      { question: '종목과 참가비는 어떻게 되나요?', answer: '10km(50,000원)와 5km(30,000원) 두 종목입니다. 5km는 입문자나 가족 단위 참가에도 부담이 적습니다.' },
+      { question: '접수는 언제, 어디서 하나요?', answer: '2026년 6월 10일부터 7월 17일까지 공식 홈페이지(danyangmarathon.kr)에서 선착순 5,000명 접수합니다. 참가 규모가 매년 빠르게 늘고 있어 조기 마감 가능성이 있으니 서두르는 게 안전합니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 단양 달빛레이스 = 8월 29일(토) 오후 7시 출발 야간 러닝</strong> — 충북 단양생태체육공원에서 한여름 더위를 피해 저녁에 달립니다.</li>
+    <li>코스는 <strong>남한강 수변 달맞이길·도담삼봉</strong> 방향 평지(10K·5K). 달빛 아래 단양 야경을 달리는 게 매력입니다.</li>
+    <li>달리고 나면 <strong>치킨·맥주·막걸리 푸드부스</strong>가 열려 "치킨 마라톤"으로 불립니다. 10K 5만·5K 3만, <strong>6/10~7/17 선착순 5,000명</strong>.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌙</span>
+  <div class="callout-body">
+    <p class="callout-title">한여름엔 낮에 못 달린다 — 그래서 밤에 달린다</p>
+    <p>8월 한낮 러닝은 위험합니다. 단양 달빛레이스는 그 답을 <strong>야간 출발(19:00)</strong>로 풀었어요. 해가 진 뒤 시원해진 남한강변을 달리고, 끝나면 축제처럼 먹고 마시는 <strong>러닝+페스티벌</strong> 콘셉트입니다. 기록 경쟁보다 분위기를 즐기러 가는 대회죠.</p>
+  </div>
+</div>
+
+<h2>어떤 대회인가 — 야간 러닝 + 푸드 페스티벌</h2>
+
+<p>단양 달빛레이스는 충북 단양군육상연맹이 주최하는 <strong>야간 러닝 대회</strong>입니다. 가장 큰 특징은 오후 7시 출발 — 8월 말 한여름 더위를 피해 해가 진 뒤 달립니다. 낮보다 시원하고, 무엇보다 <strong>달빛과 단양 도심 야경</strong>을 배경으로 달리는 분위기가 이 대회의 정체성이에요.</p>
+
+<p>참가 규모도 빠르게 커지고 있습니다. 1회 약 2,000명에서 시작해 회차를 거듭하며 3,500명 규모로 성장했고, 2026년은 정원을 5,000명으로 늘렸습니다. 기록을 노리는 본격 마라톤이라기보다 <strong>여름밤을 즐기는 러닝 축제</strong>에 가깝습니다.</p>
+
+<h2>코스 — 남한강 달맞이길과 도담삼봉</h2>
+
+<p>출발·도착은 <strong>단양생태체육공원</strong>입니다. 코스는 남한강 수변을 따라가는 <strong>평지 위주</strong>라 야간에도 부담이 적습니다.</p>
+
+<ul>
+  <li><strong>10km</strong> — 생태체육공원에서 출발해 달맞이길·도담삼봉 방향 남한강 수변로를 달리는 코스. 단양팔경의 야경을 가장 길게 즐길 수 있습니다.</li>
+  <li><strong>5km</strong> — 수변 구간을 짧게 도는 코스. 입문자·가족 단위에 적합합니다.</li>
+</ul>
+
+<p>강변 수변로는 <strong>가로등이 충분치 않은 어두운 구간</strong>이 있을 수 있어, 야간 안전 장비가 중요합니다(아래 준비물 참고). 평지라 페이스 부담은 적지만 8월 말 저녁은 습도가 높을 수 있습니다.</p>
+
+<h2>종목·참가비</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>추천 대상</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>10km</strong></td><td>50,000원</td><td>러닝에 익숙한 러너, 야경 길게 즐기기</td></tr>
+    <tr><td><strong>5km</strong></td><td>30,000원</td><td>입문자·가족·런데이트</td></tr>
+  </tbody>
+</table>
+
+<p>※ 정원 <strong>선착순 5,000명</strong>. 참가비에는 보통 기념품·기록측정·간식이 포함되며, 구체적 구성은 회차·공식 요강에 따릅니다.</p>
+
+<h2>야간 레이스, 이건 꼭 챙기자</h2>
+
+<ul>
+  <li><strong>라이트</strong> — 헤드랜턴 또는 암밴드 라이트. 어두운 수변 구간 안전 필수입니다.</li>
+  <li><strong>야광·반사 소품</strong> — 야광 팔찌·반사 조끼 등. 분위기도 살고 시인성도 좋아집니다.</li>
+  <li><strong>수분·전해질</strong> — 8월 말 저녁은 시원해도 습합니다. 탈수 주의.</li>
+  <li><strong>통기성 좋은 러닝화·복장</strong> — 여름밤 러닝엔 통풍이 핵심입니다. <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 추천</a>과 <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a>를 함께 보세요.</li>
+</ul>
+
+<h2>달리고 나면 — 치킨·맥주가 기다린다</h2>
+
+<p>단양 달빛레이스가 러너들 사이에서 "치킨 마라톤"으로 불리는 이유가 여기 있습니다. 피니시 라인을 통과하면 행사장에 <strong>치킨·맥주·막걸리 등 푸드부스</strong>가 열려, 시원한 여름밤에 완주의 보람을 먹거리로 즐길 수 있어요. 2024년엔 우리쌀 치킨 브랜드가 협찬사로 참여하기도 했습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🍗</span>
+  <div class="callout-body">
+    <p class="callout-title">"완주하면 치킨 줘요?" — 정확히 짚으면</p>
+    <p>치킨은 이 대회의 상징이지만, <strong>완주자 전원에게 현물·쿠폰으로 증정하는지, 현장 푸드부스에서 즐기는 방식인지는 회차마다 다를 수 있습니다.</strong> 협찬·먹거리 부스 운영은 확인되지만 "완주 기념품=치킨"이라고 단정하긴 어려워요. 기념품·먹거리 구성을 꼭 챙기고 싶다면 접수 전 <a href="http://danyangmarathon.kr/" target="_blank" rel="noopener">공식 홈페이지</a>나 대회 안내(☎ 1600-3949)로 확인하세요.</p>
+  </div>
+</div>
+
+<h2>접수 안내</h2>
+
+<ul>
+  <li><strong>접수 기간</strong>: 2026년 6월 10일 ~ 7월 17일 (선착순 5,000명)</li>
+  <li><strong>접수처</strong>: 공식 홈페이지 <a href="http://danyangmarathon.kr/" target="_blank" rel="noopener">danyangmarathon.kr</a></li>
+  <li><strong>대회일</strong>: 2026년 8월 29일(토) 오후 7시 출발</li>
+  <li><strong>장소</strong>: 충북 단양 단양생태체육공원</li>
+</ul>
+
+<p>참가 인원이 매년 빠르게 늘고 있어 <strong>조기 마감 가능성</strong>이 있습니다. 여름밤 러닝 축제를 노린다면 접수 오픈 초반에 신청하는 편이 안전합니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🗓️ 다른 대회 일정도 보고 싶다면 → <a href="/marathon">마라톤 캘린더</a></li>
+  <li>☀️ 여름 러닝 준비 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a> · <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 대회 공식 안내와 단양군·언론 보도, 러닝 커뮤니티 자료를 교차 정리한 내용입니다. 단양 달빛레이스는 매년 장소·종목·기념품 구성이 일부 바뀌어 왔고, 치킨 등 먹거리 제공 방식과 정확한 코스·일정은 공식 홈페이지(danyangmarathon.kr) 또는 대회 안내(☎ 1600-3949)에서 최종 확인하시기 바랍니다.</p>
+`,
+  },
+  {
     id: 'saucony-running-shoes-lineup-tier-guide-2026',
     slug: 'saucony-running-shoes-lineup-tier-guide-2026',
     title: '사코니 러닝화 계급도 2026 — 엔돌핀·라이드·가이드, PWRRUN 폼과 엔돌핀 라인으로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
