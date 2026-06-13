@@ -3,6 +3,162 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'saucony-running-shoes-lineup-tier-guide-2026',
+    slug: 'saucony-running-shoes-lineup-tier-guide-2026',
+    title: '사코니 러닝화 계급도 2026 — 엔돌핀·라이드·가이드, PWRRUN 폼과 엔돌핀 라인으로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
+    description:
+      '사코니 러닝화 12종을 전통 PWRRUN 라인(라이드 데일리·트라이엄프 쿠션·가이드/허리케인 안정화·킨바라 경량)과 엔돌핀 스피드 라인으로 한 장에. 라이드 15.9만부터 엔돌핀 엘리트 33.9만까지 가격·무게·폼 비교표 + 엔돌핀 6형제 차이 + 엔돌핀 스피드가 갓신발인 이유 + PWRRUN 폼 등급까지 정리했습니다.',
+    thumbnail: '/images/blog/saucony-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 13,
+    tags: ['사코니 러닝화', '소커니 러닝화', '사코니 계급도', '러닝화 라인업', '러닝화 등급', '엔돌핀 스피드', '엔돌핀 프로', '라이드', '가이드', 'PWRRUN'],
+    faqs: [
+      { question: '사코니 "엔돌핀(Endorphin)"이 뭔가요?', answer: '사코니의 스피드·레이싱 서브브랜드입니다. 이름에 엔돌핀이 붙으면 빠르게 달리기 위한 신발이에요. SPEEDROLL이라는 록커 지오메트리로 자연스럽게 굴러가게 하고, PWRRUN PB(PEBA) 슈퍼폼을 씁니다. 스피드·프로·엘리트·트레이너·아주라까지 변형이 많아 사코니 라인업의 핵심을 이룹니다.' },
+      { question: '엔돌핀 스피드·프로·엘리트는 뭐가 다른가요?', answer: '플레이트와 등급으로 갈립니다. 스피드는 나일론 플레이트(카본 아님)로 카본값 없이 빠른 슈퍼트레이너, 프로는 카본 플레이트 레이싱화, 엘리트는 IncrediRUN 폼에 카본을 넣은 최상위(80.6% 에너지 리턴, RunRepeat 역대 최고)입니다. 가성비 훈련이면 스피드, 대회면 프로, 기록 끝장이면 엘리트입니다.' },
+      { question: '엔돌핀 스피드가 왜 "갓신발"이라고 불리나요?', answer: '카본 플레이트 대신 나일론 플레이트를 써서 카본 레이싱화 못지않은 73.2% 에너지 리턴을 20만원대에 내기 때문입니다. 카본만큼 빳빳하지 않아 데일리·템포·롱런까지 폭넓게 쓸 수 있고 내구성도 좋아, 한 켤레로 여러 용도를 커버하려는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
+      { question: '사코니 안정화는 가이드랑 허리케인 중 뭘 사야 하나요?', answer: '가이드 18(15.9만)은 카야노 절반 가격의 가성비 안정화로 121.9mm 광폭 플랫폼이 강점, 허리케인 25(19.9만)는 PWRRUN PB 슈퍼폼과 크래들 구조로 151 SA의 심한 과내전까지 잡는 프리미엄입니다. 가벼운 지지면 가이드, 심한 과내전이면 허리케인입니다.' },
+      { question: '사코니는 발볼 넓은 한국 러너에게 맞나요?', answer: '대체로 표준 토박스라 무난한 편입니다. 라이드·가이드·트라이엄프·엔돌핀 스피드 모두 표준이고, 가이드는 121.9mm 광폭 플랫폼으로 안정감도 좋아요. 다만 엔돌핀 프로·엘리트 같은 카본 레이싱은 좁으니 발볼이 많이 넓으면 반 치수 크게 신으세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>사코니는 두 갈래</strong> — 전통 PWRRUN 라인(라이드·가이드·트라이엄프·허리케인·킨바라)과 스피드 서브브랜드 <strong>엔돌핀</strong>.</li>
+    <li><strong>엔돌핀이 핵심</strong> — SPEEDROLL 록커 + PWRRUN PB 슈퍼폼. 스피드·프로·엘리트·트레이너·아주라로 변형이 가장 많습니다.</li>
+    <li><strong>엔돌핀 스피드 = 갓신발</strong> — 나일론 플레이트로 카본값 없이 73% 에너지, 20만원대 가성비 슈퍼트레이너입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🟧</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 사코니 계급도 한 장</p>
+    <p>"엔돌핀에 스피드, 프로, 엘리트, 트레이너… 사코니는 엔돌핀이 너무 많아 헷갈린다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a>·<a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>·<a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> 등 다른 브랜드 계급도와 함께 보면 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 사코니 읽는 법 — 전통 PWRRUN vs 엔돌핀 스피드</h2>
+
+<p>사코니 라인업은 크게 두 갈래입니다. 매일 신는 <strong>전통 라인</strong>과, 빠르게 달리기 위한 스피드 서브브랜드 <strong>엔돌핀(Endorphin)</strong>이에요. 엔돌핀이 붙으면 SPEEDROLL 록커로 굴러가는 스피드 라인이라고 보면 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>라이드 Ride</strong></td><td>데일리 만능</td><td>"처음이면 라이드" — 부드러운 기준점</td></tr>
+    <tr><td><strong>트라이엄프 Triumph</strong></td><td>맥스 쿠션</td><td>풀 PEBA를 19만원대에, 본디 킬러</td></tr>
+    <tr><td><strong>가이드 / 허리케인</strong></td><td>안정화</td><td>가이드=가성비 / 허리케인=심한 과내전</td></tr>
+    <tr><td><strong>킨바라 Kinvara</strong></td><td>경량 미니멀</td><td>198g, 지면을 느끼는 데일리</td></tr>
+    <tr><td><strong>엔돌핀 Endorphin</strong></td><td>스피드·레이싱</td><td>스피드·프로·엘리트 — 사코니의 핵심</td></tr>
+  </tbody>
+</table>
+
+<h2>2. PWRRUN 폼이 등급을 만든다</h2>
+
+<p>사코니 폼은 "PWRRUN(파워런)" 패밀리입니다. 데일리는 PWRRUN, 레이싱은 PWRRUN PB(PEBA)와 신형 IncrediRUN으로 올라갑니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>PWRRUN / PWRRUN+</strong></td><td>부드러운 데일리·안정화</td><td>라이드 · 가이드 · 킨바라</td></tr>
+    <tr><td><strong>PWRRUN PB (PEBA)</strong></td><td>슈퍼폼 — 반발·경량</td><td>트라이엄프 · 허리케인 · 엔돌핀 스피드</td></tr>
+    <tr><td><strong>IncrediRUN</strong></td><td>최상위 신형 폼(역대 최고 반발)</td><td>엔돌핀 엘리트 · 트레이너</td></tr>
+    <tr><td><strong>+ 카본 플레이트</strong></td><td>레이싱 추진</td><td>엔돌핀 프로 · 엘리트 · 트레이너</td></tr>
+  </tbody>
+</table>
+
+<p>요약하면 <strong>PWRRUN PB가 슈퍼폼, IncrediRUN이 최상위</strong>입니다. 특히 엔돌핀 스피드는 이 PWRRUN PB에 <strong>카본 대신 나일론 플레이트</strong>를 넣어 가성비 슈퍼트레이너로 유명해졌어요(아래 5번).</p>
+
+<h2>3. 사코니 러닝화 계급도 — 12종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 사코니 러닝화 12종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-ride-18"><strong>라이드 18</strong></a></td><td>입문 데일리</td><td>PWRRUN+</td><td>15.9만</td><td>255g</td><td>통기성 최상, 여름 가성비</td></tr>
+    <tr><td><a href="/shoes/saucony-guide-18"><strong>가이드 18</strong></a></td><td>가성비 안정화</td><td>PWRRUN</td><td>15.9만</td><td>278g</td><td>카야노 절반가, 121.9mm 광폭</td></tr>
+    <tr><td><a href="/shoes/saucony-kinvara-16"><strong>킨바라 16</strong></a></td><td>경량 미니멀</td><td>PWRRUN</td><td>15.9만</td><td>198g</td><td>198g·4mm, 지면 감각</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-19"><strong>라이드 19</strong></a></td><td>입문 데일리 신상</td><td>SCF PWRRUN+</td><td>17.9만</td><td>255g</td><td>더 부드럽고 넓어진 트레이너</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-azura"><strong>엔돌핀 아주라</strong></a></td><td>엔돌핀 데일리</td><td>PWRRUN PB</td><td>18.9만</td><td>240g</td><td>무플레이트 데일리 스피드</td></tr>
+    <tr><td><a href="/shoes/saucony-triumph-23"><strong>트라이엄프 23</strong></a></td><td>맥스 쿠션</td><td>PWRRUN PB (PEBA)</td><td>19.9만</td><td>272g</td><td>풀 PEBA 19만원대, 본디 킬러</td></tr>
+    <tr><td><a href="/shoes/saucony-hurricane-25"><strong>허리케인 25</strong></a></td><td>프리미엄 안정화</td><td>PWRRUN PB + 크래들</td><td>19.9만</td><td>286g</td><td>151 SA, 심한 과내전 제어</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-speed-5"><strong>엔돌핀 스피드 5</strong></a></td><td>무카본 슈퍼트레이너</td><td>PWRRUN PB + 나일론</td><td>21.9만</td><td>241g</td><td>73% 리턴 20만대, 갓신발</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-trainer"><strong>엔돌핀 트레이너</strong></a></td><td>카본 슈퍼트레이너</td><td>IncrediRUN + PWRRUN</td><td>21.9만</td><td>285g</td><td>IncrediRUN 매일 훈련에</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-4"><strong>엔돌핀 프로 4</strong></a></td><td>카본 레이싱</td><td>PWRRUN PB + HG · 카본</td><td>26.9만</td><td>220g</td><td>118.9mm 광폭, 슈퍼슈즈 초심자</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5"><strong>엔돌핀 프로 5</strong></a></td><td>카본 레이싱 신상</td><td>PWRRUN HG + PB · 카본</td><td>29.9만</td><td>206g</td><td>슬롯 카본, 검증된 장거리</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-elite-2"><strong>엔돌핀 엘리트 2</strong></a></td><td>최상위 레이싱</td><td>IncrediRUN · 카본</td><td>33.9만</td><td>197g</td><td>80.6% 리턴, 역대 최고 기록</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 사코니·만능 데일리</strong> → <a href="/shoes/saucony-ride-18">라이드 18</a> 또는 더 부드러운 신형 <a href="/shoes/saucony-ride-19">라이드 19</a>. 둘의 차이는 <a href="/blog/saucony-ride-18-vs-19-comparison">라이드 18 vs 19</a>에.</li>
+  <li><strong>🦶 평발·안정</strong> → 가성비 <a href="/shoes/saucony-guide-18">가이드 18</a>(카야노 절반가) 또는 심한 과내전용 <a href="/shoes/saucony-hurricane-25">허리케인 25</a>. 다른 브랜드 안정화 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
+  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>. 풀 PEBA를 19만원대에 담은 본디 킬러.</li>
+  <li><strong>⚡ 카본 없이 빠른 만능</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 데일리부터 템포·롱런까지 한 켤레로(아래 5번).</li>
+  <li><strong>🏃 카본 훈련+대회</strong> → <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a>(IncrediRUN 슈퍼트레이너).</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(검증된 장거리). 둘의 세대 차이는 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5</a>에. 기록 끝장이면 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>(80.6% 역대 최고).</li>
+</ul>
+
+<h2>5. 엔돌핀 6형제 — 사코니의 스피드 서브브랜드</h2>
+
+<p>사코니가 헷갈리는 이유는 <strong>엔돌핀 변형이 가장 많아서</strong>입니다. 같은 엔돌핀인데 플레이트와 폼으로 여섯 갈래로 갈려요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>성격</th><th>플레이트</th><th>가격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>데일리 스피드</td><td>없음</td><td>18.9만</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td><td>무카본 슈퍼트레이너</td><td>나일론</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a></td><td>카본 슈퍼트레이너</td><td>카본</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>카본 레이싱(광폭)</td><td>카본</td><td>26.9만</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>신형 카본 레이싱</td><td>슬롯 카본</td><td>29.9만</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a></td><td>최상위 IncrediRUN</td><td>카본</td><td>33.9만</td></tr>
+  </tbody>
+</table>
+
+<p>정리하면 — <strong>데일리면 아주라, 카본 없이 만능이면 스피드, 훈련+대회 카본이면 트레이너, 대회 전용이면 프로, 기록 끝장이면 엘리트</strong>입니다. 특히 <strong>엔돌핀 스피드</strong>는 나일론 플레이트로 카본값 없이 빠른 "갓신발"로 커뮤니티에서 가성비 1순위로 꼽힙니다.</p>
+
+<h2>6. 발볼 — 사코니는 대체로 무난</h2>
+
+<p>사코니는 대부분 <strong>표준 토박스</strong>라 발볼 넓은 한국 러너에게도 무난한 편입니다. 특히 가이드는 121.9mm 광폭 플랫폼으로 안정감까지 좋아요.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>표준 (무난)</strong></td><td>라이드 18·19 · 가이드 18 · 트라이엄프 · 허리케인 · 킨바라 · 엔돌핀 스피드·트레이너·아주라</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 4 · 엔돌핀 엘리트 2(레이싱)</td></tr>
+  </tbody>
+</table>
+
+<p>데일리·안정화는 발볼 걱정 없이 무난하고, 카본 레이싱(엔돌핀 프로 4·엘리트 2)만 좁으니 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🟧 사코니 브랜드 전체 신발 보기 → <a href="/brands/saucony">사코니 브랜드 페이지</a></li>
+  <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·사코니 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'mizuno-running-shoes-lineup-tier-guide-2026',
     slug: 'mizuno-running-shoes-lineup-tier-guide-2026',
     title: '미즈노 러닝화 계급도 2026 — 웨이브 라이더·인스파이어·하이퍼워프, Wave 플레이트로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
@@ -147,7 +303,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🌊 미즈노 브랜드 전체 신발 보기 → <a href="/brands/mizuno">미즈노 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·미즈노 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -302,7 +458,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🐆 푸마 브랜드 전체 신발 보기 → <a href="/brands/puma">푸마 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·푸마 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -456,7 +612,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>☁️ 온 브랜드 전체 신발 보기 → <a href="/brands/on">온(On) 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·On 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -614,7 +770,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔺 아디다스 브랜드 전체 신발 보기 → <a href="/brands/adidas">아디다스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -768,7 +924,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -917,7 +1073,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1085,7 +1241,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1246,7 +1402,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1417,7 +1573,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> · <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
