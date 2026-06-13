@@ -3,6 +3,157 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'mizuno-running-shoes-lineup-tier-guide-2026',
+    slug: 'mizuno-running-shoes-lineup-tier-guide-2026',
+    title: '미즈노 러닝화 계급도 2026 — 웨이브 라이더·인스파이어·하이퍼워프, Wave 플레이트로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
+    description:
+      '미즈노 러닝화 9종을 전통 Wave 라인(라이더 데일리·스카이 쿠션·인스파이어/호라이즌 안정화·리벨리온 템포)과 신세대 하이퍼워프 카본으로 한 장에. 인스파이어 15.9만부터 하이퍼워프 퓨어 39.9만까지 가격·무게·폼 비교표 + Wave 플레이트가 뭔지 + 하이퍼워프 3형제 거리별 차이 + 미즈노가 의외로 발볼 넓은 이유까지 정리했습니다.',
+    thumbnail: '/images/blog/mizuno-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['미즈노 러닝화', '미즈노 계급도', '러닝화 라인업', '러닝화 등급', '웨이브 라이더', '웨이브 인스파이어', '하이퍼워프', 'Wave 플레이트', '안정화', '일본 러닝화'],
+    faqs: [
+      { question: '미즈노 "웨이브(Wave)"가 뭔가요?', answer: '미즈노의 정체성인 미드솔 플레이트입니다. 파도 모양의 플라스틱 판이 들어가 충격을 분산하고 반발과 안정성을 동시에 제공해요. 그래서 미즈노 특유의 "딴딴하고 안정적인" 착지감이 나옵니다. 전통 라인은 모두 "웨이브 OO"(라이더·스카이·인스파이어·호라이즌·리벨리온)로 시작합니다.' },
+      { question: '하이퍼워프는 웨이브랑 뭐가 다른가요?', answer: '하이퍼워프(HyperWarp)는 미즈노의 신세대 카본 슈퍼슈즈 라인입니다. 전통 Wave 플레이트 대신 카본 플레이트와 PEBA 폼을 넣어 슈퍼슈즈 경쟁에 본격 참전한 모델이에요. 즉 "웨이브"는 안정·데일리의 전통, "하이퍼워프"는 레이싱 최상위 신세대라고 보면 됩니다.' },
+      { question: '하이퍼워프 퓨어·엘리트·프로는 뭐가 다른가요?', answer: '거리와 용도로 갈립니다. 퓨어는 139g 극한 경량으로 5K·10K 단거리 특화(최고가 39.9만), 엘리트는 170g으로 풀마라톤 레이스용, 프로는 201g 슈퍼트레이너로 훈련+대회 겸용입니다. 단거리 PB면 퓨어, 풀코스 레이스면 엘리트, 카본 훈련까지 겸하면 프로입니다.' },
+      { question: '미즈노 안정화는 인스파이어랑 호라이즌 중 뭘 사야 하나요?', answer: '웨이브 인스파이어 21(15.9만)은 가성비 안정화로 km당 177원·900km 내구성의 끝판왕, 웨이브 호라이즌 8(17.9만)은 미디얼 러버월과 Wave로 시장 최강 수준의 과내전 제어를 제공하는 프리미엄입니다. 가벼운 지지면 인스파이어, 심한 과내전·강한 교정이면 호라이즌입니다. 둘 다 와이드 옵션이 있습니다.' },
+      { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>미즈노는 Wave 플레이트가 정체성</strong> — 파도 모양 플레이트로 "딴딴하고 안정적인" 착지감. 전통 라인은 다 "웨이브 OO"입니다.</li>
+    <li><strong>두 시대로 나뉩니다</strong> — 전통 <strong>웨이브</strong>(데일리·안정화) vs 신세대 <strong>하이퍼워프</strong>(카본 슈퍼슈즈).</li>
+    <li><strong>안정화 강자 + 의외로 넓은 발볼</strong> — 인스파이어·호라이즌의 과내전 제어가 강하고, 데일리·안정화는 토박스가 넉넉해 한국 러너에게 좋습니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 미즈노 계급도 한 장</p>
+    <p>"웨이브 라이더, 인스파이어, 호라이즌에 하이퍼워프까지… 뭐가 윗급인지 헷갈린다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>·<a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a>·<a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> 등 다른 브랜드 계급도와 함께 보면 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 미즈노 읽는 법 — Wave 전통 vs 하이퍼워프 신세대</h2>
+
+<p>미즈노의 정체성은 <strong>Wave(웨이브) 플레이트</strong>입니다. 미드솔에 파도 모양 플라스틱 판을 넣어 충격을 분산하고 안정성과 반발을 동시에 잡아요. 그래서 미즈노는 "딴딴하고 안정적"이라는 평이 많습니다. 라인업은 크게 두 시대로 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>웨이브 라이더 Wave Rider</strong></td><td>데일리 만능</td><td>"처음이면 라이더" — 베스트셀러</td></tr>
+    <tr><td><strong>웨이브 스카이 Wave Sky</strong></td><td>맥스 쿠션</td><td>44mm 질소 폼, 푹신 장거리</td></tr>
+    <tr><td><strong>웨이브 인스파이어 / 호라이즌</strong></td><td>안정화</td><td>인스파이어=가성비 / 호라이즌=최강 과내전</td></tr>
+    <tr><td><strong>웨이브 리벨리온 플래시</strong></td><td>미드풋 템포</td><td>극단적 힐 베벨, 빠른 훈련</td></tr>
+    <tr><td><strong>하이퍼워프 HyperWarp</strong></td><td>카본 레이싱(신세대)</td><td>퓨어·엘리트·프로 — 슈퍼슈즈</td></tr>
+  </tbody>
+</table>
+
+<p>즉 <strong>"웨이브"가 붙으면 전통 라인(데일리·안정화), "하이퍼워프"면 신세대 카본 슈퍼슈즈</strong>입니다. 미즈노가 슈퍼슈즈 경쟁에 늦게 참전하며 내놓은 게 하이퍼워프예요.</p>
+
+<h2>2. 폼이 등급을 만든다 — Enerzy → PEBA + Wave/카본</h2>
+
+<p>미즈노 폼은 "Enerzy(에너지)" 패밀리입니다. 데일리는 Enerzy, 레이싱은 PEBA에 플레이트를 더합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼·플레이트</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Enerzy / Enerzy NXT</strong></td><td>부드러운 데일리·쿠션</td><td>라이더 · 스카이 · 인스파이어 · 호라이즌</td></tr>
+    <tr><td><strong>Enerzy Lite+ / XP (PEBA·TPEE)</strong></td><td>템포·반발 폼</td><td>리벨리온 플래시</td></tr>
+    <tr><td><strong>Wave 플레이트</strong></td><td>안정·반발(전통)</td><td>웨이브 전 라인</td></tr>
+    <tr><td><strong>PEBA + 카본 플레이트</strong></td><td>레이싱 최상위</td><td>하이퍼워프 퓨어·엘리트·프로</td></tr>
+  </tbody>
+</table>
+
+<h2>3. 미즈노 러닝화 계급도 — 9종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 미즈노 러닝화 9종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21"><strong>웨이브 인스파이어 21</strong></a></td><td>가성비 안정화</td><td>Enerzy + NXT · Wave</td><td>15.9만</td><td>286g</td><td>km당 177원, 900km 내구성</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-29"><strong>웨이브 라이더 29</strong></a></td><td>데일리 만능</td><td>Enerzy NXT · Wave</td><td>16.9만</td><td>258g</td><td>76.7mm 넓은 토박스, 발볼 해답</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-horizon-8"><strong>웨이브 호라이즌 8</strong></a></td><td>프리미엄 안정화</td><td>Enerzy NXT + Enerzy · Wave</td><td>17.9만</td><td>323g</td><td>미디얼 러버월, 최강 과내전 제어</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-2"><strong>웨이브 리벨리온 플래시 2</strong></a></td><td>미드풋 템포</td><td>Enerzy Lite+ (PEBA)</td><td>18.9만</td><td>239g</td><td>극단적 힐 베벨 로커</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>290g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-3"><strong>웨이브 리벨리온 플래시 3</strong></a></td><td>미드풋 템포 신상</td><td>Enerzy XP (TPEE) + NXT</td><td>19.9만</td><td>244g</td><td>TPEE 듀얼폼, 플래시 2 진화형</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>하이퍼워프 프로</strong></a></td><td>슈퍼트레이너</td><td>Enerzy XP + 카본</td><td>31.9만</td><td>201g</td><td>39mm, 훈련+대회 겸용</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>하이퍼워프 엘리트</strong></a></td><td>풀 레이싱</td><td>PEBA + 카본</td><td>34.9만</td><td>170g</td><td>38mm, 풀마라톤 특화</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>하이퍼워프 퓨어</strong></a></td><td>단거리 레이싱</td><td>PEBA + 카본</td><td>39.9만</td><td>139g</td><td>139g 극한 경량, 5K·10K 특화</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 미즈노·만능 데일리</strong> → <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>. 76.7mm 넓은 토박스로 발볼 넓은 한국 러너에게 특히 좋습니다.</li>
+  <li><strong>🦶 평발·안정(가성비)</strong> → <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a>(15.9만, 900km). 강한 과내전이면 <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>(미디얼 러버월). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
+  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a>(44mm 질소 폼).</li>
+  <li><strong>⚡ 미드풋 템포·빠른 훈련</strong> → <a href="/shoes/mizuno-wave-rebellion-flash-3">리벨리온 플래시 3</a>. 2세대와의 차이는 <a href="/blog/mizuno-wave-rebellion-flash-2-vs-3-comparison">플래시 2 vs 3</a>에.</li>
+  <li><strong>🏃 카본 훈련+대회 겸용</strong> → <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a>(슈퍼트레이너).</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>(170g). 5K·10K 단거리 PB면 <a href="/shoes/mizuno-hyperwarp-pure">퓨어</a>(139g).</li>
+</ul>
+
+<h2>5. 하이퍼워프 3형제 — 거리로 갈린다</h2>
+
+<p>미즈노 신세대 카본 <strong>하이퍼워프</strong>는 다른 브랜드와 달리 <strong>거리·용도로 모델이 나뉩니다.</strong> 단순 등급이 아니라 쓰임이 다른 게 특징이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>특화 거리</th><th>무게·가격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>퓨어</strong></a></td><td>5K·10K 단거리</td><td>139g · 39.9만</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>엘리트</strong></a></td><td>풀마라톤 레이스</td><td>170g · 34.9만</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>프로</strong></a></td><td>훈련+대회 슈퍼트레이너</td><td>201g · 31.9만</td></tr>
+  </tbody>
+</table>
+
+<p>재밌는 건 가장 가벼운 <strong>퓨어(139g)가 최고가</strong>라는 점입니다. 단거리 전용 초경량이라 그래요. 대부분의 마라토너에게는 <strong>엘리트(풀코스)</strong>가, 카본을 훈련에도 쓰고 싶으면 <strong>프로</strong>가 현실적입니다.</p>
+
+<h2>6. 발볼 — 미즈노는 의외로 한국 러너 친화적</h2>
+
+<p>일본 브랜드라 좁을 것 같지만, <strong>미즈노의 데일리·안정화는 의외로 토박스가 넉넉</strong>합니다. 발볼 넓은 한국 러너에게 좋은 선택이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>넓음·와이드 (한국 친화)</strong></td><td>웨이브 라이더 29(76.7mm) · 인스파이어(와이드) · 호라이즌(와이드)</td></tr>
+    <tr><td><strong>표준</strong></td><td>웨이브 스카이 · 리벨리온 플래시 · 하이퍼워프 프로</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
+  </tbody>
+</table>
+
+<p>데일리는 라이더, 안정화는 인스파이어·호라이즌이 발볼 걱정 없이 무난합니다. 레이싱(하이퍼워프 퓨어·엘리트)만 좁으니 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🌊 미즈노 브랜드 전체 신발 보기 → <a href="/brands/mizuno">미즈노 브랜드 페이지</a></li>
+  <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·미즈노 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'puma-running-shoes-lineup-tier-guide-2026',
     slug: 'puma-running-shoes-lineup-tier-guide-2026',
     title: '푸마 러닝화 계급도 2026 — 디비에이트·벨로시티·패스트알, 나이트로 폼과 엘리트로 읽는 전체 라인업 | 입문부터 서브2 슈퍼슈즈까지 한 장 정리',
@@ -151,7 +302,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🐆 푸마 브랜드 전체 신발 보기 → <a href="/brands/puma">푸마 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·푸마 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -305,7 +456,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>☁️ 온 브랜드 전체 신발 보기 → <a href="/brands/on">온(On) 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·On 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -463,7 +614,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔺 아디다스 브랜드 전체 신발 보기 → <a href="/brands/adidas">아디다스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -617,7 +768,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -766,7 +917,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -934,7 +1085,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1095,7 +1246,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1266,7 +1417,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a> · <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
