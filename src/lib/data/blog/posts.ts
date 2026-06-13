@@ -3,6 +3,160 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-running-shoes-lineup-tier-guide-2026',
+    slug: 'on-running-shoes-lineup-tier-guide-2026',
+    title: '온(On) 러닝화 계급도 2026 — 클라우드몬스터·클라우드서퍼·클라우드붐, 수식어로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
+    description:
+      '온(On) 러닝화 11종을 라인(클라우드러너 입문·클라우드몬스터 쿠션·클라우드플로우 스피드·클라우드붐 레이싱)과 수식어(하이퍼·맥스·라이트스프레이)로 한 장에. 클라우드러너 18.9만부터 클라우드붐 32.9만까지 가격·무게·폼 비교표 + CloudTec 구름 포드가 뭔지 + 클라우드몬스터 5형제 차이 + On은 발볼 좁다는 점까지 정리했습니다.',
+    thumbnail: '/images/blog/on-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 13,
+    tags: ['온 러닝화', 'On 러닝화', '온 계급도', '러닝화 라인업', '러닝화 등급', '클라우드몬스터', '클라우드서퍼', '클라우드붐', 'CloudTec', '스위스 러닝화'],
+    faqs: [
+      { question: '온(On) 모델명이 다 "클라우드"인데 어떻게 구분하나요?', answer: '라인 이름과 수식어로 읽습니다. 라인은 클라우드러너(입문)·클라우드서퍼(부드러운 쿠션)·클라우드몬스터(맥시멀 쿠션)·클라우드플로우(스피드)·클라우드붐(레이싱)입니다. 거기에 수식어가 붙으면 등급이 올라가요 — "하이퍼"=PEBA 슈퍼트레이너, "맥스"=맥시멀 스택, "라이트스프레이"=초경량 어퍼입니다.' },
+      { question: 'CloudTec(클라우드텍)이 뭔가요?', answer: '온의 정체성인 밑창 기술입니다. 바닥에 구멍 뚫린 "구름(Cloud)" 포드가 줄지어 있어, 착지할 때 눌리며 충격을 흡수하고 발을 굴려줍니다. 이 독특한 착지감이 온의 시그니처예요. 호불호가 갈리지만 한 번 적응하면 특유의 굴러가는 느낌을 좋아하는 러너가 많습니다.' },
+      { question: '클라우드몬스터 하이퍼랑 라이트스프레이는 뭐가 다른가요?', answer: '둘 다 클라우드몬스터의 상위 버전입니다. 하이퍼는 Pebax(PEBA) 폼을 넣어 가볍고 반발이 좋은 무플레이트 슈퍼트레이너(258~271g), 라이트스프레이는 거기에 로봇이 분사해 만든 초경량 어퍼를 더해 205g까지 줄인 최상위 버전입니다. 가격은 하이퍼 25.9만, 라이트스프레이 31.9만입니다.' },
+      { question: '온에도 안정화 러닝화가 있나요?', answer: '클라우드러너 3가 안정화로 분류됩니다. 다만 아식스 카야노 같은 강한 교정 방식이 아니라, 힐 가이던스로 뒤꿈치를 안정적으로 잡아주는 가벼운 지지에 가깝습니다. 러닝과 워킹 겸용으로 좋지만, 심한 평발·과내전이라면 카야노·아드레날린 같은 전문 안정화를 함께 보세요.' },
+      { question: '온은 발볼 넓은 한국 러너에게 맞나요?', answer: '주의가 필요합니다. 온은 토박스가 좁은 편이고 와이드 옵션을 거의 제공하지 않습니다. 3세대(클라우드몬스터 3 등)에서 핏이 다소 넓어졌지만, 발볼이 많이 넓다면 반 치수 크게 신거나 토박스가 넉넉한 아식스·뉴발란스를 함께 고려하세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>온은 모든 모델이 "클라우드(Cloud)~"</strong> — 라인 이름(러너·서퍼·몬스터·플로우·붐)으로 용도를, 수식어로 등급을 읽습니다.</li>
+    <li><strong>수식어가 등급</strong> — "하이퍼"=PEBA 슈퍼트레이너, "맥스"=맥시멀, "라이트스프레이"=로봇 어퍼 초경량.</li>
+    <li><strong>CloudTec 구름 포드가 정체성</strong> — 밑창 구멍이 착지를 흡수합니다. 단 발볼은 좁은 편이라 한국 러너는 사이즈 주의.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☁️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 온(On) 계급도 한 장</p>
+    <p>"클라우드몬스터, 클라우드서퍼, 클라우드붐에 하이퍼·맥스·라이트스프레이까지… 다 클라우드라 헷갈린다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 수식어로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지·개별 리뷰로 연결됩니다. <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a>·<a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a>·<a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> 등 다른 브랜드 계급도와 함께 보면 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 온 읽는 법 — 다 "클라우드~", 수식어가 등급</h2>
+
+<p>온(On)은 스위스 브랜드로, <strong>모든 러닝화가 "클라우드(Cloud)"로 시작</strong>합니다. 그래서 더 헷갈리죠. 핵심은 라인 이름으로 용도를, 뒤에 붙는 수식어로 등급을 읽는 겁니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>클라우드러너 Cloudrunner</strong></td><td>입문·안정 데일리</td><td>"처음이면 클라우드러너" — 안정적</td></tr>
+    <tr><td><strong>클라우드서퍼 Cloudsurfer</strong></td><td>부드러운 쿠션</td><td>CloudTec Phase의 세련된 전환</td></tr>
+    <tr><td><strong>클라우드몬스터 Cloudmonster</strong></td><td>맥시멀 쿠션</td><td>"베스트셀러" — 큰 구름 포드</td></tr>
+    <tr><td><strong>클라우드플로우 Cloudflow</strong></td><td>경량 스피드</td><td>Speedboard로 날카로운 전환</td></tr>
+    <tr><td><strong>클라우드붐 Cloudboom</strong></td><td>카본 레이싱</td><td>대회용 슈퍼슈즈</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 수식어가 등급을 올립니다.</p>
+<ul>
+  <li><strong>"하이퍼(Hyper)" = Pebax(PEBA) 슈퍼트레이너</strong> — 가볍고 반발 좋은 무플레이트 버전(클라우드몬스터 하이퍼).</li>
+  <li><strong>"맥스(Max)" = 맥시멀 스택</strong> — 더 두툼한 버전(클라우드서퍼 맥스).</li>
+  <li><strong>"라이트스프레이(LightSpray)" = 로봇 분사 초경량 어퍼</strong> — 205g까지 줄인 최상위(클라우드몬스터 3 하이퍼 라이트스프레이).</li>
+</ul>
+
+<h2>2. CloudTec과 폼 — 구름 포드 + Helion</h2>
+
+<p>온의 정체성은 밑창의 <strong>CloudTec(클라우드텍)</strong> — 구멍 뚫린 구름 포드가 착지를 흡수하고 발을 굴려줍니다. 여기에 <strong>Helion 슈퍼폼</strong>이 쿠션을, <strong>Speedboard</strong>가 추진을 담당해요.</p>
+
+<table>
+  <thead>
+    <tr><th>기술</th><th>역할</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>CloudTec</strong></td><td>구름 포드 착지 쿠션</td><td>전 라인 공통</td></tr>
+    <tr><td><strong>Helion</strong></td><td>기본 슈퍼폼</td><td>클라우드러너 · 클라우드서퍼 맥스</td></tr>
+    <tr><td><strong>Helion HF (PEBA)</strong></td><td>경량·고반발 슈퍼폼</td><td>클라우드몬스터 · 하이퍼 · 클라우드붐</td></tr>
+    <tr><td><strong>Speedboard</strong></td><td>미드솔 플레이트(추진)</td><td>클라우드플로우 · 클라우드붐(카본)</td></tr>
+  </tbody>
+</table>
+
+<h2>3. 온 러닝화 계급도 — 11종 한눈에</h2>
+
+<p>라인 × 수식어로 현재 한국에서 살 수 있는 온 러닝화 11종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/on-cloudrunner-2"><strong>클라우드러너 2</strong></a></td><td>입문 데일리</td><td>Helion + CloudTec</td><td>18.9만</td><td>275g</td><td>힐 카운터 최강 안정 (단종)</td></tr>
+    <tr><td><a href="/shoes/on-cloudsurfer-2"><strong>클라우드서퍼 2</strong></a></td><td>입문 쿠션</td><td>Helion HF + CloudTec Phase</td><td>19.9만</td><td>254g</td><td>세련된 전환, On 입문 첫 선택</td></tr>
+    <tr><td><a href="/shoes/on-cloudrunner-3"><strong>클라우드러너 3</strong></a></td><td>안정화</td><td>Helion + CloudTec</td><td>19.9만</td><td>317g</td><td>힐 가이던스, 러닝+워킹 겸용</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-2"><strong>클라우드몬스터 2</strong></a></td><td>맥시멀 쿠션</td><td>Helion HF + CloudTec</td><td>21.9만</td><td>292g</td><td>더블 CloudTec 독특한 착지감</td></tr>
+    <tr><td><a href="/shoes/on-cloudsurfer-max"><strong>클라우드서퍼 맥스</strong></a></td><td>맥시멀 쿠션</td><td>Helion + CloudTec Phase</td><td>21.9만</td><td>292g</td><td>안정적 CloudTec, 미드풋 친화</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5"><strong>클라우드플로우 5</strong></a></td><td>경량 스피드</td><td>Helion + Speedboard</td><td>21.9만</td><td>278g</td><td>Speedboard 스피드 훈련 전용</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3"><strong>클라우드몬스터 3</strong></a></td><td>맥시멀 쿠션 신상</td><td>Helion HF + CloudTec</td><td>22.9만</td><td>295g</td><td>넓어진 핏·강한 록커, easy run</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-hyper"><strong>클라우드몬스터 하이퍼</strong></a></td><td>슈퍼트레이너</td><td>Helion HF (Pebax)</td><td>25.9만</td><td>258g</td><td>몬스터 2에서 34g 뺀 경량판</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper"><strong>클라우드몬스터 3 하이퍼</strong></a></td><td>슈퍼트레이너 신상</td><td>Helion HF + Helion</td><td>25.9만</td><td>271g</td><td>무플레이트, 장거리·템포 균형</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray"><strong>몬스터 3 하이퍼 라이트스프레이</strong></a></td><td>초경량 슈퍼트레이너</td><td>Helion HF + Helion 이중밀도</td><td>31.9만</td><td>205g</td><td>로봇이 만든 어퍼, 205g 초경량</td></tr>
+    <tr><td><a href="/shoes/on-cloudboom-strike"><strong>클라우드붐 스트라이크</strong></a></td><td>카본 레이싱</td><td>Helion HF + 카본</td><td>32.9만</td><td>201g</td><td>72% 리턴, 사계절 슈퍼슈즈</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 클라우드러너 2는 단종됐으나 참고용으로 포함했습니다. 스택·드롭 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 온·부드러운 쿠션</strong> → <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>. CloudTec Phase의 세련된 전환감, 입문 첫 선택. <a href="/blog/on-cloudsurfer-2-review-2026">클라우드서퍼 2 리뷰</a> 참고.</li>
+  <li><strong>☁️ 맥시멀 쿠션·회복런</strong> → <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>. 베스트셀러, 넓어진 핏. <a href="/blog/on-cloudmonster-3-review-2026">몬스터 3 리뷰</a>·<a href="/blog/on-cloudmonster-2-vs-3-comparison">몬스터 2 vs 3</a>에서 차이를 확인하세요.</li>
+  <li><strong>🦶 안정·워킹 겸용</strong> → <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>. 힐 가이던스 안정화(강한 교정은 아님). <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3 리뷰</a>·다른 브랜드 안정화는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단</a>에.</li>
+  <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>. 무플레이트 슈퍼트레이너. <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼 리뷰</a> 참고.</li>
+  <li><strong>🪶 가벼운 게 최우선</strong> → <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이</a>(205g). 로봇 어퍼의 최상위. <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 리뷰</a>에.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a>(201g 카본). 겨울에도 경화가 적어 사계절 레이싱.</li>
+</ul>
+
+<h2>5. 클라우드몬스터 5형제 — 베스트셀러의 변형들</h2>
+
+<p>온 라인업이 헷갈리는 가장 큰 이유가 <strong>베스트셀러 클라우드몬스터의 변형이 많아서</strong>입니다. 같은 몬스터인데 세대와 수식어로 다섯 갈래로 갈려요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>성격</th><th>무게</th><th>가격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a></td><td>구형 맥시멀(토박스 좁음)</td><td>292g</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>신형, 넓어진 핏·강한 록커</td><td>295g</td><td>22.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a></td><td>PEBA 경량 슈퍼트레이너</td><td>258g</td><td>25.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>신형 무플레이트 슈퍼트레이너</td><td>271g</td><td>25.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray">3 하이퍼 라이트스프레이</a></td><td>로봇 어퍼 초경량 최상위</td><td>205g</td><td>31.9만</td></tr>
+  </tbody>
+</table>
+
+<p>정리하면 — <strong>푹신한 데일리·회복런이면 일반 몬스터(2·3), 가볍게 빠른 훈련이면 하이퍼, 무게가 최우선이면 라이트스프레이</strong>입니다. 일반 vs 하이퍼의 결은 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼 리뷰</a>에서 다룹니다.</p>
+
+<h2>6. 발볼 — 온은 좁은 편, 한국 러너 주의</h2>
+
+<p>온의 약점은 <strong>좁은 토박스</strong>입니다. 와이드 옵션도 거의 없어 발볼 넓은 한국 러너는 주의해야 해요. 3세대에서 핏이 다소 넓어졌지만 여전히 넉넉하다고 보긴 어렵습니다.</p>
+
+<ul>
+  <li><strong>그나마 넓어진 쪽</strong>: 클라우드몬스터 3(넓어진 핏), 클라우드서퍼 계열.</li>
+  <li><strong>좁은 편(주의)</strong>: 클라우드몬스터 2, 레이싱·하이퍼 라인.</li>
+</ul>
+
+<p>발볼이 많이 넓다면 반 치수 크게 신거나, 토박스가 넉넉한 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>를 함께 보세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>☁️ 온 브랜드 전체 신발 보기 → <a href="/brands/on">온(On) 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·On 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'adidas-running-shoes-lineup-tier-guide-2026',
     slug: 'adidas-running-shoes-lineup-tier-guide-2026',
     title: '아디다스 러닝화 계급도 2026 — 아디제로·슈퍼노바·보스턴, 스피드 사다리와 EnergyRods로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
@@ -154,7 +308,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔺 아디다스 브랜드 전체 신발 보기 → <a href="/brands/adidas">아디다스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -308,7 +462,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -457,7 +611,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -625,7 +779,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -786,7 +940,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -957,7 +1111,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
