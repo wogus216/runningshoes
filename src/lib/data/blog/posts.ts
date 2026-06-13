@@ -3,6 +3,174 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'asics-running-shoes-lineup-tier-guide-2026',
+    slug: 'asics-running-shoes-lineup-tier-guide-2026',
+    title: '아식스 러닝화 계급도 2026 — 카야노·님버스·노바블라스트·메타스피드, GEL부터 FF Blast까지 전체 라인업 | 입문부터 슈퍼슈즈까지 한 장 정리',
+    description:
+      '아식스 러닝화 15종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 39.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',
+    thumbnail: '/images/blog/asics-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 13,
+    tags: ['아식스 러닝화', '아식스 계급도', '러닝화 라인업', '러닝화 등급', '젤 카야노', '젤 님버스', '노바블라스트', '메타스피드', '슈퍼블라스트', 'FF Blast'],
+    faqs: [
+      { question: '아식스 GEL(젤)이랑 FF Blast는 뭐가 다른가요?', answer: 'GEL은 아식스의 전통 충격흡수 젤 캡슐이고, FF Blast는 통통 튀는 신세대 바운시 폼입니다. 아식스는 클래식 GEL 라인(젤 님버스·젤 카야노 일부)과 신세대 FF Blast 라인(노바·메가·슈퍼블라스트)이 공존합니다. 상징적 전환점이 젤 카야노 33으로, 13년 만에 GEL을 빼고 FF Blast 듀얼 폼으로 바꿨습니다.' },
+      { question: '"blast"가 붙은 모델들은 뭐가 다른가요?', answer: '모두 FF Blast 바운시 폼 계열이지만 성격이 다릅니다. 노바블라스트(데일리 바운시)·메가블라스트(48mm 맥시멀 경량)·소닉블라스트(카본 맥시멀)·슈퍼블라스트(카본 없는 슈퍼트레이너)입니다. 통통 튀는 재미를 원하면 노바블라스트, 대회 가까운 빠른 훈련이면 슈퍼블라스트가 답입니다.' },
+      { question: '아식스 안정화는 뭘 사야 하나요?', answer: '젤 카야노 32 또는 33입니다. 카야노는 전 세계 안정화 추천 1순위로 꼽히는 평발·과내전 끝판왕입니다. 32는 4D Guidance로 단단하게, 33은 FLUIDSUPPORT로 부드럽게 잡아줍니다. 안정화 선택이 처음이면 자가진단부터 하는 걸 권합니다.' },
+      { question: '메타스피드 스카이·엣지·레이는 뭐가 다른가요?', answer: '주법으로 갈립니다. 스카이+는 보폭을 늘리는 스트라이드 러너용, 엣지+는 피치(케이던스)를 높이는 러너용입니다. 레이는 129g 초경량 버전으로 전족 착지·단거리에 특화됐습니다. 본인이 보폭형이면 스카이, 회전수형이면 엣지를 고르세요.' },
+      { question: '아식스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아식스는 나이키보다 토박스가 넉넉한 편이라 한국 러너에게 친화적입니다. 특히 카야노·GT 라인은 2E·4E 와이드 옵션이 풍부하고, 메가블라스트·소닉블라스트·젤 벤처도 넓은 편입니다. 다만 메타스피드 레이·메타후지 같은 일부 레이싱·트레일은 좁으니 주의하세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>아식스는 두 시대가 공존합니다</strong> — 전통 <strong>GEL(젤)</strong> 라인과 통통 튀는 신세대 <strong>FF Blast</strong> 라인. 이름에 "blast"가 붙으면 바운시 폼 계열입니다.</li>
+    <li><strong>라인이 곧 용도</strong> — 카야노(안정화)·님버스(맥스 쿠션)·노바블라스트(데일리)·슈퍼블라스트(무카본 슈퍼)·메타스피드(카본 레이싱).</li>
+    <li><strong>안정화 명가 + 발볼 친화</strong> — 카야노는 세계 안정화 1순위, 와이드 옵션도 나이키보다 넉넉해 발볼 넓은 한국 러너에게 유리합니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔷</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 아식스 계급도 한 장</p>
+    <p>"카야노, 님버스, 노바블라스트, 메타스피드… 폼 이름까지 너무 많다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게·토박스는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> 계급도와 함께 보면 브랜드 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 아식스 읽는 법 — GEL 클래식 vs blast 신세대</h2>
+
+<p>아식스가 복잡해 보이는 건 <strong>두 세대가 섞여 있어서</strong>입니다. 전통의 <strong>GEL(젤)</strong> 충격흡수 라인과, 통통 튀는 <strong>FF Blast</strong> 바운시 폼 라인이 공존하죠. 먼저 라인 이름으로 용도를 잡으세요.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>젤 카야노 GEL-Kayano</strong></td><td>프리미엄 안정화</td><td>"평발·과내전" — 세계 안정화 1순위</td></tr>
+    <tr><td><strong>젤 님버스 GEL-Nimbus</strong></td><td>맥스 쿠션</td><td>"푹신한 장거리" — 중립 쿠션 대장</td></tr>
+    <tr><td><strong>노바블라스트 Novablast</strong></td><td>바운시 데일리</td><td>"통통 튀는 재미" — 만능 데일리</td></tr>
+    <tr><td><strong>슈퍼블라스트 Superblast</strong></td><td>무카본 슈퍼트레이너</td><td>"카본 없는 슈퍼슈즈" — 빠른 훈련</td></tr>
+    <tr><td><strong>메타/매직스피드 Speed</strong></td><td>카본 레이싱</td><td>메타=최상위, 매직=입문 카본</td></tr>
+  </tbody>
+</table>
+
+<p>핵심 전환점이 <strong>젤 카야노 33</strong>입니다. 13년간 GEL을 고수하던 카야노가 GEL을 빼고 FF Blast 듀얼 폼으로 바뀌었어요(이 변화의 호불호는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>에). 그만큼 아식스의 중심축이 GEL에서 FF Blast로 이동하는 중입니다.</p>
+
+<h2>2. FF 폼이 등급을 만든다 — Amplifoam → FF Blast → FF Turbo</h2>
+
+<p>아식스는 FlyteFoam(FF) 폼 종류로 등급이 갈립니다. 아래로 갈수록 가볍고 반발이 강해집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Amplifoam (EVA)</strong></td><td>가성비 입문</td><td>젤 벤처</td></tr>
+    <tr><td><strong>FF Blast+ / Plus</strong></td><td>안정적 데일리·쿠션</td><td>님버스 · 카야노</td></tr>
+    <tr><td><strong>FF Blast Max</strong></td><td>바운시 데일리</td><td>노바블라스트</td></tr>
+    <tr><td><strong>FF Blast Turbo</strong></td><td>맥시멀 경량</td><td>메가블라스트</td></tr>
+    <tr><td><strong>FF Turbo+ (PEBA)</strong></td><td>레이싱 최상위 반발</td><td>슈퍼블라스트 · 메타스피드</td></tr>
+    <tr><td><strong>FF Leap</strong></td><td>신세대 경량 폼</td><td>슈퍼블라스트 3 · 매직스피드 5 · 메타스피드 레이</td></tr>
+  </tbody>
+</table>
+
+<p>요약하면 <strong>FF Turbo+가 아식스 최상위 레이싱 폼(PEBA)</strong>입니다. 재밌는 건 슈퍼블라스트가 이 FF Turbo+로 <strong>카본 플레이트 없이</strong> 71% 에너지 리턴을 내는 "무카본 슈퍼슈즈"라는 점이에요.</p>
+
+<h2>3. 아식스 러닝화 계급도 — 15종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 아식스 러닝화 15종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-gel-venture-10"><strong>젤 벤처 10</strong></a></td><td>트레일 입문</td><td>Amplifoam</td><td>8.9만</td><td>322g</td><td>최저가, 4E 와이드 진입 신발</td></tr>
+    <tr><td><a href="/shoes/asics-novablast-5"><strong>노바블라스트 5</strong></a></td><td>바운시 데일리</td><td>FF Blast Max</td><td>16.9만</td><td>255g</td><td>통통 튀는 데일리의 정석</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-32"><strong>젤 카야노 32</strong></a></td><td>안정화</td><td>FF Blast+ · 4D Guidance</td><td>19.9만</td><td>300g</td><td>4D Guidance 단단한 평발 교정</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28"><strong>젤 님버스 28</strong></a></td><td>프리미엄 쿠션</td><td>FF Blast Plus</td><td>19.9만</td><td>281g</td><td>43.5mm 푹신, 중립 쿠션 대장</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-4"><strong>매직스피드 4</strong></a></td><td>카본 입문</td><td>FF Blast+ · FF Turbo · 카본</td><td>19.9만</td><td>237g</td><td>풀렝스 카본, 메타스피드 입문</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-33"><strong>젤 카야노 33</strong></a></td><td>안정화 신상</td><td>FF Blast 듀얼 · FLUIDSUPPORT</td><td>20.9만</td><td>298g</td><td>GEL 졸업, 부드러워진 카야노</td></tr>
+    <tr><td><a href="/shoes/asics-sonicblast"><strong>소닉블라스트</strong></a></td><td>카본 맥시멀</td><td>FF Blast+ · 카본</td><td>22.9만</td><td>255g</td><td>카본 플레이트 맥시멀 쿠션</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>22.9만</td><td>193g</td><td>193g 포크형 카본, 50g 감량</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>239g</td><td>239g, 더 부드러운 롱런</td></tr>
+    <tr><td><a href="/shoes/asics-metafuji-trail"><strong>메타후지 트레일</strong></a></td><td>트레일 레이싱</td><td>FF Turbo · 카본</td><td>27.9만</td><td>258g</td><td>카본 트레일 레이서</td></tr>
+    <tr><td><a href="/shoes/asics-megablast"><strong>메가블라스트</strong></a></td><td>맥시멀 바운시</td><td>FF Blast Turbo</td><td>29.9만</td><td>218g</td><td>48mm인데 218g, 구름 위 달리기</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus"><strong>메타스피드 스카이+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>205g</td><td>스트라이드(보폭) 서브3</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-edge-plus"><strong>메타스피드 엣지+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>208g</td><td>케이던스(피치) 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-ray"><strong>메타스피드 레이</strong></a></td><td>초경량 레이싱</td><td>FF Leap (ATPU)</td><td>39.9만</td><td>129g</td><td>129g, 81% 에너지 전족 특화</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 통통 튀는 만능 데일리</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a>(16.9만). 아식스 입문의 정석, 바운시한 재미가 강점입니다.</li>
+  <li><strong>🦶 평발·안정</strong> → <a href="/shoes/asics-gel-kayano-32">젤 카야노 32</a>(단단) 또는 <a href="/shoes/asics-gel-kayano-33">33</a>(부드러움). 둘의 차이는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33</a>에, 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에 있습니다.</li>
+  <li><strong>☁️ 푹신한 프리미엄 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(43.5mm). 더 가볍고 높은 스택을 원하면 48mm <a href="/shoes/asics-megablast">메가블라스트</a>.</li>
+  <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 또는 더 가벼운 <a href="/shoes/asics-magic-speed-5">5</a>. 둘의 차이는 <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5</a>에.</li>
+  <li><strong>⚡ 카본 없이 빠른 훈련·롱런</strong> → <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(템포) 또는 <a href="/shoes/asics-superblast-3">3</a>(부드러운 롱런). 비교는 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3</a>에.</li>
+  <li><strong>🏅 풀마라톤 레이스(최상위)</strong> → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>·<a href="/shoes/asics-metaspeed-edge-plus">엣지+</a>(아래 5번 주법별 참고).</li>
+  <li><strong>💰 트레일 입문 최저가</strong> → <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(8.9만, 4E 와이드).</li>
+</ul>
+
+<h2>5. 메타스피드 3형제 — 주법으로 갈린다 (아식스만의 특징)</h2>
+
+<p>아식스 최상위 레이싱 <strong>메타스피드</strong>는 다른 브랜드와 달리 <strong>주법(달리는 방식)으로 모델이 나뉩니다.</strong> 이게 아식스 레이싱의 가장 독특한 점이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>맞는 주법</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus"><strong>스카이+</strong></a></td><td>스트라이드형 (보폭을 늘림)</td><td>205g, 보폭이 큰 러너의 서브3</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-edge-plus"><strong>엣지+</strong></a></td><td>케이던스형 (회전수를 높임)</td><td>208g, 피치가 빠른 러너</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-ray"><strong>레이</strong></a></td><td>전족 착지·단거리</td><td>129g 초경량, 81% 에너지 리턴</td></tr>
+  </tbody>
+</table>
+
+<p>즉 <strong>보폭을 늘려 달리면 스카이, 다리 회전수를 높여 달리면 엣지</strong>입니다. 본인 주법을 모르겠다면, 같은 페이스에서 발이 더 멀리 뻗는 느낌이면 스카이형, 종종걸음처럼 빠르게 구르는 느낌이면 엣지형입니다.</p>
+
+<h2>6. 발볼 — 아식스는 한국 러너 친화적</h2>
+
+<p>나이키와 달리 <strong>아식스는 토박스가 넉넉한 편</strong>이라 발볼 넓은 한국 러너에게 유리합니다. 특히 안정화·트레일 라인의 와이드 옵션이 풍부해요.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>넓음·와이드 풍부 (한국 친화)</strong></td><td>젤 카야노(2E·4E) · 젤 벤처(4E) · 메가블라스트 · 소닉블라스트</td></tr>
+    <tr><td><strong>표준</strong></td><td>님버스 28 · 노바블라스트 5 · 슈퍼블라스트 · 매직스피드 · 메타스피드 스카이·엣지</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>메타스피드 레이 · 메타후지 트레일</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">🏆</span>
+  <div class="callout-body">
+    <p class="callout-title">아식스가 안정화의 명가인 이유</p>
+    <p>카야노는 전 세계 안정화 추천에서 1순위로 가장 자주 호명되는 모델입니다. 4D Guidance·FLUIDSUPPORT 같은 적응형 지지 기술의 레퍼런스죠. 평발·과내전 한국 러너에게 아식스가 첫손에 꼽히는 이유입니다. 안정화 선택이 처음이면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">자가진단 가이드</a>로 내 발에 맞는 지지 방식부터 확인하세요. 참고로 입문 안정화 GT-2000·GT-1000은 본 사이트 미수록이라, 안정화는 카야노 기준으로 보면 됩니다.</p>
+  </div>
+</div>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'nike-running-shoes-lineup-tier-guide-2026',
     slug: 'nike-running-shoes-lineup-tier-guide-2026',
     title: '나이키 러닝화 계급도 2026 — 페가수스·보메로·스트럭처·Fly, 라인으로 읽는 전체 라인업 | 입문부터 알파플라이까지 한 장 정리',
@@ -157,7 +325,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -328,7 +496,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 러닝화 계급도</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
