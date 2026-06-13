@@ -3,6 +3,164 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'adidas-running-shoes-lineup-tier-guide-2026',
+    slug: 'adidas-running-shoes-lineup-tier-guide-2026',
+    title: '아디다스 러닝화 계급도 2026 — 아디제로·슈퍼노바·보스턴, 스피드 사다리와 EnergyRods로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
+    description:
+      '아디다스 러닝화 8종을 아디제로 스피드 사다리(SL2→보스턴→Evo SL→아디오스 프로)와 데일리(슈퍼노바)·트레일(테렉스)로 한 장에. 슈퍼노바 14.9만부터 아디오스 프로 29.9만까지 가격·무게·폼 비교표 + EnergyRods(카본 막대)가 뭔지 + Evo SL이 카본 없이 빠른 이유 + Boost가 사라진 자리까지 정리했습니다.',
+    thumbnail: '/images/blog/adidas-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['아디다스 러닝화', '아디다스 계급도', '러닝화 라인업', '러닝화 등급', '아디제로', '아디오스 프로', '슈퍼노바', '보스턴', 'EnergyRods', 'Lightstrike'],
+    faqs: [
+      { question: '아디다스 "아디제로(Adizero)"는 무슨 뜻인가요?', answer: '아디제로는 아디다스의 스피드·레이싱 서브브랜드입니다. 이름에 아디제로가 붙으면 빠르게 달리기 위한 신발이에요. 입문 SL2부터 보스턴(슈퍼트레이너), Evo SL(카본 없는 슈퍼폼), 아디오스 프로(카본 레이싱), 그리고 97g 서브2 신발 아디오스 프로 에보까지 하나의 스피드 사다리를 이룹니다.' },
+      { question: 'EnergyRods(에너지로드)가 뭔가요?', answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 카본 막대를 넣은 구조입니다. 아디오스 프로는 5개, 보스턴은 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.' },
+      { question: '아디제로 Evo SL은 왜 카본도 없는데 빠른가요?', answer: '레이싱화 아디오스 프로에 쓰는 고급 폼(100% Lightstrike Pro)을 카본 플레이트·로드 없이 통째로 넣었기 때문입니다. 223g 경량에 83% 에너지 리턴으로, 20만원대에 슈퍼슈즈에 가까운 반발을 줍니다. 카본의 부담 없이 빠른 훈련을 원하는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
+      { question: '아디다스 Boost(부스트)는 어디 갔나요?', answer: '러닝 퍼포먼스 라인에서는 사실상 세대교체됐습니다. 지금 아디다스 러닝화는 데일리에 Dreamstrike+, 레이싱에 Lightstrike Pro를 씁니다. Boost는 이제 울트라부스트 같은 라이프스타일·캐주얼 쪽에 주로 남아 있어요.' },
+      { question: '아디다스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아디다스는 토박스가 좁은 편이라 발볼 넓으면 주의가 필요합니다. 다만 슈퍼노바 라이즈 2와 아디제로 SL2는 와이드 옵션이 있어 그나마 낫습니다. 아디오스 프로·아그라빅 같은 레이싱·트레일은 좁으니 발볼 넓으면 반 치수 크게 신거나 다른 브랜드를 함께 보세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>아디다스는 "아디제로"가 핵심</strong> — 이름에 아디제로가 붙으면 스피드·레이싱 라인입니다. 데일리는 슈퍼노바 하나뿐이고, 나머지는 거의 아디제로예요.</li>
+    <li><strong>EnergyRods = 카본 막대</strong> — 통짜 플레이트 대신 발가락뼈를 본뜬 카본 막대로 추진합니다(아디오스 프로 5개, 보스턴 2.0).</li>
+    <li><strong>Boost는 퇴장, Lightstrike 시대</strong> — 퍼포먼스 폼은 Dreamstrike+(데일리)·Lightstrike Pro(레이싱)로 세대교체됐습니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔺</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 아디다스 계급도 한 장</p>
+    <p>"아디제로에 SL, 보스턴, Evo, 아디오스 프로… 같은 아디제로인데 뭐가 다른지 모르겠다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a>·<a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a>·<a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> 계급도와 함께 보면 브랜드 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 아디다스 읽는 법 — 아디제로(스피드) vs 슈퍼노바(데일리)</h2>
+
+<p>아디다스 러닝화를 이해하는 열쇠는 단어 하나, <strong>아디제로(Adizero)</strong>입니다. 아디제로가 붙으면 <strong>빠르게 달리기 위한 스피드 라인</strong>이에요. 아디다스는 다른 브랜드와 달리 데일리보다 레이싱(아디제로)에 무게를 둡니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>슈퍼노바 Supernova</strong></td><td>데일리 쿠션</td><td>"매일 편하게" — 사실상 유일한 순수 데일리</td></tr>
+    <tr><td><strong>아디제로 Adizero</strong></td><td>스피드·레이싱</td><td>SL2 → 보스턴 → Evo SL → 아디오스 프로</td></tr>
+    <tr><td><strong>테렉스 Terrex</strong></td><td>트레일</td><td>아그라빅 — Continental 그립</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 아디다스만의 추진 기술이 <strong>EnergyRods(에너지로드)</strong>입니다. 다른 브랜드가 통짜 카본 플레이트를 넣을 때, 아디다스는 <strong>발가락뼈를 본뜬 카본 막대</strong>를 넣어요(아디오스 프로 5개, 보스턴 2.0). 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 방식입니다.</p>
+
+<h2>2. 폼이 등급을 만든다 — Lightstrike → Dreamstrike+ → Lightstrike Pro</h2>
+
+<p>아디다스 폼은 데일리와 레이싱이 확실히 갈립니다. 한때 상징이던 Boost는 러닝 퍼포먼스에서 물러나고, 지금은 Lightstrike 계열이 중심이에요.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Lightstrike (EVA)</strong></td><td>기본 트레일·쿠션</td><td>테렉스 아그라빅</td></tr>
+    <tr><td><strong>Dreamstrike+</strong></td><td>데일리 슈퍼크리티컬</td><td>슈퍼노바 라이즈</td></tr>
+    <tr><td><strong>Lightstrike Pro (PEBA급)</strong></td><td>레이싱 최상위 반발</td><td>SL2 · 보스턴 · Evo SL · 아디오스 프로</td></tr>
+    <tr><td><strong>+ EnergyRods (카본 막대)</strong></td><td>추진력 강화</td><td>보스턴(2.0) · 아디오스 프로(5개)</td></tr>
+  </tbody>
+</table>
+
+<p>핵심은 <strong>Lightstrike Pro가 아디다스 최상위 레이싱 폼</strong>이라는 점입니다. 재밌는 건 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>이 이 Lightstrike Pro를 <strong>카본·로드 없이 100%</strong> 넣어 20만원대에 슈퍼슈즈급 반발을 낸다는 거예요(아래 5번).</p>
+
+<h2>3. 아디다스 러닝화 계급도 — 8종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 아디다스 러닝화 8종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/adidas-supernova-rise-2"><strong>슈퍼노바 라이즈 2</strong></a></td><td>입문 데일리</td><td>Dreamstrike+</td><td>14.9만</td><td>257g</td><td>와이드 옵션, 힐스트라이커 친화</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-sl2"><strong>아디제로 SL2</strong></a></td><td>가성비 트레이닝</td><td>Lightstrike 듀얼</td><td>14.9만</td><td>245g</td><td>경량 멀티 트레이너, 아디제로 입문</td></tr>
+    <tr><td><a href="/shoes/adidas-supernova-rise-3"><strong>슈퍼노바 라이즈 3</strong></a></td><td>데일리 쿠션</td><td>Dreamstrike+ (20%↑)</td><td>15.9만</td><td>270g</td><td>37mm 스택, 쿠션 중심 데일리</td></tr>
+    <tr><td><a href="/shoes/adidas-boston-13"><strong>보스턴 13</strong></a></td><td>슈퍼트레이너</td><td>Lightstrike Pro + 로드 2.0</td><td>17.9만</td><td>254g</td><td>Energy Rods, 훈련+레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>테렉스 아그라빅 4</strong></a></td><td>올라운드 트레일</td><td>Lightstrike (EVA)</td><td>20.9만</td><td>283g</td><td>Continental 그립 1순위</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>83% 에너지, 가성비 끝판왕</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>265g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4"><strong>아디오스 프로 4</strong></a></td><td>카본 레이싱</td><td>Lightstrike Pro + 5 로드</td><td>29.9만</td><td>200g</td><td>알파플라이보다 안정적인 서브3</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 더 위에는 97g 서브2 신발 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>가 있지만, 한국 래플 한정으로 일반 판매 라인업과 별개입니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 매일 편한 데일리</strong> → <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>(쿠션) 또는 와이드 되는 <a href="/shoes/adidas-supernova-rise-2">라이즈 2</a>. 세대 차이는 <a href="/blog/adidas-supernova-rise-2-vs-3-comparison">슈퍼노바 라이즈 2 vs 3</a>에.</li>
+  <li><strong>💰 가성비 멀티 트레이너</strong> → <a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>(14.9만). 데일리부터 가벼운 템포까지.</li>
+  <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>. 223g에 슈퍼폼, 가성비 슈퍼슈즈로 화제작입니다. 자세한 분석은 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>에.</li>
+  <li><strong>🏃 훈련+레이스 겸용 카본</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. Energy Rods 2.0으로 템포·하프에.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(200g). 5개 Energy Rods로 알파플라이보다 안정적인 서브3 무기.</li>
+  <li><strong>⛰️ 트레일</strong> → 올라운드 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>(Continental 그립) 또는 레이싱 <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>.</li>
+</ul>
+
+<h2>5. 아디제로 스피드 사다리 — SL2에서 아디오스 프로까지</h2>
+
+<p>아디다스 라인업의 진짜 핵심은 <strong>아디제로 안에서의 단계</strong>입니다. 같은 아디제로라도 폼·플레이트·가격이 사다리처럼 올라가요.</p>
+
+<table>
+  <thead>
+    <tr><th>단계</th><th>모델</th><th>핵심</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>① 입문 트레이닝</td><td><a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a></td><td>Lightstrike 듀얼폼, 데일리+템포</td></tr>
+    <tr><td>② 슈퍼트레이너</td><td><a href="/shoes/adidas-boston-13">보스턴 13</a></td><td>Energy Rods 2.0, 훈련+레이스</td></tr>
+    <tr><td>③ 카본 없는 슈퍼폼</td><td><a href="/shoes/adidas-adizero-evo-sl">Evo SL</a></td><td>100% Lightstrike Pro, 가성비</td></tr>
+    <tr><td>④ 카본 레이싱</td><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>5개 Energy Rods, 서브3</td></tr>
+    <tr><td>⑤ 서브2 (한정)</td><td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td><td>97g, 래플 한정</td></tr>
+  </tbody>
+</table>
+
+<p>즉 <strong>데일리는 슈퍼노바, 빠르게는 아디제로 사다리를 올라가면</strong> 됩니다. 입문은 SL2, 대회는 아디오스 프로, 그 사이를 보스턴·Evo SL이 채웁니다.</p>
+
+<h2>6. 발볼 — 아디다스는 좁은 편, 한국 러너 주의</h2>
+
+<p>아디다스는 나이키처럼 <strong>토박스가 좁은 편</strong>이라 발볼 넓은 한국 러너는 확인이 필요합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>와이드 옵션 (그나마 낫다)</strong></td><td>슈퍼노바 라이즈 2 · 아디제로 SL2</td></tr>
+    <tr><td><strong>표준</strong></td><td>슈퍼노바 라이즈 3 · 보스턴 13 · Evo SL · 아그라빅 4</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>아디오스 프로 4 · 아그라빅 스피드 울트라</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 넓으면 슈퍼노바 2·SL2부터</p>
+    <p>아디다스에서 발볼이 걱정이라면 와이드가 나오는 <strong>슈퍼노바 라이즈 2·아디제로 SL2</strong>가 무난합니다. 레이싱(아디오스 프로)은 좁으니 발볼 넓으면 토박스 넉넉한 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>를 함께 보세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+  </div>
+</div>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🔺 아디다스 브랜드 전체 신발 보기 → <a href="/brands/adidas">아디다스 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'brooks-running-shoes-lineup-tier-guide-2026',
     slug: 'brooks-running-shoes-lineup-tier-guide-2026',
     title: '브룩스 러닝화 계급도 2026 — 고스트·글리세린·아드레날린, GTS와 DNA폼으로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
@@ -150,7 +308,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -299,7 +457,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -467,7 +625,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -628,7 +786,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -799,7 +957,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
