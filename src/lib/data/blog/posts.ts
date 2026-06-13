@@ -3,6 +3,161 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'puma-running-shoes-lineup-tier-guide-2026',
+    slug: 'puma-running-shoes-lineup-tier-guide-2026',
+    title: '푸마 러닝화 계급도 2026 — 디비에이트·벨로시티·패스트알, 나이트로 폼과 엘리트로 읽는 전체 라인업 | 입문부터 서브2 슈퍼슈즈까지 한 장 정리',
+    description:
+      '푸마 러닝화 9종을 라인(벨로시티 입문·매그니파이/매그맥스 쿠션·디비에이트 슈퍼트레이너·엘리트 레이싱)과 나이트로 폼 등급으로 한 장에. 벨로시티 17.9만부터 패스트알 엘리트 37.9만까지 가격·무게·폼 비교표 + "나이트로/엘리트/퓨어" 수식어 뜻 + 디비에이트 5형제 + 가성비 카본의 강자 푸마까지 정리했습니다.',
+    thumbnail: '/images/blog/puma-lineup-tier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-13',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['푸마 러닝화', '푸마 계급도', '러닝화 라인업', '러닝화 등급', '디비에이트 나이트로', '벨로시티 나이트로', '패스트알', 'NITRO', '가성비 카본', '레이싱화'],
+    faqs: [
+      { question: '푸마 러닝화 이름에 다 붙는 "나이트로(NITRO)"가 뭔가요?', answer: '푸마의 질소 주입 슈퍼크리티컬 폼입니다. 거의 모든 푸마 러닝화에 들어가서 이름에 "나이트로"가 붙어요. 기본 Nitro Foam(데일리)부터 Nitro Elite(레이싱용 PEBA급)까지 등급이 나뉩니다. 즉 나이트로는 "푸마 폼이 들어갔다"는 공통 표시이고, 앞의 라인 이름(벨로시티·디비에이트 등)이 용도를 나타냅니다.' },
+      { question: '"엘리트"랑 "퓨어"는 무슨 뜻인가요?', answer: '"엘리트(Elite)"가 붙으면 카본 플레이트 레이싱화입니다(디비에이트 엘리트, 패스트알 엘리트). "퓨어(Pure)"는 반대로 카본을 뺀 100% PEBA 슈퍼폼 버전이에요(디비에이트 퓨어). 대회용은 엘리트, 카본 없이 부드럽게 빠른 훈련은 퓨어로 기억하면 됩니다.' },
+      { question: '디비에이트 나이트로 종류가 너무 많은데 차이가 뭔가요?', answer: '디비에이트는 푸마의 카본/슈퍼트레이너 핵심 라인이라 변형이 많습니다. 퓨어(무카본 100% PEBA)·3·4(카본 슈퍼트레이너)·엘리트 3·4(카본 레이싱)로 나뉘어요. 빠른 훈련이면 퓨어나 디비에이트 3·4, 대회면 엘리트, 둘 다 잡고 싶으면 디비에이트 4(800km 내구성)입니다.' },
+      { question: '푸마 러닝화는 가성비가 좋나요?', answer: '네, 가성비가 푸마의 핵심 강점입니다. 후발 주자로서 비슷한 성능을 더 싸게 내놓는 전략이에요. 벨로시티 나이트로 4는 17만원대 가성비 데일리, 디비에이트 엘리트는 29만원대로 베이퍼플라이보다 저렴한 카본 레이싱입니다. 카본 슈퍼트레이너(디비에이트 3·4)도 경쟁작보다 쌉니다.' },
+      { question: '푸마는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 벨로시티 나이트로 4와 레이싱(엘리트 3·패스트알)은 좁은 편이라 주의가 필요하고, 디비에이트 나이트로 4·매그니파이·매그맥스는 표준입니다. 디비에이트는 3세대까지 좁다는 평이 많았으나 4세대에서 와이드 옵션이 추가됐습니다. 발볼이 많이 넓으면 표준 모델 중에서도 반 치수 크게 신으세요.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>푸마는 모든 모델이 "나이트로(NITRO)"</strong> — 질소 폼이 정체성이라 이름에 다 붙습니다. 앞의 라인 이름(벨로시티·디비에이트 등)이 용도예요.</li>
+    <li><strong>수식어가 등급</strong> — "엘리트"=카본 레이싱, "퓨어"=카본 뺀 100% PEBA. 디비에이트가 슈퍼트레이너~레이싱의 핵심 라인입니다.</li>
+    <li><strong>가성비가 강점</strong> — 17만원대 데일리부터 29만원대 카본 레이싱까지, 경쟁작보다 저렴합니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🐆</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 푸마 계급도 한 장</p>
+    <p>"디비에이트에 나이트로, 엘리트, 퓨어… 푸마는 죄다 나이트로라 뭐가 윗급인지 모르겠다"는 분을 위한 지도입니다. 추천 순위가 아니라 <strong>라인과 폼으로 전체 라인업을 한 번에 이해</strong>시키는 글이에요. 가격은 한국 공식가, 무게는 RunRepeat 실측 기준이며 각 모델은 상세 페이지로 연결됩니다. <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a>·<a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a>·<a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> 등 다른 브랜드 계급도와 함께 보면 비교가 쉽습니다.</p>
+  </div>
+</div>
+
+<h2>1. 푸마 읽는 법 — 다 "나이트로", 라인이 용도</h2>
+
+<p>푸마 러닝화의 공통분모는 <strong>나이트로(NITRO)</strong>입니다. 질소를 주입한 슈퍼크리티컬 폼이 거의 모든 모델에 들어가서 이름에 다 붙어요. 그래서 "나이트로"는 등급이 아니라 <strong>"푸마 폼이 들어갔다"는 공통 표시</strong>이고, 앞의 라인 이름이 진짜 용도를 알려줍니다.</p>
+
+<table>
+  <thead>
+    <tr><th>라인</th><th>용도</th><th>한 줄</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>벨로시티 Velocity</strong></td><td>입문·데일리</td><td>"처음이면 벨로시티" — 가성비 만능</td></tr>
+    <tr><td><strong>매그니파이 / 매그맥스 Magnify/MagMax</strong></td><td>맥스 쿠션</td><td>푹신함 — 매그맥스가 더 맥시멀</td></tr>
+    <tr><td><strong>디비에이트 Deviate</strong></td><td>슈퍼트레이너~레이싱</td><td>"푸마의 핵심" — 변형이 가장 많음</td></tr>
+    <tr><td><strong>패스트알 Fast-R</strong></td><td>최상위 레이싱</td><td>분리형 디자인의 서브2급 무기</td></tr>
+  </tbody>
+</table>
+
+<p>그리고 수식어로 등급을 읽습니다.</p>
+<ul>
+  <li><strong>"엘리트(Elite)" = 카본 플레이트 레이싱</strong> — 디비에이트 엘리트, 패스트알 엘리트.</li>
+  <li><strong>"퓨어(Pure)" = 카본 뺀 100% PEBA 슈퍼폼</strong> — 디비에이트 퓨어(무플레이트).</li>
+</ul>
+
+<h2>2. 나이트로 폼이 등급을 만든다</h2>
+
+<p>같은 나이트로라도 종류로 등급이 갈립니다. 데일리는 기본 Nitro Foam, 레이싱은 Nitro Elite(PEBA급)예요.</p>
+
+<table>
+  <thead>
+    <tr><th>폼</th><th>성격</th><th>들어가는 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Nitro Foam</strong></td><td>기본 질소 데일리 폼</td><td>벨로시티 · 매그니파이</td></tr>
+    <tr><td><strong>NITROFOAM (100% PEBA)</strong></td><td>무플레이트 슈퍼폼</td><td>디비에이트 퓨어</td></tr>
+    <tr><td><strong>Nitro Elite (A-TPU/PEBA)</strong></td><td>레이싱 최상위 반발</td><td>디비에이트 엘리트 · 패스트알</td></tr>
+    <tr><td><strong>+ PWRPLATE 카본</strong></td><td>추진 플레이트</td><td>디비에이트 3·4 · 엘리트 · 패스트알</td></tr>
+  </tbody>
+</table>
+
+<h2>3. 푸마 러닝화 계급도 — 9종 한눈에</h2>
+
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 푸마 러닝화 9종을 줄 세우면 이렇게 됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/puma-velocity-nitro-4"><strong>벨로시티 나이트로 4</strong></a></td><td>입문 데일리</td><td>Nitro Foam</td><td>17.9만</td><td>224g</td><td>가성비 최강 데일리 트레이너</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-pure-nitro"><strong>디비에이트 퓨어</strong></a></td><td>무카본 슈퍼폼</td><td>100% PEBA NITROFOAM</td><td>18.9만</td><td>220g</td><td>무플레이트, 데일리+스피드</td></tr>
+    <tr><td><a href="/shoes/puma-magnify-nitro-3"><strong>매그니파이 나이트로 3</strong></a></td><td>맥스 쿠션</td><td>Nitro Foam (PEBA)</td><td>19.9만</td><td>264g</td><td>PEBA 맥시멀, 20만↓ 관절 보호</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-3"><strong>디비에이트 나이트로 3</strong></a></td><td>카본 슈퍼트레이너</td><td>Nitro + Nitro Elite + 카본</td><td>21.9만</td><td>268g</td><td>22만 카본, 마하X보다 절약</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-4"><strong>디비에이트 나이트로 4</strong></a></td><td>카본 슈퍼트레이너 신상</td><td>Dual NITROFOAM + 카본</td><td>21.9만</td><td>250g</td><td>800km 내구성, 와이드 추가</td></tr>
+    <tr><td><a href="/shoes/puma-magmax-nitro-2"><strong>매그맥스 나이트로 2</strong></a></td><td>맥시멀 쿠션</td><td>Nitro Elite Foam</td><td>23.9만</td><td>268g</td><td>엘리트 폼 + 훈련용 내구성</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-3"><strong>디비에이트 엘리트 3</strong></a></td><td>카본 레이싱</td><td>Nitro Elite (A-TPU) + 카본</td><td>28.9만</td><td>204g</td><td>77% 리턴, 베이퍼플라이 킬러</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-4"><strong>디비에이트 엘리트 4</strong></a></td><td>카본 레이싱 신상</td><td>NITROFOAM Elite 듀얼 + 카본</td><td>28.9만</td><td>170g</td><td>170g 초경량, 부드러운 ATPU</td></tr>
+    <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3"><strong>패스트알 엘리트 3</strong></a></td><td>최상위 레이싱</td><td>Nitro Elite (A-TPU) + 카본</td><td>37.9만</td><td>173g</td><td>분리형, 알파플라이에 도전</td></tr>
+  </tbody>
+</table>
+
+<p>※ 무게는 남성 US 9 기준, 가격은 한국 공식가입니다. 스택·드롭·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
+
+<ul>
+  <li><strong>🟢 첫 푸마·가성비 데일리</strong> → <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a>(17.9만, 224g). 입문 가성비 만능.</li>
+  <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/puma-deviate-pure-nitro">디비에이트 퓨어</a>. 100% PEBA 무플레이트로 220g 경량. <a href="/blog/puma-deviate-pure-nitro-review">디비에이트 퓨어 리뷰</a> 참고.</li>
+  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/puma-magnify-nitro-3">매그니파이 나이트로 3</a>(20만↓ PEBA) 또는 더 두툼한 <a href="/shoes/puma-magmax-nitro-2">매그맥스 나이트로 2</a>.</li>
+  <li><strong>🏃 카본 슈퍼트레이너(가성비)</strong> → <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a>(800km 내구성·와이드). 3세대와의 차이는 <a href="/blog/puma-deviate-nitro-3-vs-4-comparison">디비에이트 3 vs 4</a>에.</li>
+  <li><strong>🏅 풀마라톤 레이스(가성비 카본)</strong> → <a href="/shoes/puma-deviate-nitro-elite-3">디비에이트 엘리트 3</a>(29만, 베이퍼 킬러) 또는 170g <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>.</li>
+  <li><strong>🚀 최상위 슈퍼슈즈</strong> → <a href="/shoes/puma-fast-r-nitro-elite-3">패스트알 엘리트 3</a>(173g 분리형). 알파플라이에 맞서는 푸마의 최종 무기.</li>
+</ul>
+
+<h2>5. 디비에이트 5형제 — 푸마의 핵심 라인</h2>
+
+<p>온의 클라우드몬스터처럼, 푸마의 헷갈림은 <strong>디비에이트 변형이 많아서</strong>입니다. 같은 디비에이트인데 수식어와 세대로 갈려요.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>성격</th><th>카본</th><th>가격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/puma-deviate-pure-nitro">디비에이트 퓨어</a></td><td>무플레이트 100% PEBA</td><td>없음</td><td>18.9만</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-3">디비에이트 나이트로 3</a></td><td>카본 슈퍼트레이너</td><td>PWRPLATE</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a></td><td>신형, 800km·와이드</td><td>PWRPLATE</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-3">디비에이트 엘리트 3</a></td><td>카본 레이싱</td><td>PWRPLATE</td><td>28.9만</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 엘리트 4</a></td><td>신형 170g 레이싱</td><td>PWRPLATE</td><td>28.9만</td></tr>
+  </tbody>
+</table>
+
+<p>정리하면 — <strong>카본 없이 부드럽게면 퓨어, 훈련+레이스 겸용 카본이면 디비에이트 3·4, 대회 전용이면 엘리트</strong>입니다. "나이트로"는 디비에이트 슈퍼트레이너, "엘리트"가 붙으면 레이싱으로 한 단계 올라간다고 보면 됩니다.</p>
+
+<h2>6. 발볼 — 모델 따라 다름, 한국 러너 확인 필수</h2>
+
+<p>푸마는 모델별로 토박스 편차가 큽니다. 레이싱·입문 일부가 좁은 편이라 발볼 넓은 한국 러너는 확인이 필요해요.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼</th><th>모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>표준 (무난)</strong></td><td>디비에이트 나이트로 3·4 · 엘리트 4 · 매그니파이 · 매그맥스 · 디비에이트 퓨어</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>벨로시티 나이트로 4 · 디비에이트 엘리트 3 · 패스트알 엘리트 3</td></tr>
+  </tbody>
+</table>
+
+<p>디비에이트는 3세대까지 좁다는 평이 많았으나 <strong>4세대에서 와이드 옵션이 추가</strong>됐습니다. 발볼이 많이 넓다면 토박스가 넉넉한 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>를 함께 보세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>🐆 푸마 브랜드 전체 신발 보기 → <a href="/brands/puma">푸마 브랜드 페이지</a></li>
+  <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·푸마 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'on-running-shoes-lineup-tier-guide-2026',
     slug: 'on-running-shoes-lineup-tier-guide-2026',
     title: '온(On) 러닝화 계급도 2026 — 클라우드몬스터·클라우드서퍼·클라우드붐, 수식어로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
@@ -150,7 +305,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>☁️ 온 브랜드 전체 신발 보기 → <a href="/brands/on">온(On) 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·On 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -308,7 +463,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔺 아디다스 브랜드 전체 신발 보기 → <a href="/brands/adidas">아디다스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -462,7 +617,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔻 브룩스 브랜드 전체 신발 보기 → <a href="/brands/brooks">브룩스 브랜드 페이지</a></li>
   <li>🦶 안정화 베스트 → <a href="/best/stability">안정화 러닝화 추천</a> · 레이싱 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·브룩스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -611,7 +766,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔶 호카 브랜드 전체 신발 보기 → <a href="/brands/hoka">호카 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a> · 안정화 → <a href="/best/stability">안정화 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·호카 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -779,7 +934,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔷 아식스 브랜드 전체 신발 보기 → <a href="/brands/asics">아식스 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·아식스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -940,7 +1095,7 @@ export const blogPosts: BlogPost[] = [
 <ul>
   <li>🔵 나이키 브랜드 전체 신발 보기 → <a href="/brands/nike">나이키 브랜드 페이지</a></li>
   <li>🏁 레이싱 카본화 베스트 → <a href="/best/racing">레이싱 러닝화 추천</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·나이키 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -1111,7 +1266,7 @@ export const blogPosts: BlogPost[] = [
   <li>🟦 뉴발란스 브랜드 전체 신발 보기 → <a href="/brands/new-balance">뉴발란스 브랜드 페이지</a></li>
   <li>🟩 안정화 카테고리 베스트 → <a href="/best/stability">안정화 러닝화 추천</a></li>
   <li>🟨 평발·과내전이라면 → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 + 지지 방식 가이드</a></li>
-  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a></li>
+  <li>🔵 다른 브랜드 계급도 → <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a> · <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온</a> · <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
