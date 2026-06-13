@@ -6925,6 +6925,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: '/images/blog/2026-disney-run-incheon-virtual-run.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-05',
+    updatedAt: '2026-06-13',
     category: 'news' as const,
     readingTime: 6,
     tags: ['디즈니런', '디즈니런 2026', '디즈니 버추얼런', '디즈니런 인천', '버추얼런', '러닝 이벤트', '토이스토리', '인천 마라톤'],
@@ -6958,15 +6959,17 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>3차</strong></td><td>주토피아</td><td>8/12(수) ~ 8/24(월)</td><td>8/6(목)</td></tr>
   </tbody>
 </table>
-<p>장소는 <strong>"어디에서나!"</strong> — 한강이든 동네 공원이든 본인 코스에서 달리면 됩니다. 여름 더위를 감안하면 새벽·야간 러닝이 좋겠죠 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></p>
+<p>각 회차 <strong>참가비 4만원·선착순 5천 명</strong>이며, 완주 인증하면 테마별 한정 메달·굿즈가 약 2주 내 배송됩니다. 장소는 <strong>"어디에서나!"</strong> — 한강이든 동네 공원이든 본인 코스에서 달리면 됩니다. 여름 더위를 감안하면 새벽·야간 러닝이 좋겠죠 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">폭염 러닝 안전 가이드</a></p>
 
-<h2>② 디즈니런 2026 인천 — 본 대회</h2>
+<h2>② 디즈니런 2026 인천 — 본 대회 (종목·참가비 공개)</h2>
 <ul>
-  <li><strong>장소</strong>: 인천 <strong>상상플랫폼</strong> (인천 내항 일대)</li>
+  <li><strong>장소</strong>: 인천 <strong>상상플랫폼</strong> (인천 중구 월미로, 내항 일대)</li>
   <li><strong>일정</strong>: <strong>10월 24일(토)</strong></li>
-  <li><strong>티켓 오픈</strong>: <strong>8/31(월) 예정</strong></li>
+  <li><strong>종목</strong>: <strong>5km(곰돌이 푸·가족 친화)</strong> · <strong>10km(미키와 친구들·러닝 애호가)</strong></li>
+  <li><strong>참가비</strong>: 5km <strong>65,000원</strong> · 10km <strong>80,000원</strong> — 유니클로 한정판 티셔츠 + 완주 메달 포함</li>
+  <li><strong>티켓 오픈</strong>: <strong>8/31(월) 오전 10시, 선착순 1.5만 명</strong></li>
 </ul>
-<p>2025 여의도 대회는 3km·10km 종목으로 진행됐는데, 인천 대회의 구체 종목·코스·참가비는 아직 미공개입니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을 참고하세요.</p>
+<p>주최는 디즈니코리아·스포츠서울·블렌트이고, <strong>유니클로</strong>가 공식 머천다이즈 파트너로 한정 티셔츠를 제작합니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을 참고하고, 대회 일정은 <a href="/marathon/disney-run-incheon-2026">디즈니런 캘린더 페이지</a>에서도 확인할 수 있습니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">🎟️</span>
@@ -6988,7 +6991,7 @@ export const blogPosts: BlogPost[] = [
 <h2>마무리</h2>
 <p>2025년의 인기를 잇는 디즈니런이 <strong>버추얼런(여름) → 인천 본 대회(가을)</strong>로 한 해를 길게 채웁니다. 우선 6/11 토이스토리 버추얼런부터 챙기고, 10/24 인천 본 대회는 8/31 티켓 오픈을 기다리면 됩니다. 다른 가을 러닝 이벤트와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 일정·테마·장소는 디즈니코리아(@disneykorea) 공식 발표(2026-06-04) 기준이며, 종목·참가비 등 세부 정보는 6/9 및 공식 홈페이지 공개 시 확정됩니다. 신청 전 공식 채널을 한 번 더 확인하세요.</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 대회 종목·참가비(5km 6.5만·10km 8만, 유니클로 티셔츠 포함)는 2026-06 공개분 기준입니다. 본 대회 코스 세부 경로·티켓은 8/31 오픈 시 확정되며, 버추얼런 잔여 좌석은 실시간으로 바뀝니다. 신청 전 공식 홈페이지(disneyrunincheon2026.com)와 디즈니코리아(@disneykorea)를 한 번 더 확인하세요. (2026-06-13 업데이트)</p>
 `,
   },
   {

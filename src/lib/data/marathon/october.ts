@@ -114,6 +114,33 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'disney-run-incheon-2026',
+    name: '디즈니런 2026 인천',
+    date: '2026-10-24',
+    month: '10월',
+    location: '인천 상상플랫폼 (인천 중구 월미로)',
+    region: '인천',
+    distances: ['10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://disneyrunincheon2026.com',
+    description:
+      '2025 여의도에서 1.5만 명을 모은 국내 첫 디즈니 테마 펀런이 인천 상상플랫폼으로 돌아옵니다. 5km(곰돌이 푸·가족 친화)·10km(미키와 친구들) 2종, 유니클로 한정판 티셔츠와 완주 메달이 포함됩니다. 본 대회 티켓은 8/31(월) 10시 선착순 1.5만 명 오픈 예정이며, 6~8월엔 토이스토리·모아나·주토피아 버추얼런(회차별 4만원·5천 명)이 먼저 진행됩니다. 기록보다 디즈니 테마를 즐기는 축제형 러닝.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '인천 상상플랫폼(내항 일대) 일원 평지 코스. 5km는 가족 친화, 10km는 러닝 애호가용으로 구분됩니다. 세부 경로는 추후 공개.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 80000 },
+        { distance: '5K', fee: 65000 },
+      ],
+      expectedParticipants: 15000,
+    },
+  },
+  {
     id: 'chuncheon-marathon-2026',
     name: '2026 조선일보 춘천마라톤',
     date: '2026-10-25',
