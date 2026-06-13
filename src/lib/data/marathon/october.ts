@@ -125,7 +125,7 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.chuncheonmarathon.com/',
     description:
-      '"가을의 전설" — 1946년 시작된 80주년 풀코스. 의암호 단풍 코스, 25km 지점 오르막이 핵심 변수. 2026년 대회일 10/25(일) 9시 확정. 신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순(빠른 매진 주의). 참가비 풀 15만원·10K 10만원. (2026-06-11 공식 발표)',
+      '"가을의 전설" — 1946년 창설된 80년 역사의 가을 풀코스 명문(2026년 제81회). 의암호 단풍 코스, 25km 지점 오르막이 핵심 변수. 2026년 대회일 10/25(일) 9시 확정. 신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순(빠른 매진 주의). 참가비 풀 15만원·10K 10만원. (2026-06-11 공식 발표) ※제한시간·참가 규모·셔틀은 2025년 기준으로, 2026 요강 발표 시 확정됩니다.',
     courseInfo: {
       terrain: '언덕',
       difficulty: '상급',
@@ -137,7 +137,22 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '풀코스', fee: 150000 },
         { distance: '10K', fee: 100000 },
       ],
+      timeLimits: [
+        { distance: '풀코스', hours: 6, minutes: 0 },
+        { distance: '10K', hours: 1, minutes: 30 },
+      ],
+      aidStations: 9,
+      aidInterval: '약 5km마다(25km 급수대가 춘천댐 오르막 진입 전 핵심 보급)',
+      expectedParticipants: 20000,
       startTime: '09:00',
+    },
+    logistics: {
+      parking:
+        '공지천 공영주차장(대회장 맞은편)·의암공원·춘천MBC 주차장 이용. 교통 통제가 오전 7시~오후 3시 30분이라 7시 이전 진입을 권장합니다.',
+      publicTransport:
+        'ITX-청춘(용산→춘천 약 75분, 청량리→춘천 약 60분). 주말 좌석이 조기 매진되니 코레일톡 사전 예매 필수. ※KTX-이음은 춘천선 미운행입니다.',
+      shuttle:
+        '서울 4개 지점(시청·잠실·신도림·사당)에서 대회장 직행, 오전 6시 출발(2025년 기준 왕복 2만 원). 공식 홈페이지 예약, 조기 마감됩니다.',
     },
   },
   {
