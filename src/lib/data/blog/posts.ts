@@ -7209,7 +7209,7 @@ export const blogPosts: BlogPost[] = [
   <ul>
     <li>2025 여의도에서 1.5만 명을 모았던 <strong>디즈니런이 2026년 인천(상상플랫폼)으로</strong> 돌아옵니다 — 본 대회는 <strong>10월 24일(토)</strong></li>
     <li>올해 처음으로 <strong>디즈니 버추얼런</strong>이 도입돼, <strong>토이스토리·모아나·주토피아 3색 테마</strong>로 어디서나 달릴 수 있습니다</li>
-    <li>가장 빠른 일정은 <strong>버추얼런 1차(토이스토리) 티켓 오픈 6/11(목) — D-6</strong>. 공식 홈페이지는 6/5 오픈, 상세는 6/9 공개</li>
+    <li>버추얼런 1차(토이스토리)는 <strong>6/11(목) 티켓 오픈</strong>으로 시작됐습니다(공식 홈페이지 6/5·상세 6/9 공개). 이후 차수는 순차 진행</li>
   </ul>
 </div>
 
@@ -7252,7 +7252,7 @@ export const blogPosts: BlogPost[] = [
     <ul>
       <li><strong>6/5(금)</strong> — 공식 홈페이지 오픈(disneyrunincheon2026.com)</li>
       <li><strong>6/9</strong> — 상세 정보 공개</li>
-      <li><strong>6/11(목)</strong> — 버추얼런 1차(토이스토리) 티켓 오픈 <strong>(D-6)</strong></li>
+      <li><strong>6/11(목)</strong> — 버추얼런 1차(토이스토리) 티켓 오픈</li>
       <li><strong>8/31(월)</strong> — 디즈니런 2026 인천 본 대회 티켓 오픈</li>
     </ul>
     <p>2025 디즈니런이 인기로 빠르게 마감됐던 만큼, 원하는 차수·종목은 <strong>티켓 오픈일을 미리 알림 설정</strong>해두는 게 안전합니다.</p>
@@ -13832,7 +13832,7 @@ export const blogPosts: BlogPost[] = [
 <h2>관련 글</h2>
 
 <ul>
-  <li><a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 D-21 — 6/1 출시 상세 안내</a></li>
+  <li><a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 — 6/1 출시 상세 안내</a></li>
   <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
   <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
   <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
@@ -15764,7 +15764,7 @@ export const blogPosts: BlogPost[] = [
   </div>
 </div>
 
-<p>같은 5월 발매 라인은 <a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 D-21</a>(6/1 출시)도 주목할 만합니다. 시계 + 신발 동시 세대 교체 시기.</p>
+<p>같은 시기 발매 라인은 <a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33</a>(6/1 출시)도 주목할 만합니다. 시계 + 신발 동시 세대 교체 시기.</p>
 
 <p><small>출처: Garmin Newsroom 공식 보도자료 / 가민 코리아 뉴스와이어 보도자료(2026-05-13) / DCRainmaker FR70 리뷰 / The 5K Runner FR70·170 런치 분석 / T3 영국 가격 / 작성일 2026년 5월 14일 기준. 한국 출시 후 실제 매장 가격·재고 상황은 5/20 이후 본 글 업데이트 예정.</small></p>
 `,
@@ -16408,7 +16408,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-asics-kayano-33-launch',
     slug: '2026-asics-kayano-33-launch',
-    title: 'ASICS GEL-KAYANO 33 D-21 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
+    title: 'ASICS GEL-KAYANO 33 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
     description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 13년간 유지된 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
     thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
     author: '산초 에디터',
@@ -16429,7 +16429,7 @@ export const blogPosts: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">📅</span>
   <div class="callout-body">
-    <p class="callout-title">발매 D-21 — 핵심 셋업</p>
+    <p class="callout-title">6/1 출시 — 핵심 셋업</p>
     <p>아디다스 코리아 공식 발표 기준 33은 <strong>6월 1일 ASICS 공식 사이트(asics.co.kr) + 직영 매장 + 주요 멀티숍 동시 출시</strong> 예정. 사이즈 빠른 매진 우려는 적지만 <strong>한국 인기 컬러(블랙/네이비/화이트)</strong>는 발매 첫 주가 안전합니다.</p>
   </div>
 </div>
@@ -16527,7 +16527,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">진짜 똑똑한 선택 — 7월 매장 시착 후 결정</p>
-    <p>33이 6/1 출시되면 ASICS 직영(강남·잠실)에서 시착 가능. <strong>7월 중순쯤이면 32 재고 세일도 본격화</strong>되므로, 33을 한 번 신어보고 마음에 들면 33, 32의 단단함이 더 좋으면 32 세일가 구매가 합리적입니다. 굳이 D-21에 미리 결정할 필요 없음.</p>
+    <p>33은 ASICS 직영(강남·잠실)에서 시착 가능합니다. <strong>7월 중순쯤이면 32 재고 세일도 본격화</strong>되므로, 33을 한 번 신어보고 마음에 들면 33, 32의 단단함이 더 좋으면 32 세일가 구매가 합리적입니다. 굳이 서두를 필요 없이 시착 후 결정하세요.</p>
   </div>
 </div>
 
@@ -16571,7 +16571,7 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>요약 — D-21 액션 플랜</h2>
+<h2>요약 — 구매 액션 플랜</h2>
 
 <ol>
   <li><strong>지금 (5/11~):</strong> 32에 만족하면 매장에서 사이즈 미리 확인, 33 시착할 때 비교 위해</li>
@@ -16722,7 +16722,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-bape-adidas-evo-sl-release',
     slug: '2026-bape-adidas-evo-sl-release',
-    title: 'BAPE × 아디다스 에보 SL D-21 | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
+    title: 'BAPE × 아디다스 에보 SL | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
     description: '6월 1일(월) 전 세계 동시 발매되는 BAPE × adidas Adizero Evo SL (KJ5751). 좌우 짝짝이 핑크/베이비블루 + ABC 카모 + Shooting Star 로고가 합쳐진 협업. 글로벌 $200 / 한국가 추정, 베이스 모델 가성비 슈퍼폼(83% 에너지 리턴) 그대로. 한국에서 살 수 있는 경로와 BAPE Store 서울·아디다스 앱 셋업까지.',
     thumbnail: '/images/blog/2026-bape-adidas-evo-sl-release.webp',
     author: '산초 에디터',
@@ -16743,7 +16743,7 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⏰</span>
   <div class="callout-body">
-    <p class="callout-title">발매 D-21 — 지금부터 해둬야 할 셋업</p>
+    <p class="callout-title">6월 1일 발매 — 구매 전 셋업</p>
     <p>한정판 협업은 발매 당일 결제까지 가는 게 진짜 게임입니다. ① <strong>아디다스 KR 앱</strong> 회원가입 + 본인인증 + 결제 카드 등록, ② <strong>BAPE Store</strong> 압구정·홍대 매장 입고 문의 (전화/인스타 DM), ③ adidas Confirmed 앱 다운로드(글로벌 한정 발매 진행 채널) — 이 3가지는 5월 안에 끝내두세요.</p>
   </div>
 </div>
@@ -16836,7 +16836,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">한국 정식 발매 여부는 5월 마지막 주에 확정</p>
-    <p>현재(D-21 시점) 아디다스 코리아가 한국 발매를 공식 공지하지는 않았습니다. 통상 BAPE 협업은 발매 1~2주 전 인스타그램(@adidaskr / @bape_kr)에서 한국 발매 채널을 발표하는데, 5월 마지막 주 공지를 주시하세요.</p>
+    <p>발매 전까지 아디다스 코리아가 한국 발매를 공식 공지하지는 않았습니다. 통상 BAPE 협업은 발매 1~2주 전 인스타그램(@adidaskr / @bape_kr)에서 한국 발매 채널을 발표하니, 구매 채널은 공식 인스타에서 확인하세요.</p>
   </div>
 </div>
 
@@ -16894,7 +16894,7 @@ export const blogPosts: BlogPost[] = [
   </tbody>
 </table>
 
-<h2>요약 — D-21 액션 플랜</h2>
+<h2>요약 — 구매 액션 플랜</h2>
 
 <ol>
   <li><strong>지금 (5/11~):</strong> 아디다스 KR 앱 회원가입·본인인증·결제카드 등록 / BAPE 압구정·홍대 매장 입고 문의 (@bape_kr DM)</li>
