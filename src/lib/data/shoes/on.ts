@@ -857,7 +857,7 @@ export const onShoes: Shoe[] = [
       landingPattern: '미드풋 중심',
     },
     similarShoes: ['asics-superblast-2', 'saucony-endorphin-trainer', 'new-balance-sc-trainer-v3'],
-    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3+하이퍼' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FgEsPIMs' }],
   },
   {
     id: 'on-cloudmonster-3-hyper-lightspray',

@@ -596,7 +596,7 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
-    purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=아식스+슈퍼블라스트+3' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5PWBjalA' }],
   },
   {
     id: 'asics-magic-speed-4',
