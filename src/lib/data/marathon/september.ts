@@ -98,4 +98,33 @@ export const septemberEvents: MarathonEvent[] = [
       startTime: '08:30',
     },
   },
+  {
+    id: 'ytn-seoul-tour-marathon-2026',
+    name: '2026 YTN 서울투어마라톤',
+    date: '2026-09-06',
+    month: '9월',
+    location: '서울광장 (서울 중구)',
+    region: '서울',
+    distances: ['하프', '11K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://run.ytn.co.kr',
+    description:
+      'YTN 주최 서울 도심 시티투어 마라톤. 서울광장 출발, 동대문·숭례문·청계천 등 구도심 랜드마크를 잇는 평탄한 하프·11K 코스(풀코스 없음). 2026.9.6(일) 07시30분 출발. 참가비 하프 8만·11K 7만 원. 접수 6/17(수) 14시~7/15(수) 17시 선착순(run.ytn.co.kr). 2025년 광화문광장→2026년 서울광장으로 출발지 변경, 11월→9월 초로 시기 이동.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription:
+        '서울광장 출발 도심 평지 코스. 동대문·숭례문·청계천 등 구도심 랜드마크 경유(2025 기준, 2026 세부 경로는 출발지 변경으로 추후 공개).',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 80000 },
+        { distance: '11K', fee: 70000 },
+      ],
+      expectedParticipants: 15000,
+      startTime: '07:30',
+    },
+  },
 ];

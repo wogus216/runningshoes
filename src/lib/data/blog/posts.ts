@@ -3,6 +3,104 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'ytn-seoul-tour-marathon-2026',
+    slug: 'ytn-seoul-tour-marathon-2026',
+    title: '서울 한복판을 달리는 시티투어 — 2026 YTN 서울투어마라톤 | 9/6 서울광장 출발, 하프·11K 접수 중',
+    description:
+      'YTN이 주최하는 도심 시티투어 마라톤이 9월 6일(일) 서울광장에서 출발합니다. 동대문·숭례문·청계천 등 서울 구도심 랜드마크를 잇는 평탄한 하프·11K 코스로, 가을 레이스 시즌의 첫 문을 여는 대회죠. 접수는 6/17~7/15 선착순(하프 8만·11K 7만 원). 종목·참가비·코스·2025년 대비 변경점까지 정리했습니다.',
+    thumbnail: '/images/blog/ytn-seoul-tour-marathon-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-22',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['YTN 서울투어마라톤', '서울투어마라톤', '서울 마라톤', '하프 마라톤', '9월 마라톤', '도심 마라톤', '러닝 대회', '마라톤 접수', '가을 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 YTN 서울투어마라톤이 9월 6일(일) 서울광장에서 출발</strong> — 서울 구도심 랜드마크를 잇는 평탄한 <strong>하프·11K 도심 코스</strong>입니다(풀코스 없음, 07:30 출발)</li>
+    <li><strong>접수 진행 중</strong> — 6/17(수)~7/15(수) 선착순, 공식 홈페이지(run.ytn.co.kr). 참가비 <strong>하프 8만 원·11K 7만 원</strong></li>
+    <li>방송사 YTN이 직접 주최하는 <strong>"시티투어" 마라톤</strong>으로, 10월 춘천·11월 도심 대회에 앞서 <strong>가을 레이스 시즌의 문을 여는</strong> 9월 초 대회입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏙️</span>
+  <div class="callout-body">
+    <p class="callout-title">서울 도심을 관광하듯 달린다</p>
+    <p>YTN(와이티엔)이 주최하는 <strong>"서울투어"</strong> 마라톤은 이름 그대로 서울 구도심의 대표 랜드마크를 한 코스에 담은 시티투어형 대회입니다. 서울광장(시청 앞)을 기점으로 동대문·숭례문·청계천을 잇는 평탄한 도심 코스라, <strong>첫 하프에 도전하거나 가을 시즌을 가볍게 시작하려는 러너</strong>에게 잘 맞습니다. 방송사 주최라 코스 곳곳에 카메라가 따라붙는 것도 소소한 매력이죠.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+<table>
+  <tbody>
+    <tr><td><strong>대회일</strong></td><td>2026년 9월 6일(일) — 07:30 출발</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프(21.0975km) · 11K (풀코스 없음)</td></tr>
+    <tr><td><strong>출발/도착</strong></td><td>서울광장 (서울 중구 세종대로 110)</td></tr>
+    <tr><td><strong>참가비</strong></td><td>하프 80,000원 · 11K 70,000원</td></tr>
+    <tr><td><strong>접수</strong></td><td>6/17(수) 14시 ~ 7/15(수) 17시 · 선착순 (run.ytn.co.kr)</td></tr>
+    <tr><td><strong>규모</strong></td><td>약 1만 5천 명 (2025년 기준)</td></tr>
+    <tr><td><strong>주최</strong></td><td>YTN(와이티엔)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 대회일·참가비·접수 일정·출발지는 공식 홈페이지(run.ytn.co.kr) 확정 정보입니다. 규모·세부 코스·기념품은 2025년 자료 기준 참고값으로, 2026년 내용은 공식 발표로 확인하세요.</p>
+
+<h2>접수 — 지금 진행 중</h2>
+<p>접수는 <strong>6월 17일(수) 14시에 이미 열렸고, 7월 15일(수) 17시까지 선착순</strong>으로 받습니다. 공식 홈페이지(run.ytn.co.kr)에서 직접 신청하며, 배번호·기록칩은 대회 전 택배로 발송됩니다.</p>
+<p>도심 대형 대회는 마감 시각보다 일찍 정원이 차는 경우가 있으니, 출전이 확실하다면 마감(7/15)을 기다리지 말고 미리 신청해두는 편이 안전합니다.</p>
+
+<h2>코스 — 서울 구도심 역사 벨트</h2>
+<p>서울광장(시청 앞)을 출발해 <strong>동대문(DDP 인근) → 숭례문(남대문) → 청계천</strong>으로 이어지는 서울 구도심의 역사 랜드마크를 잇는 코스입니다. 고저차가 거의 없는 평탄한 포장도로라 <strong>기록 도전이나 첫 하프 완주에 유리</strong>합니다.</p>
+<div class="callout warning">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">2026년 출발지가 바뀌었습니다</p>
+    <p>2025년에는 광화문광장에서 출발했지만, <strong>2026년은 서울광장 출발로 변경</strong>됐습니다. 위 경유지는 2025년 코스를 기준으로 한 참고이며, 출발지 변경에 따라 세부 경로가 달라질 수 있으니 <strong>공식 코스맵을 반드시 확인</strong>하세요.</p>
+  </div>
+</div>
+
+<h2>2025 → 2026, 무엇이 달라졌나</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>2025</th><th>2026</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>대회 시기</td><td>11월 23일</td><td><strong>9월 6일</strong> (가을 초입)</td></tr>
+    <tr><td>출발지</td><td>광화문광장</td><td>서울광장</td></tr>
+    <tr><td>종목</td><td>하프 · 10K</td><td>하프 · <strong>11K</strong></td></tr>
+    <tr><td>참가비</td><td>하프 7만 · 10K 6만</td><td>하프 8만 · 11K 7만</td></tr>
+  </tbody>
+</table>
+<p>가장 큰 변화는 <strong>대회 시기가 11월 말에서 9월 초로 앞당겨진 것</strong>입니다. 9월 초는 아직 늦더위가 남아 있을 수 있으니, 당일 기온을 확인하고 수분·페이스 전략을 보수적으로 잡는 게 좋습니다.</p>
+
+<h2>누구에게 좋은 대회일까</h2>
+<ul>
+  <li><strong>첫 하프 도전자</strong> — 평탄한 도심 코스라 부담이 적습니다. 거리별 체감 난이도가 궁금하면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>를 참고하세요.</li>
+  <li><strong>가을 PB를 준비하는 러너</strong> — 9월 YTN(하프)으로 몸을 풀고 10월 <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>(풀코스), 11월 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>으로 이어지는 가을 레이스 시즌을 설계하기 좋습니다.</li>
+  <li><strong>서울 도심을 달려보고 싶은 러너</strong> — 평소 차로 지나던 시청·숭례문·청계천을 두 발로 통과하는 경험이 매력입니다.</li>
+</ul>
+<p>평탄한 도심 하프에는 가볍고 반응 좋은 신발이 어울립니다. 목표 페이스에 따라 <a href="/best/daily-trainer">데일리 트레이너</a> 또는 <a href="/best/half-marathon">하프 추천 신발</a>에서 골라보세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>도 도움이 됩니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">참가 전 체크</p>
+    <ul>
+      <li><strong>교통</strong>: 서울광장은 지하철 1·2호선 시청역 바로 앞입니다. 도심 교통통제가 있으니 <strong>대중교통 이용</strong>을 권장합니다.</li>
+      <li><strong>완주 기념품·제한시간·시상</strong> 등 세부 정보는 공식 홈페이지(run.ytn.co.kr)에서 최신 공지를 확인하세요.</li>
+    </ul>
+  </div>
+</div>
+
+<h2>마무리</h2>
+<p>YTN 서울투어마라톤은 <strong>"기록 경쟁"보다 "서울 도심을 관광하듯 달리는 경험"</strong>에 무게가 실린 대회입니다. 9월 초 개최라 본격적인 가을 레이스 시즌의 문을 여는 대회이기도 하죠. 첫 하프에 도전하거나 가을 시즌을 가볍게 시작하려는 러너라면 좋은 선택지입니다. 핵심은 <strong>7월 15일 접수 마감</strong>을 놓치지 않는 것 — 신청 전 공식 홈페이지에서 코스맵과 세부 정보를 한 번 더 확인하세요. 🏃</p>
+<p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 YTN 서울투어마라톤 공식 홈페이지(run.ytn.co.kr)와 2025년 대회 자료를 종합했습니다. 대회일·참가비·접수 일정·출발지는 공식 확정 정보이며, 규모·세부 코스 경유지·기념품은 2025년 기준 참고값으로 2026년 발표 시 변동될 수 있습니다. 신청 전 공식 홈페이지를 반드시 확인하세요. (작성 2026-06-22)</p>
+`,
+  },
+  {
     id: 'sonkeechung-peace-marathon-2026',
     slug: 'sonkeechung-peace-marathon-2026',
     title: '차 대신 사람이 달리는 도로 — 손기정평화마라톤 | 국내 유일 제2자유로 코스, 손기정의 이름으로 달리는 11월 가을 풀코스',
@@ -3505,13 +3603,14 @@ export const blogPosts: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">🏆</span>
   <div class="callout-body">
-    <p class="callout-title">춘천 80주년 특별접수 — 완주 횟수가 많다면 일반 신청보다 먼저 챙기세요</p>
-    <p>올해 80주년을 맞아 춘천마라톤은 풀코스 다회 완주자를 위한 <strong>특별접수</strong>를 일반 신청(7/14)보다 앞서 진행합니다.</p>
+    <p class="callout-title">춘천 80주년 우선 트랙 — 일반접수(7/14) 전에 먼저 열립니다</p>
+    <p>올해 창설 80주년을 맞아 춘천마라톤은 일반접수에 앞서 우선 트랙을 여럿 운영합니다.</p>
     <ul>
       <li><strong>명예의 전당 헌액 예정자(Full 9회 완주자)</strong> — 전원 신청·결제 가능. 기간 <strong>6/16(화) 10시 ~ 6/19(금) 18시</strong> ('참가신청 &gt; 명예의 전당 헌액 예정자 신청' 메뉴).</li>
+      <li><strong>조선멤버십 얼리버드</strong> — 조선멤버십 연간 구독자 대상 선착순 1,000명(풀 700·10K 300). 신청 <strong>6/23(화) 14시</strong>, 결제 6/24~26. 80주년 기념 자켓을 증정하며, 사전신청권이 '3분 마감'될 만큼 경쟁이 치열합니다.</li>
       <li><strong>Full 5~8회 완주자</strong> — 구글폼 응모 후 추첨. 응모 <strong>6/29(월)~7/1(수)</strong> → 당첨자 발표·신청·결제 <strong>7/6(월)~7/9(목)</strong>.</li>
     </ul>
-    <p>해당되는 완주 이력이 있다면 일반 선착순(7/14~)을 기다리지 말고 특별접수 기간을 먼저 노리는 게 유리합니다. 자세한 방법은 공식 홈페이지(chuncheonmarathon.com) 공지사항을 확인하세요.</p>
+    <p>해당되는 자격·구독이 있다면 일반 선착순(7/14~)을 기다리지 말고 우선 트랙을 먼저 노리는 게 유리합니다. 자세한 방법은 공식 홈페이지(chuncheonmarathon.com) 공지사항을 확인하세요.</p>
   </div>
 </div>
 
@@ -20435,8 +20534,8 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-chuncheon-marathon-registration-guide',
     slug: '2026-chuncheon-marathon-registration-guide',
-    title: '2026 춘천마라톤 풀코스 접수 D-53 | 6월 24일 14시 광클 전략과 코스 분석',
-    description: '국내 최고 PB 친화 코스로 꼽히는 조선일보 춘천마라톤. 풀코스 접수가 6월 24일(화) 14시로 예상됩니다. 광클 전략·25km 오르막·교통/숙박·신발 선택까지 출전 준비 완전 가이드.',
+    title: '2026 춘천마라톤(80주년) 접수 총정리 | 풀코스 7/14·10K 7/16 광클 전략과 코스 분석',
+    description: '국내 최고 PB 친화 코스로 꼽히는 조선일보 춘천마라톤, 창설 80주년입니다. 일반접수는 풀코스 7월 14일(화)·10K 7월 16일(목) 14시 선착순, 참가비 풀 15만·10K 10만 원. 멤버십 얼리버드·완주자 특별접수부터 광클 전략·25km 오르막·교통/숙박·신발 선택까지 완전 가이드.',
     thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-02',
@@ -20447,8 +20546,8 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">2026 풀코스 접수 6월 24일(화) 14시 — D-53</p>
-    <p>본 글의 일정·접수 시각은 2025년 패턴(매년 6월 마지막 주 화요일 14시 풀코스 접수 오픈) 기준 예측치입니다. <strong>2026년 공식 발표는 5월 중하순 공개 예정</strong>이니, 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>을 함께 모니터링하세요.</p>
+    <p class="callout-title">2026 일반접수 — 풀코스 7/14(화)·10K 7/16(목) 14시 (창설 80주년)</p>
+    <p>6/11 공식 발표 기준입니다. 일반접수에 앞서 멤버십 얼리버드(6/23)·완주자 특별접수(6/29) 등 우선 트랙이 먼저 진행됩니다(아래 표 참고). 풀코스 일반접수는 매년 수분 내 마감되니, 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>을 함께 확인하세요.</p>
   </div>
 </div>
 
@@ -20466,15 +20565,30 @@ export const blogPosts: BlogPost[] = [
 
 <p>국내 메이저 풀코스(서울·JTBC·춘천) 중 PB 도전에 가장 자주 추천되는 대회가 춘천입니다.</p>
 
-<h2>2026 접수 예상 일정</h2>
+<h2>2026 접수 일정 — 5단계 트랙 (창설 80주년)</h2>
+
+<p>80주년을 맞아 일반접수에 앞서 우선 트랙이 여럿 운영됩니다. 본인이 우선 트랙 대상이라면 일반 광클을 기다릴 필요가 없습니다.</p>
 
 <table>
   <thead>
-    <tr><th>종목</th><th>접수 오픈 (예측)</th><th>참가비</th><th>컷오프</th></tr>
+    <tr><th>트랙</th><th>대상</th><th>일정</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>풀코스 (42.195km)</strong></td><td>2026년 6월 24일(화) 14:00</td><td>100,000원</td><td>5시간 30분</td></tr>
-    <tr><td><strong>10K</strong></td><td>2026년 6월 26일(목) 14:00</td><td>80,000원</td><td>1시간 30분</td></tr>
+    <tr><td><strong>명예의 전당 헌액 예정자</strong></td><td>풀코스 9회 완주자</td><td>신청·결제 6/16(화)~6/19(금)</td></tr>
+    <tr><td><strong>조선멤버십 얼리버드</strong></td><td>조선멤버십 연간 구독자 (선착순 1,000명: 풀 700·10K 300)</td><td>신청 6/23(화) 14시 · 결제 6/24~26 · 80주년 기념 자켓 증정</td></tr>
+    <tr><td><strong>완주자 특별접수</strong></td><td>풀코스 5~8회 완주자 (추첨)</td><td>응모 6/29~7/1 · 당첨 결제 7/6~7/9</td></tr>
+    <tr><td><strong>일반접수 — 풀코스</strong></td><td>누구나 (선착순)</td><td><strong>7/14(화) 14:00</strong></td></tr>
+    <tr><td><strong>일반접수 — 10K</strong></td><td>누구나 (선착순)</td><td><strong>7/16(목) 14:00</strong></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>컷오프</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스 (42.195km)</strong></td><td>150,000원</td><td>5시간 30분</td></tr>
+    <tr><td><strong>10K</strong></td><td>100,000원</td><td>1시간 30분</td></tr>
   </tbody>
 </table>
 
@@ -20482,7 +20596,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">ℹ️</span>
   <div class="callout-body">
     <p class="callout-title">신청과 결제는 분리 운영</p>
-    <p>춘천마라톤은 신청(선착순)과 결제가 별도로 이루어집니다. 신청 성공 후 결제 기한(접수 후 약 1주일) 안에 입금하지 않으면 자격이 자동 소멸합니다. <strong>2025년부터 단체 신청은 폐지</strong>되었으니 모두 개인 접수입니다.</p>
+    <p>춘천마라톤은 신청(선착순)과 결제가 별도로 이루어집니다. 일반접수 결제 기한은 풀코스 7/20~21·10K 7/22~23경으로, 기한 내 미입금 시 자격이 자동 소멸합니다. <strong>2025년부터 단체 신청은 폐지</strong>되어 모두 개인 접수입니다.</p>
   </div>
 </div>
 
@@ -20502,7 +20616,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>당일 13시 50분에는 로그인 상태로 대기하세요. 평소엔 5분 일찍 들어가도 충분하지만, 춘마 같은 빅 이벤트는 트래픽 폭주로 로그인 자체가 안 되는 경우가 종종 발생합니다.</p>
 
-<p>접수 성공 후 <strong>결제 기한(7월 1~2일경)</strong>은 캘린더에 알람 설정해두세요. 신청만 하고 결제 깜빡해서 자격 잃는 사례가 매년 반복됩니다.</p>
+<p>접수 성공 후 <strong>결제 기한(일반 풀코스 7/20~21경)</strong>은 캘린더에 알람 설정해두세요. 신청만 하고 결제 깜빡해서 자격 잃는 사례가 매년 반복됩니다.</p>
 
 <h2>코스 분석 — 의암호 한 바퀴</h2>
 
@@ -20585,9 +20699,9 @@ export const blogPosts: BlogPost[] = [
 
 <p>레이스용 신발은 <strong>대회 6~8주 전 구입</strong>해 40~60km 정도 길들이고 출전하세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
 
-<h2>훈련 일정 — 5월 시작이 표준</h2>
+<h2>훈련 일정 — 지금부터 약 18주</h2>
 
-<p>10월 25일 전후 대회 기준, <strong>16~20주 빌드업이 표준</strong>입니다. 지금(5월 초) 시작하면 정확히 24주 — 기초 체력부터 다질 시간이 충분합니다.</p>
+<p>10월 25일 대회 기준, <strong>16~20주 빌드업이 표준</strong>입니다. 지금(6월 하순)부터 시작하면 약 18주 — 기초 체력부터 차근차근 쌓기 좋은 시점입니다.</p>
 
 <ul>
   <li><strong>5~7월 (기초기):</strong> 주 30~50km, LSD 위주로 베이스 구축</li>
@@ -20604,7 +20718,7 @@ export const blogPosts: BlogPost[] = [
 
 <ul>
   <li><strong>공식 인스타 추가접수 공지 모니터링</strong> — 결제 기한 내 미납자가 발생하면 추가 오픈하는 경우 있음</li>
-  <li><strong>10K로 종목 변경</strong> — 6/26 접수 오픈, 풀코스보다 경쟁 덜함</li>
+  <li><strong>10K로 종목 변경</strong> — 7/16(목) 접수 오픈, 풀코스보다 경쟁 덜함</li>
   <li><strong>JTBC 서울마라톤 (11월 1일)</strong> — 추첨제이지만 도시형 코스라는 다른 매력</li>
   <li><strong>경주국제마라톤 (10월 17일)</strong> — 동마클럽 계열 메이저 대회. 자세한 일정은 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정</a>에서</li>
 </ul>
@@ -20621,7 +20735,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>국내 다른 가을 마라톤도 함께 검토하시려면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교해보세요.</p>
 
-<p><small>출처: 춘천마라톤 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a> · 러닝위키 춘천마라톤 가이드 / 작성일 2026년 5월 2일 기준 / 2026년 정확한 접수 일정은 공식 발표(5월 중하순 예정) 후 업데이트 예정입니다.</small></p>
+<p><small>출처: 춘천마라톤 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a> · 조선일보 보도 / 작성 2026년 5월 2일 · 접수 일정·참가비 갱신 2026년 6월 22일(6/11 공식 발표 반영). 트랙별 정원·결제 기한은 공식 공지로 최종 확인하세요.</small></p>
 `,
   },
   {

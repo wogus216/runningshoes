@@ -33,7 +33,7 @@ export type EventRegion =
   | '부산'
   | '제주';
 
-export type EventDistance = '풀코스' | '하프' | '10K' | '5K' | '울트라' | '트레일';
+export type EventDistance = '풀코스' | '하프' | '10K' | '11K' | '5K' | '울트라' | '트레일';
 
 export type EventStatus = '접수중' | '마감' | '대회종료';
 
