@@ -3,6 +3,93 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'plantar-fasciitis-running-shoes-2026',
+    slug: 'plantar-fasciitis-running-shoes-2026',
+    title: '러너의 족저근막염 — 아침 첫발이 아프다면 | 아치 서포트·안정화 러닝화로 줄이는 법 (카야노 33·본디 9·아드레날린 GTS)',
+    description:
+      '족저근막염은 러너가 가장 많이 호소하는 만성 통증입니다. 아침에 일어나 첫발을 디딜 때 뒤꿈치~아치가 찌릿하다면 의심해야 하죠. 평발·과회내가 가장 큰 원인이라, 러닝화에서는 강한 아치 서포트와 안정화, 단단한 힐 카운터, 드롭 8mm 이상이 핵심입니다. 카야노 33·본디 9·아드레날린 GTS 25 등 족저근막염 등급이 좋은 모델과, 발바닥 스트레칭 같은 예방법까지 정리했습니다.',
+    thumbnail: '/images/blog/plantar-fasciitis-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-22',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['족저근막염', '부상 예방', '아치 서포트', '평발', '안정화 러닝화', '러닝 부상'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>족저근막염은 <strong>발바닥 아치를 받치는 근막에 생기는 염증</strong> — 아침 첫발의 찌릿한 통증이 대표 신호입니다</li>
+    <li>러닝화 핵심은 <strong>강한 아치 서포트 + 단단한 힐 카운터 + 드롭 8mm 이상</strong>. 평발·과회내라면 안정화가 1순위입니다</li>
+    <li>신발만으론 부족 — <strong>발바닥·종아리 스트레칭과 점진적 거리 증가</strong>가 근본 예방입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">족저근막염이란</p>
+    <p>족저근막은 발뒤꿈치뼈에서 발가락까지 <strong>발바닥 아치를 받치는 두꺼운 섬유띠</strong>입니다. 여기에 미세 손상과 염증이 쌓이면 통증이 생기죠. 가장 특징적인 신호는 <strong>아침에 일어나 첫발을 디딜 때, 또는 오래 앉았다 일어설 때 뒤꿈치~아치가 찌릿한 것</strong>입니다. 러너에게 흔하지만 <strong>한번 오면 오래 가는</strong> 부상이라, 예방과 초기 관리가 중요합니다.</p>
+  </div>
+</div>
+
+<h2>왜 생길까 — 주요 원인</h2>
+<ul>
+  <li><strong>평발·과회내(오버프로네이션)</strong> — 가장 큰 위험 요인. 착지할 때 아치가 안쪽으로 무너지면서 근막이 과도하게 늘어납니다</li>
+  <li><strong>갑작스러운 거리·강도 증가</strong> — 근막이 적응할 시간 없이 부하가 몰림</li>
+  <li><strong>종아리·아킬레스 긴장</strong> — 종아리가 뻣뻣하면 발바닥 근막까지 당겨져 부담이 커집니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>과 자주 같이 옵니다)</li>
+  <li><strong>쿠션·지지력이 죽은 낡은 신발</strong> — 미드솔이 주저앉으면 충격이 그대로 발바닥으로</li>
+  <li><strong>딱딱한 바닥 + 미니멀·플랫 신발</strong> — 아치를 받쳐주지 못해 근막 부하가 큼</li>
+</ul>
+
+<h2>러닝화로 줄이기 — '아치 서포트'가 핵심</h2>
+<p>아킬레스건염이 <strong>드롭</strong>이 핵심이라면, 족저근막염은 <strong>아치를 받쳐 근막이 과도하게 늘어나는 걸 막는 것</strong>이 핵심입니다. 세 가지를 보세요.</p>
+<ol>
+  <li><strong>아치 서포트·안정화</strong> — 평발·과회내라면 가이드레일·3D 가이던스 같은 안정 시스템이 아치 무너짐을 잡아줍니다</li>
+  <li><strong>단단한 힐 카운터 + 비틀림 강성</strong> — 뒤꿈치와 중족부가 안정되어야 근막이 덜 휩니다</li>
+  <li><strong>드롭 8mm 이상</strong> — 종아리·근막의 긴장을 덜어줍니다(낮은 드롭은 부담이 큼)</li>
+</ol>
+<table>
+  <thead><tr><th>모델</th><th>유형</th><th>족저근막염에 좋은 이유</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>안정화</td><td>평발+족저근막 1순위. FF Blast 쿠션 + 안정 시스템으로 아치 무너짐 억제</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>안정화</td><td>가이드레일이 발·무릎 정렬을 잡아주는 대표 안정화</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a></td><td>안정화</td><td>Wave 플레이트의 단단한 지지 + 넉넉한 발볼</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>맥스쿠션</td><td>중립발용. 넓고 단단한 베이스 + 맥스쿠션으로 충격 분산</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td>쿠션(드롭 14mm)</td><td>높은 드롭 + 맥스쿠션이라 종아리·근막에 너그러움</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">족저근막염일 때 피해야 할 신발</p>
+    <ul>
+      <li><strong>드롭 0~4mm 미니멀·플랫화</strong> — 아치 지지가 약하고 근막 신장이 큽니다</li>
+      <li><strong>비틀면 쉽게 휘는 너무 유연한 신발</strong> — 중족부를 못 잡아줍니다</li>
+      <li><strong>쿠션이 죽은 낡은 신발</strong> — 보통 500~700km면 미드솔 반발이 떨어지니 교체하세요</li>
+    </ul>
+  </div>
+</div>
+
+<h2>평발이면 더 주의 — 안정화 우선</h2>
+<p>평발·과회내는 족저근막염의 <strong>가장 큰 위험 인자</strong>입니다. 아치가 받쳐지지 않으면 근막이 매 착지마다 과하게 늘어나기 때문이죠. 본인이 과회내인지 모르겠다면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">과회내·평발 자가진단</a>으로 먼저 확인하고, 안정화 위주로 고르세요. 평발 전용 추천은 <a href="/best/flat-feet">평발 러닝화</a>에서 비교할 수 있습니다.</p>
+
+<h2>신발보다 중요한 예방 — 스트레칭과 점진성</h2>
+<ul>
+  <li><strong>발바닥 마사지·스트레칭</strong> — 마사지볼이나 얼린 물병을 발바닥 아래 굴려 근막을 풀어줍니다. 아침 첫발을 딛기 전이 특히 효과적</li>
+  <li><strong>종아리 스트레칭</strong> — 종아리가 부드러워야 근막 당김이 줄어듭니다(벽 밀기 스트레칭 하루 2~3회)</li>
+  <li><strong>발 내재근 강화</strong> — 타월 컬(수건 발가락으로 끌어당기기), 발가락 집기로 아치 근육을 키우기</li>
+  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
+  <li><strong>워밍업</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 발·종아리를 데우기</li>
+</ul>
+
+<h2>마무리</h2>
+<p>족저근막염은 "신발 하나"로 막을 순 없지만, <strong>아치를 받쳐주는 안정화·쿠션 신발 + 발바닥·종아리 스트레칭 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 평발이라면 안정화가 우선이고, 이미 아침 첫발 통증이 있다면 무리하지 말고 스트레칭·휴식으로 관리하세요. 더 많은 모델은 <a href="/best/plantar-fasciitis">족저근막염 러닝화 추천</a>에서 비교할 수 있습니다. 무릎이 함께 아프다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화</a>도 참고하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
+`,
+  },
+  {
     id: 'ytn-seoul-tour-marathon-2026',
     slug: 'ytn-seoul-tour-marathon-2026',
     title: '서울 한복판을 달리는 시티투어 — 2026 YTN 서울투어마라톤 | 9/6 서울광장 출발, 하프·11K 접수 중',
@@ -4698,7 +4785,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>마무리</h2>
-<p>아킬레스건염은 "신발 하나"로 막을 순 없지만, <strong>드롭이 높은 쿠션 신발 + 종아리 강화 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 이미 통증이 있다면 무리하지 말고 휴식과 함께 카프 레이즈로 재활하세요. 더 많은 모델은 <a href="/best/achilles">아킬레스 친화 러닝화</a>에서 비교할 수 있습니다.</p>
+<p>아킬레스건염은 "신발 하나"로 막을 순 없지만, <strong>드롭이 높은 쿠션 신발 + 종아리 강화 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 이미 통증이 있다면 무리하지 말고 휴식과 함께 카프 레이즈로 재활하세요. 더 많은 모델은 <a href="/best/achilles">아킬레스 친화 러닝화</a>에서 비교할 수 있습니다. 아침 첫발에 발바닥이 찌릿하다면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 러닝화 가이드</a>도 함께 보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
 `,
