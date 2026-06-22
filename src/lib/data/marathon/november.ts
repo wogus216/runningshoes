@@ -86,16 +86,25 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://mbn-seoulmarathon.com',
     description:
-      'MBN 주최 서울 도심 마라톤(약 2.5만 명, TV 생중계). 광화문광장에서 잠실로 일직선으로 내려가는 하프·10K 코스(풀코스 없음). 2026.11.15(일) 07시 출발 확정. 접수: 우선신청 6/22(월) 10시~6/23(화)(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), 하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시. 참가비는 공식 미발표(2026-06-12 기준).',
+      'MBN 주최 서울 도심 마라톤(총 3만 명, TV 생중계). 하프는 광화문광장→잠실종합운동장 일직선 편도, 10K는 잠실종합운동장 루프(풀코스 없음). 2026.11.15(일) 07시30분 출발(06시30분 집결) 확정. 참가비 하프 10만 원·10K 7만 원 확정. 접수: 우선신청 6/22(월) 10시~6/23(화) 17시(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), 하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시(런잇 RUNIT). 세부 코스 경유지는 추후 공개(2026-06-22 기준).',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
       certification: '없음',
-      courseDescription: '광화문광장 출발 → 잠실 도심 평지 코스. 접근성 좋고 도심 분위기.',
+      courseDescription:
+        '하프: 광화문광장 출발 → 잠실종합운동장 도착 편도 도심 평지 코스(제한 2시간 30분). 10K: 잠실종합운동장 출발·도착 루프(제한 1시간 30분). 접근성 좋고 도심 분위기. 세부 경유지 추후 공개.',
     },
     raceInfo: {
-      expectedParticipants: 25000,
-      startTime: '07:00',
+      entryFees: [
+        { distance: '하프', fee: 100000 },
+        { distance: '10K', fee: 70000 },
+      ],
+      timeLimits: [
+        { distance: '하프', hours: 2, minutes: 30 },
+        { distance: '10K', hours: 1, minutes: 30 },
+      ],
+      expectedParticipants: 30000,
+      startTime: '07:30',
     },
   },
   {
