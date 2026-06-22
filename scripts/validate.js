@@ -15,7 +15,7 @@ const path = require('path');
 
 const shoesDir = path.join(__dirname, '..', 'src/lib/data/shoes');
 const imagesDir = path.join(__dirname, '..', 'public/images/shoes');
-const brands = ['adidas', 'asics', 'brooks', 'hoka', 'mizuno', 'newbalance', 'nike', 'on', 'puma', 'saucony'];
+const brands = ['adidas', 'asics', 'brooks', 'hoka', 'lining', 'mizuno', 'newbalance', 'nike', 'on', 'puma', 'salomon', 'saucony'];
 
 let errors = 0;
 let warnings = 0;

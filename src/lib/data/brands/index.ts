@@ -10,6 +10,7 @@ import { newBalanceBrand } from './newbalance';
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
 import { liningBrand } from './lining';
+import { salomonBrand } from './salomon';
 
 // 모든 브랜드 데이터
 export const brands: Brand[] = [
@@ -24,6 +25,7 @@ export const brands: Brand[] = [
   pumaBrand,
   mizunoBrand,
   liningBrand,
+  salomonBrand,
 ];
 
 // 브랜드 ID로 브랜드 데이터 가져오기
