@@ -178,7 +178,7 @@ export const mizunoShoes: Shoe[] = [
       footType: '평발, 과내전',
       landingPattern: '힐스트라이크',
     },
-    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
+    similarShoes: ['asics-gel-kayano-33', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6krfEy' }],
   },
   {

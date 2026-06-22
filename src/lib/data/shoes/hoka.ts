@@ -515,7 +515,7 @@ export const hokaShoes: Shoe[] = [
       landingPattern: '힐스트라이크~미드풋 (J-Frame 안정화)',
     },
 
-    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'saucony-hurricane-25'],
+    similarShoes: ['asics-gel-kayano-33', 'brooks-adrenaline-gts-25', 'saucony-hurricane-25'],
     purchaseLinks: [{ store: '네이버', url: 'https://brand.naver.com/hoka/products/12839097291' }],
   },
   {

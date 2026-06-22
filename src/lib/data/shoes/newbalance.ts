@@ -595,7 +595,7 @@ export const newbalanceShoes: Shoe[] = [
         text: '중립화만 신으면 무릎 안쪽이 피곤했는데 860 V15는 착지부터 훨씬 안심이 됩니다. 매장에서 걸음걸이 분석해보니 과내전이 있다고 해서 안정화를 추천받았어요. 한국 러너 중 평발이 많다고 하는데 저도 약간의 평발이라 안정화가 필수입니다. 275mm 2E 와이드로 착용 중인데 발볼이 넓은 편이라 토박스가 와이드가 아니면 새끼발가락이 눌릴 뻔했습니다. 출퇴근 워킹과 저녁 5km 조깅을 같이 하는데 330g 무게가 하루 종일 신어도 부담이 적습니다. 이중 밀도 Fresh Foam X와 32mm 힐 스택 쿠셔닝 덕분에 아스팔트에서도 무릎 충격이 확실히 줄었어요. 6mm 드롭이 뒤꿈치 착지에 안정적이고 3/4 플레이트가 발 중심을 잡아줍니다. 600km 내구성이라 km당 315원으로 가성비도 좋아서 초보 안정화로 강추합니다.',
       },
     ],
-    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
+    similarShoes: ['asics-gel-kayano-33', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GowyA70j' }],
   },
   {
@@ -717,7 +717,7 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
 
-    similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
+    similarShoes: ['asics-gel-kayano-33', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6qn39' }],
   },
   {
