@@ -15471,7 +15471,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-garmin-forerunner-70-170-korea',
     slug: '2026-garmin-forerunner-70-170-korea',
-    title: '가민 포러너 70·170 한국 5/20 출시 D-6 | 39.9만원 입문 모델에 Training Readiness·Running Power 탑재 — FR55 5년 만의 대변신',
+    title: '가민 포러너 70·170 한국 5/20 출시 | 39.9만원 입문 모델에 Training Readiness·Running Power 탑재 — FR55 5년 만의 대변신',
     description: '2026년 5월 12일 가민이 Forerunner 70·170·170 Music을 동시 발표했습니다. 한국 5월 20일 정식 출시, 각 39.9·47.9·55.9만원. 입문 모델에 Training Readiness·HRV Status·손목 기반 Running Power 탑재 — 기존 60만원대 FR265 전용 기능이 처음으로 입문 라인까지 내려왔습니다.',
     thumbnail: '/images/blog/2026-garmin-forerunner-70-170-korea.webp',
     author: '산초 에디터',
@@ -15492,7 +15492,7 @@ export const blogPosts: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">📅</span>
   <div class="callout-body">
-    <p class="callout-title">한국 출시 일정 D-6</p>
+    <p class="callout-title">한국 출시 — 5/20</p>
     <p>글로벌 판매는 5월 15일(목)부터, <strong>한국 가민 공식 홈페이지(garmin.co.kr) 정식 판매는 5월 20일(화)</strong>입니다. 사전판매 페이지는 발표 시점 미오픈 상태로, 5월 20일 이후 다나와·네이버 스마트스토어·공식몰에서 동시 등록될 예정입니다.</p>
   </div>
 </div>
@@ -15746,7 +15746,7 @@ export const blogPosts: BlogPost[] = [
 
 <p>본인 발 특성·부상 이력·예산을 입력하면 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
 
-<h2>D-6 액션 플랜</h2>
+<h2>출시 대응 액션 플랜</h2>
 
 <ol>
   <li><strong>5/14~5/19:</strong> 모델 결정 — 평지 위주 FR70 / 언덕·트레일 FR170 / 음악 LSD FR170 Music</li>
@@ -20308,7 +20308,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-seoul-open-marathon-registration',
     slug: '2026-seoul-open-marathon-registration',
-    title: '2026 서울 오픈 마라톤 접수 D-6 | 10월 5일(월) 광화문 출발 · 5월 10일 마감',
+    title: '2026 서울 오픈 마라톤 | 10월 5일(월) 광화문 출발 · 접수 5월 10일 마감',
     description: '광화문광장에서 출발하는 2026 서울 오픈 마라톤(10월 5일 월요일) 접수가 5월 10일까지입니다. 하프 8만원, 10km 6만원, 페이스메이커 운영. 도심 평탄 코스를 노리는 가을 PB 도전자에게 대안.',
     thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
     author: '산초 에디터',
@@ -20369,7 +20369,7 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">접수 마감 D-6 — 5월 10일(일)까지</p>
+    <p class="callout-title">접수 마감 — 5월 10일(일)</p>
     <p>대회는 10월 5일(월), 접수는 <strong>2026년 5월 10일(일)까지 선착순</strong>입니다. 정원이 차면 조기 마감 가능성 있어요. 광화문 도심 코스라 대회 분위기 자체에 매력을 느낀다면 이번 주 안에 결정하시는 게 좋습니다.</p>
   </div>
 </div>
@@ -20408,7 +20408,7 @@ export const blogPosts: BlogPost[] = [
     <p class="timeline-desc">seoulopen.or.kr에서 선착순 접수 오픈</p>
   </div>
   <div class="timeline-item active">
-    <span class="timeline-date">2026.05.10 (일) — D-6</span>
+    <span class="timeline-date">2026.05.10 (일)</span>
     <span class="timeline-title">접수 마감</span>
     <p class="timeline-desc">정원 도달 시 조기 마감 가능. 결정은 이번 주 안에</p>
   </div>
