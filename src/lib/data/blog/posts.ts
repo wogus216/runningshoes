@@ -3,6 +3,91 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'shin-splints-running-shoes-2026',
+    slug: 'shin-splints-running-shoes-2026',
+    title: '러너의 정강이 통증(신 스플린트) — 왜 생기고 러닝화로 어떻게 줄일까 | 충격흡수·점진적 거리·추천화 (님버스 28·본디 9·페가수스 41)',
+    description:
+      '정강이 통증(신 스플린트)은 초보 러너와 훈련량을 갑자기 늘린 러너가 가장 많이 겪는 부상입니다. 정강이 안쪽이 욱신거리면 의심해야 하죠. 러닝화에서는 충격을 잘 흡수하는 쿠션과 적절한 드롭이 핵심이지만, 사실 가장 큰 원인은 갑작스러운 거리 증가입니다. 신 스플린트가 왜 생기는지, 충격흡수 좋은 러닝화(님버스 28·본디 9·페가수스 41)와 10% 룰 같은 예방법까지 정리했습니다.',
+    thumbnail: '/images/blog/shin-splints-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-23',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['신 스플린트', '정강이 통증', '부상 예방', '충격흡수', '초보 러너', '러닝 부상'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>신 스플린트(정강이 통증)는 <strong>갑작스러운 거리·강도 증가</strong>가 가장 큰 원인 — 초보 러너와 훈련량을 급히 늘린 러너에게 흔합니다</li>
+    <li>러닝화 핵심은 <strong>충격을 잘 흡수하는 쿠션 + 적절한 드롭(8mm 이상)</strong>. 얇은 미니멀화·다 닳은 신발은 정강이 부담을 키웁니다</li>
+    <li>신발만으론 부족 — <strong>10% 룰(주간 거리 점진 증가)과 정강이·종아리 강화</strong>가 근본 예방입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦵</span>
+  <div class="callout-body">
+    <p class="callout-title">신 스플린트란</p>
+    <p>신 스플린트(정강이 통증, 정강이 부목)는 정강이뼈(경골)를 따라 붙은 근육·골막에 반복 충격이 쌓여 생기는 통증입니다. <strong>정강이 안쪽 아래쪽이 욱신거리거나, 달리기 시작·끝에 뻐근</strong>하면 의심해야 하죠. 러닝을 막 시작했거나 거리를 갑자기 늘렸을 때 가장 흔하고, 방치하면 피로골절로 이어질 수 있어 초기 관리가 중요합니다.</p>
+  </div>
+</div>
+
+<h2>왜 생길까 — 주요 원인</h2>
+<ul>
+  <li><strong>갑작스러운 거리·강도 증가</strong> — 가장 큰 원인. 정강이 근육·뼈가 적응할 시간 없이 충격이 누적됩니다</li>
+  <li><strong>충격 흡수가 부족한 신발</strong> — 쿠션이 얇거나 다 닳은 신발은 착지 충격을 정강이로 그대로 전달합니다</li>
+  <li><strong>과회내(오버프로네이션)</strong> — 발이 안쪽으로 무너지면 정강이 안쪽 근육에 비틀림 부담이 몰립니다</li>
+  <li><strong>딱딱한 노면 + 낮은 드롭으로 급전환</strong> — 아스팔트 과다, 미니멀화 급전환은 정강이 부담을 키웁니다</li>
+  <li><strong>약한 정강이·종아리 근육</strong> — 근력이 부족하면 충격을 뼈·골막이 받습니다</li>
+</ul>
+
+<h2>러닝화로 줄이기 — '충격 흡수'가 핵심</h2>
+<p>아킬레스건염이 <strong>드롭</strong>, 족저근막염이 <strong>아치 서포트</strong>가 핵심이라면, 신 스플린트는 <strong>착지 충격을 얼마나 흡수하느냐</strong>가 핵심입니다. 세 가지를 보세요.</p>
+<ol>
+  <li><strong>충분한 쿠션</strong> — 부드럽고 두툼한 미드솔이 정강이로 가는 충격을 줄입니다</li>
+  <li><strong>드롭 8mm 이상</strong> — 낮은 드롭(0~4mm)은 전경골근 부담이 커 회복기엔 불리합니다</li>
+  <li><strong>과회내라면 안정화</strong> — 발 무너짐이 정강이 비틀림으로 이어지므로 가이드 기능이 도움됩니다</li>
+</ol>
+<table>
+  <thead><tr><th>모델</th><th>유형</th><th>신 스플린트에 좋은 이유</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a></td><td>쿠션화</td><td>맥스쿠션 + FF Blast 폼으로 충격 흡수 최상위</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>맥스쿠션</td><td>두꺼운 스택 + 넓은 베이스로 충격 분산</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td>쿠션(드롭 14mm)</td><td>높은 드롭 + 맥스쿠션, 정강이·종아리에 너그러움</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>데일리</td><td>균형잡힌 쿠션, 초보 입문에 무난</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>안정화</td><td>과회내 동반 시 — 발 무너짐 억제로 정강이 비틀림 완화</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">신 스플린트일 때 피해야 할 것</p>
+    <ul>
+      <li><strong>얇은 미니멀·레이싱화</strong> — 충격 흡수가 적어 정강이 부담이 큽니다(회복기 비추천)</li>
+      <li><strong>쿠션이 죽은 낡은 신발</strong> — 500~700km 넘으면 미드솔 반발이 떨어지니 교체하세요</li>
+      <li><strong>통증 참고 거리 늘리기</strong> — 신 스플린트를 방치하면 피로골절로 악화될 수 있습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>신발보다 중요한 예방 — 점진성과 근력</h2>
+<p>신 스플린트는 다른 부상보다 특히 <strong>"얼마나 갑자기 달렸나"</strong>가 결정적입니다. 신발은 보조일 뿐, 훈련 관리가 근본입니다.</p>
+<ul>
+  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기. 초보일수록 보수적으로(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
+  <li><strong>정강이·종아리 강화</strong> — 발끝 들기(토 레이즈), 카프 레이즈로 충격을 근육이 받게 합니다</li>
+  <li><strong>부드러운 노면 병행</strong> — 아스팔트만 달리지 말고 트랙·흙길을 섞으면 부담이 줄어듭니다</li>
+  <li><strong>워밍업</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 정강이·발목을 풀기</li>
+  <li><strong>통증 시 휴식</strong> — 욱신거리면 며칠 쉬고 얼음찜질. 2주 이상 지속되면 피로골절 감별을 위해 병원에서 확인하세요</li>
+</ul>
+
+<h2>마무리</h2>
+<p>신 스플린트는 "신발 하나"로 막기보다, <strong>충격 흡수 좋은 쿠션화 + 점진적 거리 증가 + 정강이 근력</strong>의 조합으로 예방하는 부상입니다. 특히 막 달리기를 시작했거나 거리를 늘리는 중이라면 욕심내지 말고 천천히 쌓으세요. 더 많은 모델은 <a href="/best/shin-splints">정강이 통증 러닝화 추천</a>에서 비교할 수 있고, 다른 부위가 함께 아프다면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>·<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>·<a href="/blog/knee-pain-running-shoes">무릎 통증</a> 가이드도 참고하세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 특정 지점을 누를 때 날카롭게 아프면(피로골절 의심) 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
+`,
+  },
+  {
     id: 'plantar-fasciitis-running-shoes-2026',
     slug: 'plantar-fasciitis-running-shoes-2026',
     title: '러너의 족저근막염 — 아침 첫발이 아프다면 | 아치 서포트·안정화 러닝화로 줄이는 법 (카야노 33·본디 9·아드레날린 GTS)',
@@ -84,7 +169,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>마무리</h2>
-<p>족저근막염은 "신발 하나"로 막을 순 없지만, <strong>아치를 받쳐주는 안정화·쿠션 신발 + 발바닥·종아리 스트레칭 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 평발이라면 안정화가 우선이고, 이미 아침 첫발 통증이 있다면 무리하지 말고 스트레칭·휴식으로 관리하세요. 더 많은 모델은 <a href="/best/plantar-fasciitis">족저근막염 러닝화 추천</a>에서 비교할 수 있습니다. 무릎이 함께 아프다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화</a>도 참고하세요.</p>
+<p>족저근막염은 "신발 하나"로 막을 순 없지만, <strong>아치를 받쳐주는 안정화·쿠션 신발 + 발바닥·종아리 스트레칭 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 평발이라면 안정화가 우선이고, 이미 아침 첫발 통증이 있다면 무리하지 말고 스트레칭·휴식으로 관리하세요. 더 많은 모델은 <a href="/best/plantar-fasciitis">족저근막염 러닝화 추천</a>에서 비교할 수 있습니다. 무릎이 함께 아프다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화</a>, 정강이가 욱신거리면 <a href="/blog/shin-splints-running-shoes-2026">정강이 통증(신 스플린트) 가이드</a>도 참고하세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
 `,
@@ -7503,7 +7588,7 @@ export const blogPosts: BlogPost[] = [
   {
     id: '2026-garmin-run-korea-medal-race-package',
     slug: '2026-garmin-run-korea-medal-race-package',
-    title: '2026 가민런 코리아 메달·레이스 패키지 공개 | 포러너 스페셜팩 6/23 오픈 D-18 — 참가 기념품·스폰서 기프트·접수 일정',
+    title: '2026 가민런 코리아 메달·레이스 패키지 공개 | 포러너 스페셜팩 6/23 오픈 — 참가 기념품·스폰서 기프트·접수 일정',
     description: '2026 가민런 코리아가 10K·HALF 완주 메달과 참가자 레이스 패키지를 공개했습니다. 6월 23일 포러너 170/70 스페셜팩 오픈, 7월 1~3일 본접수(래플), 7월 7일 당첨자 발표로 이어지는 접수 일정과 HDEX·콘티넨탈·샥즈·아미노바이탈 공식 파트너 기프트까지 정리했습니다.',
     thumbnail: '/images/blog/2026-garmin-run-korea-medal-race-package.webp',
     author: '산초 에디터',
@@ -7516,7 +7601,7 @@ export const blogPosts: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>2026 가민런 코리아가 <strong>10K·HALF 완주 메달</strong>과 <strong>참가자 레이스 패키지(기념품)</strong>를 공개했습니다 — "다음 도전을 기념할 메달"</li>
-    <li>접수는 <strong>6/23 포러너 170/70 스페셜팩 오픈(D-18)</strong> → <strong>7/1~7/3 본접수(래플)</strong> → <strong>7/7 당첨자 발표</strong> 순서로 진행됩니다</li>
+    <li>접수는 <strong>6/23 포러너 170/70 스페셜팩 오픈</strong> → <strong>7/1~7/3 본접수(래플)</strong> → <strong>7/7 당첨자 발표</strong> 순서로 진행됩니다</li>
     <li>공식 파트너 <strong>HDEX·콘티넨탈타이어·샥즈·아미노바이탈</strong>의 기프트도 함께 제공됩니다. 11월 15일 고양종합운동장</li>
   </ul>
 </div>
@@ -7551,7 +7636,7 @@ export const blogPosts: BlogPost[] = [
     <tr><th>일정</th><th>내용</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>6/23 (화)</strong></td><td><strong>포러너 170/70 스페셜팩</strong> 오픈 <strong>(D-18)</strong> — 워치 포함 패키지</td></tr>
+    <tr><td><strong>6/23 (화)</strong></td><td><strong>포러너 170/70 스페셜팩</strong> 오픈 — 워치 포함 패키지</td></tr>
     <tr><td><strong>7/1 (수) ~ 7/3 (금)</strong></td><td><strong>본 접수 신청 (래플/추첨)</strong></td></tr>
     <tr><td><strong>7/7 (화)</strong></td><td>본 접수 <strong>당첨자 발표</strong></td></tr>
   </tbody>
