@@ -3,6 +3,513 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-trans-jeju-utmb-registration',
+    slug: '2026-trans-jeju-utmb-registration',
+    title: '트랜스제주 by UTMB 2026 — 10월 2~4일 제주, 접수 7월 31일 마감 | 종목·참가비·UTMB Index 총정리',
+    description: 'UTMB 월드시리즈 아시아 공식 대회 트랜스제주 by UTMB가 2026년 10월 2~4일 제주에서 열립니다. 20K·60K·100K·100M 4개 종목, 접수는 7월 31일 선착순 마감. 종목별 출발 시각·거리·참가비(USD)·UTMB Index 자격, 어떤 종목부터 시작할지, 필수 트레일 장비까지 한 번에 정리했습니다.',
+    thumbnail: '/images/blog/2026-trans-jeju-utmb-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-25',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['트랜스제주', '트랜스제주 UTMB', 'UTMB', '제주 트레일', '트레일 러닝 대회', 'UTMB Index'],
+    event: {
+      name: '트랜스제주 by UTMB 2026',
+      startDate: '2026-10-02',
+      endDate: '2026-10-04',
+      location: {
+        name: '제주 (제주월드컵경기장·가시리 한라마 파크 등)',
+      },
+      organizer: '서귀포시 (운영 에이플랜)',
+      url: 'https://transjeju.utmb.world/',
+    },
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⏳</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 마감 2026년 7월 31일(금) — 선착순</p>
+    <p>2026 트랜스제주 by UTMB는 <strong>2026-10-02(금)~10-04(일)</strong> 제주에서 열립니다. 접수는 2026-03-18 오픈돼 진행 중이며 <strong>7월 31일 선착순 마감</strong>입니다. 인기 종목은 마감 전 조기 소진될 수 있으니 출전 계획이 있다면 서두르세요. 신청·최신 정보는 공식 <a href="https://transjeju.utmb.world/" rel="noopener noreferrer">transjeju.utmb.world</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>트랜스제주가 뭔가요</h2>
+
+<p>트랜스제주 by UTMB는 프랑스 몽블랑에서 열리는 세계 최고 권위의 울트라 트레일 대회 <strong>UTMB</strong>의 <strong>아시아 공식 시리즈(UTMB World Series)</strong> 대회입니다. UTMB는 2023년 대회를 '공식 9회(ninth edition)'로 발표했고, UTMB 월드시리즈에 편입된 이후 매년 제주에서 개최되고 있습니다. 한라산 권역의 거친 화산 지형과 오름·곶자왈을 무대로 하는, 국내에서 가장 권위 있는 트레일 대회로 꼽힙니다.</p>
+
+<p>이 대회가 특별한 이유는 <strong>UTMB Index(완주 기록 적립)</strong>입니다. 트랜스제주를 완주하면 UTMB Index가 쌓여, 언젠가 본토 몽블랑 UTMB에 도전할 자격을 만들어 갈 수 있습니다. 스카이레이스·트레일 대회 전반의 개념과 시즌 흐름이 궁금하다면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 대회 가이드</a>를 먼저 보면 이해가 빠릅니다.</p>
+
+<h2>2026 종목과 일정</h2>
+
+<p>2026년은 <strong>20K·60K·100K·100M</strong> 4개 종목으로 열립니다. 거리 구성은 매년 조금씩 바뀌는데, 2026년 기준 수치는 아래와 같습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>출발</th><th>출발지</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>100M</strong> (약 148km)</td><td>2026-10-02(금) 21:00</td><td>—</td><td>최상급 야간 포함 울트라</td></tr>
+    <tr><td><strong>100K</strong></td><td>2026-10-03(토) 05:00</td><td>제주월드컵경기장</td><td>상급 울트라</td></tr>
+    <tr><td><strong>60K</strong></td><td>2026-10-03(토) 08:00</td><td>—</td><td>중상급 (2025년 70K에서 변경)</td></tr>
+    <tr><td><strong>20K</strong></td><td>2026-10-03(토) 10:00</td><td>가시리 한라마 파크</td><td>입문·UTMB 분위기 체험</td></tr>
+  </tbody>
+</table>
+
+<p class="caption">※ 거리·코스·출발지는 주최 측 공지 기준이며 변경될 수 있습니다. 신청 전 공식 페이지에서 최종 확인하세요. 제3자 대회 캘린더에는 다른 날짜가 떠도는 경우가 있으니 <strong>공식 사이트 날짜만 신뢰</strong>하세요.</p>
+
+<h2>참가비</h2>
+
+<p>국제 등록 포털 기준 참가비는 다음과 같습니다(USD 표기). 원화 결제 금액은 국내 등록 시 로그인 후 확인됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비 (USD)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>100M</td><td>$280</td></tr>
+    <tr><td>100K</td><td>$220</td></tr>
+    <tr><td>60K</td><td>$160</td></tr>
+    <tr><td>20K</td><td>$90</td></tr>
+  </tbody>
+</table>
+
+<h2>UTMB Index·참가 자격</h2>
+
+<p>UTMB 월드시리즈 대회는 종목에 따라 <strong>UTMB Index(또는 러닝스톤·추첨 등)</strong> 자격 체계가 적용될 수 있습니다. 일반적으로 거리가 길수록(100K·100M) 사전 완주 실적이나 자격 요건이 요구되는 경향이 있습니다. <strong>정확한 자격·추첨 방식은 매년·종목별로 달라지므로 반드시 공식 등록 페이지에서 본인 종목 기준을 확인</strong>하세요. 트레일이 처음이라면 자격 부담이 적은 <strong>20K</strong>로 UTMB 대회 분위기를 먼저 경험하는 걸 권합니다.</p>
+
+<h2>어떤 종목부터 시작할까</h2>
+
+<ul>
+  <li><strong>트레일 입문 / 첫 UTMB</strong> — <strong>20K</strong>. 누적고도와 컷오프 부담이 가장 작아 로드 러너의 첫 트레일 대회로 적합합니다</li>
+  <li><strong>로드 풀코스 경험자 → 본격 트레일</strong> — <strong>60K</strong>. 거리·고도가 확 올라가므로 사전에 실제 산악 훈련이 필요합니다</li>
+  <li><strong>울트라 도전</strong> — <strong>100K·100M</strong>. 야간 구간·필수장비·자격 요건까지 갖춰야 하는 상급자 영역입니다</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">같은 거리라도 '누적고도'가 난이도를 가른다</p>
+    <p>트레일은 거리보다 누적고도(D+)가 체감 난이도를 좌우합니다. 로드 20K를 뛸 수 있어도 화산 지형 20K는 1.5~2배 힘들 수 있습니다. 대회 전 북한산·관악산 등 실제 산에서 몇 번 달려보고 페이스를 가늠하세요. 트레일이 낯설다면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>부터 보는 걸 권합니다.</p>
+  </div>
+</div>
+
+<h2>필수 트레일 장비</h2>
+
+<p>UTMB 대회는 안전을 위해 <strong>필수장비(mandatory gear) 규정</strong>이 엄격합니다. 미충족 시 출발이 제한되거나 페널티가 부과됩니다. 종목별 규정은 공식 페이지에 고지되며, 공통적으로 다음이 요구됩니다.</p>
+
+<ul>
+  <li><strong>트레일화</strong> — 러그(돌기) 아웃솔 필수. 로드화는 화산암 지형에서 위험합니다</li>
+  <li><strong>러닝 베스트</strong> — 물·보급·필수장비 수납용</li>
+  <li><strong>물 1L 이상 + 개인컵</strong> — 친환경 정책으로 1회용컵 미제공이 표준</li>
+  <li><strong>방풍·방수 자켓</strong>, <strong>서바이벌 블랭킷·호루라기·휴대폰</strong> — 급변 날씨·생존 대비</li>
+  <li><strong>헤드랜턴</strong> — 야간 구간이 있는 장거리 종목 필수</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">코스 난이도별 트레일화</p>
+    <p>입문·가성비는 <a href="/shoes/asics-gel-venture-10">아식스 젤 벤처 10</a>, 접지력·안정성 균형은 <a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>, 장거리 울트라는 <a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>·<a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>, 카본 레이싱은 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>가 대표적입니다. 코스별 자세한 비교는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>준비 — 제주 원정 체크</h2>
+
+<p>제주 대회는 사실상 '원정'입니다. 접수 성공 직후 <strong>항공권·숙소를 함께 예약</strong>하세요. 10월 초는 제주 성수기라 대회 참가자 수요까지 겹치면 숙소가 빠르게 찹니다. 대회 전날 도착해 1박 하며 컨디션을 잡는 게 안전합니다. 원정 대회 짐·준비물 체크는 <a href="/blog/overseas-marathon-travel-checklist-korea">원정 마라톤 준비물 체크리스트</a>가 트레일 원정에도 그대로 유용합니다. 가을 로드 대회와 일정을 함께 짜려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 지금(6월 말) 접수해도 자리가 있나요?</h3>
+<p>접수는 2026년 3월 18일 오픈돼 7월 31일 선착순 마감입니다. 6월 말 기준 아직 접수 기간이지만, 인기 종목은 마감 전 소진될 수 있습니다. 출전 의향이 있다면 공식 페이지에서 잔여 여부를 빨리 확인하고 신청하세요.</p>
+
+<h3>Q. 트레일 경험이 전혀 없는데 도전할 수 있나요?</h3>
+<p>20K 종목이라면 가능합니다. 다만 로드와 달리 러그 아웃솔 트레일화·러닝 베스트 등 장비가 필요하고, 대회 전 실제 산에서 달려본 경험이 있어야 안전합니다. 60K 이상은 충분한 산악 훈련과 장비, 종목별 자격 확인이 선행돼야 합니다.</p>
+
+<h3>Q. UTMB Index가 꼭 있어야 참가할 수 있나요?</h3>
+<p>종목과 해마다 기준이 다릅니다. 입문 종목은 자격 부담이 적은 편이고, 장거리(100K·100M)일수록 사전 실적·자격이 요구되는 경향이 있습니다. 정확한 기준은 본인 종목의 공식 등록 페이지에서 반드시 확인하세요.</p>
+`,
+    faqs: [
+      {
+        question: '트랜스제주 by UTMB 2026 대회는 언제 열리나요?',
+        answer: '2026년 10월 2일(금)부터 10월 4일(일)까지 제주에서 열립니다. 100M은 10월 2일 21시, 100K·60K·20K는 10월 3일에 출발합니다. 접수는 2026년 3월 18일 오픈돼 7월 31일 선착순 마감입니다.',
+      },
+      {
+        question: '트랜스제주 2026 종목과 참가비는 어떻게 되나요?',
+        answer: '20K·60K·100K·100M 4개 종목으로 열립니다. 국제 등록 포털 기준 참가비는 100M $280, 100K $220, 60K $160, 20K $90입니다. 원화 결제 금액은 국내 등록 시 로그인 후 확인됩니다.',
+      },
+      {
+        question: '트레일 입문자는 어떤 종목에 나가야 하나요?',
+        answer: '20K 종목을 권장합니다. 누적고도와 컷오프 부담이 가장 작아 로드 러너의 첫 트레일 대회로 적합하며, UTMB 대회 분위기를 낮은 난이도로 경험할 수 있습니다. 다만 러그 아웃솔 트레일화와 러닝 베스트 등 필수 장비는 갖춰야 합니다.',
+      },
+    ],
+  },
+  {
+    id: 'wet-running-shoes-drying-care-guide-korea',
+    slug: 'wet-running-shoes-drying-care-guide-korea',
+    title: '장마철 젖은 러닝화 빠르게 살리는 법 | 건조·냄새·세탁 — 드라이어·세탁기가 신발을 망치는 이유',
+    description: '우중런 한 번에 흠뻑 젖은 러닝화, 어떻게 말려야 할까요? 신문지·선풍기·신발건조기 건조법부터 직사광선·드라이어·세탁기를 절대 쓰면 안 되는 이유(미드솔 폼 변형·접착제 분리)까지. 냄새·곰팡이 잡는 법, 2켤레 로테이션, 언제 교체할지 장마철 러닝화 관리를 한 번에 정리했습니다.',
+    thumbnail: '/images/blog/wet-running-shoes-drying-care-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-25',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['장마철 러닝', '러닝화 관리', '신발 건조', '러닝화 세탁', '러닝화 수명', '우중런'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>젖은 러닝화는 '열'이 아니라 '바람'으로 말립니다.</strong> 안창·끈을 빼고 신문지로 속 수분을 뺀 뒤, 통풍 그늘에서 선풍기·서큘레이터 바람을 쐬는 게 정석입니다</li>
+    <li><strong>드라이어·직사광선·세탁기·라디에이터는 금지.</strong> 고열이 EVA·PEBA 미드솔 폼을 변형·경화시키고, 미드솔과 아웃솔을 붙인 접착제를 녹여 밑창이 떨어집니다</li>
+    <li><strong>장마철엔 2켤레 로테이션이 답.</strong> 폼이 다시 부풀고 신발이 완전히 마르는 데 하루 이상 걸리므로, 번갈아 신어야 수명도 반발력도 지킵니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌧️</span>
+  <div class="callout-body">
+    <p class="callout-title">장마가 시작됐습니다</p>
+    <p>우중런 자체의 안전·페이스 요령은 <a href="/blog/rainy-season-running-guide-korea">장마철 우중런 가이드</a>에서 다뤘습니다. 이 글은 <strong>달리고 난 뒤 '젖은 신발을 어떻게 살리느냐'</strong>에만 집중합니다. 한 번 잘못 말리면 비싼 러닝화 수명이 몇 달씩 깎이거든요.</p>
+  </div>
+</div>
+
+<h2>왜 '말리는 법'이 중요한가 — 폼은 물과 열에 약하다</h2>
+
+<p>러닝화의 핵심은 미드솔 <strong>폼</strong>입니다. EVA, 슈퍼크리티컬 EVA, PEBA, TPU 같은 폼이 충격을 흡수하고 반발력을 만들죠. 그런데 이 폼들은 두 가지에 약합니다 — <strong>장시간 머금은 물</strong>과 <strong>고열</strong>입니다.</p>
+
+<ul>
+  <li><strong>젖은 채 방치</strong> — 폼과 어퍼가 물을 머금으면 무거워지고, 마르기 전까지 반발이 둔해집니다. 더 큰 문제는 <strong>축축한 어둠 속에서 번식하는 세균·곰팡이</strong>로, 냄새의 진짜 원인입니다</li>
+  <li><strong>고열 건조</strong> — 드라이어·라디에이터·직사광선의 열은 EVA 폼을 수축·경화시켜 쿠션을 죽이고, <strong>미드솔과 아웃솔을 붙인 접착제를 약하게 만들어 밑창이 들뜨거나 떨어지게</strong> 합니다. 고무 아웃솔에 잔금이 가기도 하죠</li>
+</ul>
+
+<p>즉 "빨리 말리려고" 열을 가하는 순간, 그게 바로 신발을 망치는 길입니다. 핵심 원칙은 하나 — <strong>저온 + 통풍</strong>.</p>
+
+<h2>젖은 러닝화 건조 4단계</h2>
+
+<h3>① 안창(인솔)과 끈을 분리한다</h3>
+<p>가장 먼저, 그리고 가장 중요한 단계입니다. 안창은 빼서 따로 말려야 그 아래 갇힌 물기가 빠지고, 신발 내부도 공기가 통합니다. 끈도 풀어 텅(혀)을 활짝 젖혀두세요. 이것만 해도 건조 속도가 확 빨라집니다.</p>
+
+<h3>② 신문지·키친타올로 속 수분을 흡수한다</h3>
+<p>신발 안에 구겨 넣은 신문지가 물을 빨아들입니다. <strong>2~3시간마다 젖은 신문지를 새것으로 교체</strong>하는 게 포인트 — 한 번 넣고 방치하면 오히려 축축한 상태가 유지됩니다. 신문지 잉크가 밝은 색 어퍼에 묻는 게 걱정되면 키친타올이나 흰 종이타올을 쓰세요.</p>
+
+<h3>③ 통풍 그늘에서 바람을 쐬어준다</h3>
+<p>속 수분을 어느 정도 뺀 뒤엔 <strong>바람</strong>이 일을 합니다. 직사광선이 닿지 않는 통풍 잘 되는 곳에 두고 <strong>선풍기·서큘레이터를 신발 입구 쪽으로</strong> 틀어주세요. 신발코를 살짝 위로 기울여 세우면 안쪽 깊은 곳까지 공기가 통합니다. 가정에서 가장 빠르고 안전한 방법입니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">🌀</span>
+  <div class="callout-body">
+    <p class="callout-title">신발건조기를 쓴다면 '저온 송풍' 모드만</p>
+    <p>신발건조기는 편하지만 <strong>열풍이 강한 모드는 금물</strong>입니다. 상온~미지근한 바람(대략 40℃ 이하)의 <strong>송풍·저온 모드</strong>로, 가능하면 타이머를 걸어 장시간 가열을 피하세요. UV 살균 기능이 있으면 냄새 관리에 도움이 됩니다.</p>
+  </div>
+</div>
+
+<h3>④ 완전히 마른 뒤 보관·재착용</h3>
+<p>겉만 말랐다고 끝이 아닙니다. 미드솔과 어퍼 안쪽까지 완전히 마르려면 보통 <strong>하루 안팎</strong>이 걸립니다. 덜 마른 신발을 신발장에 넣으면 그 안에서 곰팡이가 핍니다. 손을 넣었을 때 서늘한 습기가 느껴지지 않을 때까지 기다리세요.</p>
+
+<h2>하지 말아야 할 건조법 — 신발을 망치는 4가지</h2>
+
+<table>
+  <thead><tr><th>금지</th><th>왜 안 되나</th></tr></thead>
+  <tbody>
+    <tr><td><strong>헤어드라이어 / 온풍</strong></td><td>국소 고열이 EVA 폼을 변형·경화시키고 접착제를 녹임. 어퍼 소재도 수축</td></tr>
+    <tr><td><strong>직사광선(땡볕)</strong></td><td>자외선+열로 폼·고무가 삭고 변색. "햇볕에 바짝"이 가장 흔한 실수</td></tr>
+    <tr><td><strong>세탁기·건조기</strong></td><td>회전 충격으로 미드솔-아웃솔 접착 분리, 폼 구조 붕괴. 러닝화엔 사실상 사형선고</td></tr>
+    <tr><td><strong>라디에이터·보일러 위</strong></td><td>지속 고열로 밑창 들뜸·갈라짐. 겨울에도 같은 이유로 금지</td></tr>
+  </tbody>
+</table>
+
+<p>요약하면 <strong>'뜨거운 것 위·안·옆은 전부 금지'</strong>입니다. 손으로 만져 따뜻하면 신발에는 너무 뜨겁다고 보면 됩니다.</p>
+
+<h2>냄새와 곰팡이 잡기</h2>
+
+<p>장마철 러닝화 냄새의 범인은 땀이 아니라 <strong>축축한 환경에서 번식한 박테리아</strong>입니다. 그래서 1순위 해결책은 언제나 <strong>완전 건조</strong>입니다. 그 위에 더할 수 있는 관리:</p>
+
+<ul>
+  <li><strong>베이킹소다</strong> — 마른 신발 안에 한 스푼 뿌리거나 면주머니에 담아 하룻밤. 다음 날 털어내면 냄새·습기 흡수</li>
+  <li><strong>신발 탈취제·제습제</strong> — 신발장에 실리카겔이나 제습제를 함께 두면 장마 내내 도움</li>
+  <li><strong>안창 따로 세척</strong> — 냄새의 상당 부분은 안창에 뱁니다. 미지근한 물에 손빨래 후 그늘 건조</li>
+  <li><strong>두 켤레 번갈아 신기</strong> — 한 켤레가 완전히 마르고 통풍될 시간을 확보하는 게 냄새 예방의 근본</li>
+</ul>
+
+<h2>흙탕물·심하게 더러워졌을 때 — 손세탁 요령</h2>
+
+<p>트레일이나 침수 구간을 지나 진흙·오염이 심하면 헹궈야 합니다. 단 <strong>세탁기 대신 손세탁</strong>이 원칙입니다.</p>
+
+<ul>
+  <li>겉흙은 마른 뒤 솔로 털어냅니다(젖은 흙을 문지르면 섬유 속으로 더 박힘)</li>
+  <li>미지근한 물 + 중성세제를 부드러운 솔이나 천에 묻혀 부분 세척</li>
+  <li>세제가 남지 않게 헹군 뒤, 위의 4단계 건조법으로 말립니다</li>
+  <li>표백제·강알칼리 세제는 어퍼 변색·접착 손상을 일으키니 피하세요</li>
+</ul>
+
+<h2>근본 해결 — 2켤레 로테이션</h2>
+
+<p>미드솔 폼은 한 번 달리며 압축된 뒤 <strong>원래 두께와 반발력으로 회복하는 데 시간</strong>이 필요합니다. 매일 같은 신발을 신으면 폼이 회복할 틈 없이 눌린 채 다음 런을 맞고, 그만큼 빨리 주저앉습니다. 장마철엔 여기에 <strong>'마를 시간'</strong>까지 더해지죠.</p>
+
+<p>그래서 비 시즌일수록 <strong>최소 2켤레를 번갈아 신는 로테이션</strong>이 정답입니다. 한 켤레가 마르고 폼이 회복하는 동안 다른 켤레를 신는 식이죠. 데일리 트레이너 한 켤레를 더 들일 계획이라면 본인 발·예산에 맞는 후보를 <a href="/recommend">1분 러닝화 추천</a>으로 좁히거나, <a href="/best/daily-trainer">데일리 트레이너 추천</a>을 참고하세요. 통기성이 좋아 잘 마르는 여름용 신발이 궁금하면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a> 글도 도움이 됩니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">📉</span>
+  <div class="callout-body">
+    <p class="callout-title">반복해서 젖고 잘못 말린 신발은 수명이 깎입니다</p>
+    <p>아무리 잘 관리해도 침수와 건조를 여러 번 반복한 신발은 폼 반발과 쿠션이 평소보다 빨리 떨어집니다. 쿠션이 꺼지고 발·무릎이 평소보다 피로하다면 교체 신호일 수 있습니다. 판단 기준은 <a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 시기 가이드</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 비 오는 날 신어도 되는 방수 러닝화가 따로 있나요?</h3>
+<p>고어텍스(GTX) 같은 방수 멤브레인을 적용한 러닝화가 있습니다. 빗물이 위에서 떨어지는 상황엔 도움이 되지만, <strong>물웅덩이를 밟아 발목 위로 물이 넘어오면 오히려 안에 물이 갇혀 더 안 마릅니다.</strong> 한여름 장마엔 방수보다 <strong>배수·통기가 잘 되는 메시 신발</strong>이 더 쾌적한 경우가 많습니다. 폭우 예보엔 어차피 젖는다고 보고, 잘 마르는 신발 + 빠른 건조 루틴이 현실적입니다.</p>
+
+<h3>Q. 신문지가 없으면 뭘 쓰나요?</h3>
+<p>키친타올·흰 종이타올·마른 수건 조각으로 대체할 수 있습니다. 핵심은 '흡수성 종이를 자주 갈아주는 것'이지 신문지 자체가 아닙니다. 제습용 실리카겔 팩을 함께 넣어도 좋습니다.</p>
+
+<h3>Q. 신발건조기를 사도 괜찮을까요?</h3>
+<p>저온·송풍 위주 제품이라면 장마철에 유용합니다. 다만 <strong>강한 열풍 모드의 장시간 사용은 피하세요.</strong> 미지근한 바람으로 충분히 말리고, UV 살균 기능이 있으면 냄새 관리에 보탬이 됩니다.</p>
+
+<h3>Q. 카본화(레이싱화)도 똑같이 관리하면 되나요?</h3>
+<p>네, 원칙은 같습니다. 오히려 PEBA 폼과 카본 플레이트를 쓴 고가 레이싱화일수록 <strong>고열은 더 치명적</strong>입니다. 비 오는 대회 후엔 즉시 안창·끈을 빼고 저온 통풍 건조하세요. 레이싱화는 평소에도 훈련용과 분리해 아껴 신는 게 수명에 좋습니다.</p>
+`,
+    faqs: [
+      {
+        question: '젖은 러닝화를 드라이어로 말려도 되나요?',
+        answer: '안 됩니다. 드라이어·라디에이터·직사광선의 고열은 EVA·PEBA 미드솔 폼을 변형·경화시키고, 미드솔과 아웃솔을 붙인 접착제를 약하게 만들어 밑창이 떨어질 수 있습니다. 안창·끈을 빼고 신문지로 속 수분을 흡수한 뒤 통풍 그늘에서 선풍기 바람으로 말리는 게 정석입니다.',
+      },
+      {
+        question: '러닝화를 세탁기에 빨아도 되나요?',
+        answer: '권장하지 않습니다. 세탁기·건조기의 회전 충격은 미드솔과 아웃솔의 접착을 분리시키고 폼 구조를 망가뜨립니다. 오염이 심하면 미지근한 물과 중성세제로 부드러운 솔을 이용해 손세탁하고, 저온 통풍으로 말리세요.',
+      },
+      {
+        question: '장마철 러닝화 냄새는 어떻게 없애나요?',
+        answer: '냄새의 원인은 축축한 환경에서 번식한 박테리아이므로 완전 건조가 1순위입니다. 마른 신발에 베이킹소다를 뿌려 하룻밤 두거나, 안창을 따로 세척·건조하고, 신발장에 제습제를 두면 도움이 됩니다. 근본적으로는 2켤레를 번갈아 신어 마를 시간을 확보하는 것이 가장 효과적입니다.',
+      },
+    ],
+  },
+  {
+    id: 'asics-novablast-6-vs-hoka-clifton-pro-2026',
+    slug: 'asics-novablast-6-vs-hoka-clifton-pro-2026',
+    title: '아식스 노바블라스트 6 vs 호카 클리프톤 프로 | 7월 신상 데일리 정면승부 — 노바6 가벼운 반발 vs 클프로 넓은 토박스·롤링',
+    description:
+      '7월에 데일리 트레이너 신상 둘이 동시에 나옵니다. 노바블라스트 6(7/1)와 호카 클리프톤 프로(7/9). 외신 T3가 "호카가 노바블라스트를 겨냥해 만든 신발"이라 콕 집을 만큼 정면승부 구도죠. 스택·드롭은 거의 같지만 폼 성격이 갈립니다 — 노바6는 전족 FF Turbo Squared(ATPU) 반발과 약 30g 가벼운 무게, 클프로는 클리프톤10 라스트의 넓은 토박스·와이드 옵션·MetaRocker 롤링. 한국 발볼·예산 기준으로 누가 뭘 골라야 하는지 정리했습니다.',
+    thumbnail: '/images/blog/asics-novablast-6-vs-hoka-clifton-pro-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-23',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['노바블라스트 6', '클리프톤 프로', '호카 클리프톤', '데일리 트레이너', '신상 러닝화', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>7월 데일리 신상 맞대결</strong> — 노바블라스트 6(7/1)와 호카 클리프톤 프로(7/9)가 비슷한 시기에 출시됩니다. 외신은 "호카가 노바블라스트를 겨냥한 신발"로 봅니다</li>
+    <li>스택(41.5/33.5 vs 42/34mm)·드롭(8mm)은 사실상 동일 — <strong>차이는 폼</strong>입니다. 노바6는 전족 FF Turbo Squared(ATPU) 반발, 클프로는 ProGlide+(슈퍼크리티컬 EVA) 롤링</li>
+    <li><strong>가볍고 통통 튀는 반발이면 노바6, 넓은 발볼·와이드·부드러운 롤링이면 클프로</strong>. 노바6가 약 30g 가볍고 $10 저렴합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥊</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 이 둘을 나란히 놓나</p>
+    <p>호카가 클리프톤 라인을 둘로 쪼갰습니다. 기존 <a href="/shoes/hoka-clifton-10">클리프톤</a>(부드러운 데일리·CMEVA)은 그대로 두고, 반발 폼을 얹은 <strong>클리프톤 프로</strong>를 새로 냈죠. 외신 T3는 이를 두고 <strong>"호카가 아식스 노바블라스트를 겨냥해 만든 신발"</strong>이라고 못 박았습니다. 즉 둘은 같은 자리를 노리는 <strong>'반응형 고스택 데일리 트레이너'</strong> 경쟁작입니다. 아직 둘 다 출시 전이라(노바6 7/1·클프로 7/9) 아래 수치는 <strong>제조사 공식 발표 + 전작·리뷰 기준 추정</strong>입니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈 비교</h2>
+<table>
+  <thead><tr><th>항목</th><th>아식스 노바블라스트 6</th><th>호카 클리프톤 프로</th></tr></thead>
+  <tbody>
+    <tr><td>출시(글로벌)</td><td>2026-07-01</td><td>2026-07-09</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>41.5 / 33.5mm</td><td>42 / 34mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>8mm</td></tr>
+    <tr><td>무게(M9 추정)</td><td><strong>약 253g</strong></td><td>약 282g</td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>FF Blast Max + <strong>FF Turbo Squared(전족, ATPU)</strong></td><td><strong>ProGlide+</strong>(슈퍼크리티컬 EVA)</td></tr>
+    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
+    <tr><td>로커</td><td>완만한 가이던스</td><td><strong>공격적 MetaRocker</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(힐 폭 85mm) / 와이드 없음</td><td><strong>넓음(클리프톤10 라스트) / 와이드 옵션 ○</strong></td></tr>
+    <tr><td>가격</td><td>$155 (한국 18~19만 추정)</td><td>$165 (한국 21~22만 추정)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 두 신발 모두 출시 전이라 RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 미게시입니다. 무게는 사이즈 기준을 M9로 통일한 추정치(외신 실측은 노바6 269g·M10.5, 클프로 296g·M10)입니다. 출시 후 실측·한국 정가가 나오면 업데이트합니다.</p>
+
+<h2>가장 큰 차이 — 폼</h2>
+<p>스택과 드롭이 같으니 <strong>발밑 느낌은 폼이 결정</strong>합니다. 노바블라스트 6은 힐에 FF Blast Max(폴리올레핀)를 두고 <strong>전족부에 FF Turbo Squared</strong>를 처음 넣었습니다. FF Turbo Squared는 아식스 상위 폼(<a href="/shoes/asics-megablast">메가블라스트</a> 계열)에 쓰인 ATPU 기반으로, PEBA에 가까운 <strong>통통 튀는 반발(pop)</strong>이 특징입니다. 전작 5의 약점이던 '힐-전족 전환 끊김'을 정조준한 설계죠. 더 자세한 변경점은 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6 미리보기</a>에 정리해 뒀습니다.</p>
+<p>클리프톤 프로는 <strong>ProGlide+</strong>라는 슈퍼크리티컬 EVA를 씁니다. 일반 클리프톤의 CMEVA보다 가볍고 탄성이 살아 있어 "클리프톤 이름값보다 훨씬 경쾌하다"(Believe in the Run)는 평을 받았습니다. 다만 <strong>EVA 계열이라 ATPU·PEBA급 에너지 리턴까지는 못 간다</strong>는 게 공통된 지적입니다. 대신 <strong>공격적인 MetaRocker</strong>로 발이 자연스럽게 굴러가는 부드러운 전환을 만듭니다. 정리하면 <strong>노바6는 '튕기는 반발', 클프로는 '굴러가는 롤링'</strong>입니다.</p>
+
+<h2>발볼·핏 — 한국 러너의 핵심</h2>
+<p>한국 러너에게 가장 갈리는 지점은 <strong>토박스</strong>입니다. 노바블라스트 6은 표준 핏인데 6세대에서 <strong>힐 폭이 90→85mm로 약간 좁아졌습니다</strong>(와이드 옵션 없음). 발볼이 넓다면 출시 후 시착이 필수입니다.</p>
+<p>반면 클리프톤 프로는 발볼 넓은 호카 유저에게 익숙한 <strong>클리프톤10 라스트를 그대로 쓰고 와이드(2E) 옵션도 제공</strong>합니다. 발볼이 넓거나 체중이 좀 나가는 러너, 장거리 이지런 위주라면 클프로 쪽이 편안합니다. 발볼 기준으로 더 넓은 선택지가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
+
+<h2>무게·가격 — 노바6가 우위</h2>
+<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 추정 253g vs 282g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. 한국 정가는 둘 다 미확정이지만, 전작 기준 노바6는 18~19만 원대, 클프로는 클리프톤10(199,000원)+$10라 21~22만 원대로 예상됩니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
+
+<h2>누가 뭘 골라야 하나</h2>
+<ul>
+  <li><strong>노바블라스트 6</strong> — 가볍고 통통 튀는 반발을 원하는 러너, 조깅~가벼운 템포를 한 켤레로 굴리는 만능화가 필요한 러너, 예산을 아끼고 싶은 러너. 표준~약간 좁은 발에 맞습니다</li>
+  <li><strong>클리프톤 프로</strong> — 발볼이 넓거나 와이드가 필요한 러너, 체중이 좀 나가거나 장거리 이지런·LSD 위주인 러너, 호카 특유의 부드러운 롤링을 좋아하는 러너</li>
+  <li><strong>둘 다 애매하면</strong> — "가벼운 반발 vs 넓은 안정감"이 결정 기준입니다. 반발·경쾌함이면 노바6, 편안함·롤링이면 클프로. 더 넓은 데일리 후보는 <a href="/best/daily-trainer">데일리 트레이너 추천</a>, 푹신함 우선이면 <a href="/best/max-cushion">맥스 쿠션 추천</a>에서 비교해 보세요</li>
+</ul>
+<p>같은 아식스 FF Blast 계열로는 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>(세일 시 여전히 좋은 선택), 한 단계 위 쿠션은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>도 함께 보면 좋습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">출시 전 비교 — 추정 주의</p>
+    <p>본 글은 <strong>두 신발 출시 전</strong>(노바6 7/1·클프로 7/9) 작성으로, RunRepeat 정량 랩과 한국 정가는 아직 확정되지 않았습니다. 스펙은 제조사 공식 발표 + 전작·해외 리뷰(Believe in the Run·The Running Channel) 기준 추정이며, 무게는 M9 기준으로 환산했습니다. 출시 후 실측·한국 정가가 나오면 업데이트하겠습니다.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: '2026-run-seoul-run-registration',
+    slug: '2026-run-seoul-run-registration',
+    title: '런서울런 2026(제20회 일간스포츠 서울마라톤) | 9/13 서울광장 도심 하프·10K — 6/29 10시 선착순, 정원 20% 줄어 광클 주의',
+    description:
+      '서울 도심 한복판을 달리는 런서울런이 9월 13일 서울광장에서 열립니다. 광화문·종로·흥인지문·숭례문을 잇는 평지 헤리티지 코스에 하프·10K 두 종목. 접수는 6월 29일(월) 오전 10시 선착순으로 열리는데, 작년 1.5만 명에서 올해 정원이 1.2만 명으로 약 20% 줄어 조기 마감 가능성이 큽니다. 일시·코스·종목·참가비·기념품을 한 장에 정리했습니다.',
+    thumbnail: '/images/blog/2026-run-seoul-run-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-23',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['런서울런', '일간스포츠 서울마라톤', '서울 마라톤', '도심 하프', '가을 마라톤', '마라톤 접수'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>런서울런(제20회 일간스포츠 서울마라톤)</strong>이 2026년 9월 13일(일) 서울광장에서 열립니다 — 도심 평지 헤리티지 코스, 하프·10K</li>
+    <li>접수는 <strong>6월 29일(월) 오전 10시 선착순</strong>. 공식 홈페이지(runseoulrun.com)에서 온라인 접수</li>
+    <li>작년 정원 1.5만 명 → <strong>올해 1.2만 명으로 약 20% 축소</strong>. 도심 인기 대회라 조기 마감 가능성이 높으니 오픈런 권장</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏙️</span>
+  <div class="callout-body">
+    <p class="callout-title">6월 29일 오전 10시, 선착순 오픈</p>
+    <p>런서울런은 서울 도심 한복판(광화문~종로~을지로)을 통제하고 달리는 초가을 도심 대회입니다. 차로 가득하던 도로를 러너가 점령하는 매력에 매년 1만 명 이상이 몰리죠. 올해는 <strong>정원이 줄어 경쟁이 더 치열</strong>할 전망입니다.</p>
+  </div>
+</div>
+
+<h2>대회 개요</h2>
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>대회명</td><td>제20회 일간스포츠 서울마라톤 (2026 RUN SEOUL RUN)</td></tr>
+    <tr><td>일시</td><td>2026년 9월 13일(일)</td></tr>
+    <tr><td>출발·도착</td><td>서울광장 (서울 중구 세종대로 110)</td></tr>
+    <tr><td>출발 시각</td><td>하프 07:30 / 10K 07:50</td></tr>
+    <tr><td>종목</td><td>하프마라톤(21km), 10km</td></tr>
+    <tr><td>정원</td><td>약 12,000명 (작년 약 15,000명에서 축소)</td></tr>
+    <tr><td>접수</td><td>6월 29일(월) 10:00 선착순 · 공식 홈페이지</td></tr>
+    <tr><td>주최</td><td>이데일리M(일간스포츠)</td></tr>
+  </tbody>
+</table>
+
+<h2>코스 — 서울 도심 평지 헤리티지</h2>
+<p>서울광장에서 출발해 <strong>종각·종로3가를 지나 흥인지문(동대문)에서 반환</strong>, 시청·숭례문·무교로를 거쳐 을지로3가에서 다시 반환해 서울광장으로 들어옵니다. 600년 도읍의 랜드마크(흥인지문·숭례문)를 잇는 코스라 '헤리티지 코스'로 불리죠. <strong>큰 오르막이 없는 평지</strong>라 도심 초행 러너나 하프 입문자도 부담이 적고, 기록을 노리기에도 좋습니다.</p>
+
+<h2>접수·참가비</h2>
+<p>접수는 <strong>6월 29일(월) 오전 10시</strong>부터 <a href="https://runseoulrun.com/" target="_blank" rel="noopener">공식 홈페이지</a>에서 선착순으로 진행됩니다. 2026년 참가비는 접수 오픈 시점에 공식 발표될 예정인데, <strong>작년(제19회) 기준 하프 79,000원 / 10km 59,000원</strong>이었습니다(올해 확정가는 접수 페이지에서 확인하세요). 환불 신청 마감은 8월 14일(금)로 안내돼 있습니다.</p>
+
+<h2>정원 20% 축소 → 광클 주의</h2>
+<p>2025년(제19회)은 정원 약 1.5만 명에 실제 15,524명이 참가해 성황리에 끝났습니다. 그런데 <strong>2026년은 정원이 약 1.2만 명으로 줄었습니다</strong>(약 20% 축소, 사유 미공개). 수요는 그대로인데 자리가 줄었으니 <strong>하프부터 빠르게 마감될 가능성</strong>이 큽니다. 접수일 오전 10시에 맞춰 미리 로그인·결제 정보를 준비해 두는 '오픈런'을 권합니다.</p>
+
+<h2>기념품·혜택</h2>
+<ul>
+  <li>기념 티셔츠 · 배번호 — <strong>택배 사전 발송</strong>(현장 수령 대기 없음)</li>
+  <li>완주 메달 · 완주 간식 — 현장 지급</li>
+  <li>칩 계측 기록 측정(1만 명 이상 규모 도심 대회 표준)</li>
+</ul>
+<p>같은 가을 서울 도심 대회로는 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>(11/15 광화문~잠실), <a href="/blog/ytn-seoul-tour-marathon-2026">YTN 서울투어마라톤</a>(9/6)도 있습니다. 가을 전체 일정을 한 번에 보려면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 완전정복</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 전 확인</p>
+    <p>2026년 참가비·세부 정원·접수 마감일은 <strong>6월 29일 접수 오픈 시 공식 발표</strong>됩니다. 본 글의 참가비는 작년(제19회) 기준 참고값이며, 정확한 금액과 코스 통제 안내는 <a href="https://runseoulrun.com/" target="_blank" rel="noopener">공식 홈페이지</a>에서 최종 확인하세요.</p>
+  </div>
+</div>
+`,
+  },
+  {
+    id: 'saucony-triumph-24-review',
+    slug: 'saucony-triumph-24-review',
+    title: '써코니 트라이엄프 24 리뷰 | 스택 +6mm인데 -22g — incrediLUX 폼으로 갈아탄 209,000원 맥스쿠션 가성비',
+    description:
+      '써코니 최고급 데일리 쿠션화 트라이엄프가 24세대에서 폼을 통째로 바꿨습니다. PWRRUN PB(ePEBA) → incrediLUX(ATPU). 그 결과 스택은 +6mm 높아졌는데 무게는 오히려 22g 가벼워진 250g — "부드러운데 멍청하지 않다"는 평을 받으며 BITR A티어, DOR A-를 받았죠. 한국 정가 209,000원으로 본디9·님버스28보다 저렴합니다. 발볼 넓은 한국 러너를 위한 와이드 옵션과 평발·무릎 적합성까지 정리했습니다.',
+    thumbnail: '/images/blog/saucony-triumph-24-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-23',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['써코니 트라이엄프 24', '트라이엄프', 'incrediLUX', '쿠션화', '맥스쿠션', '러닝화 리뷰'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>트라이엄프 24가 폼을 통째로 교체</strong> — PWRRUN PB(ePEBA)에서 신형 incrediLUX(ATPU)로. 그 결과 스택은 +6mm 높아졌는데 무게는 22g 줄어 250g</li>
+    <li>"부드러운데 멍청하지 않다"는 평 — <strong>맥스쿠션이면서 에너지 리턴이 살아 있는</strong> 데일리 쿠션화. BITR A티어, Doctors of Running A-</li>
+    <li>한국 정가 <strong>209,000원</strong>으로 본디9·님버스28보다 저렴, <strong>와이드(2E) 옵션</strong>도 한국몰 판매. 단 안정화 기능은 없는 완전 중립화</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🛋️</span>
+  <div class="callout-body">
+    <p class="callout-title">"소파인데 살짝 튕기는 소파"</p>
+    <p>트라이엄프는 써코니의 <strong>최고급 데일리 쿠션화</strong>입니다. 매일 편하게 거리를 쌓고 롱런까지 소화하는 '푹신한 만능화' 포지션이죠. 24세대는 한국에 이미 출시돼 <strong>209,000원</strong>에 판매 중이며(와이드 포함), 폼 교체로 시리즈 사상 가장 큰 변화를 맞았습니다.</p>
+  </div>
+</div>
+
+<h2>23 → 24, 무엇이 달라졌나</h2>
+<table>
+  <thead><tr><th>항목</th><th>트라이엄프 23</th><th>트라이엄프 24</th><th>변경</th></tr></thead>
+  <tbody>
+    <tr><td>무게(M9)</td><td>272g</td><td><strong>250g</strong></td><td>-22g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>42.3 / 32.3mm</td><td>43 / 33mm</td><td>+6mm 안팎</td></tr>
+    <tr><td>드롭</td><td>10mm</td><td>10mm</td><td>동일</td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>PWRRUN PB (ePEBA)</td><td><strong>incrediLUX (ATPU)</strong></td><td>전면 교체</td></tr>
+    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>더 오픈된 메시(통기성↑)</td><td>여름 쾌적</td></tr>
+    <tr><td>와이드 옵션</td><td>제공</td><td>제공(한국몰 판매)</td><td>유지</td></tr>
+    <tr><td>한국 정가</td><td>—</td><td>209,000원</td><td>—</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 트라이엄프 24의 RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 2026-06-23 기준 미게시입니다. 참고로 23 실측은 SA 힐 149·전족 136, 에너지 리턴 힐 67.6%·전족 71.2%, 토박스 71.4mm였습니다(24는 게시되면 업데이트).</p>
+
+<h2>핵심 — incrediLUX 폼의 역설</h2>
+<p>이번 세대의 모든 것은 <strong>incrediLUX 폼</strong>으로 통합니다. 기존 PWRRUN PB(ePEBA)를 ATPU(알리파틱 TPU) 기반 슈퍼크리티컬 폼으로 바꿨는데, 결과가 흥미롭습니다. 써코니 공식 발표 그대로 <strong>"발밑 폼을 11% 더 넣었는데 트라이엄프 23보다 거의 0.5온스(약 14g) 가벼워졌다"</strong>는 것. 실측으로는 스택 +6mm에 무게 -22g입니다. <strong>더 두툼해졌는데 더 가벼워진</strong> 셈이죠.</p>
+<p>주행 느낌도 좋아졌습니다. Believe in the Run은 <strong>"트라이엄프 역사상 가장 활기찬(pep) 폼"</strong>이라 했고, Doctors of Running은 <strong>"트라이엄프가 진짜 프리미엄 데일리 트레이너처럼 느껴지는 첫 버전"</strong>이라 평했습니다(A-). Road Trail Run 멀티 테스터는 평균 9.3/10. 공통된 칭찬은 <strong>"부드러운데 둔하지 않다"</strong> — 맥스쿠션이면서 에너지 리턴이 살아 있다는 점입니다.</p>
+
+<h2>맥스쿠션 3대장 비교 — 어디에 설까</h2>
+<p>한국에서 트라이엄프 24의 라이벌은 명확합니다. <a href="/shoes/hoka-bondi-9">호카 본디 9</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>죠.</p>
+<ul>
+  <li><strong>vs 본디 9</strong> — 본디는 더 무겁고(약 298g) 구조화된 로커로 '완전 소파'. 트라이엄프 24는 약 48g 가볍고 에너지 리턴이 더 살아 '튕기는 소파'입니다</li>
+  <li><strong>vs 님버스 28</strong> — 스택은 비슷(43.5/35.5mm). 님버스는 FF BLAST+ + PureGEL로 플랫폼 안정감이 우위, 트라이엄프 24는 무게·반발과 가격(209K vs 약 23만)에서 우위</li>
+  <li><strong>vs 1080 v15</strong> — 1080은 드롭이 6mm로 낮아(트라이엄프 24는 10mm) 더 자연스러운 발걸음. <strong>힐 착지가 많다면 드롭 10mm의 트라이엄프 24</strong>가 편합니다</li>
+</ul>
+<p>정리하면 <strong>'쿠션 + 반발 균형 + 가성비'가 트라이엄프 24의 자리</strong>입니다. 푹신함 끝판왕은 본디, 안정감은 님버스, 낮은 드롭은 1080. 세 신발을 한 번에 보려면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>을 참고하세요.</p>
+
+<h2>한국 러너 관점 — 발볼·평발·무릎</h2>
+<ul>
+  <li><strong>발볼 넓은 러너</strong> — <strong>와이드(2E) 옵션이 한국몰에 정식 판매</strong>됩니다. 표준형도 23(71.4mm)보다 소폭 넉넉해졌지만, 발볼이 넓다면 와이드를 권합니다(<a href="/best/wide-toebox">발볼 넓은 러너 추천</a> 참고)</li>
+  <li><strong>평발·과내전</strong> — <strong>완전 중립화라 교정 기능이 없습니다.</strong> 경미한 평발 + 쿠션 우선이면 43mm 스택이 발바닥 부하를 줄여줘 허용 범위지만, 오버프로네이션이 뚜렷하면 안정화인 <a href="/shoes/saucony-hurricane-25">써코니 허리케인</a> 계열이 맞습니다</li>
+  <li><strong>무릎</strong> — 43mm 힐 스택의 충격 흡수로 무릎 부하 분산에 유리합니다. 단 무릎 통증 원인이 과내전이라면 쿠션만으로는 부족하니 안정화를 고려하세요</li>
+</ul>
+
+<h2>누구에게 추천하나</h2>
+<ul>
+  <li><strong>추천</strong> — 이지런·롱런용 최고급 쿠션 중립화를 찾는 러너, 맥스쿠션을 원하지만 '무겁고 둔한' 느낌이 싫은 러너, 초~중급 마라톤 훈련용, 발바닥 부하를 줄이고 싶은 러너</li>
+  <li><strong>비추천</strong> — 안정화가 필요한 과내전 러너(→ 허리케인), 낮은 드롭·그라운드 필을 좋아하는 러너, 비 오는 노면 위주로 달리는 러너(젖은 노면 트랙션은 평범)</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">두 가지 주의</p>
+    <p>① <strong>안정화가 아닙니다.</strong> 트라이엄프 24는 완전 중립화로, 안정성이 필요하면 써코니 허리케인 26 등 안정화 라인을 보세요. ② <strong>RunRepeat 정량 랩은 아직 미게시</strong>(2026-06-23 기준)라, 본문의 SA·에너지 리턴 수치는 트라이엄프 23 참고값입니다. 24 랩이 나오면 업데이트하겠습니다.</p>
+  </div>
+</div>
+`,
+  },
+  {
     id: 'asics-novablast-6-preview-2026',
     slug: 'asics-novablast-6-preview-2026',
     title: '아식스 노바블라스트 6 미리보기 | 7월 1일 출시 — 5와 무엇이 달라졌나 (FF Turbo Squared 전족부·AsicsGrip)',
@@ -20792,6 +21299,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-02',
+    updatedAt: '2026-06-25',
     category: 'news' as const,
     readingTime: 8,
     tags: ['춘천마라톤', '조선일보 춘천마라톤', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
@@ -20799,8 +21307,8 @@ export const blogPosts: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">2026 일반접수 — 풀코스 7/14(화)·10K 7/16(목) 14시 (창설 80주년)</p>
-    <p>6/11 공식 발표 기준입니다. 일반접수에 앞서 멤버십 얼리버드(6/23)·완주자 특별접수(6/29) 등 우선 트랙이 먼저 진행됩니다(아래 표 참고). 풀코스 일반접수는 매년 수분 내 마감되니, 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>을 함께 확인하세요.</p>
+    <p class="callout-title">2026 일반접수 — 풀코스 7/14(화)·10K 7/16(목) 14시 (창설 80주년·제80회)</p>
+    <p><strong>일반접수는 풀코스 2026-07-14(화) 14:00, 10K 2026-07-16(목) 14:00 선착순</strong>입니다. 이에 앞서 우선 트랙(명예의전당·조선멤버십 얼리버드·완주자 특별접수)이 순차 진행되며, 완주자 특별접수 응모는 2026-06-29~07-01입니다(아래 표 참고). 풀코스 일반접수는 매년 선착순 수분 내 마감되니 미리 준비하세요(아래 광클 체크리스트). 최신 정보는 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>에서 확인하세요.</p>
   </div>
 </div>
 
@@ -20844,6 +21352,8 @@ export const blogPosts: BlogPost[] = [
     <tr><td><strong>10K</strong></td><td>100,000원</td><td>1시간 30분</td></tr>
   </tbody>
 </table>
+
+<p class="caption">※ 2025년 대비 참가비가 인상됐습니다 — 풀코스 100,000→150,000원, 10K 80,000→100,000원. 풀코스 제한시간 5시간 30분은 2025년과 동일합니다.</p>
 
 <div class="callout info">
   <span class="callout-icon">ℹ️</span>
