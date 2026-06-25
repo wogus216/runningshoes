@@ -3,6 +3,117 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'hoka-bondi-9-review',
+    slug: 'hoka-bondi-9-review',
+    title: '호카 본디 9 후기 | 무릎·관절 보호 최강 맥시멀 쿠션 — 발볼·무게·가성비 솔직 리뷰',
+    description: '호카 본디 9, 무릎이 걱정되는 러너에게 가장 먼저 추천되는 맥시멀 쿠션화입니다. 41mm 스택과 SA 146 충격흡수로 관절 보호는 최상위급이지만, 303g 무게와 좁은 토박스(72.5mm)는 분명한 약점이죠. 부상 이력·체중·회복런 러너에게 맞는지, 발볼 넓은 한국 러너의 와이드 선택까지 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/hoka-bondi-9-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-26',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['호카 본디 9', '본디 9 후기', '맥시멀 쿠션', '무릎 보호 러닝화', '관절 보호', '쿠션화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>본디 9는 "무릎이 걱정될 때 가장 먼저 떠오르는" 맥시멀 쿠션의 정석</strong>입니다. 41mm 힐 스택과 SA 146 충격흡수, 123.2mm 초광폭 플랫폼으로 무릎·발목·족저근막 보호가 전부 최상위급(excellent). 부상 이력·체중 있는 러너·회복런 러너의 '관절 보험'입니다</li>
+    <li><strong>대가는 무게(303g)와 느린 반응성(5/10)</strong>입니다. 빠른 템포·인터벌엔 안 맞고, 6~8분/km의 편안한 페이스에서 진가가 나옵니다. 스피드를 원하면 본디가 아니라 <a href="/shoes/hoka-clifton-10">클리프톤</a>이나 다른 신발을 보세요</li>
+    <li><strong>토박스가 72.5mm로 좁은 편</strong>이라 발볼 넓은 한국 러너는 <strong>와이드 옵션이 사실상 필수</strong>입니다. 정가 22.9만(세일 19.5만~), 550km 내구성에 km당 약 400원으로 가성비도 합리적입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦵</span>
+  <div class="callout-body">
+    <p class="callout-title">"무릎 괜찮은 쿠션화 추천해주세요"의 단골 정답</p>
+    <p>러닝 커뮤니티에서 무릎·발목 걱정이 나올 때마다 빠지지 않고 등장하는 이름이 <a href="/shoes/hoka-bondi-9">호카 본디 9</a>입니다. 호카 라인업에서 <strong>가장 두껍게 쿠션을 깐 맥시멀 쿠션화</strong>이고, 그게 정확히 이 신발의 존재 이유죠. 다만 "푹신하다=좋다"로 끝나는 신발이 아닙니다. 무게·발볼·페이스라는 분명한 트레이드오프가 있어서, <strong>내가 본디를 신어야 할 사람인지부터 가려야</strong> 후회가 없습니다. 이 글은 그 판단을 도와드립니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈에</h2>
+<table>
+  <thead><tr><th>항목</th><th>본디 9</th><th>의미</th></tr></thead>
+  <tbody>
+    <tr><td>카테고리</td><td>맥시멀 쿠션화</td><td>호카 최대 쿠션 라인</td></tr>
+    <tr><td>무게(US 9)</td><td><strong>303g</strong></td><td>무거운 편 (글리세린 22보다 +20g)</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>41 / 32mm</td><td>드롭 9mm, 두툼한 힐</td></tr>
+    <tr><td>미드솔</td><td>Supercritical EVA</td><td>일반 EVA보다 탄성 오래 유지</td></tr>
+    <tr><td>충격흡수(SA)</td><td>146</td><td>관절 보호 최상위급</td></tr>
+    <tr><td>플랫폼 폭</td><td>123.2mm</td><td>초광폭 → 안정성 8/10</td></tr>
+    <tr><td>토박스</td><td>72.5mm (좁은 편)</td><td><strong>발볼 넓으면 와이드 필수</strong></td></tr>
+    <tr><td>최적 페이스</td><td>6:00~8:00/km</td><td>느린 조깅·회복런 전용</td></tr>
+    <tr><td>내구성 / 가격</td><td>550km / 229,000원</td><td>km당 약 400원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택·SA·토박스는 RunRepeat 실측 기준. 가격은 호카 코리아 공식 정가(세일 시 195,000원 안팎).</small></p>
+
+<h2>실제로 어떤 느낌이냐</h2>
+<h3>쿠션 — "바닥이 안 꺼진다"는 안정감</h3>
+<p>본디 9의 핵심은 <strong>41mm 힐 스택 + SA 146</strong> 조합이 만드는 두툼하면서도 무너지지 않는 발밑입니다. Supercritical EVA 폼이 일반 EVA보다 탄성을 오래 유지해서, 25km 롱런 후반에도 발바닥 피로가 확연히 적습니다. 무엇보다 <strong>123.2mm 초광폭 플랫폼</strong>이 받쳐줘서 "푹신한데 흔들리지 않는다"는 게 본디의 진짜 장점입니다. 맥시멀 쿠션화는 자칫 물렁해서 불안정하기 쉬운데, 본디는 안정성을 8/10까지 끌어올렸습니다.</p>
+
+<h3>무게·반응성 — 빠르게 달릴 신발은 아니다</h3>
+<p>솔직하게, <strong>303g은 무겁습니다.</strong> 반응성도 5/10이라 발을 차고 나가는 탄발력은 약합니다. 그룹런에서 페이스가 4~5분대로 올라가면 발이 무겁게 느껴지고, 인터벌·템포 훈련엔 전혀 맞지 않습니다. 본디는 <strong>6~8분/km의 편안한 페이스에서 가장 행복한 신발</strong>입니다. 회복런, 장거리 LSD, 출퇴근·산책 겸용으로 쓸 때 무게는 거의 문제가 되지 않습니다.</p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 요약: 본디는 '속도'가 아니라 '보호'를 사는 신발</p>
+    <p>본디 9를 사면서 빠른 기록을 기대하면 실망합니다. 반대로 <strong>"오래, 다치지 않고, 편하게 달리고 싶다"</strong>가 목표라면 이만한 신발이 드뭅니다. 무릎·발목·족저근막 보호가 모두 최상위(excellent)라, 부상 이력이 있거나 관절이 걱정되는 러너에게는 사실상 '러닝 보험'에 가깝습니다.</p>
+  </div>
+</div>
+
+<h2>이런 러너에게 추천 / 이런 러너는 다시 생각</h2>
+<table>
+  <thead><tr><th>✅ 잘 맞는 러너</th><th>❌ 안 맞는 러너</th></tr></thead>
+  <tbody>
+    <tr><td>무릎·발목 부상 이력이 있다</td><td>인터벌·템포 등 빠른 훈련 위주</td></tr>
+    <tr><td>체중이 있는 편이라 충격이 걱정</td><td>가벼운 신발을 선호한다</td></tr>
+    <tr><td>회복런·LSD 장거리용을 찾는다</td><td>민첩한 방향 전환이 필요하다</td></tr>
+    <tr><td>장시간 서있는 직업 + 러닝 겸용</td><td>대회 기록 단축이 1순위</td></tr>
+    <tr><td>평발이라 안정적 베이스가 필요</td><td>발볼이 아주 넓은데 와이드가 싫다</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너가 꼭 체크할 것</h2>
+<ul>
+  <li><strong>① 발볼 — 본디는 전통적으로 토박스가 좁습니다.</strong> 9에서도 실측 72.5mm로 좁은 편이라, 발볼 넓은 한국 러너 평균 기준으로는 <strong>표준(D)보다 와이드 옵션을 강력 권장</strong>합니다. 다행히 본디는 와이드가 정식 발매돼 선택이 쉽습니다. 발볼이 늘 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</li>
+  <li><strong>② 무릎·관절 — 본디의 최대 강점입니다.</strong> SA 146 충격흡수 + 41mm 스택은 무릎 통증 이력 러너에게 체감이 확실합니다. 다만 신발이 만능은 아니니, 통증 관리 전반은 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 신발 가이드</a>와 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 러닝화 가이드</a>를 참고하세요.</li>
+  <li><strong>③ 여름 통기성은 '보통'입니다.</strong> 두툼한 구조 특성상 한여름 고온다습 환경에선 발이 더울 수 있습니다(통기성 fair). 장마·폭염철 데일리로 쓴다면 양말·통풍을 신경 쓰세요.</li>
+</ul>
+
+<h2>비슷한 맥시멀 쿠션화와 비교</h2>
+<p>"본디가 답인가, 다른 게 나은가"를 고민한다면 같은 맥시멀 쿠션 3종을 함께 보세요. 무릎 보호용 맥스 쿠션을 폭넓게 비교한 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a>도 도움이 됩니다.</p>
+<ul>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></strong> — 본디만큼 푹신하면서 토박스가 더 넉넉한 편. 발볼 때문에 본디가 부담되면 1순위 대안.</li>
+  <li><strong><a href="/shoes/new-balance-1080-v14">뉴발란스 1080 V14</a></strong> — 부드러운 착화감과 데일리 활용도. 쿠션+가벼운 만능형을 원할 때.</li>
+  <li><strong><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></strong> — 본디보다 20g 가벼우면서 부드러운 쿠션. 무게가 거슬리면 검토.</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <p class="faq-q">Q. 무릎이 안 좋은데 본디 9 신어도 되나요?</p>
+  <p class="faq-a">A. 본디가 빛나는 지점이 바로 그것입니다. SA 146 충격흡수와 41mm 스택으로 무릎·발목 보호가 최상위급이라, 통증 이력이 있는 러너에게 가장 자주 추천됩니다. 단 신발이 치료는 아니니, 통증이 지속되면 페이스·거리 조절과 함께 전문의 상담을 병행하세요.</p>
+  <p class="faq-q">Q. 러닝 초보인데 본디 9 괜찮을까요?</p>
+  <p class="faq-a">A. 좋습니다. 느린 페이스에서 가장 편한 신발이라 입문자의 천천히 달리기·걷뛰기에 잘 맞습니다. 다만 본격적으로 속도를 올리는 단계가 오면 무게(303g)가 걸림돌이 될 수 있어, 그때는 가벼운 데일리화를 한 켤레 더 두는 걸 권합니다.</p>
+  <p class="faq-q">Q. 발볼이 넓은데 표준으로 살까요, 와이드로 살까요?</p>
+  <p class="faq-a">A. 발볼이 넓다면 <strong>와이드</strong>입니다. 본디는 토박스가 72.5mm로 좁은 편이라, 표준(D)으로 사면 장거리에서 발가락이 눌릴 수 있습니다. 와이드를 선택한 한국 러너 후기가 "딱 맞는다"로 일관됩니다.</p>
+  <p class="faq-q">Q. 체중이 좀 나가는 편인데 쿠션이 꺼지지 않을까요?</p>
+  <p class="faq-a">A. 본디의 123.2mm 초광폭 플랫폼과 Supercritical EVA가 체중 있는 러너에게 특히 유리합니다. 90kg대 러너도 "바닥이 안 꺼진다"는 후기를 남길 만큼 지지력이 좋습니다. 맥시멀 쿠션 중에서도 안정성(8/10)이 높은 편이라 안심하고 신을 수 있습니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>본디 9의 전체 스펙·실측 데이터·구매 링크는 <a href="/shoes/hoka-bondi-9">본디 9 상세 페이지</a>에서 확인하세요. 호카 안에서 더 가볍고 빠른 데일리를 찾는다면 <a href="/shoes/hoka-clifton-10">클리프톤 10</a>, 무릎 보호 맥스 쿠션을 폭넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 추천합니다.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 호카 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 랩 수치(무게·스택·SA·토박스)는 RunRepeat 실측 기준입니다. 부상 관련 내용은 일반적 정보이며, 통증이 지속되면 전문의 상담을 권합니다.</small></p>
+`,
+  },
+  {
     id: 'saucony-endorphin-lineup-2026-guide',
     slug: 'saucony-endorphin-lineup-2026-guide',
     title: '써코니 엔돌핀 4종 완벽 가이드 | 7/1 라인업 — 아주라·스피드5·프로5·엘리트3, 내 레이스엔 어떤 거?',
