@@ -3,6 +3,132 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'saucony-endorphin-lineup-2026-guide',
+    slug: 'saucony-endorphin-lineup-2026-guide',
+    title: '써코니 엔돌핀 4종 완벽 가이드 | 7/1 라인업 — 아주라·스피드5·프로5·엘리트3, 내 레이스엔 어떤 거?',
+    description: '써코니가 2026 엔돌핀 라인을 전면 리뉴얼했습니다. 한국 공식몰 7/1 기준 아주라(18.9만)·스피드 5(21.9만)·프로 5(29.9만)·엘리트 3(36.9만) 4단 구성으로 정비됐죠. 데일리 슈퍼폼부터 풀카본 레이서까지 — 목표 기록·주간 거리·예산·발볼로 내게 맞는 엔돌핀 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/saucony-endorphin-lineup-2026-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-26',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['써코니 엔돌핀', '엔돌핀 스피드 5', '엔돌핀 프로 5', '엔돌핀 아주라', '엔돌핀 엘리트', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>써코니 엔돌핀이 2026년 4단 라인업으로 정비됐습니다</strong> — 한국 공식몰 7/1 기준 <a href="/shoes/saucony-endorphin-azura">아주라(18.9만)</a> → <a href="/shoes/saucony-endorphin-speed-5">스피드 5(21.9만)</a> → <a href="/shoes/saucony-endorphin-pro-5">프로 5(29.9만)</a> → 엘리트 3(36.9만, 신형). 폼·플레이트·가격이 한 칸씩 올라가는 '사다리' 구조입니다</li>
+    <li><strong>고민은 딱 두 축</strong>입니다 — ① 카본 플레이트가 필요한가(레이스 위주) ② 예산이 어디까지인가. 데일리·입문이면 <strong>아주라</strong>, 훈련+하프 대회를 한 켤레로 잡고 싶으면 <strong>스피드 5(가성비 갓신발)</strong>, 본격 풀마라톤 카본이면 <strong>프로 5</strong>, 서브3 엘리트면 <strong>엘리트 3</strong></li>
+    <li><strong>4종 모두 와이드 옵션이 없습니다.</strong> 아주라·스피드·프로는 표준 토박스라 시착하면 대부분 괜찮지만, 엘리트는 좁은 편이라 발볼 넓은 한국 러너는 주의하세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🪜</span>
+  <div class="callout-body">
+    <p class="callout-title">엔돌핀 = 써코니의 '스피드 사다리'</p>
+    <p>써코니의 스피드 라인은 전부 <strong>엔돌핀</strong>이라는 이름을 답니다. 2026년 들어 라인이 대거 갱신되면서 한국 공식몰 기준 <strong>아주라 → 스피드 5 → 프로 5 → 엘리트 3</strong> 4단으로 정리됐습니다. 핵심은 위로 갈수록 <strong>플레이트가 강해지고(없음 → 나일론 → 카본) 폼이 비싸지고(PWRRUN PB → IncrediRUN) 가격이 오른다</strong>는 것. 그래서 "엔돌핀 뭐 사지?"의 답은 모델 스펙 암기가 아니라 <strong>내가 사다리의 어느 칸에 서 있나</strong>를 정하는 데서 나옵니다. 엘리트 3는 한국 미입고로 아직 랩 데이터가 없어, 본문 수치는 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> 실측 + 공식 라인업 기준입니다(출시 후 갱신).</p>
+  </div>
+</div>
+
+<h2>엔돌핀 4종 한눈 비교</h2>
+<table>
+  <thead>
+    <tr><th>항목</th><th>아주라</th><th>스피드 5</th><th>프로 5</th><th>엘리트 3</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>포지션</strong></td><td>데일리 슈퍼폼</td><td>만능 템포</td><td>카본 레이서</td><td>엘리트 레이스</td></tr>
+    <tr><td><strong>정가</strong></td><td>189,000원</td><td>219,000원</td><td>299,000원</td><td>369,000원<br><small>(신형·잠정)</small></td></tr>
+    <tr><td>무게(US 9)</td><td>240g</td><td>241g</td><td><strong>206g</strong></td><td>~197g<br><small>(엘리트 2)</small></td></tr>
+    <tr><td>스택(힐/전족)</td><td>40 / 32mm</td><td>37 / 27mm</td><td>40 / 32mm</td><td>40 / 32mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>8mm</td><td>8mm</td></tr>
+    <tr><td><strong>플레이트</strong></td><td>없음</td><td>나일론</td><td>슬롯 카본</td><td>풀 카본</td></tr>
+    <tr><td>미드솔 폼</td><td>PWRRUN PB</td><td>PWRRUN PB</td><td>PWRRUN HG+PB</td><td><strong>IncrediRUN</strong></td></tr>
+    <tr><td>주 용도</td><td>이지~템포</td><td>템포·하프</td><td>하프~풀 레이스</td><td>풀 레이스데이</td></tr>
+    <tr><td>발볼(토박스)</td><td>표준</td><td>표준</td><td>표준</td><td><strong>좁음</strong></td></tr>
+    <tr><td>km당 비용</td><td><strong>315원</strong></td><td>438원</td><td>997원</td><td>1,695원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택·km당 비용은 RunRepeat 실측 및 한국 공식 정가 기준. 엘리트 3는 한국 미입고로 엘리트 2 실측치를 참고로 표기했으며, 정가 369,000원은 잠정값입니다.</small></p>
+
+<h2>한 켤레씩 뜯어보기</h2>
+
+<h3>1. 아주라 — 카본 없이도 굴러가는 '입문 슈퍼폼' (18.9만)</h3>
+<p><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a>는 스피드에서 <strong>나일론 플레이트를 빼고 스택을 40mm로 높인 '플레이트리스 퍼포먼스 트레이너'</strong>입니다. 비싼 <strong>PWRRUN PB 슈퍼폼(PEBA 계열)</strong>과 SPEEDROLL 로커가 만드는 스냅피한 전환감이 핵심이라, 플레이트 없이도 충분히 빠르게 굴러갑니다. 6분/km 이지런부터 4분 30초/km 템포런까지 한 켤레로 커버하죠.</p>
+<p>플레이트가 없다는 건 <strong>발목·아킬레스 부담이 적어 매일 신기 편하다</strong>는 뜻입니다. 600km 내구성에 km당 315원으로 엔돌핀 4종 중 <strong>가성비 1위</strong>. "써코니 슈퍼폼이 궁금한데 카본은 부담스럽다"는 입문~중급 러너의 첫 엔돌핀으로 가장 안전한 선택입니다. 경쟁작은 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>, <a href="/shoes/new-balance-rebel-v5">뉴발란스 레벨 v5</a>, <a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a>입니다.</p>
+
+<h3>2. 스피드 5 — 커뮤니티가 인정한 '가성비 갓신발' (21.9만)</h3>
+<p>러닝 커뮤니티에서 "<strong>갓신발</strong>"이라 불리는 데는 이유가 있습니다. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>는 21만 9천원에 <strong>73.2% 에너지 리턴(슈퍼슈즈급)</strong>을 제공하면서, 카본이 아닌 <strong>나일론 플레이트</strong>를 써서 매일 훈련에 투입해도 무리가 없습니다. v4 대비 폼이 소프트(HA 18.5)해지고 토박스가 넓어져 착화감도 개선됐죠.</p>
+<p>이 신발의 진짜 가치는 <strong>'한 켤레로 다 된다'</strong>는 만능성입니다. 평일 템포·인터벌 훈련은 물론, 하프마라톤 레이스에 그대로 신고 나가도 손색이 없습니다. 통기성도 5/5라 여름 템포런에 쾌적하고, 500km 내구성에 km당 438원. "슈퍼슈즈 사기 전에 실력부터 키우자"는 서브4~서브3:30 목표 러너에게 최적이고, 솔직히 많은 러너에게는 <strong>이 한 켤레면 충분</strong>합니다.</p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">엔돌핀 입문이라면 90%는 여기서 끝</p>
+    <p>"엔돌핀 라인 중에 뭐 살까"로 검색해서 여기까지 왔다면, 높은 확률로 답은 <strong>아주라 아니면 스피드 5</strong>입니다. 프로·엘리트는 <strong>대회 기록을 1초라도 당기려는 사람의 무기</strong>이고, 그만큼 내구성(300km/200km)이 짧아 데일리로 쓰면 손해입니다. 훈련 위주면 아주라, 훈련+가끔 레이스면 스피드 5 — 이 둘로 시작하세요.</p>
+  </div>
+</div>
+
+<h3>3. 프로 5 — 발볼 넉넉한 '풀마라톤 카본' (29.9만)</h3>
+<p><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>는 본격 카본 레이서입니다. <strong>풀렝스 슬롯형 카본 플레이트</strong>와 PWRRUN HG(상층)+PB(하층) 듀얼 폼으로 206g 경량에 강한 추진력을 냅니다. 전작과 동일한 206g/39.5mm 스택을 유지하면서 카본을 슬롯 디자인으로 바꿔 <strong>전환 효율</strong>을 높였고, PWRTRAC 아웃솔이 새로 적용돼 젖은 노면 그립도 좋아졌습니다.</p>
+<p>한국 러너에게 프로 5의 강점은 <strong>넉넉한 토박스</strong>입니다. <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(30.9만)보다 1만원 싸면서 핏이 넓고 플랫폼이 안정적이라, 발볼 때문에 나이키 레이서를 포기했던 러너에게 현실적인 대안이 됩니다. 다만 300km 내구성에 km당 997원이라 <strong>대회·핵심 훈련 전용</strong>으로 운용하세요. 서브3:30~4 마라토너의 풀코스 카본으로 추천합니다. 둘을 더 깊게 비교한 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5 글</a>도 참고하세요.</p>
+
+<h3>4. 엘리트 3 — 순수 반발력 최강의 '레이스데이 무기' (36.9만, 신형)</h3>
+<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 78.2%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다. 197g대 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
+<p>냉정하게, 이건 <strong>월 200km 이상 훈련하는 서브3 러너의 레이스데이 전용 무기</strong>입니다. 200km 내구성에 km당 1,695원, 토박스도 좁아 발볼 넓은 한국 러너에겐 도전적이죠. 서브3:30 이상 페이스가 안 나오면 잠재력을 끌어내기 어려우니, 대부분의 러너에게는 프로 5나 스피드 5가 더 현명합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🆕</span>
+  <div class="callout-body">
+    <p class="callout-title">엘리트 3는 아직 '미공개'가 많습니다</p>
+    <p>엘리트 3는 글로벌 기준 신형이고 한국 입고 시점·정가(369,000원)가 잠정이라, 본문의 무게·에너지 리턴 수치는 <strong>전작 엘리트 2 실측 기준</strong>입니다. 써코니가 IncrediRUN 폼을 유지한다고 밝힌 만큼 80% 안팎의 반발력은 계승될 가능성이 높지만, 정확한 변경점(스택·플레이트 형상·무게)은 한국 공식 입고와 RunRepeat 랩 데이터 확인 후 업데이트하겠습니다. 지금 당장 엘리트급이 필요하면 검증된 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>도 현행 판매 중입니다.</p>
+  </div>
+</div>
+
+<h2>그래서 당신은 어느 엔돌핀?</h2>
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>추천 모델</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>러닝 1년 미만 · 데일리 훈련 위주 · 예산 20만 이하</td><td><strong>아주라</strong></td><td>플레이트 부담 0, 슈퍼폼 입문, km당 315원</td></tr>
+    <tr><td>훈련도 하고 가끔 하프 대회도 · 한 켤레로 끝내고 싶다</td><td><strong>스피드 5</strong></td><td>나일론 플레이트 만능형, 가성비 갓신발</td></tr>
+    <tr><td>풀마라톤 카본이 필요 · 발볼이 넓은 편 · 서브3:30~4</td><td><strong>프로 5</strong></td><td>넉넉한 토박스 + 안정적 카본, 베이퍼보다 저렴</td></tr>
+    <tr><td>서브3 도전 · 순수 반발 최강 · 발이 좁은 편</td><td><strong>엘리트 3</strong></td><td>IncrediRUN 80%대 반발, 레이스데이 전용</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너가 꼭 알아야 할 3가지</h2>
+<ul>
+  <li><strong>① 와이드 옵션이 4종 모두 없습니다.</strong> 아주라·스피드·프로는 표준(D) 토박스라 발볼 넓어도 시착하면 대부분 맞지만, 정 불안하면 반 사이즈 업을 고려하세요. <strong>엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 먼저 보세요.</li>
+  <li><strong>② 카본은 '항상 빠른 신발'이 아닙니다.</strong> 프로·엘리트의 카본 플레이트는 일정 페이스(3:30~4:30/km) 이상에서 진가가 나옵니다. 그보다 느리면 딱딱하기만 하고 오히려 불편할 수 있어요. <a href="/blog/carbon-plate-shoes-comparison-2025">카본화의 작동 원리</a>를 이해하고 사세요.</li>
+  <li><strong>③ 가성비는 아래 두 칸이 압도적입니다.</strong> 내구성까지 반영한 km당 비용은 아주라 315원 · 스피드 438원 vs 프로 997원 · 엘리트 1,695원. 위 두 칸은 대회 전용 무기라 '비싸게 사서 아껴 신는' 신발이라는 점을 감안하세요.</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <p class="faq-q">Q. 초보인데 엔돌핀 신어도 되나요?</p>
+  <p class="faq-a">A. <strong>아주라와 스피드 5는 OK</strong>입니다. 둘 다 플레이트가 없거나(아주라) 부드러운 나일론(스피드)이라 부상 위험이 낮습니다. 반면 프로 5·엘리트 3는 빠른 페이스와 완성된 폼을 전제로 한 카본화라, 입문 단계에선 권하지 않습니다.</p>
+  <p class="faq-q">Q. 스피드 5 하나로 훈련이랑 대회 둘 다 되나요?</p>
+  <p class="faq-a">A. 됩니다. 그게 스피드 5가 "갓신발"로 불리는 이유예요. 73.2% 에너지 리턴으로 하프 레이스에 직접 투입 가능하면서, 나일론 플레이트라 매일 템포·인터벌 훈련에도 부담이 없습니다. 풀마라톤에서 1초까지 짜내는 게 아니라면 이 한 켤레로 충분합니다.</p>
+  <p class="faq-q">Q. 발볼이 넓은데 어떤 게 맞나요?</p>
+  <p class="faq-a">A. 4종 다 와이드 옵션은 없지만, <strong>프로 5의 토박스가 가장 넉넉</strong>합니다. 데일리로는 아주라·스피드 5(표준)도 시착하면 대부분 괜찮습니다. 엘리트만은 좁아서 넓은 발볼엔 비추천이에요.</p>
+  <p class="faq-q">Q. 엘리트 3가 7/1에 나온다는데 기다릴까요?</p>
+  <p class="faq-a">A. 서브3 도전급이 아니라면 굳이 기다릴 이유는 적습니다. 엘리트는 페이스가 받쳐줘야 진가가 나오는 극단적 레이서라, 대부분의 러너에겐 프로 5가 더 합리적입니다. 정말 엘리트급 반발이 지금 필요하면 검증된 엘리트 2가 현행 판매 중입니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>써코니 전체 라인을 등급·폼으로 읽는 법은 <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">써코니 러닝화 계급도 가이드</a>에 정리했습니다. 다른 브랜드 카본 레이서와 비교하려면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>를 함께 보세요. 만능 트레이너 비교는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>도 추천합니다.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 써코니 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 엘리트 3 정가·출시일은 잠정값으로, 한국 공식 입고 후 갱신합니다. 랩 수치는 RunRepeat 실측, 엘리트 3는 전작(엘리트 2) 기준 참고치입니다.</small></p>
+`,
+  },
+  {
     id: 'hoka-clifton-11-vs-10-comparison',
     slug: 'hoka-clifton-11-vs-10-comparison',
     title: '호카 클리프톤 11 vs 10 비교 | 7/1 출시 — 폼·스택 그대로, 어퍼만 바뀐 신형 살 이유 있나',
