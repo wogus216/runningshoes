@@ -3,6 +3,113 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'new-balance-sc-elite-v5-review',
+    slug: 'new-balance-sc-elite-v5-review',
+    title: '뉴발란스 SC Elite V5 후기 | 발볼 넓어도 신는 카본 슈퍼슈즈 — 74.5mm 토박스·198g 솔직 리뷰',
+    description: '뉴발란스 SC Elite V5, 발볼 넓어서 베이퍼플라이를 포기했던 한국 러너에게 답이 되는 카본 슈퍼슈즈입니다. 74.5mm 토박스는 슈퍼슈즈 중 가장 넓고, v4 대비 30g 빠진 198g로 드디어 경쟁력에 도달했죠. 가을 레이싱을 앞두고 74.8% 에너지 리턴·가성비·약점까지 솔직하게 정리했습니다.',
+    thumbnail: '/images/blog/new-balance-sc-elite-v5-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-26',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['뉴발란스 SC Elite', 'SC Elite V5', '카본 슈퍼슈즈', '레이싱화', '넓은 토박스', '마라톤 레이싱'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 압도적으로 넓어, 레이스 후반 발가락 눌림이 고질병이던 한국 러너에게 사실상 유일한 선택지입니다</li>
+    <li><strong>v4 대비 30g 빠진 198g</strong>로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell 폼(HA 15.2 울트라소프트)이 74.8% 에너지 리턴을 내고, 0.61 그립으로 젖은 노면도 안정적입니다</li>
+    <li><strong>29만원(할인가)으로 베이퍼플라이(31만원)보다 저렴</strong>합니다. 다만 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">"발볼 넓은데 카본화 신을 게 없어요"의 답</p>
+    <p>카본 슈퍼슈즈는 대부분 발을 꽉 잡는 좁은 레이싱 핏입니다. 그래서 발볼 넓은 한국 러너는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>를 신고 30km 지나면 새끼발가락이 비명을 지르죠. <a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a>는 정확히 그 지점을 노린 신발입니다. 슈퍼슈즈의 추진력은 가져가되 <strong>토박스를 가장 넓게</strong> 풀어, "발볼 때문에 카본을 포기했던" 러너를 다시 레이스로 불러옵니다. 가을 마라톤 시즌을 앞두고 카본화를 고민한다면 후보에 꼭 넣어야 할 모델입니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈에</h2>
+<table>
+  <thead><tr><th>항목</th><th>SC Elite V5</th><th>의미</th></tr></thead>
+  <tbody>
+    <tr><td>카테고리</td><td>카본 레이싱</td><td>뉴발 최상위 슈퍼슈즈</td></tr>
+    <tr><td>무게(US 9)</td><td><strong>198g</strong></td><td>v4 대비 30g+ 감량, 경쟁력 도달</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>39 / 29mm</td><td>드롭 8mm(공식) / 실측 약 10.7mm</td></tr>
+    <tr><td>미드솔</td><td>FuelCell (100% PEBA)</td><td>HA 15.2 울트라소프트</td></tr>
+    <tr><td>플레이트</td><td>풀렝스 카본</td><td>Energy Arc 곡률로 빠른 전환</td></tr>
+    <tr><td>에너지 리턴</td><td>74.8%</td><td>상위권 (SA 144 충격흡수)</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 가장 넓음 + 와이드 옵션</td></tr>
+    <tr><td>최적 페이스</td><td>3:30~4:30/km</td><td>서브3~3:30 마라토너</td></tr>
+    <tr><td>내구성 / 가격</td><td>300km / 319,000원</td><td>할인가 29만, km당 약 1,000원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택·SA·에너지 리턴·토박스는 RunRepeat 실측 기준. 가격은 뉴발란스 코리아 공식 정가(할인 시 299,000원 안팎).</small></p>
+
+<h2>실제로 어떤 느낌이냐</h2>
+<h3>넓은 토박스 — 이게 전부라고 해도 될 만큼</h3>
+<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이(67.8mm), 알파플라이(68.4mm)보다 6~7mm 넓습니다. 숫자로는 작아 보여도, 레이스 후반 발이 부으면 이 차이가 "완주 가능"과 "고통"을 가릅니다. 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림에서 자유로운</strong> 거의 유일한 슈퍼슈즈입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
+
+<h3>반발 — 부드럽게 굴러가되 폭발적이진 않다</h3>
+<p>100% PEBA FuelCell 폼은 HA 15.2로 매우 부드럽고, 74.8% 에너지 리턴은 분명 상위권입니다. 새 Energy Arc 플레이트 곡률이 중족부에서 전족부로의 전환을 매끄럽게 만들어, 3:30~4:30/km 페이스에서 자연스럽게 굴러갑니다. 다만 솔직히 말하면 <strong>알파플라이 같은 "튕겨내는" 폭발력은 아닙니다.</strong> 부드럽게 밀어주는 쪽이라, 순수 반발 최대치를 원하는 서브3 이하 엘리트에겐 다른 선택이 나을 수 있습니다.</p>
+
+<h3>무게·그립 — 드디어 경쟁권, 비 와도 안심</h3>
+<p>v4의 가장 큰 약점이 무게였는데, V5는 <strong>30g 이상 빼서 198g</strong>이 됐습니다. 이제 "뉴발은 무겁다"는 말은 옛말입니다. 0.61의 뛰어난 그립력은 한국 가을 대회의 변덕스러운 날씨(이슬·비)에서도 미끄러짐 걱정을 덜어줍니다.</p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 정리: "넓은 발 + 카본"의 교집합</p>
+    <p>SC Elite V5는 "가장 빠른 슈퍼슈즈"를 노리는 신발이 아닙니다. <strong>발볼이 넓어서 그동안 카본화를 못 신었던 서브3~3:30 마라토너</strong>에게 추진력과 편안함을 동시에 주는, 교집합을 정조준한 신발입니다. 거기에 베이퍼플라이보다 싼 가격은 덤입니다.</p>
+  </div>
+</div>
+
+<h2>이런 러너에게 추천 / 이런 러너는 다시 생각</h2>
+<table>
+  <thead><tr><th>✅ 잘 맞는 러너</th><th>❌ 안 맞는 러너</th></tr></thead>
+  <tbody>
+    <tr><td>발볼이 넓어 좁은 카본화가 불편했다</td><td>서브3 이하, 순수 반발 최대치가 목표</td></tr>
+    <tr><td>서브3~3:30 마라톤 목표</td><td>안정성이 꼭 필요한 과내전 러너</td></tr>
+    <tr><td>이전 SC Elite가 무거워 포기했다</td><td>최경량(180g대) 슈퍼슈즈를 원한다</td></tr>
+    <tr><td>베이퍼플라이보다 싼 카본을 찾는다</td><td>데일리·훈련용으로도 쓰려는 러너</td></tr>
+  </tbody>
+</table>
+
+<h2>경쟁 카본 슈퍼슈즈와 비교</h2>
+<p>같은 30만원대 카본 레이서를 함께 보면 SC Elite V5의 자리가 명확해집니다. 카본화가 처음이라면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트화의 원리</a>부터 보세요.</p>
+<ul>
+  <li><strong><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></strong> — 순수 반발·기록 최대치. 단 좁은 토박스. SC Elite는 "편한 발볼"로 차별화.</li>
+  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></strong> — 스트라이드 주자용 폭발력. 토박스는 SC Elite가 더 여유.</li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></strong> — 29.9만으로 비슷한 가격대 + 넉넉한 핏. SC Elite와 직접 경쟁. <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a> 참고.</li>
+  <li><strong><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></strong> — EnergyRods의 통통 튀는 감각. 발볼은 좁은 편.</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <p class="faq-q">Q. 발볼이 넓은데 베이퍼플라이 대신 이거 신어도 되나요?</p>
+  <p class="faq-a">A. 바로 그 케이스를 위한 신발입니다. 토박스 74.5mm는 슈퍼슈즈 중 가장 넓고 와이드 옵션도 있어, 발볼 때문에 카본화를 포기했던 러너에게 1순위로 권합니다. 레이스 후반 발가락 눌림이 확연히 줄어듭니다.</p>
+  <p class="faq-q">Q. 초보도 신을 수 있나요?</p>
+  <p class="faq-a">A. 권하지 않습니다. 카본 슈퍼슈즈는 3:30~4:30/km 페이스 이상에서 진가가 나오고, 내구성도 300km로 짧아 레이스 전용입니다. 입문~중급이라면 훈련용 슈퍼폼화(예: <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>)부터 경험하는 게 순서입니다.</p>
+  <p class="faq-q">Q. 무릎은 괜찮나요?</p>
+  <p class="faq-a">A. 39mm 힐 스택과 부드러운 FuelCell 폼이 충격을 잘 흡수해 무릎 부담은 적은 편이고, 아킬레스 보호는 특히 우수합니다. 다만 카본 플레이트 특성상 종아리·발바닥에 평소와 다른 부하가 걸리니, 대회 전 몇 차례 적응 런으로 길들이세요.</p>
+  <p class="faq-q">Q. 가격값을 하나요?</p>
+  <p class="faq-a">A. 할인가 29만원으로 베이퍼플라이(31만)보다 싸고, "넓은 발볼 + 카본"이라는 교집합에서는 대안이 거의 없어 그 가치가 분명합니다. 단 300km 내구성이라 풀마라톤 3~4회 분량, km당 약 1,000원의 레이스 전용 신발이라는 점은 감안하세요.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>SC Elite V5의 전체 스펙·실측 데이터·구매 링크는 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5 상세 페이지</a>에서 확인하세요. 발볼 고민이 늘 있다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>, 가을 대회 준비라면 <a href="/marathon">마라톤 대회 일정</a>에서 목표 레이스를 정하고 거리에 맞는 신발을 골라보세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 뉴발란스 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 랩 수치(무게·스택·SA·에너지 리턴·토박스)는 RunRepeat 실측 기준입니다. 카본화는 빠른 페이스 레이스 전용으로, 적응 기간을 두고 사용하길 권합니다.</small></p>
+`,
+  },
+  {
     id: 'hoka-bondi-9-review',
     slug: 'hoka-bondi-9-review',
     title: '호카 본디 9 후기 | 무릎·관절 보호 최강 맥시멀 쿠션 — 발볼·무게·가성비 솔직 리뷰',
