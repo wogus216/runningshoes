@@ -3,6 +3,105 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'hoka-bondi-9-vs-asics-nimbus-28',
+    slug: 'hoka-bondi-9-vs-asics-nimbus-28',
+    title: '호카 본디 9 vs 아식스 님버스 28 비교 | 맥스쿠션 양대산맥 — 안정감이냐 가성비냐',
+    description: '무릎 보호 맥스쿠션의 양대산맥, 호카 본디 9(22.9만)와 아식스 젤 님버스 28(19.9만). 둘 다 부상 보호 최상위지만 성격이 갈립니다. 본디는 123mm 초광폭 플랫폼의 안정감, 님버스는 22g 가벼운 무게·발볼 여유·가성비. 체중·발볼·예산으로 내게 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/hoka-bondi-9-vs-asics-nimbus-28.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-26',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['본디 9', '님버스 28', '맥스 쿠션', '무릎 보호 러닝화', '쿠션화 비교', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 부상 보호(족저근막염·아킬레스·무릎·신스플린트) 전부 최상위</strong>인 맥스쿠션의 정점입니다. 무릎이 걱정되는 러너라면 어느 쪽을 골라도 실패는 없습니다</li>
+    <li><strong>본디 9</strong>는 <strong>123.2mm 초광폭 플랫폼의 안정감</strong>이 무기(체중 있는 러너·최대 지지력). <strong>님버스 28</strong>은 <strong>22g 가벼운 281g + 발볼 여유 + 3만원 저렴 + 긴 내구성(650km)</strong>으로 균형이 좋습니다</li>
+    <li><strong>발볼이 넓거나 가성비·가벼움이 중요하면 님버스 28</strong>, <strong>체중이 있고 최대 안정감을 원하면 본디 9</strong>입니다. 대부분의 한국 러너에겐 무게·발볼·가격에서 님버스가 더 무난합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🛡️</span>
+  <div class="callout-body">
+    <p class="callout-title">"무릎 보호 쿠션화" 검색의 끝판왕 둘</p>
+    <p>"무릎이 걱정되는데 푹신한 신발"을 찾으면 결국 만나는 두 이름이 <a href="/shoes/hoka-bondi-9">호카 본디 9</a>와 <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>입니다. 둘 다 40mm대 두꺼운 스택에 부상 보호가 전부 최상위라, <strong>"어느 게 더 좋냐"가 아니라 "내 몸·발에 어느 게 맞냐"가 진짜 질문</strong>입니다. 본디 단독 후기는 <a href="/blog/hoka-bondi-9-review">여기</a>서 더 깊게 다뤘으니, 이 글은 둘을 나란히 놓고 갈림길을 정리합니다.</p>
+  </div>
+</div>
+
+<h2>스펙 비교</h2>
+<table>
+  <thead><tr><th>항목</th><th>본디 9</th><th>님버스 28</th></tr></thead>
+  <tbody>
+    <tr><td><strong>정가</strong></td><td>229,000원</td><td><strong>199,000원</strong></td></tr>
+    <tr><td>무게(US 9)</td><td>303g</td><td><strong>281g</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td>41 / 32mm</td><td><strong>43.5 / 35.5mm</strong></td></tr>
+    <tr><td>드롭</td><td>9mm</td><td>8mm</td></tr>
+    <tr><td>미드솔</td><td>Supercritical EVA</td><td>FF BLAST PLUS</td></tr>
+    <tr><td>안정성</td><td>8 (123mm 초광폭)</td><td>8</td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편 · 와이드 O</td><td>표준 · <strong>와이드·X-와이드 O</strong></td></tr>
+    <tr><td>내구성</td><td>550km</td><td><strong>650km</strong></td></tr>
+    <tr><td>부상 보호</td><td>4종 excellent</td><td>4종 excellent</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택은 RunRepeat 실측 기준, 가격은 각 브랜드 코리아 공식 정가.</small></p>
+
+<h2>핵심 차이 3가지</h2>
+<h3>① 무게·가격 — 님버스가 더 가볍고 싸다</h3>
+<p>님버스 28은 전작 대비 20g 빠진 <strong>281g</strong>으로, 본디(303g)보다 22g 가볍습니다. 맥스쿠션화에서 22g은 장거리 후반에 체감되는 차이죠. 게다가 정가도 <strong>3만원 저렴(19.9만 vs 22.9만)</strong>하고 내구성은 100km 더 깁니다(650 vs 550km). 순수하게 "가성비 + 가벼움"만 보면 님버스가 앞섭니다.</p>
+
+<h3>② 안정감 — 본디의 초광폭 플랫폼</h3>
+<p>그렇다고 본디가 밀리는 건 아닙니다. 본디의 무기는 <strong>123.2mm 초광폭 플랫폼</strong>입니다. 바닥 면적이 넓어 "푹신한데 흔들리지 않는" 안정감이 맥스쿠션 중에서도 정점이라, <strong>체중이 있는 러너나 발이 안쪽으로 무너지는 느낌이 싫은 러너</strong>에게 본디의 받쳐주는 느낌이 더 안심됩니다. 무게(303g)는 그 안정감의 대가입니다.</p>
+
+<h3>③ 발볼 — 둘 다 와이드 있지만 기본 핏이 다르다</h3>
+<p>본디는 전통적으로 <strong>토박스가 좁은 편</strong>(실측 72.5mm)이라 표준으로 사면 발볼 넓은 러너는 와이드가 사실상 필수입니다. 반면 님버스 28은 기본 핏이 좀 더 여유롭고 <strong>와이드·X-와이드 옵션도 풍부</strong>합니다. 발볼이 고민이라면 님버스가 선택이 더 편합니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요.</p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 정리</p>
+    <p><strong>님버스 28 = 가볍고·저렴하고·발볼 여유 있는 균형형 맥스쿠션</strong>(대부분의 러너에게 무난). <strong>본디 9 = 초광폭 플랫폼으로 안정감을 극한까지 끌어올린 특화형</strong>(체중 있거나 최대 지지력을 원하는 러너). 둘 다 무릎 보호는 동급 최상위입니다.</p>
+  </div>
+</div>
+
+<h2>누가 어느 쪽?</h2>
+<table>
+  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
+  <tbody>
+    <tr><td>가볍고 경쾌한 맥스쿠션 · 가성비 · 긴 내구성</td><td><strong>님버스 28</strong></td></tr>
+    <tr><td>발볼이 넓다 (기본 핏 여유 + 와이드 풍부)</td><td><strong>님버스 28</strong></td></tr>
+    <tr><td>체중이 있어 최대 지지력·안정감이 필요</td><td><strong>본디 9</strong></td></tr>
+    <tr><td>"흔들림 없이 받쳐주는" 느낌을 가장 중시</td><td><strong>본디 9</strong></td></tr>
+    <tr><td>리커버리런·LSD 데일리 올라운더</td><td>둘 다 (취향)</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 무릎 보호만 보면 어느 쪽이 나은가요?</p>
+  <p class="faq-a">A. 둘 다 족저근막염·아킬레스·무릎·신스플린트 보호가 모두 최상위라 사실상 동급입니다. 굳이 나누면 본디는 초광폭 플랫폼의 안정감, 님버스는 43.5mm 더 높은 스택의 충격 흡수가 강점입니다. 맥스쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
+  <p class="faq-q">Q. 발볼 넓은데 본디 신으려면?</p>
+  <p class="faq-a">A. 본디는 반드시 와이드 옵션을 선택하세요. 표준은 72.5mm로 좁아 장거리에서 눌릴 수 있습니다. 같은 값이면 기본 핏이 여유로운 님버스 28이 발볼 스트레스가 덜합니다.</p>
+  <p class="faq-q">Q. 초보 첫 신발로는 어느 쪽?</p>
+  <p class="faq-a">A. 둘 다 느린 페이스(5~7분/km)에서 편한 입문~데일리 쿠션화입니다. 예산·가벼움을 보면 님버스 28(19.9만)이, 최대 안정감을 보면 본디 9가 맞습니다. 단 둘 다 무거운 편이라 빠른 훈련용은 아닙니다.</p>
+  <p class="faq-q">Q. 다른 맥스쿠션 대안은?</p>
+  <p class="faq-a">A. <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 V14</a>(더 경쾌한 롤링), <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a>(부드러운 쿠션)도 같은 카테고리 대안입니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>각 신발 전체 스펙·구매 링크는 <a href="/shoes/hoka-bondi-9">본디 9 상세</a> · <a href="/shoes/asics-gel-nimbus-28">님버스 28 상세</a>에서 확인하세요. 본디를 더 깊게 보려면 <a href="/blog/hoka-bondi-9-review">본디 9 단독 후기</a>, 두 신발을 항목별로 나란히 보려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 각 브랜드 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 스펙은 RunRepeat 실측 및 브랜드 공식 기준입니다.</small></p>
+`,
+  },
+  {
     id: 'nike-pegasus-premium-vs-vomero-18',
     slug: 'nike-pegasus-premium-vs-vomero-18',
     title: '나이키 페가수스 프리미엄 vs 보메로 18 비교 | 같은 ZoomX, 9만원 차이 — 뭘 사야 하나',
