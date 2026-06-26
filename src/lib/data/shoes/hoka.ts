@@ -149,7 +149,7 @@ export const hokaShoes: Shoe[] = [
     },
 
     koreanFootFit: {
-      toBoxWidth: 'wide',
+      toBoxWidth: 'standard',
       flatFootCompatibility: 'excellent',
       wideOptions: true,
       winterCompatibility: 'excellent',
