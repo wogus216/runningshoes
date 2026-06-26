@@ -12,6 +12,17 @@ import { TableOfContents } from '@/components/blog/table-of-contents';
 import { FaqSection } from '@/components/blog/faq-section';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { splitContentAtMidH2 } from '@/lib/blog/split-content';
+import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+
+// 블로그 대회 글 제목에서 거리 추론 (신발/젤 CTA 매핑용)
+function inferRaceDistances(title: string): string[] {
+  const d: string[] = [];
+  if (/트레일|스카이|울트라|100\s?[kK]|50\s?[kK]/.test(title)) d.push('트레일');
+  if (/풀코스|풀마라톤|마라톤/.test(title)) d.push('풀코스');
+  if (/하프/.test(title)) d.push('하프');
+  if (/10\s?[kK]|10km/.test(title)) d.push('10K');
+  return d.length ? d : ['풀코스', '하프', '10K'];
+}
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -249,6 +260,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             ));
           })()}
         </article>
+
+        {/* 대회 글 → 신발/젤 CTA (신발 링크 없는 대회/거리 글에만 자동 삽입) */}
+        {(() => {
+          const hasShoeLink = post.content.includes('/shoes/');
+          const titleHasRace = /마라톤|대회|레이스|에키덴|스카이|울트라|하프|10\s?[kK]|풀코스|러닝.{0,4}이벤트|접수/.test(post.title);
+          if (!titleHasRace || hasShoeLink || post.category === 'review') return null;
+          return (
+            <div className="mt-10">
+              <MarathonShoeBridge distances={inferRaceDistances(post.title)} eventName="이 대회" />
+            </div>
+          );
+        })()}
 
         {/* FAQ 섹션 (faqs 데이터 있을 때만) */}
         {post.faqs && post.faqs.length > 0 && <FaqSection faqs={post.faqs} />}
