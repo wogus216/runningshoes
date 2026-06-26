@@ -154,7 +154,8 @@ export const categoryOrder = [
   '데일리',
   '쿠션화',
   '레이싱',
-  '안정화'
+  '안정화',
+  '트레일'
 ] as const;
 
 export type Category = typeof categoryOrder[number];
