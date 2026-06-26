@@ -3,6 +3,106 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'nike-pegasus-premium-vs-vomero-18',
+    slug: 'nike-pegasus-premium-vs-vomero-18',
+    title: '나이키 페가수스 프리미엄 vs 보메로 18 비교 | 같은 ZoomX, 9만원 차이 — 뭘 사야 하나',
+    description: '나이키 페가수스 프리미엄(27.9만)과 보메로 18(18.9만), 둘 다 ZoomX+ReactX 듀얼 폼에 43mm 힐 스택입니다. 그런데 가격은 9만원이나 차이 나죠. 핵심은 Full-length Air Zoom Unit(반발력)과 와이드 옵션 유무입니다. 반발이냐 순수 쿠션이냐, 발볼·예산까지 따져 한국 러너에게 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/nike-pegasus-premium-vs-vomero-18.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-26',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['페가수스 프리미엄', '보메로 18', '나이키 데일리', 'ZoomX', '맥스 쿠션', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 ZoomX+ReactX 듀얼 폼 + 43mm 힐 스택</strong>이지만, <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>에는 <strong>Full-length Air Zoom Unit</strong>이 추가돼 반발력(8/10)이 살아있고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그게 없는 대신 <strong>순수 맥스 쿠션</strong>(반발 6/10)에 집중합니다</li>
+    <li><strong>가격이 9만원 차이</strong>(프리미엄 27.9만 vs 보메로 18.9만). 그리고 결정적으로 <strong>보메로만 와이드·X-와이드 옵션이 있고, 프리미엄은 와이드가 없습니다</strong>. 발볼 넓은 한국 러너에겐 이게 사실상 결론을 정합니다</li>
+    <li><strong>통통 튀는 데일리 + 발볼 좁음 + 예산 여유 → 페가수스 프리미엄</strong>, <strong>순수 쿠션·무릎 보호 + 발볼 넓음 + 가성비 → 보메로 18</strong>입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">같은 ZoomX인데 왜 9만원이나 차이 날까</p>
+    <p>두 신발은 미드솔 폼(ZoomX+ReactX)도, 힐 스택(43mm)도 같습니다. 그래서 "어차피 같은 거 아냐?"라고 생각하기 쉽죠. 하지만 <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>은 발 전체 길이의 <strong>Air Zoom Unit</strong>을 더 넣어 <strong>반발과 추진</strong>을 만들고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그 부품 없이 <strong>푹신함과 관절 보호</strong>에 올인합니다. 9만원의 차이는 곧 "통통 튀는 다재다능함이냐, 순수한 쿠션 가성비냐"의 차이입니다. 여기에 발볼 옵션까지 더하면 답이 꽤 명확해집니다.</p>
+  </div>
+</div>
+
+<h2>스펙 비교</h2>
+<table>
+  <thead><tr><th>항목</th><th>페가수스 프리미엄</th><th>보메로 18</th></tr></thead>
+  <tbody>
+    <tr><td><strong>정가</strong></td><td>279,000원</td><td><strong>189,000원</strong></td></tr>
+    <tr><td>무게(US 9)</td><td>308g</td><td>298g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>43 / 31mm</td><td>43 / 29mm</td></tr>
+    <tr><td>드롭</td><td>12mm</td><td>14mm</td></tr>
+    <tr><td>미드솔</td><td>ZoomX+ReactX+<strong>Air Zoom Unit</strong></td><td>ZoomX+ReactX</td></tr>
+    <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>6 / 10</td></tr>
+    <tr><td>쿠션</td><td>10 / 10</td><td>10 / 10</td></tr>
+    <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드·X-와이드 O</strong></td></tr>
+    <tr><td>최적 페이스</td><td>5:00~6:30/km</td><td>5:30~7:00/km</td></tr>
+    <tr><td>내구성 / km당</td><td>600km / 약 300원</td><td>650km / 약 306원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택·드롭은 실측/공식 기준, 가격은 나이키 코리아 공식 정가.</small></p>
+
+<h2>핵심 차이 3가지</h2>
+<h3>① Air Zoom Unit — "반발이 필요한가"</h3>
+<p>가장 큰 구조적 차이입니다. 페가수스 프리미엄에는 발 전체에 걸친 <strong>Air Zoom Unit</strong>이 들어가 발을 앞으로 밀어주는 <strong>반발(8/10)</strong>을 만듭니다. 덕분에 같은 쿠션이라도 "통통 튀는" 느낌이고, 가끔 페이스를 올리는 날에도 대응이 됩니다. 보메로 18은 이 부품이 없어 <strong>순수하게 푹신한(반발 6/10)</strong> 쪽입니다. 회복런·LSD처럼 "편하게 오래"가 목적이면 보메로가, "쿠션은 두껍되 굴러가는 맛도 원한다"면 프리미엄이 맞습니다.</p>
+
+<h3>② 와이드 옵션 — 발볼 넓으면 사실상 결론</h3>
+<p>둘 다 표준은 좁은 편(narrow)입니다. 그런데 <strong>보메로 18은 와이드·X-와이드 옵션이 있고, 페가수스 프리미엄은 와이드가 없습니다.</strong> 발볼 넓은 한국 러너라면 이 한 줄로 답이 정해집니다 — 프리미엄은 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없습니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
+
+<h3>③ 가격 — 9만원으로 뭘 사는가</h3>
+<p>프리미엄이 9만원 비쌉니다. 그 돈으로 사는 건 <strong>Air Zoom Unit의 반발 + 프리미엄 니트 어퍼</strong>입니다. 반대로 보메로는 9만원 아끼면서 와이드 선택지와 더 긴 내구성(650km)을 얻죠. 순수 쿠션 데일리로만 쓸 거라면 <strong>보메로 18의 가성비가 분명히 앞섭니다.</strong></p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 정리</p>
+    <p><strong>페가수스 프리미엄 = 반발 있는 다재다능 프리미엄 데일리</strong>(발볼 좁고 예산 여유 있는 러너). <strong>보메로 18 = 순수 맥스 쿠션의 가성비 정석</strong>(발볼 넓거나 무릎 보호·회복런 우선 러너). 대부분의 한국 러너에게는 와이드 옵션과 9만원 절약 때문에 <strong>보메로 18이 더 현실적인 선택</strong>입니다.</p>
+  </div>
+</div>
+
+<h2>누가 어느 쪽?</h2>
+<table>
+  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
+  <tbody>
+    <tr><td>쿠션은 두껍되 반발·페이스 변화도 원한다 · 발볼 좁음 · 예산 여유</td><td><strong>페가수스 프리미엄</strong></td></tr>
+    <tr><td>순수 푹신함·무릎 보호·회복런/LSD 위주</td><td><strong>보메로 18</strong></td></tr>
+    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>보메로 18</strong> (프리미엄은 와이드 없음)</td></tr>
+    <tr><td>가성비·내구성 우선</td><td><strong>보메로 18</strong> (9만원 저렴, 650km)</td></tr>
+    <tr><td>나이키 니트 어퍼 프리미엄 감성</td><td><strong>페가수스 프리미엄</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 발볼 넓은데 페가수스 프리미엄 신어도 되나요?</p>
+  <p class="faq-a">A. 권하기 어렵습니다. 표준이 좁은 편인데 와이드 옵션이 없어, 발볼 넓은 한국 러너는 장거리에서 눌림이 올 수 있습니다. 같은 ZoomX 쿠션을 원하면 와이드가 있는 보메로 18이 안전합니다.</p>
+  <p class="faq-q">Q. 무릎이 걱정인데 어느 쪽이 낫나요?</p>
+  <p class="faq-a">A. 둘 다 43mm 힐 스택으로 충격 흡수가 우수하지만, 보메로 18은 족저근막염·아킬레스·신스플린트 보호가 모두 최상위라 관절 보호 종합력이 살짝 앞섭니다. 맥스 쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
+  <p class="faq-q">Q. 초보 첫 신발로는?</p>
+  <p class="faq-a">A. 둘 다 입문~데일리로 무난합니다. 예산이 빠듯하면 보메로 18(18.9만)이, 반발 있는 다재다능함을 원하면 페가수스 프리미엄이 맞습니다. 단 둘 다 308·298g으로 무거운 편이라, 빠른 훈련용으로는 별도의 가벼운 신발을 두는 걸 권합니다.</p>
+  <p class="faq-q">Q. 보메로 18 대신 볼 만한 맥스 쿠션은?</p>
+  <p class="faq-a">A. <a href="/shoes/hoka-bondi-9">호카 본디 9</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>이 같은 맥스 쿠션 카테고리의 대표 대안입니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>각 신발의 전체 스펙·실측·구매 링크는 <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄 상세</a> · <a href="/shoes/nike-vomero-18">보메로 18 상세</a>에서 확인하세요. 두 신발을 항목별로 나란히 보려면 <a href="/compare">비교 도구</a>를, 내 발·목표에 맞는 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 나이키 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 스펙은 RunRepeat 실측 및 브랜드 공식 기준입니다.</small></p>
+`,
+  },
+  {
     id: 'new-balance-sc-elite-v5-review',
     slug: 'new-balance-sc-elite-v5-review',
     title: '뉴발란스 SC Elite V5 후기 | 발볼 넓어도 신는 카본 슈퍼슈즈 — 74.5mm 토박스·198g 솔직 리뷰',
