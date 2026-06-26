@@ -713,7 +713,7 @@ export const brooksShoes: Shoe[] = [
       upper: '프리미엄 니트 (양말형 칼라)',
       width: '표준 (94.9mm)',
       durability: '700km',
-      price: '₩259,000 ($200)',
+      price: '₩219,000 ($200)',
       costPerKm: '₩370/km',
       footType: '중립',
       landingPattern: '힐스트라이크~미드풋',
