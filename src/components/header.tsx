@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown } from 'lucide-react';
 import { getAllBrands } from '@/lib/data/brands';
 import { SearchPalette } from '@/components/search/search-palette';
-import { getSearchIndex } from '@/lib/search-index';
+import type { SearchItem } from '@/lib/search-index';
 
 const brandLinks = getAllBrands().map((b) => ({
   id: b.id,
@@ -12,9 +12,7 @@ const brandLinks = getAllBrands().map((b) => ({
   nameKo: b.nameKo ?? '',
 }));
 
-const searchItems = getSearchIndex();
-
-export function Header() {
+export function Header({ searchItems }: { searchItems: SearchItem[] }) {
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--accent-line)] bg-[rgba(244,249,253,0.84)] backdrop-blur-xl">
       <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
