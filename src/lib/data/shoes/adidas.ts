@@ -530,7 +530,7 @@ export const adidasShoes: Shoe[] = [
       cushioning: 8,
       responsiveness: 10,
       stability: 6,
-      drop: 6,
+      drop: 8,
       durability: 200,
     },
     biomechanics: {
