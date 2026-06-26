@@ -33,6 +33,17 @@ export const ADSENSE_SLOTS = {
   shoeInArticle: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_IN_ARTICLE || '2940495278',
   // 신발 상세 하단 (상세 탭 후, 교차 링크 위 — display)
   shoeBottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_BOTTOM || '9314331932',
+  // 마라톤 대회 상세 (73개 페이지 — 본문 중간 in-article + 하단 display)
+  // dedicated 슬롯 발급 후 NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_* 설정 권장(리포팅 분리).
+  // 미설정 시 blog 슬롯 폴백 — 즉시 광고 노출되나 리포팅은 blog로 집계됨.
+  marathonInArticle:
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_IN_ARTICLE ||
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_IN_ARTICLE ||
+    '4456671940',
+  marathonBottom:
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_BOTTOM ||
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM ||
+    '1226447608',
 } as const;
 
 // GA4 설정

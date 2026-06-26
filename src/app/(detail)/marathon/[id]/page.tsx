@@ -2,9 +2,10 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
-import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+import { AdSlot } from '@/components/ads/ad-slot';
 
 type MarathonDetailPageProps = {
   params: Promise<{
@@ -353,6 +354,17 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
         {/* 대회 준비용 러닝화 브릿지 */}
         <MarathonShoeBridge distances={event.distances} eventName={event.name} />
 
+        {/* 본문 중간 광고 — raceInfo/courseInfo 있는(콘텐츠 충분한) 대회만 노출 (얇은 페이지 광고과다 정책 회피) */}
+        {(event.raceInfo || event.courseInfo) && (
+          <AdSlot
+            slot={ADSENSE_SLOTS.marathonInArticle}
+            format="fluid"
+            layout="in-article"
+            layoutKey="-fb+5w+4e-db+86"
+            label="본문 중간 광고"
+          />
+        )}
+
         {/* 대회 정보 */}
         <div className="section-card border border-[var(--accent-line)] bg-white/84 p-6">
           <h2 className="text-lg font-bold text-primary mb-4">대회 정보</h2>
@@ -583,6 +595,9 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             전체 대회 목록으로 돌아가기
           </Link>
         </div>
+
+        {/* 본문 하단 광고 */}
+        <AdSlot slot={ADSENSE_SLOTS.marathonBottom} format="auto" label="본문 하단 광고" />
 
         <div className="h-28 md:h-20" aria-hidden="true" />
       </div>

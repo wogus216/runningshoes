@@ -12,6 +12,8 @@ type AdSlotProps = {
   layoutKey?: string;
   className?: string;
   label?: string;
+  /** CLS 방지용 예약 높이(px). 미지정 시 format 기반 기본값. */
+  minHeight?: number;
 };
 
 declare global {
@@ -27,8 +29,11 @@ export function AdSlot({
   layoutKey,
   className = '',
   label = '광고',
+  minHeight,
 }: AdSlotProps) {
   const pushedRef = useRef(false);
+  // fluid(in-article)는 가변이라 보수적으로, display/auto는 모바일 반응형 배너 높이로 예약
+  const reservedHeight = minHeight ?? (format === 'fluid' ? 200 : 280);
 
   useEffect(() => {
     if (pushedRef.current) return;
@@ -55,7 +60,7 @@ export function AdSlot({
       </div>
       <ins
         className="adsbygoogle"
-        style={{ display: 'block', textAlign: 'center' }}
+        style={{ display: 'block', textAlign: 'center', minHeight: `${reservedHeight}px` }}
         data-ad-client={ADSENSE_CLIENT_ID}
         data-ad-slot={slot}
         data-ad-format={format}
