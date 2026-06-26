@@ -178,7 +178,7 @@ export const salomonShoes: Shoe[] = [
     price: 340000,
     description: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서. 247g 경량에 optiFOAM+ 듀얼레이어와 Matryx 어퍼·Active Chassis로, 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐습니다.',
     oneliner: '엘리트 기술 트레일 레이서 — 247g S/LAB',
-    editorComment: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서입니다. 247g 경량에 optiFOAM+(PEBA/EVA) + optiFOAM 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx(아라미드) 어퍼와 Active Chassis로 급경사 암반에서도 안정적인 제어를 보여줍니다(Road Trail Run 호평). 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 47~57%로 낮고, 초기 런에서 폼 청킹(내구성) 우려가 보고됐으며, 미드풋-토박스 경계 핀칭이 지적됩니다.\n\n사이즈·구매 가이드: 토박스 74mm로 전작(v3)보다 넓어져 표준 발볼에 맞습니다. 정가 340,000원(고가)에 내구성 350km 기준 km당 약 970원이며, 카본 플레이트는 없습니다(폼 추진). 더 저렴한 올라운드는 펄사, 카본 트레일 레이서는 호카 테크톤 X 3가 대안입니다.',
+    editorComment: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서입니다. 247g 경량에 optiFOAM+(PEBA/EVA) + optiFOAM 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx(아라미드) 어퍼와 Active Chassis로 급경사 암반에서도 안정적인 제어를 보여줍니다(Road Trail Run 호평). 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 47~57%로 낮고, 초기 런에서 폼 청킹(내구성) 우려가 보고됐으며, 미드풋-토박스 경계 핀칭이 지적됩니다.\n\n사이즈·구매 가이드: 토박스 74mm로 전작(v3)보다 넓어져 표준 발볼에 맞습니다. 정가 340,000원(고가)에 내구성 350km 기준 km당 약 971원이며, 카본 플레이트는 없습니다(폼 추진). 더 저렴한 올라운드는 펄사, 카본 트레일 레이서는 호카 테크톤 X 3가 대안입니다.',
     tags: ['트레일', '레이싱', '엘리트', 'S/LAB', '경량'],
     specs: {
       weight: 247,
@@ -232,7 +232,7 @@ export const salomonShoes: Shoe[] = [
       width: '표준',
       durability: '350km (초기 폼 청킹 우려 보고)',
       price: '₩340,000 (한국 공식, S/LAB 프리미엄)',
-      costPerKm: '약 ₩970/km (350km 기준)',
+      costPerKm: '약 ₩971/km (350km 기준)',
       footType: '중립 발',
       landingPattern: 'MFS/FFS',
     },
