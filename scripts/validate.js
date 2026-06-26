@@ -204,6 +204,65 @@ if (priceOk) ok('모든 가격 데이터 정상');
 console.log('');
 
 // ===========================================
+// 6. 데이터 일관성 검증 (price/costPerKm/drop)
+//   - price(=msrp 진실원) vs detailedSpecs.price 문자열
+//   - priceAnalysis.costPerKm vs price÷durability(정가 기준)
+//   - specs.drop vs biomechanics.drop
+// ===========================================
+console.log('━━━ 5. 데이터 일관성 검증 ━━━');
+
+let consistOk = true;
+
+brands.forEach(brand => {
+  const filePath = path.join(shoesDir, brand + '.ts');
+  if (!fs.existsSync(filePath)) return;
+  const content = fs.readFileSync(filePath, 'utf-8');
+
+  const slugMatches = [...content.matchAll(/slug:\s*'([^']+)'/g)];
+  for (let i = 0; i < slugMatches.length; i++) {
+    const start = slugMatches[i].index;
+    const end = i + 1 < slugMatches.length ? slugMatches[i + 1].index : content.length;
+    const block = content.slice(start, end);
+    const slug = slugMatches[i][1];
+
+    const pm = block.match(/\n\s{4}price:\s*(\d+),/);
+    if (!pm) continue;
+    const price = parseInt(pm[1]);
+
+    // detailedSpecs.price 문자열 (₩NNN,NNN). 한글 범위표기(병행수입 등)는 숫자<10000이라 스킵
+    const dpm = block.match(/\n\s{6}price:\s*'₩?([\d,]+)/);
+    if (dpm) {
+      const dp = parseInt(dpm[1].replace(/,/g, ''));
+      if (dp >= 10000 && Math.abs(dp - price) > 1000) {
+        warn(`[${brand}] ${slug}: detailedSpecs.price(₩${dp.toLocaleString()}) ≠ price(₩${price.toLocaleString()})`);
+        consistOk = false;
+      }
+    }
+
+    // costPerKm vs price÷durability
+    const durM = block.match(/\n\s{6}durability:\s*(\d+),/);
+    const cpkM = block.match(/\n\s{6}costPerKm:\s*(\d+),/);
+    if (durM && cpkM) {
+      const calc = Math.round(price / parseInt(durM[1]));
+      if (Math.abs(parseInt(cpkM[1]) - calc) > 1) {
+        warn(`[${brand}] ${slug}: costPerKm(${cpkM[1]}) ≠ price÷durability(${calc})`);
+        consistOk = false;
+      }
+    }
+
+    // specs.drop vs biomechanics.drop (둘 다 숫자 필드)
+    const drops = [...block.matchAll(/\n\s{6}drop:\s*([\d.]+),/g)];
+    if (drops.length >= 2 && Math.abs(parseFloat(drops[0][1]) - parseFloat(drops[1][1])) > 1.5) {
+      warn(`[${brand}] ${slug}: specs.drop(${drops[0][1]}) ≠ biomechanics.drop(${drops[1][1]})`);
+      consistOk = false;
+    }
+  }
+});
+
+if (consistOk) ok('price/costPerKm/drop 일관성 통과');
+console.log('');
+
+// ===========================================
 // 결과 요약
 // ===========================================
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
