@@ -14,6 +14,8 @@ import type { CardShoe } from "@/lib/data/shoes";
 import { TechBanner } from "@/components/home/tech-banner";
 import { GelBanner } from "@/components/home/gel-banner";
 import { GuideBanner } from "@/components/home/guide-banner";
+import { AdSlot } from "@/components/ads/ad-slot";
+import { ADSENSE_SLOTS } from "@/lib/constants";
 
 interface HomeContentProps {
   initialShoes: CardShoe[];
@@ -286,6 +288,9 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
           <p className="text-sm text-tertiary mt-2">필터 조건을 변경해보세요</p>
         </div>
       )}
+
+      {/* 홈 하단 광고 — 결과 그리드와 Beyond Shoes 사이 (필터 리플로우 영향 적은 고정 위치) */}
+      <AdSlot slot={ADSENSE_SLOTS.homeBottom} format="auto" label="홈 하단 광고" />
 
       <section className="space-y-4 pt-2">
         <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">

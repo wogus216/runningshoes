@@ -44,6 +44,12 @@ export const ADSENSE_SLOTS = {
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_BOTTOM ||
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM ||
     '1226447608',
+  // 홈 — 결과 그리드와 'Beyond Shoes' 섹션 사이 display 1개 (고정 위치, CLS 안전)
+  // dedicated 슬롯 발급 후 NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM 설정 권장. 미설정 시 blog 폴백.
+  homeBottom:
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM ||
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM ||
+    '1226447608',
 } as const;
 
 // GA4 설정
