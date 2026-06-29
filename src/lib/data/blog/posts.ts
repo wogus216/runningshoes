@@ -3,6 +3,100 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'marathon-club-runners-pick-running-shoes-2026',
+    slug: 'marathon-club-runners-pick-running-shoes-2026',
+    title: '마라톤 클럽 러너들이 직접 뽑은 러닝화 | 첫 러닝화 TOP3 & 인생 러닝화 TOP5 — 초보의 선택 vs 고수의 정착',
+    description: '국내 최대 러닝 커뮤니티 동마클럽 러너들이 설문으로 직접 뽑은 러닝화 순위. 초보가 처음 고른 "첫 러닝화 TOP3"(페가수스·리액트 인피니티·노바블라스트)와 고수가 정착한 "인생 러닝화 TOP5"(노바블라스트·아디오스 프로·메타스피드·베이퍼플라이·슈퍼블라스트)를 우리 사이트 실측 데이터로 해설합니다. 초보는 왜 데일리화를 고르고, 고수는 왜 카본으로 갔다가 다시 데일리로 돌아오는지 — 한국 러너의 신발 여정이 보입니다.',
+    thumbnail: '/images/blog/marathon-club-runners-pick-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-29',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['러너 추천 러닝화', '첫 러닝화', '인생 러닝화', '마라톤 클럽', '러닝화 추천', '러닝화 순위'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>국내 최대 러닝 커뮤니티 <strong>동마클럽 러너들의 설문 집계</strong>입니다. <strong>첫 러닝화 TOP3</strong>는 <a href="/shoes/nike-pegasus-41">나이키 페가수스</a>·나이키 리액트 인피니티 런·<a href="/shoes/asics-novablast-5">아식스 노바블라스트</a>로 <strong>전부 쿠션·안정 데일리화</strong> — 초보는 "편하고 안 다치는" 신발을 고릅니다</li>
+    <li><strong>인생 러닝화 TOP5</strong>는 <a href="/shoes/asics-novablast-5">노바블라스트</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>. 2~4위는 <strong>카본 레이싱화</strong>지만 <strong>1·5위는 데일리·슈퍼트레이너</strong>입니다</li>
+    <li>핵심 인사이트: 고수도 <strong>매일 신는 신발은 결국 편한 데일리</strong>(레이싱화는 대회용). 그리고 인생 러닝화 5개 중 <strong>3개가 아식스</strong> — 한국 러너의 아식스 신뢰가 드러납니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">이 순위는 어디서 나왔나</p>
+    <p>국내 최대 마라톤 커뮤니티 중 하나인 <strong>동마클럽</strong>이 러너들에게 "첫 러닝화"와 "인생 러닝화"를 물었고, 댓글·스토리로 쏟아진 수많은 모델을 집계해 순위를 냈습니다. 즉 <strong>전문가 랩 테스트가 아니라 실제로 달리는 사람들이 직접 뽑은 결과</strong>죠. 이 글은 그 순위를 가져와, 각 신발이 <strong>왜 뽑혔는지</strong>를 우리 사이트의 실측 스펙·한국 러너 관점으로 풀어드립니다. 점수(데일리/안정성/템포/레이스)는 동마클럽이 매긴 항목별 평가입니다.</p>
+  </div>
+</div>
+
+<h2>첫 러닝화 TOP3 — 초보가 처음 고른 신발</h2>
+<table>
+  <thead><tr><th>순위</th><th>모델</th><th>동마클럽 평가</th><th>성격</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1위</strong></td><td><a href="/shoes/nike-pegasus-41">나이키 페가수스</a></td><td>데일리 90 · 안정성 84</td><td>가장 무난한 입문 데일리</td></tr>
+    <tr><td><strong>2위</strong></td><td>나이키 리액트 인피니티 런</td><td>데일리 86 · 안정성 88</td><td>부상 방지 특화(안정성 최고)</td></tr>
+    <tr><td><strong>3위</strong></td><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트</a></td><td>데일리 92 · 안정성 86</td><td>통통 튀는 올라운드 데일리</td></tr>
+  </tbody>
+</table>
+<p><strong>첫 러닝화는 셋 다 데일리·안정화 계열</strong>입니다. 흥미롭게도 카본화나 빠른 신발은 한 켤레도 없죠. 초보에게 가장 중요한 건 속도가 아니라 <strong>"편하게, 다치지 않고, 오래"</strong>라는 걸 러너들의 선택이 그대로 보여줍니다. 1위 <a href="/shoes/nike-pegasus-41">페가수스</a>는 "첫 러닝화 추천"에서 거의 항상 1순위로 꼽히는 가장 안전한 데일리고, 2위 리액트 인피니티 런은 넓은 베이스로 발이 흔들리지 않게 잡아주는 부상 방지 특화 모델입니다(현재는 단종돼 중고·재고로만 만날 수 있어, 비슷한 안정 데일리를 찾는다면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 참고하세요). 3위 <a href="/shoes/asics-novablast-5">노바블라스트</a>는 초보도 재미를 느낄 만큼 반발이 살아있는 올라운더라, 첫 신발이자 한동안 쓰는 데일리로 인기가 높습니다.</p>
+
+<h2>인생 러닝화 TOP5 — 고수가 정착한 신발</h2>
+<table>
+  <thead><tr><th>순위</th><th>모델</th><th>동마클럽 평가</th><th>성격</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1위</strong></td><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트</a></td><td>데일리 92 · 안정성 86</td><td>매일 신는 만능 데일리</td></tr>
+    <tr><td><strong>2위</strong></td><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디제로 아디오스(프로)</a></td><td>템포 89 · 레이스 94</td><td>카본 마라톤 레이싱</td></tr>
+    <tr><td><strong>3위</strong></td><td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드</a></td><td>템포 92 · 레이스 95</td><td>아식스 최상위 카본 레이서</td></tr>
+    <tr><td><strong>4위</strong></td><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이</a></td><td>템포 91 · 레이스 94</td><td>카본화의 원조·기준점</td></tr>
+    <tr><td><strong>5위</strong></td><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a></td><td>데일리 93 · 안정성 93</td><td>카본 없는 고스택 슈퍼트레이너</td></tr>
+  </tbody>
+</table>
+<p>여기서 풍경이 바뀝니다. <strong>2·3·4위가 모두 카본 레이싱화</strong>(<a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>)예요. 달리기에 빠지고 기록 욕심이 생기면 결국 <strong>"속도를 만들어주는 신발"</strong>로 손이 간다는 뜻입니다. 특히 베이퍼플라이는 카본화 시대를 연 기준점이고, 메타스피드와 아디오스 프로는 그 대항마로 한국 마라토너들이 가장 많이 신는 슈퍼슈즈죠. 카본화가 처음이라면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트화 비교 가이드</a>를 먼저 보는 걸 권합니다.</p>
+
+<h2>이 순위가 말해주는 3가지</h2>
+<h3>① 고수도 매일 신는 건 결국 "편한 데일리"다</h3>
+<p>인생 러닝화 <strong>1위가 카본화가 아니라 데일리화 <a href="/shoes/asics-novablast-5">노바블라스트</a></strong>이고, 5위도 카본 없는 슈퍼트레이너 <a href="/shoes/asics-superblast-3">슈퍼블라스트</a>라는 점이 핵심입니다. 카본 레이싱화는 <strong>대회·포인트 훈련 전용</strong>이고, 훈련의 대부분을 차지하는 일상 러닝은 결국 편하고 내구성 좋은 데일리·슈퍼트레이너로 굴린다는 현실이죠. "인생 러닝화 = 가장 빠른 신발"이 아니라 <strong>"가장 오래, 가장 자주 함께한 신발"</strong>이라는 겁니다.</p>
+
+<h3>② 첫 신발 → 인생 신발, 한국 러너의 여정이 보인다</h3>
+<p>첫 러닝화는 <strong>100% 데일리·안정화</strong>, 인생 러닝화는 <strong>카본 레이싱이 절반</strong>. 두 순위를 나란히 놓으면 한 러너의 성장 곡선이 그려집니다 — <strong>"편하게 시작 → 기록 욕심 → 레이싱화 입문 → 결국 데일리로 회귀"</strong>. 지금 막 시작했다면 첫 러닝화 TOP3에서, 대회·기록에 욕심이 생겼다면 인생 러닝화 2~4위에서 다음 신발을 찾으면 됩니다.</p>
+
+<h3>③ 인생 러닝화 5개 중 3개가 아식스</h3>
+<p><a href="/shoes/asics-novablast-5">노바블라스트</a>(1위)·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>(3위)·<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>(5위) — <strong>인생 러닝화 절반 이상이 아식스</strong>이고, 첫 러닝화 3위도 노바블라스트입니다. 데일리(노바블라스트)부터 카본 레이싱(메타스피드), 슈퍼트레이너(슈퍼블라스트)까지 카테고리별로 고르게 신뢰받는다는 뜻이죠. 토박스가 넉넉해 발볼 넓은 한국 러너와 궁합이 좋은 것도 한몫합니다. 슈퍼블라스트가 궁금하다면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전 비교</a>에서 더 깊게 다뤘습니다.</p>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">그래서 나는 뭘 사야 하나</p>
+    <p><strong>이제 막 달리기를 시작했다면</strong> → 첫 러닝화 TOP3, 그중 <a href="/shoes/nike-pegasus-41">페가수스</a>나 <a href="/shoes/asics-novablast-5">노바블라스트</a>가 가장 무난합니다. <strong>데일리는 있고 기록에 욕심이 생겼다면</strong> → 인생 러닝화 2~4위 카본화. <strong>대회용 따로, 훈련용 따로 두고 싶다면</strong> → 카본 레이싱화 한 켤레 + <a href="/shoes/asics-superblast-3">슈퍼블라스트</a> 같은 슈퍼트레이너 한 켤레 조합이 정석입니다. 내 발·목표에 맞는 추천은 <a href="/recommend">맞춤 추천</a>에서 받아보세요.</p>
+  </div>
+</div>
+
+<h2>한국 러너 관점 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 첫 러닝화로 카본화 사면 안 되나요?</p>
+  <p class="faq-a">A. 권하지 않습니다. 러너들의 첫 러닝화 TOP3가 전부 데일리·안정화인 데는 이유가 있어요. 카본화는 발·종아리에 부담이 크고 딱딱해서, 근력이 덜 갖춰진 초보가 매일 신으면 부상 위험이 큽니다. 먼저 데일리화로 기초 체력과 폼을 만든 뒤 카본화로 넘어가는 게 안전합니다.</p>
+  <p class="faq-q">Q. 인생 러닝화 1위가 왜 카본화가 아니라 노바블라스트인가요?</p>
+  <p class="faq-a">A. "인생 러닝화"는 가장 빠른 신발이 아니라 <strong>가장 자주·오래 함께한 신발</strong>이기 때문입니다. 대회는 1년에 몇 번뿐이고, 훈련의 90%는 일상 러닝이죠. 그래서 매일 편하게 신는 데일리(<a href="/shoes/asics-novablast-5">노바블라스트</a>)나 슈퍼트레이너(<a href="/shoes/asics-superblast-3">슈퍼블라스트</a>)가 카본화보다 더 깊은 애착을 받습니다.</p>
+  <p class="faq-q">Q. 발볼이 넓은데 이 순위 신발들 신어도 되나요?</p>
+  <p class="faq-a">A. 아식스 3종(노바블라스트·메타스피드·슈퍼블라스트)은 토박스가 비교적 넉넉해 발볼 넓은 러너에게 유리합니다. 반면 나이키(페가수스·베이퍼플라이)는 좁은 편이라 매장 착화를 권합니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 보세요.</p>
+  <p class="faq-q">Q. 다른 러너들의 신발 선택도 궁금해요.</p>
+  <p class="faq-a">A. 유명 러너·셀럽들이 어떤 신발을 신는지는 <a href="/blog/celebrity-runners-shoe-choices-guide">셀럽 러너 신발 선택 가이드</a>에서 다뤘습니다. 함께 보면 한국 러너의 신발 트렌드가 더 선명해집니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>순위에 오른 신발들의 전체 스펙·실측·구매 링크는 각 상세에서 확인하세요 — <a href="/shoes/nike-pegasus-41">페가수스 41</a> · <a href="/shoes/asics-novablast-5">노바블라스트 5</a> · <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> · <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> · <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>. 첫 러닝화를 고르는 중이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>, 여러 신발을 나란히 비교하려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 순위·항목별 점수는 동마클럽이 러너 설문(댓글·스토리 언급)을 집계해 발표한 결과를 인용한 것이며, 각 신발의 스펙·해설은 본 사이트의 실측·브랜드 공식 기준입니다. 모델명은 러너들이 언급한 시리즈명 기준으로, 세부 버전은 사이트 상세 페이지를 참고하세요.</small></p>
+`,
+  },
+  {
     id: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
     slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
     title: '슈퍼블라스트 3 vs 에보 SL vs 마하 6 비교 | 카본 없는 슈퍼트레이너 3파전 — 한 켤레로 훈련 끝내기',
