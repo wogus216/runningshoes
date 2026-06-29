@@ -10101,6 +10101,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: '/images/blog/2026-garmin-run-korea-half-marathon.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-01',
+    updatedAt: '2026-06-29',
     category: 'news' as const,
     readingTime: 8,
     tags: ['가민런', '가민런 코리아', '2026 가민런', '하프마라톤', '고양 마라톤', '가민 워치', '마라톤 접수', '래플 추첨', '데이터 러닝'],
@@ -10112,6 +10113,14 @@ export const blogPosts: BlogPost[] = [
     <li>올해 최대 변화는 <strong>하프코스(21.1km) 신설</strong> — 기존 10K에 더해 더 많은 러너가 참가할 수 있게 됐습니다</li>
     <li>접수는 <strong>7월 1~3일 신청 → 7월 7일 발표</strong>의 <strong>래플(추첨)</strong> 방식. 작년처럼 선착순 "2분컷"이 아니라 추첨이라 부담이 줄었습니다</li>
   </ul>
+</div>
+
+<div class="callout success">
+  <span class="callout-icon">🔔</span>
+  <div class="callout-body">
+    <p class="callout-title">[업데이트] 본접수가 7월 1일(수) 14:00 시작됩니다</p>
+    <p>가민 코리아 공식 발표(6/25) 기준 본접수 일정이 확정됐습니다 — <strong>접수 7/1(수) 14:00 ~ 7/3(금) 17:00, 당첨자 발표 7/7(화) 14:00 이후, 결제 마감 7/9(목) 16:00</strong>. 래플(추첨)이라 접수 기간 내 신청만 하면 되지만, <strong>7/3 17시 마감</strong>과 <strong>당첨 시 7/9 16시 결제 마감</strong>을 놓치면 무효입니다. 신청은 러너블 플랫폼에서 진행되며, HALF·10K 두 종목으로 운영됩니다.</p>
+  </div>
 </div>
 
 <div class="callout info">
@@ -10133,8 +10142,9 @@ export const blogPosts: BlogPost[] = [
     <tr><td>장소</td><td><strong>고양종합운동장</strong></td></tr>
     <tr><td>규모</td><td>약 1만 2천명 (작년 3,000명 → 4배 확대)</td></tr>
     <tr><td>코스</td><td><strong>하프(21.1km) 신설</strong> + 10K</td></tr>
-    <tr><td>접수 신청</td><td>2026년 7월 1일 ~ 7월 3일</td></tr>
-    <tr><td>당첨 발표</td><td>2026년 7월 7일</td></tr>
+    <tr><td>접수 신청</td><td><strong>7월 1일(수) 14:00 ~ 7월 3일(금) 17:00</strong></td></tr>
+    <tr><td>당첨 발표</td><td>7월 7일(화) 14:00 이후</td></tr>
+    <tr><td>결제 마감</td><td>7월 9일(목) 16:00</td></tr>
     <tr><td>접수 방식</td><td><strong>래플(추첨)</strong></td></tr>
   </tbody>
 </table>
