@@ -48,7 +48,7 @@
 
 - [ ] **hoka-clifton-11** (추가 2026-06-25, 출시 2026-07-01): 비교글 `hoka-clifton-11-vs-10-comparison` 발행(출시 전 추정값). 출시 후 재확인 — ① RunRepeat 랩 게시 시 무게(공식 ~280g vs 핸즈온 실측 258g 중 어느 쪽인지)·실측 스택 확정 ② hoka.com/ko-kr 한국 정가 확정(현재 199,000원 추정, US $154.95 동결) ③ 신발 DB(`hoka-clifton-11`)는 제품 이미지 확보 후 추가 검토 — 현재는 novablast-6 선례대로 비교글만, DB 미생성. 폼=CMEVA로 클리프톤 10과 동일 확정(어퍼/삭라이너만 변경).
 
-- [ ] **saucony-endorphin-elite-3** (블로그 가이드 발행 2026-06-26, 출시 글로벌 신형 / 한국 입고 미확정): 라인업 선택 가이드 `saucony-endorphin-lineup-2026-guide`에서 **엘리트 2 기준 + 신상 면책**으로 처리(DB 미생성). 후속 — ① saucony.co.kr 엘리트 3 정식 입고·한국 정가 확정(현재 **369,000원 잠정**, researcher가 7/1 라인업서 확인) ② RunRepeat 랩 게시 시 무게·에너지리턴·스택 확정 → ③ 확정되면 신발 DB(`saucony-endorphin-elite-3`) 추가 + 가이드글 표의 엘리트3 잠정 수치(가격·~197g·40/32mm 엘2 참고치) 실측 갱신. 엘리트 2(DB 보유, 정가 339,000원, IncrediRUN 80.6% 에너지리턴)가 현행이라 비교 기준선. 재확인 시점 2026-09(출시 +2~3개월).
+- [ ] **saucony-endorphin-elite-3 랩 데이터 갱신** (2026-06-30 신발 DB 생성 + 단독 프리뷰 발행 완료): 신발 DB(`saucony-endorphin-elite-3`)·프리뷰글(`saucony-endorphin-elite-3-preview-2026`) 작성 완료. **확정값 반영**: 207g(전작 +10g)·힐39.5/전족31.5mm·드롭8mm·포크형 카본·직각형 넓은 토박스(엘2 narrow→standard)·측면컷아웃 제거로 안정성 5(추정)·369,000원·7/1 한국출시. **미확정(추정 표기됨)**: 충격흡수 SA·에너지리턴% 등 RunRepeat 랩 미게시 → 엘리트2(80.6%) 기준 추정으로 detailedSpecs에 '추정' 명시. 후속 — RunRepeat 엘리트3 랩 게시 시 ① specs(responsiveness 9/cushioning 7) 실측 보정 ② detailedSpecs 에너지리턴 확정 ③ 라인업 가이드(`saucony-endorphin-lineup-2026-guide`) 표의 엘리트3 잠정 수치(~197g 엘2참고치)도 207g 확정값으로 갱신. 재확인 2026-09. 출처: BITR(Tier B)·DOR·RTR(5인 9.4/10)·saucony.co.kr 교차확인.
 
 ## 완료
 
