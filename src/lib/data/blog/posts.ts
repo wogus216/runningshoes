@@ -3,6 +3,122 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'it-band-syndrome-running-shoes-2026',
+    slug: 'it-band-syndrome-running-shoes-2026',
+    title: 'IT밴드 증후군(장경인대) 완전 가이드 | 무릎 바깥쪽이 콕콕 — 원인·자가진단·회복과 신발의 진짜 역할',
+    description: '러너의 무릎 바깥쪽 통증 1위 원인, IT밴드 증후군(장경인대 증후군). "늘 3~4km쯤 되면 무릎 옆이 아프고 내리막에서 심해진다"면 의심해야 합니다. 둔근 약화·거리 급증·낮은 케이던스가 진짜 원인이고, 신발은 보조일 뿐입니다. 자가진단 체크리스트부터 둔근 강화·케이던스 교정·회복 루틴, 그리고 신발이 도울 수 있는 부분과 없는 부분까지 솔직하게 정리합니다.',
+    thumbnail: '/images/blog/it-band-syndrome-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-30',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['IT밴드', '장경인대', '무릎 바깥쪽 통증', '러닝 부상', '러닝 무릎', '부상 예방'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>IT밴드 증후군은 러너의 무릎 "바깥쪽" 통증 1위 원인</strong>입니다. 장경인대가 무릎 외측에서 반복 마찰되며 염증이 생기는 과사용 부상으로, <strong>늘 비슷한 거리(예: 3~4km)에서 시작되고 내리막·계단에서 심해지는 게 특징</strong>입니다</li>
+    <li>진짜 원인은 신발이 아니라 <strong>둔근(엉덩이 근육) 약화 · 주행거리 갑작스런 증가 · 낮은 케이던스(보폭 과대)</strong>입니다. 그래서 해결도 <strong>둔근 강화 + 케이던스 교정 + 점진적 복귀</strong>가 핵심입니다</li>
+    <li><strong>신발은 보조 역할</strong>입니다 — 과내전이 심하면 안정화화가, 닳은 신발이면 교체가 도움이 되지만, "신발만 바꾸면 낫는다"는 기대는 금물입니다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚕️</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저 — 이 글은 일반 정보입니다</p>
+    <p>아래 내용은 러너를 위한 일반적인 정보로, 의학적 진단을 대체하지 않습니다. <strong>통증이 2주 이상 지속되거나, 부었거나, 일상생활에서도 아프다면</strong> 정형외과·스포츠의학과 전문의 진료를 받으세요. 특히 무릎 안쪽이나 관절 깊은 곳 통증은 IT밴드가 아닌 다른 문제일 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>IT밴드 증후군이 뭔가요</h2>
+<p><strong>IT밴드(장경인대, Iliotibial Band)</strong>는 골반 바깥쪽에서 무릎 바깥쪽까지 허벅지 옆면을 따라 길게 이어지는 두꺼운 결합조직 띠입니다. 달릴 때 무릎을 굽혔다 펴는 동작이 반복되면, 이 띠가 <strong>무릎 외측의 뼈 돌출부(대퇴골 외측상과)와 계속 마찰</strong>합니다. 평소엔 문제없지만, 마찰이 과해지면 그 부위에 염증과 통증이 생기죠. 이게 <strong>IT밴드 증후군(ITBS)</strong>이고, 러너의 무릎 바깥쪽 통증에서 가장 흔한 원인입니다.</p>
+
+<h2>자가진단 — 이런 통증이라면 의심</h2>
+<table>
+  <thead><tr><th>체크 항목</th><th>IT밴드 증후군 가능성</th></tr></thead>
+  <tbody>
+    <tr><td>통증 위치가 <strong>무릎 "바깥쪽"</strong>(새끼발가락 방향)</td><td>높음 ✓</td></tr>
+    <tr><td>늘 <strong>비슷한 거리·시간</strong>에서 통증이 시작된다</td><td>높음 ✓</td></tr>
+    <tr><td><strong>내리막·계단 내려갈 때</strong> 더 아프다</td><td>높음 ✓</td></tr>
+    <tr><td>달릴 땐 아픈데 <strong>쉬면 금방 가라앉는다</strong></td><td>높음 ✓</td></tr>
+    <tr><td>무릎 <strong>안쪽</strong>이나 관절 <strong>깊은 곳</strong>이 아프다</td><td>낮음 — 다른 원인 의심</td></tr>
+    <tr><td>붓거나, 가만히 있어도 욱신거린다</td><td>낮음 — 전문의 진료 권장</td></tr>
+  </tbody>
+</table>
+<p>위쪽 4가지에 해당한다면 IT밴드 증후군일 가능성이 큽니다. 무릎 <strong>앞쪽</strong> 통증(슬개골 주변)이라면 다른 문제(러너스 니 등)일 수 있으니 구분이 필요합니다.</p>
+
+<h2>진짜 원인 3가지 — 신발이 아닙니다</h2>
+<h3>① 둔근(엉덩이 근육) 약화 — 가장 흔한 원인</h3>
+<p>중둔근이 약하면 착지할 때 <strong>골반이 무너지고 무릎이 안쪽으로 쏠립니다.</strong> 그러면 IT밴드의 마찰이 커지죠. 사실상 IT밴드 증후군의 가장 흔한 뿌리입니다. 책상에 오래 앉아 둔근이 "잠든" 한국 직장인 러너에게 특히 많습니다. <strong>해결의 80%는 둔근 강화</strong>라고 봐도 됩니다.</p>
+
+<h3>② 주행거리 갑작스런 증가</h3>
+<p>"이번 주부터 열심히 해야지" 하고 거리를 확 늘리면 IT밴드가 적응할 시간이 없습니다. <strong>주간 거리는 한 번에 10% 이상 늘리지 않는 게 원칙</strong>입니다. 대회를 앞두고 무리하게 거리를 쌓다가 터지는 경우가 정말 많습니다.</p>
+
+<h3>③ 낮은 케이던스(보폭 과대)</h3>
+<p>분당 발걸음 수(케이던스)가 낮으면 보폭이 커지고, 발이 몸보다 앞에 착지(오버스트라이드)하면서 무릎 충격과 IT밴드 마찰이 커집니다. <strong>케이던스를 5~10% 높이면(보폭을 줄이면) IT밴드 부담이 눈에 띄게 줄어듭니다.</strong> 구체적인 방법은 <a href="/blog/running-cadence-guide-2026">러닝 케이던스 가이드</a>에서 다뤘습니다.</p>
+
+<h2>회복·예방 루틴</h2>
+<div class="callout success">
+  <span class="callout-icon">🦵</span>
+  <div class="callout-body">
+    <p class="callout-title">통증이 있을 때 (급성기)</p>
+    <p><strong>1) 달리기를 줄이거나 멈춥니다</strong> — 참고 뛰면 만성화됩니다. 통증 없이 걷는 수준까지 회복 후 복귀하세요. <strong>2) 둔근·대퇴 외측을 폼롤러로 이완</strong>합니다(IT밴드 띠 자체를 세게 미는 것보다 둔근·허벅지 옆 근육을 푸는 게 효과적 — IT밴드는 거의 늘어나지 않습니다). <strong>3) 내리막·계단을 피합니다</strong>(마찰 최대 구간).</p>
+  </div>
+</div>
+<p><strong>근본 해결 — 둔근 강화 3종</strong>(통증이 가라앉으면 시작):</p>
+<ul>
+  <li><strong>클램셸</strong>: 옆으로 누워 무릎 굽힌 채 위쪽 무릎만 조개처럼 벌리기 (중둔근)</li>
+  <li><strong>사이드 레그 레이즈</strong>: 옆으로 누워 다리를 곧게 들어올리기</li>
+  <li><strong>힙 힌지·싱글레그 데드리프트</strong>: 한 발로 균형 잡으며 둔근·고관절 안정성</li>
+</ul>
+<p>주 3회, 한 달만 꾸준히 해도 재발률이 크게 떨어집니다. 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 둔근을 "깨우는" 것도 예방에 좋습니다.</p>
+
+<h2>신발의 진짜 역할 — 보조, 그 이상도 이하도 아닙니다</h2>
+<p>"IT밴드 아픈데 무슨 신발 신어요?"라는 질문을 많이 받습니다. 솔직히 말하면 <strong>신발은 IT밴드 증후군을 "고치는" 도구가 아닙니다.</strong> 근력과 폼이 핵심이죠. 다만 신발이 <strong>악화 요인을 줄여줄</strong> 수는 있습니다.</p>
+<table>
+  <thead><tr><th>상황</th><th>신발 선택</th></tr></thead>
+  <tbody>
+    <tr><td>발이 안쪽으로 무너지는 과내전이 있다</td><td>가벼운 <strong>안정화화</strong> — <a href="/shoes/hoka-arahi-8">호카 아라히 8</a>, <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td></tr>
+    <tr><td>충격이 부담된다 / 회복기 조깅</td><td>충분한 <strong>쿠션화</strong> — <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a></td></tr>
+    <tr><td>신발 밑창이 한쪽만 닳았다</td><td>마모된 신발은 <strong>교체</strong> (틀어진 정렬이 마찰을 키움)</td></tr>
+    <tr><td>특별한 발 문제가 없다</td><td>신발보다 <strong>둔근 강화·케이던스</strong>에 집중</td></tr>
+  </tbody>
+</table>
+<p>과내전 여부가 헷갈린다면 <a href="/recommend">맞춤 추천</a>에서 발 유형을 입력해 후보를 받아보세요. 단, 다시 강조하면 <strong>신발은 보조</strong>입니다 — 둔근 운동을 건너뛰고 신발만 바꾸면 재발합니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">다른 러닝 부상도 함께 보기</p>
+    <p>무릎·다리 통증은 부위별로 원인이 다릅니다 — 정강이 안쪽이면 <a href="/blog/shin-splints-running-shoes-2026">신스플린트</a>, 발뒤꿈치·발바닥이면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>, 아킬레스건이면 <a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>, 무릎 충격 전반이면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 참고하세요.</p>
+  </div>
+</div>
+
+<h2>한국 러너 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 신발만 바꾸면 IT밴드 통증이 나을까요?</p>
+  <p class="faq-a">A. 아닙니다. 신발은 과내전·충격 같은 악화 요인을 줄여주는 보조일 뿐, 근본 원인(둔근 약화·낮은 케이던스)을 해결하진 못합니다. 둔근 강화 운동을 병행하지 않으면 어떤 신발을 신어도 재발하기 쉽습니다.</p>
+  <p class="faq-q">Q. 폼롤러로 IT밴드를 세게 밀면 되나요?</p>
+  <p class="faq-a">A. IT밴드 띠 자체는 매우 단단해 거의 늘어나지 않습니다. 세게 밀면 아프기만 하고 효과는 제한적이에요. 그보다 <strong>둔근(엉덩이)·대퇴근막장근·허벅지 옆 근육</strong>을 풀어주는 게 마찰을 줄이는 데 더 효과적입니다.</p>
+  <p class="faq-q">Q. 얼마나 쉬어야 하나요?</p>
+  <p class="faq-a">A. 정해진 기간은 없지만, <strong>통증 없이 걸을 수 있을 때까지</strong> 달리기를 줄이는 게 기본입니다. 보통 가벼우면 1~2주, 만성화됐으면 더 걸립니다. 쉬는 동안 둔근 운동·수영·자전거(통증 없는 범위)로 체력을 유지하세요. 아픈 걸 참고 뛰면 회복이 훨씬 길어집니다.</p>
+  <p class="faq-q">Q. 다 나으면 바로 예전 거리로 돌아가도 되나요?</p>
+  <p class="faq-a">A. 안 됩니다. 통증이 사라져도 한 번에 거리를 늘리면 재발합니다. 짧은 거리부터 시작해 <strong>주간 10% 룰</strong>로 천천히 늘리고, 내리막·한 방향 트랙 반복은 당분간 피하세요.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">핵심 정리</p>
+    <p>IT밴드 증후군은 <strong>"무릎 바깥쪽 + 일정 거리에서 시작 + 내리막 악화"</strong>가 신호입니다. 해결의 순서는 <strong>① 통증 시 휴식 → ② 둔근 강화 → ③ 케이던스 교정 → ④ 점진적 복귀</strong>이고, 신발은 그다음입니다. 케이던스 교정은 <a href="/blog/running-cadence-guide-2026">케이던스 가이드</a>, 발 유형별 신발은 <a href="/recommend">맞춤 추천</a>에서 이어 보세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 본 글은 일반적인 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 통증이 지속·악화되면 반드시 전문의와 상담하세요.</small></p>
+`,
+  },
+  {
     id: 'saucony-endorphin-elite-3-preview-2026',
     slug: 'saucony-endorphin-elite-3-preview-2026',
     title: '써코니 엔돌핀 엘리트 3 출시 (7/1) | 엘리트 2 대비 뭐가 바뀌나 — 안정성·발볼 손본 신형 카본 레이서',
