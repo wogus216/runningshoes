@@ -3,6 +3,140 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-shoe-size-conversion-chart-korea-2026',
+    slug: 'running-shoe-size-conversion-chart-korea-2026',
+    title: '러닝화 사이즈 변환표 (US·cm·EU·UK) | "US 9는 몇 mm?" — 한국 러너가 정사이즈 고르는 법',
+    description: '나이키 US 9는 270mm, 아디다스 UK 8.5는? 헷갈리는 러닝화 사이즈를 US·cm(mm)·EU·UK로 한 번에 변환합니다. 핵심은 숫자 암기가 아니라 "내 발 길이(mm) + 러닝 여유 5~10mm"로 고르는 것. 발 길이 재는 법, 러닝화는 왜 크게 신는지, 브랜드별 핏 편차(나이키는 좁고 뉴발은 넉넉)까지 한국 러너 기준으로 정리합니다.',
+    thumbnail: '/images/blog/running-shoe-size-conversion-chart-korea-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-30',
+    category: 'guide' as const,
+    readingTime: 8,
+    tags: ['러닝화 사이즈', '신발 사이즈 변환', 'US 사이즈', '발 길이 측정', '러닝화 핏', '사이즈 가이드'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>러닝화 사이즈는 <strong>US·EU·UK 숫자를 외울 필요 없이 "내 발 길이(mm)"</strong> 하나만 알면 됩니다. 한국 표기(mm)가 곧 발 실측 길이 기준이라 가장 직관적입니다</li>
+    <li><strong>러닝화는 평소 신발보다 5~10mm 크게</strong> 신는 게 정석입니다 — 장거리·내리막에서 발이 붓고 앞으로 쏠려, 엄지발가락 앞에 약 1cm 여유가 없으면 발톱이 멍들거나 빠집니다</li>
+    <li><strong>길이(사이즈)는 브랜드 간 큰 차이가 없지만 발볼·볼륨은 다릅니다</strong> — 나이키·아디다스는 좁은 편, 뉴발란스·미즈노는 넉넉, 아식스는 표준. 발볼이 고민이면 사이즈업보다 <strong>와이드</strong>가 정답입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">"US 9가 도대체 몇 mm야?"</p>
+    <p>해외 직구나 리뷰를 보다 보면 US·EU·UK 사이즈가 뒤섞여 헷갈리죠. 결론부터 말하면 — <strong>한국 mm 표기가 발 길이(mondopoint) 기준이라 가장 정확</strong>합니다. US 9 ≒ 270mm, US 10 ≒ 280mm처럼요. 아래 변환표로 한 번에 맞춰보고, 그다음 "내 발에 맞게 고르는 법"까지 정리하겠습니다.</p>
+  </div>
+</div>
+
+<h2>사이즈 변환표 (남성)</h2>
+<table>
+  <thead><tr><th>cm(mm)</th><th>US</th><th>EU</th><th>UK</th></tr></thead>
+  <tbody>
+    <tr><td>250mm</td><td>7</td><td>40</td><td>6</td></tr>
+    <tr><td>255mm</td><td>7.5</td><td>40.5</td><td>6.5</td></tr>
+    <tr><td>260mm</td><td>8</td><td>41</td><td>7</td></tr>
+    <tr><td>265mm</td><td>8.5</td><td>42</td><td>7.5</td></tr>
+    <tr><td><strong>270mm</strong></td><td><strong>9</strong></td><td><strong>42.5</strong></td><td><strong>8</strong></td></tr>
+    <tr><td>275mm</td><td>9.5</td><td>43</td><td>8.5</td></tr>
+    <tr><td>280mm</td><td>10</td><td>44</td><td>9</td></tr>
+    <tr><td>285mm</td><td>10.5</td><td>44.5</td><td>9.5</td></tr>
+    <tr><td>290mm</td><td>11</td><td>45</td><td>10</td></tr>
+    <tr><td>295mm</td><td>11.5</td><td>45.5</td><td>10.5</td></tr>
+    <tr><td>300mm</td><td>12</td><td>46</td><td>11</td></tr>
+  </tbody>
+</table>
+
+<h2>사이즈 변환표 (여성)</h2>
+<table>
+  <thead><tr><th>cm(mm)</th><th>US</th><th>EU</th><th>UK</th></tr></thead>
+  <tbody>
+    <tr><td>225mm</td><td>5.5</td><td>36</td><td>3.5</td></tr>
+    <tr><td>230mm</td><td>6</td><td>36.5</td><td>4</td></tr>
+    <tr><td>235mm</td><td>6.5</td><td>37.5</td><td>4.5</td></tr>
+    <tr><td>240mm</td><td>7</td><td>38</td><td>5</td></tr>
+    <tr><td>245mm</td><td>7.5</td><td>38.5</td><td>5.5</td></tr>
+    <tr><td>250mm</td><td>8</td><td>39</td><td>6</td></tr>
+    <tr><td>255mm</td><td>8.5</td><td>40</td><td>6.5</td></tr>
+    <tr><td>260mm</td><td>9</td><td>40.5</td><td>7</td></tr>
+    <tr><td>265mm</td><td>9.5</td><td>41</td><td>7.5</td></tr>
+    <tr><td>270mm</td><td>10</td><td>42</td><td>8</td></tr>
+  </tbody>
+</table>
+<p><small>※ 일반적인 변환 기준입니다. 브랜드·모델에 따라 EU·UK 표기가 ±0.5 정도 다를 수 있으니, mm(발 길이)를 기준으로 보는 게 가장 안전합니다.</small></p>
+
+<h2>내 발 길이부터 재자 (1분)</h2>
+<p>변환표를 제대로 쓰려면 <strong>내 발 길이(mm)</strong>를 정확히 알아야 합니다.</p>
+<ol>
+  <li>벽에 발뒤꿈치를 붙이고 <strong>종이 위에 선다</strong>(체중을 실어야 정확)</li>
+  <li>가장 긴 발가락 끝에 <strong>수직으로 선을 긋는다</strong></li>
+  <li>뒤꿈치~선까지 거리를 mm로 잰다 → 그게 <strong>내 발 길이</strong></li>
+  <li><strong>양발을 다 재서 더 큰 쪽</strong>을 기준으로(보통 좌우 차이가 있음)</li>
+  <li><strong>저녁에 측정</strong>한다 — 발은 오후·저녁에 붓기 때문</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝화 = 발 길이 + 5~10mm</p>
+    <p>러닝화는 평소 구두·캐주얼화보다 <strong>5~10mm 크게</strong> 신습니다. 예를 들어 발 길이가 263mm라면, 러닝화는 <strong>270mm(US 9)</strong>가 보통 맞습니다. 이유는 — 달릴 때 발이 앞으로 쏠리고(특히 내리막), 장거리에서 발이 붓기 때문입니다. <strong>엄지발가락 끝과 신발 앞 사이에 약 1cm(엄지손가락 너비)</strong>의 여유가 기준이에요. 이 여유가 없으면 발톱이 검게 멍들거나 빠지는 "러너 발톱"이 생깁니다.</p>
+  </div>
+</div>
+
+<h2>브랜드별 핏 편차 — 길이는 같아도 발볼이 다르다</h2>
+<p>같은 270mm라도 브랜드마다 <strong>발볼(가로폭)과 볼륨</strong>이 달라 체감 핏이 다릅니다. 길이 자체는 표준에 가깝지만, 발볼 넓은 한국 러너는 이 차이가 중요합니다.</p>
+<table>
+  <thead><tr><th>브랜드</th><th>발볼·핏 경향</th></tr></thead>
+  <tbody>
+    <tr><td><strong>나이키</strong></td><td>좁은 편 — 발볼 넓으면 압박, 와이드 옵션도 적음</td></tr>
+    <tr><td><strong>아디다스</strong></td><td>좁은 편 (특히 아디제로 레이싱 라인)</td></tr>
+    <tr><td><strong>아식스</strong></td><td>표준~약간 넉넉, 와이드 옵션 다양</td></tr>
+    <tr><td><strong>뉴발란스</strong></td><td>넉넉 + 2E/4E 와이드가 가장 풍부</td></tr>
+    <tr><td><strong>호카</strong></td><td>토박스는 좁은 편이나 길이는 정사이즈, 와이드 있음</td></tr>
+    <tr><td><strong>미즈노·브룩스</strong></td><td>대체로 넉넉한 편</td></tr>
+    <tr><td><strong>온(On)</strong></td><td>좁은 편 + 와이드 옵션 거의 없음</td></tr>
+  </tbody>
+</table>
+<p>발볼이 넓다면 <strong>사이즈를 올리는 것보다 와이드(2E·4E)를 고르는 게 정답</strong>입니다. 사이즈업하면 발볼은 조금 넓어지지만 길이가 헐렁해져 발이 신발 안에서 놀고, 오히려 물집·발톱 문제가 생깁니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 보세요.</p>
+
+<h2>사이즈 고를 때 체크 5</h2>
+<table>
+  <thead><tr><th>체크</th><th>이유</th></tr></thead>
+  <tbody>
+    <tr><td>발 길이 + 5~10mm</td><td>발가락 앞 1cm 여유 (발 쏠림·붓기)</td></tr>
+    <tr><td>저녁에 신어보기</td><td>오후·저녁에 발이 가장 큼</td></tr>
+    <tr><td>러닝 양말 신고 측정</td><td>두꺼운 양말이면 핏이 달라짐</td></tr>
+    <tr><td>발볼 넓으면 와이드 우선</td><td>사이즈업은 길이만 헐렁해짐</td></tr>
+    <tr><td>양발 큰 쪽 기준</td><td>좌우 발은 보통 다름</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 평소 270mm 신는데 러닝화도 270mm 사면 되나요?</p>
+  <p class="faq-a">A. 평소 신발이 이미 여유 있게 270이면 맞을 수 있지만, 발 실측이 263mm 같은 식이라면 러닝화는 270~275를 권합니다. 핵심은 "내가 신던 사이즈"가 아니라 <strong>발 실측 + 5~10mm</strong>입니다. 모델·브랜드마다 다르니 가능하면 착화 후 결정하세요.</p>
+  <p class="faq-q">Q. US랑 mm 중 뭘 믿어야 하나요?</p>
+  <p class="faq-a">A. <strong>mm(발 길이)를 믿으세요.</strong> US·EU·UK는 브랜드마다 표기가 조금씩 달라 ±0.5 오차가 생깁니다. 반면 mm는 발 실측 기준이라 가장 일관적입니다. 직구할 때도 그 모델의 "mm 표기"를 찾아 맞추는 게 안전합니다.</p>
+  <p class="faq-q">Q. 발볼이 넓은데 반 사이즈 올리면 되나요?</p>
+  <p class="faq-a">A. 임시방편은 되지만 권하지 않습니다. 사이즈업은 길이가 같이 늘어 발이 신발 안에서 미끄러지고, 장거리에서 물집·발톱 문제를 키웁니다. <a href="/blog/wide-feet-running-shoes-korea">와이드(2E·4E) 옵션</a>이 있는 모델을 고르는 게 정답입니다.</p>
+  <p class="faq-q">Q. 발 길이 모르면 어떻게 시작하나요?</p>
+  <p class="faq-a">A. 위 "발 길이 재기" 1분 측정을 먼저 하세요. 그게 어렵다면, 발볼·아치·목적을 입력하면 후보를 추려주는 <a href="/recommend">맞춤 추천</a>으로 방향부터 잡아도 됩니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>발볼이 고민이면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>, 평발·과내전이면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 가이드</a>를 보세요. 발 조건·목적에 맞는 신발 후보는 <a href="/recommend">맞춤 추천</a>에서, 여러 모델을 핏·스펙으로 나란히 보려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 변환표는 일반적 기준이며 브랜드·모델에 따라 ±0.5 사이즈 차이가 날 수 있습니다. 가능하면 구매 전 착화를 권장하며, 직구 시 해당 모델의 mm(발 길이) 표기를 기준으로 맞추세요.</small></p>
+`,
+  },
+  {
     id: 'it-band-syndrome-running-shoes-2026',
     slug: 'it-band-syndrome-running-shoes-2026',
     title: 'IT밴드 증후군(장경인대) 완전 가이드 | 무릎 바깥쪽이 콕콕 — 원인·자가진단·회복과 신발의 진짜 역할',
