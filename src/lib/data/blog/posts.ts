@@ -3,6 +3,106 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
+    slug: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
+    title: '살로몬 트레일 3종 비교 | 펄사 vs 울트라 글라이드 4 vs S/LAB 펄사 4 — 근교·울트라·레이싱 뭘 신지',
+    description: '한국 트레일 1위 브랜드 살로몬의 핵심 3종 — 펄사(21만, 올라운드 데일리), 울트라 글라이드 4(23만, 맥스쿠션 울트라), S/LAB 펄사 4(34만, 엘리트 기술 레이서). 같은 살로몬이지만 용도·쿠션·발볼·가격이 완전히 갈립니다. 근교 트레일을 빠르게 즐길지, 50km+ 울트라를 푹신하게 갈지, VK·스카이러닝을 레이싱할지 — 내 트레일에 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-06-30',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['살로몬', '살로몬 펄사', '울트라 글라이드 4', 'S/LAB 펄사', '트레일 러닝화', '트레일화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>같은 살로몬 트레일이지만 셋은 <strong>용도가 완전히 다릅니다</strong> — <a href="/shoes/salomon-pulsar">펄사</a>는 근교 트레일·도로 겸용 <strong>올라운드 데일리</strong>(21만), <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 50~100km <strong>맥스쿠션 울트라</strong>(23만), <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 VK·스카이러닝용 <strong>엘리트 기술 레이서</strong>(34만)</li>
+    <li>핵심 갈림 — <strong>쿠션</strong>은 울트라 글라이드 4(9/10), <strong>경량</strong>은 S/LAB 펄사 4(247g), <strong>가성비·만능</strong>은 펄사. <strong>발볼 넓은 한국 러너는 와이드 옵션이 있는 울트라 글라이드 4</strong>가 사실상 유일한 선택입니다(펄사·S/LAB은 와이드 없음)</li>
+    <li><strong>근교 트레일·입문~중급 → 펄사</strong>, <strong>울트라 장거리·발 편함 → 울트라 글라이드 4</strong>, <strong>빠르고 험한 기술 레이스 → S/LAB 펄사 4</strong>입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">살로몬은 한국 트레일 1위 브랜드</p>
+    <p>트레일 러닝을 시작하면 가장 먼저 듣는 이름이 <strong>살로몬</strong>입니다. Contagrip 아웃솔의 그립과 quickLACE·SensiFit의 발 잠금이 험지에서 검증됐죠. 다만 라인업이 헷갈립니다 — "펄사? 울트라 글라이드? S/LAB?" 이름만 봐선 뭐가 뭔지 모르겠죠. 결론부터 말하면 이 셋은 <strong>"근교 데일리 / 울트라 컴포트 / 기술 레이싱"</strong>으로 역할이 명확히 나뉩니다. 한국 산악 트레일(북한산·관악산처럼 암반·급경사가 많은) 기준으로 어떤 게 내게 맞는지 정리합니다.</p>
+  </div>
+</div>
+
+<h2>스펙 비교</h2>
+<table>
+  <thead><tr><th>항목</th><th>펄사</th><th>울트라 글라이드 4</th><th>S/LAB 펄사 4</th></tr></thead>
+  <tbody>
+    <tr><td><strong>정가</strong></td><td><strong>210,000원</strong></td><td>230,000원</td><td>340,000원</td></tr>
+    <tr><td>무게(US 9)</td><td>290g</td><td>295g</td><td><strong>247g</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td>29 / 23mm</td><td><strong>39 / 31mm</strong></td><td>33 / 26mm</td></tr>
+    <tr><td>드롭</td><td>6mm</td><td>8mm</td><td>7mm</td></tr>
+    <tr><td>미드솔</td><td>optiFOAM2 (eTPU)</td><td>OptiFoam + RelieveSphere</td><td>optiFOAM+ PEBA 듀얼</td></tr>
+    <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 5</td><td>7 / 7</td></tr>
+    <tr><td>러그(아웃솔)</td><td>4mm</td><td>3.9mm</td><td>3mm</td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁음 · <strong>없음</strong></td><td>좁음 · <strong>와이드 O</strong></td><td>표준(74mm) · 없음</td></tr>
+    <tr><td>내구성 / km당</td><td>500km / 약 420원</td><td>450km / 약 511원</td><td>350km / 약 971원</td></tr>
+    <tr><td>주력 거리</td><td>하프~40km</td><td>50~100km</td><td>20~80km 기술</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택은 전문 리뷰(BITR·RTR) 실측, 가격은 살로몬 코리아 공식 정가. 세 모델 모두 카본 플레이트는 없습니다(폼·구조 추진).</small></p>
+
+<h2>핵심 차이 3가지</h2>
+<h3>① 용도 — 거리와 지형이 다르다</h3>
+<p><strong>펄사</strong>는 단종된 센스 라이드의 후속으로, <strong>근교 트레일을 빠르게 즐기고 도로까지 겸용</strong>하는 만능 데일리입니다. 29mm 스택에 6mm 드롭으로 경쾌해 업템포 트레일 훈련에 맞죠. <strong>울트라 글라이드 4</strong>는 정반대로 <strong>50~100km 울트라를 푹신하게</strong> 가는 컴포트화고, <strong>S/LAB 펄사 4</strong>는 <strong>VK·스카이러닝처럼 빠르고 험한 기술 코스</strong>를 레이싱하는 엘리트용입니다. "어떤 트레일을, 얼마나 멀리"가 먼저 정해져야 답이 나옵니다.</p>
+
+<h3>② 쿠션 vs 스피드 — 정반대의 두 극단</h3>
+<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(47~51%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + optiFOAM+ PEBA</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
+
+<h3>③ 발볼·가격 — 한국 러너에겐 발볼이 결정적</h3>
+<p>살로몬은 전통적으로 <strong>발볼이 좁기로</strong> 유명합니다. 펄사는 전족부가 좁고 낮은데 <strong>와이드 옵션이 없어</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고, S/LAB 펄사 4는 토박스가 74mm로 전작보다 넓어졌지만 역시 와이드는 없습니다. <strong>울트라 글라이드 4만 와이드 옵션(한국 공식몰)이 있어</strong>, 발볼이 넓다면 사실상 이 모델이 답입니다. 가격은 펄사(21만) → 울트라 글라이드(23만) → S/LAB(34만) 순으로, S/LAB은 350km 내구성에 km당 약 971원이라 <strong>레이스 전용 운용</strong>이 전제입니다.</p>
+
+<div class="callout success">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 정리</p>
+    <p><strong>펄사 = 근교 트레일·도로 겸용 가성비 올라운더</strong>(트레일 입문~중급의 첫 한 켤레). <strong>울트라 글라이드 4 = 맥스쿠션 울트라 컴포트</strong>(50km+ 장거리, 발볼 넓어도 와이드로 OK). <strong>S/LAB 펄사 4 = 빠르고 험한 기술 레이스용 엘리트 경량</strong>(VK·스카이러닝, 고가). 세 모델 모두 카본은 없지만 살로몬 특유의 그립·발 잠금은 공통입니다.</p>
+  </div>
+</div>
+
+<h2>누가 어느 쪽?</h2>
+<table>
+  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
+  <tbody>
+    <tr><td>트레일 입문~중급 · 근교 위주 · 도로도 함께 뛴다</td><td><strong>펄사</strong></td></tr>
+    <tr><td>50~100km 울트라 · 발 편함이 최우선</td><td><strong>울트라 글라이드 4</strong></td></tr>
+    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>울트라 글라이드 4</strong> (펄사·S/LAB은 와이드 없음)</td></tr>
+    <tr><td>VK·스카이러닝·기술 코스 레이싱 · 경량 우선</td><td><strong>S/LAB 펄사 4</strong></td></tr>
+    <tr><td>가성비 · 한 켤레로 두루</td><td><strong>펄사</strong> (21만, 500km)</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 FAQ</h2>
+<div class="faq">
+  <p class="faq-q">Q. 트레일 입문인데 셋 중 뭘 사야 하나요?</p>
+  <p class="faq-a">A. <strong>펄사</strong>입니다. 근교 트레일과 도로를 겸할 수 있고, 21만원으로 가장 합리적이며, 290g 경량이라 부담이 적습니다. 울트라 글라이드는 입문자에게 과한 쿠션·거리용이고, S/LAB은 엘리트 레이스 전용이라 입문용이 아닙니다. 트레일이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>도 함께 보세요.</p>
+  <p class="faq-q">Q. 발볼이 넓은데 살로몬 신어도 되나요?</p>
+  <p class="faq-a">A. 살로몬은 전반적으로 좁습니다. 발볼이 넓다면 <strong>와이드 옵션이 있는 울트라 글라이드 4</strong>가 사실상 유일한 선택입니다. 펄사와 S/LAB은 와이드가 없어, 발볼 넓은 러너는 장거리에서 새끼발가락 눌림이 올 수 있습니다.</p>
+  <p class="faq-q">Q. 북한산·관악산 같은 암반 코스엔 어떤 게 좋나요?</p>
+  <p class="faq-a">A. 펄사는 록플레이트가 없어 날카로운 암반에서 발바닥 보호가 약합니다. <strong>암반 충격이 걱정되면 RelieveSphere로 충격을 분산하는 울트라 글라이드 4</strong>, 빠른 기술 주행이면 Active Chassis로 제어가 좋은 <strong>S/LAB 펄사 4</strong>가 낫습니다. 단 셋 다 젖은 바위·진흙에서는 그립에 한계가 있으니 우천 시 주의하세요.</p>
+  <p class="faq-q">Q. 살로몬 말고 다른 트레일화 대안은?</p>
+  <p class="faq-a">A. 만능 그립이면 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>, 카본 트레일 레이서면 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>, 빠른 울트라면 <a href="/shoes/adidas-terrex-agravic-speed-ultra">아디다스 테렉스 아그라빅 스피드 울트라</a>가 대표 대안입니다. 한국 산악 기준 트레일화 전체 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 정리했습니다.</p>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔗</span>
+  <div class="callout-body">
+    <p class="callout-title">한 걸음 더</p>
+    <p>각 모델 전체 스펙·구매 링크는 <a href="/shoes/salomon-pulsar">펄사</a> · <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a> · <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a> 상세에서 확인하세요. 트레일화를 더 넓게 비교하려면 <a href="/best/trail">트레일 베스트</a>와 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 TOP 7</a>, 대회를 찾는다면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를 보세요. 내 발·목적 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
+  </div>
+</div>
+
+<p class="post-disclaimer"><small>※ 가격은 살로몬 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 무게·스택 등은 전문 리뷰(Believe in the Run·Road Trail Run) 실측 기준이며, 일부 모델은 RunRepeat 정량 랩이 미게시된 신모델로 공식·전문 리뷰를 종합했습니다.</small></p>
+`,
+  },
+  {
     id: 'running-shoe-size-conversion-chart-korea-2026',
     slug: 'running-shoe-size-conversion-chart-korea-2026',
     title: '러닝화 사이즈 변환표 (US·cm·EU·UK) | "US 9는 몇 mm?" — 한국 러너가 정사이즈 고르는 법',
