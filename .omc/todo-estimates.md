@@ -63,3 +63,4 @@
   - `specs.responsiveness: 8 → 7` (실측 에너지 리턴 기준 하향)
   - 블로그 단독 리뷰 발행: `/blog/nike-pegasus-42-review`
 - [ ] puma-deviate-pure-nitro: RunRepeat 랩 데이터 게시 확인 후 specs/detailedSpecs 업데이트 (추가 2026-06-05, 출시 2026-06-04 — 3~6개월 뒤 재확인)
+- [ ] on-cloudboom-strike-2: RunRepeat 랩(스택/드롭/에너지리턴) 게시 + 한국 공식가 확정 확인 후 블로그 프리뷰(on-cloudboom-strike-2-preview-2026) 수치 갱신, 신발 DB 추가 검토 (추가 2026-07-02, 재확인 2026-09)
