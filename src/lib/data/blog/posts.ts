@@ -3,6 +3,96 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'on-cloudboom-strike-2-preview-2026',
+    slug: 'on-cloudboom-strike-2-preview-2026',
+    title: 'On 클라우드붐 스트라이크 2 미리보기 | 7/30 출시 — 1과 무엇이 달라졌나 (CloudTec Sphere·191g 경량화·카본 강화)',
+    description:
+      'On의 최상위 카본 레이서 클라우드붐 스트라이크의 2세대가 7월 30일 글로벌 출시됩니다. 핵심은 시그니처 구름 포드를 재설계한 CloudTec Sphere 쿠션과 미드솔 폼(Helion HF) 경량화로 201g → 191g까지 내려간 무게, 그리고 강성을 높인 카본 Speedboard입니다. 전작 1과 무엇이 바뀌는지, 한국 출시·예상 가격, 알파플라이·베이퍼플라이 같은 경쟁 슈퍼슈즈 대비 위치까지 출시 전에 미리 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudboom-strike-2-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-02',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['On 클라우드붐 스트라이크 2', '클라우드붐 스트라이크', 'CloudTec Sphere', '카본 레이싱', '슈퍼슈즈', '신상 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>클라우드붐 스트라이크 2가 7월 30일 글로벌 출시</strong> — On의 최상위 카본 마라톤 레이서로, 파리 올림픽에서 화제였던 슈퍼슈즈의 2세대입니다(한국 출시 임박)</li>
+    <li>핵심 변화는 <strong>CloudTec Sphere 쿠션 재설계 + 미드솔 폼(Helion HF) 경량화</strong> — 무게가 전작 201g에서 <strong>191g</strong>으로 내려가고, 카본 Speedboard 강성이 올라갑니다</li>
+    <li>가격은 글로벌 <strong>$250</strong>(어퍼를 분사 성형하는 LightSpray 버전은 $310), 한국가는 전작 329,000원 선을 참고할 수 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👀</span>
+  <div class="callout-body">
+    <p class="callout-title">7월 30일 출시 — 무엇을 미리 알아둘까</p>
+    <p>클라우드붐 스트라이크는 On 라인업의 <strong>최상위 카본 레이서</strong>로, <a href="/shoes/nike-alphafly-3">알파플라이</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드</a>와 같은 급에서 겨루는 슈퍼슈즈입니다. 2세대는 <strong>2026년 7월 30일 글로벌 출시</strong>(On 공식 발표)되며 한국도 곧 이어질 예정입니다. 아직 출시 전이라 RunRepeat 정량 랩은 미게시 상태 — 아래 수치는 <strong>On 공식 발표 변경점 + 클라우드붐 스트라이크 1 실측 기준 추정</strong>이며, 한국 가격은 미확정입니다.</p>
+  </div>
+</div>
+
+<h2>클라우드붐 스트라이크, 어떤 신발인가</h2>
+<p>클라우드붐 스트라이크는 On의 <strong>Helion HF(Pebax 계열) 슈퍼폼 + 풀렝스 카본 Speedboard</strong>를 얹은 마라톤 레이싱화입니다. On의 시그니처인 <strong>CloudTec(바닥의 구름 포드)</strong>가 착지 충격을 흡수하고, 카본 플레이트가 추진력을 만드는 구조죠. 전작 1은 <a href="/shoes/on-cloudboom-strike">상세 페이지</a>에서 정리했듯 <strong>72.1% 에너지 리턴 + 201g 경량</strong>에, 특히 <strong>겨울 경화율 6%</strong>(추운 날씨에도 폼이 거의 굳지 않음)로 한국 겨울 마라톤에서 강점을 보였습니다. 어퍼를 로봇이 분사해 성형하는 <strong>LightSpray</strong> 버전은 2024 파리 올림픽 마라톤에서 화제가 되기도 했죠.</p>
+<p>다만 1은 <strong>3.2mm 극단적 로우드롭</strong>이라 미드풋·앞발 착지 러너 전용이었고, 와이드 옵션이 없어 발볼 넓은 한국 러너에게는 도전적인 핏이었습니다. 2세대가 이 부분을 어떻게 손봤는지가 관전 포인트입니다.</p>
+
+<h2>1 → 2, 무엇이 달라지나</h2>
+<table>
+  <thead><tr><th>항목</th><th>스트라이크 1 (실측)</th><th>스트라이크 2 (공식)</th><th>변경</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>201g</td><td><strong>191g</strong></td><td>약 -10g 경량</td></tr>
+    <tr><td>미드솔</td><td>Helion HF</td><td><strong>Helion HF (폼 약 15% 경량화)</strong></td><td>같은 폼, 밀도 개선</td></tr>
+    <tr><td>쿠션 구조</td><td>CloudTec</td><td><strong>CloudTec Sphere(신규)</strong></td><td>구름 포드 재설계</td></tr>
+    <tr><td>플레이트</td><td>카본 Speedboard</td><td>카본 Speedboard(강성↑·경량화)</td><td>추진력 강화</td></tr>
+    <tr><td>가격(글로벌)</td><td>$250</td><td>$250 (LightSpray $310)</td><td>동결</td></tr>
+    <tr><td>한국가</td><td>₩329,000</td><td>미확정(추정 33만원선)</td><td>-</td></tr>
+  </tbody>
+</table>
+<p><small>※ 스트라이크 2의 스택·드롭·에너지 리턴 등 정량 수치는 아직 랩 테스트 미게시입니다. 위 표는 On 공식 발표와 전작 실측을 종합한 것으로, 정식 랩 데이터가 나오면 갱신합니다.</small></p>
+
+<h2>핵심은 CloudTec Sphere</h2>
+<p>이번 세대의 진짜 이야깃거리는 <strong>CloudTec Sphere</strong>입니다. On의 정체성인 바닥 구름 포드(CloudTec)를 <strong>구(球)형 구조로 재설계</strong>해, 착지 시 충격을 더 균일하게 눌러주고 반발 방향을 앞으로 모으는 것이 목표라고 On은 설명합니다. 여기에 미드솔 폼(Helion HF)을 약 15% 가볍게 만들어, 스택은 유지하면서 무게만 덜어낸 것이 이번 경량화의 핵심입니다.</p>
+<p>쉽게 말하면 <strong>"쿠션 감각은 지키면서 더 가볍고, 밀어주는 힘은 더 또렷하게"</strong>가 2세대의 지향점입니다. 카본 Speedboard도 강성을 높여, 후반부 지친 다리에서도 추진력이 덜 무너지도록 손봤습니다. 다만 이런 주장은 <strong>출시 전 제조사 발표</strong>이므로, 실제 체감은 RunRepeat·전문 리뷰의 정량 검증이 나온 뒤 다시 짚겠습니다.</p>
+
+<h2>한국 러너가 주목할 점</h2>
+<ul>
+  <li><strong>가격</strong> — 글로벌 $250로 전작과 동결. 한국가는 전작 <strong>329,000원</strong>을 기준선으로 보면 되고, <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(37만원대)보다 여전히 저렴한 포지션을 유지할 가능성이 큽니다. LightSpray 버전($310)은 국내 정식 유통이 제한적일 수 있어 확인이 필요합니다.</li>
+  <li><strong>발볼</strong> — 1은 표준~좁은 편에 <strong>와이드 옵션이 없어</strong> 발볼 넓은 러너에게 빡빡했습니다. 2의 어퍼 핏이 개선됐는지는 착화 리뷰가 나와야 확실합니다. 발볼이 넓다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 먼저 참고하세요.</li>
+  <li><strong>착지 유형</strong> — 클라우드붐 스트라이크는 로우드롭 설계라 <strong>미드풋·앞발 착지 러너에 최적</strong>입니다. 힐(뒤꿈치) 착지가 강한 러너는 아킬레스·종아리 부담이 커질 수 있어, 슈퍼슈즈 입문이라면 오히려 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>처럼 힐 착지 관용도가 높은 모델이 무난합니다.</li>
+  <li><strong>용도</strong> — 300km 안팎 내구성의 <strong>레이스·포인트 훈련 전용</strong> 슈퍼슈즈입니다. 데일리 조깅까지 한 켤레로 굴리려는 목적이면 맞지 않습니다.</li>
+</ul>
+
+<h2>카본 레이서, 뭐랑 비교하면 되나</h2>
+<p>같은 값대(30만원 중후반)에서 겨루는 슈퍼슈즈들과 성격이 다릅니다. 내 주법·거리에 맞춰 고르세요.</p>
+<ul>
+  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 에너지 리턴 최상위(78%대), 힐~미드풋 착지 관용. 풀코스 PB 정면 승부.</li>
+  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 날렵, 하프~풀 밸런스. 슈퍼슈즈 입문에 무난.</li>
+  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — EnergyRods(카본 막대)로 자연스러운 롤링, 장거리 안정.</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 스트라이드(보폭)형 러너용, 토박스 넉넉해 한국 발볼 친화.</li>
+  <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a> — 최근 출시된 포크형 카본 레이서, 넓어진 직각 토박스.</li>
+</ul>
+<p>On 라인업 전체에서 클라우드붐 스트라이크가 어디에 위치하는지는 <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온 러닝화 계급도</a>에서 한눈에 볼 수 있고, 데일리 On 슈퍼폼이 궁금하다면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3</a>도 함께 참고하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 스트라이크 1을 이미 갖고 있는데 2로 갈아탈 만한가요?</p>
+    <p class="faq-a">A. 출시 전이라 단정은 이릅니다. 확정된 변경은 <strong>약 10g 경량화 + 카본 강성 강화 + CloudTec Sphere</strong>인데, 이는 세대 교체치고 큰 폭은 아닙니다. 1의 겨울 경화율 6%·72% 리턴에 만족했다면 무리해서 바꿀 이유는 적고, 랩·실주행 리뷰가 나온 뒤 판단해도 늦지 않습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 슈퍼슈즈가 처음인데 첫 카본화로 괜찮을까요?</p>
+    <p class="faq-a">A. 로우드롭 + 미드풋 착지 특화라 <strong>입문용으로는 다소 까다롭습니다</strong>. 힐 착지가 익숙하다면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>처럼 관용도 높은 모델이 첫 슈퍼슈즈로 안전합니다. 카본화 입문 주의사항은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>를 참고하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 한국 출시일과 정확한 가격은 언제 확정되나요?</p>
+    <p class="faq-a">A. 글로벌 출시가 7월 30일이라 한국도 7월 말~8월 사이 이어질 가능성이 큽니다. 전작이 329,000원이었던 점을 감안하면 비슷한 선이 예상되지만, 정식 발표 전까지는 추정입니다. 공식 확정 시 이 글을 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: On 공식 프레스룸(press.on-running.com) 클라우드붐 스트라이크 2 발표 · 클라우드붐 스트라이크 1 RunRepeat 랩 실측 · 작성 2026년 7월 2일. 스트라이크 2의 스택·드롭·에너지 리턴 등 정량 수치는 랩 테스트 게시 후 갱신 예정입니다.</small></p>
+`,
+  },
+  {
     id: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
     slug: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
     title: '살로몬 트레일 3종 비교 | 펄사 vs 울트라 글라이드 4 vs S/LAB 펄사 4 — 근교·울트라·레이싱 뭘 신지',
