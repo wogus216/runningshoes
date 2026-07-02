@@ -3,6 +3,106 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-foot-care-blisters-toenails-2026',
+    slug: 'running-foot-care-blisters-toenails-2026',
+    title: '러너의 여름 발 트러블 완전 가이드 | 물집·발톱 멍·무좀 — 왜 생기고 어떻게 막을까',
+    description: '고온다습한 한국 여름은 러너의 발에 물집·발톱 멍·무좀이 폭증하는 계절입니다. 땀과 습기, 마찰, 안 맞는 사이즈가 겹치기 때문이죠. 세 가지 대표 발 트러블의 원인과 예방법(양말·사이즈·끈 묶기·발 관리), 그리고 이미 생겼을 때의 올바른 처치까지 정리했습니다. 신발은 "보조"일 뿐, 진짜 해법은 발과 습기 관리에 있습니다.',
+    thumbnail: '/images/blog/running-foot-care-blisters-toenails-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-02',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['발 물집', '발톱 멍', '무좀', '여름 러닝', '발 관리', '러닝 부상 예방'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>여름 발 트러블의 공통 범인은 "습기 + 마찰 + 안 맞는 사이즈"</strong> — 땀이 많은 여름엔 물집·무좀이, 발톱은 내리막·짧은 신발에서 멍이 듭니다</li>
+    <li><strong>예방 3대 축: ①흡습속건 양말(면 금지) ②정사이즈·와이드 ③발톱 짧게 + 힐락 레이싱</strong> — 신발보다 이 세 가지가 훨씬 효과적입니다</li>
+    <li>이미 생겼다면 <strong>물집은 함부로 안 터뜨리고, 발톱 멍은 대부분 방치해도 재생</strong>, 무좀은 완전 건조 + 항진균이 기본입니다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">여름에 발 트러블이 급증하는 이유</p>
+    <p>발은 운동 중 컵 하나 분량(약 200ml)의 땀을 흘립니다. 여름엔 여기에 <strong>고온다습 + 장마 우중런</strong>이 겹쳐 발이 항상 젖은 상태가 되죠. 젖은 피부는 마찰에 약해져 <strong>물집</strong>이 잘 생기고, 습한 신발 속은 곰팡이가 번식하는 <strong>무좀</strong>의 온상이 됩니다. 즉 여름 발 관리의 핵심은 <strong>"얼마나 빨리 건조시키느냐"</strong>입니다. 통기성 좋은 신발이 궁금하다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a>을, 폭염 안전 수칙은 <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a>를 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>1. 물집 — 가장 흔하고, 가장 막기 쉬운 트러블</h2>
+<p>물집은 <strong>반복 마찰 + 열 + 습기</strong>로 피부 층이 분리되며 그 사이에 진물이 차는 현상입니다. 여름엔 땀으로 발이 젖어 마찰 저항이 커지면서 특히 잘 생기죠. 주로 새끼발가락 옆, 발뒤꿈치, 발가락 끝, 발바닥 앞쪽에 생깁니다.</p>
+<h3>예방법 (효과 순서대로)</h3>
+<ul>
+  <li><strong>양말이 절반이다</strong> — 면양말은 땀을 머금어 최악입니다. <strong>쿨맥스·메리노 같은 흡습속건 소재</strong>로만 바꿔도 물집이 크게 줄어요. 물집이 잦다면 <strong>이중(더블레이어) 양말</strong>이 마찰을 양말끼리 흡수해 확실히 효과적입니다.</li>
+  <li><strong>사이즈·발볼</strong> — 헐렁하면 발이 신발 안에서 놀아 마찰이 늘고, 꽉 끼면 압박으로 생깁니다. 새끼발가락 물집이 잦다면 발볼이 좁은 것이니 <a href="/blog/wide-feet-running-shoes-korea">와이드(2E·4E)</a>를 고려하세요. 정사이즈 기준은 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>를 참고하고요.</li>
+  <li><strong>마찰 줄이기</strong> — 물집 잘 생기는 부위에 <strong>바세린·전용 안티챗 밤</strong>을 바르거나, 파우더로 건조 상태를 유지합니다. 장거리·대회 전엔 미리 발라두세요.</li>
+  <li><strong>끈 묶기(힐락 레이싱)</strong> — 발뒤꿈치가 들리며 쓸리는 물집엔, 맨 위 구멍을 이용한 <strong>힐락(heel-lock) 묶기</strong>로 발을 뒤에서 잡아주면 효과가 큽니다.</li>
+  <li><strong>젖으면 갈아신기</strong> — 우중런·땀이 많은 날은 여벌 양말을 챙겨 중간에 갈아 신는 것만으로도 예방됩니다.</li>
+</ul>
+<h3>이미 생겼다면</h3>
+<p><strong>작은 물집은 터뜨리지 않는 게 원칙</strong>입니다. 덮인 피부가 천연 밴드 역할을 하거든요. 크고 아파서 꼭 빼야 한다면, 소독한 바늘로 <strong>가장자리만 살짝 뚫어 진물만 빼고 덮인 피부는 남깁니다</strong>. 이후 <strong>하이드로콜로이드(습윤) 밴드</strong>를 붙이면 통증이 줄고 아뭄이 빠릅니다. 붉게 번지거나 고름·열감이 있으면 감염이니 병원에 가세요.</p>
+
+<h2>2. 발톱 멍·빠짐 — 내리막과 짧은 신발이 범인</h2>
+<p>검게 멍든 발톱(black toenail)은 <strong>발톱이 신발 앞쪽에 반복적으로 부딪혀</strong> 발톱 밑에 피가 고이는 것입니다. 러너에게 흔해 "러너의 훈장"이라 부르기도 하지만, 대부분은 예방할 수 있습니다.</p>
+<h3>예방법</h3>
+<ul>
+  <li><strong>발톱을 짧게, 일자로</strong> — 긴 발톱이 가장 큰 원인입니다. 러닝 전 <strong>일자로(둥글게 X) 짧게</strong> 깎으세요. 둥글게 깎으면 파고들 수 있습니다.</li>
+  <li><strong>사이즈 여유</strong> — 가장 긴 발가락 앞에 <strong>엄지손톱 하나(약 1cm)</strong> 여유가 필요합니다. 특히 <strong>내리막·장거리에서 발이 붓기</strong> 때문에 딱 맞는 신발은 발톱을 때립니다. 여름엔 더위로 발이 더 붓는 것도 감안하세요.</li>
+  <li><strong>힐락 레이싱</strong> — 발이 앞으로 밀리지 않게 뒤에서 잡아주면 발톱 충격이 줄어듭니다.</li>
+  <li><strong>내리막 자세</strong> — 보폭을 줄이고 케이던스를 높여, 브레이크 걸듯 쿵쿵 딛지 않는 것도 도움이 됩니다.</li>
+</ul>
+<h3>이미 멍들었다면</h3>
+<p>통증이 없다면 <strong>대부분 방치해도 새 발톱이 밀고 올라오며 자연스럽게 교체</strong>됩니다(수개월 소요). 억지로 뜯지 마세요. 다만 <strong>욱신거리는 압통이 심하면</strong> 피가 고여 압력이 높은 상태라 병원에서 빼야 하고, 발톱 주변이 붓고 고름이 잡히면 감염이니 진료가 필요합니다.</p>
+
+<h2>3. 무좀·발냄새 — 여름의 진짜 복병</h2>
+<p>무좀(athlete's foot)은 <strong>곰팡이(백선균) 감염</strong>으로, 고온다습한 여름 + 젖은 신발이 완벽한 번식 환경을 만듭니다. 발가락 사이가 하얗게 짓무르고 가렵거나, 물집·각질로 나타나죠. 러너는 땀과 젖은 신발에 노출이 많아 특히 취약합니다.</p>
+<h3>예방법</h3>
+<ul>
+  <li><strong>신발 로테이션 + 완전 건조</strong> — 같은 신발을 매일 신으면 습기가 마를 틈이 없습니다. <strong>2켤레 이상 번갈아 신고</strong>, 신은 신발은 통풍이 되게 말리세요. 젖은 신발 말리는 법은 <a href="/blog/wet-running-shoes-drying-care-guide-korea">젖은 러닝화 관리 가이드</a>에 정리했습니다.</li>
+  <li><strong>발가락 사이까지 말리기</strong> — 샤워 후 발가락 사이의 물기를 꼼꼼히 닦는 게 핵심입니다. 여기가 늘 젖어 있으면 무좀이 시작돼요.</li>
+  <li><strong>흡습속건 양말 + 즉시 탈의</strong> — 러닝 후 젖은 양말을 오래 신고 있지 마세요. 바로 갈아신고 발을 건조하게.</li>
+  <li><strong>땀 많으면 파우더·항진균 파우더</strong> — 발한이 심한 러너는 예방적으로 파우더를 쓰면 좋습니다.</li>
+</ul>
+<h3>이미 생겼다면</h3>
+<p><strong>약국 항진균 연고(OTC)를 증상이 사라진 뒤에도 1~2주 더</strong> 발라 재발을 막습니다. 증상이 심하거나 발톱까지 번졌다면(발톱무좀) 먹는 약이 필요할 수 있으니 <strong>피부과 진료</strong>를 받으세요. 무좀은 전염되므로 수건·양말을 따로 쓰는 것도 중요합니다.</p>
+
+<h2>공통 원칙 — "신발은 보조, 진짜 해법은 발과 습기 관리"</h2>
+<p>발 트러블을 줄이는 가장 큰 지렛대는 값비싼 신발이 아니라 <strong>양말·사이즈·건조 습관</strong>입니다. 정리하면:</p>
+<ul>
+  <li><strong>양말</strong>: 면 금지, 흡습속건(쿨맥스·메리노), 물집 잦으면 더블레이어</li>
+  <li><strong>사이즈</strong>: 가장 긴 발가락 앞 약 1cm 여유 + 발볼 넓으면 와이드</li>
+  <li><strong>발톱</strong>: 러닝 전 일자로 짧게</li>
+  <li><strong>건조</strong>: 신발 2켤레 로테이션, 발가락 사이까지 말리기</li>
+  <li><strong>마찰</strong>: 취약 부위에 밤·바세린, 힐락 레이싱</li>
+</ul>
+<p>그래도 발볼·통기성 때문에 신발 자체가 문제라면, <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>를 고르거나 발 너비·통기 조건으로 <a href="/recommend">1분 추천</a>을 받아보세요. 발바닥·아치 통증까지 있다면 단순 트러블이 아닐 수 있으니 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 가이드</a>도 확인하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 물집이 터졌는데 계속 뛰어도 되나요?</p>
+    <p class="faq-a">A. 통증이 심하지 않고 감염 징후(붉게 번짐·고름·열감)가 없다면 <strong>하이드로콜로이드 밴드로 덮고</strong> 조심스럽게 가능합니다. 다만 벗겨진 부위가 크거나 아프면 아물 때까지 쉬는 게 회복이 빠릅니다. 무리하면 상처가 커지고 감염 위험이 올라갑니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발톱이 검게 멍들면 꼭 빼야 하나요?</p>
+    <p class="faq-a">A. 아닙니다. <strong>통증이 없으면 대부분 방치해도 새 발톱으로 자연 교체</strong>됩니다. 억지로 뜯으면 감염 위험만 커져요. 단, 욱신거리는 압통이 심하거나 붓고 고름이 잡히면 병원에서 처치가 필요합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 여름에 무좀을 막는 가장 확실한 방법은?</p>
+    <p class="faq-a">A. <strong>신발 로테이션(2켤레 이상) + 발가락 사이까지 완전 건조</strong>입니다. 곰팡이는 젖은 환경에서만 번식하므로, 발과 신발을 늘 마르게 유지하는 게 핵심입니다. 흡습속건 양말로 바꾸고 러닝 직후 젖은 양말을 벗는 습관도 크게 도움이 됩니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 양말만 바꿔도 정말 물집이 줄어드나요?</p>
+    <p class="faq-a">A. 네, 체감이 가장 큰 변화 중 하나입니다. 면양말을 <strong>흡습속건 소재</strong>로만 바꿔도 발이 훨씬 마른 상태로 유지돼 마찰 물집이 줄어요. 물집이 고질적이라면 마찰을 양말끼리 흡수하는 <strong>더블레이어 양말</strong>을 추천합니다.</p>
+  </div>
+</div>
+
+<p><small>※ 이 글은 일반적인 발 관리 정보로, 의학적 진단·치료를 대체하지 않습니다. 감염 징후(붉게 번짐·고름·열감·심한 통증)가 있거나 증상이 호전되지 않으면 피부과·정형외과 진료를 받으세요. 작성 2026년 7월 2일.</small></p>
+`,
+  },
+  {
     id: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
     slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
     title: '20만원대 트레일화 3파전 | 스피드고트 6 vs 펄사 vs 테렉스 아그라빅 4 — 쿠션·스피드·그립, 내 산엔 뭘?',
