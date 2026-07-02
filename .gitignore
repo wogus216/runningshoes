@@ -11,6 +11,10 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
+# GA4 서비스 계정 키 (절대 커밋 금지)
+.ga-key.json
+blog-auto-494801-*.json
+
 # Env
 .env
 .env.local

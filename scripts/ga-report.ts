@@ -10,10 +10,30 @@
  * 키 파일 경로는 GA_KEY_FILE 환경변수 또는 아래 기본값.
  */
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
+import { readdirSync, statSync, existsSync } from 'fs';
+import { homedir } from 'os';
+import { join } from 'path';
 
-const KEY_FILE =
-  process.env.GA_KEY_FILE ||
-  '/Users/kwonjaehyeon/Downloads/blog-auto-494801-4f5d2392338c.json';
+// 키 파일 우선순위: ①GA_KEY_FILE 환경변수 ②~/Downloads/blog-auto-494801-*.json 중 최신 ③기존 기본 경로
+function resolveKeyFile(): string {
+  if (process.env.GA_KEY_FILE) return process.env.GA_KEY_FILE;
+  const downloads = join(homedir(), 'Downloads');
+  try {
+    const matches = readdirSync(downloads)
+      .filter((f) => /^blog-auto-494801-.*\.json$/.test(f))
+      .map((f) => join(downloads, f))
+      .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
+    if (matches.length) return matches[0];
+  } catch {
+    /* Downloads 나열 불가(권한) 시 아래 고정 경로로 폴백 */
+  }
+  // 프로젝트 루트에 복사해둔 고정 키(.gitignore) — Downloads 접근이 막힌 환경용
+  const local = join(process.cwd(), '.ga-key.json');
+  if (existsSync(local)) return local;
+  return join(downloads, 'blog-auto-494801-4f5d2392338c.json');
+}
+
+const KEY_FILE = resolveKeyFile();
 const PROPERTY_ID = process.env.GA_PROPERTY_ID || '523714985';
 
 const client = new BetaAnalyticsDataClient({ keyFilename: KEY_FILE });
@@ -30,7 +50,8 @@ function pad(s: string, n: number): string {
 async function main() {
   const days = Number(process.argv[2]) || 28;
   const dateRanges = [{ startDate: `${days}daysAgo`, endDate: 'today' }];
-  console.log(`\n📊 GA4 리포트 — 최근 ${days}일 (property ${PROPERTY_ID})\n`);
+  console.log(`\n📊 GA4 리포트 — 최근 ${days}일 (property ${PROPERTY_ID})`);
+  console.log(`🔑 키: ${KEY_FILE.replace(homedir(), '~')}\n`);
 
   // 1) 인기 페이지
   const [pages] = await client.runReport({
