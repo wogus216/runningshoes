@@ -3,6 +3,108 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
+    slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
+    title: '20만원대 트레일화 3파전 | 스피드고트 6 vs 펄사 vs 테렉스 아그라빅 4 — 쿠션·스피드·그립, 내 산엔 뭘?',
+    description: '한국에서 가장 많이 팔리는 20만원대 트레일화 세 켤레를 정면 비교했습니다. 호카 스피드고트 6(맥스쿠션·만능 그립·와이드), 살로몬 펄사(저스택·경쾌한 스피드), 아디다스 테렉스 아그라빅 4(Continental 러버·테크니컬 그립). 가격은 거의 같지만(20.5~21만원) 쿠션·무게·드롭·그립 성격이 완전히 다릅니다. 장거리 울트라냐, 근교 스피드 훈련이냐, 북한산 바위 테크니컬이냐 — 내 산과 용도에 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-02',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['트레일 러닝화', '스피드고트 6', '살로몬 펄사', '테렉스 아그라빅 4', '트레일화 비교', '트레일 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가격은 거의 같지만(20.5~21만원) 성격은 정반대</strong> — 스피드고트 6은 맥스쿠션 만능형, 펄사는 저스택 스피드형, 아그라빅 4는 테크니컬 그립형입니다</li>
+    <li><strong>장거리·발볼 넓음 → 스피드고트 6</strong>(힐 40mm 쿠션 + 유일한 와이드 옵션), <strong>근교 빠른 훈련 → 펄사</strong>(힐 29mm·경쾌), <strong>북한산 바위·진흙 → 아그라빅 4</strong>(Continental 러버)</li>
+    <li>한국 산은 화강암 바위·뿌리가 많은 테크니컬 지형이라 <strong>그립과 안정성</strong>이 핵심 — 발볼 넓은 러너는 와이드가 있는 스피드고트가 사실상 유일한 선택입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏔️</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>세 켤레 다 좋은 트레일화지만 노리는 지점이 다릅니다. <strong>"트레일 첫 켤레로 하나만"이면 스피드고트 6</strong>(쿠션·그립·와이드 다 무난), <strong>"가볍게 근교를 빠르게"면 펄사</strong>, <strong>"북한산·관악산 바위 구간 그립 최우선"이면 아그라빅 4</strong>입니다. 전체 트레일화 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>세 켤레 한눈에 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>스피드고트 6</th><th>펄사</th><th>아그라빅 4</th></tr></thead>
+  <tbody>
+    <tr><td>브랜드</td><td>호카</td><td>살로몬</td><td>아디다스 테렉스</td></tr>
+    <tr><td>한국 가격</td><td>205,000원</td><td>210,000원</td><td>약 209,000원</td></tr>
+    <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td>283g</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td><strong>40mm(맥스)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
+    <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>9mm</td></tr>
+    <tr><td>미드솔</td><td>CMEVA 맥스쿠션</td><td>optiFOAM2 (eTPU)</td><td>Lightstrike EVA(단단)</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip 5mm</td><td>Contagrip 4mm</td><td>Continental 3mm대</td></tr>
+    <tr><td>그립 강점</td><td>만능(젖은 바위 최상위)</td><td>건조 혼합 지형</td><td>테크니컬·진흙 최상위</td></tr>
+    <tr><td>쿠션 / 반발</td><td>푹신 / 둔함</td><td>중간 / 경쾌</td><td>단단 / 또렷</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td><strong>○ (공식 동일가)</strong></td><td>✗ (발볼 좁음)</td><td>✗ (표준)</td></tr>
+    <tr><td>내구성</td><td>400~500km</td><td>500km</td><td>500~600km</td></tr>
+    <tr><td>대표 용도</td><td>장거리·울트라·만능</td><td>근교 스피드 훈련</td><td>바위·진흙 테크니컬</td></tr>
+  </tbody>
+</table>
+<p><small>※ 스택·무게는 전문 리뷰(Road Trail Run·DOR) 및 공식 기준. 펄사·아그라빅 4는 2025~26 신모델이라 RunRepeat 정량 랩 일부 미게시로, 수치는 공식·전문 리뷰 종합입니다. 아그라빅 4 한국가는 미확정 추정입니다.</small></p>
+
+<h2>스피드고트 6 — 트레일 첫 켤레의 표준</h2>
+<p><a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>은 트레일 데일리의 대명사입니다. "트레일화 하나만 추천"이라는 질문에 가장 먼저 나오는 이름이죠. 핵심은 <strong>힐 40mm 맥스쿠션 + Vibram Megagrip 최상위 그립</strong>입니다. 6세대는 측면 마이크로 돌기(Traction Lug)를 더해 젖은 바위·급경사·진흙 어디서든 그립이 흔들리지 않고(Road Trail Run 10/10), 높은 스택인데도 내부 섀시가 발을 잡아줘 안정성이 뛰어납니다(DOR A등급).</p>
+<p>한국 러너에게 결정적인 건 <strong>와이드 옵션이 공식가(205,000원) 그대로 나온다</strong>는 점입니다. 세 켤레 중 유일하죠. 토박스가 표준(73mm)인데도 "좁게 느껴진다"는 평이 많아, 발볼 넓은 분은 망설임 없이 와이드를 고르면 됩니다. GTX 방수 버전(229,000원)도 있어 장마·겨울 대응까지 넓습니다.</p>
+<p>약점은 <strong>반발</strong>입니다. 에너지 리턴이 48%로 낮아 빠른 페이스에는 둔하고, 노출 미드솔 구간은 200~300km 후 압축이 옵니다. 텅 날개·힐 슬립 같은 소소한 핏 이슈도 있죠. 하지만 "빠르게 치고 나가기"보다 "모든 트레일을 무난히, 오래 즐기기"가 목적이라면 가장 안전한 선택입니다.</p>
+<p><strong>✅ 이런 분께</strong> — 트레일 입문 첫 켤레 / 50km+ 장거리·울트라 / 발볼 넓어 와이드가 필요한 러너 / 하이킹 겸용</p>
+
+<h2>펄사 — 가볍고 경쾌한 근교 스피드형</h2>
+<p><a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 단종된 센스 라이드의 자리를 잇는 올라운드 데일리 트레이너입니다. 스피드고트가 "푹신한 만능형"이라면, 펄사는 정반대인 <strong>저스택(힐 29mm)·경쾌한 스피드형</strong>입니다. 신형 optiFOAM2(100% eTPU) 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 트레일 하프~40km 훈련부터 업템포까지 한 켤레로 소화합니다.</p>
+<p>quickLACE + SensiFit의 발 잠금이 살로몬답게 정확하고, 낮은 스택 덕에 지면 감각이 또렷해 <strong>근교 트레일을 빠르게 달리는 훈련</strong>에 특히 잘 맞습니다. 발밑이 낮으니 발목이 꺾일 위험도 덜하죠.</p>
+<p>단점은 두 가지입니다. 첫째, <strong>전족부가 좁고 낮아(narrow) 발볼 넓은 한국 러너에겐 불편</strong>하고 와이드 옵션이 없습니다. 사이즈가 길게 나와 반 사이즈 다운 평이 많고요. 둘째, 4mm Contagrip 러그와 <strong>록플레이트 부재</strong>로 젖은 바위·진흙·날카로운 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일 스피드"에 특화된 신발입니다.</p>
+<p><strong>✅ 이런 분께</strong> — 근교 산·둘레길을 빠르게 / 도로-트레일 겸용 원슈즈 / 저스택·경쾌한 반응 선호 / 발볼 표준~좁은 러너</p>
+
+<h2>테렉스 아그라빅 4 — 한국 산 테크니컬 그립 특화</h2>
+<p><a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>는 "북한산 바위나 도봉산 테크니컬 구간에서 안 미끄러지는 신발"을 찾을 때 답이 되는 트레일화입니다. <strong>Continental 러버 아웃솔 + 약 3mm대 러그</strong>로 국내 출시 트레일화 중 그립이 최상위권이고, 습한 노면·진흙에서도 접지력이 안정적입니다.</p>
+<p>Lightstrike EVA 폼은 다소 단단해 반발은 아쉽지만(에너지 리턴 55%), 오히려 <strong>테크니컬 지형에서 발밑이 또렷해 착지가 안정적</strong>입니다. 셋 중 드롭이 가장 높은 9mm이라 힐 착지 러너에게 편하고, 다운힐에서 발이 흔들리지 않죠. 283g 경량이라 업힐·다운힐 모두 민첩합니다. 한국 산악 지형(화강암 바위 + 흙길 + 뿌리)에 가장 궁합이 좋은 세팅입니다.</p>
+<p>약점은 <strong>록 플레이트가 없어</strong> 날카로운 암반이 많은 코스에선 발바닥 피로가 누적된다는 것. 토박스 73mm 표준에 와이드 옵션이 없어 발볼 넓은 러너는 매장 착화가 필수입니다. 록플레이트가 꼭 필요한 장거리 암반 코스라면 <a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>이 대안입니다.</p>
+<p><strong>✅ 이런 분께</strong> — 북한산·관악산 등 바위·진흙 테크니컬 코스 / 그립·안정 착지 최우선 / 높은 드롭(9mm) 선호 / 로드화에서 넘어온 입문~중급</p>
+
+<h2>내 산·용도엔 뭘 신을까</h2>
+<ul>
+  <li><strong>"트레일 첫 켤레, 하나만 사서 다 하고 싶다"</strong> → <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 쿠션·그립·안정성이 고루 높고, 와이드까지 있어 실패 확률이 가장 낮습니다.</li>
+  <li><strong>"발볼이 넓다"</strong> → 사실상 <a href="/shoes/hoka-speedgoat-6">스피드고트 6 와이드</a>가 유일한 답입니다. 펄사·아그라빅은 와이드가 없습니다.</li>
+  <li><strong>"근교 산·둘레길을 가볍고 빠르게"</strong> → <a href="/shoes/salomon-pulsar">펄사</a>. 저스택·경쾌한 반응이 스피드 훈련에 맞습니다.</li>
+  <li><strong>"북한산·관악산 바위·진흙에서 안 미끄러지는 게 1순위"</strong> → <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>. Continental 그립과 안정 착지가 한국 산에 최적입니다.</li>
+  <li><strong>"50km+ 울트라, 오래 푹신하게"</strong> → 맥스쿠션 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 더 푹신한 대안은 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 울트라 글라이드 4</a>도 검토하세요.</li>
+  <li><strong>"빠른 트레일 레이스·카본 반발"</strong> → 세 켤레 모두 레이서는 아닙니다. 카본 트레일화 <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>가 대안입니다.</li>
+</ul>
+
+<p>트레일 러닝이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>부터, 스카이레이스·기술 코스가 목표라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를 함께 보면 좋습니다. 발볼이 넓어 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 참고하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 로드 러닝화로 트레일 뛰면 안 되나요?</p>
+    <p class="faq-a">A. 가벼운 흙길·둘레길이면 가능하지만, 바위·급경사·젖은 노면이 나오면 로드화 아웃솔은 미끄러워 위험합니다. 한국 산은 화강암 바위가 많아 <strong>트레일 전용 러그·러버</strong>가 안전에 직결됩니다. 위 세 켤레는 모두 트레일 전용 그립을 갖췄습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 세 켤레 다 괜찮나요?</p>
+    <p class="faq-a">A. 아닙니다. 펄사는 전족부가 좁고(narrow) 와이드가 없어 발볼 넓은 분께 비추천, 아그라빅 4도 표준이지만 와이드가 없습니다. <strong>와이드 옵션이 있는 건 스피드고트 6뿐</strong>이라, 발볼이 넓다면 스피드고트 와이드가 사실상 유일한 선택입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 무릎이 안 좋은데 어떤 게 좋을까요?</p>
+    <p class="faq-a">A. 다운힐 충격을 가장 잘 흡수하는 건 힐 40mm 맥스쿠션의 <strong>스피드고트 6</strong>입니다. 반대로 펄사·아그라빅은 스택이 낮고 단단해 지면 감각은 좋지만 장거리 하산 충격은 더 옵니다. 무릎 이력이 있다면 스피드고트 6이 무난합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 셋 다 방수(GTX)가 되나요?</p>
+    <p class="faq-a">A. 스피드고트 6은 GTX 방수 버전(229,000원)이 따로 있습니다. 장마·겨울 우중 트레일이 잦다면 GTX를 고려하세요. 펄사·아그라빅 4는 기본 통기 버전 위주라 방수는 별도 확인이 필요합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 각 모델 상세 페이지(스피드고트 6·펄사·아그라빅 4) 스펙 및 Road Trail Run·Doctors of Running 리뷰 종합 · 한국 공식 가격 기준(아그라빅 4는 미확정 추정) · 작성 2026년 7월 2일. 신모델 정량 랩(RunRepeat) 게시 시 갱신합니다.</small></p>
+`,
+  },
+  {
     id: 'on-cloudboom-strike-2-preview-2026',
     slug: 'on-cloudboom-strike-2-preview-2026',
     title: 'On 클라우드붐 스트라이크 2 미리보기 | 7/30 출시 — 1과 무엇이 달라졌나 (CloudTec Sphere·191g 경량화·카본 강화)',
