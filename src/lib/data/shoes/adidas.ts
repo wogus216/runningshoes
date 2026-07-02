@@ -401,6 +401,10 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5'],
+    relatedPosts: [
+      { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너' },
+      { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FIN7KQvW' }],
   },
   {
@@ -509,6 +513,10 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-rebel-v5', 'nike-pegasus-plus'],
+    relatedPosts: [
+      { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 3파전' },
+      { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/546TgvGh' }],
   },
   {

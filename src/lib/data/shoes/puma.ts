@@ -109,6 +109,10 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'hoka-mach-6', 'saucony-ride-18'],
+    relatedPosts: [
+      { slug: 'puma-deviate-nitro-3-vs-4-comparison', title: '디비에이트 나이트로 3 vs 4' },
+      { slug: 'puma-running-shoes-lineup-tier-guide-2026', title: '푸마 러닝화 계급도' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZ9hMP' }],
   },
   {

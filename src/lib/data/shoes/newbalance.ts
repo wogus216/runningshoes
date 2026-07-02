@@ -596,6 +596,10 @@ export const newbalanceShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-gel-kayano-33', 'brooks-adrenaline-gts-25', 'saucony-guide-18'],
+    relatedPosts: [
+      { slug: 'new-balance-860-v14-vs-v15-comparison', title: '860 v14 vs v15 — 세대 비교' },
+      { slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026', title: '카야노33 vs 글리세린GTS22 vs 860 v15 — 안정화 3강' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GowyA70j' }],
   },
   {
@@ -963,6 +967,11 @@ export const newbalanceShoes: Shoe[] = [
     ],
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    relatedPosts: [
+      { slug: 'new-balance-sc-elite-v5-review', title: 'SC Elite V5 심층 후기' },
+      { slug: 'nike-vaporfly-4-vs-alphafly-3-comparison', title: '베이퍼플라이4 vs 알파플라이3 — 카본 레이서' },
+      { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 계급도' },
+    ],
     purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLwgI' }],
   },
   {
