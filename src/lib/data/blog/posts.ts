@@ -3,6 +3,104 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026',
+    slug: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026',
+    title: '카본 트레일 레이서 3파전 | 테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사 4 — 울트라·그래블·기술 산악 뭘 신지',
+    description: '30만원대 카본급 트레일 레이서 세 켤레를 정면 비교했습니다. 호카 테크톤 X 3(듀얼 카본·PEBA·울트라 효율), 나이키 울트라플라이(ZoomX·풀카본·넓은 토박스·완만 코스), 살로몬 S/LAB 펄사 4(카본 없이 247g 최경량·기술 암반 제어). 같은 "빠른 트레일"을 노리지만 울트라 장거리냐, 완만한 그래블 스피드냐, VK·스카이러닝 기술 코스냐에 따라 답이 완전히 갈립니다. 한국 산악 기준으로 내 레이스에 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-03',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['카본 트레일화', '테크톤 X 3', '나이키 울트라플라이', 'S/LAB 펄사 4', '트레일 레이싱', '트레일 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>같은 "빠른 트레일 레이서"지만 노리는 지형이 정반대</strong> — 테크톤 X 3은 울트라 장거리 효율, 울트라플라이는 완만한 그래블 스피드, S/LAB 펄사 4는 기술 암반·VK 제어형입니다</li>
+    <li><strong>울트라 완주 → 테크톤 X 3</strong>(듀얼 카본+PEBA·70% 리턴·그립), <strong>완만 코스·발볼 넓음 → 울트라플라이</strong>(넓은 토박스 76.7mm), <strong>급경사 기술 산악 → S/LAB 펄사 4</strong>(247g·Active Chassis 제어)</li>
+    <li>한국 산은 바위·급경사가 많아 <strong>기술 제어와 안정성</strong>이 핵심 — 완만 코스 전용인 울트라플라이는 한국 산악엔 신중, S/LAB이 기술 코스에 가장 강합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>셋 다 30만원대 프리미엄 트레일 레이서지만 용도가 완전히 다릅니다. <strong>"50km+ 울트라를 빠르게 완주"면 테크톤 X 3</strong>(반발·그립·내구 균형), <strong>"완만한 임도·그래블을 빠르게, 발볼도 넓다"면 울트라플라이</strong>, <strong>"북한산·설악 같은 급경사 기술 코스·VK·스카이러닝"이면 S/LAB 펄사 4</strong>입니다. 데일리 트레일 3종은 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">스피드고트 6 vs 펄사 vs 아그라빅 4</a>에서 다뤘고, 전체 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>을 참고하세요.</p>
+  </div>
+</div>
+
+<h2>세 켤레 한눈에 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>테크톤 X 3</th><th>울트라플라이</th><th>S/LAB 펄사 4</th></tr></thead>
+  <tbody>
+    <tr><td>브랜드</td><td>호카</td><td>나이키</td><td>살로몬</td></tr>
+    <tr><td>한국 가격</td><td>339,000원</td><td>299,000원</td><td>340,000원</td></tr>
+    <tr><td><strong>무게(US 9)</strong></td><td>275g</td><td>299g</td><td><strong>247g(최경량)</strong></td></tr>
+    <tr><td>힐 스택</td><td>38mm</td><td>37mm</td><td>33mm</td></tr>
+    <tr><td>드롭</td><td>7mm</td><td><strong>12mm</strong></td><td>7mm</td></tr>
+    <tr><td>미드솔</td><td>PEBA 듀얼</td><td>ZoomX(Pebax)</td><td>optiFOAM+ 듀얼</td></tr>
+    <tr><td><strong>플레이트</strong></td><td>윙드 카본(듀얼)</td><td>풀 카본</td><td><strong>없음(폼+Active Chassis)</strong></td></tr>
+    <tr><td>에너지 리턴</td><td><strong>~70%(최고)</strong></td><td>중상</td><td>47~57%(낮음)</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip 4mm</td><td>Vibram Litebase 3mm</td><td>Contagrip 3mm</td></tr>
+    <tr><td>안정성/제어</td><td>중(힐 고정 약함)</td><td><strong>낮음(완만 전용)</strong></td><td><strong>높음(기술 암반)</strong></td></tr>
+    <tr><td>토박스</td><td>73mm 표준</td><td><strong>76.7mm 넓음</strong></td><td>74mm 표준</td></tr>
+    <tr><td>내구성</td><td>500km</td><td>450km</td><td>350km(청킹 우려)</td></tr>
+    <tr><td>대표 용도</td><td>울트라 장거리</td><td>완만 그래블 스피드</td><td>기술 암반·VK·스카이</td></tr>
+  </tbody>
+</table>
+<p><small>※ 스택·무게·에너지 리턴은 RunRepeat·Road Trail Run 등 전문 리뷰 및 공식 기준. 카본 트레일화는 랩 편차가 있어 실주행 감각과 함께 판단하세요.</small></p>
+
+<h2>테크톤 X 3 — 울트라 장거리 효율의 표준</h2>
+<p><a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>은 "울트라를 빠르게 완주"하려는 러너의 1순위 카본 트레일화입니다. 핵심은 <strong>100% PEBA 듀얼 폼 + 윙드 카본 플레이트(듀얼)</strong>로 만드는 <strong>~70% 에너지 리턴</strong>입니다. 50km·100km 같은 장거리에서 후반부 다리 피로를 확실히 덜어주죠. 여기에 <strong>Vibram Megagrip 4mm 러그</strong>로 그립도 상위권이라, 반발력과 접지력을 동시에 챙긴 드문 조합입니다. 니트 발목 게이터가 흙·잔돌 침입을 막아 장거리에서 신경 쓸 거리를 줄여줍니다.</p>
+<p>약점은 <strong>측면 힘이 실릴 때 어퍼가 늘어나 힐 고정력이 약한 것</strong>. 급경사 테크니컬 하산에서 발이 앞으로 밀릴 수 있어 끈을 단단히 조여야 합니다. 275g으로 카본 트레일화 중 무거운 축이고 339,000원의 가격도 부담이죠. 토박스는 73mm 표준이라 보통 발볼은 무난합니다.</p>
+<p><strong>✅ 이런 분께</strong> — 50km+ 울트라·장거리 트레일 레이스 / 반발·그립·내구의 균형을 원하는 러너 / 완만~중간 난이도 코스</p>
+
+<h2>울트라플라이 — 완만 코스 스피드 + 유일하게 넓은 토박스</h2>
+<p><a href="/shoes/nike-ultrafly">나이키 울트라플라이</a>는 나이키가 트레일에 <strong>ZoomX와 풀 카본 플레이트</strong>를 처음 얹은 레이서입니다. 로드의 베이퍼플라이 DNA를 트레일로 옮겨, <strong>완만한 비포장·파이어로드·그래블에서 로드 카본화 같은 추진력</strong>을 냅니다. 12mm 드롭이라 힐 착지 러너에게 편하고, 무엇보다 <strong>토박스가 76.7mm로 세 켤레 중 유일하게 넓어</strong> 발볼 넓은 한국 러너에게 드물게 우호적입니다.</p>
+<p>단, 이 신발의 전제는 <strong>"완만한 코스"</strong>입니다. 테크니컬 지형에서 어퍼 안정성이 부족하고, 토 범퍼가 약해 발가락 보호가 미흡하며, 급경사 하산·오프캠버에서 불안정합니다. 전족부 쿠션이 힐보다 현저히 낮아 전족 착지 시 보호가 적고요. <strong>Western States식 완만 그래블 울트라엔 강력하지만, 북한산·설악의 가파른 암반 코스엔 권하지 않습니다.</strong></p>
+<p><strong>✅ 이런 분께</strong> — 완만한 임도·그래블·파이어로드 레이스 / 발볼이 넓어 트레일화 선택이 어려웠던 러너 / 빠른 페이스·비테크니컬 울트라</p>
+
+<h2>S/LAB 펄사 4 — 급경사 기술 산악의 제어형 레이서</h2>
+<p><a href="/shoes/salomon-s-lab-pulsar-4">살로몬 S/LAB 펄사 4</a>는 살로몬 최상위 S/LAB 라인의 <strong>엘리트 기술 트레일 레이서</strong>입니다. 셋 중 유일하게 <strong>카본 플레이트가 없고</strong>, 대신 <strong>optiFOAM+ 듀얼 폼 + Matryx(아라미드) 어퍼 + Active Chassis</strong>로 승부합니다. <strong>247g 최경량</strong>에 급경사 암반에서도 발을 단단히 제어해(Road Trail Run 호평), <strong>20~80km 기술 트레일·VK(버티컬 킬로미터)·스카이러닝</strong>처럼 빠르고 험한 코스에 특화됐죠. 안정성·제어가 세 켤레 중 가장 뛰어나 <strong>한국 산악의 바위·급경사 코스에 가장 잘 맞습니다.</strong></p>
+<p>약점은 <strong>34만원 레이싱화치고 에너지 리턴이 47~57%로 낮고</strong>(카본이 없으니 직선 추진은 약함), 초기 런에서 <strong>폼 청킹(내구성) 우려</strong>가 보고됐으며 내구성이 350km로 짧습니다. 미드풋-토박스 경계 핀칭도 지적됩니다. "직선 속도"보다 "험지 제어와 경량"을 사는 신발입니다.</p>
+<p><strong>✅ 이런 분께</strong> — VK·스카이러닝·급경사 암반 기술 레이스 / 20~80km 기술 트레일 / 카본 없이 폼+경량 제어를 원하는 엘리트 러너</p>
+
+<h2>내 레이스엔 뭘 신을까</h2>
+<ul>
+  <li><strong>"50km+ 울트라를 빠르게 완주하고 싶다"</strong> → <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 70% 반발 + 그립 + 500km 내구의 균형이 장거리에 가장 안전합니다.</li>
+  <li><strong>"완만한 임도·그래블 위주 + 발볼이 넓다"</strong> → <a href="/shoes/nike-ultrafly">울트라플라이</a>. 넓은 토박스(76.7mm)와 ZoomX 추진력이 빛나지만, 코스가 험하면 피하세요.</li>
+  <li><strong>"북한산·설악 같은 급경사 기술 코스, VK·스카이러닝"</strong> → <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>. Active Chassis 제어와 247g 경량이 한국 산악 기술 코스에 최적입니다.</li>
+  <li><strong>"레이스보다 데일리 트레일 훈련용"</strong> → 카본 레이서는 과합니다. <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">데일리 트레일 3종(스피드고트·펄사·아그라빅)</a>을 보세요.</li>
+  <li><strong>"그립·안정이 최우선, 반발은 덜 중요"</strong> → 카본 없이도 충분합니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>나 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>가 더 안전하고 저렴합니다.</li>
+</ul>
+<p>기술 트레일·스카이레이스 입문이라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를, 카본 플레이트의 원리와 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>를 함께 보면 좋습니다.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 카본 트레일화가 로드 카본화만큼 빠른가요?</p>
+    <p class="faq-a">A. 노면이 다릅니다. 로드 카본화는 평탄한 노면에서 직선 추진을 극대화하지만, 트레일은 노면이 불규칙해 <strong>카본의 이점이 완만한 코스에서만 크게 나타납니다</strong>. 울트라플라이·테크톤은 완만할수록 유리하고, 급경사 기술 코스에선 오히려 <strong>제어·그립(S/LAB)</strong>이 더 중요합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 한국 산(북한산·관악산)에서 셋 중 뭐가 나을까요?</p>
+    <p class="faq-a">A. 한국 산은 화강암 바위·급경사가 많은 기술 지형이라 <strong>S/LAB 펄사 4</strong>가 제어·안정성에서 가장 잘 맞습니다. 울트라플라이는 완만 코스 전용이라 가파른 암반엔 부적합하고, 테크톤은 장거리엔 좋지만 급경사 하산에서 힐 고정이 약합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. S/LAB 펄사 4는 카본이 없는데 왜 이렇게 비싼가요?</p>
+    <p class="faq-a">A. 카본 대신 <strong>Matryx 아라미드 어퍼·Active Chassis·247g 경량화·optiFOAM+ 폼</strong> 같은 엘리트 소재와 구조에 값이 매겨진 S/LAB 프리미엄입니다. 직선 반발(에너지 리턴)은 카본 모델보다 낮지만, <strong>험지 제어와 경량</strong>이 강점이라 용도가 다릅니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 셋 다 괜찮나요?</p>
+    <p class="faq-a">A. 셋 다 와이드 옵션은 없지만, <strong>울트라플라이가 토박스 76.7mm로 유일하게 넓어</strong> 발볼 넓은 러너에게 가장 무난합니다. 테크톤(73mm)·S/LAB(74mm)은 표준이라, 발볼이 매우 넓다면 시착이 필수입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 각 모델 상세 페이지(테크톤 X 3·울트라플라이·S/LAB 펄사 4) 스펙 및 Road Trail Run·RunRepeat 리뷰 종합 · 한국 공식/발매가 기준 · 작성 2026년 7월 3일. 카본 트레일화는 랩 편차가 있어 실주행 감각과 함께 판단하세요.</small></p>
+`,
+  },
+  {
     id: 'running-foot-care-blisters-toenails-2026',
     slug: 'running-foot-care-blisters-toenails-2026',
     title: '러너의 여름 발 트러블 완전 가이드 | 물집·발톱 멍·무좀 — 왜 생기고 어떻게 막을까',
