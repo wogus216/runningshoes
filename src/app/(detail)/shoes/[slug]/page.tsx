@@ -14,6 +14,7 @@ import { ShoeDetailTabs } from '@/components/detail/shoe-detail-tabs';
 import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
+import { RelatedPosts } from '@/components/detail/related-posts';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -402,6 +403,9 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           format="auto"
           label="본문 하단 광고"
         />
+
+        {/* 관련 블로그(비교·후기) 회유 — relatedPosts 있을 때만 */}
+        <RelatedPosts posts={shoe.relatedPosts} />
 
         {/* PSEO 교차 링크 */}
         <ShoeCrossLinks shoe={shoe} />

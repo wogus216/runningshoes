@@ -58,6 +58,11 @@ export interface PurchaseLink {
   isOfficial?: boolean; // 공식 스토어 여부
 }
 
+export interface RelatedPost {
+  slug: string;        // 블로그 글 slug (/blog/{slug})
+  title: string;       // 표시용 짧은 제목 (링크 텍스트)
+}
+
 export interface ShoeSpecs {
   weight: number;       // g
   cushioning: number;   // 1-10
@@ -138,6 +143,9 @@ export interface Shoe {
 
   // 비슷한 신발
   similarShoes?: string[]; // shoe ids
+
+  // 관련 블로그 글(비교·후기) — 신발 상세에서 블로그로 회유(세션당 페이지뷰↑)
+  relatedPosts?: RelatedPost[];
 
   // 구매 링크
   purchaseLinks?: PurchaseLink[];

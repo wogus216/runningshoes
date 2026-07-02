@@ -390,6 +390,11 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v15', 'hoka-gaviota-6'],
+    relatedPosts: [
+      { slug: 'asics-gel-kayano-33-review', title: '아식스 젤 카야노 33 심층 후기' },
+      { slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026', title: '카야노 33 vs 글리세린 GTS 22 vs 860 v15 — 안정화 3강 비교' },
+      { slug: 'asics-kayano-32-vs-33-comparison', title: '카야노 32 vs 33 — 세대 비교' },
+    ],
   },
   {
     id: 'asics-superblast-2',
@@ -596,6 +601,10 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
+    relatedPosts: [
+      { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트 3 vs 에보 SL vs 마하 6 — 슈퍼트레이너 3파전' },
+      { slug: 'asics-superblast-2-vs-3-comparison', title: '슈퍼블라스트 2 vs 3 — 세대 비교' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5PWBjalA' }],
   },
   {
