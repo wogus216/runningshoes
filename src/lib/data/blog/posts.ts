@@ -3,6 +3,72 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: '2026-hyundai-forest-run-september',
+    slug: '2026-hyundai-forest-run-september',
+    title: '2026 포레스트런 9월 12일 확정 | 봄→가을로 옮긴 \'나무 심는 러닝\' 11회차 — 날짜 공개, 접수는 추후',
+    description: '현대자동차 포레스트런 2026이 9월 12일(토) 개최로 날짜를 공개했습니다. 그동안 봄(5월)에 열리던 대회가 올해는 가을로 이동했습니다. 참가자 1인당 나무 1그루를 심는 친환경 러닝 캠페인 11회차로, 접수일·종목·장소·참가비는 아직 미공개입니다. 확정된 날짜와 예년(2025) 기준 정보, 신청 준비 방법을 정리했습니다.',
+    thumbnail: '/images/blog/2026-hyundai-forest-run-september.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-03',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['포레스트런', '포레스트런 2026', '현대 포레스트런', '러닝 이벤트', '나무 심기', '친환경 러닝', '가을 러닝'],
+    content: `
+<div class="deadline-strip">🌳 현대 포레스트런 2026이 <strong>9월 12일(토) 개최</strong>로 날짜를 공개했습니다(공식 인스타그램 @hyundai_forestrun, 7/2). 예년 봄(5월) 대회가 올해는 <strong>가을로 이동</strong>했습니다. 접수일·종목·장소·참가비는 아직 미공개로, 공식 채널에서 순차 공개될 예정입니다.</div>
+
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 포레스트런은 9월 12일(토)</strong> — 참가자 1인당 나무 1그루를 심는 현대자동차 친환경 러닝 캠페인 <strong>11회차</strong>입니다</li>
+    <li>예년에는 <strong>봄(5월)</strong>에 열렸는데, 올해는 <strong>가을(9월)로 이동</strong>한 게 가장 큰 변화입니다</li>
+    <li><strong>접수일·종목·장소·참가비는 아직 미공개</strong> — 날짜부터 먼저 공개됐고, 세부는 공식 인스타·홈페이지에서 순차 발표됩니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌿</span>
+  <div class="callout-body">
+    <p class="callout-title">"함께 달려 나무를 심는" 포레스트런</p>
+    <p>포레스트런은 현대자동차가 2016년 시작한 <strong>롱기스트런(Longest Run)</strong>을 2025년 리브랜딩한 친환경 러닝 캠페인입니다. 슬로건 그대로 <strong>참가자 1인당 나무 1그루(1 Runner = 1 Tree)</strong>를 심고, 참가비 전액을 나무 식재에 기부하는 구조가 핵심이죠. 2025년에는 유엔세계식량계획(WFP)과 함께하는 '하프문 프로젝트'도 진행됐습니다.</p>
+  </div>
+</div>
+
+<h2>확정된 것 — 9월 12일(토), 봄에서 가을로</h2>
+<p>가장 중요한 뉴스는 <strong>개최일과 시즌 이동</strong>입니다. 포레스트런은 그동안 매년 봄(4~5월)에 열렸습니다. 실제로 <strong>2025년 대회는 5월 17일</strong>에 열렸죠. 그런데 2026년은 <strong>9월 12일 토요일</strong>로, 처음으로 가을에 개최됩니다. 무더위가 한풀 꺾이는 초가을이라 러닝 컨디션 면에서는 봄 대회보다 나을 수 있습니다(다만 9월 초는 잔더위가 남아 있으니 → <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a> 참고).</p>
+
+<h2>아직 미공개 — 접수·종목·장소·참가비</h2>
+<p>공식 인스타그램은 "100통 넘게 받은 질문에 날짜부터 공개한다"며 <strong>9월 12일이라는 날짜만 먼저 발표</strong>했습니다. 즉 다음 정보는 아직 나오지 않았습니다.</p>
+<ul>
+  <li><strong>접수 시작일·마감</strong> — 미공개 (2025년은 대회 약 한 달 전인 4월 18일 접수 오픈)</li>
+  <li><strong>종목·거리</strong> — 미공개 (2025년은 파이널런 10km 중심)</li>
+  <li><strong>장소</strong> — 미공개 (2025년은 서울 여의도공원~서강대교 코스)</li>
+  <li><strong>참가비</strong> — 미공개 (2025년은 3만원, 전액 나무 식재 기부)</li>
+</ul>
+
+<h2>예년(2025) 기준으로 미리 준비하기</h2>
+<p>2026 세부가 나오기 전까지는 직전 대회를 참고하면 됩니다. 아래는 <strong>2025년 기준</strong>이며, 2026에는 달라질 수 있습니다.</p>
+<table>
+  <thead><tr><th>항목</th><th>2025년 기준 (참고)</th></tr></thead>
+  <tbody>
+    <tr><td>구성</td><td>버추얼런(온라인) + 파이널런(오프라인) 2단계</td></tr>
+    <tr><td>파이널런 코스</td><td>여의도공원 → 서강대교 약 10km, 5,000명</td></tr>
+    <tr><td>참가비</td><td>30,000원 (전액 나무 식재 기부)</td></tr>
+    <tr><td>기념품</td><td>친환경 식물 원료 티셔츠 + 러닝캡</td></tr>
+    <tr><td>접수처</td><td>현대닷컴(hyundai.com) 공식 페이지</td></tr>
+  </tbody>
+</table>
+<p>선착순 접수라 인기 대회는 빠르게 마감되니, 참가를 원한다면 <strong>공식 인스타그램(@hyundai_forestrun)과 현대닷컴 알림을 켜두고</strong> 접수 발표를 기다리는 게 안전합니다. 9월 대회면 <strong>여름 동안 훈련</strong>해 10km를 준비하기 좋은 일정이기도 합니다.</p>
+
+<h2>9월 대회, 여름 훈련용 신발은?</h2>
+<p>포레스트런은 예년 기준 <strong>10km 중심</strong>이라, 9월 대회를 준비하려면 여름 동안 굴릴 <strong>데일리 러닝화</strong> 한 켤레가 필요합니다. 입문 가성비는 <a href="/shoes/nike-pegasus-42">페가수스 42</a>, 통통 튀는 반발은 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>, 무릎 보호 맥스쿠션은 <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>가 대표적입니다. 셋을 비교하려면 <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 젤 님버스 28</a>을, 내 발에 맞는 추천은 <a href="/recommend">1분 추천</a>을 받아보세요. 무더위 훈련은 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>도 참고하면 좋습니다.</p>
+
+<h2>마무리</h2>
+<p>2026 포레스트런은 <strong>9월 12일(토), 나무를 심으며 달리는 11회차</strong>로 돌아옵니다. 아직 날짜만 공개된 초기 단계라, 접수·종목·장소·참가비가 확정되면 이 글을 업데이트하겠습니다. 다른 가을 러닝 일정과 함께 계획하려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+
+<p><small>※ 개최일(9/12)은 공식 인스타그램 @hyundai_forestrun 2026-07-02 게시 기준이며, 접수·종목·장소·참가비 등 세부는 미공개 상태입니다. 예년 정보는 2025년 대회 기준 참고치로 2026에는 변경될 수 있습니다. 신청 전 현대닷컴(hyundai.com)과 공식 인스타를 반드시 확인하세요. (작성 2026-07-03)</small></p>
+`,
+  },
+  {
     id: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
     slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
     title: '페가수스 42 vs 젤 님버스 28 | 16만 입문 가성비 vs 20만 맥스쿠션 — 데일리 뭘 살까',
