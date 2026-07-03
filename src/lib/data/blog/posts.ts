@@ -3,6 +3,98 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
+    slug: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
+    title: '노바블라스트 5 vs 페가수스 41 | 데일리 쿠션 양대 스테디셀러 — 재미냐 안정이냐, 첫 러닝화 뭘 살까',
+    description: '한국에서 가장 많이 팔리는 15~17만원대 데일리 쿠션화 두 켤레를 정면 비교했습니다. 아식스 노바블라스트 5(FF Blast MAX·41mm 고스택·바운시한 재미)와 나이키 페가수스 41(ReactX·11mm 하이드롭·검증된 안정). 같은 "가성비 데일리"지만 통통 튀는 반발이냐, 부드럽고 안정적인 무난함이냐로 갈립니다. 첫 러닝화·힐착지·평발·발볼까지 한국 러너 기준으로 내게 맞는 한 켤레를 골라드립니다.',
+    thumbnail: '/images/blog/novablast-5-vs-pegasus-41-daily-cushion-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-03',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['노바블라스트 5', '페가수스 41', '데일리 러닝화', '입문 러닝화', '가성비 러닝화', '첫 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 15~17만원 검증된 데일리 스테디셀러지만 성격이 정반대</strong> — 노바블라스트 5는 통통 튀는 바운시 재미, 페가수스 41은 부드럽고 안정적인 무난함입니다</li>
+    <li><strong>달리는 재미·반발·경량 → 노바블라스트 5</strong>(41mm 고스택·255g), <strong>안정·검증·첫 러닝화 → 페가수스 41</strong>(11mm 하이드롭·안정성 우위·부상예방 최상)</li>
+    <li>평발·뒤꿈치 착지·발볼 매우 넓음이면 <strong>페가수스 41</strong>(X-와이드까지·평발 good), 미드풋 성향·통기 여름은 취향에 따라 갈립니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>"첫 러닝화, 무난하고 안전하게"면 <strong>페가수스 41</strong>(입문 부동의 1위·안정·부상예방 최상), "이왕이면 달리는 재미와 반발"이면 <strong>노바블라스트 5</strong>입니다. 둘 다 후속(페가수스 42·노바블라스트 6)이 나와 <strong>할인가로 노리기 좋은 시점</strong>이죠. 러닝이 처음이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>부터 보면 선택이 쉬워집니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>노바블라스트 5</th><th>페가수스 41</th></tr></thead>
+  <tbody>
+    <tr><td>브랜드 / 카테고리</td><td>아식스 / 데일리</td><td>나이키 / 입문</td></tr>
+    <tr><td>한국 가격</td><td>169,000원</td><td>159,000원</td></tr>
+    <tr><td><strong>무게(US 9)</strong></td><td><strong>255g(경량)</strong></td><td>281g</td></tr>
+    <tr><td>힐 스택</td><td><strong>41mm(고스택)</strong></td><td>34mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td><strong>11mm(하이드롭)</strong></td></tr>
+    <tr><td>미드솔</td><td>FF Blast MAX</td><td>ReactX</td></tr>
+    <tr><td>쿠션 / 반발</td><td>바운시·통통 튐</td><td>부드럽고 묵직</td></tr>
+    <tr><td>안정성</td><td>중(6)</td><td><strong>높음(8)</strong></td></tr>
+    <tr><td>착지 성향</td><td>미드풋~힐</td><td><strong>뒤꿈치(11mm)</strong></td></tr>
+    <tr><td>평발 적합</td><td>보통</td><td><strong>양호(부상예방 최상)</strong></td></tr>
+    <tr><td>발볼 옵션</td><td>표준 + 와이드</td><td><strong>표준 + 와이드 + X-와이드</strong></td></tr>
+    <tr><td>내구성 / km당</td><td>600km / 282원</td><td>550km / 289원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택은 RunRepeat 실측 및 공식 기준. 두 모델 모두 후속(노바블라스트 6·페가수스 42)이 출시돼 현재는 할인 재고를 노리기 좋습니다.</small></p>
+
+<h2>노바블라스트 5 — 통통 튀는 "달리는 재미"</h2>
+<p><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a>는 "러닝이 재밌어지는 신발"로 통합니다. <strong>FF Blast MAX 폼 + 41mm 고스택</strong>이 만드는 통통 튀는 바운시 라이드가 핵심이죠. 255g으로 페가수스 41보다 <strong>16g 가볍고</strong>, 조깅(6분/km)부터 템포런(4분30초/km)까지 폭넓게 즐겁게 굴러갑니다. 600km 내구성에 km당 282원으로 가성비도 훌륭하고, 와이드 옵션도 있습니다.</p>
+<p>약점은 <strong>안정성(6)</strong>과 <strong>여름 통기성</strong>입니다. 고스택 바운시라 과내전·평발 러너는 15km 이상에서 아치가 무너지는 느낌을 받을 수 있고(평발은 GT-2000·카야노 권장), 어퍼 통기성이 좋지 않아 한여름엔 덥습니다. "안정보다 반발과 재미"를 원하는 중립 발 러너에게 빛납니다.</p>
+<p><strong>✅ 이런 분께</strong> — 달리는 재미·반발을 원하는 러너 / 가벼운 데일리 / 미드풋~힐 착지 / 중립 발</p>
+
+<h2>페가수스 41 — 부드럽고 안정적인 "검증된 입문 1위"</h2>
+<p><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a>은 "초보도 신을 수 있나요?"에 가장 자신 있게 추천되는 입문 부동의 1위입니다. <strong>ReactX 폼 + 11mm 하이드롭</strong>으로 부드럽고 안정적인 라이드를 내며, 안정성(8)이 높아 입문자가 쉽게 적응합니다. 특히 <strong>부상 예방 등급이 최상위</strong>(족저근막염·아킬레스·신스플린트 excellent)이고, <strong>X-와이드까지</strong> 있어 발볼 매우 넓은 한국 러너도 대응됩니다. 평발 적합성도 노바5보다 낫습니다.</p>
+<p>대신 <strong>281g으로 더 무겁고</strong>, 반발·재미는 노바5만큼 통통 튀지 않습니다. 11mm 하이드롭이라 <strong>뒤꿈치 착지 러너에게 최적</strong>이고, 미드풋 착지 성향이면 다소 어색할 수 있습니다. "무난하고 안전하게, 오래 신는 데일리"를 원할 때 가장 실패 없는 선택입니다.</p>
+<p><strong>✅ 이런 분께</strong> — 첫 러닝화·안정 우선 / 평발·부상 이력 / 뒤꿈치 착지 / 발볼 매우 넓음(X-와이드)</p>
+
+<h2>내게 맞는 건?</h2>
+<ul>
+  <li><strong>"러닝이 처음, 무난하고 안전하게"</strong> → <a href="/shoes/nike-pegasus-41">페가수스 41</a>. 안정·부상예방·검증에서 가장 실패 없습니다.</li>
+  <li><strong>"이왕이면 달리는 재미와 반발"</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a>. 바운시함과 경량이 즐겁습니다.</li>
+  <li><strong>"평발이거나 발볼이 매우 넓다"</strong> → 페가수스 41(평발 양호·X-와이드). 노바5는 중립 발에 맞습니다.</li>
+  <li><strong>"뒤꿈치로 착지한다"</strong> → 페가수스 41(11mm 하이드롭). 미드풋 성향이면 노바5(8mm).</li>
+  <li><strong>"최신 버전이 낫지 않나?"</strong> → 후속인 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 42</a>·<a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6</a>도 있지만, 41·5는 검증된 스테디셀러라 <strong>할인가면 가성비가 더 좋습니다</strong>.</li>
+</ul>
+<p>사이즈가 헷갈리면 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>를, 발볼이 넓어 고민이면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 첫 러닝화로 둘 중 뭐가 나을까요?</p>
+    <p class="faq-a">A. 안정과 검증을 우선하면 <strong>페가수스 41</strong>이 무난합니다(입문 1위·부상예방 최상). 다만 "달리는 재미"가 초반 동기부여에 크다면 <strong>노바블라스트 5</strong>도 좋은 첫 신발입니다. 평발·부상 이력이 있으면 페가수스 쪽이 안전합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 무릎이 걱정되는데 어떤 게 좋나요?</p>
+    <p class="faq-a">A. 둘 다 충격 흡수가 좋지만, <strong>부상 예방 등급과 안정성은 페가수스 41이 우위</strong>입니다. 다만 페가수스는 무릎 항목이 '주의'로 분류되니, 무릎 통증 이력이 심하면 더 부드러운 맥스쿠션(본디·님버스)도 함께 검토하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 둘 다 괜찮나요?</p>
+    <p class="faq-a">A. 둘 다 와이드 옵션이 있어 대응됩니다. 특히 <strong>페가수스 41은 X-와이드까지</strong> 있어 발볼이 매우 넓은 러너에게 유리합니다. 노바블라스트 5도 와이드가 있어 보통~넓은 발은 무난합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 여름에 신기 좋은 건?</p>
+    <p class="faq-a">A. 노바블라스트 5는 어퍼 통기성이 아쉬워 한여름엔 다소 덥습니다. 통기성을 중시한다면 두 모델 모두 최적은 아니며, <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>를 따로 보는 걸 권합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 노바블라스트 5·페가수스 41 상세 페이지 스펙 및 RunRepeat 실측·에디터 분석 종합 · 한국 공식가 기준 · 작성 2026년 7월 3일.</small></p>
+`,
+  },
+  {
     id: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     title: '템포 트레이너 3파전 | 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5 — 훈련·레이스 겸용, 뭘 신지',

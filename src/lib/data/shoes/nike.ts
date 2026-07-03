@@ -113,6 +113,11 @@ export const nikeShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-pegasus-42', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
+    relatedPosts: [
+      { slug: 'novablast-5-vs-pegasus-41-daily-cushion-2026', title: '노바블라스트 5 vs 페가수스 41 — 데일리 쿠션 대결' },
+      { slug: 'nike-pegasus-41-vs-42-comparison', title: '페가수스 41 vs 42 — 세대 비교' },
+      { slug: 'first-running-shoe-guide-2026', title: '첫 러닝화 완벽 가이드' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FxCvSGHY' }],
   },
   {

@@ -197,6 +197,7 @@ export const asicsShoes: Shoe[] = [
     ],
     similarShoes: ['nike-pegasus-41', 'new-balance-rebel-v5', 'hoka-mach-x-3'],
     relatedPosts: [
+      { slug: 'novablast-5-vs-pegasus-41-daily-cushion-2026', title: '노바블라스트 5 vs 페가수스 41 — 데일리 쿠션 대결' },
       { slug: 'asics-novablast-6-preview-2026', title: '노바블라스트 6 미리보기 — 5와 뭐가 다른가' },
       { slug: 'asics-novablast-6-vs-hoka-clifton-pro-2026', title: '노바블라스트 6 vs 클리프톤 프로' },
       { slug: 'asics-running-shoes-lineup-tier-guide-2026', title: '아식스 러닝화 계급도' },
