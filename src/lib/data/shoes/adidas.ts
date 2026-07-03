@@ -402,6 +402,7 @@ export const adidasShoes: Shoe[] = [
     ],
     similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5'],
     relatedPosts: [
+      { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
       { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너' },
       { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
     ],
@@ -703,6 +704,10 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-metafuji-trail', 'hoka-tecton-x-3'],
+    relatedPosts: [
+      { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },
+      { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FkarcfZr' }],
   },
   {

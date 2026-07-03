@@ -1161,6 +1161,10 @@ export const nikeShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5', 'asics-superblast-3'],
+    relatedPosts: [
+      { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
+      { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GEi1eJdf' }],
   },
   {
@@ -1449,6 +1453,10 @@ export const nikeShoes: Shoe[] = [
       },
     ],
     similarShoes: ['hoka-tecton-x-3', 'asics-metafuji-trail'],
+    relatedPosts: [
+      { slug: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026', title: '카본 트레일 레이서 3파전 — 테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사 4' },
+      { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5jXn3l3X' }],
   },
 ];

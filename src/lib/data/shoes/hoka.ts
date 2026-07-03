@@ -916,6 +916,10 @@ export const hokaShoes: Shoe[] = [
       },
     ],
     similarShoes: ['asics-metafuji-trail', 'nike-ultrafly'],
+    relatedPosts: [
+      { slug: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026', title: '카본 트레일 레이서 3파전 — 테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사 4' },
+      { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
+    ],
   },
   {
     id: 'hoka-speedgoat-6',
@@ -999,5 +1003,9 @@ export const hokaShoes: Shoe[] = [
       },
     ],
     similarShoes: ['adidas-terrex-agravic-4', 'asics-metafuji-trail'],
+    relatedPosts: [
+      { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },
+      { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
+    ],
   },
 ];
