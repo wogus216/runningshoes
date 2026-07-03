@@ -108,12 +108,21 @@ async function main() {
       { name: 'newUsers' },
       { name: 'screenPageViews' },
       { name: 'averageSessionDuration' },
+      { name: 'sessions' },
+      { name: 'screenPageViewsPerSession' },
+      { name: 'engagementRate' },
+      { name: 'bounceRate' },
     ],
   });
   const m = tot.rows?.[0].metricValues ?? [];
+  const num = (i: number) => Number(m[i]?.value ?? 0);
   console.log('\n━━━ 요약 ━━━');
   console.log(
-    `활성 ${m[0]?.value} · 신규 ${m[1]?.value} · 조회수 ${m[2]?.value} · 평균세션 ${Math.round(Number(m[3]?.value ?? 0))}초`
+    `활성 ${m[0]?.value} · 신규 ${m[1]?.value} · 세션 ${Math.round(num(4))} · 조회수 ${m[2]?.value}`
+  );
+  // 탐색 깊이 — 방문자가 여러 글을 도는지(회유 효과) 상시 추적. 세션당 페이지뷰↑ = RPM 직결
+  console.log(
+    `▶ 탐색: 세션당 ${num(5).toFixed(2)}페이지 · 참여율 ${(num(6) * 100).toFixed(1)}% · 이탈률 ${(num(7) * 100).toFixed(1)}% · 평균체류 ${Math.round(num(3))}초`
   );
   console.log('');
 }
