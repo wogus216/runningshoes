@@ -3,6 +3,97 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
+    slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
+    title: '페가수스 42 vs 젤 님버스 28 | 16만 입문 가성비 vs 20만 맥스쿠션 — 데일리 뭘 살까',
+    description: '한국에서 가장 많이 찾는 데일리 러닝화 두 켤레를 정면 비교했습니다. 나이키 페가수스 42(16.9만·풀렝스 Air Zoom·입문 올라운더)와 아식스 젤 님버스 28(19.9만·43.5mm 맥시멀 쿠션·무릎 보호 최강). 3만원 차이지만 입문 가성비냐, 맥스쿠션·장거리·무릎 보호냐로 갈립니다. 무릎·발볼·거리·체중별로 내게 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
+    thumbnail: '/images/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-03',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['페가수스 42', '젤 님버스 28', '데일리 러닝화', '맥스쿠션', '입문 러닝화', '무릎 보호'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>3만원 차이지만 성격이 다릅니다</strong> — 페가수스 42는 16만원대 입문 올라운더, 젤 님버스 28은 20만원대 맥시멀 쿠션(43.5mm 고스택)입니다</li>
+    <li><strong>가성비·입문 첫 데일리 → 페가수스 42</strong>(Air Zoom 반발·5~13km), <strong>무릎 보호·장거리·리커버리 → 님버스 28</strong>(맥스쿠션·부상예방 전 항목 최상)</li>
+    <li>발볼 매우 넓음이면 둘 다 와이드가 있지만 <strong>님버스는 X-와이드까지</strong>, 무릎이 약하거나 체중이 있으면 님버스의 43.5mm 쿠션이 유리합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·43.5mm 맥스쿠션)입니다. 페가42의 실착 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>페가수스 42</th><th>젤 님버스 28</th></tr></thead>
+  <tbody>
+    <tr><td>브랜드 / 카테고리</td><td>나이키 / 입문</td><td>아식스 / 맥스쿠션</td></tr>
+    <tr><td><strong>한국 가격</strong></td><td><strong>169,000원</strong></td><td>199,000원</td></tr>
+    <tr><td>무게(US 9)</td><td>286g</td><td>281g</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td><strong>43.5mm(맥시멀)</strong></td></tr>
+    <tr><td>드롭</td><td>10mm</td><td>8mm</td></tr>
+    <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF BLAST PLUS</td></tr>
+    <tr><td>쿠션 / 반발</td><td>중상 / Air Zoom 반발</td><td><strong>최상(10) / 둔함</strong></td></tr>
+    <tr><td><strong>무릎 보호</strong></td><td>양호</td><td><strong>최상(전 부상항목 excellent)</strong></td></tr>
+    <tr><td>발볼 옵션</td><td>표준 + 와이드</td><td><strong>표준 + 와이드 + X-와이드</strong></td></tr>
+    <tr><td>내구성 / km당</td><td>600km / 282원</td><td>650km / 306원</td></tr>
+    <tr><td>대표 용도</td><td>입문 데일리 5~13km</td><td>장거리·리커버리·무릎 보호</td></tr>
+  </tbody>
+</table>
+<p><small>※ 무게·스택은 RunRepeat 실측 및 공식 기준. 페가수스 42는 공식/실측 전족부 5mm 불일치가 있어 상세는 <a href="/blog/nike-pegasus-42-review">페가 42 후기</a> 참고.</small></p>
+
+<h2>페가수스 42 — 16만원대 입문 데일리 올라운더</h2>
+<p><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>는 "첫 러닝화, 무난하게"에 가장 자주 추천되는 입문 데일리입니다. <strong>ReactX 폼 + 풀렝스 Air Zoom</strong>으로 41 대비 힐 쿠셔닝(+2.4mm)과 반발이 개선됐고, 169,000원에 <strong>한국 와이드 옵션이 정식 출시</strong>돼 발볼 넓은 러너도 대응됩니다. 5~13km 데일리에서 반발감 있는 라이드가 강점이죠.</p>
+<p>단, BITR이 "6~13km 스윗스팟의 원 트릭 포니"로 평했듯 <strong>하프 이상 롱런·페이스 훈련엔 286g 무게가 부담</strong>입니다. 무릎 보호는 '양호'로, 님버스만큼 두꺼운 쿠션은 아닙니다. "가성비 좋은 만능 데일리 한 켤레"를 원할 때 가장 실패 없는 선택입니다.</p>
+<p><strong>✅ 이런 분께</strong> — 첫 데일리·가성비 우선 / 5~13km 조깅~템포 / 반발감 있는 라이드 / 예산 16만원대</p>
+
+<h2>젤 님버스 28 — 43.5mm 맥스쿠션, 무릎 보호 최강</h2>
+<p><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>은 "매주 많이 뛰는데 무릎이 아프다"는 러너에게 먼저 권하는 맥시멀 쿠션화입니다. <strong>43.5mm 고스택 + FF BLAST PLUS 폼</strong>이 아스팔트 충격을 강하게 흡수해, <strong>부상 예방 등급이 무릎 포함 전 항목 최상(excellent)</strong>입니다. 전작보다 20g 가벼워진 281g에 <strong>X-와이드까지</strong> 있어 발볼 넓은 러너 선택지도 가장 넓고, 650km 내구성으로 장거리·리커버리·워킹까지 폭넓게 씁니다.</p>
+<p>대신 <strong>반응성이 낮아(5) 빠른 페이스엔 둔하고</strong>, 20만원으로 페가42보다 3만원 비쌉니다. 안정화는 아니라 과내전이 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>이 낫습니다. "속도보다 푹신함·무릎 보호·장거리"가 목적일 때 빛납니다.</p>
+<p><strong>✅ 이런 분께</strong> — 무릎이 약하거나 체중이 있는 러너 / 장거리 LSD·리커버리 / 맥스쿠션 선호 / 발볼 매우 넓음(X-와이드)</p>
+
+<h2>내게 맞는 건?</h2>
+<ul>
+  <li><strong>"첫 데일리, 가성비 좋게 한 켤레"</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 16.9만원에 만능, 반발감도 있습니다.</li>
+  <li><strong>"무릎이 약하다 / 체중이 있다"</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>. 43.5mm 맥스쿠션 + 무릎 보호 최상이 안심입니다. 무릎 통증 관리는 <a href="/blog/knee-pain-running-shoes">러너 무릎 통증 가이드</a>도 참고하세요.</li>
+  <li><strong>"장거리 LSD·리커버리 위주"</strong> → 님버스 28. 페가42는 5~13km 스윗스팟이라 하프 이상엔 부담입니다.</li>
+  <li><strong>"발볼이 매우 넓다"</strong> → 둘 다 와이드가 있지만 님버스가 X-와이드까지 있어 폭이 넓습니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 가이드</a> 참고.</li>
+  <li><strong>"반발감 있게 경쾌하게"</strong> → 페가수스 42(Air Zoom). 님버스는 푹신하지만 둔한 편입니다.</li>
+</ul>
+<p>러닝이 처음이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>부터 보면 선택이 쉬워집니다.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 뭐가 나을까요?</p>
+    <p class="faq-a">A. <strong>님버스 28</strong>입니다. 43.5mm 맥시멀 쿠션에 부상 예방 등급이 무릎 포함 전 항목 최상(excellent)이라 충격 흡수가 확실합니다. 페가42도 나쁘지 않지만(양호), 무릎이 걱정된다면 더 두꺼운 님버스가 안심입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 3만원 더 주고 님버스를 살 가치가 있나요?</p>
+    <p class="faq-a">A. <strong>용도에 따라 다릅니다.</strong> 5~13km 가벼운 데일리면 페가42로 충분하고, 무릎 보호·장거리·리커버리가 중요하면 님버스의 맥스쿠션이 3만원 값을 합니다. 반발감·경쾌함을 원하면 오히려 페가42가 낫고요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 둘 다 괜찮나요?</p>
+    <p class="faq-a">A. 둘 다 와이드가 있어 대응됩니다. 특히 <strong>님버스 28은 X-와이드까지</strong> 있어 발볼이 매우 넓은 러너에게 유리합니다. 페가42도 한국 와이드가 정식 출시돼 4E급까지 커버됩니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 다 하프마라톤 뛸 수 있나요?</p>
+    <p class="faq-a">A. 완주는 가능하지만, <strong>페가42는 5~13km 스윗스팟</strong>이라 하프 이상엔 무게가 부담됩니다. 님버스 28은 맥스쿠션이라 장거리 완주에는 더 유리하지만 둘 다 레이싱화는 아닙니다. PB가 목표면 카본 레이서를 따로 두세요.</p>
+  </div>
+</div>
+
+<p><small>출처: 페가수스 42·젤 님버스 28 상세 페이지 스펙 및 RunRepeat 실측·에디터 분석 종합 · 한국 공식가 기준 · 작성 2026년 7월 3일.</small></p>
+`,
+  },
+  {
     id: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
     slug: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
     title: '노바블라스트 5 vs 페가수스 41 | 데일리 쿠션 양대 스테디셀러 — 재미냐 안정이냐, 첫 러닝화 뭘 살까',
@@ -22174,6 +22265,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-42-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-07',
+    updatedAt: '2026-07-03',
     category: 'review' as const,
     readingTime: 11,
     tags: ['나이키 페가수스 42', '페가수스 42', '러닝화 리뷰', '입문 데일리 트레이너', '나이키 러닝화', '페가수스 41 비교', '풀 렝스 Air Zoom', '와이드 러닝화', '한국 발볼'],
@@ -22450,6 +22542,8 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <p>가성비 자체는 셋 다 비슷하지만, <strong>한국 러너 평균 발볼(D~2E)을 고려하면 페가수스 42의 와이드 SKU 정식 출시가 결정적인 가산점</strong>입니다.</p>
+
+<p><strong>한 단계 위 — 20만원대 맥스쿠션과 비교</strong>하고 싶다면 <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 젤 님버스 28</a>을 참고하세요. 무릎 보호·장거리 리커버리에 43.5mm 맥시멀 쿠션이 정말 필요한지 갈립니다. 참고로 페가 42는 어퍼 통기성이 표준 수준이라 한여름 무더위엔 다소 덥습니다 — 통기성을 우선한다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>도 함께 검토하세요.</p>
 
 <h2>전문가 평가 — BITR vs RTR</h2>
 

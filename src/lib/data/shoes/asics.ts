@@ -94,6 +94,10 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['new-balance-1080-v14', 'hoka-clifton-10', 'brooks-glycerin-22'],
+    relatedPosts: [
+      { slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026', title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결' },
+      { slug: 'asics-running-shoes-lineup-tier-guide-2026', title: '아식스 러닝화 계급도' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FzsydpCq' }],
   },
   {
