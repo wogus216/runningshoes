@@ -816,6 +816,9 @@ export const brooksShoes: Shoe[] = [
     ],
 
     similarShoes: ['hoka-bondi-9', 'brooks-glycerin-max', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+    relatedPosts: [
+      { slug: 'bondi-9-vs-glycerin-max-2-cushion-2026', title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결' },
+    ],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GM36EYXT' }],
   },
 ];
