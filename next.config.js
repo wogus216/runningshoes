@@ -30,6 +30,17 @@ const nextConfig = {
   async headers() {
     return [
       {
+        // 정적 이미지: Vercel 엣지·브라우저가 장기 캐시하도록 하여
+        // 오리진 재전송(Fast Origin Transfer) 절감. 이미지는 사실상 불변 자산.
+        source: '/images/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
         source: '/(.*)',
         headers: [
           {
