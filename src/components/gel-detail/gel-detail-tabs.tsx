@@ -12,6 +12,7 @@ import { UsageGuide } from './usage-guide';
 import { DollarSign, Star, TrendingDown } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { img } from '@/lib/image';
 
 type GelDetailTabsProps = {
   gel: Gel;
@@ -266,7 +267,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                 {similarGel.image ? (
                   <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
                     <Image
-                      src={similarGel.image}
+                      src={img(similarGel.image)}
                       alt={`${similarGel.brand} ${similarGel.name}`}
                       width={200}
                       height={200}

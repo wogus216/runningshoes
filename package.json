@@ -14,6 +14,7 @@
     "images": "node scripts/process-images.js",
     "generate:blog": "tsx scripts/generate-blog-post.ts",
     "ga": "tsx scripts/ga-report.ts",
+    "purge": "node scripts/purge-jsdelivr.mjs",
     "postbuild": "next-sitemap",
     "prepare": "husky"
   },

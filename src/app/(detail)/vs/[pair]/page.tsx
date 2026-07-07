@@ -5,6 +5,7 @@ import { notFound } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
 import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from '@/lib/pseo/pairs';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 
 type PageProps = { params: Promise<{ pair: string }> };
@@ -230,7 +231,7 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
       <div className="text-xs font-semibold text-accent uppercase tracking-wide">{label}</div>
       {shoe.image && (
         <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-lg">
-          <Image src={shoe.image} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
+          <Image src={img(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
         </Link>
       )}
       <div>

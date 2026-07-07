@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Heart, Trash2, Scale } from 'lucide-react';
 import { useSavedShoes, removeSavedShoe } from '@/lib/saved-shoes';
+import { img } from '@/lib/image';
 
 type MinimalShoe = {
   slug: string;
@@ -85,7 +86,7 @@ export function SavedShoesList({ allShoes }: Props) {
                 className="relative w-20 h-20 shrink-0 bg-surface rounded-lg"
               >
                 <Image
-                  src={shoe.image}
+                  src={img(shoe.image)}
                   alt={`${shoe.brand} ${shoe.name}`}
                   fill
                   sizes="80px"

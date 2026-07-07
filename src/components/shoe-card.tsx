@@ -7,6 +7,7 @@ import { TrendingUp, Snowflake, Zap, Check, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
+import { img } from "@/lib/image";
 import type { Shoe } from "@/types/shoe";
 
 type ShoeCardProps = {
@@ -119,7 +120,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
 
         {shoe.image ? (
           <Image
-            src={shoe.image}
+            src={img(shoe.image)}
             alt={`${shoe.brand} ${shoe.name}`}
             width={300}
             height={300}

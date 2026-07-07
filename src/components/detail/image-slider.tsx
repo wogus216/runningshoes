@@ -4,6 +4,7 @@ import { useState, useEffect, useCallback, TouchEvent } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { img } from '@/lib/image';
 
 type ImageSliderProps = {
   images?: string[];
@@ -87,7 +88,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
     return (
       <div className="relative aspect-square overflow-hidden rounded-[30px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]">
         <Image
-          src={images[0]}
+          src={img(images[0])}
           alt={alt}
           fill
           sizes="(max-width: 768px) 100vw, 50vw"
@@ -115,7 +116,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
         {images.map((image, index) => (
           <div key={index} className="min-w-full h-full relative">
             <Image
-              src={image}
+              src={img(image)}
               alt={`${alt} - ${index + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, 50vw"

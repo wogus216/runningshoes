@@ -4,6 +4,7 @@ import type { Gel } from "@/types/gel";
 import { Star, Zap, Droplets, Coffee, ExternalLink } from "lucide-react";
 import Image from "next/image";
 import { AffiliateDisclosure } from '@/components/detail/affiliate-disclosure';
+import { img } from '@/lib/image';
 
 type HeroSectionProps = {
   gel: Gel;
@@ -58,7 +59,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
         <div className="flex items-center justify-center rounded-2xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
           {gel.image ? (
             <Image
-              src={gel.image}
+              src={img(gel.image)}
               alt={`${gel.brand} ${gel.name}`}
               width={400}
               height={400}

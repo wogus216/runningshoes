@@ -147,6 +147,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko" suppressHydrationWarning>
       <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
+        {/* 이미지 CDN(jsDelivr) 사용 시 LCP 방어용 preconnect (React 19가 head로 hoist) */}
+        {process.env.NEXT_PUBLIC_IMAGE_CDN && (
+          <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        )}
         {/* GA4 */}
         {GA_MEASUREMENT_ID && (
           <>

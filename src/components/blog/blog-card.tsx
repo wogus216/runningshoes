@@ -2,6 +2,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BlogPost, categoryLabels } from '@/types/blog';
 import { getPostThumbnail } from '@/lib/data/blog';
+import { img } from '@/lib/image';
 
 interface BlogCardProps {
   post: BlogPost;
@@ -23,7 +24,7 @@ export function BlogCard({ post }: BlogCardProps) {
           <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
             <div className="absolute inset-x-0 top-0 z-10 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_58%,#f97316_100%)]" />
             <Image
-              src={thumbnail}
+              src={img(thumbnail)}
               alt={post.title}
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1280px) 50vw, 33vw"

@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { getGels, groupGelsByCategory } from '@/lib/data/gels';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { gelCategoryOrder } from '@/types/gel';
+import { img } from '@/lib/image';
 
 export const metadata: Metadata = {
   title: `에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석 - ${SITE_NAME}`,
@@ -92,7 +93,7 @@ export default function GelsPage() {
                   <div className="aspect-square bg-surface rounded-lg mb-3 flex items-center justify-center overflow-hidden">
                     {gel.image ? (
                       <Image
-                        src={gel.image}
+                        src={img(gel.image)}
                         alt={gel.name}
                         width={200}
                         height={200}

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import type { Brand } from '@/types/brand';
 import type { Shoe } from '@/types/shoe';
 import { ArrowRight } from 'lucide-react';
+import { img } from '@/lib/image';
 
 type RelatedShoesSectionProps = {
   brand: Brand;
@@ -37,7 +38,7 @@ export function RelatedShoesSection({ brand, shoes }: RelatedShoesSectionProps) 
             <div className="relative aspect-square mb-2 bg-white rounded-lg overflow-hidden">
               {shoe.image ? (
                 <Image
-                  src={shoe.image}
+                  src={img(shoe.image)}
                   alt={`${shoe.brand} ${shoe.name}`}
                   fill
                   className="object-contain p-2 group-hover:scale-105 transition-transform"

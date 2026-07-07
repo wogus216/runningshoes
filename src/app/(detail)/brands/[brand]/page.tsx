@@ -11,6 +11,7 @@ import { shoes as allShoes } from '@/lib/data/shoes';
 import { isCompleteShoe } from '@/types/shoe';
 import { categoryOrder } from '@/lib/data/shoes';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 
 type PageProps = {
@@ -207,7 +208,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
                     className="flex-shrink-0 w-20 h-20 relative bg-surface rounded"
                   >
                     <Image
-                      src={shoe.image}
+                      src={img(shoe.image)}
                       alt={`${shoe.brand} ${shoe.name}`}
                       fill
                       sizes="80px"

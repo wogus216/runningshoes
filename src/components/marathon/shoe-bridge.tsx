@@ -4,6 +4,7 @@ import { Footprints, Zap, ArrowRight } from 'lucide-react';
 import { getCardShoes, type CardShoe } from '@/lib/data/shoes';
 import { getGels } from '@/lib/data/gels';
 import type { Gel } from '@/types/gel';
+import { img } from '@/lib/image';
 
 type ShoeBridgeProps = {
   distances: string[];
@@ -123,7 +124,7 @@ export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
             >
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-lg bg-white">
                 <Image
-                  src={s.image as string}
+                  src={img(s.image as string)}
                   alt={`${s.brand} ${s.name}`}
                   fill
                   sizes="64px"
@@ -164,7 +165,7 @@ export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
                 >
                   <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-lg bg-white">
                     <Image
-                      src={g.image as string}
+                      src={img(g.image as string)}
                       alt={`${g.brand} ${g.name}`}
                       fill
                       sizes="56px"

@@ -8,6 +8,7 @@ import type { Shoe } from '@/types/shoe';
 import { categoryColorClasses } from '@/types/brand';
 import { TechnologyCard } from './technology-card';
 import { Layers, Cpu, Zap, Shield, Shirt, X } from 'lucide-react';
+import { img } from '@/lib/image';
 
 type TechnologyTabsProps = {
   brand: Brand;
@@ -174,7 +175,7 @@ export function TechnologyTabs({ brand, shoes }: TechnologyTabsProps) {
                 <div className="relative aspect-square mb-3 bg-white rounded-lg overflow-hidden">
                   {shoe.image ? (
                     <Image
-                      src={shoe.image}
+                      src={img(shoe.image)}
                       alt={`${shoe.brand} ${shoe.name}`}
                       fill
                       className="object-contain p-2 group-hover:scale-105 transition-transform"

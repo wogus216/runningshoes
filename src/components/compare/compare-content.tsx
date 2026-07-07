@@ -8,6 +8,7 @@ import type { CardShoe } from '@/lib/data/shoes';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { cn } from '@/lib/utils';
+import { img } from '@/lib/image';
 
 interface CompareContentProps {
   allShoes: CardShoe[];
@@ -273,7 +274,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
               </button>
               <div className="mb-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white">
                 {shoe.image ? (
-                  <Image src={shoe.image} alt={shoe.name} width={56} height={56} className="object-contain" />
+                  <Image src={img(shoe.image)} alt={shoe.name} width={56} height={56} className="object-contain" />
                 ) : (
                   <span className="text-xl">👟</span>
                 )}
@@ -312,7 +313,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
                   <>
                     <div className="w-10 h-10 bg-white rounded-lg mb-1 flex items-center justify-center overflow-hidden opacity-60">
                       {suggestedShoe.image ? (
-                        <Image src={suggestedShoe.image} alt={suggestedShoe.name} width={40} height={40} className="object-contain" />
+                        <Image src={img(suggestedShoe.image)} alt={suggestedShoe.name} width={40} height={40} className="object-contain" />
                       ) : (
                         <span className="text-lg">👟</span>
                       )}
@@ -392,7 +393,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
                       )}
                       <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0">
                         {shoe.image ? (
-                          <Image src={shoe.image} alt={shoe.name} width={40} height={40} className="object-contain" />
+                          <Image src={img(shoe.image)} alt={shoe.name} width={40} height={40} className="object-contain" />
                         ) : (
                           <span className="text-lg">👟</span>
                         )}

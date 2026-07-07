@@ -8,6 +8,7 @@ import type { SimilarShoeInfo } from '@/lib/data/shoes';
 import type { Shoe } from '@/types/shoe';
 import type { Route } from 'next';
 import { cn } from '@/lib/utils';
+import { img } from '@/lib/image';
 
 type SimilarShoesProps = {
   currentShoe: Shoe;
@@ -66,7 +67,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
             {currentShoe.image ? (
               <Image
-                src={currentShoe.image}
+                src={img(currentShoe.image)}
                 alt={currentShoe.name}
                 width={56}
                 height={56}
@@ -108,7 +109,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
               <div className="w-14 h-14 bg-white rounded-lg flex items-center justify-center flex-shrink-0 overflow-hidden">
                 {shoe.image ? (
                   <Image
-                    src={shoe.image}
+                    src={img(shoe.image)}
                     alt={shoe.name}
                     width={56}
                     height={56}

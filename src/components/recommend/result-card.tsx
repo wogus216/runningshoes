@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { Star, Check, ArrowRight, ChevronDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
+import { img } from '@/lib/image';
 import type { RecommendedShoe } from '@/lib/recommendation';
 
 type ResultCardProps = {
@@ -68,7 +69,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         {/* 이미지 */}
         <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))]">
           {shoe.image ? (
-            <Image src={shoe.image} alt={shoe.name} width={64} height={64} className="object-contain" />
+            <Image src={img(shoe.image)} alt={shoe.name} width={64} height={64} className="object-contain" />
           ) : (
             <span className="text-2xl">👟</span>
           )}

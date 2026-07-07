@@ -11,6 +11,7 @@ import {
 import { getAllPairs } from '@/lib/pseo/pairs';
 import { getShoes } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { img } from '@/lib/image';
 
 const SHOE_COUNT = getShoes().length;
 
@@ -134,7 +135,7 @@ export default async function BestPage({ params }: PageProps) {
                   className="flex-shrink-0 w-24 h-24 relative bg-surface rounded"
                 >
                   <Image
-                    src={shoe.image}
+                    src={img(shoe.image)}
                     alt={`${shoe.brand} ${shoe.name}`}
                     fill
                     sizes="96px"

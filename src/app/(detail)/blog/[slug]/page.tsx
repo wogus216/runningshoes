@@ -13,6 +13,7 @@ import { FaqSection } from '@/components/blog/faq-section';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { splitContentAtMidH2 } from '@/lib/blog/split-content';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+import { img, withCdnImages } from '@/lib/image';
 
 // 블로그 대회 글 제목에서 거리 추론 (신발/젤 CTA 매핑용)
 function inferRaceDistances(title: string): string[] {
@@ -226,7 +227,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {post.thumbnail && (
           <div className="relative -mx-4 mb-10 aspect-[21/9] overflow-hidden rounded-[28px] sm:-mx-0">
             <img
-              src={post.thumbnail}
+              src={img(post.thumbnail)}
               alt={post.title}
               className="h-full w-full object-cover"
               style={{ margin: 0, borderRadius: '28px', boxShadow: 'none' }}
@@ -243,7 +244,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
               ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height'],
             });
-            const segments = splitContentAtMidH2(sanitized);
+            const segments = splitContentAtMidH2(withCdnImages(sanitized));
             return segments.map((seg, i) => (
               <Fragment key={i}>
                 <div data-blog-content dangerouslySetInnerHTML={{ __html: seg }} />
