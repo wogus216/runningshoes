@@ -5,6 +5,18 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   typedRoutes: true,
+  // 이미지 CDN(jsDelivr) 활성화 — 빌드타임에 값을 확정해 클라이언트 번들에 인라인하므로
+  // 서버/클라 렌더가 일관(hydration 안전). 우선순위:
+  //   1) Vercel 환경변수 NEXT_PUBLIC_IMAGE_CDN 이 있으면 그것(로그인 가능해지면 이걸로 제어)
+  //   2) 없으면 '프로덕션 배포'에서만 자동으로 jsDelivr 활성 (VERCEL_ENV === 'production')
+  //   3) 로컬·프리뷰는 빈 값 → 상대경로 로컬 폴백
+  env: {
+    NEXT_PUBLIC_IMAGE_CDN:
+      process.env.NEXT_PUBLIC_IMAGE_CDN ||
+      (process.env.VERCEL_ENV === 'production'
+        ? 'https://cdn.jsdelivr.net/gh/wogus216/runningshoes@main/public'
+        : ''),
+  },
   images: {
     // Vercel Hobby 무료 한도(Image Optimization Transformations 5K/월) 절약을 위해
     // 사전 WebP 변환된 원본을 그대로 서빙. lazy loading·width/height 자동 처리는 유지됨.
