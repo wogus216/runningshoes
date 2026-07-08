@@ -3,6 +3,337 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'posterior-tibial-tendon-running-shoes-2026',
+    slug: 'posterior-tibial-tendon-running-shoes-2026',
+    title: '후경골근건염(안쪽 발목·아치 통증) 완전 가이드 | 평발 러너가 조심할 힘줄 부상 — 여기선 안정화 신발·아치 서포트가 실제로 답이다',
+    description: '달릴 때 안쪽 복사뼈 아래나 아치 안쪽이 아프다면 후경골근건염(PTTD)을 의심해야 합니다. 방치하면 성인 후천성 평발로 굳어지는 진행성 부상이라 조기 대처가 중요합니다. 자가 체크(한 발 뒤꿈치 들기·too many toes)·위험요인(평발·과회내·비만)·병기·근거 기반 치료(편심성 heel raise·아치 오소틱)까지 정리했습니다. 특히 발목 염좌와 정반대로, 후경골근건염은 과회내가 병인이라 안정화 신발·아치 서포트가 실제 근거로 연결됩니다 — 단 오소틱(공식 권고)과 일반 안정화 러닝화(방계 근거)의 차이를 정직하게 구분합니다.',
+    thumbnail: '/images/blog/posterior-tibial-tendon-running-shoes-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['후경골근건염', 'PTTD', '평발 러닝화', '아치 통증', '과내전', '안정화 러닝화', '러닝 부상'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>안쪽 복사뼈 아래~아치 안쪽 통증 + 한 발 뒤꿈치 들기가 힘들다면 후경골근건염(PTTD)</strong>일 수 있습니다. 아치를 잡아주는 핵심 힘줄이 과부하로 상한 것으로, <strong>평발·과회내 러너</strong>에게 잘 생깁니다</li>
+    <li><strong>방치하면 성인 후천성 평발로 굳어지는 "진행성" 부상</strong> — 유연한 초기(Stage I~II)엔 <strong>약 89%가 보존치료로 좋아지지만</strong>, 늦으면 경직·관절염으로 비가역 진행합니다. 조기 대처가 핵심이에요</li>
+    <li><strong>발목 염좌와 정반대로, 여기선 신발·아치 서포트가 실제 근거입니다</strong> — 과회내가 병인이라 회내를 잡아주는 아치 오소틱(공식 권고)·안정화 신발이 도움이 됩니다. 여기에 <strong>편심성 뒤꿈치 들기 운동</strong>을 더하는 게 정석입니다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🚑</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저 — 이런 경우는 병원부터</p>
+    <p>① <strong>넘어지거나 접질린 직후 안쪽 복사뼈가 급격히 붓고 체중을 못 싣는다</strong> → 후경골근건 파열/탈구를 발목 염좌로 오인하기 쉬우니 초음파·MRI가 필요합니다. ② <strong>예전엔 눌러서 펴지던 평발이 이제 안 펴진다(굳었다)</strong> → 병기 진행(경직화) 신호로 수술적 평가가 필요할 수 있습니다. ③ <strong>3~6개월 관리에도 통증·기능이 안 낫거나, 통증이 안쪽→바깥쪽 복사뼈로 옮겨간다</strong> → 족부 전문의 상담을 권합니다.</p>
+  </div>
+</div>
+
+<h2>후경골근건이 뭐고, 왜 아픈가</h2>
+<p>후경골근건(posterior tibial tendon)은 종아리 안쪽에서 내려와 발 안쪽 아치 뼈(주상골)에 붙는 힘줄로, <strong>발 안쪽 세로 아치를 잡아주는 가장 중요한 동적 안정근</strong>입니다. 착지 충격을 흡수하고, 발이 안쪽으로 무너지는(회내) 것을 감속시키며, 발을 딛고 나갈 때 중족부를 단단히 "잠가주는" 역할을 하죠.</p>
+<p>이 힘줄이 <strong>반복적인 과부하(특히 과회내로 계속 늘어나는 스트레스)로 미세 손상·염증·변성</strong>이 생긴 상태가 후경골근건염/기능부전(PTTD)입니다. 문제는 이게 단순 통증으로 끝나지 않는다는 것 — <strong>힘줄이 늘어나 제 역할을 못 하면 아치가 서서히 무너져 "성인 후천성 평발"로 진행</strong>합니다. 그래서 초기에 잡는 게 중요합니다.</p>
+
+<h2>내 통증이 후경골근건염일까 — 자가 체크</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>체크 항목</th><th>후경골근건염 신호</th></tr></thead>
+  <tbody>
+    <tr><td><strong>통증 위치</strong></td><td>안쪽 복사뼈 <strong>아래~아치 안쪽</strong>을 따라감(바깥쪽/앞쪽이 아니라 안쪽). 체중 실으면 심해짐</td></tr>
+    <tr><td><strong>한 발 뒤꿈치 들기</strong>(single-leg heel raise)</td><td>아픈 발로 <strong>까치발(뒤꿈치 들기)이 약하거나 안 되고</strong>, 반복하면 금방 지침 — 가장 특징적인 신호</td></tr>
+    <tr><td><strong>too many toes 사인</strong></td><td>뒤에서 발을 보면 <strong>바깥쪽으로 발가락이 평소보다 많이 보임</strong>(전족부가 바깥으로 벌어짐) — 진행된 신호</td></tr>
+    <tr><td><strong>부종·압통</strong></td><td>힘줄 경로(안쪽 복사뼈 뒤·아래)를 누르면 붓고 아픔</td></tr>
+    <tr><td><strong>아치 변화</strong></td><td>한쪽 발 아치가 반대쪽보다 낮아 보이거나 최근 평발이 심해짐</td></tr>
+  </tbody>
+</table>
+</div>
+<p>안쪽이 아닌 <strong>발바닥 뒤꿈치·아치 바닥</strong>이 아프면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>일 가능성이 크고, <strong>바깥쪽 복사뼈나 발목이 접질려서</strong> 아프면 <a href="/blog/ankle-sprain-running-shoes-2026">발목 염좌</a>입니다. 위치로 감별하는 게 첫걸음이에요.</p>
+
+<h2>누가 잘 걸리나 — 위험요인</h2>
+<ul>
+  <li><strong>평발·과회내(오버프로네이션)</strong> — 가장 핵심. 발이 안쪽으로 무너질수록 후경골근건에 스트레스가 쌓입니다. 러너 연구에서도 PTTD 러너는 착지 시 후족 외반각이 유의하게 컸습니다</li>
+  <li><strong>비만·높은 BMI</strong> — 환자의 약 81.5%가 BMI 25 이상. 힘줄에 실리는 하중이 큽니다</li>
+  <li><strong>여성 · 40~60대</strong> — 전형적 프로필. 유병률은 인구 전체 3.3~10%로 추정</li>
+  <li><strong>고혈압·당뇨</strong> — 확립된 위험요인(혈관·대사 기전 추정)</li>
+  <li><strong>급격한 훈련량 증가</strong> — 전형적 과사용 기전. 거리·강도를 갑자기 늘리면 위험</li>
+</ul>
+
+<h2>병기 — 왜 "조기"가 중요한가</h2>
+<p>PTTD(최근 문헌은 "진행성 족부 붕괴 변형, PCFD"로도 부름)는 <strong>유연한 초기에서 경직된 후기로 진행</strong>합니다. 갈림길은 "아치가 아직 손으로 펴지느냐(유연)"입니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>병기</th><th>상태</th><th>치료 방향</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Stage I</strong></td><td>힘줄 염증·미세손상, 변형 없음(<strong>유연</strong>)</td><td><strong>보존치료</strong>(운동·오소틱·부동화)</td></tr>
+    <tr><td><strong>Stage II</strong></td><td>힘줄 늘어나고 아치 붕괴하나 <strong>단족 기립 시 정복 가능(유연)</strong></td><td>보존치료 우선, 실패 시 수술</td></tr>
+    <tr><td><strong>Stage III</strong></td><td>거골하 관절염, 변형이 <strong>고정됨(경직)</strong></td><td>수술(유합술)</td></tr>
+    <tr><td><strong>Stage IV</strong></td><td>발목 관절까지 변형·관절염 진행</td><td>수술</td></tr>
+  </tbody>
+</table>
+</div>
+<p>핵심은 이것입니다 — <strong>Stage I~II(유연한 단계)에서는 약 89%가 오소틱+물리치료 같은 보존치료에 좋아지고 대개 4개월 내 근력을 회복</strong>합니다. 하지만 방치해 <strong>경직 단계로 넘어가면 수술 외엔 답이 없어집니다.</strong> "안쪽 아치가 아픈데 참고 계속 뛰는 것"이 가장 위험한 이유예요.</p>
+
+<h2>치료 — 근거가 있는 것부터</h2>
+<div class="callout info">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">근거 기반 1차 치료(AAFP 공식 권고)</p>
+    <p>① <strong>편심성 뒤꿈치 들기 운동</strong> — 동심성보다 편심성 운동이 권고됩니다(AAFP Grade B). ② <strong>아치 지지(오소틱·테이핑·아치 브레이스)</strong> — 초기 병기 관리에 효과적(AAFP Grade B). ③ 급성·초기엔 <strong>워킹부츠·캐스트로 3~4주 부동화</strong>. 이 조합으로 유연한 초기 환자의 상당수가 호전됩니다.</p>
+  </div>
+</div>
+<ul>
+  <li><strong>편심성 힐 레이즈</strong> — 양발로 까치발을 든 뒤, <strong>아픈 발 한쪽으로 천천히 내려오는</strong> 동작(내리는 국면=편심성)을 반복. 후경골근건의 부하 적응을 유도합니다. 통증 범위 내에서 점진적으로</li>
+  <li><strong>종아리(비복근·가자미근) 스트레칭·강화</strong>와 <strong>발 내재근 강화</strong>를 병행</li>
+  <li><strong>아치 오소틱/인솔</strong>로 회내를 잡아 힘줄 부하를 줄임(아래 신발 섹션)</li>
+  <li>통증·부종 심하면 초기 며칠 상대적 안정 + 필요 시 부동화. NSAIDs는 통증 조절 보조</li>
+</ul>
+<p>3~6개월 보존치료에도 개선이 없으면 수술(건 이전술+절골술 등)을 고려합니다. 그래서 <strong>초기 몇 달의 성실한 재활</strong>이 수술을 가르는 분기점입니다.</p>
+
+<h2>신발·오소틱 — 발목 염좌와 정반대인 지점</h2>
+<p>여기가 이 글에서 가장 중요한 부분입니다. <a href="/blog/ankle-sprain-running-shoes-2026">발목 염좌 가이드</a>에서는 "신발로 급성 염좌를 막는 근거는 약하다"고 했지만, <strong>후경골근건염은 정반대입니다.</strong> 이 부상은 <strong>과회내(발이 안쪽으로 무너지는 것) 자체가 병의 원인</strong>이라, 회내를 잡아주는 개입이 실제로 근거를 가집니다.</p>
+<p>다만 <strong>근거의 수준을 정직하게 구분</strong>해야 합니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>개입</th><th>근거 수준</th></tr></thead>
+  <tbody>
+    <tr><td><strong>아치 오소틱 / 아치 서포트 인솔</strong></td><td><strong>가장 강함.</strong> AAFP 공식 임상 권고(Grade B). 내측 포스팅 인솔이 발목 외반각을 3.8° 줄이고 관절 압박력을 6.8% 감소시킨다는 연구가 있음. <strong>PTTD 관리의 핵심 도구</strong></td></tr>
+    <tr><td><strong>안정화(모션컨트롤) 러닝화</strong></td><td><strong>방계 근거.</strong> 모션컨트롤화가 "과회내 관련 부상" 위험을 낮췄다는 RCT(HR 0.41)가 있으나, 그 연구가 추적한 부상에 <strong>PTTD 자체는 포함되지 않았음</strong>. 생체역학적으로 후족 외반각을 줄여준다는 근거는 있지만, PTTD를 직접 검증한 임상 RCT는 아직 없음 → <strong>"도움이 될 만하나 오소틱만큼 직접 입증되진 않음"</strong></td></tr>
+    <tr><td><strong>미니멀·제로드롭 신발</strong></td><td>주의 권고(낮은 근거). 드롭이 낮을수록 후경골근 부하가 커질 수 있다는 기전적 추론 — <strong>급성기엔 피하는 게 안전</strong></td></tr>
+  </tbody>
+</table>
+</div>
+<p>정리하면 — <strong>PTTD엔 "아치를 받쳐 회내를 줄이는" 방향이 맞습니다.</strong> 가장 확실한 건 <strong>아치 지지 오소틱/인솔</strong>이고, 여기에 <strong>회내를 제어하는 안정화 러닝화</strong>를 신으면 힘줄 부하를 더 줄일 수 있습니다(단, 신발은 오소틱의 보완재로 이해하세요). 도움이 되는 신발 특성은 <strong>내측 포스트·가이드레일, 아치 서포트, 단단한 힐 카운터, 너무 낮지 않은 드롭</strong>입니다.</p>
+<p>구체적으로는 강한 교정의 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>(GuideRails, 평발 excellent), 부드러운 안정화 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>, 더 두툼한 맥스쿠션 안정화 <a href="/shoes/hoka-gaviota-6">가비오타 6</a> 등이 후보입니다. 두 대표 안정화의 차이는 <a href="/blog/adrenaline-gts-25-vs-kayano-33-stability-2026">아드레날린 vs 카야노 33 비교</a>에, 안정화 선택 전반은 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">과내전·평발 안정화 가이드</a>와 <a href="/best/stability">안정화 러닝화 추천</a>에 정리돼 있습니다. 내 회내 정도가 궁금하면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입 자가진단</a>도 참고하세요.</p>
+
+<h2>러닝 복귀 — 서두르지 마라</h2>
+<p>건병증(만성 힘줄 손상)은 급성 염증과 달리 <strong>최소 3개월 안팎의 점진적 부하 프로그램</strong>이 필요한 경우가 많습니다. 통증이 좀 줄었다고 바로 예전 거리로 돌아가면 재발합니다. 임상에서 흔히 쓰는 복귀 기준은 <strong>"아픈 발로 한 발 뒤꿈치 들기를 통증 없이 여러 번(예: 50회 목표) 반복할 수 있는가"</strong>입니다. 복귀 후에도 통증이 재발하면 즉시 거리·강도를 줄이고, 아치 오소틱과 편심성 운동을 유지하세요.</p>
+
+<h2>같이 보면 좋은 글</h2>
+<p>발 안쪽·아치 통증은 헷갈리기 쉽습니다. 바닥이 아프면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>, 접질렸다면 <a href="/blog/ankle-sprain-running-shoes-2026">발목 염좌</a>(신발 역할이 정반대라 대비해서 보면 좋습니다), 정강이 안쪽이면 <a href="/blog/shin-splints-running-shoes-2026">신스플린트</a>를 참고하세요. 안정화 신발 선택은 <a href="/blog/adrenaline-gts-25-vs-kayano-33-stability-2026">아드레날린 vs 카야노 33</a>에서 이어집니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">의학 정보 고지</p>
+    <p>이 글은 러너를 위한 근거 기반 정보 정리이며, 개별 진단·치료를 대신하지 않습니다. 수치·권고는 AAFP 진료지침(SORT 근거등급)·StatPearls·JOSPT 게재 연구를 근거로 했고, 근거가 약한 항목(안정화 러닝화·미니멀화 등)은 그 수준을 명시했습니다. 아치가 손으로 펴지지 않을 만큼 굳었거나 급성 부종·체중부하 불가가 있으면 반드시 족부 전문의 진료를 받으세요.</p>
+  </div>
+</div>
+`,
+    faqs: [
+      {
+        question: '안쪽 복사뼈 아래가 아픈데 후경골근건염인지 어떻게 알 수 있나요?',
+        answer: '가장 특징적인 신호는 세 가지입니다. ① 통증이 안쪽 복사뼈 아래~아치 안쪽을 따라가고 체중을 실으면 심해집니다(바깥쪽·바닥이 아닌 안쪽). ② 아픈 발로 한 발 까치발(뒤꿈치 들기)이 약하거나 안 되고 반복하면 금방 지칩니다. ③ 뒤에서 발을 보면 바깥쪽으로 발가락이 평소보다 많이 보입니다(too many toes, 진행된 신호). 발바닥 뒤꿈치가 아프면 족저근막염, 접질려서 바깥쪽이 아프면 발목 염좌일 가능성이 큽니다. 확실하지 않으면 초음파·진료로 감별하세요.',
+      },
+      {
+        question: '평발인데 어떤 러닝화를 신어야 후경골근건염을 예방할 수 있나요?',
+        answer: '후경골근건염은 과회내가 원인이라 회내를 잡아주는 방향이 맞습니다. 가장 근거가 강한 것은 아치 지지 오소틱/인솔(AAFP 공식 Grade B 권고)이고, 여기에 회내를 제어하는 안정화(모션컨트롤) 러닝화를 신으면 힘줄 부하를 더 줄일 수 있습니다. 다만 안정화 러닝화 자체가 PTTD를 막는다는 직접 임상 근거는 아직 없어, 신발은 오소틱의 보완재로 이해하는 게 정확합니다. 내측 포스트·가이드레일, 아치 서포트, 단단한 힐 카운터, 너무 낮지 않은 드롭을 갖춘 아드레날린 GTS 25, 카야노 33 같은 안정화가 후보입니다.',
+      },
+      {
+        question: '발목 염좌 글에서는 신발이 별로 소용없다더니, 여기선 왜 안정화 신발을 권하나요?',
+        answer: '두 부상의 원인이 정반대이기 때문입니다. 발목 염좌는 발목이 순간적으로 바깥으로 꺾이는 "급성 외상"이라 신발 구조로 막기 어렵고, 근거가 강한 예방은 균형 훈련입니다. 반면 후경골근건염은 과회내(발이 안쪽으로 무너지는 것)라는 "반복 과부하"가 원인이라, 회내를 잡아주는 아치 서포트·안정화 개입이 실제 근거를 가집니다. 즉 "신발이 답이냐"는 부상 종류에 따라 다릅니다 — 후경골근건염은 신발·오소틱이 실제로 도움이 되는 쪽입니다.',
+      },
+      {
+        question: '후경골근건염, 참고 계속 뛰어도 되나요?',
+        answer: '권하지 않습니다. 후경골근건염은 방치하면 힘줄이 늘어나 아치가 무너지고, 유연한 초기 단계(손으로 아치가 펴지는)에서 경직된 후기(관절염·고정 변형)로 진행합니다. 유연한 초기에는 약 89%가 오소틱+운동 같은 보존치료로 좋아지지만, 경직 단계로 넘어가면 수술 외에 방법이 없어집니다. 안쪽 아치 통증과 함께 한 발 까치발이 약해졌다면 훈련량을 줄이고 아치 오소틱·편심성 운동을 시작하며, 통증이 지속되면 진료를 받으세요.',
+      },
+      {
+        question: '편심성 뒤꿈치 들기 운동은 어떻게 하나요?',
+        answer: '양발로 까치발을 들어 올린 뒤, 아픈 발 한쪽만 사용해 뒤꿈치를 아주 천천히 내리는 동작입니다(내려오는 국면=편심성 수축). 계단 끝이나 평지에서 하며, 통증이 심하지 않은 범위에서 시작해 점진적으로 횟수를 늘립니다. 후경골근건염 치료에서 편심성 운동은 동심성보다 권고 수준이 높습니다(AAFP Grade B). 종아리 스트레칭·발 내재근 강화와 함께 하고, 아치 오소틱을 병행하면 효과가 더 좋습니다. 통증이 오히려 심해지면 강도를 낮추고 전문가와 상의하세요.',
+      },
+    ],
+  },
+  {
+    id: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
+    slug: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
+    title: '아드레날린 GTS 25 vs 카야노 33 | 브룩스 vs 아식스 안정화 대결 — 강한 교정·가성비 vs 부드러운 안정성',
+    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 13년 만에 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(209,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
+    thumbnail: '/images/blog/adrenaline-gts-25-vs-kayano-33-stability-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['아드레날린 GTS 25', '카야노 33', '안정화 러닝화', '평발 러닝화', '과내전', '러닝화 비교', '브룩스 아식스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 평발·과내전 러너를 위한 대표 안정화</strong>지만 철학이 다릅니다 — <strong>아드레날린은 GuideRails로 "옆에서 강하게 잡아주고"</strong>, <strong>카야노 33은 FLUIDSUPPORT로 "부드러운 폼이 발 모양에 맞춰 자연스럽게 잡아줍니다"</strong></li>
+    <li><strong>강한 교정력·가성비·내구성</strong>(189,000원·800km)이면 <strong>아드레날린 GTS 25</strong>, <strong>부드러운 쿠션·낮은 드롭(아킬레스 부담↓)·프리미엄</strong>이면 <strong>카야노 33</strong>(209,000원)</li>
+    <li><strong>심한 과내전·평발 입문자는 아드레날린</strong>(검증된 강한 지지+저가), <strong>단단한 안정화가 싫고 쿠션을 원하는 중급자는 카야노 33</strong>. 단 카야노 33은 신상이라 실측 랩은 아직 미게시입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>"얼마나 강하게 잡아줄까 vs 얼마나 부드러울까"의 대결입니다.</strong> 강한 교정과 가성비면 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>(189,000원), 부드러운 쿠션과 낮은 드롭이면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>(209,000원). 내 과내전이 심할수록 아드레날린, 안정화의 단단함이 싫었다면 카야노 33입니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈 비교</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>브룩스 아드레날린 GTS 25</th><th>아식스 젤 카야노 33</th></tr></thead>
+  <tbody>
+    <tr><td>안정화 방식</td><td><strong>GuideRails</strong>(측면 가드레일) + 미디얼 포스트</td><td><strong>FLUIDSUPPORT</strong>(부드러운 폼 지오메트리, 4D 폐지)</td></tr>
+    <tr><td>무게(US 9)</td><td>300g</td><td>298g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>37 / 27mm</td><td>40 / 32mm</td></tr>
+    <tr><td>드롭</td><td>10mm</td><td><strong>8mm</strong>(아킬레스 부담↓)</td></tr>
+    <tr><td>미드솔</td><td>DNA Loft v3(단단, HA 25.1)</td><td><strong>FF BLAST MAX + PLUS 듀얼 폼</strong>(부드러움)</td></tr>
+    <tr><td>쿠션 성향</td><td>단단·탄탄</td><td><strong>푹신·부드러움</strong></td></tr>
+    <tr><td>내구성</td><td><strong>800km</strong>(안정화 최상위)</td><td>~650km(추정)</td></tr>
+    <tr><td>발볼 / 와이드</td><td>표준 / <strong>와이드 있음</strong>(힐 폭 95mm 넓음)</td><td>표준 / 와이드 있음</td></tr>
+    <tr><td>가격(한국)</td><td><strong>189,000원</strong>(km당 ~236원)</td><td>209,000원(km당 ~322원)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 아드레날린 GTS 25는 실측 기준, 카야노 33은 2026-06-01 출시 직후로 RunRepeat 랩 미게시 — 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입) 기준입니다.</p>
+</div>
+
+<h2>가장 큰 차이 — 어떻게 "잡아주느냐"</h2>
+<p>두 신발의 핵심 차이는 <strong>과내전(오버프로네이션, 발이 안쪽으로 무너지는 것)을 잡는 방식</strong>입니다.</p>
+<p><strong>아드레날린 GTS 25</strong>는 <strong>GuideRails</strong>를 씁니다. 발 양옆에 가드레일 같은 구조를 둬서, <strong>발이 정상 범위를 벗어나 무너지려 할 때만 물리적으로 막아주는</strong> 방식이에요. 여기에 미디얼 포스트(안쪽 단단한 폼)까지 더해 안정성 점수가 9/10입니다. <strong>교정력이 확실하고 직관적</strong>이라, 과내전이 심하거나 안정화가 처음인 러너에게 믿음직합니다. 대신 DNA Loft v3가 <strong>다소 단단한 착화감</strong>(HA 25.1)이라 푹신함을 기대하면 아쉬울 수 있습니다.</p>
+<p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 13년간 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 검증 데이터가 아직 부족</strong>합니다.</p>
+
+<h2>쿠션·드롭·무게</h2>
+<p>쿠션은 <strong>카야노 33이 더 푹신합니다</strong>(FF BLAST MAX 듀얼 폼, 쿠션 9/10). 힐 스택도 40mm로 아드레날린(37mm)보다 높죠. "무릎·관절 보호되는 부드러운 안정화"를 원하면 카야노가 앞섭니다.</p>
+<p><strong>드롭은 카야노가 8mm, 아드레날린이 10mm</strong>입니다. 2mm 차이지만, 드롭이 낮은 카야노가 <strong>아킬레스건 부담이 약간 덜해</strong> 아킬레스 이력이 있는 러너에게 유리합니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염 가이드</a> 참고). 무게는 300g vs 298g으로 사실상 동일합니다.</p>
+
+<h2>내구성·가격 — 아드레날린의 영역</h2>
+<p>순수 가성비는 <strong>아드레날린이 확실히 앞섭니다.</strong> 가격이 <strong>189,000원으로 20,000원 저렴</strong>하고, 내구성이 <strong>800km로 안정화 카테고리 최상위</strong>라 km당 약 236원 — 매일 신어도 부담이 적습니다. 카야노 33은 209,000원에 내구 약 650km로 km당 약 322원입니다. <strong>"매일 신는 안정화 데일리 한 켤레"를 오래 쓰려면 아드레날린</strong>이 경제적입니다.</p>
+<div class="callout warning">
+  <span class="callout-icon">🆕</span>
+  <div class="callout-body">
+    <p class="callout-title">카야노 33은 신상 — 참고</p>
+    <p>카야노 33은 2026년 6월 1일 출시로, RunRepeat 정량 랩과 장기 실사용 후기가 아직 부족합니다. FLUIDSUPPORT는 검증된 4D Guidance와 전혀 다른 신기술이라, <strong>심한 과내전 러너라면 매장 시착 후 결정</strong>을 권합니다. 반대로 익숙한 강한 교정을 원하면 세일 중인 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>도 합리적 선택입니다.</p>
+  </div>
+</div>
+
+<h2>누가 뭘 골라야 하나</h2>
+<ul>
+  <li><strong>아드레날린 GTS 25</strong> — 과내전·평발이 <strong>심한 러너</strong>, 안정화가 처음이라 <strong>확실하고 강한 교정</strong>을 원하는 입문자, 예산을 아끼고 오래 신고 싶은 러너(189,000원·800km), 단단하고 탄탄한 착화감을 선호하는 러너</li>
+  <li><strong>카야노 33</strong> — 안정화의 <strong>단단함이 싫었던</strong> 중급 러너, 안정성과 <strong>푹신한 쿠션</strong>을 동시에 원하는 러너, 아킬레스 부담을 줄이려 <strong>낮은 드롭</strong>을 찾는 러너, 프리미엄·최신 기술을 선호하는 러너</li>
+  <li><strong>둘 다 애매하면</strong> — 내 과내전이 심할수록·예산이 빠듯할수록 아드레날린, 안정화의 단단함이 거슬렸을수록·쿠션을 원할수록 카야노입니다. 더 저렴한 안정화는 <a href="/shoes/new-balance-860-v15">860 v15</a>, 더 두툼한 맥스쿠션 안정화는 <a href="/shoes/hoka-gaviota-6">가비오타 6</a>도 후보예요</li>
+</ul>
+<p>과회내 제어는 <strong>후경골근건(아치 안쪽 힘줄)의 부하를 줄여</strong> 평발 러너의 흔한 힘줄 부상 예방에도 도움이 됩니다 — <a href="/blog/posterior-tibial-tendon-running-shoes-2026">후경골근건염 가이드</a>를 함께 보세요. 안정화를 처음 고른다면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">과내전·평발 안정화 종합 가이드</a>와 <a href="/best/stability">안정화 러닝화 추천</a>, 카야노만 더 깊이 보려면 <a href="/blog/asics-gel-kayano-33-review">카야노 33 심층 후기</a>가 있습니다.</p>
+`,
+    faqs: [
+      {
+        question: '과내전(평발)이 심한데 아드레날린과 카야노 33 중 뭐가 나을까요?',
+        answer: '과내전이 심하다면 아드레날린 GTS 25가 더 안전합니다. GuideRails + 미디얼 포스트로 발이 무너지는 것을 물리적으로 강하게 막아주고, 13년 넘게 검증된 방식입니다. 카야노 33은 강한 4D Guidance를 폐지하고 부드러운 FLUIDSUPPORT로 바꿔 "부드러운 안정성"을 택했는데, 심한 과내전에는 교정력이 부족하게 느껴질 수 있고 신기술이라 검증 데이터도 아직 적습니다. 심한 과내전이라면 아드레날린을, 경도~중등도 과내전에 쿠션을 원하면 카야노를 권합니다.',
+      },
+      {
+        question: '안정화인데 쿠션이 푹신한 걸 원해요. 뭐가 나을까요?',
+        answer: '카야노 33입니다. 카야노 최초로 FF BLAST MAX + PLUS 듀얼 폼을 얹어 "안정화라 쿠션이 단단하다"는 기존 약점을 크게 개선했고, 힐 스택도 40mm로 높은 편입니다(쿠션 9/10). 아드레날린 GTS 25는 DNA Loft v3가 다소 단단한 착화감(HA 25.1)이라 탄탄한 지지감은 좋지만 푹신함은 카야노에 밀립니다. 부드러운 안정화를 원하면 카야노 33, 단단하고 안정적인 착지를 원하면 아드레날린을 고르세요.',
+      },
+      {
+        question: '가격과 내구성만 보면 뭐가 이득인가요?',
+        answer: '아드레날린 GTS 25가 확실히 이득입니다. 189,000원으로 카야노 33(209,000원)보다 20,000원 저렴하고, 내구성이 800km로 안정화 카테고리 최상위입니다(카야노 약 650km). km당 비용으로 환산하면 아드레날린 약 236원, 카야노 약 322원으로 차이가 큽니다. 매일 신는 데일리 안정화를 오래 경제적으로 쓰려면 아드레날린이 유리합니다.',
+      },
+      {
+        question: '카야노 33이 신상인데 지금 사도 되나요, 카야노 32를 살까요?',
+        answer: '취향에 따라 다릅니다. 카야노 33은 FLUIDSUPPORT라는 완전히 새로운 안정화 방식이라 부드러운 쿠션·낮은 드롭(8mm)이 장점이지만, RunRepeat 랩과 장기 후기가 아직 부족합니다. 강하고 검증된 교정을 원한다면 4D Guidance를 쓰는 카야노 32가 출시 후 재고 세일(30~40%)로 저렴하게 나올 수 있어 합리적입니다. 부드러운 최신 안정화를 원하면 33, 검증된 강한 교정을 저렴하게 원하면 32 세일을 노리세요.',
+      },
+    ],
+  },
+  {
+    id: 'hierro-v9-vs-speedgoat-6-trail-2026',
+    slug: 'hierro-v9-vs-speedgoat-6-trail-2026',
+    title: '히에로 v9 vs 스피드고트 6 | 뉴발 vs 호카 쿠션 트레일 대결 — 로드투트레일 올라운더 vs 만능 그립',
+    description: '뉴발란스 히에로 v9와 호카 스피드고트 6, 둘 다 비브람 메가그립을 단 쿠션 트레일화지만 성격이 갈립니다. 스피드고트는 젖은 바위·급경사까지 커버하는 "만능 그립"의 베스트셀러(러그 5mm·맥스쿠션·와이드+GTX), 히에로 v9는 자갈길·로드투트레일에 강한 "쿠션 올라운더"(러그 3.3mm·내구성·에너지 리턴 우위·16,000원 저렴)입니다. 지형·발볼·가격 기준으로 한국 트레일 러너가 뭘 골라야 하는지 실측 스펙으로 정리했습니다.',
+    thumbnail: '/images/blog/hierro-v9-vs-speedgoat-6-trail-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['히에로 v9', '스피드고트 6', '트레일 러닝화', '쿠션 트레일화', '비브람 메가그립', '러닝화 비교', '트레일화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 비브람 메가그립을 단 쿠션 트레일화</strong>지만 무대가 다릅니다 — <strong>스피드고트 6은 "만능 그립"</strong>(젖은 바위·급경사·기술 지형까지), <strong>히에로 v9는 "로드투트레일 쿠션 올라운더"</strong>(자갈길·임도·완만한 지형)</li>
+    <li><strong>험한 산·기술 코스</strong>라면 러그 5mm에 그립 최상위인 <strong>스피드고트 6</strong>, <strong>둘레길·자갈·도로 섞인 코스를 오래</strong>라면 러그 3.3mm에 내구성·에너지 리턴이 앞서고 16,000원 저렴한 <strong>히에로 v9</strong></li>
+    <li><strong>발볼 넓은 한국 러너는 스피드고트가 유리</strong> — 와이드가 공식 동일가로 확실히 나옵니다(히에로는 미국만 와이드 확인, 한국 판매 미확인)</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥾</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>"어디를 뛰느냐"가 답을 정합니다.</strong> 젖은 바위·급경사·진흙 같은 진짜 산이면 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>, 자갈길·둘레길·도로 접근이 섞인 코스를 푹신하게 오래라면 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>. 발볼이 넓다면 와이드가 확실한 스피드고트가 안전합니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈 비교</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>뉴발 히에로 v9</th><th>호카 스피드고트 6</th></tr></thead>
+  <tbody>
+    <tr><td>카테고리</td><td>쿠션 올라운드 트레일</td><td>만능 트레일(데일리·울트라)</td></tr>
+    <tr><td>무게(US 9)</td><td><strong>309g</strong></td><td><strong>278g</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td>37.3 / 33.1mm</td><td>40 / 35mm</td></tr>
+    <tr><td>드롭</td><td>4.2mm</td><td>5mm</td></tr>
+    <tr><td>미드솔</td><td>Fresh Foam X 듀얼 밀도</td><td>CMEVA 맥스쿠션</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip · <strong>러그 3.3mm</strong></td><td>Vibram Megagrip + Traction Lug · <strong>러그 5mm</strong></td></tr>
+    <tr><td>에너지 리턴</td><td><strong>61.9%</strong></td><td>약 48%</td></tr>
+    <tr><td>내구성</td><td><strong>~600km</strong>(마모 0.9mm 우수)</td><td>400~500km(노출 미드솔 마모)</td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(73.4mm) / 미국 2E, <strong>한국 미확인</strong></td><td>표준(73mm, 좁게 느껴짐) / <strong>와이드 공식 동일가</strong> + GTX</td></tr>
+    <tr><td>가격(한국)</td><td><strong>189,000원</strong></td><td>205,000원</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 히에로 수치는 RunRepeat 실측(85점 Great), 스피드고트는 RunRepeat/전문 리뷰 기준. 무게는 US 9 통일.</p>
+</div>
+
+<h2>가장 큰 차이 — 지형(러그와 그립)</h2>
+<p>둘 다 <strong>Vibram Megagrip</strong>이라 그립의 "재질"은 같습니다. 갈리는 건 <strong>러그 깊이와 아웃솔 설계</strong>예요.</p>
+<p><strong>스피드고트 6</strong>은 러그가 <strong>5mm로 깊고</strong> 측면 마이크로 돌기(Traction Lug)까지 더해, 젖은 바위·급경사 오르막·진흙까지 물어냅니다. 트레일 전문 매체 Road Trail Run이 그립을 <strong>10/10</strong>으로 매길 만큼 "험지에서 안 미끄러지는" 게 핵심 강점이죠. 힐 40mm 맥스쿠션에도 내부 섀시(chassis)가 발을 잡아줘 고스택 특유의 흔들림이 적습니다.</p>
+<p><strong>히에로 v9</strong>은 러그가 <strong>3.3mm로 얕습니다.</strong> 이게 단점이 아니라 <strong>용도의 차이</strong>예요 — 깊은 러그는 딱딱한 도로에서 오히려 걸리적거리는데, 히에로의 얕은 러그는 <strong>자갈길·임도·둘레길처럼 완만한 지형 + 도로 접근 구간(로드투트레일)</strong>에서 훨씬 자연스럽습니다. 대신 RunRepeat Technical 점수가 58점으로, <strong>젖은 바위·급경사 기술 암반은 스피드고트에 밀립니다.</strong></p>
+<div class="callout info">
+  <span class="callout-icon">📍</span>
+  <div class="callout-body">
+    <p class="callout-title">지형으로 고르기</p>
+    <p><strong>북한산·관악산 바위·급경사, 비 온 뒤 젖은 트레일</strong> → 스피드고트 6. <strong>한강 자갈길, 둘레길, 임도, 도로가 섞인 근교 트레일</strong> → 히에로 v9.</p>
+  </div>
+</div>
+
+<h2>발밑 느낌 — 쿠션·반발·무게</h2>
+<p>스택은 스피드고트(40mm)가 히에로(37mm)보다 약간 높아 <strong>더 푹신한 맥스쿠션</strong> 성향입니다. 무게도 스피드고트가 <strong>278g으로 31g 가볍죠</strong>(맥스쿠션치고 경량). 장시간 산행 겸 러닝, 울트라 거리에서 다리 피로를 덜어줍니다.</p>
+<p>반면 <strong>에너지 리턴은 히에로(61.9%)가 스피드고트(약 48%)보다 확실히 높습니다.</strong> 트레일화 둘 다 "빠른 반발" 신발은 아니지만, 히에로가 조금 더 탄력 있게 굴러가는 편입니다. 또 <strong>내구성은 히에로가 우위</strong> — 아웃솔 마모가 0.9mm로 뛰어나고, 스피드고트는 노출 미드솔 구간이 200~300km 후 압축된다는 지적이 있어 히에로가 더 오래 갑니다(약 600km vs 400~500km).</p>
+
+<h2>발볼·가격 — 한국 러너의 결정 요소</h2>
+<p>한국 러너에게 중요한 <strong>와이드</strong>는 <strong>스피드고트가 명확히 유리</strong>합니다. 토박스가 둘 다 표준(73mm대)인데 스피드고트는 "좁게 느껴진다"는 평이 많지만, <strong>와이드가 공식 동일가(205,000원)</strong>로 나오고 GTX 방수 버전(229,000원)까지 있어 선택지가 넓습니다. 히에로는 미국엔 2E 와이드가 있으나 <strong>한국 공식몰 판매는 확인되지 않아</strong>, 발볼이 매우 넓다면 스피드고트가 안전합니다. 발볼 기준 더 넓은 후보가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 보세요.</p>
+<p>가격은 <strong>히에로가 189,000원으로 16,000원 저렴</strong>합니다. 내구성까지 앞서(600km 기준 km당 약 315원) 순수 가성비는 히에로가 좋습니다.</p>
+
+<h2>누가 뭘 골라야 하나</h2>
+<ul>
+  <li><strong>스피드고트 6</strong> — 젖은 바위·급경사·기술 지형을 자주 가는 러너, 검증된 베스트셀러의 안정감을 원하는 트레일 입문자, <strong>발볼이 넓어 와이드가 꼭 필요한 러너</strong>, GTX 방수가 필요한 러너, 맥스쿠션·경량을 원하는 울트라 러너</li>
+  <li><strong>히에로 v9</strong> — 자갈길·둘레길·임도·<strong>로드투트레일</strong>을 오래 달리는 러너, 내구성·에너지 리턴·가성비를 중시하는 러너, 표준 발볼 러너</li>
+  <li><strong>둘 다 애매하면</strong> — "험한 산이냐(스피드고트) vs 완만한 자갈·도로 혼합이냐(히에로)"가 기준입니다. 더 푹신한 울트라 컴포트를 원하면 와이드까지 있는 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>도 후보이고, 순위로 보려면 <a href="/best/trail">트레일화 추천</a>을 참고하세요</li>
+</ul>
+<p>더 깊은 소개는 <a href="/blog/new-balance-hierro-v9-trail-review-2026">히에로 v9 단독 리뷰</a>, 스피드고트가 포함된 다른 트레일 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">트레일화 3파전(스피드고트 vs 펄사 vs 아그라빅)</a>과 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종</a>에 있습니다. 트레일은 발목 부상이 잦으니 <a href="/blog/ankle-sprain-running-shoes-2026">발목 염좌 예방 가이드</a>도 함께 보면 좋습니다.</p>
+`,
+    faqs: [
+      {
+        question: '트레일 입문인데 히에로 v9와 스피드고트 6 중 뭐가 나을까요?',
+        answer: '입문이라면 스피드고트 6가 더 무난합니다. 트레일 데일리의 베스트셀러로 검증됐고, 그립이 최상위라 다양한 지형에서 실수가 적습니다. 다만 주로 뛰는 곳이 험한 산이 아니라 한강 자갈길·둘레길·임도처럼 완만하고 도로가 섞인 코스라면, 러그가 얕고 더 저렴한(189,000원) 히에로 v9가 오히려 자연스럽고 가성비도 좋습니다. "어디를 뛸지"를 먼저 정하세요.',
+      },
+      {
+        question: '발볼이 넓은데 둘 중 뭐가 편한가요?',
+        answer: '스피드고트 6가 안전합니다. 두 신발 모두 토박스는 표준(73mm대)이라 넓은 편은 아니지만, 스피드고트는 와이드가 공식 동일가(205,000원)로 확실히 나옵니다. 히에로 v9는 미국엔 2E 와이드가 있으나 한국 공식몰 판매 여부가 확인되지 않아, 발볼이 매우 넓다면 와이드가 확실한 스피드고트나 울트라 글라이드 4 와이드를 고르는 게 안전합니다.',
+      },
+      {
+        question: '도로에서도 뛰는데 둘 다 괜찮나요?',
+        answer: '히에로 v9가 도로 혼합에 더 유리합니다. 러그가 3.3mm로 얕아 아스팔트·포장 접근 구간에서 덜 걸리적거리고 마모도 느립니다. 스피드고트 6는 러그가 5mm로 깊어 그립은 좋지만 도로에서는 마모가 빠르고 발밑이 딱딱하게 느껴질 수 있습니다. 트레일과 도로가 섞인 로드투트레일 코스라면 히에로, 트레일 비중이 절대적이라면 스피드고트를 권합니다.',
+      },
+      {
+        question: '둘 다 비브람인데 그립 차이가 실제로 있나요?',
+        answer: '재질(Vibram Megagrip)은 같지만 러그 깊이와 설계가 달라 험지에서 체감 차이가 있습니다. 스피드고트 6는 러그 5mm에 측면 트랙션 러그까지 더해 젖은 바위·급경사·진흙에서 그립이 최상위(Road Trail Run 10/10)입니다. 히에로 v9는 러그 3.3mm로 자갈·마른 흙길엔 충분하지만 젖은 암반·급경사 기술 코스에서는 스피드고트에 밀립니다. 마른 완만한 지형이면 차이가 작고, 험하고 젖은 지형일수록 스피드고트가 앞섭니다.',
+      },
+    ],
+  },
+  {
     id: 'ankle-sprain-running-shoes-2026',
     slug: 'ankle-sprain-running-shoes-2026',
     title: '러너 발목 염좌 완전 가이드 | 재발이 진짜 무섭다 — 응급처치·균형운동·복귀 프로토콜, 신발은 어디까지 도울까',
