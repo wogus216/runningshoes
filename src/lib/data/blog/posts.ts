@@ -3,6 +3,104 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'asics-novablast-5-vs-6-comparison-2026',
+    slug: 'asics-novablast-5-vs-6-comparison-2026',
+    title: '노바블라스트 5 vs 6 | 세대 비교 — 전족 FF Turbo Squared로 뭐가 달라졌나, 갈아탈까 세일 5를 살까',
+    description: '아식스 노바블라스트 6이 2026년 7월 9일 한국 출시(179,000원)됩니다. 스택·드롭·무게는 5와 거의 같지만, 핵심은 전족부에 처음 들어간 FF Turbo Squared(ATPU 트램폴린 폼)로 전작의 약점이던 전족 반발·힐-전족 전환을 손봤다는 점입니다. 여기에 전족 AsicsGrip(빗길 접지↑)·엔지니어드 위브 어퍼가 더해졌고, 힐 폭은 90→85mm로 좁아졌습니다. 5를 잘 쓰고 있다면 갈아탈지, 세일 들어간 5를 살지 — 실측·공식 스펙으로 정리했습니다.',
+    thumbnail: '/images/blog/asics-novablast-5-vs-6-comparison-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['노바블라스트 6', '노바블라스트 5', '노바블라스트 세대비교', 'FF Turbo Squared', '데일리 트레이너', '아식스', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>스택·드롭·무게는 5와 6이 사실상 같습니다</strong>(41.5/33.5mm·드롭 8mm·253g). 큰 틀은 "같은 노바블라스트"예요</li>
+    <li><strong>핵심 변화는 전족부에 처음 들어간 FF Turbo Squared</strong>(ATPU 트램폴린 폼) — 전작 5의 약점이던 전족 반발·힐-전족 전환을 정조준했습니다. 전족 AsicsGrip으로 빗길 접지도 좋아졌죠</li>
+    <li><strong>새로 산다면 6</strong>(179,000원), <strong>이미 5를 잘 쓰고 600km 이내거나 세일가·넓은 발볼이면 5</strong>가 여전히 합리적입니다(힐 폭 90mm·와이드 확실)</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>지금 새로 산다면 개선판인 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(179,000원, 7/9 출시)</strong>가 낫습니다. 다만 <strong><a href="/shoes/asics-novablast-5">노바블라스트 5</a>를 잘 쓰고 있다면 급히 갈아탈 이유는 적고</strong>, 세일에 들어가면 5가 가성비로 여전히 매력적입니다. 발볼이 넓다면 힐 폭이 더 넓고 와이드가 확실한 5도 고려하세요.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈 비교</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>노바블라스트 5</th><th>노바블라스트 6</th><th>변화</th></tr></thead>
+  <tbody>
+    <tr><td>출시(한국)</td><td>기존</td><td><strong>2026-07-09</strong></td><td>신상</td></tr>
+    <tr><td>무게(US 9)</td><td>255g</td><td>253g</td><td>사실상 동일</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>41 / 33mm</td><td>41.5 / 33.5mm</td><td>사실상 동일</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>동일</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF Blast Max 단일</td><td><strong>FF Blast Max + FF Turbo Squared(전족)</strong></td><td>전족 듀얼 폼 신규</td></tr>
+    <tr><td>전족 아웃솔</td><td>AHAR+ 러버</td><td><strong>AsicsGrip</strong></td><td>빗길 접지↑</td></tr>
+    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>엔지니어드 위브(슈퍼블라스트 3 원단)</td><td>리뉴얼</td></tr>
+    <tr><td>힐 폭</td><td>90mm</td><td>85mm</td><td>-5mm(좁아짐)</td></tr>
+    <tr><td>와이드 옵션</td><td><strong>있음(2E)</strong></td><td>출시 후 확인</td><td>미확정</td></tr>
+    <tr><td>가격(한국)</td><td>169,000원</td><td><strong>179,000원</strong></td><td>+1만원</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 노바5는 RunRepeat 실측 기준, 노바6는 아식스 공식 발표 + RTR/DOR 리뷰 기준(RunRepeat 정량 랩은 미게시). 실측 게시 시 노바6 상세를 업데이트합니다.</p>
+</div>
+
+<h2>가장 큰 차이 — 전족 FF Turbo Squared</h2>
+<p>두 신발의 스택·드롭·무게는 거의 같습니다. 즉 발밑 높이나 무게에서 오는 느낌은 비슷해요. <strong>결정적 차이는 미드솔 구성</strong>입니다.</p>
+<p><strong>노바블라스트 5</strong>는 <strong>FF Blast Max 단일 폼</strong>이었습니다. 부드럽고 통통 튀는 라이드로 호평받았지만, 해외 리뷰(Doctors of Running)에서 <strong>"힐에서 전족으로 넘어가는 전환이 다소 끊긴다"</strong>는 지적이 있었죠.</p>
+<p><strong>노바블라스트 6</strong>은 힐/미드풋엔 기존 FF Blast Max를 유지하되, <strong>전족부에 FF Turbo Squared를 처음 얹었습니다.</strong> FF Turbo Squared는 아식스 상위 폼(<a href="/shoes/asics-megablast">메가블라스트</a> 계열에 쓰인 ATPU 기반)으로, <strong>전족에서 트램폴린 같은 반발</strong>을 더해줍니다. 즉 <strong>5의 약점이던 전족 반발과 전환 끊김을 정조준한 개선</strong>이에요. 같은 위브 어퍼를 쓰는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>와도 결이 이어집니다. 해외 선행 리뷰의 톤은 "극적인 변신이라기보다 약점을 메운 완성도 향상"에 가깝습니다.</p>
+
+<h2>빗길 접지·어퍼</h2>
+<p>노바6는 <strong>전족 아웃솔을 AsicsGrip으로 바꿔 젖은 노면 접지를 개선</strong>했습니다. 장마철·이른 아침 이슬 낀 노면에서 유리하죠. 어퍼도 <strong>슈퍼블라스트 3에 쓰인 엔지니어드 위브 원단</strong>으로 리뉴얼돼 감싸는 느낌과 통기가 다듬어졌습니다. 5의 여름 통기가 약점으로 꼽혔던 만큼 체감 개선이 기대되는 부분입니다(정량 확인은 출시 후).</p>
+
+<h2>발볼·핏 — 여기선 5가 유리할 수 있다</h2>
+<p>한국 러너가 주목할 지점은 <strong>힐 폭</strong>입니다. 노바6는 힐 폭이 <strong>90→85mm로 약간 좁아졌습니다.</strong> 발볼·발뒤꿈치가 넓은 편이라면 6이 조금 더 조일 수 있어요. 게다가 <strong>노바5는 와이드(2E)가 한국에 확실히 나왔지만, 6의 와이드 여부는 출시 시점(7/9) 확인이 필요</strong>합니다. 따라서 <strong>발볼이 넓다면 오히려 5(힐 폭 90mm·와이드 확실)가 안전한 선택</strong>일 수 있습니다. 발볼 기준 후보는 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
+
+<h2>가격·가성비</h2>
+<p>노바6는 <strong>179,000원</strong>으로 5(169,000원)보다 <strong>1만원 올랐습니다</strong>(글로벌 $155 인상 반영). 성능 개선(전족 반발·빗길 접지)을 감안하면 인상폭은 합리적이에요. 다만 <strong>노바5가 세일에 들어가면 15만 원 안팎까지 내려가</strong>, 순수 가성비로는 5가 앞섭니다. "전작 세대라도 검증된 실측(RunRepeat)과 낮은 가격"을 원하면 5, "최신 개선판"을 원하면 6입니다.</p>
+
+<h2>누가 5, 누가 6</h2>
+<ul>
+  <li><strong>노바블라스트 6로 가야 할 사람</strong> — 새로 데일리화를 장만하는 러너, 5의 전족 반발·전환 끊김이 아쉬웠던 러너, 빗길·장마철 접지가 중요한 러너, 최신 개선판을 원하는 러너</li>
+  <li><strong>노바블라스트 5로 충분한 사람</strong> — 이미 5를 잘 쓰고 있고 아직 600km 이내인 러너, 세일가로 가성비를 노리는 러너, <strong>발볼·힐이 넓어 와이드가 필요한 러너</strong>, 검증된 실측 데이터를 선호하는 러너</li>
+  <li><strong>큰 틀은 "같은 신발, 전족만 살렸다"</strong> — 스택·무게가 같아 라이드 성격은 유지됩니다. 5를 잘 쓰고 있다면 급히 갈아탈 이유는 적어요</li>
+</ul>
+<p>출시 전 변경점을 더 자세히 본 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6 미리보기</a>, 같은 시기 데일리 신상과의 대결 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>, 그리고 <a href="/best/daily-trainer">데일리 트레이너 추천</a>도 함께 보세요. 페가수스와의 비교는 <a href="/shoes/nike-pegasus-41">페가수스 41</a> 상세에서 이어집니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">노바블라스트 6 — 신상 데이터 주의</p>
+    <p>노바블라스트 6은 2026년 7월 9일 한국 출시 직후로, RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)이 아직 미게시입니다. 6의 세부 수치는 <strong>아식스 공식 발표 + RTR·DOR 선행 리뷰 + 노바블라스트 5 실측 기준 추정</strong>이며, 한국 정가(179,000원)와 스펙(41.5/33.5mm·드롭 8mm·253g)은 확정입니다. 실측 랩이 게시되면 상세 페이지를 업데이트하겠습니다.</p>
+  </div>
+</div>
+`,
+    faqs: [
+      {
+        question: '노바블라스트 5를 쓰고 있는데 6으로 갈아탈 가치가 있나요?',
+        answer: '이미 5를 잘 쓰고 있고 아직 600km 이내라면 급히 갈아탈 이유는 적습니다. 스택·드롭·무게가 거의 같아 라이드 성격이 유지되기 때문입니다. 다만 5에서 "전족 반발이 아쉽다" "힐에서 전족으로 넘어가는 전환이 끊긴다"고 느꼈다면, 6의 전족 FF Turbo Squared가 바로 그 지점을 개선했으니 갈아탈 가치가 있습니다. 빗길 접지(전족 AsicsGrip)도 좋아졌습니다. 새로 사는 경우라면 개선판인 6을 권합니다.',
+      },
+      {
+        question: '노바블라스트 6과 5, 가격 차이가 얼마나 나나요?',
+        answer: '노바블라스트 6의 한국 정가는 179,000원으로, 5(169,000원)보다 1만원 올랐습니다(글로벌 $155 인상 반영). 성능 개선을 감안하면 합리적인 인상폭입니다. 다만 노바블라스트 5가 세일에 들어가면 15만 원 안팎까지 내려가기 때문에, 순수 가성비로는 5가 앞섭니다. 최신 개선판을 원하면 6, 검증된 실측 데이터와 낮은 가격을 원하면 세일가의 5가 합리적입니다.',
+      },
+      {
+        question: '발볼이 넓은데 노바블라스트 6과 5 중 뭐가 나을까요?',
+        answer: '발볼이 넓다면 오히려 노바블라스트 5가 안전할 수 있습니다. 6은 힐 폭이 90→85mm로 약간 좁아졌고, 와이드(2E) 옵션도 5는 한국에 확실히 나왔지만 6은 출시 시점(7/9) 확인이 필요합니다. 발볼·발뒤꿈치가 넓다면 힐 폭이 더 넓고 와이드가 확실한 5를 고려하거나, 6은 반드시 시착 후 구매하세요.',
+      },
+      {
+        question: '노바블라스트 6의 FF Turbo Squared가 정확히 뭔가요?',
+        answer: '노바블라스트 6에서 전족부에 처음 적용된 반발 폼입니다. 아식스 상위 폼(메가블라스트 등에 쓰인 ATPU 기반)으로, 전족에서 트램폴린 같은 반발을 더해줍니다. 힐/미드풋은 기존 FF Blast Max를 그대로 두고 전족만 고반발 폼을 얹은 듀얼 폼 구조로, 전작 5의 약점이던 전족 반발과 힐-전족 전환 끊김을 개선하는 것이 목적입니다. 가벼운 템포·업템포에서 더 경쾌한 느낌을 기대할 수 있습니다.',
+      },
+    ],
+  },
+  {
     id: 'posterior-tibial-tendon-running-shoes-2026',
     slug: 'posterior-tibial-tendon-running-shoes-2026',
     title: '후경골근건염(안쪽 발목·아치 통증) 완전 가이드 | 평발 러너가 조심할 힘줄 부상 — 여기선 안정화 신발·아치 서포트가 실제로 답이다',
@@ -3795,7 +3893,7 @@ export const blogPosts: BlogPost[] = [
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
     <tr><td>로커</td><td>완만한 가이던스</td><td><strong>공격적 MetaRocker</strong></td></tr>
     <tr><td>토박스 / 와이드</td><td>표준(힐 폭 85mm) / 와이드 없음</td><td><strong>넓음(클리프톤10 라스트) / 와이드 옵션 ○</strong></td></tr>
-    <tr><td>가격</td><td>$155 (한국 18~19만 추정)</td><td>$165 (한국 21~22만 추정)</td></tr>
+    <tr><td>가격</td><td><strong>179,000원</strong> (한국 확정 · $155)</td><td>$165 (한국 21~22만 추정)</td></tr>
   </tbody>
 </table>
 <p class="caption">※ 두 신발 모두 출시 전이라 RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 미게시입니다. 무게는 사이즈 기준을 M9로 통일한 추정치(외신 실측은 노바6 269g·M10.5, 클프로 296g·M10)입니다. 출시 후 실측·한국 정가가 나오면 업데이트합니다.</p>
@@ -3809,7 +3907,7 @@ export const blogPosts: BlogPost[] = [
 <p>반면 클리프톤 프로는 발볼 넓은 호카 유저에게 익숙한 <strong>클리프톤10 라스트를 그대로 쓰고 와이드(2E) 옵션도 제공</strong>합니다. 발볼이 넓거나 체중이 좀 나가는 러너, 장거리 이지런 위주라면 클프로 쪽이 편안합니다. 발볼 기준으로 더 넓은 선택지가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
 
 <h2>무게·가격 — 노바6가 우위</h2>
-<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 추정 253g vs 282g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. 한국 정가는 둘 다 미확정이지만, 전작 기준 노바6는 18~19만 원대, 클프로는 클리프톤10(199,000원)+$10라 21~22만 원대로 예상됩니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
+<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 253g vs 282g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. <strong>노바6 한국 정가는 179,000원으로 확정</strong>됐고(7/9 출시), 클프로는 한국가 미확정(클리프톤10 199,000원 기준 21~22만 원대 예상)입니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
 
 <h2>누가 뭘 골라야 하나</h2>
 <ul>
@@ -3988,6 +4086,7 @@ export const blogPosts: BlogPost[] = [
     thumbnail: '/images/blog/asics-novablast-6-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-23',
+    updatedAt: '2026-07-08',
     category: 'review' as const,
     readingTime: 7,
     tags: ['아식스 노바블라스트 6', '노바블라스트', 'FF Turbo Squared', '쿠션화', '데일리 트레이너', '신상 러닝화'],
@@ -4005,7 +4104,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">👀</span>
   <div class="callout-body">
     <p class="callout-title">7월 1일 출시 — 무엇을 미리 알아둘까</p>
-    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 <strong>2026년 7월 1일 글로벌 출시</strong>(아식스 공식 발표)되며 한국도 곧 이어질 예정입니다. 아직 출시 전이라 RunRepeat 정량 랩은 미게시 상태 — 아래 수치는 <strong>아식스 공식 발표 변경점 + 노바블라스트 5 실측 기준 추정</strong>입니다.</p>
+    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 2026년 7월 1일 글로벌 출시됐고, <strong>한국은 2026년 7월 9일(목) 오전 10시 출시 — 정가 179,000원 확정</strong>입니다(5의 169,000원 대비 +1만원). 상세 스펙은 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에 정리해 뒀습니다. 다만 RunRepeat 정량 랩(SA·에너지 리턴·토박스)은 아직 미게시 상태 — 아래 세부 수치는 <strong>아식스 공식 발표 변경점 + 노바블라스트 5 실측 기준 추정</strong>이며, 실측 게시 시 업데이트합니다.</p>
   </div>
 </div>
 
@@ -4024,7 +4123,7 @@ export const blogPosts: BlogPost[] = [
     <tr><td>아웃솔</td><td>AHAR LO</td><td>+ <strong>AsicsGrip 전족부</strong></td><td>빗길 접지↑</td></tr>
     <tr><td>어퍼</td><td>엔지니어드 메시</td><td>엔지니어드 위브(슈퍼블라스트 3 원단)</td><td>리뉴얼</td></tr>
     <tr><td>힐 폭</td><td>90mm</td><td>85mm</td><td>-5mm(약간 좁아짐)</td></tr>
-    <tr><td>가격</td><td>169,000원</td><td>글로벌 $155 / €160</td><td>한국가 추정 18~19만</td></tr>
+    <tr><td>가격</td><td>169,000원</td><td><strong>179,000원</strong> (글로벌 $155)</td><td>+1만원 (7/9 한국 출시)</td></tr>
   </tbody>
 </table>
 <p class="caption">※ 6세대 수치는 아식스 공식 발표 + 노바블라스트 5 실측 기준 추정입니다. RunRepeat 정량 랩(SA·에너지 리턴·토박스)은 출시 후 게시되면 업데이트합니다.</p>
@@ -4033,8 +4132,8 @@ export const blogPosts: BlogPost[] = [
 <p>이번 세대의 가장 큰 변화는 <strong>전족부에 FF Turbo Squared를 처음 넣은 것</strong>입니다. FF Turbo Squared는 아식스 최상위 폼 계열(메가블라스트 등에 쓰인 ATPU 기반)로, <strong>전족부에서 트램폴린 같은 반발</strong>을 더해줍니다. 힐은 기존 FF Blast Max를 유지하고 전족만 고반발 폼을 얹은 <strong>듀얼 폼 구조</strong>죠.</p>
 <p>이는 5의 "힐-전족 전환이 끊긴다"는 약점을 정조준한 설계로 보입니다. 전족 반발이 살아나면 가벼운 템포·업템포에서 더 경쾌해질 가능성이 큽니다. 같은 위브 어퍼를 쓰는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>, FF Turbo 계열을 공유하는 <a href="/shoes/asics-megablast">메가블라스트</a>와의 관계도 흥미로운 지점입니다.</p>
 
-<h2>한국 출시·가격</h2>
-<p>글로벌 출시는 <strong>2026년 7월 1일</strong>, 가격은 <strong>$155(€160)</strong>입니다. 한국은 글로벌과 비슷한 시기에 이어질 가능성이 높고, 노바블라스트 5의 한국 정가가 169,000원이었던 점을 감안하면 <strong>6세대는 18~19만 원대로 추정</strong>됩니다(확정 시 업데이트). 출시 직후엔 asics.co.kr·직영점에서 시착이 가능할 것입니다.</p>
+<h2>한국 출시·가격 (확정)</h2>
+<p>한국 출시는 <strong>2026년 7월 9일(목) 오전 10시</strong>, 정가는 <strong>179,000원</strong>으로 확정됐습니다(글로벌 $155). 노바블라스트 5(169,000원) 대비 <strong>1만원 인상</strong>으로, 글로벌 인상폭($140→$155)과 비례하는 수준입니다. 아식스 온라인스토어를 비롯해 무신사·ABC마트·플릿러너 등에서 구매할 수 있고, 출시일부터 asics.co.kr·직영점 시착이 가능합니다. 와이드(2E) 옵션은 전작 5엔 있었으나 6은 출시 시점 확인이 필요합니다. 확인된 컬러웨이로는 'Champagne Rose' 등이 있습니다.</p>
 
 <h2>5에서 갈아탈까 — 누구에게</h2>
 <ul>
@@ -4043,7 +4142,7 @@ export const blogPosts: BlogPost[] = [
   <li><strong>5를 잘 쓰고 있고 600km 이내라면</strong> — 스택·무게가 거의 같아 급히 갈아탈 이유는 적습니다. 세일 들어간 5도 여전히 좋은 선택</li>
   <li><strong>발볼 넓은 러너</strong> — 힐 폭이 90→85mm로 약간 좁아졌으니, 출시 후 시착으로 확인하세요</li>
 </ul>
-<p>데일리 쿠션화를 더 비교하려면 <a href="/best/max-cushion">맥스 쿠션 러닝화</a>에서, 같은 아식스 FF Blast 계열(<a href="/shoes/asics-novablast-5">노바블라스트 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>)과의 위치도 참고하세요.</p>
+<p>전작과 세대별로 꼼꼼히 비교하려면 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">노바블라스트 5 vs 6 세대 비교</a>를, 같은 시기 데일리 신상과 겨루는 구도는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>를 보세요. 데일리 쿠션화를 더 넓게 보려면 <a href="/best/daily-trainer">데일리 트레이너 추천</a>, 같은 아식스 FF Blast 계열(<a href="/shoes/asics-novablast-5">노바블라스트 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>)과의 위치도 참고하세요.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
