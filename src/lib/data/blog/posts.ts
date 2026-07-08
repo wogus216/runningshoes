@@ -3,6 +3,168 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'running-shoes-recommend-by-price-2026',
+    slug: 'running-shoes-recommend-by-price-2026',
+    title: '가격대별 러닝화 추천 2026 | 10만·15만·20만원대부터 카본까지 — 예산에 맞는 베스트를 목적별로 골라드립니다',
+    description: '"예산 15만원인데 뭘 사야 하죠?"에 답하는 가격대별 러닝화 추천입니다. 10만원대 입문·가성비부터 15만원대 데일리 격전지, 20만원대 프리미엄 쿠션, 25만원 이상 카본 슈퍼슈즈까지 — 실측 가격·무게·발볼을 기준으로 예산 구간마다 베스트를 목적별(입문·데일리·쿠션·안정·레이싱)로 정리했습니다. 비싼 신발이 항상 정답은 아닙니다. 내 목적과 발에 맞는 "제값 하는 한 켤레"를 한국 러너 기준으로 골라드립니다.',
+    thumbnail: '/images/blog/running-shoes-recommend-by-price-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['가격대별 러닝화', '러닝화 추천', '10만원대 러닝화', '20만원대 러닝화', '입문 러닝화', '카본화 추천', '가성비 러닝화', '예산별 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>예산이 곧 성능은 아닙니다</strong> — 15만~20만원대 "격전지"에 가장 완성도 높은 데일리화가 몰려 있고, 대부분의 러너에게 최고의 가성비 구간입니다. 첫 러닝화라면 여기서 고르세요</li>
+    <li><strong>25만원 이상 카본 슈퍼슈즈는 "레이스 무기"</strong>이지 첫 신발이 아닙니다 — 매일 신는 데일리 한 켤레부터 갖추고, 대회 기록을 노릴 때 추가하는 게 순서예요</li>
+    <li><strong>가격보다 목적(입문·데일리·쿠션·안정·레이싱)과 발볼을 먼저 정하세요</strong> — 같은 값이면 내 발에 맞는 게 정답입니다. 이 글은 구간마다 목적별 베스트를 실측 기준으로 정리했습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">예산별 한 줄 결론</p>
+    <p><strong>~15만원</strong>: 가성비 입문 → <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>·<a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>. <strong>15만~20만원(추천 구간)</strong>: 데일리 올라운더 → <a href="/shoes/asics-novablast-5">노바블라스트 5</a>·<a href="/shoes/brooks-ghost-17">고스트 17</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a>. <strong>20만~25만원</strong>: 프리미엄 쿠션 → <a href="/shoes/new-balance-1080-v15">1080 V15</a>·<a href="/shoes/hoka-bondi-9">본디 9</a>. <strong>25만원+</strong>: 레이스 카본 → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>.</p>
+  </div>
+</div>
+
+<h2>예산을 정하기 전에 — 세 가지만 먼저</h2>
+<p>"러닝화 얼마짜리 사야 해요?"라는 질문에는 사실 세 개의 질문이 숨어 있습니다. 가격표를 보기 전에 이것부터 정하면 돈을 훨씬 아낄 수 있어요.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>먼저 정할 것</th><th>왜 중요한가</th></tr></thead>
+  <tbody>
+    <tr><td><strong>① 목적</strong></td><td>매일 조깅용(데일리)인지, 무릎 보호용 쿠션인지, 평발 안정화인지, 대회 기록용 레이싱인지에 따라 <strong>같은 예산에서도 사야 할 신발이 완전히 달라집니다</strong>. 목적이 정해지면 후보가 절반으로 줄어요</td></tr>
+    <tr><td><strong>② 발볼</strong></td><td>한국 러너는 앞발이 넓은 편입니다. 발볼이 넓다면 예산보다 <strong>토박스 너비·와이드 옵션</strong>이 먼저예요. 좁은 신발은 아무리 좋아도 물집·발톱 멍의 원인이 됩니다(<a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드</a>)</td></tr>
+    <tr><td><strong>③ 사이즈</strong></td><td>브랜드마다 실측이 다릅니다. "US 9 = 몇 mm?"부터 정확히 알고 사야 반품을 줄여요(<a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>한 가지 더 — <strong>비싼 게 항상 좋은 건 아닙니다.</strong> 카본 슈퍼슈즈(30만원대)는 레이스에서 몇 초를 다투는 무기이지 매일 편하게 신는 신발이 아니에요. 반대로 15만원대에도 완성도 최고의 데일리화가 넘칩니다. 아래는 <strong>실제 판매가·무게·발볼을 기준으로</strong> 예산 구간마다 목적별 베스트를 뽑은 것입니다.</p>
+
+<h2>① ~15만원 — 첫 러닝화·최소 예산 (입문·가성비)</h2>
+<p>가장 예산이 타이트한 구간입니다. 이 가격대는 선택지가 많지 않지만, "일단 뛰기 시작하는 데" 부족함 없는 신발이 분명히 있습니다. 첫 러닝화이거나, 입문용으로 부담 없이 시작하고 싶다면 여기서 고르세요.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>이런 사람에게</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>149,000</td><td>257g</td><td>입문·쿠션(와이드)</td><td>발볼 넓은 입문자, 무난한 데일리</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000</td><td>245g</td><td>데일리·가벼운 스피드</td><td>조깅+가끔 템포까지 한 켤레로</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000</td><td>236g</td><td>경량 데일리</td><td>가볍게 뛰고 싶은 입문자(발볼 좁음)</td></tr>
+    <tr><td><a href="/shoes/li-ning-red-hare-9-pro">리닝 레드헤어 9 프로</a></td><td>140,000</td><td>222g</td><td>가성비 데일리</td><td>가벼운 반발을 최저가로</td></tr>
+    <tr><td><a href="/shoes/li-ning-red-hare-9">리닝 레드헤어 9</a></td><td>95,000</td><td>320g</td><td>초입문(10만 미만)</td><td>예산 최소, 걷기+가벼운 조깅</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">이 구간의 선택</p>
+    <p><strong>발볼이 넓으면 <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a></strong>(와이드 성향·부드러운 쿠션), <strong>가끔 빠르게도 뛰고 싶으면 <a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a></strong>(245g·데일리+템포 겸용)가 무난합니다. 단, 이 구간을 굳이 아끼기보다 <strong>2~3만원만 더 얹어 15만원대로 올라가면 완성도가 크게 뛴다</strong>는 점은 기억하세요. 첫 러닝화 고르는 법은 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>에 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>② 15만~20만원 — 데일리 격전지 (가장 추천하는 구간)</h2>
+<p>솔직히 말하면 <strong>대부분의 러너에게 가장 가성비 좋은 구간</strong>입니다. 각 브랜드의 간판 데일리 트레이너가 전부 여기 모여 있고, 완성도·내구성·쿠션이 균형을 이룹니다. 첫 제대로 된 러닝화, 매일 신는 주력 한 켤레라면 이 구간에서 목적에 맞게 고르는 걸 추천합니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>강점</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a></td><td>169,000</td><td>255g</td><td>반발 데일리</td><td>통통 튀는 재미·다목적</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000</td><td>289g</td><td>무난 데일리</td><td>부드럽고 안정적, 실패 없는 무난함</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000</td><td>281g</td><td>올라운더 스테디셀러</td><td>가성비·범용성 최강, 어디에나</td></tr>
+    <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000</td><td>232g</td><td>경량 데일리</td><td>232g 가벼운 몸놀림·템포까지</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></td><td>199,000</td><td>281g</td><td>맥스쿠션 입구</td><td>무릎 보호·장거리, 푹신함 최상</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>189,000</td><td>300g</td><td>안정화</td><td>평발·과회내 지지, 대표 안정화</td></tr>
+  </tbody>
+</table>
+</div>
+<p><strong>목적별로 정리하면 이렇게 갈립니다.</strong></p>
+<ul>
+  <li><strong>재미·다목적</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a>. 통통 튀는 반발로 조깅부터 가벼운 스피드까지 한 켤레로 소화합니다. 페가수스와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바5 vs 페가41</a>에 있어요.</li>
+  <li><strong>무난·안정 최우선</strong> → <a href="/shoes/brooks-ghost-17">고스트 17</a>. "고민하기 싫으면 고스트"라는 말이 있을 만큼 실패가 없는 데일리입니다.</li>
+  <li><strong>무릎이 걱정·장거리 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>. 맥시멀 쿠션의 입구로, 무릎·관절 보호가 필요하면 여기부터. <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 님버스 28</a>도 참고하세요.</li>
+  <li><strong>평발·과회내(신발 안쪽이 닳는다)</strong> → <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>. 내 회내 유형이 헷갈리면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 가이드</a>로 먼저 확인하세요.</li>
+</ul>
+
+<h2>③ 20만~25만원 — 프리미엄 데일리·맥스쿠션</h2>
+<p>한 단계 위의 폼(미드솔 소재)과 마감을 원할 때입니다. 이 구간은 <strong>슈퍼크리티컬 폼(더 가볍고 반발 좋은 신소재)</strong>을 쓴 프리미엄 쿠션화와, 카본 없이도 빠른 "슈퍼 트레이너"가 핵심입니다. 매일 신으면서도 확실히 좋은 착화감을 원하는 러너에게 맞습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>강점</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 V15</a></td><td>209,000</td><td>216g</td><td>프리미엄 쿠션</td><td>216g으로 가벼운데 푹신, 완성도 최상</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td><td>209,000</td><td>293g</td><td>부드러운 쿠션</td><td>말랑한 발밑·데일리 럭셔리</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 Evo SL</a></td><td>209,000</td><td>223g</td><td>가성비 슈퍼트레이너</td><td>카본 없이 빠른 반발, 훈련·레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a></td><td>219,000</td><td>241g</td><td>템포 트레이너</td><td>나일론 플레이트, 스피드 훈련 최적</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>229,000</td><td>303g</td><td>맥시멀 쿠션</td><td>무릎·관절 보호 최강, 최대 스택</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout">
+  <span class="callout-icon">🦵</span>
+  <div class="callout-body">
+    <p class="callout-title">이 구간의 선택</p>
+    <p><strong>가볍고 푹신한 만능 쿠션</strong>이면 <a href="/shoes/new-balance-1080-v15">1080 V15</a>(216g·프리미엄 쿠션의 정석), <strong>무릎·관절 보호를 최우선</strong>하면 <a href="/shoes/hoka-bondi-9">본디 9</a>(<a href="/blog/hoka-bondi-9-review">상세 후기</a>)입니다. <strong>훈련과 레이스를 한 켤레로</strong> 겸하고 싶다면 카본 없이 빠른 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>(<a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">가성비 슈퍼트레이너 리뷰</a>)이나 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>가 답입니다. 맥스쿠션과 무릎 보호의 관계는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션 무릎 보호 가이드</a>에 정리했어요.</p>
+  </div>
+</div>
+
+<h2>④ 25만원 이상 — 카본 슈퍼슈즈 (레이스 무기)</h2>
+<p>카본 플레이트 + 고반발 폼으로 <strong>기록을 앞당기는 레이스 전용 신발</strong>입니다. 반드시 알아둘 것 — 슈퍼슈즈는 <strong>매일 신는 신발이 아니고, 첫 러닝화는 더더욱 아닙니다.</strong> 데일리 한 켤레를 갖춘 뒤, 대회 기록을 노릴 때 추가하는 게 순서예요. 카본화의 원리·초보 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 비교</a>에 자세히 있습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>이런 러너에게</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000</td><td>193g</td><td>입문 카본</td><td>첫 카본화, 훈련+레이스 겸용 가성비</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></td><td>299,000</td><td>200g</td><td>레이스(마라톤)</td><td>풀코스 기록 도전(발볼 좁음)</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>206g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000</td><td>166g</td><td>레이스(스피드)</td><td>166g 초경량, 5K~하프 스피드</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a></td><td>319,000</td><td>198g</td><td>레이스(넓은 발)</td><td>발볼 넓어도 신는 슈퍼슈즈(74.5mm)</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>349,000</td><td>201g</td><td>레이스(풀 끝판)</td><td>풀코스 최대 추진, 상급자용</td></tr>
+  </tbody>
+</table>
+</div>
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">카본화, 이것만은</p>
+    <p><strong>첫 카본이면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></strong>(22만원대·193g)로 시작하세요. 30만원대 엘리트 레이서는 반발이 강한 대신 <strong>발·종아리 부담이 커서 근력이 받쳐줘야</strong> 하고, 내구성도 데일리화보다 짧습니다(레이스·포인트 훈련 위주). <strong>발볼이 넓다면</strong> 좁은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>보다 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(<a href="/blog/new-balance-sc-elite-v5-review">후기</a>)가 훨씬 편합니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 보기 — 상황별 딱 한 켤레</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>내 상황</th><th>예산</th><th>추천</th></tr></thead>
+  <tbody>
+    <tr><td>이제 막 러닝 시작, 최소 예산</td><td>~15만원</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a> / <a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a></td></tr>
+    <tr><td>제대로 된 첫 데일리 한 켤레</td><td>15만~20만원</td><td><a href="/shoes/asics-novablast-5">노바블라스트 5</a> / <a href="/shoes/nike-pegasus-41">페가수스 41</a></td></tr>
+    <tr><td>무릎·관절이 걱정된다</td><td>20만~23만원</td><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a> / <a href="/shoes/hoka-bondi-9">본디 9</a></td></tr>
+    <tr><td>평발·과회내(안쪽이 닳는다)</td><td>19만원</td><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a></td></tr>
+    <tr><td>훈련·레이스 한 켤레로</td><td>21만원</td><td><a href="/shoes/adidas-adizero-evo-sl">Evo SL</a> / <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td></tr>
+    <tr><td>대회 기록 도전(첫 카본)</td><td>23만원</td><td><a href="/shoes/asics-magic-speed-5">매직스피드 5</a></td></tr>
+    <tr><td>풀코스 기록 경신(상급)</td><td>30만원+</td><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a> / <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<h3>Q. 첫 러닝화, 얼마짜리를 사야 하나요?</h3>
+<p><strong>15만~20만원대</strong>를 추천합니다. 이 구간에 각 브랜드 간판 데일리화가 몰려 있어 완성도·내구성·쿠션의 균형이 가장 좋습니다. 10만원대 초반도 시작은 가능하지만, 2~3만원 차이로 완성도가 크게 올라가요. 반대로 첫 신발로 30만원대 카본을 사는 건 <strong>권하지 않습니다</strong> — 레이스 전용이라 매일 신기엔 부담스럽고 내구성도 짧습니다.</p>
+<h3>Q. 비싼 신발이 무릎에 더 좋나요?</h3>
+<p>가격보다 <strong>쿠션·스택 높이</strong>가 중요합니다. 무릎 보호가 목적이면 20만원대 맥스쿠션(<a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>)이 30만원대 카본 레이서보다 훨씬 낫습니다. 카본화는 반발이 강해 오히려 다리에 부담이 될 수 있어요. 자세한 건 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션 무릎 보호 가이드</a>를 보세요.</p>
+<h3>Q. 발볼이 넓은데 가격대별로 뭘 봐야 하나요?</h3>
+<p>예산보다 <strong>토박스 너비·와이드 옵션</strong>이 먼저입니다. ~15만원은 <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>(와이드 성향), 카본에서는 좁은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>보다 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(74.5mm)가 편합니다. 브랜드별 발볼 정리는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드</a>에 있어요.</p>
+<h3>Q. 카본 슈퍼슈즈, 초보도 살 수 있나요?</h3>
+<p>살 수는 있지만 <strong>매일 신는 용도로는 부적합</strong>합니다. 첫 카본이면 22만원대 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a>처럼 반발이 순한 "입문 카본"으로 시작하고, 엘리트 레이서(30만원대)는 근력이 붙고 대회 기록을 노릴 때 추가하세요. 원리와 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>에 정리했습니다.</p>
+<h3>Q. 데일리 한 켤레로 훈련도 레이스도 하고 싶어요.</h3>
+<p>20만원대 "슈퍼 트레이너"가 답입니다. <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>(카본 없이 빠른 반발)이나 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(나일론 플레이트)는 조깅·템포·5K 레이스까지 한 켤레로 소화합니다. 다만 풀코스 기록을 진지하게 노린다면 레이스용 카본은 별도로 갖추는 게 좋아요.</p>
+`,
+  },
+  {
     id: 'runners-knee-patellofemoral-pain-2026',
     slug: 'runners-knee-patellofemoral-pain-2026',
     title: '러너스 니(무릎 앞 통증·슬개대퇴 통증 증후군) 완전 가이드 | 계단 내려갈 때 시큰하다면 — 원인·자가진단·둔근 강화·신발의 진짜 역할',
