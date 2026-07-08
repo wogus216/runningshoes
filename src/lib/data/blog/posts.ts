@@ -3,6 +3,138 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'new-balance-hierro-v9-trail-review-2026',
+    slug: 'new-balance-hierro-v9-trail-review-2026',
+    title: '뉴발란스 히에로 v9 리뷰 | 7월 신컬러 출시 — 비브람 메가그립 쿠션 트레일화, v8 대비 뭐가 달라졌나',
+    description: '이번 주(7/9) 신규 컬러웨이가 풀리는 뉴발란스 히에로 v9를 정밀 리뷰합니다. RunRepeat 랩 85점(Great)을 받은 쿠션 올라운드 트레일화로, v8 대비 힐 스택이 5mm 높아지고 플랫폼이 단단해졌습니다. Vibram Megagrip 아웃솔·SA 131 쿠션·600km 내구성으로 자갈길·로드투트레일 장거리에 강하지만, 기술 암반이나 힐 스트라이커에겐 맞지 않습니다. 토박스 73.4mm·4mm 저드롭·189,000원 가성비까지 한국 트레일 러너 기준으로 정리했습니다.',
+    thumbnail: '/images/blog/new-balance-hierro-v9-trail-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-08',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['히에로 v9', '뉴발란스 트레일화', '트레일 러닝화', '쿠션 트레일화', '비브람 메가그립', '신상 러닝화', '트레일화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>이번 주 한국 트레일 신상의 주인공은 히에로 v9입니다</strong> — 7/9 신규 컬러웨이가 풀립니다. 모델 자체는 이미 판매 중이지만 RunRepeat 랩 <strong>85점(Great)</strong>을 받은 완성도 높은 쿠션 올라운드 트레일화예요</li>
+    <li><strong>v9의 핵심은 "더 푹신하고 더 단단해졌다"</strong> — v8 대비 힐 스택 +5mm, 비틀림 강성 5/5로 상향. 유연한 접지감에서 "높은 쿠션 + 안정 플랫폼"으로 성격이 바뀌었습니다</li>
+    <li><strong>자갈길·로드투트레일 장거리엔 강하지만, 젖은 바위·급경사 기술 암반엔 약합니다</strong>(Technical 58점). 4mm 저드롭이라 힐 스트라이커보다 미드풋·포어풋 착지 러너에게 맞아요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥾</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>자갈길·둘레길·로드투트레일을 푹신하게 오래 달리고 싶은 러너</strong>에게 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>는 189,000원에 비브람 그립·뛰어난 내구성을 주는 좋은 선택입니다. 다만 <strong>험한 기술 트레일러</strong>라면 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>, <strong>더 푹신한 울트라 컴포트</strong>라면 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>가 낫습니다.</p>
+  </div>
+</div>
+
+<h2>이번 주(7/7~7/13) 러닝화 신상 브리핑</h2>
+<p>7월 둘째 주 한국 러닝화 신상은 생각보다 조용합니다. 그중 <strong>실제로 지금 한국에서 살 수 있고, 데이터도 탄탄한 신상은 뉴발란스 히에로 v9의 신규 컬러웨이(7/9)</strong>가 사실상 유일합니다. 나머지 화제작들은 아직 "글로벌 소식"이거나 러닝화가 아니에요.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>이번 주 상황</th><th>정리</th></tr></thead>
+  <tbody>
+    <tr><td><strong>뉴발 히에로 v9</strong></td><td>7/9 한국 신컬러 드롭 · 189,000원</td><td>✅ 지금 구매 가능한 쿠션 트레일화 (이 글의 주인공)</td></tr>
+    <tr><td>호카 클리프톤 프로</td><td>글로벌 7/9 출시($165) · <strong>한국 출시일·정가 미정</strong></td><td>데일리 화제작이나 한국 발매는 대기 (<a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바6 vs 클프로 비교</a> 참고)</td></tr>
+    <tr><td>뉴발 AC Runner v1</td><td>7/10 출시</td><td>러닝화 이름이지만 실질은 <strong>라이프스타일 하이프 스니커</strong> (러닝 스펙 미공개)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>그래서 이 글은 <strong>지금 바로 신을 수 있는 히에로 v9</strong>에 집중합니다. 클리프톤 프로는 한국 정가가 확정되면 별도로 다루겠습니다.</p>
+
+<h2>히에로 v9는 어떤 신발인가</h2>
+<p>뉴발란스 <strong>Fresh Foam X 히에로(Hierro)</strong>는 브랜드의 대표 <strong>쿠션 올라운드 트레일화</strong>입니다. "험한 산악 기술 코스"용이 아니라, <strong>자갈길·임도·둘레길·로드투트레일(도로+트레일 혼합)</strong>처럼 비교적 완만한 지형을 <strong>푹신하게 오래</strong> 달리는 데 특화됐죠. 도로 데일리로 치면 맥스쿠션 계열(<a href="/shoes/new-balance-1080-v15">1080</a> 같은)의 트레일 버전이라고 보면 됩니다.</p>
+<p>이번 v9는 RunRepeat 랩 테스트에서 <strong>100점 만점에 85점(Great)</strong>을 받았습니다. 세부 점수를 보면 성격이 분명하게 드러납니다 — <strong>Gravel(자갈길) 78 · Versatile(범용) 86 · Technical(기술 지형) 58</strong>. 범용성과 자갈길에서 강하고, 험지 기술성에선 약하다는 뜻입니다.</p>
+
+<h2>v8 → v9, 뭐가 달라졌나</h2>
+<p>히에로 v9의 변화는 한 문장으로 <strong>"쿠션을 키우고, 플랫폼을 단단하게 잡았다"</strong>입니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>v8</th><th>v9</th><th>변화</th></tr></thead>
+  <tbody>
+    <tr><td>힐 스택(실측)</td><td>32.2mm</td><td><strong>37.3mm</strong></td><td>+5.1mm (쿠션↑)</td></tr>
+    <tr><td>전족부 폼</td><td>24.1mm</td><td><strong>33.1mm</strong></td><td>+37% (앞발 쿠션↑)</td></tr>
+    <tr><td>무게(실측)</td><td>297g</td><td>309g</td><td>+12g</td></tr>
+    <tr><td>종방향 강성</td><td>11.0N</td><td><strong>18.2N</strong></td><td>+65% (단단·롤링↑)</td></tr>
+    <tr><td>비틀림 강성</td><td>—</td><td><strong>5/5</strong></td><td>최고 등급(안정↑)</td></tr>
+    <tr><td>지오메트리</td><td>플랫</td><td><strong>락커 도입</strong></td><td>구름 전환</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 수치는 RunRepeat 캘리퍼 실측 기준. 뉴발란스 공식 발표 스펙은 힐 42mm/전족 38mm/드롭 4mm로, 랩 실측과는 차이가 있습니다(브랜드 공식 스펙 vs 실측 괴리는 흔합니다).</p>
+</div>
+<p>정리하면 v8이 "유연하고 낮은 트레일화"였다면, v9는 <strong>"쿠션 두껍고 단단한 플랫폼"</strong>으로 성격이 이동했습니다. 발밑이 더 든든하고 안정적으로 굴러가는 대신, 예전의 지면 감각·유연함은 줄었어요. 장거리 컴포트를 원하면 반가운 변화이고, 민첩한 접지감을 좋아했다면 아쉬운 변화입니다.</p>
+
+<h2>랩 데이터로 본 실력</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>측정 항목</th><th>수치</th><th>의미</th></tr></thead>
+  <tbody>
+    <tr><td>충격 흡수(SA)</td><td>힐 131 / 전족 124</td><td>쿠션 넉넉 — "발밑에 폼이 많다"는 평</td></tr>
+    <tr><td>에너지 리턴</td><td>61.9%</td><td>중간 — 빠른 반발용은 아님</td></tr>
+    <tr><td>미드솔 경도(HA)</td><td>14.6</td><td>중간(약간 단단한 쪽) 안정형</td></tr>
+    <tr><td>토박스(엄지)</td><td>73.4mm</td><td>표준 — 다만 "토룸 좁다" 지적</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip · 러그 3.3mm</td><td>마른 흙·자갈 그립 신뢰</td></tr>
+    <tr><td>내구성</td><td>마모 0.9mm · 힐 패딩 5/5</td><td><strong>매우 우수</strong> — 오래 신는다</td></tr>
+    <tr><td>통기성</td><td>3/5</td><td>중간 — 한여름엔 다소 더움</td></tr>
+  </tbody>
+</table>
+</div>
+<p>가장 돋보이는 건 <strong>내구성</strong>입니다. 아웃솔 마모가 0.9mm에 그칠 만큼 단단하고(Vibram Megagrip), 힐 패딩 내구도 5/5 만점이라 <strong>오래 신어도 무너지지 않습니다</strong>. 189,000원에 600km를 기준 잡으면 <strong>km당 약 315원</strong>으로, 트레일 쿠션화 중 가성비가 좋은 편이에요.</p>
+
+<h2>발볼·핏 — 한국 러너가 볼 것</h2>
+<p>토박스는 엄지 기준 <strong>73.4mm로 "표준"</strong> 범위지만, RunRepeat이 단점으로 <strong>"토룸(발가락 공간)이 좁다"</strong>고 콕 집었습니다. 발볼이 넓은 한국 러너라면 <strong>반 사이즈 여유를 두거나 시착</strong>을 권합니다. 미국 시장엔 <strong>2E 와이드</strong>가 있지만, <strong>한국 공식몰 와이드 판매 여부는 확인되지 않았습니다</strong>(구매 전 확인 필요). 발볼이 정말 넓다면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
+<p>드롭이 <strong>4mm로 낮은 편</strong>입니다. 저드롭은 미드풋·포어풋으로 착지하는 러너에겐 자연스럽지만, <strong>뒤꿈치부터 강하게 딛는 힐 스트라이커에겐 아킬레스·종아리 부담</strong>이 될 수 있습니다. RunRepeat도 "낮은 드롭이 일부 힐 스트라이커에겐 안 맞는다"를 단점으로 꼽았어요. 본인이 힐 착지 성향이라면 이 점을 감안하세요.</p>
+
+<h2>어떤 지형에 맞나 — 자갈은 O, 암반은 △</h2>
+<p>히에로 v9의 정체성은 <strong>"완만한 지형용 쿠션 트레일화"</strong>입니다. Vibram Megagrip 3.3mm 러그는 <strong>마른 흙길·자갈·임도·둘레길</strong>에서 신뢰할 만하고, 두툼한 쿠션이 <strong>로드투트레일(도로 접근 구간이 섞인 코스)</strong>에서 특히 편합니다.</p>
+<p>반대로 <strong>젖은 바위·진흙·급경사 암반</strong> 같은 진짜 기술 코스에선 한계가 있습니다(Technical 58점). 두껍고 단단한 플랫폼은 험지에서 오히려 둔하게 느껴질 수 있고, 록플레이트가 없어 날카로운 돌 자극도 그대로 올라옵니다. <strong>"험한 산"보다 "긴 둘레길·자갈 트레일"</strong>이 이 신발의 무대예요. 여러 지형을 아우르는 만능 그립이 필요하면 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">트레일화 3파전(스피드고트 6 vs 펄사 vs 아그라빅)</a>을 함께 보세요.</p>
+
+<h2>누가 사야 하나</h2>
+<ul>
+  <li><strong>히에로 v9가 맞는 러너</strong> — 자갈길·둘레길·임도·로드투트레일을 <strong>푹신하게 오래</strong> 달리는 러너, 쿠션과 안정성을 우선하는 트레일 러너, 하이킹 겸용을 찾는 러너, 미드풋·포어풋 착지 러너, 내구성·가성비를 중시하는 러너</li>
+  <li><strong>다른 걸 보는 게 나은 러너</strong> — 젖은 바위·급경사 기술 코스 위주(→ <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>), 더 푹신한 울트라 컴포트(→ <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>), 빠른 트레일 레이싱, 발볼이 매우 넓은데 와이드가 꼭 필요한 러너</li>
+</ul>
+<p>같은 쿠션 트레일 계열 대안으로는 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>(더 만능 그립·기술 지형 강함)와 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(더 푹신·울트라 특화, 와이드 있음)가 있습니다. 세 켤레를 성격별로 비교한 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종 비교</a>와 <a href="/best/trail">트레일화 추천 순위</a>도 참고하세요.</p>
+
+<h2>이번 주 다른 신상 — 짧게</h2>
+<p><strong>호카 클리프톤 프로</strong>는 글로벌 7/9 출시($165)로 이번 주 최대 화제작이지만, <strong>한국 출시일과 정가가 아직 확정되지 않았습니다.</strong> 클리프톤 라인에 반발형 ProGlide+ 폼을 얹은 데일리 트레이너로, 한국 발매가 확정되면 별도로 다루겠습니다. 성격이 궁금하면 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로 비교</a>에 정리해 뒀습니다.</p>
+<p><strong>뉴발 AC Runner v1</strong>은 7/10 출시로 이름은 "러너"지만, 러닝 전문 리뷰도 스택·드롭 스펙도 공개되지 않은 <strong>라이프스타일 하이프 스니커</strong>에 가깝습니다(Klutch Athletics 콜라보). 진지한 트레이닝화로 기대하고 사면 실망할 수 있으니 참고하세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">데이터 출처</p>
+    <p>스펙·랩 수치는 <strong>RunRepeat 실측</strong>(85/100 Great)과 뉴발란스 공식 발표 기준입니다. 한국 정가는 기존 컬러웨이 판매가(189,000원)를 따랐으며, 신규 컬러웨이도 동일 가격대로 예상됩니다. 클리프톤 프로의 한국 출시·정가는 미확정(글로벌 정보만 확인)이며, 확정되면 업데이트하겠습니다.</p>
+  </div>
+</div>
+`,
+    faqs: [
+      {
+        question: '히에로 v9, 초보 트레일 러너도 신을 수 있나요?',
+        answer: '네, 오히려 입문에 좋은 편입니다. 쿠션이 두툼하고(SA 힐 131) 비틀림 강성 5/5로 플랫폼이 안정적이라, 발목·무릎 부담이 적고 자갈길·둘레길에서 편안합니다. 다만 4mm 저드롭이라 뒤꿈치로 강하게 착지하는 힐 스트라이커라면 아킬레스에 약간 부담이 될 수 있으니, 처음엔 짧은 거리부터 적응하는 것을 권합니다. 험한 기술 코스가 아닌 완만한 트레일부터 시작한다면 좋은 입문 트레일화입니다.',
+      },
+      {
+        question: '발볼이 넓은데 히에로 v9 신어도 되나요?',
+        answer: '토박스가 엄지 기준 73.4mm로 표준 범위지만, RunRepeat이 "토룸(발가락 공간)이 좁다"고 지적했습니다. 발볼이 넓다면 반 사이즈 여유를 두거나 시착 후 구매를 권합니다. 미국 시장엔 2E 와이드가 있으나 한국 공식몰 판매 여부는 확인되지 않았으니, 와이드가 꼭 필요하다면 구매 전 확인하거나 와이드 옵션이 확실한 살로몬 울트라 글라이드 4 와이드를 고려하세요.',
+      },
+      {
+        question: '히에로 v9 vs 스피드고트 6, 뭐가 다른가요?',
+        answer: '둘 다 쿠션 트레일화지만 무대가 다릅니다. 히에로 v9는 자갈길·임도·로드투트레일 같은 완만한 지형에 최적화된 "쿠션 올라운더"이고, 호카 스피드고트 6는 젖은 바위·진흙·급경사까지 아우르는 "만능 그립" 성격이 강합니다. 험한 기술 코스를 자주 간다면 스피드고트, 둘레길·자갈 트레일을 푹신하게 오래 달린다면 히에로가 맞습니다.',
+      },
+      {
+        question: '히에로 v9로 도로(로드)도 뛸 수 있나요?',
+        answer: '가능하지만 도로 전용은 아닙니다. 두툼한 쿠션 덕에 트레일 접근용 도로 구간(로드투트레일)은 편안하게 소화하지만, Vibram Megagrip 러그(3.3mm)가 아스팔트에서는 마모가 빨라지고 발밑이 다소 딱딱하게 느껴질 수 있습니다. 도로 위주라면 같은 뉴발의 1080 v15 같은 로드 쿠션화가, 트레일 위주에 가끔 도로가 섞인다면 히에로가 낫습니다.',
+      },
+      {
+        question: '이번 주 나오는 신컬러와 기존 컬러, 성능 차이가 있나요?',
+        answer: '없습니다. 7/9 한국에 풀리는 것은 히에로 v9의 신규 컬러웨이일 뿐, 미드솔·아웃솔·핏 등 성능 사양은 기존 v9와 동일합니다. 즉 이 리뷰의 모든 수치와 평가는 신컬러에도 그대로 적용됩니다. 컬러 취향에 따라 고르면 되고, 기존 컬러가 세일 중이라면 그쪽이 가성비가 더 좋을 수 있습니다.',
+      },
+    ],
+  },
+  {
     id: 'running-shoes-recommend-by-price-2026',
     slug: 'running-shoes-recommend-by-price-2026',
     title: '가격대별 러닝화 추천 2026 | 10만·15만·20만원대부터 카본까지 — 예산에 맞는 베스트를 목적별로 골라드립니다',
