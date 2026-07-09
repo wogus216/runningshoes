@@ -52,6 +52,8 @@
 
 - [ ] **saucony-endorphin-elite-3 랩 데이터 갱신** (2026-06-30 신발 DB 생성 + 단독 프리뷰 발행 완료): 신발 DB(`saucony-endorphin-elite-3`)·프리뷰글(`saucony-endorphin-elite-3-preview-2026`) 작성 완료. **확정값 반영**: 207g(전작 +10g)·힐39.5/전족31.5mm·드롭8mm·포크형 카본·직각형 넓은 토박스(엘2 narrow→standard)·측면컷아웃 제거로 안정성 5(추정)·369,000원·7/1 한국출시. **미확정(추정 표기됨)**: 충격흡수 SA·에너지리턴% 등 RunRepeat 랩 미게시 → 엘리트2(80.6%) 기준 추정으로 detailedSpecs에 '추정' 명시. 후속 — RunRepeat 엘리트3 랩 게시 시 ① specs(responsiveness 9/cushioning 7) 실측 보정 ② detailedSpecs 에너지리턴 확정 ③ 라인업 가이드(`saucony-endorphin-lineup-2026-guide`) 표의 엘리트3 잠정 수치(~197g 엘2참고치)도 207g 확정값으로 갱신. 재확인 2026-09. 출처: BITR(Tier B)·DOR·RTR(5인 9.4/10)·saucony.co.kr 교차확인.
 
+- [ ] **hoka-clifton-pro** (추가 2026-07-09, 글로벌 출시 당일 프리뷰 발행): 블로그 프리뷰(`hoka-clifton-pro-preview-2026`) 발행 완료 — BITR(Tier B, Design A/Value A/Performance B)·RTR(8.7~9.2/10, 클리프톤11과 5개 항목 비교) 실측 종합. 확정: $165·296g(M)/242g(W)·42/34mm·8mm 드롭·ProGlide+(초임계 EVA)·공격적 MetaRocker·거셋 텅. **한국 출시 자체가 미확인**(hoka.com/ko-kr 미인덱싱, 러너스클럽/굿러너/다나와/무신사/네이버쇼핑 리스팅 전무, 클리프톤10 출시 때와 달리 한국 언론 보도 없음) → **신발 DB 추가 보류**. RunRepeat 랩(SA/HA/에너지리턴/토박스mm)도 미게시(404). 재확인 트리거: ① 한국 정식 출시·정가 확정 시 신발 DB `hoka-clifton-pro` 추가 + 프리뷰를 정식 리뷰로 전환 ② RunRepeat 랩 게시 시 정량 수치 반영. 재확인 시점 **2026-09**.
+
 ## 완료
 
 - [x] **nike-pegasus-42** (추정 입력 2026-04-22 → 실측 갱신 2026-05-07)
