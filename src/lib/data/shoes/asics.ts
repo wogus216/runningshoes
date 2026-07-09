@@ -1516,6 +1516,9 @@ export const asicsShoes: Shoe[] = [
       },
     ],
     similarShoes: ['hoka-tecton-x-3', 'adidas-terrex-agravic-speed-ultra'],
+    relatedPosts: [
+      { slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 메타후지 트레일' },
+    ],
   },
   {
     id: 'asics-gel-venture-10',

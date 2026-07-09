@@ -84,6 +84,7 @@ export const salomonShoes: Shoe[] = [
     ],
     similarShoes: ['hoka-speedgoat-6', 'salomon-ultra-glide-4'],
     relatedPosts: [
+      { slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 메타후지 트레일' },
       { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },
       { slug: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026', title: '살로몬 트레일 3종 — 펄사 vs 울트라 글라이드 4 vs S/LAB' },
     ],

@@ -3,6 +3,98 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
+    slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
+    title: '트레일화 3파전 | 스피드고트 6 vs 펄사 vs 메타후지 트레일 — 만능 그립 · 가벼운 올라운드 · 평탄 카본레이스',
+    description:
+      '트레일화를 고를 때 흔히 하는 실수가 "다 비슷한 트레일화"라고 생각하는 겁니다. 스피드고트 6(20.5만)는 어떤 지형에서도 무난한 만능 그립 베스트셀러, 살로몬 펄사(21만)는 근교 트레일을 가볍게 즐기는 올라운드 데일리, 아식스 메타후지 트레일(27.9만)은 카본 플레이트로 평탄한 그래블·로드-트레일 구간을 빠르게 달리는 레이서입니다. 세 신발의 용도가 완전히 다르기 때문에, 어떤 코스를 뛰느냐에 따라 답이 갈립니다.',
+    thumbnail: '/images/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-10',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['스피드고트 6', '살로몬 펄사', '메타후지 트레일', '트레일 러닝화', '트레일화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>같은 트레일화지만 셋의 성격은 완전히 다릅니다 — <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>는 어떤 지형에서도 무난한 <strong>만능 그립 베스트셀러</strong>(20.5만), <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 근교 트레일을 가볍게 즐기는 <strong>올라운드 데일리</strong>(21만), <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 <strong>카본 플레이트 평탄레이스</strong> 전용(27.9만)입니다</li>
+    <li>핵심 갈림 — <strong>어떤 지형이냐</strong>가 전부입니다. 바위·진흙·급경사 산악이면 스피드고트 6, 근교 흙길 위주 가벼운 훈련이면 펄사, 그래블·임도·로드-트레일 혼합 레이스에서 빠른 페이스를 원하면 메타후지</li>
+    <li><strong>발볼 넓은 한국 러너는 사실상 스피드고트 6가 유일한 선택</strong>입니다(와이드 옵션 공식 동일가). 펄사·메타후지는 둘 다 좁고 와이드 옵션이 없습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">"트레일화는 다 비슷하다"는 착각</p>
+    <p>트레일 러닝을 시작하면 "그냥 아무 트레일화나 신으면 되지 않나" 싶지만, 실제로는 <strong>지형에 따라 신발 성격이 완전히 갈립니다.</strong> 이 셋은 가격대(20~28만원)는 비슷해도 설계 목적이 다릅니다 — 하나는 그립·안정성에 올인한 만능형, 하나는 가벼움과 반응성의 균형을 잡은 올라운더, 하나는 평탄 구간 스피드에 특화된 카본 레이서입니다. 한국 산악(북한산·관악산처럼 암반·급경사가 많은) 기준으로 어떤 게 내게 맞는지 정리합니다.</p>
+  </div>
+</div>
+
+<h2>스펙 비교</h2>
+<table>
+  <thead><tr><th>항목</th><th>스피드고트 6</th><th>펄사</th><th>메타후지 트레일</th></tr></thead>
+  <tbody>
+    <tr><td><strong>정가</strong></td><td>205,000원</td><td>210,000원</td><td>279,000원</td></tr>
+    <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td><strong>258g</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td><strong>40 / 35mm</strong></td><td>29 / 23mm</td><td>44.7 / 34.4mm</td></tr>
+    <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>10mm</td></tr>
+    <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>optiFOAM2(eTPU)</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
+    <tr><td>플레이트</td><td>없음</td><td>없음</td><td><strong>풀 카본 플레이트</strong></td></tr>
+    <tr><td>쿠션 / 반응</td><td>8 / 5</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
+    <tr><td>안정성</td><td><strong>8</strong></td><td>7</td><td>4</td></tr>
+    <tr><td>아웃솔·그립</td><td><strong>Vibram Megagrip(5mm 러그)</strong></td><td>Contagrip(4mm 러그)</td><td>ASICSGRIP(2.7mm 러그)</td></tr>
+    <tr><td>발볼 / 와이드</td><td>표준(체감 좁음) · <strong>와이드 O(동일가)</strong></td><td>좁음 · 없음</td><td>좁음(69.6mm) · 없음</td></tr>
+    <tr><td>내구성</td><td>400~500km</td><td>500km</td><td>550~600km</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 스펙은 각 신발 상세 페이지 실측·공식 발표 기준. 메타후지 트레일은 힐·미드풋이 좁은데 스택이 높아(44.7mm) 안정성 점수(4/10)가 셋 중 가장 낮습니다 — 카본 반발과 안정성은 트레이드오프 관계입니다.</p>
+
+<h2>스피드고트 6 — 산에서 뭘 만나도 무난하다</h2>
+<p>"트레일 입문화 하나만 추천해달라"는 질문에 가장 먼저 나오는 이름입니다. <strong>Vibram Megagrip + 측면 마이크로 돌기(Traction Lug)</strong>로 건/습 노면·바위·급경사 어디서든 그립이 최상위권(Road Trail Run 10/10)이고, 힐 40mm 맥스쿠션인데도 내부 섀시(chassis) 구조 덕에 스택 대비 안정성이 뛰어납니다. 278g으로 맥스쿠션치고 가벼워 장거리·울트라에서 다리 피로도 덜합니다. 무엇보다 <strong>와이드 옵션이 공식 동일가로 나온다</strong>는 게 한국 러너에게 큰 장점 — 토박스가 표준 폭(73mm)이지만 "좁고 꽉 낀다"는 평이 많아, 발볼 넓다면 와이드를 고르면 됩니다.</p>
+<p>단점은 에너지 리턴이 48%로 낮아 <strong>빠른 페이스 레이싱용은 아니라는 점</strong>입니다. 텅 날개·힐 슬립 같은 핏 이슈, 노출 미드솔 구간 마모(200~300km 후 압축)도 감안하세요.</p>
+<p><strong>✅ 이런 분께</strong> — 트레일이 처음이거나, 여러 지형을 오가는 종주·울트라 위주거나, 발볼 넓어 와이드가 필요한 러너.</p>
+
+<h2>펄사 — 근교 트레일을 가볍게, 도로도 겸용</h2>
+<p>단종된 센스 라이드의 빈자리를 메우는 <strong>올라운드 데일리 트레이너</strong>입니다. 신형 <strong>optiFOAM2(eTPU)</strong> 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 하프~40km 정도의 일상 훈련부터 업템포까지 한 켤레로 소화합니다. 290g으로 맥스쿠션 트레일화보다는 무겁지만 quickLACE + SensiFit 잠금이 안정적이라 도로-트레일 겸용 데일리로 편합니다.</p>
+<p>다만 <strong>전족부가 좁고 낮아</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고 와이드 옵션이 없습니다. 4mm Contagrip 러그는 건조한 혼합 지형엔 무난하지만, 젖은 바위·진흙과 록플레이트 없는 기술 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일을 빠르게 즐기는" 용도에 맞습니다.</p>
+<p><strong>✅ 이런 분께</strong> — 도로와 근교 트레일을 한 켤레로 겸용하고 싶거나, 트레일 하프~40km 데일리 훈련 위주거나, 좀 더 가벼운 감각을 원하는 발볼 표준~좁은 러너.</p>
+
+<h2>메타후지 트레일 — 평탄 구간을 빠르게, 카본의 힘</h2>
+<p>아식스가 트레일 레이싱에 <strong>카본 플레이트</strong>를 얹은 모델입니다. FF Turbo + FF Blast+ 듀얼 폼과 풀 카본 플레이트로 <strong>평탄한 싱글트랙·자갈·로드-트레일 혼합 구간</strong>에서 로드 카본화 못지않은 추진력을 냅니다. 258g으로 셋 중 가장 가볍고, 힐 44.7mm 고스택에 ASICSGRIP 아웃솔이 평탄면에서 접지력을 확실히 잡아줘 그래블 레이스나 로드-트레일 혼합 대회(10K~하프)에 강합니다.</p>
+<p>하지만 한계도 뚜렷합니다. <strong>힐·미드풋이 좁은데 스택이 높아 측면 안정성이 부족</strong>(안정성 4/10)해서, 한국 산악 트레일의 주력인 바위·뿌리·진흙 구간에서는 발목이 흔들릴 수 있습니다(염좌 주의). 토박스도 69.6mm로 좁고 와이드 옵션이 없습니다. <strong>"산악 만능형"이 아니라 "평탄 트레일 레이스 스페셜리스트"</strong>로 이해해야 합니다.</p>
+<p><strong>✅ 이런 분께</strong> — 그래블·임도·로드-트레일 혼합 레이스에서 빠른 기록을 노리는 전족부 스트라이커. 반대로 테크니컬 암반·진흙 위주 코스나 발목 부상 이력이 있다면 피하세요.</p>
+
+<h2>내 트레일엔 뭘 신을까</h2>
+<ul>
+  <li><strong>산악 종주·울트라·여러 지형 혼합</strong> → <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 그립·안정성·와이드 옵션까지 가장 무난한 선택</li>
+  <li><strong>근교 트레일 + 도로 겸용, 가벼운 감각</strong> → <a href="/shoes/salomon-pulsar">펄사</a>. 대신 발볼 표준~좁은 러너에 한정</li>
+  <li><strong>그래블·임도·로드-트레일 혼합 레이스, 빠른 기록 목표</strong> → <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>. 단 테크니컬 지형·발목 이력자는 비추천</li>
+  <li><strong>발볼이 넓다면</strong> — 사실상 스피드고트 6만 와이드를 제공합니다. 더 넓은 발볼 옵션이 필요하면 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(맥스쿠션 울트라, 와이드 O)도 함께 보세요</li>
+</ul>
+<p>더 다양한 트레일화 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">스피드고트 6 vs 펄사 vs 아그라빅 4</a>, <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종 비교</a>에서도 확인할 수 있고, 트레일화 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>을 참고하세요.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 트레일화 하나만 산다면 뭐가 제일 무난한가요?</p>
+    <p class="faq-a">A. 스피드고트 6입니다. 그립·안정성·와이드 옵션까지 갖춰 어떤 지형·코스에서도 큰 약점이 없습니다. 대신 빠른 페이스 레이싱에는 셋 중 가장 둔한 편입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 메타후지 트레일은 산악 코스에서도 쓸 수 있나요?</p>
+    <p class="faq-a">A. 쓸 수는 있지만 권장하지 않습니다. 힐·미드풋이 좁고 스택이 높아 안정성 점수가 4/10로 낮고, 테크니컬 암반·진흙 구간에서 발목이 흔들릴 위험이 있습니다. 평탄·완만한 그래블·로드-트레일 혼합 코스에서 진가를 발휘합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 셋 중에 고를 수 있는 게 있나요?</p>
+    <p class="faq-a">A. 스피드고트 6가 유일합니다(와이드 옵션 공식 동일가). 펄사와 메타후지 트레일은 둘 다 좁은 편이고 와이드 옵션이 없습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 각 신발 상세 페이지(RunRepeat·Road Trail Run·Believe in the Run 종합 리뷰 기준) · 한국 공식가 · 작성 2026년 7월 10일.</small></p>
+`,
+  },
+  {
     id: 'nike-pegasus-plus-2-leak-2026',
     slug: 'nike-pegasus-plus-2-leak-2026',
     title: '나이키 페가수스 플러스 2 리크 | 디자인 이미지 포착 — 미드솔 스펙은 소스마다 갈린다',
