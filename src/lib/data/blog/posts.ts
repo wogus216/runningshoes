@@ -3,6 +3,100 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'hoka-clifton-pro-preview-2026',
+    slug: 'hoka-clifton-pro-preview-2026',
+    title: '호카 클리프톤 프로 미리보기 | 7/9 글로벌 출시 — 클리프톤 11과 뭐가 다른가 (ProGlide+ 반발 폼, 한국은 아직 무소식)',
+    description:
+      '호카가 클리프톤 라인을 둘로 쪼갰습니다. 컴포트에 집중한 클리프톤 11은 그대로 두고, 반발형 ProGlide+ 폼과 더 공격적인 MetaRocker를 얹은 상위 라인 클리프톤 프로를 2026년 7월 9일 글로벌 출시($165)했습니다. Believe in the Run·Road Trail Run 리뷰를 종합해 11과 실제로 뭐가 달라졌는지, 그리고 정작 한국은 왜 아직 출시 소식이 없는지 정리했습니다.',
+    thumbnail: '/images/blog/hoka-clifton-pro-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-09',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['호카 클리프톤 프로', '클리프톤 프로', '호카 클리프톤', '데일리 트레이너', '신상 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>호카 클리프톤 프로가 2026년 7월 9일 글로벌 출시</strong>됐습니다($165). 기존 <a href="/blog/hoka-clifton-11-vs-10-comparison">클리프톤 11</a>은 그대로 두고, 반발형 <strong>ProGlide+ 폼</strong>을 얹은 상위 라인을 새로 냈습니다</li>
+    <li>해외 리뷰(Believe in the Run·Road Trail Run) 종합 평가는 <strong>Tier B</strong> — 반발감·롤링은 좋아졌지만 무게가 늘고(+16g) "Pro"라는 이름값 대비 퍼포먼스는 아쉽다는 평이 많습니다</li>
+    <li><strong>정작 한국은 출시 당일인 지금까지 정식 발매 소식이 없습니다.</strong> 한국 정가·출시일이 미확정인 상태라, 신발 DB 등록은 보류하고 확정되는 대로 갱신하겠습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🍴</span>
+  <div class="callout-body">
+    <p class="callout-title">클리프톤이 둘로 갈라졌다</p>
+    <p>호카는 지난 7월 1일 <a href="/blog/hoka-clifton-11-vs-10-comparison">클리프톤 11</a>을 냈습니다. 어퍼만 다듬고 폼(CMEVA)은 그대로인 '에볼루션'이었죠. 그런데 딱 일주일 뒤인 <strong>7월 9일, 완전히 다른 성격의 클리프톤 프로</strong>를 별도로 출시했습니다. 11을 대체하는 게 아니라 <strong>"컴포트 클리프톤 + 퍼포먼스 클리프톤"으로 라인을 투트랙 분리</strong>한 겁니다. 외신은 이를 두고 "호카가 아식스 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트</a>를 겨냥해 만든 신발"이라 평했습니다 — 반발형 고스택 데일리 자리를 정면으로 노린다는 뜻이죠.</p>
+  </div>
+</div>
+
+<h2>스펙 비교 — 클리프톤 11 vs 클리프톤 프로</h2>
+<table>
+  <thead><tr><th>항목</th><th>클리프톤 11</th><th>클리프톤 프로</th></tr></thead>
+  <tbody>
+    <tr><td>출시(글로벌)</td><td>2026-07-01</td><td>2026-07-09</td></tr>
+    <tr><td>가격(US)</td><td>$154.95</td><td><strong>$165</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td>42 / 34mm</td><td>42 / 34mm (동일)</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>8mm (동일)</td></tr>
+    <tr><td>무게(M 실측)</td><td>280g</td><td><strong>296g</strong> (+16g)</td></tr>
+    <tr><td>미드솔 폼</td><td>CMEVA</td><td><strong>ProGlide+ (초임계 EVA)</strong></td></tr>
+    <tr><td>로커</td><td>일반</td><td><strong>공격적 MetaRocker</strong></td></tr>
+    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>거셋 텅 (일부 "짧다" 지적)</td></tr>
+    <tr><td>해외 리뷰 평점</td><td>8.4~8.65/10 (RTR)</td><td>8.7~9.2/10 (RTR) · Tier B (BITR)</td></tr>
+    <tr><td>한국 출시</td><td>7월 초 이어짐(정가 미확정)</td><td><strong>미확인</strong>(정가·출시일 모두 미정)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 무게는 Believe in the Run·Road Trail Run 실측(남성 기준) 교차확인. RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 두 모델 모두 출시 직후라 아직 미게시입니다.</p>
+
+<h2>실제로 뭐가 달라졌나 — 폼과 로커</h2>
+<p>스택·드롭이 똑같으니 차이는 <strong>발밑에서 느껴지는 성격</strong>에 있습니다. 클리프톤 11은 클리프톤 10과 동일한 <strong>CMEVA</strong> 폼을 그대로 씁니다. 클리프톤 프로는 여기에 <strong>ProGlide+라는 초임계(supercritical) EVA</strong>를 얹었는데, 일반 EVA보다 밀도가 낮고 반발이 살아 있어 "클리프톤 이름값보다 훨씬 경쾌하다"는 평(Believe in the Run)을 받습니다.</p>
+<p>여기에 <strong>더 공격적인 MetaRocker</strong> 지오메트리를 더해 힐→토 전환이 빠르게 굴러가도록 설계했습니다. Road Trail Run 멀티테스터 리뷰는 클리프톤 11을 <strong>"미드풋 스트라이커의 데일리 컴포트용"</strong>, 클리프톤 프로를 <strong>"숙련자·전족 스트라이커의 빠른 페이스 훈련용"</strong>으로 구분합니다. 다만 두 리뷰 모두 <strong>"여전히 EVA 계열이라 PEBA·ATPU급 에너지 리턴까지는 못 간다"</strong>고 공통으로 지적합니다 — 이름은 '프로'지만 카본 레이서나 노바블라스트의 ATPU 폼 같은 수준의 반발은 아니라는 뜻입니다.</p>
+
+<h2>해외 리뷰 종합 — 반발은 좋아졌지만 이름값엔 아쉬움</h2>
+<p>Believe in the Run은 클리프톤 프로에 <strong>Tier B</strong>(Design A · Value A · Performance B)를 매겼습니다.</p>
+<ul>
+  <li><strong>장점</strong> — ProGlide+의 통통 튀는 반발감, 공격적 MetaRocker의 부드러운 전환, 클리프톤 10과 동일한 정사이즈 착화감, 스택 대비 합리적인 무게, 내구성 좋은 아웃솔, $165라는 상대적으로 합리적인 가격</li>
+  <li><strong>단점</strong> — 여전히 EVA 계열(PEBA·TPEE·ATPU 아님), "Pro"라는 이름값 대비 아쉬운 퍼포먼스, 진짜 레이스데이 트레이너와는 체감 차이가 큼, 장거리에서는 반발력이 처짐, 클리프톤 11 대비 차별화가 크지 않다는 지적</li>
+</ul>
+<p>Road Trail Run은 두 모델 모두에 <strong>"약간 무겁다"</strong>는 공통 평을 남겼고, 클리프톤 프로의 거셋 텅에 대해 <strong>"일부 테스터는 텅이 짧아 발등이 눌린다"</strong>고 지적했습니다. 종합하면 <strong>"클리프톤보다 확실히 경쾌해졌지만, 이름이 주는 기대(카본 레이서급 반발)까지는 아니다"</strong>가 두 리뷰의 공통 결론입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🇰🇷</span>
+  <div class="callout-body">
+    <p class="callout-title">한국은 왜 아직 조용한가</p>
+    <p>클리프톤 10·11은 출시와 거의 동시에 국내 언론·리테일러가 다뤘습니다. 그런데 클리프톤 프로는 <strong>출시 당일(7/9) 기준으로 hoka.com/ko-kr, 러너스클럽, 굿러너, 네이버쇼핑 어디에도 등록이 없습니다.</strong> 조용히 시차를 두고 들어올 가능성은 있지만, 클리프톤 11 때와 뚜렷이 다른 패턴입니다. <strong>본 글은 신상 출시 직후 작성으로 한국 정가·출시일이 확정되지 않은 상태</strong>이며, 위 수치는 해외 실측·리뷰 기준입니다. 확정 소식이 나오면 갱신하고, 신발 DB에도 그때 정식 등록하겠습니다.</p>
+  </div>
+</div>
+
+<h2>클리프톤 11 vs 프로, 뭘 골라야 하나</h2>
+<ul>
+  <li><strong>클리프톤 11</strong> — 무릎·발 편한 조깅·회복주 위주라면 이쪽입니다. 부드러운 CMEVA 쿠션과 넓은 핏, 와이드·엑스와이드까지 그대로입니다</li>
+  <li><strong>클리프톤 프로</strong> — 데일리인데 업템포도 소화하고 싶다면 이쪽입니다. 다만 카본 레이서급 반발을 기대하면 실망할 수 있습니다 — '클리프톤보다 경쾌한 데일리' 정도로 기대치를 맞추세요</li>
+  <li><strong>둘 다 애매하다면</strong> — 같은 시기 나온 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6</a>도 비슷한 자리를 노리는 경쟁작입니다. 노바6는 한국 정가(179,000원)가 이미 확정됐고 더 가볍다는 점에서, 한국 출시가 불투명한 클리프톤 프로를 기다리기보다 지금 살 수 있는 선택지가 필요하다면 노바6 쪽이 현실적입니다. 데일리 트레이너 전체 후보는 <a href="/best/daily-trainer">데일리 트레이너 추천</a>에서 비교해 보세요</li>
+</ul>
+
+<h2>FAQ</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 클리프톤 프로가 클리프톤 11을 대체하나요?</p>
+    <p class="faq-a">A. 아니요. 호카는 두 모델을 <strong>동시에 병행 판매</strong>합니다. 11은 컴포트 중심 기존 라인을 유지하고, 프로는 반발감을 더한 상위 라인으로 별도 추가된 겁니다. 라인업 구조가 궁금하면 <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 러닝화 계급도</a>를 참고하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 한국 정가는 얼마나 될까요?</p>
+    <p class="faq-a">A. 아직 확정된 정보가 없습니다. 미국 정가($165)가 클리프톤 11($154.95)보다 약 6% 높은 점을 감안하면, 클리프톤 11의 한국 예상가(약 19만원대)보다 조금 높은 20만원대 초반이 될 가능성이 있지만 <strong>공식 발표 전까지는 추정</strong>일 뿐입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 무릎이 안 좋은데 클리프톤 프로가 맞을까요?</p>
+    <p class="faq-a">A. 스택·드롭은 클리프톤 11과 동일해 쿠션 볼륨 자체는 충분합니다. 다만 반발형 폼이라 클리프톤 특유의 '푹신하게 눌러주는' 느낌보다는 살짝 단단하게 튕겨주는 감각입니다. 무릎 보호가 최우선이면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a>에서 더 부드러운 옵션도 함께 비교해 보세요.</p>
+  </div>
+</div>
+
+<p><small>출처: Believe in the Run(believeintherun.com) 클리프톤 프로 리뷰 · Road Trail Run(roadtrailrun.com) 클리프톤 11·프로 멀티테스터 비교 · HOKA 공식 발표. 작성 2026년 7월 9일(글로벌 출시 당일) 기준이며, RunRepeat 정량 랩과 한국 출시 정보가 나오는 대로 갱신합니다.</small></p>
+`,
+  },
+  {
     id: 'asics-novablast-5-vs-6-comparison-2026',
     slug: 'asics-novablast-5-vs-6-comparison-2026',
     title: '노바블라스트 5 vs 6 | 세대 비교 — 전족 FF Turbo Squared로 뭐가 달라졌나, 갈아탈까 세일 5를 살까',
@@ -622,7 +716,7 @@ export const blogPosts: BlogPost[] = [
   <thead><tr><th>모델</th><th>이번 주 상황</th><th>정리</th></tr></thead>
   <tbody>
     <tr><td><strong>뉴발 히에로 v9</strong></td><td>7/9 한국 신컬러 드롭 · 189,000원</td><td>✅ 지금 구매 가능한 쿠션 트레일화 (이 글의 주인공)</td></tr>
-    <tr><td>호카 클리프톤 프로</td><td>글로벌 7/9 출시($165) · <strong>한국 출시일·정가 미정</strong></td><td>데일리 화제작이나 한국 발매는 대기 (<a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바6 vs 클프로 비교</a> 참고)</td></tr>
+    <tr><td>호카 클리프톤 프로</td><td>글로벌 7/9 출시($165) · <strong>한국 출시일·정가 미정</strong></td><td>데일리 화제작이나 한국 발매는 대기 (<a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a> 참고)</td></tr>
     <tr><td>뉴발 AC Runner v1</td><td>7/10 출시</td><td>러닝화 이름이지만 실질은 <strong>라이프스타일 하이프 스니커</strong> (러닝 스펙 미공개)</td></tr>
   </tbody>
 </table>
@@ -684,7 +778,7 @@ export const blogPosts: BlogPost[] = [
 <p>같은 쿠션 트레일 계열 대안으로는 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>(더 만능 그립·기술 지형 강함)와 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(더 푹신·울트라 특화, 와이드 있음)가 있습니다. 세 켤레를 성격별로 비교한 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종 비교</a>와 <a href="/best/trail">트레일화 추천 순위</a>도 참고하세요.</p>
 
 <h2>이번 주 다른 신상 — 짧게</h2>
-<p><strong>호카 클리프톤 프로</strong>는 글로벌 7/9 출시($165)로 이번 주 최대 화제작이지만, <strong>한국 출시일과 정가가 아직 확정되지 않았습니다.</strong> 클리프톤 라인에 반발형 ProGlide+ 폼을 얹은 데일리 트레이너로, 한국 발매가 확정되면 별도로 다루겠습니다. 성격이 궁금하면 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로 비교</a>에 정리해 뒀습니다.</p>
+<p><strong>호카 클리프톤 프로</strong>는 글로벌 7/9 출시($165)로 이번 주 최대 화제작이지만, <strong>한국 출시일과 정가가 아직 확정되지 않았습니다.</strong> 클리프톤 라인에 반발형 ProGlide+ 폼을 얹은 데일리 트레이너로, 클리프톤 11과 뭐가 다른지·해외 리뷰 평가는 <a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a>에 정리했습니다. 노바블라스트 6와의 정면비교는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로 비교</a>를 참고하세요.</p>
 <p><strong>뉴발 AC Runner v1</strong>은 7/10 출시로 이름은 "러너"지만, 러닝 전문 리뷰도 스택·드롭 스펙도 공개되지 않은 <strong>라이프스타일 하이프 스니커</strong>에 가깝습니다(Klutch Athletics 콜라보). 진지한 트레이닝화로 기대하고 사면 실망할 수 있으니 참고하세요.</p>
 
 <div class="callout warning">
@@ -3530,7 +3624,7 @@ export const blogPosts: BlogPost[] = [
   <span class="callout-icon">🚀</span>
   <div class="callout-body">
     <p class="callout-title">업템포가 당긴다면 — 같은 날 나온 '클리프톤 프로'</p>
-    <p>호카는 클리프톤 11과 함께 <strong>클리프톤 프로($165)</strong>를 같은 시기에 냈습니다. 클리프톤 11과 스택·드롭·라스트는 같지만 <strong>미드솔에 반발형 ProGlide+(초임계 EVA)를 얹어</strong> 더 경쾌하게 굴러갑니다. '클리프톤의 편안함 + 조금 더 빠른 라이드'를 원하면 프로가 답입니다. 클리프톤 프로가 같은 7월 신상인 아식스 노바블라스트 6와 어떻게 갈리는지는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>에서 정리했습니다.</p>
+    <p>호카는 클리프톤 11과 함께 <strong>클리프톤 프로($165)</strong>를 같은 시기에 냈습니다. 클리프톤 11과 스택·드롭·라스트는 같지만 <strong>미드솔에 반발형 ProGlide+(초임계 EVA)를 얹어</strong> 더 경쾌하게 굴러갑니다. '클리프톤의 편안함 + 조금 더 빠른 라이드'를 원하면 프로가 답입니다. 11과 프로의 차이·해외 리뷰는 <a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a>에, 같은 7월 신상인 아식스 노바블라스트 6와 어떻게 갈리는지는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>에서 정리했습니다.</p>
   </div>
 </div>
 
