@@ -3,6 +3,75 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'nike-pegasus-plus-2-leak-2026',
+    slug: 'nike-pegasus-plus-2-leak-2026',
+    title: '나이키 페가수스 플러스 2 리크 | 디자인 이미지 포착 — 미드솔 스펙은 소스마다 갈린다',
+    description:
+      '나이키 페가수스 플러스 후속작으로 보이는 디자인 리크 이미지가 SneakerNews를 통해 공개됐습니다. 어퍼가 Flyknit에서 엔지니어드 메시로 바뀌고 실루엣이 더 공격적으로 변했다는 점은 여러 소스가 일치하지만, 정작 핵심인 미드솔 소재는 소스마다 다르게 서술합니다(ZoomX+줄에어 vs ReactX). 아직 공식 발표 전 순수 리크 단계인 만큼, 확인된 것과 확인되지 않은 것을 구분해서 정리했습니다.',
+    thumbnail: '/images/blog/nike-pegasus-plus-2-leak-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-10',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['나이키 페가수스 플러스 2', '페가수스 플러스', '나이키 러닝화', '러닝화 리크', '신상 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>나이키 페가수스 플러스 2로 추정되는 디자인 리크 이미지</strong>가 공개됐습니다. 어퍼가 Flyknit → 엔지니어드 메시로 바뀌고, 측면 케이지 컷아웃이 더해져 실루엣이 한층 공격적으로 변했다는 점은 여러 소스가 일치합니다</li>
+    <li><strong>미드솔 소재는 소스마다 다르게 말합니다</strong> — 한쪽은 "올ZoomX + 가시적 줌에어 포드"(프리미엄급), 다른 쪽은 "ReactX 폼"(보급형)이라고 서술합니다. 아직 나이키 공식 발표가 없어 확정할 수 없습니다</li>
+    <li>예상 출시는 <strong>2026년 말~2027년 초</strong>, 가격대는 $150~200 선으로 거론됩니다. 현재 판매 중인 <a href="/shoes/nike-pegasus-plus">페가수스 플러스(1세대)</a>는 219,000원·244g·풀렝스 ZoomX입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔍</span>
+  <div class="callout-body">
+    <p class="callout-title">아직 '리크' 단계 — 공식 발표 아님</p>
+    <p>이번 이미지는 나이키 공식 발표가 아니라 <strong>인스타그램 스니커 리크 계정(@the_secret_shoe)을 통해 처음 공개</strong>됐고, SneakerNews가 이를 기사화(2026-07-08)하면서 알려졌습니다. <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>가 나온 지 약 2년 만에 후속작 디자인이 유출된 셈이지만, <strong>정식 스펙·가격·출시일은 여전히 미확정</strong>입니다. 아래 내용은 확인된 것과 확인되지 않은 것을 구분해서 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>확인된 것 — 어퍼·실루엣 변화</h2>
+<p>리크 이미지에서 가장 뚜렷한 변화는 <strong>어퍼 소재와 전체적인 형태</strong>입니다. 1세대의 Flyknit 니트 소재 대신 <strong>엔지니어드 메시</strong>를 쓰고, 측면에 <strong>구멍이 뚫린 케이지 구조</strong>가 추가됐습니다. 실루엣 자체도 최근 아이콘급 페가수스 모델들과 비슷하게 <strong>이전 세대보다 눈에 띄게 공격적인 형태</strong>로 바뀌었다고 전해집니다. 신발의 성격(통통 튀는 반응형 라이드)은 그대로 유지될 것으로 보이지만, 겉모습만 봐도 세대 교체를 의도했다는 인상이 강합니다.</p>
+
+<h2>확인 안 된 것 — 미드솔, 소스마다 다르다</h2>
+<p>정작 러너에게 가장 중요한 <strong>미드솔 소재는 소스 간 얘기가 갈립니다.</strong></p>
+<table>
+  <thead><tr><th>소스</th><th>미드솔 주장</th><th>의미</th></tr></thead>
+  <tbody>
+    <tr><td>SneakerNews (2026-07-08)</td><td>올 ZoomX + 가시적 줌에어 전족부 포드 추가</td><td>1세대와 같은 프리미엄 풀렝스 ZoomX 유지 + 상위 기능 추가</td></tr>
+    <tr><td>스펙 트래커 사이트</td><td>ReactX 폼</td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a>급 보급형 폼으로 다운그레이드</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 두 주장은 서로 배치됩니다. ZoomX(PEBA 계열 프리미엄 폼)와 ReactX(EVA 계열 보급형 폼)는 성격이 완전히 다른 소재라, 어느 쪽이 맞는지에 따라 신발의 포지션 자체가 달라집니다. 무게(258g)·스택(37/29mm)·드롭(8mm) 등 구체적 수치도 도는 중이지만 출처가 불분명해 그대로 신뢰하기는 이릅니다.</p>
+
+<h2>왜 이렇게 신중하게 접근하나</h2>
+<p>이번 리크와 함께 다른 브랜드 신모델 루머 여러 건을 교차 검증해봤는데, 상당수가 실제로는 근거가 부실했습니다. 어떤 루머는 다른 소스에서 전혀 확인되지 않았고, 심지어 그 신발 라인의 알려진 설계 철학과 정면으로 모순되는 경우도 있었습니다. <strong>리크 시즌엔 신뢰도 낮은 정보도 함께 돌아다닙니다.</strong> 그래서 이번 페가수스 플러스 2도 여러 소스가 일치하는 부분(어퍼·실루엣)과 엇갈리는 부분(미드솔)을 구분해 전달하는 게 맞다고 판단했습니다.</p>
+
+<h2>1세대 페가수스 플러스와 비교하면</h2>
+<p>현재 판매 중인 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>는 219,000원, 244g, 풀렝스 ZoomX 폼으로 <strong>가볍고 반응성 있는 스피드 데일리화</strong> 포지션입니다. 2세대가 정말 ZoomX를 유지한다면 이 성격이 그대로 이어지되 어퍼·핏이 다듬어지는 정도일 것이고, 만약 ReactX로 바뀐다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a>와 포지션이 겹치면서 가격이 오히려 낮아지거나 라인 자체가 재편될 가능성도 있습니다. 나이키 라인업 전체 구조가 궁금하다면 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 러닝화 계급도</a>를 참고하세요.</p>
+
+<h2>FAQ</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 지금 페가수스 플러스를 사도 괜찮을까요, 아니면 2세대를 기다려야 하나요?</p>
+    <p class="faq-a">A. 2세대는 정식 스펙조차 안 나온 리크 단계입니다. 미드솔이 바뀔지도 불확실한 상황이라, 지금 필요하면 <a href="/shoes/nike-pegasus-plus">1세대</a>를 사는 게 합리적입니다. 세대 교체를 기다리기엔 최소 반년 이상(2026년 말~2027년 초 예상) 남았습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 한국 출시는 언제쯤 될까요?</p>
+    <p class="faq-a">A. 아직 글로벌 정식 발표도 없는 단계라 한국 출시일은 예측하기 이릅니다. 정식 발표가 나오면 이 글을 갱신하겠습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 미드솔이 ZoomX인지 ReactX인지는 언제 알 수 있나요?</p>
+    <p class="faq-a">A. 나이키의 공식 발표나 신빙성 있는 매체의 실물 확인 전까지는 확정할 수 없습니다. RunRepeat 등의 정량 랩 데이터가 나오는 시점(정식 출시 후)에야 확실해질 가능성이 큽니다.</p>
+  </div>
+</div>
+
+<p><small>출처: SneakerNews.com(Andrew Rizzo, 2026-07-08), 리크 이미지 출처 @the_secret_shoe(인스타그램), 스펙 트래커 사이트(출처 불명, 참고용). 작성 2026년 7월 10일 기준이며, 정식 발표·정량 스펙이 확인되면 갱신합니다.</small></p>
+`,
+  },
+  {
     id: 'new-balance-team-womens-2026-recruitment',
     slug: 'new-balance-team-womens-2026-recruitment',
     title: '뉴발란스 팀우먼스 2026 모집 마감 임박(오늘 7/9까지) — 런 유어 웨이 10K 공식 확정',
