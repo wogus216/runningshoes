@@ -3,6 +3,100 @@ import { MAJOR_DEADLINES, md } from './major-deadlines';
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 'nike-acg-zegama-trail-review-2026',
+    slug: 'nike-acg-zegama-trail-review-2026',
+    title: '나이키 ACG 제가마 트레일 후기 | 시리즈 최고 완성도 — 토박스 더 넓어진 맥시멀 쿠션 울트라화',
+    description:
+      '나이키 제가마가 3세대 만에 프리미엄 아웃도어 라인 ACG로 이관됐습니다. ZoomX 비중을 늘리고 새 라스트로 토박스를 넓혔으며, Vibram Megagrip 아웃솔로 그립까지 챙겨 Believe in the Run에서 퍼포먼스 S티어를 받았습니다. 발볼 넓은 한국 러너에게 드물게 우호적인 나이키 트레일화인 이유와, 336g의 무게를 감안해도 선택할 만한 이유를 정리했습니다.',
+    thumbnail: '/images/blog/nike-acg-zegama-trail-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-10',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['나이키 ACG 제가마', '제가마 트레일', 'ACG', '트레일 러닝화', '울트라 트레일'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>나이키 제가마가 프리미엄 아웃도어 라인 ACG로 이관</strong>되며 3세대를 맞았습니다. Believe in the Run은 "제가마 시리즈 중 지금까지 최고"라며 <strong>퍼포먼스 S티어</strong>를 매겼습니다</li>
+    <li>핵심 변화는 <strong>ZoomX 비중 확대 + 새 라스트로 넓힌 토박스</strong>입니다. 전작(제가마 2)도 이미 넓은 편(97.5mm)이었는데 이번엔 그보다 더 여유로워져, 발볼 넓은 한국 러너에게 드물게 우호적인 나이키 트레일화입니다</li>
+    <li>다만 <strong>336g으로 동급 대비 무거운 편</strong>이고 4mm 저드롭이라 적응이 필요합니다. 한국 정가 219,000원, 빠른 반응형보다는 장거리 울트라 컴포트 용도입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">제가마, ACG로 승격되다</p>
+    <p>제가마는 2021년 "나이키 트레일 최초로 ZoomX를 얹은 신발"로 처음 나왔고, 2세대(2024)에서 Vibram Megagrip을 더했습니다. 이번 3세대는 이름 자체를 나이키의 프리미엄 아웃도어 라인 <strong>ACG(All Conditions Gear)</strong>로 이관했습니다 — 단순 세대 교체가 아니라 브랜드 포지셔닝 자체를 끌어올린 셈입니다. 나이키 ACG 담당 이사는 22명의 엘리트 트레일 러너로 구성된 자체 레이싱 부서의 피드백을 반영했다고 밝혔습니다.</p>
+  </div>
+</div>
+
+<h2>세대별 변천사</h2>
+<table>
+  <thead><tr><th>세대</th><th>연도</th><th>핵심 변화</th></tr></thead>
+  <tbody>
+    <tr><td>제가마(1세대)</td><td>2021</td><td>나이키 트레일 최초 ZoomX 도입</td></tr>
+    <tr><td>제가마 2</td><td>2024</td><td>Vibram Megagrip 아웃솔 추가</td></tr>
+    <tr><td><strong>ACG 제가마</strong></td><td><strong>2026</strong></td><td><strong>ACG 라인 이관, ZoomX 비중 확대, 토박스 확장, 힐 락다운 개선</strong></td></tr>
+  </tbody>
+</table>
+
+<h2>확인된 스펙</h2>
+<table>
+  <thead><tr><th>항목</th><th>ACG 제가마</th><th>제가마 2(참고)</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>336g(남성 M10) / 273g(여성 W8)</td><td>302g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>38 / 34mm</td><td>30.3 / 26.3mm</td></tr>
+    <tr><td>드롭</td><td>4mm</td><td>4.0mm</td></tr>
+    <tr><td>미드솔</td><td>ZoomX(상층) + Cushlon 3.0(하층)</td><td>ZoomX + Cushlon 3.0</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip(약 2/3 커버리지)</td><td>Vibram Megagrip</td></tr>
+    <tr><td>가격</td><td>$180 / 219,000원(한국)</td><td>$180</td></tr>
+    <tr><td>평가</td><td><strong>BITR S티어(Design A·Value A·Performance S)</strong></td><td>-</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ ACG 제가마 무게·스택·드롭은 Believe in the Run 실측 기준(2026-04-30 출시). 한국 정가는 nike.com/kr에서 확인했으나 직접 접속이 봇 차단돼 검색 교차검증으로 확정했습니다.</p>
+
+<h2>가장 큰 변화 — 넓어진 토박스</h2>
+<p>전작 제가마 2도 토박스 최대 97.5mm(발가락 부위 76.4mm)로 이미 트레일화치고 넓은 편이었습니다. 이번 ACG 버전은 <strong>새 라스트로 전족·미드풋 공간을 한층 더 넓혔습니다.</strong> 카본 레이서나 좁은 트레일 레이싱화에 발가락이 눌리던 러너라면 반가운 변화입니다. 여기에 <strong>힐 카운터 쿠셔닝과 세미 부티 구조</strong>로 락다운을 강화해, "발이 신발을 제어하는 게 아니라 러너가 신발을 제어하는" 느낌을 준다는 평가(BITR)를 받았습니다.</p>
+<p>미드솔은 ZoomX 비중을 늘리고 Cushlon 3.0을 하단에 배치한 듀얼 폼 구조입니다. 힐 38mm의 넉넉한 스택이 장거리에서 충격을 확실히 흡수하면서도, ZoomX 특유의 반발력을 잃지 않았다는 게 리뷰어들의 공통된 평입니다.</p>
+
+<h2>약점 — 무게와 저드롭 적응</h2>
+<p>336g(남성 M10)은 동급 경쟁작 대비 <strong>확실히 무거운 편</strong>입니다. 살로몬 S/Lab 울트라 글라이드 2(약 320g), 노스페이스 벡티브 엔듀리스 4(약 309g) 등과 비교되며 지적된 부분입니다. 빠른 페이스의 반응형 트레일화를 원한다면 이 무게가 걸림돌이 될 수 있습니다.</p>
+<p>드롭도 4mm로 낮은 편이라, 힐 착지가 강하거나 아킬레스건·종아리에 이력이 있는 러너는 적응 기간이 필요합니다. 초기 착화 시 신발끈을 제대로 조이지 않으면 힐 슬립이 생긴다는 지적도 있으니, 첫 착용 때 락다운을 신경 써서 조이세요.</p>
+
+<h2>한국 러너 관점 — 토박스와 가격</h2>
+<p>발볼 넓은 한국 러너에게 나이키 트레일화는 선택지가 많지 않았습니다. <a href="/shoes/nike-ultrafly">울트라플라이</a>가 토박스 76.7mm로 넓은 편이었지만 카본 레이싱화라 완만한 코스 전용이었죠. ACG 제가마는 전작보다 더 넓어진 토박스와 맥시멀 쿠션을 갖춰, <strong>발볼이 넓으면서 장거리 컴포트를 원하는 러너</strong>에게 나이키 안에서는 사실상 유일한 선택지입니다. 별도 와이드 SKU는 없지만 기본 라스트 자체가 넉넉합니다.</p>
+<p>가격은 219,000원으로, 같은 맥시멀 쿠션 울트라 트레일화인 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(23만원, 와이드 옵션 있음)보다 약간 저렴합니다. 다만 출시 초기(2026-04-30 글로벌)라 한국 정가·내구성 실측치는 교차검증 기준이며, 확정 정보가 나오면 갱신하겠습니다.</p>
+
+<h2>누구에게 맞나</h2>
+<ul>
+  <li><strong>울트라마라톤·장거리 트레일</strong> 위주로 편안함을 최우선한다면 강력 추천</li>
+  <li><strong>발볼이 넓어</strong> 트레일 레이싱화의 좁은 토박스가 부담스러웠던 러너</li>
+  <li>반대로 <strong>가벼운 반응형이나 빠른 페이스 레이싱</strong>이 목적이라면 336g이 부담될 수 있어, <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(278g)나 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(258g, 카본)을 함께 비교해보세요</li>
+</ul>
+<p>다른 트레일화와의 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">트레일화 3파전(스피드고트6 vs 펄사 vs 메타후지)</a>에서, 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>에서 확인하세요.</p>
+
+<h2>FAQ</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 제가마 2에서 갈아탈 만한가요?</p>
+    <p class="faq-a">A. 토박스가 더 넓어지고 힐 락다운이 개선됐다는 게 확인된 변화입니다. 다만 무게가 늘었으니(302g→336g), 편안함·핏 개선을 중시한다면 갈아탈 만하고 경량성이 우선이라면 신중히 판단하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 한국 산악(북한산·관악산)에서도 쓸 수 있나요?</p>
+    <p class="faq-a">A. Vibram Megagrip 그립은 다양한 지형에서 안정적이라는 평이지만, 이 신발의 강점은 급경사 암반보다 <strong>장거리 편안함</strong>에 있습니다. 완만~중간 난이도 산길 위주의 장거리·울트라에 가장 잘 맞습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 와이드 옵션이 있나요?</p>
+    <p class="faq-a">A. 별도 와이드 SKU는 없습니다. 다만 전작 대비 라스트 자체를 넓힌 설계라, 발볼이 넓은 러너도 표준 사이즈로 충분히 편안하다는 평이 많습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: Believe in the Run(believeintherun.com) ACG 제가마 트레일 리뷰 · RunRepeat(runrepeat.com) 제가마 2 실측 랩 데이터 · 나이키 공식 발표(about.nike.com). 한국 정가는 nike.com/kr 리스팅 기준 교차검증. 작성 2026년 7월 10일.</small></p>
+`,
+  },
+  {
     id: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
     slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
     title: '트레일화 3파전 | 스피드고트 6 vs 펄사 vs 메타후지 트레일 — 만능 그립 · 가벼운 올라운드 · 평탄 카본레이스',
