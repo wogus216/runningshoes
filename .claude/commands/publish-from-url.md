@@ -58,7 +58,7 @@ sharp로 editorial 썸네일을 생성한다 (1200×630 WebP):
 수집한 콘텐츠를 바탕으로 다음 규칙에 따라 HTML을 직접 작성한다.
 
 **slug 규칙**: `YYYY-{키워드}-{키워드}` (소문자, 하이픈)
-**파일**: `src/lib/data/blog/posts.ts` — `blogPosts` 배열 맨 앞에 삽입
+**파일**: `src/lib/data/blog/posts/{발행월 YYYY-MM}.ts` — 해당 월 배열(`posts_YYYY_MM`) 맨 앞에 삽입 (새 월이면 파일 생성 후 `posts/index.ts`에 import+스프레드 등록)
 
 **필수 포함 요소**:
 - callout (tip / warning / info / success 중 적합한 것)
@@ -103,7 +103,7 @@ npm run build
 
 빌드 성공 시:
 ```bash
-git add public/images/blog/{slug}.webp src/lib/data/blog/posts.ts
+git add public/images/blog/{slug}.webp src/lib/data/blog/posts/
 git commit -m "feat(blog): {한 줄 요약}"
 git push origin main
 ```

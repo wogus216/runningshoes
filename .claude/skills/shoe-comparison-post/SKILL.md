@@ -29,12 +29,12 @@ description: >-
 ## 2. 중복·자기잠식 확인
 
 발행 전 `grep`으로 확인한다:
-- 같은 조합의 비교글이 이미 있는가 (`grep "슬러그조각" posts.ts`).
+- 같은 조합의 비교글이 이미 있는가 (`grep -r "슬러그조각" src/lib/data/blog/posts/`).
 - 최근 발행글과 겹치는가 — 예: 어제 "A vs B"를 냈으면 오늘 "A' vs B"는 자기잠식이니 상대를 바꾼다(메모리 `feedback_blog_topic_dedup`). 겹치면 각도/상대를 조정하고, 애매하면 사용자에게 확인한다.
 
 ## 3. 비교글 작성
 
-`src/lib/data/blog/posts.ts`의 `blogPosts` 배열 **맨 앞**에 새 객체로 삽입한다(Edit로 `export const blogPosts: BlogPost[] = [\n  {\n    id: '<기존 첫 글>'` 앞에 삽입).
+`src/lib/data/blog/posts/{발행월 YYYY-MM}.ts`의 배열 **맨 앞**에 새 객체로 삽입한다(Edit로 `export const posts_YYYY_MM: BlogPost[] = [\n  {\n    id: '<그 월의 기존 첫 글>'` 앞에 삽입. 해당 월 파일이 없으면 생성 후 `posts/index.ts`에 import+스프레드 등록).
 
 메타:
 - `id`/`slug`: `{a}-vs-{b}[-vs-{c}]-<세그먼트>-2026` (소문자·하이픈). 3파전이면 `-super-trainer-2026` 등 세그먼트 접미사.
@@ -86,7 +86,7 @@ description: >-
 ## 8. 커밋·푸시
 
 - 빌드가 재생성한 로컬 sitemap은 되돌린다: `git checkout public/sitemap-0.xml` (Vercel이 배포 시 정확히 재생성).
-- `git add`: `posts.ts` + 회유 편집한 `shoes/*.ts` + 썸네일 webp.
+- `git add`: `src/lib/data/blog/posts/` + 회유 편집한 `shoes/*.ts` + 썸네일 webp.
 - 커밋: `feat(blog): {요약}` 제목 + 본문(각도·자기잠식 회피·회유 세트 명시), 끝에 `Co-Authored-By: Claude Opus 4.8 (1M context) <noreply@anthropic.com>`.
 - `git push` (main 직접 — 이 repo의 표준 워크플로우, Vercel 자동배포).
 

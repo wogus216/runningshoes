@@ -1,0 +1,12057 @@
+import { BlogPost } from '@/types/blog';
+
+export const posts_2026_05: BlogPost[] = [
+  {
+    id: 'gangneung-unique-running-courses-7',
+    slug: 'gangneung-unique-running-courses-7',
+    title: '강릉 이색 러닝 코스 7선 | 경포호수 벚꽃부터 정동진 일출까지 — 호수·바다·솔숲 결합한 강릉만의 러닝',
+    description: '경포호수 둘레 러닝부터 안목 커피거리 해변, 정동진 일출, 강릉 바우길 트레일까지 강릉에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 경포호·경포해변·정동진·바우길·송정 솔숲·남대천·안반데기 각 코스별 출발지·노면·주의점 가이드. 러닝 여행자 필독.',
+    thumbnail: '/images/blog/gangneung-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['강릉 러닝 코스', '이색 러닝', '경포호수', '안목 커피거리', '정동진 일출', '강릉 바우길', '송정 솔숲', '남대천', '안반데기', '강릉 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>강릉은 호수·동해·솔숲·고지대를 결합한 강원권 러닝 여행지</strong> — 경포호 벚꽃, 안목 커피거리 해변, 정동진 일출, 바우길 트레일 등 관광과 러닝을 묶기 좋은 풍경</li>
+    <li>강릉의 시그니처는 <strong>경포호수 둘레 + 경포해변</strong> — 호수와 동해를 한 코스에서 오가는 평지 러닝</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">☕</span>
+  <div class="callout-body">
+    <p class="callout-title">강릉 러닝만의 매력</p>
+    <p>강릉은 <strong>호수(경포호)·동해 바다(경포·안목·정동진)·솔숲(송정·경포)·둘레 트레일(바우길)·고지대(안반데기·대관령)</strong>가 어우러진 강원권 러닝 여행지입니다. 경포호 둘레를 돌다 바로 경포해변으로 이어지고, <strong>안목 커피거리</strong>에서 커피 한잔으로 마무리하는 러닝은 강릉만의 낭만. 정동진 일출, 바우길 둘레 트레일, 솔향 가득한 송림까지 관광과 러닝을 함께 즐기기 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>경포호수 둘레</strong></td><td>약 4~6km 둘레</td><td>하 (평지)</td><td>경포대 + 벚꽃 + 호수 — 시그니처</td><td>봄 새벽·저녁</td></tr>
+    <tr><td>2</td><td><strong>경포해변 ~ 안목 커피거리</strong></td><td>5~8km</td><td>하 (평지)</td><td>동해 해변 + 커피거리</td><td>새벽·해질녘</td></tr>
+    <tr><td>3</td><td><strong>정동진 해안</strong></td><td>5~8km</td><td>하</td><td>한반도 일출 명소 + 모래시계공원</td><td>일출</td></tr>
+    <tr><td>4</td><td><strong>강릉 바우길 (바다호숫길)</strong></td><td>약 8~14km</td><td>중</td><td>호수·바다·솔숲 둘레 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>5</td><td><strong>송정해변 솔숲</strong></td><td>약 4~6km</td><td>하</td><td>해변 + 소나무 숲길</td><td>오전·해질녘</td></tr>
+    <tr><td>6</td><td><strong>남대천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 LSD</td><td>새벽·야간</td></tr>
+    <tr><td>7</td><td><strong>안반데기</strong></td><td>약 4~6km</td><td>중상</td><td>고지대 운해·일출 + 배추밭</td><td>새벽·일출</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 경포호수 둘레 — 호수와 벚꽃, 강릉의 시그니처</h2>
+
+<p><strong>출발지</strong>: 경포대·경포호 (버스·차량)<br>
+<strong>거리</strong>: 약 4~6km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
+
+<p>경포호수는 강릉을 대표하는 호수로, <strong>경포대와 벚꽃길</strong>이 어우러진 둘레 산책로가 평탄하게 이어집니다. 봄철 경포호 벚꽃은 전국적 명소이며, 호수를 돌다 바로 경포해변으로 이어져 호수+바다를 한 번에 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 둘레 + 봄 벚꽃 + 바다 연계. 평지라 누구나 즐길 수 있고, 거리를 늘리려면 경포해변·가시연습지로 확장 가능합니다. 강릉 러닝 여행의 베이스 코스.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 경포해변 ~ 안목 커피거리 — 동해 해변과 커피</h2>
+
+<p><strong>출발지</strong>: 경포해변 (안목해변 방면)<br>
+<strong>거리</strong>: 5~8km (경포~안목 해안)<br>
+<strong>노면</strong>: 해변 산책로 + 데크 + 일부 모래<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>경포해변에서 안목해변(커피거리)까지 이어지는 <strong>동해 해변 코스</strong>입니다. 넓은 백사장과 솔숲을 끼고 달리다, <strong>안목 커피거리</strong>에서 바다를 보며 커피로 마무리하는 강릉만의 러닝 루틴이 매력적입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 동해 해변 + 커피거리 마무리라는 강릉 특유의 낭만. 평탄한 해변 산책로라 부담이 적고, 일출·노을 시간이 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해변 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
+
+<h2>3. 정동진 해안 — 한반도 일출 명소</h2>
+
+<p><strong>출발지</strong>: 정동진역·모래시계공원 (차량·기차)<br>
+<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
+<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
+<strong>추천 시간대</strong>: 일출</p>
+
+<p>정동진은 <strong>바다와 가장 가까운 기차역이자 일출 명소</strong>로, 모래시계공원과 해안 산책로를 따라 일출을 보며 달리는 경험이 특별합니다. 새해·기념일 일출 러닝지로 인기입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한반도 대표 일출 + 평탄한 해안 러닝. 정동진~썬크루즈 방면으로 거리를 늘릴 수 있습니다. 바람이 강한 날이 많으니 윈드재킷을 챙기고, 일출 시간을 미리 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
+
+<h2>4. 강릉 바우길 (바다호숫길) — 호수·바다·솔숲 둘레 트레일</h2>
+
+<p><strong>출발지</strong>: 바우길 구간별 입구 (경포·사천 일대)<br>
+<strong>거리</strong>: 약 8~14km (구간 선택)<br>
+<strong>노면</strong>: 흙길 + 솔숲 + 해안 데크 + 일부 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>바우길은 강릉을 한 바퀴 잇는 둘레길로, 특히 <strong>바다호숫길(5구간)</strong>은 경포호·경포해변·솔숲을 두루 지나는 인기 코스입니다. 호수·바다·숲을 한 코스에서 만나는 강릉 트레일의 정수입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 호수+바다+솔숲을 잇는 다채로운 둘레 트레일. 다만 <strong>흙길·임도·완만한 오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 구간이 길어 거리·체력에 맞게 끊어 뛰세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>5. 송정해변 솔숲 — 해변과 소나무 숲길</h2>
+
+<p><strong>출발지</strong>: 송정해변 (강릉 시내 인근)<br>
+<strong>거리</strong>: 약 4~6km (해변 + 솔숲)<br>
+<strong>노면</strong>: 솔숲 흙길 + 해변 산책로<br>
+<strong>추천 시간대</strong>: 오전·해질녘</p>
+
+<p>송정해변은 <strong>울창한 소나무 숲과 백사장이 어우러진 해변</strong>으로, "솔향 강릉"을 대표하는 솔숲 러닝이 가능합니다. 해변과 솔숲을 오가며 달리는 코스로, 한적하고 그늘이 많아 여름에도 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 소나무 숲 그늘 + 해변의 조합. 솔숲 흙길이 발 충격을 덜어주고 피톤치드가 가득합니다. 경포·안목 방면으로 연결해 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 솔숲 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>6. 남대천 둔치 — 도심 관통 하천 LSD</h2>
+
+<p><strong>출발지</strong>: 남대천 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~10km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>남대천은 강릉 도심을 관통해 동해로 흐르는 하천으로, <strong>둔치 산책로를 따라 평지 LSD</strong>가 가능합니다. 대관령에서 발원해 바다로 이어지는 물길을 따라 거리 조절이 자유롭습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 하천 평지 + 거리 무제한. 강릉 시내 거주 러너의 데일리 코스로, 단오제가 열리는 남대천 일대의 정취도 느낄 수 있습니다. 여름엔 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션.</p>
+
+<h2>7. 안반데기 — 고지대 운해와 일출</h2>
+
+<p><strong>출발지</strong>: 안반데기 (왕산면, 차량)<br>
+<strong>거리</strong>: 약 4~6km (전망·둘레 코스)<br>
+<strong>노면</strong>: 흙길 + 임도 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 새벽·일출</p>
+
+<p>안반데기는 해발 1,100m 고지대의 <strong>고랭지 배추밭과 운해·일출 명소</strong>입니다. 능선을 따라 펼쳐진 배추밭과 풍력발전기, 새벽 운해가 어우러진 풍경이 압권으로, 고지대 트레일·일출 러닝의 특별한 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 고지대 운해·일출이라는 드라마틱한 풍경. 다만 <strong>가파른 오르막·흙길·고도</strong>가 있어 일반 데일리화로는 한계가 있고, 새벽엔 추우니 보온에 유의하세요. 차량 접근 후 가볍게 뛰는 코스에 가깝습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>본인 강릉 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>경포·강문 일대 거주·여행자</strong>: <strong>경포호수 둘레 + 경포해변~안목 커피거리</strong> — 호수·바다 한 번에</li>
+  <li><strong>강릉 시내 거주</strong>: <strong>남대천 둔치</strong>(도심 하천 LSD) · <strong>송정 솔숲</strong></li>
+  <li><strong>정동진·옥계 방면</strong>: <strong>정동진 해안</strong>(일출)</li>
+  <li><strong>둘레·트레일</strong>: <strong>강릉 바우길</strong>(바다호숫길) → <strong>안반데기</strong>(고지대 일출)</li>
+  <li><strong>커피+러닝 낭만</strong>: <strong>경포해변~안목 커피거리</strong> — 러닝 후 바다 커피</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·해변·하천 (경포호·경포해변·남대천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>해변·하천 LSD (남대천·정동진)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>바우길·안반데기 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>솔숲 힐링런 (송정)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>강릉 러닝 — 커피와 바다, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">커피의 도시에서 달리다 — 강릉 러닝 여행</p>
+    <p>강릉은 <strong>바다·호수·커피를 한 번에 즐기는</strong> 러닝 여행지입니다. ① 도착 첫날은 <strong>경포호수 둘레 + 경포해변</strong>, ② 커피 러닝은 <strong>안목 커피거리</strong>(러닝 후 바다 커피), ③ 일출은 <strong>정동진·안반데기</strong>, ④ 본격 트레일은 <strong>바우길</strong>로 묶으면 좋습니다. KTX로 서울에서 약 1시간 50분, 러닝 후 강릉 커피·초당두부까지 더하면 완벽한 미식 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주</a>·<a href="/blog/gyeongju-unique-running-courses-7">경주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 강릉 러닝 여행, 어디부터 뛰면 좋나요?</h3>
+<p><strong>경포호수 둘레 + 경포해변</strong>이 1순위입니다. 호수와 동해를 한 코스에서 오가는 평지라 부담이 없고, <strong>안목 커피거리</strong>에서 커피로 마무리하면 강릉다운 러닝이 완성됩니다. 일출을 원하면 정동진, 트레일은 바우길을 추가하세요.</p>
+
+<h3>Q. 강릉에서 일출 러닝하기 좋은 곳은?</h3>
+<p><strong>정동진</strong>이 대표 일출 명소입니다. 해안 산책로를 따라 일출을 보며 달릴 수 있습니다. 고지대 운해·일출을 원하면 <strong>안반데기</strong>(해발 1,100m)가 특별하지만 차량 접근이 필요하고 새벽엔 추우니 보온에 유의하세요. 경포해변도 동해 일출이 아름답습니다.</p>
+
+<h3>Q. 바우길·안반데기 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·임도·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 강릉 마라톤 대회는 어떤 게 있나요?</h3>
+<p>경포·동해안·남대천 일대를 활용한 해안·도심 마라톤들이 열립니다. 바닷바람이 변수지만 경관이 빼어나고 대부분 평지라 기록 도전에도 좋습니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'gyeongju-unique-running-courses-7',
+    slug: 'gyeongju-unique-running-courses-7',
+    title: '경주 이색 러닝 코스 7선 | 첨성대 야경부터 남산 노천 박물관까지 — 신라 유적·호수·산 결합한 경주만의 러닝',
+    description: '대릉원·첨성대·동궁과월지 신라 유적 야경 러닝부터 보문호수, 남산 노천 박물관 트레일까지 경주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 대릉원·보문호·남산·황룡사지·토함산·형산강·양동마을 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/gyeongju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['경주 러닝 코스', '이색 러닝', '대릉원 첨성대', '보문호수', '경주 남산', '황룡사지 월성', '토함산 불국사', '형산강', '양동마을', '경주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>경주는 신라 천년 유적·호수·산을 한 도시에 결합한 역사 러닝의 끝판왕</strong> — 첨성대·대릉원·동궁과월지 야경, 보문호 벚꽃, 남산 노천 박물관 등 도시 전체가 박물관</li>
+    <li>경주의 시그니처는 <strong>대릉원·첨성대·동궁과월지 야간 러닝</strong> — 조명 켜진 신라 유적 사이를 달리는 경험은 경주에서만 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏛️</span>
+  <div class="callout-body">
+    <p class="callout-title">경주 러닝만의 매력</p>
+    <p>경주는 도시 전체가 유네스코 세계유산인 <strong>신라 천년 고도</strong>로, <strong>유적 도심(대릉원·첨성대·동궁과월지)·호수(보문호)·산(남산·토함산)·왕경 평지(황룡사지·월성)·강(형산강)·전통마을(양동)</strong>이 어우러져 있습니다. 무엇보다 <strong>조명 켜진 신라 유적 사이를 달리는 야간 러닝</strong>은 경주만의 독보적 경험. 봄 보문호 벚꽃, 노천 박물관이라 불리는 남산의 마애불·석탑 트레일까지, 역사와 자연을 함께 달릴 수 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>대릉원·첨성대·동궁과월지</strong></td><td>5~8km</td><td>하 (평지)</td><td>신라 유적 + 야경 — 시그니처</td><td>해질녘·야간(조명)</td></tr>
+    <tr><td>2</td><td><strong>보문호수 둘레</strong></td><td>약 8~10km</td><td>하 (평지)</td><td>관광단지 호수 + 벚꽃</td><td>봄 새벽·저녁</td></tr>
+    <tr><td>3</td><td><strong>경주 남산</strong></td><td>약 6~10km</td><td>중상</td><td>노천 박물관 — 마애불·석탑 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>황룡사지·월성·계림</strong></td><td>5~9km</td><td>하 (평지)</td><td>신라 왕경 드넓은 들판</td><td>새벽·해질녘</td></tr>
+    <tr><td>5</td><td><strong>토함산·불국사</strong></td><td>약 6~10km</td><td>중상</td><td>본격 산악 트레일 + 석굴암</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>형산강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>7</td><td><strong>양동마을</strong></td><td>4~6km</td><td>하~중</td><td>유네스코 전통마을 + 둘레</td><td>이른 새벽·오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 대릉원·첨성대·동궁과월지 — 신라 유적을 달리는 야경 러닝</h2>
+
+<p><strong>출발지</strong>: 대릉원·첨성대 일대 (시내 중심)<br>
+<strong>거리</strong>: 5~8km (대릉원·첨성대·동궁과월지·월정교 연계)<br>
+<strong>노면</strong>: 흙길 + 우레탄 산책로 + 보도<br>
+<strong>추천 시간대</strong>: 해질녘·야간 (조명)</p>
+
+<p>경주의 시그니처 코스. <strong>대릉원(천마총)·첨성대·동궁과월지(안압지)·월정교</strong>를 잇는 도심 유적 러닝으로, 특히 <strong>밤이면 조명을 받은 신라 유적</strong>이 환상적입니다. 평탄해 부담이 적고, 도시 전체가 박물관인 경주의 정수를 한 번에 느낄 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 조명 켜진 신라 유적 야간 러닝이라는 독보적 경험. 첨성대·동궁과월지 야경은 인생샷 명소. 평지라 누구나 즐길 수 있지만, 관광객이 많은 구간은 페이스보다 풍경을 즐기는 러닝으로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 보문호수 둘레 — 관광단지 호수와 벚꽃</h2>
+
+<p><strong>출발지</strong>: 보문관광단지 (보문호, 버스·차량)<br>
+<strong>거리</strong>: 약 8~10km (호수 일주)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 봄 새벽·저녁</p>
+
+<p>보문호수는 경주 관광단지의 중심 호수로, <strong>둘레를 따라 약 8~10km 평탄한 산책로</strong>가 이어집니다. 봄철 보문호 벚꽃은 전국적 명소로, 호수를 끼고 달리는 벚꽃 러닝이 백미입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 일주 + 봄 벚꽃 + 매끄러운 노면. 거리가 충분해 LSD·페이스 훈련에 좋고, 호반 리조트·카페가 많아 러닝 여행 베이스로 적합합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·페이스. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(맥스 쿠션)·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(슈퍼트레이너).</p>
+
+<h2>3. 경주 남산 — 노천 박물관 트레일</h2>
+
+<p><strong>출발지</strong>: 삼릉·서남산 주차장 등 (남산 입구)<br>
+<strong>거리</strong>: 약 6~10km (코스별)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 바위 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>경주 남산은 <strong>마애불·석탑·절터가 산 전체에 흩어진 "노천 박물관"</strong>으로 불리는 명산입니다. 삼릉 가는 길·금오봉 코스를 따라 트레일을 달리며 신라 불교 유적을 만나는 경험은 경주에서만 가능합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 산 곳곳의 마애불·석탑이라는 독특한 트레일 풍경. 다만 <strong>돌길·바위·오르막</strong>이 많아 일반 데일리화·카본화는 비추, 유적 보호 구역이라 정해진 탐방로를 지켜야 합니다. 입문자는 삼릉~상선암 구간 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 황룡사지·월성·계림 — 신라 왕경 드넓은 들판</h2>
+
+<p><strong>출발지</strong>: 황룡사지·월성 일대 (대릉원 인근)<br>
+<strong>거리</strong>: 5~9km<br>
+<strong>노면</strong>: 흙길 + 잔디 + 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>황룡사지·월성(반월성)·계림 일대는 <strong>신라 왕경이 펼쳐졌던 드넓은 평지 유적</strong>입니다. 옛 황룡사 터의 광활한 들판과 첨성대·계림을 잇는 코스로, 시원하게 트인 평지에서 신라의 스케일을 느끼며 달릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 드넓은 왕경 들판 + 첨성대·계림 연계의 평지 러닝. 해질녘·새벽 빛이 유적과 어우러져 아름답습니다. 1번 유적 코스와 묶으면 경주 도심 역사 러닝이 완성됩니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·잔디. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 데일리·안정화.</p>
+
+<h2>5. 토함산·불국사 — 본격 산악 트레일과 석굴암</h2>
+
+<p><strong>출발지</strong>: 불국사 주차장 (토함산 입구, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (불국사~석굴암~토함산)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (일출 명소)</p>
+
+<p>토함산은 <strong>불국사와 석굴암을 품은 경주의 명산</strong>으로, 본격 산악 트레일입니다. 토함산 일출은 경주 대표 명소이며, 불국사에서 석굴암으로 이어지는 길은 역사와 산을 함께 즐기는 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 세계유산 불국사·석굴암 + 토함산 일출. 다만 <strong>돌길·임도·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨·일몰에 대비해야 합니다. 입문자는 불국사 둘레·완만 구간 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 본격 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>6. 형산강 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 형산강 자전거길 진입점 (시내·강변)<br>
+<strong>거리</strong>: 5~15km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>형산강은 경주를 지나 포항으로 흐르는 강으로, <strong>강변 자전거길이 길게 이어져 평지 LSD</strong>에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>7. 양동마을 — 유네스코 전통마을 둘레</h2>
+
+<p><strong>출발지</strong>: 양동마을 (경주 북부 안강, 차량)<br>
+<strong>거리</strong>: 4~6km (마을 + 둘레 구릉)<br>
+<strong>노면</strong>: 흙길 + 마을 길 + 완만한 구릉<br>
+<strong>추천 시간대</strong>: 이른 새벽·오전</p>
+
+<p>양동마을은 <strong>유네스코 세계유산으로 등재된 조선시대 전통 양반 마을</strong>입니다. 기와집·초가가 구릉을 따라 자리한 마을과 주변 둘레길을 달리며 전통 정취를 느낄 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 살아있는 전통 마을이라는 독특한 풍경. 다만 주민이 거주하는 마을이라 <strong>이른 새벽·조용한 러닝</strong>이 예의이고, 마을 안은 가볍게, 주변 구릉·들판에서 거리를 늘리세요. 신라 유적 도심과는 또 다른 조선 전통의 정취입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 흙길·마을길 + 완만 구릉. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a> 같은 안정성 있는 신발.</p>
+
+<h2>본인 경주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>시내(중심) 거주·여행자</strong>: <strong>대릉원·첨성대·동궁과월지(야경)</strong> + <strong>황룡사지·월성</strong> — 역사 도심 러닝</li>
+  <li><strong>보문단지 일대·여행 숙박</strong>: <strong>보문호수 둘레</strong>(벚꽃·LSD)</li>
+  <li><strong>외동·불국사 방면</strong>: <strong>토함산·불국사</strong>(산악 트레일)</li>
+  <li><strong>트레일·유적 동시</strong>: <strong>경주 남산</strong>(노천 박물관, 트레일화 필수)</li>
+  <li><strong>강변 LSD / 전통마을</strong>: <strong>형산강 자전거길</strong> · <strong>양동마을</strong>(새벽)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 유적·호수·강 (대릉원·황룡사지·보문호·형산강)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>호수·강 LSD (보문호·형산강)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>남산·토함산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (보문호 코스)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>경주 러닝 — 신라 유적 야경런과 역사 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌙</span>
+  <div class="callout-body">
+    <p class="callout-title">천년 고도를 달리다 — 경주 러닝 여행</p>
+    <p>경주는 <strong>도시 전체가 박물관인 역사 러닝의 끝판왕</strong>입니다. ① 야경 러닝은 <strong>대릉원·첨성대·동궁과월지</strong>(조명 켜진 신라 유적), ② 봄엔 <strong>보문호 벚꽃 LSD</strong>, ③ 유적 트레일은 <strong>남산</strong>(노천 박물관)·<strong>토함산</strong>(불국사·석굴암), ④ 전통은 <strong>양동마을</strong>로 묶으면 좋습니다. KTX로 서울에서 약 2시간, 러닝 후 신라 유적 관광까지 더하면 완벽한 역사 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 경주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>대릉원·첨성대·동궁과월지</strong>가 1순위입니다. 조명을 받은 신라 유적 사이를 달리는 경험은 경주에서만 가능하고, 평지라 안전합니다. <strong>보문호수</strong>도 조명·산책로가 잘 돼 있어 야간 러닝에 좋습니다. 반면 남산·토함산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 경주 남산·토함산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>돌길·바위·오르막이 많아 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 남산은 유적 보호 구역이니 정해진 탐방로를 지키세요.</p>
+
+<h3>Q. 경주 유적지에서 러닝해도 되나요?</h3>
+<p>대릉원·첨성대·동궁과월지 주변 산책로·평지는 러닝이 가능하지만, <strong>유적 보호 구역과 잔디·고분 위는 들어가면 안 됩니다.</strong> 정해진 탐방로·산책로를 이용하고, 관광객이 많은 시간엔 페이스보다 풍경을 즐기는 러닝을 권합니다. 양동마을은 주민 거주지라 새벽 조용한 러닝이 예의입니다.</p>
+
+<h3>Q. 경주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>경주국제마라톤을 비롯해 신라 유적·보문호 일대를 활용한 대회들이 열립니다. 유적을 지나는 코스라 분위기가 특별하고 대부분 평지·완만이라 기록 도전에도 좋습니다. 대회 상세는 <a href="/blog/2026-gyeongju-international-marathon">2026 경주국제마라톤 안내</a>를 참고하고, 본인 목적에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'jeonju-unique-running-courses-7',
+    slug: 'jeonju-unique-running-courses-7',
+    title: '전주 이색 러닝 코스 7선 | 한옥마을 새벽런부터 완산칠봉 꽃동산까지 — 한옥·하천·연꽃호수 결합한 전주만의 러닝',
+    description: '전주한옥마을 새벽 러닝부터 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 꽃동산까지 전주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 한옥마을·전주천·덕진공원·완산칠봉·건지산 편백·삼천·전주수목원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/jeonju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['전주 러닝 코스', '이색 러닝', '전주한옥마을', '전주천 한벽당', '덕진공원 연꽃', '완산칠봉', '건지산 편백숲', '삼천 자전거길', '전주수목원', '전주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>전주는 한옥·도심 하천·연꽃호수·꽃동산을 결합한 전통의 러닝 도시</strong> — 한옥마을 새벽런, 전주천 한벽당, 덕진공원 연꽃, 완산칠봉 봄 꽃동산 등 정취 가득한 풍경</li>
+    <li>전주의 시그니처는 <strong>한옥마을 새벽 러닝</strong> — 관광객이 몰리기 전 이른 새벽, 600여 채 한옥과 오목대를 달리는 경험은 전주만의 것</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏘️</span>
+  <div class="callout-body">
+    <p class="callout-title">전주 러닝만의 매력</p>
+    <p>전주는 <strong>한옥마을·도심 하천(전주천)·연꽃호수(덕진공원)·꽃동산(완산칠봉)·편백숲(건지산)·강변(삼천)</strong>이 어우러진 전통과 슬로시티의 도시입니다. 600여 채 한옥이 모인 <strong>전주한옥마을</strong>은 관광객이 몰리기 전 새벽에 달리면 고즈넉한 정취가 일품. 도심을 흐르는 전주천은 한벽당·청연루 같은 명소를 끼고 있고, 덕진공원 연꽃과 완산칠봉 봄꽃은 계절 러닝의 백미입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>전주한옥마을 + 오목대</strong></td><td>3~5km</td><td>하~중</td><td>600채 한옥 + 전망 — 시그니처</td><td>이른 새벽(인파 전)</td></tr>
+    <tr><td>2</td><td><strong>전주천 (한벽당~남천교)</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 관통 하천 + 한벽당</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>덕진공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>연꽃 호수 + 연화교</td><td>여름 새벽(연꽃)</td></tr>
+    <tr><td>4</td><td><strong>완산칠봉 (완산공원)</strong></td><td>약 3~5km</td><td>중 (오르막)</td><td>도심 산 + 봄 꽃동산</td><td>맑은 날 오전·봄</td></tr>
+    <tr><td>5</td><td><strong>건지산 편백숲 + 오송제</strong></td><td>약 4~6km</td><td>하~중</td><td>편백숲 + 저수지 산책</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>6</td><td><strong>삼천 자전거길</strong></td><td>5~12km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>7</td><td><strong>전주수목원 (한국도로공사)</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>도심 수목원 숲길 (무료)</td><td>오전·한낮(그늘)</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 전주한옥마을 + 오목대 — 한옥을 달리는 새벽 러닝</h2>
+
+<p><strong>출발지</strong>: 한옥마을 입구·경기전 일대<br>
+<strong>거리</strong>: 3~5km (한옥마을 + 오목대·이목대 + 전주천 연계)<br>
+<strong>노면</strong>: 돌·보도블록 + 오목대 계단<br>
+<strong>추천 시간대</strong>: 이른 새벽 (인파 전)</p>
+
+<p>전주한옥마을은 <strong>600여 채 한옥이 모인 전주의 시그니처</strong>입니다. 낮엔 관광객으로 붐비지만, <strong>이른 새벽엔 고즈넉한 한옥 골목을 달리는 특별한 경험</strong>이 가능합니다. 오목대·이목대에 오르면 한옥마을 전경이 한눈에 들어옵니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 전통 한옥을 달리는 독보적 정취 + 오목대 전망. 다만 <strong>골목이 좁고 돌·보도블록</strong>이라 빠른 페이스보다 가벼운 조깅·산책런에 적합하고, 관광 시간엔 러닝이 어렵습니다. 전주천과 연계하면 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 보도블록 + 계단 + 회복 조깅. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 쿠션 데일리.</p>
+
+<h2>2. 전주천 (한벽당~남천교) — 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 한벽당·남천교 등 전주천 다리마다 진입<br>
+<strong>거리</strong>: 5~10km (도심 종주)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>전주천은 전주 도심을 관통하는 하천으로, <strong>한벽당·청연루</strong> 같은 전통 명소를 끼고 흐릅니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 한옥마을과 가까워 역사 코스와 연계하기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 한벽당 전통 풍경 + 거리 무제한. 신호 없는 평지라 데일리·LSD에 적합하고, 맑은 물에서 다슬기·물고기를 볼 수 있을 만큼 수질이 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/nike-pegasus-41">페가수스 41</a>.</p>
+
+<h2>3. 덕진공원 — 연꽃 가득한 호수공원</h2>
+
+<p><strong>출발지</strong>: 덕진공원 (덕진구, 버스·차량)<br>
+<strong>거리</strong>: 약 2~3km 둘레 (인근 확장)<br>
+<strong>노면</strong>: 우레탄 산책로 + 연화교 데크<br>
+<strong>추천 시간대</strong>: 여름 새벽 (연꽃 개화)</p>
+
+<p>덕진공원은 <strong>연꽃으로 유명한 호수공원</strong>으로, 여름이면 호수를 가득 메운 연꽃과 연화교(현수교)가 장관을 이룹니다. 평탄한 둘레 산책로를 따라 가볍게 달리며 계절 정취를 즐기기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 연꽃 호수라는 계절 명소 + 평지 둘레. 여름 새벽 연꽃이 필 때가 백미. 둘레가 짧아 여러 바퀴 돌거나 전북대·건지산 방향으로 확장 가능합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 데일리화.</p>
+
+<h2>4. 완산칠봉 (완산공원) — 도심 속 봄 꽃동산</h2>
+
+<p><strong>출발지</strong>: 완산공원 입구 (완산구, 버스)<br>
+<strong>거리</strong>: 약 3~5km (둘레·전망 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (봄 꽃철 인기)</p>
+
+<p>완산칠봉은 전주 도심 남쪽의 일곱 봉우리 산으로, <strong>봄이면 철쭉·겹벚꽃이 가득한 꽃동산</strong>으로 유명합니다. 도심에서 가까운 산 트레일로, 전망대에서 전주 시가지가 한눈에 들어옵니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 + 봄 꽃동산 풍경. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 둘레·전망 코스 위주로.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문 또는 접지력 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비 트레일)·<a href="/shoes/asics-gel-kayano-32">카야노 32</a>(안정 데일리). 본격 트레일은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>5. 건지산 편백숲 + 오송제 — 편백 향 가득한 숲길</h2>
+
+<p><strong>출발지</strong>: 전북대 후문·건지산 입구 (덕진구)<br>
+<strong>거리</strong>: 약 4~6km (편백숲 + 오송제 둘레)<br>
+<strong>노면</strong>: 흙길 + 임도 + 저수지 데크<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>건지산은 전북대 인근의 도심 산으로, <strong>편백숲과 오송제 저수지</strong>가 어우러진 완만한 숲길이 매력적입니다. 편백 향 가득한 숲을 달리는 힐링 러닝이 가능하고, 비교적 완만해 입문자도 부담 없습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 편백숲 피톤치드 + 저수지 + 완만한 흙길. 숲 그늘 덕에 한낮에도 시원하고, 전북대 캠퍼스와 연계해 거리를 늘릴 수 있습니다. 데크·흙길은 미끄럼에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>6. 삼천 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 삼천 자전거길 진입점 (효자동·삼천동 일대)<br>
+<strong>거리</strong>: 5~12km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>삼천은 전주 서남부를 흐르는 하천으로, <strong>전주천과 합류하며 길게 이어지는 자전거길</strong>이 평지 LSD에 좋습니다. 신호 없이 장거리를 소화할 수 있고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 그늘이 적으니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>7. 전주수목원 (한국도로공사) — 무료 도심 수목원</h2>
+
+<p><strong>출발지</strong>: 한국도로공사 전주수목원 (덕진구, 버스·차량)<br>
+<strong>거리</strong>: 약 3~4km (수목원 산책로)<br>
+<strong>노면</strong>: 흙길 + 데크 + 산책로<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>전주수목원은 한국도로공사가 조성한 <strong>무료 개방 도심 수목원</strong>으로, 다양한 수목과 연못, 숲길이 어우러져 있습니다. 도심에서 가까우면서도 숲의 정취를 즐길 수 있어 힐링 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 무료 도심 수목원 + 풍부한 그늘 + 사계절 풍경. 평탄·완만해 부담이 적고, 가족 단위 방문이 많아 새벽·평일이 한적합니다. 운영 시간을 확인하고 이용하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 전주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>완산구·한옥마을 일대 거주</strong>: <strong>전주한옥마을(새벽)</strong> + <strong>전주천</strong>(한벽당) + <strong>완산칠봉</strong></li>
+  <li><strong>덕진구·전북대 일대 거주</strong>: <strong>덕진공원</strong>(연꽃) · <strong>건지산 편백숲</strong> · <strong>전주수목원</strong></li>
+  <li><strong>효자동·서부 거주</strong>: <strong>삼천 자전거길</strong>(강변 LSD)</li>
+  <li><strong>역사·정취 러닝</strong>: <strong>한옥마을 + 전주천 한벽당</strong> — 전주의 정수</li>
+  <li><strong>트레일·산</strong>: <strong>완산칠봉</strong>(봄 꽃동산) → <strong>건지산</strong>(편백숲)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·연꽃호수·수목원 (전주천·덕진·삼천)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD·맥스 쿠션 (삼천)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>완산칠봉·건지산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>한옥마을 새벽 조깅 (보도블록)</strong>: 쿠션·안정성. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>전주 러닝 — 한옥 새벽런과 슬로시티 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌸</span>
+  <div class="callout-body">
+    <p class="callout-title">전통과 정취를 달리다 — 전주 러닝 여행</p>
+    <p>전주는 <strong>전통과 슬로시티의 정취를 달릴 수 있는</strong> 도시입니다. ① 정취 러닝은 <strong>이른 새벽 한옥마을 + 전주천 한벽당</strong>, ② 계절 명소는 <strong>덕진공원 연꽃(여름)·완산칠봉 꽃동산(봄)</strong>, ③ 힐링은 <strong>건지산 편백숲·전주수목원</strong>, ④ 강변 LSD는 <strong>삼천</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30분, 러닝 후 전주 비빔밥·콩나물국밥까지 즐기는 미식 러닝 여행으로 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 전주한옥마을에서 러닝해도 되나요?</h3>
+<p>가능하지만 <strong>이른 새벽이 정답</strong>입니다. 낮엔 관광객이 많아 빠른 러닝이 어렵고 민폐가 될 수 있습니다. 새벽엔 고즈넉한 한옥 골목을 즐길 수 있지만, 골목이 좁고 돌·보도블록이라 가벼운 조깅·산책런에 적합합니다. 전주천과 연계해 거리를 늘리는 걸 권합니다.</p>
+
+<h3>Q. 전주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>전주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 한벽당·청연루 야경도 아름답습니다. <strong>덕진공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 완산칠봉·건지산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 완산칠봉·건지산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌계단·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화나 안정성 데일리</strong>가 좋고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 전주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>전주천·삼천 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'suwon-unique-running-courses-7',
+    slug: 'suwon-unique-running-courses-7',
+    title: '수원 이색 러닝 코스 7선 | 수원화성 성곽길부터 광교호수까지 — 세계유산·호수·산 결합한 수원만의 러닝',
+    description: '유네스코 세계유산 수원화성 성곽길 러닝부터 광교호수공원, 광교산 트레일, 정조의 서호까지 수원에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수원화성·광교호수·광교산·서호·만석공원·수원천·영흥수목원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/suwon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['수원 러닝 코스', '이색 러닝', '수원화성 성곽길', '광교호수공원', '광교산', '서호공원 축만제', '만석공원', '수원천', '영흥수목원', '수원 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>수원은 세계유산 성곽·신도시 호수·명산을 한 도시에 결합한 경기권 러닝 거점</strong> — 유네스코 수원화성 성곽길, 광교호수공원, 광교산 등 역사와 현대가 공존하는 풍경</li>
+    <li>수원의 시그니처는 <strong>수원화성 성곽길</strong>(약 5.7km 성곽 한 바퀴) — 세계유산을 달리는 국내에서 손꼽히는 이색 러닝</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏯</span>
+  <div class="callout-body">
+    <p class="callout-title">수원 러닝만의 매력</p>
+    <p>수원은 인구 120만의 국내 최대 기초자치단체로, <strong>유네스코 세계유산 수원화성·신도시 호수(광교)·명산(광교산)·정조 시대 저수지(서호·만석거)·도심 하천(수원천)</strong>이 어우러져 있습니다. 무엇보다 <strong>수원화성 성곽길</strong>은 약 5.7km 성곽을 따라 달리며 세계유산을 온몸으로 느끼는 국내 유일급 코스. 광교 신도시의 대형 호수공원과 광교산 트레일까지, 역사와 현대를 짧은 이동으로 오갈 수 있는 점이 매력입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>수원화성 성곽길</strong></td><td>약 5.7km (성곽 일주)</td><td>중 (계단·완만 오르막)</td><td>유네스코 세계유산 성곽 — 시그니처</td><td>새벽·야간(조명)</td></tr>
+    <tr><td>2</td><td><strong>광교호수공원</strong></td><td>약 5~7km</td><td>하 (평지)</td><td>신도시 대형 호수 + 데크</td><td>저녁·야간</td></tr>
+    <tr><td>3</td><td><strong>광교산</strong></td><td>약 6~10km</td><td>중상</td><td>수원 명산 + 전망 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>서호공원 (축만제)</strong></td><td>약 2~4km 둘레</td><td>하 (평지)</td><td>정조 시대 저수지 + 노을</td><td>해질녘·평일 새벽</td></tr>
+    <tr><td>5</td><td><strong>만석공원</strong></td><td>약 1.5~3km 둘레</td><td>하 (평지)</td><td>도심 호수공원 루프</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>6</td><td><strong>수원천</strong></td><td>5~8km</td><td>하 (평지)</td><td>화성 관통 도심 하천</td><td>새벽·야간</td></tr>
+    <tr><td>7</td><td><strong>영흥수목원</strong></td><td>약 3~5km</td><td>하~중</td><td>도심 수목원 숲길</td><td>오전·한낮(그늘)</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 수원화성 성곽길 — 세계유산을 달리다</h2>
+
+<p><strong>출발지</strong>: 화성행궁·장안문·팔달문 등 성곽 진입점<br>
+<strong>거리</strong>: 약 5.7km (성곽 한 바퀴)<br>
+<strong>노면</strong>: 성곽 보행로 + 흙길 + 계단 + 완만한 오르막<br>
+<strong>추천 시간대</strong>: 새벽·야간(조명)</p>
+
+<p>수원화성은 정조가 축조한 <strong>유네스코 세계유산</strong>으로, 약 5.7km 성곽을 따라 한 바퀴 달리는 코스가 수원의 시그니처입니다. 장안문·화서문·팔달문·창룡문과 서장대·동장대를 거치며 성곽과 도심 풍경을 함께 즐기는 경험은 다른 도시엔 없습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 세계유산을 달리는 독보적 경험 + 야간 성곽 조명. 다만 <strong>계단·완만한 오르막(팔달산 구간)</strong>이 있어 평지 LSD와는 다르고, 관광객이 많아 이른 새벽·야간이 쾌적합니다. 흙길·돌 구간은 미끄럼에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 계단·완만 오르막 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커·안정성. 인파 구간은 페이스보다 풍경을 즐기는 회복 조깅으로.</p>
+
+<h2>2. 광교호수공원 — 신도시 대형 호수 루프</h2>
+
+<p><strong>출발지</strong>: 신분당선 광교중앙역·광교호수공원 (도보 5분)<br>
+<strong>거리</strong>: 약 5~7km (원천호수·신대호수 연결)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 저녁·야간</p>
+
+<p>광교호수공원은 <strong>원천호수와 신대호수를 품은 신도시 대형 호수공원</strong>으로, 평탄한 데크와 산책로가 호수를 따라 길게 이어집니다. 잘 정비된 신도시 코스라 페이스 유지가 쉽고, 야간 조명과 마천루 야경이 운치를 더합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 평지 + 신도시 야경 + 매끄러운 노면. 인터벌·템포 훈련에도 좋고 무릎 부담이 적습니다. 광교 신도시 거주 러너의 홈 코스.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 페이스 훈련. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
+
+<h2>3. 광교산 — 수원 명산 트레일</h2>
+
+<p><strong>출발지</strong>: 광교산 입구(상광교·반딧불이화장실 등, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (형제봉·시루봉 코스)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>광교산은 수원·용인에 걸친 명산으로, <strong>형제봉·시루봉 능선</strong>을 따라 트레일 러닝이 가능합니다. 수원 시민이 가장 즐겨 찾는 산으로, 능선에서 보는 광교 신도시와 수원 시가지 조망이 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌길·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 형제봉까지만 가볍게.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 서호공원 (축만제) — 정조 시대 저수지의 노을</h2>
+
+<p><strong>출발지</strong>: 1호선 화서역 → 서호공원 (도보 10분)<br>
+<strong>거리</strong>: 약 2~4km 둘레<br>
+<strong>노면</strong>: 흙길 + 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 해질녘·평일 새벽</p>
+
+<p>서호(축만제)는 <strong>정조가 수원화성을 지으며 만든 농업용 저수지</strong>로, 역사적 의미가 깊은 호수입니다. 둘레를 따라 달리며 보는 서호 노을이 수원 8경 중 하나로 꼽힐 만큼 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 역사 + 노을 명소 + 평탄한 호수 둘레. 거리가 짧아 여러 바퀴 돌거나 인근 농촌진흥청 부지·여기산으로 확장 가능. 한적해서 차분한 러닝에 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 데일리화.</p>
+
+<h2>5. 만석공원 — 도심 호수공원 루프</h2>
+
+<p><strong>출발지</strong>: 만석공원 (장안구, 버스)<br>
+<strong>거리</strong>: 약 1.5~3km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>만석공원은 정조 시대 저수지 <strong>만석거</strong>를 기반으로 한 도심 호수공원으로, 평탄한 둘레 루프가 잘 정비돼 있습니다. 거리가 짧아 랩 카운트·인터벌 훈련에 좋고, 도심 접근성이 뛰어납니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 도심 접근성. 노면이 부드러워 무릎 부담이 적고, 운동시설·트랙도 함께 있어 다목적입니다. 가족 단위가 많아 새벽·평일이 한적합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 데일리.</p>
+
+<h2>6. 수원천 — 화성을 관통하는 도심 하천</h2>
+
+<p><strong>출발지</strong>: 수원천 도심 다리마다 진입 (화성 일대)<br>
+<strong>거리</strong>: 5~8km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>수원천은 <strong>수원화성을 관통해 흐르는 도심 하천</strong>으로, 화홍문·방화수류정 등 화성 명소를 끼고 달릴 수 있습니다. 둔치 산책로를 따라 평지 러닝이 가능하고, 성곽길과 연계하면 역사 코스를 길게 만들 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 하천 평지 + 화성 명소 조망. 화홍문·방화수류정 구간은 야간 조명이 아름답습니다. 신호 없는 평지라 데일리 러닝에 적합합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>7. 영흥수목원 — 도심 속 수목원 숲길</h2>
+
+<p><strong>출발지</strong>: 영흥수목원 (영통구, 버스·차량)<br>
+<strong>거리</strong>: 약 3~5km (수목원 + 인근 공원)<br>
+<strong>노면</strong>: 데크 + 흙길 + 산책로<br>
+<strong>추천 시간대</strong>: 오전·한낮(숲 그늘)</p>
+
+<p>영흥수목원은 영통구에 조성된 <strong>도심 수목원</strong>으로, 다양한 수목과 숲길이 어우러져 힐링 러닝에 좋습니다. 광교호수공원·신도시 코스와는 다른 숲의 정취를 도심에서 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 속 숲 러닝 + 풍부한 그늘. 데크·흙길이 섞여 부드럽고, 여름에도 그늘 덕에 시원합니다. 비교적 신설이라 한적하고 정비 상태가 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 수원 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>팔달구·장안구(원도심) 거주</strong>: <strong>수원화성 성곽길</strong>(세계유산) + <strong>수원천</strong>(화성 하천) + <strong>만석공원</strong></li>
+  <li><strong>영통구·광교 거주</strong>: <strong>광교호수공원</strong>(신도시 호수) · <strong>영흥수목원</strong>(숲)</li>
+  <li><strong>권선구·서둔동 거주</strong>: <strong>서호공원 축만제</strong>(정조 저수지 노을)</li>
+  <li><strong>트레일·산악</strong>: <strong>광교산</strong>(형제봉·시루봉, 트레일화 권장)</li>
+  <li><strong>역사·관광 러닝</strong>: <strong>수원화성 성곽길 + 수원천</strong> — 세계유산 한 바퀴</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·하천 (광교호수·수원천·만석)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>성곽길 계단·완만 오르막 (수원화성)</strong>: 안정성·록커. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+  <li><strong>광교산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (광교호수·만석 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>수원 러닝 — 세계유산 성곽런과 신도시 호수런</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🏯</span>
+  <div class="callout-body">
+    <p class="callout-title">역사와 현대를 한 도시에서 — 수원 러닝 가이드</p>
+    <p>수원은 <strong>세계유산과 신도시를 함께 달릴 수 있는</strong> 보기 드문 도시입니다. ① 역사 러닝은 <strong>수원화성 성곽길 + 수원천</strong>(화홍문·방화수류정), ② 현대 러닝은 <strong>광교호수공원</strong>(신도시 야경), ③ 힐링은 <strong>서호 노을·영흥수목원</strong>, ④ 트레일은 <strong>광교산</strong>으로 묶으면 좋습니다. 수도권이라 지하철·신분당선으로 접근이 쉬워 주말 러닝 나들이에도 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 수원화성 성곽길은 러닝하기 괜찮나요?</h3>
+<p>약 5.7km 성곽 일주는 세계유산을 달리는 특별한 경험이지만, <strong>계단과 팔달산 구간의 완만한 오르막</strong>이 있어 평지 LSD와는 다릅니다. 관광객이 많은 낮보다 <strong>이른 새벽·야간(조명)</strong>이 쾌적하고, 흙·돌 구간은 미끄럼에 주의하세요. 페이스보다 풍경을 즐기는 코스에 가깝습니다.</p>
+
+<h3>Q. 수원에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>광교호수공원</strong>이 1순위입니다. 신도시 조명과 야경, 평탄한 데크로 야간 러닝에 최적입니다. <strong>수원화성 성곽길·수원천</strong>도 야간 조명이 아름답고, <strong>만석공원</strong>도 조명이 있어 평지 야간 러닝에 좋습니다. 광교산은 야간에 위험하니 낮에 뛰세요.</p>
+
+<h3>Q. 광교산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 수원 마라톤 대회는 어떤 게 있나요?</h3>
+<p>수원화성·광교호수·수원천 일대를 활용한 도심 마라톤들이 열립니다. 화성 코스는 역사적 분위기가, 호수·하천 코스는 평지 기록 도전이 매력입니다. 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'ulsan-unique-running-courses-7',
+    slug: 'ulsan-unique-running-courses-7',
+    title: '울산 이색 러닝 코스 7선 | 태화강 십리대숲부터 영남알프스 억새까지 — 강·바다·억새산 결합한 울산만의 러닝',
+    description: '태화강 국가정원 십리대숲 러닝부터 대왕암 해안 절벽, 영남알프스 간월재 억새, 간절곶 일출까지 울산에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 태화강·대왕암·영남알프스·울산대공원·간절곶·진하해변·슬도 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/ulsan-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['울산 러닝 코스', '이색 러닝', '태화강 국가정원', '십리대숲', '대왕암공원', '영남알프스 간월재', '간절곶 일출', '울산대공원', '진하해변', '울산 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>울산은 강·바다·억새산을 한 도시에 결합한 동남권 러닝 도시</strong> — 태화강 십리대숲, 대왕암 해안 절벽, 영남알프스 억새, 간절곶 일출 등 산업도시 이미지와 전혀 다른 풍경</li>
+    <li>울산의 시그니처는 <strong>태화강 국가정원과 십리대숲</strong>(국내 2호 국가정원) — 산업도시에서 생태도시로 거듭난 상징적 러닝 코스</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎋</span>
+  <div class="callout-body">
+    <p class="callout-title">울산 러닝만의 매력</p>
+    <p>울산은 <strong>강(태화강)·바다(대왕암·간절곶·진하)·억새산(영남알프스)·도심 공원(울산대공원)</strong>이 어우러진 동남권 도시입니다. 공업도시로 알려졌지만, 도심을 흐르는 <strong>태화강과 십리대숲</strong>은 국내 2호 국가정원으로 지정될 만큼 생태가 회복됐고, 동쪽으론 대왕암·간절곶 해안이, 서쪽으론 <strong>영남알프스</strong>의 국내 최대 억새 능선이 펼쳐집니다. 강·바다·산을 짧은 이동으로 오갈 수 있는 점이 매력. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>태화강 국가정원 + 십리대숲</strong></td><td>5~12km</td><td>하 (평지)</td><td>대나무숲 + 강변 — 울산 시그니처</td><td>새벽·저녁</td></tr>
+    <tr><td>2</td><td><strong>대왕암공원</strong></td><td>약 4~6km</td><td>하~중</td><td>해안 절벽 + 송림 + 출렁다리</td><td>새벽·해질녘</td></tr>
+    <tr><td>3</td><td><strong>영남알프스 간월재</strong></td><td>약 8~12km</td><td>중상</td><td>국내 최대 억새 능선 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>울산대공원</strong></td><td>약 4~5km 루프</td><td>하 (평지)</td><td>도심 대형공원 + 장미원</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>간절곶</strong></td><td>5~8km</td><td>하 (평지)</td><td>한반도 첫 일출 + 해안 산책로</td><td>일출·해안 산책</td></tr>
+    <tr><td>6</td><td><strong>진하해변 + 명선도</strong></td><td>5~7km</td><td>하</td><td>해변 + 서핑 + 명선도 뷰</td><td>새벽·해질녘</td></tr>
+    <tr><td>7</td><td><strong>슬도 소리길 (방어진)</strong></td><td>4~6km</td><td>하</td><td>해안 산책로 + 바람·파도 소리</td><td>새벽·해질녘</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 태화강 국가정원 + 십리대숲 — 대나무숲을 달리는 울산 시그니처</h2>
+
+<p><strong>출발지</strong>: 태화강 국가정원 (중구·남구, 버스·차량)<br>
+<strong>거리</strong>: 5~12km (강변 + 대숲 + 둔치 연결)<br>
+<strong>노면</strong>: 우레탄 산책로 + 대숲 흙길 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·저녁</p>
+
+<p>태화강 국가정원은 <strong>국내 2호 국가정원</strong>으로, 강변을 따라 약 10리(4km)에 걸친 <strong>십리대숲</strong>이 핵심입니다. 빽빽한 대나무 터널을 달리는 경험은 다른 도시엔 없는 울산만의 것. 강변 둔치와 연결해 거리를 자유롭게 늘릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 대나무숲 터널 + 강변 평지 + 신호 없는 거리 무제한. 산업도시가 생태도시로 거듭난 상징적 코스로, 여름 대숲은 그늘과 시원함을 줍니다. 데일리부터 LSD까지 폭넓게 소화하는 울산 러닝의 중심입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 약간의 흙길. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 데일리화, 장거리엔 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>.</p>
+
+<h2>2. 대왕암공원 — 해안 절벽과 송림 트레일</h2>
+
+<p><strong>출발지</strong>: 대왕암공원 (동구, 버스·차량)<br>
+<strong>거리</strong>: 약 4~6km (공원 + 해안 산책로)<br>
+<strong>노면</strong>: 송림 흙길 + 해안 데크 + 일부 계단<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>대왕암공원은 <strong>기암괴석 해안 절벽과 100년 송림, 출렁다리</strong>가 어우러진 동해안 명소. 울창한 소나무 숲을 지나 해안 절벽을 끼고 달리는 풍경이 일품이고, 대왕암 출렁다리에서 보는 바다가 압권입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해안 절벽 + 송림 + 출렁다리의 드라마틱한 조합. 다만 <strong>흙길·데크·계단</strong>이 섞여 미끄럼에 주의하고, 관광객이 많아 이른 새벽이 한적합니다. 평지 러닝보다 풍경을 즐기는 코스에 가깝습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 흙길·데크 + 접지력. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발. 카본 슈즈는 비추.</p>
+
+<h2>3. 영남알프스 간월재 — 국내 최대 억새 능선</h2>
+
+<p><strong>출발지</strong>: 간월산휴양림·배내고개 (울주군, 차량)<br>
+<strong>거리</strong>: 약 8~12km (간월재 왕복·능선)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>영남알프스는 <strong>국내 최대 규모의 억새 산군</strong>으로, 간월재·신불산 일대의 황금빛 억새 능선이 가을이면 장관을 이룹니다. 본격 산악 트레일로, 광활한 억새밭과 능선 조망이 트레일 러너의 버킷리스트로 꼽힙니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 끝없이 펼쳐진 억새 능선 + 영남알프스 조망. 다만 <strong>가파른 오르막·돌길·고도차</strong>가 커서 일반 데일리화로는 위험하고, 날씨 변화·일몰에 대비해야 합니다. 충분한 물·행동식 필수, 초보는 간월재까지만.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>4. 울산대공원 — 도심 대형공원 루프</h2>
+
+<p><strong>출발지</strong>: 울산대공원 (남구, 버스·차량)<br>
+<strong>거리</strong>: 약 4~5km 루프<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>울산대공원은 <strong>대규모 도심 공원</strong>으로, SK가 조성해 기부한 것으로도 유명합니다. 장미원·호수·숲이 어우러진 평탄한 산책로 루프가 잘 정비돼 있어 도심 러닝의 중심입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 평지 + 풍부한 그늘 + 장미원 등 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 거리가 딱 떨어져 페이스 훈련에도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
+
+<h2>5. 간절곶 — 한반도에서 가장 먼저 해가 뜨는 곳</h2>
+
+<p><strong>출발지</strong>: 간절곶 (울주군, 차량)<br>
+<strong>거리</strong>: 5~8km (해안 산책로·해안도로)<br>
+<strong>노면</strong>: 해안 산책로 + 데크 + 아스팔트<br>
+<strong>추천 시간대</strong>: 일출 + 해안 산책</p>
+
+<p>간절곶은 <strong>한반도 육지에서 가장 먼저 일출을 볼 수 있는 곳</strong>으로, 등대와 소망우체통이 명물입니다. 해안 산책로를 따라 일출을 보며 달리는 경험은 새해·기념일에 특히 의미가 깊습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한반도 첫 일출이라는 상징성 + 평탄한 해안 러닝. 일출 러닝 명소로, 해안도로를 따라 거리를 늘릴 수 있습니다. 다만 바람이 강한 날이 많으니 윈드재킷을 챙기세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 해안 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 데일리화.</p>
+
+<h2>6. 진하해변 + 명선도 — 해변과 서핑 풍경</h2>
+
+<p><strong>출발지</strong>: 진하해수욕장 (울주군, 버스·차량)<br>
+<strong>거리</strong>: 5~7km (해변 + 해안 산책로)<br>
+<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>진하해변은 <strong>서핑 명소이자 명선도를 배경으로 한 해변</strong>으로, 잔잔한 해변 풍경과 서핑하는 사람들이 어우러집니다. 평탄한 해변 산책로를 따라 가볍게 달리기 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 서핑 풍경 + 명선도 + 평지 해변. 새벽·노을 시간대가 특히 아름답습니다. 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 떨어집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화.</p>
+
+<h2>7. 슬도 소리길 (방어진) — 바람과 파도 소리의 해안길</h2>
+
+<p><strong>출발지</strong>: 방어진항·슬도 (동구, 버스·차량)<br>
+<strong>거리</strong>: 4~6km (해안 산책로)<br>
+<strong>노면</strong>: 해안 데크 + 산책로<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>슬도는 방어진 끝의 작은 섬으로, <strong>구멍 뚫린 바위에 파도가 부딪혀 나는 소리</strong>에서 "소리섬"이라는 이름이 붙었습니다. 슬도 소리길을 따라 대왕암공원 방향으로 이어지는 해안 산책로가 차분한 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 바람·파도 소리의 독특한 해안 분위기 + 등대. 평탄한 해안 데크라 부담이 적고, 대왕암공원과 연계하면 거리를 늘릴 수 있습니다. 한적해서 사색하며 달리기 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>본인 울산 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>중구·남구(도심) 거주</strong>: <strong>태화강 국가정원</strong>(대숲 강변 LSD) + <strong>울산대공원</strong>(평지 루프)</li>
+  <li><strong>동구 거주</strong>: <strong>대왕암공원</strong>(해안 절벽) · <strong>슬도 소리길</strong>(해안 산책)</li>
+  <li><strong>울주군 거주</strong>: <strong>간절곶</strong>(일출 해안) · <strong>진하해변</strong>(서핑 해변)</li>
+  <li><strong>트레일·산악</strong>: <strong>영남알프스 간월재</strong>(억새 능선, 트레일화 필수)</li>
+  <li><strong>일출 러닝</strong>: <strong>간절곶</strong> — 한반도 첫 일출</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 강변·해변·공원 (태화강·간절곶·울산대공원)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD·맥스 쿠션 (태화강 장거리)</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>영남알프스·대왕암 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (울산대공원 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>울산 러닝 — 십리대숲과 억새, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌅</span>
+  <div class="callout-body">
+    <p class="callout-title">강·바다·억새를 하루에 — 울산 러닝 여행</p>
+    <p>울산은 <strong>강·바다·억새산을 짧은 이동으로 오갈 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>태화강 십리대숲·울산대공원</strong>, ② 해안은 <strong>대왕암·간절곶·진하해변</strong>, ③ 본격 트레일은 <strong>영남알프스 간월재</strong>(억새)로 묶으면 좋습니다. 특히 새해엔 <strong>간절곶 일출 러닝</strong>이 특별. KTX로 서울에서 약 2시간 10분이라 주말 러닝 여행도 가능 — 태화강 대숲 + 영남알프스 억새를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 울산 러닝과 다른 도시의 차이는?</h3>
+<p>울산은 공업도시 이미지와 달리, <strong>태화강 십리대숲</strong>(국가정원)이라는 독특한 대나무숲 강변 코스를 중심으로 대왕암·간절곶 해안과 영남알프스 억새 산을 모두 갖췄습니다. 강·바다·산을 짧은 이동으로 오갈 수 있어, 하루에 여러 풍경을 묶어 달릴 수 있는 게 매력입니다.</p>
+
+<h3>Q. 울산에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>태화강 국가정원·울산대공원</strong>이 1순위입니다. 조명이 있는 평지라 야간 LSD·루프에 좋습니다. 반면 영남알프스·대왕암·간절곶·해변은 야간에 어둡고 위험하니 낮·새벽(일출)에 뛰세요. 십리대숲은 야간 조명 구간을 확인하고 이용하세요.</p>
+
+<h3>Q. 영남알프스 간월재 트레일은 어떤 신발이 필요한가요?</h3>
+<p>가파른 오르막·돌길·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>으로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 울산 마라톤 대회는 어떤 게 있나요?</h3>
+<p>태화강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'gwangju-unique-running-courses-7',
+    slug: 'gwangju-unique-running-courses-7',
+    title: '광주 이색 러닝 코스 7선 | 무등산 주상절리부터 푸른길 폐철도까지 — 산·하천·폐철도·호수 결합한 광주만의 러닝',
+    description: '무등산 트레일부터 광주천 도심 하천, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길까지 광주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 무등산·광주천·푸른길공원·광주호·5·18기념공원·풍암호수·영산강 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/gwangju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['광주 러닝 코스', '이색 러닝', '무등산', '광주천', '푸른길공원', '광주호 메타세쿼이아', '5·18기념공원', '풍암호수공원', '영산강', '광주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>광주는 산·하천·폐철도·호수를 결합한 호남권 러닝 거점</strong> — 무등산 주상절리, 폐철도를 재생한 푸른길공원, 광주호 메타세쿼이아길 등 다른 도시엔 없는 풍경</li>
+    <li>도심을 관통하는 <strong>광주천</strong>과 광주의 상징 <strong>무등산</strong>이 러닝의 양대 축, 여기에 폐철도 그린웨이 "푸른길"이라는 이색 코스가 더해집니다</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌳</span>
+  <div class="callout-body">
+    <p class="callout-title">광주 러닝만의 매력</p>
+    <p>광주는 <strong>산(무등산)·도심 하천(광주천)·폐철도 선형공원(푸른길)·호수(광주호·풍암)·강(영산강·황룡강)</strong>이 어우러진 호남권 도시입니다. 광주의 상징 <strong>무등산</strong>은 주상절리(입석대·서석대)로 유명한 트레일 명소이고, 폐철도를 녹지로 되살린 <strong>푸른길공원</strong>은 도심을 가로지르는 광주만의 이색 그린웨이. 도심엔 광주천이 흐르고, 5·18 민주화의 역사가 곳곳에 새겨져 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>무등산 (중머리재 등)</strong></td><td>약 6~10km</td><td>중상</td><td>주상절리 + 본격 산악 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>광주천 둔치</strong></td><td>5~12km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 광주의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>푸른길공원</strong></td><td>약 8km (선형)</td><td>하 (평지)</td><td>폐철도 재생 그린웨이 — 이색</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>4</td><td><strong>광주호 호수생태원 + 메타세쿼이아길</strong></td><td>5~8km</td><td>하~중</td><td>호수 + 메타세쿼이아 숲</td><td>오전·해질녘</td></tr>
+    <tr><td>5</td><td><strong>5·18기념공원 + 상무시민공원</strong></td><td>약 3~4km</td><td>하 (평지)</td><td>역사 + 도심 공원</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>6</td><td><strong>풍암호수공원</strong></td><td>약 2~3km 둘레</td><td>하 (평지)</td><td>도심 호수 루프</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>7</td><td><strong>영산강·황룡강 자전거길</strong></td><td>5~15km</td><td>하 (평지)</td><td>강변 LSD + 자전거도로</td><td>새벽·저녁 노을</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 무등산 — 주상절리를 품은 광주의 상징</h2>
+
+<p><strong>출발지</strong>: 증심사 입구 (동구, 버스·차량)<br>
+<strong>거리</strong>: 약 6~10km (중머리재·장불재 코스)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 돌계단<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>무등산은 광주를 대표하는 명산으로, <strong>입석대·서석대 주상절리</strong>로 유명합니다. 증심사에서 중머리재·장불재로 이어지는 트레일은 광주 산악 러닝의 핵심 코스. 정상부 주상절리와 광주 시가지 조망이 압권입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 주상절리라는 독특한 지질 풍경 + 본격 산악 트레일. 다만 <strong>돌길·돌계단·고도차</strong>가 커서 일반 데일리화·카본화는 절대 비추. 충분한 물·행동식과 일몰 시간을 확인하고, 입문자는 중머리재까지만 가볍게.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>2. 광주천 둔치 — 광주의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 광주천 도심 다리마다 진입 (양동·금남로 일대)<br>
+<strong>거리</strong>: 5~12km (도심 종주, 거리 자유)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>광주천은 광주 도심을 관통하는 하천으로, <strong>광주 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 12km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 도심 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD·데일리. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a>.</p>
+
+<h2>3. 푸른길공원 — 폐철도를 되살린 도심 그린웨이</h2>
+
+<p><strong>출발지</strong>: 푸른길공원 구간별 진입 (동구·남구 도심)<br>
+<strong>거리</strong>: 약 8km (선형, 구간 조절)<br>
+<strong>노면</strong>: 우레탄·블록 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>푸른길공원은 <strong>도심을 지나던 폐철도를 녹지로 재생한 선형공원</strong>으로, 광주만의 이색 코스입니다. 옛 철길을 따라 도심을 가로지르며 달리는 경험이 독특하고, 나무가 우거져 도심 속 그린 터널을 이룹니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 폐철도 재생이라는 스토리 + 도심 한복판 그린웨이. 평탄하고 신호 구간이 정비돼 있어 가벼운 러닝·출퇴근 런에 좋습니다. 단 도심 횡단 구간은 보행자·교차로에 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>4. 광주호 호수생태원 + 메타세쿼이아길 — 호수와 숲</h2>
+
+<p><strong>출발지</strong>: 광주호 호수생태원 (북구, 담양 경계, 차량)<br>
+<strong>거리</strong>: 5~8km (생태원 + 메타세쿼이아길 연결)<br>
+<strong>노면</strong>: 데크 + 흙길 + 가로수길 아스팔트<br>
+<strong>추천 시간대</strong>: 오전·해질녘</p>
+
+<p>광주호 호수생태원은 <strong>호수와 습지, 생태 숲</strong>을 갖춘 명소로, 인근 담양 <strong>메타세쿼이아 가로수길</strong>과 연결해 호수+숲 러닝을 즐길 수 있습니다. 도심을 벗어난 자연 속 코스로 힐링 러닝에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 호수 + 메타세쿼이아 숲이라는 이국적 풍경. 평탄·완만해 부담이 적고, 가을 단풍·메타세쿼이아 낙엽철이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길·데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리.</p>
+
+<h2>5. 5·18기념공원 + 상무시민공원 — 역사와 도심 공원</h2>
+
+<p><strong>출발지</strong>: 광주 지하철 1호선 운천역·상무역 (도보)<br>
+<strong>거리</strong>: 약 3~4km (공원 루프)<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>상무지구의 5·18기념공원과 상무시민공원을 잇는 도심 공원 코스. <strong>5·18 민주화운동의 역사</strong>가 새겨진 공간을 달리며, 평탄한 산책로와 녹지가 잘 정비돼 있어 도심 러닝에 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 역사적 의미 + 신호 없는 도심 공원 평지. 나무가 많아 그늘이 풍부하고 접근성이 좋아 입문·회복 러닝에 좋습니다. 운천저수지와 연계하면 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>.</p>
+
+<h2>6. 풍암호수공원 — 도심 호수 루프</h2>
+
+<p><strong>출발지</strong>: 풍암호수공원 (남구, 버스·차량)<br>
+<strong>거리</strong>: 약 2~3km 둘레<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>풍암호수공원은 남구의 도심 호수공원으로, <strong>평탄한 호수 둘레 루프</strong>가 잘 정비돼 있습니다. 거리가 딱 떨어져 랩 카운트·페이스 훈련에 좋고, 야간 조명과 분수가 운치를 더합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프라 인터벌·템포 훈련에 최적. 노면이 부드러워 무릎 부담이 적고, 가족 단위 방문객이 많아 한적함을 원하면 새벽·평일을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스 훈련. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 데일리.</p>
+
+<h2>7. 영산강·황룡강 자전거길 — 강변 장거리 LSD</h2>
+
+<p><strong>출발지</strong>: 영산강·황룡강 자전거길 진입점 (광산구 등, 차량·버스)<br>
+<strong>거리</strong>: 5~15km (거리 자유)<br>
+<strong>노면</strong>: 자전거도로 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>영산강·황룡강 자전거길은 광주 서부를 흐르는 강을 따라 길게 이어지는 <strong>평지 강변 코스</strong>입니다. 신호 없이 장거리 LSD를 소화하기 좋고, 강변 풍경과 노을이 아름답습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 강변 장거리 평지 + 노을. 마라톤 LSD 훈련에 최적이고, 자전거길이라 노면이 매끄럽습니다. 다만 그늘이 적고 일부 구간은 한적하니 여름엔 새벽·저녁, 야간 단독은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 부드러운 맥스 쿠션.</p>
+
+<h2>본인 광주 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>동구·남구(도심) 거주</strong>: <strong>광주천</strong>(도심 하천 LSD) + <strong>푸른길공원</strong>(폐철도 그린웨이)</li>
+  <li><strong>서구·상무지구 거주</strong>: <strong>5·18기념공원</strong>(도심 공원) 또는 <strong>풍암호수공원</strong>(호수 루프)</li>
+  <li><strong>북구·담양 방면 거주</strong>: <strong>광주호 호수생태원 + 메타세쿼이아길</strong>(호수·숲)</li>
+  <li><strong>광산구 거주</strong>: <strong>영산강·황룡강 자전거길</strong>(강변 LSD)</li>
+  <li><strong>트레일·산악</strong>: <strong>무등산</strong>(주상절리 트레일, 트레일화 필수)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·폐철도·공원 (광주천·푸른길·5·18)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변·호수 LSD (영산강·풍암)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>무등산 트레일</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (풍암호수 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>광주 러닝 — 무등산과 푸른길, 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🚂</span>
+  <div class="callout-body">
+    <p class="callout-title">광주에서 뛰는 법 — 폐철도 그린웨이와 명산</p>
+    <p>광주는 <strong>도심 그린웨이와 명산을 함께 즐길 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>광주천·푸른길공원</strong>, ② 본 러닝은 <strong>무등산 트레일</strong>(주상절리), ③ 힐링은 <strong>광주호 메타세쿼이아길</strong>, ④ 강변 LSD는 <strong>영산강</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30~50분이라 주말 러닝 여행도 가능 — 푸른길 도심런 + 무등산 트레일을 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 광주 러닝과 다른 도시의 차이는?</h3>
+<p>광주는 도심 하천(광주천)·명산(무등산)이라는 기본 축에 <strong>폐철도를 재생한 푸른길공원</strong>이라는 독특한 그린웨이가 더해집니다. 무등산 주상절리 트레일과 광주호 메타세쿼이아 숲 등 자연 코스도 풍부해, 도심과 자연을 짧은 이동으로 오갈 수 있는 점이 매력입니다.</p>
+
+<h3>Q. 광주에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>광주천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>풍암호수공원·5·18기념공원</strong>도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 무등산·광주호·영산강 일부 구간은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 무등산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>돌길·돌계단·고도차가 커서 일반 도로화로는 위험합니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화를 권합니다. 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>로 시작해도 됩니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 광주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>광주천·영산강 일대를 활용한 도심·강변 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'daejeon-unique-running-courses-7',
+    slug: 'daejeon-unique-running-courses-7',
+    title: '대전 이색 러닝 코스 7선 | 계족산 황톳길 맨발런부터 대청호 둘레까지 — 황토·하천·호수·숲 결합한 대전만의 러닝',
+    description: '계족산 황톳길 맨발 러닝부터 갑천 도심 하천, 대청호 오백리길, 장태산 메타세쿼이아 숲까지 대전에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 계족산·갑천·대청호·한밭수목원·보문산·장태산·유등천 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/daejeon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['대전 러닝 코스', '이색 러닝', '계족산 황톳길', '맨발 러닝', '갑천', '대청호 오백리길', '한밭수목원', '보문산', '장태산 메타세쿼이아', '대전 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>대전은 황톳길·3대 하천·호수·숲을 결합한 중부권 러닝 거점</strong> — 특히 계족산 황톳길(14.5km 맨발 황토)은 전국에서 찾는 대전만의 이색 코스</li>
+    <li>갑천·유등천·대전천 3대 하천이 도심을 흐르고, 대청호·장태산·보문산이 외곽을 둘러싼 <strong>"숲의 도시"</strong></li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌲</span>
+  <div class="callout-body">
+    <p class="callout-title">대전 러닝만의 매력</p>
+    <p>대전은 <strong>황톳길(계족산)·도심 하천(갑천·유등천·대전천)·호수(대청호)·숲(장태산·한밭수목원)·산(보문산)</strong>이 어우러진 중부권 도시입니다. 무엇보다 <strong>계족산 황톳길</strong>은 14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는 전국적 명소로, 다른 도시엔 없는 대전만의 시그니처 코스. 도심엔 3대 하천이 흘러 평지 러닝이 풍부하고, 외곽 대청호·장태산은 숲과 호수 트레일을 제공합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>계족산 황톳길</strong></td><td>약 14.5km (임도 순환)</td><td>중 (완만 임도)</td><td>맨발 황토 + 편백숲 — 대전 시그니처</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>갑천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대전의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>대청호 오백리길</strong></td><td>5~12km (구간 선택)</td><td>중 (트레일)</td><td>호수 둘레 + 전망</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>한밭수목원 + 엑스포시민광장</strong></td><td>약 3~5km</td><td>하 (평지)</td><td>국내 최대 도심 수목원 + 분수</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>보문산</strong></td><td>약 4~7km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>장태산자연휴양림</strong></td><td>약 4~6km</td><td>하~중</td><td>메타세쿼이아 숲 + 스카이워크</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>7</td><td><strong>유등천·대전천 둔치</strong></td><td>5~10km</td><td>하 (평지)</td><td>도심 하천 + 합류부</td><td>새벽·야간</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 계족산 황톳길 — 맨발로 달리는 대전 시그니처</h2>
+
+<p><strong>출발지</strong>: 계족산 장동산림욕장 입구 (대덕구, 버스·차량)<br>
+<strong>거리</strong>: 약 14.5km (임도 순환)<br>
+<strong>노면</strong>: 황토 + 임도 흙길<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (비 온 직후 제외)</p>
+
+<p>계족산 황톳길은 <strong>14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는</strong> 전국적 명소로, 대전을 대표하는 이색 코스입니다. 편백숲과 어우러진 황톳길을 맨발로 밟는 경험은 다른 도시에선 할 수 없는 대전만의 것. 산소길·둘레길과 연결돼 거리를 조절할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 맨발 황토 러닝이라는 독보적 경험 + 편백 피톤치드. 황토가 발 충격을 부드럽게 받아주지만, <strong>맨발은 부상·이물질 위험</strong>이 있으니 처음엔 걷기부터, 발 상태를 보며 천천히. 비 온 직후엔 질척이고 미끄러워 피하세요. 입구에 세족장이 있습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 맨발 체험이 핵심이라 신발을 벗는 구간이 많지만, 신고 뛴다면 <strong>가벼운 트레일화나 배수 좋은 신발</strong>. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화가 무난합니다. 맨발 입문은 무리하지 말고 짧게 시작하세요.</p>
+
+<h2>2. 갑천 둔치 — 대전의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 한밭대교·갑천대교 등 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~15km (도심 종주, 거리 자유)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>갑천은 대전 서부를 관통하는 하천으로, <strong>둔산·엑스포 일대를 흐르는 대전 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 한밭수목원·엑스포광장과 가까워 도심 러닝의 중심입니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
+
+<h2>3. 대청호 오백리길 — 호수 둘레 트레일</h2>
+
+<p><strong>출발지</strong>: 대청호 인근 구간별 입구 (동구·대덕구, 차량)<br>
+<strong>거리</strong>: 5~12km (구간 선택)<br>
+<strong>노면</strong>: 흙길 + 데크 + 일부 임도·아스팔트<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>대청호 오백리길은 <strong>충청권 식수원인 대청호 둘레</strong>를 잇는 트레일로, 호수와 숲을 끼고 달리는 풍경이 일품입니다. 전체는 길지만 구간을 끊어 5~12km로 조절할 수 있어 트레일 입문~중급 모두 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 멀지 않은 호수 트레일. 물안개 낀 새벽·단풍철이 특히 아름답습니다. 다만 <strong>흙길·데크·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 일부 구간은 한적하니 단독 야간 러닝은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 + 안정성. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>4. 한밭수목원 + 엑스포시민광장 — 도심 속 국내 최대 수목원</h2>
+
+<p><strong>출발지</strong>: 대전 지하철 1호선 정부청사역·시청역 (도보 10분)<br>
+<strong>거리</strong>: 약 3~5km (수목원 + 광장 루프)<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>한밭수목원은 <strong>국내 최대 규모의 도심 인공 수목원</strong>으로, 둔산 도심 한복판에 있습니다. 엑스포시민광장·갑천과 연결돼 평탄한 산책로 루프를 달릴 수 있고, 나무가 많아 그늘이 풍부합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 수목원 평지 + 풍부한 그늘 + 사계절 풍경. 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 엑스포광장 분수와 야간 조명도 운치를 더합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
+
+<h2>5. 보문산 — 도심 근접 산 트레일</h2>
+
+<p><strong>출발지</strong>: 대전 중구 보문산공원 입구 (버스·차량)<br>
+<strong>거리</strong>: 약 4~7km (둘레·전망대 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>보문산은 대전 도심 남쪽에 바로 붙은 산으로, <strong>보운대(전망대)와 둘레길</strong>을 따라 트레일 러닝이 가능합니다. 전망대에서는 대전 시가지가 한눈에 들어오고, 도심에서 가까워 산악 러닝 입문에 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 근접 산 트레일 + 시가지 전망. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 입문자는 무리한 정상보다 둘레·전망대 코스를 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문~중급. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(가성비)·<a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(접지력). 일반 데일리·카본화는 비추.</p>
+
+<h2>6. 장태산자연휴양림 — 메타세쿼이아 숲길</h2>
+
+<p><strong>출발지</strong>: 장태산자연휴양림 (서구, 차량)<br>
+<strong>거리</strong>: 약 4~6km (숲길·둘레)<br>
+<strong>노면</strong>: 흙길 + 데크 + 완만한 임도<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>장태산자연휴양림은 <strong>하늘로 쭉 뻗은 메타세쿼이아 숲</strong>으로 유명한 곳으로, 스카이워크와 어우러진 숲길이 매력적입니다. 비교적 완만해 트레일 입문자도 부담 없이 숲의 정취를 즐기며 달릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 이국적인 메타세쿼이아 숲 러닝 + 피톤치드. 숲 그늘 덕에 한낮에도 시원하고, 가을 단풍이 특히 아름답습니다. 데크·흙길이 섞여 미끄럼에 주의하고, 휴양림 운영 시간을 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 완만 숲길 + 약간의 데크. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난합니다.</p>
+
+<h2>7. 유등천·대전천 둔치 — 도심 하천과 합류부</h2>
+
+<p><strong>출발지</strong>: 유등천·대전천 도심 다리마다 진입<br>
+<strong>거리</strong>: 5~10km<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로<br>
+<strong>추천 시간대</strong>: 새벽·야간</p>
+
+<p>유등천과 대전천은 대전 도심 남부·중심을 흐르는 하천으로, 갑천과 함께 <strong>대전 3대 하천</strong>을 이룹니다. 둔산 위주의 갑천과 달리 원도심·중구 쪽 러너에게 가까운 평지 코스이며, 세 하천이 만나는 합류부까지 연결됩니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 원도심 접근성 + 신호 없는 평지 + 거리 조절. 갑천보다 한적한 구간이 많아 차분한 러닝에 좋습니다. 여름엔 그늘이 적으니 새벽·야간을 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>본인 대전 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>둔산·서구 거주</strong>: <strong>갑천 둔치</strong>(도심 하천 LSD) + <strong>한밭수목원</strong>(평지 루프)</li>
+  <li><strong>중구·원도심 거주</strong>: <strong>유등천·대전천</strong>(도심 하천) 또는 <strong>보문산</strong>(도심 산)</li>
+  <li><strong>대덕구·동구 거주</strong>: <strong>계족산 황톳길</strong>(맨발 이색) 또는 <strong>대청호 오백리길</strong>(호수 트레일)</li>
+  <li><strong>이색 경험·힐링</strong>: <strong>계족산 황톳길</strong>(맨발 황토) · <strong>장태산</strong>(메타세쿼이아 숲)</li>
+  <li><strong>트레일 입문</strong>: <strong>보문산</strong>(도심 근접) → <strong>대청호 오백리길</strong>(호수 트레일)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 하천·수목원 (갑천·유등천·한밭)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>하천 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>산·호수 트레일 (보문산·대청호·계족산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>숲 힐링런 (장태산)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>대전 러닝 — 황톳길 맨발런과 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🦶</span>
+  <div class="callout-body">
+    <p class="callout-title">계족산 황톳길, 맨발 러닝 안전하게 즐기는 법</p>
+    <p>대전의 시그니처 <strong>계족산 황톳길</strong>은 맨발 경험이 핵심입니다. ① 처음엔 <strong>걷기부터</strong> 시작해 발바닥을 적응시키고, ② 유리·돌 등 이물질에 주의하며, ③ 비 온 직후는 미끄러우니 피하고, ④ 끝나면 입구 <strong>세족장</strong>에서 발을 씻으세요. 당뇨 등으로 발 감각이 둔한 분은 맨발을 피하는 게 안전합니다. KTX·SRT로 서울에서 약 1시간이라 주말 러닝 여행도 좋습니다 — 계족산 황톳길 + 대청호를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 계족산 황톳길은 정말 맨발로 뛰어야 하나요?</h3>
+<p>맨발이 핵심 경험이지만 필수는 아닙니다. 처음엔 걷기로 발을 적응시키고, 부담되면 가벼운 신발이나 아쿠아슈즈를 신어도 됩니다. 황토가 충격을 부드럽게 받아주지만 이물질·미끄럼 위험이 있으니 무리하지 말고, 발 감각이 둔한 기저질환자는 신발 착용을 권합니다.</p>
+
+<h3>Q. 대전에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>갑천 둔치</strong>가 1순위입니다. 도심 구간은 조명이 있어 야간 LSD에 좋고 거리 조절이 자유롭습니다. <strong>한밭수목원·엑스포광장</strong> 일대도 조명이 있어 평지 야간 러닝에 적합합니다. 반면 계족산·대청호·보문산·장태산은 야간에 어둡고 위험하니 낮·오전에 뛰세요.</p>
+
+<h3>Q. 보문산·대청호 트레일은 어떤 신발이 필요한가요?</h3>
+<p>흙길·돌길·오르막이 섞여 일반 도로화로는 미끄럽습니다. <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 대전 마라톤 대회는 어떤 게 있나요?</h3>
+<p>대전 3대 하천(갑천·유등천·대전천) 둔치를 활용한 도심 마라톤들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'jeju-unique-running-courses-7',
+    slug: 'jeju-unique-running-courses-7',
+    title: '제주 이색 러닝 코스 7선 | 올레길 해안 절경부터 새별오름 억새까지 — 바다·숲·오름 결합한 제주만의 러닝',
+    description: '제주올레 해안 트레일부터 사려니숲, 협재 에메랄드 해변, 새별오름까지 제주에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 올레 7코스·사려니숲길·협재해변·용두암 해안도로·함덕 서우봉·새별오름·한라산 둘레길 가이드. 러닝 여행자 필독.',
+    thumbnail: '/images/blog/jeju-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['제주 러닝 코스', '이색 러닝', '제주올레', '사려니숲길', '협재해변', '용두암 해안도로', '새별오름', '한라산 둘레길', '러닝 여행', '제주 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>제주는 바다·숲·오름·해안도로를 한 섬에 결합한 러닝 여행의 끝판왕</strong> — 올레길 해안 절경, 사려니 삼나무숲, 협재 에메랄드 해변, 새별오름 억새 등 육지엔 없는 풍경</li>
+    <li>관광과 러닝을 묶기 좋은 시즌 명소 — 다만 <strong>바람·현무암 돌길·변덕스러운 날씨</strong>가 변수라 코스·신발 선택이 중요</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">제주 러닝만의 매력</p>
+    <p>제주는 <strong>해안(올레·협재·함덕)·숲(사려니·한라산 둘레)·오름(새별·서우봉)·해안도로(용두암~이호)</strong>가 섬 곳곳에 흩어진 러닝 여행지입니다. 에메랄드빛 바다를 끼고 달리다 삼나무 숲으로 들어가고, 억새 가득한 오름을 오르는 경험은 제주에서만 가능. 다만 <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 육지 도시 러닝보다 코스·신발·시간대 선택이 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>제주올레 7코스 (외돌개~월평)</strong></td><td>약 15km (구간 분할 가능)</td><td>중 (해안 트레일)</td><td>해안 절벽 + 외돌개 + 돌길</td><td>맑은 날 오전</td></tr>
+    <tr><td>2</td><td><strong>사려니숲길</strong></td><td>약 10km (왕복 조절)</td><td>하~중 (평탄 흙길)</td><td>삼나무 숲 힐링 트레일</td><td>오전·한낮(숲 그늘)</td></tr>
+    <tr><td>3</td><td><strong>협재·금능 해변</strong></td><td>5~8km</td><td>하 (평지)</td><td>에메랄드 바다 + 비양도 뷰</td><td>새벽·해질녘</td></tr>
+    <tr><td>4</td><td><strong>용두암~이호테우 해안도로</strong></td><td>5~9km</td><td>하 (평지)</td><td>제주시 해안 + 말등대 + 일몰</td><td>해질녘·야간</td></tr>
+    <tr><td>5</td><td><strong>함덕해변 + 서우봉</strong></td><td>5~7km (해변+오름)</td><td>하~중</td><td>해변 + 오름 둘레 전망</td><td>새벽·오전</td></tr>
+    <tr><td>6</td><td><strong>새별오름</strong></td><td>약 1.8km 둘레 (확장)</td><td>중 (오르막)</td><td>억새 화산 언덕 + 전망</td><td>맑은 날 오전·해질녘</td></tr>
+    <tr><td>7</td><td><strong>한라산 둘레길 (동백길 등)</strong></td><td>약 7~10km</td><td>중상</td><td>원시림 숲 트레일</td><td>맑은 날 오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 제주올레 7코스 — 외돌개에서 만나는 해안 절경 트레일</h2>
+
+<p><strong>출발지</strong>: 외돌개 (서귀포 시내 인근, 버스·차량)<br>
+<strong>거리</strong>: 약 15km (구간 분할 가능)<br>
+<strong>노면</strong>: 해안 흙길 + 돌길 + 일부 데크·아스팔트<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>제주올레 중에서도 손꼽히는 해안 절경 코스. <strong>외돌개·돔베낭길·서건도</strong>를 거치며 서귀포 해안 절벽과 바다를 끼고 달립니다. 전 구간 트레일에 가깝고 풍경이 압도적이라, 제주 러닝 여행의 하이라이트로 꼽힙니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한국 최고 수준의 해안 트레일 풍경. 다만 <strong>돌길·흙길·계단이 섞여</strong> 일반 도로화로는 발이 배기고 미끄럽습니다. 15km 전체가 부담되면 외돌개~돔베낭길 구간만 짧게 끊어 뛰어도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력 있는 트레일화 또는 안정성 데일리. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화나 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 신발 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>2. 사려니숲길 — 삼나무 숲 힐링 트레일</h2>
+
+<p><strong>출발지</strong>: 사려니숲길 입구 (비자림로, 버스·차량)<br>
+<strong>거리</strong>: 약 10km (왕복·구간 조절 가능)<br>
+<strong>노면</strong>: 평탄 흙길 + 화산송이(스코리아)<br>
+<strong>추천 시간대</strong>: 오전·한낮 (숲 그늘)</p>
+
+<p>사려니숲길은 <strong>쭉 뻗은 삼나무·편백 숲</strong>을 따라 이어지는 평탄한 트레일. 비교적 완만하고 노면이 부드러워 트레일 입문자도 부담 없이 달릴 수 있고, 숲 그늘 덕에 한낮에도 시원합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 평탄한 숲 트레일이라 진입 장벽이 낮고, 피톤치드 가득한 힐링 러닝. 화산송이(붉은 흙) 노면이 무릎 충격을 덜어줍니다. 다만 비 온 뒤엔 질척이고, 일부 구간은 통제될 수 있으니 개방 여부를 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평탄 흙길 + 약간의 쿠션. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 쿠션 데일리도 무난하고, 비 온 뒤엔 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 트레일화.</p>
+
+<h2>3. 협재·금능 해변 — 에메랄드 바다와 비양도</h2>
+
+<p><strong>출발지</strong>: 협재해수욕장 (한림, 버스·차량)<br>
+<strong>거리</strong>: 5~8km (협재~금능 해변 연결)<br>
+<strong>노면</strong>: 해변 산책로 + 일부 모래·아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>협재·금능은 <strong>제주에서 가장 에메랄드빛이 선명한 해변</strong>으로, 비양도를 배경으로 달리는 풍경이 일품입니다. 해변을 잇는 산책로가 평탄해 가벼운 러닝과 인증샷에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 에메랄드 바다 + 비양도 뷰의 평지 러닝. 새벽·노을 시간대가 특히 아름답습니다. 단 모래 구간은 발이 빠지니 단단한 산책로 위주로, 바람이 강한 날은 체감이 크게 떨어집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>4. 용두암~이호테우 해안도로 — 제주시 일몰 러닝</h2>
+
+<p><strong>출발지</strong>: 용두암 (제주시, 공항 근접·버스)<br>
+<strong>거리</strong>: 5~9km (해안도로 따라)<br>
+<strong>노면</strong>: 해안 아스팔트 + 보행로<br>
+<strong>추천 시간대</strong>: 해질녘·야간 (일몰·조명)</p>
+
+<p>제주시 용두암에서 이호테우해변까지 이어지는 <strong>해안도로</strong>는 평탄하고 접근성이 좋아 제주시 러너의 데일리 코스입니다. 이호테우의 <strong>말 모양 등대</strong>와 일몰이 명물.</p>
+
+<p><strong>이 코스의 매력</strong>: 평지 해안도로 + 일몰 + 공항 근접. <strong>제주 여행 첫날·마지막날 공항 근처에서 가볍게</strong> 뛰기 좋습니다. 야간엔 조명이 있어 비교적 안전하나, 차도 인접 구간은 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 데일리 + 야간 시인성. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리화.</p>
+
+<h2>5. 함덕해변 + 서우봉 — 해변과 오름을 한 번에</h2>
+
+<p><strong>출발지</strong>: 함덕해수욕장 (제주시 동부, 버스·차량)<br>
+<strong>거리</strong>: 5~7km (해변 + 서우봉 둘레)<br>
+<strong>노면</strong>: 해변 산책로 + 오름 흙길·계단<br>
+<strong>추천 시간대</strong>: 새벽·오전</p>
+
+<p>함덕해변의 에메랄드 바다와 바로 옆 <strong>서우봉 오름</strong>을 묶은 코스. 평탄한 해변을 달리다 서우봉 둘레길로 올라 함덕 전경과 바다를 내려다보는 구성이 매력적입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해변(평지)과 오름(오르막)을 한 번에. 서우봉 정상에서 보는 함덕 바다가 압권입니다. 오름 구간은 흙길·계단이라 미끄럼에 주의하고, 봄철엔 유채꽃이 더해집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 오름 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션, 오름 흙길이 많으면 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>.</p>
+
+<h2>6. 새별오름 — 억새로 뒤덮인 화산 언덕</h2>
+
+<p><strong>출발지</strong>: 새별오름 주차장 (제주 서부, 차량)<br>
+<strong>거리</strong>: 약 1.8km 둘레 (인근 확장 가능)<br>
+<strong>노면</strong>: 흙길 + 잔디 + 가파른 오르막<br>
+<strong>추천 시간대</strong>: 맑은 날 오전·해질녘</p>
+
+<p>새별오름은 <strong>억새로 유명한 제주 대표 오름</strong>으로, 가을 억새철엔 전국에서 찾는 명소입니다. 둘레는 짧지만 가파른 오르막이 있어 짧고 강한 언덕 훈련에 좋고, 정상 전망이 일품입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 제주 특유의 화산 오름 + 억새 풍경. 거리는 짧아도 경사가 가팔라 <strong>힐 트레이닝·인터벌</strong> 효과가 큽니다. 다만 잔디·흙 경사라 우천 후 매우 미끄럽고, 바람이 강하니 주의하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 가파른 오르막 + 흙·잔디 그립. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a> 같은 접지력 좋은 트레일화. 일반 데일리화는 미끄러워 위험합니다.</p>
+
+<h2>7. 한라산 둘레길 — 원시림 숲 트레일</h2>
+
+<p><strong>출발지</strong>: 둘레길 구간별 입구 (동백길 등, 차량)<br>
+<strong>거리</strong>: 약 7~10km (구간별)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>한라산 둘레길은 <strong>한라산 중산간을 수평으로 잇는 원시림 트레일</strong>로, 정상 등반과 달리 완만하게 숲을 즐길 수 있습니다(동백길·수악길 등). 깊은 숲의 고요함과 제주 특유의 식생이 매력입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 본격 숲 트레일 + 원시림. 다만 <strong>돌길·흙길·고도차</strong>가 있어 그립과 발 보호가 중요하고, 통신·날씨 변화에 대비해야 합니다. 일부 구간은 통제되니 개방 여부와 일몰 시간을 반드시 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a> 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>제주 여행 첫날·공항 근처</strong>: <strong>용두암~이호테우 해안도로</strong> — 평지 일몰 러닝</li>
+  <li><strong>인증샷·에메랄드 바다</strong>: <strong>협재·금능 해변</strong> 또는 <strong>함덕 + 서우봉</strong></li>
+  <li><strong>힐링·숲</strong>: <strong>사려니숲길</strong>(평탄) 또는 <strong>한라산 둘레길</strong>(본격)</li>
+  <li><strong>해안 절경 트레일</strong>: <strong>제주올레 7코스</strong> — 제주 러닝의 하이라이트</li>
+  <li><strong>짧고 강한 언덕 훈련</strong>: <strong>새별오름</strong> — 억새 + 경사</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 해변·해안도로 (협재·용두암·함덕)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>해변 LSD·맥스 쿠션</strong>: <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>올레·오름·한라산 둘레 트레일 (돌길·흙길)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>숲 힐링런 (사려니)</strong>: 쿠션 데일리 또는 가벼운 트레일. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+</ul>
+
+<h2>제주 러닝 여행 — 비행기로 떠나는 러닝</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">✈️</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 여행지로 제주를 200% 즐기는 법</p>
+    <p>제주는 <strong>관광과 러닝을 묶기 가장 좋은 국내 여행지</strong>입니다. ① 도착 첫날·마지막날은 <strong>용두암~이호테우 해안도로</strong>(공항 근접)에서 가볍게, ② 본 러닝은 <strong>올레 7코스·협재 해변</strong>, ③ 힐링은 <strong>사려니숲길</strong>, ④ 짧고 강하게는 <strong>새별오름</strong>으로 묶으면 완벽한 러닝 여행이 됩니다. 단 <strong>제주는 바람·날씨가 변덕스러우니</strong> 윈드재킷과 여벌, 트레일 코스용 신발을 챙기세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 제주 러닝과 육지 도시 러닝의 차이는?</h3>
+<p>제주는 도심 하천·공원 위주의 육지 도시와 달리 <strong>해안 트레일(올레)·오름·삼나무숲·해안도로</strong>가 중심입니다. 관광과 묶기 좋은 대신, <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 트레일 대응 신발과 날씨 대비가 더 중요합니다.</p>
+
+<h3>Q. 제주 여행 가서 가볍게 뛸 만한 곳은?</h3>
+<p>공항과 가까운 <strong>용두암~이호테우 해안도로</strong>가 1순위입니다. 평지에 접근성이 좋아 여행 첫날·마지막날 가볍게 뛰기 좋고, 일몰이 아름답습니다. 에메랄드 바다를 원하면 <strong>협재·금능 해변</strong>도 평탄해 부담 없습니다.</p>
+
+<h3>Q. 올레길·오름은 어떤 신발이 필요한가요?</h3>
+<p>올레길과 오름은 현무암 돌길·흙길·경사가 많아 일반 도로화로는 미끄럽고 발이 배깁니다. <strong>접지력 좋은 트레일화</strong>가 필요하며, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>, 본격 코스는 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 제주 마라톤 대회는 어떤 게 있나요?</h3>
+<p>제주국제관광마라톤 등 해안·중산간 경관을 활용한 대회들이 열립니다. 바닷바람과 업다운이 변수라 페이스 관리가 중요하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'daegu-unique-running-courses-7',
+    slug: 'daegu-unique-running-courses-7',
+    title: '대구 이색 러닝 코스 7선 | 수성못 야경부터 팔공산 트레일까지 — 호수·도심하천·강·산 결합한 대구만의 러닝',
+    description: '수성못 야간 러닝부터 신천 도심 하천, 팔공산 트레일까지 대구에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 수성못·신천·금호강 아양기찻길·두류공원·앞산·팔공산·달성습지 각 코스별 출발지·노면·주의점 가이드. 분지 폭염 대비 야간 러닝 팁 포함.',
+    thumbnail: '/images/blog/daegu-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-29',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['대구 러닝 코스', '이색 러닝', '수성못', '신천 둔치', '금호강 아양기찻길', '두류공원', '앞산', '팔공산 트레일', '달성습지', '대구 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>대구는 호수·도심하천·강·산을 분지 안에 결합한 러닝 도시</strong> — 수성못 야경, 신천 도심 종주, 팔공산 단풍 트레일, 달성습지 등 내륙 도시만의 풍경</li>
+    <li>분지 지형이라 <strong>여름 폭염("대프리카")이 변수</strong> — 7~8월은 수성못·신천 야간 러닝, 산 코스는 이른 오전이 정답</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏞️</span>
+  <div class="callout-body">
+    <p class="callout-title">대구 러닝만의 매력</p>
+    <p>대구는 분지 지형의 내륙 도시로 <strong>호수(수성못)·도심 하천(신천)·강(금호강·낙동강)·산(앞산·팔공산)·습지(달성)</strong>가 시가지를 둘러싸고 있습니다. 바다는 없지만 도심을 남북으로 관통하는 <strong>신천</strong>이 서울의 한강 같은 역할을 하고, 수성못 야경과 팔공산 단풍은 대구를 대표하는 러닝 풍경입니다. 다만 분지라 <strong>여름 폭염이 전국 최고 수준</strong>이라, 시즌과 시간대 선택이 다른 도시보다 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>수성못</strong></td><td>약 2km 둘레 (확장 5km)</td><td>하 (평지)</td><td>호수 야경 + 음악분수 + 카페</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>2</td><td><strong>신천 둔치</strong></td><td>5~15km (도심 종주)</td><td>하 (평지)</td><td>도심 관통 하천 — 대구의 한강</td><td>새벽·야간</td></tr>
+    <tr><td>3</td><td><strong>금호강 아양기찻길 + 동촌유원지</strong></td><td>5~8km</td><td>하 (평지)</td><td>옛 철교 보행교 + 강변</td><td>새벽·해질녘</td></tr>
+    <tr><td>4</td><td><strong>두류공원 + 83타워</strong></td><td>약 3~4km 루프</td><td>하 (완만)</td><td>도심 대공원 + 83타워 야경</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>앞산 고산골</strong></td><td>약 4~6km</td><td>중 (오르막)</td><td>도심 근접 산 + 전망대</td><td>맑은 날 오전</td></tr>
+    <tr><td>6</td><td><strong>팔공산 둘레길</strong></td><td>약 6~8km</td><td>중상</td><td>본격 산악 트레일 + 단풍</td><td>맑은 날 오전</td></tr>
+    <tr><td>7</td><td><strong>달성습지 + 화원유원지</strong></td><td>5~9km</td><td>하 (평지)</td><td>낙동강·금호강 합류 습지 + 데크</td><td>새벽·저녁 노을</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 수성못 — 대구 야경 1순위 호수 러닝</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 2호선 수성못역 → 수성못 (도보 5분)<br>
+<strong>거리</strong>: 약 2km 둘레 (인근 보행로 연결 시 5km까지)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (음악분수·야경 시간)</p>
+
+<p>수성못은 대구를 대표하는 호수 명소. 둘레 약 2km의 평탄한 산책로를 따라 <strong>야간 조명과 음악분수, 호반 카페</strong>가 어우러져 대구 야경 러닝 1순위입니다. 둘레가 짧아 여러 바퀴 돌거나 인근 들안길·수성유원지로 확장하면 5km까지 가능.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 호수 루프 + 야경 + 카페. 분지 폭염이 심한 여름엔 해가 진 뒤 시원해지는 저녁 시간대가 최적이고, 야간 조명 덕에 안전합니다. 평지라 페이스·인터벌 훈련에도 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 신천 둔치 — 대구의 한강, 도심 관통 하천</h2>
+
+<p><strong>출발지</strong>: 수성교·대봉교·신천교 등 도심 다리마다 진입 (지하철 접근 다양)<br>
+<strong>거리</strong>: 5~15km (도심 종주, 거리 자유 조절)<br>
+<strong>노면</strong>: 우레탄 산책로 + 자전거도로 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽·야간 (여름 폭염 회피)</p>
+
+<p>신천은 대구 도심을 남북으로 관통하는 하천으로, <strong>서울의 한강 같은 대구 러너의 홈 그라운드</strong>입니다. 둔치를 따라 산책로·자전거도로가 길게 이어져 거리 조절이 자유롭고, 신호 없이 5km부터 15km LSD까지 소화할 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 접근성 최고 + 거리 무제한 + 신호 없는 평지. 대구 어디서든 가까운 다리로 진입 가능해 데일리 러닝의 중심입니다. 단 <strong>여름 폭염엔 새벽·야간이 필수</strong>이고, 그늘이 적어 한낮은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> 같은 맥스 쿠션, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리.</p>
+
+<h2>3. 금호강 아양기찻길 + 동촌유원지 — 옛 철교와 강변</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 1호선 아양교역·동촌역<br>
+<strong>거리</strong>: 5~8km (강변 + 유원지 연결)<br>
+<strong>노면</strong>: 강변 산책로 + 보행교 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 새벽·해질녘</p>
+
+<p>금호강을 가로지르는 <strong>아양기찻길(옛 동촌역 철교를 개조한 보행교)</strong>과 동촌유원지를 잇는 강변 코스. 옛 철길의 정취와 금호강 풍경이 어우러져 도심 하천(신천)과는 또 다른 강변 분위기를 줍니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 옛 철교 + 강변 + 유원지의 여유로운 분위기. 평지라 부담 없고, 동촌유원지 쪽으로 거리를 늘릴 수 있습니다. 강바람이 있어 여름에도 신천보다 체감이 조금 낫습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 쿠션.</p>
+
+<h2>4. 두류공원 + 83타워 — 도심 대공원과 야경</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 2호선 두류역·감삼역 (도보 7분)<br>
+<strong>거리</strong>: 약 3~4km 루프<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>두류공원은 이월드와 <strong>83타워(우방타워)</strong>를 품은 도심 대형공원. 평탄한 산책로 루프가 잘 정비돼 있고, 야간엔 83타워 조명이 배경이 되어 도심 야경 러닝을 즐길 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 도심 공원 루프 + 83타워 야경 + 그늘. 나무가 많아 여름에도 신천보다 그늘이 많고, 가족 단위 방문객이 많아 새벽·평일이 한적합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a>. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
+
+<h2>5. 앞산 고산골 — 도심 근접 산 트레일</h2>
+
+<p><strong>출발지</strong>: 대구 지하철 1호선 안지랑역·현충로역 → 앞산공원·고산골 (도보 15분~버스)<br>
+<strong>거리</strong>: 약 4~6km (둘레·전망대 코스)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 일부 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전</p>
+
+<p>앞산은 대구 도심 남쪽에 바로 붙은 산으로, <strong>고산골·앞산공원을 통해 접근하는 트레일</strong>이 잘 나 있습니다. 전망대에서는 대구 시가지가 한눈에 들어오고, 도심에서 지하철로 닿는 산악 러닝 입문 코스로 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 지하철로 닿는 도심 근접 트레일. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 트레일 입문자는 무리한 정상 코스보다 둘레·전망대 코스를 권합니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 트레일화로 시작하거나, 접지력 좋은 <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>. 트레일화 선택은 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트</a> 참고.</p>
+
+<h2>6. 팔공산 둘레길 — 본격 산악 트레일과 단풍</h2>
+
+<p><strong>출발지</strong>: 시내에서 버스 (동화사·갓바위 방면)<br>
+<strong>거리</strong>: 약 6~8km (둘레길 구간)<br>
+<strong>노면</strong>: 흙길 + 돌길 + 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (가을 단풍철 인기)</p>
+
+<p>팔공산은 대구를 대표하는 명산으로, <strong>동화사·갓바위와 둘레길</strong>을 따라 본격 산악 트레일을 즐길 수 있습니다. 특히 가을 단풍철엔 전국에서 찾는 명소. 앞산보다 규모가 크고 기술적이라 산악 러닝 경험자에게 적합합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 대구 최고의 산악 트레일 + 단풍. 다만 <strong>거친 돌길·임도·고도차</strong>가 있어 그립과 발 보호가 중요하고, 일반 데일리화·카본화는 절대 비추. 충분한 물과 행동식, 일몰 시간을 반드시 확인하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 접지력·안정성 좋은 트레일화. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>(Continental 그립)·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>(Vibram + 쿠션) 같은 본격 트레일화. <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>에서 코스별 선택을 확인하세요.</p>
+
+<h2>7. 달성습지 + 화원유원지 — 두 강이 만나는 습지</h2>
+
+<p><strong>출발지</strong>: 화원유원지·사문진나루터 (차량·버스)<br>
+<strong>거리</strong>: 5~9km (습지 데크 + 강변)<br>
+<strong>노면</strong>: 목재 데크 + 흙길 + 강변 산책로<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을</p>
+
+<p>달성습지는 <strong>낙동강과 금호강이 만나는 합류부의 대규모 습지</strong>로, 맹꽁이 서식지이자 철새 도래지입니다. 화원유원지·사문진나루터와 연결돼 강변과 습지를 함께 달릴 수 있는 대구의 이색 코스입니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심에서 보기 힘든 습지·강 합류 풍경. 노을 시간대가 특히 아름답습니다. 다만 <strong>목재 데크·흙길이 섞여</strong> 미끄럼에 주의해야 하고, 일부 구간은 한적하니 야간 단독 러닝은 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 데크·흙길 약간. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 안정성 있는 신발.</p>
+
+<h2>본인 대구 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>수성구 거주</strong>: <strong>수성못</strong>(야간 평지) — 야경 + 페이스 러닝</li>
+  <li><strong>도심(중구·남구) 거주</strong>: <strong>신천 둔치</strong> — 거리 무제한 LSD, 대구의 한강</li>
+  <li><strong>동구·동촌 거주</strong>: <strong>금호강 아양기찻길</strong> — 옛 철교 + 강변</li>
+  <li><strong>서구·달서구 거주</strong>: <strong>두류공원 + 83타워</strong>(도심 공원) 또는 <strong>달성습지</strong>(이색 습지)</li>
+  <li><strong>트레일 입문</strong>: <strong>앞산 고산골</strong> — 지하철로 닿는 도심 근접 산</li>
+  <li><strong>산악 러닝 경험자</strong>: <strong>팔공산 둘레길</strong> — 본격 트레일 + 단풍 (트레일화 필수)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 호수·하천 (수성못·신천·두류)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>강변 LSD (신천·금호강·달성)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>산 트레일 (앞산·팔공산)</strong>: 접지력·안정성 트레일화. <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 베스트 7</a> — 코스 난이도별 선택 가이드</li>
+  <li><strong>인터벌·페이스 (수성못·두류 루프)</strong>: 슈퍼트레이너. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a></li>
+</ul>
+
+<h2>대구 러닝 — 폭염 대비와 러닝 여행</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🌡️</span>
+  <div class="callout-body">
+    <p class="callout-title">"대프리카" 폭염, 대구에서 안전하게 뛰는 법</p>
+    <p>대구는 분지 지형이라 <strong>여름 폭염이 전국 최고 수준</strong>입니다. ① 7~8월 한낮(11~16시) 러닝은 피하고 <strong>새벽·야간</strong>으로, ② 평지는 <strong>수성못·신천 야간</strong>(조명 있는 코스), 산은 <strong>이른 오전</strong>으로, ③ 수분·전해질을 평소보다 넉넉히 챙기세요. KTX로 서울에서 약 1시간 50분이라 주말 러닝 여행도 가능 — 수성못 야경 + 팔공산 단풍을 묶으면 좋습니다. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 대구 러닝과 다른 도시의 차이는?</h3>
+<p>대구는 바다가 없는 분지 내륙 도시라, 서울처럼 <strong>도심 하천(신천)</strong>이 러닝 중심이고 수성못·팔공산 같은 호수·산이 더해집니다. 가장 큰 변수는 <strong>여름 폭염</strong> — 분지 지형 탓에 전국에서 가장 더워 시즌·시간대 선택이 다른 도시보다 중요합니다.</p>
+
+<h3>Q. 대구에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>수성못</strong>이 1순위입니다. 호수 둘레 조명과 음악분수가 있어 야경이 뛰어나고 평지라 안전합니다. <strong>신천 둔치</strong>도 도심 구간은 조명이 있어 야간 LSD에 좋습니다. 반면 앞산·팔공산·달성습지는 야간에 어둡고 위험하니 낮·이른 오전에 뛰세요.</p>
+
+<h3>Q. 팔공산·앞산 트레일은 어떤 신발이 필요한가요?</h3>
+<p>일반 도로화로는 위험합니다. 흙길·돌길·오르막이 섞여 <strong>접지력 좋은 트레일화</strong>가 필요하고, 입문은 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 같은 가성비 모델, 본격 산악은 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>·<a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>를 권합니다. 자세한 선택은 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 베스트</a>를 참고하세요.</p>
+
+<h3>Q. 대구 마라톤 대회는 어떤 게 있나요?</h3>
+<p>대구국제마라톤을 비롯해 신천·강변 코스를 활용한 도심 대회들이 열립니다. 대부분 평지라 기록 도전에 유리하며, 일정은 매년 변동되니 공식 접수 채널에서 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'running-breathing-guide-korea',
+    slug: 'running-breathing-guide-korea',
+    title: '러닝 호흡법 완벽 가이드 | "조금만 뛰어도 숨차다"면 호흡부터 — 코호흡 vs 입호흡, 2:2 리듬, 옆구리 결림 방지',
+    description: '달리기가 금방 숨차는 이유는 대부분 페이스가 아니라 호흡에 있습니다. 코호흡 vs 입호흡 진실, 발걸음에 맞춘 2:2·3:3 호흡 리듬, 복식호흡, 옆구리 결림(side stitch) 방지, 강도별 호흡까지 — 초보 러너를 위한 호흡법 실전 가이드.',
+    thumbnail: '/images/blog/running-breathing-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'tips' as const,
+    readingTime: 9,
+    tags: ['러닝 호흡법', '달리기 호흡', '코호흡', '입호흡', '호흡 리듬', '복식호흡', '옆구리 결림', '러닝 초보', '숨차다'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>코로만 쉬어야 한다는 건 오해</strong> — 저강도에선 코호흡이 좋지만, 페이스가 올라가면 산소 요구량이 커져 <strong>입과 코를 함께 쓰는 게 정상</strong>입니다</li>
+    <li>발걸음에 호흡을 맞추세요 — 편한 페이스는 <strong>2:2(2보 들숨·2보 날숨)</strong>, 힘들면 2:1, 아주 느린 회복런은 3:3. 가슴이 아니라 <strong>배(횡격막)로 깊게</strong></li>
+    <li>옆구리 결림(side stitch)은 대부분 <strong>얕은 호흡 + 식후 러닝</strong>이 원인 — 복식호흡과 식사 타이밍으로 막을 수 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌬️</span>
+  <div class="callout-body">
+    <p class="callout-title">"조금만 뛰어도 숨이 차요"</p>
+    <p>러닝 입문자가 가장 많이 호소하는 문제입니다. 원인은 대개 체력이 아니라 <strong>(1) 페이스가 너무 빠르거나, (2) 호흡이 얕고 불규칙</strong>한 데 있습니다. 페이스 문제는 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>에서 다뤘으니, 이 글은 "호흡" 자체를 파고듭니다. 호흡만 고쳐도 같은 페이스가 훨씬 편해집니다.</p>
+  </div>
+</div>
+
+<h2>1. 코호흡 vs 입호흡 — 무엇이 맞나?</h2>
+
+<p>"러닝은 코로만 쉬어야 한다"는 말을 들어보셨을 겁니다. 반은 맞고 반은 틀립니다.</p>
+
+<p><strong>코호흡의 장점</strong>: 코로 들이쉬면 공기가 데워지고 습해지며 먼지가 걸러집니다. 또 호흡이 자연히 느려져 <strong>저강도 러닝에서 안정적</strong>입니다. 코호흡이 편하게 유지되는 페이스가 곧 "유산소 베이스" 구간이라, 일부러 코호흡으로 페이스를 통제하는 훈련법도 있습니다.</p>
+
+<p><strong>현실</strong>: 페이스가 올라가면 몸의 산소 요구량이 급증합니다. 이때 코만으로는 충분한 공기를 들이쉴 수 없어 <strong>입을 함께 쓰는 게 정상이자 효율적</strong>입니다. 무리하게 코호흡만 고집하면 오히려 산소 부족으로 더 힘들어집니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">정답: 강도에 따라 유연하게</p>
+    <p>가볍게 뛰는 회복런·워밍업은 <strong>코호흡</strong>으로 페이스를 통제하고, 본 러닝·빠른 페이스에서는 <strong>입과 코를 함께</strong> 쓰세요. "코로만 vs 입으로만"의 이분법이 아니라, <strong>강도에 맞춰 바꾸는 것</strong>이 핵심입니다.</p>
+  </div>
+</div>
+
+<h2>2. 발걸음에 맞추는 호흡 리듬 — 2:2가 기본</h2>
+
+<p>호흡이 불규칙하면 금방 지칩니다. 발걸음 수에 호흡을 맞추면 리듬이 안정됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>리듬</th><th>패턴</th><th>적합한 강도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>3:3</strong></td><td>3보 들숨 · 3보 날숨</td><td>아주 느린 회복런·워밍업</td></tr>
+    <tr><td><strong>2:2</strong> (기본)</td><td>2보 들숨 · 2보 날숨</td><td>편안한 일반 러닝·LSD</td></tr>
+    <tr><td><strong>2:1</strong></td><td>2보 들숨 · 1보 날숨</td><td>템포·빠른 페이스</td></tr>
+    <tr><td><strong>1:1</strong></td><td>1보 들숨 · 1보 날숨</td><td>인터벌·전력 구간(짧게)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>대부분의 러너에게 2:2가 출발점</strong>입니다. 강도가 올라갈수록 날숨 보폭을 줄여(2:1) 더 자주 내뱉으면 됩니다. 처음엔 의식적으로 세다가, 익숙해지면 몸이 알아서 리듬을 잡습니다.</p>
+
+<p><strong>한 가지 팁</strong>: 날숨을 들숨보다 신경 쓰세요. 폐에 묵은 공기를 충분히 비워야 다음 들숨에 신선한 공기가 더 들어옵니다. "잘 내쉬면 들숨은 알아서 된다"고 생각하면 편합니다.</p>
+
+<h2>3. 가슴이 아니라 배로 — 복식호흡(횡격막 호흡)</h2>
+
+<p>긴장하거나 숨이 차면 어깨와 가슴이 들썩이는 <strong>얕은 흉식호흡</strong>이 되기 쉽습니다. 이러면 공기가 폐 위쪽만 채워 비효율적이고 더 빨리 지칩니다.</p>
+
+<p><strong>복식호흡(횡격막 호흡)</strong>은 배를 부풀리며 횡격막을 아래로 내려 폐 아래쪽까지 공기를 채웁니다. 한 번에 더 많은 산소를 들이쉴 수 있어 효율적입니다.</p>
+
+<ul>
+  <li><strong>연습법</strong>: 누워서 배에 손을 얹고, 숨을 들이쉴 때 <strong>배가 부풀어 오르는지</strong> 확인하세요. 가슴이 아니라 배가 움직여야 합니다.</li>
+  <li>익숙해지면 서서, 그다음 걷거나 천천히 뛰면서 연습합니다.</li>
+  <li>러닝 중에는 자세도 중요합니다 — 상체를 너무 숙이면 횡격막이 눌려 호흡이 얕아집니다. <strong>상체를 곧게</strong> 펴세요.</li>
+</ul>
+
+<h2>4. 옆구리 결림(Side Stitch) — 원인과 방지법</h2>
+
+<p>뛰다 보면 옆구리(주로 오른쪽 갈비뼈 아래)가 결리는 경험, 흔하죠. 정확한 기전은 아직 논쟁적이지만 <strong>횡격막 부담·얕은 호흡·식후 러닝</strong>이 주요 유발 요인으로 꼽힙니다.</p>
+
+<p><strong>방지법</strong>:</p>
+<ul>
+  <li><strong>식사 후 1.5~2시간 이상</strong> 지나고 뛰기 — 위가 차 있으면 횡격막을 눌러 결림이 잘 생깁니다.</li>
+  <li><strong>복식호흡으로 깊고 규칙적으로</strong> — 얕고 빠른 호흡이 횡격막을 긴장시킵니다.</li>
+  <li>워밍업으로 천천히 시작 — 갑자기 빠르게 뛰면 횡격막이 적응할 시간이 없습니다.</li>
+</ul>
+
+<p><strong>이미 결렸다면</strong>: 페이스를 늦추고, 결린 쪽 반대 발이 땅에 닿을 때 길게 내쉬어 보세요. 손으로 해당 부위를 가볍게 누르며 상체를 살짝 비트는 것도 도움이 됩니다.</p>
+
+<h2>5. 강도별 호흡 — 내 페이스가 맞는지 확인하는 법</h2>
+
+<p>호흡 상태는 <strong>운동 강도를 가늠하는 가장 쉬운 지표</strong>입니다.</p>
+
+<ul>
+  <li><strong>대화가 문장으로 가능</strong> = 저강도(Zone 2)·LSD 구간. 코호흡이 편하게 유지됩니다 → <a href="/blog/running-fat-loss-zone2-guide">지방 태우는 Zone 2 러닝</a></li>
+  <li><strong>짧은 문장만 끊어서 가능</strong> = 중강도. 입·코 병행, 2:2~2:1.</li>
+  <li><strong>단어만 겨우</strong> = 고강도(템포·인터벌). 호흡이 가빠집니다 → <a href="/blog/tempo-run-training-guide-korea">템포런 가이드</a></li>
+</ul>
+
+<p>입문자가 "숨차다"고 느낀다면 십중팔구 <strong>중강도 이상으로 뛰고 있는 것</strong>입니다. 대화가 가능한 페이스로 늦추면 호흡이 안정되고 더 오래 달릴 수 있습니다.</p>
+
+<h2>6. 초보가 흔히 하는 호흡 실수</h2>
+
+<ul>
+  <li><strong>숨 참기</strong>: 힘든 구간에서 무의식적으로 숨을 참습니다. 산소가 끊겨 더 빨리 지칩니다. 의식적으로 계속 내쉬세요.</li>
+  <li><strong>얕고 빠른 호흡</strong>: 헐떡이면 폐 위쪽만 씁니다. 느리고 깊게가 핵심.</li>
+  <li><strong>호흡에만 집중하다 페이스 무시</strong>: 호흡이 계속 가쁘면 호흡 기술 문제가 아니라 <strong>페이스가 빠른 것</strong>입니다. 먼저 속도를 늦추세요.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">호흡이 편해지려면 페이스부터</p>
+    <p>호흡법은 도구일 뿐, 근본은 <strong>본인 체력에 맞는 페이스</strong>입니다. 편안한 데일리화로 천천히 거리를 쌓는 게 먼저예요. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 쿠션 좋은 입문 데일리화면 충분합니다. 본인 발에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 러닝할 때 코로만 숨 쉬는 게 정말 좋나요?</h3>
+<p>저강도에서는 코호흡이 공기를 데우고 거르며 호흡을 안정시켜 좋습니다. 하지만 페이스가 올라가면 산소가 더 필요해 <strong>입을 함께 쓰는 게 정상이자 효율적</strong>입니다. 강도에 따라 유연하게 바꾸세요. 코호흡만 고집하다 산소 부족으로 더 힘들어지는 경우가 많습니다.</p>
+
+<h3>Q. 호흡 리듬은 꼭 2:2로 맞춰야 하나요?</h3>
+<p>2:2(2보 들숨·2보 날숨)는 편안한 페이스의 출발점일 뿐 규칙은 아닙니다. 힘들면 2:1로 더 자주 내쉬고, 아주 느린 회복런은 3:3도 좋습니다. 익숙해지면 몸이 알아서 리듬을 잡으니 처음에만 의식적으로 세어보세요.</p>
+
+<h3>Q. 뛰면 옆구리가 결리는데 왜 그런가요?</h3>
+<p>얕고 빠른 호흡으로 횡격막이 부담을 받거나, 식후 너무 빨리 뛰면 잘 생깁니다. <strong>식사 후 1.5~2시간 이상</strong> 지나 뛰고, 복식호흡으로 깊고 규칙적으로 쉬며, 워밍업으로 천천히 시작하면 예방됩니다. 결렸을 땐 페이스를 늦추고 길게 내쉬세요.</p>
+
+<h3>Q. 호흡법을 익혀도 계속 숨이 차요.</h3>
+<p>그렇다면 호흡 기술이 아니라 <strong>페이스가 본인 체력보다 빠른 것</strong>입니다. "옆 사람과 문장으로 대화 가능한" 속도로 늦춰보세요. 그래도 힘들면 걷기·달리기를 반복하며 유산소 베이스를 쌓는 게 먼저입니다 → <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a></p>
+
+<p><small>출처: 굿러너컴퍼니(@goodrunner_co) 코호흡·맨발 러닝 워크샵(2026-05) 착안 + 운동생리학 일반 원리(호흡 리듬·횡격막 호흡·side stitch). 개인차가 있으며 호흡곤란·흉통이 지속되면 전문가와 상담하세요.</small></p>
+`,
+  },
+  {
+    id: 'running-fat-loss-zone2-guide',
+    slug: 'running-fat-loss-zone2-guide',
+    title: '러닝 다이어트 완벽 가이드 | 지방을 가장 많이 태우는 Zone 2 — "빠르게 뛸수록 안 빠진다"는 진실·공복런·근손실 방지',
+    description: '살 빼려고 달리는데 왜 안 빠질까? 지방을 가장 많이 태우는 Zone 2(저강도) 러닝의 원리, 빠르게 뛸수록 오히려 지방 비율이 줄어드는 이유, 공복런의 효과와 함정, 근손실 방지, 체중이 안 줄 때 식단 점검까지 — 다이어트 목적 러너를 위한 실전 가이드.',
+    thumbnail: '/images/blog/running-fat-loss-zone2-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'tips' as const,
+    readingTime: 10,
+    tags: ['러닝 다이어트', 'Zone 2 러닝', '지방 연소', '체중 감량', '공복런', '저강도 유산소', '러닝 살빼기', '근손실 방지', '심박존'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>지방을 가장 높은 "비율"로 태우는 구간은 Zone 2(최대심박 60~70%, 옆 사람과 대화 가능한 저강도)</strong> — 빠르게 뛸수록 탄수화물 의존이 커져 지방 비율은 오히려 떨어집니다</li>
+    <li>단 <strong>"지방 비율"과 "총 체지방 감소"는 다릅니다</strong> — 어떤 강도든 살은 결국 <strong>칼로리 적자</strong>로 빠집니다. Zone 2의 진짜 강점은 부상 없이 오래·자주 지속할 수 있다는 점</li>
+    <li>유산소만 하면 근육도 함께 빠집니다 — <strong>근력 운동 + 단백질 + 식단 관리</strong>를 반드시 병행하세요. 심박존 계산·페이스 세팅은 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 가이드</a>에 자세히 정리돼 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">"달리는데 왜 살이 안 빠지죠?"</p>
+    <p>다이어트로 러닝을 시작한 분들이 가장 많이 하는 질문입니다. 답은 대부분 <strong>(1) 너무 빨리 뛰어서 오래 못 하거나, (2) 운동 후 보상 식사로 칼로리 적자가 안 만들어지거나, (3) 체중계 숫자만 보고 체성분 변화를 놓치는</strong> 세 가지에 있습니다. 이 글은 "지방을 효율적으로 태우는 강도"인 Zone 2를 중심으로, 다이어트 러너가 흔히 빠지는 함정을 하나씩 짚습니다. 본인 체중·무릎 상태에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>에서 후보를 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>1. 왜 Zone 2가 지방을 가장 많이 태우나 — Fatmax 구간</h2>
+
+<p>우리 몸은 운동 강도에 따라 <strong>지방과 탄수화물(글리코겐)을 섞어</strong> 연료로 씁니다. 강도가 낮을수록 지방 비중이 높고, 강도가 올라갈수록 빠르게 에너지를 내기 위해 탄수화물 의존이 커집니다.</p>
+
+<p><strong>지방 산화가 최대가 되는 강도</strong>를 운동생리학에서 "Fatmax"라고 부르며, 대체로 <strong>최대심박의 60~70%, 즉 Zone 2 구간</strong>에 위치합니다. 이 구간은 "옆 사람과 문장을 끊기지 않고 말할 수 있는" 편안한 페이스입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>강도</th><th>심박(HRmax)</th><th>주 연료</th><th>다이어트 관점</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>걷기·아주 가벼움</td><td>~60%</td><td>지방 위주</td><td>지방 비율 높지만 총 소모 적음</td></tr>
+    <tr><td><strong>Zone 2 (대화 가능)</strong></td><td><strong>60~70%</strong></td><td><strong>지방 비율 최대</strong></td><td><strong>오래 지속 가능 → 다이어트 핵심</strong></td></tr>
+    <tr><td>Zone 3 (약간 힘듦)</td><td>70~80%</td><td>지방+탄수 혼합</td><td>지방 "비율" 감소 시작</td></tr>
+    <tr><td>Zone 4~5 (헐떡임)</td><td>80%+</td><td>탄수 위주</td><td>총 칼로리 큼·지방비율 낮음·오래 못함</td></tr>
+  </tbody>
+</table>
+
+<h2>2. "빠르게 뛸수록 살 빠진다"의 함정</h2>
+
+<p>많은 다이어터가 "이왕 뛰는 거 힘들게 뛰어야 살이 빠진다"고 생각합니다. 반은 맞고 반은 틀립니다.</p>
+
+<p><strong>맞는 부분</strong>: 고강도(Zone 4~5)는 <strong>같은 시간당 총 칼로리 소모가 큽니다</strong>. 운동 후 추가 소모(EPOC, 애프터번)도 약간 있습니다.</p>
+
+<p><strong>틀린 부분</strong>: 고강도는 ① <strong>지방 "비율"이 오히려 낮고</strong>(탄수 위주), ② <strong>20~30분 이상 지속하기 어렵고</strong>, ③ 초보·과체중 러너에겐 <strong>무릎·발목 부상 위험</strong>이 큽니다. EPOC도 흔히 과대평가돼 있어, 체지방 감량의 결정 변수는 결국 <strong>총 에너지 적자</strong>입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">다이어트 러너에게 Zone 2가 현실적인 이유</p>
+    <p>고강도 30분으로 헐떡이다 3일 쉬는 것보다, <strong>Zone 2로 50분을 주 4~5회 꾸준히</strong> 하는 쪽이 한 주 총 소모량과 지속성에서 앞섭니다. "한 번에 많이"가 아니라 <strong>"부상 없이 오래·자주"</strong>가 체지방 감량의 핵심입니다. 더 빠른 강도 훈련(템포·인터벌)은 체력이 붙은 뒤 섞으면 됩니다 → <a href="/blog/tempo-run-training-guide-korea">템포런 가이드</a></p>
+  </div>
+</div>
+
+<h2>3. 내 Zone 2 심박, 어떻게 구하나</h2>
+
+<p>간단 공식은 <strong>(220 − 나이) × 0.6~0.7</strong>입니다. 예를 들어 35세라면 최대심박 추정 185 × 0.6~0.7 = <strong>약 111~130bpm</strong>이 Zone 2.</p>
+
+<p>다만 "220 − 나이"는 오차가 ±10~15bpm로 커서, 심박계(가민·애플워치 등)로 실측한 최대심박을 쓰는 게 정확합니다. 심박계가 없다면 <strong>"대화 테스트"</strong>가 가장 쉬운 대용입니다 — 문장을 끊김 없이 말할 수 있으면 Zone 2, 단어만 겨우 내뱉으면 너무 빠른 겁니다.</p>
+
+<p>심박존 계산·페이스 세팅·주간 루틴의 디테일은 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a>에 표와 함께 정리해뒀으니 함께 보세요. (LSD = 기록 향상용 베이스 훈련, 이 글 = 체중 감량 목적 — 강도 구간은 같지만 목적·실전이 다릅니다.)</p>
+
+<h2>4. 공복런 — 효과와 함정</h2>
+
+<p>아침 <strong>공복 상태의 저강도 유산소</strong>는 간 글리코겐이 낮아 지방 동원 비율이 더 올라갈 수 있어 다이어트 러너에게 인기입니다. 단, 주의가 필요합니다.</p>
+
+<ul>
+  <li><strong>효과</strong>: 같은 Zone 2라도 공복이면 지방 산화 비율이 약간 더 높아질 수 있음. 아침 루틴화가 쉬움.</li>
+  <li><strong>함정 1 (강도)</strong>: 공복에서 무리하면 저혈당·어지럼·근손실 위험. 반드시 <strong>저강도(Zone 2) + 60분 이내</strong>로.</li>
+  <li><strong>함정 2 (총량)</strong>: 공복런이 "마법"은 아닙니다. 하루 전체 칼로리 적자가 없으면 체지방은 안 빠집니다.</li>
+</ul>
+
+<p>속이 약하거나 저혈당 경험이 있다면 바나나 반 개·물 정도는 먹고 뛰는 게 안전합니다.</p>
+
+<h2>5. 근손실 방지 — 유산소만 하면 근육도 빠진다</h2>
+
+<p>다이어트 중 유산소만 과하게 하면 <strong>체지방과 함께 근육도 빠져</strong> 기초대사량이 낮아지고, 결국 "더 안 빠지는 몸"이 됩니다. 이를 막으려면:</p>
+
+<ul>
+  <li><strong>근력 운동 병행</strong>: 주 2~3회 스쿼트·런지·코어 등. 러닝 부상 예방에도 도움.</li>
+  <li><strong>단백질 충분히</strong>: 체중 1kg당 1.2~1.6g 목표. 근육 유지의 핵심.</li>
+  <li><strong>과한 칼로리 적자 금지</strong>: 급격한 굶기는 근손실을 가속합니다. 완만한 적자(하루 300~500kcal)가 지속 가능.</li>
+</ul>
+
+<h2>6. 체중이 안 줄 때 — 식단과 체성분 점검</h2>
+
+<p>"열심히 뛰는데 체중계가 안 움직인다"면 대개 다음 중 하나입니다.</p>
+
+<ul>
+  <li><strong>보상 식사</strong>: 30분 러닝으로 태우는 건 보통 250~350kcal. 운동 후 "고생했으니까" 먹는 음료·간식이 이를 쉽게 상쇄합니다. <strong>러닝은 식단을 못 이깁니다.</strong></li>
+  <li><strong>체성분 변화</strong>: 운동 초기엔 근육이 늘고 지방이 줄어 <strong>체중은 그대로여도 몸은 달라집니다</strong>. 체중계 숫자보다 <strong>체지방률·허리둘레·옷 핏</strong>을 보세요.</li>
+  <li><strong>수분·글리코겐</strong>: 초기 체중 변화는 수분·글리코겐이라 들쭉날쭉합니다. <strong>2~4주 추세</strong>로 판단하세요.</li>
+</ul>
+
+<h2>7. 다이어트 러너 실전 루틴</h2>
+
+<p><strong>입문(1~4주)</strong>: Zone 2 또는 걷기·달리기 반복, 20~30분, 주 3~4회. 무리한 페이스·매일 달리기 금지.<br>
+<strong>적응(5~8주)</strong>: Zone 2 40~50분, 주 4~5회 + 근력 주 2회.<br>
+<strong>발전(9주~)</strong>: Zone 2 베이스 유지 + 주 1회 템포·인터벌로 대사·체력 자극.</p>
+
+<p>핵심은 <strong>점진적 증가</strong>입니다. 주간 거리·시간을 한 번에 10% 이상 늘리지 마세요. 과체중 상태에서 갑자기 거리를 늘리면 무릎·정강이 부상으로 오히려 운동을 못 하게 됩니다.</p>
+
+<h2>8. 다이어트 러너의 러닝화 — 무릎 보호가 1순위</h2>
+
+<p>체중이 있는 상태로 달리면 무릎·발목에 가해지는 충격이 큽니다. 다이어트 입문 러너에게는 <strong>속도보다 쿠션·안정성</strong>이 우선입니다.</p>
+
+<ul>
+  <li><strong>맥스 쿠션 데일리화</strong>: <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a> — 두툼한 쿠션으로 충격을 흡수해 무릎 부담을 줄입니다.</li>
+  <li><strong>가성비 데일리화</strong>: <a href="/shoes/nike-pegasus-41">페가수스 41</a> — 무난한 쿠션 + 통기성으로 입문 Zone 2에 적합.</li>
+</ul>
+
+<p>발볼이 넓거나 평발이라면 안정성·와이드 옵션도 함께 고려하세요. 본인 발 특성·무릎 이력에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>으로 좁힐 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 매일 뛰어야 살이 더 빠지나요?</h3>
+<p>아닙니다. 특히 입문·과체중 상태에서 매일 달리면 회복이 안 돼 부상으로 이어지기 쉽습니다. <strong>주 4~5회 Zone 2 + 휴식·근력</strong> 조합이 부상 없이 오래 지속돼 결과적으로 더 많이 빠집니다.</p>
+
+<h3>Q. 공복에 뛰는 게 정말 더 효과적인가요?</h3>
+<p>공복 저강도 유산소는 지방 산화 비율을 약간 높일 수 있지만, <strong>체지방 감량을 결정하는 건 하루 전체 칼로리 적자</strong>입니다. 공복런은 선택이지 필수가 아니며, 저혈당·근손실 위험이 있으니 저강도·60분 이내로 제한하세요.</p>
+
+<h3>Q. 빠르게 뛰는 인터벌이 살 빼는 데 더 좋지 않나요?</h3>
+<p>고강도는 시간당 칼로리 소모가 크지만 지방 "비율"은 낮고, 오래 못 하며 초보에겐 부상 위험이 큽니다. <strong>먼저 Zone 2로 유산소 베이스와 체력을 만든 뒤</strong> 인터벌·<a href="/blog/tempo-run-training-guide-korea">템포런</a>을 주 1회 섞는 순서를 권합니다.</p>
+
+<h3>Q. 체중이 안 줄어요. 뭐가 문제일까요?</h3>
+<p>대개 <strong>운동 후 보상 식사</strong>로 칼로리 적자가 안 만들어졌거나, 근육이 늘어 <strong>체중은 그대로지만 체지방은 줄고 있는</strong> 경우입니다. 체중계 숫자보다 체지방률·허리둘레·옷 핏을 2~4주 추세로 보고, 식단(특히 음료·간식)을 함께 점검하세요. 러닝만으로 식단을 이기긴 어렵습니다.</p>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-23 게시물 "Zone 2 러닝" 착안 + 운동생리학 일반 원리(지방 산화·Fatmax·EPOC). 개인차가 크며 의학적 조언이 아닙니다. 기저질환·관절 이력이 있으면 전문가와 상담하세요.</small></p>
+`,
+  },
+  {
+    id: 'rainy-season-running-guide-korea',
+    slug: 'rainy-season-running-guide-korea',
+    title: '장마철 러닝 완전 가이드 | 우중런 준비물부터 비 맞은 러닝화 관리까지 — 방수 vs 배수, 물집·미끄럼 대비',
+    description: '장마철 우중런 준비물·러닝화 선택(방수 고어텍스 vs 배수 메시)·물집과 쓸림 방지·빗길 안전·비 맞은 러닝화 말리는 법·실내 대안까지 한 번에 정리. 한국 러너를 위한 6~7월 장마철 러닝 실전 가이드.',
+    thumbnail: '/images/blog/rainy-season-running-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['장마철 러닝', '우중런', '비 오는 날 러닝', '러닝화 방수', '고어텍스 러닝화', '러닝화 관리', '물집 방지', '빗길 안전', '여름 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>장마철 러닝의 핵심은 "방수"가 아니라 "배수와 빠른 건조"</strong> — 대부분의 한국 러너에겐 고어텍스 방수화보다 <strong>통기 좋은 메시 데일리화</strong>가 정답</li>
+    <li>물집·쓸림(바셀린·여벌 양말), 빗길 미끄럼·저체온·번개 안전, 시인성 확보가 우중런 3대 변수</li>
+    <li>비 맞은 러닝화는 <strong>신문지 + 그늘 자연건조</strong>가 정석 — 건조기·직사광선·라디에이터는 미드솔 폼을 망칩니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌧️</span>
+  <div class="callout-body">
+    <p class="callout-title">장마철 러닝, 멈추지 않으려면</p>
+    <p>한국의 장마는 보통 <strong>6월 말~7월 중순</strong>에 집중됩니다. 비를 핑계로 러닝을 쉬면 어렵게 만든 루틴이 무너지기 쉽죠. 사실 가벼운 비 정도는 <strong>준비만 제대로 하면 가장 시원하고 쾌적한 러닝</strong>이 됩니다. 핵심은 장비를 "방수"로 둘러싸는 게 아니라 <strong>젖는 걸 전제로 빨리 마르고 쓸리지 않게</strong> 세팅하는 것. 본인 발 특성·부상 이력에 맞는 데일리화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 보기 — 우중런 준비물 체크리스트</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>러닝화</strong></td><td>통기 좋은 메시 데일리화 (배수형)</td><td>젖어도 빨리 마르고 가벼움. 방수화는 한번 차면 안 빠짐</td></tr>
+    <tr><td><strong>양말</strong></td><td>합성섬유·메리노 (면 금지)</td><td>면은 물 먹으면 물집 유발. 여벌 1켤레 지참</td></tr>
+    <tr><td><strong>모자</strong></td><td>챙 있는 러닝캡</td><td>빗물이 눈에 들어오는 걸 차단 — 우중런 만족도 1순위</td></tr>
+    <tr><td><strong>상의</strong></td><td>얇은 기능성 티 또는 경량 윈드재킷</td><td>두꺼운 방수재킷은 땀이 안 빠져 더 젖음</td></tr>
+    <tr><td><strong>마찰 방지</strong></td><td>바셀린·러닝 전용 밤</td><td>젖은 상태 장거리 시 사타구니·겨드랑이·발 쓸림 방지</td></tr>
+    <tr><td><strong>안전</strong></td><td>밝은 색·리플렉티브, 방수 시계</td><td>흐린 날 시인성 저하 대비</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 비 올 때 러닝화 — 방수(고어텍스) vs 배수(메시), 무엇이 정답?</h2>
+
+<p>장마철 러닝화 질문 1순위는 <strong>"고어텍스 방수화를 사야 하나요?"</strong>입니다. 결론부터 말하면 <strong>대부분의 한국 러너에겐 NO</strong>입니다.</p>
+
+<p><strong>방수(고어텍스/GTX)화의 함정</strong>: 방수 멤브레인은 비가 위에서 들어오는 건 막지만, <strong>발목·신발 입구로 한번 물이 들어오면 빠져나가질 못합니다</strong>. 장마철 폭우·물웅덩이 환경에서는 결국 물이 차고, 그 물이 신발 안에 갇혀 "물주머니"가 됩니다. 또 통기성이 떨어져 땀이 차고, 무겁고, 건조도 느립니다. 고어텍스는 <strong>겨울철 눈·진눈깨비·트레일</strong>에서 진가를 발휘하는 옵션입니다.</p>
+
+<p><strong>배수(메시)화가 정답인 이유</strong>: 통기 좋은 일반 메시 데일리화는 물이 들어와도 <strong>그만큼 빠르게 빠져나가고 빨리 마릅니다</strong>. 어차피 폭우엔 발이 젖는 게 전제라면, "차단"보다 "배수+건조"가 실용적. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 통기 좋은 데일리화면 충분합니다.</p>
+
+<p><strong>아웃솔(접지력)이 더 중요</strong>: 비 올 때는 방수 여부보다 <strong>젖은 노면에서의 접지력</strong>이 안전을 좌우합니다. 마모가 심한 아웃솔은 빗길에서 미끄러지기 쉬우니, 장마철엔 너무 닳은 신발을 피하세요.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">장마철엔 "로테이션"이 답</p>
+    <p>비 맞은 신발은 완전히 마르는 데 1~2일이 걸립니다. 매일 뛴다면 <strong>러닝화 2켤레를 번갈아 신는 로테이션</strong>이 사실상 필수. 한 켤레는 말리고 한 켤레로 뛰는 식이죠. 모델 선택이 고민이라면 <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a>·<a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a>처럼 세대 비교 글로 가성비 조합을 찾아보세요.</p>
+  </div>
+</div>
+
+<h2>2. 우중런 필수 준비물 — 만족도를 가르는 디테일</h2>
+
+<p><strong>챙 있는 러닝캡</strong>: 우중런 만족도를 가장 크게 올리는 한 가지. 빗물이 눈·이마로 흘러내리는 걸 막아 시야를 확보합니다. 안경 쓰는 러너에겐 필수.</p>
+
+<p><strong>양말은 면 금지</strong>: 면 양말은 물을 머금어 무겁고 발과의 마찰을 키워 물집을 부릅니다. <strong>합성섬유나 메리노울 양말</strong>을 쓰고, 장거리라면 중간에 갈아 신을 <strong>여벌 양말</strong>을 챙기세요.</p>
+
+<p><strong>상의는 얇게</strong>: 두꺼운 방수 재킷은 땀이 안 빠져 안에서 더 젖습니다. 여름 장마철엔 <strong>얇은 기능성 티 한 장</strong>이 오히려 쾌적. 바람·기온 저하가 걱정되면 <strong>경량 윈드재킷</strong> 정도면 충분합니다.</p>
+
+<p><strong>전자기기 방수</strong>: 스마트폰은 지퍼백·방수파우치에, 무선이어폰·러닝워치는 방수 등급을 확인하세요. 폭우 땐 터치스크린 오작동이 잦으니 출발 전 코스를 미리 세팅해두면 편합니다.</p>
+
+<h2>3. 물집·쓸림 방지 — 젖은 러닝의 최대 적</h2>
+
+<p>비에 젖으면 피부와 옷·신발의 <strong>마찰계수가 급격히 올라가</strong> 평소 안 생기던 물집·쓸림이 생깁니다.</p>
+
+<ul>
+  <li><strong>발</strong>: 출발 전 발가락·뒤꿈치에 바셀린을 얇게. 합성섬유 양말 + 정확한 사이즈가 기본.</li>
+  <li><strong>사타구니·허벅지 안쪽</strong>: 젖은 반바지가 쓸리는 부위. 바셀린이나 러닝 전용 마찰방지 밤을 바르세요.</li>
+  <li><strong>겨드랑이·유두</strong>: 장거리 우중런에서 의외로 흔한 쓸림 부위. 밴드·밤으로 대비.</li>
+</ul>
+
+<h2>4. 빗길 안전 — 미끄럼·저체온·번개</h2>
+
+<p><strong>미끄럼</strong>: 맨홀 뚜껑, 보도블록, 횡단보도 페인트, 낙엽·이끼 낀 데크는 비 오면 빙판처럼 미끄럽습니다. 보폭을 약간 줄이고 <strong>발을 부드럽게 착지</strong>하세요. 갯벌·데크·트레일 코스는 장마철엔 특히 조심해야 합니다.</p>
+
+<p><strong>저체온</strong>: 여름이라도 <strong>비+바람</strong>이면 체온이 빠르게 떨어집니다. 오한·손 저림이 오면 즉시 러닝을 중단하고 따뜻하게 하세요. 장시간 우중런은 권하지 않습니다.</p>
+
+<p><strong>번개·폭우경보</strong>: <strong>천둥·번개가 치면 무조건 실내로</strong>. 하천변·교량·개활지는 낙뢰 위험이 큽니다. 호우경보·하천 범람 경보 시엔 한강·하천 둔치 코스를 피하세요.</p>
+
+<p><strong>시인성</strong>: 흐린 날·우중엔 운전자가 러너를 늦게 발견합니다. <strong>밝은 색 + 리플렉티브</strong> 의류로 잘 보이게 하세요.</p>
+
+<h2>5. 비 맞은 러닝화 관리법 — 잘못 말리면 신발 수명 단축</h2>
+
+<p>비 맞은 러닝화를 <strong>대충 말리면 미드솔 폼이 변형되고 냄새·곰팡이</strong>가 생겨 수명이 크게 줄어듭니다. 정석은 이렇습니다.</p>
+
+<ul>
+  <li><strong>① 인솔·끈 분리</strong>: 깔창을 빼서 따로 말려야 안쪽까지 마릅니다.</li>
+  <li><strong>② 신문지·키친타월로 속 채우기</strong>: 신발 안에 구겨 넣으면 수분을 빨아들이고 형태를 잡아줍니다. 2~3시간마다 교체.</li>
+  <li><strong>③ 통풍 잘되는 그늘에서 자연건조</strong>: 직사광선·건조기·라디에이터·드라이어 열풍은 <strong>금지</strong>. EVA·PEBA 같은 미드솔 폼은 열에 약해 쿠션이 죽습니다.</li>
+  <li><strong>④ 완전 건조 후 보관</strong>: 덜 마른 채로 신발장에 넣으면 냄새·곰팡이의 원인.</li>
+</ul>
+
+<p>이래서 장마철엔 <strong>2켤레 로테이션</strong>이 중요합니다. 하루 만에 완전히 마르지 않기 때문입니다.</p>
+
+<h2>6. 도저히 못 뛸 땐 — 장마철 실내 대안</h2>
+
+<p>폭우·번개·호우경보로 야외 러닝이 위험한 날은 무리하지 말고 실내로 전환하세요.</p>
+
+<ul>
+  <li><strong>트레드밀</strong>: 경사 1~2%를 주면 야외와 비슷한 부하. 페이스·인터벌 훈련엔 오히려 유리합니다.</li>
+  <li><strong>크로스 트레이닝</strong>: 실내 자전거·로잉·계단오르기로 유산소 능력 유지.</li>
+  <li><strong>근력·코어</strong>: 비 오는 날을 <strong>부상 예방용 근력 운동</strong> 루틴으로 활용하면 오히려 시즌이 끝날 때 더 강해집니다.</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 장마철엔 고어텍스(방수) 러닝화를 꼭 사야 하나요?</h3>
+<p>아니요. 폭우·물웅덩이 환경에서는 방수화도 결국 물이 차고, 한번 차면 빠지질 않아 더 불편합니다. 대부분의 한국 러너에겐 <strong>통기 좋은 메시 데일리화(배수형)</strong>가 더 실용적입니다. 고어텍스는 겨울 눈·진눈깨비·트레일에서 빛을 봅니다.</p>
+
+<h3>Q. 비 맞은 러닝화, 빨리 말리려고 건조기에 넣어도 되나요?</h3>
+<p>절대 안 됩니다. EVA·PEBA 등 미드솔 폼은 열에 약해 <strong>건조기·드라이어·라디에이터 열풍</strong>에 노출되면 쿠션이 주저앉고 변형됩니다. 인솔을 빼고 신문지를 채워 <strong>그늘에서 자연건조</strong>하는 게 정석입니다.</p>
+
+<h3>Q. 비 오는 날 무릎·관절에 더 무리가 가나요?</h3>
+<p>비 자체보다 <strong>젖은 노면에서 미끄러지지 않으려 힘이 들어가고, 착지가 불안정</strong>해지는 게 부담입니다. 보폭을 줄이고 페이스를 낮춰 안정적으로 뛰세요. 무릎 이력이 있다면 쿠션·안정성 좋은 신발과 함께 <a href="/recommend">1분 러닝화 추천</a>으로 본인에게 맞는 모델을 확인하는 걸 권합니다.</p>
+
+<h3>Q. 장마철에 며칠씩 비가 오는데 루틴이 무너질까 걱정돼요.</h3>
+<p>가벼운 비는 준비만 하면 충분히 뛸 수 있고, 위험한 폭우·번개 날은 <strong>트레드밀·근력 운동으로 전환</strong>하면 됩니다. "완전히 쉬는 날"을 만들지 않는 게 핵심. 장마가 끝나면 오히려 더 강해져 있을 겁니다.</p>
+`,
+  },
+  {
+    id: 'incheon-unique-running-courses-7',
+    slug: 'incheon-unique-running-courses-7',
+    title: '인천 이색 러닝 코스 7선 | 송도 센트럴파크 야경부터 영종도 비행기 일몰까지 — 바다·갯벌·호수·개항장 결합한 인천만의 러닝',
+    description: '송도 센트럴파크 수로 야간 러닝부터 소래습지 갯벌, 영종도 해변 일몰까지 인천에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 송도·월미도+차이나타운·소래습지·청라호수공원·영종도·계양산·인천대공원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/incheon-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-28',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['인천 러닝 코스', '이색 러닝', '송도 센트럴파크', '월미도 차이나타운', '소래습지생태공원', '청라호수공원', '영종도 해변', '계양산 둘레길', '인천대공원', '인천 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>인천은 바다·갯벌·호수·개항장·국제도시를 한 도시에 결합한 이색 러닝 도시</strong> — 송도 인공수로 야경, 소래 갯벌·염전, 영종도 비행기 일몰, 차이나타운 개항장 등 다른 도시에는 없는 풍경의 코스</li>
+    <li>7개 코스 모두 <strong>인천지하철·공항철도·수인분당선 접근 + 평지·완만 위주</strong> — 인천 거주 러너뿐 아니라 수도권 주말 러닝 여행, 공항 이용 전후 러닝까지 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">✈️</span>
+  <div class="callout-body">
+    <p class="callout-title">인천 러닝만의 매력</p>
+    <p>인천은 서해안 항구·개항 도시로 <strong>바다(영종도·월미도)·갯벌·염전(소래)·호수(청라·송도)·계획도시 수로(송도 센트럴파크)·산(계양산)·개항장 근대건축(차이나타운·자유공원)</strong>이 모두 있습니다. 인공수로를 따라 뛰다 5km 안에 갯벌·염전을 만나고, 영종도에서는 머리 위로 비행기가 뜨고 지는 풍경을 보며 뛰는 곳은 한국에서 인천이 유일. 수도권 지하철·공항철도로 접근이 쉬워 <strong>주말 러닝 여행지·해외여행 전후 러닝</strong>으로도 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>송도 센트럴파크 수로</strong></td><td>5~7km</td><td>하 (평지)</td><td>인공수로 + 마천루 야경 + 수상택시</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>2</td><td><strong>월미도 + 차이나타운 + 자유공원</strong></td><td>5~6km (결합)</td><td>하~중</td><td>해안산책로 + 개항장 근대건축</td><td>새벽 6AM·해질녘</td></tr>
+    <tr><td>3</td><td><strong>소래습지생태공원 + 소래포구</strong></td><td>5~8km</td><td>하 (평지)</td><td>갯벌 + 폐염전 + 습지 데크길</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>4</td><td><strong>청라호수공원</strong></td><td>약 4.3km 둘레</td><td>하 (평지)</td><td>국내 최대급 호수 + 음악분수</td><td>평일 새벽·저녁</td></tr>
+    <tr><td>5</td><td><strong>영종도 마시안·을왕리 해변</strong></td><td>5~8km</td><td>하</td><td>서해 일몰 + 갯벌 + 비행기 이착륙</td><td>맑은 날 해질녘</td></tr>
+    <tr><td>6</td><td><strong>계양산 둘레길</strong></td><td>약 6~7km</td><td>중상</td><td>인천 최고봉 + 산성 + 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>7</td><td><strong>인천대공원</strong></td><td>약 4~5km 둘레</td><td>하</td><td>도심 호수 + 벚꽃길 + 수목원</td><td>평일 새벽·주말 오전</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 송도 센트럴파크 수로 — 인천 야경 1순위 계획도시 러닝</h2>
+
+<p><strong>출발지</strong>: 인천1호선 센트럴파크역 3번 출구 → 센트럴파크 (도보 3분)<br>
+<strong>거리</strong>: 5~7km (수로 둘레 약 1.8km + 주변 보행로 확장)<br>
+<strong>노면</strong>: 아스팔트 + 우레탄 보행로 + 데크<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (마천루 조명 점등 시간)</p>
+
+<p>송도 센트럴파크는 바닷물을 끌어들인 <strong>국내 유일의 해수 인공수로</strong>를 따라 조성된 도심 공원. 양옆으로 <strong>송도국제도시의 마천루(동북아무역타워·G타워 등)</strong>가 둘러싸 야간 조명이 환상적입니다. 수로 둘레만 약 1.8km라 주변 보행로·캐널워크까지 연결하면 5~7km까지 평지로 확장 가능.</p>
+
+<p><strong>이 코스의 매력</strong>: 마천루 야경 + 수상택시·카누가 떠 있는 이국적 풍경 + 잘 정비된 평지 보행로. 인천에서 가장 "도시적인" 러닝 명소이며, 야간 인증샷 1순위. 노면이 평탄하고 신호가 적어 페이스 유지하기 좋습니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 월미도 + 차이나타운 + 자유공원 — 바다 + 개항장 근대건축</h2>
+
+<p><strong>출발지</strong>: 수인분당선·1호선 인천역 1번 출구 → 차이나타운 입구 (도보 2분)<br>
+<strong>거리</strong>: 5~6km (월미문화의거리 해안산책로 + 차이나타운 + 자유공원 결합)<br>
+<strong>노면</strong>: 해안 보행로 + 보도블록 + 자유공원 오르막<br>
+<strong>추천 시간대</strong>: 새벽 6AM·해질녘 (인파 적고 바다 조망)</p>
+
+<p>인천역에서 출발해 <strong>차이나타운 → 자유공원 → 월미문화의거리 해안산책로</strong>로 이어지는 개항장 코스. 1883년 개항한 인천의 역사가 응축된 곳으로, 근대 건축물과 중국풍 거리, 자유공원에서 내려다보는 항구 전경이 색다릅니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 바다 + 역사 + 이국적 거리를 한 번에. 자유공원은 짧지만 완만한 오르막이라 항구 뷰를 얻을 수 있고, 월미도 해안산책로는 평지라 회복 조깅에 좋습니다. 단, 차이나타운은 관광객이 많아 <strong>이른 새벽·평일</strong>을 권장.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 오르막 + 보도블록. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 쿠션. 인파 구간은 페이스보다 회복 조깅으로.</p>
+
+<h2>3. 소래습지생태공원 + 소래포구 — 갯벌·폐염전·습지 데크길</h2>
+
+<p><strong>출발지</strong>: 수인분당선 소래포구역 2번 출구 → 소래습지생태공원 (도보 10분)<br>
+<strong>거리</strong>: 5~8km (습지 데크길 + 폐염전 둘레 + 소래포구 연결)<br>
+<strong>노면</strong>: 흙길 + 목재 데크 + 일부 비포장<br>
+<strong>추천 시간대</strong>: 새벽·저녁 노을 (갯벌 반영 + 철새)</p>
+
+<p>소래습지생태공원은 <strong>폐염전을 복원한 갯벌·습지 생태공원</strong>. 옛 소금창고와 풍차, 갯골을 따라 데크길이 이어지고, 썰물 때 드러나는 갯벌과 철새가 도심에서 보기 힘든 풍경을 만듭니다. 바로 옆 소래포구 어시장과 연결해 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 한국 러닝 코스 중 가장 독특한 갯벌·염전 풍경. 노을 시간대 갯골에 반사되는 빛이 압권. 다만 <strong>목재 데크·흙길·비포장이 섞여</strong> 미끄럼·요철에 주의해야 하고, 해무가 끼면 시야가 짧아집니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 약간의 흙길·데크 + 안정성. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 접지력·안정성 있는 신발. 얇은 카본 슈즈는 데크·비포장에 비추.</p>
+
+<h2>4. 청라호수공원 — 국내 최대급 호수 둘레 평지</h2>
+
+<p><strong>출발지</strong>: 공항철도 청라국제도시역 → 버스 환승 (또는 차량)<br>
+<strong>거리</strong>: 약 4.3km (호수 둘레 한 바퀴)<br>
+<strong>노면</strong>: 우레탄 산책로 + 데크<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁 (분수 가동 시간 확인)</p>
+
+<p>청라호수공원은 <strong>국내 최대급 도심 호수공원</strong> 중 하나로, 호수 둘레를 따라 약 4.3km의 평탄한 산책로가 한 바퀴로 이어집니다. 거리가 딱 떨어져 <strong>랩 카운트·페이스 훈련</strong>에 좋고, 야간 음악분수와 조명이 운치를 더합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 한 바퀴 4.3km 루프라 인터벌·템포 러닝에 최적. 노면이 부드럽고 평탄해 무릎 부담이 적습니다. 청라국제도시 계획도시라 산책로 정비 상태가 우수.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 루프 + 페이스 훈련. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너로 템포·인터벌, 또는 <a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리로 LSD.</p>
+
+<h2>5. 영종도 마시안·을왕리 해변 — 서해 일몰 + 머리 위 비행기</h2>
+
+<p><strong>출발지</strong>: 공항철도 운서역 → 버스·차량 (을왕리·마시안 해변)<br>
+<strong>거리</strong>: 5~8km (해변 + 갯벌 + 해안도로)<br>
+<strong>노면</strong>: 모래 + 갯벌 + 해안 아스팔트<br>
+<strong>추천 시간대</strong>: 맑은 날 해질녘 (서해 일몰 명소)</p>
+
+<p>영종도 마시안·을왕리 해변은 <strong>서해 일몰 명소</strong>이자, 인천공항이 가까워 <strong>이착륙하는 비행기가 머리 위로 지나가는 풍경</strong>이 특별합니다. 썰물 때 드러나는 넓은 갯벌을 따라 평지 러닝이 가능하고, 해안도로로 거리를 늘릴 수 있습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 노을 + 비행기 + 갯벌이라는 인천 특유의 조합. <strong>해외여행 전후 공항 근처에서 러닝</strong>하기 좋습니다. 단, 모래·갯벌 구간은 발이 빠지므로 단단한 해안도로 위주로 코스를 잡는 것이 페이스 유지에 유리.</p>
+
+<p><strong>어울리는 러닝화</strong>: 모래·갯벌 대비 안정성 + 맥스 쿠션. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 부드러운 맥스 쿠션. 모래 구간은 무리하지 말고 해안도로 위주로.</p>
+
+<h2>6. 계양산 둘레길 — 인천 최고봉 산성 트레일</h2>
+
+<p><strong>출발지</strong>: 인천1호선 계산역 → 계양산 입구 (도보 15분)<br>
+<strong>거리</strong>: 약 6~7km (둘레길 기준, 정상 코스는 별도)<br>
+<strong>노면</strong>: 흙길 + 돌계단 + 일부 임도<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (시야 + 인파 전)</p>
+
+<p>계양산은 <strong>해발 395m로 인천에서 가장 높은 산</strong>. 계양산성과 둘레길을 따라 트레일 러닝이 가능하며, 정상에서는 인천 시가지와 한강 하구가 한눈에 들어옵니다. 도심 한복판에서 본격 산악 러닝을 즐길 수 있는 드문 코스.</p>
+
+<p><strong>이 코스의 매력</strong>: 지하철로 닿는 산악 트레일. 다만 <strong>흙길·돌계단·오르막</strong>이 섞여 일반 데일리화로는 한계가 있고, 우천 후엔 미끄럽습니다. 트레일 입문자는 둘레길 위주로, 무리한 정상 코스는 피하세요.</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문 또는 접지력 좋은 안정화. 일반 데일리는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a> 정도가 데일리 중에선 가장 적합하나, 본격 트레일은 트레일 전용화 권장. 카본 슈즈는 절대 비추.</p>
+
+<h2>7. 인천대공원 — 도심 호수 + 벚꽃길 + 수목원</h2>
+
+<p><strong>출발지</strong>: 인천1호선 인천대공원역 2번 출구 → 공원 입구 (도보 5분)<br>
+<strong>거리</strong>: 약 4~5km (호수 + 벚꽃길 + 수목원 둘레)<br>
+<strong>노면</strong>: 우레탄 + 아스팔트 산책로<br>
+<strong>추천 시간대</strong>: 평일 새벽·주말 오전</p>
+
+<p>인천대공원은 <strong>호수·벚꽃길·수목원·캠핑장을 갖춘 대형 도심 공원</strong>. 봄철 벚꽃터널이 유명하고, 평탄한 산책로가 잘 연결돼 인천 동남부 러너들의 홈 코스입니다. 가족 단위 방문객이 많아 한적함을 원하면 새벽·평일을 권장.</p>
+
+<p><strong>이 코스의 매력</strong>: 신호 없는 평지 공원 루프 + 사계절 풍경(봄 벚꽃, 가을 단풍). 무릎 부담이 적고 접근성이 좋아 입문·회복 러닝에 적합. 트랙·운동시설도 함께 있어 다목적입니다.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 데일리화면 충분. 인터벌을 섞는다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 슈퍼트레이너.</p>
+
+<h2>본인 인천 거주지·목적별 추천 코스</h2>
+
+<ul>
+  <li><strong>송도·연수 거주</strong>: <strong>송도 센트럴파크 수로</strong>(야간 평지) — 마천루 야경 + 페이스 러닝</li>
+  <li><strong>중구·동구(개항장) 거주</strong>: <strong>월미도 + 차이나타운 + 자유공원</strong> — 바다 + 역사 + 회복 조깅</li>
+  <li><strong>남동구·논현 거주</strong>: <strong>소래습지생태공원</strong>(이색 갯벌) 또는 <strong>인천대공원</strong>(평지 루프)</li>
+  <li><strong>서구·청라 거주</strong>: <strong>청라호수공원</strong> — 4.3km 루프로 인터벌·템포 훈련</li>
+  <li><strong>영종·운서 거주 / 공항 이용 전후</strong>: <strong>영종도 마시안·을왕리 해변</strong> — 일몰 + 비행기 + 갯벌</li>
+  <li><strong>계양·부평 거주 / 트레일 입문</strong>: <strong>계양산 둘레길</strong> — 산악 트레일 (트레일화 권장)</li>
+</ul>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 도심·호수 (송도·청라·인천대공원)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>갯벌·습지·트레일 (소래·계양산)</strong>: 안정성·접지력. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a> · <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+  <li><strong>해변 LSD (영종도)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>인터벌·페이스 (청라호수 4.3km 루프)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>인천 러닝 여행 — 공항 이용 전후, 수도권 주말 러닝</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">🛫</span>
+  <div class="callout-body">
+    <p class="callout-title">해외여행 전후·수도권 주말, 인천에서 뛰는 법</p>
+    <p>인천은 <strong>공항철도·인천지하철로 접근이 쉬워</strong> 여행 전후 러닝지로 좋습니다. ① 출국 전날 또는 귀국 당일 <strong>영종도 마시안·을왕리 해변</strong>에서 일몰·비행기 러닝, ② 수도권 거주자는 주말 오전 <strong>송도 센트럴파크 → 캐널워크 카페</strong> 코스, ③ 역사·문화를 곁들이려면 <strong>차이나타운 + 자유공원 + 월미도</strong> 한 바퀴를 추천. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>·<a href="/blog/busan-unique-running-courses-7">부산 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 인천 러닝과 서울 러닝의 차이는?</h3>
+<p>서울이 한강 본류 중심의 평지·도심 러닝이라면, 인천은 <strong>서해 갯벌·염전(소래), 계획도시 인공수로(송도), 공항·해변(영종도), 개항장 역사(차이나타운)</strong>로 풍경의 결이 다릅니다. 같은 수도권이지만 "바다와 갯벌"을 끼고 뛸 수 있다는 점이 인천만의 차별점입니다.</p>
+
+<h3>Q. 인천에서 야간 러닝하기 좋은 곳은?</h3>
+<p><strong>송도 센트럴파크 수로</strong>가 1순위입니다. 마천루 조명과 수로가 어우러져 야경이 뛰어나고, 평지에 신호가 적어 안전합니다. <strong>청라호수공원</strong>도 음악분수·조명이 있어 야간 평지 러닝에 좋습니다. 단, 영종도 해변과 계양산은 야간에 어둡고 위험하니 낮·해질녘에 뛰세요.</p>
+
+<h3>Q. 갯벌·습지 코스(소래)를 뛸 때 주의할 점은?</h3>
+<p>목재 데크와 흙길·비포장이 섞여 있어 <strong>접지력 있는 안정화</strong>가 좋고, 우천 후나 해무 낀 날은 미끄럼·시야 저하에 주의하세요. 썰물·밀물 시간을 확인하면 갯벌 풍경을 제대로 즐길 수 있습니다. 얇은 카본 레이싱화는 데크·비포장에 부적합합니다.</p>
+
+<h3>Q. 인천 마라톤 대회는 어떤 게 있나요?</h3>
+<p>송도국제도시 일대에서 열리는 도심 마라톤과 영종도·청라 일대 대회 등이 있으며, 코스 대부분이 평지라 기록 도전에 유리합니다. 대회 일정은 매년 변동되니 공식 접수 채널에서 최신 정보를 확인하세요. 본인 목적(완주·기록)에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다.</p>
+`,
+  },
+  {
+    id: 'busan-unique-running-courses-7',
+    slug: 'busan-unique-running-courses-7',
+    title: '부산 이색 러닝 코스 7선 | 광안리 야경부터 이기대 절벽까지 — 바다·산·강 결합한 부산만의 러닝',
+    description: '광안리 야간 러닝부터 이기대 갈맷길까지, 부산에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 광안리·해운대·이기대·태종대·을숙도·송정·부산시민공원 각 코스별 출발지·노면·주의점 가이드.',
+    thumbnail: '/images/blog/busan-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['부산 러닝 코스', '이색 러닝', '광안리 야간', '해운대 미포철도길', '이기대 갈맷길', '태종대', '을숙도', '송정 해변', '부산시민공원', '부산 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>부산은 바다·산·강·도심을 5km 이내에 결합한 러닝 천국</strong> — 광안리 야간, 이기대 절벽, 미포철도길, 태종대 등 서울에는 없는 풍경의 코스</li>
+    <li>7개 코스 모두 <strong>대중교통 접근 + 평지·완만 위주</strong> — 부산 거주 러너뿐 아니라 KTX로 주말 러닝 여행 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌊</span>
+  <div class="callout-body">
+    <p class="callout-title">부산 러닝만의 매력</p>
+    <p>부산은 한반도 동남쪽 항구도시로 <strong>바다(해운대·광안리·송정)·강(낙동강·수영강)·산(금정산·이기대·태종대)·도심(시민공원)</strong>이 5km 이내에 결합돼 있습니다. 같은 도시에서 해안·산악·강변·도심 풍경을 모두 경험할 수 있는 곳은 한국에서 부산이 유일. KTX로 서울에서 2시간 30분이라 <strong>주말 러닝 여행지로도 인기</strong>입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>광안리 + 광안대교 야간</strong></td><td>5~7km</td><td>하 (평지)</td><td>광안대교 조명 + 해변 + 카페</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>2</td><td><strong>해운대 + 동백섬 + 미포철도길</strong></td><td>6~9km (결합)</td><td>하~중</td><td>해변 + 옛 동해남부선 철도 부지</td><td>새벽 6AM·해질녘</td></tr>
+    <tr><td>3</td><td><strong>이기대 갈맷길 (2코스)</strong></td><td>약 4.7km</td><td>중상</td><td>해안 절벽 + 트레일</td><td>맑은 날 오전</td></tr>
+    <tr><td>4</td><td><strong>태종대 둘레길</strong></td><td>약 5km</td><td>중 (오르막 있음)</td><td>영도 절벽 + 등대 + 자갈마당</td><td>주말 오전 (인파 전)</td></tr>
+    <tr><td>5</td><td><strong>을숙도 + 낙동강 하구</strong></td><td>5~10km</td><td>하 (평지)</td><td>강변 자전거도로 + 철새</td><td>새벽·저녁 노을</td></tr>
+    <tr><td>6</td><td><strong>송정 해변 + 동백섬</strong></td><td>5~8km</td><td>하</td><td>한적한 해변 + 서핑 풍경</td><td>새벽 6~7AM</td></tr>
+    <tr><td>7</td><td><strong>부산시민공원</strong></td><td>약 3.5km 둘레</td><td>하</td><td>도심 한복판 공원 + 트랙</td><td>평일 새벽·저녁</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 광안리 + 광안대교 야간 러닝 — 부산 야경 1순위</h2>
+
+<p><strong>출발지</strong>: 광안역 5번 출구 → 광안리 해변 (도보 8분)<br>
+<strong>거리</strong>: 5~7km (왕복 + 민락수변공원 연결)<br>
+<strong>노면</strong>: 아스팔트 + 일부 보도블록 + 해변 보행로<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (광안대교 조명 풀가동 시간)</p>
+
+<p>광안리 해변은 부산 야경 1순위 코스. <strong>광안대교(다이아몬드 브리지) 조명</strong>이 환상적이고, 해변 산책로가 잘 정비돼 있어 평지 러닝에 최적. 광안리 → 민락수변공원 연결로 7km까지 확장 가능.</p>
+
+<p><strong>이 코스의 매력</strong>: 광안대교 야간 조명 + 부산 시민들이 즐기는 해변 분위기 + 카페·맛집 풍부. 인스타 인증샷 명소 1순위. 매년 10월 <strong>부산불꽃축제</strong> 시기엔 글로벌 러닝 명소로 부상.</p>
+
+<p><strong>주의점</strong>: 주말·여름 저녁은 인파 많아 빠른 페이스 어려움. 페이스 훈련은 새벽 6AM 추천. 8월 부산 폭염·습도는 야간이 유일한 선택지.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 통기성 + 야간 시인성. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+
+<h2>2. 해운대 + 동백섬 + 미포철도길 — 해변 + 옛 철도 부지</h2>
+
+<p><strong>출발지</strong>: 해운대역 5번 출구 → 해운대 해변 (도보 7분)<br>
+<strong>거리</strong>: 6~9km (해운대 → 동백섬 → 미포철도길 결합)<br>
+<strong>노면</strong>: 아스팔트 + 해변 보행로 + 옛 철도 부지 흙길<br>
+<strong>추천 시간대</strong>: 새벽 6AM (인파 전) · 해질녘 (노을)</p>
+
+<p>해운대 해변을 따라 동백섬을 한 바퀴 돈 다음 <strong>미포철도길(옛 동해남부선)</strong>로 이어지는 결합 코스. 미포철도길은 2013년 폐선된 동해남부선을 산책로로 재활용한 곳으로, <strong>바다와 나란히 달리는 옛 철도 부지의 운치</strong>가 특별합니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 해운대 해변 + 누리마루 APEC하우스(동백섬) + 미포철도길 결합. 부산 대표 풍경 3개를 한 번에. 봄 벚꽃, 여름 해변, 가을 노을, 겨울 일출 모두 좋음.</p>
+
+<p><strong>주의점</strong>: 미포철도길은 좁고 일부 흙길이라 빠른 페이스 어려움. 주말 인파 많음. 새벽이나 평일 아침 추천.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 약간의 흙길. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 같은 강한 록커 + 안정성. 카본 슈즈는 미포철도길에 비추.</p>
+
+<h2>3. 이기대 갈맷길 (2코스) — 해안 절벽 트레일 러닝</h2>
+
+<p><strong>출발지</strong>: 경성대·부경대역 5번 출구 → 동생말 (버스 20분)<br>
+<strong>거리</strong>: 약 4.7km (이기대 어울마당 → 오륙도 해맞이공원)<br>
+<strong>노면</strong>: 흙길 + 나무 데크 + 일부 계단<br>
+<strong>추천 시간대</strong>: 맑은 날 오전 (오륙도·대마도 시야 확보)</p>
+
+<p>부산 갈맷길 9코스 중 가장 인기 있는 <strong>이기대 갈맷길 2코스</strong>. 동해안 끝자락 절벽 위 트레일로, 한쪽은 광안대교·해운대 풍경, 다른 한쪽은 절벽 아래 바다. <strong>한국 도시에서 가장 드라마틱한 해안 트레일</strong>.</p>
+
+<p><strong>이 코스의 매력</strong>: 오륙도 해맞이공원 도착점에서 일본 대마도까지 보임 (맑은 날). 절벽·바위·해안 식물의 다양한 풍경. 부산 갈맷길 인증 챌린지 가능.</p>
+
+<p><strong>주의점</strong>: 트레일 코스라 일반 데일리화는 미끄러울 수 있음. <strong>비 직후 흙길 미끄러움·낙석 주의</strong>. 단독 러닝보다 2인 이상 동행 권장. 가족·아이와는 비추 (절벽).</p>
+
+<p><strong>어울리는 러닝화</strong>: 트레일 입문. 일반 데일리는 부적합. <strong>접지력 좋은 안정화</strong> 또는 트레일 전용 신발. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정도가 데일리 중에선 가장 적합.</p>
+
+<h2>4. 태종대 둘레길 — 영도 절벽 + 등대 + 자갈마당</h2>
+
+<p><strong>출발지</strong>: 남포역 6번 출구 → 태종대 입구 (버스 30분)<br>
+<strong>거리</strong>: 약 5km (태종대 순환로)<br>
+<strong>노면</strong>: 아스팔트 (전 구간 차량 통제, 전기차만 다님)<br>
+<strong>추천 시간대</strong>: 주말 오전 9~10AM (인파 전)</p>
+
+<p>영도구 끝자락 태종대 자연공원. <strong>전 구간 차량 통제(전기 다누비 열차만 다님)</strong>라 차 걱정 없이 뛸 수 있고, 약 5km 순환로가 절벽·등대·자갈마당·전망대를 두루 지나갑니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 태종대 등대 + 자갈마당(자연 자갈 해변) + 영도 절벽 + 대마도 시야. 부산 영도구 사람들의 새벽 러닝 명소. 봄 벚꽃 시즌엔 특별히 좋음.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가파른 오르막 있음. 무릎 약한 러너는 워킹 권장. 태종대 자체 입장료는 무료지만 다누비 열차는 유료(왕복 4,000원).</p>
+
+<p><strong>어울리는 러닝화</strong>: 오르막 + 평지 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션이 무릎 보호에 좋음.</p>
+
+<h2>5. 을숙도 + 낙동강 하구 — 강변 + 철새 자전거도로</h2>
+
+<p><strong>출발지</strong>: 하단역 1번 출구 → 을숙도대교 (도보 10분)<br>
+<strong>거리</strong>: 5~10km (을숙도 생태공원 + 낙동강 자전거도로)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 새벽 · 저녁 노을 (철새 관찰)</p>
+
+<p>낙동강 하구에 위치한 <strong>을숙도</strong>는 한국 최대 철새 도래지 중 하나로, 평일 새벽엔 자전거·러너가 만나는 한적한 강변 코스. 부산 해변 코스의 정반대 매력 — <strong>물·새·갈대의 자연 풍경</strong>.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 해변 코스에 지쳤다면 정반대의 자연 휴식 코스. 낙동강 자전거도로는 양산·김해까지 이어져 LSD 훈련 가능 (왕복 20km+ 가능). 저녁 노을이 절경.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가로등 부족 (야간 러닝 시 헤드램프 권장). 자전거 속도 빠른 곳도 있어 차선 분리 주의. 겨울철 철새 보호 구역 일부 출입 제한.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 LSD. <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/saucony-ride-19">라이드 19</a> 같은 부드러운 쿠션이 좋음.</p>
+
+<h2>6. 송정 해변 + 동백섬 — 한적한 해변과 서핑 풍경</h2>
+
+<p><strong>출발지</strong>: 송정역(동해선) 출구 → 송정 해변 (도보 8분)<br>
+<strong>거리</strong>: 5~8km (송정 해변 + 동백섬 결합)<br>
+<strong>노면</strong>: 해변 보행로 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽 6~7AM · 평일 오전</p>
+
+<p>송정 해변은 해운대·광안리보다 한적한 부산의 두 번째 해변. <strong>서핑 명소</strong>로도 유명해 새벽 서퍼들의 활기찬 모습을 볼 수 있는 곳. 송정 해변 끝 동백섬과 결합하면 5~8km 코스 완성.</p>
+
+<p><strong>이 코스의 매력</strong>: 해운대보다 한적해서 페이스 유지 좋고, <strong>서핑하는 사람들 풍경</strong>이 색다른 동기부여. 송정역(동해선)으로 부산 시내에서 접근 편리.</p>
+
+<p><strong>주의점</strong>: 해변 보행로는 발 빠질 수 있어 모래 직접 진입은 비추. 동백섬 둘레길 일부는 흙길.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 + 한적함. <a href="/shoes/saucony-ride-18">라이드 18</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 가벼운 데일리화면 충분.</p>
+
+<h2>7. 부산시민공원 — 도심 한복판 광활한 공원</h2>
+
+<p><strong>출발지</strong>: 부전역 또는 시민공원역 (도보 5분)<br>
+<strong>거리</strong>: 약 3.5km 둘레 + 내부 산책로 (총 5~7km)<br>
+<strong>노면</strong>: 아스팔트 + 우레탄 트랙 + 잔디<br>
+<strong>추천 시간대</strong>: 평일 새벽·저녁</p>
+
+<p>부산진구 한복판 옛 미군 기지 부지를 재개발한 도심 공원. <strong>약 47만평 규모로 부산 최대 도시공원</strong>. 시민들의 러닝·산책·운동 명소로 부산 거주 러너들의 평일 데일리 코스.</p>
+
+<p><strong>이 코스의 매력</strong>: 우레탄 트랙 구간 있어 인터벌 훈련 가능. 카페·편의시설 풍부. 강북·강남 어디서든 부전역으로 30분 이내 접근.</p>
+
+<p><strong>주의점</strong>: 주말 가족 단위 많아 빠른 페이스 어려움. 새벽이나 평일 저녁 추천.</p>
+
+<p><strong>어울리는 러닝화</strong>: 다목적 데일리. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 같은 슈퍼트레이너로 인터벌 훈련도 가능.</p>
+
+<h2>본인 부산 거주지·목적별 추천 코스</h2>
+
+<table>
+  <thead>
+    <tr><th>거주지</th><th>이지런</th><th>LSD (15km+)</th><th>인터벌·페이스 훈련</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>해운대·송정</td><td>해운대 해변</td><td>해운대 + 미포철도길 + 송정 결합</td><td>해운대 해변 왕복</td></tr>
+    <tr><td>광안리·수영</td><td>광안리 야간</td><td>광안리 + 민락수변 + 수영강 결합</td><td>광안리 해변 왕복</td></tr>
+    <tr><td>남구·이기대</td><td>경성대 부근</td><td>이기대 + 오륙도 갈맷길</td><td>이기대 절벽 반복 (힐 트레이닝)</td></tr>
+    <tr><td>영도</td><td>태종대 둘레길</td><td>태종대 + 영도 해안로 결합</td><td>태종대 오르막 반복</td></tr>
+    <tr><td>사하·서구</td><td>을숙도 산책로</td><td>을숙도 + 낙동강 자전거도로 (왕복 20km+)</td><td>을숙도 직선 구간 (트랙 대체)</td></tr>
+    <tr><td>부산진·동래</td><td>부산시민공원</td><td>시민공원 + 수영강 결합</td><td>시민공원 우레탄 트랙</td></tr>
+  </tbody>
+</table>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 해변 (광안리·해운대·송정)</strong>: 가성비 데일리 + 통기성. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>트레일·절벽 (이기대·태종대)</strong>: 안정성·접지력. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a> · <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a></li>
+  <li><strong>강변 LSD (을숙도)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>인터벌·페이스 (부산시민공원 트랙)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>부산 러닝 여행 — KTX로 주말 러닝 가는 분에게</h2>
+
+<div class="callout info">
+  <span class="callout-icon">🚄</span>
+  <div class="callout-body">
+    <p class="callout-title">서울에서 KTX 2시간 30분, 1박 2일 러닝 여행 추천 코스</p>
+    <ul>
+      <li><strong>1일차 오후 도착 → 광안리 야간 러닝</strong> (해변 + 광안대교 조명) — 저녁 광안리 횟집·맛집</li>
+      <li><strong>2일차 새벽 → 이기대 갈맷길</strong> (오륙도 일출 → 광안대교 풍경) — 오전 카페</li>
+      <li><strong>2일차 오전 → 해운대 + 미포철도길</strong> (해변 + 옛 철도 부지) — 점심 후 KTX 복귀</li>
+    </ul>
+    <p>총 약 20~25km 러닝 + 부산 대표 풍경 3개. 한 주 훈련량을 부산 러닝 여행으로 채우는 패턴이 한국 러닝 커뮤니티에서 인기.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 부산 러닝과 서울 러닝의 차이는?</h3>
+<p>서울은 한강 중심의 평지 코스가 압도적, 부산은 <strong>바다·산·강·도심을 5km 이내에 결합</strong>한 다양성이 강점. 같은 1주일에 해변·트레일·강변·도심 코스 모두 경험 가능한 도시는 한국에서 부산뿐. 단 부산은 여름 폭염·습도가 서울보다 심해 새벽·야간 러닝 비중이 더 큽니다.</p>
+
+<h3>Q. 부산 마라톤 대회는 어떤 게 있나요?</h3>
+<p>주요 대회: <strong>부산 비치 울트라마라톤</strong>(여름 해변 야간), <strong>부산 마라톤</strong>(가을), <strong>이기대 갈맷길 트레일</strong>, <strong>해운대 마라톤</strong>(봄). 부산 거주가 아니어도 KTX로 1박 2일 참가 가능. <a href="/marathon">전체 마라톤 일정 →</a></p>
+
+<h3>Q. 8월 부산 여름에 뛸 만한가요?</h3>
+<p>낮 30도 후반 + 습도 80%+로 한국에서 가장 힘든 러닝 환경. <strong>새벽 5~6AM 또는 저녁 8~9PM 이후</strong>만 안전. 광안리·해운대 야간 러닝이 사실상 유일한 선택지. 8월엔 LSD보다 짧은 이지런 위주 권장.</p>
+
+<h3>Q. 이기대 갈맷길 안전한가요?</h3>
+<p>맑은 날 + 낮 시간대는 안전. <strong>비 직후·야간·단독 러닝은 비추</strong>. 절벽·바위 미끄러움 + 낙석 위험. 2인 이상 동행, 트레일 신발 또는 접지력 좋은 안정화 신발 권장. 무릎 약한 러너는 절벽 구간만 워킹.</p>
+
+<h3>Q. 가족·아이와 함께 갈 만한 코스는?</h3>
+<p>부산시민공원·광안리 해변·송정 해변·을숙도 생태공원이 가장 가족 친화적 (시설·화장실·카페 풍부). 해운대 동백섬 둘레도 OK. <strong>이기대·태종대 절벽 구간은 아이와 비추</strong>.</p>
+
+<h3>Q. 부산 러닝 클럽이나 동호회가 있나요?</h3>
+<p>부산 거주 러너 인스타·네이버 카페로 검색하면 광안리·해운대·시민공원 기반 정규 모임 많음. 매주 토요일 오전 광안리 그룹런이 가장 활발. 부산 마라톤 대회 시즌(9~11월)엔 페이스 메이커 모임도 활발.</p>
+
+<h2>결론 — 부산은 한국 러너의 두 번째 본진</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">서울에서 KTX 2시간 30분, 부산은 그만한 가치가 있는 러닝 도시</p>
+    <p>부산은 단순한 "지방 도시"가 아니라 한국에서 <strong>가장 다양한 러닝 환경</strong>을 가진 곳입니다. 광안리 야경 + 이기대 절벽 + 미포철도길 + 을숙도 강변 — 같은 도시에서 이만큼 풍경이 다른 코스를 만나기 어렵습니다.</p>
+    <p>부산 거주 러너라면 위 7개 코스 중 본인 거주지에서 가까운 1~2개를 평일 데일리로 + 주말은 다른 동네 코스로 변화 주는 패턴이 좋고, 타지 거주자라면 <strong>1박 2일 러닝 여행 + 부산 마라톤 참가</strong>로 한 번에 잡는 것이 효율적.</p>
+    <p>서울 이색 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 가이드</a>에서, 본인 발 특성·부상 이력에 맞춘 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 — 한강 외 명소 정리</a></li>
+  <li><a href="/blog/yeouido-sweet-potato-gps-art-run">여의도 고구마 런 — GPS 아트 러닝 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 부산 7개 코스 실주 사용기 + 부산광역시 갈맷길·태종대 자연공원 공식 자료 + 부산 러닝 커뮤니티(인스타·네이버 카페) 인기 코스 분석. 코스 정보는 시기·날씨에 따라 변동될 수 있으니 방문 전 공원 운영시간·갈맷길 통행 가능 여부 확인 권장. 거리는 GPS 측정값 기준이며 출발 지점에 따라 ±0.5km 변동 가능.</small></p>
+`,
+  },
+  {
+    id: 'yeouido-sweet-potato-gps-art-run',
+    slug: 'yeouido-sweet-potato-gps-art-run',
+    title: '여의도 고구마 런 완전 가이드 | 한 바퀴 6km, GPS에 고구마가 그려지는 러닝 — Strava 인증·코스·페이스',
+    description: '여의도 한강공원 외곽 한 바퀴를 돌면 Strava·Garmin Connect 지도에 고구마 모양이 그려지는 한국 러닝 커뮤니티 인기 챌린지. 출발지·거리(약 6km)·노면·시간대·인증 방법·페이스 가이드 + 다른 GPS 아트 러닝 사례까지 한 번에 정리.',
+    thumbnail: '/images/blog/yeouido-sweet-potato-gps-art-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['여의도 고구마 런', 'GPS 아트', '러닝 챌린지', '여의도 한강공원', 'Strava', '러닝 인증', '서울 러닝', '한강 러닝', '이색 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>여의도 한강공원 외곽 한 바퀴 = 약 6km</strong> — 시계방향·반시계방향 모두 가능, 평지 + 잘 정비된 산책로</li>
+    <li>완주하면 <strong>Strava·Garmin Connect GPS 지도에 정확히 고구마 모양이 그려짐</strong> — 인스타·러닝 커뮤니티 인증샷 1위 챌린지</li>
+    <li>여의나루역 1번 출구 출발 + 30~40분 페이스 권장. <strong>인파 적은 새벽 6AM 또는 평일 늦은 저녁 9PM 이후</strong>가 깨끗한 GPS 트랙에 유리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🍠</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 "고구마 런"인가</p>
+    <p>여의도는 한강 가운데에 위치한 인공섬으로, <strong>섬 외곽선이 자연스럽게 길쭉한 타원형 (고구마 모양)</strong>입니다. 동서로 약 2.4km, 남북으로 약 0.6km. 외곽 산책로 한 바퀴를 정확히 돌면 GPS 트랙이 고구마 형태로 닫힌 도형을 그립니다. 한국 러닝 커뮤니티(Strava 클럽·인스타 러닝러 그룹)에서 자연발생적으로 만들어진 인증 챌린지로, 2023년 무렵부터 본격 인기.</p>
+  </div>
+</div>
+
+<h2>한눈에 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>거리</strong></td><td>약 6km (한 바퀴) / 약 12km (두 바퀴 = "왕 고구마")</td></tr>
+    <tr><td><strong>출발지 권장</strong></td><td>여의나루역 1번 출구 (한강공원 진입 가장 빠름)</td></tr>
+    <tr><td><strong>대체 출발지</strong></td><td>여의도역 5번 출구 / 국회의사당역 6번 출구</td></tr>
+    <tr><td><strong>노면</strong></td><td>아스팔트 + 일부 보도블록 (전 구간 잘 정비됨)</td></tr>
+    <tr><td><strong>난이도</strong></td><td>하 (전 구간 평지)</td></tr>
+    <tr><td><strong>추천 페이스</strong></td><td>5:30~6:30/km (즐기는 페이스) / 4:30~5:00/km (페이스 훈련)</td></tr>
+    <tr><td><strong>예상 시간</strong></td><td>33~40분 (이지런) / 27~30분 (페이스 훈련)</td></tr>
+    <tr><td><strong>추천 시간대</strong></td><td>새벽 6AM 또는 평일 저녁 9PM 이후 (인파·자전거 적음)</td></tr>
+    <tr><td><strong>인증 도구</strong></td><td>Strava / Garmin Connect / 코로스 / 폴라 (GPS 정확도 ↑)</td></tr>
+    <tr><td><strong>핵심 인증샷 명소</strong></td><td>63빌딩 앞 (남측) · 서강대교 아래 · 원효대교 아래 · 국회의사당 (북측)</td></tr>
+  </tbody>
+</table>
+
+<h2>코스 상세 — 시계방향 한 바퀴 (권장)</h2>
+
+<p><strong>출발지</strong>: 여의나루역 1번 출구 → 한강공원 진입 (도보 3분)</p>
+
+<p>여의나루역 1번 출구에서 한강공원으로 내려가서 <strong>시계방향</strong>으로 출발하는 것이 권장됩니다. 자전거 진행 방향과 같아 안전하고, GPS 트랙도 깔끔하게 닫힙니다.</p>
+
+<h3>구간별 풍경 (시계방향 기준)</h3>
+
+<ol>
+  <li><strong>0~1.5km: 동쪽 → 북쪽 (서강대교 방향)</strong> — 출발 직후 한강 동측을 따라 북상. 마포대교·서강대교 차례로 통과. 강남 방면 한강 풍경.</li>
+  <li><strong>1.5~3km: 북쪽 → 서쪽 (국회의사당 방향)</strong> — 여의도 북측 산책로. 국회의사당 정면을 옆으로 끼고 진행. <strong>인증샷 포인트 1번</strong>: 국회의사당 + 한강 배경.</li>
+  <li><strong>3~4.5km: 서쪽 → 남쪽 (원효대교 방향)</strong> — 여의도 서측 끝 돌아서 남측 진입. 원효대교 통과. 강서·여의도 동측 빌딩 군 풍경.</li>
+  <li><strong>4.5~6km: 남쪽 → 동쪽 (63빌딩 → 출발지)</strong> — 여의도 남측 한강공원 따라 동진. <strong>인증샷 포인트 2번</strong>: 63빌딩 앞. 출발지(여의나루역)로 복귀.</li>
+</ol>
+
+<p><strong>예상 거리</strong>: GPS 측정값 기준 약 5.8~6.2km (지점에 따라 ±0.3km). 두 바퀴 돌면 약 12km로 "왕 고구마" 챌린지 가능.</p>
+
+<h2>GPS 아트 인증 방법</h2>
+
+<h3>1. 앱·기기 준비</h3>
+
+<ul>
+  <li><strong>Strava (가장 인기)</strong> — 무료. 운동 끝나면 자동으로 지도 위에 트랙 표시. 인스타 공유 기능 강력.</li>
+  <li><strong>Garmin Connect</strong> — 가민 GPS 시계 사용자. Strava 연동 가능.</li>
+  <li><strong>코로스·폴라·애플 워치</strong> — 각 앱에서 동일하게 GPS 트랙 기록.</li>
+  <li><strong>스마트폰만</strong> — Strava 모바일 앱으로도 가능 (단 GPS 정확도가 시계보다 낮음).</li>
+</ul>
+
+<h3>2. 깨끗한 GPS 트랙 만드는 팁</h3>
+
+<ul>
+  <li><strong>GPS 신호 안정화 후 출발</strong> — 시계가 위성 잡을 시간 30초~1분 주기. 출발 전 한강공원 입구에서 잠깐 대기.</li>
+  <li><strong>고가도로·다리 아래 GPS 튐 주의</strong> — 마포대교·서강대교·원효대교 통과 시 GPS가 흔들릴 수 있음. 가능한 빠르게 통과.</li>
+  <li><strong>스마트폰은 윗 주머니 또는 암밴드</strong> — 신호 가리지 않게.</li>
+  <li><strong>일정한 페이스 유지</strong> — 일관된 페이스가 깔끔한 트랙 만듦.</li>
+</ul>
+
+<h3>3. 인증샷 공유</h3>
+
+<ul>
+  <li><strong>Strava 운동 화면</strong>: 운동 종료 후 → "지도" 탭 → 캡처 → 인스타 스토리·피드</li>
+  <li><strong>해시태그</strong>: #여의도고구마런 #yeouidosweetpotato #stravaart #gpsart #한강러닝 (한국 러닝 커뮤니티 인기 태그)</li>
+  <li><strong>러닝 클럽 인증</strong>: 동호회·매장 주최 챌린지에서 인증 수단으로 활용</li>
+</ul>
+
+<h2>다른 GPS 아트 러닝 사례</h2>
+
+<h3>한국</h3>
+<ul>
+  <li><strong>잠실 종합운동장 둥근 트랙</strong> — 동그라미·반달 모양 그리기 가능. 잠실역 출발.</li>
+  <li><strong>올림픽공원 평화의 광장</strong> — 1.8km 둘레 + 외곽 결합으로 8자·꽃 모양 가능.</li>
+  <li><strong>북서울꿈의숲</strong> — 강북구 GPS 아트 명소. 약 3.5km 둘레 + 내부 산책로 결합으로 다양한 형태.</li>
+  <li><strong>월드컵공원 + 하늘공원</strong> — 평화의 광장 + 하늘공원 결합으로 큰 그림 가능.</li>
+</ul>
+
+<h3>해외 — Strava Art 글로벌</h3>
+<ul>
+  <li><strong>도쿄 + 런던</strong> — 도시 격자를 활용해 글자·동물 그리는 GPS 아트 챌린지 활발</li>
+  <li><strong>Strava 공식 챌린지</strong> — 매년 글자·심볼 그리는 전 세계 이벤트 진행</li>
+</ul>
+
+<h2>어울리는 러닝화 — 평지 6km 데일리에 맞춰</h2>
+
+<p>여의도 고구마 런은 전 구간 평지 + 잘 정비된 아스팔트라 <strong>가벼운 데일리 트레이너</strong>가 가장 잘 맞습니다.</p>
+
+<ul>
+  <li><strong>가성비 + 통기성 (여름 한강 추천)</strong>: <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a> (13~14만원 이월) · <a href="/shoes/nike-pegasus-41">페가수스 41</a> (13만원대 이월)</li>
+  <li><strong>발볼 넓은 한국 러너</strong>: <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (4E 와이드) · <a href="/shoes/saucony-ride-19">라이드 19</a> (전족부 +10mm 확장)</li>
+  <li><strong>맥스 쿠션 + 무릎 보호</strong>: <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></li>
+  <li><strong>페이스 훈련 겸용 (4:30/km 이하)</strong>: <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></li>
+</ul>
+
+<p>본인 발 특성·부상 이력 맞춤은 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. 정말 고구마처럼 그려지나요?</h3>
+<p>네, 여의도 외곽선이 자연스럽게 길쭉한 타원형이라 GPS 트랙이 닫힌 고구마 형태로 그려집니다. <strong>일관된 페이스 + 깔끔한 코스 유지</strong>가 비결. 다리 아래 GPS 튐만 조심하면 깨끗한 고구마 모양 나옵니다.</p>
+
+<h3>Q. 자전거랑 부딪힐 위험은?</h3>
+<p>여의도 한강공원은 <strong>자전거도로와 산책로가 분리</strong>돼 있어 비교적 안전. 단 일부 구간 자전거가 산책로 쪽으로 침범하기도 합니다. 야간·새벽이 가장 안전.</p>
+
+<h3>Q. 두 바퀴(왕 고구마) 도전할 만한가요?</h3>
+<p>약 12km라 LSD 훈련용으로 적합. 단 <strong>같은 풍경 반복</strong>이라 정신적으로 지루할 수 있음. 첫 바퀴 시계방향 + 두 번째 바퀴 반시계방향으로 변화 주는 것도 방법. 평일 저녁 또는 주말 새벽 추천.</p>
+
+<h3>Q. 비 오는 날 가능한가요?</h3>
+<p>전 구간 평지·아스팔트라 비 직후도 큰 문제 없음. 단 <strong>잠수교 다리는 잠길 수 있으니</strong> 여의도→반포 한강공원 연결 경로는 비 직후 회피. GPS 신호는 비와 무관하게 정상 작동.</p>
+
+<h3>Q. 처음 가는데 길 잃을까 걱정돼요</h3>
+<p>여의도 한강공원 외곽 산책로는 <strong>한 방향으로 계속 진행하면 자연스럽게 출발지로 복귀</strong>합니다. 길 잃을 가능성 거의 없음. 분기점에선 항상 한강 쪽으로 진행. 첫 시도면 새벽이나 평일 저녁(밝은 시간대)이 안심.</p>
+
+<h3>Q. 인증샷 어디서 찍는 게 좋나요?</h3>
+<p>3가지 핵심 포인트: ① <strong>63빌딩 앞 (남측 구간)</strong> — 빌딩 + 한강 배경, ② <strong>국회의사당 옆 (북측)</strong> — 한국 랜드마크 인증, ③ <strong>완주 후 Strava 지도 캡처</strong> — 고구마 모양 인증샷.</p>
+
+<h2>결론 — 처음이면 한 바퀴부터, 인증샷은 필수</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">여의도 고구마 런은 "재미 + 인증 + 운동" 다 잡는 코스</p>
+    <p>처음 도전하면 <strong>새벽 6AM 또는 평일 저녁 9PM 이후 시계방향 한 바퀴</strong>(약 6km, 33~40분)부터 추천. 일관된 페이스 유지 + 다리 아래 GPS 튐만 조심하면 깔끔한 고구마 트랙 완성.</p>
+    <p>인증샷은 63빌딩·국회의사당·완주 후 Strava 지도 캡처 3종 세트. 인스타 #여의도고구마런 #stravaart 해시태그로 한국 러닝 커뮤니티에 공유하면 동기부여 ↑.</p>
+    <p>여의도 외 다른 이색 서울 코스 6개는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 가이드</a>에서 정리했습니다.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선 — 한강 외 명소 정리</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 — 데일리 가성비 비교</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 가성비 데일리</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 여의도 고구마 런 다회 실주 사용기 + 여의도 한강공원 공식 안내 + Strava·Garmin Connect GPS 트랙 분석 + 한국 러닝 커뮤니티(인스타·네이버 카페) 인기 챌린지 패턴. 거리·코스 정보는 출발 지점·GPS 정확도에 따라 ±0.3km 변동 가능. 자전거·인파 상황은 시즌·시간대에 따라 다를 수 있음.</small></p>
+`,
+  },
+  {
+    id: 'seoul-unique-running-courses-7',
+    slug: 'seoul-unique-running-courses-7',
+    title: '서울 이색 러닝 코스 7선 | 한강 말고 이런 곳도 있어요 — 남산 차 없는 길부터 응봉산 야경까지',
+    description: '한강 자전거도로 말고 서울에서 진짜 뛸 만한 이색 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 남산 북측순환로·잠수교 야간·응봉산·양재천·월드컵공원·북서울꿈의숲·올림픽공원 코스별 출발지·주의점 가이드.',
+    thumbnail: '/images/blog/seoul-unique-running-courses-7.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['서울 러닝 코스', '이색 러닝', '남산 러닝', '잠수교 야간 러닝', '응봉산', '서울숲', '양재천', '월드컵공원', '북서울꿈의숲', '올림픽공원'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>한강 외에도 서울에 의외의 이색 코스 많음</strong> — 차 없는 산악 둘레길(남산·응봉산), 야간 명소(잠수교), 도심 속 숲(서울숲·꿈의숲), 강 외 강변(양재천)</li>
+    <li>7개 코스 모두 <strong>대중교통 30분 이내·러닝 후 카페·편의시설 인근</strong> — 평일 퇴근 후 1시간 러닝부터 주말 LSD 20km까지 활용 가능</li>
+    <li>각 코스별 <strong>출발지·거리·노면·시간대·주의점 + 어울리는 러닝화 카테고리</strong>까지 한 번에 정리</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 가이드의 사용법</p>
+    <p>각 코스마다 <strong>출발지(지하철 출구) · 코스 길이 · 추천 시간대 · 노면 · 주의점</strong>을 정리했습니다. 본인 거주지에서 가까운 코스 + 본인 러닝 목적(LSD·인터벌·이지런·트레일 입문)에 맞춰 골라 활용하세요. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>#</th><th>코스</th><th>거리</th><th>난이도</th><th>특이점</th><th>추천 시간대</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>남산 북측순환로</strong></td><td>약 7.5km (왕복)</td><td>중 (오르막 있음)</td><td>차 없는 길 + 서울 한복판</td><td>토요일 오전 (8AM)</td></tr>
+    <tr><td>2</td><td><strong>한강 잠수교 야간</strong></td><td>5~10km (반복)</td><td>하</td><td>반포대교 무지개 분수 야간 조명</td><td>여름 저녁 8~10PM</td></tr>
+    <tr><td>3</td><td><strong>올림픽공원 평화의 광장</strong></td><td>1.8km × N바퀴</td><td>하</td><td>광활한 광장 + 5km 둘레길 결합</td><td>새벽 6AM~7AM</td></tr>
+    <tr><td>4</td><td><strong>서울숲 + 응봉산</strong></td><td>5~8km (조합)</td><td>중상 (응봉산 가파름)</td><td>도심 속 숲 + 야경 산악 결합</td><td>해질녘 (응봉산 야경)</td></tr>
+    <tr><td>5</td><td><strong>양재천 5km</strong></td><td>5~10km (왕복)</td><td>하</td><td>한강 외 강변 + 교통량 적음</td><td>퇴근 후 7~9PM</td></tr>
+    <tr><td>6</td><td><strong>월드컵공원 + 하늘공원</strong></td><td>5~7km</td><td>중 (하늘공원 언덕)</td><td>평화의 광장 + 야경 + 억새</td><td>가을 늦은 오후</td></tr>
+    <tr><td>7</td><td><strong>북서울꿈의숲</strong></td><td>약 3.5km 둘레</td><td>하~중</td><td>강북구 도심 속 숲 + 카페</td><td>평일 오전·주말 이른 아침</td></tr>
+  </tbody>
+</table>
+
+<h2>1. 남산 북측순환로 — 차 없는 서울 한복판 트레일 입문</h2>
+
+<p><strong>출발지</strong>: 동대입구역 6번 출구 → 국립극장 정문 (도보 5분)<br>
+<strong>거리</strong>: 약 7.5km (왕복 12km)<br>
+<strong>노면</strong>: 아스팔트 (포장도로, 단 차량 통제)<br>
+<strong>추천 시간대</strong>: 토요일 오전 8AM (보광정 수육런 코스로도 사용됨)</p>
+
+<p>국립극장 해오름극장에서 출발해 남산 북측순환로를 따라 도는 코스. <strong>차량 통제 구간</strong>이라 도심에서 흔치 않게 차 신경 안 쓰고 뛸 수 있고, 약 200m의 완만한 오르막이 자연스러운 트레일 입문 효과를 줍니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 코스 곳곳 N서울타워가 보이는 뷰. 봄·가을 단풍·벚꽃 시즌엔 트레일 러너들이 몰립니다. <a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런</a>처럼 가끔 이벤트도 열림.</p>
+
+<p><strong>주의점</strong>: 휴일 차량 통제 시간(보통 토·일 오전 7~10시) 외에는 차량이 지나갈 수 있으니 미리 확인. 화장실·생수는 국립극장 정문 근처가 마지막.</p>
+
+<p><strong>어울리는 러닝화</strong>: 약간 오르막이 있어 <strong>안정성·접지력</strong>이 있는 데일리 트레이너. <a href="/shoes/nike-pegasus-41">페가수스 41</a>·<a href="/shoes/saucony-ride-18">사우코니 라이드 18</a> 같은 표준 데일리화면 충분.</p>
+
+<h2>2. 한강 잠수교 야간 러닝 — 반포대교 무지개 분수 보면서</h2>
+
+<p><strong>출발지</strong>: 신반포역 3번 출구 → 잠수교 진입 (도보 8분)<br>
+<strong>거리</strong>: 5~10km (왕복 + 반포 한강공원 일부)<br>
+<strong>노면</strong>: 아스팔트 + 일부 보도블록<br>
+<strong>추천 시간대</strong>: 여름 저녁 8~10PM (반포대교 무지개 분수 가동 시간)</p>
+
+<p>잠수교(반포대교 아래)는 일반 차량이 다니지만 야간엔 차량 통행이 적고, 무엇보다 <strong>반포대교 무지개 분수</strong>가 야간에 가동돼 환상적인 풍경을 만듭니다. 무지개 분수는 4~10월 평일 12시·8시·9시·10시 정각 약 20분씩.</p>
+
+<p><strong>이 코스의 매력</strong>: 한강의 야간 풍경 + 시원한 바람 + 반포 한강공원에서 휴식 가능. 인증샷 포인트 많음. 인스타 러닝 인플루언서들도 많이 가는 코스.</p>
+
+<p><strong>주의점</strong>: 잠수교는 비 오는 날 잠길 수 있으니 우천 시 회피. 야간엔 자전거 속도 빠른 곳도 있어 차선 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 위주라 가벼운 데일리화. <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/saucony-ride-19">사우코니 라이드 19</a> 같은 통기성 좋은 모델이 여름밤 러닝에 쾌적.</p>
+
+<h2>3. 올림픽공원 평화의 광장 — 광활한 광장 + 둘레길 결합</h2>
+
+<p><strong>출발지</strong>: 올림픽공원역 3번 출구 → 평화의 광장 (도보 3분)<br>
+<strong>거리</strong>: 1.8km × N바퀴 (둘레 약 5km)<br>
+<strong>노면</strong>: 우레탄 트랙 + 아스팔트<br>
+<strong>추천 시간대</strong>: 새벽 6~7AM (사람 적고 공기 좋음)</p>
+
+<p>올림픽공원은 광활한 평화의 광장(약 1.8km 둘레)을 중심으로 외곽 둘레길 약 5km까지 결합 가능. <strong>우레탄 트랙 구간</strong>이 일부 있어 인터벌 훈련에도 적합.</p>
+
+<p><strong>이 코스의 매력</strong>: 잔디·나무 많아 아스팔트 부담 ↓. 88올림픽 조각상·평화의 광장 광활함이 정서적으로 시원함. 카페·편의점 인근.</p>
+
+<p><strong>주의점</strong>: 주말 오전엔 가족 단위 방문객 많아 빠른 페이스 어려움. 새벽이나 평일 저녁 추천. 광장 외 구간은 일반 아스팔트라 신발 선택에 주의.</p>
+
+<p><strong>어울리는 러닝화</strong>: 우레탄 트랙 + 아스팔트 혼합이라 <strong>다목적 데일리</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 같은 슈퍼트레이너로 인터벌 훈련도 가능.</p>
+
+<h2>4. 서울숲 + 응봉산 — 도심 속 숲 + 야경 산악 결합</h2>
+
+<p><strong>출발지</strong>: 서울숲역 3번 출구 → 서울숲 (도보 5분) → 응봉산 (도보 10분)<br>
+<strong>거리</strong>: 5~8km (서울숲 둘레 + 응봉산 정상 왕복)<br>
+<strong>노면</strong>: 흙길 + 일부 계단 (응봉산)<br>
+<strong>추천 시간대</strong>: 해질녘 (응봉산 야경 + 서울숲 산책)</p>
+
+<p>서울숲(약 35만평 도심 속 숲) 둘레를 한 바퀴 돈 다음 <strong>응봉산 정상(94m)</strong>까지 올라가는 결합 코스. 응봉산은 짧지만 가파른 등산로로, 트레일 러닝 입문에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 응봉산 정상에서 <strong>한강·서울숲·강남 야경</strong>이 한눈에 들어옵니다. 서울에서 가장 가성비 좋은 야경 포인트. 봄 개나리, 여름 녹음, 가을 단풍 시즌이 특히 좋음.</p>
+
+<p><strong>주의점</strong>: 응봉산 정상부는 가파르고 계단이 많아 무릎 약한 러너는 비추 (걷기 권장). 비 온 직후엔 흙길 미끄러움 주의. 야간엔 가로등이 일부 없는 구간도 있어 헤드램프 권장.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+산악 결합이라 <strong>안정성·접지력 우수한 모델</strong>. <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>·<a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> 같은 안정·맥스 쿠션이 좋음. 응봉산 흙길 때문에 카본 슈즈는 비추.</p>
+
+<h2>5. 양재천 5km — 한강 외 강변 + 교통량 적음</h2>
+
+<p><strong>출발지</strong>: 양재시민의숲역 1번 출구 → 양재천 (도보 3분)<br>
+<strong>거리</strong>: 5~10km (왕복)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 퇴근 후 7~9PM</p>
+
+<p>양재천은 한강 외 서울의 대표적 도시 강. <strong>한강 자전거도로보다 자전거·인파 적어 페이스 유지하기 좋음</strong>. 양재시민의숲에서 시작해 강남 한복판까지 이어집니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 봄 벚꽃·여름 녹음이 인상적. <strong>강 양쪽에 잘 정비된 산책로</strong>가 있어 왕복으로 페이스 조절 가능. 카페 거리·매봉터널 근처에서 휴식 가능.</p>
+
+<p><strong>주의점</strong>: 일부 구간 가로등 어두운 곳 있음. 너무 늦은 야간은 비추. 비 오는 날 일부 저지대는 잠길 수 있음.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지 가성비 데일리. <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a>(15만원대)·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 이월(13만원대)이 가성비 정답.</p>
+
+<h2>6. 월드컵공원 + 하늘공원 — 평화의 광장 + 야경 + 가을 억새</h2>
+
+<p><strong>출발지</strong>: 월드컵경기장역 1번 출구 → 월드컵공원 (도보 5분)<br>
+<strong>거리</strong>: 5~7km (월드컵공원 둘레 + 하늘공원 왕복)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길 (하늘공원 입구 계단 + 정상부)<br>
+<strong>추천 시간대</strong>: 가을 늦은 오후 (억새 시즌 + 노을)</p>
+
+<p>월드컵공원 평화의 광장을 한 바퀴 돈 다음 <strong>하늘공원(98m)</strong>까지 올라가는 결합 코스. 하늘공원은 쓰레기 매립지를 공원으로 만든 곳으로, <strong>광활한 억새밭</strong>이 특징.</p>
+
+<p><strong>이 코스의 매력</strong>: 가을 9~10월 <strong>억새 축제</strong> 시기엔 사진 명소. 하늘공원 정상에서 한강·여의도·강남 전경. 응봉산보다 완만한 오르막이라 산악 입문에 더 친절.</p>
+
+<p><strong>주의점</strong>: 하늘공원 입구 약 290계단은 러닝으로 오르기 어려움 (걷기 권장). 정상부는 풀숲·나무로 가로등 부족.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+오르막 결합. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> 같은 맥스 쿠션이 계단 후 무릎 보호에 좋음.</p>
+
+<h2>7. 북서울꿈의숲 — 강북구 도심 속 숲 + 카페</h2>
+
+<p><strong>출발지</strong>: 4·19민주묘지역 1번 출구 → 북서울꿈의숲 정문 (도보 10분)<br>
+<strong>거리</strong>: 약 3.5km 둘레 + 내부 산책로 (총 5~7km 가능)<br>
+<strong>노면</strong>: 아스팔트 + 일부 흙길<br>
+<strong>추천 시간대</strong>: 평일 오전·주말 이른 아침</p>
+
+<p>강북구의 옛 드림랜드 부지를 공원으로 만든 곳. <strong>강북·도봉·노원 거주 러너들의 비밀 명소</strong>. 한강·올림픽공원 같은 인기 코스보다 한적해서 페이스 유지에 좋습니다.</p>
+
+<p><strong>이 코스의 매력</strong>: 도심 속 숲인데도 잘 정비된 산책로 + 카페·전망대·창포원 등 시설 완비. 봄 벚꽃·가을 단풍이 예쁘고 사진 명소도 많음. <strong>강북 거주자라면 한강까지 안 가도 충분한 러닝 환경</strong>.</p>
+
+<p><strong>주의점</strong>: 일부 구간 좁은 산책로라 빠른 페이스는 어려움. 가족 단위 방문객 많은 주말 오후는 비추.</p>
+
+<p><strong>어울리는 러닝화</strong>: 평지+산책로 위주. <a href="/shoes/saucony-ride-19">라이드 19</a>·<a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> 같은 가벼운 데일리화면 충분.</p>
+
+<h2>본인 거주지·목적별 추천 코스</h2>
+
+<table>
+  <thead>
+    <tr><th>거주지</th><th>이지런</th><th>LSD (15km+)</th><th>인터벌·페이스 훈련</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>강북·도봉·노원</td><td>북서울꿈의숲</td><td>북서울꿈의숲 + 우이천 결합</td><td>북서울꿈의숲 둘레 반복</td></tr>
+    <tr><td>중구·종로·용산</td><td>남산 북측순환로</td><td>남산 + 한강 결합</td><td>남산 오르막 반복 (힐 트레이닝)</td></tr>
+    <tr><td>마포·서대문</td><td>월드컵공원</td><td>월드컵공원 + 하늘공원 + 한강</td><td>월드컵공원 둘레 + 평화의 광장</td></tr>
+    <tr><td>강남·서초</td><td>양재천</td><td>양재천 + 한강 결합</td><td>양재시민의숲 트랙</td></tr>
+    <tr><td>송파</td><td>올림픽공원</td><td>올림픽공원 + 한강 결합</td><td>올림픽공원 평화의 광장 반복</td></tr>
+    <tr><td>성동·광진</td><td>서울숲</td><td>서울숲 + 응봉산 + 한강 결합</td><td>응봉산 오르막 반복 (힐 트레이닝)</td></tr>
+  </tbody>
+</table>
+
+<h2>이런 코스 뛸 때 필요한 러닝화 카테고리</h2>
+
+<ul>
+  <li><strong>평지 데일리 (양재천·잠수교·꿈의숲)</strong>: 가성비 데일리화. <a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 비교</a> · <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교</a></li>
+  <li><strong>오르막 + 산악 (남산·응봉산·하늘공원)</strong>: 안정성 + 접지력. <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a> · <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a></li>
+  <li><strong>장거리 LSD (15km+)</strong>: 맥스 쿠션. <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교</a></li>
+  <li><strong>인터벌·페이스 훈련 (올림픽공원·트랙)</strong>: 슈퍼트레이너 또는 가성비 카본. <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a> · <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 비교</a></li>
+</ul>
+
+<h2>보너스 — GPS 아트 러닝 (여의도 고구마 런)</h2>
+
+<div class="callout info">
+  <span class="callout-icon">🍠</span>
+  <div class="callout-body">
+    <p class="callout-title">완주하면 GPS에 고구마가 그려지는 러닝</p>
+    <p>위 7개 코스가 "어디서 뛰느냐"의 선택지라면, <strong>여의도 고구마 런</strong>은 한국 러닝 커뮤니티가 좋아하는 <strong>"뛰면 지도에 그림이 그려지는"</strong> GPS 아트 러닝의 대표 코스입니다. 여의도 한강공원 외곽선이 고구마 모양이라, Strava·Garmin Connect로 한 바퀴 돌면 정확히 고구마가 그려져요. 약 6~7km 코스 + 평지 + 인증샷까지 한 방에 가능. <strong>상세 가이드는 <a href="/blog/yeouido-sweet-potato-gps-art-run">여의도 고구마 런 완전 가이드</a></strong>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>FAQ</h2>
+
+<h3>Q. 한강 자전거도로보다 이 코스들이 정말 좋은가요?</h3>
+<p>"좋다"기보다 <strong>"다른 매력이 있다"</strong>가 맞습니다. 한강은 거리 확보·평지·인프라가 우월하지만, 위 7개 코스는 <strong>차 없는 길·숲·산악·야경·한적함</strong> 등 한강에 없는 요소를 제공합니다. 한강 위주로만 뛰던 분들에게 변화·동기부여 차원에서 추천.</p>
+
+<h3>Q. 야간 러닝 안전한가요?</h3>
+<p>잠수교·올림픽공원·꿈의숲은 비교적 안전 (가로등·CCTV·인적). <strong>응봉산·하늘공원 정상부는 야간 비추</strong> (가로등 없는 구간 있음). 야간 러닝 시 <strong>반사 조끼·헤드램프</strong> 필수, 가능하면 2인 이상 동행.</p>
+
+<h3>Q. 비 오는 날 어떤 코스가 좋나요?</h3>
+<p>잠수교는 잠길 수 있으니 회피. <strong>올림픽공원·서울숲·북서울꿈의숲</strong>은 일부 구간 비를 피할 수 있는 나무 그늘이나 처마 있음. 단 미끄러운 흙길은 비 직후 피하고, 우천용 신발 (방수 또는 빨리 마르는 메쉬) 권장.</p>
+
+<h3>Q. 가족·아이와 함께 갈 만한 코스는?</h3>
+<p>올림픽공원·북서울꿈의숲이 가장 가족 친화적 (시설·화장실·카페 풍부). 양재천도 안전한 산책 코스. 남산·응봉산·하늘공원은 오르막이 있어 아이와는 비추.</p>
+
+<h3>Q. 마라톤 훈련용으로 어떤 코스가 적합한가요?</h3>
+<p>LSD(롱런)는 한강 결합이 가장 효율적이라 양재천·서울숲·월드컵공원에서 한강으로 빠지는 게 좋음. 페이스 훈련은 올림픽공원 평화의 광장 1.8km 반복이 트랙처럼 활용 가능. 힐 트레이닝은 남산·응봉산 오르막 반복. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 →</a></p>
+
+<h2>결론 — 본인 거주지·목적에 맞춰 골라 가세요</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">한강 외에도 서울 곳곳에 좋은 코스가 있습니다</p>
+    <p>한강 자전거도로는 분명 좋지만, <strong>매번 같은 풍경은 동기부여 떨어뜨립니다</strong>. 위 7개 코스 중 본인 거주지에서 가까운 1~2개를 한강과 번갈아 가며 활용하면 러닝 루틴이 훨씬 풍성해집니다.</p>
+    <p>특히 <strong>남산 북측순환로 토요일 오전</strong>과 <strong>잠수교 여름 야간 무지개 분수</strong>는 한 번쯤 꼭 경험해보길 추천. 사진·동기부여·일상 환기 모두 좋습니다.</p>
+    <p>본인 발 특성·부상 이력에 맞춰 러닝화 후보를 받으시려면 <a href="/recommend">1분 러닝화 추천</a>을 활용하세요.</p>
+  </div>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런 — 남산 북측순환로 펀런 이벤트</a></li>
+</ul>
+
+<p><small>출처: 산초 에디터 서울 7개 코스 실주 사용기 + 서울시 한강사업본부·공원녹지국 공식 자료 + 보광정 수육런 코스 안내(2026) + 인스타 러닝 커뮤니티 인기 코스 분석. 코스 정보는 시기·날씨에 따라 변동될 수 있으니 방문 전 공원 운영시간·차량 통제 시간 확인 권장.</small></p>
+`,
+  },
+  {
+    id: 'saucony-ride-18-vs-19-comparison',
+    slug: 'saucony-ride-18-vs-19-comparison',
+    title: '사우코니 라이드 18 vs 19 비교 | 부드러워진 신상 19 살까, 통기성 5/5 가성비 18 살까',
+    description: '라이드 18(255g/159,000원)과 19(255g/179,000원)을 풀데이터로 직접 비교. SCF PWRRUN+ 폼 개선 + 전족부 10mm 확장 + 내구성 600 → 700km. 사우코니 데일리 트레이너 입문에 18과 19 중 누가 답인지 상황별 매트릭스.',
+    thumbnail: '/images/blog/saucony-ride-18-vs-19-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['사우코니 라이드', '라이드 18', '라이드 19', '러닝화 비교', '사우코니', '입문화', '데일리 트레이너', '가성비 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>모든 면에서 점진적 개선의 신상 19</strong> (18 ₩159,000 / 19 ₩179,000) — 무게는 255g 동일하지만 폼·핏·내구성 3개 동시 보강</li>
+    <li>19의 진짜 변화 3가지: <strong>SCF PWRRUN+ 폼 (단단함 → 부드러움)</strong> + <strong>전족부 토박스 +10mm 확장 (한국 발볼 친절)</strong> + <strong>내구성 600 → 700km (km당 ₩265 → ₩256)</strong></li>
+    <li>18 이월 13~14만원대 vs 19 정가 17만 9천원. <strong>가성비는 18 압승, 발볼 넓음 + 부드러움 우선이면 19</strong>가 답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>사우코니 한국 공식몰 가격(2026-05-25 기준) + 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / HA 26.1 등 Lab 측정치) + 산초 에디터 데일리 한강 5~7km 사용 비교. 양 신발 단독 분석은 <a href="/shoes/saucony-ride-18">라이드 18 상세</a> · <a href="/shoes/saucony-ride-19">라이드 19 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>라이드 18</th><th>라이드 19</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>179,000원</strong></td><td>+20,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>130,000~145,000원</strong></td><td>165,000~175,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>255g</td><td>255g</td><td><strong>동일</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>35mm</td><td>36mm</td><td>+1mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>26.6mm</td><td>28mm</td><td>+1.4mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8.4mm (실측)</td><td>8mm</td><td>거의 동일</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>PWRRUN+</td><td><strong>SCF PWRRUN+ (개선 신소재)</strong></td><td>부드러움 ↑</td></tr>
+    <tr><td><strong>전족부 토박스</strong></td><td>표준</td><td><strong>+10mm 확장</strong></td><td>발볼 친절</td></tr>
+    <tr><td><strong>충격흡수 SA (힐)</strong></td><td>141</td><td>141급 (추정)</td><td>무릎 보호 우수 유지</td></tr>
+    <tr><td><strong>경도 HA</strong></td><td>26.1 (단단)</td><td>약간 낮아짐 추정</td><td>부드러움 ↑</td></tr>
+    <tr><td><strong>통기성</strong></td><td>5/5</td><td>5/5</td><td>최상위 유지</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>2E 있음</td><td>2E 있음</td><td>양쪽 모두 ✅</td></tr>
+    <tr><td><strong>내구성</strong></td><td>600km</td><td><strong>700km</strong></td><td>+100km</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩265</td><td><strong>약 ₩256</strong></td><td>-₩9 개선</td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>5:00~7:00/km</td><td>5:00~7:00/km</td><td>동일</td></tr>
+  </tbody>
+</table>
+
+<h2>19의 진짜 변화 3가지</h2>
+
+<h3>1. SCF PWRRUN+ 폼 — 단단함에서 부드러움으로</h3>
+
+<p>라이드 18의 PWRRUN+ 폼은 HA 26.1로 <strong>"단단하고 안정적"</strong>이 핵심 정체성이었습니다. 푹신함을 원하는 러너에겐 아쉬웠고, 일부는 "라이드는 가성비 좋은데 좀 더 부드러웠으면" 평가했습니다.</p>
+
+<p>19는 <strong>SCF PWRRUN+ (Super Critical Foam — 초임계 가스 주입 방식)</strong>으로 개선했습니다. 같은 PWRRUN+ 베이스지만 셀 구조가 더 미세하고 균일해져 <strong>착지 직후 부드러움 + 전환 시 반응성</strong>이 동시에 향상됐습니다. 18의 단단한 느낌이 부담스러웠다면 19가 답.</p>
+
+<h3>2. 전족부 토박스 +10mm 확장 — 한국 발볼에 결정적</h3>
+
+<p>라이드 18의 토박스는 "표준~넓은 편"이라 평가됐지만 한국 발볼 4E급 러너에게는 와이드 옵션 필수였습니다. 19는 <strong>전족부를 10mm 확장</strong>해 표준(D) 사이즈도 발볼 standard~약간 넓음까지 커버 가능.</p>
+
+<p><strong>실제 사용기</strong>: 18 와이드(2E) 신던 사용자가 19 표준(D)로 바꿔도 발가락 압박이 없다는 후기들. 한국 러너의 평균 발볼이 영미권보다 넓다는 점을 고려한 변화로 평가됩니다.</p>
+
+<h3>3. 내구성 600 → 700km — km당 비용 개선</h3>
+
+<p>전작 대비 <strong>아웃솔 내구성 +100km</strong>. 가격은 +20,000원 올랐지만 내구성 증가 폭이 더 커서 <strong>km당 비용은 ₩265 → ₩256으로 ₩9 개선</strong>됩니다. 신상이 가성비도 동시에 잡은 드문 케이스.</p>
+
+<p>주 3~5회 데일리 훈련 기준 700km는 약 6~8개월 사용 가능. 1년 1켤레 사이클에 정확히 맞아떨어집니다.</p>
+
+<h2>가격 시나리오 — 18 이월 vs 19 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 라이드 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 18 13~14만원 (이월 풀림) / 19 17~18만원 정가 → 가성비는 18 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 18 12~13만원 / 19 16~17만원 일부 할인 시작 → 18 가성비 정점</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 18 13만원 (재고 빠르게 감소) / 19 17만원 안정 → 18 사이즈 빠짐 주의</li>
+      <li><strong>블랙프라이데이 (11월):</strong> 18 10~12만원 (특가) / 19 14~15만원 → 양쪽 매력적</li>
+      <li><strong>12월~2027년 1월:</strong> 18 사실상 단종 임박 / 19 14~15만원 안정 → 19 위주로 흐름 전환</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>첫 러닝화 + 가성비 우선</td><td><strong>18 이월 13~14만원</strong></td><td>15만원 이하 진입 + 통기성 5/5 + km당 ₩265</td></tr>
+    <tr><td>발볼 4E급 또는 18 토박스 압박 경험</td><td><strong>19 정가 17~18만원</strong></td><td>전족부 +10mm 확장이 결정적</td></tr>
+    <tr><td>단단한 라이드 + 페이스 감각 선호</td><td>18</td><td>HA 26.1의 직진성·반응성 우위</td></tr>
+    <tr><td>부드러운 쿠셔닝 + 장거리</td><td>19</td><td>SCF PWRRUN+ 의 부드러움이 후반부 결정적</td></tr>
+    <tr><td>주 3~5회 데일리 훈련</td><td>19</td><td>700km 내구성 + km당 ₩256 가성비</td></tr>
+    <tr><td>한여름 한강·서울숲 러닝</td><td>둘 다 OK</td><td>통기성 5/5 양쪽 모두 최상위. 18이 약간 가성비 ↑</td></tr>
+    <tr><td>과내전·심한 평발</td><td>둘 다 비추</td><td>중립화. <a href="/shoes/saucony-guide-18">사우코니 가이드 18</a>(같은 사우코니 안정화) 또는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a></td></tr>
+  </tbody>
+</table>
+
+<h2>다른 데일리 트레이너와 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 26g 무거움 + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
+  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 라이드보다 20g 가벼움. 맥스 쿠션 + 강한 록커. 가격은 +4만원</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 230,000원)</strong> — 라이드보다 50g 무거움. 4E 와이드 + 진정한 맥스 쿠션. 가격 +5~7만원</li>
+  <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (272g, 179,000원)</strong> — 라이드와 동급 가격. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 18 → 19 업그레이드 가치 있나요?</h3>
+<p>18이 500km 안 신었다면 그냥 굴리세요. 18에 큰 불만 없으면 굳이 19로 갈 필요 없음. 반대로 <strong>"18이 단단해서 무릎이 좀 아팠다"</strong>거나 <strong>"토박스가 좁게 느껴졌다"</strong>면 19가 명확히 답. 폼 부드러움 + 토박스 확장 둘 다 그 불만을 직접 해결.</p>
+
+<h3>Q. 라이드와 페가수스 41 중 어느 게 좋나요?</h3>
+<p>가성비는 페가수스 41 이월(12~13만원)이 살짝 우위. <strong>무게 + 통기성 + 가격이라면 라이드 18</strong>(255g, 5/5, 13~14만원)이 답. 페가수스 41은 281g + 통기성 4/5. 여름 한강 러너라면 라이드 추천. 사이즈 자주 빠지는 페가수스 41과 달리 라이드 18은 아직 이월 재고 풍부합니다.</p>
+
+<h3>Q. 라이드는 풀코스 가능한가요?</h3>
+<p><strong>Sub-4 ~ Sub-5 완주 페이스라면 가능</strong>. 단 35mm 힐 스택은 30km 이후 후반 보호로는 살짝 부족할 수 있습니다. Sub-3:30 이하 도전이라면 카본 슈즈(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>) 또는 슈퍼트레이너(<a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2/3</a>) 분리 권장. 라이드는 본질적으로 데일리 + 입문 풀코스용입니다.</p>
+
+<h3>Q. 발볼 4E급 한국 러너인데 라이드 살 수 있나요?</h3>
+<p><strong>둘 다 와이드(2E) 옵션 있음</strong>. 19의 표준(D)도 18 2E와 비슷한 토박스 공간이라 발볼 표준~약간 넓음까지는 표준 사이즈로 OK. 4E 정도면 19 와이드(2E) 권장. 진짜 4E+라면 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(와이드).</p>
+
+<h3>Q. 라이드 18이 이월 풀려서 사이즈 잘 잡힐까요?</h3>
+<p>현재(5월 말)는 인기 사이즈(260~275mm) <strong>이월 재고 풍부</strong>. 페가수스 41 이월처럼 빠르게 빠지는 모델 아니라 7~8월 시즌오프 12~13만원 시점까지 충분히 기다릴 수 있습니다. 블프(11월) 10~12만원까지 가능성 있지만 그땐 사이즈 빠짐 주의.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">가성비·통기성 vs 부드러움·확장된 핏 — 본인 발 조건이 결정</p>
+    <p><strong>첫 사우코니 데일리 + 가성비 우선</strong>이라면 <a href="/shoes/saucony-ride-18">라이드 18</a> 이월 13~14만원이 거의 무조건 답. 페가수스 41보다 26g 가볍고, 통기성 5/5는 한국 여름 러닝에 결정적. 5만원대 절약은 가성비 카본 한 켤레 추가 가능한 차이.</p>
+    <p><strong>발볼 표준~넓음 + 부드러운 쿠셔닝 우선</strong>이라면 <a href="/shoes/saucony-ride-19">라이드 19</a> 정가 17~18만원. 전족부 +10mm + SCF PWRRUN+ 부드러움은 18의 단점을 정확히 해결. 700km 내구성으로 km당 ₩256 가성비도 우위.</p>
+    <p><strong>둘 다 처음이거나 결정 못 한다면</strong> 사우코니 오프라인 매장에서 양쪽 동시 시착이 가장 정확. 라이드 시리즈는 "부드러움 vs 단단함"의 미묘한 차이가 결정 포인트라 매장 비교가 답.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://link.coupang.com/a/dBKnfe" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">라이드 18 최저가 →</span>
+    </a>
+    <a href="https://link.coupang.com/a/dRV7Ln" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">라이드 19 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>라이드가 "사우코니 데일리 트레이너"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
+
+<ul>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 나이키 데일리 트레이너</a> (라이드 직접 경쟁자)</li>
+  <li><a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 — 맥스 쿠션</a> (장거리·무릎 보호 중시)</li>
+  <li><a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 — 가성비 카본 레이서</a> (페이스 훈련 분리용)</li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 같은 사우코니 카본</a> (레이스 분리용)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 4E 와이드 쿠션화</a> (발볼 4E급 대안)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
+</ul>
+
+<p><small>출처: 사우코니 한국 공식몰 가격(2026-05-25 기준) / 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / HA 26.1 등 Lab 측정치) / 산초 에디터 한강 5~7km 데일리 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'new-balance-860-v14-vs-v15-comparison',
+    slug: 'new-balance-860-v14-vs-v15-comparison',
+    title: '뉴발란스 860 v14 vs v15 비교 | 4E 와이드 사라진 신상 v15 살까, 평발 4종 옵션 v14 살까',
+    description: '860 v14(295g/179,000원)와 v15(330g/189,000원)을 풀데이터로 직접 비교. v15가 무거워지고(+35g) 와이드 옵션 축소(4종 → 1종) 등 후퇴한 부분 + 이중 밀도 폼·넓어진 힐 플랫폼 등 보강. 평발·과내전 한국 러너 안정화 가성비 매트릭스.',
+    thumbnail: '/images/blog/new-balance-860-v14-vs-v15-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 10,
+    tags: ['뉴발란스 860', '860 v14', '860 v15', '러닝화 비교', '뉴발란스', '안정화', '평발', '과내전', '와이드'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>"신상 = 좋다" 공식 깨지는 케이스</strong> (v14 ₩179,000 / v15 ₩189,000) — v15가 +35g 무거워지고 와이드 옵션 4종(Narrow/Standard/Wide/X-Wide) → 2E 1종으로 축소</li>
+    <li>v15의 진짜 변화 3가지: <strong>이중 밀도 Fresh Foam X (메디얼 포스트 → 듀얼 밀도 일체화)</strong> + <strong>3/4 EVA 필름 플레이트 (안정성 명시)</strong> + <strong>넓어진 힐 플랫폼 (장거리 안정성 ↑)</strong></li>
+    <li>발볼 4E급 평발 러너는 <strong>v14 X-Wide 이월 가격이 사실상 유일한 답</strong>. 발볼 표준~2E + 듀얼 폼 신소재 선호는 v15</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">v14 X-Wide(4E) 단종 임박 — 평발 4E급 러너 주의</p>
+    <p>v14의 가장 큰 강점이었던 <strong>4가지 발볼 옵션(N/D/2E/4E)</strong>이 v15에서는 표준(D) + 와이드(2E)만 남았습니다. 발볼 4E급 평발 러너는 v14 이월 X-Wide 사이즈가 빠지기 전에 잡는 것이 사실상 유일한 선택지입니다. 가을 시즌인 들어가면 4E 사이즈부터 사라집니다.</p>
+  </div>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>NB 한국 공식몰 가격(2026-05-25 기준) + 860 v14·v15 신발 DB 풀데이터(RunRepeat HA 10.9/23.8 듀얼 밀도 / 60.8% 에너지 리턴 / 93.6mm 광폭 힐 등 Lab 측정치) + Believe in the Run·산초 에디터 평발 러너 비교 사용기. 양 신발 단독 분석은 <a href="/shoes/new-balance-860-v14">860 v14 상세</a> · <a href="/shoes/new-balance-860-v15">860 v15 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>860 v14</th><th>860 v15</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>179,000원</td><td><strong>189,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>145,000~159,000원</strong></td><td>175,000~185,000원</td><td>실제 차이 ~3만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>295g</td><td>330g</td><td><strong>+35g (무거워짐!)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td>32mm</td><td>-5mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>28mm</td><td>26mm</td><td>-2mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>9mm (실측 9.3)</td><td>6mm</td><td><strong>-3mm 큰 변화</strong></td></tr>
+    <tr><td><strong>미드솔</strong></td><td>Fresh Foam X + 메디얼 포스트</td><td><strong>Fresh Foam X 듀얼 밀도</strong></td><td>메디얼 포스트 제거, 듀얼 밀도 일체화</td></tr>
+    <tr><td><strong>플레이트</strong></td><td>EVA Film Plate</td><td><strong>3/4 New EVA Film Plate</strong></td><td>3/4 명시</td></tr>
+    <tr><td><strong>한국 발볼 옵션</strong></td><td><strong>D / 2E / 4E (3종)</strong></td><td>D / 2E (2종)</td><td><strong>4E 단종</strong></td></tr>
+    <tr><td><strong>힐 베이스</strong></td><td>93.6mm 광폭</td><td><strong>더 넓어짐 (Lab 미공개)</strong></td><td>장거리 안정성 ↑</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>힐 60.8% / 전족 66.3%</td><td>비슷 (Lab 미공개)</td><td>안정화 상위권 유지</td></tr>
+    <tr><td><strong>안정성</strong></td><td>9/10</td><td>9/10</td><td>동일</td></tr>
+    <tr><td><strong>평발 적합성</strong></td><td>excellent</td><td>excellent</td><td>동일</td></tr>
+    <tr><td><strong>내구성</strong></td><td>600km+</td><td>600km+</td><td>동일</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩300</td><td>약 ₩315</td><td>+₩15 살짝 악화</td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>5:30~7:00/km</td><td>5:20~7:00/km</td><td>거의 동일</td></tr>
+  </tbody>
+</table>
+
+<h2>v15의 진짜 변화 3가지</h2>
+
+<h3>1. 미드솔 일체화 — 메디얼 포스트에서 듀얼 밀도로</h3>
+
+<p>v14는 <strong>Fresh Foam X + 별도 메디얼 포스트</strong> 구조로 과내전을 교정했습니다. 메디얼 포스트(발 안쪽에 단단한 폼 삽입)는 전통적 안정화 방식.</p>
+
+<p>v15는 메디얼 포스트를 제거하고 <strong>이중 밀도 Fresh Foam X (상단 부드러움 + 하단 단단함)</strong>으로 일체화했습니다. 카야노 32 → 33의 4D Guidance System 도입과 비슷한 흐름 — 안정화 트렌드가 "별도 포스트"에서 "스마트 폼 구조"로 이동하는 신호.</p>
+
+<p><strong>실제 차이</strong>: v14의 메디얼 포스트는 과내전을 강하게 교정하지만 일부 러너는 "딱딱한 느낌"이 거슬렸다는 평. v15는 더 자연스러운 전환을 제공하지만 강한 과내전 교정은 약간 약해졌을 가능성.</p>
+
+<h3>2. 와이드 옵션 축소 — 4종 → 2종 (4E 단종)</h3>
+
+<p>v14의 가장 큰 강점이었던 <strong>4가지 발볼 옵션(Narrow / Standard / Wide / X-Wide)</strong>이 v15에서는 표준(D) + 와이드(2E)만 남았습니다.</p>
+
+<p><strong>발볼 4E급 평발 한국 러너에게는 심각한 문제</strong>. 한국 러너 중 평발 + 4E급 발볼 조합이 흔한데, 카야노 33도 X-Wide 미확정, 1080 v15는 4E 있지만 중립화 — 안정화 카테고리에서 4E 옵션이 사라지는 것은 큰 손실입니다.</p>
+
+<p>대신 v15는 <strong>힐 플랫폼을 더 넓혀서</strong> 표준(D) 사이즈도 발볼 standard~약간 넓음까지는 커버 가능하게 설계했지만, 진짜 4E 필요한 러너에게는 부족.</p>
+
+<h3>3. 드롭 9mm → 6mm — 뒤꿈치 착지 러너에게 영향</h3>
+
+<p>v14의 9mm 드롭은 뒤꿈치 착지 러너에게 자연스러운 적응을 만들었습니다. <strong>v15는 6mm로 -3mm</strong> — 미드풋 착지에 더 가까운 사상.</p>
+
+<p><strong>전환 시 주의</strong>: v14에서 v15로 가면 종아리·아킬레스 부담이 일시적으로 증가할 수 있습니다. 1~2주 적응 기간 필요. 평발 + 뒤꿈치 착지 + 종아리 약한 러너라면 v14의 9mm 드롭이 더 안전.</p>
+
+<h2>가격 시나리오 — v14 X-Wide 사이즈 빠짐 주의</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 860 가격 전망 + X-Wide 단종 타임라인</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v14 14~15만원 (이월 풀림) / v15 18~19만원 정가 → X-Wide 사이즈 풀 라인업 마지막 기회</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v14 13~14만원 / v15 17~18만원 일부 할인 → <strong>X-Wide 인기 사이즈(260~280mm) 빠짐 시작</strong></li>
+      <li><strong>가을 시즌인 (9~10월):</strong> v14 14만원 (D/2E 위주, X-Wide 거의 소진) / v15 18만원 → 4E급 러너는 이 시점 전에 결정</li>
+      <li><strong>블랙프라이데이 (11월):</strong> v14 10~12만원 (특가) / v15 14~15만원 → 양쪽 매력적, X-Wide는 사실상 단종</li>
+      <li><strong>12월~2027년 1월:</strong> v14 단종 임박 / v15 14~15만원 안정 → v15만 남음 (4E 옵션 없음)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>발볼 4E급 평발 러너</strong></td><td><strong>v14 X-Wide 즉시 구매</strong></td><td>안정화에서 4E는 사실상 유일. 가을 전 사이즈 잡기</td></tr>
+    <tr><td>발볼 표준~2E + 가성비 우선</td><td>v14 이월 14~15만원</td><td>295g + 9mm 드롭 + km당 ₩300</td></tr>
+    <tr><td>발볼 표준~2E + 신소재 듀얼 폼 선호</td><td>v15 정가 18~19만원</td><td>이중 밀도 Fresh Foam X + 3/4 EVA 플레이트</td></tr>
+    <tr><td>뒤꿈치 착지 + 종아리 약함</td><td>v14</td><td>9mm 드롭이 자연스러운 적응</td></tr>
+    <tr><td>미드풋 착지 + 자연스러운 전환 선호</td><td>v15</td><td>6mm 드롭이 자연스러움</td></tr>
+    <tr><td>장거리 LSD (15~25km)</td><td>v15</td><td>넓어진 힐 플랫폼이 후반부 안정성 ↑</td></tr>
+    <tr><td>워킹 + 가벼운 조깅 겸용</td><td>v14</td><td>295g + 9mm 드롭이 일상 보행에 자연스러움</td></tr>
+    <tr><td>심한 과내전 (강한 교정 필요)</td><td>v14</td><td>메디얼 포스트의 직접적 교정 효과</td></tr>
+  </tbody>
+</table>
+
+<h2>다른 안정화·평발 옵션과 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (260g, 259,000원)</strong> — 안정화 프리미엄. 860 v14보다 8만원 비싸지만 35g 가벼움. 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
+  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (303g, 199,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
+  <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (270g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 25g 가벼움 + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
+  <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (310g, 259,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. v14에서 v15로 업그레이드 가치 있나요?</h3>
+<p>v14가 500km 안 신었다면 그냥 굴리세요. v14의 9mm 드롭과 메디얼 포스트에 만족했다면 v15는 오히려 어색할 수 있습니다. 반대로 <strong>"v14의 메디얼 포스트가 딱딱하게 느껴졌다"</strong>거나 <strong>"드롭이 너무 높다"</strong>면 v15가 답. 듀얼 밀도 폼 + 6mm 드롭으로 자연스러운 전환.</p>
+
+<h3>Q. 발볼 4E급인데 v15 사도 되나요?</h3>
+<p><strong>비추</strong>. v15는 4E 옵션이 없어 발가락 압박 가능성이 있습니다. 표준(D)도 힐 플랫폼이 넓어졌지만 토박스 자체 너비는 큰 변화 없음. 4E 평발 러너라면 <strong>v14 X-Wide 즉시 구매</strong>가 사실상 유일한 답. 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>(2E 와이드)·<a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>(와이드 옵션) 대안.</p>
+
+<h3>Q. 카야노 32와 860 v14 중 어느 게 좋나요?</h3>
+<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 26만원). 카야노 32가 35g 가볍고 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
+
+<h3>Q. 풀코스 가능한가요?</h3>
+<p><strong>Sub-4 ~ Sub-5 완주 + 평발·과내전 안전 우선</strong>이면 둘 다 적합. 290~330g 무게는 빠른 페이스에는 부담이지만 안정화 본질상 정상. Sub-3:30 이하 도전이면 안정화는 부담스럽고 카본 슈즈 분리 권장(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>, 평발 대응).</p>
+
+<h3>Q. v14 X-Wide(4E) 사이즈는 언제까지 잡힐까요?</h3>
+<p>현재(5월 말) 인기 사이즈(260~280mm 4E)는 풀 라인업 유지 중입니다. 다만 <strong>7~8월 시즌오프 들어가면 인기 사이즈부터 빠지기 시작</strong>합니다. 가을 시즌인(9~10월) 들어가면 4E는 거의 소진. 본인 사이즈가 평균 영역이라면 7월 안에 결정하는 것이 안전. 블프(11월) 10~12만원 특가는 매력적이지만 4E 사이즈 못 잡을 위험.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 옵션이 결정 — 4E 평발은 v14, 표준~2E는 v15</p>
+    <p><strong>발볼 4E급 평발 한국 러너</strong>라면 <a href="/shoes/new-balance-860-v14">860 v14 X-Wide</a> 이월 14~15만원 즉시 구매. 안정화 카테고리에서 4E 옵션은 사실상 유일하고, 가을부터 사이즈 빠짐 시작. 카야노 33도 X-Wide 미확정 상태라 대안 거의 없음.</p>
+    <p><strong>발볼 표준~2E + 신소재 폼 선호</strong>라면 <a href="/shoes/new-balance-860-v15">860 v15</a> 정가 18~19만원. 이중 밀도 Fresh Foam X + 3/4 EVA 필름 플레이트 + 넓어진 힐 플랫폼이 안정화 본질에 충실. 블프(11월) 14~15만원 가능성 ↑.</p>
+    <p><strong>안정화 첫 도전이고 둘 다 처음</strong>이라면 NB 직영매장 또는 ON YOUR MARK에서 양쪽 동시 시착이 가장 정확. 9mm 드롭 vs 6mm 드롭, 메디얼 포스트 vs 듀얼 밀도 — 본인 발이 어느 메커니즘에 편한지 직접 비교가 답.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="/shoes/new-balance-860-v14" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">860 v14 정보 (4E 옵션) →</span>
+    </a>
+    <a href="https://search.shopping.naver.com/search/all?query=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4+860+v15" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">860 v15 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>860이 "가성비 안정화"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요.</p>
+
+<ul>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 프리미엄 안정화</a> (예산 26만원 가능 + 카야노 신뢰도)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 4E 와이드 중립 쿠션화</a> (가벼운 평발 + 중립화 선택지)</li>
+  <li><a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 — 중립 데일리</a> (과내전 없는 평발이면 중립 선택지)</li>
+  <li><a href="/blog/on-cloudmonster-2-vs-3-comparison">On 클라우드몬스터 2 vs 3 — 맥스 쿠션</a> (무릎 보호 우선 중립화)</li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 가벼운 데일리</a> (과내전 없으면)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리 (4E 옵션 정리)</a></li>
+  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
+</ul>
+
+<p><small>출처: NB 한국 공식몰 가격(2026-05-25 기준) / 860 v14·v15 신발 DB 풀데이터(RunRepeat HA 10.9/23.8 듀얼 밀도 / 60.8% 에너지 리턴 / 93.6mm 광폭 힐 등 Lab 측정치) / 산초 에디터 평발 러너 비교 사용기. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'on-cloudmonster-2-vs-3-comparison',
+    slug: 'on-cloudmonster-2-vs-3-comparison',
+    title: 'On 클라우드몬스터 2 vs 3 비교 | "푹신함" vs "굴러가는 느낌" — 토박스 좁은 2 살까, 핏 넓어진 3 살까',
+    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 확장 + 힐 스택 -2.9mm 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
+    thumbnail: '/images/blog/on-cloudmonster-2-vs-3-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 10,
+    tags: ['On 클라우드몬스터', '클라우드몬스터 2', '클라우드몬스터 3', '러닝화 비교', 'On 러닝', '맥스 쿠션', '무릎 보호', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"좁은 토박스 + 푹신함"의 2</strong>에서 <strong>"넓어진 핏 + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
+    <li>3의 진짜 변화 3가지: <strong>앞발 핏 확장 (2의 약점 보강)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 스택 -2.9mm 약간 단단해진 라이드</strong></li>
+    <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 좁아서 불편했다면 3가 답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>On 한국 공식 가격(2026-05-25 기준) + 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) + Doctors of Running·Believe in the Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2 상세</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>클라우드몬스터 2</th><th>클라우드몬스터 3</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>219,000원</td><td><strong>229,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>175,000~195,000원</strong></td><td>215,000~225,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>292g</td><td>295g</td><td>+3g (거의 동일)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37.9mm</td><td>35mm</td><td>-2.9mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>31.3mm</td><td>29mm</td><td>-2.3mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>6.6mm</td><td>6mm</td><td>-0.6mm</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>Helion HF + CloudTec 더블 레이어</td><td>Helion HF + CloudTec</td><td>포뮬레이션 미세 조정</td></tr>
+    <tr><td><strong>록커</strong></td><td>보통</td><td><strong>강한 록커</strong></td><td>굴러가는 느낌 ↑</td></tr>
+    <tr><td><strong>앞발 핏</strong></td><td>표준 (좁다는 평 많음)</td><td><strong>넓어진 핏</strong></td><td>전작 약점 보강</td></tr>
+    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>137 (RunRepeat)</td><td>비슷 (Lab 미공개)</td><td>맥스 쿠션 영역 유지</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>56.5%</td><td>약간 감소 추정</td><td>반발보다 안정 지향</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
+    <tr><td><strong>내구성</strong></td><td>500km</td><td>500km</td><td>동일</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩438</td><td>약 ₩458</td><td>+₩20 살짝 악화</td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>5:00~6:30/km</td><td>5:10~6:30/km</td><td>동일 (느린 조깅)</td></tr>
+  </tbody>
+</table>
+
+<h2>3의 진짜 변화 3가지</h2>
+
+<h3>1. 앞발 핏 확장 — 2의 가장 큰 약점 보강</h3>
+
+<p>클라우드몬스터 2의 사용자 후기에서 가장 많이 나오는 불만이 "<strong>토박스가 좁다</strong>"였습니다. 한국 발볼 표준 사이즈(D)인데도 발가락 압박을 느낀다는 평이 흔했고, 와이드 옵션도 없어 발볼 4E급은 선택 자체가 어려웠습니다.</p>
+
+<p>3는 <strong>앞발 공간을 의도적으로 넓혔습니다</strong>. On이 공식적으로 "easier-fitting toe box" 표현을 사용했고, 실제 착화 후기들도 앞발 압박 감소를 확인합니다. 다만 <strong>와이드 옵션은 여전히 없음</strong> — 발볼 4E급은 메가 와이드 필요라면 여전히 부적합.</p>
+
+<h3>2. 강한 록커 — "푹신함"에서 "굴러가는 느낌"으로</h3>
+
+<p>2의 더블 레이어 CloudTec은 Cloud pod가 개별 압축되면서 만들어내는 <strong>"푹신한 착지감"</strong>이 핵심 정체성이었습니다. 호불호 갈리지만 무릎 약한 러너에게는 큰 매력.</p>
+
+<p>3는 <strong>록커 지오메트리를 강화</strong>해 착지 후 자연스럽게 앞으로 밀어주는 라이드를 만들었습니다. 5~7분/km 조깅에서 발이 자동으로 굴러가는 느낌. 호카 클리프턴·본디 같은 강한 록커 신발의 사상에 더 가까워진 셈입니다.</p>
+
+<p><strong>체감 차이</strong>: 2는 무릎 보호 + 푹신함이 결정적, 3는 자연스러운 페이스 유지가 강점.</p>
+
+<h3>3. 힐 스택 -2.9mm — 약간 단단해진 라이드</h3>
+
+<p>37.9mm → 35mm로 힐 스택이 줄었습니다. 절대 수치로는 여전히 맥스 쿠션 영역(33mm 이상이 일반적 max cushion 기준)이지만, 2의 압도적 푹신함은 약간 누그러진 셈입니다.</p>
+
+<p>대신 록커 강화와 결합돼 <strong>"부드럽지만 흐물거리지 않는"</strong> 라이드를 만듭니다. 빠른 페이스(5분/km 안팎)에서는 3가 약간 더 자연스럽고, 매우 느린 LSD 회복 페이스에서는 2의 푹신함이 그리울 수 있습니다.</p>
+
+<h2>가격 시나리오 — 2 이월 vs 3 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 클라우드몬스터 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 2 18~20만원 (이월 풀림) / 3 22만원 정가 → 가성비는 2 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 2 17~18만원 / 3 21~22만원 일부 할인 시작 → 2 가성비 정점, 인기 사이즈 빠짐 시작</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 2 18만원 (재고 빠르게 감소) / 3 22만원 안정 → 2 사이즈 빠짐 주의</li>
+      <li><strong>블랙프라이데이 (11월):</strong> 2 14~17만원 (특가) / 3 18~20만원 → 양쪽 매력적</li>
+      <li><strong>12월~2027년 1월:</strong> 2 사실상 단종 임박 / 3 18~20만원 안정 → 3 위주로 흐름 전환</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 약함 + 푹신한 쿠션 우선</td><td><strong>2 이월 18~20만원</strong></td><td>137 SA 충격흡수 + 더블 CloudTec 푹신함</td></tr>
+    <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 정가 22만원</strong></td><td>앞발 핏 확장이 결정적</td></tr>
+    <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>37.9mm 스택의 푹신함이 후반부 결정적</td></tr>
+    <tr><td>데일리 easy run (5~10km)</td><td>3</td><td>강한 록커가 자연스러운 페이스 유지</td></tr>
+    <tr><td>발볼 표준 + 가성비</td><td>2 블프 14~17만원</td><td>km당 ₩438 최저 가격대 진입</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td></tr>
+    <tr><td>여름 한강·서울숲 러닝</td><td>둘 다 주의</td><td>통기성 약점 (2/5). <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 쿠션화 고려</td></tr>
+    <tr><td>심한 과내전·평발</td><td>둘 다 비추</td><td>중립화. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a> 같은 안정화 권장</td></tr>
+  </tbody>
+</table>
+
+<h2>다른 맥스 쿠션 옵션과 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (227g, 219,000원)</strong> — 인피니온 폼 + 4E 와이드 옵션. 발볼 넓은 한국 러너 최우선 대안. 무게도 -68g 가벼움</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 230,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터와 비슷</li>
+  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
+  <li><strong><a href="/shoes/on-cloudmonster-hyper">On 클라우드몬스터 하이퍼</a> (258g, 259,000원)</strong> — 같은 라인업 Pebax 폼 + Speedboard. 템포런 겸용 슈퍼트레이너 사상. 4만원 추가 비용으로 페이스 욕심 가능</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
+<p>2가 500km 안 신었다면 그냥 2 굴리세요. 2의 푹신함에 만족했다면 3는 미묘하게 단단해진 라이드라 만족도가 약간 떨어질 수 있습니다. 반대로 <strong>"2 토박스가 좁아서 발가락 압박 있었다"</strong>면 3가 답. <strong>"좀 더 굴러가는 느낌이 필요하다"</strong> 싶어도 3.</p>
+
+<h3>Q. On 클라우드몬스터가 처음인데 2와 3 중 뭐가 좋나요?</h3>
+<p>발볼 표준이면 <strong>2 이월 18~20만원</strong>이 가성비 최강. 137 SA 충격흡수와 푹신한 CloudTec 착지감은 On의 본질을 잘 보여주고, 4만원 절약. 발볼이 표준보다 약간 넓다면 <strong>3 정가</strong>. 매장 착화로 양쪽 비교가 가장 정확합니다.</p>
+
+<h3>Q. 풀코스 가능한가요?</h3>
+<p>2는 무겁지만 137 SA 충격흡수가 풀코스 30~35km 이후 무릎 보호에 유리. 다만 <strong>292~295g 무게</strong>로 빠른 페이스(Sub-3:30 이하)는 부담. Sub-4 ~ Sub-5 완주 목표 + 무릎 안전 우선이라면 두 모델 모두 OK. 페이스 욕심 있다면 <a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a> 또는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 분리.</p>
+
+<h3>Q. 한여름 한강 러닝에 적합한가요?</h3>
+<p><strong>둘 다 비추</strong>. RunRepeat 통기성 2/5로 7~8월 한강 러닝에는 발이 답답할 수 있습니다. 여름 전용으론 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이나 <a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 모델 추천. 봄·가을·겨울이 클라우드몬스터 시즌입니다.</p>
+
+<h3>Q. 발볼 넓은데 클라우드몬스터 살 수 있나요?</h3>
+<p>3가 2보다 핏이 넓어졌지만 <strong>와이드 옵션은 양쪽 모두 없음</strong>. 발볼 standard~약간 넓음까지는 3로 커버 가능, 4E급이면 비추. 4E라면 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v15(4E 옵션)</a>가 사실상 유일한 맥스 쿠션 대안. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드 →</a></p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">푹신함·가성비 vs 록커·넓은 핏 — 본인 우선순위로 명확히 갈리는 선택</p>
+    <p><strong>무릎 약함 + 푹신한 쿠션 + 가성비 우선</strong>이라면 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a> 이월 18~20만원. 137 SA 충격흡수와 더블 CloudTec 푹신함은 On 맥스 쿠션의 본질이고, 3보다 4만원 절약. 블프(11월)에 14~17만원까지 갈 가능성 있지만 인기 사이즈 빠짐 주의.</p>
+    <p><strong>토박스 넓은 핏 + 굴러가는 페이스 유지</strong>가 우선이면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정가 22만원. 앞발 공간이 명확히 넓어졌고 강한 록커가 자연스러운 페이스 유지를 도와줍니다. 데일리 easy run에 가장 자연스러운 라이드.</p>
+    <p><strong>발볼 4E급 또는 여름 전용 한국 러너</strong>는 둘 다 부적합. 4E는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션), 여름은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 더 적합한 선택입니다.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FgTYWGaO" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">클라우드몬스터 2 최저가 →</span>
+    </a>
+    <a href="/shoes/on-cloudmonster-3" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">클라우드몬스터 3 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>클라우드몬스터가 "맥스 쿠션 데일리"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
+
+<ul>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (4E 와이드 옵션 + 인피니온 폼)</li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (가벼운 데일리 옵션)</li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 + 무릎 보호)</li>
+  <li><a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 — 가성비 카본 레이서</a> (페이스 훈련 분리용)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련용)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
+</ul>
+
+<p><small>출처: On 한국 공식 가격(2026-05-25 기준) / 클라우드몬스터 2·3 신발 DB 풀데이터(RunRepeat 힐 SA 137 / 56.5% 에너지 리턴 등 Lab 측정치) / Doctors of Running·Believe in the Run 리뷰 / 산초 에디터 easy run·LSD 비교 사용기. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'asics-magic-speed-4-vs-5-comparison',
+    slug: 'asics-magic-speed-4-vs-5-comparison',
+    title: '아식스 매직스피드 4 vs 5 비교 | 50g 차이의 의미 — 풀렝스 카본 4 살까, 193g 신상 5 살까',
+    description: '매직스피드 4(237g/199,000원)와 5(193g/229,000원)을 풀데이터로 직접 비교. 50g 경량화 + 풀렝스 → 포크형 카본 전환 + FF Leap 듀얼 폼 + km당 비용 ₩628→₩573 개선. 가성비 카본 입문에 4와 5 중 누가 답인지 상황별 매트릭스로 정리.',
+    thumbnail: '/images/blog/asics-magic-speed-4-vs-5-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-25',
+    category: 'review' as const,
+    readingTime: 10,
+    tags: ['아식스 매직스피드', '매직스피드 4', '매직스피드 5', '러닝화 비교', '아식스', '가성비 카본', '카본 입문', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>50g 차이의 무게</strong> (4 237g / 5 193g) — 한국 가성비 카본 시장에서 <strong>"풀렝스 카본의 4" vs "초경량 포크형 5"</strong>로 명확히 갈림</li>
+    <li>5의 진짜 변화 3가지: <strong>포크형 카본 → 힐스트라이커도 자연스러운 전환</strong> + <strong>FF Leap + FF Blast+ 듀얼 폼 (에너지 리턴 64.6%)</strong> + <strong>400km 내구성으로 km당 ₩573</strong></li>
+    <li>대신 5는 힐 스택 -6mm (43 → 37mm) — 풀코스 후반 쿠션 욕심나면 4 이월 가격 더 매력적. 22만원대 카본 입문에서 둘 다 합리적</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>아식스 한국 공식몰 가격(2026-05-25 기준) + 산초 에디터 매직스피드 4·5 비교 사용기 + Believe in the Run·Road Trail Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/asics-magic-speed-4">매직스피드 4 상세</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>매직스피드 4</th><th>매직스피드 5</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>199,000원</td><td><strong>229,000원</strong></td><td>+30,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>165,000~185,000원</strong></td><td>210,000~220,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>237g</td><td><strong>193g</strong></td><td><strong>-44g (-19%)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>43mm</td><td>37mm</td><td>-6mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>35mm</td><td>30mm</td><td>-5mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td>7mm</td><td>-1mm</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF Blast+ + FF Turbo</td><td><strong>FF Leap + FF Blast+</strong></td><td>신소재 듀얼</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td><strong>풀렝스</strong></td><td><strong>포크형 (3/4)</strong></td><td>유연성 ↑, 입문 친절</td></tr>
+    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>약 60% (참고치)</td><td>64.6% / 62.6%</td><td>+4~5%p</td></tr>
+    <tr><td><strong>토박스</strong></td><td>표준</td><td>표준</td><td>동일</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
+    <tr><td><strong>내구성</strong></td><td>350km</td><td>400km</td><td>+50km</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩628</td><td><strong>약 ₩573</strong></td><td><strong>-₩55 개선</strong></td></tr>
+    <tr><td><strong>최적 페이스</strong></td><td>3:30~5:00/km</td><td>3:30~5:00/km</td><td>동일</td></tr>
+  </tbody>
+</table>
+
+<h2>5의 진짜 변화 3가지</h2>
+
+<h3>1. 무게 -44g — 같은 라인업 중에서 가장 큰 폭의 경량화</h3>
+
+<p>237g → 193g, <strong>-19% 경량화</strong>는 비교 시리즈에서 본 변화 중 압도적으로 큰 폭입니다. 페가수스 41 → 42가 +5g(쿠션 강화 트레이드오프), NB 1080 v14 → v15가 -69g 정도였는데 매직스피드는 카본 레이서치고는 큰 폭의 다이어트입니다.</p>
+
+<p><strong>체감 차이</strong>: 인터벌 1km 반복주에서 8~10세트 진행했을 때 매직스피드 4는 마지막 2세트에서 발이 무거워지는 느낌이 있지만, 5는 끝까지 가볍게 굴러갑니다. 하프 레이스 끝까지 갈 때도 다리 피로도가 명확히 차이 납니다.</p>
+
+<h3>2. 포크형 카본 — 풀렝스 대비 자연스러운 전환</h3>
+
+<p>매직스피드 4의 풀렝스 카본은 강한 추진력을 주지만 <strong>전족부 착지가 안 되면 카본 효과가 반감</strong>되는 단점이 있었습니다. 힐스트라이커는 어색하게 강제 전환되는 느낌.</p>
+
+<p>5는 카본을 <strong>3/4 포크형으로 바꿔서 전족부에만 위치</strong>합니다. 메타스피드 레이의 3/4 카본과 같은 사상으로, 힐스트라이커가 자연스럽게 미드풋·포어풋 전환할 수 있도록 도와줍니다. <strong>카본 입문자에게 결정적 친절함</strong>입니다.</p>
+
+<h3>3. FF Leap + FF Blast+ 듀얼 폼 — 에너지 리턴 64.6%</h3>
+
+<p>전작의 FF Blast+ + FF Turbo 조합이 FF Leap(상층) + FF Blast+(하층) <strong>듀얼 구조</strong>로 바뀌었습니다. FF Leap는 메타스피드 레이에 들어간 ATPU 폼 — 가볍고 탄성이 높은 신소재입니다.</p>
+
+<p>그 결과 <strong>에너지 리턴 64.6%(힐) / 62.6%(전족부)</strong>의 명확한 수치 개선. 매직스피드 4 시절엔 정확한 에너지 리턴 수치 공개가 없었지만 5는 RunRepeat 실측 + 공식 데이터 모두 공개됐습니다.</p>
+
+<h2>가격 시나리오 — v4 이월 vs v5 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 매직스피드 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 4 17~19만원 (이월 풀림) / 5 22만원 정가 → 가성비는 4 압승, 신상은 5</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 4 16~17만원 / 5 21~22만원 일부 할인 시작 → 4 가성비 정점</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 4 17~18만원 (재고 빠지기 시작) / 5 22만원 안정 → 4 사이즈 빠짐 주의</li>
+      <li><strong>블랙프라이데이 (11월):</strong> 4 13~15만원 (특가) / 5 18~20만원 → 양쪽 모두 매력적</li>
+      <li><strong>12월~2027년 1월:</strong> 4 사실상 단종 임박 / 5 18~20만원 안정 → 5 위주로 흐름 전환</li>
+    </ul>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>첫 카본 슈즈 + 힐스트라이커</td><td><strong>5 (정가 또는 세일)</strong></td><td>포크형 카본이 자연스러운 전환 도와줌</td></tr>
+    <tr><td>가성비 우선 + 풀렝스 카본 선호</td><td><strong>4 이월 17~19만원</strong></td><td>3~4만원 절약 + 풀렝스 추진력</td></tr>
+    <tr><td>인터벌·하프 PB 도전</td><td>5</td><td>-44g 경량이 후반부 결정적</td></tr>
+    <tr><td>풀코스 30~35km까지 카본 사용</td><td>4</td><td>43mm 힐 스택이 후반 쿠션 우위</td></tr>
+    <tr><td>대회 + 템포 훈련 병용</td><td>5</td><td>400km 내구성 + km당 ₩573 가성비</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a> 또는 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td></tr>
+    <tr><td>예산 18만원 이하</td><td>4 블프 세일</td><td>13~15만원대 진입 가능, 카본 입문 끝장 가성비</td></tr>
+  </tbody>
+</table>
+
+<h2>다른 카본 레이서와 비교</h2>
+
+<ul>
+  <li><strong><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> (218g, 23만원)</strong> — 5와 비슷한 무게대. 카본이 아닌 나일론 플레이트라 부담 적음. 카본 vs 나일론 차이가 결정 포인트</li>
+  <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (250g, 21만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
+  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 33만원)</strong> — 진짜 엘리트 카본. 가격 +10만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (227g, 29만원)</strong> — 풀카본 + PWRTRAC. 평발·standard 발볼 친절. 매직스피드보다 무게 ↑ 가격 ↑</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 첫 카본화로 4와 5 중에 뭐가 좋나요?</h3>
+<p><strong>힐스트라이커라면 5</strong> 권장. 포크형 카본이 강제 전족부 착지 부담 없이 자연스러운 전환을 만들어줍니다. <strong>이미 포어풋·미드풋 착지에 익숙</strong>하다면 4 이월이 가성비. 풀렝스 카본의 강한 추진력을 즐길 수 있습니다.</p>
+
+<h3>Q. 풀코스 카본화로 적합한가요?</h3>
+<p>둘 다 <strong>풀코스 권장은 아닙니다</strong>. 매직스피드는 본질적으로 "가성비 카본 입문 + 인터벌·하프 레이서"입니다. Sub-3:15 이하 풀코스 도전이면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>나 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 권장. Sub-3:30~Sub-4 풀코스 + 가성비 우선이면 4의 43mm 스택이 약간 유리하지만 30km 이후 쿠션이 빠지는 느낌이 있습니다.</p>
+
+<h3>Q. 발볼 넓은데 매직스피드 살 수 있나요?</h3>
+<p><strong>4·5 모두 와이드 옵션 없음</strong>. 토박스는 표준이라 발볼 standard~약간 좁음 러너에게 맞습니다. 발볼 2E 이상이면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>(아식스에서 유일하게 와이드 있는 카본) 또는 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(토박스 약간 넉넉) 권장. 또는 매장 착화로 확인하세요.</p>
+
+<h3>Q. 5가 6mm 힐 스택이 줄었는데 무릎 부담은?</h3>
+<p>37mm도 여전히 데일리 트레이너 수준 쿠션입니다 (페가수스 42가 36mm). 다만 <strong>5는 인터벌·하프 페이스 전용</strong>이라 무릎 약한 러너가 풀코스에 쓰면 후반부 부담 가능. 무릎 이력 있다면 데일리는 페가수스 42·1080 v15 같은 데일리 트레이너로 분리하고, 매직스피드는 페이스 훈련 + 레이스 전용으로만 운용하세요. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 가이드 →</a></p>
+
+<h3>Q. 4 이월이 매력적인데 사이즈 빨리 빠지나요?</h3>
+<p>네, <strong>5월 말부터 가을까지 인기 사이즈(260~275mm) 빠르게 빠집니다</strong>. 본인 사이즈가 표준 영역이면 7~8월 시즌오프 16~17만원 시점에서 잡는 게 안전. 블프(11월) 13~15만원까지 기다리면 사이즈 못 잡을 위험.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">무게·전환 부드러움 vs 풀렝스 추진력·가성비로 명확히 갈리는 선택</p>
+    <p><strong>첫 카본 슈즈 + 힐스트라이커</strong>라면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 정가 22만원 또는 7~8월 21만원대 진입 시. 포크형 카본 + 193g 경량 + FF Leap 듀얼 폼은 카본 입문에 가장 친절한 조합입니다.</p>
+    <p><strong>풀렝스 카본 추진력 + 가성비 우선</strong>이라면 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 이월 17~19만원. 5보다 3~4만원 절약 + 43mm 힐 스택의 풀코스 후반 쿠션 + 풀렝스 카본의 직진성. 블프 13~15만원까지 갈 가능성 있지만 사이즈 빠짐 주의.</p>
+    <p><strong>발볼 4E급 한국 러너</strong>는 둘 다 적합하지 않습니다. 와이드 옵션이 양쪽 모두 없어 토박스 압박 가능. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>가 아식스 카본 중 유일한 와이드 선택지입니다.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FYqW0XcA" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">매직스피드 4 최저가 →</span>
+    </a>
+    <a href="https://naver.me/FNtPEotN" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">매직스피드 5 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>매직스피드가 "가성비 카본 레이서"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
+
+<ul>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 풀카본 가성비 비교</a> (Sub-3:30 ~ Sub-4 풀코스 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·엘리트 레이스)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 카본 없는 슈퍼트레이너</a> (장거리 페이스 훈련 분리용)</li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너</a> (매직스피드와 데일리 분리할 때)</li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화</a> (평발·과내전 카본 부담될 때 데일리)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
+</ul>
+
+<p><small>출처: 아식스 한국 공식몰 가격(2026-05-25 기준) / 매직스피드 4·5 신발 DB 풀데이터 / Believe in the Run·Road Trail Run 리뷰 / 산초 에디터 인터벌·하프 레이스 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'asics-superblast-2-vs-3-comparison',
+    slug: 'asics-superblast-2-vs-3-comparison',
+    title: '아식스 슈퍼블라스트 2 vs 3 비교 | FF Turbo+ "템포 무기" vs FF LEAP "롱런 부드러움" — 와이드 옵션 v2 vs 스택 +3.5mm v3, 카본 없는 슈퍼슈즈 가성비',
+    description: '슈퍼블라스트 2(252g/249,000원)와 3(239g/259,000원)을 RunRepeat 실측 + 사용기로 비교. -13g 경량화 + FF Turbo+ 단일 → FF LEAP+BLAST PLUS 듀얼 폼 교체 + 스택 +3.5mm. v3가 와이드 옵션 제거된 함정과 v2 이월 가성비 시나리오, 첫 슈퍼트레이너 입문 매트릭스.',
+    thumbnail: '/images/blog/asics-superblast-2-vs-3-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 12,
+    tags: ['아식스 슈퍼블라스트', '슈퍼블라스트 2', '슈퍼블라스트 3', 'Asics', '슈퍼트레이너', 'FF Turbo+', 'FF LEAP', '카본 없는 슈퍼슈즈', 'PEBA 폼', '템포런', '롱런'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>가격 차이 1만원 (v2 249,000원 / v3 259,000원). 단 <strong>v2 이월 21~23만원 풀림</strong>, 실제 차이 3~5만원</li>
+    <li>방향 자체가 다름: <strong>v2 = FF Turbo+ 단일 PEBA "템포·인터벌 무기"</strong>, <strong>v3 = FF LEAP + FF BLAST PLUS 듀얼 "롱런·MP 부드러움"</strong></li>
+    <li>한국 러너 핵심 함정: <strong>v3는 와이드 옵션 제거</strong>. 발볼 넓으면 v2 와이드 잡아야 함. 표준 발볼 + 풀코스 페이스 훈련은 v3 권장</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 슈퍼블라스트 2 실측(에너지 리턴 71%) + 슈퍼블라스트 3 1차 사용 후기 + Believe in the Run / Road Trail Run 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 양 신발 비교 주행. 양 신발 단독: <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 상세</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>슈퍼블라스트 2</th><th>슈퍼블라스트 3</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>249,000원</td><td><strong>259,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>현재 시장가</strong></td><td><strong>210,000~225,000원</strong> (이월 할인)</td><td>259,000원 (출시 풀가)</td><td>실제 차이 3~5만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>252g</td><td><strong>239g</strong></td><td>-13g</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>43mm</td><td><strong>46.5mm</strong></td><td>+3.5mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>35mm</td><td>38.5mm</td><td>+3.5mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td>8mm</td><td>동일</td></tr>
+    <tr><td><strong>미드솔</strong></td><td><strong>FF Turbo+ (PEBA 단일)</strong></td><td><strong>FF LEAP + FF BLAST PLUS (듀얼)</strong></td><td>폼 카테고리 자체 교체</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 플레이트리스</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td><strong>71% (실측)</strong></td><td>미게시 (1차 후기 동급)</td><td>v2 검증 우위</td></tr>
+    <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:30 min/km</td><td>4:00~5:30 min/km</td><td>v2 더 빠른 페이스, v3 롱런</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>ASICSGRIP</td><td>ASICSGRIP + AHAR Lo</td><td>v3 듀얼 컴파운드</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>모노필라멘트 메쉬</td><td>엔지니어드 우븐</td><td>변경</td></tr>
+    <tr><td><strong>토박스</strong></td><td>standard</td><td><strong>standard (확장)</strong></td><td>v3 약간 더 넓음</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td><strong>✅ 있음</strong></td><td><strong>❌ 없음</strong></td><td>v3에서 제거 (한국 러너 단점)</td></tr>
+    <tr><td><strong>쿠셔닝</strong></td><td>9/10</td><td><strong>10/10</strong></td><td>+1 (최상위)</td></tr>
+    <tr><td><strong>반응성</strong></td><td>10/10</td><td>9/10</td><td>-1 (부드러워짐)</td></tr>
+    <tr><td><strong>안정성</strong></td><td>7/10</td><td>6/10</td><td>-1 (스택 ↑ 대가)</td></tr>
+    <tr><td><strong>내구성</strong></td><td>500km</td><td>550km</td><td>+50km</td></tr>
+    <tr><td><strong>Cost/km (정가)</strong></td><td>약 520원</td><td>약 471원</td><td>-49원</td></tr>
+    <tr><td><strong>Cost/km (이월가)</strong></td><td><strong>약 420~450원</strong></td><td>약 471원</td><td>v2 가성비 우위</td></tr>
+  </tbody>
+</table>
+
+<h2>슈퍼블라스트가 도대체 뭔가</h2>
+
+<p>슈퍼블라스트는 <strong>"카본 플레이트 없이도 슈퍼슈즈급 성능을 내는 슈퍼트레이너"</strong> 카테고리의 대표 신발입니다. 베이퍼플라이·알파플라이 같은 카본 슈즈는 200~250km 수명 + 대회 전용 + 부상 위험이라는 제약이 있는데, 슈퍼블라스트는:</p>
+
+<ul>
+  <li><strong>PEBA 계열 슈퍼폼</strong>(v2 FF Turbo+, v3 FF LEAP+BLAST PLUS) → 카본 없이 70%+ 에너지 리턴</li>
+  <li><strong>500~550km 내구성</strong> → 카본 슈즈(200~250km)의 2배 이상</li>
+  <li><strong>데일리 훈련 + 페이스 훈련 + 하프 레이스 + 풀코스 페이스 훈련</strong> 모두 한 켤레로 커버</li>
+  <li><strong>km당 비용 470~520원</strong> → 카본 슈즈(km당 1,000원+) 절반 이하</li>
+</ul>
+
+<p>한국 러너 사이에서 "카본 슈즈는 부담스러운데 그냥 데일리는 아쉽다"는 중급~상급 러너의 핵심 선택지로 자리잡은 신발. v2 → v3는 그 정체성을 더 진화시킨 업데이트.</p>
+
+<h2>5가지 핵심 변화 — 방향이 달라졌다</h2>
+
+<h3>1. 미드솔 폼 완전 교체 ✅ 가장 큰 변화</h3>
+<p>v2의 <strong>FF Turbo+ (PEBA 단일)</strong> → v3의 <strong>FF LEAP + FF BLAST PLUS (듀얼 폼)</strong>. 다른 신발 세대 변화 중 가장 큰 폼 카테고리 전환. v2는 PEBA 단일 폼이라 "직진성 + 강한 반발", v3는 듀얼 폼이라 "부드러운 라이드 + 자연스러운 전환".</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">FF Turbo+ vs FF LEAP — 폼이 어떻게 다른가</p>
+    <table>
+      <thead>
+        <tr><th></th><th>FF Turbo+ (v2)</th><th>FF LEAP + FF BLAST PLUS (v3)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>구성</strong></td><td>PEBA 단일</td><td>FF LEAP(상층) + FF BLAST PLUS(하층) 듀얼</td></tr>
+        <tr><td><strong>주관적 느낌</strong></td><td>"통통 튀는 직진"</td><td>"부드럽고 바운시"</td></tr>
+        <tr><td><strong>강점 페이스</strong></td><td>3:30~5:00 (템포·인터벌·하프)</td><td>4:00~5:30 (롱런·MP·풀코스)</td></tr>
+        <tr><td><strong>전환</strong></td><td>강한 추진 (스냅)</td><td>부드러운 굴림 (롤링)</td></tr>
+        <tr><td><strong>에너지 리턴</strong></td><td>71% (검증)</td><td>미게시 (1차 후기 동급)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<h3>2. 스택 +3.5mm ✅ 더 부드럽고 바운시</h3>
+<p>43mm → 46.5mm 힐 스택. 카본 슈즈 알파플라이(38mm)보다 훨씬 높음. <strong>풀코스 25km+ 후반 발 피로 시점 충격 흡수가 결정적으로 개선</strong>. 단 하이스택은 안정성 ↓ 비용이 따라옴.</p>
+
+<h3>3. 무게 -13g (252→239g) ✅ 경량화</h3>
+<p>슈퍼트레이너 카테고리에서 240g 아래로 떨어진 게 의미 큼. <strong>v3가 v2보다 13g 가벼우면서 스택은 +3.5mm 높음</strong> = 폼 효율이 본질적으로 개선됐다는 증거.</p>
+
+<h3>4. ❌ 와이드 옵션 제거 ⚠️ 한국 러너 핵심 함정</h3>
+<p>v2는 <strong>standard + wide</strong> 두 옵션. v3는 <strong>standard 단일</strong>로 후퇴. v3의 토박스가 v2보다 넓어졌다고는 하나 발볼 4E급에게는 부족할 수 있음. <strong>v3가 1080 v15·페가수스 42처럼 와이드 옵션을 추가한 트렌드를 거꾸로 간 게 가장 큰 단점</strong>.</p>
+
+<h3>5. 옵티멀 페이스 방향 전환 ✅ 의도된 차별화</h3>
+<p>v2 = 3:30~5:30 min/km (템포·인터벌·하프 레이스 최적). v3 = 4:00~5:30 min/km (롱런·마라톤 페이스 최적). <strong>"v3로 v2 대체"가 아니라 "다른 목적의 신발"</strong>로 봐야 함. v2의 빠른 페이스 강점이 v3에서는 부드러운 라이드로 교체.</p>
+
+<h2>같은 가격대 슈퍼 트레이너 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>무게</th><th>스택</th><th>플레이트</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td><td>21~23만 (이월)</td><td>252g</td><td>43mm</td><td>없음</td><td>FF Turbo+, 와이드 옵션</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>26만</td><td>239g</td><td>46.5mm</td><td>없음</td><td>FF LEAP+BLAST PLUS, 롱런 강점</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-5">매직 스피드 5</a></td><td>20만</td><td>222g</td><td>40mm</td><td>풀렝스 카본</td><td>카본 + 데일리 가능 가성비</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td><td>22만</td><td>240g</td><td>36mm</td><td>나일론</td><td>나일론 플레이트, 페이스 트레이닝</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>19만</td><td>240g</td><td>40mm</td><td>없음</td><td>PWRRUN PB, 가성비 슈퍼폼</td></tr>
+  </tbody>
+</table>
+
+<h2>풀코스·페이스별 추천 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>목표·용도</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>인터벌 (400m × 12, 1km × 8)</td><td><strong>슈퍼블라스트 2</strong></td><td>FF Turbo+ 단일 PEBA 직진성</td></tr>
+    <tr><td>템포런 (10km Sub-4:00 페이스)</td><td><strong>슈퍼블라스트 2</strong></td><td>3:30~5:30 옵티멀, 빠른 페이스</td></tr>
+    <tr><td>하프마라톤 레이스 (Sub-1:30 ~ Sub-1:45)</td><td><strong>슈퍼블라스트 2</strong></td><td>경량 + 강한 반발</td></tr>
+    <tr><td>롱런 25~35km (Z2~Z3)</td><td><strong>슈퍼블라스트 3</strong></td><td>46.5mm 스택 후반 보호</td></tr>
+    <tr><td>마라톤 페이스 훈련 (MP 30km)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP 부드러운 라이드 + 듀얼 폼</td></tr>
+    <tr><td>풀코스 레이스 Sub-4 ~ Sub-3:30</td><td><strong>슈퍼블라스트 3</strong></td><td>경량 + 46.5mm 후반 보호 + 250km 이상 내구성</td></tr>
+    <tr><td>데일리 5~10km</td><td>둘 다 OK</td><td>오버스펙이지만 내구성 우위로 합리적</td></tr>
+    <tr><td>회복 조깅 (이지런)</td><td>둘 다 비추</td><td>오버스펙 → <a href="/shoes/nike-pegasus-42">페가수스 42</a> 권장</td></tr>
+    <tr><td>풀코스 첫 도전 + 완주 우선</td><td><strong>슈퍼블라스트 3</strong></td><td>카본 부담 없이 후반 보호 + 안전</td></tr>
+    <tr><td>슈퍼트레이너 입문</td><td>v2 (가성비) 또는 v3 (롱런)</td><td>본인 훈련 패턴으로 갈림</td></tr>
+  </tbody>
+</table>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>발볼 4E급 (와이드 필수)</td><td><strong>슈퍼블라스트 2 와이드</strong></td><td>v3 와이드 옵션 없음 — v2 잡거나 다른 신발</td></tr>
+    <tr><td>발볼 표준~약간 넓음</td><td>v3 standard 또는 v2 standard</td><td>v3가 약간 더 넓다고 보고</td></tr>
+    <tr><td>가성비 최우선 + 인터벌·템포 위주</td><td><strong>슈퍼블라스트 2 이월 21~23만원</strong></td><td>71% 에너지 리턴 검증 + 3~5만원 절약</td></tr>
+    <tr><td>풀코스 빌드업 사이클 (롱런·MP)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP + 46.5mm 후반 보호</td></tr>
+    <tr><td>하프마라톤 PB 도전</td><td><strong>슈퍼블라스트 2</strong></td><td>v2의 직진성·반발 강점</td></tr>
+    <tr><td>첫 슈퍼트레이너 + 다양한 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>롱런·페이스 훈련 다재다능 + 토박스 확장</td></tr>
+    <tr><td>카본 슈즈 들고 싶지만 부담</td><td>둘 다 OK</td><td>슈퍼블라스트가 카본 입문 전 단계 정답</td></tr>
+    <tr><td>주 70~100km 고볼륨 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>550km 내구성 + 부드러운 라이드 누적 피로 ↓</td></tr>
+    <tr><td>v2 사용 중 + 300km 이내 멀쩡</td><td><strong>v2 계속</strong></td><td>업그레이드 가치 미미, 방향 다른 신발</td></tr>
+    <tr><td>v2 사용 중 + 와이드로 신었음</td><td><strong>v2 와이드 계속 또는 1080 v15</strong></td><td>v3 와이드 없음 → 1080 v15 4E 대체 가능</td></tr>
+    <tr><td>풀코스 페이스 훈련 + 카본도 보유</td><td><strong>슈퍼블라스트 3</strong></td><td>카본은 대회 전용, 슈블 3는 페이스 훈련 전용</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 6~7)</td><td>심하면 안정화로 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — v2 이월 vs v3 신상</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 슈퍼블라스트 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v2 21~23만원 (이월) / v3 26만원 풀가 → 가성비 v2 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v2 18~21만원 / v3 24~26만원 → v2 가성비 정점, v3 일부 할인</li>
+      <li><strong>가을 마라톤 시즌 (9~10월):</strong> 풀코스 빌드업 수요로 v3 가격 반등 가능. 9월 전 v2 구매 권장</li>
+      <li><strong>블프 (11월):</strong> v2 16~19만원 가능 (사이즈 빠름) / v3 22~24만원 → v2 와이드 옵션 빠르게 품절</li>
+      <li><strong>12월~2027년 1월:</strong> v2 재고 소진 가속. <strong>와이드 옵션은 가장 빠르게 사라짐</strong></li>
+      <li><strong>2027년 봄 (v4 출시 가능):</strong> v3 18~22만원대로 떨어짐 가능</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>발볼 4E급 (와이드 필수):</strong> <strong>지금 v2 와이드 정가/세일가</strong> 무조건 잡기. 가을~블프엔 와이드 사라질 가능성 큼. v3는 옵션 없으니 v2가 사실상 유일</li>
+  <li><strong>발볼 표준 + 가성비:</strong> v2 이월 21~23만원 지금 또는 7~8월 시즌오프 19~21만원 사냥</li>
+  <li><strong>풀코스 빌드업 + 신상 우선:</strong> v3 26만원 정가. 1년 풀가치 활용 가능한 사이클</li>
+  <li><strong>v2의 빠른 페이스 무기 우선:</strong> v2 이월 무조건. v3는 페이스 훈련엔 약간 부드러워서 v2 직진성이 그리울 수 있음</li>
+</ul>
+
+<h2>슈퍼블라스트 vs 카본 슈즈 — 풀코스 선택 가이드</h2>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"카본 슈즈 살까 슈퍼블라스트로 충분할까"</p>
+    <p>한국 러너의 가장 흔한 고민. 페이스별 정답:</p>
+    <ul>
+      <li><strong>Sub-3 도전:</strong> 카본 필수 → <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 또는 알파플라이 3</a></li>
+      <li><strong>Sub-3:15 ~ Sub-3:30:</strong> 카본이 유리하지만 슈퍼블라스트 3도 가능. <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 5</a>가 가성비 정답</li>
+      <li><strong>Sub-3:30 ~ Sub-4:</strong> <strong>슈퍼블라스트 3가 가성비 정답</strong>. 카본 대비 5~10만원 절약 + 데일리 가능 + 부상 위험 ↓</li>
+      <li><strong>Sub-4 ~ 완주 목표:</strong> <strong>슈퍼블라스트 3 최적</strong>. 카본은 오히려 역효과</li>
+      <li><strong>풀코스 첫 도전:</strong> <strong>슈퍼블라스트 3 권장</strong>. 완주 우선 + 안전</li>
+    </ul>
+  </div>
+</div>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>아킬레스건염 이력</td><td>둘 다 excellent</td><td>8mm 드롭 + 부드러운 폼</td></tr>
+    <tr><td>무릎 통증 + 풀코스 빌드업</td><td><strong>슈퍼블라스트 3</strong></td><td>46.5mm 스택 + 듀얼 폼 충격 흡수</td></tr>
+    <tr><td>무릎 통증 + 가성비</td><td>슈퍼블라스트 2 (이월)</td><td>43mm 스택도 충분, 절약</td></tr>
+    <tr><td>족저근막염</td><td>둘 다 good</td><td>고스택 + PEBA 계열 폼 친화</td></tr>
+    <tr><td>발볼 4E급</td><td><strong>슈퍼블라스트 2 와이드</strong></td><td>v3 와이드 없음 — 사실상 v2 유일 선택지</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 6~7)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
+    <tr><td>고볼륨 훈련 (주 80km+)</td><td><strong>슈퍼블라스트 3</strong></td><td>550km 내구성 + 부드러운 라이드</td></tr>
+    <tr><td>좌우 비대칭 (러닝 폼)</td><td><strong>슈퍼블라스트 3</strong></td><td>듀얼 폼 발 모양 적응</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>FAQ</h2>
+
+<h3>Q. v2 → v3 업그레이드 가치 있나요?</h3>
+<p>v2가 300km 이내 멀쩡하다면 그냥 v2 굴리세요. <strong>v2와 v3는 같은 라인이지만 사실상 다른 신발</strong>. v2의 빠른 페이스 강점이 좋았다면 v3는 약간 부드러워서 아쉬울 수 있음. v3는 "롱런·풀코스 페이스 신발"이라 본인 훈련 패턴이 그쪽이면 갈아탈 가치 있음.</p>
+
+<h3>Q. 발볼 넓은데 v3 standard 신을 만 한가요?</h3>
+<p>발볼 2E 정도(EE)면 v3 standard에서 토박스 약간 넓어진 덕에 가능. <strong>발볼 4E급(4E 이상)이면 v3 standard는 부족할 가능성 큼</strong>. v2 와이드 옵션이나 <a href="/shoes/new-balance-1080-v15">1080 v15 4E</a>로 가는 게 안전.</p>
+
+<h3>Q. 슈퍼블라스트로 풀코스 뛸 수 있나요?</h3>
+<p>OK. 특히 v3는 풀코스 페이스 훈련 + 레이스 둘 다 가능. <strong>Sub-3:30 ~ Sub-4 풀코스 완주 우선이면 슈퍼블라스트 3가 카본보다 안전</strong>. 단 Sub-3 도전이면 카본 슈즈(베이퍼/알파/엔돌핀 프로)가 유리.</p>
+
+<h3>Q. 매직 스피드 5와 비교하면?</h3>
+<p>매직 스피드 5는 <a href="/shoes/asics-magic-speed-5">카본 플레이트 + 데일리 가능 = 가성비 카본</a> 카테고리. 슈퍼블라스트는 <strong>카본 없는 슈퍼폼</strong>. <strong>카본 추진력 원하면 매직 스피드 5, 부드러운 라이드 + 내구성 원하면 슈퍼블라스트</strong>. 가격 매직 5(20만)이 슈블 3(26만)보다 6만원 저렴.</p>
+
+<h3>Q. 데일리 5~10km에 슈퍼블라스트 오버스펙 아닌가요?</h3>
+<p>약간 오버스펙이지만 <strong>500~550km 내구성 + km당 470~520원 가성비</strong>로 합리적. 다만 회복 조깅·이지런만 한다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 일반 데일리 트레이너가 더 적합. 슈블은 페이스 살짝 올리는 훈련에서 진가.</p>
+
+<h3>Q. 다른 슈퍼트레이너 (엔돌핀 스피드 5·아주라)와 비교?</h3>
+<p>슈퍼블라스트가 <strong>한국 시장 점유율 1위 + 가성비 + 내구성 우위</strong>. 엔돌핀 스피드 5는 나일론 플레이트가 있어 약간 더 빠른 페이스 강점. 엔돌핀 아주라는 19만원 더 저렴 + 플레이트 없음. <strong>한 켤레로 모든 훈련 커버하려면 슈퍼블라스트가 정답</strong>.</p>
+
+<h2>비슷한 가격대 슈퍼트레이너 대안</h2>
+
+<ul>
+  <li><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> — 22만원, 나일론 플레이트, 페이스 트레이닝 강점</li>
+  <li><a href="/shoes/saucony-endorphin-azura">사우코니 엔돌핀 아주라</a> — 19만원, PWRRUN PB, 플레이트 없는 가성비</li>
+  <li><a href="/shoes/asics-magic-speed-5">아식스 매직 스피드 5</a> — 20만원, 카본 + 데일리, 가성비 카본 트레이닝</li>
+  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — 22만원, ZoomX 풀렝스</li>
+</ul>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼 + 훈련 패턴으로 명확히 갈리는 선택</p>
+    <p><strong>발볼 4E급 + 와이드 필수</strong>라면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 와이드</a>가 사실상 유일한 답. v3는 와이드 없음. v2 와이드 + 이월 가격 21~23만원으로 본인 사이즈 지금 잡으세요. 가을~블프엔 와이드부터 사라짐.</p>
+    <p><strong>풀코스 빌드업 + 롱런·MP 페이스 중심</strong>이면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 정가 26만원. FF LEAP + 46.5mm 스택의 부드러운 라이드가 30km+ 마라톤 페이스 훈련에서 가치를 발휘. Sub-3:30 ~ Sub-4 풀코스 가성비 정답.</p>
+    <p><strong>인터벌·템포·하프 레이스</strong>가 주 훈련이면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 이월 21~23만원</a>. FF Turbo+ 단일 PEBA의 직진성·반발이 빠른 페이스에서 v3보다 명확히 유리. 5만원 절약하고 페이스 훈련 + 하프 PB 도전.</p>
+    <p><strong>첫 슈퍼트레이너 도전 + 풀코스 시즌</strong>이라면 v3 권장. 토박스 확장 + 다재다능한 활용 + 부상 위험 ↓.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GnRnwT4x" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">슈퍼블라스트 2 최저가 →</span>
+    </a>
+    <a href="/shoes/asics-superblast-3" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">슈퍼블라스트 3 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈 양강</a></li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈 비교</a></li>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 슈퍼블라스트 2 랩 데이터(에너지 리턴 71%) + Believe in the Run / Road Trail Run 양 신발 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 비교 주행. v3 RunRepeat 랩 데이터는 일부 미게시 상태로 에너지 리턴은 v2 기반 + 1차 사용 후기 추정. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'saucony-endorphin-pro-4-vs-5-comparison',
+    slug: 'saucony-endorphin-pro-4-vs-5-comparison',
+    title: '사우코니 엔돌핀 프로 4 vs 5 비교 | 슬롯형 카본 + PWRTRAC 신규 + 토박스 narrow→standard — 첫 카본 슈즈 가성비 1순위',
+    description: '엔돌핀 프로 4(220g/269,000원)와 프로 5(206g/299,000원)을 RunRepeat 실측 + 사용기로 비교. -14g 경량화 + 슬롯형 카본 플레이트 + PWRTRAC 아웃솔 + 토박스 standard 확장. v4 이월 22~24만원 살까 v5 신상 30만원 살까 + Sub-3:30 풀코스 가성비 카본 답.',
+    thumbnail: '/images/blog/saucony-endorphin-pro-4-vs-5-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 12,
+    tags: ['사우코니 엔돌핀', '엔돌핀 프로 4', '엔돌핀 프로 5', 'Saucony', '카본 슈즈 비교', '슈퍼슈즈', 'PWRRUN PB', '슬롯 카본', '첫 카본 슈즈', '풀마라톤 신발'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>가격 3만원 차이 (프로 4 269,000원 / 프로 5 299,000원) — 단 <strong>v4 이월 22~24만원 풀림</strong>, 실제 차이 5~7만원</li>
+    <li>v5의 핵심 변화 3가지: <strong>-14g 경량화(220→206g)</strong> + <strong>슬롯형 카본 플레이트(전환 효율 ↑)</strong> + <strong>토박스 narrow → standard(한국 발 친화)</strong></li>
+    <li>엔돌핀 프로는 <strong>"첫 카본 슈즈 1순위"</strong> 포지션. 베이퍼/알파 30~35만원보다 저렴 + 더 안정적 + 발볼 친화도 우수. Sub-3:30 ~ Sub-4 풀코스 가성비 정답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 엔돌핀 프로 4 실측(SA 139, HA 13.6, 에너지 리턴 71.7%) + 프로 5 사양·1차 사용 후기 + Believe in the Run / Road Trail Run 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4 상세</a> · <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>엔돌핀 프로 4</th><th>엔돌핀 프로 5</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>269,000원</td><td><strong>299,000원</strong></td><td>+30,000원</td></tr>
+    <tr><td><strong>현재 시장가</strong></td><td><strong>220,000~240,000원</strong> (이월 할인)</td><td>299,000원 (출시 풀가)</td><td>실제 차이 5~7만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>220g</td><td><strong>206g</strong></td><td><strong>-14g</strong></td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>38.1mm</td><td>39.5mm</td><td>+1.4mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>28.6mm</td><td>31.5mm</td><td>+2.9mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm 공식 (9.5mm 실측)</td><td>8mm</td><td>동일 (실측 일관성 ↑)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>PWRRUN PB+HG (혼합)</td><td><strong>PWRRUN HG (상층) + PWRRUN PB (하층) 듀얼</strong></td><td>명확한 듀얼 폼 구성</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td>풀렝스 curved</td><td><strong>풀렝스 슬롯형</strong></td><td>전환 효율 ↑</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>경량 러버</td><td><strong>PWRTRAC (신규)</strong></td><td>그립력 ↑ (특히 젖은 노면)</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>71.7% (실측)</td><td>70%+ (1차 후기)</td><td>거의 동일</td></tr>
+    <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:00 min/km</td><td><strong>3:30~4:30 min/km</strong></td><td>v5 약간 더 빠른 페이스</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>narrow</strong></td><td><strong>standard</strong></td><td>한국 발 친화 ↑</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
+    <tr><td><strong>내구성</strong></td><td>300km</td><td>300km</td><td>동일</td></tr>
+    <tr><td><strong>안정성</strong></td><td>5/10</td><td>5/10</td><td>동일 (둘 다 평발 비추)</td></tr>
+    <tr><td><strong>Cost/km (정가)</strong></td><td>약 897원</td><td>약 997원</td><td>+100원</td></tr>
+    <tr><td><strong>Cost/km (할인가)</strong></td><td><strong>약 733~800원</strong></td><td>약 997원</td><td>v4 압승</td></tr>
+  </tbody>
+</table>
+
+<h2>5가지 핵심 변화 — 마케팅 vs 실제</h2>
+
+<h3>1. 무게 -14g 경량화 ✅ 실제 우위</h3>
+<p>220g → 206g. 베이퍼플라이 4(166g)·알파플라이 3(201g)과 비교하면 알파와 거의 동급 무게. <strong>풀코스 35km+ 후반 다리 피로도 감소에 직접적인 영향</strong>. 카본 슈즈 무게는 1g도 의미 있음.</p>
+
+<h3>2. 슬롯형 카본 플레이트 ✅ 진짜 변화</h3>
+<p>v4의 단일 풀렝스 carved 플레이트 → v5의 <strong>슬롯형 풀렝스 카본 플레이트</strong>. 카본 플레이트 가운데에 슬릿(slot)을 넣어 <strong>전환 시 약간의 유연성 + 발 모양 적응</strong>. 결과는 ① 전족부 착지 → 발끝 이탈 전환이 더 자연스러움, ② 오르막·내리막에서 플레이트가 발 모양에 맞춰 굽혀짐, ③ 풀코스 30km+ 누적 피로 시 발 컨디션에 맞춰 적응.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">슬롯 vs 단일 카본 — 어떻게 다른가</p>
+    <p>단일 카본(베이퍼/알파/v4): "한 장의 판"처럼 발이 굴러감. 강한 추진력 + 일관된 반응 vs 발 모양 적응 ↓.<br/>슬롯 카본(v5): "두 갈래 + 중앙 슬릿"으로 약간의 자유도. <strong>전족 착지 시 좌우 살짝 다른 압력 → 자연스러운 분산</strong>. Sub-3 엘리트는 단일 플레이트 직진성을 선호하지만, <strong>Sub-3:30~Sub-4 풀코스 + 다양한 노면(서울 도심, 춘마 언덕)</strong>에서는 슬롯이 더 적응적.</p>
+  </div>
+</div>
+
+<h3>3. PWRTRAC 아웃솔 신규 ✅ 그립 개선</h3>
+<p>v4의 경량 러버 → v5의 <strong>PWRTRAC 아웃솔</strong>(사우코니 자체 컴파운드). 특히 <strong>젖은 노면 그립력 + 내구성</strong> 개선. 한국 가을 마라톤 시즌 비 오는 날 풀코스 대비.</p>
+
+<h3>4. 토박스 narrow → standard ✅ 한국 러너 핵심 개선</h3>
+<p>v4까지 엔돌핀 프로의 가장 큰 단점은 <strong>narrow 토박스</strong>. 발볼 정확히 표준만 돼도 풀코스 후반 새끼발가락 압박이 흔했음 — 베이퍼·알파보다 더 좁다는 평. <strong>v5는 standard 토박스로 확장</strong>되어 한국 러너 평균 발볼(70~75mm)에 더 친화적. 발볼 4E급은 여전히 와이드 옵션 없어 불가지만, 표준~약간 넓은 발볼은 v5가 훨씬 편함.</p>
+
+<h3>5. 가격 +3만원 (269 → 299k) ⚠️ 실제 차이는 시장가 기준 5~7만원</h3>
+<p>v5 출시 직후 풀가 299,000원 vs v4 이월 22~24만원대 시장가 = 실제 차이 5~7만원. 슬롯 플레이트·PWRTRAC·-14g·토박스 standard의 가치가 5~7만원어치인지 본인 우선순위로 판단 필요.</p>
+
+<h2>다른 나이키 카본과 가격·성능 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>무게</th><th>에너지 리턴</th><th>토박스</th><th>포지션</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>narrow</td><td>가성비 카본 최강</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>206g</td><td>70%+</td><td><strong>standard</strong></td><td>발볼 친화 + 첫 카본</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>78%</strong></td><td>좁음(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>35만원</td><td>201g</td><td>74.9%</td><td>좁음</td><td>풀코스 후반 보호</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만원</td><td>215g</td><td>72%+</td><td><strong>76mm (넓음)</strong></td><td>발볼 4E급 유일 선택</td></tr>
+  </tbody>
+</table>
+
+<h2>풀코스 페이스별 추천 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>목표 페이스</th><th>풀코스 기록</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>4:00~4:15/km (Sub-3)</td><td>2:50~3:00</td><td>알파플라이 3 또는 베이퍼 4</td><td>엔돌핀 프로는 Sub-3급에 약간 부족</td></tr>
+    <tr><td>4:15~4:30/km (Sub-3:10~3:15)</td><td>3:00~3:15</td><td><strong>엔돌핀 프로 5</strong></td><td>206g + 슬롯 카본, Sub-3:15에 가성비 최적</td></tr>
+    <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:15~3:20</td><td><strong>엔돌핀 프로 5</strong></td><td>토박스 standard + 후반 안정감</td></tr>
+    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>엔돌핀 프로 4 (이월) 또는 5</strong></td><td>v4 22~24만원 가성비 결정적</td></tr>
+    <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>엔돌핀 프로 4 (이월) 또는 슈퍼블라스트 3</td><td>슈퍼 트레이너도 고민 가치</td></tr>
+    <tr><td>5:30/km 이상 (Sub-4 이상)</td><td>3:50~</td><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>카본 효과 ↓, 부상 위험 ↑</td></tr>
+  </tbody>
+</table>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>첫 카본 슈즈 + Sub-3:30 풀코스</td><td><strong>엔돌핀 프로 5</strong></td><td>standard 토박스 + 안정감 + 가성비</td></tr>
+    <tr><td>첫 카본 슈즈 + 발볼 표준</td><td>프로 4 (이월) 또는 5</td><td>v4 23만원 가성비 vs v5 토박스 ↑</td></tr>
+    <tr><td>가성비 최우선 + 발볼 약간 좁음</td><td><strong>엔돌핀 프로 4 이월 22~24만원</strong></td><td>71.7% 에너지 리턴 검증, 5~7만원 절약</td></tr>
+    <tr><td>발볼 약간 넓음 (E ~ EE)</td><td><strong>엔돌핀 프로 5</strong></td><td>v4 narrow 토박스는 후반 압박 위험</td></tr>
+    <tr><td>발볼 4E급 (와이드 필수)</td><td>둘 다 비추 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>사우코니 카본은 와이드 없음</td></tr>
+    <tr><td>젖은 노면 풀코스 대비 (춘마·서울 도심)</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력</td></tr>
+    <tr><td>전족 착지 + 다양한 노면</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 전환 자연스러움</td></tr>
+    <tr><td>일관된 도로 + 직진성 우선</td><td>프로 4 (단일 플레이트)</td><td>슬롯보다 일관된 추진</td></tr>
+    <tr><td>풀코스 PB 도전 + Sub-3:15 ~ 3:30</td><td><strong>엔돌핀 프로 5</strong></td><td>-14g + 슬롯 플레이트 결정적</td></tr>
+    <tr><td>풀코스 + 하프 둘 다 출전</td><td>둘 다 OK (취향)</td><td>v5는 풀코스 강점, v4는 하프 가성비</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의</td><td>안정성 5/10, 안정화 분리 검토</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — v4 이월 할인이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 엔돌핀 프로 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v4 22~24만원 / v5 29만원 풀가 → 가성비는 v4 압승</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v4 19~22만원 / v5 27만원대 일부 할인 시작 → v4 가성비 정점</li>
+      <li><strong>가을 마라톤 시즌 (9~10월):</strong> v4 가격 반등 가능 (대회 임박 수요) → 9월 전 v4 구매 권장</li>
+      <li><strong>블프 (11월):</strong> v4 18~20만원 / v5 25~26만원 → v4 사이즈·컬러 빠른 품절 (표준 발볼 인기)</li>
+      <li><strong>12월~2027년 1월:</strong> v4 재고 소진 가속. 인기 사이즈 사라짐. v5가 사실상 유일 옵션이 되는 시점</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>2027년 봄 마라톤(춘마·서마) 도전:</strong> v4 이월 22~24만원 지금 잡거나 7~8월 시즌오프 18~22만원 사냥</li>
+  <li><strong>발볼 standard 이상 (E·EE):</strong> v5 정가 29만원 권장. v4 narrow 토박스 후반 압박 위험</li>
+  <li><strong>첫 카본 슈즈 + 입문:</strong> v4 이월이 가성비 최강. 단 v5의 standard 토박스 + 슬롯 플레이트 안정성도 첫 카본 입문에 유리</li>
+  <li><strong>가성비 + 발볼 약간 좁음:</strong> v4 이월 22~24만원. 토박스 narrow 감수하고 5~7만원 절약</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 통증 이력</td><td><strong>엔돌핀 프로 5</strong></td><td>39.5mm 스택 + 듀얼 폼 충격 흡수</td></tr>
+    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (8mm 드롭)</td><td>9mm 드롭의 베이퍼·알파보다는 OK</td></tr>
+    <tr><td>족저근막염</td><td>v4 (good) > v5 (caution)</td><td>v4의 HA 13.6 소프트 폼이 발바닥 친화</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 5/10)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (76mm)</td></tr>
+    <tr><td>슈퍼슈즈 첫 도전 + 부상 우려</td><td><strong>엔돌핀 프로 5</strong></td><td>토박스 standard + 슬롯 플레이트 안정감</td></tr>
+    <tr><td>좌우 비대칭 (러닝 폼)</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트가 발 모양 적응</td></tr>
+    <tr><td>젖은 노면 풀코스</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력 결정적</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>비슷한 가격대 카본 슈즈 대안</h2>
+
+<ul>
+  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 30만원, 166g 압도적 가벼움 + 78% 에너지 리턴</li>
+  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 35만원, Air Pods + 38mm 스택 풀코스 후반 보호</li>
+  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 32만원, 라이트스트라이크 프로 + 에너지로드</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 32만원, 토박스 76mm 발볼 친화</li>
+  <li><a href="/shoes/saucony-endorphin-elite-2">사우코니 엔돌핀 엘리트 2</a> — 33만원, IncrediRUN 폼 80.6% 에너지 리턴(최강)</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. v4 → v5 업그레이드 가치 있나요?</h3>
+<p>v4가 200km 이내 신었다면 그냥 v4 굴리세요. <strong>핵심 업그레이드 가치는 토박스 standard + 슬롯 플레이트</strong>. v4 narrow 토박스로 풀코스 후반 발가락 압박 경험했다면 v5 권장. 그게 아니면 v4 이월 가성비가 훨씬 합리적.</p>
+
+<h3>Q. 첫 카본 슈즈인데 엔돌핀 프로가 베이퍼/알파보다 나은 이유?</h3>
+<p>세 가지: ① <strong>전족부 플랫폼이 넓어 안정성 우위</strong> (v4 118.9mm 광폭), ② <strong>가격이 5~10만원 저렴</strong>, ③ <strong>v5는 토박스 standard로 한국 발 친화도 높음</strong>. 베이퍼·알파는 Sub-3급 엘리트 전용 색이 강해서 입문에 부담스러움.</p>
+
+<h3>Q. 슬롯형 카본 플레이트가 정말 더 좋나요?</h3>
+<p>케이스에 따라. <strong>Sub-3 직진성 우선 = 단일 플레이트(베이퍼·알파·v4)가 더 좋고</strong>, <strong>Sub-3:30 풀코스 + 다양한 노면(언덕·코너·젖은 노면) + 발 모양 적응 우선 = 슬롯 플레이트(v5)가 더 좋음</strong>. 한국 풀코스 코스(춘마 언덕, 서울 도심 코너)는 슬롯에 유리.</p>
+
+<h3>Q. 발볼 약간 넓은데 v4 narrow가 어느 정도인가요?</h3>
+<p>표준 발볼(D)도 후반 압박 호소가 잦았던 게 v4 narrow 토박스. <strong>발볼 E 이상이면 v4는 사실상 비추</strong>, v5 standard로 가야 함. 발볼 4E급이면 사우코니 카본은 둘 다 비추 → 메타스피드 스카이+.</p>
+
+<h3>Q. 풀코스 외 하프·10K에는?</h3>
+<p>OK. 다만 21km 이하라면 베이퍼플라이 4(166g)의 가벼움이 더 유리. 엔돌핀 프로 5의 진가는 <strong>30km+ 풀코스 후반 누적 피로 시점 슬롯 플레이트의 적응력</strong>에서 나옴.</p>
+
+<h3>Q. 평발이라면 엔돌핀 프로 못 신나요?</h3>
+<p>안정성 5/10이라 심한 과내전은 비추. <strong>가벼운 평발 + 과내전 없음이면 OK</strong>, 단 카본 슈즈 부상 위험 + 평발 부담 누적 우려. 평발이라면 데일리는 <a href="/shoes/asics-gel-kayano-32">카야노 32/33</a> 안정화 + 카본은 대회 200km 한정 사용 패턴 추천.</p>
+
+<h3>Q. 200~300km 수명이 너무 짧지 않나요?</h3>
+<p>카본 슈즈의 본질적 한계. <strong>대회 + 페이스 훈련 전용</strong>이면 풀코스 6~7회 분량 — 1~2년 충분. 데일리 훈련은 절대 카본으로 쓰지 마세요(부상 + 빠른 소모). 데일리는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>나 <a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a>로 분리.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">대다수 Sub-3:15 ~ Sub-3:30 한국 러너에게 엔돌핀 프로는 가성비 정답</p>
+    <p><strong>첫 카본 슈즈 + 발볼 standard 이상</strong>이면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> 정가 29만원. 토박스 standard + 슬롯 플레이트 + PWRTRAC가 첫 카본 입문에 가장 안전. 베이퍼/알파보다 5~10만원 저렴.</p>
+    <p><strong>발볼 표준~약간 좁음 + 가성비 우선</strong>이면 <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a> 이월 22~24만원. 71.7% 에너지 리턴 검증 + 118.9mm 광폭 안정감. 5~7만원 절약하고 풀코스 4~5회 충분히 커버.</p>
+    <p><strong>발볼 4E급</strong>이라면 둘 다 깨끗이 포기 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>가 유일한 카본 옵션.</p>
+    <p><strong>Sub-3 엘리트 도전</strong>이라면 엔돌핀 프로는 약간 부족 → <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 또는 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>(80.6% 에너지 리턴).</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/57QzqCm0" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">엔돌핀 프로 4 최저가 →</span>
+    </a>
+    <a href="https://link.coupang.com/a/dRV51m" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">엔돌핀 프로 5 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 나이키 카본 양강 비교</a></li>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 엔돌핀 프로 4 랩 데이터(SA 139, HA 13.6, 에너지 리턴 71.7%) + Believe in the Run 양 신발 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 비교 주행. v5 RunRepeat 랩 데이터는 일부 미게시 상태로 에너지 리턴·SA는 1차 사용 후기 + v4 기반 추정. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'nike-vaporfly-4-vs-alphafly-3-comparison',
+    slug: 'nike-vaporfly-4-vs-alphafly-3-comparison',
+    title: '나이키 베이퍼플라이 4 vs 알파플라이 3 비교 | 30만원 베이퍼 vs 35만원 알파 — 5만원 차이로 갈리는 Sub-3 vs Sub-3:30 선택',
+    description: '베이퍼플라이 4(166g/309,000원)와 알파플라이 3(201g/349,000원)을 RunRepeat 실측 + 풀코스 사용기로 비교. -35g 가벼움 vs 풀코스 후반 Air Pods 보호 — Sub-3 vs Sub-3:30 페이스별 최적 선택, 알파플라이 4 출시(11월) 전 지금 사야 하나 답까지.',
+    thumbnail: '/images/blog/nike-vaporfly-4-vs-alphafly-3-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 13,
+    tags: ['나이키 베이퍼플라이', '베이퍼플라이 4', '알파플라이 3', '나이키 카본 슈즈', '슈퍼슈즈', 'ZoomX', 'Air Pods', '카본 플레이트', 'Sub-3', '마라톤 레이싱화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>가격 5만원 차이 (베이퍼 309,000원 / 알파 349,000원). 본질 차이는 <strong>"가벼움·반응성(베이퍼)" vs "풀코스 후반 보호(알파)"</strong></li>
+    <li>무게 차이 <strong>-35g (베이퍼 166g vs 알파 201g)</strong> + 베이퍼 78% vs 알파 74.9% 에너지 리턴 — 베이퍼가 가성비·반응성 모두 우위</li>
+    <li>알파플라이의 차별 무기는 <strong>Air Pods + 38mm 힐 스택</strong>. <strong>Sub-3 풀코스 35km 이후 다리 보호</strong>가 결정적. <strong>Sub-3:30 이하면 베이퍼 4가 더 합리적</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 베이퍼플라이 4 실측(SA 137, HA 19.9, 에너지 리턴 78%) + 알파플라이 3 실측(에너지 리턴 74.9%) + Believe in the Run / Road Trail Run 리뷰 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4 상세</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>베이퍼플라이 4</th><th>알파플라이 3</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2025년</td><td>2024년</td><td>베이퍼 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td><strong>309,000원</strong></td><td>349,000원</td><td>+40,000원 (알파 비쌈)</td></tr>
+    <tr><td><strong>스트릿 가격</strong></td><td>280,000원</td><td>310,000원</td><td>+30,000원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td><strong>166g</strong></td><td>201g</td><td><strong>+35g (알파 무거움)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>34mm (실측 34.1mm)</td><td><strong>38mm</strong></td><td>+4mm (알파 우위)</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>26mm (실측 25.5mm)</td><td>30mm</td><td>+4mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>9mm (실측 8.6mm)</td><td>9mm</td><td>동일</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>ZoomX (Pebax) 단일</td><td><strong>ZoomX + Air Pods</strong></td><td>알파에 Air Pods 추가</td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td><strong>스푼형</strong> Flyplate</td><td>풀렝스 curved Flyplate</td><td>형상 다름</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td><strong>78%</strong></td><td>74.9%</td><td>+3.1%p (베이퍼 우위)</td></tr>
+    <tr><td><strong>내구성</strong></td><td><strong>250km</strong></td><td>200km</td><td>+50km (베이퍼 우위)</td></tr>
+    <tr><td><strong>옵티멀 페이스</strong></td><td>3:00~4:30 min/km</td><td>3:00~4:30 min/km</td><td>동일 (둘 다 빠른 페이스 전용)</td></tr>
+    <tr><td><strong>토박스</strong></td><td>73.2mm (좁음)</td><td>표준 (좁음)</td><td>둘 다 좁음 — 한국 발볼 주의</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
+    <tr><td><strong>안정성</strong></td><td>6/10</td><td>6/10</td><td>둘 다 평발·과내전 비추</td></tr>
+    <tr><td><strong>Cost/km</strong></td><td>약 1,236원</td><td>약 1,745원</td><td>베이퍼 가성비 압승</td></tr>
+    <tr><td><strong>대표 기록</strong></td><td>춘마·뉴욕 등 Sub-3:30 PB 신발</td><td>킵툼 세계신기록 신발</td><td>알파 = 엘리트 상징성</td></tr>
+  </tbody>
+</table>
+
+<h2>5가지 핵심 차이 — 마케팅 vs 실제</h2>
+
+<h3>1. 무게 -35g ✅ 베이퍼 결정적 우위</h3>
+<p>166g vs 201g. 단순한 35g이 아니라 <strong>풀코스 42.195km에서 양발 합산 9,820회 들었다 놓는 데 누적되는 70g</strong>입니다. 마라톤 후반 다리 피로도와 직결되는 수치. <strong>같은 페이스를 더 적은 에너지로 유지할 수 있는 것이 베이퍼 4의 진짜 무기</strong>.</p>
+
+<h3>2. Air Pods (알파 단독 무기) ✅ 풀코스 후반 보호</h3>
+<p>알파플라이의 시그니처. 전족부 두 개의 압축 공기 챔버가 <strong>35km 이후 다리가 무거워질 때 추가 반발력을 제공</strong>. 베이퍼는 평평한 ZoomX 폼 단일 구성이라 후반 반발 손실이 상대적으로 큼. 단 Air Pods는 안정성을 희생함(좌우 흔들림 ↑) — 그래서 입문 러너에게 부적합.</p>
+
+<h3>3. 에너지 리턴 78% vs 74.9% ✅ 베이퍼 우위 (의외)</h3>
+<p>알파플라이가 "더 비싸고 무거운데 에너지 리턴은 낮다"는 게 직관과 어긋남. 이유는 <strong>Air Pods 자체가 폼보다 에너지 효율은 낮기 때문</strong>. ZoomX 풀렝스 단일 구성인 베이퍼 4가 순수 반발률은 더 높음. 알파는 "반발력 총량"보다 "후반 반발 유지"가 강점.</p>
+
+<h3>4. 힐 스택 +4mm (38mm vs 34mm) ✅ 알파 후반 보호</h3>
+<p>알파의 38mm 힐 스택은 World Athletics 마라톤 슈즈 규정(40mm)의 상한 근처. <strong>풀코스 후반 뒤꿈치 착지 시 충격 흡수가 베이퍼보다 우수</strong>. Sub-3 풀코스 35km 이후 다리가 죽었을 때 알파가 잡아주는 것이 결정적.</p>
+
+<h3>5. 내구성 250km vs 200km ✅ 베이퍼 가성비 우위</h3>
+<p>250km = 풀코스 5~6회 / 200km = 4~5회 분량. <strong>대회당 비용으로 환산하면 베이퍼 56k / 알파 70k</strong>. 1년 풀코스 2~3회 + 하프 2~3회 출전 패턴이라면 베이퍼 1켤레가 거의 1년 끝. 알파는 더 자주 갈아치워야 함.</p>
+
+<h2>풀코스 페이스별 최적 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>목표 페이스</th><th>풀코스 기록</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>4:00~4:15/km (Sub-3 도전)</td><td>2:50~3:00</td><td><strong>알파플라이 3</strong></td><td>35km 이후 Air Pods + 38mm 스택 후반 보호 결정적</td></tr>
+    <tr><td>4:15~4:30/km (Sub-3:10)</td><td>3:00~3:10</td><td>알파 ≈ 베이퍼 (취향)</td><td>알파의 안정감 vs 베이퍼의 가벼움 — 시착 결정</td></tr>
+    <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:10~3:20</td><td><strong>베이퍼플라이 4</strong></td><td>알파의 후반 보호 효과 ↓, 베이퍼 가벼움이 더 유리</td></tr>
+    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 + 78% 에너지 리턴, 5만원 절약 합리적</td></tr>
+    <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>베이퍼 또는 슈퍼 트레이너</td><td>카본 슈즈 효과는 있으나 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>도 검토</td></tr>
+    <tr><td>5:30/km 이상 (Sub-4 이상)</td><td>3:50~</td><td><strong>슈퍼 트레이너</strong></td><td>카본 슈즈 효과 ↓, 부상 위험만 ↑. 슈퍼블라스트·매직 스피드로</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">5분/km 이상 페이스에서 카본 슈즈는 오히려 역효과</p>
+    <p>알파플라이 3·베이퍼플라이 4 모두 <strong>3:00~4:30 min/km 페이스 전용</strong>. 5분/km 이상 느린 페이스에서는 ① 카본 플레이트가 종아리·아킬레스를 잡아당겨 부상 위험 ↑, ② 38mm/34mm 하이스택이 좌우로 불안정해져서 발목 부담 ↑, ③ 35만원 신발 효과 거의 없음. <strong>Sub-4 이상 풀코스 목표라면 슈퍼 트레이너(슈퍼블라스트 3, 매직 스피드 5)가 정답</strong>.</p>
+  </div>
+</div>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Sub-3 도전 + 풀코스 후반 다리 무거움 이력</td><td><strong>알파플라이 3</strong></td><td>Air Pods + 38mm 스택 결정적</td></tr>
+    <tr><td>Sub-3:10 ~ Sub-3:30 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 + 78% 에너지 리턴 + 5만원 절약</td></tr>
+    <tr><td>Sub-3:30 ~ Sub-4 도전</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 우위, 알파 효과 한계</td></tr>
+    <tr><td>하프마라톤 PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>21km는 알파의 후반 보호 의미 적음</td></tr>
+    <tr><td>10K PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 절대 우위, 알파는 과스펙</td></tr>
+    <tr><td>풀코스 첫 도전 + 완주 우선</td><td>둘 다 비추 → 슈퍼블라스트 3</td><td>카본은 부상 위험만 ↑</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>와이드 없음 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td></tr>
+    <tr><td>평발 + 과내전</td><td>둘 다 비추</td><td>안정성 6/10, 카본 부담 ↑</td></tr>
+    <tr><td>대회 1년 1회 + 가성비 최우선</td><td><strong>베이퍼플라이 4</strong></td><td>250km / 1,236원/km</td></tr>
+    <tr><td>대회 1년 3회+ + 알파 매니아</td><td>알파 + 베이퍼 분리</td><td>훈련·하프=베이퍼, 풀코스=알파</td></tr>
+    <tr><td>킵툼 세계신기록 신발 소유 욕구</td><td><strong>알파플라이 3</strong></td><td>상징성 — 합리성과 별개의 가치</td></tr>
+    <tr><td>알파플라이 4 출시(11월) 대기</td><td>대기 또는 베이퍼 4</td><td>11월까지 알파 3 가격 30~40% 인하 예상</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — 알파플라이 4 출시 변수</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 카본 슈즈 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> 베이퍼 4 28~30만원 / 알파 3 30~34만원 → 가성비 차이 명확</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 베이퍼 4 25~27만원 / 알파 3 27~30만원 → 양쪽 모두 할인</li>
+      <li><strong>가을 마라톤 시즌 (9~10월):</strong> 가격 반등. <strong>대회 임박 = 풀가 환원</strong>. 9월 전 구매 권장</li>
+      <li><strong>알파플라이 4 출시 (11월 시카고 마라톤):</strong> <strong>알파 3 가격 폭락 가능성</strong> (24~28만원). 단 사이즈·컬러 제한적</li>
+      <li><strong>12월~2027년 1월:</strong> 알파 3 22~26만원 / 베이퍼 4 24~27만원 → 알파의 가격 메리트 ↑. 단 알파 4가 본격 출시되면 알파 3는 "구형" 인식</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>Sub-3 풀코스 2027년 봄 (춘마·서마) 도전:</strong> 알파 3 — 11월 출시 후 22~26만원 사냥 또는 베이퍼 4 정가</li>
+  <li><strong>Sub-3:30 ~ 4 풀코스 도전:</strong> 베이퍼 4 — 지금~여름 시즌오프 25~28만원 사냥</li>
+  <li><strong>알파플라이 4 매니아 — 신상 우선:</strong> 11월 알파 4 정식 출시 + 가격 동향 보고 결정. 단 알파 4 출시 직후 풀가 35~40만원 추정</li>
+  <li><strong>가성비 최우선:</strong> 11월 알파 3 폭락 사냥 또는 베이퍼 4 시즌오프</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 통증 이력 + Sub-3</td><td><strong>알파플라이 3</strong></td><td>38mm 스택 + Air Pods 후반 충격 흡수</td></tr>
+    <tr><td>아킬레스건염 이력</td><td><strong>베이퍼플라이 4</strong></td><td>166g 부담 ↓, 9mm 드롭 동일</td></tr>
+    <tr><td>족저근막염</td><td>둘 다 주의 (caution)</td><td>훈련 누적 시 재발 위험, 대회 전용으로만</td></tr>
+    <tr><td>평발 + 과내전</td><td>둘 다 비추 (poor)</td><td>안정성 6/10 — 안정화 분리 필수</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 76mm 토박스</td></tr>
+    <tr><td>좌우 비대칭 큼 (러닝 폼)</td><td>알파 단독 비추</td><td>Air Pods 좌우 흔들림 ↑</td></tr>
+    <tr><td>풀코스 후반 다리 죽음 패턴</td><td><strong>알파플라이 3</strong></td><td>Air Pods 후반 보호 결정적</td></tr>
+    <tr><td>레이스 페이스 유지 어려움</td><td><strong>베이퍼플라이 4</strong></td><td>78% 에너지 리턴 가속·유지</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>같은 가격대 카본 슈즈 대안</h2>
+
+<p>나이키 외 카본 슈퍼슈즈도 풀코스 신발 결정 시 검토 가치:</p>
+
+<ul>
+  <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 35만원, 라이트스트라이크 프로 + 에너지로드. 베이퍼·알파의 핵심 대안</li>
+  <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a> — 32만원, PWRRUN HG 폼. 가성비 강함</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">Asics Metaspeed Sky+</a> — 32만원, FF Blast Turbo. <strong>토박스 76mm로 발볼 넓은 한국 러너 유일 선택</strong></li>
+  <li><a href="/shoes/saucony-endorphin-elite-2">Saucony Endorphin Elite 2</a> — 38만원, 사우코니 최상위 라인</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 5만원 더 주고 알파플라이 가는 게 정답인가요?</h3>
+<p>Sub-3 도전이면 알파, 아니면 베이퍼가 합리적. 단순 가격이 아니라 <strong>"5만원 + 35g 무거움 + 50km 짧은 내구성"의 패키지 비용을 감수할 가치가 있는가</strong>의 질문. 풀코스 후반 다리 죽는 패턴이 있는 Sub-3 러너만 회수 가능.</p>
+
+<h3>Q. 알파플라이 4 11월 출시인데 지금 알파 3 사도 되나요?</h3>
+<p>2027년 봄 마라톤(춘마·서마) 도전이 목표라면 OK. 단 <strong>11월 이후 알파 3 가격이 30~40% 폭락 가능성</strong>이 있으니 급하지 않다면 11월~12월 사냥이 가성비. 알파 4 정식 출시 풀가는 35~40만원 추정.</p>
+
+<h3>Q. 하프마라톤에는 알파가 좀 아깝지 않나요?</h3>
+<p>맞음. <strong>하프 21km는 알파의 후반 보호 효과가 아직 본격화되기 전</strong>이라 베이퍼의 가벼움이 훨씬 유리. 알파는 풀코스 35km+ 시점부터 가치가 폭증. Sub-3:30 하프 PB는 베이퍼가 정답.</p>
+
+<h3>Q. 200~250km 수명이 너무 짧지 않나요?</h3>
+<p>카본 슈즈의 본질적 한계. <strong>대회 + 페이스 훈련 전용</strong>으로 쓰면 250km는 풀코스 5~6회 + 페이스 훈련 분량 — 1~2년 충분. 데일리 훈련까지 카본으로 쓰면 1~2개월에 수명 다 함. 데일리는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·페가수스로 반드시 분리.</p>
+
+<h3>Q. 둘 다 평발·과내전 비추인 이유?</h3>
+<p>카본 슈즈는 38mm/34mm 하이스택 + 가벼운 폼 + 좁은 베이스 조합이라 <strong>좌우 안정성을 희생하고 추진력을 극대화한 구조</strong>. 과내전 러너는 미드솔이 안쪽으로 무너지면서 발목·무릎 부상 위험 ↑. 평발이라도 가벼운 정도면 OK이지만 심한 과내전은 무조건 비추.</p>
+
+<h3>Q. 발볼 넓은 한국 러너는 어떻게 하나요?</h3>
+<p>나이키 카본은 와이드 옵션이 없어 발볼 4E급은 사실상 불가. 유일 대안은 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (토박스 76mm) 또는 <a href="/shoes/saucony-endorphin-pro-5">사우코니 엔돌핀 프로 5</a> (토박스 약간 넓음). 발볼 4E급이면 나이키 카본은 깨끗이 포기.</p>
+
+<h3>Q. 카본 슈즈 처음이면 어디서 시작하나요?</h3>
+<p><strong>슈퍼 트레이너부터</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> (24만원, 카본 없는 슈퍼 트레이너) → <a href="/shoes/asics-magic-speed-5">매직 스피드 5</a> (20만원, 카본 + 데일리) → 베이퍼플라이 4 (30만원, 풀 카본). 갑자기 알파플라이로 시작하면 부상 직행.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">90% Sub-3:30 ~ Sub-4 한국 마라토너에게는 베이퍼 4</p>
+    <p><strong>Sub-3 도전 + 풀코스 후반 다리 죽는 패턴</strong>이라면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 정가 또는 11월 가격 폭락 사냥. Air Pods + 38mm 스택은 후반 보호의 결정적 차이를 만듦. 단 5만원 + 35g + 50km 짧은 내구성 비용 감수가 필수.</p>
+    <p><strong>Sub-3:10 ~ Sub-4 풀코스 + 하프·10K PB</strong> 도전이라면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 거의 무조건 합리적. 166g 가벼움 + 78% 에너지 리턴 + 250km 내구성 + 5만원 절약 — 모든 면에서 우위. 한국 마라토너 대다수가 여기 해당.</p>
+    <p><strong>발볼 4E급·평발·심한 과내전</strong>이라면 둘 다 깨끗이 포기. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(발볼 넓음) 또는 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(평발 대응)가 답.</p>
+    <p><strong>알파플라이 4 매니아라면</strong> 11월 시카고 마라톤 정식 출시 대기. 알파 3는 가격 폭락 사냥용으로만.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/5KqWcsAl" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">베이퍼플라이 4 최저가 →</span>
+    </a>
+    <a href="https://naver.me/F2ny4AOj" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">알파플라이 3 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/2026-nike-alphafly-4-prototype">알파플라이 4 프로토타입 — 11월 출시 임박</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 베이퍼플라이 4 랩 데이터(SA 137, HA 19.9, 에너지 리턴 78%) + 알파플라이 3 랩 데이터(에너지 리턴 74.9%) + Believe in the Run 양 신발 리뷰 + Road Trail Run / 한국 나이키 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 비교 주행. 가격은 시즌·세일·알파플라이 4 출시(11월 시카고)에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: 'new-balance-1080-v14-vs-v15-comparison',
+    slug: 'new-balance-1080-v14-vs-v15-comparison',
+    title: '뉴발란스 1080 v14 vs v15 비교 | -69g 충격 감량 + Fresh Foam X→인피니온 폼 교체 + 토박스 narrow→standard — 사실상 다른 신발',
+    description: '1080 v14(285g/199,000원)와 v15(216g/209,000원)을 RunRepeat 실측 + 한 달 사용기로 비교. 69g 감량 + 폼 자체 교체 + 토박스 narrow→standard + 4E 와이드 추가 — 같은 라인 세대 변화 중 역대급. v14 할인 13만원대 살까, v15 신상 21만원 살까 매트릭스.',
+    thumbnail: '/images/blog/new-balance-1080-v14-vs-v15-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 11,
+    tags: ['뉴발란스 1080', '1080 v14', '1080 v15', 'New Balance', '쿠션화 비교', '인피니온 폼', 'Fresh Foam X', '맥시멀 쿠션', '4E 와이드', '발볼 넓은 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>같은 라인 세대 변화 중 역대급</strong> — v15는 v14 대비 -69g 감량(285→216g) + Fresh Foam X → 인피니온(질소 주입 슈퍼크리티컬) 폼 교체</li>
+    <li>한국 러너 핵심 개선 3가지: <strong>토박스 narrow → standard</strong> + <strong>4E 와이드 옵션 추가</strong> + <strong>힐 스택 +3mm(37→40mm)</strong></li>
+    <li>가격 차이 1만원(MSRP). 단 <strong>v14 할인 13~15만원대</strong>로 풀려 실제 차이 5~7만원. "별개의 신발"이라 본인 우선순위(가벼움 vs 가성비)로 갈림</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 1080 v14 랩 실측(SA 142, HA 11.9, 에너지 리턴 60.8%) + 1080 v15 한국 출시 사양 + 한국 NB 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 양 신발 한 달 비교 주행. 양 신발 단독: <a href="/shoes/new-balance-1080-v14">1080 v14 상세</a> · <a href="/shoes/new-balance-1080-v15">1080 v15 상세</a>.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>1080 v14</th><th>1080 v15</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>현재 시장가</strong></td><td><strong>130,000~150,000원</strong> (이월 할인)</td><td>209,000원 (출시 풀가)</td><td>실제 차이 ~7만원</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>285g</td><td><strong>216g</strong></td><td><strong>-69g (역대급)</strong></td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>Fresh Foam X (EVA 기반)</td><td><strong>인피니온 (질소 주입 슈퍼크리티컬)</strong></td><td>폼 카테고리 자체 교체</td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>37mm</td><td>40mm</td><td>+3mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>33mm</td><td>34mm</td><td>+1mm</td></tr>
+    <tr><td><strong>드롭 (실측 / 공식)</strong></td><td>4.2mm / 6mm</td><td>6mm</td><td>+2mm (실측 기준)</td></tr>
+    <tr><td><strong>충격 흡수 (SA)</strong></td><td>142 (RunRepeat 실측, 최상위)</td><td>미게시 (체감 동급)</td><td>둘 다 9/10 쿠셔닝</td></tr>
+    <tr><td><strong>경도 (HA)</strong></td><td>11.9 (초소프트)</td><td>미게시</td><td>v14 검증 우위</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>60.8% (힐)</td><td>v14 대비 ↑ (인피니온 폼)</td><td>v15 약간 우위 추정</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>narrow (68mm 미만)</strong></td><td><strong>standard</strong></td><td>한국 발 친화 ↑</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>표준(D), 2E</td><td><strong>2E, 4E</strong></td><td>4E 신규 추가</td></tr>
+    <tr><td><strong>안정성 점수</strong></td><td>7/10</td><td>6/10</td><td>-1 (경량화 대가)</td></tr>
+    <tr><td><strong>내구성</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
+    <tr><td><strong>Cost/km (정가)</strong></td><td>약 400원/km</td><td>약 348원/km</td><td>-52원/km</td></tr>
+    <tr><td><strong>Cost/km (할인가)</strong></td><td><strong>약 245~270원/km</strong></td><td>약 348원/km</td><td>v14 압승</td></tr>
+  </tbody>
+</table>
+
+<h2>5가지 핵심 변화 — "사실상 다른 신발"</h2>
+
+<h3>1. 무게 -69g 감량 ✅ 같은 라인 세대 변화 중 역대급</h3>
+<p>285g → 216g. 페가수스(+5g)·카야노(-2g)와 비교조차 안 되는 변화. <strong>핸드 픽 시 들었을 때 한 사이즈 작은 신발</strong>로 착각할 정도. 5:00-6:30/km 페이스에서 발이 가볍게 회전하고, 빠른 회전 시 v14의 무게감이 완전히 사라짐.</p>
+
+<h3>2. Fresh Foam X → 인피니온 폼 교체 ✅ 폼 카테고리 자체 교체</h3>
+<p>v14의 Fresh Foam X는 EVA 기반 폼. v15의 <strong>인피니온은 질소 주입 슈퍼크리티컬 폼</strong>(아디다스 Lightstrike Pro·나이키 ZoomX 계열). 같은 두께에서 더 가볍고, 에너지 리턴이 향상되고, 통기성도 개선. <strong>이 폼 교체가 -69g 감량의 핵심</strong>.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">슈퍼크리티컬 폼이 뭐가 다른가</p>
+    <p>일반 EVA 폼: 고체 폼 발포 (셀 크기 불균일, 무겁고 반발 손실 큼).<br/>슈퍼크리티컬(SC) 폼: 질소 등 가스를 초임계 상태로 폼에 주입 → <strong>균일한 미세 셀 구조</strong>. 결과는 ① 같은 부피 -20~30% 무게, ② 에너지 리턴 +5~10%, ③ 장기 폼 꺼짐 ↓. 아디다스 아디오스 프로의 라이트스트라이크 프로, 나이키 ZoomX, 호카 PEBA 폼 등 최신 카본 슈즈가 모두 SC 폼 계열.</p>
+  </div>
+</div>
+
+<h3>3. 토박스 narrow → standard ✅ 한국 러너 핵심 개선</h3>
+<p>v14의 토박스 narrow(68mm 미만)는 한국 러너 사이 가장 큰 단점이었음. 발볼 표준만 돼도 새끼발가락 압박이 흔했음 — 결국 2E 필수. <strong>v15는 standard 토박스 + 4E 옵션까지 신설</strong>로 발볼 4E급도 표준 SKU로 안전하게 접근 가능. 한국 NB 1080 라인 역사상 가장 큰 개선.</p>
+
+<h3>4. 힐 스택 +3mm + 드롭 +2mm ✅ 무릎 보호 강화</h3>
+<p>힐 스택 37 → 40mm로 +3mm. 드롭은 4mm(실측)에서 6mm로 +2mm. <strong>뒤꿈치 착지 시 충격 흡수가 더 좋아지고</strong>, 종아리·아킬레스 부담은 약간 줄어듦. 무릎 약한 러너에게는 명확한 업그레이드.</p>
+
+<h3>5. 안정성 -1 ⚠️ 경량화의 대가</h3>
+<p>v14 안정성 7 → v15 6. 가벼워지면서 미드솔 두께 분포·소재가 바뀌어 좌우 흔들림이 약간 늘었음. <strong>평발·과내전 러너는 v15 단독보다 안정화 분리 검토 필요</strong>(카야노 32/33, 860 v15 등).</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>v14 이월 할인 (13~15만원)</strong></td><td>SA 142 검증 + 쿠셔닝 9/10 동급 + 5~7만원 절약</td></tr>
+    <tr><td>발볼 4E급 (4E 와이드 필수)</td><td><strong>v15 4E</strong></td><td>v14 4E 옵션 없음, v15 신규 추가</td></tr>
+    <tr><td>발볼 2E (와이드 정도)</td><td>v14 또는 v15</td><td>둘 다 2E 옵션 있음. 가격으로 선택</td></tr>
+    <tr><td>가벼운 쿠션화 우선 (216g)</td><td><strong>v15</strong></td><td>-69g 차이 압도적</td></tr>
+    <tr><td>빠른 페이스(5:00/km 이하) 가능 쿠션화</td><td><strong>v15</strong></td><td>216g + 인피니온 폼 반발</td></tr>
+    <tr><td>리커버리·LSD 위주 (페이스 무관)</td><td><strong>v14 (가성비)</strong></td><td>HA 11.9 초소프트, 푹 쉬는 느낌</td></tr>
+    <tr><td>평발·과내전</td><td>둘 다 비추 (안정화로)</td><td>1080은 중립화. 카야노 32/33이 답</td></tr>
+    <tr><td>무릎 약한 뒤꿈치 착지</td><td><strong>v15</strong></td><td>40mm 스택 + 6mm 드롭 개선</td></tr>
+    <tr><td>v14 600km 이내 멀쩡</td><td><strong>v14 계속</strong></td><td>v15 갈아탈 가치 미미</td></tr>
+    <tr><td>v14 수명 다 됨 + 무게 부담 컸음</td><td><strong>v15</strong></td><td>-69g + standard 토박스</td></tr>
+    <tr><td>주 100km+ 고볼륨</td><td>v14 (내구성 검증) 또는 v15 (가벼움)</td><td>본인 우선순위로 갈림</td></tr>
+    <tr><td>1080 첫 도전 + 발볼 표준</td><td><strong>v14 이월</strong></td><td>13~15만원에 쿠셔닝 검증된 입문</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — v14 할인이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 1080 가격 전망</p>
+    <ul>
+      <li><strong>지금 (2026 5월):</strong> v14 13~15만원 이월 풀림 / v15 21만원 정가 → 가성비는 v14 압승, "역대급 변화" 매력은 v15</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> v14 12~13만원대 진입 / v15 18~19만원대 일부 할인 시작 → v14 가성비 정점</li>
+      <li><strong>블프 (11월):</strong> v14 10~11만원대 가능 / v15 16~17만원대 → v14 사이즈·컬러 빠른 품절. 2E·표준만 남는 패턴</li>
+      <li><strong>12월~1월:</strong> v14 재고 소진 가속. <strong>2E 와이드는 빠르게 사라짐</strong> (한국 발볼 수요)</li>
+      <li><strong>2027년 1월~ (v15 이월 시작):</strong> v15 14~16만원대로 떨어지며 v16(추정) 출시 사이클</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>발볼 4E급:</strong> v15 4E 정가로 가야 함. v14는 4E 없음, 2E로는 부족할 가능성</li>
+  <li><strong>발볼 표준~2E + 가성비:</strong> v14 이월 13~15만원이 지금 가장 합리적. 여름~블프 더 떨어질 가능성 vs 사이즈 빠질 위험 트레이드오프</li>
+  <li><strong>경량 쿠션화 우선:</strong> v15 정가 21만원 감수. -69g 가치는 본인이 직접 신어봐야 체감 가능</li>
+  <li><strong>둘 다 처음:</strong> NB 매장 또는 ON YOUR MARK 트라이얼에서 양쪽 동시 신어보고 결정</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>무릎 통증 + 뒤꿈치 착지</td><td><strong>v15</strong></td><td>힐 스택 40mm + 인피니온 충격 흡수</td></tr>
+    <tr><td>무릎 통증 + 가성비 우선</td><td>v14 (이월)</td><td>SA 142 + 37mm 스택도 충분</td></tr>
+    <tr><td>아킬레스건염</td><td>v15</td><td>드롭 6mm(공식) — v14 4.2mm 실측보다 낮은 부담</td></tr>
+    <tr><td>족저근막염</td><td>v14 = v15</td><td>둘 다 excellent (인피니온 / Fresh Foam X)</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>v14 (안정성 7) > v15 (6)</td><td>v15는 안정성 약간 떨어짐. 심하면 안정화로</td></tr>
+    <tr><td>평발 + 심한 과내전</td><td>둘 다 비추 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td><td>1080은 중립화</td></tr>
+    <tr><td>발볼 4E급 + 토박스 압박</td><td><strong>v15 4E</strong></td><td>v14는 4E 없음, v15 신규 옵션</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>비슷한 가격대 쿠션화 대안</h2>
+
+<ul>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 23만원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
+  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 18만원대, 더 가볍고 부드러움. 토박스는 1080 v15 우위</li>
+  <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 22만원대, 반발력 약간 더 강함</li>
+  <li><a href="/shoes/new-balance-880-v15">NB 880 v15</a> — 16만원대, 1080보다 한 단계 아래. 가성비 우선이면 검토</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. v14 → v15 업그레이드 가치 있나요?</h3>
+<p>가치 큼. <strong>-69g 감량 + 폼 자체 교체 + 토박스 standard + 4E 옵션</strong> — 같은 라인 세대 변화 중 거의 가장 큰 폭. v14를 300km 이내 신었다면 그냥 v14 굴리고, v14가 수명 다 됐거나 발볼 4E급이라면 무조건 v15.</p>
+
+<h3>Q. v15가 정말 v14보다 부드러운가요?</h3>
+<p>"부드러움 절대치"는 v14의 HA 11.9 초소프트가 살짝 더 부드러울 수 있음 (검증 데이터 기준). 다만 v15는 <strong>"부드러우면서 통통 튀는 느낌"</strong>이 더 강함. 인피니온 폼이 에너지 리턴이 높아서. <strong>리커버리 위주 = v14, 데일리 + 페이스 가끔 올리기 = v15</strong>가 정답.</p>
+
+<h3>Q. 인피니온 폼은 PEBA인가요?</h3>
+<p>PEBA는 아니지만 같은 슈퍼크리티컬 폼 계열. 정확한 화학 성분은 NB가 공개하지 않았으나 <strong>질소 주입 + 슈퍼크리티컬 공정</strong>은 PEBA(나이키 ZoomX)·라이트스트라이크 프로(아디다스)와 같은 카테고리. 카본 슈즈에 쓰는 폼이 데일리 트레이너에 적용된 흐름.</p>
+
+<h3>Q. 안정성 6/10이면 평발은 v15 못 신나요?</h3>
+<p>가벼운 평발이라면 OK. <strong>안정성 6/10은 "중립화 평균"</strong>이고, 페가수스(8/10)·님버스(7/10)보다는 약하지만 1080도 충분한 베이스 폼 안정성은 있음. 다만 <strong>심한 과내전이면 무조건 카야노 32/33이나 860 v15</strong>로.</p>
+
+<h3>Q. v15로 풀코스 가능한가요?</h3>
+<p>가능. 216g + 6mm 드롭 + 인피니온 폼 조합은 Sub-4 ~ Sub-5 풀코스 완주에 적합. <strong>Sub-3:30 이하 도전은 카본 슈즈로 분리 권장</strong>. v15는 데일리 + LSD + 풀코스 완주(페이스 부담 없는 경우) 전용.</p>
+
+<h3>Q. v14 narrow 토박스 발볼 표준이면 신을 만 한가요?</h3>
+<p>발볼 정확히 표준(EE 이하)이라면 D 사이즈 OK. <strong>발볼 약간 넓다 싶으면 무조건 2E</strong>. RunRepeat 실측 토박스 68mm 미만 narrow는 한국 러너 평균(70~75mm)보다 좁음. v14 D 사이즈로 새끼발가락 압박 후기가 흔함.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">90% 한국 러너에게는 두 갈래</p>
+    <p><strong>① 발볼 4E급 또는 가벼운 쿠션화 매니아:</strong> <a href="/shoes/new-balance-1080-v15">1080 v15</a> 정가 21만원 감수해서라도 4E 신규 옵션 + -69g 가치 회수. 인피니온 폼은 한 번 신어보면 돌아가기 어려움.</p>
+    <p><strong>② 발볼 표준~2E + 가성비:</strong> <a href="/shoes/new-balance-1080-v14">1080 v14</a> 이월 13~15만원 잡고 5~7만원 절약. SA 142 + HA 11.9 초소프트 쿠셔닝은 여전히 최상위. 페이스 욕심 없는 리커버리·LSD 위주라면 무게 차이 체감 적음.</p>
+    <p><strong>둘 다 처음이거나 결정 못 한다면:</strong> ON YOUR MARK 경복궁점·부산점 또는 NB 직영매장에서 양쪽 동시 시착이 가장 정확. 1080 시리즈는 "신어봐야 안다"는 평이 가장 정확한 신발.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GPlbVErM" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">1080 v14 최저가 →</span>
+    </a>
+    <a href="https://naver.me/xAA0rggd" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">1080 v15 최저가 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/2026-nb-1080v15-tryout-popup-d3">NB 1080 v15 무료 트라이얼 팝업 (5/14 종료)</a></li>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 1080 v14 랩 데이터(SA 142, HA 11.9, 에너지 리턴 60.8%) / Believe in the Run 1080 v15 리뷰 / 한국 NB 공식몰 + 네이버 쇼핑 가격(2026-05-17 기준) / 산초 에디터 한강 양 신발 한 달 비교 주행. v15 RunRepeat 랩 데이터는 일부 미게시 상태로 인피니온 폼 우위는 NB 공식 + 1차 사용 후기 기반 추정.</small></p>
+`,
+  },
+  {
+    id: 'asics-kayano-32-vs-33-comparison',
+    slug: 'asics-kayano-32-vs-33-comparison',
+    title: '아식스 카야노 33 vs 32 비교 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 출시 후 평발 한국 러너는 어느 세대?',
+    description: '6월 1일 출시된 카야노 33(209,000원 안팎)과 검증된 32(199,000원, 세일 진입). 13년 만의 구조 대변혁 — 4D Guidance System 폐지·FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
+    thumbnail: '/images/blog/asics-kayano-32-vs-33-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 12,
+    tags: ['아식스 카야노', '카야노 32', '카야노 33', '안정화 비교', 'FLUIDSUPPORT', 'FF BLAST MAX', '4D Guidance', '평발 러닝화', '과내전', '안정화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>13년 만의 구조 대변혁</strong> — 33은 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
+    <li>안정 철학이 정반대: <strong>32 = 단단한 폼으로 발 무너짐 막기</strong>, <strong>33 = 부드러운 폼이 발 모양에 맞춰 변형되며 잡기</strong></li>
+    <li>가격 차이 ~1만원(MSRP)이지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 더 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 13년 검증된 32가 더 안전</strong>할 수 있음</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">출시 완료 — 카야노 33은 6월 1일 출시됐습니다</p>
+    <p>ASICS GEL-KAYANO 33은 <strong>2026년 6월 1일 글로벌 출시</strong>됐고, 한국 가격은 209,000원 안팎입니다(글로벌 $170 기준, asics.co.kr 정가 확인 권장). 출시 후 <strong>전문가 초기 리뷰</strong>도 나왔는데, Doctors of Running의 Matt Klein은 "32는 올해의 안정화였지만 33은 탑3에도 못 든다"며 <strong>FLUIDSUPPORT가 기존 4D Guidance보다 미드풋 지지가 약하고 반발이 둔하다</strong>고 평했습니다. "더 부드러워졌지만 교정력은 32가 위"라는 게 초기 중평이죠(RunRepeat 정량 랩은 아직 미게시). 본 글은 신상 33을 살지, 검증된 32를 세일로 살지 결정하기 위한 비교입니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-06-01 (출시 완료)</strong></td><td>2년차 / 신상</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원 추정</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>190,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>300g</td><td>298g</td><td>-2g (사실상 동일)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>32mm</td><td>32mm</td><td>동일</td></tr>
+    <tr><td><strong>드롭</strong></td><td>10mm (공식)</td><td><strong>8mm</strong></td><td>-2mm (아킬레스 부담 ↓)</td></tr>
+    <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (13년 검증)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
+    <tr><td><strong>미드솔 폼</strong></td><td>FF Blast+ ECO 단일 폼</td><td><strong>FF BLAST MAX (탑) + FF BLAST PLUS (하단) 듀얼</strong></td><td>최초 듀얼 폼</td></tr>
+    <tr><td><strong>안정성 점수</strong></td><td>10/10 (검증)</td><td>9/10 (검증 부족)</td><td>-1</td></tr>
+    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>7/10</td><td>+1 (FF BLAST MAX)</td></tr>
+    <tr><td><strong>내구성</strong></td><td>700km</td><td>650km (추정)</td><td>-50km</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>AHAR+</td><td>AHARPLUS</td><td>업데이트</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>재설계 엔지니어드 메쉬</td><td>리뉴얼</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>표준/와이드/X-와이드</td><td>표준/와이드(2E) 발매</td><td>X-와이드는 미확정</td></tr>
+    <tr><td><strong>RunRepeat 랩 데이터</strong></td><td>게시됨</td><td>미게시 (출시 직후)</td><td>33은 추정 기반</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 — 4D Guidance vs FLUIDSUPPORT</h2>
+
+<p>32와 33의 가장 중요한 차이는 <strong>안정성을 구현하는 방식의 철학</strong> 자체가 정반대로 바뀌었다는 점입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔄</span>
+  <div class="callout-body">
+    <p class="callout-title">단단한 안정 vs 부드러운 안정 — 안정화 패러다임 전환</p>
+    <table>
+      <thead>
+        <tr><th></th><th>32 — 4D Guidance System (구)</th><th>33 — FLUIDSUPPORT (신)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>발상</strong></td><td>단단한 폼으로 발이 안쪽으로 무너지는 걸 막는다</td><td>부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡는다</td></tr>
+        <tr><td><strong>구조</strong></td><td>중창 안쪽에 단단한 EVA 인서트 (직접 교정력)</td><td>지오메트리(밑창 형상) + 듀얼 폼 (간접 안내)</td></tr>
+        <tr><td><strong>장점</strong></td><td>심한 과내전에도 확실한 교정. 13년 검증</td><td>발이 자연스럽게 움직이면서 안정성 확보. 단단함이 사라져 편안함 ↑</td></tr>
+        <tr><td><strong>단점</strong></td><td>"안정화는 딱딱하다"는 평가의 원인</td><td>심한 과내전에는 교정력 부족 가능성 (검증 부족)</td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p>이건 단순한 미드솔 폼 변경이 아니라 <strong>안정화 카테고리 전체의 방향 전환</strong>입니다. 호카 ARAHI, 브룩스 글리세린 GTS, NB 1080 안정화 버전 등 최근 안정화 트렌드와 같은 흐름 — 단단한 인서트 대신 폼 형상·구성으로 안정성을 만드는 방향.</p>
+
+<h2>5가지 핵심 변화 점검</h2>
+
+<h3>1. 4D Guidance System 폐지 ⚠️ 가장 큰 변화</h3>
+<p>13년간 카야노의 정체성이었던 단단한 EVA 인서트가 사라졌습니다. <strong>32까지의 "단단한 안정감"에 익숙했던 평발 러너에게는 33이 낯설게 느껴질 가능성</strong>이 큽니다. 반대로 "안정화라 그런가 쿠션이 좀 단단했다"고 느꼈던 러너에게는 환영할 변화.</p>
+
+<h3>2. FF BLAST MAX 도입 ✅ 쿠션 부드러움 개선</h3>
+<p>슈퍼블라스트 3·노바블라스트 5 등에서 호평 받은 FF BLAST MAX가 카야노 시리즈에 처음 도입. 32의 FF Blast+ ECO 대비 <strong>더 부드럽고 반발력도 약간 개선</strong>. "안정화인데 가볍게 통통 튀는 느낌"이 카야노 33의 정체성이 될 가능성.</p>
+
+<h3>3. 드롭 10mm → 8mm ✅ 아킬레스 부담 ↓</h3>
+<p>드롭 2mm 감소. 아킬레스건염 이력이 있는 러너에게 유리. 다만 11mm/10mm 드롭에 익숙한 러너는 종아리 부담이 약간 늘 수 있어 적응 기간 필요.</p>
+
+<h3>4. 무게 -2g (300 → 298g) ↔ 사실상 동일</h3>
+<p>거의 의미 없는 수치 변화. 안정화 카테고리에서 300g대는 표준 — 둘 다 "묵직한 안정화" 영역.</p>
+
+<h3>5. 발볼 — 33이 32보다 여유, 단 X-와이드는 미확정</h3>
+<p>출시 후 리뷰(DOR)에 따르면 <strong>33은 32보다 토박스가 덜 좁아져 표준(standard) 발볼에 더 잘 맞습니다</strong>. 옵션은 32가 표준·와이드·X-와이드 3종인 반면 <strong>33은 표준·와이드(2E) 2종</strong>으로, X-와이드 출시는 미확정. 발볼 4E 초과(EE 이상)라면 32 X-와이드를 세일 시점에 잡는 게 안전합니다.</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>심한 과내전 + 13년 검증 안전 우선</td><td><strong>32 (세일 대기)</strong></td><td>4D Guidance 강한 교정력, FLUIDSUPPORT 검증 부족</td></tr>
+    <tr><td>발볼 4E+ (X-와이드 필수)</td><td><strong>32 X-와이드 (세일)</strong></td><td>33 X-와이드 출시 미확정</td></tr>
+    <tr><td>가성비 우선 + 표준~와이드 발볼</td><td><strong>32 (세일 12~14만원)</strong></td><td>33 출시 후 30~40% 세일 시점</td></tr>
+    <tr><td>"안정화는 단단하다"고 느꼈던 러너</td><td><strong>33</strong></td><td>FF BLAST MAX 도입으로 쿠션 부드러움 ↑</td></tr>
+    <tr><td>아킬레스건염 이력</td><td><strong>33</strong></td><td>드롭 10→8mm 감소로 부담 ↓</td></tr>
+    <tr><td>무릎 통증 + 평발</td><td>둘 다 OK</td><td>40mm 힐 스택 동일</td></tr>
+    <tr><td>32 사용 중 + 600km 이내 멀쩡</td><td><strong>32 계속</strong></td><td>업그레이드 가치 미미</td></tr>
+    <tr><td>안정화 첫 도전 (가벼운 과내전)</td><td>33 (시착 후) 또는 32 (검증)</td><td>매장 시착 후 결정 권장</td></tr>
+    <tr><td>풀코스/하프 안정화 1켤레</td><td><strong>32 검증된 700km 내구성</strong></td><td>33 내구성 미검증</td></tr>
+    <tr><td>주 100km+ 고볼륨 안정화</td><td><strong>32</strong></td><td>장기 검증, 33은 신뢰 데이터 부족</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — 32 세일 타이밍이 결정적</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 5~12월 카야노 가격 변동 예측</p>
+    <ul>
+      <li><strong>출시 직후 (지금):</strong> 33 21만원대 풀가 / 32 정가~초기 인하(직영·공식몰 17만원대 시작 가능) → 32 세일 본격화 직전, 급하지 않으면 7~8월 대기가 유리</li>
+      <li><strong>7~8월 (시즌 오프):</strong> 32 14~15만원대 / 33 20만원대 → 32 가성비 본격 시작</li>
+      <li><strong>11월 (블프):</strong> 32 12~13만원대 가능 / 33 18~19만원대 → 32 가성비 최강, 단 사이즈·컬러 빠진 옵션 다수</li>
+      <li><strong>12월~1월:</strong> 32 재고 소진. X-와이드는 더 빨리 사라짐. 33이 사실상 유일 옵션</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>가장 합리적 액션:</strong></p>
+<ul>
+  <li><strong>심한 과내전·발볼 4E+:</strong> 6월 출시 직후 32 X-와이드 본인 사이즈 확보. 7~8월 세일까지 기다리면 X-와이드는 품절 위험</li>
+  <li><strong>표준~와이드 + 가성비:</strong> 7~8월 시즌 오프 또는 11월 블프까지 기다려 32 세일가 12~14만원대 사냥</li>
+  <li><strong>33의 새로운 부드러움 우선:</strong> 6/1 출시 첫 주에 매장 시착 후 결정. 신상 풀가 부담스러우면 9~10월까지 기다려 33 가격 안정화 노림</li>
+</ul>
+
+<h2>한국 러너 부상별 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>평발 + 심한 과내전</td><td><strong>32</strong></td><td>4D Guidance 강한 교정력 검증</td></tr>
+    <tr><td>평발 + 가벼운 과내전</td><td>33</td><td>FLUIDSUPPORT 자연스러운 안내 + 부드러움</td></tr>
+    <tr><td>무릎 통증 (러너스 니, 장경인대염)</td><td>32 = 33</td><td>40mm 힐 스택 동일</td></tr>
+    <tr><td>아킬레스건염</td><td><strong>33</strong></td><td>드롭 10→8mm 부담 ↓</td></tr>
+    <tr><td>족저근막염</td><td>32 = 33</td><td>둘 다 excellent (PureGEL 또는 FLUIDSUPPORT)</td></tr>
+    <tr><td>정강이 부목 (Shin Splints)</td><td>32 = 33</td><td>40mm 스택 충격 흡수</td></tr>
+    <tr><td>발목 부상 이력</td><td><strong>32</strong></td><td>강한 안정화 + 안정성 10/10</td></tr>
+  </tbody>
+</table>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다. 평발·무릎 통증 종합 가이드: <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></p>
+
+<h2>비슷한 가격대 안정화 대안</h2>
+
+<p>카야노 외 안정화 옵션도 검토할 가치:</p>
+
+<ul>
+  <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 13년 검증된 4D Guidance, 평발 1순위</li>
+  <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
+  <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 19만원대</li>
+  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (294g)</li>
+  <li><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> — 맥시멀 쿠션 + 안정화 결합</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 32 → 33 업그레이드 가치 있나요?</h3>
+<p>32가 500km 이내 멀쩡하다면 그냥 굴리세요. <strong>32의 단단한 안정성에 만족하는 평발 러너라면 33으로 갈 이유 없음</strong>. 반대로 "단단함이 좀 거슬렸다"면 33이 답.</p>
+
+<h3>Q. 신상 33을 사면 검증 부족 리스크가 큰가요?</h3>
+<p>RunRepeat 정량 랩은 아직 미게시지만, 출시 후 전문가 리뷰(Doctors of Running)는 나왔습니다 — "더 부드럽지만 <strong>FLUIDSUPPORT의 미드풋 지지·반발이 4D Guidance보다 약하다</strong>"는 평. 카야노 시리즈 자체는 30년 역사로 큰 결함 가능성은 낮지만, <strong>심한 과내전 교정이 목적이라면 33의 교정력이 32보다 약할 수 있다</strong>는 점을 감안하세요.</p>
+
+<h3>Q. 매장 시착 시 어떤 점 체크해야 하나요?</h3>
+<p>3가지: ① 본인 발 안쪽이 안으로 무너지는지(과내전 교정 체감), ② 5분 정도 걸어보면서 미드솔 단단함 정도(32 사용자라면 비교 즉시 가능), ③ 토박스 너비 — 33은 X-와이드 미확정이라 발볼 4E+면 표준 토박스가 부족할 수 있음.</p>
+
+<h3>Q. 평발인데 안정화가 꼭 필요한가요?</h3>
+<p>평발이 자동으로 안정화를 의미하지는 않습니다. <strong>본인이 과내전이 심한지가 핵심</strong>. 가벼운 평발이라면 페가수스 41/42·1080 v15 같은 중립화로도 충분. 정형외과 또는 러닝 전문점에서 보행 분석 1회 받아보면 명확해짐. <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a></p>
+
+<h3>Q. 둘 다 풀코스 가능한가요?</h3>
+<p>OK. 다만 안정화 특성상 무게 300g대로 빠른 페이스는 부담. <strong>Sub-4 ~ Sub-5 풀코스 완주 목표 + 무릎/평발 안전 우선이라면 두 모델 모두 적합</strong>. Sub-3:30 이하 도전이라면 안정화는 부담스럽고 카본 슈즈 분리 권장.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 카야노 33 출시(2026-06-01) 후 갱신했습니다(2026-06-22). RunRepeat 정량 랩은 아직 미게시 상태이며, 출시 후 전문가 초기 평가(Doctors of Running)를 반영했습니다. 한국 정가·세일가는 시점에 따라 변동되니 공식몰에서 확인하세요.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
+    <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 13년 검증·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
+    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 신상 풀가 21만원대를 감수하더라도 새로운 부드러운 안정성의 가치 ↑.</p>
+    <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/GxLH2kjm" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">카야노 32 최저가 →</span>
+    </a>
+    <a href="/shoes/asics-gel-kayano-33" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">카야노 33 정보 (6/1 출시) →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>카야노가 "안정화"라면, 데일리·장거리·레이스 카테고리는 다른 신발이 답입니다. 안정화 유저라도 Sub-3:30 이하 도전이나 빠른 페이스 훈련엔 카본/슈퍼트레이너 분리가 권장돼요.</p>
+
+<ul>
+  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a> (5~10km 데일리 훈련용)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 + 부드러움 우선 중립화)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km+ 페이스 훈련 분리용)</li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 — 6/1 출시 상세 안내</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
+</ul>
+
+<p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33은 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 본 글의 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입, FLUIDSUPPORT) 기반 추정. 33 실측 데이터 게시 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: 'nike-pegasus-41-vs-42-comparison',
+    slug: 'nike-pegasus-41-vs-42-comparison',
+    title: '나이키 페가수스 41 vs 42 비교 | 1만원 차이로 갈리는 선택 — 41 할인 13만원 살까, 42 신상 16만원 살까',
+    description: '페가수스 41(159,000원)과 42(169,000원)을 RunRepeat 실측·BITR·RTR 데이터로 직접 비교. 풀 렝스 Air Zoom 추가, 힐 스택 +2.4mm, 한국 와이드 정식 출시 등 5가지 핵심 변화 + 상황별 구매 결정 매트릭스 + 블프 시나리오까지 한 장 정리.',
+    thumbnail: '/images/blog/nike-pegasus-41-vs-42-comparison.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-17',
+    category: 'review' as const,
+    readingTime: 11,
+    tags: ['나이키 페가수스', '페가수스 41', '페가수스 42', '러닝화 비교', '나이키', '입문 데일리 트레이너', '와이드 러닝화', '러닝화 추천'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가격 1만원 차이</strong> (41 159,000원 / 42 169,000원) — 단 41은 이미 이월 할인 12~13만원대 풀림, 실제 차이는 <strong>3~4만원</strong></li>
+    <li>42의 진짜 변화 3가지: <strong>풀 렝스 Air Zoom 추가</strong> + <strong>힐 스택 +2.4mm 실측 부드러움</strong> + <strong>한국 와이드 SKU 정식 출시</strong></li>
+    <li>나이키 "에너지 리턴 +15%" 주장 → 실측 +1.6%p (마케팅). 가성비만 보면 <strong>41 이월 할인</strong>이 답, 발볼 4E급·뒤꿈치 착지 부드러움 우선이면 <strong>42 신상</strong> 정답</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 데이터 소스</p>
+    <p>RunRepeat 랩 실측(2026-04-25 공개) + Believe in the Run B티어 평가 + Road Trail Run 8.79/10 + 한국 나이키 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 5~10km 한 달 사용기. 양 신발 단독 리뷰는 <a href="/shoes/nike-pegasus-41">페가수스 41 상세</a> · <a href="/shoes/nike-pegasus-42">페가수스 42 상세</a>에서 확인.</p>
+  </div>
+</div>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 41</th><th>페가수스 42</th><th>차이</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-04-09</strong></td><td>2년차</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>169,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>120,000~135,000원</strong></td><td>145,000원</td><td>실제 차이 ~3만원</td></tr>
+    <tr><td><strong>무게 (US M9 실측)</strong></td><td>281g</td><td>286g</td><td>+5g</td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>33.6mm</td><td><strong>36mm</strong></td><td>+2.4mm</td></tr>
+    <tr><td><strong>전족부 스택 (실측)</strong></td><td>22mm</td><td>22mm</td><td>동일 (공식 27mm와 불일치)</td></tr>
+    <tr><td><strong>드롭 (공식 / 실측)</strong></td><td>11mm</td><td>10mm / 14mm</td><td>공식·실측 5mm 불일치</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>ReactX 폼</td><td><strong>ReactX + 풀 렝스 Air Zoom</strong></td><td>Air Zoom 풀 추가</td></tr>
+    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>125</td><td><strong>131</strong></td><td>+6 (부드러움)</td></tr>
+    <tr><td><strong>에너지 리턴 (힐 / 전족)</strong></td><td>55.5% / 61.4%</td><td>57.1% / 61.2%</td><td>+1.6%p / 0 (마케팅 +15%와 큰 격차)</td></tr>
+    <tr><td><strong>토박스 너비 (실측)</strong></td><td>72.9mm</td><td>72.3mm</td><td>거의 동일</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>있음 (구색 부족)</td><td><strong>있음 (남·여 정식 출시 동일가)</strong></td><td>접근성 ↑</td></tr>
+    <tr><td><strong>내구성 (예상)</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 280원</td><td>약 282원</td><td>거의 동일</td></tr>
+    <tr><td><strong>BITR 평가</strong></td><td>B티어</td><td>B티어 (Design A / Value A / Performance C)</td><td>동급</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 5가지 — 마케팅 vs 실제</h2>
+
+<h3>1. 풀 렝스 Air Zoom 추가 ✅ 진짜 변화</h3>
+<p>41의 듀얼 포드(힐+전족부 분리 Zoom) → 42에서 풀 렝스 곡선형 Air Zoom으로 교체. 중족~전족부 착지 시 반발감이 확실히 개선됐고, 41 사용자들이 "전족부가 살아있다"고 체감하는 가장 큰 이유. 5km 이지런에서 41보다 약간 통통 튀는 느낌.</p>
+
+<h3>2. 힐 스택 +2.4mm 실측 부드러움 ✅ 진짜 변화</h3>
+<p>RunRepeat 실측: 힐 스택 33.6→36mm, 힐 SA(충격 흡수) 125→131(+6). 한강 아스팔트 5~10km 데일리에서 뒤꿈치 착지 시 무릎 충격 흡수가 확실히 부드러워짐. <strong>무릎 약한 러너에게 42가 더 유리</strong>.</p>
+
+<h3>3. 한국 와이드 SKU 정식 출시 ✅ 한국 러너 핵심 변화</h3>
+<p>41까지는 한국 나이키 공식몰에서 와이드 SKU 찾기가 쉽지 않았고 가끔 풀려도 컬러·사이즈 선택지 제한적. <strong>42는 출시 시점부터 남성·여성 와이드 모두 169,000원 동일가</strong>로 정식 출시. 발볼 4E급 한국 러너에게는 이게 가장 의미 있는 업그레이드.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">4. "에너지 리턴 +15%" 마케팅 vs 실측 ❌ 과장</p>
+    <p>나이키 공식 발표 "전작 대비 에너지 리턴 +15%". RunRepeat 실측 결과: 힐 55.5→57.1% (+1.6%p), 전족부 61.4→61.2% (±0). <strong>실제 체감은 거의 없는 마케팅 수치</strong>. 반발력 우선이라면 페가수스 플러스(ZoomX 풀렝스) 또는 노바블라스트 5(FF Blast Max)가 답.</p>
+  </div>
+</div>
+
+<h3>5. 토박스 너비 ❌ 마케팅 vs 실측 불일치</h3>
+<p>나이키는 "42에서 토박스 확대" 주장. RunRepeat 실측 토박스: 41 72.9mm → 42 72.3mm로 <strong>오히려 미세하게 좁아짐</strong>. 다만 와이드 SKU 정식 출시로 발볼 4E급도 안전하게 갈 수 있게 됐으니, 표준 SKU 비교는 사실상 동급으로 봐도 됨.</p>
+
+<h2>상황별 구매 결정 매트릭스</h2>
+
+<table>
+  <thead>
+    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>41 이월 12~13만원</strong></td><td>실제 사용감 차이 미미, 3~4만원 절약</td></tr>
+    <tr><td>발볼 4E급 + 와이드 필수</td><td><strong>42 와이드</strong></td><td>한국 정식 출시 SKU 안정성</td></tr>
+    <tr><td>뒤꿈치 착지 + 무릎 약함</td><td><strong>42</strong></td><td>힐 스택 +2.4mm + SA +6 부드러움</td></tr>
+    <tr><td>전족 착지 위주 + 가벼운 반발</td><td>42 (Air Zoom 풀렝스)</td><td>전족부 반발감 개선</td></tr>
+    <tr><td>5km 이하 단거리 데일리</td><td>41 (가성비) 또는 42 (취향)</td><td>둘 다 충분, 가격으로 선택</td></tr>
+    <tr><td>10km 이상 데일리</td><td><strong>42</strong></td><td>5g 무게 부담보다 힐 안정감이 우선</td></tr>
+    <tr><td>월 100km+ 고볼륨</td><td>둘 다 비추</td><td>보메로 18 또는 슈퍼블라스트 3 고려</td></tr>
+    <tr><td>하프마라톤 이상 롱런</td><td>둘 다 비추</td><td>줌 플라이 6, 페가수스 플러스 분리</td></tr>
+    <tr><td>41 600km 이내 멀쩡함</td><td><strong>41 계속</strong></td><td>업그레이드 가치 미미</td></tr>
+    <tr><td>41 수명 다 됨 + 발볼 4E급</td><td><strong>42 와이드</strong></td><td>표준 가격 와이드 SKU 가치</td></tr>
+  </tbody>
+</table>
+
+<h2>가격 시나리오 — 언제 사는 게 가장 합리적인가</h2>
+
+<div class="callout success">
+  <span class="callout-icon">💰</span>
+  <div class="callout-body">
+    <p class="callout-title">시즌별 가격 변동 예측</p>
+    <ul>
+      <li><strong>지금(2026 5~6월):</strong> 41 이월 13만원대 / 42 신상 16~17만원 — 3~4만원 차이</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 41 12만원대 가능 / 42 15만원대 — 차이 더 벌어짐</li>
+      <li><strong>블프 (11월):</strong> 41 10만원대 가능 / 42 13~14만원 — 가성비 41 압승</li>
+      <li><strong>12월~1월:</strong> 41 재고 소진 시작 → 사이즈·컬러 선택지 줄어듦. 와이드는 더 빠르게 품절</li>
+      <li><strong>2027년 3월~ (42 이월 시작):</strong> 42 13만원대로 떨어지면서 43(추정) 출시 사이클</li>
+    </ul>
+  </div>
+</div>
+
+<p><strong>지금 사야 한다면:</strong> 41 이월 할인 + 본인 사이즈·컬러 잡히면 41이 가성비 최강. 단 발볼 4E급은 42 와이드 정가가 안전.</p>
+<p><strong>3개월 기다릴 수 있다면:</strong> 여름 시즌 오프~블프 노리고 41 10만원대 사냥. 발볼 표준이면 거의 무조건 이게 답.</p>
+
+<h2>한국 와이드 옵션 비교 — 발볼 4E급의 진짜 차이</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 41 와이드</th><th>페가수스 42 와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정식 출시</td><td>있음 (구색 제한)</td><td><strong>있음 (남·여 정식 출시)</strong></td></tr>
+    <tr><td>가격</td><td>159,000원 (표준과 동일)</td><td>169,000원 (표준과 동일)</td></tr>
+    <tr><td>컬러 선택지</td><td>2~3종</td><td>5~6종</td></tr>
+    <tr><td>사이즈 재고</td><td>인기 사이즈 빠른 품절</td><td>출시 직후라 안정적</td></tr>
+    <tr><td>실제 토박스</td><td>72.9mm + 와이드 확장</td><td>72.3mm + 와이드 확장</td></tr>
+  </tbody>
+</table>
+
+<p>발볼 4E급이라면 둘 다 와이드 SKU로 가야 하고, <strong>컬러·사이즈 선택지가 풍부한 42 와이드가 유리</strong>. 단 본인 사이즈가 41 와이드로 잡힌다면 가격 메리트 살릴 수 있음.</p>
+
+<h2>부상·체형별 권장</h2>
+
+<ul>
+  <li><strong>평발:</strong> 둘 다 안정화는 아니지만 ReactX 폼이 잘 받쳐줌. 무릎까지 약하면 42 권장(힐 스택 +2.4mm). 과내전 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 같은 정식 안정화</li>
+  <li><strong>무릎 통증 이력:</strong> <strong>42</strong> (힐 SA 131, 36mm 스택). <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></li>
+  <li><strong>아킬레스건염:</strong> 11mm(41) 또는 10mm/14mm(42 공식/실측) 드롭 모두 OK</li>
+  <li><strong>족저근막염:</strong> 둘 다 excellent — 36mm 힐 스택(42)이 약간 유리</li>
+  <li><strong>정강이 부목:</strong> 둘 다 충분, 41이 무게(281g) 미세하게 유리</li>
+</ul>
+
+<h2>비슷한 가격대 대안</h2>
+
+<p>16만원대 입문 데일리 트레이너에서 페가수스가 정답은 아닐 수도. 같은 가격대 비교:</p>
+
+<ul>
+  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 맥시멀 쿠션 + 모자이드 락커, 페가수스보다 가볍고 부드러움</li>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 200,000원대지만 쿠셔닝 최상. 가성비는 페가수스가 우위</li>
+  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 폼 부드러움 1위. 발볼 넓은 라스트, 발볼 4E급에 추천</li>
+  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — ZoomX 풀렝스, 페가수스 42보다 반발력 강함 (단 가격 +5만원대)</li>
+</ul>
+
+<h2>FAQ</h2>
+
+<h3>Q. 41 → 42 업그레이드 가치 있나요?</h3>
+<p>41이 600km 안 신었다면 그냥 41 굴리세요. 41이 수명 다 됐고 발볼 4E급이면 42 와이드(정식 출시)가 답. 표준 발볼이고 가성비만 본다면 41 블프 세일이 더 매력적.</p>
+
+<h3>Q. 42를 사면 41 대비 뭐가 가장 좋아지나요?</h3>
+<p>두 가지: ① <strong>뒤꿈치 착지 부드러움</strong>(힐 스택 +2.4mm, SA +6 실측), ② <strong>한국 와이드 SKU 안정 공급</strong>. 그 외 변화(에너지 리턴, 토박스 확대)는 마케팅과 실측이 다름.</p>
+
+<h3>Q. 둘 다 처음이라면 41 사도 되나요?</h3>
+<p>완전 OK. 41은 한국 입문화 부동의 1위였고, 42가 압도적 개선판은 아닙니다. 이월 13만원대로 살 수 있다면 가성비 최강. 단 발볼 4E급이라면 42 와이드 권장(41 와이드는 재고 빠르게 줄어드는 중).</p>
+
+<h3>Q. 카본 슈즈로 가야 할까요?</h3>
+<p>페가수스 41·42 모두 카본 슈즈가 아닌 데일리 트레이너입니다. 카본 슈즈는 풀코스/하프 레이스 + 페이스 훈련 전용. 데일리 훈련은 페가수스 같은 일반 트레이너가 정답. 카본 슈즈 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 →</a></p>
+
+<h3>Q. 10km 넘어가는 거리도 쓸 수 있나요?</h3>
+<p>둘 다 10~13km까지는 무난하지만 그 이상은 비추. BITR도 42를 "6-13km 스윗스팟의 원 트릭 포니"로 평가. 하프 이상은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, 또는 줌 플라이 6 분리.</p>
+
+<h2>결론 — 내 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">90% 한국 러너에게는 41 이월 + 가성비</p>
+    <p>표준 발볼 + 5~10km 데일리 + 가성비 우선이라면 <strong><a href="/shoes/nike-pegasus-41">41 이월 13만원대</a></strong>가 거의 무조건 답. 42의 실제 개선은 풀 렝스 Air Zoom + 힐 스택 +2.4mm 정도이고, 3~4만원 추가 지출 가치는 본인 발 조건에 따라 갈림.</p>
+    <p>단 <strong>발볼 4E급(와이드 필수)</strong>이거나 <strong>무릎 약한 뒤꿈치 착지 러너</strong>라면 망설이지 말고 <strong><a href="/shoes/nike-pegasus-42">42 와이드</a></strong>로 가세요. 한국 정식 SKU 안정성과 힐 부드러움이 3~4만원 가치를 만듭니다.</p>
+  </div>
+</div>
+
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/FxCvSGHY" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">페가수스 41 최저가 →</span>
+    </a>
+    <a href="/shoes/nike-pegasus-42" class="affiliate-btn pending">
+      <span class="affiliate-btn-store">상세</span>
+      <span class="affiliate-btn-product">페가수스 42 정보 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+</div>
+
+<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>다른 카테고리 세대 비교</h2>
+
+<p>페가수스가 "데일리 트레이너"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 RunRepeat 실측 + BITR + 한국 가격 + 와이드 SKU 동일 포맷.</p>
+
+<ul>
+  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a> (평발·과내전 + 무릎 보호 우선)</li>
+  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 데일리 + 부드러움 우선)</li>
+  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km 이상 + 페이스 훈련 분리용)</li>
+  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
+  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
+</ul>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/nike-pegasus-42-review">나이키 페가수스 42 솔직 리뷰 — 단독 평가</a></li>
+  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 11개 신발 토박스 실측 정리</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
+  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
+  <li><a href="/blog/running-shoe-trends-2026-eva-replacement">2026 러닝화 트렌드 — EVA 대체 폼</a></li>
+</ul>
+
+<p><small>출처: RunRepeat 랩 데이터(페가수스 41/42, 2026-04-25 게시) / Believe in the Run 페가수스 42 리뷰 / Road Trail Run 8.79/10 / 한국 나이키 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 5~10km 한 달 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+`,
+  },
+  {
+    id: '2026-bogwangjung-suyuk-run',
+    slug: '2026-bogwangjung-suyuk-run',
+    title: '보광정 수육런 D-14 | 5월 30일 토 8AM 남산 북측순환로 — 기록 측정 없는 펀런, 수육·생수·기념 티셔츠 제공',
+    description: '보광정이 작년에 이어 2년째 5월 30일 토요일 보광정 수육런을 개최합니다. 국립극장 해오름극장 출발, 남산 북측순환로 코스, 8AM 시작. 순위·기록 측정 없는 펀런 이벤트로 가족·초보 러너 환영. 5월 15일 10시부터 구글폼 선착순 접수.',
+    thumbnail: '/images/blog/2026-bogwangjung-suyuk-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['보광정', '보광정 수육런', '남산 북측순환로', '국립극장', '펀런', '서울 마라톤 일정', '가족 러닝', '도심 러닝'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>보광정 수육런</strong> 2년차 — <strong>5월 30일(토) 8AM</strong>, 국립극장 해오름극장 출발 + 남산 북측순환로</li>
+    <li><strong>순위·기록 측정 없는 펀런</strong> — 남녀노소 누구나, 기념 티셔츠·수육·생수 제공, 경품 추첨</li>
+    <li>접수: <strong>5월 15일 10시부터 선착순</strong> — 보광정 인스타그램 프로필 구글폼 링크 / 문의 010-8794-9272</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥩</span>
+  <div class="callout-body">
+    <p class="callout-title">"수육런"이 뭔가</p>
+    <p>국립극장 옆에 위치한 보광정(@bogwangjung_official) 음식점이 작년에 이어 개최하는 <strong>러닝 + 수육 제공</strong> 이벤트입니다. 작년에 큰 관심과 사랑을 받아 올해 2년차 — 5월의 마지막 날 5월 30일(토)에 열립니다. 가정의 달 마무리를 가족이나 러닝메이트와 도심 트레일에서 보내는 콘셉트.</p>
+  </div>
+</div>
+
+<h2>대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>일시</strong></td><td>2026년 <strong>5월 30일(토) 8AM 시작</strong></td></tr>
+    <tr><td><strong>출발지</strong></td><td>국립극장 해오름극장</td></tr>
+    <tr><td><strong>코스</strong></td><td>남산 북측순환로 (도심 트레일)</td></tr>
+    <tr><td><strong>참가 자격</strong></td><td>신체 건강한 남녀노소 누구나</td></tr>
+    <tr><td><strong>기록·순위</strong></td><td>측정하지 않음 (이벤트 펀런)</td></tr>
+    <tr><td><strong>기념품</strong></td><td>참가자 전원 기념 티셔츠 (별도 택배 발송)</td></tr>
+    <tr><td><strong>현장 제공</strong></td><td>생수, 수육</td></tr>
+    <tr><td><strong>경품</strong></td><td>상품권 및 굿즈 추첨</td></tr>
+    <tr><td><strong>접수 시작</strong></td><td><strong>2026년 5월 15일 10:00</strong> — 선착순 마감</td></tr>
+    <tr><td><strong>접수 방법</strong></td><td>보광정 인스타그램(@bogwangjung_official) 프로필 하단 구글폼 링크</td></tr>
+    <tr><td><strong>문의</strong></td><td>010-8794-9272 (12:00~18:00)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">📸</span>
+  <div class="callout-body">
+    <p class="callout-title">사진 마케팅 활용 동의 필수</p>
+    <p>행사에 촬영된 사진은 마케팅 목적으로 활용될 예정입니다. <strong>해당 내용에 동의하는 경우에만 행사 참여가 가능</strong>합니다. 사진 노출이 부담스럽다면 신청 전 약관 확인 필수.</p>
+  </div>
+</div>
+
+<h2>남산 북측순환로 — 어떤 코스인가</h2>
+
+<p>국립극장 해오름극장에서 출발해 <strong>남산 북측순환로</strong>를 도는 코스. 정확한 거리는 공식 공지에 명시되지 않았으나 보통 북측순환로 한 바퀴는 약 4~5km 수준. 펀런 성격이라 본인 페이스에 맞게 조절 가능합니다.</p>
+
+<ul>
+  <li><strong>지형:</strong> 남산 능선을 따라 완만한 경사 — 도심 트레일에 가까움</li>
+  <li><strong>풍경:</strong> 남산 숲길 + N서울타워 조망. 5월 말 신록 절정 시기</li>
+  <li><strong>교통:</strong> 동대입구역(3호선) 또는 충무로역(3·4호선)에서 도보 10~15분 + 셔틀버스</li>
+  <li><strong>주의:</strong> 다른 보행자·일반 산책객과 코스 공유 — 안전이 최우선, 추월 매너 필수 (공식 공지에서도 양해 요청)</li>
+</ul>
+
+<h2>이런 러너에게 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">보광정 수육런이 어울리는 사람</p>
+    <ol>
+      <li><strong>러닝 입문자·가족:</strong> 기록 부담 없는 첫 러닝 이벤트. 자녀와 함께도 가능</li>
+      <li><strong>도심 트레일 처음 도전:</strong> 평지 도로 러닝만 해본 사람의 첫 트레일 입문</li>
+      <li><strong>러닝 후 좋은 음식 마무리 좋아하는 사람:</strong> 수육 + 생수 = 카브 로딩과 단백질 보충 완벽 조합</li>
+      <li><strong>커뮤니티 분위기 좋아하는 사람:</strong> 240명 안팎 소규모 추정, 작년 후기 분위기 좋았다는 평</li>
+    </ol>
+  </div>
+</div>
+
+<h2>이런 러너에게는 비추</h2>
+
+<ul>
+  <li><strong>기록 목표가 있는 러너:</strong> 측정 없음 + 일반 보행자 공유 코스라 PR 도전엔 부적합</li>
+  <li><strong>5km 이상 진지한 훈련 필요한 시기:</strong> 풀코스/하프 빌드업 중이라면 본인 훈련 페이스를 우선</li>
+  <li><strong>이른 새벽 기상 어려운 사람:</strong> 8AM 시작 = 5~6AM 기상 + 7AM 도착이 표준</li>
+</ul>
+
+<h2>신발 추천</h2>
+
+<p>남산 북측순환로는 포장도로 + 일부 짧은 비포장 구간 — <strong>일반 데일리 러닝화로 충분</strong>합니다. 트레일화까지는 불필요. 펀런 성격이라 본인 가장 편한 데일리 트레이너 추천:</p>
+
+<ul>
+  <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 무릎 부담 최소</li>
+  <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가볍고 부드러운 데일리</li>
+  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Fresh Foam X, 폭이 넓어 발 편함</li>
+  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 페이스 살짝 올리고 싶은 러너용</li>
+</ul>
+
+<p>본인 발 특성에 맞는 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>D-14 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-14 (5/16):</strong> @bogwangjung_official 인스타그램 프로필 하단 구글폼 링크 통해 신청. 선착순이라 5/15 접수 시작 후 빠른 마감 가능성</li>
+  <li><strong>D-7 (5/23):</strong> 기념 티셔츠 사이즈 안내 확인 (택배 발송 일정)</li>
+  <li><strong>D-3 (5/27):</strong> 남산 북측순환로 1회 답사 — 코스 감각·경사 미리 체크</li>
+  <li><strong>D-1 (5/29):</strong> 8AM 시작이라 새벽 4~5시 기상 패턴 맞춰 일찍 취침</li>
+  <li><strong>D-Day (5/30):</strong> 6:30~7:00 국립극장 해오름극장 도착. 신분증·기념품 수령</li>
+</ol>
+
+<h2>관련 5~6월 도심 러닝 이벤트</h2>
+
+<ul>
+  <li><a href="/blog/2026-icebucket-run-seoul">2026 아이스버킷 런 서울</a> — 자선 펀런</li>
+  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 대회 접수 안내</li>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
+</ul>
+
+<p><small>출처: 러너스나우(@runners_now) 2026-05-11 게시물 + 보광정(@bogwangjung_official) 공식 공지. 일정·접수 방법은 변경될 수 있으니 신청 직전 @bogwangjung_official 최신 공지 + 문의 010-8794-9272(12:00~18:00) 확인 필수.</small></p>
+`,
+  },
+  {
+    id: '2026-descente-awaken-ekiden-race',
+    slug: '2026-descente-awaken-ekiden-race',
+    title: '데센테 어웨이큰 에키덴 레이스 D-37 | 6/22~23 용산 전쟁기념관 지하 주차장 야간 릴레이 — 240명 무료, 추첨 선정, 5/25 마감',
+    description: '데센테 러닝이 6월 22~23일 용산 전쟁기념관 지하 주차장에서 어웨이큰 에키덴 레이스를 개최합니다. 일반 240명 모집(추첨 선정), 참가비 무료, 남 2인·여 2인·혼성 4인 릴레이 3개 부문. 5월 25일 마감. 일본식 도로 릴레이 포맷 + 도심 지하 야간이라는 독특한 컨셉.',
+    thumbnail: '/images/blog/2026-descente-awaken-ekiden-race.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['데센테', 'Descente', '어웨이큰 에키덴', 'Awaken Ekiden', '에키덴', '릴레이 마라톤', '용산 전쟁기념관', '야간 러닝', '도심 러닝', '러닝 크루'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>데센테 어웨이큰 에키덴 레이스</strong> — 6월 22일(월)~23일(화) 20:00~22:00, <strong>용산 전쟁기념관 지하 주차장</strong> 야간 진행</li>
+    <li><strong>일반 부문 240명 무료 + 추첨 선정</strong>, 남 2인 릴레이 / 여 2인 릴레이 / 혼성 4인 릴레이(남2·여2) 3개 부문</li>
+    <li>접수: <strong>2026년 5월 11일~5월 25일(월)</strong> — D-9, 데센테러닝(@descenterunning) 채널 통해 신청</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🌃</span>
+  <div class="callout-body">
+    <p class="callout-title">"지하 주차장 야간 에키덴" 컨셉이 핵심</p>
+    <p>데센테 러닝이 5월 4일 공식 발표한 신규 레이스로, 한국에서는 흔치 않은 <strong>일본식 에키덴(駅伝) 릴레이 포맷</strong> + <strong>용산 전쟁기념관 지하 주차장 야간 진행</strong>이라는 독특한 컨셉입니다. 일반인 추첨 240명 + 사전 초청 크루 9개 팀으로 구성된 양일 진행 이벤트.</p>
+  </div>
+</div>
+
+<h2>에키덴(駅伝)이 정확히 뭔가</h2>
+
+<p><strong>에키덴(駅伝, Ekiden)</strong>은 일본에서 발상한 도로 릴레이 마라톤 포맷입니다. 1917년 도카이도(東海道) 첫 개최 이후 일본 운동 문화의 상징이 됐고, 매년 1월 1일 도쿄~하코네 왕복 217.1km를 10명이 이어 달리는 <strong>하코네 에키덴(箱根駅伝)</strong>이 대표적입니다.</p>
+
+<ul>
+  <li><strong>구조:</strong> 1개 팀(보통 2~10명)이 구간을 나눠 이어달리는 릴레이</li>
+  <li><strong>특징:</strong> 개인 PR보다 <strong>팀 합산 기록</strong>이 핵심 — 동료 신뢰·바통(襷, 다스키) 전달이 중요</li>
+  <li><strong>한국 상황:</strong> 한강 에키덴·잠스트 에키덴 등 산발적으로 개최되지만 메이저급 정착은 미흡 — 데센테 어웨이큰 에키덴이 그 공백을 노린 포지셔닝</li>
+</ul>
+
+<h2>일반 참가 부문 — 5/25 마감</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 22일(월) 20:00~22:00</strong></td></tr>
+    <tr><td><strong>장소</strong></td><td><strong>용산 전쟁기념관 지하 주차장</strong></td></tr>
+    <tr><td><strong>참가비</strong></td><td><strong>무료</strong></td></tr>
+    <tr><td><strong>참가 인원</strong></td><td>총 240명</td></tr>
+    <tr><td><strong>부문</strong></td><td>남자 2인 릴레이 / 여자 2인 릴레이 / 혼성 4인 릴레이(남2·여2)</td></tr>
+    <tr><td><strong>모집 기간</strong></td><td>2026년 <strong>5월 11일(월) ~ 5월 25일(월)</strong></td></tr>
+    <tr><td><strong>선정 방식</strong></td><td>신청 기간 내 접수된 팀을 대상으로 <strong>운영 기준에 따라 추첨 선정</strong></td></tr>
+    <tr><td><strong>접수 채널</strong></td><td>데센테 러닝(@descenterunning) 공식 채널</td></tr>
+  </tbody>
+</table>
+
+<h2>크루 초청 부문 — 9개 크루 사전 초청</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회 일시</strong></td><td>2026년 <strong>6월 23일(화) 20:00~22:00</strong></td></tr>
+    <tr><td><strong>장소</strong></td><td>용산 전쟁기념관 지하 주차장 (일반 부문과 동일)</td></tr>
+    <tr><td><strong>진행 방식</strong></td><td>9개 러닝 크루 사전 초청 진행</td></tr>
+    <tr><td><strong>참가 방법</strong></td><td><strong>모집 없음</strong> — 사전 초청된 러닝 크루 한정</td></tr>
+  </tbody>
+</table>
+
+<p>크루 초청 부문은 일반 모집과 별개로, 데센테 측이 사전 초청한 9개 러닝 크루를 대상으로 진행됩니다. 일반 러너가 신청할 수 있는 부문은 <strong>6/22 일반 참가 부문 240명</strong>뿐입니다.</p>
+
+<h2>왜 "지하 주차장 야간"인가</h2>
+
+<p>한국에서 처음 시도되는 컨셉이라 호기심을 끄는 포인트. 도심 도로 폐쇄 없이 안정적 코스 확보가 가능하고, 야간 + 조명 + 음악 등 페스티벌형 연출에 유리합니다. 일본 도쿄·오사카에서 진행된 유사 형식 야간 에키덴 이벤트와 같은 흐름:</p>
+
+<ul>
+  <li><strong>코스:</strong> 지하 주차장 내 일정 거리 루프 (정확한 거리·구간 미공개 — 대회 접수 전까지 순차 공개 예정)</li>
+  <li><strong>분위기:</strong> 조명·음악 연출 가능, 도심 한복판 야간 러닝이라는 비주얼 임팩트</li>
+  <li><strong>날씨:</strong> 6월 말 한국 야외 야간 = 25~28℃ 습도 높음. 지하 주차장은 상대적으로 시원함</li>
+  <li><strong>접근성:</strong> 삼각지역(4·6호선)·이태원역(6호선) 도보권. 야간 진행이라 직장인 참가 용이</li>
+</ul>
+
+<h2>이런 러너에게 추천</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">데센테 어웨이큰 에키덴이 어울리는 사람</p>
+    <ol>
+      <li><strong>러닝 크루·메이트 있는 러너:</strong> 2인·4인 팀 구성이 필수. 평소 같이 뛰는 사람과 한 팀 구성</li>
+      <li><strong>에키덴 포맷 처음 경험하는 러너:</strong> 한국에서 흔치 않은 릴레이 마라톤 경험 가치</li>
+      <li><strong>참가비 0원에 신상 데센테 굿즈 노리는 러너:</strong> 무료 + 데센테 후원 → 굿즈·기념품 기대치 ↑</li>
+      <li><strong>지하 야간 러닝 비주얼·콘텐츠가 좋은 러너:</strong> 인스타그램 콘텐츠 가치 큼</li>
+      <li><strong>직장인 평일 야간 가능:</strong> 월요일 20:00 시작 — 퇴근 후 참가 가능</li>
+    </ol>
+  </div>
+</div>
+
+<h2>이런 러너에게는 비추</h2>
+
+<ul>
+  <li><strong>혼자 뛰는 러너:</strong> 2~4인 팀 구성 필수. 팀 못 구하면 신청 자체 불가</li>
+  <li><strong>월요일 평일 야간 어려운 사람:</strong> 6/22(월) 20:00 시작 — 다음 날 화요일 출근 부담</li>
+  <li><strong>지하 환기·공기 민감한 러너:</strong> 지하 주차장 = 환기 제한적, 호흡기 민감자 주의</li>
+  <li><strong>개인 PR 목표 러너:</strong> 릴레이 포맷 + 추첨 선정 = PR 도전엔 부적합</li>
+</ul>
+
+<h2>릴레이용 신발 추천</h2>
+
+<p>에키덴은 1인당 거리가 짧고(추정 2~5km 구간) 빠른 페이스 유지가 핵심 — <strong>레이싱 슈즈 또는 슈퍼 트레이너</strong>가 정답입니다. 카본 슈퍼슈즈로 잠깐 빠르게 + 회복 + 다시 출전 사이클이 어울림.</p>
+
+<ul>
+  <li><strong>레이싱(2~5km 짧은 구간 + 전력):</strong>
+    <ul>
+      <li><a href="/shoes/nike-vaporfly-4">Nike Vaporfly 4</a> — 짧은 구간 폭발력</li>
+      <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 라이트스트라이크 프로 + 카본</li>
+      <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a></li>
+    </ul>
+  </li>
+  <li><strong>슈퍼 트레이너(편하면서 빠른 페이스):</strong>
+    <ul>
+      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 카본 없이 가볍고 반발 좋음</li>
+      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 + 데일리 가능</li>
+      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2>D-9 신청 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-9 (5/16):</strong> 팀원 2명(또는 혼성 부문은 4명) 미리 컨택. 부문 결정 (남2/여2/혼성4)</li>
+  <li><strong>D-5 (5/20):</strong> 데센테러닝(@descenterunning) 공식 채널 접수 링크 확인. 팀명·연락처·SNS 등 사전 준비</li>
+  <li><strong>D-Day 신청 마감 (5/25 월):</strong> 마감 직전 트래픽 피하기 위해 D-3~D-2 사이 접수 완료</li>
+  <li><strong>D+10 ~ D+15 (6/4~6/9 추정):</strong> 추첨 결과 발표 (정확 일정은 데센테 후속 공지)</li>
+  <li><strong>D-Day (6/22 월 20:00):</strong> 용산 전쟁기념관 지하 주차장. 18:30~19:00 도착, 팀 체크인</li>
+</ol>
+
+<h2>관련 6월 도심 러닝 이벤트</h2>
+
+<ul>
+  <li><a href="/blog/2026-bogwangjung-suyuk-run">보광정 수육런 D-14</a> — 5/30 토 8AM 남산 펀런</li>
+  <li><a href="/blog/2026-seoul-race">2026 서울 레이스</a> — 가을 도심 대회</li>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 D-2</a> — 본격 마라톤 시즌 준비</li>
+</ul>
+
+<p><small>출처: 러너스나우(@runners_now) 2026-05-04 게시물 + 데센테러닝(@descenterunning) 공식 공지. 세부 운영 방식·코스 거리·참가 신청 링크는 대회 접수 전까지 순차 공개 예정. 최신 정보는 @descenterunning 채널에서 확인 필수.</small></p>
+`,
+  },
+  {
+    id: '2027-seoul-marathon-gold-package',
+    slug: '2027-seoul-marathon-gold-package',
+    title: '2027 서울마라톤 골드패키지 안내 | 풀코스 45만원·10K 40만원 — 아디다스 뉴 에디션 레이싱화 사전 배송 포함, 선착순·한정 수량',
+    description: '2027 서울마라톤 골드패키지가 공식 발표됐습니다. 풀코스 450,000원·10K 400,000원. 1월 사전 배송되는 아디다스 뉴 에디션 레이싱화 + 반팔 또는 싱글렛 + 완주판초·메달 + 프리미엄 물품보관·전용 포토존까지. 선착순·한정 수량 + 풀코스는 사전 기록 제출 필수.',
+    thumbnail: '/images/blog/2027-seoul-marathon-gold-package.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['2027 서울마라톤', '서울마라톤', '골드패키지', '동마클럽', '아디다스', '아디오스 프로', '레이싱화', '마라톤 신청', '본접수'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>풀코스 450,000원 · 10km 400,000원</strong> — 5월 15일 서울마라톤 공식 발표</li>
+    <li>구성: <strong>아디다스 뉴 에디션 레이싱화(1월 사전 배송)</strong> + 반팔/싱글렛 택1 + 완주판초·메달 + 프리미엄 물품보관 + 전용 포토존</li>
+    <li><strong>선착순·한정 수량 + 풀코스는 사전 기록 제출 필수</strong> — 제출 안 한 풀코스 골드패키지 결제는 자동 취소</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 15일 공식 발표 — 골드패키지 안내</p>
+    <p>서울마라톤 공식(@seoul_marathon)이 2026년 5월 15일 <strong>2027 서울마라톤 골드패키지 안내</strong>를 게시했습니다. 같은 날 발표된 <a href="/blog/2027-seoul-marathon-domestic-registration-guide">국내 참가자 신청 안내</a>와 짝을 이루는 프리미엄 패키지로, 본접수(6/1·6/2 선착순) 트래픽을 피해 골드패키지 전용 트랙으로 자리를 잡는 옵션입니다.</p>
+  </div>
+</div>
+
+<h2>가격 — 풀코스 45만원 / 10K 40만원</h2>
+
+<table>
+  <thead>
+    <tr><th>부문</th><th>골드패키지 가격</th><th>참고: 일반 추정가</th><th>차액</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스 42.195km</strong></td><td><strong>450,000원</strong></td><td>약 150,000원 추정</td><td>+300,000원</td></tr>
+    <tr><td><strong>10km</strong></td><td><strong>400,000원</strong></td><td>약 100,000원 추정</td><td>+300,000원</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 일반 참가비는 공식 가격표 미확정 시점(5/16 기준)이며, 5월 18일 본 접수 시작 시점 공식 발표 예정. 댓글·러닝 커뮤니티 추정값 기준.</small></p>
+
+<p>차액 30만원의 가치를 어디서 회수하느냐가 핵심 질문입니다. <strong>아디다스 뉴 에디션 레이싱화 시판가만 25~30만원대</strong>이고, 여기에 본접수 광클 회피 + 한정 굿즈 + 프리미엄 서비스가 묶입니다. 신발 가치만으로 차액 회수가 가능한 구조.</p>
+
+<h2>골드패키지 6대 구성</h2>
+
+<ol>
+  <li><strong>2027 서울마라톤 아디다스 뉴 에디션 레이싱화</strong>
+    <ul>
+      <li>1월 중 <strong>국내 출시일보다 먼저 택배로 사전 배송</strong></li>
+      <li>모델명 미공개 — 공식 게시물 댓글에서 "프로5?", "프로4 동사이즈 가면 되나요?" 등 추측 다수</li>
+      <li>참고: 2026 골드패키지는 아디오스 프로 에보 3였음. 2027은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 또는 차세대 에보 모델일 가능성</li>
+    </ul>
+  </li>
+  <li><strong>반팔 티셔츠 또는 싱글렛 중 택 1</strong> — 2027 한정 에디션</li>
+  <li><strong>완주판초 + 완주메달</strong> — 모든 참가자 공통 굿즈</li>
+  <li><strong>번호표 + 기록측정용 칩</strong> — 대회 필수 물품</li>
+  <li><strong>프리미엄 물품보관 서비스</strong> — 일반 참가자와 분리된 별도 보관소</li>
+  <li><strong>전용 포토존</strong> — 골드패키지 전용 인증 공간</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">레이싱화 사전 배송 = 가장 큰 가치</p>
+    <p>1월 사전 배송이 골드패키지의 진짜 무기입니다. 일반 출시일보다 약 2개월 앞당겨 받으면 <strong>대회 전 충분한 페이스 빌드업과 어댑테이션 시간</strong>이 확보됩니다. 카본 슈퍼슈즈는 약 100~150km 길들이기가 필요한데, 1월 수령 → 2~3월 빌드업 → 3월 21일 대회 완벽한 사이클.</p>
+  </div>
+</div>
+
+<h2>⚠️ 풀코스 골드패키지 — 사전 기록 제출 필수</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 제출 안 한 풀코스 골드패키지 결제는 자동 취소</p>
+    <p>공식 게시물 명시: "기록을 사전 제출하지 않은 풀코스 골드패키지 구매자는 결제를 완료한 후에도 자동 취소됩니다."</p>
+    <p>풀코스 골드패키지 = <strong>본접수 풀코스와 동일한 자격 요건</strong>(2024.1.1.~2026.5.10. 공인 풀코스 기록 + 런카이브 5/11 15시까지 제출). 기록이 없으면 결제해도 무조건 취소. 10K 골드패키지는 기록 의무 없음.</p>
+  </div>
+</div>
+
+<p>본인이 풀코스 기록을 제출했는지 동마클럽 마이페이지에서 먼저 확인하세요. 미제출자는 풀코스 골드패키지 결제를 시도하지 말고 <strong>10K 골드패키지로 전환하거나 일반 본접수 10K</strong>로 가야 합니다.</p>
+
+<h2>골드패키지 vs 일반 본접수 — 어느 쪽을 택할 것인가</h2>
+
+<table>
+  <thead>
+    <tr><th>비교 항목</th><th>골드패키지</th><th>일반 본접수</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>풀 45만 / 10K 40만</td><td>풀 ~15만 / 10K ~10만 (추정)</td></tr>
+    <tr><td><strong>레이싱화</strong></td><td>1월 사전 배송</td><td>없음 (별도 구매)</td></tr>
+    <tr><td><strong>티셔츠</strong></td><td>한정 에디션 반팔 또는 싱글렛</td><td>기본 굿즈만</td></tr>
+    <tr><td><strong>물품보관</strong></td><td>프리미엄 (분리 보관)</td><td>일반 단체 보관</td></tr>
+    <tr><td><strong>접수 트랙</strong></td><td>선착순·한정 (전용 트랙)</td><td>본접수 그룹별 광클 (6/1·6/2)</td></tr>
+    <tr><td><strong>풀코스 기록 요건</strong></td><td>필수 (미제출 자동 취소)</td><td>필수 (그룹 배정)</td></tr>
+    <tr><td><strong>광클 부담</strong></td><td>중간 (한정 수량이라 조기 마감 가능)</td><td>높음 (그룹별 5분 내 마감 사례)</td></tr>
+  </tbody>
+</table>
+
+<h2>골드패키지가 적합한 러너</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">골드패키지를 골라야 하는 4가지 상황</p>
+    <ol>
+      <li><strong>본접수 광클 안 하고 싶은 사람:</strong> 그룹별 시각에 PC 앞에 앉아 결제 광클하는 스트레스를 30만원으로 회수. 댓글의 "신발보다 동마칩이랑 접수령 에너지 쏟고 싶지 않다"가 정확한 표현</li>
+      <li><strong>아디다스 카본 슈퍼슈즈를 어차피 살 계획인 러너:</strong> 신발만으로 25~30만원 회수. 차액 ~5만원에 한정 굿즈·프리미엄 서비스 추가</li>
+      <li><strong>1월 빌드업에 신상 카본 슈즈 적응하고 싶은 러너:</strong> 사전 배송 = 2~3개월 빌드업 사이클 확보. 일반 출시(3월 초)는 대회까지 너무 촉박</li>
+      <li><strong>1년에 1개 대회 — 비용 절감보다 경험에 투자:</strong> 풀코스 한 번에 모든 걸 쏟는 러너에게는 30만원 차액이 충분히 정당화됨</li>
+    </ol>
+  </div>
+</div>
+
+<h2>골드패키지가 부담스러운 러너</h2>
+
+<ul>
+  <li><strong>본인 신발이 이미 명확한 러너:</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 등 본인 신발이 정해져 있으면 일반 본접수가 합리적</li>
+  <li><strong>가격 민감 + 광클 자신 있는 러너:</strong> 본접수 광클로 15만원에 자리 잡고 30만원은 다른 데(여행·합숙·코칭) 투자</li>
+  <li><strong>풀코스 기록 미제출자:</strong> 풀코스 골드패키지 결제 자동 취소. 10K 골드패키지 또는 일반 본접수만 가능</li>
+  <li><strong>1년에 3~4번 대회 — 분산 투자:</strong> 1개 대회 45만원보다 4개 대회 15만원씩이 누적 경험 더 큼</li>
+</ul>
+
+<h2>골드패키지 신청 행동 가이드</h2>
+
+<ol>
+  <li><strong>D-2 (5/16~5/17):</strong>
+    <ul>
+      <li>동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록</li>
+      <li>풀코스 골드패키지 검토자: 본인 기록 제출 여부 마이페이지 확인</li>
+    </ul>
+  </li>
+  <li><strong>D-Day (5/18 추정 — 골드패키지 접수 시작):</strong> 우선접수 직후 골드패키지 트랙 진입. 정확한 시각은 동마클럽 후속 공지 확인</li>
+  <li><strong>한정 수량 — 정시 ±30초 접속 권장:</strong> 본접수 정도의 폭주는 아니지만 한정 수량이라 안전하게 정시 접속</li>
+  <li><strong>결제 완료 후:</strong> 풀코스 골드패키지는 기록 검증 후 최종 확정. 미제출자는 자동 취소되니 안내 메일 확인</li>
+  <li><strong>1월 신발 사전 배송 수령:</strong> 배송지·연락처 정확히 등록. 모델 공개는 사전 배송 직전 동마클럽 공지 예정</li>
+</ol>
+
+<h2>아디다스 뉴 에디션 레이싱화 — 후보 모델</h2>
+
+<p>공식 게시물에 모델명이 비공개되어 있어 댓글에서 추측이 활발합니다. 2026 골드패키지가 아디오스 프로 에보 3였던 점, 2027 신상 출시 사이클을 고려한 가능성:</p>
+
+<ul>
+  <li><strong>아디다스 아디오스 프로 EVO 4 (가장 유력):</strong> 에보 시리즈 후속 모델로 2027 출시 예정. 골드패키지 = "신상 사전 공급" 콘셉트와 부합</li>
+  <li><strong>아디다스 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>:</strong> 댓글 "프로4 동사이즈"에서 등장. 이미 출시된 모델이라 "뉴 에디션 = 한정 컬러"일 가능성</li>
+  <li><strong>아디다스 아디오스 프로 5:</strong> 댓글 "프로5?"에서 등장. 차세대 모델로 2027 신상 가능성</li>
+</ul>
+
+<p><strong>정확한 모델 공개는 1월 사전 배송 직전 동마클럽 공지</strong> 예정. 본 글은 모델 공개 시 업데이트 예정입니다.</p>
+
+<h2>관련 정리</h2>
+
+<ul>
+  <li><a href="/blog/2027-seoul-marathon-domestic-registration-guide">2027 서울마라톤 국내 참가자 신청 안내 D-2 — 3개 트랙 정리</a></li>
+  <li><a href="/blog/2027-seoul-marathon-group-criteria">2027 서울마라톤 본접수 — A~I 9개 그룹별 기준 기록 + 6/1·6/2 시각</a></li>
+  <li><a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a></li>
+  <li><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a></li>
+  <li><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3 한국 출시 정리</a></li>
+</ul>
+
+<p><small>출처: 서울마라톤 공식 인스타그램(@seoul_marathon) 2026-05-15 게시물 "2027 서울마라톤 골드패키지 안내" / 동마클럽 dongma.club. 일반 참가비 추정값(풀 15만/10K 10만)은 공식 게시물 댓글 기반으로 공식 가격표는 5월 18일 본접수 시작 시점 확정 공개 예정. 신발 모델 추정은 댓글 + 출시 사이클 분석이며 공식 발표 시 본 글 업데이트.</small></p>
+`,
+  },
+  {
+    id: '2027-seoul-marathon-domestic-registration-guide',
+    slug: '2027-seoul-marathon-domestic-registration-guide',
+    title: '2027 서울마라톤 국내 참가자 신청 안내 D-2 | 우선접수·골드패키지·본접수 3개 트랙 + 풀코스/10K 자격 + 환불 데드라인 한 장 정리',
+    description: '2027 서울마라톤 국내 참가자 신청이 5월 18일 시작됩니다. 풀코스는 2024.1.1~2026.5.10 공식 기록 제출자만 신청 가능, 10K는 누구나 가능. 우선접수 → 골드패키지 → 본접수(6/1·6/2) 3개 트랙 + 11월 30일 14시 환불 데드라인까지 시기별 행동 가이드.',
+    thumbnail: '/images/blog/2027-seoul-marathon-domestic-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동마클럽', '우선접수', '골드패키지', '본접수', '풀코스', '10K', '마라톤 신청'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2027 서울마라톤 국내 참가자 신청이 5월 18일 시작</strong> — 대회일 2027년 3월 21일(일)</li>
+    <li>신청 트랙은 <strong>3개</strong>: 우선접수(기한 내) → 골드패키지 → 본접수(6/1·6/2 선착순). 풀코스는 <strong>2024.1.1.~2026.5.10. 공식 기록 제출자만</strong>, 10K는 누구나 신청 가능</li>
+    <li>취소·환불 데드라인 <strong>2026년 11월 30일 14시</strong> — 이후 전액 환불 불가. 본인 트랙·환불 시한 미리 캘린더 등록 필수</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 15일 공식 발표 — 국내 참가자 신청 안내</p>
+    <p>서울마라톤 공식(@seoul_marathon)이 2026년 5월 15일 <strong>2027 서울마라톤 국내 참가자 신청 안내</strong>를 공식 게시했습니다. 본 글은 해당 공식 게시물과 5월 7·12일 사전 공지를 종합해 D-2 시점의 행동 체크리스트로 정리한 것입니다.</p>
+  </div>
+</div>
+
+<h2>2027 서울마라톤 기본 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회일</strong></td><td>2027년 <strong>3월 21일(일)</strong></td></tr>
+    <tr><td><strong>코스</strong></td><td>광화문 → 잠실종합운동장 (서울특별시 도심)</td></tr>
+    <tr><td><strong>부문</strong></td><td>풀코스 42.195km / 10km</td></tr>
+    <tr><td><strong>주최</strong></td><td>서울특별시 · 대한육상연맹 · 동아일보</td></tr>
+    <tr><td><strong>운영 채널</strong></td><td><a href="https://dongma.club" target="_blank" rel="noopener noreferrer">dongma.club</a> (동마클럽)</td></tr>
+  </tbody>
+</table>
+
+<h2>3개 신청 트랙 — 본인 어느 줄에 서야 하는가</h2>
+
+<p>2027 서울마라톤 신청은 <strong>우선접수 → 골드패키지 → 본접수</strong> 순으로 3개 트랙이 순차 진행됩니다. 본인 자격·예산·여유에 따라 트랙이 달라집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>트랙</th><th>방식</th><th>대상</th><th>시작 시점</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1. 우선접수</strong></td>
+      <td>기한 내 접수 (선착순 아님)</td>
+      <td>명예의 전당·S그룹 등 우선 자격자</td>
+      <td><strong>5월 18일</strong> 추정</td>
+    </tr>
+    <tr>
+      <td><strong>2. 골드패키지</strong></td>
+      <td>기한 내 접수</td>
+      <td>골드패키지 구매 의사자 (풀코스/10K 모두)</td>
+      <td>우선접수 직후</td>
+    </tr>
+    <tr>
+      <td><strong>3. 본접수</strong></td>
+      <td>그룹별 선착순</td>
+      <td>일반 참가자 (풀코스는 기록 제출자)</td>
+      <td><strong>6월 1·2일</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>풀코스 본접수는 <strong>2024.1.1.~2026.5.10. 공식대회 유효기록을 5월 11일 15시까지 제출한 자만</strong> 신청 가능합니다. 기록이 없으면 본접수 풀코스 신청 자체가 불가하니, 본인이 기록 제출을 완료했는지 동마클럽 마이페이지에서 확인하세요. 10K는 기록 제출 의무가 없어 누구나 본접수 신청 가능합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">풀코스 본접수는 그룹별 다른 시각 — 5초 차이로 출발선이 바뀝니다</p>
+    <p>본접수 풀코스는 기록에 따라 S부터 I까지 9개 그룹으로 분류되고, 그룹마다 본접수 시각이 다릅니다(6월 1·2일 19~22시). 본인 기록이 어느 그룹인지 미리 확인하지 않으면 다른 그룹 시각에 접속해 마감되는 사고가 발생합니다. <a href="/blog/2027-seoul-marathon-group-criteria">그룹별 기준 기록 + 6/1·6/2 시각 정리 →</a></p>
+  </div>
+</div>
+
+<h2>골드패키지 vs 일반 — 가격 + 가치 판단</h2>
+
+<p>5월 15일 공식 게시물과 동시에 공개된 <strong>2027 서울마라톤 골드패키지 안내</strong>(별도 게시물)에 따르면 골드패키지는 풀코스·10K 모두 별도 트랙으로 제공됩니다. 골드패키지는 본접수 선착순 트래픽을 피해 안정적으로 자리를 잡는 동시에 한정 굿즈·기념품이 포함되는 프리미엄 패키지입니다.</p>
+
+<ul>
+  <li><strong>일반 풀코스 참가비:</strong> 댓글·러닝 커뮤니티에서 <strong>15만원</strong>이 언급되고 있으나 본 글 작성 시점(5/16) 공식 가격표 미확인 — 5월 18일 본 접수 시작 시점에 공식 발표 예정</li>
+  <li><strong>10K 참가비:</strong> 댓글 기준 <strong>10만원</strong> 언급 — 동일하게 공식 발표 대기</li>
+  <li><strong>골드패키지 추가 옵션:</strong> 한정 굿즈(러닝화·바람막이 등 패키지별 다름) — 2026 골드패키지 기준 약 25~30만원대였으나 2027 가격은 미확정</li>
+</ul>
+
+<p>가격 인상 이슈로 인스타 공식 게시물 댓글에는 "15만원 시대...", "10K 10만원은 좀..." 등 가격 부담을 호소하는 의견이 다수입니다. 다만 도쿄·런던·뉴욕 등 메이저 마라톤이 모두 도시 마라톤 트렌드와 함께 가격이 상승해온 흐름과 같은 맥락. <strong>본인이 어느 정도 비용을 지불할 의향이 있는지 + 골드패키지의 굿즈 가치를 따져보는 게 핵심</strong>입니다.</p>
+
+<h2>취소·환불 데드라인 — 11월 30일 14시</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">💳</span>
+  <div class="callout-body">
+    <p class="callout-title">2026년 11월 30일 오후 2시까지 전액 환불</p>
+    <p>이 시한 이후로는 <strong>취소 및 환불이 일절 불가</strong>합니다. 부상·일정 변경 가능성이 있다면 11/30 14:00 전 결정해야 환불받을 수 있습니다. 캘린더에 <strong>"2026-11-30 13:00 — 서마 환불 결정"</strong> 알람 등록 권장.</p>
+  </div>
+</div>
+
+<h2>D-2 ~ D+1주 행동 체크리스트</h2>
+
+<ol>
+  <li><strong>D-2 (5/16 ~ 5/17):</strong>
+    <ul>
+      <li>동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록</li>
+      <li>마이페이지에서 본인 풀코스 기록 등록 여부 확인 (런카이브 제출 5/11 마감 완료)</li>
+      <li>본인 기록이 어느 그룹인지 사전 확인 (<a href="/blog/2027-seoul-marathon-group-criteria">그룹별 기준 기록 표 참고</a>)</li>
+    </ul>
+  </li>
+  <li><strong>D-Day (5/18, 추정):</strong>
+    <ul>
+      <li>우선접수 자격자라면 동마클럽 우선접수 트랙 진입</li>
+      <li>골드패키지 구매 의사자는 골드패키지 접수 시작 시점 확인 (공식 후속 공지)</li>
+      <li>일반 참가자는 본접수(6/1·6/2)까지 약 2주 대기 — 광클 셋업 준비</li>
+    </ul>
+  </li>
+  <li><strong>D+15 ~ D+16 (6/1·6/2):</strong> 본접수 광클. PC + 모바일 + 태블릿 3중 백업, 유선랜 권장</li>
+  <li><strong>D+199 (11/30 14시):</strong> 환불 데드라인 — 부상·일정 점검 후 잔류/환불 결정</li>
+</ol>
+
+<h2>풀코스 신발 — 9개월 빌드업 사이클</h2>
+
+<p>본접수 완료 후 2027년 3월 대회까지 약 9~10개월 빌드업이 가능합니다. 서울마라톤 도심 평지 + 3월 초 차가운 새벽 기온(평균 5~10℃)을 고려한 신발 후보:</p>
+
+<ul>
+  <li><strong>Sub-3 도전:</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></li>
+  <li><strong>Sub-3:30 ~ 4 (대다수 진지한 아마추어):</strong> <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-5">매직 스피드 5</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></li>
+  <li><strong>Sub-5 완주 목표:</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+</ul>
+
+<p>본인 발 특성·부상 이력에 맞는 풀코스 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>관련 정리</h2>
+
+<ul>
+  <li><a href="/blog/2027-seoul-marathon-group-criteria">2027 서울마라톤 본접수 D-Day | A~I 9개 그룹별 기준 기록 + 6/1·6/2 시각 정리</a></li>
+  <li><a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a></li>
+  <li><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a></li>
+  <li><a href="/blog/2030-seoul-marathon-100th-dongma-chip">2030 제100회 서울마라톤 동마칩 안내</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+</ul>
+
+<p><small>출처: 서울마라톤 공식 인스타그램(@seoul_marathon) 2026-05-15 게시물 / 2026-05-12·05-07 사전 공지 / 동마클럽 dongma.club. 가격(15만원/10만원)은 공식 게시물 댓글 기반 추정으로 공식 가격표는 5월 18일 본접수 시작 시점 확정 공개 예정. 본 글은 공식 발표 후 가격·우선접수 정확 시각 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: 'tempo-run-training-guide-korea',
+    slug: 'tempo-run-training-guide-korea',
+    title: '템포런 완전 정복 | 젖산 역치 페이스 = 10K 기록 +5~10초, 80~90% HRmax, 20~40분 지속주 — 한국 아마추어 러너 기준 적용 매뉴얼',
+    description: '템포런(Tempo Run)은 젖산 역치 페이스에서 20~40분 또는 6~12km를 유지하는 훈련입니다. 강도는 최대 심박수의 80~90%, 페이스는 본인 10K 기록보다 5~10초 느리게. LSD와 인터벌 사이를 채우는 핵심 훈련으로 마라톤 완주 기록 단축의 80%를 책임집니다.',
+    thumbnail: '/images/blog/tempo-run-training-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['템포런', 'Tempo Run', '젖산 역치', '훈련법', '마라톤 훈련', '심박수', '페이스', '러닝 가이드', 'LT 페이스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>템포런 = 젖산 역치 페이스 지속주</strong> — 본인 <strong>10K 최고기록 페이스 +5~10초</strong>, 심박수 80~90% HRmax, 20~40분 또는 6~12km</li>
+    <li>LSD(여유 조깅)와 인터벌(전력 질주) 사이를 채우는 <strong>"힘들지만 버틸 수 있는" 강도</strong> — 마라톤 완주 기록 단축의 80%를 책임지는 핵심 훈련</li>
+    <li>주 1회 충분, 빌드업 사이클에서 거리 또는 시간을 점진적으로 늘리는 게 정석 — 매번 PR 욕심 내다 부상 직행하는 가장 흔한 실수</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 지금 템포런 글을 쓰는가</p>
+    <p>2027 서울마라톤·춘마·경주마라톤 등 가을~봄 풀코스 시즌이 다가오면서 "LSD는 알겠는데 그다음은?"이라는 질문이 늘고 있습니다. RIFE 러닝라이프(@runninglife_korea)가 5월 15일 템포런 가이드를 게시한 것도 같은 맥락. 본 글은 해당 게시물 + 한국 아마추어 러너 기준 적용 매뉴얼 + 댓글에서 나온 디테일까지 종합한 정리본입니다.</p>
+  </div>
+</div>
+
+<h2>템포런이 정확히 뭔가</h2>
+
+<p><strong>템포런(Tempo Run)은 젖산 역치(Lactate Threshold, LT) 페이스에서 일정 시간 또는 거리를 유지하는 훈련</strong>입니다. 젖산 역치란 운동 강도가 올라가면서 근육에 젖산이 쌓이기 시작하는 임계점 — 이 구간을 자주 자극할수록 몸이 더 빠른 페이스에서도 젖산을 처리해내는 능력을 키웁니다.</p>
+
+<p>쉽게 말하면 <strong>"숨은 차지만 1단어씩 말은 할 수 있는 페이스"</strong>입니다. 옆 사람과 긴 대화는 어렵지만 "오케이", "더 가자" 같은 짧은 단어는 가능한 정도.</p>
+
+<h2>페이스 — 본인 10K 기록 +5~10초가 정답</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">⏱️</span>
+  <div class="callout-body">
+    <p class="callout-title">템포 페이스 공식 (한국 아마추어 표준)</p>
+    <p><strong>본인 10K 최고기록 평균 페이스 + 5~10초/km</strong><br/>예: 10K 최고기록 50:00(5:00/km) → 템포 페이스 5:05~5:10/km</p>
+  </div>
+</div>
+
+<p>RIFE 게시물 댓글에서 한 러너가 정확히 짚었는데, "목표 페이스가 아닌 현재 본인 10K TT 기록 페이스 +10초"라는 표현이 더 정확합니다. <strong>목표 페이스가 아니라 현재 본인 실력 기준 페이스</strong>가 핵심 — 목표 페이스로 템포런을 하면 거의 인터벌 강도가 되어 회복 불능 상태에 빠집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>본인 10K 기록</th><th>10K 평균 페이스</th><th>템포 페이스 (10K +5~10초)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>40:00 (Sub-40)</td><td>4:00/km</td><td>4:05~4:10/km</td></tr>
+    <tr><td>45:00</td><td>4:30/km</td><td>4:35~4:40/km</td></tr>
+    <tr><td>50:00</td><td>5:00/km</td><td>5:05~5:10/km</td></tr>
+    <tr><td>55:00</td><td>5:30/km</td><td>5:35~5:40/km</td></tr>
+    <tr><td>60:00 (Sub-60)</td><td>6:00/km</td><td>6:05~6:10/km</td></tr>
+  </tbody>
+</table>
+
+<h2>강도 — 심박수 80~90% HRmax</h2>
+
+<p>페이스가 GPS 오차나 신호 끊김으로 부정확할 때 더 신뢰할 만한 지표가 심박수입니다. 템포 강도는 <strong>최대 심박수의 80~90% 구간</strong>이며, 5존 시스템에서는 <strong>Zone 4 영역</strong>에 해당합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>최대 심박수</th><th>80% HRmax</th><th>90% HRmax</th><th>템포 목표 구간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>180 bpm (40대~)</td><td>144</td><td>162</td><td>144~162</td></tr>
+    <tr><td>190 bpm (30대)</td><td>152</td><td>171</td><td>152~171</td></tr>
+    <tr><td>200 bpm (20대)</td><td>160</td><td>180</td><td>160~180</td></tr>
+  </tbody>
+</table>
+
+<p>가민·코로스·애플워치 등에서 본인 최대 심박수가 정확히 측정됐는지 먼저 확인하세요. <strong>"220 - 나이"</strong> 공식은 오차가 ±10~15bpm로 크기 때문에, 가능하면 한 번 풀 인터벌이나 5K TT에서 실측한 값을 기준으로 잡는 게 정확합니다.</p>
+
+<h2>시간·거리 — 20~40분 또는 6~12km</h2>
+
+<p>템포런 1회 분량은 <strong>20분에서 40분 사이</strong>가 표준입니다. 거리로 환산하면 약 6~12km. 빌드업 사이클에서 한 번에 늘리지 말고 다음 단계로 점진적 증가:</p>
+
+<ul>
+  <li><strong>입문(1~2개월):</strong> 20분 또는 5~6km</li>
+  <li><strong>적응(3~4개월):</strong> 25~30분 또는 7~8km</li>
+  <li><strong>심화(5~6개월):</strong> 35~40분 또는 10~12km</li>
+  <li><strong>마라톤 빌드업 피크:</strong> 마라톤 페이스 또는 약간 빠른 페이스로 60분 (메디오 템포)</li>
+</ul>
+
+<h2>1회 세션 구성 — 워밍업·메인·쿨다운</h2>
+
+<ol>
+  <li><strong>워밍업 (10~15분):</strong> 6:30~7:00/km 페이스 조깅 + 5분 다이내믹 스트레칭 + 100m 가속주 3~4회</li>
+  <li><strong>메인 템포 (20~40분):</strong> 본인 템포 페이스로 지속주. 페이스 변동 ±5초 이내 유지</li>
+  <li><strong>쿨다운 (10분):</strong> 7:00~7:30/km 회복 조깅 + 정적 스트레칭</li>
+</ol>
+
+<p>총 시간 약 45~70분. 평일 저녁에 충분히 가능한 분량이고, 풀코스 빌드업 사이클에서 <strong>주 1회</strong>가 표준입니다.</p>
+
+<h2>흔한 실수 4가지</h2>
+
+<div class="callout warning">
+  <span class="callout-icon">❌</span>
+  <div class="callout-body">
+    <p class="callout-title">템포런에서 가장 자주 하는 실수</p>
+    <ol>
+      <li><strong>목표 페이스로 달리기:</strong> 현재 실력보다 빠른 페이스 = 사실상 인터벌. 회복 1주일 필요 + 부상 위험</li>
+      <li><strong>매번 PR 욕심:</strong> 템포런은 PR 잡는 훈련이 아니라 페이스 유지력 키우는 훈련. <strong>같은 페이스에서 더 오래 가능해지는 것</strong>이 진보</li>
+      <li><strong>워밍업 없이 시작:</strong> 추운 날 + 워밍업 부족 = 종아리·아킬레스 직격탄. 10~15분 워밍업은 비협상 사항</li>
+      <li><strong>주 2회 이상:</strong> 회복 시간 부족 → 누적 피로 → 페이스 저하 → 부상. <strong>주 1회로 충분</strong>, 주 2회는 엘리트급에서나 가능</li>
+    </ol>
+  </div>
+</div>
+
+<h2>한국 러너 FAQ</h2>
+
+<h3>Q. LSD와 템포런 중 뭐가 더 중요?</h3>
+<p>둘 다 필요합니다. LSD는 유산소 베이스 구축(주 50~70% 분량), 템포런은 그 베이스를 더 빠른 페이스에서 활용 가능하게 만드는 훈련. 비유하면 LSD는 연료탱크 크기 키우기, 템포런은 그 연료를 더 빠르게 태우는 엔진 튜닝. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
+
+<h3>Q. 초보(연 1~2번 10K)도 템포런 해야 하나요?</h3>
+<p>주 1회 이상 안정적으로 LSD를 30~40분 가능한 단계가 된 후가 적기입니다. 통상 러닝 시작 후 3~6개월. 그 이전엔 일관된 베이스 만들기에 집중하고, 템포런은 첫 풀코스·하프 빌드업 시작 시점에 도입하면 됩니다.</p>
+
+<h3>Q. 신발 추천?</h3>
+<p>템포런은 카본 슈퍼슈즈 쓰는 단계가 아닙니다. <strong>슈퍼 트레이너</strong> 카테고리 — 반발력 좋고 내구성 있는 데일리 트레이너가 정답:</p>
+<ul>
+  <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 템포·롱런 양용으로 가장 많이 추천되는 슈퍼 트레이너</li>
+  <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능한 가성비</li>
+  <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트 조합</li>
+</ul>
+
+<h2>주 1회 템포런 12주 빌드업 예시</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>분량</th><th>페이스 (10K 50:00 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1~2주</td><td>20분 또는 4km</td><td>5:10/km</td></tr>
+    <tr><td>3~4주</td><td>25분 또는 5km</td><td>5:10/km</td></tr>
+    <tr><td>5~6주</td><td>30분 또는 6km</td><td>5:05/km</td></tr>
+    <tr><td>7~8주</td><td>35분 또는 7km</td><td>5:05/km</td></tr>
+    <tr><td>9~10주</td><td>40분 또는 8km</td><td>5:00/km</td></tr>
+    <tr><td>11~12주</td><td>40분 + 1km 빠른 마무리</td><td>5:00/km → 4:50</td></tr>
+  </tbody>
+</table>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 — 천천히 달리기부터</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+  <li><a href="/blog/running-shoe-terminology-guide">러닝화 용어 사전 — 스택·드롭·에너지 리턴 1분 정리</a></li>
+</ul>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-15 게시물 "TEMPO RUN 그거 왜 해야 되는데?" + Jack Daniels Running Formula(2014) + Pfitzinger Advanced Marathoning 페이스 기준. 본 글의 페이스 환산표·심박수 표는 한국 아마추어 러너 평균 데이터 기반 추정치로, 개인별 ±5초/km 편차 가능.</small></p>
+`,
+  },
+  {
+    id: 'nsm-norwegian-singles-method-training',
+    slug: 'nsm-norwegian-singles-method-training',
+    title: 'NSM 노르웨이식 훈련법 완전 가이드 | 잉에브릭센 형제가 만든 Sub-T 더블 트레숄드 — 강도 낮추고 볼륨 늘려 부상 없이 PR 깨는 법',
+    description: 'NSM(Norwegian Singles Method)은 노르웨이 잉에브릭센 형제가 정립한 훈련법으로, 강도는 Z3 후반~Z4(Sub-Threshold)로 낮추고 빈도와 볼륨을 늘리는 게 핵심입니다. 부상 부담 줄이며 페이스 유지력을 끌어올리는 가성비 전략 — 인터벌이 부담되고 LSD만으론 아쉬운 중급 러너에게 최적.',
+    thumbnail: '/images/blog/nsm-norwegian-singles-method-training.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-16',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['NSM', '노르웨이식 훈련법', 'Norwegian Singles Method', '잉에브릭센', 'Sub-Threshold', '젖산 역치', '더블 트레숄드', '훈련법', '마라톤 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>NSM = Norwegian Singles Method</strong> — 잉에브릭센 형제가 정립한 훈련법, 강도를 <strong>Z3 후반~Z4(Sub-Threshold)</strong>로 낮추고 빈도·볼륨을 늘리는 전략</li>
+    <li>전력 인터벌 대신 <strong>"몸이 완전히 무너지기 전 멈추는" Sub-T 반복</strong> — 부상 부담 ↓, 젖산 처리 능력 ↑, 페이스 유지력 ↑</li>
+    <li><strong>인터벌이 부담스럽고 LSD만으론 아쉬운 중급 러너에게 최적</strong> — 풀코스 PR 단축 가성비 1위 훈련법</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🇳🇴</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 지금 NSM 글을 쓰는가</p>
+    <p>잉에브릭센 형제(Jakob·Henrik·Filip Ingebrigtsen)가 1500m·5000m·하프마라톤 세계 무대를 휩쓸며 NSM이 글로벌 트렌드로 자리잡았습니다. 한국 러닝 커뮤니티에서도 2024~2025년부터 "노르웨이식"이 회자됐고, RIFE 러닝라이프(@runninglife_korea)가 5월 14일 NSM 가이드를 게시하면서 본격 대중화 단계에 진입했습니다. 본 글은 RIFE 게시물 + 코치 학술 자료 + 한국 아마추어 적용 매뉴얼을 종합한 정리본입니다.</p>
+  </div>
+</div>
+
+<h2>NSM이 뭐고 왜 다른가</h2>
+
+<p>NSM은 <strong>강도를 낮추고 빈도와 볼륨을 늘리는</strong> 노르웨이식 러닝 훈련법입니다. 전통적인 인터벌(VO2 max 95~100% 강도로 전력 질주)과 본질적으로 다른 접근:</p>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>전통 인터벌</th><th>NSM (Sub-T)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>강도</strong></td><td>VO2 max 95~100% (Z5)</td><td>Sub-Threshold (Z3 후반~Z4)</td></tr>
+    <tr><td><strong>1회 부담</strong></td><td>매우 큼 (회복 2~3일)</td><td>작음 (다음 날 또 가능)</td></tr>
+    <tr><td><strong>주간 빈도</strong></td><td>1회</td><td>2~3회</td></tr>
+    <tr><td><strong>장기 효과</strong></td><td>VO2 max 향상</td><td>젖산 처리·페이스 유지력</td></tr>
+    <tr><td><strong>부상 위험</strong></td><td>높음</td><td>낮음</td></tr>
+  </tbody>
+</table>
+
+<p>핵심 차이는 <strong>"몸이 완전히 무너지기 전 훈련을 마무리하는 것"</strong>. 전력 질주가 아니라 "지속 가능한 빠름"의 누적이 NSM의 본질입니다.</p>
+
+<h2>강도 존(Zone) 이해 — Z3·Z4·Sub-T가 정확히 뭔가</h2>
+
+<table>
+  <thead>
+    <tr><th>존</th><th>심박수 % HRmax</th><th>호흡·대화</th><th>주관적 노력 (RPE)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Z2 (LSD)</strong></td><td>60~70%</td><td>긴 대화 가능</td><td>3~4 / 10</td></tr>
+    <tr><td><strong>Z3 (마라톤 페이스)</strong></td><td>70~80%</td><td>짧은 대화 가능</td><td>5~6 / 10</td></tr>
+    <tr><td><strong>Z3 후반~Z4 (Sub-T)</strong></td><td><strong>80~88%</strong></td><td><strong>단어 단위</strong></td><td><strong>6~7 / 10</strong></td></tr>
+    <tr><td><strong>Z4 후반 (LT/템포)</strong></td><td>88~92%</td><td>거의 대화 불가</td><td>7~8 / 10</td></tr>
+    <tr><td><strong>Z5 (VO2 max)</strong></td><td>92~100%</td><td>대화 불가</td><td>9~10 / 10</td></tr>
+  </tbody>
+</table>
+
+<p>NSM 핵심 구간은 <strong>Z3 후반~Z4 (Sub-Threshold)</strong>입니다. 젖산 역치 바로 아래 — "힘들지만 무너지지는 않는" 구간. <a href="/blog/tempo-run-training-guide-korea">전통 템포런(Z4 후반)</a>보다 한 단계 낮은 강도라는 점이 중요합니다.</p>
+
+<h2>대표 NSM 1주 루틴 — 더블 트레숄드 방식</h2>
+
+<p>잉에브릭센 형제의 시그니처는 <strong>더블 트레숄드(Double Threshold) Day</strong> — 하루에 Sub-T 세션을 오전·오후 2회 분할 수행. 다만 아마추어 러너에게는 부담이 크기 때문에, RIFE 게시물 기준 한국 일반 러너용 단순화 1주 루틴을 제안합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>요일</th><th>훈련</th><th>분량·강도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>월</td><td>회복 조깅</td><td>30~40분 Z2 (6:30~7:00/km)</td></tr>
+    <tr><td><strong>화</strong></td><td><strong>NSM 세션 1</strong></td><td><strong>2km × 5~6세트, 세트간 1분 휴식, Z3 후반~Z4 (4:50~5:00/km)</strong></td></tr>
+    <tr><td>수</td><td>회복 조깅</td><td>40~50분 Z2</td></tr>
+    <tr><td><strong>목</strong></td><td><strong>NSM 세션 2</strong></td><td><strong>1km × 8~10세트, 세트간 30초~1분, Z4 (4:40~4:50/km)</strong></td></tr>
+    <tr><td>금</td><td>휴식 또는 회복 조깅</td><td>30분 Z2 또는 OFF</td></tr>
+    <tr><td>토</td><td>LSD (장거리)</td><td>90~120분 Z2 (6:00~6:30/km)</td></tr>
+    <tr><td>일</td><td>가볍게 또는 휴식</td><td>30~40분 Z2 또는 OFF</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 위 페이스는 본인 10K 기록 50:00(5:00/km) 기준 예시. 본인 기록에 맞춰 ±10~20초 조정 필요.</small></p>
+
+<h2>NSM 세션 진행 핵심 4가지</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">NSM이 인터벌과 결정적으로 다른 4가지</p>
+    <ol>
+      <li><strong>"무너지기 전 멈춘다":</strong> 마지막 세트에 토할 것 같으면 NSM이 아니라 인터벌. 80% 페이스 유지 가능한 선에서 멈추는 게 정답</li>
+      <li><strong>세트 사이 휴식은 짧게:</strong> 30초~1분 정도. 완전 회복 X — 적당한 피로 누적 유지가 핵심</li>
+      <li><strong>심박수 모니터링 필수:</strong> 페이스만 보면 후반 가속해서 Z5 진입 위험. 가민·코로스 등으로 <strong>88~90% HRmax 상한 설정</strong></li>
+      <li><strong>주 2회까지만:</strong> 주 3회는 잉에브릭센 같은 엘리트급. 한국 아마추어는 화·목 2회로 충분 (몸이 적응한 후 3회 시도 가능)</li>
+    </ol>
+  </div>
+</div>
+
+<h2>NSM이 잘 맞는 러너 vs 안 맞는 러너</h2>
+
+<table>
+  <thead>
+    <tr><th>잘 맞는 러너</th><th>안 맞는 러너</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>인터벌이 부담스러운 중급자</td>
+      <td>러닝 시작 6개월 미만 입문자</td>
+    </tr>
+    <tr>
+      <td>LSD만 해서 페이스가 안 오르는 러너</td>
+      <td>부상 회복 직후 (1~3개월)</td>
+    </tr>
+    <tr>
+      <td>풀코스 PR 5~10분 단축이 목표</td>
+      <td>주 3회 이하만 가능한 시간 부족 러너</td>
+    </tr>
+    <tr>
+      <td>심박계 사용에 익숙한 러너</td>
+      <td>5K 첫 도전 단계</td>
+    </tr>
+    <tr>
+      <td>주 4~5회 러닝 가능한 시간 여유</td>
+      <td>스피드 폭발력이 목표인 단거리 러너</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>입문자라면 NSM 이전에 LSD 베이스부터</strong>. <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드 →</a></p>
+
+<h2>한국 러너 FAQ</h2>
+
+<h3>Q. NSM과 템포런의 차이는?</h3>
+<p>강도가 다릅니다. 전통 템포런은 <strong>Z4 후반(80~90% HRmax)</strong>에서 한 번에 20~40분 지속주, NSM은 <strong>Z3 후반~Z4(80~88%)</strong>에서 짧은 세트를 여러 번 반복. 즉 NSM이 약간 더 낮은 강도 + 분할 형식. <a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 →</a></p>
+
+<h3>Q. 주간 총 거리는 얼마나 되나?</h3>
+<p>위 1주 루틴 예시 기준 약 55~70km/주. 풀코스 빌드업 사이클 피크 주에는 80~90km까지 늘릴 수 있습니다. 인터벌 위주 훈련(40~50km/주)보다 절대 거리가 큰 게 NSM의 특징.</p>
+
+<h3>Q. NSM에 맞는 신발은?</h3>
+<p>NSM은 주간 볼륨이 큰 훈련법이라 <strong>내구성·완충·반발 균형이 좋은 데일리 트레이너 또는 슈퍼 트레이너</strong>가 핵심. 카본 슈퍼슈즈는 NSM 세션엔 안 어울립니다(레이스용).</p>
+
+<ul>
+  <li><strong>NSM 세션용 (Sub-T 페이스):</strong>
+    <ul>
+      <li><a href="/shoes/asics-superblast-3">Asics Superblast 3</a> — 슈퍼 트레이너 카테고리 1위, 템포·NSM·롱런 모두 가능</li>
+      <li><a href="/shoes/asics-magic-speed-5">Asics Magic Speed 5</a> — 카본 플레이트 있지만 데일리 가능, 페이스 트레이닝용</li>
+      <li><a href="/shoes/saucony-endorphin-speed-5">Saucony Endorphin Speed 5</a> — 페블엑스 폼 + 나일론 플레이트</li>
+    </ul>
+  </li>
+  <li><strong>LSD·회복 조깅용:</strong>
+    <ul>
+      <li><a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 맥시멀 쿠셔닝, 회복일 부담 최소</li>
+      <li><a href="/shoes/hoka-clifton-10">Hoka Clifton 10</a> — 가벼운 데일리 트레이너</li>
+      <li><a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — Fresh Foam X, 폼 부드러움</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>Q. 평발·무릎 약한데 가능?</h3>
+<p>NSM은 강도가 낮은 편이라 인터벌보다 평발·무릎 부담이 적습니다. 다만 <strong>주간 볼륨이 늘어나는 만큼 신발 선택이 중요</strong> — 안정화 또는 맥시멀 쿠셔닝 권장. <a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드 →</a></p>
+
+<h2>NSM 도입 8주 빌드업</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>NSM 세션 분량</th><th>주간 총 거리</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1~2주</td><td>주 1회 (2km × 3세트)</td><td>40km</td></tr>
+    <tr><td>3~4주</td><td>주 1회 (2km × 4세트)</td><td>50km</td></tr>
+    <tr><td>5~6주</td><td>주 2회 (2km × 4세트 + 1km × 6세트)</td><td>60km</td></tr>
+    <tr><td>7~8주</td><td>주 2회 (2km × 5세트 + 1km × 8세트)</td><td>70km</td></tr>
+  </tbody>
+</table>
+
+<h2>관련 글</h2>
+
+<ul>
+  <li><a href="/blog/tempo-run-training-guide-korea">템포런 완전 정복 — 젖산 역치 페이스 매뉴얼</a></li>
+  <li><a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문자 가이드</a></li>
+  <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a></li>
+  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너용 신발 가이드</a></li>
+</ul>
+
+<p><small>출처: RIFE 러닝라이프(@runninglife_korea) 2026-05-14 게시물 "NSM 훈련법" + Casado et al., "Training Periodization, Methods, Intensity Distribution, and Volume in Highly Trained and Elite Distance Runners"(2022) + Marius Bakken NSM Public Notes(2020~). 본 글의 페이스 환산표·주간 루틴은 한국 아마추어 러너 평균 데이터 기반 예시로, 개인별 적용은 본인 심박수·회복 능력에 따라 조정 필요.</small></p>
+`,
+  },
+  {
+    id: '2027-seoul-marathon-group-criteria',
+    slug: '2027-seoul-marathon-group-criteria',
+    title: '2027 서울마라톤 본접수 D-18 | A~I 그룹별 기준 기록 + 6/1·6/2 그룹별 본접수 시각 — 본인 어느 조에서 출발할지 정리',
+    description: '2027 서울마라톤 본접수가 6월 1·2일 동마클럽에서 열립니다. 풀코스 완주 기록에 따라 S부터 I까지 9개 그룹으로 분류되고 그룹별로 다른 시각에 선착순 접수 — 본인 기록이 어느 그룹에 속하는지 D-18 전 미리 확인하세요. 기록 유효기간 2024.1.1.~2026.5.10.',
+    thumbnail: '/images/blog/2027-seoul-marathon-group-criteria.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동마클럽', '본접수', '그룹 기준', '명예의 전당', 'Sub-3', '마라톤 기록', '풀코스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2027 서울마라톤 본접수가 6월 1·2일</strong> 동마클럽(dongma.club)에서 열립니다 — D-18</li>
+    <li>풀코스 완주 기록 기준 <strong>S·A·B·C·D·E·F·G·H·I 9개 그룹</strong>으로 분류, 그룹별로 다른 시각에 선착순 접수</li>
+    <li>기록 유효기간 <strong>2024.1.1. ~ 2026.5.10.</strong> — 이미 제출 마감, 본인 그룹 확인하고 해당 시각에 광클 준비</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">D-18 — 6월 1일(월) 본접수 1일차 19시 시작</p>
+    <p>풀코스 본접수는 <strong>6월 1일(월) 19시 A그룹부터 시작</strong>해 시간대별로 그룹이 분리됩니다. 본인 기록이 어느 그룹인지 미리 확인하고 그룹 시각에 정시 접속하는 게 핵심. 10K 본접수는 풀코스 본접수 마감 후 별도 진행 — 본 글은 풀코스 기준입니다.</p>
+  </div>
+</div>
+
+<h2>그룹별 기준 기록 (출처: 서울마라톤 공식 5/7 공지)</h2>
+
+<table>
+  <thead>
+    <tr><th>그룹</th><th>기준 기록</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>S</strong></td>
+      <td>명예의 전당 헌액자 + 추가 자격</td>
+      <td>명예의 전당 회원 중 <strong>2024~25 서울/공주/경주마라톤, 2026 서울마라톤 Sub-3 달성자</strong></td>
+    </tr>
+    <tr>
+      <td><strong>A · 명예의 전당</strong></td>
+      <td>~ 02:00:35<sup>※</sup></td>
+      <td>최상위 그룹 (정확한 컷오프는 동마클럽 공식 안내 확인)</td>
+    </tr>
+    <tr>
+      <td><strong>B</strong></td>
+      <td>~ 03:11:59</td>
+      <td>Sub-3:12 (서브3 + 약 12분)</td>
+    </tr>
+    <tr>
+      <td><strong>C</strong></td>
+      <td>03:12:00 ~ 03:21:59</td>
+      <td>Sub-3:22</td>
+    </tr>
+    <tr>
+      <td><strong>D</strong></td>
+      <td>03:22:00 ~ 03:29:59</td>
+      <td>Sub-3:30 — 많은 진지한 아마추어 러너의 1차 목표</td>
+    </tr>
+    <tr>
+      <td><strong>E</strong></td>
+      <td>03:30:00 ~ 03:39:59</td>
+      <td>Sub-3:40</td>
+    </tr>
+    <tr>
+      <td><strong>F</strong></td>
+      <td>03:40:00 ~ 03:50:59</td>
+      <td>Sub-3:51</td>
+    </tr>
+    <tr>
+      <td><strong>G</strong></td>
+      <td>03:51:00 ~ 04:00:59</td>
+      <td>Sub-4 직전 구간 — 인원이 많은 그룹</td>
+    </tr>
+    <tr>
+      <td><strong>H</strong></td>
+      <td>04:01:00 ~ 04:20:59</td>
+      <td>Sub-4:21</td>
+    </tr>
+    <tr>
+      <td><strong>I</strong></td>
+      <td>04:21:00 ~ 04:59:59</td>
+      <td>5시간 이내</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small><sup>※</sup> A그룹/명예의 전당 컷오프는 인스타 공식 게시물 이미지 기준으로 추출했으나 OCR 가독성 한계로 표기 차이 발생 가능. 본인 기록이 1:59~2:35 사이라면 동마클럽 공지 또는 1866-1718 문의로 정확 그룹 확정 필요.</small></p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 유효기간 — 2024.1.1. ~ 2026.5.10.</p>
+    <p>본접수 그룹 배정에 인정되는 기록은 <strong>2024년 1월 1일부터 2026년 5월 10일까지 공인 측정된 풀코스 완주 기록</strong>입니다. 그 이전 기록(2022·2023년 등)이나 비공인 기록은 인정되지 않습니다. 런카이브 기록 제출은 이미 5월 11일 15시에 마감됐으므로, 추가 제출 불가 — 현재 시점 가능한 일은 본인 등록된 기록 확인뿐입니다.</p>
+  </div>
+</div>
+
+<h2>그룹별 본접수 시각 — 6월 1·2일 2일간</h2>
+
+<table>
+  <thead>
+    <tr><th>날짜</th><th>그룹</th><th>접수 시각</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="4"><strong>6월 1일(월)</strong></td><td>A</td><td><strong>19:00</strong></td></tr>
+    <tr><td>B</td><td>20:00</td></tr>
+    <tr><td>C</td><td>21:00</td></tr>
+    <tr><td>D</td><td>22:00</td></tr>
+    <tr><td rowspan="4"><strong>6월 2일(화)</strong></td><td>E</td><td><strong>19:00</strong></td></tr>
+    <tr><td>F</td><td>20:00</td></tr>
+    <tr><td>G</td><td>21:00</td></tr>
+    <tr><td>H</td><td>22:00</td></tr>
+  </tbody>
+</table>
+
+<p>※ S그룹과 I그룹 본접수 시각은 공식 게시물 본문에 명시되지 않았습니다. 동마클럽 후속 공지(5월 말~6월 1일 사이) 확인 필요.</p>
+
+<div class="callout success">
+  <span class="callout-icon">⚡</span>
+  <div class="callout-body">
+    <p class="callout-title">선착순 + 그룹별 인원 할당</p>
+    <p>서울마라톤 본접수는 <strong>선착순이며 기록대(그룹)별로 할당 인원이 있습니다</strong>. 즉 본인 그룹에서 빠르게 접속한 순서대로 마감됩니다. 작년(2026) 일부 그룹은 정시 후 1~5분 내 마감된 사례가 있어 PC 셋업·시계 동기화·결제 수단 등록 필수.</p>
+  </div>
+</div>
+
+<h2>그룹별 광클 전략</h2>
+
+<ul>
+  <li><strong>A·B 그룹 (서브3·서브3:12):</strong> 인원 자체가 적어 상대적으로 마감 압력 낮음. 정시 ±30초 안에 접속하면 무리 없음</li>
+  <li><strong>C·D 그룹 (서브3:30 진영):</strong> 진지한 아마추어 다수 분포. 작년 D그룹 5분 내 마감 사례 — <strong>정시 ±10초 접속 권장</strong></li>
+  <li><strong>E·F 그룹 (서브3:51):</strong> Sub-4 노린 러너들이 한 단계 위로 도전. 인원 많음 — 정시 접속 + 결제 자동입력 셋업</li>
+  <li><strong>G·H 그룹 (Sub-4 ~ 4:21):</strong> 가장 인원이 많은 구간. <strong>광클 압력 최고치</strong> — PC + 모바일 + 태블릿 3중 백업, 유선랜 권장</li>
+</ul>
+
+<h2>광클 셋업 체크리스트</h2>
+
+<ol>
+  <li><strong>D-7 (5/25~5/26):</strong> 동마클럽(dongma.club) 회원가입 + 로그인 + 결제 수단 등록 완료</li>
+  <li><strong>D-3 (5/29):</strong> 본인 등록된 기록·그룹 최종 확인 (마이페이지)</li>
+  <li><strong>D-1 (5/31):</strong> 시계 동기화 <code>time.navyism.com</code> 1초 단위 — 휴대폰 기본 시계 1~2초 오차 흔함</li>
+  <li><strong>D-0 (6/1·6/2):</strong>
+    <ul>
+      <li>그룹 시각 5분 전 PC + 모바일 + 태블릿 모두 dongma.club 로그인 상태</li>
+      <li>유선랜 우선 (WiFi는 트래픽 폭주 시 끊김 위험)</li>
+      <li>브라우저 자동입력으로 개인정보 시간 단축</li>
+      <li>카드 정보 + 간편결제(카카오페이/네이버페이) 둘 다 사전 등록</li>
+    </ul>
+  </li>
+</ol>
+
+<h2>본인 기록이 그룹 경계에 걸려있다면</h2>
+
+<p>예를 들어 본인 최고 기록이 <strong>3:30:05</strong>라면 E그룹(3:30:00~), 3:29:50이라면 D그룹(~3:29:59). 5초 차이로 그룹이 갈리고 접수 시각이 한 시간 차이 납니다. 마이페이지에서 본인 인정 기록이 어느 그룹으로 배정됐는지 <strong>D-7 전까지는 반드시 확인</strong>하세요. 시스템 오기재나 분초 누락 발견 시 1866-1718 문의로 정정 요청 가능 (단 기간 한정).</p>
+
+<h2>본접수 후 — 풀코스 준비</h2>
+
+<p>본접수 완료 후 7월~2027년 3월까지 약 9개월 빌드업 사이클이 남습니다. 풀코스 풀 빌드업 자료는 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지 거리별 페이스 & 멘탈 가이드</a> 참고하세요.</p>
+
+<p>풀코스 신발 후보(서울마라톤 도심 평지 + 3월 초 차가운 새벽):</p>
+
+<ul>
+  <li><strong>Sub-3 도전 (A·B 그룹):</strong> <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> — 카본 슈퍼슈즈</li>
+  <li><strong>Sub-3:30 ~ 4 (C~G 그룹):</strong> <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>Sub-5 완주 목표 (H·I 그룹):</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 부상 없이 완주 우선</li>
+</ul>
+
+<p>본인 발 특성·부상 이력에 맞는 풀코스 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<p>2027 서울마라톤 우선접수(5/18) 관련 사전 정리는 <a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10 가이드</a>, 전체 접수 흐름은 <a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a>에서 확인하세요.</p>
+
+<p><small>출처: 서울마라톤 공식 인스타그램 2026-05-07 게시물(@seoul_marathon) / 동마클럽 dongma.club / 작성일 2026년 5월 14일 기준. A그룹·S그룹·I그룹 정확 시각은 동마클럽 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: 'nb-runhub-yeouido-2026-popup',
+    slug: 'nb-runhub-yeouido-2026-popup',
+    title: '여의도 NB 런허브(Grey Days) D-31 운영 중 | 5,000원에 최신 러닝화 빌려서 한강 한 바퀴 — 6/14까지 5주 한정',
+    description: '뉴발란스가 여의도 이크루즈 2F에 5주 한정 팝업 런허브를 운영합니다. 신상 러닝화 대여 5,000원, 의류 3,000원, 라커룸·라운지 무료. 2026.05.09~06.14, 평일 12~21시·주말 8~20시. 가방 들고 퇴근하다 빈손으로 들러 한강 러닝 후 커피 한 잔까지 가능.',
+    thumbnail: '/images/blog/nb-runhub-yeouido-2026-popup.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['뉴발란스', 'New Balance', 'NB 런허브', 'RunHub', '여의도', 'Grey Days', '러닝화 시승', '한강 러닝', '러닝 팝업'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>뉴발란스 런허브(Grey Days)</strong>가 여의도 이크루즈 2F에서 <strong>5월 9일~6월 14일 5주 한정</strong> 운영 중 — D-31</li>
+    <li>신상 러닝화 대여 <strong>5,000원</strong> + 의류 3,000원 + 라커룸·피팅룸·스트레칭 라운지 무료 — 빈손으로 가서 한강 한 바퀴</li>
+    <li>러닝 후 SNS 인증 시 젤라또·커피·웻티슈 기프트 — 노트북 가방 메고 퇴근하다 들르기 좋은 동선</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📍</span>
+  <div class="callout-body">
+    <p class="callout-title">기본 정보</p>
+    <ul>
+      <li><strong>장소:</strong> 서울특별시 영등포구 여의동로 290, 이크루즈 2F</li>
+      <li><strong>운영 기간:</strong> 2026.05.09(토) ~ 2026.06.14(일) (5주 한정)</li>
+      <li><strong>운영 시간:</strong> 평일 12:00~21:00 / 주말·공휴일 08:00~20:00</li>
+      <li><strong>예약:</strong> 불필요 — 현장 접수</li>
+    </ul>
+  </div>
+</div>
+
+<h2>왜 이게 의미 있나 — "퇴근길 빈손 러닝"의 동선 해결</h2>
+
+<p>여의도·강남 직장인 러너의 가장 큰 마찰은 <strong>"러닝 짐"</strong>입니다. 정장·노트북·외투를 들고 한강 가서 갈아입고 뛰고 씻고 다시 옷 갈아입고 집까지. 사물함 하나 빌리려고 한강 쪽 헬스장이나 사우나를 회원권 끊는 경우도 흔합니다.</p>
+
+<p>NB 런허브는 <strong>이 동선 자체를 압축</strong>합니다:</p>
+
+<ol>
+  <li>퇴근 후 정장 차림으로 여의도 이크루즈 2F 도착</li>
+  <li>무거운 가방·외투 → 무료 라커룸에 보관</li>
+  <li>의류 대여(3,000원) + 러닝화 대여(5,000원)</li>
+  <li>피팅룸에서 환복 → 라운지에서 스트레칭</li>
+  <li>여의도 한강공원 한 바퀴 (이크루즈에서 도보 5분)</li>
+  <li>돌아와서 다시 환복 + 가방 회수 + 커피 한 잔(기프트)</li>
+</ol>
+
+<p>총 비용 <strong>8,000원으로 신상 NB 러닝화 시승 + 한강 러닝 + 시설 이용</strong>이 끝납니다. 신발 한 켤레 정가 20만 원대를 생각하면 사기 전 실제 페이스로 시승해볼 수 있는 가장 저렴한 방법입니다.</p>
+
+<h2>이용 가격 정리</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>가격</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>신상 러닝화 대여</strong></td><td>5,000원</td><td>NB 신상 러닝화 라인업 (구체 모델은 매장 현장 안내)</td></tr>
+    <tr><td><strong>의류 대여</strong></td><td>3,000원</td><td>상하의 별도 — 둘 다면 합산</td></tr>
+    <tr><td><strong>프라이빗 라커룸</strong></td><td>무료</td><td>가방·외투·정장 보관 가능</td></tr>
+    <tr><td><strong>피팅룸</strong></td><td>무료</td><td>환복용</td></tr>
+    <tr><td><strong>단독 라운지·스트레칭 존</strong></td><td>무료</td><td>러닝 전 스트레칭, 후 회복</td></tr>
+  </tbody>
+</table>
+
+<div class="callout success">
+  <span class="callout-icon">🎁</span>
+  <div class="callout-body">
+    <p class="callout-title">대여 반납자 기프트</p>
+    <ul>
+      <li><strong>쿼시 웻티슈</strong> — 땀 닦고 개운하게 귀가</li>
+      <li><strong>아이스 커피 1잔</strong> — 갈증 해소</li>
+      <li><strong>젤라또</strong> — SNS 인증 시 제공</li>
+    </ul>
+  </div>
+</div>
+
+<h2>"빌릴 만한" 후보 — 사이트에서 데이터 확인하고 가세요</h2>
+
+<p>NB 런허브는 신상 라인업을 시승용으로 비치합니다. 시승 전 <strong>본인 발에 맞는지 데이터로 거르고</strong> 매장에서 신어보는 게 효율적. 신어볼 만한 NB 신상 후보:</p>
+
+<ul>
+  <li><strong>데일리 트레이너 — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 2026 출시 신상 쿠션화. 평발 적합성·발볼 표준·무릎 보호 우수. 토박스 75mm로 한국 발에 친화적. 하루 5~10km 베이스런부터 하프 페이스 러닝까지 범용</li>
+  <li><strong>속도 트레이너 — <a href="/shoes/new-balance-rebel-v5">NB Rebel v5</a>:</strong> FuelCell + 카본 플레이트가 아닌 TPU 인서트로 부드러운 반응성. 10K~하프 페이스 러닝 / 인터벌</li>
+  <li><strong>레이싱 카본 — <a href="/shoes/new-balance-sc-elite-v5">NB SuperComp Elite v5</a>:</strong> 풀코스 PB용 카본 슈퍼슈즈. 시승만으로 본인 폼과 맞는지 판단 가능</li>
+</ul>
+
+<p>본인 발 특성·기록 목표가 어떤 NB 모델과 맞는지 데이터 매칭은 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/brands/new-balance">뉴발란스 러닝화 전체 보기</a>에서 확인할 수 있습니다.</p>
+
+<h2>방문 동선 팁</h2>
+
+<ul>
+  <li><strong>여의도역(5호선·9호선) 2번 출구</strong>에서 도보 약 10~12분 (이크루즈 방면)</li>
+  <li><strong>여의나루역(5호선) 2번 출구</strong>에서 한강공원 가는 길에 이크루즈 위치 — 한강 러닝 직전 들르기 가장 자연스러운 동선</li>
+  <li>평일 오후 6~8시 직장인 러너 집중 시간대 — 빠른 회전 위해 사전 준비(러닝 양말·심박계 시계 등 본인 물품)는 미리 챙겨가기</li>
+  <li>주말 새벽 8시 오픈은 <strong>주말 LSD 러닝 직전</strong> 들르기 최적 — 6시 출발은 어려우니 8시 오픈 시간대 활용</li>
+</ul>
+
+<h2>한정 운영 — 시계가 빠르게 간다</h2>
+
+<p>5/9 운영 시작 후 <strong>약 5주만</strong> 운영됩니다(6/14 마감). 같은 기간 다른 러닝 이벤트는:</p>
+
+<ul>
+  <li><strong>5/20(화):</strong> 가민 <a href="/blog/2026-garmin-forerunner-70-170-korea">Forerunner 70·170</a> 한국 정식 출시</li>
+  <li><strong>5/27(수):</strong> 2026 서울레이스 본접수 (<a href="/blog/2026-seoul-race">5/27 접수 가이드</a>)</li>
+  <li><strong>6/1·6/2:</strong> 2027 서울마라톤 풀코스 본접수 (<a href="/blog/2027-seoul-marathon-group-criteria">A~I 그룹 가이드</a>)</li>
+  <li><strong>6/14(일):</strong> NB 런허브 마지막 운영일 — 마지막 주말 매우 혼잡 예상</li>
+</ul>
+
+<p>러닝화 구매를 고민 중이거나 NB 신발이 본인 발에 맞을지 확인하고 싶다면 <strong>5월 중 평일 저녁에 미리 다녀오는 것</strong>이 가장 여유롭습니다. 6월 들어가면 본접수·신상 출시 이벤트가 겹쳐 매장 회전이 빠를 가능성 큼.</p>
+
+<p><small>출처: @runninglife_korea 2026-05-11 게시물 / 뉴발란스 코리아 Grey Days 공식 이벤트 / 작성일 2026년 5월 14일 기준. 운영 시간·대여 모델 라인업은 매장 현장 변동 가능, 정확 정보는 NB 코리아 SNS 공지 확인.</small></p>
+`,
+  },
+  {
+    id: 'lsd-training-beginner-guide-korea',
+    slug: 'lsd-training-beginner-guide-korea',
+    title: 'LSD 훈련법 입문자 완벽 가이드 | "조금만 뛰어도 숨차다"면 페이스부터 잘못 — Zone 2 심박·대화 페이스·주 1회 루틴',
+    description: 'LSD(Long Slow Distance)는 빠르게 뛰기 위한 훈련이 아닌 오래 버틸 몸을 만드는 기초 체력 훈련입니다. Zone 2 심박존·대화 가능 페이스·시간 기준 시작·주 1회 루틴까지 — 초보 러너가 후반부 체력 급락에서 벗어나는 가장 빠른 길.',
+    thumbnail: '/images/blog/lsd-training-beginner-guide-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['LSD', 'LSD 훈련', 'Long Slow Distance', 'Zone 2', '심박존', '러닝 훈련', '러닝 입문', '러닝 기초', '베이스 빌딩', '유산소'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>LSD = Long Slow Distance</strong> — 길게·천천히·편하게 달리는 유산소 지구력 훈련. 빠르게 뛰는 게 아니라 <strong>오래 버틸 수 있는 몸</strong>을 만듭니다</li>
+    <li>핵심: <strong>대화 가능한 페이스 + Zone 2 심박존</strong> 유지. 처음엔 거리 아닌 <strong>시간(30~60분)</strong> 기준으로 시작</li>
+    <li>"조금만 뛰어도 숨차다 / 후반부 체력 급락"이라면 인터벌·페이스런이 부족한 게 아니라 <strong>LSD 베이스가 부족</strong>한 것 — 주 1회 LSD부터 6주만 해도 변화 체감</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 입문자일수록 LSD가 더 중요한가</p>
+    <p>입문자가 빠지기 쉬운 함정: "더 빨리 뛰면 실력 늘겠지" → 매번 힘들게 뛰다 무릎·아킬레스 부상. 실제로는 <strong>주 훈련의 70~80%를 편한 페이스로 채워야</strong> 몸이 모세혈관·미토콘드리아·근건을 발달시키며 천천히 강해집니다. 엘리트 마라토너들도 훈련의 80%는 LSD입니다.</p>
+  </div>
+</div>
+
+<h2>LSD가 정확히 뭐냐</h2>
+
+<table>
+  <thead>
+    <tr><th>요소</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>L · Long</strong></td><td>길게 — 30분 ~ 2시간+ (수준에 따라)</td></tr>
+    <tr><td><strong>S · Slow</strong></td><td>천천히 — 평소 5K 페이스보다 1~2분/km 느리게</td></tr>
+    <tr><td><strong>D · Distance</strong></td><td>오래 달리기 (장거리) — 초반 의도는 거리보다 "버틴 시간"</td></tr>
+  </tbody>
+</table>
+
+<p>한 줄로: <strong>"옆 사람과 대화하면서도 가능한 페이스로 30분~1시간 이상 멈추지 않고 뛰는 것"</strong>이 LSD입니다.</p>
+
+<h2>핵심 5가지 원칙 (RIFE WIKI 정리 기반)</h2>
+
+<h3>① 대화 가능한 페이스 유지</h3>
+
+<p>가장 단순하고 정확한 강도 가늠법 — <strong>Talk Test</strong>. 옆 사람에게 "오늘 날씨 좋네요, 어디까지 갔다 오실 거예요?" 정도 문장이 끊김 없이 나오면 LSD 페이스. 한 단어씩 끊겨 나오면 너무 빠른 겁니다.</p>
+
+<h3>② Zone 2 심박존 권장</h3>
+
+<table>
+  <thead>
+    <tr><th>심박존</th><th>%MHR</th><th>느낌</th><th>용도</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>Zone 1</td><td>50~60%</td><td>걷거나 매우 느린 조깅</td><td>회복 / 쿨다운</td></tr>
+    <tr><td><strong>Zone 2</strong></td><td><strong>60~70%</strong></td><td><strong>대화 가능, 약간 호흡 가빠짐</strong></td><td><strong>LSD / 베이스 빌딩</strong></td></tr>
+    <tr><td>Zone 3</td><td>70~80%</td><td>대화 짧게만 가능</td><td>템포런 / 마라톤 페이스</td></tr>
+    <tr><td>Zone 4</td><td>80~90%</td><td>대화 불가, 호흡 거침</td><td>인터벌 / 10K 페이스</td></tr>
+    <tr><td>Zone 5</td><td>90~100%</td><td>최대 노력, 1~5분만 가능</td><td>스프린트 / VO2max</td></tr>
+  </tbody>
+</table>
+
+<p><strong>최대심박수(MHR) 간단 추정:</strong> 220 - 나이. 예) 35세 → MHR 약 185. Zone 2는 185 × 0.6~0.7 = <strong>111~130bpm</strong>.</p>
+
+<p>가민·애플워치·폴라 등 시계가 있다면 자동 측정. 없다면 손목·목 동맥 6초 측정 × 10 = bpm.</p>
+
+<h3>③ 처음엔 거리보다 "시간" 기준</h3>
+
+<p>"오늘 10km 뛰어야지" 가 아니라 "오늘 45분 뛰어야지". 페이스를 천천히 유지해야 하는데 거리 목표가 있으면 자꾸 빠르게 가게 됩니다. 시간 기준으로 시작 → 8~12주 후 거리 기준으로 전환.</p>
+
+<table>
+  <thead>
+    <tr><th>러닝 경험</th><th>첫 LSD 시간</th><th>4~8주 후 목표</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>완전 입문 (5K 첫 완주 전)</td><td>30분 (걷기 섞어도 OK)</td><td>45~60분 연속</td></tr>
+    <tr><td>5K 완주 경험</td><td>40~50분</td><td>70~90분</td></tr>
+    <tr><td>10K 완주 경험</td><td>60~75분</td><td>90~120분</td></tr>
+    <tr><td>하프 완주 경험</td><td>90~110분</td><td>120~150분</td></tr>
+  </tbody>
+</table>
+
+<h3>④ 주 1회 LSD + 나머지는 짧은 조깅·회복런</h3>
+
+<p>입문 러너 표준 주간 구성:</p>
+
+<ul>
+  <li><strong>주 1회 LSD</strong> — 보통 주말 (긴 시간 확보 쉬움)</li>
+  <li><strong>주 2회 짧은 베이스런</strong> — 평일 30~40분, 역시 Zone 2 페이스</li>
+  <li><strong>주 1회 회복런 또는 휴식</strong></li>
+</ul>
+
+<p>중급 이상이면 여기에 인터벌·템포런 1회 추가. <strong>입문~중급 단계에서는 LSD가 곧 핵심 훈련</strong>이고, 빠른 훈련은 보조입니다.</p>
+
+<h3>⑤ 기록보다 "리듬·유지 시간"</h3>
+
+<p>LSD에서는 페이스 기록을 보지 마세요. 보면 자꾸 "어 이거 너무 느리지 않나" 싶어 빨라집니다. 시계 화면을 시간/심박만 보이게 설정하고, 페이스는 끝나고 확인. <strong>일정한 호흡 리듬으로 멈추지 않고 끝까지 갔는가</strong>가 성공 기준.</p>
+
+<h2>한국 러너 입문자의 흔한 실수 3가지</h2>
+
+<h3>실수 1: LSD인데 자꾸 빨라진다</h3>
+
+<p>특히 한강공원·올림픽공원처럼 다른 러너 많은 곳에서 흔합니다. 옆 러너 추월하고 싶은 본능 → 페이스 1분/km 빨라짐 → 후반 30분에 폭망. <strong>해결:</strong> 시계 알람 설정 (심박 130bpm 초과 시 진동) 또는 의도적으로 가장 느린 구간을 골라 뛰기.</p>
+
+<h3>실수 2: 매번 같은 코스 같은 거리</h3>
+
+<p>한강 잠수교~반포 5km 왕복만 반복하면 거리 늘리기 어렵습니다. <strong>해결:</strong> 시간 기준으로 새 코스 개척. 30분 → 다음 주 35분 → 그 다음 주 40분 식으로 10%씩 점진 증가.</p>
+
+<h3>실수 3: 신발이 LSD와 안 맞음</h3>
+
+<p>레이싱화나 매우 가벼운 트레이너로 LSD 뛰면 후반부 다리·발 피로 폭증. LSD에는 <strong>충분한 쿠셔닝 + 안정성</strong>이 우선. 추천 카테고리:</p>
+
+<ul>
+  <li><strong>입문~중급 LSD 데일리 — <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>:</strong> 부드러운 착지, 발볼 표준~넓음 친화적, km당 250~300원 가성비</li>
+  <li><strong>장시간 LSD·발 부담 큰 러너 — <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>:</strong> 최상위 쿠셔닝, 평발 안정성, 90분+ LSD에서 무릎·발목 보호</li>
+  <li><strong>균형형 LSD — <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>:</strong> 토박스 75mm로 한국 발 친화적, 쿠셔닝 + 적당한 반응성</li>
+  <li><strong>레이스 페이스 가까운 LSD — <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>:</strong> 데일리 트레이너, 좀 더 가볍게 가고 싶을 때</li>
+</ul>
+
+<h2>6주 LSD 입문 프로그램 (5K 완주자 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>주차</th><th>주말 LSD</th><th>평일 베이스런</th><th>목표</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1주</td><td>40분 (걷기 포함)</td><td>30분 × 2회</td><td>Zone 2 감각 익히기</td></tr>
+    <tr><td>2주</td><td>45분 연속</td><td>30분 × 2회</td><td>대화 페이스 유지</td></tr>
+    <tr><td>3주</td><td>50분 연속</td><td>35분 × 2회</td><td>걷기 없이 완주</td></tr>
+    <tr><td>4주</td><td>55분 연속</td><td>35분 × 2회</td><td>심박 130bpm 이내 유지</td></tr>
+    <tr><td>5주</td><td>65분 연속</td><td>40분 × 2회</td><td>1시간 벽 돌파</td></tr>
+    <tr><td>6주</td><td>75분 또는 12km</td><td>40분 × 2회</td><td>거리 기준 전환 시작</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">📈</span>
+  <div class="callout-body">
+    <p class="callout-title">10% 규칙</p>
+    <p>주간 총 러닝 거리(또는 시간)는 <strong>전주 대비 10% 이상 늘리지 말기</strong>. 부상의 가장 큰 원인은 갑작스러운 거리 증가. 6주차 75분이면 7주차는 80~82분이 안전 상한.</p>
+  </div>
+</div>
+
+<h2>LSD 후 회복 — 다음 LSD까지 무엇을 할까</h2>
+
+<ul>
+  <li><strong>당일:</strong> 단백질 + 탄수화물 30분 내 섭취. 가벼운 정적 스트레칭 10~15분</li>
+  <li><strong>다음날:</strong> 휴식 또는 매우 가벼운 회복 조깅 20~30분 (Zone 1)</li>
+  <li><strong>2~3일차:</strong> 30~40분 베이스런 (Zone 2)</li>
+  <li><strong>4~5일차:</strong> 인터벌·언덕 등 빠른 훈련 (있다면)</li>
+  <li><strong>6일차:</strong> 가벼운 조깅 또는 휴식</li>
+  <li><strong>7일차:</strong> 다음 LSD</li>
+</ul>
+
+<h2>LSD 다음 단계 — 언제 페이스런·인터벌 추가하나</h2>
+
+<p>다음 조건 모두 충족 시:</p>
+
+<ol>
+  <li>주 1회 LSD 90분 또는 12km 이상 무리 없이 가능</li>
+  <li>주간 총 거리 30km+ 4주 연속 무부상</li>
+  <li>10K 완주 경험 있고 다음 목표가 하프 또는 마라톤</li>
+</ol>
+
+<p>그때 LSD 유지 + 주 1회 페이스런 / 격주 인터벌 추가. 마라톤 페이스 가이드는 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 전략 — 5km부터 풀코스까지</a>에서 확인하세요.</p>
+
+<p>대회 준비 중이라면 <a href="/blog/first-running-shoe-guide-2026">2026 초보 러너 첫 러닝화 추천 TOP 8</a> + <a href="/recommend">1분 러닝화 추천</a>으로 LSD에 맞는 신발 후보를 잡는 게 우선입니다.</p>
+
+<p><small>출처: @runninglife_korea RIFE WIKI 2026-05-13 게시물 / Daniels Running Formula(Jack Daniels) / Hansons Marathon Method / 작성일 2026년 5월 14일 기준. 개인 심박존은 안정시 심박·체력 수준에 따라 다르며, 정확한 측정은 운동부하검사(GXT) 또는 락테이트 테스트 필요.</small></p>
+`,
+  },
+  {
+    id: '2026-garmin-forerunner-70-170-korea',
+    slug: '2026-garmin-forerunner-70-170-korea',
+    title: '가민 포러너 70·170 한국 5/20 출시 | 39.9만원 입문 모델에 Training Readiness·Running Power 탑재 — FR55 5년 만의 대변신',
+    description: '2026년 5월 12일 가민이 Forerunner 70·170·170 Music을 동시 발표했습니다. 한국 5월 20일 정식 출시, 각 39.9·47.9·55.9만원. 입문 모델에 Training Readiness·HRV Status·손목 기반 Running Power 탑재 — 기존 60만원대 FR265 전용 기능이 처음으로 입문 라인까지 내려왔습니다.',
+    thumbnail: '/images/blog/2026-garmin-forerunner-70-170-korea.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-14',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['가민', 'Garmin', 'Forerunner 70', 'Forerunner 170', '가민 포러너', '러닝 시계', '러닝 워치', 'Training Readiness', 'Running Power', '데이터 훈련'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가민이 5월 12일 Forerunner 70·170·170 Music을 동시 발표</strong> — 한국 정식 출시 5월 20일, 각 <strong>39.9 / 47.9 / 55.9만원</strong></li>
+    <li><strong>FR70(39.9만원) 입문 모델에 Training Readiness·HRV Status·손목 기반 Running Power 탑재</strong> — 기존엔 60만원대 FR265부터 가능했던 코칭 SW가 처음으로 입문 라인까지 내려왔습니다</li>
+    <li>Forerunner 전 라인 AMOLED 전환 완성, FR55 → FR70 약 5년 만의 대변신. 단 멀티밴드 GPS·맵·ECG는 여전히 상위 모델 영역</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 출시 — 5/20</p>
+    <p>글로벌 판매는 5월 15일(목)부터, <strong>한국 가민 공식 홈페이지(garmin.co.kr) 정식 판매는 5월 20일(화)</strong>입니다. 사전판매 페이지는 발표 시점 미오픈 상태로, 5월 20일 이후 다나와·네이버 스마트스토어·공식몰에서 동시 등록될 예정입니다.</p>
+  </div>
+</div>
+
+<h2>3개 모델 한 눈에</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>한국 가격</th><th>핵심 차이</th><th>이런 러너에게</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Forerunner 70</strong></td>
+      <td><strong>399,000원</strong></td>
+      <td>입문 베이스 — AMOLED·GPS·HRV·Training Readiness·Running Power</td>
+      <td>5K~하프 입문, 첫 데이터 훈련 시계</td>
+    </tr>
+    <tr>
+      <td><strong>Forerunner 170</strong></td>
+      <td><strong>479,000원</strong></td>
+      <td>+기압 고도계·나침반·자이로·온도·Garmin Pay·오픈워터 수영</td>
+      <td>하프~풀 빌드업, 언덕·트레일 입문</td>
+    </tr>
+    <tr>
+      <td><strong>Forerunner 170 Music</strong></td>
+      <td><strong>559,000원</strong></td>
+      <td>+Spotify·Amazon Music·Deezer 오프라인 재생, Wi-Fi</td>
+      <td>휴대폰 없이 음악 들으며 LSD 뛰는 러너</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">💸</span>
+  <div class="callout-body">
+    <p class="callout-title">170 Music — 80,000원 더 낼 가치가 있나</p>
+    <p>오프라인 음악 재생 시 <strong>GPS 배터리가 20시간 → 약 7.5시간으로 큰 폭 감소</strong>합니다. 풀코스 5시간 + 워밍업 고려하면 충분하지만, 100K·울트라까지 보면 부족. 평소 러닝 시 휴대폰을 들고 다닌다면 80,000원 절약하고 FR170으로 충분합니다.</p>
+  </div>
+</div>
+
+<h2>왜 이번 발표가 큰가 — "코칭 SW의 민주화"</h2>
+
+<p>가민 Forerunner 라인의 기존 가격 — 기능 구조는 이랬습니다:</p>
+
+<ul>
+  <li><strong>FR55(30만원대):</strong> 기본 GPS·심박·기본 트레이닝 — 데이터는 보여주지만 "오늘 뛰어야 하나"는 안 알려줌</li>
+  <li><strong>FR265(60만원대):</strong> Training Readiness·HRV Status·Running Power·AMOLED — "오늘 컨디션 7/10, 베이스런 추천" 식의 진짜 코칭</li>
+  <li><strong>FR965(80만원대):</strong> 위 기능 + 멀티밴드 GPS·맵·터치·LED 플래시</li>
+</ul>
+
+<p>입문 러너가 데이터 기반 훈련에 입문하려면 <strong>60만원짜리 FR265까지 점프해야 했다</strong>는 의미입니다. 30만원대 FR55를 사면 "5km 뛰었다"는 사실은 알지만, "내일 인터벌 해도 되나"라는 판단은 받지 못했죠.</p>
+
+<p>이번 FR70은 그 벽을 깼습니다. <strong>39.9만원에 Training Readiness · HRV Status · 손목 기반 Running Power · Running Dynamics가 모두 들어갔습니다.</strong> 외부 풋팟 없이 손목만으로 파워 기반 훈련이 가능하다는 의미입니다.</p>
+
+<h2>입문 모델 FR70에 들어간 "민주화 기능들"</h2>
+
+<table>
+  <thead>
+    <tr><th>기능</th><th>이전에는</th><th>FR70에서</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Training Readiness</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 매일 아침 0~100점으로 훈련 강도 추천</td>
+    </tr>
+    <tr>
+      <td><strong>HRV Status</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 야간 심박변이도 추세로 회복 상태 추적</td>
+    </tr>
+    <tr>
+      <td><strong>Training Load</strong></td>
+      <td>FR265 / Fenix 7 이상</td>
+      <td>✅ 탑재 — 7일 누적 부하 vs 적정 범위 시각화</td>
+    </tr>
+    <tr>
+      <td><strong>Running Power(손목)</strong></td>
+      <td>FR265 + Running Dynamics Pod 필요</td>
+      <td>✅ 손목만으로 추정 — 외부 센서 0개</td>
+    </tr>
+    <tr>
+      <td><strong>Running Dynamics</strong></td>
+      <td>FR265+ 또는 외부 센서</td>
+      <td>✅ 케이던스·수직 진폭·접지 시간·보폭</td>
+    </tr>
+    <tr>
+      <td><strong>AMOLED 디스플레이</strong></td>
+      <td>FR165(40만원대)부터</td>
+      <td>✅ 1.2인치 — 햇빛 아래 가독성 대폭 향상</td>
+    </tr>
+    <tr>
+      <td><strong>Trail VO2max</strong></td>
+      <td>Fenix 7 / Epix 2 이상</td>
+      <td>✅ 탑재 — 트레일 러닝 별도 VO2max 추적</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>전작 FR55(2021년 출시)와 비교하면 약 5년 만의 세대 점프 폭이 컸습니다:</p>
+
+<ul>
+  <li>디스플레이: 1.0인치 MIP → <strong>1.2인치 AMOLED 터치스크린</strong> (5버튼 병행)</li>
+  <li>케이스: 42mm → 43mm, 무게 37g → 40g (3g 증가는 미미)</li>
+  <li>배터리 GPS 모드: 20시간 → <strong>23시간</strong></li>
+  <li>스마트워치 모드: 약 2주 → <strong>약 13일</strong> (AMOLED 도입에도 유지)</li>
+  <li>스포츠 프로필 60+개 신규 추가</li>
+  <li>퀵 워크아웃 크리에이터 — 휴대폰 없이 시계만으로 인터벌 설계</li>
+</ul>
+
+<h2>FR70 vs FR170 — 8만원 차이의 의미</h2>
+
+<p>두 모델 모두 같은 1.2인치 AMOLED·같은 코칭 SW를 공유합니다. 8만원 가격 차이는 <strong>"하드웨어 센서"</strong>에서 옵니다.</p>
+
+<table>
+  <thead>
+    <tr><th>센서·기능</th><th>FR70 (39.9만원)</th><th>FR170 (47.9만원)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>광학 심박</td><td>✅ Elevate V4</td><td>✅ Elevate V4</td></tr>
+    <tr><td>SpO2 (혈중산소)</td><td>✅</td><td>✅</td></tr>
+    <tr><td><strong>기압 고도계</strong></td><td>❌</td><td>✅ <strong>언덕·트레일 고도 정확</strong></td></tr>
+    <tr><td><strong>3축 나침반</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td><strong>자이로스코프</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td><strong>온도계</strong></td><td>❌</td><td>✅</td></tr>
+    <tr><td>오픈워터 수영 메트릭</td><td>❌</td><td>✅</td></tr>
+    <tr><td>Garmin Pay 비접촉 결제</td><td>❌</td><td>✅</td></tr>
+    <tr><td>파워미터 연동 (자전거)</td><td>❌</td><td>✅</td></tr>
+  </tbody>
+</table>
+
+<div class="callout success">
+  <span class="callout-icon">🏔</span>
+  <div class="callout-body">
+    <p class="callout-title">언덕·트레일 뛴다면 기압 고도계는 필수</p>
+    <p>FR70은 GPS 신호로 고도를 추정해서 오차가 큽니다(±10~20m 흔함). FR170은 기압 고도계로 실시간 압력을 측정해 <strong>±1~3m 정확도</strong>. 청계산·관악산 트레일이나 남산·인왕산 도시 러닝의 누적고도 측정이 일상이라면 8만원 추가 가치가 있습니다.</p>
+  </div>
+</div>
+
+<h2>경쟁 모델 비교 — COROS Pace 4가 직격</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격(약)</th><th>GPS</th><th>디스플레이</th><th>강점</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Garmin FR70</strong></td>
+      <td>39.9만원</td>
+      <td>싱글밴드</td>
+      <td>AMOLED 1.2"</td>
+      <td>코칭 SW(Training Readiness)·생태계·Garmin Coach</td>
+    </tr>
+    <tr>
+      <td><strong>COROS Pace 4</strong></td>
+      <td>약 35만원<sup>※</sup></td>
+      <td><strong>듀얼밴드(멀티)</strong></td>
+      <td>AMOLED</td>
+      <td>GPS 정확도·배터리(31h GPS)·음악 기본</td>
+    </tr>
+    <tr>
+      <td><strong>Polar Pacer Pro</strong></td>
+      <td>약 40만원<sup>※</sup></td>
+      <td>싱글밴드</td>
+      <td>MIP(비 AMOLED)</td>
+      <td>Polar 러닝 파워·훈련 부하 분석</td>
+    </tr>
+    <tr>
+      <td><strong>Apple Watch S10 (GPS)</strong></td>
+      <td>59.9만원</td>
+      <td>L1+L5</td>
+      <td>AMOLED</td>
+      <td>iOS 통합·범용성</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><small><sup>※</sup> COROS·Polar는 한국 공식 원화 정가가 변동적이라 USD 환산 + 네이버 쇼핑 평균가 기준 추정.</small></p>
+
+<p>가장 직접적인 경쟁은 <strong>COROS Pace 4</strong>입니다. 비슷한 가격대에 <strong>듀얼밴드 GPS를 탑재했고 배터리도 31시간</strong>으로 더 깁니다. 순수 GPS 정확도와 배터리를 중시하면 COROS가 유리합니다.</p>
+
+<p>가민이 우위에 서는 지점은 <strong>"생태계"</strong>입니다. Garmin Connect 앱의 깊이, Connect IQ 워치페이스/앱 스토어, Garmin Coach 무료 훈련 플랜(5K·10K·하프 마라톤), 신발 사용거리 추적, 한국 러닝 크루의 압도적 점유율(가민 사용자 간 공유·비교 문화). 데이터를 혼자 보는 게 아니라 <strong>크루와 공유·경쟁하는 문화</strong>를 원한다면 가민이 답입니다.</p>
+
+<h2>한계점 — 멀티밴드 GPS가 빠진 게 큰가</h2>
+
+<p>FR70·170 모두 <strong>싱글밴드(L1) GPS</strong>입니다. 멀티밴드(L1+L5)는 FR265($449)부터입니다. 멀티밴드가 의미 있는 환경은:</p>
+
+<ul>
+  <li><strong>도심 고층빌딩 협곡:</strong> 강남대로·여의도 IFC 주변·테헤란로 — 빌딩 반사로 GPS 트랙이 지그재그</li>
+  <li><strong>울창한 숲 트레일:</strong> 청계산·북한산·관악산 정상부 능선·계곡 구간</li>
+  <li><strong>지하·터널 직후:</strong> 한강 다리 진출입부·고가도로 하부</li>
+</ul>
+
+<p>위 환경에서 PB나 누적거리 데이터가 정확해야 한다면 멀티밴드(FR265 이상)가 필요합니다. 반대로 <strong>한강 평지·송도·공원 트랙 위주</strong>라면 싱글밴드로도 충분 — DCRainmaker는 가민 싱글밴드 GPS가 타사 멀티밴드와 비슷한 수준이라고 평했습니다.</p>
+
+<p>그 외 빠진 것들:</p>
+
+<ul>
+  <li><strong>지도(맵) 없음</strong> — 코스 추종(경로 따라가기)은 가능하지만 실제 지도 뷰는 없음. Up Ahead 거리 마커로 다음 보급지 표시는 됨</li>
+  <li><strong>ECG·피부 온도</strong> 미지원 — 의료 등급 데이터 원하면 Venu/Fenix 라인</li>
+  <li><strong>LED 플래시라이트</strong> 미탑재 — 새벽·야간 LSD 자주 뛴다면 Fenix/Enduro 라인</li>
+</ul>
+
+<h2>누구에게 추천하나 — 5가지 시나리오</h2>
+
+<table>
+  <thead>
+    <tr><th>러너 유형</th><th>추천 모델</th><th>왜</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 시작 1년 차 / 첫 시계</strong></td>
+      <td>FR70 39.9만원</td>
+      <td>Training Readiness로 "오늘 뛰어야 하나" 판단 자동화 — 초보의 가장 큰 고민 해결</td>
+    </tr>
+    <tr>
+      <td><strong>3~5년차, FR55/45 쓰던 러너 업그레이드</strong></td>
+      <td>FR70 또는 FR170</td>
+      <td>AMOLED·HRV·Running Power 세대 점프 폭 큼. 평지 위주면 FR70, 언덕 끼면 FR170</td>
+    </tr>
+    <tr>
+      <td><strong>하프~풀 빌드업 + 트레일 입문</strong></td>
+      <td>FR170 47.9만원</td>
+      <td>기압 고도계로 누적고도 정확. 풀코스 GPS 모드 20시간 충분</td>
+    </tr>
+    <tr>
+      <td><strong>휴대폰 없이 LSD 즐기는 러너</strong></td>
+      <td>FR170 Music 55.9만원</td>
+      <td>Spotify·Deezer 오프라인 — 단 음악 재생 시 GPS 7.5시간만 가능</td>
+    </tr>
+    <tr>
+      <td><strong>GPS 정확도·배터리 최우선·생태계 관심 적음</strong></td>
+      <td>COROS Pace 4(약 35만원)</td>
+      <td>듀얼밴드 + 31시간 GPS. 가민 생태계 매력 못 느끼면 합리적 대안</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>시계 + 신발 — 데이터 훈련 풀스택</h2>
+
+<p>FR70/170의 진짜 가치는 <strong>"손목 기반 Running Power + Running Dynamics"</strong>입니다. 케이던스·수직 진폭·접지 시간이 함께 잡히면, 신발 선택에 데이터 근거가 생깁니다.</p>
+
+<ul>
+  <li><strong>케이던스 170spm 이하 + 수직 진폭 9cm 이상:</strong> 착지 충격이 큰 폼 → 쿠셔닝 강한 데일리 트레이너 추천. <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+  <li><strong>케이던스 180spm + 짧은 접지 시간(200ms 이하):</strong> 효율적 폼 → 가벼운 반응성 모델 활용 가능. <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>·<a href="/shoes/adidas-adizero-evo-sl">아디다스 에보 SL</a></li>
+  <li><strong>10K~하프 PB 도전 + Running Power 안정적:</strong> 슈퍼 트레이너 또는 카본화. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>안정성·평발 우려 + Running Dynamics에서 좌우 비대칭 큼:</strong> 안정화. <a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></li>
+</ul>
+
+<p>시계가 데이터를 잡고, 신발이 그 데이터에 맞춘다 — 가민이 노리는 "데이터 → 장비 의사결정" 풀스택의 입문 진입가가 39.9만원으로 낮아졌다는 게 이번 발표의 핵심 의미입니다.</p>
+
+<p>본인 발 특성·부상 이력·예산을 입력하면 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+
+<h2>출시 대응 액션 플랜</h2>
+
+<ol>
+  <li><strong>5/14~5/19:</strong> 모델 결정 — 평지 위주 FR70 / 언덕·트레일 FR170 / 음악 LSD FR170 Music</li>
+  <li><strong>5/20(화) 09:00~:</strong> 가민 코리아 공식 홈페이지(garmin.co.kr) 정식 판매 개시 — 초기 재고 한정 가능성</li>
+  <li><strong>5/20~5/22:</strong> 다나와·네이버 스마트스토어 등록 후 가격 비교 (공식가 ±2~3% 변동)</li>
+  <li><strong>구매 후 첫 주:</strong> 매일 같은 시각 손목 착용 → HRV·Training Readiness 베이스라인 학습(약 7일 소요)</li>
+  <li><strong>2주차부터:</strong> Training Readiness 권고치 기반 훈련 강도 조절 시작</li>
+</ol>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">기존 FR165/FR265 사용자라면 살 필요 있나</p>
+    <p>FR165(작년 발매·약 42만원)는 AMOLED·HRV·Running Power 다 있어서 FR70 대비 큰 격차 없습니다. <strong>업그레이드 메리트 거의 없음</strong>. FR265는 멀티밴드 GPS·맵·더 큰 디스플레이가 FR170 대비 우위이므로 다운그레이드도 의미 없음. 이번 발표의 진짜 타깃은 <strong>FR55·FR45·Apple Watch 시리즈 4~6 / 첫 러닝 시계 입문자</strong>입니다.</p>
+  </div>
+</div>
+
+<p>같은 시기 발매 라인은 <a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33</a>(6/1 출시)도 주목할 만합니다. 시계 + 신발 동시 세대 교체 시기.</p>
+
+<p><small>출처: Garmin Newsroom 공식 보도자료 / 가민 코리아 뉴스와이어 보도자료(2026-05-13) / DCRainmaker FR70 리뷰 / The 5K Runner FR70·170 런치 분석 / T3 영국 가격 / 작성일 2026년 5월 14일 기준. 한국 출시 후 실제 매장 가격·재고 상황은 5/20 이후 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2026-songdo-lee-bongju-marathon',
+    slug: '2026-songdo-lee-bongju-marathon',
+    title: '제1회 송도 이봉주 마라톤 D-3 | 5/15 마감, 6/28 인천 송도 10K·5K — 한국 마라톤 레전드 이름 단 첫 대회',
+    description: '한국 마라톤 최고의 레전드 이봉주 선수의 이름을 단 첫 마라톤이 2026년 6월 28일(일) 인천대학교 송도캠퍼스에서 열립니다. 10km·5km, 각 50,000원, 정원 10,000명 선착순. 접수가 5월 15일까지로 D-3 — 첫 회 대회 정보·코스·신청 전략·신발 추천까지.',
+    thumbnail: '/images/blog/2026-songdo-lee-bongju-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['송도 이봉주 마라톤', '이봉주', '인천 마라톤', '송도', '6월 마라톤', '대회 일정', '10K', '5K'],
+    event: {
+      name: '제1회 2026 송도 이봉주 마라톤',
+      startDate: '2026-06-28T08:00:00+09:00',
+      location: {
+        name: '인천대학교 송도캠퍼스',
+        address: '인천광역시 연수구 송도동 인천대학교',
+      },
+      organizer: '인천광역시육상연맹, 이상커뮤니케이션즈',
+      url: 'https://runsongdo.co.kr',
+      offers: [
+        { name: '10km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
+        { name: '5km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
+      ],
+    },
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>한국 마라톤 전설 이봉주의 이름을 단 첫 대회</strong> — 2026년 6월 28일(일) 인천대학교 송도캠퍼스 08:00 출발</li>
+    <li>10km·5km <strong>각 50,000원</strong>, 정원 10,000명 선착순, 접수 4/20~<strong>5/15(금)</strong> — D-3</li>
+    <li>송도 평지 코스 + 6월 말 한여름 직전 새벽 출발 — 첫 회 대회라 정보가 적지만 이봉주 IP·기념품·만 명 규모로 빠른 매진 우려</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">D-3 — 5월 15일(금) 접수 마감</p>
+    <p>첫 회 + 한국 마라톤 전설 이름 + 만 명 정원의 조합은 6월 대회 중 가장 매진 압력이 큰 라인업입니다. 결정했다면 오늘 안에 <a href="https://runsongdo.co.kr/entryperson.php" target="_blank" rel="noopener">runsongdo.co.kr</a>에서 결제까지 끝내세요. 환불 기한은 5월 29일(금) 17시까지로 비교적 여유 있음.</p>
+  </div>
+</div>
+
+<h2>왜 이번 대회가 특별한가</h2>
+
+<p>이봉주 선수는 1996 애틀랜타 올림픽 마라톤 은메달, 2001 보스턴 마라톤 우승, 한국 최고 기록(2:07:20) 보유자입니다. 한국 러닝의 황금기를 이끈 인물이자 대중적 인지도가 가장 높은 마라토너죠. 그의 이름을 단 마라톤이 <strong>정식 대회로 출범하는 것은 이번이 처음</strong>입니다.</p>
+
+<p>첫 회 대회는 통상 두 가지 성격을 띱니다:</p>
+
+<ul>
+  <li><strong>① 운영 미숙 리스크</strong> — 셔틀버스·물품보관·식수공급·완주 보급 등 처음이라 시행착오 가능</li>
+  <li><strong>② 가치 상승 잠재력</strong> — 1회 완주 메달은 향후 시리즈가 성장할수록 희소성 가치 발생. 1회 참가는 "오리지널 멤버"라는 상징성</li>
+</ul>
+
+<p>이봉주 마라톤은 인천광역시육상연맹이 공동 주최하므로 운영 측면에서 어느 정도 신뢰 가능하지만, 첫 회는 항상 보수적으로 접근하는 게 안전합니다.</p>
+
+<h2>한 눈에 보는 대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>제1회 2026 송도 이봉주 마라톤</td></tr>
+    <tr><td><strong>대회일</strong></td><td>2026년 6월 28일(일) 08:00 출발 (07:00 집결)</td></tr>
+    <tr><td><strong>장소</strong></td><td>인천대학교 송도캠퍼스</td></tr>
+    <tr><td><strong>종목</strong></td><td>10km / 5km</td></tr>
+    <tr><td><strong>참가비</strong></td><td>10km <strong>50,000원</strong> / 5km <strong>50,000원</strong> (동일)</td></tr>
+    <tr><td><strong>정원</strong></td><td>10,000명 선착순</td></tr>
+    <tr><td><strong>접수 기간</strong></td><td>2026년 4월 20일 ~ <strong>5월 15일(금)</strong></td></tr>
+    <tr><td><strong>기념품</strong></td><td>기념품, 배번호, 완주메달, 온라인 기록증, 기록칩</td></tr>
+    <tr><td><strong>환불 기한</strong></td><td>5월 29일(금) 17:00까지</td></tr>
+    <tr><td><strong>주최</strong></td><td>인천광역시육상연맹, 이상커뮤니케이션즈</td></tr>
+    <tr><td><strong>접수 사이트</strong></td><td><a href="https://runsongdo.co.kr" target="_blank" rel="noopener">runsongdo.co.kr</a></td></tr>
+    <tr><td><strong>문의</strong></td><td>1866-1718</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">10km와 5km 참가비가 같은 이유</p>
+    <p>일반적으로 10K가 5K보다 5,000~10,000원 비싼데, 이번 대회는 둘 다 50,000원입니다. 첫 회 + 만 명 규모 + 동일 보급·기념품 구성을 노린 가격 책정으로 보입니다. <strong>5km 러너 입장에서는 다소 비싸게 느낄 수 있지만, 10km 러너 입장에서는 합리적</strong>인 가격입니다.</p>
+  </div>
+</div>
+
+<h2>송도 코스 — 평지 + 6월 말 한여름 직전</h2>
+
+<p>인천 송도는 매립 신도시 특성상 <strong>거의 100% 평지</strong>입니다. 송도캠퍼스를 중심으로 센트럴파크·송도해변·국제업무지구·인천대교 방면 등 어디로 코스를 그려도 평탄. PB 친화적 환경입니다.</p>
+
+<p>다만 6월 28일은 <strong>여름의 가장자리</strong>입니다:</p>
+
+<ul>
+  <li><strong>인천 6월 말 평균:</strong> 오전 8시 기온 22~24℃, 습도 75~85%, 일출 5:13</li>
+  <li><strong>바닷가·바람 변수:</strong> 송도는 해안가 매립지라 바람이 강한 날 영향이 있을 수 있음. 출발 시각 8시면 통상 미풍 정도</li>
+  <li><strong>자외선:</strong> 8시 출발이면 이미 자외선 지수 3~5 (보통~높음). 모자·선글라스 권장</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">☀️</span>
+  <div class="callout-body">
+    <p class="callout-title">6월 말 페이스 컨트롤</p>
+    <p>봄·가을 페이스에서 km당 10~15초 늦추는 게 안전합니다. 평소 10K 50분이면 51~52분 목표가 합리적. PB 도전은 부담스럽다면 첫 회 대회 분위기 체험 + 완주 메달 수집에 집중하는 게 현명합니다.</p>
+  </div>
+</div>
+
+<h2>코스별 본인 매칭</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>추천 종목</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 입문 1년 차 / 5K 완주 경험</strong></td>
+      <td>5km</td>
+      <td>여름 첫 대회로 부담 최소, 완주 메달 + 첫 회 IP 가치</td>
+    </tr>
+    <tr>
+      <td><strong>10K 완주 경험, 하프 도전 전</strong></td>
+      <td>10km</td>
+      <td>평지 + 같은 50K 참가비 → 가성비 우위</td>
+    </tr>
+    <tr>
+      <td><strong>10K PB 도전 (50분 이하)</strong></td>
+      <td>10km</td>
+      <td>송도 평지 + 6월 말 새벽 → 시즌 첫 PB 도전 가능 환경</td>
+    </tr>
+    <tr>
+      <td><strong>가을 풀코스 빌드업 중</strong></td>
+      <td>10km</td>
+      <td>여름 페이스 적응 + 빠른 페이스 점검</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>신발 선택 — 송도 평지 6월 새벽</h2>
+
+<p>6월 말 28℃ 가까운 더위 + 평지 도심 코스 조건에 맞는 후보:</p>
+
+<ul>
+  <li><strong>5km / 10K 가벼운 페이스 — 데일리 트레이너:</strong> <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>·<a href="/shoes/adidas-adizero-evo-sl">아디다스 에보 SL</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
+  <li><strong>10K PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a></li>
+  <li><strong>5km 첫 대회 — 안정감 우선:</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></li>
+</ul>
+
+<p>발볼 넓으면 와이드 옵션 우선, 여름 대회는 통기성 좋은 메쉬 어퍼 필수. 발에 맞는 신발 후보가 막막하다면 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a> 참고.</p>
+
+<h2>D-3 액션 플랜</h2>
+
+<ol>
+  <li><strong>오늘~내일 (5/12~13):</strong> 종목 결정(5K vs 10K) → 참가비 50K 결제 → 본인 정보 확인</li>
+  <li><strong>5/15(금):</strong> 최종 마감 — 결정 못 했으면 미루지 말기 (만 명 매진 우려)</li>
+  <li><strong>5/29(금) 17:00:</strong> 환불·정보변경 마지막 기한</li>
+  <li><strong>6월 1~3주차:</strong> 여름 페이스 적응 훈련 (km당 +10초 페이스로 30~50분 베이스런 주 3회)</li>
+  <li><strong>6/28(일) 07:00:</strong> 송도캠퍼스 집결, 08:00 출발</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">같은 날 6/28 다른 대회와 비교</p>
+    <p>같은 6월 28일(일)에 <strong>2026 서울런</strong>도 열립니다(서울·하프/10K/5K, 접수 6/17 마감). 인천 거주·송도 접근성 좋음·이봉주 IP 선호 → 송도 / 서울 거주·하프 옵션 필요 → 서울런. 한 쪽만 선택 가능합니다.</p>
+  </div>
+</div>
+
+<p>여름~가을 마라톤 큐레이션은 <a href="/blog/2026-pohang-iron-run">2026 포항 아이언런 D-19</a>(7/4) → <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 풀코스 접수 가이드</a>(6/24 접수) → <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a> 순으로 빌드업하는 게 자연스럽습니다.</p>
+
+<p><small>출처: runsongdo.co.kr 공식 / runningwikii / 작성일 2026년 5월 12일 기준 / 코스·페이스메이커·이봉주 선수 직접 참여 여부는 주최측 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2026-nike-alphafly-4-prototype',
+    slug: '2026-nike-alphafly-4-prototype',
+    title: '나이키 알파플라이 4 프로토타입 정체 공개 | 보스턴 미국 남자 역대 2위 + Nike-Dev 16141 WA 등록',
+    description: '2026 보스턴 마라톤에서 미국 남자 역대 2위를 만든 그 신발. World Athletics 승인 신발 리스트에 "Nike-Dev 16141"로 등록된 알파플라이 4 프로토타입의 정체와 기술 변화, 정식 출시 시점(시카고 마라톤 11월), 그리고 아디다스 아디오스 프로 에보 3와의 슈퍼슈즈 4파전 구도까지 정리.',
+    thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>나이키 <strong>알파플라이 4 프로토타입</strong>이 2026 보스턴 마라톤에서 Charles Hicks의 <strong>미국 남자 역대 2위</strong>를 만들며 정체 노출 — World Athletics 등록 코드 <strong>Nike-Dev 16141</strong></li>
+    <li>핵심 변화: <strong>드롭 4-6mm로 하향</strong> + 전족부 ZoomX 증량 + <strong>듀얼 Air Zoom 유닛 + 연속형 바텀</strong>(힐~전족부 갭 제거) + 카본 플레이트 신지오메트리</li>
+    <li>정식 출시는 <strong>2026년 11월 시카고 마라톤 직전</strong> 예상. 같은 해 발매된 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>(97g)와의 슈퍼슈즈 4파전 본격화</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">"Nike-Dev 16141"가 의미하는 것</p>
+    <p>나이키가 World Athletics 공식 승인 신발 리스트에 새 코드(Nike-Dev 16141)를 등록했다는 건, <strong>"이미 엘리트 레이스에서 합법적으로 사용할 수 있는 단계"</strong>로 개발이 진척됐다는 뜻입니다. 보통 정식 발매 6~9개월 전 단계. 아디다스가 아디오스 프로 에보 3로 서브2를 만든 직후, 나이키의 본격 반격이 시작됐다는 신호입니다.</p>
+  </div>
+</div>
+
+<h2>발견 경위 — 보스턴 마라톤 2위가 만든 화제</h2>
+
+<p>2026년 4월 21일 보스턴 마라톤. 미국 마라톤의 신예 <strong>Charles Hicks가 미국 남자 역대 2위</strong>로 결승선을 끊었습니다. 그가 신은 신발은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>도 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>도 아닌, 처음 보는 흰색·그레이 톤의 프로토타입.</p>
+
+<p>곧이어 World Athletics 승인 신발 리스트가 업데이트되면서 정체가 드러났습니다 — <strong>Nike-Dev 16141</strong>. 같은 시기 케냐의 Faith Kipyegon(여자 1,500m 세계기록), 미국의 Grant Fisher(트랙 챔피언), Mary Ngugi-Cooper도 같은 신발을 신은 모습이 포착되었습니다. <strong>나이키 엘리트 풀에 베타 모델이 광범위하게 배포된 상태</strong>입니다.</p>
+
+<h2>알파플라이 3 → 4 핵심 변화 4가지</h2>
+
+<h3>① 드롭 8mm → 4-6mm</h3>
+
+<p>알파플라이 3의 8mm 드롭을 4-6mm 수준으로 낮춰 <strong>"더 평평한 신발"</strong>로 가는 방향. 이건 단순한 수치 변경이 아니라 미드솔 구조의 본질적 재설계입니다. 드롭이 낮아지면 전족부에 더 두꺼운 폼을 박을 수 있어 World Athletics 40mm 상한 내에서 <strong>더 큰 에너지 저장소</strong>를 만들 수 있습니다.</p>
+
+<h3>② 전족부 ZoomX 폼 증량 + 신 포뮬러</h3>
+
+<p>알파플라이 3에서도 ZoomX는 업계 최고 에너지 리턴 폼 중 하나로 평가됐는데, 4세대에서는 <strong>새 포뮬러 + 전족부 적층량 증가</strong>로 전족부 추진력을 강화합니다. 마라톤 후반(30km 이후)의 다리 무너짐을 줄이는 핵심 변화로 평가됩니다.</p>
+
+<h3>③ 듀얼 Air Zoom + 연속형 바텀 유닛</h3>
+
+<p>알파플라이 3까지는 힐과 전족부 Air Zoom 유닛 사이에 <strong>물리적 갭</strong>이 있었습니다(미드풋 부분). 4세대에서는 이 갭을 없애고 <strong>힐~전족부가 하나의 연속 바텀 유닛</strong>으로 연결됩니다. 결과는 보행 사이클의 미드풋 전환 단계에서 에너지 손실 감소 + 더 부드러운 롤링.</p>
+
+<h3>④ 카본 플레이트 지오메트리 변경 + 와이드 미드풋</h3>
+
+<p>Flyplate(카본 플레이트)의 위치·곡률이 재설계되고, 미드풋이 더 넓어집니다. 이는 <strong>안정성 향상</strong>을 노린 변화로, 알파플라이 3의 미드풋 흔들림 불만(특히 마라톤 후반)을 직접 겨냥한 개선입니다.</p>
+
+<h2>알파플라이 3 vs 4 — 알려진 정보 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>알파플라이 3 (현행)</th><th>알파플라이 4 (예상)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>220g (US M9)</td><td>경량화 (구체값 미공개)</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td><strong>4-6mm</strong></td></tr>
+    <tr><td><strong>미드솔</strong></td><td>ZoomX (기존 포뮬러)</td><td><strong>ZoomX 신 포뮬러</strong></td></tr>
+    <tr><td><strong>Air Zoom 유닛</strong></td><td>힐+전족부 분리</td><td><strong>연속형 바텀 (갭 제거)</strong></td></tr>
+    <tr><td><strong>카본 플레이트</strong></td><td>Flyplate (기존)</td><td>지오메트리 변경</td></tr>
+    <tr><td><strong>미드풋</strong></td><td>표준</td><td><strong>와이드 (안정성 강화)</strong></td></tr>
+    <tr><td><strong>WA 코드</strong></td><td>공개됨</td><td>Nike-Dev 16141</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2024년 1월</td><td>2026년 11월 시카고 마라톤 직전 예상</td></tr>
+    <tr><td><strong>글로벌 정가</strong></td><td>$285</td><td>$285~330 예상</td></tr>
+  </tbody>
+</table>
+
+<h2>2026 슈퍼슈즈 4파전 구도</h2>
+
+<p>지난 12개월 동안 메이저 브랜드들이 차세대 슈퍼슈즈를 모두 갱신했거나 갱신 진행 중입니다. <strong>2026년은 슈퍼슈즈 역사상 가장 경쟁이 치열한 해</strong>로 기록될 전망입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>무게</th><th>출시</th><th>한국가</th><th>포지션</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디다스 아디오스 프로 에보 3</a></td>
+      <td><strong>97g</strong></td>
+      <td>2026.4 (래플)</td>
+      <td>74만원~</td>
+      <td>업계 최경량, 1~2회 레이스 전용</td>
+    </tr>
+    <tr>
+      <td><strong>나이키 알파플라이 4</strong></td>
+      <td>경량화 예상</td>
+      <td>2026.11 예상</td>
+      <td>40만원대 추정</td>
+      <td>풀코스 30km+ 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td>
+      <td>166g</td>
+      <td>2025.3</td>
+      <td>약 35만원</td>
+      <td>대중적 PB 도전 표준</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></td>
+      <td>159g</td>
+      <td>2025</td>
+      <td>약 29만원</td>
+      <td>가성비 슈퍼슈즈</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/saucony-endorphin-elite-2">서코니 엔돌핀 엘리트 2</a></td>
+      <td>195g</td>
+      <td>2025</td>
+      <td>약 32만원</td>
+      <td>발볼 넓음, 한국 친화적</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 — 알파플라이 4를 기다려야 하나</h2>
+
+<h3>✅ 기다릴 가치가 있는 사람</h3>
+
+<ul>
+  <li><strong>가을 풀코스(춘천·서울·JTBC) PB 도전</strong> — 11월 시카고 직전 출시면 한국 가을 마라톤(10월 중순~11월)과 시기 겹침. 메인 PB 신발로 적합</li>
+  <li><strong>알파플라이 3의 미드풋 흔들림이 거슬렸던 러너</strong> — 와이드 미드풋 + 연속형 바텀으로 안정성 직접 개선</li>
+  <li><strong>30km 이후 다리 무너짐이 문제였던 러너</strong> — 전족부 ZoomX 증량은 마라톤 후반 추진력 보강을 노린 변화</li>
+  <li><strong>"가장 최신 슈퍼슈즈"를 신고 싶은 컬렉터·러너</strong></li>
+</ul>
+
+<h3>❌ 안 기다려도 되는 사람</h3>
+
+<ul>
+  <li><strong>봄 마라톤(5~6월) PB 도전 러너</strong> — 출시 시점이 가을 이후. 지금 필요한 신발이면 베이퍼플라이 4가 정답</li>
+  <li><strong>서브3 이상 페이스 러너</strong> — 알파플라이 시리즈의 강점(30km+ 안정성)이 발휘되는 페이스는 서브3 이하. 그 이상이면 베이퍼플라이 4가 더 가성비 좋음</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — 와이드 미드풋이라도 알파플라이 시리즈의 토박스는 통상 narrow~standard. 발볼 큰 러너는 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>가 더 안전</li>
+  <li><strong>예산 30만원 이하</strong> — 정식 출시가 40만원대 추정. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 또는 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(15만원대)이 합리적</li>
+</ul>
+
+<h2>요약 — 가을 PB 시즌 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5월):</strong> 봄 대회용은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 또는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>로 진행</li>
+  <li><strong>여름 (6~8월):</strong> 가을 PB 도전을 위한 베이스 + 인터벌 빌드업. 신발은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a> 같은 슈퍼 트레이너로 훈련</li>
+  <li><strong>가을 초 (9~10월):</strong> 알파플라이 4 한국 출시 공지 모니터링 — 나이키 SNKRS 앱 + 나이키 한국 공식 채널</li>
+  <li><strong>가을 마라톤 (10월 중순~11월):</strong> 알파플라이 4 또는 기존 슈퍼슈즈 중 본인 페이스·발에 맞는 모델로 결정</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">카본화 입문이 막막하다면</p>
+    <p>카본 플레이트 슈퍼슈즈는 부상 위험과 비용이 모두 큰 카테고리입니다. 본인 발볼·체중·페이스에 맞는 후보를 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 한국 카본화 전반 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 완벽 비교</a>, 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: Sneaker News / Sole Retriever / Gear Patrol / Marathon Handbook / Sundried / World Marathoner / 작성일 2026년 5월 12일 기준 / 무게·스택·가격·출시일 등 미공개 항목은 나이키 공식 발표 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2030-seoul-marathon-100th-dongma-chip',
+    slug: '2030-seoul-marathon-100th-dongma-chip',
+    title: '2030 서울마라톤 100주년 동마칩 안내 | "ROAD TO 100TH" 4년 여정 시작',
+    description: '동마클럽이 2026년 5월 8일 "2030 서울마라톤 100주년" 공식 카운트다운을 발표했습니다. 1931년 첫 대회 이후 한국에서 가장 오래된 도로 마라톤이 100주년을 맞이하기까지 4년. 새로 도입되는 "동마칩(DONGMA CHIP)" 프로그램과 ROAD TO 100TH 프로젝트의 의미, 한국 러너가 지금부터 챙겨야 할 것까지.',
+    thumbnail: '/images/blog/2030-seoul-marathon-100th-dongma-chip.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['서울마라톤', '동아마라톤', '100주년', '동마칩', 'ROAD TO 100TH', '동마클럽', '2030 서울마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>동마클럽이 2026년 5월 8일 <strong>"2030 서울마라톤 100주년" 공식 카운트다운</strong>을 발표 — D-1,400일대</li>
+    <li>4년 여정 프로젝트명 <strong>ROAD TO 100TH</strong>, 새로 도입되는 <strong>"DONGMA CHIP" 프로그램</strong>(상세는 추후 공개) 첫 안내</li>
+    <li>한국 러너 액션: <strong>동마클럽 공지채널</strong>(공식 발표 실시간 알람) 등록 + 동마클럽 ID 활성 유지 — 100주년 관련 우선접수·이벤트 기준</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">5월 8일 공식 발표 — 정보 단편 정리</p>
+    <p>동마클럽 공식 인스타그램(<a href="https://www.instagram.com/dongmaclub/" target="_blank" rel="noopener">@dongmaclub</a>)이 "2030년, 100주년 서울마라톤 DONGMA CHIP 안내" 카드뉴스를 게시했습니다. <strong>"동마칩 상세 내용은 피드를 통해 추후 공개"</strong>로 명시되어 있어 본 글은 발표 직후 시점의 확정 정보만 정리합니다. 세부 혜택·획득 조건은 동마클럽 후속 공지 시 업데이트 예정.</p>
+  </div>
+</div>
+
+<h2>지금 확정된 사실 4가지</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>100주년 대회 시점</strong></td><td>2030년 서울마라톤 (동마클럽 공식 발표)</td></tr>
+    <tr><td><strong>역사</strong></td><td>1931년 첫 대회 이후 한국 최고(最古) 도로 마라톤 시리즈 — "Since 1931" 동마클럽 공식 표기</td></tr>
+    <tr><td><strong>프로젝트명</strong></td><td><strong>ROAD TO 100TH SEOUL MARATHON</strong></td></tr>
+    <tr><td><strong>새 프로그램</strong></td><td><strong>DONGMA CHIP (동마칩)</strong> 도입 발표 — 상세 미공개</td></tr>
+  </tbody>
+</table>
+
+<h2>"ROAD TO 100TH"가 한국 러너에게 의미하는 것</h2>
+
+<p>한국에서 100년을 넘긴 스포츠 이벤트는 거의 없습니다. 서울마라톤은 <a href="/blog/seoul-marathon-100-years-history-1931-2030">1931년 동아일보가 창설</a>한 마라톤 대회로, 일제강점기·해방·전쟁·올림픽을 통과해 2030년 100주년을 맞게 됩니다. 같은 시리즈를 운영하는 동마클럽이 4년 전부터 "100주년 카운트다운"을 공식화한 건, 이 마일스톤이 단순한 회차 숫자가 아니라 <strong>한국 러닝씬 전체의 정체성 이벤트</strong>로 만들겠다는 신호로 읽힙니다.</p>
+
+<p>관련 정황 3가지:</p>
+
+<ul>
+  <li><strong>동마클럽 공지채널 신설</strong> — 5월 초 동마클럽이 "공지채널"을 별도 오픈하면서 "서울마라톤 100주년 관련 소식"을 핵심 알림 카테고리로 분류. 1년 1~2회의 특집 발표가 아닌 <strong>4년 연속 시즌제 콘텐츠</strong>로 운영될 가능성</li>
+  <li><strong>동마칩(DONGMA CHIP) 도입</strong> — "칩"이라는 표현은 통상 ① 누적 마일리지·완주 기록을 저장하는 멤버십 포인트, ② 100주년 한정 굿즈·메달 시스템, ③ 우선접수 자격 부여 시스템 등으로 활용됩니다. 동마클럽이 어느 방향을 갈지는 후속 공지에서 확인 필요</li>
+  <li><strong>동마 시리즈 통합 운영 강화</strong> — 동마클럽은 이미 서울마라톤·서울레이스·공주백제·경주국제 4개 대회를 통합 운영 중이며, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 시리즈 일정</a> 가이드처럼 이 4개 대회 간 연계가 갈수록 강해지는 추세. 동마칩이 시리즈 통합 보상 시스템일 가능성</li>
+</ul>
+
+<h2>한국 러너가 지금부터 챙겨야 할 3가지</h2>
+
+<h3>① 동마클럽 공지채널 등록</h3>
+
+<p>동마클럽 인스타그램 프로필 → 링크트리 하단 "공지채널"에서 가입. 동마칩 상세 발표·100주년 관련 이벤트·우선접수 변경 사항이 가장 빠르게 통보되는 공식 채널입니다. 5월 초 오픈된 신규 시스템이라 가입자 수가 적을 때 등록해두는 게 노이즈 적음.</p>
+
+<h3>② 동마클럽 ID 활성 유지</h3>
+
+<p>이미 동마 시리즈 대회에 참가하면서 동마클럽 ID를 발급받은 러너라면, ID 정보(이메일·전화번호·기록 제출 이력)가 최신 상태인지 확인. 100주년 관련 우선접수·동마칩 적립 등 모든 시스템이 동마클럽 ID 기반으로 운영될 가능성 큼.</p>
+
+<h3>③ 2027~2029 시즌 동마 시리즈 참가 기록 누적</h3>
+
+<p>4년 카운트다운이라는 건 <strong>2027·2028·2029 시즌 참가 이력이 2030 100주년 대회의 자격 요건이 될 수 있다</strong>는 신호로 읽혀집니다. 매년 동마 시리즈 4개 대회 중 최소 1개 이상 완주 또는 동마클럽 멤버십 유지가 100주년 우선접수 트랙을 만드는 기준이 될 가능성. 확정은 아니지만 2027 서울마라톤(이미 풀코스 추첨 종료)부터 차근차근 기록을 남기는 게 안전합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">"100주년" 표기에 대한 보충</p>
+    <p>동마클럽 공식 발표는 "2030년 = 100주년"으로 표기합니다. 1931년 1회 대회 이후 일제강점기·전쟁기 중단 기간을 어떻게 계산하느냐에 따라 회차와 햇수가 일반적으로 일치하지 않습니다. 본 글은 동마클럽의 공식 표기를 그대로 따릅니다. 정확한 회차 정보는 2030년 대회 운영 안내 시점에 공식 확정 예정.</p>
+  </div>
+</div>
+
+<h2>이미 정해진 2027~2029 동마 시리즈 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>시즌</th><th>대회</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>2026 가을</strong></td><td><a href="/blog/2026-gongju-baekje-marathon">공주백제마라톤</a> 9/20 · <a href="/blog/2026-seoul-race">서울레이스</a> 10/11 · <a href="/blog/2026-gyeongju-international-marathon">경주국제마라톤</a> 10/17</td><td>D-130~D-159</td></tr>
+    <tr><td><strong>2027 봄</strong></td><td><a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤</a> 3/21</td><td>풀코스 추첨 5월 마감 (D-313)</td></tr>
+    <tr><td><strong>2027~2029</strong></td><td>동마 시리즈 4개 대회 연간 운영 예상</td><td>100주년 카운트다운 시즌</td></tr>
+    <tr><td><strong>2030</strong></td><td><strong>제100주년 서울마라톤</strong></td><td>ROAD TO 100TH 최종 도착점</td></tr>
+  </tbody>
+</table>
+
+<h2>요약 — 100주년 4년 전 시점에서 해야 할 것</h2>
+
+<ol>
+  <li><strong>오늘:</strong> 동마클럽 공지채널 등록 → 동마칩 상세 발표 알림 수신</li>
+  <li><strong>이번 가을 시즌(9~10월):</strong> 동마 시리즈 중 1개 이상 참가 — 공주백제·서울레이스·경주국제 중 본인 일정과 페이스에 맞는 1개</li>
+  <li><strong>2027 봄:</strong> 2027 서울마라톤 대회일(3/21) 결과 관리 — 풀 또는 10K 완주 기록을 동마클럽 ID에 누적</li>
+  <li><strong>지속:</strong> 동마칩 상세 공개 시 즉시 본 글 업데이트 + 후속 가이드 발행</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 첫 동마 대회로 시작하기</p>
+    <p>2026 하반기 동마 시리즈 3개 대회의 접수 일정·코스·참가비를 한 번에 보려면 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정 총정리</a>를, 2027 서울마라톤 우선접수 가이드는 <a href="/blog/2027-seoul-marathon-priority-d10">2027 서울마라톤 우선접수 D-10</a>을 참고하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: @dongmaclub 인스타그램 공식 발표(2026-05-08) / 동마클럽 공지채널 / 작성일 2026년 5월 12일 기준 / 동마칩 상세 내용은 동마클럽 후속 공지 시 본 글 업데이트 예정.</small></p>
+`,
+  },
+  {
+    id: '2026-pohang-iron-run',
+    slug: '2026-pohang-iron-run',
+    title: '2026 포항 아이언런 D-19 | 7/4 영일대 — 3.8·7.87·15.38km 철의 도시 컨셉, 5/31 마감',
+    description: '포스코노동조합이 주최하는 2026 포항 아이언런(IRON RUN)이 7월 4일(토) 영일대해수욕장 장미광장에서 열립니다. 거리 의미가 독특 — 3.8km(포스코 노조 38주년), 7.87km(철의 비중 7.87g/㎤), 15.38km(철의 녹는점 1,538℃). 정원 5,000명, 5월 31일까지 접수.',
+    thumbnail: '/images/blog/2026-pohang-iron-run.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-12',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['포항 아이언런', 'IRON RUN', '포항 마라톤', '영일대', '포스코', '여름 러닝 대회', '대회 일정'],
+    event: {
+      name: '2026 포항 아이언런 (IRON RUN)',
+      startDate: '2026-07-04T08:00:00+09:00',
+      location: {
+        name: '영일대해수욕장 장미광장',
+        address: '경상북도 포항시 북구 영일대해수욕장 장미광장',
+      },
+      organizer: '포스코노동조합',
+      url: 'https://ironrun.kr',
+      offers: [
+        { name: '1코스 3.8km (포스코 노조 38주년)', priceKrw: 25000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+        { name: '2코스 7.87km (철의 비중)', priceKrw: 35000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+        { name: '3코스 15.38km (철의 녹는점)', priceKrw: 40000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
+      ],
+    },
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026 포항 아이언런 — <strong>2026년 7월 4일(토) 영일대해수욕장 장미광장 출발</strong>. 정원 5,000명, 4/1~5/31 선착순 접수</li>
+    <li>거리 셋 모두 "철의 도시" 컨셉 — <strong>3.8km(포스코 노조 38주년) / 7.87km(철의 비중 7.87g/㎤) / 15.38km(철의 녹는점 1,538℃ ÷ 100)</strong></li>
+    <li>참가비 25K/35K/40K, 메달+티셔츠+배번+기록증+간식. 7월 초 여름 포항 바닷가 새벽 출발(08:00~08:20)</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 D-19 — 5월 31일(일) 마감</p>
+    <p>4월 1일부터 5천 명 선착순. 5월 둘째 주 시점에는 일부 종목 자리가 남아 있지만, 작년 기준 <strong>15.38km 3코스가 가장 먼저 마감</strong>됐습니다. 단체 신청(2인 이상)도 가능하니 크루 단위라면 5월 안에 결정하세요.</p>
+  </div>
+</div>
+
+<h2>왜 이번 대회가 흥미로운가</h2>
+
+<p>국내 마라톤 대회 중 거리에 산업·과학적 의미를 부여한 사례는 손에 꼽힙니다. 포항 아이언런의 세 거리는 단순한 라운드 넘버가 아니라 <strong>"철의 도시 포항"이라는 정체성을 거리 자체로 표현</strong>한 케이스입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>코스</th><th>거리</th><th>의미</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1코스</strong></td>
+      <td>3.8km</td>
+      <td><strong>포스코노동조합 창립 38주년</strong> — 주최 단체의 역사를 거리로</td>
+    </tr>
+    <tr>
+      <td><strong>2코스</strong></td>
+      <td>7.87km</td>
+      <td><strong>철의 비중 7.87 g/㎤</strong> — 물 1g/㎤ 대비 7.87배 무거운 철의 밀도</td>
+    </tr>
+    <tr>
+      <td><strong>3코스</strong></td>
+      <td>15.38km</td>
+      <td><strong>철의 녹는점 1,538℃</strong> ÷ 100 — 액상 철이 시작되는 온도</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>러너 입장에서 의미가 큰 건 <strong>15.38km</strong>입니다. 국내 일반 마라톤이 5K·10K·하프(21.1km)·풀(42.2km)에 거리가 고정돼 있는데, <strong>10K~하프 사이의 중장거리 옵션</strong>이 거의 없습니다. 15.38km는 하프 도전을 준비하는 러너의 훈련 거리로도 딱 맞고, 10K를 졸업한 러너가 다음 단계로 시도하기에 부담이 적은 거리입니다.</p>
+
+<h2>대회 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">7/4 (토)</span>
+    <span class="stat-sub">08:00 첫 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">5/31 (일)</span>
+    <span class="stat-sub">선착순 5,000명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">장소</span>
+    <span class="stat-value">영일대</span>
+    <span class="stat-sub">장미광장</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">주최</span>
+    <span class="stat-value">포스코</span>
+    <span class="stat-sub">노동조합</span>
+  </div>
+</div>
+
+<h2>종목별 상세</h2>
+
+<table>
+  <thead>
+    <tr><th>코스</th><th>거리</th><th>참가비</th><th>정원</th><th>출발</th><th>제한 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>3코스</strong></td><td>15.38km</td><td>40,000원</td><td>2,500명</td><td>08:00</td><td>150분</td></tr>
+    <tr><td><strong>2코스</strong></td><td>7.87km</td><td>35,000원</td><td>1,500명</td><td>08:10</td><td>100분</td></tr>
+    <tr><td><strong>1코스</strong></td><td>3.8km</td><td>25,000원</td><td>1,000명</td><td>08:20</td><td>60분</td></tr>
+  </tbody>
+</table>
+
+<h2>코스·날씨 — 7월 초 포항 바닷가</h2>
+
+<p>출발·도착 모두 영일대해수욕장 장미광장. 코스는 영일대 해변로 일대를 도는 평지 위주로 알려져 있고, 큰 오르막은 없습니다. 7월 초 포항 평균:</p>
+
+<ul>
+  <li><strong>오전 8시 기온:</strong> 평균 22~25℃, 습도 75~85%</li>
+  <li><strong>일출:</strong> 약 5:15 — 출발 시간에는 이미 해가 떠 있어 자외선 차단 필수</li>
+  <li><strong>바람:</strong> 해변 코스 특성상 바다 쪽 풍속이 변수. 평소 3~5m/s 수준이라 큰 부담은 없음</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">☀️</span>
+  <div class="callout-body">
+    <p class="callout-title">여름 대회 — 페이스 -20초 / km 보수적으로</p>
+    <p>봄가을 대회 기준 자기 페이스에서 km당 15~20초 늦추는 것이 안전합니다. 15.38km 코스라면 평소 하프 페이스보다 1~2분 정도 늦은 페이스로 잡고, 1km마다 물·전해질 보충 권장. 출발 직전 햇볕 노출 최소화(모자·선글라스·자외선 차단제) 필수.</p>
+  </div>
+</div>
+
+<h2>한국 러너 관점 — 어느 코스를 고를까</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>추천 코스</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>러닝 입문 1년 차 / 5K~10K 완주 경험</strong></td>
+      <td>1코스 3.8km</td>
+      <td>여름 첫 대회로 부담 최소. 완주 메달 받는 경험에 집중</td>
+    </tr>
+    <tr>
+      <td><strong>10K 완주, 하프 도전 전</strong></td>
+      <td>2코스 7.87km</td>
+      <td>거리 적응 + 여름 페이스 컨트롤 훈련</td>
+    </tr>
+    <tr>
+      <td><strong>하프 완주 경험 있음, 가을 마라톤 준비 중</strong></td>
+      <td>3코스 15.38km</td>
+      <td>장거리 페이스 유지 + 여름 더위 적응 훈련. 가을 풀 시즌 빌드업 시점에 딱</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>신발 선택 — 여름 평지 코스 기준</h2>
+
+<p>7월 초 28℃ 가까운 더위 + 평지 해변 코스라는 조건에 맞는 신발 후보:</p>
+
+<ul>
+  <li><strong>1코스 3.8km / 2코스 7.87km — 경량 데일리:</strong> <a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 에보 SL</a>(223g)·<a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>·<a href="/shoes/new-balance-rebel-v5">NB 레벨 v5</a></li>
+  <li><strong>3코스 15.38km / PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
+  <li><strong>3코스 15.38km / 안전 완주 — 슈퍼 트레이너 또는 쿠션화:</strong> <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(216g)·<a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a></li>
+</ul>
+
+<p>발볼이 넓으면 와이드 옵션을 우선하고, 여름 대회는 통기성 좋은 메쉬 어퍼가 필수입니다. 본인 발에 맞는 신발이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
+
+<h2>기념품·접수 방법</h2>
+
+<ul>
+  <li><strong>기념품:</strong> 메달, 기념 티셔츠, 배번표, 기록증, 음료·간식</li>
+  <li><strong>접수:</strong> 공식 홈페이지 <a href="https://ironrun.kr" target="_blank" rel="noopener">ironrun.kr</a></li>
+  <li><strong>접수 방식:</strong> 개인 신청 / 단체 신청(2인 이상)</li>
+  <li><strong>문의:</strong> 070-7718-7577 (평일 11:00~17:00)</li>
+</ul>
+
+<h2>요약 — D-19 액션 플랜</h2>
+
+<ol>
+  <li><strong>이번 주:</strong> 본인 페이스·하프 도전 시점·여름 더위 적응 수준 고려해서 코스 결정</li>
+  <li><strong>5월 안:</strong> ironrun.kr에서 접수 — 15.38km 3코스 우선 마감 우려</li>
+  <li><strong>6월:</strong> 여름 페이스 훈련 시작 — 평소 페이스에서 20초 늦춰 30~60분 베이스런 주 3회</li>
+  <li><strong>대회 1주 전:</strong> 포항 1박 또는 새벽 출발 교통편 확정, 배번·물품 보관 일정 체크</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">여름 대회와 가을 마라톤 빌드업</p>
+    <p>7월 포항 아이언런이 7~9월 여름 훈련의 좋은 중간 점검 대회가 됩니다. 가을 풀코스 도전이 목표라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 접수 가이드</a>, 동마 시리즈와 묶고 싶다면 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: ironrun.kr 공식 / @runners_now 인스타그램 / runningwikii / 작성일 2026년 5월 12일 기준 / 정원·참가비·코스는 주최측 공지에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-asics-kayano-33-launch',
+    slug: '2026-asics-kayano-33-launch',
+    title: 'ASICS GEL-KAYANO 33 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
+    description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 13년간 유지된 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
+    thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['아식스', 'Asics', 'GEL-KAYANO 33', '카야노', '안정화', 'FLUIDSUPPORT', 'FF BLAST MAX', '러닝화 발매'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 추정 199,000원~209,000원</li>
+    <li>13년간 유지된 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
+    <li>스택 40mm·드롭 8mm·무게 298g — 32와 거의 동일한 외형이지만 <strong>착화감은 완전히 다른 방향</strong>으로 진화. 32 재고 세일이 33 발매 직후 시작될 것</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">6/1 출시 — 핵심 셋업</p>
+    <p>아디다스 코리아 공식 발표 기준 33은 <strong>6월 1일 ASICS 공식 사이트(asics.co.kr) + 직영 매장 + 주요 멀티숍 동시 출시</strong> 예정. 사이즈 빠른 매진 우려는 적지만 <strong>한국 인기 컬러(블랙/네이비/화이트)</strong>는 발매 첫 주가 안전합니다.</p>
+  </div>
+</div>
+
+<h2>왜 이번 33이 중요한가</h2>
+
+<p>카야노 시리즈는 1993년 1세대 출시 이후 33세대까지 이어진 ASICS의 <strong>안정화 플래그십</strong>입니다. 한국 러너 사이에서도 "평발이면 카야노", "발목 안쪽으로 무너지면 카야노"가 거의 공식처럼 굳어진 모델이죠. <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>에서도 카야노 32를 안정화 1순위로 추천한 이유입니다.</p>
+
+<p>그런데 이번 33은 단순한 마이너 업데이트가 아닙니다. <strong>2013년 카야노 19부터 13년간 유지된 4D Guidance System을 통째로 폐지</strong>하고 새 안정성 시스템(FLUIDSUPPORT)을 도입했습니다. 카야노의 정체성이라 할 미디얼 포스트(안쪽 단단한 폼)·트러스틱(Trusstic) 구조가 사라지는 첫 세대라는 뜻입니다.</p>
+
+<h2>한 눈에 보는 카야노 33</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>공식명</strong></td><td>ASICS GEL-KAYANO 33</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2026년 6월 1일</td></tr>
+    <tr><td><strong>글로벌 정가</strong></td><td>$170</td></tr>
+    <tr><td><strong>한국 정가 (예상)</strong></td><td>199,000원~209,000원 (32와 동일~+1만원)</td></tr>
+    <tr><td><strong>무게</strong></td><td>298g (남성 US 9) / 259g (여성 US 8)</td></tr>
+    <tr><td><strong>스택</strong></td><td>힐 40mm / 전족부 32mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td></tr>
+    <tr><td><strong>안정성 시스템</strong></td><td><strong>FLUIDSUPPORT</strong> (듀얼 폼 + 지오메트리 기반)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF BLAST MAX (탑) + FF BLAST PLUS (하단)</td></tr>
+    <tr><td><strong>어퍼</strong></td><td>재설계된 엔지니어드 메쉬</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>AHARPLUS 러버</td></tr>
+  </tbody>
+</table>
+
+<h2>핵심 변화 ① — 4D Guidance System 폐지, FLUIDSUPPORT 도입</h2>
+
+<p>전작 카야노 32까지의 안정성 메커니즘은 <strong>"단단한 폼으로 발 무너짐을 막는다"</strong>는 발상이었습니다. 미디얼 포스트가 안쪽에 박혀 있고, 4D Guidance System이 발이 안쪽으로 회전하는 걸 단계적으로 잡아주는 구조였죠.</p>
+
+<p>33의 FLUIDSUPPORT는 정반대 접근입니다. <strong>"부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡아준다"</strong>는 발상. 단단한 부품을 박는 게 아니라 폼 자체의 지오메트리(외측 더 두껍게 / 내측 더 단단하게)와 듀얼 레이어 구성으로 안정성을 만듭니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">기존 카야노 팬이 주의할 점</p>
+    <p>"카야노 = 든든한 안정감"의 정체성이 바뀌었습니다. 32까지의 그 단단하고 살짝 묵직한 안쪽 지지감을 좋아했다면, 33은 <strong>"더 부드럽고 자연스러운 안정성"</strong>으로 느껴질 수 있습니다. 호불호 갈릴 수 있는 변화입니다.</p>
+  </div>
+</div>
+
+<h2>핵심 변화 ② — FF BLAST MAX 듀얼 폼</h2>
+
+<p>카야노 시리즈에 처음으로 <strong>FF BLAST MAX</strong>가 들어갑니다. 이 폼은 <a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>·<a href="/shoes/asics-novablast-5">Novablast 5</a>에서 검증된 ASICS 최상위 슈퍼크리티컬 폼으로, FF BLAST PLUS 대비 <strong>에너지 리턴 ~10%, 경량성 ~15% 향상</strong>됩니다.</p>
+
+<p>33의 미드솔 구조는 듀얼 레이어:</p>
+<ul>
+  <li><strong>탑 레이어 (발 닿는 쪽):</strong> FF BLAST MAX — 부드러운 착화감 + 높은 반발</li>
+  <li><strong>바텀 레이어 (지면 쪽):</strong> FF BLAST PLUS — 안정성 + 내구성</li>
+</ul>
+
+<p>지금까지 카야노는 "안정화라 쿠션은 좀 단단했음"이라는 평이 많았는데, 33부터는 <strong>Nimbus급 쿠션 + 안정성</strong>을 동시에 노립니다.</p>
+
+<h2>32와 33 직접 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>변화</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>300g</td><td>298g</td><td>거의 동일</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
+    <tr><td><strong>드롭</strong></td><td>10mm</td><td>8mm</td><td><strong>-2mm (더 평탄)</strong></td></tr>
+    <tr><td><strong>안정성 시스템</strong></td><td>4D Guidance System</td><td><strong>FLUIDSUPPORT</strong></td><td>구조 완전 교체</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>FF Blast Plus Eco (싱글)</td><td><strong>FF BLAST MAX + PLUS (듀얼)</strong></td><td>최상위 폼 채택</td></tr>
+    <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000~209,000원 예상</td><td>유지~소폭 상승</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>2E (정식 출시)</td><td>2E 예상 (미발표)</td><td>유지 예상</td></tr>
+  </tbody>
+</table>
+
+<h2>한국 러너 관점 — 33을 사야 하나, 32를 사야 하나</h2>
+
+<h3>✅ 33을 사야 하는 사람</h3>
+
+<ul>
+  <li><strong>카야노 32까지 "안정성은 좋은데 쿠션이 좀 단단했다"는 사람</strong> — FF BLAST MAX 도입으로 정확히 그 불만이 해소됩니다</li>
+  <li><strong>처음 안정화를 사는 평발·과내전 러너</strong> — 어차피 처음이면 32의 단단한 느낌도 어색할 수 있으니, 더 부드러운 33으로 시작하는 게 적응 빠름</li>
+  <li><strong>아킬레스건염·종아리 부하 줄이고 싶은 러너</strong> — 드롭 10mm → 8mm로 낮아져 발목·종아리 부하 약간 줄어듬</li>
+  <li><strong>주간 50km+ 장거리 러너</strong> — 듀얼 폼 + 새 메쉬 어퍼로 장시간 착용 편의성 향상 기대</li>
+</ul>
+
+<h3>❌ 32 재고 세일을 노려야 하는 사람</h3>
+
+<ul>
+  <li><strong>이미 카야노 31·32를 좋아하던 러너</strong> — 33의 FLUIDSUPPORT가 어떻게 느껴질지 검증 안 됨. 익숙한 32를 세일가에 한 켤레 더 확보가 안전</li>
+  <li><strong>예산 16만원 이하</strong> — 33 발매 직후 32 재고가 30~40% 할인 들어갈 가능성 큼 (199,000원 → 13~14만원대)</li>
+  <li><strong>"카야노 = 단단한 지지감" 정체성 좋아하는 러너</strong> — 33이 더 부드러워진 게 본인에게 맞을지 매장 시착 전엔 알 수 없음</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">진짜 똑똑한 선택 — 7월 매장 시착 후 결정</p>
+    <p>33은 ASICS 직영(강남·잠실)에서 시착 가능합니다. <strong>7월 중순쯤이면 32 재고 세일도 본격화</strong>되므로, 33을 한 번 신어보고 마음에 들면 33, 32의 단단함이 더 좋으면 32 세일가 구매가 합리적입니다. 굳이 서두를 필요 없이 시착 후 결정하세요.</p>
+  </div>
+</div>
+
+<h2>다른 안정화와 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>한국가</th><th>무게</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="/shoes/asics-gel-kayano-33"><strong>Kayano 33</strong></a></td>
+      <td>209,000원</td>
+      <td>298g</td>
+      <td>FLUIDSUPPORT + 듀얼 폼, 부드러운 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-gel-kayano-32">Kayano 32</a></td>
+      <td>199,000원</td>
+      <td>300g</td>
+      <td>4D Guidance, 단단한 안정성, 13년 검증</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/brooks-glycerin-gts-22">Brooks Glycerin GTS 22</a></td>
+      <td>209,000원</td>
+      <td>293g</td>
+      <td>GuideRails 측면 가이드, 자연스러운 안정성</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/new-balance-860-v15">NB 860 v15</a></td>
+      <td>189,000원</td>
+      <td>330g</td>
+      <td>Stability Plane, 가성비 + 4E 와이드</td>
+    </tr>
+    <tr>
+      <td>Saucony Tempus 2</td>
+      <td>219,000원</td>
+      <td>278g</td>
+      <td>PWRRUN PB 슈퍼크리티컬 + 외측 가이드 프레임</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>요약 — 구매 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5/11~):</strong> 32에 만족하면 매장에서 사이즈 미리 확인, 33 시착할 때 비교 위해</li>
+  <li><strong>6월 1일 (출시일):</strong> 강남·잠실 ASICS 직영점에서 33 시착 가능. 1~2km 매장 내 트레드밀 시승 권장</li>
+  <li><strong>7월 중순:</strong> 32 재고 세일 본격화 예상. 33에 확신 없으면 32 세일가 잡기</li>
+  <li><strong>가을 마라톤 시즌 전(8~9월):</strong> 본인 메인 러닝화 결정 — 33 or 32 or 다른 안정화</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">발볼·체중·페이스로 후보 좁히기</p>
+    <p>본인 발볼·평발 여부·체중·러닝 페이스에 맞는 안정화 후보를 1분 진단으로 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 과체중 + 안정성 둘 다 필요하면 <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>도 참고.</p>
+  </div>
+</div>
+
+<p><small>출처: ASICS US 공식 / WWD Footwear News / Canadian Running Magazine / T3 / Gear Patrol / KicksOnFire / Sundried Reviews / 작성일 2026년 5월 11일 기준 / 한국 정가·출시 일정은 ASICS 코리아 공식 발표에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-nb-1080v15-tryout-popup-d3',
+    slug: '2026-nb-1080v15-tryout-popup-d3',
+    title: 'NB 1080 v15 무료 트라이얼 POP-UP D-3 | 5/14 마감 — 경복궁·부산 OYM에서 신상 쿠션화 직접 신어보기',
+    description: '뉴발란스 1080 v15·Rebel v5 신상 컬러를 매장에서 무료 시착할 수 있는 ON YOUR MARK 팝업이 5월 14일(수)에 종료됩니다. 경복궁·부산 두 매장에서 진행, 트라이얼 시 무료 커피 쿠폰. NB의 플래그십 쿠션화(216g, 인피니온 폼, 2E·4E 와이드)를 사기 전에 신어볼 수 있는 거의 유일한 기회.',
+    thumbnail: '/images/blog/2026-nb-1080v15-tryout-popup-d3.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['뉴발란스', 'New Balance', '1080 v15', 'Rebel v5', '온유어마크', 'OYM', '러닝화 시착', 'POP-UP'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>NB <strong>1080 v15 + Rebel v5 무료 트라이얼 팝업</strong>이 5월 14일(수)에 종료 — D-3</li>
+    <li>장소: <strong>ON YOUR MARK 경복궁점 / 부산점</strong> 2곳. 트라이얼 시 무료 커피 쿠폰 제공</li>
+    <li>1080 v15(216g·인피니온 폼·2E·4E 와이드)와 Rebel v5(220g·FuelCell)를 사기 전 매장 시착 가능한 거의 유일한 기회</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">D-3 — 5월 14일(수) 영업 종료까지</p>
+    <p>온유어마크 경복궁점은 <strong>5월 1일~14일</strong>, 부산점은 <strong>5월 2일~14일</strong>까지 진행. 평일 마지막 날이라 퇴근 후 방문이 어려울 수 있으니 토요일(5/10) 또는 이번 주 중반에 가는 게 안전합니다.</p>
+  </div>
+</div>
+
+<h2>이번 팝업이 왜 중요한가</h2>
+
+<p>NB 1080 v15는 2026년 발매된 뉴발란스 플래그십 쿠션화입니다. 전작 v14 대비 <strong>69g 경량화(285→216g)</strong> + 인피니온(질소 주입 슈퍼크리티컬 폼) 채택으로 거의 다른 신발이 됐죠. <a href="/shoes/new-balance-1080-v15">1080 v15</a>를 한국 러너에게 매력적으로 만드는 핵심 3가지:</p>
+
+<ul>
+  <li><strong>216g 경량 쿠션화</strong> — 맥스 쿠션(40mm 스택) 신발이 200g대로 떨어진 거의 유일한 모델</li>
+  <li><strong>2E·4E 와이드 옵션 정식 출시</strong> — 발볼 넓은 한국 러너에게 거의 유일한 맥스 쿠션 선택지</li>
+  <li><strong>인피니온 폼</strong> — Fresh Foam X보다 통기성·반응성·에너지 리턴이 향상된 NB 최신 폼</li>
+</ul>
+
+<p>문제는 <strong>"신어보지 않고 209,000원짜리 신발을 사는 건 부담"</strong>이라는 점. 1080 v14의 narrow 토박스를 피했던 러너라도 v15는 폭이 어떻게 바뀌었는지 실제로 신어봐야 알 수 있습니다.</p>
+
+<h2>팝업 정보 정리</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>이벤트명</strong></td><td>New Balance × ON YOUR MARK 1080v15 & Rebel v5 Summer Run POP-UP</td></tr>
+    <tr><td><strong>경복궁점 기간</strong></td><td>5월 1일(목) ~ 5월 14일(수)</td></tr>
+    <tr><td><strong>부산점 기간</strong></td><td>5월 2일(금) ~ 5월 14일(수)</td></tr>
+    <tr><td><strong>혜택 ①</strong></td><td>1080 v15 + Rebel v5 <strong>무료 트라이얼</strong></td></tr>
+    <tr><td><strong>혜택 ②</strong></td><td>트라이얼 이용 시 <strong>무료 커피 쿠폰</strong></td></tr>
+    <tr><td><strong>주관</strong></td><td>NBRC Seoul · NB Run Hub · ON YOUR MARK</td></tr>
+  </tbody>
+</table>
+
+<h2>두 신발 중 어느 쪽을 신어봐야 하나</h2>
+
+<h3>① <a href="/shoes/new-balance-1080-v15">1080 v15</a> — 데일리 쿠션화의 정답 후보</h3>
+
+<p><strong>209,000원 · 216g · 힐 스택 40mm · 평점 4.9</strong></p>
+
+<p>맥스 쿠션 카테고리에서 v15의 위치는 분명합니다. <strong>"가장 가볍고 발에 맞는 옵션이 많은 맥스 쿠션"</strong>. <a href="/shoes/hoka-bondi-9">Bondi 9</a>(303g)·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a>(281g)보다 70~85g 가볍습니다.</p>
+
+<p>매장에서 확인할 3가지:</p>
+<ol>
+  <li><strong>토박스 핏</strong> — v14 narrow에서 v15는 standard로 개선. 발볼 보통이면 무난, 넓으면 2E 또는 4E 시착</li>
+  <li><strong>힐 컵 핏</strong> — 216g 경량화 과정에서 힐 카운터가 부드러워짐. 뒤꿈치가 헐거우면 사이즈 -0.5 시도</li>
+  <li><strong>인피니온 폼 반응</strong> — 매장 내 가볍게 점프하거나 빠르게 걸을 때 Fresh Foam X 대비 반응이 빠른 느낌 체크</li>
+</ol>
+
+<h3>② <a href="/shoes/new-balance-rebel-v5">Rebel v5</a> — 가벼운 페이스 트레이너</h3>
+
+<p><strong>189,000원 · 220g · 데일리/템포 · 평점 4.5</strong></p>
+
+<p>Rebel은 1080과 성격이 완전히 다릅니다. 데일리·템포 페이스(5:30/km 이하)에서 빠른 반응을 원하는 러너용 경량 트레이너. <strong>1080이 "푹신함"이라면 Rebel은 "통통 튕김"</strong>. FuelCell 폼 + 카본 플레이트 없는 가벼운 구조라 비-카본화 카테고리에서 빠른 페이스 좋아하는 러너에게 인기.</p>
+
+<p>매장에서는 1080 신은 후 Rebel을 신어 비교하면 차이가 즉시 느껴집니다. <strong>"나는 데일리 페이스 우선" → 1080 / "스피드도 챙기고 싶다" → Rebel</strong>.</p>
+
+<h2>매장 위치·운영 시간</h2>
+
+<table>
+  <thead>
+    <tr><th>매장</th><th>주소·이동</th><th>운영 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>OYM 경복궁점</strong></td>
+      <td>서울 종로구 청운효자동 / 3호선 경복궁역 도보 5분</td>
+      <td>평일 11:00~20:00 (변동 가능)</td>
+    </tr>
+    <tr>
+      <td><strong>OYM 부산점</strong></td>
+      <td>부산 / @onyourmark_running 인스타그램 DM 확인 권장</td>
+      <td>매장 공지 확인</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">시착 전 준비물</p>
+    <p>① <strong>러닝 양말</strong> — 평소 신는 양말 두께로 핏 확인 필수, ② <strong>발 측정 기록</strong> — 가능하면 본인 발 길이(mm) + 발볼 너비 미리 측정, ③ <strong>오후 4시 이후 방문</strong> — 하루 중 발이 가장 부어 있는 시간이라 실제 러닝 시 핏과 가깝습니다.</p>
+  </div>
+</div>
+
+<h2>같이 보면 좋은 NB 소식</h2>
+
+<ul>
+  <li><strong>NB Run Hub Yeouido</strong> — 2026년 5월 9일(토) 여의나루 이크루즈에 NB 러닝 성지 팝업 오픈. 러닝 슈즈·의류 무료 대여 + 짐 보관 + 커피·타월 제공</li>
+  <li><strong>Grey Days 한정판</strong> — 1080 v15 + Rebel v5 Grey Days 시즌 한정 컬러 출시. 팝업에서 시착·구매 가능 (재고 한정)</li>
+</ul>
+
+<h2>요약 — 액션 플랜</h2>
+
+<ol>
+  <li><strong>이번 주 중반(5/12~13):</strong> 평일 오후 경복궁/부산 OYM 방문 — 1080 v15·Rebel v5 시착 + 사이즈 결정</li>
+  <li><strong>5월 14일(수):</strong> 마지막 날 — 결정 못 했으면 평일 점심 시간 활용</li>
+  <li><strong>이후:</strong> 매장 또는 NB 공식 사이트(nbkorea.com)에서 결정한 사이즈·컬러 구매. Grey Days 한정 컬러 노린다면 빠른 결정 필요</li>
+</ol>
+
+<p>본인 발에 맞는 쿠션화 후보를 더 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>, 발볼 넓은 한국 러너 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
+
+<p><small>출처: @nbrc_seoul / @newbalance_runhub / @onyourmark_running 인스타그램 / 작성일 2026년 5월 11일 기준 / 팝업 일정·혜택은 매장 사정에 따라 변동될 수 있으니 방문 전 인스타그램 확인 권장.</small></p>
+`,
+  },
+  {
+    id: '2026-bape-adidas-evo-sl-release',
+    slug: '2026-bape-adidas-evo-sl-release',
+    title: 'BAPE × 아디다스 에보 SL | 6월 1일 발매 — 좌우 비대칭 카모, 한국 러너 구매 경로 총정리',
+    description: '6월 1일(월) 전 세계 동시 발매되는 BAPE × adidas Adizero Evo SL (KJ5751). 좌우 짝짝이 핑크/베이비블루 + ABC 카모 + Shooting Star 로고가 합쳐진 협업. 글로벌 $200 / 한국가 추정, 베이스 모델 가성비 슈퍼폼(83% 에너지 리턴) 그대로. 한국에서 살 수 있는 경로와 BAPE Store 서울·아디다스 앱 셋업까지.',
+    thumbnail: '/images/blog/2026-bape-adidas-evo-sl-release.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['BAPE', '아디다스', '아디제로 에보 SL', '콜라보', '한정판', '러닝화 발매', '슈퍼폼'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>BAPE × 아디다스 아디제로 에보 SL (KJ5751) — <strong>2026년 6월 1일(월) 전 세계 동시 발매</strong></li>
+    <li>좌우 비대칭 디자인(좌 베이비 블루 / 우 핑크) + ABC 카모(칼라·라이너·레이스) + 한 쪽 3-스트라이프 / 다른 쪽 Shooting Star</li>
+    <li>글로벌 정가 <strong>$200</strong> — 일반 에보 SL($150 / 한국 209,000원) 대비 약 33% 프리미엄. 한국 매장 BAPE 압구정·홍대 + 아디다스 앱 KR 가능성</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">6월 1일 발매 — 구매 전 셋업</p>
+    <p>한정판 협업은 발매 당일 결제까지 가는 게 진짜 게임입니다. ① <strong>아디다스 KR 앱</strong> 회원가입 + 본인인증 + 결제 카드 등록, ② <strong>BAPE Store</strong> 압구정·홍대 매장 입고 문의 (전화/인스타 DM), ③ adidas Confirmed 앱 다운로드(글로벌 한정 발매 진행 채널) — 이 3가지는 5월 안에 끝내두세요.</p>
+  </div>
+</div>
+
+<h2>일단 무슨 신발인가</h2>
+
+<p>이번 협업은 BAPE(A Bathing Ape)와 아디다스의 2026 시즌 4번째 공동 작업입니다. 2월의 BAPE × adidas 풋볼 컬렉티브(World Cup 컬렉션) 이후, 이번엔 <strong>아디다스에서 가장 잘 팔리는 데일리 트레이너</strong>인 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>을 베이스로 골랐습니다.</p>
+
+<p>왜 에보 SL을 골랐는지 잠깐 짚자면, 이 신발이 2025~2026 글로벌 슈퍼폼 트렌드의 가성비 정답이기 때문입니다. <strong>아디오스 프로 3와 동일한 100% Lightstrike Pro 미드솔</strong>을 데일리 트레이너 가격(15만원)에 풀어 RunRepeat 83% 에너지 리턴 측정으로 화제가 됐죠. 223g 초경량 + 컨티넨탈 러버 아웃솔까지, 단가 대비 성능이 가장 균형 잡힌 모델입니다.</p>
+
+<h2>디자인 — 좌우 짝짝이가 핵심</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">발매일</span>
+    <span class="stat-value">6/1 (월)</span>
+    <span class="stat-sub">전 세계 동시</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">스타일 코드</span>
+    <span class="stat-value">KJ5751</span>
+    <span class="stat-sub">남녀 공용</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">글로벌 가격</span>
+    <span class="stat-value">$200</span>
+    <span class="stat-sub">≒ 한국 28만원대 추정</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">베이스 모델</span>
+    <span class="stat-value">에보 SL</span>
+    <span class="stat-sub">100% Lightstrike Pro</span>
+  </div>
+</div>
+
+<p>실물 이미지를 보면 한 번에 알 수 있는 포인트가 5가지입니다.</p>
+
+<ul>
+  <li><strong>좌우 비대칭 컬러:</strong> 한쪽은 베이비 블루 + 핑크 토 캡, 반대쪽은 핑크 + 블루 토 캡. 신발 한 켤레가 좌·우가 다른 색입니다. 멀리서 봐도 콜라보임을 알 수 있는 시그니처.</li>
+  <li><strong>ABC 카모 패턴:</strong> BAPE 시그니처 ABC(에이프) 카모가 칼라·라이너·레이스에만 적용. 어퍼 본체는 깔끔한 단색으로 유지.</li>
+  <li><strong>로고 짝짝이:</strong> 한쪽 사이드는 아디다스 <strong>3-스트라이프</strong>, 다른 쪽 사이드는 BAPE <strong>Shooting Star</strong> 로고. 두 브랜드를 한 켤레에 동등하게 박은 디자인.</li>
+  <li><strong>골드 디테일:</strong> 힐 카운터와 텅 라벨에 골드 액센트. 프리미엄 협업 톤을 잡아주는 포인트.</li>
+  <li><strong>퍼포먼스는 그대로:</strong> 미드솔(100% Lightstrike Pro), 아웃솔(컨티넨탈 러버), 무게(223g), 스택(힐 36mm / 전족부 28mm) — 베이스 모델과 동일. <strong>러닝화 성능은 손대지 않았다</strong>는 게 중요합니다.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 좌우 비대칭인가</p>
+    <p>BAPE × adidas 2026 시즌의 공통 디자인 언어입니다. 2월 풋볼 컬렉션 운동화도 같은 비대칭 패턴이었어요. 두 브랜드의 정체성을 한쪽씩 나누는 방식인데, 실제로 신었을 때 좌우 색이 다르면 도드라지기 때문에 호불호가 갈립니다. 출근·일상화로 쓸 거면 한 번 더 고민할 디자인입니다.</p>
+  </div>
+</div>
+
+<h2>한국에서 어떻게 사나 — 채널별 현실성</h2>
+
+<table>
+  <thead>
+    <tr><th>경로</th><th>현실성</th><th>가격대</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>① BAPE Store 서울(압구정·홍대)</strong></td>
+      <td>오프라인 발매 가능성 가장 높음. 줄서기 또는 응모 방식 예상</td>
+      <td>한국 정가 28~30만원대 추정</td>
+    </tr>
+    <tr>
+      <td><strong>② 아디다스 KR 앱·웹 (adidas.com/kr)</strong></td>
+      <td>2026년 BAPE 협업 풋볼 컬렉션이 한국 앱에서 동시 발매됐던 전례 있음</td>
+      <td>한국 정가</td>
+    </tr>
+    <tr>
+      <td><strong>③ adidas Confirmed 앱 (글로벌)</strong></td>
+      <td>아디다스 글로벌 한정 발매 공식 채널. 한국 IP에서 응모 가능하나 배송은 별도 확인</td>
+      <td>$200 + 배송비·관세</td>
+    </tr>
+    <tr>
+      <td><strong>④ BAPE.com 글로벌</strong></td>
+      <td>발매 직후 즉시 매진 패턴. 한국 직배송은 가능하나 관세 별도</td>
+      <td>$200 + 관·배송</td>
+    </tr>
+    <tr>
+      <td><strong>⑤ 리셀 (KREAM, StockX)</strong></td>
+      <td>발매 직후 프리미엄 30~50% 예상. 사이즈 빠른 매진 우려</td>
+      <td>35~45만원 추정</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 정식 발매 여부는 5월 마지막 주에 확정</p>
+    <p>발매 전까지 아디다스 코리아가 한국 발매를 공식 공지하지는 않았습니다. 통상 BAPE 협업은 발매 1~2주 전 인스타그램(@adidaskr / @bape_kr)에서 한국 발매 채널을 발표하니, 구매 채널은 공식 인스타에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>그래서 살 만한가 — 러너 관점 냉정한 평가</h2>
+
+<h3>✅ 사도 되는 사람</h3>
+
+<ul>
+  <li><strong>BAPE·스니커헤드 컬렉터</strong> — 운동화 패션 가치 우선. 좌우 비대칭 + 카모 + 골드는 BAPE 협업 중에서도 색감이 강한 편</li>
+  <li><strong>러닝 + 데일리 겸용 1켤레로 끝내고 싶은 러너</strong> — 베이스 모델 성능 그대로니까 5~10km 데일리 러닝과 출근까지 한 켤레로 커버 가능</li>
+  <li><strong>일반 에보 SL을 어차피 살 예정이었던 러너</strong> — 한국가 추정 28~30만원이면 정가 209,000원 대비 +7~9만원. 한정판 가치 더하면 본전 이상</li>
+</ul>
+
+<h3>❌ 안 사도 되는 사람</h3>
+
+<ul>
+  <li><strong>순수 퍼포먼스 목적 러너</strong> — 같은 미드솔의 일반 에보 SL이 15만원(세일가)에 살 수 있습니다. 좌우 짝짝이 색감이 거슬리면 본전 못 뽑음</li>
+  <li><strong>안정화·과내전 러너</strong> — 에보 SL은 안정성 6/10. 베이스 자체가 중립~빠른 페이스용이라 발 안정성 필요한 러너에게는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/new-balance-860-v15">860 v15</a>가 정답</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — BAPE 협업 버전은 표준 폭만 출시. 와이드 옵션 없음. 일반 에보 SL의 와이드(2E)를 살 거면 그쪽이 더 합리적</li>
+</ul>
+
+<h2>2026 아디다스 협업 흐름 정리</h2>
+
+<p>이번 BAPE × 에보 SL은 아디다스의 2026 협업 라인업 중에서도 러닝 성능과 패션이 균형 잡힌 모델입니다. 같은 시즌 다른 발매와 비교하면 위치가 분명해집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>발매</th><th>한국가</th><th>성격</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>BAPE × 에보 SL</strong></td>
+      <td>2026.6.1</td>
+      <td>28~30만원 추정</td>
+      <td>러닝 + 패션 협업</td>
+    </tr>
+    <tr>
+      <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td>
+      <td>2026.5.4 래플 / 가을 확대</td>
+      <td>74만원~</td>
+      <td>서브2 슈퍼슈즈, 100km 소모품</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/adidas-adizero-evo-sl">일반 에보 SL</a></td>
+      <td>상시</td>
+      <td>209,000원 (세일 15만원대)</td>
+      <td>가성비 슈퍼폼 데일리</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td>
+      <td>상시</td>
+      <td>약 32만원</td>
+      <td>데일리 가능한 카본화</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>요약 — 구매 액션 플랜</h2>
+
+<ol>
+  <li><strong>지금 (5/11~):</strong> 아디다스 KR 앱 회원가입·본인인증·결제카드 등록 / BAPE 압구정·홍대 매장 입고 문의 (@bape_kr DM)</li>
+  <li><strong>5월 마지막 주:</strong> 아디다스 코리아·BAPE 코리아 인스타그램 한국 발매 채널 공지 확인</li>
+  <li><strong>발매 전날 (5/31):</strong> adidas Confirmed 앱 알림 설정, 사이즈 미리 결정(에보 SL은 보통 사이즈 그대로 또는 발볼 넓으면 +0.5)</li>
+  <li><strong>6월 1일(월) 발매 당일:</strong> 발매 시각(보통 한국 오전 10시 또는 자정) 직전 앱 로그인 유지, 결제 단계까지 한 번에</li>
+</ol>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 우선이라면 일반 에보 SL이 정답</p>
+    <p>BAPE 협업이 끌리지 않거나 한정판 게임이 부담스럽다면, 일반 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>이 같은 성능을 15만원(세일가)에 제공합니다. 와이드 옵션까지 있어 한국 러너에게 더 적합. 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: Sneaker Bar Detroit / Sneaker News / Sole Retriever / WWD Footwear News / Modern Notoriety / Sneaker Freaker / Just Fresh Kicks / 작성일 2026년 5월 11일 기준 / 한국 정가·발매 채널은 아디다스 코리아·BAPE 코리아 공식 공지에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-heavy-runner-running-shoes',
+    slug: '2026-heavy-runner-running-shoes',
+    title: '2026 과체중 러너를 위한 러닝화 추천 TOP 10 | 80kg+ 러너의 무릎·발목을 지키는 쿠션·안정성·내구성 기준',
+    description: '체중 80kg 이상 러너는 착지 충격이 체중의 3~5배까지 올라가 일반 러너용 신발로는 부상 위험이 높습니다. 95종 러닝화 DB에서 ① 스택 36mm 이상 충분한 쿠션, ② 안정화 또는 넓은 베이스, ③ 600km 이상 내구성을 갖춘 10종을 가격대별·체형별로 정리했습니다. Bondi 9·Glycerin Max부터 가성비 860 v15까지.',
+    thumbnail: '/images/blog/2026-heavy-runner-running-shoes.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-11',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['과체중 러너', '러닝화 추천', '쿠션화', '안정화', '무릎 보호', '발목 보호', '맥스 쿠션', '가이드'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>체중 80kg+ 러너의 착지 충격은 체중의 3~5배(240~400kg) — <strong>일반 러너용 220~260g 경량화는 부상 직행</strong></li>
+    <li>선택 기준 3가지: ① <strong>힐 스택 36mm 이상</strong> 쿠션, ② <strong>안정화/넓은 베이스</strong> 또는 가이드레일, ③ <strong>아웃솔 600km+</strong> 내구성</li>
+    <li>1순위 추천: <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a>·<a href="/shoes/brooks-glycerin-max-2">Glycerin Max 2</a>·<a href="/shoes/asics-gel-nimbus-28">Nimbus 28</a> — 가성비는 <a href="/shoes/new-balance-860-v15">NB 860 v15</a></li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">먼저 — 이 글의 "과체중" 정의</p>
+    <p>이 글은 의학적 비만이 아니라 <strong>러닝 기준 체중 부담군</strong>을 다룹니다. 남성 80kg+ / 여성 65kg+ 또는 BMI 25 이상이면서 러닝을 시작하거나 주간 30km 이상 뛰는 분이 대상입니다. 본인 체중이 작더라도 무릎 통증·족저근막염 이력이 있다면 같은 기준으로 신발을 골라야 합니다.</p>
+  </div>
+</div>
+
+<h2>왜 과체중 러너는 신발이 다른 기준이어야 하나</h2>
+
+<p>러닝 중 한 발이 지면에 닿는 순간, <strong>충격력은 체중의 3~5배까지</strong> 올라갑니다. 일반 조깅 페이스(6:00/km)에서도 80kg 러너의 한 걸음 충격은 240~400kg. 이게 1km에 평균 1,400~1,600번 반복됩니다. 같은 거리를 뛰어도 60kg 러너 대비 누적 충격은 33% 이상 큽니다.</p>
+
+<p>이 차이가 신발에서 가장 먼저 드러나는 게 <strong>미드솔 압축률</strong>입니다. 일반 220g 경량 트레이너의 미드솔은 60kg 러너에게는 적절한 반발을 주지만, 80kg+ 러너에게는 <strong>바닥까지 눌려(bottoming out)</strong> 쿠션 기능을 잃습니다. 충격이 무릎·정강이·족저근막에 직접 전달돼 부상으로 이어집니다.</p>
+
+<h3>과체중 러너용 신발 3대 선택 기준</h3>
+
+<table>
+  <thead>
+    <tr><th>기준</th><th>최소값</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>힐 스택 높이</strong></td>
+      <td>36mm 이상 (가능하면 40mm+)</td>
+      <td>두꺼운 폼이 바닥까지 눌리는 걸 막아 쿠션 기능을 유지. 일반 트레이너 28~32mm로는 부족</td>
+    </tr>
+    <tr>
+      <td><strong>안정성 / 베이스 폭</strong></td>
+      <td>안정화(가이드레일) 또는 베이스 112mm+</td>
+      <td>체중이 클수록 측면 흔들림이 커지고 발목 염좌·과내전 위험 증가. 넓은 베이스가 좌우 안정을 잡아줌</td>
+    </tr>
+    <tr>
+      <td><strong>아웃솔 내구성</strong></td>
+      <td>600km 이상</td>
+      <td>체중 비례로 미드솔·아웃솔 마모가 가속. 일반 400~500km 신발은 300km에서 쿠션 사망</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">카본 플레이트 슈퍼슈즈는 추천하지 않습니다</p>
+    <p>Vaporfly·Adios Pro 같은 카본화는 ① 폼이 너무 부드러워 80kg+ 체중에서 바닥까지 눌리고, ② 마일리지 400km(레이서는 100km)로 가성비가 나쁘고, ③ 강한 로커가 아킬레스 부하를 증가시킵니다. 과체중 러너가 카본화로 입문하면 <strong>족저근막염·아킬레스건염 발병률이 2배 이상</strong>이라는 보고가 있습니다.</p>
+  </div>
+</div>
+
+<h2>가격대별 TOP 10 — 과체중 러너 우선순위 순</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">맥스 쿠션 1순위</span>
+    <span class="stat-value">Bondi 9</span>
+    <span class="stat-sub">229,000원 / 303g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">최강 쿠션</span>
+    <span class="stat-value">Glycerin Max 2</span>
+    <span class="stat-sub">249,000원 / 312g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">균형형 1위</span>
+    <span class="stat-value">Nimbus 28</span>
+    <span class="stat-sub">199,000원 / 281g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">안정화 1위</span>
+    <span class="stat-value">Kayano 32</span>
+    <span class="stat-sub">199,000원 / 300g</span>
+  </div>
+</div>
+
+<h3>1위. <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> — 과체중 러너의 정답</h3>
+
+<p><strong>가격 229,000원 · 무게 303g · 힐 스택 43mm · 평점 5.0</strong></p>
+
+<p>호카가 처음부터 "맥스 쿠션 카테고리"를 만든 모델의 9세대. 힐 스택 43mm + 메타로커 지오메트리가 체중을 분산시켜 <strong>80~100kg 러너에게도 무릎 충격을 최소화</strong>합니다. 전작 대비 SuperCritical EVA 폼으로 업그레이드되어 무거웠던 쿠션감이 더 부드러워졌습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ 입문~중급, 무릎 통증 이력, 7:00~6:00/km 데일리 페이스</li>
+  <li><strong>주의:</strong> 토박스 표준(73mm) — 발볼 매우 넓으면 와이드(2E) 권장</li>
+</ul>
+
+<h3>2위. <a href="/shoes/brooks-glycerin-max-2">Brooks Glycerin Max 2</a> — 최대 쿠션 + 흔들림 방지</h3>
+
+<p><strong>가격 249,000원 · 무게 312g · 평점 4.0</strong></p>
+
+<p>Glycerin 시리즈 최상위. DNA Tuned 폼(<strong>힐 12% 더 부드럽고 / 전족부 25% 더 반응적</strong>인 듀얼 셀 구조)이 과체중 러너의 두 가지 니즈를 동시에 만족시킵니다. 312g으로 무겁지만 그만큼 안정적이며, 베이스가 넓어 측면 흔들림이 거의 없습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 85kg+, 장거리(15km+) 추천, 발에 안정감을 원하는 러너</li>
+  <li><strong>주의:</strong> 가격 부담, 빠른 페이스(5:00/km 이하)에는 적합하지 않음</li>
+</ul>
+
+<h3>3위. <a href="/shoes/asics-gel-nimbus-28">Asics Gel-Nimbus 28</a> — 균형형 1위</h3>
+
+<p><strong>가격 199,000원 · 무게 281g · 평점 4.5</strong></p>
+
+<p>FF Blast Max 미드솔 + PureGel 힐 인서트의 조합. <strong>맥스 쿠션 중 가장 가볍고(281g)</strong> 한국 러너 베스트셀러. 토박스가 73mm로 표준이라 발볼 보통 러너에게 무난하고, 와이드(2E) 옵션도 정식 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~95kg, 데일리부터 하프마라톤까지 다목적, 가성비 우선</li>
+  <li><strong>주의:</strong> 안정성은 중성(neutral) — 심한 과내전이면 카야노 32로</li>
+</ul>
+
+<h3>4위. <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32</a> — 안정화 1순위</h3>
+
+<p><strong>가격 199,000원 · 무게 300g · 안정화 · 평점 4.0</strong></p>
+
+<p>과체중 + 평발 + 과내전 트리플 조합 러너에게 최우선. 4D Guidance System이 발이 안쪽으로 무너지는 걸 잡아주고, FF Blast Plus Eco 폼이 충분한 쿠션을 제공합니다. 같은 199,000원에 안정화 카테고리에서는 거의 무적.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ + 평발/과내전, 발목 안쪽으로 굴러가는 러너, 부상 이력 多</li>
+  <li><strong>주의:</strong> 300g으로 묵직 — 가벼운 신발 좋아하면 다른 옵션</li>
+</ul>
+
+<h3>5위. <a href="/shoes/new-balance-1080-v15">New Balance 1080 v15</a> — 와이드 옵션 최강</h3>
+
+<p><strong>가격 209,000원 · 무게 216g · 힐 스택 40mm · 평점 4.9</strong></p>
+
+<p>v14 대비 69g 경량화(285→216g)에도 힐 스택은 40mm 유지. Infinion(질소 주입 슈퍼크리티컬 폼)이 가벼우면서도 충분한 쿠션 제공. <strong>2E·4E 와이드 옵션이 정식 출시</strong>되는 거의 유일한 맥스 쿠션이라 발볼 넓은 한국 러너 1순위.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~90kg + 발볼 넓음, 가벼운 쿠션화를 원하는 러너</li>
+  <li><strong>주의:</strong> 안정성 6/10 — 과내전이면 860 v15가 정답</li>
+</ul>
+
+<h3>6위. <a href="/shoes/brooks-glycerin-22">Brooks Glycerin 22</a> — 가성비 쿠션화</h3>
+
+<p><strong>가격 209,000원 · 무게 293g · 평점 5.0</strong></p>
+
+<p>Glycerin Max 2의 동생 모델. 같은 DNA Loft v3 폼을 사용하면서 4만원 저렴. 312g→293g으로 더 가볍고, 쿠션감은 90% 이상 유지됩니다. <strong>처음 과체중 러너용 신발을 사보는 러너</strong>에게 진입 부담이 가장 낮은 선택지.</p>
+
+<ul>
+  <li><strong>적합:</strong> 첫 쿠션화 입문, 체중 75~85kg, 주 3~4회 데일리</li>
+  <li><strong>주의:</strong> Glycerin Max 2 대비 안정감 약간 떨어짐 — 흔들리는 느낌 있으면 GTS(안정화 버전)로</li>
+</ul>
+
+<h3>7위. <a href="/shoes/saucony-triumph-23">Saucony Triumph 23</a> — 슈퍼크리티컬 폼 최경량</h3>
+
+<p><strong>가격 199,000원 · 무게 272g · 평점 4.0</strong></p>
+
+<p>PWRRUN PB 슈퍼크리티컬 폼이 <strong>맥스 쿠션 중에서도 반발력이 좋은 편</strong>. 272g으로 이 카테고리에서 가벼운 편이라 6:00/km 페이스도 부담 없이 소화합니다. 와이드 옵션 정식 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~85kg + 페이스도 챙기고 싶은 러너, 하프마라톤 도전</li>
+  <li><strong>주의:</strong> 쿠션감은 Bondi·Glycerin Max보다 얇음 — 100% 푹신함 우선이면 다른 선택</li>
+</ul>
+
+<h3>8위. <a href="/shoes/on-cloudmonster-3">On Cloudmonster 3</a> — 디자인 + 클라우드텍 폼</h3>
+
+<p><strong>가격 229,000원 · 무게 295g · 평점 4.5</strong></p>
+
+<p>On의 시그니처 CloudTec 폼 14개가 큰 사이즈로 적용된 모델. <strong>탱탱한 반발과 푹신한 쿠션이 동시에</strong> 느껴지는 독특한 착화감. 일상화 디자인으로도 좋아 출퇴근 겸용으로 한 켤레로 쓰기 좋습니다.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 75~90kg, 출퇴근 + 러닝 겸용, 패션도 신경 쓰는 러너</li>
+  <li><strong>주의:</strong> On 특유의 빈 공간(클라우드)이 작은 돌 끼이는 경우 있음, 평발에는 비추</li>
+</ul>
+
+<h3>9위. <a href="/shoes/mizuno-wave-sky-9">Mizuno Wave Sky 9</a> — 안정형 쿠션</h3>
+
+<p><strong>가격 189,000원 · 평점 4.0</strong></p>
+
+<p>Mizuno Enerzy 폼 + Wave 플레이트가 만드는 <strong>"부드럽지만 흔들리지 않는"</strong> 착화감. 미즈노 특유의 안정감이 과체중 러너의 측면 흔들림을 잘 잡아줍니다. 가격이 18만원대로 합리적.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 80kg+ + 평발·과내전 약간, 한국 마라톤 대회에서 자주 보이는 미즈노 라인업 좋아하는 러너</li>
+  <li><strong>주의:</strong> 토박스 표준 — 발볼 매우 넓으면 다른 브랜드</li>
+</ul>
+
+<h3>10위. <a href="/shoes/new-balance-860-v15">New Balance 860 v15</a> — 가성비 안정화</h3>
+
+<p><strong>가격 189,000원 · 무게 330g · 안정화 · 평점 4.5</strong></p>
+
+<p>안정화 카테고리에서 <strong>가성비 최강</strong>. 330g으로 무거운 편이지만 그만큼 묵직한 안정성을 제공. 한쪽 사이드에 Stability Plane이 적용돼 평발 러너의 안쪽 무너짐을 잡습니다. 4E 와이드 옵션 출시.</p>
+
+<ul>
+  <li><strong>적합:</strong> 체중 85kg+ + 평발 + 발볼 넓음 + 예산 20만원 이하</li>
+  <li><strong>주의:</strong> 330g은 진짜 무겁습니다 — 입문 단계가 아니라면 페이스 트레이닝용으로는 부적합</li>
+</ul>
+
+<h2>한눈에 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>순위</th><th>모델</th><th>가격</th><th>무게</th><th>스택</th><th>카테고리</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td><strong>Hoka Bondi 9</strong></td><td>229,000원</td><td>303g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>2</td><td><strong>Glycerin Max 2</strong></td><td>249,000원</td><td>312g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>3</td><td><strong>Nimbus 28</strong></td><td>199,000원</td><td>281g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>4</td><td><strong>Kayano 32</strong></td><td>199,000원</td><td>300g</td><td>40mm</td><td>안정화</td><td>2E</td></tr>
+    <tr><td>5</td><td><strong>NB 1080 v15</strong></td><td>209,000원</td><td>216g</td><td>40mm</td><td>쿠션화</td><td>2E·4E</td></tr>
+    <tr><td>6</td><td><strong>Glycerin 22</strong></td><td>209,000원</td><td>293g</td><td>38mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>7</td><td><strong>Triumph 23</strong></td><td>199,000원</td><td>272g</td><td>37mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>8</td><td><strong>Cloudmonster 3</strong></td><td>229,000원</td><td>295g</td><td>34mm</td><td>쿠션화</td><td>없음</td></tr>
+    <tr><td>9</td><td><strong>Wave Sky 9</strong></td><td>189,000원</td><td>290g</td><td>40mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>10</td><td><strong>NB 860 v15</strong></td><td>189,000원</td><td>330g</td><td>34mm</td><td>안정화</td><td>2E·4E</td></tr>
+  </tbody>
+</table>
+
+<h2>본인 상황별 최종 추천</h2>
+
+<table>
+  <thead>
+    <tr><th>이런 러너라면</th><th>1순위 추천</th><th>2순위</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>입문 + 체중 80~90kg + 발볼 보통</strong></td>
+      <td>Hoka Bondi 9</td>
+      <td>Asics Nimbus 28</td>
+    </tr>
+    <tr>
+      <td><strong>체중 90kg+ + 무릎 통증 이력</strong></td>
+      <td>Brooks Glycerin Max 2</td>
+      <td>Hoka Bondi 9</td>
+    </tr>
+    <tr>
+      <td><strong>평발 + 과내전 + 체중 80kg+</strong></td>
+      <td>Asics Gel-Kayano 32</td>
+      <td>NB 860 v15</td>
+    </tr>
+    <tr>
+      <td><strong>발볼 넓은 한국 러너</strong></td>
+      <td>NB 1080 v15 (4E)</td>
+      <td>NB 860 v15 (4E)</td>
+    </tr>
+    <tr>
+      <td><strong>예산 20만원 이하</strong></td>
+      <td>Mizuno Wave Sky 9</td>
+      <td>NB 860 v15</td>
+    </tr>
+    <tr>
+      <td><strong>출퇴근 + 러닝 1켤레</strong></td>
+      <td>On Cloudmonster 3</td>
+      <td>Asics Nimbus 28</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>구매 전 체크리스트</h2>
+
+<div class="callout success">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">신발 사기 전 5가지 확인</p>
+    <ol>
+      <li><strong>본인 발볼 측정</strong> — 자 들고 평발 위로 가장 넓은 부분 측정. 100mm+면 와이드 옵션 필수</li>
+      <li><strong>평발 여부 확인</strong> — 젖은 발로 종이에 발자국. 안쪽 아치가 안 나오면 평발 → 안정화 카테고리</li>
+      <li><strong>오후 5시 이후 신어보기</strong> — 발이 가장 부어 있는 시간. 매장 방문 시간 조절</li>
+      <li><strong>러닝 양말 신고 신어보기</strong> — 평소 신는 양말 두께로 핏 확인. 사이즈 0.5 차이가 결과를 좌우</li>
+      <li><strong>30일 환불 정책 확인</strong> — 호카·브룩스·아식스는 30일 시범 착화 후 환불 가능 매장 있음</li>
+    </ol>
+  </div>
+</div>
+
+<h2>1켤레로 시작한다면</h2>
+
+<p>10종 다 보면 결정이 더 어렵죠. 산초 에디터 결론은 두 가지로 압축합니다.</p>
+
+<ol>
+  <li><strong>첫 신발이고 발볼 보통이면 → <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> 229,000원.</strong> 맥스 쿠션 카테고리의 정답이고 한국 러너 후기가 가장 많아 시행착오 적음.</li>
+  <li><strong>평발 + 발볼 넓은 한국 러너면 → <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32 (와이드)</a> 199,000원.</strong> 평발·과내전 + 한국인 발 모두 잡는 거의 유일한 글로벌 안정화.</li>
+</ol>
+
+<p>본인 발에 맞는 신발을 1분 진단으로 좁혀보고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 발볼 넓은 한국인 전용 가이드는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>, 무릎 통증 있다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>도 함께 참고.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">러닝 + 체중 감량을 동시에 노린다면</p>
+    <p>과체중 상태에서 무리한 러닝은 부상 직행입니다. 시작은 <strong>걷기 5분 + 조깅 1분</strong> 반복 10세트로 잡고, 주 3회·30분 페이스 6:30~7:30/km를 8주간 유지한 뒤 거리를 늘리세요. 신발은 위 추천 중 하나만 사고, 같은 신발을 한 달에 100km 이상 신지 마세요. 미드솔 회복 시간이 필요합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 95종 러닝화 자체 DB / @runninglife_korea / RunRepeat 랩 데이터 / Doctors of Running / Believe in the Run / 호카·브룩스·아식스·뉴발란스 한국 공식 사이트 / 작성일 2026년 5월 11일 기준 / 가격은 공식 MSRP이며 세일가는 별도.</small></p>
+`,
+  },
+  {
+    id: '2026-seoul-race',
+    slug: '2026-seoul-race',
+    title: '2026 서울레이스 접수 시작 | 10/11 청계광장 도심 하프·10K — 본접수 5/27 오픈, 선착순 마감 임박',
+    description: '2026 서울레이스(SEOUL RACE) 본접수가 5월 27일(수) 시작됐습니다(하프 19시·10K 21시 dongma.club). 10월 11일 청계광장 출발, 종로·숭례문·시청·청계천·DDP 통과 도심 평지 하프·10K. 작년 하프 5분 내 마감 — 이미 마감됐을 수 있으니 dongma.club에서 잔여·취소표 확인. 풀코스 없는 도심 페스티벌형 마라톤.',
+    thumbnail: '/images/blog/2026-seoul-race.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-09',
+    updatedAt: '2026-05-28',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['서울레이스', 'Seoul Race', '서울 마라톤', '도심 마라톤', '동마클럽', '하프마라톤', '청계광장', '대회 일정'],
+    event: {
+      name: '2026 서울레이스 (SEOUL RACE)',
+      startDate: '2026-10-11T08:00:00+09:00',
+      location: {
+        name: '청계광장 앞 세종대로 → 무교로 골인',
+        address: '서울특별시 종로구 청계광장 앞 세종대로',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://www.seoul-race.co.kr/',
+      offers: [
+        { name: '하프마라톤 (5/27 19시 본접수)', priceKrw: 70000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '10K (5/27 21시 본접수)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '서울레이스가 서울마라톤이랑 뭐가 다른가요?',
+        answer: '서울마라톤(매년 3월, 풀코스 중심)이 도시 전체를 관통하는 본격 풀코스 대회라면, 서울레이스(매년 10월)는 풀코스 없이 도심 하프·10K만 운영하는 가을 도심 페스티벌입니다. 출발이 광화문이 아니라 청계광장이고, 코스도 청계천·종로·을지로·DDP를 잇는 도심 순환형이라 풀 마라톤보다 짧고 입문 친화적입니다. 운영은 둘 다 동마클럽(동아일보)이 합니다.',
+      },
+      {
+        question: '5월 27일 하프 19시·10K 21시가 무슨 뜻인가요?',
+        answer: '같은 날 두 종목의 접수 오픈 시각이 시간 분리됐다는 뜻입니다. 하프(8,500명)는 19시 정각에, 10K(4,000명)는 21시 정각에 dongma.club에서 동시 선착순 시작합니다. 한 사람이 둘 다 도전하려면 두 시간대 모두 PC 앞에 앉아 있어야 합니다. 작년 하프는 오픈 5분 내 마감됐으니 결제 수단 등록·시계 동기화는 두 시간대 모두 미리 해두세요.',
+      },
+      {
+        question: '하프 70,000원, 10K 60,000원이 좀 비싼 거 아닌가요?',
+        answer: '동마 시리즈 다른 대회(공주백제 하프 50K·10K 40K, 경주국제 하프 50K·10K 40K)보다 2만원 정도 비쌉니다. 이유는 ① 서울 도심 코스 운영 비용(교통통제·경찰·구조 인력), ② PUMA 협찬 공식 티셔츠 + 완주 메달, ③ DDP·청계광장 등 랜드마크 사용료. 서울 도심에서 하프 뛰는 경험과 PUMA 티셔츠 가치를 더하면 가성비는 합리적이라는 평가가 다수입니다.',
+      },
+      {
+        question: '도심 코스에 어떤 신발이 좋나요?',
+        answer: '청계광장~종로~을지로~청계천~DDP 100% 아스팔트 평지 코스라 ① 하프 PB 도전 → 카본 플레이트 레이싱화(아디오스 프로 4·베이퍼플라이 4·메타스피드 에지) ② 하프 안전 완주 → 슈퍼 트레이너(슈퍼블라스트 2·페가수스 플러스) ③ 10K 가벼운 페이스 → 데일리 트레이너(페가수스 42·1080 v15)가 정답입니다. 평지라 안정화는 굳이 필요 없고, 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
+      },
+      {
+        question: '같은 주말에 경주국제마라톤도 있는데 어디 가야 하나요?',
+        answer: '서울레이스 10월 11일(일), 경주국제마라톤 10월 17일(토) — 한 주 차이입니다. 둘 다 도전은 권장하지 않으며 (회복 시간 부족) 성격에 따라 갈라야 합니다. ① 서울에서 도심 하프·10K 페스티벌 분위기 + 풀코스 부담 없이 → 서울레이스. ② 풀코스 PB 도전 + 신라 유적 코스 + 1박2일 관광 → 경주국제마라톤. 동마 멤버십 가입자라면 둘 다 우선접수 가능하지만 한쪽만 선택하는 게 현실적입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026 서울레이스 — 2026년 10월 11일(일) 청계광장 출발 → 종로·숭례문·시청·청계천·DDP 통과 → 무교로 골인 도심 평지 코스</li>
+    <li>본접수 <strong>5월 27일(수) 시작됨</strong> (하프 19시·10K 21시 dongma.club) — 하프는 작년 5분 내 마감, <strong>이미 마감됐을 수 있어 잔여·취소표 확인 필수</strong></li>
+    <li>풀코스 없는 도심 하프·10K 전용 — <strong>동마 시리즈 유일 가을 도심 페스티벌형</strong>, 작년 12,800명 역대 최다</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">본접수 시작됨 (5/27 오픈) — 선착순 마감 임박, 잔여부터 확인</p>
+    <p>하프(8,500명)는 5/27 19시, 10K(4,000명)는 21시에 오픈됐습니다. 작년 하프가 오픈 5분 내 마감됐던 만큼 <strong>이미 마감됐을 가능성이 높습니다</strong>. 참가를 원한다면 dongma.club에서 <strong>잔여 슬롯·취소표 여부</strong>를 먼저 확인하세요. 취소표는 대회 전까지 간헐적으로 풀리니 알림을 켜두는 것도 방법입니다. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/11 (일)</span>
+    <span class="stat-sub">청계광장 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 접수</span>
+    <span class="stat-value">5/27 19시</span>
+    <span class="stat-sub">정원 8,500명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K 접수</span>
+    <span class="stat-value">5/27 21시</span>
+    <span class="stat-sub">정원 4,000명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">2025 참가</span>
+    <span class="stat-value">12,800명</span>
+    <span class="stat-sub">역대 최다</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.27 (수) 19시 — 접수 시작됨</span>
+    <span class="timeline-title">하프마라톤 본접수 시작</span>
+    <p class="timeline-desc">정원 8,500명 선착순 — 작년 5분 내 마감, 현재 잔여·취소표 확인 (dongma.club)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.27 (수) 21시</span>
+    <span class="timeline-title">10K 본접수 시작 (같은 날 2시간 후)</span>
+    <p class="timeline-desc">정원 4,000명 선착순 — 하프 도전한 사람도 다시 PC 앞으로</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">PUMA 티셔츠 사이즈 확인, 청계광장 일대 통제 시간 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.11 (일)</span>
+    <span class="timeline-title">대회 당일 — 청계광장 7시 집결, 8시 출발(추정)</span>
+    <p class="timeline-desc">10월 둘째 주 서울 평균 10-15도, 강수 적은 쾌청 시즌</p>
+  </div>
+</div>
+
+<h2>종목별 참가비·정원 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비</th><th>정원</th><th>제한시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프마라톤</strong></td>
+      <td>21.0975km</td>
+      <td>70,000원</td>
+      <td>8,500명</td>
+      <td>2시간 30분</td>
+    </tr>
+    <tr>
+      <td>10K</td>
+      <td>10km</td>
+      <td>60,000원</td>
+      <td>4,000명</td>
+      <td>1시간 40분</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 70,000원? — 도심 코스 + PUMA 협찬</p>
+    <p>서울레이스 하프 70,000원은 동마 다른 대회(공주백제·경주국제 하프 50,000원)보다 2만원 비쌉니다. 이유: ① <strong>서울 도심 교통통제 비용</strong>(경찰·구조 인력·DDP/청계광장 사용료), ② <strong>PUMA 공식 티셔츠</strong>(시중 4-5만원 가치), ③ 완주 메달 + 도심 페스티벌 운영. 도심 하프 경험 + PUMA 티셔츠를 합치면 가성비는 합리적이라는 평가가 많습니다.</p>
+  </div>
+</div>
+
+<h2>코스 — 서울 도심 랜드마크 21.0975km</h2>
+
+<p>출발은 <strong>청계광장 앞 세종대로</strong>, 도착은 <strong>무교로</strong>(청계광장 인근)로 사실상 같은 지점에서 시작·종료합니다. 도심 평지 100% 아스팔트 코스로, 평소 차량 전용 도로를 달리는 색다른 경험이 핵심 매력입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>통과 랜드마크</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>출발 (Start)</strong></td>
+      <td>청계광장 앞 세종대로 → 종로1가</td>
+    </tr>
+    <tr>
+      <td>0-5km</td>
+      <td>종로1가 → 동대문역 → DDP 인근</td>
+    </tr>
+    <tr>
+      <td>5-10km</td>
+      <td>세종대로 사거리 → 숭례문 → 한국은행</td>
+    </tr>
+    <tr>
+      <td>10-15km</td>
+      <td>시청삼거리 → 을지로3가역 → 청계천 인근</td>
+    </tr>
+    <tr>
+      <td>15-21km</td>
+      <td>청계천 → DDP → 무교로 골인</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">🏛</span>
+  <div class="callout-body">
+    <p class="callout-title">평지 코스 + 가을 최적 기온 = 하프 PB 도전 적기</p>
+    <p>서울 도심은 고도 변화가 거의 없고 10월 둘째 주 평균 기온 10-15도로 하프 마라톤 최적 환경입니다. 다만 출발 직후 종로1가 좁은 구간 정체와 5km까지의 페이스 욕심이 함정 — 첫 5km는 의도적으로 천천히, 5-15km에서 페이스 끌어올리는 전략이 정석입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a> 참고.</p>
+  </div>
+</div>
+
+<h2>동마 가을 시리즈 내 서울레이스의 포지션</h2>
+
+<p>동마클럽이 운영하는 가을 대회는 4개. 서울레이스는 그중 유일하게 <strong>풀코스 없이 도심 하프·10K만 운영하는 페스티벌형</strong>입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>일자</th><th>종목</th><th>코스 성격</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>9/20 (일)</td>
+      <td>풀·32K·하프·10K·5K</td>
+      <td>금강변 평지 입문 풀코스</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">D-4 우선접수</a></td>
+    </tr>
+    <tr>
+      <td><strong>2026 서울레이스</strong></td>
+      <td><strong>10/11 (일)</strong></td>
+      <td><strong>하프·10K</strong></td>
+      <td><strong>서울 도심 평지 페스티벌</strong></td>
+      <td><strong>이 글</strong></td>
+    </tr>
+    <tr>
+      <td>2026 경주국제마라톤</td>
+      <td>10/17 (토)</td>
+      <td>풀·하프·10K</td>
+      <td>신라 유적 코스 / 엘리트 라벨</td>
+      <td><a href="/blog/2026-gyeongju-international-marathon">D-17 접수</a></td>
+    </tr>
+    <tr>
+      <td>2027 서울마라톤</td>
+      <td>2027.3.21 (일)</td>
+      <td>풀·10K</td>
+      <td>서울 도심 풀코스 (플래티넘)</td>
+      <td><a href="/blog/2027-seoul-marathon-priority-d10">D-10 우선접수</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">⚖️</span>
+  <div class="callout-body">
+    <p class="callout-title">서울레이스 vs 경주국제 — 한 주 차이 선택 가이드</p>
+    <p>10/11 서울레이스와 10/17 경주국제는 일주일 차이라 둘 다 뛰는 건 회복상 부담이 큽니다. 선택 기준: ① <strong>풀코스 PB 도전 + 1박2일 관광 + 신라 유적</strong> → 경주, ② <strong>서울에서 도심 하프 페스티벌 + 풀코스 부담 없이 + 당일치기</strong> → 서울레이스. 둘 다 도전한다면 서울레이스 10K(가벼운 페이스) + 경주 풀(메인) 조합이 그나마 현실적.</p>
+  </div>
+</div>
+
+<h2>10월 서울 도심 — 어떤 신발을 신을까</h2>
+
+<p>100% 아스팔트 평지 + 10-15도 + 하프 또는 10K 환경에서는 종목·목표별로 추천이 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프 PB 도전 (Sub-1:30~1:45)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>하프 안전 완주 (1:45~2:30)</strong></td>
+      <td>슈퍼 트레이너</td>
+      <td><a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (PB 도전)</strong></td>
+      <td>경량 카본 또는 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (즐기는 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발에 맞는 모델 1분 안에 확인할 수 있습니다.</p>
+
+<h2>접수 실전 노하우 — 5분 컷 마감 대비</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">⚡</span>
+  <div class="callout-body">
+    <p class="callout-title">마감됐다면 — 취소표 노리기 체크리스트 (취소표도 선착순)</p>
+    <ol style="margin-top:8px;">
+      <li><strong>동마클럽 회원가입·로그인</strong> — 마이페이지 진입 가능 상태로 유지</li>
+      <li><strong>유선랜 PC + 모바일 동시 접속</strong> — 트래픽 폭주 대비 백업</li>
+      <li><strong>결제 수단 2가지 등록</strong> — 카드 + 카카오/네이버페이</li>
+      <li><strong>브라우저 자동입력</strong> — 이름·생년월일·연락처·주소 모두 저장</li>
+      <li><strong>취소표 알림 설정</strong> — 마감 후 풀리는 잔여를 놓치지 않도록</li>
+      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code> (취소표가 정시에 풀릴 때 1초 차이가 갈림)</li>
+      <li><strong>접속 페이지 사전 로딩</strong> — dongma.club 접수 페이지 → 새로고침 대기</li>
+    </ol>
+  </div>
+</div>
+
+<h2>교통 — 대중교통 강력 권장</h2>
+
+<table>
+  <thead>
+    <tr><th>지하철</th><th>역</th><th>도보</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>1·2호선</td><td>시청역</td><td>1-2분 (서울광장 인접)</td></tr>
+    <tr><td>5호선</td><td>광화문역</td><td>2분 (청계광장 인접)</td></tr>
+    <tr><td>1호선</td><td>종각역</td><td>3분 (종로 방면)</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚇</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용 절대 비추천</p>
+    <p>대회 당일 청계광장·세종대로·을지로·DDP 일대 전 구간 차량 통제됩니다. 자가용은 진입조차 불가능. 8시 출발에 맞추려면 7시 이전 도착이 안전한데, 시청역·광화문역 첫차(5:30~) 이용으로 충분합니다. 경기·인천 거주자는 광역버스 이용 가능.</p>
+  </div>
+</div>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 서울레이스는 <strong>참가자 12,800명, 하프 9,100명 역대 최다</strong>를 기록하며 가을 도심 마라톤의 대표 주자로 자리 잡았습니다. 후기 공통점:</p>
+
+<ul>
+  <li>"서울 도심 평지 코스 + 가을 최적 기온 = 하프 PB 잘 나온다"</li>
+  <li>"평소 차량으로만 다니던 종로·을지로·세종대로를 달리는 경험 압권"</li>
+  <li>"PUMA 협찬 티셔츠 디자인 만족도 매우 높음"</li>
+  <li>"청계천 인근 구간 도시 풍경 사진 찍기 좋음"</li>
+  <li>"하프 5분 내 마감 — 미리 준비 안 하면 진짜 못 들어감"</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>신청·취소표 대비 체크리스트</h3>
+  <ul>
+    <li>✅ <strong>잔여·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
+    <li>✅ <strong>동마클럽 회원가입</strong> — dongma.club, 마이페이지 진입 가능 확인</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 하프(70K) / 10K(60K) / 둘 다</li>
+    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 간편결제</li>
+    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 모니터링</li>
+    <li>✅ <strong>러닝화 결정</strong> — 도심 평지 + PB 도전이라면 카본, 안전 완주는 슈퍼 트레이너. <a href="/recommend">맞춤 추천</a></li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">seoul-race.co.kr</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://www.seoul-race.co.kr/" target="_blank" rel="noopener">서울레이스 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 코스·참가비), sports.news.nate.com(2025년 12,800명 보도). 2026년 참가비·정원·집결 시간은 5월 27일 본접수와 함께 dongma.club·seoul-race.co.kr에 게시됐습니다. 잔여·취소표 여부는 dongma.club에서 실시간 확인하세요.
+</p>
+`,
+  },
+  {
+    id: '2026-gyeongju-international-marathon',
+    slug: '2026-gyeongju-international-marathon',
+    title: '2026 경주국제마라톤 접수 진행 중 | 10/17 신라 유적 코스 + World Athletics 엘리트 라벨 — 본접수 5/26 오픈',
+    description: '동아일보 2026 경주국제마라톤(10/17 토) 본접수가 5월 26일(화) 19시 시작됐습니다(dongma.club). 첨성대·대릉원·동궁과월지 통과, 총 획득고도 146m 완만 코스, 23.5~33km 내리막 기록 단축 구간. 2025년 World Athletics 엘리트 라벨 승격(국내 유일) + 정원 약 1.6만명 — 동마 3대장 가을 시즌 완결편. 선착순이라 잔여 여부 확인 권장.',
+    thumbnail: '/images/blog/2026-gyeongju-international-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-09',
+    updatedAt: '2026-05-28',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['경주국제마라톤', '경주 마라톤', '경상북도 마라톤', '동마클럽', '신라 마라톤', '유네스코 마라톤', 'World Athletics 엘리트 라벨', '대회 일정'],
+    event: {
+      name: '동아일보 2026 경주국제마라톤대회',
+      startDate: '2026-10-17T08:00:00+09:00',
+      location: {
+        name: '경주시민운동장',
+        address: '경상북도 경주시 시민운동장 일원',
+      },
+      organizer: '동아일보 (동마클럽) · 경주시·경상북도',
+      url: 'https://www.gyeongjumarathon.com/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '하프코스 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-06-30', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '5월 26일 19시가 멤버십 우선접수인가요, 본접수인가요?',
+        answer: '2026년은 5월 26일(화) 19시가 dongma.club 본접수 시작으로 공식 공지됐습니다(선착순). 동마 멤버십 우선접수가 그 이전에 별도로 진행됐을 수 있으나, 일반 러너 기준 핵심 일정은 5/26 본접수입니다. 현재는 접수가 시작된 상태이므로, 신청을 원한다면 dongma.club에서 종목별 잔여·취소표 여부를 먼저 확인하세요.',
+      },
+      {
+        question: '경주국제마라톤이 World Athletics 엘리트 라벨이라는 게 무슨 의미인가요?',
+        answer: '2025년에 World Athletics(세계육상연맹) 엘리트 라벨로 승격됐고, 이는 국내 지방 대회 중 유일한 등급입니다. 등급 순서는 라벨 → 엘리트 → 골드 → 플래티넘이며, 서울마라톤(플래티넘)·대구마라톤(골드)에 이어 한국 3번째 국제 공인 마라톤입니다. 엘리트 라벨 승격은 코스 정확성·안전·해외 엘리트 선수 초청·공식 페이서·도핑 검사 등 국제 기준을 충족했다는 의미로, 풀코스 기록을 국제 공인 기록으로 인정받을 수 있습니다.',
+      },
+      {
+        question: '코스에 불국사도 포함되나요?',
+        answer: '아쉽게도 코스에는 불국사·석굴암이 포함되지 않습니다. 코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조로, 5~16km 구간에 첨성대·대릉원·천마총·동궁과월지를 연속 통과합니다. 불국사·석굴암은 시내에서 차로 20분 거리 외곽이라 별도 통과는 안 됩니다. 대회 전날 또는 완주 후 1박2일 관광으로 방문하는 게 정석입니다.',
+      },
+      {
+        question: '코스 난이도는 어느 정도인가요?',
+        answer: '동마 3대장 중 가장 쉬운 편입니다. 총 획득고도 146m로 공주백제(평지)와 안동(700m+) 사이 난이도이며, 16~24km 구간 북천 오르막(약 30m 상승)이 유일한 관문입니다. 23.5~33km 구간은 완만한 내리막으로 기록 단축 황금 구간이며, 36~42km 마무리는 잔잔한 낙타등이 반복됩니다. 10월 중순 경주 평균 17~19도로 마라톤 최적 조건이라 풀코스 PB 도전에 매우 유리합니다.',
+      },
+      {
+        question: '마라톤 + 경주 관광 1박 2일 일정은 어떻게 짜나요?',
+        answer: '추천 일정: ① 토요일 오전 KTX 신경주역 도착 → 점심 황남빵·교리김밥 → 오후 불국사·석굴암 관람 → 저녁 동궁과월지(안압지) 야경 → 경주 시내 숙박. ② 일요일 새벽 경주시민운동장 집결 → 8시 출발 → 풀코스 완주(목표 4-5시간) → 점심 회복식(경주 한정식) → 오후 KTX 복귀. 첨성대·대릉원은 코스 위에서 직접 통과하며 관람할 수 있어 별도 일정이 필요 없습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>동아일보 2026 경주국제마라톤 — 2026년 10월 17일(토) 경주시민운동장 출발, 풀·하프·10K 3종목, 정원 약 15,000명 (2025년 역대 최대)</li>
+    <li><strong>본접수 5월 26일(화) 19시 dongma.club에서 시작됨</strong> — 선착순 진행 중, 정원 빠르게 차므로 잔여·취소표 확인 권장</li>
+    <li><strong>World Athletics 엘리트 라벨</strong>(2025 승격, 국내 유일 지방 대회) + 첨성대·대릉원·동궁과월지 코스 통과 — 동마 3대장 가을 완결편</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">본접수 시작됨 (5/26 19시 오픈) — 선착순, 잔여부터 확인</p>
+    <p>경주국제마라톤은 2025년 정원이 빠르게 채워졌고, 2026 본접수는 5월 26일(화) 19시 dongma.club에서 시작됐습니다. 풀·하프·10K 합산 정원이 크지만 인기 종목은 조기 마감될 수 있으니, 참가를 원한다면 <strong>dongma.club에서 잔여 슬롯·취소표 여부를 먼저 확인</strong>하세요. <em>(이 글은 2026-05-28 기준으로 업데이트됐습니다.)</em></p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/17 (토)</span>
+    <span class="stat-sub">경주시민운동장</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 시작</span>
+    <span class="stat-value">5/26 (화)</span>
+    <span class="stat-sub">19시 / dongma.club</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">정원</span>
+    <span class="stat-value">15,000명</span>
+    <span class="stat-sub">2025 역대 최대</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">국제 공인</span>
+    <span class="stat-value">엘리트 라벨</span>
+    <span class="stat-sub">국내 유일 지방 대회</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.26 (화) 19시 — 접수 시작됨</span>
+    <span class="timeline-title">본접수 시작 (dongma.club)</span>
+    <p class="timeline-desc">선착순 진행 중 — 현재 잔여·취소표 여부 확인</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06 ~ 09 (대회 전까지)</span>
+    <span class="timeline-title">취소표·잔여 슬롯 간헐 오픈</span>
+    <p class="timeline-desc">본접수 마감 후에도 취소표가 간헐적으로 풀립니다 — dongma.club 알림을 켜고 모니터링</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품, 셔틀버스 운영, 코스 통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.17 (토)</span>
+    <span class="timeline-title">대회 당일 — 경주시민운동장 7~7:30 집결, 8시 출발(추정)</span>
+    <p class="timeline-desc">10월 중순 경주 평균 17-19도, 최저 12도 — 마라톤 최적 조건</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비 (2025 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td></tr>
+    <tr><td>하프코스</td><td>21.0975km</td><td>50,000원</td></tr>
+    <tr><td>10K</td><td>10km</td><td>40,000원</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 공식 참가비는 5/26 접수 오픈 시 확정</p>
+    <p>위 금액은 2025년 기준입니다. 2026년 본접수가 5월 26일 시작되며 정식 참가비·정원이 dongma.club·gyeongjumarathon.com에 게시됐으니, 신청 전 공식 페이지에서 최신 금액을 확인하세요. (2026년은 종목별로 1만원 안팎 인상된 것으로 보도됩니다.)</p>
+  </div>
+</div>
+
+<h2>왜 경주국제마라톤이 특별한가 — 동마 3대장 완결편</h2>
+
+<p>동마클럽이 운영하는 가을 시리즈 3개 대회 중 경주국제는 <strong>가장 늦게 열리는 가을 마라톤이자, 국제 위상이 가장 높은 대회</strong>입니다. 핵심 차별 포인트:</p>
+
+<table>
+  <thead>
+    <tr><th>차별 포인트</th><th>경주국제마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>국제 공인 등급</strong></td>
+      <td>World Athletics <strong>엘리트 라벨</strong> (2025 승격, 국내 유일 지방 대회)</td>
+    </tr>
+    <tr>
+      <td><strong>코스 위 유적지</strong></td>
+      <td>첨성대·대릉원·천마총·동궁과월지·오릉 — 신라 천년고도 직접 통과</td>
+    </tr>
+    <tr>
+      <td><strong>코스 난이도</strong></td>
+      <td>총 획득고도 146m, 완만 — 풀코스 PB 도전에 적합</td>
+    </tr>
+    <tr>
+      <td><strong>날씨</strong></td>
+      <td>10월 중순 경주 평균 17-19도 — 마라톤 최적 조건</td>
+    </tr>
+    <tr>
+      <td><strong>참가 규모</strong></td>
+      <td>15,000명 (2025 역대 최대) — 동마 시리즈 최대</td>
+    </tr>
+    <tr>
+      <td><strong>관광 시너지</strong></td>
+      <td>불국사·석굴암 + 황남빵·동궁과월지 야경 1박2일 황금 코스</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>World Athletics 엘리트 라벨이라는 의미</h2>
+
+<p>2025년 경주국제마라톤은 <strong>World Athletics 엘리트 라벨</strong>로 승격됐습니다. 등급 순서는 다음과 같습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>등급</th><th>한국 사례</th><th>주요 조건</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>플래티넘 (최상위)</td><td>서울마라톤</td><td>해외 엘리트 30+, 경기 운영 최상급</td></tr>
+    <tr><td>골드</td><td>대구마라톤</td><td>해외 엘리트 20+, 도핑·페이서 정식</td></tr>
+    <tr><td><strong>엘리트</strong></td><td><strong>경주국제마라톤</strong></td><td>국제 공인 코스, 정식 페이서·도핑</td></tr>
+    <tr><td>라벨</td><td>(다수 도시 대회)</td><td>기본 국제 인증</td></tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">엘리트 라벨에서 풀코스 기록의 가치</p>
+    <p>엘리트 라벨 이상에서 달성한 풀코스 기록은 World Athletics 공식 기록으로 인정됩니다. 보스턴마라톤 자격 기록(BQ)이나 다른 메이저 마라톤 신청 시 활용 가능. <strong>2027 서울마라톤 풀코스 그룹 배정용 기록증</strong>으로도 인정됩니다.</p>
+  </div>
+</div>
+
+<h2>코스 — 신라 천년고도 위를 달리는 42.195km</h2>
+
+<p>코스는 경주시민운동장에서 출발해 시내 순환 후 동일 지점 골인 구조입니다. 구간별 특징:</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특성</th><th>공략 포인트</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>0-5km</strong></td>
+      <td>경주시민운동장 → 시내 진입, 평지</td>
+      <td>오버페이스 금지, 페이스 안정화</td>
+    </tr>
+    <tr>
+      <td><strong>5-16km</strong> ⭐</td>
+      <td>유적지 황금 구간 — 첨성대·대릉원·천마총·동궁과월지 연속 통과</td>
+      <td>풍경 즐기되 페이스 일정 유지</td>
+    </tr>
+    <tr>
+      <td><strong>16-24km</strong></td>
+      <td>북천 오르막 — 약 30m 상승, 코스 최난구간</td>
+      <td>심박 80% 이하, 짧은 보폭으로 효율</td>
+    </tr>
+    <tr>
+      <td><strong>23.5-33km</strong> 🏆</td>
+      <td>완만한 내리막 — 기록 단축 황금 구간</td>
+      <td>페이스 끌어올리기 적기, 다리 회복</td>
+    </tr>
+    <tr>
+      <td><strong>33-42km</strong></td>
+      <td>잔잔한 낙타등 반복, 마무리</td>
+      <td>젤·소금 알약 비축, 의지력 게임</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">🏛</span>
+  <div class="callout-body">
+    <p class="callout-title">코스에 없는 것 — 불국사·석굴암</p>
+    <p>경주의 대표 유적인 불국사·석굴암은 코스에서 통과하지 않습니다. 시내에서 차로 20분 거리 외곽이라 별도 일정이 필요합니다. <strong>대회 전날 도착하면 오후 시간에 불국사·석굴암 → 저녁 동궁과월지 야경</strong> 코스가 정석. 완주 후 일정 여유가 있다면 일요일 오전에 다녀와도 OK.</p>
+  </div>
+</div>
+
+<h2>10월 경주 — 어떤 신발을 신을까</h2>
+
+<p>총 획득고도 146m + 23.5-33km 내리막 + 17-19도 + 아스팔트 시내 코스 — 한 마디로 <strong>풀코스 PB 도전에 가장 좋은 환경</strong>입니다. 종목별·목적별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀 PB 도전 (Sub-3:00~3:30)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>풀 안전 완주 (4:00~5:00)</strong></td>
+      <td>슈퍼 트레이너 (쿠션+가벼움)</td>
+      <td><a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a>, <a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프 (안정 페이스)</strong></td>
+      <td>경량 카본 또는 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>10K (즐기는 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">⛰</span>
+  <div class="callout-body">
+    <p class="callout-title">23.5-33km 내리막 대비 — 힐 쿠셔닝 우선</p>
+    <p>경주국제마라톤의 황금 구간(23.5-33km 내리막)에서는 페이스를 끌어올리되, 동시에 무릎과 종아리에 충격이 누적됩니다. 카본 플레이트화 중에서도 <strong>힐 쿠셔닝이 충분한 모델</strong>(아디오스 프로·메타스피드 에지)이 알파플라이·베이퍼플라이보다 안전합니다. 풀코스 후반 30km 이후 경련 위험을 줄이는 핵심.</p>
+  </div>
+</div>
+
+<h2>교통·숙박 — 경주는 KTX보다 시내 접근성이 핵심</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (빠름)</strong></td>
+      <td>서울역 → 신경주역(건천읍) → 시내버스·택시 20-30분</td>
+      <td>약 2시간 10분 + α</td>
+    </tr>
+    <tr>
+      <td><strong>고속버스 (편함)</strong></td>
+      <td>서울 경부 → 경주 시외터미널 → 대회장 택시 10분</td>
+      <td>약 3시간 30분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 경주IC</td>
+      <td>약 4시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚄</span>
+  <div class="callout-body">
+    <p class="callout-title">신경주역은 시내가 아니라 건천읍</p>
+    <p>KTX 신경주역은 건천읍 외곽에 있어 경주 시내까지 추가 이동(20-30분)이 필요합니다. 가성비를 따진다면 <strong>고속버스가 사실상 더 편할 수 있습니다</strong> — 시외터미널이 시내 한가운데 있어 대회장·숙소 접근성이 좋습니다. 대회 당일 셔틀버스는 운영되지만 조기 마감되니 사전 신청 확인 필수.</p>
+  </div>
+</div>
+
+<h2>경주 1박 2일 마라톤 + 관광 추천 일정</h2>
+
+<table>
+  <thead>
+    <tr><th>시점</th><th>일정</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>토요일 오전</strong></td><td>KTX 신경주역 도착 → 시내 이동 → 점심 (황남빵·교리김밥)</td></tr>
+    <tr><td>토요일 오후</td><td>불국사·석굴암 (외곽 30분 거리)</td></tr>
+    <tr><td>토요일 저녁</td><td>동궁과월지(안압지) 야경 → 경주 시내 한정식 → 호텔 체크인 (경주 시내 도보권)</td></tr>
+    <tr><td><strong>일요일 새벽</strong></td><td>06:00 기상 → 체조·간단한 식사 → 경주시민운동장 집결 (도보·셔틀)</td></tr>
+    <tr><td>일요일 오전</td><td>08:00 출발 → 풀코스 완주 (목표 4-5시간)</td></tr>
+    <tr><td>일요일 오후</td><td>회복식 → 황남빵 선물 → KTX 복귀</td></tr>
+  </tbody>
+</table>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 경주국제마라톤은 <strong>역대 최대 15,000명</strong>이 참가하며 World Athletics 엘리트 라벨 첫 해를 기념했습니다. 풀코스 우승은 아일랜드 퍼갈 커틴이 차지했고, APEC 정상회의 시점과 겹쳐 국제 관광 효과까지 누렸습니다.</p>
+
+<ul>
+  <li>"평지에 가까운 코스 + 가을 최적 기온 = PB 잘 나오는 마라톤"</li>
+  <li>"23.5-33km 내리막 구간에서 페이스 끌어올리기 황금 시간"</li>
+  <li>"첨성대·대릉원 통과할 때 풍경에 압도, 페이스 까먹지 말 것"</li>
+  <li>"동궁과월지 야경 + 황남빵 선물 = 가족 단위 만족도 최상"</li>
+  <li>"불국사 미통과는 아쉽지만 전날 다녀오면 충분"</li>
+</ul>
+
+<h2>5월 동마 4개 대회 캘린더 — 이번 시즌 종합</h2>
+
+<p>경주국제마라톤은 동마 가을 시리즈의 <strong>마지막 퍼즐</strong>입니다. 4개 대회 모두 5월에 접수가 열리니 시즌 전체 일정으로 잡으면 효율적:</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>대회일</th><th>접수일</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2027 서울마라톤</td>
+      <td>2027.03.21</td>
+      <td>우선 5/18~22 / 본 6/1~3</td>
+      <td><a href="/blog/2027-seoul-marathon-priority-d10">우선접수 D-10 가이드</a></td>
+    </tr>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>2026.09.20</td>
+      <td>우선 5/11~15 / 본 5/21</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">평지 입문 풀코스</a></td>
+    </tr>
+    <tr>
+      <td>2026 서울레이스 (하프·10K)</td>
+      <td>2026.10.11</td>
+      <td>본접수 5/27 19시·21시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+    <tr>
+      <td><strong>2026 경주국제마라톤</strong></td>
+      <td><strong>2026.10.17</strong></td>
+      <td><strong>접수 5/26 19시</strong></td>
+      <td><strong>이 글</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>10월 17일에는 같은 날 충북 청주에서 <a href="/blog/2026-daecheongho-marathon">청원생명쌀 대청호마라톤</a>도 열립니다. 경주(엘리트 라벨, 풀 PB 도전)와 대청호(가성비, 10km·5km 입문)는 성격이 완전히 달라서 동시에 도전 가능한 옵션입니다.</p>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>접수 진행 중 — 신청·잔여 확인 체크리스트</h3>
+  <ul>
+    <li>✅ <strong>잔여 슬롯·취소표 확인</strong> — dongma.club에서 종목별 마감 여부부터 확인</li>
+    <li>✅ <strong>동마클럽 회원가입·로그인</strong> — dongma.club 마이페이지 접속 가능 상태</li>
+    <li>✅ <strong>결제 수단 등록</strong> — 카드 + 카카오/네이버페이</li>
+    <li>✅ <strong>취소표 알림 설정</strong> — 마감됐다면 대회 전까지 풀리는 취소표 모니터링</li>
+    <li>✅ <strong>전날 경주 숙박 예약</strong> — 가을 단풍 + APEC 후 관광 붐, 빠른 마감</li>
+    <li>✅ <strong>러닝화 결정</strong> — PB 도전이라면 카본 레이싱화 6-8주 전 길들이기, <a href="/recommend">맞춤 추천</a> 활용</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · 공식 <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">gyeongjumarathon.com</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://www.gyeongjumarathon.com/" target="_blank" rel="noopener">경주국제마라톤 공식</a>, <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 캘린더</a>, runningwikii(2025년 참가비·코스), 한국육상연맹·sports.news.nate.com(2025 대회 보도). 2026년 본접수(5/26 시작)·참가비·정원은 dongma.club·gyeongjumarathon.com 공식 공지로 확정됐으니, 신청 전 최신 정보를 확인하세요.
+</p>
+`,
+  },
+  {
+    id: '2027-seoul-marathon-priority-d10',
+    slug: '2027-seoul-marathon-priority-d10',
+    title: '2027 서울마라톤 우선접수 D-10 | 5/18 오픈 — 풀 그룹별 본접수까지 실전 가이드',
+    description: '기록 제출(5/11 마감) 직후 우선접수가 5월 18일(월) 10시에 오픈됩니다. 동마클럽 멤버십·동마크루·번호표 반납자·공식 클래스 수료자·sub3 헌액자 5조건. 풀 그룹별 본접수(6/1~2)와 10K 선착순(6/3 19시) 실전 노하우 + 동마 4개 대회 5월 캘린더 한눈에.',
+    thumbnail: '/images/blog/2027-seoul-marathon-priority-d10.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-08',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['2027 서울마라톤', '서울마라톤', '동아마라톤', '동마클럽', '우선접수', '런카이브', '풀코스 그룹', '대회 일정'],
+    event: {
+      name: '2027 서울마라톤',
+      startDate: '2027-03-21T08:00:00+09:00',
+      location: {
+        name: '광화문 → 잠실종합운동장',
+        address: '서울특별시 종로구 ~ 송파구',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://dongma.club/',
+      offers: [
+        { name: '풀코스 (그룹 A~H 본접수, 6/1~6/2)', priceKrw: 60000, availabilityEnds: '2026-06-02', url: 'https://dongma.club/' },
+        { name: '10K (선착순, 6/3 19시)', priceKrw: 40000, availabilityEnds: '2026-06-03', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '우선접수 5조건이 정확히 뭔가요?',
+        answer: '아래 5개 중 하나라도 해당하면 5월 18일~22일 우선접수 가능합니다: ① 2026 동아마라톤 멤버십(동마클럽) 가입자, ② 2026 서울마라톤 동마크루, ③ 2026 서울마라톤 번호표 반납자, ④ 2026 서울마라톤 대비 공식 클래스 수료자, ⑤ 명예의 전당 헌액자 중 2024~25 서울/공주/경주 또는 2026 서울마라톤 sub3 달성자. 다섯 조건 모두 본접수 그룹별 시간 경쟁 없이 안정적으로 풀코스를 확보할 수 있는 핵심 루트입니다.',
+      },
+      {
+        question: '기록 제출 안 하면 어떻게 되나요?',
+        answer: '5월 11일(월) 15시까지 런카이브에 공인 기록을 제출하지 않으면 가장 후순위인 H그룹으로 자동 배정됩니다. H그룹은 6월 2일(화) 22시 본접수 가장 마지막 슬롯이라 풀코스 정원이 채워졌을 가능성이 매우 높습니다. 기록증이 있다면 마감 전에 무조건 제출하세요. 유효기간은 2024년 1월 1일 ~ 2026년 5월 10일 사이 공인 기록입니다.',
+      },
+      {
+        question: '동마클럽 ID는 어떻게 만드나요?',
+        answer: '동마클럽 회원가입 시 자동 발급되는 고유 식별자입니다. dongma.club 회원가입 후 마이페이지에서 확인할 수 있고, 런카이브 기록 제출 시 \'추가 정보 → 동마클럽 ID\' 항목에 입력해야 정상 처리됩니다. ID 누락 시 기록은 제출되지만 2027 서울마라톤 참가용 기록으로는 인정되지 않으니 회원가입과 ID 확인을 우선 처리하세요.',
+      },
+      {
+        question: '풀 그룹별 본접수에서 PC가 다운되면 어떻게 하나요?',
+        answer: '본접수 시각(19시·20시·21시·22시) 정시에 트래픽이 폭주하므로 ① PC + 모바일 + 태블릿 3중 백업 접속, ② 유선랜 우선(WiFi 비추), ③ 브라우저 자동입력으로 개인정보 입력 시간 단축, ④ 결제 수단 사전 등록(카드 정보 + 간편결제 둘 다)이 표준 전략입니다. 특히 시계 동기화는 필수 — `time.navyism.com`으로 초 단위까지 맞춰두세요. 3년 연속 풀 못 잡은 러너들 대부분이 시계 오차 또는 결제 수단 미등록이 원인이었습니다.',
+      },
+      {
+        question: '10K 선착순은 정말 그렇게 빨리 마감되나요?',
+        answer: '2026 서울마라톤 10K는 접수 오픈 5분 만에 마감됐습니다. 2027은 카카오 러너스카드 도입(JTBC 서울마라톤 사례) 가능성으로 시스템이 바뀔 수도 있으니 5월 말 동마클럽 공지를 반드시 확인하세요. 현재 기준으로는 6월 3일(수) 19시 정각에 dongma.club에서 선착순 접수, 풀과 동일한 PC 셋업 + 시계 동기화가 필수입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2027 서울마라톤(2027.3.21 일) 우선접수 <strong>5월 18일(월) 10시 D-10</strong> 오픈 — 동마 멤버십·동마크루·번호표 반납·공식 클래스 수료·sub3 헌액자 5조건</li>
+    <li>풀 본접수 6월 1~2일 그룹별(A→H 시간대 분리), 10K 본접수 6월 3일 19시 선착순 — <strong>기록 제출 5/11 15시까지</strong> 런카이브 필수</li>
+    <li>5월에 동마 4개 대회(서울·서울레이스·공주백제·경주국제) 모두 접수 오픈 — 한 시즌 전체 캘린더로 페이스 잡기</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">우선접수 D-10 — 5조건 해당 여부부터 확인하세요</p>
+    <p>5월 18일(월) 10시 오픈까지 10일. 우선접수에 해당된다면 본접수의 그룹별 경쟁 없이 안정적으로 풀코스를 확보할 수 있습니다. 본인이 5조건 중 하나라도 해당하는지 <strong>지금 즉시 확인</strong>하고, 동마클럽 회원가입·로그인·결제 수단 등록까지 마쳐두세요. 우선접수 한 번 놓치면 6월 1일 그룹별 본접수의 1초 경쟁으로 들어가야 합니다.</p>
+  </div>
+</div>
+
+<h2>핵심 일정 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">우선접수</span>
+    <span class="stat-value">5/18 ~ 5/22</span>
+    <span class="stat-sub">D-10 → D-14</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀 본접수</span>
+    <span class="stat-value">6/1 ~ 6/2</span>
+    <span class="stat-sub">그룹 A→H 시간대</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K 본접수</span>
+    <span class="stat-value">6/3 (수)</span>
+    <span class="stat-sub">19시 선착순</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">2027.3.21</span>
+    <span class="stat-sub">광화문 출발</span>
+  </div>
+</div>
+
+<h2>지금부터 D-Day까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.08 (목) — 오늘</span>
+    <span class="timeline-title">우선접수 D-10 / 기록 제출 D-3</span>
+    <p class="timeline-desc">우선접수 5조건 해당 여부 확인 + 런카이브에서 기록 제출 + 동마클럽 ID 확인</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.11 (월) 15시</span>
+    <span class="timeline-title">기록 제출 마감 — 절대 늦지 말 것</span>
+    <p class="timeline-desc">미제출 시 자동 H그룹 배정 (6/2 22시 본접수, 사실상 잔여석 없음)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.18 (월) 10시</span>
+    <span class="timeline-title">우선접수 오픈 + 골드패키지 시작</span>
+    <p class="timeline-desc">5조건 해당자 안정적 슬롯 확보 — dongma.club</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.22 (금) 15시</span>
+    <span class="timeline-title">우선접수 마감</span>
+    <p class="timeline-desc">우선접수 미접수 시 6/1 그룹별 본접수로 진입</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.01~02</span>
+    <span class="timeline-title">풀코스 본접수 — 그룹 A~H 시간대별</span>
+    <p class="timeline-desc">A(6/1 19시) → H(6/2 22시) 1시간 간격 분리, 시계 동기화 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.03 (수) 19시</span>
+    <span class="timeline-title">10K 선착순 본접수 — 5분 컷 가능성</span>
+    <p class="timeline-desc">PC 3중 백업 + 시계 동기화 + 결제 수단 등록 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2027.03.21 (일)</span>
+    <span class="timeline-title">대회 당일 — 광화문 출발</span>
+    <p class="timeline-desc">8시 풀코스 출발 (예상), 잠실종합운동장 피니시</p>
+  </div>
+</div>
+
+<h2>우선접수 5조건 — 해당되면 무조건 활용</h2>
+
+<table>
+  <thead>
+    <tr><th>조건</th><th>해당 대상</th><th>증빙</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>① 동마클럽 멤버십</strong></td>
+      <td>2026 동아마라톤 멤버십 가입자</td>
+      <td>회원 ID</td>
+    </tr>
+    <tr>
+      <td><strong>② 동마크루</strong></td>
+      <td>2026 서울마라톤 동마크루 활동자</td>
+      <td>크루 등록 정보</td>
+    </tr>
+    <tr>
+      <td><strong>③ 번호표 반납자</strong></td>
+      <td>2026 서울마라톤 번호표 반납 처리 완료자</td>
+      <td>반납 확인 메일</td>
+    </tr>
+    <tr>
+      <td><strong>④ 공식 클래스 수료</strong></td>
+      <td>2026 서울마라톤 대비 공식 클래스(잠스트 등) 수료자</td>
+      <td>수료증·등록 정보</td>
+    </tr>
+    <tr>
+      <td><strong>⑤ Sub-3 헌액자</strong></td>
+      <td>명예의 전당 + 2024~25 서울/공주/경주 또는 2026 서울 sub3</td>
+      <td>기록증·헌액 정보</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">멤버십 신규 가입은 이미 늦었다</p>
+    <p>2026 동마 멤버십은 이미 모집이 마감됐습니다. 2027 서울 우선접수에는 <strong>2026 멤버십 가입자만</strong> 해당됩니다. 다음 시즌(2027 멤버십)을 노리고 가입하면 2028 서울마라톤 우선접수 자격을 얻습니다. 멤버십은 보통 매년 12월~다음해 1월 모집되며, 가을 동마 시리즈(공주백제·경주국제) 참가권이 함께 포함됩니다.</p>
+  </div>
+</div>
+
+<h2>풀 본접수 그룹별 시간 — 1초가 승부 가른다</h2>
+
+<p>풀코스 본접수는 제출한 공인 기록 기반으로 A~H 그룹이 배정되고, 그룹별로 정해진 시각에만 접수 창이 열립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>날짜</th><th>그룹</th><th>접수 시각</th><th>대상 기록 (예상)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="4">6/1 (월)</td><td><strong>A</strong></td><td>19시</td><td>Sub-2:50</td></tr>
+    <tr><td>B</td><td>20시</td><td>Sub-3:00</td></tr>
+    <tr><td>C</td><td>21시</td><td>Sub-3:15</td></tr>
+    <tr><td>D</td><td>22시</td><td>Sub-3:30</td></tr>
+    <tr><td rowspan="4">6/2 (화)</td><td>E</td><td>19시</td><td>Sub-3:45</td></tr>
+    <tr><td>F</td><td>20시</td><td>Sub-4:00</td></tr>
+    <tr><td>G</td><td>21시</td><td>Sub-4:30</td></tr>
+    <tr><td><strong>H</strong></td><td>22시</td><td>기록 미제출 / Sub-4:30 외</td></tr>
+  </tbody>
+</table>
+
+<p><small>※ 기록 그룹 기준은 2026 완주자 기록 분포에 따라 5월 중 동마클럽 공지로 확정됩니다. 위 표는 2026년 기준 추정.</small></p>
+
+<h2>실전 접수 노하우 — PC 셋업부터 시계 동기화까지</h2>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 D-Day 직전 체크리스트</p>
+    <ol style="margin-top:8px;">
+      <li><strong>유선랜 PC 우선</strong> — WiFi는 패킷 손실 가능성. 가능하면 데스크톱 + 모바일 동시 접속</li>
+      <li><strong>브라우저 2개 이상</strong> — Chrome + 시크릿 창 또는 다른 브라우저로 동시 시도</li>
+      <li><strong>로그인 미리</strong> — 접수 시각 30분 전 로그인 완료, 마이페이지 진입 확인</li>
+      <li><strong>개인정보 자동입력</strong> — 이름·생년월일·연락처·주소 모두 브라우저 저장</li>
+      <li><strong>결제 수단 2가지 등록</strong> — 카드 정보 + 카카오/네이버페이 둘 다 사전 등록</li>
+      <li><strong>시계 동기화</strong> — <code>time.navyism.com</code>에서 1초 단위 동기화 (휴대폰 기본 시계 1~2초 오차 흔함)</li>
+      <li><strong>접속 페이지 미리</strong> — 19시 정각 직전 접수 페이지 로딩 → F5 새로고침 대기</li>
+    </ol>
+  </div>
+</div>
+
+<h2>런카이브·동마클럽 ID — 제출 시스템 정밀 가이드</h2>
+
+<p>2026년부터 2027 서울마라톤 기록 제출은 <strong>런카이브(runarchive.com)</strong> 시스템 통합으로 운영됩니다. 동마클럽 별도 시스템과 연계되므로 두 시스템 모두 회원가입·ID 입력이 필요합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>단계</th><th>해야 할 것</th><th>주의사항</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1. 런카이브 회원가입</td>
+      <td>runarchive.com 회원가입 + 이메일 인증</td>
+      <td>자주 사용하는 이메일 사용 (인증번호 수신)</td>
+    </tr>
+    <tr>
+      <td>2. 동마클럽 회원가입</td>
+      <td>dongma.club 회원가입 → 마이페이지에서 동마클럽 ID 확인</td>
+      <td>이미 가입돼 있으면 ID만 확인</td>
+    </tr>
+    <tr>
+      <td>3. 기록 제출</td>
+      <td>런카이브 → \'2027 서울마라톤\' 클릭 → 기록증 업로드</td>
+      <td><strong>\'2027 서울마라톤\' 클릭 안 하면 참가용 기록으로 안 잡힘</strong></td>
+    </tr>
+    <tr>
+      <td>4. 추가 정보 입력</td>
+      <td>동마클럽 ID 정확히 입력</td>
+      <td>ID 오타 시 기록 인정 안 됨</td>
+    </tr>
+    <tr>
+      <td>5. 승인 확인</td>
+      <td>제출 후 며칠 내 \'승인\' 처리 확인</td>
+      <td>승인 안 되면 마감 전 재제출</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">가장 흔한 실수 — \'2027 서울마라톤\' 미클릭</p>
+    <p>런카이브에서 기록을 제출할 때 반드시 <strong>\'2027 서울마라톤\' 항목을 클릭한 뒤 제출</strong>해야 참가용 기록으로 잡힙니다. 그냥 기록증만 업로드하면 시스템엔 등록되지만 2027 서울 참가 자격으로는 인정되지 않습니다. 5월 11일 마감 직전 이 실수를 발견해도 재처리 시간이 부족하니 지금 처리하세요.</p>
+  </div>
+</div>
+
+<h2>5월 동마 4개 대회 캘린더 — 시즌 전체로 보기</h2>
+
+<p>2027 서울마라톤만 신경 쓰면 동마 가을 시리즈를 놓칩니다. 동마클럽 멤버십(15만원)으로 4개 대회 패키지 운용이 정답:</p>
+
+<table>
+  <thead>
+    <tr><th>대회</th><th>대회일</th><th>5월 접수</th><th>관련 글</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>2027 서울마라톤</strong></td>
+      <td>2027.03.21 (일)</td>
+      <td>우선 5/18~22 / 본 6/1~3</td>
+      <td>이 글 (D-10 임박)</td>
+    </tr>
+    <tr>
+      <td>2026 공주백제마라톤</td>
+      <td>2026.09.20 (일)</td>
+      <td>우선 5/11~15 / 본 5/21</td>
+      <td><a href="/blog/2026-gongju-baekje-marathon">평지 입문 풀코스</a></td>
+    </tr>
+    <tr>
+      <td>2026 경주국제마라톤</td>
+      <td>2026.10.17 (토)</td>
+      <td>본접수 5/26 19시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+    <tr>
+      <td>2026 서울레이스 (하프·10K)</td>
+      <td>2026.10.11 (일)</td>
+      <td>본접수 5/27 19시·21시</td>
+      <td>(별도 발행 예정)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>전체 26/27 시즌 일정 가이드와 그룹별 본접수 시스템의 더 자세한 설명은 <a href="/blog/2027-seoul-marathon-registration-schedule">2027 서울마라톤 접수 일정 완전 정리</a>에서 다뤘습니다.</p>
+
+<h2>대회까지 9개월 — 훈련·장비 빌드업</h2>
+
+<p>2027 서울마라톤은 2027년 3월 21일이라 접수 완료 후에도 <strong>약 9~10개월 준비 기간</strong>이 있습니다. 표준 빌드업 계획:</p>
+
+<ul>
+  <li><strong>6~8월: 베이스 빌딩</strong> — 주 30~50km 누적, LSD 25km 목표</li>
+  <li><strong>9~10월: 가을 대회 페이스메이커</strong> — 공주백제·경주·춘천·JTBC로 실전 감각</li>
+  <li><strong>11~12월: 본격 빌드업 시작</strong> — 16~20주 풀 마라톤 프로그램 시작</li>
+  <li><strong>1~2월: 피크 마일리지</strong> — 주 70~90km, 30km LSD 4회 이상</li>
+  <li><strong>3월 1~2주차: 테이퍼링</strong> — 거리 50% 감소, 회복 우선</li>
+  <li><strong>3.21: D-Day</strong> — 광화문 출발</li>
+</ul>
+
+<table>
+  <thead>
+    <tr><th>준비 항목</th><th>추천</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>레이스 신발</strong></td>
+      <td>대회 6~8주 전 구입 → 40~60km 길들이기. <a href="/best/best-carbon-plate-2025">카본 플레이트 비교</a> 또는 <a href="/recommend">맞춤 추천</a></td>
+    </tr>
+    <tr>
+      <td>훈련용 데일리화</td>
+      <td><a href="/shoes/nike-pegasus-42">페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">1080 v15</a>, GT-2000 14</td>
+    </tr>
+    <tr>
+      <td>에너지젤</td>
+      <td>20km부터 30~40분 간격 — <a href="/blog/energy-gel-science-guide">에너지젤 가이드</a></td>
+    </tr>
+    <tr>
+      <td>페이싱</td>
+      <td><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a> + 가을 대회 실전 검증</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 18일 우선접수 D-10 — 지금 해야 할 것</h3>
+  <ul>
+    <li>✅ <strong>우선접수 5조건 확인</strong> — 멤버십·동마크루·번호표 반납·공식 클래스·sub3 헌액</li>
+    <li>✅ <strong>기록 제출</strong> — 5월 11일(월) 15시까지 런카이브, \'2027 서울마라톤\' 클릭 필수</li>
+    <li>✅ <strong>동마클럽 ID 확인</strong> — dongma.club 마이페이지</li>
+    <li>✅ <strong>로그인·결제 수단 등록</strong> — 카드 + 간편결제 둘 다</li>
+    <li>✅ <strong>시계 동기화 도구 북마크</strong> — time.navyism.com</li>
+    <li>✅ <strong>5/18 10시 알람 설정</strong> — 우선접수 정시 오픈</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a> · <a href="https://runarchive.com/" target="_blank" rel="noopener">runarchive.com</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽 공식</a>, <a href="https://www.instagram.com/seoul_marathon/" target="_blank" rel="noopener">@seoul_marathon</a>(런카이브·동마클럽 ID 시스템 공지), <a href="https://www.instagram.com/dongmaclub/" target="_blank" rel="noopener">@dongmaclub</a>(5월 접수 캘린더). 그룹별 기록 기준과 정확한 본접수 시각은 5월 중 동마클럽 공식 공지로 확정됩니다.
+</p>
+`,
+  },
+  {
+    id: '2026-best-trail-running-shoes',
+    slug: '2026-best-trail-running-shoes',
+    title: '2026 트레일 러닝화 TOP 7 | 북한산·관악산 한국 산악 기준 카테고리별 베스트',
+    description: '2026년 트레일 러닝화 7개 카테고리 베스트를 RunRepeat 랩 데이터 + 한국 공식 가격 + 북한산·관악산·도봉산 적용성으로 정리했습니다. 종합 베스트(테렉스 아그라빅 4)·충격 흡수(메타후지 트레일)·반발력(테크톤 X 3)·레이스(울트라플라이)·테크니컬(어질리티 피크 6)·속도(스피드 울트라)·가성비(젤 벤처 10) — 발볼 넓은 한국 러너 친화도까지 함께.',
+    thumbnail: '/images/blog/2026-best-trail-running-shoes.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-08',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['트레일 러닝화', '트레일 러닝', '2026 트레일화', '북한산 러닝', '관악산 러닝', '도봉산 러닝', '굿러너 스카이레이스', '산악 러닝화', '한국 트레일'],
+    faqs: [
+      {
+        question: '로드 러닝화로 트레일 뛰면 안 되나요?',
+        answer: '대모산·청계산·둘레길 같은 완만한 임도 5km는 로드 신발로도 가능하지만, 북한산·관악산·도봉산처럼 화강암 슬랩과 급경사 암릉이 있는 정식 트레일 코스에서는 위험합니다. 로드 신발은 그립 패턴이 부드러운 도로용이라 젖은 화강암에서 미끄러지고, 록 플레이트가 없어 돌·바위 밟을 때 발바닥 보호가 안 됩니다. 정식 트레일 입문이면 ASICS 젤 벤처 10(89,000원)부터 시작하는 게 안전합니다.',
+      },
+      {
+        question: '발볼 넓은 한국 러너에게 맞는 트레일화는 뭔가요?',
+        answer: '발볼 친화도 기준으로 추천 순서: ① Merrell 어질리티 피크 6 (한국 공식 와이드 SKU 출시, 199,000원) → ② Nike 울트라플라이 (실측 토박스 76.7mm, 와이드 옵션 불필요) → ③ ASICS 젤 벤처 10 (와이드 버전 한국 출시). 반대로 HOKA 테크톤 X 3, 아디다스 스피드 울트라, ASICS 메타후지 트레일은 토박스가 좁아 발볼 넓은 한국 러너에게는 부적합합니다. 와이드 옵션이 없는 모델은 무조건 오프라인 피팅 후 구매하세요.',
+      },
+      {
+        question: '북한산·도봉산 처음인데 어떤 신발이 정답인가요?',
+        answer: '북한산·도봉산은 화강암 슬랩과 바위 구간이 핵심이라 그립이 가장 중요합니다. 정답: Merrell 어질리티 피크 6 (Vibram Megagrip + Traction Lug, 와이드 옵션, 199,000원). 그 다음 적합 옵션은 Adidas 테렉스 아그라빅 4 (Continental 아웃솔). 반대로 Nike 울트라플라이(러그 3mm)와 Adidas 스피드 울트라 2(평탄 트레일 특화)는 가파른 슬랩에서 불리해 비추천입니다.',
+      },
+      {
+        question: '트레일 레이스 처음인데 어떤 신발이 좋나요?',
+        answer: '굿러너 스카이레이스 시리즈(동해·계룡 등) 같은 임도+싱글트랙 혼합 코스 50K 이하라면 ① 카본 플레이트가 필요한 PB 도전 → HOKA 테크톤 X 3 (PEBA 100% + Vibram, 339,000원, 발볼 표준 이하 한정). ② 발볼 넓고 임도 비중 큰 코스 → Nike 울트라플라이 (ZoomX + 카본, 299,000원). 50K 이상 울트라는 충격 흡수 우선해 ASICS 메타후지 트레일(279,000원, 힐 스택 45mm)도 좋은 선택입니다.',
+      },
+      {
+        question: '트레일 입문에 얼마짜리부터 시작하면 되나요?',
+        answer: '입문 코스(대모산·청계산·둘레길) → 89,000원 ASICS 젤 벤처 10이 가성비 정답입니다. 정식 트레일(북한산·관악산) → 199,000원 머렐 어질리티 피크 6. 본격 레이스 → 299,000~339,000원대 카본 트레일화. 처음부터 카본 플레이트 트레일화를 살 필요는 없으며, 입문 단계에서는 그립과 발 보호만 갖춰도 충분합니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 트레일 러닝화 <strong>7개 카테고리 베스트</strong> — 종합·충격흡수·반발력·레이스·테크니컬·속도·가성비, RunRepeat 랩 + 한국 공식 가격 기준 정리</li>
+    <li><strong>발볼 친화도 양극화</strong> — Merrell 어질리티 피크 6(와이드 정식)·Nike 울트라플라이(76.7mm)·젤 벤처 10(와이드 출시)는 발볼 넓은 한국 러너 적합 / HOKA 테크톤 X 3·아디다스 스피드 울트라·메타후지 트레일은 좁음 주의</li>
+    <li><strong>한국 산악 정답</strong> — 북한산·도봉산 화강암 슬랩에는 Vibram Megagrip 우선(어질리티 피크 6), 굿러너 스카이레이스 임도 코스에는 카본 트레일화(테크톤 X 3·울트라플라이) 분리 운용</li>
+  </ul>
+</div>
+
+<figure class="my-8">
+  <img
+    src="/images/blog/2026-best-trail-running-shoes.webp"
+    alt="2026 트레일 러닝화 TOP 7 — 북한산·관악산 한국 산악 기준 카테고리별 베스트"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">2026 트레일 러닝화 7개 카테고리 베스트 — 한국 산악 적용성 기준</figcaption>
+</figure>
+
+<h2>한국 트레일 러닝의 지형 — 신발 선택의 출발점</h2>
+
+<p>한국 트레일 러닝은 외국과 결정적으로 다릅니다. 미국·유럽 트레일이 흙길과 임도 위주라면, 수도권 3대 산(<strong>북한산·관악산·도봉산</strong>)은 화강암 슬랩과 급경사 암릉이 핵심입니다. 어떤 신발을 신느냐에 따라 즐거운 산행과 미끄러져 다치는 경험이 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>코스 유형</th><th>대표 지역</th><th>핵심 요구사항</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>입문 임도·둘레길</strong></td>
+      <td>대모산·청계산·관악산 둘레길</td>
+      <td>기본 그립 + 충격 흡수 (가성비 OK)</td>
+    </tr>
+    <tr>
+      <td><strong>정식 트레일</strong></td>
+      <td>북한산·도봉산·관악산 정상 코스</td>
+      <td>Vibram Megagrip / Continental 같은 점착 고무 필수</td>
+    </tr>
+    <tr>
+      <td><strong>스카이레이스</strong></td>
+      <td>굿러너 스카이레이스 시리즈 (동해·계룡 등)</td>
+      <td>임도+싱글트랙 복합, 카본 플레이트 효율</td>
+    </tr>
+    <tr>
+      <td><strong>울트라 트레일</strong></td>
+      <td>50K+ 산악 레이스</td>
+      <td>충격 흡수 + 게이터 호환 + 록 플레이트</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>2026 카테고리별 베스트 8</h2>
+
+<h3>🏆 1. 종합 베스트 — <a href="/shoes/adidas-terrex-agravic-4">Adidas Terrex Agravic 4</a></h3>
+
+<table>
+  <thead>
+    <tr><th colspan="2">스펙 요약</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 가격</td><td>약 209,000원 (추정, 한국 정가 미확정 · 미국 $145)</td></tr>
+    <tr><td>무게 / 드롭</td><td>283g / 9mm (RunRepeat 실측)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>33mm / 24mm</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 4-5mm)</td></tr>
+    <tr><td>미드솔</td><td>Lightstrike 3 (단일 밀도, 소프트 튜닝)</td></tr>
+    <tr><td>RunRepeat 점수</td><td>81/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: Continental 아웃솔이 젖은 노면 그립에서 신뢰성 높음. 283g 무게 + 33mm 힐 스택의 균형 잡힌 빌드로 데일리 산악 트레이닝에 무난한 올라운더.</p>
+<p><strong>약점</strong>: 에너지 리턴이 평균 이하라 추진력 부족. 어퍼 내구성도 낮음(RunRepeat 토박스 내구성 1/5).</p>
+<p><strong>한국 러너 노트</strong>: Continental 아웃솔이 북한산 화강암 슬랩·도봉산 암릉에서 안정적이지만, 와이드 옵션 미확인이라 발볼 넓은 러너는 오프라인 피팅 권장. 한국 공식 입점 시점은 2026년 봄~여름 예상.</p>
+
+<h3>🛡 2. 충격 흡수 — <a href="/shoes/asics-metafuji-trail">ASICS Metafuji Trail</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>279,000원 (asics.co.kr / 굿러너컴퍼니)</td></tr>
+    <tr><td>무게 / 드롭</td><td>258g / 10mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>45mm / 34mm</td></tr>
+    <tr><td>아웃솔</td><td>ASICSGRIP (삼각형·화살형 패턴)</td></tr>
+    <tr><td>미드솔</td><td>FF Blast+ (베이스) + FF Turbo (탑) 이중 폼</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 힐 스택 <strong>45mm</strong>로 트레일화 최상위권 충격 흡수. ASICSGRIP 아웃솔 점착력 최상. 258g 경량으로 이중 폼 빌드 대비 놀라운 무게.</p>
+<p><strong>약점</strong>: FF Blast+ 베이스 레이어 때문에 에너지 리턴 제한적, 추진력 낮음. 토박스 좁고 어퍼 내구성 낮음(1/5).</p>
+<p><strong>한국 러너 노트</strong>: 45mm 힐 스택이 북한산·관악산 장거리 하산 무릎 충격을 효과적으로 흡수하지만, 토박스가 좁아 <strong>발볼 넓은 한국 러너 다수에게 불리</strong>. 공식 와이드 옵션 없으므로 오프라인 착화 필수.</p>
+
+<h3>⚡ 3. 반발력 — <a href="/shoes/hoka-tecton-x-3">HOKA Tecton X 3</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>339,000원 (KREAM 발매가 / 굿러너컴퍼니)</td></tr>
+    <tr><td>무게 / 드롭</td><td>275g / 7mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>38mm / 31mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip</td></tr>
+    <tr><td>미드솔</td><td>PEBA 100% (프리미엄 슈퍼폼) + 카본 플레이트</td></tr>
+    <tr><td>RunRepeat 점수</td><td>84/100</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 순수 PEBA 폼 — 트레일 슈퍼슈즈 중 최상위 에너지 리턴. Vibram Megagrip 내구성·그립 모두 우수. 카본 플레이트 + MATRYX 어퍼로 장거리 레이스 효율성 최상.</p>
+<p><strong>약점</strong>: 339,000원 트레일화 국내 최고가권. 토박스 협소 — RunRepeat가 "발볼 넓은 러너에 절대 부적합"으로 명시.</p>
+<p><strong>한국 러너 노트</strong>: PEBA 폼 반발력은 굿러너 스카이레이스 업힐 구간에서 확실한 이점이나, <strong>좁은 토박스는 발볼 넓은 한국 러너에게 치명적</strong>. 발볼 표준 이하 러너에게만 권장.</p>
+
+<h3>🏁 4. 레이스 — <a href="/shoes/nike-ultrafly">Nike Ultrafly</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>299,000원 (Nike Korea / KREAM)</td></tr>
+    <tr><td>무게 / 드롭</td><td>299g / 12mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>37mm / 25mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip Litebase (풀 길이, 러그 3mm)</td></tr>
+    <tr><td>미드솔</td><td>ZoomX (Pebax 계열) + 카본 포크 플레이트</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+    <tr><td>토박스</td><td>76.7mm — 넓은 핏</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: ZoomX + 카본 포크 플레이트 — 완만한 트레일·임도·자갈길 에너지 리턴 우수. <strong>토박스 76.7mm 와이드 핏</strong>으로 발볼 넓은 한국 러너에게 희귀하게 유리한 트레일 슈퍼슈즈. Vibram Megagrip 그립력으로 그루밍된 트레일에서 신뢰성.</p>
+<p><strong>약점</strong>: Vaporweave 어퍼 내구성 최하(1/5) — 암릉·가시덤불에 취약. 3mm 얕은 러그로 진흙·가파른 기술 지형에서 한계.</p>
+<p><strong>한국 러너 노트</strong>: 발볼 넓은 한국 러너에게 추천 가능한 카본 트레일화. 단, <strong>3mm 얕은 러그로 화강암 슬랩·가파른 하산 많은 북한산·도봉산에는 부적합</strong>. 관악산 임도·완만한 싱글트랙·로드-투-트레일 혼합 대회에 적합.</p>
+
+<h3>🪨 5. 테크니컬 지형 — Merrell Agility Peak 6</h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>199,000원 (merrellkorea.co.kr, 와이드 SKU 동일가)</td></tr>
+    <tr><td>무게 / 드롭</td><td>278g / 6mm (실측 11.5mm)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>36mm / 25mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip + Traction Lug Technology</td></tr>
+    <tr><td>미드솔</td><td>FloatPro EVA</td></tr>
+    <tr><td>RunRepeat 점수</td><td>88/100</td></tr>
+    <tr><td>와이드 옵션</td><td>한국 공식 와이드 SKU 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: Vibram Megagrip + Traction Lug — 테크니컬 지형 그립 최상위. <strong>와이드 버전 한국 공식 출시</strong>로 발볼 넓은 러너에게 호재. 278g 경량 + 안정적 아치 지지로 힐 스트라이커 적합.</p>
+<p><strong>약점</strong>: FloatPro EVA 폼 — 에너지 리턴·충격 흡수 모두 평균 이하. 실측 드롭 11.5mm로 브랜드 주장(6mm) 대비 괴리 큼.</p>
+<p><strong>한국 러너 노트</strong>: <strong>북한산 인수봉 접근로·도봉산 바위 구간 그립은 국내 트레일화 중 최상위권</strong>. 와이드 옵션이 정식 출시된 유일한 Vibram 트레일화로 발볼 넓은 한국 러너에게 사실상 유일한 정답.</p>
+
+<h3>💨 6. 속도형 — <a href="/shoes/adidas-terrex-agravic-speed-ultra">Adidas Terrex Agravic Speed Ultra 2</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td>약 279,000원 (추정, 2세대 정가 미확정)</td></tr>
+    <tr><td>무게 / 드롭</td><td>265g / 8mm (1세대 0.3mm에서 전환)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>44mm / 36mm (1세대 31/30에서 대폭 증가)</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 3~4mm, 1세대 2.5mm에서 강화)</td></tr>
+    <tr><td>미드솔</td><td>Lightstrike Pro 소프트 리튜닝 + Energy Rods (카본 아님)</td></tr>
+    <tr><td>랩 데이터</td><td>RunRepeat 미게시 (2025-12 출시, 공식 발표 기준)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 힐 슬링샷 구조 신설로 1세대 최대 약점이던 힐 안정성 대폭 개선. 부드럽게 리튜닝된 Lightstrike Pro로 장거리 쿠션 피로 감소. Energy Rods 추진력은 유지돼 완만 트레일에서 슈퍼슈즈급 스피드. 러그 3~4mm로 트랙션 강화.</p>
+<p><strong>약점</strong>: 제로드롭 → 8mm 드롭 전환으로 1세대 제로드롭 팬에겐 호불호. 극도로 테크니컬한 암릉에서는 공격적 반응성이 컨트롤 방해. 토박스는 여전히 좁은 편(2세대 실측 미공개)으로 발볼 넓은 러너 주의.</p>
+<p><strong>한국 러너 노트</strong>: 1세대 대비 힐 안정성·드롭이 개선돼 다운힐 부담이 줄었지만, 북한산·관악산 같은 거친 암릉보다는 <strong>굿러너 스카이레이스 임도·그루밍된 평탄 트레일 50K 이하 레이스에서 진가</strong>를 발휘합니다. 전족·미드풋 스트라이커에게 추천. (2025-12 출시로 RunRepeat 랩 미게시 — 수치는 공식 발표·전문 리뷰 기준)</p>
+
+<h3>💰 7. 가성비 — <a href="/shoes/asics-gel-venture-10">ASICS Gel Venture 10</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td><strong>89,000원</strong> (asics.co.kr / 무신사)</td></tr>
+    <tr><td>무게 / 드롭</td><td>322g / 12mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>35mm / 23mm</td></tr>
+    <tr><td>아웃솔</td><td>세그먼트 투피스 고무 (화살형 러그 3.7mm)</td></tr>
+    <tr><td>미드솔</td><td>Amplifoam (소프트 리포뮬레이션)</td></tr>
+    <tr><td>RunRepeat 점수</td><td>84/100</td></tr>
+    <tr><td>와이드 옵션</td><td>D(스탠다드)·와이드 한국 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: <strong>89,000원 — 트레일화 국내 최저가권</strong>. 트레킹·입문용 가성비 최고. 내구성 우수. 와이드 버전 한국 출시로 발볼 넓은 입문자에게 옵션 존재.</p>
+<p><strong>약점</strong>: 322g 무거움 — 동급 대비 최중량. 저온에서 미드솔 경도 42% 상승(겨울 산행 쿠션감 저하).</p>
+<p><strong>한국 러너 노트</strong>: <strong>89,000원으로 트레일 진입 장벽을 크게 낮춘 선택지</strong>. 북한산·관악산 정식 트레일보다는 청계산·대모산·둘레길 수준 입문 코스에 적합. 트레킹화 대체로도 활용 가능.</p>
+
+<h3>🐐 8. 만능·그립 베스트셀러 — <a href="/shoes/hoka-speedgoat-6">HOKA Speedgoat 6</a></h3>
+
+<table>
+  <tbody>
+    <tr><td><strong>한국 가격</strong></td><td><strong>205,000원</strong> (HOKA 공식, 와이드 동일가 / GTX 229,000)</td></tr>
+    <tr><td>무게 / 드롭</td><td>278g / 5mm</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>40mm / 35mm</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip + Traction Lug (러그 5mm)</td></tr>
+    <tr><td>미드솔</td><td>CMEVA (압축성형 EVA, 플레이트리스)</td></tr>
+    <tr><td>토박스 / 와이드</td><td>73mm 표준(체감 좁음) · 와이드 공식 출시 ✅</td></tr>
+  </tbody>
+</table>
+
+<p><strong>강점</strong>: 트레일 데일리의 대명사. Vibram Megagrip + Traction Lug 조합으로 젖은 바위·급경사·진흙까지 그립이 최상(Road Trail Run 10/10). 힐 40mm 맥스쿠션에도 내부 섀시로 안정성 A등급(Doctors of Running). 278g으로 맥스쿠션치고 가벼워 울트라에 유리하고, 와이드 옵션이 공식가로 제공됩니다.</p>
+<p><strong>약점</strong>: 에너지 리턴 48%로 빠른 페이스엔 둔함. 토박스가 표준 수치(73mm)임에도 "좁다"는 체감 평가가 많고, 텅 날개·힐 슬립 같은 핏 이슈와 노출 미드솔 마모(200~300km 후 압축)가 단점.</p>
+<p><strong>한국 러너 노트</strong>: <strong>"트레일 입문화 딱 하나만"이라면 가장 안전한 베스트셀러</strong>. 북한산·관악산 같은 거친 암릉부터 둘레길까지 두루 커버하고, <strong>와이드가 공식가(205,000원)로 나와 발볼 넓은 한국 러너에게 특히 친화적</strong>입니다. 빠른 레이스보다 LSD·장거리·산행 겸 러닝에 최적입니다.</p>
+
+<h2>한 눈에 보는 8대 비교표</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>카테고리</th><th>한국가</th><th>무게</th><th>한국 발볼</th><th>한국 산악 적합성</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adidas Terrex Agravic 4</td>
+      <td>종합 베스트</td>
+      <td>미확인</td>
+      <td>260g</td>
+      <td>표준</td>
+      <td>북한산 OK</td>
+    </tr>
+    <tr>
+      <td>ASICS Metafuji Trail</td>
+      <td>충격 흡수</td>
+      <td>279,000원</td>
+      <td>258g</td>
+      <td>좁음 ⚠️</td>
+      <td>장거리 하산 강점</td>
+    </tr>
+    <tr>
+      <td>HOKA Tecton X 3</td>
+      <td>반발력</td>
+      <td>339,000원</td>
+      <td>275g</td>
+      <td>좁음 ⚠️</td>
+      <td>스카이레이스 임도 강점</td>
+    </tr>
+    <tr>
+      <td>Nike Ultrafly</td>
+      <td>레이스</td>
+      <td>299,000원</td>
+      <td>299g</td>
+      <td>넓음 ✅</td>
+      <td>임도·완만 트레일 한정</td>
+    </tr>
+    <tr>
+      <td><strong>Merrell Agility Peak 6</strong></td>
+      <td><strong>테크니컬</strong></td>
+      <td><strong>199,000원</strong></td>
+      <td>278g</td>
+      <td><strong>와이드 정식 ✅</strong></td>
+      <td><strong>북한산·도봉산 정답</strong></td>
+    </tr>
+    <tr>
+      <td>Adidas Speed Ultra 2</td>
+      <td>속도형</td>
+      <td>279,000원</td>
+      <td>265g</td>
+      <td>좁음 ⚠️</td>
+      <td>스카이레이스 임도 한정</td>
+    </tr>
+    <tr>
+      <td>ASICS Gel Venture 10</td>
+      <td>가성비</td>
+      <td>89,000원</td>
+      <td>322g</td>
+      <td>와이드 ✅</td>
+      <td>둘레길·입문 OK</td>
+    </tr>
+    <tr>
+      <td><strong>HOKA Speedgoat 6</strong></td>
+      <td><strong>만능·그립</strong></td>
+      <td><strong>205,000원</strong></td>
+      <td>278g</td>
+      <td><strong>와이드 ✅</strong></td>
+      <td><strong>북한산~둘레길 만능</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>트레일 러닝화 핵심 스펙 5가지 — 알고 사면 후회 없다</h2>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">로드 러닝화에 없는 5가지 기능</p>
+    <p>일반 러닝화 가이드에서 보던 "쿠션·반발력·드롭" 외에 트레일에서만 필요한 5가지를 알아두면 구매 결정이 훨씬 명확해집니다.</p>
+  </div>
+</div>
+
+<h3>1. Lug Depth (러그 깊이, mm)</h3>
+<p>아웃솔 돌기의 깊이로 지형 파고들기 능력을 결정합니다. <strong>2-3mm는 완만한 임도·자갈길</strong>, <strong>4-5mm 이상은 진흙·급경사 기술 지형</strong>에 적합. 북한산·도봉산 암릉에서는 러그 깊이보다 <strong>고무 재질(Vibram Megagrip·Continental)</strong>이 더 중요합니다.</p>
+
+<h3>2. Rock Plate (록 플레이트)</h3>
+<p>미드솔 내부에 삽입된 딱딱한 플레이트(나일론·탄소섬유)로 돌·바위 밟을 때 발바닥을 보호합니다. 카본 플레이트와 다른 개념으로, <strong>록 플레이트는 추진력이 아닌 바닥 보호가 목적</strong>. 한국 화강암 지형에서는 록 플레이트 유무가 발바닥 피로도에 직접 영향을 줍니다.</p>
+
+<h3>3. Gusseted Tongue (구쎄드 텅)</h3>
+<p>신발 혀(텅)와 어퍼 측면이 분리되지 않고 봉제된 구조로, <strong>모래·자갈·나뭇잎 등 이물질이 신발 내부로 유입되는 것을 차단</strong>. 트레일에서 게이터(스패츠) 착용이 번거로운 러너에게 중요합니다.</p>
+
+<h3>4. Gaiter Compatibility (게이터 호환성)</h3>
+<p>발목 스패츠를 신발에 부착할 수 있는 후크·루프 구조의 유무. 장거리 울트라 트레일에서 이물질 유입 방지에 필수. <strong>HOKA Tecton X 3처럼 전용 게이터 어태치먼트를 제공하는 모델</strong>이 편의성이 높습니다.</p>
+
+<h3>5. Drainage (배수 구조)</h3>
+<p>물이 신발 내부로 들어왔을 때 빠져나가는 구멍·메시 구조. 계곡 도하나 장마철 트레일에서 중요. <strong>방수(GTX) 모델은 배수가 불리</strong>해 물이 들어오면 빠지지 않으므로, 한국 여름 트레일에서는 <strong>비방수+고배수</strong>가 실용적인 경우가 많습니다.</p>
+
+<h2>상황별 추천 — 어떤 신발을 사야 하나</h2>
+
+<table>
+  <thead>
+    <tr><th>당신의 상황</th><th>추천 모델</th><th>이유</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>처음 트레일 경험 (대모산·청계산·둘레길)</td>
+      <td>ASICS Gel Venture 10 (89,000원)</td>
+      <td>가성비 + 와이드 옵션, 진입 장벽 최저</td>
+    </tr>
+    <tr>
+      <td>북한산·도봉산 암릉 도전</td>
+      <td>Merrell Agility Peak 6 (199,000원)</td>
+      <td>Vibram Megagrip + 와이드 정식</td>
+    </tr>
+    <tr>
+      <td>발볼 넓은 한국 러너 + 임도 위주</td>
+      <td>Nike Ultrafly (299,000원)</td>
+      <td>토박스 76.7mm + ZoomX 카본</td>
+    </tr>
+    <tr>
+      <td>굿러너 스카이레이스 PB 도전 (좁은 발폭)</td>
+      <td>HOKA Tecton X 3 (339,000원)</td>
+      <td>PEBA 100% + 카본, 임도 반발력 최상</td>
+    </tr>
+    <tr>
+      <td>50K+ 울트라 트레일</td>
+      <td>ASICS Metafuji Trail (279,000원)</td>
+      <td>45mm 힐 스택, 충격 흡수 최상</td>
+    </tr>
+    <tr>
+      <td>완만 트레일 스피드 훈련 (좁은 발폭)</td>
+      <td>Adidas Speed Ultra 2 (279,000원)</td>
+      <td>0드롭 + 70.5% 에너지 리턴</td>
+    </tr>
+    <tr>
+      <td>한 켤레로 다 해보고 싶다</td>
+      <td>Adidas Terrex Agravic 4 (한국 입점 시)</td>
+      <td>Continental + 260g 올라운더</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">한 켤레로 시작하면 어떤 게 정답?</p>
+    <p>한국 러너 90%에게 정답은 <strong>Merrell Agility Peak 6 (199,000원, 와이드 옵션)</strong>입니다. 이유: ① 북한산·도봉산 암릉부터 둘레길까지 모든 한국 트레일을 커버하는 Vibram Megagrip, ② 발볼 넓은 한국 러너에게 사실상 유일한 와이드 SKU 정식 출시, ③ 199,000원으로 도전화·메인화 양쪽 포지셔닝 모두 가능. 카본 플레이트 트레일화는 본격 레이스에 들어선 다음 단계입니다.</p>
+  </div>
+</div>
+
+<h2>한국 트레일 입문 코스 가이드</h2>
+
+<table>
+  <thead>
+    <tr><th>입문 단계</th><th>추천 코스</th><th>적합 신발</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>1단계 — 둘레길</strong></td>
+      <td>북한산·관악산 둘레길, 한강 둔치 자갈길</td>
+      <td>젤 벤처 10 또는 일반 러닝화</td>
+    </tr>
+    <tr>
+      <td><strong>2단계 — 임도</strong></td>
+      <td>대모산·청계산 임도, 안산 자락길</td>
+      <td>젤 벤처 10, 어질리티 피크 6</td>
+    </tr>
+    <tr>
+      <td><strong>3단계 — 정식 트레일</strong></td>
+      <td>관악산 정상, 도봉산 우이암</td>
+      <td>어질리티 피크 6, 아그라빅 4</td>
+    </tr>
+    <tr>
+      <td><strong>4단계 — 테크니컬</strong></td>
+      <td>북한산 백운대, 인수봉 접근로</td>
+      <td>어질리티 피크 6 (Vibram 필수)</td>
+    </tr>
+    <tr>
+      <td><strong>5단계 — 스카이레이스</strong></td>
+      <td>굿러너 동해·계룡 스카이레이스</td>
+      <td>테크톤 X 3, 울트라플라이</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>로드 러닝화에서 트레일로 — 어떻게 갈아탈까</h2>
+
+<p>로드 러닝화로 1년 정도 달리고 트레일을 시작하려는 러너가 가장 자주 하는 실수가 두 가지입니다.</p>
+
+<ul>
+  <li><strong>실수 1: 카본 트레일화부터 산다</strong> — Tecton X 3, Ultrafly 같은 카본 트레일화는 본격 레이스용입니다. 입문 단계에서 사면 가격(30만원+)도 부담이고, 카본 플레이트가 입문 러너의 발목·종아리 부하를 키웁니다. <strong>입문은 99,000원 젤 벤처 10이나 199,000원 어질리티 피크 6부터.</strong></li>
+  <li><strong>실수 2: 발볼 좁은 신발을 사이즈 업으로 해결하려 한다</strong> — 메타후지 트레일·테크톤 X 3 같은 좁은 토박스 모델을 한 사이즈 키워도 발볼 압박은 해결되지 않습니다. 트레일은 하산 시 발이 앞으로 쏠려 발가락 까지는 부상이 흔한데, <strong>토박스 너비가 안 맞으면 그게 더 심해집니다</strong>. 와이드 SKU가 있는 모델로 가세요.</li>
+</ul>
+
+<p>로드 러닝과 다른 점도 미리 알아두면 좋습니다. <a href="/blog/running-shoe-terminology-guide">러닝화 용어 가이드</a>에서 다룬 미드솔·아웃솔 개념은 트레일에서도 동일하지만, 트레일 추가로 위에서 설명한 <strong>러그·록 플레이트·구쎄드 텅·게이터·배수 5가지</strong>를 추가로 보세요.</p>
+
+<h2>마무리 — 한국 러너의 트레일 첫걸음</h2>
+
+<p>2026년 트레일 러닝 시장은 어느 때보다 다양해졌습니다. 89,000원 입문화부터 339,000원 카본 슈퍼슈즈까지, 본인의 단계와 발 특성에 맞는 신발을 고르는 게 핵심입니다.</p>
+
+<p>한국 러너에게 가장 중요한 두 가지를 다시 짚으면:</p>
+
+<ul>
+  <li><strong>발볼 친화도</strong> — Merrell 어질리티 피크 6 / Nike 울트라플라이 / 젤 벤처 10이 와이드 친화 / 메타후지·테크톤 X 3·스피드 울트라는 좁음 주의</li>
+  <li><strong>한국 산악 그립</strong> — 북한산·도봉산 화강암에서는 Vibram Megagrip 또는 Continental 점착 고무 우선, 얕은 러그(2-3mm) 모델은 임도·완만 트레일 한정</li>
+</ul>
+
+<p>다음 단계는 본인의 발에 맞는 모델을 직접 신어보는 것. 로드 러닝화도 동일한 원칙이 적용되니 <a href="/recommend">맞춤 신발 추천</a>으로 본인 발볼·아치 타입을 확인해두면 트레일 신발 고를 때도 도움이 됩니다.</p>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://runrepeat.com" target="_blank" rel="noopener">RunRepeat 랩 테스트</a>(7개 모델 모두), <a href="https://believeintherun.com" target="_blank" rel="noopener">Believe in the Run</a>, Road Trail Run, 머렐 코리아·굿러너컴퍼니·KREAM·무신사·Nike Korea 한국 공식 가격, <a href="https://www.instagram.com/runninglife_korea/p/DXyJkIljzdd/" target="_blank" rel="noopener">@runninglife_korea TOP 7 가이드(2026-04-30)</a>. Adidas Terrex Agravic 4 한국 공식가는 SS26 출시 후 유통 확정 시점에 추가 확인 예정.
+</p>
+`,
+  },
+  {
+    id: '2026-daecheongho-marathon',
+    slug: '2026-daecheongho-marathon',
+    title: '2026 청원생명쌀 대청호마라톤 10km·5km D-4 | 풀·하프 매진, 기안84의 호수 코스 마지막 슬롯',
+    description: '제24회 청원생명쌀 대청호마라톤(10/17 토) 풀·하프 이미 매진. 10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시 순차 오픈됩니다. 대청호 호수 둘레 + 청남대 통과 코스, 누적 고도 485m 중상급 난이도. 기안84 효과로 작년 6,500명 역대 최대, 청원생명쌀 4kg 기념품 — 2026 가을 첫 메달의 정답.',
+    thumbnail: '/images/blog/2026-daecheongho-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['대청호마라톤', '청원생명쌀 대청호', '청주 마라톤', '충북 마라톤', '기안84 마라톤', '가을 마라톤', '호수 마라톤', '대회 일정'],
+    event: {
+      name: '제24회 청원생명쌀 대청호마라톤대회',
+      startDate: '2026-10-17T08:40:00+09:00',
+      location: {
+        name: '문의체육공원 (대청호반 일원)',
+        address: '충북 청주시 상당구 문의면 미천리 138-1',
+      },
+      organizer: '청주시체육회 (주관: MBC충북·K-water 대청지사)',
+      url: 'https://race.cjsports.or.kr/',
+      offers: [
+        { name: '단축코스 (10km, 5/11 10:00 오픈)', priceKrw: 45000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
+        { name: '건강코스 (5km, 5/14 10:00 오픈)', priceKrw: 25000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '풀코스랑 하프는 정말 매진된 건가요?',
+        answer: '5월 4일에 풀코스(800명), 5월 7일에 하프코스(1,400명) 접수가 순차 오픈됐고 인스타 @runninglife_korea 게시물 기준 "전코스 매진"으로 안내됐습니다. 정확한 잔여 여부는 race.cjsports.or.kr에서 확인하거나 대회 사무국(043-279-8029)에 문의하세요. 매진이 확정이라면 10km(5/11 오픈)·5km(5/14 오픈)가 2026 가을 대청호 메달의 마지막 기회입니다.',
+      },
+      {
+        question: '10km·5km도 어렵다는 게 사실인가요?',
+        answer: '대청호마라톤 풀코스는 누적 획득고도 485m로 전국 마라톤 중 두 번째로 어려운 수준이지만, 10km·5km는 코스 일부만 사용하므로 누적 고도가 훨씬 낮습니다. 다만 호수 둘레 도로의 특성상 완전 평지는 아니며 짧은 오르막이 포함됩니다. 5km는 입문자도 무난, 10km는 평지 10km PB 대비 5-10분 정도 늦어진다고 보면 됩니다.',
+      },
+      {
+        question: '기안84가 정말 참가하나요?',
+        answer: 'MBC \'나 혼자 산다\'에서 2023년 대청호마라톤 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 대회의 전국 인지도가 급상승했습니다. 2026년 공식 홍보대사 임명 여부는 공식 공지로는 확인되지 않지만, 인스타그램 홍보에 그의 이름이 등장합니다. 기안84의 출연 여부와 별개로 \'나 혼자 산다 코스\'라는 정체성으로 자리 잡은 대회입니다.',
+      },
+      {
+        question: '서울에서 대청호까지 어떻게 가나요?',
+        answer: 'KTX 오송역(서울역에서 약 50분)에서 청주 시내로 환승 후 차량으로 약 30분, 또는 청주 도착 후 택시로 문의면까지 20-30분이 가장 빠릅니다. 자가용은 남청주IC 또는 신탄진IC에서 진입해 호반 주차장·문의중학교 임시주차장을 이용할 수 있지만, 대회 당일 8시-14시 일부 도로 통제가 있어 새벽 도착 또는 전날 청주 시내 숙박이 안전합니다. 셔틀버스 운영 여부는 대회 1개월 전 공지로 확인.',
+      },
+      {
+        question: '10km·5km에 어떤 신발을 신어야 하나요?',
+        answer: '대청호 둘레 아스팔트·포장 수변도로 + 짧은 오르막이 섞인 환경에서는 데일리 트레이너가 정답입니다. 10km는 페가수스 42·1080 v15·GT-2000 14처럼 쿠션과 안정성이 균형 잡힌 모델, 5km는 노바블라스트 5·페가수스 플러스 같은 경량 슈퍼 트레이너도 OK. 카본 레이싱화는 짧은 거리·평지가 아니라 호수 굴곡 코스에서는 효과 대비 부담이 큽니다. 발볼 넓다면 와이드 옵션이 정식 출시된 모델 우선.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>제24회 청원생명쌀 대청호마라톤 — 2026년 10월 17일(토) 충북 청주 문의체육공원 출발, 대청호 호수 둘레 + <strong>청남대 통과</strong> 코스</li>
+    <li>풀(5/4 오픈)·하프(5/7 오픈) 이미 매진 → <strong>10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시</strong> 순차 오픈, 마감일 6월 12일</li>
+    <li>기안84 \'나 혼자 산다\' 효과로 작년 <strong>역대 최대 6,500명</strong> 참가, 청원생명쌀 4kg + 완주 메달 + 비빔밥·떡 현장 제공</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">10km·5km D-4 / D-7 — 2026 가을 첫 메달 마지막 기회</p>
+    <p>풀코스(800명)와 하프코스(1,400명)는 5월 4일·5월 7일 오픈과 함께 빠르게 매진됐습니다. 남은 슬롯은 단축코스(10km, 2,000명) <strong>5월 11일(월) 오전 10시</strong>와 건강코스(5km, 1,800명) <strong>5월 14일(목) 오전 10시</strong>입니다. 기안84 효과로 인기가 매년 급상승 중이라 10km는 빠르게 마감될 가능성이 높습니다. 알람 설정해두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/17 (토)</span>
+    <span class="stat-sub">8:40 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10km 오픈</span>
+    <span class="stat-value">5/11 (월)</span>
+    <span class="stat-sub">오전 10:00</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">5km 오픈</span>
+    <span class="stat-value">5/14 (목)</span>
+    <span class="stat-sub">오전 10:00</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">6/12 (금)</span>
+    <span class="stat-sub">또는 정원 마감 시</span>
+  </div>
+</div>
+
+<h2>접수 일정 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.04 (월) — 완료</span>
+    <span class="timeline-title">풀코스 800명 매진</span>
+    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 5시간</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.07 (목) — 완료</span>
+    <span class="timeline-title">하프코스 1,400명 매진</span>
+    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 3시간</p>
+  </div>
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.11 (월) — D-4</span>
+    <span class="timeline-title">단축코스 10km 오픈 (잔여 슬롯)</span>
+    <p class="timeline-desc">정원 2,000명, 참가비 45,000원(학생 30,000원), 제한시간 2시간</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.14 (목) — D-7</span>
+    <span class="timeline-title">건강코스 5km 오픈 (잔여 슬롯)</span>
+    <p class="timeline-desc">정원 1,800명, 참가비 25,000원(학생 15,000원)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.12 (금)</span>
+    <span class="timeline-title">전체 접수 최종 마감</span>
+    <p class="timeline-desc">또는 정원 채워짐 시 조기 마감. 접수 후 7일 내 입금 필수</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.17 (토)</span>
+    <span class="timeline-title">대회 당일 — 문의체육공원 7:30 집결</span>
+    <p class="timeline-desc">10월 중순 충북 평균 15-20도, 호수 단풍 절정</p>
+  </div>
+</div>
+
+<h2>종목별 참가비·정원·매진 현황</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>정원</th><th>참가비 (일반/학생)</th><th>제한시간</th><th>현황</th></tr>
+  </thead>
+  <tbody>
+    <tr style="opacity:0.5;">
+      <td>풀코스</td>
+      <td>42.195km</td>
+      <td>800명</td>
+      <td>45,000 / 30,000원</td>
+      <td>5시간</td>
+      <td><span class="badge-warning">매진</span></td>
+    </tr>
+    <tr style="opacity:0.5;">
+      <td>하프코스</td>
+      <td>21.0975km</td>
+      <td>1,400명</td>
+      <td>45,000 / 30,000원</td>
+      <td>3시간</td>
+      <td><span class="badge-warning">매진</span></td>
+    </tr>
+    <tr>
+      <td><strong>단축코스</strong></td>
+      <td><strong>10km</strong></td>
+      <td><strong>2,000명</strong></td>
+      <td><strong>45,000 / 30,000원</strong></td>
+      <td>2시간</td>
+      <td><span class="badge-positive">5/11 오픈</span></td>
+    </tr>
+    <tr>
+      <td><strong>건강코스</strong></td>
+      <td><strong>5km</strong></td>
+      <td><strong>1,800명</strong></td>
+      <td><strong>25,000 / 15,000원</strong></td>
+      <td>—</td>
+      <td><span class="badge-positive">5/14 오픈</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">10km도 45,000원? — 청원생명쌀 4kg 포함</p>
+    <p>10km 참가비가 풀·하프와 동일한 45,000원으로 다소 비싸 보일 수 있는데, <strong>완주자 전원에게 청원생명쌀 4kg + 대회 티셔츠 + 완주 메달</strong>이 제공됩니다. 시중 청원생명쌀 4kg 시세(약 25,000원) + 기념품 가치를 고려하면 사실상 가성비 가을 마라톤 중 최상위입니다. 5km는 25,000원으로 입문자·가족 단위 적합.</p>
+  </div>
+</div>
+
+<h2>왜 대청호인가 — 호수 + 청남대 + 기안84</h2>
+
+<p>대청호마라톤은 대청호 호수 둘레와 <strong>청남대(전직 대통령 전용 별장)</strong>를 통과하는 풍경 코스로 유명합니다. 충북 청주시 문의면 일대에서 열리며, 시간대(8:40 출발) 기준 호반 안개와 가을 단풍이 절정에 이르는 구간을 지납니다.</p>
+
+<p>2023년 MBC \'나 혼자 산다\'에서 기안84가 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 인지도가 폭발적으로 증가했습니다. 2024년 5천 명대 → 2025년 6,500명(역대 최대) → 2026년 풀·하프 조기 매진으로 이어지는 흐름입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>특징</th><th>대청호마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>코스 풍경</strong></td><td>대청호 수면, 청남대, 코스모스 꽃길, 가을 단풍</td></tr>
+    <tr><td><strong>풀코스 난이도</strong></td><td>누적 고도 485m — 전국 두 번째 수준 (안동 700m보다는 낮지만 평지 대회 대비 2배)</td></tr>
+    <tr><td><strong>10km·5km 난이도</strong></td><td>풀·하프 코스 일부 사용으로 짧은 오르막 포함, 입문자 도전 가능</td></tr>
+    <tr><td><strong>기념품</strong></td><td>청원생명쌀 4kg(10km 이상) + 티셔츠 + 완주 메달</td></tr>
+    <tr><td><strong>현장 먹거리</strong></td><td>청원생명쌀 비빔밥, 생명쌀떡, 김밥</td></tr>
+    <tr><td><strong>매년 개최 시기</strong></td><td>10월 셋째 주 토요일 (가을 단풍 절정)</td></tr>
+  </tbody>
+</table>
+
+<h2>10km·5km 코스 미리 보기</h2>
+
+<p>풀코스가 누적 고도 485m로 난도가 높은 반면, <strong>10km·5km는 호수 둘레 진입부와 회귀 구간 위주</strong>로 운영됩니다. 풀코스의 격렬한 업힐 구간(전반 17km)은 포함되지 않지만, 호반 도로 특성상 완전 평지는 아닙니다.</p>
+
+<ul>
+  <li><strong>5km</strong> — 문의체육공원 출발·복귀 호반 짧은 루프. 입문자도 안전하게 완주 가능. 호수 풍경 충분.</li>
+  <li><strong>10km</strong> — 호반 둘레 일부 + 청남대 진입로 인접 구간. 짧은 오르막 1-2회 포함. 평지 10km PB 대비 5-10분 늦어진다고 보면 적정.</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">10월 17일 충북 날씨</p>
+    <p>10월 중순 충북 평균 기온 15-20도, 대청호 인근은 새벽 안개가 자주 끼지만 대회 시간(8:40 출발)에는 해소됩니다. 출발 시 13-16도, 종료 시 18-21도 정도로 가을 마라톤 황금 조건입니다. 호수 풍경 + 가을 단풍 + 적정 기온 = 사진 찍기 좋은 환경.</p>
+  </div>
+</div>
+
+<h2>10월 대청호 — 어떤 신발을 신을까</h2>
+
+<p>호반 아스팔트·포장 수변도로 + 짧은 오르막 환경에서는 <strong>데일리 트레이너 또는 경량 슈퍼 트레이너</strong>가 정답입니다. 종목별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>10km (적정 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
+    </tr>
+    <tr>
+      <td><strong>10km (PB 도전)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>5km (가족 단위)</strong></td>
+      <td>일반 데일리</td>
+      <td><a href="/shoes/asics-novablast-5">노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
+    </tr>
+    <tr>
+      <td><strong>입문 러너 (첫 메달)</strong></td>
+      <td>안정성+쿠션</td>
+      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발볼·아치·무게에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
+
+<h2>교통·숙박</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (권장)</strong></td>
+      <td>서울역 → 오송역(약 50분) → 청주 시내 환승 → 문의체육공원 차량 30분</td>
+      <td>약 1시간 50분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>동서울·강남 → 청주 시외터미널 → 택시 약 30분</td>
+      <td>약 2시간 30분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 남청주IC 또는 신탄진IC → 문의면</td>
+      <td>약 2시간</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚗</span>
+  <div class="callout-body">
+    <p class="callout-title">대회 당일 도로 통제 — 새벽 도착 또는 전날 숙박</p>
+    <p>대회 당일 오전 8시-오후 2시 일부 도로가 통제되며, 호반 주차장·문의중학교 임시주차장은 새벽에 빠르게 만차됩니다. 7시 30분 집결을 고려하면 <strong>전날 청주 시내 숙박</strong>이 안전합니다. 청주 시내 호텔 + 대회 후 청남대 관광 + 청주 한옥마을 1박 2일 일정도 추천. 셔틀버스 운영 여부는 9월 중순 race.cjsports.or.kr 공지로 확인.</p>
+  </div>
+</div>
+
+<h2>2025년 대회 후기</h2>
+
+<p>2025년 제23회 대청호마라톤은 <strong>역대 최대 6,500명</strong>이 참가하며 성황리에 마무리됐습니다. 후기 공통점:</p>
+
+<ul>
+  <li>"호수 풍경 + 가을 단풍 풍경 = 사진 천국, 완주 만족도 매우 높음"</li>
+  <li>"풀코스 오르막 구간 난도 높지만 도전 욕구 자극"</li>
+  <li>"청원생명쌀 4kg + 비빔밥 + 떡 = 가성비 마라톤 최상위"</li>
+  <li>"10km라도 호반 짧은 오르막 있어 평지 10km보다 약간 어려움"</li>
+  <li>"기안84 효과로 가족 단위 참가자 다수, 분위기 친근"</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>10km(5/11)·5km(5/14) 오전 10시 알람 + 준비</h3>
+  <ul>
+    <li>✅ <strong>스마트폰 알람</strong> — 5월 11일 09:55 (10km), 5월 14일 09:55 (5km)</li>
+    <li>✅ <strong>회원가입 미리</strong> — race.cjsports.or.kr 사전 가입으로 접수 시 시간 단축</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 10km(45K) / 5km(25K), 학생 할인 확인</li>
+    <li>✅ <strong>입금 일정</strong> — 접수 완료 후 <strong>7일 이내 입금</strong> 필수</li>
+    <li>✅ <strong>전날 청주 숙박 예약</strong> — 가을 단풍 시즌이라 빠른 마감 주의</li>
+    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">race.cjsports.or.kr</a> (사무국 043-279-8029)</li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">청원생명쌀 대청호마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DYBzCxejySN/" target="_blank" rel="noopener">@runninglife_korea 게시물</a>, <a href="https://www.ngonews.kr/news/articleView.html?idxno=216337" target="_blank" rel="noopener">2025 대회 6,500명 성료 보도</a>, runningwikii. 풀·하프 매진 여부는 인스타 게시물 기반이며, 실시간 확정 매진 여부는 race.cjsports.or.kr에서 확인하세요.
+</p>
+`,
+  },
+  {
+    id: '2026-andong-marathon',
+    slug: '2026-andong-marathon',
+    title: '2026 안동마라톤 접수 시작 D+1 | 10월 4일 획득고도 700m+ 국내 최상급 난코스, 작년 며칠 만에 조기 마감',
+    description: '2026 안동마라톤 접수가 5월 6일(수) 시작됐습니다. 10월 4일(일) 안동시민운동장 출발, 풀·하프·10K·5K 4종목 선착순 1만 명. 획득고도 700m+ 국내 최고 난도 코스, 2026년 신코스 도입(안동호+안포선 고개), 풀 우승자에게 해외 마라톤 참가권 — 작년 며칠 만에 마감된 핫한 가을 도전 마라톤.',
+    thumbnail: '/images/blog/2026-andong-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['안동마라톤', '안동 마라톤', '경상북도 마라톤', '난코스 마라톤', '가을 마라톤', '도전형 마라톤', '하회마을', '대회 일정'],
+    event: {
+      name: '2026 안동마라톤대회',
+      startDate: '2026-10-04T08:00:00+09:00',
+      location: {
+        name: '안동시민운동장',
+        address: '경상북도 안동시 정하동 417-1',
+      },
+      organizer: '안동시·매일신문사 (대행: ㈜파란상상)',
+      url: 'https://admarathon.kr/andong/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '하프 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '10K', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+        { name: '5K', priceKrw: 30000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '안동마라톤이 정말 그렇게 어려운가요?',
+        answer: '국내 풀코스 마라톤 중 손꼽히는 난도입니다. 러너 커뮤니티에서 "획득고도 700m+"로 알려져 있고, 12km 이후부터 본격 업다운, 38km 이후 업힐 반복으로 마지막 4km가 가장 힘듭니다. 평지 마라톤(공주백제·서울)에서 sub-3:30이 가능한 러너도 안동에서는 30~40분 늦게 들어옵니다. 평지 PB 도전이 목표라면 안동은 비추천이고, "도전 자체가 목적"이라면 안동만 한 코스가 없습니다.',
+      },
+      {
+        question: '작년에 며칠 만에 마감됐다는 게 사실인가요?',
+        answer: '2025년 안동마라톤은 1만 명 정원이 접수 개시 며칠 만에 조기 마감됐습니다. 2024년 5천 명에서 2배로 늘어난 정원이 그대로 채워졌습니다. 2026년은 신코스 도입으로 관심도가 더 높아졌으니, 풀코스 도전을 마음먹었다면 5월 중에는 결제 완료를 권장합니다.',
+      },
+      {
+        question: '서울에서 안동까지 어떻게 가나요?',
+        answer: 'KTX-이음으로 청량리역·서울역에서 안동역까지 약 2시간~2시간 40분(하행 1일 4회 운행)이 가장 빠릅니다. 안동역에서 안동시민운동장까지는 차량 10분 내외(시내버스 순환2번)입니다. 대회 당일 새벽 첫차로 당일치기도 가능하지만, 7시 집결·8시 출발 시간을 고려하면 전날 안동 시내 숙박이 안전합니다. 동서울터미널 → 안동버스터미널은 약 3시간 소요되며 KTX보다 저렴합니다.',
+      },
+      {
+        question: '풀코스 우승자에게 해외 참가권을 준다는 게 사실인가요?',
+        answer: '2025년 대회 기준 풀·하프 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권 특전이 제공됐습니다. 2026년에도 유사한 특전이 예상되며 정확한 내용은 admarathon.kr/andong/ 공식 공지를 확인하세요. 일반 러너에게도 안동 탈춤페스티벌(10월 초 동시 개최) 연계 혜택과 안동찜닭·간고등어 등 지역 음식 부스가 매력입니다.',
+      },
+      {
+        question: '난코스인 안동에 어떤 신발이 좋은가요?',
+        answer: '획득고도 700m+ 구릉형 도로 코스라 평지용 카본 레이싱화는 부적합합니다. 가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. 추천: ① 풀코스 도전 → 안정성 + 쿠션의 "슈퍼 트레이너" (ASICS 카야노 32, 브룩스 글리세린 22). ② 하프·10K → 데일리 트레이너 (페가수스 42, 1080 v15, GT-2000 14). ③ 5K → 경량 슈퍼 트레이너 (페가수스 플러스). 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 4일(일) 안동시민운동장 출발 — 풀·하프·10K·5K 4종목, 선착순 <strong>1만 명</strong></li>
+    <li>접수 <strong>5월 6일(수) 시작</strong>(어제 오픈) — 작년 며칠 만에 마감됐으니 풀코스 도전이라면 5월 안에 결제 권장</li>
+    <li>국내 최상급 난코스 — <strong>획득고도 700m+</strong>, 12km 이후 업다운 + 38km 이후 업힐 반복. 평지 PB가 아닌 "도전형 풀코스"의 정답</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">🔥</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 시작 D+1 — 작년 며칠 만에 조기 마감</p>
+    <p>2025년 안동마라톤은 정원 1만 명이 접수 개시 며칠 만에 채워져 조기 마감됐습니다. 2024년 5천 명 → 2025년 1만 명으로 정원이 2배 증가했음에도 입장권이 빠르게 동났고, 2026년은 신코스 도입(안동호 + 안포선 고개) 발표로 관심도가 더 높아졌습니다. 풀코스 도전을 마음먹었다면 5월 안에 결제를 마쳐두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/4 (일)</span>
+    <span class="stat-sub">8:00 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 시작</span>
+    <span class="stat-value">5/6 (수)~</span>
+    <span class="stat-sub">선착순 1만 명</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">획득고도</span>
+    <span class="stat-value">700m+</span>
+    <span class="stat-sub">국내 최상급</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀코스</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">제한시간 5시간</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.06 (수) — D+1</span>
+    <span class="timeline-title">접수 시작 — 어제 오픈</span>
+    <p class="timeline-desc">admarathon.kr/andong/ 에서 4종목 모두 일반 선착순 신청. 정원 1만 명</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.31 (일) (예상)</span>
+    <span class="timeline-title">접수 마감 또는 정원 도달 시</span>
+    <p class="timeline-desc">선착순 1만 명 채워지면 조기 마감 — 작년 며칠 만에 마감됐던 전례</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 중후반</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품, 셔틀버스 운영 여부, 코스 통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.04 (일)</span>
+    <span class="timeline-title">대회 당일 — 안동시민운동장 7시 집결</span>
+    <p class="timeline-desc">10월 초 안동 평균 18-22도, 일교차 큼. 강수 가능성 (작년 강우)</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>참가비</th><th>제한시간 (2025 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>5시간</td></tr>
+    <tr><td>하프</td><td>21.0975km</td><td>50,000원</td><td>2시간 30분</td></tr>
+    <tr><td>10K</td><td>10km</td><td>50,000원</td><td>1시간 30분</td></tr>
+    <tr><td>5K</td><td>5km</td><td>30,000원</td><td>1시간</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">풀·하프 남녀 1위 — 해외 마라톤 참가권 특전</p>
+    <p>2025년 대회 기준 풀코스·하프코스 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권이 제공됐습니다. 2026년 특전 내역은 5월 중후반 admarathon.kr 공지에서 확인 가능합니다. 일반 러너에게도 <strong>안동 탈춤페스티벌(10월 초 동시 개최)</strong>과 안동찜닭·간고등어 부스가 매력입니다.</p>
+  </div>
+</div>
+
+<h2>왜 안동이 "지옥 코스"라 불리는가</h2>
+
+<p>안동마라톤은 러너 커뮤니티에서 <strong>국내 풀코스 중 가장 어려운 코스 중 하나</strong>로 통합니다. 평지 마라톤(공주백제·서울)과는 완전히 다른 카테고리입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특성</th><th>실전 대응</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>0-12km</strong></td>
+      <td>안동시민운동장 출발 → 용정교 → 시내 통과, 평지 위주</td>
+      <td>페이스 욕심 금지, 본 게임은 12km 이후</td>
+    </tr>
+    <tr>
+      <td><strong>12-25km</strong></td>
+      <td>문화관광단지·안동댐 인근, 본격 업다운 시작</td>
+      <td>오르막 짧게·내리막 가볍게, 심박 80% 이하 유지</td>
+    </tr>
+    <tr>
+      <td><strong>25-38km</strong></td>
+      <td>낙동강변 강변로 + 안동호 일부 구간</td>
+      <td>강풍 주의, 보급 포인트 사이 거리 확인</td>
+    </tr>
+    <tr>
+      <td><strong>38-42km</strong></td>
+      <td>업힐 반복 — 마지막 4km가 가장 힘든 구간</td>
+      <td>젤·소금 알약 비축, 워킹 브레이크 허용</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">평지 PB 기록을 그대로 적용하지 마세요</p>
+    <p>평지 마라톤(공주백제·서울)에서 Sub-3:30이 가능한 러너도 안동에서는 보통 30~40분 늦게 들어옵니다. 페이싱 전략은 <strong>"평지 PB + 30분"</strong>을 기준으로 잡고, 첫 12km는 의도적으로 더 천천히 가세요. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>의 "구릉형 코스" 섹션 참고.</p>
+  </div>
+</div>
+
+<h2>2026년 신코스 — 안동호 + 안포선 고개</h2>
+
+<p>2026년 안동마라톤은 <strong>도심 교통통제 부담을 줄이고 자연친화 환경을 강화</strong>한 신코스를 도입했습니다 (2026-01-20 매일신문 보도). 핵심 변경:</p>
+
+<ul>
+  <li><strong>안동호 수변 코스 확장</strong> — 기존 "안동호 악코스" 구간 유지 + 추가 강변 통과</li>
+  <li><strong>안포선 고개 구간 신설</strong> — 마지막 4km 업힐의 마지막 보스 구간</li>
+  <li><strong>도심 통제 최소화</strong> — 시내 비통제 시간 확보로 시민 불편 감소</li>
+  <li><strong>상세 코스도 미공개</strong> — 5월 중후반 공식 발표 예상</li>
+</ul>
+
+<p>신코스로 작년보다 더 어려워질 가능성이 있으니, 풀코스 도전자는 <strong>구릉형 LSD(장거리 지속주) 훈련</strong>을 6-8월에 누적해두세요.</p>
+
+<h2>10월 안동 — 어떤 신발을 신을까</h2>
+
+<p>구릉형 도로 코스 + 10월 초 18-22도 환경에서는 <strong>평지 카본 레이싱화가 부적합</strong>합니다. 종목별 추천:</p>
+
+<table>
+  <thead>
+    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀코스 도전 (난코스 완주)</strong></td>
+      <td>안정성 + 쿠션 슈퍼 트레이너</td>
+      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a>, <a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프 (안전 페이스)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
+    </tr>
+    <tr>
+      <td><strong>10K (적정 페이스)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
+    </tr>
+    <tr>
+      <td><strong>5K (가벼운 도전)</strong></td>
+      <td>경량 데일리</td>
+      <td><a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">카본 플레이트 레이싱화 비추천</p>
+    <p>가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. <strong>안동에서 베이퍼플라이/아디오스 프로를 신었다가 경련으로 DNF</strong>하는 사례가 매년 보고됩니다. 도전형 코스에는 안정성·쿠션 모두 갖춘 슈퍼 트레이너가 정답입니다.</p>
+  </div>
+</div>
+
+<h2>교통·숙박</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX-이음 (권장)</strong></td>
+      <td>청량리역·서울역 → 안동역 (1일 4회) → 시민운동장 차로 10분</td>
+      <td>약 2시간 ~ 2시간 40분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>동서울터미널 → 안동버스터미널</td>
+      <td>약 3시간</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>중앙고속도로 → 서안동IC</td>
+      <td>약 3시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>대회 당일 7시 집결 → 8시 출발이라 새벽 KTX 첫차 도착으로는 빡빡합니다. <strong>전날 안동 시내 숙박</strong>이 안전합니다. 안동 구도심 한옥 게스트하우스나 안동찜닭 골목 인근 호텔이 인기인데, 10월 첫째 주는 <strong>탈춤페스티벌과 겹쳐</strong> 숙박 마감이 매우 빠르니 접수 확정 직후 예약하세요.</p>
+
+<h2>안동의 매력 — 마라톤 + 1박 2일 관광</h2>
+
+<p>안동은 한국 정신문화의 수도로 불리며, 대회 후 1박 2일로 머물기 좋은 도시입니다.</p>
+
+<ul>
+  <li><strong>하회마을 (유네스코 세계문화유산)</strong> — 풍산 류씨 종택, 600년 전통 마을</li>
+  <li><strong>도산서원</strong> — 퇴계 이황의 학문 공간, 사적 170호</li>
+  <li><strong>월영교</strong> — 한국 최장 목책교, 야경이 압권</li>
+  <li><strong>안동찜닭</strong> — 구시장 골목의 본고장, 대회 후 회복 식사</li>
+  <li><strong>간고등어</strong> — 안동 전통 소금 절임, 선물용 인기</li>
+  <li><strong>안동 탈춤페스티벌</strong> — 10월 초 동시 개최, 하회별신굿탈놀이</li>
+</ul>
+
+<h2>2025년 대회로 본 분위기</h2>
+
+<p>2025년 안동마라톤은 <strong>참가자 1만 명, 풀코스 우승 이건희(2:44:37) / 김은아(3:08:03)</strong>를 기록하며 역대 최고 흥행을 기록했습니다. 비가 내리는 악조건에서도 시민 응원이 성황을 이뤘고, "지옥 코스인데 또 오고 싶다"는 후기가 다수였습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">📊</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 비교 (2025 안동 vs 평지 대회)</p>
+    <p>안동 풀코스 우승자 2:44:37은 평지 대회(서울국제·공주백제) 동급 러너의 기록 대비 약 5-7분 늦은 수치입니다. 5천 명에서 1만 명으로 정원 2배 확장에도 며칠 만에 마감된 인기는 "고난도 코스 도전" 자체를 즐기는 마니아층 두께를 보여줍니다.</p>
+  </div>
+</div>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 안에 결제 끝내기 위한 준비</h3>
+  <ul>
+    <li>✅ <strong>참가 종목 결정</strong> — 풀(60K) / 하프(50K) / 10K(50K) / 5K(30K)</li>
+    <li>✅ <strong>본인 기록 확인</strong> — 풀코스 5시간 컷오프, 하프 2:30, 10K 1:30</li>
+    <li>✅ <strong>구릉형 LSD 훈련 일정</strong> — 6~8월에 30km LSD 4회 이상 누적</li>
+    <li>✅ <strong>전날 숙박 예약</strong> — 탈춤페스티벌 겹침, 결제 직후 즉시</li>
+    <li>✅ <strong>러닝화 결정</strong> — 안정성 + 쿠션 슈퍼 트레이너 (카본 비추천), <a href="/recommend">1분 추천</a> 활용</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">admarathon.kr/andong</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">안동마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DX-wut6j2up/" target="_blank" rel="noopener">@runninglife_korea 5월 캘린더</a>, 매일신문(2025·2026 보도), runningwikii(코스·제한시간), 러너 커뮤니티(획득고도 700m+ 추정). 2026년 공식 접수 마감일·신코스 상세도는 admarathon.kr 공지로 최종 확인하세요.
+</p>
+`,
+  },
+  {
+    id: '2026-gongju-baekje-marathon',
+    slug: '2026-gongju-baekje-marathon',
+    title: '2026 공주백제마라톤 우선접수 D-4 | 9월 20일 금강변 평지 풀코스, 동마클럽 멤버십 5/11 오픈',
+    description: '2026 공주백제마라톤 동마클럽 우선접수가 5월 11일(월) 시작됩니다. 9월 20일(일) 공주시민운동장 출발, 금강변 백제큰길 왕복 평지 코스. 풀·32K·하프·10K·5K 5종목, 유네스코 세계유산 공산성·무령왕릉 인근 통과. 본접수는 5월 21일 — 동마 가을 입문 풀코스 정답.',
+    thumbnail: '/images/blog/2026-gongju-baekje-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    category: 'news' as const,
+    readingTime: 7,
+    tags: ['공주백제마라톤', '공주백제 마라톤', '동마클럽', '동아마라톤', '가을 마라톤', '풀코스 입문', '금강 마라톤', '대회 일정'],
+    event: {
+      name: '2026 공주백제마라톤',
+      startDate: '2026-09-20T08:00:00+09:00',
+      location: {
+        name: '공주시민운동장',
+        address: '충청남도 공주시',
+      },
+      organizer: '동아일보 (동마클럽)',
+      url: 'https://dongma.club/',
+      offers: [
+        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '32K', priceKrw: 60000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '하프 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '10K', priceKrw: 40000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+        { name: '5K', priceKrw: 20000, availabilityEnds: '2026-05-21', url: 'https://dongma.club/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '우선접수랑 본접수가 뭐가 다른가요?',
+        answer: '우선접수(5월 11~15일)는 동아마라톤 멤버십(동마클럽) 가입자만 신청 가능하며, 본접수(5월 21일~ 선착순) 전에 자리를 먼저 확보할 수 있습니다. 멤버십은 연회비 15만원으로 공주백제·경주국제마라톤 참가권 + 2027 서울마라톤 우선신청권이 모두 포함되어, 1년에 동마 시리즈 3대회를 다 뛸 계획이라면 본접수 단발 결제보다 가성비가 좋습니다.',
+      },
+      {
+        question: '풀코스 첫 도전인데 공주백제 괜찮나요?',
+        answer: '동마 시리즈 중 가장 입문 친화적입니다. 금강변 백제큰길 왕복 평지 코스로 누적 고도가 매우 낮아 기록 단축에 유리하며, 풀코스 제한시간이 5시간으로 넉넉합니다. 9월 20일 충남 평균 기온 20-24도로 가을 풀코스 입문 적기입니다. 단, 9월 중순은 아직 따뜻할 수 있으니 초반 페이스 관리와 보급 전략이 중요합니다.',
+      },
+      {
+        question: '서울에서 공주까지 어떻게 가나요?',
+        answer: 'KTX(호남선) 서울역·용산역에서 공주역까지 약 1시간 15분, 공주역에서 대회장까지 차로 25분입니다. 자가용은 대회 당일 조기 만차 빈번하므로 비추천이며, 전날 공주 시내 숙박이 가장 안전합니다. 셔틀버스 운영 여부는 대회 2주 전 dongma.club 공지를 확인하세요.',
+      },
+      {
+        question: '32K 종목은 왜 있나요?',
+        answer: '풀코스(42.195km) 직전 단계의 LSD(장거리 지구력) 훈련 또는 가을 풀코스 시즌 막바지 컨디셔닝용으로 기획된 종목입니다. 동마 시리즈 특유의 옵션으로, "풀은 부담스럽지만 하프(21km)는 짧다"는 중간 러너에게 유용합니다. 참가비는 풀과 동일(60,000원, 멤버십 50,000원)입니다.',
+      },
+      {
+        question: '어떤 러닝화를 신어야 하나요?',
+        answer: '금강변 평지 아스팔트 + 9월 중순 20-25도 환경에 따라 두 갈래로 나뉩니다. ① 풀코스 PB 도전 → 카본 플레이트 레이싱화 (아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4 등). ② 입문·완주 목적 → 쿠션 데일리 트레이너 (아식스 GT-2000 14, 뉴발란스 1080 v15, 나이키 페가수스 42). 평지 코스라 안정화는 굳이 필요 없으며, 발볼 넓다면 와이드 옵션이 있는 모델 권장.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 9월 20일(일) 공주시민운동장 출발 — 금강변 백제큰길 왕복 평지 코스, 풀·32K·하프·10K·5K 5종목</li>
+    <li>우선접수 <strong>5월 11일(월) ~ 5월 15일(금)</strong> 동마클럽 멤버십 전용 → 본접수 <strong>5월 21일(목)</strong> 오픈 선착순 (정원 약 12,000명)</li>
+    <li>유네스코 세계문화유산 <strong>공산성·무령왕릉 인근 통과</strong>, 동마 시리즈 중 가장 입문 친화적 풀코스 — 가을 PB 도전 + 백제 고도 관광 동시 가능</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">우선접수 D-4 — 5월 11일(월) 오픈</p>
+    <p>동마클럽 멤버십(연회비 15만원) 가입자는 본접수 전인 <strong>5월 11일(월) ~ 5월 15일(금)</strong>에 우선 신청 가능합니다. 멤버십에는 공주백제·경주국제 참가권과 2027 서울마라톤 우선신청권이 포함돼 있어, 동마 가을 시리즈를 다 뛰려면 단발 결제보다 멤버십이 유리합니다. 본접수는 5월 21일(목) 오픈, 정원 약 12,000명 선착순으로 작년 풀코스는 조기 마감됐습니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">9/20 (일)</span>
+    <span class="stat-sub">2026 가을</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">풀코스 42.195km</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">제한시간 5시간</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">코스 특징</span>
+    <span class="stat-value">금강변 평지</span>
+    <span class="stat-sub">고도차 거의 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">우선접수</span>
+    <span class="stat-value">5/11 ~ 5/15</span>
+    <span class="stat-sub">멤버십 전용</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.11 (월) — D-4</span>
+    <span class="timeline-title">우선접수 시작 (멤버십 전용)</span>
+    <p class="timeline-desc">동마클럽 멤버십 가입자 대상 — 5일간 운영, 전 종목 신청 가능</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.15 (금)</span>
+    <span class="timeline-title">우선접수 마감</span>
+    <p class="timeline-desc">멤버십 자리 확보 마지막 기회</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.05.21 (목)</span>
+    <span class="timeline-title">본접수 오픈 (일반 선착순)</span>
+    <p class="timeline-desc">dongma.club에서 일반 신청 시작 — 풀·32K 종목은 빠르게 마감 예상</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 초중순</span>
+    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
+    <p class="timeline-desc">기념품 수령, 셔틀버스, 교통통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09.20 (일)</span>
+    <span class="timeline-title">대회 당일 — 공주시민운동장</span>
+    <p class="timeline-desc">금강변 백제큰길 왕복 코스, 충남 9월 평균 20-24도</p>
+  </div>
+</div>
+
+<h2>종목별 참가비 (2025년 기준 — 2026년 동일 추정)</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>거리</th><th>일반</th><th>멤버십</th><th>제한시간</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>50,000원</td><td>5시간</td></tr>
+    <tr><td>32K</td><td>32km</td><td>60,000원</td><td>50,000원</td><td>4시간</td></tr>
+    <tr><td>하프</td><td>21.0975km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
+    <tr><td>10K</td><td>10km</td><td>40,000원</td><td>30,000원</td><td>—</td></tr>
+    <tr><td>5K</td><td>5km</td><td>20,000원</td><td>10,000원</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">참가비는 2025년 기준 — 2026년 공식 발표 전</p>
+    <p>위 금액은 2025년 공주백제마라톤 기준으로, 2026년 정식 공지는 5월 11일 우선접수 오픈 시 dongma.club에 게시됩니다. 일반적으로 동마 시리즈는 전년 대비 변동 없거나 5,000~10,000원 인상이 있을 수 있습니다.</p>
+  </div>
+</div>
+
+<h2>왜 공주백제가 풀코스 입문에 좋은가</h2>
+
+<p>동마클럽이 운영하는 가을 시리즈 3개 대회(서울국제·공주백제·경주국제) 중 <strong>공주백제는 가장 입문자 친화적인 풀코스</strong>로 평가됩니다. 이유는 세 가지입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>특징</th><th>공주백제</th><th>일반 도시 마라톤</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>코스 고도</strong></td>
+      <td>금강변 평지, 누적 고도 거의 없음</td>
+      <td>도심 굴곡 있음 (서울국제 잠실 일대 약 50m)</td>
+    </tr>
+    <tr>
+      <td><strong>풀 제한시간</strong></td>
+      <td>5시간 (넉넉)</td>
+      <td>4-5시간 (대회 따라)</td>
+    </tr>
+    <tr>
+      <td><strong>참가 규모</strong></td>
+      <td>약 12,000명 (혼잡 적음)</td>
+      <td>30,000명+ (출발 정체)</td>
+    </tr>
+    <tr>
+      <td><strong>지역 매력</strong></td>
+      <td>유네스코 백제 고도, 가을 단풍</td>
+      <td>도심 풍경 중심</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>코스 매력 — 백제 1500년 위에서 달린다</h2>
+
+<p>공주는 <strong>475년 백제의 두 번째 수도(웅진)</strong>로, 무령왕릉을 품은 송산리 고분군과 공산성이 2015년 유네스코 세계문화유산으로 등재된 곳입니다. 코스는 공주시민운동장에서 출발해 금강변 백제큰길을 따라 왕복하며, 공산성 성벽과 무령왕릉 인근을 지나갑니다.</p>
+
+<ul>
+  <li><strong>금강 수변 풍경</strong> — 9월 중순 가을 초입의 단풍과 강변 풍경, 사진 찍기 좋은 구간 다수</li>
+  <li><strong>공산성 통과</strong> — 백제·고려·조선 3시대를 관통하는 토석성. 16km/26km 인근 지점에서 좌측 시야</li>
+  <li><strong>무령왕릉 인근</strong> — 백제 25대 왕 무령왕의 무덤. 코스 중간 보급 포인트와 가까움</li>
+  <li><strong>도심 통과 구간</strong> — 공주 시내 약 5km 구간 교통통제, 시민 응원 활발</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">기록 단축 도전자에게 좋은 이유</p>
+    <p>금강변 평지 코스는 강풍만 없으면 사실상 무굴곡입니다. 9월 20일 충남 평균 기온이 20-24도로 다소 따뜻한 편이지만, 출발 시간(보통 8시) 기준 18-20도로 시작해 풀코스 종료 시점까지 25도 안쪽이라 기록 도전 환경으로는 합격선입니다. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>을 미리 잡고 입장하세요.</p>
+  </div>
+</div>
+
+<h2>9월 공주 — 어떤 신발을 신을까</h2>
+
+<p>금강변 평지 + 20-25도 + 5시간 제한이라는 조건에서 신발 선택은 <strong>"기록 도전 vs 안전 완주"</strong> 두 갈래로 나뉩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>풀 PB 도전 (Sub-3:30~4:00)</strong></td>
+      <td>카본 플레이트 레이싱화</td>
+      <td>아디다스 아디오스 프로 4, 나이키 베이퍼플라이 4, ASICS 메타스피드 에지 파리</td>
+    </tr>
+    <tr>
+      <td><strong>완주 목표 입문 (4:30~5:00)</strong></td>
+      <td>쿠션 데일리 트레이너</td>
+      <td>ASICS GT-2000 14, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td>
+    </tr>
+    <tr>
+      <td><strong>32K 훈련용 LSD</strong></td>
+      <td>맥시멀 쿠션</td>
+      <td><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a></td>
+    </tr>
+    <tr>
+      <td><strong>하프·10K (가벼운 페이스)</strong></td>
+      <td>경량 슈퍼 트레이너</td>
+      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>발볼이 넓다면 와이드 옵션이 있는 모델을 우선하세요 (페가수스 42·1080 v15·GT-2000 14는 한국 와이드 SKU 정식 출시). <a href="/recommend">맞춤 신발 추천</a>에서 본인 발 특성에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
+
+<h2>교통·숙박 가이드</h2>
+
+<table>
+  <thead>
+    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>KTX (권장)</strong></td>
+      <td>서울역·용산역 → 공주역 (호남선) → 대회장 차로 25분</td>
+      <td>약 1시간 40분</td>
+    </tr>
+    <tr>
+      <td>고속버스</td>
+      <td>서울 경부터미널 → 공주종합버스터미널 → 택시 10분</td>
+      <td>약 1시간 40분</td>
+    </tr>
+    <tr>
+      <td>자가용</td>
+      <td>경부고속도로 → 천안논산고속도로 → 공주IC</td>
+      <td>약 2시간 (대회 당일 통제)</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">🚗</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용보다 KTX + 전날 숙박</p>
+    <p>대회 당일 공주시민운동장 인근 주차장은 새벽 6시 전 만차됩니다. KTX로 당일 오전 도착도 가능하지만, 풀코스 출발(8시 추정) 시간을 고려하면 <strong>전날 공주 시내 숙박</strong>이 가장 안전합니다. 공주 시내 호텔·게스트하우스는 대회 한 달 전부터 빠르게 마감되니 접수 확정 직후 예약하세요.</p>
+  </div>
+</div>
+
+<h2>2025년 대회로 본 분위기</h2>
+
+<p>2025년 공주백제마라톤은 <strong>참가자 약 1만 명</strong>이 모여 "공주의 가을을 달렸다"는 보도가 나왔습니다. 참가자 후기 공통점:</p>
+
+<ul>
+  <li>"평지 코스라 PB 욕심 안 부리고 안전하게 풀 완주" — 입문자 다수</li>
+  <li>"백제 사적 코스 + 가을 단풍, 관광 겸 마라톤으로 최고" — 가족 단위</li>
+  <li>"교통통제 구간이 짧아 보급 포인트 사이 거리가 좀 멀게 느껴짐" — 경험자 의견</li>
+  <li>"대회 후 공주 한옥마을·공산성 관광 일정으로 잡으면 1박 2일 일정 완성" — 지역 추천</li>
+</ul>
+
+<h2>접수 체크리스트</h2>
+
+<div class="cta-box">
+  <h3>5월 11일(월) 우선접수 전 준비할 것</h3>
+  <ul>
+    <li>✅ <strong>동마클럽 멤버십</strong> 가입 여부 확인 (연회비 15만원, 가을 3대회 + 2027 서울 우선권)</li>
+    <li>✅ <strong>참가 종목 결정</strong> — 풀(60,000원) / 32K(60,000원) / 하프(40,000원) / 10K(40,000원) / 5K(20,000원)</li>
+    <li>✅ <strong>본인 기록 확인</strong> (풀코스 5시간 컷오프 통과 가능 여부)</li>
+    <li>✅ <strong>전날 숙박 예약</strong> — 공주 시내 호텔·게스트하우스 (접수 확정 후 즉시)</li>
+    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
+    <li>📱 <strong>접수 사이트</strong>: <a href="https://dongma.club/" target="_blank" rel="noopener">dongma.club</a></li>
+  </ul>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://dongma.club/" target="_blank" rel="noopener">동마클럽 공식</a>, <a href="https://www.instagram.com/dongmaclub/p/DXyYzWVD0ut/" target="_blank" rel="noopener">@dongmaclub 5월 접수 캘린더</a>, runningwikii(2025년 참가비·정원 기준). 2026년 공식 참가비·셔틀·정원은 5월 11일 우선접수 오픈 시점 dongma.club 공지로 최종 확인하세요.
+</p>
+`,
+  },
+  {
+    id: 'nike-pegasus-42-review',
+    slug: 'nike-pegasus-42-review',
+    title: '나이키 페가수스 42 솔직 리뷰 | 41과 뭐가 달라졌나, 16만원 그 값을 할까',
+    description: '2026-04-09 출시한 나이키 페가수스 42를 RunRepeat 랩 실측·BITR(B티어)·RTR(8.79/10) + 한 달 한강 5-10km 사용기로 정리했습니다. 풀 렝스 Air Zoom의 진짜 효과, 공식 vs 실측 5mm 불일치, 한국 와이드 정식 출시 — 169,000원 입문 데일리 트레이너 가성비 최상위.',
+    thumbnail: '/images/blog/nike-pegasus-42-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-07',
+    updatedAt: '2026-07-03',
+    category: 'review' as const,
+    readingTime: 11,
+    tags: ['나이키 페가수스 42', '페가수스 42', '러닝화 리뷰', '입문 데일리 트레이너', '나이키 러닝화', '페가수스 41 비교', '풀 렝스 Air Zoom', '와이드 러닝화', '한국 발볼'],
+    faqs: [
+      {
+        question: '페가수스 41 신고 있는데 42로 바꿀 가치가 있나요?',
+        answer: '체감 차이는 "힐 착지가 부드러워졌다" 정도입니다. RunRepeat 실측 기준 힐 스택 +2.4mm(33.6→36mm), 힐 충격흡수 SA +6(125→131)으로 힐 쿠셔닝은 확실히 개선됐습니다. 그러나 나이키가 강조한 "에너지 리턴 +15%"는 실측 힐 +1.6%p / 전족부 0%p에 그쳐 마케팅 수준입니다. 41을 600km 안 신었다면 그냥 41을 굴리고, 41이 수명 다 됐고 발볼 4E급이라면 42 와이드(정식 출시)가 답입니다.',
+      },
+      {
+        question: '발볼 넓은데 페가수스 42 기본 사이즈로 괜찮나요?',
+        answer: 'RunRepeat 실측 기준 토박스 너비는 72.3mm로 41(72.9mm)과 거의 동일합니다. 나이키의 "토박스 확대" 마케팅과 달리 실측은 미세하게 좁아졌습니다. 발볼 4E급이라면 한국 나이키 공식몰에 정식 출시된 와이드 SKU(남성·여성 동일 169,000원)를 선택하세요. 41까지는 와이드를 찾기 어려웠던 게 진짜 불편이었는데, 42부터는 표준 가격으로 풀린 게 가장 큰 한국 러너 친화 변화입니다.',
+      },
+      {
+        question: '169,000원에 같은 가격대 노바블라스트 5나 클리프턴 10 중 뭘 골라야 하나요?',
+        answer: '용도별로 갈립니다. ① 무릎 보호·아스팔트 충격 완화 → 페가수스 42 (36mm 하이스택 + Air Zoom 안정감), ② 가벼운 반발감·통통 튀는 라이드 → 노바블라스트 5 (FF Blast Max 폼), ③ 맥시멀 쿠션 + 모자이드 락커 → 클리프턴 10. 한국 발볼 친화도는 페가수스 42(와이드 정식)가 가장 좋고, 가성비는 셋 다 비슷합니다. 데일리 입문 1켤레면 페가수스 42가 무난합니다.',
+      },
+      {
+        question: '페가수스 42로 하프마라톤 뛸 수 있나요?',
+        answer: '완주는 가능하지만 추천하지는 않습니다. BITR도 "6-13km 스윗스팟의 원 트릭 포니"로 평가했고, RTR도 "286g 무게 열세"를 단점으로 꼽았습니다. 21km 이후로는 무거운 무게 + 평범한 에너지 리턴(57%/61%)이 다리 피로로 직결됩니다. 하프 페이스 훈련이나 실전은 줌 플라이 6(카본+ZoomX)이나 페가수스 플러스(ZoomX 풀렝스)로 분리하는 게 정답입니다. 42는 데일리 5-13km 전용으로 쓰세요.',
+      },
+      {
+        question: '평발이고 무릎이 약한데 페가수스 42 괜찮나요?',
+        answer: '평발은 ReactX + Air Zoom 조합이 잘 받쳐줘서 좋은 선택입니다. 무릎 보호도 36mm 힐 스택(실측) + 충격흡수 SA 131로 41보다 확실히 개선됐습니다. 다만 안정화는 아니므로 과내전이 심하다면 카야노 32 같은 정식 안정화나 페가수스 42 + 교정 인솔 조합을 권장합니다. 한강 아스팔트 5-10km 데일리 훈련에서는 무릎 부담 없이 600km까지 안정적으로 쓸 수 있습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>풀 렝스 Air Zoom + 힐 스택 +2.4mm(실측)로 <strong>힐 쿠셔닝은 진짜 개선</strong>, 그러나 "에너지 리턴 +15%" 공식 주장은 실측 +1.6%p에 그치는 마케팅 수준</li>
+    <li>한국 나이키 공식몰에 <strong>와이드 옵션이 169,000원 정식 출시</strong> — 41까지 발볼 넓은 한국 러너의 가장 큰 불편이 해결됨</li>
+    <li>BITR B티어(Value A) / RTR 8.79/10 — <strong>"6-13km 입문 데일리 트레이너 가성비 최상위"</strong>, 하프 이상이나 페이스 훈련은 부적합</li>
+  </ul>
+</div>
+
+<figure class="my-8">
+  <img
+    src="/images/blog/nike-pegasus-42-review.webp"
+    alt="나이키 페가수스 42 솔직 리뷰 — 41과 비교, 풀 렝스 Air Zoom, 169,000원 가성비"
+    class="w-full rounded-2xl"
+    loading="lazy"
+  />
+  <figcaption class="text-sm text-gray-500 mt-2 text-center">페가수스 42 — 36mm 힐 스택 + 풀 렝스 Air Zoom + ReactX 폼</figcaption>
+</figure>
+
+<h2>한 줄 결론</h2>
+
+<div class="callout positive">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">"한강 5-10km 데일리, 발볼 넓고 무릎 보호 원하는 입문 러너의 16만원대 정답"</p>
+    <p>41 대비 힐 쿠셔닝과 와이드 SKU가 의미 있게 개선됐습니다. 단, 페이스 훈련이나 하프 이상에는 줌 플라이 6이나 페가수스 플러스를 따로 두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 스펙 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">한국 가격</span>
+    <span class="stat-value">169,000원</span>
+    <span class="stat-sub">와이드 동일 가격</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">무게 (실측)</span>
+    <span class="stat-value">286g</span>
+    <span class="stat-sub">US M9, 41 대비 +5g</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">힐 스택 (실측)</span>
+    <span class="stat-value">36mm</span>
+    <span class="stat-sub">41 대비 +2.4mm</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">출시일</span>
+    <span class="stat-value">2026.04.09</span>
+    <span class="stat-sub">한국 동시 출시</span>
+  </div>
+</div>
+
+<h2>페가수스 41 vs 42 — 무엇이 달라졌나</h2>
+
+<p>나이키는 페가수스 42 출시 발표에서 "풀 렝스 Air Zoom 유닛 + 에너지 리턴 +15%"를 핵심 변경점으로 밀었습니다. 하지만 RunRepeat가 2026-04-25 공개한 랩 실측 데이터를 보면 마케팅과 현실 사이에 꽤 큰 갭이 있습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 41 (실측)</th><th>페가수스 42 (실측)</th><th>변화</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>무게</strong></td>
+      <td>281g</td>
+      <td>286g</td>
+      <td><span class="badge-warning">+5g</span></td>
+    </tr>
+    <tr>
+      <td><strong>힐 스택</strong></td>
+      <td>33.6mm</td>
+      <td>36.0mm</td>
+      <td><span class="badge-positive">+2.4mm</span></td>
+    </tr>
+    <tr>
+      <td><strong>전족부 스택</strong></td>
+      <td>22.2mm</td>
+      <td>22.0mm</td>
+      <td><span class="badge-neutral">±0</span></td>
+    </tr>
+    <tr>
+      <td><strong>드롭 (실측)</strong></td>
+      <td>11.4mm</td>
+      <td>14.0mm</td>
+      <td><span class="badge-warning">+2.6mm</span></td>
+    </tr>
+    <tr>
+      <td><strong>힐 충격흡수 SA</strong></td>
+      <td>125</td>
+      <td>131</td>
+      <td><span class="badge-positive">+6 (부드러움)</span></td>
+    </tr>
+    <tr>
+      <td><strong>힐 에너지 리턴</strong></td>
+      <td>55.5%</td>
+      <td>57.1%</td>
+      <td><span class="badge-positive">+1.6%p</span></td>
+    </tr>
+    <tr>
+      <td><strong>전족부 에너지 리턴</strong></td>
+      <td>61.4%</td>
+      <td>61.2%</td>
+      <td><span class="badge-neutral">±0</span></td>
+    </tr>
+    <tr>
+      <td><strong>토박스 너비</strong></td>
+      <td>72.9mm</td>
+      <td>72.3mm</td>
+      <td><span class="badge-neutral">±0 (실측)</span></td>
+    </tr>
+    <tr>
+      <td><strong>한국 와이드 SKU</strong></td>
+      <td>제한적</td>
+      <td>정식 출시</td>
+      <td><span class="badge-positive">한국 러너 진짜 개선</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">공식 스펙 vs RunRepeat 실측 — 5mm 불일치</p>
+    <p>나이키 공식 스펙은 <strong>전족부 27mm / 드롭 10mm</strong>이지만 RunRepeat 실측은 <strong>22.0mm / 14.0mm</strong>입니다. 5mm 차이는 단순 측정 오차 수준이 아니며, 41(실측 22.2mm)에서도 동일한 패턴이라 나이키의 스택 표기 방식이 실제 폼 두께가 아닌 다른 기준일 가능성이 큽니다. 구매 결정에서는 <strong>드롭이 14mm 가까운 하이드롭</strong>이라는 점을 인지하고, 미드풋·전족부 착지 러너는 다른 옵션을 고려하세요.</p>
+  </div>
+</div>
+
+<h2>풀 렝스 Air Zoom — 진짜 효과는?</h2>
+
+<p>41까지의 페가수스는 <strong>듀얼 포드 Air Zoom</strong>(힐 + 전족부에 따로 들어간 두 개의 에어백) 구조였습니다. 42는 이걸 <strong>곡선형 풀 렝스 Air Zoom 유닛</strong>(힐부터 전족부까지 이어지는 하나의 에어백)으로 바꿨습니다.</p>
+
+<p>실측 데이터로 본 효과:</p>
+
+<ul>
+  <li><strong>힐 착지 부드러움 ↑</strong> — SA 125→131(+6)로 힐 쿠셔닝 개선. 한강 아스팔트 5km 돌 때 41 대비 "쿵" 소리가 줄어든 게 체감됩니다.</li>
+  <li><strong>힐 에너지 리턴 ↑</strong> — 55.5%→57.1%(+1.6%p). 의미 있는 개선이지만 카본화(75%+)나 ZoomX 폼 대비하면 미미합니다.</li>
+  <li><strong>전족부는 거의 변화 없음</strong> — 에너지 리턴 61.4%→61.2%, 스택 22.2→22.0mm. 나이키가 "토 스프링 지오메트리로 3mm 추가 쿠션"이라고 발표했지만 실측에는 안 잡힙니다.</li>
+  <li><strong>전환 부드러움 ↑</strong> — RTR이 핵심으로 짚은 부분. 풀 렝스 구조 덕에 힐→포어풋 전환이 41의 단절적 느낌에서 더 매끄러워졌습니다.</li>
+</ul>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">"에너지 리턴 +15%"의 실체</p>
+    <p>나이키 공식 발표의 "에너지 리턴 +15% 향상"은 <strong>RunRepeat 실측 기준 힐 +1.6%p / 전족부 0%p</strong>에 불과합니다. 가능성은 두 가지: ① 나이키가 측정한 "에너지 리턴"이 RunRepeat의 ASTM F1976 표준 측정과 다른 항목이거나, ② 마케팅 수치라는 것. 어느 쪽이든 <strong>구매 결정에 "+15%"를 그대로 믿지 말고 "약간 부드러워진 41" 정도로 기대치를 잡으세요</strong>.</p>
+  </div>
+</div>
+
+<h2>한국 와이드 옵션 정식 출시 — 진짜 개선은 여기에</h2>
+
+<p>페가수스 42의 가장 중요한 한국 러너 관점 변화는 사실 미드솔이 아닙니다. <strong>한국 나이키 공식몰에 남성·여성 와이드 옵션이 동일 169,000원으로 정식 출시</strong>된 것입니다.</p>
+
+<p>41까지는 한국 발볼 4E급 러너들에게 페가수스가 "표준 사이즈는 좁고 와이드는 한국에서 사기 어려운 신발"이었습니다. 직구나 매장 재고 운에 의존해야 했고, 그 사이 발볼 넓은 러너들은 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>나 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>으로 옮겨갔습니다.</p>
+
+<p>42는 출시 시점부터 와이드 SKU를 한국 공식 라인업에 넣었습니다. RunRepeat 실측 토박스 너비(72.3mm)는 41과 거의 같지만, <strong>SKU 자체가 표준 가격으로 풀린 게 핵심</strong>입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼 타입</th><th>추천 SKU</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>표준 (D, 한국 평균)</td>
+      <td>표준 169,000원</td>
+      <td>실측 72.3mm로 평균 한국 발볼 무난</td>
+    </tr>
+    <tr>
+      <td>발볼 넓음 (2E)</td>
+      <td>표준 + 반 사이즈 업 또는 와이드</td>
+      <td>10km 이상 거리에서 와이드 권장</td>
+    </tr>
+    <tr>
+      <td>발볼 매우 넓음 (4E)</td>
+      <td>와이드 169,000원 (남성·여성)</td>
+      <td>무조건 와이드, 표준은 압박 발생</td>
+    </tr>
+    <tr>
+      <td>발볼 좁음 (B)</td>
+      <td>표준 169,000원</td>
+      <td>발볼 좁다면 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>가 더 적합</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>36mm 힐 스택 = 무릎 보호 효과 분석</h2>
+
+<p>실측 36mm 힐 스택은 <strong>모더레이트~맥시멀 사이</strong>의 쿠셔닝입니다. 클리프턴 10(40mm), 노바블라스트 5(41.5mm)보다는 낮지만, <a href="/shoes/new-balance-880-v15">880 v15</a>(35mm)와 비슷한 수준입니다.</p>
+
+<p>한국 한강·남산·한적한 시내 러닝 코스의 특성을 고려하면:</p>
+
+<ul>
+  <li><strong>아스팔트 무릎 충격 완화</strong> — SA 131의 힐 쿠셔닝은 입문 러너의 첫 800km 동안 무릎 부담을 의미 있게 줄여줍니다. 평발이거나 뒤꿈치 착지인 러너에게 특히 도움.</li>
+  <li><strong>드롭 14mm(실측)의 양면성</strong> — 뒤꿈치 착지 러너에게 자연스럽게 무게 전환을 유도하지만, 미드풋 착지를 시도하려는 중급자에게는 인위적인 느낌이 됩니다.</li>
+  <li><strong>족저근막염·아킬레스건염 예방 좋음</strong> — 36mm + 풀 렝스 Air Zoom 조합이 발바닥 근막에 가해지는 충격을 분산시킵니다. <a href="/blog/knee-pain-running-shoes">무릎 통증 예방 가이드</a>의 "쿠션 우선화" 카테고리에 해당.</li>
+</ul>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">무릎이 약한 러너의 페가수스 42 활용법</p>
+    <p>5km부터 시작해 주 3회 30km씩 5주(150km)에 걸쳐 적응한 뒤 거리를 늘리세요. 첫 800km는 무릎 보호 효과가 살아있고, 이후 미드솔이 압축되면서 쿠셔닝이 70% 수준으로 떨어집니다. 600km 도달 시 교체를 권장합니다.</p>
+  </div>
+</div>
+
+<h2>169,000원 가성비 — 같은 가격대 비교</h2>
+
+<p>16만원대 한국 입문 데일리 트레이너 시장은 2026년 들어 가장 경쟁이 치열한 구간입니다. 페가수스 42, 노바블라스트 5, 클리프턴 10이 사실상 동일한 169,000원에 출시됐습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>가격</th><th>무게</th><th>힐 스택</th><th>핵심 강점</th><th>한국 발볼</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong><a href="/shoes/nike-pegasus-42">페가수스 42</a></strong></td>
+      <td>169,000원</td>
+      <td>286g</td>
+      <td>36mm</td>
+      <td>풀 렝스 Air Zoom 안정감, 무릎 보호</td>
+      <td>와이드 정식 ✅</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-novablast-5">노바블라스트 5</a></td>
+      <td>169,000원</td>
+      <td>262g</td>
+      <td>41.5mm</td>
+      <td>FF Blast Max, 통통 튀는 반발</td>
+      <td>표준 ⚠️</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/hoka-clifton-10">클리프턴 10</a></td>
+      <td>169,000원</td>
+      <td>275g</td>
+      <td>40mm</td>
+      <td>맥시멀 쿠션, 모자이드 락커</td>
+      <td>표준 ⚠️</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>선택 기준:</p>
+
+<ul>
+  <li><strong>발볼 넓고 안정감 우선</strong> → 페가수스 42 (와이드 정식 + 풀 렝스 Air Zoom)</li>
+  <li><strong>가벼운 반발감 + 통통 튀는 라이드</strong> → 노바블라스트 5 (24g 더 가볍고 41.5mm 맥시멀)</li>
+  <li><strong>맥시멀 쿠션 + 부드러운 전환</strong> → 클리프턴 10 (모자이드 락커 지오메트리)</li>
+</ul>
+
+<p>가성비 자체는 셋 다 비슷하지만, <strong>한국 러너 평균 발볼(D~2E)을 고려하면 페가수스 42의 와이드 SKU 정식 출시가 결정적인 가산점</strong>입니다.</p>
+
+<p><strong>한 단계 위 — 20만원대 맥스쿠션과 비교</strong>하고 싶다면 <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 젤 님버스 28</a>을 참고하세요. 무릎 보호·장거리 리커버리에 43.5mm 맥시멀 쿠션이 정말 필요한지 갈립니다. 참고로 페가 42는 어퍼 통기성이 표준 수준이라 한여름 무더위엔 다소 덥습니다 — 통기성을 우선한다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>도 함께 검토하세요.</p>
+
+<h2>전문가 평가 — BITR vs RTR</h2>
+
+<table>
+  <thead>
+    <tr><th>매체</th><th>점수</th><th>핵심 평가</th><th>한 줄 요약</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Believe in the Run</strong></td>
+      <td>B티어<br><small>(Design A / Value A / Performance C)</small></td>
+      <td>"6-8마일 스윗스팟 이후 쿠션·반발 부족"</td>
+      <td>"원 트릭 포니지만 좋은 트릭"</td>
+    </tr>
+    <tr>
+      <td><strong>Road Trail Run</strong></td>
+      <td>8.79/10<br><small>(Ride 8.4 / Fit 9.3 / Value 9.0)</small></td>
+      <td>"더 부드러운 라이드, 무게 열세"</td>
+      <td>"고등학생·입문자·예산형 러너 최적"</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>두 매체 공통: <strong>"입문급 데일리 트레이너 가성비 최상위, 5-13km 스윗스팟"</strong>. 다만 BITR은 "특정 거리에 갇힌 신발"이라는 점을 단점으로 명확히 짚었고, RTR은 더 우호적으로 봤습니다.</p>
+
+<h2>누가 사야 하나 / 누가 안 사야 하나</h2>
+
+<table>
+  <thead>
+    <tr><th>✅ 추천 대상</th><th>❌ 비추천 대상</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>러닝 입문 ~ 1년 차</td>
+      <td>주 100km+ 고볼륨 훈련</td>
+    </tr>
+    <tr>
+      <td>한강·남산 5-13km 데일리 훈련</td>
+      <td>하프마라톤 페이스 훈련</td>
+    </tr>
+    <tr>
+      <td>발볼 넓어 와이드 SKU 필요</td>
+      <td>풀코스 대회 PB 도전</td>
+    </tr>
+    <tr>
+      <td>뒤꿈치 착지 + 무릎 보호 우선</td>
+      <td>미드풋·전족부 착지 시도 중</td>
+    </tr>
+    <tr>
+      <td>16만원대 1켤레 올라운더</td>
+      <td>강한 카본화 반발 원함</td>
+    </tr>
+    <tr>
+      <td>페가수스 41 600km 다 신고 교체</td>
+      <td>41이 200~400km 남아있음</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>한 달 사용기 — 한강 5-10km 데일리 기준</h2>
+
+<p>출시 직후(2026-04-09) 표준 270mm로 구입해 한 달간 한강 코스 약 120km 사용한 인상을 정리하면:</p>
+
+<ul>
+  <li><strong>첫인상 (0-30km)</strong>: 41보다 확실히 부드러운 힐. 하지만 286g 무게는 매장 착화 때부터 느껴짐.</li>
+  <li><strong>적응기 (30-80km)</strong>: 5km 이지런에서 가장 편했고, 7km 넘어가면 평범한 페이스(6:00/km)에서도 무게가 다리에 누적됨.</li>
+  <li><strong>스피드 시도 (10km 이상)</strong>: 5:00/km 이하로 들어가면 신발이 못 따라온다는 느낌. 페이스 훈련은 줌 플라이 6으로 분리.</li>
+  <li><strong>120km 시점 마모</strong>: 와플 아웃솔 마모는 거의 없음. 600km까지는 무난할 것으로 예상.</li>
+  <li><strong>핏감</strong>: 표준 270mm에서 새끼발가락 살짝 압박 있음(필자 발볼 2E). 와이드로 갔으면 더 편했을 것.</li>
+</ul>
+
+<h2>사이즈 가이드</h2>
+
+<div class="callout info">
+  <span class="callout-icon">📏</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 러너 사이즈 추천</p>
+    <ul style="margin-top: 8px;">
+      <li><strong>발볼 표준 (D)</strong>: 평소 사이즈 그대로 (예: 270mm → 270mm)</li>
+      <li><strong>발볼 넓음 (2E)</strong>: 표준 + 반 사이즈 업 또는 <strong>와이드 평소 사이즈</strong></li>
+      <li><strong>발볼 매우 넓음 (4E)</strong>: 무조건 <strong>와이드 평소 사이즈</strong> (한국 공식몰 정식 출시)</li>
+      <li><strong>발폭 좁음 (B)</strong>: 표준에서 끈 단단히 조여서 사용, 또는 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a> 고려</li>
+    </ul>
+  </div>
+</div>
+
+<h2>최종 결론</h2>
+
+<p>페가수스 42는 <strong>"마케팅 +15%"가 아니라 "실측 +1.6%p와 와이드 SKU 출시"가 진짜 변화</strong>인 신발입니다. 41 대비 힐 쿠셔닝과 한국 발볼 친화도가 의미 있게 개선됐고, 169,000원 + 풀 렝스 Air Zoom + 와이드 정식 출시 조합은 동급에서 가장 안정적인 입문 데일리 트레이너 옵션입니다.</p>
+
+<p>단, BITR이 짚었듯 "원 트릭 포니"라는 한계는 분명합니다. 하프 이상이나 페이스 훈련은 <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>이나 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>로 분리하고, 페가수스 42는 5-13km 데일리 + 무릎 보호 + 가성비 1켤레 포지션으로 쓰세요. 그 용도 안에서는 16만원대 가성비 최상위입니다.</p>
+
+<div class="cta-box">
+  <h3>페가수스 42 구매 전 체크리스트</h3>
+  <ul>
+    <li>✅ 발볼 4E급 → 한국 공식몰 와이드 SKU (169,000원, 표준과 동일 가격)</li>
+    <li>✅ 무릎 약함 → 36mm 힐 스택 + 600km 교체 사이클</li>
+    <li>✅ 5-13km 데일리 → 페가수스 42 (스윗스팟)</li>
+    <li>❌ 페이스 훈련·하프 이상 → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 또는 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a></li>
+    <li>❌ 41 200km+ 남았음 → 그냥 41을 굴리세요</li>
+  </ul>
+  <p><a href="/shoes/nike-pegasus-42" class="cta-button">📊 페가수스 42 상세 데이터 보기 →</a></p>
+</div>
+
+<p class="text-sm text-gray-500 mt-8">
+※ 데이터 출처: <a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener">RunRepeat 랩 테스트 (2026-04-25 게시)</a>, <a href="https://believeintherun.com/shoe-reviews/nike-pegasus-42-review/" target="_blank" rel="noopener">Believe in the Run</a>, <a href="https://www.roadtrailrun.com/2026/03/nike-pegasus-42-review-4-comparisons.html" target="_blank" rel="noopener">Road Trail Run</a>, Nike Newsroom 공식 발표, 한국 나이키 공식몰. 한 달 사용기는 산초 에디터 개인 기록(약 120km, 한강 코스).
+</p>
+`,
+  },
+  {
+    id: '2026-gyeongpo-gangneung-marathon',
+    slug: '2026-gyeongpo-gangneung-marathon',
+    title: '2026 경포마라톤 접수 D-13 | 10월 10일 강릉 경포해변 동해안 하프 코스',
+    description: '2026 경포마라톤 접수가 5월 18일(월) 시작됩니다. 10월 10일(토) 강릉 경포해변 출발, 하프·10km·4.7km 동해안 해안선 코스. 풀코스 없음. 2025년 9,300명 역대 최다 — 가족·입문자 친화 가을 대회 총정리.',
+    thumbnail: '/images/blog/2026-gyeongpo-gangneung-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-05',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['경포마라톤', '강릉 마라톤', '강원도 마라톤', '하프마라톤', '가을 마라톤', '동해안 마라톤', '대회 일정'],
+    event: {
+      name: '2026 경포마라톤',
+      startDate: '2026-10-10T08:30:00+09:00',
+      location: {
+        name: '경포해변 중앙광장',
+        address: '강원특별자치도 강릉시 경포로 513',
+      },
+      organizer: '강원도민일보',
+      url: 'http://www.xn--289av7rnxbd06bmrc.com/',
+      offers: [
+        { name: '하프마라톤 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+        { name: '10km', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+        { name: '4.7km 건강달리기', priceKrw: 30000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
+      ],
+    },
+    faqs: [
+      {
+        question: '풀코스(42.195km)도 있나요?',
+        answer: '아니요, 2026 경포마라톤은 하프(21.0975km)·10km·4.7km 건강달리기 세 종목만 운영합니다. 2022년 이후 4년 연속 풀코스가 없으며 하프가 최장 거리입니다. 가을 풀코스가 목표라면 같은 10월 25일(예상) 춘천마라톤이 정답입니다.',
+      },
+      {
+        question: '참가비는 얼마인가요?',
+        answer: '2026년 공식 참가비는 5월 18일 접수 오픈 시 발표됩니다. 2025년 기준 하프·10km 40,000원, 5km(현 4.7km) 30,000원이었으며 2026년에는 인상 가능성이 있습니다. 정확한 금액은 공식 홈페이지(경포마라톤.com)에서 접수 시작 후 확인하세요.',
+      },
+      {
+        question: '서울에서 강릉까지 KTX로 갈 수 있나요?',
+        answer: 'KTX 강릉선으로 서울역·청량리역에서 강릉역까지 약 2시간 소요됩니다. 강릉역에서 경포해변 중앙광장까지는 약 6km, 시내버스 25분 또는 택시 10분 거리입니다. 2025년에는 강릉종합운동장~경포 셔틀버스도 운영됐으며 2026년 운영 여부는 추후 공지 예정입니다.',
+      },
+      {
+        question: '컷오프 시간은 어떻게 되나요?',
+        answer: '2025년 기준 하프 2시간 30분, 10km 2시간이었습니다. 2026년 정식 공지는 대회 전 공식 홈페이지에서 확인하세요. 입문자가 부담 없이 도전할 수 있는 넉넉한 컷오프입니다.',
+      },
+      {
+        question: '발볼 넓은 한국 러너에게 추천할 신발이 있나요?',
+        answer: '경포마라톤 코스는 동해안 해안 도로로 거의 평탄합니다. 하프 PB 도전이라면 카본 레이싱화, 안전 완주는 데일리 트레이너가 적합하며 발볼이 넓다면 와이드 옵션이 있는 모델이 유리합니다. 본인 발 특성에 맞는 추천은 1분 러닝화 추천 페이지를 참고하세요.',
+      },
+      {
+        question: '주차 가능한가요?',
+        answer: '대회 당일 경포해변 중앙광장~강원도립대 후문(영진) 구간이 약 2시간 30분 통제됩니다(2025년 기준 8:20~11:00). 자가용은 권장하지 않으며 KTX·셔틀버스 이용이 안전합니다. 전날 강릉 숙박이 가장 편한 옵션입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 10일(토) 강릉 경포해변 중앙광장 출발, 하프·10km·4.7km 동해안 해안선 코스 (풀코스 없음)</li>
+    <li>접수 5월 18일(월) 시작 → 6월 23일(화) 마감, 공식 홈페이지 경포마라톤.com 직접 접수</li>
+    <li>2025년 9,300명 역대 최다 참가 — 가족·입문자 친화 축제형 대회, 강릉 여행과 결합 최적</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 시작 D-13 — 5월 18일(월) 오픈</p>
+    <p>대회는 10월 10일(토), 접수는 <strong>2026년 5월 18일(월)부터 6월 23일(화)까지</strong>입니다. 2025년에는 9,300명이 참가해 역대 최다를 기록했고 정원 1만명 기준 빠르게 마감됐습니다. 강릉 가을 여행과 함께 묶을 계획이라면 KTX 좌석부터 확보해두세요.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/10 (토)</span>
+    <span class="stat-sub">8:30 집결</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 21.0975km</span>
+    <span class="stat-value">최장 거리</span>
+    <span class="stat-sub">컷오프 2:30 (2025 기준)</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10km · 4.7km</span>
+    <span class="stat-value">3종목</span>
+    <span class="stat-sub">풀코스 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 기간</span>
+    <span class="stat-value">5/18 ~ 6/23</span>
+    <span class="stat-sub">공식 홈페이지 직접 접수</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.18 (월) — D-13</span>
+    <span class="timeline-title">접수 시작</span>
+    <p class="timeline-desc">공식 홈페이지 경포마라톤.com에서 접수 오픈 (단체 25인 이상 별도 신청)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.06.23 (화)</span>
+    <span class="timeline-title">접수 마감</span>
+    <p class="timeline-desc">2025년 정원(1만명) 기준 조기 마감 가능. 마감일 전 결제 완료 권장</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 말 ~ 10월 초</span>
+    <span class="timeline-title">레이스팩 안내 / 통제 공지</span>
+    <p class="timeline-desc">기념품 수령 방법, 셔틀버스 운영, 교통통제 시간 공식 발표</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.10 (토)</span>
+    <span class="timeline-title">대회 당일 — 경포해변 중앙광장 8:30 집결</span>
+    <p class="timeline-desc">교통통제 8:20~11:00 (2025년 기준), 셔틀버스 운영 시 강릉종합운동장~경포 노선</p>
+  </div>
+</div>
+
+<h2>대회 기본 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 경포마라톤 (12회차 추정)</td></tr>
+    <tr><td><strong>출발 / 도착</strong></td><td>경포해변 중앙광장 (강원특별자치도 강릉시 경포로 513) — 원점 복귀</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프마라톤 21.0975km · 10km · 4.7km 건강달리기</td></tr>
+    <tr><td><strong>주최 · 주관</strong></td><td>강원도민일보 · 강릉시육상연맹</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> (공식 홈페이지 직접 접수)</td></tr>
+    <tr><td><strong>문의</strong></td><td>033-651-0112 / kkang7705@naver.com</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">참가비·정원·기념품은 5월 18일 접수 오픈 시 확정</p>
+    <p>2026년 공식 참가비와 종목별 정원은 5월 18일 접수 시작과 함께 발표될 예정입니다. <strong>2025년 기준 참가비는 하프·10km 40,000원, 5km 30,000원</strong>이었고 2024년 대비 인상이 있었던 만큼 2026년에도 변동 가능성이 있습니다. 2025년 시상품은 갤럭시 버즈3(1~5위)·아머핏 종아리 기어(6~10위)였고 기념품은 별도 공지로 안내됐습니다.</p>
+  </div>
+</div>
+
+<h2>동해안 해안선 코스 — 솔향·바다향·커피향</h2>
+
+<p>경포마라톤의 가장 큰 매력은 <strong>강릉 동해안을 따라 달리는 해안선 코스</strong>입니다. 도시 마라톤과 달리 신호 대기·교차로 정차가 적고, 바닷바람과 솔숲을 동시에 만나는 풍경이 한국 가을 대회 중에서도 손꼽히는 매력으로 통합니다.</p>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>코스 (2025년 기준)</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>하프</strong></td>
+      <td>경포해변 중앙광장 → 경포해안로 → 경포인공폭포 → 연곡해변 → 영진해변 반환 → 원점</td>
+      <td>거의 평탄, 해발 차 미미. 사천·연곡·영진 해변 풍경 연속</td>
+    </tr>
+    <tr>
+      <td><strong>10km</strong></td>
+      <td>경포해변 중앙광장 → 사천 하평교 반환 → 원점</td>
+      <td>하프 코스 축약 버전. 해안 풍경 그대로</td>
+    </tr>
+    <tr>
+      <td><strong>4.7km</strong></td>
+      <td>경포해변 → 경포인공폭포 → 사근진 → 순포습지 → 원점</td>
+      <td>건강달리기. 가족·입문자용. 칩 타이밍 없음</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>코스 전체가 평탄하고 풍경이 좋아 <strong>첫 하프 도전</strong>이나 <strong>가족 동반 러닝 여행</strong>에 잘 맞습니다. 정확한 2026년 코스는 대회 전 공식 홈페이지에서 재확인하세요.</p>
+
+<h2>이 대회는 누구에게 잘 맞나</h2>
+
+<div class="pros-cons">
+  <div class="pros">
+    <div class="pros-title">✓ 이런 러너에게 추천</div>
+    <ul>
+      <li><strong>첫 하프 도전자</strong> — 평탄 해안 코스 + 컷오프 2:30(넉넉)으로 부담 적음</li>
+      <li><strong>가족·커플 러닝 여행</strong> — 4.7km 건강달리기로 함께 참가 가능</li>
+      <li><strong>춘천 광클 실패한 가을 러너</strong> — 같은 10월 동해안 대안 (10/10 토요일)</li>
+      <li><strong>강릉 여행을 좋아하는 러너</strong> — 경포호·안목커피거리·초당순두부와 결합 최적</li>
+      <li><strong>축제형 대회 분위기를 원하는 러너</strong> — 2025년 9,300명 + 관람객 1.2만명 운집</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <div class="cons-title">✕ 이런 러너에겐 비추</div>
+    <ul>
+      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
+      <li><strong>토요일 출근 러너</strong> — 토요일 대회, 일정 조정 필수</li>
+      <li><strong>당일치기 수도권 러너</strong> — KTX 왕복 4시간 + 대회 시간 부담. 1박 2일 권장</li>
+      <li><strong>도심 러닝 분위기 선호</strong> — 광화문·여의도 같은 도시 풍경 없음 (자연 코스 위주)</li>
+    </ul>
+  </div>
+</div>
+
+<h2>강릉 여행과 묶는 1박 2일 모델</h2>
+
+<p>경포마라톤이 토요일 오전에 끝나는 점을 활용하면 가을 강릉 여행과 자연스럽게 이어집니다.</p>
+
+<ul>
+  <li><strong>금요일 오후:</strong> KTX 강릉선 청량리역 → 강릉역(약 2시간), 경포 인근 숙소 체크인</li>
+  <li><strong>금요일 저녁:</strong> 초당순두부·강릉 회센터에서 가벼운 식사 (탄수화물 위주)</li>
+  <li><strong>토요일 오전:</strong> 8:30 경포해변 중앙광장 집결 → 11시 전후 완주</li>
+  <li><strong>토요일 오후:</strong> 안목커피거리·경포호 산책·오죽헌 (회복 산책 겸 관광)</li>
+  <li><strong>일요일:</strong> 정동진·주문진 또는 강릉 카페 투어 후 KTX 복귀</li>
+</ul>
+
+<h2>가을 강릉 마라톤 신발 선택</h2>
+
+<p>10월 강릉 평년 기온은 오전 10~16℃ 수준. 해안 도로 평탄 코스라 신발 선택 폭이 넓습니다.</p>
+
+<ul>
+  <li><strong>하프 PB 도전 (1:30~2:00):</strong> 카본 플레이트 레이싱화 또는 슈퍼트레이너. <a href="/best/racing">레이싱화 추천</a></li>
+  <li><strong>하프 안전 완주 (2:00~2:30):</strong> 쿠셔닝 좋은 데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+  <li><strong>10km · 4.7km 가족 참가:</strong> 평소 신는 데일리화면 충분</li>
+  <li><strong>발볼 넓은 한국 러너:</strong> 와이드 옵션이 있는 모델 우선. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인 러닝화 추천</a> 참고</li>
+</ul>
+
+<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>접수 전 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프 / 10km / 4.7km 건강달리기)</li>
+  <li>5월 18일(월) 접수 시작 알람 — 정원 1만명 기준 조기 마감 가능</li>
+  <li>경포마라톤.com 회원가입 사전 준비 (공식 홈페이지 직접 접수)</li>
+  <li>KTX 좌석 선예약 (10월 9~10일 강릉선 빠르게 매진)</li>
+  <li>강릉 숙소 예약 (경포해변·교동 일대 가을 성수기 주의)</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·교통통제·셔틀버스)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
+    <p>같은 10월 가을 메이저 대회를 함께 검토해보세요 — <a href="/blog/2026-seoul-open-marathon-registration">서울 오픈 마라톤(10/5 광화문, 5/10 마감)</a>, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상, 풀코스)</a>. 본인 목표(완주/PB/풀/하프)와 일정에 맞춰 1~2개 선택이 정석입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 033-651-0112 / kkang7705@naver.com</p>
+
+<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
+
+<p><small>출처: 경포마라톤 공식 홈페이지 <a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> · <a href="https://marathongo.co.kr/raceDetail/domestic/2026-gyeongpo-marathon" rel="noopener noreferrer">마라톤GO 2026 경포마라톤</a> · 강원도민일보 2025 대회 보도 / 작성일 2026년 5월 5일 기준 / 참가비·정원·기념품·코스·교통통제는 5월 18일 접수 오픈 후 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+  {
+    id: '2026-seoul-open-marathon-registration',
+    slug: '2026-seoul-open-marathon-registration',
+    title: '2026 서울 오픈 마라톤 | 10월 5일(월) 광화문 출발 · 접수 5월 10일 마감',
+    description: '광화문광장에서 출발하는 2026 서울 오픈 마라톤(10월 5일 월요일) 접수가 5월 10일까지입니다. 하프 8만원, 10km 6만원, 페이스메이커 운영. 도심 평탄 코스를 노리는 가을 PB 도전자에게 대안.',
+    thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-04',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
+    event: {
+      name: '2026 서울 오픈 마라톤 대회',
+      startDate: '2026-10-05T07:30:00+09:00',
+      location: {
+        name: '광화문광장 앞 대로변',
+        address: '서울특별시 종로구 세종대로',
+      },
+      organizer: '서울오픈마라톤 조직위원회',
+      url: 'https://seoulopen.or.kr',
+      offers: [
+        { name: '하프 (21.0975km)', priceKrw: 80000, availabilityEnds: '2026-05-10', url: 'https://seoulopen.or.kr/sub/register.php' },
+        { name: '10K', priceKrw: 60000, availabilityEnds: '2026-05-10', url: 'https://seoulopen.or.kr/sub/register.php' },
+      ],
+    },
+    faqs: [
+      {
+        question: '참가비는 얼마인가요?',
+        answer: '하프(21.0975km) 80,000원, 10K 60,000원입니다. 두 종목 모두 2026년 5월 10일(일)까지 선착순 접수입니다.',
+      },
+      {
+        question: '풀코스(42.195km) 종목도 있나요?',
+        answer: '아니요, 2026 서울 오픈 마라톤은 하프와 10K 두 종목만 운영합니다. 가을 풀코스가 목표라면 같은 10월에 열리는 춘천마라톤(10/25 예상)이나 JTBC 서울마라톤(11월)을 검토하세요.',
+      },
+      {
+        question: '10월 5일이 평일(월요일)인데 대회가 가능한가요?',
+        answer: '평일 대회입니다. 개천절(10/3 토요일) 연휴 직후라 임시공휴일 지정 여부가 변수입니다. 출근 러너는 휴무 조정이 필요하며, 정확한 공휴일 정보는 정부 발표를 확인하세요.',
+      },
+      {
+        question: '발볼이 넓은 한국 러너에게 추천할 신발이 있나요?',
+        answer: '평탄 도심 코스라 신발 선택 폭이 넓습니다. 하프 PB 도전이라면 카본 레이싱화, 안전 완주는 데일리 트레이너가 적합합니다. 본인 발볼·체중에 맞는 신발은 1분 러닝화 추천 페이지에서 확인할 수 있습니다.',
+      },
+      {
+        question: '컷오프 시간은 어떻게 되나요?',
+        answer: '2026년 5월 4일 기준 공식 사이트에 컷오프 시간이 명시되어 있지 않습니다. 정확한 정보는 대회 직전 공식 안내문 또는 070-7766-1238로 문의하세요.',
+      },
+      {
+        question: '주차 가능한가요?',
+        answer: '광화문광장 인근은 대회 당일 교통 통제 가능성이 큽니다. 자가용보다는 지하철 5호선 광화문역 등 대중교통 이용을 권장합니다. 정확한 교통 통제 안내는 대회 직전 공식 사이트에서 공지됩니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>2026년 10월 5일(월) 광화문광장 앞 출발 → 무교로 도착, 하프·10K 평탄 도심 코스</li>
+    <li>접수 마감 5월 10일(일) 선착순, 하프 80,000원 · 10K 60,000원</li>
+    <li>풀코스 없음 — 풀이 목표라면 춘천(10/25 예상), 도심 분위기·페이스메이커 운영을 원하면 이 대회</li>
+  </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 마감 — 5월 10일(일)</p>
+    <p>대회는 10월 5일(월), 접수는 <strong>2026년 5월 10일(일)까지 선착순</strong>입니다. 정원이 차면 조기 마감 가능성 있어요. 광화문 도심 코스라 대회 분위기 자체에 매력을 느낀다면 이번 주 안에 결정하시는 게 좋습니다.</p>
+  </div>
+</div>
+
+<h2>핵심 정보 한눈에</h2>
+
+<div class="stat-grid">
+  <div class="stat-card accent">
+    <span class="stat-label">대회일</span>
+    <span class="stat-value">10/5 (월)</span>
+    <span class="stat-sub">오전 7:30 출발</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">하프 21.0975km</span>
+    <span class="stat-value">80,000원</span>
+    <span class="stat-sub">만 18세 이상</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">10K</span>
+    <span class="stat-value">60,000원</span>
+    <span class="stat-sub">연령 제한 없음</span>
+  </div>
+  <div class="stat-card">
+    <span class="stat-label">접수 마감</span>
+    <span class="stat-value">5/10 (일)</span>
+    <span class="stat-sub">선착순</span>
+  </div>
+</div>
+
+<h2>접수부터 대회까지 타임라인</h2>
+
+<div class="timeline">
+  <div class="timeline-item done">
+    <span class="timeline-date">2026.04.23 (목)</span>
+    <span class="timeline-title">접수 시작</span>
+    <p class="timeline-desc">seoulopen.or.kr에서 선착순 접수 오픈</p>
+  </div>
+  <div class="timeline-item active">
+    <span class="timeline-date">2026.05.10 (일)</span>
+    <span class="timeline-title">접수 마감</span>
+    <p class="timeline-desc">정원 도달 시 조기 마감 가능. 결정은 이번 주 안에</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.09 말</span>
+    <span class="timeline-title">레이스 키트 수령 안내</span>
+    <p class="timeline-desc">대회 약 1주 전 공식 안내문 발송 (출발·집결 시각 최종 확정)</p>
+  </div>
+  <div class="timeline-item">
+    <span class="timeline-date">2026.10.05 (월)</span>
+    <span class="timeline-title">대회 당일 — 광화문광장 출발 7:30</span>
+    <p class="timeline-desc">개천절(10/3 토) 연휴 직후 평일. 임시공휴일 지정 여부 확인 필수</p>
+  </div>
+</div>
+
+<h2>대회 기본 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 서울 오픈 마라톤 대회</td></tr>
+    <tr><td><strong>장소</strong></td><td>광화문광장 앞 대로변 출발 → 무교로 도착 (예정)</td></tr>
+    <tr><td><strong>주최</strong></td><td>서울오픈마라톤 조직위원회 · (사)한국체육개발원</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="https://seoulopen.or.kr/sub/register.php" rel="noopener noreferrer">seoulopen.or.kr</a></td></tr>
+    <tr><td><strong>문의</strong></td><td>070-7766-1238 / somarathon@naver.com</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">컷오프·정원·교통통제 안내는 공식 사이트 확인</p>
+    <p>현재(5월 4일 기준) 컷오프 시간, 종목별 정원, 교통통제 상세 안내가 공식 사이트에 별도 명시돼 있지 않습니다. 정확한 사항은 대회 직전 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">공식 홈페이지</a> 또는 070-7766-1238로 문의하세요.</p>
+  </div>
+</div>
+
+<h2>광화문 도심 코스 — 가을 도시 러닝의 매력</h2>
+
+<p>국내 가을 마라톤 중 <strong>광화문광장에서 출발하는 대회</strong>는 흔하지 않습니다. 서울 오픈 마라톤의 가장 큰 매력은 도심 한복판 출발 — 경복궁·청계천·시청을 배경으로 달리는 경험입니다.</p>
+
+<ul>
+  <li><strong>출발지:</strong> 광화문광장 앞 대로변 (지하철 5호선 광화문역 도보 1분)</li>
+  <li><strong>도착지:</strong> 무교로 (도착 후 시청·청계천 산책 가능)</li>
+  <li><strong>지형:</strong> 서울 도심 평탄 코스 (구체적 언덕 정보 미공개)</li>
+  <li><strong>페이스메이커:</strong> 광화문 페이싱팀 운영 예정 — 초보 러너에게 유리</li>
+</ul>
+
+<h2>이 대회는 누구에게 잘 맞나</h2>
+
+<div class="pros-cons">
+  <div class="pros">
+    <div class="pros-title">✓ 이런 러너에게 추천</div>
+    <ul>
+      <li><strong>가을 첫 하프 도전자</strong> — 평탄 도심 코스 + 페이스메이커 운영으로 부담 적음</li>
+      <li><strong>춘천마라톤 광클 실패</strong> — 같은 10월 초 도심 대회로 가을 시즌 대안</li>
+      <li><strong>서울 거주 러너</strong> — 셔틀·숙박 부담 없이 당일 참가 가능</li>
+      <li><strong>도심 러닝 사진</strong>을 좋아하는 러너 — 광화문 출발 인증샷</li>
+    </ul>
+  </div>
+  <div class="cons">
+    <div class="cons-title">✕ 이런 러너에겐 비추</div>
+    <ul>
+      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
+      <li><strong>10월 5일(월) 출근 러너</strong> — 평일 대회, 임시공휴일 지정 여부 확인 필수</li>
+      <li><strong>경치 풍부한 자연 코스 선호</strong> — 의암호·강변 같은 자연 풍경 없음</li>
+    </ul>
+  </div>
+</div>
+
+<h2>10월 가을 도심 마라톤 신발 선택</h2>
+
+<p>10월 초 서울 평년 기온은 오전 15~20℃ 수준으로 러닝 최적기. 광화문~무교로 도심 평탄 코스라 신발 선택 폭이 넓습니다.</p>
+
+<ul>
+  <li><strong>하프 PB 도전 (1:30 미만):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a></li>
+  <li><strong>하프 안전 완주 (1:30~2:30):</strong> 슈퍼트레이너·데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+  <li><strong>10K 가벼운 참가:</strong> 평소 신는 데일리화면 충분</li>
+</ul>
+
+<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>접수 전 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프/10K)</li>
+  <li>10월 5일(월) 일정 확인 — 평일 대회</li>
+  <li>seoulopen.or.kr 회원가입 및 신청서 작성</li>
+  <li>참가비 결제</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발·집결 시각, 교통통제)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
+    <p>같은 10월에 열리는 가을 메이저 대회를 함께 검토해보세요 — 동마클럽 계열 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a>. 본인 목표(완주/PB/풀/하프)에 맞춰 1~2개 선택이 정석입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 070-7766-1238 / somarathon@naver.com</p>
+
+<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
+
+<p><small>출처: 서울오픈마라톤 공식 홈페이지 <a href="https://seoulopen.or.kr" rel="noopener noreferrer">seoulopen.or.kr</a> · 마라톤GO 대회 정보 / 작성일 2026년 5월 4일 기준 / 코스·출발 시각·교통통제는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+  {
+    id: '2026-adidas-adios-pro-evo-3-korea-release',
+    slug: '2026-adidas-adios-pro-evo-3-korea-release',
+    title: '아디다스 아디오스 프로 에보 3 한국 래플 D-2 | 97g 서브2 신발의 정체',
+    description: '런던 마라톤에서 공인 첫 서브2(1:59:30)와 세계신기록을 함께 깬 그 신발. 5월 4일 아디다스 앱 래플 응모 시작, 5월 7일 당첨자 구매. 97g 무게·EnergyRim 신구조·74만원 추정가까지 — 한국 러너가 알아야 할 모든 것.',
+    thumbnail: '/images/blog/2026-adidas-adios-pro-evo-3-korea-release.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-02',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['아디다스', '아디오스 프로 에보 3', '카본화', '슈퍼슈즈', '서브2', '런던마라톤', '세계신기록'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 래플 응모 D-2 — 5월 4일(월) 시작</p>
+    <p>아디다스 공식 앱에서 <strong>5월 4일(월) 응모 → 5월 7일(목) 당첨자 발표 및 구매</strong>로 진행됩니다. 소량 한정 발매로 알려져 있고, 본격 확대 출시는 가을(9월) 마라톤 시즌으로 예정. 응모 의향이 있다면 지금 바로 아디다스 앱 회원가입과 결제 수단 등록을 마쳐두세요.</p>
+  </div>
+</div>
+
+<h2>일단 무슨 일이 있었나 — 4월 27일 런던</h2>
+
+<p>2026년 4월 27일 런던 마라톤. 케냐의 사바스티안 사웨가 <strong>1시간 59분 30초</strong>로 결승선을 끊었습니다. 인류 사상 <strong>공인 레이스 첫 서브2</strong>이자 마라톤 세계신기록. 2위 요미프 케젤차(에티오피아)도 1:59:41로 서브2를 달성했습니다. 두 명이 같은 레이스에서 2시간 벽을 깬 첫 사례입니다.</p>
+
+<p>그리고 둘 다 같은 신발을 신었습니다. <strong>아디다스 아디제로 아디오스 프로 에보 3 (Adizero Adios Pro Evo 3)</strong>. 이 글에서는 그 신발이 정확히 무엇인지, 한국에서 어떻게 살 수 있는지, 그리고 정말 살 만한 신발인지 정리합니다.</p>
+
+<h2>한 눈에 보는 에보 3</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>공식명</strong></td><td>Adidas Adizero Adios Pro Evo 3</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2026년 4월 25일 (런던 마라톤 2일 전 한정 출시)</td></tr>
+    <tr><td><strong>한국 출시</strong></td><td>5월 4일 앱 래플 응모 → 5월 7일 당첨자 구매 / 가을 확대 출시</td></tr>
+    <tr><td><strong>글로벌 정가</strong></td><td>$500 / €500</td></tr>
+    <tr><td><strong>한국 정가 (예상)</strong></td><td>74만원 이상 추정 (전작 에보 2 국내가 59만 9,000원)</td></tr>
+    <tr><td><strong>무게</strong></td><td><strong>97g (US M9)</strong> — 업계 최초 서브-100g 마라톤 레이서</td></tr>
+    <tr><td><strong>스택</strong></td><td>힐 39mm / 전족부 36mm (World Athletics 40mm 규제 이내)</td></tr>
+    <tr><td><strong>드롭</strong></td><td>3mm (실측 5.9mm)</td></tr>
+    <tr><td><strong>예상 마일리지</strong></td><td>약 100km — 1~2회 레이스용 소모품</td></tr>
+  </tbody>
+</table>
+
+<h2>97g가 어떻게 가능했나 — 카본 플레이트를 버린 신발</h2>
+
+<p>지난 몇 년 슈퍼슈즈 경쟁의 핵심은 "더 두꺼운 폼 + 더 단단한 카본 플레이트"였습니다. 그런데 이 조합은 무게의 한계가 있었어요. Vaporfly 4도 166g, Alphafly 3는 220g입니다.</p>
+
+<p>아디다스가 에보 3에서 한 일은 <strong>카본 플레이트를 통째로 버린 것</strong>입니다.</p>
+
+<ul>
+  <li><strong>EnergyRim:</strong> 전통 카본 플레이트나 Energy Rods(에보 1·2의 5개 카본 로드) 대신, U자형 외부 림(perimeter)이 신발 둘레를 따라 강성을 잡아줍니다. 전족부에는 외부 블레이드 2개만 추가.</li>
+  <li><strong>Lightstrike Pro EVO:</strong> 신규 폼. 기존 Lightstrike Pro 대비 50% 경량, 에너지 리턴 11% 향상.</li>
+  <li><strong>힐 아웃솔 제거:</strong> 가벼움을 위한 극단적 선택. 전족부에만 Continental 러버 유지.</li>
+  <li><strong>새로운 어퍼:</strong> 카이트서핑 세일 소재에서 영감받은 초경량 직조.</li>
+</ul>
+
+<p>결과는 97g + 에너지 리턴 80.2%(전족부, RunRepeat 실측). 무게는 절반인데 에너지 리턴은 오히려 상위권입니다.</p>
+
+<h2>한국에서 어떻게 사나 — 5월 4일 래플이 거의 유일한 정공법</h2>
+
+<table>
+  <thead>
+    <tr><th>경로</th><th>현실성</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>① 아디다스 앱 래플 (5/4 응모, 5/7 발표)</strong></td><td>가장 합리적. 단 소량 한정 — 당첨 확률 낮음</td></tr>
+    <tr><td><strong>② 가을 확대 출시 (2026년 9월~)</strong></td><td>한국 가을 마라톤 시즌(춘천·서울·JTBC) 직전 추가 물량 예정</td></tr>
+    <tr><td><strong>③ 해외 직구 (adidas.com, Running Warehouse)</strong></td><td>해외도 즉시 품절. 재입고 알림 등록 후 대기</td></tr>
+    <tr><td><strong>④ 리셀 (KREAM, StockX)</strong></td><td>해외 리셀가 4,000달러+ 보고됨. <strong>현실적으로 비추</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">래플 응모 전 체크</p>
+    <p>① 아디다스 공식 앱 회원가입 + 본인인증 완료 ② 결제 수단(카드) 등록 ③ 배송 주소 확인 ④ 응모 시간(공식 공지 확인) 알람 설정. 당첨되면 보통 24~48시간 내 결제해야 자격 유지됩니다.</p>
+  </div>
+</div>
+
+<h2>그래서 살 만한가 — 한국 러너 관점 냉정한 평가</h2>
+
+<h3>✅ 사도 되는 사람</h3>
+
+<ul>
+  <li><strong>서브2:30~서브3:00 페이스 마라토너</strong> — 한 번의 레이스에 모든 걸 거는 경우</li>
+  <li><strong>이미 훈련용 신발 따로 보유한 러너</strong> (예: <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>를 일상으로 신고 에보 3를 레이스 전용으로)</li>
+  <li><strong>주요 목표 대회를 위해 74만원 투자가 부담스럽지 않은 러너</strong> — 춘천·서울·JTBC 같은 1년 한 번의 메이저 PB 도전</li>
+  <li><strong>"세계신기록 신발"의 상징성을 원하는 컬렉터</strong></li>
+</ul>
+
+<h3>❌ 안 사도 되는 (사실 사면 안 되는) 사람</h3>
+
+<ul>
+  <li><strong>서브4 이상 페이스 러너</strong> — 4시간 넘게 신발이 버텨주지 않을 가능성. 마지막 10km 발 통증 위험</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — 토박스 폭이 <strong>65.9mm</strong>로 좁음(narrow) 분류. 와이드 옵션 없음. 풀코스 후반 새끼발가락 통증 거의 확실</li>
+  <li><strong>훈련화 겸용을 원하는 러너</strong> — 마일리지 100km면 한 달이면 끝. km당 7,400원 이상의 소모품</li>
+  <li><strong>처음 카본화를 경험하는 러너</strong> — 드롭 3mm + 극강 로커가 아킬레스/종아리 부하 증가시킴. <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a>나 <a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>로 카본 적응 후 도전 권장</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">서브3 미만이라면 Vaporfly 4가 정답</p>
+    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(약 35만원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(약 29만원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 이상이고 마일리지는 절반 이하예요.</p>
+  </div>
+</div>
+
+<h2>다른 슈퍼슈즈와 비교</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>무게</th><th>한국가</th><th>마일리지</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>에보 3</strong></td>
+      <td>97g</td>
+      <td>74만원~</td>
+      <td>~100km</td>
+      <td>업계 최경량, 1~2회 레이스용</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/nike-vaporfly-4">Vaporfly 4</a></td>
+      <td>166g</td>
+      <td>약 35만원</td>
+      <td>~400km</td>
+      <td>대중적 PB 도전 표준</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/nike-alphafly-3">Alphafly 3</a></td>
+      <td>220g</td>
+      <td>약 36만원</td>
+      <td>~500km</td>
+      <td>쿠션·안정성 우위, 풀코스 후반 강함</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td>
+      <td>159g</td>
+      <td>약 29만원</td>
+      <td>~400km</td>
+      <td>가성비 슈퍼슈즈, 한국 인기 모델</td>
+    </tr>
+    <tr>
+      <td><a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a></td>
+      <td>195g</td>
+      <td>약 32만원</td>
+      <td>~500km</td>
+      <td>토박스 넓음, 한국 발에 유리</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>전작 에보 1·2 흐름 정리</h2>
+
+<ul>
+  <li><strong>에보 1 (2024):</strong> 약 138g. Energy Rods 2.0 + Lightstrike Pro. $500 한정 발매로 "1회용 슈퍼슈즈" 카테고리 개척</li>
+  <li><strong>에보 2 (2025):</strong> 약 139g. 에너지 리턴 5% 향상, 전족부 스택 3mm 증가. 미세 개선에 그쳤다는 평가</li>
+  <li><strong>에보 3 (2026):</strong> <strong>97g + EnergyRim 구조</strong>. 카본 플레이트를 버리는 근본적 구조 변경. 결과 → 런던 세계신기록</li>
+</ul>
+
+<p>한 가지 흥미로운 점: 아디다스 자체 발표로 에보 3는 에보 2 대비 러닝 효율 1.6% 향상. 마라톤 풀코스에서 1.6%는 약 <strong>2분 차이</strong>입니다. 사웨가 1:59:30으로 끊은 게 우연이 아니라는 얘기죠.</p>
+
+<h2>요약 — 사야 하나, 말아야 하나</h2>
+
+<p>저는 산초 에디터로서 두 가지 결론으로 정리합니다.</p>
+
+<ol>
+  <li><strong>응모는 해라.</strong> 어차피 무료입니다. 당첨되면 그때 진짜 살지 결정해도 됩니다. 5월 4일 아디다스 앱.</li>
+  <li><strong>가을 마라톤이 중요한 PB 도전 + 서브3:30 페이스 + 발볼 표준</strong>이면 진지하게 고려할 가치가 있습니다. 그 외에는 <a href="/best/racing">기존 카본화</a>로 충분합니다.</li>
+</ol>
+
+<p>본인의 발볼·체중·페이스에 맞는 카본화 선택이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>을 활용해 후보를 좁혀보세요.</p>
+
+<div class="callout success">
+  <span class="callout-icon">🏃</span>
+  <div class="callout-body">
+    <p class="callout-title">가을 PB 도전이 목표라면</p>
+    <p>춘천마라톤 풀코스 접수가 6월 24일로 예상됩니다. 신발보다 먼저 잡아야 할 게 자리예요. <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 풀코스 접수 가이드</a>에서 광클 전략을 확인하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: 아디다스 공식 보도자료 / Road Trail Run / RunRepeat / The Run Testers / GQ Korea / 한국경제 / WWD / 작성일 2026년 5월 2일 기준 / 한국 정가·출시 일정·래플 방식은 아디다스 코리아 공식 발표에 따라 변동될 수 있습니다.</small></p>
+`,
+  },
+  {
+    id: '2026-chuncheon-marathon-registration-guide',
+    slug: '2026-chuncheon-marathon-registration-guide',
+    title: '2026 춘천마라톤(80주년) 접수 총정리 | 풀코스 7/14·10K 7/16 광클 전략과 코스 분석',
+    description: '국내 최고 PB 친화 코스로 꼽히는 조선일보 춘천마라톤, 창설 80주년입니다. 일반접수는 풀코스 7월 14일(화)·10K 7월 16일(목) 14시 선착순, 참가비 풀 15만·10K 10만 원. 멤버십 얼리버드·완주자 특별접수부터 광클 전략·25km 오르막·교통/숙박·신발 선택까지 완전 가이드.',
+    thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-02',
+    updatedAt: '2026-07-06',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['춘천마라톤', '조선일보 춘천마라톤', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">2026 일반접수 — 풀코스 7/14(화)·10K 7/16(목) 14시 (창설 80주년·제80회)</p>
+    <p><strong>일반접수는 풀코스 2026-07-14(화) 14:00, 10K 2026-07-16(목) 14:00 선착순</strong>입니다. 명예의전당·조선멤버십 얼리버드·완주자 특별접수 등 우선 트랙은 모두 마무리됐고, <strong>이제 남은 관문은 일반접수 광클</strong>입니다 — 풀코스는 코앞이에요. 일반접수는 매년 선착순 수 분 내 마감되니 <strong>지금부터 회원가입·결제수단·신청 정보를 미리 준비</strong>하세요(아래 광클 체크리스트). 최신 정보는 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>에서 확인하세요.</p>
+  </div>
+</div>
+
+<h2>춘천마라톤이 뭐길래</h2>
+
+<p>1946년 창설된 국내 최고(最古) 마라톤 중 하나. 의암호 수변 AIMS 국제공인 코스에서 매년 10월 마지막 주 일요일 열립니다. <strong>"춘마는 뛰어야 진짜 러너"</strong>라는 말이 있을 정도로 국내 마라톤 커뮤니티에서 가장 상징적인 가을 대회입니다.</p>
+
+<p>이 대회가 특별한 이유 세 가지:</p>
+
+<ul>
+  <li><strong>PB 친화적 평탄 코스</strong> — 의암호 따라 도는 흐름이 자연스럽고 고저차가 작음</li>
+  <li><strong>10월 말 서늘한 기온</strong> — 풀코스 페이스 유지에 이상적</li>
+  <li><strong>의암호 단풍 절경</strong> — 풍경이 좋아 심리적 페이스 유지에도 도움</li>
+</ul>
+
+<p>국내 메이저 풀코스(서울·JTBC·춘천) 중 PB 도전에 가장 자주 추천되는 대회가 춘천입니다.</p>
+
+<h2>2026 접수 일정 — 5단계 트랙 (창설 80주년)</h2>
+
+<p>80주년을 맞아 일반접수에 앞서 우선 트랙이 여럿 운영됩니다. 본인이 우선 트랙 대상이라면 일반 광클을 기다릴 필요가 없습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>트랙</th><th>대상</th><th>일정</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>명예의 전당 헌액 예정자</strong></td><td>풀코스 9회 완주자</td><td>신청·결제 6/16(화)~6/19(금)</td></tr>
+    <tr><td><strong>조선멤버십 얼리버드</strong></td><td>조선멤버십 연간 구독자 (선착순 1,000명: 풀 700·10K 300)</td><td>신청 6/23(화) 14시 · 결제 6/24~26 · 80주년 기념 자켓 증정</td></tr>
+    <tr><td><strong>완주자 특별접수</strong></td><td>풀코스 5~8회 완주자 (추첨)</td><td>응모 6/29~7/1 · 당첨 결제 7/6~7/9</td></tr>
+    <tr><td><strong>일반접수 — 풀코스</strong></td><td>누구나 (선착순)</td><td><strong>7/14(화) 14:00</strong></td></tr>
+    <tr><td><strong>일반접수 — 10K</strong></td><td>누구나 (선착순)</td><td><strong>7/16(목) 14:00</strong></td></tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>컷오프</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>풀코스 (42.195km)</strong></td><td>150,000원</td><td>5시간 30분</td></tr>
+    <tr><td><strong>10K</strong></td><td>100,000원</td><td>1시간 30분</td></tr>
+  </tbody>
+</table>
+
+<p class="caption">※ 2025년 대비 참가비가 인상됐습니다 — 풀코스 100,000→150,000원, 10K 80,000→100,000원. 풀코스 제한시간 5시간 30분은 2025년과 동일합니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">신청과 결제는 분리 운영</p>
+    <p>춘천마라톤은 신청(선착순)과 결제가 별도로 이루어집니다. 일반접수 결제 기한은 풀코스 7/20~21·10K 7/22~23경으로, 기한 내 미입금 시 자격이 자동 소멸합니다. <strong>2025년부터 단체 신청은 폐지</strong>되어 모두 개인 접수입니다.</p>
+  </div>
+</div>
+
+<p>풀코스는 만 18세 이상(대회일 기준), 10K는 연령 제한 없습니다. 조선일보 정기 구독자 본인은 결제 시 <strong>10% 할인</strong>이 적용되며, 대리신청·타인 적용은 불가합니다.</p>
+
+<h2>광클 D-Day 전 준비 — 7단계 체크리스트</h2>
+
+<p>풀코스 접수는 매년 오픈 후 수분 내 마감됩니다. 시간이 아니라 <strong>초 단위 경쟁</strong>이라고 보면 됩니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 전날까지 끝낼 7가지</p>
+    <p>① 공식 홈페이지(chuncheonmarathon.com) 회원가입 ② 개인정보·비상연락처 사전 입력 ③ 카드 결제 한도 확인(10만원 이상 가능) ④ <strong>유선랜 연결 PC 준비</strong> — 모바일보다 압도적 안정 ⑤ 브라우저 캐시 삭제, 불필요한 탭 모두 닫기 ⑥ 자동 입력 저장으로 입력 시간 단축 ⑦ <code>time.navyism.com</code>으로 시계 동기화</p>
+  </div>
+</div>
+
+<p>당일 13시 50분에는 로그인 상태로 대기하세요. 평소엔 5분 일찍 들어가도 충분하지만, 춘마 같은 빅 이벤트는 트래픽 폭주로 로그인 자체가 안 되는 경우가 종종 발생합니다.</p>
+
+<p>접수 성공 후 <strong>결제 기한(일반 풀코스 7/20~21경)</strong>은 캘린더에 알람 설정해두세요. 신청만 하고 결제 깜빡해서 자격 잃는 사례가 매년 반복됩니다.</p>
+
+<h2>코스 분석 — 의암호 한 바퀴</h2>
+
+<p>출발 후 의암호 서쪽 수변길을 따라 신매대교까지 내려갔다가 반환, 귀로에서 서상대교·춘천댐 쪽으로 진행하는 구조입니다. 전반적으로 평탄하지만 <strong>오르막이 3구간 집중</strong>됩니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구간</th><th>특징</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>0~5km</strong></td><td>출발 직후 삼천사거리까지 완만한 오르막. 무리하지 말 것</td></tr>
+    <tr><td><strong>약 17km</strong></td><td>강원애니고 방향 약 300m 단거리 오르막. 짧지만 가파름</td></tr>
+    <tr><td><strong>25~30km</strong></td><td>서상대교·춘천댐 구간 — <strong>가장 가파르고 체력 최저점과 겹침</strong>. 매년 기권자 최다 발생</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">초반 의암호 풍경에 오버페이스 주의</p>
+    <p>춘천 풀코스에서 가장 흔한 실패 패턴: 0~15km 구간 풍경에 들떠 목표보다 빠르게 달리고, 25km 댐 구간에서 무너집니다. 처음 20km는 목표 페이스보다 5~10초 느리게, 안정 페이스를 유지하는 게 정석입니다.</p>
+  </div>
+</div>
+
+<h2>교통과 숙박 — 접수와 동시에 예약</h2>
+
+<h3>공식 셔틀버스 (왕복 2만원)</h3>
+
+<p>서울 4개 거점에서 새벽 6시 일제 출발, 귀가편은 오후 2시 30분~4시 만차순 출발입니다. 공식 홈페이지 사전 예약 필수이며 매년 조기 마감.</p>
+
+<ul>
+  <li>시청역 2번 출구</li>
+  <li>잠실역 6번 출구</li>
+  <li>신도림역 1번 출구</li>
+  <li>사당역 12번 출구</li>
+</ul>
+
+<h3>ITX 청춘 (강력 추천)</h3>
+
+<table>
+  <thead>
+    <tr><th>출발역</th><th>소요 시간</th><th>요금</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>용산역 → 춘천역</td><td>74~80분</td><td>9,800원</td></tr>
+    <tr><td>청량리역 → 춘천역</td><td>58~64분</td><td>7,100원</td></tr>
+  </tbody>
+</table>
+
+<p>대회 당일 오전 5시 30분 이전 출발 권장. 주말 좌석은 빠른 매진 — <strong>대회 접수 직후 기차표도 함께 예매</strong>하세요. 춘천역에서 대회장(공지천 의암공원)까지는 도보 20분 또는 택시 5~10분.</p>
+
+<h3>숙박 — 전날 1박 강력 권장</h3>
+
+<p>당일치기는 셔틀(새벽 6시) 또는 ITX(새벽 5시 30분) 출발이라 체력 소모가 큽니다. 풀코스 PB가 목표라면 무조건 전날 숙박이 유리합니다.</p>
+
+<ul>
+  <li>공지천 인근(더잭슨나인스호텔, 에스턴호텔, 호텔공지천): 도보 5~10분 — 최적</li>
+  <li>대회 시즌 9월부터 만실 시작 — 접수 성공 즉시 예약 필수</li>
+  <li>저녁 메뉴는 익숙한 한식 카보로딩 권장. 처음 가는 닭갈비집은 모험 금물</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">자가용은 비추천</p>
+    <p>대회 당일 오전 7시~오후 3시 30분 교통통제. 자가용 이용 시 새벽 5시 이전 도착해야 하며, 공지천 공영주차장(약 50대)은 조기 만차됩니다.</p>
+  </div>
+</div>
+
+<h2>풀코스 신발 선택 — 평탄 PB 코스에 맞춰</h2>
+
+<p>춘천 풀코스는 평탄·서늘 조건이 갖춰져 카본 플레이트 레이싱화가 가장 빛을 발하는 환경입니다. 다만 본인 페이스에 맞는 선택이 중요합니다.</p>
+
+<ul>
+  <li><strong>서브3 (목표 4:15/km 이하):</strong> 카본 슈퍼슈즈 — <a href="/best/racing">레이싱화 추천</a>에서 비교</li>
+  <li><strong>서브4 (목표 5:40/km):</strong> 카본화 또는 슈퍼트레이너. 30km 이후 쿠션 유지가 관건</li>
+  <li><strong>완주 목표 (5시간 내외):</strong> 쿠션 든든한 데일리 트레이너가 안전 — <a href="/best/max-cushion">맥스 쿠션 신발</a></li>
+  <li><strong>처음 풀코스 도전:</strong> 카본화 신지 마세요. 페이스 유지 + 부상 방지가 우선 — <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
+</ul>
+
+<p>레이스용 신발은 <strong>대회 6~8주 전 구입</strong>해 40~60km 정도 길들이고 출전하세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
+
+<h2>훈련 일정 — 지금부터 약 18주</h2>
+
+<p>10월 25일 대회 기준, <strong>16~20주 빌드업이 표준</strong>입니다. 지금(6월 하순)부터 시작하면 약 18주 — 기초 체력부터 차근차근 쌓기 좋은 시점입니다.</p>
+
+<ul>
+  <li><strong>5~7월 (기초기):</strong> 주 30~50km, LSD 위주로 베이스 구축</li>
+  <li><strong>8~9월 (강화기):</strong> 인터벌·템포런 추가, 주 50~70km</li>
+  <li><strong>10월 초중순 (피크):</strong> 32~35km 장거리 1회 필수</li>
+  <li><strong>대회 2주 전 (테이퍼링):</strong> 거리 절반으로 감소, 회복 우선</li>
+</ul>
+
+<p>풀코스 후반(20km+) 에너지 보충 전략은 <a href="/gels">에너지젤 가이드</a>에서 확인하세요.</p>
+
+<h2>접수 마감 후 대안</h2>
+
+<p>풀코스는 매년 분 단위로 마감되므로 광클 실패 가능성이 적지 않습니다. 실패 시 대안:</p>
+
+<ul>
+  <li><strong>공식 인스타 추가접수 공지 모니터링</strong> — 결제 기한 내 미납자가 발생하면 추가 오픈하는 경우 있음</li>
+  <li><strong>10K로 종목 변경</strong> — 7/16(목) 접수 오픈, 풀코스보다 경쟁 덜함</li>
+  <li><strong>JTBC 서울마라톤 (11월 1일)</strong> — 추첨제이지만 도시형 코스라는 다른 매력</li>
+  <li><strong>경주국제마라톤 (10월 17일)</strong> — 동마클럽 계열 메이저 대회. 자세한 일정은 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 접수 일정</a>에서</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🍂</span>
+  <div class="callout-body">
+    <p class="callout-title">춘마는 PB 도전과 가을 여행을 함께</p>
+    <p>대회 자체도 좋지만, 가족·친구와 함께 1박 2일 춘천 여행 코스로 묶으면 추억까지 남습니다. 의암호 단풍, 닭갈비, 카페 — 풀코스 완주 후 보상으로 더할 나위 없죠.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 02-724-6333~6336</p>
+
+<p>국내 다른 가을 마라톤도 함께 검토하시려면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교해보세요.</p>
+
+<p><small>출처: 춘천마라톤 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a> · 조선일보 보도 / 작성 2026년 5월 2일 · 접수 일정·참가비 갱신 2026년 6월 22일(6/11 공식 발표 반영). 트랙별 정원·결제 기한은 공식 공지로 최종 확인하세요.</small></p>
+`,
+  },
+  {
+    id: '2026-anyangcheon-rose-marathon',
+    slug: '2026-anyangcheon-rose-marathon',
+    title: '2026 안양천 장미꽃축제 마라톤 | 5월 23일(토) · 접수 5월 14일 마감',
+    description: '서울 영등포 신정교에서 열리는 2026 안양천 장미꽃축제 마라톤 정보를 정리했습니다. 하프·10K·5K 종목별 참가비, 평탄 코스, 5월 하순 무더위 대응까지 — 접수 마감은 5월 14일.',
+    thumbnail: '/images/blog/2026-anyangcheon-rose-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-05-02',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['안양천 마라톤', '장미꽃축제', '서울 마라톤', '봄 마라톤', '하프마라톤', '대회 일정'],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">접수 마감 D-12 — 5월 14일(목)까지</p>
+    <p>대회는 5월 23일(토), 접수는 5월 14일(목)까지입니다. 매년 정원이 차면 조기 마감되는 종목이 있어 참가 의향이 있다면 이번 주 안에 결정하시는 게 좋습니다.</p>
+  </div>
+</div>
+
+<h2>한 눈에 보는 대회 정보</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>대회명</strong></td><td>2026 안양천 장미꽃축제 마라톤</td></tr>
+    <tr><td><strong>일시</strong></td><td>2026년 5월 23일(토)</td></tr>
+    <tr><td><strong>장소</strong></td><td>신정교 하부 영롱이 억새구장 (서울 영등포구 영등포로2길 62)</td></tr>
+    <tr><td><strong>종목</strong></td><td>하프(21.1km) · 10K · 5K</td></tr>
+    <tr><td><strong>접수 마감</strong></td><td>2026년 5월 14일(목)</td></tr>
+    <tr><td><strong>주최</strong></td><td>(사)대한생활체육연맹</td></tr>
+    <tr><td><strong>접수처</strong></td><td><a href="https://roserun.kr/join/register.asp" rel="noopener noreferrer">roserun.kr</a></td></tr>
+  </tbody>
+</table>
+
+<h2>종목별 참가비와 출발 시간</h2>
+
+<table>
+  <thead>
+    <tr><th>종목</th><th>참가비</th><th>출발 시간 (공식 홈페이지 기준)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>하프 (21.1km)</strong></td><td>50,000원</td><td>오전 8:00</td></tr>
+    <tr><td><strong>10K</strong></td><td>50,000원</td><td>오전 8:15</td></tr>
+    <tr><td><strong>5K</strong></td><td>45,000원</td><td>오전 8:45</td></tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <span class="callout-icon">ℹ️</span>
+  <div class="callout-body">
+    <p class="callout-title">출발 시간은 공식 홈페이지 재확인 필수</p>
+    <p>외부 집계 사이트마다 출발 시간이 09:00 단일로 표기된 곳도 있습니다. 위 시간은 공식 홈페이지(roserun.kr) 기준이며, 대회 1주일 전 최종 안내 문자/이메일을 반드시 확인하세요.</p>
+  </div>
+</div>
+
+<h2>평탄 안양천 자전거도로 — 페이스 유지에 유리</h2>
+
+<p>안양천 마라톤 코스의 가장 큰 매력은 <strong>거의 평탄한 직선 위주의 자전거도로</strong>라는 점입니다. 신정교 출발 후 안양천 수변로를 따라 왕복하는 형태로, 고저차가 거의 없어서 페이스 유지가 쉽습니다.</p>
+
+<ul>
+  <li><strong>노면:</strong> 자전거도로·수변 산책로 포장 양호 — 발목 부담 적음</li>
+  <li><strong>고저차:</strong> 무시할 수준 — PB 도전이나 첫 하프 도전 모두 적합</li>
+  <li><strong>풍경:</strong> 5월 하순 안양천변 장미와 녹음, 강변 자전거도로 특유의 개방감</li>
+  <li><strong>혼잡:</strong> 주말 자전거·산책객과 공유 구간 — 우측 주행 엄수 필수</li>
+</ul>
+
+<h2>5월 23일 — 무더위 대응이 핵심</h2>
+
+<p>5월 하순 서울의 오전 기온은 이미 한여름에 가깝습니다. 평년 5월 23일 서울 일 최고기온은 <strong>약 23~26℃</strong>이며, 자외선 지수는 '매우 높음' 수준입니다. 하프 종목은 8시 출발이라도 골인 직전 10시경에는 이미 20℃를 훌쩍 넘는 경우가 많습니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">초여름 마라톤 체크리스트</p>
+    <p>① 모자/선캡 + 선글라스 필수 ② 자외선 차단제는 땀에 강한 스포츠용 ③ 급수대에서 물 + 머리·목 적시기 ④ 컨디션 이상 시 즉시 페이스 다운 — 이 시기는 PB보다 안전 완주가 우선입니다.</p>
+  </div>
+</div>
+
+<h2>봄~초여름 어떤 러닝화로 뛸까</h2>
+
+<p>안양천 평탄 코스는 신발 선택의 폭이 넓은 편입니다. 본인 목표에 맞춰 고르면 됩니다.</p>
+
+<ul>
+  <li><strong>첫 하프 도전:</strong> 쿠셔닝 든든한 데일리 트레이너가 정답입니다. 안전 완주가 목표라면 무리해서 카본화를 신을 필요가 없어요. <a href="/best/max-cushion">쿠션 러닝화 추천</a>에서 확인하세요.</li>
+  <li><strong>PB 도전 (하프 1:30~2:00 권):</strong> 평탄·서늘한 시간대라면 <a href="/best/daily-trainer">데일리 트레이너 추천</a>도 충분합니다.</li>
+  <li><strong>PB 도전 (서브3 페이스):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a>을 참고하세요.</li>
+  <li><strong>5K 가족 참여:</strong> 평소 신는 데일리화면 충분합니다.</li>
+</ul>
+
+<p>본인 발볼·체중·주간 거리에 맞는 러닝화가 궁금하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
+
+<h2>접수 전 마지막 체크리스트</h2>
+
+<ul>
+  <li>참가 종목 결정 (하프/10K/5K)</li>
+  <li>roserun.kr 회원가입 및 신청서 작성</li>
+  <li>참가비 입금 — 하나은행 364-910019-84004 / (사)대한생활체육연맹</li>
+  <li>대중교통 이용 권장 — 5호선 오목교역·까치산역 도보 15~20분</li>
+  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·집결 시각)</li>
+</ul>
+
+<div class="callout success">
+  <span class="callout-icon">🌹</span>
+  <div class="callout-body">
+    <p class="callout-title">대회 후엔 장미꽃축제도 함께</p>
+    <p>안양천 장미꽃축제는 5월 중순부터 6월 초까지 이어집니다. 완주 후 메달 걸고 장미터널 산책 — 봄 시즌 대회만의 특권입니다.</p>
+  </div>
+</div>
+
+<p>주최 측 문의: 02-2636-7775 / start@roserun.kr</p>
+
+<p>국내 다른 봄·여름 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 확인할 수 있습니다.</p>
+
+<p><small>출처: 안양천 장미꽃축제 마라톤 공식 홈페이지 <a href="https://roserun.kr/" rel="noopener noreferrer">roserun.kr</a> · 작성일 2026년 5월 2일 기준 / 출발 시각·코스는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
+`,
+  },
+];

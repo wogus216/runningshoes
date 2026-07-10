@@ -108,7 +108,8 @@
    → HTML/CSS 인포그래픽 → Chrome DevTools 스크린샷 → WebP
    → 가능하면 public/images/shoes/ 실제 신발 이미지 활용
 
-4. posts.ts 맨 앞에 추가 → npm run build
+4. `src/lib/data/blog/posts/{발행월 YYYY-MM}.ts` 배열 맨 앞에 추가 → npm run build
+   (해당 월 파일이 없으면 생성 후 `posts/index.ts`에 import+스프레드 등록. 2026-07 이후 posts.ts는 월별 분할됨)
 
 5. git add + commit + push → Vercel 자동 배포
 ```
@@ -117,7 +118,7 @@
 
 - 인스타 콘텐츠 추출은 반드시 **`researcher` 서브에이전트**에 위임 (take_snapshot 직접 사용 금지)
 - 썸네일은 1회에 완성 (반복 스크린샷 최소화)
-- posts.ts는 편집(Edit)만 사용, Read 반복 금지
+- 블로그 데이터는 월별 파일 `posts/{YYYY-MM}.ts` 편집(Edit)만 사용, Read 반복 금지
 
 ### 카테고리 자동 판단 기준
 

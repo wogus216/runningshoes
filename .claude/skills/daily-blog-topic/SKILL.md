@@ -24,7 +24,7 @@ description: >-
 
 - 세션 메모리 시스템에 글감 백로그 성격의 파일이 있는지 확인한다(보통 이름에 `content-backlog`가 들어간다; 메모리 인덱스 파일에서 찾는다). 없으면 이 프로젝트에 아직 그런 메모리가 없다는 뜻이니 건너뛴다.
 - `git log --oneline -20`으로 최근 발행 흐름을 파악한다.
-- **백로그에 "미발행"이라 적힌 항목은 stale할 위험이 크다.** 반드시 `grep "slug: '<후보>'" src/lib/data/blog/posts.ts`로 실제 미발행인지 재확인한 뒤 진행한다 — 과거 세션에서 백로그의 "미발행" 다수가 이미 발행 완료 상태였던 사례가 여러 번 있었다.
+- **백로그에 "미발행"이라 적힌 항목은 stale할 위험이 크다.** 반드시 `grep -r "slug: '<후보>'" src/lib/data/blog/posts/`로 실제 미발행인지 재확인한 뒤 진행한다 — 과거 세션에서 백로그의 "미발행" 다수가 이미 발행 완료 상태였던 사례가 여러 번 있었다.
 
 ## 2. 신선한 트리거 탐색
 
@@ -50,7 +50,7 @@ WebSearch 결과 요약은 여러 출처를 뭉뚱그려 서술해서, 그럴듯
 
 ## 6. 작성
 
-`src/lib/data/blog/posts.ts`의 `blogPosts` 배열 **맨 앞**에 새 객체로 Edit 삽입한다.
+`src/lib/data/blog/posts/{발행월 YYYY-MM}.ts`의 배열(`posts_YYYY_MM`) **맨 앞**에 새 객체로 Edit 삽입한다. (해당 월 파일이 없으면 생성 후 `posts/index.ts`에 import+스프레드 등록. 2026-07부터 월별 분할됨)
 
 - 카테고리(`news`/`guide`/`tips`/`review`) 판단 기준은 `CLAUDE.md`의 "카테고리 자동 판단 기준" 표를 따른다.
 - 메타: `id`/`slug`(소문자·하이픈), `author: '산초 에디터'`, `publishedAt`은 오늘, `readingTime`은 본문 분량에 맞게, `tags`.
@@ -78,7 +78,7 @@ Chrome 확장이 연결돼 있고 여러 신발을 카드형으로 나란히 배
 ## 9. 커밋·배포
 
 - 빌드가 재생성한 로컬 sitemap은 되돌린다: `git checkout public/sitemap-0.xml` — 로컬 빌드 시점엔 방금 만든 커밋이 아직 git 로그에 없어 `next-sitemap`이 산출하는 lastmod가 부정확할 수 있고, 어차피 Vercel이 배포 시 정확히 재생성한다.
-- `git add`: `posts.ts` + 썸네일 webp + (신발 데이터를 건드렸으면 해당 `shoes/*.ts`).
+- `git add`: `src/lib/data/blog/posts/` + 썸네일 webp + (신발 데이터를 건드렸으면 해당 `shoes/*.ts`).
 - 커밋 메시지: `feat(blog): {요약}` + 본문에 각도·시의성 근거.
 - **push 타이밍**: 기본은 한 세션에 여러 편(3~4편)을 개별 커밋으로 쌓고 **마지막에 한 번만 push**한다(배포 노이즈·롤백 리스크 관리). **예외는 진짜 시계에 묶인 시의성뿐이다** — 오늘 마감인 모집 공고, 오늘이 정확히 글로벌 출시일인 신상처럼 "미루면 내용 자체가 틀려지거나 의미가 없어지는" 경우만 즉시 개별 push한다. 애매하면(예: "출시 당일"이 훅이지만 `publishedAt` 날짜만 맞으면 되는 경우) 사용자에게 지금 push할지 물어본다.
 
