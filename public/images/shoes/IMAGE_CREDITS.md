@@ -116,3 +116,18 @@ If you are a copyright holder and believe your content has been used inappropria
 - Source: ASICS 공식 (images.asics.com, SKU 1011C167-100 White/Energy Aqua, 투명 PNG)
 - Date: 2026-06-05
 - Images: 5 (side, front, back, angle, outsole)
+
+## ASICS Novablast 6 (노바블라스트 6)
+- Source: ASICS 공식 (images.asics.com Scene7, SKU 1011C243-250 Soft Oat, fmt=png-alpha 투명 PNG)
+- Date: 2026-07-11
+- Images: 5 (side, front, back, angle, outsole)
+
+## Nike ACG Zegama Trail (ACG 제가마 트레일)
+- Source: Nike 공식 (static.nike.com, style HV8113, @imgly 배경제거 후 투명)
+- Date: 2026-07-11
+- Images: 1 (side)
+
+## New Balance Fresh Foam X Hierro v9 (히에로 v9)
+- Source: New Balance 공식 (nb.scene7.com, style MTHIERV9, @imgly 배경제거 후 투명)
+- Date: 2026-07-11
+- Images: 4 (side, top, detail, outsole)

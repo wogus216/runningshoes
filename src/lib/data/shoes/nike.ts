@@ -1381,6 +1381,10 @@ export const nikeShoes: Shoe[] = [
     slug: 'nike-acg-zegama-trail',
     brand: 'Nike',
     name: 'ACG 제가마 트레일',
+    image: '/images/shoes/nike/zegama-trail/side.webp',
+    images: [
+      '/images/shoes/nike/zegama-trail/side.webp',
+    ],
     category: '트레일',
     rating: 4.5,
     price: 219000,

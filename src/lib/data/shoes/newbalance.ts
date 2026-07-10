@@ -1085,6 +1085,13 @@ export const newbalanceShoes: Shoe[] = [
     slug: 'new-balance-hierro-v9',
     brand: 'New Balance',
     name: '히에로 v9',
+    image: '/images/shoes/newbalance/hierrov9/side.webp',
+    images: [
+      '/images/shoes/newbalance/hierrov9/side.webp',
+      '/images/shoes/newbalance/hierrov9/top.webp',
+      '/images/shoes/newbalance/hierrov9/detail.webp',
+      '/images/shoes/newbalance/hierrov9/outsole.webp',
+    ],
     category: '트레일',
     rating: 4.3,
     price: 189000,
