@@ -101,3 +101,35 @@ export function getRelatedPosts(slug: string, limit: number = 3): BlogPost[] {
 export function getRelatedPostsMeta(slug: string, limit: number = 3): BlogPostMeta[] {
   return getRelatedPosts(slug, limit).map(toPostMeta);
 }
+
+/**
+ * 신발 slug → 그 신발을 본문에서 링크하는 블로그 글 목록 (최신순, { slug, title }).
+ * 신발 상세 페이지 relatedPosts 폴백용 — curated relatedPosts가 없는 신발을 자동으로 채운다.
+ * SSG 서버에서만 호출(클라 번들 영향 없음). 첫 호출 시 역인덱스를 1회 구축해 메모이즈.
+ */
+let shoeLinkIndex: Map<string, { slug: string; title: string }[]> | null = null;
+
+function buildShoeLinkIndex(): Map<string, { slug: string; title: string }[]> {
+  const index = new Map<string, { slug: string; title: string }[]>();
+  // getAllPosts()는 최신순 → 삽입 순서가 곧 최신순
+  for (const post of getAllPosts()) {
+    const linkedSlugs = Array.from(
+      new Set(Array.from(post.content.matchAll(/\/shoes\/([a-z0-9-]+)/g), (m) => m[1]))
+    );
+    for (const shoeSlug of linkedSlugs) {
+      const ref = { slug: post.slug, title: post.title };
+      const list = index.get(shoeSlug);
+      if (list) list.push(ref);
+      else index.set(shoeSlug, [ref]);
+    }
+  }
+  return index;
+}
+
+export function getPostsLinkingToShoe(
+  shoeSlug: string,
+  limit: number = 4
+): { slug: string; title: string }[] {
+  if (!shoeLinkIndex) shoeLinkIndex = buildShoeLinkIndex();
+  return (shoeLinkIndex.get(shoeSlug) ?? []).slice(0, limit);
+}

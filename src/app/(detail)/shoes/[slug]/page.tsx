@@ -15,6 +15,7 @@ import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
 import { RelatedPosts } from '@/components/detail/related-posts';
+import { getPostsLinkingToShoe } from '@/lib/data/blog';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -178,6 +179,12 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
   // 비슷한 신발 데이터 가져오기 (서버에서 미리 로드)
   const similarShoesData = shoe.similarShoes ? getSimilarShoesData(shoe.similarShoes) : [];
+
+  // 관련 블로그: curated relatedPosts 우선, 없으면 본문에서 이 신발을 링크한 글로 자동 폴백
+  const relatedPosts =
+    shoe.relatedPosts && shoe.relatedPosts.length > 0
+      ? shoe.relatedPosts
+      : getPostsLinkingToShoe(shoe.slug);
 
   // priceAnalysis.alternatives → 서버에서 slug/brand/name으로 미리 resolve
   // (클라이언트에서 getShoes() 호출 제거 → 번들 경량화)
@@ -404,8 +411,8 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
           label="본문 하단 광고"
         />
 
-        {/* 관련 블로그(비교·후기) 회유 — relatedPosts 있을 때만 */}
-        <RelatedPosts posts={shoe.relatedPosts} />
+        {/* 관련 블로그(비교·후기) 회유 — curated 우선, 없으면 본문 링크 기반 자동 폴백 */}
+        <RelatedPosts posts={relatedPosts} />
 
         {/* PSEO 교차 링크 */}
         <ShoeCrossLinks shoe={shoe} />
