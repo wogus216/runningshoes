@@ -2,8 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Pretendard 폰트 */
-@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* Pretendard는 next/font/local(layout.tsx)로 셀프호스트 → --font-pretendard 변수로 주입 */
 
 :root {
   /* Performance Editorial */
@@ -58,7 +57,7 @@
 @layer base {
   * {
     @apply border-[var(--border)];
-    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-family: var(--font-pretendard), 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 
   body {

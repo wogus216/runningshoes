@@ -56,7 +56,7 @@ const config: Config = {
         sm: "calc(var(--radius) - 4px)",
       },
       fontFamily: {
-        sans: ["Pretendard", ...fontFamily.sans],
+        sans: ["var(--font-pretendard)", "Pretendard", ...fontFamily.sans],
       },
       keyframes: {
         "fade-in": {
