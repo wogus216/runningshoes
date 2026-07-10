@@ -1,12 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { BlogPost, BlogCategory, categoryLabels, categoryOrder } from '@/types/blog';
+import { BlogPostMeta, BlogCategory, categoryLabels, categoryOrder } from '@/types/blog';
 import { BlogCard } from './blog-card';
 
 interface BlogListProps {
-  allPosts: BlogPost[];
-  featuredPosts: BlogPost[];
+  allPosts: BlogPostMeta[];
 }
 
 export function BlogList({ allPosts }: BlogListProps) {

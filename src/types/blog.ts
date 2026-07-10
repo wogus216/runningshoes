@@ -41,6 +41,14 @@ export interface BlogPost {
   event?: BlogEvent;
 }
 
+/**
+ * 목록/카드용 경량 포스트 메타 (본문 content 제외, thumbnail 사전 해석).
+ * 블로그 목록 페이지가 192편 전체 content를 클라이언트로 직렬화하지 않도록 하기 위한 projection.
+ */
+export type BlogPostMeta = Omit<BlogPost, 'content' | 'thumbnail'> & {
+  thumbnail: string | null;
+};
+
 export const categoryLabels: Record<BlogCategory, string> = {
   guide: '가이드',
   review: '리뷰',

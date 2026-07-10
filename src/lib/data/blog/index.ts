@@ -1,13 +1,30 @@
-import { BlogPost, BlogCategory } from '@/types/blog';
+import { BlogPost, BlogPostMeta, BlogCategory } from '@/types/blog';
 import { blogPosts } from './posts';
 
 /**
  * 모든 블로그 포스트 가져오기 (최신순)
+ * 원본 배열을 복사한 뒤 정렬한다 (in-place sort 부작용 방지)
  */
 export function getAllPosts(): BlogPost[] {
-  return blogPosts.sort((a, b) => {
+  return [...blogPosts].sort((a, b) => {
     return new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime();
   });
+}
+
+/**
+ * 단일 포스트 → 경량 메타 projection (본문 content 제외, thumbnail 사전 해석)
+ */
+export function toPostMeta(post: BlogPost): BlogPostMeta {
+  const { content, thumbnail, ...rest } = post;
+  return { ...rest, thumbnail: thumbnail ?? extractThumbnail(content) };
+}
+
+/**
+ * 목록/카드용 경량 메타 배열 (본문 content 제외, thumbnail 사전 해석)
+ * 목록 페이지가 전체 본문을 클라이언트로 직렬화하지 않도록 이 함수를 사용한다.
+ */
+export function getPostsMeta(): BlogPostMeta[] {
+  return getAllPosts().map(toPostMeta);
 }
 
 /**
@@ -76,4 +93,11 @@ export function getRelatedPosts(slug: string, limit: number = 3): BlogPost[] {
     )
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
     .slice(0, limit);
+}
+
+/**
+ * 관련 포스트를 카드용 경량 메타로 반환 (BlogCard는 content 불필요)
+ */
+export function getRelatedPostsMeta(slug: string, limit: number = 3): BlogPostMeta[] {
+  return getRelatedPosts(slug, limit).map(toPostMeta);
 }

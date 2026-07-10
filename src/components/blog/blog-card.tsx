@@ -1,11 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BlogPost, categoryLabels } from '@/types/blog';
-import { getPostThumbnail } from '@/lib/data/blog';
+import { BlogPostMeta, categoryLabels } from '@/types/blog';
 import { img } from '@/lib/image';
 
 interface BlogCardProps {
-  post: BlogPost;
+  post: BlogPostMeta;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
@@ -15,7 +14,7 @@ export function BlogCard({ post }: BlogCardProps) {
     day: 'numeric',
   });
 
-  const thumbnail = getPostThumbnail(post);
+  const thumbnail = post.thumbnail;
 
   return (
     <Link href={`/blog/${post.slug}`} className="group block">

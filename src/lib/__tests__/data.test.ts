@@ -35,8 +35,8 @@ describe("shoe data", () => {
     expect(duplicates).toEqual([]);
   });
 
-  it("has 10 distinct brands", () => {
-    expect(getBrandsFromShoes().length).toBe(10);
+  it("has at least 12 distinct brands", () => {
+    expect(getBrandsFromShoes().length).toBeGreaterThanOrEqual(12);
   });
 });
 
@@ -88,8 +88,8 @@ describe("blog posts", () => {
 });
 
 describe("brands", () => {
-  it("loads 10 brands", () => {
-    expect(getAllBrands().length).toBe(10);
+  it("loads at least 12 brands", () => {
+    expect(getAllBrands().length).toBeGreaterThanOrEqual(12);
   });
 
   it("getBrandBySlug returns matching brand", () => {

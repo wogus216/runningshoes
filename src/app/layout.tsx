@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import Script from "next/script";
 import "@/app/globals.css";
 import { cn } from "@/lib/utils";
@@ -11,11 +10,6 @@ import { getShoes } from "@/lib/data/shoes";
 
 const SHOE_COUNT = getShoes().length;
 const SITE_DESCRIPTION_WITH_COUNT = `${SHOE_COUNT}개 ${SITE_DESCRIPTION}`;
-
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-sans",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -146,11 +140,10 @@ const organizationJsonLd = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="ko" suppressHydrationWarning>
-      <body className={cn("min-h-screen font-sans antialiased", inter.variable)}>
-        {/* 이미지 CDN(jsDelivr) 사용 시 LCP 방어용 preconnect (React 19가 head로 hoist) */}
-        {process.env.NEXT_PUBLIC_IMAGE_CDN && (
-          <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-        )}
+      <body className={cn("min-h-screen font-sans antialiased")}>
+        {/* Pretendard 폰트(@import)와 이미지 CDN 모두 jsDelivr 사용 → LCP 방어용 preconnect (React 19가 head로 hoist) */}
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
         {/* GA4 */}
         {GA_MEASUREMENT_ID && (
           <>

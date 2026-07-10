@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft } from 'lucide-react';
-import { getPostBySlug, getAllPosts, getRelatedPosts } from '@/lib/data/blog';
+import { getPostBySlug, getAllPosts, getRelatedPostsMeta } from '@/lib/data/blog';
 import { categoryLabels } from '@/types/blog';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
 import { BlogCard } from '@/components/blog/blog-card';
@@ -78,7 +78,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     notFound();
   }
 
-  const relatedPosts = getRelatedPosts(slug);
+  const relatedPosts = getRelatedPostsMeta(slug);
 
   const publishDate = new Date(post.publishedAt).toLocaleDateString('ko-KR', {
     year: 'numeric',

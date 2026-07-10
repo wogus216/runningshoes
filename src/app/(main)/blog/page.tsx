@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { getAllPosts, getFeaturedPosts } from '@/lib/data/blog';
+import { getPostsMeta } from '@/lib/data/blog';
 import { BlogList } from '@/components/blog/blog-list';
 
 export const metadata: Metadata = {
@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const allPosts = getAllPosts();
-  const featuredPosts = getFeaturedPosts();
+  const allPosts = getPostsMeta();
+  const featuredCount = allPosts.filter((post) => post.featured).length;
   const blogStats = [
     { label: '전체 글', value: `${allPosts.length}+` },
-    { label: '추천 글', value: `${featuredPosts.length}` },
+    { label: '추천 글', value: `${featuredCount}` },
     { label: '주제', value: '가이드' },
   ];
 
@@ -63,7 +63,7 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <BlogList allPosts={allPosts} featuredPosts={featuredPosts} />
+      <BlogList allPosts={allPosts} />
     </div>
   );
 }

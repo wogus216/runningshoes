@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe, Activity } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { getShoes } from '@/lib/data/shoes';
-import { blogPosts } from '@/lib/data/blog/posts';
+import { getPostsMeta } from '@/lib/data/blog';
 
 export const metadata: Metadata = {
   title: '사이트 소개',
@@ -61,10 +61,11 @@ const aboutPageJsonLd = {
 
 export default function AboutPage() {
   const shoeCount = getShoes().length;
-  const postCount = blogPosts.length;
-  const reviewCount = blogPosts.filter((p) => p.category === 'review').length;
-  const guideCount = blogPosts.filter((p) => p.category === 'guide').length;
-  const newsCount = blogPosts.filter((p) => p.category === 'news').length;
+  const posts = getPostsMeta();
+  const postCount = posts.length;
+  const reviewCount = posts.filter((p) => p.category === 'review').length;
+  const guideCount = posts.filter((p) => p.category === 'guide').length;
+  const newsCount = posts.filter((p) => p.category === 'news').length;
 
   const siteStats = [
     { label: '러닝화 분석', value: `${shoeCount}개`, desc: '10개 브랜드 데이터 검증' },

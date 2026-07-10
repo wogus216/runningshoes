@@ -21,6 +21,8 @@ const nextConfig = {
     // Vercel Hobby 무료 한도(Image Optimization Transformations 5K/월) 절약을 위해
     // 사전 WebP 변환된 원본을 그대로 서빙. lazy loading·width/height 자동 처리는 유지됨.
     unoptimized: true,
+    // ⚠️ 아래 3개(formats/deviceSizes/imageSizes)는 unoptimized:true 에서는 무시된다.
+    // unoptimized 를 끄고 Vercel Image Optimization 을 켤 경우에만 유효해지므로 기준값으로 보존.
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [48, 96, 128, 256, 384],
