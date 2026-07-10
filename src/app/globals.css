@@ -296,6 +296,14 @@
 [data-blog-content] tbody tr:last-child td { border-bottom: none; }
 [data-blog-content] tbody tr:nth-child(even) { background: rgba(241,250,255,0.6); }
 [data-blog-content] tbody tr:hover { background: rgba(224,242,254,0.5); }
+/* 모바일: 넓은 비교표는 셀 뭉개짐 대신 가로 스크롤 (데스크톱 렌더 무변) */
+@media (max-width: 640px) {
+  [data-blog-content] table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
 
 /* 이미지 */
 [data-blog-content] img {
