@@ -60,7 +60,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
   return (
     <div className="space-y-5">
-      <div className="sticky top-16 z-40 overflow-hidden rounded-[30px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] p-2 shadow-[0_24px_48px_-38px_rgba(8,18,38,0.62)] backdrop-blur-xl">
+      <div className="sticky top-16 z-40 overflow-hidden rounded-[28px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] p-2 shadow-[0_24px_48px_-38px_rgba(8,18,38,0.62)] backdrop-blur-xl">
         <div className="mb-2 px-3 pt-1">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-100/45">Detail Panel</p>
         </div>
@@ -86,12 +86,12 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
       <div className="space-y-4">
         <div className={activeTab === 'specs' ? '' : 'hidden'}>
           {shoe.specs && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} />
             </div>
           )}
           {shoe.specs && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(239,247,255,0.92))] p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(239,247,255,0.92))] p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] md:p-6">
               <div className="mb-5">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Spec Chart</p>
                 <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">숫자로 보는 성향</h2>
@@ -104,7 +104,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
             </div>
           )}
           {shoe.detailedSpecs && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <DetailedSpecs specs={shoe.detailedSpecs} />
             </div>
           )}
@@ -112,7 +112,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
         <div className={activeTab === 'biomechanics' ? '' : 'hidden'}>
           {shoe.biomechanics && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <BiomechanicsAnalysis biomechanics={shoe.biomechanics} weight={shoe.specs?.weight} />
             </div>
           )}
@@ -120,7 +120,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
         <div className={activeTab === 'injury' ? '' : 'hidden'}>
           {shoe.injuryPrevention && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
             </div>
           )}
@@ -128,7 +128,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
         <div className={activeTab === 'koreanfoot' ? '' : 'hidden'}>
           {shoe.koreanFootFit && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <KoreanFootFit
                 koreanFootFit={shoe.koreanFootFit}
                 shoeName={shoe.name}
@@ -137,7 +137,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
             </div>
           )}
           {shoe.koreanFootFit && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <FitHelper
                 koreanFootFit={shoe.koreanFootFit}
                 shoeName={shoe.name}
@@ -152,7 +152,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
         <div className={activeTab === 'price' ? '' : 'hidden'}>
           {shoe.priceAnalysis && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <ValueAnalysis
                 resolvedAlternatives={resolvedAlternatives}
                 priceAnalysis={shoe.priceAnalysis}
@@ -164,7 +164,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
             </div>
           )}
           {shoe.specs && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <ReplacementCalculator
                 durabilityKm={shoe.specs.durability}
                 shoeName={shoe.name}
@@ -172,7 +172,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
             </div>
           )}
           {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
-            <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
               <PurchaseLinks
                 purchaseLinks={shoe.purchaseLinks}
                 shoeName={shoe.name}
@@ -184,7 +184,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         </div>
 
         <div className={activeTab === 'reviews' ? '' : 'hidden'}>
-          <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+          <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
             {shoe.reviews && shoe.reviews.length > 0 ? (
               <ReviewsSection reviews={shoe.reviews} />
             ) : (

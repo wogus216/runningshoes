@@ -70,7 +70,7 @@ export function MarathonFilterPanel({
   resetFilters,
 }: MarathonFilterPanelProps) {
   return (
-    <div className="space-y-4 rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-4 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+    <div className="space-y-4 rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-4 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
       <div>
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Race Filter</p>
         <h3 className="mt-2 text-xl font-black tracking-tight text-slate-950">대회 필터</h3>

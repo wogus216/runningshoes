@@ -164,7 +164,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
             </div>
           </div>
 
-          <aside className="relative overflow-hidden rounded-[30px] border border-sky-950/20 bg-[linear-gradient(165deg,rgba(8,18,38,0.98)_0%,rgba(15,23,42,0.95)_58%,rgba(12,74,110,0.96)_100%)] p-5 text-white shadow-[0_28px_60px_-38px_rgba(8,18,38,0.82)] md:p-6">
+          <aside className="relative overflow-hidden rounded-[28px] border border-sky-950/20 bg-[linear-gradient(165deg,rgba(8,18,38,0.98)_0%,rgba(15,23,42,0.95)_58%,rgba(12,74,110,0.96)_100%)] p-5 text-white shadow-[0_28px_60px_-38px_rgba(8,18,38,0.82)] md:p-6">
             <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
             <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-sky-200/85">Start From</p>
             <h2 className="mt-3 text-2xl font-black tracking-tight text-white">많이 찾는 시작 기준</h2>
@@ -232,7 +232,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
       </div>
 
       {/* 필터 결과 */}
-      <div className="flex flex-col gap-3 rounded-[26px] border border-[var(--accent-line)] bg-white/74 p-4 shadow-[0_20px_45px_-42px_rgba(8,18,38,0.34)] backdrop-blur sm:gap-4 sm:rounded-[30px] sm:p-5 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-3 rounded-[28px] border border-[var(--accent-line)] bg-white/74 p-4 shadow-[0_20px_45px_-42px_rgba(8,18,38,0.34)] backdrop-blur sm:gap-4 sm:rounded-[28px] sm:p-5 md:flex-row md:items-center md:justify-between">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Search Result</p>
           <p className="mt-2 text-xl font-black leading-tight tracking-tight text-slate-950 sm:text-2xl">

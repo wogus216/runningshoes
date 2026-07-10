@@ -27,7 +27,7 @@ export function CompareFloatingButton() {
     >
       {/* 확장된 패널 */}
       {isExpanded && (
-        <div className="mb-3 w-72 rounded-[26px] border border-stone-900/10 bg-white/95 p-4 shadow-[0_28px_50px_-32px_rgba(15,23,42,0.55)] backdrop-blur-xl animate-fade-in-up">
+        <div className="mb-3 w-72 rounded-[28px] border border-stone-900/10 bg-white/95 p-4 shadow-[0_28px_50px_-32px_rgba(15,23,42,0.55)] backdrop-blur-xl animate-fade-in-up">
           <div className="flex items-center justify-between mb-3">
             <h4 className="text-sm font-bold text-primary">비교함 ({compareList.length}/4)</h4>
             <button

@@ -14,7 +14,7 @@ type BiomechCardProps = {
 
 function BiomechCard({ title, value, description }: BiomechCardProps) {
   return (
-    <div className="rounded-[26px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.5)]">
+    <div className="rounded-[28px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.5)]">
       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">{title}</p>
       <div className="mb-3 mt-3 text-3xl font-black tracking-tight text-slate-950">{value}</div>
       <p className="text-sm leading-7 text-slate-600">{description}</p>
@@ -133,7 +133,7 @@ export function BiomechanicsAnalysis({ biomechanics, weight }: BiomechanicsAnaly
         />
       </div>
 
-      <div className="rounded-[26px] border border-blue-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
+      <div className="rounded-[28px] border border-blue-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
         <div className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
           <Lightbulb className="h-5 w-5" />
           러닝 이코노미 영향

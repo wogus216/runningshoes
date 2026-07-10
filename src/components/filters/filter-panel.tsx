@@ -279,7 +279,7 @@ export function FilterPanel({
   };
 
   return (
-    <div className="rounded-[30px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(240,248,255,0.94))] backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(8,18,38,0.2)]">
+    <div className="rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(240,248,255,0.94))] backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(8,18,38,0.2)]">
       {/* 빠른 필터 프리셋 */}
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-2 mb-3">

@@ -223,7 +223,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
         </div>
       </section>
 
-      <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+      <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
         <div className="mb-4 flex items-center justify-between">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Selection Dock</p>
@@ -334,7 +334,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
         </div>
       </section>
 
-      <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+      <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Add Shoes</p>
@@ -419,7 +419,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
         <>
-          <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+          <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
             <div className="mb-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Radar View</p>
               <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">스펙 비교 차트</h2>
@@ -427,7 +427,7 @@ function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
             <CompareRadarChart shoes={selectedShoes} />
           </section>
 
-          <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+          <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
             <div className="mb-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Detail Rows</p>
               <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">상세 비교</h2>

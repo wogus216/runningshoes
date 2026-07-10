@@ -113,7 +113,7 @@ export function RecommendContent({ allShoes }: RecommendContentProps) {
           <Questionnaire onComplete={handleComplete} />
         ) : (
           <div className="space-y-6">
-            <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+            <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
               <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">
                 Profile Snapshot
               </p>
@@ -156,7 +156,7 @@ export function RecommendContent({ allShoes }: RecommendContentProps) {
                 </div>
               </div>
             ) : (
-              <div className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-12 text-center shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+              <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-12 text-center shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
                 <p className="text-xl text-secondary">
                   조건에 맞는 신발을 찾지 못했습니다
                 </p>

@@ -102,10 +102,10 @@ body {
 
 | Element | Radius |
 |---|---|
-| Shoe cards | `rounded-[28px]` |
+| Shoe cards · 대형 섹션 패널 | `rounded-[28px]` (단일 표준 — 30/26px 혼용 금지) |
 | Hero sections | `rounded-[36px]` |
 | Buttons (pill) | `rounded-full` |
-| Content cards | `rounded-lg` or `rounded-xl` |
+| Content cards (소형 내부) | `rounded-lg` or `rounded-xl` |
 | Badges | `rounded-full` |
 
 ---

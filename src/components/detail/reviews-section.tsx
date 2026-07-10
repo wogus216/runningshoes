@@ -23,7 +23,7 @@ function ReviewCard({ review }: { review: Review }) {
     : Math.min(5, Math.max(0, Math.round(review.rating))); // 안전하게 0-5 범위로
 
   return (
-    <div className="rounded-[26px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
+    <div className="rounded-[28px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <div className="text-yellow-500 text-xl">

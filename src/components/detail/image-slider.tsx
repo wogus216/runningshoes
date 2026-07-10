@@ -77,7 +77,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   // 이미지가 없는 경우
   if (!images || images.length === 0) {
     return (
-      <div className="relative aspect-square rounded-[30px] border border-white/10 bg-[rgba(255,255,255,0.08)] flex items-center justify-center">
+      <div className="relative aspect-square rounded-[28px] border border-white/10 bg-[rgba(255,255,255,0.08)] flex items-center justify-center">
         <ShoppingBag className="w-24 h-24 text-slate-300" />
       </div>
     );
@@ -86,7 +86,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
   // 이미지가 1개인 경우
   if (images.length === 1) {
     return (
-      <div className="relative aspect-square overflow-hidden rounded-[30px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]">
+      <div className="relative aspect-square overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]">
         <Image
           src={img(images[0])}
           alt={alt}
@@ -101,7 +101,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
 
   return (
     <div
-      className="group relative aspect-square overflow-hidden rounded-[30px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]"
+      className="group relative aspect-square overflow-hidden rounded-[28px] border border-white/10 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.96),rgba(226,232,240,0.88))]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onTouchStart={handleTouchStart}

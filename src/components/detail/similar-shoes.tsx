@@ -43,7 +43,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
   if (similarShoesData.length === 0) return null;
 
   return (
-    <section className="rounded-[30px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+    <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
       <div className="mb-5 flex items-center justify-between">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Similar Picks</p>

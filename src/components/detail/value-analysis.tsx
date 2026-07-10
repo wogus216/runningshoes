@@ -172,7 +172,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
       </div>
 
       {priceAnalysis.alternatives.length > 0 && (
-        <div className="rounded-[26px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
+        <div className="rounded-[28px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
           <strong className="flex items-center gap-2 text-lg text-sky-700">
             <Check className="h-5 w-5" />
             현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
@@ -186,7 +186,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
         </div>
       )}
 
-      <div className="rounded-[26px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
+      <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
         <div className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
           <ShoppingCart className="h-5 w-5" />
           구매 팁

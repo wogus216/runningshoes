@@ -8,7 +8,7 @@ interface EditorCommentProps {
 
 export function EditorComment({ comment, recommendFor, notRecommendFor }: EditorCommentProps) {
   return (
-    <div className="rounded-[26px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.96),rgba(255,255,255,0.94))] p-6">
+    <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.96),rgba(255,255,255,0.94))] p-6">
       <div className="flex items-start gap-3 mb-4">
         <Quote className="mt-1 h-6 w-6 flex-shrink-0 text-sky-700" />
         <div>

@@ -115,7 +115,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           />
         </div>
 
-        <div className="rounded-[26px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.24)]">
+        <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.24)]">
           <h4 className="mb-3 flex items-center gap-2 text-sm font-semibold text-primary">
             <span>ℹ️</span> 한국 러너 참고사항
           </h4>

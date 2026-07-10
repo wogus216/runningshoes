@@ -39,7 +39,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-[30px] border p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.18)]",
+        "relative overflow-hidden rounded-[28px] border p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.18)]",
         isTopPick
           ? "border-sky-200 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(236,248,255,0.96))] ring-2 ring-sky-200"
           : "border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))]"

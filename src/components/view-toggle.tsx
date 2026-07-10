@@ -35,7 +35,7 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
   const chipPrefix = view === "hierarchy" ? "category" : "brand";
 
   return (
-    <div className="flex flex-col gap-3 rounded-[26px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,255,0.96))] p-4 shadow-[0_24px_50px_-38px_rgba(8,18,38,0.18)] sm:gap-4 sm:rounded-[32px] sm:p-5">
+    <div className="flex flex-col gap-3 rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,255,0.96))] p-4 shadow-[0_24px_50px_-38px_rgba(8,18,38,0.18)] sm:gap-4 sm:rounded-[32px] sm:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs sm:tracking-[0.35em]">View Mode</p>
