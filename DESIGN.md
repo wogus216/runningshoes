@@ -51,12 +51,13 @@
 | `--navy-soft` | `#13233d` | Dark card hover |
 | `--accent-line` | `rgba(14,165,233,0.18)` | Subtle accent borders |
 
-### Palette Families (4)
+### Palette Families (5)
 
 1. **Navy:** `#000000` → `#020617` → `#081226` → `#0F172A` (text + dark elements)
 2. **Sky:** `#075985` → `#0369A1` → `#0EA5E9` → `#38BDF8` (accent + links)
 3. **Slate:** `#334155` → `#475569` → `#64748B` → `#94A3B8` (secondary text)
 4. **Teal:** `#0F766E` → `#14B8A6` (positive/good semantic only)
+5. **Stone (warm reading surface):** `#292524` → `#57534E` → `#78716C` → `#A8A29E` → `#F5F5F4` — 웜-뉴트럴 계열. 블로그·마라톤·FAQ·About 등 **장문 읽기/에디토리얼 화면**과 `(detail)` 콘텐츠 카드에서 Slate의 따뜻한 대체로 사용(소프트한 읽기 느낌). 도구·데이터 UI(비교표·추천 위젯)는 Sky/Slate 유지.
 
 ### Category Colors (tech pages)
 
@@ -68,6 +69,12 @@
 | Stability | `bg-cyan-50` | `text-cyan-700` | `border-cyan-200` |
 | Upper | `bg-stone-100` | `text-stone-700` | `border-stone-200` |
 | Outsole | `bg-sky-50` | `text-sky-700` | `border-sky-200` |
+
+### Semantic Colors — 규칙과 웜 변형
+
+- **정본(canonical):** 주의 = `--warning`(orange), 좋음/통과 = `--positive`(teal). 새 도구/UI 크롬은 CSS 변수를 사용.
+- **웜 변형(accepted):** 웜 리딩 서피스(stone/크림 배경)에서는 **amber**(따뜻한 주의)와 **emerald**(따뜻한 긍정)를 문맥 변형으로 사용 가능 — 쿨 배경에서 orange/teal이 튀는 것을 완화. 둘 다 정식 허용이며 orange/teal과 의미가 동일.
+- 요지: 도구·데이터 화면 = sky/slate/orange/teal, 읽기·에디토리얼 화면 = stone + amber/emerald 허용. 한 컴포넌트 안에서 두 계열을 섞지 말 것.
 
 ---
 
