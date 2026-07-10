@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowUpRight, Share2 } from 'lucide-react';
+import { ArrowUpRight, Share2, ChevronLeft } from 'lucide-react';
 import { SITE_NAME } from '@/lib/constants';
 
 export function DetailHeader() {
@@ -40,9 +40,7 @@ export function DetailHeader() {
               className="rounded-full p-2 transition-colors hover:bg-white/70"
               aria-label="홈으로 이동"
             >
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 19l-7-7 7-7"/>
-              </svg>
+              <ChevronLeft className="w-5 h-5" strokeWidth={1.5} aria-hidden="true" />
             </Link>
             <div className="min-w-0">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">Running Index</p>

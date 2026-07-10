@@ -276,7 +276,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                     </p>
                     <Link
                       href={`/shoes/${shoe.slug}`}
-                      className="text-base font-bold text-slate-900 hover:text-[stone-600]"
+                      className="text-base font-bold text-slate-900 hover:text-accent"
                     >
                       {shoe.name}
                     </Link>
