@@ -55,11 +55,20 @@ brands.forEach(brand => {
     shoeEntries.push({ id, slug, brand, file: brand + '.ts' });
   }
 
-  // image 필드 추출
-  const imageRegex = /id:\s*['"]([^'"]+)['"][\s\S]*?image:\s*['"]([^'"]*)['"]/g;
-  while ((match = imageRegex.exec(content)) !== null) {
-    const entry = shoeEntries.find(e => e.id === match[1]);
-    if (entry) entry.image = match[2];
+  // image 필드 추출 — 신발 블록 단위로 스코프 (최상위 4-space 들여쓰기 기준).
+  // ⚠️ 과거 버그: `id:[\s\S]*?image:` 로 lazy 매칭하면 image 없는 신발이 *다음* 신발의
+  //    image 를 흡수 → 누락 신발은 침묵하고 엉뚱한 다음 신발이 오탐됐음.
+  //    각 신발 블록 안의 자기 image 필드만 검사하도록 교체.
+  const idBlocks = [...content.matchAll(/^ {4}id:\s*['"]([^'"]+)['"]/gm)];
+  for (let i = 0; i < idBlocks.length; i++) {
+    const startIdx = idBlocks[i].index;
+    const endIdx = i + 1 < idBlocks.length ? idBlocks[i + 1].index : content.length;
+    const block = content.slice(startIdx, endIdx);
+    const entry = shoeEntries.find(e => e.id === idBlocks[i][1]);
+    if (!entry) continue;
+    // `images:`(복수)는 콜론 뒤가 `[` 라 매칭되지 않음 — top-level `image:` 만 잡힘
+    const im = block.match(/^ {4}image:\s*['"]([^'"]*)['"]/m);
+    if (im) entry.image = im[1];
   }
 
   // price 필드 추출
