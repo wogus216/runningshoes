@@ -11,6 +11,7 @@
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
     "validate": "node scripts/validate.js",
+    "check:payload": "node scripts/check-payload.js",
     "images": "node scripts/process-images.js",
     "generate:blog": "tsx scripts/generate-blog-post.ts",
     "ga": "tsx scripts/ga-report.ts",
