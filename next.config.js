@@ -30,6 +30,13 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        // www는 리다이렉트 없이 별도 서빙되고 있었음 — AdSense 사이트 분리(RPM 절반)·GSC/GA 신호 분산 방지
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.allrunabout.com' }],
+        destination: 'https://allrunabout.com/:path*',
+        permanent: true,
+      },
+      {
         source: '/blog/beginner-running-shoe-guide-2025',
         destination: '/blog/first-running-shoe-guide-2026',
         permanent: true,
