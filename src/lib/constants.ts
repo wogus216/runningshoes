@@ -34,22 +34,15 @@ export const ADSENSE_SLOTS = {
   // 신발 상세 하단 (상세 탭 후, 교차 링크 위 — display)
   shoeBottom: process.env.NEXT_PUBLIC_ADSENSE_SLOT_SHOE_BOTTOM || '9314331932',
   // 마라톤 대회 상세 (73개 페이지 — 본문 중간 in-article + 하단 display)
-  // dedicated 슬롯 발급 후 NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_* 설정 권장(리포팅 분리).
-  // 미설정 시 blog 슬롯 폴백 — 즉시 광고 노출되나 리포팅은 blog로 집계됨.
+  // 마라톤 전용 슬롯 등록 완료(2026-07-13). env 미설정 시 하드코딩 전용 ID로 폴백.
   marathonInArticle:
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_IN_ARTICLE ||
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_IN_ARTICLE ||
-    '4456671940',
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_IN_ARTICLE || '5178793142',
   marathonBottom:
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_BOTTOM ||
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM ||
-    '1226447608',
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_MARATHON_BOTTOM || '9276417887',
   // 홈 — 결과 그리드와 'Beyond Shoes' 섹션 사이 display 1개 (고정 위치, CLS 안전)
-  // dedicated 슬롯 발급 후 NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM 설정 권장. 미설정 시 blog 폴백.
+  // 홈 전용 슬롯 등록 완료(2026-07-13). env 미설정 시 하드코딩 전용 ID로 폴백.
   homeBottom:
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM ||
-    process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG_BOTTOM ||
-    '1226447608',
+    process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM || '8774844686',
 } as const;
 
 // GA4 설정
