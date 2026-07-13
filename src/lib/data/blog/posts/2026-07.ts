@@ -2,6 +2,102 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'brooks-ghost-max-4-hyperion-elite-6-preview-2026',
+    slug: 'brooks-ghost-max-4-hyperion-elite-6-preview-2026',
+    title: '브룩스 8월 신제품 프리뷰 | 고스트 맥스 4 & 하이페리온 엘리트 6 — "브룩스 첫 진짜 레이싱화"라는 평가',
+    description:
+      '브룩스가 8월 1일 미국에서 고스트 맥스 4($165)와 하이페리온 엘리트 6($275)을 동시 출시합니다. 고스트 맥스 4는 스택·드롭·폼이 전작과 거의 같은 미세 조정에 가깝지만, 하이페리온 엘리트 6은 드롭을 11.2mm에서 7mm로 낮추고 플레이트를 재설계해 Believe in the Run으로부터 "브룩스가 실제로 추천할 만한 첫 레이싱화"라는 평가를 받았습니다. 한국 출시는 아직 미확정이라 확인된 사실과 리뷰를 정리했습니다.',
+    thumbnail: '/images/blog/brooks-ghost-max-4-hyperion-elite-6-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-14',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['브룩스 고스트 맥스 4', '브룩스 하이페리온 엘리트 6', '신상 러닝화', '레이싱화', '맥스쿠션', '브룩스'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>브룩스가 8월 1일 미국에서 고스트 맥스 4($165)와 하이페리온 엘리트 6($275)을 동시 출시</strong>합니다</li>
+    <li><strong>고스트 맥스 4는 스택(40/34mm)·드롭(6mm)·폼(DNA Loft v3)이 전작과 거의 동일</strong>한 미세 조정형 업데이트 — 무게만 약 14g 가벼워졌습니다</li>
+    <li><strong>하이페리온 엘리트 6은 드롭을 11.2mm→7mm로 낮추고 플레이트를 재설계</strong> — Believe in the Run이 "브룩스가 실제로 추천할 만한 첫 레이싱화"라 평했습니다. 한국 출시는 둘 다 아직 미확정입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👀</span>
+  <div class="callout-body">
+    <p class="callout-title">확인된 사실 — 8월 1일 미국 동시 출시</p>
+    <p>브룩스가 <strong>2026년 8월 1일 미국에서 고스트 맥스 4와 하이페리온 엘리트 6을 동시 출시</strong>합니다. 두 모델 모두 Believe in the Run·Road Trail Run의 선행 리뷰가 이미 게시돼 점수·장단점이 확인됐지만, <strong>RunRepeat 정량 랩 데이터는 아직 게시되지 않았고(양쪽 다 404)</strong>, <strong>한국 공식 사이트(brooksrunning.co.kr)에도 등재되지 않아</strong> 국내 출시 여부·시기는 확인되지 않았습니다.</p>
+  </div>
+</div>
+
+<h2>고스트 맥스 4 — 미세 조정에 가까운 업데이트</h2>
+<p>전작 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>와 비교하면, 4세대는 <strong>스택(힐 40mm/전족 34mm)·드롭(6mm)·미드솔 폼(DNA Loft v3)이 사실상 그대로</strong>입니다. Believe in the Run도 "전작 대비 혁신은 없다"고 짚었을 정도죠. 바뀐 건 <strong>무게가 약 14g 가벼워졌고, 안정성 기하구조가 손질됐으며, 라스트가 선형화돼 폭 수용성이 늘어난 점</strong>입니다. Road Trail Run 테스터들은 8.8~9/10의 무난한 점수를 줬지만 "특별히 뛰어나진 않다"는 평도 함께 나왔습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>고스트 맥스 3</th><th>고스트 맥스 4</th></tr></thead>
+  <tbody>
+    <tr><td>가격</td><td>$160</td><td>$165</td></tr>
+    <tr><td>무게</td><td>303g(RunRepeat 실측)</td><td>남 292g / 여 261g(BITR·RTR)</td></tr>
+    <tr><td>힐/전족 스택</td><td>38.5 / 31.2mm(RunRepeat)</td><td>40 / 34mm(BITR·RTR)</td></tr>
+    <tr><td>미드솔</td><td>DNA Loft v3</td><td>DNA Loft v3 (동일 유지)</td></tr>
+    <tr><td>BITR 등급</td><td>-</td><td>B Tier (Performance A)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 3세대는 RunRepeat 실측, 4세대는 BITR·RTR 리뷰 기준(RunRepeat 정량 랩은 미게시). 측정 방법론이 달라 절대 비교보다는 경향 참고용입니다.</p>
+</div>
+<p>넓은 발볼에는 여전히 좋은 선택이지만, <strong>좁은 발엔 부적합하다는 평가는 3세대와 동일</strong>합니다. "왜 안 바꿨나"에 가까운 업데이트라, 3을 잘 신고 있다면 급히 갈아탈 이유는 적어 보입니다.</p>
+
+<h2>하이페리온 엘리트 6 — "브룩스 첫 진짜 레이싱화"</h2>
+<p>훨씬 화제성이 큰 쪽은 하이페리온 엘리트입니다. 전작 <a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a>는 드롭이 11.2mm로 다소 높았는데, 6세대는 이를 <strong>7mm로 낮추고 SpeedVault+ 플레이트 각도를 더 가파르게 재설계</strong>했습니다. 미드풋 플랫폼도 55mm→60mm로 넓어져 안정성을 보강했고, DNA Gold(PEBA) 폼의 밀도 구성을 다중화해 전족부 "팝" 반응이 좋아졌다는 평입니다. Believe in the Run은 <strong>A Tier</strong>를 매기며 <strong>"이것은 내가 실제로 지갑을 열고 싶은 첫 브룩스 레이스화"</strong>라고 평했고, Road Trail Run 4인 테스터는 평균 9.0~9.56/10이라는 높은 점수를 줬습니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>하이페리온 엘리트 5</th><th>하이페리온 엘리트 6</th></tr></thead>
+  <tbody>
+    <tr><td>가격</td><td>$275</td><td>$275 (동일)</td></tr>
+    <tr><td>무게(US 9)</td><td>204g</td><td>198g</td></tr>
+    <tr><td>드롭</td><td>11.2mm</td><td><strong>7mm</strong></td></tr>
+    <tr><td>미드풋 플랫폼 폭</td><td>55mm</td><td><strong>60mm</strong></td></tr>
+    <tr><td>플레이트</td><td>SpeedVault 카본</td><td>SpeedVault+ 재설계(각도↑)</td></tr>
+    <tr><td>BITR 등급</td><td>-</td><td><strong>A Tier</strong>(Performance A)</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ 5세대는 RunRepeat 실측, 6세대는 BITR·RTR 리뷰 기준(RunRepeat 정량 랩은 미게시).</p>
+</div>
+<p>단점으로는 <strong>$275라는 가격이 경쟁 모델 대비 다소 높다</strong>는 지적(BITR은 $225~250이 적정선이라 평)과, 얇은 힐칼라가 일부 테스터에게 아킬레스 자극을 준다는 점이 꼽혔습니다. 그럼에도 "안정적이면서 반응성 있는 라이드"라는 호평이 다수라, 카본 레이싱화를 찾는 러너라면 주목할 만한 모델입니다. 국내에서 비슷한 체급의 레이싱화를 지금 비교하고 싶다면 <a href="/best/racing">레이싱화 추천</a>을 참고하세요.</p>
+
+<h2>한국 출시는?</h2>
+<p>이 글 작성 시점 기준, <strong>brooksrunning.co.kr에 두 모델 모두 등재되지 않았습니다.</strong> 참고로 전작 한국 정가는 고스트 맥스 3가 179,000원, 하이페리온 엘리트 5가 299,000원이었습니다. 미국 출시 당일 기준 조사라 국내 출시 여부·시기는 확인되는 대로 갱신하겠습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">정보성 프리뷰 — 한국 미출시</p>
+    <p>고스트 맥스 4·하이페리온 엘리트 6 모두 이 글 작성 시점 기준 <strong>한국 공식 출시가 확인되지 않은 모델</strong>입니다. RunRepeat 정량 랩 데이터도 아직 게시되지 않았습니다(BITR·RTR 자체 실측·평가만 반영). 국내 판매처·정가가 정해지면 별도로 리뷰를 갱신하거나 신발 데이터베이스에 추가하겠습니다.</p>
+  </div>
+</div>
+
+<h2>마무리</h2>
+<p>같은 날 나오는 두 신발이지만 성격은 다릅니다. 고스트 맥스 4는 "검증된 걸 다듬은" 안전한 선택이고, 하이페리온 엘리트 6은 "브룩스가 레이싱화에 진심이 됐다"는 걸 보여주는 모델입니다. 한국 출시가 확정되면 실측 데이터와 함께 정식 리뷰로 갱신하겠습니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 브룩스 공식 발표와 Believe in the Run·Road Trail Run 선행 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 출시 여부·정가와 RunRepeat 정량 랩 데이터는 미확정 상태로, 확인되는 대로 업데이트합니다. (작성 2026-07-14)</p>
+`,
+    faqs: [
+      {
+        question: '고스트 맥스 4가 3세대보다 확실히 나은가요?',
+        answer: '스택·드롭·미드솔 폼이 전작과 사실상 동일해 "혁신적인 변화"는 아닙니다. 무게가 약 14g 가벼워지고 안정성 기하구조·라스트가 다듬어진 정도입니다. Believe in the Run도 전작 대비 혁신 부재를 지적했습니다. 3세대를 잘 신고 있다면 급히 갈아탈 이유는 적습니다.',
+      },
+      {
+        question: '하이페리온 엘리트 6이 정말 브룩스 레이싱화 중 최고인가요?',
+        answer: 'Believe in the Run이 A Tier를 매기며 "실제로 지갑을 열고 싶은 첫 브룩스 레이스화"라고 평했고, Road Trail Run 4인 테스터도 평균 9점대의 높은 점수를 줬습니다. 드롭을 11.2mm에서 7mm로 낮추고 플레이트를 재설계해 반응성이 개선됐다는 평가가 많습니다. 다만 $275라는 가격이 다소 높다는 지적도 있습니다.',
+      },
+      {
+        question: '고스트 맥스 4와 하이페리온 엘리트 6, 한국에서 언제 살 수 있나요?',
+        answer: '이 글 작성 시점 기준 brooksrunning.co.kr에 두 모델 모두 등재되지 않아 한국 출시 여부·시기는 확인되지 않았습니다. 미국은 2026년 8월 1일 출시로 확정돼 있습니다. 국내 출시가 확정되면 이 글을 갱신하겠습니다.',
+      },
+    ],
+  },
+  {
     id: 'hoka-speedgoat-6-vs-7-comparison-2026',
     slug: 'hoka-speedgoat-6-vs-7-comparison-2026',
     title: '스피드고트 6 vs 7 | 세대 비교 — 슈퍼크리티컬 폼으로 반발력 잡고, 공식 드롭 5mm는 실측과 다르다',
