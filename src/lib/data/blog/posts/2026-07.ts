@@ -2,6 +2,90 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'asics-blazeblast-preview-2026',
+    slug: 'asics-blazeblast-preview-2026',
+    title: '아식스 블레이즈블라스트 프리뷰 | 8월 출시 신규 트레일 프랜차이즈 — 노바블라스트가 트레일로',
+    description:
+      '아식스가 7월 1일 새 트레일 러닝화 프랜차이즈 "블레이즈블라스트"를 공식 발표했습니다. 노바블라스트와 같은 FF 블라스트 맥스 쿠셔닝에 전족부 트램폴린 포드, ASICSGrip 2.5mm 러그를 얹어 "로드에서 트레일로 넘어가는" 입문~중급 러너를 정조준한 모델입니다. 8월 1일 글로벌 출시, 가격 $150. 한국 출시는 아직 미확정이라 확인된 사실과 추정을 구분해 정리했습니다.',
+    thumbnail: '/images/blog/asics-blazeblast-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-14',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['아식스 블레이즈블라스트', '트레일 러닝화', '노바블라스트', 'FF 블라스트', '신상 러닝화', '트레일 입문'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>아식스가 신규 트레일 프랜차이즈 "블레이즈블라스트"를 7월 1일 공식 발표</strong> — 8월 1일 글로벌 출시, 가격 $150</li>
+    <li>노바블라스트와 같은 <strong>FF 블라스트 맥스 쿠셔닝 + 전족부 트램폴린 포드</strong>를 얹은 "로드-투-트레일" 입문화 — 아식스 트레일 라인업의 빈틈(가성비 벤처10과 카본 레이서 메타후지 트레일 사이)을 채우는 포지션</li>
+    <li>한국 출시일·정가는 <strong>아직 미확정</strong>. 스택 40mm·드롭 8mm·3가지 컬러 확인, 와이드 사이즈는 없음</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👀</span>
+  <div class="callout-body">
+    <p class="callout-title">8월 1일 출시 — 무엇이 확인됐나</p>
+    <p>아식스가 2026년 7월 1일, 완전히 새로운 트레일 러닝화 프랜차이즈 <strong>"블레이즈블라스트(BLAZEBLAST™)"</strong>를 공식 프레스룸을 통해 발표했습니다. 글로벌 출시는 <strong>8월 1일, 가격은 $150</strong>입니다. 공식 발표문은 이 신발을 "road-to-trail 전환자를 위해 설계된, 성능을 타협하지 않은 접근 가능한 트레일 경험"이라고 소개합니다. 미드솔은 아식스 최상위 쿠셔닝인 <strong>FF 블라스트 맥스 + 전족부 트램폴린 포드</strong>, 아웃솔은 <strong>ASICSGrip 2.5mm 러그</strong>입니다. 다만 이 글 작성 시점 기준 <strong>한국 출시일·정가는 확인되지 않았고</strong>(asics.co.kr 미등재), 무게·스택 등 세부 스펙 다수도 브랜드 공식 자료가 아닌 해외 프리뷰 매체의 실측 추정치입니다 — 아래에서 확인된 사실과 추정을 구분해 표기했습니다.</p>
+  </div>
+</div>
+
+<h2>블레이즈블라스트, 어떤 신발인가</h2>
+<p>아식스는 이미 트레일 러닝화를 두 종류 보유하고 있습니다. 8만 9천원대 가성비 입문화 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>과, 27만 9천원대 풀 카본 플레이트 레이서 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>이죠. 블레이즈블라스트는 이 둘의 <strong>가운데 지점</strong>을 노립니다. 벤처10처럼 저렴한 입문화도, 메타후지처럼 카본 레이서도 아닌 — <strong>로드 러너가 처음 트레일에 발을 들일 때 신을 "쿠션 좋은 만능 트레이너"</strong> 포지션입니다.</p>
+<p>핵심은 데일리 쿠션화 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>과 같은 <strong>FF 블라스트 맥스 폼</strong>을 트레일화에 그대로 가져왔다는 점입니다. 여기에 전족부 트램폴린 포드로 반발력을 더하고, 접지력을 위해 ASICSGrip 2.5mm 러그를 달았습니다. 해외 프리뷰 매체(RunToTheFinish)는 이를 "전체적으로 새로운 신발"이라 평하면서도, "노바블라스트와 비슷한 느낌일 것으로 예상했지만 보도된 무게가 오히려 더 가볍다"고 언급합니다 — 트레일화 특유의 낮은 지면감을 위해 쿠션을 일부 덜어냈을 가능성을 시사하는 대목입니다.</p>
+
+<h2>확인된 스펙 vs 추정 스펙</h2>
+<table>
+  <thead><tr><th>항목</th><th>수치</th><th>출처</th></tr></thead>
+  <tbody>
+    <tr><td>가격</td><td>$150</td><td>아식스 공식 발표 (확정)</td></tr>
+    <tr><td>글로벌 출시일</td><td>2026년 8월 1일</td><td>아식스 공식 발표 (확정)</td></tr>
+    <tr><td>미드솔</td><td>FF 블라스트 맥스 + 전족부 트램폴린 포드</td><td>아식스 공식 발표 (확정)</td></tr>
+    <tr><td>아웃솔</td><td>ASICSGrip, 2.5mm 러그</td><td>아식스 공식 발표 (확정)</td></tr>
+    <tr><td>무게</td><td>남성 약 252g / 여성 약 221g</td><td>해외 프리뷰 매체 실측 (추정)</td></tr>
+    <tr><td>스택 높이</td><td>약 40mm</td><td>해외 프리뷰 매체 실측 (추정, 힐/전족 구분 미공개)</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>해외 프리뷰 매체 실측 (추정)</td></tr>
+    <tr><td>컬러웨이</td><td>3가지</td><td>해외 프리뷰 매체 (추정)</td></tr>
+    <tr><td>와이드 사이즈</td><td>미제공</td><td>해외 프리뷰 매체 (추정)</td></tr>
+    <tr><td>한국 출시일·정가</td><td>미확정</td><td>-</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ RunRepeat 등 정량 랩 테스트(SA·에너지 리턴·토박스 너비)는 출시 전이라 아직 없습니다. 출시 후 게시되면 업데이트합니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>로드만 뛰다가 트레일에 처음 도전하는 러너</strong> — 익숙한 노바블라스트 쿠셔닝을 그대로 가져가면서 접지력만 더한 구성이라 진입 장벽이 낮습니다</li>
+  <li><strong>완만한 임도·둘레길 위주로 달리는 러너</strong> — 해외 프리뷰는 "매우 기술적인 트레일에는 맞지 않는다"고 명시합니다. 암릉·급경사 코스보다는 흙길·자갈길에 적합해 보입니다</li>
+  <li><strong>발볼 넓은 러너는 주의</strong> — 와이드 사이즈가 없는 것으로 파악돼, 발볼이 넓다면 한국 출시 후 반드시 시착을 권합니다</li>
+  <li><strong>극한 산악·기술 지형 러너</strong> — 이런 경우엔 카본 플레이트로 반발력을 높인 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>이 더 맞는 선택입니다</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">출시 전 미리보기 — 한국 출시 미확정</p>
+    <p>본 글은 <strong>2026년 7월 1일 아식스 공식 발표(글로벌 8월 1일 출시)</strong>를 바탕으로 한 출시 전 프리뷰입니다. 아직 한국 공식 사이트(asics.co.kr)에 등재되지 않아 <strong>한국 출시 여부·시기·정가 모두 미확정</strong>입니다. 참고로 최근 발매된 같은 FF 블라스트 계열의 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6</a>은 글로벌 $155에 한국 정가 179,000원이었는데, 블레이즈블라스트는 이보다 저렴한 $150이라 한국 출시 시 17만원대가 유력해 보이나 이는 어디까지나 참고용 추정입니다. 무게·스택·드롭 등 세부 스펙도 브랜드 공식 자료가 아닌 해외 매체 실측 기준이라 오차가 있을 수 있습니다. 한국 출시가 확정되면 정식 리뷰로 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <p class="faq-q">Q. 블레이즈블라스트가 아식스의 첫 트레일화인가요?</p>
+  <p class="faq-a">A. 아닙니다. 아식스는 이미 가성비 입문화 <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>(8만 9천원)과 카본 레이서 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(27만 9천원)을 보유하고 있습니다. 블레이즈블라스트는 이 둘의 중간, 즉 "쿠션 좋은 로드-투-트레일 입문 트레이너" 자리를 채우는 세 번째 라인입니다.</p>
+  <p class="faq-q">Q. 노바블라스트와 실제로 비슷한가요?</p>
+  <p class="faq-a">A. 같은 FF 블라스트 맥스 쿠셔닝을 쓴다는 점은 같지만, 해외 프리뷰에 따르면 무게는 오히려 더 가볍다고 보도됐습니다. 트레일화답게 지면감을 살리기 위해 쿠션을 일부 덜어낸 구성으로 추정됩니다. 실측 리뷰가 나오기 전까지는 참고용으로만 보시길 권합니다.</p>
+  <p class="faq-q">Q. 한국에서 언제 살 수 있나요?</p>
+  <p class="faq-a">A. 아직 확인되지 않았습니다. asics.co.kr에 등재되는 대로 이 글을 갱신할 예정입니다.</p>
+</div>
+
+<h2>마무리</h2>
+<p>블레이즈블라스트는 "카본 레이서도, 저가 입문화도 아닌" 아식스 트레일 라인업의 빈틈을 겨냥한 신제품입니다. 로드에서 트레일로 넘어가고 싶은 러너에게 익숙한 쿠셔닝을 그대로 제공한다는 점이 매력이지만, 아직 한국 출시가 확정되지 않아 실물을 신어보려면 시간이 더 필요합니다. 트레일 러닝이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를 먼저 보시고, 지금 바로 살 수 있는 트레일화가 궁금하다면 <a href="/best/trail">트레일 러닝화 추천</a>에서 비교해보세요.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 아식스 공식 프레스릴리스(2026-07-01)와 해외 프리뷰 매체(RunToTheFinish)를 바탕으로 한 출시 전 미리보기입니다. 한국 출시일·정가와 정량 랩 데이터는 미확정 상태로, 확인되는 대로 업데이트합니다. (작성 2026-07-14)</p>
+`,
+  },
+  {
     id: 'nike-acg-zegama-trail-review-2026',
     slug: 'nike-acg-zegama-trail-review-2026',
     title: '나이키 ACG 제가마 트레일 후기 | 시리즈 최고 완성도 — 토박스 더 넓어진 맥시멀 쿠션 울트라화',
