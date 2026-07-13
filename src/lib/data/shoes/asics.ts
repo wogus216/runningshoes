@@ -1220,6 +1220,9 @@ export const asicsShoes: Shoe[] = [
     ],
     similarShoes: ['asics-megablast', 'hoka-bondi-9', 'brooks-glycerin-max'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5IiG2z0P' }],
+    relatedPosts: [
+      { slug: 'asics-sonicblast-review-2026', title: '아식스 소닉블라스트 후기 — 메가블라스트 가성비 대안' },
+    ],
   },
   {
     id: 'asics-magic-speed-5',
