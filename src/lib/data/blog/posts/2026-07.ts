@@ -2,6 +2,168 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'hoka-speedgoat-6-vs-7-comparison-2026',
+    slug: 'hoka-speedgoat-6-vs-7-comparison-2026',
+    title: '스피드고트 6 vs 7 | 세대 비교 — 슈퍼크리티컬 폼으로 반발력 잡고, 공식 드롭 5mm는 실측과 다르다',
+    description:
+      '트레일 데일리 베스트셀러 호카 스피드고트의 7세대는 미드솔을 CMEVA에서 슈퍼크리티컬 폼으로 바꿔 에너지 리턴을 힐 48%→54.4%로 끌어올렸습니다. 그립은 Vibram Megagrip을 유지하고 게이터 부착 루프가 새로 생겼지만, 토박스는 6보다 살짝 좁아졌고 가격도 219,000원으로 올랐습니다. 무엇보다 공식 발표(드롭 5mm)와 RunRepeat 실측(7.4mm)의 차이가 커, 실측 기준으로 6과 7을 꼼꼼히 비교했습니다.',
+    thumbnail: '/images/blog/hoka-speedgoat-6-vs-7-comparison-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-14',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['스피드고트 7', '스피드고트 6', '트레일 러닝화', '호카', '세대비교', '슈퍼크리티컬 폼'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>7세대는 미드솔을 CMEVA→슈퍼크리티컬 폼으로 교체</strong> — RunRepeat 실측 에너지 리턴이 힐 48%→54.4%로 뚜렷이 좋아졌습니다</li>
+    <li><strong>공식 발표는 6·7 모두 드롭 5mm라 밝혔지만, RunRepeat 실측은 6이 확인 안 됐고 7은 7.4mm</strong>로 나왔습니다 — 실제 착화감은 발표 수치보다 드롭감이 더 있을 가능성이 큽니다</li>
+    <li><strong>토박스는 73.0mm→71.4mm로 살짝 좁아지고, 가격도 205,000원→219,000원으로 인상</strong> — 반발력을 원하면 7, 검증된 핏·가성비를 원하면 6도 여전히 유효합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏔️</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>오르막에서 치고 나가는 반발력이 아쉬웠다면 <strong><a href="/shoes/hoka-speedgoat-7">스피드고트 7</a></strong>이 답입니다. 하지만 <strong><a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>을 잘 쓰고 있고 발볼이 넓다면</strong> 급히 갈아탈 이유는 적습니다 — 토박스가 6보다 좁아졌고 가격도 올랐기 때문입니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈 비교</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>스피드고트 6</th><th>스피드고트 7</th><th>변화</th></tr></thead>
+  <tbody>
+    <tr><td>무게(US 9)</td><td>278g</td><td>281g</td><td>거의 동일</td></tr>
+    <tr><td>토박스 너비</td><td>73.0mm</td><td>71.4mm</td><td>좁아짐</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>CMEVA(압축성형 EVA)</td><td><strong>슈퍼크리티컬 폼 EVA</strong></td><td>소재 교체</td></tr>
+    <tr><td>에너지 리턴(힐)</td><td>48.0%</td><td><strong>54.4%</strong></td><td>+6.4%p</td></tr>
+    <tr><td>아웃솔 러그 깊이</td><td>4.0mm</td><td>4.5mm</td><td>+0.5mm</td></tr>
+    <tr><td>게이터 부착</td><td>없음</td><td><strong>루프 신설(시리즈 최초)</strong></td><td>신규</td></tr>
+    <tr><td>드롭(RunRepeat 실측)</td><td>-</td><td>7.4mm</td><td>공식 발표는 양쪽 다 5mm</td></tr>
+    <tr><td>와이드 옵션</td><td>있음</td><td>있음(무신사 확인)</td><td>유지</td></tr>
+    <tr><td>가격(한국)</td><td>205,000원</td><td><strong>219,000원</strong></td><td>+1만 4천원</td></tr>
+  </tbody>
+</table>
+<p class="caption">※ RunRepeat 실측(SA·에너지 리턴·토박스·드롭) 기준. 한국 가격은 무신사 확인가이며, 두 모델 모두 공식 한국 사이트 등재는 별도 확인이 필요합니다.</p>
+</div>
+
+<h2>가장 큰 차이 — 슈퍼크리티컬 폼으로 반발력 개선</h2>
+<p>스피드고트 6의 가장 흔한 아쉬움은 <strong>"그립·안정성은 최고인데 반발력이 둔하다"</strong>는 것이었습니다(RunRepeat 실측 에너지 리턴 힐 48.0%). 7세대는 여기에 정면으로 답합니다. 미드솔을 <strong>압축성형 EVA(CMEVA)에서 슈퍼크리티컬 폼</strong>으로 바꾸면서 RunRepeat 실측 에너지 리턴이 <strong>힐 54.4%·전족 60.4%</strong>로 올라갔습니다. Believe in the Run도 새 미드솔을 "Pop! Pop! Pop!"이라 표현하며 반응성 개선을 콕 집어 호평했죠. 그립을 담당하는 <a href="/shoes/adidas-terrex-agravic-4">Vibram Megagrip 아웃솔</a>은 그대로 유지하면서 러그 패턴만 다듬어, "그립은 유지하고 반발력만 끌어올린" 업그레이드로 보면 됩니다.</p>
+
+<h2>공식 드롭 5mm, 그런데 실측은 다르다</h2>
+<p>여기서 짚고 넘어갈 부분이 있습니다. 호카 공식 발표는 스피드고트 7의 스택을 <strong>힐 40mm·전족 35mm·드롭 5mm</strong>로 밝혔습니다. 그런데 RunRepeat이 실제로 측정한 수치는 <strong>힐 37.7mm·전족 30.3mm·드롭 7.4mm</strong>로, 드롭 차이가 2mm 넘게 납니다. RunRepeat은 "힐에서 발끝까지 실측 드롭이 7.4mm"라고 명시하고 있어 측정 오차 수준이 아닙니다. 나이키 페가수스 42 때도 공식 발표와 실측이 몇 mm씩 어긋난 적이 있었는데, 이번에도 비슷한 케이스입니다. <strong>실제로 신어보면 발표 수치(5mm)보다 드롭감이 더 있게 느껴질 가능성이 높다</strong>는 뜻이니, 낮은 드롭에 예민한 러너라면 참고하세요.</p>
+
+<h2>토박스 — 6보다 살짝 좁아졌다</h2>
+<p>한국 러너가 특히 주목할 부분입니다. 스피드고트 6의 토박스는 73.0mm로 "표준이지만 좁게 느껴진다"는 평이 있었는데, <strong>7은 71.4mm로 여기서 한 번 더 좁아졌습니다.</strong> Believe in the Run도 "포인티(pointy)한 디자인이 새끼발가락을 누른다"고 지적했습니다. 다행히 <strong>와이드 옵션은 7에도 이어집니다</strong>(무신사 기준 남녀 모두 확인). 발볼이 넓다면 반드시 와이드를 고려하거나, 매장에서 시착 후 결정하세요. 더 넓은 옵션이 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고할 만합니다.</p>
+
+<h2>신규 기능 — 게이터 부착 루프</h2>
+<p>7세대에 새로 생긴 기능은 <strong>인테그레이티드 게이터 부착 루프</strong>입니다. 시리즈 최초로, 각반(게이터)을 신발에 바로 고정할 수 있어 겨울철 눈이나 젖은 낙엽·자갈이 신발 안으로 들어오는 걸 줄여줍니다. 국내에서 겨울 트레일·설질 구간을 자주 달린다면 실용적인 추가입니다.</p>
+
+<h2>가격 — 219,000원, 무신사 확인가</h2>
+<p>7세대 가격은 <strong>219,000원</strong>으로 6(205,000원)보다 <strong>1만 4천원 올랐습니다.</strong> 이 가격은 무신사에서 브랜드 공식 스타일코드와 일치하는 상품으로 확인한 수치이며, <strong>호카코리아 공식 사이트 등재 여부는 별도로 확인되지 않았습니다.</strong> 반발력 개선을 감안하면 인상폭 자체는 납득할 만하지만, 순수 가성비를 원한다면 검증된 실측 데이터가 쌓인 6도 여전히 합리적인 선택입니다.</p>
+
+<h2>누가 6, 누가 7</h2>
+<ul>
+  <li><strong>스피드고트 7로 가야 할 사람</strong> — 6의 반발력 부족이 아쉬웠던 러너, 겨울철 게이터를 자주 쓰는 러너, 최신 개선판을 원하는 러너</li>
+  <li><strong>스피드고트 6로 충분한 사람</strong> — 발볼이 넓어 토박스가 더 넓은 신발이 필요한 러너, 낮은 드롭(발표 기준)을 원하는 러너, 검증된 실측 데이터·조금 더 저렴한 가격을 선호하는 러너</li>
+  <li><strong>공통점은 그대로</strong> — Vibram Megagrip 그립, 내부 섀시 기반 안정성, 와이드 옵션은 두 세대 모두 유지됩니다</li>
+</ul>
+<p>다른 트레일화와의 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">트레일화 3파전(스피드고트 6 vs 펄사 vs 메타후지)</a>에서, 트레일 러닝화 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>에서 확인할 수 있습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">데이터 출처 안내</p>
+    <p>이 글의 실측 수치(무게·스택·드롭·에너지 리턴·토박스)는 RunRepeat 랩 테스트 기준이며, 한국 가격(219,000원)은 브랜드 공식 스타일코드와 일치하는 무신사 판매가로 확인했습니다. 호카코리아 자체 공식 사이트 등재 여부는 이 글 작성 시점 기준 확인되지 않았습니다.</p>
+  </div>
+</div>
+`,
+    faqs: [
+      {
+        question: '스피드고트 6을 쓰고 있는데 7로 갈아탈 가치가 있나요?',
+        answer: '6의 그립·안정성에 만족하지만 "반발력이 둔하다"고 느꼈다면 7이 정조준한 업그레이드입니다. 슈퍼크리티컬 폼으로 미드솔을 바꿔 RunRepeat 실측 에너지 리턴이 힐 48%→54.4%로 뚜렷이 좋아졌습니다. 다만 발볼이 넓은 편이라면 토박스가 73.0mm→71.4mm로 좁아진 점을 감안해야 하고, 가격도 1만 4천원 올랐습니다. 급히 갈아탈 필요는 없지만 반발력 부족이 아쉬웠던 러너에게는 가치가 있습니다.',
+      },
+      {
+        question: '스피드고트 7 드롭이 정말 5mm인가요?',
+        answer: '호카 공식 발표는 5mm지만, RunRepeat 실측 결과는 7.4mm로 나왔습니다(힐 37.7mm-전족 30.3mm). RunRepeat은 이를 "실측 드롭"이라고 명시하고 있어 측정 오차 수준을 넘어서는 차이입니다. 낮은 드롭에 민감한 러너라면 발표 수치만 믿지 말고 실측 기준으로 판단하는 게 안전합니다.',
+      },
+      {
+        question: '스피드고트 7 와이드 옵션이 한국에도 있나요?',
+        answer: '네, 무신사 기준으로 남녀 와이드 모델이 모두 확인됩니다. 다만 토박스 자체가 6보다 71.4mm로 살짝 좁아졌기 때문에, 발볼이 매우 넓다면 와이드를 선택하더라도 시착을 권장합니다.',
+      },
+    ],
+  },
+  {
+    id: 'saucony-paramount-max-preview-2026',
+    slug: 'saucony-paramount-max-preview-2026',
+    title: '써코니 파라마운트 맥스란 | 카본 없이 레이싱 폼만 넣은 신개념 슈퍼트레이너 (한국 미출시)',
+    description:
+      '써코니가 7월 1일 미국에서 출시한 파라마운트 맥스는 엔돌핀 엘리트 3에 쓰이는 IncrediRUN 폼을 카본 플레이트 없이 데일리 트레이너에 그대로 넣은 신규 라인입니다. 43mm 힐 스택의 맥스쿠션에 레이싱급 반발력을 얹어 "이지런·회복런 전용 슈퍼트레이너"로 포지셔닝했습니다. 다만 한국 공식 사이트엔 아직 등재되지 않았습니다 — 확인된 스펙과 리뷰를 정리했습니다.',
+    thumbnail: '/images/blog/saucony-paramount-max-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-14',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['써코니 파라마운트 맥스', '슈퍼트레이너', 'IncrediRUN', '맥스쿠션', '신상 러닝화', '써코니'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>써코니가 7월 1일 미국에 새 라인 "파라마운트 맥스"를 출시</strong> — 가격 $199.95, 힐 43mm/전족 37mm의 맥스쿠션</li>
+    <li><strong>엔돌핀 엘리트 3와 같은 IncrediRUN 폼을 풀렝스로 넣되 카본 플레이트는 없는 "논-플레이트 슈퍼트레이너"</strong>입니다 — 레이싱 폼을 매일 신는 트레이너에 옮긴 셈이죠</li>
+    <li><strong>한국 공식 사이트(saucony.co.kr)엔 아직 등재되지 않았습니다.</strong> 국내 정식 출시는 미확정입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👀</span>
+  <div class="callout-body">
+    <p class="callout-title">확인된 사실 — 공식 스펙</p>
+    <p>파라마운트 맥스는 써코니 공식 사이트를 통해 <strong>2026년 7월 1일 미국에서 출시</strong>됐습니다. 가격은 <strong>$199.95</strong>, 무게는 남성 302g(US 9)·여성 250g(US 8), <strong>힐 스택 43mm·전족 37mm·드롭 6mm</strong>로 상당한 맥스쿠션입니다. 미드솔은 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>에 쓰이는 슈퍼크리티컬 TPEE 폼 IncrediRUN을 <strong>풀렝스로 채택하되, 일상 훈련 내구성을 위해 약 17% 더 단단하게(firmer) 튜닝</strong>했습니다. 카본 플레이트는 없습니다. 다만 <strong>RunRepeat 정량 랩 데이터는 아직 게시되지 않았고(페이지 자체가 존재하지 않음)</strong>, 한국 공식 사이트에도 등재되지 않아 국내 출시 여부·시기는 확인되지 않았습니다.</p>
+  </div>
+</div>
+
+<h2>파라마운트 맥스, 왜 주목할 만한가</h2>
+<p>이 사이트에서 이미 다룬 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전(슈퍼블라스트 3 vs 에보 SL vs 마하 6)</a>은 "카본 플레이트 없이 레이싱급 폼만 데일리 트레이너에 넣은" 카테고리를 다뤘습니다. 파라마운트 맥스는 여기에 합류하는 새 진입자인데, 성격이 좀 다릅니다. 기존 3파전이 반응성·균형 중심이었다면, <strong>파라마운트 맥스는 43mm 힐 스택의 "맥스쿠션 회복 전용"</strong>에 가깝습니다. Believe in the Run의 리뷰 제목부터가 <strong>"매일 IncrediRUN 폼을 신을 수 있을까? 파라마운트 맥스는 그렇다고 답한다"</strong>입니다 — 레이싱 전용 폼을 얼마나 순화해서 일상화에 옮겼는지가 핵심 메시지인 셈이죠.</p>
+
+<h2>엔돌핀 라인과는 다른, 완전히 새로운 라인</h2>
+<p>파라마운트 맥스는 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 스피드5·프로5·엘리트3</a>의 후속이나 파생 모델이 아닙니다. <strong>폼 소재만 엔돌핀 엘리트 3와 공유할 뿐, "파라마운트"라는 완전히 별도의 신규 라인</strong>으로 신설됐습니다. 엔돌핀 라인이 카본·너브 플레이트 기반의 레이싱-투-데일리 스펙트럼을 담당한다면, 파라마운트 맥스는 <strong>"레이싱 폼만 가져오고 플레이트는 뺀" 맥스쿠션 전용 라인</strong>으로 이해하면 됩니다.</p>
+
+<h2>Believe in the Run 리뷰 — 장단점</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>구분</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td><strong>종합</strong></td><td>신 Tier 시스템 B Tier (Design C · Value C · Performance B)</td></tr>
+    <tr><td><strong>장점</strong></td><td>마시멜로처럼 부드러운 쿠셔닝, 넓은 플랫폼의 안정적인 라이드, 회복런·이지런에 최적, 가벼운 무게 대비 우수한 쿠셔닝감</td></tr>
+    <tr><td><strong>단점</strong></td><td>벌키한 디자인, 짧은 양말 착용 시 힐 자극, 매우 넓은 핏(호불호), 10마일(약 16km) 이상 빠른 페이스에서는 피로도 증가</td></tr>
+    <tr><td><strong>추천 대상</strong></td><td>극도의 편안함을 원하는 러너, 발볼 넓은 러너, 회복 전용화가 필요한 러너</td></tr>
+    <tr><td><strong>비추천 대상</strong></td><td>다목적 신발을 원하는 러너, 미니멀 디자인 선호자, 빠른 페이스 위주로 뛰는 러너</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>한국 출시는?</h2>
+<p>이 글 작성 시점 기준, <strong>saucony.co.kr에 파라마운트 맥스는 등재되지 않았습니다.</strong> 국내 러닝 커뮤니티·쇼핑몰 검색에서도 관련 언급을 찾지 못했습니다. 미국 출시 2주 남짓 시점이라 국내 출시 여부 자체가 아직 정해지지 않았을 가능성이 높습니다. 국내에서 비슷한 성격의 신발을 지금 당장 신어보고 싶다면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>에서 비교한 모델들이 현실적인 대안입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">정보성 프리뷰 — 한국 미출시</p>
+    <p>파라마운트 맥스는 이 글 작성 시점 기준 <strong>한국 공식 출시가 확인되지 않은 모델</strong>입니다. 국내 판매처·정가가 정해지면 별도로 리뷰를 갱신하거나 신발 데이터베이스에 추가하겠습니다. RunRepeat 정량 랩 데이터(SA·경도·토박스mm)도 아직 게시되지 않았습니다.</p>
+  </div>
+</div>
+
+<h2>마무리</h2>
+<p>파라마운트 맥스는 "레이싱 폼을 일상화로"라는 최근 트렌드의 연장선에 있는 흥미로운 시도입니다. 다만 국내 출시가 아직 불확실하니, 당장 비슷한 슈퍼트레이너를 찾는다면 이미 국내에서 살 수 있는 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a> 쪽을 먼저 살펴보는 걸 권합니다.</p>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 써코니 공식 발표(2026-07-01)와 Believe in the Run 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 출시 여부·정가와 RunRepeat 정량 랩 데이터는 미확정 상태로, 확인되는 대로 업데이트합니다. (작성 2026-07-14)</p>
+`,
+  },
+  {
     id: 'asics-blazeblast-preview-2026',
     slug: 'asics-blazeblast-preview-2026',
     title: '아식스 블레이즈블라스트 프리뷰 | 8월 출시 신규 트레일 프랜차이즈 — 노바블라스트가 트레일로',

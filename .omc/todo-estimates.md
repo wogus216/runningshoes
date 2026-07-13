@@ -3,6 +3,14 @@
 신상 신발(출시 <3개월) 데이터 중 RunRepeat 랩 테스트 미게시로 추정값 입력한 엔트리.
 실측값 게시되면 `specs` / `detailedSpecs` 업데이트 필요.
 
+## 미처리 (추가)
+
+- [ ] **asics-blazeblast** (추가 2026-07-14, 글로벌 출시 2026-08-01): 블로그 프리뷰만 발행(`asics-blazeblast-preview-2026`), 신발 DB는 미생성. 아식스 공식 발표(7/1) 확정 사실 — $150·FF 블라스트 맥스+전족 트램폴린 포드·ASICSGrip 2.5mm 러그. 무게(남 252g/여 221g 추정)·스택 40mm·드롭 8mm·컬러 3종·와이드 미제공은 해외 프리뷰 매체(RunToTheFinish) 추정치라 공식 아님. 재확인 트리거: ① 8/1 글로벌 출시 후 RunRepeat 랩 게시 ② 한국 asics.co.kr 등재·정가 확정 시 → 신발 DB 추가 + 프리뷰를 정식 리뷰로 전환. 재확인 시점 **2026-09**.
+
+- [ ] **hoka-speedgoat-7 이미지 미확보** (추가 2026-07-14): 신발 DB 정식 추가 완료(RunRepeat 랩 실측 기반, `hoka-speedgoat-6-vs-7-comparison-2026` 발행). 공식 이미지 미확보라 `image`/`images` 필드 없음(validate 경고만, 에러 아님) → `/best/trail` 매트릭스 미편입 상태(hasMinimumData가 image 필수). 후속: HOKA 공식 트레일 제품 이미지(dms.deckers.com) 확보 → image/images 추가 → best/trail 편입. 한국 정가(219,000원)는 무신사 확인가이며 호카코리아 공식 사이트 등재는 미확인 — 확인되면 detailedSpecs.price 문구 갱신.
+
+- [ ] **saucony-paramount-max** (추가 2026-07-14, 미국 출시 2026-07-01): 정보성 블로그 프리뷰만 발행(`saucony-paramount-max-preview-2026`), 신발 DB 미생성(한국 미출시 판단). 확정 사실 — $199.95·힐43/전족37mm·드롭6mm·풀렝스 IncrediRUN(엔돌핀 엘리트3 동일 폼, ~17% 더 단단히 튜닝)·카본 플레이트 없음. RunRepeat 랩 미게시(페이지 자체 없음). 재확인 트리거: saucony.co.kr 등재·한국 정가 확정 시 → 신발 DB 추가 + 정식 리뷰 전환. 재확인 시점 **2026-09**.
+
 ## 미처리
 
 - [~] **asics-novablast-6 DB 추가 완료 (2026-07-08, 커밋 예정) — 랩·이미지·와이드만 후속**
