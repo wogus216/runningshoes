@@ -1118,6 +1118,9 @@ export const asicsShoes: Shoe[] = [
     ],
     similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max', 'asics-sonicblast'],
     purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZwq76' }],
+    relatedPosts: [
+      { slug: 'asics-megablast-review-2026', title: '아식스 메가블라스트 후기 — 48mm인데 218g' },
+    ],
   },
   {
     id: 'asics-sonicblast',
