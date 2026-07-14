@@ -11733,7 +11733,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-02',
-    updatedAt: '2026-07-06',
+    updatedAt: '2026-07-14',
     category: 'news' as const,
     readingTime: 8,
     tags: ['춘천마라톤', '조선일보 춘천마라톤', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
@@ -11741,8 +11741,8 @@ export const posts_2026_05: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">2026 일반접수 — 풀코스 7/14(화)·10K 7/16(목) 14시 (창설 80주년·제80회)</p>
-    <p><strong>일반접수는 풀코스 2026-07-14(화) 14:00, 10K 2026-07-16(목) 14:00 선착순</strong>입니다. 명예의전당·조선멤버십 얼리버드·완주자 특별접수 등 우선 트랙은 모두 마무리됐고, <strong>이제 남은 관문은 일반접수 광클</strong>입니다 — 풀코스는 코앞이에요. 일반접수는 매년 선착순 수 분 내 마감되니 <strong>지금부터 회원가입·결제수단·신청 정보를 미리 준비</strong>하세요(아래 광클 체크리스트). 최신 정보는 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>에서 확인하세요.</p>
+    <p class="callout-title">오늘 14:00 풀코스 일반접수 시작 — 지금 대기하세요 (창설 80주년·제80회)</p>
+    <p><strong>풀코스 일반접수가 오늘 2026-07-14(화) 14:00에 시작</strong>됩니다. 10K는 이틀 뒤 2026-07-16(목) 14:00입니다. 매년 선착순 접수는 수 분 내 마감되니 <strong>지금 바로 공식 홈페이지에 로그인해두고 결제수단·신청 정보를 준비</strong>한 뒤 14:00 정각에 새로고침하며 대기하세요. 최신 정보는 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>에서 확인하세요.</p>
   </div>
 </div>
 
