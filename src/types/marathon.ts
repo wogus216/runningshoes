@@ -35,7 +35,7 @@ export type EventRegion =
 
 export type EventDistance = '풀코스' | '하프' | '10K' | '11K' | '5K' | '울트라' | '트레일';
 
-export type EventStatus = '접수중' | '마감' | '대회종료';
+export type EventStatus = '접수예정' | '접수중' | '마감' | '대회종료';
 
 // 코스 정보
 export type CourseTerrain = '평지' | '언덕' | '산악' | '혼합';
@@ -120,4 +120,4 @@ export const EVENT_REGIONS: EventRegion[] = [
 
 export const EVENT_DISTANCES: EventDistance[] = ['풀코스', '하프', '10K', '5K', '울트라', '트레일'];
 
-export const EVENT_STATUSES: EventStatus[] = ['접수중', '마감', '대회종료'];
+export const EVENT_STATUSES: EventStatus[] = ['접수예정', '접수중', '마감', '대회종료'];

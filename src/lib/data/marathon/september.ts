@@ -2,6 +2,19 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const septemberEvents: MarathonEvent[] = [
   {
+    id: 'mudo-run-gyeongju-2026',
+    name: '2026 무한도전 RUN in 경주',
+    date: '2026-09-19',
+    month: '9월',
+    location: '경주시민운동장',
+    region: '경북',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: true,
+    description:
+      '무한도전 런 하반기 대회. 노을 지는 경주 옛길을 달리는 선셋 레이스로, 콘셉트는 보물찾기 — 포졸과 도적. 종목·참가비·접수 일정은 미발표 상태(역대 대회 기준 10K 예상, 2026-07-14 공식 발표).',
+  },
+  {
     id: 'gongju-baekje-marathon-2026',
     name: '2026 공주백제마라톤',
     date: '2026-09-20',

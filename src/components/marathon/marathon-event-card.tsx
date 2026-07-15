@@ -16,6 +16,7 @@ const distanceColors: Record<string, string> = {
 };
 
 const statusStyles: Record<string, string> = {
+  '접수예정': 'bg-amber-500 text-white',
   '접수중': 'bg-sky-600 text-white',
   '마감': 'bg-gray-400 text-white',
   '대회종료': 'bg-gray-300 text-gray-600',
