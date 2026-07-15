@@ -13,43 +13,43 @@ export function Footer() {
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">카테고리</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link prefetch={false} href="/best/beginner" className="hover:text-primary transition">입문화</Link></li>
-                <li><Link prefetch={false} href="/best/daily-trainer" className="hover:text-primary transition">데일리</Link></li>
-                <li><Link prefetch={false} href="/best/racing" className="hover:text-primary transition">레이싱</Link></li>
-                <li><Link prefetch={false} href="/best" className="hover:text-primary transition">전체 가이드 →</Link></li>
-                <li><Link prefetch={false} href="/saved" className="hover:text-primary transition">찜한 목록 ♡</Link></li>
+                <li><Link href="/best/beginner" className="hover:text-primary transition">입문화</Link></li>
+                <li><Link href="/best/daily-trainer" className="hover:text-primary transition">데일리</Link></li>
+                <li><Link href="/best/racing" className="hover:text-primary transition">레이싱</Link></li>
+                <li><Link href="/best" className="hover:text-primary transition">전체 가이드 →</Link></li>
+                <li><Link href="/saved" className="hover:text-primary transition">찜한 목록 ♡</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">에너지 젤</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link prefetch={false} href="/gels" className="hover:text-primary transition">전체 보기</Link></li>
-                <li><Link prefetch={false} href="/gels/maurten-gel-100" className="hover:text-primary transition">프리미엄</Link></li>
-                <li><Link prefetch={false} href="/gels/k-yanggang" className="hover:text-primary transition">양갱</Link></li>
+                <li><Link href="/gels" className="hover:text-primary transition">전체 보기</Link></li>
+                <li><Link href="/gels/maurten-gel-100" className="hover:text-primary transition">프리미엄</Link></li>
+                <li><Link href="/gels/k-yanggang" className="hover:text-primary transition">양갱</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">마라톤 대회</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link prefetch={false} href="/marathon" className="hover:text-primary transition">전체 일정</Link></li>
-                <li><Link prefetch={false} href={{ pathname: '/marathon', query: { status: '접수중' } }} className="hover:text-primary transition">접수중 대회</Link></li>
+                <li><Link href="/marathon" className="hover:text-primary transition">전체 일정</Link></li>
+                <li><Link href={{ pathname: '/marathon', query: { status: '접수중' } }} className="hover:text-primary transition">접수중 대회</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">블로그</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link prefetch={false} href="/blog" className="hover:text-primary transition">전체 보기</Link></li>
-                <li><Link prefetch={false} href="/blog/first-running-shoe-guide-2026" className="hover:text-primary transition">초보자 가이드</Link></li>
-                <li><Link prefetch={false} href="/blog/wide-feet-running-shoes-korea" className="hover:text-primary transition">발볼 넓은 분</Link></li>
+                <li><Link href="/blog" className="hover:text-primary transition">전체 보기</Link></li>
+                <li><Link href="/blog/first-running-shoe-guide-2026" className="hover:text-primary transition">초보자 가이드</Link></li>
+                <li><Link href="/blog/wide-feet-running-shoes-korea" className="hover:text-primary transition">발볼 넓은 분</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">정보</h4>
               <ul className="space-y-2 text-sm text-secondary">
-                <li><Link prefetch={false} href="/about" className="hover:text-primary transition">사이트 소개</Link></li>
-                <li><Link prefetch={false} href="/faq" className="hover:text-primary transition">자주 묻는 질문</Link></li>
-                <li><Link prefetch={false} href="/privacy" className="hover:text-primary transition">개인정보처리방침</Link></li>
-                <li><Link prefetch={false} href="/contact" className="hover:text-primary transition">문의하기</Link></li>
+                <li><Link href="/about" className="hover:text-primary transition">사이트 소개</Link></li>
+                <li><Link href="/faq" className="hover:text-primary transition">자주 묻는 질문</Link></li>
+                <li><Link href="/privacy" className="hover:text-primary transition">개인정보처리방침</Link></li>
+                <li><Link href="/contact" className="hover:text-primary transition">문의하기</Link></li>
               </ul>
             </div>
           </div>
@@ -60,7 +60,7 @@ export function Footer() {
             <strong>러닝의 모든것</strong>은 상품 판매 당사자가 아니며, 제휴 업체가 제공하는 상품 정보 및 거래에 대하여 법적 책임을 지지 않습니다.
             상품의 상태, 배송, 환불 및 정품 여부 등에 관한 모든 책임은 실제 판매처에 있습니다.
             이 포스팅은 네이버 쇼핑 커넥트 및 쿠팡 파트너스 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다.{' '}
-            <Link prefetch={false} href="/legal" className="underline hover:text-secondary">자세히 보기</Link>
+            <Link href="/legal" className="underline hover:text-secondary">자세히 보기</Link>
           </p>
           <p className="text-center text-xs text-tertiary">
             © {new Date().getFullYear()} 러닝의 모든것

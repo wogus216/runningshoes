@@ -139,16 +139,15 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
  */
 export type CardShoe = Pick<Shoe,
   | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
-  | 'image' | 'price' | 'tags' | 'oneliner' | 'status'
+  | 'image' | 'price' | 'tags' | 'oneliner'
   | 'specs' | 'biomechanics' | 'injuryPrevention' | 'koreanFootFit'
-  | 'targetUsers' | 'priceAnalysis' | 'features' | 'description'
+  | 'targetUsers' | 'priceAnalysis' | 'features'
 >;
 
 export function toCardShoe(shoe: Shoe): CardShoe {
   // 제외 필드 (클라이언트 번들 절감):
-  // reviews, detailedSpecs, editorComment, purchaseLinks, similarShoes, images
-  // priceAnalysis.alternatives/valueAdvantages, biomechanics.optimalPace 는 포함되나
-  // 크기가 작아 top-level 제외만으로 ~250KB 절감 예상.
+  // reviews, detailedSpecs, editorComment, purchaseLinks, similarShoes, images,
+  // description, status (2026-07 소비처 전수 조사에서 사용 0회 확인)
   return {
     id: shoe.id,
     slug: shoe.slug,
@@ -160,8 +159,6 @@ export function toCardShoe(shoe: Shoe): CardShoe {
     price: shoe.price,
     tags: shoe.tags,
     oneliner: shoe.oneliner,
-    status: shoe.status,
-    description: shoe.description,
     features: shoe.features,
     specs: shoe.specs,
     biomechanics: shoe.biomechanics,

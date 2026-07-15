@@ -49,6 +49,31 @@ export type BlogPostMeta = Omit<BlogPost, 'content' | 'thumbnail'> & {
   thumbnail: string | null;
 };
 
+/**
+ * /blog 초기 서버 직렬화 카드 수 — 이 수만큼만 HTML/RSC에 실리고,
+ * 나머지는 /blog-index.json 지연 로드. ('use client' 모듈에 두면
+ * 서버 컴포넌트에서 클라이언트 참조로 변질되므로 여기(공유 모듈)에 정의)
+ */
+export const BLOG_PAGE_SIZE = 24;
+
+/**
+ * 목록 카드가 실제로 쓰는 최소 필드 (faqs/tags 등 제외).
+ * /blog 인덱스 초기 직렬화와 /blog-index.json 페이로드 절감용.
+ */
+export type BlogCardMeta = Pick<
+  BlogPostMeta,
+  | 'id'
+  | 'slug'
+  | 'title'
+  | 'description'
+  | 'author'
+  | 'category'
+  | 'publishedAt'
+  | 'readingTime'
+  | 'thumbnail'
+  | 'featured'
+>;
+
 export const categoryLabels: Record<BlogCategory, string> = {
   guide: '가이드',
   review: '리뷰',

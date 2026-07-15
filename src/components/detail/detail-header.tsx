@@ -35,7 +35,7 @@ export function DetailHeader() {
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex h-16 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3">
-            <Link prefetch={false}
+            <Link
               href="/"
               className="rounded-full p-2 transition-colors hover:bg-white/70"
               aria-label="홈으로 이동"
@@ -44,7 +44,7 @@ export function DetailHeader() {
             </Link>
             <div className="min-w-0">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">Running Index</p>
-              <Link prefetch={false} href="/" className="truncate text-base font-bold text-primary md:text-lg">{SITE_NAME}</Link>
+              <Link href="/" className="truncate text-base font-bold text-primary md:text-lg">{SITE_NAME}</Link>
             </div>
           </div>
 
@@ -57,7 +57,7 @@ export function DetailHeader() {
               <Share2 className="h-4 w-4" />
               <span className="hidden sm:inline">{shareLabel}</span>
             </button>
-            <Link prefetch={false}
+            <Link
               href="/compare"
               className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full bg-stone-950 px-3 py-2 text-sm font-semibold text-white transition hover:bg-stone-900"
             >

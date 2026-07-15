@@ -118,7 +118,7 @@ export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
       <ul className="grid gap-3 sm:grid-cols-2">
         {shoes.map((s) => (
           <li key={s.slug}>
-            <Link prefetch={false}
+            <Link
               href={`/shoes/${s.slug}` as never}
               className="group flex items-center gap-3 rounded-xl border border-border bg-surface/50 p-3 transition hover:border-accent hover:bg-white"
             >
@@ -159,7 +159,7 @@ export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
           <ul className="grid gap-3 sm:grid-cols-2">
             {gels.map((g) => (
               <li key={g.slug}>
-                <Link prefetch={false}
+                <Link
                   href={`/gels/${g.slug}` as never}
                   className="group flex items-center gap-3 rounded-xl border border-border bg-surface/50 p-3 transition hover:border-accent hover:bg-white"
                 >
@@ -193,7 +193,7 @@ export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
         <div className="mt-5 flex flex-wrap items-center gap-x-4 gap-y-1.5 border-t border-border pt-3 text-xs">
           <span className="text-tertiary">거리별 전체 추천:</span>
           {hubs.map((h) => (
-            <Link prefetch={false} key={h.href} href={h.href as never} className="font-medium text-sky-700 hover:underline">
+            <Link key={h.href} href={h.href as never} className="font-medium text-sky-700 hover:underline">
               {h.label}
             </Link>
           ))}

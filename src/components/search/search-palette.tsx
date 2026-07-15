@@ -5,9 +5,9 @@ import { useRouter } from 'next/navigation';
 import { Search, X, CornerDownLeft } from 'lucide-react';
 import type { SearchItem } from '@/lib/search-index';
 
-type SearchPaletteProps = {
-  items: SearchItem[];
-};
+// 인덱스는 팔레트가 처음 열릴 때 /search-index.json 에서 1회 로드한다
+// (모든 페이지 RSC 페이로드에 ~41KB를 싣지 않기 위한 지연 로드).
+let cachedIndex: SearchItem[] | null = null;
 
 function scoreMatch(query: string, item: SearchItem): number {
   const q = query.toLowerCase().trim();
@@ -28,12 +28,29 @@ function scoreMatch(query: string, item: SearchItem): number {
   return 0;
 }
 
-export function SearchPalette({ items }: SearchPaletteProps) {
+export function SearchPalette() {
   const router = useRouter();
   const [open, setOpen] = useState(false);
   const [query, setQuery] = useState('');
   const [cursor, setCursor] = useState(0);
+  const [items, setItems] = useState<SearchItem[]>(cachedIndex ?? []);
   const inputRef = useRef<HTMLInputElement>(null);
+
+  // 처음 열릴 때 인덱스 로드 (모듈 스코프 캐시로 세션 내 1회)
+  useEffect(() => {
+    if (!open || cachedIndex) return;
+    let cancelled = false;
+    fetch('/search-index.json')
+      .then((res) => (res.ok ? res.json() : []))
+      .then((data: SearchItem[]) => {
+        cachedIndex = data;
+        if (!cancelled) setItems(data);
+      })
+      .catch(() => {});
+    return () => {
+      cancelled = true;
+    };
+  }, [open]);
 
   // Cmd+K / Ctrl+K 단축키
   useEffect(() => {

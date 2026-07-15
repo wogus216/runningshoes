@@ -182,7 +182,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       {/* 메인 콘텐츠 */}
       <div className="w-full max-w-[768px]">
         {/* 뒤로가기 */}
-        <Link prefetch={false}
+        <Link
           href="/blog"
           className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-8"
         >
@@ -315,7 +315,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* 하단 네비게이션 */}
         <div className="pb-8">
-          <Link prefetch={false}
+          <Link
             href="/blog"
             className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-900 transition-colors"
           >

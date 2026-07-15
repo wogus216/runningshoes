@@ -1,4 +1,4 @@
-import { BlogPost, BlogPostMeta, BlogCategory } from '@/types/blog';
+import { BlogPost, BlogPostMeta, BlogCardMeta, BlogCategory } from '@/types/blog';
 import { blogPosts } from './posts';
 
 /**
@@ -25,6 +25,21 @@ export function toPostMeta(post: BlogPost): BlogPostMeta {
  */
 export function getPostsMeta(): BlogPostMeta[] {
   return getAllPosts().map(toPostMeta);
+}
+
+/**
+ * 카드용 최소 필드 projection — /blog 초기 직렬화·/blog-index.json 페이로드 절감용
+ */
+export function toCardMeta(meta: BlogPostMeta): BlogCardMeta {
+  const { id, slug, title, description, author, category, publishedAt, readingTime, thumbnail, featured } = meta;
+  return { id, slug, title, description, author, category, publishedAt, readingTime, thumbnail, featured };
+}
+
+/**
+ * 전체 포스트의 카드용 최소 메타 (최신순)
+ */
+export function getPostsCardMeta(): BlogCardMeta[] {
+  return getPostsMeta().map(toCardMeta);
 }
 
 /**

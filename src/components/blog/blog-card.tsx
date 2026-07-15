@@ -1,10 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { BlogPostMeta, categoryLabels } from '@/types/blog';
+import { BlogCardMeta, categoryLabels } from '@/types/blog';
 import { img } from '@/lib/image';
 
 interface BlogCardProps {
-  post: BlogPostMeta;
+  post: BlogCardMeta;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
@@ -17,7 +17,7 @@ export function BlogCard({ post }: BlogCardProps) {
   const thumbnail = post.thumbnail;
 
   return (
-    <Link prefetch={false} href={`/blog/${post.slug}`} className="group block">
+    <Link href={`/blog/${post.slug}`} className="group block">
       <article className="flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))] shadow-[0_20px_40px_-34px_rgba(8,18,38,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(8,18,38,0.24)]">
         {thumbnail ? (
           <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">

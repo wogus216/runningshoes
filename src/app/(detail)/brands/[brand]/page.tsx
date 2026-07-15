@@ -125,9 +125,9 @@ export default async function BrandDetailPage({ params }: PageProps) {
       />
 
       <nav className="flex items-center gap-1 text-sm text-secondary">
-        <Link prefetch={false} href="/" className="hover:text-primary">홈</Link>
+        <Link href="/" className="hover:text-primary">홈</Link>
         <ChevronRight className="w-3 h-3" />
-        <Link prefetch={false} href="/brands" className="hover:text-primary">브랜드</Link>
+        <Link href="/brands" className="hover:text-primary">브랜드</Link>
         <ChevronRight className="w-3 h-3" />
         <span className="text-primary">{brand.name}</span>
       </nav>
@@ -144,7 +144,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
         <p className="text-secondary leading-relaxed">{brand.description}</p>
         <div className="flex flex-wrap gap-2">
           {hasTechnologyPage && (
-            <Link prefetch={false}
+            <Link
               href={`/brands/${brand.id}/technology`}
               className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
             >
@@ -203,7 +203,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
                   <div className="text-xl font-bold text-accent">#{idx + 1}</div>
                 </div>
                 {shoe.image && (
-                  <Link prefetch={false}
+                  <Link
                     href={`/shoes/${shoe.slug}`}
                     className="flex-shrink-0 w-20 h-20 relative bg-surface rounded"
                   >
@@ -217,7 +217,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
                   </Link>
                 )}
                 <div className="flex-1 min-w-0">
-                  <Link prefetch={false}
+                  <Link
                     href={`/shoes/${shoe.slug}`}
                     className="block hover:text-accent transition"
                   >
@@ -263,13 +263,13 @@ export default async function BrandDetailPage({ params }: PageProps) {
           본인 발 특성과 러닝 목적에 따라 더 적합한 브랜드가 있을 수 있습니다.
         </p>
         <div className="flex flex-wrap gap-2">
-          <Link prefetch={false}
+          <Link
             href="/brands"
             className="inline-block px-4 py-2 bg-white border border-border text-sm text-primary rounded hover:border-accent transition"
           >
             전체 브랜드 보기
           </Link>
-          <Link prefetch={false}
+          <Link
             href="/recommend"
             className="inline-block px-4 py-2 bg-accent text-white text-sm font-semibold rounded hover:opacity-90 transition"
           >

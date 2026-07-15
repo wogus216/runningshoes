@@ -1,5 +1,7 @@
 import type { Metadata } from 'next';
-import { getPostsMeta } from '@/lib/data/blog';
+import Link from 'next/link';
+import { getPostsCardMeta } from '@/lib/data/blog';
+import { BLOG_PAGE_SIZE } from '@/types/blog';
 import { BlogList } from '@/components/blog/blog-list';
 
 export const metadata: Metadata = {
@@ -10,7 +12,8 @@ export const metadata: Metadata = {
 };
 
 export default function BlogPage() {
-  const allPosts = getPostsMeta();
+  const allPosts = getPostsCardMeta();
+  const archivePosts = allPosts.slice(BLOG_PAGE_SIZE);
   const featuredCount = allPosts.filter((post) => post.featured).length;
   const blogStats = [
     { label: '전체 글', value: `${allPosts.length}+` },
@@ -63,7 +66,25 @@ export default function BlogPage() {
         </div>
       </section>
 
-      <BlogList allPosts={allPosts} />
+      <BlogList initialPosts={allPosts.slice(0, BLOG_PAGE_SIZE)} totalCount={allPosts.length} />
+
+      {/* 전체 글 아카이브 — 크롤러/탐색용 경량 링크 목록 (카드로 렌더하지 않아 HTML 비용 최소) */}
+      {archivePosts.length > 0 && (
+        <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/82 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)]">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Archive</p>
+          <h2 className="mt-2 text-lg font-bold text-slate-950">전체 글 목록</h2>
+          <ul className="mt-4 grid gap-x-8 gap-y-2 sm:grid-cols-2">
+            {archivePosts.map((post) => (
+              <li key={post.id} className="flex items-baseline gap-2 text-sm leading-6">
+                <span className="shrink-0 text-xs tabular-nums text-slate-400">{post.publishedAt}</span>
+                <Link href={`/blog/${post.slug}`} className="text-slate-700 hover:text-sky-700 hover:underline">
+                  {post.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
     </div>
   );
 }
