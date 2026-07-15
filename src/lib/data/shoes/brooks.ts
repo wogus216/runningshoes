@@ -354,7 +354,7 @@ export const brooksShoes: Shoe[] = [
       landingPattern: '힐스트라이크',
     },
     similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'brooks-ghost-max-3', 'brooks-glycerin-max-2'],
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLyzM' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xllLKeHG' }],
     tags: ['쿠션화', '맥시멀', '관절 보호', '프리미엄'],
   },
   {

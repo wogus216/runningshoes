@@ -427,7 +427,10 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['puma-deviate-nitro-4', 'hoka-mach-6', 'saucony-endorphin-speed-5', 'saucony-ride-19'],
-    purchaseLinks: [{ store: '푸마 공식', url: 'https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html' }],
+    purchaseLinks: [
+      { store: '네이버', url: 'https://naver.me/GhwHPxQp' },
+      { store: '푸마 공식', url: 'https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html' },
+    ],
   },
   {
     id: 'puma-deviate-nitro-4',
@@ -532,7 +535,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['saucony-endorphin-speed-5', 'asics-sonicblast', 'nike-zoom-fly-6', 'hoka-mach-x-3'],
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK3Ul' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xoGoLpeG' }],
   },
   {
     id: 'puma-deviate-nitro-3',
@@ -742,7 +745,7 @@ export const pumaShoes: Shoe[] = [
     },
 
     similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-4'],
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBK5Yh' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xk9resjA' }],
   },
   {
     id: 'puma-deviate-nitro-elite-4',

@@ -200,7 +200,7 @@ export const adidasShoes: Shoe[] = [
       },
     ],
     similarShoes: ['nike-pegasus-premium', 'hoka-clifton-10'],
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLvsV' }],
+    purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GWWzoMpq' }],
   },
   {
     id: 'adidas-adizero-sl2',
