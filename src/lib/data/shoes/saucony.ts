@@ -771,7 +771,6 @@ export const sauconyShoes: Shoe[] = [
       },
     ],
     similarShoes: ['saucony-endorphin-elite-2', 'nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
-    purchaseLinks: [{ store: '사코니 공식', url: 'https://saucony.co.kr/' }],
   },
   {
     id: 'saucony-endorphin-speed-5',
