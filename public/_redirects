@@ -1,5 +1,5 @@
-# Cloudflare Pages redirects (next.config.js redirects()의 이전본 — vercel.json과 동기 유지)
-# www → apex: 두 도메인 모두 Pages 프로젝트 커스텀 도메인으로 연결돼 있어야 동작
-https://www.allrunabout.com/* https://allrunabout.com/:splat 301
+# Cloudflare Workers 정적 자산 redirects (vercel.json과 동기 유지)
+# ⚠️ Workers _redirects는 상대 경로만 허용 (절대 URL 넣으면 배포 실패 code 100324)
+# www → apex 301은 존 레벨 Redirect Rule로 처리 (Cloudflare 대시보드 Rules → Redirect Rules)
 /blog/beginner-running-shoe-guide-2025 /blog/first-running-shoe-guide-2026 301
 /blog/running-shoe-lifespan-care /blog/running-shoe-lifespan-replacement-guide 301
