@@ -3,11 +3,12 @@
 import { memo } from 'react';
 import { Scale, Check } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { useCompare } from '@/contexts/compare-context';
-import type { Shoe } from '@/types/shoe';
+import { useCompare, type CompareItem } from '@/contexts/compare-context';
 
 type AddToCompareButtonProps = {
-  shoe: Shoe;
+  // 전체 Shoe가 아니라 비교함 최소 정보만 — 카드 표면이 무거운 객체를 안 들고 다니게 한다.
+  // 전체 Shoe/CardShoe/GridShoe 모두 구조적으로 만족하므로 호출부는 그대로 전달 가능.
+  shoe: CompareItem;
   variant?: 'icon' | 'button';
   className?: string;
 };
@@ -24,7 +25,8 @@ export const AddToCompareButton = memo(function AddToCompareButton({ shoe, varia
     if (isAdded) {
       removeFromCompare(shoeId);
     } else if (canAddMore) {
-      addToCompare(shoe);
+      // 호출부가 전체 Shoe를 넘겨도 스토어엔 최소 필드만 저장
+      addToCompare({ id: shoe.id, slug: shoe.slug, brand: shoe.brand, name: shoe.name });
     }
   };
 

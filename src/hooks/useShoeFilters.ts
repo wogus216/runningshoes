@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
-import type { Shoe } from '@/types/shoe';
+import type { GridShoe } from '@/lib/data/shoes';
 import { useDebounce } from './useDebounce';
 
 export type SortOption =
@@ -43,7 +43,7 @@ const initialFilters: FilterState = {
   searchQuery: '',
 };
 
-export function useShoeFilters(shoes: Shoe[]) {
+export function useShoeFilters(shoes: GridShoe[]) {
   const [filters, setFilters] = useState<FilterState>(initialFilters);
   const [sortBy, setSortBy] = useState<SortOption>('rating-desc');
 
@@ -77,8 +77,7 @@ export function useShoeFilters(shoes: Shoe[]) {
         const matchesName = shoe.name.toLowerCase().includes(query);
         const matchesBrand = shoe.brand.toLowerCase().includes(query);
         const matchesTags = shoe.tags?.some(tag => tag.toLowerCase().includes(query));
-        const matchesFeatures = shoe.features?.some(f => f.toLowerCase().includes(query));
-        if (!matchesName && !matchesBrand && !matchesTags && !matchesFeatures) {
+        if (!matchesName && !matchesBrand && !matchesTags) {
           return false;
         }
       }

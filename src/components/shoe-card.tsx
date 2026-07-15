@@ -5,13 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { TrendingUp, Snowflake, Zap, Check, AlertTriangle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import type { GridShoe } from "@/lib/data/shoes";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { img } from "@/lib/image";
-import type { Shoe } from "@/types/shoe";
 
 type ShoeCardProps = {
-  shoe: Shoe;
+  shoe: GridShoe;
   index?: number;
   onTagClick?: (tag: string) => void;
 };
@@ -62,7 +62,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     }
 
     // 초보 추천
-    if (shoe.targetUsers?.recommended?.some(t => t.includes('초보') || t.includes('입문'))) {
+    if (shoe.beginnerFriendly) {
       tags.push({ text: '초보추천', type: 'positive' });
     }
 
@@ -72,7 +72,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     }
 
     return tags.slice(0, 2); // 최대 2개
-  }, [shoe.koreanFootFit, shoe.injuryPrevention, shoe.targetUsers]);
+  }, [shoe.koreanFootFit, shoe.injuryPrevention, shoe.beginnerFriendly]);
 
   const statChips = useMemo(() => {
     const chips: string[] = [];

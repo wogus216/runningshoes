@@ -1,11 +1,11 @@
 import { useMemo } from "react";
 import { categoryOrder } from "@/types/shoe";
-import type { CardShoe } from "@/lib/data/shoes";
+import type { GridShoe } from "@/lib/data/shoes";
 import { groupByCategory } from "@/lib/shoes-utils";
 import { CategorySection } from "@/components/category-section";
 
 type HierarchyViewProps = {
-  shoes: CardShoe[];
+  shoes: GridShoe[];
   onTagClick?: (tag: string) => void;
 };
 

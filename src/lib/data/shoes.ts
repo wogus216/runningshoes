@@ -11,6 +11,8 @@ export {
   getSimilarShoesData,
   toCardShoe,
   getCardShoes,
+  toGridShoe,
+  getGridShoes,
 } from './shoes/index';
 
-export type { SimilarShoeInfo, CardShoe } from './shoes/index';
+export type { SimilarShoeInfo, CardShoe, GridShoe } from './shoes/index';

@@ -1,4 +1,4 @@
-import type { Shoe } from '@/types/shoe';
+import type { Shoe, KoreanFootFit } from '@/types/shoe';
 import { categoryOrder as sharedCategoryOrder } from '@/types/shoe';
 import { nikeShoes } from './nike';
 import { adidasShoes } from './adidas';
@@ -171,6 +171,60 @@ export function toCardShoe(shoe: Shoe): CardShoe {
 
 export function getCardShoes(): CardShoe[] {
   return shoes.map(toCardShoe);
+}
+
+/**
+ * 카드 그리드/필터 표면 전용 초경량 타입 — 홈·브랜드뷰·계층뷰가 사용.
+ * 중첩 객체도 실사용 서브필드만 유지 (2026-07 필드별 실측: 123KB → ~40KB).
+ * 비교 담기는 CompareItem(slug 기반)이라 전체 객체가 필요 없다.
+ * 전체 데이터가 필요한 비교/추천은 CardShoe를 그대로 쓴다.
+ */
+export type GridShoe = Pick<Shoe,
+  | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
+  | 'image' | 'price' | 'tags' | 'oneliner' | 'injuryPrevention'
+> & {
+  specs?: { weight?: number };
+  biomechanics?: { drop?: number; carbonPlate?: boolean };
+  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'flatFootCompatibility' | 'winterCompatibility'>;
+  priceAnalysis?: { valueRating?: number; msrp?: number };
+  /** targetUsers.recommended에 초보/입문 포함 여부 사전계산 (카드 뱃지용) */
+  beginnerFriendly?: boolean;
+};
+
+export function toGridShoe(shoe: Shoe): GridShoe {
+  return {
+    id: shoe.id,
+    slug: shoe.slug,
+    brand: shoe.brand,
+    name: shoe.name,
+    category: shoe.category,
+    rating: shoe.rating,
+    image: shoe.image,
+    price: shoe.price,
+    tags: shoe.tags,
+    oneliner: shoe.oneliner,
+    injuryPrevention: shoe.injuryPrevention,
+    specs: shoe.specs ? { weight: shoe.specs.weight } : undefined,
+    biomechanics: shoe.biomechanics
+      ? { drop: shoe.biomechanics.drop, carbonPlate: shoe.biomechanics.carbonPlate }
+      : undefined,
+    koreanFootFit: shoe.koreanFootFit
+      ? {
+          toBoxWidth: shoe.koreanFootFit.toBoxWidth,
+          flatFootCompatibility: shoe.koreanFootFit.flatFootCompatibility,
+          winterCompatibility: shoe.koreanFootFit.winterCompatibility,
+        }
+      : undefined,
+    priceAnalysis: shoe.priceAnalysis
+      ? { valueRating: shoe.priceAnalysis.valueRating, msrp: shoe.priceAnalysis.msrp }
+      : undefined,
+    beginnerFriendly:
+      shoe.targetUsers?.recommended?.some((t) => t.includes('초보') || t.includes('입문')) ?? false,
+  };
+}
+
+export function getGridShoes(): GridShoe[] {
+  return shoes.map(toGridShoe);
 }
 
 export default shoes;

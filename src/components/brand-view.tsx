@@ -2,13 +2,13 @@ import { useMemo } from "react";
 import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { FlaskConical } from "lucide-react";
-import type { CardShoe } from "@/lib/data/shoes";
+import type { GridShoe } from "@/lib/data/shoes";
 import { groupByBrand, uniqueBrands } from "@/lib/shoes-utils";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { ShoeCard } from "@/components/shoe-card";
 
 type BrandViewProps = {
-  shoes: CardShoe[];
+  shoes: GridShoe[];
   onTagClick?: (tag: string) => void;
 };
 

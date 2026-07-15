@@ -10,7 +10,7 @@ import { ViewToggle, type ViewMode } from "@/components/view-toggle";
 import { FilterPanel } from "@/components/filters/filter-panel";
 import { useShoeFilters } from "@/hooks/useShoeFilters";
 import { categoryOrder } from "@/types/shoe";
-import type { CardShoe } from "@/lib/data/shoes";
+import type { GridShoe } from "@/lib/data/shoes";
 import { TechBanner } from "@/components/home/tech-banner";
 import { GelBanner } from "@/components/home/gel-banner";
 import { GuideBanner } from "@/components/home/guide-banner";
@@ -18,7 +18,7 @@ import { AdSlot } from "@/components/ads/ad-slot";
 import { ADSENSE_SLOTS } from "@/lib/constants";
 
 interface HomeContentProps {
-  initialShoes: CardShoe[];
+  initialShoes: GridShoe[];
 }
 
 export function HomeContent({ initialShoes }: HomeContentProps) {

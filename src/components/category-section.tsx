@@ -1,11 +1,11 @@
 import { memo } from "react";
 import { cn } from "@/lib/utils";
-import type { Shoe } from "@/types/shoe";
+import type { GridShoe } from "@/lib/data/shoes";
 import { ShoeCard } from "@/components/shoe-card";
 
 type CategorySectionProps = {
   category: string;
-  shoes: Shoe[];
+  shoes: GridShoe[];
   indexOffset?: number;
   className?: string;
   onTagClick?: (tag: string) => void;
