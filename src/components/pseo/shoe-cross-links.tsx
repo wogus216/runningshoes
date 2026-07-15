@@ -31,7 +31,7 @@ export function ShoeCrossLinks({ shoe }: { shoe: Shoe }) {
           <ul className="flex flex-wrap gap-2">
             {matrices.map((m) => (
               <li key={m.slug}>
-                <Link
+                <Link prefetch={false}
                   href={`/best/${m.slug}`}
                   className="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs bg-surface hover:bg-white border border-border hover:border-accent rounded-full transition"
                 >
@@ -59,7 +59,7 @@ export function ShoeCrossLinks({ shoe }: { shoe: Shoe }) {
               const other = p.a.slug === shoe.slug ? p.b : p.a;
               return (
                 <li key={p.slug}>
-                  <Link
+                  <Link prefetch={false}
                     href={`/vs/${p.slug}`}
                     className="block px-3 py-2 text-sm bg-surface hover:bg-white border border-border hover:border-accent rounded transition"
                   >

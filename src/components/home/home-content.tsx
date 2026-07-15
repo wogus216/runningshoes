@@ -127,7 +127,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
             </div>
 
             <div className="flex flex-col gap-3 sm:flex-row">
-              <Link
+              <Link prefetch={false}
                 href="/recommend"
                 className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-[var(--navy)] px-5 py-3 text-sm font-semibold text-white shadow-[0_20px_42px_-28px_rgba(2,132,199,0.6)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--navy-soft)]"
               >
@@ -249,14 +249,14 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
         </div>
 
         <div className="grid grid-cols-3 gap-2 text-sm text-slate-600 sm:gap-3">
-          <Link
+          <Link prefetch={false}
             href="/recommend"
             className="flex min-h-[72px] flex-col justify-between rounded-[18px] border border-sky-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(236,248,255,0.96))] p-3 transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 sm:min-h-[88px] sm:rounded-[22px] sm:p-4"
           >
             <Sparkles className="h-4 w-4 text-accent sm:h-5 sm:w-5" />
             <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-700 sm:text-xs sm:tracking-[0.2em]">추천</span>
           </Link>
-          <Link
+          <Link prefetch={false}
             href="/compare"
             className="flex min-h-[72px] flex-col justify-between rounded-[18px] border border-sky-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.95))] p-3 transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 sm:min-h-[88px] sm:rounded-[22px] sm:p-4"
           >

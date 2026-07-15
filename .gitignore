@@ -28,3 +28,7 @@ blog-auto-494801-*.json
 
 # Claude Code runtime artifacts
 .claude/scheduled_tasks.lock
+
+# next-sitemap 산출물 (postbuild가 out/에 생성 — public에 커밋 금지)
+public/robots.txt
+public/sitemap*.xml

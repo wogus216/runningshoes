@@ -32,7 +32,7 @@ function formatDate(dateStr: string): string {
 
 export function MarathonEventCard({ event }: MarathonEventCardProps) {
   return (
-    <Link
+    <Link prefetch={false}
       href={`/marathon/${event.id}`}
       className={`group block rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))] p-5 shadow-[0_20px_40px_-34px_rgba(8,18,38,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(8,18,38,0.24)] ${event.isMajor ? 'ring-2 ring-sky-200' : ''}`}
     >

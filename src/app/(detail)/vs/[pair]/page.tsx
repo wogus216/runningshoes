@@ -230,13 +230,13 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
     <div className="flex-1 text-center space-y-3">
       <div className="text-xs font-semibold text-accent uppercase tracking-wide">{label}</div>
       {shoe.image && (
-        <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-lg">
+        <Link prefetch={false} href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-lg">
           <Image src={img(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
         </Link>
       )}
       <div>
         <div className="text-xs text-tertiary uppercase">{shoe.brand}</div>
-        <Link href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-primary hover:text-accent">
+        <Link prefetch={false} href={`/shoes/${shoe.slug}`} className="text-lg font-bold text-primary hover:text-accent">
           {shoe.name}
         </Link>
       </div>
@@ -364,9 +364,9 @@ export default async function ComparePairPage({ params }: PageProps) {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
 
       <nav className="flex items-center gap-1 text-sm text-secondary">
-        <Link href="/" className="hover:text-primary">홈</Link>
+        <Link prefetch={false} href="/" className="hover:text-primary">홈</Link>
         <ChevronRight className="w-3 h-3" />
-        <Link href="/vs" className="hover:text-primary">신발 비교</Link>
+        <Link prefetch={false} href="/vs" className="hover:text-primary">신발 비교</Link>
         <ChevronRight className="w-3 h-3" />
         <span className="text-primary truncate">{a.name} vs {b.name}</span>
       </nav>
@@ -395,9 +395,9 @@ export default async function ComparePairPage({ params }: PageProps) {
           ))}
         </div>
         <p className="text-sm text-tertiary">
-          더 깊은 분석이 필요하면 <Link href={`/shoes/${a.slug}`} className="text-accent hover:underline">{a.name}</Link>·
-          <Link href={`/shoes/${b.slug}`} className="text-accent hover:underline">{b.name}</Link> 상세 페이지와{' '}
-          <Link href="/recommend" className="text-accent hover:underline">1분 러닝화 추천</Link>을 활용하세요.
+          더 깊은 분석이 필요하면 <Link prefetch={false} href={`/shoes/${a.slug}`} className="text-accent hover:underline">{a.name}</Link>·
+          <Link prefetch={false} href={`/shoes/${b.slug}`} className="text-accent hover:underline">{b.name}</Link> 상세 페이지와{' '}
+          <Link prefetch={false} href="/recommend" className="text-accent hover:underline">1분 러닝화 추천</Link>을 활용하세요.
         </p>
       </section>
 
@@ -464,11 +464,11 @@ export default async function ComparePairPage({ params }: PageProps) {
       )}
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Link href={`/shoes/${a.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
+        <Link prefetch={false} href={`/shoes/${a.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
           <div className="text-xs text-tertiary uppercase">상세 보기</div>
           <div className="font-semibold text-primary">{a.brand} {a.name} →</div>
         </Link>
-        <Link href={`/shoes/${b.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
+        <Link prefetch={false} href={`/shoes/${b.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
           <div className="text-xs text-tertiary uppercase">상세 보기</div>
           <div className="font-semibold text-primary">{b.brand} {b.name} →</div>
         </Link>
@@ -484,7 +484,7 @@ export default async function ComparePairPage({ params }: PageProps) {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {relatedPairs.map((p) => (
                   <li key={p.slug}>
-                    <Link href={`/vs/${p.slug}`} className="block p-3 bg-surface rounded-lg hover:bg-white transition border border-border text-sm text-primary">
+                    <Link prefetch={false} href={`/vs/${p.slug}`} className="block p-3 bg-surface rounded-lg hover:bg-white transition border border-border text-sm text-primary">
                       {p.a.name} vs {p.b.name} →
                     </Link>
                   </li>
@@ -496,12 +496,12 @@ export default async function ComparePairPage({ params }: PageProps) {
           {(otherForA.length > 0 || otherForB.length > 0) && (
             <div className="flex flex-wrap gap-2 text-sm">
               {otherForA.map((p) => (
-                <Link key={p.slug} href={`/vs/${p.slug}`} className="px-3 py-1.5 bg-surface rounded-full hover:bg-white transition border border-border text-secondary">
+                <Link prefetch={false} key={p.slug} href={`/vs/${p.slug}`} className="px-3 py-1.5 bg-surface rounded-full hover:bg-white transition border border-border text-secondary">
                   {p.a.name} vs {p.b.name}
                 </Link>
               ))}
               {otherForB.map((p) => (
-                <Link key={p.slug} href={`/vs/${p.slug}`} className="px-3 py-1.5 bg-surface rounded-full hover:bg-white transition border border-border text-secondary">
+                <Link prefetch={false} key={p.slug} href={`/vs/${p.slug}`} className="px-3 py-1.5 bg-surface rounded-full hover:bg-white transition border border-border text-secondary">
                   {p.a.name} vs {p.b.name}
                 </Link>
               ))}
@@ -509,9 +509,9 @@ export default async function ComparePairPage({ params }: PageProps) {
           )}
 
           <div className="flex flex-wrap gap-3 text-sm pt-2">
-            <Link href="/recommend" className="text-accent font-medium hover:underline">1분 러닝화 추천 →</Link>
-            <Link href="/compare" className="text-accent font-medium hover:underline">직접 비교하기 →</Link>
-            <Link href="/vs" className="text-accent font-medium hover:underline">전체 비교 보기 →</Link>
+            <Link prefetch={false} href="/recommend" className="text-accent font-medium hover:underline">1분 러닝화 추천 →</Link>
+            <Link prefetch={false} href="/compare" className="text-accent font-medium hover:underline">직접 비교하기 →</Link>
+            <Link prefetch={false} href="/vs" className="text-accent font-medium hover:underline">전체 비교 보기 →</Link>
           </div>
         </section>
       )}

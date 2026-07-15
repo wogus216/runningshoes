@@ -117,6 +117,8 @@ function lastModFor(urlPath) {
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || "https://allrunabout.com",
+  // output: 'export' 전환으로 빌드 산출물이 out/ 이므로 sitemap/robots도 out/에 생성
+  outDir: "out",
   generateRobotsTxt: true,
   changefreq: "weekly",
   priority: 0.7,

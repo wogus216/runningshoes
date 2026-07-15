@@ -101,9 +101,9 @@ export default async function BestPage({ params }: PageProps) {
       />
 
       <nav className="flex items-center gap-1 text-sm text-secondary">
-        <Link href="/" className="hover:text-primary">홈</Link>
+        <Link prefetch={false} href="/" className="hover:text-primary">홈</Link>
         <ChevronRight className="w-3 h-3" />
-        <Link href="/best" className="hover:text-primary">베스트 가이드</Link>
+        <Link prefetch={false} href="/best" className="hover:text-primary">베스트 가이드</Link>
         <ChevronRight className="w-3 h-3" />
         <span className="text-primary">{entry.h1}</span>
       </nav>
@@ -130,7 +130,7 @@ export default async function BestPage({ params }: PageProps) {
                 <div className="text-2xl font-bold text-accent">#{idx + 1}</div>
               </div>
               {shoe.image && (
-                <Link
+                <Link prefetch={false}
                   href={`/shoes/${shoe.slug}`}
                   className="flex-shrink-0 w-24 h-24 relative bg-surface rounded"
                 >
@@ -144,7 +144,7 @@ export default async function BestPage({ params }: PageProps) {
                 </Link>
               )}
               <div className="flex-1 min-w-0">
-                <Link
+                <Link prefetch={false}
                   href={`/shoes/${shoe.slug}`}
                   className="block hover:text-accent transition"
                 >
@@ -197,7 +197,7 @@ export default async function BestPage({ params }: PageProps) {
                 <tr key={s.slug} className="border-t border-border hover:bg-surface/60">
                   <td className="p-3 text-tertiary">{i + 1}</td>
                   <td className="p-3">
-                    <Link href={`/shoes/${s.slug}`} className="font-semibold text-primary hover:text-accent">
+                    <Link prefetch={false} href={`/shoes/${s.slug}`} className="font-semibold text-primary hover:text-accent">
                       {s.brand} {s.name}
                     </Link>
                   </td>
@@ -265,7 +265,7 @@ export default async function BestPage({ params }: PageProps) {
           <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2">
             {relatedPairs.map((p) => (
               <li key={p.slug}>
-                <Link
+                <Link prefetch={false}
                   href={`/vs/${p.slug}`}
                   className="block px-4 py-3 bg-white border border-border hover:border-accent rounded-lg transition"
                 >
@@ -286,7 +286,7 @@ export default async function BestPage({ params }: PageProps) {
         <p className="text-sm text-secondary mb-3">
           본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
         </p>
-        <Link
+        <Link prefetch={false}
           href="/recommend"
           className="inline-block px-4 py-2 bg-accent text-white text-sm font-semibold rounded hover:opacity-90 transition"
         >

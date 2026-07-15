@@ -139,7 +139,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 md:mb-1 md:text-[11px] md:tracking-[0.18em]">{shoe.brand}</p>
             <h3 className="line-clamp-2 min-h-[2.25rem] text-[13px] font-bold leading-4.5 text-slate-950 md:min-h-[3rem] md:text-base md:leading-5">
               {shoe.slug ? (
-                <Link
+                <Link prefetch={false}
                   href={href as `/shoes/${string}`}
                   className="outline-none after:absolute after:inset-0 after:rounded-[28px] after:content-[''] focus-visible:outline-none"
                   aria-label={`${shoe.brand} ${shoe.name} 상세 보기`}

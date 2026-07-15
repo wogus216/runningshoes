@@ -50,7 +50,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">비슷한 신발</h2>
         </div>
         {selectedSlugs.length > 0 && (
-          <Link
+          <Link prefetch={false}
             href={getCompareUrl()}
             className="flex items-center gap-2 rounded-full bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
           >
@@ -232,7 +232,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
               </tbody>
             </table>
           </div>
-          <Link
+          <Link prefetch={false}
             href={getCompareUrl()}
             className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-medium text-white transition hover:opacity-90"
           >
