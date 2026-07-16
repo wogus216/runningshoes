@@ -3761,7 +3761,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
 <ul>
-  <li><strong>🟢 첫 러닝화·가장 무난</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 풀렝스 에어에 와이드까지, 나이키의 정석입니다. 41과의 차이는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>에, 42의 실착 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 리뷰</a>에 정리했습니다.</li>
+  <li><strong>🟢 첫 러닝화·가장 무난</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 풀렝스 에어에 와이드까지, 나이키의 정석입니다. 41과의 차이는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>에, 42의 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 리뷰</a>에 정리했습니다.</li>
   <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(13.9만) 또는 할인 중인 <a href="/shoes/nike-pegasus-41">페가수스 41</a>.</li>
   <li><strong>☁️ 푹신하게·무릎 보호</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(43mm). 더 푹신하면 <a href="/shoes/nike-vomero-plus">보메로 플러스</a>, 극한 회복용은 50mm <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>.</li>
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/nike-structure-26">스트럭처 26</a>. 나이키 유일 안정화로 와이드 옵션도 있습니다. 다른 브랜드 안정화와 비교하려면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>를 보세요.</li>

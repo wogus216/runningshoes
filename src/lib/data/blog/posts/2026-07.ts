@@ -2672,7 +2672,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·43.5mm 맥스쿠션)입니다. 페가42의 실착 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
+    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·43.5mm 맥스쿠션)입니다. 페가42의 데이터 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
   </div>
 </div>
 
