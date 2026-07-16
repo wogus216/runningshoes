@@ -5,19 +5,16 @@ import { useSearchParams, useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Search, X, Check, Link2, GripVertical, Sparkles, Scale, ArrowRightLeft } from 'lucide-react';
 import type { CardShoe } from '@/lib/data/shoes';
+import { loadCardShoes } from '@/lib/shoes-card-client';
 import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-table';
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { cn } from '@/lib/utils';
 import { img } from '@/lib/image';
 
-interface CompareContentProps {
-  allShoes: CardShoe[];
-}
-
-export function CompareContent({ allShoes: allShoesProp }: CompareContentProps) {
+export function CompareContent() {
   return (
     <Suspense fallback={<ComparePageSkeleton />}>
-      <ComparePageContent allShoesProp={allShoesProp} />
+      <ComparePageContent />
     </Suspense>
   );
 }
@@ -33,9 +30,14 @@ function ComparePageSkeleton() {
   );
 }
 
-function ComparePageContent({ allShoesProp }: { allShoesProp: CardShoe[] }) {
+function ComparePageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  // 마운트 시 지연 로드 — CF 엣지 캐시라 수십 ms, 로드 전엔 빈 그리드가 잠깐 보인다
+  const [allShoesProp, setAllShoesProp] = useState<CardShoe[]>([]);
+  useEffect(() => {
+    loadCardShoes().then(setAllShoesProp).catch(() => {});
+  }, []);
   const allShoes = useMemo(() => allShoesProp.filter(s => s.specs), [allShoesProp]);
   const [selectedShoes, setSelectedShoes] = useState<CardShoe[]>([]);
   const [searchQuery, setSearchQuery] = useState('');

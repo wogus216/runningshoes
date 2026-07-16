@@ -1,22 +1,33 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { RotateCcw, Sparkles, ArrowUpRight, Activity } from 'lucide-react';
 import type { CardShoe } from '@/lib/data/shoes';
+import { loadCardShoes } from '@/lib/shoes-card-client';
 import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
 
 interface RecommendContentProps {
-  allShoes: CardShoe[];
+  totalCount: number;
 }
 
-export function RecommendContent({ allShoes }: RecommendContentProps) {
+export function RecommendContent({ totalCount }: RecommendContentProps) {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [recommendations, setRecommendations] = useState<RecommendedShoe[]>([]);
-  const handleComplete = (userProfile: UserProfile) => {
+  // 결과 화면(InjuryAnalysis)용 — 퀴즈 완료 시점에 지연 로드로 채워진다
+  const [loadedShoes, setLoadedShoes] = useState<CardShoe[]>([]);
+
+  // 사용자가 질문에 답하는 동안 백그라운드에서 신발 데이터를 미리 받아둔다
+  useEffect(() => {
+    void loadCardShoes().catch(() => {});
+  }, []);
+
+  const handleComplete = async (userProfile: UserProfile) => {
+    const allShoes = await loadCardShoes();
     const results = recommendShoes(allShoes, userProfile);
+    setLoadedShoes(allShoes);
     setRecommendations(results);
     setProfile(userProfile);
   };
@@ -37,7 +48,7 @@ export function RecommendContent({ allShoes }: RecommendContentProps) {
     budget: { low: '20만원 이하', mid: '15-30만원', high: '20만원 이상' },
   };
   const summaryStats = [
-    { label: '분석 대상', value: `${allShoes.length}+` },
+    { label: '분석 대상', value: `${totalCount}+` },
     { label: '질문 수', value: '9' },
     { label: '결과', value: profile ? `${recommendations.length}개` : '개인화' },
   ];
@@ -138,7 +149,7 @@ export function RecommendContent({ allShoes }: RecommendContentProps) {
 
             {/* 부상별 분석 */}
             {profile.injuries.length > 0 && (
-              <InjuryAnalysis injuries={profile.injuries} allShoes={allShoes} />
+              <InjuryAnalysis injuries={profile.injuries} allShoes={loadedShoes} />
             )}
 
 
