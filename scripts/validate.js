@@ -17,6 +17,17 @@ const shoesDir = path.join(__dirname, '..', 'src/lib/data/shoes');
 const imagesDir = path.join(__dirname, '..', 'public/images/shoes');
 const brands = ['adidas', 'asics', 'brooks', 'hoka', 'lining', 'mizuno', 'newbalance', 'nike', 'on', 'puma', 'salomon', 'saucony'];
 
+// 신발 1켤레 = 파일 1개 구조 (shoes/{brand}/{slug}.ts) — 브랜드 디렉토리의
+// 신발 파일들을 이어붙여 기존 regex 검증 로직을 그대로 재사용한다.
+function readBrandContent(brand) {
+  const dir = path.join(shoesDir, brand);
+  if (!fs.existsSync(dir)) return null;
+  return fs.readdirSync(dir)
+    .filter(f => f.endsWith('.ts') && f !== 'index.ts')
+    .map(f => fs.readFileSync(path.join(dir, f), 'utf-8'))
+    .join('\n');
+}
+
 let errors = 0;
 let warnings = 0;
 
@@ -35,10 +46,8 @@ const duplicateIds = [];
 const shoeEntries = []; // { id, slug, brand, file }
 
 brands.forEach(brand => {
-  const filePath = path.join(shoesDir, brand + '.ts');
-  if (!fs.existsSync(filePath)) return;
-
-  const content = fs.readFileSync(filePath, 'utf-8');
+  const content = readBrandContent(brand);
+  if (content === null) return;
 
   // id와 slug 쌍 추출
   const entryRegex = /{\s*\n\s*id:\s*['"]([^'"]+)['"],\s*\n\s*slug:\s*['"]([^'"]+)['"]/g;
@@ -59,7 +68,7 @@ brands.forEach(brand => {
   // ⚠️ 과거 버그: `id:[\s\S]*?image:` 로 lazy 매칭하면 image 없는 신발이 *다음* 신발의
   //    image 를 흡수 → 누락 신발은 침묵하고 엉뚱한 다음 신발이 오탐됐음.
   //    각 신발 블록 안의 자기 image 필드만 검사하도록 교체.
-  const idBlocks = [...content.matchAll(/^ {4}id:\s*['"]([^'"]+)['"]/gm)];
+  const idBlocks = [...content.matchAll(/^ {2}id:\s*['"]([^'"]+)['"]/gm)];
   for (let i = 0; i < idBlocks.length; i++) {
     const startIdx = idBlocks[i].index;
     const endIdx = i + 1 < idBlocks.length ? idBlocks[i + 1].index : content.length;
@@ -67,7 +76,7 @@ brands.forEach(brand => {
     const entry = shoeEntries.find(e => e.id === idBlocks[i][1]);
     if (!entry) continue;
     // `images:`(복수)는 콜론 뒤가 `[` 라 매칭되지 않음 — top-level `image:` 만 잡힘
-    const im = block.match(/^ {4}image:\s*['"]([^'"]*)['"]/m);
+    const im = block.match(/^ {2}image:\s*['"]([^'"]*)['"]/m);
     if (im) entry.image = im[1];
   }
 
@@ -128,9 +137,8 @@ let refOk = true;
 const invalidRefs = [];
 
 brands.forEach(brand => {
-  const filePath = path.join(shoesDir, brand + '.ts');
-  if (!fs.existsSync(filePath)) return;
-  const content = fs.readFileSync(filePath, 'utf-8');
+  const content = readBrandContent(brand);
+  if (content === null) return;
 
   // similarShoes
   const similarRegex = /id:\s*['"]([^'"]+)['"][\s\S]*?similarShoes:\s*\[([^\]]*)\]/g;
@@ -223,9 +231,8 @@ console.log('━━━ 5. 데이터 일관성 검증 ━━━');
 let consistOk = true;
 
 brands.forEach(brand => {
-  const filePath = path.join(shoesDir, brand + '.ts');
-  if (!fs.existsSync(filePath)) return;
-  const content = fs.readFileSync(filePath, 'utf-8');
+  const content = readBrandContent(brand);
+  if (content === null) return;
 
   const slugMatches = [...content.matchAll(/slug:\s*'([^']+)'/g)];
   for (let i = 0; i < slugMatches.length; i++) {
@@ -234,7 +241,7 @@ brands.forEach(brand => {
     const block = content.slice(start, end);
     const slug = slugMatches[i][1];
 
-    const pm = block.match(/\n\s{4}price:\s*(\d+),/);
+    const pm = block.match(/\n\s{2}price:\s*(\d+),/);
     if (!pm) continue;
     const price = parseInt(pm[1]);
 

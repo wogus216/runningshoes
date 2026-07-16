@@ -146,18 +146,11 @@ src/
 │   ├── recommend/          # 추천 기능 컴포넌트
 │   └── ui/                 # shadcn/ui 컴포넌트
 ├── lib/
-│   ├── data/shoes/         # 브랜드별 신발 데이터 (10개 파일)
-│   │   ├── index.ts        # 전체 신발 export
-│   │   ├── nike.ts
-│   │   ├── adidas.ts
-│   │   ├── asics.ts
-│   │   ├── newbalance.ts
-│   │   ├── hoka.ts
-│   │   ├── brooks.ts
-│   │   ├── saucony.ts
-│   │   ├── on.ts
-│   │   ├── mizuno.ts
-│   │   └── puma.ts
+│   ├── data/shoes/         # 신발 데이터 — 신발 1켤레 = 파일 1개 (2026-07 분리)
+│   │   ├── index.ts        # 전체 신발 export (브랜드 배열 조립)
+│   │   └── {brand}/        # 브랜드 디렉토리 (nike, asics, ... 12개)
+│   │       ├── index.ts    # import + 배열 조립 (새 신발은 여기 등록)
+│   │       └── {slug}.ts   # 신발 1켤레 (예: asics-gel-kayano-33.ts)
 │   └── recommendation.ts   # 추천 알고리즘
 ├── types/
 │   └── shoe.ts             # Shoe 타입 정의
@@ -280,7 +273,7 @@ FF Blast Max로 업그레이드되어 이전 버전보다 쿠셔닝과 에너지
    - 자세한 방법은 아래 "리뷰 데이터 수집 가이드" 참조
    - 봇 차단/JS 렌더링 필수일 때만 Chrome DevTools MCP로 폴백
 
-2. **해당 브랜드 파일에 추가** (`src/lib/data/shoes/{brand}.ts`)
+2. **신발 파일 생성 + 브랜드 index 등록** — `src/lib/data/shoes/{brand}/{slug}.ts`에 `export const shoe: Shoe = {...}` 로 작성하고, `{brand}/index.ts`에 import + 배열 등록 (신발 1켤레 = 파일 1개 구조)
 
 3. **Slug 형식 준수**
    - 형식: `{brand}-{model-name}` (소문자, 하이픈)
@@ -692,7 +685,9 @@ npm run validate && npm run build
 2. 다른 파일에서 해당 slug 참조하는 곳 모두 업데이트
    ```bash
    grep -r "old-slug" src/lib/data/shoes/
-   sed -i '' 's/old-slug/new-slug/g' src/lib/data/shoes/*.ts
+   # 참조 일괄 교체 (하위 디렉토리 포함) + 파일명도 slug와 일치하도록 mv
+   grep -rl "old-slug" src/lib/data/shoes/ | xargs sed -i '' 's/old-slug/new-slug/g'
+   mv src/lib/data/shoes/{brand}/old-slug.ts src/lib/data/shoes/{brand}/new-slug.ts
    ```
 
 ---

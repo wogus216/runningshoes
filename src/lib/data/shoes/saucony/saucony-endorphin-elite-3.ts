@@ -1,0 +1,98 @@
+import type { Shoe } from '@/types/shoe';
+
+export const shoe: Shoe = {
+  id: 'saucony-endorphin-elite-3',
+  slug: 'saucony-endorphin-elite-3',
+  brand: 'Saucony',
+  name: '엔돌핀 엘리트 3',
+  image: '/images/shoes/saucony/endorphinelite3/side.webp',
+  images: [
+    '/images/shoes/saucony/endorphinelite3/side.webp',
+    '/images/shoes/saucony/endorphinelite3/angle.webp',
+    '/images/shoes/saucony/endorphinelite3/top.webp',
+  ],
+  category: '레이싱',
+  rating: 5,
+  price: 369000,
+  description:
+    'Saucony 최상위 카본 마라톤 레이싱화의 신형. 역대 최고 반발의 IncrediRUN 폼은 유지하되, 측면 컷아웃 제거로 안정성을 높이고 토박스를 넓혀 전작의 약점을 손봤습니다. 2026년 7월 1일 한국 출시.',
+  oneliner: '80%대 반발은 그대로, 안정성·발볼을 손본 엘리트 신형',
+  editorComment:
+    '2026년 7월 1일 한국 출시 직후로 RunRepeat 랩 데이터가 아직 미게시 상태이며, 무게·스택을 제외한 충격흡수·에너지 리턴 수치는 엔돌핀 엘리트 2 실측 + 공식 변경점 기반 추정치입니다.\n\n엘리트 3는 "괴물 같은 반발이지만 너무 불안정하고 발볼이 좁다"던 엘리트 2의 약점을 정확히 겨냥한 업데이트입니다. 미드솔 측면의 깊은 컷아웃을 메우고 힐·측면 폼 볼륨을 키워 안정성을 끌어올렸고(전작 stability 4→추정 5), 카본 플레이트를 평탄형에서 리지드+포크 형태로 바꿔 앞쪽 추진력을 강화했습니다. 무엇보다 토박스가 직각형으로 넓어져 발볼 넓은 한국 러너에게 엘리트 2(narrow 71mm)보다 훨씬 우호적입니다. 대가는 약 10g 무게 증가(197g→207g)지만, IncrediRUN 폼의 80%대 반발은 계승됩니다.\n\n사이즈·구매 가이드: 와이드 옵션은 없으나 기본 토박스가 넓어져 표준~약간 넓은 발까지 수용합니다. 정가 369,000원에 200km 레이스 전용 운용 기준 km당 약 1,845원으로, 오직 대회·포인트 훈련에만 꺼내 신는 무기입니다. 힐 카운터가 없어 아킬레스 부착부 통증(하글런드 변형 포함) 러너에게는 레이싱화 중 최선의 선택지입니다. 같은 엘리트급으로는 알파플라이 3·메타스피드 스카이+, 검증된 전작 엘리트 2가 대안입니다.',
+  tags: ['레이싱', '카본', '엘리트', '슈퍼화', '에너지 리턴'],
+  specs: {
+    weight: 207,
+    cushioning: 7,
+    responsiveness: 9,
+    stability: 5,
+    drop: 8,
+    durability: 200,
+  },
+  biomechanics: {
+    stackHeight: { heel: 39.5, forefoot: 31.5 },
+    drop: 8,
+    carbonPlate: true,
+    plateType: 'curved',
+    midsoleType: 'IncrediRUN TPEE',
+    optimalPace: '3:00-4:30 min/km',
+  },
+  injuryPrevention: {
+    plantarFasciitis: 'good',
+    achillesTendinopathy: 'excellent',
+    kneeIssues: 'caution',
+    shinSplints: 'good',
+  },
+  koreanFootFit: {
+    toBoxWidth: 'standard',
+    flatFootCompatibility: 'poor',
+    wideOptions: false,
+    winterCompatibility: 'fair',
+    summerCompatibility: 'good',
+  },
+  targetUsers: {
+    recommended: ['엘리트 러너', '풀마라톤 레이스', '서브-3 목표', '아킬레스 부착부 통증 러너', '발볼이 표준~약간 넓은 레이서'],
+    notRecommended: ['입문 러너', '데일리 트레이닝', '과내전·평발 러너', '단단한 바닥감 선호'],
+  },
+  features: ['IncrediRUN TPEE 미드솔(80%대 반발 계승)', '리지드+포크 카본 플레이트(추진력 강화)', '측면 컷아웃 제거로 안정성 개선', '직각형 와이드 토박스', '207g'],
+  priceAnalysis: {
+    msrp: 369000,
+    streetPrice: 369000,
+    costPerKm: 1845,
+    valueRating: 5,
+    priceTier: 'super-premium',
+    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+  },
+  detailedSpecs: {
+    weight: '207g (남성 US 9, 공식·리뷰 교차확인) — 전작 197g 대비 +10g',
+    stackHeight: '힐 39.5mm / 포어풋 31.5mm (리뷰 실측)',
+    drop: '8mm',
+    midsole: 'IncrediRUN TPEE 더블레이어 (에너지 리턴 추정 80%대 — 엘리트 2 실측 80.6% 기준)',
+    plate: '슬롯형 카본 플레이트 (리지드+포크 신설계)',
+    outsole: 'PWRTRAC',
+    upper: '신축성 니트 메쉬 (전작 대비 부드러움·레이스 바이트 개선)',
+    width: '표준 (직각형 토박스, 엘리트 2보다 넓음 / 추정)',
+    durability: '200km+ (레이스 전용)',
+    price: '369,000원 (한국 공식, 7/1 론칭)',
+    costPerKm: '약 ₩1,845/km (200km 기준)',
+    footType: '중립',
+    landingPattern: '중족부/전족부 착지',
+  },
+  reviews: [
+    {
+      userType: '에디터 분석',
+      rating: 87,
+      text: '엘리트 2의 두 가지 약점(낮은 안정성, 좁은 토박스)을 정조준한 신형입니다. 미드솔 측면 컷아웃을 메우고 폼 볼륨을 키워 안정성을 높였고, 카본 플레이트를 포크 형태로 재설계해 앞쪽 추진력을 강화했습니다. IncrediRUN 폼의 80%대 반발은 유지되며, 토박스가 직각형으로 넓어져 발볼 넓은 한국 러너도 한결 편해졌습니다. 다만 약 10g 무게가 늘어(207g) 가장 가볍고 예리한 레이서를 찾는 러너에겐 아쉬울 수 있습니다. 2026-07-01 출시 직후라 RunRepeat 랩 수치는 미게시 상태로, 본 평가는 전작 실측 + 전문 리뷰(BITR·DOR·RTR) 기반 추정입니다. 369,000원에 200km 레이스 전용이라 km당 약 1,845원, 오직 대회용 무기입니다.',
+    },
+    {
+      userType: 'Believe in the Run 리뷰 요약',
+      rating: 4.5,
+      text: 'Tier B(퍼포먼스 A)로, "교회에서나 받을 법한 용서"라는 표현이 나올 만큼 폼이 부드럽고 포용력이 큽니다. 롱런과 템포 훈련, 레이스데이 모두에서 탄력적인 즐거움을 주는 라이드예요. 전작 대비 안정성이 개선됐지만, 폼이 워낙 부드러워 강하게 밀어붙이는 구간에서는 단단한 신뢰감이 살짝 부족할 수 있습니다. 공격적인 속도감과 바닥감을 원하는 러너보다는, 편안하면서도 빠른 포용형 슈퍼슈즈를 원하는 러너에게 맞습니다.',
+    },
+    {
+      userType: '의학·멀티테스터 관점(DOR·RTR)',
+      rating: 4.5,
+      text: '힐 카운터가 없어 아킬레스 부착부 통증이나 하글런드 변형이 있는 러너에게 레이싱화 중 최선입니다. 토박스가 평균보다 넓고 직각형이라 표준~넓은 발에 편안하고, 측면 컷아웃 제거로 미드풋이 채워져 중립 안정성이 B+ 수준으로 올라왔습니다. 다만 비틀림 강성이 낮아 코너나 요철 노면에서는 불안정하니 평탄한 코스(하프~풀마라톤)에 어울립니다. 부드러운 미드솔 특성상 평발·과내전 러너에게는 지지가 부족해 권하지 않습니다. 마라톤 페이스(km당 4:30~5:20)에서 5인 테스터 전원이 에너지를 느꼈습니다.',
+    },
+  ],
+  similarShoes: ['saucony-endorphin-elite-2', 'nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+};

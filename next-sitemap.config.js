@@ -22,46 +22,36 @@ function gitLastMod(filePath) {
   }
 }
 
-// Shoe slug → brand data file (longest prefix wins)
-const shoeBrandFiles = [
-  ["new-balance-", "src/lib/data/shoes/newbalance.ts"],
-  ["nike-", "src/lib/data/shoes/nike.ts"],
-  ["adidas-", "src/lib/data/shoes/adidas.ts"],
-  ["asics-", "src/lib/data/shoes/asics.ts"],
-  ["hoka-", "src/lib/data/shoes/hoka.ts"],
-  ["brooks-", "src/lib/data/shoes/brooks.ts"],
-  ["saucony-", "src/lib/data/shoes/saucony.ts"],
-  ["on-", "src/lib/data/shoes/on.ts"],
-  ["puma-", "src/lib/data/shoes/puma.ts"],
-  ["mizuno-", "src/lib/data/shoes/mizuno.ts"],
-];
+// Shoe slug → 개별 신발 파일 (shoes/{brand}/{slug}.ts, 2026-07 분리 구조)
+// 파일 단위 git log 덕에 신발별 lastmod가 정확해진다 (수정한 신발만 갱신).
+const shoeSlugFileMap = (() => {
+  const map = {};
+  const base = path.join(__dirname, "src/lib/data/shoes");
+  for (const entry of fs.readdirSync(base, { withFileTypes: true })) {
+    if (!entry.isDirectory()) continue;
+    for (const f of fs.readdirSync(path.join(base, entry.name))) {
+      if (f.endsWith(".ts") && f !== "index.ts") {
+        map[f.replace(/\.ts$/, "")] = `src/lib/data/shoes/${entry.name}/${f}`;
+      }
+    }
+  }
+  return map;
+})();
 
 function shoeFileFor(slug) {
-  for (const [prefix, file] of shoeBrandFiles) {
-    if (slug.startsWith(prefix)) return file;
-  }
-  return "src/lib/data/shoes";
+  return shoeSlugFileMap[slug] || "src/lib/data/shoes";
 }
 
 // noindex: true 플래그가 켜진 신발은 sitemap에서도 제외 (페이지 robots noindex와 일관성).
 // 신발 데이터에 noindex: true만 추가하면 자동 제외 — 별도 등록 불필요.
-const shoeFileCache = {};
 function isNoindexShoe(slug) {
-  const file = shoeFileFor(slug);
-  if (!file.endsWith(".ts")) return false;
-  if (!(file in shoeFileCache)) {
-    try {
-      shoeFileCache[file] = fs.readFileSync(path.join(__dirname, file), "utf8");
-    } catch {
-      shoeFileCache[file] = "";
-    }
+  const file = shoeSlugFileMap[slug];
+  if (!file) return false;
+  try {
+    return /^ {2}noindex:\s*true/m.test(fs.readFileSync(path.join(__dirname, file), "utf8"));
+  } catch {
+    return false;
   }
-  const content = shoeFileCache[file];
-  const idx = content.indexOf(`slug: '${slug}'`);
-  if (idx === -1) return false;
-  const nextIdx = content.indexOf("slug: '", idx + 10);
-  const block = content.slice(idx, nextIdx === -1 ? content.length : nextIdx);
-  return /noindex:\s*true/.test(block);
 }
 
 // Static page → source file
@@ -123,7 +113,7 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ["/api/*", "/_next/*", "/icon.svg", "/saved"],
+  exclude: ["/api/*", "/_next/*", "/icon.svg", "/saved", "/blog-index.json", "/search-index.json"],
   robotsTxtOptions: {
     policies: [
       {
