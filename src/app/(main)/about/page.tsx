@@ -290,8 +290,8 @@ export default function AboutPage() {
                   <li>RunRepeat 랩 실측(SA, HA, 에너지 리턴%, 토박스 너비) 1차 수집</li>
                   <li>Believe in the Run · Road Trail Run · Doctors of Running 정성 평가 교차 검증</li>
                   <li>한국 공식몰 가격 + 와이드 옵션 + 출시일 확인</li>
-                  <li>한국 러너 평균 발 데이터(평발 비율 35%, 발볼 평균 76mm 기준) 반영</li>
-                  <li>편집 후 1차 시승 → 데일리·페이스 훈련 비교 → 발행</li>
+                  <li>한국 러너 발 특성 반영 — 평발 비율 20% 이상(국내 연구 기준), 토박스 75mm 초과를 와이드 기준으로 적용</li>
+                  <li>발행 전 데이터 정합성 자동 검증(가격·참조·이미지) → 신규 랩 데이터 게시 시 리뷰 갱신</li>
                 </ol>
               </div>
             </div>
