@@ -272,7 +272,7 @@ export default function AboutPage() {
               </div>
               <p className="leading-relaxed mb-3">
                 2년차 러너로, 직접 러닝화를 찾으면서 &quot;한국어로 된 제대로 된 러닝화 정보가 없다&quot;는
-                답답함에서 이 사이트를 시작했습니다. 한강 일대(여의도·잠실·반포)에서 주 4~5회
+                답답함에서 이 사이트를 시작했습니다. 한강과 도림천에서 주 3회
                 러닝 중이며, 하프마라톤·10K 완주 후 풀코스 도전 준비 중입니다.
               </p>
               <p className="leading-relaxed mb-3">
