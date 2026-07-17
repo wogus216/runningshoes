@@ -286,4 +286,89 @@ export const octoberEvents: MarathonEvent[] = [
       startTime: '08:00',
     },
   },
+  {
+    id: 'gimje-jipyeongseon-marathon-2026',
+    name: '제25회 김제새만금 지평선 전국마라톤대회',
+    date: '2026-10-03',
+    month: '10월',
+    location: '김제시민운동장 (전북 김제시)',
+    region: '전북',
+    distances: ['하프', '10K', '5K'],
+    status: '마감',
+    isMajor: false,
+    description:
+      '김제지평선축제 기간에 열리는 25회째 대회로, 코스를 따라 만개한 코스모스 길이 가을 러닝 명소입니다. 하프·5K 각 1,500명, 10K 2,000명 등 총 5,000명 선착순 접수(5/20 시작)로 조기 마감됐습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 25000 },
+      ],
+    },
+  },
+  {
+    id: 'gyeongnam-marathon-2026',
+    name: '제23회 경남마라톤대회',
+    date: '2026-10-04',
+    month: '10월',
+    location: '창원종합운동장 (경남 창원시)',
+    region: '경남',
+    distances: ['10K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '창원종합운동장에서 출발하는 경남 지역 대회. 10km와 3km 종목을 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+  },
+  {
+    id: 'hankyung-seoul-marathon-2026',
+    name: '2026 한경서울마라톤',
+    date: '2026-10-05',
+    month: '10월',
+    location: '여의도공원 문화의마당 (서울 영등포구)',
+    region: '서울',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://hk-marathon.com/',
+    description:
+      '한경미디어그룹이 처음 여는 약 7,000명 규모 대회. 하프는 여의도공원 출발 서강대교·월드컵대교 남단 회귀, 10K는 서강대교 왕복, 5K는 여의도 일대 코스입니다. 접수는 7월 16일부터 선착순.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription:
+        '여의도공원 출발 한강변 평지 코스. 하프는 서강대교·월드컵대교 남단 회귀, 10K는 서강대교 왕복, 5K는 여의도 일대.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 80000 },
+        { distance: '10K', fee: 70000 },
+        { distance: '5K', fee: 60000 },
+      ],
+      expectedParticipants: 7000,
+    },
+  },
+  {
+    id: 'yeoju-sejong-marathon-2026',
+    name: '제23회 여주 세종대왕 마라톤대회',
+    date: '2026-10-18',
+    month: '10월',
+    location: '현암지구공원 (경기 여주시)',
+    region: '경기',
+    distances: ['하프', '10K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'http://yjmarathon.com/',
+    description:
+      '남한강변 현암지구공원에서 출발하는 여주 대표 가을 대회. 하프 1,500명·10K 2,500명·4K 1,000명 등 총 5,000명 선착순이며 1km 휠체어 종목은 무료입니다. 접수는 6월 2일~9월 18일.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '4K', fee: 25000 },
+      ],
+      expectedParticipants: 5000,
+      startTime: '08:30',
+    },
+  },
 ];

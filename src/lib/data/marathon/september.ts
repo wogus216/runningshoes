@@ -140,4 +140,87 @@ export const septemberEvents: MarathonEvent[] = [
       startTime: '07:30',
     },
   },
+  {
+    id: 'kimdaejung-peace-marathon-2026',
+    name: '제11회 김대중 평화 마라톤',
+    date: '2026-09-06',
+    month: '9월',
+    location: '뚝섬 한강공원 수변무대 (서울 광진구)',
+    region: '서울',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'http://kdjrun.kr/',
+    description:
+      '김대중재단이 주최하는 평화·인권 테마 시민 마라톤. 뚝섬 한강공원 수변무대에서 하프·10km·5km 종목이 오전 8시에 출발합니다. 접수는 8월 30일까지.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription: '뚝섬 한강공원 출발 한강 수변 평지 코스(하프/10K/5K).',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 50000 },
+        { distance: '5K', fee: 50000 },
+      ],
+      startTime: '08:00',
+    },
+  },
+  {
+    id: 'pohang-secondary-battery-marathon-2026',
+    name: '2026 포항 이차전지 전국마라톤',
+    date: '2026-09-13',
+    month: '9월',
+    location: '포항운하관 광장 (경북 포항시)',
+    region: '경북',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '포항운하관 광장에서 출발하는 하프·10km·5km 전국 마라톤. 오전 8시 집결이며, 접수 마감은 7월 20일로 임박했습니다.',
+    raceInfo: {
+      startTime: '08:00',
+    },
+  },
+  {
+    id: 'geumsan-insam-festival-marathon-2026',
+    name: '2026 금산인삼축제 마라톤',
+    date: '2026-09-19',
+    month: '9월',
+    location: '금산세계인삼엑스포 주차장 (충남 금산군)',
+    region: '충남',
+    distances: ['하프', '10K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '금산인삼축제와 연계해 열리는 마라톤. 하프·10km 외에 4km 펀런 종목도 운영하며, 금산세계인삼엑스포 주차장에서 오전 8시 30분에 집결합니다. 접수는 8월 19일까지.',
+    raceInfo: {
+      startTime: '08:30',
+    },
+  },
+  {
+    id: 'incheon-songdo-half-marathon-2026',
+    name: '2026 인천송도국제하프마라톤',
+    date: '2026-09-20',
+    month: '9월',
+    location: '국립인천대학교 송도캠퍼스 정문 (인천 연수구)',
+    region: '인천',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://songdorun.net/',
+    description:
+      '인천대 송도캠퍼스 정문에서 출발하는 대규모 국제 하프마라톤. 결제완료순 1만 5천 명으로 마감되며, 하프는 만 18세 이상만 참가할 수 있습니다. 오전 8시 출발, 접수는 7월 8일~8월 7일.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 55000 },
+        { distance: '10K', fee: 55000 },
+        { distance: '5K', fee: 50000 },
+      ],
+      expectedParticipants: 15000,
+      startTime: '08:00',
+    },
+  },
 ];

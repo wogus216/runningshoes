@@ -121,4 +121,97 @@ export const novemberEvents: MarathonEvent[] = [
     description:
       '인천시·대한육상연맹 주최 인천 최초·유일 공식 풀코스 마라톤(제2회). 2026년 청라하늘대교 편도 코스 검토(바다 위 러닝), 약 2만 명·풀 8천. 접수 7월 오픈 예상.',
   },
+  {
+    id: 'buyeo-goodtrae-marathon-2026',
+    name: '제15회 부여 굿뜨래 마라톤대회',
+    date: '2026-11-07',
+    month: '11월',
+    location: '구드래나루터 (충남 부여군)',
+    region: '충남',
+    distances: ['풀코스', '하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '백마강변 구드래나루터에서 출발하는 부여 대표 대회. 하반기 충남권에서 드물게 풀코스를 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+  },
+  {
+    id: 'gwacheon-marathon-2026',
+    name: '2026 과천마라톤',
+    date: '2026-11-08',
+    month: '11월',
+    location: '관문체육공원 (경기 과천시)',
+    region: '경기',
+    distances: ['하프', '10K', '5K'],
+    status: '접수예정',
+    isMajor: false,
+    description:
+      '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회. 접수는 7월 20일~31일로 예정돼 있습니다.',
+    raceInfo: {
+      startTime: '08:00',
+    },
+  },
+  {
+    id: 'jeju-mandarin-marathon-2026',
+    name: '2026 제주감귤마라톤',
+    date: '2026-11-15',
+    month: '11월',
+    location: '조천체육관 (제주 제주시)',
+    region: '제주',
+    distances: ['풀코스', '하프', '10K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://marathon.ihalla.com/',
+    description:
+      '한라일보가 주최하는 제주 대표 가을 대회로 풀·하프·10K를 운영합니다. 감귤 수확철 제주 동부 해안과 중산간을 달리는 코스이며, 접수는 7월 6일~9월 11일입니다.',
+  },
+  {
+    id: 'garmin-run-korea-2026',
+    name: '2026 가민런 코리아 (Garmin Run Korea)',
+    date: '2026-11-15',
+    month: '11월',
+    location: '고양종합운동장 (경기 고양시)',
+    region: '경기',
+    distances: ['하프', '10K'],
+    status: '마감',
+    isMajor: true,
+    website: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
+    description:
+      '가민이 주최하는 브랜드 러닝 이벤트로, 2026년 1만 2천 명 규모로 대폭 확대됐습니다. 하프(21K)·10K 종목이며 접수는 러너블(Runable) 단독으로 7월 1일~10일 진행돼 이미 마감됐습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 80000 },
+        { distance: '10K', fee: 60000 },
+      ],
+      expectedParticipants: 12000,
+    },
+  },
+  {
+    id: 'gochang-dolmen-marathon-2026',
+    name: '제24회 고창고인돌마라톤',
+    date: '2026-11-15',
+    month: '11월',
+    location: '고창공설운동장 (전북 고창군)',
+    region: '전북',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '고창군 일대에서 열리는 24회째 대회로 하프·10K·5K를 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+  },
+  {
+    id: 'namwon-chunhyang-marathon-2026',
+    name: '2026 남원 춘향 전국 마라톤대회',
+    date: '2026-11-28',
+    month: '11월',
+    location: '남원종합스포츠타운 (전북 남원시)',
+    region: '전북',
+    distances: ['풀코스', '하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    description:
+      '남원종합스포츠타운에서 출발하며, 11월 하순에는 드물게 풀코스를 운영하는 대회입니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+    raceInfo: {
+      startTime: '08:40',
+    },
+  },
 ];
