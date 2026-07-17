@@ -8,8 +8,10 @@ import { CompareFloatingButton } from "@/components/compare/compare-floating-but
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
 import { getShoes } from "@/lib/data/shoes";
+import { getAllBrands } from "@/lib/data/brands";
 
 const SHOE_COUNT = getShoes().length;
+const BRAND_COUNT = getAllBrands().length;
 const SITE_DESCRIPTION_WITH_COUNT = `${SHOE_COUNT}개 ${SITE_DESCRIPTION}`;
 
 // Pretendard 셀프호스트 (next/font/local). 'self'로 서빙되어 렌더블로킹 외부요청·CSP 의존 없음.
@@ -27,7 +29,7 @@ export const metadata: Metadata = {
     default: `${SITE_NAME} - 러닝화 추천, 비교, 리뷰 2026`,
     template: `%s | ${SITE_NAME}`,
   },
-  description: `${SITE_DESCRIPTION_WITH_COUNT} Nike, Asics, Hoka, Brooks 등 10개 브랜드 완벽 비교.`,
+  description: `${SITE_DESCRIPTION_WITH_COUNT} Nike, Asics, Hoka, Brooks 등 ${BRAND_COUNT}개 브랜드 완벽 비교.`,
   keywords: [
     "러닝화",
     "러닝화 추천",

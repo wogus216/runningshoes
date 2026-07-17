@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import { Database, Target, Users, Mail, BookOpen, Shield, BarChart3, Globe, Activity } from 'lucide-react';
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { getShoes } from '@/lib/data/shoes';
+import { getAllBrands } from '@/lib/data/brands';
 import { getPostsMeta } from '@/lib/data/blog';
 
 export const metadata: Metadata = {
@@ -61,6 +62,7 @@ const aboutPageJsonLd = {
 
 export default function AboutPage() {
   const shoeCount = getShoes().length;
+  const brandCount = getAllBrands().length;
   const posts = getPostsMeta();
   const postCount = posts.length;
   const reviewCount = posts.filter((p) => p.category === 'review').length;
@@ -68,7 +70,7 @@ export default function AboutPage() {
   const newsCount = posts.filter((p) => p.category === 'news').length;
 
   const siteStats = [
-    { label: '러닝화 분석', value: `${shoeCount}개`, desc: '10개 브랜드 데이터 검증' },
+    { label: '러닝화 분석', value: `${shoeCount}개`, desc: `${brandCount}개 브랜드 데이터 검증` },
     { label: '블로그 글', value: `${postCount}개`, desc: `리뷰 ${reviewCount} · 가이드 ${guideCount} · 뉴스 ${newsCount}` },
     { label: '데이터 출처', value: '4개', desc: 'RunRepeat · BITR · DOR · 공식 브랜드' },
     { label: '운영 시작', value: '2025년', desc: '한국 러너 전용 데이터 분석' },

@@ -6,18 +6,18 @@ import { shoes as allShoes } from '@/lib/data/shoes';
 import { isCompleteShoe } from '@/types/shoe';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 
+const BRAND_COUNT = getAllBrands().length;
+
 export const metadata: Metadata = {
-  title: '러닝화 브랜드 전체 비교 — Nike, Asics, Hoka 외 10개 브랜드',
-  description:
-    '나이키, 아식스, 호카, 뉴발란스 등 10개 주요 러닝화 브랜드의 라인업, 강점, 추천 모델을 한국 러너 관점에서 비교 분석합니다.',
+  title: `러닝화 브랜드 전체 비교 — Nike, Asics, Hoka 외 ${BRAND_COUNT - 3}개 브랜드`,
+  description: `나이키, 아식스, 호카, 뉴발란스 등 ${BRAND_COUNT}개 주요 러닝화 브랜드의 라인업, 강점, 추천 모델을 한국 러너 관점에서 비교 분석합니다.`,
   alternates: { canonical: '/brands' },
   openGraph: {
     type: 'website',
     locale: 'ko_KR',
     siteName: SITE_NAME,
     title: '러닝화 브랜드 전체 비교',
-    description:
-      '나이키, 아식스, 호카, 뉴발란스 등 10개 주요 러닝화 브랜드의 라인업과 강점을 비교합니다.',
+    description: `나이키, 아식스, 호카, 뉴발란스 등 ${BRAND_COUNT}개 주요 러닝화 브랜드의 라인업과 강점을 비교합니다.`,
   },
 };
 

@@ -82,3 +82,4 @@
   - 블로그 단독 리뷰 발행: `/blog/nike-pegasus-42-review`
 - [ ] puma-deviate-pure-nitro: RunRepeat 랩 데이터 게시 확인 후 specs/detailedSpecs 업데이트 (추가 2026-06-05, 출시 2026-06-04 — 3~6개월 뒤 재확인)
 - [ ] on-cloudboom-strike-2: RunRepeat 랩(스택/드롭/에너지리턴) 게시 + 한국 공식가 확정 확인 후 블로그 프리뷰(on-cloudboom-strike-2-preview-2026) 수치 갱신, 신발 DB 추가 검토 (추가 2026-07-02, 재확인 2026-09)
+- [ ] 2026-mudo-run-gyeongju: 무도런 경주 접수 일정·참가비·종목 공식 발표 시 블로그 글 + marathon/september.ts(status 접수예정→접수중, raceInfo) 업데이트. @most267_official 모니터링, 상반기 패턴상 8월 중 발표 유력 (추가 2026-07-15)
