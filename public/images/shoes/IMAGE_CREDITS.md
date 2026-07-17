@@ -131,3 +131,33 @@ If you are a copyright holder and believe your content has been used inappropria
 - Source: New Balance 공식 (nb.scene7.com, style MTHIERV9, @imgly 배경제거 후 투명)
 - Date: 2026-07-11
 - Images: 4 (side, top, detail, outsole)
+
+## adidas Supernova Rise 2 (슈퍼노바 라이즈 2) — 갤러리 보강
+- Source: RunRepeat 스튜디오 (cdn.runrepeat.com, @imgly 배경제거 후 투명)
+- Date: 2026-07-17
+- Images: 1 (side)
+
+## adidas Adizero SL 2 (아디제로 SL2) — 갤러리 보강
+- Source: RunRepeat 스튜디오 (cdn.runrepeat.com, @imgly 배경제거 후 투명)
+- Date: 2026-07-17
+- Images: 2 (side, back)
+
+## HOKA Speedgoat 7 (스피드고트 7)
+- Source: HOKA 공식 (dms.deckers.com, style 1171928-FNTN, 투명 PNG 원본)
+- Date: 2026-07-17
+- Images: 5 (side, front, back, angle, outsole)
+
+## HOKA Tecton X 3 (텍톤 X 3) — 갤러리 보강 + side 컬러웨이 통일
+- Source: HOKA 공식 (dms.deckers.com, style 1155112-BHKB, 투명 PNG 원본)
+- Date: 2026-07-17
+- Images: 5 (side, front, back, angle, outsole)
+
+## ASICS GEL-NIMBUS 28 (젤 님버스 28) — 갤러리 보강
+- Source: ASICS 공식 (images.asics.com Scene7, 1011C127_100, fmt=png-alpha 투명)
+- Date: 2026-07-17
+- Images: 5 (side, front, back, angle, outsole)
+
+## Salomon Pulsar / Ultra Glide 4 / S/LAB Pulsar 4 — 갤러리 보강 + side 컬러웨이 통일
+- Source: Salomon KR 공식몰 (cdn.shopify.com, L49230100/L49221300/L47770300 GHO 패크샷, 투명 PNG 원본)
+- Date: 2026-07-17
+- Images: 각 5 (side, angle, back, top, outsole)

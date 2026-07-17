@@ -6,6 +6,11 @@ export const shoe: Shoe = {
   brand: 'Adidas',
   name: '아디제로 SL2',
   image: '/images/shoes/adidas/adizerosl2.webp',
+  images: [
+    '/images/shoes/adidas/adizerosl2.webp',
+    '/images/shoes/adidas/adizerosl2/side.webp',
+    '/images/shoes/adidas/adizerosl2/back.webp',
+  ],
   category: '데일리',
   rating: 4,
   price: 149000,

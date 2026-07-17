@@ -6,6 +6,13 @@ export const shoe: Shoe = {
   brand: 'Asics',
   name: '젤 님버스 28',
   image: '/images/shoes/asics/gel_Nimbus28.webp',
+  images: [
+    '/images/shoes/asics/nimbus28/side.webp',
+    '/images/shoes/asics/nimbus28/front.webp',
+    '/images/shoes/asics/nimbus28/back.webp',
+    '/images/shoes/asics/nimbus28/angle.webp',
+    '/images/shoes/asics/nimbus28/outsole.webp',
+  ],
   category: '쿠션화',
   rating: 4.5,
   price: 199000,

@@ -125,6 +125,12 @@ export const shoe: Shoe = {
       source: 'community',
       sourceUrl: 'https://m.shihuo.cn/page/findCommunityDetail?id=5751423',
     },
+    {
+      userType: '가성비 중시',
+      rating: 4,
+      text:
+        '직구 구매대행으로 들여온 지 두 달째인데 가격 대비 만족도가 높습니다. 도림천에서 주 3회 5km씩 가볍게 뛰는데 320g 무게치고 단층 폼 쿠션이 생각보다 푹신해서 무릎 부담이 적어요. 드롭이 9mm로 높은 편이라 착지가 자연스럽고, 전족이 넓게 나와 발볼 넓은 제 발에도 여유가 있습니다. 다만 국내 정식 유통이 없어 AS를 받을 곳이 없다는 점은 감안해야 합니다.',
+    },
   ],
 
   editorComment:

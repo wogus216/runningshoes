@@ -6,6 +6,11 @@ export const shoe: Shoe = {
   brand: 'Hoka',
   name: '스피드고트 6',
   image: '/images/shoes/hoka/speedgoat6/side.webp',
+  images: [
+    '/images/shoes/hoka/speedgoat6/side.webp',
+    '/images/shoes/hoka/speedgoat6/angle.webp',
+    '/images/shoes/hoka/speedgoat6/outsole.webp',
+  ],
   category: '트레일',
   rating: 4.5,
   price: 205000,
@@ -79,6 +84,11 @@ export const shoe: Shoe = {
       userType: '트레일 러너',
       rating: 5,
       text: '주말마다 북한산·관악산을 뛰는데 비 온 다음 날 젖은 바위에서도 미끄러진 적이 거의 없습니다. 그립 하나는 정말 믿음직해요. 쿠션도 푹신해서 하산할 때 무릎 부담이 덜하고, 와이드로 샀더니 제 넓은 발볼에도 압박이 없습니다. 다만 빠르게 치고 나가는 느낌은 아니라 스피드 훈련보다는 장거리 LSD나 산행 겸 러닝에 잘 맞아요. 발등 텅이 좀 짧아 끈을 조일 때 신경 쓰이는 정도가 아쉽습니다.',
+    },
+    {
+      userType: '평발 러너',
+      rating: 4,
+      text: '평발이라 트레일화 고를 때 항상 고민이 많은데, 이번엔 와이드로 주문했더니 발볼이 편했습니다. 체중 75kg에 주 3회 청계산·수락산을 오가며 8km씩 뛰는데, 힐 40mm 맥스쿠션과 내부 섀시 덕분에 평발 특유의 발목 불안정감이 크게 줄었어요. 278g이라 가볍진 않지만 안정감을 우선하는 저에게는 딱 맞습니다. 다만 300km쯤 지나니 앞발 아웃솔이 노출된 미드솔 부분이 살짝 닳기 시작해서 교체 시기를 신경 써야 할 것 같습니다.',
     },
   ],
   similarShoes: ['adidas-terrex-agravic-4', 'asics-metafuji-trail'],

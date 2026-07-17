@@ -6,6 +6,10 @@ export const shoe: Shoe = {
   brand: 'Adidas',
   name: '슈퍼노바 라이즈 2',
   image: '/images/shoes/adidas/supernovarise2.webp',
+  images: [
+    '/images/shoes/adidas/supernovarise2.webp',
+    '/images/shoes/adidas/supernovarise2/side.webp',
+  ],
   category: '입문화',
   rating: 4,
   price: 149000,
