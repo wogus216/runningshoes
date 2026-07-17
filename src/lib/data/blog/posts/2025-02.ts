@@ -6,6 +6,7 @@ export const posts_2025_02: BlogPost[] = [
     slug: 'running-shoe-lifespan-replacement-guide',
     title: '러닝화 수명과 관리법: 언제 교체해야 할까? (2025 과학적 가이드)',
     description: '러닝화 교체 시기(500~800km), 슈퍼슈즈 수명, 신발 로테이션의 과학적 효과(39% 부상 감소), 올바른 관리법까지. 학술 연구 기반 러닝화 관리 완벽 가이드.',
+    thumbnail: '/images/blog/running-shoe-lifespan-replacement-guide.webp',
     content: `
 <figure class="my-10">
   <img
@@ -311,6 +312,7 @@ export const posts_2025_02: BlogPost[] = [
     slug: 'energy-gel-science-guide',
     title: '에너지젤 성분 완벽 분석: 말토덱스트린부터 하이드로젤까지',
     description: '에너지젤의 핵심 성분을 과학적으로 분석합니다. 탄수화물 종류, 위장 안정성, 카페인까지 알아야 할 모든 것.',
+    thumbnail: '/images/blog/energy-gel-science-guide.webp',
     content: `
 <figure class="my-10">
   <img
@@ -604,6 +606,7 @@ export const posts_2025_02: BlogPost[] = [
     slug: 'marathon-pacing-mental-strategy-guide',
     title: '마라톤 전략: 5km부터 풀코스까지, 거리별 페이스 & 멘탈 완벽 가이드',
     description: '5km, 10km, 하프마라톤, 풀마라톤까지 거리별 페이스 전략과 레이스 중 멘탈 관리법. 사점(Dead Point) 극복까지.',
+    thumbnail: '/images/blog/marathon-pacing-mental-strategy-guide.webp',
     content: `
 <figure class="my-10">
   <img

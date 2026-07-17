@@ -6,6 +6,7 @@ export const posts_2026_02: BlogPost[] = [
     slug: 'running-shoe-trends-2026-eva-replacement',
     title: '2026년, 당신의 신발장에서 EVA가 사라지는 이유 (러닝화 3대 트렌드)',
     description: '2026년 러닝화 시장의 3대 메가트렌드: 슈퍼 트레이너의 부상, 초임계 폼의 표준화, 규격 외 신발의 역설. EVA 시대의 종말과 한국 러닝 시장 1조 원 돌파.',
+    thumbnail: '/images/blog/running-shoe-trends-2026-eva-replacement.webp',
     content: `
 <figure class="my-10">
   <img
@@ -250,6 +251,7 @@ export const posts_2026_02: BlogPost[] = [
     slug: 'pronation-type-running-shoe-guide-2026',
     title: '내 무릎 통증의 원인, 발 안에 있다? 내전(Pronation) 유형별 완벽 가이드',
     description: '러닝 중 무릎이나 정강이가 아프다면, 신발 브랜드보다 먼저 확인해야 할 것은 바로 자신의 내전 유형입니다. 2026년 최신 안정화 기술과 함께 나에게 딱 맞는 러닝화를 찾는 과학적 방법을 공개합니다.',
+    thumbnail: '/images/blog/pronation-type-running-shoe-guide-2026.webp',
     content: `
 <figure class="my-10">
   <img
@@ -730,6 +732,7 @@ export const posts_2026_02: BlogPost[] = [
     slug: 'seoul-running-course-shower-guide-2026',
     title: '2026 서울 러닝 가이드: 남산 무료 샤워장 꿀팁부터 10대 핵심 코스까지',
     description: '남산 북측순환로 상세 분석, 중부공원여가센터 무료 샤워장, 서울 베스트 러닝 코스 10곳 총정리. 서울 도심 러닝의 모든 것.',
+    thumbnail: '/images/blog/seoul-running-course-shower-guide-2026.webp',
     content: `
 <figure class="my-10">
   <img
