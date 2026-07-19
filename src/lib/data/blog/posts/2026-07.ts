@@ -2,6 +2,119 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'brooks-cascadia-20-preview-2026',
+    slug: 'brooks-cascadia-20-preview-2026',
+    title: '브룩스 캐스캐디아 20 미리보기 | 20년 만에 폼 갈아엎고 비브람 신었다 — 글로벌 8/1 출시, 한국은?',
+    description:
+      '트레일 스테디셀러 브룩스 캐스캐디아가 20세대에서 미드솔 폼을 DNA Loft v3에서 DNA Flash v2(질소 주입)로 바꾸고 비브람 메가그립을 얹었습니다. 힐 38/전족 32mm·드롭 6mm·306g·$160으로 8월 1일 글로벌 출시, BITR A Tier. 전작 대비 변경점, 해외 리뷰 평가, 스피드고트 7·히에로 v9 등 경쟁 트레일화와의 위치를 한국 러너 관점으로 정리했습니다.',
+    author: '산초 에디터',
+    publishedAt: '2026-07-19',
+    category: 'review' as const,
+    readingTime: 7,
+    thumbnail: '/images/blog/brooks-cascadia-20-preview-2026.webp',
+    tags: ['브룩스', '캐스캐디아', '캐스캐디아 20', '트레일 러닝화', 'DNA Flash', '비브람 메가그립', '신상 프리뷰'],
+    faqs: [
+      {
+        question: '캐스캐디아 20은 한국에 언제 나오나요?',
+        answer:
+          '2026년 7월 19일 기준 한국 출시일·정가는 공식 발표되지 않았습니다. 글로벌 출시는 8월 1일($160)이며, 브룩스러닝 코리아 공식몰(brooksrunning.co.kr)은 운영 중이지만 아직 캐스캐디아 20이 등재되지 않았고 국내 유통에는 구버전(15·17 등)만 보입니다. 전작들의 한국 정가가 15만 원대였던 점을 감안하면 16만~18만 원대가 예상되지만 확정치는 아닙니다. 공식 등재 시 이 글을 갱신하겠습니다.',
+      },
+      {
+        question: '스피드고트랑 뭐가 다른가요?',
+        answer:
+          '호카 스피드고트가 두툼한 맥시멀 쿠션으로 밀어붙이는 "만능 쿠션 트레일화"라면, 캐스캐디아 20은 힐 38/전족 32mm로 스택이 더 낮고 드롭 6mm로 지면 감각이 좋은 균형형입니다. 둘 다 비브람 메가그립을 쓰지만, 캐스캐디아는 로드와 트레일을 오가는 다재다능함과 장거리 안정성에 강점이 있습니다.',
+      },
+      {
+        question: '트레일 초보인데 신어도 되나요?',
+        answer:
+          '네, 오히려 입문에 무난한 성격입니다. 극단적인 바위·기술 지형 전용이 아니라 임도·흙길·자갈처럼 일반적인 트레일과 로드가 섞인 코스에 최적화돼 있고, 편안함과 안정성의 균형이 좋다는 평가입니다. 다만 험준한 암반 코스를 자주 탄다면 더 공격적인 러그의 신발이 낫습니다.',
+      },
+      {
+        question: '발볼 넓은 편인데 괜찮을까요?',
+        answer:
+          '캐스캐디아 20은 전작보다 플랫폼을 약간 좁혀 기술적인 발놀림을 개선했다고 알려졌습니다. 발볼이 넓다면 착화가 필요하며, 넓은 발볼을 우선한다면 한국 러너 사이에서 토룸이 여유롭다고 평가받는 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>이나 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>도 함께 비교해 보세요.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>트레일 스테디셀러 <strong>브룩스 캐스캐디아</strong>가 20세대에서 미드솔 폼을 <strong>DNA Loft v3 → DNA Flash v2</strong>(질소 주입)로 교체하고 <strong>비브람 메가그립</strong>을 얹었습니다</li>
+    <li>힐 38 / 전족 32mm · <strong>드롭 6mm</strong> · 306g(US M9) · <strong>$160</strong>으로 <strong>8월 1일 글로벌 출시</strong>, Believe in the Run <strong>A Tier</strong> 평가</li>
+    <li><strong>한국 출시일·정가는 아직 미확정</strong> — 브룩스 대표 트레일화의 20주년인데 국내는 조용합니다. 지금은 미리보기 타이밍입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏔️</span>
+  <div class="callout-body">
+    <p class="callout-title">왜 지금 주목하나</p>
+    <p>캐스캐디아는 2005년 첫 출시 이후 20년을 이어온 브룩스의 대표 트레일 러닝화입니다. 스무 번째 세대에서 가장 큰 변화는 <strong>미드솔 폼 전면 교체</strong>. 기존 DNA Loft v3 대신 질소를 주입한 <strong>DNA Flash v2</strong>를 넣어 반응성을 끌어올렸고, 아웃솔도 브룩스 자체 고무에서 신뢰도 높은 <strong>비브람 메가그립</strong>으로 바꿨습니다. "폼과 밑창을 동시에 갈아엎은" 세대라 전작 사용자에게도 체감 차이가 클 전망입니다.</p>
+  </div>
+</div>
+
+<h2>스펙 한눈에 보기</h2>
+
+<div class="table-wrap">
+<table>
+  <thead>
+    <tr><th>항목</th><th>캐스캐디아 20</th><th>비고</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>카테고리</td><td>트레일 (올터레인 데일리)</td><td>로드+트레일 혼합·울트라</td></tr>
+    <tr><td>무게</td><td>306g (US M9) / 275g (US W8)</td><td>해외 리뷰 실측</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>38mm / 32mm</td><td>드롭 6mm</td></tr>
+    <tr><td>미드솔</td><td>DNA Flash v2 (질소 주입)</td><td>전작 DNA Loft v3에서 변경</td></tr>
+    <tr><td>아웃솔</td><td>비브람 메가그립 · 4mm 러그</td><td>지그재그 패턴</td></tr>
+    <tr><td>가격</td><td>$160 (약 22만 원 상당)</td><td>한국 정가 미확정</td></tr>
+    <tr><td>출시</td><td>글로벌 2026년 8월 1일</td><td>한국 출시일 미발표</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>전작(캐스캐디아 19) 대비 무엇이 바뀌었나</h2>
+
+<ul>
+  <li><strong>미드솔 폼 교체</strong> — DNA Loft v3 → <strong>DNA Flash v2</strong>. 질소 주입 폼으로 바뀌면서 "이전보다 반응성이 좋아졌다"는 평가입니다.</li>
+  <li><strong>아웃솔 신뢰도 상승</strong> — 비브람 메가그립(4mm 러그) 채택으로 "그립력이 크게 향상"됐습니다.</li>
+  <li><strong>통기성 개선</strong> — 텅(설포)을 얇게 만들어 통풍이 좋아졌습니다.</li>
+  <li><strong>플랫폼 살짝 좁힘</strong> — 바닥면을 약간 좁혀 기술적인 지형에서의 발놀림을 개선, 전반적으로 "더 가볍고 민첩"해졌다는 총평입니다.</li>
+</ul>
+
+<h2>해외 리뷰 평가 요약</h2>
+
+<p>Believe in the Run은 캐스캐디아 20에 <strong>A Tier</strong>(Design B / Value A / Performance B)를 매겼습니다. 정리하면:</p>
+
+<ul>
+  <li>👍 <strong>장점</strong> — 비브람 아웃솔의 그립, DNA Flash v2의 향상된 반응성, 편안함과 안정성의 균형, 121마일(약 195km) 울트라 테스트에서도 물집·핫스팟 없는 내구·핏, 다양한 지형을 아우르는 다재다능함</li>
+  <li>👎 <strong>단점</strong> — 경쟁 모델 대비 "재미 요소" 부족, 평범한 컬러웨이·디자인, 극단적 기술 지형에서는 제한적, 노출된 아웃솔 일부가 초기 마모를 보임</li>
+</ul>
+
+<p>한마디로 <strong>"화려하진 않지만 믿고 오래 신는 올라운더"</strong>라는 성격이 20세대에서도 그대로 유지됐다는 평가입니다.</p>
+
+<h2>한국 러너 관점 — 어떤 러너에게 맞나</h2>
+
+<p>캐스캐디아 20은 <strong>임도·흙길·자갈길에 로드 구간이 섞인 일반적인 트레일</strong>과 <strong>울트라(장거리)</strong>에 강점이 있습니다. 반대로 험준한 암반·기술 지형 전용을 찾는다면 더 공격적인 러그의 신발이 낫습니다. 국내 대표 트레일화들과 견줘 위치를 보면:</p>
+
+<ul>
+  <li><strong>vs 호카 <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a></strong> — 스피드고트가 맥시멀 쿠션의 만능형이라면, 캐스캐디아는 스택이 더 낮고(38/32mm) 드롭 6mm로 <strong>지면 감각·안정성</strong>이 좋은 균형형입니다.</li>
+  <li><strong>vs 뉴발 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a></strong> — 둘 다 "로드에서 트레일로" 넘어가는 데일리 쿠션 트레일화라 가장 직접적인 경쟁입니다. 러그·폼 성향으로 갈립니다.</li>
+  <li><strong>vs 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a></strong> — 울트라·와이드 지향 쿠션 트레일화. 장거리 편안함을 최우선한다면 함께 봐야 할 대안입니다.</li>
+  <li><strong>발볼</strong> — 캐스캐디아 20은 플랫폼을 약간 좁힌 세대라, 발볼이 넉넉한 편을 원하면 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>도 비교 대상입니다.</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 한계 (미확정 사항)</p>
+    <p>본문의 무게·스택·평가는 <strong>해외 리뷰(Believe in the Run·Road Trail Run) 기준</strong>이며, <strong>한국 출시일과 정가는 공식 발표되지 않았습니다.</strong> RunRepeat 랩 데이터(충격흡수·에너지 리턴 등)도 아직 미게시 상태입니다. 국내 정가·랩 수치가 확정되면 이 글과 스펙을 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: Believe in the Run 캐스캐디아 20 리뷰(2026-07-16), Road Trail Run 멀티테스터 리뷰, 브룩스러닝 코리아 공식몰. 스펙·평가는 해외 리뷰 실측 기준이며 한국 출시 정보는 미확정입니다.</small></p>
+`,
+  },
+  {
     id: '2026-mudo-run-gyeongju',
     slug: '2026-mudo-run-gyeongju',
     title: '2026 무한도전 런 경주 공식 발표 | 9월 19일 선셋 마라톤 — 보물찾기·포졸과 도적 총정리',
