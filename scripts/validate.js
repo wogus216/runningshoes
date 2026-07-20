@@ -279,10 +279,111 @@ if (consistOk) ok('price/costPerKm/drop 일관성 통과');
 console.log('');
 
 // ===========================================
+// 6. 마라톤 대회 데이터 검증
+// ===========================================
+// 대회 status는 시간이 지나면 자동으로 틀려지는 데이터다. 개최일이 지났는데
+// '접수중'으로 남아 있으면 독자가 끝난 대회에 신청하려 든다(2026-07 실제 10건 발생).
+// 사람의 기억에 의존하지 않도록 여기서 기계적으로 막는다.
+console.log('━━━ 6. 마라톤 대회 데이터 검증 ━━━');
+
+const marathonDir = path.join(__dirname, '..', 'src/lib/data/marathon');
+const VALID_STATUS = ['접수예정', '접수중', '마감', '대회종료'];
+const today = new Date().toISOString().slice(0, 10);
+
+let marathonOk = true;
+let eventCount = 0;
+const seenEventIds = new Map();
+
+if (!fs.existsSync(marathonDir)) {
+  warn('마라톤 데이터 디렉토리를 찾을 수 없습니다');
+} else {
+  fs.readdirSync(marathonDir)
+    .filter(f => f.endsWith('.ts') && f !== 'index.ts')
+    .forEach(file => {
+      const content = fs.readFileSync(path.join(marathonDir, file), 'utf-8');
+
+      content.split(/\n {2}\{\n/).slice(1).forEach(block => {
+        const pick = (re) => (block.match(re) || [])[1];
+        const id = pick(/id:\s*'([^']+)'/);
+        if (!id) return;
+        eventCount++;
+
+        const name = pick(/name:\s*'([^']+)'/) || id;
+        const date = pick(/date:\s*'([^']+)'/);
+        const month = pick(/month:\s*'([^']+)'/);
+        const status = pick(/status:\s*'([^']+)'/);
+
+        // id 중복
+        if (seenEventIds.has(id)) {
+          error(`[marathon] 중복 id '${id}' (${seenEventIds.get(id)}, ${file})`);
+          marathonOk = false;
+        } else {
+          seenEventIds.set(id, file);
+        }
+
+        // 필수 필드
+        if (!date || !status || !month) {
+          error(`[marathon] ${name}: date/month/status 필수 필드 누락 (${file})`);
+          marathonOk = false;
+          return;
+        }
+
+        // status 값 유효성
+        if (!VALID_STATUS.includes(status)) {
+          error(`[marathon] ${name}: 알 수 없는 status '${status}'`);
+          marathonOk = false;
+        }
+
+        // ★ 핵심: 개최일이 지났는데 대회종료가 아님
+        if (date < today && status !== '대회종료') {
+          error(
+            `[marathon] ${name}: 개최일(${date})이 지났는데 status가 '${status}' → '대회종료'로 변경 필요`,
+          );
+          marathonOk = false;
+        }
+
+        // month가 date와 어긋남 (필터링이 깨짐)
+        const monthFromDate = `${parseInt(date.slice(5, 7), 10)}월`;
+        if (month !== monthFromDate) {
+          error(`[marathon] ${name}: month('${month}')가 date(${date} → ${monthFromDate})와 불일치`);
+          marathonOk = false;
+        }
+
+        // description에 박힌 마감일이 지났는데 아직 접수중 (내부 모순 탐지)
+        // 실제 사례: '5/31 접수 마감'인데 status는 접수중이었고, 확인해 보니
+        // 그 날짜 자체가 공식에 없는 값이었다. 자동 판정하지 말고 사람이 확인할 것.
+        const desc = pick(/description:\s*\n?\s*'([\s\S]*?)',\n/) || '';
+        if (status === '접수중') {
+          const m = desc.match(/(\d{1,2})\s*[/월]\s*(\d{1,2})\s*일?\s*(?:접수\s*)?마감/);
+          if (m) {
+            const yr = date.slice(0, 4);
+            const dl = `${yr}-${String(m[1]).padStart(2, '0')}-${String(m[2]).padStart(2, '0')}`;
+            if (dl < today) {
+              warn(
+                `[marathon] ${name}: status는 '접수중'인데 설명의 마감일(${dl})이 지남 — 공식 페이지로 확인 필요`,
+              );
+              marathonOk = false;
+            }
+          }
+        }
+
+        // 완성도 (경고): 종료된 대회는 제외
+        if (status !== '대회종료') {
+          if (!/entryFees:/.test(block)) warn(`[marathon] ${name}: 참가비(entryFees) 없음`);
+          if (!/website:/.test(block)) warn(`[marathon] ${name}: 공식 website 없음`);
+        }
+      });
+    });
+
+  if (marathonOk) ok(`마라톤 대회 ${eventCount}개 status/날짜 일관성 통과`);
+}
+console.log('');
+
+// ===========================================
 // 결과 요약
 // ===========================================
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
-console.log(`\n📋 검증 결과: ${allShoeIds.size}개 신발`);
+console.log(`\n📋 검증 결과: 신발 ${allShoeIds.size}개 · 마라톤 대회 ${eventCount}개`);
 console.log(`   ❌ 에러: ${errors}개`);
 console.log(`   ⚠️  경고: ${warnings}개\n`);
 
