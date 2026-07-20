@@ -250,9 +250,19 @@ export const octoberEvents: MarathonEvent[] = [
     location: '대구 달서구 호림강나루공원',
     region: '대구',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    description: '대구 달서구 낙동강변을 달리는 영남권 대표 하프 대회.',
+    website: 'https://xn--o39a74ke5dgxc87nkob1zuq6ko9i1win0a.kr',
+    description:
+      '대구 달서구 낙동강변을 달리는 영남권 대표 하프 대회 20회차. 5월 20일 정규 접수를 시작해 6월 30일 마감됐고, 6월 중순 추가접수까지 종료됐습니다. 클럽 회원 대상 마니아 할인가(하프·10km 25,000원)가 별도로 있습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 35000 },
+        { distance: '10K', fee: 35000 },
+        { distance: '5K', fee: 20000 },
+      ],
+      startTime: '08:00',
+    },
   },
   {
     id: 'mbn-naju-marathon-2026',
@@ -262,10 +272,20 @@ export const octoberEvents: MarathonEvent[] = [
     location: '전남 나주종합스포츠파크',
     region: '전남',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    website: 'https://marathongo.co.kr/raceDetail/domestic/2026-mbn-naju-marathon',
-    description: 'MBN 주관 전남 나주 풀코스 마라톤.',
+    website: 'https://najumarathon.com',
+    description:
+      'MBN 주관 전남 나주 풀코스 마라톤 4회차. 5월 15일 접수를 시작해 풀·하프·10km·하프팀대항이 조기 마감됐고, 5km 건강걷기까지 7월 19일 종료됐습니다. 정원은 풀 2,000·하프 2,500·10km 3,000·5km 3,000명.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 40000 },
+        { distance: '하프', fee: 40000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '5K', fee: 20000 },
+      ],
+      startTime: '08:00',
+    },
   },
   {
     id: 'daecheongho-marathon-2026',
@@ -275,9 +295,20 @@ export const octoberEvents: MarathonEvent[] = [
     location: '충북 문의체육공원',
     region: '충북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    description: '대청호를 배경으로 달리는 충북 대표 풀코스 마라톤. 가을 단풍 코스로 유명.',
+    website: 'https://race.cjsports.or.kr',
+    description:
+      '대청호를 배경으로 달리는 충북 대표 풀코스 마라톤 24회차. 가을 단풍 코스로 유명하며 정원은 6,000명(풀 800·하프 1,400·10km 2,000·5km 1,800). 종목별로 5월 초순~중순에 순차 접수를 시작해 6월 12일 마감됐습니다. 고3 이하 할인가(풀·하프·10km 30,000원, 5km 15,000원)가 별도로 있습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 45000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 25000 },
+      ],
+      startTime: '08:40',
+    },
   },
   {
     id: 'gangnam-peace-marathon-2026',
@@ -338,8 +369,13 @@ export const octoberEvents: MarathonEvent[] = [
     distances: ['10K'],
     status: '접수중',
     isMajor: false,
+    website: 'https://knmarathon.co.kr',
     description:
-      '창원종합운동장에서 출발하는 경남 지역 대회. 10km와 3km 종목을 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+      '경남신문 주최로 창원스포츠파크 보조경기장에서 출발하는 경남 지역 대회 23회차. 10km 외에 3km 건강달리기(일반 20,000원·학생 15,000원)도 운영합니다. 접수는 7월 13일부터 선착순 4,000명으로 8월 29일까지입니다.',
+    raceInfo: {
+      entryFees: [{ distance: '10K', fee: 30000 }],
+      startTime: '08:30',
+    },
   },
   {
     id: 'hankyung-seoul-marathon-2026',

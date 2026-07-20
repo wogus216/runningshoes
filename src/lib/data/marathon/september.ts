@@ -127,9 +127,20 @@ export const septemberEvents: MarathonEvent[] = [
     location: '강원 철원 고석정',
     region: '강원',
     distances: ['풀코스', '하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    description: '비무장지대 인근 고석정 일대를 달리는 평화 테마 풀코스 마라톤.',
+    website: 'https://www.dmzrun.kr/',
+    description:
+      '비무장지대 인근 고석정 일대를 달리는 평화 테마 마라톤 23회차. 9월 대회지만 접수는 2월에 시작해 4월 5일 이미 마감됐습니다. 풀·하프·10km 외에 기록칩 없는 코스모스 10리길 걷기(30,000원) 종목도 있습니다. 제한시간은 풀 5시간·하프 3시간·10km 1시간 30분.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 50000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '코스모스 10리길 걷기', fee: 30000 },
+      ],
+      startTime: '09:00',
+    },
   },
   {
     id: 'suncheonman-ultra-2026',
@@ -141,7 +152,13 @@ export const septemberEvents: MarathonEvent[] = [
     distances: ['울트라'],
     status: '접수중',
     isMajor: false,
-    description: '순천만 생태공원 주변을 도는 100km 울트라마라톤.',
+    website: 'http://www.scultra100.net/',
+    description:
+      '순천만 생태공원 주변을 도는 102km 단일 종목 울트라마라톤 20회차. 9월 5일 오후 5시 출발해 밤을 새워 달리며 제한시간은 18시간입니다. 접수는 8월 24일까지.',
+    raceInfo: {
+      entryFees: [{ distance: '울트라', fee: 80000 }],
+      startTime: '17:00',
+    },
   },
   {
     id: 'gapyeong-jaraseom-marathon-2026',
@@ -151,9 +168,19 @@ export const septemberEvents: MarathonEvent[] = [
     location: '경기 가평종합운동장',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    description: '자라섬 인근 코스를 달리는 가을 시즌 가족 참여형 마라톤.',
+    website: 'http://www.gprun.com/',
+    description:
+      '자라섬 인근 코스를 달리는 가을 시즌 가족 참여형 마라톤 19회차. 하프·10km·5km 외에 10km 커플런과 4.2km 패밀리런도 운영합니다. 접수는 4월 14일 시작해 선착순 5,000명으로 5월 30일 마감됐습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 40000 },
+      ],
+      startTime: '08:30',
+    },
   },
   {
     id: 'ganghwa-beach-marathon-2026',
@@ -276,9 +303,14 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     description:
-      '금산인삼축제와 연계해 열리는 마라톤. 하프·10km 외에 4km 펀런 종목도 운영하며, 금산세계인삼엑스포 주차장에서 오전 8시 30분에 집결합니다. 접수는 8월 19일까지.',
+      '금산인삼축제와 연계해 열리는 마라톤. 하프·10km 외에 4km 종목(금산군민 할인)도 운영하며, 금산세계인삼엑스포 주차장에서 오전 8시 30분에 집결합니다. 선착순 3,000명으로 접수는 8월 19일 11시까지(입금 8월 20일 11시까지). 3월에 열리는 금산인삼웰빙마라톤과는 다른 대회입니다.',
+    website: 'https://mara1080.com/event/2044eb82-fcdb-4e56-b79b-f3543a6a360d',
     raceInfo: {
-      startTime: '08:30',
+      entryFees: [
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '4K', fee: 30000 },
+      ],
     },
   },
   {

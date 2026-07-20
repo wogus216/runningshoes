@@ -87,7 +87,14 @@ export const augustEvents: MarathonEvent[] = [
     isMajor: false,
     website: 'http://www.ifunrunkorea.co.kr/',
     description:
-      '평균 해발 700m 고지대 평창에서 열리는 한여름 하프마라톤. 8월에도 20도 안팎의 선선한 기온이 강점이며, 평창동계올림픽기념관 앞에서 출발합니다. 참가비·출발시간 등 세부 요강은 공식 발표 확인이 필요합니다.',
+      '평균 해발 700m 고지대 평창에서 열리는 한여름 하프마라톤. 8월에도 20도 안팎의 선선한 기온이 강점이며, 평창동계올림픽기념관 앞에서 오전 8시 출발합니다. 한국실업육상연맹 주최로 접수는 7월 26일 18시 마감입니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 40000 },
+      ],
+      startTime: '08:00',
+    },
   },
   {
     id: 'hangang-seoul-half-marathon-2026',

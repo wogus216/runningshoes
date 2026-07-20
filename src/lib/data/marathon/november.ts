@@ -13,7 +13,13 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'http://marathon.jtbc.com',
     description:
-      '국내 최대 규모 가을 풀코스 마라톤(11/1, 상암 출발 → 여의도 → 잠실 코스). 본접수는 추첨제로 4월 마감됐으나, 미등록 티켓 추가접수가 예정돼 있습니다 — ①7월 KB 마라톤 카드 소지자 대상(풀코스 1,000명·10K 3,000명) ②8월 KB 국민카드 스폰서 이벤트(풀코스 200명) ③9월 FINAL 선착순. ※추가접수 구체 날짜는 아직 미발표(2026-06 기준)이며, 정확한 일정은 러너블 공식 채널에서 확인하세요. 2026년부터 레이스팩은 택배 없이 코리아 러닝 엑스포(10/29~31, SETEC 강남) 현장 수령으로 변경됩니다.',
+      '국내 최대 규모 가을 풀코스 마라톤(11/1, 상암 출발 → 여의도 → 잠실 코스, 총 3.2만 명). 본접수는 추첨제로 4월 마감됐으나 미등록 티켓 추가접수가 진행 중입니다 — ①7월 KB 마라톤카드 래플 응모(7/1~7/31, 풀 1,000명·10K 3,000명, 당첨자만 8월 중 구매) ②8월 KB국민카드 협찬 이벤트(풀 200명) ③9월 최종 선착순. 즉 지금은 선착순이 아니라 래플 응모 단계입니다. 2026년부터 레이스팩은 택배 없이 코리아 러닝 엑스포(10/29~31, SETEC 강남) 현장 수령으로 변경됩니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 150000 },
+        { distance: '10K', fee: 100000 },
+      ],
+    },
   },
   {
     id: 'ulsan-human-rights-marathon-2026',
@@ -23,9 +29,19 @@ export const novemberEvents: MarathonEvent[] = [
     location: '울산 태화강 둔치',
     region: '울산',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '접수예정',
     isMajor: false,
-    description: '태화강변 코스를 달리는 울산 대표 시민 마라톤.',
+    website: 'https://www.humanrun.org',
+    description:
+      '태화강변 코스를 달리는 울산 대표 시민 마라톤 21회차. 접수는 8월 18일부터 9월 18일까지입니다. 기록 시상 없이 참가자 전원에게 동행기념품을 주는 방식이며, 장애인·18세 미만 할인가(하프·10km 25,000원, 5km 15,000원)와 장애인 동반 1인 참가비 면제가 있습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 35000 },
+        { distance: '10K', fee: 35000 },
+        { distance: '5K', fee: 25000 },
+      ],
+      startTime: '09:30',
+    },
   },
   {
     id: 'sonkeechung-peace-marathon-2026',
@@ -71,8 +87,18 @@ export const novemberEvents: MarathonEvent[] = [
     distances: ['풀코스', '하프', '10K', '5K'],
     status: '접수중',
     isMajor: false,
-    website: 'http://www.sangjugotgommarathon.com',
-    description: '상주 곶감 축제와 연계된 가을 풀코스 마라톤. 접수 5/6~10/15.',
+    website: 'https://mara1080.com/event/c8dc2c22-a83a-4743-9e34-c884e9809dbb',
+    description:
+      '상주 곶감 축제와 연계된 가을 풀코스 마라톤 24회차. 접수는 5월 6일부터 선착순 10,000명(4.4km 2,000·10km 3,000·하프 2,500·풀 2,500)이 찰 때까지이며, 입금·변경·취소는 8월 31일까지입니다. 짧은 종목은 5km가 아니라 4.4km입니다. 아래 참가비는 기본 기념품(상주곶감 또는 샤인머스켓 택1) 기준이며, 러닝 자켓 기념품 선택 시 10km·하프 50,000원·풀 55,000원으로 올라갑니다. 상주시민 4.4km는 15,000원.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 50000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '4.4K', fee: 25000 },
+      ],
+      startTime: '09:00',
+    },
   },
   {
     id: 'mbn-seoul-marathon-2026',
@@ -115,11 +141,10 @@ export const novemberEvents: MarathonEvent[] = [
     location: '인천아시아드주경기장 (인천 서구)',
     region: '인천',
     distances: ['풀코스', '10K', '5K'],
-    status: '접수중',
+    status: '접수예정',
     isMajor: true,
-    website: 'https://incheonmarathon.or.kr',
     description:
-      '인천시·대한육상연맹 주최 인천 최초·유일 공식 풀코스 마라톤(제2회). 2026년 청라하늘대교 편도 코스 검토(바다 위 러닝), 약 2만 명·풀 8천. 접수 7월 오픈 예상.',
+      '인천시·대한육상연맹 주최 인천 최초·유일 공식 풀코스 마라톤(제2회). 2026년 청라하늘대교 편도 코스를 검토 중이며(바다 위 러닝), 총 2만 명 규모에 풀코스 정원을 6,000명에서 8,000명으로 확대합니다. 2026년 접수 일정·참가비·공식 사이트는 아직 공개되지 않았습니다. 참가비 인상(풀 8만·10km 5만)이 언론에 보도됐으나 검토 단계로 확정된 금액이 아니니, 접수 개시 후 공식 안내를 확인하세요.',
   },
   {
     id: 'buyeo-goodtrae-marathon-2026',
@@ -132,7 +157,17 @@ export const novemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     description:
-      '백마강변 구드래나루터에서 출발하는 부여 대표 대회. 하반기 충남권에서 드물게 풀코스를 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+      '백마강변 구드래나루터에서 출발하는 부여 대표 대회 15회차. 하반기 충남권에서 드물게 풀코스를 운영합니다. 부여군마라톤연합회 주최·전국마라톤협회 주관으로, 접수는 6월 30일부터 10월 7일까지입니다. 부여군민 5km는 20,000원.',
+    website: 'https://mara1080.com/event/ffc023fc-7a54-4610-bdd6-2bb9a1028122',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 50000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 30000 },
+      ],
+      startTime: '08:30',
+    },
   },
   {
     id: 'gwacheon-marathon-2026',
@@ -142,11 +177,17 @@ export const novemberEvents: MarathonEvent[] = [
     location: '관문체육공원 (경기 과천시)',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '접수예정',
+    status: '접수중',
     isMajor: false,
+    website: 'https://gcrun.co.kr/gcrun/',
     description:
-      '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회. 접수는 7월 20일~31일로 예정돼 있습니다.',
+      '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회. 7월 20일 14시 접수를 시작해 선착순 3,000명이 차면 마감됩니다. 참가 자격은 하프 19세 이상·10km 14세 이상이며 5km는 제한이 없습니다. 과천시민 5km는 25,000원(한정 수량).',
     raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '5K', fee: 30000 },
+      ],
       startTime: '08:00',
     },
   },
@@ -162,7 +203,14 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: false,
     website: 'https://marathon.ihalla.com/',
     description:
-      '한라일보가 주최하는 제주 대표 가을 대회로 풀·하프·10K를 운영합니다. 감귤 수확철 제주 동부 해안과 중산간을 달리는 코스이며, 접수는 7월 6일~9월 11일입니다.',
+      '한라일보가 주최하는 제주 대표 가을 대회로 풀·하프·10K를 운영합니다. 정식 명칭은 제주감귤국제마라톤대회. 감귤 수확철 제주 동부 해안과 중산간을 달리는 코스이며, 접수는 7월 6일~9월 11일입니다. 제한시간은 풀 5시간·하프 2시간 30분·10km 1시간 30분이고, 유아·초중고생은 30% 할인됩니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 55000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 40000 },
+      ],
+    },
   },
   {
     id: 'garmin-run-korea-2026',
@@ -196,7 +244,16 @@ export const novemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     description:
-      '고창군 일대에서 열리는 24회째 대회로 하프·10K·5K를 운영합니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+      '고창군 일대에서 열리는 24회째 대회로 하프·10K·5K를 운영합니다. 접수는 7월 1일부터 선착순 4,000명으로 8월 31일 14시까지입니다. 5km는 기록을 측정하지 않으며 참가비도 10,000원으로 저렴합니다. 클럽 마니아 할인가(하프·10km 25,000원, 기념품 미지급)가 별도로 있습니다.',
+    website: 'http://www.gcrun.com/',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 35000 },
+        { distance: '10K', fee: 35000 },
+        { distance: '5K', fee: 10000 },
+      ],
+      startTime: '10:00',
+    },
   },
   {
     id: 'namwon-chunhyang-marathon-2026',
@@ -209,8 +266,15 @@ export const novemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     description:
-      '남원종합스포츠타운에서 출발하며, 11월 하순에는 드물게 풀코스를 운영하는 대회입니다. 참가비 등 세부 요강은 공식 발표 확인이 필요합니다.',
+      '남원종합스포츠타운에서 출발하며, 11월 하순에는 드물게 풀코스를 운영하는 대회입니다. 전국마라톤협회 주관으로 접수는 7월 7일부터 10월 28일까지. 제한시간은 풀 5시간(반환점 2시간 45분)·하프 3시간·10km 2시간이며, 10km 이상은 완주 메달과 지역상품권 1만원을 받습니다. 남원시민 5km는 20,000원.',
+    website: 'https://mara1080.com/event/c2cec79b-c38a-4832-bf4f-7ecb499cdcd5',
     raceInfo: {
+      entryFees: [
+        { distance: '풀코스', fee: 50000 },
+        { distance: '하프', fee: 45000 },
+        { distance: '10K', fee: 45000 },
+        { distance: '5K', fee: 30000 },
+      ],
       startTime: '08:40',
     },
   },
