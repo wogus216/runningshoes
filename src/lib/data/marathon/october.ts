@@ -34,7 +34,7 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://admarathon.kr/andong/',
     description:
-      '획득고도 700m+ 국내 최상급 난코스. 10,000명 선착순, 작년 며칠 만에 조기 마감. 5/31 접수 마감.',
+      '획득고도 700m+ 국내 최상급 난코스. 5월 6일부터 선착순 10,000명 접수로 종료 예정일이 따로 없으며, 정원이 차면 마감됩니다. 환불 가능 기간은 7월 26일까지. 인기 대회라 종목에 따라 이미 마감됐을 수 있으니 신청 전 공식 페이지에서 잔여 여부를 확인하세요.',
     courseInfo: {
       terrain: '언덕',
       difficulty: '상급',
@@ -87,10 +87,11 @@ export const octoberEvents: MarathonEvent[] = [
     location: '경포해변 중앙광장',
     region: '강원',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
-    website: 'http://www.xn--289av7rnxbd06bmrc.com/',
-    description: '강릉 경포해변 동해안 하프 코스. 6/23 접수 마감.',
+    website: 'https://www.xn--289av7rnxbd06bmrc.com/',
+    description:
+      '강릉 경포해변에서 열리는 동해안 평지 하프 코스. 5월 18일 본접수 시작 후 선착순 조기 마감됐고, 6월 30일 추가접수까지 진행돼 현재 전 부문(하프·10K·4.7K) 마감 상태입니다. 하프 단체전(5인 1조)만 사무국 문의로 열려 있습니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '초보자',

@@ -97,12 +97,12 @@ export const septemberEvents: MarathonEvent[] = [
     month: '9월',
     location: '공주시민운동장 (금강변)',
     region: '충남',
-    distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    distances: ['풀코스', '하프', '10K'],
+    status: '마감',
     isMajor: true,
-    website: 'https://dongma.club/',
+    website: 'https://www.gongjumarathon.com/',
     description:
-      '동마 시리즈 가을 시즌 개막전. 금강변 평지 풀코스 + 32K 옵션이 특징. 우선접수(동마클럽 멤버십) 5/11 오픈, 본접수 5/21 마감.',
+      '동마 시리즈 가을 시즌 개막전. 금강변 평지 풀코스에 32K 옵션이 있어 가을 풀코스 준비용으로 인기입니다. 5월 21일 본접수를 시작해 선착순 마감됐으며, 접수처인 동마클럽에서 현재 품절 상태입니다. 취소·환불은 7월 31일 17시까지 가능합니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
@@ -111,11 +111,10 @@ export const septemberEvents: MarathonEvent[] = [
     },
     raceInfo: {
       entryFees: [
-        { distance: '풀코스', fee: 60000 },
-        { distance: '32K', fee: 60000 },
-        { distance: '하프', fee: 40000 },
-        { distance: '10K', fee: 40000 },
-        { distance: '5K', fee: 20000 },
+        { distance: '풀코스', fee: 70000 },
+        { distance: '32K', fee: 70000 },
+        { distance: '하프', fee: 70000 },
+        { distance: '10K', fee: 70000 },
       ],
       startTime: '08:00',
     },
