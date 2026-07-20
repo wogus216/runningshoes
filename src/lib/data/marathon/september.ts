@@ -25,6 +25,59 @@ export const septemberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'run-seoul-run-2026',
+    name: '런서울런 2026 (제20회 일간스포츠 서울마라톤)',
+    date: '2026-09-13',
+    month: '9월',
+    location: '서울광장 (서울 중구 세종대로 110)',
+    region: '서울',
+    distances: ['하프', '10K'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://runseoulrun.com/',
+    description:
+      '서울광장에서 출발하는 도심 하프·10km 대회 20회차. 6월 29일 10시부터 결제자 기준 12,000명 선착순 접수로, 고정 마감일 없이 정원 소진 시 종료됩니다. 참가 정보 수정·환불은 8월 14일 17시까지 가능합니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      courseDescription: '서울광장 출발 도심 코스. 하프 07:30, 10km 07:50 출발.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 80000 },
+        { distance: '10K', fee: 70000 },
+      ],
+      startTime: '07:30',
+    },
+  },
+  {
+    id: 'sunsa-marathon-festival-2026',
+    name: '2026 선사마라톤축제 (제20회)',
+    date: '2026-09-20',
+    month: '9월',
+    location: '암사동 유적 앞 특설무대 (서울 강동구)',
+    region: '서울',
+    distances: ['하프', '10K', '5K'],
+    status: '마감',
+    isMajor: false,
+    website: 'http://www.gomarathon.co.kr/',
+    description:
+      '서울 강동구 암사동 유적에서 출발해 한강을 달리는 20회차 대회. 전 종목 참가비 30,000원에 초경량 러닝자켓을 제공해 가성비로 알려져 있습니다. 총 2,800명(강동구민 1,000·일반 1,800) 선착순으로 6월 11일 접수 마감됐습니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription: '암사동 유적 출발 한강변 평지 코스. 교통통제 없는 구간 위주.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 30000 },
+        { distance: '10K', fee: 30000 },
+        { distance: '5K', fee: 30000 },
+      ],
+      startTime: '09:00',
+    },
+  },
+  {
     id: 'mudo-run-gyeongju-2026',
     name: '2026 무한도전 RUN in 경주',
     date: '2026-09-19',
@@ -193,17 +246,23 @@ export const septemberEvents: MarathonEvent[] = [
   },
   {
     id: 'pohang-secondary-battery-marathon-2026',
-    name: '2026 포항 이차전지 전국마라톤',
+    name: '2026 포항2차전지 전국마라톤대회',
     date: '2026-09-13',
     month: '9월',
-    location: '포항운하관 광장 (경북 포항시)',
+    location: '포항운하관 주차장 (경북 포항시)',
     region: '경북',
     distances: ['하프', '10K', '5K'],
     status: '접수중',
     isMajor: false,
+    website: 'https://energyrun.co.kr/',
     description:
-      '포항운하관 광장에서 출발하는 하프·10km·5km 전국 마라톤. 오전 8시 집결이며, 접수 마감은 7월 20일로 임박했습니다.',
+      '매일신문 주최로 포항운하관 주차장에서 출발하는 하프·10km·5km 전국 마라톤. 오전 8시 출발, 전 종목 기록칩을 사용합니다. 6월 29일 10시부터 선착순 접수이며 고정 마감일 없이 종목별 정원(하프·10km 각 4,000명, 5km 2,000명) 소진 시 마감됩니다. 2025년에는 9월 송도해수욕장에서 열렸으나 2026년은 날짜·장소가 모두 바뀌었습니다.',
     raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '5K', fee: 35000 },
+      ],
       startTime: '08:00',
     },
   },

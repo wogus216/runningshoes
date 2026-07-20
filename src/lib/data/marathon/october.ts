@@ -2,6 +2,27 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const octoberEvents: MarathonEvent[] = [
   {
+    id: 'transjeju-utmb-2026',
+    name: '2026 트랜스제주 by UTMB',
+    date: '2026-10-02',
+    month: '10월',
+    location: '제주월드컵경기장·가시리 일대 (제주)',
+    region: '제주',
+    distances: ['울트라', '트레일'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://transjeju.utmb.world/',
+    description:
+      'UTMB 월드시리즈 아시아 공식 대회. 10월 2~4일 제주에서 100M(148km)·100K(104km)·60K·20K 4개 종목으로 열립니다. 접수 마감 7월 31일, 참가비는 USD 기준 100M $280·100K $220·60K $160·20K $90. 60K 이상은 UTMB Index 자격이 필요하지만 20K는 자격 제한 없이 참가할 수 있어 입문 종목으로 적합합니다.',
+    courseInfo: {
+      terrain: '산악',
+      difficulty: '상급',
+      elevationGain: 5000,
+      courseDescription:
+        '제주 오름·중산간 트레일. 100M 148km/누적 5,000m, 100K 104km/4,000m, 60K 60km/1,400m. 100M은 10/2, 나머지 종목은 10/3 출발.',
+    },
+  },
+  {
     id: 'andong-marathon-2026',
     name: '2026 안동마라톤',
     date: '2026-10-04',
