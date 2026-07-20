@@ -2,6 +2,29 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const septemberEvents: MarathonEvent[] = [
   {
+    id: 'hyundai-forest-run-2026',
+    name: '2026 현대자동차 포레스트런',
+    date: '2026-09-12',
+    month: '9월',
+    location: '여의도공원 문화의 마당',
+    region: '서울',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: true,
+    website: 'https://www.hyundai.com/kr/ko/brand/forestrun',
+    description:
+      '참가자 1인당 나무를 심는 현대자동차 친환경 러닝 캠페인 11회차. 2026년은 봄에서 가을로 이동해 9/12 개최, UN세계식량계획(WFP)과 협업해 니제르 10만 그루 식재가 목표. 접수 7/23 10:00~7/30, 현대Shop에서 기부 참가권 구매 방식(선착순 6,500명).',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription: '여의도공원 문화의 마당 출발 → 서강대교 왕복 10km. 평지 도심 코스로 완주 제한 1시간 30분.',
+    },
+    raceInfo: {
+      entryFees: [{ distance: '10K', fee: 50000 }],
+      startTime: '06:30',
+    },
+  },
+  {
     id: 'mudo-run-gyeongju-2026',
     name: '2026 무한도전 RUN in 경주',
     date: '2026-09-19',
