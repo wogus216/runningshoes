@@ -3,6 +3,25 @@
 신상 신발(출시 <3개월) 데이터 중 RunRepeat 랩 테스트 미게시로 추정값 입력한 엔트리.
 실측값 게시되면 `specs` / `detailedSpecs` 업데이트 필요.
 
+---
+
+## 🗓️ 대회 status 변경 스케줄 (날짜 도래 시 처리)
+
+> `src/lib/data/marathon/*.ts`의 `status` 필드 갱신용. **날짜가 지난 항목은 그날 세션에서 즉시 처리.**
+> status 값: `'접수예정' | '접수중' | '마감' | '대회종료'`
+> ⚠️ 마감 여부는 **날짜 경과만으로 단정하지 말고** 공식 페이지에서 조기마감/연장을 확인할 것 (선착순 대회는 기간 전 소진이 흔함).
+
+| 처리일 | 대상 | 작업 |
+|---|---|---|
+| **2026-07-21** | `pohang-secondary-battery-marathon-2026` (september.ts) | 접수 마감 7/20 경과 → `접수중` → `마감` |
+| **2026-07-23** | `hyundai-forest-run-2026` (september.ts) | 접수 오픈 10:00 → `접수예정` → `접수중`. **동시에 블로그 `2026-hyundai-forest-run-september` 상단 deadline-strip을 "접수 진행중"으로 갱신** |
+| **2026-07-24** | `hyundai-forest-run-2026` | 선착순 6,500명 **조기 마감 여부 확인**(현대Shop). 마감이면 status `마감` + 블로그 스트립 "마감" 표기 → 오정보 방지 최우선 |
+| **2026-07-31** | `hyundai-forest-run-2026` | 접수 기간 종료(7/30 23:59) → `마감` 확정. 블로그 스트립·본문 접수 안내를 완료형으로 정리 |
+| **2026-08-01** | 트랜스제주 by UTMB (october.ts) | 접수 7/31 마감 → `마감`. 블로그 `transjeju-utmb-2026` 갱신 동반 |
+| **2026-09-13** | `hyundai-forest-run-2026` | 대회 익일 → `대회종료`. 후기·현장 콘텐츠 발행 검토 |
+
+**정기 점검 루틴(월 1회 권장):** `grep -n "status: '접수중'" src/lib/data/marathon/*.ts` 로 전수 확인 → `date`가 이미 지난 항목은 `대회종료`로, 접수 마감일이 지난 항목은 `마감`으로 일괄 정리. 접수중 상태로 방치된 종료 대회는 독자 신뢰를 직접 깎는다.
+
 ## 미처리 (추가)
 
 - [ ] **asics-blazeblast** (추가 2026-07-14, 글로벌 출시 2026-08-01): 블로그 프리뷰만 발행(`asics-blazeblast-preview-2026`), 신발 DB는 미생성. 아식스 공식 발표(7/1) 확정 사실 — $150·FF 블라스트 맥스+전족 트램폴린 포드·ASICSGrip 2.5mm 러그. 무게(남 252g/여 221g 추정)·스택 40mm·드롭 8mm·컬러 3종·와이드 미제공은 해외 프리뷰 매체(RunToTheFinish) 추정치라 공식 아님. 재확인 트리거: ① 8/1 글로벌 출시 후 RunRepeat 랩 게시 ② 한국 asics.co.kr 등재·정가 확정 시 → 신발 DB 추가 + 프리뷰를 정식 리뷰로 전환. 재확인 시점 **2026-09**.
@@ -83,3 +102,6 @@
 - [ ] puma-deviate-pure-nitro: RunRepeat 랩 데이터 게시 확인 후 specs/detailedSpecs 업데이트 (추가 2026-06-05, 출시 2026-06-04 — 3~6개월 뒤 재확인)
 - [ ] on-cloudboom-strike-2: RunRepeat 랩(스택/드롭/에너지리턴) 게시 + 한국 공식가 확정 확인 후 블로그 프리뷰(on-cloudboom-strike-2-preview-2026) 수치 갱신, 신발 DB 추가 검토 (추가 2026-07-02, 재확인 2026-09)
 - [ ] 2026-mudo-run-gyeongju: 무도런 경주 접수 일정·참가비·종목 공식 발표 시 블로그 글 + marathon/september.ts(status 접수예정→접수중, raceInfo) 업데이트. @most267_official 모니터링, 상반기 패턴상 8월 중 발표 유력 (추가 2026-07-15)
+- [ ] pohang-secondary-battery-marathon-2026: 접수 마감(7/20) 경과 후 status 접수중→마감 변경 (september.ts, 추가 2026-07-17)
+
+- [ ] brooks-cascadia-20-preview-2026: 한국 출시일·정가·RunRepeat 랩 확인 후 스펙/본문 갱신 + 확정 시 신발 DB 추가 검토 (추가 2026-07-19, 글로벌 8/1 출시라 8~9월 재확인)

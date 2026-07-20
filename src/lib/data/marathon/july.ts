@@ -9,7 +9,7 @@ export const julyEvents: MarathonEvent[] = [
     location: '포항 영일대해수욕장 장미광장',
     region: '경북',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '대회종료',
     isMajor: true,
     website: 'https://ironrun.kr',
     description:
