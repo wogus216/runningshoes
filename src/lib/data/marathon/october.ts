@@ -2,6 +2,34 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const octoberEvents: MarathonEvent[] = [
   {
+    id: 'siheung-half-marathon-2026',
+    name: '2026 시흥시 전국하프마라톤대회 (제12회)',
+    date: '2026-10-05',
+    month: '10월',
+    location: '한국공학대학교 제2캠퍼스 (경기 시흥시 거북섬)',
+    region: '경기',
+    distances: ['하프', '10K', '5K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://www.shmarathon.kr/shmarathon/',
+    description:
+      '시화호를 끼고 시화방조제 위를 그대로 왕복하는 직선 아웃앤백 코스. 시화호 권역 대회 중 실제로 방조제를 달리는 유일한 대회입니다. 접수는 7월 22일(수) 14시부터 선착순 5,000명. 대회일 10월 5일은 개천절 대체공휴일(월)입니다. 오이도역·시흥시청 무료 셔틀버스가 운행 예정이며, 올해 코스프레런 부문이 신설됐습니다. 참가 자격은 하프 19세 이상·10km 14세 이상.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      courseDescription:
+        '한국공학대 제2캠퍼스 출발 → 시화방조제 왕복. 고저차가 거의 없는 완전 평지 직선 코스라 기록 노리기 좋지만, 방조제 특성상 그늘과 바람막이가 전혀 없어 해풍에 그대로 노출됩니다. 급수는 7.5·13.5km 및 반환점 부근.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 35000 },
+        { distance: '10K', fee: 35000 },
+        { distance: '5K', fee: 20000 },
+      ],
+      startTime: '09:00',
+    },
+  },
+  {
     id: 'transjeju-utmb-2026',
     name: '2026 트랜스제주 by UTMB',
     date: '2026-10-02',

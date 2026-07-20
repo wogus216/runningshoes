@@ -2,6 +2,34 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const septemberEvents: MarathonEvent[] = [
   {
+    id: 'ansan-marathon-2026',
+    name: '2026 안산마라톤대회',
+    date: '2026-09-20',
+    month: '9월',
+    location: '대부바다향기테마파크 (경기 안산시 대부도)',
+    region: '경기',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://ansanrun.com/',
+    description:
+      '시화호 남안 대부도에서 열리는 안산시체육회·경기일보 주최 대회. 안산포도축제와 연계되며 기념품으로 쌀 3kg과 소비쿠폰을 제공합니다(5km 제외). 선착순 6,000명 결제 완료자 기준으로 마감되며, 제한시간은 하프 3시간·10km 2시간·5km 1시간. 5km는 기록칩이 제공되지 않습니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      courseDescription:
+        '대부바다향기테마파크 출발 → 대부도 내륙 도로 왕복. 시화호 풍광을 배경으로 하지만 코스 자체는 대부도 내륙이며 시화방조제·조력발전소 구간은 포함되지 않습니다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 40000 },
+        { distance: '10K', fee: 40000 },
+        { distance: '5K', fee: 25000 },
+      ],
+      startTime: '09:00',
+    },
+  },
+  {
     id: 'hyundai-forest-run-2026',
     name: '2026 현대자동차 포레스트런',
     date: '2026-09-12',

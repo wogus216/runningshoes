@@ -64,7 +64,9 @@
 | 2026-09-19 | `ulsan-human-rights-marathon-2026` | 접수 9/18 마감 → `마감` |
 | 2026-10-08 | `buyeo-goodtrae-marathon-2026` | 접수 10/7 마감 → `마감` |
 | 2026-10-29 | `namwon-chunhyang-marathon-2026` | 접수 10/28 마감 → `마감` |
+| **2026-07-22** | `siheung-half-marathon-2026` (october.ts) | 접수 14시 오픈 → `접수예정` → `접수중`. 선착순 5,000명이라 조기 마감 확인도 |
 | 상시 | `gwacheon-marathon-2026` | 선착순 3,000명 — 조기 마감 확인 필요(7/20 14시 오픈) |
+| 미정 | `ansan-marathon-2026` (september.ts) | 접수 개시일이 공식에 미표기 — 선착순 6,000명 소진 시 `마감`. 주기 확인 필요 |
 | 8월 중 | `busan-international-marathon-2026` | 접수 개시(8월 예정) → `접수중` + 구체 일자 반영 |
 | 미정 | `incheon-marathon-2026` | 접수·참가비·공식 사이트 공개 시 채울 것 |
 
