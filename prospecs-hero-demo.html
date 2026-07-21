@@ -246,16 +246,17 @@
     Replace this placeholder with the approved product image
     when integrating into the production site.
   */
-  /* 러닝화 측면: 단일 clip-path 윤곽 + 세로 그라디언트(아래 발열 미드솔 / 위 강철 갑피) */
+  /* 러닝화 측면: 인라인 SVG 실루엣(<use> — 심볼 1회 정의는 body 상단) */
   .shoe-figure {
-    position: absolute; left: 50%; bottom: 38px; transform: translateX(-50%); width: 202px; height: 90px;
-    background: linear-gradient(to top, var(--scarlet) 0%, var(--forge) 18%, #3a4450 26%, var(--steel-mid) 58%, var(--steel-lo) 100%);
-    clip-path: polygon(2% 62%, 12% 50%, 30% 34%, 46% 26%, 56% 32%, 62% 36%, 70% 30%, 80% 30%, 90% 40%, 96% 58%, 94% 96%, 88% 100%, 10% 100%, 3% 88%);
+    position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%);
+    width: min(94%, 246px);
   }
-  /* 제품별 미세 차이(정확한 외형 복제 아님) */
-  .shoe-figure.sf-infinite { width: 214px; height: 84px; }   /* 길고 낮은 레이싱 */
-  .shoe-figure.sf-duplex { height: 98px; }                    /* 미드솔 두께 강조(안정화) */
-  .shoe-figure.sf-speed { width: 182px; }                     /* 단정한 입문형 */
+  .shoe-figure svg { display: block; width: 100%; height: auto; }
+  /* 제품별 미세 차이(정확한 외형 복제 아님) — 세로 스케일은 reveal transform과 충돌 없게 svg에 */
+  .shoe-figure.sf-infinite { width: min(98%, 258px); }                              /* 길고 낮은 레이싱 */
+  .shoe-figure.sf-infinite svg { transform: scaleY(.92); transform-origin: bottom; }
+  .shoe-figure.sf-duplex svg { transform: scaleY(1.12); transform-origin: bottom; } /* 미드솔 두께(안정화) */
+  .shoe-figure.sf-speed { width: min(86%, 224px); }                                 /* 단정한 입문형 */
 
   .shoe-meta { text-align: center; margin-top: 20px; }
   .shoe-number { font-family: var(--wordmark); font-size: 12px; font-weight: 800; letter-spacing: .18em; color: var(--steel-lo); }
@@ -341,27 +342,23 @@
     padding: 40px 24px 96px;
   }
   .collection-inner { max-width: 1080px; margin: 0 auto; }
-  .col-head {
-    display: flex; align-items: baseline; justify-content: space-between;
-    gap: 20px; flex-wrap: wrap;
-    padding-bottom: 18px; margin-bottom: 26px;
-    border-bottom: 1px solid #d3ddea;
+  .closing-head { text-align: center; margin-bottom: 34px; }
+  .closing-kicker { font-family: var(--wordmark); font-weight: 800; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--scarlet); margin: 0 0 12px; }
+  .closing-title { font-size: clamp(22px, 4vw, 34px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 10px; }
+  .closing-note { font-size: 13.5px; color: #647890; margin: 0; }
+  .chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+  .chip {
+    display: flex; align-items: baseline; gap: 10px;
+    padding: 14px 16px; background: #fff; border: 1px solid #e0e8f1; border-radius: 10px;
+    scroll-margin-top: 24vh;   /* 앵커 도착 시 여백 */
   }
-  .col-head h2 { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: -.01em; }
-  .col-head .note { font-size: 12.5px; color: #647890; }
-
-  .rows { display: flex; flex-direction: column; gap: 10px; }
-  .row {
-    display: grid; grid-template-columns: 42px 1fr auto;
-    align-items: center; gap: 18px;
-    padding: 16px 18px;
-    background: #fff; border: 1px solid #e0e8f1; border-radius: 10px;
-  }
-  .rank { font-family: var(--wordmark); font-size: 21px; font-weight: 900; color: var(--scarlet); text-align: center; }
-  .row .nm { font-size: 15px; font-weight: 650; }
-  .row .meta { font-size: 12.5px; color: #647890; margin-top: 3px; }
-  .price { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
-  .price.tbd { color: #647890; font-weight: 600; font-size: 12.5px; }
+  .chip:target { border-color: var(--scarlet); box-shadow: 0 0 0 2px rgba(191,18,56,.18); }
+  .chip-no { font-family: var(--wordmark); font-weight: 900; color: var(--scarlet); font-size: 13px; }
+  .chip-nm { font-weight: 700; font-size: 14px; }
+  .chip-pr { margin-left: auto; font-weight: 700; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+  .chip-pr.tbd { color: #647890; font-weight: 600; font-size: 12px; }
+  @media (max-width: 900px) { .chips { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 560px) { .chips { grid-template-columns: 1fr; } }
 
   /* ── 러닝화 일대기(다크 타임라인 — 히어로 세계관 연장) ── */
   .legacy { background: var(--navy); color: var(--paper); padding: 64px 24px 88px; }
@@ -559,6 +556,27 @@
 <!-- no-JS fallback: JS가 있을 때만 쇼케이스 초기 숨김이 적용된다(스크립트 오류 시 제품 정보 항상 노출) -->
 <script>document.documentElement.classList.add('js');</script>
 
+<!-- 러닝화 실루엣 심볼(1회 정의, 케이스 4개가 <use>로 재사용)
+     Conceptual running-shoe silhouette for demo use only.
+     Replace this placeholder with the approved product image
+     when integrating into the production site. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="silUp" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#aeb7c2"/><stop offset=".55" stop-color="#5b6675"/><stop offset="1" stop-color="#39424e"/>
+    </linearGradient>
+    <linearGradient id="silSole" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ff4d1c"/><stop offset="1" stop-color="#bf1238"/>
+    </linearGradient>
+    <symbol id="shoe-sil" viewBox="0 0 260 100">
+      <path fill="url(#silUp)" d="M10,62 C26,52 48,38 82,28 C104,22 118,24 126,30 C131,34 137,35 145,31 C157,24 172,22 186,27 C196,31 203,29 208,22 C216,26 223,36 227,47 C230,54 231,60 230,66 L14,68 Z"/>
+      <path stroke="#2c3542" stroke-width="2.4" fill="none" opacity=".85" d="M100,32 L120,48 M114,28 L134,45 M128,26 L148,42"/>
+      <path fill="url(#silSole)" d="M4,54 C1,58 2,64 8,68 C14,72 24,76 40,79 C95,88 175,88 216,83 C230,80 236,74 235,66 C234,61 230,59 224,61 C170,72 70,70 24,60 C15,58 8,54 4,54 Z"/>
+      <path fill="#151b24" d="M8,70 C42,84 195,86 232,74 C231,81 222,85 206,87 C150,92 70,91 40,86 C24,83 12,77 8,70 Z"/>
+    </symbol>
+  </defs>
+</svg>
+
 <div class="track" id="track">
   <div class="stage" id="stage">
     <canvas id="film"></canvas>
@@ -685,7 +703,7 @@
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
-            <div class="shoe-figure sf-infinite"></div>
+            <div class="shoe-figure sf-infinite"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
           </div>
           <div class="shoe-meta">
@@ -701,7 +719,7 @@
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
-            <div class="shoe-figure sf-hyper"></div>
+            <div class="shoe-figure sf-hyper"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
           </div>
           <div class="shoe-meta">
@@ -717,7 +735,7 @@
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
-            <div class="shoe-figure sf-duplex"></div>
+            <div class="shoe-figure sf-duplex"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
           </div>
           <div class="shoe-meta">
@@ -733,7 +751,7 @@
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
-            <div class="shoe-figure sf-speed"></div>
+            <div class="shoe-figure sf-speed"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
           </div>
           <div class="shoe-meta">
@@ -751,15 +769,17 @@
 
 <section class="collection" id="collection">
   <div class="collection-inner">
-    <div class="col-head">
-      <h2>지금, 프로스펙스 러닝 (4)</h2>
-      <span class="note">일대기의 종착 — 실제 페이지에선 각 신발 상세로 연결됩니다</span>
+    <!-- 클로징: 쇼케이스가 제품 프레젠테이션을 담당하므로 여긴 슬로건 에코 + 콤팩트 칩(상세 진입점) -->
+    <div class="closing-head">
+      <p class="closing-kicker">SPORTS for ALL, ALL for SPORTS</p>
+      <h2 class="closing-title">각자의 속도로, 오늘도 앞으로.</h2>
+      <p class="closing-note">프로스펙스 러닝 4종 — 실제 페이지에선 각 칩이 신발 상세로 연결됩니다.</p>
     </div>
-    <div class="rows">
-      <div class="row" id="product-infinite-rush"><span class="rank">1</span><div><div class="nm">인피니트 러시</div><div class="meta">최상위 카본 러닝화</div></div><span class="price">259,000원</span></div>
-      <div class="row" id="product-hyper-rush"><span class="rank">2</span><div><div class="nm">하이퍼 러시</div><div class="meta">하이퍼 카본 플레이트</div></div><span class="price">219,000원</span></div>
-      <div class="row" id="product-duplex-gf"><span class="rank">3</span><div><div class="nm">듀플렉스 GF</div><div class="meta">과내전 방지 안정화 러닝화</div></div><span class="price">139,000원</span></div>
-      <div class="row" id="product-speed-rush-3"><span class="rank">4</span><div><div class="nm">스피드 러시 3</div><div class="meta">입문 러닝화</div></div><span class="price tbd">2026.06 신형</span></div>
+    <div class="chips">
+      <div class="chip" id="product-infinite-rush"><span class="chip-no">01</span><span class="chip-nm">인피니트 러시</span><span class="chip-pr">259,000원</span></div>
+      <div class="chip" id="product-hyper-rush"><span class="chip-no">02</span><span class="chip-nm">하이퍼 러시</span><span class="chip-pr">219,000원</span></div>
+      <div class="chip" id="product-duplex-gf"><span class="chip-no">03</span><span class="chip-nm">듀플렉스 GF</span><span class="chip-pr">139,000원</span></div>
+      <div class="chip" id="product-speed-rush-3"><span class="chip-no">04</span><span class="chip-nm">스피드 러시 3</span><span class="chip-pr tbd">2026.06 신형</span></div>
     </div>
   </div>
 </section>
