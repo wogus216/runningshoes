@@ -2,6 +2,105 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'new-balance-sc-elite-v6-preview-2026',
+    slug: 'new-balance-sc-elite-v6-preview-2026',
+    title: '뉴발란스 SC 엘리트 v6 미리보기 | 8/6 글로벌 출시 — 새 Infinion 폼·190g 경량화, "발볼 슈퍼슈즈" 자리는 지킬까',
+    description:
+      '뉴발란스가 7월 21일 SC 엘리트 v6를 공식 발표했습니다. 8월 6일 글로벌 발매($275), 미드솔은 FuelCell 대신 Infinion 폼 표기, 공식 무게 190g으로 v5보다 가벼워졌습니다. 관건은 발볼 — v5의 74.5mm 토박스는 "발볼 넓어도 신는 유일한 슈퍼슈즈"라는 정체성이었는데, 첫 시착 리뷰는 플랫폼이 v5보다 좁아졌다는 신호를 보냅니다. 확정 스펙·첫 시착 평가·한국 출시 전망까지 출시 전에 정리했습니다.',
+    thumbnail: '/images/blog/new-balance-sc-elite-v6-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-22',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['뉴발란스 SC 엘리트 v6', 'SC Elite V6', 'Infinion 폼', '카본 슈퍼슈즈', '신상 러닝화', '마라톤 레이싱화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>뉴발란스가 7월 21일 SC 엘리트 v6를 공식 발표</strong> — 8월 6일 글로벌 발매($275)이며, 데일리 트레이너 신모델 SC 레벨(8/20 발매·$190)과 "훈련+레이스데이 패키지"로 함께 나옵니다</li>
+    <li>미드솔이 <strong>Infinion 폼</strong>(뉴발란스 "가장 가벼운 폼")으로 표기되고 공식 무게 <strong>190g</strong>(첫 시착 실측은 180g) — v5 실측 198g에서 확실히 가벼워집니다. 카본 플레이트도 재설계</li>
+    <li>관건은 <strong>발볼</strong> — v5의 74.5mm 토박스는 "발볼 넓어도 신는 슈퍼슈즈"라는 정체성이었는데, 첫 시착 리뷰는 <strong>"플랫폼이 v5보다 좁다"</strong>고 말합니다. 발볼이 넓다면 랩 실측이 나올 때까지 <strong>와이드 옵션이 있는 v5</strong>가 안전한 선택입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👀</span>
+  <div class="callout-body">
+    <p class="callout-title">어제 공식 발표 — 8월 6일 발매까지 D-15</p>
+    <p>이 글은 <strong>뉴발란스 공식 프레스릴리스(7/21)와 Road Trail Run 첫 시착 리뷰(7/21)</strong>를 원문 대조해 정리한 출시 전 프리뷰입니다. 아직 출시 전이라 RunRepeat 정량 랩은 미게시 상태이고, 한국 공식몰에도 리스팅이 없습니다. 확정 수치와 추정을 구분해 표기했습니다.</p>
+  </div>
+</div>
+
+<h2>SC 엘리트, 어떤 신발이었나</h2>
+<p><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 "가장 빠른 슈퍼슈즈"가 아니라 <strong>"발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>로 자리를 잡은 신발입니다. 토박스 74.5mm는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 6~7mm 넓어, 레이스 후반 발가락 눌림 때문에 카본화를 포기했던 한국 러너의 사실상 유일한 선택지였죠. 와이드 옵션까지 있는 슈퍼슈즈는 지금도 드뭅니다. 자세한 이야기는 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 정리했습니다.</p>
+<p>그 후속작이 공식 발표됐습니다. 트라이애슬론 세계챔피언 알렉스 이(Alex Yee)와 미국 마라톤 기록 보유자 에밀리 시슨이 개발에 참여했고 — 참고로 이가 발렌시아에서 세운 PB 2:06:38은 <strong>v5를 신고</strong> 달린 기록입니다 — v6는 8월 6일 뉴발란스닷컴과 리테일 매장에서 글로벌 발매됩니다.</p>
+
+<h2>v5 → v6, 무엇이 달라지나</h2>
+<table>
+  <thead><tr><th>항목</th><th>SC 엘리트 v5 (실측)</th><th>SC 엘리트 v6 (공식)</th><th>변경</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>198g</td><td><strong>190g</strong> (첫 시착 실측 180g/M8.5)</td><td>-8~18g 경량</td></tr>
+    <tr><td>미드솔</td><td>FuelCell (100% PEBA)</td><td><strong>Infinion 폼(신규 표기)</strong></td><td>폼 이름 교체</td></tr>
+    <tr><td>스택</td><td>힐 39.3 / 전족 28.6mm</td><td>힐 40 / 전족 32mm</td><td>전족부 두꺼워짐</td></tr>
+    <tr><td>드롭</td><td>10.7mm (실측) / 8mm (공식)</td><td>8mm (공식)</td><td>공식 기준 동일</td></tr>
+    <tr><td>플레이트</td><td>카본 (Energy Arc)</td><td>재설계 카본 — 강성·추진력 강화</td><td>구조 개편</td></tr>
+    <tr><td>어퍼</td><td>메시</td><td>반투명 메시 + FANTOMFIT</td><td>신규</td></tr>
+    <tr><td>가격</td><td>₩319,000 (한국 정가)</td><td>$275 / 한국가 미정</td><td>-</td></tr>
+  </tbody>
+</table>
+<p><small>※ v6 열은 뉴발란스 공식 프레스릴리스 수치입니다. 토박스 폭·에너지 리턴 등 정량 랩 수치는 게시 전이며, RunRepeat 랩 데이터가 나오면 갱신합니다.</small></p>
+
+<h2>Infinion 폼 — 이름이 바뀌었다, 성분은 아직 물음표</h2>
+<p>이번 세대의 가장 큰 이야깃거리는 미드솔입니다. v5까지의 SC 엘리트는 <strong>FuelCell(100% PEBA)</strong>이 정체성이었는데, v6의 공식 스펙에는 폼이 <strong>Infinion</strong>으로 표기됩니다. 뉴발란스는 "우리의 가장 가벼운 폼"이라며 에너지 리턴과 반응성 강화를 내세우고요. 다만 짚어둘 것 — 제품명은 여전히 "FuelCell SuperComp Elite v6"이고, 공식 릴리스가 "FuelCell 폼을 Infinion이 대체했다"고 명시적으로 서술하지는 않습니다. 폼의 화학 성분도 공식 미공개입니다(첫 시착 리뷰어는 TPEE 또는 A-TPU 계열로 추정하며, 발밑 감각이 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>의 폼에 가깝다고 표현했습니다).</p>
+<p>플레이트는 발 뒤쪽에서는 발에 가깝게 붙고 미드풋 앞에서 급격히 내려가 하부 미드솔과 닿지 않는 <strong>Energy Arc 구조를 재설계</strong>해, 강성을 키우면서도 앞으로 굴러가는 전환은 부드럽게 유지하는 방향입니다.</p>
+
+<h2>첫 시착 리뷰가 말하는 것</h2>
+<p>발표 당일 나온 Road Trail Run의 첫 시착 평가를 요약하면 이렇습니다:</p>
+<ul>
+  <li><strong>실측 180g(US M8.5)</strong> — v5 대비 약 20g 가볍고, 폼은 더 에너제틱하며 전환이 쉬워졌다</li>
+  <li>극단적인 지오메트리 없이 <strong>안정적이고 일관된 마라톤 지향 라이드</strong> — 5K~10K 스피드보다 하프·풀 페이스에 맞는 성격</li>
+  <li>핏은 표준~좁은 발 기준 정사이즈, 토박스는 "레이스 핏 치고는 적당히 넓은(moderately broad)" 수준</li>
+</ul>
+<p>정리하면 "더 가볍고 더 잘 굴러가는 v5"라는 방향성인데, 발볼에 대해서는 다음 섹션의 신호를 함께 봐야 합니다.</p>
+
+<h2>발볼 넓은 러너는 여기를 보세요</h2>
+<p>v5를 선택한 이유의 8할이 발볼이었던 러너에게 중요한 대목입니다. 첫 시착 리뷰의 플랫폼(바닥면) 실측은 <strong>힐 75 / 미드풋 60 / 전족부 110mm로, 리뷰어가 "v5보다 좁은 플랫폼"이라고 명시</strong>했습니다. 단, 이것은 바닥 폭이지 발이 실제로 느끼는 <strong>토박스 내부 폭(v5의 74.5mm에 해당하는 수치)이 아니며</strong>, v6의 내부 폭은 아직 어느 소스에도 없습니다.</p>
+<p>그래서 지금 시점의 합리적인 판단은 이렇습니다. <strong>발볼이 넓다면 랩 실측이 나오기 전까지는 v6 예약에 서두를 이유가 없습니다.</strong> v5는 와이드 옵션까지 있고, 신형 발매 후에는 재고 할인이 붙는 경우가 많으니 오히려 v5를 확보할 타이밍이 될 수 있어요. 발볼 기준 신발 고르기는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요. 반대로 발볼이 표준이라면, 20g 경량화와 새 폼은 충분히 기대할 만한 업그레이드입니다.</p>
+
+<h2>함께 나온 SC 레벨 — "훈련용 짝꿍"</h2>
+<p>이번 발표의 또 하나 포인트는 <strong>SC 레벨(SuperComp Rebel)</strong>이라는 신규 데일리 트레이너가 같은 Infinion 폼을 얹고 함께 나온다는 것입니다(8/20 발매·$190·218g·스택 40/36·드롭 4mm). "레이스는 엘리트 v6, 훈련은 SC 레벨"이라는 패키지 전략인데, 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 이름만 비슷한 별개 라인이니 혼동하지 마세요. 슈퍼트레이너 포지션이라는 점에서는 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>의 자리와 겹치는데, 라인 정리가 어떻게 될지는 지켜볼 부분입니다.</p>
+
+<h2>한국 출시는 언제쯤</h2>
+<p>뉴발란스코리아 공식몰에는 아직 v6 리스팅이 없습니다(7/22 확인). 다만 국내 언론이 지난 3월 "v6를 올 하반기 출시할 예정"이라고 보도했고, <strong>v5의 한국 출시가 작년 8월</strong>이었던 걸 감안하면 가을 마라톤 시즌 전 국내 발매 가능성이 있습니다. 한국 가격은 미정 — v5 정가 319,000원이 기준선인데, 글로벌 가격이 $275로 책정된 만큼 소폭 인상 가능성도 열어둬야 합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 확정/미확정 구분</p>
+    <p>확정: 글로벌 발매일(8/6)·$275·공식 스펙(190g·40/32·드롭 8)·Infinion 폼 표기·SC 레벨 동시 발매. 미확정: <strong>v6 토박스 내부 폭</strong>(v5 74.5mm 대비 변화), 폼 성분, 한국 출시일·가격, 에너지 리턴 등 정량 랩 수치. 랩 데이터와 한국 정가가 확정되면 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. v5를 갖고 있는데 v6로 갈아탈 만한가요?</p>
+    <p class="faq-a">A. 출시 전이라 단정은 이릅니다. 확정 변경은 <strong>경량화(-8~18g) + 새 폼 + 플레이트 재설계</strong>로 방향은 좋지만, v5의 핵심 가치였던 넉넉한 토박스가 유지되는지가 아직 물음표입니다. 발볼 때문에 v5를 골랐다면 랩 실측을 기다렸다 판단하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 v6를 기다릴까요, v5를 살까요?</p>
+    <p class="faq-a">A. 지금은 <strong>v5가 안전한 선택</strong>입니다. 와이드 옵션이 실재하고, 첫 시착 리뷰가 v6 플랫폼이 좁아졌다는 신호를 냈기 때문입니다. v6 국내 발매 후에는 v5 재고 할인 가능성도 커서, 발볼 러너에게는 오히려 기회가 될 수 있어요. <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 실측 근거를 확인하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 첫 카본화 후보로 어떤가요?</p>
+    <p class="faq-a">A. SC 엘리트 라인은 안정적인 라이드 덕에 카본 입문 후보로 자주 꼽힙니다. 다만 30만원대 레이스 전용화라는 점은 같으니, 입문 관점의 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>와 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 같은 대안까지 함께 보고 정하세요.</p>
+  </div>
+</div>
+
+<p><small>출처: 뉴발란스 공식 뉴스룸 프레스릴리스(2026-07-21) · Road Trail Run 첫 시착 리뷰(2026-07-21) · House of Heat 발매일 보도(2026-07-21) · 국내 언론 하반기 출시 계획 보도(2026-03) · SC 엘리트 v5 수치는 RunRepeat 랩 실측. 작성 2026년 7월 22일 — v6 랩 데이터·한국 정가 확정 시 갱신 예정입니다.</small></p>
+`,
+  },
+  {
     id: 'siheung-half-marathon-2026',
     slug: 'siheung-half-marathon-2026',
     title: '시흥 하프마라톤 접수 7월 22일 오픈 | 시화방조제 위를 달리는 직선 평지 — PB 노리기 좋은데 그늘이 없다',
