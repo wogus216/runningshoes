@@ -297,9 +297,7 @@
   html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: 0; transform: translateX(-50%) scaleX(.72); }
   html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 0; transform: translateY(12px); }
 
-  /* 쇼케이스 → 컬렉션 카드 연결(앵커) + 키보드 포커스 */
-  .shoe-link { display: block; color: inherit; text-decoration: none; border-radius: 12px; }
-  .shoe-link:focus-visible { outline: 2px solid var(--steel-hi); outline-offset: 6px; }
+  /* 앵커 이동은 부드럽게(피날레 '다시 보기' 등) */
   html { scroll-behavior: smooth; }
   @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 
@@ -336,29 +334,59 @@
     .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%); }
   }
 
-  /* ── 컬렉션(일반 HTML/CSS, Canvas 미사용) ── */
-  .collection {
-    background: var(--light-bg); color: #0f172a;
-    padding: 40px 24px 96px;
+  /* ── 피날레 '출발선'(라이트 시네마틱) — 쇼케이스와 역할 중복 없이 서사를 닫는다 ── */
+  .finale {
+    position: relative; background: var(--light-bg); color: #0b1220;
+    padding: 15vh 24px 17vh; overflow: hidden; text-align: center;
   }
-  .collection-inner { max-width: 1080px; margin: 0 auto; }
-  .closing-head { text-align: center; margin-bottom: 34px; }
-  .closing-kicker { font-family: var(--wordmark); font-weight: 800; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--scarlet); margin: 0 0 12px; }
-  .closing-title { font-size: clamp(22px, 4vw, 34px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 10px; }
-  .closing-note { font-size: 13.5px; color: #647890; margin: 0; }
-  .chips { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
-  .chip {
-    display: flex; align-items: baseline; gap: 10px;
-    padding: 14px 16px; background: #fff; border: 1px solid #e0e8f1; border-radius: 10px;
-    scroll-margin-top: 24vh;   /* 앵커 도착 시 여백 */
+  /* 원근 트랙 레인 — 밝아진 무대 바닥 */
+  .finale-track {
+    position: absolute; left: -24%; right: -24%; bottom: -8%; height: 68%;
+    background: repeating-linear-gradient(90deg, transparent 0 calc(12.5% - 2px), rgba(191,18,56,.15) calc(12.5% - 2px) 12.5%);
+    transform: perspective(620px) rotateX(58deg); transform-origin: bottom center;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,.85), transparent 88%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,.85), transparent 88%);
+    pointer-events: none;
   }
-  .chip:target { border-color: var(--scarlet); box-shadow: 0 0 0 2px rgba(191,18,56,.18); }
-  .chip-no { font-family: var(--wordmark); font-weight: 900; color: var(--scarlet); font-size: 13px; }
-  .chip-nm { font-weight: 700; font-size: 14px; }
-  .chip-pr { margin-left: auto; font-weight: 700; font-size: 13.5px; font-variant-numeric: tabular-nums; }
-  .chip-pr.tbd { color: #647890; font-weight: 600; font-size: 12px; }
-  @media (max-width: 900px) { .chips { grid-template-columns: repeat(2, 1fr); } }
-  @media (max-width: 560px) { .chips { grid-template-columns: 1fr; } }
+  .finale-inner { position: relative; max-width: 760px; margin: 0 auto; }
+  .finale-kicker { font-family: var(--wordmark); font-weight: 800; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; color: var(--scarlet); margin: 0 0 20px; }
+  .finale-title { font-size: clamp(26px, 5vw, 46px); font-weight: 800; letter-spacing: -.02em; line-height: 1.24; margin: 0; word-break: keep-all; }
+  .finale-title span { display: block; }
+  .finale-tape {
+    width: min(300px, 56%); height: 3px; margin: 30px auto 22px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--scarlet), var(--forge));
+  }
+  .finale-note { font-size: 14px; color: #647890; margin: 0 0 34px; word-break: keep-all; }
+  .finale-cta {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 13px 26px; border: 1px solid #b9c6d6; border-radius: 999px;
+    color: #0b1220; font-size: 13px; font-weight: 700; letter-spacing: .08em; text-decoration: none;
+    transition: border-color .3s ease, background .3s ease;
+  }
+  .finale-cta:hover, .finale-cta:focus-visible { border-color: var(--scarlet); background: rgba(191,18,56,.05); }
+  .finale-cta:focus-visible { outline: 2px solid var(--scarlet); outline-offset: 3px; }
+
+  /* 킨네틱 등장(IO 1회, no-JS는 항상 표시) */
+  html.js .finale .finale-kicker,
+  html.js .finale .finale-note,
+  html.js .finale .finale-cta { transition: opacity .6s ease, transform .6s cubic-bezier(.22,1,.36,1); }
+  html.js .finale .l1, html.js .finale .l2 { transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1); }
+  html.js .finale .l2 { transition-delay: .14s; }
+  html.js .finale .finale-tape { transition: transform .9s cubic-bezier(.22,1,.36,1) .4s; transform-origin: left center; }
+  html.js .finale .finale-note { transition-delay: .5s; }
+  html.js .finale .finale-cta { transition-delay: .64s; }
+  html.js .finale:not(.on) .finale-kicker { opacity: 0; transform: translateY(14px); }
+  html.js .finale:not(.on) .l1 { opacity: 0; transform: translateX(-26px); }
+  html.js .finale:not(.on) .l2 { opacity: 0; transform: translateX(26px); }
+  html.js .finale:not(.on) .finale-tape { transform: scaleX(0); }
+  html.js .finale:not(.on) .finale-note,
+  html.js .finale:not(.on) .finale-cta { opacity: 0; transform: translateY(12px); }
+  @media (prefers-reduced-motion: reduce) {
+    html.js .finale * { transition: none !important; }
+    html.js .finale:not(.on) .finale-kicker, html.js .finale:not(.on) .l1, html.js .finale:not(.on) .l2,
+    html.js .finale:not(.on) .finale-note, html.js .finale:not(.on) .finale-cta { opacity: 1; transform: none; }
+    html.js .finale:not(.on) .finale-tape { transform: none; }
+  }
 
   /* ── 러닝화 일대기(다크 타임라인 — 히어로 세계관 연장) ── */
   .legacy { background: var(--navy); color: var(--paper); padding: 64px 24px 88px; }
@@ -538,11 +566,7 @@
 
   /* 모바일 프리뷰 프레임 */
   body[data-view="mobile"] .track { width: 392px; margin: 0 auto; box-shadow: 0 0 0 1px rgba(238,242,246,.13); }
-  body[data-view="mobile"] .seam,
-  body[data-view="mobile"] .intro,
-  body[data-view="mobile"] .collection { width: 392px; margin-left: auto; margin-right: auto; }
-  body[data-view="mobile"] .intro,
-  body[data-view="mobile"] .collection { padding-left: 16px; padding-right: 16px; }
+  body[data-view="mobile"] .finale { width: 392px; margin-left: auto; margin-right: auto; padding-left: 16px; padding-right: 16px; }
 
   @media (max-width: 720px) {
     .director { left: 12px; right: 12px; width: auto; bottom: 12px; }
@@ -699,7 +723,7 @@
     </header>
     <ol class="showcase-grid">
       <li class="shoe-case" data-index="0" style="--case-index:0">
-        <a class="shoe-link" href="#product-infinite-rush">
+        <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
@@ -712,10 +736,9 @@
             <p>최상위 카본 러닝화</p>
             <span class="shoe-price">259,000원</span>
           </div>
-        </a>
       </li>
       <li class="shoe-case" data-index="1" style="--case-index:1">
-        <a class="shoe-link" href="#product-hyper-rush">
+        <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
@@ -728,10 +751,9 @@
             <p>하이퍼 카본 플레이트</p>
             <span class="shoe-price">219,000원</span>
           </div>
-        </a>
       </li>
       <li class="shoe-case" data-index="2" style="--case-index:2">
-        <a class="shoe-link" href="#product-duplex-gf">
+        <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
@@ -744,10 +766,9 @@
             <p>과내전 방지 안정화 러닝화</p>
             <span class="shoe-price">139,000원</span>
           </div>
-        </a>
       </li>
       <li class="shoe-case" data-index="3" style="--case-index:3">
-        <a class="shoe-link" href="#product-speed-rush-3">
+        <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
@@ -760,27 +781,21 @@
             <p>입문 러닝화</p>
             <span class="shoe-price tbd">2026.06 신형</span>
           </div>
-        </a>
       </li>
     </ol>
   </div>
   <div class="showcase-seam" aria-hidden="true"></div>
 </section>
 
-<section class="collection" id="collection">
-  <div class="collection-inner">
-    <!-- 클로징: 쇼케이스가 제품 프레젠테이션을 담당하므로 여긴 슬로건 에코 + 콤팩트 칩(상세 진입점) -->
-    <div class="closing-head">
-      <p class="closing-kicker">SPORTS for ALL, ALL for SPORTS</p>
-      <h2 class="closing-title">각자의 속도로, 오늘도 앞으로.</h2>
-      <p class="closing-note">프로스펙스 러닝 4종 — 실제 페이지에선 각 칩이 신발 상세로 연결됩니다.</p>
-    </div>
-    <div class="chips">
-      <div class="chip" id="product-infinite-rush"><span class="chip-no">01</span><span class="chip-nm">인피니트 러시</span><span class="chip-pr">259,000원</span></div>
-      <div class="chip" id="product-hyper-rush"><span class="chip-no">02</span><span class="chip-nm">하이퍼 러시</span><span class="chip-pr">219,000원</span></div>
-      <div class="chip" id="product-duplex-gf"><span class="chip-no">03</span><span class="chip-nm">듀플렉스 GF</span><span class="chip-pr">139,000원</span></div>
-      <div class="chip" id="product-speed-rush-3"><span class="chip-no">04</span><span class="chip-nm">스피드 러시 3</span><span class="chip-pr tbd">2026.06 신형</span></div>
-    </div>
+<!-- 피날레 '출발선' — 제품 반복 없이 서사를 닫는다: 벼려낸 진열이 끝나면, 밝아진 트랙 위에서 당신 차례 -->
+<section class="finale" id="collection" aria-label="마무리">
+  <div class="finale-track" aria-hidden="true"></div>
+  <div class="finale-inner">
+    <p class="finale-kicker">SPORTS for ALL, ALL for SPORTS</p>
+    <h2 class="finale-title"><span class="l1">벼려낸 건 신발이 아니라,</span><span class="l2">당신의 다음 러닝.</span></h2>
+    <div class="finale-tape" aria-hidden="true"></div>
+    <p class="finale-note">각자의 속도로, 오늘도 앞으로 — 실제 페이지에선 프로스펙스 러닝 컬렉션으로 이어집니다.</p>
+    <a class="finale-cta" href="#track">처음부터 다시 보기</a>
   </div>
 </section>
 
@@ -1151,7 +1166,8 @@
   });
 
   // 진입점
-  const goCollection = () => document.getElementById('collection').scrollIntoView({
+  // '컬렉션 보기'는 제품이 진열된 쇼케이스로(피날레는 서사의 마무리)
+  const goCollection = () => document.querySelector('.showcase').scrollIntoView({
     behavior: isReduced() ? 'auto' : 'smooth', block: 'start',
   });
   cta.addEventListener('click', goCollection);
@@ -1344,5 +1360,17 @@
   }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
   io.observe(sc);
   cases.forEach(c => io.observe(c));
+})();
+
+// ── 피날레 '출발선' — 진입 시 킨네틱 카피 + 결승 테이프(IO 1회) ──
+(() => {
+  'use strict';
+  const f = document.querySelector('.finale');
+  if (!f) return;
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { f.classList.add('on'); return; }
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { f.classList.add('on'); io.disconnect(); } });
+  }, { threshold: 0.4 });
+  io.observe(f);
 })();
 </script>
