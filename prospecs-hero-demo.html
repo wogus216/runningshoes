@@ -1,0 +1,1314 @@
+<title>PRO-SPECS Brand Hero — /brands/prospecs 시안</title>
+
+<style>
+  /* ─────────────────────────────────────────────
+     프로스펙스 히어로 — "열간 단조(Forge)" 컨셉.
+       나이키  = 차가운 크롬 · 우주적 암전 · 곡선 안으로 파고드는 카메라
+       프로스펙스 = 딥 네이비 · 붉게 달아오르는 내부 발열 · 위로 비상하는 이중 날개
+
+     [리팩터 라운드 — Phase 1~2]
+       Phase 1 성능 골격:
+         · 단일 RAF + dirty-render(변화 있을 때만 렌더, 유휴 시 완전 정지)
+         · IntersectionObserver로 히어로 밖이면 루프 중단
+         · DPR ≤ 1.5(품질 Low/Med/High = 1 / 1.25 / 1.5), 모바일 자동 강등
+         · 캔버스 내부 렌더폭 캡(MAX_RENDER_WIDTH) — CSS 크기와 버퍼 분리
+         · Path2D · 그라디언트 · glow 스프라이트 1회 생성 후 재사용
+         · shadowBlur 대신 오프스크린 glow 스프라이트로 발광
+       Phase 2 정적 구도:
+         · P=0.52 한 장면만으로 브랜드가 드러나게
+         · 표면을 '차가운 실버'가 아니라 '네이비 강철 + 상시 미열'로
+         · 스크림 상시 · 조형이 프레임에 담김
+
+     파티클(불티)·정교 타임라인 커브·마우스 패럴랙스는 Phase 3~4에서 추가.
+     ───────────────────────────────────────────── */
+  :root {
+    --navy: #0a0f1a;          /* 딥 네이비블랙 — 순흑과 분리 */
+    --steel-hi: #eef2f6;
+    --steel-mid: #a7b0bb;
+    --steel-lo: #566070;
+    --forge: #ff4d1c;         /* 달궈진 강철의 오렌지레드(물리적 발열색) */
+    --scarlet: #bf1238;       /* 프로스펙스 시그니처 레드 — prospecs.com 실측(웹 UI 전역 강조색) */
+    --paper: #ffffff;
+    --mute: #8892a0;
+    --light-bg: #eef3f8;
+
+    --display: Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif;
+    --ui: Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+    --wordmark: "Helvetica Neue", Arial, sans-serif;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--navy);
+    color: var(--paper);
+    font-family: var(--ui);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .sr-only {
+    position: absolute; width: 1px; height: 1px;
+    padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  /* 총 250vh = 핀 100vh + 스크롤 소비 1.5뷰포트 */
+  .track { position: relative; height: 250vh; }
+  .stage {
+    position: sticky; top: 0;
+    height: 100vh; overflow: hidden;
+    background: var(--navy);
+  }
+  canvas#film { display: block; width: 100%; height: 100%; }
+
+  /* ── 오버레이 ── */
+  .overlay {
+    position: absolute; inset: 0;
+    display: grid; place-items: center;
+    pointer-events: none;
+  }
+  .overlay-inner { text-align: center; padding: 0 24px; position: relative; z-index: 2; }
+
+  /* 상시 노출되는 상단 브랜드 라인 */
+  .topbrand {
+    position: absolute; top: 34px; left: 50%;
+    transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 7px;
+    white-space: nowrap; z-index: 2;
+  }
+  .wordmark {
+    font-family: var(--wordmark);
+    font-weight: 800; font-size: 15px;
+    letter-spacing: .34em; text-transform: uppercase;
+    color: var(--paper);
+  }
+  .eyebrow {
+    font-family: var(--ui);
+    font-size: 10.5px; font-weight: 600;
+    letter-spacing: .34em; text-transform: uppercase;
+    color: var(--mute);
+  }
+
+  .claim {
+    font-family: var(--display);
+    font-weight: 900;
+    font-size: clamp(3rem, 12.5vw, 10rem);
+    line-height: .96;
+    letter-spacing: -.02em;
+    text-wrap: balance;
+    margin: 0;
+    opacity: 0;
+    filter: blur(14px);
+  }
+  .claim .sub {
+    display: block;
+    font-family: var(--ui);
+    font-weight: 600;
+    font-size: clamp(.85rem, 2.6vw, 1.15rem);
+    letter-spacing: .04em;
+    line-height: 1.4;
+    color: var(--steel-mid);
+    margin-top: clamp(14px, 2.4vh, 22px);
+    filter: none;
+  }
+
+  .cta {
+    pointer-events: auto;
+    margin-top: clamp(24px, 4.5vh, 46px);
+    display: inline-flex; align-items: center; gap: 14px;
+    padding: 15px 30px 15px 32px;
+    background: transparent;
+    border: 1px solid rgba(238,242,246,.34);
+    border-radius: 999px;
+    color: var(--paper);
+    font-family: var(--ui);
+    font-size: 12px; font-weight: 700;
+    letter-spacing: .16em;
+    cursor: pointer;
+    opacity: 0;
+    transition: background .35s ease, border-color .35s ease, gap .35s ease;
+  }
+  .cta:hover, .cta:focus-visible { background: rgba(238,242,246,.09); border-color: rgba(238,242,246,.7); gap: 20px; }
+  .cta:focus-visible { outline: 2px solid var(--forge); outline-offset: 4px; }
+  .cta .arr { display: block; width: 18px; height: 1px; background: currentColor; position: relative; }
+  .cta .arr::after {
+    content: ""; position: absolute; right: 0; top: -3px;
+    width: 7px; height: 7px;
+    border-top: 1px solid currentColor; border-right: 1px solid currentColor;
+    transform: rotate(45deg);
+  }
+
+  /* 상시 '컬렉션 바로가기' 앵커 */
+  .enter-link {
+    position: absolute; bottom: 34px; left: 50%;
+    transform: translateX(-50%);
+    pointer-events: auto;
+    display: flex; flex-direction: column; align-items: center; gap: 9px;
+    font-size: 10px; letter-spacing: .28em; text-transform: uppercase;
+    color: var(--mute);
+    background: none; border: 0; cursor: pointer;
+    font-family: var(--ui);
+    transition: color .3s ease;
+  }
+  .enter-link:hover, .enter-link:focus-visible { color: var(--paper); }
+  .enter-link:focus-visible { outline: 1px solid var(--forge); outline-offset: 4px; }
+  .enter-link .rail { width: 1px; height: 40px; background: linear-gradient(var(--mute), transparent); }
+
+  /* ── 접합: 브랜드 소개(SEO 실텍스트) ── */
+  .seam { height: 22vh; background: linear-gradient(var(--navy), var(--light-bg)); }
+  .intro {
+    background: var(--light-bg); color: #0b1220;
+    padding: 4px 24px 8px;
+  }
+  .intro-inner { max-width: 760px; margin: 0 auto; text-align: center; }
+  .intro .kicker {
+    font-size: 11px; font-weight: 700; letter-spacing: .2em;
+    text-transform: uppercase; color: var(--scarlet); margin: 0 0 12px;
+  }
+  .intro p {
+    font-size: 15.5px; line-height: 1.75; color: #33404f; margin: 0;
+    word-break: keep-all;
+  }
+  .intro b { color: #0b1220; font-weight: 700; }
+
+  /* ── 브랜드 선언(About 차용, 다크) ── */
+  .creed { position: relative; background: var(--navy); color: var(--paper); padding: 15vh 24px 16vh; overflow: hidden; }
+  .creed-ambient {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+    width: min(1100px, 90vw); height: 900px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,77,28,.14), rgba(191,18,56,0) 66%); pointer-events: none;
+  }
+  .creed-inner { position: relative; max-width: 840px; margin: 0 auto; text-align: center; }
+  .creed-eyebrow { font-size: 12px; font-weight: 700; letter-spacing: .28em; text-transform: uppercase; color: var(--forge); margin: 0 0 52px; }
+  .creed-lines { list-style: none; margin: 0 0 60px; padding: 0; display: flex; flex-direction: column; gap: 24px; }
+  .creed-lines li {
+    font-size: clamp(20px, 3.6vw, 34px); font-weight: 700; line-height: 1.32; letter-spacing: -.01em;
+    color: var(--steel-mid); word-break: keep-all;
+    opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1);
+  }
+  .creed-lines li.on { opacity: 1; transform: none; color: var(--paper); }
+  .creed-all {
+    font-size: clamp(24px, 4.6vw, 46px); font-weight: 800; letter-spacing: -.02em; line-height: 1.2;
+    margin: 0 0 72px; color: var(--paper);
+    opacity: 0; transform: translateY(26px); transition: opacity .8s ease, transform .8s ease;
+  }
+  .creed-all.on { opacity: 1; transform: none; }
+  .creed-slogan {
+    font-family: var(--wordmark); font-size: clamp(30px, 6.4vw, 68px); font-weight: 900; line-height: 1.04;
+    letter-spacing: .01em; margin: 0; color: var(--forge);
+    text-shadow: 0 0 44px rgba(255,77,28,.45);
+    opacity: 0; transform: scale(.92); transition: opacity 1s ease, transform 1s cubic-bezier(.2,.7,.2,1);
+  }
+  .creed-slogan.on { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .creed-lines li, .creed-all, .creed-slogan { opacity: 1; transform: none; transition: none; }
+  }
+
+  /* ── 시네마틱 쇼케이스(다크 무대, Phase 1 정적) ── */
+  .showcase { position: relative; background: var(--navy); color: var(--paper); padding: 12vh 24px 0; overflow: hidden; }
+  .showcase-ambient {
+    position: absolute; left: 50%; top: 46%; transform: translate(-50%, -50%);
+    width: min(1200px, 94vw); height: 820px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,77,28,.1), rgba(191,18,56,0) 64%); pointer-events: none;
+  }
+  .showcase-inner { position: relative; max-width: 1120px; margin: 0 auto; }
+  .showcase-header { text-align: center; margin-bottom: 7vh; }
+  .showcase-kicker { font-size: 12px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--forge); margin: 0 0 12px; }
+  .showcase-title { font-size: clamp(24px, 4.6vw, 40px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 12px; }
+  .showcase-description { font-size: 15px; color: var(--steel-mid); margin: 0; }
+
+  .showcase-grid { list-style: none; margin: 0; padding: 0 0 12vh; display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
+  .shoe-case { position: relative; }
+  .shoe-stage { position: relative; height: 196px; }
+
+  /* 스포트라이트: 공연 조명이 아니라 제품 뒤에서 켜지는 발열광 */
+  .shoe-spot {
+    position: absolute; left: 50%; top: 50%; transform: translate(-50%, -46%);
+    width: 210px; height: 210px; border-radius: 50%;
+    background: radial-gradient(ellipse at 50% 62%, rgba(255,77,28,.28) 0%, rgba(191,18,56,.14) 28%, rgba(191,18,56,0) 68%);
+  }
+  /* 진열대: 낮고 단단한 무광 강철 받침 */
+  .shoe-pedestal {
+    position: absolute; left: 50%; bottom: 30px; transform: translateX(-50%);
+    width: 170px; height: 13px; border-radius: 3px;
+    background: linear-gradient(#242c37, #141a22);
+    box-shadow: inset 0 1px 0 rgba(255,120,60,.25);   /* 상단 발열선 */
+  }
+  .shoe-shadow {
+    position: absolute; left: 50%; bottom: 27px; transform: translateX(-50%);
+    width: 152px; height: 18px; border-radius: 50%;
+    background: radial-gradient(ellipse, rgba(0,0,0,.55), rgba(0,0,0,0) 70%); opacity: .5;
+  }
+
+  /*
+    Conceptual running-shoe silhouette for demo use only.
+    Replace this placeholder with the approved product image
+    when integrating into the production site.
+  */
+  /* 러닝화 측면: 단일 clip-path 윤곽 + 세로 그라디언트(아래 발열 미드솔 / 위 강철 갑피) */
+  .shoe-figure {
+    position: absolute; left: 50%; bottom: 38px; transform: translateX(-50%); width: 202px; height: 90px;
+    background: linear-gradient(to top, var(--scarlet) 0%, var(--forge) 18%, #3a4450 26%, var(--steel-mid) 58%, var(--steel-lo) 100%);
+    clip-path: polygon(2% 62%, 12% 50%, 30% 34%, 46% 26%, 56% 32%, 62% 36%, 70% 30%, 80% 30%, 90% 40%, 96% 58%, 94% 96%, 88% 100%, 10% 100%, 3% 88%);
+  }
+  /* 제품별 미세 차이(정확한 외형 복제 아님) */
+  .shoe-figure.sf-infinite { width: 214px; height: 84px; }   /* 길고 낮은 레이싱 */
+  .shoe-figure.sf-duplex { height: 98px; }                    /* 미드솔 두께 강조(안정화) */
+  .shoe-figure.sf-speed { width: 182px; }                     /* 단정한 입문형 */
+
+  .shoe-meta { text-align: center; margin-top: 20px; }
+  .shoe-number { font-family: var(--wordmark); font-size: 12px; font-weight: 800; letter-spacing: .18em; color: var(--steel-lo); }
+  .shoe-meta h3 { font-size: 17px; font-weight: 700; color: var(--paper); margin: 8px 0 4px; }
+  .shoe-meta p { font-size: 13px; color: var(--steel-mid); margin: 0 0 9px; word-break: keep-all; }
+  .shoe-price { font-family: var(--wordmark); font-size: 15px; font-weight: 800; color: var(--paper); font-variant-numeric: tabular-nums; }
+  .shoe-price.tbd { color: var(--steel-mid); font-weight: 600; font-size: 13px; }
+
+  /* 무대 → 라이트 컬렉션 전환 */
+  .showcase-seam { height: 24vh; background: linear-gradient(var(--navy), var(--light-bg)); }
+
+  /* ── Phase 2: 순차 점등(조명 → 신발 → 정보) ──
+     초기 숨김은 html.js에서만(no-JS fallback). 등장은 한 번만(IO에서 unobserve). */
+  html.js .showcase .showcase-header {
+    transition: opacity .6s cubic-bezier(.22,1,.36,1), transform .6s cubic-bezier(.22,1,.36,1);
+  }
+  html.js .showcase:not(.is-revealed) .showcase-header { opacity: 0; transform: translateY(24px); }
+
+  html.js .shoe-case .shoe-spot {
+    transition: opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
+    transition-delay: calc(300ms + var(--case-index) * 260ms);
+  }
+  html.js .shoe-case .shoe-figure {
+    transition: opacity .85s cubic-bezier(.22,1,.36,1), transform .85s cubic-bezier(.22,1,.36,1);
+    transition-delay: calc(440ms + var(--case-index) * 260ms);   /* 조명보다 140ms 늦게 */
+  }
+  html.js .shoe-case .shoe-shadow {
+    transition: opacity .85s ease, transform .85s cubic-bezier(.22,1,.36,1);
+    transition-delay: calc(440ms + var(--case-index) * 260ms);
+  }
+  html.js .shoe-case .shoe-meta {
+    transition: opacity .55s ease, transform .55s cubic-bezier(.22,1,.36,1);
+    transition-delay: calc(620ms + var(--case-index) * 260ms);   /* 제품 안정 후 정보 */
+  }
+  /* 대기 상태: 조명 꺼짐 · 실루엣 거의 안 보임 · 정보 숨김 */
+  html.js .shoe-case:not(.is-lit) .shoe-spot { opacity: 0; transform: translate(-50%, -46%) scale(.84); }
+  html.js .shoe-case:not(.is-lit) .shoe-figure { opacity: 0; transform: translateX(-50%) translateY(28px) scale(.94); }
+  html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: 0; transform: translateX(-50%) scaleX(.72); }
+  html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 0; transform: translateY(12px); }
+
+  /* 진열 완료 후 약한 hover(데스크톱) — 큰 확대·회전 금지 */
+  @media (hover: hover) {
+    .shoe-case.is-lit .shoe-figure { transition: transform .35s ease, opacity .85s ease; }
+    .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%) translateY(-4px); }
+    .shoe-case.is-lit:hover .shoe-spot { opacity: 1.0; }
+    .shoe-case.is-lit:hover .shoe-pedestal { box-shadow: inset 0 1px 0 rgba(255,120,60,.5); }
+  }
+
+  @media (max-width: 900px) { .showcase-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 26px; } }
+  @media (max-width: 560px) {
+    .showcase-grid { grid-template-columns: 1fr; gap: 44px; }
+    .shoe-stage { height: 214px; }
+    /* 모바일: 한 켤레씩 진입하므로 그룹 stagger 대신 짧은 고정 시차 */
+    html.js .shoe-case .shoe-spot { transition-delay: 0ms; }
+    html.js .shoe-case .shoe-figure, html.js .shoe-case .shoe-shadow { transition-delay: 140ms; }
+    html.js .shoe-case .shoe-meta { transition-delay: 320ms; }
+  }
+
+  /* reduced motion: 쇼케이스 완전 정적(숨김·시차·전환 전부 무효) */
+  @media (prefers-reduced-motion: reduce) {
+    html.js .showcase .showcase-header,
+    html.js .shoe-case .shoe-spot,
+    html.js .shoe-case .shoe-figure,
+    html.js .shoe-case .shoe-shadow,
+    html.js .shoe-case .shoe-meta { transition: none; }
+    html.js .showcase:not(.is-revealed) .showcase-header { opacity: 1; transform: none; }
+    html.js .shoe-case:not(.is-lit) .shoe-spot { opacity: 1; transform: translate(-50%, -46%); }
+    html.js .shoe-case:not(.is-lit) .shoe-figure { opacity: 1; transform: translateX(-50%); }
+    html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: .5; transform: translateX(-50%); }
+    html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 1; transform: none; }
+    .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%); }
+  }
+
+  /* ── 컬렉션(일반 HTML/CSS, Canvas 미사용) ── */
+  .collection {
+    background: var(--light-bg); color: #0f172a;
+    padding: 40px 24px 96px;
+  }
+  .collection-inner { max-width: 1080px; margin: 0 auto; }
+  .col-head {
+    display: flex; align-items: baseline; justify-content: space-between;
+    gap: 20px; flex-wrap: wrap;
+    padding-bottom: 18px; margin-bottom: 26px;
+    border-bottom: 1px solid #d3ddea;
+  }
+  .col-head h2 { font-size: 22px; font-weight: 700; margin: 0; letter-spacing: -.01em; }
+  .col-head .note { font-size: 12.5px; color: #647890; }
+
+  .rows { display: flex; flex-direction: column; gap: 10px; }
+  .row {
+    display: grid; grid-template-columns: 42px 1fr auto;
+    align-items: center; gap: 18px;
+    padding: 16px 18px;
+    background: #fff; border: 1px solid #e0e8f1; border-radius: 10px;
+  }
+  .rank { font-family: var(--wordmark); font-size: 21px; font-weight: 900; color: var(--scarlet); text-align: center; }
+  .row .nm { font-size: 15px; font-weight: 650; }
+  .row .meta { font-size: 12.5px; color: #647890; margin-top: 3px; }
+  .price { font-size: 14px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .price.tbd { color: #647890; font-weight: 600; font-size: 12.5px; }
+
+  /* ── 러닝화 일대기(다크 타임라인 — 히어로 세계관 연장) ── */
+  .legacy { background: var(--navy); color: var(--paper); padding: 64px 24px 88px; }
+  .legacy-inner { max-width: 760px; margin: 0 auto; }
+  .legacy .kicker { font-size: 11px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--forge); margin: 0 0 14px; }
+  .legacy-title { font-size: clamp(24px, 5vw, 38px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 18px; line-height: 1.15; }
+  .legacy-lead { font-size: 15px; line-height: 1.78; color: var(--steel-mid); margin: 0 0 50px; word-break: keep-all; }
+  .legacy-lead b { color: var(--paper); font-weight: 600; }
+
+  /* 시네마틱 타임라인 (Phase 1~2): 스크롤 발열 레일 + 불꽃 헤드 + 노드 등장 */
+  .legacy-scene { position: relative; padding-left: 34px; }
+  .timeline { list-style: none; margin: 0; padding: 0; position: relative; z-index: 1; }
+
+  /* 배경 발열광 — 활성 장면 뒤에서 화면이 달아오른다(heat-strength 연동, 1997엔 사그라듦) */
+  .legacy-ambient { position: sticky; top: 0; height: 0; z-index: 0; pointer-events: none; }
+  .legacy-ambient::before {
+    content: ""; position: absolute; left: 26%; top: 44vh; transform: translate(-50%, -50%);
+    width: min(1300px, 96vw); height: 1000px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255,77,28,.34) 0%, rgba(191,18,56,.18) 30%, rgba(191,18,56,0) 64%);
+    opacity: var(--heat-strength, 1); transition: opacity .4s ease;
+  }
+  /* 대장간 불티 — 화면 하단에서 위로 떠오른다(CSS, transform/opacity만) */
+  .legacy-embers { position: sticky; top: 0; height: 0; z-index: 0; pointer-events: none; }
+  .legacy-embers span {
+    position: absolute; top: 92vh; width: 3px; height: 3px; border-radius: 50%;
+    background: radial-gradient(circle, #ff8a48 0%, rgba(255,77,28,0) 72%);
+    opacity: 0; animation: emberFloat linear infinite;
+  }
+  @keyframes emberFloat {
+    0% { transform: translate3d(0,0,0) scale(.5); opacity: 0; }
+    12% { opacity: .75; }
+    82% { opacity: .3; }
+    100% { transform: translate3d(28px,-96vh,0) scale(1.15); opacity: 0; }
+  }
+  .legacy-embers span:nth-child(1) { left: 7%;  animation-duration: 9.5s;  animation-delay: 0s;   }
+  .legacy-embers span:nth-child(2) { left: 13%; animation-duration: 7.2s;  animation-delay: 2.4s; width: 2px; height: 2px; }
+  .legacy-embers span:nth-child(3) { left: 5%;  animation-duration: 11s;   animation-delay: 4.1s; }
+  .legacy-embers span:nth-child(4) { left: 18%; animation-duration: 8.4s;  animation-delay: 1.2s; width: 4px; height: 4px; }
+  .legacy-embers span:nth-child(5) { left: 10%; animation-duration: 10.5s; animation-delay: 5.6s; }
+  .legacy-embers span:nth-child(6) { left: 22%; animation-duration: 7.8s;  animation-delay: 3.3s; width: 2px; height: 2px; }
+  .legacy-embers span:nth-child(7) { left: 3%;  animation-duration: 12s;   animation-delay: 6.8s; }
+  .legacy-embers span:nth-child(8) { left: 26%; animation-duration: 9s;    animation-delay: 0.7s; }
+  .legacy-embers span:nth-child(9) { left: 15%; animation-duration: 8s;    animation-delay: 7.5s; width: 4px; height: 4px; }
+  .legacy-embers span:nth-child(10){ left: 30%; animation-duration: 10s;   animation-delay: 3.9s; }
+
+  /* 활성 노드 뒤 발열 패널 — 중앙 연도 주변이 붉게 달아오른다(focus 연동) */
+  .timeline-item::before {
+    content: ""; position: absolute; left: -46px; right: -18px; top: -16px; bottom: 4px; z-index: -1;
+    background: radial-gradient(ellipse 62% 100% at 6% 42%, rgba(255,77,28,.12), rgba(255,77,28,0) 70%);
+    opacity: var(--focus, 0); border-radius: 16px; pointer-events: none;
+    transition: opacity .35s ease;
+  }
+
+  /* 1997 소등: 화면 가장자리가 어둠에 잠긴다(blackout 연동) */
+  .legacy-blackout { position: sticky; top: 0; height: 0; z-index: 0; pointer-events: none; }
+  .legacy-blackout::before {
+    content: ""; position: absolute; left: 50%; top: 40vh; transform: translate(-50%, -50%);
+    width: 220vw; height: 170vh;
+    background: radial-gradient(circle, rgba(5,8,14,0) 26%, rgba(5,8,14,.55) 60%, rgba(5,8,14,.82) 100%);
+    opacity: var(--blackout, 0); transition: opacity .4s ease;
+  }
+
+  /* 대형 활성 연도 고스트(배경, DOM 1개) — 화면 중앙 뒤에서 sticky */
+  .legacy-year-stage { position: sticky; top: 20vh; height: 0; z-index: 0; text-align: center; pointer-events: none; overflow: visible; }
+  .legacy-year-ghost {
+    display: inline-block; font-family: var(--wordmark); font-weight: 900;
+    font-size: clamp(160px, 32vw, 440px); line-height: 1; letter-spacing: -.03em;
+    color: var(--steel-mid); opacity: .11; white-space: nowrap;
+    --ghost-x: 0px; --ghost-y: 0px;
+    transform: translate3d(var(--ghost-x), var(--ghost-y), 0);
+    transition: opacity .4s ease, transform .4s ease, filter .4s ease;
+  }
+
+  /* --revealed: 등장(IO) / --focus: 중앙 근접(0~1) / --lit: 지나옴=점화(0~1) */
+  .timeline-item {
+    position: relative; padding: 0 0 clamp(44px, 7vh, 92px) 0; --focus: 0; --revealed: 0; --lit: 0;
+    opacity: calc(var(--revealed) * (0.2 + var(--focus) * 0.8));
+    transform: translate3d(0, calc((1 - var(--revealed)) * 42px), 0) scale(calc(0.975 + var(--focus) * 0.06));
+    transition: opacity .55s ease, transform .4s cubic-bezier(.2,.7,.2,1);
+  }
+  .timeline-item:last-child { padding-bottom: 0; }
+  .timeline-item.is-revealed { --revealed: 1; }
+
+  /* 선(레일)을 없애고 dot이 지나올 때 불이 들어온다: 꺼진 빈 원 → 붉게 점화(+focus 발광) */
+  .timeline-dot {
+    position: absolute; left: -35px; top: 3px; width: 18px; height: 18px; border-radius: 50%;
+    background: var(--navy);
+    border: 2px solid color-mix(in srgb, var(--steel-lo), var(--forge) calc(var(--lit, 0) * 100%));
+    box-shadow: 0 0 calc(var(--lit, 0) * (7px + var(--focus, 0) * 26px)) rgba(255,77,28, calc(var(--lit, 0) * (0.35 + var(--focus, 0) * 0.5)));
+    transition: box-shadow .4s ease, border-color .4s ease;
+  }
+  .timeline-dot::before {   /* 점화 코어 — lit로 채워지고 focus로 밝아진다 */
+    content: ""; position: absolute; inset: 2px; border-radius: 50%;
+    background: radial-gradient(circle, var(--forge), var(--scarlet));
+    opacity: calc(var(--lit, 0) * (0.55 + var(--focus, 0) * 0.45));
+    transform: scale(calc(0.5 + var(--lit, 0) * 0.5));
+    transition: opacity .4s ease, transform .4s ease;
+  }
+  /* 1997 소등: 지나와도 불이 회색으로만 들어온다 */
+  .timeline-item.dim .timeline-dot { border-color: var(--steel-lo); box-shadow: none; }
+  .timeline-item.dim .timeline-dot::before { background: var(--steel-lo); opacity: calc(var(--lit, 0) * 0.4); }
+
+  .timeline-year {
+    font-family: var(--wordmark); font-size: 19px; font-weight: 900; color: var(--forge); letter-spacing: .02em;
+    text-shadow: 0 0 calc(var(--focus, 0) * 24px) rgba(255,77,28, calc(var(--focus, 0) * 0.6));
+  }
+  .timeline-item.dim .timeline-year { color: var(--steel-lo); text-shadow: none; }
+  .timeline-body h3 {
+    font-size: 16px; font-weight: 700; margin: 3px 0 6px; color: var(--paper);
+    text-shadow: 0 0 calc(var(--focus, 0) * 18px) rgba(255,244,234, calc(var(--focus, 0) * 0.3));
+  }
+  .timeline-body p { font-size: 14px; line-height: 1.65; color: var(--steel-mid); margin: 0; word-break: keep-all; }
+  .timeline-est { display: inline-block; margin-left: 7px; font-size: 10px; font-weight: 700; letter-spacing: .04em; color: var(--steel-lo); border: 1px solid var(--steel-lo); border-radius: 4px; padding: 1px 5px; vertical-align: middle; }
+
+  @media (prefers-reduced-motion: reduce) {
+    .timeline-item { opacity: 1; transform: none; transition: none; }
+    .timeline-dot { border-color: var(--forge); box-shadow: 0 0 9px rgba(255,77,28,.4); }
+    .timeline-dot::before { opacity: .7; transform: scale(1); }
+    .timeline-item.dim .timeline-dot { border-color: var(--steel-lo); box-shadow: none; }
+    .timeline-item.dim .timeline-dot::before { background: var(--steel-lo); opacity: .4; }
+    .legacy-year-ghost { transition: none; transform: none; filter: none; }
+    .legacy-embers { display: none; }
+    .timeline-item::before { opacity: 0; }
+  }
+
+  /* ── 디렉터 패널 ── */
+  .director {
+    position: fixed; left: 20px; bottom: 20px; z-index: 40;
+    width: 278px; padding: 14px;
+    background: rgba(9,12,18,.86);
+    border: 1px solid rgba(238,242,246,.14);
+    border-radius: 10px;
+    backdrop-filter: blur(14px);
+    font-size: 11px;
+  }
+  .director h3 {
+    margin: 0 0 11px; font-size: 9.5px; font-weight: 700;
+    letter-spacing: .24em; text-transform: uppercase; color: var(--mute);
+    display: flex; justify-content: space-between;
+  }
+  .director h3 .pct { color: var(--forge); font-variant-numeric: tabular-nums; }
+  .acts { display: flex; flex-direction: column; gap: 3px; margin-bottom: 12px; }
+  .act {
+    display: grid; grid-template-columns: 34px 1fr;
+    align-items: center; gap: 9px;
+    padding: 6px 7px; border-radius: 5px;
+    background: none; border: 0; width: 100%;
+    color: var(--mute); font-family: var(--ui); font-size: 11px;
+    text-align: left; cursor: pointer;
+    transition: background .18s, color .18s;
+  }
+  .act:hover { background: rgba(238,242,246,.07); color: var(--paper); }
+  .act:focus-visible { outline: 1px solid var(--forge); outline-offset: 1px; }
+  .act[data-on="1"] { background: rgba(255,77,28,.16); color: var(--paper); }
+  .act .tc { font-variant-numeric: tabular-nums; opacity: .65; letter-spacing: .04em; }
+
+  .panel-row { padding-top: 11px; border-top: 1px solid rgba(238,242,246,.12); }
+  .panel-label { font-size: 9px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--mute); margin-bottom: 6px; }
+  .seg { display: flex; gap: 4px; }
+  .seg button {
+    flex: 1; padding: 6px 4px; border-radius: 5px;
+    background: rgba(238,242,246,.06); border: 1px solid transparent;
+    color: var(--mute); font-family: var(--ui); font-size: 10px; font-weight: 600;
+    letter-spacing: .04em; cursor: pointer;
+  }
+  .seg button[data-on="1"] { background: var(--paper); color: #0a0d12; }
+  .seg button:focus-visible { outline: 1px solid var(--forge); outline-offset: 1px; }
+  .toggles { display: flex; gap: 6px; margin-top: 8px; }
+  .toggles .tg { flex: 1; }
+  .stats {
+    display: flex; justify-content: space-between; gap: 8px;
+    margin-top: 11px; padding-top: 10px;
+    border-top: 1px solid rgba(238,242,246,.12);
+    font-size: 10px; color: var(--mute); font-variant-numeric: tabular-nums;
+  }
+  .stats b { color: var(--steel-mid); font-weight: 600; }
+
+  /* 모바일 프리뷰 프레임 */
+  body[data-view="mobile"] .track { width: 392px; margin: 0 auto; box-shadow: 0 0 0 1px rgba(238,242,246,.13); }
+  body[data-view="mobile"] .seam,
+  body[data-view="mobile"] .intro,
+  body[data-view="mobile"] .collection { width: 392px; margin-left: auto; margin-right: auto; }
+  body[data-view="mobile"] .intro,
+  body[data-view="mobile"] .collection { padding-left: 16px; padding-right: 16px; }
+
+  @media (max-width: 720px) {
+    .director { left: 12px; right: 12px; width: auto; bottom: 12px; }
+    .acts { display: grid; grid-template-columns: 1fr 1fr; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .cta { transition: none; }
+  }
+</style>
+
+<!-- no-JS fallback: JS가 있을 때만 쇼케이스 초기 숨김이 적용된다(스크립트 오류 시 제품 정보 항상 노출) -->
+<script>document.documentElement.classList.add('js');</script>
+
+<div class="track" id="track">
+  <div class="stage" id="stage">
+    <canvas id="film"></canvas>
+
+    <div class="overlay">
+      <div class="topbrand">
+        <span class="eyebrow" id="eyebrow">Running · 대한민국 오리지널 1981</span>
+      </div>
+
+      <div class="overlay-inner">
+        <h1 class="claim" id="claim">각자의 속도로,<br>함께 앞으로<span class="sub">SPORTS for ALL, ALL for SPORTS</span></h1>
+        <button class="cta" id="cta" type="button">
+          러닝 컬렉션 보기 <span class="arr" aria-hidden="true"></span>
+        </button>
+      </div>
+
+      <button class="enter-link" id="enter" type="button">
+        <span class="rail"></span>
+        컬렉션 바로가기
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- 러닝화 일대기(다크) — 히어로 세계관을 아래로 잇는 계보 타임라인.
+     불이 꺼졌다(부도) → 다시 벼렸다(재건) → 붉게 달아올랐다(카본 귀환) = 열간 단조 서사 -->
+<section class="legacy" aria-labelledby="legacy-title">
+  <div class="legacy-inner">
+    <p class="kicker">대한민국 오리지널 · 벼려온 시간</p>
+    <h2 class="legacy-title" id="legacy-title">1978 → 지금, 프로스펙스 러닝화 일대기</h2>
+    <p class="legacy-lead">
+      <b>프로스펙스</b>는 1981년 시작된 대한민국 최초의 자체 스포츠 브랜드입니다.
+      이름은 <b>Professional</b>과 <b>Specifications</b>의 결합에서 태어났고,
+      전성기와 몰락, 그리고 재건을 지나 지금 다시 러닝 트랙 위에 섰습니다 —
+      44년을 벼려온 강철의 계보입니다.
+    </p>
+    <div class="legacy-scene">
+      <div class="legacy-ambient" aria-hidden="true"></div>
+      <div class="legacy-blackout" aria-hidden="true"></div>
+      <div class="legacy-embers" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      <div class="legacy-year-stage" aria-hidden="true"><span class="legacy-year-ghost">1978</span></div>
+      <ol class="timeline">
+        <li class="timeline-item" data-year="1978">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">1978</span>
+          <div class="timeline-body"><h3>SPECS 마라톤 220</h3>
+          <p>보스턴에서 태어난 마라톤화. 러너 데이브 맥길리브레이가 미 대륙을 횡단하며 신었다 — 프로스펙스 러닝화 계보의 원점.</p></div>
+        </li>
+        <li class="timeline-item" data-year="1981">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">1981</span>
+          <div class="timeline-body"><h3>프로스펙스 창립</h3>
+          <p>국제상사가 SPECS를 들여와 대한민국 최초의 자체 스포츠 브랜드를 세웠다. 날아오르는 학을 담은 F로고가 이때 태어났다.</p></div>
+        </li>
+        <li class="timeline-item" data-year="1988">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">1988</span>
+          <div class="timeline-body"><h3>서울올림픽 공식 후원</h3>
+          <p>미국 러너스월드 5성 등급, 6대 스포츠화 선정. 세계가 한국 러닝화를 주목한 전성기.</p></div>
+        </li>
+        <li class="timeline-item dim" data-year="1997">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">1997</span>
+          <div class="timeline-body"><h3>외환위기, 그리고 침묵</h3>
+          <p>부도와 법정관리. 러닝화의 불이 꺼졌다. 이후 오랫동안 워킹화·농구화로 명맥만 이었다.</p></div>
+        </li>
+        <li class="timeline-item" data-year="2007">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">2007</span>
+          <div class="timeline-body"><h3>LS, 다시 벼릴 준비</h3>
+          <p>LS그룹이 프로스펙스를 인수(2008 LS네트웍스). 워킹화로 사업을 재건하며 때를 기다렸다.</p></div>
+        </li>
+        <li class="timeline-item" data-year="2022">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">2022</span>
+          <div class="timeline-body"><h3>마라톤 220 복각</h3>
+          <p>44년 전 그 신발을 되살렸다. 블루·옐로우 각 100켤레 한정, 응모 약 5천 명 — 완판. 러닝 헤리티지의 귀환 신호탄.</p></div>
+        </li>
+        <li class="timeline-item" data-year="2024">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">2024</span>
+          <div class="timeline-body"><h3>하이퍼 러시 — 카본으로 귀환</h3>
+          <p>하이퍼 카본 플레이트 탑재. 프로스펙스가 본격 카본 레이싱화로 러닝 트랙에 돌아왔다.</p></div>
+        </li>
+        <li class="timeline-item" data-year="2025">
+          <span class="timeline-dot" aria-hidden="true"></span>
+          <span class="timeline-year">2025–26<span class="timeline-est">현재</span></span>
+          <div class="timeline-body"><h3>다시, 우리의 속도</h3>
+          <p>플래그십 <b>인피니트 러시</b>(PEBA·카본), 안정화 <b>듀플렉스 GF</b>(G-FRAME), 입문 <b>스피드 러시 3</b> — 현행 러닝 라인이 완성됐다.</p></div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- 브랜드 선언(About 차용) — 각 문장이 스크롤 따라 떠오르고 슬로건이 발광 -->
+<section class="creed" aria-label="프로스펙스 브랜드 선언">
+  <div class="creed-ambient" aria-hidden="true"></div>
+  <div class="creed-inner">
+    <p class="creed-eyebrow">Sports is for everyone</p>
+    <ol class="creed-lines">
+      <li>이불 밖을 나와 오늘도 달리는 당신</li>
+      <li>일상 속 도전을 겸허히 받아들이는 당신</li>
+      <li>끈질기게 ‘우리’의 힘을 믿는 당신</li>
+      <li>자신만의 루틴으로 안식처를 만드는 당신</li>
+    </ol>
+    <p class="creed-all">‘모두’는 바로, 여러분 모두.</p>
+    <p class="creed-slogan">SPORTS for ALL,<br>ALL for SPORTS</p>
+  </div>
+</section>
+
+<!-- 시네마틱 쇼케이스(다크 무대) — 선언 → 신발 진열 → 라이트 컬렉션 -->
+<section class="showcase" aria-labelledby="showcase-title">
+  <div class="showcase-ambient" aria-hidden="true"></div>
+  <div class="showcase-inner">
+    <header class="showcase-header">
+      <p class="showcase-kicker">벼려낸 네 켤레</p>
+      <h2 id="showcase-title" class="showcase-title">지금, 프로스펙스 러닝</h2>
+      <p class="showcase-description">각자의 속도와 목적을 위해 완성된 네 가지 러닝.</p>
+    </header>
+    <ol class="showcase-grid">
+      <li class="shoe-case" data-index="0" style="--case-index:0">
+        <div class="shoe-stage" aria-hidden="true">
+          <div class="shoe-spot"></div>
+          <div class="shoe-pedestal"></div>
+          <div class="shoe-figure sf-infinite"></div>
+          <div class="shoe-shadow"></div>
+        </div>
+        <div class="shoe-meta">
+          <span class="shoe-number">01</span>
+          <h3>인피니트 러시</h3>
+          <p>최상위 카본 러닝화</p>
+          <span class="shoe-price">259,000원</span>
+        </div>
+      </li>
+      <li class="shoe-case" data-index="1" style="--case-index:1">
+        <div class="shoe-stage" aria-hidden="true">
+          <div class="shoe-spot"></div>
+          <div class="shoe-pedestal"></div>
+          <div class="shoe-figure sf-hyper"></div>
+          <div class="shoe-shadow"></div>
+        </div>
+        <div class="shoe-meta">
+          <span class="shoe-number">02</span>
+          <h3>하이퍼 러시</h3>
+          <p>하이퍼 카본 플레이트</p>
+          <span class="shoe-price">219,000원</span>
+        </div>
+      </li>
+      <li class="shoe-case" data-index="2" style="--case-index:2">
+        <div class="shoe-stage" aria-hidden="true">
+          <div class="shoe-spot"></div>
+          <div class="shoe-pedestal"></div>
+          <div class="shoe-figure sf-duplex"></div>
+          <div class="shoe-shadow"></div>
+        </div>
+        <div class="shoe-meta">
+          <span class="shoe-number">03</span>
+          <h3>듀플렉스 GF</h3>
+          <p>과내전 방지 안정화 러닝화</p>
+          <span class="shoe-price">139,000원</span>
+        </div>
+      </li>
+      <li class="shoe-case" data-index="3" style="--case-index:3">
+        <div class="shoe-stage" aria-hidden="true">
+          <div class="shoe-spot"></div>
+          <div class="shoe-pedestal"></div>
+          <div class="shoe-figure sf-speed"></div>
+          <div class="shoe-shadow"></div>
+        </div>
+        <div class="shoe-meta">
+          <span class="shoe-number">04</span>
+          <h3>스피드 러시 3</h3>
+          <p>입문 러닝화</p>
+          <span class="shoe-price tbd">2026.06 신형</span>
+        </div>
+      </li>
+    </ol>
+  </div>
+  <div class="showcase-seam" aria-hidden="true"></div>
+</section>
+
+<section class="collection" id="collection">
+  <div class="collection-inner">
+    <div class="col-head">
+      <h2>지금, 프로스펙스 러닝 (4)</h2>
+      <span class="note">일대기의 종착 — 실제 페이지에선 각 신발 상세로 연결됩니다</span>
+    </div>
+    <div class="rows">
+      <div class="row"><span class="rank">1</span><div><div class="nm">인피니트 러시</div><div class="meta">최상위 카본 러닝화</div></div><span class="price">259,000원</span></div>
+      <div class="row"><span class="rank">2</span><div><div class="nm">하이퍼 러시</div><div class="meta">하이퍼 카본 플레이트</div></div><span class="price">219,000원</span></div>
+      <div class="row"><span class="rank">3</span><div><div class="nm">듀플렉스 GF</div><div class="meta">과내전 방지 안정화 러닝화</div></div><span class="price">139,000원</span></div>
+      <div class="row"><span class="rank">4</span><div><div class="nm">스피드 러시 3</div><div class="meta">입문 러닝화</div></div><span class="price tbd">2026.06 신형</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="director" role="group" aria-label="시퀀스 제어">
+  <h3><span>Sequence</span><span class="pct" id="pct">00%</span></h3>
+  <div class="acts" id="acts"></div>
+
+  <div class="panel-row">
+    <div class="panel-label">Render Quality</div>
+    <div class="seg" id="qual">
+      <button type="button" data-q="low">Low</button>
+      <button type="button" data-q="medium">Medium</button>
+      <button type="button" data-q="high">High</button>
+    </div>
+    <div class="toggles">
+      <button class="tg" id="tgView" type="button">모바일</button>
+      <button class="tg" id="tgMotion" type="button">모션 감소</button>
+    </div>
+  </div>
+
+  <div class="stats">
+    <span>FPS <b id="stFps">idle</b></span>
+    <span>Buffer <b id="stBuf">–</b></span>
+    <span>DPR <b id="stDpr">–</b></span>
+  </div>
+</div>
+
+<script>
+(() => {
+  'use strict';
+
+  // ── 워드마크 ──
+  // 각진 F 심볼은 3D 압출과 계속 충돌해(칼/화살로 왜곡) 브랜드 이름 자체를 주역으로.
+  // 'PRO-SPECS' 텍스트를 열간 단조 조형처럼 렌더(fillText가 그라디언트를 받음).
+  const WORD = 'PRO-SPECS';
+  const FS = 150;   // 기준 폰트 픽셀(스케일 전)
+  const WORD_FONT = `900 ${FS}px Pretendard, "Apple SD Gothic Neo", "Malgun Gothic", system-ui, sans-serif`;
+
+  // ── 설정/상태 ──
+  const QUALITY_DPR = { low: 1, medium: 1.25, high: 1.5 };
+  const MAX_RENDER_WIDTH = 1920;   // 캔버스 내부 렌더 논리폭 상한
+
+  const state = {
+    progress: 0,          // 스크롤 진행률(0~1)
+    isVisible: true,      // 히어로가 화면 안에 있는가
+    reduced: false,       // OS 또는 패널 모션감소
+    quality: 'high',
+    needsRender: true,
+    mobile: false,
+  };
+
+  const cv = document.getElementById('film');
+  const ctx = cv.getContext('2d', { alpha: false });
+  const track = document.getElementById('track');
+  const stage = document.getElementById('stage');
+  const claim = document.getElementById('claim');
+  const cta = document.getElementById('cta');
+  const enter = document.getElementById('enter');
+  const eyebrow = document.getElementById('eyebrow');
+  const pctEl = document.getElementById('pct');
+  const stFps = document.getElementById('stFps');
+  const stBuf = document.getElementById('stBuf');
+  const stDpr = document.getElementById('stDpr');
+
+  const ACTS = [
+    { t: 0.00, tc: '00:00', label: '암전 — 강철의 예감' },
+    { t: 0.28, tc: '00:06', label: '빛이 표면을 훑는다' },
+    { t: 0.48, tc: '00:11', label: '이름 전체 노출' },
+    { t: 0.64, tc: '00:15', label: '열간 단조 — 붉게 달아오름' },
+    { t: 0.84, tc: '00:19', label: '카피 · CTA' },
+    { t: 1.00, tc: '00:22', label: '컬렉션 접합' },
+  ];
+
+  let W = 0, H = 0, DPR = 1, RK = 1;   // RK = 논리→버퍼 스케일(s*DPR)
+
+  const clamp = (v, a, b) => v < a ? a : v > b ? b : v;
+  const lerp = (a, b, t) => a + (b - a) * t;
+  const seg = (v, a, b) => clamp((v - a) / (b - a), 0, 1);
+  const ease = t => t < .5 ? 4*t*t*t : 1 - Math.pow(-2*t + 2, 3) / 2;
+  const easeOut = t => 1 - Math.pow(1 - t, 3);
+
+  const osReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isReduced = () => state.reduced || osReduced.matches;
+  const currentP = () => isReduced() ? 0.52 : state.progress;
+
+  // ── 저성능 자동 품질 강등 ──
+  function autoQuality() {
+    const dm = navigator.deviceMemory || 4;
+    const smallW = Math.min(window.innerWidth, window.screen ? window.screen.width : 9999) < 768;
+    if (dm <= 2 || (smallW && dm <= 3)) return 'low';
+    if (smallW || dm <= 4) return 'medium';
+    return 'high';
+  }
+
+  // ── glow 스프라이트(오프스크린, 1회 생성) — shadowBlur 대체 ──
+  function makeGlow(size, r, g, b) {
+    const c = document.createElement('canvas');
+    c.width = c.height = size;
+    const g2 = c.getContext('2d');
+    const grd = g2.createRadialGradient(size/2, size/2, 0, size/2, size/2, size/2);
+    grd.addColorStop(0,    `rgba(${r},${g},${b},1)`);
+    grd.addColorStop(0.35, `rgba(${r},${g},${b},0.5)`);
+    grd.addColorStop(1,    `rgba(${r},${g},${b},0)`);
+    g2.fillStyle = grd;
+    g2.fillRect(0, 0, size, size);
+    return c;
+  }
+  const glowCore = makeGlow(256, 255, 122, 60);   // 오렌지 코어
+  const glowRim  = makeGlow(256, 191, 18, 56);    // 크림슨 발열
+
+  // ── 리사이즈: CSS 크기와 버퍼 분리 + 렌더폭 캡 ──
+  function resize() {
+    const cap = QUALITY_DPR[state.quality] || 1.5;
+    DPR = Math.min(window.devicePixelRatio || 1, cap);
+    const r = cv.getBoundingClientRect();
+    const cssW = r.width, cssH = r.height;
+    state.mobile = cssW < 620;
+    const renderW = Math.min(cssW, MAX_RENDER_WIDTH);
+    const s = cssW > 0 ? renderW / cssW : 1;           // ≤ 1
+    RK = s * DPR;
+    W = cssW; H = cssH;                                 // 좌표계는 논리 CSS px
+    cv.width  = Math.max(1, Math.round(cssW * RK));
+    cv.height = Math.max(1, Math.round(cssH * RK));
+    ctx.setTransform(RK, 0, 0, RK, 0, 0);
+    stBuf.textContent = cv.width + '×' + cv.height;
+    stDpr.textContent = DPR.toFixed(2);
+  }
+
+  function readScroll() {
+    const total = track.offsetHeight - window.innerHeight;
+    const rect = track.getBoundingClientRect();
+    const np = total > 0 ? clamp(-rect.top / total, 0, 1) : 0;
+    if (np !== state.progress) { state.progress = np; invalidate(); }
+  }
+
+  // ── 렌더: draw는 P만의 순수 함수(시간 비의존 — 유휴 시 완전 정지 가능) ──
+  function draw(P) {
+    // 배경
+    ctx.fillStyle = '#0a0f1a';
+    ctx.fillRect(0, 0, W, H);
+    const cx = W / 2, cy = H / 2;
+
+    // 볼류메트릭 포그
+    const glow = 0.10 + 0.40 * seg(P, .1, .72);
+    const g1 = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * (0.42 + 0.3 * P));
+    g1.addColorStop(0, `rgba(30,38,52,${glow})`);
+    g1.addColorStop(0.55, `rgba(16,22,34,${glow * 0.5})`);
+    g1.addColorStop(1, 'rgba(10,15,26,0)');
+    ctx.fillStyle = g1;
+    ctx.fillRect(0, 0, W, H);
+
+    // 발열: 상시 미열(baseline) + 0.12~0.80 상승(최고조 ~0.80) + 0.86~1.0 감쇠(카피 구간)
+    const heat = (0.06 + 0.94 * seg(P, .12, .80)) * (1 - seg(P, .86, 1) * 0.5);
+    if (heat > 0.01) {
+      const g2 = ctx.createRadialGradient(cx, cy + H * 0.05, 0, cx, cy, Math.max(W, H) * 0.60);
+      g2.addColorStop(0, `rgba(255,77,28,${0.18 * heat})`);
+      g2.addColorStop(0.5, `rgba(191,18,56,${0.09 * heat})`);
+      g2.addColorStop(1, 'rgba(255,77,28,0)');
+      ctx.fillStyle = g2;
+      ctx.fillRect(0, 0, W, H);
+    }
+
+    // ── 카메라(상승 중심) — 워드마크를 위로 띄우되 눕히지 않는다(정립) ──
+    const R = isReduced();
+    const travel = R ? 0 : (state.mobile ? 0.7 : 1);
+    ctx.font = WORD_FONT;
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    const wordW = ctx.measureText(WORD).width;
+    const base = W / (wordW * (state.mobile ? 1.04 : 1.14));   // 화면 폭에 맞춤
+    const approach = R ? 1 : ease(seg(P, 0, .48));
+    const rise = R ? 0 : ease(seg(P, .48, .92)) * travel;
+    const scale = base * (0.52 + approach * 0.44 - rise * 0.05);
+    const panY = -rise * H * 0.42;                        // 후반 위로 빠져 카피에 자리를 내준다
+    const lit = 0.16 + 0.72 * ease(seg(P, .04, .5));
+
+    ctx.save();
+    ctx.globalAlpha = R ? 1 : (1 - seg(P, .84, 1) * 0.5);   // 카피 승격 구간엔 워드마크가 물러난다
+    ctx.translate(cx, cy + panY);
+    ctx.scale(scale, scale);
+    // 텍스트는 (0,0) 중심(textAlign center / baseline middle)
+
+    // 압출: 텍스트를 뒤→앞으로 오프셋(네이비 강철)
+    const layers = R ? 4 : (state.mobile ? 8 : 16);
+    const depth = 3.2 / scale * base;
+    for (let i = layers; i >= 1; i--) {
+      const k = i / layers;
+      const sh = Math.round(lerp(8, 34, 1 - k));
+      ctx.fillStyle = `rgb(${sh},${sh + 3},${sh + 8})`;
+      ctx.fillText(WORD, depth * k * 0.4, depth * k * 1.1);
+    }
+
+    // 전면: 네이비 강철 그라디언트(세로, 상단 밝고 하단 어둡게)
+    const gm = ctx.createLinearGradient(0, -FS * 0.58, 0, FS * 0.58);
+    gm.addColorStop(0, `rgb(${Math.round(96 + 46 * lit)},${Math.round(108 + 46 * lit)},${Math.round(128 + 42 * lit)})`);
+    gm.addColorStop(0.55, `rgb(${Math.round(56 + 34 * lit)},${Math.round(64 + 36 * lit)},${Math.round(80 + 42 * lit)})`);
+    gm.addColorStop(1, 'rgb(22,28,40)');
+    ctx.fillStyle = gm;
+    ctx.fillText(WORD, 0, 0);
+
+    // 발열: 하단 코어에서 붉게(lighter)
+    if (heat > 0.01) {
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+      const hg = ctx.createLinearGradient(0, FS * 0.62, 0, -FS * 0.28);
+      hg.addColorStop(0, `rgba(255,90,36,${0.55 * heat})`);
+      hg.addColorStop(0.5, `rgba(191,18,56,${0.30 * heat})`);
+      hg.addColorStop(1, 'rgba(191,18,56,0)');
+      ctx.fillStyle = hg;
+      ctx.fillText(WORD, 0, 0);
+      ctx.restore();
+    }
+
+    // 스페큘러 스윕(가로로 훑는 웜 화이트, lighter)
+    {
+      const bandX = (-0.35 + seg(P, .06, .62) * 1.6) * wordW;
+      const sw = ctx.createLinearGradient(bandX - wordW * 0.22, 0, bandX + wordW * 0.22, 0);
+      const si = 0.20 + 0.5 * (1 - Math.abs(0.5 - seg(P, .06, .68)) * 2);
+      sw.addColorStop(0, 'rgba(255,240,228,0)');
+      sw.addColorStop(0.5, `rgba(255,240,228,${clamp(si, 0, .5)})`);
+      sw.addColorStop(1, 'rgba(255,240,228,0)');
+      ctx.save();
+      ctx.globalCompositeOperation = 'lighter';
+      ctx.fillStyle = sw;
+      ctx.fillText(WORD, 0, 0);
+      ctx.restore();
+    }
+
+    // 엣지 하이라이트 + 달궈진 엣지
+    ctx.lineWidth = 1.1 / scale * base;
+    ctx.strokeStyle = `rgba(255,244,234,${0.08 + 0.26 * lit})`;
+    ctx.strokeText(WORD, 0, 0);
+    if (heat > 0.04) {
+      ctx.lineWidth = 1.6 / scale * base;
+      ctx.strokeStyle = `rgba(255,77,28,${0.30 * heat})`;
+      ctx.strokeText(WORD, 0, 0);
+    }
+
+    ctx.restore();
+
+    // 카피 대비 스크림 — reduced는 상시, 그 외 카피 등장 구간
+    const scrimA = R ? 0.36 : 0.30 * easeOut(seg(P, .76, .94));
+    if (scrimA > 0.001) {
+      const scrim = ctx.createRadialGradient(cx, cy, 0, cx, cy, Math.max(W, H) * 0.62);
+      scrim.addColorStop(0, `rgba(6,10,18,${scrimA})`);
+      scrim.addColorStop(1, 'rgba(6,10,18,0)');
+      ctx.fillStyle = scrim;
+      ctx.fillRect(0, 0, W, H);
+    }
+
+    // 비네트
+    const vg = ctx.createRadialGradient(cx, cy, Math.min(W, H) * 0.26, cx, cy, Math.max(W, H) * 0.78);
+    vg.addColorStop(0, 'rgba(10,15,26,0)');
+    vg.addColorStop(1, `rgba(6,9,16,${0.62 - 0.2 * seg(P, .8, 1)})`);
+    ctx.fillStyle = vg;
+    ctx.fillRect(0, 0, W, H);
+
+    // 컬렉션 접합: 화면을 밝게 열어줌
+    const seamOut = seg(P, .90, 1);
+    if (seamOut > 0) {
+      ctx.fillStyle = `rgba(238,243,248,${seamOut * 0.9})`;
+      ctx.fillRect(0, 0, W, H);
+    }
+  }
+
+  function syncOverlay(P) {
+    const R = isReduced();
+    const pv = R ? 1 : P;
+    const copyIn = R ? 1 : easeOut(seg(pv, .84, .96));
+    claim.style.opacity = copyIn;
+    claim.style.filter = `blur(${(1 - copyIn) * 14}px)`;
+    claim.style.transform = `translateY(${(1 - copyIn) * 26}px)`;
+
+    const ctaIn = R ? 1 : easeOut(seg(pv, .88, .99));
+    cta.style.opacity = ctaIn;
+    cta.style.transform = `translateY(${(1 - ctaIn) * 16}px)`;
+    cta.style.pointerEvents = ctaIn > .5 ? 'auto' : 'none';
+    cta.tabIndex = ctaIn > .5 ? 0 : -1;
+
+    // 하단 앵커: 카피 승격 전까지 상시 → 승격 시작(0.5~)하면 페이드
+    enter.style.opacity = R ? 0 : (1 - seg(pv, .5, .78));
+    enter.style.pointerEvents = (!R && pv < .66) ? 'auto' : 'none';
+    eyebrow.style.opacity = R ? 1 : (1 - seg(pv, .55, .8) * 0.5);
+
+    const shown = Math.round((R ? 52 : P * 100));
+    pctEl.textContent = String(shown).padStart(2, '0') + '%';
+
+    for (const b of actBtns) {
+      b.dataset.on = (P >= b._t - 0.06 && P < b._tNext - 0.06) ? '1' : '0';
+    }
+  }
+
+  // ── 단일 RAF + dirty-render ──
+  let rafId = 0;
+  let frameCount = 0, lastRenderTs = 0;
+  function ensureFrame() {
+    if (!rafId && state.isVisible) rafId = requestAnimationFrame(renderFrame);
+  }
+  function invalidate() {
+    state.needsRender = true;
+    ensureFrame();
+  }
+  function renderFrame(ts) {
+    rafId = 0;
+    if (!state.isVisible) return;
+    if (state.needsRender) {
+      state.needsRender = false;
+      const P = currentP();
+      draw(P);
+      syncOverlay(P);
+      frameCount++;
+      lastRenderTs = ts;
+    }
+    // 파티클/시간 애니메이션이 없으므로, 남은 렌더 요청이 없으면 루프는 정지(CPU 0으로 수렴)
+    if (state.needsRender) ensureFrame();
+  }
+
+  // FPS 표시(500ms 간격, RAF와 분리 — 유휴 시 idle)
+  setInterval(() => {
+    if (!state.isVisible) { stFps.textContent = 'paused'; frameCount = 0; return; }
+    const idle = performance.now() - lastRenderTs > 500;
+    stFps.textContent = idle ? 'idle' : String(frameCount * 2);
+    frameCount = 0;
+  }, 500);
+
+  // ── 디렉터 패널 ──
+  const actsEl = document.getElementById('acts');
+  const actBtns = ACTS.map((a, i) => {
+    const b = document.createElement('button');
+    b.className = 'act';
+    b.type = 'button';
+    b.innerHTML = `<span class="tc">${a.tc}</span><span>${a.label}</span>`;
+    b._t = a.t;
+    b._tNext = ACTS[i + 1] ? ACTS[i + 1].t : 1.0001;
+    b.addEventListener('click', () => {
+      // 히어로가 화면 밖이면 먼저 히어로로 복귀(스크러버 조작이 안 보이는 문제 방지)
+      const total = track.offsetHeight - window.innerHeight;
+      window.scrollTo({ top: track.offsetTop + total * a.t, behavior: isReduced() ? 'auto' : 'smooth' });
+    });
+    actsEl.appendChild(b);
+    return b;
+  });
+
+  const qualEl = document.getElementById('qual');
+  const qualBtns = [...qualEl.querySelectorAll('button')];
+  function setQuality(q) {
+    state.quality = q;
+    qualBtns.forEach(b => b.dataset.on = b.dataset.q === q ? '1' : '0');
+    resize();
+    invalidate();
+  }
+  qualBtns.forEach(b => b.addEventListener('click', () => setQuality(b.dataset.q)));
+
+  const tgView = document.getElementById('tgView');
+  tgView.addEventListener('click', () => {
+    const on = document.body.dataset.view === 'mobile';
+    document.body.dataset.view = on ? 'desktop' : 'mobile';
+    tgView.dataset.on = on ? '0' : '1';
+    tgView.textContent = on ? '모바일' : '데스크톱';
+    requestAnimationFrame(() => { resize(); readScroll(); invalidate(); });
+  });
+
+  const tgMotion = document.getElementById('tgMotion');
+  tgMotion.addEventListener('click', () => {
+    state.reduced = !state.reduced;
+    tgMotion.dataset.on = state.reduced ? '1' : '0';
+    invalidate();
+  });
+
+  // 진입점
+  const goCollection = () => document.getElementById('collection').scrollIntoView({
+    behavior: isReduced() ? 'auto' : 'smooth', block: 'start',
+  });
+  cta.addEventListener('click', goCollection);
+  enter.addEventListener('click', goCollection);
+
+  // ── 이벤트 ──
+  window.addEventListener('scroll', readScroll, { passive: true });
+  window.addEventListener('resize', () => { resize(); readScroll(); invalidate(); }, { passive: true });
+  osReduced.addEventListener('change', invalidate);
+
+  // 히어로 밖이면 렌더 루프 중단
+  const io = new IntersectionObserver((entries) => {
+    const vis = entries[0].isIntersecting;
+    state.isVisible = vis;
+    if (vis) invalidate();
+    else if (rafId) { cancelAnimationFrame(rafId); rafId = 0; }
+  }, { threshold: 0 });
+  io.observe(stage);
+
+  // ── 초기화 ──
+  setQuality(autoQuality());
+  resize();
+  readScroll();
+  invalidate();
+})();
+
+// ═══════════════════════════════════════════════
+//  러닝화 일대기 — 시네마틱 타임라인 엔진 (Phase 1~4)
+//  히어로와 별개의 단일 RAF + dirty-render.
+//  Phase 1~2: 발열 레일 + 불꽃 헤드 + 노드 등장
+//  Phase 3~4: 중앙 밴드 focus 강조 + 대형 연도 고스트/패럴랙스
+// ═══════════════════════════════════════════════
+(() => {
+  'use strict';
+  const legacy = document.querySelector('.legacy');
+  if (!legacy) return;
+  const timelineEl = legacy.querySelector('.timeline');
+  const ghost = legacy.querySelector('.legacy-year-ghost');
+  const items = [...legacy.querySelectorAll('.timeline-item')];
+  const clamp = (v, a, b) => v < a ? a : v > b ? b : v;
+
+  let centers = [];                       // 각 노드 중심 문서좌표(캐시)
+  const lastFocus = items.map(() => -1);  // focus 갱신 임계 비교용
+  const lastLit = items.map(() => -1);    // 점화(lit) 갱신 임계
+  let activeIndex = -1;
+  let lastHeat = -1;                       // heat-strength 갱신 임계
+  const idx1997 = items.findIndex(it => it.dataset.year === '1997');
+  const idx2007 = items.findIndex(it => it.dataset.year === '2007');
+
+  const rm = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const isReduced = () => rm.matches;
+
+  // 측정값은 캐시 — 매 프레임 getBoundingClientRect 금지(초기·리사이즈·가시성 진입 때만)
+  const state = { progress: 0, prev: -1, visible: false, dirty: true, start: 0, len: 0 };
+  let rafId = 0;
+
+  function measure() {
+    const r = timelineEl.getBoundingClientRect();
+    const sy = window.scrollY || window.pageYOffset;
+    state.start = r.top + sy;      // 타임라인 시작(문서 좌표) — ghost 패럴랙스 진행률 기준
+    state.len = r.height;
+    // 노드 중심 문서좌표 캐시(리사이즈/진입 때만)
+    centers = items.map(it => { const b = it.getBoundingClientRect(); return b.top + sy + b.height / 2; });
+  }
+
+  function updateProgress() {
+    const vpCenter = (window.scrollY || window.pageYOffset) + window.innerHeight * 0.5;
+    const span = state.len;
+    state.progress = span > 0 ? clamp((vpCenter - state.start) / span, 0, 1) : 0;
+  }
+
+  function render() {
+    rafId = 0;
+    if (!state.dirty || !state.visible) return;
+    state.dirty = false;
+    updateProgress();
+    const p = isReduced() ? 1 : state.progress;
+    // 이전 값과 충분히 달라졌을 때만 CSS 변수 갱신(DOM write 최소화)
+    if (Math.abs(p - state.prev) > 0.001) {
+      if (!isReduced()) ghost.style.setProperty('--ghost-y', ((p - 0.5) * 24).toFixed(1) + 'px');  // 패럴랙스 ±12px
+      state.prev = p;
+    }
+    if (!isReduced()) updateFocus();
+    if (state.dirty) ensure();
+  }
+  function ensure() { if (!rafId && state.visible) rafId = requestAnimationFrame(render); }
+  function invalidate() { state.dirty = true; ensure(); }
+
+  // Phase 3: 중앙 밴드(뷰포트 52%) 근접도 → 각 노드 --focus, 최근접 노드 = 활성 장면
+  function updateFocus() {
+    if (centers.length !== items.length) return;
+    const vpc = (window.scrollY || window.pageYOffset) + window.innerHeight * 0.52;
+    const range = window.innerHeight * 0.30;
+    const litRange = window.innerHeight * 0.12;
+    let best = 0, bestI = -1, blackout = 0, reignite = 0;
+    for (let i = 0; i < items.length; i++) {
+      let f = clamp(1 - Math.abs(centers[i] - vpc) / range, 0, 1);
+      f = f * f;   // 곡선을 뾰족하게 — 중앙 노드만 확실히 강조
+      if (Math.abs(f - lastFocus[i]) > 0.01) { items[i].style.setProperty('--focus', f.toFixed(3)); lastFocus[i] = f; }
+      // 점화: 노드가 중앙 밴드를 지나면(위로) dot에 불이 들어온다
+      const lit = clamp((vpc - centers[i]) / litRange + 0.5, 0, 1);
+      if (Math.abs(lit - lastLit[i]) > 0.01) { items[i].style.setProperty('--lit', lit.toFixed(3)); lastLit[i] = lit; }
+      if (i === idx1997) blackout = f;   // 1997 근접 → 소등
+      if (i === idx2007) reignite = f;   // 2007 근접 → 재점화
+      if (f > best) { best = f; bestI = i; }
+    }
+    // Phase 5: 1997에서 열이 사그라들고(history는 남음), 2007에서 되살아난다
+    const heat = clamp(1 - blackout * 0.82 + reignite * 0.42, 0, 1);
+    if (Math.abs(heat - lastHeat) > 0.01) {
+      legacy.style.setProperty('--heat-strength', heat.toFixed(3));
+      legacy.style.setProperty('--blackout', (blackout * 0.9).toFixed(3));  // 1997 근접 시 화면 암전
+      lastHeat = heat;
+    }
+    if (bestI >= 0 && bestI !== activeIndex && best > 0.2) { activeIndex = bestI; updateGhost(); }
+  }
+
+  // Phase 4: 활성 연도 고스트 교체(짧게 사라졌다 반대에서 미세 진입)
+  function updateGhost() {
+    const y = items[activeIndex].dataset.year;
+    ghost.style.opacity = '0';
+    ghost.style.filter = 'blur(24px)';
+    ghost.style.setProperty('--ghost-x', '26px');
+    requestAnimationFrame(() => {
+      ghost.textContent = y;
+      ghost.style.opacity = '';                 // CSS 기본값(.11)로 복원
+      ghost.style.filter = '';
+      ghost.style.setProperty('--ghost-x', '0px');
+    });
+  }
+
+  // 타임라인 섹션 가시성 — 밖이면 RAF 정지
+  const secIO = new IntersectionObserver((es) => {
+    state.visible = es[0].isIntersecting;
+    if (state.visible) { measure(); invalidate(); }
+    else if (rafId) { cancelAnimationFrame(rafId); rafId = 0; }
+  }, { threshold: 0 });
+  secIO.observe(legacy);
+
+  // 노드 등장 — 한 번만(unobserve). reduced면 즉시 표시
+  if (isReduced()) {
+    items.forEach(it => it.classList.add('is-revealed'));
+  } else {
+    const itemIO = new IntersectionObserver((es) => {
+      es.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('is-revealed'); itemIO.unobserve(e.target); }
+      });
+    }, { threshold: 0.25, rootMargin: '0px 0px -8% 0px' });
+    items.forEach(it => itemIO.observe(it));
+  }
+
+  window.addEventListener('scroll', invalidate, { passive: true });
+  window.addEventListener('resize', () => { measure(); invalidate(); }, { passive: true });
+  rm.addEventListener('change', () => {
+    if (isReduced()) items.forEach(it => it.classList.add('is-revealed'));
+    invalidate();
+  });
+
+  measure();
+  invalidate();
+})();
+
+// ── 브랜드 선언 — 각 문장이 스크롤 진입 시 하나씩 떠오른다(IO, 한 번만) ──
+(() => {
+  'use strict';
+  const creed = document.querySelector('.creed');
+  if (!creed) return;
+  const els = [...creed.querySelectorAll('.creed-lines li, .creed-all, .creed-slogan')];
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { els.forEach(e => e.classList.add('on')); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('on'); io.unobserve(e.target); } });
+  }, { threshold: 0.6, rootMargin: '0px 0px -10% 0px' });
+  els.forEach(e => io.observe(e));
+})();
+
+// ── 쇼케이스 순차 점등(Phase 2) — 옵저버 1개로 헤더+케이스 4개 감지, 한 번만 실행 ──
+(() => {
+  'use strict';
+  const sc = document.querySelector('.showcase');
+  if (!sc) return;
+  const cases = [...sc.querySelectorAll('.shoe-case')];
+  const revealAll = () => { sc.classList.add('is-revealed'); cases.forEach(c => c.classList.add('is-lit')); };
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) { revealAll(); return; }
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (!e.isIntersecting) return;
+      if (e.target === sc) sc.classList.add('is-revealed');       // 헤더 등장
+      else e.target.classList.add('is-lit');                      // 케이스 점등(진입 순서 = stagger delay)
+      io.unobserve(e.target);
+    });
+  }, { threshold: 0.18, rootMargin: '0px 0px -6% 0px' });
+  io.observe(sc);
+  cases.forEach(c => io.observe(c));
+})();
+</script>
