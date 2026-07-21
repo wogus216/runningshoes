@@ -296,6 +296,12 @@
   html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: 0; transform: translateX(-50%) scaleX(.72); }
   html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 0; transform: translateY(12px); }
 
+  /* 쇼케이스 → 컬렉션 카드 연결(앵커) + 키보드 포커스 */
+  .shoe-link { display: block; color: inherit; text-decoration: none; border-radius: 12px; }
+  .shoe-link:focus-visible { outline: 2px solid var(--steel-hi); outline-offset: 6px; }
+  html { scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
   /* 진열 완료 후 약한 hover(데스크톱) — 큰 확대·회전 금지 */
   @media (hover: hover) {
     .shoe-case.is-lit .shoe-figure { transition: transform .35s ease, opacity .85s ease; }
@@ -675,60 +681,68 @@
     </header>
     <ol class="showcase-grid">
       <li class="shoe-case" data-index="0" style="--case-index:0">
-        <div class="shoe-stage" aria-hidden="true">
-          <div class="shoe-spot"></div>
-          <div class="shoe-pedestal"></div>
-          <div class="shoe-figure sf-infinite"></div>
-          <div class="shoe-shadow"></div>
-        </div>
-        <div class="shoe-meta">
-          <span class="shoe-number">01</span>
-          <h3>인피니트 러시</h3>
-          <p>최상위 카본 러닝화</p>
-          <span class="shoe-price">259,000원</span>
-        </div>
+        <a class="shoe-link" href="#product-infinite-rush">
+          <div class="shoe-stage" aria-hidden="true">
+            <div class="shoe-spot"></div>
+            <div class="shoe-pedestal"></div>
+            <div class="shoe-figure sf-infinite"></div>
+            <div class="shoe-shadow"></div>
+          </div>
+          <div class="shoe-meta">
+            <span class="shoe-number">01</span>
+            <h3>인피니트 러시</h3>
+            <p>최상위 카본 러닝화</p>
+            <span class="shoe-price">259,000원</span>
+          </div>
+        </a>
       </li>
       <li class="shoe-case" data-index="1" style="--case-index:1">
-        <div class="shoe-stage" aria-hidden="true">
-          <div class="shoe-spot"></div>
-          <div class="shoe-pedestal"></div>
-          <div class="shoe-figure sf-hyper"></div>
-          <div class="shoe-shadow"></div>
-        </div>
-        <div class="shoe-meta">
-          <span class="shoe-number">02</span>
-          <h3>하이퍼 러시</h3>
-          <p>하이퍼 카본 플레이트</p>
-          <span class="shoe-price">219,000원</span>
-        </div>
+        <a class="shoe-link" href="#product-hyper-rush">
+          <div class="shoe-stage" aria-hidden="true">
+            <div class="shoe-spot"></div>
+            <div class="shoe-pedestal"></div>
+            <div class="shoe-figure sf-hyper"></div>
+            <div class="shoe-shadow"></div>
+          </div>
+          <div class="shoe-meta">
+            <span class="shoe-number">02</span>
+            <h3>하이퍼 러시</h3>
+            <p>하이퍼 카본 플레이트</p>
+            <span class="shoe-price">219,000원</span>
+          </div>
+        </a>
       </li>
       <li class="shoe-case" data-index="2" style="--case-index:2">
-        <div class="shoe-stage" aria-hidden="true">
-          <div class="shoe-spot"></div>
-          <div class="shoe-pedestal"></div>
-          <div class="shoe-figure sf-duplex"></div>
-          <div class="shoe-shadow"></div>
-        </div>
-        <div class="shoe-meta">
-          <span class="shoe-number">03</span>
-          <h3>듀플렉스 GF</h3>
-          <p>과내전 방지 안정화 러닝화</p>
-          <span class="shoe-price">139,000원</span>
-        </div>
+        <a class="shoe-link" href="#product-duplex-gf">
+          <div class="shoe-stage" aria-hidden="true">
+            <div class="shoe-spot"></div>
+            <div class="shoe-pedestal"></div>
+            <div class="shoe-figure sf-duplex"></div>
+            <div class="shoe-shadow"></div>
+          </div>
+          <div class="shoe-meta">
+            <span class="shoe-number">03</span>
+            <h3>듀플렉스 GF</h3>
+            <p>과내전 방지 안정화 러닝화</p>
+            <span class="shoe-price">139,000원</span>
+          </div>
+        </a>
       </li>
       <li class="shoe-case" data-index="3" style="--case-index:3">
-        <div class="shoe-stage" aria-hidden="true">
-          <div class="shoe-spot"></div>
-          <div class="shoe-pedestal"></div>
-          <div class="shoe-figure sf-speed"></div>
-          <div class="shoe-shadow"></div>
-        </div>
-        <div class="shoe-meta">
-          <span class="shoe-number">04</span>
-          <h3>스피드 러시 3</h3>
-          <p>입문 러닝화</p>
-          <span class="shoe-price tbd">2026.06 신형</span>
-        </div>
+        <a class="shoe-link" href="#product-speed-rush-3">
+          <div class="shoe-stage" aria-hidden="true">
+            <div class="shoe-spot"></div>
+            <div class="shoe-pedestal"></div>
+            <div class="shoe-figure sf-speed"></div>
+            <div class="shoe-shadow"></div>
+          </div>
+          <div class="shoe-meta">
+            <span class="shoe-number">04</span>
+            <h3>스피드 러시 3</h3>
+            <p>입문 러닝화</p>
+            <span class="shoe-price tbd">2026.06 신형</span>
+          </div>
+        </a>
       </li>
     </ol>
   </div>
@@ -742,10 +756,10 @@
       <span class="note">일대기의 종착 — 실제 페이지에선 각 신발 상세로 연결됩니다</span>
     </div>
     <div class="rows">
-      <div class="row"><span class="rank">1</span><div><div class="nm">인피니트 러시</div><div class="meta">최상위 카본 러닝화</div></div><span class="price">259,000원</span></div>
-      <div class="row"><span class="rank">2</span><div><div class="nm">하이퍼 러시</div><div class="meta">하이퍼 카본 플레이트</div></div><span class="price">219,000원</span></div>
-      <div class="row"><span class="rank">3</span><div><div class="nm">듀플렉스 GF</div><div class="meta">과내전 방지 안정화 러닝화</div></div><span class="price">139,000원</span></div>
-      <div class="row"><span class="rank">4</span><div><div class="nm">스피드 러시 3</div><div class="meta">입문 러닝화</div></div><span class="price tbd">2026.06 신형</span></div>
+      <div class="row" id="product-infinite-rush"><span class="rank">1</span><div><div class="nm">인피니트 러시</div><div class="meta">최상위 카본 러닝화</div></div><span class="price">259,000원</span></div>
+      <div class="row" id="product-hyper-rush"><span class="rank">2</span><div><div class="nm">하이퍼 러시</div><div class="meta">하이퍼 카본 플레이트</div></div><span class="price">219,000원</span></div>
+      <div class="row" id="product-duplex-gf"><span class="rank">3</span><div><div class="nm">듀플렉스 GF</div><div class="meta">과내전 방지 안정화 러닝화</div></div><span class="price">139,000원</span></div>
+      <div class="row" id="product-speed-rush-3"><span class="rank">4</span><div><div class="nm">스피드 러시 3</div><div class="meta">입문 러닝화</div></div><span class="price tbd">2026.06 신형</span></div>
     </div>
   </div>
 </section>
