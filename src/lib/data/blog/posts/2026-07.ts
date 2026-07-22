@@ -2,6 +2,136 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'adidas-hyperboost-edge-review-2026',
+    slug: 'adidas-hyperboost-edge-review-2026',
+    title: '아디다스 하이퍼부스트 엣지 후기 | 45mm 무플레이트 슈퍼트레이너 — 폼은 극찬, 갑피는 혹평으로 갈린 이유',
+    description:
+      '아디다스 하이퍼부스트 엣지는 플레이트 없이 45mm 스택을 얹고 247g에 머문 슈퍼 트레이너입니다. 힐 에너지 리턴 73.6%로 폼은 만장일치 극찬을 받았지만, 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 거의 모든 매체에서 반복됐습니다. 통기성 62(평균 이하)라 한국 여름에 불리하고 와이드 옵션도 없습니다. 랩 실측과 해외 리뷰 8곳을 종합해 249,000원의 값어치를 따졌습니다.',
+    thumbnail: '/images/blog/adidas-hyperboost-edge-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-22',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['아디다스 하이퍼부스트 엣지', '하이퍼부스트', '슈퍼트레이너', '무플레이트', '고스택 러닝화', '데일리 러닝화'],
+    faqs: [
+      {
+        question: '하이퍼부스트 엣지, 발볼 넓은 사람도 신을 수 있나요?',
+        answer:
+          '권하기 어렵습니다. 토박스 폭 자체는 71.4mm로 표준이지만 높이가 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 와이드가 있는 아디제로 Evo SL 쪽이 현실적입니다.',
+      },
+      {
+        question: '힐 칼라가 쓸린다는 게 무슨 말인가요?',
+        answer:
+          '뒤꿈치를 감싸는 갑피 테두리가 뻣뻣해서 발목 바깥 복사뼈를 파고든다는 지적입니다. Doctors of Running 리뷰어는 트랙 훈련 중 피부가 까졌다고 했고, Road Trail Run에서는 체중이 가벼운 테스터 두 명이 "면도날 같다"고 표현했습니다. 복사뼈가 튀어나온 편이라면 매장 착화가 필수입니다.',
+      },
+      {
+        question: '여름에 신어도 되나요?',
+        answer:
+          '한여름에는 추천하지 않습니다. 통기성 점수가 62로 러닝화 평균 이하이고 갑피가 촘촘한 우븐 소재라 발에 열이 갇힙니다. 반대로 저온에서 폼이 굳는 비율이 9%에 그쳐 겨울 러닝에는 강점이 뚜렷합니다.',
+      },
+      {
+        question: '카본화 대신 레이스에 신어도 될까요?',
+        answer:
+          '맞지 않습니다. km당 3분45초보다 빨라지면 부피감이 느껴지고 급격한 코너링에 약합니다. RunRepeat 세부 점수도 템포 87점·레이스 78점으로 갈립니다. 이지런부터 템포·롱런까지가 이 신발의 자리입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>폼은 만장일치 극찬입니다.</strong> 힐 충격흡수 154·에너지 리턴 73.6%로, 44.6mm 스택을 얹고도 <strong>247g</strong>에 그칩니다. 플레이트가 없는데 강성 19.8N으로 단단해 템포 구간에서 특히 강합니다</li>
+    <li><strong>갑피는 만장일치 혹평입니다.</strong> 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 거의 모든 매체에서 반복됐고, Tom's Guide가 헤드라인에 쓴 <strong>"deal breaker"</strong>가 바로 이것입니다</li>
+    <li>한국 러너에게는 <strong>계절이 승부처</strong>입니다 — 통기성 62(평균 이하)로 한여름엔 불리하지만, 저온 경화율 9%로 <strong>겨울엔 손에 꼽습니다.</strong> 와이드 옵션은 없습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔍</span>
+  <div class="callout-body">
+    <p class="callout-title">출시 4개월차, 이제 검증이 끝난 신발입니다</p>
+    <p><a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>는 2026년 3월 23일 한국에 출시됐습니다(글로벌 3월 17일). 넉 달이 지나 <strong>RunRepeat 랩 실측과 전문 매체 리뷰가 모두 나온 상태</strong>라, 이 글의 수치는 추정이 아니라 확정 데이터입니다. 출시 직후 리뷰와 달리 <strong>100km 이상 주행 후 내구성 평가</strong>까지 반영했습니다.</p>
+  </div>
+</div>
+
+<h2>한눈에 보는 스펙</h2>
+<table>
+  <thead><tr><th>항목</th><th>실측</th><th>의미</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td><strong>247g</strong></td><td>공식 발표 255g보다 8g 가벼움</td></tr>
+    <tr><td>스택</td><td>힐 44.6 / 전족 38.1mm</td><td>맥시멀 구간</td></tr>
+    <tr><td>드롭</td><td>6.5mm (공식 6mm)</td><td>낮은 편</td></tr>
+    <tr><td>충격흡수(SA)</td><td>힐 <strong>154</strong> / 전족 145</td><td>최상위권</td></tr>
+    <tr><td>에너지 리턴</td><td>힐 <strong>73.6%</strong></td><td>카본 레이싱화에 근접</td></tr>
+    <tr><td>미드솔 경도</td><td>32.5 AC</td><td>매우 부드러움</td></tr>
+    <tr><td>강성(30° 굽힘)</td><td>19.8N</td><td>플레이트 없이 단단함</td></tr>
+    <tr><td>토박스</td><td>폭 71.4mm / <strong>높이 24.8mm</strong></td><td>폭은 표준, 높이가 낮음</td></tr>
+    <tr><td>통기성</td><td><strong>62 BR</strong></td><td>평균 이하</td></tr>
+    <tr><td>아웃솔 마모</td><td>0.6mm</td><td>매우 우수</td></tr>
+    <tr><td>가격</td><td><strong>249,000원</strong></td><td>km당 약 356원(700km 기준)</td></tr>
+  </tbody>
+</table>
+<p>RunRepeat 종합은 <strong>83/100</strong>인데, 세부 점수가 성격을 그대로 보여줍니다 — <strong>템포 87 · 데일리 82 · 레이스 78 · 안정성 75</strong>. 곧게 뻗은 길을 일정한 페이스로 밀 때 가장 좋고, 흔들리는 발이나 방향 전환에는 약하다는 뜻입니다.</p>
+
+<h2>폼 — 여기는 이견이 없습니다</h2>
+<p>이 신발의 존재 이유는 <strong>하이퍼부스트 프로</strong>라는 새 폼입니다. 아디다스는 조성을 공개하지 않았지만(Road Trail Run 테스터는 초임계 PEBA 비드로 추정하는데, <strong>브랜드가 확인해준 사실은 아닙니다</strong>), 결과물의 수치는 분명합니다. 경도 32.5 AC로 매우 부드러운데 에너지 리턴이 73.6%로 높고, 그러면서 44.6mm 스택에 247g입니다.</p>
+<p>더 흥미로운 건 <strong>플레이트가 없는데도 단단하다</strong>는 점입니다. 종방향 강성 19.8N은 RunRepeat 기준 "Stiff"로 분류되는 값인데, 이걸 카본이나 나일론 판 없이 폼 구조와 지오메트리만으로 만들어냈습니다. Believe in the Run은 A 티어를 주면서 "튀어오르는 느낌이 명확하고 놀랍도록 가볍다"고 했고, 한 리뷰어는 <strong>평소 이지 페이스보다 마일당 1분 가까이 빨라졌다</strong>고 보고했습니다.</p>
+<p>아웃솔도 평가가 일치합니다. 2mm 두께의 LIGHTTRAXION이 풀커버로 깔렸는데 <strong>100km 주행 후에도 눈에 띄는 마모가 없었고</strong>, 랩 마모 테스트에서도 0.6mm에 그쳤습니다. 249,000원이라는 가격을 내구성으로 방어하는 구조입니다. 다만 도로·트랙 전용이고 흙이나 진흙에서는 접지력이 떨어집니다.</p>
+
+<h2>갑피 — 여기서 모든 게 갈립니다</h2>
+<p>아디다스는 PRIMEWEAVE 갑피를 <strong>"매우 부드럽고 초경량인 우븐 소재"</strong>로 홍보합니다. 실사용 평가는 정반대입니다. 이 신발에서 <strong>공식 문구와 현실이 가장 크게 어긋나는 지점</strong>이 여기입니다.</p>
+<p>문제는 <strong>뒤꿈치를 감싸는 칼라가 뻣뻣하다</strong>는 것입니다. 지적이 한 곳에 집중돼 있습니다.</p>
+<ul>
+  <li><strong>Tom's Guide</strong> — 헤드라인이 "재미있고 튀는데 이게 deal breaker일 수 있다"인데, 그 정체가 칼라입니다. "뻣뻣해서 살짝만 쓸려도 피부를 파고든다"고 썼습니다</li>
+  <li><strong>Doctors of Running</strong> — 트랙 훈련 중 바깥 복사뼈 <strong>피부가 까졌고</strong>, 얇은 양말이 필수라고 했습니다</li>
+  <li><strong>Road Trail Run</strong> — <strong>체중이 가벼운 테스터 두 명</strong>이 복사뼈에 "면도날" 같은 느낌을 호소했고, 아킬레스 물집도 보고됐습니다</li>
+  <li><strong>Believe in the Run</strong> — 끈을 다 풀어도 신기 어려운 "발에 넣기 힘든 신발"이라는 평이 있었습니다</li>
+</ul>
+<p>정리하면 <strong>발이 신발 안에서 조금이라도 움직이는 사람일수록 위험</strong>합니다. 체중이 가벼워 발이 덜 눌리는 러너, 복사뼈가 튀어나온 러너에게 특히 그렇습니다. 온라인 구매를 권하지 않는 이유가 이것입니다.</p>
+
+<h2>한국 러너 관점 — 계절이 승부처입니다</h2>
+<p>한국에서 이 신발을 살지 말지는 <strong>언제 신을 것인가</strong>로 갈립니다.</p>
+
+<h3>여름에는 불리합니다</h3>
+<p>통기성 점수가 <strong>62로 러닝화 평균 이하</strong>입니다. 갑피가 촘촘하게 짜인 우븐이라 Road Trail Run은 "얇고 막혀 있고 매우 조밀하다"고 표현했습니다. 지금 같은 7~8월 한강에서 신으면 발에 열이 갇힙니다. 여름용을 찾는다면 <a href="/blog/summer-breathable-running-shoes-2026">통기성 좋은 여름 러닝화 정리</a>를 먼저 보세요.</p>
+
+<h3>겨울에는 강점이 뚜렷합니다</h3>
+<p>반대로 <strong>저온에서 폼이 굳는 비율이 9%</strong>에 그칩니다. 대부분의 러닝화가 영하에서 딱딱해져 쿠션이 사라지는 걸 감안하면 이건 실질적인 장점입니다. 한겨울 새벽에 자주 뛴다면 오히려 이 신발의 계절이 그때입니다.</p>
+
+<h3>발 — 폭보다 볼륨이 문제입니다</h3>
+<p>토박스 폭은 71.4mm로 <strong>표준 범위</strong>입니다. 문제는 <strong>높이가 24.8mm로 낮다</strong>는 것이라, 발볼보다 <strong>발등이 높은 발</strong>에서 압박이 먼저 옵니다. 게다가 <strong>와이드 옵션이 아예 없습니다</strong>(D 표준폭 단일). 발볼 기준으로 신발을 고르는 방법은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>에 정리해뒀습니다.</p>
+
+<h3>착지 유형 — 힐 스트라이커는 주의</h3>
+<p>Doctors of Running이 짚은 구조 문제입니다. 45mm급 맥시멀 신발은 뒤꿈치가 부드럽게 굴러가도록 <strong>힐 베벨(뒤꿈치 깎기)</strong>이 필요한데, 이 신발은 후방 플레어가 넓어 뒤꿈치가 예상보다 <strong>일찍 지면에 닿습니다</strong>. 리뷰어는 이 때문에 힐 착지 러너에게 <strong>정강이 부담이 늘 수 있다</strong>고 봤습니다. 인구의 75~85%가 힐 착지라는 점을 감안하면 가볍게 넘길 얘기가 아닙니다. 정강이 통증 이력이 있다면 <a href="/blog/shin-splints-running-shoes-2026">신 스플린트 가이드</a>를 함께 보세요.</p>
+
+<h2>뭐랑 비교하면 되나</h2>
+<p>같은 <strong>플레이트 없는 슈퍼 트레이너</strong> 안에서 성격이 갈립니다. 참고로 아디다스는 이 신발을 "아디다스 최초의 무플레이트 슈퍼 트레이너"로 소개하는데, <strong>업계 최초는 아닙니다</strong> — 아식스 슈퍼블라스트가 먼저 이 자리를 열었습니다.</p>
+<ul>
+  <li><strong><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></strong>(25.9만·239g) — 가장 직접적인 경쟁작. 듀얼 폼이라 <strong>더 안정적이고 갑피 평가가 낫습니다.</strong> 대신 엣지가 단일 폼이라 라이드가 더 매끄럽습니다</li>
+  <li><strong><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></strong>(20.9만·223g) — 같은 아디다스지만 <strong>직접 경쟁이 아닙니다.</strong> Evo SL은 짧고 빠른 거리, 엣지는 길고 느린 거리 + 맥시멀 쿠션. <strong>더 싸고 가볍고 와이드도 있습니다</strong>(<a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>)</li>
+  <li><strong><a href="/shoes/asics-megablast">아식스 메가블라스트</a></strong> — 218g로 더 가볍고 빠르며 갑피가 낫지만, 덜 안정적이고 더 비쌉니다</li>
+  <li><strong><a href="/shoes/nike-vomero-plus">나이키 보메로 플러스</a></strong>(272g) — 엣지가 25g 가볍고 전족부 반발이 강한 대신, 보메로가 더 안정적입니다</li>
+  <li><strong><a href="/shoes/hoka-mach-6">호카 마하 6</a></strong>(18.5만) — 예산을 줄이면서 가벼운 템포화를 원할 때. 스택은 훨씬 낮습니다</li>
+</ul>
+<p>세 모델을 정면으로 비교한 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>과 <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 계급도</a>에서 라인업 전체 위치를 볼 수 있습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">🔀</span>
+  <div class="callout-body">
+    <p class="callout-title">'하이퍼부스트 런'과 헷갈리지 마세요</p>
+    <p>하이퍼부스트는 <strong>라인 이름</strong>이라 형제 모델이 있습니다. <strong>하이퍼부스트 런</strong>은 같은 폼을 쓰지만 스택이 <strong>38.6/31.8mm로 훨씬 낮고</strong>(엣지는 44.6/38.1mm) 컨티넨탈 러버 팟이 붙습니다. RunRepeat는 런을 <strong>"엣지의 덜 극단적인 대안"</strong>으로 소개하며, 접지감과 제어가 좋아 <strong>초보자·가벼운 체중</strong>에 적합하다고 봤습니다. "하늘 높은 쿠션"을 원하면 엣지, <strong>균형과 안정을 원하면 런</strong>입니다. 단 통기성은 런이 54로 <strong>더 나쁩니다.</strong></p>
+  </div>
+</div>
+
+<h2>그래서 사도 되나</h2>
+<p>249,000원의 값어치는 <strong>누가 신느냐</strong>에 따라 완전히 갈립니다.</p>
+<p><strong>이런 분께는 좋은 신발입니다</strong> — 미드풋·포어풋 착지, 이지런부터 템포·롱런까지 한 켤레로 굴리려는 뉴트럴 러너, 발 볼륨이 낮은 편, 그리고 <strong>겨울에 많이 뛰는 러너</strong>. 폼의 반발과 아웃솔 내구성만 놓고 보면 이 가격대에서 경쟁력이 분명합니다.</p>
+<p><strong>이런 분께는 권하지 않습니다</strong> — 힐 착지가 강한 러너, 평발·과내전으로 안정성이 필요한 러너, 발등이 높거나 복사뼈가 튀어나온 발, 한여름에 주로 뛰는 러너, 인터벌·레이스용을 찾는 경우.</p>
+<p>정리하면 <strong>폼은 이 가격에 살 만하고, 갑피는 이 가격에 아쉽습니다.</strong> 그래서 결론은 단순합니다 — <strong>반드시 신어보고 사세요.</strong> 특히 뒤꿈치를 좌우로 살짝 비틀어보고 복사뼈에 닿는 느낌을 확인하세요. 발볼·체중·부상 이력까지 반영한 대안이 궁금하다면 <a href="/recommend">1분 맞춤 추천</a>을 받아보시면 됩니다.</p>
+
+<p><small>출처: RunRepeat "Cut in half" 랩 실측(종합 83/100) · Believe in the Run(A Tier) · Road Trail Run 멀티테스터 및 100km 내구 리뷰 · Doctors of Running · The Run Testers · Tom's Guide · 아디다스코리아 2026-03-23 보도자료. 한국 정가 249,000원은 KREAM 발매가와 러닝 전문 리테일러 판매가로 교차 확인했습니다(adidas.co.kr은 봇 차단으로 직접 확인 불가). 하이퍼부스트 프로의 소재 조성은 아디다스 미공개이며 본문의 PEBA 언급은 리뷰어 추정입니다. (작성 2026-07-22)</small></p>
+`,
+  },
+  {
     id: 'nb-run-your-way-seoul-10k-2026',
     slug: 'nb-run-your-way-seoul-10k-2026',
     title: '뉴발란스 런유어웨이 서울 10K 접수 | 선착순 아닌 래플 — 7/31 10시부터 딱 55시간, 참가 경로는 3가지',

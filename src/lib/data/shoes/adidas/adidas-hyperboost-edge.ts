@@ -1,0 +1,100 @@
+import type { Shoe } from '@/types/shoe';
+
+export const shoe: Shoe = {
+  id: 'adidas-hyperboost-edge',
+  slug: 'adidas-hyperboost-edge',
+  brand: 'Adidas',
+  name: '하이퍼부스트 엣지',
+  category: '데일리',
+  rating: 4,
+  price: 249000,
+  description:
+    '아디다스가 플레이트 없이 만든 45mm 고스택 슈퍼 트레이너. 신규 Hyperboost Pro 폼으로 힐 에너지 리턴 73.6%를 내면서 247g에 머뭅니다.',
+  oneliner: '플레이트 없이 45mm, 폼 하나로 밀어붙인 슈퍼 트레이너',
+  editorComment:
+    '이 신발은 평가가 깔끔하게 두 쪽으로 갈립니다. 폼은 만장일치 극찬입니다 — 힐 충격흡수 154에 에너지 리턴 73.6%로, 44.6mm 스택을 얹고도 247g에 그쳐 "45mm인데 왜 이렇게 튀어오르나" 소리가 나옵니다. 플레이트가 없는데도 종방향 강성 19.8N으로 단단한 편이라 템포 구간에서 특히 강하고(RunRepeat 템포 87점, 종합 83점), 아웃솔은 100km를 뛰어도 마모가 거의 보이지 않을 만큼 내구성이 좋습니다.\n\n문제는 갑피에 몰려 있습니다. 아디다스는 PRIMEWEAVE를 "매우 부드럽다"고 홍보하지만 실사용 평가는 정반대입니다. 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 Doctors of Running·Road Trail Run·Tom\'s Guide 등 거의 모든 매체에서 반복됐고, 체중이 가벼운 테스터일수록 심하게 호소했습니다. 통기성도 62(평균 이하)라 한국 7~8월에는 특히 불리합니다. 반대로 저온에서 폼이 굳는 비율이 9%에 그쳐 한국 겨울에는 손에 꼽을 만큼 좋습니다 — 여름에 사서 실망하고 겨울에 재발견하기 쉬운 신발입니다.\n\n사이즈·구매 가이드: 토박스 폭은 71.4mm로 표준이지만 높이가 24.8mm로 낮아 폭보다 발등 볼륨에서 걸립니다. 와이드 옵션이 아예 없으니(D 표준폭 단일) 발볼이 넓거나 발등이 높다면 반드시 신어보고 사세요. 복사뼈가 튀어나온 편이라면 특히 매장 착화가 필수입니다. 정가 249,000원에 내구성 700km 기준 km당 약 356원이며, 같은 무플레이트 슈퍼 트레이너로 슈퍼블라스트 3(25.9만)이나 더 저렴하고 가벼운 아디제로 Evo SL(20.9만)이 대안입니다.',
+  tags: ['데일리', '슈퍼트레이너', '고스택', '무플레이트', 'Hyperboost Pro'],
+  specs: {
+    weight: 247,
+    cushioning: 10,
+    responsiveness: 9,
+    stability: 5,
+    drop: 6,
+    durability: 700,
+  },
+  biomechanics: {
+    stackHeight: { heel: 45, forefoot: 38 },
+    drop: 6,
+    carbonPlate: false,
+    plateType: null,
+    midsoleType: 'Hyperboost Pro 폼 (플레이트·보강재 없음)',
+    optimalPace: '4:30-6:30 min/km',
+  },
+  injuryPrevention: {
+    plantarFasciitis: 'good',
+    achillesTendinopathy: 'caution',
+    kneeIssues: 'good',
+    shinSplints: 'caution',
+  },
+  koreanFootFit: {
+    toBoxWidth: 'standard',
+    flatFootCompatibility: 'poor',
+    wideOptions: false,
+    winterCompatibility: 'excellent',
+    summerCompatibility: 'poor',
+  },
+  targetUsers: {
+    recommended: ['미드풋/포어풋 착지', '롱런·템포런', '뉴트럴 러너', '겨울 러닝', '발 볼륨이 낮은 러너'],
+    notRecommended: ['힐 스트라이커', '평발·과내전', '발등이 높은 발', '복사뼈가 튀어나온 발', '한여름 러닝', '인터벌·레이스'],
+  },
+  features: ['Hyperboost Pro 폼', '45mm 고스택 무플레이트', '247g 경량', 'LIGHTTRAXION 풀커버 아웃솔', '저온 경화율 9%'],
+  priceAnalysis: {
+    msrp: 249000,
+    costPerKm: 356,
+    valueRating: 6,
+    priceTier: 'premium',
+    alternatives: ['asics-superblast-3', 'adidas-adizero-evo-sl', 'asics-megablast'],
+  },
+  detailedSpecs: {
+    weight: '247g (실측, 아디다스 공식 발표는 255g)',
+    stackHeight: '힐 44.6mm / 포어풋 38.1mm (실측)',
+    drop: '6.5mm (실측) / 6mm (브랜드 공식)',
+    midsole: 'Hyperboost Pro (조성 비공개, 경도 32.5 AC)',
+    plate: '없음 — 플레이트·보강재 미사용 (종방향 강성 19.8N)',
+    outsole: 'LIGHTTRAXION 풀렝스 (두께 2mm, 마모 0.6mm)',
+    upper: 'PRIMEWEAVE 우븐 (통기성 62 — 평균 이하)',
+    width: 'D 표준폭 단일 (와이드 옵션 없음)',
+    durability: '700km+ (100km 주행 후 아웃솔 마모 거의 없음)',
+    price: '₩249,000 (한국 정가)',
+    costPerKm: '약 ₩356/km (700km 기준)',
+    footType: '중립 발',
+    landingPattern: 'MFS/FFS',
+  },
+  reviews: [
+    {
+      userType: '에디터 분석 (랩 데이터 기반)',
+      rating: 83,
+      text: '수치로 보면 폼이 이 신발의 전부입니다. 힐 충격흡수 154·전족 145는 최상위권이고, 힐 에너지 리턴 73.6%는 카본 레이싱화에 근접합니다. 미드솔 경도 32.5 AC로 매우 부드러운데도 종방향 강성이 19.8N으로 단단한 축이라, 플레이트 없이 "부드러우면서 밀어주는" 조합을 만들어냈습니다. RunRepeat 종합 83점 중 템포가 87점으로 가장 높고 안정성이 75점으로 가장 낮은데, 이 격차가 신발의 성격을 그대로 보여줍니다 — 곧게 뻗은 길을 일정한 페이스로 밀 때 가장 좋고, 방향 전환이나 흔들리는 발에는 약합니다. 사이드월이 없고 뉴트럴 전용이라 과내전 러너에게는 권하지 않습니다.',
+    },
+    {
+      userType: '한국 러너 관점',
+      rating: 3,
+      text: '한국에서 이 신발의 승부처는 계절입니다. 통기성 62는 러닝화 평균 이하이고 갑피가 촘촘한 우븐이라, 7~8월 한강에서 신으면 발에 열이 갇힙니다. 반대로 저온 경도 변화가 9%에 그쳐 겨울에 폼이 거의 굳지 않는데, 이건 한겨울 새벽 러닝이 잦은 러너에게 실질적인 장점입니다. 발 문제도 짚어야 합니다. 토박스 폭 자체는 71.4mm로 표준이지만 높이가 24.8mm로 낮아, 발볼보다 발등이 높은 발에서 압박이 옵니다. 와이드 옵션이 없다는 점까지 감안하면 발볼 넓은 한국 러너에게는 선택지가 좁습니다. 249,000원이라는 가격에 이런 제약이 붙으니, 매장 착화 없이 온라인으로 사는 것은 권하지 않습니다.',
+    },
+    {
+      userType: '해외 전문 리뷰 종합',
+      rating: 4,
+      text: 'Believe in the Run은 A 티어(퍼포먼스 A·디자인 B·가치 B)를 줬고 Road Trail Run 테스터들도 9.4~9.6점의 높은 점수를 매겼지만, 단점 지적이 한 곳에 집중된 것이 특징입니다. 뻣뻣한 힐 칼라가 복사뼈를 쓸어 Doctors of Running 리뷰어는 트랙 훈련 중 피부가 까졌다고 했고, Road Trail Run에서는 체중이 가벼운 테스터 두 명이 "면도날 같다"고 표현했습니다. Tom\'s Guide가 헤드라인에 쓴 "deal breaker"도 바로 이 갑피입니다. 아디다스 공식 홍보 문구("매우 부드러운 갑피")와 실사용 평가가 가장 크게 어긋나는 지점이라, 구매 전 반드시 확인해야 할 부분입니다. 반면 아웃솔은 평가가 일치합니다 — 100km 주행 후에도 눈에 띄는 마모가 없었습니다.',
+    },
+    {
+      userType: '착지 유형별 주의',
+      rating: 3,
+      text: 'Doctors of Running이 짚은 구조적 문제가 하나 있습니다. 45mm급 맥시멀 신발은 뒤꿈치가 부드럽게 굴러가도록 힐 베벨이 필요한데, 이 신발은 후방 힐 플레어가 넓어 뒤꿈치가 예상보다 일찍 지면에 닿습니다. 리뷰어는 이 때문에 힐 스트라이커에게 정강이 부담이 늘 수 있다고 봤고, 인구의 75~85%가 힐 착지라는 점에서 적지 않은 사람에게 해당합니다. 반대로 미드풋·포어풋 착지 러너에게는 폼의 반발이 그대로 전달돼 평가가 좋습니다. 속도 면에서도 성격이 분명한데, 마일당 6분(km당 약 3분45초)보다 빨라지면 부피감이 느껴지고 급격한 코너링을 싫어합니다. 이지런부터 템포까지가 이 신발의 자리이고, 인터벌이나 레이스용으로는 맞지 않습니다.',
+    },
+  ],
+  similarShoes: ['asics-superblast-3', 'adidas-adizero-evo-sl', 'asics-megablast', 'nike-vomero-plus'],
+  relatedPosts: [
+    { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교' },
+    { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
+  ],
+};

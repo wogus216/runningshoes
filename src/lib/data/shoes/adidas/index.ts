@@ -5,6 +5,7 @@ import { shoe as adidasAdizeroSl2 } from './adidas-adizero-sl2';
 import { shoe as adidasBoston13 } from './adidas-boston-13';
 import { shoe as adidasAdizeroEvoSl } from './adidas-adizero-evo-sl';
 import { shoe as adidasAdiosPro4 } from './adidas-adios-pro-4';
+import { shoe as adidasHyperboostEdge } from './adidas-hyperboost-edge';
 import { shoe as adidasTerrexAgravic4 } from './adidas-terrex-agravic-4';
 import { shoe as adidasTerrexAgravicSpeedUltra } from './adidas-terrex-agravic-speed-ultra';
 
@@ -15,6 +16,7 @@ export const adidasShoes: Shoe[] = [
   adidasAdizeroSl2,
   adidasBoston13,
   adidasAdizeroEvoSl,
+  adidasHyperboostEdge,
   adidasAdiosPro4,
   adidasTerrexAgravic4,
   adidasTerrexAgravicSpeedUltra,
