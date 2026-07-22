@@ -2,6 +2,30 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const octoberEvents: MarathonEvent[] = [
   {
+    id: 'nb-run-your-way-seoul-10k-2026',
+    name: '2026 Run your way Seoul 10K Race (뉴발란스 런유어웨이)',
+    date: '2026-10-04',
+    month: '10월',
+    location: '여의도공원 문화의마당 (서울 영등포구)',
+    region: '서울',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://www.nbkorea.com/raffle/collection.action?rIdx=134',
+    description:
+      '뉴발란스가 여는 도심 10K 브랜드 레이스. 접수는 선착순이 아니라 멤버십 회원 대상 래플(추첨)로, 7월 31일(금) 10시부터 8월 2일(일) 17시까지 55시간만 응모를 받습니다. 당첨 발표 8월 4일(화) 10시, 결제·기록증 제출 마감 8월 7일(금) 17시(미접수 시 자동 취소). RYW 패키지 80,000원 외에 SC 레벨 신발이 포함된 259,000원 오프라인 패키지 2종을 8월 20~21일 매장에서 선착순 판매합니다. 기록증은 참가 자격이 아니라 출발 그룹(S/A/B/C) 배정용이며, 최근 2년 이내 10K 공인 기록만 인정되고 하프·풀코스 기록은 인정되지 않습니다. 기념품은 싱글렛 또는 반팔티 택1 + 러닝양말이며 당일 착용이 필수입니다. 정원·상세 코스·완주 기념품은 공식 미공개.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '여의도공원 문화의마당 출발 및 골인. 고저차가 거의 없는 도심 평지 코스입니다. 상세 코스도는 공식에서 추후 안내 예정입니다.',
+    },
+    raceInfo: {
+      entryFees: [{ distance: '10K', fee: 80000 }],
+      startTime: '07:30',
+    },
+  },
+  {
     id: 'siheung-half-marathon-2026',
     name: '2026 시흥시 전국하프마라톤대회 (제12회)',
     date: '2026-10-05',

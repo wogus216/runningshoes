@@ -2,6 +2,183 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'nb-run-your-way-seoul-10k-2026',
+    slug: 'nb-run-your-way-seoul-10k-2026',
+    title: '뉴발란스 런유어웨이 서울 10K 접수 | 선착순 아닌 래플 — 7/31 10시부터 딱 55시간, 참가 경로는 3가지',
+    description:
+      '2026 Run your way Seoul 10K Race가 10월 4일(일) 여의도공원에서 열립니다. 접수는 선착순이 아니라 뉴발란스 멤버십 회원 대상 래플(추첨)로, 7월 31일(금) 10시부터 8월 2일(일) 17시까지 55시간만 열립니다. 참가비 80,000원 래플 외에 SC 레벨 신발이 포함된 259,000원 오프라인 패키지 2종도 있습니다. 기록증은 컷오프가 아니라 출발 그룹 배정용이며 하프·풀코스 기록은 인정되지 않습니다.',
+    thumbnail: '/images/blog/nb-run-your-way-seoul-10k-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-22',
+    category: 'news' as const,
+    readingTime: 8,
+    tags: ['런유어웨이', 'Run your way', '뉴발란스 마라톤', '서울 10K', '여의도 마라톤', '10K 대회', '마라톤 접수', 'SC 레벨'],
+    event: {
+      name: '2026 Run your way Seoul 10K Race',
+      startDate: '2026-10-04T07:30:00+09:00',
+      location: {
+        name: '여의도공원 문화의마당',
+        address: '서울특별시 영등포구 여의공원로 68',
+      },
+      organizer: '뉴발란스 (New Balance Korea)',
+      url: 'https://www.nbkorea.com/raffle/collection.action?rIdx=134',
+      offers: [
+        { name: 'RYW Package (온라인 래플)', priceKrw: 80000, availabilityEnds: '2026-08-02T17:00:00+09:00', url: 'https://www.nbkorea.com/raffle/collection.action?rIdx=134' },
+        { name: 'Shake Out Run Package (오프라인)', priceKrw: 259000 },
+        { name: 'SC Rebel Package (오프라인)', priceKrw: 259000 },
+      ],
+    },
+    faqs: [
+      {
+        question: '런유어웨이 서울 10K는 선착순 접수인가요?',
+        answer:
+          '아닙니다. 온라인 접수는 뉴발란스 멤버십 회원 대상 래플(무작위 추첨) 방식입니다. 7월 31일(금) 10시부터 8월 2일(일) 17시까지 응모하면 되고, 빨리 신청한다고 유리하지 않습니다. 다만 오프라인 패키지 2종(각 259,000원)은 8월 20일·21일 매장에서 선착순으로 판매됩니다.',
+      },
+      {
+        question: '기록증이 없으면 참가할 수 없나요?',
+        answer:
+          '참가할 수 있습니다. 기록증은 참가 자격(컷오프)이 아니라 출발 그룹(S/A/B/C) 배정에만 쓰입니다. 제출하지 않으면 자동으로 맨 마지막 그룹에 배정됩니다. 단 인정 범위가 좁아서, 최근 2년 이내(2025.1.1~2026.7.31) 대회의 10K 공인 기록 1개만 인정되고 하프·풀코스 기록이나 러닝앱·버추얼 기록은 받지 않습니다.',
+      },
+      {
+        question: '참가비는 얼마인가요?',
+        answer:
+          '온라인 래플로 당첨되면 RYW 패키지 80,000원입니다. 작년 70,000원에서 1만원 올랐습니다. 오프라인 패키지는 10K 참가권에 SC 레벨 신발이 묶여 259,000원이며, 쉐이크아웃런 참가가 포함된 버전과 신발만 포함된 버전 두 가지가 있습니다.',
+      },
+      {
+        question: '당첨되면 자동으로 결제되나요?',
+        answer:
+          '아닙니다. 8월 4일(화) 10시 당첨자 발표 후 개별 발송되는 접수 페이지에서 직접 정보 입력과 결제를 해야 합니다. 마감은 8월 7일(금) 17시이며, 이 기간에 접수하지 않으면 당첨이 자동 취소됩니다. 입력한 정보는 이후 변경할 수 없습니다.',
+      },
+    ],
+    content: `
+<div class="deadline-strip">🎟️ <strong>2026 Run your way Seoul 10K 래플 응모가 7월 31일(금) 오전 10시</strong> 시작됩니다(D-9). 선착순이 아닌 <strong>추첨</strong>이고, 응모 창은 <strong>8월 2일(일) 17시까지 딱 55시간</strong>. 대회는 10월 4일(일) 여의도공원, 참가비 80,000원입니다.</div>
+
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>선착순이 아니라 래플입니다.</strong> 뉴발란스 멤버십 회원만 응모 가능하고 <strong>7/31(금) 10:00 ~ 8/2(일) 17:00, 55시간</strong>만 열립니다. 등급과 무관하게 1인 1회</li>
+    <li>참가 경로가 <strong>3가지</strong> — 온라인 래플(80,000원) / 쉐이크아웃런 패키지(259,000원) / SC 레벨 패키지(259,000원). 오프라인 패키지 구매자는 <strong>래플 대상에서 제외</strong>됩니다</li>
+    <li>대회는 <strong>10월 4일(일) 07:30, 여의도공원 문화의마당</strong>. 기록증은 컷오프가 아니라 <strong>출발 그룹 배정용</strong>이며 하프·풀코스 기록은 인정되지 않습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗓️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 대회, 개천절 연휴 한가운데입니다</p>
+    <p>2026년 10월 3일(토)은 개천절, 10월 5일(월)은 대체공휴일이라 <strong>10/3~10/5가 사흘 연휴</strong>입니다. 런유어웨이 10K는 그 한가운데인 <strong>일요일</strong>에 열리고, 오프라인 패키지에 포함된 쉐이크아웃런은 전날인 <strong>10월 3일(토)</strong>입니다. 연휴 마지막 날인 10월 5일에는 <a href="/blog/siheung-half-marathon-2026">시흥 하프마라톤</a>이 열려, 연휴 내내 대회 일정을 짤 수도 있는 주말입니다.</p>
+  </div>
+</div>
+
+<h2>접수 요약</h2>
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>대회명</td><td>2026 Run your way Seoul 10K Race</td></tr>
+    <tr><td>대회일·출발</td><td><strong>2026년 10월 4일(일) 07:30</strong></td></tr>
+    <tr><td>장소</td><td>여의도공원 문화의마당 (출발·골인)</td></tr>
+    <tr><td>종목</td><td><strong>10km 단일 종목</strong></td></tr>
+    <tr><td>접수 방식</td><td><strong>래플(무작위 추첨)</strong> — 선착순 아님</td></tr>
+    <tr><td>래플 응모</td><td><strong>7/31(금) 10:00 ~ 8/2(일) 17:00</strong> (55시간)</td></tr>
+    <tr><td>응모 자격</td><td>뉴발란스 멤버십 회원 (VIP·MANIA·FAMILY 각 1회)</td></tr>
+    <tr><td>당첨 발표</td><td>8/4(화) 10:00 — 카카오 알림톡</td></tr>
+    <tr><td>당첨자 결제</td><td>8/4(화) 10:00 ~ <strong>8/7(금) 17:00</strong> (미접수 시 자동 취소)</td></tr>
+    <tr><td>참가비</td><td>RYW 패키지 <strong>80,000원</strong></td></tr>
+    <tr><td>기념품</td><td>싱글렛 또는 반팔티 택1 + 러닝양말</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">"선착순인 줄 알았다"가 가장 흔한 실수입니다</p>
+    <p>일반 마라톤 대회 감각으로 접근하면 어긋납니다. 이 대회는 <strong>빨리 누른다고 되는 게 아니라 추첨</strong>이고, 대신 <strong>응모 창 자체가 55시간뿐</strong>입니다. 작년(2025년)에는 86시간이었는데 <strong>올해 31시간 줄었습니다.</strong> 주말에 걸쳐 있어 놓치기 쉬우니 7월 31일 금요일 오전에 알림을 걸어두세요. 그리고 응모 전에 <strong>뉴발란스 멤버십 가입이 먼저</strong>입니다 — 회원이 아니면 응모 자체가 안 됩니다.</p>
+  </div>
+</div>
+
+<h2>참가 경로 3가지 — 뭘 골라야 하나</h2>
+<p>올해 가장 헷갈리는 부분입니다. 참가권을 얻는 길이 세 갈래인데, <strong>서로 배타적</strong>입니다(오프라인 패키지를 사면 래플 당첨자 선정에서 제외됩니다).</p>
+<table>
+  <thead><tr><th>경로</th><th>가격</th><th>구성</th><th>일정·방식</th></tr></thead>
+  <tbody>
+    <tr><td><strong>RYW 패키지</strong></td><td><strong>80,000원</strong></td><td>10K 참가권</td><td>7/31~8/2 <strong>온라인 래플</strong></td></tr>
+    <tr><td><strong>쉐이크아웃런 패키지</strong></td><td>259,000원</td><td>참가권 + SC 레벨 + <strong>쉐이크아웃런</strong>(10/3 토)</td><td>8/20(목) 매장 <strong>선착순</strong></td></tr>
+    <tr><td><strong>SC 레벨 패키지</strong></td><td>259,000원</td><td>참가권 + SC 레벨</td><td>8/21(금) 매장 <strong>선착순</strong></td></tr>
+  </tbody>
+</table>
+<p><strong>순수하게 대회만 뛰고 싶다면</strong> 80,000원 래플이 정답입니다. 다만 추첨이라 떨어질 수 있다는 게 유일한 단점이죠. <strong>떨어질 위험을 없애고 싶거나 신발이 마침 필요하다면</strong> 오프라인 패키지가 확정 참가권 역할을 합니다. 대신 매장 선착순이라 줄을 서야 하고, 8월 20일(더현대서울 아이코닉 B2, OYM 경복궁·수원·부산)과 21일(명동점, 신촌복합관점, 북촌 런 허브점, 여의도 더현대서울, 동성로 런 허브점)로 판매처가 나뉩니다.</p>
+<p>참고로 두 오프라인 패키지의 차이는 <strong>쉐이크아웃런(대회 전날 다 같이 가볍게 뛰는 행사) 포함 여부</strong> 하나뿐인데 가격은 같습니다. 연휴에 시간을 낼 수 있다면 8월 20일 쪽이 같은 값에 하나를 더 받는 구성이라 유리합니다.</p>
+
+<h2>패키지에 들어가는 'SC 레벨'이 뭔가요</h2>
+<p>259,000원 패키지의 핵심은 <strong>SC 레벨(SuperComp Rebel)</strong>이라는 신발입니다. 그런데 이 신발, <strong>바로 어제(7월 21일) 글로벌 발표된 신제품</strong>입니다. 뉴발란스가 최상위 카본 레이서 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC 엘리트 v6</a>를 발표하면서 "훈련+레이스데이 패키지"로 함께 내놓은 데일리 트레이너죠.</p>
+<p>공식 발표 기준 SC 레벨은 <strong>218g, 스택 40/36mm, 드롭 4mm</strong>에 뉴발란스의 새 <strong>Infinion 폼</strong>을 얹었고, 글로벌 가격은 <strong>$190</strong>, 발매일은 <strong>8월 20일</strong>입니다. 즉 오프라인 패키지 판매일(8/20)과 글로벌 발매일이 같은 날이라, 이 패키지가 <strong>국내에서 SC 레벨을 손에 넣는 사실상 첫 경로</strong>가 될 가능성이 큽니다.</p>
+<p>가격을 뜯어보면, 패키지 259,000원에서 참가권 80,000원을 빼면 신발 몫이 <strong>약 179,000원</strong>입니다. 다만 SC 레벨의 <strong>한국 정가는 아직 발표되지 않아</strong> 이게 이득인지는 단정할 수 없습니다. 이름이 비슷한 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 <strong>다른 라인</strong>이니 혼동하지 마세요.</p>
+
+<h2>기록증 — 컷오프가 아니라 출발 그룹용입니다</h2>
+<p>이 대회 안내에서 가장 오해가 많은 지점입니다. 결론부터 말하면 <strong>기록이 없어도 참가할 수 있습니다.</strong> 기록증은 출발 그룹을 나누는 데만 쓰입니다.</p>
+<table>
+  <thead><tr><th>그룹</th><th>기준</th></tr></thead>
+  <tbody>
+    <tr><td>S그룹 (남)</td><td>10K <strong>36분 이내</strong></td></tr>
+    <tr><td>S그룹 (여)</td><td>10K <strong>43분 이내</strong></td></tr>
+    <tr><td>A · B · C그룹</td><td>제출된 기록 분포에 따라 배정</td></tr>
+    <tr><td>미제출</td><td>자동으로 <strong>맨 마지막 그룹</strong></td></tr>
+  </tbody>
+</table>
+<p>단 <strong>인정 범위가 좁습니다.</strong> 여기서 걸리는 사람이 많을 겁니다.</p>
+<ul>
+  <li><strong>10K 공인 기록만</strong> 인정 — <strong>하프·풀코스 기록은 안 됩니다.</strong> 풀코스 서브4를 뛰었어도 10K 기록이 없으면 마지막 그룹입니다</li>
+  <li>최근 2년 이내(<strong>2025.1.1 ~ 2026.7.31</strong>) 개최 대회 완주 기록 <strong>1개</strong>만</li>
+  <li><strong>러닝앱·버추얼 레이스 기록은 불가</strong> — 공인 기록증 파일을 업로드해야 합니다</li>
+</ul>
+<p>기록증 제출 기한은 결제 기간과 같은 <strong>8월 7일(금) 17시</strong>입니다. 앞 그룹에서 출발하고 싶다면 지금부터 예전 대회 기록증을 찾아두세요. 넷타임과 그로스타임의 차이가 헷갈린다면 <a href="/blog/race-timing-chip-net-gross-time-guide-2026">기록 측정 방식 정리</a>를 참고하시면 됩니다.</p>
+
+<h2>작년과 뭐가 달라졌나</h2>
+<p>2025년 같은 대회(9월 28일 여의도공원)와 비교하면 변화가 꽤 있습니다.</p>
+<table>
+  <thead><tr><th>항목</th><th>2025</th><th>2026</th></tr></thead>
+  <tbody>
+    <tr><td>대회일</td><td>9/28(일) 08:00</td><td><strong>10/4(일) 07:30</strong></td></tr>
+    <tr><td>참가비(래플)</td><td>70,000원</td><td><strong>80,000원</strong></td></tr>
+    <tr><td>래플 기간</td><td>86시간</td><td><strong>55시간</strong></td></tr>
+    <tr><td>오프라인 패키지</td><td>189,000원 (1종)</td><td><strong>259,000원 (2종)</strong></td></tr>
+    <tr><td>출발 그룹 기준</td><td>미명시</td><td><strong>S/A/B/C 명문화</strong></td></tr>
+    <tr><td>장소</td><td colspan="2">여의도공원 문화의마당 (동일)</td></tr>
+  </tbody>
+</table>
+<p>참가비는 1만원 올라 3월에 열렸던 런유어웨이 하프와 같은 80,000원이 됐습니다. 오프라인 패키지가 7만원 오른 건 포함 신발이 레벨 v5에서 신제품 SC 레벨로 바뀐 영향이 큽니다. 눈여겨볼 건 <strong>출발 그룹 기준이 처음으로 명문화</strong>됐다는 점입니다 — 브랜드 러닝 이벤트에서 <strong>기록 레이스 성격을 강화</strong>하는 방향으로 읽힙니다. 출발 시각을 30분 앞당긴 것도 10월 초 더위를 감안한 조정으로 보입니다.</p>
+
+<h2>여의도 10K, 어떤 신발이 맞을까</h2>
+<p>여의도공원 출발·골인 코스는 <strong>고저차가 거의 없는 평지</strong>입니다. 10km라는 거리도 짧아서, 신발 선택은 "완주"보다 "얼마나 밀어붙일 것인가"로 갈립니다.</p>
+<p><strong>기록을 노린다면</strong> — 10K는 카본 레이싱화의 효율이 가장 잘 나오는 거리입니다. 발볼이 넓어 대부분의 슈퍼슈즈가 불편했다면 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(토박스 74.5mm)가 현실적인 선택이고, 실제 착용감은 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에 정리해뒀습니다. 패키지로 SC 레벨을 받는다면 그 신발 자체가 레이스데이 후보가 됩니다.</p>
+<p><strong>완주와 즐기기가 목표라면</strong> 굳이 레이싱화일 필요가 없습니다. <a href="/shoes/new-balance-1080-v15">1080 v15</a>처럼 쿠션이 두툼한 데일리화가 10km 내내 편하고, 과내전이 있다면 <a href="/shoes/new-balance-880-v15">880 v15</a>가 안전합니다. 대회까지 <strong>10주 넘게</strong> 남았으니 지금 신발을 정하면 충분히 길들일 수 있습니다.</p>
+<p>발볼·체중·부상 이력을 반영한 추천은 <a href="/recommend">1분 맞춤 추천</a>에서 받아보세요. 참고로 <strong>대회 당일에는 기념 싱글렛(또는 반팔티) 착용이 필수</strong>이니, 상의는 미리 입어보고 사이즈를 확인해두는 게 좋습니다.</p>
+
+<h2>지금부터 준비할 것</h2>
+<ul>
+  <li><strong>7월 31일 전까지</strong> — 뉴발란스 멤버십 가입(응모 필수 조건), 7/31 10시 알림 설정</li>
+  <li><strong>8월 2일 17시까지</strong> — 래플 응모 완료. 선착순이 아니니 시간 여유는 있지만 창 자체가 짧습니다</li>
+  <li><strong>8월 4~7일</strong> — 당첨 시 카카오 알림톡 확인 → 결제 + 기록증 업로드 + 기념품 사이즈 선택. <strong>미접수 시 자동 취소</strong>이고 입력 후 변경 불가</li>
+  <li><strong>8월 20~21일</strong> — 래플에 떨어졌다면 오프라인 패키지가 남은 기회입니다(매장 선착순)</li>
+  <li><strong>훈련</strong> — 8~9월이 한여름입니다. <a href="/blog/hot-weather-summer-running-safety-guide-korea">여름 러닝 안전 가이드</a>를 먼저 보고 무리하지 마세요</li>
+</ul>
+<p>여의도는 뉴발란스가 <a href="/blog/nb-runhub-yeouido-2026-popup">런 허브</a>를 운영하는 동네이기도 해서, 코스가 익숙지 않다면 미리 한 번 뛰어보는 것도 방법입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">아직 공개되지 않은 것</p>
+    <p><strong>모집 정원, 상세 코스도, 완주 기념품</strong>은 공식에서 "추후 안내 예정"으로 남겨둔 상태입니다. 특히 코스는 "여의도공원 문화의마당 출발·골인"까지만 공개됐습니다. 확정되면 이 글을 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<h2>마무리</h2>
+<p>2026 런유어웨이 서울 10K는 <strong>10월 4일(일) 여의도공원</strong>, 접수는 <strong>7월 31일(금) 10시부터 8월 2일(일) 17시까지 래플</strong>입니다. 기억할 건 세 가지 — <strong>선착순이 아니라 추첨</strong>, <strong>멤버십 회원만 응모 가능</strong>, <strong>응모 창은 55시간뿐</strong>. 참가비 80,000원이 부담스럽지 않고 가을 10K 목표가 있다면, 개천절 연휴 한가운데 열리는 도심 레이스로 조건이 좋습니다. 다른 가을 대회와 함께 계획한다면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 총정리</a>와 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+
+<p><small>※ 대회일·장소·접수 일정·참가비·기록 기준은 뉴발란스코리아 공식 런칭캘린더 및 래플 페이지(nbkorea.com)의 2026-07-21~22 게시 안내 기준입니다. 정원·상세 코스·완주 기념품은 공식 미공개 상태이며, 확정 시 갱신합니다. SC 레벨의 글로벌 스펙·발매일은 뉴발란스 공식 프레스릴리스(2026-07-21) 기준이고 한국 정가는 미발표입니다. 래플 응모 전 공식 페이지에서 최종 확인하세요. (작성 2026-07-22)</small></p>
+`,
+  },
+  {
     id: 'new-balance-sc-elite-v6-preview-2026',
     slug: 'new-balance-sc-elite-v6-preview-2026',
     title: '뉴발란스 SC 엘리트 v6 미리보기 | 8/6 글로벌 출시 — 새 Infinion 폼·190g 경량화, "발볼 슈퍼슈즈" 자리는 지킬까',
