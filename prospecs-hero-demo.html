@@ -215,18 +215,28 @@
   .showcase-inner { position: relative; max-width: 1120px; margin: 0 auto; }
   .showcase-header { text-align: center; margin-bottom: 7vh; }
   .showcase-kicker { font-size: 12px; font-weight: 700; letter-spacing: .26em; text-transform: uppercase; color: var(--forge); margin: 0 0 12px; }
-  .showcase-title { font-size: clamp(24px, 4.6vw, 40px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 12px; }
+  .showcase-title { font-size: clamp(30px, 5.4vw, 54px); font-weight: 800; letter-spacing: -.02em; margin: 0 0 14px; }
+  /* 우측 불티(좌측용 좌표를 미러) */
+  .legacy-embers.embers-right { transform: scaleX(-1); }
   .showcase-description { font-size: 15px; color: var(--steel-mid); margin: 0; }
 
   .showcase-grid { list-style: none; margin: 0; padding: 0 0 12vh; display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
   .shoe-case { position: relative; }
-  .shoe-stage { position: relative; height: 196px; }
+  .shoe-stage { position: relative; height: 252px; z-index: 1; }
+  /* 라이트 샤프트 — 위에서 무대로 내려꽂는 광선(웅장함의 축) */
+  .shoe-stage::before {
+    content: ""; position: absolute; left: 50%; top: -46px; transform: translateX(-50%);
+    width: 150px; height: 216px;
+    background: linear-gradient(to bottom, rgba(255,140,80,.17), rgba(255,77,28,.06) 55%, rgba(255,77,28,0));
+    clip-path: polygon(36% 0, 64% 0, 100% 100%, 0 100%);
+    filter: blur(3px);
+  }
 
   /* 스포트라이트: 공연 조명이 아니라 제품 뒤에서 켜지는 발열광 */
   .shoe-spot {
     position: absolute; left: 50%; top: 50%; transform: translate(-50%, -46%);
-    width: 210px; height: 210px; border-radius: 50%;
-    background: radial-gradient(ellipse at 50% 62%, rgba(255,77,28,.28) 0%, rgba(191,18,56,.14) 28%, rgba(191,18,56,0) 68%);
+    width: 272px; height: 272px; border-radius: 50%;
+    background: radial-gradient(ellipse at 50% 62%, rgba(255,77,28,.34) 0%, rgba(191,18,56,.17) 28%, rgba(191,18,56,0) 68%);
   }
   /* 진열대: 낮고 단단한 무광 강철 받침 */
   .shoe-pedestal {
@@ -240,6 +250,21 @@
     width: 152px; height: 18px; border-radius: 50%;
     background: radial-gradient(ellipse, rgba(0,0,0,.55), rgba(0,0,0,0) 70%); opacity: .5;
   }
+  /* 글로시 쇼룸 플로어 — 진열대 아래로 비치는 신발 반사 */
+  .shoe-reflect {
+    position: absolute; left: 50%; top: calc(100% - 32px); transform: translateX(-50%) scaleY(-1);
+    width: min(100%, 268px); opacity: .8; filter: blur(1.2px); pointer-events: none;
+    -webkit-mask-image: linear-gradient(to top, rgba(0,0,0,.35), transparent 68%);
+    mask-image: linear-gradient(to top, rgba(0,0,0,.35), transparent 68%);
+  }
+  .shoe-reflect svg { display: block; width: 100%; height: auto; }
+  /* 거대 넘버 고스트 — 무대 뒤 01~04 */
+  .shoe-case::before {
+    content: attr(data-num); position: absolute; left: 50%; top: -30px; transform: translateX(-50%);
+    font-family: var(--wordmark); font-weight: 900; font-size: 158px; line-height: 1; letter-spacing: -.03em;
+    color: rgba(174,183,194,.05); pointer-events: none; transition: color .6s ease;
+  }
+  .shoe-case.is-lit::before { color: rgba(255,100,50,.08); }
 
   /*
     Conceptual running-shoe silhouette for demo use only.
@@ -248,15 +273,15 @@
   */
   /* 러닝화 측면: 인라인 SVG 실루엣(<use> — 심볼 1회 정의는 body 상단) */
   .shoe-figure {
-    position: absolute; left: 50%; bottom: 34px; transform: translateX(-50%);
-    width: min(94%, 246px);
+    position: absolute; left: 50%; bottom: 36px; transform: translateX(-50%);
+    width: min(100%, 268px);
   }
   .shoe-figure svg { display: block; width: 100%; height: auto; }
   /* 제품별 미세 차이(정확한 외형 복제 아님) — 세로 스케일은 reveal transform과 충돌 없게 svg에 */
-  .shoe-figure.sf-infinite { width: min(98%, 258px); }                              /* 길고 낮은 레이싱 */
+  .shoe-figure.sf-infinite { width: min(102%, 280px); }                             /* 길고 낮은 레이싱 */
   .shoe-figure.sf-infinite svg { transform: scaleY(.92); transform-origin: bottom; }
   .shoe-figure.sf-duplex svg { transform: scaleY(1.12); transform-origin: bottom; } /* 미드솔 두께(안정화) */
-  .shoe-figure.sf-speed { width: min(86%, 224px); }                                 /* 단정한 입문형 */
+  .shoe-figure.sf-speed { width: min(90%, 244px); }                                 /* 단정한 입문형 */
 
   .shoe-meta { text-align: center; margin-top: 20px; }
   .shoe-number { font-family: var(--wordmark); font-size: 12px; font-weight: 800; letter-spacing: .18em; color: var(--steel-lo); }
@@ -291,6 +316,14 @@
     transition: opacity .85s ease, transform .85s cubic-bezier(.22,1,.36,1);
     transition-delay: calc(440ms + var(--case-index) * 260ms);
   }
+  html.js .shoe-case .shoe-reflect {
+    transition: opacity .9s ease;
+    transition-delay: calc(520ms + var(--case-index) * 260ms);   /* 신발이 놓인 뒤 바닥에 비친다 */
+  }
+  html.js .shoe-case .shoe-stage::before {
+    transition: opacity .7s ease;
+    transition-delay: calc(300ms + var(--case-index) * 260ms);   /* 샤프트는 조명과 함께 */
+  }
   html.js .shoe-case .shoe-meta {
     transition: opacity .55s ease, transform .55s cubic-bezier(.22,1,.36,1);
     transition-delay: calc(620ms + var(--case-index) * 260ms);   /* 제품 안정 후 정보 */
@@ -299,6 +332,8 @@
   html.js .shoe-case:not(.is-lit) .shoe-spot { opacity: 0; transform: translate(-50%, -46%) scale(.84); }
   html.js .shoe-case:not(.is-lit) .shoe-figure { opacity: 0; transform: translateX(-50%) translateY(28px) scale(.94); }
   html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: 0; transform: translateX(-50%) scaleX(.72); }
+  html.js .shoe-case:not(.is-lit) .shoe-reflect { opacity: 0; }
+  html.js .shoe-case:not(.is-lit) .shoe-stage::before { opacity: 0; }
   html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 0; transform: translateY(12px); }
 
   /* 앵커 이동은 부드럽게(피날레 '다시 보기' 등) */
@@ -308,15 +343,18 @@
   /* 진열 완료 후 약한 hover(데스크톱) — 큰 확대·회전 금지 */
   @media (hover: hover) {
     .shoe-case.is-lit .shoe-figure { transition: transform .35s ease, opacity .85s ease; }
-    .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%) translateY(-4px); }
-    .shoe-case.is-lit:hover .shoe-spot { opacity: 1.0; }
-    .shoe-case.is-lit:hover .shoe-pedestal { box-shadow: inset 0 1px 0 rgba(255,120,60,.5); }
+    .shoe-case.is-lit .shoe-spot { transition: opacity .3s ease, transform .3s ease; }
+    .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%) translateY(-7px) rotate(-1.6deg); }
+    .shoe-case.is-lit:hover .shoe-spot { opacity: 1; transform: translate(-50%, -46%) scale(1.07); }
+    .shoe-case.is-lit:hover .shoe-pedestal { box-shadow: inset 0 1px 0 rgba(255,120,60,.6); }
+    .shoe-case.is-lit:hover::before { color: rgba(255,110,60,.13); }
   }
 
-  @media (max-width: 900px) { .showcase-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 26px; } }
+  @media (max-width: 900px) { .showcase-grid { grid-template-columns: repeat(2, 1fr); gap: 44px 26px; } }
   @media (max-width: 560px) {
-    .showcase-grid { grid-template-columns: 1fr; gap: 44px; }
-    .shoe-stage { height: 214px; }
+    .showcase-grid { grid-template-columns: 1fr; gap: 48px; }
+    .shoe-stage { height: 248px; }
+    .shoe-case::before { font-size: 122px; top: -22px; }
     /* 모바일: 한 켤레씩 진입하므로 그룹 stagger 대신 짧은 고정 시차 */
     html.js .shoe-case .shoe-spot { transition-delay: 0ms; }
     html.js .shoe-case .shoe-figure, html.js .shoe-case .shoe-shadow { transition-delay: 140ms; }
@@ -333,6 +371,8 @@
     html.js .showcase:not(.is-revealed) .showcase-header { opacity: 1; transform: none; }
     html.js .shoe-case:not(.is-lit) .shoe-spot { opacity: 1; transform: translate(-50%, -46%); }
     html.js .shoe-case:not(.is-lit) .shoe-figure { opacity: 1; transform: translateX(-50%); }
+    html.js .shoe-case:not(.is-lit) .shoe-reflect { opacity: .8; }
+    html.js .shoe-case:not(.is-lit) .shoe-stage::before { opacity: 1; }
     html.js .shoe-case:not(.is-lit) .shoe-shadow { opacity: .5; transform: translateX(-50%); }
     html.js .shoe-case:not(.is-lit) .shoe-meta { opacity: 1; transform: none; }
     .shoe-case.is-lit:hover .shoe-figure { transform: translateX(-50%); }
@@ -786,6 +826,8 @@
 <!-- 시네마틱 쇼케이스(다크 무대) — 선언 → 신발 진열 → 라이트 컬렉션 -->
 <section class="showcase" id="running-showcase" aria-labelledby="showcase-title">
   <div class="showcase-ambient" aria-hidden="true"></div>
+  <div class="legacy-embers" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  <div class="legacy-embers embers-right" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
   <div class="showcase-inner">
     <header class="showcase-header">
       <p class="showcase-kicker">벼려낸 네 켤레</p>
@@ -793,13 +835,14 @@
       <p class="showcase-description">각자의 속도와 목적을 위해 완성된 네 가지 러닝.</p>
     </header>
     <ol class="showcase-grid">
-      <li class="shoe-case" data-index="0" style="--case-index:0">
+      <li class="shoe-case" data-index="0" data-num="01" style="--case-index:0">
         <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
             <div class="shoe-figure sf-infinite"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
+            <div class="shoe-reflect"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
           </div>
           <div class="shoe-meta">
             <span class="shoe-number">01</span>
@@ -808,13 +851,14 @@
             <span class="shoe-price">259,000원</span>
           </div>
       </li>
-      <li class="shoe-case" data-index="1" style="--case-index:1">
+      <li class="shoe-case" data-index="1" data-num="02" style="--case-index:1">
         <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
             <div class="shoe-figure sf-hyper"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
+            <div class="shoe-reflect"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
           </div>
           <div class="shoe-meta">
             <span class="shoe-number">02</span>
@@ -823,13 +867,14 @@
             <span class="shoe-price">219,000원</span>
           </div>
       </li>
-      <li class="shoe-case" data-index="2" style="--case-index:2">
+      <li class="shoe-case" data-index="2" data-num="03" style="--case-index:2">
         <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
             <div class="shoe-figure sf-duplex"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
+            <div class="shoe-reflect"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
           </div>
           <div class="shoe-meta">
             <span class="shoe-number">03</span>
@@ -838,13 +883,14 @@
             <span class="shoe-price">139,000원</span>
           </div>
       </li>
-      <li class="shoe-case" data-index="3" style="--case-index:3">
+      <li class="shoe-case" data-index="3" data-num="04" style="--case-index:3">
         <!-- 실사이트 이식 시: <a href="/shoes/{slug}"> 로 케이스 전체를 감싸 상세로 연결 -->
           <div class="shoe-stage" aria-hidden="true">
             <div class="shoe-spot"></div>
             <div class="shoe-pedestal"></div>
             <div class="shoe-figure sf-speed"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
             <div class="shoe-shadow"></div>
+            <div class="shoe-reflect"><svg viewBox="0 0 260 100"><use href="#shoe-sil"/></svg></div>
           </div>
           <div class="shoe-meta">
             <span class="shoe-number">04</span>
