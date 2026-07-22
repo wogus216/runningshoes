@@ -6958,7 +6958,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 셋 중 가장 높은 스택(40mm)에 반발도 살아 있어 "지지하되 경쾌한" 균형. 데일리 안정화의 만능형</li>
+    <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 실측 스택 36.8mm에 반발은 평범(에너지 리턴 힐 50%). 느린 페이스에서 부드럽고 안정적인 대신 속도를 올리면 단단해지는 "차분한 지지형"</li>
     <li><strong><a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a></strong> — 드롭 10mm·내구 800km로 가장 푹신하고 오래가는 프리미엄. 종아리·아킬레스 편한 쪽</li>
     <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 낮은 드롭(6mm)의 정공법 안정화. 묵직하지만 든든</li>
   </ul>
@@ -6982,7 +6982,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>32 / 26mm</td></tr>
     <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>6mm</td></tr>
     <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>330g</td></tr>
-    <tr><td>쿠션 / 반발</td><td>9 / <strong>7</strong></td><td>9 / 6</td><td>8 / 6</td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / 6</td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
     <tr><td>가격</td><td>209,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
   </tbody>
@@ -6990,7 +6990,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>지지 방식이 다르다 — 핵심 차이</h2>
 <ul>
-  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 13년 만에 딱딱한 기둥을 버리고 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼이라 쿠션과 반발(7)이 셋 중 가장 균형 잡혀, "안정화인데 경쾌하다"는 평. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
+  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 13년 만에 딱딱한 기둥을 버리고 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
   <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
   <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 6mm로 낮고 330g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
 </ul>
@@ -7012,7 +7012,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>셋 다 부담된다면 더 저렴한 대안(사코니 가이드 18·미즈노 인스파이어 21 등)까지 포함한 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화 추천 전체 가이드</a>나 <a href="/best/stability">안정화 베스트</a>를 함께 보세요.</p>
 
 <h2>마무리</h2>
-<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"경쾌함(카야노) vs 푹신함(글리세린) vs 가성비(860)"</strong>로 갈립니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
+<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"탄탄한 지지(카야노) vs 푹신함·내구(글리세린) vs 가성비(860)"</strong>로 갈립니다. 셋 다 반발은 6/10 수준이라 속도 훈련용으로는 어느 쪽도 적합하지 않습니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 제조사·실측 자료 기준이며 가격은 변동될 수 있습니다. 과내전·평발이라고 모두 안정화가 정답은 아니므로(중립화가 맞는 경우도 있음), 통증이 있다면 보행 분석을 권합니다.</p>
 `,
@@ -7059,7 +7059,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>지지 방식</th><th>무게</th><th>가격</th><th>특징</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>209,000</td><td>종합 1위, 부드러워진 균형</td></tr>
+    <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>199,000</td><td>지지력 최상위, 대신 반발은 평범</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>300g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
     <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>J-Frame</td><td>299g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
@@ -9244,8 +9244,8 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 <ul>
   <li><strong>무게</strong>: 약 <strong>298g</strong> (남성 US 9 기준). 전작 32(스펙 304g·랩 실측 295g)와 <strong>사실상 동일</strong> 수준 — 소스별 편차가 있어 정확한 증감은 단정하기 어렵습니다.</li>
-  <li><strong>스택 / 드롭</strong>: 힐 약 <strong>40mm</strong> / 전족 약 <strong>31mm</strong>, <strong>드롭 8mm</strong>(카야노 라인 중 낮은 편, 32 계승)</li>
-  <li><strong>충격흡수·경도·토박스</strong>: 33 랩 미게시 → <strong>(참고) 카야노 32</strong>는 RunRepeat 기준 부드러운 쿠션·표준 토박스대였습니다. 33은 폼이 바뀌어 <strong>더 압축적·단단하다는 평</strong>이라 32 수치를 그대로 적용하면 안 됩니다.</li>
+  <li><strong>스택 / 드롭</strong>: 공식 발표는 힐 40mm / 전족 31mm였지만 <strong>RunRepeat 실측은 힐 36.8mm / 전족 28.3mm</strong>로 3mm 이상 낮았습니다. 드롭은 실측 <strong>8.5mm</strong>(공식 8mm, 카야노 라인 중 낮은 편)</li>
+  <li><strong>충격흡수·경도·토박스</strong>: 실측 충격흡수 힐 <strong>132 SA</strong>·전족 112 SA, 에너지 리턴 힐 <strong>50.0%</strong>/전족 56.6%, 토박스 <strong>72.4mm</strong>(표준). 미드솔 자체는 부드럽게(32.8 AC) 측정되지만 반발 수치가 낮아 <strong>"부드러운데 튀지는 않는다"</strong>는 체감 평가와 일치합니다. 종합 86/100</li>
   <li><strong>내구성</strong>: 카야노 전통대로 아웃솔이 튼튼해 <strong>장거리 데일리 600km+</strong>를 기대할 수 있습니다.</li>
 </ul>
 

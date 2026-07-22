@@ -1962,7 +1962,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
     slug: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
     title: '아드레날린 GTS 25 vs 카야노 33 | 브룩스 vs 아식스 안정화 대결 — 강한 교정·가성비 vs 부드러운 안정성',
-    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 13년 만에 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(209,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
+    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 13년 만에 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(199,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
     thumbnail: '/images/blog/adrenaline-gts-25-vs-kayano-33-stability-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-08',
@@ -1974,7 +1974,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>둘 다 평발·과내전 러너를 위한 대표 안정화</strong>지만 철학이 다릅니다 — <strong>아드레날린은 GuideRails로 "옆에서 강하게 잡아주고"</strong>, <strong>카야노 33은 FLUIDSUPPORT로 "부드러운 폼이 발 모양에 맞춰 자연스럽게 잡아줍니다"</strong></li>
-    <li><strong>강한 교정력·가성비·내구성</strong>(189,000원·800km)이면 <strong>아드레날린 GTS 25</strong>, <strong>부드러운 쿠션·낮은 드롭(아킬레스 부담↓)·프리미엄</strong>이면 <strong>카야노 33</strong>(209,000원)</li>
+    <li><strong>강한 교정력·가성비·내구성</strong>(189,000원·800km)이면 <strong>아드레날린 GTS 25</strong>, <strong>부드러운 쿠션·낮은 드롭(아킬레스 부담↓)·프리미엄</strong>이면 <strong>카야노 33</strong>(199,000원)</li>
     <li><strong>심한 과내전·평발 입문자는 아드레날린</strong>(검증된 강한 지지+저가), <strong>단단한 안정화가 싫고 쿠션을 원하는 중급자는 카야노 33</strong>. 단 카야노 33은 신상이라 실측 랩은 아직 미게시입니다</li>
   </ul>
 </div>
@@ -1983,7 +1983,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">🦶</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>"얼마나 강하게 잡아줄까 vs 얼마나 부드러울까"의 대결입니다.</strong> 강한 교정과 가성비면 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>(189,000원), 부드러운 쿠션과 낮은 드롭이면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>(209,000원). 내 과내전이 심할수록 아드레날린, 안정화의 단단함이 싫었다면 카야노 33입니다.</p>
+    <p><strong>"얼마나 강하게 잡아줄까 vs 얼마나 부드러울까"의 대결입니다.</strong> 강한 교정과 가성비면 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a>(189,000원), 부드러운 쿠션과 낮은 드롭이면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>(199,000원). 내 과내전이 심할수록 아드레날린, 안정화의 단단함이 싫었다면 카야노 33입니다.</p>
   </div>
 </div>
 
@@ -2000,7 +2000,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>쿠션 성향</td><td>단단·탄탄</td><td><strong>푹신·부드러움</strong></td></tr>
     <tr><td>내구성</td><td><strong>800km</strong>(안정화 최상위)</td><td>~650km(추정)</td></tr>
     <tr><td>발볼 / 와이드</td><td>표준 / <strong>와이드 있음</strong>(힐 폭 95mm 넓음)</td><td>표준 / 와이드 있음</td></tr>
-    <tr><td>가격(한국)</td><td><strong>189,000원</strong>(km당 ~236원)</td><td>209,000원(km당 ~322원)</td></tr>
+    <tr><td>가격(한국)</td><td><strong>189,000원</strong>(km당 ~236원)</td><td>199,000원(km당 ~306원)</td></tr>
   </tbody>
 </table>
 <p class="caption">※ 아드레날린 GTS 25는 실측 기준, 카야노 33은 2026-06-01 출시 직후로 RunRepeat 랩 미게시 — 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입) 기준입니다.</p>
@@ -2012,11 +2012,11 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 13년간 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 검증 데이터가 아직 부족</strong>합니다.</p>
 
 <h2>쿠션·드롭·무게</h2>
-<p>쿠션은 <strong>카야노 33이 더 푹신합니다</strong>(FF BLAST MAX 듀얼 폼, 쿠션 9/10). 힐 스택도 40mm로 아드레날린(37mm)보다 높죠. "무릎·관절 보호되는 부드러운 안정화"를 원하면 카야노가 앞섭니다.</p>
+<p>쿠션은 <strong>생각보다 차이가 크지 않습니다</strong>. 카야노 33은 공식 스택이 40mm로 발표됐지만 RunRepeat 실측은 힐 36.8mm로, 아드레날린(37mm)과 사실상 같습니다. 쿠션 점수도 둘 다 8/10이죠. 다만 카야노는 FF BLAST MAX 덕에 <strong>착지 순간의 부드러움</strong>이, 아드레날린은 DNA Loft v3의 <strong>일관된 단단함</strong>이 특징이라 성격이 다릅니다.</p>
 <p><strong>드롭은 카야노가 8mm, 아드레날린이 10mm</strong>입니다. 2mm 차이지만, 드롭이 낮은 카야노가 <strong>아킬레스건 부담이 약간 덜해</strong> 아킬레스 이력이 있는 러너에게 유리합니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염 가이드</a> 참고). 무게는 300g vs 298g으로 사실상 동일합니다.</p>
 
 <h2>내구성·가격 — 아드레날린의 영역</h2>
-<p>순수 가성비는 <strong>아드레날린이 확실히 앞섭니다.</strong> 가격이 <strong>189,000원으로 20,000원 저렴</strong>하고, 내구성이 <strong>800km로 안정화 카테고리 최상위</strong>라 km당 약 236원 — 매일 신어도 부담이 적습니다. 카야노 33은 209,000원에 내구 약 650km로 km당 약 322원입니다. <strong>"매일 신는 안정화 데일리 한 켤레"를 오래 쓰려면 아드레날린</strong>이 경제적입니다.</p>
+<p>순수 가성비는 <strong>아드레날린이 앞섭니다.</strong> 가격이 <strong>189,000원으로 10,000원 저렴</strong>하고, 내구성이 <strong>800km로 안정화 카테고리 최상위</strong>라 km당 약 236원 — 매일 신어도 부담이 적습니다. 카야노 33은 199,000원에 내구 약 650km로 km당 약 306원입니다. 정가 차이는 1만원으로 크지 않지만, 내구성 차이 때문에 장기 비용에서 벌어집니다. <strong>"매일 신는 안정화 데일리 한 켤레"를 오래 쓰려면 아드레날린</strong>이 경제적입니다.</p>
 <div class="callout warning">
   <span class="callout-icon">🆕</span>
   <div class="callout-body">
@@ -2040,11 +2040,11 @@ export const posts_2026_07: BlogPost[] = [
       },
       {
         question: '안정화인데 쿠션이 푹신한 걸 원해요. 뭐가 나을까요?',
-        answer: '카야노 33입니다. 카야노 최초로 FF BLAST MAX + PLUS 듀얼 폼을 얹어 "안정화라 쿠션이 단단하다"는 기존 약점을 크게 개선했고, 힐 스택도 40mm로 높은 편입니다(쿠션 9/10). 아드레날린 GTS 25는 DNA Loft v3가 다소 단단한 착화감(HA 25.1)이라 탄탄한 지지감은 좋지만 푹신함은 카야노에 밀립니다. 부드러운 안정화를 원하면 카야노 33, 단단하고 안정적인 착지를 원하면 아드레날린을 고르세요.',
+        answer: '착지 순간의 부드러움은 카야노 33이 앞섭니다. FF BLAST MAX 듀얼 폼이라 발을 딛는 느낌이 더 무르죠. 다만 랩 실측을 보면 격차가 크지 않습니다 — 힐 스택은 카야노 36.8mm 대 아드레날린 37mm로 사실상 동일하고, 쿠션 점수도 둘 다 8/10입니다. 카야노 33은 페이스를 올리면 미드솔이 빠르게 눌려 단단해지는 성향이라, 이지런·워킹 위주면 카야노 33, 일관된 지지감과 템포까지 아우르려면 아드레날린을 고르세요.',
       },
       {
         question: '가격과 내구성만 보면 뭐가 이득인가요?',
-        answer: '아드레날린 GTS 25가 확실히 이득입니다. 189,000원으로 카야노 33(209,000원)보다 20,000원 저렴하고, 내구성이 800km로 안정화 카테고리 최상위입니다(카야노 약 650km). km당 비용으로 환산하면 아드레날린 약 236원, 카야노 약 322원으로 차이가 큽니다. 매일 신는 데일리 안정화를 오래 경제적으로 쓰려면 아드레날린이 유리합니다.',
+        answer: '아드레날린 GTS 25가 이득입니다. 189,000원으로 카야노 33(199,000원)보다 10,000원 저렴하고, 내구성이 800km로 안정화 카테고리 최상위입니다(카야노 약 650km). km당 비용으로 환산하면 아드레날린 약 236원, 카야노 약 306원 — 정가 차이보다 내구성 차이가 장기 비용을 가릅니다. 매일 신는 데일리 안정화를 오래 경제적으로 쓰려면 아드레날린이 유리합니다.',
       },
       {
         question: '카야노 33이 신상인데 지금 사도 되나요, 카야노 32를 살까요?',

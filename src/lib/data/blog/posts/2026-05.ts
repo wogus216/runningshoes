@@ -4624,7 +4624,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'asics-kayano-32-vs-33-comparison',
     slug: 'asics-kayano-32-vs-33-comparison',
     title: '아식스 카야노 33 vs 32 비교 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 출시 후 평발 한국 러너는 어느 세대?',
-    description: '6월 1일 출시된 카야노 33(209,000원 안팎)과 검증된 32(199,000원, 세일 진입). 13년 만의 구조 대변혁 — 4D Guidance System 폐지·FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
+    description: '6월 1일 출시된 카야노 33(199,000원)과 검증된 32(같은 정가 199,000원, 세일 진입). 13년 만의 구조 대변혁 — 4D Guidance System 폐지·FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
     thumbnail: '/images/blog/asics-kayano-32-vs-33-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-17',
@@ -4645,7 +4645,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📅</span>
   <div class="callout-body">
     <p class="callout-title">출시 완료 — 카야노 33은 6월 1일 출시됐습니다</p>
-    <p>ASICS GEL-KAYANO 33은 <strong>2026년 6월 1일 글로벌 출시</strong>됐고, 한국 가격은 209,000원 안팎입니다(글로벌 $170 기준, asics.co.kr 정가 확인 권장). 출시 후 <strong>전문가 초기 리뷰</strong>도 나왔는데, Doctors of Running의 Matt Klein은 "32는 올해의 안정화였지만 33은 탑3에도 못 든다"며 <strong>FLUIDSUPPORT가 기존 4D Guidance보다 미드풋 지지가 약하고 반발이 둔하다</strong>고 평했습니다. "더 부드러워졌지만 교정력은 32가 위"라는 게 초기 중평이죠(RunRepeat 정량 랩은 아직 미게시). 본 글은 신상 33을 살지, 검증된 32를 세일로 살지 결정하기 위한 비교입니다.</p>
+    <p>ASICS GEL-KAYANO 33은 <strong>2026년 6월 1일 글로벌 출시</strong>됐고, 한국 정가는 <strong>199,000원</strong>으로, 전작 32와 같은 가격에 나왔습니다(아식스 코리아 공식몰 기준). 출시 후 <strong>전문가 초기 리뷰</strong>도 나왔는데, Doctors of Running의 Matt Klein은 "32는 올해의 안정화였지만 33은 탑3에도 못 든다"며 <strong>FLUIDSUPPORT가 기존 4D Guidance보다 미드풋 지지가 약하고 반발이 둔하다</strong>고 평했습니다. "더 부드러워졌지만 교정력은 32가 위"라는 게 초기 중평이죠. 이후 게시된 RunRepeat 랩도 같은 방향이었습니다 — 에너지 리턴 힐 50.0%로 반발은 평범했고, 실측 스택은 힐 36.8mm로 공식 발표(40mm)보다 낮았습니다. 본 글은 신상 33을 살지, 검증된 32를 세일로 살지 결정하기 위한 비교입니다.</p>
   </div>
 </div>
 
@@ -7438,7 +7438,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 추정 199,000원~209,000원</li>
+    <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 정가 199,000원</li>
     <li>13년간 유지된 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
     <li>스택 40mm·드롭 8mm·무게 298g — 32와 거의 동일한 외형이지만 <strong>착화감은 완전히 다른 방향</strong>으로 진화. 32 재고 세일이 33 발매 직후 시작될 것</li>
   </ul>
