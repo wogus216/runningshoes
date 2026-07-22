@@ -32,3 +32,12 @@ blog-auto-494801-*.json
 # next-sitemap 산출물 (postbuild가 out/에 생성 — public에 커밋 금지)
 public/robots.txt
 public/sitemap*.xml
+
+# 브랜드 히어로 데모 시안(로컬 전용 — 바탕화면 prospecs-demo/ 에 보관)
+# 미확정 브랜드 협업 시안 + 제품 이미지 임베드 포함이라 공개 리포에 두지 않는다
+/prospecs-hero-demo.html
+/prospecs-hero-v2-heritage.html
+/prospecs-hero-prompt.md
+/prospecs-showcase-prompt.md
+/prospecs-finale-prompt.md
+/nike-hero-demo.html
