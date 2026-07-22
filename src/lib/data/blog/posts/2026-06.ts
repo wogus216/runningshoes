@@ -3051,7 +3051,7 @@ export const posts_2026_06: BlogPost[] = [
     tags: ['아디다스 러닝화', '아디다스 계급도', '러닝화 라인업', '러닝화 등급', '아디제로', '아디오스 프로', '슈퍼노바', '보스턴', 'EnergyRods', 'Lightstrike'],
     faqs: [
       { question: '아디다스 "아디제로(Adizero)"는 무슨 뜻인가요?', answer: '아디제로는 아디다스의 스피드·레이싱 서브브랜드입니다. 이름에 아디제로가 붙으면 빠르게 달리기 위한 신발이에요. 입문 SL2부터 보스턴(슈퍼트레이너), Evo SL(카본 없는 슈퍼폼), 아디오스 프로(카본 레이싱), 그리고 97g 서브2 신발 아디오스 프로 에보까지 하나의 스피드 사다리를 이룹니다.' },
-      { question: 'EnergyRods(에너지로드)가 뭔가요?', answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 카본 막대를 넣은 구조입니다. 아디오스 프로는 5개, 보스턴은 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.' },
+      { question: 'EnergyRods(에너지로드)가 뭔가요?', answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 막대를 넣은 구조입니다. 아디오스 프로는 카본 막대 5개, 보스턴은 유리섬유 재질의 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.' },
       { question: '아디제로 Evo SL은 왜 카본도 없는데 빠른가요?', answer: '레이싱화 아디오스 프로에 쓰는 고급 폼(100% Lightstrike Pro)을 카본 플레이트·로드 없이 통째로 넣었기 때문입니다. 223g 경량에 83% 에너지 리턴으로, 20만원대에 슈퍼슈즈에 가까운 반발을 줍니다. 카본의 부담 없이 빠른 훈련을 원하는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
       { question: '아디다스 Boost(부스트)는 어디 갔나요?', answer: '러닝 퍼포먼스 라인에서는 사실상 세대교체됐습니다. 지금 아디다스 러닝화는 데일리에 Dreamstrike+, 레이싱에 Lightstrike Pro를 씁니다. Boost는 이제 울트라부스트 같은 라이프스타일·캐주얼 쪽에 주로 남아 있어요.' },
       { question: '아디다스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아디다스는 토박스가 좁은 편이라 발볼 넓으면 주의가 필요합니다. 다만 슈퍼노바 라이즈 2와 아디제로 SL2는 와이드 옵션이 있어 그나마 낫습니다. 아디오스 프로·아그라빅 같은 레이싱·트레일은 좁으니 발볼 넓으면 반 치수 크게 신거나 다른 브랜드를 함께 보세요.' },
@@ -3061,7 +3061,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>아디다스는 "아디제로"가 핵심</strong> — 이름에 아디제로가 붙으면 스피드·레이싱 라인입니다. 데일리는 슈퍼노바 하나뿐이고, 나머지는 거의 아디제로예요.</li>
-    <li><strong>EnergyRods = 카본 막대</strong> — 통짜 플레이트 대신 발가락뼈를 본뜬 카본 막대로 추진합니다(아디오스 프로 5개, 보스턴 2.0).</li>
+    <li><strong>EnergyRods = 추진 막대</strong> — 통짜 플레이트 대신 발가락뼈를 본뜬 막대로 추진합니다(아디오스 프로=카본 5개, 보스턴=유리섬유 2.0).</li>
     <li><strong>Boost는 퇴장, Lightstrike 시대</strong> — 퍼포먼스 폼은 Dreamstrike+(데일리)·Lightstrike Pro(레이싱)로 세대교체됐습니다.</li>
   </ul>
 </div>
@@ -3089,7 +3089,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>그리고 아디다스만의 추진 기술이 <strong>EnergyRods(에너지로드)</strong>입니다. 다른 브랜드가 통짜 카본 플레이트를 넣을 때, 아디다스는 <strong>발가락뼈를 본뜬 카본 막대</strong>를 넣어요(아디오스 프로 5개, 보스턴 2.0). 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 방식입니다.</p>
+<p>그리고 아디다스만의 추진 기술이 <strong>EnergyRods(에너지로드)</strong>입니다. 다른 브랜드가 통짜 카본 플레이트를 넣을 때, 아디다스는 <strong>발가락뼈를 본뜬 막대</strong>를 넣어요(아디오스 프로=카본 5개, 보스턴=유리섬유 2.0). 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 방식입니다.</p>
 
 <h2>2. 폼이 등급을 만든다 — Lightstrike → Dreamstrike+ → Lightstrike Pro</h2>
 
@@ -3103,7 +3103,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>Lightstrike (EVA)</strong></td><td>기본 트레일·쿠션</td><td>테렉스 아그라빅</td></tr>
     <tr><td><strong>Dreamstrike+</strong></td><td>데일리 슈퍼크리티컬</td><td>슈퍼노바 라이즈</td></tr>
     <tr><td><strong>Lightstrike Pro (PEBA급)</strong></td><td>레이싱 최상위 반발</td><td>SL2 · 보스턴 · Evo SL · 아디오스 프로</td></tr>
-    <tr><td><strong>+ EnergyRods (카본 막대)</strong></td><td>추진력 강화</td><td>보스턴(2.0) · 아디오스 프로(5개)</td></tr>
+    <tr><td><strong>+ EnergyRods (추진 막대: 카본/유리섬유)</strong></td><td>추진력 강화</td><td>보스턴(2.0) · 아디오스 프로(5개)</td></tr>
   </tbody>
 </table>
 
@@ -3137,7 +3137,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>🟢 매일 편한 데일리</strong> → <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>(쿠션) 또는 와이드 되는 <a href="/shoes/adidas-supernova-rise-2">라이즈 2</a>. 세대 차이는 <a href="/blog/adidas-supernova-rise-2-vs-3-comparison">슈퍼노바 라이즈 2 vs 3</a>에.</li>
   <li><strong>💰 가성비 멀티 트레이너</strong> → <a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>(14.9만). 데일리부터 가벼운 템포까지.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>. 223g에 슈퍼폼, 가성비 슈퍼슈즈로 화제작입니다. 자세한 분석은 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>에.</li>
-  <li><strong>🏃 훈련+레이스 겸용 카본</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. Energy Rods 2.0으로 템포·하프에.</li>
+  <li><strong>🏃 훈련+레이스 겸용 플레이트</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 유리섬유 Energy Rods 2.0으로 템포·하프에.</li>
   <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(200g). 5개 Energy Rods로 알파플라이보다 안정적인 서브3 무기.</li>
   <li><strong>⛰️ 트레일</strong> → 올라운드 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>(Continental 그립) 또는 레이싱 <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>.</li>
 </ul>

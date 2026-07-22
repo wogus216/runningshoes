@@ -3228,7 +3228,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     title: '템포 트레이너 3파전 | 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5 — 훈련·레이스 겸용, 뭘 신지',
-    description: '"훈련도 하고 하프 레이스도 뛰고 싶은데 한 켤레로 안 될까?"에 답하는 20만원 안팎 템포 트레이너 세 켤레를 정면 비교했습니다. 아디다스 보스턴 13(카본 Energy Rods·컨티넨탈 그립·550km 가성비), 나이키 줌 플라이 6(풀 카본·40mm 스택·베이퍼플라이 DNA), 써코니 엔돌핀 스피드 5(73.2% 반발·나일론 플레이트·부드러운 매일 훈련). 플레이트 종류부터 발볼·내구·가성비까지, 내 훈련에 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
+    description: '"훈련도 하고 하프 레이스도 뛰고 싶은데 한 켤레로 안 될까?"에 답하는 20만원 안팎 템포 트레이너 세 켤레를 정면 비교했습니다. 아디다스 보스턴 13(유리섬유 Energy Rods·컨티넨탈 그립·550km 가성비), 나이키 줌 플라이 6(풀 카본·40mm 스택·베이퍼플라이 DNA), 써코니 엔돌핀 스피드 5(73.2% 반발·나일론 플레이트·부드러운 매일 훈련). 플레이트 종류부터 발볼·내구·가성비까지, 내 훈련에 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
     thumbnail: '/images/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-03',
@@ -3239,7 +3239,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>셋 다 "훈련+레이스 겸용" 템포 트레이너지만 플레이트 성격이 다릅니다</strong> — 보스턴 13은 카본 Energy Rods, 줌 플라이 6은 풀 카본, 엔돌핀 스피드 5는 나일론(유연)</li>
+    <li><strong>셋 다 "훈련+레이스 겸용" 템포 트레이너지만 플레이트 성격이 다릅니다</strong> — 보스턴 13은 유리섬유 Energy Rods, 줌 플라이 6은 풀 카본, 엔돌핀 스피드 5는 나일론(유연)</li>
     <li><strong>가성비·내구·그립 → 보스턴 13</strong>(179k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(73.2% 리턴)</li>
     <li>발볼 넓은 한국 러너는 <strong>줌 플라이 6(좁음) 주의</strong>, 보스턴·엔돌핀은 표준이라 무난합니다</li>
   </ul>
@@ -3263,7 +3263,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>힐 스택</td><td>34mm</td><td><strong>40mm(최고)</strong></td><td>37.4mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>10mm</td><td>10.6mm</td></tr>
     <tr><td>미드솔</td><td>Lightstrike Pro</td><td>ZoomX+SR-02</td><td>PWRRUN PB(PEBA)</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>카본 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
+    <tr><td><strong>플레이트</strong></td><td>유리섬유 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
     <tr><td>에너지 리턴</td><td>높음</td><td>61%</td><td><strong>73.2%(최고)</strong></td></tr>
     <tr><td>아웃솔</td><td><strong>컨티넨탈(그립최강)</strong></td><td>러버</td><td>XT-900 러버</td></tr>
     <tr><td><strong>발볼</strong></td><td>표준</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
@@ -3275,7 +3275,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>※ 무게·스택·에너지 리턴은 RunRepeat 실측 및 공식 기준. 가격은 한국 MSRP.</small></p>
 
 <h2>보스턴 13 — 가성비·내구·그립의 만능 트레이너</h2>
-<p><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a>은 "훈련도 하고 레이스도 뛰고 싶은데 하나로 안 되나요?"에 가장 먼저 추천하는 만능 템포 트레이너입니다. <strong>Lightstrike Pro + 카본 Energy Rods 2.0</strong>(통짜 플레이트 대신 카본 막대)로 254g에 뛰어난 반응성을 내면서, 셋 중 <strong>가장 저렴하고(179,000원) 가장 오래 갑니다(550km)</strong>. km당 약 325원으로 카본 트레이너 중 가성비 최상위죠.</p>
+<p><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a>은 "훈련도 하고 레이스도 뛰고 싶은데 하나로 안 되나요?"에 가장 먼저 추천하는 만능 템포 트레이너입니다. <strong>Lightstrike Pro + 유리섬유 Energy Rods 2.0</strong>(통짜 플레이트 대신 유리섬유 막대)로 254g에 뛰어난 반응성을 내면서, 셋 중 <strong>가장 저렴하고(179,000원) 가장 오래 갑니다(550km)</strong>. km당 약 325원으로 플레이트 트레이너 중 가성비 최상위죠.</p>
 <p>결정적 강점은 <strong>컨티넨탈 러버 아웃솔</strong>입니다. 비 온 뒤 젖은 한강·아스팔트에서도 그립이 확실해 사계절 훈련에 안심이 됩니다. 안정성도 8로 셋 중 가장 높아 25km LSD에서도 무릎 부담이 적고요. 발볼은 표준이라 보통 발볼은 무난하지만, 와이드 옵션이 없어 매우 넓은 발은 시착이 필요합니다.</p>
 <p><strong>✅ 이런 분께</strong> — 훈련+하프 레이스 겸용 한 켤레 / 가성비·내구를 중시 / 비 오는 날도 자주 뛰는 러너 / 안정감을 원하는 중급+</p>
 
@@ -3303,7 +3303,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="faq">
   <div class="faq-item">
     <p class="faq-q">Q. 카본 플레이트와 나일론 플레이트, 뭐가 다른가요?</p>
-    <p class="faq-a">A. 카본(보스턴·줌플라이)은 <strong>더 빳빳해 추진력이 또렷</strong>하지만 발·아킬레스 부담이 큽니다. 나일론(엔돌핀)은 <strong>더 유연해 매일 훈련에 부담이 적고</strong> 부드럽게 반발합니다. 레이스 손맛은 카본, 매일 훈련의 편안함은 나일론이 유리합니다.</p>
+    <p class="faq-a">A. 빳빳한 로드·플레이트 계열(보스턴의 유리섬유 로드·줌플라이의 카본)은 <strong>추진력이 또렷</strong>하지만 발·아킬레스 부담이 큽니다. 나일론(엔돌핀)은 <strong>더 유연해 매일 훈련에 부담이 적고</strong> 부드럽게 반발합니다. 레이스 손맛은 카본, 매일 훈련의 편안함은 나일론이 유리합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 입문자가 첫 신발로 이 중 하나를 골라도 되나요?</p>
