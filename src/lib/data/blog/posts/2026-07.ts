@@ -2,6 +2,99 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'new-balance-sc-rebel-preview-2026',
+    slug: 'new-balance-sc-rebel-preview-2026',
+    title: '뉴발란스 SC 레벨 미리보기 | 8/20 글로벌 출시 — 해외 리뷰 9.99/10 극찬, 그런데 발볼이 걸린다',
+    description:
+      '뉴발란스 SC 레벨(SuperComp Rebel)이 8월 20일 글로벌 발매됩니다($190·218g·40/36mm·드롭 4mm). 첫 해외 리뷰가 Road Trail Run 9.99/10이라는 이례적 점수를 냈고, SC 트레이너 v3를 사실상 대체하는 자리입니다. 다만 RTR·Doctors of Running 두 곳 모두 갑피가 좁다고 지적했고 와이드 옵션도 없습니다. 한국 정가는 미발표이며 런칭 캘린더에도 아직 없습니다 — 대회 패키지가 먼저 열립니다.',
+    thumbnail: '/images/blog/new-balance-sc-rebel-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-23',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['뉴발란스 SC 레벨', 'SC Rebel', 'Infinion 폼', 'Energy Arc', '슈퍼 트레이너', '신상 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>SC 레벨은 8월 20일 글로벌 발매</strong>($190·218g·스택 40/36mm·드롭 4mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
+    <li>첫 해외 리뷰가 <strong>이례적으로 높습니다</strong> — Road Trail Run 멀티 테스터가 9.99/10, 9.5/10을 줬고, 포지션상 <strong><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>를 대체</strong>합니다(278g → 218g, 60g 경량화)</li>
+    <li>발목을 잡는 건 <strong>갑피 폭</strong>입니다. RTR·DOR <strong>두 곳 모두</strong> "좁다"고 지적했고 와이드 옵션도 없습니다. 발볼 넓은 한국 러너라면 시착 없이는 권하기 어렵습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>뉴발란스가 7월 21일 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC 엘리트 v6</a>와 함께 발표한 신모델입니다. 엘리트 v6가 레이스데이 전용이라면, SC 레벨은 <strong>같은 기술을 훈련까지 끌고 내려온 쪽</strong>입니다. 이름이 비슷한 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 <strong>완전히 다른 라인</strong>이니 혼동하지 마세요.</p>
+</div>
+
+<h2>공식 스펙</h2>
+<table>
+  <thead><tr><th>항목</th><th>SC 레벨 (v1)</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td><strong>218g</strong> (남 US 9.5) / 174g (여 US 7)</td></tr>
+    <tr><td>스택</td><td>힐 40mm / 전족 36mm</td></tr>
+    <tr><td>드롭</td><td>4mm <em>(DOR "체감은 5~6mm에 가깝다")</em></td></tr>
+    <tr><td>미드솔</td><td>Infinion 폼 (반응성 강화 버전)</td></tr>
+    <tr><td>플레이트</td><td>Energy Arc — <strong>폼에 묻히지 않고 지면 쪽에 배치</strong></td></tr>
+    <tr><td>아웃솔</td><td>CPU(캐스트 폴리우레탄) — 러버보다 내구성 우위</td></tr>
+    <tr><td>가격 / 발매</td><td>$190 · 2026년 8월 20일 (글로벌)</td></tr>
+  </tbody>
+</table>
+
+<h2>첫 리뷰 점수가 심상치 않습니다</h2>
+<p>Road Trail Run의 멀티 테스터 리뷰에서 Peter가 <strong>9.99/10</strong>, Sam이 <strong>9.5/10</strong>(주행 9.6·핏 9.4·가치 9.5)을 매겼습니다. 10점 만점에 9.99는 러닝화 리뷰에서 사실상 보기 힘든 숫자입니다. 테스터들이 공통적으로 짚은 건 <strong>"플레이트가 딱딱하게 튀지 않으면서 확실히 밀어준다"</strong>는 점이었습니다.</p>
+<p>비결은 Energy Arc 플레이트의 위치로 보입니다. 보통 카본 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 <strong>플레이트를 지면 쪽에 깔고</strong> 뒤쪽은 미드풋을 잡아주는 역할, 앞쪽은 추진 역할로 나눴습니다. 덕분에 폼이 물러도 플랫폼이 무너지지 않는다는 게 테스터들의 설명입니다. RTR의 표현을 그대로 옮기면 <em>"빠른 페이스에서 그냥 웅웅거린다(HUMS)"</em> 정도가 되겠네요.</p>
+<p>Doctors of Running의 평가는 조금 더 차분합니다. <strong>템포와 긴 인터벌</strong>에서 가장 좋고, 짧고 폭발적인 스피드 훈련에는 덜 맞는다고 봤습니다. 미드풋에 살짝 튀어나온 부분이 있어 초반에는 전환이 어색하게 느껴질 수 있다는 지적도 있습니다. 다만 마일리지가 쌓일수록 폼이 부드러워지며 반발이 살아난다는 평이라, 첫 인상만으로 판단할 신발은 아닌 듯합니다.</p>
+
+<h2>SC 트레이너 v3의 자리를 가져갑니다</h2>
+<p>이번 발표에서 가장 실질적인 변화는 여기입니다. RTR 테스터들은 SC 레벨이 <strong>SC 트레이너 v3를 대체한다</strong>고 못 박았습니다. 트레이너 v3를 두고 <em>"훨씬 무겁고 굼떴다"</em>고 평가했죠. 실제로 무게 차이가 큽니다.</p>
+<table>
+  <thead><tr><th>모델</th><th>무게</th><th>스택(힐/전족)</th><th>드롭</th><th>성격</th></tr></thead>
+  <tbody>
+    <tr><td><strong>SC 레벨</strong> (신규)</td><td><strong>218g</strong></td><td>40 / 36mm</td><td>4mm</td><td>훈련·레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a></td><td>278g</td><td>37 / 30mm</td><td>7mm</td><td>쿠션 트레이너 <em>(대체 대상)</em></td></tr>
+    <tr><td><a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a></td><td>220g</td><td>33 / 27mm</td><td>6mm</td><td>경량 데일리 (플레이트 없음)</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a></td><td>198g</td><td>39 / 29mm</td><td>11mm</td><td>카본 레이서</td></tr>
+  </tbody>
+</table>
+<p>표를 보면 SC 레벨의 위치가 분명해집니다. <strong>레벨 v5와 거의 같은 무게(218g vs 220g)인데 스택은 7mm 더 높습니다.</strong> 즉 "가벼운데 더 두껍다"가 이 신발의 핵심입니다. 레이싱화인 엘리트 v5와도 무게 차이가 20g에 불과하고요.</p>
+<p>정리하면 <strong>레벨 v5는 유연하고 말랑한 무플레이트 데일리, SC 레벨은 단단하고 굴러가는 플레이트 트레이너</strong>입니다. 이름이 같은 계보라고 업그레이드판으로 생각하면 안 됩니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 다뤘습니다.</p>
+
+<h2>발볼 — 여기서 갈립니다</h2>
+<p>우리 사이트에서 가장 중요하게 보는 축인데, 이번엔 신호가 좋지 않습니다. <strong>두 매체가 독립적으로 같은 지적</strong>을 했습니다.</p>
+<ul>
+  <li>RTR — 단점 항목에 <strong>"갑피가 좁아 발볼 넓거나 발등 높은 발에는 부적합"</strong>을 명시</li>
+  <li>DOR — <strong>"토박스가 좁아지는 형태(tapered)에 타이트한 핏"</strong>, 발등 볼륨이 큰 발은 피하라고 권고</li>
+  <li>DOR은 <strong>깔창(오소틱) 사용자에게도 비추천</strong>합니다 — 갑피 볼륨이 부족해 깔창을 넣을 여유가 없다는 이유입니다</li>
+</ul>
+<p>비교 대상이 있습니다. 같은 뉴발란스 <a href="/blog/new-balance-sc-elite-v5-review">SC 엘리트 v5</a>는 토박스 실측 74.5mm로 <strong>"발볼 넓어도 신을 수 있는 드문 슈퍼슈즈"</strong>라는 평가를 받았고 와이드 옵션도 있습니다. DOR도 두 신발을 비교하며 <em>"엘리트 v5는 갑피가 대단히 편안한 반면 SC 레벨은 좁다"</em>고 했습니다. 같은 브랜드 안에서도 성격이 갈리는 셈이죠.</p>
+<p><strong>따라서 발볼이 넓다면 SC 레벨은 온라인 선구매 대상이 아닙니다.</strong> 발볼이 보통이거나 좁은 편이고 발등이 낮다면, 오히려 "딱 감기는 핏"이 장점이 될 수 있습니다. DOR이 <em>"엘리트 v6가 너무 공격적이라 느끼는 러너에게 좋을 수 있다 — 핏만 맞는다면"</em>이라고 단서를 단 이유입니다.</p>
+
+<h2>한국은 언제, 얼마에?</h2>
+<p>현재로선 <strong>한국 정가도, 단독 출시일도 발표되지 않았습니다.</strong> 뉴발란스코리아 런칭 캘린더에도 (7월 말 일정까지 공개된 시점 기준) SC 레벨과 SC 엘리트 v6 모두 올라와 있지 않습니다.</p>
+<p>다만 국내에서 이 신발을 먼저 만나는 경로는 이미 열려 있습니다. <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 서울 10K</a> 오프라인 패키지에 SC 레벨이 묶여 있고, 판매일이 <strong>8월 20일(쉐이크아웃런 패키지)·8월 21일(SC 레벨 패키지)</strong> 매장 선착순입니다. 글로벌 발매일과 같은 날이죠. 패키지가 259,000원이고 10K 참가권이 80,000원이니 신발 몫은 <strong>약 179,000원 상당</strong>으로 계산되지만, <strong>한국 정가가 안 나온 이상 이게 이득인지는 아직 판단할 수 없습니다.</strong></p>
+<p>참고 좌표만 두자면 국내에서 SC 트레이너 v3가 249,000원, 레벨 v5가 189,000원입니다. SC 레벨이 트레이너 v3 자리를 대체한다는 점을 감안하면 그 사이 어딘가가 되겠지만, 이건 어디까지나 추정이고 공식 발표를 기다려야 합니다.</p>
+
+<div class="callout warning">
+  <p><strong>확정되지 않은 것들</strong> — ① <strong>한국 정가·단독 출시일 미발표</strong>(런칭 캘린더 미등재) ② <strong>RunRepeat 랩 데이터 미게시</strong>라 충격흡수·에너지 리턴·토박스 실측 mm는 아직 없습니다. 본문의 발볼 평가는 두 매체의 <strong>주관적 착화 평가</strong>이며 정량 수치가 아닙니다 ③ 와이드 옵션 제공 여부도 미확인입니다. 랩 수치와 한국 정가가 나오면 이 글을 정식 리뷰로 갱신하겠습니다.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <h3>레벨 v5를 잘 신고 있는데 갈아탈 만한가요?</h3>
+  <p>성격이 다른 신발이라 "업그레이드"로 접근하면 실망할 수 있습니다. 레벨 v5의 유연하고 말랑한 느낌이 좋아서 신는 거라면 SC 레벨은 오히려 단단하게 느껴질 겁니다. 반대로 "레벨은 좋은데 장거리에서 쿠션이 아쉽다"였다면 스택이 7mm 높아진 SC 레벨이 답이 될 수 있습니다. 다만 레벨 v5보다 갑피가 확실히 좁으니 시착은 필수입니다.</p>
+  <h3>초보도 신을 수 있나요?</h3>
+  <p>권하지 않습니다. 드롭 4mm에 플레이트가 들어간 40mm 스택이라, 러닝 경험이 쌓이지 않은 상태에서는 종아리·아킬레스 부담이 큽니다. DOR도 걷기나 오래 서 있는 용도로는 부적합하다고 했습니다. 입문 단계라면 쿠션 데일리부터 시작하는 편이 안전합니다.</p>
+  <h3>마라톤 레이스에 신어도 되나요?</h3>
+  <p>가능합니다. RTR은 <strong>"엘리트가 아닌 마라토너에게 $190은 영리한 선택"</strong>이라고 평가했습니다. 카본 레이서보다 저렴하면서 훈련에도 쓸 수 있으니까요. 다만 서브3 근처의 기록 목표라면 여전히 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트</a> 계열이 우선입니다.</p>
+  <h3>발볼이 넓은데 와이드 나오나요?</h3>
+  <p>현재 확인되지 않았습니다. SC 엘리트 v5와 SC 트레이너 v3는 국내에 와이드 옵션이 있었지만, SC 레벨은 아직 정보가 없습니다. 발볼이 넓다면 와이드 발매 여부가 확인될 때까지 기다리시길 권합니다.</p>
+</div>
+
+<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰와 Doctors of Running 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 한국 정가·출시일·와이드 옵션은 미발표 상태이며 뉴발란스코리아 런칭 캘린더 미등재를 확인했습니다(2026-07-23). RunRepeat 랩 데이터는 미게시로, 정량 수치가 나오면 갱신합니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23)</small></p>
+`,
+  },
+  {
     id: 'adidas-hyperboost-edge-review-2026',
     slug: 'adidas-hyperboost-edge-review-2026',
     title: '아디다스 하이퍼부스트 엣지 후기 | 45mm 무플레이트 슈퍼트레이너 — 폼은 극찬, 갑피는 혹평으로 갈린 이유',
