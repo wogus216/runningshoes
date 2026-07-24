@@ -1,13 +1,12 @@
 // 사이트 URL 상수
 export const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://allrunabout.com';
 
-// 색인 가드: Vercel '프로덕션' 배포에서만 검색엔진 색인을 허용한다.
-// 프리뷰·개발·로컬 빌드(VERCEL_ENV !== 'production')는 noindex로 처리해
-// 미완성·중복 콘텐츠가 검색에 노출되는 것을 막는다.
-// VERCEL_ENV는 Vercel이 배포 시 주입('production'|'preview'|'development')하며,
-// 프로덕션 배포에만 'production'이 들어온다. 명시적으로 'production'만 true로 판정해
-// 프로덕션이 실수로 noindex 되는 일이 없도록 한다.
-export const IS_PRODUCTION_DEPLOY = process.env.VERCEL_ENV === 'production';
+// 색인 가드: 기본은 색인 허용(프로덕션). 프리뷰·스테이징·로컬 빌드만 명시적으로 차단한다.
+// 과거 `VERCEL_ENV === 'production'`에 의존했으나, Cloudflare 이전(2026-07) 후
+// CF 빌드엔 VERCEL_ENV가 주입되지 않아 전 페이지가 noindex로 나가는 사고가 있었다.
+// env 유실에 안전하도록 opt-out으로 뒤집는다 — NEXT_PUBLIC_NOINDEX=1일 때만 noindex.
+// (미완성·중복 콘텐츠를 감추려는 프리뷰/스테이징 빌드에서만 NEXT_PUBLIC_NOINDEX=1을 설정한다)
+export const IS_PRODUCTION_DEPLOY = process.env.NEXT_PUBLIC_NOINDEX !== '1';
 
 // 사이트 정보
 export const SITE_NAME = '러닝의 모든것';
@@ -46,4 +45,7 @@ export const ADSENSE_SLOTS = {
 } as const;
 
 // GA4 설정
-export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || '';
+// 하드코딩 폴백(ADSENSE_CLIENT_ID와 동일 패턴) — measurement ID는 HTML에 공개되는 값이라
+// 시크릿이 아니다. Cloudflare 이전 후 CF 빌드에 env가 없어 GA 태그가 통째로 누락돼
+// 계측이 끊긴 사고(2026-07-15~)가 있어, env 유실에도 계측이 유지되도록 폴백을 둔다.
+export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-ZJZCBW9YMY';

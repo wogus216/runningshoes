@@ -85,7 +85,9 @@ export const metadata: Metadata = {
   verification: {
     google: process.env.NEXT_PUBLIC_GOOGLE_VERIFICATION || '',
     other: {
-      "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION || '',
+      // 하드코딩 폴백 — 소유확인 코드는 공개 메타값이라 시크릿이 아니다.
+      // CF 이전 후 env 누락으로 메타가 빠지면 네이버 서치어드바이저 소유확인이 풀릴 수 있어 폴백을 둔다.
+      "naver-site-verification": process.env.NEXT_PUBLIC_NAVER_VERIFICATION || 'afbdaf6b8808d8e44502455c68379b06f421ba4d',
     },
   },
   alternates: {
