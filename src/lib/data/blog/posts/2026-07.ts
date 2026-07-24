@@ -2,6 +2,97 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: '2026-gwacheon-marathon-registration',
+    slug: '2026-gwacheon-marathon-registration',
+    title: '2026 과천마라톤 추가접수 7/27 오후 2시 — 40주년, 1차 마감분 취소표가 열린다',
+    description:
+      '2026 과천마라톤(40주년)이 11월 8일 관문체육공원에서 열립니다. 7월 20일 시작한 1차 선착순 접수가 마감돼, 미결제·취소분만큼 7월 27일(월) 오후 2시부터 추가접수가 열립니다. 결제 마감은 7월 26일 자정. 하프 45,000원·10km 40,000원·5km 30,000원(과천시민 25,000원), 각 1,000명씩 총 3,000명 정원과 신청 방법·주의사항을 공식 공지 기준으로 정리했습니다.',
+    thumbnail: '/images/blog/2026-gwacheon-marathon-registration.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-25',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: ['과천마라톤', '2026 과천마라톤', '과천마라톤 접수', '추가접수', '가을 마라톤', '수도권 마라톤'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2026 과천마라톤(40주년)은 11월 8일(일) 관문체육공원</strong>에서 하프·10km·5km로 열립니다. 각 1,000명씩 <strong>총 3,000명</strong> 선착순</li>
+    <li>7월 20일 시작한 <strong>1차 접수는 마감</strong> — 미결제분은 <strong>7월 26일(일) 자정</strong>까지 결제해야 유지되고, 그 이후 취소·미결제분만큼 <strong>7월 27일(월) 오후 2시부터 추가접수</strong>가 열립니다</li>
+    <li>참가비는 <strong>하프 45,000원 / 10km 40,000원 / 5km 30,000원</strong>(5km 과천시민 특별 25,000원). 접수는 공식 홈페이지 <strong>gcrun.co.kr</strong> 온라인만</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>과천마라톤은 접근성 좋은 수도권 대회라 매년 선착순이 빠르게 마감됩니다. 올해도 1차 정원이 찼고, 지금 노릴 수 있는 건 <strong>7월 27일 오후 2시에 열리는 취소분 추가접수</strong>뿐입니다. 취소된 자리만큼만 풀리니 사실상 막차입니다.</p>
+</div>
+
+<h2>대회 개요</h2>
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>대회일</td><td>2026년 11월 8일(일) — <strong>40주년</strong></td></tr>
+    <tr><td>장소</td><td>관문체육공원 육상경기장 (경기 과천시)</td></tr>
+    <tr><td>운영</td><td>07:00 집결 · <strong>08:00 출발</strong></td></tr>
+    <tr><td>종목</td><td>하프 / 10km / 5km</td></tr>
+    <tr><td>정원</td><td>하프 1,000 · 10km 1,000 · 5km 1,000 = <strong>총 3,000명</strong></td></tr>
+    <tr><td>주최</td><td>과천시체육회</td></tr>
+    <tr><td>접수처</td><td>공식 홈페이지 <strong>www.gcrun.co.kr</strong> (온라인 접수만)</td></tr>
+  </tbody>
+</table>
+
+<h2>지금 상황 — 1차 마감, 추가접수는 7월 27일 오후 2시</h2>
+<p>7월 20일(월) 오후 2시에 시작한 1차 선착순 접수는 정원이 차서 마감됐습니다. 다만 <strong>신청만 하고 결제를 안 한 인원</strong>이 남아 있어, 대회 운영사무국이 정리 절차를 공지했습니다.</p>
+<table>
+  <thead><tr><th>일정</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td><strong>7월 26일(일) 자정</strong></td><td>결제 마감 — 이때까지 결제 안 된 신청은 <strong>삭제</strong>됩니다</td></tr>
+    <tr><td><strong>7월 27일(월) 14:00</strong></td><td>미결제·취소분만큼 <strong>추가접수</strong> 시작 (예정)</td></tr>
+  </tbody>
+</table>
+<p>즉 26일 자정을 넘겨 빠지는 자리가 곧 27일 오후 2시에 다시 풀리는 구조입니다. 풀리는 수량이 취소분에 한정되니, 원하는 종목이 있다면 <strong>오후 2시 정각에 대기했다가 바로 신청</strong>하는 편이 안전합니다. 홈페이지가 현재 리뉴얼 중이라 일정이 변동될 수 있으니, 접수 직전 공식 공지를 한 번 더 확인하세요.</p>
+
+<h2>참가비 · 종목</h2>
+<table>
+  <thead><tr><th>종목</th><th>참가비</th><th>참가 자격</th></tr></thead>
+  <tbody>
+    <tr><td>하프</td><td>45,000원</td><td>만 19세 이상</td></tr>
+    <tr><td>10km</td><td>40,000원</td><td>만 14세 이상</td></tr>
+    <tr><td>5km</td><td>30,000원</td><td>제한 없음</td></tr>
+    <tr><td>5km (과천시민 특별)</td><td><strong>25,000원</strong></td><td>과천시 거주자 한정·한정 수량</td></tr>
+  </tbody>
+</table>
+<p><strong>5km 과천시민 특별 모집은 주의가 필요합니다.</strong> 등록 시 입력한 주소가 과천이 아니면 예고 없이 참가가 취소될 수 있습니다. 과천시민이 아니라면 처음부터 일반 5km로 신청하세요. 한정 수량이 마감되면 과천시민이어도 일반 코스로 접수해야 합니다.</p>
+
+<h2>신청 방법 · 주의사항</h2>
+<ul>
+  <li><strong>접수는 온라인만</strong> — 공식 홈페이지 <strong>gcrun.co.kr</strong>에서만 받습니다(메일 접수 없음)</li>
+  <li><strong>결제까지 완료해야 확정</strong> — '참가신청 &gt; 신청내역조회'에서 결제를 마쳐야 최종 참가가 확정됩니다. 신청만 해두면 위 일정대로 삭제됩니다</li>
+  <li><strong>결제 수단</strong> — 카드 결제 또는 가상계좌 발행 후 입금(발행 후 24시간 이내)</li>
+  <li><strong>단체 접수</strong> — 단체장이 단체 생성 → 단체원 등록 → 참가비 결제까지 완료해야 확정됩니다</li>
+  <li><strong>확정 후 코스 변경·환불 제한</strong> — 참가 확정 뒤에는 종목 변경과 환불이 제한될 수 있으니 신청 전에 거리를 신중히 정하세요</li>
+</ul>
+
+<div class="callout warning">
+  <p>본 글은 <strong>2026-07-25 기준 과천시체육회 공식 공지</strong>(개최 안내·결제 마감 및 추가접수 안내)를 바탕으로 작성했습니다. 추가접수 일정(7/27 14:00)은 '예정'이며 취소 수량에 따라 종목별로 조기 마감될 수 있습니다. 홈페이지 리뉴얼 중이라 세부 내용이 바뀔 수 있으니, 접수 직전 <strong>gcrun.co.kr</strong> 공지를 반드시 최종 확인하세요.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <h3>1차 접수를 놓쳤는데 아직 참가할 수 있나요?</h3>
+  <p>가능성은 있습니다. 7월 26일 자정까지 결제하지 않은 신청 건이 삭제되면서, 그만큼의 자리가 7월 27일(월) 오후 2시부터 추가접수로 풀립니다. 다만 취소·미결제분에 한정되므로 수량이 많지 않을 수 있고, 원하는 종목은 정각 대기가 유리합니다.</p>
+  <h3>과천시민이 아니어도 5km 25,000원으로 신청되나요?</h3>
+  <p>안 됩니다. 25,000원은 과천시 거주자 한정 특별 모집이고, 주소가 과천이 아니면 예고 없이 취소될 수 있습니다. 과천시민이 아니라면 일반 5km(30,000원)로 신청하세요.</p>
+  <h3>어떤 신발을 신는 게 좋을까요?</h3>
+  <p>거리에 따라 다릅니다. 하프는 쿠션이 받쳐주는 데일리·레이싱화, 10km·5km는 가볍고 반응 좋은 데일리·입문화가 무난합니다. 아래 거리별 추천에서 상황에 맞는 모델을 확인하세요. 처음 대회라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법</a>과 <a href="/blog/running-shoes-recommend-by-price-2026">가격대별 추천</a>도 참고가 됩니다.</p>
+  <h3>다른 가을 대회도 접수 중인가요?</h3>
+  <p>네. 같은 가을 시즌으로 <a href="/blog/2026-chuncheon-marathon-registration-guide">조선일보 춘천마라톤</a>(10월), <a href="/blog/nb-run-your-way-seoul-10k-2026">뉴발란스 런유어웨이 서울 10K</a>(10월), <a href="/blog/2026-hyundai-forest-run-september">현대 포레스트런</a>(9월) 등이 있습니다.</p>
+</div>
+
+<p><small>※ 대회일·장소·종목·정원·참가비·접수 일정은 과천시체육회 공식 공지(gcsports.or.kr '대회·행사 안내'의 개최 안내 및 결제 마감·추가접수 안내, 2026-07 게시)와 공식 접수처 gcrun.co.kr 기준입니다. 추가접수 일정은 '예정'이며 변동될 수 있어 접수 전 공식 페이지 최종 확인을 권합니다. (작성 2026-07-25)</small></p>
+`,
+  },
+  {
     id: 'new-balance-sc-rebel-preview-2026',
     slug: 'new-balance-sc-rebel-preview-2026',
     title: '뉴발란스 SC 레벨 미리보기 | 8/20 글로벌 출시 — 해외 리뷰 9.99/10 극찬, 그런데 발볼이 걸린다',
