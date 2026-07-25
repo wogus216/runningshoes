@@ -114,6 +114,8 @@ export const shoe: Shoe = {
 
   similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
   relatedPosts: [
+    { slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026', title: '페가수스 42 vs 노바블라스트 6 — 데일리 대결' },
+    { slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026', title: '웨이브 라이더 29 vs 페가수스 42 — 같은 값 대결' },
     { slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026', title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결' },
     { slug: 'nike-pegasus-41-vs-42-comparison', title: '페가수스 41 vs 42 — 세대 비교' },
     { slug: 'nike-pegasus-42-review', title: '페가수스 42 심층 후기' },

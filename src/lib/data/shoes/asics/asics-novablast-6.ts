@@ -97,6 +97,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['asics-novablast-5', 'nike-pegasus-41', 'new-balance-rebel-v5'],
   relatedPosts: [
+    { slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026', title: '노바블라스트 6 vs 페가수스 42 — 데일리 대결' },
     { slug: 'asics-novablast-5-vs-6-comparison-2026', title: '노바블라스트 5 vs 6 — 세대 비교' },
     { slug: 'asics-novablast-6-preview-2026', title: '노바블라스트 6 미리보기 — 5와 뭐가 다른가' },
     { slug: 'asics-novablast-6-vs-hoka-clifton-pro-2026', title: '노바블라스트 6 vs 클리프톤 프로' },

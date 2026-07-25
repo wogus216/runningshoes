@@ -122,5 +122,8 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['new-balance-1080-v14', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+  relatedPosts: [
+    { slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026', title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xAA0rggd' }],
 };

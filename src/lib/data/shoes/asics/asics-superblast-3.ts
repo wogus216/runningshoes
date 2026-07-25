@@ -104,6 +104,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
   relatedPosts: [
+    { slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026', title: '하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트 3 vs 에보 SL vs 마하 6 — 슈퍼트레이너 3파전' },
     { slug: 'asics-superblast-2-vs-3-comparison', title: '슈퍼블라스트 2 vs 3 — 세대 비교' },
   ],
