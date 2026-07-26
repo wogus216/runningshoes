@@ -2,6 +2,102 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'mizuno-neo-vista-3-review-2026',
+    slug: 'mizuno-neo-vista-3-review-2026',
+    title: '미즈노 네오 비스타 3 후기 | SA 167 극쿠션 슈퍼트레이너, 그런데 반발이 아쉽다',
+    description:
+      '미즈노 첫 슈퍼 트레이너 라인의 3세대 네오 비스타 3을 RunRepeat 랩 실측 기준으로 리뷰합니다. 충격 흡수 SA 167의 최상급 쿠션과 통기성 83의 여름 강점, 3D 유리섬유 플레이트로 개선된 안정성이 강점이지만, 219,000원 가격대에 에너지 리턴 57%는 아쉽습니다. 한국 러너 발볼·여름·가성비 관점에서 정리했습니다.',
+    thumbnail: '/images/blog/mizuno-neo-vista-3-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-26',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['미즈노 네오 비스타 3', 'Neo Vista 3', '슈퍼트레이너', 'Enerzy NXT', '신상 러닝화', '고쿠션'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>미즈노 첫 슈퍼 트레이너의 3세대</strong>, RunRepeat 랩 실측 종합 83점(Great). 정체성은 <strong>"극쿠션"</strong> — 충격 흡수 SA 힐 167로 프리미엄 쿠션화 중에서도 최상급</li>
+    <li><strong>3D 유리섬유 플레이트</strong>를 새로 넣어 2세대의 안정성 약점을 개선했고, 통기성 83 BR 니트 어퍼로 <strong>여름 러닝에 강합니다</strong></li>
+    <li>단점은 <strong>가격 대비 반발</strong> — 에너지 리턴 57%로 219,000원 슈퍼 트레이너치고 아쉽습니다. "튀기보다 푹신하게 오래" 뛰는 성격이라 용도를 알고 사야 합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><strong>한 줄 평.</strong> 빠른 반발이 아니라 <strong>푹신함·안정·여름 통기</strong>를 원하는 데일리·장거리 러너를 위한 <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>입니다. 더 튀는 슈퍼 트레이너를 원하면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을, 미즈노 라인 전체는 <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 계급도</a>를 참고하세요.</p>
+</div>
+
+<h2>스펙 한눈에</h2>
+<table>
+  <thead><tr><th>항목</th><th>네오 비스타 3</th></tr></thead>
+  <tbody>
+    <tr><td>가격(한국)</td><td>219,000원</td></tr>
+    <tr><td>무게</td><td>266g (실측)</td></tr>
+    <tr><td>스택(힐/전족)</td><td>43.5 / 35.0mm <em>(실측)</em> · 공식 44.5/36.5</td></tr>
+    <tr><td>드롭</td><td>8.5mm 실측 (공식 8)</td></tr>
+    <tr><td>미드솔</td><td>Enerzy NXT + 3D 유리섬유 플레이트</td></tr>
+    <tr><td>충격 흡수(SA)</td><td><strong>힐 167 / 전족 133 (최상급)</strong></td></tr>
+    <tr><td>에너지 리턴</td><td>힐 57.7% / 전족 57.1% <em>(아쉬움)</em></td></tr>
+    <tr><td>토박스</td><td>71.7mm (표준·약간 좁아짐)</td></tr>
+    <tr><td>통기성</td><td><strong>83 BR (우수)</strong></td></tr>
+    <tr><td>내구</td><td>아웃솔 우수(0.7mm) / 힐 패딩 약함</td></tr>
+    <tr><td>종합</td><td>83 / 100 (Great)</td></tr>
+  </tbody>
+</table>
+<p><small>수치는 RunRepeat 랩 실측 및 미즈노 코리아 공식가 기준입니다.</small></p>
+
+<h2>강점 — 극쿠션 + 여름 통기 + 개선된 안정</h2>
+<p>네오 비스타 3의 핵심은 <strong>쿠션</strong>입니다. 충격 흡수 SA가 힐 167로 측정됐는데, 이는 프리미엄 쿠션화 중에서도 최상위권입니다. 미드솔이 19.8 AC로 매우 부드러워 착지가 말 그대로 구름 위 같고, 20km를 넘겨도 다리 피로가 덜합니다. 여기에 힐 44.5/전족 36.5mm의 고스택이 장거리 훈련의 충격을 확실히 받아줍니다.</p>
+<p>2세대에서 가장 아쉬웠던 <strong>안정성</strong>도 개선됐습니다. 새로 들어간 3D 스플릿 형태의 유리섬유 플레이트(중앙은 위로, 양옆은 아래로 커브)가 고스택의 흔들림을 잡아주고, 힐 락다운도 좋아졌습니다. 통기성은 83 BR로 우수하고 니트 어퍼가 빠르게 건조돼 <strong>땀 많은 한국 여름 러닝에 특히 유리</strong>합니다.</p>
+
+<h2>약점 — 가격 대비 반발, 그리고 과내전</h2>
+<p>슈퍼 트레이너를 표방하기엔 <strong>반발이 아쉽습니다</strong>. 에너지 리턴이 힐 57.7%/전족 57.1%로, 219,000원 프리미엄 가격대에서 기대하는 수준에 못 미칩니다. RunRepeat도 이 점을 최대 단점으로 꼽았습니다. 페이스를 올리면 폼이 눌리기만 하고 튀어주진 않아, "빠르게 치고 나가는" 트레이너를 기대하면 실망할 수 있습니다.</p>
+<p>또 힐 카운터가 2/5로 유연하고 미드솔이 물러 <strong>과내전 러너에겐 지지가 부족</strong>합니다. 중립 발 러너에게 맞는 신발이고, 평발·과내전이라면 안정화(웨이브 인스파이어 등)가 낫습니다. 힐 쪽 패딩 내구가 약한 것(1/5)도 참고하세요.</p>
+
+<h2>한국 러너 관점</h2>
+<ul>
+  <li><strong>발볼</strong> — 토박스 71.7mm 표준에 약간 좁아지는 형태라, 발볼이 아주 넓다면 시착이 필요합니다. 같은 미즈노 중에선 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더</a>가 더 넓습니다</li>
+  <li><strong>여름</strong> — 통기성 83에 빠른 건조로 한여름 데일리·장거리에 유리</li>
+  <li><strong>무릎·관절</strong> — SA 167의 두꺼운 쿠션이 착지 충격을 잘 흡수. 단 안정 지지는 약함</li>
+  <li><strong>가격</strong> — 219,000원은 슈퍼 트레이너 프리미엄. 반발보다 쿠션·안정·통기를 원할 때 값어치가 있습니다</li>
+</ul>
+
+<h2>이런 분께 / 대안</h2>
+<ul>
+  <li><strong>✅ 잘 맞는 분</strong> — 푹신한 고쿠션 트레이너를 원하는 분, 데일리·장거리 훈련용, 네오 비스타 1·2 팬, 여름 통기 중시, 중립 발</li>
+  <li><strong>❌ 안 맞는 분</strong> — 과내전·평발, 가격 대비 폭발적 반발 기대, 빠른 레이스용, 발볼이 아주 넓은 러너</li>
+  <li><strong>더 튀는 슈퍼 트레이너</strong> → <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
+  <li><strong>미즈노 고쿠션 데일리</strong> → <a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a></li>
+</ul>
+
+<div class="callout warning">
+  <p>본 리뷰는 <strong>RunRepeat 랩 실측</strong>과 미즈노 코리아 공식 정보 기준입니다(추정 아님). 와이드(2E/SW) 옵션은 현재 확인되지 않아, 발볼이 넓다면 매장 시착을 권합니다. 힐 패딩 내구는 약한 편으로 측정됐으니 장기 사용 시 참고하세요.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 슈퍼 트레이너인데 카본 플레이트가 있나요?</p>
+    <p class="faq-a">A. 카본이 아니라 <strong>유리섬유 나일론 플레이트</strong>입니다. 카본처럼 폭발적으로 튕기기보다 고스택의 안정을 잡아주는 역할이라, 레이싱화 같은 반발을 기대하면 안 됩니다. 3세대는 이 플레이트를 3D 스플릿 형태로 바꿔 안정성을 개선했습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 네오 비스타 2에서 3으로 갈 만한가요?</p>
+    <p class="faq-a">A. 2의 안정성·힐 핏이 아쉬웠다면 갈 만합니다. 3D 플레이트로 착지가 안정적으로 바뀌고 힐 락다운이 좋아졌습니다. 다만 쿠션 성격 자체는 비슷하니, 2에 큰 불만이 없었다면 굳이 교체할 필요는 없습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 레이스에 신어도 되나요?</p>
+    <p class="faq-a">A. 권하지 않습니다. 에너지 리턴 57%로 반발이 약해 기록용은 아닙니다. 훈련·조깅·장거리 지구력 러닝에 어울리고, 레이스는 카본 레이싱화나 반발 좋은 슈퍼 트레이너(슈퍼블라스트 3)를 따로 쓰는 게 낫습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 여름 러닝에 정말 시원한가요?</p>
+    <p class="faq-a">A. 랩 통기성이 83 BR로 우수하고 니트 어퍼가 빠르게 건조돼, 고스택 트레이너치고는 시원한 편입니다. 땀이 많거나 장마철 젖은 뒤 빨리 마르는 신발을 찾는다면 이 점이 강점입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: RunRepeat 랩 실측(mizuno-neo-vista-3), Believe in the Run·Road Trail Run 리뷰 종합, 미즈노 코리아 공식가 · 한국 공식가 기준 · 작성 2026년 7월 26일.</small></p>
+`,
+  },
+  {
     id: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
     slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
     title: '알파플라이 3 vs 메타스피드 스카이+ vs SC 엘리트 v5 — 가을 마라톤 카본 최강전, 발볼이 가른다',
