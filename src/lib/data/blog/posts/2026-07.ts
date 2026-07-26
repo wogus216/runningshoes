@@ -2,6 +2,114 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'fall-marathon-race-day-checklist-2026',
+    slug: 'fall-marathon-race-day-checklist-2026',
+    title: '가을 마라톤 완주 준비물 체크리스트 — 신발·젤·양말부터 대회 당일까지',
+    description:
+      '과천·춘천·JTBC 등 가을 마라톤 접수 시즌, 완주를 위한 준비물을 신발·보급(젤)·의류·장비·대회 당일 5범주로 정리했습니다. 거리와 목표에 맞는 신발 선택부터 젤 개수 공식, 물집 방지 양말, 대회 당일 아침 루틴까지 — 처음 도전하는 러너도 빠짐없이 챙길 수 있는 체크리스트입니다.',
+    thumbnail: '/images/blog/fall-marathon-race-day-checklist-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-26',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: ['마라톤 준비물', '완주 체크리스트', '가을 마라톤', '마라톤 젤', '러닝 양말', '대회 당일'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>완주 준비물은 3범주</strong> — ① 거리·목표에 맞는 <strong>신발</strong>, ② 젤·수분 <strong>보급</strong>, ③ 물집 방지 양말·날씨별 <strong>의류</strong>. 여기에 장비와 대회 당일 루틴까지</li>
+    <li><strong>새 장비는 반드시 미리 적응</strong> — 신발·양말·젤은 대회 전 훈련에서 최소 몇 번 써보고, 검증 안 된 걸로 대회 당일 처음 신거나 먹지 마세요</li>
+    <li><strong>거리별로 다릅니다</strong> — 풀코스는 젤 3~5개+쿠션 신발, 10K는 젤 없이 가벼운 신발. 아래에서 거리·목표별로 정리했습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><strong>지금이 가을 마라톤 접수 시즌입니다.</strong> <a href="/blog/2026-gwacheon-marathon-registration">과천마라톤</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a> 등 9~11월 대회가 한창 접수 중이죠. 접수를 마쳤다면 이제 준비물 차례입니다. 아래 순서대로 챙기면 빠뜨릴 게 없습니다.</p>
+</div>
+
+<h2>① 신발 — 거리와 목표로 고른다</h2>
+<p>가장 중요한 준비물입니다. "완주가 목표냐, 기록이 목표냐"와 "거리"에 따라 선택이 갈립니다.</p>
+<table>
+  <thead><tr><th>거리</th><th>완주·편안함 우선</th><th>기록·스피드 우선</th></tr></thead>
+  <tbody>
+    <tr><td>풀코스</td><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a> · <a href="/shoes/new-balance-1080-v15">1080 v15</a> (최대 쿠션)</td><td><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3</a> (카본)</td></tr>
+    <tr><td>하프</td><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a> (고쿠션 데일리)</td><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> (나일론 플레이트)</td></tr>
+    <tr><td>10K</td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> · <a href="/shoes/mizuno-wave-rider-29">라이더 29</a></td><td><a href="/shoes/asics-magic-speed-5">매직스피드 5</a> (입문 카본)</td></tr>
+  </tbody>
+</table>
+<p><strong>한국 러너라면 발볼을 꼭 보세요.</strong> 발볼이 넓다면 풀코스 카본화 중 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(토박스 74.5mm)가 거의 유일하게 편하고, 쿠션 완주라면 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 넉넉합니다. 내 발형·목표에 맞는 신발을 한 번에 찾으려면 <a href="/recommend">맞춤 추천</a>을, 거리별 전체 순위는 <a href="/best/marathon">마라톤 베스트</a>에서 볼 수 있습니다.</p>
+<div class="callout warning"><p><strong>새 신발은 대회 당일 처음 신지 마세요.</strong> 카본화든 쿠션화든 발에 적응하는 데 시간이 걸립니다. 대회 전 최소 2~3회, 30분 이상 신어보고 물집·통증이 없는지 확인하세요.</p></div>
+
+<h2>② 보급 — 젤 몇 개를, 언제</h2>
+<p>하프 이상이라면 <strong>에너지 젤</strong>이 완주를 가릅니다. 몸에 저장된 글리코겐은 약 90분이면 바닥나기 때문에, 그 전부터 규칙적으로 보충해야 "벽(Wall)"을 피할 수 있습니다.</p>
+<table>
+  <thead><tr><th>거리</th><th>젤 개수(권장)</th><th>타이밍</th></tr></thead>
+  <tbody>
+    <tr><td>풀코스</td><td><strong>3~5개</strong></td><td>출발 40~45분 후부터 30~40분 간격</td></tr>
+    <tr><td>하프</td><td>1~2개</td><td>10km 전후 1개, 필요 시 1개 더</td></tr>
+    <tr><td>10K</td><td>0~1개</td><td>대부분 불필요(1시간 이내면 생략 가능)</td></tr>
+  </tbody>
+</table>
+<p>젤은 종류에 따라 성격이 다릅니다 — <a href="/gels/maurten-gel-100">마우르텐 100</a>은 속이 편한 하이드로겔, <a href="/gels/sis-beta-fuel">SIS 베타 퓨얼</a>은 대용량 탄수화물, <a href="/gels/226ers-high-energy">226ERS</a>는 아미노산 포함형입니다. <strong>카페인 젤은 후반부 1~2개</strong>로 아껴 쓰고, 젤을 먹은 뒤엔 물을 함께 마셔야 흡수가 잘 됩니다. 이 역시 <strong>대회 전 훈련에서 미리 먹어보고</strong> 속에 맞는지 확인하세요.</p>
+
+<h2>③ 양말·의류·소품 — 물집과 쓸림을 막는다</h2>
+<p>완주를 망치는 건 의외로 사소한 것들입니다. 물집, 젖꼭지 쓸림, 사타구니 쓸림 — 전부 미리 막을 수 있습니다.</p>
+<ul>
+  <li><strong>흡습·속건 러닝 양말</strong> — 면양말은 땀을 머금어 물집의 주범입니다. 발 관리 상세는 <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱멍 예방 가이드</a> 참고. 신발을 브랜드 공식몰에서 살 때 <strong>같은 스토어의 러닝 양말도 함께</strong> 담으면 준비가 한 번에 끝납니다</li>
+  <li><strong>니플밴드 / 바세린</strong> — 남성은 젖꼭지 쓸림, 모두에게 사타구니·겨드랑이 쓸림 방지 필수(특히 풀코스)</li>
+  <li><strong>날씨별 상의</strong> — 가을 아침은 쌀쌀하니 출발 전 버리는 옷(우비·헌 옷) 준비, 뛰면 더워지므로 얇게</li>
+  <li><strong>선크림·립밤</strong> — 몇 시간 야외 노출, 특히 풀코스</li>
+</ul>
+
+<h2>④ 장비 — 있으면 편한 것들</h2>
+<ul>
+  <li><strong>GPS 러닝 워치</strong> — 페이스 관리의 핵심. 목표 페이스 유지가 완주·기록을 좌우합니다(<a href="/blog/marathon-pacing-mental-strategy-guide">페이싱 전략</a> 참고)</li>
+  <li><strong>러닝 벨트 / 암밴드</strong> — 젤·휴대폰·소금을 수납. 풀코스는 젤 여러 개라 필수에 가깝습니다</li>
+  <li><strong>모자 / 선글라스</strong> — 햇빛·땀 관리</li>
+</ul>
+
+<h2>⑤ 대회 당일 체크리스트</h2>
+<p><strong>전날 밤</strong></p>
+<ul>
+  <li>배번(비브)·안전핀·기록칩 확인, 옷에 미리 부착</li>
+  <li>신발·양말·젤·벨트를 한 가방에 미리 세팅</li>
+  <li>탄수화물 위주 저녁(카보로딩), 과식·새로운 음식 금지, 일찍 취침</li>
+</ul>
+<p><strong>당일 아침</strong></p>
+<ul>
+  <li>출발 <strong>2~3시간 전 기상</strong>, 소화되는 식사(빵·바나나·죽 등)</li>
+  <li>출발 전 화장실은 미리(줄이 깁니다), 가벼운 웜업·스트레칭</li>
+  <li>젤 위치·개수 최종 확인, 목표 페이스 되새기기</li>
+</ul>
+
+<div class="callout warning">
+  <p><strong>가장 중요한 원칙 — "대회 당일 새것 금지".</strong> 신발·양말·젤·의류 무엇이든, 대회에서 처음 쓰는 건 도박입니다. 물집·복통·쓸림은 대부분 "검증 안 된 새 장비"에서 나옵니다. 준비물은 <strong>훈련에서 미리 다 써보고</strong> 대회에 나가세요.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 첫 마라톤인데 최소한 뭘 챙겨야 하나요?</p>
+    <p class="faq-a">A. 검증된 신발·양말·젤(거리에 맞게)·배번·GPS 워치가 최소 세트입니다. 여기에 쓸림 방지(니플밴드·바세린)와 날씨별 옷만 더하면 충분합니다. 나머지는 있으면 편한 것들입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 젤은 정확히 몇 개 가져가야 하나요?</p>
+    <p class="faq-a">A. 풀코스 3~5개, 하프 1~2개가 기준입니다. 자신의 완주 시간을 40분으로 나눈 개수 + 여유분 1개로 계산하면 됩니다. 카페인 젤은 후반부용으로 1~2개만 섞으세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 대회에 새 카본화를 신어도 되나요?</p>
+    <p class="faq-a">A. 권하지 않습니다. 카본화는 종아리·발바닥 부담이 커서 적응이 필요합니다. 최소 2~3회, 가능하면 대회 페이스로 미리 신어보고 문제없을 때만 대회에 신으세요. 검증 안 된 신발로 첫 풀코스를 뛰는 건 완주를 거는 도박입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 양말도 그렇게 중요한가요?</p>
+    <p class="faq-a">A. 네. 풀코스 완주를 망치는 흔한 원인이 물집인데, 대부분 면양말이나 안 맞는 양말 때문입니다. 흡습·속건 러닝 양말 하나가 완주 후반 3~4시간의 편안함을 좌우합니다. 신발 살 때 같은 스토어에서 함께 챙기는 걸 추천합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 본 사이트 신발·에너지 젤 DB 및 각 상세 페이지, 일반적인 마라톤 보급·완주 가이드라인 종합 · 작성 2026년 7월 26일.</small></p>
+`,
+  },
+  {
     id: 'mizuno-neo-vista-3-review-2026',
     slug: 'mizuno-neo-vista-3-review-2026',
     title: '미즈노 네오 비스타 3 후기 | SA 167 극쿠션 슈퍼트레이너, 그런데 반발이 아쉽다',
