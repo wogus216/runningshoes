@@ -2,6 +2,97 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
+    slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
+    title: '알파플라이 3 vs 메타스피드 스카이+ vs SC 엘리트 v5 — 가을 마라톤 카본 최강전, 발볼이 가른다',
+    description:
+      '가을 마라톤 시즌, 3대 브랜드 최상위 카본 레이서를 정면 비교합니다. 나이키 알파플라이 3, 아식스 메타스피드 스카이+, 뉴발란스 SC 엘리트 v5 — 무게·반발은 최정상급으로 비슷하지만, 발볼·드롭·가격에서 갈립니다. 특히 발볼 넓은 한국 러너라면 선택이 분명해집니다.',
+    thumbnail: '/images/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-26',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['나이키 알파플라이 3', '아식스 메타스피드 스카이', '뉴발란스 SC 엘리트 v5', '카본 레이싱화', '마라톤 슈퍼슈즈', '러닝화 비교'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>3대 브랜드 최상위 카본, 반발은 셋 다 만점(10)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
+    <li><strong>가르는 건 발볼</strong> — 알파플라이는 좁고 와이드도 없어 발볼 넓으면 어렵습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, 특히 SC 엘리트 v5는 토박스 74.5mm로 <strong>"발볼 넓어도 신는 유일한 슈퍼슈즈"</strong></li>
+    <li>가격은 SC 엘리트 v5가 가장 저렴(319,000원)하고 내구도 가장 길어, <strong>발볼 넓은 한국 러너에겐 가성비까지 답</strong>이 됩니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><strong>한 줄 결론.</strong> 풀코스 폭발력이면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>, 보폭 늘려 스피드를 내면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, 발볼이 넓거나 부드러운 착지를 원하면 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>입니다. 카본화 입문 개념은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>, 나이키 내부 대결은 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3</a>을 참고하세요.</p>
+</div>
+
+<h2>세 켤레 한눈에 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>알파플라이 3</th><th>메타스피드 스카이+</th><th>SC 엘리트 v5</th></tr></thead>
+  <tbody>
+    <tr><td>가격(한국)</td><td>349,000원</td><td>329,000원</td><td><strong>319,000원</strong></td></tr>
+    <tr><td>무게</td><td>201g</td><td>205g</td><td><strong>198g</strong></td></tr>
+    <tr><td>스택(힐/전족)</td><td>38 / 30mm</td><td>39 / <strong>34mm</strong></td><td>39 / 29mm</td></tr>
+    <tr><td>드롭</td><td>9mm</td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
+    <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
+    <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / 10</td><td>7 / 10</td><td>7 / 10</td></tr>
+    <tr><td>발볼 / 와이드</td><td>표준 / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
+    <tr><td>내구 / km당</td><td>약 200km</td><td>약 250km</td><td><strong>약 300km</strong></td></tr>
+    <tr><td>대표 성격</td><td>폭발적 반발·풀코스</td><td>보폭형 스트라이드</td><td>부드러움·발볼·가성비</td></tr>
+  </tbody>
+</table>
+<p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준). 셋 다 레이스 전용이라 내구는 짧습니다.</small></p>
+
+<h2>나이키 알파플라이 3 — 폭발적 반발의 풀코스 끝판왕</h2>
+<p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(10/10)이 셋 중 가장 폭발적입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
+<p>약점은 <strong>발볼과 가격</strong>입니다. 토박스가 좁은 데다 와이드 옵션이 없어, 발볼 넓은 러너는 레이스 후반 발가락 눌림을 겪을 수 있습니다. 349,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
+<p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
+
+<h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
+<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(10/10)을 내면서, 전족 스택이 34mm로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
+<p>약점은 <strong>주법 의존성</strong>입니다. 보폭형이 아닌 피치형 러너에겐 스카이가 최적이 아닐 수 있어, 자신의 주법을 알고 골라야 합니다. 낮은 드롭이 힐 스트라이커에겐 이질적일 수도 있습니다.</p>
+<p><strong>✅ 이런 분께</strong> — 보폭을 늘려 스피드를 내는 러너, 전족 쿠션과 안정을 원하는 분, 낮은 드롭(5mm)을 선호하는 미드풋 착지 러너.</p>
+
+<h2>뉴발란스 SC 엘리트 v5 — 발볼 넓어도 신는 유일한 슈퍼슈즈</h2>
+<p>SC 엘리트 v5의 최대 무기는 <strong>토박스 74.5mm</strong>입니다. 대부분의 슈퍼슈즈가 좁은 레이싱 라스트인 것과 달리, SC 엘리트 v5는 <strong>발볼 넓은 한국 러너가 레이스 중 발가락 눌림 없이 완주할 수 있는 거의 유일한 카본화</strong>입니다. 와이드(2E)까지 있고요. FuelCell 100% PEBA 폼은 셋 중 가장 부드러운 착지를 주고, 198g로 가장 가볍습니다. 가격도 319,000원으로 제일 저렴하고 내구(약 300km)도 가장 길어, <strong>발볼 넓은 러너에겐 성능·가성비 양쪽 다 답</strong>입니다.</p>
+<p>약점은 <strong>높은 드롭</strong>입니다. 실측 드롭이 약 11mm로 셋 중 가장 높아, 낮은 드롭에 익숙한 러너에겐 힐이 높게 느껴질 수 있습니다. 폭발적 반발은 알파플라이보다 부드러운 편입니다.</p>
+<p><strong>✅ 이런 분께</strong> — <strong>발볼이 넓은 한국 러너</strong>, 부드럽고 편안한 카본 착지를 원하는 분, 가성비까지 챙기고 싶은 분.</p>
+
+<h2>내 레이스엔 뭘?</h2>
+<ul>
+  <li><strong>발볼이 넓다</strong> → 고민 없이 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(74.5mm+와이드). 알파플라이는 피하세요</li>
+  <li><strong>풀코스 기록 · 폭발적 반발</strong> → <a href="/shoes/nike-alphafly-3">알파플라이 3</a></li>
+  <li><strong>보폭을 늘려 뛴다 · 낮은 드롭 선호</strong> → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></li>
+  <li><strong>부드러운 착지 · 예산을 아낀다</strong> → <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(가장 저렴·내구 최고)</li>
+  <li><strong>카본화가 처음이다</strong> → 안정적이고 부드러운 SC 엘리트 v5가 진입 장벽이 가장 낮습니다</li>
+</ul>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은데 알파플라이는 정말 안 되나요?</p>
+    <p class="faq-a">A. 불가능하진 않지만 권하지 않습니다. 알파플라이 3은 토박스가 좁고 와이드 옵션이 없어, 레이스 후반 발이 부으면 발가락이 눌려 물집·통증이 생기기 쉽습니다. 발볼이 넓다면 SC 엘리트 v5(74.5mm)나 와이드가 있는 메타스피드 스카이+가 안전합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 메타스피드는 스카이와 엣지 중 뭘 골라야 하나요?</p>
+    <p class="faq-a">A. 주법으로 갈립니다. <strong>스카이+</strong>는 보폭(스트라이드)을 늘려 뛰는 러너, <strong>엣지</strong>는 회전수(피치·케이던스)를 올려 뛰는 러너에게 맞춰 설계됐습니다. 자신이 성큼성큼 뛰는 편이면 스카이, 총총 빠르게 구르는 편이면 엣지를 보세요. 이 글은 보폭형 스카이+ 기준입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 셋 다 내구가 짧던데 훈련에도 신어도 되나요?</p>
+    <p class="faq-a">A. 권하지 않습니다. 셋 다 200~300km의 레이스 전용이라, 훈련까지 신으면 금방 반발이 죽습니다. 레이스와 핵심 포인트 훈련 정도에만 아껴 신고, 일상 훈련은 슈퍼 트레이너나 데일리 트레이너를 따로 쓰는 것이 카본화 수명을 지키는 방법입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 초보인데 가을 첫 마라톤에 카본화 신어도 될까요?</p>
+    <p class="faq-a">A. 완주가 목표라면 굳이 필요 없지만, 카본화를 원한다면 가장 부드럽고 안정적인 SC 엘리트 v5가 진입 장벽이 낮습니다. 다만 카본화는 종아리·발바닥 부담이 커서, 레이스 전 반드시 몇 번 신어 적응한 뒤 대회에 나가세요. 검증되지 않은 신발로 첫 풀코스를 뛰는 건 위험합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 본 사이트 신발 DB(RunRepeat 랩 실측·나이키/아식스/뉴발란스 한국 공식가) 및 각 모델 상세 페이지 · 한국 공식가 기준 · 작성 2026년 7월 26일.</small></p>
+`,
+  },
+  {
     id: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026',
     slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026',
     title: '미즈노 웨이브 라이더 29 vs 나이키 페가수스 42 — 같은 값 17만원, 내구냐 반발이냐',

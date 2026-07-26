@@ -99,5 +99,8 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['adidas-adios-pro-4', 'asics-metaspeed-sky-plus', 'saucony-endorphin-elite-2', 'puma-fast-r-nitro-elite-3'],
+  relatedPosts: [
+    { slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026', title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F2ny4AOj' }],
 };
