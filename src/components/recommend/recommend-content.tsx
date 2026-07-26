@@ -13,15 +13,41 @@ interface RecommendContentProps {
   totalCount: number;
 }
 
+// 완료한 설문 프로필을 탭 세션 동안 보관 — 뒤로가기로 돌아왔을 때 결과를 복원하는 데 쓴다.
+const RECOMMEND_PROFILE_KEY = 'recommend-profile';
+
 export function RecommendContent({ totalCount }: RecommendContentProps) {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [recommendations, setRecommendations] = useState<RecommendedShoe[]>([]);
   // 결과 화면(InjuryAnalysis)용 — 퀴즈 완료 시점에 지연 로드로 채워진다
   const [loadedShoes, setLoadedShoes] = useState<CardShoe[]>([]);
 
-  // 사용자가 질문에 답하는 동안 백그라운드에서 신발 데이터를 미리 받아둔다
+  // 마운트 시: 신발 데이터를 미리 받아두고, 직전 세션에 완료한 설문이 있으면 결과를 복원한다.
+  // (결과 화면에서 신발 상세로 갔다가 뒤로가기 했을 때 설문을 다시 하지 않도록)
   useEffect(() => {
-    void loadCardShoes().catch(() => {});
+    let cancelled = false;
+    void (async () => {
+      const allShoes = await loadCardShoes().catch(() => [] as CardShoe[]);
+      if (cancelled) return;
+      let saved: string | null = null;
+      try {
+        saved = sessionStorage.getItem(RECOMMEND_PROFILE_KEY);
+      } catch {
+        /* sessionStorage 접근 불가(프라이빗 모드 등) 시 복원 생략 */
+      }
+      if (!saved) return;
+      try {
+        const savedProfile = JSON.parse(saved) as UserProfile;
+        setLoadedShoes(allShoes);
+        setRecommendations(recommendShoes(allShoes, savedProfile));
+        setProfile(savedProfile);
+      } catch {
+        /* 손상된 값이면 무시 */
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
   }, []);
 
   const handleComplete = async (userProfile: UserProfile) => {
@@ -30,11 +56,21 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
     setLoadedShoes(allShoes);
     setRecommendations(results);
     setProfile(userProfile);
+    try {
+      sessionStorage.setItem(RECOMMEND_PROFILE_KEY, JSON.stringify(userProfile));
+    } catch {
+      /* 저장 실패 시에도 이번 세션 결과 표시엔 문제없다 */
+    }
   };
 
   const handleReset = () => {
     setProfile(null);
     setRecommendations([]);
+    try {
+      sessionStorage.removeItem(RECOMMEND_PROFILE_KEY);
+    } catch {
+      /* noop */
+    }
   };
 
   const profileLabels = {
