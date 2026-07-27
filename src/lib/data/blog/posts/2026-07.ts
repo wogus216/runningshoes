@@ -2,6 +2,104 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'running-shoe-midsole-foam-guide-2026',
+    slug: 'running-shoe-midsole-foam-guide-2026',
+    title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
+    description:
+      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이부터, ZoomX(나이키)와 부스트(아디다스) 같은 브랜드 폼 이름 뒤에서 실제로 원료를 만드는 회사(BASF·Arkema·Dow)까지. 브랜드 마케팅 용어를 걷어내고 소재의 정체를 정리한 소재 해설 1편입니다.',
+    thumbnail: '/images/blog/running-shoe-midsole-foam-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-27',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['미드솔 폼', '러닝화 소재', 'PEBA', 'ZoomX', '부스트', '슈퍼크리티컬'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>미드솔 폼이 러닝화의 심장</strong> — 반발·쿠션·무게를 좌우합니다. 크게 <strong>EVA(기본) → TPU(부스트) → PEBA(슈퍼폼)</strong> 순으로 반발이 좋아지고 값이 오릅니다</li>
+    <li><strong>브랜드 폼 이름은 마케팅, 원료는 소수 화학회사</strong> — 나이키 ZoomX = 프랑스 <strong>Arkema</strong>의 Pebax(PEBA), 아디다스 부스트 = 독일 <strong>BASF</strong>의 Infinergy(eTPU)입니다</li>
+    <li><strong>"슈퍼크리티컬"은 소재가 아니라 공정</strong> — 폼에 질소·CO2를 주입해 가볍고 반발 좋게 만드는 기술이라, EVA든 PEBA든 여기에 적용됩니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>러닝화 광고를 보면 "ZoomX, 부스트, FF 블라스트, 퓨얼셀…" 브랜드마다 폼 이름이 다 다릅니다. 그런데 이 이름들을 벗겨보면 <strong>결국 몇 가지 소재(EVA·TPU·PEBA)와, 그걸 만드는 소수의 화학회사</strong>로 정리됩니다. 이 글 하나로 폼의 정체가 잡힙니다.</p>
+</div>
+
+<h2>1. 폼 3대 계열 — 쉽게 정리</h2>
+<p>복잡해 보이지만 핵심은 세 가지입니다. 뒤로 갈수록 반발이 좋아지고, 대신 비싸지거나 내구가 짧아집니다.</p>
+<table>
+  <thead><tr><th>폼</th><th>특징</th><th>에너지 리턴</th><th>내구</th><th>쓰는 곳</th></tr></thead>
+  <tbody>
+    <tr><td><strong>EVA</strong></td><td>가장 기본. 싸고 오래감. 겨울에 딱딱해짐</td><td>40~65%</td><td>길다(1000km+)</td><td>입문화·데일리</td></tr>
+    <tr><td><strong>TPU (eTPU)</strong></td><td>EVA보다 반발↑, 겨울에도 안정. 대신 무겁다</td><td>중상</td><td>길다</td><td>아디다스 부스트</td></tr>
+    <tr><td><strong>PEBA</strong></td><td>가장 가볍고 반발 최고. 대신 비싸고 빨리 죽는다</td><td><strong>70%+</strong></td><td>짧다(150~300km)</td><td>카본 레이서·슈퍼폼</td></tr>
+  </tbody>
+</table>
+<p>요즘 프리미엄 신발은 여기에 두 가지가 더 붙습니다 — <strong>A-TPU</strong>(PEBA만큼 반발 좋으면서 내구·겨울 강함, 푸마 나이트로 엘리트 계열)와 <strong>TPEE</strong>(내구 좋은 프리미엄, 아디다스 라이트스트라이크 프로). 하지만 큰 그림은 위 세 줄로 충분합니다.</p>
+
+<h2>2. 브랜드 폼 이름의 진실 — 누가 만드나</h2>
+<p>여기가 이 글의 핵심입니다. <strong>브랜드가 부르는 폼 이름은 대부분 마케팅 명칭이고, 실제 원료는 몇 개의 화학회사가 만듭니다.</strong></p>
+<table>
+  <thead><tr><th>브랜드 폼</th><th>실제 소재</th><th>만드는 회사</th></tr></thead>
+  <tbody>
+    <tr><td>나이키 <strong>ZoomX</strong></td><td>PEBA (Pebax)</td><td><strong>Arkema</strong> (프랑스)</td></tr>
+    <tr><td>아디다스 <strong>부스트</strong></td><td>eTPU (Infinergy)</td><td><strong>BASF</strong> (독일)</td></tr>
+    <tr><td>아식스 FF 블라스트 계열</td><td>OBC 배합</td><td><strong>Dow</strong> (미국) 등</td></tr>
+    <tr><td>아디다스 라이트스트라이크 프로</td><td>TPEE</td><td>Shincell (중국) 등</td></tr>
+  </tbody>
+</table>
+<p>즉 나이키가 "ZoomX"라 부르는 건 프랑스 화학회사 <strong>Arkema의 Pebax</strong>라는 원료이고, 아디다스 "부스트"는 독일 <strong>BASF의 Infinergy</strong>입니다. 두 회사는 러닝화 폼 원료의 사실상 양대 산맥이죠. 재미있는 건 <strong>Arkema가 데카트론의 킵런(KIPRUN) VFOAM 개발에도 참여</strong>했다는 점 — 가성비 브랜드부터 최상위 카본화까지, 원료를 거슬러 올라가면 같은 회사로 모입니다.</p>
+<div class="callout warning">
+  <p>다만 <strong>모든 브랜드가 원료사를 공개하진 않습니다.</strong> ZoomX(Arkema)·부스트(BASF)처럼 공식 확인된 것도 있지만, 뉴발란스 퓨얼셀·아식스 FF 터보·써코니 PWRRUN PB 같은 슈퍼폼은 "PEBA 계열"이라고만 알려졌을 뿐 정확한 공급사는 영업 비밀인 경우가 많습니다. 이 글의 회사 정보는 공식 발표·업계 확인된 것만 담았습니다.</p>
+</div>
+
+<h2>3. "슈퍼크리티컬"은 소재가 아니라 공정입니다</h2>
+<p>가장 많이 오해하는 부분입니다. <strong>슈퍼크리티컬(초임계)은 폼 종류가 아니라 "만드는 방법"</strong>입니다. 폼을 굳힐 때 <strong>질소나 CO2를 초임계 상태</strong>(액체도 기체도 아닌 상태)로 주입하면, 기포가 더 균일하고 커져서 <strong>더 가볍고 반발이 좋아집니다.</strong></p>
+<p>그래서 "슈퍼크리티컬 EVA"는 그냥 EVA에 이 공정을 입힌 것이고, PEBA에도 적용됩니다. 뒷이야기도 있습니다:</p>
+<ul>
+  <li><strong>스케쳐스가 CO2 주입 방식을 특허</strong>로 걸어둬서, 경쟁사가 CO2를 쓰려면 라이선스료를 냅니다</li>
+  <li>그래서 <strong>브룩스는 질소를 써서</strong>(DNA 플래시) 라이선스료를 피하고, 나이키도 ZoomX 슈퍼크리티컬에 질소를 씁니다</li>
+  <li>아식스 FF 블라스트+ 계열도 슈퍼크리티컬 공정입니다</li>
+</ul>
+<p>정리하면 <strong>"슈퍼크리티컬"이라고 적혀 있으면 = 소재가 뭐든 그 폼을 더 가볍고 통통 튀게 만든 버전</strong>이라고 보면 됩니다.</p>
+
+<h2>4. 그래서 내 신발은 무슨 폼일까</h2>
+<p>우리 사이트 신발 DB에서 폼별 대표 모델을 정리하면:</p>
+<ul>
+  <li><strong>PEBA(ZoomX·최고 반발)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>·<a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a></li>
+  <li><strong>A-TPU(반발+내구)</strong> — <a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트-R 나이트로 엘리트 3</a>·<a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a></li>
+  <li><strong>TPEE(프리미엄 내구)</strong> — <a href="/shoes/adidas-adios-pro-4">아디제로 아디오스 프로 4</a></li>
+  <li><strong>슈퍼크리티컬 폼(가벼운 데일리·슈퍼트레이너)</strong> — <a href="/shoes/asics-novablast-6">노바블라스트 6</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
+  <li><strong>EVA(가성비 입문)</strong> — <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 등 입문화</li>
+</ul>
+<p>플레이트(카본·유리섬유)까지 궁금하다면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>도 함께 보세요. 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. PEBA가 제일 좋은 폼인가요?</p>
+    <p class="faq-a">A. 반발과 무게만 보면 그렇지만, 내구가 짧고(150~300km) 비쌉니다. 그래서 레이스·포인트 훈련용이지 매일 신는 데일리용은 아닙니다. 매일 신을 신발은 EVA나 슈퍼크리티컬 폼이 오히려 경제적이고 오래갑니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 브랜드 폼 이름이 다 다른데 결국 같은 건가요?</p>
+    <p class="faq-a">A. 완전히 같진 않지만 뿌리는 겹칩니다. 예를 들어 여러 브랜드의 최상위 슈퍼폼이 모두 "PEBA 계열"이고, 그 원료 상당수가 Arkema의 Pebax에서 나옵니다. 배합·발포 공정·플레이트 조합에서 차이가 생기는 거지, 기본 소재는 몇 가지로 수렴합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 슈퍼크리티컬 폼이면 무조건 좋은 건가요?</p>
+    <p class="faq-a">A. 대체로 더 가볍고 반발이 좋지만, "슈퍼크리티컬"은 공정일 뿐이라 바탕 소재가 무엇이냐가 더 중요합니다. 슈퍼크리티컬 EVA와 슈퍼크리티컬 PEBA는 성격이 다릅니다. 라벨보다 실제 착화감·랩 수치(에너지 리턴)를 보는 게 정확합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 겨울에 딱딱해지는 신발이 있던데 폼 때문인가요?</p>
+    <p class="faq-a">A. 네. EVA는 저온에서 경화(딱딱해짐)가 큰 편이고, TPU·PEBA는 상대적으로 겨울에도 성질이 덜 변합니다. 한국 겨울에 자주 뛴다면 이 점도 폼 선택의 기준이 됩니다.</p>
+  </div>
+</div>
+
+<p><small>출처: RunRepeat 폼 가이드, BASF·Arkema 공식 자료, 업계 공개 정보 종합. 브랜드별 원료 공급사는 공식 확인·업계 검증된 것만 표기했으며, 비공개인 경우 소재 유형까지만 기재했습니다. · 작성 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
+`,
+  },
+  {
     id: 'fall-marathon-race-day-checklist-2026',
     slug: 'fall-marathon-race-day-checklist-2026',
     title: '가을 마라톤 완주 준비물 체크리스트 — 신발·젤·양말부터 대회 당일까지',
