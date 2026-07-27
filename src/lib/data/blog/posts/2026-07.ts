@@ -2,6 +2,145 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'running-shoe-plate-guide-2026',
+    slug: 'running-shoe-plate-guide-2026',
+    title: '러닝화 플레이트 완전 해설 — 카본이 대체 뭘 하고, 누가 만드나',
+    description:
+      '카본 플레이트가 실제로 무슨 일을 하는지 쉽게 풀었습니다. 카본·유리섬유·나일론 플레이트의 차이, 시소(teeter-totter) 효과의 정체, 탄소섬유 원사를 만드는 회사(Toray·Hexcel)와 신발용 플레이트 전문 업체(Carbitex), 대회 규정까지. 소재 해설 시리즈 2편입니다.',
+    thumbnail: '/images/blog/running-shoe-plate-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-27',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['플레이트', '카본 플레이트', '러닝화 소재', '유리섬유', '나일론 플레이트', '슈퍼슈즈'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>플레이트는 에너지를 "만들지" 않습니다</strong> — 미드솔이 접히는 걸 막아 발가락 관절에서 새는 힘을 줄이고, 발을 앞으로 굴려주는 <strong>지렛대</strong> 역할입니다</li>
+    <li><strong>소재는 3가지 — 카본(가장 뻣뻣·가벼움·비쌈) / 유리섬유 / 나일론·TPU(부드럽고 저렴)</strong>. 나일론으로 카본만큼 뻣뻣하게 만들려면 4~5배 두꺼워야 해서 그만큼 무거워집니다</li>
+    <li><strong>효과는 평균 2~3% 수준이고 만능이 아닙니다</strong> — 연구 14편 메타분석에서 러닝 이코노미 <strong>-2.88%</strong>. 내 몸에 맞는 강성을 넘어서면 오히려 손해라는 결과도 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><a href="/blog/running-shoe-midsole-foam-guide-2026">1편(미드솔 폼)</a>에서 폼의 정체를 정리했다면, 이번엔 그 폼 사이에 끼워진 <strong>딱딱한 판때기</strong> 차례입니다. "카본 플레이트"라는 말은 다 들어봤는데 <strong>정확히 뭘 하는 건지, 카본이 아닌 플레이트는 뭐가 다른지, 그 카본은 누가 만드는지</strong>까지 한 번에 정리했습니다. — 러닝화 소재 해설 시리즈 2편.</p>
+</div>
+
+<h2>1. 플레이트 소재 3대장 — 쉽게 정리</h2>
+<p>미드솔 폼처럼 플레이트도 결국 몇 가지로 정리됩니다. 핵심 기준은 딱 하나, <strong>얼마나 뻣뻣한가(강성)</strong>입니다.</p>
+<table>
+  <thead><tr><th>플레이트</th><th>성격</th><th>무게</th><th>값</th><th>주로 쓰는 곳</th></tr></thead>
+  <tbody>
+    <tr><td><strong>카본 파이버</strong></td><td>가장 뻣뻣하고 얇다. 반발 최대</td><td>가장 가벼움</td><td>비쌈</td><td>카본 레이서·슈퍼슈즈</td></tr>
+    <tr><td><strong>유리섬유</strong></td><td>카본보다 부드럽고 값이 싸다. 잘 안 부러짐</td><td>중간</td><td>중간</td><td>중급 레이서·슈퍼트레이너</td></tr>
+    <tr><td><strong>나일론 / TPU</strong></td><td>가장 부드럽다. 자연스럽게 굴러가는 느낌</td><td>무거움</td><td>저렴</td><td>템포화·데일리 트레이너</td></tr>
+  </tbody>
+</table>
+<p>여기서 자주 오해하는 지점 하나. <strong>"나일론 플레이트는 싸구려 카본"이 아닙니다.</strong> 같은 강성을 내려면 나일론·TPU는 카본보다 <strong>4~5배 두꺼워야</strong> 하고 그만큼 무거워지는 건 맞지만, 애초에 목적이 다릅니다. 카본은 <strong>레이스 페이스에서 최대 추진</strong>, 나일론은 <strong>매일 신어도 발이 덜 피곤한 부드러운 굴림</strong>이 목적입니다.</p>
+<div class="callout">
+  <p>실제로 <strong>2026년 슈퍼트레이너의 절반 이상이 카본을 안 씁니다.</strong> 나일론이나 Pebax(PEBA) 플레이트를 넣죠. 매일 신는 신발에 카본을 넣으면 발과 종아리에 부담이 커지기 때문입니다.</p>
+</div>
+
+<h2>2. 플레이트는 대체 무슨 일을 하나 — "시소 효과"</h2>
+<p>가장 흔한 오해부터 걷어냅시다. <strong>플레이트는 스프링이 아닙니다.</strong> 카본판이 휘었다 펴지면서 에너지를 뿜어내는 게 아니라, 하는 일은 오히려 <strong>"못 접히게 막는 것"</strong>에 가깝습니다.</p>
+<p>발로 땅을 밀 때, 힘의 상당량이 <strong>발가락 관절(엄지발가락 뿌리, MTP 관절)이 꺾이면서 새어나갑니다.</strong> 두꺼운 폼 위에서는 신발까지 같이 접히니 손실이 더 커지죠. 여기에 뻣뻣한 판을 깔면 신발이 접히지 않고, 그 힘이 앞으로 나가는 데 쓰입니다.</p>
+<p>여기에 요즘 슈퍼슈즈의 핵심인 <strong>시소(teeter-totter) 효과</strong>가 더해집니다. 플레이트가 <strong>곡선(로커 모양)</strong>으로 들어가 있으면:</p>
+<ul>
+  <li>앞발이 땅에 닿을 때 신발 앞쪽이 눌리면서</li>
+  <li>딱딱한 곡선판이 <strong>시소처럼 회전</strong>해 뒤꿈치를 위·앞으로 밀어 올립니다</li>
+  <li>그 결과 발이 저절로 앞으로 굴러가는 느낌이 납니다</li>
+</ul>
+<p>그래서 <strong>플레이트의 "모양"이 소재만큼 중요합니다.</strong> 똑같은 카본이라도 곡률, 두께, 신발 안에서의 위치가 다르면 완전히 다른 신발이 됩니다.</p>
+<div class="callout warning">
+  <p><strong>플레이트만 따로 떼서 "이만큼 좋아진다"고 말하기는 어렵습니다.</strong> 슈퍼슈즈의 성능은 ①고반발 폼의 에너지 리턴 ②시소 효과 ③발가락 관절 고정이 <strong>합쳐진 결과</strong>이고, 연구자들도 폼과 플레이트의 기여를 완전히 분리하지는 못했습니다. "카본이 다 한다"는 말은 과장입니다.</p>
+</div>
+
+<h2>3. 그 카본, 누가 만드나</h2>
+<p>1편에서 폼 원료가 소수의 화학회사(BASF·Arkema)로 수렴한다고 정리했는데, <strong>플레이트도 똑같습니다.</strong> 브랜드가 "Flyplate", "PWRPLATE", "Speedboard", "Energy Rods" 같은 이름을 붙이지만, 그 안의 탄소섬유는 대부분 몇 개 소재 회사에서 나옵니다.</p>
+<table>
+  <thead><tr><th>회사</th><th>역할</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Toray</strong> (일본)</td><td>탄소섬유 원사. 신발용 열가소성 복합재(CFRT)도 공급 — 자사 자료 기준 고급 운동화 <strong>1억 켤레 이상</strong>에 적용</td></tr>
+    <tr><td><strong>Hexcel</strong> (미국)</td><td>얇게 펴서 짠 탄소섬유 원단(스프레드 토우) 공급</td></tr>
+    <tr><td><strong>Carbitex</strong> (미국)</td><td>신발 전용 <strong>유연한</strong> 카본 플레이트 제조. Toray 섬유 + Hexcel 원단을 받아 가공</td></tr>
+  </tbody>
+</table>
+<p>즉 <strong>탄소섬유 실 → 원단 → 신발 모양 플레이트</strong>로 이어지는 공급망이 따로 있고, 브랜드는 그 끝에서 자기 이름을 붙이는 구조입니다. Carbitex의 플레이트는 알트라·스피드랜드·써코니(엔돌핀 엣지의 AFX 플레이트) 등에 쓰인 것이 공개돼 있습니다.</p>
+<p>카본 플레이트 자체는 보통 <strong>탄소섬유 + 수지</strong>로 만듭니다. 전통적으로는 에폭시(열경화성)를 썼고, 최근에는 나일론 계열 수지를 쓴 <strong>열가소성 복합재</strong>가 늘었습니다. 약 177℃로 가열해 <strong>6~8초</strong>면 성형되고, 수백만 번 굽혀도 원래 모양으로 돌아온다는 게 제조사 설명입니다.</p>
+<div class="callout warning">
+  <p>다만 폼과 마찬가지로 <strong>대부분의 브랜드는 플레이트 공급사를 공개하지 않습니다.</strong> 나이키 Flyplate, 아식스·뉴발란스·푸마의 카본 플레이트가 어느 회사 섬유인지는 공식 확인된 바가 없습니다. 이 글에는 회사가 직접 밝혔거나 업계에 공개된 것만 담았습니다.</p>
+</div>
+
+<h2>4. 모양도 소재만큼 다릅니다</h2>
+<p>같은 "카본 플레이트"라도 신발마다 생김새가 전혀 다릅니다. 우리 사이트 신발 DB 기준으로 정리하면:</p>
+<ul>
+  <li><strong>풀렝스(전체 길이)</strong> — 가장 흔한 형태. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>·<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a></li>
+  <li><strong>포크형·슬롯형(갈라진 형태)</strong> — 앞부분을 갈라 유연성과 안정성을 같이 잡는 설계. <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>·<a href="/shoes/asics-magic-speed-5">매직스피드 5</a></li>
+  <li><strong>스푼형·3/4 길이</strong> — 일부만 덮어 부담을 줄인 형태. <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/asics-metaspeed-ray">메타스피드 레이</a></li>
+  <li><strong>막대(로드) 형태</strong> — 판 대신 발가락뼈처럼 갈라진 막대. 아디다스 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>의 카본 Energy Rods 2.0(5개)</li>
+  <li><strong>날개형(윙드)·듀얼</strong> — 트레일에서 비틀림까지 잡는 설계. <a href="/shoes/hoka-tecton-x-3">텍톤 X 3</a></li>
+</ul>
+<p>같은 브랜드 안에서도 급이 갈립니다. 아디다스만 봐도 최상위 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>는 <strong>카본</strong> 로드, 아래 등급인 <a href="/shoes/adidas-boston-13">보스턴 13</a>은 <strong>유리섬유</strong> 로드입니다. 미즈노 <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>는 <strong>유리섬유 강화 나일론</strong>, 온 <a href="/shoes/on-cloudflow-5">클라우드플로우 5</a>는 <strong>유리섬유-나일론 Speedboard</strong>죠. 브랜드 기술 명칭만 보면 다 대단해 보이지만, <strong>소재를 보면 등급이 드러납니다.</strong></p>
+
+<h2>5. 대회 규정 — 플레이트는 1개만</h2>
+<p>슈퍼슈즈 경쟁이 과열되자 세계육상연맹(World Athletics)이 선을 그었습니다. 마라톤·로드 종목 기준 핵심은 두 가지입니다.</p>
+<ul>
+  <li><strong>밑창 두께 40mm 이하</strong></li>
+  <li><strong>딱딱한 플레이트는 소재 불문 1개만.</strong> 여러 조각으로 나뉘는 건 되지만 <strong>같은 평면에 순서대로</strong> 있어야 하고, 위아래로 겹치거나 나란히 두는 건 금지</li>
+</ul>
+<p>"카본 두 장 겹쳐서 더 빠른 신발"이 안 나오는 이유가 이겁니다. 일반 동호인 대회에서 이 규정을 검사하는 경우는 거의 없지만, <strong>기록 공인이 걸린 대회라면 신발이 규정 목록에 있는지 확인</strong>하는 게 안전합니다.</p>
+
+<h2>6. 그래서 얼마나 빨라지나 — 숫자로</h2>
+<p>여기가 가장 정직하게 말해야 하는 부분입니다. 2026년 발표된 메타분석(연구 <strong>14편·피험자 271명</strong>)에서 카본 플레이트화의 효과는:</p>
+<ul>
+  <li><strong>러닝 이코노미 -2.88%</strong> (95% 신뢰구간 -4.57% ~ -1.19%)</li>
+  <li>대사 비용 -2.64%, 산소 소비 -2.84% — <strong>평균 약 -2.75%</strong></li>
+</ul>
+<p>즉 <strong>"같은 페이스를 조금 덜 힘들게"</strong>가 정확한 표현입니다. 다만 이 연구에는 중요한 단서가 붙습니다.</p>
+<div class="callout warning">
+  <ul>
+    <li><strong>플레이트 단독 효과가 아닙니다</strong> — 대부분 "카본화 vs 일반화" 비교라 폼의 기여가 섞여 있습니다</li>
+    <li><strong>강성에는 개인별 최적점이 있습니다</strong> — 내 몸에 맞는 수준을 넘어서면 오히려 에너지 소모가 늘 수 있다는 보고가 있고, 체중이 반응을 좌우한다는 지적도 있습니다</li>
+    <li><strong>대부분 실험실 트레드밀 데이터</strong>이고, 여성 피험자 비중이 크게 부족합니다</li>
+  </ul>
+</div>
+<p>실제로 최근에는 <strong>"플레이트 없는 폼만의 신발이 더 편하고 이코노미도 좋았다"</strong>는 연구도 나왔습니다. 우리 DB에도 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>처럼 <strong>플레이트 없이 폼만으로 승부하는 고성능 신발</strong>이 있습니다.</p>
+
+<h2>7. 그래서 내 신발엔 뭐가 들었나</h2>
+<ul>
+  <li><strong>카본 (레이스용)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>·<a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>·<a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>·<a href="/shoes/puma-fast-r-nitro-elite-3">패스트-R 나이트로 엘리트 3</a></li>
+  <li><strong>카본 (훈련용·슈퍼트레이너)</strong> — <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>·<a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>·<a href="/shoes/asics-magic-speed-5">매직스피드 5</a></li>
+  <li><strong>유리섬유·나일론 (부담 적은 굴림)</strong> — <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(나일론)·<a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a>(나일론)·<a href="/shoes/adidas-boston-13">보스턴 13</a>(유리섬유)·<a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>(유리섬유 나일론)</li>
+  <li><strong>Pebax·TPU 등 기타</strong> — <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(Pebax)·<a href="/shoes/puma-magmax-nitro-2">맥맥스 나이트로 2</a>(TPU)</li>
+  <li><strong>플레이트 없음</strong> — <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>·<a href="/shoes/asics-novablast-6">노바블라스트 6</a> 등 대부분의 데일리화</li>
+</ul>
+<p>모델별 플레이트 종류는 각 신발 상세 페이지의 <strong>상세 스펙</strong>에서 확인할 수 있습니다. 실제 카본화끼리의 대결이 궁금하면 <a href="/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026">카본 레이서 3파전</a>, 트레일 카본은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">카본 트레일 비교</a>를 보세요.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 초보인데 카본화 신어도 되나요?</p>
+    <p class="faq-a">A. 신어도 되지만 <strong>매일 신는 신발로는 권하지 않습니다.</strong> 뻣뻣한 플레이트는 종아리·아킬레스·발바닥에 부담을 옮기고, 효과도 어느 정도 이상의 페이스에서 잘 나옵니다. 대회와 포인트 훈련용으로 두고, 평소엔 플레이트 없는 데일리화나 나일론 플레이트 신발을 신는 게 안전합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 나일론 플레이트는 카본의 하위 호환인가요?</p>
+    <p class="faq-a">A. 아닙니다. 목적이 다릅니다. 나일론·유리섬유는 부드럽게 굴려주는 역할이라 <strong>매일 신어도 부담이 적고 내구도 낫습니다.</strong> 실제로 2026년 슈퍼트레이너의 절반 이상이 카본을 쓰지 않습니다. 레이스는 카본, 훈련은 나일론이 합리적인 조합입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 카본 플레이트는 부러지나요?</p>
+    <p class="faq-a">A. 정상적인 러닝에서 부러지는 일은 드뭅니다. 다만 카본화의 진짜 수명 문제는 플레이트가 아니라 <strong>미드솔 폼</strong>입니다. PEBA 폼은 150~300km 정도면 반발이 눈에 띄게 죽습니다(<a href="/blog/running-shoe-midsole-foam-guide-2026">1편 참고</a>). 플레이트가 멀쩡해도 신발의 성능은 먼저 떨어집니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 플레이트가 있으면 무조건 빠른가요?</p>
+    <p class="faq-a">A. 아닙니다. 메타분석 평균은 약 -2.75%이고, <strong>개인별 최적 강성을 넘으면 오히려 손해</strong>일 수 있습니다. 폼만으로 승부하는 신발이 더 편하고 이코노미가 좋았다는 연구도 있습니다. 라벨보다 <strong>내 발과 페이스에 맞는지</strong>가 먼저입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 카본 플레이트 대사 효과 메타분석(2026, 연구 14편·271명), 시소 효과 관련 생체역학 연구, World Athletics 신발 규정(C2.1A), Toray·Carbitex 공식 자료 및 CompositesWorld 보도. 브랜드별 플레이트 공급사는 공식 확인·업계 공개된 것만 표기했습니다. · 작성 2026년 7월 27일. (러닝화 소재 해설 시리즈 2편 — 플레이트)</small></p>
+`,
+  },
+  {
     id: 'running-shoe-midsole-foam-guide-2026',
     slug: 'running-shoe-midsole-foam-guide-2026',
     title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
@@ -74,7 +213,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>슈퍼크리티컬 폼(가벼운 데일리·슈퍼트레이너)</strong> — <a href="/shoes/asics-novablast-6">노바블라스트 6</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
   <li><strong>EVA(가성비 입문)</strong> — <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 등 입문화</li>
 </ul>
-<p>플레이트(카본·유리섬유)까지 궁금하다면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>도 함께 보세요. 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
+<p>폼 위·아래에 들어가는 <strong>플레이트</strong>가 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">시리즈 2편 — 플레이트 완전 해설</a>로 이어집니다(카본·유리섬유·나일론의 차이와 만드는 회사). 실제 카본화 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>, 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
 
 <div class="faq">
   <h2>자주 묻는 질문</h2>
