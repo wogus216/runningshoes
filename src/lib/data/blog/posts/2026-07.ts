@@ -887,10 +887,15 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/2026-gwacheon-marathon-registration.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',
+    updatedAt: '2026-07-27',
     category: 'news' as const,
     readingTime: 6,
     tags: ['과천마라톤', '2026 과천마라톤', '과천마라톤 접수', '추가접수', '가을 마라톤', '수도권 마라톤'],
     content: `
+<div class="callout warning">
+  <p><strong>오늘(7월 27일 월요일) 오후 2시입니다.</strong> 결제 마감(7/26 자정)이 지나 빠진 자리만큼 추가접수가 열립니다. 취소분에 한정되니 종목이 정해져 있다면 <strong>2시 정각 대기</strong>가 안전합니다. 대회 공식 공지는 7월 21일 이후 변동이 없습니다(2026-07-27 재확인).</p>
+</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
@@ -951,7 +956,7 @@ export const posts_2026_07: BlogPost[] = [
 </ul>
 
 <div class="callout warning">
-  <p>본 글은 <strong>2026-07-25 기준 과천시체육회 공식 공지</strong>(개최 안내·결제 마감 및 추가접수 안내)를 바탕으로 작성했습니다. 추가접수 일정(7/27 14:00)은 '예정'이며 취소 수량에 따라 종목별로 조기 마감될 수 있습니다. 홈페이지 리뉴얼 중이라 세부 내용이 바뀔 수 있으니, 접수 직전 <strong>gcrun.co.kr</strong> 공지를 반드시 최종 확인하세요.</p>
+  <p>본 글은 <strong>과천시체육회 공식 공지</strong>(개최 안내·결제 마감 및 추가접수 안내, 2026-07-21자)를 바탕으로 작성했고 <strong>2026-07-27 공식 홈페이지에서 재확인</strong>했습니다(그 이후 신규 공지 없음). 추가접수 일정(7/27 14:00)은 '예정'이며 취소 수량에 따라 종목별로 조기 마감될 수 있습니다. 홈페이지 리뉴얼 중이라 세부 내용이 바뀔 수 있으니, 접수 직전 <strong>gcrun.co.kr</strong> 공지를 반드시 최종 확인하세요.</p>
 </div>
 
 <div class="faq">
