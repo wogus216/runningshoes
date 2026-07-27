@@ -93,5 +93,5 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크',
   },
   similarShoes: ['brooks-adrenaline-gts-25', 'asics-gel-kayano-32', 'new-balance-860-v14'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKUVK' }],
+  purchaseLinks: [],
 };

@@ -93,5 +93,5 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~포어풋',
   },
   similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'new-balance-rebel-v5'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKUd9' }],
+  purchaseLinks: [],
 };

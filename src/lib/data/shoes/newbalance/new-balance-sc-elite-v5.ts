@@ -127,5 +127,5 @@ export const shoe: Shoe = {
     { slug: 'nike-vaporfly-4-vs-alphafly-3-comparison', title: '베이퍼플라이4 vs 알파플라이3 — 카본 레이서' },
     { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 계급도' },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLwgI' }],
+  purchaseLinks: [],
 };

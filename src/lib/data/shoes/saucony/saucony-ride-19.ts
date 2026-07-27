@@ -101,5 +101,5 @@ export const shoe: Shoe = {
     { slug: 'saucony-ride-18-vs-19-comparison', title: '라이드 18 vs 19 — 세대 비교' },
     { slug: 'saucony-running-shoes-lineup-tier-guide-2026', title: '써코니 러닝화 계급도' },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dRV7Ln' }],
+  purchaseLinks: [],
 };

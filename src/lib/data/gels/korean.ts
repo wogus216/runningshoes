@@ -82,12 +82,7 @@ export const koreanGels: Gel[] = [
       alternatives: ['enup-power-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dRZ8a2',
-      },
-    ],
+    purchaseLinks: [],
 
     features: [
       '리퀴드(물) 제형 - 목넘김 최상',
@@ -314,12 +309,7 @@ export const koreanGels: Gel[] = [
       alternatives: ['kolon-perfect-power-gel', 'up-energy-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dR0blo',
-      },
-    ],
+    purchaseLinks: [],
 
     features: [
       '팔라티노스(Palatinose) 기반 - 저GI 지속 에너지',
@@ -431,12 +421,7 @@ export const koreanGels: Gel[] = [
       alternatives: ['enup-power-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dR0cub',
-      },
-    ],
+    purchaseLinks: [],
 
     features: [
       '수용성 마그네슘 50mg (고흡수율) - 근경련 예방',

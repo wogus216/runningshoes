@@ -94,5 +94,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-880-v15'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKnfe' }],
+  purchaseLinks: [],
 };

@@ -2996,21 +2996,6 @@ export const posts_2026_05: BlogPost[] = [
   </div>
 </div>
 
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://link.coupang.com/a/dBKnfe" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">라이드 18 최저가 →</span>
-    </a>
-    <a href="https://link.coupang.com/a/dRV7Ln" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">라이드 19 최저가 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
 
 <h2>다른 카테고리 세대 비교</h2>
@@ -4145,12 +4130,8 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">엔돌핀 프로 4 최저가 →</span>
     </a>
-    <a href="https://link.coupang.com/a/dRV51m" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">엔돌핀 프로 5 최저가 →</span>
-    </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>관련 글</h2>

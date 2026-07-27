@@ -83,12 +83,7 @@ export const premiumGels: Gel[] = [
       alternatives: ['sis-beta-fuel', '226ers-high-energy'],
     },
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dRZ2Xe',
-      },
-    ],
+    purchaseLinks: [],
 
     features: [
       '킵초게 세계 신기록(2:01:09) 레이스 연료',
@@ -227,12 +222,7 @@ export const premiumGels: Gel[] = [
       },
     ],
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dRZ5q5',
-      },
-    ],
+    purchaseLinks: [],
 
     similarGels: ['maurten-gel-100', '226ers-high-energy', 'gu-roctane-energy-gel'],
   },
@@ -318,12 +308,7 @@ export const premiumGels: Gel[] = [
       alternatives: ['sis-beta-fuel', 'maurten-gel-100'],
     },
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dRZ7ck',
-      },
-    ],
+    purchaseLinks: [],
 
     features: [
       'Cyclodextrin (Cluster Dextrin®) 기반 - 빠른 위 통과 + 낮은 삼투압',

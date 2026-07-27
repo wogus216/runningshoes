@@ -99,5 +99,5 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['asics-metaspeed-edge-plus'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLuG9' }],
+  purchaseLinks: [],
 };

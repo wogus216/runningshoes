@@ -86,6 +86,6 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크',
   },
   similarShoes: ['asics-gel-kayano-33', 'asics-gel-kayano-32', 'nike-structure-26'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLy0J' }],
+  purchaseLinks: [],
   tags: ['안정화', 'GuideRails', '오버프로네이션', '평발'],
 };

@@ -101,5 +101,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['asics-superblast-2', 'new-balance-sc-trainer-v3', 'hoka-mach-x-3', 'nike-vomero-18'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKxM0' }],
+  purchaseLinks: [],
 };

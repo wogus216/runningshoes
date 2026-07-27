@@ -97,5 +97,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4', 'saucony-endorphin-elite-2'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dRV51m' }],
+  purchaseLinks: [],
 };

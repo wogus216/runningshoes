@@ -95,5 +95,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['hoka-mach-6', 'nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKtnn' }],
+  purchaseLinks: [],
 };

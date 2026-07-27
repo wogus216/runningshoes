@@ -94,5 +94,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKqYG' }],
+  purchaseLinks: [],
 };

@@ -95,5 +95,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBKvcw' }],
+  purchaseLinks: [],
 };

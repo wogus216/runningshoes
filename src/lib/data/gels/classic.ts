@@ -113,12 +113,7 @@ export const classicGels: Gel[] = [
 
     similarGels: ['enup-power-gel', 'kolon-perfect-power-gel', 'maurten-gel-100'],
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dR0dui',
-      },
-    ],
+    purchaseLinks: [],
   },
   {
     id: 'kolon-perfect-power-gel',
@@ -229,12 +224,7 @@ export const classicGels: Gel[] = [
 
     similarGels: ['enup-power-gel', 'k-yanggang', 'sportsix-energy-gel'],
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dR0eUY',
-      },
-    ],
+    purchaseLinks: [],
   },
   {
     id: 'k-yanggang',
@@ -344,12 +334,7 @@ export const classicGels: Gel[] = [
       },
     ],
 
-    purchaseLinks: [
-      {
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/dR0gpW',
-      },
-    ],
+    purchaseLinks: [],
 
     similarGels: ['kolon-perfect-power-gel', 'enup-power-gel', 'up-energy-gel'],
   },

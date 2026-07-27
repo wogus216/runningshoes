@@ -86,6 +86,6 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크~미드풋',
   },
   similarShoes: ['asics-gel-nimbus-28', 'nike-vomero-18', 'new-balance-1080-v14'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLx7T' }],
+  purchaseLinks: [],
   tags: ['쿠션화', '프리미엄', '장거리', '데일리'],
 };

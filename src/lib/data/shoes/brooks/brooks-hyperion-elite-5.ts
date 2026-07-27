@@ -87,6 +87,6 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~포어풋',
   },
   similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/dBLzHI' }],
+  purchaseLinks: [],
   tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용'],
 };
