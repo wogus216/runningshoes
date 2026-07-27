@@ -6,12 +6,13 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'running-shoe-plate-guide-2026',
     title: '러닝화 플레이트 완전 해설 — 카본이 대체 뭘 하고, 누가 만드나',
     description:
-      '카본 플레이트가 실제로 무슨 일을 하는지 쉽게 풀었습니다. 카본·유리섬유·나일론 플레이트의 차이, 시소(teeter-totter) 효과의 정체, 탄소섬유 원사를 만드는 회사(Toray·Hexcel)와 신발용 플레이트 전문 업체(Carbitex), 대회 규정까지. 소재 해설 시리즈 2편입니다.',
+      '카본 플레이트가 실제로 무슨 일을 하는지 논문과 실측으로 풀었습니다. 카본·유리섬유·나일론의 차이, 시소 효과의 정체, 카본판을 빼도 효율이 그대로였던 실험, 사람마다 ±11%씩 갈리는 개인차, 종목별로 다른 대회 규정(트레일은 제한 없음)까지. 소재 해설 시리즈 2편입니다.',
     thumbnail: '/images/blog/running-shoe-plate-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-27',
+    updatedAt: '2026-07-27',
     category: 'guide' as const,
-    readingTime: 11,
+    readingTime: 16,
     tags: ['플레이트', '카본 플레이트', '러닝화 소재', '유리섬유', '나일론 플레이트', '슈퍼슈즈'],
     content: `
 <div class="tldr">
@@ -19,7 +20,7 @@ export const posts_2026_07: BlogPost[] = [
   <ul>
     <li><strong>플레이트는 에너지를 "만들지" 않습니다</strong> — 미드솔이 접히는 걸 막아 발가락 관절에서 새는 힘을 줄이고, 발을 앞으로 굴려주는 <strong>지렛대</strong> 역할입니다</li>
     <li><strong>소재는 3가지 — 카본(가장 뻣뻣·가벼움·비쌈) / 유리섬유 / 나일론·TPU(부드럽고 저렴)</strong>. 나일론으로 카본만큼 뻣뻣하게 만들려면 4~5배 두꺼워야 해서 그만큼 무거워집니다</li>
-    <li><strong>효과는 평균 2~3% 수준이고 만능이 아닙니다</strong> — 연구 14편 메타분석에서 러닝 이코노미 <strong>-2.88%</strong>. 내 몸에 맞는 강성을 넘어서면 오히려 손해라는 결과도 있습니다</li>
+    <li><strong>효과는 평균 2~3%, 그런데 개인차가 그보다 큽니다</strong> — 메타분석 평균은 <strong>-2.88%</strong>지만, 세계급 선수 실험에선 사람에 따라 <strong>+11.4% 개선부터 −11.3% 악화까지</strong> 갈렸습니다</li>
   </ul>
 </div>
 
@@ -51,9 +52,26 @@ export const posts_2026_07: BlogPost[] = [
   <li>딱딱한 곡선판이 <strong>시소처럼 회전</strong>해 뒤꿈치를 위·앞으로 밀어 올립니다</li>
   <li>그 결과 발이 저절로 앞으로 굴러가는 느낌이 납니다</li>
 </ul>
+<p>이 "지렛대"는 비유가 아니라 실측됩니다. 강성을 대조군에서 최고 수준으로 올린 실험에서 <strong>힘이 걸리는 지렛대 팔 길이</strong>가 이렇게 변했습니다.</p>
+<table>
+  <thead><tr><th>관절</th><th>부드러운 신발</th><th>뻣뻣한 신발</th></tr></thead>
+  <tbody>
+    <tr><td>발가락(MTP) 관절</td><td>17.1mm</td><td><strong>35.3mm</strong></td></tr>
+    <tr><td>발목</td><td>136.1mm</td><td><strong>157.4mm</strong></td></tr>
+    <tr><td>무릎</td><td>11.4mm</td><td><strong>34.7mm</strong></td></tr>
+  </tbody>
+</table>
 <p>그래서 <strong>플레이트의 "모양"이 소재만큼 중요합니다.</strong> 똑같은 카본이라도 곡률, 두께, 신발 안에서의 위치가 다르면 완전히 다른 신발이 됩니다.</p>
+
+<h3>그런데 — 카본판을 빼도 결과가 같았습니다</h3>
+<p>여기서 이 글에서 가장 중요한 실험을 소개해야겠습니다. 연구자들이 <strong>베이퍼플라이의 카본 플레이트에 칼집을 여섯 군데 넣어 굽힘 강성만 떨어뜨린 뒤</strong> 15명에게 시속 14km로 달리게 했습니다. 결과는:</p>
+<ul>
+  <li>발가락 관절이 꺾이는 각도는 <strong>확실히 커졌습니다</strong>(p=0.002) — 플레이트가 덜 막아준 게 맞습니다</li>
+  <li>그런데 <strong>에너지 소모는 그대로였습니다</strong> — 변화 0.55%±1.77%, 통계적으로 의미 없음(p=0.306)</li>
+</ul>
+<p>즉 <strong>강성을 없애도 신발의 효율은 떨어지지 않았습니다.</strong> 저자들의 해석은 명확합니다 — 슈퍼슈즈의 성능은 플레이트의 강성 단독이 아니라 <strong>폼과 형태(곡률)와 플레이트의 상호작용</strong>에서 나온다는 것입니다.</p>
 <div class="callout warning">
-  <p><strong>플레이트만 따로 떼서 "이만큼 좋아진다"고 말하기는 어렵습니다.</strong> 슈퍼슈즈의 성능은 ①고반발 폼의 에너지 리턴 ②시소 효과 ③발가락 관절 고정이 <strong>합쳐진 결과</strong>이고, 연구자들도 폼과 플레이트의 기여를 완전히 분리하지는 못했습니다. "카본이 다 한다"는 말은 과장입니다.</p>
+  <p><strong>"카본이 다 한다"는 말은 과장입니다.</strong> 실제로 최근 연구들은 <strong>미드솔 소재의 물성이 굽힘 강성보다 러닝 이코노미에 더 큰 영향을 줄 수 있다</strong>고 봅니다. 플레이트는 폼이라는 주연을 받쳐주는 조연에 가깝습니다.</p>
 </div>
 
 <h2>3. 그 카본, 누가 만드나</h2>
@@ -67,9 +85,11 @@ export const posts_2026_07: BlogPost[] = [
   </tbody>
 </table>
 <p>즉 <strong>탄소섬유 실 → 원단 → 신발 모양 플레이트</strong>로 이어지는 공급망이 따로 있고, 브랜드는 그 끝에서 자기 이름을 붙이는 구조입니다. Carbitex의 플레이트는 알트라·스피드랜드·써코니(엔돌핀 엣지의 AFX 플레이트) 등에 쓰인 것이 공개돼 있습니다.</p>
-<p>카본 플레이트 자체는 보통 <strong>탄소섬유 + 수지</strong>로 만듭니다. 전통적으로는 에폭시(열경화성)를 썼고, 최근에는 나일론 계열 수지를 쓴 <strong>열가소성 복합재</strong>가 늘었습니다. 약 177℃로 가열해 <strong>6~8초</strong>면 성형되고, 수백만 번 굽혀도 원래 모양으로 돌아온다는 게 제조사 설명입니다.</p>
+<p>카본 플레이트 자체는 보통 <strong>탄소섬유 + 수지</strong>로 만듭니다. 전통적으로는 에폭시(열경화성)를 썼고, 최근에는 나일론 계열 수지를 쓴 <strong>열가소성 복합재</strong>가 늘었습니다. 약 177℃로 가열해 <strong>6~8초</strong> 동안 10~15psi로 눌러 성형하고, 수백만 번 굽혀도 원래 모양으로 돌아온다는 게 제조사 설명입니다. 재미있는 건 <strong>Toray가 "신발 밑창(Shoe sole)"이라는 제목의 특허를 직접 보유</strong>하고 있다는 점입니다 — 소재 회사가 신발 부품 설계까지 특허화한 셈이죠.</p>
 <div class="callout warning">
-  <p>다만 폼과 마찬가지로 <strong>대부분의 브랜드는 플레이트 공급사를 공개하지 않습니다.</strong> 나이키 Flyplate, 아식스·뉴발란스·푸마의 카본 플레이트가 어느 회사 섬유인지는 공식 확인된 바가 없습니다. 이 글에는 회사가 직접 밝혔거나 업계에 공개된 것만 담았습니다.</p>
+  <p>폼과 마찬가지로 <strong>대부분의 브랜드는 플레이트 공급사를 공개하지 않습니다.</strong> 나이키 Flyplate, 아식스 메타스피드, 뉴발란스 Energy Arc, 호카 로켓 X, 아디다스 Energy Rods — 전부 비공개입니다. 나이키의 플레이트 관련 특허들도 "카본 파이버 복합재"라고만 쓰고 원사 공급사를 밝히지 않습니다.</p>
+  <p><strong>유일한 예외가 푸마입니다.</strong> <a href="/shoes/puma-fast-r-nitro-elite-3">패스트-R 나이트로 엘리트</a> 등에 쓰인 PWRPLATE는 <strong>Envalior의 Tepex</strong>(나일론12 수지 + 직조 연속 탄소섬유)라고 소재사 보도자료로 공개돼 있습니다.</p>
+  <p>참고로 <strong>"신발엔 T700 등급이 쓰인다"</strong> 같은 이야기도 근거를 찾지 못했습니다. Toray의 신발 특허조차 탄성률을 180~600GPa로 폭넓게만 규정합니다.</p>
 </div>
 
 <h2>4. 모양도 소재만큼 다릅니다</h2>
@@ -83,13 +103,27 @@ export const posts_2026_07: BlogPost[] = [
 </ul>
 <p>같은 브랜드 안에서도 급이 갈립니다. 아디다스만 봐도 최상위 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>는 <strong>카본</strong> 로드, 아래 등급인 <a href="/shoes/adidas-boston-13">보스턴 13</a>은 <strong>유리섬유</strong> 로드입니다. 미즈노 <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>는 <strong>유리섬유 강화 나일론</strong>, 온 <a href="/shoes/on-cloudflow-5">클라우드플로우 5</a>는 <strong>유리섬유-나일론 Speedboard</strong>죠. 브랜드 기술 명칭만 보면 다 대단해 보이지만, <strong>소재를 보면 등급이 드러납니다.</strong></p>
 
-<h2>5. 대회 규정 — 플레이트는 1개만</h2>
-<p>슈퍼슈즈 경쟁이 과열되자 세계육상연맹(World Athletics)이 선을 그었습니다. 마라톤·로드 종목 기준 핵심은 두 가지입니다.</p>
+<h2>5. 대회 규정 — 종목마다 다릅니다</h2>
+<p>슈퍼슈즈 경쟁이 과열되자 세계육상연맹(World Athletics)이 선을 그었습니다. 현행 규정은 <strong>2025년 12월 승인, 2026년 1월 1일 발효</strong>본입니다. 흔히 "40mm"만 알려져 있는데 <strong>실제로는 종목별로 다릅니다.</strong></p>
+<table>
+  <thead><tr><th>종목</th><th>최대 밑창 두께</th></tr></thead>
+  <tbody>
+    <tr><td>로드 러닝(마라톤 등)·경보</td><td><strong>40mm</strong></td></tr>
+    <tr><td>트랙 &amp; 필드</td><td>20mm</td></tr>
+    <tr><td>크로스컨트리</td><td>20/40mm → <strong>2026년 4월 1일부터 제한 없음</strong></td></tr>
+    <tr><td><strong>산악 · 트레일</strong></td><td><strong>제한 없음</strong></td></tr>
+  </tbody>
+</table>
+<p>즉 <strong>트레일화는 애초에 이 규정의 적용 대상이 아닙니다.</strong> <a href="/shoes/hoka-tecton-x-3">텍톤 X 3</a>가 카본 플레이트를 <strong>두 장</strong> 쓰고도 문제가 없는 이유입니다. 크로스컨트리도 올해 4월부로 두께 제한이 풀렸습니다.</p>
+<p>로드 기준 플레이트 조항은 이렇습니다.</p>
 <ul>
-  <li><strong>밑창 두께 40mm 이하</strong></li>
-  <li><strong>딱딱한 플레이트는 소재 불문 1개만.</strong> 여러 조각으로 나뉘는 건 되지만 <strong>같은 평면에 순서대로</strong> 있어야 하고, 위아래로 겹치거나 나란히 두는 건 금지</li>
+  <li><strong>딱딱한 구조물은 소재 불문 1개만.</strong> 전체 길이든 일부만이든 상관없습니다</li>
+  <li>여러 조각으로 나뉘는 건 되지만 <strong>밑창 곡률을 따라 한 평면에</strong> 있어야 하고, 위아래로 쌓거나 겹치면 안 됩니다</li>
+  <li><strong>고리·코일·주름·동심원 형태 금지</strong>, 다른 구조물과 이어지거나 그 연장이어도 안 됩니다</li>
+  <li><strong>센서나 지능형 기술 내장 금지</strong> — 달리는 중에 스스로 조절되는 신발은 허용되지 않습니다</li>
+  <li>스파이크화는 스파이크를 붙이기 위한 판을 하나 더 쓸 수 있습니다(밑창 30mm 이하)</li>
 </ul>
-<p>"카본 두 장 겹쳐서 더 빠른 신발"이 안 나오는 이유가 이겁니다. 일반 동호인 대회에서 이 규정을 검사하는 경우는 거의 없지만, <strong>기록 공인이 걸린 대회라면 신발이 규정 목록에 있는지 확인</strong>하는 게 안전합니다.</p>
+<p>"카본 두 장 겹쳐서 더 빠른 로드화"가 안 나오는 이유가 이겁니다. 다만 <strong>이 규정은 세계랭킹이 걸린 대회에만 적용됩니다.</strong> 동호인 대회에서 검사받을 일은 사실상 없고, <strong>기록 공인이 걸린 대회라면 신발이 승인 목록에 있는지 확인</strong>하는 게 안전합니다.</p>
 
 <h2>6. 그래서 얼마나 빨라지나 — 숫자로</h2>
 <p>여기가 가장 정직하게 말해야 하는 부분입니다. 2026년 발표된 메타분석(연구 <strong>14편·피험자 271명</strong>)에서 카본 플레이트화의 효과는:</p>
@@ -101,9 +135,33 @@ export const posts_2026_07: BlogPost[] = [
 <div class="callout warning">
   <ul>
     <li><strong>플레이트 단독 효과가 아닙니다</strong> — 대부분 "카본화 vs 일반화" 비교라 폼의 기여가 섞여 있습니다</li>
-    <li><strong>강성에는 개인별 최적점이 있습니다</strong> — 내 몸에 맞는 수준을 넘어서면 오히려 에너지 소모가 늘 수 있다는 보고가 있고, 체중이 반응을 좌우한다는 지적도 있습니다</li>
     <li><strong>대부분 실험실 트레드밀 데이터</strong>이고, 여성 피험자 비중이 크게 부족합니다</li>
   </ul>
+</div>
+
+<h3>평균 뒤에 숨은 개인차가 훨씬 큽니다</h3>
+<p>"평균 2.75% 개선"이라는 숫자보다 중요한 게 있습니다. <strong>사람마다 반응이 정반대로 갈립니다.</strong></p>
+<p>케냐 세계급 선수 7명(하프 59분대)과 유럽 아마추어 7명에게 같은 슈퍼슈즈를 신긴 연구 결과입니다.</p>
+<ul>
+  <li><strong>케냐 세계급</strong> — 개인별 반응이 <strong>+11.4% 개선부터 −11.3% 악화까지</strong> 흩어졌고, 그룹 평균으로는 <strong>효과가 없었습니다</strong>(p=0.541)</li>
+  <li><strong>유럽 아마추어</strong> — +9.7% 개선부터 −1.1%까지. 이쪽은 그룹 평균으로 3.5~5.0% 개선이 나왔습니다</li>
+</ul>
+<p>더 직접적인 실험도 있습니다. 강성이 다른 신발 3종으로 속도를 바꿔가며 측정했더니, <strong>시속 14km에서는 9명 중 7명이 가장 부드러운 "평범한" 신발에서 에너지 소모가 가장 적었습니다.</strong> 시속 17km로 올려야 뻣뻣한 쪽을 선호하는 사람이 늘어났고, <strong>가장 뻣뻣한 조건에서는 두 속도 모두 그룹 평균 에너지 소모가 오히려 유의하게 나빠졌습니다</strong>(p=0.001~0.006).</p>
+<p>오르막에서는 아예 효과가 사라졌다는 연구도 있습니다(20명, +15% 경사).</p>
+<div class="callout info">
+  <p><strong>"내 몸에 맞는 강성"이 진짜 변수입니다.</strong> 14명을 대상으로 한 실험에서 그룹 평균으로는 효과가 없었지만(p=0.298), <strong>각자에게 가장 잘 맞는 조건만 골라 묶으니 2% 개선</strong>이 나왔습니다(p=0.04). 카본화가 안 맞는 사람이 실재한다는 뜻입니다.</p>
+</div>
+
+<h3>강성 숫자를 볼 때 주의할 것</h3>
+<p>신발 리뷰에서 "강성 18N" 같은 수치를 보게 됩니다. 우리 DB에도 실측이 있습니다.</p>
+<ul>
+  <li><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> — <strong>18.0N</strong> (카본 스푼형 플레이트)</li>
+  <li><a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a> — <strong>19.8N</strong> <strong>(플레이트 없음)</strong></li>
+  <li><a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a> — 15.8N (Speedboard 제거 버전)</li>
+</ul>
+<p>눈여겨볼 건 <strong>플레이트가 없는 하이퍼부스트 엣지가 카본 레이서인 베이퍼플라이보다 오히려 뻣뻣하다</strong>는 점입니다. <strong>강성은 플레이트만으로 결정되지 않습니다</strong> — 폼 자체의 단단함, 스택 높이, 밑창 형태가 모두 관여합니다.</p>
+<div class="callout warning">
+  <p>다만 이 <strong>N 값은 논문에 나오는 강성 단위와 다른 개념</strong>입니다. 리뷰 사이트의 N은 신발을 특정 각도까지 구부리는 데 필요한 <strong>힘 한 점</strong>이고, 학술 연구의 N/mm·Nm/rad는 <strong>힘과 변형의 기울기</strong>입니다. 브랜드가 다른 신발끼리 N 값을 직접 비교하는 건 참고 수준으로만 보세요.</p>
 </div>
 <p>실제로 최근에는 <strong>"플레이트 없는 폼만의 신발이 더 편하고 이코노미도 좋았다"</strong>는 연구도 나왔습니다. 우리 DB에도 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>처럼 <strong>플레이트 없이 폼만으로 승부하는 고성능 신발</strong>이 있습니다.</p>
 
@@ -121,7 +179,7 @@ export const posts_2026_07: BlogPost[] = [
   <h2>자주 묻는 질문</h2>
   <div class="faq-item">
     <p class="faq-q">Q. 초보인데 카본화 신어도 되나요?</p>
-    <p class="faq-a">A. 신어도 되지만 <strong>매일 신는 신발로는 권하지 않습니다.</strong> 뻣뻣한 플레이트는 종아리·아킬레스·발바닥에 부담을 옮기고, 효과도 어느 정도 이상의 페이스에서 잘 나옵니다. 대회와 포인트 훈련용으로 두고, 평소엔 플레이트 없는 데일리화나 나일론 플레이트 신발을 신는 게 안전합니다.</p>
+    <p class="faq-a">A. 신어도 되지만 <strong>매일 신는 신발로는 권하지 않습니다.</strong> 다만 흔히 말하는 근거들은 생각보다 단단하지 않으니 정직하게 정리하겠습니다. ①<strong>"느린 페이스에선 효과 없다"는 기준선은 아직 없습니다</strong> — 가장 신뢰도 높은 메타분석도 이 질문을 미해결로 남겨뒀고, 널리 도는 "몇 분/km 이상" 같은 숫자는 원 논문이 추적되지 않습니다. ②<strong>부상 위험도 연구마다 엇갈립니다</strong> — 카본화 사용자의 부상률이 더 낮았다는 대규모 관찰 연구도, 더 높았다는 설문·시험도 함께 있습니다. 확실한 건 <strong>새 신발에 적응하는 데 3주쯤 걸린다는 관찰</strong> 정도라, 대회 직전에 처음 신는 건 피하고 저강도로 천천히 늘리는 게 안전합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 나일론 플레이트는 카본의 하위 호환인가요?</p>
@@ -133,11 +191,15 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 플레이트가 있으면 무조건 빠른가요?</p>
-    <p class="faq-a">A. 아닙니다. 메타분석 평균은 약 -2.75%이고, <strong>개인별 최적 강성을 넘으면 오히려 손해</strong>일 수 있습니다. 폼만으로 승부하는 신발이 더 편하고 이코노미가 좋았다는 연구도 있습니다. 라벨보다 <strong>내 발과 페이스에 맞는지</strong>가 먼저입니다.</p>
+    <p class="faq-a">A. 아닙니다. 메타분석 평균은 약 -2.75%지만 <strong>개인 편차가 그보다 훨씬 큽니다</strong>(세계급 선수 실험에서 +11.4%~−11.3%). 가장 뻣뻣한 조건에선 평균이 오히려 나빠졌고, 오르막에선 효과가 사라졌습니다. 라벨보다 <strong>내 몸에 맞는지</strong>가 먼저입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 카본화를 신으면 종아리에 무리가 가나요?</p>
+    <p class="faq-a">A. 널리 퍼진 얘기지만 <strong>실험 결과는 오히려 반대에 가깝습니다.</strong> 강성이 높아질수록 종아리 근육(비복근)의 수축량과 수축 속도는 <strong>줄었고</strong>, 아킬레스건이 돌려주는 탄성 에너지는 <strong>늘었습니다</strong>. 근육이 더 일한다기보다 <strong>부하가 근육에서 힘줄로 옮겨간다</strong>고 보는 게 정확합니다. 다만 힘줄에 걸리는 부하가 는다는 건 <strong>아킬레스가 약한 사람에겐 여전히 주의 사유</strong>입니다.</p>
   </div>
 </div>
 
-<p><small>출처: 카본 플레이트 대사 효과 메타분석(2026, 연구 14편·271명), 시소 효과 관련 생체역학 연구, World Athletics 신발 규정(C2.1A), Toray·Carbitex 공식 자료 및 CompositesWorld 보도. 브랜드별 플레이트 공급사는 공식 확인·업계 공개된 것만 표기했습니다. · 작성 2026년 7월 27일. (러닝화 소재 해설 시리즈 2편 — 플레이트)</small></p>
+<p><small>출처: 카본 플레이트 대사 효과 메타분석(2026, 연구 14편·271명), Healey &amp; Hoogkamer(2021, J Sport Health Sci) 플레이트 절단 실험, Knopp et al.(2023, Sports Medicine) 케냐·유럽 러너 개인차 연구, Day &amp; Hahn(2019, Footwear Science) 속도별 강성 실험, Cigoja et al.(2021, Sci Rep) 종아리·아킬레스 측정, Willwacher et al.(2014, Gait &amp; Posture) 레버암 측정, <strong>World Athletics 신발 규정 C2.1A 원문</strong>(2025-12-02 승인, 2026-01-01 발효), Toray·Carbitex·Envalior 공식 자료 및 특허 원문. 강성 N 값은 우리 신발 DB의 모델별 실측이며 학술 단위와 개념이 다릅니다. 브랜드별 플레이트 공급사는 공식 공개된 것만 표기했습니다. · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 2편 — 플레이트)</small></p>
 `,
   },
   {
@@ -145,19 +207,20 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'running-shoe-midsole-foam-guide-2026',
     title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
     description:
-      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이부터, ZoomX(나이키)와 부스트(아디다스) 같은 브랜드 폼 이름 뒤에서 실제로 원료를 만드는 회사(BASF·Arkema·Dow)까지. 브랜드 마케팅 용어를 걷어내고 소재의 정체를 정리한 소재 해설 1편입니다.',
+      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이부터, 브랜드가 실제로 소재를 밝히는지(대부분 안 밝힙니다), 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 실측과 논문으로 정리한 소재 해설 1편입니다.',
     thumbnail: '/images/blog/running-shoe-midsole-foam-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-27',
+    updatedAt: '2026-07-27',
     category: 'guide' as const,
-    readingTime: 10,
+    readingTime: 14,
     tags: ['미드솔 폼', '러닝화 소재', 'PEBA', 'ZoomX', '부스트', '슈퍼크리티컬'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>미드솔 폼이 러닝화의 심장</strong> — 반발·쿠션·무게를 좌우합니다. 크게 <strong>EVA(기본) → TPU(부스트) → PEBA(슈퍼폼)</strong> 순으로 반발이 좋아지고 값이 오릅니다</li>
-    <li><strong>브랜드 폼 이름은 마케팅, 원료는 소수 화학회사</strong> — 나이키 ZoomX = 프랑스 <strong>Arkema</strong>의 Pebax(PEBA), 아디다스 부스트 = 독일 <strong>BASF</strong>의 Infinergy(eTPU)입니다</li>
+    <li><strong>그런데 브랜드는 자기 폼이 무슨 소재인지 거의 안 밝힙니다</strong> — 공식 확인된 건 써코니·아디다스 부스트·리닝 정도고, 다들 사실로 아는 <strong>"ZoomX = PEBA"조차 나이키가 말한 적이 없습니다</strong></li>
     <li><strong>"슈퍼크리티컬"은 소재가 아니라 공정</strong> — 폼에 질소·CO2를 주입해 가볍고 반발 좋게 만드는 기술이라, EVA든 PEBA든 여기에 적용됩니다</li>
   </ul>
 </div>
@@ -178,33 +241,88 @@ export const posts_2026_07: BlogPost[] = [
 </table>
 <p>요즘 프리미엄 신발은 여기에 두 가지가 더 붙습니다 — <strong>A-TPU</strong>(PEBA만큼 반발 좋으면서 내구·겨울 강함, 푸마 나이트로 엘리트 계열)와 <strong>TPEE</strong>(내구 좋은 프리미엄, 아디다스 라이트스트라이크 프로). 하지만 큰 그림은 위 세 줄로 충분합니다.</p>
 
-<h2>2. 브랜드 폼 이름의 진실 — 누가 만드나</h2>
-<p>여기가 이 글의 핵심입니다. <strong>브랜드가 부르는 폼 이름은 대부분 마케팅 명칭이고, 실제 원료는 몇 개의 화학회사가 만듭니다.</strong></p>
+<h2>2. 브랜드 폼의 정체 — 사실은 대부분 "안 밝힙니다"</h2>
+<p>여기가 이 글의 핵심입니다. 이 글을 쓰면서 <strong>브랜드 11곳의 공식 기술 페이지와 보도자료를 직접 열어봤는데, 결과가 뜻밖이었습니다.</strong></p>
+<p><strong>러닝화 브랜드는 자기 폼이 무슨 소재인지 거의 밝히지 않습니다.</strong> 대부분 "가볍고 반발이 좋은 혁신적 폼" 같은 성능 표현만 쓰고, 화학 소재명은 한 번도 꺼내지 않습니다. 그래서 아래 표는 <strong>"브랜드가 직접 밝혔는가"를 기준으로 나눴습니다.</strong></p>
+
+<h3>브랜드가 직접 밝힌 것 (드뭅니다)</h3>
 <table>
-  <thead><tr><th>브랜드 폼</th><th>실제 소재</th><th>만드는 회사</th></tr></thead>
+  <thead><tr><th>브랜드 폼</th><th>소재</th><th>근거</th></tr></thead>
   <tbody>
-    <tr><td>나이키 <strong>ZoomX</strong></td><td>PEBA (Pebax)</td><td><strong>Arkema</strong> (프랑스)</td></tr>
-    <tr><td>아디다스 <strong>부스트</strong></td><td>eTPU (Infinergy)</td><td><strong>BASF</strong> (독일)</td></tr>
-    <tr><td>아식스 FF 블라스트 계열</td><td>OBC 배합</td><td><strong>Dow</strong> (미국) 등</td></tr>
-    <tr><td>아디다스 라이트스트라이크 프로</td><td>TPEE</td><td>Shincell (중국) 등</td></tr>
+    <tr><td>써코니 <strong>PWRRUN PB</strong></td><td><strong>PEBA</strong> (비드 발포)</td><td>써코니 공식 폼 기술 페이지에 "특별한 종류의 PEBA 폼"이라 명시</td></tr>
+    <tr><td>써코니 <strong>PWRRUN+</strong></td><td><strong>TPU</strong> (스팀 융착)</td><td>동일 페이지, PWRRUN 대비 28% 경량</td></tr>
+    <tr><td>써코니 <strong>IncrediRUN</strong></td><td><strong>TPEE</strong> 배합</td><td>동일 페이지</td></tr>
+    <tr><td>아디다스 <strong>부스트</strong></td><td><strong>eTPU</strong> (Infinergy)</td><td><strong>아디다스·BASF 양쪽이</strong> 공식 확인</td></tr>
+    <tr><td>리닝 <strong>Boom</strong> 상위</td><td><strong>Pebax</strong> / 하위는 A-TPU</td><td>R&amp;D 매니저 <strong>실명 인용</strong>으로 등급별 구분 설명</td></tr>
   </tbody>
 </table>
-<p>즉 나이키가 "ZoomX"라 부르는 건 프랑스 화학회사 <strong>Arkema의 Pebax</strong>라는 원료이고, 아디다스 "부스트"는 독일 <strong>BASF의 Infinergy</strong>입니다. 두 회사는 러닝화 폼 원료의 사실상 양대 산맥이죠. 재미있는 건 <strong>Arkema가 데카트론의 킵런(KIPRUN) VFOAM 개발에도 참여</strong>했다는 점 — 가성비 브랜드부터 최상위 카본화까지, 원료를 거슬러 올라가면 같은 회사로 모입니다.</p>
+<p><strong>써코니가 유일하게 폼마다 소재를 이름으로 적어둔 브랜드</strong>입니다. 그리고 놀랍게도 <strong>중국 브랜드 리닝이 나이키·아식스보다 투명합니다</strong> — 자사 연구원 실명으로 "엘리트 등급은 raw Pebax, 훈련 등급은 A-TPU"라고 구분해 설명합니다.</p>
+
+<h3>업계에선 정설이지만, 브랜드는 확인한 적 없는 것</h3>
+<ul>
+  <li><strong>나이키 ZoomX = PEBA(Pebax)</strong> — 모두가 사실로 아는 이 문장을, <strong>나이키도 Arkema도 공식적으로 말한 적이 없습니다.</strong> nike.com의 ZoomX 페이지엔 PEBA·Pebax라는 단어 자체가 없습니다. 다만 <strong>초임계 발포 업체 Zotefoams와 나이키의 전략적 파트너십(2017)은 공식 발표</strong>돼 있어, 실제 공급망은 "수지 → 발포 가공 → 브랜드"의 여러 단계일 가능성이 큽니다</li>
+  <li><strong>아식스 FF 블라스트 = EVA+OBC</strong> — 아식스 공식 폼 기술 페이지와 슈퍼블라스트 보도자료 어디에도 화학 조성이 없습니다</li>
+  <li><strong>아디다스 라이트스트라이크 프로 = TPEE</strong> — 출처를 추적하니 한 매체 기자의 업계 지식 서술이었고, 아디다스 발표가 아니었습니다</li>
+  <li><strong>푸마 나이트로 엘리트 = A-TPU</strong> — 푸마 공식은 "질소를 주입한 열가소성 폼"까지만 말합니다</li>
+</ul>
 <div class="callout warning">
-  <p>다만 <strong>모든 브랜드가 원료사를 공개하진 않습니다.</strong> ZoomX(Arkema)·부스트(BASF)처럼 공식 확인된 것도 있지만, 뉴발란스 퓨얼셀·아식스 FF 터보·써코니 PWRRUN PB 같은 슈퍼폼은 "PEBA 계열"이라고만 알려졌을 뿐 정확한 공급사는 영업 비밀인 경우가 많습니다. 이 글의 회사 정보는 공식 발표·업계 확인된 것만 담았습니다.</p>
+  <p><strong>왜 이 구분이 중요한가</strong> — 소재 판별의 근거로 가장 널리 쓰이는 랩 테스트(신발을 반으로 잘라 분석하는 시리즈)는 <strong>경도계와 에너지 리턴을 재는 물리 측정이지 화학 분석(분광법)이 아닙니다.</strong> 즉 "이건 PEBA다"는 측정 결과가 아니라 <strong>정보에 근거한 추론</strong>입니다. 대체로 맞겠지만, 확인된 사실과는 급이 다릅니다.</p>
 </div>
+<p>참고로 <strong>Arkema가 공식으로 인정한 러닝화</strong>는 따로 있습니다 — <a href="/blog/running-shoes-recommend-by-price-2026">가성비 브랜드</a>인 <strong>데카트론 킵런 KD900X</strong>(Arkema 보도자료, 임원 인용문 포함)와, 미즈노 <strong>웨이브 라이더 24의 웨이브 플레이트</strong>가 바이오 기반 Pebax Rnew로 만들어졌다는 것입니다. 최상위 카본화가 아니라 엉뚱한 곳에서 공식 확인이 나오는 셈입니다.</p>
 
 <h2>3. "슈퍼크리티컬"은 소재가 아니라 공정입니다</h2>
 <p>가장 많이 오해하는 부분입니다. <strong>슈퍼크리티컬(초임계)은 폼 종류가 아니라 "만드는 방법"</strong>입니다. 폼을 굳힐 때 <strong>질소나 CO2를 초임계 상태</strong>(액체도 기체도 아닌 상태)로 주입하면, 기포가 더 균일하고 커져서 <strong>더 가볍고 반발이 좋아집니다.</strong></p>
-<p>그래서 "슈퍼크리티컬 EVA"는 그냥 EVA에 이 공정을 입힌 것이고, PEBA에도 적용됩니다. 뒷이야기도 있습니다:</p>
+<p>그래서 "슈퍼크리티컬 EVA"는 그냥 EVA에 이 공정을 입힌 것이고, PEBA에도 적용됩니다.</p>
+<p>이 기술이 업계 전체로 퍼진 경로도 흥미롭습니다. <strong>초임계 발포의 원천 특허는 1992년 MIT가 등록했고 2011년에 만료</strong>돼 이미 공개 기술이 됐습니다. 이걸 상용 장비로 만든 회사(Trexel)의 설비는 <strong>로열티 없이 판매</strong>되고요. 그래서 지금은 어느 브랜드든 장비만 갖추면 쓸 수 있고, <strong>차별화는 "어떤 가스를 얼마나, 어떤 셀 구조로"에서 갈립니다.</strong></p>
+<div class="callout warning">
+  <p><strong>흔한 오해 정정</strong> — "스케쳐스가 CO2 발포를 특허로 독점해서 다른 브랜드가 라이선스료를 낸다"는 이야기가 널리 퍼져 있습니다. 확인해 보니 <strong>근거를 찾을 수 없었습니다.</strong> 원천 특허는 위처럼 이미 만료됐고, 스케쳐스가 실제로 보유한 특허는 CO2 전용이 아니라 <strong>발포 전에 미세 구멍을 내 셀을 균일화하는 제조법</strong>에 관한 것이며 명세서에 질소 등 여러 기체를 함께 나열합니다. 게다가 나이키 ZoomX(2017)는 그 특허 우선권일보다 앞섭니다.</p>
+</div>
+<p>가스 선택은 라이선스가 아니라 <strong>물성 때문</strong>입니다.</p>
 <ul>
-  <li><strong>스케쳐스가 CO2 주입 방식을 특허</strong>로 걸어둬서, 경쟁사가 CO2를 쓰려면 라이선스료를 냅니다</li>
-  <li>그래서 <strong>브룩스는 질소를 써서</strong>(DNA 플래시) 라이선스료를 피하고, 나이키도 ZoomX 슈퍼크리티컬에 질소를 씁니다</li>
-  <li>아식스 FF 블라스트+ 계열도 슈퍼크리티컬 공정입니다</li>
+  <li><strong>CO2</strong>(임계점 31.1℃·7.38MPa)는 폴리머에 녹는 양이 질소보다 <strong>3~5배</strong> 많아 두꺼운 부위를 발포하기 좋지만, 가스가 빠져나가는 속도도 2배 이상 빠릅니다</li>
+  <li><strong>질소</strong>(임계점 −147℃·3.39MPa)는 확산이 빨라 더 격렬하게 발포돼 <strong>셀이 작고 촘촘하며 셀벽이 얇아집니다</strong></li>
 </ul>
+<p>실제로 <strong>브룩스는 질소를 쓴다고 공식적으로 밝히고 있고</strong>(DNA 플래시), 그 이유도 "라이선스 회피"가 아니라 <strong>작고 촘촘한 셀 구조로 반응성을 높이기 위해서</strong>라고 설명합니다. 같은 회사의 DNA 로프트 v3는 반대로 큰 셀 발포로 쿠셔닝을 노립니다. 아식스 FF 블라스트 터보도 초임계 공정임을 공식 발표했습니다.</p>
+<p>다만 <strong>나이키가 ZoomX에 초임계 공정을 쓴다고 직접 말한 자료는 찾지 못했습니다</strong> — 업계 해설에서 나온 서술입니다.</p>
 <p>정리하면 <strong>"슈퍼크리티컬"이라고 적혀 있으면 = 소재가 뭐든 그 폼을 더 가볍고 통통 튀게 만든 버전</strong>이라고 보면 됩니다.</p>
 
-<h2>4. 그래서 내 신발은 무슨 폼일까</h2>
+<h2>4. 한국 겨울 — 폼에 따라 6배까지 갈립니다</h2>
+<p>"겨울에 신발이 딱딱해진다"는 체감은 <strong>실측으로 확인되고, 폼에 따라 차이가 큽니다.</strong> 우리 신발 DB에 저온 경화율(추운 환경에서 경도가 몇 % 올라가는가) 실측이 있는 모델을 모아봤습니다.</p>
+<table>
+  <thead><tr><th>경화율</th><th>신발</th><th>폼</th></tr></thead>
+  <tbody>
+    <tr><td><strong>6%</strong></td><td><a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a></td><td>Helion HF</td></tr>
+    <tr><td><strong>8%</strong></td><td><a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a></td><td>DNA Gold (PEBA)</td></tr>
+    <tr><td><strong>9%</strong></td><td><a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></td><td>Hyperboost Pro</td></tr>
+    <tr><td>17%</td><td><a href="/shoes/brooks-glycerin-max">글리세린 맥스</a> · <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> · <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a></td><td>DNA Tuned / Helion</td></tr>
+    <tr><td>19%</td><td><a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td><td>Enerzy 계열</td></tr>
+    <tr><td><strong>34%</strong></td><td><a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a></td><td>Enerzy NXT</td></tr>
+    <tr><td><strong>39%</strong></td><td><a href="/shoes/brooks-ghost-17">고스트 17</a></td><td>DNA Loft v3 (EVA 계열)</td></tr>
+  </tbody>
+</table>
+<p><strong>최대 6배 넘게 차이 납니다.</strong> 독립 랩의 냉동고 테스트에서도 방향이 같습니다 — EVA 계열은 경도가 <strong>41~97%</strong> 치솟는 반면 PEBA는 28%, TPU 계열은 10% 안팎에 그쳤습니다.</p>
+<p>그런데 <strong>흔히 말하는 이유는 틀렸습니다.</strong> "유리전이온도를 지나서 딱딱해진다"고들 하는데, EVA의 유리전이온도는 <strong>−25~−35℃</strong>로 한국 겨울 기온보다 훨씬 낮습니다. 실제 이유는 <strong>EVA가 결정 구조를 가진 소재라, 온도가 내려갈수록 그 결정 영역이 계속 단단해지기</strong> 때문입니다. 반면 PEBA의 연질 부분은 유리전이온도가 −51~−60℃, TPU는 −40~−48℃로 더 낮아 겨울에도 성질이 덜 변합니다.</p>
+<div class="callout warning">
+  <p>다만 <strong>"PEBA면 무조건 겨울에 강하다"고 단정하면 안 됩니다.</strong> 위 표의 <a href="/shoes/mizuno-wave-rebellion-flash-2">웨이브 리벨리온 플래시 2</a>는 PEBA 계열인데도 경화율이 36%로 높습니다. 소재 계열만큼이나 <strong>배합과 발포 방식</strong>이 결과를 좌우합니다.</p>
+</div>
+
+<h2>5. 슈퍼폼은 왜 빨리 죽나 — 450km의 진실</h2>
+<p>"PEBA는 금방 죽는다"는 말도 실험으로 확인됐습니다. 2024년 연구가 정확히 이 질문을 다뤘는데, 방법이 흥미롭습니다 — <strong>연구자 한 명이 아스팔트에서 450km를 직접 달려</strong> 신발을 닳게 한 뒤, 새 신발과 비교했습니다. 미드솔만 EVA와 PEBA로 다르고 <strong>플레이트·형태는 동일한 시제품</strong>을 써서 폼 효과만 분리했습니다.</p>
+<table>
+  <thead><tr><th></th><th>EVA</th><th>PEBA</th></tr></thead>
+  <tbody>
+    <tr><td>450km 후 러닝 이코노미</td><td><strong>변화 없음</strong></td><td><strong>2.28% 악화</strong></td></tr>
+    <tr><td>굽힘 에너지 리턴 손실</td><td>−10.5%</td><td><strong>−24.6%</strong></td></tr>
+    <tr><td>에너지 손실률(히스테리시스)</td><td>26 → 39.5%</td><td>24.7 → <strong>42.4%</strong></td></tr>
+  </tbody>
+</table>
+<p>새것일 땐 PEBA가 EVA보다 약 1.9% 좋은데, <strong>450km를 지나면 그 우위가 사라집니다.</strong> 논문 저자들은 아예 <strong>"훈련용은 EVA, 레이스용은 PEBA로 나눠 만들라"</strong>고 제안합니다.</p>
+<p>왜 그럴까요. 폼이 죽는 건 공기가 새서가 아니라 <strong>기포의 벽이 반복해서 눌리다 주름지고 결국 갈라지기</strong> 때문입니다(750km 신은 미드솔을 전자현미경으로 본 연구에서 확인됐습니다). 그리고 <strong>밀도가 낮을수록 이 붕괴가 빠릅니다</strong> — 같은 횟수를 때렸을 때 저밀도 폼은 충격 전달이 51% 늘었지만 고밀도 폼은 7%에 그쳤습니다. PEBA는 가벼운 대신 기포 벽이 성기니, 같은 이유로 먼저 무너집니다.</p>
+<div class="callout info">
+  <p><strong>정작 발은 그걸 못 느낍니다.</strong> 640km 신은 신발을 측정한 연구에서 충격 흡수 지표는 20~28% 떨어지고 경도는 17% 올랐는데, <strong>정작 러너 본인은 쿠션이 2.7%밖에 안 줄었다고 느꼈습니다.</strong> "아직 푹신한데?"가 신발이 살아있다는 증거가 못 되는 이유입니다.</p>
+</div>
+
+<h2>6. 그래서 내 신발은 무슨 폼일까</h2>
 <p>우리 사이트 신발 DB에서 폼별 대표 모델을 정리하면:</p>
 <ul>
   <li><strong>PEBA(ZoomX·최고 반발)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>·<a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a></li>
@@ -219,11 +337,19 @@ export const posts_2026_07: BlogPost[] = [
   <h2>자주 묻는 질문</h2>
   <div class="faq-item">
     <p class="faq-q">Q. PEBA가 제일 좋은 폼인가요?</p>
-    <p class="faq-a">A. 반발과 무게만 보면 그렇지만, 내구가 짧고(150~300km) 비쌉니다. 그래서 레이스·포인트 훈련용이지 매일 신는 데일리용은 아닙니다. 매일 신을 신발은 EVA나 슈퍼크리티컬 폼이 오히려 경제적이고 오래갑니다.</p>
+    <p class="faq-a">A. 새것일 때 반발과 무게만 보면 그렇습니다. 다만 <strong>450km쯤 지나면 EVA와 성능이 같아진다</strong>는 실험 결과가 있습니다(위 5장). 비싸기도 하고요. 그래서 레이스·포인트 훈련용이지 매일 신는 데일리용은 아닙니다. 매일 신을 신발은 EVA나 슈퍼크리티컬 폼이 오히려 경제적이고 오래갑니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 신발은 500~800km에서 바꾸라던데 맞나요?</p>
+    <p class="faq-a">A. 이 숫자의 출처는 <strong>1985년 연구</strong>입니다. 1980년대 EVA를 <strong>기계로 반복해 때린</strong> 실험이었고, 흥미롭게도 바로 그 논문이 "사람이 실제로 신은 경우엔 덜 닳더라"고 밝혔습니다. 요즘 슈퍼폼에는 재검증된 적이 없고, 실제로 위 450km 연구에서 EVA는 그 거리에서도 성능이 유지됐습니다. <strong>소재에 따라 다르다</strong>고 보는 게 정확합니다 — 레이스용 PEBA는 400km대부터 의심하고, 데일리 EVA는 더 오래 씁니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 신발을 번갈아 신으면 폼이 회복되나요?</p>
+    <p class="faq-a">A. 회복은 되지만 <strong>기대보다 훨씬 적습니다.</strong> 22시간을 쉬게 한 실험에서 회복률은 폼에 따라 1~10% 수준이었고, <strong>9개월을 쉬어도 원래 상태로 돌아오지 않았습니다.</strong> 로테이션이 부상을 줄인다는 보고는 있지만, 그 이유는 "폼이 쉬어서"보다 <strong>신발마다 형태가 달라 몸에 걸리는 부하가 분산되기 때문</strong>이라는 설명이 더 설득력 있습니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 브랜드 폼 이름이 다 다른데 결국 같은 건가요?</p>
-    <p class="faq-a">A. 완전히 같진 않지만 뿌리는 겹칩니다. 예를 들어 여러 브랜드의 최상위 슈퍼폼이 모두 "PEBA 계열"이고, 그 원료 상당수가 Arkema의 Pebax에서 나옵니다. 배합·발포 공정·플레이트 조합에서 차이가 생기는 거지, 기본 소재는 몇 가지로 수렴합니다.</p>
+    <p class="faq-a">A. 완전히 같진 않지만 뿌리는 겹칩니다. 최상위 슈퍼폼은 대체로 PEBA 계열이고, 차이는 배합·발포 공정·플레이트 조합에서 생깁니다. 다만 <strong>"어느 브랜드 폼이 정확히 무슨 원료인지"는 대부분 공개되지 않았다</strong>는 점을 기억하세요(위 2장). 우리가 아는 대응 관계 상당수가 브랜드 확인이 아니라 업계 추정입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 슈퍼크리티컬 폼이면 무조건 좋은 건가요?</p>
@@ -231,11 +357,11 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 겨울에 딱딱해지는 신발이 있던데 폼 때문인가요?</p>
-    <p class="faq-a">A. 네. EVA는 저온에서 경화(딱딱해짐)가 큰 편이고, TPU·PEBA는 상대적으로 겨울에도 성질이 덜 변합니다. 한국 겨울에 자주 뛴다면 이 점도 폼 선택의 기준이 됩니다.</p>
+    <p class="faq-a">A. 네, 그리고 <strong>폼에 따라 6배 넘게 차이 납니다</strong>(위 4장 실측 표). EVA 계열이 가장 크게 굳고 PEBA·TPU는 덜 변합니다. 한국 겨울에 자주 뛴다면 이 점도 폼 선택의 기준이 됩니다. 단 같은 PEBA라도 배합에 따라 결과가 달라지니 모델별 실측을 보는 게 확실합니다.</p>
   </div>
 </div>
 
-<p><small>출처: RunRepeat 폼 가이드, BASF·Arkema 공식 자료, 업계 공개 정보 종합. 브랜드별 원료 공급사는 공식 확인·업계 검증된 것만 표기했으며, 비공개인 경우 소재 유형까지만 기재했습니다. · 작성 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
+<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키), Arkema 공식 자료, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
 `,
   },
   {
