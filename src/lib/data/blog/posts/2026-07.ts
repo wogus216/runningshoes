@@ -207,13 +207,13 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'running-shoe-midsole-foam-guide-2026',
     title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
     description:
-      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이부터, 브랜드가 실제로 소재를 밝히는지(대부분 안 밝힙니다), 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 실측과 논문으로 정리한 소재 해설 1편입니다.',
+      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이, 브랜드가 소재를 밝히지 않는다는 사실과 공급사 공시로 추적한 실마리(그 회사는 부산에 연구소를 세웁니다), 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 실측과 1차 자료로 정리한 소재 해설 1편입니다.',
     thumbnail: '/images/blog/running-shoe-midsole-foam-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-27',
     updatedAt: '2026-07-27',
     category: 'guide' as const,
-    readingTime: 17,
+    readingTime: 19,
     tags: ['미드솔 폼', '러닝화 소재', 'PEBA', 'ZoomX', '부스트', '슈퍼크리티컬'],
     content: `
 <div class="tldr">
@@ -287,6 +287,23 @@ export const posts_2026_07: BlogPost[] = [
   <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. Zotefoams의 독점 계약 공시와 정면으로 부딪히죠. 제품 라인이 달라서일 수도, 한쪽이 과장일 수도 있습니다.</p>
 </div>
 <p>재미있게도 <strong>나이키 자신의 특허를 뒤지면 오히려 PEBA가 안 나옵니다.</strong> 나이키 명의 폼 조성 특허들은 EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다. ZoomX보다는 리액트 계열에 가까운 내용이죠. <strong>브랜드는 자기가 가장 자랑하는 폼의 정체를 특허에서조차 드러내지 않습니다.</strong></p>
+
+<h3>그 회사가 부산에 옵니다</h3>
+<p>여기서 한국 러너에게 직접 와닿는 대목이 나옵니다. 같은 연차보고서에 이렇게 적혀 있습니다.</p>
+<div class="callout info">
+  <p>"우리의 첫 시장 맞춤형 이노베이션 센터 — <strong>대한민국 부산의 신발 이노베이션 센터</strong> — 를 최종 고객 가까이에 둔다."<br>
+  "<strong>핵심 고객과 그들의 1차 협력사 근처</strong>에 위치해, 새로운 개발을 <strong>특정 신발 모델에 직접 적용</strong>할 수 있게 한다."</p>
+</div>
+<p>부산은 한국 신발 산업의 본거지이고, 나이키의 1차 제조 협력사들이 모여 있는 곳입니다. <strong>나이키 슈퍼폼을 만드는 회사가 세우는 첫 해외 이노베이션 센터가 부산이라는 얘기입니다.</strong></p>
+<p>이 회사에게 신발이 어떤 사업인지 보면 이유가 보입니다.</p>
+<table>
+  <thead><tr><th></th><th>2023</th><th>2024</th><th>증가</th></tr></thead>
+  <tbody>
+    <tr><td>신발 부문 매출</td><td>£45.3m</td><td><strong>£66.1m</strong></td><td>+46%</td></tr>
+    <tr><td>그룹 매출 중 비중</td><td>36%</td><td><strong>45%</strong></td><td>—</td></tr>
+  </tbody>
+</table>
+<p><strong>신발이 이 회사의 최대 사업</strong>이 됐고, 그 대부분이 한 고객에게서 나옵니다. 베트남 호치민에도 신발 생산 투자를 진행 중이죠. 우리가 신는 신발의 폼이 어디서 어떻게 오는지, 브랜드 광고보다 <strong>공급사의 사업보고서가 더 많은 걸 말해줍니다.</strong></p>
 <div class="callout info">
   <p><strong>그럼 학계는 확인했을까요? 아닙니다.</strong> 찾아본 결과 <strong>특정 상용 슈퍼슈즈의 미드솔을 분광 분석해 소재를 확정한 논문이 존재하지 않습니다.</strong> 가장 근접한 연구는 상용 러닝화 5종의 폼을 3D 촬영으로 분석했는데, 소재 이름(EVA·TPU·PEBA)은 <strong>주어진 사실로 적었을 뿐 화학 분석을 하지 않았고</strong>, 신발 브랜드도 전부 익명 처리했습니다(저자 두 명이 신발 회사 소속이었습니다).</p>
   <p>즉 <strong>"이 신발 미드솔이 무슨 소재인가"를 독립적으로 검증한 주체가 아직 아무도 없습니다.</strong> 우리가 아는 건 전부 브랜드 발표 아니면 추론입니다.</p>
