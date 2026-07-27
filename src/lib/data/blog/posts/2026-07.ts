@@ -213,14 +213,14 @@ export const posts_2026_07: BlogPost[] = [
     publishedAt: '2026-07-27',
     updatedAt: '2026-07-27',
     category: 'guide' as const,
-    readingTime: 14,
+    readingTime: 17,
     tags: ['미드솔 폼', '러닝화 소재', 'PEBA', 'ZoomX', '부스트', '슈퍼크리티컬'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>미드솔 폼이 러닝화의 심장</strong> — 반발·쿠션·무게를 좌우합니다. 크게 <strong>EVA(기본) → TPU(부스트) → PEBA(슈퍼폼)</strong> 순으로 반발이 좋아지고 값이 오릅니다</li>
-    <li><strong>그런데 브랜드는 자기 폼이 무슨 소재인지 거의 안 밝힙니다</strong> — 공식 확인된 건 써코니·아디다스 부스트·리닝 정도고, 다들 사실로 아는 <strong>"ZoomX = PEBA"조차 나이키가 말한 적이 없습니다</strong></li>
+    <li><strong>그런데 브랜드는 자기 폼이 무슨 소재인지 거의 안 밝힙니다</strong> — 다들 사실로 아는 <strong>"ZoomX = PEBA"조차 나이키가 말한 적이 없고, 학계도 검증한 적이 없습니다.</strong> 실마리는 엉뚱하게도 <strong>상장된 공급사의 주주 공시</strong>에서 나옵니다</li>
     <li><strong>"슈퍼크리티컬"은 소재가 아니라 공정</strong> — 폼에 질소·CO2를 주입해 가볍고 반발 좋게 만드는 기술이라, EVA든 PEBA든 여기에 적용됩니다</li>
   </ul>
 </div>
@@ -254,6 +254,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>써코니 <strong>IncrediRUN</strong></td><td><strong>TPEE</strong> 배합</td><td>동일 페이지</td></tr>
     <tr><td>아디다스 <strong>부스트</strong></td><td><strong>eTPU</strong> (Infinergy)</td><td><strong>아디다스·BASF 양쪽이</strong> 공식 확인</td></tr>
     <tr><td>리닝 <strong>Boom</strong> 상위</td><td><strong>Pebax</strong> / 하위는 A-TPU</td><td>R&amp;D 매니저 <strong>실명 인용</strong>으로 등급별 구분 설명</td></tr>
+    <tr><td>뉴발란스 <strong>FuelCell</strong> (레이싱)</td><td><strong>100% PEBA</strong></td><td>공식 제품 페이지에 "made with 100% PEBA foam" 명시</td></tr>
   </tbody>
 </table>
 <p><strong>써코니가 유일하게 폼마다 소재를 이름으로 적어둔 브랜드</strong>입니다. 그리고 놀랍게도 <strong>중국 브랜드 리닝이 나이키·아식스보다 투명합니다</strong> — 자사 연구원 실명으로 "엘리트 등급은 raw Pebax, 훈련 등급은 A-TPU"라고 구분해 설명합니다.</p>
@@ -269,6 +270,27 @@ export const posts_2026_07: BlogPost[] = [
   <p><strong>왜 이 구분이 중요한가</strong> — 소재 판별의 근거로 가장 널리 쓰이는 랩 테스트(신발을 반으로 잘라 분석하는 시리즈)는 <strong>경도계와 에너지 리턴을 재는 물리 측정이지 화학 분석(분광법)이 아닙니다.</strong> 즉 "이건 PEBA다"는 측정 결과가 아니라 <strong>정보에 근거한 추론</strong>입니다. 대체로 맞겠지만, 확인된 사실과는 급이 다릅니다.</p>
 </div>
 <p>참고로 <strong>Arkema가 공식으로 인정한 러닝화</strong>는 따로 있습니다 — <a href="/blog/running-shoes-recommend-by-price-2026">가성비 브랜드</a>인 <strong>데카트론 킵런 KD900X</strong>(Arkema 보도자료, 임원 인용문 포함)와, 미즈노 <strong>웨이브 라이더 24의 웨이브 플레이트</strong>가 바이오 기반 Pebax Rnew로 만들어졌다는 것입니다. 최상위 카본화가 아니라 엉뚱한 곳에서 공식 확인이 나오는 셈입니다.</p>
+
+<h3>브랜드가 침묵해도, 공급사는 말해야 합니다</h3>
+<p>그럼 우리는 영영 알 수 없을까요. 그렇지도 않습니다. <strong>브랜드는 침묵할 자유가 있지만, 주식시장에 상장된 공급사는 주주에게 사업을 보고할 의무가 있습니다.</strong></p>
+<p>영국 상장사 <strong>Zotefoams</strong>의 공시를 따라가 보면 이렇습니다.</p>
+<ul>
+  <li><strong>2017년</strong> — "나이키와 신발 기술 개발 및 소재 공급을 위한 전략적 파트너십을 체결했다"고 <strong>실명으로</strong> 공시</li>
+  <li><strong>2023년</strong> — 그 <strong>독점 계약을 2029년 12월 31일까지 연장</strong></li>
+  <li><strong>2023년</strong> — "최근 출시된 <strong>나이키 울트라플라이</strong>에 고성능 폼을 공급한다"고 제품명까지 공시</li>
+  <li><strong>2024 회계연도</strong> — 신발 부문 매출이 46% 성장해 약 <strong>660억 원</strong> 규모. 그리고 감사 재무제표에 <strong>"한 고객이 그룹 매출의 약 45%"</strong>라고 익명 기재</li>
+</ul>
+<p>여기에 <strong>같은 회사의 특허</strong>가 마지막 조각을 놓습니다. Zotefoams의 발포 기술 특허 실시예에는 이렇게 적혀 있습니다 — <strong>"폴리에테르 블록 아마이드(PEBA) 폴리머, 즉 Arkema의 Pebax 5533을…"</strong> 그리고 그 응용처로 <strong>러닝화 미드솔</strong>이 명시돼 있습니다.</p>
+<p>여기에 Arkema가 2015년 보도자료에서 Pebax 사용 브랜드로 <strong>"아디다스, 나이키, 푸마, 노스페이스"</strong>를 실명으로 나열한 것까지 겹치면, 그림이 얼추 맞춰집니다.</p>
+<div class="callout warning">
+  <p>다만 정직하게 말하면 <strong>이것도 여전히 정황의 사슬입니다.</strong> Zotefoams 특허에 "ZoomX"라는 단어는 없고, 나이키가 "우리 ZoomX는 Pebax입니다"라고 말한 문서도 없습니다. <strong>서로 다른 세 개의 1차 문서(공급사 공시·공급사 특허·원료사 보도자료)가 각각 한 조각씩 갖고 있을 뿐</strong>입니다.</p>
+  <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. Zotefoams의 독점 계약 공시와 정면으로 부딪히죠. 제품 라인이 달라서일 수도, 한쪽이 과장일 수도 있습니다.</p>
+</div>
+<p>재미있게도 <strong>나이키 자신의 특허를 뒤지면 오히려 PEBA가 안 나옵니다.</strong> 나이키 명의 폼 조성 특허들은 EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다. ZoomX보다는 리액트 계열에 가까운 내용이죠. <strong>브랜드는 자기가 가장 자랑하는 폼의 정체를 특허에서조차 드러내지 않습니다.</strong></p>
+<div class="callout info">
+  <p><strong>그럼 학계는 확인했을까요? 아닙니다.</strong> 찾아본 결과 <strong>특정 상용 슈퍼슈즈의 미드솔을 분광 분석해 소재를 확정한 논문이 존재하지 않습니다.</strong> 가장 근접한 연구는 상용 러닝화 5종의 폼을 3D 촬영으로 분석했는데, 소재 이름(EVA·TPU·PEBA)은 <strong>주어진 사실로 적었을 뿐 화학 분석을 하지 않았고</strong>, 신발 브랜드도 전부 익명 처리했습니다(저자 두 명이 신발 회사 소속이었습니다).</p>
+  <p>즉 <strong>"이 신발 미드솔이 무슨 소재인가"를 독립적으로 검증한 주체가 아직 아무도 없습니다.</strong> 우리가 아는 건 전부 브랜드 발표 아니면 추론입니다.</p>
+</div>
 
 <h2>3. "슈퍼크리티컬"은 소재가 아니라 공정입니다</h2>
 <p>가장 많이 오해하는 부분입니다. <strong>슈퍼크리티컬(초임계)은 폼 종류가 아니라 "만드는 방법"</strong>입니다. 폼을 굳힐 때 <strong>질소나 CO2를 초임계 상태</strong>(액체도 기체도 아닌 상태)로 주입하면, 기포가 더 균일하고 커져서 <strong>더 가볍고 반발이 좋아집니다.</strong></p>
@@ -361,7 +383,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키), Arkema 공식 자료, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
+<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키·뉴발란스), <strong>Zotefoams 규제시장 공시(RNS 2017·2023)와 발포 특허 US10675792B2</strong>, Arkema 공식 자료(2015 보도자료·Pebax 제품 페이지), 나이키·아식스·써코니 명의 폼 조성 특허 원문, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
 `,
   },
   {
