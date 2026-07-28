@@ -2,6 +2,88 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
+    slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
+    title: '러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자',
+    description:
+      '아식스 특허에서 발견한 "파르네센"은 사탕수수를 발효해 만드는 소재입니다. On의 레이싱 폼은 46%가 피마자에서 오고, 미즈노 웨이브 플레이트는 피마자 기반 Pebax로 만들어진 적이 있습니다. 석유가 지배하던 러닝화 미드솔에 농작물이 들어오는 흐름을 특허·공식 발표로 추적하고, "바이오 기반 %"를 제대로 읽는 법과 그린워싱 구별법까지 정리했습니다.',
+    thumbnail: '/images/blog/bio-based-running-shoe-foam-sugarcane-castor-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-28',
+    category: 'guide' as const,
+    readingTime: 10,
+    tags: ['바이오 폼', '지속가능 러닝화', '파르네센', '사탕수수', '피마자', 'FF 블라스트', 'Pebax Rnew'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>러닝화 폼에 농작물이 들어오고 있습니다</strong> — 아식스 특허의 핵심 성분 "파르네센"은 <strong>사탕수수 발효</strong>로 만들고, On의 레이싱 폼 헬리온 HF는 <strong>46%가 피마자</strong> 유래입니다</li>
+    <li><strong>"바이오 기반"과 "생분해"는 완전히 다른 말입니다</strong> — 원료의 출발점이 식물이라는 뜻이지, 흙에서 썩는다는 뜻이 아닙니다</li>
+    <li><strong>성능 희생도 아닙니다</strong> — 46% 피마자 폼을 쓴 <a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a>는 에너지 리턴 78.2%로 최상위권이고, 겨울 경화율 6%로 우리 DB 실측 1위입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>에서 폼의 화학을 추적하다 보니, 특허와 공식 발표 곳곳에서 <strong>석유가 아닌 원료</strong>가 자꾸 나왔습니다. 사탕수수, 피마자, 폐타이어까지. 이 글은 그 조각들을 모은 번외편입니다 — <strong>모든 사실은 특허 원문과 제조사 공식 발표 기준</strong>입니다.</p>
+</div>
+
+<h2>1. 사탕수수 경로 — 아식스 특허의 "파르네센"</h2>
+<p>아식스가 2020년 출원한 미드솔 특허(US11779076B2)의 핵심 성분은 EVA도 PEBA도 아닌 낯선 이름입니다 — <strong>"파르네센(farnesene) 기반 폴리머"</strong>. 구체적으로는 수소화 스티렌-파르네센-스티렌 블록 공중합체로, 전체 조성의 1~60%까지 들어가고 밀도 0.5g/cm³ 이하의 발포체를 만듭니다.</p>
+<p>파르네센이 뭐냐면 — <strong>사탕수수 당분을 미생물로 발효시켜 얻는 물질</strong>입니다. 이 계열 원료를 실제로 파는 일본 Kuraray의 공식 설명은 이렇습니다.</p>
+<div class="callout info">
+  <p>"SEPTON™ BIO 시리즈는 <strong>사탕수수에서 유래한 베타-파르네센</strong>으로 만들어지며, <strong>최대 80%의 천연 재생 원료</strong>를 함유한다. 밑창, 폼 패드, 합성피혁 갑피에 쓸 수 있다." — Kuraray 공식 제품 페이지</p>
+</div>
+<p>아식스가 Kuraray 원료를 쓴다고 확인된 건 아닙니다(특허의 화학과 정합적일 뿐). 다만 아식스 공식 발표에서 확인되는 건 있습니다 — <strong>슈퍼블라스트 2의 FF 블라스트+ ECO 폼이 "약 24% 바이오 기반 소재"</strong>라는 것. 특허의 사탕수수 화학이 실제 제품 라인으로 이어지고 있는 그림입니다. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/asics-novablast-6">노바블라스트 6</a>로 이어지는 FF 블라스트 계열의 족보에 이런 배경이 있는 셈이죠.</p>
+
+<h2>2. 피마자 경로 — On과 미즈노가 먼저 갔습니다</h2>
+<p>사탕수수보다 먼저 자리 잡은 건 <strong>피마자(캐스터빈)</strong>입니다. 피마자유에서 뽑은 원료로 나일론 계열(PA11)과 PEBA를 만들 수 있는데, 이게 두 갈래로 러닝화에 들어와 있습니다.</p>
+<ul>
+  <li><strong>On 헬리온 HF</strong> — On 공식 보도자료 기준 <strong>"46% 바이오 기반 소재, 피마자에서 유래"</strong>. 클라우드붐 시리즈의 레이싱 폼입니다</li>
+  <li><strong>Arkema Pebax Rnew</strong> — 피마자유 기반 그레이드로, 재생 탄소 함량이 그레이드에 따라 <strong>20~95%</strong>(ASTM D6866 기준). Arkema 공식 사이트가 <strong>미즈노 웨이브 라이더 24의 웨이브 플레이트</strong>가 이 소재로 만들어졌다고 명시합니다 — <a href="/shoes/mizuno-wave-rider-29">현행 라이더 29</a>로 이어지는 그 플레이트의 조상입니다</li>
+</ul>
+<p>이 밖에도 지방족 eTPU를 <strong>최대 38% 바이오 기반</strong>으로 만드는 회사(Covestro), <strong>폐타이어에서 원료 절반</strong>을 가져오는 PEBA(Evonik VESTAMID eCO)까지 — 폼 원료사들의 카탈로그가 조용히 밭과 폐기물 쪽으로 이동하고 있습니다.</p>
+
+<h2>3. "바이오 기반 24%"를 제대로 읽는 법</h2>
+<p>여기서 소비자가 헷갈리기 쉬운 지점을 정리합니다.</p>
+<ul>
+  <li><strong>바이오 기반 ≠ 생분해.</strong> "사탕수수로 만들었다"는 원료의 출발점 얘기지, 신은 뒤 흙에서 썩는다는 뜻이 전혀 아닙니다. 최종 물질은 똑같은 플라스틱(엘라스토머)이고, 수명이 다하면 똑같이 폐기물이 됩니다</li>
+  <li><strong>%는 "전체가 아니라 일부"라는 고백입니다.</strong> FF 블라스트+ ECO의 24%, 헬리온 HF의 46%는 각각 나머지 76%·54%가 여전히 석유 유래라는 뜻이기도 합니다. 숫자를 밝히는 브랜드가 오히려 정직한 편입니다</li>
+  <li><strong>측정 기준이 있습니다</strong> — 바이오 탄소 함량은 ASTM D6866 같은 표준으로 측정합니다. "친환경 소재"라고만 쓰고 %도 기준도 없는 제품은 걸러 읽으세요</li>
+  <li><strong>탄소발자국은 별도 문제입니다.</strong> 원료가 식물이어도 발포 공정과 운송은 그대로라, "바이오 %"가 곧 탄소 감축량은 아닙니다</li>
+</ul>
+
+<h2>4. 성능은 희생되고 있나 — 실측으로 보면</h2>
+<p>"친환경 소재 = 성능 타협"이라는 인식이 있는데, 실측이 반박합니다.</p>
+<table>
+  <thead><tr><th>신발</th><th>바이오 관련</th><th>실측 성능</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/on-cloudboom-strike">On 클라우드붐 스트라이크</a></td><td>헬리온 HF — 피마자 46%</td><td>에너지 리턴 <strong>78.2%</strong>(최상위권) · 겨울 경화율 <strong>6%</strong>(DB 실측 1위)</td></tr>
+    <tr><td>미즈노 웨이브 라이더 24 (당시)</td><td>웨이브 플레이트 — Pebax Rnew</td><td>플레이트 기능 그대로, 소재만 피마자 기반으로 교체</td></tr>
+    <tr><td>아식스 슈퍼블라스트 2 (발표 기준)</td><td>FF 블라스트+ ECO — 24% 바이오</td><td>플래그십 슈퍼트레이너 라인에 그대로 투입</td></tr>
+  </tbody>
+</table>
+<p>피마자 기반 PEBA는 애초에 일반 PEBA와 같은 고분자 계열이라, 잘 만들면 물성 차이가 크지 않습니다. 오히려 <strong>브랜드들이 최상위 레이싱 라인에 먼저 넣고 있다</strong>는 게 흐름을 말해줍니다 — 성능이 부족하면 절대 그렇게 못 하니까요.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 바이오 폼 신발은 땅에 묻으면 분해되나요?</p>
+    <p class="faq-a">A. 아니요. <strong>바이오 "기반"은 원료 출처 얘기지 생분해성이 아닙니다.</strong> 사탕수수로 만든 폼도 화학적으로는 일반 엘라스토머와 같아서 자연 분해되지 않습니다. 다 신은 신발의 처리 문제는 여전히 숙제로 남아 있습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 왜 브랜드들은 100% 바이오로 안 만드나요?</p>
+    <p class="faq-a">A. 물성·가격·공급량의 3중 제약 때문입니다. 발포 폼은 배합 성분마다 역할이 달라 전부를 바이오 원료로 바꾸면 반발·내구의 균형을 다시 잡아야 하고, 바이오 원료는 아직 비싸고 공급이 제한적입니다. 그래서 24%, 38%, 46%처럼 <strong>부분 전환 + 정직한 % 표기</strong>가 현재의 정답에 가깝습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 바이오 폼이라서 더 비싼가요?</p>
+    <p class="faq-a">A. 원료 단가는 높지만, 현재까지는 바이오 함량을 이유로 소비자 가격을 올렸다고 명시한 사례를 찾기 어렵습니다. 프리미엄 라인에 먼저 적용되다 보니 "비싼 신발에 들어 있는" 경우가 많을 뿐입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 아식스 특허 US11779076B2 원문(파르네센 기반 폴리머·조성·물성), Kuraray SEPTON BIO 공식 제품 페이지(사탕수수 β-파르네센·최대 80% 재생 원료), 아식스 공식 프레스(슈퍼블라스트 2 — FF 블라스트+ ECO 약 24% 바이오), On 공식 보도자료(헬리온 HF 46% 바이오·피마자 유래), Arkema 공식 자료(Pebax Rnew 20~95%·미즈노 웨이브 라이더 24 적용), Covestro·Evonik 공식 제품 자료. 아식스-Kuraray 공급 관계는 확인된 바 없으며 화학적 정합성만 서술했습니다. 에너지 리턴·경화율은 우리 신발 DB의 실측 수치입니다. · 작성 2026년 7월 28일. (소재 해설 시리즈 번외 — 바이오 폼)</small></p>
+`,
+  },
+  {
     id: 'running-shoe-500km-replacement-myth-2026',
     slug: 'running-shoe-500km-replacement-myth-2026',
     title: '러닝화 500~800km 교체설 — 그 숫자, 1985년에 나왔습니다',
