@@ -207,7 +207,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'running-shoe-midsole-foam-guide-2026',
     title: '러닝화 미드솔 폼 완전 해설 — ZoomX·부스트가 결국 뭐고, 누가 만드나',
     description:
-      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이, 브랜드가 소재를 밝히지 않는다는 사실과 공급사 공시로 추적한 실마리(그 회사는 부산에 연구소를 세웁니다), 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 실측과 1차 자료로 정리한 소재 해설 1편입니다.',
+      '러닝화의 반발과 쿠션을 결정하는 미드솔 폼을 쉽게 풀었습니다. EVA·TPU·PEBA·슈퍼크리티컬의 차이, 나이키가 광고에선 안 밝히는 ZoomX의 정체를 나이키 자체 특허에서 찾아낸 과정, 그 폼을 만드는 회사가 부산에 연구소를 세운다는 사실, 겨울 경화율 6배 차이, 450km 뒤 슈퍼폼이 죽는 이유까지 1차 자료로 정리한 소재 해설 1편입니다.',
     thumbnail: '/images/blog/running-shoe-midsole-foam-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-27',
@@ -220,7 +220,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>미드솔 폼이 러닝화의 심장</strong> — 반발·쿠션·무게를 좌우합니다. 크게 <strong>EVA(기본) → TPU(부스트) → PEBA(슈퍼폼)</strong> 순으로 반발이 좋아지고 값이 오릅니다</li>
-    <li><strong>그런데 브랜드는 자기 폼이 무슨 소재인지 거의 안 밝힙니다</strong> — 다들 사실로 아는 <strong>"ZoomX = PEBA"조차 나이키가 말한 적이 없고, 학계도 검증한 적이 없습니다.</strong> 실마리는 엉뚱하게도 <strong>상장된 공급사의 주주 공시</strong>에서 나옵니다</li>
+    <li><strong>그런데 브랜드는 마케팅에서 소재를 거의 안 밝힙니다</strong> — "ZoomX = PEBA"조차 나이키 광고·제품 페이지엔 없습니다. 이 글에서 그 근거를 끝까지 추적했더니, <strong>나이키 자체 특허 문서</strong>와 <strong>공급사의 주주 공시</strong>라는 뜻밖의 곳에서 답이 나왔습니다</li>
     <li><strong>"슈퍼크리티컬"은 소재가 아니라 공정</strong> — 폼에 질소·CO2를 주입해 가볍고 반발 좋게 만드는 기술이라, EVA든 PEBA든 여기에 적용됩니다</li>
   </ul>
 </div>
@@ -255,13 +255,22 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>아디다스 <strong>부스트</strong></td><td><strong>eTPU</strong> (Infinergy)</td><td><strong>아디다스·BASF 양쪽이</strong> 공식 확인</td></tr>
     <tr><td>리닝 <strong>Boom</strong> 상위</td><td><strong>Pebax</strong> / 하위는 A-TPU</td><td>R&amp;D 매니저 <strong>실명 인용</strong>으로 등급별 구분 설명</td></tr>
     <tr><td>뉴발란스 <strong>FuelCell</strong> (레이싱)</td><td><strong>100% PEBA</strong></td><td>공식 제품 페이지에 "made with 100% PEBA foam" 명시</td></tr>
+    <tr><td>나이키 <strong>ZoomX</strong></td><td><strong>Pebax®</strong> (PEBA)</td><td>마케팅 아닌 <strong>나이키 자체 특허 명세서</strong>에 명시 — 아래 상세</td></tr>
   </tbody>
 </table>
 <p><strong>써코니가 유일하게 폼마다 소재를 이름으로 적어둔 브랜드</strong>입니다. 그리고 놀랍게도 <strong>중국 브랜드 리닝이 나이키·아식스보다 투명합니다</strong> — 자사 연구원 실명으로 "엘리트 등급은 raw Pebax, 훈련 등급은 A-TPU"라고 구분해 설명합니다.</p>
 
+<h3>ZoomX의 자백은 특허에 있었습니다</h3>
+<p>나이키 광고·제품 페이지·뉴스룸 어디에도 ZoomX의 소재는 없습니다. 리뷰 사이트들도 "PEBA로 추정된다"고만 씁니다. 그런데 <strong>나이키가 특허청에 낸 문서</strong>를 뒤지면 이런 문장이 나옵니다.</p>
+<div class="callout info">
+  <p>"폼 코어는 <strong>Pebax® 열가소성 엘라스토머 폼</strong>일 수 있으며, <strong>나이키가 ZoomX라는 상표명으로 판매</strong>할 수 있다"<br>
+  <small>— 나이키 특허 US20230120495A1·WO2021206812A1 명세서, 두 건에서 동일 문구</small></p>
+</div>
+<p>Pebax®는 프랑스 Arkema의 등록상표입니다. 즉 <strong>마케팅에서는 끝까지 침묵했지만, 법률 문서에서는 나이키 스스로 "ZoomX = Arkema의 Pebax 폼"이라고 적어둔 셈</strong>입니다. 광고는 선택이지만 특허는 정확해야 하니까요.</p>
+<p>흥미로운 건 <strong>이 수법이 나이키에서만 통한다</strong>는 점입니다. 같은 방식으로 아디다스 특허에서 "Lightstrike", 아식스 특허에서 "FF Blast", On 특허에서 "Helion", 뉴발란스 특허에서 "FuelCell"을 찾으면 <strong>전부 0건</strong>입니다. 다른 브랜드는 특허에서조차 제품명을 소재와 연결하지 않습니다.</p>
+
 <h3>업계에선 정설이지만, 브랜드는 확인한 적 없는 것</h3>
 <ul>
-  <li><strong>나이키 ZoomX = PEBA(Pebax)</strong> — 모두가 사실로 아는 이 문장을, <strong>나이키도 Arkema도 공식적으로 말한 적이 없습니다.</strong> nike.com의 ZoomX 페이지엔 PEBA·Pebax라는 단어 자체가 없습니다. 다만 <strong>초임계 발포 업체 Zotefoams와 나이키의 전략적 파트너십(2017)은 공식 발표</strong>돼 있어, 실제 공급망은 "수지 → 발포 가공 → 브랜드"의 여러 단계일 가능성이 큽니다</li>
   <li><strong>아식스 FF 블라스트 = EVA+OBC</strong> — 아식스 공식 폼 기술 페이지와 슈퍼블라스트 보도자료 어디에도 화학 조성이 없습니다</li>
   <li><strong>아디다스 라이트스트라이크 프로 = TPEE</strong> — 출처를 추적하니 한 매체 기자의 업계 지식 서술이었고, 아디다스 발표가 아니었습니다</li>
   <li><strong>푸마 나이트로 엘리트 = A-TPU</strong> — 푸마 공식은 "질소를 주입한 열가소성 폼"까지만 말합니다</li>
@@ -272,7 +281,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>참고로 <strong>Arkema가 공식으로 인정한 러닝화</strong>는 따로 있습니다 — <a href="/blog/running-shoes-recommend-by-price-2026">가성비 브랜드</a>인 <strong>데카트론 킵런 KD900X</strong>(Arkema 보도자료, 임원 인용문 포함)와, 미즈노 <strong>웨이브 라이더 24의 웨이브 플레이트</strong>가 바이오 기반 Pebax Rnew로 만들어졌다는 것입니다. 최상위 카본화가 아니라 엉뚱한 곳에서 공식 확인이 나오는 셈입니다.</p>
 
 <h3>브랜드가 침묵해도, 공급사는 말해야 합니다</h3>
-<p>그럼 우리는 영영 알 수 없을까요. 그렇지도 않습니다. <strong>브랜드는 침묵할 자유가 있지만, 주식시장에 상장된 공급사는 주주에게 사업을 보고할 의무가 있습니다.</strong></p>
+<p>소재가 Pebax라는 건 특허로 알아냈습니다. 그럼 <strong>그 Pebax를 누가 발포해서 나이키에 대는 걸까요.</strong> 여기서도 브랜드는 침묵하지만, 답이 나오는 곳이 따로 있습니다 — <strong>주식시장에 상장된 공급사는 주주에게 사업을 보고할 의무가 있습니다.</strong></p>
 <p>영국 상장사 <strong>Zotefoams</strong>의 공시를 따라가 보면 이렇습니다.</p>
 <ul>
   <li><strong>2017년</strong> — "나이키와 신발 기술 개발 및 소재 공급을 위한 전략적 파트너십을 체결했다"고 <strong>실명으로</strong> 공시</li>
@@ -283,10 +292,10 @@ export const posts_2026_07: BlogPost[] = [
 <p>여기에 <strong>같은 회사의 특허</strong>가 마지막 조각을 놓습니다. Zotefoams의 발포 기술 특허 실시예에는 이렇게 적혀 있습니다 — <strong>"폴리에테르 블록 아마이드(PEBA) 폴리머, 즉 Arkema의 Pebax 5533을…"</strong> 그리고 그 응용처로 <strong>러닝화 미드솔</strong>이 명시돼 있습니다.</p>
 <p>여기에 Arkema가 2015년 보도자료에서 Pebax 사용 브랜드로 <strong>"아디다스, 나이키, 푸마, 노스페이스"</strong>를 실명으로 나열한 것까지 겹치면, 그림이 얼추 맞춰집니다.</p>
 <div class="callout warning">
-  <p>다만 정직하게 말하면 <strong>이것도 여전히 정황의 사슬입니다.</strong> Zotefoams 특허에 "ZoomX"라는 단어는 없고, 나이키가 "우리 ZoomX는 Pebax입니다"라고 말한 문서도 없습니다. <strong>서로 다른 세 개의 1차 문서(공급사 공시·공급사 특허·원료사 보도자료)가 각각 한 조각씩 갖고 있을 뿐</strong>입니다.</p>
+  <p>정리하면 — <strong>소재가 Pebax라는 건 나이키 자체 특허로 확정</strong>됐고(위 2장), 이 공시·특허·보도자료들은 <strong>그 Pebax를 누가 발포해 나이키에 대는가</strong>라는 다음 질문의 답을 채웁니다. 다만 Zotefoams 특허·공시에 "ZoomX"라는 단어 자체는 없으므로, 공급망의 세부는 여전히 <strong>여러 1차 문서를 겹쳐 읽어낸 그림</strong>입니다.</p>
   <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. Zotefoams의 독점 계약 공시와 정면으로 부딪히죠. 제품 라인이 달라서일 수도, 한쪽이 과장일 수도 있습니다.</p>
 </div>
-<p>재미있게도 <strong>나이키 자신의 특허를 뒤지면 오히려 PEBA가 안 나옵니다.</strong> 나이키 명의 폼 조성 특허들은 EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다. ZoomX보다는 리액트 계열에 가까운 내용이죠. <strong>브랜드는 자기가 가장 자랑하는 폼의 정체를 특허에서조차 드러내지 않습니다.</strong></p>
+<p>재미있는 건 나이키의 <strong>폼 "조성" 특허</strong>(배합비를 다루는 특허)들엔 오히려 PEBA가 없다는 점입니다 — EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다(리액트 계열로 보이는 내용). ZoomX=Pebax 문구가 나온 건 <strong>신발 구조·재활용 특허</strong>였습니다. <strong>레시피는 끝까지 감추고, 재료 이름은 다른 서류에서 흘린 셈</strong>입니다.</p>
 <p>그래도 특허를 뒤지면 마케팅에 없는 게 보이긴 합니다.</p>
 <ul>
   <li><strong>아식스 — 사탕수수에서 폼을 만듭니다.</strong> 2020년 출원한 특허가 <strong>"파르네센(farnesene) 기반 폴리머"</strong>를 핵심 성분으로 지목합니다. 파르네센은 <strong>사탕수수 발효로 얻는 바이오 소재</strong>고, 실제로 이 계열 원료를 파는 회사(Kuraray)는 "사탕수수 유래, 최대 80% 재생 원료"라고 설명합니다. 아식스가 FF Blast+ ECO를 "약 24% 바이오 기반"이라 발표한 것과 맞물리죠. <strong>"EVA에 뭘 섞었다"보다 훨씬 구체적인 그림</strong>입니다</li>
@@ -408,7 +417,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키·뉴발란스), <strong>Zotefoams 규제시장 공시(RNS 2017·2023)와 발포 특허 US10675792B2</strong>, Arkema 공식 자료(2015 보도자료·Pebax 제품 페이지), 나이키·아식스·써코니 명의 폼 조성 특허 원문, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
+<p><small>출처: 브랜드 공식 기술 페이지·보도자료 직접 확인(써코니·아디다스·BASF·아식스·On·푸마·미즈노·리닝·브룩스·나이키·뉴발란스), <strong>나이키 특허 US20230120495A1·WO2021206812A1 명세서(ZoomX=Pebax® 명시)</strong>, <strong>Zotefoams 규제시장 공시(RNS 2017·2023)·2024 연차보고서·발포 특허 US10675792B2</strong>, Arkema 공식 자료(2015 보도자료·Pebax 제품 페이지), 아식스(US11779076B2 파르네센)·아디다스(EP3041892B1)·써코니 명의 특허 원문, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km 마모 연구, Verdejo(2004) 폼 내구성 연구, Cornwall &amp; McPoil(2017) 640km 측정, 초임계 발포 특허(MIT US5158986A·Skechers US2020/0281314) 원문, RunRepeat 랩 데이터. 저온 경화율은 우리 신발 DB의 모델별 실측입니다. <strong>브랜드가 공식 확인한 것과 업계 추정을 본문에서 구분해 표기했습니다.</strong> · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 1편 — 미드솔 폼)</small></p>
 `,
   },
   {
