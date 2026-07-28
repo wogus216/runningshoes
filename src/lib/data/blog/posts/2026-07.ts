@@ -2,6 +2,98 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'zotefoams-nike-foam-busan-innovation-center-2026',
+    slug: 'zotefoams-nike-foam-busan-innovation-center-2026',
+    title: '나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 신발 이노베이션 센터',
+    description:
+      '나이키 ZoomX 폼의 독점 파트너인 영국 조테폼스(Zotefoams)가 첫 해외 이노베이션 센터를 부산에 세웠습니다. 국내에 보도된 적 없는 이 소식을 런던 증시 공시·연차보고서·실적발표 원문으로 추적했습니다. 나이키와의 2029년까지 독점 계약, 그룹 매출 45%가 나이키, 한국 신발기업 서흥과의 베트남 합작까지 — 슈퍼슈즈 공급망의 무게중심이 한국 곁으로 오고 있습니다.',
+    thumbnail: '/images/blog/zotefoams-nike-foam-busan-innovation-center-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-28',
+    category: 'news' as const,
+    readingTime: 9,
+    tags: ['조테폼스', 'Zotefoams', 'ZoomX', '부산', '나이키', '슈퍼슈즈 공급망', '창신INC'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>나이키 ZoomX 폼을 만드는 영국 조테폼스가 첫 해외 이노베이션 센터를 부산에 설립했습니다</strong> — 2026년 3월 실적발표에서 "한국 이노베이션 센터 설립 완료, 2026년 성장·투자 계획"이라고 공식 확인</li>
+    <li>이 회사에게 나이키는 <strong>그룹 매출의 45%를 차지하는 단일 최대 고객</strong>이고, 독점 계약은 <strong>2029년 말까지</strong>입니다. 신발이 이 회사의 최대 사업입니다</li>
+    <li>베트남 신발 폼 공장은 <strong>한국 기업 서흥(나이키 OEM 창신INC 계열)이 지분 17.5%를 투자한 합작</strong>으로 짓고 있습니다 — 슈퍼슈즈 공급망에 한국이 깊숙이 들어와 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>이 소식, <strong>국내 언론에서 찾아볼 수 없었습니다.</strong> 네이버 뉴스에서 "조테폼스"를 검색하면 포장재 관련 칼럼 1건이 전부입니다(2026-07-28 기준). 이 글은 <a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>을 쓰며 나이키 폼 공급망을 추적하다가 발견한 내용으로, <strong>런던 증시 규제공시(RNS)·연차보고서·실적발표 원문</strong>만으로 구성했습니다.</p>
+</div>
+
+<h2>1. 조테폼스가 누구인가 — ZoomX의 뿌리</h2>
+<p>영국 조테폼스(Zotefoams plc)는 런던 증시 상장사로, 질소 고압 발포라는 독자 공정으로 고성능 폼을 만드는 소재 기업입니다. 러너에게 중요한 이유는 하나입니다 — <strong>나이키 ZoomX가 이 회사 손을 거칩니다.</strong></p>
+<ul>
+  <li><strong>2017년</strong> — "나이키와 신발 기술 개발·소재 공급을 위한 전략적 파트너십"을 증시에 공시</li>
+  <li><strong>2023년</strong> — 나이키와의 <strong>독점 계약을 2029년 12월 31일까지 연장</strong></li>
+  <li>같은 해 공시에서 <strong>나이키 울트라플라이</strong>에 고성능 폼을 공급한다고 제품명까지 명시 — 이 프로그램은 로드 레이싱화·트랙 스파이크에서 시작해 <a href="/shoes/nike-acg-zegama-trail">제가마</a>(2022)로 확장됐다고 밝혔습니다</li>
+</ul>
+<p>ZoomX의 소재가 무엇인지는 나이키 자체 특허가 말합니다 — <strong>"Pebax® 열가소성 엘라스토머 폼, 나이키가 ZoomX라는 상표명으로 판매"</strong>(나이키 특허 명세서 원문). 그 Pebax를 발포해 나이키에 대는 핵심 파트너가 조테폼스입니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/nike-ultrafly">울트라플라이</a>의 심장이 여기서 나오는 셈이죠. 자세한 추적 과정은 <a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>에 있습니다.</p>
+
+<h2>2. 숫자로 보는 나이키 의존도</h2>
+<table>
+  <thead><tr><th>항목</th><th>수치</th><th>출처</th></tr></thead>
+  <tbody>
+    <tr><td>신발 부문 매출 (2024)</td><td><strong>£66.1m (약 1,200억 원)</strong>, 전년 대비 +46%</td><td>연차보고서</td></tr>
+    <tr><td>그룹 매출 중 신발 비중</td><td>36% → <strong>45%</strong></td><td>연차보고서</td></tr>
+    <tr><td>단일 최대 고객 비중</td><td>그룹 매출의 <strong>약 45%</strong> (재무제표엔 익명 기재)</td><td>감사 재무제표</td></tr>
+    <tr><td>독점 계약 기간</td><td><strong>2029년 12월 31일까지</strong></td><td>증시 공시(RNS)</td></tr>
+  </tbody>
+</table>
+<p>연차보고서는 나이키를 25차례 언급하며 스스로를 <strong>"나이키의 핵심 고가 폼 기술 파트너"</strong>라 부르고, 리스크 항목에서는 "보잉과 나이키처럼 우리보다 훨씬 큰 고객"이라고 씁니다. 신발은 이제 이 회사의 최대 사업이고, 그 대부분이 나이키 한 곳에서 나옵니다. 2024~2025년 신발 수요가 "이례적으로 높은 수준"이었다는 서술도 있습니다 — 슈퍼슈즈 호황이 소재사 실적으로 그대로 찍힌 겁니다.</p>
+
+<h2>3. 그리고 부산에 왔습니다</h2>
+<p>2024 연차보고서에서 이 회사는 <strong>"우리의 첫 시장 맞춤형 이노베이션 센터 — 대한민국 부산의 신발 이노베이션 센터"</strong> 계획을 밝혔습니다. 원문의 표현은 이렇습니다.</p>
+<div class="callout info">
+  <p>"핵심 고객과 그들의 <strong>1차 협력사(Tier 1) 근처</strong>에 위치해, 새로운 개발을 <strong>특정 신발 모델에 직접 적용</strong>할 수 있게 한다."</p>
+</div>
+<p>그리고 2026년 3월 실적발표에서 진행 상황이 확인됐습니다 — <strong>"한국에 이노베이션 센터 설립 완료(established), 2026년 성장과 투자 계획."</strong> 부산 센터는 기술 쇼케이스와 아시아 주요 고객·파트너와의 기술 협업, 그리고 아시아 제조 전략의 램프업을 지원하는 거점으로 명시돼 있습니다.</p>
+<p>왜 부산일까요. 부산은 한국 신발 산업의 본거지이고, <strong>나이키 신발을 실제로 만드는 1차 협력사(OEM)들의 뿌리가 있는 도시</strong>입니다. "고객과 그 협력사 곁으로 간다"는 문장에서 고객이 누구인지는 어렵지 않게 읽힙니다.</p>
+
+<h2>4. 베트남 공장 — 한국 기업 서흥이 파트너입니다</h2>
+<p>부산 센터와 짝을 이루는 것이 <strong>베트남 신발 폼 공장</strong>입니다. 실적발표 원문 기준:</p>
+<ul>
+  <li>운동화용 <strong>폼 프리폼(preform) 생산</strong> 시설 — 이 회사의 첫 아시아 대규모 생산기지</li>
+  <li>총 사업비 약 <strong>3,200만 달러</strong>, 완공·시운전은 <strong>2026년 말~2027년 초</strong>, 초기 생산은 late 2026~2027</li>
+  <li>실행 파트너는 <strong>서흥(Seoheung Co. Ltd.)</strong> — "신발 공급망의 오랜 전문기업"으로 소개되며, <strong>지분 17.5%에 1,000만 달러를 투자</strong>했습니다</li>
+</ul>
+<p>서흥은 한국 신발업계에서 낯선 이름이 아닙니다. <strong>나이키 대형 OEM인 창신INC의 최대주주(모회사 격)로 알려진 신발 자재 전문기업</strong>입니다. 즉 이 그림은 "영국 폼 기술 × 한국 신발 공급망 × 베트남 생산"의 삼각 구조이고, <strong>나이키 슈퍼슈즈의 미래 공급망에 한국 자본과 노하우가 깊숙이 박혀 있다</strong>는 뜻입니다.</p>
+
+<h2>5. 한국 러너에게 무슨 의미인가</h2>
+<p>과장 없이 정리하면 이렇습니다.</p>
+<ul>
+  <li><strong>당장 신발 가격이 내려가거나 한국 출시가 빨라진다는 근거는 없습니다.</strong> 그런 얘기는 어디에도 없습니다</li>
+  <li>다만 <strong>차세대 나이키 폼의 개발·적용 실험이 부산에서 이뤄질 가능성</strong>이 생겼습니다 — "새로운 개발을 특정 신발 모델에 직접 적용"하는 거점이라고 회사가 직접 밝혔으니까요</li>
+  <li>유럽에서 만들어 아시아로 보내던 폼 물량 일부가 <strong>2027년부터 베트남 생산으로 전환</strong>됩니다. 슈퍼슈즈 공급망의 무게중심이 소비지이자 생산지인 아시아로 이동하는 흐름이고, 부산이 그 혁신 허브 자리를 잡았습니다</li>
+</ul>
+<p>러닝화 폼이 어떻게 만들어지고 왜 비싼지 궁금하다면 <a href="/blog/running-shoe-midsole-foam-guide-2026">미드솔 폼 완전 해설</a>을, 그 폼과 짝을 이루는 카본 플레이트의 정체는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>을 보세요.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 조테폼스가 ZoomX를 "만든다"는 게 정확히 무슨 뜻인가요?</p>
+    <p class="faq-a">A. 원료 수지(Pebax)는 프랑스 Arkema가 만들고, 조테폼스는 그걸 <strong>발포(폼으로 가공)</strong>하는 단계의 독점 파트너입니다. 완성된 신발은 나이키의 OEM 협력사들이 조립하죠. "수지 → 발포 → 조립"의 공급망에서 가운데를 맡는 회사입니다. 중국 소재사 신셀(Shincell)도 ZoomX 관련 공급을 주장하고 있어 세부 분담은 외부에서 단정하기 어렵습니다 — 두 회사는 2024년 얼라이언스를 맺은 사이기도 합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 부산 센터에서 신발을 생산하나요?</p>
+    <p class="faq-a">A. 아닙니다. 부산은 <strong>이노베이션 센터(R&amp;D·기술 협업 거점)</strong>이고, 생산은 베트남 공장이 맡습니다. 다만 "새 기술을 특정 신발 모델에 직접 적용하는" 개발 거점이라 신제품의 탄생 과정에 관여하게 됩니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 이 정보는 어디까지 믿을 수 있나요?</p>
+    <p class="faq-a">A. 이 글의 모든 사실은 <strong>런던 증시 규제공시(RNS), 감사받은 연차보고서, 공식 실적발표문</strong>에서 나왔습니다. 상장사가 시장에 허위 공시를 하면 법적 책임을 지기 때문에, 브랜드 마케팅보다 신뢰도가 높은 1차 자료입니다. 서흥-창신INC 관계는 국내 언론 보도(감사보고서 인용)를 참조했습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: Zotefoams plc 런던증시 규제공시(RNS — 2017 나이키 파트너십, 2023 독점계약 연장·울트라플라이 공급), 2024 연차보고서(부산 센터·매출 세그먼트·고객 집중도), FY2025 예비실적 발표문(2026-03 — 한국 센터 설립 완료·서흥 합작·베트남 일정), 나이키 특허 US20230120495A1·WO2021206812A1(ZoomX=Pebax®), 국내 언론의 창신INC 감사보고서 인용 보도. 원화 환산은 대략치입니다. · 작성 2026년 7월 28일. (소재 해설 시리즈 번외 — 공급망 추적)</small></p>
+`,
+  },
+  {
     id: 'running-shoe-plate-guide-2026',
     slug: 'running-shoe-plate-guide-2026',
     title: '러닝화 플레이트 완전 해설 — 카본이 대체 뭘 하고, 누가 만드나',
@@ -301,13 +393,13 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>2017년</strong> — "나이키와 신발 기술 개발 및 소재 공급을 위한 전략적 파트너십을 체결했다"고 <strong>실명으로</strong> 공시</li>
   <li><strong>2023년</strong> — 그 <strong>독점 계약을 2029년 12월 31일까지 연장</strong></li>
   <li><strong>2023년</strong> — "최근 출시된 <strong>나이키 울트라플라이</strong>에 고성능 폼을 공급한다"고 제품명까지 공시</li>
-  <li><strong>2024 회계연도</strong> — 신발 부문 매출이 46% 성장해 약 <strong>660억 원</strong> 규모. 그리고 감사 재무제표에 <strong>"한 고객이 그룹 매출의 약 45%"</strong>라고 익명 기재</li>
+  <li><strong>2024 회계연도</strong> — 신발 부문 매출이 46% 성장해 <strong>6,610만 파운드(약 1,200억 원)</strong> 규모. 그리고 감사 재무제표에 <strong>"한 고객이 그룹 매출의 약 45%"</strong>라고 익명 기재</li>
 </ul>
 <p>여기에 <strong>같은 회사의 특허</strong>가 마지막 조각을 놓습니다. Zotefoams의 발포 기술 특허 실시예에는 이렇게 적혀 있습니다 — <strong>"폴리에테르 블록 아마이드(PEBA) 폴리머, 즉 Arkema의 Pebax 5533을…"</strong> 그리고 그 응용처로 <strong>러닝화 미드솔</strong>이 명시돼 있습니다.</p>
 <p>여기에 Arkema가 2015년 보도자료에서 Pebax 사용 브랜드로 <strong>"아디다스, 나이키, 푸마, 노스페이스"</strong>를 실명으로 나열한 것까지 겹치면, 그림이 얼추 맞춰집니다.</p>
 <div class="callout warning">
   <p>정리하면 — <strong>소재가 Pebax라는 건 나이키 자체 특허로 확정</strong>됐고(위 2장), 이 공시·특허·보도자료들은 <strong>그 Pebax를 누가 발포해 나이키에 대는가</strong>라는 다음 질문의 답을 채웁니다. 다만 Zotefoams 특허·공시에 "ZoomX"라는 단어 자체는 없으므로, 공급망의 세부는 여전히 <strong>여러 1차 문서를 겹쳐 읽어낸 그림</strong>입니다.</p>
-  <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. Zotefoams의 독점 계약 공시와 정면으로 부딪히죠. 제품 라인이 달라서일 수도, 한쪽이 과장일 수도 있습니다.</p>
+  <p>흥미로운 건 <strong>중국 소재사 Shincell도 "나이키 ZoomX 미드솔 소재의 독점 공급사"라고 자사 사이트에 적어뒀다</strong>는 점입니다. 두 회사가 2024년 글로벌 얼라이언스를 맺은 사이라 <strong>서로 다른 제품 라인·공정을 나눠 맡았을 가능성</strong>이 있어 보이지만, 어느 쪽의 "독점" 표현도 나이키가 직접 확인해 준 적은 없습니다.</p>
 </div>
 <p>재미있는 건 나이키의 <strong>폼 "조성" 특허</strong>(배합비를 다루는 특허)들엔 오히려 PEBA가 없다는 점입니다 — EVA·올레핀 블록 코폴리머 배합이거나, 초임계 발포를 다루면서도 TPU·EVA만 언급합니다(리액트 계열로 보이는 내용). ZoomX=Pebax 문구가 나온 건 <strong>신발 구조·재활용 특허</strong>였습니다. <strong>레시피는 끝까지 감추고, 재료 이름은 다른 서류에서 흘린 셈</strong>입니다.</p>
 <p>그래도 특허를 뒤지면 마케팅에 없는 게 보이긴 합니다.</p>
