@@ -12,7 +12,7 @@ export const posts_2026_07: BlogPost[] = [
     publishedAt: '2026-07-27',
     updatedAt: '2026-07-27',
     category: 'guide' as const,
-    readingTime: 16,
+    readingTime: 17,
     tags: ['플레이트', '카본 플레이트', '러닝화 소재', '유리섬유', '나일론 플레이트', '슈퍼슈즈'],
     content: `
 <div class="tldr">
@@ -91,6 +91,20 @@ export const posts_2026_07: BlogPost[] = [
   <p><strong>유일한 예외가 푸마입니다.</strong> <a href="/shoes/puma-fast-r-nitro-elite-3">패스트-R 나이트로 엘리트</a> 등에 쓰인 PWRPLATE는 <strong>Envalior의 Tepex</strong>(나일론12 수지 + 직조 연속 탄소섬유)라고 소재사 보도자료로 공개돼 있습니다.</p>
   <p>참고로 <strong>"신발엔 T700 등급이 쓰인다"</strong> 같은 이야기도 근거를 찾지 못했습니다. Toray의 신발 특허조차 탄성률을 180~600GPa로 폭넓게만 규정합니다.</p>
 </div>
+<p>이 침묵이 어느 정도인지 직접 재봤습니다. <a href="/blog/running-shoe-midsole-foam-guide-2026">1편</a>에서 나이키가 자체 특허 명세서에 "ZoomX = Pebax®"라고 적어둔 걸 찾아냈는데, <strong>같은 수법을 플레이트 상표에 전부 돌려봤습니다.</strong> 유럽특허청 전문검색 기준:</p>
+<table>
+  <thead><tr><th>플레이트 상표</th><th>브랜드</th><th>특허 명세서 등장</th></tr></thead>
+  <tbody>
+    <tr><td>Flyplate</td><td>나이키</td><td><strong>0건</strong></td></tr>
+    <tr><td>PWRPLATE</td><td>푸마</td><td><strong>0건</strong></td></tr>
+    <tr><td>Energy Rods</td><td>아디다스</td><td><strong>0건</strong></td></tr>
+    <tr><td>SpeedVault</td><td>브룩스</td><td><strong>0건</strong></td></tr>
+    <tr><td>Energy Arc</td><td>뉴발란스</td><td><strong>0건</strong></td></tr>
+    <tr><td>Speedboard</td><td>On</td><td><strong>0건</strong></td></tr>
+    <tr><td>Wave Plate</td><td>미즈노</td><td>38건 — 단 상표가 아니라 "파형 판"이라는 기술 서술이고, 소재는 "수지제"까지만</td></tr>
+  </tbody>
+</table>
+<p>같은 검색에서 "ZoomX"는 나이키 특허 5건에 잡힙니다(대조 검증용). 즉 <strong>폼은 특허에서 한 번 자백했지만, 플레이트 상표는 어느 브랜드도 특허에 이름조차 올리지 않습니다.</strong> 플레이트가 폼보다 한 겹 더 깊은 침묵 속에 있는 셈입니다.</p>
 
 <h2>4. 모양도 소재만큼 다릅니다</h2>
 <p>같은 "카본 플레이트"라도 신발마다 생김새가 전혀 다릅니다. 우리 사이트 신발 DB 기준으로 정리하면:</p>
@@ -199,7 +213,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 카본 플레이트 대사 효과 메타분석(2026, 연구 14편·271명), Healey &amp; Hoogkamer(2021, J Sport Health Sci) 플레이트 절단 실험, Knopp et al.(2023, Sports Medicine) 케냐·유럽 러너 개인차 연구, Day &amp; Hahn(2019, Footwear Science) 속도별 강성 실험, Cigoja et al.(2021, Sci Rep) 종아리·아킬레스 측정, Willwacher et al.(2014, Gait &amp; Posture) 레버암 측정, <strong>World Athletics 신발 규정 C2.1A 원문</strong>(2025-12-02 승인, 2026-01-01 발효), Toray·Carbitex·Envalior 공식 자료 및 특허 원문. 강성 N 값은 우리 신발 DB의 모델별 실측이며 학술 단위와 개념이 다릅니다. 브랜드별 플레이트 공급사는 공식 공개된 것만 표기했습니다. · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 2편 — 플레이트)</small></p>
+<p><small>출처: 카본 플레이트 대사 효과 메타분석(2026, 연구 14편·271명), Healey &amp; Hoogkamer(2021, J Sport Health Sci) 플레이트 절단 실험, Knopp et al.(2023, Sports Medicine) 케냐·유럽 러너 개인차 연구, Day &amp; Hahn(2019, Footwear Science) 속도별 강성 실험, Cigoja et al.(2021, Sci Rep) 종아리·아킬레스 측정, Willwacher et al.(2014, Gait &amp; Posture) 레버암 측정, <strong>World Athletics 신발 규정 C2.1A 원문</strong>(2025-12-02 승인, 2026-01-01 발효), Toray·Carbitex·Envalior 공식 자료 및 특허 원문, 유럽특허청(Espacenet) 전문검색(플레이트 상표 7종 — 2026-07-28 실시, "ZoomX" 5건을 대조군으로 검증). 강성 N 값은 우리 신발 DB의 모델별 실측이며 학술 단위와 개념이 다릅니다. 브랜드별 플레이트 공급사는 공식 공개된 것만 표기했습니다. · 작성 2026년 7월 27일 · 1차 원문 재검증 반영 2026년 7월 27일. (러닝화 소재 해설 시리즈 2편 — 플레이트)</small></p>
 `,
   },
   {
