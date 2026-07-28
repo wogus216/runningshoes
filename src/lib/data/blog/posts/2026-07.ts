@@ -2,6 +2,115 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'running-shoe-500km-replacement-myth-2026',
+    slug: 'running-shoe-500km-replacement-myth-2026',
+    title: '러닝화 500~800km 교체설 — 그 숫자, 1985년에 나왔습니다',
+    description:
+      '"러닝화는 500~800km에서 바꿔라"는 통념의 족보를 추적했습니다. 출처는 1985년 기계 모사 실험이고, 정작 그 논문은 실제로 신으면 덜 닳는다고 밝혔습니다. 450km 실도로 마모 연구(PEBA는 죽고 EVA는 멀쩡), 발이 신발의 죽음을 못 느낀다는 640km 측정, 로테이션 회복률 실측까지 — 원논문으로 다시 계산한 교체 기준입니다.',
+    thumbnail: '/images/blog/running-shoe-500km-replacement-myth-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-28',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: ['러닝화 수명', '러닝화 교체 시기', '500km', '미드솔', '로테이션', 'PEBA'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>"500~800km 교체"의 출처는 1985년 논문입니다</strong> — 1980년대 EVA를 <strong>기계로 두드린</strong> 실험이고, 바로 그 논문이 "사람이 실제로 신으면 덜 닳는다"고 함께 보고했습니다</li>
+    <li><strong>소재에 따라 답이 다릅니다</strong> — 450km 실도로 마모 실험에서 <strong>PEBA 슈퍼폼은 효율이 2.3% 떨어졌지만 EVA는 변화가 없었습니다.</strong> 하나의 숫자가 모든 신발에 적용될 수 없습니다</li>
+    <li><strong>발의 감각을 믿으면 안 됩니다</strong> — 640km 신은 신발의 충격 흡수 지표는 20~28% 떨어졌는데, 러너 본인은 <strong>2.7%밖에 안 줄었다고 느꼈습니다</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>세탁·건조·보관 같은 <strong>관리 실무</strong>는 기존의 <a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명과 관리법 가이드</a>에 있습니다. 이 글은 그 뿌리에 있는 질문을 팝니다 — <strong>"500~800km"라는 숫자는 대체 어디서 왔고, 지금도 유효한가.</strong> 폼이 왜 죽는지의 화학은 <a href="/blog/running-shoe-midsole-foam-guide-2026">소재 해설 1편</a>과 이어집니다.</p>
+</div>
+
+<h2>1. 그 숫자의 족보 — 1985년, 기계 위에서</h2>
+<p>러닝화 교체 주기로 전 세계가 쓰는 500~800km(300~500마일)의 출처를 거슬러 올라가면 <strong>1985년의 한 논문</strong>이 나옵니다(Cook·Kester·Brunet, 미국 스포츠의학회지). 내용은 이렇습니다.</p>
+<ul>
+  <li>1980년대 EVA 러닝화를 <strong>기계로 반복 충격</strong>했더니 — 160~240km 시점에 충격 흡수력이 초기의 약 67%, <strong>400~800km 구간에서 60% 미만</strong>으로 떨어졌다</li>
+  <li>그런데 <strong>같은 논문의 다른 실험</strong>에서, 자원자들이 <strong>실제로 신고 달린 신발은 같은 거리에서 덜 닳았습니다</strong> — 480km 시점 손실이 기계 예측(40%+)보다 낮은 약 30%</li>
+</ul>
+<p>즉 이 "법칙"은 <strong>더 비관적인 쪽(기계 실험) 숫자가 일반화된 것</strong>입니다. 나중에 나온 실증도 방향이 같습니다 — 한 연구자가 EVA 신발로 <strong>1,377km를 실제 도로에서 달린</strong> 실험에서, 족저 압력 증가는 그 거리에서도 50% 미만이었습니다. "800km이 한계"라는 통념(1980년 문헌으로 거슬러 올라가는)이 예측하는 것보다 훨씬 완만했죠.</p>
+<div class="callout warning">
+  <p>정리하면 — 이 숫자는 <strong>40년 전의 EVA를, 기계로, 실제보다 가혹하게 두드린 실험</strong>에서 나와 굳은 것입니다. 그리고 결정적으로, <strong>현대 슈퍼폼(PEBA·TPU)에 대해서는 재검증된 적이 없었습니다</strong> — 2024년까지는요.</p>
+</div>
+
+<h2>2. 요즘 폼으로 다시 재봤더니 — 갈라집니다</h2>
+<p>2024년, 드디어 이 질문을 정면으로 다룬 실험이 나왔습니다. 연구진은 <strong>플레이트·형태가 동일하고 미드솔만 EVA/PEBA로 다른 시제품</strong>을 만들어, 연구자가 아스팔트에서 <strong>450km를 직접 달려</strong> 마모시킨 뒤 새 신발과 비교했습니다.</p>
+<table>
+  <thead><tr><th>450km 후</th><th>EVA</th><th>PEBA</th></tr></thead>
+  <tbody>
+    <tr><td>러닝 이코노미(효율)</td><td><strong>변화 없음</strong> (p=0.47)</td><td><strong>2.28% 악화</strong> (p=0.02)</td></tr>
+    <tr><td>굽힘 에너지 리턴</td><td>−10.5%</td><td><strong>−24.6%</strong></td></tr>
+  </tbody>
+</table>
+<p>새것일 땐 PEBA가 EVA보다 1.9% 좋았는데, <strong>450km가 지나면 그 우위가 사라졌습니다.</strong> 저자들은 아예 "훈련용은 EVA, 레이스용은 PEBA로 나눠 만들라"고 제안했고, 논문 스스로 이렇게 못 박습니다 — <strong>"레이싱화 400~500km"라는 권고는 업계의 일반적 권고일 뿐, 검증된 적이 없었다.</strong></p>
+<p>결론은 명확합니다. <strong>하나의 교체 숫자는 존재하지 않습니다.</strong> 데일리 EVA화는 통념보다 오래 버티고, PEBA 카본화는 통념보다 일찍 성능이 꺾입니다. 폼이 왜 이렇게 다르게 죽는지(셀 벽 좌굴, 밀도 차이)는 <a href="/blog/running-shoe-midsole-foam-guide-2026">1편 5장</a>에 정리해 뒀습니다.</p>
+
+<h2>3. 문제는 — 발이 그걸 못 느낀다는 것</h2>
+<p>"아직 푹신한데?"가 기준이 될 수 없는 이유가 측정돼 있습니다.</p>
+<ul>
+  <li><strong>640km 신은 신발</strong>을 계측한 연구 — 충격 관련 객관 지표는 <strong>16~33% 악화</strong>, 미드솔 경도는 <strong>+17%</strong>(36.2→42.3). 그런데 러너 본인이 느낀 쿠션 감소는 <strong>2.7%</strong>였습니다</li>
+    <li><strong>320km 시점</strong>의 다른 연구 — 러너들은 쿠션 저하를 느끼지 못한 채 <strong>무의식적으로 자세를 바꿔</strong>(접지 시간 증가, 전경사 감소) 충격을 보상하고 있었습니다</li>
+  <li>EVA 미드솔의 압력 분포 저하는 <strong>350km부터 계측</strong>됩니다</li>
+</ul>
+<p>즉 신발이 죽어갈 때 몸은 그걸 "느끼는" 게 아니라 <strong>말없이 적응합니다.</strong> 그 적응이 새로운 부위에 부하를 옮기는 과정일 수 있다는 게 문제고요. 그래서 교체 판단은 감이 아니라 <strong>기록과 신호</strong>로 해야 합니다.</p>
+
+<h2>4. 신발은 두 번 죽습니다 — 미드솔과 아웃솔</h2>
+<p>"수명"을 하나로 말하지만 실제로는 서로 다른 두 개의 죽음이 있습니다.</p>
+<ul>
+  <li><strong>미드솔의 죽음(쿠션·반발)</strong> — 위에서 본 것. 겉으론 멀쩡해도 폼 셀 벽이 주름지고 무너집니다. 750km 신은 미드솔을 전자현미경으로 보면 <strong>셀 벽에 주름과 구멍</strong>이 관찰됩니다. 신호: 미드솔 옆면의 깊은 가로 주름, 눌린 채 돌아오지 않는 압축 라인, 설명 안 되는 새 통증</li>
+  <li><strong>아웃솔의 죽음(접지·마모)</strong> — 고무가 닳아 그립과 안정이 무너지는 것. 우리 사이트 신발 상세의 내구 km 수치는 주로 <strong>이쪽(아웃솔 마모) 기준</strong>입니다. 신호: 한쪽만 닳은 뒤꿈치, 드러난 미드솔 폼</li>
+</ul>
+<p>레이스용 PEBA화는 보통 <strong>아웃솔이 멀쩡한 채 미드솔이 먼저 죽고</strong>, 데일리 EVA화는 반대인 경우가 많습니다. 그래서 "밑창 보니 아직 쌩쌩한데?"는 카본화엔 통하지 않는 판단법입니다.</p>
+
+<h2>5. 로테이션 — 효과는 진짜, 이유는 통념과 다릅니다</h2>
+<p>"신발을 번갈아 신으면 폼이 쉬면서 회복된다"는 말, 절반만 맞습니다.</p>
+<ul>
+  <li><strong>효과 자체는 검증돼 있습니다</strong> — 러너 264명을 22주 추적한 연구에서, 여러 켤레를 병행한 러너의 부상 위험이 <strong>약 39% 낮았습니다</strong>(위험비 0.614, 95% CI 0.389~0.969)</li>
+  <li>그런데 <strong>폼 회복 실측은 초라합니다</strong> — 22시간을 쉬게 해도 회복률은 폼 밀도에 따라 <strong>1~10%</strong>에 그쳤고, <strong>9개월을 쉬어도 원래 상태로 돌아오지 않았습니다</strong></li>
+</ul>
+<p>그래서 로테이션의 진짜 메커니즘은 "폼이 쉰다"보다 <strong>"신발마다 형태·강성이 달라 몸에 걸리는 부하가 분산된다"</strong> 쪽이 유력합니다. 결론은 같습니다 — 로테이션은 하세요. 다만 <strong>"쉬게 했으니 수명이 리셋된다"고 믿고 누적 거리를 무시하면 안 됩니다.</strong></p>
+
+<h2>6. 그래서, 다시 계산한 교체 기준</h2>
+<table>
+  <thead><tr><th>신발 유형</th><th>기준</th><th>근거</th></tr></thead>
+  <tbody>
+    <tr><td><strong>PEBA 카본 레이서</strong><br>(알파플라이·베이퍼플라이급)</td><td><strong>300~450km에서 성능 의심 시작</strong>, 기록용은 그 전에</td><td>450km 실측에서 효율 손실 확인. 대회+포인트 훈련 전용으로 아껴 쓰기</td></tr>
+    <tr><td><strong>데일리 EVA·슈퍼크리티컬</strong></td><td><strong>500~800km은 하한이 아니라 참고선</strong> — 신호 없으면 더 가도 됩니다</td><td>450km 무손실 + 1,377km 실주행에서도 완만한 저하. 아웃솔 마모·미드솔 주름·새 통증이 실제 기준</td></tr>
+    <tr><td><strong>공통</strong></td><td>거리 기록 + 월 1회 육안 점검</td><td>발은 못 느끼므로(−28% vs 체감 −2.7%) 러닝 앱의 신발 거리 추적 기능을 켜두세요</td></tr>
+  </tbody>
+</table>
+<p>교체 신호 체크리스트: ① 미드솔 옆면의 깊은 주름·복원 안 되는 눌림 ② 한쪽으로 기운 뒤꿈치 마모 ③ 같은 코스인데 생기는 새로운 통증(무릎·정강이) ④ 레이스화라면 "예전만큼 튕기지 않는" 느낌 — 이건 드물게 감각이 맞는 경우입니다.</p>
+<p>새 신발을 고를 차례라면 <a href="/blog/running-shoes-recommend-by-price-2026">가격대별 추천</a>에서 시작하시고, 가을 대회를 준비 중이라면 <a href="/blog/fall-marathon-race-day-checklist-2026">완주 준비물 체크리스트</a>도 함께 보세요.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <div class="faq-item">
+    <p class="faq-q">Q. 안 신고 오래 보관하면 수명이 리셋되나요?</p>
+    <p class="faq-a">A. 아니요. 실험에서 <strong>9개월을 쉬어도 폼은 원래 물성으로 돌아오지 않았습니다.</strong> 눌린 셀 벽의 주름과 균열은 되돌아오지 않는 구조 손상이기 때문입니다. 다만 사용하지 않은 새 신발의 "유통기한"은 다른 문제로, 서늘하고 건조한 곳에 보관하면 수년은 갑니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 대회 직전에 새 레이스화를 사도 되나요?</p>
+    <p class="faq-a">A. 새 신발 적응에 <strong>약 3주</strong>가 걸린다는 관찰이 있습니다(<a href="/blog/running-shoe-plate-guide-2026">플레이트 편</a> 참고). 레이스화는 대회 3~4주 전에 사서 포인트 훈련 2~3회로 발을 맞추고, 정작 대회까지 누적 50km 안쪽으로 아끼는 게 정석입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 은퇴한 러닝화를 걷기용으로 써도 되나요?</p>
+    <p class="faq-a">A. 네, 합리적입니다. 걷기는 착지 충격이 러닝의 절반 이하라 죽은 폼으로도 부담이 적습니다. 다만 아웃솔이 한쪽으로 심하게 기운 신발은 걷기에서도 발목 정렬을 무너뜨릴 수 있으니 제외하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 여름 아스팔트나 차 트렁크 보관이 신발을 빨리 죽이나요?</p>
+    <p class="faq-a">A. 방향은 맞습니다. 폼은 <strong>온도가 오를수록 같은 하중에서 더 많이 눌리는 게 실측</strong>돼 있고, 달리는 동안 신발 내부에 쌓이는 열이 실험실 예측보다 실제 열화를 키운다는 지적도 있습니다. 한여름 차 안 같은 고온 보관은 피하는 게 좋습니다. 단, "세탁기·건조기가 수명을 몇 % 줄인다" 같은 구체 수치는 연구된 바 없습니다 — 열이 해롭다는 원리에서의 추론일 뿐입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: Cook·Kester·Brunet(1985, Am J Sports Med) 기계 모사·실착 비교, Rodrigo-Carranza et al.(2024, Scand J Med Sci Sports) 450km EVA/PEBA 실도로 마모, Cornwall &amp; McPoil(2017, IJSPT) 640km 객관-주관 괴리, Kong et al.(2009, BJSM) 320km 자세 보상, Escamilla-Martínez et al.(2020) 350km 저하, Verdejo(2004, 버밍엄대 박사논문) 1,377km 실주행·회복률·온도 크리프·SEM 셀벽 손상, Malisoux et al.(2015, Scand J Med Sci Sports, n=264) 로테이션 위험비 0.614. 모든 수치는 원문 확인 기준이며, 연구되지 않은 항목은 본문에 그렇게 표기했습니다. · 작성 2026년 7월 28일.</small></p>
+`,
+  },
+  {
     id: 'zotefoams-nike-foam-busan-innovation-center-2026',
     slug: 'zotefoams-nike-foam-busan-innovation-center-2026',
     title: '나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 신발 이노베이션 센터',
