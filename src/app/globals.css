@@ -5,26 +5,26 @@
 /* Pretendard는 next/font/local(layout.tsx)로 셀프호스트 → --font-pretendard 변수로 주입 */
 
 :root {
-  /* Performance Editorial */
-  --primary: #0f172a;
-  --secondary: #475569;
-  --tertiary: #64748b;
-  --accent: #0ea5e9;
+  /* Ink + Signal (리디자인 B, 2026-07-30) — 웜 화이트 그라운드 · 잉크 타이포 · 세이프티 오렌지 단일 시그널 */
+  --primary: #17150F;
+  --secondary: #5F5B4E;
+  --tertiary: #7C7768;
+  --accent: #FF4D00;
   --positive: #0f766e;
-  --warning: #f97316;
-  --negative: #FF3B30;
-  --surface: #f7fbff;
-  --border: #dbe5f0;
-  --background: #f4f9fd;
-  --foreground: #0f172a;
+  --warning: #B45309;
+  --negative: #D92D20;
+  --surface: #FFFFFF;
+  --border: #E3E0D6;
+  --background: #FCFBF9;
+  --foreground: #17150F;
 
-  --bg-warm: #f4f9fd;
-  --bg-warm-alt: #edf6ff;
-  --surface-strong: #e2f1fb;
-  --navy: #081226;
-  --navy-soft: #13233d;
-  --accent-soft: #d8eefb;
-  --accent-line: rgba(14, 165, 233, 0.18);
+  --bg-warm: #FCFBF9;
+  --bg-warm-alt: #F7F5EE;
+  --surface-strong: #F1EDE3;
+  --navy: #17150F;
+  --navy-soft: #262319;
+  --accent-soft: #FFF0E8;
+  --accent-line: rgba(255, 77, 0, 0.2);
 
   /* shadcn 호환 변수 */
   --card: 0 0% 100%;
@@ -35,9 +35,9 @@
   --muted-foreground: 0 0% 40%;
   --destructive: 4 84% 60%;
   --destructive-foreground: 0 0% 100%;
-  --input: 210 30% 90%;
-  --ring: 198 89% 48%;
-  --radius: 1rem;
+  --input: 45 22% 88%;
+  --ring: 18 100% 50%;
+  --radius: 0.375rem;
 }
 
 .dark {
@@ -62,10 +62,7 @@
 
   body {
     @apply min-h-screen antialiased;
-    background:
-      radial-gradient(circle at top left, rgba(14, 165, 233, 0.12), transparent 26%),
-      radial-gradient(circle at 82% 4%, rgba(56, 189, 248, 0.08), transparent 18%),
-      linear-gradient(180deg, #f6fbff 0%, #f4f9fd 48%, #eef5fb 100%);
+    background: linear-gradient(180deg, #FDFCFA 0%, #FCFBF9 55%, #F7F5EE 100%);
     color: var(--primary);
     font-feature-settings: "rlig" 1, "calt" 0;
     overflow-x: hidden;
