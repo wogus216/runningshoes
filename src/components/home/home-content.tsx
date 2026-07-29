@@ -95,122 +95,117 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
 
   return (
     <div className="space-y-8">
-      <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(243,249,255,0.96)_52%,rgba(231,244,255,0.94)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.4)] md:px-8 md:py-10">
-        <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-8 top-8 h-32 w-32 rounded-full bg-[rgba(14,165,233,0.18)] blur-3xl" />
-          <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.14)] blur-3xl" />
-          <div className="absolute bottom-0 right-10 h-28 w-28 rounded-full bg-[rgba(2,132,199,0.12)] blur-3xl" />
-        </div>
-
-        <div className="relative grid gap-6 lg:grid-cols-[1.25fr_0.85fr] lg:items-end">
-          <div className="space-y-6">
-            <div className="flex flex-wrap gap-2">
-              {heroStats.map((stat) => (
-                <span
-                  key={stat.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-stone-900/10 bg-white/70 px-3 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-600 backdrop-blur"
-                >
-                  <span className="text-slate-950">{stat.value}</span>
-                  {stat.label}
+      <section className="grid overflow-hidden border-2 border-primary bg-background lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="border-b-2 border-primary px-5 py-7 md:px-8 md:py-9 lg:border-b-0 lg:border-r-2">
+          <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 font-mono text-[11px] uppercase tracking-[0.18em] text-secondary">
+            <span>INK &amp; SIGNAL — LAB INDEX</span>
+            <span className="flex flex-wrap gap-x-3">
+              {heroStats.map((stat, idx) => (
+                <span key={stat.label}>
+                  <b className="text-accent">{stat.value}</b> {stat.label}
+                  {idx < heroStats.length - 1 ? " ·" : ""}
                 </span>
               ))}
-            </div>
-
-            <div className="max-w-3xl space-y-4">
-              <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-sky-700">Performance Editorial</p>
-              <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-6xl">
-                러닝화를 감으로 고르지 않게.
-              </h1>
-              <p className="max-w-2xl text-base leading-relaxed text-slate-600 md:text-lg">
-                단순히 브랜드를 훑는 곳이 아니라, 쿠션감, 안정성, 발볼, 용도까지 빠르게 걸러서 판단할 수 있는 러닝화 에디토리얼 인덱스로 다시 정리했습니다.
-              </p>
-            </div>
-
-            <div className="flex flex-col gap-3 sm:flex-row">
-              <Link
-                href="/recommend"
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full bg-[var(--navy)] px-5 py-3 text-sm font-semibold text-white shadow-[0_20px_42px_-28px_rgba(2,132,199,0.6)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-[var(--navy-soft)]"
-              >
-                맞춤 추천 시작
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </Link>
-              <button
-                onClick={scrollToFilterPanel}
-                className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-full border border-[var(--accent-line)] bg-white/82 px-5 py-3 text-sm font-semibold text-slate-900 transition-all duration-200 hover:-translate-y-0.5 hover:border-sky-300 hover:bg-white"
-              >
-                필터부터 바로 보기
-              </button>
-            </div>
-
-            <div className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
-              {quickSearches.map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => {
-                    setSearchQuery(item.query);
-                    scrollToFilterPanel();
-                  }}
-                  className="group rounded-[24px] border border-[var(--accent-line)] bg-white/76 p-4 text-left shadow-[0_20px_45px_-42px_rgba(8,18,38,0.38)] backdrop-blur transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 hover:bg-white"
-                >
-                  <p className="text-sm font-semibold text-slate-950">{item.label}</p>
-                  <p className="mt-1 text-sm leading-relaxed text-slate-600">{item.hint}</p>
-                  <p className="mt-3 text-[11px] font-semibold uppercase tracking-[0.24em] text-sky-700 group-hover:text-sky-800">
-                    {item.query}
-                  </p>
-                </button>
-              ))}
-            </div>
+            </span>
           </div>
 
-          <aside className="relative overflow-hidden rounded-[28px] border border-sky-950/20 bg-[linear-gradient(165deg,rgba(8,18,38,0.98)_0%,rgba(15,23,42,0.95)_58%,rgba(12,74,110,0.96)_100%)] p-5 text-white shadow-[0_28px_60px_-38px_rgba(8,18,38,0.82)] md:p-6">
-            <div className="absolute inset-x-6 top-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent" />
-            <p className="text-[11px] font-semibold uppercase tracking-[0.34em] text-sky-200/85">Start From</p>
-            <h2 className="mt-3 text-2xl font-black tracking-tight text-white">많이 찾는 시작 기준</h2>
-            <p className="mt-2 text-sm leading-relaxed text-white/70">
-              검색창에 아무 말이나 넣기 전에, 러너들이 실제로 많이 걸러보는 조건부터 시작하세요.
+          <div className="max-w-3xl">
+            <h1 className="mt-4 text-balance text-4xl font-black leading-[0.95] tracking-tight text-primary md:text-6xl">
+              러닝화를 감으로 고르지 않게.
+            </h1>
+            <p className="mt-3 max-w-2xl text-base leading-relaxed text-secondary md:text-lg">
+              단순히 브랜드를 훑는 곳이 아니라, 쿠션감, 안정성, 발볼, 용도까지 빠르게 걸러서 판단할 수 있는 러닝화 에디토리얼 인덱스로 다시 정리했습니다.
             </p>
+          </div>
 
-            <div className="mt-6 space-y-3">
-              {[
-                { label: "쿠션 우선", query: "쿠션화" },
-                { label: "가성비 우선", query: "가성비" },
-                { label: "풀코스 준비", query: "마라톤" },
-              ].map((item) => (
-                <button
-                  key={item.label}
-                  onClick={() => {
-                    setSearchQuery(item.query);
-                    scrollToFilterPanel();
-                  }}
-                  className="flex w-full items-center justify-between rounded-[22px] border border-white/10 bg-white/6 px-4 py-3 text-left transition-all duration-200 hover:border-sky-300/25 hover:bg-white/10"
-                >
-                  <div>
-                    <p className="text-sm font-semibold text-white">{item.label}</p>
-                    <p className="text-xs uppercase tracking-[0.24em] text-sky-200/70">{item.query}</p>
-                  </div>
-                  <span className="text-lg text-sky-200/80">+</span>
-                </button>
-              ))}
-            </div>
+          <div className="mt-7 flex flex-col gap-3 sm:flex-row">
+            <Link
+              href="/recommend"
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-[4px] bg-accent px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-[#E64500]"
+            >
+              맞춤 추천 시작
+              <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+              </svg>
+            </Link>
+            <button
+              onClick={scrollToFilterPanel}
+              className="inline-flex min-h-[48px] items-center justify-center gap-2 rounded-[4px] border border-primary bg-background px-5 py-3 text-sm font-semibold text-primary transition-colors hover:bg-[var(--accent-soft)]"
+            >
+              필터부터 바로 보기
+            </button>
+          </div>
 
-            <div className="mt-6 grid grid-cols-3 gap-2 border-t border-white/10 pt-4 text-center">
-              <div className="rounded-2xl bg-white/5 px-3 py-3">
-                <p className="text-lg font-bold text-white">비교</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-sky-200/60">Spec</p>
-              </div>
-              <div className="rounded-2xl bg-white/5 px-3 py-3">
-                <p className="text-lg font-bold text-white">추천</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-sky-200/60">Match</p>
-              </div>
-              <div className="rounded-2xl bg-white/5 px-3 py-3">
-                <p className="text-lg font-bold text-white">리뷰</p>
-                <p className="mt-1 text-[11px] uppercase tracking-[0.2em] text-sky-200/60">Notes</p>
-              </div>
-            </div>
-          </aside>
+          <div className="mt-7 grid gap-px border border-border bg-border sm:grid-cols-2 xl:grid-cols-4">
+            {quickSearches.map((item) => (
+              <button
+                key={item.label}
+                onClick={() => {
+                  setSearchQuery(item.query);
+                  scrollToFilterPanel();
+                }}
+                className="group bg-background p-4 text-left transition-colors hover:bg-[var(--accent-soft)]"
+              >
+                <p className="text-sm font-bold text-primary">{item.label}</p>
+                <p className="mt-1 text-sm leading-relaxed text-secondary">{item.hint}</p>
+                <p className="mt-3 font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">
+                  {item.query}
+                </p>
+              </button>
+            ))}
+          </div>
         </div>
+
+        <aside className="relative bg-[var(--navy)] px-6 py-8 text-white md:px-8 md:py-9">
+          <div
+            className="absolute inset-x-0 top-0 h-1.5"
+            style={{ backgroundImage: "repeating-linear-gradient(90deg, var(--accent) 0 18px, transparent 18px 26px)" }}
+            aria-hidden="true"
+          />
+          <p className="mt-2 font-mono text-[11px] uppercase tracking-[0.22em] text-white/50">Start From</p>
+          <h2 className="mt-3 text-2xl font-black tracking-tight text-white">많이 찾는 시작 기준</h2>
+          <p className="mt-2 text-sm leading-relaxed text-white/70">
+            검색창에 아무 말이나 넣기 전에, 러너들이 실제로 많이 걸러보는 조건부터 시작하세요.
+          </p>
+
+          <div className="mt-6 border-t border-white/15">
+            {[
+              { label: "쿠션 우선", query: "쿠션화" },
+              { label: "가성비 우선", query: "가성비" },
+              { label: "풀코스 준비", query: "마라톤" },
+            ].map((item) => (
+              <button
+                key={item.label}
+                onClick={() => {
+                  setSearchQuery(item.query);
+                  scrollToFilterPanel();
+                }}
+                className="flex w-full items-center justify-between border-b border-white/15 py-3 text-left transition-colors hover:bg-white/5"
+              >
+                <div>
+                  <p className="text-sm font-semibold text-white">{item.label}</p>
+                  <p className="font-mono text-[11px] uppercase tracking-[0.2em] text-white/50">{item.query}</p>
+                </div>
+                <span className="font-mono text-white/50">+</span>
+              </button>
+            ))}
+          </div>
+
+          <div className="mt-6 grid grid-cols-3 gap-px border border-white/15 bg-white/15 text-center">
+            <div className="bg-[var(--navy)] px-3 py-3">
+              <p className="text-lg font-bold text-white">비교</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40">Spec</p>
+            </div>
+            <div className="bg-[var(--navy)] px-3 py-3">
+              <p className="text-lg font-bold text-white">추천</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40">Match</p>
+            </div>
+            <div className="bg-[var(--navy)] px-3 py-3">
+              <p className="text-lg font-bold text-white">리뷰</p>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-[0.2em] text-white/40">Notes</p>
+            </div>
+          </div>
+        </aside>
       </section>
 
       {/* 필터 패널 */}
@@ -232,10 +227,10 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
       </div>
 
       {/* 필터 결과 */}
-      <div className="flex flex-col gap-3 rounded-[28px] border border-[var(--accent-line)] bg-white/74 p-4 shadow-[0_20px_45px_-42px_rgba(8,18,38,0.34)] backdrop-blur sm:gap-4 sm:rounded-[28px] sm:p-5 md:flex-row md:items-center md:justify-between">
+      <div className="flex flex-col gap-3 border-2 border-primary bg-background p-4 sm:gap-4 sm:p-5 md:flex-row md:items-center md:justify-between">
         <div>
-          <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Search Result</p>
-          <p className="mt-2 text-xl font-black leading-tight tracking-tight text-slate-950 sm:text-2xl">
+          <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.3em] text-accent">Search Result</p>
+          <p className="mt-2 text-xl font-black leading-tight tracking-tight text-primary sm:text-2xl">
           {activeFilterCount > 0 ? (
             <>
               <span className="text-accent">{filteredShoes.length}</span>개가 현재 조건에 맞습니다
@@ -248,27 +243,27 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
           </p>
         </div>
 
-        <div className="grid grid-cols-3 gap-2 text-sm text-slate-600 sm:gap-3">
+        <div className="grid grid-cols-3 gap-px border border-border bg-border text-sm text-secondary">
           <Link
             href="/recommend"
-            className="flex min-h-[72px] flex-col justify-between rounded-[18px] border border-sky-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(236,248,255,0.96))] p-3 transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 sm:min-h-[88px] sm:rounded-[22px] sm:p-4"
+            className="flex min-h-[72px] flex-col justify-between bg-background p-3 transition-colors hover:bg-[var(--accent-soft)] sm:min-h-[88px] sm:p-4"
           >
             <Sparkles className="h-4 w-4 text-accent sm:h-5 sm:w-5" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-700 sm:text-xs sm:tracking-[0.2em]">추천</span>
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-primary sm:text-xs sm:tracking-[0.2em]">추천</span>
           </Link>
           <Link
             href="/compare"
-            className="flex min-h-[72px] flex-col justify-between rounded-[18px] border border-sky-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.95))] p-3 transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 sm:min-h-[88px] sm:rounded-[22px] sm:p-4"
+            className="flex min-h-[72px] flex-col justify-between bg-background p-3 transition-colors hover:bg-[var(--accent-soft)] sm:min-h-[88px] sm:p-4"
           >
-            <GitCompare className="h-4 w-4 text-sky-700 sm:h-5 sm:w-5" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-700 sm:text-xs sm:tracking-[0.2em]">비교</span>
+            <GitCompare className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-primary sm:text-xs sm:tracking-[0.2em]">비교</span>
           </Link>
           <button
             onClick={scrollToFilterPanel}
-            className="flex min-h-[72px] flex-col justify-between rounded-[18px] border border-sky-200 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(242,249,255,0.95))] p-3 text-left transition-all duration-200 hover:-translate-y-1 hover:border-sky-300 sm:min-h-[88px] sm:rounded-[22px] sm:p-4"
+            className="flex min-h-[72px] flex-col justify-between bg-background p-3 text-left transition-colors hover:bg-[var(--accent-soft)] sm:min-h-[88px] sm:p-4"
           >
-            <SlidersHorizontal className="h-4 w-4 text-sky-700 sm:h-5 sm:w-5" />
-            <span className="text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-700 sm:text-xs sm:tracking-[0.2em]">필터</span>
+            <SlidersHorizontal className="h-4 w-4 text-primary sm:h-5 sm:w-5" />
+            <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.16em] text-primary sm:text-xs sm:tracking-[0.2em]">필터</span>
           </button>
         </div>
       </div>
@@ -293,12 +288,15 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
       <AdSlot slot={ADSENSE_SLOTS.homeBottom} format="auto" label="홈 하단 광고" />
 
       <section className="space-y-4 pt-2">
-        <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+        <div className="flex flex-col gap-2 border-b-2 border-primary pb-3 md:flex-row md:items-end md:justify-between">
           <div>
-            <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-slate-500">Beyond Shoes</p>
-            <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">신발만 보고 끝내지 않게</h2>
+            <div className="flex flex-wrap items-center gap-2">
+              <p className="font-mono text-[11px] font-semibold uppercase tracking-[0.32em] text-secondary">Beyond Shoes</p>
+              <span className="font-mono text-[11px] uppercase tracking-[0.14em] text-accent">· TECH / GEL / GUIDE</span>
+            </div>
+            <h2 className="mt-2 text-2xl font-black tracking-tight text-primary">신발만 보고 끝내지 않게</h2>
           </div>
-          <p className="max-w-2xl text-sm leading-relaxed text-slate-600">
+          <p className="max-w-2xl text-sm leading-relaxed text-secondary">
             러닝 테크, 젤, 장거리 가이드까지 한 흐름으로 연결해서 보는 편이 더 실용적입니다.
           </p>
         </div>

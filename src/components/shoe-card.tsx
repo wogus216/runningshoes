@@ -96,20 +96,17 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
   const cardContent = (
     <article
       className={cn(
-        "group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)]",
-        "bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(245,250,255,0.96))]",
-        "shadow-[0_20px_40px_-34px_rgba(8,18,38,0.32)]",
-        "transition-transform duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(2,132,199,0.24)]",
+        "group relative flex h-full flex-col overflow-hidden border border-border bg-background",
+        "transition-colors duration-200 hover:bg-[var(--accent-soft)]",
         "focus-within:ring-2 focus-within:ring-sky-500 focus-within:ring-offset-2",
-        "motion-reduce:transition-none motion-reduce:hover:translate-y-0 motion-reduce:animate-none",
+        "motion-reduce:transition-none motion-reduce:animate-none",
         "animate-fade-in-up"
       )}
       style={{ animationDelay: `${Math.min(index, 12) * 60}ms` }}
     >
-      <div className="relative aspect-[4/3] overflow-hidden bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
-        <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_48%,#f97316_100%)]" aria-hidden="true" />
+      <div className="relative aspect-[4/3] overflow-hidden border-b border-border bg-[var(--bg-warm-alt)] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
         <div className="absolute inset-x-2.5 top-2.5 z-20 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
-          <span className="rounded-full border border-sky-200 bg-white/90 px-2 py-0.5 text-[9px] font-semibold uppercase tracking-[0.14em] text-sky-800 backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
+          <span className="border border-accent bg-background/95 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-accent backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
             {shoe.category}
           </span>
           <div className="flex items-center gap-1.5">
@@ -134,37 +131,28 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
       </div>
 
       <div className="flex flex-1 flex-col p-3 md:p-5">
-        <div className="mb-2.5 flex items-start justify-between gap-2 md:mb-3 md:gap-3">
-          <div className="min-w-0">
-            <p className="mb-0.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-sky-700 md:mb-1 md:text-[11px] md:tracking-[0.18em]">{shoe.brand}</p>
-            <h3 className="line-clamp-2 min-h-[2.25rem] text-[13px] font-bold leading-4.5 text-slate-950 md:min-h-[3rem] md:text-base md:leading-5">
-              {shoe.slug ? (
-                <Link
-                  href={href as `/shoes/${string}`}
-                  className="outline-none after:absolute after:inset-0 after:rounded-[28px] after:content-[''] focus-visible:outline-none"
-                  aria-label={`${shoe.brand} ${shoe.name} 상세 보기`}
-                >
-                  {shoe.name}
-                </Link>
-              ) : (
-                shoe.name
-              )}
-            </h3>
-          </div>
-          <div className="flex-shrink-0 rounded-2xl bg-[var(--navy)] px-2 py-1 text-right text-white shadow-[0_14px_28px_-20px_rgba(2,132,199,0.85)] md:px-2.5">
-            <p className="text-[9px] uppercase tracking-[0.14em] text-sky-100/55 md:text-[10px] md:tracking-[0.18em]">Score</p>
-            <p className="text-[13px] font-black md:text-sm">{shoe.rating.toFixed(1)}</p>
-          </div>
+        <div className="mb-2.5 min-w-0 md:mb-3">
+          <p className="mb-0.5 font-mono text-[10px] font-semibold uppercase tracking-[0.14em] text-secondary md:mb-1 md:text-[11px] md:tracking-[0.18em]">{shoe.brand}</p>
+          <h3 className="line-clamp-2 min-h-[2.25rem] text-[13px] font-bold leading-4.5 text-primary md:min-h-[3rem] md:text-base md:leading-5">
+            {shoe.slug ? (
+              <Link
+                href={href as `/shoes/${string}`}
+                className="outline-none after:absolute after:inset-0 after:content-[''] focus-visible:outline-none"
+                aria-label={`${shoe.brand} ${shoe.name} 상세 보기`}
+              >
+                {shoe.name}
+              </Link>
+            ) : (
+              shoe.name
+            )}
+          </h3>
         </div>
 
         <div className="mb-2 flex flex-wrap items-center gap-1.5 md:hidden">
-          <span className="rounded-full bg-[var(--navy)] px-2.5 py-1 text-[11px] font-bold text-white">
-            ₩{shoe.price?.toLocaleString()}
-          </span>
           {mobileBadge && (
             <span
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-semibold",
+                "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[10px] font-semibold",
                 mobileBadge.color === 'positive' && "bg-teal-50 text-teal-700",
                 mobileBadge.color === 'warning' && "bg-orange-50 text-orange-700",
                 mobileBadge.color === 'accent' && "bg-sky-50 text-sky-700"
@@ -179,14 +167,11 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         </div>
 
         <div className="mb-3 hidden flex-wrap items-center gap-1.5 md:flex">
-          <span className="rounded-full bg-[var(--navy)] px-2.5 py-1 text-xs font-bold text-white">
-            ₩{shoe.price?.toLocaleString()}
-          </span>
           {badges.map((badge, idx) => (
             <span
               key={idx}
               className={cn(
-                "inline-flex items-center gap-1 rounded-full px-2 py-1 text-[11px] font-semibold",
+                "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[11px] font-semibold",
                 badge.color === 'positive' && "bg-teal-50 text-teal-700",
                 badge.color === 'warning' && "bg-orange-50 text-orange-700",
                 badge.color === 'accent' && "bg-sky-50 text-sky-700"
@@ -205,7 +190,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             {statChips.map((chip) => (
               <span
                 key={chip}
-                className="rounded-full border border-sky-100 bg-white/78 px-2.5 py-1 text-[11px] font-medium text-slate-600"
+                className="rounded-[3px] border border-border bg-background/78 px-2.5 py-1 font-mono text-[11px] font-medium text-secondary"
               >
                 {chip}
               </span>
@@ -251,13 +236,13 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
         </div>
 
         {shoe.tags && shoe.tags.length > 0 && onTagClick && (
-          <div className="relative z-10 mt-auto hidden gap-1.5 overflow-hidden pt-3 md:flex">
+          <div className="relative z-10 hidden gap-1.5 overflow-hidden pt-3 md:flex">
             {shoe.tags.slice(0, 2).map((tag) => (
               <button
                 key={tag}
                 type="button"
                 onClick={() => onTagClick(tag)}
-                className="max-w-[88px] truncate rounded-full bg-sky-50 px-2.5 py-1 text-[11px] font-medium text-slate-700 transition-colors hover:bg-sky-100 hover:text-slate-950 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
+                className="max-w-[88px] truncate rounded-[3px] bg-sky-50 px-2.5 py-1 text-[11px] font-medium text-secondary transition-colors hover:bg-sky-100 hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-500"
                 aria-label={`${tag} 태그로 필터링`}
               >
                 #{tag}
@@ -265,6 +250,16 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             ))}
           </div>
         )}
+
+        <div className="mt-auto flex items-center justify-between border-t border-dashed border-border pt-3">
+          <span className="font-mono text-base font-bold tabular-nums text-primary md:text-lg">
+            ₩{shoe.price?.toLocaleString()}
+          </span>
+          <span className="flex items-center gap-1 font-mono text-xs font-semibold tabular-nums text-secondary">
+            <span aria-hidden="true" className="text-accent">★</span>
+            {shoe.rating.toFixed(1)}
+          </span>
+        </div>
       </div>
     </article>
   );

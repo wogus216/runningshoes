@@ -19,7 +19,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
     <div>
       <div className="flex justify-between text-sm mb-1.5">
         <span className="text-primary" id={`spec-${label}`}>{label}</span>
-        <span className="font-medium text-primary">{value}</span>
+        <span className="font-mono font-medium tabular-nums text-primary">{value}</span>
       </div>
       <div
         className="spec-bar"
@@ -32,7 +32,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
         <div
           className={cn(
             "spec-bar-fill",
-            color === 'positive' ? "bg-slate-700" : "bg-sky-500"
+            color === 'positive' ? "bg-primary" : "bg-accent"
           )}
           style={{ width: `${percentage}%` }}
         />
@@ -64,23 +64,23 @@ export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps)
         <SpecBar label="내구성" value={`${specs.durability || 500}km`} percentage={Math.min((specs.durability || 500) / 8, 100)} />
       </div>
 
-      {/* 상세 스펙 그리드 */}
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-3">
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
-          <p className="text-lg md:text-xl font-bold text-primary">{specs.weight}g</p>
-          <p className="text-xs text-tertiary mt-1">무게 (US 9)</p>
+      {/* 실측 기록표 — 상단 2px 잉크 보더 + 칸 사이 1px 보더 */}
+      <div className="grid grid-cols-2 divide-x divide-y divide-border border-t-2 border-primary md:grid-cols-4 md:divide-y-0">
+        <div className="p-3 text-center md:p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">무게 (US 9)</p>
+          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{specs.weight}g</p>
         </div>
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
-          <p className="text-lg md:text-xl font-bold text-primary">{heelStack || '-'}mm</p>
-          <p className="text-xs text-tertiary mt-1">힐 스택</p>
+        <div className="p-3 text-center md:p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">힐 스택</p>
+          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{heelStack || '-'}mm</p>
         </div>
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
-          <p className="text-lg md:text-xl font-bold text-primary">{specs.drop || 10}mm</p>
-          <p className="text-xs text-tertiary mt-1">드롭</p>
+        <div className="p-3 text-center md:p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">드롭</p>
+          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{specs.drop || 10}mm</p>
         </div>
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-3 text-center md:p-4">
-          <p className={cn("text-lg md:text-xl font-bold", toebox.color)}>{toebox.text}</p>
-          <p className="text-xs text-tertiary mt-1">토박스</p>
+        <div className="p-3 text-center md:p-4">
+          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">토박스</p>
+          <p className={cn("mt-1.5 font-mono text-lg font-bold tabular-nums md:text-xl", toebox.color)}>{toebox.text}</p>
         </div>
       </div>
     </div>
