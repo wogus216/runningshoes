@@ -180,11 +180,12 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   // 비슷한 신발 데이터 가져오기 (서버에서 미리 로드)
   const similarShoesData = shoe.similarShoes ? getSimilarShoesData(shoe.similarShoes) : [];
 
-  // 관련 블로그: curated relatedPosts 우선, 없으면 본문에서 이 신발을 링크한 글로 자동 폴백
-  const relatedPosts =
-    shoe.relatedPosts && shoe.relatedPosts.length > 0
-      ? shoe.relatedPosts
-      : getPostsLinkingToShoe(shoe.slug);
+  // 관련 블로그: curated relatedPosts 우선 배치 + 본문에서 이 신발을 링크한 글로 자동 보충 (slug 중복 제거)
+  // curated가 1~2개뿐일 때 자동 링크가 통째로 사라지지 않도록 병합한다 — 최소 4개 확보, curated가 더 많으면 그대로
+  const curated = shoe.relatedPosts ?? [];
+  const curatedSlugs = new Set(curated.map((p) => p.slug));
+  const autoLinked = getPostsLinkingToShoe(shoe.slug).filter((p) => !curatedSlugs.has(p.slug));
+  const relatedPosts = [...curated, ...autoLinked].slice(0, Math.max(curated.length, 4));
 
   // priceAnalysis.alternatives → 서버에서 slug/brand/name으로 미리 resolve
   // (클라이언트에서 getShoes() 호출 제거 → 번들 경량화)

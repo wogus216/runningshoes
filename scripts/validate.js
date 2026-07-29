@@ -272,6 +272,19 @@ brands.forEach(brand => {
       warn(`[${brand}] ${slug}: specs.drop(${drops[0][1]}) ≠ biomechanics.drop(${drops[1][1]})`);
       consistOk = false;
     }
+
+    // 저온 경화율(본문 실측 언급) vs winterCompatibility 필드
+    // 기준: ≤10% excellent / 11~25% good / 26~40% fair / >40% poor (2026-07-29 정합 감사에서 정립)
+    const hardM = block.match(/경화율?[이가은는의]?\s?(\d+)%/) || block.match(/(\d+)%(?:만|나)?\s?(?:더 )?(?:단단|딱딱)해/);
+    const winterM = block.match(/winterCompatibility:\s*'(\w+)'/);
+    if (hardM && winterM) {
+      const h = parseInt(hardM[1]);
+      const expected = h <= 10 ? 'excellent' : h <= 25 ? 'good' : h <= 40 ? 'fair' : 'poor';
+      if (winterM[1] !== expected) {
+        warn(`[${brand}] ${slug}: 경화율 ${h}% → winterCompatibility '${expected}' 기대, 실제 '${winterM[1]}'`);
+        consistOk = false;
+      }
+    }
   }
 });
 
