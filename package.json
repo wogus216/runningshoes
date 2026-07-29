@@ -18,7 +18,8 @@
     "purge": "node scripts/purge-jsdelivr.mjs",
     "verify:cdn": "node scripts/verify-cdn.mjs",
     "postbuild": "next-sitemap",
-    "prepare": "husky"
+    "prepare": "husky",
+    "gsc": "tsx scripts/gsc-report.ts"
   },
   "dependencies": {
     "@google-analytics/data": "^6.1.0",
