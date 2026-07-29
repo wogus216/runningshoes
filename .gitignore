@@ -50,10 +50,14 @@ public/sitemap*.xml
 /.claude/commands/publish-from-url.md
 /.claude/skills/daily-blog-topic/
 /.claude/skills/shoe-comparison-post/
-.omc/
 
 # 로컬 에이전트 설정(트래킹하지 않음)
 /AGENTS.md
 /.codex/
 /.playwright-mcp/
 /.claude/skills/db-audit/
+
+# todo-estimates만 추적 (클라우드 월간 점검 루틴이 읽음, 2026-07-29)
+!.omc/
+.omc/*
+!.omc/todo-estimates.md
