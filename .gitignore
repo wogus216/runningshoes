@@ -56,3 +56,4 @@ public/sitemap*.xml
 /AGENTS.md
 /.codex/
 /.playwright-mcp/
+/.claude/skills/db-audit/
