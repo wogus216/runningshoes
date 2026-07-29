@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'standard',
     flatFootCompatibility: 'good',
     wideOptions: true,
-    winterCompatibility: 'good',
+    winterCompatibility: 'poor',
     summerCompatibility: 'fair',
   },
 
@@ -102,5 +102,8 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'puma-velocity-nitro-4', 'saucony-kinvara-16'],
+  relatedPosts: [
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfwsEh' }],
 };

@@ -94,6 +94,9 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크~미드풋',
   },
   similarShoes: ['asics-superblast-2', 'nike-zoom-fly-6', 'puma-magmax-nitro-2'],
+  relatedPosts: [
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6svgS' }],
   tags: ['슈퍼트레이너', 'PEBA', '맥시멀 쿠션', '장거리'],
 };

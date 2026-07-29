@@ -45,7 +45,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'standard',
     flatFootCompatibility: 'good',
     wideOptions: true,
-    winterCompatibility: 'good',
+    winterCompatibility: 'fair',
     summerCompatibility: 'fair',
   },
   targetUsers: {
@@ -86,6 +86,9 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크~미드풋',
   },
   similarShoes: ['asics-gel-nimbus-28', 'nike-pegasus-41', 'saucony-ride-18'],
+  relatedPosts: [
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5zX9BD95' }],
   tags: ['입문화', '데일리 러닝', '안정성', '쿠셔닝'],
 };

@@ -81,5 +81,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'mizuno-wave-rider-29-vs-30-comparison-2026', title: '웨이브 라이더 29 vs 30 — 30년 만의 대개편, 갈아탈 가치' },
     { slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026', title: '웨이브 라이더 29 vs 페가수스 42 — 같은 값 대결' },
+    { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
   ],
 };

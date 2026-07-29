@@ -109,6 +109,7 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 3파전' },
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/546TgvGh' }],
 };

@@ -19,7 +19,7 @@ export const shoe: Shoe = {
   price: 299000,
   description: '브룩스 최고급 레이싱화. DNA Gold (PEBA)와 SpeedVault+ 카본 플레이트로 76.9% 에너지 리턴.',
   oneliner: '76.9% 에너지 리턴, 브룩스가 슈퍼슈즈 전쟁에 참전하다',
-  editorComment: '브룩스가 DNA Gold(PEBA)를 들고 슈퍼슈즈 시장에 본격 합류했습니다. 76.9% 에너지 리턴은 베이퍼플라이 3(75.4%)을 넘어서는 수치이고, 29만 9천원은 알파플라이 3(₩370,000)보다 7만원 저렴합니다. 204g 초경량에 겨울 경화율 8%로 사계절 레이싱이 가능한 점은 독보적입니다. 다만 84.5mm 좁은 미드솔 폭은 안정성이 부족하다는 뜻이고, 토박스가 좁아 한국 러너 발볼에는 도박입니다. 서브3 목표의 검증된 러너만 레이스데이 전용으로 선택하세요.\n\n사이즈·구매 가이드: 토박스가 좁은 내로우 폭이고 와이드 옵션이 없으므로 발볼 넓은 한국 러너는 반드시 5mm 업사이즈 후 매장 시착을 거쳐야 합니다. 299,000원에 km당 약 997원은 레이스데이 전용 투자이며, 서브3 페이스에서만 진가를 발휘합니다. 알파플라이 3나 메타스피드 스카이+와 함께 시착해 어떤 카본 레이서가 자신의 발과 착지 패턴에 맞는지 확인하세요.',
+  editorComment: '브룩스가 DNA Gold(PEBA)를 들고 슈퍼슈즈 시장에 본격 합류했습니다. 76.9% 에너지 리턴은 베이퍼플라이 3(75.4%)을 넘어서는 수치이고, 29만 9천원은 알파플라이 3(₩370,000)보다 7만원 저렴합니다. 204g 초경량에 겨울 경화율 8%로 사계절 레이싱이 가능한 점은 독보적입니다. 다만 84.5mm 좁은 미드솔 폭은 안정성이 부족하다는 뜻이고, 토박스가 좁아 한국 러너 발볼에는 도박입니다. 서브3 목표의 검증된 러너만 레이스데이 전용으로 선택하세요. DNA Gold(PEBA) 폼 역시 마모에는 약합니다 — PEBA 계열은 450km 실도로 실험에서 에너지 리턴을 4분의 1 가까이 잃었으니, 수명 표기를 진지하게 받아들이고 결전용으로 아끼세요.\n\n사이즈·구매 가이드: 토박스가 좁은 내로우 폭이고 와이드 옵션이 없으므로 발볼 넓은 한국 러너는 반드시 5mm 업사이즈 후 매장 시착을 거쳐야 합니다. 299,000원에 km당 약 997원은 레이스데이 전용 투자이며, 서브3 페이스에서만 진가를 발휘합니다. 알파플라이 3나 메타스피드 스카이+와 함께 시착해 어떤 카본 레이서가 자신의 발과 착지 패턴에 맞는지 확인하세요.',
   specs: {
     weight: 204,
     cushioning: 7,
@@ -46,7 +46,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'narrow',
     flatFootCompatibility: 'poor',
     wideOptions: false,
-    winterCompatibility: 'poor',
+    winterCompatibility: 'excellent',
     summerCompatibility: 'fair',
   },
   targetUsers: {
@@ -87,6 +87,10 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~포어풋',
   },
   similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+  relatedPosts: [
+    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [],
   tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용'],
 };

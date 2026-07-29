@@ -45,7 +45,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'wide',
     flatFootCompatibility: 'excellent',
     wideOptions: true,
-    winterCompatibility: 'excellent',
+    winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
   targetUsers: {
@@ -91,5 +91,8 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크',
   },
   similarShoes: ['asics-gel-kayano-33', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
+  relatedPosts: [
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6krfEy' }],
 };

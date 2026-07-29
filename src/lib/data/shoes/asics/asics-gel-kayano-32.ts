@@ -100,5 +100,8 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['asics-gel-kayano-33', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'hoka-gaviota-6'],
+  relatedPosts: [
+    { slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026', title: '사탕수수·피마자 폼 — 바이오 러닝화 추적' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GxLH2kjm' }],
 };

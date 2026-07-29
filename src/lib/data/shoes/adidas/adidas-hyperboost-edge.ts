@@ -97,5 +97,6 @@ export const shoe: Shoe = {
     { slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026', title: '하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교' },
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
 };

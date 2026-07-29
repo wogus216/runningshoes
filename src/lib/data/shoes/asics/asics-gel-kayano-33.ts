@@ -100,5 +100,6 @@ export const shoe: Shoe = {
     { slug: 'asics-gel-kayano-33-review', title: '아식스 젤 카야노 33 심층 후기' },
     { slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026', title: '카야노 33 vs 글리세린 GTS 22 vs 860 v15 — 안정화 3강 비교' },
     { slug: 'asics-kayano-32-vs-33-comparison', title: '카야노 32 vs 33 — 세대 비교' },
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
 };

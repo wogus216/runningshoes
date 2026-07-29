@@ -19,7 +19,7 @@ export const shoe: Shoe = {
   price: 289000,
   description: '푸마의 최신 카본 레이싱화로, ATPU 기반 NITROFOAM ELITE와 PWRPLATE를 결합해 5K부터 마라톤까지 빠른 전개를 노리는 PR 체이서용 모델입니다.',
   oneliner: '170g 초경량과 더 부드러워진 ATPU 폼, 푸마의 가장 현실적인 마라톤 슈퍼슈즈',
-  editorComment: '푸마 코리아 공식 스펙 기준 Deviate NITRO Elite 4는 170g(UK 8), 40/32mm 스택, 8mm 드롭, 권장 수명 400km의 최신 레이스데이 모델입니다. Believe in the Run 리뷰에서도 전작보다 확실히 더 가볍고 부드러워졌으며, Fast-R 3보다 덜 공격적이지만 훨씬 접근하기 쉬운 마라톤 슈퍼슈즈로 평가했습니다. 한국 러너 기준으로는 카본화 입문까지 노려볼 수 있는 타입이지만, 안정화 대체재로 보기엔 여전히 레이스 중심 플랫폼입니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard)으로 전작보다 발볼 호환성이 개선되었으며, 와이드 옵션은 없으나 표준 발볼이면 정사이즈 착용이 가능합니다. 289,000원 ÷ 400km = km당 약 722원이므로 레이스 전용으로 운용하세요. 접근성이 더 좋은 대안으로는 SC Elite V5, 더 공격적인 레이싱을 원하면 패스트알 나이트로 엘리트 3를 비교해보세요.',
+  editorComment: '푸마 코리아 공식 스펙 기준 Deviate NITRO Elite 4는 170g(UK 8), 40/32mm 스택, 8mm 드롭, 권장 수명 400km의 최신 레이스데이 모델입니다. Believe in the Run 리뷰에서도 전작보다 확실히 더 가볍고 부드러워졌으며, Fast-R 3보다 덜 공격적이지만 훨씬 접근하기 쉬운 마라톤 슈퍼슈즈로 평가했습니다. 한국 러너 기준으로는 카본화 입문까지 노려볼 수 있는 타입이지만, 안정화 대체재로 보기엔 여전히 레이스 중심 플랫폼입니다. 카본화의 효과는 러너마다 갈립니다 — 같은 카본화에서 러닝 이코노미가 +11%p부터 −11%p까지 벌어진 연구가 있으니, 엘리트 4의 공격적 록커가 본인 주법에 맞는지 템포런으로 먼저 확인하세요.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard)으로 전작보다 발볼 호환성이 개선되었으며, 와이드 옵션은 없으나 표준 발볼이면 정사이즈 착용이 가능합니다. 289,000원 ÷ 400km = km당 약 722원이므로 레이스 전용으로 운용하세요. 접근성이 더 좋은 대안으로는 SC Elite V5, 더 공격적인 레이싱을 원하면 패스트알 나이트로 엘리트 3를 비교해보세요.',
   tags: ['레이싱', '카본 플레이트', 'NITROFOAM ELITE', '신규'],
 
   specs: {
@@ -122,5 +122,8 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
+  relatedPosts: [
+    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=푸마+데비에이트+니트로+엘리트+4' }],
 };

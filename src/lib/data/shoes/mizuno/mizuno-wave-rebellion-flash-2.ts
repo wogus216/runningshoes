@@ -92,5 +92,8 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~포어풋',
   },
   similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'nike-zoom-fly-6'],
+  relatedPosts: [
+    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GGC23bti' }],
 };

@@ -12,7 +12,7 @@ export const shoe: Shoe = {
   price: 299000,
   description: 'Adidas의 최상위 마라톤 레이싱화. Lightstrike Pro와 5개의 카본 Energy Rods로 최고의 추진력을 제공합니다. 알파플라이의 경쟁자.',
   oneliner: '5개 Energy Rods, 알파플라이보다 안정적인 서브-3 무기',
-  editorComment: '5개 카본 Energy Rods 2.0 구조는 Nike AlphaFly 3의 Air Pods보다 안정적인 추진력을 제공합니다. 200g 초경량에 37mm 힐 스택은 장거리에서도 충격을 흡수하며, 반발력 10/10으로 3분~4분30초/km 빠른 페이스를 자연스럽게 유도합니다. 29만원은 알파플라이(34만원)보다 5만원 저렴하지만, 200km 레이스 전용 내구성으로 km당 약 1,495원은 부담됩니다. 토박스가 narrow로 발볼 넓은 한국 러너에게는 치명적이며, 와이드 옵션 부재가 아쉽습니다.\n\n사이즈·구매 가이드: 토박스가 narrow 폭이고 와이드 옵션이 없어, 발볼 넓은 러너는 사실상 선택이 어렵습니다. 반드시 레이싱 전용 얇은 양말로 시착하세요. 정가 299,000원에 내구성 200km 기준 km당 약 1,495원이며, 안정성이 우선이라면 알파플라이 3, 더 넓은 토박스를 원하면 메타스피드 스카이+가 대안입니다.',
+  editorComment: '5개 카본 Energy Rods 2.0 구조는 Nike AlphaFly 3의 Air Pods보다 안정적인 추진력을 제공합니다. 200g 초경량에 37mm 힐 스택은 장거리에서도 충격을 흡수하며, 반발력 10/10으로 3분~4분30초/km 빠른 페이스를 자연스럽게 유도합니다. 29만원은 알파플라이(34만원)보다 5만원 저렴하지만, 200km 레이스 전용 내구성으로 km당 약 1,495원은 부담됩니다. 토박스가 narrow로 발볼 넓은 한국 러너에게는 치명적이며, 와이드 옵션 부재가 아쉽습니다. Lightstrike Pro가 TPEE 계열인 건 내구 관점의 강점입니다 — PEBA가 450km 마모 실험에서 에너지 리턴을 24.6% 잃은 것과 달리 TPEE·TPU 계열은 마모에 상대적으로 강하다는 게 소재 업계의 평가입니다.\n\n사이즈·구매 가이드: 토박스가 narrow 폭이고 와이드 옵션이 없어, 발볼 넓은 러너는 사실상 선택이 어렵습니다. 반드시 레이싱 전용 얇은 양말로 시착하세요. 정가 299,000원에 내구성 200km 기준 km당 약 1,495원이며, 안정성이 우선이라면 알파플라이 3, 더 넓은 토박스를 원하면 메타스피드 스카이+가 대안입니다.',
   tags: ['레이싱', '마라톤', '카본', '프리미엄'],
   specs: {
     weight: 200,
@@ -99,5 +99,8 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus'],
+  relatedPosts: [
+    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F4L8aJHj' }],
 };
