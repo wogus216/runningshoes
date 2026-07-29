@@ -2,6 +2,164 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_07: BlogPost[] = [
   {
+    id: 'mizuno-wave-rider-29-vs-30-comparison-2026',
+    slug: 'mizuno-wave-rider-29-vs-30-comparison-2026',
+    title: '미즈노 웨이브 라이더 29 vs 30 비교 | 30세대 대개편 — 그래도 29를 사야 하는 사람',
+    description:
+      '미즈노 웨이브 라이더 30이 한국 공식몰에 179,000원으로 올라왔습니다. 스택 +4~6mm, 질소 주입 슈퍼크리티컬 듀얼레이어 ENERZY NXT, 풀렝스 메시 Wave 플레이트 — 30세대 만에 가장 큰 개편입니다. 해외 평가는 BITR 전 항목 A Tier·RTR 9점대로 이례적으로 좋습니다. 그런데 토박스 실측 76.7mm가 검증된 29가 169,000원에 그대로 팔리고 있습니다. 누가 갈아타야 하고, 누가 29를 사야 하는지 정리했습니다.',
+    thumbnail: '/images/blog/mizuno-wave-rider-29-vs-30-comparison-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-29',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['웨이브 라이더 30', '웨이브 라이더 29', '미즈노', '데일리 러닝화', '세대 비교', 'ENERZY NXT'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>라이더 30은 시리즈 역대급 개편</strong>입니다 — 스택 42.5/34.5mm(힐 +4mm·전족 +6mm), 질소 주입 슈퍼크리티컬 층을 얹은 <strong>듀얼레이어 ENERZY NXT</strong>, 뒷굽에만 있던 플레이트를 <strong>풀렝스 메시 Wave 플레이트</strong>로 교체. 그런데 무게는 +9g(267g)에 그쳤습니다</li>
+    <li>해외 평가는 이례적입니다 — <strong>Believe in the Run이 Design·Value·Performance 전 항목 A Tier</strong>, Road Trail Run 테스터 5인이 9.04~9.70점. 한국 정가는 <strong>179,000원</strong>(29보다 +1만원)입니다</li>
+    <li>다만 <strong>RunRepeat 랩이 아직 없고 핏 평가가 리뷰어마다 정반대</strong>(BITR "좁다" vs RTR "하이볼륨")입니다. 토박스 <strong>76.7mm 실측이 검증된 29</strong>가 169,000원에 그대로 팔리는 지금, 발볼 넓은 러너의 답은 아직 29일 수 있습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>웨이브 라이더는 미즈노가 30세대까지 끌고 온 대표 데일리 라인입니다. 29까지는 "검증된 착화감, 폼은 한 세대 뒤"라는 평가가 따라다녔는데, 30에서 그 약점을 정면으로 손봤습니다. 미즈노 라인 전체 지도는 <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 러닝화 계급도</a>에서, 슈퍼트레이너 쪽 신형은 <a href="/blog/mizuno-neo-vista-3-review-2026">네오 비스타 3 후기</a>에서 다뤘습니다.</p>
+</div>
+
+<h2>스펙 비교 — 표기 기준부터 다릅니다</h2>
+<table>
+  <thead><tr><th>항목</th><th>라이더 29 <em>(실측)</em></th><th>라이더 30 <em>(공식)</em></th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>258g</td><td><strong>267g</strong> (+9g)</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>37.5 / 29.2mm</td><td><strong>42.5 / 34.5mm</strong></td></tr>
+    <tr><td>드롭</td><td>8.3mm</td><td>8mm (공식 표기는 29가 10mm → 30이 8mm)</td></tr>
+    <tr><td>미드솔</td><td>ENERZY NXT 단층</td><td><strong>듀얼레이어</strong> — 질소 주입 슈퍼크리티컬 NXT + EVA 베이스</td></tr>
+    <tr><td>플레이트</td><td>리어 플라스틱 Wave Plate</td><td><strong>풀렝스 폴리프로필렌 메시</strong> Wave Plate</td></tr>
+    <tr><td>어퍼</td><td>AIRmesh (통기 3/5)</td><td>엔지니어드 니트 (통기성 부족 지적 — BITR)</td></tr>
+    <tr><td>에너지 리턴</td><td>53.3% (힐 실측)</td><td>미게시 — 랩 대기</td></tr>
+    <tr><td>토박스</td><td><strong>76.7mm 실측</strong> (와이드급)</td><td>미게시 — 평가 상충</td></tr>
+    <tr><td>가격</td><td>169,000원</td><td>179,000원</td></tr>
+  </tbody>
+</table>
+<p><small>※ 29는 RunRepeat 랩 실측, 30은 미즈노 공식 발표 수치입니다. 같은 기준이 아니므로 1~2mm 차이는 오차 범위로 보세요. 29의 공식 스택 표기는 38.5/28.5mm였습니다.</small></p>
+
+<h2>무엇이 바뀌었나 — 사실상 다른 신발</h2>
+<p>세대 교체라기보다 재설계에 가깝습니다. 핵심은 세 가지입니다.</p>
+<p><strong>① 폼이 두 층이 됐습니다.</strong> 발에 닿는 위층은 질소를 주입한 슈퍼크리티컬 공정의 ENERZY NXT, 아래층은 더 단단한 ENERZY EVA 베이스입니다. 부드러움은 위에서, 플랫폼 안정은 아래에서 나눠 맡는 구조죠. 29의 단층 NXT는 에너지 리턴 실측 53.3%로 최신 폼 대비 약점이 뚜렷했는데, 30은 여기를 정조준했습니다. 슈퍼크리티컬 공정이 왜 중요한지는 <a href="/blog/running-shoe-midsole-foam-guide-2026">미드솔 폼 해설</a>에서 자세히 다뤘습니다.</p>
+<p><strong>② 플레이트가 풀렝스가 됐습니다.</strong> 29까지의 Wave 플레이트는 뒷굽에만 있는 플라스틱 조각이었습니다. 30은 앞까지 이어지는 폴리프로필렌 <strong>메시(그물망)</strong> 플레이트입니다. RTR 테스터의 표현이 정확합니다 — <em>"메시 기반 플레이트가 승자다: 지지, 유연성, 추진을 다 주면서 거칠지 않다."</em> 카본처럼 튕기는 게 아니라 발밑을 잡아주면서 굴려주는 쪽입니다. 플레이트 소재·형태별 차이는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a> 참고.</p>
+<p><strong>③ 플랫폼이 넓고 높아졌습니다.</strong> 스택 +4~6mm에 더해 바닥 폭이 힐 +5mm, 미드풋 +15mm, 전족 +5mm 넓어졌습니다. 미드풋 +15mm는 체감이 큰 수치로, 착지 순간의 흔들림을 잡는 쪽으로 작용합니다. Doctors of Running이 안정성에 B+를 주며 "뉴트럴치고 마일드한 안정성 니즈까지 커버"라고 평가한 배경입니다.</p>
+
+<h2>평가 — 점수는 만장일치, 핏은 정반대</h2>
+<p>주행 평가는 드물게 일치합니다. BITR <strong>전 항목 A Tier</strong>("힐부터 토오프까지 버터처럼 매끄럽다"), RTR 5인 <strong>9.04~9.70점</strong>("탄력 있고, 반응하고, 앞으로 구르고 싶어 한다"), DOR "데일리로 페이스업까지 소화". $150(한국 179,000원)라는 가격까지 감안하면 가치 평가도 후합니다.</p>
+<p>문제는 핏입니다. 같은 신발을 두고 <strong>정반대 서술</strong>이 나왔습니다.</p>
+<ul>
+  <li><strong>BITR</strong> — "토박스가 좁고 로우볼륨, 앞으로 갈수록 테이퍼" → 반 사이즈 업 권장</li>
+  <li><strong>DOR</strong> — "전족·미드풋 볼륨 넉넉, 정사이즈"</li>
+  <li><strong>RTR</strong> — 오히려 "미드풋 하이볼륨이라 볼 좁고 낮은 발엔 홀드가 약하다", 약간 길게 나온다는 지적</li>
+</ul>
+<p>리뷰어 발 모양에 따라 갈린 것으로 보이는데, 랩 실측(mm)이 없는 지금은 어느 쪽이 맞는지 판정할 수 없습니다. 확실한 건 하나 — <strong>29의 76.7mm는 실측으로 검증된 숫자</strong>라는 점입니다.</p>
+
+<h2>누가 30으로 가고, 누가 29를 사야 하나</h2>
+<p><strong>30이 맞는 사람</strong>: 라이더의 착화감은 좋은데 폼이 아쉬웠던 기존 팬, 20km+ 롱런에서 전족 쿠션이 더 필요했던 러너, 이지런부터 프로그레션까지 한 켤레로 해결하고 싶은 중급 러너. 사실상 슈퍼트레이너급 스택을 데일리 가격에 얻는 셈입니다.</p>
+<p><strong>29가 여전히 답인 사람</strong>: <strong>발볼 넓은 러너</strong>(76.7mm 실측 + 4E 와이드 옵션 검증 — 30은 미국 2E만 확인, 한국 와이드 미확인), 실측 데이터 없이는 신발을 안 사는 신중파, 그리고 1만원이라도 아끼고 싶은 가성비파. 29는 800km+ 내구 실측으로 km당 211원이라는 계산이 이미 끝난 신발입니다. 29의 상대 비교는 <a href="/blog/mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026">페가수스 42와의 같은 값 대결</a>에서 다뤘습니다.</p>
+<p>참고로 한국 공식몰의 30은 7월 말 현재 확인된 컬러가 <strong>품절(재입고 알림 신청)</strong> 상태였습니다. 초기 물량이 빠르게 소진되는 분위기라, 급하지 않다면 재입고와 랩 데이터 게시를 함께 기다리는 것도 방법입니다.</p>
+<p>두 신발의 상세 스펙은 <a href="/shoes/mizuno-wave-rider-29">라이더 29</a>·<a href="/shoes/mizuno-wave-rider-30">라이더 30</a> 페이지에서, 같은 가격대 대안은 <a href="/shoes/nike-pegasus-42">페가수스 42</a>·<a href="/shoes/asics-novablast-6">노바블라스트 6</a>과 비교해 보세요.</p>
+
+<div class="callout warning">
+  <p><strong>확정되지 않은 것들</strong> — ① 라이더 30의 <strong>RunRepeat 랩 데이터 미게시</strong>: 에너지 리턴·경도·토박스 실측·내구성 수치는 아직 없으며, 본문의 30 수치는 공식 발표 기준입니다 ② <strong>한국 와이드 옵션 미확인</strong>: 미국 2E SKU만 확인됐고 4E는 근거가 없습니다 ③ 핏 평가는 세 매체의 주관 착화 평가로 서로 상충합니다. 랩 게시 시 이 글과 신발 DB를 갱신합니다.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <h3>발볼이 넓은데 30 사도 되나요?</h3>
+  <p>온라인 선구매는 권하지 않습니다. 핏 평가가 리뷰어마다 정반대라 실측 없이는 판정 불가입니다. 시착이 가능하면 반 사이즈 업까지 신어보시고, 아니라면 76.7mm 실측과 4E 와이드가 검증된 29가 안전한 선택입니다.</p>
+  <h3>29는 이제 단종되나요?</h3>
+  <p>한국 공식몰에 29가 169,000원 현행 판매 중입니다. 통상 세대 교체 후에도 전 세대는 재고 소진까지 병행 판매되고, 할인이 붙으면 가성비가 더 좋아집니다. 급하지 않다면 29 할인을 노리는 것도 전략입니다.</p>
+  <h3>무릎이 약한데 어느 쪽이 낫나요?</h3>
+  <p>이론상으로는 스택이 4~6mm 높고 플랫폼이 넓어진 30이 착지 충격 분산에 유리합니다. 다만 30은 아직 실측 검증 전이라, 확실한 근거가 필요하면 SA 실측(힐 142)이 확인된 29도 충분히 좋은 선택입니다. 둘 다 무릎 부상 예방 등급은 '좋음'입니다.</p>
+  <h3>여름에 신어도 되나요?</h3>
+  <p>30의 니트 어퍼는 통기성 부족 지적(BITR)이 있습니다. 한여름 데일리가 주 용도라면 통기 실측이 확인된 다른 선택지를 권하고, 30은 봄가을·겨울 중심으로 쓰는 편이 낫습니다.</p>
+</div>
+
+<p><small>※ 라이더 30 스펙은 미즈노 공식 발표, 평가는 Believe in the Run(A Tier)·Road Trail Run 멀티 테스터 5인(2026-06)·Doctors of Running 리뷰를 종합했습니다. 라이더 29 수치는 RunRepeat 랩 실측 기준입니다. 한국 정가 179,000원은 미즈노코리아 공식몰(kor.mizuno.com) 확인(2026-07-29), 확인 컬러는 품절·재입고 알림 상태였습니다. 라이더 30의 랩 데이터는 미게시로, 게시 시 갱신합니다. (작성 2026-07-29)</small></p>
+`,
+  },
+  {
+    id: 'salomon-genesis-2-preview-2026',
+    slug: 'salomon-genesis-2-preview-2026',
+    title: '살로몬 제네시스 2 미리보기 | 8월 1일 글로벌 출시 — RTR 가치 점수 만점, 토박스가 넓어졌다',
+    description:
+      '살로몬의 데일리 트레일 트레이너 제네시스 2가 8월 1일 글로벌 발매됩니다($150, S/Lab판 $200). 첫 리뷰인 Road Trail Run이 9.5/10에 가치 항목 만점을 줬고, 전작의 아쉬움이던 토박스가 눈에 띄게 넓어졌습니다. 전작 제네시스 1은 한국 공식몰에서 248,000원에 판매 중 — 2의 한국 등록은 아직입니다. 펄사·울트라글라이드 4와 어디가 다른지, 발볼 관점에서 무엇이 좋아졌는지 정리했습니다.',
+    thumbnail: '/images/blog/salomon-genesis-2-preview-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-07-29',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['살로몬 제네시스 2', '살로몬', '트레일 러닝화', 'Matryx', '신상 러닝화', 'S/Lab'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>제네시스 2는 8월 1일 글로벌 발매</strong>($150·272g·스택 34/26mm·4mm 러그). 첫 리뷰인 Road Trail Run이 <strong>9.5/10, 가치 항목 10/10 만점</strong>을 주며 "어떤 지형이든 커버하는 원퀴버 트레일화"라고 평가했습니다</li>
+    <li>발볼 관점 신호가 좋습니다 — 전작 대비 <strong>토박스가 눈에 띄게 넓어졌다</strong>는 게 RTR이 꼽은 핵심 개선입니다(전작 실측 75.6mm도 준수한 편이었습니다). activeCHASSIS를 미드솔에 통합해 안정성도 강화됐습니다</li>
+    <li>한국 공식몰에는 <strong>전작 제네시스 1이 248,000원에 현행 판매 중</strong>이고, 제네시스 2는 아직 미등록입니다. 한국 정가·출시일이 나오면 이 글을 갱신합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p>제네시스는 살로몬의 <strong>데일리 트레일 트레이너</strong> 라인입니다 — 근교 산 스피드런의 <a href="/shoes/salomon-pulsar">펄사</a>, 장거리 쿠션의 <a href="/shoes/salomon-ultra-glide-4">울트라글라이드 4</a>, 엘리트 레이싱의 <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a> 사이에서 "매일 신는 만능 한 켤레"를 맡는 자리입니다. 살로몬 트레일 라인 정리는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에서 다뤘습니다.</p>
+</div>
+
+<h2>스펙 — 전작과 나란히 보기</h2>
+<table>
+  <thead><tr><th>항목</th><th>제네시스 1 <em>(실측)</em></th><th>제네시스 2 <em>(공식)</em></th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>282g</td><td>272g (공식) / RTR 샘플 실측은 US10 기준 312g</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>33.5 / 24.5mm</td><td>34 / 26mm</td></tr>
+    <tr><td>드롭</td><td>9.0mm (실측)</td><td>8mm (공식)</td></tr>
+    <tr><td>미드솔</td><td>optiFOAM</td><td>optiFOAM 신형 배합 + <strong>activeCHASSIS 통합</strong></td></tr>
+    <tr><td>어퍼</td><td>Matryx (통기 4/5)</td><td>Matryx 재작업 — <strong>토박스 확장</strong></td></tr>
+    <tr><td>아웃솔</td><td>All-Terrain Contagrip, 4mm 러그</td><td>동일 컴파운드, 러그를 더 넓고 간격 있게 재배치</td></tr>
+    <tr><td>에너지 리턴</td><td>55.6% (실측)</td><td>미게시</td></tr>
+    <tr><td>토박스</td><td>75.6mm (실측)</td><td>미게시 — "눈에 띄게 넓어짐" (RTR)</td></tr>
+    <tr><td>가격</td><td>한국 248,000원 (현행)</td><td>$150 · 한국 미정</td></tr>
+  </tbody>
+</table>
+<p><small>※ 제네시스 1은 RunRepeat 랩 실측(종합 92/100), 제네시스 2는 살로몬 공식 발표 기준입니다. 측정 기준이 달라 드롭 9.0→8mm를 "드롭이 낮아졌다"고 단정할 수는 없습니다.</small></p>
+
+<h2>무엇이 바뀌었나</h2>
+<p><strong>① 토박스가 넓어졌습니다.</strong> RTR 리뷰어 Jeff Valliere가 꼽은 첫 번째 변화입니다. 살로몬은 전통적으로 발을 감싸는 좁은 핏의 브랜드라 발볼 넓은 한국 러너에게 진입 장벽이 있었는데, 전작도 실측 75.6mm로 트레일화 중 준수했던 토박스를 한 번 더 넓혔습니다. 실측 mm는 랩 게시를 기다려야 하지만 방향 자체가 반갑습니다.</p>
+<p><strong>② activeCHASSIS가 미드솔과 한 몸이 됐습니다.</strong> 살로몬 고유의 지지 구조물인 activeCHASSIS를 외측은 접착 삽입, 내측은 몰드 일체형으로 미드솔에 통합했습니다. 험지에서 발목이 꺾이는 걸 플랫폼 차원에서 잡아주는 설계로, RTR은 "테크니컬 지형에서 오히려 이 신발을 집게 된다"고 썼습니다.</p>
+<p><strong>③ 러그 재배치.</strong> 4mm 러그 깊이는 유지하되 더 넓고 간격 있게 배치해 진흙 배출과 다양한 지형 대응을 노렸습니다. 대신 무게는 전작 대비 21g 늘었습니다 — 이번 개편의 유일한 후퇴입니다.</p>
+
+<h2>S/Lab 제네시스 2와의 차이</h2>
+<p>같은 날 나오는 <strong>S/Lab 제네시스 2($200)</strong>는 레이싱 특화판입니다. 케블라 코팅 Matryx Micro 어퍼 + 일체형 게이터, 듀얼덴시티 optiFOAM², 더 낮은 스택(31/25mm)·6mm 드롭·4.5mm 러그로 정밀한 산악 레이스에 맞춰져 있습니다. 해외 리뷰(Trail &amp; Kale)의 정리가 실용적입니다 — <em>"완만한 트레일이 주 무대라면 일반판이 같은 역할을 더 싸게 해준다."</em> 대회 출전이 아니라면 $50 프리미엄은 필수가 아닙니다.</p>
+
+<h2>한국은 언제?</h2>
+<p>살로몬코리아 공식몰(salomon.co.kr)에는 <strong>제네시스 1이 248,000원에 현행 판매 중</strong>이고, S/LAB 제네시스(278,000원)·GTX 파생판까지 제네시스 컬렉션이 통째로 들어와 있습니다. 라인 자체가 한국에 정착해 있다는 뜻이라, 2의 국내 등록 가능성은 구조적으로 열려 있습니다. 다만 7월 29일 현재 제네시스 2는 미등록이고 한국 출시일·정가 공식 정보도 없습니다 — 확정되면 이 글과 신발 DB를 갱신하겠습니다.</p>
+<p>가을 트레일 시즌이 머지않았습니다. 10월 초 <a href="/blog/2026-trans-jeju-utmb-registration">트랜스제주 by UTMB</a>(접수 7/31 마감)를 준비 중이라면, 현재 한국에서 바로 구할 수 있는 선택지는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지 3파전</a>에서 비교해 두세요.</p>
+
+<div class="callout warning">
+  <p><strong>확정되지 않은 것들</strong> — ① <strong>한국 출시일·정가 미발표</strong>(공식몰 미등록 확인, 2026-07-29) ② <strong>RunRepeat 랩 미게시</strong>: 제네시스 2의 에너지 리턴·토박스 실측·경도는 아직 없으며 본문 수치는 공식 발표와 RTR 리뷰 기준입니다 ③ 무게는 공식 272g과 RTR 샘플 실측(US10, 312g)의 차이가 커서 사이즈별 확인이 필요합니다. 이 때문에 신발 DB 등록은 한국 출시 확정 후로 보류합니다.</p>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <h3>펄사·울트라글라이드 4가 있는데 제네시스 2가 필요한가요?</h3>
+  <p>포지션이 다릅니다. 펄사는 가볍고 빠른 근교 산용, 울트라글라이드 4는 장거리 쿠션용입니다. 제네시스는 그 사이의 "매일 신는 만능"으로, 바위 많은 테크니컬 구간까지 한 켤레로 커버하려는 러너에게 맞습니다. RTR도 울트라글라이드 4와 비교해 "장거리 쿠션은 UG4, 테크니컬 지형은 제네시스 2"로 정리했습니다.</p>
+  <h3>발볼이 넓은데 살로몬 신어도 되나요?</h3>
+  <p>살로몬은 전반적으로 좁은 핏 브랜드지만 제네시스 라인은 예외에 가깝습니다. 전작 실측 75.6mm는 표준~와이드 경계였고, 2는 여기서 더 넓어졌다는 평가입니다. 다만 실측 게시 전이니 온라인 구매라면 전작 기준 반 사이즈 업을 고려하세요.</p>
+  <h3>트레일 입문자가 첫 신발로 사도 되나요?</h3>
+  <p>성격상 적합합니다. 다만 한국 미출시 상태라 지금 사려면 직구뿐인데, 트레일화는 핏 실패 리스크가 커서 입문자에게 직구를 권하지 않습니다. 국내에서 시착 가능한 선택지부터 보는 게 안전합니다.</p>
+  <h3>S/Lab판을 살 이유가 있나요?</h3>
+  <p>산악 레이스에 출전하고, 테크니컬 하강에서의 정밀한 발놀림에 $50을 더 낼 의향이 있다면요. 훈련 중심이라면 일반판으로 충분하다는 게 해외 리뷰의 공통 결론입니다.</p>
+</div>
+
+<p><small>※ 스펙·발매일은 살로몬 공식 발표(리뷰 매체 교차 인용) 기준, 평가는 Road Trail Run 리뷰(2026-07-25, 9.5/10)와 Trail &amp; Kale S/Lab 리뷰를 종합했습니다. 제네시스 1 수치는 RunRepeat 랩 실측(92/100), 한국 판매가는 살로몬코리아 공식몰 확인(2026-07-29) 기준입니다. 살로몬 공식 사이트(salomon.com)는 봇 차단으로 직접 확인이 불가해 공식 스펙은 복수 매체 교차로 검증했습니다. 한국 출시·랩 게시 시 갱신합니다. (작성 2026-07-29)</small></p>
+`,
+  },
+  {
     id: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
     slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026',
     title: '러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자',
@@ -1456,12 +1614,13 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'new-balance-sc-rebel-preview-2026',
     slug: 'new-balance-sc-rebel-preview-2026',
-    title: '뉴발란스 SC 레벨 미리보기 | 8/20 글로벌 출시 — 해외 리뷰 9.99/10 극찬, 그런데 발볼이 걸린다',
+    title: '뉴발란스 SC 레벨 미리보기 | 8월 글로벌 출시 — RTR 9.99/10에 BITR "역대 최고 NB"까지, 그런데 발볼이 걸린다',
     description:
-      '뉴발란스 SC 레벨(SuperComp Rebel)이 8월 20일 글로벌 발매됩니다($190·218g·40/36mm·드롭 4mm). 첫 해외 리뷰가 Road Trail Run 9.99/10이라는 이례적 점수를 냈고, SC 트레이너 v3를 사실상 대체하는 자리입니다. 다만 RTR·Doctors of Running 두 곳 모두 갑피가 좁다고 지적했고 와이드 옵션도 없습니다. 한국 정가는 미발표이며 런칭 캘린더에도 아직 없습니다 — 대회 패키지가 먼저 열립니다.',
+      '뉴발란스 SC 레벨(SuperComp Rebel)이 8월 글로벌 발매됩니다(218g·40/36mm·드롭 4mm). Road Trail Run 9.99/10에 이어 Believe in the Run도 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 평을 냈습니다. SC 트레이너 v3를 사실상 대체하는 자리입니다. 다만 RTR·Doctors of Running 두 곳이 갑피가 좁다고 지적했고 와이드 옵션도 미확인입니다. 한국 정가는 미발표이며 런칭 캘린더에도 아직 없습니다 — 대회 패키지가 먼저 열립니다.',
     thumbnail: '/images/blog/new-balance-sc-rebel-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-23',
+    updatedAt: '2026-07-29',
     category: 'review' as const,
     readingTime: 8,
     tags: ['뉴발란스 SC 레벨', 'SC Rebel', 'Infinion 폼', 'Energy Arc', '슈퍼 트레이너', '신상 러닝화'],
@@ -1469,8 +1628,8 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>SC 레벨은 8월 20일 글로벌 발매</strong>($190·218g·스택 40/36mm·드롭 4mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
-    <li>첫 해외 리뷰가 <strong>이례적으로 높습니다</strong> — Road Trail Run 멀티 테스터가 9.99/10, 9.5/10을 줬고, 포지션상 <strong><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>를 대체</strong>합니다(278g → 218g, 60g 경량화)</li>
+    <li><strong>SC 레벨은 8월 글로벌 발매</strong>($190~200·218g·스택 40/36mm·드롭 4mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
+    <li>해외 리뷰가 <strong>이례적으로 높습니다</strong> — Road Trail Run 멀티 테스터가 9.99/10, 9.5/10을 줬고, Believe in the Run은 <strong>"역대 최고의 뉴발란스 러닝화"</strong>라는 표현까지 썼습니다. 포지션상 <strong><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>를 대체</strong>합니다(278g → 218g, 60g 경량화)</li>
     <li>발목을 잡는 건 <strong>갑피 폭</strong>입니다. RTR·DOR <strong>두 곳 모두</strong> "좁다"고 지적했고 와이드 옵션도 없습니다. 발볼 넓은 한국 러너라면 시착 없이는 권하기 어렵습니다</li>
   </ul>
 </div>
@@ -1489,12 +1648,13 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>Infinion 폼 (반응성 강화 버전)</td></tr>
     <tr><td>플레이트</td><td>Energy Arc — <strong>폼에 묻히지 않고 지면 쪽에 배치</strong></td></tr>
     <tr><td>아웃솔</td><td>CPU(캐스트 폴리우레탄) — 러버보다 내구성 우위</td></tr>
-    <tr><td>가격 / 발매</td><td>$190 · 2026년 8월 20일 (글로벌)</td></tr>
+    <tr><td>가격 / 발매</td><td>$190(RTR)~$200(공식·BITR) · 2026년 8월 (일자는 소스별로 8/6·8/20이 갈려 확정 발표 대기)</td></tr>
   </tbody>
 </table>
 
 <h2>첫 리뷰 점수가 심상치 않습니다</h2>
 <p>Road Trail Run의 멀티 테스터 리뷰에서 Peter가 <strong>9.99/10</strong>, Sam이 <strong>9.5/10</strong>(주행 9.6·핏 9.4·가치 9.5)을 매겼습니다. 10점 만점에 9.99는 러닝화 리뷰에서 사실상 보기 힘든 숫자입니다. 테스터들이 공통적으로 짚은 건 <strong>"플레이트가 딱딱하게 튀지 않으면서 확실히 밀어준다"</strong>는 점이었습니다.</p>
+<p><em>(7/29 갱신)</em> 여기에 Believe in the Run 리뷰가 더해졌습니다. Tier는 <strong>Design A · Performance A · Value B</strong> — 그리고 리뷰어 Thomas가 던진 문장이 화제입니다. <em>"역대 최고의 뉴발란스 러닝화? 의문의 여지가 없다(Best New Balance running shoe of all time? No question)."</em> 워크아웃·이지런·롱런을 한 켤레로 다 해결하는 <strong>"원퀴버(one-quiver) 슈즈"</strong>라는 총평 맥락에서 나온 말입니다. BITR이 Value에만 B를 준 이유는 가격입니다 — 폼과 주행은 압도적인데 <strong>어퍼 메시가 $200 가격표 대비 저렴하게 느껴진다</strong>는 지적이었습니다. 비교 대상으로는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a> 같은 $200 슈퍼 트레이너급을 꼽았습니다.</p>
 <p>비결은 Energy Arc 플레이트의 위치로 보입니다. 보통 카본 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 <strong>플레이트를 지면 쪽에 깔고</strong> 뒤쪽은 미드풋을 잡아주는 역할, 앞쪽은 추진 역할로 나눴습니다. 덕분에 폼이 물러도 플랫폼이 무너지지 않는다는 게 테스터들의 설명입니다. RTR의 표현을 그대로 옮기면 <em>"빠른 페이스에서 그냥 웅웅거린다(HUMS)"</em> 정도가 되겠네요.</p>
 <p>Doctors of Running의 평가는 조금 더 차분합니다. <strong>템포와 긴 인터벌</strong>에서 가장 좋고, 짧고 폭발적인 스피드 훈련에는 덜 맞는다고 봤습니다. 미드풋에 살짝 튀어나온 부분이 있어 초반에는 전환이 어색하게 느껴질 수 있다는 지적도 있습니다. 다만 마일리지가 쌓일수록 폼이 부드러워지며 반발이 살아난다는 평이라, 첫 인상만으로 판단할 신발은 아닌 듯합니다.</p>
 
@@ -1518,6 +1678,7 @@ export const posts_2026_07: BlogPost[] = [
   <li>RTR — 단점 항목에 <strong>"갑피가 좁아 발볼 넓거나 발등 높은 발에는 부적합"</strong>을 명시</li>
   <li>DOR — <strong>"토박스가 좁아지는 형태(tapered)에 타이트한 핏"</strong>, 발등 볼륨이 큰 발은 피하라고 권고</li>
   <li>DOR은 <strong>깔창(오소틱) 사용자에게도 비추천</strong>합니다 — 갑피 볼륨이 부족해 깔창을 넣을 여유가 없다는 이유입니다</li>
+  <li><em>(7/29 갱신)</em> 다만 BITR은 <strong>"정사이즈, 락다운 안정적, 쓸림 없음"</strong>으로 폭 문제를 따로 지적하지 않았습니다 — 리뷰어 간 온도차가 있으니, 발볼이 넓다면 더더욱 시착이 답입니다</li>
 </ul>
 <p>비교 대상이 있습니다. 같은 뉴발란스 <a href="/blog/new-balance-sc-elite-v5-review">SC 엘리트 v5</a>는 토박스 실측 74.5mm로 <strong>"발볼 넓어도 신을 수 있는 드문 슈퍼슈즈"</strong>라는 평가를 받았고 와이드 옵션도 있습니다. DOR도 두 신발을 비교하며 <em>"엘리트 v5는 갑피가 대단히 편안한 반면 SC 레벨은 좁다"</em>고 했습니다. 같은 브랜드 안에서도 성격이 갈리는 셈이죠.</p>
 <p><strong>따라서 발볼이 넓다면 SC 레벨은 온라인 선구매 대상이 아닙니다.</strong> 발볼이 보통이거나 좁은 편이고 발등이 낮다면, 오히려 "딱 감기는 핏"이 장점이 될 수 있습니다. DOR이 <em>"엘리트 v6가 너무 공격적이라 느끼는 러너에게 좋을 수 있다 — 핏만 맞는다면"</em>이라고 단서를 단 이유입니다.</p>
@@ -1543,7 +1704,7 @@ export const posts_2026_07: BlogPost[] = [
   <p>현재 확인되지 않았습니다. SC 엘리트 v5와 SC 트레이너 v3는 국내에 와이드 옵션이 있었지만, SC 레벨은 아직 정보가 없습니다. 발볼이 넓다면 와이드 발매 여부가 확인될 때까지 기다리시길 권합니다.</p>
 </div>
 
-<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰와 Doctors of Running 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 한국 정가·출시일·와이드 옵션은 미발표 상태이며 뉴발란스코리아 런칭 캘린더 미등재를 확인했습니다(2026-07-23). RunRepeat 랩 데이터는 미게시로, 정량 수치가 나오면 갱신합니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23)</small></p>
+<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰, Doctors of Running 리뷰, Believe in the Run 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 가격은 RTR $190·공식/BITR $200으로 표기가 갈리고, 발매 일자도 소스별로 8/6·8/20이 갈려 "8월"로만 적습니다. 한국 정가·출시일·와이드 옵션은 미발표 상태이며 뉴발란스코리아 런칭 캘린더 미등재를 재확인했습니다(2026-07-29). RunRepeat 랩 데이터는 미게시로, 정량 수치가 나오면 갱신합니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23 · 갱신 2026-07-29 — BITR A Tier 평가 반영)</small></p>
 `,
   },
   {

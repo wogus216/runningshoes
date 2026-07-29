@@ -1331,6 +1331,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/2026-trans-jeju-utmb-registration.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-25',
+    updatedAt: '2026-07-29',
     category: 'news' as const,
     readingTime: 8,
     tags: ['트랜스제주', '트랜스제주 UTMB', 'UTMB', '제주 트레일', '트레일 러닝 대회', 'UTMB Index'],
@@ -1348,8 +1349,8 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⏳</span>
   <div class="callout-body">
-    <p class="callout-title">접수 마감 2026년 7월 31일(금) — 선착순</p>
-    <p>2026 트랜스제주 by UTMB는 <strong>2026-10-02(금)~10-04(일)</strong> 제주에서 열립니다. 접수는 2026-03-18 오픈돼 진행 중이며 <strong>7월 31일 선착순 마감</strong>입니다. 인기 종목은 마감 전 조기 소진될 수 있으니 출전 계획이 있다면 서두르세요. 신청·최신 정보는 공식 <a href="https://transjeju.utmb.world/" rel="noopener noreferrer">transjeju.utmb.world</a>에서 확인하세요.</p>
+    <p class="callout-title">접수 마감 D-2 — 7월 31일(금)까지, 전 종목 아직 접수 가능 (7/29 확인)</p>
+    <p>2026 트랜스제주 by UTMB는 <strong>2026-10-02(금)~10-04(일)</strong> 제주에서 열립니다. 접수 마감이 <strong>이틀 앞(7월 31일)</strong>으로 다가왔는데, 7월 29일 공식 사이트 기준 <strong>20K·60K·100K·100M 4개 종목 모두 아직 접수 가능</strong>(Registrations open) 상태입니다. 선착순 마감이고 취소 시 환불이 불가하니, 출전을 저울질하고 있었다면 지금이 결정할 때입니다. 신청·최신 정보는 공식 <a href="https://transjeju.utmb.world/" rel="noopener noreferrer">transjeju.utmb.world</a>에서 확인하세요.</p>
   </div>
 </div>
 
