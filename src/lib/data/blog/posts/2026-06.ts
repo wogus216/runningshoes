@@ -1850,7 +1850,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/asics-novablast-6-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-23',
-    updatedAt: '2026-07-08',
+    updatedAt: '2026-07-29',
     category: 'review' as const,
     readingTime: 7,
     tags: ['아식스 노바블라스트 6', '노바블라스트', 'FF Turbo Squared', '쿠션화', '데일리 트레이너', '신상 러닝화'],
@@ -1868,7 +1868,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">👀</span>
   <div class="callout-body">
     <p class="callout-title">7월 1일 출시 — 무엇을 미리 알아둘까</p>
-    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 2026년 7월 1일 글로벌 출시됐고, <strong>한국은 2026년 7월 9일(목) 오전 10시 출시 — 정가 179,000원 확정</strong>입니다(5의 169,000원 대비 +1만원). 상세 스펙은 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에 정리해 뒀습니다. 다만 RunRepeat 정량 랩(SA·에너지 리턴·토박스)은 아직 미게시 상태 — 아래 세부 수치는 <strong>아식스 공식 발표 변경점 + 노바블라스트 5 실측 기준 추정</strong>이며, 실측 게시 시 업데이트합니다.</p>
+    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 2026년 7월 1일 글로벌 출시됐고, <strong>한국은 2026년 7월 9일(목) 오전 10시 출시 — 정가 179,000원 확정</strong>입니다(5의 169,000원 대비 +1만원). 상세 스펙은 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에 정리해 뒀습니다. RunRepeat 정량 랩도 2026년 7월 말 게시됐습니다 — <strong>종합 93/100(Superb)</strong>, SA 힐 143/전족 130, 실측 스택 39.2/32.1mm·249g. 실측 반영 상세는 <a href="/shoes/asics-novablast-6">상세 페이지</a>와 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">5 vs 6 비교</a>에서 확인하세요(본문 아래 수치는 출시 전 프리뷰 시점 기준입니다).</p>
   </div>
 </div>
 

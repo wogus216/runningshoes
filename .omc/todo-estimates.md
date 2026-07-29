@@ -86,7 +86,7 @@
 
 ## 미처리
 
-- [~] **asics-novablast-6 DB 추가 완료 (2026-07-08, 커밋 예정) — 랩·이미지·와이드만 후속**
+- [x] **asics-novablast-6 랩 실측 교체 완료 (2026-07-29)** — RunRepeat 게시(종합 93/100) 확인 즉시 DB 실측 교체(무게 249g·스택 39.2/32.1·드롭 7.1·SA 143/130·ER 55.4%·토박스 71.0·통기 80·경화 +9%·마모 0.5mm), specs 쿠션 8→9·반발 8→7·내구 600→700, wideOptions true(무신사 유통 확인), winter excellent·summer good. 비교글 2편(페가42vs노바6·5vs6)+프리뷰 실측 갱신. 이미지도 기등록 확인. **잔여 후속 없음** (8/3 예약 루틴은 실행 시 중복 보고 가능 — 무해)
   - **2026-07-08 진행**: 한국 출시(7/9) 하루 전, 한국 정가 **179,000원** 확정(러닝위키+무신사+검색 3소스 교차확인, asics.co.kr은 출시 전이라 직접 확인 불가). → ① 신발 DB `asics-novablast-6` 추가(공식 스펙 확정 + 랩은 노바5 실측 추정 + 신상 면책, **image 없이 등록**) ② 프리뷰 글 확정가·출시일 갱신(`asics-novablast-6-preview-2026` updatedAt 7/8) ③ 노바5 vs 6 비교글 발행(`asics-novablast-5-vs-6-comparison-2026`) ④ 클프로 비교글 노바6 가격 정정. 노바5는 공존 유지(카야노32/33 선례), 5 참조 다수는 미변경.
   - **남은 후속 트리거**: ⓐ **RunRepeat 랩 게시**(현재 404) 시 `specs`(responsiveness/cushioning)·detailedSpecs 실측 반영, 프리뷰/비교글 caption 갱신 — 재확인 **2026-08~09** ⓑ **asics.co.kr 라이브(7/9)** 후 **와이드(2E) 여부** 확인 → `koreanFootFit.wideOptions`(현재 false 보수) 및 detailedSpecs·비교글 "와이드 출시 후 확인" 문구 갱신 ⓒ **공식 제품 이미지** 확보(ASICS Scene7 fmt=png-alpha) → `image`/`images` 추가 → `/best/daily` 매트릭스 편입(현재 이미지 없어 제외). [[shoe-official-image-sources]]
   - (구) **2026-06-23: 블로그 출시 전 미리보기 발행** (`asics-novablast-6-preview-2026`) — 7/1 글로벌 출시 선점 글. 2026-07-08 확정가로 갱신 완료.
