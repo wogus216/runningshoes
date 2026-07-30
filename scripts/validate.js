@@ -416,7 +416,7 @@ const REAL_PROPER = [
 
 // 전환이 끝나면 이 값을 0으로 내리고, 아래 report()를 error로 바꾼다.
 // 그때부터 새 허구 후기는 커밋 자체가 막힌다.
-const FICTION_MIGRATION_REMAINING = 174;
+const FICTION_MIGRATION_REMAINING = 155;
 
 let scanned = 0;
 const fictionHits = [];
