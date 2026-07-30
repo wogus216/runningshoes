@@ -7,6 +7,7 @@ import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { Scale, Layers, ArrowDownUp, Footprints, FlaskConical, ArrowUpRight, Sparkles, ShieldCheck, Gauge, Activity } from "lucide-react";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
+import { getShoeDurability } from "@/lib/durability";
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -23,13 +24,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     return 0;
   })[0];
 
-  // 내구성 범위 계산
-  const getDurabilityRange = () => {
-    const durability = shoe.specs?.durability || 500;
-    const min = Math.max(durability - 100, 300);
-    const max = durability;
-    return `${min}-${max}km`;
-  };
+  // 내구성은 단일 숫자가 아니라 근거 등급이 붙은 범위로 표기한다 (@/lib/durability)
+  const durability = getShoeDurability(shoe);
 
   const fitTone =
     koreanFootFit?.toBoxWidth === 'wide'
@@ -38,7 +34,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
       ? { label: '발볼 주의', value: '좁음', tone: 'text-orange-700 bg-orange-50 border-orange-200' }
       : { label: '기본 핏', value: '표준', tone: 'text-slate-700 bg-slate-100 border-slate-200' };
 
-  const summaryCards = [
+  const summaryCards: { icon: typeof Gauge; label: string; value: string; note?: string }[] = [
     {
       icon: Gauge,
       label: '무게',
@@ -57,7 +53,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     {
       icon: Activity,
       label: '수명',
-      value: getDurabilityRange(),
+      value: durability?.rangeLabel ?? '-',
+      note: durability ? `${durability.basisLabel} · ${durability.confidenceLabel}` : undefined,
     },
   ];
 
@@ -91,6 +88,9 @@ export function HeroSection({ shoe }: HeroSectionProps) {
                     </div>
                     <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-sky-700">{item.label}</p>
                     <p className="mt-1 text-lg font-black tracking-tight text-slate-950">{item.value}</p>
+                    {item.note && (
+                      <p className="mt-1 text-[10px] font-medium leading-tight text-tertiary">{item.note}</p>
+                    )}
                   </div>
                 );
               })}
@@ -183,7 +183,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
                 {shoe.priceAnalysis && (
                   <span className="inline-flex items-center gap-1 rounded-full border border-sky-100 bg-white/86 px-3 py-1 text-xs font-semibold text-slate-700">
                     <Scale className="h-3.5 w-3.5" />
-                    {getDurabilityRange()} · 약 ₩{shoe.priceAnalysis.costPerKm}/km
+                    {durability?.rangeLabel ?? '-'} · 약 ₩{shoe.priceAnalysis.costPerKm}/km
                   </span>
                 )}
                 {shoe.priceAnalysis?.valueRating && (

@@ -1,5 +1,6 @@
 import type { Shoe, KoreanFootFit } from '@/types/shoe';
 import { categoryOrder as sharedCategoryOrder } from '@/types/shoe';
+import { resolveDurabilityRange } from '@/lib/durability';
 import { nikeShoes } from './nike';
 import { adidasShoes } from './adidas';
 import { asicsShoes } from './asics';
@@ -142,13 +143,21 @@ export type CardShoe = Pick<Shoe,
   | 'image' | 'price' | 'tags' | 'oneliner'
   | 'specs' | 'biomechanics' | 'injuryPrevention' | 'koreanFootFit'
   | 'targetUsers' | 'priceAnalysis' | 'features'
->;
+> & {
+  /**
+   * 내구성 표시용 범위 [min, max]. detailedSpecs를 뺀 경량 타입이라
+   * 상세 페이지와 같은 범위를 쓰도록 빌드 시점에 미리 계산해 넣는다.
+   */
+  durabilityRange?: [number, number];
+};
 
 export function toCardShoe(shoe: Shoe): CardShoe {
   // 제외 필드 (클라이언트 번들 절감):
   // reviews, detailedSpecs, editorComment, purchaseLinks, similarShoes, images,
   // description, status (2026-07 소비처 전수 조사에서 사용 0회 확인)
+  const durability = resolveDurabilityRange(shoe.specs?.durability, shoe.detailedSpecs?.durability);
   return {
+    durabilityRange: durability ? [durability.min, durability.max] : undefined,
     id: shoe.id,
     slug: shoe.slug,
     brand: shoe.brand,

@@ -2,6 +2,7 @@
 
 import { useMemo } from 'react';
 import type { Shoe } from '@/types/shoe';
+import { getShoeDurability } from '@/lib/durability';
 
 type CompareRadarChartProps = {
   shoes: Shoe[];
@@ -46,8 +47,8 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
           return (shoe.priceAnalysis?.valueRating || 5) / 10;
         }
         if (metric.key === 'durability') {
-          // 내구성은 500km 기준으로 정규화
-          return Math.min((shoe.specs?.durability || 300) / 600, 1);
+          // 내구성은 추정 범위의 중앙값을 600km 기준으로 정규화
+          return Math.min((getShoeDurability(shoe)?.mid ?? 300) / 600, 1);
         }
         const value = shoe.specs?.[metric.key as keyof typeof shoe.specs];
         return typeof value === 'number' ? value / 10 : 0.5;
@@ -192,7 +193,7 @@ export function CompareRadarChart({ shoes }: CompareRadarChartProps) {
                   if (metric.key === 'value') {
                     displayValue = `${data.shoe.priceAnalysis?.valueRating || '-'}/10`;
                   } else if (metric.key === 'durability') {
-                    displayValue = `${data.shoe.specs?.durability || '-'}km`;
+                    displayValue = getShoeDurability(data.shoe)?.rangeLabel ?? '-';
                   } else {
                     const val = data.shoe.specs?.[metric.key as keyof typeof data.shoe.specs];
                     displayValue = typeof val === 'number' ? `${val}/10` : '-';

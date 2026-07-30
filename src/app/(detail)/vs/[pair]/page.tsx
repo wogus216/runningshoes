@@ -7,6 +7,7 @@ import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from
 import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
+import { getShoeDurability } from '@/lib/durability';
 
 type PageProps = { params: Promise<{ pair: string }> };
 
@@ -245,6 +246,11 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
   );
 }
 
+function durabilityLabel(shoe: Shoe): string {
+  const profile = getShoeDurability(shoe);
+  return profile ? `${profile.rangeLabel} (${profile.confidenceLabel})` : '-';
+}
+
 function specRows(a: Shoe, b: Shoe) {
   return [
     { label: '카테고리', a: a.category, b: b.category },
@@ -306,9 +312,9 @@ function specRows(a: Shoe, b: Shoe) {
       b: b.koreanFootFit?.flatFootCompatibility ?? '-',
     },
     {
-      label: '내구성',
-      a: a.specs?.durability ? `${a.specs.durability}km` : '-',
-      b: b.specs?.durability ? `${b.specs.durability}km` : '-',
+      label: '내구성 (아웃솔 기준 범위)',
+      a: durabilityLabel(a),
+      b: durabilityLabel(b),
     },
   ];
 }
