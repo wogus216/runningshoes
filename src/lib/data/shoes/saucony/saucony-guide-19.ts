@@ -63,7 +63,7 @@ export const shoe: Shoe = {
     costPerKm: 298,
     valueRating: 7,
     priceTier: 'mid',
-    alternatives: ['saucony-guide-18', 'asics-gel-kayano-32', 'adidas-supernova-solution-2'],
+    alternatives: ['saucony-guide-18', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
     valueAdvantages: [
       '실측 120mm 초광폭 플랫폼의 자연스러운 안정감',
       '전작 대비 크게 개선된 힐 충격흡수(124→144 SA)',
@@ -128,6 +128,6 @@ export const shoe: Shoe = {
     landingPattern: '힐~미드풋 스트라이크',
   },
 
-  similarShoes: ['saucony-guide-18', 'asics-gel-kayano-32', 'adidas-supernova-solution-2'],
+  similarShoes: ['saucony-guide-18', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+가이드+19' }],
 };
