@@ -6,12 +6,14 @@ type ReviewsSectionProps = {
 };
 
 function ReviewCard({ review }: { review: Review }) {
-  // 출처 있는 분석(에디터 분석·외부 리뷰 인용)만 점수를 표시한다.
+  // 출처가 있는 항목(에디터 분석·외부 리뷰 인용)만 배지를 진하게 준다.
   // 데이터 기반 적합성 분석에는 별점을 붙이지 않는다 — 실사용 경험이 없는 항목에
   // 별점이 붙으면 실제 구매 후기로 읽힌다.
-  const isSourced = /에디터|분석|리뷰어|Believe|Shihuo|RunRepeat|Doctors|Road Trail/i.test(review.userType);
-  const showScore = isSourced && typeof review.rating === 'number';
-  const score = showScore ? Math.min(100, Math.max(0, Math.round(review.rating as number))) : null;
+  const isSourced = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i.test(review.userType);
+  // 숫자 점수는 자체 채점 체계가 0~100으로 정의된 '에디터 분석'에만 표시한다.
+  // 외부 인용은 매체마다 척도가 달라(WeeViews 1~5 등) 숫자를 그대로 보여주면 오독된다.
+  const isEditorScore = /에디터/.test(review.userType) && typeof review.rating === 'number';
+  const score = isEditorScore ? Math.min(100, Math.max(0, Math.round(review.rating as number))) : null;
 
   return (
     <div className="rounded-[28px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">

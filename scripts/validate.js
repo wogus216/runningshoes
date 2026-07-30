@@ -416,14 +416,18 @@ const REAL_PROPER = [
 
 // 전환이 끝나면 이 값을 0으로 내리고, 아래 report()를 error로 바꾼다.
 // 그때부터 새 허구 후기는 커밋 자체가 막힌다.
-const FICTION_MIGRATION_REMAINING = 28;
+const FICTION_MIGRATION_REMAINING = 0;
 
 let scanned = 0;
 const fictionHits = [];
 const report = (msg) => fictionHits.push(msg);
 
-const reviewRe = /\{\s*userType:\s*'((?:[^'\\]|\\.)*)',\s*(?:rating:\s*(\d+),\s*)?text:\s*'((?:[^'\\]|\\.)*)'/g;
-const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|RunRepeat|Doctors|Road Trail/i;
+// rating은 소수점도 허용해서 잡는다 — \d+ 만 쓰면 `rating: 4.5` 가 통째로
+// 매칭에서 빠져 검사 자체를 우회한다(실제로 1건이 이렇게 누락됐음).
+const reviewRe = /\{\s*userType:\s*'((?:[^'\\]|\\.)*)',\s*(?:rating:\s*([\d.]+),\s*)?text:\s*'((?:[^'\\]|\\.)*)'/g;
+// 출처가 명시된 항목만 rating을 허용한다. 새 외부 매체를 인용하면 여기 추가할 것
+// (컴포넌트 쪽 isSourced 정규식과 동일하게 유지).
+const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i;
 
 for (const brand of brands) {
   const content = readBrandContent(brand);
