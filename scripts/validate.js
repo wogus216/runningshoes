@@ -393,6 +393,79 @@ if (!fs.existsSync(marathonDir)) {
 console.log('');
 
 // ===========================================
+// 7. 허구 후기 검증
+// ===========================================
+// 이 사이트는 실사용자 후기를 수집하지 않는다. reviews는 실측 데이터를 러너
+// 유형별로 해석한 "적합성 분석"이다. 그런데 과거 데이터에는 1인칭 구매 경험과
+// 실재 대회·코스명이 섞여 있었고(2026-07 감사에서 319건 발견), 검색 결과에는
+// "가상 시나리오" 고지 없이 후기 문장만 노출돼 신뢰를 깎았다.
+// 새 데이터가 같은 형태로 들어오는 것을 여기서 막는다.
+console.log('━━━ 7. 허구 후기 검증 ━━━');
+
+// 실제 경험을 주장하는 1인칭 종결·구매 표현
+const FIRST_PERSON = [
+  '구매했습니다', '샀습니다', '샀어요', '신고 있어요', '신고 있습니다',
+  '달려봤', '뛰어봤', '완주했습니다', '갱신했어요', '찍었습니다',
+  '느꼈어요', '좋았어요', '괜찮았어요', '없었어요', '있었어요',
+];
+// 실재 고유명사 — 허구 경험의 가장 위험한 형태
+const REAL_PROPER = [
+  'JTBC', '서울마라톤', '춘천마라톤', '동아마라톤', '경주벚꽃',
+  '한강공원', '올림픽공원', '월드컵공원', '양재천', '중랑천',
+];
+
+// 전환이 끝나면 이 값을 0으로 내리고, 아래 report()를 error로 바꾼다.
+// 그때부터 새 허구 후기는 커밋 자체가 막힌다.
+const FICTION_MIGRATION_REMAINING = 271;
+
+let scanned = 0;
+const fictionHits = [];
+const report = (msg) => fictionHits.push(msg);
+
+const reviewRe = /\{\s*userType:\s*'((?:[^'\\]|\\.)*)',\s*(?:rating:\s*(\d+),\s*)?text:\s*'((?:[^'\\]|\\.)*)'/g;
+const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|RunRepeat|Doctors|Road Trail/i;
+
+for (const brand of brands) {
+  const content = readBrandContent(brand);
+  let m;
+  while ((m = reviewRe.exec(content)) !== null) {
+    const [, userType, rating, text] = m;
+    scanned++;
+    if (SOURCED.test(userType)) continue;
+
+    const fp = FIRST_PERSON.filter((k) => text.includes(k));
+    const pr = REAL_PROPER.filter((k) => text.includes(k));
+
+    if (pr.length > 0) {
+      report(`[${brand}] "${userType}" 실재 고유명사: ${pr.join(', ')}`);
+    } else if (fp.length >= 2) {
+      report(`[${brand}] "${userType}" 1인칭 경험 서술: ${fp.slice(0, 2).join(', ')}`);
+    } else if (rating !== undefined) {
+      report(`[${brand}] "${userType}" 무출처 별점(rating: ${rating})`);
+    }
+  }
+}
+
+if (fictionHits.length === 0) {
+  ok(`리뷰 ${scanned}건 — 1인칭 허구 경험·무출처 별점 없음`);
+} else if (fictionHits.length > FICTION_MIGRATION_REMAINING) {
+  // 기준선보다 늘었다 = 새 허구 후기가 유입됐다. 이건 막는다.
+  error(
+    `허구 후기 ${fictionHits.length}건 — 기준선 ${FICTION_MIGRATION_REMAINING}건보다 ` +
+    `${fictionHits.length - FICTION_MIGRATION_REMAINING}건 증가. 새 리뷰는 ` +
+    `"러너 유형별 적합성 분석" 형식으로 작성하세요(1인칭·실재 대회명·별점 금지).`
+  );
+  fictionHits.slice(0, 5).forEach((h) => console.error(`     ${h}`));
+} else {
+  warn(
+    `허구 후기 전환 대기 ${fictionHits.length}건 (기준선 ${FICTION_MIGRATION_REMAINING}건 이하라 통과). ` +
+    `전환 완료 시 FICTION_MIGRATION_REMAINING을 0으로 내릴 것`
+  );
+  fictionHits.slice(0, 3).forEach((h) => console.warn(`     ${h}`));
+}
+console.log('');
+
+// ===========================================
 // 결과 요약
 // ===========================================
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
