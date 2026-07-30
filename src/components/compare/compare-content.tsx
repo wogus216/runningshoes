@@ -1,7 +1,7 @@
 'use client';
 
-import { useState, useMemo, useEffect, useCallback, Suspense, DragEvent } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useState, useMemo, useEffect, useCallback, DragEvent } from 'react';
+import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 import { Search, X, Check, Link2, GripVertical, Sparkles, Scale, ArrowRightLeft } from 'lucide-react';
 import type { CardShoe } from '@/lib/data/shoes';
@@ -11,28 +11,15 @@ import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { cn } from '@/lib/utils';
 import { img } from '@/lib/image';
 
+// Suspense 래퍼를 두지 않는다. useSearchParams()를 쓰던 시절엔 정적 export에서
+// 페이지가 클라이언트 렌더로 이탈해 스켈레톤만 프리렌더됐다(본문 609자).
+// URL은 window.location으로 직접 읽어 셸이 정적 HTML로 남게 한다.
 export function CompareContent() {
-  return (
-    <Suspense fallback={<ComparePageSkeleton />}>
-      <ComparePageContent />
-    </Suspense>
-  );
-}
-
-function ComparePageSkeleton() {
-  return (
-    <div className="min-h-screen">
-      <div className="mx-auto max-w-6xl px-4 py-6">
-        <div className="h-14 w-56 animate-pulse rounded-full bg-white/70" />
-        <div className="mt-6 h-56 animate-pulse rounded-[32px] bg-white/70" />
-      </div>
-    </div>
-  );
+  return <ComparePageContent />;
 }
 
 function ComparePageContent() {
   const router = useRouter();
-  const searchParams = useSearchParams();
   // 마운트 시 지연 로드 — CF 엣지 캐시라 수십 ms, 로드 전엔 빈 그리드가 잠깐 보인다
   const [allShoesProp, setAllShoesProp] = useState<CardShoe[]>([]);
   useEffect(() => {
@@ -53,7 +40,7 @@ function ComparePageContent() {
 
   // URL에서 신발 로드 (보안: slug 형식 검증)
   useEffect(() => {
-    const shoesParam = searchParams.get('shoes');
+    const shoesParam = new URLSearchParams(window.location.search).get('shoes');
     if (shoesParam) {
       const MAX_SLUGS = 4;
       const VALID_SLUG_PATTERN = /^[a-z0-9-]+$/;
@@ -70,7 +57,7 @@ function ComparePageContent() {
         setSelectedShoes(loadedShoes);
       }
     }
-  }, [searchParams, allShoes]);
+  }, [allShoes]);
 
   // URL 업데이트
   const updateUrl = useCallback((shoes: CardShoe[]) => {

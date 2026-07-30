@@ -15,8 +15,8 @@ function InjuryCard({ emoji, title, status }: InjuryCardProps) {
   const statusConfig = {
     excellent: { label: "우수", bgClass: "bg-sky-50 border-sky-200", textClass: "text-sky-700" },
     good: { label: "양호", bgClass: "bg-sky-50 border-sky-200", textClass: "text-sky-700" },
-    caution: { label: "양호", bgClass: "bg-amber-50 border-amber-200", textClass: "text-amber-700" },
-    warning: { label: "주의", bgClass: "bg-rose-50 border-rose-200", textClass: "text-rose-600" },
+    caution: { label: "주의", bgClass: "bg-amber-50 border-amber-200", textClass: "text-amber-700" },
+    warning: { label: "비권장", bgClass: "bg-rose-50 border-rose-200", textClass: "text-rose-600" },
   };
 
   const config = statusConfig[status];
@@ -61,6 +61,11 @@ export function InjuryPrevention({ injuryPrevention }: InjuryPreventionProps) {
           status={injuryPrevention.shinSplints}
         />
       </div>
+
+      <p className="text-xs leading-relaxed text-slate-500">
+        이 평가는 러닝화의 충격흡수·안정성·드롭·강성 데이터를 근거로 한 참고 정보이며, 통증의 진단이나 치료를 대신하지 않습니다.
+        기존 통증이나 부상 이력이 있다면 전문의 상담을 우선하세요.
+      </p>
     </section>
   );
 }
