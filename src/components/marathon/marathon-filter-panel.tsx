@@ -70,7 +70,7 @@ export function MarathonFilterPanel({
   resetFilters,
 }: MarathonFilterPanelProps) {
   return (
-    <div className="space-y-4 rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-4 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+    <div className="space-y-4 rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-4 backdrop-blur">
       <div>
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Race Filter</p>
         <h3 className="mt-2 text-xl font-black tracking-tight text-slate-950">대회 필터</h3>
@@ -83,7 +83,7 @@ export function MarathonFilterPanel({
           placeholder="대회명, 장소 검색..."
           value={filters.searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full rounded-lg border border-sky-100 bg-white py-2 pl-10 pr-4 text-sm text-primary placeholder:text-secondary/60 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+          className="w-full rounded-[4px] border border-sky-100 bg-white py-2 pl-10 pr-4 text-sm text-primary placeholder:text-secondary/60 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
         />
       </div>
 
@@ -91,7 +91,7 @@ export function MarathonFilterPanel({
         <select
           value={sortBy}
           onChange={(e) => setSortBy(e.target.value as MarathonSortOption)}
-          className="rounded-xl border border-sky-100 bg-white px-3 py-2 text-sm text-primary focus:border-sky-300 focus:outline-none"
+          className="rounded-[4px] border border-sky-100 bg-white px-3 py-2 text-sm text-primary focus:border-sky-300 focus:outline-none"
         >
           {Object.entries(marathonSortLabels).map(([value, label]) => (
             <option key={value} value={value}>

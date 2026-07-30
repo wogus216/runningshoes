@@ -22,9 +22,9 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
   }
 
   return (
-    <section className="rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(236,248,255,0.98),rgba(255,255,255,0.95))] p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.24)]">
+    <section className="rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(236,248,255,0.98),rgba(255,255,255,0.95))] p-6">
       <div className="flex items-center gap-3 mb-4">
-        <div className="rounded-xl bg-sky-50 p-2">
+        <div className="rounded-[4px] bg-sky-50 p-2">
           <Shield className="h-5 w-5 text-sky-700" />
         </div>
         <div>
@@ -45,7 +45,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
             <div
               key={injuryKey}
               className={cn(
-                "rounded-xl border overflow-hidden transition-all",
+                "rounded-[4px] border overflow-hidden transition-all",
                 isExpanded ? "border-sky-200 bg-white" : "border-border bg-surface"
               )}
             >
@@ -85,7 +85,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                           <Link
                             key={shoe.id || shoe.slug}
                             href={`/shoes/${shoe.slug}`}
-                            className="group flex items-center gap-3 rounded-xl bg-surface p-3 transition-colors hover:bg-sky-50/60"
+                            className="group flex items-center gap-3 rounded-[4px] bg-surface p-3 transition-colors hover:bg-sky-50/60"
                           >
                             <span className={cn(
                               "w-6 h-6 rounded-full flex items-center justify-center text-xs font-bold",
@@ -117,7 +117,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                         ))}
                       </div>
                     ) : (
-                      <p className="text-sm text-secondary p-3 bg-surface rounded-xl">
+                      <p className="text-sm text-secondary p-3 bg-surface rounded-[4px]">
                         해당 부상에 특화된 신발 데이터를 준비 중입니다.
                       </p>
                     )}

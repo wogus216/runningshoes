@@ -36,7 +36,7 @@ export function OnelinerSummary({ shoe }: OnelinerSummaryProps) {
   };
 
   return (
-    <section className="bg-primary text-white rounded-2xl p-5">
+    <section className="bg-primary text-white rounded p-5">
       <div className="flex items-start gap-3">
         <span className="text-xl">💡</span>
         <div>

@@ -22,12 +22,12 @@ function FitItem({ title, subtitle, status, statusColor }: FitItemProps) {
   };
 
   return (
-    <div className="flex items-center justify-between rounded-[22px] border border-stone-900/8 bg-white/80 p-4 shadow-[0_16px_30px_-28px_rgba(15,23,42,0.4)]">
+    <div className="flex items-center justify-between rounded border border-border bg-white p-4">
       <div>
         <p className="font-medium text-sm text-primary">{title}</p>
         <p className="text-xs text-tertiary">{subtitle}</p>
       </div>
-      <span className={cn("px-2.5 py-1 text-xs font-medium rounded-full", colorClasses[statusColor])}>
+      <span className={cn("px-2.5 py-1 text-xs font-medium rounded-[3px]", colorClasses[statusColor])}>
         {status}
       </span>
     </div>
@@ -81,7 +81,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
 
   return (
     <section className="space-y-6">
-      <div className="space-y-2">
+      <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
         <p className="text-sm leading-relaxed text-slate-600">{brand} {shoeName}가 발볼, 평발, 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
@@ -115,7 +115,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           />
         </div>
 
-        <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.24)]">
+        <div className="rounded border border-border bg-[var(--accent-soft)] p-5">
           <h4 className="mb-3 flex items-center gap-2 text-sm font-semibold text-primary">
             <span>ℹ️</span> 한국 러너 참고사항
           </h4>

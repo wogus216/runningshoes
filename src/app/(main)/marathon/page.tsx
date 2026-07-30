@@ -88,10 +88,8 @@ export default function MarathonPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <div className="space-y-6">
-        <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(240,248,255,0.94)_44%,rgba(233,245,255,0.92)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.28)] md:px-8 md:py-8">
+        <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-6 md:px-8 md:py-8">
           <div className="pointer-events-none absolute inset-0">
-            <div className="absolute -left-8 top-6 h-32 w-32 rounded-full bg-[rgba(14,165,233,0.16)] blur-3xl" />
-            <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.12)] blur-3xl" />
           </div>
 
           <div className="relative grid gap-6 lg:grid-cols-[1.12fr_0.88fr] lg:items-end">
@@ -119,11 +117,11 @@ export default function MarathonPage() {
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">
-              <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+              <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
                 <p className="text-sm font-semibold text-slate-950">일정 중심</p>
                 <p className="mt-2 text-xs leading-6 text-slate-600">접수 상태, 거리, 지역을 같이 걸러서 참가 가능성부터 빠르게 확인합니다.</p>
               </div>
-              <div className="rounded-[24px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white shadow-[0_22px_40px_-30px_rgba(8,18,38,0.62)]">
+              <div className="rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white">
                 <p className="text-sm font-semibold">탐색 속도</p>
                 <p className="mt-2 text-xs leading-6 text-white/65">필터와 카드의 밀도를 맞춰 훑어보는 속도를 올렸습니다.</p>
               </div>

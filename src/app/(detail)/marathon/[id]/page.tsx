@@ -342,7 +342,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             {event.distances.map((distance) => (
               <div
                 key={distance}
-                className={`rounded-lg border p-4 ${distanceColors[distance] || 'bg-gray-50 border-gray-200 text-gray-700'}`}
+                className={`rounded-[4px] border p-4 ${distanceColors[distance] || 'bg-gray-50 border-gray-200 text-gray-700'}`}
               >
                 <span className="text-lg font-bold">{distance}</span>
                 <p className="text-sm mt-1 opacity-80">{distanceDescriptions[distance]}</p>
@@ -369,19 +369,19 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
         <div className="section-card border border-[var(--accent-line)] bg-white/84 p-6">
           <h2 className="text-lg font-bold text-primary mb-4">대회 정보</h2>
           <dl className="grid gap-3 sm:grid-cols-2">
-            <div className="rounded-lg bg-surface p-3">
+            <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">지역</dt>
               <dd className="font-medium text-primary">{event.region}</dd>
             </div>
-            <div className="rounded-lg bg-surface p-3">
+            <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">개최 장소</dt>
               <dd className="font-medium text-primary">{event.location}</dd>
             </div>
-            <div className="rounded-lg bg-surface p-3">
+            <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">대회 일시</dt>
               <dd className="font-medium text-primary">{formatDate(event.date)}</dd>
             </div>
-            <div className="rounded-lg bg-surface p-3">
+            <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>
               <dd>
                 <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusStyles[event.status]}`}>
@@ -424,13 +424,13 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
 
               <dl className="grid gap-3 sm:grid-cols-2">
                 {event.courseInfo.elevationGain !== undefined && (
-                  <div className="rounded-lg bg-surface p-3">
+                  <div className="rounded-[4px] bg-surface p-3">
                     <dt className="text-xs text-secondary mb-1">총 고저차</dt>
                     <dd className="font-medium text-primary">{event.courseInfo.elevationGain}m</dd>
                   </div>
                 )}
                 {event.courseInfo.courseDescription && (
-                  <div className="rounded-lg bg-surface p-3 sm:col-span-2">
+                  <div className="rounded-[4px] bg-surface p-3 sm:col-span-2">
                     <dt className="text-xs text-secondary mb-1">코스 설명</dt>
                     <dd className="font-medium text-primary text-sm leading-relaxed">{event.courseInfo.courseDescription}</dd>
                   </div>
@@ -452,7 +452,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               {(event.raceInfo.startTime || event.raceInfo.expectedParticipants) && (
                 <div className="flex flex-wrap gap-4">
                   {event.raceInfo.startTime && (
-                    <div className="flex items-center gap-2 rounded-lg bg-surface px-4 py-2.5">
+                    <div className="flex items-center gap-2 rounded-[4px] bg-surface px-4 py-2.5">
                       <Clock className="h-4 w-4 text-sky-700" />
                       <div>
                         <span className="text-xs text-secondary">출발 시간</span>
@@ -461,7 +461,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                     </div>
                   )}
                   {event.raceInfo.expectedParticipants && (
-                    <div className="flex items-center gap-2 rounded-lg bg-surface px-4 py-2.5">
+                    <div className="flex items-center gap-2 rounded-[4px] bg-surface px-4 py-2.5">
                       <Users className="h-4 w-4 text-sky-700" />
                       <div>
                         <span className="text-xs text-secondary">예상 참가 규모</span>
@@ -470,7 +470,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                     </div>
                   )}
                   {event.raceInfo.aidStations && (
-                    <div className="flex items-center gap-2 rounded-lg bg-surface px-4 py-2.5">
+                    <div className="flex items-center gap-2 rounded-[4px] bg-surface px-4 py-2.5">
                       <Droplets className="h-4 w-4 text-sky-700" />
                       <div>
                         <span className="text-xs text-secondary">에이드 스테이션</span>
@@ -485,7 +485,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               {event.raceInfo.entryFees && event.raceInfo.entryFees.length > 0 && (
                 <div>
                   <h3 className="text-sm font-semibold text-secondary mb-2">참가비</h3>
-                  <div className="overflow-hidden rounded-lg border border-border">
+                  <div className="overflow-hidden rounded-[4px] border border-border">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="bg-surface">
@@ -510,7 +510,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               {event.raceInfo.timeLimits && event.raceInfo.timeLimits.length > 0 && (
                 <div>
                   <h3 className="text-sm font-semibold text-secondary mb-2">제한 시간</h3>
-                  <div className="overflow-hidden rounded-lg border border-border">
+                  <div className="overflow-hidden rounded-[4px] border border-border">
                     <table className="w-full text-sm">
                       <thead>
                         <tr className="bg-surface">
@@ -546,7 +546,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </h2>
             <dl className="grid gap-3">
               {event.logistics.publicTransport && (
-                <div className="flex items-start gap-3 rounded-lg bg-surface p-3">
+                <div className="flex items-start gap-3 rounded-[4px] bg-surface p-3">
                   <Bus className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                   <div>
                     <dt className="text-xs text-secondary mb-0.5">대중교통</dt>
@@ -555,7 +555,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 </div>
               )}
               {event.logistics.shuttle && (
-                <div className="flex items-start gap-3 rounded-lg bg-surface p-3">
+                <div className="flex items-start gap-3 rounded-[4px] bg-surface p-3">
                   <Bus className="mt-0.5 h-5 w-5 shrink-0 text-slate-700" />
                   <div>
                     <dt className="text-xs text-secondary mb-0.5">셔틀버스</dt>
@@ -564,7 +564,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 </div>
               )}
               {event.logistics.parking && (
-                <div className="flex items-start gap-3 rounded-lg bg-surface p-3">
+                <div className="flex items-start gap-3 rounded-[4px] bg-surface p-3">
                   <Car className="mt-0.5 h-5 w-5 shrink-0 text-slate-500" />
                   <div>
                     <dt className="text-xs text-secondary mb-0.5">주차</dt>
@@ -573,7 +573,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 </div>
               )}
               {event.logistics.bagStorage !== undefined && (
-                <div className="flex items-start gap-3 rounded-lg bg-surface p-3">
+                <div className="flex items-start gap-3 rounded-[4px] bg-surface p-3">
                   <Package className="mt-0.5 h-5 w-5 shrink-0 text-amber-600" />
                   <div>
                     <dt className="text-xs text-secondary mb-0.5">짐보관</dt>

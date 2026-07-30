@@ -35,13 +35,13 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
   const chipPrefix = view === "hierarchy" ? "category" : "brand";
 
   return (
-    <div className="flex flex-col gap-3 rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(240,248,255,0.96))] p-4 shadow-[0_24px_50px_-38px_rgba(8,18,38,0.18)] sm:gap-4 sm:rounded-[32px] sm:p-5">
+    <div className="flex flex-col gap-3 rounded-[4px] border border-[var(--accent-line)] bg-white p-4 sm:gap-4 sm:rounded-[4px] sm:p-5">
       <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700 sm:text-xs sm:tracking-[0.35em]">View Mode</p>
           <p className="text-sm font-bold text-slate-950 sm:text-base">어떤 기준으로 좁혀볼까요?</p>
         </div>
-        <div className="grid w-full grid-cols-1 gap-2 rounded-[24px] border border-sky-100 bg-white/85 p-1 sm:w-auto sm:grid-cols-2 sm:rounded-full">
+        <div className="grid w-full grid-cols-1 gap-2 rounded-[4px] border border-sky-100 bg-white/85 p-1 sm:w-auto sm:grid-cols-2 sm:rounded-full">
           {options.map((option) => {
             const isActive = view === option.value;
             return (
@@ -52,7 +52,7 @@ export function ViewToggle({ view, onChange, categories = [], brands = [] }: Vie
                 className={cn(
                   "group h-auto items-center justify-start gap-2 rounded-[18px] border-0 px-4 py-3 text-sm font-semibold tracking-tight transition-all duration-200 sm:justify-between sm:rounded-full sm:px-5 sm:py-4 sm:uppercase sm:tracking-[0.22em]",
                   isActive
-                    ? "bg-[var(--navy)] text-white shadow-[0_18px_30px_-20px_rgba(2,132,199,0.48)]"
+                    ? "bg-[var(--navy)] text-white"
                     : "bg-transparent text-slate-600 hover:bg-sky-50 hover:text-slate-950"
                 )}
                 onClick={() => onChange(option.value)}

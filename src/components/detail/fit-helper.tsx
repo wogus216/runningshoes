@@ -154,7 +154,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
 
   return (
     <section className="space-y-4">
-      <div>
+      <div className="border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Fit Helper</p>
         <h3 className="mt-2 text-xl font-black tracking-tight text-slate-950 flex items-center gap-2">
           <Ruler className="h-5 w-5 text-sky-700" />
@@ -165,11 +165,11 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
         </p>
       </div>
 
-      <div className="rounded-2xl border border-border bg-white p-5">
+      <div className="rounded border border-border bg-white p-5">
         <label className="block">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-semibold text-primary">내 발볼 너비</span>
-            <span className="text-2xl font-black text-sky-700">{width}mm</span>
+            <span className="font-mono text-2xl font-black tabular-nums text-sky-700">{width}mm</span>
           </div>
           <input
             type="range"
@@ -188,7 +188,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
         </label>
 
         <div className="mt-3 flex items-center gap-2 text-xs text-tertiary">
-          <span className="rounded-full bg-surface px-2 py-1 font-semibold">
+          <span className="rounded-[3px] bg-surface px-2 py-1 font-semibold">
             내 발볼: {footClass === 'narrow' ? '좁음' : footClass === 'standard' ? '표준' : '넓음'}
           </span>
           <span>·</span>
@@ -204,7 +204,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
         </div>
       </div>
 
-      <div className={`rounded-2xl border ${tone.border} ${tone.bg} p-5`}>
+      <div className={`rounded border ${tone.border} ${tone.bg} p-5`}>
         <div className="flex items-start gap-3">
           <div className="shrink-0 mt-0.5">{tone.icon}</div>
           <div className="space-y-2">

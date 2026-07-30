@@ -230,7 +230,7 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
     <div className="flex-1 text-center space-y-3">
       <div className="text-xs font-semibold text-accent uppercase tracking-wide">{label}</div>
       {shoe.image && (
-        <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-lg">
+        <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-[4px]">
           <Image src={img(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
         </Link>
       )}
@@ -408,7 +408,7 @@ export default async function ComparePairPage({ params }: PageProps) {
             const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';
             const winnerColor = v.winnerSlug === 'tie' ? 'text-tertiary' : 'text-accent';
             return (
-              <li key={i} className="flex items-start justify-between gap-4 p-3 bg-white border border-border rounded-lg">
+              <li key={i} className="flex items-start justify-between gap-4 p-3 bg-white border border-border rounded-[4px]">
                 <div>
                   <div className="font-semibold text-primary">{v.label}</div>
                   <div className="text-xs text-tertiary mt-0.5">{v.reason}</div>
@@ -451,7 +451,7 @@ export default async function ComparePairPage({ params }: PageProps) {
           <h2 className="text-xl font-semibold text-primary">자주 묻는 질문</h2>
           <div className="space-y-2">
             {faqs.map((f, i) => (
-              <details key={i} className="group bg-white border border-border rounded-lg p-4">
+              <details key={i} className="group bg-white border border-border rounded-[4px] p-4">
                 <summary className="font-semibold text-primary cursor-pointer list-none flex justify-between items-center gap-3">
                   <span>{f.question}</span>
                   <ChevronRight className="w-4 h-4 shrink-0 transition group-open:rotate-90" />
@@ -464,11 +464,11 @@ export default async function ComparePairPage({ params }: PageProps) {
       )}
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <Link href={`/shoes/${a.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
+        <Link href={`/shoes/${a.slug}`} className="block p-4 bg-surface rounded-[4px] hover:bg-white transition border border-border">
           <div className="text-xs text-tertiary uppercase">상세 보기</div>
           <div className="font-semibold text-primary">{a.brand} {a.name} →</div>
         </Link>
-        <Link href={`/shoes/${b.slug}`} className="block p-4 bg-surface rounded-lg hover:bg-white transition border border-border">
+        <Link href={`/shoes/${b.slug}`} className="block p-4 bg-surface rounded-[4px] hover:bg-white transition border border-border">
           <div className="text-xs text-tertiary uppercase">상세 보기</div>
           <div className="font-semibold text-primary">{b.brand} {b.name} →</div>
         </Link>
@@ -484,7 +484,7 @@ export default async function ComparePairPage({ params }: PageProps) {
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
                 {relatedPairs.map((p) => (
                   <li key={p.slug}>
-                    <Link href={`/vs/${p.slug}`} className="block p-3 bg-surface rounded-lg hover:bg-white transition border border-border text-sm text-primary">
+                    <Link href={`/vs/${p.slug}`} className="block p-3 bg-surface rounded-[4px] hover:bg-white transition border border-border text-sm text-primary">
                       {p.a.name} vs {p.b.name} →
                     </Link>
                   </li>

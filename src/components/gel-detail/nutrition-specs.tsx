@@ -30,7 +30,7 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
         {specs.map((spec, index) => (
           <div
             key={index}
-            className={`flex items-center justify-between rounded-xl p-3 ${
+            className={`flex items-center justify-between rounded-[4px] p-3 ${
               spec.highlight ? 'border border-sky-200 bg-sky-50' : 'border border-stone-900/6 bg-[rgba(248,250,252,0.86)]'
             }`}
           >

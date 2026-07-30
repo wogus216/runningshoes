@@ -81,7 +81,7 @@ export default function BrandsIndexPage() {
           <li key={brand.id}>
             <Link
               href={`/brands/${brand.id}`}
-              className="group block h-full p-5 bg-white border border-border rounded-lg hover:border-accent hover:shadow-sm transition"
+              className="group block h-full p-5 bg-white border border-border rounded-[4px] hover:border-accent transition"
             >
               <div className="flex items-start justify-between gap-3">
                 <div>
@@ -109,7 +109,7 @@ export default function BrandsIndexPage() {
         ))}
       </ul>
 
-      <section className="bg-surface rounded-lg p-6">
+      <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">
           브랜드보다 본인 발에 맞는 신발이 먼저
         </h2>

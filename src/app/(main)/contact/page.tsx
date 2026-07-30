@@ -20,7 +20,7 @@ export default function ContactPage() {
         {/* 이메일 문의 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-teal-100 dark:bg-teal-900">
+            <div className="p-3 rounded-[4px] bg-teal-100 dark:bg-teal-900">
               <Mail className="w-6 h-6 text-teal-600 dark:text-teal-400" />
             </div>
             <div>
@@ -39,7 +39,7 @@ export default function ContactPage() {
         {/* 문의 유형 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-amber-100 dark:bg-amber-900">
+            <div className="p-3 rounded-[4px] bg-amber-100 dark:bg-amber-900">
               <MessageSquare className="w-6 h-6 text-amber-600 dark:text-amber-400" />
             </div>
             <div>
@@ -81,7 +81,7 @@ export default function ContactPage() {
         {/* 유의사항 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+            <div className="p-3 rounded-[4px] bg-gray-100 dark:bg-gray-800">
               <AlertCircle className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <div>

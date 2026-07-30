@@ -87,10 +87,10 @@ export default function GelsPage() {
                 <Link
                   key={gel.slug}
                   href={`/gels/${gel.slug}`}
-                  className="section-card p-4 hover:shadow-lg transition group"
+                  className="section-card p-4 transition group"
                 >
                   {/* 이미지 */}
-                  <div className="aspect-square bg-surface rounded-lg mb-3 flex items-center justify-center overflow-hidden">
+                  <div className="aspect-square bg-surface rounded-[4px] mb-3 flex items-center justify-center overflow-hidden">
                     {gel.image ? (
                       <Image
                         src={img(gel.image)}

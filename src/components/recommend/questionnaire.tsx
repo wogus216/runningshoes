@@ -193,7 +193,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className="mb-6 rounded-[28px] border border-stone-900/10 bg-white/82 p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.45)] backdrop-blur">
+      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-white/82 p-6 backdrop-blur">
         <div className="flex items-center justify-between mb-3">
           <span className="text-sm font-medium text-primary">
             {currentStep + 1} / {questions.length}
@@ -221,7 +221,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         </div>
       </div>
 
-      <div className="mb-6 rounded-[28px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(239,246,255,0.88))] p-6 shadow-[0_22px_45px_-38px_rgba(15,23,42,0.45)]">
+      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(239,246,255,0.88))] p-6">
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Question {currentStep + 1}</p>
         <h2 className="mb-2 text-2xl font-black tracking-tight text-primary">
           {currentQuestion.title}
@@ -240,7 +240,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               key={option.value}
               onClick={() => handleSelect(option.value)}
               className={cn(
-                "w-full rounded-[24px] border p-4 text-left transition-all shadow-[0_16px_32px_-30px_rgba(15,23,42,0.35)]",
+                "w-full rounded-[4px] border p-4 text-left transition-all",
                 isSelected
                   ? "border-sky-300 bg-sky-50/70"
                   : "border-stone-900/10 bg-white hover:-translate-y-0.5 hover:border-sky-200"
@@ -273,7 +273,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
       {/* 이전 선택 요약 */}
       {currentStep > 0 && (
-        <div className="mb-6 rounded-[24px] border border-stone-900/10 bg-white/70 p-4 shadow-[0_16px_32px_-30px_rgba(15,23,42,0.35)]">
+        <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-white/70 p-4">
           <p className="mb-2 text-xs font-semibold uppercase tracking-wider text-tertiary">이전 선택</p>
           <div className="flex flex-wrap gap-2">
             {questions.slice(0, currentStep).map((q, idx) => {

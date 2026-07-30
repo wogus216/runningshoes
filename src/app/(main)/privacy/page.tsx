@@ -129,7 +129,7 @@ export default function PrivacyPage() {
           <p className="leading-relaxed mb-3">
             개인정보 처리에 관한 문의사항은 아래 연락처로 문의해 주시기 바랍니다.
           </p>
-          <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-4">
+          <div className="bg-gray-50 dark:bg-gray-800 rounded-[4px] p-4">
             <p><strong className="text-primary">개인정보 보호책임자</strong></p>
             <p className="mt-2">이메일: <a href="mailto:sanchokwon216@gmail.com" className="text-accent hover:underline">sanchokwon216@gmail.com</a></p>
           </div>

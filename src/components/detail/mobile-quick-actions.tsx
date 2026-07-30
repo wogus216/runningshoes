@@ -33,15 +33,15 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
 
   return (
     <div className="fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+4rem)] z-40 md:hidden">
-      <div className="mx-auto flex max-w-5xl items-center justify-between rounded-[28px] border border-stone-900/10 bg-white/94 px-4 py-3 shadow-[0_26px_50px_-28px_rgba(15,23,42,0.55)] backdrop-blur-xl">
+      <div className="mx-auto flex max-w-5xl items-center justify-between border-2 border-primary bg-white px-4 py-3">
         <div className="min-w-0 pr-3">
-          <p className="font-bold text-primary">₩{shoe.price?.toLocaleString()}</p>
+          <p className="font-mono font-bold tabular-nums text-primary">₩{shoe.price?.toLocaleString()}</p>
           <p className="truncate text-xs text-tertiary">{shoe.name}</p>
         </div>
         <div className="flex flex-shrink-0 items-center gap-2">
           <Link
             href={`/compare?shoes=${shoe.slug}`}
-            className="rounded-full border border-stone-900/10 px-4 py-2.5 text-sm font-medium text-primary transition hover:bg-surface"
+            className="rounded border border-stone-900/10 px-4 py-2.5 text-sm font-medium text-primary transition hover:bg-surface"
           >
             + 비교함
           </Link>
@@ -50,7 +50,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
               href={primaryLink.url}
               target="_blank"
               rel="noopener noreferrer nofollow"
-              className="flex items-center gap-1.5 rounded-full bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
+              className="flex items-center gap-1.5 rounded bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
             >
               구매처 보기
               <ExternalLink className="h-3.5 w-3.5" />
@@ -58,7 +58,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
           ) : (
             <button
               disabled
-              className="px-5 py-2.5 bg-gray-300 text-gray-500 rounded-full text-sm font-medium cursor-not-allowed"
+              className="px-5 py-2.5 bg-gray-300 text-gray-500 rounded text-sm font-medium cursor-not-allowed"
             >
               준비중
             </button>

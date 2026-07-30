@@ -48,7 +48,7 @@ export function MarathonContent({ events }: MarathonContentProps) {
       <div className="lg:hidden">
         <button
           onClick={() => setShowFilters(!showFilters)}
-          className="flex w-full items-center justify-center gap-2 rounded-[22px] border border-[var(--accent-line)] bg-white/84 px-4 py-3 text-sm font-medium text-primary shadow-[0_16px_32px_-30px_rgba(8,18,38,0.16)] transition hover:bg-white"
+          className="flex w-full items-center justify-center gap-2 rounded-[22px] border border-[var(--accent-line)] bg-white/84 px-4 py-3 text-sm font-medium text-primary transition hover:bg-white"
         >
           {showFilters ? (
             <>
@@ -90,7 +90,7 @@ export function MarathonContent({ events }: MarathonContentProps) {
 
         <div className="flex-1 min-w-0">
           {filteredEvents.length === 0 ? (
-            <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-8 text-center shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+            <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-8 text-center backdrop-blur">
               <p className="text-secondary mb-2">조건에 맞는 대회가 없습니다</p>
               <button
                 onClick={resetFilters}

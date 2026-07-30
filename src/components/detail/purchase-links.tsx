@@ -78,7 +78,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
 
   return (
     <section className="space-y-5">
-      <div className="space-y-2">
+      <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
         <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">
           <ExternalLink className="h-6 w-6 text-stone-600" />
@@ -97,28 +97,28 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
           href={cheapestLink.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="group block rounded-[28px] border border-emerald-200 bg-gradient-to-br from-emerald-50 via-white to-sky-50 p-5 shadow-[0_20px_40px_-28px_rgba(16,185,129,0.35)] transition hover:-translate-y-0.5 hover:shadow-[0_24px_48px_-28px_rgba(16,185,129,0.45)] md:p-6"
+          className="group block rounded border border-emerald-200 bg-white p-5 transition md:p-6"
         >
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 rounded-full bg-emerald-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+              <div className="inline-flex items-center gap-1.5 rounded-[3px] bg-emerald-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
                 <Sparkles className="h-3 w-3" />
                 최저가
               </div>
               <p className="mt-3 text-xs uppercase tracking-wide text-emerald-700 font-semibold">
                 {cheapestLink.store} {cheapestLink.isOfficial ? '공식몰' : ''}
               </p>
-              <p className="mt-1 text-3xl md:text-4xl font-black text-slate-950">
+              <p className="mt-1 font-mono text-3xl font-black tabular-nums text-slate-950 md:text-4xl">
                 {lowestPrice.toLocaleString()}<span className="text-xl">원</span>
               </p>
               {savings > 0 && (
                 <p className="mt-1 flex items-center gap-1 text-sm text-emerald-700 font-semibold">
                   <TrendingDown className="h-4 w-4" />
-                  정가 대비 {savings.toLocaleString()}원 ({savingsPct}%) 절약
+                  정가 대비 <span className="font-mono tabular-nums">{savings.toLocaleString()}원 ({savingsPct}%)</span> 절약
                 </p>
               )}
             </div>
-            <div className="inline-flex items-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-bold text-white transition group-hover:bg-slate-800">
+            <div className="inline-flex items-center gap-2 rounded bg-slate-950 px-5 py-3 text-sm font-bold text-white transition group-hover:bg-slate-800">
               {cheapestLink.store}에서 구매
               <ExternalLink className="h-4 w-4" />
             </div>
@@ -135,7 +135,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
-                className="group flex items-center justify-between gap-3 rounded-[20px] border border-border bg-white p-4 transition hover:-translate-y-0.5 hover:border-slate-300 hover:shadow-[0_18px_36px_-28px_rgba(15,23,42,0.45)] sm:p-5"
+                className="group flex items-center justify-between gap-3 rounded border border-border bg-white p-4 transition hover:border-slate-300 sm:p-5"
               >
                 <div className="flex items-center gap-3 min-w-0">
                   <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${style.bg}`}>
@@ -145,18 +145,18 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                     <p className="flex items-center gap-1.5 font-bold text-slate-950">
                       <span className={style.text}>{link.store}</span>
                       {link.isOfficial && (
-                        <span className="inline-flex items-center gap-1 rounded-full bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700">
+                        <span className="inline-flex items-center gap-1 rounded-[3px] bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700">
                           <ShieldCheck className="h-3 w-3" />
                           공식
                         </span>
                       )}
                     </p>
-                    <p className="text-xs text-tertiary">
+                    <p className="font-mono text-xs tabular-nums text-tertiary">
                       {link.price ? `${link.price.toLocaleString()}원` : '스토어에서 구매하기'}
                     </p>
                   </div>
                 </div>
-                <span className="inline-flex shrink-0 items-center gap-1.5 rounded-full bg-slate-950 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-slate-800">
+                <span className="inline-flex shrink-0 items-center gap-1.5 rounded bg-slate-950 px-4 py-2 text-sm font-bold text-white transition group-hover:bg-slate-800">
                   구매
                   <ExternalLink className="h-4 w-4" />
                 </span>
@@ -169,7 +169,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
       <AffiliateDisclosure purchaseLinks={purchaseLinks} />
 
       {hasComparison && (
-        <div className="overflow-hidden rounded-[24px] border border-border bg-white">
+        <div className="overflow-hidden rounded border border-border bg-white">
           <div className="hidden sm:grid grid-cols-[1fr_auto_auto] gap-4 bg-surface px-5 py-3 text-xs font-semibold uppercase tracking-wider text-tertiary">
             <div>스토어</div>
             <div className="text-right">가격</div>
@@ -192,20 +192,20 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                     <div className="flex items-center gap-2 min-w-0">
                       <span className={`font-bold ${style.text}`}>{link.store}</span>
                       {link.isOfficial && (
-                        <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-full font-semibold">
+                        <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-[3px] font-semibold">
                           <ShieldCheck className="h-3 w-3" />
                           공식
                         </span>
                       )}
                       {isCheapest && (
-                        <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-full font-semibold">
+                        <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-[3px] font-semibold">
                           최저가
                         </span>
                       )}
                     </div>
                     <div className="text-right">
                       {link.price ? (
-                        <span className={`font-bold ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
+                        <span className={`font-mono font-bold tabular-nums ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
                           {link.price.toLocaleString()}원
                         </span>
                       ) : (
@@ -223,7 +223,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
         </div>
       )}
 
-      <div className="rounded-[20px] border border-stone-900/10 bg-surface/60 p-4 text-xs text-slate-600">
+      <div className="rounded border border-border bg-surface/60 p-4 text-xs text-slate-600">
         <p className="mb-2 font-semibold text-slate-700">구매 전 확인</p>
         <ul className="space-y-1">
           <li>- 가격은 수시로 변동됩니다. 실제 판매가는 각 스토어에서 확인하세요.</li>

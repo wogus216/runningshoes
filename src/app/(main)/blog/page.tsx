@@ -23,10 +23,8 @@ export default function BlogPage() {
 
   return (
     <div className="space-y-8">
-      <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(242,248,255,0.94)_44%,rgba(233,245,255,0.92)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.28)] md:px-8 md:py-8">
+      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-6 md:px-8 md:py-8">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-6 top-4 h-28 w-28 rounded-full bg-[rgba(14,165,233,0.14)] blur-3xl" />
-          <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.1)] blur-3xl" />
         </div>
 
         <div className="relative grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-end">
@@ -54,11 +52,11 @@ export default function BlogPage() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-2">
-            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <p className="text-sm font-semibold text-slate-950">선택 가이드</p>
               <p className="mt-2 text-xs leading-6 text-slate-600">입문자부터 서브3까지, 지금 필요한 내용부터 빠르게 읽게 구성했습니다.</p>
             </div>
-            <div className="rounded-[24px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white shadow-[0_22px_40px_-30px_rgba(8,18,38,0.62)]">
+            <div className="relative overflow-hidden rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white before:absolute before:inset-x-0 before:top-0 before:h-1.5 before:bg-[repeating-linear-gradient(90deg,var(--accent)_0px,var(--accent)_18px,transparent_18px,transparent_26px)] before:content-['']">
               <p className="text-sm font-semibold">읽기 중심</p>
               <p className="mt-2 text-xs leading-6 text-white/65">카드도 더 가볍고 빠르게 훑을 수 있게 밀도를 다시 잡았습니다.</p>
             </div>
@@ -70,7 +68,7 @@ export default function BlogPage() {
 
       {/* 전체 글 아카이브 — 크롤러/탐색용 경량 링크 목록 (카드로 렌더하지 않아 HTML 비용 최소) */}
       {archivePosts.length > 0 && (
-        <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/82 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)]">
+        <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/82 p-6">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Archive</p>
           <h2 className="mt-2 text-lg font-bold text-slate-950">전체 글 목록</h2>
           <ul className="mt-4 grid gap-x-8 gap-y-2 sm:grid-cols-2">

@@ -27,7 +27,7 @@ function ReviewCard({ review }: { review: Review }) {
   const isSourced = /에디터|분석|리뷰어|Believe|Shihuo|RunRepeat|Doctors|Road Trail/i.test(review.userType);
 
   return (
-    <div className="rounded-[28px] border border-stone-900/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(248,248,246,0.92))] p-5 shadow-[0_16px_34px_-32px_rgba(15,23,42,0.45)]">
+    <div className="rounded border border-border bg-white p-5">
       <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
         <div className="flex items-center gap-2">
           <div className="text-yellow-500 text-xl">
@@ -35,11 +35,11 @@ function ReviewCard({ review }: { review: Review }) {
             {"☆".repeat(5 - displayRating)}
           </div>
           {isExpertReview && (
-            <span className="text-sm font-bold text-[#e11d48]">{review.rating}/100</span>
+            <span className="font-mono text-sm font-bold tabular-nums text-[#e11d48]">{review.rating}/100</span>
           )}
         </div>
         <span
-          className={`${userTypeColors[review.userType] || "bg-gray-500"} rounded-full px-3 py-1.5 text-sm font-semibold text-white`}
+          className={`${userTypeColors[review.userType] || "bg-gray-500"} rounded-[3px] px-3 py-1.5 text-sm font-semibold text-white`}
         >
           {review.userType}
         </span>
@@ -57,7 +57,7 @@ function ReviewCard({ review }: { review: Review }) {
 export function ReviewsSection({ reviews }: ReviewsSectionProps) {
   return (
     <section className="space-y-6">
-      <div className="space-y-2">
+      <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Review Notes</p>
         <h2 className="flex items-center gap-3 text-3xl font-black tracking-tight text-slate-950">
           <MessageSquareText className="h-7 w-7 text-stone-700" />

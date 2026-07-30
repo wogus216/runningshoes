@@ -85,7 +85,7 @@ export default function VsHubPage() {
                 <li key={p.slug}>
                   <Link
                     href={`/vs/${p.slug}`}
-                    className="block p-3 bg-white border border-border rounded-lg hover:border-accent hover:shadow-sm transition"
+                    className="block p-3 bg-white border border-border rounded-[4px] hover:border-accent transition"
                   >
                     <div className="text-sm font-semibold text-primary">
                       {p.a.brand} {p.a.name}

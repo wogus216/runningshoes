@@ -124,7 +124,7 @@ export default async function BestPage({ params }: PageProps) {
           {shoes.map((shoe, idx) => (
             <li
               key={shoe.slug}
-              className="flex gap-4 p-4 bg-white rounded-lg border border-border hover:border-accent transition"
+              className="flex gap-4 p-4 bg-white rounded-[4px] border border-border hover:border-accent transition"
             >
               <div className="flex-shrink-0 w-12 text-center">
                 <div className="text-2xl font-bold text-accent">#{idx + 1}</div>
@@ -247,7 +247,7 @@ export default async function BestPage({ params }: PageProps) {
             {entry.faq.map((f, i) => (
               <details
                 key={i}
-                className="bg-white border border-border rounded-lg p-4"
+                className="bg-white border border-border rounded-[4px] p-4"
               >
                 <summary className="font-semibold text-primary cursor-pointer">
                   Q. {f.q}
@@ -267,7 +267,7 @@ export default async function BestPage({ params }: PageProps) {
               <li key={p.slug}>
                 <Link
                   href={`/vs/${p.slug}`}
-                  className="block px-4 py-3 bg-white border border-border hover:border-accent rounded-lg transition"
+                  className="block px-4 py-3 bg-white border border-border hover:border-accent rounded-[4px] transition"
                 >
                   <div className="text-sm font-semibold text-primary">
                     {p.a.brand} {p.a.name}
@@ -281,7 +281,7 @@ export default async function BestPage({ params }: PageProps) {
         </section>
       )}
 
-      <section className="bg-surface rounded-lg p-6">
+      <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">더 정확한 추천을 받고 싶다면</h2>
         <p className="text-sm text-secondary mb-3">
           본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.

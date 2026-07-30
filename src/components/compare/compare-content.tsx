@@ -24,7 +24,7 @@ function ComparePageSkeleton() {
     <div className="min-h-screen">
       <div className="mx-auto max-w-6xl px-4 py-6">
         <div className="h-14 w-56 animate-pulse rounded-full bg-white/70" />
-        <div className="mt-6 h-56 animate-pulse rounded-[32px] bg-white/70" />
+        <div className="mt-6 h-56 animate-pulse rounded-[4px] bg-white/70" />
       </div>
     </div>
   );
@@ -174,10 +174,8 @@ function ComparePageContent() {
 
   return (
     <div className="space-y-5">
-      <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(240,248,255,0.94)_46%,rgba(228,244,255,0.92)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.28)] md:px-8 md:py-8">
+      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-6 md:px-8 md:py-8">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-8 top-4 h-32 w-32 rounded-full bg-[rgba(14,165,233,0.16)] blur-3xl" />
-          <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.12)] blur-3xl" />
         </div>
 
         <div className="relative grid gap-6 lg:grid-cols-[1.1fr_0.9fr] lg:items-end">
@@ -206,17 +204,17 @@ function ComparePageContent() {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3">
-            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-accent" />
               <p className="mt-4 text-sm font-semibold text-slate-950">추천 조합</p>
               <p className="mt-1 text-xs leading-6 text-slate-600">비어 있는 슬롯은 바로 추가 가능한 후보를 먼저 보여줍니다.</p>
             </div>
-            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Scale className="h-5 w-5 text-sky-700" />
               <p className="mt-4 text-sm font-semibold text-slate-950">빠른 판단</p>
               <p className="mt-1 text-xs leading-6 text-slate-600">모바일에서도 핵심 스펙과 부상/핏 정보를 바로 비교합니다.</p>
             </div>
-            <div className="rounded-[24px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white shadow-[0_22px_40px_-30px_rgba(8,18,38,0.62)]">
+            <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowRightLeft className="h-5 w-5 text-white" />
               <p className="mt-4 text-sm font-semibold">공유 가능</p>
               <p className="mt-1 text-xs leading-6 text-white/65">선택한 비교 조합을 URL로 복사해 그대로 공유할 수 있습니다.</p>
@@ -225,7 +223,7 @@ function ComparePageContent() {
         </div>
       </section>
 
-      <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+      <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
         <div className="mb-4 flex items-center justify-between">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Selection Dock</p>
@@ -263,7 +261,7 @@ function ComparePageContent() {
           {selectedShoes.map((shoe) => (
             <div
               key={shoe.id || shoe.slug}
-              className="group relative rounded-[24px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.94))] p-4 shadow-[0_18px_36px_-34px_rgba(8,18,38,0.16)]"
+              className="group relative rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.94))] p-4"
             >
               <button
                 onClick={() => {
@@ -274,7 +272,7 @@ function ComparePageContent() {
               >
                 <X className="h-3 w-3" />
               </button>
-              <div className="mb-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-2xl bg-white">
+              <div className="mb-3 flex h-14 w-14 items-center justify-center overflow-hidden rounded-[4px] bg-white">
                 {shoe.image ? (
                   <Image src={img(shoe.image)} alt={shoe.name} width={56} height={56} className="object-contain" />
                 ) : (
@@ -302,7 +300,7 @@ function ComparePageContent() {
                 onDragLeave={handleDragLeave}
                 onDrop={(e) => handleDrop(e, slotIndex)}
                 className={cn(
-                  "flex min-h-[132px] cursor-pointer flex-col items-center justify-center rounded-[24px] border-2 border-dashed p-4 text-center transition-all",
+                  "flex min-h-[132px] cursor-pointer flex-col items-center justify-center rounded-[4px] border-2 border-dashed p-4 text-center transition-all",
                   isOver
                     ? "scale-105 border-sky-300 bg-sky-50"
                     : "border-sky-100 bg-white/70 hover:border-sky-300 hover:bg-sky-50"
@@ -313,7 +311,7 @@ function ComparePageContent() {
                     <span className="text-sm font-medium text-accent">여기에 놓기</span>
                 ) : suggestedShoe ? (
                   <>
-                    <div className="w-10 h-10 bg-white rounded-lg mb-1 flex items-center justify-center overflow-hidden opacity-60">
+                    <div className="w-10 h-10 bg-white rounded-[4px] mb-1 flex items-center justify-center overflow-hidden opacity-60">
                       {suggestedShoe.image ? (
                         <Image src={img(suggestedShoe.image)} alt={suggestedShoe.name} width={40} height={40} className="object-contain" />
                       ) : (
@@ -336,7 +334,7 @@ function ComparePageContent() {
         </div>
       </section>
 
-      <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+      <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
         <div className="flex items-center justify-between mb-4">
           <div>
             <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Add Shoes</p>
@@ -382,7 +380,7 @@ function ComparePageContent() {
                       isSelected
                         ? "border-sky-300 bg-sky-50 cursor-default"
                         : canAdd
-                        ? "border-sky-100 bg-white hover:-translate-y-0.5 hover:border-sky-300 hover:shadow-[0_16px_30px_-24px_rgba(8,18,38,0.16)]"
+                        ? "border-sky-100 bg-white hover:-translate-y-0.5 hover:border-sky-300"
                         : "border-stone-900/10 bg-surface opacity-50 cursor-not-allowed"
                     )}
                   >
@@ -393,7 +391,7 @@ function ComparePageContent() {
                           <GripVertical className="w-4 h-4" />
                         </div>
                       )}
-                      <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center overflow-hidden flex-shrink-0">
+                      <div className="w-10 h-10 bg-white rounded-[4px] flex items-center justify-center overflow-hidden flex-shrink-0">
                         {shoe.image ? (
                           <Image src={img(shoe.image)} alt={shoe.name} width={40} height={40} className="object-contain" />
                         ) : (
@@ -421,7 +419,7 @@ function ComparePageContent() {
       {/* 비교 결과 */}
       {selectedShoes.length >= 2 && (
         <>
-          <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+          <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
             <div className="mb-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Radar View</p>
               <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">스펙 비교 차트</h2>
@@ -429,7 +427,7 @@ function ComparePageContent() {
             <CompareRadarChart shoes={selectedShoes} />
           </section>
 
-          <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-5 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur md:p-6">
+          <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-5 backdrop-blur md:p-6">
             <div className="mb-6">
               <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Detail Rows</p>
               <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">상세 비교</h2>

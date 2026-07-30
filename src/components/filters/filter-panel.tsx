@@ -58,7 +58,7 @@ function MobileBottomSheet({
       />
 
       {/* 하단 시트 */}
-      <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] overflow-hidden rounded-t-[28px] border-t border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.99),rgba(240,248,255,0.98))] shadow-2xl animate-slide-up">
+      <div className="absolute bottom-0 left-0 right-0 max-h-[85vh] overflow-hidden rounded-t-[28px] border-t border-[var(--accent-line)] bg-white animate-slide-up">
         {/* 핸들 */}
         <div className="flex justify-center py-3">
           <div className="h-1.5 w-12 rounded-full bg-slate-300" />
@@ -279,19 +279,19 @@ export function FilterPanel({
   };
 
   return (
-    <div className="rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(240,248,255,0.94))] backdrop-blur-2xl shadow-[0_20px_45px_-40px_rgba(8,18,38,0.2)]">
+    <div className="rounded-[4px] border border-[var(--accent-line)] bg-white backdrop-blur-2xl">
       {/* 빠른 필터 프리셋 */}
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-2 mb-3">
-          <Sparkles className="h-4 w-4 text-sky-700" />
-          <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">빠른 필터</span>
+          <Sparkles className="h-4 w-4 text-accent" />
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">빠른 필터</span>
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
           {filterPresets.map((preset) => (
             <button
               key={preset.id}
               onClick={() => applyPreset(preset)}
-              className="group relative whitespace-nowrap rounded-full border border-sky-100 bg-white/82 px-4 py-2 text-sm font-medium text-slate-700 transition-all hover:border-sky-300 hover:bg-sky-50 hover:text-slate-950 flex-shrink-0"
+              className="group relative whitespace-nowrap rounded-[4px] border border-border bg-background px-4 py-2 text-sm font-medium text-primary transition-colors hover:border-primary hover:bg-[var(--accent-soft)] flex-shrink-0"
               title={preset.description}
             >
               {preset.label}
@@ -426,15 +426,15 @@ export function FilterPanel({
           {/* 빠른 필터 프리셋 (모바일 시트 내) */}
           <div>
             <div className="flex items-center gap-2 mb-3">
-              <Sparkles className="h-4 w-4 text-sky-700" />
-              <span className="text-xs font-semibold uppercase tracking-[0.2em] text-sky-700">빠른 필터</span>
+              <Sparkles className="h-4 w-4 text-accent" />
+              <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">빠른 필터</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {filterPresets.map((preset) => (
                 <button
                   key={preset.id}
                   onClick={() => applyPreset(preset)}
-                  className="min-h-[44px] rounded-full border border-sky-100 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition-all hover:border-sky-300 hover:bg-sky-50 hover:text-slate-950"
+                  className="min-h-[44px] rounded-[4px] border border-border bg-background px-4 py-2.5 text-sm font-medium text-primary transition-colors hover:border-primary hover:bg-[var(--accent-soft)]"
                 >
                   {preset.label}
                 </button>

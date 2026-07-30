@@ -55,7 +55,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
   return (
     <div className="space-y-4">
       {/* 탭 네비게이션 */}
-      <div className="sticky top-14 z-40 overflow-hidden rounded-[28px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] shadow-[0_22px_44px_-36px_rgba(8,18,38,0.52)] backdrop-blur-xl">
+      <div className="sticky top-14 z-40 overflow-hidden rounded-[4px] border border-sky-950/20 bg-[rgba(8,18,38,0.92)] backdrop-blur-xl">
         <div className="mb-2 px-4 pt-3">
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-sky-100/45">Gel Panel</p>
         </div>
@@ -122,7 +122,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
 
             {/* 가격 정보 */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-              <div className="rounded-xl bg-sky-50 p-4">
+              <div className="rounded-[4px] bg-sky-50 p-4">
                 <div className="flex items-center gap-2 mb-2">
                   <DollarSign className="w-4 h-4 text-sky-700" />
                   <h3 className="text-sm font-bold text-primary">개당 가격</h3>
@@ -133,7 +133,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
               </div>
 
               {gel.priceAnalysis.bulkPrice && (
-                <div className="rounded-xl bg-sky-50 p-4">
+                <div className="rounded-[4px] bg-sky-50 p-4">
                   <div className="flex items-center gap-2 mb-2">
                     <TrendingDown className="w-4 h-4 text-sky-700" />
                     <h3 className="text-sm font-bold text-primary">묶음 구매</h3>
@@ -147,14 +147,14 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                 </div>
               )}
 
-              <div className="rounded-xl bg-sky-50 p-4">
+              <div className="rounded-[4px] bg-sky-50 p-4">
                 <h3 className="text-sm font-bold text-primary mb-2">풀마라톤 1회 비용</h3>
                 <p className="text-xl font-bold text-primary">
                   ₩{gel.priceAnalysis.marathonCost.toLocaleString()}
                 </p>
               </div>
 
-              <div className="rounded-xl bg-sky-50 p-4">
+              <div className="rounded-[4px] bg-sky-50 p-4">
                 <h3 className="text-sm font-bold text-primary mb-2">가격대</h3>
                 <p className="text-sm text-secondary capitalize">
                   {gel.priceAnalysis.priceTier === 'budget' && '예산형'}
@@ -167,7 +167,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
             </div>
 
             {/* 양갱 비교 */}
-            <div className="mb-5 rounded-xl border border-sky-200 bg-sky-50 p-4">
+            <div className="mb-5 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
               <h3 className="mb-2 text-sm font-bold text-sky-700">양갱 대비 가성비</h3>
               <p className="text-sm text-secondary leading-relaxed">
                 {gel.priceAnalysis.yangGangComparison}
@@ -210,7 +210,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     <Link
                       key={index}
                       href={`/gels/${alt}` as Route}
-                      className="rounded-lg border border-sky-100 bg-sky-50 px-3 py-1.5 text-sm text-secondary transition hover:border-sky-200 hover:bg-sky-100 hover:text-sky-700"
+                      className="rounded-[4px] border border-sky-100 bg-sky-50 px-3 py-1.5 text-sm text-secondary transition hover:border-sky-200 hover:bg-sky-100 hover:text-sky-700"
                     >
                       {alt}
                     </Link>
@@ -228,7 +228,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
             {gel.reviews && gel.reviews.length > 0 ? (
               <div className="space-y-4">
                 {gel.reviews.map((review, index) => (
-                  <div key={index} className="rounded-xl border border-sky-100 bg-sky-50 p-4">
+                  <div key={index} className="rounded-[4px] border border-sky-100 bg-sky-50 p-4">
                     <div className="flex items-start justify-between mb-3">
                       <div>
                         <p className="text-sm font-medium text-primary mb-1">
@@ -265,7 +265,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
               >
                 {/* 이미지 */}
                 {similarGel.image ? (
-                  <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                  <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
                     <Image
                       src={img(similarGel.image)}
                       alt={`${similarGel.brand} ${similarGel.name}`}
@@ -275,7 +275,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     />
                   </div>
                 ) : (
-                  <div className="mb-3 flex aspect-square items-center justify-center rounded-lg bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                  <div className="mb-3 flex aspect-square items-center justify-center rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
                     <span className="text-4xl opacity-20">⚡</span>
                   </div>
                 )}

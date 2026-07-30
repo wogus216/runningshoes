@@ -60,12 +60,12 @@ export function SpecRadarChart({ specs, priceValueRating = 7, shoeName }: SpecRa
 
   return (
     <section className="space-y-6">
-      <h2 className="text-3xl font-black flex items-center gap-4">
+      <h2 className="flex items-center gap-4 border-b-2 border-primary pb-3 text-3xl font-black">
         <BarChart3 className="h-8 w-8 text-stone-700" />
         성능 한눈에 보기
       </h2>
 
-      <div className="bg-white rounded-2xl p-4 md:p-8 shadow-md">
+      <div className="border border-border bg-white rounded p-4 md:p-8">
         <div className="h-[280px] md:h-[400px]">
           <ResponsiveContainer width="100%" height="100%">
             <RadarChart data={data} outerRadius="65%">

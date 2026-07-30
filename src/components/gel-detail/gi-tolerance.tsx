@@ -62,7 +62,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
       <h2 className="font-bold mb-4 md:mb-5 text-primary">위장 안정성</h2>
 
       {/* GI 등급 표시 */}
-      <div className={cn("rounded-xl p-5 mb-5 border", level.bg, level.border)}>
+      <div className={cn("rounded-[4px] p-5 mb-5 border", level.bg, level.border)}>
         <div className="flex items-center gap-3 mb-2">
           <span className="text-3xl">{level.emoji}</span>
           <div>
@@ -73,7 +73,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
       </div>
 
       {/* 물 섭취 요구사항 */}
-      <div className="mb-4 rounded-xl border border-sky-100 bg-white/82 p-4">
+      <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
         <div className="flex items-center gap-2 mb-2">
           <Droplets className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">물 섭취 요구사항</h3>
@@ -92,7 +92,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
 
       {/* 위험 요소 */}
       {gi.riskFactors.length > 0 && (
-        <div className="mb-4 rounded-xl border border-amber-200 bg-amber-50 p-4">
+        <div className="mb-4 rounded-[4px] border border-amber-200 bg-amber-50 p-4">
           <div className="flex items-center gap-2 mb-3">
             <AlertTriangle className="w-4 h-4 text-amber-700" />
             <h3 className="text-sm font-bold text-amber-700">주의 사항</h3>
@@ -110,7 +110,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
 
       {/* 장 훈련 필요 여부 */}
       {gi.gutTrainingNeeded && (
-        <div className="mb-4 rounded-xl border border-sky-200 bg-sky-50 p-4">
+        <div className="mb-4 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
           <div className="flex items-center gap-2 mb-2">
             <Trophy className="w-4 h-4 text-sky-700" />
             <h3 className="text-sm font-bold text-sky-700">장 훈련 필요</h3>
@@ -122,7 +122,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
       )}
 
       {/* 커뮤니티 피드백 */}
-      <div className="rounded-xl border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
+      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
         <div className="flex items-center gap-2 mb-2">
           <Heart className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">커뮤니티 후기</h3>

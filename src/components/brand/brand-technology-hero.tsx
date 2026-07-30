@@ -68,8 +68,8 @@ export function BrandTechnologyHero({ brand, techCount }: BrandTechnologyHeroPro
 
       {/* 기술 카테고리 요약 */}
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-        <div className="flex items-center gap-3 rounded-xl bg-sky-50 p-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-sky-100">
+        <div className="flex items-center gap-3 rounded-[4px] bg-sky-50 p-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[4px] bg-sky-100">
             <Layers className="w-5 h-5 text-sky-700" />
           </div>
           <div>
@@ -78,8 +78,8 @@ export function BrandTechnologyHero({ brand, techCount }: BrandTechnologyHeroPro
           </div>
         </div>
 
-        <div className="flex items-center gap-3 rounded-xl bg-slate-100 p-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-slate-200">
+        <div className="flex items-center gap-3 rounded-[4px] bg-slate-100 p-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[4px] bg-slate-200">
             <Cpu className="w-5 h-5 text-slate-700" />
           </div>
           <div>
@@ -88,8 +88,8 @@ export function BrandTechnologyHero({ brand, techCount }: BrandTechnologyHeroPro
           </div>
         </div>
 
-        <div className="flex items-center gap-3 rounded-xl bg-teal-50 p-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-teal-100">
+        <div className="flex items-center gap-3 rounded-[4px] bg-teal-50 p-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[4px] bg-teal-100">
             <Zap className="w-5 h-5 text-teal-700" />
           </div>
           <div>
@@ -98,8 +98,8 @@ export function BrandTechnologyHero({ brand, techCount }: BrandTechnologyHeroPro
           </div>
         </div>
 
-        <div className="flex items-center gap-3 rounded-xl bg-stone-100 p-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-stone-200">
+        <div className="flex items-center gap-3 rounded-[4px] bg-stone-100 p-3">
+          <div className="flex h-10 w-10 items-center justify-center rounded-[4px] bg-stone-200">
             <span className="text-lg">👟</span>
           </div>
           <div>

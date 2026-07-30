@@ -1,12 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
   <defs>
     <linearGradient id="bg" x1="0" y1="32" x2="32" y2="0" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0ea5e9"/>
-      <stop offset="100%" stop-color="#081226"/>
+      <stop offset="0%" stop-color="#17150F"/>
+      <stop offset="100%" stop-color="#262319"/>
     </linearGradient>
     <linearGradient id="streak" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
-      <stop offset="0%" stop-color="#7dd3fc" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="white" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#FF4D00" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#FF4D00" stop-opacity="1"/>
     </linearGradient>
   </defs>
   <!-- Background -->

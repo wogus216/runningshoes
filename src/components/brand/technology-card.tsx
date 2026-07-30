@@ -22,7 +22,7 @@ export function TechnologyCard({ technology, isSelected, onSelect, shoeCount }: 
     <div
       className={`section-card p-6 transition-all duration-200 cursor-pointer ${
         isSelected
-          ? `ring-2 ${colorClasses.border.replace('border-', 'ring-')} ${colorClasses.bg} shadow-[0_18px_34px_-28px_rgba(8,18,38,0.24)]`
+          ? `ring-2 ${colorClasses.border.replace('border-', 'ring-')} ${colorClasses.bg}`
           : 'hover:border-sky-200 hover:bg-white/92'
       }`}
       onClick={onSelect}
@@ -121,7 +121,7 @@ export function TechnologyCard({ technology, isSelected, onSelect, shoeCount }: 
 
       {/* 적용 신발 수 - 클릭 유도 */}
       {shoeCount !== undefined && shoeCount > 0 && (
-        <div className={`mb-4 flex items-center gap-2 rounded-lg px-3 py-2 ${isSelected ? 'bg-white/70' : colorClasses.bg}`}>
+        <div className={`mb-4 flex items-center gap-2 rounded-[4px] px-3 py-2 ${isSelected ? 'bg-white/70' : colorClasses.bg}`}>
           <MousePointerClick className={`w-4 h-4 ${colorClasses.text}`} />
           <span className={`text-xs font-medium ${colorClasses.text}`}>
             {shoeCount}개 신발에 적용 · 클릭해서 보기

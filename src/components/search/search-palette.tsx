@@ -116,7 +116,7 @@ export function SearchPalette() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 rounded-full border border-stone-900/10 bg-white/80 px-3 py-2 text-sm text-slate-600 transition hover:bg-white md:min-w-[200px]"
+        className="inline-flex items-center gap-2 rounded-[4px] border border-border bg-background/90 px-3 py-2 text-sm text-secondary transition hover:border-primary hover:bg-[var(--accent-soft)] md:min-w-[200px]"
         aria-label="검색"
       >
         <Search className="h-4 w-4" />
@@ -132,7 +132,7 @@ export function SearchPalette() {
           onClick={() => setOpen(false)}
         >
           <div
-            className="w-full max-w-2xl bg-white rounded-2xl shadow-2xl overflow-hidden"
+            className="w-full max-w-2xl bg-white rounded-[4px] overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center gap-3 border-b border-border px-4 py-3">
@@ -150,7 +150,7 @@ export function SearchPalette() {
               />
               <button
                 onClick={() => setOpen(false)}
-                className="shrink-0 rounded-full p-1 text-tertiary hover:bg-surface"
+                className="shrink-0 rounded-[3px] p-1 text-tertiary hover:bg-[var(--accent-soft)]"
                 aria-label="닫기"
               >
                 <X className="h-4 w-4" />

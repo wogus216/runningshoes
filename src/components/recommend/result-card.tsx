@@ -39,7 +39,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
   return (
     <div
       className={cn(
-        "relative overflow-hidden rounded-[28px] border p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.18)]",
+        "relative overflow-hidden rounded-[4px] border p-6",
         isTopPick
           ? "border-sky-200 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(236,248,255,0.96))] ring-2 ring-sky-200"
           : "border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))]"
@@ -67,7 +67,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       {/* 헤더 */}
       <div className="flex items-start gap-4 mb-4 pt-2">
         {/* 이미지 */}
-        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))]">
+        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))]">
           {shoe.image ? (
             <Image src={img(shoe.image)} alt={shoe.name} width={64} height={64} className="object-contain" />
           ) : (
@@ -151,7 +151,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
           </button>
 
           {showDetails && (
-            <div className="mt-3 rounded-xl border border-sky-100 bg-sky-50/60 p-4">
+            <div className="mt-3 rounded-[4px] border border-sky-100 bg-sky-50/60 p-4">
               <p className="text-sm text-secondary leading-relaxed">
                 {shoe.detailedReason}
               </p>
@@ -204,7 +204,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       )}
 
       {/* 주요 스펙 */}
-      <div className="mb-4 grid grid-cols-3 gap-3 rounded-[24px] bg-sky-50 p-3">
+      <div className="mb-4 grid grid-cols-3 gap-3 rounded-[4px] bg-sky-50 p-3">
         <div className="text-center">
           <p className="text-xs text-tertiary">무게</p>
           <p className="font-bold text-primary">{shoe.specs?.weight}g</p>

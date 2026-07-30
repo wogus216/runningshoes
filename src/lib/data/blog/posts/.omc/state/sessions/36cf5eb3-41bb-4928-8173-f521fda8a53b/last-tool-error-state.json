@@ -1,0 +1,7 @@
+{
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"http://www.gomarathon.co.kr/\",\"prompt\":\"2026 선사마라톤축제 접수 상태(접수중/마감), 접수 기간, 대회일, 출발 장소, 출발 시각, 종목별 거리와 참가비를 원문 그대로 알려줘.\"}",
+  "error": "self signed certificate",
+  "timestamp": "2026-07-20T02:35:35.297Z",
+  "retry_count": 1
+}

@@ -51,7 +51,7 @@ export function DetailHeader() {
           <div className="flex items-center gap-2">
             <button
               onClick={handleShare}
-              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full border border-stone-900/10 bg-white/75 px-3 py-2 text-sm font-medium text-slate-700 transition hover:bg-white"
+              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-[4px] border border-primary/15 bg-background/80 px-3 py-2 text-sm font-medium text-secondary transition hover:border-primary hover:bg-background"
               aria-label="현재 페이지 공유"
             >
               <Share2 className="h-4 w-4" />
@@ -59,7 +59,7 @@ export function DetailHeader() {
             </button>
             <Link
               href="/compare"
-              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-full bg-stone-950 px-3 py-2 text-sm font-semibold text-white transition hover:bg-stone-900"
+              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-[4px] bg-primary px-3 py-2 text-sm font-semibold text-background transition hover:bg-accent"
             >
               + 비교함
               <ArrowUpRight className="hidden h-4 w-4 sm:block" />

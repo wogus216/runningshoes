@@ -26,7 +26,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
 
   return (
     <section className="space-y-4">
-      <div>
+      <div className="border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Detailed Spec Sheet</p>
         <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950 flex items-center gap-2">
           <ClipboardList className="h-6 w-6 text-sky-700" />
@@ -34,7 +34,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
         </h2>
       </div>
 
-      <div className="overflow-hidden rounded-2xl border border-border bg-white">
+      <div className="overflow-hidden rounded border border-border bg-white">
         <dl className="divide-y divide-border">
           {specRows.map((row, i) => (
             <div

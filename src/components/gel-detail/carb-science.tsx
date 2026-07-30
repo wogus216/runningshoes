@@ -63,7 +63,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
       <div className="flex flex-wrap gap-3 mb-5">
         <div
           className={cn(
-            "px-4 py-2 rounded-lg border",
+            "px-4 py-2 rounded-[4px] border",
             carb.dualSource
               ? "border-sky-200 bg-sky-50 text-sky-700"
               : "border-stone-900/8 bg-[rgba(248,250,252,0.86)] text-secondary"
@@ -79,7 +79,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
 
         <div
           className={cn(
-            "px-4 py-2 rounded-lg border",
+            "px-4 py-2 rounded-[4px] border",
             getOsmolalityBg()
           )}
         >
@@ -94,7 +94,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
 
       {/* 과학 데이터 그리드 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-5">
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-4">
+        <div className="rounded-[4px] border border-sky-100 bg-white/82 p-4">
           <div className="flex items-center gap-2 mb-2">
             <Zap className="w-4 h-4 text-sky-700" />
             <h3 className="text-sm font-bold text-primary">흡수 경로</h3>
@@ -102,7 +102,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
           <p className="text-secondary text-sm">{carb.transporterProfile}</p>
         </div>
 
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-4">
+        <div className="rounded-[4px] border border-sky-100 bg-white/82 p-4">
           <div className="flex items-center gap-2 mb-2">
             <FlaskConical className="w-4 h-4 text-sky-700" />
             <h3 className="text-sm font-bold text-primary">산화율</h3>
@@ -111,7 +111,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
         </div>
 
         {carb.osmolalityEstimate && (
-          <div className="rounded-xl border border-sky-100 bg-white/82 p-4">
+          <div className="rounded-[4px] border border-sky-100 bg-white/82 p-4">
             <h3 className="text-sm font-bold text-primary mb-2">삼투압 농도</h3>
             <p className="text-secondary text-sm">
               {carb.osmolalityEstimate} mOsm/kg
@@ -124,7 +124,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
           </div>
         )}
 
-        <div className="rounded-xl border border-sky-100 bg-white/82 p-4">
+        <div className="rounded-[4px] border border-sky-100 bg-white/82 p-4">
           <h3 className="text-sm font-bold text-primary mb-2">물 섭취 필요</h3>
           <p className="text-secondary text-sm">
             {carb.waterRequired ? (
@@ -138,14 +138,14 @@ export function CarbScience({ gel }: CarbScienceProps) {
 
       {/* 핵심 기술 */}
       {carb.keyTechnology && (
-        <div className="mb-5 rounded-xl border border-sky-200 bg-sky-50 p-4">
+        <div className="mb-5 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
           <h3 className="mb-2 text-sm font-bold text-sky-700">핵심 기술</h3>
           <p className="text-secondary text-sm">{carb.keyTechnology}</p>
         </div>
       )}
 
       {/* 과학 평가 */}
-      <div className="rounded-xl border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
+      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
         <h3 className="text-sm font-bold text-primary mb-2">과학적 평가</h3>
         <p className="text-secondary text-sm leading-relaxed">{carb.scienceVerdict}</p>
       </div>

@@ -42,7 +42,7 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
 
   return (
     <section className="space-y-4">
-      <div>
+      <div className="border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Replacement Timer</p>
         <h3 className="mt-2 text-xl font-black tracking-tight text-slate-950 flex items-center gap-2">
           <Clock className="h-5 w-5 text-sky-700" />
@@ -54,11 +54,11 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
         </p>
       </div>
 
-      <div className="rounded-2xl border border-border bg-white p-5">
+      <div className="rounded border border-border bg-white p-5">
         <label className="block">
           <div className="flex items-center justify-between mb-2">
             <span className="text-sm font-semibold text-primary">내 주간 주행거리</span>
-            <span className="text-2xl font-black text-sky-700">{weeklyKm}km</span>
+            <span className="font-mono text-2xl font-black tabular-nums text-sky-700">{weeklyKm}km</span>
           </div>
           <input
             type="range"
@@ -79,23 +79,23 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
 
       {result && (
         <div className="grid grid-cols-3 gap-2 text-center">
-          <div className="rounded-xl border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">교체 주기</div>
-            <div className="text-2xl font-black text-slate-950 mt-1">{result.months}<span className="text-sm">개월</span></div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.months}<span className="text-sm">개월</span></div>
           </div>
-          <div className="rounded-xl border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">주</div>
-            <div className="text-2xl font-black text-slate-950 mt-1">{result.weeks}<span className="text-sm">주</span></div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.weeks}<span className="text-sm">주</span></div>
           </div>
-          <div className="rounded-xl border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">총 km</div>
-            <div className="text-2xl font-black text-slate-950 mt-1">{durability}</div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{durability}</div>
           </div>
         </div>
       )}
 
       {warning && (
-        <div className={`rounded-2xl border p-4 text-sm ${
+        <div className={`rounded border p-4 text-sm ${
           warning.tone === 'warning'
             ? 'border-amber-200 bg-amber-50/60 text-amber-800'
             : 'border-sky-200 bg-sky-50/60 text-sky-800'
@@ -107,7 +107,7 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
         </div>
       )}
 
-      <div className="rounded-xl border border-border bg-white p-4 text-xs text-secondary leading-relaxed">
+      <div className="rounded-[4px] border border-border bg-white p-4 text-xs text-secondary leading-relaxed">
         <p className="font-semibold text-primary mb-2">교체 신호 체크리스트</p>
         <ul className="space-y-1">
           <li>• 아웃솔 러그가 눈에 띄게 닳았거나 힐 부분이 기울어짐</li>

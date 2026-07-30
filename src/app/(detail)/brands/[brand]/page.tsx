@@ -171,7 +171,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
             {topTechnologies.map((t) => (
               <li
                 key={t.id}
-                className="p-4 bg-white border border-border rounded-lg"
+                className="p-4 bg-white border border-border rounded-[4px]"
               >
                 <div className="font-semibold text-primary">
                   {t.name}
@@ -197,7 +197,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
             {shoes.map((shoe, idx) => (
               <li
                 key={shoe.slug}
-                className="flex gap-4 p-4 bg-white rounded-lg border border-border hover:border-accent transition"
+                className="flex gap-4 p-4 bg-white rounded-[4px] border border-border hover:border-accent transition"
               >
                 <div className="flex-shrink-0 w-10 text-center">
                   <div className="text-xl font-bold text-accent">#{idx + 1}</div>
@@ -255,7 +255,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
         </section>
       ))}
 
-      <section className="bg-surface rounded-lg p-6">
+      <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">
           {brand.name} 외 다른 브랜드도 비교해 보세요
         </h2>

@@ -18,10 +18,10 @@ export function BlogCard({ post }: BlogCardProps) {
 
   return (
     <Link href={`/blog/${post.slug}`} className="group block">
-      <article className="flex h-full flex-col overflow-hidden rounded-[28px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))] shadow-[0_20px_40px_-34px_rgba(8,18,38,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_26px_50px_-34px_rgba(8,18,38,0.24)]">
+      <article className="flex h-full flex-col overflow-hidden rounded-[4px] border border-border bg-background transition-colors duration-200 hover:bg-[var(--accent-soft)]">
         {thumbnail ? (
           <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
-            <div className="absolute inset-x-0 top-0 z-10 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_58%,#f97316_100%)]" />
+            <div className="absolute inset-x-0 top-0 z-10 h-1.5 bg-[var(--accent)]" />
             <Image
               src={img(thumbnail)}
               alt={post.title}
@@ -44,7 +44,7 @@ export function BlogCard({ post }: BlogCardProps) {
         )}
 
         <div className="flex flex-1 flex-col p-5">
-          <div className="mb-3 flex items-center justify-between gap-3 text-xs text-slate-500">
+          <div className="mb-3 flex items-center justify-between gap-3 font-mono text-xs tabular-nums text-slate-500">
             <span>{publishDate}</span>
             <span>{post.readingTime}분 읽기</span>
           </div>

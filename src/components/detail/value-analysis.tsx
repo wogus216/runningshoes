@@ -105,7 +105,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
   };
   return (
     <section className="space-y-6">
-      <div className="space-y-2">
+      <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Value</p>
         <h2 className="flex items-center gap-3 text-3xl font-black tracking-tight text-slate-950">
           <Gem className="h-7 w-7 text-sky-700" />
@@ -113,10 +113,10 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
         </h2>
       </div>
 
-      <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(236,248,255,0.96),rgba(255,255,255,0.94))] p-6 shadow-[0_18px_36px_-34px_rgba(8,18,38,0.16)] lg:p-8">
+      <div className="rounded border border-border bg-white p-6 lg:p-8">
         <h3 className="mb-4 flex items-center gap-2 text-xl font-black text-sky-700">
           <BadgeDollarSign className="h-5 w-5" />
-          가성비 평가: {priceAnalysis.valueRating}/10 ({getValueDescription()})
+          가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})
         </h3>
         <p className="mb-6 text-sm leading-7 text-slate-700 md:text-base">
           <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은{" "}
@@ -132,7 +132,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
         </p>
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div className="rounded-[24px] border border-sky-100 bg-white/78 p-5">
+          <div className="rounded border border-border bg-white p-5">
             <strong className="mb-3 block text-slate-950">가격 대비 장점</strong>
             <ul className="space-y-2 text-sm text-slate-600">
               {getValueAdvantages().map((advantage, index) => (
@@ -144,7 +144,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
             </ul>
           </div>
 
-          <div className="rounded-[24px] border border-sky-100 bg-white/78 p-5">
+          <div className="rounded border border-border bg-white p-5">
             <strong className="mb-3 block text-slate-950">비슷한 가격대</strong>
             <ul className="space-y-2 text-sm text-slate-600">
               {priceAnalysis.alternatives.map((alt) => {
@@ -172,7 +172,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
       </div>
 
       {priceAnalysis.alternatives.length > 0 && (
-        <div className="rounded-[28px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
+        <div className="rounded border border-border bg-white p-5">
           <strong className="flex items-center gap-2 text-lg text-sky-700">
             <Check className="h-5 w-5" />
             현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
@@ -186,7 +186,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
         </div>
       )}
 
-      <div className="rounded-[28px] border border-sky-200 bg-[linear-gradient(135deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-5 shadow-[0_16px_30px_-28px_rgba(8,18,38,0.14)]">
+      <div className="rounded border border-border bg-[var(--accent-soft)] p-5">
         <div className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
           <ShoppingCart className="h-5 w-5" />
           구매 팁

@@ -4,7 +4,7 @@ export default function DetailLoading() {
       {/* Hero skeleton */}
       <div className="section-card p-6">
         <div className="flex flex-col md:flex-row gap-6">
-          <div className="w-full md:w-1/2 aspect-square bg-surface rounded-xl" />
+          <div className="w-full md:w-1/2 aspect-square bg-surface rounded-[4px]" />
           <div className="flex-1 space-y-4">
             <div className="h-6 bg-surface rounded w-1/4" />
             <div className="h-8 bg-surface rounded w-3/4" />

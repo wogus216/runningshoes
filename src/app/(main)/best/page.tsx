@@ -125,7 +125,7 @@ export default function BestHubPage() {
                   <li key={m.slug}>
                     <Link
                       href={`/best/${m.slug}`}
-                      className="group flex h-full flex-col justify-between rounded-2xl border border-border bg-white p-5 transition-colors hover:border-accent hover:shadow-sm"
+                      className="group flex h-full flex-col justify-between rounded-[4px] border border-border bg-white p-5 transition-colors hover:border-accent"
                     >
                       <div>
                         <div className="text-lg font-bold text-primary group-hover:text-accent transition-colors">
@@ -168,7 +168,7 @@ export default function BestHubPage() {
                 <li key={m.slug}>
                   <Link
                     href={`/best/${m.slug}`}
-                    className="group flex items-center justify-between rounded-lg border border-border bg-white px-4 py-3 transition-colors hover:border-accent"
+                    className="group flex items-center justify-between rounded-[4px] border border-border bg-white px-4 py-3 transition-colors hover:border-accent"
                   >
                     <span className="text-sm font-semibold text-primary group-hover:text-accent transition-colors">
                       {m.h1.replace(/ — .*/, '')}
@@ -182,7 +182,7 @@ export default function BestHubPage() {
         );
       })}
 
-      <section className="bg-surface rounded-xl p-6">
+      <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">
           더 정확한 추천을 받고 싶다면
         </h2>

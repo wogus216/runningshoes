@@ -29,7 +29,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
   const appliedShoes = shoes.filter((shoe) => technology.usedInShoes.includes(shoe.slug));
 
   return (
-    <section className="section-card overflow-hidden border border-[var(--accent-line)] bg-white/88 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)]">
+    <section className="section-card overflow-hidden border border-[var(--accent-line)] bg-white/88">
       {/* 헤더 - 카테고리 색상 배경 */}
       <div className={`border-b border-[var(--accent-line)] px-6 py-4 ${colorClasses.bg}`}>
         <div className="flex items-center justify-between">
@@ -165,7 +165,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                     href={`/shoes/${shoe.slug}`}
                     className="flex-shrink-0 w-32 group"
                   >
-                    <div className="relative mb-2 aspect-square overflow-hidden rounded-xl bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                    <div className="relative mb-2 aspect-square overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
                       {shoe.image ? (
                         <Image
                           src={img(shoe.image)}
@@ -191,14 +191,14 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                 <>
                   <button
                     onClick={() => scroll('left')}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-8 h-8 rounded-full bg-card shadow-md border border-border flex items-center justify-center opacity-0 group-hover/scroll:opacity-100 transition-opacity z-10"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-3 w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center opacity-0 group-hover/scroll:opacity-100 transition-opacity z-10"
                     aria-label="이전 신발 보기"
                   >
                     <ChevronLeft className="w-4 h-4 text-primary" />
                   </button>
                   <button
                     onClick={() => scroll('right')}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-8 h-8 rounded-full bg-card shadow-md border border-border flex items-center justify-center opacity-0 group-hover/scroll:opacity-100 transition-opacity z-10"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-3 w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center opacity-0 group-hover/scroll:opacity-100 transition-opacity z-10"
                     aria-label="다음 신발 보기"
                   >
                     <ChevronRight className="w-4 h-4 text-primary" />

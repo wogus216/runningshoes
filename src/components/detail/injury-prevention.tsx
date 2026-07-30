@@ -22,7 +22,7 @@ function InjuryCard({ emoji, title, status }: InjuryCardProps) {
   const config = statusConfig[status];
 
   return (
-    <div className={cn("rounded-[24px] border p-4 text-left shadow-[0_16px_30px_-28px_rgba(15,23,42,0.4)]", config.bgClass)}>
+    <div className={cn("rounded border p-4 text-left", config.bgClass)}>
       <p className="mb-3 text-2xl">{emoji}</p>
       <p className="text-sm font-semibold text-primary">{title}</p>
       <p className={cn("mt-2 text-xs font-semibold uppercase tracking-[0.18em]", config.textClass)}>{config.label}</p>
@@ -33,7 +33,7 @@ function InjuryCard({ emoji, title, status }: InjuryCardProps) {
 export function InjuryPrevention({ injuryPrevention }: InjuryPreventionProps) {
   return (
     <section className="space-y-6">
-      <div className="space-y-2">
+      <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Injury Prevention</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">관절 부담 관점</h2>
         <p className="text-sm leading-relaxed text-slate-600">무릎, 아킬레스, 족저근막, 정강이 기준으로 이 신발이 어느 쪽에 더 유리한지 압축해 보여줍니다.</p>

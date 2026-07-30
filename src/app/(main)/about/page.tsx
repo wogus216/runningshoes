@@ -85,14 +85,14 @@ export default function AboutPage() {
       {/* 사이트 실적 통계 (E-E-A-T 신뢰도 시그널) */}
       <section className="section-card p-6 mb-10">
         <div className="flex items-start gap-4">
-          <div className="p-3 rounded-xl bg-sky-100 dark:bg-sky-900">
+          <div className="p-3 rounded-[4px] bg-sky-100 dark:bg-sky-900">
             <Activity className="w-6 h-6 text-sky-600 dark:text-sky-400" />
           </div>
           <div className="flex-1">
             <h2 className="text-xl font-semibold text-primary mb-3">사이트 실적</h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
               {siteStats.map((stat) => (
-                <div key={stat.label} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                <div key={stat.label} className="bg-gray-50 dark:bg-gray-800 rounded-[4px] p-3">
                   <div className="text-2xl font-bold text-primary">{stat.value}</div>
                   <div className="text-sm font-medium text-primary mt-1">{stat.label}</div>
                   <div className="text-xs text-tertiary mt-1">{stat.desc}</div>
@@ -107,7 +107,7 @@ export default function AboutPage() {
         {/* 미션 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-stone-100 dark:bg-stone-800">
+            <div className="p-3 rounded-[4px] bg-stone-100 dark:bg-stone-800">
               <Target className="w-6 h-6 text-stone-600 dark:text-stone-400" />
             </div>
             <div>
@@ -125,7 +125,7 @@ export default function AboutPage() {
         {/* 왜 만들었나 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-green-100 dark:bg-green-900">
+            <div className="p-3 rounded-[4px] bg-green-100 dark:bg-green-900">
               <BookOpen className="w-6 h-6 text-green-600 dark:text-green-400" />
             </div>
             <div>
@@ -147,7 +147,7 @@ export default function AboutPage() {
         {/* 데이터 출처 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-amber-100 dark:bg-amber-900">
+            <div className="p-3 rounded-[4px] bg-amber-100 dark:bg-amber-900">
               <Database className="w-6 h-6 text-amber-600 dark:text-amber-400" />
             </div>
             <div>
@@ -180,7 +180,7 @@ export default function AboutPage() {
         {/* 평가 기준 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-orange-100 dark:bg-orange-900">
+            <div className="p-3 rounded-[4px] bg-orange-100 dark:bg-orange-900">
               <BarChart3 className="w-6 h-6 text-orange-600 dark:text-orange-400" />
             </div>
             <div>
@@ -200,7 +200,7 @@ export default function AboutPage() {
                   { name: '그립', desc: '접지력' },
                   { name: '통기성', desc: '어퍼 환기' },
                 ].map((item) => (
-                  <div key={item.name} className="bg-gray-50 dark:bg-gray-800 rounded-lg p-3">
+                  <div key={item.name} className="bg-gray-50 dark:bg-gray-800 rounded-[4px] p-3">
                     <div className="font-medium text-primary">{item.name}</div>
                     <div className="text-xs text-tertiary">{item.desc}</div>
                   </div>
@@ -213,7 +213,7 @@ export default function AboutPage() {
         {/* 한국 러너 특화 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-red-100 dark:bg-red-900">
+            <div className="p-3 rounded-[4px] bg-red-100 dark:bg-red-900">
               <Globe className="w-6 h-6 text-red-600 dark:text-red-400" />
             </div>
             <div>
@@ -258,7 +258,7 @@ export default function AboutPage() {
         {/* 에디터 소개 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-blue-100 dark:bg-blue-900">
+            <div className="p-3 rounded-[4px] bg-blue-100 dark:bg-blue-900">
               <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />
             </div>
             <div>
@@ -286,7 +286,7 @@ export default function AboutPage() {
                 모든 신발 리뷰에는 실측 수치(토박스 너비, 에너지 리턴율, 충격흡수 SA값 등)를 포함하며,
                 &quot;이 신발 발볼 넓은 사람도 괜찮나요?&quot;에 숫자로 답하는 것이 목표입니다.
               </p>
-              <div className="rounded-lg bg-blue-50 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/40 p-4 text-sm">
+              <div className="rounded-[4px] bg-blue-50 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/40 p-4 text-sm">
                 <div className="font-semibold text-primary mb-1">분석 검증 프로세스</div>
                 <ol className="space-y-1 text-secondary list-decimal list-inside">
                   <li>RunRepeat 랩 실측(SA, HA, 에너지 리턴%, 토박스 너비) 1차 수집</li>
@@ -303,7 +303,7 @@ export default function AboutPage() {
         {/* 독립성 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-teal-100 dark:bg-teal-900">
+            <div className="p-3 rounded-[4px] bg-teal-100 dark:bg-teal-900">
               <Shield className="w-6 h-6 text-teal-600 dark:text-teal-400" />
             </div>
             <div>
@@ -322,7 +322,7 @@ export default function AboutPage() {
         {/* 연락처 */}
         <section className="border-t border-border pt-8">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-xl bg-gray-100 dark:bg-gray-800">
+            <div className="p-3 rounded-[4px] bg-gray-100 dark:bg-gray-800">
               <Mail className="w-6 h-6 text-gray-600 dark:text-gray-400" />
             </div>
             <div>

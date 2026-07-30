@@ -52,7 +52,7 @@ export default function Error({
         </div>
 
         {process.env.NODE_ENV === 'development' && error.message && (
-          <details className="mt-6 text-left p-4 bg-surface rounded-lg">
+          <details className="mt-6 text-left p-4 bg-surface rounded-[4px]">
             <summary className="text-sm font-medium text-tertiary cursor-pointer">
               오류 상세 (개발 모드)
             </summary>

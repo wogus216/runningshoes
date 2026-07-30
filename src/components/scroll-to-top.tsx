@@ -42,9 +42,9 @@ export function ScrollToTop() {
         'bottom-[calc(env(safe-area-inset-bottom)+6rem)]',
         isDetailPage ? 'hidden md:flex' : 'flex',
         'h-10 w-10 items-center justify-center',
-        'rounded-full border border-stone-900/10 bg-white/92 shadow-[0_22px_45px_-30px_rgba(15,23,42,0.5)] backdrop-blur-xl',
+        'rounded-full border border-stone-900/10 bg-white/92 backdrop-blur-xl',
         'transition-all duration-300 ease-in-out',
-        'hover:-translate-y-0.5 hover:bg-white hover:shadow-xl',
+        'hover:-translate-y-0.5 hover:bg-white',
         'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2',
         'md:h-12 md:w-12',
         isVisible

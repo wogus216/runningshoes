@@ -91,10 +91,8 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
 
   return (
     <div className="space-y-6">
-      <section className="relative overflow-hidden rounded-[36px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(239,248,255,0.94)_44%,rgba(231,244,255,0.92)_100%)] px-5 py-6 shadow-[0_28px_70px_-52px_rgba(8,18,38,0.28)] md:px-8 md:py-8">
+      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(239,248,255,0.94)_44%,rgba(231,244,255,0.92)_100%)] px-5 py-6 md:px-8 md:py-8">
         <div className="pointer-events-none absolute inset-0">
-          <div className="absolute -left-8 top-6 h-32 w-32 rounded-full bg-[rgba(14,165,233,0.16)] blur-3xl" />
-          <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(56,189,248,0.12)] blur-3xl" />
         </div>
 
         <div className="relative grid gap-6 lg:grid-cols-[1.08fr_0.92fr] lg:items-end">
@@ -136,17 +134,17 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
           </div>
 
           <div className="grid gap-3 sm:grid-cols-3">
-            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Activity className="h-5 w-5 text-accent" />
               <p className="mt-4 text-sm font-semibold text-slate-950">러닝 맥락</p>
               <p className="mt-1 text-xs leading-6 text-slate-600">훈련용인지, 레이스용인지, 회복용인지부터 먼저 갈립니다.</p>
             </div>
-            <div className="rounded-[24px] border border-sky-100 bg-white/86 p-4 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)]">
+            <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-sky-700" />
               <p className="mt-4 text-sm font-semibold text-slate-950">발형 반영</p>
               <p className="mt-1 text-xs leading-6 text-slate-600">발볼, 평발, 계절감, 부상 이력까지 함께 반영합니다.</p>
             </div>
-            <div className="rounded-[24px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white shadow-[0_22px_40px_-30px_rgba(8,18,38,0.62)]">
+            <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowUpRight className="h-5 w-5 text-white" />
               <p className="mt-4 text-sm font-semibold">결과 중심</p>
               <p className="mt-1 text-xs leading-6 text-white/65">추천 이유와 평균 대비 차이까지 한 카드에서 읽을 수 있습니다.</p>
@@ -160,7 +158,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
           <Questionnaire onComplete={handleComplete} />
         ) : (
           <div className="space-y-6">
-            <section className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-6 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+            <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-6 backdrop-blur">
               <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">
                 Profile Snapshot
               </p>
@@ -203,7 +201,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 </div>
               </div>
             ) : (
-              <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/84 p-12 text-center shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+              <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-12 text-center backdrop-blur">
                 <p className="text-xl text-secondary">
                   조건에 맞는 신발을 찾지 못했습니다
                 </p>

@@ -53,10 +53,10 @@ export function HeroSection({ gel }: HeroSectionProps) {
   };
 
   return (
-    <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] md:p-6 lg:p-8">
+    <section className="section-card border border-[var(--accent-line)] bg-white/88 p-4 md:p-6 lg:p-8">
       <div className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-10">
         {/* 이미지 */}
-        <div className="flex items-center justify-center rounded-2xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
+        <div className="flex items-center justify-center rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] p-6 md:p-8">
           {gel.image ? (
             <Image
               src={img(gel.image)}
@@ -148,29 +148,29 @@ export function HeroSection({ gel }: HeroSectionProps) {
 
           {/* 빠른 스탯 */}
           <div className="grid grid-cols-5 gap-2">
-            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
+            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Zap className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.calories}</p>
               <p className="text-[10px] text-tertiary">kcal</p>
             </div>
-            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
+            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Droplets className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.totalCarbs}g</p>
               <p className="text-[10px] text-tertiary">탄수화물</p>
             </div>
-            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
+            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Coffee className="w-4 h-4 mx-auto mb-1 text-tertiary" />
               <p className="text-sm font-bold text-primary">{nutrition.caffeine}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
-            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
+            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
                 <span className="text-xs">🧂</span>
               </div>
               <p className="text-sm font-bold text-primary">{nutrition.sodium}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
-            <div className="rounded-xl border border-sky-100 bg-sky-50 p-2 text-center">
+            <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
                 <span className="text-xs">🫃</span>
               </div>

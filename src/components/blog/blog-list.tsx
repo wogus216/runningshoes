@@ -49,17 +49,17 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-[28px] border border-[var(--accent-line)] bg-white/82 p-3 shadow-[0_22px_45px_-38px_rgba(8,18,38,0.16)] backdrop-blur">
+      <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/82 p-3 backdrop-blur">
         <div className="mb-3 px-2">
           <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Category Filter</p>
         </div>
         <div className="flex items-center gap-1 overflow-x-auto scrollbar-hide">
         <button
           onClick={() => selectCategory('all')}
-          className={`rounded-full px-4 py-2.5 text-sm font-semibold transition-colors relative ${
+          className={`rounded-[4px] px-4 py-2.5 text-sm font-semibold transition-colors relative ${
             selectedCategory === 'all'
-              ? 'bg-[var(--navy)] text-white'
-              : 'text-gray-500 hover:bg-sky-50 hover:text-gray-700'
+              ? 'bg-[var(--navy)] text-background'
+              : 'border border-border text-secondary hover:bg-[var(--accent-soft)] hover:text-primary'
           }`}
         >
           전체
@@ -68,10 +68,10 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
           <button
             key={category}
             onClick={() => selectCategory(category)}
-            className={`rounded-full px-4 py-2.5 text-sm font-semibold transition-colors relative ${
+            className={`rounded-[4px] px-4 py-2.5 text-sm font-semibold transition-colors relative ${
               selectedCategory === category
-                ? 'bg-[var(--navy)] text-white'
-                : 'text-gray-500 hover:bg-sky-50 hover:text-gray-700'
+                ? 'bg-[var(--navy)] text-background'
+                : 'border border-border text-secondary hover:bg-[var(--accent-soft)] hover:text-primary'
             }`}
           >
             {categoryLabels[category]}
@@ -96,7 +96,7 @@ export function BlogList({ initialPosts, totalCount }: BlogListProps) {
         <div className="text-center">
           <button
             onClick={() => void showMore()}
-            className="rounded-full border border-[var(--accent-line)] bg-white/82 px-6 py-3 text-sm font-semibold text-slate-700 shadow-[0_18px_36px_-32px_rgba(8,18,38,0.16)] transition-colors hover:bg-sky-50 hover:text-sky-700"
+            className="rounded-full border border-[var(--accent-line)] bg-white/82 px-6 py-3 text-sm font-semibold text-slate-700 transition-colors hover:bg-sky-50 hover:text-sky-700"
           >
             더 보기
           </button>

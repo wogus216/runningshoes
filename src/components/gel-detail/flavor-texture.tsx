@@ -44,7 +44,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
           {flavor.flavors.map((flavorName, index) => (
             <span
               key={index}
-              className="rounded-lg border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700"
+              className="rounded-[4px] border border-sky-200 bg-sky-50 px-3 py-1.5 text-sm font-medium text-sky-700"
             >
               {flavorName}
             </span>
@@ -53,7 +53,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       </div>
 
       {/* 식감 */}
-      <div className="mb-4 rounded-xl border border-sky-100 bg-white/82 p-4">
+      <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
         <h3 className="text-sm font-bold text-primary mb-2">식감</h3>
         <p className="text-secondary text-sm">{flavor.texture}</p>
       </div>
@@ -81,7 +81,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       </div>
 
       {/* 뒷맛 */}
-      <div className="mb-4 rounded-xl border border-sky-100 bg-white/82 p-4">
+      <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
         <h3 className="text-sm font-bold text-primary mb-2">뒷맛</h3>
         <p className="text-secondary text-sm">{flavor.aftertaste}</p>
       </div>
@@ -89,7 +89,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       {/* 맛 피로도 위험 */}
       <div
         className={cn(
-          "rounded-xl p-4 border",
+          "rounded-[4px] p-4 border",
           flavor.tasteFatigueRisk === '낮음' ? 'border-sky-200 bg-sky-50' :
           flavor.tasteFatigueRisk === '보통' ? 'border-amber-200 bg-amber-50' :
           'border-rose-200 bg-rose-50'

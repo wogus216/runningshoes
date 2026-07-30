@@ -32,7 +32,7 @@ export function SavedShoesList({ allShoes }: Props) {
 
   if (savedShoes.length === 0) {
     return (
-      <div className="rounded-2xl border-2 border-dashed border-border bg-surface/50 p-10 text-center">
+      <div className="rounded-[4px] border-2 border-dashed border-border bg-surface/50 p-10 text-center">
         <Heart className="mx-auto h-10 w-10 text-tertiary mb-3" />
         <p className="text-lg font-semibold text-primary mb-1">아직 찜한 신발이 없습니다</p>
         <p className="text-sm text-secondary mb-6">
@@ -78,12 +78,12 @@ export function SavedShoesList({ allShoes }: Props) {
         {savedShoes.map((shoe) => (
           <li
             key={shoe.slug}
-            className="flex gap-4 items-center p-4 bg-white border border-border rounded-xl hover:border-accent/50 transition"
+            className="flex gap-4 items-center p-4 bg-white border border-border rounded-[4px] hover:border-accent/50 transition"
           >
             {shoe.image && (
               <Link
                 href={`/shoes/${shoe.slug}`}
-                className="relative w-20 h-20 shrink-0 bg-surface rounded-lg"
+                className="relative w-20 h-20 shrink-0 bg-surface rounded-[4px]"
               >
                 <Image
                   src={img(shoe.image)}

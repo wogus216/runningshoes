@@ -19,7 +19,7 @@ export function FaqSection({ faqs }: FaqSectionProps) {
         {faqs.map((faq, idx) => (
           <details
             key={idx}
-            className="group rounded-2xl border border-sky-100 bg-sky-50/40 open:bg-white open:border-sky-300 open:shadow-sm transition-all"
+            className="group rounded-[4px] border border-sky-100 bg-sky-50/40 open:bg-white open:border-sky-300 open:shadow-sm transition-all"
           >
             <summary className="flex cursor-pointer items-start gap-3 px-5 py-4 text-base font-semibold text-gray-900 marker:hidden [&::-webkit-details-marker]:hidden">
               <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-sky-500 text-xs font-bold text-white">
