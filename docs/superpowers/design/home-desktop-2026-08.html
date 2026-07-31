@@ -111,12 +111,19 @@
     display: inline-flex; align-items: center; gap: 8px;
   }
   .btn-signal:hover { background: var(--signal-dark); }
+  /* 헤더 추천 CTA — 아웃라인. 오렌지 솔리드 면은 히어로·최종 밴드 2곳뿐이다(§3) */
+  .btn-outline {
+    border: 1.5px solid var(--signal); color: var(--signal); background: transparent;
+    font-weight: 700; font-size: 14px; padding: 9px 16px; border-radius: 2px; min-height: 40px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-outline:hover { border-color: var(--signal-dark); color: var(--signal-dark); background: var(--signal-soft); }
   .menu-btn { display: none; }
   @container (max-width: 760px) {
     .nav, .search-btn { display: none; }
     .menu-btn { display: flex; align-items: center; padding: 8px; font-size: 20px; }
     .hdr-in { height: 56px; gap: 12px; }
-    .btn-signal { font-size: 13px; padding: 9px 13px; }
+    .btn-outline { font-size: 13px; padding: 8px 12px; }
   }
 
   /* ---------- 02 키네틱 히어로 ---------- */
@@ -622,6 +629,17 @@
   details.more > summary:hover { color: var(--signal); }
   details.more > summary .cnt { font-family: var(--mono); color: var(--ink-soft); font-weight: 400; }
   details.more[open] > summary { color: var(--ink-soft); }
+  /* 무JS 폴백 목록 — 나머지 106종의 실제 링크. 인덱스 행처럼 꾸미지 않고 텍스트 링크로만 둔다 */
+  .fb-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px 24px; padding: 20px 0 24px; }
+  @container (max-width: 900px) { .fb-list { grid-template-columns: repeat(2, 1fr); } }
+  @container (max-width: 560px) { .fb-list { grid-template-columns: 1fr; } }
+  .fb-list a { display: flex; align-items: baseline; gap: 8px; padding: 7px 0; border-bottom: 1px solid var(--line); }
+  .fb-list a:hover b { color: var(--signal); }
+  .fb-list b { font-size: 13.5px; font-weight: 620; letter-spacing: -0.015em; flex: none; }
+  .fb-list span {
+    font-family: var(--mono); font-size: 10px; color: var(--ink-soft);
+    margin-left: auto; white-space: nowrap; font-variant-numeric: tabular-nums;
+  }
 
   /* ---------- 07 광고 ---------- */
   .ad { padding: 40px 0; }
@@ -740,7 +758,7 @@
       </nav>
       <div class="hdr-right">
         <button class="search-btn"><span>⌕</span> 신발 검색</button>
-        <a class="btn-signal" href="/recommend">맞춤 추천</a>
+        <a class="btn-outline" href="/recommend">맞춤 추천</a>
       </div>
     </div>
   </header>
@@ -1055,10 +1073,158 @@
         <span></span><span>모델</span><span>한 줄 결론</span><span>용도</span><span>무게</span><span>가격</span><span>데이터 상태</span>
       </div>
 
-      <div class="idx" id="idxRows"></div>
+      <!-- 기본 16행. 정적 마크업이라 JavaScript 없이도 그대로 보이고 크롤러가 읽는다.
+           JS 가 켜지면 render() 가 같은 자리를 썸네일 포함 버전으로 다시 그린다. -->
+      <div class="idx" id="idxRows">
+        <a class="row" href="/shoes/asics-novablast-5">
+          <span class="row-th"></span>
+          <span><span class="row-b">ASICS</span><span class="row-n">노바블라스트 5</span></span>
+          <span class="row-d">바운시 데일리 트레이너. 다양한 페이스를 한 켤레로</span>
+          <span class="row-u">데일리</span>
+          <span class="row-w">255g</span>
+          <span class="row-p">169,000원</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/brooks-ghost-17">
+          <span class="row-th"></span>
+          <span><span class="row-b">BROOKS</span><span class="row-n">고스트 17</span></span>
+          <span class="row-d">부드러운 착지감의 표준 입문화</span>
+          <span class="row-u">입문화</span>
+          <span class="row-w">289g</span>
+          <span class="row-p">169,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/adidas-supernova-rise-3">
+          <span class="row-th"></span>
+          <span><span class="row-b">ADIDAS</span><span class="row-n">슈퍼노바 라이즈 3</span></span>
+          <span class="row-d">폼이 20% 더 부드러워진 프리미엄 쿠션화</span>
+          <span class="row-u">쿠션화</span>
+          <span class="row-w">270g</span>
+          <span class="row-p">159,000원</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/adidas-boston-13">
+          <span class="row-th"></span>
+          <span><span class="row-b">ADIDAS</span><span class="row-n">보스턴 13</span></span>
+          <span class="row-d">훈련과 레이스를 겸하는 템포 트레이너</span>
+          <span class="row-u">데일리</span>
+          <span class="row-w">254g</span>
+          <span class="row-p">179,000원</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/puma-velocity-nitro-4">
+          <span class="row-th"></span>
+          <span><span class="row-b">PUMA</span><span class="row-n">벨로시티 나이트로 4</span></span>
+          <span class="row-d">가볍고 반응성 좋은 가성비 입문화</span>
+          <span class="row-u">입문화</span>
+          <span class="row-w">224g</span>
+          <span class="row-p">179,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/brooks-ghost-max-3">
+          <span class="row-th"></span>
+          <span><span class="row-b">BROOKS</span><span class="row-n">고스트 맥스 3</span></span>
+          <span class="row-d">두꺼운 폼으로 충격을 크게 줄인 맥시멀</span>
+          <span class="row-u">쿠션화</span>
+          <span class="row-w">303g</span>
+          <span class="row-p">179,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/nike-vomero-18">
+          <span class="row-th"></span>
+          <span><span class="row-b">NIKE</span><span class="row-n">보메로 18</span></span>
+          <span class="row-d">푹신하면서도 반발이 남는 맥스 쿠션</span>
+          <span class="row-u">쿠션화</span>
+          <span class="row-w">298g</span>
+          <span class="row-p">189,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-arahi-8">
+          <span class="row-th"></span>
+          <span><span class="row-b">HOKA</span><span class="row-n">아라히 8</span></span>
+          <span class="row-d">평발·과내전을 위한 가벼운 안정화</span>
+          <span class="row-u">안정화</span>
+          <span class="row-w">259g</span>
+          <span class="row-p">199,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-clifton-10">
+          <span class="row-th"></span>
+          <span><span class="row-b">HOKA</span><span class="row-n">클리프톤 10</span></span>
+          <span class="row-d">로커로 굴러가는 대표 입문화</span>
+          <span class="row-u">입문화</span>
+          <span class="row-w">275g</span>
+          <span class="row-p">199,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-speedgoat-6">
+          <span class="row-th"></span>
+          <span><span class="row-b">HOKA</span><span class="row-n">스피드고트 6</span></span>
+          <span class="row-d">젖은 바위까지 잡는 트레일 데일리</span>
+          <span class="row-u">트레일</span>
+          <span class="row-w">278g</span>
+          <span class="row-p">205,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/adidas-adizero-evo-sl">
+          <span class="row-th"></span>
+          <span><span class="row-b">ADIDAS</span><span class="row-n">아디제로 Evo SL</span></span>
+          <span class="row-d">데일리 가격에 레이싱 폼을 넣은 이례적 구성</span>
+          <span class="row-u">데일리</span>
+          <span class="row-w">223g</span>
+          <span class="row-p">209,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/brooks-glycerin-gts-22">
+          <span class="row-th"></span>
+          <span><span class="row-b">BROOKS</span><span class="row-n">글리세린 GTS 22</span></span>
+          <span class="row-d">쿠션에 가이드레일을 더한 안정화</span>
+          <span class="row-u">안정화</span>
+          <span class="row-w">305g</span>
+          <span class="row-p">209,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/adidas-terrex-agravic-4">
+          <span class="row-th"></span>
+          <span><span class="row-b">ADIDAS</span><span class="row-n">테렉스 아그라빅 4</span></span>
+          <span class="row-d">진흙·테크니컬 지형에 강한 올라운드 트레일</span>
+          <span class="row-u">트레일</span>
+          <span class="row-w">283g</span>
+          <span class="row-p">209,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/saucony-endorphin-speed-5">
+          <span class="row-th"></span>
+          <span><span class="row-b">SAUCONY</span><span class="row-n">엔돌핀 스피드 5</span></span>
+          <span class="row-d">나일론 플레이트로 훈련과 레이스 모두</span>
+          <span class="row-u">데일리</span>
+          <span class="row-w">241g</span>
+          <span class="row-p">219,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/asics-superblast-2">
+          <span class="row-th"></span>
+          <span><span class="row-b">ASICS</span><span class="row-n">슈퍼블라스트 2</span></span>
+          <span class="row-d">일상 훈련까지 소화하는 슈퍼트레이너</span>
+          <span class="row-u">레이싱</span>
+          <span class="row-w">252g</span>
+          <span class="row-p">249,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/nike-alphafly-3">
+          <span class="row-th"></span>
+          <span><span class="row-b">NIKE</span><span class="row-n">알파플라이 3</span></span>
+          <span class="row-d">풀코스 기록 단축을 위한 최상위 레이서</span>
+          <span class="row-u">레이싱</span>
+          <span class="row-w">201g</span>
+          <span class="row-p">349,000원</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+      </div>
 
       <!-- 점진 확장 — 기본 16 → +24 → +24 → 전체 -->
-      <div class="expand" id="expandWrap">
+      <!-- JS 가 켜졌을 때만 노출. 무JS 환경에서는 아래 <details> 가 전체 접근 경로다 -->
+      <div class="expand" id="expandWrap" hidden>
         <button class="expand-b" id="expandBtn">러닝화 24개 더 보기 <span class="cnt">16 / 122</span></button>
       </div>
 
@@ -1066,8 +1232,113 @@
            정적 HTML 에는 122개 링크가 모두 남아 내부링크와 크롤링이 보존된다. -->
       <details class="more" id="moreFallback">
         <summary>나머지 <span class="cnt">106종</span> 펼쳐 보기</summary>
-        <div style="padding:18px 0;font-size:13.5px;color:var(--ink-soft)">
-          JavaScript 없이도 이 안에 나머지 106행이 그대로 들어 있습니다.
+        <div class="fb-list">
+          <a href="/shoes/li-ning-red-hare-9-pro"><b>레드헤어 9 프로</b><span>LI-NING · 데일리 · 140,000원</span></a>
+          <a href="/shoes/new-balance-1080-v14"><b>1080 V14</b><span>NEW BALANCE · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/nike-pegasus-premium"><b>페가수스 프리미엄</b><span>NIKE · 입문화 · 279,000원</span></a>
+          <a href="/shoes/asics-superblast-3"><b>슈퍼블라스트 3</b><span>ASICS · 레이싱 · 259,000원</span></a>
+          <a href="/shoes/new-balance-860-v15"><b>860 V15</b><span>NEW BALANCE · 안정화 · 189,000원</span></a>
+          <a href="/shoes/hoka-speedgoat-7"><b>스피드고트 7</b><span>HOKA · 트레일 · 219,000원</span></a>
+          <a href="/shoes/asics-novablast-6"><b>노바블라스트 6</b><span>ASICS · 데일리 · 179,000원</span></a>
+          <a href="/shoes/brooks-glycerin-22"><b>글리세린 22</b><span>BROOKS · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/li-ning-red-hare-9"><b>레드헤어 9</b><span>LI-NING · 입문화 · 95,000원</span></a>
+          <a href="/shoes/saucony-endorphin-pro-4"><b>엔돌핀 프로 4</b><span>SAUCONY · 레이싱 · 269,000원</span></a>
+          <a href="/shoes/saucony-hurricane-26"><b>허리케인 26</b><span>SAUCONY · 안정화 · 219,000원</span></a>
+          <a href="/shoes/nike-acg-zegama-trail"><b>ACG 제가마 트레일</b><span>NIKE · 트레일 · 219,000원</span></a>
+          <a href="/shoes/puma-deviate-pure-nitro"><b>디비에이트 나이트로 퓨어</b><span>PUMA · 데일리 · 189,000원</span></a>
+          <a href="/shoes/nike-vomero-plus"><b>보메로 플러스</b><span>NIKE · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/adidas-supernova-rise-2"><b>슈퍼노바 라이즈 2</b><span>ADIDAS · 입문화 · 149,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-elite-3"><b>디비에이트 나이트로 엘리트 3</b><span>PUMA · 레이싱 · 289,000원</span></a>
+          <a href="/shoes/mizuno-wave-inspire-21"><b>웨이브 인스파이어 21</b><span>MIZUNO · 안정화 · 159,000원</span></a>
+          <a href="/shoes/hoka-tecton-x-3"><b>테크톤 X 3</b><span>HOKA · 트레일 · 339,000원</span></a>
+          <a href="/shoes/nike-pegasus-plus"><b>페가수스 플러스</b><span>NIKE · 데일리 · 219,000원</span></a>
+          <a href="/shoes/brooks-hyperion-max-3"><b>하이페리온 맥스 3</b><span>BROOKS · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-pegasus-41"><b>페가수스 41</b><span>NIKE · 입문화 · 159,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-elite-4"><b>디비에이트 나이트로 엘리트 4</b><span>PUMA · 레이싱 · 289,000원</span></a>
+          <a href="/shoes/saucony-guide-18"><b>가이드 18</b><span>SAUCONY · 안정화 · 159,000원</span></a>
+          <a href="/shoes/new-balance-hierro-v9"><b>히에로 v9</b><span>NEW BALANCE · 트레일 · 189,000원</span></a>
+          <a href="/shoes/nike-rival-fly-4"><b>라이벌 플라이 4</b><span>NIKE · 데일리 · 139,000원</span></a>
+          <a href="/shoes/asics-sonicblast"><b>소닉블라스트</b><span>ASICS · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/saucony-ride-18"><b>라이드 18</b><span>SAUCONY · 입문화 · 159,000원</span></a>
+          <a href="/shoes/adidas-adios-pro-4"><b>아디제로 아디오스 프로 4</b><span>ADIDAS · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/nike-structure-26"><b>스트럭처 26</b><span>NIKE · 안정화 · 169,000원</span></a>
+          <a href="/shoes/salomon-pulsar"><b>펄사</b><span>SALOMON · 트레일 · 210,000원</span></a>
+          <a href="/shoes/adidas-adizero-sl2"><b>아디제로 SL2</b><span>ADIDAS · 데일리 · 149,000원</span></a>
+          <a href="/shoes/hoka-bondi-9"><b>본디 9</b><span>HOKA · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/nike-pegasus-42"><b>페가수스 42</b><span>NIKE · 입문화 · 169,000원</span></a>
+          <a href="/shoes/brooks-hyperion-elite-5"><b>하이페리온 엘리트 5</b><span>BROOKS · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/mizuno-wave-horizon-8"><b>웨이브 호라이즌 8</b><span>MIZUNO · 안정화 · 179,000원</span></a>
+          <a href="/shoes/salomon-ultra-glide-4"><b>울트라 글라이드 4</b><span>SALOMON · 트레일 · 230,000원</span></a>
+          <a href="/shoes/saucony-kinvara-16"><b>킨바라 16</b><span>SAUCONY · 데일리 · 159,000원</span></a>
+          <a href="/shoes/brooks-glycerin-max"><b>글리세린 맥스</b><span>BROOKS · 쿠션화 · 239,000원</span></a>
+          <a href="/shoes/saucony-ride-19"><b>라이드 19</b><span>SAUCONY · 입문화 · 179,000원</span></a>
+          <a href="/shoes/hoka-rocket-x-3"><b>로켓 X 3</b><span>HOKA · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/new-balance-860-v14"><b>860 V14</b><span>NEW BALANCE · 안정화 · 179,000원</span></a>
+          <a href="/shoes/salomon-s-lab-pulsar-4"><b>S/LAB 펄사 4</b><span>SALOMON · 트레일 · 340,000원</span></a>
+          <a href="/shoes/mizuno-wave-rider-29"><b>웨이브 라이더 29</b><span>MIZUNO · 데일리 · 169,000원</span></a>
+          <a href="/shoes/hoka-mach-x-3"><b>마하 X 3</b><span>HOKA · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/new-balance-880-v15"><b>880 V15</b><span>NEW BALANCE · 입문화 · 189,000원</span></a>
+          <a href="/shoes/saucony-endorphin-pro-5"><b>엔돌핀 프로 5</b><span>SAUCONY · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/saucony-guide-19"><b>가이드 19</b><span>SAUCONY · 안정화 · 179,000원</span></a>
+          <a href="/shoes/asics-gel-venture-10"><b>젤 벤처 10</b><span>ASICS · 트레일 · 89,000원</span></a>
+          <a href="/shoes/mizuno-wave-rider-30"><b>웨이브 라이더 30</b><span>MIZUNO · 데일리 · 179,000원</span></a>
+          <a href="/shoes/new-balance-sc-trainer-v3"><b>SC Trainer V3</b><span>NEW BALANCE · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/on-cloudrunner-2"><b>클라우드러너 2</b><span>ON · 입문화 · 189,000원</span></a>
+          <a href="/shoes/nike-vaporfly-4"><b>베이퍼플라이 4</b><span>NIKE · 레이싱 · 309,000원</span></a>
+          <a href="/shoes/brooks-adrenaline-gts-25"><b>아드레날린 GTS 25</b><span>BROOKS · 안정화 · 189,000원</span></a>
+          <a href="/shoes/adidas-terrex-agravic-speed-ultra"><b>테렉스 아그라빅 스피드 울트라 2</b><span>ADIDAS · 트레일 · 279,000원</span></a>
+          <a href="/shoes/hoka-mach-6"><b>마하 6</b><span>HOKA · 데일리 · 185,000원</span></a>
+          <a href="/shoes/asics-megablast"><b>메가블라스트</b><span>ASICS · 쿠션화 · 299,000원</span></a>
+          <a href="/shoes/on-cloudsurfer-2"><b>클라우드서퍼 2</b><span>ON · 입문화 · 199,000원</span></a>
+          <a href="/shoes/new-balance-sc-elite-v5"><b>SC Elite V5</b><span>NEW BALANCE · 레이싱 · 319,000원</span></a>
+          <a href="/shoes/asics-gel-kayano-32"><b>젤 카야노 32</b><span>ASICS · 안정화 · 199,000원</span></a>
+          <a href="/shoes/asics-metafuji-trail"><b>메타후지 트레일</b><span>ASICS · 트레일 · 279,000원</span></a>
+          <a href="/shoes/new-balance-rebel-v5"><b>레벨 V5</b><span>NEW BALANCE · 데일리 · 189,000원</span></a>
+          <a href="/shoes/new-balance-1080-v15"><b>1080 V15</b><span>NEW BALANCE · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/asics-metaspeed-edge-plus"><b>메타스피드 엣지+</b><span>ASICS · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/asics-gel-kayano-33"><b>젤 카야노 33</b><span>ASICS · 안정화 · 199,000원</span></a>
+          <a href="/shoes/nike-ultrafly"><b>울트라플라이</b><span>NIKE · 트레일 · 299,000원</span></a>
+          <a href="/shoes/saucony-endorphin-azura"><b>엔돌핀 아주라</b><span>SAUCONY · 데일리 · 189,000원</span></a>
+          <a href="/shoes/nike-vomero-premium"><b>보메로 프리미엄</b><span>NIKE · 쿠션화 · 289,000원</span></a>
+          <a href="/shoes/asics-metaspeed-sky-plus"><b>메타스피드 스카이+</b><span>ASICS · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/on-cloudrunner-3"><b>클라우드러너 3</b><span>ON · 안정화 · 199,000원</span></a>
+          <a href="/shoes/mizuno-neo-vista-3"><b>네오 비스타 3</b><span>MIZUNO · 데일리 · 219,000원</span></a>
+          <a href="/shoes/li-ning-red-hare-9-ultra"><b>레드헤어 9 울트라</b><span>LI-NING · 쿠션화 · 150,000원</span></a>
+          <a href="/shoes/hoka-cielo-x1"><b>씨엘로 X1</b><span>HOKA · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/saucony-hurricane-25"><b>허리케인 25</b><span>SAUCONY · 안정화 · 199,000원</span></a>
+          <a href="/shoes/on-cloudflow-5"><b>클라우드플로우 5</b><span>ON · 데일리 · 219,000원</span></a>
+          <a href="/shoes/asics-gel-nimbus-28"><b>젤 님버스 28</b><span>ASICS · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/on-cloudboom-strike"><b>클라우드붐 스트라이크</b><span>ON · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/hoka-gaviota-6"><b>가비오타 6</b><span>HOKA · 안정화 · 239,000원</span></a>
+          <a href="/shoes/adidas-hyperboost-edge"><b>하이퍼부스트 엣지</b><span>ADIDAS · 데일리 · 249,000원</span></a>
+          <a href="/shoes/on-cloudmonster-2"><b>클라우드몬스터 2</b><span>ON · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/saucony-endorphin-elite-2"><b>엔돌핀 엘리트 2</b><span>SAUCONY · 레이싱 · 339,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-4"><b>디비에이트 나이트로 4</b><span>PUMA · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-elite"><b>하이퍼워프 엘리트</b><span>MIZUNO · 레이싱 · 349,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3"><b>클라우드몬스터 3</b><span>ON · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/saucony-endorphin-elite-3"><b>엔돌핀 엘리트 3</b><span>SAUCONY · 레이싱 · 369,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3-hyper"><b>클라우드몬스터 3 하이퍼</b><span>ON · 쿠션화 · 259,000원</span></a>
+          <a href="/shoes/asics-metaspeed-ray"><b>메타스피드 레이</b><span>ASICS · 레이싱 · 399,000원</span></a>
+          <a href="/shoes/on-cloudmonster-hyper"><b>클라우드몬스터 하이퍼</b><span>ON · 쿠션화 · 259,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-pure"><b>하이퍼워프 퓨어</b><span>MIZUNO · 레이싱 · 399,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3-hyper-lightspray"><b>클라우드몬스터 3 하이퍼 라이트스프레이</b><span>ON · 쿠션화 · 319,000원</span></a>
+          <a href="/shoes/asics-magic-speed-5"><b>매직스피드 5</b><span>ASICS · 레이싱 · 229,000원</span></a>
+          <a href="/shoes/mizuno-wave-sky-9"><b>웨이브 스카이 9</b><span>MIZUNO · 쿠션화 · 189,000원</span></a>
+          <a href="/shoes/mizuno-wave-rebellion-flash-2"><b>웨이브 리벨리온 플래시 2</b><span>MIZUNO · 레이싱 · 189,000원</span></a>
+          <a href="/shoes/puma-magnify-nitro-3"><b>매그니파이 나이트로 3</b><span>PUMA · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/asics-magic-speed-4"><b>매직스피드 4</b><span>ASICS · 레이싱 · 199,000원</span></a>
+          <a href="/shoes/saucony-triumph-23"><b>트라이엄프 23</b><span>SAUCONY · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/mizuno-wave-rebellion-flash-3"><b>웨이브 리벨리온 플래시 3</b><span>MIZUNO · 레이싱 · 199,000원</span></a>
+          <a href="/shoes/on-cloudsurfer-max"><b>클라우드서퍼 맥스</b><span>ON · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-streakfly-2"><b>스트릭플라이 2</b><span>NIKE · 레이싱 · 219,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-3"><b>디비에이트 나이트로 3</b><span>PUMA · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-zoom-fly-6"><b>줌 플라이 6</b><span>NIKE · 레이싱 · 229,000원</span></a>
+          <a href="/shoes/saucony-endorphin-trainer"><b>엔돌핀 트레이너</b><span>SAUCONY · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-pro"><b>하이퍼워프 프로</b><span>MIZUNO · 레이싱 · 319,000원</span></a>
+          <a href="/shoes/puma-magmax-nitro-2"><b>매그맥스 나이트로 2</b><span>PUMA · 쿠션화 · 239,000원</span></a>
+          <a href="/shoes/puma-fast-r-nitro-elite-3"><b>패스트알 나이트로 엘리트 3</b><span>PUMA · 레이싱 · 379,000원</span></a>
+          <a href="/shoes/brooks-glycerin-max-2"><b>글리세린 맥스 2</b><span>BROOKS · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/new-balance-balos-v1"><b>발로스 V1</b><span>NEW BALANCE · 쿠션화 · 259,000원</span></a>
         </div>
       </details>
     </div>
