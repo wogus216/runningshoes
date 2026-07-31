@@ -1,0 +1,1521 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>allrunabout 홈 — 모바일 시안</title>
+</head>
+<body>
+
+<style>
+  /* ============================================================
+     Warm Performance — 데스크톱 시안과 같은 토큰. 다크 테마 없음(고정 라이트).
+     prefers-color-scheme 분기를 두지 않는다(§3).
+     ============================================================ */
+  :root {
+    --paper:       #F7F4ED;
+    --paper-soft:  #EFEAE0;
+    --surface:     #FFFFFF;
+    --ink:         #17150F;
+    --ink-soft:    #6E6A5E;
+    --line:        #D9D4C8;
+    --signal:      #FF4D00;
+    --signal-soft: #FFE7DB;
+
+    --signal-dark:   #C73800;
+    --positive:      #2F7D5A;
+    --warning:       #C98112;
+    --dark-soft:     #28241D;
+    --light-on-dark: #F7F4ED;
+
+    --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+            "Segoe UI", "Noto Sans KR", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    --tilt: -9deg;
+    --tilt-back: 9deg;
+    --pad: 18px;
+  }
+  @media (max-width: 370px) { :root { --pad: 15px; } }
+  @media (min-width: 415px) { :root { --pad: 20px; } }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { background: var(--paper); }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.62;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, p, ul, ol, dl, figure { margin: 0; }
+  ul { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+  /* 시안 문서용 라벨 한 줄 — 실제 코드에는 없다. 재생 버튼·프레임 라벨·기기 테두리는 두지 않는다 */
+  .spec-label {
+    max-width: 430px; margin: 0 auto; padding: 14px var(--pad) 6px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--ink-soft);
+  }
+  .spec-label b { color: var(--signal); font-weight: 500; }
+
+  /* ============================================================
+     홈 본체 — 모바일 단일 컬럼. 데스크톱 CSS를 축소한 것이 아니라 별도 구성이다.
+     ============================================================ */
+  .home { max-width: 430px; margin: 0 auto; background: var(--paper); }
+  .wrap { padding: 0 var(--pad); }
+
+  /* ---------- 01 헤더 ---------- */
+  .hdr { border-bottom: 1px solid var(--line); background: var(--paper); }
+  .hdr-in { display: flex; align-items: center; gap: 6px; height: 56px; }
+  .logo { font-weight: 800; font-size: 16px; letter-spacing: -0.03em;
+          display: flex; align-items: center; gap: 8px; margin-right: auto; }
+  .logo::before { content: ""; width: 3px; height: 16px; background: var(--signal);
+                  transform: skewX(var(--tilt)); }
+  .icon-btn { width: 44px; height: 44px; display: flex; align-items: center;
+              justify-content: center; font-size: 18px; color: var(--ink-soft); }
+  .icon-btn:hover { color: var(--ink); }
+  /* 헤더 추천 CTA — 아웃라인. 오렌지 솔리드 면은 히어로·최종 밴드 2곳뿐이다(§3) */
+  .btn-outline {
+    border: 1.5px solid var(--signal); color: var(--signal); background: transparent;
+    font-weight: 700; font-size: 13px; padding: 0 13px; height: 40px; border-radius: 2px;
+    display: inline-flex; align-items: center; white-space: nowrap;
+  }
+  .btn-outline:hover { background: var(--signal-soft); }
+
+  /* ---------- 02 키네틱 히어로 ----------
+     모바일 첫 화면에 키커·메인 카피·보조 문구·주요 CTA가 스크롤 없이 들어간다.
+     비주얼은 CTA 아래. 65~75svh를 목표로 하되 min-height 로 강제하지 않는다(§6). */
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line);
+          padding: 32px 0 58px; }
+  .h-kicker {
+    display: flex; align-items: center; gap: 9px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.2em;
+    color: var(--ink-soft); margin-bottom: 16px;
+  }
+  .h-kicker::before { content: ""; width: 22px; height: 2px; background: var(--signal);
+                      transform: skewY(var(--tilt)); }
+  .h-title {
+    font-size: clamp(37px, 10.8vw, 45px);
+    font-weight: 800; line-height: 0.95; letter-spacing: -0.042em;
+    margin-bottom: 16px; text-wrap: balance;
+  }
+  .h-title em { font-style: normal; color: var(--signal); }
+  .h-sub { color: var(--ink-soft); font-size: 14.5px; line-height: 1.58; margin-bottom: 20px; }
+  /* 오렌지 솔리드 면 ① — 히어로 주요 CTA */
+  .h-cta {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: var(--signal); color: #fff;
+    font-weight: 700; font-size: 16px; padding: 15px 18px;
+    border-radius: 2px; min-height: 52px;
+  }
+  .h-cta:hover { background: var(--signal-dark); }
+  .h-cta .arw { font-family: var(--mono); }
+  .h-meta { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.04em;
+            color: var(--ink-soft); margin-top: 11px; text-align: center; }
+  .h-alt { display: block; width: fit-content; margin: 12px auto 0;
+           font-size: 13.5px; font-weight: 500;
+           border-bottom: 1px solid var(--signal); padding-bottom: 3px; }
+
+  /* --- 히어로 비주얼 ---
+     컨테이너 106%(margin-left -2%) × 실루엣 left 22% / width 76%
+     = 합산 0.806. 데스크톱 0.70 대비 +15%(§6). 118%까지 키우면 라벨 왼쪽과
+     앞코가 화면 밖으로 나가므로 이 조합을 넘기지 않는다. */
+  .viz { position: relative; width: 106%; margin-left: -2%; margin-top: -10px;
+         aspect-ratio: 560/280; }
+
+  .track { position: absolute; inset: -30% -25%; pointer-events: none; }
+  .lane { position: absolute; left: 0; right: 0; height: 1px; background: var(--line);
+          transform: rotate(var(--tilt)); }
+  .lane:nth-child(1) { top: 30%; opacity: .2; }
+  .lane:nth-child(2) { top: 41%; opacity: .28; }
+  .lane:nth-child(3) { top: 53%; opacity: .36; }
+  .lane:nth-child(4) { top: 66%; opacity: .46; }
+  .lane:nth-child(5) { top: 80%; opacity: .58; }
+
+  /* 기울어진 데이터 좌표계 — 기준선은 남기고 태그는 숨긴다(§6) */
+  .rig { position: absolute; inset: 0; transform: rotate(var(--tilt)); }
+  .rail {
+    position: absolute; left: -8%; right: -8%; height: 1px;
+    background: color-mix(in srgb, var(--ink) 30%, transparent);
+    transform: scaleX(0); transform-origin: left center;
+  }
+  .rail::after { content: ""; position: absolute; right: 0; top: -2px;
+                 width: 4px; height: 4px; background: var(--signal);
+                 transform: skewX(var(--tilt)); }
+
+  /* 잔류 라벨 4개만. 제품명·소멸 라벨은 모바일에 없다(§6) */
+  .lab {
+    position: absolute; font-family: var(--mono);
+    font-size: clamp(8.2px, 2.4vw, 9.5px); letter-spacing: 0.02em;
+    white-space: nowrap; padding: 2px 6px;
+    border: 1px solid var(--signal); color: var(--signal); background: var(--signal-soft);
+    border-radius: 2px; opacity: 0;
+  }
+
+  /* 러닝화 와이어프레임 — Task 2 중립 실루엣. 특정 모델을 trace 하지 않았다.
+     viewBox 를 신발 실폭(x 205~475)으로 잘라 fig-wrap 폭 = 신발 폭이 되게 했다.
+     두 겹인 이유: 고스트는 첫 프레임부터 .12 로 남고(§4.6), 샤프는 왼→오른 와이프로
+     뒤늦게 선명해져야 한다. 한 겹으로는 둘이 충돌한다. */
+  .fig-wrap {
+    position: absolute; left: 22%; width: 76%;
+    top: 50%; transform: translateY(-50%);
+    aspect-ratio: 270/152;
+  }
+  .fig-wrap svg { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .sil-ghost { opacity: .12; }
+  .sil-sharp { opacity: 0; }
+
+  /* --- 모션: 2.4s. 정렬 연출(기준선으로 이동)은 생략하고 등장 후 바로 최종 배치다(§6).
+         마우스 시차 없음. .run 이 붙었을 때만 재생하고 세션당 1회다. --- */
+  .viz .lab   { animation: labIn 2.4s ease both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .rail  { animation: railRun 2.4s cubic-bezier(.25,.75,.3,1) both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .sil-ghost { animation: shoeAdvance 2.4s cubic-bezier(.3,.6,.2,1) both; animation-play-state: paused; }
+  .viz .sil-sharp {
+    animation: silReveal 2.4s ease both,
+               silWipe   2.4s cubic-bezier(.35,.1,.2,1) both,
+               shoeAdvance 2.4s cubic-bezier(.3,.6,.2,1) both;
+    animation-play-state: paused;
+  }
+  .viz .fig-foot { animation: drawFoot 2.4s cubic-bezier(.4,.1,.2,1) both; animation-play-state: paused; }
+  .viz .fig-tick { animation: tickIn 2.4s ease both; animation-play-state: paused; }
+  .viz .fig-fit  { animation: fitIn 2.4s ease both; animation-play-state: paused; }
+  .run .viz *    { animation-play-state: running !important; }
+  /* CTA 화살표는 마지막 장면에서 한 번 반응한다. 카피와 CTA 자체는 움직이지 않는다 */
+  .h-cta .arw { animation: ctaArrow 2.4s cubic-bezier(.3,.7,.3,1) both; animation-play-state: paused; }
+  .run .h-cta .arw { animation-play-state: running; }
+
+  @keyframes labIn  { 0%,8% { opacity: 0; } 30%,100% { opacity: 1; } }
+  @keyframes railRun { 0% { transform: scaleX(0); } 35%,100% { transform: scaleX(1); } }
+  @keyframes silWipe { 0%,25% { clip-path: inset(0 100% 0 0); } 60%,100% { clip-path: inset(0 0 0 0); } }
+  @keyframes silReveal { 0%,25% { opacity: .12; } 60%,100% { opacity: 1; } }
+  @keyframes drawFoot { 0%,55% { stroke-dashoffset: 1400; opacity: 0; }
+                        58% { opacity: 1; } 80%,100% { stroke-dashoffset: 0; opacity: 1; } }
+  @keyframes tickIn { 0%,70% { opacity: 0; } 88%,100% { opacity: 1; } }
+  /* 적합 영역은 CTA 보다 강하면 안 된다 — 최대 .32, 최종 정지 .19 */
+  @keyframes fitIn  { 0%,78% { opacity: 0; } 90% { opacity: .32; } 100% { opacity: .19; } }
+  @keyframes shoeAdvance { 0%,80% { transform: translateX(0); }
+                           92% { transform: translateX(6px); } 100% { transform: translateX(5px); } }
+  @keyframes ctaArrow { 0%,86% { transform: translateX(0); }
+                        93% { transform: translateX(5px); } 100% { transform: translateX(0); } }
+
+  /* 저사양 기기(.low)와 prefers-reduced-motion 은 같은 정적 화면으로 간다.
+     모션을 없애도 최종 장면(실루엣·발 윤곽·적합 영역·라벨 4개)은 그대로 남는다. */
+  .low .viz *, .low .h-cta .arw { animation: none !important; }
+  .low .viz .lab, .low .viz .fig-tick { opacity: 1; }
+  .low .viz .rail { transform: scaleX(1); }
+  .low .viz .sil-sharp { clip-path: inset(0 0 0 0); opacity: 1; }
+  .low .viz .sil-ghost { opacity: 0; }
+  .low .viz .fig-foot { stroke-dashoffset: 0; opacity: 1; }
+  .low .viz .fig-fit { opacity: .19; }
+  @media (prefers-reduced-motion: reduce) {
+    .viz *, .h-cta .arw { animation: none !important; }
+    .viz .lab, .viz .fig-tick { opacity: 1; }
+    .viz .rail { transform: scaleX(1); }
+    .viz .sil-sharp { clip-path: inset(0 0 0 0); opacity: 1; }
+    .viz .sil-ghost { opacity: 0; }
+    .viz .fig-foot { stroke-dashoffset: 0; opacity: 1; }
+    .viz .fig-fit { opacity: .19; }
+  }
+
+  /* ---------- 공통 섹션 ---------- */
+  .sec { padding: 34px 0; border-bottom: 1px solid var(--line); }
+  .sec.tight { padding: 24px 0; }
+  .sec.alt { background: var(--paper-soft); }
+  .sec-top { margin-bottom: 16px; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 8px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.18em;
+    color: var(--ink-soft); margin-bottom: 10px;
+  }
+  .eyebrow::before { content: ""; width: 16px; height: 2px; background: var(--signal);
+                     transform: skewY(var(--tilt)); }
+  .sec-h { font-size: 25px; font-weight: 800; letter-spacing: -0.032em;
+           line-height: 1.16; text-wrap: balance; }
+  .sec-p { color: var(--ink-soft); font-size: 14px; margin-top: 9px; }
+
+  /* ---------- 03 재방문 이어보기 ---------- */
+  .resume-top { display: flex; align-items: baseline; justify-content: space-between;
+                gap: 12px; margin-bottom: 14px; }
+  .resume-h { font-size: 21px; font-weight: 780; letter-spacing: -0.028em; }
+  .resume-clear { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+                  color: var(--ink-soft); border-bottom: 1px solid var(--line);
+                  padding: 0 0 2px; }
+  .resume { display: grid; gap: 1px; background: var(--line);
+            border: 1px solid var(--line); }
+  .res-i { background: var(--surface); padding: 10px 14px; display: flex; gap: 12px;
+           align-items: center; min-height: 58px; }
+  .res-i:hover { background: var(--signal-soft); }
+  .res-th { width: 48px; flex: none; display: flex; align-items: center; justify-content: center; }
+  .res-th img { max-height: 34px; width: auto; }
+  .res-k { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+           color: var(--ink-soft); display: block; }
+  .res-v { display: block; font-size: 14px; font-weight: 650; letter-spacing: -0.018em;
+           line-height: 1.3; margin-top: 2px; }
+  .res-x { display: block; font-size: 11.5px; color: var(--ink-soft); margin-top: 1px; }
+
+  /* ---------- 04 고민별 탐색 — 1열 6행 ----------
+     균등 6칸을 쓰지 않는다. 첫 3개(처음·발볼·장거리)에 더 큰 제목 · 짧은 시그널 선 ·
+     결과 수를 붙여 우선순위가 세로 스크롤에서도 읽히게 한다(§5.1·§6). */
+  .prob { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .prob-i { background: var(--surface); position: relative; display: block;
+            padding: 16px var(--pad) 14px; }
+  .prob-i:hover { background: var(--signal-soft); }
+  .prob-n { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
+            color: var(--signal); }
+  .prob-q { font-weight: 700; letter-spacing: -0.022em; line-height: 1.3; }
+  .prob-c { color: var(--ink-soft); line-height: 1.55; }
+  .prob-f { display: flex; align-items: center; justify-content: space-between; gap: 10px;
+            font-family: var(--mono); color: var(--ink-soft); }
+  .prob-f b { font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+  /* 우선순위 상위 3개 — 시그널 선 + 큰 제목 + 결과 수 */
+  .prob-i.hi { padding: 16px var(--pad) 14px; }
+  .prob-i.hi::before { content: ""; display: block; width: 30px; height: 3px;
+                       background: var(--signal); transform: skewX(var(--tilt-back));
+                       margin-bottom: 12px; }
+  .prob-i.hi .prob-n { margin-bottom: 7px; }
+  .prob-i.hi .prob-q { font-size: 21px; letter-spacing: -0.03em; margin-bottom: 8px; }
+  .prob-i.hi .prob-c { font-size: 13px; }
+  .prob-i.hi .prob-f { margin-top: 13px; padding-top: 10px;
+                       border-top: 2px solid var(--ink); font-size: 10.5px; }
+  .prob-i.hi .prob-f b { font-size: 17px; letter-spacing: -0.02em; }
+  /* 01 은 배번호·판단 기준 칩·실제 썸네일까지 -- 가장 많이 찾는 고민 */
+  .prob-i.lead .prob-q { font-size: 24px; }
+  .prob-keys { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 11px; }
+  .prob-keys span { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em;
+                    border: 1px solid var(--line); padding: 3px 7px;
+                    color: var(--ink-soft); background: var(--paper); }
+  .prob-th { display: flex; align-items: flex-end; gap: 14px; margin-top: 12px; }
+  .pth { position: relative; z-index: 1; display: flex; flex-direction: column;
+         align-items: center; gap: 5px; min-height: 44px; }
+  .prob-th img { max-height: 46px; width: auto; }
+  .pth span { font-family: var(--mono); font-size: 9px; letter-spacing: 0.04em;
+              color: var(--ink-soft); border-bottom: 1px solid transparent; }
+  .pth:hover span { color: var(--signal); border-bottom-color: var(--signal); }
+  /* stretched-link — 패널 어디를 눌러도 /best/beginner. 썸네일만 각 상세로 빠진다 */
+  .prob-go { font-family: var(--mono); font-size: 11px; color: var(--signal); }
+  .prob-go.stretch::after { content: ""; position: absolute; inset: 0; }
+
+  /* 하위 3개 — 낮은 행. 배번호를 왼쪽에 붙여 목록처럼 읽힌다 */
+  .prob-i.cmp { display: grid; grid-template-columns: 24px 1fr auto;
+                gap: 2px 10px; align-items: baseline; padding: 12px var(--pad) 11px; }
+  .prob-i.cmp .prob-n { grid-column: 1; grid-row: 1 / span 2; }
+  .prob-i.cmp .prob-q { grid-column: 2; grid-row: 1; font-size: 15px; }
+  .prob-i.cmp .prob-f { grid-column: 3; grid-row: 1 / span 2; font-size: 10.5px;
+                        justify-self: end; align-self: center; white-space: nowrap; }
+  .prob-i.cmp .prob-c { grid-column: 2; grid-row: 2; font-size: 12px; margin-top: 3px; }
+  .disclaim { margin-top: 14px; font-size: 12px; color: var(--ink-soft);
+              padding-left: 11px; border-left: 2px solid var(--line); }
+
+  /* ---------- 05 추천 작동 방식 ---------- */
+  .steps { display: grid; gap: 8px; margin-bottom: 18px; }
+  .step { display: grid; grid-template-columns: 26px 1fr; gap: 10px;
+          padding-top: 10px; border-top: 2px solid var(--ink); }
+  .step-n { font-family: var(--mono); font-size: 10.5px; color: var(--signal);
+            letter-spacing: 0.12em; }
+  .step-t { font-size: 14px; font-weight: 600; line-height: 1.45; }
+  .roles { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  .role { background: var(--surface); padding: 11px 15px;
+          display: grid; grid-template-columns: auto 1fr; gap: 3px 11px; align-items: baseline; }
+  .role-b { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
+            padding: 3px 7px; border: 1px solid var(--line); color: var(--ink-soft); }
+  .role.lead .role-b { border-color: var(--signal); color: var(--signal);
+                       background: var(--signal-soft); }
+  .role-t { font-size: 14.5px; font-weight: 700; letter-spacing: -0.015em; }
+  .role-d { grid-column: 2; font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
+  .fits { margin-top: 15px; border: 1px solid var(--line); background: var(--surface);
+          padding: 13px 14px 11px; }
+  .fits-h { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
+            color: var(--ink-soft); margin-bottom: 12px; }
+  .fit-row { display: grid; grid-template-columns: 78px 1fr 56px; gap: 9px;
+             align-items: center; padding: 4px 0; }
+  .fit-k { font-size: 12.5px; font-weight: 600; }
+  .fit-bar { height: 6px; background: var(--paper-soft); position: relative; }
+  .fit-bar i { position: absolute; inset: 0 auto 0 0; background: var(--signal); display: block; }
+  .fit-bar.mid i { background: var(--ink-soft); }
+  .fit-v { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); text-align: right; }
+
+  /* ---------- 06 신뢰 지표 ---------- */
+  .metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 15px; }
+  .met { border-top: 2px solid var(--ink); padding-top: 10px; }
+  .met-v { font-family: var(--mono); font-size: 26px; font-weight: 500;
+           letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums; }
+  .met-v.sig { color: var(--signal); }
+  .met-l { font-size: 11px; color: var(--ink-soft); margin-top: 7px; line-height: 1.4; }
+  .trust-q { font-size: 14.5px; line-height: 1.6; font-weight: 500; letter-spacing: -0.012em; }
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 13px; }
+  .badge { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em;
+           border: 1px solid var(--line); padding: 4px 8px; color: var(--ink-soft);
+           background: var(--surface); }
+  /* 상태 색은 보조 신호일 뿐, 텍스트가 항상 함께 있다 */
+  .badge.on { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .badge.ok { border-color: var(--positive); color: var(--positive); }
+  .badge.est { border-color: var(--warning); color: var(--warning); }
+  .trust-link { display: inline-block; margin-top: 15px; font-size: 13.5px; font-weight: 600;
+                border-bottom: 1px solid var(--signal); padding-bottom: 3px; }
+
+  /* ---------- 07 필터 + 러닝화 인덱스 ----------
+     모바일 필터는 칩 인라인이 아니라 바텀시트다(§6). 목록 위에는 트리거 한 줄만 둔다. */
+  .fbar { display: flex; align-items: center; justify-content: space-between; gap: 12px;
+          padding: 12px 0 10px; border-bottom: 2px solid var(--ink); }
+  .fbtn { display: inline-flex; align-items: center; gap: 8px; min-height: 44px;
+          border: 1px solid var(--ink); background: var(--surface);
+          padding: 0 14px; border-radius: 2px; font-size: 13.5px; font-weight: 650; }
+  .fbtn .fbtn-n { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); }
+  .fbtn[data-on="1"] { border-color: var(--signal); color: var(--signal); }
+  .fbtn[data-on="1"] .fbtn-n { color: var(--signal); }
+  .result-n { font-size: 13px; font-weight: 600; text-align: right; }
+  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 15px; }
+
+  /* 모바일 메뉴 — 5개 메뉴 + 검색 + 추천 CTA. 헤더 nav 를 접어둔 자리다.
+     링크는 실제 <a> 로 DOM 에 남아 크롤러가 읽는다(숨김은 CSS 아닌 hidden 속성) */
+  .mnav {
+    position: fixed; inset: 0; z-index: 45; max-width: 430px; margin: 0 auto;
+    background: var(--paper); padding: 0 var(--pad) 24px; overflow-y: auto;
+  }
+  .mnav-h { display: flex; align-items: center; justify-content: space-between;
+            height: 56px; border-bottom: 1px solid var(--line); margin-bottom: 8px; }
+  .mnav-l { display: grid; }
+  .mnav-l a { display: flex; align-items: center; justify-content: space-between;
+              min-height: 56px; font-size: 19px; font-weight: 700; letter-spacing: -0.026em;
+              border-bottom: 1px solid var(--line); }
+  .mnav-l a span { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+  .mnav-s { display: flex; align-items: center; gap: 9px; min-height: 48px; margin-top: 16px;
+            border: 1px solid var(--line); background: var(--surface); padding: 0 14px;
+            border-radius: 2px; font-size: 14px; color: var(--ink-soft); width: 100%; }
+  .mnav .btn-outline { width: 100%; justify-content: center; height: 48px; margin-top: 10px;
+                       font-size: 15px; }
+
+  .sheet-bd { position: fixed; inset: 0; background: rgba(23,21,15,.5); z-index: 40; }
+  .sheet {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 41;
+    max-width: 430px; margin: 0 auto;
+    background: var(--paper); border-top: 2px solid var(--ink);
+    padding: 6px var(--pad) calc(14px + env(safe-area-inset-bottom));
+    max-height: 82svh; overflow-y: auto;
+  }
+  .sheet-grab { width: 40px; height: 3px; background: var(--line); margin: 6px auto 10px; }
+  .sheet-h { display: flex; align-items: center; justify-content: space-between;
+             margin-bottom: 14px; }
+  .sheet-h h3 { font-size: 17px; font-weight: 780; letter-spacing: -0.026em; }
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; }
+  .chip {
+    font-size: 13px; font-weight: 500; padding: 0 13px; min-height: 44px;
+    border: 1px solid var(--line); background: var(--surface); border-radius: 2px;
+    display: inline-flex; align-items: center; gap: 6px;
+  }
+  .chip .c-n { font-family: var(--mono); font-size: 10px; opacity: .62; }
+  /* 선택 상태는 잉크 면. 오렌지 솔리드 면은 CTA 2곳 예약이라 칩에 쓰지 않는다 */
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .sheet-f { display: grid; grid-template-columns: auto 1fr; gap: 10px;
+             margin-top: 16px; align-items: center; }
+  .sheet-reset { font-size: 13px; color: var(--ink-soft); min-height: 44px;
+                 padding: 0 12px; border: 1px solid var(--line); border-radius: 2px; }
+  .sheet-apply { background: var(--ink); color: var(--paper); font-weight: 700; font-size: 15px;
+                 min-height: 48px; border-radius: 2px; }
+
+  .idx { border-bottom: 1px solid var(--line); }
+  /* 12행 / 3칸 압축 — 썸네일 · 모델 · 가격 + 무게 · 상태 (§6) */
+  .row {
+    display: grid; grid-template-columns: 52px 1fr auto;
+    grid-template-areas: "th name price" "th meta stat";
+    gap: 3px 12px; align-items: center; padding: 12px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .row:hover { background: var(--surface); }
+  .row-th { grid-area: th; width: 52px; height: 38px; display: flex;
+            align-items: center; justify-content: center; }
+  .row-th img { max-height: 38px; width: auto; }
+  .row-nm { grid-area: name; }
+  .row-b { display: block; font-family: var(--mono); font-size: 9px; letter-spacing: 0.08em;
+           color: var(--ink-soft); }
+  .row-n { display: block; font-size: 14.5px; font-weight: 650; letter-spacing: -0.018em;
+           line-height: 1.3; }
+  .row-p { grid-area: price; font-family: var(--mono); font-size: 12.5px; font-weight: 600;
+           font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+  .row-w { grid-area: meta; font-family: var(--mono); font-size: 11px;
+           color: var(--ink-soft); font-variant-numeric: tabular-nums; }
+  .row-s { grid-area: stat; justify-self: end; font-family: var(--mono); font-size: 9px;
+           letter-spacing: 0.04em; color: var(--ink-soft);
+           border: 1px solid var(--line); padding: 2px 5px; white-space: nowrap; }
+  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  /* 썸네일이 아직 없는 신발 — 중립 실루엣 마크로 자리를 지킨다 */
+  .row-mark { width: 42px; height: 21px; color: var(--line); }
+  .row:hover .row-mark { color: var(--ink-soft); }
+
+  .expand { padding: 16px 0 2px; }
+  .expand-b { display: flex; align-items: center; justify-content: center; gap: 9px;
+              width: 100%; border: 1px solid var(--ink); background: var(--surface);
+              min-height: 48px; border-radius: 2px; font-size: 14px; font-weight: 650; }
+  .expand-b .cnt { font-family: var(--mono); font-size: 10.5px; opacity: .6; font-weight: 400;
+                   font-variant-numeric: tabular-nums; }
+
+  details.more > summary {
+    list-style: none; cursor: pointer; text-align: center;
+    padding: 15px 0; font-size: 13.5px; font-weight: 650;
+    border-bottom: 1px solid var(--line);
+  }
+  details.more > summary::-webkit-details-marker { display: none; }
+  details.more > summary .cnt { font-family: var(--mono); color: var(--ink-soft); font-weight: 400; }
+  /* 무JS 폴백 목록 — 나머지 110종의 실제 링크 */
+  .fb-list { display: grid; padding: 12px 0 16px; }
+  .fb-list a { display: flex; align-items: baseline; gap: 8px; padding: 9px 0;
+               border-bottom: 1px solid var(--line); }
+  .fb-list b { font-size: 13px; font-weight: 620; letter-spacing: -0.015em; }
+  .fb-list span { font-family: var(--mono); font-size: 9.5px; color: var(--ink-soft);
+                  margin-left: auto; white-space: nowrap; }
+
+  /* ---------- 08 광고 ---------- */
+  .ad { padding: 28px 0; }
+  .ad-l { font-family: var(--mono); font-size: 9px; letter-spacing: 0.18em;
+          color: var(--ink-soft); text-align: center; margin-bottom: 7px; }
+  .ad-box { min-height: 250px; border: 1px dashed var(--line); display: flex;
+            align-items: center; justify-content: center; text-align: center;
+            font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em;
+            color: var(--ink-soft); padding: 0 12px; }
+
+  /* ---------- 09 에디토리얼 ---------- */
+  .ed-lead { display: block; }
+  .ed-lead img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border: 1px solid var(--line); }
+  .ed-meta { display: flex; gap: 10px; font-family: var(--mono); font-size: 9.5px;
+             color: var(--ink-soft); margin: 12px 0 8px; letter-spacing: 0.06em; }
+  .ed-meta .cat { color: var(--signal); }
+  .ed-t { font-size: 19px; font-weight: 750; letter-spacing: -0.028em; line-height: 1.3; }
+  .ed-x { font-size: 13px; color: var(--ink-soft); margin-top: 8px; line-height: 1.55; }
+  .ed-by { font-family: var(--mono); font-size: 9.5px; color: var(--ink-soft); margin-top: 10px; }
+  .ed-list { border-top: 2px solid var(--ink); margin-top: 20px; }
+  .ed-i { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); }
+  .ed-i:hover .ed-it { color: var(--signal); }
+  .ed-im { display: flex; gap: 10px; font-family: var(--mono); font-size: 9px;
+           color: var(--ink-soft); margin-bottom: 5px; letter-spacing: 0.06em; }
+  .ed-it { font-size: 14px; font-weight: 620; line-height: 1.4; letter-spacing: -0.018em; }
+  .ed-i.more-link { display: flex; align-items: center; justify-content: space-between;
+                    font-size: 13.5px; font-weight: 650; border-bottom: 0; min-height: 44px; }
+  .ed-go { font-family: var(--mono); color: var(--signal); }
+
+  /* ---------- 10 최종 CTA — 페이지에서 유일한 다크 영역 ---------- */
+  .final { background: var(--ink); color: var(--light-on-dark);
+           padding: 46px 0 40px; position: relative; overflow: hidden; }
+  .final::before { content: ""; position: absolute; right: -20%; top: -30%; width: 70%;
+                   bottom: -30%; background: var(--dark-soft); transform: rotate(var(--tilt)); }
+  .final .lane { background: rgba(247,244,237,.09); }
+  .final-in { position: relative; }
+  .final-h { font-size: 27px; font-weight: 800; line-height: 1.14; letter-spacing: -0.034em;
+             text-wrap: balance; }
+  .final-s { color: rgba(247,244,237,.62); font-size: 12.5px; margin-top: 12px;
+             font-family: var(--mono); letter-spacing: 0.04em; }
+  /* 오렌지 솔리드 면 ② — 최종 밴드 CTA */
+  .btn-signal { display: flex; align-items: center; justify-content: center; gap: 9px;
+                background: var(--signal); color: #fff; font-weight: 700; font-size: 16px;
+                min-height: 52px; border-radius: 2px; margin-top: 20px; }
+  .final-alt { display: block; width: fit-content; margin: 14px auto 0; font-size: 13.5px;
+               border-bottom: 1px solid rgba(247,244,237,.4); padding-bottom: 3px; }
+  .final-routes { position: relative; display: grid; gap: 1px;
+                  background: rgba(247,244,237,.16); margin-top: 30px;
+                  border-top: 1px solid rgba(247,244,237,.16);
+                  border-bottom: 1px solid rgba(247,244,237,.16); }
+  .fr { background: var(--ink); padding: 14px 15px;
+        display: grid; grid-template-columns: auto 1fr auto; gap: 2px 10px; align-items: baseline; }
+  .fr:hover { background: var(--dark-soft); }
+  .fr-n { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; color: var(--signal); }
+  .fr-t { font-size: 15.5px; font-weight: 700; letter-spacing: -0.022em; }
+  .fr-a { font-family: var(--mono); color: rgba(247,244,237,.5); }
+  .fr-d { grid-column: 2 / -1; font-size: 12px; color: rgba(247,244,237,.55); line-height: 1.5; }
+  .final-foot { position: relative; display: grid; grid-template-columns: repeat(2,1fr);
+                gap: 16px; margin-top: 26px; }
+  .fs-v { font-family: var(--mono); font-size: 21px; font-weight: 500; line-height: 1;
+          letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+  .fs-l { font-size: 11.5px; color: rgba(247,244,237,.58); margin-top: 6px; }
+
+  /* ---------- 11 푸터 ---------- */
+  .ft { padding: 26px 0 34px; font-size: 12.5px; color: var(--ink-soft); }
+  .ft-nav { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 14px; }
+  .ft-nav a { min-height: 34px; display: inline-flex; align-items: center; }
+  .ft-c { font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; }
+</style>
+
+<div class="spec-label">모바일 &nbsp;·&nbsp; <b>390px</b> &nbsp;·&nbsp; 히어로 모션 2.4s</div>
+
+<div class="home" id="src">
+
+  <!-- 01 헤더 -->
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <button class="icon-btn" id="menuOpen" aria-label="메뉴 열기" aria-expanded="false"
+              aria-controls="mnav">☰</button>
+      <a class="logo" href="/">allrunabout</a>
+      <button class="icon-btn" aria-label="신발 검색">⌕</button>
+      <a class="btn-outline" href="/recommend">맞춤 추천</a>
+    </div>
+  </header>
+
+  <!-- 02 키네틱 히어로 — 카피·CTA 는 첫 화면 안, 비주얼은 CTA 아래 -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="h-kicker">KOREAN RUNNER FIT INDEX</p>
+      <h1 class="h-title">감으로 고르지<br><em>않는다.</em></h1>
+      <p class="h-sub">발볼, 국내 출시, 러닝 목적까지. 해외 평가를 한국 러너의 기준으로 다시 봅니다.</p>
+      <a class="h-cta" href="/recommend">약 1분 · 9문항 맞춤 추천 <span class="arw">→</span></a>
+      <p class="h-meta">러닝 경험 · 주간 거리 · 발볼 · 러닝 목적 · 예산</p>
+      <a class="h-alt" href="#problem">고민별로 찾아보기</a>
+
+      <div class="viz" aria-hidden="true">
+        <div class="track">
+          <span class="lane"></span><span class="lane"></span><span class="lane"></span>
+          <span class="lane"></span><span class="lane"></span>
+        </div>
+
+        <!-- 스타트 라인 · 속도선 · 기준선 태그는 모바일에 두지 않는다(§6) -->
+        <div class="rig">
+          <span class="rail" style="top:20%; --d:.02s"></span>
+          <span class="rail" style="top:42%; --d:.07s"></span>
+          <span class="rail" style="top:64%; --d:.12s"></span>
+          <span class="rail" style="top:86%; --d:.17s"></span>
+
+          <!-- 잔류 라벨 4개 -->
+          <span class="lab" style="left:1%; top:15%; --d:.05s">249g</span>
+          <span class="lab" style="left:1%; top:37%; --d:.11s">8mm DROP</span>
+          <span class="lab" style="left:1%; top:59%; --d:.17s">WIDE 76mm</span>
+          <span class="lab" style="left:1%; top:81%; --d:.23s">DAILY</span>
+        </div>
+
+        <div class="fig-wrap">
+          <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+            <path id="silOutline" d="M 205.0 269.4 C 205.8 265.3, 208.0 255.9, 209.9 245.1 C 211.8 234.3, 214.0 214.3, 216.5 204.6 C 218.9 194.8, 221.6 188.3, 224.6 186.7 C 227.5 185.1, 230.8 191.6, 234.2 194.8 C 237.6 198.0, 241.3 203.2, 245.2 206.1 C 249.1 208.9, 253.2 211.0, 257.5 211.7 C 261.8 212.5, 266.3 212.3, 270.9 210.4 C 275.5 208.5, 280.3 204.3, 285.2 200.5 C 290.2 196.6, 295.2 190.0, 300.3 187.4 C 305.5 184.8, 310.7 184.4, 316.0 185.0 C 321.3 185.6, 326.6 189.0, 332.0 191.1 C 337.3 193.3, 342.7 195.6, 348.0 198.0 C 353.4 200.4, 358.7 202.8, 364.0 205.5 C 369.3 208.2, 374.5 211.5, 379.7 214.3 C 384.8 217.2, 389.8 220.3, 394.8 222.4 C 399.7 224.4, 404.5 225.8, 409.1 226.8 C 413.7 227.7, 418.2 227.8, 422.5 228.0 C 426.8 228.2, 430.9 227.9, 434.8 227.9 C 438.7 227.8, 442.4 227.7, 445.8 227.7 C 449.2 227.7, 452.5 227.6, 455.4 228.1 C 458.4 228.5, 461.1 229.0, 463.5 230.4 C 466.0 231.9, 468.2 234.2, 470.1 236.9 C 472.0 239.6, 474.2 245.1, 475.0 246.7 C 474.2 257.0, 472.0 261.8, 470.1 264.6 C 468.2 267.4, 466.0 269.9, 463.5 272.3 C 461.1 274.8, 458.4 277.0, 455.4 279.3 C 452.5 281.6, 449.2 284.0, 445.8 286.1 C 442.4 288.3, 438.7 290.5, 434.8 292.4 C 430.9 294.3, 426.8 296.2, 422.5 297.6 C 418.2 299.1, 413.7 300.2, 409.1 301.1 C 404.5 302.0, 399.7 302.4, 394.8 302.8 C 389.8 303.3, 384.8 303.4, 379.7 303.6 C 374.5 303.8, 369.3 304.0, 364.0 304.0 C 358.7 304.0, 353.4 303.9, 348.0 303.8 C 342.7 303.8, 337.3 303.6, 332.0 303.5 C 326.6 303.5, 321.3 303.5, 316.0 303.5 C 310.7 303.6, 305.5 303.7, 300.3 303.7 C 295.2 303.8, 290.2 303.8, 285.2 303.8 C 280.3 303.7, 275.5 303.8, 270.9 303.7 C 266.3 303.6, 261.8 303.5, 257.5 303.2 C 253.2 302.9, 249.1 302.4, 245.2 301.8 C 241.3 301.3, 237.6 300.6, 234.2 299.6 C 230.8 298.7, 227.5 297.6, 224.6 296.2 C 221.6 294.9, 218.9 293.4, 216.5 291.5 C 214.0 289.6, 211.8 287.4, 209.9 284.6 C 208.0 281.8, 205.8 276.3, 205.0 274.6 Z" fill="none" stroke-linejoin="round"/>
+            <path id="silMidsole" d="M 216.5 258.5 C 217.8 259.2, 221.6 261.8, 224.6 263.2 C 227.5 264.5, 230.8 265.7, 234.2 266.6 C 237.6 267.5, 241.3 268.2, 245.2 268.8 C 249.1 269.4, 253.2 269.8, 257.5 270.1 C 261.8 270.4, 266.3 270.5, 270.9 270.6 C 275.5 270.7, 280.3 270.7, 285.2 270.7 C 290.2 270.7, 295.2 270.6, 300.3 270.7 C 305.5 270.8, 310.7 271.1, 316.0 271.3 C 321.3 271.6, 326.6 271.9, 332.0 272.3 C 337.3 272.7, 342.7 273.3, 348.0 273.8 C 353.4 274.3, 358.7 274.8, 364.0 275.2 C 369.3 275.5, 374.5 275.8, 379.7 276.1 C 384.8 276.3, 389.8 276.5, 394.8 276.5 C 399.7 276.5, 404.5 276.5, 409.1 276.0 C 413.7 275.5, 418.2 274.8, 422.5 273.7 C 426.8 272.6, 430.9 271.2, 434.8 269.6 C 438.7 268.1, 444.0 265.2, 445.8 264.3" fill="none" stroke-linecap="round"/>
+          </defs></svg>
+
+          <svg class="sil sil-ghost" viewBox="205 178 270 152" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="2.4"/>
+            <use href="#silMidsole" stroke="var(--ink)" stroke-width="2.4"/>
+          </svg>
+          <svg class="sil sil-sharp" viewBox="205 178 270 152" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="2.4"/>
+            <use href="#silMidsole" stroke="var(--signal)" stroke-width="2.8"/>
+          </svg>
+
+          <svg class="fig" viewBox="205 178 270 152" fill="none" preserveAspectRatio="xMidYMid meet">
+            <!-- 발볼 적합 영역 — 발 앞부분과 실루엣이 겹치는 구간. 최대 .32 / 최종 .19 -->
+            <path class="fig-fit" d="M383 251 L450 262 L448 269 L383 276 Z"
+                  fill="var(--signal)" opacity="0"/>
+
+            <!-- 발 윤곽 — 실루엣 안쪽 점선. Task 2 유도 결과라 실루엣과 좌표가 맞는다 -->
+            <path class="fig-foot"
+              d="M 232.0 238.6 C 233.5 236.9, 238.0 229.8, 241.1 228.3 C 244.1 226.7, 247.1 228.8, 250.1 229.1 C 253.2 229.5, 256.2 230.2, 259.2 230.3 C 262.2 230.4, 265.3 230.4, 268.3 229.8 C 271.3 229.2, 274.3 228.1, 277.4 226.9 C 280.4 225.8, 283.4 224.4, 286.4 223.0 C 289.5 221.5, 292.5 219.3, 295.5 218.2 C 298.5 217.0, 301.6 216.2, 304.6 215.9 C 307.6 215.7, 310.6 215.8, 313.6 216.4 C 316.7 217.1, 319.7 218.4, 322.7 219.7 C 325.7 220.9, 328.8 222.4, 331.8 223.8 C 334.8 225.2, 337.8 226.7, 340.9 228.1 C 343.9 229.5, 346.9 231.0, 349.9 232.4 C 353.0 233.9, 356.0 235.3, 359.0 236.8 C 362.0 238.3, 365.1 239.9, 368.1 241.4 C 371.1 243.0, 374.1 244.7, 377.2 246.2 C 380.2 247.8, 383.2 249.3, 386.2 250.7 C 389.2 252.2, 392.3 253.8, 395.3 255.0 C 398.3 256.2, 401.3 257.1, 404.4 258.0 C 407.4 258.8, 410.4 259.6, 413.4 260.3 C 416.5 261.0, 419.5 261.6, 422.5 262.1 C 425.5 262.6, 428.6 263.0, 431.6 263.3 C 434.6 263.5, 437.6 264.0, 440.7 263.6 C 443.7 263.2, 446.7 263.6, 449.7 260.6 C 452.8 257.7, 457.3 248.3, 458.8 245.9 C 457.3 247.6, 452.8 253.3, 449.7 256.0 C 446.7 258.7, 443.7 260.5, 440.7 262.2 C 437.6 264.0, 434.6 265.4, 431.6 266.6 C 428.6 267.9, 425.5 269.0, 422.5 269.8 C 419.5 270.5, 416.5 270.8, 413.4 271.2 C 410.4 271.5, 407.4 271.7, 404.4 271.8 C 401.3 271.8, 398.3 271.7, 395.3 271.5 C 392.3 271.2, 389.2 270.7, 386.2 270.2 C 383.2 269.6, 380.2 269.0, 377.2 268.2 C 374.1 267.5, 371.1 266.5, 368.1 265.5 C 365.1 264.5, 362.0 263.4, 359.0 262.3 C 356.0 261.1, 353.0 259.9, 349.9 258.8 C 346.9 257.7, 343.9 256.6, 340.9 255.7 C 337.8 254.8, 334.8 254.0, 331.8 253.5 C 328.8 253.0, 325.7 252.8, 322.7 252.8 C 319.7 252.8, 316.7 253.1, 313.6 253.5 C 310.6 253.9, 307.6 254.6, 304.6 255.3 C 301.6 256.0, 298.5 256.9, 295.5 257.8 C 292.5 258.6, 289.5 259.6, 286.4 260.5 C 283.4 261.3, 280.4 262.1, 277.4 262.7 C 274.3 263.3, 271.3 263.9, 268.3 264.3 C 265.3 264.6, 262.2 265.1, 259.2 265.0 C 256.2 264.8, 253.2 264.5, 250.1 263.4 C 247.1 262.2, 244.1 262.2, 241.1 258.1 C 238.0 253.9, 233.5 241.9, 232.0 238.6 Z"
+              stroke="var(--ink)" stroke-width="1.6" stroke-dasharray="4 3"
+              stroke-dashoffset="1400" opacity="0"/>
+
+            <!-- 발볼 계측 틱 3개 — 힐·발볼·앞코 -->
+            <g class="fig-tick" opacity="0">
+              <path d="M221 318 L464 318" stroke="var(--signal)" stroke-width="1" opacity=".5"/>
+              <path d="M221 300 L221 324" stroke="var(--signal)" stroke-width="1.8"/>
+              <path d="M383 282 L383 324" stroke="var(--signal)" stroke-width="1.8"/>
+              <path d="M464 276 L464 324" stroke="var(--signal)" stroke-width="1.8"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 재방문 이어보기 — 기록이 없으면 섹션 자체를 렌더하지 않는다.
+       이 섹션이 뜨는 재방문자에게는 05(추천 작동 방식)를 뺀다(§5).
+       시안은 두 섹션을 모두 보여주되 ?visitor=new / ?visitor=return 으로 분리해 볼 수 있다. -->
+  <section class="sec tight" data-visitor="return" style="background:var(--paper-soft)">
+    <div class="wrap">
+      <div class="resume-top">
+        <div>
+          <p class="eyebrow">CONTINUE</p>
+          <h2 class="resume-h">다시 이어볼까요?</h2>
+        </div>
+        <button class="resume-clear">기록 지우기</button>
+      </div>
+      <div class="resume">
+        <a class="res-i" href="/shoes/asics-novablast-5">
+          <span class="res-th"><img data-img="nova5" alt=""></span>
+          <span>
+            <span class="res-k">최근 본 신발</span>
+            <span class="res-v">노바블라스트 5</span>
+            <span class="res-x">2일 전 · 데일리</span>
+          </span>
+        </a>
+        <a class="res-i" href="/compare">
+          <span class="res-th"><img data-img="vomero18" alt=""></span>
+          <span>
+            <span class="res-k">비교하던 신발</span>
+            <span class="res-v">보메로 18 vs 슈퍼노바 라이즈 3</span>
+            <span class="res-x">비교 이어서 보기</span>
+          </span>
+        </a>
+        <a class="res-i" href="/recommend">
+          <span class="res-th"><span style="font-family:var(--mono);font-size:17px;color:var(--signal)">9/9</span></span>
+          <span>
+            <span class="res-k">지난 추천 결과</span>
+            <span class="res-v">넓은 발볼 · 데일리 · 20만원 이하</span>
+            <span class="res-x">결과 3켤레 다시 보기</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 고민별 탐색 — 1열 6행, 첫 3개 우선순위 표시 -->
+  <section class="sec" id="problem">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">START FROM YOUR PROBLEM</p>
+        <h2 class="sec-h">지금 어떤 신발이<br>필요하세요?</h2>
+        <p class="sec-p">전문 용어를 몰라도 됩니다. 고민을 고르면 어떤 기준으로 걸렀는지까지 함께 보여드립니다.</p>
+      </div>
+
+      <div class="prob">
+        <div class="prob-i hi lead">
+          <p class="prob-n">01 / 가장 많이 찾는 고민</p>
+          <p class="prob-q">처음 러닝화를<br>고르고 있어요</p>
+          <p class="prob-c">첫 켤레를 실패하면 러닝 자체가 싫어집니다. 쿠션 여유·무게·가격대를 함께 보고 국내 출시 모델만 남깁니다.</p>
+          <div class="prob-keys"><span>쿠션 여유</span><span>무게</span><span>가격대</span><span>국내 출시</span></div>
+          <div class="prob-th">
+            <a class="pth" href="/shoes/brooks-ghost-17"><img data-img="ghost17" alt="브룩스 고스트 17"><span>고스트 17</span></a>
+            <a class="pth" href="/shoes/hoka-clifton-10"><img data-img="clifton10" alt="호카 클리프톤 10"><span>클리프톤 10</span></a>
+            <a class="pth" href="/shoes/puma-velocity-nitro-4"><img data-img="velocity4" alt="푸마 벨로시티 나이트로 4"><span>벨로시티 4</span></a>
+          </div>
+          <p class="prob-f">
+            <span><b>13</b>종 정리됨</span>
+            <a class="prob-go stretch" href="/best/beginner">입문화 보기 →</a>
+          </p>
+        </div>
+
+        <a class="prob-i hi" href="/best/wide-toebox">
+          <p class="prob-n">02</p>
+          <p class="prob-q">발볼이 넓어서<br>선택이 어려워요</p>
+          <p class="prob-c">와이드 출시 여부, 토박스 너비, 갑피 여유를 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>57</b>종 정리됨</span><span class="prob-go">와이드 보기 →</span></p>
+        </a>
+
+        <a class="prob-i hi" href="/best/max-cushion">
+          <p class="prob-n">03</p>
+          <p class="prob-q">편안하게<br>오래 달리고 싶어요</p>
+          <p class="prob-c">스택 높이, 충격흡수 성향, 로커 구조를 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>32</b>종 정리됨</span><span class="prob-go">쿠션화 보기 →</span></p>
+        </a>
+
+        <a class="prob-i cmp" href="/best/racing">
+          <p class="prob-n">04</p>
+          <p class="prob-q">기록을 줄이고 싶어요</p>
+          <p class="prob-f"><b>29</b>종 →</p>
+          <p class="prob-c">플레이트 유무, 무게, 에너지 리턴을 기준으로 정리합니다.</p>
+        </a>
+
+        <a class="prob-i cmp" href="/best/knee-protection">
+          <p class="prob-n">05</p>
+          <p class="prob-q">무릎 부담이 걱정돼요</p>
+          <p class="prob-f"><b>92</b>종 →</p>
+          <p class="prob-c">충격흡수 성향과 안정성 구조를 기준으로 살펴봅니다. 러닝화 정보는 진단이나 치료를 대신하지 않습니다.</p>
+        </a>
+
+        <a class="prob-i cmp" href="/best/daily-trainer">
+          <p class="prob-n">06</p>
+          <p class="prob-q">한 켤레로 다양하게 뛰고 싶어요</p>
+          <p class="prob-f"><b>16</b>종 →</p>
+          <p class="prob-c">다목적 성향, 내구성 범위, 가격 균형을 기준으로 정리합니다.</p>
+        </a>
+      </div>
+
+      <p class="disclaim">러닝화 정보는 제품 선택을 위한 참고 자료이며, 통증의 진단이나 치료를 대신하지 않습니다.</p>
+    </div>
+  </section>
+
+  <!-- 05 추천 작동 방식 (신규 방문자) -->
+  <section class="sec alt" data-visitor="new">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 class="sec-h">약 1분, 9문항이면<br>충분합니다.</h2>
+        <p class="sec-p">한 켤레만 고르라고 하지 않습니다. 역할이 다른 세 가지를 놓고 비교하실 수 있게 정리합니다.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step"><p class="step-n">01</p><p class="step-t">러닝 경험과 주간 거리를 확인합니다.</p></div>
+        <div class="step"><p class="step-n">02</p><p class="step-t">발볼과 신발에서 불편했던 부분을 반영합니다.</p></div>
+        <div class="step"><p class="step-n">03</p><p class="step-t">러닝 목적과 예산에 맞춰 후보를 줄입니다.</p></div>
+      </div>
+
+      <div class="roles">
+        <div class="role lead">
+          <span class="role-b">BEST MATCH</span>
+          <p class="role-t">가장 잘 맞는 선택</p>
+          <p class="role-d">발볼·러닝 목적·사용 거리의 균형이 가장 좋은 모델</p>
+        </div>
+        <div class="role">
+          <span class="role-b">COMFORT</span>
+          <p class="role-t">더 편안한 선택</p>
+          <p class="role-d">쿠션과 안정성을 우선할 때 적합한 모델</p>
+        </div>
+        <div class="role">
+          <span class="role-b">VALUE</span>
+          <p class="role-t">더 경제적인 선택</p>
+          <p class="role-d">예산 안에서 조건을 가장 많이 충족하는 모델</p>
+        </div>
+      </div>
+
+      <div class="fits">
+        <p class="fits-h">결과에 붙는 적합도 — 종합점수 대신 항목별로</p>
+        <div class="fit-row"><span class="fit-k">발볼 적합도</span><span class="fit-bar"><i style="width:92%"></i></span><span class="fit-v">매우 높음</span></div>
+        <div class="fit-row"><span class="fit-k">러닝 목적</span><span class="fit-bar"><i style="width:74%"></i></span><span class="fit-v">높음</span></div>
+        <div class="fit-row"><span class="fit-k">예산 적합도</span><span class="fit-bar mid"><i style="width:50%"></i></span><span class="fit-v">보통</span></div>
+        <div class="fit-row"><span class="fit-k">국내 구매</span><span class="fit-bar"><i style="width:95%"></i></span><span class="fit-v">매우 높음</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 신뢰 지표 -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">WHAT THE NUMBERS COME FROM</p>
+        <h2 class="sec-h">어디서 온 데이터인지<br>먼저 밝힙니다.</h2>
+      </div>
+      <div class="metrics">
+        <div class="met"><p class="met-v sig">122</p><p class="met-l">분석 중인<br>러닝화</p></div>
+        <div class="met"><p class="met-v">07.31</p><p class="met-l">최근<br>데이터 갱신</p></div>
+        <div class="met"><p class="met-v">공개</p><p class="met-l">평가 기준과<br>출처</p></div>
+      </div>
+      <p class="trust-q">공식 정보와 전문 랩 데이터, 국내외 리뷰를 같은 기준으로 정리합니다. 한국 러너가 확인해야 할 정보를 분리해 보여드립니다.</p>
+      <div class="badges">
+        <span class="badge ok">공식 정보</span>
+        <span class="badge on">외부 랩 확인</span>
+        <span class="badge">리뷰 종합</span>
+        <span class="badge">직접 착화</span>
+        <span class="badge est">추정치</span>
+        <span class="badge est">갱신 대기</span>
+      </div>
+      <a class="trust-link" href="/about">평가 기준과 출처 전체 보기 →</a>
+    </div>
+  </section>
+
+  <!-- 07 필터 + 러닝화 인덱스 -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">SHOE INDEX</p>
+        <h2 class="sec-h">지금 비교 가능한 러닝화</h2>
+        <p class="sec-p">조건을 좁혀 보세요. 결과는 바로 아래에서 갱신됩니다.</p>
+      </div>
+
+      <!-- 필터 트리거 — 칩은 바텀시트 안에 있다 -->
+      <div class="fbar">
+        <button class="fbtn" id="filterOpen" aria-haspopup="dialog" data-on="0">
+          조건 좁히기 <span class="fbtn-n" id="filterLabel">전체</span>
+        </button>
+        <p class="result-n" id="resultN" aria-live="polite"><b>122</b>개 조건 일치</p>
+      </div>
+
+      <!-- 기본 12행. 정적 마크업이라 JavaScript 없이도 그대로 보이고 크롤러가 읽는다 -->
+      <div class="idx" id="idxRows">
+        <a class="row" href="/shoes/asics-novablast-5">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">ASICS · 데일리</span><span class="row-n">노바블라스트 5</span></span>
+          <span class="row-p">169,000원</span>
+          <span class="row-w">255g</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/brooks-ghost-17">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">BROOKS · 입문화</span><span class="row-n">고스트 17</span></span>
+          <span class="row-p">169,000원</span>
+          <span class="row-w">289g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/adidas-supernova-rise-3">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">ADIDAS · 쿠션화</span><span class="row-n">슈퍼노바 라이즈 3</span></span>
+          <span class="row-p">159,000원</span>
+          <span class="row-w">270g</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/adidas-boston-13">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">ADIDAS · 데일리</span><span class="row-n">보스턴 13</span></span>
+          <span class="row-p">179,000원</span>
+          <span class="row-w">254g</span>
+          <span class="row-s">리뷰 종합</span>
+        </a>
+        <a class="row" href="/shoes/puma-velocity-nitro-4">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">PUMA · 입문화</span><span class="row-n">벨로시티 나이트로 4</span></span>
+          <span class="row-p">179,000원</span>
+          <span class="row-w">224g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/brooks-ghost-max-3">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">BROOKS · 쿠션화</span><span class="row-n">고스트 맥스 3</span></span>
+          <span class="row-p">179,000원</span>
+          <span class="row-w">303g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/nike-vomero-18">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">NIKE · 쿠션화</span><span class="row-n">보메로 18</span></span>
+          <span class="row-p">189,000원</span>
+          <span class="row-w">298g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-arahi-8">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">HOKA · 안정화</span><span class="row-n">아라히 8</span></span>
+          <span class="row-p">199,000원</span>
+          <span class="row-w">259g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-clifton-10">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">HOKA · 입문화</span><span class="row-n">클리프톤 10</span></span>
+          <span class="row-p">199,000원</span>
+          <span class="row-w">275g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/hoka-speedgoat-6">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">HOKA · 트레일</span><span class="row-n">스피드고트 6</span></span>
+          <span class="row-p">205,000원</span>
+          <span class="row-w">278g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/adidas-adizero-evo-sl">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">ADIDAS · 데일리</span><span class="row-n">아디제로 Evo SL</span></span>
+          <span class="row-p">209,000원</span>
+          <span class="row-w">223g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+        <a class="row" href="/shoes/brooks-glycerin-gts-22">
+          <span class="row-th"></span>
+          <span class="row-nm"><span class="row-b">BROOKS · 안정화</span><span class="row-n">글리세린 GTS 22</span></span>
+          <span class="row-p">209,000원</span>
+          <span class="row-w">305g</span>
+          <span class="row-s verified">외부 랩 확인</span>
+        </a>
+      </div>
+
+      <!-- 점진 확장 — 기본 12 → +24 → +24 → 전체. JS 가 켜졌을 때만 노출 -->
+      <div class="expand" id="expandWrap" hidden>
+        <button class="expand-b" id="expandBtn">러닝화 24개 더 보기 <span class="cnt">12 / 122</span></button>
+      </div>
+
+      <!-- 무JS 폴백 — 정적 HTML 에 122개 링크가 모두 남아 내부링크와 크롤링이 보존된다 -->
+      <details class="more" id="moreFallback">
+        <summary>나머지 <span class="cnt">110종</span> 펼쳐 보기</summary>
+        <div class="fb-list">
+          <a href="/shoes/adidas-terrex-agravic-4"><b>테렉스 아그라빅 4</b><span>ADIDAS · 트레일 · 209,000원</span></a>
+          <a href="/shoes/saucony-endorphin-speed-5"><b>엔돌핀 스피드 5</b><span>SAUCONY · 데일리 · 219,000원</span></a>
+          <a href="/shoes/asics-superblast-2"><b>슈퍼블라스트 2</b><span>ASICS · 레이싱 · 249,000원</span></a>
+          <a href="/shoes/nike-alphafly-3"><b>알파플라이 3</b><span>NIKE · 레이싱 · 349,000원</span></a>
+          <a href="/shoes/li-ning-red-hare-9-pro"><b>레드헤어 9 프로</b><span>LI-NING · 데일리 · 140,000원</span></a>
+          <a href="/shoes/new-balance-1080-v14"><b>1080 V14</b><span>NEW BALANCE · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/nike-pegasus-premium"><b>페가수스 프리미엄</b><span>NIKE · 입문화 · 279,000원</span></a>
+          <a href="/shoes/asics-superblast-3"><b>슈퍼블라스트 3</b><span>ASICS · 레이싱 · 259,000원</span></a>
+          <a href="/shoes/new-balance-860-v15"><b>860 V15</b><span>NEW BALANCE · 안정화 · 189,000원</span></a>
+          <a href="/shoes/hoka-speedgoat-7"><b>스피드고트 7</b><span>HOKA · 트레일 · 219,000원</span></a>
+          <a href="/shoes/asics-novablast-6"><b>노바블라스트 6</b><span>ASICS · 데일리 · 179,000원</span></a>
+          <a href="/shoes/brooks-glycerin-22"><b>글리세린 22</b><span>BROOKS · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/li-ning-red-hare-9"><b>레드헤어 9</b><span>LI-NING · 입문화 · 95,000원</span></a>
+          <a href="/shoes/saucony-endorphin-pro-4"><b>엔돌핀 프로 4</b><span>SAUCONY · 레이싱 · 269,000원</span></a>
+          <a href="/shoes/saucony-hurricane-26"><b>허리케인 26</b><span>SAUCONY · 안정화 · 219,000원</span></a>
+          <a href="/shoes/nike-acg-zegama-trail"><b>ACG 제가마 트레일</b><span>NIKE · 트레일 · 219,000원</span></a>
+          <a href="/shoes/puma-deviate-pure-nitro"><b>디비에이트 나이트로 퓨어</b><span>PUMA · 데일리 · 189,000원</span></a>
+          <a href="/shoes/nike-vomero-plus"><b>보메로 플러스</b><span>NIKE · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/adidas-supernova-rise-2"><b>슈퍼노바 라이즈 2</b><span>ADIDAS · 입문화 · 149,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-elite-3"><b>디비에이트 나이트로 엘리트 3</b><span>PUMA · 레이싱 · 289,000원</span></a>
+          <a href="/shoes/mizuno-wave-inspire-21"><b>웨이브 인스파이어 21</b><span>MIZUNO · 안정화 · 159,000원</span></a>
+          <a href="/shoes/hoka-tecton-x-3"><b>테크톤 X 3</b><span>HOKA · 트레일 · 339,000원</span></a>
+          <a href="/shoes/nike-pegasus-plus"><b>페가수스 플러스</b><span>NIKE · 데일리 · 219,000원</span></a>
+          <a href="/shoes/brooks-hyperion-max-3"><b>하이페리온 맥스 3</b><span>BROOKS · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-pegasus-41"><b>페가수스 41</b><span>NIKE · 입문화 · 159,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-elite-4"><b>디비에이트 나이트로 엘리트 4</b><span>PUMA · 레이싱 · 289,000원</span></a>
+          <a href="/shoes/saucony-guide-18"><b>가이드 18</b><span>SAUCONY · 안정화 · 159,000원</span></a>
+          <a href="/shoes/new-balance-hierro-v9"><b>히에로 v9</b><span>NEW BALANCE · 트레일 · 189,000원</span></a>
+          <a href="/shoes/nike-rival-fly-4"><b>라이벌 플라이 4</b><span>NIKE · 데일리 · 139,000원</span></a>
+          <a href="/shoes/asics-sonicblast"><b>소닉블라스트</b><span>ASICS · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/saucony-ride-18"><b>라이드 18</b><span>SAUCONY · 입문화 · 159,000원</span></a>
+          <a href="/shoes/adidas-adios-pro-4"><b>아디제로 아디오스 프로 4</b><span>ADIDAS · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/nike-structure-26"><b>스트럭처 26</b><span>NIKE · 안정화 · 169,000원</span></a>
+          <a href="/shoes/salomon-pulsar"><b>펄사</b><span>SALOMON · 트레일 · 210,000원</span></a>
+          <a href="/shoes/adidas-adizero-sl2"><b>아디제로 SL2</b><span>ADIDAS · 데일리 · 149,000원</span></a>
+          <a href="/shoes/hoka-bondi-9"><b>본디 9</b><span>HOKA · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/nike-pegasus-42"><b>페가수스 42</b><span>NIKE · 입문화 · 169,000원</span></a>
+          <a href="/shoes/brooks-hyperion-elite-5"><b>하이페리온 엘리트 5</b><span>BROOKS · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/mizuno-wave-horizon-8"><b>웨이브 호라이즌 8</b><span>MIZUNO · 안정화 · 179,000원</span></a>
+          <a href="/shoes/salomon-ultra-glide-4"><b>울트라 글라이드 4</b><span>SALOMON · 트레일 · 230,000원</span></a>
+          <a href="/shoes/saucony-kinvara-16"><b>킨바라 16</b><span>SAUCONY · 데일리 · 159,000원</span></a>
+          <a href="/shoes/brooks-glycerin-max"><b>글리세린 맥스</b><span>BROOKS · 쿠션화 · 239,000원</span></a>
+          <a href="/shoes/saucony-ride-19"><b>라이드 19</b><span>SAUCONY · 입문화 · 179,000원</span></a>
+          <a href="/shoes/hoka-rocket-x-3"><b>로켓 X 3</b><span>HOKA · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/new-balance-860-v14"><b>860 V14</b><span>NEW BALANCE · 안정화 · 179,000원</span></a>
+          <a href="/shoes/salomon-s-lab-pulsar-4"><b>S/LAB 펄사 4</b><span>SALOMON · 트레일 · 340,000원</span></a>
+          <a href="/shoes/mizuno-wave-rider-29"><b>웨이브 라이더 29</b><span>MIZUNO · 데일리 · 169,000원</span></a>
+          <a href="/shoes/hoka-mach-x-3"><b>마하 X 3</b><span>HOKA · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/new-balance-880-v15"><b>880 V15</b><span>NEW BALANCE · 입문화 · 189,000원</span></a>
+          <a href="/shoes/saucony-endorphin-pro-5"><b>엔돌핀 프로 5</b><span>SAUCONY · 레이싱 · 299,000원</span></a>
+          <a href="/shoes/saucony-guide-19"><b>가이드 19</b><span>SAUCONY · 안정화 · 179,000원</span></a>
+          <a href="/shoes/asics-gel-venture-10"><b>젤 벤처 10</b><span>ASICS · 트레일 · 89,000원</span></a>
+          <a href="/shoes/mizuno-wave-rider-30"><b>웨이브 라이더 30</b><span>MIZUNO · 데일리 · 179,000원</span></a>
+          <a href="/shoes/new-balance-sc-trainer-v3"><b>SC Trainer V3</b><span>NEW BALANCE · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/on-cloudrunner-2"><b>클라우드러너 2</b><span>ON · 입문화 · 189,000원</span></a>
+          <a href="/shoes/nike-vaporfly-4"><b>베이퍼플라이 4</b><span>NIKE · 레이싱 · 309,000원</span></a>
+          <a href="/shoes/brooks-adrenaline-gts-25"><b>아드레날린 GTS 25</b><span>BROOKS · 안정화 · 189,000원</span></a>
+          <a href="/shoes/adidas-terrex-agravic-speed-ultra"><b>테렉스 아그라빅 스피드 울트라 2</b><span>ADIDAS · 트레일 · 279,000원</span></a>
+          <a href="/shoes/hoka-mach-6"><b>마하 6</b><span>HOKA · 데일리 · 185,000원</span></a>
+          <a href="/shoes/asics-megablast"><b>메가블라스트</b><span>ASICS · 쿠션화 · 299,000원</span></a>
+          <a href="/shoes/on-cloudsurfer-2"><b>클라우드서퍼 2</b><span>ON · 입문화 · 199,000원</span></a>
+          <a href="/shoes/new-balance-sc-elite-v5"><b>SC Elite V5</b><span>NEW BALANCE · 레이싱 · 319,000원</span></a>
+          <a href="/shoes/asics-gel-kayano-32"><b>젤 카야노 32</b><span>ASICS · 안정화 · 199,000원</span></a>
+          <a href="/shoes/asics-metafuji-trail"><b>메타후지 트레일</b><span>ASICS · 트레일 · 279,000원</span></a>
+          <a href="/shoes/new-balance-rebel-v5"><b>레벨 V5</b><span>NEW BALANCE · 데일리 · 189,000원</span></a>
+          <a href="/shoes/new-balance-1080-v15"><b>1080 V15</b><span>NEW BALANCE · 쿠션화 · 209,000원</span></a>
+          <a href="/shoes/asics-metaspeed-edge-plus"><b>메타스피드 엣지+</b><span>ASICS · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/asics-gel-kayano-33"><b>젤 카야노 33</b><span>ASICS · 안정화 · 199,000원</span></a>
+          <a href="/shoes/nike-ultrafly"><b>울트라플라이</b><span>NIKE · 트레일 · 299,000원</span></a>
+          <a href="/shoes/saucony-endorphin-azura"><b>엔돌핀 아주라</b><span>SAUCONY · 데일리 · 189,000원</span></a>
+          <a href="/shoes/nike-vomero-premium"><b>보메로 프리미엄</b><span>NIKE · 쿠션화 · 289,000원</span></a>
+          <a href="/shoes/asics-metaspeed-sky-plus"><b>메타스피드 스카이+</b><span>ASICS · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/on-cloudrunner-3"><b>클라우드러너 3</b><span>ON · 안정화 · 199,000원</span></a>
+          <a href="/shoes/mizuno-neo-vista-3"><b>네오 비스타 3</b><span>MIZUNO · 데일리 · 219,000원</span></a>
+          <a href="/shoes/li-ning-red-hare-9-ultra"><b>레드헤어 9 울트라</b><span>LI-NING · 쿠션화 · 150,000원</span></a>
+          <a href="/shoes/hoka-cielo-x1"><b>씨엘로 X1</b><span>HOKA · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/saucony-hurricane-25"><b>허리케인 25</b><span>SAUCONY · 안정화 · 199,000원</span></a>
+          <a href="/shoes/on-cloudflow-5"><b>클라우드플로우 5</b><span>ON · 데일리 · 219,000원</span></a>
+          <a href="/shoes/asics-gel-nimbus-28"><b>젤 님버스 28</b><span>ASICS · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/on-cloudboom-strike"><b>클라우드붐 스트라이크</b><span>ON · 레이싱 · 329,000원</span></a>
+          <a href="/shoes/hoka-gaviota-6"><b>가비오타 6</b><span>HOKA · 안정화 · 239,000원</span></a>
+          <a href="/shoes/adidas-hyperboost-edge"><b>하이퍼부스트 엣지</b><span>ADIDAS · 데일리 · 249,000원</span></a>
+          <a href="/shoes/on-cloudmonster-2"><b>클라우드몬스터 2</b><span>ON · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/saucony-endorphin-elite-2"><b>엔돌핀 엘리트 2</b><span>SAUCONY · 레이싱 · 339,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-4"><b>디비에이트 나이트로 4</b><span>PUMA · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-elite"><b>하이퍼워프 엘리트</b><span>MIZUNO · 레이싱 · 349,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3"><b>클라우드몬스터 3</b><span>ON · 쿠션화 · 229,000원</span></a>
+          <a href="/shoes/saucony-endorphin-elite-3"><b>엔돌핀 엘리트 3</b><span>SAUCONY · 레이싱 · 369,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3-hyper"><b>클라우드몬스터 3 하이퍼</b><span>ON · 쿠션화 · 259,000원</span></a>
+          <a href="/shoes/asics-metaspeed-ray"><b>메타스피드 레이</b><span>ASICS · 레이싱 · 399,000원</span></a>
+          <a href="/shoes/on-cloudmonster-hyper"><b>클라우드몬스터 하이퍼</b><span>ON · 쿠션화 · 259,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-pure"><b>하이퍼워프 퓨어</b><span>MIZUNO · 레이싱 · 399,000원</span></a>
+          <a href="/shoes/on-cloudmonster-3-hyper-lightspray"><b>클라우드몬스터 3 하이퍼 라이트스프레이</b><span>ON · 쿠션화 · 319,000원</span></a>
+          <a href="/shoes/asics-magic-speed-5"><b>매직스피드 5</b><span>ASICS · 레이싱 · 229,000원</span></a>
+          <a href="/shoes/mizuno-wave-sky-9"><b>웨이브 스카이 9</b><span>MIZUNO · 쿠션화 · 189,000원</span></a>
+          <a href="/shoes/mizuno-wave-rebellion-flash-2"><b>웨이브 리벨리온 플래시 2</b><span>MIZUNO · 레이싱 · 189,000원</span></a>
+          <a href="/shoes/puma-magnify-nitro-3"><b>매그니파이 나이트로 3</b><span>PUMA · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/asics-magic-speed-4"><b>매직스피드 4</b><span>ASICS · 레이싱 · 199,000원</span></a>
+          <a href="/shoes/saucony-triumph-23"><b>트라이엄프 23</b><span>SAUCONY · 쿠션화 · 199,000원</span></a>
+          <a href="/shoes/mizuno-wave-rebellion-flash-3"><b>웨이브 리벨리온 플래시 3</b><span>MIZUNO · 레이싱 · 199,000원</span></a>
+          <a href="/shoes/on-cloudsurfer-max"><b>클라우드서퍼 맥스</b><span>ON · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-streakfly-2"><b>스트릭플라이 2</b><span>NIKE · 레이싱 · 219,000원</span></a>
+          <a href="/shoes/puma-deviate-nitro-3"><b>디비에이트 나이트로 3</b><span>PUMA · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/nike-zoom-fly-6"><b>줌 플라이 6</b><span>NIKE · 레이싱 · 229,000원</span></a>
+          <a href="/shoes/saucony-endorphin-trainer"><b>엔돌핀 트레이너</b><span>SAUCONY · 쿠션화 · 219,000원</span></a>
+          <a href="/shoes/mizuno-hyperwarp-pro"><b>하이퍼워프 프로</b><span>MIZUNO · 레이싱 · 319,000원</span></a>
+          <a href="/shoes/puma-magmax-nitro-2"><b>매그맥스 나이트로 2</b><span>PUMA · 쿠션화 · 239,000원</span></a>
+          <a href="/shoes/puma-fast-r-nitro-elite-3"><b>패스트알 나이트로 엘리트 3</b><span>PUMA · 레이싱 · 379,000원</span></a>
+          <a href="/shoes/brooks-glycerin-max-2"><b>글리세린 맥스 2</b><span>BROOKS · 쿠션화 · 249,000원</span></a>
+          <a href="/shoes/new-balance-balos-v1"><b>발로스 V1</b><span>NEW BALANCE · 쿠션화 · 259,000원</span></a>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 08 광고 — 인덱스와 에디토리얼 경계. 현행 슬롯 1개를 그대로 승계한다 -->
+  <div class="wrap ad">
+    <p class="ad-l">ADVERTISEMENT</p>
+    <div class="ad-box">RESPONSIVE AD SLOT · 기존 슬롯 1개<br>높이 예약 250px</div>
+  </div>
+
+  <!-- 09 에디토리얼 -->
+  <section class="sec" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">BEYOND THE NUMBERS</p>
+        <h2 class="sec-h">숫자가 말해주지 않는 것</h2>
+      </div>
+
+      <a class="ed-lead" href="/blog">
+        <img data-img="editorial" alt="미즈노 웨이브 라이더 29와 30의 미드솔 구조 비교">
+        <p class="ed-meta"><span class="cat">REVIEW</span><span>2026.07.29</span><span>9분</span></p>
+        <h3 class="ed-t">미즈노 웨이브 라이더 29 vs 30 — 30세대 대개편, 그래도 29를 사야 하는 사람</h3>
+        <p class="ed-x">폼이 통째로 바뀐 세대교체에서 무엇이 좋아졌고 무엇이 사라졌는지, 국내가와 함께 정리했습니다.</p>
+        <p class="ed-by">산초 에디터</p>
+      </a>
+
+      <div class="ed-list">
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">REVIEW</span><span>8분</span></p>
+          <p class="ed-it">살로몬 제네시스 2 미리보기 — 가치 점수 만점, 토박스가 관건</p>
+        </a>
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>12분</span></p>
+          <p class="ed-it">러닝화 500~800km 교체설 — 그 숫자, 1985년에 나왔습니다</p>
+        </a>
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>10분</span></p>
+          <p class="ed-it">러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자</p>
+        </a>
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>9분</span></p>
+          <p class="ed-it">나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 이노베이션 센터</p>
+        </a>
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>11분</span></p>
+          <p class="ed-it">발볼 넓은 한국 러너를 위한 와이드 러닝화 — 토박스 실측으로 비교</p>
+        </a>
+        <a class="ed-i" href="/blog">
+          <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>7분</span></p>
+          <p class="ed-it">오사카 마라톤 2027 접수 가이드 — 국내 러너가 놓치기 쉬운 일정</p>
+        </a>
+        <a class="ed-i more-link" href="/blog"><span>블로그 전체 보기</span><span class="ed-go">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 최종 CTA -->
+  <section class="final">
+    <div class="track">
+      <span class="lane"></span><span class="lane"></span><span class="lane"></span>
+      <span class="lane"></span><span class="lane"></span>
+    </div>
+    <div class="wrap final-in">
+      <h2 class="final-h">수많은 러닝화 중<br>내게 맞는 선택만<br>남겨보세요.</h2>
+      <p class="final-s">약 1분 · 9문항 · 로그인 없이</p>
+      <a class="btn-signal" href="/recommend">9문항 맞춤 추천 시작 <span>→</span></a>
+      <a class="final-alt" href="/">전체 러닝화 보기</a>
+
+      <!-- 순회 허브 — 홈에서 나가는 세 갈래를 마지막에 한 번 더 연다 -->
+      <div class="final-routes">
+        <a class="fr" href="/recommend">
+          <span class="fr-n">01</span><span class="fr-t">맞춤 추천</span><span class="fr-a">→</span>
+          <span class="fr-d">9문항으로 역할이 다른 3켤레를 받습니다</span>
+        </a>
+        <a class="fr" href="/">
+          <span class="fr-n">02</span><span class="fr-t">러닝화 인덱스</span><span class="fr-a">→</span>
+          <span class="fr-d">122종을 같은 기준으로 놓고 좁혀봅니다</span>
+        </a>
+        <a class="fr" href="/compare">
+          <span class="fr-n">03</span><span class="fr-t">직접 비교</span><span class="fr-a">→</span>
+          <span class="fr-d">후보를 나란히 놓고 수치를 맞대봅니다</span>
+        </a>
+      </div>
+
+      <div class="final-foot">
+        <div><p class="fs-v">122</p><p class="fs-l">정리된 러닝화</p></div>
+        <div><p class="fs-v">6</p><p class="fs-l">카테고리</p></div>
+        <div><p class="fs-v">07.31</p><p class="fs-l">최근 갱신</p></div>
+        <div><p class="fs-v">공개</p><p class="fs-l">평가 기준과 출처</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 푸터 -->
+  <footer class="ft">
+    <div class="wrap">
+      <nav class="ft-nav">
+        <a href="/about">소개</a><a href="/faq">FAQ</a><a href="/contact">문의</a>
+        <a href="/privacy">개인정보</a><a href="/legal">고지</a>
+      </nav>
+      <p class="ft-c">© 2026 ALLRUNABOUT</p>
+    </div>
+  </footer>
+</div>
+
+<!-- 모바일 메뉴 — ESC 닫힘 + 포커스 트랩(§9) -->
+<nav class="mnav" id="mnav" aria-label="주요 메뉴" hidden>
+  <div class="mnav-h">
+    <span class="logo">allrunabout</span>
+    <button class="icon-btn" id="mnavClose" aria-label="메뉴 닫기">✕</button>
+  </div>
+  <div class="mnav-l">
+    <a href="/">신발 <span>122종</span></a>
+    <a href="/compare">비교 <span>나란히 보기</span></a>
+    <a href="/recommend">맞춤 추천 <span>9문항</span></a>
+    <a href="/blog">블로그 <span>에디토리얼</span></a>
+    <a href="/marathon">마라톤 <span>대회 일정</span></a>
+  </div>
+  <button class="mnav-s">⌕ 신발 검색</button>
+  <a class="btn-outline" href="/recommend">맞춤 추천 시작 →</a>
+</nav>
+
+<!-- 필터 바텀시트 — ESC 로 닫히고 열려 있는 동안 포커스가 시트 안에 갇힌다 -->
+<div class="sheet-bd" id="sheetBd" hidden></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="sheet-grab" aria-hidden="true"></div>
+  <div class="sheet-h">
+    <h3 id="sheetTitle">조건 좁히기</h3>
+    <button class="icon-btn" id="sheetClose" aria-label="닫기">✕</button>
+  </div>
+  <div class="chips">
+    <button class="chip" data-f="all" aria-pressed="true">전체 <span class="c-n">122</span></button>
+    <button class="chip" data-f="daily" aria-pressed="false">데일리 <span class="c-n">19</span></button>
+    <button class="chip" data-f="cushion" aria-pressed="false">쿠션화 <span class="c-n">32</span></button>
+    <button class="chip" data-f="beginner" aria-pressed="false">입문화 <span class="c-n">13</span></button>
+    <button class="chip" data-f="racing" aria-pressed="false">레이싱 <span class="c-n">29</span></button>
+    <button class="chip" data-f="stable" aria-pressed="false">안정화 <span class="c-n">16</span></button>
+    <button class="chip" data-f="trail" aria-pressed="false">트레일 <span class="c-n">13</span></button>
+    <button class="chip" data-f="wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button>
+    <button class="chip" data-f="under20" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button>
+  </div>
+  <div class="sheet-f">
+    <button class="sheet-reset" id="sheetReset">초기화</button>
+    <button class="sheet-apply" id="sheetApply">122개 결과 보기</button>
+  </div>
+</div>
+
+<script>
+  /* 시안용 데이터 — 실제 구현에서는 getGridShoes() 결과가 들어간다.
+     122행 전부를 정적으로 들고 있고, 화면 노출만 12 → +24 → +24 → 전체로 늘린다. */
+  var IMGS = {"nova5":"data:image/webp;base64,UklGRpIDAABXRUJQVlA4IIYDAADQFACdASpwAHAAPpVEnUqlo6KhqTSagLASiWUA1Sl/3u627rJk/Yyw7MVjbNnlyTHa/yPC/+y1ujSpV9HU3VBb5l5eAKr36PdQBbJNLkp4y/t2kh+QKZQGGz1/0UiTMOVPlDfoH0wlA0spC8iLFepMD5fhJYe4KtG89sXBUb1j7yY8lWDuo8A2J8dGNf8UzfmH2P4O871Hfxon9tmeOGDCrHthndBRzg2dN+cvB04AAP76toAAAA4m//vupPV3QGYGebYzq9SbN65bOu1gIOUXCDEeIiiEea52uZu0fMDhBu7xIPe+cJuO4MPSf2v0l1rCgMD65Df8cP7TVbWali9NFOjMaX0PuNvTm0f2BJtWnfgoiBWpV51Fm+GKN142PHNksVXQHV0DXLm7fU+Z3gZ0R1af3pwuud86Y3J9qmzK9Fjmh3mXouu+hlJWLaNztxMDRQOkD2tvd9YCg7p/5Z8A6BUHwo5ulG3k1/9EEoCnTj8B/GRgXfy3jBp9PgyvhKWjgzJK2QCLSaAGPLKsTqLgFWVXImZbEmWdzJD0bhq/QdH/vyhHbU2QJNABMyte86A3pysDVJEgSWR97qr6NAzQfu0qu0W5iDBp1t4ukWmgs2gveoI69TTYbsod7Cqo9/3aO4481fP99sNq7wB7gPEPgUzmv37AfpJIk4mscmtFXlZ86XNtxkl3a/hNQZ+Z/G3WLq8ZoxfRz2Y+FwlRR/je2ORRcVDsfoUgz6X5CuYLLWWY28V/htSGhy6Q0CTNRUcljQnMcCaF30D4LtSy20iMLWDMLnIJv3qSeVIgg7tFzw3IZpGOkxeNGk4aeOHKO5K1SDYmAgL54bclsqJTHhIpYp9oNU6yjmipYRA6XaKCEUW5n0rWXCl8TIlzuvCxlBOfmZynPkPAk6bc9AubtQtGNyfefvFhQfXxYimRoZ496EkMw1rAwfL9hMSmekOAaXSthikziSIztYgTXCmVhxPvE1s3hC74yWHDU99X5hf0vgG5VozCCsLKIQ05EqhGvkYr1uKhLcHAVk9S1qe1OjgQIYRvXYYseyOpfS5bBpfzNmUiAJ5yikKI0s1eHc+ySW1xVCtNp1nIceolr2cEk1/kr+sl2gR6MesL4MfwlQLMPUa53cVo/ngXFAgIJ9PKUzCRgE304WlM1eVUQmyNwKbp9lKwWafxGwQh4LKOSXeyK7lQAAAAAA==","boston13":"data:image/webp;base64,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","evosl":"data:image/webp;base64,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","speed5":"data:image/webp;base64,UklGRqYEAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSNkBAAABkETbtiFJ/2cU2rZt28bQtm3btm3btm3btrtDt5X5I/rF6yEiYgLEf///+7YM8v1JItZZdevTyy1ZeQpTo11qRyluw+/b4ixltPGlmXSwBAH1PqklP/EswB7rU5seCLDWJGIn5DEA9FZL9FQBuBGbGzHgF6OkkhikhA1hJTNVfsH1iCqtTTU8Ol2AlzJ+ME0GkJ0tOP5YgJXx/jBc8xNuCty8n4aRbEYAHCgeXoYWOAl3H3bPxYWcDdV3d17Dfb2L5KGBqfSbrY4aC8tAeUvbaAysJgU87V8kyGv7iQG4PrVMEk16J+gRPQD28wv7Ns6bMHTI4L69O1dJJUkltjzh1N4YSkiOAoudCKW0ePiSkk4tMNmMzjouupPJrnPRhUxfcFmPSqHPXBgpiSR7BC4HSRqp74DLq2EEza7g8lJyQTThCx7smXEF2Qo6B887BwnCDb56ztyTRtAufd9jj8v4BPUorW95x7zWMI7wYthKKx9/0U039JePHr0wXLMera8TTXg2fL7OYxfs2Hvw2Jlzh7avXjR5+IABfVoUiR8+TJiwiSpdcGa/u3d4fKWkQcLbvqCgIC0oODhIk1IK9ZDi7fp2796zz5Chw4YNH9K5Xpnc6eJEkeIvrABWUDggpgIAAHAQAJ0BKnAAcAA+lUieSyWkIqGl9xposBKJZwDTvdB5ibAZaQTfk1qge4N8f6IBUCHPPam3ma7/5BhRARoYpSgHc62lnZIzUrFGkxN7rzGU5cKs0jL6Zo2NkoZsIX+MXHC0ne5BvGMSN5Lo4+K0WG7FX//Enu/sFLz/8U6AdiJ8efjpGJ/tlR+zo+sAAP7r3i7ZP76L+DZIpsRdqgwq1apSIQAAAAX3qa8etUzk0Y/dDqk/4/QjgSCLGz9CfcKhDI/tiJmkn40YHDHwxUrE1nRKXvr0Tn/1b5daQDX6ptI7Y0cTG885A1PzvstLgdPymqxOFDMh/4QOwAE2NhPcxtn3jXuVFoY6dyYm7VSPmH9atYEV9Wcg8gKiTys9afuydTpJNuNmh//nQC5Zw3k3A5pFAuPwEVwULV+OjhVN/inh4xettrjH+Fb9dZhi1oBTdJAnXSQPki7tu4vsvkJT4aws8+R2EhZOSvoNSqUGXPIk4eVW1+ADHQwElXJ6F3NlhRYgHnXRxA38SBuBOrcz7c734di0O/sNQ7ziHFVQRcadNFcklErN8Oty2l7TJxE6dBWe3TM9Gr3ST4eBVNU8QyRxexTYkM0o5F1MQ7ksys8dEVO66oaImaH5dKGTRMPdQUn01FeMM/ReoO2y9Q3IHlPtAZ8RfCZrIGvqzJBruwKmfVybkcsC0sF4I0HlgftBOiYMydhXXk3ZKUUKKF3iFeGr/KY/TI6azTylOnR3ztCKfgAFClFpjUhaXT8KHNn8ozjY8cIZRDSs/P91jetKSrOMtLtmSgKkHyZofWcuBa86elwoNvoBO51SK0gxQGOtT9cUJYkUNtTLkcAJjyPD8Af7Kvs7f2L9yb//E2VzrGFPzhkdxtrU9f0hZE9H/6A7DILx/AqAAA==","snrise3":"data:image/webp;base64,UklGRuwFAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSI8CAAABoERr2yFJiohs27Zt27Zt27axtW1jbNu2jXYivv99NxkZlX/kX4NVR8QEWA/8/0C9WScduXJ88eCq6YbzCD2/GZQ7nagLL/KrsunDJPp8r4CB7CRs9sNnc5um2rGPr1ZL0xFffLSEY5Thd0je7J2Wa/4Ye7GWQYpEGS9LQ/4eSwP557HhIVOMpDeO5/bT4GaaSF6uZgbntQTk15PyeNj5ht5kUmNzjdAIPsjbz585dOTKB2Em+6+Vw2vYKbeL+uGDpHuiSIpl+10XovfDYVf5IL89u6xbthTqQ71QErkXDkej4if+88eOZEuVI1qgRMSNRiMuSALwQfLDaXlTIuO3OgAoiScJJSJKKfggf1vdopATuApCAkgSiXiSUK4r8R6AF0n12wvHty0c3qtx2XwZ7WB0AnWCnlAirogriiSViCgFDzAxYr+9d3FWzgAMZEJ4Ab68AaVERBRJKPFMgvebLRxtgxJpBaAUAEKJN5h06amtrxbAKx4ElHiDOl+0NdkzAA2+Aah4EQXqVWU1DY+RCAQJBQAMYAc93SIMMBjQXlpy/0ADd9QymQa+U0jLVRNtsHRm/M5AV7JpKU3zvlXc0up8aJyncliaeyuzyI7clm5nP0xya4Rt6c9yxiAvVLcCmfMyNCEwd0/mtgKaafHfegggCPLxxUOlg2JZZbf/Ah0kAG2R1x96/HSt4Fh2/rHnP/1bIWkBvP/JC2cmFLGCnSF7/qp12nTvN3To2HGTJk6aMGXa1LkrNu18/I0vf7p5JxyNutCAm4/MqZfDtlLftm3bCWXMmitf2cY9R62/8tFfYVcUkAgq+ucXTx5Z2LVoyDKyHcqcu1DJcrUbtWzbuUO39h1a1yyfL5Nj/f8NAFZQOCA2AwAA8BIAnQEqcABwAD6VSJ5LpaQioaPyumiwEolAGpFIC6/Rede8twQtgNu95gPPm9JH+cx9b2el/9PPuzcoLgYiQyWxMRj6IQCmFsTEY+hhlZqprqPY7m25/D3YDtoFeauC2z2FjYEfPx41lOR8Ycybkb1ob94Kfy2E4ozv1KmFVPCQhSQrQnP2gCXta0cyywktiqM9al5jGT1q+XnNgHTRwAD+694k3UXnL0BP4Z1uEQjfNVxhwUQAAAAAAFiqbWgphTqR0+v8vOg4hhw2GfaRjBdZd/D529PBNlaIfJCZ7FUI5f9bQGNa7X704SfyGZEY0Qb3Thbv95I+Zi4K8oNzDhiK9bNbUDWM/TZhajKgJIiVgi/o/I39Aiw6bww8NsDD+D9ggjODSkMPTdABtlxUDLA2zJAT3FpguF6woV8E5rHNdkVCHJn+yKzfuG/FieErWUvqERHTDhlx/wJu0AaesIat+4h+891MhEBd+N4NfCSWkQiUQPFEtHRNvN8moud9mDp8YB6dJ+jWQeM3mzVeKieOSORQHh889Fg6/e0xVPqA12JI5puyKqi/92FJWS3jpXPMdTy7ZbZ7OlZo89xz3OnCgv0FLZE4okXp0u6qLtpykyZhlktlc5tQvvF62JKV8tU/+GSr/pgiBPBJmsgz5zxUXbWm7FJCMqGFfbJVlYEeX/3cLfcRQ8SUKodtsOWQag17SDOTyKuuVf332p+oDgKdQWjlo27Jzgr+7GPIp15dMgzzxgcNIW16sxQxJAryrxL+uMkj1khasLI+jyNxZowV7PXpH68gE/5Xm0DXJRvnzz3goOzKfxGvC4sNaBoOGPcJsuYIO7wDNPqdiWx4YJq8I31XMel+j2RHfg0tE6Dn9+7KI1c8TEAccCXkrlXJziDtCoSMA9iHDiTmRAC1pgh0luPXE/wjTxbGKR2tskcXMyvqdw0RRiuGyHjT75ZDyYyg59hwP61oVC6EeWVrnbVDXtCGzJQlFjlxOgIAP9UD6o97I36+q3m16ERYJf4xucL4rNe37JbljqUQ5tDyVzC9sfzMwax1waYml1Dqt5XEM++Sr4eMkvcMM//Xl2DC00MtW4AA","ghostmax3":"data:image/webp;base64,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","vomero18":"data:image/webp;base64,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","ghost17":"data:image/webp;base64,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","velocity4":"data:image/webp;base64,UklGRiIIAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSNEDAAABGTJp2xDpzkX0P+CEgYYWtf2H5Ci2bdu2bdu5ytq27d1b276yeWnbtjdsVVcNLvP1qTj5pnpPh//zi5Oe2u2oz+nOeCZiAiYgW8z3f3w4u5wKKO1H39DAzq+win7yrhiGgF1EPXVVkMOfrvAbj1QJHXTVUgP/OETMsqiG5OwG66665J+9ZF9fmGk295jcxeF2FJQL8ahoTJLXSFM08bdCiqH84w1XeMDXZhJ3VCWHmaw4ON5JYg5V2DinyycZyAkAgs872QtWzOIqjx5O04KajQB8w/liCPrLaa25fpqCKFBAIb5zuat9YhYnavUMKSVBCAAf2YuY0S5lugP5g/4iLEVFABDQesNp7vMHgP5GjjeAHy6eEo0JmFtRpbW3sSOZCZzFBB0s2AIG73Cij7CSqVYlEQLC8WELYwD1/yjjlfGVUspRuUnkL3mZcC4AiPfcLG1hDXY2cONZ3RiuoPqyWupqWw5/W28DQERyUbAUkB2ci5AQCginH0swFKPr25ihj8DP8vNnrleAiMwUoYoqEu4LCNd/2kHj0KzlTLsaSLTEspUoQCyBT2Arz9yXiWyDsJCyCuhmX3VkI76g3xaAtCgE4f2L2TRCDkmjLdzkayxAoeWzQCpL0YoSXhWAAB5i2vqzm/lvpPL+8qtoMQpOKaAQen1fQH9NnKKnReQsFqJwAV2vy1BKTwwUN9aRSrAFACEOFL3hVKHcvESQhLlr1yyLwtVlraysCAJOhA4GzBoqZGrG5e1UEy5p066AbarQ+n9syi+kAEIIQ6tzLA8pjTJv1ZkJR4FzCoUwfuL50qIaHaoHQCggIXQQCgEIDYZlNdnabNtXNgBBQAAIIQAhIAz/pxxy0Wb3argkAAIEAMLQQocPrfZrUxtiWAHhVHxhaJvmDaER3OSetjSKaCeEwf0Jadrs5woaSXYwOtNfMo3SJP1p1CYmDFzpPoVoYj5ps1sCgDEFB3hOZZpgz4OqcgeQmAMN/TucNmjoRcluGVKoUfItJtMI2y8XNZjm5n4StUIvtwjrTZCdHhbWRM2w5wzDmHoSQpcllQZv2oNdZbUToR70mkCvAK3t3VQCPBd6JNTNu94Cr9uLjtHXeo8g9ESvf1lzg2eI9wCmLhhkVQF5KLeMKD95xaPu9bUvCXSa36qkcGkNrK0vrLSSP3zhM5+j/aOfZWYGzTwKyqeoQAHJi4pISw75IdavfvC9b73tNW8K/GMm6DyXHKIVrM3YsipNclrvV9kpRKzILzaFQp/7xHte9Y2Az4LHJJDDbICIwNCETdu0aTPoi0QsSzBf1QBWUDggKgQAADAWAJ0BKnAAcAA+lUabSyWjoiGnNGtYsBKJYwDQuS075yOlt8pm993z4N8A3om/QNuOtSaiwR9vUTHksqle8jUK6W/oQGq7FKm/KiYGbMnxkErltlLktPR3mOC+ekx6wjnpY6mx7+dq1e7OfRQRYfFAe/PblgrT1Yw+xqxBp/cGu/V310BzZWpJrOq0SMqNECnRhzvQi3ocWHgDq08SZnNIZQwW58I2hTfsdQexjldScR2dgNalTd3CAAD+7L2ODLbQwfqrS3LL239FsIh1FO+WoAAUl5fdm2kPXagCf7cWR4oh4WCkgiIN/dfT4QecA7oBvq7NQ9Oipbd13IFFEPBkv+Q7DkeIwJ658S90PxgFN+vrbg4Kz+13FUamP0VBQkYfPDrrhcaj4KEfn2do9qtaa5fs02YH6x+BAKHehoTxgNCCvvqiqPkI8B+ec6FQE3KOD+wkN4LSj5quCQtTvvGTAep+XPOvP/uU2dALJEMP/X/tZgEOSLShK1eoqrwjJibO4c99Dyn8vKnXF7Ieq+fA8rzqTQp2fzm7jr9J9bTjrq6EmVyMQgClIQntui/F3Jc7IH3Iydm4VjkDdjr9461tN9LURagRBAPaa4XFKetZz8vrSj0B3BvIIUUhQYA9zwBUZIRTtqsH3YyP/yVIij2OkV71RVnLGVJ6/UY/xQG1JQrB2DzwyImCnfmCBUyo8OsfKF461J/ih5bJn4duQdH0X1C/sXPuChuwxmed9+4gObhdvakRV+CI+7oh4wg5asiD6ANer4T4ALquMSvucIYDDi+YOkPqXv+LafzNenhhDAxcR2fzSJ1Oza+divS5dPrG0APRX3JbqBkKyrfrIH8z9NPwkBpnicGU2w8sVAen0GCQEm5LZVKz3XwSAn7EQu8O5OZ3a7LHnLxADbGQI4XI7H/psJvDIzA/Z0/xp7usqbHjr7FOF+QyWPDn0jN46NUDEwmvcG1B+0UH7TVgxmT+uzKBRuNDnyGG78WXOVemsFfFzVPTZmf+tsvg0KIG3Vs/M45Qeuql/p/QqOlJQ62LQoHWUHAFrUXdpjHqaAGWkAyLzYxWnixbVn+nUjJxA5nLLcSvwgGjcH/QAQ8dP4jkr+i3ovr1TsNj/iTJfsCuXmg0jF6RtJ62jGIID2nClElOm+nBI59tH1pePZiR6/x5zaz/uHvE7LvA0vFvh1fim2Wd80mCAXX8JsePRiS3kuSOM5ynoiwHmyBmSy6WlcoD8Z92gwyxMD55RNFn1aDX1VyXyk4aC+k3/+2JQ+N845UMJrhC/HnbZlZPHD0gFOYHg6/BkEY9AMdWPradYCJUGH2M4zWSj3R2XJs+Ri7eFFNy+cS8NsniwvUY2pmuTqxeWmLqcOWjD1yAFTcca4uNJ00ff/AZQgnZ93j8dBAyMZt4FgAARfAAAAA=","clifton10":"data:image/webp;base64,UklGRiYFAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSDQCAAABkARJtmlbe1+/b9u2zZFt27Zt29bItm3bNu6zz1k9uTp3nT39/0fEBIj//v/HbWmRypLGyNwtq9nVVOL5mz1NrAaUv/b52+q0SqoFAh1KFZB9R4wO/VIRqaAMiSDggCWQwuHw/NnZrh5xDCBQ5wDkbHjXD47LoZwuABFe2PxL+9EHgJ+VLIopBoCIavnXRPcHn4Z0TKqU3PB62uZP8nMIkF5XlArJqZEHtZS+QlZTIMCHQyOSKyN7PLz+rG/1lmpdIgy9XyKlRQ2D4DNqUVaLlI76dwkGazG3OjhVcJZ8IOHZ4iFTz8UhmPrvHS2TSJM53H4A8ZEJCDo9npTRXJl0v7h+XNqyRCqnRUppiqw6zEha9Jf7Z/dtXrlgxsRxw9vmZZVNM0XAiQutjLLoRhA7YCyjdHFGgPiFFeGT5IchIE9W2M7HcsYYE97gU+a8IiKcXORkKPKD4FotUhUnuNhuQpE0jktdXRGUWIDLYqiRaIbgus4oLTQsKixCJ2KzzspmhiFEMaGxBE8iEAWNiObZBNuSbiMCJxBRUCJHSsG4vpsBACIigyj+eMPUgneNVyyMJxplF+zTrY5nRwDIS+wKuzBj0a1RzHxH7SovhUkzDf2gc7s6dcXgfBZh4lQ1J24+9/ZX6G93qPvBVx0Auc9Onf87Mi5B84j56O1POLTYP09nJxUqtNicLpfL5bTYshQvUzy7QwhhD0mRLnfZWi3al83VtV//gUN75c1fuWSujA7xd0hWUDggzAIAADARAJ0BKnAAcAA+lUCdSqWjoqGpOAnQsBKJZwDWFVBJmWS9gAFmjGYHK3eebEqk7nkUAwXaEdTQaEdTQaEdSeGheqSB7PKCiD8nhwPC0vIdJytFZf6Xa27i0XTQwypwG9Q6MuKjPcCyW9r9hS3rTzehU109oQD04hdLEfhyDEC9aLVvGc1+UQ41tORtLLcc6y0AAP77QAAAAAv/dKvdf/9Mmf/2lkvJ1GBAKcH2F9EJQ/6+uSfewbdsv3nLIusdAdjFcbk0l16I6Nr17ANFQyxbb1lChjNFAKD4eRtRH41cSeP4bkQbctYI5liRP+zWUOtZX2uKM5ffLQDmYHwja1q+Hke2WTZH90RAJIS3NkpDHephlTwBEVBq34cJmqIVNNvkMlQ6u5E3NrdYc6HHC+2aKh6KtI3cWApsr2kmeQxMhFTVVC1SDC/Zuu8T2c/iB0OGWOZKH8rIZoQzTbwF+Hpfa/FJrcjjVTuDISPClaEpVG6fEexeH4KRu5PPnj9CFs+ODAidNNOtZYoEKsotuV+6i6zP5w6MZWw/cmEX0h2qAYQfGG6vkroAKskHZO/S9PrHTx7xt5vD7BamvDr1aIJdCfvNUj3jXW8bTn29+ox8E16P2K6WQZhcVifBwzgCD4/WBg9tkWVJR3zC1Bp800X00pI4/n3UVKWx+ozvccuH8gFusrDbAMiCW5z+chWlqaiT0air9qSEXtVBRmhl66q6hxr5MJ1usE4UvRoumTjXbInqaF8LLeWLfVCeL692VoSKNRRE2CjSUsdU1WjaefDc8ZlXUEDdjZjUnSLxK/Y3Mc6hCIwQrZF+tAgKxRm6oE6LmA296Ne+jLjx7vDcQak1kHoGUNunT3D30zSEh3hNP7r7ybs/J7p4OL5J2XYfqqXyKNHFlACU2IfpVA5dNc4SsQox56aebDYG7gFKOQVxhfvRF/11PJDnfoAA","sb2":"data:image/webp;base64,UklGRtwDAABXRUJQVlA4INADAABQFQCdASpwAHAAPpVGnEqlo6KhqTN6SLASiWMA1PhxUvtlNur4qvr1aYBvN8++aY1Jj0f8fh1pAmmymr1NKvU0q9TSgd9sfUTLtYSRcsSPtuDfMsgyV5kXs9Hq64XYFGrHMvWv4DoR7GpUXM+29dGUVrOMyyAMU15YgGiJzjQbxmR2Qq+Y+Ep/v3GkeqtiatYx5nb4cSNnAWnKPjwANcoSjTYDrZ73FFG6tp+R2JJz07CqgAD++yGAAAAGRtP/OA2dicp2Lm6cDBc0AmCcaxTp7fglENMQWpKJrznzi4RXJL3nBe+/KU2OXL0CgQwLI67gxU+dW/TThkQF6o0SL3h6NuvZeMpOGppObCcn5STjVp5OOhpAURwtjpFTyf9iIMGSZIU0MiyHaMmCCNZ0HjWeCKNb8nu5N83bduD1tpjVzHUyu27jKRWJiMlQLs+8ls4DcGAZ5wNHPkR48sxFZT8azzfeRsC/RXUPesYH4odzjQr9Ws6moQbncNv7SwwGmEn13qSzxJtWMHu2P8gzYqjgO6IYCyMJhgJURRveyvAWMKJCZNNFOwiuMFQ0J09EqM4WnOogrqWH8FChFvUrdHf7EToVvj9++eJ4/wxu/HefOFFGMmblwLu3iGpfpSWi+6gmZFoxEbu1p3JZbiAEI3QTRN3H8xHi4dK41kDBBZ8IUthmYaYTmiVJ0+X95JxVCVwZaIFuS52Lc0QVKRXbsE88cThwcr9rTwuSsunjv4UPcJXrIuIBqN5WtwWKkATDIHYhyVnsUXD8RiHZpkalZN74D4XS2KJUYH5cE8KTXjUFqiSX19ClBjVXccJ1oJtZfXQpjVKzXZg54D1p9g8yxIsHOsp4sqjwKen5N5ZOxU4g34kYOLYR41qO7ZVLxmDf28dVnanmzojw1utM8Kfq/4kovClc852GPOMs7KYZnB+jYPKL06LM7EF5ABDXLrAFDmkFj4ZTZG7l+HWbMaC8NsBT/IvcY+6ONiBqOqPSQrnccX9MolvIX+EqczW84T9H1SO8ALvBtQGXpKvpK6tKnAW+wLsyP395C3f0vY3yo4ndIwE/tiN75mPNv2coURYLFn9/Q3uc4YbGiCIkK/vQhxMnvB5NN1eGQArs+ZlDXSivYXAN/iycYrwTEBw2rFH5oihilFvZKG/b02rnKCaZ5rqQpXHqJLpazlTzVSVQAYJJdjK7qGsXHoksGcp2kMVb2t/WbUdcTD+42kc0wxoh3c78t+b1JBJqkgb8g6JzExY5i9AkD7gxcvHzjkSznnCkfN75jy9CR6JKLRH0yTJgAAAA","alphafly3":"data:image/webp;base64,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","arahi8":"data:image/webp;base64,UklGRvgEAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSBQCAAABkEbbtuk89yF+cVLbtm3btm3btm3btm3bZvy9e6ponHf/to2ICSD//f/P5nzWNFGRWg/IyzGqE40ZxUWhAwBdZmFTTwBaPzLdRQCAp/WdLJoMAB/iRDQOgn/blp49UwEApkeSzhcC4H1RjjVD//geO4IBEK68v2tCtgz7A6ZEMDAsAPhYlCkLg/iKhWXaGAl4epoFZnAXg8DHilwIvsIDiObLCqyw+YKBfKxtekmlTdT8NIXofqkqsKE0hEu/vf0UA9GnZ4emY8HAsBB+zciAzbjgy664ShOeIQN4M7qchVNSvBh0AOC5Nrl1pawJLVqBU0A+UK7s+fz84sXLF07tn1+GR1RJQeGv1uCpyQjYxaEpzYqAHU06ygioiEWq62NFByTcQgqMpPWQSCeBGblw6Na4mPFUjaM0MFPuTHA2ZoY8m0OSXmbEt7o8QSqMoUygvQlefjYL/F0ERERcSpVG75XgCGq+5Uc8lEZBXl1UTdAn2y1jiaarn4pgVxmstrgNtrgUceziinQcwa4vnDtbppQJE+bqtOTqR58sxyDxU+q6P8XAc0SBgjlJ0sTx41gtFmvCIpXLVq7deND05Zu37zm4/+jpO7cfPHj+5v3945eevb4/a5Pb5fa6P++8cHlvg2rl0ls4olyOF0VREAWB5zleFDU6yWQymy0mSTKZzDabxWyULCa1yu5wOh1mtSiI5G+RVlA4IL4CAADwEACdASpwAHAAPpVInkslpCKhpfcamLASiWcA1MwJXbxEl5FP6iwf7vHwxSqRz1IQ0gu4Q0gu1FT3lPg1w9bp1QJsVJSwT93Sd6YE+z5ESQIr8GxkwheHgpziFYir5OV0I4ginj9abZCOnGTUiR+bGemXGXp7fcDC+8lxbJDBKGMvBnt4/t8E5hfH/6+z6pAA/uveLwZapW/6qp6/BCfcvFzZjpaYAAAA0eJx3faauPBZy49WWKZcuTNLmetTIkrLXf56qrwzUGd886YYsmyz/GbKo9eFKy4Sl2GU+H1/56qxY3zGwslqCp2OJvNOCpNpFYi6vaT8uLQW758jZN5ANG+7Z+bn5DeSoH/LM8xGGGfOnQ7aezxLn5+9o6hZFrwT0jWQo3Z0xr71zIox5Fv1F/xXfit0M6bfC8nGIFiIw4ofDLb3zUbTysibOJ/AfKfyjVOI0jFHjTxcLxKomU9z5Gb0209d1XSlyhNjaJ3Bu+VMdPsUDPsSOVZBiCKH3lNf/9jHMZvLQD5AX35IGfFY3zVJO+7XB83x1DmP2lOsDJiEslCIxNi9GhmaklMaTcHedvPQyqxil+ofWtLXBOpozIZaRy5kigwLDX7PKJPtgQkS9FM/7RsysTkRSfPFwD6gV8zWwGKzNJmLV3qW7hTVU+EsGltMihYlGAn+YPtaVSJkwl5tjBMSSDK0/LFIKWH4bm7YTbYzZs4NhgFMVvqm505yVZX4BzrunjpKIGLl/jKqXHw1kdKEDb80Iarvpbv+zotYImGCkmL8cnm5hGOSiJhYcLCFqqCilwuxVi8tHjMFyixcQhSyveK7GEZ2h6IEJqQwCj004RVvn//yOZwqDRc7EHNFhxVK2TpL0+sNR2a812T0iXAeDmY1/06c2xrQG2mHRqbwycqCnqV9w9wlIguyIQBXwJwGXNVQAAA=","glygts22":"data:image/webp;base64,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","speedgoat6":"data:image/webp;base64,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","agravic4":"data:image/webp;base64,UklGRqoDAABXRUJQVlA4IJ4DAACQEwCdASpwAHAAPpVKn0ulpCKhorgKeLASiWcALAB/4L418mCsa7a0mmq4/h2Gehd1DiT0n0zrx+/VvsFdK/0VSOGJuOpAAJE+tjUgAEifUu7N8e7X3+COqOVlKWdA6QrfL22XXbUX0KmgVX/FUBue1h2NP/sDtrYLuuLfnpUzFS9SlB7DYUXE8hTbwqn4q60T8g8wYQncGhXBqU+K8/iZNR4dqQAA/vhuAvFwAAAOrN9yrCAyZbdL6J/6nUGohInqA+/nd6R5ahijK4ojRjii3h/lciYr96mXTvIS/8RqHUSWWtn+Zl+TvZ9Hjzwwn5xgOCBSbKycr/c125OiOUhUnUNwUw5Syhlhhoo7f3Oq5uXUpJUc2ZsD4kEG95mTeRXz17+enixqnlkmR3JEKnnIuuqq93dfLhaLGUY7z5h2tdqyHEpdTxH6B9AmzE49euNC71j68cRXvwu/UeoKqFhrmY4ZI4iUkjwctNp1MCT68pMM8OCLg3OCqADIvUz4K9kIyhpAICj9arD2CFJo4vavmeQMnpTkakAhOhFYtuAMOKG4+w7v2jH8eNHr42zja5l0JKXp2ZHKYfAiHTdpxCSegDeGCouwJsuShlRXm1/cVqjJtLN30DC7XXyLOijbwuLXFfT4YP0PVBEI74t+LjwmPNFg6glP9DOGjod6aYWXSr9OpTwp+tJ5ZLLGN5Xy1a1vD2L9/5HB3bG51QKSFSq+I3sFavSk6DLU8B6d62+FLtGu5/s2KapIwsF83fEl9AfXfDX93Gn85v6Zs7l8ie5kjhEixHgbL/37Fu45RN+3zstvipp7w3W9vdE8aS3bovqx6aySe17+Xy1l3OGvoAioRIar6Punmv7zTehGtx6UR0mWL1T+WcfZf4oFCWZ9jdEK4F6g9JyXi3X5nuqLHOUQe0p//KqB29IkXrHcVERq1cjasVagEHAxSt8r6XzarnD8/sMtmZuTuuIhxWjTAUtJI6AT+ZG8WdHE8bIVabUZZfIhi7n5FSM1nolMM8nIumNQKvJtC1KF9DxcmbFiZx0y6jfGwTi1UA4MMhPlrLnlNVfAVBNo3E34VOWJl/BDyicTDVZjrJOkVr9XOfeb6uc+pw0tRSWusEaYYY4DGgkJz4o9byazM/zK9RntRM7VpbwBSrG/HAUkw4RcF8WTip4ecPEqEKtmMy99as4asbzScanU1zaF3pSVp1DKYWbXuBrOYtHkQJNDfBMCxuoAAA==","editorial":"data:image/webp;base64,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"};
+
+  var ROWS = [
+    ['nova5','asics-novablast-5','ASICS','노바블라스트 5','바운시 데일리 트레이너. 다양한 페이스를 한 켤레로','데일리','255g','169,000','리뷰 종합',0,1],
+    ['ghost17','brooks-ghost-17','BROOKS','고스트 17','부드러운 착지감의 표준 입문화','입문화','289g','169,000','외부 랩 확인',1,1],
+    ['snrise3','adidas-supernova-rise-3','ADIDAS','슈퍼노바 라이즈 3','폼이 20% 더 부드러워진 프리미엄 쿠션화','쿠션화','270g','159,000','리뷰 종합',0,0],
+    ['boston13','adidas-boston-13','ADIDAS','보스턴 13','훈련과 레이스를 겸하는 템포 트레이너','데일리','254g','179,000','리뷰 종합',0,0],
+    ['velocity4','puma-velocity-nitro-4','PUMA','벨로시티 나이트로 4','가볍고 반응성 좋은 가성비 입문화','입문화','224g','179,000','외부 랩 확인',1,1],
+    ['ghostmax3','brooks-ghost-max-3','BROOKS','고스트 맥스 3','두꺼운 폼으로 충격을 크게 줄인 맥시멀','쿠션화','303g','179,000','외부 랩 확인',1,1],
+    ['vomero18','nike-vomero-18','NIKE','보메로 18','푹신하면서도 반발이 남는 맥스 쿠션','쿠션화','298g','189,000','외부 랩 확인',1,1],
+    ['arahi8','hoka-arahi-8','HOKA','아라히 8','평발·과내전을 위한 가벼운 안정화','안정화','259g','199,000','외부 랩 확인',1,1],
+    ['clifton10','hoka-clifton-10','HOKA','클리프톤 10','로커로 굴러가는 대표 입문화','입문화','275g','199,000','외부 랩 확인',1,1],
+    ['speedgoat6','hoka-speedgoat-6','HOKA','스피드고트 6','젖은 바위까지 잡는 트레일 데일리','트레일','278g','205,000','외부 랩 확인',1,1],
+    ['evosl','adidas-adizero-evo-sl','ADIDAS','아디제로 Evo SL','데일리 가격에 레이싱 폼을 넣은 이례적 구성','데일리','223g','209,000','외부 랩 확인',1,1],
+    ['glygts22','brooks-glycerin-gts-22','BROOKS','글리세린 GTS 22','쿠션에 가이드레일을 더한 안정화','안정화','305g','209,000','외부 랩 확인',1,1],
+    ['agravic4','adidas-terrex-agravic-4','ADIDAS','테렉스 아그라빅 4','진흙·테크니컬 지형에 강한 올라운드 트레일','트레일','283g','209,000','외부 랩 확인',1,0],
+    ['speed5','saucony-endorphin-speed-5','SAUCONY','엔돌핀 스피드 5','나일론 플레이트로 훈련과 레이스 모두','데일리','241g','219,000','외부 랩 확인',1,0],
+    ['sb2','asics-superblast-2','ASICS','슈퍼블라스트 2','일상 훈련까지 소화하는 슈퍼트레이너','레이싱','252g','249,000','외부 랩 확인',1,1],
+    ['alphafly3','nike-alphafly-3','NIKE','알파플라이 3','풀코스 기록 단축을 위한 최상위 레이서','레이싱','201g','349,000','외부 랩 확인',1,0],
+    ['','li-ning-red-hare-9-pro','LI-NING','레드헤어 9 프로','10만 원대 데일리 트레이너','데일리','222g','140,000','외부 랩 확인',1,0],
+    ['','new-balance-1080-v14','NEW BALANCE','1080 V14','142 SA 충격흡수','쿠션화','285g','199,000','외부 랩 확인',1,1],
+    ['','nike-pegasus-premium','NIKE','페가수스 프리미엄','ZoomX+ReactX 듀얼 폼','입문화','308g','279,000','외부 랩 확인',1,0],
+    ['','asics-superblast-3','ASICS','슈퍼블라스트 3','239g 슈퍼트레이너','레이싱','239g','259,000','리뷰 종합',0,0],
+    ['','new-balance-860-v15','NEW BALANCE','860 V15','더 넓어진 힐과 이중 밀도 Fresh Foam X','안정화','330g','189,000','리뷰 종합',0,1],
+    ['','hoka-speedgoat-7','HOKA','스피드고트 7','스피드고트의 반발력 업그레이드','트레일','281g','219,000','외부 랩 확인',1,1],
+    ['','asics-novablast-6','ASICS','노바블라스트 6','전족 반발을 더한 바운시 데일리','데일리','249g','179,000','외부 랩 확인',1,1],
+    ['','brooks-glycerin-22','BROOKS','글리세린 22','DNA Tuned가 체중별로 다르게 반응하는…','쿠션화','293g','209,000','외부 랩 확인',1,1],
+    ['','li-ning-red-hare-9','LI-NING','레드헤어 9','10만 원 미만 입문 적토마','입문화','320g','95,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-pro-4','SAUCONY','엔돌핀 프로 4','118.9mm 광폭 전족부','레이싱','220g','269,000','외부 랩 확인',1,0],
+    ['','saucony-hurricane-26','SAUCONY','허리케인 26','IncrediLux ATPU 폼','안정화','262g','219,000','리뷰 종합',0,1],
+    ['','nike-acg-zegama-trail','NIKE','ACG 제가마 트레일','제가마 3세대, ACG로 이관','트레일','336g','219,000','외부 랩 확인',1,0],
+    ['','puma-deviate-pure-nitro','PUMA','디비에이트 나이트로 퓨어','플레이트 없는 100% PEBA 슈퍼폼','데일리','220g','189,000','외부 랩 확인',1,0],
+    ['','nike-vomero-plus','NIKE','보메로 플러스','Full-length ZoomX 업그레이드','쿠션화','289g','209,000','리뷰 종합',0,1],
+    ['','adidas-supernova-rise-2','ADIDAS','슈퍼노바 라이즈 2','와이드 옵션 제공','입문화','257g','149,000','리뷰 종합',0,1],
+    ['','puma-deviate-nitro-elite-3','PUMA','디비에이트 나이트로 엘리트 3','77% 에너지 리턴을 29만원에','레이싱','204g','289,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-inspire-21','MIZUNO','웨이브 인스파이어 21','km당 약 177원','안정화','286g','159,000','외부 랩 확인',1,1],
+    ['','hoka-tecton-x-3','HOKA','테크톤 X 3','울트라 트레일 슈퍼슈즈','트레일','275g','339,000','외부 랩 확인',1,0],
+    ['','nike-pegasus-plus','NIKE','페가수스 플러스','244g 경량에 Full-length ZoomX','데일리','244g','219,000','리뷰 종합',0,0],
+    ['','brooks-hyperion-max-3','BROOKS','하이페리온 맥스 3','DNA Gold PEBA로 무장한 브룩스 첫 진성…','쿠션화','283g','219,000','외부 랩 확인',1,0],
+    ['','nike-pegasus-41','NIKE','페가수스 41','15만원대에 550km 굴리는','입문화','281g','159,000','외부 랩 확인',1,1],
+    ['','puma-deviate-nitro-elite-4','PUMA','디비에이트 나이트로 엘리트 4','170g 초경량과 더 부드러워진 ATPU 폼','레이싱','170g','289,000','외부 랩 확인',1,0],
+    ['','saucony-guide-18','SAUCONY','가이드 18','카야노의 절반 가격','안정화','278g','159,000','외부 랩 확인',1,1],
+    ['','new-balance-hierro-v9','NEW BALANCE','히에로 v9','로드투트레일 쿠션 올라운더','트레일','309g','189,000','외부 랩 확인',1,0],
+    ['','nike-rival-fly-4','NIKE','라이벌 플라이 4','236g 경량 + Cushlon 3.0','데일리','236g','139,000','리뷰 종합',0,0],
+    ['','asics-sonicblast','ASICS','소닉블라스트','카본 플레이트 맥시멀','쿠션화','255g','229,000','외부 랩 확인',1,0],
+    ['','saucony-ride-18','SAUCONY','라이드 18','255g에 통기성 5/5','입문화','255g','159,000','외부 랩 확인',1,1],
+    ['','adidas-adios-pro-4','ADIDAS','아디제로 아디오스 프로 4','5개 Energy Rods','레이싱','200g','299,000','외부 랩 확인',1,0],
+    ['','nike-structure-26','NIKE','스트럭처 26','14만원대에 600km 굴리는','안정화','296g','169,000','외부 랩 확인',1,1],
+    ['','salomon-pulsar','SALOMON','펄사','센스 라이드 후속 올라운더','트레일','290g','210,000','외부 랩 확인',1,0],
+    ['','adidas-adizero-sl2','ADIDAS','아디제로 SL2','듀얼 폼 구조, 보스턴 입문자용 경량 멀티 트레이너','데일리','245g','149,000','리뷰 종합',0,1],
+    ['','hoka-bondi-9','HOKA','본디 9','303g 최대 쿠션','쿠션화','303g','229,000','외부 랩 확인',1,1],
+    ['','nike-pegasus-42','NIKE','페가수스 42','16만원대 풀 렝스 Air Zoom + 와이드 옵션','입문화','286g','169,000','외부 랩 확인',1,1],
+    ['','brooks-hyperion-elite-5','BROOKS','하이페리온 엘리트 5','76.9% 에너지 리턴','레이싱','204g','299,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-horizon-8','MIZUNO','웨이브 호라이즌 8','미디얼 러버월 + Wave','안정화','323g','179,000','외부 랩 확인',1,1],
+    ['','salomon-ultra-glide-4','SALOMON','울트라 글라이드 4','맥스쿠션 울트라 — RelieveSphere 암반…','트레일','295g','230,000','외부 랩 확인',1,1],
+    ['','saucony-kinvara-16','SAUCONY','킨바라 16','198g 초경량 + 4mm 드롭','데일리','198g','159,000','외부 랩 확인',1,0],
+    ['','brooks-glycerin-max','BROOKS','글리세린 맥스','42mm 스택 + 148 SA','쿠션화','305g','239,000','외부 랩 확인',1,1],
+    ['','saucony-ride-19','SAUCONY','라이드 19','255g에 개선된 PWRRUN+','입문화','255g','179,000','외부 랩 확인',1,1],
+    ['','hoka-rocket-x-3','HOKA','로켓 X 3','220g 듀얼 PEBA','레이싱','220g','299,000','외부 랩 확인',1,0],
+    ['','new-balance-860-v14','NEW BALANCE','860 V14','듀얼 폼 10.9/23.8 HA','안정화','295g','179,000','외부 랩 확인',1,1],
+    ['','salomon-s-lab-pulsar-4','SALOMON','S/LAB 펄사 4','엘리트 기술 트레일 레이서','트레일','247g','340,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-rider-29','MIZUNO','웨이브 라이더 29','76.7mm 넓은 토박스','데일리','258g','169,000','외부 랩 확인',1,1],
+    ['','hoka-mach-x-3','HOKA','마하 X 3','PEBA+Pebax','쿠션화','264g','249,000','외부 랩 확인',1,0],
+    ['','new-balance-880-v15','NEW BALANCE','880 V15','40mm 맥시멀 스택','입문화','286g','189,000','외부 랩 확인',1,1],
+    ['','saucony-endorphin-pro-5','SAUCONY','엔돌핀 프로 5','206g에 슬롯 카본 플레이트','레이싱','206g','299,000','외부 랩 확인',1,0],
+    ['','saucony-guide-19','SAUCONY','가이드 19','더 부드러워진 폼 + 초광폭 플랫폼','안정화','298g','179,000','외부 랩 확인',1,1],
+    ['','asics-gel-venture-10','ASICS','젤 벤처 10','89,000원 트레일 입문','트레일','322g','89,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rider-30','MIZUNO','웨이브 라이더 30','30세대 대개편 — 스택 +4~6mm','데일리','267g','179,000','외부 랩 확인',1,1],
+    ['','new-balance-sc-trainer-v3','NEW BALANCE','SC Trainer V3','8.8 HA 소프트+카본','쿠션화','278g','249,000','외부 랩 확인',1,1],
+    ['','on-cloudrunner-2','ON','클라우드러너 2','힐 카운터 5/5 최강 안정성','입문화','275g','189,000','외부 랩 확인',1,0],
+    ['','nike-vaporfly-4','NIKE','베이퍼플라이 4','v3 대비 13% 경량화(166g)','레이싱','166g','309,000','외부 랩 확인',1,0],
+    ['','brooks-adrenaline-gts-25','BROOKS','아드레날린 GTS 25','카야노 절반 가격에 GuideRails','안정화','300g','189,000','외부 랩 확인',1,1],
+    ['','adidas-terrex-agravic-speed-ultra','ADIDAS','테렉스 아그라빅 스피드 울트라 2','2세대 트레일 슈퍼슈즈','트레일','265g','279,000','외부 랩 확인',1,0],
+    ['','hoka-mach-6','HOKA','마하 6','232g+65.4% 에너지','데일리','232g','185,000','외부 랩 확인',1,1],
+    ['','asics-megablast','ASICS','메가블라스트','48mm 맥시멀인데 218g','쿠션화','218g','299,000','외부 랩 확인',1,0],
+    ['','on-cloudsurfer-2','ON','클라우드서퍼 2','CloudTec Phase의 세련된 전환감','입문화','254g','199,000','외부 랩 확인',1,0],
+    ['','new-balance-sc-elite-v5','NEW BALANCE','SC Elite V5','198g+74.8% 에너지','레이싱','198g','319,000','외부 랩 확인',1,1],
+    ['','asics-gel-kayano-32','ASICS','젤 카야노 32','평발 교정의 끝판왕','안정화','300g','199,000','리뷰 종합',0,1],
+    ['','asics-metafuji-trail','ASICS','메타후지 트레일','카본 플레이트 트레일 레이서','트레일','258g','279,000','리뷰 종합',0,0],
+    ['','new-balance-rebel-v5','NEW BALANCE','레벨 V5','220g에 11.5 HA 소프트','데일리','220g','189,000','외부 랩 확인',1,0],
+    ['','new-balance-1080-v15','NEW BALANCE','1080 V15','216g 경량 쿠션화','쿠션화','216g','209,000','외부 랩 확인',1,1],
+    ['','asics-metaspeed-edge-plus','ASICS','메타스피드 엣지+','빠른 피치로 승부한다','레이싱','208g','329,000','리뷰 종합',0,1],
+    ['','asics-gel-kayano-33','ASICS','젤 카야노 33','느린 페이스엔 부드럽고','안정화','298g','199,000','외부 랩 확인',1,1],
+    ['','nike-ultrafly','NIKE','울트라플라이','트레일 최초 ZoomX + 카본','트레일','299g','299,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-azura','SAUCONY','엔돌핀 아주라','240g에 PWRRUN PB 슈퍼폼','데일리','240g','189,000','외부 랩 확인',1,0],
+    ['','nike-vomero-premium','NIKE','보메로 프리미엄','역대 최고 50mm 스택','쿠션화','326g','289,000','리뷰 종합',0,0],
+    ['','asics-metaspeed-sky-plus','ASICS','메타스피드 스카이+','보폭 넓은 스트라이드 러너의 서브3 파트너','레이싱','205g','329,000','외부 랩 확인',1,1],
+    ['','on-cloudrunner-3','ON','클라우드러너 3','힐 가이던스가 확실한 On식 안정화','안정화','317g','199,000','외부 랩 확인',1,0],
+    ['','mizuno-neo-vista-3','MIZUNO','네오 비스타 3','SA 167 극쿠션 슈퍼트레이너','데일리','266g','219,000','외부 랩 확인',1,0],
+    ['','li-ning-red-hare-9-ultra','LI-NING','레드헤어 9 울트라','10만 원대 PEBA 맥스쿠션','쿠션화','246g','150,000','외부 랩 확인',1,0],
+    ['','hoka-cielo-x1','HOKA','씨엘로 X1','208g에 46mm PEBA 스택','레이싱','208g','329,000','외부 랩 확인',1,0],
+    ['','saucony-hurricane-25','SAUCONY','허리케인 25','PEBA + 크래들 듀얼 구조','안정화','286g','199,000','외부 랩 확인',1,1],
+    ['','on-cloudflow-5','ON','클라우드플로우 5','Speedboard가 만드는 날카로운 전환','데일리','278g','219,000','외부 랩 확인',1,0],
+    ['','asics-gel-nimbus-28','ASICS','젤 님버스 28','43.5mm 스택의 편안함','쿠션화','281g','199,000','외부 랩 확인',1,1],
+    ['','on-cloudboom-strike','ON','클라우드붐 스트라이크','72.1% 리턴 + 겨울 6% 경화','레이싱','201g','329,000','외부 랩 확인',1,0],
+    ['','hoka-gaviota-6','HOKA','가비오타 6','J-Frame 최강 안정','안정화','299g','239,000','리뷰 종합',0,1],
+    ['','adidas-hyperboost-edge','ADIDAS','하이퍼부스트 엣지','플레이트 없이 45mm','데일리','247g','249,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-2','ON','클라우드몬스터 2','더블 CloudTec의 독특한 착지감','쿠션화','292g','219,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-elite-2','SAUCONY','엔돌핀 엘리트 2','80.6% 에너지 리턴','레이싱','197g','339,000','외부 랩 확인',1,0],
+    ['','puma-deviate-nitro-4','PUMA','디비에이트 나이트로 4','PEBAX 듀얼폼 + 카본 PWRPLATE','쿠션화','250g','219,000','리뷰 종합',0,1],
+    ['','mizuno-hyperwarp-elite','MIZUNO','하이퍼워프 엘리트','170g에 38mm 스택','레이싱','170g','349,000','리뷰 종합',0,0],
+    ['','on-cloudmonster-3','ON','클라우드몬스터 3','더 넓어진 핏과 강해진 록커','쿠션화','295g','229,000','리뷰 종합',0,0],
+    ['','saucony-endorphin-elite-3','SAUCONY','엔돌핀 엘리트 3','80%대 반발은 그대로','레이싱','207g','369,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-3-hyper','ON','클라우드몬스터 3 하이퍼','무플레이트 슈퍼트레이너','쿠션화','271g','259,000','리뷰 종합',0,0],
+    ['','asics-metaspeed-ray','ASICS','메타스피드 레이','129g 초경량, 81% 에너지 리턴의 전족부 특화…','레이싱','129g','399,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-hyper','ON','클라우드몬스터 하이퍼','몬스터 2에서 34g 뺀 Pebax 경량판','쿠션화','258g','259,000','외부 랩 확인',1,0],
+    ['','mizuno-hyperwarp-pure','MIZUNO','하이퍼워프 퓨어','139g 극한 경량','레이싱','139g','399,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-3-hyper-lightspray','ON','클라우드몬스터 3 하이퍼 라이트스프레이','로봇이 만든 어퍼','쿠션화','205g','319,000','외부 랩 확인',1,0],
+    ['','asics-magic-speed-5','ASICS','매직스피드 5','193g에 포크형 카본','레이싱','193g','229,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-sky-9','MIZUNO','웨이브 스카이 9','44mm 질소 주입 폼','쿠션화','290g','189,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rebellion-flash-2','MIZUNO','웨이브 리벨리온 플래시 2','극단적 힐 베벨 로커','레이싱','239g','189,000','외부 랩 확인',1,0],
+    ['','puma-magnify-nitro-3','PUMA','매그니파이 나이트로 3','PEBA 맥시멀 쿠션을 20만원 이하에','쿠션화','264g','199,000','리뷰 종합',0,0],
+    ['','asics-magic-speed-4','ASICS','매직스피드 4','22만원 카본 플레이트','레이싱','237g','199,000','리뷰 종합',0,0],
+    ['','saucony-triumph-23','SAUCONY','트라이엄프 23','풀 PEBA 폼을 19만원대에','쿠션화','272g','199,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rebellion-flash-3','MIZUNO','웨이브 리벨리온 플래시 3','TPEE+EVA 듀얼 폼 업그레이드','레이싱','244g','199,000','리뷰 종합',0,0],
+    ['','on-cloudsurfer-max','ON','클라우드서퍼 맥스','부드럽기보다 안정적인 CloudTec Phase','쿠션화','292g','219,000','외부 랩 확인',1,0],
+    ['','nike-streakfly-2','NIKE','스트릭플라이 2','트랙 스파이크급 128g','레이싱','128g','219,000','외부 랩 확인',1,0],
+    ['','puma-deviate-nitro-3','PUMA','디비에이트 나이트로 3','22만원대 카본 슈퍼트레이너','쿠션화','268g','219,000','리뷰 종합',0,0],
+    ['','nike-zoom-fly-6','NIKE','줌 플라이 6','베이퍼플라이 반값','레이싱','248g','229,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-trainer','SAUCONY','엔돌핀 트레이너','IncrediRUN 폼을 매일 훈련에','쿠션화','285g','219,000','외부 랩 확인',1,0],
+    ['','mizuno-hyperwarp-pro','MIZUNO','하이퍼워프 프로','201g에 39mm 스택','레이싱','201g','319,000','리뷰 종합',0,0],
+    ['','puma-magmax-nitro-2','PUMA','매그맥스 나이트로 2','엘리트 슈퍼폼 + 훈련용 내구성','쿠션화','268g','239,000','리뷰 종합',0,0],
+    ['','puma-fast-r-nitro-elite-3','PUMA','패스트알 나이트로 엘리트 3','173g 초경량 + 80%+ 리턴','레이싱','173g','379,000','외부 랩 확인',1,0],
+    ['','brooks-glycerin-max-2','BROOKS','글리세린 맥스 2','312g에 47mm 스택','쿠션화','312g','249,000','외부 랩 확인',1,1],
+    ['','new-balance-balos-v1','NEW BALANCE','발로스 V1','261g에 PEBA 블렌드 폼','쿠션화','261g','259,000','리뷰 종합',0,1]
+  ];
+
+  /* ── 필터 상태 ─────────────────────────────────────────────
+     필터는 122개 전체를 대상으로 돌고, 그 결과에 노출 제한을 얹는다.
+     결과가 12개 이하면 제한 없이 전부 보여준다(§5.2). */
+  var BASE = 12, STEP = 24;
+  var FULL_AT = BASE + STEP * 2;
+  var filter = 'all';
+  var pending = 'all';
+  var shown = BASE;
+
+  var FILTERS = {
+    all:      function () { return true; },
+    daily:    function (r) { return r[5] === '데일리'; },
+    cushion:  function (r) { return r[5] === '쿠션화'; },
+    beginner: function (r) { return r[5] === '입문화'; },
+    racing:   function (r) { return r[5] === '레이싱'; },
+    stable:   function (r) { return r[5] === '안정화'; },
+    trail:    function (r) { return r[5] === '트레일'; },
+    wide:     function (r) { return r[10] === 1; },
+    under20:  function (r) { return parseInt(r[7].replace(/,/g, ''), 10) <= 200000; }
+  };
+  var LABELS = {
+    all: '전체', daily: '데일리', cushion: '쿠션화', beginner: '입문화', racing: '레이싱',
+    stable: '안정화', trail: '트레일', wide: '와이드 출시', under20: '20만원 이하'
+  };
+
+  function matched(key) { return ROWS.filter(FILTERS[key] || FILTERS.all); }
+
+  function rowHtml(r) {
+    var src = IMGS[r[0]] || '';
+    return '<a class="row" href="/shoes/' + r[1] + '">' +
+      '<span class="row-th">' +
+        (src ? '<img src="' + src + '" alt="' + r[3] + '">'
+             : '<svg class="row-mark" viewBox="200 178 280 152" aria-hidden="true">' +
+               '<use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg>') +
+      '</span>' +
+      '<span class="row-nm"><span class="row-b">' + r[2] + ' · ' + r[5] + '</span>' +
+      '<span class="row-n">' + r[3] + '</span></span>' +
+      '<span class="row-p">' + r[7] + '원</span>' +
+      '<span class="row-w">' + r[6] + '</span>' +
+      '<span class="row-s' + (r[9] ? ' verified' : '') + '">' + r[8] + '</span>' +
+    '</a>';
+  }
+
+  function isLastStep(limit, total) { return limit >= FULL_AT || total - limit <= STEP; }
+
+  function render() {
+    var list = matched(filter);
+    var limit = list.length <= BASE ? list.length : Math.min(shown, list.length);
+
+    document.getElementById('idxRows').innerHTML = list.slice(0, limit).map(rowHtml).join('');
+    /* 결과 수는 aria-live 로 안내한다 */
+    document.getElementById('resultN').innerHTML = '<b>' + list.length + '</b>개 조건 일치';
+    document.getElementById('filterLabel').textContent = LABELS[filter];
+    document.getElementById('filterOpen').setAttribute('data-on', filter === 'all' ? '0' : '1');
+
+    var rest = list.length - limit;
+    var wrap = document.getElementById('expandWrap');
+    var btn = document.getElementById('expandBtn');
+    if (rest <= 0) {
+      wrap.hidden = true;
+    } else {
+      wrap.hidden = false;
+      btn.innerHTML = isLastStep(limit, list.length)
+        ? '전체 러닝화 보기 <span class="cnt">' + rest + '종 남음</span>'
+        : '러닝화 ' + STEP + '개 더 보기 <span class="cnt">' + limit + ' / ' + list.length + '</span>';
+    }
+    /* 무JS 폴백 <details> 는 JS 가 켜지면 숨긴다 */
+    var fb = document.getElementById('moreFallback');
+    if (fb) fb.hidden = true;
+  }
+
+  function expand() {
+    var total = matched(filter).length;
+    shown = isLastStep(Math.min(shown, total), total) ? total : Math.min(shown + STEP, total);
+    render();
+  }
+
+  /* ── 오버레이 공통 — ESC 닫힘 · 포커스 트랩 · 열려 있는 동안 배경 스크롤 잠금.
+        바텀시트(필터)와 모바일 메뉴가 같은 규칙을 쓴다(§9). ── */
+  function overlay(panel, extra) {
+    var opener = null, onKey = null;
+
+    function focusables() {
+      return Array.prototype.filter.call(
+        panel.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'),
+        function (el) { return !el.disabled && el.offsetParent !== null; }
+      );
+    }
+
+    function open() {
+      opener = document.activeElement;
+      if (extra && extra.onOpen) extra.onOpen();
+      panel.hidden = false;
+      if (extra && extra.backdrop) extra.backdrop.hidden = false;
+      document.body.style.overflow = 'hidden';
+      var f = focusables();
+      if (f.length) f[0].focus();
+      onKey = function (e) {
+        if (e.key === 'Escape') { e.preventDefault(); close(); return; }
+        if (e.key !== 'Tab') return;
+        var g = focusables();
+        if (!g.length) return;
+        var first = g[0], last = g[g.length - 1];
+        /* 포커스가 패널 밖으로 나가지 않게 양끝에서 되돌린다 */
+        if (e.shiftKey && (document.activeElement === first || !panel.contains(document.activeElement))) {
+          e.preventDefault(); last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+          e.preventDefault(); first.focus();
+        }
+      };
+      document.addEventListener('keydown', onKey, true);
+    }
+
+    function close() {
+      panel.hidden = true;
+      if (extra && extra.backdrop) extra.backdrop.hidden = true;
+      document.body.style.overflow = '';
+      if (onKey) document.removeEventListener('keydown', onKey, true);
+      if (extra && extra.onClose) extra.onClose();
+      if (opener && opener.focus) opener.focus();
+    }
+
+    return { open: open, close: close };
+  }
+
+  var sheet = document.getElementById('sheet');
+  var sheetBd = document.getElementById('sheetBd');
+  var mnav = document.getElementById('mnav');
+  var menuBtn = document.getElementById('menuOpen');
+
+  var sheetUI = overlay(sheet, {
+    backdrop: sheetBd,
+    onOpen: function () { pending = filter; syncChips(); }
+  });
+  var menuUI = overlay(mnav, {
+    onOpen: function () { menuBtn.setAttribute('aria-expanded', 'true'); },
+    onClose: function () { menuBtn.setAttribute('aria-expanded', 'false'); }
+  });
+
+  function syncChips() {
+    document.querySelectorAll('.chip').forEach(function (c) {
+      c.setAttribute('aria-pressed', c.dataset.f === pending ? 'true' : 'false');
+    });
+    document.getElementById('sheetApply').textContent =
+      matched(pending).length + '개 결과 보기';
+  }
+
+  function bind() {
+    document.querySelectorAll('.chip').forEach(function (c) {
+      c.addEventListener('click', function () { pending = c.dataset.f; syncChips(); });
+    });
+    document.getElementById('filterOpen').addEventListener('click', sheetUI.open);
+    document.getElementById('sheetClose').addEventListener('click', sheetUI.close);
+    sheetBd.addEventListener('click', sheetUI.close);
+    document.getElementById('sheetReset').addEventListener('click', function () {
+      pending = 'all'; syncChips();
+    });
+    document.getElementById('sheetApply').addEventListener('click', function () {
+      filter = pending; shown = BASE; render(); sheetUI.close();
+    });
+    menuBtn.addEventListener('click', menuUI.open);
+    document.getElementById('mnavClose').addEventListener('click', menuUI.close);
+    document.getElementById('expandBtn').addEventListener('click', expand);
+  }
+
+  function fillImages(root) {
+    root.querySelectorAll('[data-img]').forEach(function (el) {
+      var k = el.getAttribute('data-img');
+      if (IMGS[k]) el.src = IMGS[k];
+    });
+  }
+
+  /* 히어로 연출 — 뷰포트에 들어오면 1회 재생(실제 구현은 sessionStorage 로 세션당 1회).
+     연출 중에도 CTA 는 클릭 가능하다. 저사양 기기는 정적 화면으로 대체한다. */
+  function isLowEnd() {
+    var q = new URLSearchParams(location.search);
+    if (q.get('low') === '1') return true;
+    var c = navigator.connection || {};
+    return (navigator.hardwareConcurrency || 8) <= 4
+        || (navigator.deviceMemory || 8) <= 4
+        || c.saveData === true;
+  }
+
+  function armHero(host) {
+    var viz = host.querySelector('.viz');
+    if (!viz) return;
+    if (isLowEnd()) { host.classList.add('low'); return; }
+    if (!('IntersectionObserver' in window)) { host.classList.add('run'); return; }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { host.classList.add('run'); io.disconnect(); }
+      });
+    }, { threshold: .3 });
+    io.observe(viz);
+  }
+
+  /* 신규/재방문 분기 확인용 — ?visitor=new 면 이어보기가, return 이면 추천 설명이 빠진다(§5) */
+  function applyVisitor(host) {
+    var v = new URLSearchParams(location.search).get('visitor');
+    if (v !== 'new' && v !== 'return') return;
+    var drop = v === 'new' ? 'return' : 'new';
+    host.querySelectorAll('[data-visitor="' + drop + '"]').forEach(function (el) { el.remove(); });
+  }
+
+  (function () {
+    var src = document.getElementById('src');
+    applyVisitor(src);
+    fillImages(src);
+    render();
+    bind();
+    armHero(src);
+  })();
+</script>
+
+</body>
+</html>
