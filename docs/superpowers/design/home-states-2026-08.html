@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>allrunabout 홈 — 상태 12종 · 변경 전후 · 레퍼런스</title>
+</head>
+<body>
+
+<style>
+  :root {
+    --paper: #F7F4ED; --paper-soft: #EFEAE0; --surface: #FFFFFF;
+    --ink: #17150F; --ink-soft: #6E6A5E; --line: #D9D4C8;
+    --signal: #FF4D00; --signal-soft: #FFE7DB;
+    --signal-dark: #C73800; --positive: #2F7D5A; --warning: #C98112;
+    --dark-soft: #28241D; --light-on-dark: #F7F4ED;
+    --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Segoe UI", "Noto Sans KR", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    --tilt: -9deg; --tilt-back: 9deg;
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; background: var(--paper-soft); color: var(--ink); font-family: var(--sans);
+         font-size: 16px; line-height: 1.65; word-break: keep-all; -webkit-font-smoothing: antialiased; }
+  h1,h2,h3,h4,p,ul,ol,figure { margin: 0; } ul { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: default; }
+  code { font-family: var(--mono); font-size: .88em; background: var(--paper); padding: 1px 4px; border: 1px solid var(--line); }
+
+  .doc { max-width: 1180px; margin: 0 auto; padding: 34px 26px 80px; }
+  .doc-k { font-family: var(--mono); font-size: 10.5px; letter-spacing: .18em; color: var(--ink-soft); text-transform: uppercase; }
+  .doc-h { font-size: 27px; font-weight: 800; letter-spacing: -.035em; margin-top: 6px; }
+  .doc-note { margin: 16px 0 34px; padding: 12px 14px; background: var(--signal-soft);
+              border-left: 3px solid var(--signal); font-size: 13px; line-height: 1.62; }
+  .part-h { font-size: 19px; font-weight: 800; letter-spacing: -.03em; margin: 46px 0 6px;
+            padding-top: 20px; border-top: 2px solid var(--ink); }
+  .part-p { font-size: 13.5px; color: var(--ink-soft); margin-bottom: 20px; }
+
+  /* ── 상태 패널 ── */
+  .states { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px; }
+  @media (max-width: 940px) { .states { grid-template-columns: 1fr; } }
+  .st { background: var(--paper); border: 1px solid var(--line); padding: 16px 17px 18px; }
+  .st-h { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; margin-bottom: 4px; }
+  .st-n { font-family: var(--mono); font-size: 11px; color: var(--signal); }
+  .st-t { font-size: 15.5px; font-weight: 750; letter-spacing: -.028em; }
+  .st-s { margin-left: auto; font-family: var(--mono); font-size: 9.5px; color: var(--ink-soft); }
+  .st-w { font-size: 12px; color: var(--ink-soft); margin-bottom: 13px; }
+  .st-w b { font-weight: 600; color: var(--ink); }
+  .hint { font-size: 12px; color: var(--ink-soft); line-height: 1.55; margin-top: 12px;
+          padding-left: 10px; border-left: 2px solid var(--line); }
+  .hint b { color: var(--ink); font-weight: 650; }
+
+  /* ── 섹션 순서 ── */
+  .seq { display: grid; gap: 3px; }
+  .sq { display: grid; grid-template-columns: 26px 1fr auto; gap: 9px; align-items: baseline;
+        padding: 5px 8px; background: var(--surface); border: 1px solid var(--line); font-size: 12.5px; }
+  .sq-n { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); }
+  .sq-t { font-weight: 550; }
+  .sq em { font-style: normal; font-family: var(--mono); font-size: 9.5px; letter-spacing: .06em; }
+  .sq.off { background: repeating-linear-gradient(-45deg, var(--paper), var(--paper) 5px, var(--paper-soft) 5px, var(--paper-soft) 10px);
+            color: var(--ink-soft); }
+  .sq.off .sq-t { text-decoration: line-through; text-decoration-color: var(--line); }
+  .sq.off em { color: var(--ink-soft); }
+  .sq.on { border-color: var(--signal); background: var(--signal-soft); }
+  .sq.on em { color: var(--signal); }
+
+  /* ── 필터 · 인덱스 ── */
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chips.sm .chip { font-size: 12px; min-height: 36px; padding: 6px 11px; }
+  .chip { font-size: 12.5px; font-weight: 500; padding: 7px 12px; min-height: 38px;
+          border: 1px solid var(--line); background: var(--surface); border-radius: 2px;
+          display: inline-flex; align-items: center; gap: 6px; }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chip.wide[aria-pressed="true"] { background: var(--signal); border-color: var(--signal); }
+  .chip .c-n { font-family: var(--mono); font-size: 10px; opacity: .62; }
+  .rline { display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
+           padding: 13px 0 10px; border-bottom: 2px solid var(--ink); }
+  .result-n { font-size: 13.5px; font-weight: 600; }
+  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 16px; }
+  .sortl { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); }
+
+  .idx { border-bottom: 1px solid var(--line); }
+  .row { display: grid; grid-template-columns: 54px 1fr auto; gap: 12px; align-items: center;
+         padding: 10px 0; border-bottom: 1px solid var(--line); }
+  .row-th { width: 54px; height: 38px; display: flex; align-items: center; justify-content: center; }
+  .row-th img { max-height: 38px; width: auto; }
+  .row-mark { width: 42px; height: 21px; color: var(--line); }
+  .row-b { font-family: var(--mono); font-size: 9.5px; letter-spacing: .1em; color: var(--ink-soft); }
+  .row-n { display: block; font-size: 14px; font-weight: 650; letter-spacing: -.02em; line-height: 1.3; }
+  .row-meta { display: flex; align-items: center; gap: 7px; margin-top: 3px; flex-wrap: wrap; }
+  .row-u { font-size: 10.5px; color: var(--ink-soft); }
+  .row-w { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); }
+  .row-s { font-family: var(--mono); font-size: 8.5px; letter-spacing: .04em; color: var(--ink-soft);
+           border: 1px solid var(--line); padding: 2px 5px; white-space: nowrap; }
+  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .row-p { font-family: var(--mono); font-size: 12px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
+
+  /* ── 확장 단계 ── */
+  .steps { display: grid; gap: 8px; }
+  .stp { display: grid; grid-template-columns: 40px 1fr; gap: 10px; align-items: center; }
+  .stp-n { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); }
+  .expand-b { display: flex; align-items: center; justify-content: center; gap: 9px; width: 100%;
+              border: 1px solid var(--ink); background: var(--surface); padding: 10px 16px; min-height: 44px;
+              border-radius: 2px; font-size: 13px; font-weight: 650; }
+  .expand-b .cnt { font-family: var(--mono); font-size: 10.5px; opacity: .6; font-weight: 400; }
+  .gone { font-size: 12.5px; color: var(--ink-soft); font-family: var(--mono); }
+
+  /* ── 광고 ── */
+  .ad-l { font-family: var(--mono); font-size: 9px; letter-spacing: .2em; color: var(--ink-soft); text-align: center; margin-bottom: 7px; }
+  .ad-box { min-height: 160px; border: 1px dashed var(--line); display: flex; align-items: center; justify-content: center; }
+  .ad-box.loading { background: var(--paper-soft); }
+  .ad-sk { width: 76%; height: 62%; background: linear-gradient(90deg, var(--line) 0%, var(--paper-soft) 50%, var(--line) 100%);
+           background-size: 200% 100%; animation: sk 1.6s linear infinite; opacity: .55; }
+  @keyframes sk { 0% { background-position: 100% 0; } 100% { background-position: -100% 0; } }
+  .ad-box.empty::after { content: "높이만 예약 · 대체 콘텐츠 없음"; font-family: var(--mono); font-size: 9.5px;
+                         letter-spacing: .1em; color: var(--line); }
+
+  /* ── 바텀시트 ── */
+  .phone { position: relative; height: 250px; border: 1px solid var(--line); background: var(--paper); overflow: hidden; }
+  .phone-dim { position: absolute; inset: 0; background: rgba(23,21,15,.42); }
+  .sheet { position: absolute; left: 0; right: 0; bottom: 0; background: var(--paper);
+           border-top: 2px solid var(--ink); padding: 13px 14px 15px; }
+  .sheet-h { display: flex; align-items: center; justify-content: space-between; margin-bottom: 11px; }
+  .sheet-h h4 { font-size: 14.5px; font-weight: 750; letter-spacing: -.03em; }
+  .sheet-x { color: var(--ink-soft); }
+  .sheet-f { display: flex; gap: 10px; align-items: center; margin-top: 14px; }
+  .sheet-reset { font-size: 12.5px; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+  .sheet-apply { margin-left: auto; flex: 1; text-align: center; background: var(--ink); color: var(--paper);
+                 font-weight: 700; font-size: 13.5px; padding: 12px; border-radius: 2px; }
+  .sheet-apply b { font-family: var(--mono); color: var(--signal); }
+
+  /* ── 결과 없음 ── */
+  .empty-box { border: 1px solid var(--line); background: var(--surface); padding: 20px 18px; text-align: center; margin-top: 14px; }
+  .eb-t { font-size: 14.5px; font-weight: 700; letter-spacing: -.025em; }
+  .eb-d { font-size: 12.5px; color: var(--ink-soft); margin-top: 6px; line-height: 1.55; }
+  .eb-b { display: inline-block; margin-top: 13px; border: 1px solid var(--ink); padding: 9px 16px;
+          font-size: 12.5px; font-weight: 650; border-radius: 2px; }
+
+  /* ── 히어로 정지 프레임 ── */
+  .stage { border: 1px solid var(--line); background: var(--paper); overflow: hidden; }
+  .viz { position: relative; aspect-ratio: 560/400; width: 100%; }
+  .track { position: absolute; inset: -30% -25%; pointer-events: none; }
+  .lane { position: absolute; left: 0; right: 0; height: 1px; background: var(--line); transform: rotate(var(--tilt)); }
+  .lane:nth-child(1) { top: 30%; opacity: .2; } .lane:nth-child(2) { top: 41%; opacity: .28; }
+  .lane:nth-child(3) { top: 53%; opacity: .36; } .lane:nth-child(4) { top: 66%; opacity: .46; }
+  .lane:nth-child(5) { top: 80%; opacity: .58; }
+  .startline { position: absolute; left: 2%; top: 12%; bottom: 12%; width: 1.5px; background: var(--ink-soft);
+               transform: rotate(var(--tilt)); transform-origin: center; opacity: 0; }
+  .startline-tag { position: absolute; left: 2%; top: 5%; font-family: var(--mono); font-size: 8.5px;
+                   letter-spacing: .2em; color: var(--ink-soft); opacity: 0; }
+  .rig { position: absolute; inset: 0; transform: rotate(var(--tilt)); }
+  .rail { position: absolute; left: -6%; right: -6%; height: 1px; background: color-mix(in srgb, var(--ink) 34%, transparent);
+          transform: scaleX(0); transform-origin: left center; }
+  .rail::after { content: ""; position: absolute; right: 0; top: -2px; width: 5px; height: 5px;
+                 background: var(--signal); transform: skewX(var(--tilt)); }
+  .rail-tag { position: absolute; left: -4%; font-family: var(--mono); font-size: 8.5px; letter-spacing: .2em;
+              color: var(--ink-soft); opacity: 0; transform: rotate(var(--tilt-back)) translateY(-50%); }
+  .lab { position: absolute; font-family: var(--mono); font-size: 11px; letter-spacing: .04em; white-space: nowrap;
+         padding: 3px 8px; background: var(--surface); border: 1px solid var(--line); color: var(--ink);
+         border-radius: 2px; opacity: 0; }
+  .lab.name { border-color: transparent; background: none; color: var(--ink-soft); padding-left: 0; }
+  .lab.keep { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .streak { position: absolute; height: 2px; background: var(--signal); transform-origin: right center;
+            transform: rotate(var(--tilt)) scaleX(0); }
+  .viz svg.fig, .viz svg.sil { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .fig-wrap { position: absolute; inset: 0; }
+  .sil-ghost { opacity: .12; } .sil-sharp { opacity: 0; }
+
+  .viz .lab.data { animation: labRun 4.5s cubic-bezier(.2,.7,.25,1) both; }
+  .viz .lab.drop { animation: labOut 4.5s cubic-bezier(.2,.7,.25,1) both; }
+  .viz .lab.name { animation: nameFade 4.5s ease both; }
+  .viz .rail { animation: railRun 4.5s cubic-bezier(.25,.75,.3,1) both; }
+  .viz .rail-tag { animation: fadeAt 4.5s ease both; }
+  .viz .startline, .viz .startline-tag { animation: startIn 4.5s ease both; }
+  .viz .streak { animation: streakRun 4.5s cubic-bezier(.1,.8,.2,1) both; }
+  .viz .sil-ghost { animation: shoeAdvance 4.5s cubic-bezier(.3,.6,.2,1) both; }
+  .viz .sil-sharp { animation: silReveal 4.5s ease both, silWipe 4.5s cubic-bezier(.35,.1,.2,1) both,
+                               shoeAdvance 4.5s cubic-bezier(.3,.6,.2,1) both; }
+  .viz .fig-foot { animation: drawFoot 4.5s cubic-bezier(.4,.1,.2,1) both; }
+  .viz .fig-tick { animation: tickIn 4.5s ease both; }
+  .viz .fig-fit { animation: fitIn 4.5s ease both; }
+  /* 정지 프레임 — animation 단축 속성이 play-state 를 되돌리므로 !important 로 덮는다 */
+  .viz.snap * { animation-play-state: paused !important; animation-delay: calc(var(--d, 0s) - var(--t)) !important; }
+
+  @keyframes labRun { 0% { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    13% { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    40%, 100% { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); } }
+  @keyframes labOut { 0% { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    13% { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    40%, 60% { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); }
+    72%, 100% { opacity: 0; transform: translate(26px,-4px) rotate(var(--tilt-back)); } }
+  @keyframes nameFade { 0% { opacity: 0; transform: rotate(var(--tilt-back)) translateX(-14px); }
+    13% { opacity: 1; transform: rotate(var(--tilt-back)) translateX(0); } 36% { opacity: 1; }
+    50%, 100% { opacity: 0; transform: rotate(var(--tilt-back)) translateX(18px); } }
+  @keyframes railRun { 0%,14% { transform: scaleX(0); } 40%,100% { transform: scaleX(1); } }
+  @keyframes fadeAt { 0%,22% { opacity: 0; } 42%,100% { opacity: 1; } }
+  @keyframes startIn { 0%,8% { opacity: 0; } 24%,100% { opacity: 1; } }
+  @keyframes streakRun { 0%,40% { transform: rotate(var(--tilt)) scaleX(0); opacity: 0; }
+    52% { transform: rotate(var(--tilt)) scaleX(1); opacity: .9; }
+    74% { transform: rotate(var(--tilt)) scaleX(1); opacity: .34; }
+    100% { transform: rotate(var(--tilt)) scaleX(1); opacity: .3; } }
+  @keyframes silWipe { 0%,38% { clip-path: inset(0 100% 0 0); } 64%,100% { clip-path: inset(0 0 0 0); } }
+  @keyframes silReveal { 0%,38% { opacity: .12; } 64%,100% { opacity: 1; } }
+  @keyframes shoeAdvance { 0%,80% { transform: translateX(0); } 92% { transform: translateX(7px); } 100% { transform: translateX(6px); } }
+  @keyframes drawFoot { 0%,60% { stroke-dashoffset: 1400; opacity: 0; } 63% { opacity: 1; }
+    82%,100% { stroke-dashoffset: 0; opacity: 1; } }
+  @keyframes tickIn { 0%,66% { opacity: 0; } 84%,100% { opacity: 1; } }
+  @keyframes fitIn { 0%,78% { opacity: 0; } 88% { opacity: .32; } 100% { opacity: .19; } }
+
+  /* ── 비교표 ── */
+  table { border-collapse: collapse; width: 100%; background: var(--paper); }
+  th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 13px; vertical-align: top; }
+  th { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--ink-soft);
+       text-transform: uppercase; border-bottom: 2px solid var(--ink); }
+  td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+  td.win { color: var(--signal); font-family: var(--mono); font-size: 12px; }
+  .cmp-seq { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; }
+  @media (max-width: 800px) { .cmp-seq { grid-template-columns: 1fr; } }
+  .cseq h4 { font-size: 13px; font-weight: 750; margin-bottom: 9px; }
+  .cseq ol { padding: 0; list-style: none; display: grid; gap: 3px; }
+  .cseq li { font-size: 12.5px; padding: 6px 10px; background: var(--surface); border: 1px solid var(--line); }
+  .cseq li.hot { border-color: var(--signal); color: var(--signal); }
+
+  /* ── 레퍼런스 ── */
+  .ref-note { font-size: 12.5px; color: var(--ink-soft); margin-top: 14px;
+              padding-left: 10px; border-left: 2px solid var(--warning); }
+</style>
+
+<div class="doc">
+  <p class="doc-k">ALLRUNABOUT · HOME REDESIGN · TASK 5</p>
+  <h1 class="doc-h">상태 12종 · 변경 전후 비교 · 레퍼런스 반영 위치</h1>
+
+  <div class="doc-note">
+    아래 패널은 <b>설명이 아니라 실제 렌더</b>입니다 — 시안과 같은 토큰·같은 마크업으로 그렸고,
+    데이터는 DB 122종 원본을 그대로 씁니다. 히어로 정지 프레임은 같은 CSS 애니메이션을 음수 지연으로 멈춘 것입니다.
+    상태 번호와 라벨은 이 문서 전용이며 실제 홈에 넣지 않습니다.
+  </div>
+
+  <h2 class="part-h">Part 1 — 상태 12종</h2>
+  <p class="part-p">스펙 §10(상태 디자인)과 §5(섹션 맵)에서 요구한 분기를 하나씩 렌더했습니다.</p>
+  <div class="states">
+    <section class="st">
+      <div class="st-h"><span class="st-n">01</span><span class="st-t">신규 방문자</span><span class="st-s">§5 섹션 맵</span></div>
+      <p class="st-w">조건 — `localStorage` 기록 없음</p>
+      <ul class="seq"><li class="sq"><span class="sq-n">01</span><span class="sq-t">HomeHeader</span></li><li class="sq"><span class="sq-n">02</span><span class="sq-t">KineticHero</span></li><li class="sq off"><span class="sq-n">03</span><span class="sq-t">ResumeSection</span><em>렌더 안 함</em></li><li class="sq"><span class="sq-n">04</span><span class="sq-t">ProblemExplorer</span></li><li class="sq"><span class="sq-n">05</span><span class="sq-t">RecommendationProcess</span></li><li class="sq"><span class="sq-n">06</span><span class="sq-t">TrustMetrics</span></li><li class="sq"><span class="sq-n">07</span><span class="sq-t">ShoeIndexPreview</span></li><li class="sq"><span class="sq-n">08</span><span class="sq-t">HomeAdSlot</span></li><li class="sq"><span class="sq-n">09</span><span class="sq-t">EditorialSection</span></li><li class="sq"><span class="sq-n">10</span><span class="sq-t">FinalRecommendationCTA</span></li><li class="sq"><span class="sq-n">11</span><span class="sq-t">HomeFooter</span></li></ul>
+      <p class="hint">이어보기는 기록이 없으면 <b>섹션 자체를 렌더하지 않는다</b>. 빈 카드나 안내 문구를 두지 않는다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">02</span><span class="st-t">재방문자</span><span class="st-s">§5 섹션 맵</span></div>
+      <p class="st-w">조건 — 최근 본 신발·비교·지난 추천 중 하나 이상 있음</p>
+      <ul class="seq"><li class="sq"><span class="sq-n">01</span><span class="sq-t">HomeHeader</span></li><li class="sq"><span class="sq-n">02</span><span class="sq-t">KineticHero</span></li><li class="sq on"><span class="sq-n">03</span><span class="sq-t">ResumeSection</span><em>삽입</em></li><li class="sq"><span class="sq-n">04</span><span class="sq-t">ProblemExplorer</span></li><li class="sq off"><span class="sq-n">05</span><span class="sq-t">RecommendationProcess</span><em>제외</em></li><li class="sq"><span class="sq-n">06</span><span class="sq-t">TrustMetrics</span></li><li class="sq"><span class="sq-n">07</span><span class="sq-t">ShoeIndexPreview</span></li><li class="sq"><span class="sq-n">08</span><span class="sq-t">HomeAdSlot</span></li><li class="sq"><span class="sq-n">09</span><span class="sq-t">EditorialSection</span></li><li class="sq"><span class="sq-n">10</span><span class="sq-t">FinalRecommendationCTA</span></li><li class="sq"><span class="sq-n">11</span><span class="sq-t">HomeFooter</span></li></ul>
+      <p class="hint">03이 삽입되고 <b>05가 빠진다</b> — 아는 사용자에게 9문항 설명을 반복하면 이어보기와 인덱스 사이가 멀어진다.
+      추천 진입은 헤더 CTA와 최종 밴드로 여전히 두 번 열려 있다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">03</span><span class="st-t">히어로 모션 시작</span><span class="st-s">§4.6 첫 1초 인지</span></div>
+      <p class="st-w">조건 — 뷰포트 진입 직후 (t=0.0s)</p>
+      <div class="stage"><div class="viz snap" style="--t:0s" aria-hidden="true">
+        <div class="track"><span class="lane"></span><span class="lane"></span><span class="lane"></span><span class="lane"></span><span class="lane"></span></div>
+        <span class="startline"></span><span class="startline-tag">START</span>
+        <span class="streak" style="right:64%; top:59%; width:24%; --d:.02s"></span>
+        <span class="streak" style="right:69%; top:66%; width:17%; --d:.09s"></span>
+        <span class="streak" style="right:63%; top:73%; width:29%; --d:.16s"></span>
+        <div class="rig">
+          <span class="rail" style="top:26%; --d:.04s"></span><span class="rail" style="top:45%; --d:.11s"></span>
+          <span class="rail" style="top:64%; --d:.18s"></span><span class="rail" style="top:83%; --d:.25s"></span>
+          <span class="rail-tag" style="top:24%; --d:.04s">WEIGHT</span><span class="rail-tag" style="top:43%; --d:.11s">DROP</span>
+          <span class="rail-tag" style="top:62%; --d:.18s">FIT</span><span class="rail-tag" style="top:81%; --d:.25s">USE</span>
+          <span class="lab name" style="left:8%;  top:4%;  --d:0s">NOVABLAST 6</span>
+          <span class="lab name" style="left:54%; top:12%; --d:.05s">PEGASUS 42</span>
+          <span class="lab name" style="left:20%; top:92%; --d:.1s">SC ELITE V5</span>
+          <span class="lab name" style="left:62%; top:78%; --d:.15s">GEL-KAYANO 33</span>
+          <span class="lab data keep" style="left:7%; top:23%; --dx:-170px; --dy:52px;  --d:.03s">249g</span>
+          <span class="lab data keep" style="left:7%; top:42%; --dx:-240px; --dy:-40px; --d:.09s">8mm DROP</span>
+          <span class="lab data keep" style="left:7%; top:61%; --dx:-200px; --dy:96px;  --d:.15s">WIDE 76mm</span>
+          <span class="lab data keep" style="left:7%; top:80%; --dx:-280px; --dy:-70px; --d:.21s">DAILY</span>
+          <span class="lab data drop" style="left:26%; top:21%; --dx:-150px; --dy:130px;  --d:.06s">278g</span>
+          <span class="lab data drop" style="left:29%; top:40%; --dx:-190px; --dy:-118px; --d:.12s">5mm DROP</span>
+          <span class="lab data drop" style="left:27%; top:59%; --dx:-260px; --dy:44px;   --d:.18s">STANDARD</span>
+          <span class="lab data drop" style="left:24%; top:78%; --dx:-210px; --dy:-150px; --d:.24s">RACING</span>
+        </div>
+        <div class="fig-wrap">
+          <svg class="sil sil-ghost" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/><use href="#silMidsole" stroke="var(--ink)" stroke-width="1.7"/>
+          </svg>
+          <svg class="sil sil-sharp" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/><use href="#silMidsole" stroke="var(--signal)" stroke-width="2"/>
+          </svg>
+          <svg class="fig" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <path class="fig-fit" d="M383 251 L450 262 L448 269 L383 276 Z" fill="var(--signal)" opacity="0"/>
+            <path class="fig-foot" d="M 232.0 238.6 C 233.5 236.9, 238.0 229.8, 241.1 228.3 C 244.1 226.7, 247.1 228.8, 250.1 229.1 C 253.2 229.5, 256.2 230.2, 259.2 230.3 C 262.2 230.4, 265.3 230.4, 268.3 229.8 C 271.3 229.2, 274.3 228.1, 277.4 226.9 C 280.4 225.8, 283.4 224.4, 286.4 223.0 C 289.5 221.5, 292.5 219.3, 295.5 218.2 C 298.5 217.0, 301.6 216.2, 304.6 215.9 C 307.6 215.7, 310.6 215.8, 313.6 216.4 C 316.7 217.1, 319.7 218.4, 322.7 219.7 C 325.7 220.9, 328.8 222.4, 331.8 223.8 C 334.8 225.2, 337.8 226.7, 340.9 228.1 C 343.9 229.5, 346.9 231.0, 349.9 232.4 C 353.0 233.9, 356.0 235.3, 359.0 236.8 C 362.0 238.3, 365.1 239.9, 368.1 241.4 C 371.1 243.0, 374.1 244.7, 377.2 246.2 C 380.2 247.8, 383.2 249.3, 386.2 250.7 C 389.2 252.2, 392.3 253.8, 395.3 255.0 C 398.3 256.2, 401.3 257.1, 404.4 258.0 C 407.4 258.8, 410.4 259.6, 413.4 260.3 C 416.5 261.0, 419.5 261.6, 422.5 262.1 C 425.5 262.6, 428.6 263.0, 431.6 263.3 C 434.6 263.5, 437.6 264.0, 440.7 263.6 C 443.7 263.2, 446.7 263.6, 449.7 260.6 C 452.8 257.7, 457.3 248.3, 458.8 245.9 C 457.3 247.6, 452.8 253.3, 449.7 256.0 C 446.7 258.7, 443.7 260.5, 440.7 262.2 C 437.6 264.0, 434.6 265.4, 431.6 266.6 C 428.6 267.9, 425.5 269.0, 422.5 269.8 C 419.5 270.5, 416.5 270.8, 413.4 271.2 C 410.4 271.5, 407.4 271.7, 404.4 271.8 C 401.3 271.8, 398.3 271.7, 395.3 271.5 C 392.3 271.2, 389.2 270.7, 386.2 270.2 C 383.2 269.6, 380.2 269.0, 377.2 268.2 C 374.1 267.5, 371.1 266.5, 368.1 265.5 C 365.1 264.5, 362.0 263.4, 359.0 262.3 C 356.0 261.1, 353.0 259.9, 349.9 258.8 C 346.9 257.7, 343.9 256.6, 340.9 255.7 C 337.8 254.8, 334.8 254.0, 331.8 253.5 C 328.8 253.0, 325.7 252.8, 322.7 252.8 C 319.7 252.8, 316.7 253.1, 313.6 253.5 C 310.6 253.9, 307.6 254.6, 304.6 255.3 C 301.6 256.0, 298.5 256.9, 295.5 257.8 C 292.5 258.6, 289.5 259.6, 286.4 260.5 C 283.4 261.3, 280.4 262.1, 277.4 262.7 C 274.3 263.3, 271.3 263.9, 268.3 264.3 C 265.3 264.6, 262.2 265.1, 259.2 265.0 C 256.2 264.8, 253.2 264.5, 250.1 263.4 C 247.1 262.2, 244.1 262.2, 241.1 258.1 C 238.0 253.9, 233.5 241.9, 232.0 238.6 Z" stroke="var(--ink)" stroke-width="1.1" stroke-dasharray="4 3" stroke-dashoffset="1400" opacity="0"/>
+            <g class="fig-tick" opacity="0">
+              <path d="M221 318 L464 318" stroke="var(--signal)" stroke-width=".7" opacity=".5"/>
+              <path d="M221 300 L221 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M383 282 L383 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M464 276 L464 324" stroke="var(--signal)" stroke-width="1.3"/>
+            </g>
+          </svg>
+        </div>
+      </div></div>
+      <p class="hint">첫 프레임부터 실루엣이 <b>불투명도 0.12</b>로 보인다. 모션이 끝나기를 기다리지 않아도 러닝화 서비스임을 알 수 있어야 한다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">04</span><span class="st-t">히어로 최종</span><span class="st-s">§4.3 모션 타임라인</span></div>
+      <p class="st-w">조건 — 자동 연출 종료 (t=4.5s) · 세션당 1회</p>
+      <div class="stage"><div class="viz snap" style="--t:4.5s" aria-hidden="true">
+        <div class="track"><span class="lane"></span><span class="lane"></span><span class="lane"></span><span class="lane"></span><span class="lane"></span></div>
+        <span class="startline"></span><span class="startline-tag">START</span>
+        <span class="streak" style="right:64%; top:59%; width:24%; --d:.02s"></span>
+        <span class="streak" style="right:69%; top:66%; width:17%; --d:.09s"></span>
+        <span class="streak" style="right:63%; top:73%; width:29%; --d:.16s"></span>
+        <div class="rig">
+          <span class="rail" style="top:26%; --d:.04s"></span><span class="rail" style="top:45%; --d:.11s"></span>
+          <span class="rail" style="top:64%; --d:.18s"></span><span class="rail" style="top:83%; --d:.25s"></span>
+          <span class="rail-tag" style="top:24%; --d:.04s">WEIGHT</span><span class="rail-tag" style="top:43%; --d:.11s">DROP</span>
+          <span class="rail-tag" style="top:62%; --d:.18s">FIT</span><span class="rail-tag" style="top:81%; --d:.25s">USE</span>
+          <span class="lab name" style="left:8%;  top:4%;  --d:0s">NOVABLAST 6</span>
+          <span class="lab name" style="left:54%; top:12%; --d:.05s">PEGASUS 42</span>
+          <span class="lab name" style="left:20%; top:92%; --d:.1s">SC ELITE V5</span>
+          <span class="lab name" style="left:62%; top:78%; --d:.15s">GEL-KAYANO 33</span>
+          <span class="lab data keep" style="left:7%; top:23%; --dx:-170px; --dy:52px;  --d:.03s">249g</span>
+          <span class="lab data keep" style="left:7%; top:42%; --dx:-240px; --dy:-40px; --d:.09s">8mm DROP</span>
+          <span class="lab data keep" style="left:7%; top:61%; --dx:-200px; --dy:96px;  --d:.15s">WIDE 76mm</span>
+          <span class="lab data keep" style="left:7%; top:80%; --dx:-280px; --dy:-70px; --d:.21s">DAILY</span>
+          <span class="lab data drop" style="left:26%; top:21%; --dx:-150px; --dy:130px;  --d:.06s">278g</span>
+          <span class="lab data drop" style="left:29%; top:40%; --dx:-190px; --dy:-118px; --d:.12s">5mm DROP</span>
+          <span class="lab data drop" style="left:27%; top:59%; --dx:-260px; --dy:44px;   --d:.18s">STANDARD</span>
+          <span class="lab data drop" style="left:24%; top:78%; --dx:-210px; --dy:-150px; --d:.24s">RACING</span>
+        </div>
+        <div class="fig-wrap">
+          <svg class="sil sil-ghost" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/><use href="#silMidsole" stroke="var(--ink)" stroke-width="1.7"/>
+          </svg>
+          <svg class="sil sil-sharp" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/><use href="#silMidsole" stroke="var(--signal)" stroke-width="2"/>
+          </svg>
+          <svg class="fig" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <path class="fig-fit" d="M383 251 L450 262 L448 269 L383 276 Z" fill="var(--signal)" opacity="0"/>
+            <path class="fig-foot" d="M 232.0 238.6 C 233.5 236.9, 238.0 229.8, 241.1 228.3 C 244.1 226.7, 247.1 228.8, 250.1 229.1 C 253.2 229.5, 256.2 230.2, 259.2 230.3 C 262.2 230.4, 265.3 230.4, 268.3 229.8 C 271.3 229.2, 274.3 228.1, 277.4 226.9 C 280.4 225.8, 283.4 224.4, 286.4 223.0 C 289.5 221.5, 292.5 219.3, 295.5 218.2 C 298.5 217.0, 301.6 216.2, 304.6 215.9 C 307.6 215.7, 310.6 215.8, 313.6 216.4 C 316.7 217.1, 319.7 218.4, 322.7 219.7 C 325.7 220.9, 328.8 222.4, 331.8 223.8 C 334.8 225.2, 337.8 226.7, 340.9 228.1 C 343.9 229.5, 346.9 231.0, 349.9 232.4 C 353.0 233.9, 356.0 235.3, 359.0 236.8 C 362.0 238.3, 365.1 239.9, 368.1 241.4 C 371.1 243.0, 374.1 244.7, 377.2 246.2 C 380.2 247.8, 383.2 249.3, 386.2 250.7 C 389.2 252.2, 392.3 253.8, 395.3 255.0 C 398.3 256.2, 401.3 257.1, 404.4 258.0 C 407.4 258.8, 410.4 259.6, 413.4 260.3 C 416.5 261.0, 419.5 261.6, 422.5 262.1 C 425.5 262.6, 428.6 263.0, 431.6 263.3 C 434.6 263.5, 437.6 264.0, 440.7 263.6 C 443.7 263.2, 446.7 263.6, 449.7 260.6 C 452.8 257.7, 457.3 248.3, 458.8 245.9 C 457.3 247.6, 452.8 253.3, 449.7 256.0 C 446.7 258.7, 443.7 260.5, 440.7 262.2 C 437.6 264.0, 434.6 265.4, 431.6 266.6 C 428.6 267.9, 425.5 269.0, 422.5 269.8 C 419.5 270.5, 416.5 270.8, 413.4 271.2 C 410.4 271.5, 407.4 271.7, 404.4 271.8 C 401.3 271.8, 398.3 271.7, 395.3 271.5 C 392.3 271.2, 389.2 270.7, 386.2 270.2 C 383.2 269.6, 380.2 269.0, 377.2 268.2 C 374.1 267.5, 371.1 266.5, 368.1 265.5 C 365.1 264.5, 362.0 263.4, 359.0 262.3 C 356.0 261.1, 353.0 259.9, 349.9 258.8 C 346.9 257.7, 343.9 256.6, 340.9 255.7 C 337.8 254.8, 334.8 254.0, 331.8 253.5 C 328.8 253.0, 325.7 252.8, 322.7 252.8 C 319.7 252.8, 316.7 253.1, 313.6 253.5 C 310.6 253.9, 307.6 254.6, 304.6 255.3 C 301.6 256.0, 298.5 256.9, 295.5 257.8 C 292.5 258.6, 289.5 259.6, 286.4 260.5 C 283.4 261.3, 280.4 262.1, 277.4 262.7 C 274.3 263.3, 271.3 263.9, 268.3 264.3 C 265.3 264.6, 262.2 265.1, 259.2 265.0 C 256.2 264.8, 253.2 264.5, 250.1 263.4 C 247.1 262.2, 244.1 262.2, 241.1 258.1 C 238.0 253.9, 233.5 241.9, 232.0 238.6 Z" stroke="var(--ink)" stroke-width="1.1" stroke-dasharray="4 3" stroke-dashoffset="1400" opacity="0"/>
+            <g class="fig-tick" opacity="0">
+              <path d="M221 318 L464 318" stroke="var(--signal)" stroke-width=".7" opacity=".5"/>
+              <path d="M221 300 L221 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M383 282 L383 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M464 276 L464 324" stroke="var(--signal)" stroke-width="1.3"/>
+            </g>
+          </svg>
+        </div>
+      </div></div>
+      <p class="hint">잔류 라벨 4개 · 발 윤곽 · 계측 틱 3개 · 적합 영역 <b>0.19</b> · 신발 6px 전진.
+      적합 영역이 CTA보다 강해지지 않는다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">05</span><span class="st-t">필터 미적용</span><span class="st-s">§5.2 인덱스</span></div>
+      <p class="st-w">조건 — 초기 진입 · 초기화 직후</p>
+      <div class="chips"><button class="chip" aria-pressed="true">전체 <span class="c-n">122</span></button><button class="chip" aria-pressed="false">데일리 <span class="c-n">19</span></button><button class="chip" aria-pressed="false">쿠션화 <span class="c-n">32</span></button><button class="chip" aria-pressed="false">입문화 <span class="c-n">13</span></button><button class="chip" aria-pressed="false">레이싱 <span class="c-n">29</span></button><button class="chip" aria-pressed="false">안정화 <span class="c-n">16</span></button><button class="chip" aria-pressed="false">트레일 <span class="c-n">13</span></button><button class="chip wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button><button class="chip" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button></div>
+      <div class="rline"><p class="result-n"><b>122</b>개가 조건에 맞습니다</p><p class="sortl">카테고리 균형 · 평가순</p></div>
+      <div class="idx"><a class="row" href="/shoes/asics-novablast-5">
+            <span class="row-th"><img src="data:image/webp;base64,UklGRpIDAABXRUJQVlA4IIYDAADQFACdASpwAHAAPpVEnUqlo6KhqTSagLASiWUA1Sl/3u627rJk/Yyw7MVjbNnlyTHa/yPC/+y1ujSpV9HU3VBb5l5eAKr36PdQBbJNLkp4y/t2kh+QKZQGGz1/0UiTMOVPlDfoH0wlA0spC8iLFepMD5fhJYe4KtG89sXBUb1j7yY8lWDuo8A2J8dGNf8UzfmH2P4O871Hfxon9tmeOGDCrHthndBRzg2dN+cvB04AAP76toAAAA4m//vupPV3QGYGebYzq9SbN65bOu1gIOUXCDEeIiiEea52uZu0fMDhBu7xIPe+cJuO4MPSf2v0l1rCgMD65Df8cP7TVbWali9NFOjMaX0PuNvTm0f2BJtWnfgoiBWpV51Fm+GKN142PHNksVXQHV0DXLm7fU+Z3gZ0R1af3pwuud86Y3J9qmzK9Fjmh3mXouu+hlJWLaNztxMDRQOkD2tvd9YCg7p/5Z8A6BUHwo5ulG3k1/9EEoCnTj8B/GRgXfy3jBp9PgyvhKWjgzJK2QCLSaAGPLKsTqLgFWVXImZbEmWdzJD0bhq/QdH/vyhHbU2QJNABMyte86A3pysDVJEgSWR97qr6NAzQfu0qu0W5iDBp1t4ukWmgs2gveoI69TTYbsod7Cqo9/3aO4481fP99sNq7wB7gPEPgUzmv37AfpJIk4mscmtFXlZ86XNtxkl3a/hNQZ+Z/G3WLq8ZoxfRz2Y+FwlRR/je2ORRcVDsfoUgz6X5CuYLLWWY28V/htSGhy6Q0CTNRUcljQnMcCaF30D4LtSy20iMLWDMLnIJv3qSeVIgg7tFzw3IZpGOkxeNGk4aeOHKO5K1SDYmAgL54bclsqJTHhIpYp9oNU6yjmipYRA6XaKCEUW5n0rWXCl8TIlzuvCxlBOfmZynPkPAk6bc9AubtQtGNyfefvFhQfXxYimRoZ496EkMw1rAwfL9hMSmekOAaXSthikziSIztYgTXCmVhxPvE1s3hC74yWHDU99X5hf0vgG5VozCCsLKIQ05EqhGvkYr1uKhLcHAVk9S1qe1OjgQIYRvXYYseyOpfS5bBpfzNmUiAJ5yikKI0s1eHc+ySW1xVCtNp1nIceolr2cEk1/kr+sl2gR6MesL4MfwlQLMPUa53cVo/ngXFAgIJ9PKUzCRgE304WlM1eVUQmyNwKbp9lKwWafxGwQh4LKOSXeyK7lQAAAAAA==" alt="노바블라스트 5"></span>
+            <span>
+              <span class="row-b">ASICS</span>
+              <span class="row-n">노바블라스트 5</span>
+              <span class="row-meta">
+                <span class="row-u">데일리</span>
+                <span class="row-w">255g</span>
+                <span class="row-s">리뷰 종합</span>
+              </span>
+            </span>
+            <span class="row-p">169,000원</span>
+          </a>
+<a class="row" href="/shoes/brooks-ghost-17">
+            <span class="row-th"><img src="data:image/webp;base64,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" alt="고스트 17"></span>
+            <span>
+              <span class="row-b">BROOKS</span>
+              <span class="row-n">고스트 17</span>
+              <span class="row-meta">
+                <span class="row-u">입문화</span>
+                <span class="row-w">289g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">169,000원</span>
+          </a>
+<a class="row" href="/shoes/adidas-supernova-rise-3">
+            <span class="row-th"><img src="data:image/webp;base64,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" alt="슈퍼노바 라이즈 3"></span>
+            <span>
+              <span class="row-b">ADIDAS</span>
+              <span class="row-n">슈퍼노바 라이즈 3</span>
+              <span class="row-meta">
+                <span class="row-u">쿠션화</span>
+                <span class="row-w">270g</span>
+                <span class="row-s">리뷰 종합</span>
+              </span>
+            </span>
+            <span class="row-p">159,000원</span>
+          </a></div>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">06</span><span class="st-t">필터 적용</span><span class="st-s">§5.2 — 결과가 기본 노출 수 이하면 제한 없이 전부</span></div>
+      <p class="st-w">조건 — 트레일 선택 (13종)</p>
+      <div class="chips"><button class="chip" aria-pressed="false">전체 <span class="c-n">122</span></button><button class="chip" aria-pressed="false">데일리 <span class="c-n">19</span></button><button class="chip" aria-pressed="false">쿠션화 <span class="c-n">32</span></button><button class="chip" aria-pressed="false">입문화 <span class="c-n">13</span></button><button class="chip" aria-pressed="false">레이싱 <span class="c-n">29</span></button><button class="chip" aria-pressed="false">안정화 <span class="c-n">16</span></button><button class="chip" aria-pressed="true">트레일 <span class="c-n">13</span></button><button class="chip wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button><button class="chip" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button></div>
+      <div class="rline"><p class="result-n"><b>13</b>개가 조건에 맞습니다</p><p class="sortl">트레일</p></div>
+      <div class="idx"><a class="row" href="/shoes/hoka-speedgoat-6">
+            <span class="row-th"><img src="data:image/webp;base64,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" alt="스피드고트 6"></span>
+            <span>
+              <span class="row-b">HOKA</span>
+              <span class="row-n">스피드고트 6</span>
+              <span class="row-meta">
+                <span class="row-u">트레일</span>
+                <span class="row-w">278g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">205,000원</span>
+          </a>
+<a class="row" href="/shoes/adidas-terrex-agravic-4">
+            <span class="row-th"><img src="data:image/webp;base64,UklGRqoDAABXRUJQVlA4IJ4DAACQEwCdASpwAHAAPpVKn0ulpCKhorgKeLASiWcALAB/4L418mCsa7a0mmq4/h2Gehd1DiT0n0zrx+/VvsFdK/0VSOGJuOpAAJE+tjUgAEifUu7N8e7X3+COqOVlKWdA6QrfL22XXbUX0KmgVX/FUBue1h2NP/sDtrYLuuLfnpUzFS9SlB7DYUXE8hTbwqn4q60T8g8wYQncGhXBqU+K8/iZNR4dqQAA/vhuAvFwAAAOrN9yrCAyZbdL6J/6nUGohInqA+/nd6R5ahijK4ojRjii3h/lciYr96mXTvIS/8RqHUSWWtn+Zl+TvZ9Hjzwwn5xgOCBSbKycr/c125OiOUhUnUNwUw5Syhlhhoo7f3Oq5uXUpJUc2ZsD4kEG95mTeRXz17+enixqnlkmR3JEKnnIuuqq93dfLhaLGUY7z5h2tdqyHEpdTxH6B9AmzE49euNC71j68cRXvwu/UeoKqFhrmY4ZI4iUkjwctNp1MCT68pMM8OCLg3OCqADIvUz4K9kIyhpAICj9arD2CFJo4vavmeQMnpTkakAhOhFYtuAMOKG4+w7v2jH8eNHr42zja5l0JKXp2ZHKYfAiHTdpxCSegDeGCouwJsuShlRXm1/cVqjJtLN30DC7XXyLOijbwuLXFfT4YP0PVBEI74t+LjwmPNFg6glP9DOGjod6aYWXSr9OpTwp+tJ5ZLLGN5Xy1a1vD2L9/5HB3bG51QKSFSq+I3sFavSk6DLU8B6d62+FLtGu5/s2KapIwsF83fEl9AfXfDX93Gn85v6Zs7l8ie5kjhEixHgbL/37Fu45RN+3zstvipp7w3W9vdE8aS3bovqx6aySe17+Xy1l3OGvoAioRIar6Punmv7zTehGtx6UR0mWL1T+WcfZf4oFCWZ9jdEK4F6g9JyXi3X5nuqLHOUQe0p//KqB29IkXrHcVERq1cjasVagEHAxSt8r6XzarnD8/sMtmZuTuuIhxWjTAUtJI6AT+ZG8WdHE8bIVabUZZfIhi7n5FSM1nolMM8nIumNQKvJtC1KF9DxcmbFiZx0y6jfGwTi1UA4MMhPlrLnlNVfAVBNo3E34VOWJl/BDyicTDVZjrJOkVr9XOfeb6uc+pw0tRSWusEaYYY4DGgkJz4o9byazM/zK9RntRM7VpbwBSrG/HAUkw4RcF8WTip4ecPEqEKtmMy99as4asbzScanU1zaF3pSVp1DKYWbXuBrOYtHkQJNDfBMCxuoAAA==" alt="테렉스 아그라빅 4"></span>
+            <span>
+              <span class="row-b">ADIDAS</span>
+              <span class="row-n">테렉스 아그라빅 4</span>
+              <span class="row-meta">
+                <span class="row-u">트레일</span>
+                <span class="row-w">283g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">209,000원</span>
+          </a>
+<a class="row" href="/shoes/hoka-speedgoat-7">
+            <span class="row-th"><svg class="row-mark" viewBox="180 175 320 145" aria-hidden="true"><use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg></span>
+            <span>
+              <span class="row-b">HOKA</span>
+              <span class="row-n">스피드고트 7</span>
+              <span class="row-meta">
+                <span class="row-u">트레일</span>
+                <span class="row-w">281g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">219,000원</span>
+          </a></div>
+      <p class="hint">필터는 <b>122개 전체</b>를 대상으로 돌고, 그 결과에 노출 제한을 얹는다.
+      결과 수는 <code>aria-live="polite"</code>로 안내한다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">07</span><span class="st-t">인덱스 점진 확장</span><span class="st-s">§5.2</span></div>
+      <p class="st-w">조건 — 더 보기 클릭 (모바일 12 · 데스크톱 16 기준)</p>
+      <div class="steps">
+        <div class="stp"><span class="stp-n">기본</span><button class="expand-b">러닝화 24개 더 보기 <span class="cnt">12 / 122</span></button></div>
+        <div class="stp"><span class="stp-n">1회</span><button class="expand-b">러닝화 24개 더 보기 <span class="cnt">36 / 122</span></button></div>
+        <div class="stp"><span class="stp-n">2회</span><button class="expand-b">전체 러닝화 보기 <span class="cnt">62종 남음</span></button></div>
+        <div class="stp"><span class="stp-n">3회</span><span class="gone">버튼 숨김 · 122행 전부 노출</span></div>
+      </div>
+      <p class="hint"><code>+24</code>를 무한 반복하지 않는다. 무JS 환경에서는 <code>&lt;details&gt;</code>가 나머지 110종의 실제 링크를 그대로 들고 있다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">08</span><span class="st-t">광고 로딩</span><span class="st-s">§7 광고 · §9 성능(높이 예약)</span></div>
+      <p class="st-w">조건 — AdSense 응답 전</p>
+      <p class="ad-l">ADVERTISEMENT</p><div class="ad-box loading"><span class="ad-sk"></span></div>
+      <p class="hint">높이를 <b>미리 예약</b>해 CLS 를 만들지 않는다. 스켈레톤은 회색 면 하나로 끝내고 스피너를 두지 않는다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">09</span><span class="st-t">광고 미노출 · 차단 환경</span><span class="st-s">§7 · §10</span></div>
+      <p class="st-w">조건 — 미채워짐 · 광고 차단기 · 정책 제한</p>
+      <p class="ad-l">ADVERTISEMENT</p><div class="ad-box empty"></div>
+      <p class="hint">자리는 유지하되 <b>대체 콘텐츠나 안내 문구를 채우지 않는다</b>.
+      광고 자리에 자체 홍보를 끼워 넣으면 정책 위반 소지가 있다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">10</span><span class="st-t">모바일 필터 바텀시트</span><span class="st-s">§6 · §9 접근성</span></div>
+      <p class="st-w">조건 — 조건 좁히기 탭</p>
+      <div class="phone">
+        <div class="phone-dim"></div>
+        <div class="sheet">
+          <div class="sheet-h"><h4>조건 좁히기</h4><span class="sheet-x">✕</span></div>
+          <div class="chips sm"><button class="chip" aria-pressed="false">전체 <span class="c-n">122</span></button><button class="chip" aria-pressed="false">데일리 <span class="c-n">19</span></button><button class="chip" aria-pressed="false">쿠션화 <span class="c-n">32</span></button><button class="chip" aria-pressed="false">입문화 <span class="c-n">13</span></button><button class="chip" aria-pressed="false">레이싱 <span class="c-n">29</span></button><button class="chip" aria-pressed="false">안정화 <span class="c-n">16</span></button><button class="chip" aria-pressed="true">트레일 <span class="c-n">13</span></button><button class="chip wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button><button class="chip" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button></div>
+          <div class="sheet-f"><span class="sheet-reset">초기화</span><span class="sheet-apply">결과 <b>13</b>개 보기</span></div>
+        </div>
+      </div>
+      <p class="hint">ESC 닫힘 · 포커스 트랩 · 닫을 때 여는 버튼으로 포커스 복원 · 배경 스크롤 잠금.
+      적용 버튼은 <b>잉크 솔리드</b> — 오렌지 솔리드 면은 히어로와 마지막 밴드 2곳뿐이다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">11</span><span class="st-t">데이터 없음</span><span class="st-s">§10 상태 디자인</span></div>
+      <p class="st-w">조건 — 필터 조합 결과 0건</p>
+      <div class="chips"><button class="chip" aria-pressed="false">전체 <span class="c-n">122</span></button><button class="chip" aria-pressed="false">데일리 <span class="c-n">19</span></button><button class="chip" aria-pressed="false">쿠션화 <span class="c-n">32</span></button><button class="chip" aria-pressed="false">입문화 <span class="c-n">13</span></button><button class="chip" aria-pressed="false">레이싱 <span class="c-n">29</span></button><button class="chip" aria-pressed="false">안정화 <span class="c-n">16</span></button><button class="chip" aria-pressed="true">트레일 <span class="c-n">13</span></button><button class="chip wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button><button class="chip" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button></div>
+      <div class="rline"><p class="result-n"><b>0</b>개가 조건에 맞습니다</p></div>
+      <div class="empty-box">
+        <p class="eb-t">조건에 맞는 러닝화가 없습니다.</p>
+        <p class="eb-d">조건을 하나 풀면 결과가 나옵니다. 가장 많이 걸러낸 조건은 <b>와이드 출시</b>입니다.</p>
+        <span class="eb-b">조건 초기화</span>
+      </div>
+      <p class="hint">무엇이 결과를 0으로 만들었는지 알려주고 되돌릴 경로를 준다. "결과 없음"만 남기지 않는다.</p>
+    </section>
+    <section class="st">
+      <div class="st-h"><span class="st-n">12</span><span class="st-t">이미지 오류 · 이미지 없는 항목</span><span class="st-s">§10 이미지 상태</span></div>
+      <p class="st-w">조건 — 썸네일 로드 실패 · 아직 이미지가 없는 신발</p>
+      <div class="idx"><a class="row" href="/shoes/mizuno-wave-rider-30">
+            <span class="row-th"><svg class="row-mark" viewBox="180 175 320 145" aria-hidden="true"><use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg></span>
+            <span>
+              <span class="row-b">MIZUNO</span>
+              <span class="row-n">웨이브 라이더 30</span>
+              <span class="row-meta">
+                <span class="row-u">데일리</span>
+                <span class="row-w">267g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">179,000원</span>
+          </a>
+<a class="row" href="/shoes/mizuno-neo-vista-3">
+            <span class="row-th"><svg class="row-mark" viewBox="180 175 320 145" aria-hidden="true"><use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg></span>
+            <span>
+              <span class="row-b">MIZUNO</span>
+              <span class="row-n">네오 비스타 3</span>
+              <span class="row-meta">
+                <span class="row-u">데일리</span>
+                <span class="row-w">266g</span>
+                <span class="row-s verified">외부 랩 확인</span>
+              </span>
+            </span>
+            <span class="row-p">219,000원</span>
+          </a><a class="row" href="/shoes/asics-novablast-5">
+            <span class="row-th"><svg class="row-mark" viewBox="180 175 320 145" aria-hidden="true"><use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg></span>
+            <span>
+              <span class="row-b">ASICS</span>
+              <span class="row-n">노바블라스트 5</span>
+              <span class="row-meta">
+                <span class="row-u">데일리</span>
+                <span class="row-w">255g</span>
+                <span class="row-s">리뷰 종합</span>
+              </span>
+            </span>
+            <span class="row-p">169,000원</span>
+          </a></div>
+      <p class="hint">위 두 행은 <b>이미지 필드가 없는 신발</b>, 세 번째 행은 <b>썸네일 로드가 실패한 경우</b>다.
+      둘 다 깨진 이미지 아이콘 대신 <b>중립 실루엣 마크</b>로 자리를 지켜 행 높이가 흔들리지 않는다.
+      현재 DB 122종 중 이미지 필드가 없는 항목은 <b>3종</b>
+      (하이퍼부스트 엣지 · 네오 비스타 3 · 웨이브 라이더 30)이다.</p>
+    </section>
+  </div>
+
+  <h2 class="part-h">Part 2 — 변경 전후 비교</h2>
+  <p class="part-p">
+    현재 홈은 <code>main</code> <b>fb93372</b> 의 정적 빌드(<code>out/</code>)를 그대로 띄워 실측했고,
+    새 홈은 커밋된 시안(데스크톱 <b>61c28a4</b> · 모바일 <b>a9fc7fa</b>)을 같은 스크립트로 실측했습니다.
+    두 값 모두 <code>getBoundingClientRect().top + scrollY</code> / <code>body.scrollHeight</code> 기준입니다.
+  </p>
+
+  <table>
+    <thead><tr><th>항목</th><th>현재 홈 (main)</th><th>새 홈 (시안)</th><th>변화</th></tr></thead>
+    <tbody>
+      <tr><td>전체 스크롤 길이 (1440)</td><td class="num">25,834px</td><td class="num">6,821px</td><td class="win">−73.6%</td></tr>
+      <tr><td>전체 스크롤 길이 (390)</td><td class="num">25,412px</td><td class="num">7,027px</td><td class="win">−72.3%</td></tr>
+      <tr><td>맞춤 추천 CTA (390)</td><td class="num">top 449 · 첫 화면 안</td><td class="num">top 318 · 첫 화면 안</td><td class="win">−131px</td></tr>
+      <tr><td>첫 신발 상세 링크 (390)</td><td class="num">top 2,680 · 10.5%</td><td class="num">top 1,426 · 20.3%</td><td class="win">−1,254px</td></tr>
+      <tr><td>광고 위치 (1440)</td><td class="num">95.7%</td><td class="num">69.3%</td><td class="win">기준 55~70% 진입</td></tr>
+      <tr><td>광고 위치 (390)</td><td class="num">92.1%</td><td class="num">68.9%</td><td class="win">기준 55~70% 진입</td></tr>
+      <tr><td>마지막 CTA</td><td class="num">없음</td><td class="num">88.0~88.2%</td><td class="win">신설</td></tr>
+      <tr><td>인덱스 노출 방식</td><td class="num">122종 전량 렌더</td><td class="num">12·16행 + 점진 확장</td><td class="win">정적 링크 122개는 유지</td></tr>
+      <tr><td>다크 영역 비중</td><td class="num">0%</td><td class="num">10.1~10.2%</td><td class="win">기준 22% 이하</td></tr>
+    </tbody>
+  </table>
+
+  <div class="cmp-seq">
+    <div class="cseq">
+      <h4>현재 홈 — 섹션 순서</h4>
+      <ol><li>히어로</li><li>앵커/필터</li><li>카드</li><li>카드</li><li class="hot">신발 전량 그리드 (23,372px · 90%)</li><li>광고</li><li>마무리</li></ol>
+    </div>
+    <div class="cseq">
+      <h4>새 홈 — 섹션 순서 (신규 방문자)</h4>
+      <ol><li>HomeHeader</li><li>KineticHero</li><li>ResumeSection</li><li>ProblemExplorer</li><li>RecommendationProcess</li><li>TrustMetrics</li><li class="hot">ShoeIndexPreview</li><li>HomeAdSlot</li><li>EditorialSection</li><li>FinalRecommendationCTA</li><li>HomeFooter</li></ol>
+    </div>
+  </div>
+  <p class="hint" style="margin-top:16px">
+    현재 홈은 <b>신발 그리드 하나가 페이지의 90%(23,372px)</b>를 차지해 광고가 95.7% 지점으로 밀려 있습니다.
+    새 홈은 인덱스를 점진 확장으로 접어 광고를 스크롤 69% 지점에 두고, 마지막 CTA를 88%에 신설합니다.
+    <b>정적 HTML 의 <code>/shoes/</code> 링크 122개는 양쪽 모두 동일하게 유지</b>되어 내부링크가 줄지 않습니다.
+  </p>
+
+  <h2 class="part-h">Part 3 — 레퍼런스 반영 위치</h2>
+  <p class="part-p">섹션마다 어떤 레퍼런스의 어떤 원칙이 들어갔는지, 그리고 섹션당 2개를 넘지 않는지 확인합니다.</p>
+  <table>
+    <thead><tr><th>섹션</th><th>반영한 레퍼런스와 원칙</th><th>개수</th></tr></thead>
+    <tbody>
+      <tr><td>02 KineticHero</td><td>Nike — 대형 카피·리듬 · Awwwards — 정렬 모션</td><td class="num">2</td></tr>
+      <tr><td>03 ResumeSection</td><td>On — 경험 중심 탐색</td><td class="num">1</td></tr>
+      <tr><td>04 ProblemExplorer</td><td>On — 여백·경험 중심 탐색 · Bandit — 온도감</td><td class="num">2</td></tr>
+      <tr><td>05 RecommendationProcess</td><td>Nike — 대형 카피·리듬</td><td class="num">1</td></tr>
+      <tr><td>06 TrustMetrics</td><td>RunRepeat — 데이터 상태 표기</td><td class="num">1</td></tr>
+      <tr><td>07 ShoeIndexPreview</td><td>RunRepeat — 필터·데이터 상태</td><td class="num">1</td></tr>
+      <tr><td>08 HomeAdSlot</td><td><span style="color:var(--ink-soft)">없음 — 기존 슬롯 유지</span></td><td class="num">0</td></tr>
+      <tr><td>09 EditorialSection</td><td>Tracksmith — 에디토리얼</td><td class="num">1</td></tr>
+      <tr><td>10 FinalRecommendationCTA</td><td>Bandit — 온도감 · Awwwards — 정렬 모션</td><td class="num">2</td></tr>
+    </tbody>
+  </table>
+  <p class="hint" style="margin-top:14px">섹션당 최대 <b>2개</b> — 2개 규칙을 넘지 않습니다.</p>
+  <p class="ref-note">
+    ⚠️ 계획서 Task 5 Step 3 은 "§9의 섹션당 최대 2개 레퍼런스 규칙"을 참조하지만,
+    현재 설계 문서의 <b>§9는 접근성·성능·SEO</b>이고 레퍼런스 절 자체가 존재하지 않습니다(§1~§15 확인).
+    위 표는 계획서 Step 3 본문이 직접 나열한 목록(On·RunRepeat·Nike·Tracksmith·Bandit·Awwwards)과
+    "섹션당 최대 2개" 문구를 근거로 작성했습니다. 설계 문서에 레퍼런스 절을 추가할지는 별도 판단이 필요합니다.
+  </p>
+  <p class="ref-note">
+    ⚠️ 이 표는 <b>사후 귀속</b>입니다. Task 1~4 산출물에는 어느 섹션에 어떤 레퍼런스를 적용했다는 기록이 없어,
+    완성된 시안의 실제 형태(대형 카피·정렬 모션·여백·데이터 상태 표기·에디토리얼 조판·다크 밴드 온도감)를
+    계획서의 레퍼런스 목록에 맞춰 되짚은 것입니다. 설계 시점의 의사결정 기록이 아니므로,
+    운영자가 의도와 다르다고 판단하면 이 표를 기준으로 삼지 말고 다시 지정해 주십시오.
+  </p>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="silOutline" d="M 205.0 269.4 C 205.8 265.3, 208.0 255.9, 209.9 245.1 C 211.8 234.3, 214.0 214.3, 216.5 204.6 C 218.9 194.8, 221.6 188.3, 224.6 186.7 C 227.5 185.1, 230.8 191.6, 234.2 194.8 C 237.6 198.0, 241.3 203.2, 245.2 206.1 C 249.1 208.9, 253.2 211.0, 257.5 211.7 C 261.8 212.5, 266.3 212.3, 270.9 210.4 C 275.5 208.5, 280.3 204.3, 285.2 200.5 C 290.2 196.6, 295.2 190.0, 300.3 187.4 C 305.5 184.8, 310.7 184.4, 316.0 185.0 C 321.3 185.6, 326.6 189.0, 332.0 191.1 C 337.3 193.3, 342.7 195.6, 348.0 198.0 C 353.4 200.4, 358.7 202.8, 364.0 205.5 C 369.3 208.2, 374.5 211.5, 379.7 214.3 C 384.8 217.2, 389.8 220.3, 394.8 222.4 C 399.7 224.4, 404.5 225.8, 409.1 226.8 C 413.7 227.7, 418.2 227.8, 422.5 228.0 C 426.8 228.2, 430.9 227.9, 434.8 227.9 C 438.7 227.8, 442.4 227.7, 445.8 227.7 C 449.2 227.7, 452.5 227.6, 455.4 228.1 C 458.4 228.5, 461.1 229.0, 463.5 230.4 C 466.0 231.9, 468.2 234.2, 470.1 236.9 C 472.0 239.6, 474.2 245.1, 475.0 246.7 C 474.2 257.0, 472.0 261.8, 470.1 264.6 C 468.2 267.4, 466.0 269.9, 463.5 272.3 C 461.1 274.8, 458.4 277.0, 455.4 279.3 C 452.5 281.6, 449.2 284.0, 445.8 286.1 C 442.4 288.3, 438.7 290.5, 434.8 292.4 C 430.9 294.3, 426.8 296.2, 422.5 297.6 C 418.2 299.1, 413.7 300.2, 409.1 301.1 C 404.5 302.0, 399.7 302.4, 394.8 302.8 C 389.8 303.3, 384.8 303.4, 379.7 303.6 C 374.5 303.8, 369.3 304.0, 364.0 304.0 C 358.7 304.0, 353.4 303.9, 348.0 303.8 C 342.7 303.8, 337.3 303.6, 332.0 303.5 C 326.6 303.5, 321.3 303.5, 316.0 303.5 C 310.7 303.6, 305.5 303.7, 300.3 303.7 C 295.2 303.8, 290.2 303.8, 285.2 303.8 C 280.3 303.7, 275.5 303.8, 270.9 303.7 C 266.3 303.6, 261.8 303.5, 257.5 303.2 C 253.2 302.9, 249.1 302.4, 245.2 301.8 C 241.3 301.3, 237.6 300.6, 234.2 299.6 C 230.8 298.7, 227.5 297.6, 224.6 296.2 C 221.6 294.9, 218.9 293.4, 216.5 291.5 C 214.0 289.6, 211.8 287.4, 209.9 284.6 C 208.0 281.8, 205.8 276.3, 205.0 274.6 Z" fill="none" stroke-linejoin="round"/>
+  <path id="silMidsole" d="M 216.5 258.5 C 217.8 259.2, 221.6 261.8, 224.6 263.2 C 227.5 264.5, 230.8 265.7, 234.2 266.6 C 237.6 267.5, 241.3 268.2, 245.2 268.8 C 249.1 269.4, 253.2 269.8, 257.5 270.1 C 261.8 270.4, 266.3 270.5, 270.9 270.6 C 275.5 270.7, 280.3 270.7, 285.2 270.7 C 290.2 270.7, 295.2 270.6, 300.3 270.7 C 305.5 270.8, 310.7 271.1, 316.0 271.3 C 321.3 271.6, 326.6 271.9, 332.0 272.3 C 337.3 272.7, 342.7 273.3, 348.0 273.8 C 353.4 274.3, 358.7 274.8, 364.0 275.2 C 369.3 275.5, 374.5 275.8, 379.7 276.1 C 384.8 276.3, 389.8 276.5, 394.8 276.5 C 399.7 276.5, 404.5 276.5, 409.1 276.0 C 413.7 275.5, 418.2 274.8, 422.5 273.7 C 426.8 272.6, 430.9 271.2, 434.8 269.6 C 438.7 268.1, 444.0 265.2, 445.8 264.3" fill="none" stroke-linecap="round"/>
+</defs></svg>
+
+</body>
+</html>
