@@ -610,23 +610,36 @@
       <tr><td><code>/compare</code></td><td class="num">2 (1)</td><td class="num">3 (1)</td><td class="num">3 (1)</td><td class="win">진입점 증가</td></tr>
       <tr><td><code>/blog</code> 인덱스</td><td class="num">3 (1)</td><td class="num">9 (1)</td><td class="num">9 (1)</td><td class="win">진입점 증가</td></tr>
       <tr><td><code>/blog/{slug}</code> 개별 글</td><td class="num">2 (2)</td><td class="num warn-n">0</td><td class="num warn-n">0</td><td class="loss">−2 고유</td></tr>
-      <tr><td><code>/brands</code>·<code>/brands/{slug}</code></td><td class="num">15 (14)</td><td class="num warn-n">0</td><td class="num warn-n">0</td><td class="loss">−14 고유</td></tr>
-      <tr><td><code>/gels/{slug}</code></td><td class="num">2 (2)</td><td class="num warn-n">0</td><td class="num warn-n">0</td><td class="loss">−2 고유</td></tr>
+      <tr><td><code>/brands</code>·<code>/brands/{slug}</code></td><td class="num">15 (14)</td><td class="num">1 (1)</td><td class="num">1 (1)</td><td class="loss">−13 고유 (허브 1홉 유지)</td></tr>
+      <tr><td><code>/gels/{slug}</code></td><td class="num">2 (2)</td><td class="num">1 (1)</td><td class="num">1 (1)</td><td class="loss">−1 고유 (허브 1홉 유지)</td></tr>
       <tr><td><code>/marathon</code>*</td><td class="num">3 (2)</td><td class="num">1 (1)</td><td class="num">1 (1)</td><td class="loss">−1 고유</td></tr>
-      <tr><td><b>고유 목적지 합계</b></td><td class="num"><b>148</b></td><td class="num"><b>133</b></td><td class="num"><b>133</b></td><td class="loss">−15</td></tr>
+      <tr><td><b>고유 목적지 합계</b></td><td class="num"><b>148</b></td><td class="num"><b>135</b></td><td class="num"><b>135</b></td><td class="loss">−13</td></tr>
     </tbody>
   </table></div>
+  <p class="hint" style="margin-top:8px">
+    <b>이 표의 기준</b>: 위 9개 목적지 범주만 합한 값입니다(148 / 135 / 135).
+    푸터 5개(<code>/about</code> <code>/faq</code> <code>/contact</code> <code>/privacy</code> <code>/legal</code>)와
+    홈 링크(<code>/</code>)는 이 표에 나열되지 않아 빠져 있습니다.
+    이 6개를 더해 <code>&lt;script&gt;</code> 제거 후 <code>href="/..."</code> 를 전부 중복 제거하면
+    새 홈(데스크톱·모바일 공통)의 <b>전체 고유 목적지는 140</b>입니다 — 148/135/135 와는 계수 기준이 다를 뿐
+    둘 다 맞는 수치입니다.
+  </p>
   <p class="ref-note">
-    ⚠️ <b>승인 전 판단이 필요한 지점 — 내부링크 15개 감소.</b>
+    ⚠️ <b>승인 전 판단이 필요한 지점 — 내부링크 13개 감소(범주 기준 148 → 135).</b>
     핵심 자산인 <code>/shoes/</code> 122개는 그대로지만, 현재 홈 하단의 “Beyond Shoes” 배너가 사라지면서
     <b>브랜드 14개 · 젤 2개 · 블로그 개별 글 2개</b> 로 나가던 경로가 새 홈에는 없습니다.
+    <code>bc46ba4</code> 에서 두 시안 최종 밴드에 <code>/brands</code> · <code>/gels</code> 허브 링크를 1개씩
+    추가해 브랜드·젤은 완전 단절이 아니라 <b>허브를 거쳐 1홉으로 여전히 도달 가능</b>합니다
+    (<code>out/brands.html</code> 이 브랜드 12개 전부를, <code>out/gels.html</code> 이 젤 13개 전부를 링크합니다).
+    남은 감소분(13개)의 성격은 바뀌었습니다 — 끊긴 것은 브랜드 상세·젤 상세로 가던 <b>직접 링크</b>이지,
+    도달 가능성 자체가 아닙니다.
     새 홈의 <code>/blog</code> 링크 9개는 전부 <b>인덱스(<code>/blog</code>)로만</b> 가고 개별 글로 가지 않습니다
     (에디토리얼 섹션이 글 제목을 보여주지만 링크 목적지는 인덱스입니다).
     설계 문서 §9 SEO 항목은 “인덱스 122행 정적 렌더로 내부링크 보존”만 요구하므로 <b>스펙 위반은 아니지만</b>,
-    브랜드 페이지 14개가 홈에서 완전히 끊기는 것은 별개 결정입니다.
-    <br>선택지 — (a) 그대로 둔다(브랜드/젤은 헤더·푸터 경유로 충분하다고 보는 경우) ·
+    브랜드·젤 상세로의 직접 링크가 홈에서 사라진 것은 별개 결정입니다.
+    <br>선택지 — (a) 그대로 둔다(브랜드/젤은 허브·헤더·푸터 경유로 충분하다고 보는 경우) ·
     (b) 에디토리얼 섹션의 링크 목적지를 개별 글 slug 로 바꾼다 ·
-    (c) 푸터에 브랜드 줄을 넣어 14개를 복구한다.
+    (c) 푸터에 브랜드 줄을 넣어 직접 링크를 추가 복구한다.
     이 문서는 사실만 제시하고 <b>결정하지 않았습니다.</b>
   </p>
 
