@@ -37,7 +37,7 @@ describe('getHomeStats', () => {
 describe('PROBLEMS', () => {
   it('6개이고 rank가 1~6으로 유일하다', () => {
     expect(PROBLEMS).toHaveLength(6);
-    expect([...new Set(PROBLEMS.map(p => p.rank))].sort()).toEqual([1,2,3,4,5,6]);
+    expect(Array.from(new Set(PROBLEMS.map(p => p.rank))).sort()).toEqual([1,2,3,4,5,6]);
   });
   it('우선순위 순서가 지시서와 일치한다', () => {
     expect(PROBLEMS.map(p => p.slug)).toEqual([
@@ -98,5 +98,30 @@ describe('balancedByCategory', () => {
 
   it('쿼터 합계가 16이다', () => {
     expect(Object.values(DEFAULT_QUOTA).reduce((a, b) => a + b, 0)).toBe(16);
+  });
+
+  it('price가 없는 항목(GridShoe.price?)도 컴파일되고, 같은 rating 안에서 뒤로 밀린다', () => {
+    // GridShoe.price는 옵셔널이라 이 타입 그대로 넘길 수 있어야 한다 (tsc --noEmit 대상)
+    const withPrice = Array.from({ length: 3 }, (_, i) => ({
+      category: '데일리', rating: 5, price: 200000 - i * 1000, id: `p${i}`,
+    }));
+    const withoutPrice = Array.from({ length: 3 }, (_, i) => ({
+      category: '데일리', rating: 5, price: undefined as number | undefined, id: `n${i}`,
+    }));
+    // 가격 없는 항목을 앞에 섞어 넣어도 결과에서는 뒤로 밀려야 한다
+    const mixed = [...withoutPrice, ...withPrice];
+
+    const r1 = balancedByCategory(mixed, { 데일리: 6 });
+    const r2 = balancedByCategory(mixed, { 데일리: 6 });
+
+    expect(r1.slice(0, 3).every(s => s.price !== undefined)).toBe(true);
+    expect(r1.slice(3).every(s => s.price === undefined)).toBe(true);
+
+    // 가격 있는 항목끼리는 오름차순 (NaN 비교 없이 정상 정렬됐는지 확인)
+    const pricedValues = r1.slice(0, 3).map(s => s.price as number);
+    expect(pricedValues).toEqual([...pricedValues].sort((a, b) => a - b));
+
+    // 결정적: 같은 입력이면 항상 같은 순서
+    expect(r1.map(s => s.id)).toEqual(r2.map(s => s.id));
   });
 });

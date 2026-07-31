@@ -1,4 +1,4 @@
-import { getShoes } from '@/lib/data/shoes';
+import { getGridShoes } from '@/lib/data/shoes';
 import { getAllPosts } from '@/lib/data/blog';
 
 /**
@@ -14,12 +14,23 @@ const QUESTION_COUNT = 9;
 /** 문항당 응답에 걸리는 대략적 시간(초). 문항 수가 늘면 예상 소요 시간도 함께 늘어난다. */
 const SECONDS_PER_QUESTION = 7;
 
-/** 카운트를 하드코딩하면 반드시 stale해진다. 전부 데이터 소스에서 산출한다. */
-export function getHomeStats() {
+export type HomeStats = {
+  shoeCount: number;
+  lastUpdated: string | null;
+  questionCount: number;
+  estimatedMinutes: number;
+};
+
+/**
+ * 카운트를 하드코딩하면 반드시 stale해진다. 전부 데이터 소스에서 산출한다.
+ * getShoes() 대신 getGridShoes()를 쓴다 — reviews/editorComment 등 무거운 필드가 없는
+ * 경량 프로젝션이라 shoeCount만 필요한 이 함수엔 더 가볍다 (461KB 청크 사고 이력 참고).
+ */
+export function getHomeStats(): HomeStats {
   const posts = getAllPosts();
   const latest = posts[0];
   return {
-    shoeCount: getShoes().length,
+    shoeCount: getGridShoes().length,
     lastUpdated: latest?.updatedAt ?? latest?.publishedAt ?? null,
     questionCount: QUESTION_COUNT,
     estimatedMinutes: Math.max(1, Math.round((QUESTION_COUNT * SECONDS_PER_QUESTION) / 60)),
