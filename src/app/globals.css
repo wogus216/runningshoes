@@ -7,24 +7,28 @@
 :root {
   /* Ink + Signal (리디자인 B, 2026-07-30) — 웜 화이트 그라운드 · 잉크 타이포 · 세이프티 오렌지 단일 시그널 */
   --primary: #17150F;
-  --secondary: #5F5B4E;
+  --secondary: #6E6A5E;
   --tertiary: #7C7768;
   --accent: #FF4D00;
-  --positive: #0f766e;
-  --warning: #B45309;
+  --positive: #2F7D5A;
+  --warning: #C98112;
   --negative: #D92D20;
   --surface: #FFFFFF;
-  --border: #E3E0D6;
-  --background: #FCFBF9;
+  --border: #D9D4C8;
+  --background: #F7F4ED;
   --foreground: #17150F;
 
-  --bg-warm: #FCFBF9;
-  --bg-warm-alt: #F7F5EE;
+  --bg-warm: #F7F4ED;
+  --bg-warm-alt: #EFEAE0;
   --surface-strong: #F1EDE3;
   --navy: #17150F;
   --navy-soft: #262319;
-  --accent-soft: #FFF0E8;
+  --accent-soft: #FFE7DB;
   --accent-line: rgba(255, 77, 0, 0.2);
+
+  --signal-dark: #C73800;
+  --dark-soft: #28241D;
+  --light-on-dark: #F7F4ED;
 
   /* shadcn 호환 변수 */
   --card: 0 0% 100%;
