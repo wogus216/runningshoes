@@ -1,0 +1,4 @@
+# 재현 가능한 중간 산출물 (silhouette-derivation.mjs 재실행 시 생성)
+outlines.json
+control-points.json
+debug-sources.svg
