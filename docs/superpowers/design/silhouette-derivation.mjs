@@ -333,26 +333,43 @@ console.log(`배치: x ${PX(0).toFixed(0)}~${PX(1).toFixed(0)}  y ${PY(natTop).t
     return `<line x1="${PX(TICKS[0].u).toFixed(1)}" y1="${y}" x2="${PX(TICKS[2].u).toFixed(1)}" y2="${y}" stroke="var(--signal)" stroke-width=".7" opacity=".5"/>${marks}`;
   };
 
+  // path 3개는 <defs> 에 한 번만 두고 각 렌더는 <use> 로 참조한다.
+  // 인라인 반복하면 같은 문자열이 14번 들어가 파일이 85KB로 불어난다.
+  // 색은 <use> 쪽에서 준다. 참조되는 path 에 stroke 를 박아두면 프레젠테이션 속성이 이겨서
+  // <use> 로 덮어쓸 수 없다(진단 렌더는 같은 외곽선을 시그널색으로 그려야 한다).
+  const DEFS = `<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <path id="sil-outline" d="${OUTLINE}" fill="none" stroke-width="1.7" stroke-linejoin="round"/>
+  <path id="sil-midsole" d="${MIDSOLE}" fill="none" stroke-width="2" stroke-linecap="round"/>
+  <path id="sil-foot" d="${FOOT}" fill="none" stroke-width="1.1" stroke-dasharray="4 3"/>
+</defs></svg>`;
+
   const shoe = (w, { foot, box, op, tick } = {}) => `<svg width="${w}" height="${Math.round((w * 400) / 560)}" viewBox="0 0 560 400" fill="none" style="opacity:${op ?? 1}">
       ${box ? `<rect x="${BOX.x0}" y="${BOX.y0}" width="${boxW}" height="${boxH}" class="box"/>` : ''}
-      <path d="${OUTLINE}" stroke="var(--ink)" stroke-width="1.7" stroke-linejoin="round"/>
-      <path d="${MIDSOLE}" stroke="var(--signal)" stroke-width="2" stroke-linecap="round"/>
-      ${foot ? `<path d="${FOOT}" stroke="var(--ink)" stroke-width="1.1" stroke-dasharray="4 3" opacity=".45"/>` : ''}
+      <use href="#sil-outline" stroke="var(--ink)"/>
+      <use href="#sil-midsole" stroke="var(--signal)"/>
+      ${foot ? '<use href="#sil-foot" stroke="var(--ink)" opacity=".45"/>' : ''}
       ${tick ? ticks() : ''}
     </svg>`;
   const cell = (cap, svg) => `<div class="cell"><div class="cap">${cap}</div>${svg}</div>`;
 
   // 진단용: 소스 원본 외곽선(400샘플, 단순화 없음)을 같은 박스에 그려 대조한다.
+  // 380px 렌더에서는 3픽셀당 1점이면 원본과 구분되지 않으므로 4개당 1개만 찍는다
+  // (400점 폴리곤 3개를 그대로 넣으면 검증 페이지가 불필요하게 커진다).
+  const RAW_STEP = 4;
   const rawPath = (role) => {
     const o = out[role];
     const m = Math.max(...o.topH.filter((n) => n != null));
     const n = o.topH.length;
-    const pts = (arr) => arr.map((v, i) => `${PX(i / (n - 1)).toFixed(1)},${PY((v ?? 0) / m * natTop).toFixed(1)}`);
+    const pts = (arr) =>
+      arr
+        .map((v, i) => [i, v])
+        .filter(([i]) => i % RAW_STEP === 0 || i === n - 1)
+        .map(([i, v]) => `${PX(i / (n - 1)).toFixed(1)},${PY(((v ?? 0) / m) * natTop).toFixed(1)}`);
     return pts(o.topH).concat(pts(o.botH).reverse()).join(' ');
   };
   const compare = (role, w) => `<svg width="${w}" height="${Math.round((w * 400) / 560)}" viewBox="0 0 560 400" fill="none">
       <polygon points="${rawPath(role)}" stroke="rgba(23,21,15,.32)" stroke-width="1.2" fill="none"/>
-      <path d="${OUTLINE}" stroke="var(--signal)" stroke-width="1.7" stroke-linejoin="round"/>
+      <use href="#sil-outline" stroke="var(--signal)"/>
     </svg>`;
 
   const html = `<!doctype html>
@@ -370,6 +387,7 @@ console.log(`배치: x ${PX(0).toFixed(0)}~${PX(1).toFixed(0)}  y ${PY(natTop).t
   svg { display:block; }
   .box { outline:1px dashed rgba(23,21,15,.2); }
 </style></head><body>
+${DEFS}
 <h1>중립 러닝화 실루엣 — 승인 조건 검증</h1>
 <p class="sub">viewBox 0 0 560 400 · 제어점 ${POINTS} · 가로세로비 ${ASPECT} · 소스 3켤레 구간 조합</p>
 <div class="row">
