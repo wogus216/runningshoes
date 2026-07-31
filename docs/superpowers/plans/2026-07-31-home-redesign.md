@@ -292,10 +292,14 @@ git commit -m "docs(home): 최종 수정 지시 반영 — 중립 SVG 실루엣�
 // .omc/design/silhouette-derivation.mjs
 import sharp from 'sharp';
 
+// 소스 3종은 controller가 사전 검증했다(2026-07-31):
+// 전부 투명 배경이고, trim 후 가로/세로 비율이 2.0~2.35인 정면 측면도다.
+// ⚠️ 원안의 adidas/evosl 은 비율 1.38의 각도 샷이라 외곽 유도에 쓸 수 없어 교체했다.
+//    소스를 바꿔야 할 경우 반드시 trim 후 비율이 2.0~2.45인지 먼저 확인할 것.
 const SOURCES = [
-  { role: 'heel',  src: 'public/images/shoes/brooks/ghost17/side.webp' },      // 데일리 — 힐 구조
-  { role: 'upper', src: 'public/images/shoes/nike/vomero18/side.webp' },       // 쿠션화 — 발등·갑피
-  { role: 'toe',   src: 'public/images/shoes/adidas/evosl/side.webp' },        // 레이싱 — 앞코·미드솔
+  { role: 'heel',  src: 'public/images/shoes/brooks/ghost17/side.webp' },          // 데일리 — 힐 구조 (2.35)
+  { role: 'upper', src: 'public/images/shoes/nike/vomero18/side.webp' },           // 쿠션화 — 발등·갑피 (2.23)
+  { role: 'toe',   src: 'public/images/shoes/saucony/endorphinelite2/side.webp' }, // 레이싱 — 앞코·미드솔 (2.00)
 ];
 
 const W = 400; // 정규화 폭
@@ -365,7 +369,8 @@ open .omc/design/silhouette-preview.html
 ④ 도면 같되 차갑지 않은가 ⑤ 발 윤곽을 겹쳐도 자연스러운가 ⑥ 모바일 크기에서 인지되는가
 
 **6개 중 하나라도 실패하면 Step 3의 `SEG` 경계와 `POINTS` 값을 조정해 반복한다.**
-3회 반복해도 ①③이 실패하면 소스 조합을 바꾼다(힐 소스를 안정화 계열로 교체).
+3회 반복해도 ①③이 실패하면 소스 조합을 바꾼다. 검증된 대체 후보(전부 투명 배경·정면 측면도):
+`hoka/arahi8/side.webp`(안정화 2.14) · `brooks/ghostmax3/side.webp`(쿠션 2.16) · `hoka/cielox1/side.webp`(레이싱 2.04) · `brooks/hyperionmax3/side.webp`(템포 2.06)
 
 - [ ] **Step 5: 확정 path를 컴포넌트로 고정**
 
