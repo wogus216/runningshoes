@@ -208,20 +208,38 @@ writeFileSync(
 
 // ── Step 3b: 뷰박스 좌표로 스케일 + path 문자열 생성 ────────────────────────
 
-// 뷰박스 0 0 560 400, 신발 배치 영역 x 160~520 / y 185~305.
-// 실제 러닝화 비율(2.0~2.4)이 박스 비율(3.0)보다 세로로 두꺼우므로,
-// 박스를 넘지 않도록 높이를 기준으로 맞추고 영역 안에서 가운데 정렬한다.
-const BOX = { x0: 160, x1: 520, y0: 185, y1: 305 };
-const boxW = BOX.x1 - BOX.x0, boxH = BOX.y1 - BOX.y0;
-// 도형은 "폭 ASPECT · 높이 natTop(≈1)" 비율. 박스(3.0)가 실제 러닝화(2.25)보다
-// 납작하므로 높이를 기준으로 맞추고 박스 안에서 가운데 정렬한다(박스를 넘지 않는다).
-const drawH = Math.min(boxH, (boxW / ASPECT) * natTop);
+// 뷰박스 0 0 560 400.
+//
+// 배치 기준 (2026-07-31 운영자 확정):
+//   x 160~520 은 신발의 bounding box 가 아니라 **전체 모션 필드**다.
+//   사선 트랙·데이터 이동·속도선·계측선을 포함하는 영역이고, 신발이 다 채우지 않는다.
+//     x 160~190  START 라인 · 데이터 진입 경로 · 힐 뒤 속도선
+//     x 190~490  러닝화 실루엣 · 발 윤곽 · 적합 영역
+//     x 490~520  전진 방향 표시 · 앞꿈치 계측선 · CTA 방향 연결
+//
+//   신발은 **원본 비율을 유지한 균등 확대만** 한다. 비균등 scale·가로 늘이기·
+//   세로 누르기는 금지다(비율 왜곡이 러닝화 인지성과 중립성을 훼손한다).
+//   시각 중심은 필드 중앙(340)보다 오른쪽으로 5~10px 옮겨 전진감을 만든다.
+//
+// 접지선(baseY)은 305 에 고정한다. 확대분은 위로만 자란다 — 신발이 서 있는
+// 지면이 흔들리면 사선 트랙·계측선과 어긋나기 때문이다.
+const FIELD = { x0: 160, x1: 520 }; // 전체 모션 필드
+const SHOE_ZONE = { x0: 190, x1: 490 }; // 신발 실루엣 권장 영역
+const SHOE_WIDTH = 294; // 목표 폭 290~300 → 270 대비 1.089배 균등 확대
+const FORWARD_SHIFT = 5; // 필드 중앙 대비 우측 이동(전진감)
+const BASELINE_Y = 305; // 접지선 고정
+
+const drawW = SHOE_WIDTH;
+const drawH = drawW / ASPECT; // 비율 유지 — 폭을 키우면 높이도 같은 비율로 큰다
 const scale = drawH / natTop; // 정규화 높이 1 당 px
-const drawW = scale * natTop * ASPECT;
-const offX = BOX.x0 + (boxW - drawW) / 2;
-const baseY = BOX.y0 + (boxH - drawH) / 2 + drawH; // 접지선
+const offX = (FIELD.x0 + FIELD.x1) / 2 + FORWARD_SHIFT - drawW / 2;
+const baseY = BASELINE_Y;
 const PX = (u) => offX + u * drawW;
 const PY = (hh) => baseY - hh * scale;
+
+// 하위 호환: 미리보기가 참조하는 이름
+const BOX = { x0: FIELD.x0, x1: FIELD.x1, y0: baseY - drawH, y1: baseY };
+const boxW = FIELD.x1 - FIELD.x0, boxH = drawH;
 
 /** Catmull-Rom -> 3차 베지어. 열린 곡선. */
 function curve(pts) {
@@ -311,6 +329,10 @@ const FOOT = curve(footTopXY) + ' ' + curve(footSoleXY.slice().reverse()).replac
 writeFileSync(OUT + 'paths.json', JSON.stringify({ OUTLINE, MIDSOLE, FOOT, BOX, scale, baseY }, null, 1));
 console.log(`OUTLINE ${OUTLINE.length}자 / MIDSOLE ${MIDSOLE.length}자 / FOOT ${FOOT.length}자`);
 console.log(`배치: x ${PX(0).toFixed(0)}~${PX(1).toFixed(0)}  y ${PY(natTop).toFixed(0)}~${baseY.toFixed(0)}`);
+console.log(
+  `      폭 ${drawW} × 높이 ${drawH.toFixed(1)} · 필드 점유 ${((drawW / boxW) * 100).toFixed(1)}%` +
+  ` · bbox중앙 ${(offX + drawW / 2).toFixed(0)} (필드중앙 340 +${FORWARD_SHIFT})`
+);
 
 // ── Step 4: 육안 검증용 미리보기 HTML ───────────────────────────────────────
 
@@ -343,8 +365,25 @@ console.log(`배치: x ${PX(0).toFixed(0)}~${PX(1).toFixed(0)}  y ${PY(natTop).t
   <path id="sil-foot" d="${FOOT}" fill="none" stroke-width="1.1" stroke-dasharray="4 3"/>
 </defs></svg>`;
 
+  // 모션 필드 3구간을 그려 "남는 공간이 결함이 아니라 의도된 기능 공간"임을 대조한다.
+  const zones = () => {
+    const top = baseY - drawH - 26, bot = baseY + 34;
+    const band = (x0, x1, label, fill) =>
+      `<rect x="${x0}" y="${top}" width="${x1 - x0}" height="${bot - top}" fill="${fill}"/>` +
+      `<text x="${(x0 + x1) / 2}" y="${bot + 12}" font-size="8" fill="var(--ink)" opacity=".55" text-anchor="middle">${label}</text>`;
+    return (
+      band(FIELD.x0, SHOE_ZONE.x0, 'START·속도선', 'rgba(255,77,0,.07)') +
+      band(SHOE_ZONE.x0, SHOE_ZONE.x1, '실루엣 영역', 'rgba(23,21,15,.035)') +
+      band(SHOE_ZONE.x1, FIELD.x1, '전진·CTA', 'rgba(255,77,0,.07)') +
+      `<rect x="${FIELD.x0}" y="${top}" width="${boxW}" height="${bot - top}" class="box"/>` +
+      // 필드 중앙(340)과 실루엣 bbox 중앙 표시 — 전진감을 위한 우측 이동량 확인용
+      `<line x1="340" y1="${top}" x2="340" y2="${bot}" stroke="var(--ink)" stroke-width=".6" stroke-dasharray="3 3" opacity=".35"/>` +
+      `<line x1="${offX + drawW / 2}" y1="${top}" x2="${offX + drawW / 2}" y2="${bot}" stroke="var(--signal)" stroke-width="1" opacity=".8"/>`
+    );
+  };
+
   const shoe = (w, { foot, box, op, tick } = {}) => `<svg width="${w}" height="${Math.round((w * 400) / 560)}" viewBox="0 0 560 400" fill="none" style="opacity:${op ?? 1}">
-      ${box ? `<rect x="${BOX.x0}" y="${BOX.y0}" width="${boxW}" height="${boxH}" class="box"/>` : ''}
+      ${box ? zones() : ''}
       <use href="#sil-outline" stroke="var(--ink)"/>
       <use href="#sil-midsole" stroke="var(--signal)"/>
       ${foot ? '<use href="#sil-foot" stroke="var(--ink)" opacity=".45"/>' : ''}
@@ -408,7 +447,7 @@ ${DEFS}
 <div class="row">
   ${cell('발 윤곽만 380px', shoe(380, { foot: true }))}
   ${cell('발 윤곽만 200px', shoe(200, { foot: true }))}
-  ${cell('배치 영역 대조', shoe(380, { box: true }))}
+  ${cell('모션 필드 3구간 대조', shoe(560, { box: true }))}
 </div>
 <div class="row">
   ${cell('첫 프레임 opacity 0.12', shoe(380, { op: 0.12 }))}
