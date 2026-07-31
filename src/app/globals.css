@@ -66,7 +66,7 @@
 
   body {
     @apply min-h-screen antialiased;
-    background: linear-gradient(180deg, #FDFCFA 0%, #FCFBF9 55%, #F7F5EE 100%);
+    background: linear-gradient(180deg, var(--background) 0%, var(--background) 55%, var(--bg-warm-alt) 100%);
     color: var(--primary);
     font-feature-settings: "rlig" 1, "calt" 0;
     overflow-x: hidden;
@@ -265,7 +265,7 @@
   padding: 1rem 1.25rem;
   border-radius: 0 4px 4px 0;
   margin: 1.75rem 0;
-  color: #5F5B4E;
+  color: var(--secondary);
   font-style: normal;
 }
 [data-blog-content] blockquote p { margin-bottom: 0; color: inherit; }
@@ -292,7 +292,7 @@
 [data-blog-content] td {
   padding: 0.65rem 1rem;
   border-bottom: 1px solid #EFECE3;
-  color: #5F5B4E;
+  color: var(--secondary);
 }
 [data-blog-content] tbody tr:last-child td { border-bottom: none; }
 [data-blog-content] tbody tr:nth-child(even) { background: rgba(247,245,238,0.7); }
@@ -710,7 +710,7 @@
 }
 [data-blog-content] .timeline-desc {
   font-size: 0.875rem;
-  color: #5F5B4E;
+  color: var(--secondary);
   line-height: 1.55;
   margin: 0;
 }
@@ -771,7 +771,7 @@
 [data-blog-content] .affiliate-btn.naver:hover { box-shadow: 0 6px 16px rgba(21,128,61,0.22); }
 [data-blog-content] .affiliate-btn.pending {
   background: #EFECE3;
-  color: #5F5B4E !important;
+  color: var(--secondary) !important;
   border: 1px dashed #cbd5e1;
   box-shadow: none;
 }
