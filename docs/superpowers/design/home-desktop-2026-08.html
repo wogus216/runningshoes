@@ -693,6 +693,11 @@
     border-top: 1px solid rgba(247,244,237,.16); border-bottom: 1px solid rgba(247,244,237,.16);
   }
   @container (max-width: 760px) { .final-routes { grid-template-columns: 1fr; } .wrap:has(> .final-routes) { margin-top: 36px; } }
+  .fr-more { position: relative; margin-top: 16px; display: flex; flex-wrap: wrap; gap: 8px 22px; }
+  .fr-more a { font-size: 13.5px; color: rgba(247,244,237,.72);
+               border-bottom: 1px solid rgba(247,244,237,.28); padding-bottom: 3px; }
+  .fr-more a:hover { color: var(--light-on-dark); border-bottom-color: var(--signal); }
+  .frm-n { font-family: var(--mono); font-size: 10.5px; color: rgba(247,244,237,.45); }
   .fr {
     background: var(--ink); padding: 24px 26px 22px;
     display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: baseline;
@@ -1440,6 +1445,13 @@
           <span class="fr-d">후보를 나란히 놓고 수치를 맞대봅니다</span>
         </a>
       </div>
+
+      <!-- 순회 보조 경로 — 브랜드·젤 허브. 홈에서 끊기던 크롤 경로를 1홉으로 되살린다.
+           각 허브가 자식 전부를 링크하므로 링크 2개로 25개 페이지가 도달 가능해진다. -->
+      <p class="fr-more">
+        <a href="/brands">브랜드별 보기 <span class="frm-n">12</span></a>
+        <a href="/gels">에너지 젤 <span class="frm-n">13</span></a>
+      </p>
     </div>
 
     <div class="wrap final-foot">
