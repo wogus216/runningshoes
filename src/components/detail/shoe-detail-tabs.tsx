@@ -16,6 +16,7 @@ import { SimilarShoes } from '@/components/detail/similar-shoes';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
+import { getShoeDurability } from '@/lib/durability';
 
 // Recharts가 무거워서 dynamic import로 분리 (에러 처리 포함)
 const SpecRadarChart = dynamic(
@@ -57,6 +58,8 @@ type TabId = typeof tabs[number]['id'];
 
 export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }: ShoeDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('specs');
+  // 내구성 범위·근거 등급은 한 번만 계산해 스펙/가격 탭이 같은 값을 쓰게 한다
+  const durability = getShoeDurability(shoe);
 
   return (
     <div className="space-y-5">
@@ -87,7 +90,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         <div className={activeTab === 'specs' ? '' : 'hidden'}>
           {shoe.specs && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} />
+              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} durability={durability} />
             </div>
           )}
           {shoe.specs && (
@@ -159,14 +162,14 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
                 shoeName={shoe.name}
                 brand={shoe.brand}
                 category={shoe.category}
-                specs={shoe.specs}
+                durability={durability}
               />
             </div>
           )}
           {shoe.specs && (
             <div className="border border-border bg-white p-5 md:p-6">
               <ReplacementCalculator
-                durabilityKm={shoe.specs.durability}
+                durability={durability}
                 shoeName={shoe.name}
               />
             </div>

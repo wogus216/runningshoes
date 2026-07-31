@@ -45,7 +45,12 @@ export interface PriceAnalysis {
 
 export interface Review {
   userType: string;
-  rating: number;
+  /**
+   * 0~100 점수. 출처 있는 분석(에디터 분석·외부 리뷰 인용)에만 부여한다.
+   * 데이터 기반 적합성 분석에는 별점을 매기지 않는다 — 실사용 경험이 없는 항목에
+   * 별점을 붙이면 실제 구매 후기로 오인된다.
+   */
+  rating?: number;
   text: string;
   source?: string;  // 'editor' | 'community'
   sourceUrl?: string;  // 출처 URL (에디터 분석 시 참조 링크)

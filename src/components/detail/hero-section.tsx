@@ -7,6 +7,7 @@ import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
+import { getShoeDurability } from "@/lib/durability";
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -23,13 +24,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     return 0;
   })[0];
 
-  // 내구성 범위 계산
-  const getDurabilityRange = () => {
-    const durability = shoe.specs?.durability || 500;
-    const min = Math.max(durability - 100, 300);
-    const max = durability;
-    return `${min}-${max}km`;
-  };
+  // 내구성은 단일 숫자가 아니라 근거 등급이 붙은 범위로 표기한다 (@/lib/durability)
+  const durability = getShoeDurability(shoe);
 
   const fitTone =
     koreanFootFit?.toBoxWidth === 'wide'
@@ -38,7 +34,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
       ? { label: '발볼 주의', value: '좁음' }
       : { label: '기본 핏', value: '표준' };
 
-  const summaryCards = [
+  const summaryCards: { label: string; value: string; unit: string }[] = [
     {
       label: '무게',
       value: specs ? `${specs.weight}` : '-',
@@ -58,7 +54,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
     },
     {
       label: '수명',
-      value: getDurabilityRange(),
+      value: durability?.rangeLabel ?? '-',
       unit: '',
     },
   ];
@@ -133,7 +129,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
               </div>
               <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-tertiary">
                 {shoe.priceAnalysis && (
-                  <span>{getDurabilityRange()} · 약 ₩{shoe.priceAnalysis.costPerKm}/km</span>
+                  <span>{durability?.rangeLabel ?? '-'} · 약 ₩{shoe.priceAnalysis.costPerKm}/km</span>
                 )}
                 {shoe.priceAnalysis?.valueRating && (
                   <span className="text-accent">가치 점수 {shoe.priceAnalysis.valueRating.toFixed(1)}</span>

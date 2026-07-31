@@ -1,7 +1,6 @@
 'use client';
 
-import { useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useState, useEffect, useRef } from 'react';
 import type { MarathonEvent, EventStatus } from '@/types/marathon';
 import { EVENT_STATUSES } from '@/types/marathon';
 import { useMarathonFilters } from '@/hooks/useMarathonFilters';
@@ -15,12 +14,6 @@ interface MarathonContentProps {
 }
 
 export function MarathonContent({ events }: MarathonContentProps) {
-  const searchParams = useSearchParams();
-  const statusParam = searchParams.get('status');
-  const initialStatus = statusParam && EVENT_STATUSES.includes(statusParam as EventStatus)
-    ? (statusParam as EventStatus)
-    : undefined;
-
   const [showFilters, setShowFilters] = useState(false);
   const {
     filters,
@@ -35,7 +28,19 @@ export function MarathonContent({ events }: MarathonContentProps) {
     toggleDistance,
     toggleStatus,
     resetFilters,
-  } = useMarathonFilters(events, initialStatus);
+  } = useMarathonFilters(events);
+
+  // ?status=... 딥링크 반영. useSearchParams()를 쓰면 정적 export에서 페이지 전체가
+  // 클라이언트 렌더로 이탈해 대회 목록이 검색엔진에 안 보이므로, 마운트 후 URL을 직접 읽는다.
+  const statusApplied = useRef(false);
+  useEffect(() => {
+    if (statusApplied.current) return;
+    const statusParam = new URLSearchParams(window.location.search).get('status');
+    if (statusParam && EVENT_STATUSES.includes(statusParam as EventStatus)) {
+      statusApplied.current = true;
+      toggleStatus(statusParam as EventStatus);
+    }
+  }, [toggleStatus]);
 
   return (
     <div className="space-y-6">

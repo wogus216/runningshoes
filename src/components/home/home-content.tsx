@@ -2,7 +2,6 @@
 
 import { useMemo, useState, useCallback, useEffect } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
 import { Sparkles, GitCompare, SlidersHorizontal } from "lucide-react";
 import { BrandView } from "@/components/brand-view";
 import { HierarchyView } from "@/components/hierarchy-view";
@@ -19,10 +18,11 @@ import { ADSENSE_SLOTS } from "@/lib/constants";
 
 interface HomeContentProps {
   initialShoes: GridShoe[];
+  /** 데이터 기준일 (ISO). 서버에서 최신 발행 글 기준으로 산출해 넘긴다. */
+  lastUpdated?: string | null;
 }
 
-export function HomeContent({ initialShoes }: HomeContentProps) {
-  const searchParams = useSearchParams();
+export function HomeContent({ initialShoes, lastUpdated }: HomeContentProps) {
   const quickSearches = [
     { label: "첫 10K", query: "입문화", hint: "과한 스펙보다 편한 첫 켤레" },
     { label: "무릎 부담 감소", query: "무릎", hint: "안정성과 쿠션 우선" },
@@ -30,15 +30,26 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
     { label: "템포 업", query: "레이싱", hint: "반응성과 경량감 중심" },
   ];
 
-  // URL에서 view 파라미터 읽기 (기본값: hierarchy)
-  const viewParam = searchParams.get('view');
-  const initialView: ViewMode = viewParam === 'brand' ? 'brand' : 'hierarchy';
-  const [view, setView] = useState<ViewMode>(initialView);
+  // view 상태. next/navigation의 useSearchParams()는 정적 export에서 페이지 전체를
+  // 클라이언트 렌더로 이탈시켜(정적 HTML이 loading 폴백으로 대체됨) 홈 본문이
+  // 검색엔진에 노출되지 않았다. window.location으로 직접 읽어 이탈을 피한다.
+  const [view, setView] = useState<ViewMode>('hierarchy');
+
+  // 마운트 후 URL의 view 파라미터 반영 + 뒤로/앞으로 가기 동기화
+  useEffect(() => {
+    const syncFromUrl = () => {
+      const urlView = new URLSearchParams(window.location.search).get('view');
+      setView(urlView === 'brand' ? 'brand' : 'hierarchy');
+    };
+    syncFromUrl();
+    window.addEventListener('popstate', syncFromUrl);
+    return () => window.removeEventListener('popstate', syncFromUrl);
+  }, []);
 
   // view 변경 시 URL 업데이트
   const handleViewChange = useCallback((newView: ViewMode) => {
     setView(newView);
-    const params = new URLSearchParams(searchParams.toString());
+    const params = new URLSearchParams(window.location.search);
     if (newView === 'hierarchy') {
       params.delete('view'); // 기본값이면 URL에서 제거
     } else {
@@ -46,14 +57,7 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
     }
     const queryString = params.toString();
     window.history.replaceState(null, '', queryString ? `/?${queryString}` : '/');
-  }, [searchParams]);
-
-  // URL 파라미터 변경 시 view 동기화
-  useEffect(() => {
-    const urlView = searchParams.get('view');
-    const newView: ViewMode = urlView === 'brand' ? 'brand' : 'hierarchy';
-    setView(newView);
-  }, [searchParams]);
+  }, []);
 
   const {
     filters,
@@ -72,10 +76,16 @@ export function HomeContent({ initialShoes }: HomeContentProps) {
   } = useShoeFilters(initialShoes);
 
   const totalBrands = useMemo(() => new Set(initialShoes.map((shoe) => shoe.brand)).size, [initialShoes]);
+  const updatedLabel = useMemo(() => {
+    if (!lastUpdated) return "—";
+    const d = new Date(lastUpdated);
+    if (Number.isNaN(d.getTime())) return "—";
+    return `${d.getFullYear()}.${String(d.getMonth() + 1).padStart(2, "0")}`;
+  }, [lastUpdated]);
   const heroStats = [
     { label: "모델", value: `${initialShoes.length}+` },
     { label: "브랜드", value: `${totalBrands}` },
-    { label: "업데이트", value: "2026.03" },
+    { label: "업데이트", value: updatedLabel },
   ];
 
   const categories = useMemo(() => {

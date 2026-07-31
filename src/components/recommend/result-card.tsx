@@ -8,6 +8,7 @@ import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
 import { img } from '@/lib/image';
 import type { RecommendedShoe } from '@/lib/recommendation';
+import { getShoeDurability } from '@/lib/durability';
 
 type ResultCardProps = {
   shoe: RecommendedShoe;
@@ -214,8 +215,8 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
           <p className="font-bold text-primary">{shoe.specs?.cushioning}/10</p>
         </div>
         <div className="text-center">
-          <p className="text-xs text-tertiary">내구성</p>
-          <p className="font-bold text-primary">{shoe.specs?.durability}km</p>
+          <p className="text-xs text-tertiary">내구성 (추정)</p>
+          <p className="font-bold text-primary">{getShoeDurability(shoe)?.rangeLabel ?? '-'}</p>
         </div>
       </div>
 

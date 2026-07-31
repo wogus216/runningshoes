@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { Gem, Check, BadgeDollarSign, ShoppingCart, ArrowRight } from 'lucide-react';
 import type { PriceAnalysis } from "@/types/shoe";
-import type { ShoeSpecs } from "@/types/shoe";
+import type { DurabilityProfile } from "@/lib/durability";
 
 export type ResolvedAlternative = {
   key: string;         // 원본 slug or name (alternatives 배열의 원본 값)
@@ -15,7 +15,7 @@ type ValueAnalysisProps = {
   shoeName: string;
   brand: string;
   category: string;
-  specs?: ShoeSpecs;
+  durability?: DurabilityProfile | null;
   resolvedAlternatives?: ResolvedAlternative[];
 };
 
@@ -48,7 +48,7 @@ function getCategoryAdvantages(category: string): string[] {
   return categoryMap[category] || ['다목적 활용 가능'];
 }
 
-export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs, resolvedAlternatives }: ValueAnalysisProps) {
+export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durability, resolvedAlternatives }: ValueAnalysisProps) {
   const altByKey = new Map((resolvedAlternatives ?? []).map(a => [a.key, a]));
   const findAlt = (key: string): ResolvedAlternative => altByKey.get(key) ?? { key };
   // 가격대별 설명 생성
@@ -87,12 +87,12 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, specs,
     // 카테고리 장점 1개
     if (catAdvs[0]) advantages.push(catAdvs[0]);
 
-    // 스펙 기반 장점
-    if (specs) {
-      if (specs.durability >= 600) {
-        advantages.push(`${specs.durability}km 높은 내구성`);
-      } else if (specs.durability >= 400) {
-        advantages.push(`${specs.durability}km 적정 내구성`);
+    // 스펙 기반 장점 — 내구성은 단일 숫자가 아니라 범위로 말한다
+    if (durability) {
+      if (durability.mid >= 600) {
+        advantages.push(`${durability.rangeLabel} 높은 내구성(${durability.confidenceLabel})`);
+      } else if (durability.mid >= 400) {
+        advantages.push(`${durability.rangeLabel} 적정 내구성(${durability.confidenceLabel})`);
       }
     }
 

@@ -26,7 +26,7 @@ const tabs = [
   { id: 'flavor', label: '맛/식감', mobileLabel: '맛' },
   { id: 'usage', label: '섭취 가이드', mobileLabel: '가이드' },
   { id: 'price', label: '가격', mobileLabel: '가격' },
-  { id: 'reviews', label: '리뷰', mobileLabel: '리뷰' },
+  { id: 'reviews', label: '적합성 분석', mobileLabel: '적합성' },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
@@ -224,19 +224,17 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
         {/* 리뷰 탭 */}
         {activeTab === 'reviews' && (
           <div className="section-card border border-[var(--accent-line)] bg-white/88 p-6">
-            <h2 className="font-bold mb-4 md:mb-5 text-primary">사용자 리뷰</h2>
+            <h2 className="font-bold mb-2 text-primary">러너 유형별 적합성 분석</h2>
+            <p className="mb-4 text-xs leading-relaxed text-slate-500 md:mb-5">
+              성분·용량·제형 데이터를 러너 유형별로 해석한 결과입니다. 실사용자 후기를 수집하지 않으므로 실제 섭취 후기가 아닙니다.
+            </p>
             {gel.reviews && gel.reviews.length > 0 ? (
               <div className="space-y-4">
                 {gel.reviews.map((review, index) => (
                   <div key={index} className="rounded-[4px] border border-sky-100 bg-sky-50 p-4">
-                    <div className="flex items-start justify-between mb-3">
-                      <div>
-                        <p className="text-sm font-medium text-primary mb-1">
-                          {review.userType}
-                        </p>
-                        {renderStars(review.rating)}
-                      </div>
-                    </div>
+                    <p className="mb-3 text-sm font-medium text-primary">
+                      {review.userType}
+                    </p>
                     <p className="text-sm text-secondary leading-relaxed">
                       {review.text}
                     </p>
@@ -245,7 +243,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
               </div>
             ) : (
               <div className="text-center py-8">
-                <p className="text-secondary">아직 등록된 리뷰가 없습니다.</p>
+                <p className="text-secondary">아직 등록된 분석이 없습니다.</p>
               </div>
             )}
           </div>

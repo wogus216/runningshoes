@@ -5,6 +5,7 @@ import { X, ChevronDown, ChevronUp } from 'lucide-react';
 import Link from 'next/link';
 import { cn } from '@/lib/utils';
 import type { Shoe } from '@/types/shoe';
+import { getShoeDurability } from '@/lib/durability';
 
 type EnhancedCompareTableProps = {
   shoes: Shoe[];
@@ -17,6 +18,11 @@ type CompareRowProps = {
   highlight?: 'min' | 'max' | 'none';
   format?: (value: string | number | React.ReactNode) => string | number | React.ReactNode;
 };
+
+// 내구성은 단일 숫자가 아니라 추정 범위로 표기한다 (@/lib/durability)
+function durabilityLabel(shoe: Shoe): string {
+  return getShoeDurability(shoe)?.rangeLabel ?? '-';
+}
 
 function CompareRow({ label, values, highlight = 'none', format }: CompareRowProps) {
   const numericValues = values.map(v => (typeof v === 'number' ? v : parseFloat(String(v)) || 0));
@@ -157,8 +163,8 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
                 <p className="font-semibold text-sm">{shoe.specs?.stability ? `${shoe.specs.stability}/10` : '-'}</p>
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
-                <p className="text-xs text-slate-500">내구성</p>
-                <p className="font-semibold text-sm">{shoe.specs?.durability ? `${shoe.specs.durability}km` : '-'}</p>
+                <p className="text-xs text-slate-500">내구성 (추정)</p>
+                <p className="font-semibold text-sm">{durabilityLabel(shoe)}</p>
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">드롭</p>
@@ -337,10 +343,8 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               format={v => (typeof v === 'number' ? `${v}/10` : v)}
             />
             <CompareRow
-              label="내구성"
-              values={shoes.map(s => s.specs?.durability || '-')}
-              highlight="max"
-              format={v => (typeof v === 'number' ? `${v}km` : v)}
+              label="내구성 (추정 범위)"
+              values={shoes.map(durabilityLabel)}
             />
 
             {/* 생체역학 */}

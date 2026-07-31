@@ -1,10 +1,12 @@
 import type { ShoeSpecs, KoreanFootFit } from "@/types/shoe";
+import type { DurabilityProfile } from "@/lib/durability";
 import { cn } from "@/lib/utils";
 
 type QuickSpecsProps = {
   specs: ShoeSpecs;
   koreanFootFit?: KoreanFootFit;
   heelStack?: number;
+  durability?: DurabilityProfile | null;
 };
 
 type SpecBarProps = {
@@ -41,7 +43,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
   );
 }
 
-export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps) {
+export function QuickSpecs({ specs, koreanFootFit, heelStack, durability }: QuickSpecsProps) {
   // 토박스 너비 표시
   const getToeboxLabel = () => {
     if (!koreanFootFit?.toBoxWidth) return { text: '표준', color: 'text-primary' };
@@ -61,7 +63,16 @@ export function QuickSpecs({ specs, koreanFootFit, heelStack }: QuickSpecsProps)
         <SpecBar label="쿠셔닝" value={`${specs.cushioning}/10`} percentage={specs.cushioning * 10} />
         <SpecBar label="반발력" value={`${specs.responsiveness}/10`} percentage={specs.responsiveness * 10} />
         <SpecBar label="안정성" value={`${specs.stability}/10`} percentage={specs.stability * 10} color="positive" />
-        <SpecBar label="내구성" value={`${specs.durability || 500}km`} percentage={Math.min((specs.durability || 500) / 8, 100)} />
+        <SpecBar
+          label="내구성"
+          value={durability?.rangeLabel ?? `${specs.durability || 500}km`}
+          percentage={Math.min((durability?.mid ?? specs.durability ?? 500) / 8, 100)}
+        />
+        {durability && (
+          <p className="-mt-2 text-[11px] text-tertiary">
+            내구성은 {durability.basisLabel} {durability.confidenceLabel} 범위입니다.
+          </p>
+        )}
       </div>
 
       {/* 실측 기록표 — 상단 2px 잉크 보더 + 칸 사이 1px 보더 */}

@@ -1,27 +1,30 @@
 'use client';
 
 import { useState, useMemo } from 'react';
+import Link from 'next/link';
 import { Clock, AlertCircle } from 'lucide-react';
+import { REPLACEMENT_GUIDE_PATH, type DurabilityProfile } from '@/lib/durability';
 
 type ReplacementCalculatorProps = {
-  durabilityKm?: number; // expected durability in km
+  durability?: DurabilityProfile | null;
   shoeName: string;
 };
 
-export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCalculatorProps) {
+export function ReplacementCalculator({ durability, shoeName }: ReplacementCalculatorProps) {
   const [weeklyKm, setWeeklyKm] = useState<number>(30);
-  const durability = durabilityKm ?? 600;
+  const min = durability?.min ?? 500;
+  const max = durability?.max ?? 700;
 
   const result = useMemo(() => {
     if (weeklyKm <= 0) return null;
-    const weeks = durability / weeklyKm;
-    const months = weeks / 4.33;
+    const toMonths = (km: number) => Math.round((km / weeklyKm / 4.33) * 10) / 10;
     return {
-      weeks: Math.round(weeks),
-      months: Math.round(months * 10) / 10,
-      days: Math.round(weeks * 7),
+      minWeeks: Math.round(min / weeklyKm),
+      maxWeeks: Math.round(max / weeklyKm),
+      minMonths: toMonths(min),
+      maxMonths: toMonths(max),
     };
-  }, [weeklyKm, durability]);
+  }, [weeklyKm, min, max]);
 
   // 경고 레벨 결정
   const warning = useMemo(() => {
@@ -50,8 +53,26 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
         </h3>
         <p className="mt-1 text-sm text-secondary">
           주간 주행거리를 입력하면 {shoeName}의 예상 수명을 계산합니다.
-          {durabilityKm && ` (내구성 기준: ${durabilityKm}km)`}
         </p>
+        {durability && (
+          <div className="mt-2 flex flex-wrap items-center gap-1.5 text-[11px] font-semibold">
+            <span className="rounded-full border border-border bg-surface/60 px-2 py-0.5 text-secondary">
+              {durability.rangeLabel}
+            </span>
+            <span className="rounded-full border border-border bg-surface/60 px-2 py-0.5 text-secondary">
+              {durability.basisLabel}
+            </span>
+            <span
+              className={
+                durability.confidence === 'measured'
+                  ? 'rounded-full border border-teal-200 bg-teal-50 px-2 py-0.5 text-teal-700'
+                  : 'rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-amber-700'
+              }
+            >
+              {durability.confidenceLabel}
+            </span>
+          </div>
+        )}
       </div>
 
       <div className="rounded border border-border bg-white p-5">
@@ -81,15 +102,15 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
         <div className="grid grid-cols-3 gap-2 text-center">
           <div className="rounded-[4px] border border-border bg-surface/50 p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">교체 주기</div>
-            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.months}<span className="text-sm">개월</span></div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.minMonths}~{result.maxMonths}<span className="text-sm">개월</span></div>
           </div>
           <div className="rounded-[4px] border border-border bg-surface/50 p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">주</div>
-            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.weeks}<span className="text-sm">주</span></div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.minWeeks}~{result.maxWeeks}<span className="text-sm">주</span></div>
           </div>
           <div className="rounded-[4px] border border-border bg-surface/50 p-3">
-            <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">총 km</div>
-            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{durability}</div>
+            <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">누적 km</div>
+            <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{min}~{max}</div>
           </div>
         </div>
       )}
@@ -104,6 +125,18 @@ export function ReplacementCalculator({ durabilityKm, shoeName }: ReplacementCal
             <AlertCircle className="h-4 w-4 shrink-0 mt-0.5" />
             <p className="leading-relaxed">{warning.text}</p>
           </div>
+        </div>
+      )}
+
+      {durability && (
+        <div className="rounded-[4px] border border-border bg-surface/40 p-4 text-xs leading-relaxed text-secondary">
+          <p>{durability.caveat}</p>
+          <Link
+            href={REPLACEMENT_GUIDE_PATH}
+            className="mt-2 inline-block font-semibold text-sky-700 underline underline-offset-2"
+          >
+            이 숫자를 어떻게 계산했는지 보기 →
+          </Link>
         </div>
       )}
 

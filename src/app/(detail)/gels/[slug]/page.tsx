@@ -147,33 +147,12 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
     ],
   };
 
-  const normalizeRating = (rating: number): number => {
-    if (rating > 5) {
-      return Math.round((rating / 100) * 5 * 10) / 10;
-    }
-    return rating;
-  };
-
-  const reviewsJsonLd =
-    gel.reviews?.map((review, index) => {
-      const ratingValue = normalizeRating(review.rating || gel.rating);
-      return {
-        '@type': 'Review',
-        'author': {
-          '@type': 'Person',
-          'name': review.userType || `러너${index + 1}`,
-        },
-        'reviewRating': {
-          '@type': 'Rating',
-          'ratingValue': Math.min(5, Math.max(1, ratingValue)),
-          'bestRating': 5,
-          'worstRating': 1,
-        },
-        'reviewBody': review.text,
-      };
-    }) || [];
-
-  const normalizedRating = normalizeRating(gel.rating);
+  // NOTE: review·aggregateRating 구조화 데이터는 의도적으로 제외한다.
+  // gel.reviews는 실사용자 후기가 아니라 데이터 기반으로 구성한 러너 유형별 분석이라,
+  // Person 저자의 Review나 집계 별점으로 내보내면 Google의 리뷰 스니펫 정책(실제
+  // 사용자 리뷰 요구) 위반이 되어 수동 조치 리스크가 있다. 신발 상세 페이지는 같은
+  // 이유로 처음부터 제외돼 있었는데 젤만 누락돼 있었다(2026-07-30 정정).
+  // 실사용자 후기 수집 체계를 갖춘 뒤 재도입할 것.
 
   const productJsonLd = {
     '@context': 'https://schema.org',
@@ -186,17 +165,6 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
       'name': gel.brand,
     },
     'category': '에너지 젤',
-    ...(gel.reviews && gel.reviews.length > 0 && {
-      'aggregateRating': {
-        '@type': 'AggregateRating',
-        'ratingValue': Math.min(5, Math.max(1, normalizedRating)),
-        'bestRating': 5,
-        'worstRating': 1,
-        'ratingCount': gel.reviews.length,
-        'reviewCount': gel.reviews.length,
-      },
-    }),
-    ...(reviewsJsonLd.length > 0 && { 'review': reviewsJsonLd }),
     'offers': {
       '@type': 'Offer',
       'priceCurrency': 'KRW',

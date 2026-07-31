@@ -74,7 +74,8 @@ export interface GelPriceAnalysis {
 
 export interface GelReview {
   userType: string;
-  rating: number;
+  /** 출처 있는 분석에만 부여. 데이터 기반 적합성 분석에는 별점을 매기지 않는다. */
+  rating?: number;
   text: string;
 }
 
