@@ -8,6 +8,7 @@ import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/re
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
+import { recordRecommend } from '@/lib/recent';
 
 interface RecommendContentProps {
   totalCount: number;
@@ -88,6 +89,16 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
     { label: '질문 수', value: '9' },
     { label: '결과', value: profile ? `${recommendations.length}개` : '개인화' },
   ];
+
+  // 재방문 "이어보기" 기록 — 추천 결과가 산출된 시점의 조건 요약(발볼·목적·예산)
+  useEffect(() => {
+    if (!profile) return;
+    const footWidthLabel = profileLabels.footWidth[profile.footWidth];
+    const purposeLabel = profileLabels.purpose[profile.purpose];
+    const budgetLabel = profileLabels.budget[profile.budget];
+    const summary = [footWidthLabel, purposeLabel, budgetLabel].filter(Boolean).join(' · ');
+    recordRecommend(summary);
+  }, [profile]);
 
   return (
     <div className="space-y-6">

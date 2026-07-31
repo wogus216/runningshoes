@@ -5,6 +5,7 @@ import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS, IS_PRODUCTION_DEP
 import { AdSlot } from '@/components/ads/ad-slot';
 import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
+import { RecordView } from '@/components/detail/record-view';
 import { HeroSection } from '@/components/detail/hero-section';
 import { OnelinerSummary } from '@/components/detail/oneliner-summary';
 import { AtAGlance } from '@/components/detail/at-a-glance';
@@ -348,6 +349,9 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       {faqJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
+
+      {/* 재방문 "이어보기" 기록 (화면 렌더 없음) */}
+      <RecordView slug={shoe.slug} name={shoe.name} category={shoe.category} />
 
       <div className="space-y-4">
         {/* 브레드크럼 */}

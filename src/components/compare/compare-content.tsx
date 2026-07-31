@@ -10,6 +10,7 @@ import { EnhancedCompareTable } from '@/components/compare/enhanced-compare-tabl
 import { CompareRadarChart } from '@/components/compare/compare-radar-chart';
 import { cn } from '@/lib/utils';
 import { img } from '@/lib/image';
+import { recordCompare } from '@/lib/recent';
 
 // Suspense 래퍼를 두지 않는다. useSearchParams()를 쓰던 시절엔 정적 export에서
 // 페이지가 클라이언트 렌더로 이탈해 스켈레톤만 프리렌더됐다(본문 609자).
@@ -58,6 +59,13 @@ function ComparePageContent() {
       }
     }
   }, [allShoes]);
+
+  // 재방문 "이어보기" 기록 — 정확히 2개를 선택했을 때만 (홈의 이어보기 카드용)
+  useEffect(() => {
+    if (selectedShoes.length === 2) {
+      recordCompare([selectedShoes[0].slug, selectedShoes[1].slug]);
+    }
+  }, [selectedShoes]);
 
   // URL 업데이트
   const updateUrl = useCallback((shoes: CardShoe[]) => {
