@@ -12,7 +12,8 @@
 
 이 섹션의 요구사항은 **모든 태스크에 암묵적으로 포함**된다.
 
-- **브랜치**: `redesign-b`. 착수 전 최신 `main`을 머지한다(현재 2커밋 뒤처짐, 신발 데이터 충돌 예상)
+- **작업 위치**: 워크트리 `/Users/kwonjaehyeon/Programming/sancho/runningshoes/.worktrees/redesign-b` (브랜치 `redesign-b`).
+  main 머지와 기준선 검증은 2026-07-31에 완료했다 — Task 6은 Step 3부터 진행한다
 - **팔레트**: Warm Performance 고정. 새 메인 유채색 추가 금지
   ```
   --paper #F7F4ED · --paper-soft #EFEAE0 · --surface #FFFFFF
@@ -266,7 +267,8 @@ git commit -m "docs(home): 최종 수정 지시 반영 — 중립 SVG 실루엣�
 **Files:**
 - Create: `.omc/design/silhouette-derivation.mjs` (좌표 유도 스크립트, 1회용)
 - Create: `.omc/design/silhouette-preview.html` (승인 조건 6가지 육안 검증용)
-- Create: `src/components/home/hero-silhouette.tsx` (확정 path)
+- Create: `.omc/design/hero-silhouette.tsx` (확정 path — **승인 게이트 전이므로 `src/`에 넣지 않는다.**
+  Task 11에서 `src/components/home/hero-silhouette.tsx`로 옮긴다)
 
 **Interfaces:**
 - Produces: `HeroSilhouette` 컴포넌트
@@ -368,7 +370,7 @@ open .omc/design/silhouette-preview.html
 - [ ] **Step 5: 확정 path를 컴포넌트로 고정**
 
 ```tsx
-// src/components/home/hero-silhouette.tsx
+// .omc/design/hero-silhouette.tsx  (승인 후 src/components/home/ 로 이동)
 // 데일리·쿠션·레이싱 3켤레의 외곽을 구간별로 조합해 유도한 중립 실루엣이다.
 // 특정 모델을 trace하지 않았고, 러그·끈·로고·브랜드 패널은 제거했다.
 // 유도 스크립트: .omc/design/silhouette-derivation.mjs (재실행 불필요, 결과 고정)
@@ -391,7 +393,7 @@ export function HeroSilhouette({ opacity = 1, className }: HeroSilhouetteProps) 
 - [ ] **Step 6: 커밋**
 
 ```bash
-git add .omc/design/silhouette-derivation.mjs .omc/design/silhouette-preview.html src/components/home/hero-silhouette.tsx
+git add .omc/design/silhouette-derivation.mjs .omc/design/silhouette-preview.html .omc/design/hero-silhouette.tsx
 git commit -m "feat(home): 중립 러닝화 실루엣 SVG 확정 — 3켤레 외곽 구간 조합"
 ```
 
@@ -581,7 +583,7 @@ git commit -m "design(home): 상태 12종·변경 전후 비교·레퍼런스 �
 - Modify: `src/app/globals.css`
 - Modify: `tailwind.config.ts`
 
-- [ ] **Step 1: main 머지**
+- [x] **Step 1: main 머지** — *2026-07-31 사전 실행 완료. 워크트리 `.worktrees/redesign-b`에서 충돌 없이 머지됨(예상했던 신발 데이터 충돌 없음).*
 
 ```bash
 git checkout redesign-b
@@ -591,7 +593,7 @@ git merge main
 git status
 ```
 
-- [ ] **Step 2: 머지 후 기준선 확인**
+- [x] **Step 2: 머지 후 기준선 확인** — *완료. validate 에러 0·경고 9 / 테스트 28 passed / build exit 0.*
 
 ```bash
 set -o pipefail
@@ -1289,7 +1291,7 @@ git commit -m "feat(home): 홈 데이터 레이어 — 지표·고민 정의·�
 
 **Files:**
 - Create: `src/components/home/kinetic-hero.tsx`
-- Modify: `src/components/home/hero-silhouette.tsx` (Task 2 산출물에 opacity 애니메이션 훅 추가)
+- Create: `src/components/home/hero-silhouette.tsx` (`.omc/design/hero-silhouette.tsx`를 옮기고 opacity 애니메이션 훅 추가)
 
 **Interfaces:**
 - Consumes: `HeroSilhouette`(Task 2), `track`(Task 7)

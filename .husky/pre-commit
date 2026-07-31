@@ -1,6 +1,8 @@
 # 신발 또는 마라톤 대회 데이터가 변경된 경우 검증 실행
 # (마라톤은 status/개최일 일관성 검사 — 종료된 대회가 '접수중'으로 남는 것을 막는다)
-SHOE_FILES=$(git diff --cached --name-only | grep -E "src/lib/data/(shoes|marathon)/")
+# husky v9는 훅을 `sh -e`로 실행한다. grep은 매칭이 없으면 exit 1을 반환하므로
+# `|| true`가 없으면 데이터를 건드리지 않는 모든 커밋이 여기서 중단된다.
+SHOE_FILES=$(git diff --cached --name-only | grep -E "src/lib/data/(shoes|marathon)/" || true)
 
 if [ -n "$SHOE_FILES" ]; then
   echo "🔍 데이터 변경 감지 — 무결성 검증 실행..."
