@@ -1,0 +1,1450 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>allrunabout 홈 — 고충실도 시안</title>
+</head>
+<body>
+
+<style>
+  /* ============================================================
+     Warm Performance — 승인된 팔레트. 다크 테마 없음(고정 라이트).
+     ============================================================ */
+  :root {
+    --paper:       #F7F4ED;
+    --paper-soft:  #EFEAE0;
+    --surface:     #FFFFFF;
+    --ink:         #17150F;
+    --ink-soft:    #6E6A5E;
+    --line:        #D9D4C8;
+    --signal:      #FF4D00;
+    --signal-soft: #FFE7DB;
+
+    /* 확장 토큰 5개 — 상태 표현과 다크 밴드 보조 톤 */
+    --signal-dark:   #C73800;   /* 시그널 hover·강조 라인 */
+    --positive:      #2F7D5A;   /* 확인된 데이터 상태 */
+    --warning:       #C98112;   /* 추정·갱신 대기 */
+    --dark-soft:     #28241D;   /* 다크 밴드 보조 면 */
+    --light-on-dark: #F7F4ED;   /* 다크 위 텍스트 */
+
+    --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
+            "Segoe UI", "Noto Sans KR", sans-serif;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    --tilt: -9deg;          /* 트랙 사선 각도 — 전진·상승 */
+    --tilt-back: 9deg;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.65;
+    word-break: keep-all;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1, h2, h3, h4, p, ul, ol, dl, figure { margin: 0; }
+  ul { padding: 0; list-style: none; }
+  a { color: inherit; text-decoration: none; }
+  img { display: block; max-width: 100%; }
+  button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+  :focus-visible { outline: 2px solid var(--signal); outline-offset: 3px; }
+
+  /* ---------- 시안 문서용 라벨 (실제 코드에는 없음) ---------- */
+  .spec-label {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 44px 32px 10px;
+    font-family: var(--mono);
+    font-size: 10.5px;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+  .spec-label b { color: var(--signal); font-weight: 500; }
+
+  /* ============================================================
+     홈 본체 — 컨테이너 쿼리로 반응. 데스크톱·모바일 동일 CSS.
+     ============================================================ */
+  .home {
+    container-type: inline-size;
+    background: var(--paper);
+  }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 0 32px; }
+  @container (max-width: 760px) { .wrap { padding: 0 18px; } }
+
+  /* ---------- 01 헤더 ---------- */
+  .hdr {
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+  }
+  .hdr-in {
+    display: flex; align-items: center; gap: 28px;
+    height: 64px;
+  }
+  .logo {
+    font-weight: 800; font-size: 17px; letter-spacing: -0.03em;
+    display: flex; align-items: center; gap: 9px; flex: none;
+  }
+  .logo::before {
+    content: ""; width: 3px; height: 17px; background: var(--signal);
+    transform: skewX(var(--tilt));
+  }
+  .nav { display: flex; gap: 22px; font-size: 14.5px; font-weight: 500; }
+  .nav a { padding: 6px 0; border-bottom: 2px solid transparent; }
+  .nav a:hover { border-bottom-color: var(--signal); }
+  .hdr-right { margin-left: auto; display: flex; align-items: center; gap: 12px; }
+  .search-btn {
+    display: flex; align-items: center; gap: 8px;
+    border: 1px solid var(--line); border-radius: 2px;
+    padding: 8px 13px; font-size: 13px; color: var(--ink-soft);
+    min-height: 38px; background: var(--surface);
+  }
+  .search-btn:hover { border-color: var(--ink); color: var(--ink); }
+  .btn-signal {
+    background: var(--signal); color: #fff; font-weight: 700; font-size: 14px;
+    padding: 10px 17px; border-radius: 2px; min-height: 40px;
+    display: inline-flex; align-items: center; gap: 8px;
+  }
+  .btn-signal:hover { background: var(--signal-dark); }
+  .menu-btn { display: none; }
+  @container (max-width: 760px) {
+    .nav, .search-btn { display: none; }
+    .menu-btn { display: flex; align-items: center; padding: 8px; font-size: 20px; }
+    .hdr-in { height: 56px; gap: 12px; }
+    .btn-signal { font-size: 13px; padding: 9px 13px; }
+  }
+
+  /* ---------- 02 키네틱 히어로 ---------- */
+  .hero { position: relative; overflow: hidden; border-bottom: 1px solid var(--line); }
+  .hero-in {
+    display: grid; grid-template-columns: 0.94fr 1.06fr;
+    gap: 40px; align-items: center;
+    padding: 68px 0 76px;
+    min-height: 68svh;
+  }
+  @container (max-width: 900px) { .hero-in { grid-template-columns: 1fr; gap: 14px; padding: 40px 0 44px; min-height: 0; } }
+
+  .h-kicker {
+    display: flex; align-items: center; gap: 10px;
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.22em;
+    color: var(--ink-soft); margin-bottom: 20px;
+  }
+  .h-kicker::before {
+    content: ""; width: 26px; height: 2px; background: var(--signal);
+    transform: skewY(var(--tilt));
+  }
+  .h-title {
+    font-size: clamp(44px, 7.2cqw, 82px);
+    font-weight: 800; line-height: 0.94; letter-spacing: -0.042em;
+    margin-bottom: 22px; text-wrap: balance;
+  }
+  .h-title em { font-style: normal; color: var(--signal); }
+  .h-sub { color: var(--ink-soft); font-size: 16px; line-height: 1.62; max-width: 33ch; margin-bottom: 28px; }
+  .h-cta {
+    display: inline-flex; align-items: center; gap: 12px;
+    background: var(--signal); color: #fff;
+    font-weight: 700; font-size: 17px; padding: 17px 26px;
+    border-radius: 2px; min-height: 54px; position: relative;
+  }
+  .h-cta:hover { background: var(--signal-dark); }
+  .h-cta .arw { font-family: var(--mono); transition: transform .2s; }
+  .h-cta:hover .arw { transform: translateX(3px); }
+  .h-meta {
+    font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.05em;
+    color: var(--ink-soft); margin-top: 14px;
+  }
+  .h-alt {
+    display: inline-block; margin-top: 18px; font-size: 14px; font-weight: 500;
+    border-bottom: 1px solid var(--signal); padding-bottom: 3px;
+  }
+  @container (max-width: 900px) {
+    .h-sub { font-size: 15px; margin-bottom: 20px; }
+    .h-cta { width: 100%; justify-content: center; font-size: 16px; }
+    .h-alt { margin-top: 14px; }
+  }
+
+  /* --- 히어로 비주얼 --- */
+  .viz { position: relative; aspect-ratio: 560/400; width: 100%; }
+  /* 모바일: 비주얼을 키우고 CTA와의 간격을 좁혀, 첫 화면에서 러닝화 단서가 빨리 보이게 한다.
+     동시에 모션 요소는 데스크톱의 절반 이하로 덜어낸다(§15). */
+  @container (max-width: 900px) {
+    .viz { width: 106%; margin-left: -2%; margin-top: -10px; aspect-ratio: 560/280; }
+    .viz .startline, .viz .startline-tag, .viz .rail-tag,
+    .viz .lab.drop, .viz .lab.name, .viz .streak { display: none; }
+    .viz .lab.keep { left: 5% !important; font-size: 10px; }
+    /* 실루엣 15% 확대 — 좁은 화면에서 러닝화 단서가 먼저 읽히도록.
+       래퍼에 걸어야 실루엣 전진 애니메이션(transform)과 충돌하지 않는다.
+       모바일 세부 조정은 별도 모바일 시안에서 확정한다. */
+    .fig-wrap { transform: scale(1.15); transform-origin: 58% 62%; }
+  }
+
+  /* 트랙 레인 — 배경 사선. 아래로 갈수록 진해져 원근을 만든다 */
+  .track { position: absolute; inset: -30% -25%; pointer-events: none; }
+  .lane { position: absolute; left: 0; right: 0; height: 1px; background: var(--line); transform: rotate(var(--tilt)); }
+  .lane:nth-child(1) { top: 30%; opacity: .2; }
+  .lane:nth-child(2) { top: 41%; opacity: .28; }
+  .lane:nth-child(3) { top: 53%; opacity: .36; }
+  .lane:nth-child(4) { top: 66%; opacity: .46; }
+  .lane:nth-child(5) { top: 80%; opacity: .58; }
+
+  /* 스타트 라인 — 배경 요소이므로 얇고 조용하게 */
+  .startline {
+    position: absolute; left: 2%; top: 12%; bottom: 12%; width: 1.5px;
+    background: var(--ink-soft); transform: rotate(var(--tilt)); transform-origin: center;
+    opacity: 0;
+  }
+  .startline-tag {
+    position: absolute; left: 2%; top: 5%;
+    font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.2em; color: var(--ink-soft);
+    opacity: 0;
+  }
+
+  /* 기울어진 데이터 좌표계 — 라벨·기준선이 함께 산다 */
+  .rig { position: absolute; inset: 0; transform: rotate(var(--tilt)); }
+
+  .rail {
+    position: absolute; left: -6%; right: -6%; height: 1px;
+    background: color-mix(in srgb, var(--ink) 34%, transparent);
+    transform: scaleX(0); transform-origin: left center;
+  }
+  .rail::after {
+    content: ""; position: absolute; right: 0; top: -2px;
+    width: 5px; height: 5px; background: var(--signal);
+    transform: skewX(var(--tilt));
+  }
+  .rail-tag {
+    position: absolute; left: -4%;
+    font-family: var(--mono); font-size: 8.5px; letter-spacing: 0.2em;
+    color: var(--ink-soft); opacity: 0;
+    transform: rotate(var(--tilt-back)) translateY(-50%);
+  }
+
+  .lab {
+    position: absolute;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.04em;
+    white-space: nowrap; padding: 3px 8px;
+    background: var(--surface); border: 1px solid var(--line);
+    color: var(--ink); border-radius: 2px; opacity: 0;
+  }
+  .lab.name { border-color: transparent; background: none; color: var(--ink-soft); padding-left: 0; }
+  .lab.keep { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+
+  /* 속도선 — 실루엣이 지나온 자국. 트랙과 같은 각도로 흐른다 */
+  .streak {
+    position: absolute; height: 2px; background: var(--signal);
+    transform-origin: right center;
+    transform: rotate(var(--tilt)) scaleX(0);
+  }
+
+  .viz svg.fig { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+
+  /* 러닝화 와이어프레임 — 중립 SVG 실루엣(3켤레 외곽 구간 조합, Task 2 확정).
+     제품 사진이 아니라 선으로만 존재하는 도면이다. viewBox·배치는 .fig 와 동일해
+     발 윤곽·계측 틱과 좌표가 정확히 맞는다. 신발 실폭 x 205~475 (비율 2.25).
+     두 겹으로 나눈 이유: 고스트는 첫 프레임부터 0.12로 남아 있어야 하고(§4.6),
+     샤프는 왼쪽→오른쪽 클립 와이프로 뒤늦게 선명해져야 한다. 한 겹으로는 둘이 충돌한다. */
+  .fig-wrap { position: absolute; inset: 0; }
+  .viz svg.sil { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
+  .sil-ghost { opacity: .12; }          /* 첫 1초 인지 — 모션과 무관하게 항상 보인다 */
+  .sil-sharp { opacity: 0; }
+
+  /* --- 모션: .run 이 붙었을 때만 재생 --- */
+  .viz .lab.data  { animation: labRun 4.5s cubic-bezier(.2,.7,.25,1) both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .lab.drop  { animation: labOut 4.5s cubic-bezier(.2,.7,.25,1) both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .lab.name  { animation: nameFade 4.5s ease both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .rail      { animation: railRun 4.5s cubic-bezier(.25,.75,.3,1) both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .rail-tag  { animation: fadeAt 4.5s ease both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  .viz .startline { animation: startIn 4.5s ease both; animation-play-state: paused; }
+  .viz .startline-tag { animation: startIn 4.5s ease both; animation-play-state: paused; }
+  .viz .streak    { animation: streakRun 4.5s cubic-bezier(.1,.8,.2,1) both; animation-delay: var(--d,0s); animation-play-state: paused; }
+  /* 실루엣: 두 겹 모두 마지막에 전진(shoeAdvance). 샤프만 와이프·선명화 */
+  .viz .sil-ghost { animation: shoeAdvance 4.5s cubic-bezier(.3,.6,.2,1) both; animation-play-state: paused; }
+  .viz .sil-sharp {
+    animation: silReveal 4.5s ease both,
+               silWipe   4.5s cubic-bezier(.35,.1,.2,1) both,
+               shoeAdvance 4.5s cubic-bezier(.3,.6,.2,1) both;
+    animation-play-state: paused;
+  }
+  .viz .fig-foot  { animation: drawFoot 4.5s cubic-bezier(.4,.1,.2,1) both; animation-play-state: paused; }
+  .viz .fig-tick  { animation: tickIn 4.5s ease both; animation-play-state: paused; }
+  .viz .fig-fit   { animation: fitIn 4.5s ease both; animation-play-state: paused; }
+  .run .viz *     { animation-play-state: running !important; }
+
+  /* CTA 화살표 — 마지막 장면에서 한 번 반응한다. .viz 밖이라 따로 재생시킨다 */
+  .h-cta .arw { animation: ctaArrow 4.5s cubic-bezier(.3,.7,.3,1) both; animation-play-state: paused; }
+  .run .h-cta .arw { animation-play-state: running; }
+  .h-cta:hover .arw { animation: none; transform: translateX(3px); }
+
+  @keyframes labRun {
+    0%   { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    13%  { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    40%  { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); }
+    100% { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); }
+  }
+  @keyframes labOut {
+    0%   { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    13%  { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+    40%  { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); }
+    60%  { opacity: 1; transform: translate(0,0) rotate(var(--tilt-back)); }
+    72%  { opacity: 0; transform: translate(26px,-4px) rotate(var(--tilt-back)); }
+    100% { opacity: 0; transform: translate(26px,-4px) rotate(var(--tilt-back)); }
+  }
+  @keyframes nameFade {
+    0% { opacity: 0; transform: rotate(var(--tilt-back)) translateX(-14px); }
+    13% { opacity: 1; transform: rotate(var(--tilt-back)) translateX(0); }
+    36% { opacity: 1; }
+    50% { opacity: 0; transform: rotate(var(--tilt-back)) translateX(18px); }
+    100% { opacity: 0; }
+  }
+  @keyframes railRun { 0%,14% { transform: scaleX(0); } 40% { transform: scaleX(1); } 100% { transform: scaleX(1); } }
+  @keyframes fadeAt  { 0%,22% { opacity: 0; } 42% { opacity: 1; } 100% { opacity: 1; } }
+  @keyframes startIn { 0%,8% { opacity: 0; } 24% { opacity: 1; } 100% { opacity: 1; } }
+  @keyframes streakRun {
+    0%,40% { transform: rotate(var(--tilt)) scaleX(0); opacity: 0; }
+    52%    { transform: rotate(var(--tilt)) scaleX(1); opacity: .9; }
+    74%    { transform: rotate(var(--tilt)) scaleX(1); opacity: .34; }
+    100%   { transform: rotate(var(--tilt)) scaleX(1); opacity: .3; }
+  }
+  /* 와이어프레임이 왼쪽에서 오른쪽으로 드러난다 — 전진 방향과 같은 방향 */
+  @keyframes silWipe {
+    0%, 38% { clip-path: inset(0 100% 0 0); }
+    64%     { clip-path: inset(0 0 0 0); }
+    100%    { clip-path: inset(0 0 0 0); }
+  }
+  /* 첫 프레임 .12 → 후반 1.0. 갑자기 나타나지 않고 서서히 선명해진다 */
+  @keyframes silReveal {
+    0%   { opacity: .12; }
+    38%  { opacity: .12; }
+    64%  { opacity: 1; }
+    100% { opacity: 1; }
+  }
+  /* 마지막 장면 — 신발이 4~8px 전진하며 마무리 */
+  @keyframes shoeAdvance {
+    0%, 80% { transform: translateX(0); }
+    92%     { transform: translateX(7px); }
+    100%    { transform: translateX(6px); }
+  }
+  /* CTA 화살표가 신발 전진 직후 한 번 반응한다 */
+  @keyframes ctaArrow {
+    0%, 84% { transform: translateX(0); }
+    90%     { transform: translateX(5px); }
+    100%    { transform: translateX(0); }
+  }
+  @keyframes drawFoot {
+    0%,60% { stroke-dashoffset: 1400; opacity: 0; }
+    63%    { opacity: 1; }
+    82%    { stroke-dashoffset: 0; opacity: 1; }
+    100%   { stroke-dashoffset: 0; opacity: 1; }
+  }
+  @keyframes tickIn { 0%,66% { opacity: 0; } 84%,100% { opacity: 1; } }
+  /* 적합 영역은 CTA보다 강하면 안 된다 — 최대 .32, 최종 정지 .19 */
+  @keyframes fitIn  { 0%,78% { opacity: 0; } 88% { opacity: .32; } 100% { opacity: .19; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .viz * { animation: none !important; }
+    .viz .lab.data, .viz .lab.keep { opacity: 1; transform: rotate(var(--tilt-back)); }
+    .viz .lab.name, .viz .lab.drop { opacity: 0; }
+    .viz .rail { transform: scaleX(1); }
+    .viz .rail-tag, .viz .startline, .viz .startline-tag, .viz .fig-tick { opacity: 1; }
+    .viz .streak { transform: rotate(var(--tilt)) scaleX(1); opacity: .3; }
+    .viz .sil-sharp { clip-path: inset(0 0 0 0); opacity: 1; }
+    .viz .sil-ghost { opacity: 0; }   /* 최종 화면에서는 샤프만 남는다 */
+    .viz .fig-foot { stroke-dashoffset: 0; opacity: 1; }
+    .viz .fig-fit { opacity: .19; }
+    .h-cta .arw { animation: none; }
+  }
+
+  /* ---------- 공통 섹션 ---------- */
+  .sec { padding: 68px 0; border-bottom: 1px solid var(--line); }
+  .sec.tight { padding: 52px 0; }
+  .sec.alt { background: var(--paper-soft); }
+  @container (max-width: 760px) { .sec { padding: 52px 0; } .sec.tight { padding: 44px 0; } }
+
+  .sec-top { margin-bottom: 32px; }
+  .eyebrow {
+    display: flex; align-items: center; gap: 9px;
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.2em;
+    color: var(--ink-soft); margin-bottom: 14px;
+  }
+  .eyebrow::before { content: ""; width: 18px; height: 2px; background: var(--signal); transform: skewY(var(--tilt)); }
+  .sec-h {
+    font-size: clamp(26px, 3.6cqw, 40px); font-weight: 800;
+    letter-spacing: -0.032em; line-height: 1.12; text-wrap: balance;
+  }
+  .sec-p { color: var(--ink-soft); font-size: 15.5px; margin-top: 12px; max-width: 56ch; }
+
+  /* ---------- 03 고민별 탐색 — 비대칭 차등 레이아웃 ----------
+     균등 6칸을 쓰지 않는다. 우선순위(처음 → 발볼 → 장거리 → 기록 → 무릎 → 다목적)가
+     면적·활자·썸네일 유무로 읽혀야 한다. 주요 1 + 중간 2 + 행 3.
+       ┌───────────────┬───────┐
+       │ 01 주요        │ 02 중간│
+       │               ├───────┤
+       │               │ 03 중간│
+       ├───────┬───────┴───────┤
+       │ 04 행  │ 05 행  │ 06 행 │
+       └───────┴───────┴───────┘ */
+  .prob {
+    display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas:
+      "lead lead lead lead mid1 mid1"
+      "lead lead lead lead mid2 mid2"
+      "row1 row1 row2 row2 row3 row3";
+  }
+  @container (max-width: 980px) {
+    .prob {
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-areas:
+        "lead lead lead mid1"
+        "lead lead lead mid2"
+        "row1 row1 row2 row2"
+        "row3 row3 row3 row3";
+    }
+  }
+  @container (max-width: 640px) {
+    .prob { grid-template-columns: 1fr;
+      grid-template-areas: "lead" "mid1" "mid2" "row1" "row2" "row3"; }
+  }
+  .prob-i {
+    background: var(--surface); position: relative; display: flex; flex-direction: column;
+    overflow: hidden; transition: background .18s; padding: 24px 22px 20px;
+  }
+  .prob-i:hover { background: var(--signal-soft); }
+  .prob-i::after {
+    content: ""; position: absolute; left: 0; bottom: 0; height: 3px; width: 100%;
+    background: var(--signal); transform: scaleX(0) skewX(var(--tilt-back)); transform-origin: left;
+    transition: transform .28s cubic-bezier(.2,.8,.3,1);
+  }
+  .prob-i:hover::after { transform: scaleX(1) skewX(var(--tilt-back)); }
+  .prob-n {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.16em;
+    color: var(--signal); margin-bottom: 10px;
+  }
+  .prob-q { font-weight: 700; letter-spacing: -0.02em; line-height: 1.32; margin-bottom: 9px; }
+  .prob-c { color: var(--ink-soft); line-height: 1.58; }
+  .prob-f {
+    display: flex; align-items: center; justify-content: space-between; gap: 12px;
+    margin-top: auto; padding-top: 13px; border-top: 1px solid var(--line);
+    font-family: var(--mono); color: var(--ink-soft);
+  }
+  .prob-f b { font-weight: 500; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .prob-i:hover .prob-f { color: var(--ink); }
+
+  /* 주요 패널 — 배번호·질문·판단 기준·실제 썸네일·결과 수 전부 크게 */
+  .prob-i.lead { grid-area: lead; padding: 34px 32px 28px; }
+  .prob-i.lead .prob-n { font-size: 12.5px; letter-spacing: 0.2em; margin-bottom: 16px; }
+  .prob-i.lead .prob-q { font-size: clamp(26px, 2.9cqw, 34px); line-height: 1.16; letter-spacing: -0.032em; margin-bottom: 14px; }
+  .prob-i.lead .prob-c { font-size: 15px; max-width: 40ch; }
+  .prob-keys { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 16px; }
+  .prob-keys span {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+    border: 1px solid var(--line); padding: 4px 9px; color: var(--ink-soft); background: var(--paper);
+  }
+  .prob-th { display: flex; align-items: flex-end; gap: 26px; margin-top: auto; padding-top: 20px; min-height: 128px; }
+  .pth { position: relative; z-index: 1; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .prob-th img { max-height: 100px; width: auto; transition: transform .2s; }
+  .pth:hover img { transform: translateX(3px) rotate(-2deg); }
+  .pth span {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; color: var(--ink-soft);
+    border-bottom: 1px solid transparent;
+  }
+  .pth:hover span { color: var(--signal); border-bottom-color: var(--signal); }
+  /* stretched-link — 패널 어디를 눌러도 /best/beginner 로 간다 */
+  .prob-i.lead { position: relative; }
+  .prob-go.stretch::after { content: ""; position: absolute; inset: 0; }
+  .prob-i.lead .prob-f { margin-top: 22px; padding-top: 16px; border-top-width: 2px; border-top-color: var(--ink); font-size: 12px; }
+  .prob-i.lead .prob-f b { font-size: 22px; letter-spacing: -0.02em; }
+  .prob-go { font-family: var(--mono); font-size: 12px; color: var(--signal); }
+
+  /* 중간 패널 */
+  .prob-i.mid1 { grid-area: mid1; }
+  .prob-i.mid2 { grid-area: mid2; }
+  .prob-i.mid1 .prob-q, .prob-i.mid2 .prob-q { font-size: 19px; }
+  .prob-i.mid1 .prob-c, .prob-i.mid2 .prob-c { font-size: 13.5px; min-height: 4.5em; }
+  .prob-i.mid1 .prob-f, .prob-i.mid2 .prob-f { font-size: 11px; }
+  .prob-i.mid1 .prob-f b, .prob-i.mid2 .prob-f b { font-size: 14px; }
+
+  /* 행 패널 — 낮고 조용하게. 배번호를 왼쪽에 붙여 목록처럼 읽힌다 */
+  .prob-i.row1 { grid-area: row1; }
+  .prob-i.row2 { grid-area: row2; }
+  .prob-i.row3 { grid-area: row3; }
+  .prob-i.row1, .prob-i.row2, .prob-i.row3 {
+    display: grid; grid-template-columns: 26px 1fr; gap: 0 12px; align-items: start;
+    padding: 18px 20px 16px;
+  }
+  .prob-i.row1 .prob-n, .prob-i.row2 .prob-n, .prob-i.row3 .prob-n { grid-row: 1 / span 3; margin: 0; padding-top: 2px; }
+  .prob-i.row1 .prob-q, .prob-i.row2 .prob-q, .prob-i.row3 .prob-q { font-size: 15.5px; margin-bottom: 6px; }
+  .prob-i.row1 .prob-c, .prob-i.row2 .prob-c, .prob-i.row3 .prob-c { font-size: 12.5px; min-height: 4.7em; }
+  .prob-i.row1 .prob-f, .prob-i.row2 .prob-f, .prob-i.row3 .prob-f { font-size: 10.5px; padding-top: 11px; margin-top: 12px; }
+  .prob-i.row1 .prob-f b, .prob-i.row2 .prob-f b, .prob-i.row3 .prob-f b { font-size: 12.5px; }
+  @container (max-width: 640px) {
+    .prob-i.row1 .prob-c, .prob-i.row2 .prob-c, .prob-i.row3 .prob-c,
+    .prob-i.mid1 .prob-c, .prob-i.mid2 .prob-c { min-height: 0; }
+  }
+
+  .disclaim {
+    margin-top: 18px; font-size: 12.5px; color: var(--ink-soft);
+    padding-left: 13px; border-left: 2px solid var(--line);
+  }
+
+  /* ---------- 04 추천 작동 방식 ---------- */
+  .steps { display: grid; grid-template-columns: repeat(3,1fr); gap: 26px; margin-bottom: 34px; }
+  @container (max-width: 760px) { .steps { grid-template-columns: 1fr; gap: 18px; } }
+  .step { padding-top: 18px; border-top: 2px solid var(--ink); }
+  .step-n { font-family: var(--mono); font-size: 11px; color: var(--signal); letter-spacing: 0.14em; margin-bottom: 9px; }
+  .step-t { font-size: 15.5px; font-weight: 650; line-height: 1.5; }
+
+  .roles { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  @container (max-width: 760px) { .roles { grid-template-columns: 1fr; } }
+  .role { background: var(--surface); padding: 22px 20px; }
+  .role-b {
+    display: inline-block; font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
+    padding: 3px 8px; border: 1px solid var(--line); color: var(--ink-soft); margin-bottom: 12px;
+  }
+  .role.lead .role-b { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .role-t { font-size: 16px; font-weight: 700; margin-bottom: 7px; letter-spacing: -0.015em; }
+  .role-d { font-size: 13.5px; color: var(--ink-soft); line-height: 1.6; }
+
+  .fits { margin-top: 24px; border: 1px solid var(--line); background: var(--surface); padding: 22px 24px; }
+  .fits-h { font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; color: var(--ink-soft); margin-bottom: 16px; }
+  .fit-row { display: grid; grid-template-columns: 110px 1fr 74px; gap: 14px; align-items: center; padding: 5px 0; }
+  @container (max-width: 640px) { .fit-row { grid-template-columns: 88px 1fr 62px; gap: 10px; } }
+  .fit-k { font-size: 13.5px; font-weight: 600; }
+  .fit-bar { height: 7px; background: var(--paper-soft); position: relative; }
+  .fit-bar i { position: absolute; inset: 0 auto 0 0; background: var(--signal); display: block; }
+  .fit-bar.mid i { background: var(--ink-soft); }
+  .fit-v { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); text-align: right; }
+
+  /* ---------- 05 신뢰 지표 ---------- */
+  .trust { display: grid; grid-template-columns: 1.15fr 1fr; gap: 52px; align-items: start; }
+  @container (max-width: 860px) { .trust { grid-template-columns: 1fr; gap: 30px; } }
+  .metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+  .met { border-top: 2px solid var(--ink); padding-top: 14px; }
+  .met-v {
+    font-family: var(--mono); font-size: clamp(28px,4cqw,42px); font-weight: 500;
+    letter-spacing: -0.03em; line-height: 1; font-variant-numeric: tabular-nums;
+  }
+  .met-v.sig { color: var(--signal); }
+  .met-l { font-size: 12.5px; color: var(--ink-soft); margin-top: 9px; }
+  .trust-q { font-size: 17px; line-height: 1.65; font-weight: 500; letter-spacing: -0.015em; }
+  .badges { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 22px; }
+  .badge {
+    font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
+    border: 1px solid var(--line); padding: 4px 9px; color: var(--ink-soft); background: var(--surface);
+  }
+  .badge.on { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  /* 상태 색은 보조 신호일 뿐, 텍스트가 항상 함께 있다 (색만으로 구분하지 않는다) */
+  .badge.ok  { border-color: var(--positive); color: var(--positive); }
+  .badge.est { border-color: var(--warning);  color: var(--warning); }
+  .trust-link { display: inline-block; margin-top: 24px; font-size: 14px; font-weight: 600; border-bottom: 1px solid var(--signal); padding-bottom: 3px; }
+
+  /* ---------- 06 필터 + 인덱스 ---------- */
+  .chips { display: flex; flex-wrap: wrap; gap: 7px; margin-bottom: 8px; }
+  .chip {
+    font-size: 13px; font-weight: 500; padding: 8px 14px; min-height: 38px;
+    border: 1px solid var(--line); background: var(--surface); border-radius: 2px;
+    display: inline-flex; align-items: center; gap: 7px;
+  }
+  .chip:hover { border-color: var(--ink); }
+  .chip[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .chip .c-n { font-family: var(--mono); font-size: 10.5px; opacity: .62; }
+  .chip.wide[aria-pressed="true"] { background: var(--signal); border-color: var(--signal); }
+  .result-line {
+    display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+    padding: 16px 0 12px; border-bottom: 2px solid var(--ink); flex-wrap: wrap;
+  }
+  .result-n { font-size: 15px; font-weight: 600; }
+  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 17px; }
+  .sort { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
+
+  .idx { border-bottom: 1px solid var(--line); }
+  .row {
+    display: grid; grid-template-columns: 62px 1.6fr 1.2fr 72px 62px 92px 104px;
+    gap: 16px; align-items: center; padding: 9px 0;
+    border-bottom: 1px solid var(--line); position: relative;
+  }
+  .row:hover { background: var(--surface); }
+  .row-th { width: 62px; height: 40px; display: flex; align-items: center; justify-content: center; }
+  .row-th img { max-height: 40px; width: auto; transition: transform .2s; }
+  .row:hover .row-th img { transform: translateX(3px) rotate(-2deg); }
+  .row-b { display: block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; color: var(--ink-soft); }
+  .row-n { font-size: 15.5px; font-weight: 650; letter-spacing: -0.018em; line-height: 1.3; }
+  .row-d { font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
+  .row-u { font-size: 12px; color: var(--ink-soft); }
+  .row-w, .row-p { font-family: var(--mono); font-size: 12.5px; font-variant-numeric: tabular-nums; text-align: right; }
+  .row-p { font-weight: 600; }
+  .row-s { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em; color: var(--ink-soft); border: 1px solid var(--line); padding: 3px 6px; justify-self: end; white-space: nowrap; }
+  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .idx-head {
+    display: grid; grid-template-columns: 62px 1.6fr 1.2fr 72px 62px 92px 104px; gap: 16px;
+    font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; color: var(--ink-soft);
+    padding: 10px 0; text-transform: uppercase;
+  }
+  .idx-head span:nth-child(5), .idx-head span:nth-child(6) { text-align: right; }
+  .idx-head span:nth-child(7) { text-align: right; }
+  @container (max-width: 900px) {
+    .idx-head { display: none; }
+    .row { grid-template-columns: 54px 1fr auto; grid-template-areas: "th name price" "th meta stat"; gap: 6px 13px; padding: 14px 0; }
+    .row-th { grid-area: th; width: 54px; }
+    .row-n  { grid-area: name; }
+    .row-b, .row-d, .row-u { display: none; }
+    .row-w  { grid-area: meta; text-align: left; font-size: 11.5px; color: var(--ink-soft); }
+    .row-p  { grid-area: price; }
+    .row-s  { grid-area: stat; }
+  }
+  /* 썸네일이 아직 없는 신발 — 중립 실루엣 마크로 자리를 지킨다 */
+  .row-mark { width: 44px; height: 22px; color: var(--line); }
+  .row:hover .row-mark { color: var(--ink-soft); }
+
+  /* 점진 확장 버튼 */
+  .expand { padding: 22px 0 4px; text-align: center; }
+  .expand-b {
+    display: inline-flex; align-items: center; gap: 10px;
+    border: 1px solid var(--ink); background: var(--surface);
+    padding: 13px 26px; min-height: 46px; border-radius: 2px;
+    font-size: 14.5px; font-weight: 650; letter-spacing: -0.01em;
+  }
+  .expand-b:hover { background: var(--ink); color: var(--paper); }
+  .expand-b .cnt { font-family: var(--mono); font-size: 11px; opacity: .6; font-weight: 400; font-variant-numeric: tabular-nums; }
+
+  details.more { margin-top: 0; }
+  details.more > summary {
+    list-style: none; cursor: pointer; text-align: center;
+    padding: 16px 0; font-size: 14px; font-weight: 650;
+    border-bottom: 1px solid var(--line); color: var(--ink);
+  }
+  details.more > summary::-webkit-details-marker { display: none; }
+  details.more > summary:hover { color: var(--signal); }
+  details.more > summary .cnt { font-family: var(--mono); color: var(--ink-soft); font-weight: 400; }
+  details.more[open] > summary { color: var(--ink-soft); }
+
+  /* ---------- 07 광고 ---------- */
+  .ad { padding: 40px 0; }
+  .ad-l { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.2em; color: var(--ink-soft); text-align: center; margin-bottom: 8px; }
+  .ad-box {
+    min-height: 280px; border: 1px dashed var(--line); display: flex;
+    align-items: center; justify-content: center;
+    font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--ink-soft);
+  }
+  @container (max-width: 760px) { .ad-box { min-height: 250px; } }
+
+  /* ---------- 08 에디토리얼 ---------- */
+  .ed { display: grid; grid-template-columns: 1.12fr 0.88fr; gap: 44px; align-items: start; }
+  @container (max-width: 860px) { .ed { grid-template-columns: 1fr; gap: 28px; } }
+  .ed-lead img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border: 1px solid var(--line); }
+  .ed-meta { display: flex; gap: 12px; font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); margin: 16px 0 10px; letter-spacing: 0.08em; }
+  .ed-meta .cat { color: var(--signal); }
+  .ed-t { font-size: clamp(21px,2.6cqw,27px); font-weight: 750; letter-spacing: -0.028em; line-height: 1.28; }
+  .ed-x { font-size: 14px; color: var(--ink-soft); margin-top: 10px; line-height: 1.6; }
+  .ed-by { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); margin-top: 14px; letter-spacing: 0.06em; }
+  .ed-list { border-top: 2px solid var(--ink); }
+  .ed-i { display: block; padding: 18px 0; border-bottom: 1px solid var(--line); }
+  .ed-i:hover .ed-it { color: var(--signal); }
+  .ed-im { display: flex; gap: 11px; font-family: var(--mono); font-size: 10px; color: var(--ink-soft); margin-bottom: 6px; letter-spacing: 0.08em; }
+  .ed-it { font-size: 15px; font-weight: 620; line-height: 1.42; letter-spacing: -0.018em; }
+  .ed-i.more-link {
+    display: flex; align-items: center; justify-content: space-between;
+    font-size: 14px; font-weight: 650; border-bottom: 0; padding-top: 18px;
+  }
+  .ed-i.more-link:hover { color: var(--signal); }
+  .ed-go { font-family: var(--mono); color: var(--signal); }
+
+  /* ---------- 10 최종 CTA (페이지에서 유일한 다크 영역) ----------
+     --ink 바탕에 --dark-soft 를 보조 면으로 겹쳐 한 덩어리 검정으로 보이지 않게 한다. */
+  .final { background: var(--ink); color: var(--light-on-dark); padding: 120px 0 136px; position: relative; overflow: hidden; }
+  .final::before {
+    content: ""; position: absolute; right: -12%; top: -30%; width: 62%; bottom: -30%;
+    background: var(--dark-soft); transform: rotate(var(--tilt));
+  }
+  .final .lane { background: rgba(247,244,237,.09); }
+  .final-in { position: relative; display: grid; grid-template-columns: 1.2fr auto; gap: 40px; align-items: end; }
+  @container (max-width: 860px) { .final-in { grid-template-columns: 1fr; gap: 26px; } .final { padding: 54px 0; } }
+  .final-h { font-size: clamp(28px,4.2cqw,48px); font-weight: 800; line-height: 1.08; letter-spacing: -0.036em; text-wrap: balance; }
+  .final-s { color: rgba(247,244,237,.62); font-size: 14.5px; margin-top: 16px; font-family: var(--mono); letter-spacing: 0.04em; }
+  .final-a { display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+  .final-alt { font-size: 14px; border-bottom: 1px solid rgba(247,244,237,.4); padding-bottom: 3px; }
+  .wrap:has(> .final-routes) { position: relative; margin-top: 62px; }
+  .final-routes {
+    display: grid; grid-template-columns: repeat(3, 1fr);
+    gap: 1px; background: rgba(247,244,237,.16);
+    border-top: 1px solid rgba(247,244,237,.16); border-bottom: 1px solid rgba(247,244,237,.16);
+  }
+  @container (max-width: 760px) { .final-routes { grid-template-columns: 1fr; } .wrap:has(> .final-routes) { margin-top: 36px; } }
+  .fr {
+    background: var(--ink); padding: 24px 26px 22px;
+    display: grid; grid-template-columns: 1fr auto; gap: 4px 12px; align-items: baseline;
+    transition: background .18s;
+  }
+  .fr:hover { background: var(--dark-soft); }
+  .fr-n { grid-column: 1 / -1; font-family: var(--mono); font-size: 10px; letter-spacing: 0.18em; color: var(--signal); margin-bottom: 8px; }
+  .fr-t { font-size: 18px; font-weight: 700; letter-spacing: -0.022em; }
+  .fr-a { font-family: var(--mono); color: rgba(247,244,237,.5); }
+  .fr:hover .fr-a { color: var(--signal); }
+  .fr-d { grid-column: 1 / -1; font-size: 13px; color: rgba(247,244,237,.55); margin-top: 6px; line-height: 1.55; }
+
+  .final-foot {
+    position: relative; display: grid; grid-template-columns: repeat(4, 1fr);
+    gap: 24px; margin-top: 44px; padding-top: 0;
+  }
+  @container (max-width: 760px) { .final-foot { grid-template-columns: repeat(2,1fr); gap: 20px; margin-top: 38px; } }
+  .fs-v {
+    font-family: var(--mono); font-size: 26px; font-weight: 500; line-height: 1;
+    letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
+  }
+  .fs-l { font-size: 12.5px; color: rgba(247,244,237,.58); margin-top: 8px; }
+  @container (max-width: 860px) { .final-a { width: 100%; } .final-a .btn-signal { width: 100%; justify-content: center; padding: 16px; font-size: 16px; } }
+
+  /* ---------- 10 푸터 ---------- */
+  .ft { padding: 44px 0 56px; font-size: 13px; color: var(--ink-soft); }
+  .ft-in { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+  .ft-nav { display: flex; gap: 18px; flex-wrap: wrap; }
+  .ft-c { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.06em; }
+
+  /* ---------- 재방문자 이어보기 ---------- */
+  .resume-top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
+  .resume-h { font-size: clamp(21px,2.6cqw,28px); font-weight: 780; letter-spacing: -0.028em; }
+  .resume-clear { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 2px; }
+  .resume-clear:hover { color: var(--signal); border-color: var(--signal); }
+  .resume { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
+  @container (max-width: 760px) { .resume { grid-template-columns: 1fr; } }
+  .res-i { background: var(--surface); padding: 18px 20px; display: flex; gap: 14px; align-items: center; }
+  .res-i:hover { background: var(--signal-soft); }
+  .res-th { width: 56px; flex: none; display: flex; align-items: center; justify-content: center; }
+  .res-th img { max-height: 40px; width: auto; }
+  .res-th.dbl { gap: 2px; }
+  .res-th.dbl img { max-height: 30px; }
+  .res-k { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; color: var(--ink-soft); margin-bottom: 5px; }
+  .res-v { font-size: 14.5px; font-weight: 650; letter-spacing: -0.018em; line-height: 1.35; }
+  .res-x { font-size: 12px; color: var(--ink-soft); margin-top: 3px; }
+
+</style>
+
+
+<div class="spec-label">데스크톱 &nbsp;·&nbsp; <b>본문 1200px</b> &nbsp;·&nbsp; Warm Performance</div>
+
+<div class="home" id="src">
+
+  <!-- 01 헤더 -->
+  <header class="hdr">
+    <div class="wrap hdr-in">
+      <a class="logo" href="/">allrunabout</a>
+      <button class="menu-btn" aria-label="메뉴 열기">☰</button>
+      <nav class="nav">
+        <a href="/">신발</a><a href="/compare">비교</a><a href="/recommend">맞춤 추천</a>
+        <a href="/blog">블로그</a><a href="/marathon">마라톤</a>
+      </nav>
+      <div class="hdr-right">
+        <button class="search-btn"><span>⌕</span> 신발 검색</button>
+        <a class="btn-signal" href="/recommend">맞춤 추천</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 02 키네틱 히어로 -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <p class="h-kicker">KOREAN RUNNER FIT INDEX</p>
+        <h1 class="h-title">감으로 고르지<br><em>않는다.</em></h1>
+        <p class="h-sub">발볼, 국내 출시, 러닝 목적까지.<br>해외 평가를 한국 러너의 기준으로 다시 봅니다.</p>
+        <a class="h-cta" href="/recommend">약 1분 · 9문항 맞춤 추천 <span class="arw">→</span></a>
+        <p class="h-meta">러닝 경험 · 주간 거리 · 발볼 · 러닝 목적 · 예산</p>
+        <br><a class="h-alt" href="#problem">고민별로 찾아보기</a>
+      </div>
+
+      <div class="viz" aria-hidden="true">
+        <div class="track">
+          <span class="lane"></span><span class="lane"></span><span class="lane"></span>
+          <span class="lane"></span><span class="lane"></span>
+        </div>
+
+        <span class="startline"></span>
+        <span class="startline-tag">START</span>
+
+        <!-- 속도선 — 실루엣 힐 뒤쪽에서 왼쪽으로 뻗는다 -->
+        <span class="streak" style="right:64%; top:59%; width:24%; --d:.02s"></span>
+        <span class="streak" style="right:69%; top:66%; width:17%; --d:.09s"></span>
+        <span class="streak" style="right:63%; top:73%; width:29%; --d:.16s"></span>
+
+        <!-- 기울어진 데이터 좌표계 -->
+        <div class="rig">
+          <span class="rail" style="top:26%; --d:.04s"></span>
+          <span class="rail" style="top:45%; --d:.11s"></span>
+          <span class="rail" style="top:64%; --d:.18s"></span>
+          <span class="rail" style="top:83%; --d:.25s"></span>
+
+          <span class="rail-tag" style="top:24%; --d:.04s">WEIGHT</span>
+          <span class="rail-tag" style="top:43%; --d:.11s">DROP</span>
+          <span class="rail-tag" style="top:62%; --d:.18s">FIT</span>
+          <span class="rail-tag" style="top:81%; --d:.25s">USE</span>
+
+          <span class="lab name" style="left:8%;  top:4%;  --d:0s">NOVABLAST 6</span>
+          <span class="lab name" style="left:54%; top:12%; --d:.05s">PEGASUS 42</span>
+          <span class="lab name" style="left:20%; top:92%; --d:.1s">SC ELITE V5</span>
+          <span class="lab name" style="left:62%; top:78%; --d:.15s">GEL-KAYANO 33</span>
+
+          <span class="lab data keep" style="left:7%; top:23%; --dx:-170px; --dy:52px;  --d:.03s">249g</span>
+          <span class="lab data keep" style="left:7%; top:42%; --dx:-240px; --dy:-40px; --d:.09s">8mm DROP</span>
+          <span class="lab data keep" style="left:7%; top:61%; --dx:-200px; --dy:96px;  --d:.15s">WIDE 76mm</span>
+          <span class="lab data keep" style="left:7%; top:80%; --dx:-280px; --dy:-70px; --d:.21s">DAILY</span>
+
+          <span class="lab data drop" style="left:26%; top:21%; --dx:-150px; --dy:130px;  --d:.06s">278g</span>
+          <span class="lab data drop" style="left:29%; top:40%; --dx:-190px; --dy:-118px; --d:.12s">5mm DROP</span>
+          <span class="lab data drop" style="left:27%; top:59%; --dx:-260px; --dy:44px;   --d:.18s">STANDARD</span>
+          <span class="lab data drop" style="left:24%; top:78%; --dx:-210px; --dy:-150px; --d:.24s">RACING</span>
+        </div>
+
+        <!-- 러닝화 와이어프레임 — 중립 SVG 실루엣.
+             고스트(항상 .12) 위에 샤프(왼→오른 와이프)를 겹친다. 특정 모델을 trace하지 않았다. -->
+        <div class="fig-wrap">
+          <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+            <path id="silOutline" d="M 205.0 269.4 C 205.8 265.3, 208.0 255.9, 209.9 245.1 C 211.8 234.3, 214.0 214.3, 216.5 204.6 C 218.9 194.8, 221.6 188.3, 224.6 186.7 C 227.5 185.1, 230.8 191.6, 234.2 194.8 C 237.6 198.0, 241.3 203.2, 245.2 206.1 C 249.1 208.9, 253.2 211.0, 257.5 211.7 C 261.8 212.5, 266.3 212.3, 270.9 210.4 C 275.5 208.5, 280.3 204.3, 285.2 200.5 C 290.2 196.6, 295.2 190.0, 300.3 187.4 C 305.5 184.8, 310.7 184.4, 316.0 185.0 C 321.3 185.6, 326.6 189.0, 332.0 191.1 C 337.3 193.3, 342.7 195.6, 348.0 198.0 C 353.4 200.4, 358.7 202.8, 364.0 205.5 C 369.3 208.2, 374.5 211.5, 379.7 214.3 C 384.8 217.2, 389.8 220.3, 394.8 222.4 C 399.7 224.4, 404.5 225.8, 409.1 226.8 C 413.7 227.7, 418.2 227.8, 422.5 228.0 C 426.8 228.2, 430.9 227.9, 434.8 227.9 C 438.7 227.8, 442.4 227.7, 445.8 227.7 C 449.2 227.7, 452.5 227.6, 455.4 228.1 C 458.4 228.5, 461.1 229.0, 463.5 230.4 C 466.0 231.9, 468.2 234.2, 470.1 236.9 C 472.0 239.6, 474.2 245.1, 475.0 246.7 C 474.2 257.0, 472.0 261.8, 470.1 264.6 C 468.2 267.4, 466.0 269.9, 463.5 272.3 C 461.1 274.8, 458.4 277.0, 455.4 279.3 C 452.5 281.6, 449.2 284.0, 445.8 286.1 C 442.4 288.3, 438.7 290.5, 434.8 292.4 C 430.9 294.3, 426.8 296.2, 422.5 297.6 C 418.2 299.1, 413.7 300.2, 409.1 301.1 C 404.5 302.0, 399.7 302.4, 394.8 302.8 C 389.8 303.3, 384.8 303.4, 379.7 303.6 C 374.5 303.8, 369.3 304.0, 364.0 304.0 C 358.7 304.0, 353.4 303.9, 348.0 303.8 C 342.7 303.8, 337.3 303.6, 332.0 303.5 C 326.6 303.5, 321.3 303.5, 316.0 303.5 C 310.7 303.6, 305.5 303.7, 300.3 303.7 C 295.2 303.8, 290.2 303.8, 285.2 303.8 C 280.3 303.7, 275.5 303.8, 270.9 303.7 C 266.3 303.6, 261.8 303.5, 257.5 303.2 C 253.2 302.9, 249.1 302.4, 245.2 301.8 C 241.3 301.3, 237.6 300.6, 234.2 299.6 C 230.8 298.7, 227.5 297.6, 224.6 296.2 C 221.6 294.9, 218.9 293.4, 216.5 291.5 C 214.0 289.6, 211.8 287.4, 209.9 284.6 C 208.0 281.8, 205.8 276.3, 205.0 274.6 Z" fill="none" stroke-linejoin="round"/>
+            <path id="silMidsole" d="M 216.5 258.5 C 217.8 259.2, 221.6 261.8, 224.6 263.2 C 227.5 264.5, 230.8 265.7, 234.2 266.6 C 237.6 267.5, 241.3 268.2, 245.2 268.8 C 249.1 269.4, 253.2 269.8, 257.5 270.1 C 261.8 270.4, 266.3 270.5, 270.9 270.6 C 275.5 270.7, 280.3 270.7, 285.2 270.7 C 290.2 270.7, 295.2 270.6, 300.3 270.7 C 305.5 270.8, 310.7 271.1, 316.0 271.3 C 321.3 271.6, 326.6 271.9, 332.0 272.3 C 337.3 272.7, 342.7 273.3, 348.0 273.8 C 353.4 274.3, 358.7 274.8, 364.0 275.2 C 369.3 275.5, 374.5 275.8, 379.7 276.1 C 384.8 276.3, 389.8 276.5, 394.8 276.5 C 399.7 276.5, 404.5 276.5, 409.1 276.0 C 413.7 275.5, 418.2 274.8, 422.5 273.7 C 426.8 272.6, 430.9 271.2, 434.8 269.6 C 438.7 268.1, 444.0 265.2, 445.8 264.3" fill="none" stroke-linecap="round"/>
+          </defs></svg>
+
+          <svg class="sil sil-ghost" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/>
+            <use href="#silMidsole" stroke="var(--ink)" stroke-width="1.7"/>
+          </svg>
+          <svg class="sil sil-sharp" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <use href="#silOutline" stroke="var(--ink)" stroke-width="1.7"/>
+            <use href="#silMidsole" stroke="var(--signal)" stroke-width="2"/>
+          </svg>
+
+          <svg class="fig" viewBox="0 0 560 400" fill="none" preserveAspectRatio="xMidYMid meet">
+            <!-- 발볼 적합 영역 — 발 앞부분과 실루엣이 겹치는 구간. 최대 .32 / 최종 .19 -->
+            <path class="fig-fit" d="M383 251 L450 262 L448 269 L383 276 Z"
+                  fill="var(--signal)" opacity="0"/>
+
+            <!-- 발 윤곽 — 실루엣 안쪽 점선. Task 2 유도 결과라 실루엣과 좌표가 맞는다 -->
+            <path class="fig-foot"
+              d="M 232.0 238.6 C 233.5 236.9, 238.0 229.8, 241.1 228.3 C 244.1 226.7, 247.1 228.8, 250.1 229.1 C 253.2 229.5, 256.2 230.2, 259.2 230.3 C 262.2 230.4, 265.3 230.4, 268.3 229.8 C 271.3 229.2, 274.3 228.1, 277.4 226.9 C 280.4 225.8, 283.4 224.4, 286.4 223.0 C 289.5 221.5, 292.5 219.3, 295.5 218.2 C 298.5 217.0, 301.6 216.2, 304.6 215.9 C 307.6 215.7, 310.6 215.8, 313.6 216.4 C 316.7 217.1, 319.7 218.4, 322.7 219.7 C 325.7 220.9, 328.8 222.4, 331.8 223.8 C 334.8 225.2, 337.8 226.7, 340.9 228.1 C 343.9 229.5, 346.9 231.0, 349.9 232.4 C 353.0 233.9, 356.0 235.3, 359.0 236.8 C 362.0 238.3, 365.1 239.9, 368.1 241.4 C 371.1 243.0, 374.1 244.7, 377.2 246.2 C 380.2 247.8, 383.2 249.3, 386.2 250.7 C 389.2 252.2, 392.3 253.8, 395.3 255.0 C 398.3 256.2, 401.3 257.1, 404.4 258.0 C 407.4 258.8, 410.4 259.6, 413.4 260.3 C 416.5 261.0, 419.5 261.6, 422.5 262.1 C 425.5 262.6, 428.6 263.0, 431.6 263.3 C 434.6 263.5, 437.6 264.0, 440.7 263.6 C 443.7 263.2, 446.7 263.6, 449.7 260.6 C 452.8 257.7, 457.3 248.3, 458.8 245.9 C 457.3 247.6, 452.8 253.3, 449.7 256.0 C 446.7 258.7, 443.7 260.5, 440.7 262.2 C 437.6 264.0, 434.6 265.4, 431.6 266.6 C 428.6 267.9, 425.5 269.0, 422.5 269.8 C 419.5 270.5, 416.5 270.8, 413.4 271.2 C 410.4 271.5, 407.4 271.7, 404.4 271.8 C 401.3 271.8, 398.3 271.7, 395.3 271.5 C 392.3 271.2, 389.2 270.7, 386.2 270.2 C 383.2 269.6, 380.2 269.0, 377.2 268.2 C 374.1 267.5, 371.1 266.5, 368.1 265.5 C 365.1 264.5, 362.0 263.4, 359.0 262.3 C 356.0 261.1, 353.0 259.9, 349.9 258.8 C 346.9 257.7, 343.9 256.6, 340.9 255.7 C 337.8 254.8, 334.8 254.0, 331.8 253.5 C 328.8 253.0, 325.7 252.8, 322.7 252.8 C 319.7 252.8, 316.7 253.1, 313.6 253.5 C 310.6 253.9, 307.6 254.6, 304.6 255.3 C 301.6 256.0, 298.5 256.9, 295.5 257.8 C 292.5 258.6, 289.5 259.6, 286.4 260.5 C 283.4 261.3, 280.4 262.1, 277.4 262.7 C 274.3 263.3, 271.3 263.9, 268.3 264.3 C 265.3 264.6, 262.2 265.1, 259.2 265.0 C 256.2 264.8, 253.2 264.5, 250.1 263.4 C 247.1 262.2, 244.1 262.2, 241.1 258.1 C 238.0 253.9, 233.5 241.9, 232.0 238.6 Z"
+              stroke="var(--ink)" stroke-width="1.1" stroke-dasharray="4 3"
+              stroke-dashoffset="1400" opacity="0"/>
+
+            <!-- 발볼 계측 틱 3개 — 힐·발볼·앞코 -->
+            <g class="fig-tick" opacity="0">
+              <path d="M221 318 L464 318" stroke="var(--signal)" stroke-width=".7" opacity=".5"/>
+              <path d="M221 300 L221 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M383 282 L383 324" stroke="var(--signal)" stroke-width="1.3"/>
+              <path d="M464 276 L464 324" stroke="var(--signal)" stroke-width="1.3"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03 재방문 이어보기 — 기록이 없으면 섹션 자체를 렌더하지 않는다.
+       이 섹션이 뜨는 재방문자에게는 05(추천 작동 방식)를 빼서 인덱스와의 거리를 좁힌다. -->
+  <section class="sec tight" style="background:var(--paper-soft)">
+    <div class="wrap">
+      <div class="resume-top">
+        <div>
+          <p class="eyebrow">CONTINUE</p>
+          <h2 class="resume-h">다시 이어볼까요?</h2>
+        </div>
+        <button class="resume-clear">기록 지우기</button>
+      </div>
+      <div class="resume">
+        <a class="res-i" href="/shoes/asics-novablast-5">
+          <span class="res-th"><img data-img="nova5" alt=""></span>
+          <span>
+            <span class="res-k">최근 본 신발</span>
+            <p class="res-v">노바블라스트 5</p>
+            <p class="res-x">2일 전 · 데일리</p>
+          </span>
+        </a>
+        <a class="res-i" href="/compare">
+          <span class="res-th dbl"><img data-img="vomero18" alt=""></span>
+          <span>
+            <span class="res-k">비교하던 신발</span>
+            <p class="res-v">보메로 18 vs 슈퍼노바 라이즈 3</p>
+            <p class="res-x">비교 이어서 보기</p>
+          </span>
+        </a>
+        <a class="res-i" href="/recommend">
+          <span class="res-th"><span style="font-family:var(--mono);font-size:20px;color:var(--signal)">9/9</span></span>
+          <span>
+            <span class="res-k">지난 추천 결과</span>
+            <p class="res-v">넓은 발볼 · 데일리 · 20만원 이하</p>
+            <p class="res-x">결과 3켤레 다시 보기</p>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04 고민별 탐색 -->
+  <section class="sec" id="problem">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">START FROM YOUR PROBLEM</p>
+        <h2 class="sec-h">지금 어떤 신발이 필요하세요?</h2>
+        <p class="sec-p">전문 용어를 몰라도 됩니다. 고민을 고르면 어떤 기준으로 걸렀는지까지 함께 보여드립니다.</p>
+      </div>
+
+      <div class="prob">
+        <!-- 주요 패널만 stretched-link 패턴 — 패널 전체가 /best/beginner 로 가되
+             썸네일 3개는 각 신발 상세로 따로 빠진다. 중첩 <a> 를 피하는 기존 프로젝트 패턴. -->
+        <div class="prob-i lead">
+          <p class="prob-n">01 / 가장 많이 찾는 고민</p>
+          <p class="prob-q">처음 러닝화를<br>고르고 있어요</p>
+          <p class="prob-c">첫 켤레는 실패하면 러닝 자체가 싫어집니다. 쿠션 여유·무게·가격대를 함께 보고, 국내에서 실제로 살 수 있는 모델만 남깁니다.</p>
+          <div class="prob-keys"><span>쿠션 여유</span><span>무게</span><span>가격대</span><span>국내 출시</span></div>
+          <div class="prob-th">
+            <a class="pth" href="/shoes/brooks-ghost-17"><img data-img="ghost17" alt="브룩스 고스트 17"><span>고스트 17</span></a>
+            <a class="pth" href="/shoes/hoka-clifton-10"><img data-img="clifton10" alt="호카 클리프톤 10"><span>클리프톤 10</span></a>
+            <a class="pth" href="/shoes/puma-velocity-nitro-4"><img data-img="velocity4" alt="푸마 벨로시티 나이트로 4"><span>벨로시티 4</span></a>
+          </div>
+          <p class="prob-f">
+            <span><b>13</b>종 정리됨</span>
+            <a class="prob-go stretch" href="/best/beginner">입문화 보기 →</a>
+          </p>
+        </div>
+
+        <a class="prob-i mid1" href="/best/wide-toebox">
+          <p class="prob-n">02</p>
+          <p class="prob-q">발볼이 넓어서<br>선택이 어려워요</p>
+          <p class="prob-c">와이드 출시 여부, 토박스 너비, 갑피 여유를 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>57</b>종</span><span>→</span></p>
+        </a>
+
+        <a class="prob-i mid2" href="/best/max-cushion">
+          <p class="prob-n">03</p>
+          <p class="prob-q">편안하게<br>오래 달리고 싶어요</p>
+          <p class="prob-c">스택 높이, 충격흡수 성향, 로커 구조를 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>32</b>종</span><span>→</span></p>
+        </a>
+
+        <a class="prob-i row1" href="/best/racing">
+          <p class="prob-n">04</p>
+          <p class="prob-q">기록을 줄이고 싶어요</p>
+          <p class="prob-c">플레이트 유무, 무게, 에너지 리턴을 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>29</b>종</span><span>→</span></p>
+        </a>
+
+        <a class="prob-i row2" href="/best/knee-protection">
+          <p class="prob-n">05</p>
+          <p class="prob-q">무릎 부담이 걱정돼요</p>
+          <p class="prob-c">충격흡수 성향과 안정성 구조를 기준으로 살펴봅니다. 러닝화 정보는 진단이나 치료를 대신하지 않습니다.</p>
+          <p class="prob-f"><span><b>92</b>종</span><span>→</span></p>
+        </a>
+
+        <a class="prob-i row3" href="/best/daily-trainer">
+          <p class="prob-n">06</p>
+          <p class="prob-q">한 켤레로 다양하게 뛰고 싶어요</p>
+          <p class="prob-c">다목적 성향, 내구성 범위, 가격 균형을 기준으로 정리합니다.</p>
+          <p class="prob-f"><span><b>16</b>종</span><span>→</span></p>
+        </a>
+      </div>
+
+      <p class="disclaim">
+        러닝화 정보는 제품 선택을 위한 참고 자료이며, 통증의 진단이나 치료를 대신하지 않습니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- 05 추천 작동 방식 -->
+  <section class="sec alt" data-visitor="new">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">HOW IT WORKS</p>
+        <h2 class="sec-h">약 1분, 9문항이면 충분합니다.</h2>
+        <p class="sec-p">한 켤레만 고르라고 하지 않습니다. 역할이 다른 세 가지를 놓고 비교하실 수 있게 정리합니다.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step"><p class="step-n">01</p><p class="step-t">러닝 경험과 주간 거리를 확인합니다.</p></div>
+        <div class="step"><p class="step-n">02</p><p class="step-t">발볼과 신발에서 불편했던 부분을 반영합니다.</p></div>
+        <div class="step"><p class="step-n">03</p><p class="step-t">러닝 목적과 예산에 맞춰 후보를 줄입니다.</p></div>
+      </div>
+
+      <div class="roles">
+        <div class="role lead">
+          <span class="role-b">BEST MATCH</span>
+          <p class="role-t">가장 잘 맞는 선택</p>
+          <p class="role-d">발볼·러닝 목적·사용 거리의 균형이 가장 좋은 모델</p>
+        </div>
+        <div class="role">
+          <span class="role-b">COMFORT</span>
+          <p class="role-t">더 편안한 선택</p>
+          <p class="role-d">쿠션과 안정성을 우선할 때 적합한 모델</p>
+        </div>
+        <div class="role">
+          <span class="role-b">VALUE</span>
+          <p class="role-t">더 경제적인 선택</p>
+          <p class="role-d">예산 안에서 조건을 가장 많이 충족하는 모델</p>
+        </div>
+      </div>
+
+      <div class="fits">
+        <p class="fits-h">결과에 붙는 적합도 — 종합점수 대신 항목별로</p>
+        <div class="fit-row"><span class="fit-k">발볼 적합도</span><span class="fit-bar"><i style="width:92%"></i></span><span class="fit-v">매우 높음</span></div>
+        <div class="fit-row"><span class="fit-k">러닝 목적</span><span class="fit-bar"><i style="width:74%"></i></span><span class="fit-v">높음</span></div>
+        <div class="fit-row"><span class="fit-k">예산 적합도</span><span class="fit-bar mid"><i style="width:50%"></i></span><span class="fit-v">보통</span></div>
+        <div class="fit-row"><span class="fit-k">국내 구매</span><span class="fit-bar"><i style="width:95%"></i></span><span class="fit-v">매우 높음</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 06 신뢰 지표 -->
+  <section class="sec">
+    <div class="wrap trust">
+      <div>
+        <div class="sec-top">
+          <p class="eyebrow">WHAT THE NUMBERS COME FROM</p>
+          <h2 class="sec-h">어디서 온 데이터인지<br>먼저 밝힙니다.</h2>
+        </div>
+        <div class="metrics">
+          <div class="met"><p class="met-v sig">122</p><p class="met-l">분석 중인 러닝화</p></div>
+          <div class="met"><p class="met-v">07.31</p><p class="met-l">최근 데이터 갱신</p></div>
+          <div class="met"><p class="met-v">공개</p><p class="met-l">평가 기준과 출처</p></div>
+        </div>
+      </div>
+      <div>
+        <p class="trust-q">
+          공식 정보와 전문 랩 데이터, 국내외 리뷰를 같은 기준으로 정리합니다.
+          한국 러너가 확인해야 할 정보를 분리해 보여드립니다.
+        </p>
+        <div class="badges">
+          <span class="badge ok">공식 정보</span>
+          <span class="badge on">외부 랩 확인</span>
+          <span class="badge">리뷰 종합</span>
+          <span class="badge">직접 착화</span>
+          <span class="badge est">추정치</span>
+          <span class="badge est">갱신 대기</span>
+        </div>
+        <a class="trust-link" href="/about">평가 기준과 출처 전체 보기 →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 07 필터 + 러닝화 인덱스 -->
+  <section class="sec">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">SHOE INDEX</p>
+        <h2 class="sec-h">지금 비교 가능한 러닝화</h2>
+        <p class="sec-p">조건을 좁혀 보세요. 결과는 바로 아래에서 갱신됩니다.</p>
+      </div>
+
+      <div class="chips">
+        <button class="chip" data-f="all" aria-pressed="true">전체 <span class="c-n">122</span></button>
+        <button class="chip" data-f="daily" aria-pressed="false">데일리 <span class="c-n">19</span></button>
+        <button class="chip" data-f="cushion" aria-pressed="false">쿠션화 <span class="c-n">32</span></button>
+        <button class="chip" data-f="beginner" aria-pressed="false">입문화 <span class="c-n">13</span></button>
+        <button class="chip" data-f="racing" aria-pressed="false">레이싱 <span class="c-n">29</span></button>
+        <button class="chip" data-f="stable" aria-pressed="false">안정화 <span class="c-n">16</span></button>
+        <button class="chip" data-f="trail" aria-pressed="false">트레일 <span class="c-n">13</span></button>
+        <button class="chip wide" data-f="wide" aria-pressed="false">와이드 출시 <span class="c-n">54</span></button>
+        <button class="chip" data-f="under20" aria-pressed="false">20만원 이하 <span class="c-n">52</span></button>
+      </div>
+
+      <div class="result-line">
+        <p class="result-n" id="resultN" aria-live="polite"><b>122</b>개가 현재 조건에 맞습니다</p>
+        <p class="sort">카테고리 균형 · 평가순</p>
+      </div>
+
+      <div class="idx-head">
+        <span></span><span>모델</span><span>한 줄 결론</span><span>용도</span><span>무게</span><span>가격</span><span>데이터 상태</span>
+      </div>
+
+      <div class="idx" id="idxRows"></div>
+
+      <!-- 점진 확장 — 기본 16 → +24 → +24 → 전체 -->
+      <div class="expand" id="expandWrap">
+        <button class="expand-b" id="expandBtn">러닝화 24개 더 보기 <span class="cnt">16 / 122</span></button>
+      </div>
+
+      <!-- 무JS 폴백 — JavaScript 가 켜지면 위 버튼으로 대체된다.
+           정적 HTML 에는 122개 링크가 모두 남아 내부링크와 크롤링이 보존된다. -->
+      <details class="more" id="moreFallback">
+        <summary>나머지 <span class="cnt">106종</span> 펼쳐 보기</summary>
+        <div style="padding:18px 0;font-size:13.5px;color:var(--ink-soft)">
+          JavaScript 없이도 이 안에 나머지 106행이 그대로 들어 있습니다.
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <!-- 08 광고 -->
+  <div class="wrap ad">
+    <p class="ad-l">ADVERTISEMENT</p>
+    <div class="ad-box">RESPONSIVE AD SLOT · 기존 슬롯 1개 · 높이 예약 280px</div>
+  </div>
+
+  <!-- 09 에디토리얼 -->
+  <section class="sec" style="border-top:1px solid var(--line)">
+    <div class="wrap">
+      <div class="sec-top">
+        <p class="eyebrow">BEYOND THE NUMBERS</p>
+        <h2 class="sec-h">숫자가 말해주지 않는 것</h2>
+        <p class="sec-p">스펙표로는 안 보이는 판단들. 세대교체에서 무엇이 사라졌는지, 관행처럼 도는 숫자의 출처가 어디인지 짚습니다.</p>
+      </div>
+
+      <div class="ed">
+        <a class="ed-lead" href="/blog">
+          <img data-img="editorial" alt="미즈노 웨이브 라이더 29와 30의 미드솔 구조 비교">
+          <p class="ed-meta"><span class="cat">REVIEW</span><span>2026.07.29</span><span>9분</span></p>
+          <h3 class="ed-t">미즈노 웨이브 라이더 29 vs 30 — 30세대 대개편, 그래도 29를 사야 하는 사람</h3>
+          <p class="ed-x">폼이 통째로 바뀐 세대교체에서 무엇이 좋아졌고 무엇이 사라졌는지, 국내가와 함께 정리했습니다.</p>
+          <p class="ed-by">산초 에디터</p>
+        </a>
+
+        <div class="ed-list">
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">REVIEW</span><span>8분</span></p>
+            <p class="ed-it">살로몬 제네시스 2 미리보기 — 가치 점수 만점, 토박스가 관건</p>
+          </a>
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>12분</span></p>
+            <p class="ed-it">러닝화 500~800km 교체설 — 그 숫자, 1985년에 나왔습니다</p>
+          </a>
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>10분</span></p>
+            <p class="ed-it">러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자</p>
+          </a>
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>9분</span></p>
+            <p class="ed-it">나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 이노베이션 센터</p>
+          </a>
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>11분</span></p>
+            <p class="ed-it">발볼 넓은 한국 러너를 위한 와이드 러닝화 — 토박스 실측으로 비교</p>
+          </a>
+          <a class="ed-i" href="/blog">
+            <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>7분</span></p>
+            <p class="ed-it">오사카 마라톤 2027 접수 가이드 — 국내 러너가 놓치기 쉬운 일정</p>
+          </a>
+          <a class="ed-i more-link" href="/blog">
+            <span>블로그 전체 보기</span><span class="ed-go">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10 최종 CTA -->
+  <section class="final">
+    <div class="track">
+      <span class="lane"></span><span class="lane"></span><span class="lane"></span>
+      <span class="lane"></span><span class="lane"></span>
+    </div>
+    <div class="wrap final-in">
+      <div>
+        <h2 class="final-h">수많은 러닝화 중<br>내게 맞는 선택만 남겨보세요.</h2>
+        <p class="final-s">약 1분 · 9문항 · 로그인 없이</p>
+      </div>
+      <div class="final-a">
+        <a class="btn-signal" href="/recommend" style="font-size:16px;padding:16px 24px">9문항 맞춤 추천 시작 <span>→</span></a>
+        <a class="final-alt" href="/">전체 러닝화 보기</a>
+      </div>
+    </div>
+
+    <!-- 순회 허브 — 홈에서 나가는 세 갈래를 마지막에 한 번 더 연다 -->
+    <div class="wrap">
+      <div class="final-routes">
+        <a class="fr" href="/recommend">
+          <span class="fr-n">01</span>
+          <span class="fr-t">맞춤 추천</span>
+          <span class="fr-a">→</span>
+          <span class="fr-d">9문항으로 역할이 다른 3켤레를 받습니다</span>
+        </a>
+        <a class="fr" href="/">
+          <span class="fr-n">02</span>
+          <span class="fr-t">러닝화 인덱스</span>
+          <span class="fr-a">→</span>
+          <span class="fr-d">122종을 같은 기준으로 놓고 좁혀봅니다</span>
+        </a>
+        <a class="fr" href="/compare">
+          <span class="fr-n">03</span>
+          <span class="fr-t">직접 비교</span>
+          <span class="fr-a">→</span>
+          <span class="fr-d">후보를 나란히 놓고 수치를 맞대봅니다</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="wrap final-foot">
+      <div class="final-stat"><p class="fs-v">122</p><p class="fs-l">정리된 러닝화</p></div>
+      <div class="final-stat"><p class="fs-v">6</p><p class="fs-l">카테고리</p></div>
+      <div class="final-stat"><p class="fs-v">07.31</p><p class="fs-l">최근 갱신</p></div>
+      <div class="final-stat"><p class="fs-v">공개</p><p class="fs-l">평가 기준과 출처</p></div>
+    </div>
+  </section>
+
+  <!-- 11 푸터 -->
+  <footer class="ft">
+    <div class="wrap ft-in">
+      <nav class="ft-nav">
+        <a href="/about">소개</a><a href="/faq">FAQ</a><a href="/contact">문의</a>
+        <a href="/privacy">개인정보</a><a href="/legal">고지</a>
+      </nav>
+      <p class="ft-c">© 2026 ALLRUNABOUT</p>
+    </div>
+  </footer>
+</div>
+
+<script>
+  /* 시안용 데이터 — 실제 구현에서는 getGridShoes() 결과가 들어간다.
+     122행 전부를 정적으로 들고 있고, 화면 노출만 16 → +24 → +24 → 전체로 늘린다.
+     정렬은 rating 단순 정렬이 아니라 카테고리 균형(데일리4·쿠션3·입문3·레이싱2·안정2·트레일2 → 라운드로빈).
+     썸네일은 상위 16종만 내장했다. 나머지는 실제 구현에서 각 신발의 image가 들어간다. */
+  var IMGS = {"nova5":"data:image/webp;base64,UklGRpIDAABXRUJQVlA4IIYDAADQFACdASpwAHAAPpVEnUqlo6KhqTSagLASiWUA1Sl/3u627rJk/Yyw7MVjbNnlyTHa/yPC/+y1ujSpV9HU3VBb5l5eAKr36PdQBbJNLkp4y/t2kh+QKZQGGz1/0UiTMOVPlDfoH0wlA0spC8iLFepMD5fhJYe4KtG89sXBUb1j7yY8lWDuo8A2J8dGNf8UzfmH2P4O871Hfxon9tmeOGDCrHthndBRzg2dN+cvB04AAP76toAAAA4m//vupPV3QGYGebYzq9SbN65bOu1gIOUXCDEeIiiEea52uZu0fMDhBu7xIPe+cJuO4MPSf2v0l1rCgMD65Df8cP7TVbWali9NFOjMaX0PuNvTm0f2BJtWnfgoiBWpV51Fm+GKN142PHNksVXQHV0DXLm7fU+Z3gZ0R1af3pwuud86Y3J9qmzK9Fjmh3mXouu+hlJWLaNztxMDRQOkD2tvd9YCg7p/5Z8A6BUHwo5ulG3k1/9EEoCnTj8B/GRgXfy3jBp9PgyvhKWjgzJK2QCLSaAGPLKsTqLgFWVXImZbEmWdzJD0bhq/QdH/vyhHbU2QJNABMyte86A3pysDVJEgSWR97qr6NAzQfu0qu0W5iDBp1t4ukWmgs2gveoI69TTYbsod7Cqo9/3aO4481fP99sNq7wB7gPEPgUzmv37AfpJIk4mscmtFXlZ86XNtxkl3a/hNQZ+Z/G3WLq8ZoxfRz2Y+FwlRR/je2ORRcVDsfoUgz6X5CuYLLWWY28V/htSGhy6Q0CTNRUcljQnMcCaF30D4LtSy20iMLWDMLnIJv3qSeVIgg7tFzw3IZpGOkxeNGk4aeOHKO5K1SDYmAgL54bclsqJTHhIpYp9oNU6yjmipYRA6XaKCEUW5n0rWXCl8TIlzuvCxlBOfmZynPkPAk6bc9AubtQtGNyfefvFhQfXxYimRoZ496EkMw1rAwfL9hMSmekOAaXSthikziSIztYgTXCmVhxPvE1s3hC74yWHDU99X5hf0vgG5VozCCsLKIQ05EqhGvkYr1uKhLcHAVk9S1qe1OjgQIYRvXYYseyOpfS5bBpfzNmUiAJ5yikKI0s1eHc+ySW1xVCtNp1nIceolr2cEk1/kr+sl2gR6MesL4MfwlQLMPUa53cVo/ngXFAgIJ9PKUzCRgE304WlM1eVUQmyNwKbp9lKwWafxGwQh4LKOSXeyK7lQAAAAAA==","boston13":"data:image/webp;base64,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","evosl":"data:image/webp;base64,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","speed5":"data:image/webp;base64,UklGRqYEAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSNkBAAABkETbtiFJ/2cU2rZt28bQtm3btm3btm3btrtDt5X5I/rF6yEiYgLEf///+7YM8v1JItZZdevTyy1ZeQpTo11qRyluw+/b4ixltPGlmXSwBAH1PqklP/EswB7rU5seCLDWJGIn5DEA9FZL9FQBuBGbGzHgF6OkkhikhA1hJTNVfsH1iCqtTTU8Ol2AlzJ+ME0GkJ0tOP5YgJXx/jBc8xNuCty8n4aRbEYAHCgeXoYWOAl3H3bPxYWcDdV3d17Dfb2L5KGBqfSbrY4aC8tAeUvbaAysJgU87V8kyGv7iQG4PrVMEk16J+gRPQD28wv7Ns6bMHTI4L69O1dJJUkltjzh1N4YSkiOAoudCKW0ePiSkk4tMNmMzjouupPJrnPRhUxfcFmPSqHPXBgpiSR7BC4HSRqp74DLq2EEza7g8lJyQTThCx7smXEF2Qo6B887BwnCDb56ztyTRtAufd9jj8v4BPUorW95x7zWMI7wYthKKx9/0U039JePHr0wXLMera8TTXg2fL7OYxfs2Hvw2Jlzh7avXjR5+IABfVoUiR8+TJiwiSpdcGa/u3d4fKWkQcLbvqCgIC0oODhIk1IK9ZDi7fp2796zz5Chw4YNH9K5Xpnc6eJEkeIvrABWUDggpgIAAHAQAJ0BKnAAcAA+lUieSyWkIqGl9xposBKJZwDTvdB5ibAZaQTfk1qge4N8f6IBUCHPPam3ma7/5BhRARoYpSgHc62lnZIzUrFGkxN7rzGU5cKs0jL6Zo2NkoZsIX+MXHC0ne5BvGMSN5Lo4+K0WG7FX//Enu/sFLz/8U6AdiJ8efjpGJ/tlR+zo+sAAP7r3i7ZP76L+DZIpsRdqgwq1apSIQAAAAX3qa8etUzk0Y/dDqk/4/QjgSCLGz9CfcKhDI/tiJmkn40YHDHwxUrE1nRKXvr0Tn/1b5daQDX6ptI7Y0cTG885A1PzvstLgdPymqxOFDMh/4QOwAE2NhPcxtn3jXuVFoY6dyYm7VSPmH9atYEV9Wcg8gKiTys9afuydTpJNuNmh//nQC5Zw3k3A5pFAuPwEVwULV+OjhVN/inh4xettrjH+Fb9dZhi1oBTdJAnXSQPki7tu4vsvkJT4aws8+R2EhZOSvoNSqUGXPIk4eVW1+ADHQwElXJ6F3NlhRYgHnXRxA38SBuBOrcz7c734di0O/sNQ7ziHFVQRcadNFcklErN8Oty2l7TJxE6dBWe3TM9Gr3ST4eBVNU8QyRxexTYkM0o5F1MQ7ksys8dEVO66oaImaH5dKGTRMPdQUn01FeMM/ReoO2y9Q3IHlPtAZ8RfCZrIGvqzJBruwKmfVybkcsC0sF4I0HlgftBOiYMydhXXk3ZKUUKKF3iFeGr/KY/TI6azTylOnR3ztCKfgAFClFpjUhaXT8KHNn8ozjY8cIZRDSs/P91jetKSrOMtLtmSgKkHyZofWcuBa86elwoNvoBO51SK0gxQGOtT9cUJYkUNtTLkcAJjyPD8Af7Kvs7f2L9yb//E2VzrGFPzhkdxtrU9f0hZE9H/6A7DILx/AqAAA==","snrise3":"data:image/webp;base64,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","ghostmax3":"data:image/webp;base64,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","vomero18":"data:image/webp;base64,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","ghost17":"data:image/webp;base64,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","velocity4":"data:image/webp;base64,UklGRiIIAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSNEDAAABGTJp2xDpzkX0P+CEgYYWtf2H5Ci2bdu2bdu5ytq27d1b276yeWnbtjdsVVcNLvP1qTj5pnpPh//zi5Oe2u2oz+nOeCZiAiYgW8z3f3w4u5wKKO1H39DAzq+win7yrhiGgF1EPXVVkMOfrvAbj1QJHXTVUgP/OETMsqiG5OwG66665J+9ZF9fmGk295jcxeF2FJQL8ahoTJLXSFM08bdCiqH84w1XeMDXZhJ3VCWHmaw4ON5JYg5V2DinyycZyAkAgs872QtWzOIqjx5O04KajQB8w/liCPrLaa25fpqCKFBAIb5zuat9YhYnavUMKSVBCAAf2YuY0S5lugP5g/4iLEVFABDQesNp7vMHgP5GjjeAHy6eEo0JmFtRpbW3sSOZCZzFBB0s2AIG73Cij7CSqVYlEQLC8WELYwD1/yjjlfGVUspRuUnkL3mZcC4AiPfcLG1hDXY2cONZ3RiuoPqyWupqWw5/W28DQERyUbAUkB2ci5AQCginH0swFKPr25ihj8DP8vNnrleAiMwUoYoqEu4LCNd/2kHj0KzlTLsaSLTEspUoQCyBT2Arz9yXiWyDsJCyCuhmX3VkI76g3xaAtCgE4f2L2TRCDkmjLdzkayxAoeWzQCpL0YoSXhWAAB5i2vqzm/lvpPL+8qtoMQpOKaAQen1fQH9NnKKnReQsFqJwAV2vy1BKTwwUN9aRSrAFACEOFL3hVKHcvESQhLlr1yyLwtVlraysCAJOhA4GzBoqZGrG5e1UEy5p066AbarQ+n9syi+kAEIIQ6tzLA8pjTJv1ZkJR4FzCoUwfuL50qIaHaoHQCggIXQQCgEIDYZlNdnabNtXNgBBQAAIIQAhIAz/pxxy0Wb3argkAAIEAMLQQocPrfZrUxtiWAHhVHxhaJvmDaER3OSetjSKaCeEwf0Jadrs5woaSXYwOtNfMo3SJP1p1CYmDFzpPoVoYj5ps1sCgDEFB3hOZZpgz4OqcgeQmAMN/TucNmjoRcluGVKoUfItJtMI2y8XNZjm5n4StUIvtwjrTZCdHhbWRM2w5wzDmHoSQpcllQZv2oNdZbUToR70mkCvAK3t3VQCPBd6JNTNu94Cr9uLjtHXeo8g9ESvf1lzg2eI9wCmLhhkVQF5KLeMKD95xaPu9bUvCXSa36qkcGkNrK0vrLSSP3zhM5+j/aOfZWYGzTwKyqeoQAHJi4pISw75IdavfvC9b73tNW8K/GMm6DyXHKIVrM3YsipNclrvV9kpRKzILzaFQp/7xHte9Y2Az4LHJJDDbICIwNCETdu0aTPoi0QsSzBf1QBWUDggKgQAADAWAJ0BKnAAcAA+lUabSyWjoiGnNGtYsBKJYwDQuS075yOlt8pm993z4N8A3om/QNuOtSaiwR9vUTHksqle8jUK6W/oQGq7FKm/KiYGbMnxkErltlLktPR3mOC+ekx6wjnpY6mx7+dq1e7OfRQRYfFAe/PblgrT1Yw+xqxBp/cGu/V310BzZWpJrOq0SMqNECnRhzvQi3ocWHgDq08SZnNIZQwW58I2hTfsdQexjldScR2dgNalTd3CAAD+7L2ODLbQwfqrS3LL239FsIh1FO+WoAAUl5fdm2kPXagCf7cWR4oh4WCkgiIN/dfT4QecA7oBvq7NQ9Oipbd13IFFEPBkv+Q7DkeIwJ658S90PxgFN+vrbg4Kz+13FUamP0VBQkYfPDrrhcaj4KEfn2do9qtaa5fs02YH6x+BAKHehoTxgNCCvvqiqPkI8B+ec6FQE3KOD+wkN4LSj5quCQtTvvGTAep+XPOvP/uU2dALJEMP/X/tZgEOSLShK1eoqrwjJibO4c99Dyn8vKnXF7Ieq+fA8rzqTQp2fzm7jr9J9bTjrq6EmVyMQgClIQntui/F3Jc7IH3Iydm4VjkDdjr9461tN9LURagRBAPaa4XFKetZz8vrSj0B3BvIIUUhQYA9zwBUZIRTtqsH3YyP/yVIij2OkV71RVnLGVJ6/UY/xQG1JQrB2DzwyImCnfmCBUyo8OsfKF461J/ih5bJn4duQdH0X1C/sXPuChuwxmed9+4gObhdvakRV+CI+7oh4wg5asiD6ANer4T4ALquMSvucIYDDi+YOkPqXv+LafzNenhhDAxcR2fzSJ1Oza+divS5dPrG0APRX3JbqBkKyrfrIH8z9NPwkBpnicGU2w8sVAen0GCQEm5LZVKz3XwSAn7EQu8O5OZ3a7LHnLxADbGQI4XI7H/psJvDIzA/Z0/xp7usqbHjr7FOF+QyWPDn0jN46NUDEwmvcG1B+0UH7TVgxmT+uzKBRuNDnyGG78WXOVemsFfFzVPTZmf+tsvg0KIG3Vs/M45Qeuql/p/QqOlJQ62LQoHWUHAFrUXdpjHqaAGWkAyLzYxWnixbVn+nUjJxA5nLLcSvwgGjcH/QAQ8dP4jkr+i3ovr1TsNj/iTJfsCuXmg0jF6RtJ62jGIID2nClElOm+nBI59tH1pePZiR6/x5zaz/uHvE7LvA0vFvh1fim2Wd80mCAXX8JsePRiS3kuSOM5ynoiwHmyBmSy6WlcoD8Z92gwyxMD55RNFn1aDX1VyXyk4aC+k3/+2JQ+N845UMJrhC/HnbZlZPHD0gFOYHg6/BkEY9AMdWPradYCJUGH2M4zWSj3R2XJs+Ri7eFFNy+cS8NsniwvUY2pmuTqxeWmLqcOWjD1yAFTcca4uNJ00ff/AZQgnZ93j8dBAyMZt4FgAARfAAAAA=","clifton10":"data:image/webp;base64,UklGRiYFAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSDQCAAABkARJtmlbe1+/b9u2zZFt27Zt29bItm3bNu6zz1k9uTp3nT39/0fEBIj//v/HbWmRypLGyNwtq9nVVOL5mz1NrAaUv/b52+q0SqoFAh1KFZB9R4wO/VIRqaAMiSDggCWQwuHw/NnZrh5xDCBQ5wDkbHjXD47LoZwuABFe2PxL+9EHgJ+VLIopBoCIavnXRPcHn4Z0TKqU3PB62uZP8nMIkF5XlArJqZEHtZS+QlZTIMCHQyOSKyN7PLz+rG/1lmpdIgy9XyKlRQ2D4DNqUVaLlI76dwkGazG3OjhVcJZ8IOHZ4iFTz8UhmPrvHS2TSJM53H4A8ZEJCDo9npTRXJl0v7h+XNqyRCqnRUppiqw6zEha9Jf7Z/dtXrlgxsRxw9vmZZVNM0XAiQutjLLoRhA7YCyjdHFGgPiFFeGT5IchIE9W2M7HcsYYE97gU+a8IiKcXORkKPKD4FotUhUnuNhuQpE0jktdXRGUWIDLYqiRaIbgus4oLTQsKixCJ2KzzspmhiFEMaGxBE8iEAWNiObZBNuSbiMCJxBRUCJHSsG4vpsBACIigyj+eMPUgneNVyyMJxplF+zTrY5nRwDIS+wKuzBj0a1RzHxH7SovhUkzDf2gc7s6dcXgfBZh4lQ1J24+9/ZX6G93qPvBVx0Auc9Onf87Mi5B84j56O1POLTYP09nJxUqtNicLpfL5bTYshQvUzy7QwhhD0mRLnfZWi3al83VtV//gUN75c1fuWSujA7xd0hWUDggzAIAADARAJ0BKnAAcAA+lUCdSqWjoqGpOAnQsBKJZwDWFVBJmWS9gAFmjGYHK3eebEqk7nkUAwXaEdTQaEdTQaEdSeGheqSB7PKCiD8nhwPC0vIdJytFZf6Xa27i0XTQwypwG9Q6MuKjPcCyW9r9hS3rTzehU109oQD04hdLEfhyDEC9aLVvGc1+UQ41tORtLLcc6y0AAP77QAAAAAv/dKvdf/9Mmf/2lkvJ1GBAKcH2F9EJQ/6+uSfewbdsv3nLIusdAdjFcbk0l16I6Nr17ANFQyxbb1lChjNFAKD4eRtRH41cSeP4bkQbctYI5liRP+zWUOtZX2uKM5ffLQDmYHwja1q+Hke2WTZH90RAJIS3NkpDHephlTwBEVBq34cJmqIVNNvkMlQ6u5E3NrdYc6HHC+2aKh6KtI3cWApsr2kmeQxMhFTVVC1SDC/Zuu8T2c/iB0OGWOZKH8rIZoQzTbwF+Hpfa/FJrcjjVTuDISPClaEpVG6fEexeH4KRu5PPnj9CFs+ODAidNNOtZYoEKsotuV+6i6zP5w6MZWw/cmEX0h2qAYQfGG6vkroAKskHZO/S9PrHTx7xt5vD7BamvDr1aIJdCfvNUj3jXW8bTn29+ox8E16P2K6WQZhcVifBwzgCD4/WBg9tkWVJR3zC1Bp800X00pI4/n3UVKWx+ozvccuH8gFusrDbAMiCW5z+chWlqaiT0air9qSEXtVBRmhl66q6hxr5MJ1usE4UvRoumTjXbInqaF8LLeWLfVCeL692VoSKNRRE2CjSUsdU1WjaefDc8ZlXUEDdjZjUnSLxK/Y3Mc6hCIwQrZF+tAgKxRm6oE6LmA296Ne+jLjx7vDcQak1kHoGUNunT3D30zSEh3hNP7r7ybs/J7p4OL5J2XYfqqXyKNHFlACU2IfpVA5dNc4SsQox56aebDYG7gFKOQVxhfvRF/11PJDnfoAA","sb2":"data:image/webp;base64,UklGRtwDAABXRUJQVlA4INADAABQFQCdASpwAHAAPpVGnEqlo6KhqTN6SLASiWMA1PhxUvtlNur4qvr1aYBvN8++aY1Jj0f8fh1pAmmymr1NKvU0q9TSgd9sfUTLtYSRcsSPtuDfMsgyV5kXs9Hq64XYFGrHMvWv4DoR7GpUXM+29dGUVrOMyyAMU15YgGiJzjQbxmR2Qq+Y+Ep/v3GkeqtiatYx5nb4cSNnAWnKPjwANcoSjTYDrZ73FFG6tp+R2JJz07CqgAD++yGAAAAGRtP/OA2dicp2Lm6cDBc0AmCcaxTp7fglENMQWpKJrznzi4RXJL3nBe+/KU2OXL0CgQwLI67gxU+dW/TThkQF6o0SL3h6NuvZeMpOGppObCcn5STjVp5OOhpAURwtjpFTyf9iIMGSZIU0MiyHaMmCCNZ0HjWeCKNb8nu5N83bduD1tpjVzHUyu27jKRWJiMlQLs+8ls4DcGAZ5wNHPkR48sxFZT8azzfeRsC/RXUPesYH4odzjQr9Ws6moQbncNv7SwwGmEn13qSzxJtWMHu2P8gzYqjgO6IYCyMJhgJURRveyvAWMKJCZNNFOwiuMFQ0J09EqM4WnOogrqWH8FChFvUrdHf7EToVvj9++eJ4/wxu/HefOFFGMmblwLu3iGpfpSWi+6gmZFoxEbu1p3JZbiAEI3QTRN3H8xHi4dK41kDBBZ8IUthmYaYTmiVJ0+X95JxVCVwZaIFuS52Lc0QVKRXbsE88cThwcr9rTwuSsunjv4UPcJXrIuIBqN5WtwWKkATDIHYhyVnsUXD8RiHZpkalZN74D4XS2KJUYH5cE8KTXjUFqiSX19ClBjVXccJ1oJtZfXQpjVKzXZg54D1p9g8yxIsHOsp4sqjwKen5N5ZOxU4g34kYOLYR41qO7ZVLxmDf28dVnanmzojw1utM8Kfq/4kovClc852GPOMs7KYZnB+jYPKL06LM7EF5ABDXLrAFDmkFj4ZTZG7l+HWbMaC8NsBT/IvcY+6ONiBqOqPSQrnccX9MolvIX+EqczW84T9H1SO8ALvBtQGXpKvpK6tKnAW+wLsyP395C3f0vY3yo4ndIwE/tiN75mPNv2coURYLFn9/Q3uc4YbGiCIkK/vQhxMnvB5NN1eGQArs+ZlDXSivYXAN/iycYrwTEBw2rFH5oihilFvZKG/b02rnKCaZ5rqQpXHqJLpazlTzVSVQAYJJdjK7qGsXHoksGcp2kMVb2t/WbUdcTD+42kc0wxoh3c78t+b1JBJqkgb8g6JzExY5i9AkD7gxcvHzjkSznnCkfN75jy9CR6JKLRH0yTJgAAAA","alphafly3":"data:image/webp;base64,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","arahi8":"data:image/webp;base64,UklGRvgEAABXRUJQVlA4WAoAAAAQAAAAbwAAbwAAQUxQSBQCAAABkEbbtuk89yF+cVLbtm3btm3btm3btm3bZvy9e6ponHf/to2ICSD//f/P5nzWNFGRWg/IyzGqE40ZxUWhAwBdZmFTTwBaPzLdRQCAp/WdLJoMAB/iRDQOgn/blp49UwEApkeSzhcC4H1RjjVD//geO4IBEK68v2tCtgz7A6ZEMDAsAPhYlCkLg/iKhWXaGAl4epoFZnAXg8DHilwIvsIDiObLCqyw+YKBfKxtekmlTdT8NIXofqkqsKE0hEu/vf0UA9GnZ4emY8HAsBB+zciAzbjgy664ShOeIQN4M7qchVNSvBh0AOC5Nrl1pawJLVqBU0A+UK7s+fz84sXLF07tn1+GR1RJQeGv1uCpyQjYxaEpzYqAHU06ygioiEWq62NFByTcQgqMpPWQSCeBGblw6Na4mPFUjaM0MFPuTHA2ZoY8m0OSXmbEt7o8QSqMoUygvQlefjYL/F0ERERcSpVG75XgCGq+5Uc8lEZBXl1UTdAn2y1jiaarn4pgVxmstrgNtrgUceziinQcwa4vnDtbppQJE+bqtOTqR58sxyDxU+q6P8XAc0SBgjlJ0sTx41gtFmvCIpXLVq7deND05Zu37zm4/+jpO7cfPHj+5v3945eevb4/a5Pb5fa6P++8cHlvg2rl0ls4olyOF0VREAWB5zleFDU6yWQymy0mSTKZzDabxWyULCa1yu5wOh1mtSiI5G+RVlA4IL4CAADwEACdASpwAHAAPpVInkslpCKhpfcamLASiWcA1MwJXbxEl5FP6iwf7vHwxSqRz1IQ0gu4Q0gu1FT3lPg1w9bp1QJsVJSwT93Sd6YE+z5ESQIr8GxkwheHgpziFYir5OV0I4ginj9abZCOnGTUiR+bGemXGXp7fcDC+8lxbJDBKGMvBnt4/t8E5hfH/6+z6pAA/uveLwZapW/6qp6/BCfcvFzZjpaYAAAA0eJx3faauPBZy49WWKZcuTNLmetTIkrLXf56qrwzUGd886YYsmyz/GbKo9eFKy4Sl2GU+H1/56qxY3zGwslqCp2OJvNOCpNpFYi6vaT8uLQW758jZN5ANG+7Z+bn5DeSoH/LM8xGGGfOnQ7aezxLn5+9o6hZFrwT0jWQo3Z0xr71zIox5Fv1F/xXfit0M6bfC8nGIFiIw4ofDLb3zUbTysibOJ/AfKfyjVOI0jFHjTxcLxKomU9z5Gb0209d1XSlyhNjaJ3Bu+VMdPsUDPsSOVZBiCKH3lNf/9jHMZvLQD5AX35IGfFY3zVJO+7XB83x1DmP2lOsDJiEslCIxNi9GhmaklMaTcHedvPQyqxil+ofWtLXBOpozIZaRy5kigwLDX7PKJPtgQkS9FM/7RsysTkRSfPFwD6gV8zWwGKzNJmLV3qW7hTVU+EsGltMihYlGAn+YPtaVSJkwl5tjBMSSDK0/LFIKWH4bm7YTbYzZs4NhgFMVvqm505yVZX4BzrunjpKIGLl/jKqXHw1kdKEDb80Iarvpbv+zotYImGCkmL8cnm5hGOSiJhYcLCFqqCilwuxVi8tHjMFyixcQhSyveK7GEZ2h6IEJqQwCj004RVvn//yOZwqDRc7EHNFhxVK2TpL0+sNR2a812T0iXAeDmY1/06c2xrQG2mHRqbwycqCnqV9w9wlIguyIQBXwJwGXNVQAAA=","glygts22":"data:image/webp;base64,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","speedgoat6":"data:image/webp;base64,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","agravic4":"data:image/webp;base64,UklGRqoDAABXRUJQVlA4IJ4DAACQEwCdASpwAHAAPpVKn0ulpCKhorgKeLASiWcALAB/4L418mCsa7a0mmq4/h2Gehd1DiT0n0zrx+/VvsFdK/0VSOGJuOpAAJE+tjUgAEifUu7N8e7X3+COqOVlKWdA6QrfL22XXbUX0KmgVX/FUBue1h2NP/sDtrYLuuLfnpUzFS9SlB7DYUXE8hTbwqn4q60T8g8wYQncGhXBqU+K8/iZNR4dqQAA/vhuAvFwAAAOrN9yrCAyZbdL6J/6nUGohInqA+/nd6R5ahijK4ojRjii3h/lciYr96mXTvIS/8RqHUSWWtn+Zl+TvZ9Hjzwwn5xgOCBSbKycr/c125OiOUhUnUNwUw5Syhlhhoo7f3Oq5uXUpJUc2ZsD4kEG95mTeRXz17+enixqnlkmR3JEKnnIuuqq93dfLhaLGUY7z5h2tdqyHEpdTxH6B9AmzE49euNC71j68cRXvwu/UeoKqFhrmY4ZI4iUkjwctNp1MCT68pMM8OCLg3OCqADIvUz4K9kIyhpAICj9arD2CFJo4vavmeQMnpTkakAhOhFYtuAMOKG4+w7v2jH8eNHr42zja5l0JKXp2ZHKYfAiHTdpxCSegDeGCouwJsuShlRXm1/cVqjJtLN30DC7XXyLOijbwuLXFfT4YP0PVBEI74t+LjwmPNFg6glP9DOGjod6aYWXSr9OpTwp+tJ5ZLLGN5Xy1a1vD2L9/5HB3bG51QKSFSq+I3sFavSk6DLU8B6d62+FLtGu5/s2KapIwsF83fEl9AfXfDX93Gn85v6Zs7l8ie5kjhEixHgbL/37Fu45RN+3zstvipp7w3W9vdE8aS3bovqx6aySe17+Xy1l3OGvoAioRIar6Punmv7zTehGtx6UR0mWL1T+WcfZf4oFCWZ9jdEK4F6g9JyXi3X5nuqLHOUQe0p//KqB29IkXrHcVERq1cjasVagEHAxSt8r6XzarnD8/sMtmZuTuuIhxWjTAUtJI6AT+ZG8WdHE8bIVabUZZfIhi7n5FSM1nolMM8nIumNQKvJtC1KF9DxcmbFiZx0y6jfGwTi1UA4MMhPlrLnlNVfAVBNo3E34VOWJl/BDyicTDVZjrJOkVr9XOfeb6uc+pw0tRSWusEaYYY4DGgkJz4o9byazM/zK9RntRM7VpbwBSrG/HAUkw4RcF8WTip4ecPEqEKtmMy99as4asbzScanU1zaF3pSVp1DKYWbXuBrOYtHkQJNDfBMCxuoAAA==","editorial":"data:image/webp;base64,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"};
+
+  var ROWS = [
+    ['nova5','asics-novablast-5','ASICS','노바블라스트 5','바운시 데일리 트레이너. 다양한 페이스를 한 켤레로','데일리','255g','169,000','리뷰 종합',0,1],
+    ['ghost17','brooks-ghost-17','BROOKS','고스트 17','부드러운 착지감의 표준 입문화','입문화','289g','169,000','외부 랩 확인',1,1],
+    ['snrise3','adidas-supernova-rise-3','ADIDAS','슈퍼노바 라이즈 3','폼이 20% 더 부드러워진 프리미엄 쿠션화','쿠션화','270g','159,000','리뷰 종합',0,0],
+    ['boston13','adidas-boston-13','ADIDAS','보스턴 13','훈련과 레이스를 겸하는 템포 트레이너','데일리','254g','179,000','리뷰 종합',0,0],
+    ['velocity4','puma-velocity-nitro-4','PUMA','벨로시티 나이트로 4','가볍고 반응성 좋은 가성비 입문화','입문화','224g','179,000','외부 랩 확인',1,1],
+    ['ghostmax3','brooks-ghost-max-3','BROOKS','고스트 맥스 3','두꺼운 폼으로 충격을 크게 줄인 맥시멀','쿠션화','303g','179,000','외부 랩 확인',1,1],
+    ['vomero18','nike-vomero-18','NIKE','보메로 18','푹신하면서도 반발이 남는 맥스 쿠션','쿠션화','298g','189,000','외부 랩 확인',1,1],
+    ['arahi8','hoka-arahi-8','HOKA','아라히 8','평발·과내전을 위한 가벼운 안정화','안정화','259g','199,000','외부 랩 확인',1,1],
+    ['clifton10','hoka-clifton-10','HOKA','클리프톤 10','로커로 굴러가는 대표 입문화','입문화','275g','199,000','외부 랩 확인',1,1],
+    ['speedgoat6','hoka-speedgoat-6','HOKA','스피드고트 6','젖은 바위까지 잡는 트레일 데일리','트레일','278g','205,000','외부 랩 확인',1,1],
+    ['evosl','adidas-adizero-evo-sl','ADIDAS','아디제로 Evo SL','데일리 가격에 레이싱 폼을 넣은 이례적 구성','데일리','223g','209,000','외부 랩 확인',1,1],
+    ['glygts22','brooks-glycerin-gts-22','BROOKS','글리세린 GTS 22','쿠션에 가이드레일을 더한 안정화','안정화','305g','209,000','외부 랩 확인',1,1],
+    ['agravic4','adidas-terrex-agravic-4','ADIDAS','테렉스 아그라빅 4','진흙·테크니컬 지형에 강한 올라운드 트레일','트레일','283g','209,000','외부 랩 확인',1,0],
+    ['speed5','saucony-endorphin-speed-5','SAUCONY','엔돌핀 스피드 5','나일론 플레이트로 훈련과 레이스 모두','데일리','241g','219,000','외부 랩 확인',1,0],
+    ['sb2','asics-superblast-2','ASICS','슈퍼블라스트 2','일상 훈련까지 소화하는 슈퍼트레이너','레이싱','252g','249,000','외부 랩 확인',1,1],
+    ['alphafly3','nike-alphafly-3','NIKE','알파플라이 3','풀코스 기록 단축을 위한 최상위 레이서','레이싱','201g','349,000','외부 랩 확인',1,0],
+    ['','li-ning-red-hare-9-pro','LI-NING','레드헤어 9 프로','10만 원대 데일리 트레이너','데일리','222g','140,000','외부 랩 확인',1,0],
+    ['','new-balance-1080-v14','NEW BALANCE','1080 V14','142 SA 충격흡수','쿠션화','285g','199,000','외부 랩 확인',1,1],
+    ['','nike-pegasus-premium','NIKE','페가수스 프리미엄','ZoomX+ReactX 듀얼 폼','입문화','308g','279,000','외부 랩 확인',1,0],
+    ['','asics-superblast-3','ASICS','슈퍼블라스트 3','239g 슈퍼트레이너','레이싱','239g','259,000','리뷰 종합',0,0],
+    ['','new-balance-860-v15','NEW BALANCE','860 V15','더 넓어진 힐과 이중 밀도 Fresh Foam X','안정화','330g','189,000','리뷰 종합',0,1],
+    ['','hoka-speedgoat-7','HOKA','스피드고트 7','스피드고트의 반발력 업그레이드','트레일','281g','219,000','외부 랩 확인',1,1],
+    ['','asics-novablast-6','ASICS','노바블라스트 6','전족 반발을 더한 바운시 데일리','데일리','249g','179,000','외부 랩 확인',1,1],
+    ['','brooks-glycerin-22','BROOKS','글리세린 22','DNA Tuned가 체중별로 다르게 반응하는…','쿠션화','293g','209,000','외부 랩 확인',1,1],
+    ['','li-ning-red-hare-9','LI-NING','레드헤어 9','10만 원 미만 입문 적토마','입문화','320g','95,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-pro-4','SAUCONY','엔돌핀 프로 4','118.9mm 광폭 전족부','레이싱','220g','269,000','외부 랩 확인',1,0],
+    ['','saucony-hurricane-26','SAUCONY','허리케인 26','IncrediLux ATPU 폼','안정화','262g','219,000','리뷰 종합',0,1],
+    ['','nike-acg-zegama-trail','NIKE','ACG 제가마 트레일','제가마 3세대, ACG로 이관','트레일','336g','219,000','외부 랩 확인',1,0],
+    ['','puma-deviate-pure-nitro','PUMA','디비에이트 나이트로 퓨어','플레이트 없는 100% PEBA 슈퍼폼','데일리','220g','189,000','외부 랩 확인',1,0],
+    ['','nike-vomero-plus','NIKE','보메로 플러스','Full-length ZoomX 업그레이드','쿠션화','289g','209,000','리뷰 종합',0,1],
+    ['','adidas-supernova-rise-2','ADIDAS','슈퍼노바 라이즈 2','와이드 옵션 제공','입문화','257g','149,000','리뷰 종합',0,1],
+    ['','puma-deviate-nitro-elite-3','PUMA','디비에이트 나이트로 엘리트 3','77% 에너지 리턴을 29만원에','레이싱','204g','289,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-inspire-21','MIZUNO','웨이브 인스파이어 21','km당 약 177원','안정화','286g','159,000','외부 랩 확인',1,1],
+    ['','hoka-tecton-x-3','HOKA','테크톤 X 3','울트라 트레일 슈퍼슈즈','트레일','275g','339,000','외부 랩 확인',1,0],
+    ['','nike-pegasus-plus','NIKE','페가수스 플러스','244g 경량에 Full-length ZoomX','데일리','244g','219,000','리뷰 종합',0,0],
+    ['','brooks-hyperion-max-3','BROOKS','하이페리온 맥스 3','DNA Gold PEBA로 무장한 브룩스 첫 진성…','쿠션화','283g','219,000','외부 랩 확인',1,0],
+    ['','nike-pegasus-41','NIKE','페가수스 41','15만원대에 550km 굴리는','입문화','281g','159,000','외부 랩 확인',1,1],
+    ['','puma-deviate-nitro-elite-4','PUMA','디비에이트 나이트로 엘리트 4','170g 초경량과 더 부드러워진 ATPU 폼','레이싱','170g','289,000','외부 랩 확인',1,0],
+    ['','saucony-guide-18','SAUCONY','가이드 18','카야노의 절반 가격','안정화','278g','159,000','외부 랩 확인',1,1],
+    ['','new-balance-hierro-v9','NEW BALANCE','히에로 v9','로드투트레일 쿠션 올라운더','트레일','309g','189,000','외부 랩 확인',1,0],
+    ['','nike-rival-fly-4','NIKE','라이벌 플라이 4','236g 경량 + Cushlon 3.0','데일리','236g','139,000','리뷰 종합',0,0],
+    ['','asics-sonicblast','ASICS','소닉블라스트','카본 플레이트 맥시멀','쿠션화','255g','229,000','외부 랩 확인',1,0],
+    ['','saucony-ride-18','SAUCONY','라이드 18','255g에 통기성 5/5','입문화','255g','159,000','외부 랩 확인',1,1],
+    ['','adidas-adios-pro-4','ADIDAS','아디제로 아디오스 프로 4','5개 Energy Rods','레이싱','200g','299,000','외부 랩 확인',1,0],
+    ['','nike-structure-26','NIKE','스트럭처 26','14만원대에 600km 굴리는','안정화','296g','169,000','외부 랩 확인',1,1],
+    ['','salomon-pulsar','SALOMON','펄사','센스 라이드 후속 올라운더','트레일','290g','210,000','외부 랩 확인',1,0],
+    ['','adidas-adizero-sl2','ADIDAS','아디제로 SL2','듀얼 폼 구조, 보스턴 입문자용 경량 멀티 트레이너','데일리','245g','149,000','리뷰 종합',0,1],
+    ['','hoka-bondi-9','HOKA','본디 9','303g 최대 쿠션','쿠션화','303g','229,000','외부 랩 확인',1,1],
+    ['','nike-pegasus-42','NIKE','페가수스 42','16만원대 풀 렝스 Air Zoom + 와이드 옵션','입문화','286g','169,000','외부 랩 확인',1,1],
+    ['','brooks-hyperion-elite-5','BROOKS','하이페리온 엘리트 5','76.9% 에너지 리턴','레이싱','204g','299,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-horizon-8','MIZUNO','웨이브 호라이즌 8','미디얼 러버월 + Wave','안정화','323g','179,000','외부 랩 확인',1,1],
+    ['','salomon-ultra-glide-4','SALOMON','울트라 글라이드 4','맥스쿠션 울트라 — RelieveSphere 암반…','트레일','295g','230,000','외부 랩 확인',1,1],
+    ['','saucony-kinvara-16','SAUCONY','킨바라 16','198g 초경량 + 4mm 드롭','데일리','198g','159,000','외부 랩 확인',1,0],
+    ['','brooks-glycerin-max','BROOKS','글리세린 맥스','42mm 스택 + 148 SA','쿠션화','305g','239,000','외부 랩 확인',1,1],
+    ['','saucony-ride-19','SAUCONY','라이드 19','255g에 개선된 PWRRUN+','입문화','255g','179,000','외부 랩 확인',1,1],
+    ['','hoka-rocket-x-3','HOKA','로켓 X 3','220g 듀얼 PEBA','레이싱','220g','299,000','외부 랩 확인',1,0],
+    ['','new-balance-860-v14','NEW BALANCE','860 V14','듀얼 폼 10.9/23.8 HA','안정화','295g','179,000','외부 랩 확인',1,1],
+    ['','salomon-s-lab-pulsar-4','SALOMON','S/LAB 펄사 4','엘리트 기술 트레일 레이서','트레일','247g','340,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-rider-29','MIZUNO','웨이브 라이더 29','76.7mm 넓은 토박스','데일리','258g','169,000','외부 랩 확인',1,1],
+    ['','hoka-mach-x-3','HOKA','마하 X 3','PEBA+Pebax','쿠션화','264g','249,000','외부 랩 확인',1,0],
+    ['','new-balance-880-v15','NEW BALANCE','880 V15','40mm 맥시멀 스택','입문화','286g','189,000','외부 랩 확인',1,1],
+    ['','saucony-endorphin-pro-5','SAUCONY','엔돌핀 프로 5','206g에 슬롯 카본 플레이트','레이싱','206g','299,000','외부 랩 확인',1,0],
+    ['','saucony-guide-19','SAUCONY','가이드 19','더 부드러워진 폼 + 초광폭 플랫폼','안정화','298g','179,000','외부 랩 확인',1,1],
+    ['','asics-gel-venture-10','ASICS','젤 벤처 10','89,000원 트레일 입문','트레일','322g','89,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rider-30','MIZUNO','웨이브 라이더 30','30세대 대개편 — 스택 +4~6mm','데일리','267g','179,000','외부 랩 확인',1,1],
+    ['','new-balance-sc-trainer-v3','NEW BALANCE','SC Trainer V3','8.8 HA 소프트+카본','쿠션화','278g','249,000','외부 랩 확인',1,1],
+    ['','on-cloudrunner-2','ON','클라우드러너 2','힐 카운터 5/5 최강 안정성','입문화','275g','189,000','외부 랩 확인',1,0],
+    ['','nike-vaporfly-4','NIKE','베이퍼플라이 4','v3 대비 13% 경량화(166g)','레이싱','166g','309,000','외부 랩 확인',1,0],
+    ['','brooks-adrenaline-gts-25','BROOKS','아드레날린 GTS 25','카야노 절반 가격에 GuideRails','안정화','300g','189,000','외부 랩 확인',1,1],
+    ['','adidas-terrex-agravic-speed-ultra','ADIDAS','테렉스 아그라빅 스피드 울트라 2','2세대 트레일 슈퍼슈즈','트레일','265g','279,000','외부 랩 확인',1,0],
+    ['','hoka-mach-6','HOKA','마하 6','232g+65.4% 에너지','데일리','232g','185,000','외부 랩 확인',1,1],
+    ['','asics-megablast','ASICS','메가블라스트','48mm 맥시멀인데 218g','쿠션화','218g','299,000','외부 랩 확인',1,0],
+    ['','on-cloudsurfer-2','ON','클라우드서퍼 2','CloudTec Phase의 세련된 전환감','입문화','254g','199,000','외부 랩 확인',1,0],
+    ['','new-balance-sc-elite-v5','NEW BALANCE','SC Elite V5','198g+74.8% 에너지','레이싱','198g','319,000','외부 랩 확인',1,1],
+    ['','asics-gel-kayano-32','ASICS','젤 카야노 32','평발 교정의 끝판왕','안정화','300g','199,000','리뷰 종합',0,1],
+    ['','asics-metafuji-trail','ASICS','메타후지 트레일','카본 플레이트 트레일 레이서','트레일','258g','279,000','리뷰 종합',0,0],
+    ['','new-balance-rebel-v5','NEW BALANCE','레벨 V5','220g에 11.5 HA 소프트','데일리','220g','189,000','외부 랩 확인',1,0],
+    ['','new-balance-1080-v15','NEW BALANCE','1080 V15','216g 경량 쿠션화','쿠션화','216g','209,000','외부 랩 확인',1,1],
+    ['','asics-metaspeed-edge-plus','ASICS','메타스피드 엣지+','빠른 피치로 승부한다','레이싱','208g','329,000','리뷰 종합',0,1],
+    ['','asics-gel-kayano-33','ASICS','젤 카야노 33','느린 페이스엔 부드럽고','안정화','298g','199,000','외부 랩 확인',1,1],
+    ['','nike-ultrafly','NIKE','울트라플라이','트레일 최초 ZoomX + 카본','트레일','299g','299,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-azura','SAUCONY','엔돌핀 아주라','240g에 PWRRUN PB 슈퍼폼','데일리','240g','189,000','외부 랩 확인',1,0],
+    ['','nike-vomero-premium','NIKE','보메로 프리미엄','역대 최고 50mm 스택','쿠션화','326g','289,000','리뷰 종합',0,0],
+    ['','asics-metaspeed-sky-plus','ASICS','메타스피드 스카이+','보폭 넓은 스트라이드 러너의 서브3 파트너','레이싱','205g','329,000','외부 랩 확인',1,1],
+    ['','on-cloudrunner-3','ON','클라우드러너 3','힐 가이던스가 확실한 On식 안정화','안정화','317g','199,000','외부 랩 확인',1,0],
+    ['','mizuno-neo-vista-3','MIZUNO','네오 비스타 3','SA 167 극쿠션 슈퍼트레이너','데일리','266g','219,000','외부 랩 확인',1,0],
+    ['','li-ning-red-hare-9-ultra','LI-NING','레드헤어 9 울트라','10만 원대 PEBA 맥스쿠션','쿠션화','246g','150,000','외부 랩 확인',1,0],
+    ['','hoka-cielo-x1','HOKA','씨엘로 X1','208g에 46mm PEBA 스택','레이싱','208g','329,000','외부 랩 확인',1,0],
+    ['','saucony-hurricane-25','SAUCONY','허리케인 25','PEBA + 크래들 듀얼 구조','안정화','286g','199,000','외부 랩 확인',1,1],
+    ['','on-cloudflow-5','ON','클라우드플로우 5','Speedboard가 만드는 날카로운 전환','데일리','278g','219,000','외부 랩 확인',1,0],
+    ['','asics-gel-nimbus-28','ASICS','젤 님버스 28','43.5mm 스택의 편안함','쿠션화','281g','199,000','외부 랩 확인',1,1],
+    ['','on-cloudboom-strike','ON','클라우드붐 스트라이크','72.1% 리턴 + 겨울 6% 경화','레이싱','201g','329,000','외부 랩 확인',1,0],
+    ['','hoka-gaviota-6','HOKA','가비오타 6','J-Frame 최강 안정','안정화','299g','239,000','리뷰 종합',0,1],
+    ['','adidas-hyperboost-edge','ADIDAS','하이퍼부스트 엣지','플레이트 없이 45mm','데일리','247g','249,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-2','ON','클라우드몬스터 2','더블 CloudTec의 독특한 착지감','쿠션화','292g','219,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-elite-2','SAUCONY','엔돌핀 엘리트 2','80.6% 에너지 리턴','레이싱','197g','339,000','외부 랩 확인',1,0],
+    ['','puma-deviate-nitro-4','PUMA','디비에이트 나이트로 4','PEBAX 듀얼폼 + 카본 PWRPLATE','쿠션화','250g','219,000','리뷰 종합',0,1],
+    ['','mizuno-hyperwarp-elite','MIZUNO','하이퍼워프 엘리트','170g에 38mm 스택','레이싱','170g','349,000','리뷰 종합',0,0],
+    ['','on-cloudmonster-3','ON','클라우드몬스터 3','더 넓어진 핏과 강해진 록커','쿠션화','295g','229,000','리뷰 종합',0,0],
+    ['','saucony-endorphin-elite-3','SAUCONY','엔돌핀 엘리트 3','80%대 반발은 그대로','레이싱','207g','369,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-3-hyper','ON','클라우드몬스터 3 하이퍼','무플레이트 슈퍼트레이너','쿠션화','271g','259,000','리뷰 종합',0,0],
+    ['','asics-metaspeed-ray','ASICS','메타스피드 레이','129g 초경량, 81% 에너지 리턴의 전족부 특화…','레이싱','129g','399,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-hyper','ON','클라우드몬스터 하이퍼','몬스터 2에서 34g 뺀 Pebax 경량판','쿠션화','258g','259,000','외부 랩 확인',1,0],
+    ['','mizuno-hyperwarp-pure','MIZUNO','하이퍼워프 퓨어','139g 극한 경량','레이싱','139g','399,000','외부 랩 확인',1,0],
+    ['','on-cloudmonster-3-hyper-lightspray','ON','클라우드몬스터 3 하이퍼 라이트스프레이','로봇이 만든 어퍼','쿠션화','205g','319,000','외부 랩 확인',1,0],
+    ['','asics-magic-speed-5','ASICS','매직스피드 5','193g에 포크형 카본','레이싱','193g','229,000','외부 랩 확인',1,0],
+    ['','mizuno-wave-sky-9','MIZUNO','웨이브 스카이 9','44mm 질소 주입 폼','쿠션화','290g','189,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rebellion-flash-2','MIZUNO','웨이브 리벨리온 플래시 2','극단적 힐 베벨 로커','레이싱','239g','189,000','외부 랩 확인',1,0],
+    ['','puma-magnify-nitro-3','PUMA','매그니파이 나이트로 3','PEBA 맥시멀 쿠션을 20만원 이하에','쿠션화','264g','199,000','리뷰 종합',0,0],
+    ['','asics-magic-speed-4','ASICS','매직스피드 4','22만원 카본 플레이트','레이싱','237g','199,000','리뷰 종합',0,0],
+    ['','saucony-triumph-23','SAUCONY','트라이엄프 23','풀 PEBA 폼을 19만원대에','쿠션화','272g','199,000','외부 랩 확인',1,1],
+    ['','mizuno-wave-rebellion-flash-3','MIZUNO','웨이브 리벨리온 플래시 3','TPEE+EVA 듀얼 폼 업그레이드','레이싱','244g','199,000','리뷰 종합',0,0],
+    ['','on-cloudsurfer-max','ON','클라우드서퍼 맥스','부드럽기보다 안정적인 CloudTec Phase','쿠션화','292g','219,000','외부 랩 확인',1,0],
+    ['','nike-streakfly-2','NIKE','스트릭플라이 2','트랙 스파이크급 128g','레이싱','128g','219,000','외부 랩 확인',1,0],
+    ['','puma-deviate-nitro-3','PUMA','디비에이트 나이트로 3','22만원대 카본 슈퍼트레이너','쿠션화','268g','219,000','리뷰 종합',0,0],
+    ['','nike-zoom-fly-6','NIKE','줌 플라이 6','베이퍼플라이 반값','레이싱','248g','229,000','외부 랩 확인',1,0],
+    ['','saucony-endorphin-trainer','SAUCONY','엔돌핀 트레이너','IncrediRUN 폼을 매일 훈련에','쿠션화','285g','219,000','외부 랩 확인',1,0],
+    ['','mizuno-hyperwarp-pro','MIZUNO','하이퍼워프 프로','201g에 39mm 스택','레이싱','201g','319,000','리뷰 종합',0,0],
+    ['','puma-magmax-nitro-2','PUMA','매그맥스 나이트로 2','엘리트 슈퍼폼 + 훈련용 내구성','쿠션화','268g','239,000','리뷰 종합',0,0],
+    ['','puma-fast-r-nitro-elite-3','PUMA','패스트알 나이트로 엘리트 3','173g 초경량 + 80%+ 리턴','레이싱','173g','379,000','외부 랩 확인',1,0],
+    ['','brooks-glycerin-max-2','BROOKS','글리세린 맥스 2','312g에 47mm 스택','쿠션화','312g','249,000','외부 랩 확인',1,1],
+    ['','new-balance-balos-v1','NEW BALANCE','발로스 V1','261g에 PEBA 블렌드 폼','쿠션화','261g','259,000','리뷰 종합',0,1]
+  ];
+
+  /* ── 필터 상태 ─────────────────────────────────────────────
+     필터는 122개 전체를 대상으로 돌고, 그 결과에 노출 제한을 얹는다.
+     결과가 16개 이하면 제한 없이 전부 보여준다(§5.2). */
+  var BASE = 16, STEP = 24;
+  var filter = { key: 'all' };
+  var shown = BASE;
+
+  var FILTERS = {
+    all:      function () { return true; },
+    daily:    function (r) { return r[5] === '데일리'; },
+    cushion:  function (r) { return r[5] === '쿠션화'; },
+    beginner: function (r) { return r[5] === '입문화'; },
+    racing:   function (r) { return r[5] === '레이싱'; },
+    stable:   function (r) { return r[5] === '안정화'; },
+    trail:    function (r) { return r[5] === '트레일'; },
+    wide:     function (r) { return r[10] === 1; },
+    under20:  function (r) { return parseInt(r[7].replace(/,/g, ''), 10) <= 200000; }
+  };
+
+  function matched() { return ROWS.filter(FILTERS[filter.key] || FILTERS.all); }
+
+  function rowHtml(r) {
+    var src = IMGS[r[0]] || '';
+    return '<a class="row" href="/shoes/' + r[1] + '">' +
+      '<span class="row-th">' +
+        (src ? '<img src="' + src + '" alt="' + r[3] + '">'
+             : '<svg class="row-mark" viewBox="180 175 320 145" aria-hidden="true">' +
+               '<use href="#silOutline" stroke="currentColor" stroke-width="5"/></svg>') +
+      '</span>' +
+      '<span><span class="row-b">' + r[2] + '</span><span class="row-n">' + r[3] + '</span></span>' +
+      '<span class="row-d">' + r[4] + '</span>' +
+      '<span class="row-u">' + r[5] + '</span>' +
+      '<span class="row-w">' + r[6] + '</span>' +
+      '<span class="row-p">' + r[7] + '원</span>' +
+      '<span class="row-s' + (r[9] ? ' verified' : '') + '">' + r[8] + '</span>' +
+    '</a>';
+  }
+
+  function render() {
+    var list = matched();
+    var limit = list.length <= BASE ? list.length : Math.min(shown, list.length);
+
+    document.getElementById('idxRows').innerHTML =
+      list.slice(0, limit).map(rowHtml).join('');
+
+    /* 결과 수는 aria-live 로 안내한다 */
+    document.getElementById('resultN').innerHTML =
+      '<b>' + list.length + '</b>개가 현재 조건에 맞습니다';
+
+    var rest = list.length - limit;
+    var btn = document.getElementById('expandBtn');
+    var wrap = document.getElementById('expandWrap');
+    var fallback = document.getElementById('moreFallback');
+
+    if (rest <= 0) {
+      wrap.hidden = true;
+    } else {
+      wrap.hidden = false;
+      /* 마지막 단계(+24 두 번을 끝냈거나 남은 게 한 단계 이하)면 라벨을 바꾼다 */
+      btn.innerHTML = isLastStep(limit, list.length)
+        ? '전체 러닝화 보기 <span class="cnt">' + rest + '종 남음</span>'
+        : '러닝화 ' + STEP + '개 더 보기 <span class="cnt">' + limit + ' / ' + list.length + '</span>';
+    }
+    /* 무JS 폴백 <details> 는 JS 가 켜지면 숨긴다 */
+    if (fallback) fallback.hidden = true;
+  }
+
+  /* 노출 단계는 16 → 40 → 64 → 전체 세 번뿐이다. +24 를 무한히 반복하지 않는다 */
+  var FULL_AT = BASE + STEP * 2;   /* 64 — 여기서 다음 클릭이 마지막 */
+
+  function isLastStep(limit, total) {
+    return limit >= FULL_AT || total - limit <= STEP;
+  }
+
+  function expand() {
+    var total = matched().length;
+    shown = isLastStep(Math.min(shown, total), total) ? total : Math.min(shown + STEP, total);
+    render();
+  }
+
+  function bindChips() {
+    document.querySelectorAll('.chip').forEach(function (c) {
+      c.addEventListener('click', function () {
+        document.querySelectorAll('.chip').forEach(function (o) { o.setAttribute('aria-pressed', 'false'); });
+        c.setAttribute('aria-pressed', 'true');
+        filter.key = c.dataset.f;
+        shown = BASE;          /* 필터가 바뀌면 노출 제한을 처음으로 되돌린다 */
+        render();
+      });
+    });
+    document.getElementById('expandBtn').addEventListener('click', expand);
+  }
+
+  function fillImages(root) {
+    root.querySelectorAll('[data-img]').forEach(function (el) {
+      var k = el.getAttribute('data-img');
+      if (IMGS[k]) el.src = IMGS[k];
+    });
+  }
+
+  /* 히어로 연출 — 뷰포트에 들어오면 1회 재생. 연출 중에도 CTA 는 클릭 가능하다 */
+  function armHero(scope) {
+    var viz = scope.querySelector('.viz');
+    if (!viz) return;
+    var host = viz.closest('.home') || scope;
+    if (!('IntersectionObserver' in window)) { host.classList.add('run'); return; }
+    var io = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (e.isIntersecting) { host.classList.add('run'); io.disconnect(); }
+      });
+    }, { threshold: .3 });
+    io.observe(viz);
+  }
+
+  (function () {
+    var src = document.getElementById('src');
+    fillImages(src);
+    render();
+    bindChips();
+    armHero(src);
+  })();
+</script>
+
+</body>
+</html>
