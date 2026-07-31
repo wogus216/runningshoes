@@ -213,6 +213,9 @@
   @keyframes fitIn { 0%,78% { opacity: 0; } 88% { opacity: .32; } 100% { opacity: .19; } }
 
   /* ── 비교표 ── */
+  /* 좁은 폭에서 비교표가 본문을 밀어내지 않도록 표 자체가 스크롤 컨테이너 안에서 처리된다.
+     페이지 본문은 어떤 폭에서도 가로 스크롤이 생기지 않는다. */
+  .tw { overflow-x: auto; }
   table { border-collapse: collapse; width: 100%; background: var(--paper); }
   th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); font-size: 13px; vertical-align: top; }
   th { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--ink-soft);
@@ -554,7 +557,7 @@
     두 값 모두 <code>getBoundingClientRect().top + scrollY</code> / <code>body.scrollHeight</code> 기준입니다.
   </p>
 
-  <table>
+  <div class="tw"><table>
     <thead><tr><th>항목</th><th>현재 홈 (main)</th><th>새 홈 (시안)</th><th>변화</th></tr></thead>
     <tbody>
       <tr><td>전체 스크롤 길이 (1440)</td><td class="num">25,834px</td><td class="num">6,820px</td><td class="win">−73.6%</td></tr>
@@ -568,10 +571,10 @@
       <tr><td>인덱스 노출 방식</td><td class="num">122종 전량 렌더</td><td class="num">12·16행 + 점진 확장</td><td class="win">정적 링크 122개는 유지</td></tr>
       <tr><td>다크 영역 비중</td><td class="num">0%</td><td class="num">10.1~10.2%</td><td class="win">기준 22% 이하</td></tr>
     </tbody>
-  </table>
+  </table></div>
 
   <h3 class="sub-h">스크롤 길이 — 폭별 실측 (현재 홈의 높이는 폭에 비례하지 않는다)</h3>
-  <table>
+  <div class="tw"><table>
     <thead><tr><th>뷰포트 폭</th><th>현재 홈 (main)</th><th>새 홈 데스크톱 시안</th><th>새 홈 모바일 시안</th></tr></thead>
     <tbody>
       <tr><td>390</td><td class="num">25,412px</td><td class="num">9,432px</td><td class="num">7,028px</td></tr>
@@ -580,7 +583,7 @@
       <tr><td>1280</td><td class="num">25,834px</td><td class="num">6,820px</td><td class="num">6,945px</td></tr>
       <tr><td>1440</td><td class="num">25,834px</td><td class="num">6,820px</td><td class="num">6,945px</td></tr>
     </tbody>
-  </table>
+  </table></div>
   <p class="hint" style="margin-top:14px">
     <b>설계 문서의 「현행 41,722px」과 이 문서의 「25,834px」은 둘 다 맞습니다 — 잰 폭이 다릅니다.</b>
     현재 홈은 신발 그리드가 <b>768~1024 구간에서 2열</b>이 되며 높이가 <b>42,814px</b>까지 치솟고,
@@ -598,7 +601,7 @@
     정적 HTML 의 <code>&lt;a href&gt;</code> 를 센 값입니다(RSC 페이로드 <code>&lt;script&gt;</code> 는 제외).
     괄호 안은 중복 제거한 고유 목적지 수입니다.
   </p>
-  <table>
+  <div class="tw"><table>
     <thead><tr><th>목적지</th><th>현재 홈 (main)</th><th>새 홈 데스크톱</th><th>새 홈 모바일</th><th>판정</th></tr></thead>
     <tbody>
       <tr><td><code>/shoes/{slug}</code> 상세</td><td class="num">122 (122)</td><td class="num">126 (122)</td><td class="num">126 (122)</td><td class="win">유지 — 고유 122 동일</td></tr>
@@ -612,7 +615,7 @@
       <tr><td><code>/marathon</code>*</td><td class="num">3 (2)</td><td class="num">1 (1)</td><td class="num">1 (1)</td><td class="loss">−1 고유</td></tr>
       <tr><td><b>고유 목적지 합계</b></td><td class="num"><b>148</b></td><td class="num"><b>133</b></td><td class="num"><b>133</b></td><td class="loss">−15</td></tr>
     </tbody>
-  </table>
+  </table></div>
   <p class="ref-note">
     ⚠️ <b>승인 전 판단이 필요한 지점 — 내부링크 15개 감소.</b>
     핵심 자산인 <code>/shoes/</code> 122개는 그대로지만, 현재 홈 하단의 “Beyond Shoes” 배너가 사라지면서
@@ -645,7 +648,7 @@
 
   <h2 class="part-h">Part 3 — 레퍼런스 반영 위치</h2>
   <p class="part-p">섹션마다 어떤 레퍼런스의 어떤 원칙이 들어갔는지, 그리고 섹션당 2개를 넘지 않는지 확인합니다.</p>
-  <table>
+  <div class="tw"><table>
     <thead><tr><th>섹션</th><th>반영한 레퍼런스와 원칙</th><th>개수</th></tr></thead>
     <tbody>
       <tr><td>02 KineticHero</td><td>Nike — 대형 카피·리듬 · Awwwards — 정렬 모션</td><td class="num">2</td></tr>
@@ -658,7 +661,7 @@
       <tr><td>09 EditorialSection</td><td>Tracksmith — 에디토리얼</td><td class="num">1</td></tr>
       <tr><td>10 FinalRecommendationCTA</td><td>Bandit — 온도감 · Awwwards — 정렬 모션</td><td class="num">2</td></tr>
     </tbody>
-  </table>
+  </table></div>
   <p class="hint" style="margin-top:14px">섹션당 최대 <b>2개</b> — 2개 규칙을 넘지 않습니다.</p>
   <p class="ref-note">
     ⚠️ <b>근거 문서가 없습니다 — 표의 출처를 밝힙니다.</b>
