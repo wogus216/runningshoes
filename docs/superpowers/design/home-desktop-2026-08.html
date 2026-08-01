@@ -735,7 +735,8 @@
   .resume-top { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; margin-bottom: 18px; flex-wrap: wrap; }
   .resume-h { font-size: clamp(21px,2.6cqw,28px); font-weight: 780; letter-spacing: -0.028em; }
   .resume-clear { font-family: var(--mono); font-size: 10.5px; letter-spacing: 0.1em; color: var(--ink-soft); border-bottom: 1px solid var(--line); padding-bottom: 2px; }
-  .resume-clear:hover { color: var(--signal); border-color: var(--signal); }
+  /* .resume(03 재방문) 섹션은 paper-soft 배경 — signal-dark 단독으론 4.39:1로 미달이라 hover 시 surface 박스를 얹는다 */
+  .resume-clear:hover { color: var(--signal-dark); border-color: var(--signal); background: var(--surface); }
   .resume { display: grid; grid-template-columns: repeat(3,1fr); gap: 1px; background: var(--line); border: 1px solid var(--line); }
   @container (max-width: 760px) { .resume { grid-template-columns: 1fr; } }
   .res-i { background: var(--surface); padding: 18px 20px; display: flex; gap: 14px; align-items: center; }
