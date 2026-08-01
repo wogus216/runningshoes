@@ -1296,13 +1296,15 @@ git commit -m "feat(home): 홈 데이터 레이어 — 지표·고민 정의·�
 
 **Files:**
 - Create: `src/components/home/kinetic-hero.tsx`
-- Create: `src/components/home/hero-silhouette.tsx` (`.omc/design/hero-silhouette.tsx`를 옮기고 opacity 애니메이션 훅 추가)
+- Create: `src/components/home/hero-silhouette.tsx` (`docs/superpowers/design/hero-silhouette.tsx`를 옮기고 opacity 애니메이션 훅 추가)
+  <!-- 경로 정정 2026-08-01: Task 2에서 .omc 가 gitignore 라 docs/superpowers/design/ 으로 옮겨졌다 -->
+
 
 **Interfaces:**
 - Consumes: `HeroSilhouette`(Task 2), `track`(Task 7)
 - Produces: `export function KineticHero(): JSX.Element`
 
-- [ ] **Step 1: 정적 마크업부터 작성**
+- [x] **Step 1: 정적 마크업부터 작성**
 
 모션 없이 최종 상태만 렌더한다. 카피는 지시서 원문 그대로:
 키커 `KOREAN RUNNER FIT INDEX` / `감으로 고르지` + `않는다.`(둘째 줄만 signal) /
@@ -1310,12 +1312,12 @@ git commit -m "feat(home): 홈 데이터 레이어 — 지표·고민 정의·�
 
 `<h1>`은 페이지 전체에서 이것 하나다. CTA는 실제 `<a href="/recommend">`.
 
-- [ ] **Step 2: 사선 트랙과 데이터 레이어 추가**
+- [x] **Step 2: 사선 트랙과 데이터 레이어 추가**
 
 `--tilt: -9deg` 기준으로 트랙 레인 5줄, 기준선 4줄, 라벨 12개(잔류 4 + 소멸 8)를 배치한다.
 라벨은 기울어진 좌표계 안에 두되 라벨 자체를 역회전시켜 텍스트를 수평으로 유지한다.
 
-- [ ] **Step 3: 모션 적용 + 세션당 1회 게이트**
+- [x] **Step 3: 모션 적용 + 세션당 1회 게이트**
 
 ```tsx
 'use client';
@@ -1353,7 +1355,7 @@ function useHeroMotion() {
 CSS는 `.play` 클래스가 붙었을 때만 `animation-play-state: running`이 되게 하고,
 기본값은 최종 상태다. **애니메이션 중에도 CTA는 클릭 가능해야 하므로 오버레이를 두지 않는다.**
 
-- [ ] **Step 4: 첫 1초 인지 확인**
+- [x] **Step 4: 첫 1초 인지 확인**
 
 실루엣이 첫 프레임부터 불투명도 0.12로 보이는지 확인한다.
 
@@ -1362,7 +1364,7 @@ set -o pipefail && npm run build && npx serve out
 ```
 브라우저에서 홈을 열고 0.3초 시점 스크린샷을 찍어 신발 윤곽이 보이는지 육안 확인한다.
 
-- [ ] **Step 5: 커밋**
+- [x] **Step 5: 커밋**
 
 ```bash
 git add src/components/home/kinetic-hero.tsx src/components/home/hero-silhouette.tsx
