@@ -7,7 +7,7 @@ type StorageLike = {
   removeItem: (k: string) => void;
 };
 
-type TestGlobal = typeof globalThis & { window?: { localStorage: StorageLike } };
+type TestGlobal = Omit<typeof globalThis, 'window'> & { window?: { localStorage: StorageLike } };
 
 function memoryStorage(): StorageLike {
   const m = new Map<string, string>();

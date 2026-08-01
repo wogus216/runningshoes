@@ -1,7 +1,7 @@
 import { describe, it, expect, beforeEach, vi } from 'vitest';
 import { track, trackOnce, __resetOnceForTest } from '../analytics';
 
-type TestGlobal = typeof globalThis & { window: { gtag?: ReturnType<typeof vi.fn> } };
+type TestGlobal = Omit<typeof globalThis, 'window'> & { window: { gtag?: ReturnType<typeof vi.fn> } };
 
 describe('analytics', () => {
   beforeEach(() => {
