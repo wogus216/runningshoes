@@ -1,0 +1,472 @@
+/* 02 키네틱 히어로 — 시안 docs/superpowers/design/home-desktop-2026-08.html §히어로 이식
+ *
+ * 시안은 컨테이너 쿼리(@container)를 썼지만 히어로는 항상 뷰포트 전체 폭이라
+ * 여기서는 미디어 쿼리로 옮겼다(컨테이너 조상 없이 동작해야 하므로).
+ *
+ * 모션 길이는 --dur 하나로 제어한다 — 데스크톱 4.5s / 모바일 2.4s (스펙 §6).
+ */
+
+.hero {
+  --tilt: -9deg;        /* 트랙 사선 각도 — 전진·상승 */
+  --tilt-back: 9deg;
+  --dur: 4.5s;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--border);
+}
+
+/* 시안의 .wrap + .hero-in 을 한 규칙으로 합쳤다.
+   시안에서는 .hero-in 의 padding 단축 속성이 .wrap 의 좌우 32px 를 0 으로 덮어
+   1024px 에서 히어로 카피만 화면 끝에 붙는 결함이 있었다(finding-hero-padding.md). */
+.heroIn {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 0.94fr 1.06fr;
+  gap: 40px;
+  align-items: center;
+  padding: 68px 32px 76px;
+  min-height: 68svh;
+}
+
+/* ---------- 카피 ---------- */
+
+.hKicker {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.22em;
+  color: var(--secondary);
+  margin-bottom: 20px;
+}
+.hKicker::before {
+  content: "";
+  width: 26px;
+  height: 2px;
+  background: var(--accent);
+  transform: skewY(var(--tilt));
+}
+
+.hTitle {
+  font-size: clamp(44px, 7.2vw, 82px);
+  font-weight: 800;
+  line-height: 0.94;
+  letter-spacing: -0.042em;
+  margin-bottom: 22px;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+.hTitle em {
+  font-style: normal;
+  color: var(--accent);
+}
+
+.hSub {
+  color: var(--secondary);
+  font-size: 16px;
+  line-height: 1.62;
+  max-width: 33ch;
+  margin-bottom: 28px;
+  word-break: keep-all;
+}
+
+/* 오렌지 솔리드 면 ① — 히어로 주요 CTA. 페이지 전체에서 이것과 최종 밴드 2곳뿐이다(§3) */
+.hCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  font-size: 19px;
+  padding: 17px 26px;
+  border-radius: 2px;
+  min-height: 54px;
+  position: relative;
+}
+.hCta:hover { background: var(--signal-dark); }
+.hCta .arw {
+  font-family: var(--mono);
+  transition: transform 0.2s;
+}
+.hCta:hover .arw { transform: translateX(3px); }
+
+.hMeta {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  letter-spacing: 0.05em;
+  color: var(--secondary);
+  margin-top: 14px;
+}
+
+.hAlt {
+  position: relative;
+  display: inline-block;
+  margin-top: 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 3px;
+}
+
+/* ---------- 비주얼 ---------- */
+
+.viz {
+  position: relative;
+  aspect-ratio: 560/400;
+  width: 100%;
+}
+
+/* 트랙 레인 — 배경 사선. 아래로 갈수록 진해져 원근을 만든다 */
+.track {
+  position: absolute;
+  inset: -30% -25%;
+  pointer-events: none;
+}
+.lane {
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: var(--border);
+  transform: rotate(var(--tilt));
+}
+.lane:nth-child(1) { top: 30%; opacity: 0.2; }
+.lane:nth-child(2) { top: 41%; opacity: 0.28; }
+.lane:nth-child(3) { top: 53%; opacity: 0.36; }
+.lane:nth-child(4) { top: 66%; opacity: 0.46; }
+.lane:nth-child(5) { top: 80%; opacity: 0.58; }
+
+/* 스타트 라인 — 배경 요소이므로 얇고 조용하게 */
+.startline {
+  position: absolute;
+  left: 2%;
+  top: 12%;
+  bottom: 12%;
+  width: 1.5px;
+  background: var(--secondary);
+  transform: rotate(var(--tilt));
+  transform-origin: center;
+}
+.startlineTag {
+  position: absolute;
+  left: 2%;
+  top: 5%;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+}
+
+/* 기울어진 데이터 좌표계 — 라벨·기준선이 함께 산다 */
+.rig {
+  position: absolute;
+  inset: 0;
+  transform: rotate(var(--tilt));
+}
+
+.rail {
+  position: absolute;
+  left: -6%;
+  right: -6%;
+  height: 1px;
+  background: color-mix(in srgb, var(--primary) 34%, transparent);
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.rail::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -2px;
+  width: 5px;
+  height: 5px;
+  background: var(--accent);
+  transform: skewX(var(--tilt));
+}
+.railTag {
+  position: absolute;
+  left: -4%;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  transform: rotate(var(--tilt-back)) translateY(-50%);
+}
+
+/* 라벨은 기울어진 좌표계 안에 있지만 자체를 역회전시켜 텍스트를 수평으로 유지한다 */
+.lab {
+  position: absolute;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  padding: 3px 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--primary);
+  border-radius: 2px;
+  /* 최종 장면 기준값 — 기울어진 .rig 안에 있으므로 역회전시켜 텍스트를 수평으로 유지한다 */
+  transform: rotate(var(--tilt-back));
+}
+.name {
+  border-color: transparent;
+  background: none;
+  color: var(--secondary);
+  padding-left: 0;
+}
+/* 잔류 라벨 — 소형 텍스트라 --accent(3.03:1)가 아니라 --signal-dark(4.79:1)를 쓴다 */
+.keep {
+  border-color: var(--accent);
+  color: var(--signal-dark);
+  background: var(--surface);
+}
+
+/* 속도선 — 실루엣이 지나온 자국. 트랙과 같은 각도로 흐른다 */
+.streak {
+  position: absolute;
+  height: 2px;
+  background: var(--accent);
+  transform-origin: right center;
+  transform: rotate(var(--tilt)) scaleX(0);
+}
+
+/* 러닝화 와이어프레임 — 중립 SVG 실루엣(3켤레 외곽 구간 조합).
+   제품 사진이 아니라 선으로만 존재하는 도면이다. 발 윤곽·계측 틱과 viewBox가 같아
+   좌표가 정확히 맞는다. 두 겹으로 나눈 이유: 고스트는 첫 프레임부터 0.12로 남아야 하고(§4.6),
+   샤프는 왼쪽→오른쪽 클립 와이프로 뒤늦게 선명해져야 한다. 한 겹으로는 둘이 충돌한다. */
+.figWrap {
+  position: absolute;
+  inset: 0;
+}
+.sil,
+.fig {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+.silGhost { opacity: 0.12; }  /* 첫 1초 인지 — 모션과 무관하게 항상 보인다 */
+.silSharp { opacity: 0; }
+
+/* ---------- 최종 상태가 기본값 ----------
+ *
+ * 시안은 "0% 프레임에서 일시정지 → .run 으로 재생" 구조였지만, 그러면 JS가 실패했거나
+ * 세션 내 재방문(모션 이미 재생됨)일 때 히어로가 **0% 프레임에 멈춘다** — 라벨이 안 보이고
+ * 실루엣이 흐린 채로 남는다. 완료조건 15(JS 실패 시 핵심 화면 유지)에 어긋난다.
+ *
+ * 그래서 뒤집었다: **기본 = 최종 장면**, `.run` 이 붙을 때만 애니메이션을 얹는다.
+ * 각 키프레임의 100%가 아래 기본값과 같아서 재생이 끝나면 자연스럽게 이 상태로 수렴한다.
+ *   · JS 없음 / 애드블락 / 하이드레이션 실패 → 최종 장면 ✓
+ *   · 세션 내 재방문 → 최종 장면 ✓ (모션 반복 없음)
+ *   · prefers-reduced-motion → 최종 장면 ✓
+ */
+
+.viz .name,
+.viz .drop { opacity: 0; }              /* 제품명·소멸 라벨은 최종 장면에 없다 */
+.viz .rail { transform: scaleX(1); }
+.viz .streak { transform: rotate(var(--tilt)) scaleX(1); opacity: 0.3; }
+.viz .silGhost { opacity: 0; }          /* 최종 장면에서는 샤프만 남는다 */
+.viz .silSharp { opacity: 1; clip-path: inset(0 0 0 0); }
+.viz .figFoot { stroke-dashoffset: 0; opacity: 1; }
+.viz .figTick { opacity: 1; }
+.viz .figFit { opacity: 0.19; }
+
+/* ---------- 모션: .run 이 붙었을 때만 얹는다 ---------- */
+
+.run .viz .data { animation: labRun var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
+.run .viz .drop { animation: labOut var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
+.run .viz .name { animation: nameFade var(--dur) ease both; animation-delay: var(--d, 0s); }
+.run .viz .rail { animation: railRun var(--dur) cubic-bezier(0.25, 0.75, 0.3, 1) both; animation-delay: var(--d, 0s); }
+.run .viz .railTag { animation: fadeAt var(--dur) ease both; animation-delay: var(--d, 0s); }
+.run .viz .startline,
+.run .viz .startlineTag { animation: startIn var(--dur) ease both; }
+.run .viz .streak { animation: streakRun var(--dur) cubic-bezier(0.1, 0.8, 0.2, 1) both; animation-delay: var(--d, 0s); }
+
+/* 실루엣: 두 겹 모두 마지막에 전진(shoeAdvance). 샤프만 와이프·선명화.
+   고스트는 첫 프레임부터 .12로 보이다가(§4.6 첫 1초 인지) 샤프가 선명해지는 구간에
+   맞춰 사라진다 — 두 겹이 겹친 채 남으면 선이 두꺼워진다. */
+.run .viz .silGhost {
+  animation:
+    silGhostFade var(--dur) ease both,
+    shoeAdvance var(--dur) cubic-bezier(0.3, 0.6, 0.2, 1) both;
+}
+.run .viz .silSharp {
+  animation:
+    silReveal var(--dur) ease both,
+    silWipe var(--dur) cubic-bezier(0.35, 0.1, 0.2, 1) both,
+    shoeAdvance var(--dur) cubic-bezier(0.3, 0.6, 0.2, 1) both;
+}
+.run .viz .figFoot { animation: drawFoot var(--dur) cubic-bezier(0.4, 0.1, 0.2, 1) both; }
+.run .viz .figTick { animation: tickIn var(--dur) ease both; }
+.run .viz .figFit { animation: fitIn var(--dur) ease both; }
+
+/* CTA 화살표 — 마지막 장면에서 한 번 반응한다. .viz 밖이라 따로 재생시킨다.
+   카피와 CTA 자체는 움직이지 않는다(§4.3). */
+.run .hCta .arw { animation: ctaArrow var(--dur) cubic-bezier(0.3, 0.7, 0.3, 1) both; }
+.hCta:hover .arw { animation: none; transform: translateX(3px); }
+
+@keyframes labRun {
+  0%   { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+  13%  { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+  40%  { opacity: 1; transform: translate(0, 0) rotate(var(--tilt-back)); }
+  100% { opacity: 1; transform: translate(0, 0) rotate(var(--tilt-back)); }
+}
+@keyframes labOut {
+  0%   { opacity: 0; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+  13%  { opacity: 1; transform: translate(var(--dx), var(--dy)) rotate(var(--tilt-back)); }
+  40%  { opacity: 1; transform: translate(0, 0) rotate(var(--tilt-back)); }
+  60%  { opacity: 1; transform: translate(0, 0) rotate(var(--tilt-back)); }
+  72%  { opacity: 0; transform: translate(26px, -4px) rotate(var(--tilt-back)); }
+  100% { opacity: 0; transform: translate(26px, -4px) rotate(var(--tilt-back)); }
+}
+@keyframes nameFade {
+  0%   { opacity: 0; transform: rotate(var(--tilt-back)) translateX(-14px); }
+  13%  { opacity: 1; transform: rotate(var(--tilt-back)) translateX(0); }
+  36%  { opacity: 1; }
+  50%  { opacity: 0; transform: rotate(var(--tilt-back)) translateX(18px); }
+  100% { opacity: 0; }
+}
+/* 모바일 — 정렬 연출을 생략하고 등장 후 바로 최종 배치다(§6) */
+@keyframes labIn {
+  0%, 8%     { opacity: 0; transform: rotate(var(--tilt-back)); }
+  30%, 100%  { opacity: 1; transform: rotate(var(--tilt-back)); }
+}
+@keyframes railRun { 0%, 14% { transform: scaleX(0); } 40% { transform: scaleX(1); } 100% { transform: scaleX(1); } }
+@keyframes fadeAt { 0%, 22% { opacity: 0; } 42% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes startIn { 0%, 8% { opacity: 0; } 24% { opacity: 1; } 100% { opacity: 1; } }
+@keyframes streakRun {
+  0%, 40% { transform: rotate(var(--tilt)) scaleX(0); opacity: 0; }
+  52%     { transform: rotate(var(--tilt)) scaleX(1); opacity: 0.9; }
+  74%     { transform: rotate(var(--tilt)) scaleX(1); opacity: 0.34; }
+  100%    { transform: rotate(var(--tilt)) scaleX(1); opacity: 0.3; }
+}
+/* 와이어프레임이 왼쪽에서 오른쪽으로 드러난다 — 전진 방향과 같은 방향 */
+@keyframes silWipe {
+  0%, 38% { clip-path: inset(0 100% 0 0); }
+  64%     { clip-path: inset(0 0 0 0); }
+  100%    { clip-path: inset(0 0 0 0); }
+}
+/* 고스트 겹 — 샤프가 선명해지는 구간(38~64%)에 맞춰 물러난다 */
+@keyframes silGhostFade {
+  0%, 38%   { opacity: 0.12; }
+  64%, 100% { opacity: 0; }
+}
+/* 첫 프레임 .12 → 후반 1.0. 갑자기 나타나지 않고 서서히 선명해진다 */
+@keyframes silReveal {
+  0%   { opacity: 0.12; }
+  38%  { opacity: 0.12; }
+  64%  { opacity: 1; }
+  100% { opacity: 1; }
+}
+/* 마지막 장면 — 신발이 4~8px 전진하며 마무리 */
+@keyframes shoeAdvance {
+  0%, 80% { transform: translateX(0); }
+  92%     { transform: translateX(7px); }
+  100%    { transform: translateX(6px); }
+}
+/* CTA 화살표가 신발 전진 직후 한 번 반응한다 */
+@keyframes ctaArrow {
+  0%, 84% { transform: translateX(0); }
+  90%     { transform: translateX(5px); }
+  100%    { transform: translateX(0); }
+}
+@keyframes drawFoot {
+  0%, 60% { stroke-dashoffset: 1400; opacity: 0; }
+  63%     { opacity: 1; }
+  82%     { stroke-dashoffset: 0; opacity: 1; }
+  100%    { stroke-dashoffset: 0; opacity: 1; }
+}
+@keyframes tickIn { 0%, 66% { opacity: 0; } 84%, 100% { opacity: 1; } }
+/* 적합 영역은 CTA보다 강하면 안 된다 — 최대 .32, 최종 정지 .19 */
+@keyframes fitIn { 0%, 78% { opacity: 0; } 88% { opacity: 0.32; } 100% { opacity: 0.19; } }
+
+/* ---------- 모바일 (≤900px) ---------- */
+
+@media (max-width: 900px) {
+  .hero { --dur: 2.4s; }
+
+  .heroIn {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    padding: 40px 18px 44px;
+    min-height: 0;
+  }
+
+  .hTitle { font-size: clamp(37px, 10.8vw, 56px); }
+  .hSub { font-size: 15px; margin-bottom: 20px; max-width: none; }
+  .hCta { width: 100%; justify-content: center; font-size: 19px; }
+  /* 시각적 크기는 유지하고 히트 영역만 44px 로 넓힌다(finding-touch-targets.md).
+     min-height 를 쓰면 border-bottom 이 박스 하단으로 밀려 밑줄이 텍스트에서 떨어진다 —
+     에디토리얼 톤이 깨지므로 ::after 로 히트 영역만 확장한다(26px + 상하 11px = 48px). */
+  .hAlt { margin-top: 14px; }
+  .hAlt::after {
+    content: "";
+    position: absolute;
+    inset: -11px 0;
+  }
+
+  /* 비주얼을 키우고 CTA와의 간격을 좁혀, 첫 화면에서 러닝화 단서가 빨리 보이게 한다.
+     동시에 모션 요소는 데스크톱의 절반 이하로 덜어낸다(§6). */
+  .viz {
+    width: 106%;
+    margin-left: -2%;
+    margin-top: -10px;
+    aspect-ratio: 560/280;
+  }
+  .viz .startline,
+  .viz .startlineTag,
+  .viz .railTag,
+  .viz .drop,
+  .viz .name,
+  .viz .streak { display: none; }
+
+  .viz .keep { left: 5% !important; font-size: 10px; }
+  /* 정렬 연출 생략 — 등장 후 바로 최종 배치 */
+  .viz .data { animation-name: labIn; }
+
+  /* 실루엣 +15% 확대 — 좁은 화면에서 러닝화 단서가 먼저 읽히도록(스펙 §6).
+     래퍼에 걸어야 실루엣 전진 애니메이션(transform)과 충돌하지 않고,
+     실루엣·발 윤곽·계측 틱이 함께 확대돼 좌표가 어긋나지 않는다.
+
+     배율 1.643 = (400/280) × 1.15 두 항의 곱이다.
+       · 400/280 = 1.4286 — .viz 의 aspect-ratio 를 560/400 에서 560/280 으로 줄이면
+         viewBox(560×400)가 preserveAspectRatio="meet" 로 **높이에 맞춰** 축소돼
+         신발이 데스크톱 대비 0.7배가 된다. 이를 되돌려 데스크톱과 같은 크기로 만든다
+       · × 1.15 — 그 위에 스펙이 요구한 +15%
+     이 보정을 빼고 scale(1.15)만 걸면 실제로는 데스크톱보다 **작아진다**(실측 38.8% vs 48.2%).
+     비율은 유지한다 — 비균등 scale 금지. */
+  .figWrap {
+    transform: scale(1.643);
+    transform-origin: 58% 62%;
+  }
+}
+
+@media (max-width: 370px) {
+  .heroIn { padding-left: 15px; padding-right: 15px; }
+}
+
+/* ---------- 모션 감소 — 자동 모션 없이 최종 화면을 즉시 보여준다 ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  .viz *,
+  .hCta .arw { animation: none !important; }
+  .viz .data,
+  .viz .keep { opacity: 1; transform: rotate(var(--tilt-back)); }
+  .viz .name,
+  .viz .drop { opacity: 0; }
+  .viz .rail { transform: scaleX(1); }
+  .viz .railTag,
+  .viz .startline,
+  .viz .startlineTag,
+  .viz .figTick { opacity: 1; }
+  .viz .streak { transform: rotate(var(--tilt)) scaleX(1); opacity: 0.3; }
+  .viz .silSharp { clip-path: inset(0 0 0 0); opacity: 1; }
+  .viz .silGhost { opacity: 0; }  /* 최종 화면에서는 샤프만 남는다 */
+  .viz .figFoot { stroke-dashoffset: 0; opacity: 1; }
+  .viz .figFit { opacity: 0.19; }
+}
