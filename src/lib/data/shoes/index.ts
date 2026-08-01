@@ -194,7 +194,7 @@ export type GridShoe = Pick<Shoe,
 > & {
   specs?: { weight?: number };
   biomechanics?: { drop?: number; carbonPlate?: boolean };
-  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'flatFootCompatibility' | 'winterCompatibility'>;
+  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'flatFootCompatibility' | 'winterCompatibility' | 'wideOptions'>;
   priceAnalysis?: { valueRating?: number; msrp?: number };
   /** targetUsers.recommended에 초보/입문 포함 여부 사전계산 (카드 뱃지용) */
   beginnerFriendly?: boolean;
@@ -222,6 +222,8 @@ export function toGridShoe(shoe: Shoe): GridShoe {
           toBoxWidth: shoe.koreanFootFit.toBoxWidth,
           flatFootCompatibility: shoe.koreanFootFit.flatFootCompatibility,
           winterCompatibility: shoe.koreanFootFit.winterCompatibility,
+          // 홈 인덱스의 "와이드 출시" 필터가 쓴다. boolean 하나라 페이로드 영향은 없다
+          wideOptions: shoe.koreanFootFit.wideOptions,
         }
       : undefined,
     priceAnalysis: shoe.priceAnalysis

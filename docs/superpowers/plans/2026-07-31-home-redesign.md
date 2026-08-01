@@ -1434,7 +1434,7 @@ git commit -m "feat(home): 고민별 탐색 — 우선순위 비대칭 레이아
   ```
   **기록이 하나도 없으면 `null`을 반환해 섹션 자체를 렌더하지 않는다.**
 
-- [ ] **Step 1: 클라이언트 전용 구현**
+- [x] **Step 1: 클라이언트 전용 구현**
 
 SSG라 서버에서는 기록을 알 수 없다. 마운트 후 읽고, 그 전에는 아무것도 렌더하지 않는다.
 레이아웃 점프를 막기 위해 **섹션이 나타날 때 위 콘텐츠를 밀지 않는 위치**(히어로 바로 아래)에 둔다.
@@ -1446,12 +1446,12 @@ useEffect(() => { setData(readResume(new Set(validSlugs))); }, [validSlugs]);
 if (!data || (!data.shoe && !data.compare && !data.recommend)) return null;
 ```
 
-- [ ] **Step 2: 기록 지우기 + 이벤트**
+- [x] **Step 2: 기록 지우기 + 이벤트**
 
 `기록 지우기` 버튼은 `clearResume()` 후 `setData(null)`, 그리고 `track('home_resume_clear')`.
 각 항목 클릭 시 `track('home_resume_click', { item_name })`.
 
-- [ ] **Step 3: 빌드 + 동작 확인**
+- [x] **Step 3: 빌드 + 동작 확인**
 
 ```bash
 set -o pipefail && npm run build && npx serve out
@@ -1459,7 +1459,7 @@ set -o pipefail && npm run build && npx serve out
 브라우저에서 ① 기록 없는 상태(섹션 미표시) ② 상세 한 번 방문 후 홈(섹션 표시)
 ③ 기록 지우기(섹션 사라짐)를 확인한다.
 
-- [ ] **Step 4: 커밋**
+- [x] **Step 4: 커밋**
 
 ```bash
 git add src/components/home/resume-section.tsx
@@ -1482,13 +1482,13 @@ git commit -m "feat(home): 재방문 이어보기 — 기록 없으면 미렌더
   export function TrustMetrics(props: { shoeCount: number; lastUpdated: string | null }): JSX.Element;
   ```
 
-- [ ] **Step 1: RecommendationProcess 구현**
+- [x] **Step 1: RecommendationProcess 구현**
 
 제목은 `약 1분, 9문항이면 충분합니다.`에서 숫자를 props로 받아 조립한다(하드코딩 금지).
 3단계 + 결과 3역할(가장 잘 맞는 / 더 편안한 / 더 경제적인) + 항목별 적합도 예시.
 적합도는 **색상만으로 구분하지 않고** 막대 + 텍스트 등급을 함께 쓴다.
 
-- [ ] **Step 2: TrustMetrics 구현**
+- [x] **Step 2: TrustMetrics 구현**
 
 지표 3개(신발 수 · 갱신일 · 공개) + 신뢰 문구 + 데이터 상태 배지 6종.
 `평가 기준과 출처` 펼치기에 `track('home_trust_methodology_open')`을 건다.
@@ -1500,7 +1500,7 @@ grep -nE "직접 측정|자체 실측|자체 연구소|Lab Verified|의학적으
 ```
 기대: 출력 없음
 
-- [ ] **Step 3: 빌드 확인 후 커밋**
+- [x] **Step 3: 빌드 확인 후 커밋**
 
 ```bash
 set -o pipefail && npm run build
@@ -1525,7 +1525,7 @@ git commit -m "feat(home): 추천 작동 방식 + 신뢰 지표 — 카운트 �
 
 이 태스크가 홈에서 가장 복잡하다. **122개 링크 보존**과 **한 번에 안 펼침**을 동시에 만족해야 한다.
 
-- [ ] **Step 1: 정적 렌더 구조 확정**
+- [x] **Step 1: 정적 렌더 구조 확정**
 
 먼저 표시 순서를 정한다. **기본 노출 16개는 카테고리 균형으로 뽑고, 나머지는 그 뒤에 붙인다.**
 
@@ -1556,7 +1556,7 @@ JS가 없으면 `<details>`로 전체 접근 가능하고, JS가 있으면 점�
 )}
 ```
 
-- [ ] **Step 2: 점진 확장 로직**
+- [x] **Step 2: 점진 확장 로직**
 
 ```tsx
 'use client';
@@ -1578,7 +1578,7 @@ const label = remaining > STEP
   : `전체 러닝화 보기`;
 ```
 
-- [ ] **Step 3: 필터 우선 규칙**
+- [x] **Step 3: 필터 우선 규칙**
 
 필터가 적용되면 기본 제한에 묶지 않는다.
 
@@ -1591,7 +1591,7 @@ useEffect(() => {
 
 필터는 **전체 122개를 대상으로** 동작한다(노출된 16개가 아니라).
 
-- [ ] **Step 4: 결과 수 안내와 행 구조**
+- [x] **Step 4: 결과 수 안내와 행 구조**
 
 결과 수는 `aria-live="polite"`로 알린다. 행은 7칸 그리드:
 썸네일 · 브랜드+모델 · 한 줄 결론 · 용도 · 무게 · 가격 · 데이터 상태.
@@ -1599,7 +1599,7 @@ useEffect(() => {
 
 행 클릭 시 `track('home_shoe_detail_click', { item_name: slug, destination_path: `/shoes/${slug}` })`.
 
-- [ ] **Step 5: 링크 수 검증**
+- [x] **Step 5: 링크 수 검증**
 
 ```bash
 set -o pipefail && npm run build
@@ -1607,7 +1607,7 @@ grep -o 'href="/shoes/[^"]*"' out/index.html | sort -u | wc -l
 ```
 기대: 122 (정적 HTML에 전체 링크가 남아 있어야 한다)
 
-- [ ] **Step 6: 커밋**
+- [x] **Step 6: 커밋**
 
 ```bash
 git add src/components/home/shoe-index-preview.tsx
