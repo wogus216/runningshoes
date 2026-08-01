@@ -65,7 +65,7 @@ export function UsageGuide({ gel }: UsageGuideProps) {
       </div>
 
       {/* 섭취 전략 */}
-      <div className="mb-4 rounded-[4px] border border-sky-200 bg-[linear-gradient(180deg,rgba(239,246,255,0.95),rgba(255,255,255,0.94))] p-4">
+      <div className="mb-4 rounded-[4px] border border-sky-200 bg-[linear-gradient(180deg,rgba(247,244,237,0.95),rgba(255,255,255,0.94))] p-4">
         <div className="flex items-center gap-2 mb-3">
           <Clock className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-sky-700">섭취 전략</h3>

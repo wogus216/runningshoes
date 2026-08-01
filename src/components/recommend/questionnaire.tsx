@@ -221,7 +221,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
         </div>
       </div>
 
-      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(239,246,255,0.88))] p-6">
+      <div className="mb-6 rounded-[4px] border border-stone-900/10 bg-[linear-gradient(135deg,rgba(255,255,255,0.94),rgba(247,244,237,0.88))] p-6">
         <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Question {currentStep + 1}</p>
         <h2 className="mb-2 text-2xl font-black tracking-tight text-primary">
           {currentQuestion.title}

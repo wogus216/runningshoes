@@ -42,7 +42,12 @@
   transition: background 0.18s;
   padding: 24px 22px 20px;
 }
-.item:hover { background: var(--accent-soft); }
+/* --accent-soft 를 그대로 쓰면 이 패널의 --signal-dark 텍스트(배번호·"입문화 보기")가
+   4.43:1 로 소형 텍스트 기준(4.5)에 아슬하게 못 미친다. surface 를 20% 섞어 4.59 로 올린다 —
+   복숭아 톤은 그대로 남는다. */
+.item:hover {
+  background: color-mix(in srgb, var(--accent-soft) 80%, var(--surface));
+}
 .item::after {
   content: "";
   position: absolute;

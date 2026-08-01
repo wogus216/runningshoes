@@ -66,7 +66,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
             "px-4 py-2 rounded-[4px] border",
             carb.dualSource
               ? "border-sky-200 bg-sky-50 text-sky-700"
-              : "border-stone-900/8 bg-[rgba(248,250,252,0.86)] text-secondary"
+              : "border-stone-900/8 bg-[rgba(247,244,237,0.86)] text-secondary"
           )}
         >
           <div className="flex items-center gap-2">
@@ -145,7 +145,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
       )}
 
       {/* 과학 평가 */}
-      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
+      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-4">
         <h3 className="text-sm font-bold text-primary mb-2">과학적 평가</h3>
         <p className="text-secondary text-sm leading-relaxed">{carb.scienceVerdict}</p>
       </div>

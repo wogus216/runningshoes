@@ -42,11 +42,11 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       className={cn(
         "relative overflow-hidden rounded-[4px] border p-6",
         isTopPick
-          ? "border-sky-200 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(236,248,255,0.96))] ring-2 ring-sky-200"
-          : "border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(242,248,255,0.94))]"
+          ? "border-sky-200 bg-[linear-gradient(135deg,rgba(255,255,255,0.98),rgba(247,244,237,0.96))] ring-2 ring-sky-200"
+          : "border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(247,244,237,0.94))]"
       )}
     >
-      <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_58%,#f97316_100%)]" />
+      <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,var(--accent)_0%,var(--signal-dark)_100%)]" />
       {/* 랭킹 뱃지 */}
       <div
         className={cn(

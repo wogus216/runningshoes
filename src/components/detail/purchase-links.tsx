@@ -12,7 +12,9 @@ type PurchaseLinksProps = {
 // 스토어별 아이콘/색상
 const storeStyles: Record<string, { bg: string; text: string }> = {
   '쿠팡': { bg: 'bg-[#f02c3e10]', text: 'text-[#f02c3e]' },
-  '네이버': { bg: 'bg-[#03c7510]', text: 'text-[#03c75a]' },
+  // 8자리(#RRGGBB + 알파 10 = 6%) 규칙. 이전 값 '#03c7510' 은 7자리라 Tailwind 가
+  // 클래스 자체를 생성하지 않아 네이버 버튼만 배경 없이 렌더됐다(QA A 에서 발견).
+  '네이버': { bg: 'bg-[#03c75a10]', text: 'text-[#03c75a]' },
   '공식몰': { bg: 'bg-stone-100', text: 'text-stone-700' },
   'ABC마트': { bg: 'bg-[#ff660010]', text: 'text-[#ff6600]' },
   '무신사': { bg: 'bg-[#00000010]', text: 'text-gray-900' },

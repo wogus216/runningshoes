@@ -31,7 +31,7 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
           <div
             key={index}
             className={`flex items-center justify-between rounded-[4px] p-3 ${
-              spec.highlight ? 'border border-sky-200 bg-sky-50' : 'border border-stone-900/6 bg-[rgba(248,250,252,0.86)]'
+              spec.highlight ? 'border border-sky-200 bg-sky-50' : 'border border-stone-900/6 bg-[rgba(247,244,237,0.86)]'
             }`}
           >
             <span className="text-sm text-secondary">{spec.label}</span>
@@ -43,7 +43,7 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
       </div>
 
       {/* 주요 영양소 하이라이트 */}
-      <div className="mt-6 rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
+      <div className="mt-6 rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-4">
         <h3 className="text-sm font-bold text-primary mb-3">주요 영양소</h3>
         <div className="space-y-2 text-sm text-secondary">
           <p>

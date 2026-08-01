@@ -57,7 +57,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
         </p>
 
         {/* 기술 원리 */}
-        <div className="rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-5">
+        <div className="rounded-[22px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-5">
           <h3 className="flex items-center gap-2 text-sm font-bold text-primary mb-3">
             <FlaskConical className="w-4 h-4 text-sky-700" />
             기술 원리
@@ -165,7 +165,7 @@ function TechnologySection({ technology, shoes }: { technology: BrandTechnology;
                     href={`/shoes/${shoe.slug}`}
                     className="flex-shrink-0 w-32 group"
                   >
-                    <div className="relative mb-2 aspect-square overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                    <div className="relative mb-2 aspect-square overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                       {shoe.image ? (
                         <Image
                           src={img(shoe.image)}

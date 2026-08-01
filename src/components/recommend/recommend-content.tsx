@@ -102,7 +102,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
 
   return (
     <div className="space-y-6">
-      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(239,248,255,0.94)_44%,rgba(231,244,255,0.92)_100%)] px-5 py-6 md:px-8 md:py-8">
+      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(247,244,237,0.94)_44%,rgba(239,234,224,0.92)_100%)] px-5 py-6 md:px-8 md:py-8">
         <div className="pointer-events-none absolute inset-0">
         </div>
 

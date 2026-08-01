@@ -91,9 +91,9 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
   const widthLabels: Record<string, string> = { narrow: '좁음', standard: '표준', wide: '넓음' };
 
   return (
-    <div className="overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(241,248,255,0.95))]">
+    <div className="overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.98),rgba(247,244,237,0.95))]">
       <div className="p-4">
-        <div className="mb-4 h-1 rounded-full bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_58%,#f97316_100%)]" />
+        <div className="mb-4 h-1 rounded-full bg-[linear-gradient(90deg,var(--accent)_0%,var(--signal-dark)_100%)]" />
         <div className="flex items-start justify-between">
           <div className="flex-1">
             <p className="text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700">{shoe.brand}</p>

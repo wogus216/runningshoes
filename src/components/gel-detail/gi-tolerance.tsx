@@ -122,7 +122,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
       )}
 
       {/* 커뮤니티 피드백 */}
-      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(242,248,255,0.92))] p-4">
+      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-4">
         <div className="flex items-center gap-2 mb-2">
           <Heart className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">커뮤니티 후기</h3>

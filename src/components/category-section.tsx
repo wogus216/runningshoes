@@ -24,7 +24,7 @@ export const CategorySection = memo(function CategorySection({
     <section
       id={sectionId}
       className={cn(
-        "grid gap-3 rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(241,248,255,0.94))] p-3 backdrop-blur-2xl transition hover:border-sky-200 lg:grid-cols-[236px_minmax(0,1fr)] lg:gap-6 lg:p-6",
+        "grid gap-3 rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.94))] p-3 backdrop-blur-2xl transition hover:border-sky-200 lg:grid-cols-[236px_minmax(0,1fr)] lg:gap-6 lg:p-6",
         "shadow-[0_30px_60px_-50px_rgba(8,18,38,0.22)]",
         "animate-fade-in-up",
         "scroll-mt-32",
@@ -32,7 +32,7 @@ export const CategorySection = memo(function CategorySection({
       )}
     >
       <div className="relative overflow-hidden rounded-[4px] border border-sky-100 bg-white p-4 text-slate-900 md:p-6 lg:sticky lg:top-24">
-        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,#38bdf8_0%,#0ea5e9_60%,#f97316_100%)]" />
+        <div className="absolute inset-x-0 top-0 h-1 bg-[linear-gradient(90deg,var(--accent)_0%,var(--signal-dark)_100%)]" />
         <div className="absolute -top-14 -right-10 h-24 w-24 rounded-full bg-sky-200/60 blur-3xl" />
         <div className="space-y-2">
           <p className="text-xs font-semibold uppercase tracking-[0.35em] text-sky-700">Category</p>

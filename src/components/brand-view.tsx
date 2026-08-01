@@ -41,7 +41,7 @@ export function BrandView({ shoes, onTagClick }: BrandViewProps) {
           <section
             key={brand}
             id={sectionId}
-            className="scroll-mt-32 rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.94))] p-4 backdrop-blur-2xl transition hover:border-sky-200 lg:p-8"
+            className="scroll-mt-32 rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(247,244,237,0.94))] p-4 backdrop-blur-2xl transition hover:border-sky-200 lg:p-8"
           >
             <header className="flex flex-wrap items-end justify-between gap-4">
               <div>

@@ -22,7 +22,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
   }
 
   return (
-    <section className="rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(236,248,255,0.98),rgba(255,255,255,0.95))] p-6">
+    <section className="rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(247,244,237,0.98),rgba(255,255,255,0.95))] p-6">
       <div className="flex items-center gap-3 mb-4">
         <div className="rounded-[4px] bg-sky-50 p-2">
           <Shield className="h-5 w-5 text-sky-700" />

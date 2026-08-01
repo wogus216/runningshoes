@@ -263,7 +263,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
               >
                 {/* 이미지 */}
                 {similarGel.image ? (
-                  <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                  <div className="mb-3 flex aspect-square items-center justify-center overflow-hidden rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                     <Image
                       src={img(similarGel.image)}
                       alt={`${similarGel.brand} ${similarGel.name}`}
@@ -273,7 +273,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     />
                   </div>
                 ) : (
-                  <div className="mb-3 flex aspect-square items-center justify-center rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(239,247,255,0.88))]">
+                  <div className="mb-3 flex aspect-square items-center justify-center rounded-[4px] bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.88))]">
                     <span className="text-4xl opacity-20">⚡</span>
                   </div>
                 )}

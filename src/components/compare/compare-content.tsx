@@ -260,7 +260,7 @@ function ComparePageContent() {
           {selectedShoes.map((shoe) => (
             <div
               key={shoe.id || shoe.slug}
-              className="group relative rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(241,248,255,0.94))] p-4"
+              className="group relative rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.97),rgba(247,244,237,0.94))] p-4"
             >
               <button
                 onClick={() => {
