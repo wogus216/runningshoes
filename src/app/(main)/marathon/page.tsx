@@ -139,7 +139,7 @@ export default function MarathonPage() {
               </div>
               <div className="rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white">
                 <p className="text-sm font-semibold">탐색 속도</p>
-                <p className="mt-2 text-xs leading-6 text-white/65">필터와 카드의 밀도를 맞춰 훑어보는 속도를 올렸습니다.</p>
+                <p className="mt-2 text-xs leading-6 text-white/65">한 줄에 날짜·지역·거리·접수 상태를 담아 훑어보는 속도를 올렸습니다.</p>
               </div>
             </div>
           </div>
