@@ -1386,12 +1386,12 @@ git commit -m "feat(home): 키네틱 히어로 — 사선 트랙·첫 1초 실�
   export function ProblemExplorer(props: ProblemExplorerProps): JSX.Element;
   ```
 
-- [ ] **Step 1: 비대칭 레이아웃 구현**
+- [x] **Step 1: 비대칭 레이아웃 구현**
 
 균등 6칸 그리드를 쓰지 않는다. 주요 패널 1(rank 1) + 중간 패널 2(rank 2·3) + 행 패널 3(rank 4·5·6).
 모바일은 1열 6행이되 첫 3개에 더 큰 제목과 시그널 선을 준다.
 
-- [ ] **Step 2: 링크와 이벤트 연결**
+- [x] **Step 2: 링크와 이벤트 연결**
 
 각 항목은 `<a href={`/best/${p.slug}`}>`이고 클릭 시 이벤트를 보낸다.
 
@@ -1403,14 +1403,14 @@ onClick={() => track('home_problem_category_click', {
 })}
 ```
 
-- [ ] **Step 3: 무릎 항목 문구 검사**
+- [x] **Step 3: 무릎 항목 문구 검사**
 
 ```bash
 grep -nE "치료|완화|예방|낫게" src/components/home/problem-explorer.tsx
 ```
 기대: 출력 없음. 섹션 하단에 면책 문구를 렌더한다.
 
-- [ ] **Step 4: 빌드 확인 후 커밋**
+- [x] **Step 4: 빌드 확인 후 커밋**
 
 ```bash
 set -o pipefail && npm run build
