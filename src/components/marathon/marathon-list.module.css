@@ -68,6 +68,9 @@
   border-bottom: 1px solid var(--border); position: relative;
 }
 .row:hover { background: var(--surface); }
+/* display:grid 가 hidden 속성의 기본 display:none 을 덮어쓰므로 명시한다.
+   숨긴 행도 마크업에는 남아 대회 링크가 정적 HTML에 보존된다. */
+.row[hidden] { display: none; }
 .date { font-family: var(--mono); font-size: 12.5px; font-variant-numeric: tabular-nums; color: var(--primary); }
 .name { font-size: 15px; font-weight: 650; letter-spacing: -0.018em; line-height: 1.32; word-break: keep-all; }
 /* 메이저 표식 — 색만으로 구분하지 않도록 텍스트를 함께 둔다 */

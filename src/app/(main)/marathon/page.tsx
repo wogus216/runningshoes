@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import { getMarathonEvents, getMajorEvents } from '@/lib/data/marathon';
 import { SITE_NAME, SITE_URL } from '@/lib/constants';
 import { MarathonContent } from '@/components/marathon/marathon-content';
+import { groupIntoBands } from '@/lib/marathon/bands';
 
 export const metadata: Metadata = {
   title: `2026 마라톤 대회 일정 | 참가비·코스·접수 총정리 - ${SITE_NAME}`,
@@ -19,10 +20,25 @@ export const metadata: Metadata = {
 export default function MarathonPage() {
   const events = getMarathonEvents();
   const majorEvents = getMajorEvents();
+  // 빌드 시점 날짜. 클라이언트가 마운트 후 진짜 오늘로 다시 계산한다.
+  const now = new Date();
+  const buildDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+
+  // 히어로 지표 — 전부 데이터에서 산출한다(하드코딩 금지)
+  const bands = groupIntoBands(events, buildDate);
+  const openCount = bands.find((b) => b.id === 'open')?.events.length ?? 0;
+  const thisMonth = events.filter((e) => e.date >= buildDate && e.date.slice(0, 7) === buildDate.slice(0, 7)).length;
+  const nextMonthKey = (() => {
+    const d = new Date(`${buildDate}T00:00:00Z`);
+    d.setUTCMonth(d.getUTCMonth() + 1);
+    return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+  })();
+  const nextMonth = events.filter((e) => e.date.slice(0, 7) === nextMonthKey).length;
+
   const marathonStats = [
-    { label: '대회 수', value: `${events.length}+` },
-    { label: '메이저', value: `${majorEvents.length}` },
-    { label: '시즌', value: '2026' },
+    { label: '접수중', value: `${openCount}` },
+    { label: '이번 달', value: `${thisMonth}` },
+    { label: '다음 달', value: `${nextMonth}` },
   ];
 
   // JSON-LD: 메이저 대회 SportsEvent + Offers
@@ -111,15 +127,15 @@ export default function MarathonPage() {
                   2026 마라톤 대회 일정
                 </h1>
                 <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
-                  월별, 지역별, 거리별 필터를 바로 적용해 나한테 맞는 대회만 빠르게 추릴 수 있게 다시 구성했습니다.
+                  지금 접수 중인 대회부터 먼저 보여줍니다. 권역·거리로 좁히면 신청할 수 있는 대회만 남습니다.
                 </p>
               </div>
             </div>
 
             <div className="grid gap-3 sm:grid-cols-2">
               <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
-                <p className="text-sm font-semibold text-slate-950">일정 중심</p>
-                <p className="mt-2 text-xs leading-6 text-slate-600">접수 상태, 거리, 지역을 같이 걸러서 참가 가능성부터 빠르게 확인합니다.</p>
+                <p className="text-sm font-semibold text-slate-950">시점 중심</p>
+                <p className="mt-2 text-xs leading-6 text-slate-600">접수중·곧 열림·마감·지난 대회로 나눠, 지금 참가할 수 있는 대회를 맨 위에 둡니다.</p>
               </div>
               <div className="rounded-[4px] border border-border bg-[var(--navy)] p-4 text-white">
                 <p className="text-sm font-semibold">탐색 속도</p>
@@ -130,7 +146,7 @@ export default function MarathonPage() {
         </section>
 
         <Suspense>
-          <MarathonContent events={events} />
+          <MarathonContent events={events} buildDate={buildDate} />
         </Suspense>
       </div>
     </>

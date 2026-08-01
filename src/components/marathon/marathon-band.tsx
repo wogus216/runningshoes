@@ -45,8 +45,8 @@ export function MarathonBand({
     );
   }
 
-  const visible = band.events.slice(0, shown);
-  const remaining = band.events.length - visible.length;
+  // 잘라내지 않고 전부 렌더한 뒤 초과분을 숨긴다 — 대회 링크를 정적 HTML에 남기기 위해서다.
+  const remaining = Math.max(0, band.events.length - shown);
 
   return (
     <section className={styles.band}>
@@ -56,8 +56,8 @@ export function MarathonBand({
       </div>
 
       <div>
-        {visible.map((e) => (
-          <MarathonRow key={e.id} event={e} today={today} />
+        {band.events.map((e, i) => (
+          <MarathonRow key={e.id} event={e} today={today} folded={i >= shown} />
         ))}
       </div>
 

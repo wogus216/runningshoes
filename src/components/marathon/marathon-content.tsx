@@ -1,118 +1,81 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
-import type { MarathonEvent, EventStatus } from '@/types/marathon';
-import { EVENT_STATUSES } from '@/types/marathon';
+import { useEffect, useMemo, useState } from 'react';
+import type { MarathonEvent } from '@/types/marathon';
 import { useMarathonFilters } from '@/hooks/useMarathonFilters';
-import { MarathonFilterPanel } from './marathon-filter-panel';
-import { MarathonEventCard } from './marathon-event-card';
-import { MarathonStatsBar } from './marathon-stats-bar';
-import { SlidersHorizontal, X } from 'lucide-react';
+import { groupIntoBands } from '@/lib/marathon/bands';
+import { MarathonChips } from './marathon-chips';
+import { MarathonBand } from './marathon-band';
+import styles from './marathon-list.module.css';
+
+/** 접수중 밴드 아래 고정. 상태는 사람이 확인한 값이라 재확인을 유도한다. */
+const VERIFY_NOTE =
+  '접수 상태는 공식 발표를 수동 확인한 값입니다. 신청 전 공식 페이지에서 다시 확인하세요.';
 
 interface MarathonContentProps {
   events: MarathonEvent[];
+  /** 빌드 시점 날짜 'YYYY-MM-DD'. 서버 렌더와 하이드레이션 첫 렌더가 이 값을 쓴다 */
+  buildDate: string;
 }
 
-export function MarathonContent({ events }: MarathonContentProps) {
-  const [showFilters, setShowFilters] = useState(false);
+export function MarathonContent({ events, buildDate }: MarathonContentProps) {
+  /**
+   * `output: export` SSG라 빌드 시점 날짜가 정적 HTML에 굳는다. 배포가 없으면 밴드가 낡는다.
+   * 서버·하이드레이션 첫 렌더는 buildDate 로 맞추고(불일치 방지), 마운트 후 진짜 오늘로 바꾼다.
+   */
+  const [today, setToday] = useState(buildDate);
+  useEffect(() => {
+    const now = new Date();
+    const iso = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    if (iso !== buildDate) setToday(iso);
+  }, [buildDate]);
+
   const {
     filters,
-    filterOptions,
     filteredEvents,
+    counts,
     activeFilterCount,
-    sortBy,
-    setSortBy,
     setSearchQuery,
-    toggleMonth,
-    toggleRegion,
+    toggleRegionGroup,
     toggleDistance,
-    toggleStatus,
+    toggleMajorOnly,
     resetFilters,
   } = useMarathonFilters(events);
 
-  // ?status=... 딥링크 반영. useSearchParams()를 쓰면 정적 export에서 페이지 전체가
-  // 클라이언트 렌더로 이탈해 대회 목록이 검색엔진에 안 보이므로, 마운트 후 URL을 직접 읽는다.
-  const statusApplied = useRef(false);
-  useEffect(() => {
-    if (statusApplied.current) return;
-    const statusParam = new URLSearchParams(window.location.search).get('status');
-    if (statusParam && EVENT_STATUSES.includes(statusParam as EventStatus)) {
-      statusApplied.current = true;
-      toggleStatus(statusParam as EventStatus);
-    }
-  }, [toggleStatus]);
+  const bands = useMemo(() => groupIntoBands(filteredEvents, today), [filteredEvents, today]);
+  const hasAny = filteredEvents.length > 0;
 
   return (
-    <div className="space-y-6">
-      <MarathonStatsBar
-        totalEvents={events.length}
-        filteredCount={filteredEvents.length}
-        events={events}
+    <div>
+      <MarathonChips
+        filters={filters}
+        counts={counts}
+        activeFilterCount={activeFilterCount}
+        setSearchQuery={setSearchQuery}
+        toggleRegionGroup={toggleRegionGroup}
+        toggleDistance={toggleDistance}
+        toggleMajorOnly={toggleMajorOnly}
+        resetFilters={resetFilters}
       />
 
-      <div className="lg:hidden">
-        <button
-          onClick={() => setShowFilters(!showFilters)}
-          className="flex w-full items-center justify-center gap-2 rounded-[22px] border border-[var(--accent-line)] bg-white/84 px-4 py-3 text-sm font-medium text-primary transition hover:bg-white"
-        >
-          {showFilters ? (
-            <>
-              <X className="h-4 w-4" />
-              필터 닫기
-            </>
-          ) : (
-            <>
-              <SlidersHorizontal className="h-4 w-4" />
-              필터 열기
-              {activeFilterCount > 0 && (
-                <span className="rounded-full bg-[var(--navy)] px-1.5 py-0.5 text-xs text-white">
-                  {activeFilterCount}
-                </span>
-              )}
-            </>
-          )}
-        </button>
-      </div>
-
-      <div className="flex gap-6">
-        <aside className={`w-full shrink-0 lg:w-72 ${showFilters ? 'block' : 'hidden lg:block'}`}>
-          <div className="sticky top-20">
-            <MarathonFilterPanel
-              filters={filters}
-              filterOptions={filterOptions}
-              activeFilterCount={activeFilterCount}
-              sortBy={sortBy}
-              setSortBy={setSortBy}
-              setSearchQuery={setSearchQuery}
-              toggleMonth={toggleMonth}
-              toggleRegion={toggleRegion}
-              toggleDistance={toggleDistance}
-              toggleStatus={toggleStatus}
-              resetFilters={resetFilters}
-            />
-          </div>
-        </aside>
-
-        <div className="flex-1 min-w-0">
-          {filteredEvents.length === 0 ? (
-            <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-8 text-center backdrop-blur">
-              <p className="text-secondary mb-2">조건에 맞는 대회가 없습니다</p>
-              <button
-                onClick={resetFilters}
-                className="text-sm text-accent hover:underline"
-              >
-                필터 초기화
-              </button>
-            </div>
-          ) : (
-            <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
-              {filteredEvents.map((event) => (
-                <MarathonEventCard key={event.id} event={event} />
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
+      {!hasAny ? (
+        <p className={styles.empty}>
+          조건에 맞는 대회가 없습니다.{' '}
+          <button type="button" className={styles.reset} onClick={resetFilters}>
+            필터 초기화
+          </button>
+        </p>
+      ) : (
+        bands.map((band) => (
+          <MarathonBand
+            key={band.id}
+            band={band}
+            today={today}
+            defaultOpen={band.id === 'open' || band.id === 'upcoming'}
+            note={band.id === 'open' ? VERIFY_NOTE : undefined}
+          />
+        ))
+      )}
     </div>
   );
 }

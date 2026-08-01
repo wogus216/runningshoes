@@ -25,10 +25,22 @@ function stateLabel(event: MarathonEvent, today: string): { text: string; dday: 
   return { text: event.status, dday: false };
 }
 
-export function MarathonRow({ event, today }: { event: MarathonEvent; today: string }) {
+export function MarathonRow({
+  event,
+  today,
+  folded = false,
+}: {
+  event: MarathonEvent;
+  today: string;
+  /**
+   * 아직 펼치지 않은 행. **렌더는 하되 숨긴다** — 잘라내면 대회 링크가 정적 HTML에서
+   * 사라져 검색엔진이 못 찾는다(첫 시도에서 100개 중 80개만 남았다).
+   */
+  folded?: boolean;
+}) {
   const state = stateLabel(event, today);
   return (
-    <Link className={styles.row} href={`/marathon/${event.id}`}>
+    <Link className={styles.row} href={`/marathon/${event.id}`} hidden={folded}>
       <span className={styles.date}>{formatDate(event.date)}</span>
       <span className={styles.name}>
         {event.name}
