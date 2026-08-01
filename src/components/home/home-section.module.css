@@ -1,0 +1,60 @@
+/* 홈 섹션 공통 골격 — 04 고민별 탐색 · 05 추천 작동 방식 · 06 신뢰 지표 · 07 인덱스 ·
+ * 09 에디토리얼이 같은 리듬을 쓴다. 각 섹션 모듈에서 `composes` 로 가져다 쓴다.
+ *
+ * 색 토큰은 실제 globals.css 이름(--primary/--accent/--border)이다.
+ * 시안의 --ink/--signal/--line 은 이 코드베이스에 없다 — 미정의 var() 는 조용히 무효가 된다.
+ */
+
+.sec {
+  padding: 68px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+/* 한 칸 건너 배경을 바꿔 섹션 경계를 만든다 */
+.secAlt {
+  background: var(--bg-warm-alt);
+}
+
+.head {
+  margin-bottom: 32px;
+}
+
+/* 영문 라벨이라 mono 가 맞다. 한글에는 쓰지 않는다(스펙 §3) */
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  margin-bottom: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: var(--accent);
+  transform: skewY(var(--tilt));
+}
+
+.h {
+  font-size: clamp(26px, 3.6vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.032em;
+  line-height: 1.12;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+
+.lead {
+  color: var(--secondary);
+  font-size: 15.5px;
+  margin-top: 12px;
+  max-width: 56ch;
+  word-break: keep-all;
+}
+
+@media (max-width: 760px) {
+  .sec { padding: 52px 0; }
+}

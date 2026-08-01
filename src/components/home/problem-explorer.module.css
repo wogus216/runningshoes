@@ -5,45 +5,9 @@
  * --primary/--accent/--border (미정의 var() 는 조용히 무효가 되어 렌더가 사라진다).
  */
 
+/* 머리말(아이브로우·제목·리드)은 홈 섹션 공통 골격에서 가져온다 */
 .sec {
-  padding: 68px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.secTop { margin-bottom: 32px; }
-
-.eyebrow {
-  display: flex;
-  align-items: center;
-  gap: 9px;
-  font-family: var(--mono);
-  font-size: 10px;
-  letter-spacing: 0.2em;
-  color: var(--secondary);
-  margin-bottom: 14px;
-}
-.eyebrow::before {
-  content: "";
-  width: 18px;
-  height: 2px;
-  background: var(--accent);
-  transform: skewY(var(--tilt));
-}
-
-.secH {
-  font-size: clamp(26px, 3.6vw, 40px);
-  font-weight: 800;
-  letter-spacing: -0.032em;
-  line-height: 1.12;
-  text-wrap: balance;
-  word-break: keep-all;
-}
-.secP {
-  color: var(--secondary);
-  font-size: 15.5px;
-  margin-top: 12px;
-  max-width: 56ch;
-  word-break: keep-all;
+  composes: sec from './home-section.module.css';
 }
 
 /* ---------- 비대칭 차등 레이아웃 ----------
@@ -290,10 +254,6 @@
       "row1 row1 row2 row2"
       "row3 row3 row3 row3";
   }
-}
-
-@media (max-width: 760px) {
-  .sec { padding: 52px 0; }
 }
 
 /* 모바일은 1열 6행. 순서가 곧 우선순위이고, 앞 3개(주요·중간)가 더 큰 제목을 갖는다(스펙 §5.1) */

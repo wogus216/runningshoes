@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { track } from '@/lib/analytics';
 import { PROBLEMS, PROBLEM_DISCLAIMER, type Problem } from '@/lib/home/problems';
 import type { ProblemThumb } from '@/lib/home/problem-counts';
+import { SectionHead } from './section-head';
 import styles from './problem-explorer.module.css';
 
 export type ProblemExplorerProps = {
@@ -40,13 +41,11 @@ export function ProblemExplorer({ counts, leadThumbs = [] }: ProblemExplorerProp
 
   return (
     <section className={styles.sec} id="problem">
-      <div className={styles.secTop}>
-        <p className={styles.eyebrow}>START FROM YOUR PROBLEM</p>
-        <h2 className={styles.secH}>지금 어떤 신발이 필요하세요?</h2>
-        <p className={styles.secP}>
-          전문 용어를 몰라도 됩니다. 고민을 고르면 어떤 기준으로 걸렀는지까지 함께 보여드립니다.
-        </p>
-      </div>
+      <SectionHead
+        eyebrow="START FROM YOUR PROBLEM"
+        title="지금 어떤 신발이 필요하세요?"
+        lead="전문 용어를 몰라도 됩니다. 고민을 고르면 어떤 기준으로 걸렀는지까지 함께 보여드립니다."
+      />
 
       <div className={styles.prob}>
         {/* 주요 패널만 stretched-link 패턴 — 패널 전체가 목적지로 가되 썸네일은 각 신발
