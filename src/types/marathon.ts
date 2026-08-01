@@ -95,6 +95,12 @@ export interface MarathonEvent {
   courseInfo?: CourseInfo;
   raceInfo?: RaceInfo;
   logistics?: Logistics;
+  /** 접수 시작일 'YYYY-MM-DD'. 있으면 밴드 판정과 D-day 표기에 쓴다 */
+  registrationStart?: string;
+  /** 접수 마감일 'YYYY-MM-DD' */
+  registrationEnd?: string;
+  /** status를 마지막으로 확인한 날 'YYYY-MM-DD'. 대회 상세에만 노출한다 */
+  lastVerified?: string;
 }
 
 export const EVENT_MONTHS: EventMonth[] = [
