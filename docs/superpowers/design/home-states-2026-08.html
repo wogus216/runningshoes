@@ -41,7 +41,7 @@
   @media (max-width: 940px) { .states { grid-template-columns: 1fr; } }
   .st { background: var(--paper); border: 1px solid var(--line); padding: 16px 17px 18px; }
   .st-h { display: flex; align-items: baseline; gap: 9px; flex-wrap: wrap; margin-bottom: 4px; }
-  .st-n { font-family: var(--mono); font-size: 11px; color: var(--signal); }
+  .st-n { font-family: var(--mono); font-size: 11px; color: var(--signal-dark); }
   .st-t { font-size: 15.5px; font-weight: 750; letter-spacing: -.028em; }
   .st-s { margin-left: auto; font-family: var(--mono); font-size: 9.5px; color: var(--ink-soft); }
   .st-w { font-size: 12px; color: var(--ink-soft); margin-bottom: 13px; }
@@ -61,8 +61,8 @@
             color: var(--ink-soft); }
   .sq.off .sq-t { text-decoration: line-through; text-decoration-color: var(--line); }
   .sq.off em { color: var(--ink-soft); }
-  .sq.on { border-color: var(--signal); background: var(--signal-soft); }
-  .sq.on em { color: var(--signal); }
+  .sq.on { border-color: var(--signal); background: var(--surface); }
+  .sq.on em { color: var(--signal-dark); }
 
   /* ── 필터 · 인덱스 ── */
   .chips { display: flex; flex-wrap: wrap; gap: 6px; }
@@ -221,16 +221,16 @@
   th { font-family: var(--mono); font-size: 9.5px; letter-spacing: .12em; color: var(--ink-soft);
        text-transform: uppercase; border-bottom: 2px solid var(--ink); }
   td.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
-  td.win { color: var(--signal); font-family: var(--mono); font-size: 12px; }
-  td.loss { color: var(--warning); font-family: var(--mono); font-size: 12px; }
-  td.warn-n { color: var(--warning); font-weight: 700; }
+  td.win { color: var(--signal-dark); font-family: var(--mono); font-size: 12px; }
+  td.loss { color: var(--warning-dark); font-family: var(--mono); font-size: 12px; }
+  td.warn-n { color: var(--warning-dark); font-weight: 700; }
   .sub-h { font-size: 14.5px; font-weight: 750; letter-spacing: -.02em; margin: 30px 0 10px; }
   .cmp-seq { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 22px; }
   @media (max-width: 800px) { .cmp-seq { grid-template-columns: 1fr; } }
   .cseq h4 { font-size: 13px; font-weight: 750; margin-bottom: 9px; }
   .cseq ol { padding: 0; list-style: none; display: grid; gap: 3px; }
   .cseq li { font-size: 12.5px; padding: 6px 10px; background: var(--surface); border: 1px solid var(--line); }
-  .cseq li.hot { border-color: var(--signal); color: var(--signal); }
+  .cseq li.hot { border-color: var(--signal); color: var(--signal-dark); }
 
   /* ── 레퍼런스 ── */
   .ref-note { font-size: 12.5px; color: var(--ink-soft); margin-top: 14px;

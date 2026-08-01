@@ -65,7 +65,7 @@
     font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
     text-transform: uppercase; color: var(--ink-soft);
   }
-  .spec-label b { color: var(--signal); font-weight: 500; }
+  .spec-label b { color: var(--signal-dark); font-weight: 500; }
 
   /* ============================================================
      홈 본체 — 모바일 단일 컬럼. 데스크톱 CSS를 축소한 것이 아니라 별도 구성이다.
@@ -85,7 +85,7 @@
   .icon-btn:hover { color: var(--ink); }
   /* 헤더 추천 CTA — 아웃라인. 오렌지 솔리드 면은 히어로·최종 밴드 2곳뿐이다(§3) */
   .btn-outline {
-    border: 1.5px solid var(--signal); color: var(--signal); background: transparent;
+    border: 1.5px solid var(--signal); color: var(--signal-dark); background: transparent;
     font-weight: 700; font-size: 13px; padding: 0 13px; height: 40px; border-radius: 2px;
     display: inline-flex; align-items: center; white-space: nowrap;
   }
@@ -270,7 +270,7 @@
             padding: 16px var(--pad) 14px; }
   .prob-i:hover { background: var(--signal-soft); }
   .prob-n { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em;
-            color: var(--signal); }
+            color: var(--signal-dark); }
   .prob-q { font-weight: 700; letter-spacing: -0.022em; line-height: 1.3; }
   .prob-c { color: var(--ink-soft); line-height: 1.55; }
   .prob-f { display: flex; align-items: center; justify-content: space-between; gap: 10px;
@@ -300,9 +300,9 @@
   .prob-th img { max-height: 46px; width: auto; }
   .pth span { font-family: var(--mono); font-size: 9px; letter-spacing: 0.04em;
               color: var(--ink-soft); border-bottom: 1px solid transparent; }
-  .pth:hover span { color: var(--signal); border-bottom-color: var(--signal); }
+  .pth:hover span { color: var(--signal-dark); border-bottom-color: var(--signal); }
   /* stretched-link — 패널 어디를 눌러도 /best/beginner. 썸네일만 각 상세로 빠진다 */
-  .prob-go { font-family: var(--mono); font-size: 11px; color: var(--signal); }
+  .prob-go { font-family: var(--mono); font-size: 11px; color: var(--signal-dark); }
   .prob-go.stretch::after { content: ""; position: absolute; inset: 0; }
 
   /* 하위 3개 — 낮은 행. 배번호를 왼쪽에 붙여 목록처럼 읽힌다 */
@@ -320,15 +320,16 @@
   .steps { display: grid; gap: 8px; margin-bottom: 18px; }
   .step { display: grid; grid-template-columns: 26px 1fr; gap: 10px;
           padding-top: 10px; border-top: 2px solid var(--ink); }
-  .step-n { font-family: var(--mono); font-size: 10.5px; color: var(--signal);
-            letter-spacing: 0.12em; }
+  /* .sec.alt(paper-soft) 배경이라 signal-dark 단독으론 4.39:1로 미달 — surface 박스로 감싼다 */
+  .step-n { font-family: var(--mono); font-size: 10.5px; color: var(--signal-dark);
+            letter-spacing: 0.12em; background: var(--surface); }
   .step-t { font-size: 14px; font-weight: 600; line-height: 1.45; }
   .roles { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); }
   .role { background: var(--surface); padding: 11px 15px;
           display: grid; grid-template-columns: auto 1fr; gap: 3px 11px; align-items: baseline; }
   .role-b { font-family: var(--mono); font-size: 9px; letter-spacing: 0.12em;
             padding: 3px 7px; border: 1px solid var(--line); color: var(--ink-soft); }
-  .role.lead .role-b { border-color: var(--signal); color: var(--signal);
+  .role.lead .role-b { border-color: var(--signal); color: var(--signal-dark); background: var(--surface);
                        background: var(--signal-soft); }
   .role-t { font-size: 14.5px; font-weight: 700; letter-spacing: -0.015em; }
   .role-d { grid-column: 2; font-size: 12.5px; color: var(--ink-soft); line-height: 1.5; }
@@ -371,8 +372,8 @@
           border: 1px solid var(--ink); background: var(--surface);
           padding: 0 14px; border-radius: 2px; font-size: 13.5px; font-weight: 650; }
   .fbtn .fbtn-n { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); }
-  .fbtn[data-on="1"] { border-color: var(--signal); color: var(--signal); }
-  .fbtn[data-on="1"] .fbtn-n { color: var(--signal); }
+  .fbtn[data-on="1"] { border-color: var(--signal); color: var(--signal-dark); }
+  .fbtn[data-on="1"] .fbtn-n { color: var(--signal-dark); }
   .result-n { font-size: 13px; font-weight: 600; text-align: right; }
   .result-n b { font-family: var(--mono); color: var(--signal-dark); font-size: 15px; }
 
@@ -488,19 +489,19 @@
   .ed-lead img { width: 100%; aspect-ratio: 3/2; object-fit: cover; border: 1px solid var(--line); }
   .ed-meta { display: flex; gap: 10px; font-family: var(--mono); font-size: 9.5px;
              color: var(--ink-soft); margin: 12px 0 8px; letter-spacing: 0.06em; }
-  .ed-meta .cat { color: var(--signal); }
+  .ed-meta .cat { color: var(--signal-dark); }
   .ed-t { font-size: 19px; font-weight: 750; letter-spacing: -0.028em; line-height: 1.3; }
   .ed-x { font-size: 13px; color: var(--ink-soft); margin-top: 8px; line-height: 1.55; }
   .ed-by { font-family: var(--mono); font-size: 9.5px; color: var(--ink-soft); margin-top: 10px; }
   .ed-list { border-top: 2px solid var(--ink); margin-top: 20px; }
   .ed-i { display: block; padding: 13px 0; border-bottom: 1px solid var(--line); }
-  .ed-i:hover .ed-it { color: var(--signal); }
+  .ed-i:hover .ed-it { color: var(--signal-dark); }
   .ed-im { display: flex; gap: 10px; font-family: var(--mono); font-size: 9px;
            color: var(--ink-soft); margin-bottom: 5px; letter-spacing: 0.06em; }
   .ed-it { font-size: 14px; font-weight: 620; line-height: 1.4; letter-spacing: -0.018em; }
   .ed-i.more-link { display: flex; align-items: center; justify-content: space-between;
                     font-size: 13.5px; font-weight: 650; border-bottom: 0; min-height: 44px; }
-  .ed-go { font-family: var(--mono); color: var(--signal); }
+  .ed-go { font-family: var(--mono); color: var(--signal-dark); }
 
   /* ---------- 10 최종 CTA — 페이지에서 유일한 다크 영역 ---------- */
   .final { background: var(--ink); color: var(--light-on-dark);
@@ -1060,27 +1061,27 @@
 
       <div class="ed-list">
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">REVIEW</span><span>8분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">REVIEW</span><span>8분</span></p>
           <p class="ed-it">살로몬 제네시스 2 미리보기 — 가치 점수 만점, 토박스가 관건</p>
         </a>
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>12분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">GUIDE</span><span>12분</span></p>
           <p class="ed-it">러닝화 500~800km 교체설 — 그 숫자, 1985년에 나왔습니다</p>
         </a>
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>10분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">GUIDE</span><span>10분</span></p>
           <p class="ed-it">러닝화 폼의 다음 원료는 밭에서 자랍니다 — 사탕수수와 피마자</p>
         </a>
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>9분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">NEWS</span><span>9분</span></p>
           <p class="ed-it">나이키 슈퍼폼 만드는 회사가 부산에 왔다 — 조테폼스 이노베이션 센터</p>
         </a>
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">GUIDE</span><span>11분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">GUIDE</span><span>11분</span></p>
           <p class="ed-it">발볼 넓은 한국 러너를 위한 와이드 러닝화 — 토박스 실측으로 비교</p>
         </a>
         <a class="ed-i" href="/blog">
-          <p class="ed-im"><span style="color:var(--signal)">NEWS</span><span>7분</span></p>
+          <p class="ed-im"><span style="color:var(--signal-dark)">NEWS</span><span>7분</span></p>
           <p class="ed-it">오사카 마라톤 2027 접수 가이드 — 국내 러너가 놓치기 쉬운 일정</p>
         </a>
         <a class="ed-i more-link" href="/blog"><span>블로그 전체 보기</span><span class="ed-go">→</span></a>
