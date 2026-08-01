@@ -20,8 +20,8 @@ export default function ContactPage() {
         {/* 이메일 문의 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-[4px] bg-teal-100 dark:bg-teal-900">
-              <Mail className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+            <div className="p-3 rounded-[4px] bg-[var(--bg-warm-alt)] dark:bg-[var(--dark-soft)]">
+              <Mail className="w-6 h-6 text-primary dark:text-[var(--light-on-dark)]" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">이메일</h2>

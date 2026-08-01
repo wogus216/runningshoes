@@ -86,7 +86,7 @@ function hubsFor(p: DistanceProfile): Hub[] {
 const categoryBadge: Record<string, string> = {
   '레이싱': 'bg-rose-100 text-rose-700',
   '쿠션화': 'bg-sky-100 text-sky-700',
-  '데일리': 'bg-emerald-100 text-emerald-700',
+  '데일리': 'bg-[var(--positive-soft)] text-positive',
   '입문화': 'bg-amber-100 text-amber-700',
   '안정화': 'bg-violet-100 text-violet-700',
   '트레일': 'bg-lime-100 text-lime-700',

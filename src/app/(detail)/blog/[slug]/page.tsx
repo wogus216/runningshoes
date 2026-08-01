@@ -206,7 +206,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
           {/* 태그 - Velog 스타일 teal pill */}
           <div className="flex flex-wrap gap-2">
-            <span className="px-3 py-1.5 text-sm font-medium rounded-full bg-teal-50 text-teal-600">
+            <span className="px-3 py-1.5 text-sm font-medium rounded-full bg-[var(--positive-soft)] text-positive">
               {categoryLabels[post.category]}
             </span>
             {post.tags.map((tag) => (

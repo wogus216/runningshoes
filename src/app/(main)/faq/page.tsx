@@ -222,19 +222,19 @@ const faqs: FAQItem[] = [
         </p>
         <ul className="space-y-2 mb-3">
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-teal-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div>깔창(insole) 제거 후 따로 세탁</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-teal-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div>미지근한 물에 중성 세제를 풀고 부드러운 솔로 문질러 닦기</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-teal-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div>헹군 후 신문지를 넣어 그늘에서 자연 건조 (절대 건조기 사용 금지)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-teal-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div>끈은 풀어서 따로 세탁</div>
           </li>
         </ul>
@@ -540,19 +540,19 @@ const faqs: FAQItem[] = [
         </p>
         <ul className="space-y-2 mb-3">
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div><strong>5km-10km (30-60분):</strong> 물만 마시면 충분. 에너지 젤 불필요</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div><strong>하프 마라톤 (90-120분):</strong> 1-2개 권장 (개인차 있음)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div><strong>풀 마라톤 (3-5시간):</strong> 4-6개 권장 (45-60분마다)</div>
           </li>
           <li className="flex items-start gap-2">
-            <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
+            <span className="w-2 h-2 rounded-full bg-positive mt-2 flex-shrink-0"></span>
             <div><strong>울트라 마라톤:</strong> 젤 + 고체 음식 조합</div>
           </li>
         </ul>

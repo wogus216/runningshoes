@@ -153,7 +153,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             <span
               className={cn(
                 "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[10px] font-semibold",
-                mobileBadge.color === 'positive' && "bg-teal-50 text-teal-700",
+                mobileBadge.color === 'positive' && "bg-[var(--positive-soft)] text-positive",
                 mobileBadge.color === 'warning' && "bg-orange-50 text-orange-700",
                 mobileBadge.color === 'accent' && "bg-sky-50 text-sky-700"
               )}
@@ -172,7 +172,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               key={idx}
               className={cn(
                 "inline-flex items-center gap-1 rounded-[3px] px-2 py-1 text-[11px] font-semibold",
-                badge.color === 'positive' && "bg-teal-50 text-teal-700",
+                badge.color === 'positive' && "bg-[var(--positive-soft)] text-positive",
                 badge.color === 'warning' && "bg-orange-50 text-orange-700",
                 badge.color === 'accent' && "bg-sky-50 text-sky-700"
               )}
@@ -203,7 +203,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             <span
               className={cn(
                 "inline-flex items-center gap-1 text-[10px] font-semibold",
-                mobileTag.type === 'positive' ? "text-teal-700" : "text-orange-700"
+                mobileTag.type === 'positive' ? "text-positive" : "text-orange-700"
               )}
             >
               {mobileTag.type === 'positive' ? (
@@ -222,7 +222,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
               key={idx}
               className={cn(
                 "inline-flex items-center gap-1 text-[11px] font-semibold flex-shrink-0",
-                tag.type === 'positive' ? "text-teal-700" : "text-orange-700"
+                tag.type === 'positive' ? "text-positive" : "text-orange-700"
               )}
             >
               {tag.type === 'positive' ? (

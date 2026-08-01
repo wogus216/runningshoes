@@ -25,6 +25,12 @@
   --navy-soft: #262319;
   --accent-soft: #FFE7DB;
   --accent-line: rgba(255, 77, 0, 0.2);
+  /* --positive 는 var() 참조라 Tailwind 의 /10 · /30 오파시티 유틸이 생성되지 않는다(빌드 CSS로 확인).
+     --accent-soft/--accent-line 과 동일하게 사전 계산한 톤을 별도 토큰으로 둔다.
+     positive(#2F7D5A)를 10% 틴트하면 text-positive와 4.39:1로 소형 텍스트 기준(4.5:1) 미달 —
+     6% 틴트(#F3F7F5)로 낮춰 4.62:1 확보. */
+  --positive-soft: #F3F7F5;
+  --positive-line: rgba(47, 125, 90, 0.3);
 
   --signal-dark: #C73800;
   --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */

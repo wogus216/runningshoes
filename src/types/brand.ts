@@ -56,9 +56,9 @@ export const categoryColorClasses: Record<TechnologyCategory, { bg: string; text
     border: 'border-slate-200',
   },
   cushioning: {
-    bg: 'bg-teal-50',
-    text: 'text-teal-700',
-    border: 'border-teal-200',
+    bg: 'bg-[var(--bg-warm-alt)]',
+    text: 'text-primary',
+    border: 'border-border',
   },
   stability: {
     bg: 'bg-cyan-50',

@@ -65,7 +65,7 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
             <span
               className={
                 durability.confidence === 'measured'
-                  ? 'rounded-full border border-teal-200 bg-teal-50 px-2 py-0.5 text-teal-700'
+                  ? 'rounded-full border border-[var(--positive-line)] bg-[var(--positive-soft)] px-2 py-0.5 text-positive'
                   : 'rounded-full border border-amber-200 bg-amber-50 px-2 py-0.5 text-amber-700'
               }
             >

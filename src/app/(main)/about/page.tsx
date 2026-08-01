@@ -258,8 +258,8 @@ export default function AboutPage() {
         {/* 에디터 소개 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-[4px] bg-blue-100 dark:bg-blue-900">
-              <Users className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+            <div className="p-3 rounded-[4px] bg-[var(--bg-warm-alt)] dark:bg-[var(--dark-soft)]">
+              <Users className="w-6 h-6 text-primary dark:text-[var(--light-on-dark)]" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">에디터 소개</h2>
@@ -286,7 +286,7 @@ export default function AboutPage() {
                 모든 신발 리뷰에는 실측 수치(토박스 너비, 에너지 리턴율, 충격흡수 SA값 등)를 포함하며,
                 &quot;이 신발 발볼 넓은 사람도 괜찮나요?&quot;에 숫자로 답하는 것이 목표입니다.
               </p>
-              <div className="rounded-[4px] bg-blue-50 dark:bg-blue-950/40 border border-blue-200/60 dark:border-blue-800/40 p-4 text-sm">
+              <div className="rounded-[4px] bg-[var(--bg-warm-alt)] dark:bg-[var(--dark-soft)]/40 border border-border dark:border-[var(--border)]/40 p-4 text-sm">
                 <div className="font-semibold text-primary mb-1">분석 검증 프로세스</div>
                 <ol className="space-y-1 text-secondary list-decimal list-inside">
                   <li>RunRepeat 랩 실측(SA, HA, 에너지 리턴%, 토박스 너비) 1차 수집</li>
@@ -303,8 +303,8 @@ export default function AboutPage() {
         {/* 독립성 */}
         <section className="section-card p-6">
           <div className="flex items-start gap-4">
-            <div className="p-3 rounded-[4px] bg-teal-100 dark:bg-teal-900">
-              <Shield className="w-6 h-6 text-teal-600 dark:text-teal-400" />
+            <div className="p-3 rounded-[4px] bg-[var(--bg-warm-alt)] dark:bg-[var(--dark-soft)]">
+              <Shield className="w-6 h-6 text-primary dark:text-[var(--light-on-dark)]" />
             </div>
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">독립성과 투명성</h2>

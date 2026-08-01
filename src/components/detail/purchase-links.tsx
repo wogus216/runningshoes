@@ -97,22 +97,22 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
           href={cheapestLink.url}
           target="_blank"
           rel="noopener noreferrer nofollow"
-          className="group block rounded border border-emerald-200 bg-white p-5 transition md:p-6"
+          className="group block rounded border border-[var(--positive-line)] bg-white p-5 transition md:p-6"
         >
           <div className="flex flex-wrap items-start justify-between gap-4">
             <div>
-              <div className="inline-flex items-center gap-1.5 rounded-[3px] bg-emerald-600 px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
+              <div className="inline-flex items-center gap-1.5 rounded-[3px] bg-positive px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-white">
                 <Sparkles className="h-3 w-3" />
                 최저가
               </div>
-              <p className="mt-3 text-xs uppercase tracking-wide text-emerald-700 font-semibold">
+              <p className="mt-3 text-xs uppercase tracking-wide text-positive font-semibold">
                 {cheapestLink.store} {cheapestLink.isOfficial ? '공식몰' : ''}
               </p>
               <p className="mt-1 font-mono text-3xl font-black tabular-nums text-slate-950 md:text-4xl">
                 {lowestPrice.toLocaleString()}<span className="text-xl">원</span>
               </p>
               {savings > 0 && (
-                <p className="mt-1 flex items-center gap-1 text-sm text-emerald-700 font-semibold">
+                <p className="mt-1 flex items-center gap-1 text-sm text-positive font-semibold">
                   <TrendingDown className="h-4 w-4" />
                   정가 대비 <span className="font-mono tabular-nums">{savings.toLocaleString()}원 ({savingsPct}%)</span> 절약
                 </p>
@@ -145,7 +145,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                     <p className="flex items-center gap-1.5 font-bold text-slate-950">
                       <span className={style.text}>{link.store}</span>
                       {link.isOfficial && (
-                        <span className="inline-flex items-center gap-1 rounded-[3px] bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700">
+                        <span className="inline-flex items-center gap-1 rounded-[3px] bg-[var(--positive-soft)] px-1.5 py-0.5 text-[10px] font-semibold text-positive">
                           <ShieldCheck className="h-3 w-3" />
                           공식
                         </span>
@@ -186,26 +186,26 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-surface/50 ${
-                      isCheapest ? 'bg-emerald-50/50' : ''
+                      isCheapest ? 'bg-[var(--positive-soft)]' : ''
                     }`}
                   >
                     <div className="flex items-center gap-2 min-w-0">
                       <span className={`font-bold ${style.text}`}>{link.store}</span>
                       {link.isOfficial && (
-                        <span className="inline-flex items-center gap-1 text-[10px] bg-emerald-100 text-emerald-700 px-1.5 py-0.5 rounded-[3px] font-semibold">
+                        <span className="inline-flex items-center gap-1 text-[10px] bg-[var(--positive-soft)] text-positive px-1.5 py-0.5 rounded-[3px] font-semibold">
                           <ShieldCheck className="h-3 w-3" />
                           공식
                         </span>
                       )}
                       {isCheapest && (
-                        <span className="text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded-[3px] font-semibold">
+                        <span className="text-[10px] bg-positive text-white px-1.5 py-0.5 rounded-[3px] font-semibold">
                           최저가
                         </span>
                       )}
                     </div>
                     <div className="text-right">
                       {link.price ? (
-                        <span className={`font-mono font-bold tabular-nums ${isCheapest ? 'text-emerald-700' : 'text-slate-950'}`}>
+                        <span className={`font-mono font-bold tabular-nums ${isCheapest ? 'text-positive' : 'text-slate-950'}`}>
                           {link.price.toLocaleString()}원
                         </span>
                       ) : (

@@ -131,10 +131,10 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
 
   const toneStyles = {
     good: {
-      border: 'border-emerald-200',
-      bg: 'bg-emerald-50/60',
-      icon: <Check className="h-5 w-5 text-emerald-600" />,
-      text: 'text-emerald-800',
+      border: 'border-[var(--positive-line)]',
+      bg: 'bg-[var(--positive-soft)]',
+      icon: <Check className="h-5 w-5 text-positive" />,
+      text: 'text-positive',
     },
     caution: {
       border: 'border-amber-200',
@@ -198,7 +198,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
           {koreanFootFit.wideOptions && (
             <>
               <span>·</span>
-              <span className="text-emerald-700 font-semibold">와이드 옵션 있음</span>
+              <span className="text-positive font-semibold">와이드 옵션 있음</span>
             </>
           )}
         </div>
