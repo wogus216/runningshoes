@@ -1674,7 +1674,7 @@ git commit -m "feat(home): 에디토리얼 섹션 + 마지막 CTA 다크 밴드"
 **Interfaces:**
 - Consumes: Task 11~16의 모든 컴포넌트, Task 10의 데이터 레이어
 
-- [ ] **Step 1: 서버 페이지에서 데이터 준비**
+- [x] **Step 1: 서버 페이지에서 데이터 준비**
 
 ```tsx
 // src/app/(main)/page.tsx
@@ -1724,7 +1724,7 @@ type HomeContentProps = {
 };
 ```
 
-- [ ] **Step 2: 섹션 순서대로 조립**
+- [x] **Step 2: 섹션 순서대로 조립**
 
 ```
 HomeHeader(기존) → KineticHero → ResumeSection → ProblemExplorer →
@@ -1735,14 +1735,14 @@ AdSlot(기존 homeBottom) → EditorialSection → FinalCTA → Footer(기존)
 `ResumeSection`은 기록이 없으면 `null`을 반환하므로 신규 방문자에겐 자동으로 빠진다.
 `RecommendationProcess`는 재방문자(이어보기 기록 있음)에게 렌더하지 않는다.
 
-- [ ] **Step 3: 광고 위치와 ID 확인**
+- [x] **Step 3: 광고 위치와 ID 확인**
 
 ```bash
 grep -n "ADSENSE_SLOTS" src/components/home/home-content.tsx
 ```
 기대: `ADSENSE_SLOTS.homeBottom` 1회, 인덱스와 에디토리얼 사이
 
-- [ ] **Step 4: 전체 검증**
+- [x] **Step 4: 전체 검증**
 
 ```bash
 set -o pipefail
@@ -1750,7 +1750,7 @@ npm run validate && npm test && npm run build && npm run check:payload
 ```
 기대: 전부 통과
 
-- [ ] **Step 5: 커밋**
+- [x] **Step 5: 커밋**
 
 ```bash
 git add src/components/home/home-content.tsx src/app/\(main\)/page.tsx

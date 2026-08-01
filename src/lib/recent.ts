@@ -111,6 +111,24 @@ export function readResume(validSlugs: ReadonlySet<string>): ResumeData {
   };
 }
 
+/**
+ * 기록이 하나라도 있는지만 본다(파싱·유효성 검사 없음).
+ *
+ * 홈이 "재방문자인가"를 판단해 추천 작동 방식 섹션을 뺄 때 쓴다(스펙 §5) — 그 판단에는
+ * 기록의 내용이 필요 없고, 삭제된 신발을 가리키는 기록이어도 재방문자인 것은 맞다.
+ */
+export function hasAnyRecent(): boolean {
+  const s = store();
+  if (!s) return false;
+  return Object.values(KEY).some((key) => {
+    try {
+      return s.getItem(key) !== null;
+    } catch {
+      return false;
+    }
+  });
+}
+
 export function clearResume(): void {
   const s = store();
   if (!s) return;

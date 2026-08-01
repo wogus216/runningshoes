@@ -65,9 +65,12 @@
   inset: -12px -8px;
 }
 
+/* 카드는 1~3개다(최근 본 신발·비교·지난 추천 중 있는 것만).
+   repeat(3, 1fr) 로 고정하면 2개일 때 세 번째 칸이 빈 흰 면으로 남는다 — auto-fit 으로
+   있는 만큼만 채운다. */
 .list {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1px;
   background: var(--border);
   border: 1px solid var(--border);
