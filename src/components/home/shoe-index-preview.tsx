@@ -157,7 +157,7 @@ export function ShoeIndexPreview({
   ];
 
   return (
-    <section className={styles.sec}>
+    <section className={styles.sec} id="shoe-index">
       <SectionHead
         eyebrow="SHOE INDEX"
         title="지금 비교 가능한 러닝화"

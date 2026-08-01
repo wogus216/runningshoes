@@ -1,0 +1,114 @@
+/* 09 에디토리얼 — 시안 §BEYOND THE NUMBERS 이식.
+ * 3열 동일 카드 반복을 피한다. 대표 1개 + 목록으로 위계를 만든다. */
+
+.sec {
+  composes: sec from './home-section.module.css';
+  border-top: 1px solid var(--border);
+}
+
+.ed {
+  display: grid;
+  grid-template-columns: 1.12fr 0.88fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.leadImg {
+  width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+/* 썸네일이 없는 글 — 비율만 지켜 자리를 잡는다(레이아웃이 흔들리지 않게) */
+.leadBlank {
+  width: 100%;
+  aspect-ratio: 3/2;
+  border: 1px solid var(--border);
+  background: var(--bg-warm-alt);
+}
+
+/* 카테고리·날짜·분량은 라벨과 수치라 mono 가 맞다 */
+.meta {
+  display: flex;
+  gap: 12px;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--secondary);
+  margin: 16px 0 10px;
+  letter-spacing: 0.08em;
+}
+.cat {
+  color: var(--signal-dark);
+}
+.leadT {
+  font-size: clamp(21px, 2.6vw, 27px);
+  font-weight: 750;
+  letter-spacing: -0.028em;
+  line-height: 1.28;
+  word-break: keep-all;
+}
+.leadX {
+  font-size: 14px;
+  color: var(--secondary);
+  margin-top: 10px;
+  line-height: 1.6;
+  word-break: keep-all;
+}
+/* 에디터 이름은 이 영역에서만 노출한다 */
+.by {
+  font-size: 12px;
+  color: var(--secondary);
+  margin-top: 14px;
+}
+
+.list {
+  border-top: 2px solid var(--primary);
+}
+.item {
+  display: block;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+.item:hover .itemT { color: var(--signal-dark); }
+.itemM {
+  display: flex;
+  gap: 11px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--secondary);
+  margin-bottom: 6px;
+  letter-spacing: 0.08em;
+}
+.itemM .cat {
+  color: var(--signal-dark);
+}
+.itemT {
+  font-size: 15px;
+  font-weight: 620;
+  line-height: 1.42;
+  letter-spacing: -0.018em;
+  word-break: keep-all;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  font-weight: 650;
+  border-bottom: 0;
+  padding-top: 18px;
+  min-height: 48px;
+}
+.more:hover { color: var(--signal-dark); }
+.moreGo {
+  font-family: var(--mono);
+  color: var(--signal-dark);
+}
+
+@media (max-width: 860px) {
+  .ed {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+}

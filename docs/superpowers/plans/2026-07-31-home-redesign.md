@@ -1634,19 +1634,19 @@ git commit -m "feat(home): 러닝화 인덱스 — 122링크 보존 + 16→24 �
   export function FinalCTA(): JSX.Element;
   ```
 
-- [ ] **Step 1: EditorialSection 구현**
+- [x] **Step 1: EditorialSection 구현**
 
 제목 `숫자가 말해주지 않는 것`. 대표 1개(큰 비주얼 + 헤드라인) + 목록 4개(비교 2 + 지식 2).
 3열 동일 카드 반복을 피한다. 에디터 이름 `산초 에디터`는 **이 영역에서만** 노출한다.
 클릭 시 `track('home_blog_click', { destination_path: `/blog/${slug}` })`.
 
-- [ ] **Step 2: FinalCTA 구현**
+- [x] **Step 2: FinalCTA 구현**
 
 페이지에서 **유일한 다크 밴드**다. 배경 `--dark`, 보조 톤 `--dark-soft`, 텍스트 `--light-on-dark`.
 카피 `수많은 러닝화 중 / 내게 맞는 선택만 남겨보세요.` + 버튼 `9문항 맞춤 추천 시작` + 보조 링크 `전체 러닝화 보기`.
 배경에 트랙 사선을 아주 옅게 깐다.
 
-- [ ] **Step 3: 다크 면적 확인**
+- [x] **Step 3: 다크 면적 확인**
 
 ```js
 // 브라우저 콘솔
@@ -1655,7 +1655,7 @@ console.log('다크 비중', Math.round(dark / document.body.scrollHeight * 100)
 ```
 기대: 22% 이하
 
-- [ ] **Step 4: 커밋**
+- [x] **Step 4: 커밋**
 
 ```bash
 set -o pipefail && npm run build
