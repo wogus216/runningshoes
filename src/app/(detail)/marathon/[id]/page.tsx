@@ -388,6 +388,11 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                   {event.status}
                 </span>
               </dd>
+              {event.lastVerified && (
+                <p className="mt-1.5 text-[11px] leading-snug text-secondary">
+                  {event.lastVerified.replace(/-/g, '.')} 확인 · 신청 전 공식 페이지에서 다시 확인하세요.
+                </p>
+              )}
             </div>
           </dl>
         </div>

@@ -362,6 +362,13 @@ if (!fs.existsSync(marathonDir)) {
           marathonOk = false;
         }
 
+        // 접수 마감일이 대회일보다 뒤일 수는 없다 (논리적으로 불가능한 값)
+        const regEnd = pick(/registrationEnd:\s*'([^']+)'/);
+        if (regEnd && regEnd > date) {
+          error(`[marathon] ${name}: registrationEnd(${regEnd})가 개최일(${date})보다 늦습니다`);
+          marathonOk = false;
+        }
+
         // description에 박힌 마감일이 지났는데 아직 접수중 (내부 모순 탐지)
         // 실제 사례: '5/31 접수 마감'인데 status는 접수중이었고, 확인해 보니
         // 그 날짜 자체가 공식에 없는 값이었다. 자동 판정하지 말고 사람이 확인할 것.
