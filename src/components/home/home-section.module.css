@@ -55,6 +55,8 @@
   word-break: keep-all;
 }
 
+/* 모바일 시안(home-mobile-2026-08.html)의 실측 여백이다. 데스크톱 값(68)을 52 로만 줄이면
+   섹션 6개에서 200px 넘게 더 길어져 전체 높이 기준(8,000px)을 넘긴다. */
 @media (max-width: 760px) {
-  .sec { padding: 52px 0; }
+  .sec { padding: 34px 0; }
 }

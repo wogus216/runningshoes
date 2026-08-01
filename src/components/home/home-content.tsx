@@ -7,8 +7,7 @@ import type { DataStatus } from '@/lib/home/data-status';
 import type { ProblemThumb } from '@/lib/home/problem-counts';
 import type { HomeStats } from '@/lib/home/stats';
 import { hasAnyRecent } from '@/lib/recent';
-import { AdSlot } from '@/components/ads/ad-slot';
-import { ADSENSE_SLOTS } from '@/lib/constants';
+import { HomeAdSlot } from '@/components/home/home-ad-slot';
 import { KineticHero } from '@/components/home/kinetic-hero';
 import { ResumeSection } from '@/components/home/resume-section';
 import { ProblemExplorer } from '@/components/home/problem-explorer';
@@ -88,8 +87,8 @@ export function HomeContent({
       <ShoeIndexPreview shoes={shoes} statuses={dataStatuses} />
 
       {/* 홈 하단 광고 — 인덱스와 에디토리얼 사이. 현행 "결과 그리드 ↔ Beyond Shoes" 경계를
-          그대로 승계한다. 슬롯 ID·개수·위치를 바꾸지 않는다(스펙 §7). */}
-      <AdSlot slot={ADSENSE_SLOTS.homeBottom} format="auto" label="홈 하단 광고" />
+          그대로 승계한다. 슬롯 ID·개수·위치를 바꾸지 않고 도달 계측만 덧댄다(스펙 §7·§8). */}
+      <HomeAdSlot />
 
       {lead && <EditorialSection lead={lead} items={rest.slice(0, 6)} />}
 

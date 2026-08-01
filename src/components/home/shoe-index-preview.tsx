@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { track } from '@/lib/analytics';
@@ -19,7 +19,10 @@ export type ShoeIndexPreviewProps = {
 };
 
 const STEP = 24;
+/** 기본 노출 — 데스크톱 16 / 모바일 12 (스펙 §5.2) */
 const DEFAULT_INITIAL = 16;
+const MOBILE_INITIAL = 12;
+const MOBILE_QUERY = '(max-width: 900px)';
 
 type FilterId = 'all' | 'wide' | 'under20' | `cat:${string}`;
 
@@ -110,6 +113,32 @@ export function ShoeIndexPreview({
   const [filter, setFilter] = useState<FilterId>('all');
   const [shown, setShown] = useState(initialCount);
 
+  /**
+   * 모바일은 12행에서 시작한다(스펙 §5.2).
+   *
+   * 서버 렌더는 폭을 모르므로 16행으로 나가고 마운트 후 좁은 화면에서만 12로 줄인다.
+   * 정적 HTML 이 더 많이 담고 있는 방향이라 크롤러·JS 없는 환경에는 손해가 없고,
+   * 인덱스는 모바일에서 한참 아래에 있어 줄어드는 4행이 화면 밖이라 CLS 에 잡히지 않는다.
+   */
+  const [mobileInitial, setMobileInitial] = useState(initialCount);
+  // 현재 기준값. 사용자가 확장·필터로 직접 바꾼 상태를 브레이크포인트 변화가 덮지 않게 한다
+  const basisRef = useRef(initialCount);
+  useEffect(() => {
+    const mq = window.matchMedia(MOBILE_QUERY);
+    const apply = () => {
+      const next = mq.matches ? Math.min(MOBILE_INITIAL, initialCount) : initialCount;
+      // 아직 기준값 그대로면 새 기준을 따르고, 사용자가 이미 늘렸으면 건드리지 않는다.
+      // basisRef 대신 initialCount 로 비교하면 모바일(12)에서 데스크톱으로 돌아올 때
+      // 12 !== 16 이라 12에 갇힌다(실측으로 확인).
+      setShown((cur) => (cur === basisRef.current ? next : cur));
+      basisRef.current = next;
+      setMobileInitial(next);
+    };
+    apply();
+    mq.addEventListener('change', apply);
+    return () => mq.removeEventListener('change', apply);
+  }, [initialCount]);
+
   const ordered = useMemo(() => orderForIndex(shoes), [shoes]);
   const filtered = useMemo(() => ordered.filter((s) => matches(s, filter)), [ordered, filter]);
 
@@ -129,7 +158,7 @@ export function ShoeIndexPreview({
   const changeFilter = (next: FilterId) => {
     setFilter(next);
     const size = ordered.filter((s) => matches(s, next)).length;
-    setShown(size <= initialCount ? size : initialCount);
+    setShown(size <= mobileInitial ? size : mobileInitial);
     if (next !== 'all') {
       track('home_filter_apply', {
         section_name: 'shoe_index',

@@ -137,6 +137,6 @@
 }
 
 @media (max-width: 760px) {
-  .sec { padding: 40px 0; }
+  .sec { padding: 26px 0; }
   .list { grid-template-columns: 1fr; }
 }

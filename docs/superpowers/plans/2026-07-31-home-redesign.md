@@ -1768,7 +1768,7 @@ git commit -m "feat(home): 새 홈 조립 — 11개 섹션, 재방문 분기"
 
 **QA A와 QA B의 결과를 섞지 않는다.** 이 태스크는 팔레트만 본다.
 
-- [ ] **Step 1: raw 값 잔재 전수 확인**
+- [x] **Step 1: raw 값 잔재 전수 확인**
 
 ```bash
 grep -rn "blue-[0-9]" src/ --include=*.tsx --include=*.ts | grep -v node_modules
@@ -1777,7 +1777,7 @@ grep -rn "#0ea5e9\|#0284c7\|#38bdf8" src/ | grep -v node_modules
 ```
 기대: 출력 없음. 있으면 토큰으로 교체한다.
 
-- [ ] **Step 2: 주요 페이지 육안 검수**
+- [x] **Step 2: 주요 페이지 육안 검수**
 
 ```bash
 set -o pipefail && npm run build && npx serve out
@@ -1785,12 +1785,12 @@ set -o pipefail && npm run build && npx serve out
 상세 · 비교 · 베스트 · 마라톤 · 블로그 · 브랜드 · 젤 페이지를 열어 확인한다.
 확인 항목: 본문 대비 · 버튼 대비 · 광고 주변 대비 · hover · focus · disabled 상태.
 
-- [ ] **Step 3: 대비 측정**
+- [x] **Step 3: 대비 측정**
 
 본문 텍스트(`--ink-soft` on `--paper`)와 CTA(`#FFF` on `--signal`)의 명도 대비를 계산한다.
 기대: 본문 4.5:1 이상, CTA 3:1 이상(큰 텍스트 기준). 미달이면 `--ink-soft`를 어둡게 조정한다.
 
-- [ ] **Step 4: 체크리스트 작성 후 커밋**
+- [x] **Step 4: 체크리스트 작성 후 커밋**
 
 ```bash
 git add .omc/design/qa-a-palette.md
@@ -1804,12 +1804,12 @@ git commit -m "qa(theme): QA A 전역 팔레트 체크리스트"
 **Files:**
 - Create: `.omc/design/qa-b-home.md`
 
-- [ ] **Step 1: 도달 기준 실측 (390px)**
+- [x] **Step 1: 도달 기준 실측 (390px)**
 
 Task 4 Step 2의 스크립트를 실제 빌드 결과에 대해 실행한다.
 기대: CTA 초기 화면 안 · 광고 55~70% · 마지막 CTA 85~90% · 전체 8,000px 이하
 
-- [ ] **Step 2: SEO 링크 수와 정적 렌더 확인**
+- [x] **Step 2: SEO 링크 수와 정적 렌더 확인**
 
 ```bash
 grep -o 'href="/shoes/[^"]*"' out/index.html | sort -u | wc -l   # 기대 122
@@ -1817,29 +1817,29 @@ grep -c "<h1" out/index.html                                      # 기대 1
 grep -o 'href="/best/[^"]*"' out/index.html | sort -u | wc -l     # 기대 6 이상
 ```
 
-- [ ] **Step 3: JS 비활성 동작 확인**
+- [x] **Step 3: JS 비활성 동작 확인**
 
 브라우저에서 JavaScript를 끄고 홈을 연다.
 기대: 카피·CTA 링크·인덱스 122행(`<details>` 펼침)·모든 내부 링크가 살아 있다.
 
-- [ ] **Step 4: 모션·접근성 확인**
+- [x] **Step 4: 모션·접근성 확인**
 
 - OS 모션 감소 설정 ON → 자동 모션 없이 최종 화면
 - 세션당 1회: 홈 → 다른 페이지 → 홈 복귀 시 재생되지 않음
 - 키보드만으로 CTA·필터·확장 버튼·바텀시트 도달 및 ESC 닫힘
 - 애니메이션 재생 중 CTA 클릭 가능
 
-- [ ] **Step 5: GA4 중복 발화 확인**
+- [x] **Step 5: GA4 중복 발화 확인**
 
 브라우저 콘솔에서 `dataLayer`를 관찰하며 광고 스크롤 진입·인덱스 확장·이어보기 클릭을 수행한다.
 기대: `home_ad_view`는 1회만, `home_shoe_index_expand`는 확장 횟수만큼.
 
-- [ ] **Step 6: CLS 확인**
+- [x] **Step 6: CLS 확인**
 
 Chrome DevTools Performance 또는 Lighthouse로 홈 CLS를 측정한다.
 기대: 0.1 미만. 광고 높이 예약(280px)과 이어보기 섹션의 늦은 등장이 주 위험 지점이다.
 
-- [ ] **Step 7: 체크리스트 작성 후 커밋**
+- [x] **Step 7: 체크리스트 작성 후 커밋**
 
 ```bash
 git add .omc/design/qa-b-home.md
