@@ -43,14 +43,46 @@ describe('recent', () => {
     expect(readResume(VALID).shoe).toBeNull();
   });
 
-  it('비교 쌍 중 하나라도 유효하지 않으면 제외한다', () => {
-    recordCompare(['nike-pegasus-42', 'deleted-shoe']);
+  it('비교 항목 중 하나라도 유효하지 않으면 제외한다', () => {
+    recordCompare([
+      { slug: 'nike-pegasus-42', name: '페가수스 42' },
+      { slug: 'deleted-shoe', name: '삭제됨' },
+    ]);
     expect(readResume(VALID).compare).toBeNull();
   });
 
-  it('비교 쌍이 모두 유효하면 반환한다', () => {
-    recordCompare(['nike-pegasus-42', 'nike-vomero-18']);
-    expect(readResume(VALID).compare?.slugs).toEqual(['nike-pegasus-42', 'nike-vomero-18']);
+  it('비교 항목이 모두 유효하면 반환한다', () => {
+    recordCompare([
+      { slug: 'nike-pegasus-42', name: '페가수스 42' },
+      { slug: 'nike-vomero-18', name: '보메로 18' },
+    ]);
+    expect(readResume(VALID).compare?.shoes.map((s) => s.slug)).toEqual([
+      'nike-pegasus-42',
+      'nike-vomero-18',
+    ]);
+  });
+
+  // 비교 UI는 4개까지 허용한다. 2개일 때만 기록하면 3~4개를 고른 사용자에게 카드가 안 뜬다.
+  it('비교 항목 3~4개도 기록한다', () => {
+    recordCompare([
+      { slug: 'nike-pegasus-42', name: '페가수스 42' },
+      { slug: 'nike-vomero-18', name: '보메로 18' },
+      { slug: 'asics-novablast-6', name: '노바블라스트 6' },
+    ]);
+    expect(readResume(VALID).compare?.shoes).toHaveLength(3);
+  });
+
+  it('비교 항목이 1개뿐이면 기록하지 않는다', () => {
+    recordCompare([{ slug: 'nike-pegasus-42', name: '페가수스 42' }]);
+    expect(readResume(VALID).compare).toBeNull();
+  });
+
+  it('구 스키마({ slugs: [...] })로 저장된 값은 제외한다', () => {
+    (globalThis as TestGlobal).window?.localStorage.setItem(
+      'arb:recent:compare',
+      JSON.stringify({ slugs: ['nike-pegasus-42', 'nike-vomero-18'], at: Date.now() }),
+    );
+    expect(readResume(VALID).compare).toBeNull();
   });
 
   it('추천 요약을 기록하고 읽는다', () => {
@@ -79,10 +111,10 @@ describe('recent', () => {
     expect(readResume(VALID).shoe).toBeNull();
   });
 
-  it('비교 기록의 slugs가 배열이 아니면 제외한다', () => {
+  it('비교 기록의 shoes가 배열이 아니면 제외한다', () => {
     (globalThis as TestGlobal).window?.localStorage.setItem(
       'arb:recent:compare',
-      JSON.stringify({ slugs: 'nike-pegasus-42', at: Date.now() }),
+      JSON.stringify({ shoes: 'nike-pegasus-42', at: Date.now() }),
     );
     expect(readResume(VALID).compare).toBeNull();
   });
@@ -106,7 +138,12 @@ describe('recent — SSR/예외 환경', () => {
     expect(() =>
       recordShoeView({ slug: 'asics-novablast-6', name: '노바블라스트 6', category: '데일리' }),
     ).not.toThrow();
-    expect(() => recordCompare(['nike-pegasus-42', 'nike-vomero-18'])).not.toThrow();
+    expect(() =>
+      recordCompare([
+        { slug: 'nike-pegasus-42', name: '페가수스 42' },
+        { slug: 'nike-vomero-18', name: '보메로 18' },
+      ]),
+    ).not.toThrow();
     expect(() => recordRecommend('테스트')).not.toThrow();
     expect(() => clearResume()).not.toThrow();
     expect(readResume(VALID)).toEqual({ shoe: null, compare: null, recommend: null });

@@ -60,10 +60,14 @@ function ComparePageContent() {
     }
   }, [allShoes]);
 
-  // 재방문 "이어보기" 기록 — 정확히 2개를 선택했을 때만 (홈의 이어보기 카드용)
+  // 재방문 "이어보기" 기록 — 2개 이상 선택했을 때 (홈의 이어보기 카드용).
+  // 이 UI는 4개까지 허용하므로 2개일 때만 기록하면 3~4개를 고른 사용자에게 카드가 안 뜬다.
+  // 이름·이미지를 함께 남겨 홈이 신발 메타를 통째로 들고 있지 않아도 되게 한다.
   useEffect(() => {
-    if (selectedShoes.length === 2) {
-      recordCompare([selectedShoes[0].slug, selectedShoes[1].slug]);
+    if (selectedShoes.length >= 2) {
+      recordCompare(
+        selectedShoes.map((s) => ({ slug: s.slug, name: s.name, image: s.image })),
+      );
     }
   }, [selectedShoes]);
 

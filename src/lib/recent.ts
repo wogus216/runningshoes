@@ -10,9 +10,18 @@
  * 문자열)뿐이다 — 검색어·IP·사용자 식별자 등은 다루지 않는다.
  */
 
-export type RecentShoe = { slug: string; name: string; category: string; at: number };
-export type RecentCompare = { slugs: [string, string]; at: number };
+export type RecentShoe = { slug: string; name: string; category: string; image?: string; at: number };
+/** 비교 이어보기 항목. 이름·이미지를 기록 시점에 함께 저장한다(아래 주석 참고). */
+export type RecentCompareItem = { slug: string; name: string; image?: string };
+export type RecentCompare = { shoes: RecentCompareItem[]; at: number };
 export type RecentRecommend = { summary: string; at: number };
+
+/**
+ * 비교는 UI가 최대 4켤레를 허용한다. 2켤레일 때만 기록하면 3~4켤레를 고르고 나간
+ * 사용자에게 이어보기가 안 뜬다(Task 9에서 이월된 갭).
+ */
+const COMPARE_MIN = 2;
+const COMPARE_MAX = 4;
 export type ResumeData = {
   shoe: RecentShoe | null;
   compare: RecentCompare | null;
@@ -60,8 +69,15 @@ export function recordShoeView(s: Omit<RecentShoe, 'at'>): void {
   write(KEY.shoe, { ...s, at: Date.now() });
 }
 
-export function recordCompare(slugs: [string, string]): void {
-  write(KEY.compare, { slugs, at: Date.now() });
+/**
+ * 이름·이미지를 slug와 함께 저장한다. 홈에서 slug만 갖고 이름을 찾으려면 전체 신발 메타를
+ * 홈 페이로드에 실어야 하는데(122종 약 10KB), 이어보기는 재방문자만 보는 부가 기능이라
+ * 모든 방문자에게 그 비용을 물리는 게 맞지 않는다. 기록 시점에는 이미 이름·이미지가
+ * 손에 있으므로 그때 함께 남긴다. 삭제된 신발 필터링은 홈의 validSlugs가 담당한다.
+ */
+export function recordCompare(shoes: RecentCompareItem[]): void {
+  if (shoes.length < COMPARE_MIN) return;
+  write(KEY.compare, { shoes: shoes.slice(0, COMPARE_MAX), at: Date.now() });
 }
 
 export function recordRecommend(summary: string): void {
@@ -74,15 +90,23 @@ export function readResume(validSlugs: ReadonlySet<string>): ResumeData {
   const compare = read<RecentCompare>(KEY.compare);
   const recommend = read<RecentRecommend>(KEY.recommend);
 
+  const compareOk =
+    compare &&
+    Array.isArray(compare.shoes) &&
+    compare.shoes.length >= COMPARE_MIN &&
+    compare.shoes.length <= COMPARE_MAX &&
+    compare.shoes.every(
+      (s) =>
+        s &&
+        typeof s.slug === 'string' &&
+        typeof s.name === 'string' &&
+        validSlugs.has(s.slug),
+    );
+
   return {
     shoe: shoe && typeof shoe.slug === 'string' && validSlugs.has(shoe.slug) ? shoe : null,
-    compare:
-      compare &&
-      Array.isArray(compare.slugs) &&
-      compare.slugs.length === 2 &&
-      compare.slugs.every((slug) => typeof slug === 'string' && validSlugs.has(slug))
-        ? compare
-        : null,
+    // 구 스키마({ slugs: [a, b] })로 저장된 값은 shoes가 없어 여기서 자연히 걸러진다.
+    compare: compareOk ? compare : null,
     recommend: recommend && typeof recommend.summary === 'string' ? recommend : null,
   };
 }

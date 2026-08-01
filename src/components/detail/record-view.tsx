@@ -14,14 +14,16 @@ export function RecordView({
   slug,
   name,
   category,
+  image,
 }: {
   slug: string;
   name: string;
   category: string;
+  image?: string;
 }) {
   useEffect(() => {
-    recordShoeView({ slug, name, category });
-  }, [slug, name, category]);
+    recordShoeView({ slug, name, category, image });
+  }, [slug, name, category, image]);
 
   return null;
 }

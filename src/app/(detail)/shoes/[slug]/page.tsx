@@ -351,7 +351,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       )}
 
       {/* 재방문 "이어보기" 기록 (화면 렌더 없음) */}
-      <RecordView slug={shoe.slug} name={shoe.name} category={shoe.category} />
+      <RecordView slug={shoe.slug} name={shoe.name} category={shoe.category} image={shoe.image} />
 
       <div className="space-y-4">
         {/* 브레드크럼 */}
