@@ -25,6 +25,7 @@
     --signal-dark:   #C73800;
     --positive:      #2F7D5A;
     --warning:       #C98112;
+    --warning-dark:  #96600B;
     --dark-soft:     #28241D;
     --light-on-dark: #F7F4ED;
 
@@ -113,7 +114,7 @@
   .h-cta {
     display: flex; align-items: center; justify-content: center; gap: 10px;
     background: var(--signal); color: #fff;
-    font-weight: 700; font-size: 16px; padding: 15px 18px;
+    font-weight: 700; font-size: 19px; padding: 15px 18px;
     border-radius: 2px; min-height: 52px;
   }
   .h-cta:hover { background: var(--signal-dark); }
@@ -356,9 +357,9 @@
            border: 1px solid var(--line); padding: 4px 8px; color: var(--ink-soft);
            background: var(--surface); }
   /* 상태 색은 보조 신호일 뿐, 텍스트가 항상 함께 있다 */
-  .badge.on { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .badge.on { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   .badge.ok { border-color: var(--positive); color: var(--positive); }
-  .badge.est { border-color: var(--warning); color: var(--warning); }
+  .badge.est { border-color: var(--warning); color: var(--warning-dark); }
   .trust-link { display: inline-block; margin-top: 15px; font-size: 13.5px; font-weight: 600;
                 border-bottom: 1px solid var(--signal); padding-bottom: 3px; }
 
@@ -373,7 +374,7 @@
   .fbtn[data-on="1"] { border-color: var(--signal); color: var(--signal); }
   .fbtn[data-on="1"] .fbtn-n { color: var(--signal); }
   .result-n { font-size: 13px; font-weight: 600; text-align: right; }
-  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 15px; }
+  .result-n b { font-family: var(--mono); color: var(--signal-dark); font-size: 15px; }
 
   /* 모바일 메뉴 — 5개 메뉴 + 검색 + 추천 CTA. 헤더 nav 를 접어둔 자리다.
      링크는 실제 <a> 로 DOM 에 남아 크롤러가 읽는다(숨김은 CSS 아닌 hidden 속성) */
@@ -446,7 +447,7 @@
   .row-s { grid-area: stat; justify-self: end; font-family: var(--mono); font-size: 9px;
            letter-spacing: 0.04em; color: var(--ink-soft);
            border: 1px solid var(--line); padding: 2px 5px; white-space: nowrap; }
-  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .row-s.verified { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   /* 썸네일이 아직 없는 신발 — 중립 실루엣 마크로 자리를 지킨다 */
   .row-mark { width: 42px; height: 21px; color: var(--line); }
   .row:hover .row-mark { color: var(--ink-soft); }
@@ -514,7 +515,7 @@
              font-family: var(--mono); letter-spacing: 0.04em; }
   /* 오렌지 솔리드 면 ② — 최종 밴드 CTA */
   .btn-signal { display: flex; align-items: center; justify-content: center; gap: 9px;
-                background: var(--signal); color: #fff; font-weight: 700; font-size: 16px;
+                background: var(--signal); color: #fff; font-weight: 700; font-size: 19px;
                 min-height: 52px; border-radius: 2px; margin-top: 20px; }
   .final-alt { display: block; width: fit-content; margin: 14px auto 0; font-size: 13.5px;
                border-bottom: 1px solid rgba(247,244,237,.4); padding-bottom: 3px; }
@@ -661,7 +662,7 @@
           </span>
         </a>
         <a class="res-i" href="/recommend">
-          <span class="res-th"><span style="font-family:var(--mono);font-size:17px;color:var(--signal)">9/9</span></span>
+          <span class="res-th"><span style="font-family:var(--mono);font-size:19px;font-weight:700;color:var(--signal-dark)">9/9</span></span>
           <span>
             <span class="res-k">지난 추천 결과</span>
             <span class="res-v">넓은 발볼 · 데일리 · 20만원 이하</span>

@@ -12,7 +12,7 @@
     --paper: #F7F4ED; --paper-soft: #EFEAE0; --surface: #FFFFFF;
     --ink: #17150F; --ink-soft: #6E6A5E; --line: #D9D4C8;
     --signal: #FF4D00; --signal-soft: #FFE7DB;
-    --signal-dark: #C73800; --positive: #2F7D5A; --warning: #C98112;
+    --signal-dark: #C73800; --positive: #2F7D5A; --warning: #C98112; --warning-dark: #96600B;
     --dark-soft: #28241D; --light-on-dark: #F7F4ED;
     --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard", "Segoe UI", "Noto Sans KR", sans-serif;
     --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
@@ -76,7 +76,7 @@
   .rline { display: flex; align-items: baseline; justify-content: space-between; gap: 12px;
            padding: 13px 0 10px; border-bottom: 2px solid var(--ink); }
   .result-n { font-size: 13.5px; font-weight: 600; }
-  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 16px; }
+  .result-n b { font-family: var(--mono); color: var(--signal-dark); font-size: 16px; }
   .sortl { font-family: var(--mono); font-size: 10px; color: var(--ink-soft); }
 
   .idx { border-bottom: 1px solid var(--line); }
@@ -92,7 +92,7 @@
   .row-w { font-family: var(--mono); font-size: 10.5px; color: var(--ink-soft); }
   .row-s { font-family: var(--mono); font-size: 8.5px; letter-spacing: .04em; color: var(--ink-soft);
            border: 1px solid var(--line); padding: 2px 5px; white-space: nowrap; }
-  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .row-s.verified { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   .row-p { font-family: var(--mono); font-size: 12px; font-weight: 600; text-align: right; font-variant-numeric: tabular-nums; }
 
   /* ── 확장 단계 ── */
@@ -164,7 +164,7 @@
          padding: 3px 8px; background: var(--surface); border: 1px solid var(--line); color: var(--ink);
          border-radius: 2px; opacity: 0; }
   .lab.name { border-color: transparent; background: none; color: var(--ink-soft); padding-left: 0; }
-  .lab.keep { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .lab.keep { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   .streak { position: absolute; height: 2px; background: var(--signal); transform-origin: right center;
             transform: rotate(var(--tilt)) scaleX(0); }
   .viz svg.fig, .viz svg.sil { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }

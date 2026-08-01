@@ -25,6 +25,7 @@
     --signal-dark:   #C73800;   /* 시그널 hover·강조 라인 */
     --positive:      #2F7D5A;   /* 확인된 데이터 상태 */
     --warning:       #C98112;   /* 추정·갱신 대기 */
+    --warning-dark:  #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
     --dark-soft:     #28241D;   /* 다크 밴드 보조 면 */
     --light-on-dark: #F7F4ED;   /* 다크 위 텍스트 */
 
@@ -155,7 +156,7 @@
   .h-cta {
     display: inline-flex; align-items: center; gap: 12px;
     background: var(--signal); color: #fff;
-    font-weight: 700; font-size: 17px; padding: 17px 26px;
+    font-weight: 700; font-size: 19px; padding: 17px 26px;
     border-radius: 2px; min-height: 54px; position: relative;
   }
   .h-cta:hover { background: var(--signal-dark); }
@@ -171,7 +172,7 @@
   }
   @container (max-width: 900px) {
     .h-sub { font-size: 15px; margin-bottom: 20px; }
-    .h-cta { width: 100%; justify-content: center; font-size: 16px; }
+    .h-cta { width: 100%; justify-content: center; font-size: 19px; }
     .h-alt { margin-top: 14px; }
   }
 
@@ -239,7 +240,7 @@
     color: var(--ink); border-radius: 2px; opacity: 0;
   }
   .lab.name { border-color: transparent; background: none; color: var(--ink-soft); padding-left: 0; }
-  .lab.keep { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .lab.keep { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
 
   /* 속도선 — 실루엣이 지나온 자국. 트랙과 같은 각도로 흐른다 */
   .streak {
@@ -544,10 +545,10 @@
     font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em;
     border: 1px solid var(--line); padding: 4px 9px; color: var(--ink-soft); background: var(--surface);
   }
-  .badge.on { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .badge.on { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   /* 상태 색은 보조 신호일 뿐, 텍스트가 항상 함께 있다 (색만으로 구분하지 않는다) */
   .badge.ok  { border-color: var(--positive); color: var(--positive); }
-  .badge.est { border-color: var(--warning);  color: var(--warning); }
+  .badge.est { border-color: var(--warning);  color: var(--warning-dark); }
   .trust-link { display: inline-block; margin-top: 24px; font-size: 14px; font-weight: 600; border-bottom: 1px solid var(--signal); padding-bottom: 3px; }
 
   /* ---------- 06 필터 + 인덱스 ---------- */
@@ -566,7 +567,7 @@
     padding: 16px 0 12px; border-bottom: 2px solid var(--ink); flex-wrap: wrap;
   }
   .result-n { font-size: 15px; font-weight: 600; }
-  .result-n b { font-family: var(--mono); color: var(--signal); font-size: 17px; }
+  .result-n b { font-family: var(--mono); color: var(--signal-dark); font-size: 17px; }
   .sort { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); }
 
   .idx { border-bottom: 1px solid var(--line); }
@@ -586,7 +587,7 @@
   .row-w, .row-p { font-family: var(--mono); font-size: 12.5px; font-variant-numeric: tabular-nums; text-align: right; }
   .row-p { font-weight: 600; }
   .row-s { font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.06em; color: var(--ink-soft); border: 1px solid var(--line); padding: 3px 6px; justify-self: end; white-space: nowrap; }
-  .row-s.verified { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .row-s.verified { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
   .idx-head {
     display: grid; grid-template-columns: 62px 1.6fr 1.2fr 72px 62px 92px 104px; gap: 16px;
     font-family: var(--mono); font-size: 9.5px; letter-spacing: 0.14em; color: var(--ink-soft);
@@ -720,7 +721,7 @@
     letter-spacing: -0.03em; font-variant-numeric: tabular-nums;
   }
   .fs-l { font-size: 12.5px; color: rgba(247,244,237,.58); margin-top: 8px; }
-  @container (max-width: 860px) { .final-a { width: 100%; } .final-a .btn-signal { width: 100%; justify-content: center; padding: 16px; font-size: 16px; } }
+  @container (max-width: 860px) { .final-a { width: 100%; } .final-a .btn-signal { width: 100%; justify-content: center; padding: 16px; font-size: 19px; } }
 
   /* ---------- 10 푸터 ---------- */
   .ft { padding: 44px 0 56px; font-size: 13px; color: var(--ink-soft); }
@@ -892,7 +893,7 @@
           </span>
         </a>
         <a class="res-i" href="/recommend">
-          <span class="res-th"><span style="font-family:var(--mono);font-size:20px;color:var(--signal)">9/9</span></span>
+          <span class="res-th"><span style="font-family:var(--mono);font-size:20px;font-weight:700;color:var(--signal-dark)">9/9</span></span>
           <span>
             <span class="res-k">지난 추천 결과</span>
             <p class="res-v">넓은 발볼 · 데일리 · 20만원 이하</p>
@@ -1418,7 +1419,7 @@
         <p class="final-s">약 1분 · 9문항 · 로그인 없이</p>
       </div>
       <div class="final-a">
-        <a class="btn-signal" href="/recommend" style="font-size:16px;padding:16px 24px">9문항 맞춤 추천 시작 <span>→</span></a>
+        <a class="btn-signal" href="/recommend" style="font-size:19px;padding:16px 24px">9문항 맞춤 추천 시작 <span>→</span></a>
         <a class="final-alt" href="/">전체 러닝화 보기</a>
       </div>
     </div>

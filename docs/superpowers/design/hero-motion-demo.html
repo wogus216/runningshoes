@@ -10,7 +10,7 @@
   :root {
     --paper: #F7F4ED; --paper-soft: #EFEAE0; --surface: #FFFFFF;
     --ink: #17150F; --ink-soft: #6E6A5E; --line: #D9D4C8;
-    --signal: #FF4D00; --signal-soft: #FFE7DB; --signal-dark: #C73800;
+    --signal: #FF4D00; --signal-soft: #FFE7DB; --signal-dark: #C73800; --warning-dark: #96600B;
     --sans: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Pretendard",
             "Segoe UI", "Noto Sans KR", sans-serif;
     --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
@@ -126,7 +126,7 @@
          white-space: nowrap; padding: 3px 8px; background: var(--surface);
          border: 1px solid var(--line); color: var(--ink); border-radius: 2px; opacity: 0; }
   .lab.name { border-color: transparent; background: none; color: var(--ink-soft); padding-left: 0; }
-  .lab.keep { border-color: var(--signal); color: var(--signal); background: var(--signal-soft); }
+  .lab.keep { border-color: var(--signal); color: var(--signal-dark); background: var(--surface); }
 
   .streak { position: absolute; height: 2px; background: var(--signal);
             transform-origin: right center; transform: rotate(var(--tilt)) scaleX(0); }

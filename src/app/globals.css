@@ -27,6 +27,7 @@
   --accent-line: rgba(255, 77, 0, 0.2);
 
   --signal-dark: #C73800;
+  --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
   --dark-soft: #28241D;
   --light-on-dark: #F7F4ED;
 
