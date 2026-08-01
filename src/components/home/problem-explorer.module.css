@@ -1,0 +1,314 @@
+/* 03 고민별 탐색 — 시안 docs/superpowers/design/home-desktop-2026-08.html §고민별 탐색 이식
+ *
+ * 시안의 @container 는 미디어 쿼리로 옮겼다(컨테이너 조상 없이 동작해야 한다).
+ * 색 토큰은 실제 globals.css 이름을 쓴다 — 시안의 --ink/--signal/--line 이 아니라
+ * --primary/--accent/--border (미정의 var() 는 조용히 무효가 되어 렌더가 사라진다).
+ */
+
+.sec {
+  padding: 68px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.secTop { margin-bottom: 32px; }
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--secondary);
+  margin-bottom: 14px;
+}
+.eyebrow::before {
+  content: "";
+  width: 18px;
+  height: 2px;
+  background: var(--accent);
+  transform: skewY(var(--tilt));
+}
+
+.secH {
+  font-size: clamp(26px, 3.6vw, 40px);
+  font-weight: 800;
+  letter-spacing: -0.032em;
+  line-height: 1.12;
+  text-wrap: balance;
+  word-break: keep-all;
+}
+.secP {
+  color: var(--secondary);
+  font-size: 15.5px;
+  margin-top: 12px;
+  max-width: 56ch;
+  word-break: keep-all;
+}
+
+/* ---------- 비대칭 차등 레이아웃 ----------
+   균등 6칸을 쓰지 않는다. 우선순위(처음 → 발볼 → 장거리 → 기록 → 무릎 → 다목적)가
+   면적·활자·썸네일 유무로 읽혀야 한다. 주요 1 + 중간 2 + 행 3.
+     ┌───────────────┬───────┐
+     │ 01 주요        │ 02 중간│
+     │               ├───────┤
+     │               │ 03 중간│
+     ├───────┬───────┴───────┤
+     │ 04 행  │ 05 행  │ 06 행 │
+     └───────┴───────┴───────┘
+   gap: 1px + 배경색으로 칸 사이 선을 만든다(테두리 중복 없이). */
+.prob {
+  display: grid;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-areas:
+    "lead lead lead lead mid1 mid1"
+    "lead lead lead lead mid2 mid2"
+    "row1 row1 row2 row2 row3 row3";
+}
+
+.item {
+  background: var(--surface);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: background 0.18s;
+  padding: 24px 22px 20px;
+}
+.item:hover { background: var(--accent-soft); }
+.item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: var(--accent);
+  transform: scaleX(0) skewX(var(--tilt-back));
+  transform-origin: left;
+  transition: transform 0.28s cubic-bezier(0.2, 0.8, 0.3, 1);
+}
+.item:hover::after { transform: scaleX(1) skewX(var(--tilt-back)); }
+
+/* 배번호 — 소형 텍스트라 --accent(3.03:1)가 아니라 --signal-dark(4.79:1) */
+.n {
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  color: var(--signal-dark);
+  margin-bottom: 10px;
+}
+/* 배번호 옆 한글 설명 — mono 를 한글에 쓰지 않는다(스펙 §3). 자간도 되돌린다 */
+.nText {
+  font-family: inherit;
+  letter-spacing: 0.01em;
+  color: var(--secondary);
+}
+.q {
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.32;
+  margin-bottom: 9px;
+  word-break: keep-all;
+}
+.c {
+  color: var(--secondary);
+  line-height: 1.58;
+  word-break: keep-all;
+}
+.f {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: auto;
+  padding-top: 13px;
+  border-top: 1px solid var(--border);
+  color: var(--secondary);
+}
+/* 수치만 mono — 단위("종")와 설명은 한글이라 본문 서체다(스펙 §3) */
+.f b {
+  font-family: var(--mono);
+  font-weight: 500;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+.item:hover .f { color: var(--primary); }
+
+/* ---------- 주요 패널 — 배번호·질문·판단 기준·실제 썸네일·결과 수 전부 크게 ---------- */
+.lead {
+  grid-area: lead;
+  padding: 34px 32px 28px;
+}
+.lead .n { font-size: 12.5px; letter-spacing: 0.2em; margin-bottom: 16px; }
+.lead .q {
+  font-size: clamp(26px, 2.9vw, 34px);
+  line-height: 1.16;
+  letter-spacing: -0.032em;
+  margin-bottom: 14px;
+}
+.lead .c { font-size: 15px; max-width: 40ch; }
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 16px;
+}
+.keys span {
+  font-size: 10.5px;
+  letter-spacing: -0.01em;
+  border: 1px solid var(--border);
+  padding: 4px 9px;
+  color: var(--secondary);
+  background: var(--bg-warm);
+}
+
+.thumbs {
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+  margin-top: auto;
+  padding-top: 20px;
+  min-height: 128px;
+}
+/* 썸네일 링크는 패널 stretched-link 위로 올려 각 신발 상세로 따로 빠진다.
+   중첩 <a> 를 피하는 기존 프로젝트 패턴(shoe-card 와 동일). */
+.thumb {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.thumb img {
+  max-height: 100px;
+  width: auto;
+  transition: transform 0.2s;
+}
+.thumb:hover img { transform: translateX(3px) rotate(-2deg); }
+/* 신발 이름은 한글이 섞이므로 본문 서체를 쓴다(스펙 §3 — mono 는 수치·라벨 전용) */
+.thumb span {
+  font-size: 11px;
+  letter-spacing: -0.01em;
+  color: var(--secondary);
+  border-bottom: 1px solid transparent;
+  text-align: center;
+}
+.thumb:hover span {
+  color: var(--signal-dark);
+  border-bottom-color: var(--accent);
+}
+
+/* stretched-link — 패널 어디를 눌러도 /best/beginner 로 간다 */
+.go::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+.lead .f {
+  margin-top: 22px;
+  padding-top: 16px;
+  border-top-width: 2px;
+  border-top-color: var(--primary);
+  font-size: 12px;
+}
+.lead .f b { font-size: 22px; letter-spacing: -0.02em; }
+.go {
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--signal-dark);
+}
+
+/* ---------- 중간 패널 ---------- */
+.mid1 { grid-area: mid1; }
+.mid2 { grid-area: mid2; }
+.mid1 .q,
+.mid2 .q { font-size: 19px; }
+/* 설명 길이 차이로 하단 라인이 어긋나지 않게 최소 높이를 준다(스펙 §5.1) */
+.mid1 .c,
+.mid2 .c { font-size: 13.5px; min-height: 4.5em; }
+.mid1 .f,
+.mid2 .f { font-size: 11px; }
+.mid1 .f b,
+.mid2 .f b { font-size: 14px; }
+
+/* ---------- 행 패널 — 낮고 조용하게. 배번호를 왼쪽에 붙여 목록처럼 읽힌다 ---------- */
+.row1 { grid-area: row1; }
+.row2 { grid-area: row2; }
+.row3 { grid-area: row3; }
+.row1,
+.row2,
+.row3 {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  gap: 0 12px;
+  align-items: start;
+  padding: 18px 20px 16px;
+}
+.row1 .n,
+.row2 .n,
+.row3 .n {
+  grid-row: 1 / span 3;
+  margin: 0;
+  padding-top: 2px;
+}
+.row1 .q,
+.row2 .q,
+.row3 .q { font-size: 15.5px; margin-bottom: 6px; }
+.row1 .c,
+.row2 .c,
+.row3 .c { font-size: 12.5px; min-height: 4.7em; }
+.row1 .f,
+.row2 .f,
+.row3 .f { font-size: 10.5px; padding-top: 11px; margin-top: 12px; }
+.row1 .f b,
+.row2 .f b,
+.row3 .f b { font-size: 12.5px; }
+
+.disclaim {
+  margin-top: 18px;
+  font-size: 12.5px;
+  color: var(--secondary);
+  padding-left: 13px;
+  border-left: 2px solid var(--border);
+  word-break: keep-all;
+}
+
+/* ---------- 반응형 ---------- */
+
+@media (max-width: 980px) {
+  .prob {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:
+      "lead lead lead mid1"
+      "lead lead lead mid2"
+      "row1 row1 row2 row2"
+      "row3 row3 row3 row3";
+  }
+}
+
+@media (max-width: 760px) {
+  .sec { padding: 52px 0; }
+}
+
+/* 모바일은 1열 6행. 순서가 곧 우선순위이고, 앞 3개(주요·중간)가 더 큰 제목을 갖는다(스펙 §5.1) */
+@media (max-width: 640px) {
+  .prob {
+    grid-template-columns: 1fr;
+    grid-template-areas: "lead" "mid1" "mid2" "row1" "row2" "row3";
+  }
+  .lead { padding: 26px 20px 22px; }
+  .row1 .c,
+  .row2 .c,
+  .row3 .c,
+  .mid1 .c,
+  .mid2 .c { min-height: 0; }
+  /* 썸네일은 좁은 화면에서 간격을 줄인다 — 3개가 한 줄에 남아야 한다 */
+  .thumbs { gap: 14px; min-height: 104px; }
+  .thumb img { max-height: 78px; }
+}

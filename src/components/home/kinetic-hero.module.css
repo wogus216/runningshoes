@@ -7,10 +7,9 @@
  */
 
 .hero {
-  --tilt: -9deg;        /* 트랙 사선 각도 — 전진·상승 */
-  --tilt-back: 9deg;
+  /* --tilt / --tilt-back / --mono 는 globals.css :root 에 있다(섹션 공통).
+     --dur 만 히어로 전용 — 데스크톱 4.5s / 모바일 2.4s */
   --dur: 4.5s;
-  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   position: relative;
   overflow: hidden;
   border-bottom: 1px solid var(--border);

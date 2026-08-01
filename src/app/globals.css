@@ -37,6 +37,13 @@
   --dark-soft: #28241D;
   --light-on-dark: #F7F4ED;
 
+  /* 홈 리디자인 공용 — 사선 좌표계와 수치 서체.
+     히어로의 트랙, 각 섹션의 eyebrow 선·호버 밑줄이 같은 각도를 써야 리듬이 맞는다.
+     --tilt-back 은 기울어진 컨테이너 안의 텍스트를 수평으로 되돌릴 때 쓴다. */
+  --tilt: -9deg;
+  --tilt-back: 9deg;
+  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
   /* shadcn 호환 변수 */
   --card: 0 0% 100%;
   --card-foreground: 0 0% 7%;
