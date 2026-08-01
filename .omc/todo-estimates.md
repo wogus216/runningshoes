@@ -82,7 +82,7 @@
 
 - [ ] **brooks-ghost-max-4 / brooks-hyperion-elite-6** (추가 2026-07-14, 미국 출시 2026-08-01): 정보성 블로그 프리뷰 묶음 발행(`brooks-ghost-max-4-hyperion-elite-6-preview-2026`), 신발 DB 미생성(한국 미출시). 하이페리온엘리트6이 BITR A Tier·"브룩스 첫 진짜 레이싱화" 평가로 화제성 큼(드롭 11.2→7mm, 플레이트 재설계). RunRepeat 랩 둘 다 미게시. 재확인 트리거: brooksrunning.co.kr 등재·한국 정가 확정 시 → 신발 DB 추가(하이페리온엘리트6 우선) + 정식 리뷰 전환. 재확인 시점 **2026-09**.
 
-- [ ] **puma-velocity-nitro-5 보류** (조사만 2026-07-14, 미국 출시 2026-07-09): 출시 5일차 시점 조사 결과 RunRepeat·BITR·RTR 전부 리뷰 미게시(유튜브 리뷰만 존재, 승인 소스 아님), 공식 스펙마저 출처 간 무게(230g vs 247g)·스택 수치 불일치 확인 — 근거 부족 판단해 이번 라운드 발행 보류(글 없음, DB 추가도 없음). 확인된 것: 드롭 8mm(3소스 일치, 전작 9.7~10mm에서 낮아짐), "넓어진 NITROFOAM 플랫폼"이 핵심 변경점, 가격 $140 동일 유지. 재확인 시점 **2026-08**(BITR/RTR 정식 리뷰 게시 예상 시점) — 그때 4 vs 5 비교글 재검토.
+- [ ] **puma-velocity-nitro-5 보류** (조사만 2026-07-14, 미국 출시 2026-07-09): 출시 5일차 시점 조사 결과 RunRepeat·BITR·RTR 전부 리뷰 미게시(유튜브 리뷰만 존재, 승인 소스 아님), 공식 스펙마저 출처 간 무게(230g vs 247g)·스택 수치 불일치 확인 — 근거 부족 판단해 이번 라운드 발행 보류(글 없음, DB 추가도 없음). 확인된 것: 드롭 8mm(3소스 일치, 전작 9.7~10mm에서 낮아짐), "넓어진 NITROFOAM 플랫폼"이 핵심 변경점, 가격 $140 동일 유지. 재확인 시점 **2026-08**(BITR/RTR 정식 리뷰 게시 예상 시점) — 그때 4 vs 5 비교글 재검토. (루틴 점검 2026-08-01: 확인 불가 — 이 클라우드 환경 아웃바운드 네트워크 정책이 runrepeat.com 등 외부 사이트 접근 자체를 차단(CONNECT 403), curl 점검 불가)
 
 ## 미처리
 
@@ -137,7 +137,7 @@
 
 - [ ] **adidas-terrex-agravic-4** (2026-06-12 재확인): RunRepeat 랩 **게시 확인** — DB가 이미 실측과 일치(weight 283g·힐32.6/전족23.5mm·드롭9.1·토박스73.0mm standard·와이드 false). 추가 실측: SA 힐122/전족102, 에너지리턴 힐50.3/전족55.2%. 출시 2026-02-01. BITR A등급·RTR 9.4/10. **데이터 정확성 검증 완료 — 갱신 불요**. 유일한 미확정 = 한국 정가(adidas.co.kr 403 차단, US $145). Chrome MCP 로그인 세션으로만 확인 가능. 데이터 신뢰도는 충분하나 정가 null 대신 209,000 추정 유지 중.
 
-- [ ] **hoka-clifton-11** (추가 2026-06-25, 출시 2026-07-01): 비교글 `hoka-clifton-11-vs-10-comparison` 발행(출시 전 추정값). 출시 후 재확인 — ① RunRepeat 랩 게시 시 무게(공식 ~280g vs 핸즈온 실측 258g 중 어느 쪽인지)·실측 스택 확정 ② hoka.com/ko-kr 한국 정가 확정(현재 199,000원 추정, US $154.95 동결) ③ 신발 DB(`hoka-clifton-11`)는 제품 이미지 확보 후 추가 검토 — 현재는 novablast-6 선례대로 비교글만, DB 미생성. 폼=CMEVA로 클리프톤 10과 동일 확정(어퍼/삭라이너만 변경).
+- [ ] **hoka-clifton-11** (추가 2026-06-25, 출시 2026-07-01): 비교글 `hoka-clifton-11-vs-10-comparison` 발행(출시 전 추정값). 출시 후 재확인 — ① RunRepeat 랩 게시 시 무게(공식 ~280g vs 핸즈온 실측 258g 중 어느 쪽인지)·실측 스택 확정 ② hoka.com/ko-kr 한국 정가 확정(현재 199,000원 추정, US $154.95 동결) ③ 신발 DB(`hoka-clifton-11`)는 제품 이미지 확보 후 추가 검토 — 현재는 novablast-6 선례대로 비교글만, DB 미생성. 폼=CMEVA로 클리프톤 10과 동일 확정(어퍼/삭라이너만 변경). (루틴 점검 2026-08-01: 확인 불가 — 클라우드 환경 네트워크 정책이 runrepeat.com·hoka.com 접근 차단, curl 점검 불가. 출시 +1개월 경과라 로컬 세션에서 우선 재점검 권장)
 
 - [ ] **saucony-endorphin-elite-3 랩 데이터 갱신** (2026-06-30 신발 DB 생성 + 단독 프리뷰 발행 완료): 신발 DB(`saucony-endorphin-elite-3`)·프리뷰글(`saucony-endorphin-elite-3-preview-2026`) 작성 완료. **확정값 반영**: 207g(전작 +10g)·힐39.5/전족31.5mm·드롭8mm·포크형 카본·직각형 넓은 토박스(엘2 narrow→standard)·측면컷아웃 제거로 안정성 5(추정)·369,000원·7/1 한국출시. **미확정(추정 표기됨)**: 충격흡수 SA·에너지리턴% 등 RunRepeat 랩 미게시 → 엘리트2(80.6%) 기준 추정으로 detailedSpecs에 '추정' 명시. 후속 — RunRepeat 엘리트3 랩 게시 시 ① specs(responsiveness 9/cushioning 7) 실측 보정 ② detailedSpecs 에너지리턴 확정 ③ 라인업 가이드(`saucony-endorphin-lineup-2026-guide`) 표의 엘리트3 잠정 수치(~197g 엘2참고치)도 207g 확정값으로 갱신. 재확인 2026-09. 출처: BITR(Tier B)·DOR·RTR(5인 9.4/10)·saucony.co.kr 교차확인.
 
@@ -162,7 +162,7 @@
 - [ ] 2026-mudo-run-gyeongju: 무도런 경주 접수 일정·참가비·종목 공식 발표 시 블로그 글 + marathon/september.ts(status 접수예정→접수중, raceInfo) 업데이트. @most267_official 모니터링, 상반기 패턴상 8월 중 발표 유력 (추가 2026-07-15)
 - [ ] pohang-secondary-battery-marathon-2026: 접수 마감(7/20) 경과 후 status 접수중→마감 변경 (september.ts, 추가 2026-07-17)
 
-- [ ] brooks-cascadia-20-preview-2026: 한국 출시일·정가·RunRepeat 랩 확인 후 스펙/본문 갱신 + 확정 시 신발 DB 추가 검토 (추가 2026-07-19, 글로벌 8/1 출시라 8~9월 재확인)
+- [ ] brooks-cascadia-20-preview-2026: 한국 출시일·정가·RunRepeat 랩 확인 후 스펙/본문 갱신 + 확정 시 신발 DB 추가 검토 (추가 2026-07-19, 글로벌 8/1 출시라 8~9월 재확인) (루틴 점검 2026-08-01: 확인 불가 — 클라우드 환경 네트워크 정책이 runrepeat.com·brooksrunning.co.kr 접근 차단, curl 점검 불가. 글로벌 출시일(오늘) 직후라 로컬 세션에서 재점검 권장)
 - [ ] new-balance-sc-elite-v6: RunRepeat 랩(특히 토박스 내부 폭 — v5 74.5mm 대비 변화가 글 핵심 미확정) + 한국 정가·출시일(nbkorea 리스팅) 확정 시 프리뷰(new-balance-sc-elite-v6-preview-2026) 갱신 + 신발 DB 추가 검토. 글로벌 8/6 출시라 8월 말~9월 재확인. SC 레벨(신규 트레이너, 8/20·$190)도 함께 확인 (추가 2026-07-22)
 - [ ] mizuno-neo-vista-3 (등록+후기 발행 2026-07-26): RunRepeat 랩 실측 기반 정식 등록(추정 아님)이라 스펙 확정. 남은 후속 — ⓐ **이미지 미확보**(image 없이 등록, validate 경고) → 미즈노 공식/리뷰사이트 흰배경 제품샷 확보 후 image/images 추가 → `/best/daily` 매트릭스 편입(현재 hasMinimumData의 s.image 필수라 제외, 상세·페어는 정상). ⓑ **와이드(2E/SW) 옵션 미확인** → 미즈노 코리아에 네오비스타3 SW 등재 확인 시 koreanFootFit.wideOptions 갱신(현재 false 보수). 재확인 시점 필요시. 다른 미즈노 신상(웨이브 라이더 30·인스파이어 22)도 미등록 상태 — 필요 시 라이더29→30 세대비교/DB갱신 검토
 
@@ -173,4 +173,4 @@
 - [ ] mizuno-wave-rider-30 (DB 등록+29vs30 비교글 발행 2026-07-29): RunRepeat 랩 게시 시 ⓐ specs(cushioning 8·responsiveness 7·durability 700 전부 추정) 실측 교체 ⓑ 토박스 실측으로 koreanFootFit.toBoxWidth 확정(리뷰 상충: BITR 좁음/RTR 하이볼륨 — 비교글 핏 섹션도 갱신) ⓒ 한국 와이드(2E) 발매 여부 확인(현재 wideOptions true는 미국 2E SKU 근거, 4E 근거 없음) ⓓ 이미지 미확보 → 공식/리뷰 흰배경 확보 후 /best/daily 편입. 재확인 2026-09~10
 - [ ] mizuno-wave-inspire-22: **DB 추가 후보** — RunRepeat 랩 게시 확인됨(전족 SA 115·37/27mm·드롭10·281g), 무신사 169,000원 판매 중(공식가 여부 미검증). 인스파이어 21 → 22 세대교체+안정화 각도. kor.mizuno.com 공식 등재 확인 후 진행 (기록 2026-07-29)
 - [ ] salomon-genesis-2-preview-2026 (프리뷰 발행 2026-07-29): 한국 출시 확정(salomon.co.kr 등재) 시 ⓐ 글 갱신(한국가) ⓑ 신발 DB 추가 검토(제네시스 1도 한국 248,000원 현행 판매 + RunRepeat 92점 완비라 1·2 동반 등록 가능) ⓒ RunRepeat 랩 게시 시 토박스 실측 반영(글 핵심 미확정 = "넓어졌다"의 mm). 글로벌 8/1 출시라 재확인 2026-09
-- [ ] puma-velocity-nitro-5: 3대 소스(RunRepeat/BITR/RTR) 2026-07-29 재확인 결과 여전히 전부 미게시(개인 블로그·유튜브만 존재) — 계속 보류. 8월 말 재확인 (최초 보류 2026-07-14)
+- [ ] puma-velocity-nitro-5: 3대 소스(RunRepeat/BITR/RTR) 2026-07-29 재확인 결과 여전히 전부 미게시(개인 블로그·유튜브만 존재) — 계속 보류. 8월 말 재확인 (최초 보류 2026-07-14) (루틴 점검 2026-08-01: 확인 불가 — 클라우드 환경 네트워크 정책상 외부 사이트 접근 차단, 8월 말 재확인은 로컬 세션에서 진행 필요)
