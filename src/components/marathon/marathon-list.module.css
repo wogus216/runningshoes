@@ -1,0 +1,95 @@
+/* src/components/marathon/marathon-list.module.css
+ *
+ * 색 토큰은 실제 globals.css 이름(--primary/--accent/--border)을 쓴다.
+ * 시안·스펙의 --ink/--signal/--line 은 이 코드베이스에 없다 — 미정의 var()는 조용히 무효가 된다.
+ */
+
+/* ---------- 필터 칩 ---------- */
+.chips { display: flex; flex-direction: column; gap: 10px; margin-bottom: 18px; }
+.chipRow { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; }
+.chipLabel {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 0.14em;
+  color: var(--secondary); width: 46px; flex: none;
+}
+.chip {
+  font-size: 13px; font-weight: 500; padding: 8px 13px; min-height: 44px;
+  border: 1px solid var(--border); background: var(--surface); border-radius: 2px;
+  display: inline-flex; align-items: center; gap: 6px;
+}
+.chip:hover { border-color: var(--primary); }
+.chip[aria-pressed='true'] { background: var(--primary); color: var(--bg-warm); border-color: var(--primary); }
+.chipN { font-family: var(--mono); font-size: 10.5px; opacity: 0.62; font-variant-numeric: tabular-nums; }
+.reset { font-size: 12.5px; color: var(--signal-dark); border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+/* 검색 — 100개 중 특정 대회를 이름으로 찾는 경로. 칩만으로는 대체되지 않는다 */
+.search {
+  flex: 1; min-width: 180px; max-width: 320px; min-height: 44px;
+  border: 1px solid var(--border); background: var(--surface); border-radius: 2px;
+  padding: 8px 13px; font-size: 13px; color: var(--primary);
+}
+.search::placeholder { color: var(--secondary); }
+.search:focus { border-color: var(--primary); outline: none; }
+
+/* ---------- 밴드 ---------- */
+.band { margin-bottom: 34px; }
+.bandHead {
+  display: flex; align-items: baseline; gap: 10px;
+  padding-bottom: 10px; border-bottom: 2px solid var(--primary);
+}
+.bandTitle { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+.bandCount { font-family: var(--mono); font-size: 15px; color: var(--signal-dark); font-variant-numeric: tabular-nums; }
+.bandNote {
+  margin-top: 12px; font-size: 12.5px; color: var(--secondary);
+  padding-left: 13px; border-left: 2px solid var(--border); word-break: keep-all;
+}
+/* 접힌 밴드 — 안에 전체 행이 들어간다(점진 확장 없음) */
+.folded > summary {
+  list-style: none; cursor: pointer; min-height: 44px;
+  display: flex; align-items: baseline; gap: 10px;
+  padding-bottom: 10px; border-bottom: 2px solid var(--border);
+}
+.folded > summary::-webkit-details-marker { display: none; }
+.folded > summary::after { content: '▾'; font-family: var(--mono); color: var(--secondary); margin-left: auto; }
+.folded[open] > summary::after { content: '▴'; }
+
+.expand { padding: 18px 0 2px; text-align: center; }
+.expandB {
+  display: inline-flex; align-items: center; gap: 9px;
+  border: 1px solid var(--primary); background: var(--surface);
+  padding: 12px 24px; min-height: 46px; border-radius: 2px;
+  font-size: 14px; font-weight: 650;
+}
+.expandB:hover { background: var(--primary); color: var(--bg-warm); }
+.empty { padding: 22px 0; color: var(--secondary); font-size: 14px; }
+
+/* ---------- 행 ---------- */
+.row {
+  display: grid; grid-template-columns: 86px 1.5fr 72px 1fr 96px;
+  gap: 14px; align-items: center; padding: 11px 0;
+  border-bottom: 1px solid var(--border); position: relative;
+}
+.row:hover { background: var(--surface); }
+.date { font-family: var(--mono); font-size: 12.5px; font-variant-numeric: tabular-nums; color: var(--primary); }
+.name { font-size: 15px; font-weight: 650; letter-spacing: -0.018em; line-height: 1.32; word-break: keep-all; }
+/* 메이저 표식 — 색만으로 구분하지 않도록 텍스트를 함께 둔다 */
+.major {
+  margin-left: 6px; font-family: var(--mono); font-size: 9px; letter-spacing: 0.1em;
+  border: 1px solid var(--accent); color: var(--signal-dark); padding: 1px 4px; white-space: nowrap;
+}
+.region { font-size: 12.5px; color: var(--secondary); }
+.dist { font-size: 12.5px; color: var(--secondary); word-break: keep-all; }
+.state { font-size: 11px; justify-self: end; white-space: nowrap; color: var(--secondary); }
+.state.dday { font-family: var(--mono); color: var(--signal-dark); font-variant-numeric: tabular-nums; }
+
+@media (max-width: 760px) {
+  .chipLabel { width: 100%; }
+  .row {
+    grid-template-columns: 1fr auto;
+    grid-template-areas: 'date state' 'name name' 'meta meta';
+    gap: 4px 12px; padding: 13px 0;
+  }
+  .date { grid-area: date; }
+  .state { grid-area: state; }
+  .name { grid-area: name; font-size: 15.5px; }
+  .region, .dist { grid-area: meta; display: inline; font-size: 12px; }
+  .region::after { content: ' · '; }
+}
