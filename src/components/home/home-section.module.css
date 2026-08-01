@@ -15,6 +15,15 @@
   background: var(--bg-warm-alt);
 }
 
+/* 섹션 안쪽 폭 제한.
+   홈은 (home) 라우트 그룹에 있어 레이아웃 컨테이너가 없다 — 섹션이 화면 전체 폭을 쓰고
+   (다크 밴드·사선 트랙이 화면 끝까지 흐른다), 안쪽 내용만 이 래퍼로 잡는다. */
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
 .head {
   margin-bottom: 32px;
 }
@@ -59,4 +68,9 @@
    섹션 6개에서 200px 넘게 더 길어져 전체 높이 기준(8,000px)을 넘긴다. */
 @media (max-width: 760px) {
   .sec { padding: 34px 0; }
+  .wrap { padding: 0 18px; }
+}
+
+@media (max-width: 370px) {
+  .wrap { padding: 0 15px; }
 }

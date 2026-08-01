@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { track } from '@/lib/analytics';
 import { readResume, clearResume, type ResumeData } from '@/lib/recent';
+import sectionStyles from './home-section.module.css';
 import styles from './resume-section.module.css';
 
 export type ResumeSectionProps = {
@@ -69,82 +70,84 @@ export function ResumeSection({ validSlugs, questionCount }: ResumeSectionProps)
 
   return (
     <section className={styles.sec}>
-      <div className={styles.top}>
-        <div>
-          <p className={styles.eyebrow}>CONTINUE</p>
-          <h2 className={styles.h}>다시 이어볼까요?</h2>
+      <div className={sectionStyles.wrap}>
+        <div className={styles.top}>
+          <div>
+            <p className={styles.eyebrow}>CONTINUE</p>
+            <h2 className={styles.h}>다시 이어볼까요?</h2>
+          </div>
+          <button type="button" className={styles.clear} onClick={handleClear}>
+            기록 지우기
+          </button>
         </div>
-        <button type="button" className={styles.clear} onClick={handleClear}>
-          기록 지우기
-        </button>
-      </div>
 
-      <div className={styles.list}>
-        {shoe && (
-          <Link
-            className={styles.item}
-            href={`/shoes/${shoe.slug}`}
-            onClick={() => send('recent_shoe', `/shoes/${shoe.slug}`)}
-          >
-            <span className={styles.thumb}>
-              {shoe.image && (
-                <Image src={shoe.image} alt="" width={56} height={40} aria-hidden="true" />
-              )}
-            </span>
-            <span>
-              <span className={styles.k}>최근 본 신발</span>
-              <span className={styles.v}>{shoe.name}</span>
-              <span className={styles.x}>
-                {ago(shoe.at)} · {shoe.category}
-              </span>
-            </span>
-          </Link>
-        )}
-
-        {compare && (
-          <Link
-            className={styles.item}
-            href={comparePath}
-            onClick={() => send('recent_compare', `/compare?shoes=${compareSlugs}`)}
-          >
-            <span className={`${styles.thumb} ${styles.dbl}`}>
-              {compare.shoes
-                .slice(0, 2)
-                .map((s) =>
-                  s.image ? (
-                    <Image key={s.slug} src={s.image} alt="" width={40} height={30} aria-hidden="true" />
-                  ) : null,
+        <div className={styles.list}>
+          {shoe && (
+            <Link
+              className={styles.item}
+              href={`/shoes/${shoe.slug}`}
+              onClick={() => send('recent_shoe', `/shoes/${shoe.slug}`)}
+            >
+              <span className={styles.thumb}>
+                {shoe.image && (
+                  <Image src={shoe.image} alt="" width={56} height={40} aria-hidden="true" />
                 )}
-            </span>
-            <span>
-              <span className={styles.k}>비교하던 신발</span>
-              <span className={styles.v}>{compareTitle}</span>
-              <span className={styles.x}>비교 이어서 보기</span>
-            </span>
-          </Link>
-        )}
-
-        {recommend && (
-          <Link
-            className={styles.item}
-            href="/recommend"
-            onClick={() => send('recent_recommend', '/recommend')}
-          >
-            <span className={styles.thumb}>
-              {questionCount ? (
-                <span className={styles.badge}>
-                  {questionCount}/{questionCount}
+              </span>
+              <span>
+                <span className={styles.k}>최근 본 신발</span>
+                <span className={styles.v}>{shoe.name}</span>
+                <span className={styles.x}>
+                  {ago(shoe.at)} · {shoe.category}
                 </span>
-              ) : null}
-            </span>
-            <span>
-              <span className={styles.k}>지난 추천 결과</span>
-              <span className={styles.v}>{recommend.summary}</span>
-              <span className={styles.x}>추천 결과 다시 보기</span>
-            </span>
-          </Link>
-        )}
-      </div>
+              </span>
+            </Link>
+          )}
+
+          {compare && (
+            <Link
+              className={styles.item}
+              href={comparePath}
+              onClick={() => send('recent_compare', `/compare?shoes=${compareSlugs}`)}
+            >
+              <span className={`${styles.thumb} ${styles.dbl}`}>
+                {compare.shoes
+                  .slice(0, 2)
+                  .map((s) =>
+                    s.image ? (
+                      <Image key={s.slug} src={s.image} alt="" width={40} height={30} aria-hidden="true" />
+                    ) : null,
+                  )}
+              </span>
+              <span>
+                <span className={styles.k}>비교하던 신발</span>
+                <span className={styles.v}>{compareTitle}</span>
+                <span className={styles.x}>비교 이어서 보기</span>
+              </span>
+            </Link>
+          )}
+
+          {recommend && (
+            <Link
+              className={styles.item}
+              href="/recommend"
+              onClick={() => send('recent_recommend', '/recommend')}
+            >
+              <span className={styles.thumb}>
+                {questionCount ? (
+                  <span className={styles.badge}>
+                    {questionCount}/{questionCount}
+                  </span>
+                ) : null}
+              </span>
+              <span>
+                <span className={styles.k}>지난 추천 결과</span>
+                <span className={styles.v}>{recommend.summary}</span>
+                <span className={styles.x}>추천 결과 다시 보기</span>
+              </span>
+            </Link>
+          )}
+        </div>
+    </div>
     </section>
   );
 }

@@ -56,7 +56,7 @@ function isNoindexShoe(slug) {
 
 // Static page → source file
 const staticPageMap = {
-  "/": "src/app/(main)/page.tsx",
+  "/": "src/app/(home)/page.tsx",
   "/about": "src/app/(main)/about/page.tsx",
   "/faq": "src/app/(main)/faq/page.tsx",
   "/contact": "src/app/(main)/contact/page.tsx",

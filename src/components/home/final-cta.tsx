@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { track } from '@/lib/analytics';
+import sectionStyles from './home-section.module.css';
 import styles from './final-cta.module.css';
 
 export type FinalCTAProps = {
@@ -48,7 +49,7 @@ export function FinalCTA({
         <span className={styles.lane} />
       </div>
 
-      <div className={styles.in}>
+      <div className={`${sectionStyles.wrap} ${styles.in}`}>
         <div>
           <h2 className={styles.h}>
             수많은 러닝화 중
@@ -69,7 +70,7 @@ export function FinalCTA({
         </div>
       </div>
 
-      <div className={styles.routesWrap}>
+      <div className={`${sectionStyles.wrap} ${styles.routesWrap}`}>
         <div className={styles.routes}>
           <Link className={styles.fr} href="/recommend" onClick={() => go('recommend', '/recommend')}>
             <span className={styles.frN}>01</span>
@@ -103,7 +104,7 @@ export function FinalCTA({
         </p>
       </div>
 
-      <div className={styles.foot}>
+      <div className={`${sectionStyles.wrap} ${styles.foot}`}>
         <div>
           <p className={styles.fsV}>{shoeCount}</p>
           <p className={styles.fsL}>정리된 러닝화</p>

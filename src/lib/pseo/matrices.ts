@@ -482,6 +482,15 @@ export function getMatricesForShoe(shoe: Shoe): MatrixEntry[] {
   return getAllMatrices().filter((m) => m.filter(shoe));
 }
 
+/**
+ * `/best/[slug]` 가 실제로 렌더하는 신발 수.
+ *
+ * 필터가 잡는 모집단과 페이지가 보여주는 수는 다르다 — 부상 매트릭스는 등급
+ * excellent/good 을 잡느라 75~85% 를 통과시킨다. 그 숫자를 다른 화면에서 "N종"이라 쓰면
+ * 눌러 들어온 사용자가 보는 12개와 어긋난다. **모집단이 아니라 이 값을 노출할 것.**
+ */
+export const BEST_PAGE_SHOE_LIMIT = 12;
+
 export function getMatrixShoes(entry: MatrixEntry): Shoe[] {
   return allShoes
     .filter(entry.filter)

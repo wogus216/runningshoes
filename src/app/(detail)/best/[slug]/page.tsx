@@ -7,6 +7,7 @@ import {
   getAllMatrices,
   getMatrixBySlug,
   getMatrixShoes,
+  BEST_PAGE_SHOE_LIMIT,
 } from '@/lib/pseo/matrices';
 import { getAllPairs } from '@/lib/pseo/pairs';
 import { getShoes } from '@/lib/data/shoes';
@@ -58,7 +59,7 @@ export default async function BestPage({ params }: PageProps) {
   const entry = getMatrixBySlug(slug);
   if (!entry) notFound();
 
-  const shoes = getMatrixShoes(entry).slice(0, 12);
+  const shoes = getMatrixShoes(entry).slice(0, BEST_PAGE_SHOE_LIMIT);
   const shoeSlugSet = new Set(shoes.map((s) => s.slug));
   const relatedPairs = getAllPairs()
     .filter((p) => shoeSlugSet.has(p.a.slug) && shoeSlugSet.has(p.b.slug))

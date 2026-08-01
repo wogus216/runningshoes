@@ -8,6 +8,7 @@ import { balancedByCategory } from '@/lib/home/index-sort';
 import type { GridShoe } from '@/lib/data/shoes';
 import type { DataStatus } from '@/lib/home/data-status';
 import { SectionHead } from './section-head';
+import sectionStyles from './home-section.module.css';
 import styles from './shoe-index-preview.module.css';
 
 export type ShoeIndexPreviewProps = {
@@ -187,76 +188,78 @@ export function ShoeIndexPreview({
 
   return (
     <section className={styles.sec} id="shoe-index">
-      <SectionHead
-        eyebrow="SHOE INDEX"
-        title="지금 비교 가능한 러닝화"
-        lead="조건을 좁혀 보세요. 결과는 바로 아래에서 갱신됩니다."
-      />
+      <div className={sectionStyles.wrap}>
+        <SectionHead
+          eyebrow="SHOE INDEX"
+          title="지금 비교 가능한 러닝화"
+          lead="조건을 좁혀 보세요. 결과는 바로 아래에서 갱신됩니다."
+        />
 
-      <div className={styles.chips}>
-        {chips.map((c) => (
-          <button
-            key={c.id}
-            type="button"
-            className={`${styles.chip} ${c.wide ? styles.wide : ''}`}
-            aria-pressed={filter === c.id}
-            onClick={() => changeFilter(c.id)}
-          >
-            {c.label} <span className={styles.chipN}>{counts[c.id] ?? 0}</span>
-          </button>
-        ))}
-      </div>
-
-      <div className={styles.resultLine}>
-        <p className={styles.resultN} aria-live="polite">
-          <b>{filtered.length}</b>개가 현재 조건에 맞습니다
-        </p>
-        <p className={styles.sort}>카테고리 균형 · 평가순</p>
-      </div>
-
-      <div className={styles.head} aria-hidden="true">
-        <span />
-        <span>모델</span>
-        <span>한 줄 결론</span>
-        <span>용도</span>
-        <span>무게</span>
-        <span>가격</span>
-        <span>데이터 상태</span>
-      </div>
-
-      {filtered.length === 0 ? (
-        <p className={styles.empty}>조건에 맞는 러닝화가 없습니다. 필터를 하나씩 풀어보세요.</p>
-      ) : (
-        <div className={styles.idx}>
-          {visible.map((s) => (
-            <Row key={s.slug} shoe={s} status={statuses[s.slug]} />
+        <div className={styles.chips}>
+          {chips.map((c) => (
+            <button
+              key={c.id}
+              type="button"
+              className={`${styles.chip} ${c.wide ? styles.wide : ''}`}
+              aria-pressed={filter === c.id}
+              onClick={() => changeFilter(c.id)}
+            >
+              {c.label} <span className={styles.chipN}>{counts[c.id] ?? 0}</span>
+            </button>
           ))}
         </div>
-      )}
 
-      {remaining > 0 && (
-        <>
-          <div className={styles.expand}>
-            <button type="button" className={styles.expandB} onClick={expand}>
-              {remaining > STEP ? `러닝화 ${STEP}개 더 보기` : '전체 러닝화 보기'}
-              <span aria-hidden="true">↓</span>
-            </button>
+        <div className={styles.resultLine}>
+          <p className={styles.resultN} aria-live="polite">
+            <b>{filtered.length}</b>개가 현재 조건에 맞습니다
+          </p>
+          <p className={styles.sort}>카테고리 균형 · 평가순</p>
+        </div>
+
+        <div className={styles.head} aria-hidden="true">
+          <span />
+          <span>모델</span>
+          <span>한 줄 결론</span>
+          <span>용도</span>
+          <span>무게</span>
+          <span>가격</span>
+          <span>데이터 상태</span>
+        </div>
+
+        {filtered.length === 0 ? (
+          <p className={styles.empty}>조건에 맞는 러닝화가 없습니다. 필터를 하나씩 풀어보세요.</p>
+        ) : (
+          <div className={styles.idx}>
+            {visible.map((s) => (
+              <Row key={s.slug} shoe={s} status={statuses[s.slug]} />
+            ))}
           </div>
+        )}
 
-          {/* 나머지 행은 마크업에 그대로 남는다 — 크롤러가 122개 링크를 전부 읽고,
-              JS 가 없어도 여기서 펼쳐 볼 수 있다. 버튼으로 노출되면 이 목록에서 빠진다. */}
-          <details className={styles.fallback}>
-            <summary className={styles.fallbackSummary}>
-              나머지 {remaining}개 목록으로 보기
-            </summary>
-            <div className={styles.idx}>
-              {hidden.map((s) => (
-                <Row key={s.slug} shoe={s} status={statuses[s.slug]} />
-              ))}
+        {remaining > 0 && (
+          <>
+            <div className={styles.expand}>
+              <button type="button" className={styles.expandB} onClick={expand}>
+                {remaining > STEP ? `러닝화 ${STEP}개 더 보기` : '전체 러닝화 보기'}
+                <span aria-hidden="true">↓</span>
+              </button>
             </div>
-          </details>
-        </>
-      )}
+
+            {/* 나머지 행은 마크업에 그대로 남는다 — 크롤러가 122개 링크를 전부 읽고,
+                JS 가 없어도 여기서 펼쳐 볼 수 있다. 버튼으로 노출되면 이 목록에서 빠진다. */}
+            <details className={styles.fallback}>
+              <summary className={styles.fallbackSummary}>
+                나머지 {remaining}개 목록으로 보기
+              </summary>
+              <div className={styles.idx}>
+                {hidden.map((s) => (
+                  <Row key={s.slug} shoe={s} status={statuses[s.slug]} />
+                ))}
+              </div>
+            </details>
+          </>
+        )}
+    </div>
     </section>
   );
 }

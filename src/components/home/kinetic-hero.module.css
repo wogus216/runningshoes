@@ -445,6 +445,7 @@
   }
 }
 
+/* 공용 .wrap 과 같은 값(18px / 15px)을 쓴다 — 섹션마다 좌우 정렬이 어긋나면 안 된다 */
 @media (max-width: 370px) {
   .heroIn { padding-left: 15px; padding-right: 15px; }
 }

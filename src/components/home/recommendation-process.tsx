@@ -1,4 +1,5 @@
 import { SectionHead } from './section-head';
+import sectionStyles from './home-section.module.css';
 import styles from './recommendation-process.module.css';
 
 export type RecommendationProcessProps = {
@@ -37,43 +38,45 @@ const FITS = [
 export function RecommendationProcess({ questionCount, minutes }: RecommendationProcessProps) {
   return (
     <section className={styles.sec}>
-      <SectionHead
-        eyebrow="HOW IT WORKS"
-        title={`약 ${minutes}분, ${questionCount}문항이면 충분합니다.`}
-        lead="한 켤레만 고르라고 하지 않습니다. 역할이 다른 세 가지를 놓고 비교하실 수 있게 정리합니다."
-      />
+      <div className={sectionStyles.wrap}>
+        <SectionHead
+          eyebrow="HOW IT WORKS"
+          title={`약 ${minutes}분, ${questionCount}문항이면 충분합니다.`}
+          lead="한 켤레만 고르라고 하지 않습니다. 역할이 다른 세 가지를 놓고 비교하실 수 있게 정리합니다."
+        />
 
-      <div className={styles.steps}>
-        {STEPS.map((t, i) => (
-          <div key={t} className={styles.step}>
-            <p className={styles.stepN}>{String(i + 1).padStart(2, '0')}</p>
-            <p className={styles.stepT}>{t}</p>
-          </div>
-        ))}
-      </div>
+        <div className={styles.steps}>
+          {STEPS.map((t, i) => (
+            <div key={t} className={styles.step}>
+              <p className={styles.stepN}>{String(i + 1).padStart(2, '0')}</p>
+              <p className={styles.stepT}>{t}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className={styles.roles}>
-        {ROLES.map((r) => (
-          <div key={r.badge} className={`${styles.role} ${r.lead ? styles.lead : ''}`}>
-            <span className={styles.roleB}>{r.badge}</span>
-            <p className={styles.roleT}>{r.title}</p>
-            <p className={styles.roleD}>{r.desc}</p>
-          </div>
-        ))}
-      </div>
+        <div className={styles.roles}>
+          {ROLES.map((r) => (
+            <div key={r.badge} className={`${styles.role} ${r.lead ? styles.lead : ''}`}>
+              <span className={styles.roleB}>{r.badge}</span>
+              <p className={styles.roleT}>{r.title}</p>
+              <p className={styles.roleD}>{r.desc}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className={styles.fits}>
-        <p className={styles.fitsH}>결과에 붙는 적합도 — 종합점수 대신 항목별로</p>
-        {FITS.map((f) => (
-          <div key={f.key} className={styles.fitRow}>
-            <span className={styles.fitK}>{f.key}</span>
-            <span className={`${styles.fitBar} ${f.mid ? styles.mid : ''}`} aria-hidden="true">
-              <i style={{ width: `${f.width}%` }} />
-            </span>
-            <span className={styles.fitV}>{f.grade}</span>
-          </div>
-        ))}
-      </div>
+        <div className={styles.fits}>
+          <p className={styles.fitsH}>결과에 붙는 적합도 — 종합점수 대신 항목별로</p>
+          {FITS.map((f) => (
+            <div key={f.key} className={styles.fitRow}>
+              <span className={styles.fitK}>{f.key}</span>
+              <span className={`${styles.fitBar} ${f.mid ? styles.mid : ''}`} aria-hidden="true">
+                <i style={{ width: `${f.width}%` }} />
+              </span>
+              <span className={styles.fitV}>{f.grade}</span>
+            </div>
+          ))}
+        </div>
+    </div>
     </section>
   );
 }

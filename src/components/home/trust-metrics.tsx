@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { track } from '@/lib/analytics';
 import { SectionHead } from './section-head';
+import sectionStyles from './home-section.module.css';
 import styles from './trust-metrics.module.css';
 
 export type TrustMetricsProps = {
@@ -57,73 +58,75 @@ export function TrustMetrics({ shoeCount, lastUpdated }: TrustMetricsProps) {
 
   return (
     <section className={styles.sec}>
-      <div className={styles.grid}>
-        <div>
-          <SectionHead
-            eyebrow="WHAT THE NUMBERS COME FROM"
-            title={
-              <>
-                어디서 온 데이터인지
-                <br />
-                먼저 밝힙니다.
-              </>
-            }
-          />
-          <div className={styles.metrics}>
-            <div className={styles.met}>
-              <p className={`${styles.metV} ${styles.sig}`}>{shoeCount}</p>
-              <p className={styles.metL}>분석 중인 러닝화</p>
-            </div>
-            {updated && (
-              <div className={styles.met}>
-                <p className={styles.metV}>{updated}</p>
-                <p className={styles.metL}>최근 데이터 갱신</p>
-              </div>
-            )}
-            <div className={styles.met}>
-              <p className={`${styles.metV} ${styles.word}`}>공개</p>
-              <p className={styles.metL}>평가 기준과 출처</p>
-            </div>
-          </div>
-        </div>
-
-        <div>
-          <p className={styles.quote}>
-            공식 정보와 전문 랩 데이터, 국내외 리뷰를 같은 기준으로 정리합니다. 한국 러너가
-            확인해야 할 정보를 분리해 보여드립니다.
-          </p>
-
-          <div className={styles.badges}>
-            {BADGES.map((b) => (
-              <span
-                key={b.label}
-                className={`${styles.badge} ${b.tone !== 'plain' ? styles[b.tone] : ''}`}
-              >
-                {b.label}
-              </span>
-            ))}
-          </div>
-
-          <details
-            className={styles.method}
-            onToggle={(e) => {
-              if ((e.currentTarget as HTMLDetailsElement).open) {
-                track('home_trust_methodology_open', { section_name: 'trust' });
+      <div className={sectionStyles.wrap}>
+        <div className={styles.grid}>
+          <div>
+            <SectionHead
+              eyebrow="WHAT THE NUMBERS COME FROM"
+              title={
+                <>
+                  어디서 온 데이터인지
+                  <br />
+                  먼저 밝힙니다.
+                </>
               }
-            }}
-          >
-            <summary className={styles.methodSummary}>평가 기준과 출처</summary>
-            <ul className={styles.methodBody}>
-              {METHOD.map((m) => (
-                <li key={m}>{m}</li>
+            />
+            <div className={styles.metrics}>
+              <div className={styles.met}>
+                <p className={`${styles.metV} ${styles.sig}`}>{shoeCount}</p>
+                <p className={styles.metL}>분석 중인 러닝화</p>
+              </div>
+              {updated && (
+                <div className={styles.met}>
+                  <p className={styles.metV}>{updated}</p>
+                  <p className={styles.metL}>최근 데이터 갱신</p>
+                </div>
+              )}
+              <div className={styles.met}>
+                <p className={`${styles.metV} ${styles.word}`}>공개</p>
+                <p className={styles.metL}>평가 기준과 출처</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <p className={styles.quote}>
+              공식 정보와 전문 랩 데이터, 국내외 리뷰를 같은 기준으로 정리합니다. 한국 러너가
+              확인해야 할 정보를 분리해 보여드립니다.
+            </p>
+
+            <div className={styles.badges}>
+              {BADGES.map((b) => (
+                <span
+                  key={b.label}
+                  className={`${styles.badge} ${b.tone !== 'plain' ? styles[b.tone] : ''}`}
+                >
+                  {b.label}
+                </span>
               ))}
-            </ul>
-            <Link className={styles.methodLink} href="/about">
-              전체 기준 보기 →
-            </Link>
-          </details>
+            </div>
+
+            <details
+              className={styles.method}
+              onToggle={(e) => {
+                if ((e.currentTarget as HTMLDetailsElement).open) {
+                  track('home_trust_methodology_open', { section_name: 'trust' });
+                }
+              }}
+            >
+              <summary className={styles.methodSummary}>평가 기준과 출처</summary>
+              <ul className={styles.methodBody}>
+                {METHOD.map((m) => (
+                  <li key={m}>{m}</li>
+                ))}
+              </ul>
+              <Link className={styles.methodLink} href="/about">
+                전체 기준 보기 →
+              </Link>
+            </details>
+          </div>
         </div>
-      </div>
+    </div>
     </section>
   );
 }

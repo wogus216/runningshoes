@@ -1,4 +1,4 @@
-import { getMatrixBySlug, getMatrixShoes } from '@/lib/pseo/matrices';
+import { getMatrixBySlug, getMatrixShoes, BEST_PAGE_SHOE_LIMIT } from '@/lib/pseo/matrices';
 import { PROBLEMS } from './problems';
 
 /**
@@ -20,7 +20,12 @@ export type ProblemThumb = {
 };
 
 export type ProblemData = {
-  /** 고민 slug → /best 매트릭스 결과 수 */
+  /**
+   * 고민 slug → **목적지가 실제로 보여주는 신발 수**(모집단이 아니다).
+   *
+   * 매트릭스 필터는 무릎 92종처럼 모집단을 크게 잡지만 `/best/[slug]` 는 상위 12개만 렌더한다.
+   * 홈이 모집단을 쓰면 "92종 정리됨"이라 해놓고 들어가면 12개가 나온다.
+   */
   counts: Record<string, number>;
   /** rank 1 패널에 띄울 실제 신발 3종. 이미지가 있는 것만 고른다 */
   leadThumbs: ProblemThumb[];
@@ -40,7 +45,7 @@ export function getProblemData(): ProblemData {
       continue;
     }
     const shoes = getMatrixShoes(entry);
-    counts[problem.slug] = shoes.length;
+    counts[problem.slug] = Math.min(shoes.length, BEST_PAGE_SHOE_LIMIT);
 
     // 썸네일은 rank 1 고민에서만 뽑는다. getMatrixShoes가 가성비·평점 순으로 정렬해 두므로
     // 상위에서 이미지가 있는 것부터 취한다 — slug를 하드코딩하지 않아 DB가 바뀌어도 따라간다.
