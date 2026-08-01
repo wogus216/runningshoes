@@ -1,124 +1,112 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
-import type { MarathonEvent, EventMonth, EventRegion, EventDistance, EventStatus } from '@/types/marathon';
+import type { MarathonEvent, EventRegion, EventDistance } from '@/types/marathon';
+import { EVENT_DISTANCES } from '@/types/marathon';
+import { matchesDistanceFilter } from '@/lib/marathon/distance';
 import { useDebounce } from './useDebounce';
 
-export type MarathonSortOption = 'date-asc' | 'date-desc' | 'name-asc';
+/**
+ * 대회 목록 필터.
+ *
+ * 축을 셋으로 줄였다 — 권역·거리·메이저.
+ * 접수상태 필터는 시점 밴드와 중복이라 뺐고, 월별 필터도 뺐다(밴드 안이 날짜순이라 스크롤로 읽힌다).
+ * 정렬 옵션도 없앴다 — 밴드 순서가 곧 시의성 정렬이다.
+ *
+ * 시·도 17개를 그대로 칩으로 깔면 필터가 목록보다 커진다. 기존 필터 패널이 쓰던
+ * 권역 그룹 6개를 그대로 가져왔다.
+ */
+export type RegionGroupId = '수도권' | '강원' | '충청' | '전라' | '경상' | '제주';
 
-export const marathonSortLabels: Record<MarathonSortOption, string> = {
-  'date-asc': '날짜 빠른순',
-  'date-desc': '날짜 늦은순',
-  'name-asc': '이름순',
-};
+export const REGION_GROUPS: { id: RegionGroupId; regions: EventRegion[] }[] = [
+  { id: '수도권', regions: ['서울', '경기', '인천'] },
+  { id: '강원', regions: ['강원'] },
+  { id: '충청', regions: ['충북', '충남', '대전', '세종'] },
+  { id: '전라', regions: ['전북', '전남', '광주'] },
+  { id: '경상', regions: ['경북', '경남', '대구', '울산', '부산'] },
+  { id: '제주', regions: ['제주'] },
+];
+
+const REGION_TO_GROUP = new Map<EventRegion, RegionGroupId>(
+  REGION_GROUPS.flatMap((g) => g.regions.map((r) => [r, g.id] as const)),
+);
 
 export type MarathonFilterState = {
-  months: EventMonth[];
-  regions: EventRegion[];
+  regionGroups: RegionGroupId[];
   distances: EventDistance[];
-  statuses: EventStatus[];
+  majorOnly: boolean;
   searchQuery: string;
 };
 
 const initialFilters: MarathonFilterState = {
-  months: [],
-  regions: [],
+  regionGroups: [],
   distances: [],
-  statuses: [],
+  majorOnly: false,
   searchQuery: '',
 };
 
-export function useMarathonFilters(events: MarathonEvent[], initialStatus?: EventStatus) {
-  const [filters, setFilters] = useState<MarathonFilterState>(() => ({
-    ...initialFilters,
-    statuses: initialStatus ? [initialStatus] : [],
-  }));
-  const [sortBy, setSortBy] = useState<MarathonSortOption>('date-asc');
+function matchesSearch(event: MarathonEvent, query: string): boolean {
+  if (!query) return true;
+  const q = query.toLowerCase();
+  return (
+    event.name.toLowerCase().includes(q) ||
+    event.location.toLowerCase().includes(q) ||
+    (event.description?.toLowerCase().includes(q) ?? false)
+  );
+}
 
+export function useMarathonFilters(events: MarathonEvent[]) {
+  const [filters, setFilters] = useState<MarathonFilterState>(initialFilters);
   const debouncedSearchQuery = useDebounce(filters.searchQuery, 300);
 
-  const filterOptions = useMemo(() => {
-    const months = Array.from(new Set(events.map((e) => e.month)));
-    const regions = Array.from(new Set(events.map((e) => e.region))).sort();
-    const distances = Array.from(new Set(events.flatMap((e) => e.distances)));
-    const statuses = Array.from(new Set(events.map((e) => e.status)));
-
-    return { months, regions, distances, statuses };
-  }, [events]);
-
-  const filteredEventsUnsorted = useMemo(() => {
+  const filteredEvents = useMemo(() => {
     return events.filter((event) => {
-      // 검색어 필터
-      if (debouncedSearchQuery) {
-        const query = debouncedSearchQuery.toLowerCase();
-        const matchesName = event.name.toLowerCase().includes(query);
-        const matchesLocation = event.location.toLowerCase().includes(query);
-        const matchesDesc = event.description?.toLowerCase().includes(query);
-        if (!matchesName && !matchesLocation && !matchesDesc) {
-          return false;
-        }
+      if (!matchesSearch(event, debouncedSearchQuery)) return false;
+
+      if (filters.regionGroups.length > 0) {
+        const group = REGION_TO_GROUP.get(event.region);
+        if (!group || !filters.regionGroups.includes(group)) return false;
       }
 
-      // 월 필터
-      if (filters.months.length > 0 && !filters.months.includes(event.month)) {
-        return false;
-      }
+      if (!matchesDistanceFilter(event.distances, filters.distances)) return false;
 
-      // 지역 필터
-      if (filters.regions.length > 0 && !filters.regions.includes(event.region)) {
-        return false;
-      }
-
-      // 거리 필터
-      if (filters.distances.length > 0) {
-        const hasMatchingDistance = event.distances.some((d) => filters.distances.includes(d));
-        if (!hasMatchingDistance) {
-          return false;
-        }
-      }
-
-      // 접수상태 필터
-      if (filters.statuses.length > 0 && !filters.statuses.includes(event.status)) {
-        return false;
-      }
+      if (filters.majorOnly && !event.isMajor) return false;
 
       return true;
     });
-  }, [events, filters.months, filters.regions, filters.distances, filters.statuses, debouncedSearchQuery]);
+  }, [events, filters.regionGroups, filters.distances, filters.majorOnly, debouncedSearchQuery]);
 
-  const filteredEvents = useMemo(() => {
-    return [...filteredEventsUnsorted].sort((a, b) => {
-      switch (sortBy) {
-        case 'date-desc':
-          return b.date.localeCompare(a.date);
-        case 'name-asc':
-          return a.name.localeCompare(b.name, 'ko');
-        case 'date-asc':
-        default:
-          return a.date.localeCompare(b.date);
-      }
-    });
-  }, [filteredEventsUnsorted, sortBy]);
+  /** 칩에 붙는 수. 필터를 걸지 않은 전체 기준이라 선택해도 숫자가 흔들리지 않는다. */
+  const counts = useMemo(() => {
+    const regionGroups = Object.fromEntries(
+      REGION_GROUPS.map((g) => [
+        g.id,
+        events.filter((e) => REGION_TO_GROUP.get(e.region) === g.id).length,
+      ]),
+    ) as Record<RegionGroupId, number>;
+
+    const distances = Object.fromEntries(
+      EVENT_DISTANCES.map((d) => [d, events.filter((e) => matchesDistanceFilter(e.distances, [d])).length]),
+    ) as Record<string, number>;
+
+    return {
+      regionGroups,
+      distances,
+      majorOnly: events.filter((e) => e.isMajor).length,
+      all: events.length,
+    };
+  }, [events]);
 
   const setSearchQuery = useCallback((query: string) => {
     setFilters((prev) => ({ ...prev, searchQuery: query }));
   }, []);
 
-  const toggleMonth = useCallback((month: EventMonth) => {
+  const toggleRegionGroup = useCallback((id: RegionGroupId) => {
     setFilters((prev) => ({
       ...prev,
-      months: prev.months.includes(month)
-        ? prev.months.filter((m) => m !== month)
-        : [...prev.months, month],
-    }));
-  }, []);
-
-  const toggleRegion = useCallback((region: EventRegion) => {
-    setFilters((prev) => ({
-      ...prev,
-      regions: prev.regions.includes(region)
-        ? prev.regions.filter((r) => r !== region)
-        : [...prev.regions, region],
+      regionGroups: prev.regionGroups.includes(id)
+        ? prev.regionGroups.filter((g) => g !== id)
+        : [...prev.regionGroups, id],
     }));
   }, []);
 
@@ -131,41 +119,30 @@ export function useMarathonFilters(events: MarathonEvent[], initialStatus?: Even
     }));
   }, []);
 
-  const toggleStatus = useCallback((status: EventStatus) => {
-    setFilters((prev) => ({
-      ...prev,
-      statuses: prev.statuses.includes(status)
-        ? prev.statuses.filter((s) => s !== status)
-        : [...prev.statuses, status],
-    }));
+  const toggleMajorOnly = useCallback(() => {
+    setFilters((prev) => ({ ...prev, majorOnly: !prev.majorOnly }));
   }, []);
 
-  const resetFilters = useCallback(() => {
-    setFilters(initialFilters);
-  }, []);
+  const resetFilters = useCallback(() => setFilters(initialFilters), []);
 
-  const activeFilterCount = useMemo(() => {
-    let count = 0;
-    if (filters.searchQuery) count++;
-    count += filters.months.length;
-    count += filters.regions.length;
-    count += filters.distances.length;
-    count += filters.statuses.length;
-    return count;
-  }, [filters]);
+  const activeFilterCount = useMemo(
+    () =>
+      (filters.searchQuery ? 1 : 0) +
+      filters.regionGroups.length +
+      filters.distances.length +
+      (filters.majorOnly ? 1 : 0),
+    [filters],
+  );
 
   return {
     filters,
-    filterOptions,
     filteredEvents,
+    counts,
     activeFilterCount,
-    sortBy,
-    setSortBy,
     setSearchQuery,
-    toggleMonth,
-    toggleRegion,
+    toggleRegionGroup,
     toggleDistance,
-    toggleStatus,
+    toggleMajorOnly,
     resetFilters,
   };
 }

@@ -1,8 +1,27 @@
 import { Search, X } from 'lucide-react';
 import type { EventMonth, EventRegion, EventDistance, EventStatus } from '@/types/marathon';
 import { EVENT_MONTHS, EVENT_DISTANCES, EVENT_STATUSES } from '@/types/marathon';
-import type { MarathonFilterState, MarathonSortOption } from '@/hooks/useMarathonFilters';
-import { marathonSortLabels } from '@/hooks/useMarathonFilters';
+/**
+ * ⚠️ 2026-08-01 대회 탐색 개편으로 **임포트되지 않는 파일**이다(가로 칩이 대체).
+ * 번들에는 안 들어가지만 "필터가 얕아졌다"는 피드백이 오면 되살릴 코드라 남겨 뒀다.
+ * 훅에서 정렬·월·상태를 걷어내며 아래 세 심볼이 사라져, 파일이 홀로 서도록 여기로 옮겼다.
+ * 피드백 없이 4주가 지나면 삭제를 판단한다.
+ */
+type MarathonSortOption = 'date-asc' | 'date-desc' | 'name-asc';
+
+const marathonSortLabels: Record<MarathonSortOption, string> = {
+  'date-asc': '날짜 빠른순',
+  'date-desc': '날짜 늦은순',
+  'name-asc': '이름순',
+};
+
+type MarathonFilterState = {
+  months: EventMonth[];
+  regions: EventRegion[];
+  distances: EventDistance[];
+  statuses: EventStatus[];
+  searchQuery: string;
+};
 
 interface MarathonFilterPanelProps {
   filters: MarathonFilterState;
