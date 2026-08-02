@@ -46,4 +46,8 @@ describe('deriveCopy', () => {
   it('부제가 없으면 빈 문자열이다 (템플릿이 줄을 비운다)', () => {
     expect(deriveCopy({ title: '평발 러닝화 고르는 법', category: 'guide' }).subtitle).toBe('');
   });
+
+  it('data 는 자동 파생하지 않는다 — 항상 빈 문자열로 시작한다', () => {
+    expect(deriveCopy({ title: '아식스 젤 카야노 33 리뷰 | 258g', category: 'review' }).data).toBe('');
+  });
 });

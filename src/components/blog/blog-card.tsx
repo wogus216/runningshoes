@@ -20,7 +20,7 @@ export function BlogCard({ post }: BlogCardProps) {
     <Link href={`/blog/${post.slug}`} className="group block">
       <article className="flex h-full flex-col overflow-hidden rounded-[4px] border border-border bg-background transition-colors duration-200 hover:bg-[var(--accent-soft)]">
         {thumbnail ? (
-          <div className="relative aspect-[1200/630] overflow-hidden bg-gray-100">
+          <div className="relative aspect-[1200/630] overflow-hidden border-b border-border bg-gray-100">
             <div className="absolute inset-x-0 top-0 z-10 h-1.5 bg-[var(--accent)]" />
             <Image
               src={img(thumbnail)}
@@ -33,7 +33,7 @@ export function BlogCard({ post }: BlogCardProps) {
             />
           </div>
         ) : (
-          <div className="flex aspect-[1200/630] items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200">
+          <div className="flex aspect-[1200/630] items-center justify-center border-b border-border bg-gradient-to-br from-stone-100 to-stone-200">
             <span className="text-4xl text-stone-400">
               {categoryLabels[post.category]}
             </span>

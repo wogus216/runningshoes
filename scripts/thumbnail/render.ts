@@ -77,6 +77,7 @@ function html(copy: ThumbCopy): string {
 <p class="kicker">${esc(copy.kicker)}</p>
 <h1 class="title">${esc(copy.title)}</h1>
 <p class="subtitle">${esc(copy.subtitle)}</p>
+<p class="data">${esc(copy.data)}</p>
 <div class="footer">allrunabout.com</div>
 </body></html>`;
 }

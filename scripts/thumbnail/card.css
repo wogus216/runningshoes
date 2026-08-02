@@ -83,6 +83,24 @@ body {
 /* 부제가 빈 글에서는 자리를 차지하지 않는다 */
 .subtitle:empty { display: none; }
 
+/* 데이터 한 줄 — 제목이 말하지 않는 것을 담는 자리.
+   3단으로 줄였더니 카드에서 썸네일이 제목만 반복하게 돼 한 줄만 되살렸다.
+   값이 없으면 규칙선까지 통째로 사라진다(빈 줄이 남으면 레이아웃이 어색하다). */
+.data {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid #D9D4C8;    /* --border */
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: #17150F;                   /* --primary — 수치는 잉크로, 부제보다 진하게 */
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.data:empty { display: none; }
+
 .footer {
   position: absolute;
   left: 86px; right: 86px; bottom: 44px;
