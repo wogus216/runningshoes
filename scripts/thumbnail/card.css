@@ -1,0 +1,95 @@
+/* scripts/thumbnail/card.css
+ *
+ * 1200×630 종이톤 썸네일. 값은 globals.css 팔레트와 같은 실제 hex 를 쓴다
+ * (이 파일은 헤드리스 Chrome 에서 단독 렌더되므로 CSS 변수를 못 물려받는다).
+ *
+ * 밀도를 3단으로 줄였다 — 킥커 · 제목 · 부제.
+ * 기존 템플릿의 데이터 3행과 각주는 카드 350px 에서 판독 불가한 질감이라 뺐다.
+ */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../src/app/fonts/PretendardVariable.woff2') format('woff2-variations');
+  font-weight: 45 920;
+  font-display: block;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1200px;
+  height: 630px;
+  background: #F7F4ED;              /* --bg-warm 종이 */
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  color: #17150F;                   /* --primary 잉크 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 86px;
+  overflow: hidden;
+}
+
+/* 상단 시그널 띠 — 카드에서도 살아남는 유일한 색 요소 */
+.bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 9px;
+  background: #FF4D00;              /* --accent */
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-bottom: 30px;
+}
+/* 오렌지는 대시(그래픽)에만. 소형 텍스트에 #FF4D00 을 쓰면 대비 3.03 으로 미달한다 */
+.kicker::before {
+  content: '';
+  width: 56px;
+  height: 4px;
+  background: #FF4D00;
+  flex: none;
+}
+
+.title {
+  font-size: 68px;
+  font-weight: 800;
+  line-height: 1.16;
+  letter-spacing: -0.032em;
+  word-break: keep-all;
+  /* 2줄을 넘기면 잘라낸다 — 넘치면 부제가 화면 밖으로 밀린다 */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.subtitle {
+  margin-top: 26px;
+  font-size: 31px;
+  font-weight: 500;
+  line-height: 1.45;
+  letter-spacing: -0.018em;
+  color: #6E6A5E;                   /* --secondary */
+  word-break: keep-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+/* 부제가 빈 글에서는 자리를 차지하지 않는다 */
+.subtitle:empty { display: none; }
+
+.footer {
+  position: absolute;
+  left: 86px; right: 86px; bottom: 44px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 23px;
+  font-weight: 500;
+  color: #6E6A5E;
+  letter-spacing: 0.01em;
+}
