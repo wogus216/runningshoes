@@ -6,14 +6,9 @@
  * 파싱이 어색한 글은 OVERRIDES 로 손으로 고친다 — 자동 파생은 초안일 뿐이다.
  */
 
-export type ThumbCopy = { kicker: string; title: string; subtitle: string; data: string };
+import { categoryLabels, type BlogCategory } from '../../src/types/blog';
 
-const CATEGORY_LABELS: Record<string, string> = {
-  guide: '가이드',
-  review: '리뷰',
-  news: '뉴스',
-  tips: '팁',
-};
+export type ThumbCopy = { kicker: string; title: string; subtitle: string; data: string };
 
 /** `|` 와 `—` 중 먼저 나오는 것을 첫 구분자로 삼는다. */
 export function splitTitle(raw: string): { head: string; rest: string } {
@@ -27,7 +22,7 @@ export function splitTitle(raw: string): { head: string; rest: string } {
 export function deriveCopy(post: { title: string; category: string }): ThumbCopy {
   const { head, rest } = splitTitle(post.title);
   return {
-    kicker: CATEGORY_LABELS[post.category] ?? '',
+    kicker: categoryLabels[post.category as BlogCategory] ?? '',
     title: head,
     subtitle: rest,
     data: '',

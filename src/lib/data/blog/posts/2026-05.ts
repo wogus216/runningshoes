@@ -4796,7 +4796,7 @@ export const posts_2026_05: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
     <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 13년 검증·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
-    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 신상 풀가 21만원대를 감수하더라도 새로운 부드러운 안정성의 가치 ↑.</p>
+    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 19만원대 정가는 32와 동일하니, 신상 특유의 랩 데이터 공백을 감수하더라도 새로운 부드러운 안정성을 시도해볼 가치 ↑.</p>
     <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
   </div>
 </div>
@@ -7498,7 +7498,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>10mm</td><td>8mm</td><td><strong>-2mm (더 평탄)</strong></td></tr>
     <tr><td><strong>안정성 시스템</strong></td><td>4D Guidance System</td><td><strong>FLUIDSUPPORT</strong></td><td>구조 완전 교체</td></tr>
     <tr><td><strong>미드솔</strong></td><td>FF Blast Plus Eco (싱글)</td><td><strong>FF BLAST MAX + PLUS (듀얼)</strong></td><td>최상위 폼 채택</td></tr>
-    <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000~209,000원 예상</td><td>유지~소폭 상승</td></tr>
+    <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000원</td><td>동일</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td>2E (정식 출시)</td><td>2E 예상 (미발표)</td><td>유지 예상</td></tr>
   </tbody>
 </table>

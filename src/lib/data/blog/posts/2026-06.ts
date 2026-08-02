@@ -3644,7 +3644,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/asics-gel-kayano-32"><strong>젤 카야노 32</strong></a></td><td>안정화</td><td>FF Blast+ · 4D Guidance</td><td>19.9만</td><td>300g</td><td>4D Guidance 단단한 평발 교정</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28"><strong>젤 님버스 28</strong></a></td><td>프리미엄 쿠션</td><td>FF Blast Plus</td><td>19.9만</td><td>281g</td><td>43.5mm 푹신, 중립 쿠션 대장</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-4"><strong>매직스피드 4</strong></a></td><td>카본 입문</td><td>FF Blast+ · FF Turbo · 카본</td><td>19.9만</td><td>237g</td><td>풀렝스 카본, 메타스피드 입문</td></tr>
-    <tr><td><a href="/shoes/asics-gel-kayano-33"><strong>젤 카야노 33</strong></a></td><td>안정화 신상</td><td>FF Blast 듀얼 · FLUIDSUPPORT</td><td>20.9만</td><td>298g</td><td>GEL 졸업, 부드러워진 카야노</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-33"><strong>젤 카야노 33</strong></a></td><td>안정화 신상</td><td>FF Blast 듀얼 · FLUIDSUPPORT</td><td>19.9만</td><td>298g</td><td>GEL 졸업, 부드러워진 카야노</td></tr>
     <tr><td><a href="/shoes/asics-sonicblast"><strong>소닉블라스트</strong></a></td><td>카본 맥시멀</td><td>FF Blast+ · 카본</td><td>22.9만</td><td>255g</td><td>카본 플레이트 맥시멀 쿠션</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>22.9만</td><td>193g</td><td>193g 포크형 카본, 50g 감량</td></tr>
     <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
@@ -10747,19 +10747,19 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'li-ning-red-hare-9-ultra-budget-supertrainer',
     slug: 'li-ning-red-hare-9-ultra-budget-supertrainer',
-    title: '리닝 적토끼 9 울트라 — "10만원대 카본급" 진짜일까? | 커뮤니티 난리 난 중국 슈퍼 트레이너 팩트체크',
-    description: '러닝 커뮤니티에서 화제인 리닝(Li-Ning) 적토끼 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구)·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크.',
+    title: '리닝 적토마 9 울트라 — "10만원대 카본급" 진짜일까? | 커뮤니티 난리 난 중국 슈퍼 트레이너 팩트체크',
+    description: '러닝 커뮤니티에서 화제인 리닝(Li-Ning) 적토마 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구)·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크.',
     thumbnail: '/images/blog/li-ning-red-hare-9-ultra-budget-supertrainer.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-01',
     category: 'review' as const,
     readingTime: 9,
-    tags: ['리닝', '적토끼 9 울트라', 'Li-Ning Red Hare', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화'],
+    tags: ['리닝', '적토마 9 울트라', 'Li-Ning Red Hare', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong><a href="/shoes/li-ning-red-hare-9-ultra">리닝 적토끼 9 울트라</a></strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
+    <li><strong><a href="/shoes/li-ning-red-hare-9-ultra">리닝 적토마 9 울트라</a></strong>는 PEBA 3층 미드솔 + 47mm 맥스 스택을 <strong>10만원대(CNY 599)</strong>에 담아 "가성비 슈퍼 트레이너"로 화제</li>
     <li>단, <strong>"카본화"는 오해</strong> — 이 모델은 카본이 아닌 <strong>유리섬유 플레이트</strong>입니다(같은 세대 <a href="/shoes/li-ning-red-hare-9-pro">9 PRO</a>도 공식상 카본이 아닌 TPU 지지편). 레이스용이 아니라 <strong>LSD·훈련용 트레이너</strong></li>
     <li><strong>한국 공식 유통이 없어 직구</strong>(타오바오·알리·KREAM)해야 하고, <strong>미드풋 78mm로 좁아</strong> 발볼 넓은 한국 러너는 주의가 필요합니다</li>
   </ul>
@@ -10777,7 +10777,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">팩트체크 ① — "카본화" 아닙니다</p>
-    <p>커뮤니티에서 "가성비 카본화"로 불리지만, <strong>적토끼 9 울트라의 플레이트는 카본이 아니라 유리섬유(글라스 파이버)</strong>입니다. 리닝이 "슈퍼 카본" 류의 마케팅을 쓰지만 실제 소재는 유리섬유 지지 플레이트 + 캡슐 폼 조합이에요. 흔히 "카본은 같은 세대의 <a href="/shoes/li-ning-red-hare-9-pro">적토끼 9 PRO</a>에 들어간다"고 알려졌지만, <strong>라이닝 공식 설명상 9 PRO 역시 카본이 아니라 TPU 지지편을 쓰는 낮은 스택의 데일리 트레이너</strong>입니다(일부 마케팅의 T400 카본 주장은 독립 검증이 없습니다). 즉 적토 9 라인업엔 진짜 풀카본 레이서가 없고, 카본 슈퍼슈즈의 추진력을 원한다면 라이닝의 레이싱 전용 비전(飞电) 라인을 봐야 합니다.</p>
+    <p>커뮤니티에서 "가성비 카본화"로 불리지만, <strong>적토마 9 울트라의 플레이트는 카본이 아니라 유리섬유(글라스 파이버)</strong>입니다. 리닝이 "슈퍼 카본" 류의 마케팅을 쓰지만 실제 소재는 유리섬유 지지 플레이트 + 캡슐 폼 조합이에요. 흔히 "카본은 같은 세대의 <a href="/shoes/li-ning-red-hare-9-pro">적토마 9 PRO</a>에 들어간다"고 알려졌지만, <strong>라이닝 공식 설명상 9 PRO 역시 카본이 아니라 TPU 지지편을 쓰는 낮은 스택의 데일리 트레이너</strong>입니다(일부 마케팅의 T400 카본 주장은 독립 검증이 없습니다). 즉 적토 9 라인업엔 진짜 풀카본 레이서가 없고, 카본 슈퍼슈즈의 추진력을 원한다면 라이닝의 레이싱 전용 비전(飞电) 라인을 봐야 합니다.</p>
   </div>
 </div>
 
@@ -10785,7 +10785,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <table>
   <thead>
-    <tr><th>항목</th><th>적토끼 9 울트라</th><th>의미</th></tr>
+    <tr><th>항목</th><th>적토마 9 울트라</th><th>의미</th></tr>
   </thead>
   <tbody>
     <tr><td>무게</td><td>약 220~246g (US 9~9.5)</td><td>맥스 스택 치고 가벼운 편</td></tr>
