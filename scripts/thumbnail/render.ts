@@ -24,15 +24,34 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
-/** 포스트 파일들에서 slug → {title, category} 를 긁는다. */
+/**
+ * 포스트 파일들에서 slug → {title, category} 를 긁는다.
+ *
+ * `title`과 `category` 사이에 수천 자짜리 `content` 템플릿 리터럴이 끼어 있어
+ * 고정폭 근접 창으로는 못 찾는 글이 있다(예: content가 긴 글). 그래서 먼저
+ * 각 포스트 객체의 경계(다음 `slug:` 등장 전까지)로 블록을 자르고, 그 블록
+ * 안에서 title/category를 각각 독립적으로 찾는다 — 필드 간 거리에 상관없다.
+ */
 function loadPosts(): Map<string, { title: string; category: string }> {
   const map = new Map<string, { title: string; category: string }>();
   for (const f of readdirSync(POSTS_DIR).filter((n) => /^\d{4}-\d{2}\.ts$/.test(n))) {
     const txt = readFileSync(join(POSTS_DIR, f), 'utf8');
-    const re = /slug:\s*'([^']+)'[\s\S]{0,600}?title:\s*'([^']*)'[\s\S]{0,600}?category:\s*'([^']+)'/g;
-    let m;
-    while ((m = re.exec(txt))) {
-      if (!map.has(m[1])) map.set(m[1], { title: m[2], category: m[3] });
+    const slugRe = /slug:\s*'([^']+)'/g;
+    const hits: { slug: string; index: number }[] = [];
+    let sm;
+    while ((sm = slugRe.exec(txt))) {
+      hits.push({ slug: sm[1], index: sm.index });
+    }
+    for (let i = 0; i < hits.length; i++) {
+      const start = hits[i].index;
+      const end = i + 1 < hits.length ? hits[i + 1].index : txt.length;
+      const block = txt.slice(start, end);
+      const titleMatch = block.match(/title:\s*'([^']*)'/);
+      const categoryMatch = block.match(/category:\s*'([^']+)'/);
+      if (!titleMatch || !categoryMatch) continue;
+      if (!map.has(hits[i].slug)) {
+        map.set(hits[i].slug, { title: titleMatch[1], category: categoryMatch[1] });
+      }
     }
   }
   return map;
@@ -66,10 +85,14 @@ async function main() {
   const posts = loadPosts();
   mkdirSync(TMP, { recursive: true });
 
+  const failed: string[] = [];
+  let done = 0;
+
   for (const slug of slugs) {
     const post = posts.get(slug);
     if (!post) {
       console.error(`  ⚠️  ${slug}: 포스트를 못 찾음 — 건너뜀`);
+      failed.push(slug);
       continue;
     }
     const copy: ThumbCopy = { ...deriveCopy(post), ...(OVERRIDES[slug] ?? {}) };
@@ -78,7 +101,10 @@ async function main() {
 
     console.log(`  ${slug}`);
     console.log(`    킥커: ${copy.kicker} / 제목: ${copy.title} / 부제: ${copy.subtitle || '(없음)'}`);
-    if (dry) continue;
+    if (dry) {
+      done++;
+      continue;
+    }
 
     const pngPath = join(TMP, `${slug}.png`);
     execFileSync(CHROME, [
@@ -92,9 +118,17 @@ async function main() {
     await sharp(pngPath).webp({ quality: 90 }).toFile(webpPath);
     const kb = (readFileSync(webpPath).length / 1024).toFixed(0);
     console.log(`    → ${webpPath.replace(ROOT + '/', '')} (${kb} KB)`);
+    done++;
   }
 
   if (!dry) rmSync(TMP, { recursive: true, force: true });
+
+  // 실패를 조용히 넘기지 않는다 — 출력이 길어지면 경고 한 줄이 묻힌다.
+  if (failed.length) {
+    console.error(`\n생성 ${done} / 실패 ${failed.length} — ${failed.join(', ')}`);
+    process.exit(1);
+  }
+  console.log(`\n생성 ${done} / 실패 0`);
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

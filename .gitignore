@@ -8,6 +8,9 @@ node_modules
 .next
 out
 
+# 썸네일 렌더 스크립트 임시 파일 (scripts/thumbnail/render.ts --dry 가 남김)
+.thumb-tmp/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
