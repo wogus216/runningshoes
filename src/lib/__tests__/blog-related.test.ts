@@ -133,3 +133,36 @@ describe('rankRelated', () => {
     expect(rankRelated(corpus[0], corpus, index, 6)).toHaveLength(0);
   });
 });
+
+import { getAllPosts, getRelatedPosts } from '@/lib/data/blog';
+
+describe('전체 코퍼스 커버리지 (회귀 가드)', () => {
+  const posts = getAllPosts();
+  const shown = new Map<string, number>();
+  let zeroRecommendation = 0;
+
+  for (const p of posts) {
+    const related = getRelatedPosts(p.slug, 6);
+    if (related.length === 0) zeroRecommendation++;
+    for (const r of related) shown.set(r.slug, (shown.get(r.slug) ?? 0) + 1);
+  }
+
+  const slots = Array.from(shown.values()).sort((a, b) => b - a);
+  const totalSlots = slots.reduce((a, b) => a + b, 0);
+  const top10Share = slots.slice(0, 10).reduce((a, b) => a + b, 0) / totalSlots;
+  const coverage = shown.size / posts.length;
+
+  // 임계값은 목표치(98%/15%)가 아니라 여유값이다. 글이 늘면 수치가 자연히 흔들리므로
+  // 정확한 값을 지키는 게 아니라 알고리즘이 다시 편중되는 것을 잡는 게 목적이다.
+  it('추천에 노출되는 글이 전체의 80% 이상이다', () => {
+    expect(coverage).toBeGreaterThanOrEqual(0.8);
+  });
+
+  it('상위 10편이 추천 슬롯의 30% 이하를 차지한다', () => {
+    expect(top10Share).toBeLessThanOrEqual(0.3);
+  });
+
+  it('추천이 0개인 글이 없다', () => {
+    expect(zeroRecommendation).toBe(0);
+  });
+});

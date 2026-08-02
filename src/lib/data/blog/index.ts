@@ -1,5 +1,6 @@
 import { BlogPost, BlogPostMeta, BlogCardMeta, BlogCategory } from '@/types/blog';
 import { blogPosts } from './posts';
+import { buildIndex, rankRelated, type RelatedIndex } from '@/lib/blog/related';
 
 /**
  * 모든 블로그 포스트 가져오기 (최신순)
@@ -93,27 +94,40 @@ export function getPostThumbnail(post: BlogPost): string | null {
 }
 
 /**
- * 관련 포스트 가져오기 (같은 카테고리 또는 태그 공유)
+ * 관련도 인덱스 — 첫 호출 시 1회 구축해 메모이즈한다.
+ *
+ * 글 221편 × 후보 221편을 페이지마다 계산하면 SSG 빌드에서 약 1,000만 번의 비교가 된다.
+ * IDF 테이블과 신발 링크 집합은 코퍼스가 안 변하는 한 동일하므로 한 번만 만든다.
+ * `buildShoeLinkIndex()` 가 쓰는 것과 같은 패턴이다.
+ *
+ * ⚠️ SSG 서버에서만 호출된다. 'use client' 컴포넌트가 모듈 스코프에서 이걸 부르면
+ *    풀 블로그 데이터가 클라이언트 번들에 실린다(이 리포에 실측 712KB 사례가 있다).
  */
-export function getRelatedPosts(slug: string, limit: number = 3): BlogPost[] {
+let relatedIndex: RelatedIndex | null = null;
+
+function getRelatedIndex(): RelatedIndex {
+  if (!relatedIndex) relatedIndex = buildIndex(blogPosts);
+  return relatedIndex;
+}
+
+/**
+ * 관련 포스트 가져오기.
+ *
+ * 이전 구현은 `같은 카테고리 OR 태그 공유` 로 거른 뒤 날짜순으로만 뽑아서,
+ * 같은 카테고리의 모든 글이 같은 최신 3편을 가리켰다(221편 중 27편만 노출).
+ * 지금은 관련도 점수 순위다 — `src/lib/blog/related.ts` 참고.
+ */
+export function getRelatedPosts(slug: string, limit: number = 6): BlogPost[] {
   const currentPost = getPostBySlug(slug);
   if (!currentPost) return [];
 
-  return blogPosts
-    .filter((post) => post.slug !== slug)
-    .filter(
-      (post) =>
-        post.category === currentPost.category ||
-        post.tags.some((tag) => currentPost.tags.includes(tag))
-    )
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, limit);
+  return rankRelated(currentPost, blogPosts, getRelatedIndex(), limit);
 }
 
 /**
  * 관련 포스트를 카드용 경량 메타로 반환 (BlogCard는 content 불필요)
  */
-export function getRelatedPostsMeta(slug: string, limit: number = 3): BlogPostMeta[] {
+export function getRelatedPostsMeta(slug: string, limit: number = 6): BlogPostMeta[] {
   return getRelatedPosts(slug, limit).map(toPostMeta);
 }
 
