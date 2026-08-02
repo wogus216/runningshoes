@@ -787,6 +787,205 @@ git commit -m "feat(blog): 트래픽 상위 10편 썸네일 종이톤 재생성"
 
 ---
 
+### Task 3B: 템플릿 개정 — 데이터 한 줄 복원 + 카드 테두리
+
+Task 3 의 10장을 그리드에 놓고 보니 두 가지가 드러났다. **20장을 더 만들기 전에 템플릿을 고친다.**
+
+1. **썸네일이 빈 공간으로 읽힌다** — 배경 `#F7F4ED` 가 카드·페이지 배경과 거의 같아 이미지 영역의 경계가 안 보인다
+2. **제목이 카드 제목과 중복된다** — 썸네일이 "아식스 젤 카야노 33 솔직 리뷰", 바로 아래 `<h3>` 가 같은 문장. 카드에서 썸네일이 정보를 더하지 않는다
+
+원인은 밀도 축소가 과했던 것이다. 기존 다크 템플릿의 데이터 3행은 **제목이 말하지 않는 것**을 담고 있었는데, 3단으로 줄이며 그 역할이 통째로 사라졌다. 3행을 되살리진 않되 **한 줄은 복원한다.**
+
+**Files:**
+- Modify: `scripts/thumbnail/card.css` (규칙선 + 데이터 줄)
+- Modify: `scripts/thumbnail/copy.ts` (`ThumbCopy.data`)
+- Modify: `scripts/thumbnail/render.ts` (템플릿에 data 주입)
+- Modify: `src/components/blog/blog-card.tsx` (썸네일 하단 경계)
+- Modify: `src/lib/__tests__/thumbnail-copy.test.ts` (data 기본값)
+- Modify: `public/images/blog/*.webp` (Task 3 의 10장 + Task 2 의 1장 = 11장 재생성)
+
+**Interfaces:**
+- Produces:
+  ```ts
+  export type ThumbCopy = { kicker: string; title: string; subtitle: string; data: string };
+  ```
+  `deriveCopy` 는 `data: ''` 를 기본값으로 돌려준다 — **자동 파생하지 않는다.** 값은 `OVERRIDES` 로만 들어온다.
+
+#### ⛔ 숫자 출처 규칙 (이 태스크의 최우선 제약)
+
+**데이터 줄의 수치를 지어내면 안 된다.** 이 사이트의 유일한 차별점이 데이터 검증이고, 썸네일은 검색·공유에서 가장 먼저 보이는 표면이다. 틀린 숫자가 여기 박히면 신뢰도가 통째로 무너진다.
+
+허용되는 출처는 **둘뿐**이다:
+
+1. **그 글의 본문(`content`)에 실제로 적힌 수치** — 글을 열어 확인한 것
+2. **신발 DB(`src/lib/data/shoes/`)의 검증된 값** — `specs.weight`, `biomechanics.stackHeight`, `detailedSpecs` 등
+
+**둘 중 어디에도 없으면 `data` 를 비운다.** 템플릿이 빈 줄을 자동으로 없앤다(`:empty { display: none }`). 비어 있는 게 틀린 것보다 낫다.
+
+보고서에 **각 수치가 어디서 왔는지 파일·근거를 적어라.** 출처를 못 적는 수치는 넣지 마라.
+
+- [ ] **Step 1: 타입에 `data` 추가**
+
+`scripts/thumbnail/copy.ts` 의 `ThumbCopy` 와 `deriveCopy` 를 고친다.
+
+```ts
+export type ThumbCopy = { kicker: string; title: string; subtitle: string; data: string };
+```
+
+`deriveCopy` 의 반환에 `data: ''` 를 더한다. **제목·설명에서 숫자를 긁어오려 하지 마라** — 문맥 없는 숫자는 틀리기 쉽다. 오직 `OVERRIDES` 로만 채운다.
+
+- [ ] **Step 2: 기존 테스트를 새 타입에 맞춘다**
+
+`src/lib/__tests__/thumbnail-copy.test.ts` 의 `deriveCopy` 케이스에 `data` 기본값 단언을 더한다.
+
+```ts
+  it('data 는 자동 파생하지 않는다 — 항상 빈 문자열로 시작한다', () => {
+    expect(deriveCopy({ title: '아식스 젤 카야노 33 리뷰 | 258g', category: 'review' }).data).toBe('');
+  });
+```
+
+제목에 숫자가 있어도 안 긁어온다는 걸 못 박는 테스트다.
+
+```bash
+npx vitest run src/lib/__tests__/
+```
+기대: 새 케이스 포함 전부 통과
+
+- [ ] **Step 3: 템플릿에 규칙선 + 데이터 줄**
+
+`scripts/thumbnail/card.css` 의 `.subtitle:empty { display: none; }` 다음에 더한다.
+
+```css
+/* 데이터 한 줄 — 제목이 말하지 않는 것을 담는 자리.
+   3단으로 줄였더니 카드에서 썸네일이 제목만 반복하게 돼 한 줄만 되살렸다.
+   값이 없으면 규칙선까지 통째로 사라진다(빈 줄이 남으면 레이아웃이 어색하다). */
+.data {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid #D9D4C8;    /* --border */
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  color: #17150F;                   /* --primary — 수치는 잉크로, 부제보다 진하게 */
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.data:empty { display: none; }
+```
+
+- [ ] **Step 4: 렌더가 data 를 넣도록**
+
+`scripts/thumbnail/render.ts` 의 `html()` 에서 `.subtitle` 다음 줄에 더한다.
+
+```
+<p class="data">${esc(copy.data)}</p>
+```
+
+- [ ] **Step 5: 카드 썸네일에 경계 추가**
+
+`src/components/blog/blog-card.tsx` 의 썸네일 wrapper 에 하단 경계를 준다. 현재:
+
+```tsx
+          <div className="relative aspect-[1200/630] overflow-hidden bg-gray-100">
+```
+
+로 바꾼다:
+
+```tsx
+          <div className="relative aspect-[1200/630] overflow-hidden border-b border-border bg-gray-100">
+```
+
+썸네일 없는 폴백 `<div>` 에도 같은 `border-b border-border` 를 더한다. 종이톤 썸네일이 카드 본문으로 흘러 들어가 보이던 문제를 이 한 줄이 끊는다.
+
+- [ ] **Step 6: 데이터 줄 작성 — 11편**
+
+대상은 Task 2·3 이 만든 11장이다.
+
+```
+hoka-clifton-pro-preview-2026
+asics-gel-kayano-33-review
+nike-pegasus-41-vs-42-comparison
+li-ning-red-hare-9-ultra-budget-supertrainer
+asics-novablast-5-vs-6-comparison-2026
+li-ning-red-hare-9-lineup-2026
+hoka-clifton-11-vs-10-comparison
+new-balance-860-v14-vs-v15-comparison
+nike-pegasus-42-review
+2026-mudo-run-gyeongju
+2026-nike-alphafly-4-prototype
+```
+
+각 글에 대해:
+
+1. 글 본문을 연다 — `grep -rn "slug: '<slug>'" src/lib/data/blog/posts/` 로 위치를 찾고 그 포스트의 `content` 를 읽는다
+2. 신발 글이면 신발 DB 도 본다 — `grep -rn "slug: '<신발slug>'" src/lib/data/shoes/`
+3. **제목이 말하지 않는 수치 2~4개**를 골라 가운뎃점으로 잇는다
+
+좋은 예 / 나쁜 예:
+
+| | 예 |
+|---|---|
+| ✅ 좋음 | `SA 152 · 힐 39mm · 258g` — 제목엔 없는 실측 |
+| ✅ 좋음 | `179,000원 · 9월 19일 · 선착순 3,000명` — 대회 글 |
+| ❌ 나쁨 | `아식스 · 안정화` — 제목·킥커와 중복 |
+| ❌ 나쁨 | `역대급 쿠셔닝` — 수치가 아니라 수사 |
+| ❌ 나쁨 | (출처를 못 찾아 그럴듯하게 지어낸 것) — **금지** |
+
+**한 줄에 안 들어가면 줄여라.** `white-space: nowrap` + `text-overflow: ellipsis` 라 넘치면 `…` 로 잘린다. 잘린 채로 두지 마라.
+
+출처를 못 찾은 글은 `data` 를 비우고 **보고서에 왜 비웠는지 적어라.** 11편 중 몇 편이 비어도 된다.
+
+- [ ] **Step 7: 11장 재생성 + 육안 검수**
+
+```bash
+mkdir -p /tmp/thumb-backup-t3b
+SLUGS=(hoka-clifton-pro-preview-2026 asics-gel-kayano-33-review nike-pegasus-41-vs-42-comparison
+li-ning-red-hare-9-ultra-budget-supertrainer asics-novablast-5-vs-6-comparison-2026
+li-ning-red-hare-9-lineup-2026 hoka-clifton-11-vs-10-comparison new-balance-860-v14-vs-v15-comparison
+nike-pegasus-42-review 2026-mudo-run-gyeongju 2026-nike-alphafly-4-prototype)
+for s in "${SLUGS[@]}"; do cp "public/images/blog/$s.webp" /tmp/thumb-backup-t3b/; done
+
+npx tsx scripts/thumbnail/render.ts "${SLUGS[@]}"
+```
+
+> ⚠️ 이 셸은 zsh 다. 따옴표 없는 `$VAR` 는 단어 분리되지 않으니 반드시 `"${SLUGS[@]}"` 로 전개한다.
+
+**11장을 Read 도구로 하나씩 열어** 확인한다:
+
+| 항목 | 기준 |
+|---|---|
+| 데이터 줄 | `…` 로 잘리지 않음 |
+| 규칙선 | data 가 있는 글에만 보임 |
+| data 없는 글 | 규칙선까지 통째로 사라짐 (빈 줄 없음) |
+| 크기 | 1200×630 |
+
+- [ ] **Step 8: 그리드 실측 — 경계가 생겼는가**
+
+```bash
+set -o pipefail && npm run build && npx serve out -l 4321 &
+```
+
+`http://localhost:4321/blog` 에서 새 스타일 카드를 찾아 스크린샷한다. **다크 카드 옆에서 종이톤 카드가 하나의 이미지 블록으로 읽히는지**가 이 태스크의 합격 기준이다. Task 3 이전 스크린샷과 나란히 비교해 판단한다.
+
+- [ ] **Step 9: 커밋**
+
+```bash
+git add scripts/thumbnail/card.css scripts/thumbnail/copy.ts scripts/thumbnail/render.ts \
+  src/components/blog/blog-card.tsx src/lib/__tests__/thumbnail-copy.test.ts
+git add public/images/blog/hoka-clifton-pro-preview-2026.webp public/images/blog/asics-gel-kayano-33-review.webp \
+  public/images/blog/nike-pegasus-41-vs-42-comparison.webp public/images/blog/li-ning-red-hare-9-ultra-budget-supertrainer.webp \
+  public/images/blog/asics-novablast-5-vs-6-comparison-2026.webp public/images/blog/li-ning-red-hare-9-lineup-2026.webp \
+  public/images/blog/hoka-clifton-11-vs-10-comparison.webp public/images/blog/new-balance-860-v14-vs-v15-comparison.webp \
+  public/images/blog/nike-pegasus-42-review.webp public/images/blog/2026-mudo-run-gyeongju.webp \
+  public/images/blog/2026-nike-alphafly-4-prototype.webp
+git status --short   # tsconfig.tsbuildinfo 가 스테이징됐으면 git restore --staged 로 뺀다
+git commit -m "feat(blog): 썸네일에 데이터 한 줄 복원 + 카드 썸네일 경계"
+```
+
+---
+
 ### Task 4: 나머지 19편 + 비율 이탈 5건
 
 **Files:**
@@ -883,6 +1082,13 @@ npx tsx scripts/thumbnail/render.ts --dry "${ALL[@]}"
 ```
 
 Task 3 Step 2 와 같은 기준으로 어색한 문구를 `OVERRIDES` 에 적는다.
+
+**그리고 Task 3B 가 되살린 `data` 한 줄도 여기서 함께 채운다.** 규칙은 Task 3B 와 동일하다:
+
+- 허용 출처는 **글 본문(`content`)에 실제로 적힌 수치** 또는 **신발 DB(`src/lib/data/shoes/`)의 검증값** 둘뿐이다
+- **둘 다 없으면 비운다.** 템플릿이 빈 줄과 규칙선을 통째로 없앤다. 비어 있는 게 틀린 것보다 낫다
+- **수치를 지어내면 안 된다.** 보고서에 각 수치의 출처를 적어라 — 못 적는 수치는 넣지 마라
+- 제목·킥커와 중복되는 값(브랜드명·카테고리)은 데이터가 아니다. 제목이 **말하지 않는** 것을 담아라
 
 - [ ] **Step 3: 생성 + 검수**
 
@@ -1019,6 +1225,8 @@ git commit -m "qa(blog): 썸네일 정합·스타일 실측 체크리스트"
 6. 전 썸네일의 비율이 **1.905** — 세로형 0건
 7. 트래픽 상위 30편이 종이톤 새 템플릿 (조회의 64.5% 커버)
 8. 새 썸네일이 360px 폭 카드에서 제목이 읽힌다
+8b. **썸네일이 카드 그리드에서 하나의 이미지 블록으로 읽힌다** — 경계가 보이고, 제목만 반복하지 않는다
+8c. **데이터 줄의 모든 수치에 출처가 있다** — 글 본문 또는 신발 DB. 지어낸 수치 0건
 9. 홈 레이아웃이 lead 비율 변경 후에도 깨지지 않는다
 10. 1440/768/390/360 에서 가로 스크롤이 없다
 11. tsc 0 · test 통과 · lint 0 error · validate 에러 0 · build 성공
