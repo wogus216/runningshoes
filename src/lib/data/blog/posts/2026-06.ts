@@ -9326,7 +9326,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>한국 러너 관점</h2>
 <ul>
-  <li><strong>가격</strong>: 한국 공식가 <strong>209,000원</strong>. 프리미엄 안정화 정가대이며, 32가 할인에 들어가면 가성비는 32가 앞섭니다.</li>
+  <li><strong>가격</strong>: 한국 공식가 <strong>199,000원</strong>. 프리미엄 안정화 정가대이며, 32가 할인에 들어가면 가성비는 32가 앞섭니다.</li>
   <li><strong>발볼</strong>: 토박스 표준 + <strong>와이드 옵션 제공</strong>(카야노 전통)이라 발볼 넓은 한국 러너도 대응 가능. 평발 적합성은 최상위급입니다.</li>
   <li><strong>경쟁 안정화</strong>: 부드러운 안정 + 통기성을 원하면 <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>, 가벼운 안정화는 <a href="/shoes/new-balance-860-v15">뉴발란스 860 v15</a>도 함께 비교해 보세요.</li>
 </ul>

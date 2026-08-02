@@ -7539,7 +7539,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr>
       <td><a href="/shoes/asics-gel-kayano-33"><strong>Kayano 33</strong></a></td>
-      <td>209,000원</td>
+      <td>199,000원</td>
       <td>298g</td>
       <td>FLUIDSUPPORT + 듀얼 폼, 부드러운 안정성</td>
     </tr>
