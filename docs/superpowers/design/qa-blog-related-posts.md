@@ -50,7 +50,7 @@
 | 768 | 2열 × 3줄 | `356px 356px` | 행 3개, 열 2개 | `scrollW 768 = clientW 768` → false | ✅ |
 | 390 | 1열 × 6줄 | `358px` | 행 6개, 열 1개 | `scrollW 390 = clientW 390` → false | ✅ |
 
-전 폭에서 `horizScroll: false`. 스크린샷은 `/private/tmp/claude-501/.../scratchpad/qa-screenshots/related-{1440,768,390}.png`에 저장(레포 밖, gitignore된 `.playwright-mcp/`를 거쳐 이동).
+전 폭에서 `horizScroll: false`. 스크린샷 증적은 세션 임시 디렉토리에만 저장되어 보존되지 않는다 — 수치는 위 표가 기준이다.
 
 ## 4. 정적 HTML 링크
 
@@ -67,7 +67,7 @@ grep -o 'href="/blog/[^"]*"' out/blog/asics-gel-kayano-33-review.html | sort -u 
 npm run build 2>&1 → wall time 47.45s (136.89s user, 20.88s system, 332% cpu)
 ```
 
-Task 2가 측정한 48.13s(`.superpowers/sdd/2026-08-02-blog-related-posts/task-2-report.md`)와 0.7초 차이로 사실상 동일 — `getRelatedIndex()`가 `buildIndex(blogPosts)`를 프로세스당 1회만 실행하는 lazy-singleton 메모이즈가 빌드에서도 그대로 작동하고 있다는 정황이 이어서 확인된다. 221페이지(신발 122 + 블로그 221 + 기타)를 빌드하며 새로운 병목이 생기지 않았다.
+Task 2가 측정한 48.13s(`.superpowers/sdd/2026-08-02-blog-related-posts/task-2-report.md`)와 0.7초 차이로 사실상 동일 — `getRelatedIndex()`가 `buildIndex(blogPosts)`를 프로세스당 1회만 실행하는 lazy-singleton 메모이즈가 빌드에서도 그대로 작동하고 있다는 정황이 이어서 확인된다. 블로그 221편을 포함한 전체 SSG 빌드에서 새로운 병목이 생기지 않았다.
 
 ## 완료 조건 대조 (계획 문서 9개 항목)
 
