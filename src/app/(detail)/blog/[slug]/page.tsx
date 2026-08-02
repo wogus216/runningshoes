@@ -225,14 +225,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
         {/* 히어로 이미지 */}
         {post.thumbnail && (
-          <div className="relative -mx-4 mb-10 aspect-[21/9] overflow-hidden rounded-[4px] sm:-mx-0">
+          <div className="relative -mx-4 mb-10 aspect-[1200/630] overflow-hidden rounded-[4px] sm:-mx-0">
             <img
               src={img(post.thumbnail)}
               alt={post.title}
               className="h-full w-full object-cover"
               style={{ margin: 0, borderRadius: '28px', boxShadow: 'none' }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-[4px]" />
           </div>
         )}
 

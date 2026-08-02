@@ -20,7 +20,7 @@ export function BlogCard({ post }: BlogCardProps) {
     <Link href={`/blog/${post.slug}`} className="group block">
       <article className="flex h-full flex-col overflow-hidden rounded-[4px] border border-border bg-background transition-colors duration-200 hover:bg-[var(--accent-soft)]">
         {thumbnail ? (
-          <div className="relative aspect-[16/9] overflow-hidden bg-gray-100">
+          <div className="relative aspect-[1200/630] overflow-hidden bg-gray-100">
             <div className="absolute inset-x-0 top-0 z-10 h-1.5 bg-[var(--accent)]" />
             <Image
               src={img(thumbnail)}
@@ -31,12 +31,9 @@ export function BlogCard({ post }: BlogCardProps) {
               loading="lazy"
               unoptimized
             />
-            <div className="absolute left-4 top-4 rounded-full bg-white/88 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-sky-700 backdrop-blur">
-              {categoryLabels[post.category]}
-            </div>
           </div>
         ) : (
-          <div className="flex aspect-[16/9] items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200">
+          <div className="flex aspect-[1200/630] items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200">
             <span className="text-4xl text-stone-400">
               {categoryLabels[post.category]}
             </span>
@@ -45,7 +42,13 @@ export function BlogCard({ post }: BlogCardProps) {
 
         <div className="flex flex-1 flex-col p-5">
           <div className="mb-3 flex items-center justify-between gap-3 font-mono text-xs tabular-nums text-slate-500">
-            <span>{publishDate}</span>
+            <span className="flex items-center gap-2">
+              <span className="font-sans font-semibold text-[var(--signal-dark)]">
+                {categoryLabels[post.category]}
+              </span>
+              <span aria-hidden="true">·</span>
+              <span>{publishDate}</span>
+            </span>
             <span>{post.readingTime}분 읽기</span>
           </div>
 

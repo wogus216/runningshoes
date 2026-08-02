@@ -15,14 +15,14 @@
 
 .leadImg {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 1200/630;
   object-fit: cover;
   border: 1px solid var(--border);
 }
 /* 썸네일이 없는 글 — 비율만 지켜 자리를 잡는다(레이아웃이 흔들리지 않게) */
 .leadBlank {
   width: 100%;
-  aspect-ratio: 3/2;
+  aspect-ratio: 1200/630;
   border: 1px solid var(--border);
   background: var(--bg-warm-alt);
 }
