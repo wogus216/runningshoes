@@ -7040,7 +7040,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>330g</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 6</td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
-    <tr><td>가격</td><td>209,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
+    <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
   </tbody>
 </table>
 

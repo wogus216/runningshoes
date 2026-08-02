@@ -4638,7 +4638,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-06-01 (출시 완료)</strong></td><td>2년차 / 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원 추정</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>199,000원</strong></td><td>동일</td></tr>
     <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>190,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
     <tr><td><strong>무게 (US M9)</strong></td><td>300g</td><td>298g</td><td>-2g (사실상 동일)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
@@ -7449,7 +7449,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>공식명</strong></td><td>ASICS GEL-KAYANO 33</td></tr>
     <tr><td><strong>글로벌 출시</strong></td><td>2026년 6월 1일</td></tr>
     <tr><td><strong>글로벌 정가</strong></td><td>$170</td></tr>
-    <tr><td><strong>한국 정가 (예상)</strong></td><td>199,000원~209,000원 (32와 동일~+1만원)</td></tr>
+    <tr><td><strong>한국 정가</strong></td><td>199,000원 (32와 동일)</td></tr>
     <tr><td><strong>무게</strong></td><td>298g (남성 US 9) / 259g (여성 US 8)</td></tr>
     <tr><td><strong>스택</strong></td><td>힐 40mm / 전족부 32mm</td></tr>
     <tr><td><strong>드롭</strong></td><td>8mm</td></tr>
