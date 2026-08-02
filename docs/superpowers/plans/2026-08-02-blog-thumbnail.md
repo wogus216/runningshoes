@@ -852,27 +852,34 @@ done
 
 Step 1 에서 찾은 이탈 5건의 slug 를 아래 `EXTRA` 에 채운 뒤 실행한다.
 
-```bash
-SLUGS="puma-running-shoes-lineup-tier-guide-2026 puma-deviate-nitro-3-vs-4-comparison \
-new-balance-sc-rebel-preview-2026 stability-shoes-self-diagnosis-fit-guide-2026 \
-brooks-ghost-max-4-hyperion-elite-6-preview-2026 wide-feet-running-shoes-korea \
-asics-running-shoes-lineup-tier-guide-2026 new-balance-running-shoes-lineup-tier-guide-2026 \
-2026-hyundai-forest-run-september hot-weather-summer-running-safety-guide-korea \
-nsm-norwegian-singles-method-training nike-vaporfly-4-vs-alphafly-3-comparison \
-running-shoe-trends-2026-eva-replacement running-shoes-recommend-by-price-2026 \
-tokyo-marathon-2027-registration-guide adidas-running-shoes-lineup-tier-guide-2026 \
-nike-pegasus-42-vs-asics-novablast-6-daily-2026 plantar-fasciitis-insoles-guide-2026 \
-mizuno-neo-vista-3-review-2026"
+> ⚠️ **이 셸은 zsh 다.** 따옴표 없는 `$VAR` 는 **단어 분리되지 않는다** — `$SLUGS` 로 넘기면
+> 30개 slug 가 통째로 인자 하나가 되어 "포스트를 못 찾음" 한 줄만 뜬다(실제로 겪었다).
+> **반드시 배열로 선언하고 `"${SLUGS[@]}"` 로 전개한다.**
 
-EXTRA=""   # ← Step 1 이 출력한 이탈 5건의 slug 를 공백으로 구분해 넣는다
+```bash
+SLUGS=(puma-running-shoes-lineup-tier-guide-2026 puma-deviate-nitro-3-vs-4-comparison
+new-balance-sc-rebel-preview-2026 stability-shoes-self-diagnosis-fit-guide-2026
+brooks-ghost-max-4-hyperion-elite-6-preview-2026 wide-feet-running-shoes-korea
+asics-running-shoes-lineup-tier-guide-2026 new-balance-running-shoes-lineup-tier-guide-2026
+2026-hyundai-forest-run-september hot-weather-summer-running-safety-guide-korea
+nsm-norwegian-singles-method-training nike-vaporfly-4-vs-alphafly-3-comparison
+running-shoe-trends-2026-eva-replacement running-shoes-recommend-by-price-2026
+tokyo-marathon-2027-registration-guide adidas-running-shoes-lineup-tier-guide-2026
+nike-pegasus-42-vs-asics-novablast-6-daily-2026 plantar-fasciitis-insoles-guide-2026
+mizuno-neo-vista-3-review-2026)
+
+EXTRA=()   # ← Step 1 이 출력한 이탈 5건의 slug 를 배열 원소로 넣는다
+
+ALL=("${SLUGS[@]}" "${EXTRA[@]}")
+echo "대상 ${#ALL[@]}편"
 
 mkdir -p /tmp/thumb-backup-t4
-for s in $SLUGS $EXTRA; do cp "public/images/blog/$s.webp" /tmp/thumb-backup-t4/ 2>/dev/null; done
+for s in "${ALL[@]}"; do cp "public/images/blog/$s.webp" /tmp/thumb-backup-t4/ 2>/dev/null; done
 ls /tmp/thumb-backup-t4 | wc -l
 ```
 
 ```bash
-npx tsx scripts/thumbnail/render.ts --dry $SLUGS $EXTRA
+npx tsx scripts/thumbnail/render.ts --dry "${ALL[@]}"
 ```
 
 Task 3 Step 2 와 같은 기준으로 어색한 문구를 `OVERRIDES` 에 적는다.
@@ -880,7 +887,7 @@ Task 3 Step 2 와 같은 기준으로 어색한 문구를 `OVERRIDES` 에 적는
 - [ ] **Step 3: 생성 + 검수**
 
 ```bash
-npx tsx scripts/thumbnail/render.ts $SLUGS $EXTRA
+npx tsx scripts/thumbnail/render.ts "${ALL[@]}"
 ```
 
 Task 3 Step 4 와 같은 기준으로 전량 육안 검수한다. 비율 이탈 5건은 **1200×630이 됐는지 반드시 확인한다** — 이게 이 태스크의 핵심이다.
