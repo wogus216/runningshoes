@@ -21,7 +21,7 @@ export const posts_2026_04: BlogPost[] = [
 
 <figure class="my-8">
   <img
-    src="/images/blog/running-shoe-terminology-guide.webp"
+    src="/images/blog/running-shoe-terminology-guide-diagram.webp"
     alt="러닝화 용어 총정리 — 미드솔·아웃솔·어퍼·인솔 구조 설명"
     class="w-full rounded-2xl"
     loading="lazy"

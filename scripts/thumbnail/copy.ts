@@ -99,4 +99,134 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   // '2026-mudo-run-gyeongju' 는 의도적으로 미등록 — 본문이 "종목·참가비·접수 일정·접수처
   // 모두 미발표"라고 명시한다(posts/2026-07.ts line 2603). 검증 가능한 수치가 없어 data 를
   // 비운다(기본값 '' 유지). 규칙선·데이터 줄이 통째로 사라진다.
+
+  // --- Task 4 (나머지 19편 + 비율 이탈 3편) ---
+
+  // 출처: posts/2026-06.ts 본문 표 — "9종"(line 2862/2864), 벨로시티 나이트로4 17.9만(line 2871),
+  // 패스트알 엘리트3 37.9만(line 2879). 라인업 종수·가격 범위는 제목·부제에 없다.
+  'puma-running-shoes-lineup-tier-guide-2026': {
+    data: '9종 · 17.9만~37.9만원',
+  },
+  // 원제목 세 번째 조각(카드 미노출) "와이드 옵션과 800km 내구성으로 갈아탄 가성비 카본
+  // 슈퍼트레이너" 대신, 부제(450km)와 겹치지 않는 무게·드롭 변화로 데이터 줄 구성.
+  // 출처: posts/2026-06.ts 본문 표 — 무게 268→250g(line 6090), 드롭 10→8mm(line 6093).
+  'puma-deviate-nitro-3-vs-4-comparison': {
+    data: '268→250g · 드롭 10→8mm',
+  },
+  // 출처: posts/2026-07.ts 스펙 표 — 무게 218g(line 1774), 스택 40/36mm(line 1775),
+  // 드롭 4mm(line 1776). 제목·부제(RTR 점수·8월 출시)엔 없는 실측 스펙.
+  'new-balance-sc-rebel-preview-2026': {
+    data: '218g · 스택 40/36mm · 드롭 4mm',
+  },
+  // 출처: posts/2026-06.ts 발볼 옵션 표 — 뉴발 860 V14 "Narrow / 표준 / 2E / X-Wide"
+  // 4단계(line 4150), FAQ에서도 동일 사실 확인(line 4073). 제목·부제는 "와이드 옵션
+  // 총정리"라고만 하고 구체 단계 수는 말하지 않는다.
+  'stability-shoes-self-diagnosis-fit-guide-2026': {
+    data: '860 V14 와이드 4단계',
+  },
+  // 출처: posts/2026-07.ts 본문 — 고스트맥스4 $165 / 하이페리온엘리트6 $275 동시 출시
+  // (line 2811), 하이페리온엘리트6 BITR A Tier(line 2853). 두 모델의 가격은 제목·부제에 없다.
+  'brooks-ghost-max-4-hyperion-elite-6-preview-2026': {
+    data: '$165 · $275 · BITR A Tier',
+  },
+  // 출처: posts/2025-01.ts 본문 — "RunRepeat이 700개 이상의 러닝화를 실측한 결과,
+  // 평균 토박스 너비는 73.3mm"(line 113). 제목(TOP 10)엔 없는 근거 수치.
+  'wide-feet-running-shoes-korea': {
+    data: 'RunRepeat 700종 실측 · 평균 73.3mm',
+  },
+  // 출처: posts/2026-06.ts 본문 표 — "15종"(line 3633/3635), 젤 벤처10 8.9만(line 3642),
+  // 메타스피드 레이 39.9만(line 3656).
+  'asics-running-shoes-lineup-tier-guide-2026': {
+    data: '15종 · 8.9만~39.9만원',
+  },
+  // 출처: posts/2026-06.ts 본문 표 — "9종"(line 3958/3960), 860 V14 17.9만(line 3968),
+  // SC Elite V5 31.9만(line 3975).
+  'new-balance-running-shoes-lineup-tier-guide-2026': {
+    data: '9종 · 17.9만~31.9만원',
+  },
+  // 부제(여의도 10km·5만원·선착순 6,500명)에 없는 대회일·기부 규모로 구성.
+  // 출처: posts/2026-07.ts 본문 표 — 대회일 2026-09-12(토)(line 5151), 1인당 약 15그루
+  // (기존 1그루에서 확대, line 5163).
+  '2026-hyundai-forest-run-september': {
+    data: '대회일 9/12(토) · 1인당 약 15그루',
+  },
+  // 출처: posts/2026-06.ts 본문 — "위험 단계(통상 WBGT 31°C 이상)"(line 9833),
+  // "시간당 0.5~1L 수분 + 전해질"(line 9816). 제목·부제("몇 도부터 위험할까")는
+  // 질문만 던지고 답(임계값)은 없어 데이터 줄로 보완.
+  'hot-weather-summer-running-safety-guide-korea': {
+    data: 'WBGT 31°C↑ 위험 · 시간당 0.5~1L',
+  },
+  // 출처: posts/2026-05.ts 본문 표 — Sub-T 강도 80~88% HRmax(line 5873, 본문 재확인
+  // line 5952), 주간 빈도 2~3회(line 5856).
+  'nsm-norwegian-singles-method-training': {
+    data: '심박 80~88% · 주 2~3회',
+  },
+  // 부제(30만원 vs 35만원)와 겹치지 않게 에너지 리턴·무게차로 구성.
+  // 출처: posts/2026-05.ts 본문 — 베이퍼 78% vs 알파 74.9% 에너지 리턴 + 무게차 -35g
+  // (line 4166), 표에서 78%/74.9% 재확인(line 4195).
+  'nike-vaporfly-4-vs-alphafly-3-comparison': {
+    data: '에너지리턴 78% vs 74.9% · -35g',
+  },
+  // 원제목(posts/2026-02.ts line 7)에 | 나 — 구분자가 없어 자동 파생 시 78자 제목이
+  // 통째로 head 가 된다(2줄 클램프 초과, 뒷부분 잘림). 본문 h2 "TREND 1..." 구조를
+  // 반영해 짧은 제목/부제로 축약.
+  'running-shoe-trends-2026-eva-replacement': {
+    title: '2026 러닝화 3대 트렌드',
+    subtitle: 'EVA가 사라지는 이유',
+    // 출처: posts/2026-02.ts 본문 — "2026년 1조 원 돌파 예상"(line 208), "러닝 인구
+    // 1,000만 명 시대"(line 202). 축약 제목엔 없는 시장 규모 수치.
+    data: '시장 1조 원 돌파 예상 · 러닝인구 1,000만',
+  },
+  // 가격대별 4단계 로드맵 글 — 개별 모델 스펙을 하나 뽑으면 전체 4단계를 대표하지
+  // 못해 자의적이다. 검증 가능하면서 제목·부제와 겹치지 않는 전역 수치가 없어 data 비움.
+  'running-shoes-recommend-by-price-2026': {},
+  // 부제(자선·추첨·OTG 3가지 길)에 없는, 원제목 세 번째 조각(카드 미노출)의
+  // "비행 2시간·시차 0"을 재사용 + 20주년 사실 추가.
+  // 출처: posts/2026-06.ts 본문 — 인천→하네다 약 2시간·시차 0(line 5350, 재확인 5358),
+  // "2027년은 20주년 대회"(line 5358).
+  'tokyo-marathon-2027-registration-guide': {
+    data: '인천~하네다 2시간 · 시차 0 · 20주년',
+  },
+  // 출처: posts/2026-06.ts 본문 표 — "8종"(line 3168/3170), 슈퍼노바 라이즈2 14.9만
+  // (line 3177), 아디오스 프로4 29.9만(line 3184).
+  'adidas-running-shoes-lineup-tier-guide-2026': {
+    data: '8종 · 14.9만~29.9만원',
+  },
+  // 출처: posts/2026-07.ts 스펙 비교 표 — 무게 286g vs 249g(line 1504),
+  // 힐 스택 37mm vs 39.2mm(line 1505). 제목·부제("검증된 안정 vs 경쾌한 고스택")는
+  // 정성적 표현뿐이라 실측 수치로 보완.
+  'nike-pegasus-42-vs-asics-novablast-6-daily-2026': {
+    data: '286g vs 249g · 37 vs 39.2mm',
+  },
+  // 출처: posts/2026-07.ts 본문 — 기성 2~5만원(line 4984), 맞춤 15~30만원+(line 5019).
+  // 제목·부제는 "기성 vs 맞춤" 구도만 말하고 가격 자체는 없다.
+  'plantar-fasciitis-insoles-guide-2026': {
+    data: '기성 2~5만원 vs 맞춤 15~30만원',
+  },
+  // 출처: posts/2026-07.ts 스펙 표 — 가격 219,000원(line 1144, 신발 DB
+  // shoes/mizuno/mizuno-neo-vista-3.ts line 10과 일치), 무게 266g(line 1145, DB line 16과
+  // 일치), 에너지 리턴 57.7%/57.1%(line 1150). 부제에 이미 SA 167 이 있어 겹치지 않게
+  // 가격·무게·반발률로 구성.
+  'mizuno-neo-vista-3-review-2026': {
+    data: '219,000원 · 266g · 리턴 57%',
+  },
+  // 출처: posts/2026-04.ts 본문 표 — 대회 일시 2026-06-07(일)(line 190),
+  // 선예매 5월 7일(목) 오후 12시(line 208). 제목·부제("상암 10km 이벤트 총정리")와
+  // 겹치지 않는 개최일·예매 시각.
+  '2026-mudo-run-coupang-play': {
+    data: '2026.6.7(일) 개최 · 예매 5/7 정오',
+  },
+  // 출처: posts/2026-05.ts 본문 — "2025년 9,300명 역대 최다 참가"(line 11120).
+  // 제목·부제(접수 D-13·10월 10일 하프 코스)엔 없는 참가 규모.
+  '2026-gyeongpo-gangneung-marathon': {
+    data: '2025년 9,300명 역대 최다 참가',
+  },
+  // 본문·썸네일 이중 사용 이미지라 원본은 running-shoe-terminology-guide-diagram.webp 로
+  // 백업 후 본문 <img> 를 그쪽으로 재연결했다(posts/2026-04.ts line 24). 썸네일 슬롯만
+  // 새 카드 렌더로 교체.
+  // 출처: posts/2026-04.ts 본문 — "러닝화 주요 부위 4가지"(figcaption, line 29),
+  // "68mm 미만이면 와이드 버전"(line 102).
+  'running-shoe-terminology-guide': {
+    data: '핵심 부위 4가지 · 토박스 68mm↓ 와이드',
+  },
 };

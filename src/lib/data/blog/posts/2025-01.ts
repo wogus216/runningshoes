@@ -6,7 +6,7 @@ export const posts_2025_01: BlogPost[] = [
     slug: 'wide-feet-running-shoes-korea',
     title: '발볼 넓은 한국인을 위한 러닝화 추천 TOP 10',
     description: '한국인의 발이 서양인보다 넓다는 연구 결과와 RunRepeat 700개 신발 실측 데이터를 바탕으로 발볼 넓은 러너를 위한 러닝화를 추천합니다.',
-    thumbnail: 'https://images.unsplash.com/photo-1556906781-9a412961c28c?auto=format&fit=crop&w=1600&q=80',
+    thumbnail: '/images/blog/wide-feet-running-shoes-korea.webp',
     content: `
 <figure class="my-8 -mx-4 sm:mx-0">
   <img
