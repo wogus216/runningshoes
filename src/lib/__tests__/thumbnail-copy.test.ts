@@ -32,14 +32,14 @@ describe('splitTitle', () => {
 });
 
 describe('deriveCopy', () => {
-  it('킥커는 카테고리 한글 라벨이다', () => {
+  it('킥커는 카테고리를 자동 파생하지 않는다 — 카드 하단·상세 헤더와 중복이라 항상 빈 문자열', () => {
     const c = deriveCopy({ title: 'A | B — C', category: 'review' });
-    expect(c.kicker).toBe('리뷰');
+    expect(c.kicker).toBe('');
     expect(c.title).toBe('A');
     expect(c.subtitle).toBe('B');
   });
 
-  it('모르는 카테고리는 빈 킥커로 두고 죽지 않는다', () => {
+  it('어떤 카테고리를 넣어도 킥커는 빈 문자열이다', () => {
     expect(deriveCopy({ title: 'A | B', category: 'nope' }).kicker).toBe('');
   });
 

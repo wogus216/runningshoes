@@ -6,8 +6,12 @@
  * 파싱이 어색한 글은 OVERRIDES 로 손으로 고친다 — 자동 파생은 초안일 뿐이다.
  */
 
-import { categoryLabels, type BlogCategory } from '../../src/types/blog';
-
+/**
+ * `kicker` 는 타입에 남겨 둔다 — 자동 파생하지 않지만(카드 하단에 카테고리가 이미
+ * "리뷰 · 2026년 6월 5일"로 표기되고, 상세 페이지도 헤더/히어로에서 같은 정보를
+ * 반복해 썸네일 안 킥커 텍스트가 중복이었다), OVERRIDES 로 "▬ 소재 해설 · 2편" 같은
+ * 편집 킥커를 넣을 수 있는 자리는 유지한다.
+ */
 export type ThumbCopy = { kicker: string; title: string; subtitle: string; data: string };
 
 /** `|` 와 `—` 중 먼저 나오는 것을 첫 구분자로 삼는다. */
@@ -22,7 +26,7 @@ export function splitTitle(raw: string): { head: string; rest: string } {
 export function deriveCopy(post: { title: string; category: string }): ThumbCopy {
   const { head, rest } = splitTitle(post.title);
   return {
-    kicker: categoryLabels[post.category as BlogCategory] ?? '',
+    kicker: '',
     title: head,
     subtitle: rest,
     data: '',
