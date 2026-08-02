@@ -37,4 +37,16 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * 자동 파생이 어색한 글의 수동 교정.
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
-export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {};
+export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 원제목 "노바블라스트 5 vs 6 | 세대 비교 — 전족 FF Turbo Squared로 뭐가 달라졌나, ..."
+  // 자동 파생 부제 "세대 비교"는 정보가 없다. 다음 조각(변경점 핵심)으로 교체.
+  'asics-novablast-5-vs-6-comparison-2026': {
+    subtitle: '전족 FF Turbo Squared로 뭐가 달라졌나',
+  },
+  // 원제목 "... | 7/1 출시 — 폼·스택 그대로, 어퍼만 바뀐 신형 살 이유 있나"
+  // 자동 파생 부제 "7/1 출시"는 출시일이 이미 지나(오늘 2026-08-02) 낡은 정보다.
+  // 다음 조각(비교 글의 실제 결론)으로 교체.
+  'hoka-clifton-11-vs-10-comparison': {
+    subtitle: '폼·스택 그대로, 어퍼만 바뀐 신형 살 이유 있나',
+  },
+};
