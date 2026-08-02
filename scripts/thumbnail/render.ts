@@ -24,35 +24,47 @@ function esc(s: string): string {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
 
+export type PostMeta = { title: string; category: string };
+
 /**
- * 포스트 파일들에서 slug → {title, category} 를 긁는다.
+ * 포스트 파일 텍스트 하나에서 slug → {title, category} 를 긁는다. 순수 함수 —
+ * 파일시스템을 안 타므로 fixture 문자열로 바로 단위 테스트할 수 있다.
  *
  * `title`과 `category` 사이에 수천 자짜리 `content` 템플릿 리터럴이 끼어 있어
  * 고정폭 근접 창으로는 못 찾는 글이 있다(예: content가 긴 글). 그래서 먼저
  * 각 포스트 객체의 경계(다음 `slug:` 등장 전까지)로 블록을 자르고, 그 블록
  * 안에서 title/category를 각각 독립적으로 찾는다 — 필드 간 거리에 상관없다.
  */
-function loadPosts(): Map<string, { title: string; category: string }> {
-  const map = new Map<string, { title: string; category: string }>();
+export function parsePosts(txt: string): Map<string, PostMeta> {
+  const map = new Map<string, PostMeta>();
+  const slugRe = /slug:\s*'([^']+)'/g;
+  const hits: { slug: string; index: number }[] = [];
+  let sm;
+  while ((sm = slugRe.exec(txt))) {
+    hits.push({ slug: sm[1], index: sm.index });
+  }
+  for (let i = 0; i < hits.length; i++) {
+    const start = hits[i].index;
+    const end = i + 1 < hits.length ? hits[i + 1].index : txt.length;
+    const block = txt.slice(start, end);
+    const titleMatch = block.match(/title:\s*'([^']*)'/);
+    const categoryMatch = block.match(/category:\s*'([^']+)'/);
+    if (!titleMatch || !categoryMatch) continue;
+    if (!map.has(hits[i].slug)) {
+      map.set(hits[i].slug, { title: titleMatch[1], category: categoryMatch[1] });
+    }
+  }
+  return map;
+}
+
+/** 포스트 파일들에서 slug → {title, category} 를 긁는다. 파일 I/O + parsePosts 병합. */
+function loadPosts(): Map<string, PostMeta> {
+  const map = new Map<string, PostMeta>();
   for (const f of readdirSync(POSTS_DIR).filter((n) => /^\d{4}-\d{2}\.ts$/.test(n))) {
     const txt = readFileSync(join(POSTS_DIR, f), 'utf8');
-    const slugRe = /slug:\s*'([^']+)'/g;
-    const hits: { slug: string; index: number }[] = [];
-    let sm;
-    while ((sm = slugRe.exec(txt))) {
-      hits.push({ slug: sm[1], index: sm.index });
-    }
-    for (let i = 0; i < hits.length; i++) {
-      const start = hits[i].index;
-      const end = i + 1 < hits.length ? hits[i + 1].index : txt.length;
-      const block = txt.slice(start, end);
-      const titleMatch = block.match(/title:\s*'([^']*)'/);
-      const categoryMatch = block.match(/category:\s*'([^']+)'/);
-      if (!titleMatch || !categoryMatch) continue;
-      if (!map.has(hits[i].slug)) {
-        map.set(hits[i].slug, { title: titleMatch[1], category: categoryMatch[1] });
-      }
-    }
+    parsePosts(txt).forEach((meta, slug) => {
+      if (!map.has(slug)) map.set(slug, meta);
+    });
   }
   return map;
 }
@@ -131,4 +143,9 @@ async function main() {
   console.log(`\n생성 ${done} / 실패 0`);
 }
 
-main().catch((e) => { console.error(e); process.exit(1); });
+// 직접 실행됐을 때만 돈다 — 테스트가 parsePosts 를 import 하면서 이 파일이
+// require 되는데, 그때 main()이 같이 돌면 인자 없음/process.exit 부작용이
+// 테스트 프로세스로 새어나간다.
+if (require.main === module) {
+  main().catch((e) => { console.error(e); process.exit(1); });
+}
