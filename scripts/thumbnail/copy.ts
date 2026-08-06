@@ -38,6 +38,12 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 본문 개요 표 — 종목 하프·10K, 정상가 70,000원,
+  // 얼리버드 65,000원(서울신문 회원 선착순 3,000명). 공식 홈페이지 2026-08-06 확인 기준.
+  'asics-go-free-run-2026': {
+    subtitle: '아식스가 이름을 건 여의도 하프 — 11월 21일(토)',
+    data: '하프·10K · 정상가 7만원 · 얼리버드 6.5만(선착순 3,000명)',
+  },
   // 원제목 "노바블라스트 5 vs 6 | 세대 비교 — 전족 FF Turbo Squared로 뭐가 달라졌나, ..."
   // 자동 파생 부제 "세대 비교"는 정보가 없다. 다음 조각(변경점 핵심)으로 교체.
   'asics-novablast-5-vs-6-comparison-2026': {

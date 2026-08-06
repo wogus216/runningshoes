@@ -136,6 +136,27 @@ export const novemberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'go-free-run-2026',
+    name: '2026 아식스 서울신문 고프리런 (ASICS SEOUL SHINMUN GO FREE RUN)',
+    date: '2026-11-21',
+    month: '11월',
+    location: '여의도공원 문화의마당 (서울 영등포구)',
+    region: '서울',
+    distances: ['하프', '10K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'http://gofree.seoul.co.kr/',
+    lastVerified: '2026-08-06',
+    description:
+      '서울신문 주최 가을 러닝 대회. 2025년(11/9, 하프·10K·5K)에 이어 2026년은 11월 21일(토)에 열리며, 올해부터 아식스가 타이틀 스폰서로 붙어 대회명 자체가 "ASICS SEOUL SHINMUN GO FREE RUN"이 됐습니다. 종목은 하프·10K이고 참가비는 정상가 각 7만원, 서울신문 회원가입 완료자 선착순 3,000명에게 얼리버드 6만 5천원이 적용됩니다(신청 시 서울신문 ID 필수 입력). 접수 시작일은 아직 공지되지 않았습니다(2026-08-06 확인 기준 홈페이지 정비 중 — 기념품 등 일부 항목은 작년 정보가 남아 있으니 접수 오픈 후 확정 요강을 확인하세요).',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 70000 },
+        { distance: '10K', fee: 70000 },
+      ],
+    },
+  },
+  {
     id: 'incheon-marathon-2026',
     name: '2026 인천마라톤',
     date: '2026-11-22',
