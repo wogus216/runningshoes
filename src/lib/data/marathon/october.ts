@@ -160,6 +160,29 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'kakao-friends-run-2026',
+    name: '카카오프렌즈 런 2026',
+    date: '2026-10-10',
+    month: '10월',
+    location: '탄천 일대 (경기 성남시)',
+    region: '경기',
+    distances: ['10K', '5K'],
+    status: '접수예정',
+    isMajor: false,
+    registrationStart: '2026-08-10',
+    registrationEnd: '2026-08-17',
+    lastVerified: '2026-08-06',
+    description:
+      '카카오가 처음 여는 1만 명 규모 러닝 페스티벌(슬로건 "Run Together, Be Friends"). 기록 경쟁 없는 펀 런 콘셉트로 5K·10K 두 종목이며, 참가비는 8만원이지만 ARC 협업 카카오프렌즈 러닝 의류 세트·완주 메달·협찬사 상품 패키지가 포함됩니다. 접수는 8월 10일~17일 공식 홈페이지와 카카오톡 선물하기 기획전에서 받고, 추첨으로 참가자를 선정해 8월 20일 발표합니다. 현장엔 약 30개 체험 부스와 카카오프렌즈 캐릭터 부스, 애프터 공연이 열리고, 현장에 못 가는 러너를 위한 버추얼 런(카카오맵·카카오같이가치 연계)도 운영됩니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 80000 },
+        { distance: '5K', fee: 80000 },
+      ],
+      expectedParticipants: 10000,
+    },
+  },
+  {
     id: 'seoul-race-2026',
     name: '2026 서울레이스 (SEOUL RACE)',
     date: '2026-10-11',

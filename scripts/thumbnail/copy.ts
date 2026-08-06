@@ -38,6 +38,12 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 본문 개요 표 — 종목 5K·10K, 참가비 8만원, 접수 8/10~17
+  // 추첨제·발표 8/20. 카카오 공식 보도자료(2026-08-04) 기준.
+  'kakao-friends-run-2026': {
+    subtitle: '카카오가 여는 탄천 1만 명 펀런 — 10월 10일(토)',
+    data: '5K·10K · 참가비 8만원 · 접수 8/10~17 추첨제',
+  },
   // 출처: posts/2026-08.ts 본문 개요 표 — 종목 하프·10K, 정상가 70,000원,
   // 얼리버드 65,000원(서울신문 회원 선착순 3,000명). 공식 홈페이지 2026-08-06 확인 기준.
   'asics-go-free-run-2026': {
