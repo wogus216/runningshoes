@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 본문 스펙 표 — RN 글로벌 출시 10/8·$150(외신 기준),
+  // Fly 2027년 4월. 나이키 공식 뉴스룸 2026-08-03 발표 기준.
+  'nike-hybrid-hyrox-shoes-2026': {
+    title: '나이키 하이브리드 RN·플라이',
+    subtitle: '나이키의 첫 하이록스 대응 신발 — 발표문엔 HYROX가 없다',
+    data: 'RN 10/8 글로벌 · $150 · 플라이 2027년 4월',
+  },
   // 출처: posts/2026-08.ts 본문 개요 표 — 종목 5K·10K, 참가비 8만원, 접수 8/10~17
   // 추첨제·발표 8/20. 카카오 공식 보도자료(2026-08-04) 기준.
   'kakao-friends-run-2026': {
