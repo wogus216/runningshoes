@@ -72,7 +72,13 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   };
   const footFit = shoe.koreanFootFit?.toBoxWidth ? footWidthMap[shoe.koreanFootFit.toBoxWidth] : null;
 
+  // 한글 모델명을 설명문 맨 앞에 — SERP 볼드 매칭용.
+  // shoe.description은 "Nike의 대표 맥스 쿠션..."처럼 한글 모델명을 담지 않아, 122종 전부
+  // meta description에 모델명이 빠져 있었다 (2026-08-07 렌더 HTML 전수 확인: h1 in desc = 0/11).
+  // "보메로18"로 검색해도 SERP 설명문에서 강조가 안 돼 CTR 손실. 160자 초과분은 뒤쪽 공통 문구가
+  // 잘리는데, 그건 전 페이지 동일 카피라 모델명을 앞세우는 쪽이 이득이다.
   const descriptionParts = [
+    `${brandLabel} ${shoe.name}`,
     shoe.description || `${shoe.brand} ${shoe.name} 후기`,
     weight ? `무게 ${weight}g` : null,
     footFit,
