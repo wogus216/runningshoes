@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준) — 에너지 리턴 힐 54.4%→66.1%,
+  // 저온 경화율 21%→7%, 종합 79점→90점. 가격은 On 코리아 공식 259,000원으로 양쪽 동일.
+  'on-cloudmonster-hyper-vs-3-hyper-comparison-2026': {
+    title: '클라우드몬스터 하이퍼 vs 3 하이퍼',
+    subtitle: '같은 25.9만원, 6g 무거워진 신형이 앞선 이유',
+    data: '에너지 리턴 54%→66% · 저온 경화 21%→7% · 랩 79→90',
+  },
   // 출처: posts/2026-08.ts 본문 스펙 표 — RN 글로벌 출시 10/8·$150(외신 기준),
   // Fly 2027년 4월. 나이키 공식 뉴스룸 2026-08-03 발표 기준.
   'nike-hybrid-hyrox-shoes-2026': {

@@ -2,6 +2,133 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_08: BlogPost[] = [
   {
+    id: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026',
+    slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026',
+    title: 'On 클라우드몬스터 하이퍼 vs 3 하이퍼 차이 | 같은 25.9만원인데 6g 무거워진 신형이 압도한 이유 — 에너지 리턴 54%→66%, 랩 79점→90점',
+    description:
+      'On 클라우드몬스터 하이퍼(구형)와 클라우드몬스터 3 하이퍼는 둘 다 259,000원, 둘 다 무플레이트, 둘 다 450km입니다. 같은 US M9 실측으로 구형이 6g 가볍지만, 에너지 리턴 54.4%→66.1%, 저온 경화율 21%→7%, 힐 패딩 내구성 1/5→5/5로 신형이 거의 전 항목에서 앞섭니다. RunRepeat 종합은 79점 대 90점. 다만 3 하이퍼는 On 공식 드롭 6mm와 달리 실측이 9.2mm라 로우드롭을 기대하고 사면 안 됩니다. 겨울 훈련과 발볼 관점까지 한국 러너 기준으로 정리했습니다.',
+    thumbnail: '/images/blog/on-cloudmonster-hyper-vs-3-hyper-comparison-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-07',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['클라우드몬스터 하이퍼', '클라우드몬스터 3 하이퍼', '온러닝', 'On 러닝화', '슈퍼트레이너', '러닝화 비교', '무플레이트', '클라우드몬스터 차이'],
+    faqs: [
+      {
+        question: '클라우드몬스터 하이퍼와 3 하이퍼, 뭐가 다른가요?',
+        answer:
+          '가격(둘 다 259,000원), 플레이트 유무(둘 다 없음), 내구성(둘 다 450km)은 같습니다. 갈리는 건 폼 성능입니다. RunRepeat 실측 기준 에너지 리턴이 힐 54.4%에서 66.1%로 11.7%p 올랐고, 저온에서 폼이 굳는 정도(경화율)가 21%에서 7%로 3분의 1이 됐습니다. 힐 패딩 내구성은 1/5에서 5/5로 바뀌었고요. 종합 점수는 RunRepeat 79점 대 90점, Believe in the Run 등급은 C Tier 대 A−입니다. 반대로 구형이 나은 건 무게(258g 대 264g)와 통기성(3/5 대 2/5) 두 가지뿐입니다.',
+      },
+      {
+        question: '"하이퍼"는 더 가벼워진다는 뜻 아닌가요?',
+        answer:
+          'On의 하이퍼 라인은 경량화 라벨이 아니라 Pebax 계열 Helion HF 폼을 얹은 상위 사양을 뜻합니다. 실제로 세대가 올라가며 무게는 258g에서 264g으로 6g 늘었고, 스택은 힐 39.7mm에서 43.4mm로 3.7mm 높아졌습니다(모두 RunRepeat 실측). 가벼워진 게 아니라 폼이 더 두꺼워지고 좋아진 쪽입니다. 참고로 일반 클라우드몬스터 3에는 TPU/나일론 Speedboard가 들어가지만, 하이퍼 라인은 구형·신형 모두 플레이트가 없습니다.',
+      },
+      {
+        question: '3 하이퍼 드롭이 6mm라던데 맞나요?',
+        answer:
+          'On 공식 발표는 6mm지만 RunRepeat 랩 실측은 9.2mm입니다. RunRepeat은 원문에서 "On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"라고 적었습니다. 3mm 넘는 차이라 로우드롭 신발을 찾는 러너라면 주의해야 합니다. 아킬레스나 종아리에 부담이 있어 일부러 낮은 드롭을 고르는 경우라면 이 신발은 기대와 다를 수 있습니다. 참고로 구형 하이퍼는 공식 6mm에 실측 6.7mm로 오차가 작습니다.',
+      },
+      {
+        question: '발볼 넓은데 괜찮을까요?',
+        answer:
+          '두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않기 때문에 발볼이 넓은 편이라면 반드시 매장 착화를 권합니다. 토박스 수치는 RunRepeat이 세대별로 측정 방식을 바꿔서(구형은 최대폭·엄지폭 2개 지점, 신형은 단일 폭) 두 세대를 숫자로 직접 비교할 수 없습니다. 서로 다른 기준의 값을 나란히 놓고 "몇 mm 넓어졌다"고 말하는 건 정확하지 않습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>같은 값, 다른 물건</strong> — 둘 다 259,000원·무플레이트·450km인데, 에너지 리턴 54.4%→66.1%, RunRepeat 종합 79점→90점으로 신형이 앞섭니다.</li>
+    <li><strong>구형의 우위는 딱 둘</strong> — 무게 6g(258g 대 264g)과 통기성 한 단계(3/5 대 2/5). 대신 힐 패딩 내구성이 1/5입니다.</li>
+    <li><strong>한국 러너 핵심</strong> — 저온 경화율이 21%에서 7%로 줄어 겨울 훈련에서 차이가 큽니다. 단 3 하이퍼는 공식 6mm와 달리 <strong>실측 드롭이 9.2mm</strong>입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <p><strong>한 줄 결론</strong> — 같은 25만 9천 원이라면 <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>가 합리적입니다. 6g을 내주고 반발·겨울 성능·내구성을 모두 가져오는 교환이라, 성능만 놓고 보면 구형을 고를 이유를 찾기 어렵습니다. <a href="/shoes/on-cloudmonster-hyper">구형 하이퍼</a>는 한여름 위주로 달리면서 1g이라도 가벼운 쪽을 원할 때만 성립합니다. 개별 심층 리뷰는 <a href="/blog/on-cloudmonster-3-hyper-review-2026">클라우드몬스터 3 하이퍼 리뷰</a>에 정리돼 있습니다.</p>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>클라우드몬스터 하이퍼 (구형)</th><th>클라우드몬스터 3 하이퍼</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>가격</td><td>259,000원</td><td>259,000원</td></tr>
+    <tr><td>무게 (US M9 실측)</td><td><strong>258g</strong></td><td>264g</td></tr>
+    <tr><td>스택 (실측)</td><td>힐 39.7 / 전족 33.0mm</td><td><strong>힐 43.4 / 전족 34.2mm</strong></td></tr>
+    <tr><td>드롭</td><td>공식 6mm / 실측 6.7mm</td><td>공식 6mm / <strong>실측 9.2mm</strong></td></tr>
+    <tr><td>미드솔</td><td>Helion HF (Pebax) + CloudTec</td><td>Helion HF + Helion 이중 + CloudTec</td></tr>
+    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
+    <tr><td>충격 흡수 SA (힐/전족)</td><td>138 / 118</td><td>139 / 122</td></tr>
+    <tr><td>에너지 리턴 (힐/전족)</td><td>54.4% / 60.2%</td><td><strong>66.1% / 69.4%</strong></td></tr>
+    <tr><td>저온 경화율</td><td>21%</td><td><strong>7%</strong></td></tr>
+    <tr><td>통기성</td><td><strong>3/5</strong></td><td>2/5</td></tr>
+    <tr><td>유연성</td><td><strong>15.8N</strong></td><td>21.2N</td></tr>
+    <tr><td>힐 패딩 내구성</td><td>1/5</td><td><strong>5/5</strong></td></tr>
+    <tr><td>아웃솔 마모</td><td>0.6mm</td><td><strong>0.5mm</strong></td></tr>
+    <tr><td>내구성 / km당 비용</td><td>450km / 약 576원</td><td>450km / 약 576원</td></tr>
+    <tr><td>랩 종합 점수</td><td>RunRepeat 79 · BITR C Tier</td><td><strong>RunRepeat 90 · BITR A−</strong></td></tr>
+    <tr><td>와이드 옵션</td><td>없음</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준), Believe in the Run, Doctors of Running. 가격은 On 코리아 공식 기준. 토박스 너비는 RunRepeat이 세대별로 측정 방식을 바꿔(구형 2지점, 신형 단일 폭) 직접 비교가 불가능하므로 표에서 제외했습니다.</small></p>
+
+<h2>"하이퍼"는 경량화 라벨이 아니다</h2>
+
+<p>이름만 보면 하이퍼가 붙을수록 가벼워질 것 같지만 실제로는 반대입니다. 세대가 올라가며 무게는 258g에서 264g으로 <strong>6g 늘었고</strong>, 힐 스택은 39.7mm에서 43.4mm로 <strong>3.7mm 높아졌습니다</strong>. On의 하이퍼는 경량화 표시가 아니라 Pebax 계열 Helion HF 폼을 얹은 상위 사양을 뜻하는 이름입니다.</p>
+
+<p>여기서 자주 헷갈리는 지점이 하나 더 있습니다. 일반 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>에는 TPU/나일론 Speedboard가 들어가지만, <strong>하이퍼 라인은 구형과 신형 모두 플레이트가 없습니다</strong>. 하이퍼가 상위 사양인데 플레이트는 빠지는 구성이라, 딱딱한 전환을 기대하고 고르면 예상과 다를 수 있습니다.</p>
+
+<h2>클라우드몬스터 하이퍼 (구형) — 가볍고 시원하지만 폼이 낡았다</h2>
+
+<p>258g은 지금 기준으로도 가벼운 축입니다. 통기성 3/5로 신형보다 한 단계 시원하고, 유연성 15.8N으로 발이 접히는 느낌도 자연스럽습니다. 한여름 한강·도림천 러닝에서 발이 덜 답답한 쪽은 이쪽입니다.</p>
+
+<p>문제는 폼 성능입니다. 에너지 리턴이 힐 54.4%로 25만 원대 신발치고 낮고, 저온 경화율 21%는 겨울에 폼이 눈에 띄게 굳는다는 뜻입니다. 특히 <strong>힐 패딩 내구성이 1/5</strong>로 측정됐는데, 이는 뒤꿈치 안쪽이 비교적 빨리 주저앉을 수 있다는 신호입니다. Believe in the Run은 디자인·가치·성능 전 항목에 C Tier를 매겼습니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 여름 위주로 달리고, 6g이라도 가벼운 쪽을 원하며, 뒤꿈치 착지가 많지 않은 러너.</p>
+
+<h2>클라우드몬스터 3 하이퍼 — 6g 내주고 거의 전부를 가져왔다</h2>
+
+<p>같은 값에 무게만 6g 늘었을 뿐, 나머지 지표가 전반적으로 올라갔습니다. 에너지 리턴은 힐 66.1%·전족 69.4%로 <strong>11.7%p 상승</strong>했고, 충격 흡수 SA도 힐 139로 소폭 개선됐습니다. 상부 Helion HF에 하부 Helion을 더한 이중 밀도 구성으로 바뀐 결과입니다.</p>
+
+<p>내구성 쪽 변화가 더 큽니다. 구형에서 1/5였던 힐 패딩 내구성이 <strong>5/5</strong>가 됐고, 아웃솔 마모도 0.6mm에서 0.5mm로 줄었습니다. 같은 450km 수명 표기라도 실제 형태 유지력은 다르게 봐야 합니다. RunRepeat 종합 90점, Believe in the Run과 Doctors of Running 모두 A− 평가입니다.</p>
+
+<p>양보한 건 통기성(2/5)과 유연성(21.2N)입니다. 폼이 두꺼워지고 단단해진 대가로 한여름에는 구형보다 덥고, 발이 접히는 느낌은 덜합니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 마라톤 훈련처럼 장거리를 반복하는 러너, 겨울에도 주 3회 이상 달리는 러너, 카본 없이 훈련 강도를 올리고 싶은 러너.</p>
+
+<h2>주의 — 공식 드롭 6mm, 실측은 9.2mm</h2>
+
+<p>3 하이퍼에서 반드시 확인해야 할 지점입니다. On 공식 스펙은 드롭 6mm인데, RunRepeat 랩 실측은 <strong>9.2mm</strong>로 나왔습니다. RunRepeat은 원문에 <em>"On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"</em>라고 적었습니다.</p>
+
+<p>3mm 넘는 차이는 무시할 수준이 아닙니다. 아킬레스나 종아리 부담 때문에 일부러 낮은 드롭을 고르는 러너라면, 이 신발은 스펙 표를 보고 기대한 것과 다르게 느껴질 수 있습니다. 반대로 뒤꿈치 착지가 많은 러너에게는 오히려 편할 수 있는 방향이고요. 구형 하이퍼는 공식 6mm에 실측 6.7mm로 오차가 작습니다.</p>
+
+<h2>한국 러너 관점 — 겨울, 여름, 발볼</h2>
+
+<ul>
+  <li><strong>겨울 훈련이 많다면 3 하이퍼</strong> — 저온 경화율 21%와 7%의 차이는 체감 영역입니다. 영하권에서 구형은 폼이 굳어 반발이 떨어지는 반면, 신형은 상온에 가까운 감각을 유지합니다. 12~2월에도 주행 거리를 유지하는 러너라면 이 항목 하나로 결론이 납니다.</li>
+  <li><strong>한여름 위주라면 구형에 여지</strong> — 통기성 3/5와 2/5의 한 단계 차이는 7~8월 습한 날씨에서 드러납니다. 다만 힐 패딩 1/5를 감안하면 장기 사용에는 불리합니다.</li>
+  <li><strong>발볼이 넓다면 둘 다 신중히</strong> — 두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않으므로 반드시 매장 착화를 권합니다. 토박스 수치는 세대별 측정 방식이 달라 숫자로 비교할 수 없습니다.</li>
+  <li><strong>평발이라면</strong> — 두 모델 다 스택이 높은 편(실측 39.7mm·43.4mm)이라 아치가 낮으면 불안정하게 느껴질 수 있습니다. 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 계열을 먼저 보는 편이 낫습니다.</li>
+</ul>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>마라톤·하프 훈련용 한 켤레</strong> → <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>. 에너지 리턴 66.1%에 힐 패딩 5/5로 반복 훈련을 견딥니다.</li>
+  <li><strong>같은 돈으로 더 가벼운 걸</strong> → <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 클라우드몬스터 3 하이퍼</a>는 205g이지만 319,000원으로 6만 원 비쌉니다. 자세한 내용은 <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 리뷰</a>에 있습니다.</li>
+  <li><strong>슈퍼트레이너를 더 싸게</strong> → <a href="/shoes/asics-superblast-2">아식스 슈퍼블라스트 2</a>가 같은 무플레이트 포지션에서 더 저렴합니다.</li>
+  <li><strong>데일리 쿠션이면 충분하다</strong> → 하이퍼가 아닌 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>가 229,000원으로 3만 원 저렴합니다. 세대 차이는 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>에서 다뤘습니다.</li>
+</ul>
+
+<p><small>출처: RunRepeat 랩 실측(클라우드몬스터 하이퍼 / 클라우드몬스터 3 하이퍼, 두 모델 모두 US M9 기준), Believe in the Run, Doctors of Running · 가격은 On 코리아 공식 기준 · 구형 하이퍼는 2026년 8월 현재 판매 중이나 일부 사이즈 재고가 적습니다 · 작성 2026년 8월 7일.</small></p>
+`,
+  },
+  {
     id: 'nike-hybrid-hyrox-shoes-2026',
     slug: 'nike-hybrid-hyrox-shoes-2026',
     title: '나이키 하이브리드 RN·플라이 발표 — 나이키의 첫 하이록스 대응 신발 | RN은 10월 8일 글로벌 출시, $150',
