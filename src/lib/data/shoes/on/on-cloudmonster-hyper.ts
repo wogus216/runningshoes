@@ -16,7 +16,7 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 4.5,
   price: 259000,
-  description: 'Cloudmonster의 업그레이드 버전으로, Pebax 기반 Helion HF 폼과 Speedboard로 더 높은 반발력과 템포런에 적합한 성능을 제공합니다.',
+  description: 'Cloudmonster의 경량 상위 버전으로, Pebax 기반 Helion HF 폼을 얹고 Speedboard를 덜어내 더 유연한 전환과 템포런에 적합한 성능을 제공합니다.',
   oneliner: '몬스터 2에서 34g 뺀 Pebax 경량판, 템포런 겸용',
   editorComment: 'Cloudmonster 2(292g)에서 34g을 덜어낸 258g은 맥시멀 쿠션화에서 템포런 겸용으로의 변신을 의미합니다. Pebax 기반 Helion HF 폼이 39.7mm 스택에서 138 SA 충격흡수를 유지하면서 반응성을 끌어올렸습니다. 25만 9천원은 엔돌핀 스피드 5(₩219,000)보다 4만원 비싸면서 54.4% 에너지 리턴은 오히려 낮아, 성능만 놓고 보면 솔직히 가성비가 좋지 않습니다. On의 브랜드 가치와 디자인에 기꺼이 프리미엄을 지불하는 미드풋 착지 러너에게 의미 있는 선택입니다.\n\n사이즈·구매 가이드: 토박스가 표준이나 On은 와이드 옵션이 없으니 발볼 넓은 러너는 반드시 매장에서 착화하세요. 450km 기준 km당 약 576원으로 비용 부담이 있는 편입니다. 반발력 우선이라면 엔돌핀 스피드 5, 경량 쿠션 겸용이 목적이라면 페가수스 플러스와 비교해 보세요.',
   tags: ['쿠션화', '템포런', '장거리'],
@@ -103,5 +103,8 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['saucony-endorphin-speed-5', 'nike-pegasus-plus', 'hoka-mach-6'],
+  relatedPosts: [
+    { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 같은 값, 갈리는 성능' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G7CmL0U2' }],
 };

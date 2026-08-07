@@ -102,5 +102,8 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크~미드풋',
   },
   similarShoes: ['on-cloudmonster-2', 'hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+  relatedPosts: [
+    { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 상위 라인은 뭐가 다른가' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3' }],
 };

@@ -48,7 +48,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'standard',
     flatFootCompatibility: 'fair',
     wideOptions: false,
-    winterCompatibility: 'good',
+    winterCompatibility: 'excellent',
     summerCompatibility: 'good',
   },
   priceAnalysis: {
@@ -87,9 +87,9 @@ export const shoe: Shoe = {
       },
   ],
   detailedSpecs: {
-    weight: '271g (남성 US 9.5 기준)',
-    stackHeight: '힐 45mm / 포어풋 39mm',
-    drop: '6mm',
+    weight: '264g (RunRepeat 실측, 남성 US 9) / 271g (US 9.5 기준) — 사이즈 기준이 다르니 타 모델과 비교할 땐 US 9 실측치를 쓸 것',
+    stackHeight: 'On 공식 힐 45mm / 포어풋 39mm — RunRepeat 실측 43.4mm / 34.2mm (전족부에서 4.8mm 차이)',
+    drop: 'On 공식 6mm — RunRepeat 실측 9.2mm (3.2mm 차이). RunRepeat 원문: "On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"',
     midsole: 'Helion HF + Helion + CloudTec',
     plate: '없음',
     outsole: '러버 아웃솔',
@@ -102,5 +102,8 @@ export const shoe: Shoe = {
     landingPattern: '미드풋 중심',
   },
   similarShoes: ['asics-superblast-2', 'saucony-endorphin-trainer', 'new-balance-sc-trainer-v3'],
+  relatedPosts: [
+    { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 같은 값, 갈리는 성능' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FgEsPIMs' }],
 };

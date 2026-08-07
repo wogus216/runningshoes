@@ -93,7 +93,7 @@ export const shoe: Shoe = {
     drop: '6mm',
     midsole: 'Helion HF + Helion (이중 밀도)',
     plate: '없음',
-    outsole: '러버 아웃솔 (마모 0.5mm, 내구성 우수)',
+    outsole: '러버 아웃솔 (RTR 45마일 주행 후 눈에 띄는 마모 없음 — 정성 평가. RunRepeat에 LightSpray 전용 랩 페이지가 없어 mm 단위 마모 실측치는 없음)',
     upper: 'LightSpray 로봇 스프레이 일체형 (약 33g, 솔기·끈·힐카운터 없음)',
     width: '표준 (와이드 없음)',
     durability: '480-640km (어퍼 장기 내구성 미검증)',
@@ -103,5 +103,8 @@ export const shoe: Shoe = {
     landingPattern: '미드풋 중심',
   },
   similarShoes: ['on-cloudmonster-3-hyper', 'asics-superblast-3'],
+  relatedPosts: [
+    { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교' },
+  ],
   purchaseLinks: [{ store: 'On 공식', url: 'https://www.on.com/en-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex' }],
 };
