@@ -8318,7 +8318,7 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'on-cloudsurfer-max-review-2026',
     slug: 'on-cloudsurfer-max-review-2026',
-    title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 3만원 차이',
+    title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 2만원 차이',
     description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 3만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
     thumbnail: '/images/blog/on-cloudsurfer-max-review-2026.webp',
     author: '산초 에디터',

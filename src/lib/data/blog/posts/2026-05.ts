@@ -2963,7 +2963,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 26g 무거움 + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
   <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 라이드보다 20g 가벼움. 맥스 쿠션 + 강한 록커. 가격은 +4만원</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 230,000원)</strong> — 라이드보다 50g 무거움. 4E 와이드 + 진정한 맥스 쿠션. 가격 +5~7만원</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 199,000원)</strong> — 라이드보다 50g 무거움. 4E 와이드 + 진정한 맥스 쿠션. 가격 +4만원</li>
   <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (272g, 179,000원)</strong> — 라이드와 동급 가격. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
 </ul>
 
@@ -3147,7 +3147,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>다른 안정화·평발 옵션과 비교</h2>
 
 <ul>
-  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (260g, 259,000원)</strong> — 안정화 프리미엄. 860 v14보다 8만원 비싸지만 35g 가벼움. 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
+  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (260g, 199,000원)</strong> — 안정화 프리미엄. 860 v14보다 2만원 비싸지만 35g 가벼움. 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
   <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (303g, 199,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
   <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (270g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 25g 가벼움 + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
   <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (310g, 259,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
@@ -3162,7 +3162,7 @@ export const posts_2026_05: BlogPost[] = [
 <p><strong>비추</strong>. v15는 4E 옵션이 없어 발가락 압박 가능성이 있습니다. 표준(D)도 힐 플랫폼이 넓어졌지만 토박스 자체 너비는 큰 변화 없음. 4E 평발 러너라면 <strong>v14 X-Wide 즉시 구매</strong>가 사실상 유일한 답. 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>(2E 와이드)·<a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>(와이드 옵션) 대안.</p>
 
 <h3>Q. 카야노 32와 860 v14 중 어느 게 좋나요?</h3>
-<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 26만원). 카야노 32가 35g 가볍고 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
+<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 19만 9천원). 카야노 32가 35g 가볍고 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
 
 <h3>Q. 풀코스 가능한가요?</h3>
 <p><strong>Sub-4 ~ Sub-5 완주 + 평발·과내전 안전 우선</strong>이면 둘 다 적합. 290~330g 무게는 빠른 페이스에는 부담이지만 안정화 본질상 정상. Sub-3:30 이하 도전이면 안정화는 부담스럽고 카본 슈즈 분리 권장(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>, 평발 대응).</p>
@@ -3338,7 +3338,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (227g, 219,000원)</strong> — 인피니온 폼 + 4E 와이드 옵션. 발볼 넓은 한국 러너 최우선 대안. 무게도 -68g 가벼움</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 230,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터와 비슷</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 199,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터와 비슷</li>
   <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
   <li><strong><a href="/shoes/on-cloudmonster-hyper">On 클라우드몬스터 하이퍼</a> (258g, 259,000원)</strong> — 같은 라인업 Pebax 폼 + Speedboard. 템포런 겸용 슈퍼트레이너 사상. 4만원 추가 비용으로 페이스 욕심 가능</li>
 </ul>
@@ -4535,7 +4535,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>비슷한 가격대 쿠션화 대안</h2>
 
 <ul>
-  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 23만원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 19만 9천원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
   <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 18만원대, 더 가볍고 부드러움. 토박스는 1080 v15 우위</li>
   <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 22만원대, 반발력 약간 더 강함</li>
   <li><a href="/shoes/new-balance-880-v15">NB 880 v15</a> — 16만원대, 1080보다 한 단계 아래. 가성비 우선이면 검토</li>
@@ -4989,7 +4989,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 맥시멀 쿠션 + 모자이드 락커, 페가수스보다 가볍고 부드러움</li>
-  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 200,000원대지만 쿠셔닝 최상. 가성비는 페가수스가 우위</li>
+  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 19만 9천원이지만 쿠셔닝 최상. 가성비는 페가수스가 우위</li>
   <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — 폼 부드러움 1위. 발볼 넓은 라스트, 발볼 4E급에 추천</li>
   <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — ZoomX 풀렝스, 페가수스 42보다 반발력 강함 (단 가격 +5만원대)</li>
 </ul>
@@ -9740,7 +9740,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>로드 러닝화로 1년 정도 달리고 트레일을 시작하려는 러너가 가장 자주 하는 실수가 두 가지입니다.</p>
 
 <ul>
-  <li><strong>실수 1: 카본 트레일화부터 산다</strong> — Tecton X 3, Ultrafly 같은 카본 트레일화는 본격 레이스용입니다. 입문 단계에서 사면 가격(30만원+)도 부담이고, 카본 플레이트가 입문 러너의 발목·종아리 부하를 키웁니다. <strong>입문은 99,000원 젤 벤처 10이나 199,000원 어질리티 피크 6부터.</strong></li>
+  <li><strong>실수 1: 카본 트레일화부터 산다</strong> — Tecton X 3, Ultrafly 같은 카본 트레일화는 본격 레이스용입니다. 입문 단계에서 사면 가격(30만원+)도 부담이고, 카본 플레이트가 입문 러너의 발목·종아리 부하를 키웁니다. <strong>입문은 89,000원 젤 벤처 10이나 199,000원 어질리티 피크 6부터.</strong></li>
   <li><strong>실수 2: 발볼 좁은 신발을 사이즈 업으로 해결하려 한다</strong> — 메타후지 트레일·테크톤 X 3 같은 좁은 토박스 모델을 한 사이즈 키워도 발볼 압박은 해결되지 않습니다. 트레일은 하산 시 발이 앞으로 쏠려 발가락 까지는 부상이 흔한데, <strong>토박스 너비가 안 맞으면 그게 더 심해집니다</strong>. 와이드 SKU가 있는 모델로 가세요.</li>
 </ul>
 
