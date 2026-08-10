@@ -2,16 +2,22 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getGels, groupGelsByCategory } from '@/lib/data/gels';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_URL } from '@/lib/constants';
 import { gelCategoryOrder } from '@/types/gel';
 import { img } from '@/lib/image';
 
-export const metadata: Metadata = {
-  title: `에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석 - ${SITE_NAME}`,
-  description: '마라톤·러닝용 에너지 젤 13종 비교 분석. Maurten, SiS, GU, 양갱까지 프리미엄·스테디셀러·가성비 3개 카테고리. 위장 안정성, 탄수화물 과학, 가성비 기준으로 한국 러너 관점에서 평가.',
-  keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS, 마라톤 보급식, 위장 안정성',
-  alternates: { canonical: '/gels' },
-};
+export function generateMetadata(): Metadata {
+  // 종수는 데이터에서 산출한다 — 메타에 카운트를 하드코딩하면 젤이 늘고 줄 때 조용히 틀려진다
+  const count = getGels().length;
+
+  return {
+    // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
+    title: '에너지 젤 리뷰 | 마라톤 에너지 젤 비교 분석',
+    description: `마라톤·러닝용 에너지 젤 ${count}종 비교 분석. Maurten, SiS, GU, 양갱까지 프리미엄·스테디셀러·가성비 3개 카테고리. 위장 안정성, 탄수화물 과학, 가성비 기준으로 한국 러너 관점에서 평가.`,
+    keywords: '에너지 젤, 마라톤 에너지 젤, 에너지 젤 추천, 에너지 젤 비교, 양갱, Maurten, GU, SiS, 마라톤 보급식, 위장 안정성',
+    alternates: { canonical: '/gels' },
+  };
+}
 
 const categoryDescriptions: Record<string, { emoji: string; desc: string }> = {
   '프리미엄': { emoji: '🏆', desc: '기록 경신을 위한 최첨단 에너지 젤' },

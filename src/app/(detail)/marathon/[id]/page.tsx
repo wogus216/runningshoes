@@ -31,7 +31,8 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     };
   }
 
-  const title = `${event.name} | ${event.location} - ${SITE_NAME}`;
+  // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
+  const title = `${event.name} | ${event.location}`;
 
   // 실전 정보가 있으면 description에 포함
   const descParts = [

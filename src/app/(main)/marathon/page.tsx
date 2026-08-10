@@ -1,21 +1,35 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { getMarathonEvents, getMajorEvents } from '@/lib/data/marathon';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_URL } from '@/lib/constants';
 import { MarathonContent } from '@/components/marathon/marathon-content';
 import { groupIntoBands } from '@/lib/marathon/bands';
 
-export const metadata: Metadata = {
-  title: `2026 마라톤 대회 일정 | 참가비·코스·접수 총정리 - ${SITE_NAME}`,
-  description: '2026년 한국 마라톤 대회 일정 총정리. 서울마라톤, 경주벚꽃마라톤, 춘천호반마라톤 등 참가비·코스 난이도·제한시간·교통편까지. 월별·지역별·거리별 필터로 나에게 맞는 대회를 찾아보세요.',
-  keywords: '마라톤 대회, 2026 마라톤, 마라톤 일정, 하프마라톤, 서울마라톤, 마라톤 접수, 마라톤 참가비, 마라톤 코스, 경주벚꽃마라톤, 춘천호반마라톤',
-  alternates: { canonical: '/marathon' },
-  openGraph: {
-    title: '2026 마라톤 대회 일정 · 참가비 · 코스 정보',
-    description: '2026년 한국 마라톤 대회 43개+ 일정. 참가비·코스·제한시간·교통편까지 한눈에.',
-    url: `${SITE_URL}/marathon`,
-  },
-};
+/**
+ * 메타는 데이터에서 산출한다 — 종전 문구가 8월에도 "경주벚꽃마라톤·춘천호반마라톤"(둘 다 봄)을
+ * 나열하고 있었고, 2026-08-01 시점 밴드 개편(접수중이 맨 위)이 메타에 전혀 반영되지 않았다.
+ *
+ * 대회 수는 `getMarathonEvents().length`로 뽑는다(하드코딩된 "43개+"가 실제 103개와 어긋나 있었다).
+ * 반면 "접수중 N개"는 넣지 않는다 — 빌드 시점에 굳어 SERP 숫자와 페이지 숫자가 어긋난다
+ * (페이지 히어로는 클라이언트에서 다시 계산하므로 안 굳는다).
+ */
+export function generateMetadata(): Metadata {
+  const total = getMarathonEvents().length;
+  const description = `국내 마라톤 대회 ${total}개를 접수 시점 순으로 정리했습니다. 지금 접수 중인 대회가 맨 위, 그다음이 곧 열리는 대회입니다. 대회별 참가비·거리·제한시간·코스 난이도를 확인하고 권역·거리로 좁혀보세요.`;
+
+  return {
+    // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
+    title: '마라톤 대회 일정 | 지금 접수 중인 대회부터 순서대로',
+    description,
+    keywords: '마라톤 대회, 마라톤 일정, 2026 마라톤, 마라톤 접수, 접수중인 마라톤, 하프마라톤, 마라톤 참가비, 마라톤 코스, 가을 마라톤, 지역별 마라톤',
+    alternates: { canonical: '/marathon' },
+    openGraph: {
+      title: '마라톤 대회 일정 — 지금 접수 중인 대회부터',
+      description,
+      url: `${SITE_URL}/marathon`,
+    },
+  };
+}
 
 export default function MarathonPage() {
   const events = getMarathonEvents();
