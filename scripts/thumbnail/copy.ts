@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 비교표 — 무게 223g/254g, 한국 정가 209,000/179,000원,
+  // 플레이트 유무(에보 SL 없음 / 보스턴 13 유리섬유 Energy Rods 2.0). 전부 신발 DB 실측.
+  'adidas-adizero-evo-sl-vs-boston-13-daily-2026': {
+    title: '에보 SL vs 보스턴 13',
+    subtitle: '3만원 더 주고 31g을 산다 — 비싼 쪽에 플레이트가 없다',
+    data: '223g vs 254g · 20.9만 vs 17.9만 · 플레이트 없음 vs 유리섬유',
+  },
   // 출처: posts/2026-08.ts 본문 자가진단 1·2 — Knopp et al.(2023) 개인 반응 +11.4%~−11.3%,
   // Day & Hahn(2019) 시속 14km에서 9명 중 7명이 평범한 신발 우세.
   'carbon-shoes-not-for-everyone-2026': {
