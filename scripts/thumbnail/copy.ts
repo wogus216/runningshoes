@@ -38,6 +38,27 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 아래 4건 출처: posts/2026-08.ts 각 글의 비교표 — 전부 신발 DB 실측(가격·무게·내구·km당 비용).
+  'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026': {
+    title: '페가수스 프리미엄 vs 벨로시티 4',
+    subtitle: '10만원 더 비싼데 84g 무겁다',
+    data: '27.9만 vs 17.9만 · 308g vs 224g · km당 465원 vs 358원',
+  },
+  'asics-megablast-vs-nike-vomero-18-max-cushion-2026': {
+    title: '메가블라스트 vs 보메로 18',
+    subtitle: '둘 다 쿠션 10점인데 80g이 갈린다',
+    data: '218g vs 298g · 스택 48.1mm vs 43mm · km당 598원 vs 291원',
+  },
+  'brooks-ghost-17-vs-nike-pegasus-42-daily-2026': {
+    title: '고스트 17 vs 페가수스 42',
+    subtitle: '스펙이 거의 같다 — 그래서 수명이 가른다',
+    data: '둘 다 16.9만 · 289g vs 286g · 내구 800km vs 600km',
+  },
+  'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026': {
+    title: '에보 SL vs 노바블라스트 6',
+    subtitle: '3만원 아끼면 km당 비용이 63% 싸진다',
+    data: '223g vs 249g · 반발 9 vs 7 · km당 418원 vs 256원',
+  },
   // 출처: 나이키 코리아 공식 모집 안내(nike.com/kr/running/swoosh-runners, 2026-08-10 확인) —
   // 접수 8.10~8.20, 최종 30명(선발전 20 + 슈퍼패스 10), 연간 500만원 제품 + 100만원 훈련비.
   'nike-swoosh-runners-2026-recruitment': {

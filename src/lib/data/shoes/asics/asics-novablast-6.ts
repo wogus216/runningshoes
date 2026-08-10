@@ -95,6 +95,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['asics-novablast-5', 'nike-pegasus-41', 'new-balance-rebel-v5'],
   relatedPosts: [
+    { slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026', title: '노바블라스트 6 vs 에보 SL — 반발이냐 수명이냐' },
     { slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026', title: '노바블라스트 6 vs 보스턴 13 — 같은 17.9만원, 성격은 반대' },
     { slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026', title: '노바블라스트 6 vs 페가수스 42 — 데일리 대결' },
     { slug: 'asics-novablast-5-vs-6-comparison-2026', title: '노바블라스트 5 vs 6 — 세대 비교' },

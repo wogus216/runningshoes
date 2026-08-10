@@ -100,5 +100,8 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2'],
+  relatedPosts: [
+    { slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026', title: '페가수스 프리미엄 vs 벨로시티 4 — 10만원 비싼데 84g 무겁다' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FW05kgCI' }],
 };

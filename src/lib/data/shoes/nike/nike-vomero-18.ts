@@ -95,5 +95,8 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'hoka-bondi-9'],
+  relatedPosts: [
+    { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '보메로 18 vs 메가블라스트 — 둘 다 쿠션 10점, 80g 차' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6kWolx' }],
 };

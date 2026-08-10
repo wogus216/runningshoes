@@ -103,6 +103,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['new-balance-rebel-v5', 'nike-pegasus-plus'],
   relatedPosts: [
+    { slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026', title: '에보 SL vs 노바블라스트 6 — 반발이냐 수명이냐' },
     { slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026', title: '에보 SL vs 보스턴 13 — 3만원 더 주고 31g을 산다' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 3파전' },
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },

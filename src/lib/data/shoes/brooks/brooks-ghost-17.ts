@@ -96,6 +96,7 @@ export const shoe: Shoe = {
   },
   similarShoes: ['asics-gel-nimbus-28', 'nike-pegasus-41', 'saucony-ride-18'],
   relatedPosts: [
+    { slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026', title: '고스트 17 vs 페가수스 42 — 스펙이 같아서 수명이 가른다' },
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5zX9BD95' }],

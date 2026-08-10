@@ -2,6 +2,525 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_08: BlogPost[] = [
   {
+    id: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
+    slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
+    title: '에보 SL vs 노바블라스트 6 차이 — 3만원 아끼면 km당 비용이 63% 싸진다 | 반발이냐 수명이냐',
+    description:
+      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7이지만 쿠션 9에 700km, km당 256원으로 63% 경제적입니다. 둘 다 와이드 옵션이 있고 평발 적합성도 같아, 실제 갈림길은 반발과 총비용입니다.',
+    thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['아디제로 Evo SL', '에보슬', '노바블라스트 6', '아식스 노바블라스트', '데일리 러닝화', 'Lightstrike Pro', 'FF Blast Max', '무플레이트', '러닝화 비교', '가성비 러닝화'],
+    faqs: [
+      {
+        question: '3만원 차이가 실제로는 얼마나 벌어지나요?',
+        answer:
+          '정가는 3만원 차이지만 km당 비용은 418원 대 256원으로 63% 벌어집니다. 에보 SL이 209,000원에 내구 500km, 노바블라스트 6이 179,000원에 700km이기 때문입니다. 500km를 달린다고 가정하면 에보 SL은 한 켤레를 다 쓰지만 노바 6은 200km가 남습니다.',
+      },
+      {
+        question: '둘 다 플레이트가 없는데 뭐가 다른가요?',
+        answer:
+          '폼의 성격이 다릅니다. 에보 SL은 아디다스 최상위 폼인 Lightstrike Pro를 미드솔 100%에 써서 반발 9/10을 냈고, 노바블라스트 6은 FF Blast Max에 전족부만 FF Turbo Squared를 얹어 쿠션 9/10 쪽으로 갔습니다. 에보 SL은 튕기고 노바 6은 푹신합니다.',
+      },
+      {
+        question: '발볼이 넓으면 어느 쪽인가요?',
+        answer:
+          '둘 다 가능합니다. 토박스가 모두 표준 폭이고 와이드 옵션도 양쪽 다 있습니다. 평발 적합성도 둘 다 보통(fair)으로 같아, 발 조건으로는 갈리지 않습니다.',
+      },
+      {
+        question: '한 켤레만 산다면요?',
+        answer:
+          '노바블라스트 6이 범용적입니다. 적정 페이스가 4:30~6:30으로 느린 쪽까지 열려 있고, 700km에 km당 256원으로 오래 씁니다. 에보 SL은 4:00~6:00으로 조금 더 빠른 쪽에 맞춰져 있어, 템포런 비중이 크거나 두 켤레 로테이션의 "빠른 날" 담당으로 둘 때 값을 합니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 플레이트 없는 고성능 데일리</strong> — <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a> 209,000원·223g·반발 9 / <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 179,000원·249g·쿠션 9</li>
+    <li><strong>정가는 3만원 차인데 km당은 63% 벌어집니다</strong> — 418원 대 <strong>256원</strong>(내구 500km 대 700km)</li>
+    <li><strong>발 조건으로는 안 갈립니다</strong> — 토박스 표준, 와이드 옵션, 평발 적합성이 전부 같습니다. 판단은 반발이냐 수명이냐로 좁혀집니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>템포 비중이 크고 가벼운 반발을 원하면 에보 SL</strong>, <strong>한 켤레로 오래 편하게 굴리려면 노바블라스트 6</strong>입니다. 각각 보스턴 13과 붙인 글도 있습니다 — <a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">에보 SL vs 보스턴 13</a>, <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바 6 vs 보스턴 13</a>.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>아디제로 Evo SL</th><th>노바블라스트 6</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>209,000원</td><td><strong>179,000원</strong></td></tr>
+    <tr><td>무게</td><td><strong>223g</strong></td><td>249g (26g 무거움)</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>36 / 28mm</td><td><strong>39.2 / 32.1mm</strong></td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>7mm</td></tr>
+    <tr><td>미드솔</td><td>100% Lightstrike Pro</td><td>FF Blast Max + FF Turbo Squared(전족)</td></tr>
+    <tr><td>플레이트</td><td>없음</td><td>없음 <em>(동일)</em></td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / <strong>9</strong></td><td><strong>9</strong> / 7</td></tr>
+    <tr><td>안정성</td><td>6/10</td><td>6/10 <em>(동일)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준 / 있음</td><td>표준 / 있음 <em>(동일)</em></td></tr>
+    <tr><td>평발 적합성</td><td>보통</td><td>보통 <em>(동일)</em></td></tr>
+    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>700km · 256원</strong></td></tr>
+    <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:30–6:30 /km</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
+
+<h2>3만원이 아니라 63%입니다</h2>
+
+<p>정가만 보면 3만원 차이라 큰 격차가 아닌 것처럼 보입니다. 그런데 <strong>내구를 넣으면 그림이 달라집니다.</strong></p>
+
+<ul>
+  <li>에보 SL — 209,000원 ÷ 500km = <strong>km당 418원</strong></li>
+  <li>노바블라스트 6 — 179,000원 ÷ 700km = <strong>km당 256원</strong></li>
+</ul>
+
+<p>63% 차이입니다. 주 40km를 달리는 러너라면 에보 SL은 약 3개월, 노바 6은 약 4개월 반을 씁니다. 1년으로 늘리면 구매 횟수가 달라집니다.</p>
+
+<p>이 격차를 알고도 에보 SL을 고를 이유가 반발입니다.</p>
+
+<h2>에보 SL — 100% 슈퍼폼으로 미는 쪽</h2>
+
+<p>미드솔 전체를 <strong>Lightstrike Pro</strong>로 채웠습니다. 아디다스가 레이싱화에 쓰는 최상위 폼을 부분이 아니라 전면에 쓴 구성이고, 그 결과가 <strong>반발 9/10에 223g</strong>입니다.</p>
+
+<p>적정 페이스가 4:00~6:00으로 빠른 쪽에 맞춰져 있어, 템포런이나 페이스 주행에서 값을 합니다. 족저근막염 예방 등급도 excellent입니다.</p>
+
+<p>약점은 <strong>내구 500km</strong>입니다. 슈퍼폼을 전면에 쓴 대가로 수명이 짧고, 그래서 km당 비용이 올라갑니다. 스택도 36mm로 노바 6(39.2mm)보다 낮아 푹신함 자체는 덜합니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 템포·페이스 주행 비중이 큰 분, 가벼운 반발을 좋아하는 분, 로테이션에서 "빠른 날"을 담당할 신발을 찾는 분.</p>
+
+<h2>노바블라스트 6 — 오래 푹신하게 가는 쪽</h2>
+
+<p>힐 39.2mm·전족 32.1mm로 스택이 더 높고 쿠션 9/10입니다. 전족부에만 FF Turbo Squared를 얹어 밀어내는 힘을 보강했지만, 전체 성격은 <strong>편한 페이스로 오래 달리는 쪽</strong>입니다.</p>
+
+<p>결정적인 건 <strong>700km에 km당 256원</strong>입니다. 이 비교에서 가장 큰 실질 차이이고, 데일리 주력으로 쓸수록 격차가 누적됩니다.</p>
+
+<p>약점은 반발 7/10입니다. 페이스를 확 올리는 날에는 에보 SL만큼 튕겨주지 않습니다. 26g 더 무거운 것도 빠른 구간에서는 체감됩니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 주간 러닝의 대부분이 조깅인 분, 한 켤레를 오래 쓰려는 분, 장거리 훈련이 많은 분.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>총비용이 기준</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(km당 256원, 63% 유리)</li>
+  <li><strong>반발·가벼움이 기준</strong> → <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(223g, 반발 9)</li>
+  <li><strong>주력 페이스 4분대</strong> → 에보 SL</li>
+  <li><strong>주력 페이스 6분대</strong> → 노바 6</li>
+  <li><strong>한 켤레만 산다</strong> → 노바 6(페이스 폭이 넓고 오래 감)</li>
+  <li><strong>로테이션 구성 중</strong> → 둘을 같이 쓰면 역할이 갈립니다(빠른 날 에보 SL / 이지런 노바 6)</li>
+  <li><strong>플레이트가 있는 쪽도 보고 싶다</strong> → <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바 6 vs 보스턴 13</a>에서 유리섬유 로드와 비교했습니다</li>
+</ul>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 다 안정성 6인데 과내전이 있으면요?</p>
+    <p class="faq-a">A. 둘 다 권하지 않습니다. 안정성 6/10에 평발 적합성도 보통이라 발이 안쪽으로 무너지는 러너에게는 장거리에서 불리합니다. 이 경우 안정화 카테고리에서 고르는 편이 맞습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 내구 km 차이를 얼마나 믿어야 하나요?</p>
+    <p class="faq-a">A. 방향은 믿되 숫자는 참고로 보세요. 500km·700km는 아웃솔 마모 기준 추정치라 체중·노면·주법에 따라 크게 달라집니다. 다만 슈퍼폼을 전면에 쓴 신발이 상대적으로 수명이 짧다는 경향 자체는 일관되게 관찰됩니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
+    id: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
+    slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
+    title: '고스트 17 vs 페가수스 42 차이 — 스펙이 거의 같다, 그래서 수명이 가른다 | 800km vs 600km',
+    description:
+      '브룩스 고스트 17과 나이키 페가수스 42는 스펙표가 놀랍도록 비슷합니다. 정가 둘 다 169,000원, 무게 289g 대 286g로 3g 차, 드롭 둘 다 10mm, 스택도 1mm 차이. 둘 다 무플레이트에 와이드 옵션까지 있습니다. 그래서 진짜 갈림길은 다른 데 있어요 — 내구가 800km 대 600km(km당 211원 대 282원)로 34% 벌어지고, 반발은 6 대 7, 부상 등급은 페가수스가 세 항목 excellent로 앞섭니다. 국내 최다 판매 데일리 두 라인을 실측으로 갈랐습니다.',
+    thumbnail: '/images/blog/brooks-ghost-17-vs-nike-pegasus-42-daily-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['고스트 17', '브룩스 고스트', '페가수스 42', '나이키 페가수스', '데일리 러닝화', '입문 러닝화', 'DNA Loft', 'Air Zoom', '러닝화 비교', '169000원'],
+    faqs: [
+      {
+        question: '스펙이 거의 같은데 어떻게 고르나요?',
+        answer:
+          '수명과 반발로 갈립니다. 고스트 17은 내구 800km로 km당 211원, 페가수스 42는 600km로 282원 — 34% 차이입니다. 반대로 반발은 페가수스가 7/10으로 고스트(6/10)보다 높고, 부상 예방 등급도 족저근막·아킬레스·정강이 세 항목에서 excellent로 앞섭니다. 오래 쓰려면 고스트, 조금이라도 탄력을 원하면 페가수스입니다.',
+      },
+      {
+        question: '3g 차이는 무시해도 되나요?',
+        answer:
+          '네. 289g과 286g은 사실상 같은 무게이고, 드롭도 둘 다 10mm, 스택도 36/26mm 대 37/27mm로 1mm 차이입니다. 이 비교에서 무게·드롭·스택은 판단 기준이 되지 못합니다. 다른 항목을 보셔야 합니다.',
+      },
+      {
+        question: '발볼이 넓은데 어느 쪽인가요?',
+        answer:
+          '둘 다 괜찮습니다. 토박스가 모두 표준 폭이고 와이드 옵션도 양쪽 다 있습니다. 이 항목으로는 갈리지 않으니, 실제 착화 시 발등 높이나 갑피 조임 느낌으로 판단하는 편이 낫습니다.',
+      },
+      {
+        question: '입문자에게는 어느 쪽인가요?',
+        answer:
+          '둘 다 입문화로 분류되고 적정 페이스도 거의 같습니다(고스트 5:30~7:00, 페가수스 5:00~7:00). 굳이 고르면 오래 쓰는 고스트 17이 첫 신발로 부담이 적고, 나중에 페이스를 올릴 생각이 있다면 페가수스 42가 조금 더 여지가 있습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>스펙표로는 거의 같은 신발입니다</strong> — 둘 다 169,000원, 289g 대 286g(3g), 드롭 둘 다 10mm, 스택 1mm 차, 둘 다 무플레이트에 와이드 옵션 있음</li>
+    <li><strong>그래서 수명이 가릅니다</strong> — <a href="/shoes/brooks-ghost-17">고스트 17</a> 800km·km당 <strong>211원</strong> / <a href="/shoes/nike-pegasus-42">페가수스 42</a> 600km·282원. 34% 차이</li>
+    <li><strong>반대쪽 강점은 페가수스</strong> — 반발 7 대 6, 부상 예방은 족저근막·아킬레스·정강이 <strong>세 항목 excellent</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>조금이라도 탄력 있고 부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭·발볼로는 갈리지 않으니 이 두 축으로만 판단하면 됩니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>고스트 17</th><th>페가수스 42</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>169,000원</td><td>169,000원 <em>(동일)</em></td></tr>
+    <tr><td>무게</td><td>289g</td><td>286g <em>(3g 차)</em></td></tr>
+    <tr><td>스택 (힐/전족)</td><td>36 / 26mm</td><td>37 / 27mm <em>(1mm 차)</em></td></tr>
+    <tr><td>드롭</td><td>10mm</td><td>10mm <em>(동일)</em></td></tr>
+    <tr><td>미드솔</td><td>DNA Loft v3</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / 6</td><td>8 / <strong>7</strong></td></tr>
+    <tr><td>안정성</td><td>7/10</td><td>7/10 <em>(동일)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준 / 있음</td><td>표준 / 있음 <em>(동일)</em></td></tr>
+    <tr><td>부상 예방</td><td>네 항목 모두 양호</td><td><strong>족저·아킬레스·정강이 excellent</strong>, 무릎 양호</td></tr>
+    <tr><td>내구 · km당</td><td><strong>800km · 211원</strong></td><td>600km · 282원</td></tr>
+    <tr><td>적정 페이스</td><td>5:30–7:00 /km</td><td>5:00–7:00 /km</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
+
+<h2>먼저 인정할 것 — 이 비교는 대부분 무승부입니다</h2>
+
+<p>고스트와 페가수스는 국내에서 가장 많이 팔리는 데일리 두 라인입니다. 그만큼 "뭐가 다르냐"는 질문이 많은데, 솔직하게 답하면 <strong>숫자로는 거의 안 다릅니다.</strong></p>
+
+<p>가격 같고, 무게 3g 차, 드롭 같고, 스택 1mm 차, 안정성 같고, 발볼 조건도 같습니다. 스펙표를 나란히 놓고 "이게 더 좋다"고 말할 근거가 대부분 없습니다.</p>
+
+<p>그래서 차이가 나는 <strong>두 항목</strong>에 집중하는 게 맞습니다.</p>
+
+<h2>차이 ① 수명 — 200km, 34%</h2>
+
+<p>가장 실질적인 격차입니다.</p>
+
+<ul>
+  <li><strong>고스트 17: 800km · km당 211원</strong></li>
+  <li>페가수스 42: 600km · km당 282원</li>
+</ul>
+
+<p>같은 169,000원인데 200km를 더 씁니다. 주 30km를 달리는 러너라면 <strong>약 7주치</strong> 차이입니다. 브룩스가 고스트 라인에서 전통적으로 아웃솔 내구를 강하게 잡아온 결과입니다.</p>
+
+<p>다만 이 수치는 아웃솔 마모 기준 추정치입니다. 체중·노면·주법에 따라 크게 달라지니, 단일 숫자로 교체 시점을 정하지는 마세요 — <a href="/blog/running-shoe-500km-replacement-myth-2026">500~800km 교체설이 어디서 왔는지</a>를 함께 보시면 판단이 쉬워집니다.</p>
+
+<h2>차이 ② 부상 프로필과 반발 — 페가수스가 앞선다</h2>
+
+<p>페가수스 42는 족저근막·아킬레스건·정강이 <strong>세 항목이 excellent</strong>이고 무릎만 양호입니다. 고스트 17은 네 항목 모두 양호로, 나쁘진 않지만 최상위는 아닙니다.</p>
+
+<p>반발도 7 대 6으로 페가수스가 높습니다. <strong>풀렝스 Air Zoom 유닛</strong>이 들어가 발 아래에서 튕겨주는 감각이 있기 때문이고, 그래서 적정 페이스도 5:00부터로 고스트(5:30)보다 조금 빠른 쪽까지 열려 있습니다.</p>
+
+<p>반대로 고스트 17의 <strong>DNA Loft v3</strong>는 튕기기보다 부드럽게 받쳐주는 성격입니다. 쿠션 점수는 둘 다 8/10로 같지만 결이 다릅니다.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>한 켤레를 최대한 오래</strong> → <a href="/shoes/brooks-ghost-17">고스트 17</a>(800km·km당 211원)</li>
+  <li><strong>족저근막염·아킬레스·정강이 이력</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>(세 항목 excellent)</li>
+  <li><strong>가끔 페이스를 올린다</strong> → 페가수스 42(반발 7, 5:00부터)</li>
+  <li><strong>부드럽게 받쳐주는 느낌이 좋다</strong> → 고스트 17(DNA Loft v3)</li>
+  <li><strong>발볼이 넓다</strong> → 둘 다 가능. 양쪽 다 와이드 옵션이 있습니다</li>
+  <li><strong>더 푹신한 쪽을 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a> 같은 맥스쿠션으로</li>
+  <li><strong>더 가벼운 쪽을 원한다</strong> → <a href="/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026">벨로시티 나이트로 4</a>(224g)도 후보</li>
+</ul>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 브랜드 성향으로 갈리진 않나요?</p>
+    <p class="faq-a">A. 갈리긴 하는데 수치로 증명하기 어려운 영역입니다. 통상 브룩스는 발을 감싸는 안정적인 핏, 나이키는 조금 더 조이는 핏으로 이야기되지만, 발 모양에 따라 정반대 평이 나옵니다. 우리 DB 기준으로는 둘 다 표준 폭에 와이드 옵션이 있어 조건이 같습니다. 이 부분만큼은 <strong>매장 착화가 데이터보다 정확</strong>합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 다 무플레이트인데 요즘 트렌드에 뒤처진 건 아닌가요?</p>
+    <p class="faq-a">A. 아닙니다. 플레이트는 빠른 페이스에서 값을 하는 장치이고, 두 켤레의 적정 페이스대(5~7분)에서는 오히려 부담이 될 수 있습니다. 데일리 이지런용으로는 무플레이트가 정석에 가깝습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치이며, 부상 예방 등급은 설계 특성에서 도출한 적합성 평가로 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
+    id: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026',
+    slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026',
+    title: '메가블라스트 vs 보메로 18 차이 — 둘 다 쿠션 10점인데 80g이 갈린다 | 맥스쿠션 두 갈래',
+    description:
+      '아식스 메가블라스트와 나이키 보메로 18은 우리 DB에서 나란히 쿠션 10/10을 받은 맥스쿠션입니다. 그런데 218g 대 298g로 80g이 차이 나고, 가격은 299,000원 대 189,000원으로 11만원, km당 비용은 598원 대 291원으로 두 배가 벌어집니다. 드롭도 10mm 대 14mm. 메가블라스트는 드물게 토박스가 넓고, 보메로는 좁은 대신 와이드 옵션이 있습니다. 어느 쪽이 내 발과 지갑에 맞는지 정리했습니다.',
+    thumbnail: '/images/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['메가블라스트', '아식스 메가블라스트', '보메로 18', '나이키 보메로', '맥스쿠션', '쿠션화', 'FF Blast Turbo', 'ZoomX', '러닝화 비교', '장거리 러닝화'],
+    faqs: [
+      {
+        question: '둘 다 쿠션 10점이면 뭐가 다른가요?',
+        answer:
+          '쿠션의 양은 같아도 성격이 다릅니다. 메가블라스트는 힐 48.1mm·전족 38.5mm의 초고스택을 218g에 담아 가볍게 튀는 쪽이고(반발 9/10), 보메로 18은 힐 43mm에 298g으로 무겁고 부드럽게 가라앉는 쪽입니다(반발 6/10). 같은 "푹신함"이라도 하나는 통통 튀고 하나는 푹 잠깁니다.',
+      },
+      {
+        question: '가격 차이가 11만원인데 그만한가요?',
+        answer:
+          'km당 비용으로 보면 격차가 더 큽니다 — 메가블라스트 598원, 보메로 18 291원으로 두 배입니다. 메가블라스트가 299,000원에 내구 500km, 보메로가 189,000원에 650km이기 때문입니다. 순수하게 경제성만 따지면 보메로가 압도적이고, 메가블라스트의 값은 218g이라는 무게와 48mm 스택의 조합에 붙습니다.',
+      },
+      {
+        question: '발볼이 넓으면 어느 쪽인가요?',
+        answer:
+          '메가블라스트입니다. 우리 DB에서 토박스가 넓은 편(wide)으로 분류된 드문 신발이라 와이드 옵션 없이도 발볼 넓은 러너가 신을 수 있습니다. 보메로 18은 토박스가 좁은 편이지만 와이드 옵션이 따로 있으니, 그쪽을 선택하면 됩니다.',
+      },
+      {
+        question: '드롭 14mm는 높은 편 아닌가요?',
+        answer:
+          '높습니다. 보메로 18의 14mm는 요즘 러닝화 중에서도 상당히 큰 편이고, 뒤꿈치가 그만큼 들려 아킬레스건 부담이 적습니다(등급도 excellent). 반대로 낮은 드롭에 익숙한 미드풋 러너에게는 어색할 수 있습니다. 메가블라스트는 10mm로 표준 범위입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>둘 다 쿠션 10/10 맥스쿠션인데 80g이 갈립니다</strong> — <a href="/shoes/asics-megablast">메가블라스트</a> 218g / <a href="/shoes/nike-vomero-18">보메로 18</a> 298g</li>
+    <li><strong>성격이 반대입니다</strong> — 메가블라스트는 48.1mm 초고스택을 가볍게 담아 튀는 쪽(반발 9), 보메로는 무겁고 부드럽게 가라앉는 쪽(반발 6, 드롭 14mm)</li>
+    <li><strong>돈 차이가 큽니다</strong> — 299,000원 대 189,000원, km당 598원 대 <strong>291원</strong>으로 두 배</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>가벼운 맥스쿠션으로 페이스까지 내고 싶다면 메가블라스트</strong>, <strong>느리게 오래 밟는 회복런 전용이면 보메로 18</strong>입니다. 예산이 기준이면 보메로가 km당 절반이고, 발볼이 넓으면 메가블라스트가 와이드 없이도 들어갑니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>메가블라스트</th><th>보메로 18</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>299,000원</td><td><strong>189,000원</strong></td></tr>
+    <tr><td>무게</td><td><strong>218g</strong></td><td>298g (80g 무거움)</td></tr>
+    <tr><td>스택 (힐/전족)</td><td><strong>48.1 / 38.5mm</strong></td><td>43 / 29mm</td></tr>
+    <tr><td>드롭</td><td>10mm</td><td><strong>14mm</strong></td></tr>
+    <tr><td>미드솔</td><td>FF Blast Turbo</td><td>ZoomX + ReactX</td></tr>
+    <tr><td>쿠션 / 반발</td><td>10 / <strong>9</strong></td><td>10 / 6</td></tr>
+    <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
+    <tr><td>토박스</td><td><strong>넓은 편</strong></td><td>좁은 편</td></tr>
+    <tr><td>와이드 옵션</td><td>없음</td><td><strong>있음</strong></td></tr>
+    <tr><td>평발 적합성</td><td>보통</td><td><strong>양호</strong></td></tr>
+    <tr><td>내구 · km당</td><td>500km · 598원</td><td><strong>650km · 291원</strong></td></tr>
+    <tr><td>적정 페이스</td><td>4:00–6:30 /km</td><td>5:30–7:00 /km</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로, <a href="/blog/running-shoe-500km-replacement-myth-2026">숫자 하나로 교체 시점을 정하면 안 됩니다</a>.</small></p>
+
+<h2>같은 "쿠션 10"인데 왜 다른가</h2>
+
+<p>두 켤레 다 우리 DB 최고 쿠션 등급입니다. 그런데 신어보면 완전히 다른 신발입니다.</p>
+
+<p><strong>메가블라스트는 48.1mm라는 초고스택을 218g에 담았습니다.</strong> FF Blast Turbo 하나로 채워 무게를 극단적으로 줄였고, 그래서 반발이 9/10입니다. 높이 올라간 만큼 튕겨 나오는 감각이 살아 있어 적정 페이스가 <strong>4:00~6:30</strong>으로 빠른 쪽까지 열려 있습니다.</p>
+
+<p><strong>보메로 18은 43mm 스택에 298g입니다.</strong> ZoomX와 ReactX를 겹쳐 부드러움을 우선했고 반발은 6/10. 드롭 14mm로 뒤꿈치가 확 들려 있어 힐 착지에서 굴러가듯 넘어갑니다. 적정 페이스는 <strong>5:30~7:00</strong>으로 느린 쪽 전용에 가깝습니다.</p>
+
+<p>정리하면 <strong>메가블라스트는 "가벼운 맥스쿠션", 보메로 18은 "푹 잠기는 회복화"</strong>입니다. 겹치는 페이스대가 5:30~6:30 한 시간대뿐이라, 주력 페이스만 정해도 답이 나옵니다.</p>
+
+<h2>메가블라스트 — 218g에 48mm를 담은 쪽</h2>
+
+<p>이 무게에 이 스택은 흔치 않습니다. 부상 예방 등급이 <strong>네 부위 모두 excellent</strong>로, 우리 DB에서도 드문 성적입니다. 게다가 <strong>토박스가 넓은 편</strong>이라 와이드 옵션 없이도 발볼 넓은 러너가 들어갑니다 — 한국 러너에게 실질적인 장점입니다.</p>
+
+<p>약점은 돈입니다. <strong>299,000원에 내구 500km, km당 598원</strong>으로 이 비교에서 두 배 비쌉니다. 안정성 6/10이라 지쳤을 때 높은 스택이 흔들릴 여지도 있습니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 장거리를 빠르게 소화하려는 분, 발볼이 넓은 분, 무게에 민감한 분, 부상 이력이 여럿인 분.</p>
+
+<h2>보메로 18 — 느리게 오래 밟는 쪽</h2>
+
+<p>189,000원에 650km, <strong>km당 291원</strong>. 맥스쿠션 중에서 경제성이 뛰어난 편입니다. 드롭 14mm 덕에 아킬레스건과 족저근막 등급이 excellent이고, 평발 적합성도 양호입니다.</p>
+
+<p>약점은 298g의 무게와 반발 6/10입니다. 페이스를 올리려 하면 무겁고 둔하게 느껴집니다. 토박스도 좁은 편이라 발볼이 넓다면 <strong>반드시 와이드 옵션</strong>을 봐야 합니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 회복런·이지런 전용 한 켤레가 필요한 분, 아킬레스가 약한 분, 총비용을 아끼려는 분, 평발인 분.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>주력 페이스가 4~5분대</strong> → <a href="/shoes/asics-megablast">메가블라스트</a>(보메로는 설계 범위 밖)</li>
+  <li><strong>주력 페이스가 6~7분대</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a></li>
+  <li><strong>발볼이 넓다</strong> → 메가블라스트(토박스 자체가 넓음) 또는 보메로 와이드</li>
+  <li><strong>아킬레스가 약하다</strong> → 보메로 18(드롭 14mm)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 보메로 18(km당 291원, 절반)</li>
+  <li><strong>무게가 중요하다</strong> → 메가블라스트(218g)</li>
+  <li><strong>같은 값대 다른 쿠션화</strong> → <a href="/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026">페가수스 프리미엄 vs 벨로시티 4</a>도 함께 보세요</li>
+</ul>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
+    <p class="faq-a">A. 역할이 겹치지 않아 궁합은 좋습니다 — 빠른 장거리는 메가블라스트, 회복런은 보메로. 다만 둘 다 맥스쿠션이라 총 49만원을 쿠션화에만 쓰는 셈입니다. 예산이 한정적이라면 성격이 다른 데일리화를 하나 더 두는 편이 실용적입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 메가블라스트가 부상 등급 전부 excellent면 최고 아닌가요?</p>
+    <p class="faq-a">A. 부상 항목만 보면 그렇습니다. 다만 등급은 설계 특성에서 도출한 적합성 평가이지 보장이 아니고, 안정성 6/10이라 과내전이 심한 러너에게는 별개 문제가 남습니다. 그리고 km당 598원이라는 비용은 부상 등급이 상쇄해주지 않습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 부상 예방 등급은 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
+    id: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
+    slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
+    title: '페가수스 프리미엄 vs 벨로시티 나이트로 4 차이 — 10만원 더 비싼데 84g 무겁다',
+    description:
+      '나이키 페가수스 프리미엄(279,000원·308g)과 푸마 벨로시티 나이트로 4(179,000원·224g)는 값과 무게가 정반대로 붙습니다. 비싼 쪽이 84g 무겁고, 대신 쿠션 10/10에 힐 스택 43mm를 줍니다. 벨로시티는 10만원 싸고 84g 가볍고 km당 358원으로 경제적이며 와이드 옵션까지 있습니다. 다만 프리미엄은 무릎이 주의 등급이고 와이드가 없습니다. 어느 쪽이 내 러닝에 맞는지 실측으로 갈라드립니다.',
+    thumbnail: '/images/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['페가수스 프리미엄', '나이키 페가수스 프리미엄', '벨로시티 나이트로 4', '푸마 벨로시티', '데일리 러닝화', '맥스쿠션', 'ZoomX', 'Nitro Foam', '러닝화 비교', '입문 러닝화'],
+    faqs: [
+      {
+        question: '10만원 차이가 날 만한가요?',
+        answer:
+          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 10만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 7/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(465원)보다 23% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
+      },
+      {
+        question: '발볼이 넓은데 어느 쪽인가요?',
+        answer:
+          '벨로시티 나이트로 4입니다. 두 켤레 모두 토박스가 좁은 편(narrow)으로 분류되지만, 와이드 옵션은 벨로시티에만 있습니다. 페가수스 프리미엄은 와이드가 없어 발볼 넓은 러너에게는 선택지가 없습니다.',
+      },
+      {
+        question: '무릎이 안 좋으면요?',
+        answer:
+          '벨로시티 나이트로 4가 안전합니다. 우리 DB 기준 페가수스 프리미엄은 무릎이 주의 등급인데, 힐 스택 43mm에 드롭 12mm라는 높은 플랫폼 특성에서 옵니다. 벨로시티는 네 부위 모두 양호입니다. 다만 족저근막염 이력이라면 반대로 프리미엄이 excellent 등급입니다.',
+      },
+      {
+        question: '둘 다 입문자용인가요?',
+        answer:
+          '적정 페이스는 프리미엄 5:00~6:30, 벨로시티 4:30~6:30으로 둘 다 편한 페이스대를 커버합니다. 다만 프리미엄은 308g으로 무거워 이지런·회복런 성격이 강하고, 벨로시티는 224g이라 조깅부터 가벼운 템포까지 폭이 넓습니다. 한 켤레로 다 하려면 벨로시티 쪽이 범용적입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>값과 무게가 정반대로 붙습니다</strong> — <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 279,000원·308g / <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 179,000원·224g. <strong>10만원 더 비싼 쪽이 84g 무겁습니다</strong></li>
+    <li><strong>프리미엄이 파는 건 푹신함</strong> — 쿠션 10/10, 힐 스택 43mm, 풀렝스 Air Zoom. 벨로시티는 스택 34mm에 쿠션 7/10</li>
+    <li><strong>갈림길 셋</strong> — km당 465원 vs 358원, 와이드 옵션(벨로시티만 있음), 무릎 등급(프리미엄이 주의)</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>느린 페이스로 푹신하게 오래 걷듯 달리고 싶다면 페가수스 프리미엄</strong>, <strong>가볍게 여러 용도로 굴리고 싶다면 벨로시티 나이트로 4</strong>입니다. 발볼이 넓거나 무릎 이력이 있으면 벨로시티가 사실상 정답입니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>페가수스 프리미엄</th><th>벨로시티 나이트로 4</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>279,000원</td><td><strong>179,000원</strong></td></tr>
+    <tr><td>무게</td><td>308g</td><td><strong>224g</strong> (84g 가벼움)</td></tr>
+    <tr><td>스택 (힐/전족)</td><td><strong>43 / 31mm</strong></td><td>34 / 24mm</td></tr>
+    <tr><td>드롭</td><td>12mm</td><td>10mm</td></tr>
+    <tr><td>미드솔</td><td>ZoomX + ReactX + 풀렝스 Air Zoom</td><td>Nitro Foam</td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / 8</td><td>7 / 8</td></tr>
+    <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>좁은 편 / <strong>없음</strong></td><td>좁은 편 / <strong>있음</strong></td></tr>
+    <tr><td>무릎 등급</td><td><strong>주의</strong></td><td>양호</td></tr>
+    <tr><td>내구 · km당</td><td>600km · 465원</td><td>500km · <strong>358원</strong></td></tr>
+    <tr><td>가성비 점수</td><td>8/10</td><td><strong>10/10</strong></td></tr>
+    <tr><td>적정 페이스</td><td>5:00–6:30 /km</td><td>4:30–6:30 /km</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
+
+<h2>10만원으로 사는 것 — 스택 9mm와 쿠션 3점</h2>
+
+<p>가격 차이가 어디로 갔는지는 명확합니다. <strong>힐 스택 43mm 대 34mm, 무려 9mm 차이</strong>입니다. 여기에 ZoomX와 ReactX를 겹치고 풀렝스 Air Zoom 유닛까지 넣은 게 페가수스 프리미엄이고, 그 결과가 쿠션 10/10입니다.</p>
+
+<p>대신 <strong>308g</strong>이 됐습니다. 벨로시티 나이트로 4는 Nitro Foam 단일 구성에 스택 34mm로 단순하게 가고 224g을 만들었습니다.</p>
+
+<p>그래서 이 비교는 <strong>"푹신함을 위해 84g을 감수할 것인가"</strong>로 요약됩니다. 발이 푹 잠기는 감각을 좋아하고 페이스를 올릴 일이 거의 없다면 프리미엄이 값을 하고, 가볍게 여러 페이스를 오가고 싶다면 벨로시티입니다.</p>
+
+<h2>페가수스 프리미엄 — 나이키 데일리의 최상단</h2>
+
+<p>쿠션 10/10은 우리 DB에서 최고 등급입니다. 힐 43mm에 드롭 12mm라 뒤꿈치가 확실히 높고, 힐 착지로 편하게 굴러가는 러너에게 잘 맞습니다. 족저근막염 예방 등급도 excellent입니다.</p>
+
+<p>약점이 두 가지 뚜렷합니다. <strong>무릎이 주의 등급</strong>이고 — 높은 플랫폼과 12mm 드롭 조합에서 옵니다 — <strong>와이드 옵션이 없습니다.</strong> 토박스가 좁은 편으로 분류되는데 와이드까지 없으니 발볼 넓은 러너는 접근이 어렵습니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 회복런·이지런 위주로 푹신함을 최우선하는 분, 힐 착지가 편한 분, 족저근막염 이력이 있는 분.</p>
+
+<h2>벨로시티 나이트로 4 — 가성비 10점의 이유</h2>
+
+<p>우리 DB에서 <strong>가성비 10/10</strong>을 받은 몇 안 되는 신발입니다. 179,000원에 224g, km당 358원. 네 부위 부상 등급이 모두 양호로 균형도 좋습니다.</p>
+
+<p>스택 34mm는 요즘 기준 낮은 편이라 맥스쿠션을 기대하면 실망할 수 있습니다. 대신 지면 감각이 살아 있고, 적정 페이스가 4:30~6:30으로 프리미엄보다 빠른 쪽까지 열려 있습니다. <strong>와이드 옵션이 있다는 것도 실질적 강점</strong>입니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 한 켤레로 조깅부터 가벼운 템포까지 해결하려는 분, 발볼이 넓은 분, 무릎 이력이 있는 분, 총비용을 아끼려는 분.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>발볼이 넓다</strong> → <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a>(와이드 있는 쪽이 여기뿐)</li>
+  <li><strong>무릎 이력이 있다</strong> → 벨로시티(프리미엄은 주의 등급)</li>
+  <li><strong>족저근막염 이력</strong> → <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>(excellent)</li>
+  <li><strong>푹신함이 최우선</strong> → 프리미엄(쿠션 10, 스택 43mm)</li>
+  <li><strong>가벼움이 최우선</strong> → 벨로시티(224g)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 벨로시티(10만원 싸고 km당 358원)</li>
+  <li><strong>더 푹신한 쿠션화를 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a>도 보세요</li>
+</ul>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 84g 차이가 실제로 느껴지나요?</p>
+    <p class="faq-a">A. 한 켤레로 168g이라 확실히 느껴집니다. 특히 후반부에 다리가 무거워질 때 체감이 커집니다. 다만 프리미엄의 무게는 쿠션의 대가라, 느린 페이스로 오래 달릴 때는 그 쿠션이 되돌려주는 부분이 있습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 다 토박스가 좁은데 발볼 넓으면 어떡하죠?</p>
+    <p class="faq-a">A. 벨로시티 나이트로 4의 와이드 버전을 보세요. 그것도 맞지 않는다면 두 켤레 다 후보에서 빼는 게 맞습니다. 표준 폭 이상이 필요하면 다른 모델로 눈을 돌리는 편이 낫습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
     id: 'nike-swoosh-runners-2026-recruitment',
     slug: 'nike-swoosh-runners-2026-recruitment',
     title: '나이키 스우시 러너스 모집 — 오늘부터 8월 20일까지 | 연 600만원 지원, 기록 없이 뽑히는 10자리도 있다',
