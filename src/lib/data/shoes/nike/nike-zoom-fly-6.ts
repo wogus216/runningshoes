@@ -103,6 +103,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5', 'asics-superblast-3'],
   relatedPosts: [
+    { slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026', title: '매직스피드 5 vs 줌 플라이 6 — 같은 22.9만원, 55g이 갈린다' },
     { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },

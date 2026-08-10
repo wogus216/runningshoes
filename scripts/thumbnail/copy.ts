@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 비교표 — 무게 193g/248g, 드롭 7/10mm, 한국 정가 둘 다 229,000원.
+  // 전부 신발 DB 실측(asics-magic-speed-5.ts · nike-zoom-fly-6.ts).
+  'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026': {
+    title: '매직스피드 5 vs 줌 플라이 6',
+    subtitle: '같은 22.9만원, 55g이 갈린다 — 다치는 곳도 정반대',
+    data: '193g vs 248g · 드롭 7mm vs 10mm · 가격·수명·목표 페이스는 동일',
+  },
   // 출처: posts/2026-08.ts 비교표 — 무게 223g/254g, 한국 정가 209,000/179,000원,
   // 플레이트 유무(에보 SL 없음 / 보스턴 13 유리섬유 Energy Rods 2.0). 전부 신발 DB 실측.
   'adidas-adizero-evo-sl-vs-boston-13-daily-2026': {

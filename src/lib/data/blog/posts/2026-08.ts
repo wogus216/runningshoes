@@ -2,6 +2,173 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_08: BlogPost[] = [
   {
+    id: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
+    slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
+    title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 22.9만원, 55g이 갈린다 | 다치는 곳도 정반대',
+    description:
+      '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 229,000원, km당 572원, 적정 페이스 3:30~5:00까지 전부 같습니다. 다른 건 무게 193g 대 248g(55g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
+    thumbnail: '/images/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['매직스피드 5', '아식스 매직스피드', '줌 플라이 6', '나이키 줌플라이', '카본화', '카본 플레이트', '슈퍼트레이너', '템포런', '러닝화 비교', '가을 마라톤'],
+    faqs: [
+      {
+        question: '두 신발 가격이 정말 같나요?',
+        answer:
+          '네. 한국 공식 정가가 둘 다 229,000원입니다. 내구성도 400km로 같아 km당 비용도 약 572원으로 동일합니다. 적정 페이스도 3:30~5:00/km로 겹칩니다. 가격·수명·목표 페이스가 전부 같은 상태에서 설계만 다른, 보기 드문 비교입니다.',
+      },
+      {
+        question: '55g 차이가 그렇게 큰가요?',
+        answer:
+          '193g과 248g은 카본화 기준으로 큰 격차입니다. 한 켤레로 110g이라, 인터벌처럼 다리를 빠르게 회전시키는 훈련에서는 분명히 드러납니다. 다만 줌 플라이 6이 무거운 대신 힐 스택이 40mm로 3mm 더 두껍고 안정성 점수가 7 대 5로 높습니다 — 무게를 내주고 받은 게 있습니다.',
+      },
+      {
+        question: '아킬레스건이 안 좋은데 어느 쪽인가요?',
+        answer:
+          '줌 플라이 6입니다. 매직스피드 5는 드롭이 7mm로 낮고 안정성이 5/10이라 아킬레스와 종아리로 가는 부담이 큽니다(우리 DB 등급도 caution). 줌 플라이 6은 드롭 10mm로 아킬레스가 상대적으로 편합니다. 대신 줌 플라이는 무릎이 caution이니, 무릎 이력이 있다면 반대로 매직스피드 쪽을 봐야 합니다.',
+      },
+      {
+        question: '발볼이 넓은데요?',
+        answer:
+          '둘 다 와이드 옵션이 없고, 특히 줌 플라이 6은 토박스가 좁은 편(narrow)으로 분류됩니다. 매직스피드 5는 표준 폭입니다. 발볼이 넓다면 매직스피드 5가 그나마 낫지만, 어느 쪽이든 매장 착화를 강하게 권합니다.',
+      },
+      {
+        question: '카본화가 처음인데 이 중에 골라도 되나요?',
+        answer:
+          '두 켤레 다 "레이스 전용"보다는 훈련까지 견디는 성격이라 카본 입문으로는 합리적인 선택지입니다. 다만 카본화의 효과는 개인차가 매우 커서(연구상 +11.4%부터 −11.3%까지 갈립니다) 신어보기 전에는 알 수 없습니다. 사기 전에 확인할 것은 별도로 정리해뒀습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가격·수명·목표 페이스가 전부 같습니다</strong> — 둘 다 229,000원, 400km, km당 572원, 3:30~5:00/km. 이 조건에서 설계만 다릅니다</li>
+    <li><strong>갈리는 건 무게와 드롭</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 193g·드롭 7mm·포크형 카본 / <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 248g·드롭 10mm·풀렝스 곡선형 카본. <strong>55g 차이</strong>입니다</li>
+    <li><strong>다치는 곳이 정반대입니다</strong> — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의. 발볼도 줌 플라이가 좁은 편이라 한국 러너는 여기서 갈립니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>가볍게 회전시키는 감각과 낮은 드롭이 맞으면 매직스피드 5</strong>, <strong>안정적으로 굴려주는 쪽이 편하고 아킬레스가 약하면 줌 플라이 6</strong>입니다. 부상 이력이 판단을 가장 크게 좌우합니다. 카본화가 본인에게 맞는지부터 확인하고 싶다면 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화 사기 전 자가진단</a>을 먼저 보세요.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>매직스피드 5</th><th>줌 플라이 6</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>229,000원</td><td>229,000원 <em>(동일)</em></td></tr>
+    <tr><td>무게</td><td><strong>193g</strong></td><td>248g</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>37 / 30mm</td><td><strong>40</strong> / 30mm</td></tr>
+    <tr><td>드롭</td><td><strong>7mm</strong></td><td><strong>10mm</strong></td></tr>
+    <tr><td>미드솔</td><td>FF Leap + FF Blast+</td><td>ZoomX + SR-02</td></tr>
+    <tr><td>플레이트</td><td><strong>포크형</strong> 카본</td><td><strong>풀렝스 곡선형</strong> 카본 Flyplate</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61%</td></tr>
+    <tr><td>쿠션 / 반발</td><td>6 / 8</td><td><strong>7 / 9</strong></td></tr>
+    <tr><td>안정성</td><td>5/10</td><td><strong>7/10</strong></td></tr>
+    <tr><td>토박스</td><td><strong>표준</strong></td><td><strong>좁은 편</strong></td></tr>
+    <tr><td>와이드 옵션</td><td>없음</td><td>없음</td></tr>
+    <tr><td>내구 · km당</td><td>400km · 572원</td><td>400km · 572원 <em>(동일)</em></td></tr>
+    <tr><td>적정 페이스</td><td>3:30–5:00 /km</td><td>3:30–5:00 /km <em>(동일)</em></td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로 체중·노면·주법에 따라 달라집니다.</small></p>
+
+<h2>부상 프로필이 거의 정반대입니다</h2>
+
+<p>이 비교에서 가장 실용적인 항목입니다. 두 켤레의 부상 예방 등급을 나란히 놓으면 이렇게 갈립니다.</p>
+
+<table>
+  <thead>
+    <tr><th>부위</th><th>매직스피드 5</th><th>줌 플라이 6</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>아킬레스건</td><td><strong>주의</strong></td><td>양호</td></tr>
+    <tr><td>족저근막</td><td><strong>주의</strong></td><td>양호</td></tr>
+    <tr><td>정강이</td><td><strong>주의</strong></td><td>양호</td></tr>
+    <tr><td>무릎</td><td>양호</td><td><strong>주의</strong></td></tr>
+  </tbody>
+</table>
+
+<p>이유는 드롭과 안정성에서 나옵니다. <strong>매직스피드 5는 드롭 7mm에 안정성 5/10</strong>이라 발뒤꿈치가 낮게 놓이고, 그만큼 아킬레스건과 종아리가 늘어난 상태로 일합니다. 족저근막과 정강이도 같은 계열의 부담을 받습니다. 가벼움의 대가입니다.</p>
+
+<p><strong>줌 플라이 6은 드롭 10mm에 안정성 7/10</strong>입니다. 뒤꿈치가 높아 아킬레스 쪽은 편해지지만, 힐 스택 40mm의 높은 플랫폼에서 풀렝스 카본이 굴려주는 구조라 무릎으로 가는 부담이 늘어납니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">카본화는 부하를 없애지 않고 옮깁니다</p>
+    <p>두 켤레의 등급이 반대인 게 우연이 아닙니다. 플레이트는 발목 관절의 일을 줄이는 대신 그 몫을 다른 곳으로 넘깁니다. 그래서 "어느 쪽이 부상에 좋냐"가 아니라 <strong>"내 약한 곳이 어디냐"</strong>로 물어야 합니다. 통증이 진행 중이라면 신발 교체가 아니라 진료가 먼저입니다.</p>
+  </div>
+</div>
+
+<h2>매직스피드 5 — 가벼움으로 미는 쪽</h2>
+
+<p>193g은 카본화 중에서도 가벼운 축이고, 전작(242g)에서 <strong>50g을 덜어낸</strong> 결과입니다. 세대가 바뀌며 성격이 달라진 신발이에요.</p>
+
+<p>플레이트가 <strong>포크형</strong>이라는 게 특징입니다. 풀렝스처럼 판 전체가 밀어주는 대신 갈라진 형태라 전환이 부드럽고, 카본이 처음인 러너가 느끼는 이질감이 덜합니다. 에너지 리턴은 힐 64.6% / 전족 62.6%로 줌 플라이(61%)보다 높게 측정됐습니다.</p>
+
+<p>약점은 <strong>안정성 5/10</strong>입니다. 이 수치는 카본화 중에서도 낮은 편이고, 위에서 본 부상 등급 세 개가 주의로 잡힌 배경이기도 합니다. 지치면 발이 흔들리는 러너가 장거리에 쓰기엔 부담이 있습니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 인터벌·트랙 훈련 비중이 큰 분, 낮은 드롭이 익숙한 미드풋 착지 러너, <strong>무릎 이력이 있는 분</strong>, 발볼이 표준 이상이라 좁은 신발이 부담스러운 분.</p>
+
+<h2>줌 플라이 6 — 안정적으로 굴려주는 쪽</h2>
+
+<p>248g은 요즘 카본화 기준으로 가볍지 않지만, <strong>힐 40mm 스택에 풀렝스 카본 Flyplate</strong>를 넣고 이 무게면 납득할 구성입니다. ZoomX와 SR-02를 겹친 듀얼 폼으로 반발 점수는 9/10, 두 켤레 중 높습니다.</p>
+
+<p>진짜 강점은 <strong>안정성 7/10</strong>입니다. 페이스가 무너지는 후반에도 형태가 유지되고, 드롭 10mm라 힐 착지 습관이 있는 러너도 무리 없이 신을 수 있습니다. 아킬레스·족저근막·정강이 세 항목이 모두 양호로 잡힌 것도 여기서 옵니다.</p>
+
+<p>약점은 두 가지입니다. <strong>토박스가 좁은 편(narrow)</strong>이고 와이드 옵션이 없어 발볼 넓은 한국 러너에게는 문턱이 높습니다. 그리고 <strong>무릎이 주의</strong> 등급이라 무릎 통증 이력이 있다면 신중해야 합니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 템포런 위주로 길게 뛰는 분, 힐 착지가 편한 분, <strong>아킬레스·종아리가 약한 분</strong>, 안정감 있는 카본을 원하는 중급 이상 러너.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>아킬레스·종아리·정강이 이력</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>(드롭 10mm, 세 항목 모두 양호)</li>
+  <li><strong>무릎 이력</strong> → <a href="/shoes/asics-magic-speed-5">매직스피드 5</a>(무릎만 양호로 갈립니다)</li>
+  <li><strong>발볼이 넓다</strong> → 매직스피드 5(표준 폭). 줌 플라이는 좁은 편입니다. 둘 다 와이드가 없으니 착화 필수</li>
+  <li><strong>인터벌·트랙 비중이 크다</strong> → 매직스피드 5(193g)</li>
+  <li><strong>템포런을 길게 끈다</strong> → 줌 플라이 6(안정성 7, 스택 40mm)</li>
+  <li><strong>카본이 처음이라 이질감이 걱정</strong> → 매직스피드 5(포크형이 전환이 부드럽습니다)</li>
+  <li><strong>훈련 거리를 더 소화하고 싶다</strong> → 플레이트 부담이 덜한 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(나일론)나 <a href="/shoes/adidas-boston-13">보스턴 13</a>(유리섬유)도 후보입니다</li>
+  <li><strong>레이스 당일용 카본을 따로 원한다</strong> → <a href="/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026">카본 레이서 3파전</a>을 보세요</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 중 하나로 풀코스를 뛰어도 되나요?</p>
+    <p class="faq-a">A. 가능하지만 둘 다 내구 400km 기준이라 레이스 전용으로 아껴 쓰는 편이 낫습니다. 특히 매직스피드 5는 안정성 5/10이라 후반 30km 이후 발이 흔들리는 러너에게는 부담이 될 수 있습니다. 풀코스가 목표라면 레이스 페이스로 20km 이상 신어보고 결정하세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 에너지 리턴 64.6% vs 61%면 매직스피드가 더 빠른 건가요?</p>
+    <p class="faq-a">A. 그렇게 단순하지 않습니다. 에너지 리턴은 폼이 눌렸다 돌아오는 비율이고, 실제 기록은 플레이트 형태·스택·본인 주법이 함께 결정합니다. 게다가 카본화 효과는 개인차가 커서 그룹 평균이 개인에게 적용되지 않습니다. 숫자 3.6%p 차이로 순위를 매기지 마세요.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 포크형 플레이트와 풀렝스 플레이트, 뭐가 다른가요?</p>
+    <p class="faq-a">A. 풀렝스는 판 하나가 발 전체를 지나며 지렛대처럼 밀어주고, 포크형은 앞쪽이 갈라져 있어 발가락 관절의 움직임을 좀 더 허용합니다. 그래서 포크형이 전환이 자연스럽고 이질감이 덜한 대신, 밀어주는 감각은 풀렝스가 뚜렷합니다. 플레이트 구조 전반은 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a>에 정리돼 있습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 훈련용 카본을 꼭 사야 하나요?</p>
+    <p class="faq-a">A. 아닙니다. 카본화의 이점은 빠른 페이스에서 검증된 것이고, 느린 페이스에서는 오히려 사라지거나 역전된다는 실험 보고가 있습니다. 본인에게 맞는지부터 확인하는 게 순서라 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화 자가진단</a>을 먼저 권합니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 229,000원)이며 실판매가는 다를 수 있습니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다 — 통증이 있다면 전문의 진료를 받으세요. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
     id: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     title: '아디제로 Evo SL vs 보스턴 13 차이 — 3만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
