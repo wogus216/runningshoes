@@ -167,11 +167,11 @@ export const octoberEvents: MarathonEvent[] = [
     location: '탄천 일대 (경기 성남시)',
     region: '경기',
     distances: ['10K', '5K'],
-    status: '접수예정',
+    status: '접수중',
     isMajor: false,
     registrationStart: '2026-08-10',
     registrationEnd: '2026-08-17',
-    lastVerified: '2026-08-06',
+    lastVerified: '2026-08-10',
     description:
       '카카오가 처음 여는 1만 명 규모 러닝 페스티벌(슬로건 "Run Together, Be Friends"). 기록 경쟁 없는 펀 런 콘셉트로 5K·10K 두 종목이며, 참가비는 8만원이지만 ARC 협업 카카오프렌즈 러닝 의류 세트·완주 메달·협찬사 상품 패키지가 포함됩니다. 접수는 8월 10일~17일 공식 홈페이지와 카카오톡 선물하기 기획전에서 받고, 추첨으로 참가자를 선정해 8월 20일 발표합니다. 현장엔 약 30개 체험 부스와 카카오프렌즈 캐릭터 부스, 애프터 공연이 열리고, 현장에 못 가는 러너를 위한 버추얼 런(카카오맵·카카오같이가치 연계)도 운영됩니다.',
     raceInfo: {
@@ -180,6 +180,42 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '5K', fee: 80000 },
       ],
       expectedParticipants: 10000,
+    },
+  },
+  {
+    id: 'busan-sea-marathon-2026',
+    name: '성우하이텍 2026 부산바다마라톤',
+    date: '2026-10-25',
+    month: '10월',
+    location: '해운대 벡스코 야외광장 (부산)',
+    region: '부산',
+    distances: ['15K', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://marathon.busan.com',
+    registrationStart: '2026-07-28',
+    lastVerified: '2026-08-10',
+    description:
+      '평소 보행이 금지된 광안대교 상층부를 달리는 부산일보사 주최 대회. 벡스코 야외광장에 07:30 집결한 뒤 07:50부터 광안대교 상층부 출발지점으로 이동해 종목별로 출발합니다. 15km·10km 로드레이스와 5km 건강달리기 3개 종목으로 총 12,000명 선착순(15km 2,000·10km 6,500·5km 3,500)이며, 참가비는 15km 70,000원·10km 60,000원·5km 50,000원입니다(골스튜디오 패키지 선택 시 각 +39,000원). 접수는 7월 28일 오후 8시 시작됐고 마감일은 별도 공지 예정 — 정원이 차면 마감입니다. 신청 후 72시간 안에 결제하지 않으면 자동 취소되며, 기념품·배번호는 10월 16일 발송 예정입니다. 교통통제 최소화를 위해 제한시간을 엄격히 적용합니다(15km 2시간 20분·10km 1시간 40분·5km 1시간 20분).',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '광안대교 상층부를 달리는 것이 핵심입니다. 자동차 전용도로라 대회일에만 러너에게 열리며, 바다 위 교량 구간이라 그늘이 없고 해풍이 변수입니다. 큰 오르막은 없지만 교량 진입·진출부에 완만한 경사가 있습니다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '15K', fee: 70000 },
+        { distance: '10K', fee: 60000 },
+        { distance: '5K', fee: 50000 },
+      ],
+      timeLimits: [
+        { distance: '15K', hours: 2, minutes: 20 },
+        { distance: '10K', hours: 1, minutes: 40 },
+        { distance: '5K', hours: 1, minutes: 20 },
+      ],
+      expectedParticipants: 12000,
+      startTime: '08:20',
     },
   },
   {

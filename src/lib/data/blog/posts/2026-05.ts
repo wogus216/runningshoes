@@ -6942,11 +6942,12 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: '2026-nike-alphafly-4-prototype',
     slug: '2026-nike-alphafly-4-prototype',
-    title: '나이키 알파플라이 4 프로토타입 정체 공개 | 보스턴 미국 남자 역대 2위 + Nike-Dev 16141 WA 등록',
-    description: '2026 보스턴 마라톤에서 미국 남자 역대 2위를 만든 그 신발. World Athletics 승인 신발 리스트에 "Nike-Dev 16141"로 등록된 알파플라이 4 프로토타입의 정체와 기술 변화, 정식 출시 시점(시카고 마라톤 11월), 그리고 아디다스 아디오스 프로 에보 3와의 슈퍼슈즈 4파전 구도까지 정리.',
+    title: '나이키 알파플라이 4 출시일 언제? 11월 시카고 직전 유력 | 프로토타입으로 드러난 스펙 변화 총정리',
+    description: '알파플라이 4는 언제 나오고 무엇이 달라지나 — 현재까지 확인된 것을 한 번에 정리했습니다. 정식 출시는 2026년 11월 시카고 마라톤 직전이 유력하고, World Athletics 승인 리스트에 "Nike-Dev 16141"로 등록된 프로토타입에서 드롭 하향(4~6mm)·전족부 ZoomX 증량·듀얼 Air Zoom 연속형 바텀·카본 플레이트 신지오메트리가 확인됐습니다. 알파플라이 3와의 차이, 아디오스 프로 에보 3를 포함한 슈퍼슈즈 4파전 구도까지 함께 봅니다.',
     thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-12',
+    updatedAt: '2026-08-10',
     category: 'news' as const,
     readingTime: 8,
     tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
@@ -6958,6 +6959,14 @@ export const posts_2026_05: BlogPost[] = [
     <li>핵심 변화: <strong>드롭 4-6mm로 하향</strong> + 전족부 ZoomX 증량 + <strong>듀얼 Air Zoom 유닛 + 연속형 바텀</strong>(힐~전족부 갭 제거) + 카본 플레이트 신지오메트리</li>
     <li>정식 출시는 <strong>2026년 11월 시카고 마라톤 직전</strong> 예상. 같은 해 발매된 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>(97g)와의 슈퍼슈즈 4파전 본격화</li>
   </ul>
+</div>
+
+<div class="callout warning">
+  <span class="callout-icon">📅</span>
+  <div class="callout-body">
+    <p class="callout-title">8/10 기준 출시일 현황 — 나이키 공식 발표는 아직 없습니다</p>
+    <p>2026년 8월 10일 현재까지 나이키의 <strong>공식 출시일 발표는 나오지 않았습니다</strong>. 11월 시카고 마라톤 직전이라는 시점은 알파플라이 1~3의 전례(주요 메이저 직전 공개)와 프로토타입 배포 단계에서 추정한 것이지 확정이 아닙니다. 다만 World Athletics 승인 리스트의 <strong>Nike-Dev 16141은 2026년 10월 1일 만료</strong> 예정이라, 그 전후로 정식 모델명 등록이나 발표가 나올 가능성이 있습니다. 확정 발표가 나오는 대로 이 글을 갱신하겠습니다.</p>
+  </div>
 </div>
 
 <div class="callout info">

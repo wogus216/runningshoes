@@ -38,6 +38,20 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 본문 자가진단 1·2 — Knopp et al.(2023) 개인 반응 +11.4%~−11.3%,
+  // Day & Hahn(2019) 시속 14km에서 9명 중 7명이 평범한 신발 우세.
+  'carbon-shoes-not-for-everyone-2026': {
+    title: '카본화가 나한테도 맞을까',
+    subtitle: '사기 전 자가진단 5가지 — 안 맞는 사람은 실재한다',
+    data: '개인 반응 +11.4% ~ −11.3% · 14km/h에선 9명 중 7명이 일반화 우세',
+  },
+  // 출처: posts/2026-08.ts 본문 개요·종목 표 — 공식 대회요강(marathon.busan.com/info1,
+  // 2026-08-10 확인). 12,000명 선착순, 15K 7만·10K 6만·5K 5만, 10/25 개최.
+  'busan-sea-marathon-2026': {
+    title: '광안대교 위를 달린다',
+    subtitle: '2026 부산바다마라톤 — 마감일 없는 선착순',
+    data: '10월 25일 · 15K·10K·5K · 12,000명 선착순',
+  },
   // 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준) — 에너지 리턴 힐 54.4%→66.1%,
   // 저온 경화율 21%→7%, 종합 79점→90점. 가격은 On 코리아 공식 259,000원으로 양쪽 동일.
   'on-cloudmonster-hyper-vs-3-hyper-comparison-2026': {

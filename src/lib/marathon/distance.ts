@@ -12,6 +12,7 @@ import { EVENT_DISTANCES, type EventDistance } from '@/types/marathon';
 const NEAR: Record<string, EventDistance> = {
   '11K': '10K',
   '12K': '10K',
+  '15K': '10K',
   '6K': '5K',
 };
 
