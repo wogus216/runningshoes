@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 비교표 — 정가 둘 다 179,000원, 무게 249g/254g,
+  // 쿠션·반발 9/7 대 7/9. 전부 신발 DB 실측(asics-novablast-6.ts · adidas-boston-13.ts).
+  'asics-novablast-6-vs-adidas-boston-13-daily-2026': {
+    title: '노바블라스트 6 vs 보스턴 13',
+    subtitle: '같은 17.9만원, 5g 차이인데 성격이 반대',
+    data: '쿠션 9 vs 7 · 반발 7 vs 9 · 플레이트 없음 vs 유리섬유 로드',
+  },
   // 출처: posts/2026-08.ts 비교표 — 무게 193g/248g, 드롭 7/10mm, 한국 정가 둘 다 229,000원.
   // 전부 신발 DB 실측(asics-magic-speed-5.ts · nike-zoom-fly-6.ts).
   'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026': {

@@ -2,6 +2,177 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_08: BlogPost[] = [
   {
+    id: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
+    slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
+    title: '노바블라스트 6 vs 보스턴 13 차이 — 같은 17.9만원, 5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
+    description:
+      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원으로 똑같고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 325원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
+    thumbnail: '/images/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-08-10',
+    category: 'review' as const,
+    readingTime: 9,
+    tags: ['노바블라스트 6', '아식스 노바블라스트', '보스턴 13', '아디다스 보스턴13', '데일리 러닝화', 'FF Blast Max', 'Energy Rods', '러닝화 비교', '가을 마라톤', '17만원대 러닝화'],
+    faqs: [
+      {
+        question: '두 신발 가격이 같은데 뭘 기준으로 고르나요?',
+        answer:
+          '용도입니다. 둘 다 179,000원이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 9/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
+      },
+      {
+        question: '무게가 5g밖에 차이 안 나는데 왜 느낌이 다른가요?',
+        answer:
+          '무게가 아니라 구조 때문입니다. 노바블라스트 6은 플레이트가 없고 스택이 39.2mm로 높아 발이 폼 속으로 가라앉았다 올라오는 감각이고, 보스턴 13은 유리섬유 Energy Rods 2.0이 발을 앞으로 넘겨주는 감각입니다. 같은 무게라도 힘이 어디서 나오는지가 다릅니다.',
+      },
+      {
+        question: '발볼이 넓으면 어느 쪽인가요?',
+        answer:
+          '노바블라스트 6입니다. 두 켤레 모두 토박스는 표준 폭이지만 와이드 옵션은 노바 6에만 있습니다. 보스턴 13은 표준 폭 하나뿐이라 선택지가 없습니다.',
+      },
+      {
+        question: '노바블라스트 5를 할인가에 사는 건 어떤가요?',
+        answer:
+          '합리적인 선택입니다. 5는 정가 169,000원에 스택이 41mm로 6(39.2mm)보다 오히려 높고 내구도 600km입니다. 6에서 달라진 건 전족부에 FF Turbo Squared를 넣고 드롭을 8mm에서 7mm로 낮춘 것으로, 세대 차이가 극적이진 않습니다. 재고 할인 폭이 크면 5도 충분히 좋은 선택입니다.',
+      },
+      {
+        question: '오래 신는 쪽은요?',
+        answer:
+          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 325원으로 약 27% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>가격이 똑같고 무게도 5g 차입니다</strong> — 둘 다 179,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
+    <li><strong>그런데 성격이 정확히 반대입니다</strong> — 쿠션 9 대 7, 반발 7 대 9. 노바 6은 <strong>플레이트 없이 39.2mm 스택으로 푹신하게</strong>, 보스턴 13은 <strong>유리섬유 Energy Rods로 굴려서</strong> 갑니다</li>
+    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 325원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>주간 러닝의 대부분이 편한 조깅이면 노바블라스트 6</strong>, <strong>포인트 훈련 비중이 크고 하프까지 겸할 생각이면 보스턴 13</strong>입니다. 발볼이 넓으면 와이드가 있는 노바 6이 사실상 유일한 답입니다. 보스턴 13을 다른 상대와 붙인 글도 있습니다 — <a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">에보 SL과의 대결</a>, <a href="/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026">템포 트레이너 3파전</a>.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>노바블라스트 6</th><th>보스턴 13</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>한국 정가</td><td>179,000원</td><td>179,000원 <em>(동일)</em></td></tr>
+    <tr><td>무게</td><td>249g</td><td>254g <em>(5g 차)</em></td></tr>
+    <tr><td>스택 (힐/전족)</td><td><strong>39.2 / 32.1mm</strong></td><td>36 / 30mm</td></tr>
+    <tr><td>드롭</td><td>7mm</td><td>6mm</td></tr>
+    <tr><td>미드솔</td><td>FF Blast Max + FF Turbo Squared(전족)</td><td>Lightstrike Pro + Energy Rods 2.0</td></tr>
+    <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>7 / <strong>9</strong></td></tr>
+    <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준 / <strong>있음</strong></td><td>표준 / <strong>없음</strong></td></tr>
+    <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
+    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 325원</td></tr>
+    <tr><td>적정 페이스</td><td>4:30–6:30 /km</td><td>4:00–5:30 /km</td></tr>
+  </tbody>
+</table>
+
+<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로 체중·노면·주법에 따라 달라집니다 — <a href="/blog/running-shoe-500km-replacement-myth-2026">교체 시점을 숫자 하나로 정하면 안 되는 이유</a>.</small></p>
+
+<h2>스펙표가 비슷한데 왜 다른 신발인가</h2>
+
+<p>가격이 같고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
+
+<p>이유는 <strong>힘이 어디서 나오느냐</strong>입니다.</p>
+
+<p><strong>노바블라스트 6은 플레이트가 없습니다.</strong> 대신 힐 39.2mm·전족 32.1mm의 높은 스택을 FF Blast Max로 채우고, 전족부에만 FF Turbo Squared라는 더 반발 좋은 폼을 얹었습니다. 발이 폼 속으로 가라앉았다가 밀려 올라오는 감각이고, 그래서 편한 페이스에서 오래 달릴 때 편합니다.</p>
+
+<p><strong>보스턴 13은 유리섬유 Energy Rods 2.0을 넣었습니다.</strong> 로드가 발을 앞으로 넘겨주기 때문에 페이스를 올릴수록 값을 하고, 비틀림도 잡아줍니다(안정성 8/10 대 6/10). 대신 스택이 36mm로 낮아 푹신함 자체는 덜합니다.</p>
+
+<p>그래서 <strong>같은 값으로 정반대의 것을 삽니다</strong> — 푹신함이냐 굴림이냐. 플레이트가 실제로 하는 일이 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a>을 보세요.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⏱️</span>
+  <div class="callout-body">
+    <p class="callout-title">적정 페이스가 겹치지 않습니다</p>
+    <p>노바 6은 <strong>4:30~6:30/km</strong>, 보스턴 13은 <strong>4:00~5:30/km</strong>입니다. 겹치는 구간이 4:30~5:30 한 시간대뿐이에요. 본인 주력 페이스가 6분대라면 보스턴 13은 설계 범위 밖이고, 4분 초반이라면 노바 6이 무겁게 느껴질 겁니다. <strong>이 항목이 가격보다 먼저입니다.</strong></p>
+  </div>
+</div>
+
+<h2>노바블라스트 6 — 푹신함으로 미는 쪽</h2>
+
+<p>쿠션 9/10은 데일리화 중에서도 상위입니다. 힐 39.2mm 스택에 플레이트가 없어서, 발이 방해받지 않고 폼을 그대로 씁니다. 이지런·회복런·장거리 훈련처럼 <strong>편한 페이스로 오래 달리는 날</strong>에 값을 합니다.</p>
+
+<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 27% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
+
+<p>약점은 <strong>안정성 6/10</strong>과 평발 적합성 fair입니다. 스택이 높고 플레이트가 없다 보니 지쳤을 때 발이 흔들릴 여지가 있습니다. 그리고 반발 7/10이라 페이스를 확 올리는 날에는 심심하게 느껴집니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 주간 러닝의 대부분이 조깅인 분, 장거리 훈련이 많은 분, <strong>발볼이 넓어 와이드가 필요한 분</strong>, 한 켤레를 오래 쓰고 싶은 분.</p>
+
+<h2>보스턴 13 — 굴림으로 미는 쪽</h2>
+
+<p>반발 9/10에 안정성 8/10입니다. 유리섬유 로드가 앞으로 넘겨주는 힘과 비틀림 억제를 동시에 주기 때문에, <strong>페이스를 올리는 날과 후반부가 흔들리는 러너</strong>에게 강합니다. 평발 적합성도 good으로 노바 6(fair)보다 낫습니다.</p>
+
+<p>드롭 6mm에 전족 스택 30mm라 미드풋으로 착지해 굴리는 주법과 잘 맞습니다. 하프 레이스를 이 신발로 뛰는 것도 무리가 없습니다.</p>
+
+<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 325원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
+
+<p><strong>✅ 이런 분께</strong> — 템포·인터벌이 주간 계획에 고정된 분, 하프 레이스를 겸할 분, 발이 안쪽으로 무너지는 편인 분, 굴려주는 감각을 좋아하는 분.</p>
+
+<h2>그럼 노바블라스트 5는요?</h2>
+
+<p>6이 나왔다고 5가 나쁜 신발이 된 건 아닙니다. 오히려 숫자만 보면 흥미롭습니다.</p>
+
+<ul>
+  <li><a href="/shoes/asics-novablast-5">노바블라스트 5</a>는 <strong>정가 169,000원</strong>으로 1만원 저렴하고, <strong>스택이 41mm로 6(39.2mm)보다 오히려 높습니다</strong></li>
+  <li>내구는 600km(km당 282원)로 6(700km·256원)보다 짧지만 보스턴 13보다는 깁니다</li>
+  <li>6에서 달라진 핵심은 <strong>전족부 FF Turbo Squared 추가</strong>와 드롭 8mm → 7mm입니다. 세대 차이가 극적이진 않습니다</li>
+</ul>
+
+<p><strong>재고 할인 폭이 크면 5도 충분히 합리적인 선택</strong>입니다. 두 세대의 차이는 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">노바블라스트 5 vs 6 비교</a>에 따로 정리해뒀습니다.</p>
+
+<h2>내게 맞는 건?</h2>
+
+<ul>
+  <li><strong>발볼이 넓다</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>. 와이드가 있는 쪽이 여기뿐입니다</li>
+  <li><strong>평발이거나 후반에 발이 무너진다</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>(안정성 8, 평발 good)</li>
+  <li><strong>주력 페이스가 6분대</strong> → 노바 6(보스턴 13은 설계 범위 밖)</li>
+  <li><strong>주력 페이스가 4분 초반</strong> → 보스턴 13</li>
+  <li><strong>주 5회 이상, 대부분 조깅</strong> → 노바 6(700km·와이드·쿠션 9)</li>
+  <li><strong>포인트 훈련이 고정, 하프 레이스 예정</strong> → 보스턴 13</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 27% 유리)</li>
+  <li><strong>예산을 더 줄이고 싶다</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a> 할인 재고(169,000원·스택 41mm)</li>
+  <li><strong>같은 값대 다른 후보도 보고 싶다</strong> → <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>도 함께 보세요</li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 둘 다 부상 예방 등급이 같던데, 부상 이력으로는 안 갈리나요?</p>
+    <p class="faq-a">A. 네. 족저근막·아킬레스·무릎·정강이 네 항목 모두 두 켤레가 동일하게 양호로 평가됩니다. 이 비교에서는 부상 이력이 결정 요인이 아니고, <strong>페이스·발볼·안정성</strong>이 갈림길입니다. 다만 발이 안쪽으로 무너지는 편이라면 안정성 8인 보스턴 13이 안전합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 하나만 산다면 어느 쪽이 범용적인가요?</p>
+    <p class="faq-a">A. 노바블라스트 6입니다. 적정 페이스 범위가 4:30~6:30으로 더 넓고, 와이드가 있어 실패 확률이 낮으며, 700km로 오래 씁니다. 보스턴 13은 성격이 뚜렷한 대신 쓰임이 좁습니다 — 두 켤레 로테이션의 "빠른 날" 담당에 가깝습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
+    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 같은 값이라 예산 계산도 단순합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 겨울에는 어느 쪽이 나은가요?</p>
+    <p class="faq-a">A. 큰 차이는 없습니다. 다만 보스턴 13은 컨티넨탈 러버 아웃솔이라 젖은 노면 그립에서 안정적입니다. 노면 상태가 나쁜 겨울 훈련이 많다면 이 점은 보스턴 13 쪽 장점입니다.</p>
+  </div>
+</div>
+
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 179,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
+`,
+  },
+  {
     id: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
     slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
     title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 22.9만원, 55g이 갈린다 | 다치는 곳도 정반대',
@@ -294,6 +465,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>무게 1g이 아깝다</strong> → 에보 SL(223g). 더 가벼운 쪽을 원하면 <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>도 후보입니다</li>
   <li><strong>플레이트 없는 고성능이 좋다</strong> → 에보 SL, 혹은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></li>
   <li><strong>플레이트 굴림을 더 원한다</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>와도 비교해보세요</li>
+  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 같은 179,000원인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>

@@ -96,6 +96,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5'],
   relatedPosts: [
+    { slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026', title: '노바블라스트 6 vs 보스턴 13 — 같은 17.9만원, 성격은 반대' },
     { slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026', title: '에보 SL vs 보스턴 13 — 3만원 더 주고 31g을 산다' },
     { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너' },
