@@ -54,6 +54,19 @@ function isNoindexShoe(slug) {
   }
 }
 
+// /best 페이지의 noindex 여부는 **빌드된 HTML**에서 읽는다.
+// 어느 그룹을 noindex 할지는 src/app/(detail)/best/[slug]/page.tsx 한 곳에서만 정하고,
+// 여기서는 그 결과를 확인만 한다 — 목록을 두 곳에 복제하면 반드시 어긋난다.
+// (postbuild 시점이라 out/ 은 이미 만들어져 있다.)
+function isNoindexBestPage(slug) {
+  try {
+    const html = fs.readFileSync(path.join(__dirname, "out", "best", `${slug}.html`), "utf8");
+    return /<meta name="robots" content="[^"]*noindex/.test(html);
+  } catch {
+    return false;
+  }
+}
+
 // Static page → source file
 const staticPageMap = {
   "/": "src/app/(home)/page.tsx",
@@ -144,6 +157,10 @@ module.exports = {
       const slug = urlPath.replace("/shoes/", "").replace(/\/$/, "");
       if (isNoindexShoe(slug)) return null; // noindex 신발은 sitemap 제외
       return { loc: urlPath, changefreq: "weekly", priority: 0.9, lastmod };
+    }
+    if (urlPath.startsWith("/best/")) {
+      const slug = urlPath.replace("/best/", "").replace(/\/$/, "");
+      if (isNoindexBestPage(slug)) return null; // noindex 페이지는 sitemap 제외
     }
     if (urlPath === "/marathon") {
       return { loc: urlPath, changefreq: "daily", priority: 0.8, lastmod };

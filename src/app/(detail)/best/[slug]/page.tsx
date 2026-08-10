@@ -30,9 +30,26 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!entry) {
     return { title: '페이지를 찾을 수 없습니다' };
   }
+  /**
+   * `brand-category` 17페이지는 색인에서 뺀다 (2026-08-10).
+   *
+   * 90일 GSC 실측에서 이 그룹만 **147노출·클릭 2개**였고 17개 중 15개가 클릭 0이었다.
+   * 원인은 얇음이다 — 최소 3종만 넘으면 페이지를 만들어서 평균 **3.9종**, 8개는 딱 3종짜리
+   * "브랜드 카테고리 러닝화 추천 TOP"이 됐다. 같은 /best 안에서도 distance 3p 는
+   * 106노출·클릭 6·가중순위 9.0 으로 멀쩡하니, 그룹 단위 문제다.
+   *
+   * **삭제가 아니라 noindex인 이유**: 같은 날 `/vs`에서 색인된 URL을 없애 404가 된 사고를
+   * 겪었다(39개). URL·내부링크는 살려 두고 색인 신호만 뺀다. `follow: true` 라 신발 상세로
+   * 가는 링크 흐름도 유지된다. 되돌리려면 이 분기만 지우면 된다.
+   *
+   * sitemap 제외는 next-sitemap.config.js 가 빌드된 HTML의 noindex 를 읽어 처리한다.
+   */
+  const noindex = entry.group === 'brand-category';
+
   return {
     title: entry.metaTitle,
     description: entry.metaDescription,
+    ...(noindex && { robots: { index: false, follow: true } }),
     alternates: { canonical: `/best/${entry.slug}` },
     openGraph: {
       type: 'article',
