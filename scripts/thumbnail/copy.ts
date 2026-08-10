@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 나이키 코리아 공식 모집 안내(nike.com/kr/running/swoosh-runners, 2026-08-10 확인) —
+  // 접수 8.10~8.20, 최종 30명(선발전 20 + 슈퍼패스 10), 연간 500만원 제품 + 100만원 훈련비.
+  'nike-swoosh-runners-2026-recruitment': {
+    title: '나이키 스우시 러너스 모집',
+    subtitle: '8월 20일 마감 — 기록 없이 뽑히는 10자리가 있다',
+    data: '30명 선발 · 연 500만원 제품 + 100만원 훈련비 · 5,000m 트랙 선발전',
+  },
   // 출처: posts/2026-08.ts 비교표 — 정가 둘 다 179,000원, 무게 249g/254g,
   // 쿠션·반발 9/7 대 7/9. 전부 신발 DB 실측(asics-novablast-6.ts · adidas-boston-13.ts).
   'asics-novablast-6-vs-adidas-boston-13-daily-2026': {

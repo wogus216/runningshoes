@@ -7620,14 +7620,14 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'li-ning-red-hare-9-lineup-2026',
     slug: 'li-ning-red-hare-9-lineup-2026',
-    title: '적토마 9 삼형제 완전 비교 — 울트라 vs 프로 vs 베이스, 내게 맞는 적토마는? | 라이닝 레드헤어 9 라인업 가이드',
-    description: '라이닝 적토마(레드헤어) 9는 한 세대에 울트라·프로·베이스 3종이 동시 출시됐습니다. 이름만 같지 미드솔 폼·플레이트·스택·발볼·가격이 전부 다른 별개의 신발이죠. 맥스쿠션 슈퍼트레이너(울트라), 가성비 데일리(프로), 발볼 넓은 입문(베이스) — 셋의 차이를 한눈에 비교하고, 내 발과 목적에 맞는 적토마를 고르는 법을 데이터로 정리했습니다. 인터랙티브 비교도 함께 제공합니다.',
+    title: '적토끼 9 삼형제 완전 비교 — 울트라 vs 프로 vs 베이스, 내게 맞는 건? | 리닝 적토마(레드헤어 9) 라인업 가이드',
+    description: '흔히 "적토끼"로 불리는 라이닝 적토마(레드헤어) 9는 한 세대에 울트라·프로·베이스 3종이 동시 출시됐습니다. 이름만 같지 미드솔 폼·플레이트·스택·발볼·가격이 전부 다른 별개의 신발이죠. 맥스쿠션 슈퍼트레이너(울트라), 가성비 데일리(프로), 발볼 넓은 입문(베이스) — 셋의 차이를 한눈에 비교하고, 내 발과 목적에 맞는 적토마를 고르는 법을 데이터로 정리했습니다. 인터랙티브 비교도 함께 제공합니다.',
     thumbnail: '/images/blog/li-ning-red-hare-9-lineup-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-09',
     category: 'review' as const,
     readingTime: 7,
-    tags: ['라이닝', '적토마', '레드헤어 9', 'Li-Ning', '중국 러닝화', '비교', '울트라', '프로', '가성비 러닝화'],
+    tags: ['적토끼', '적토끼9', '적토끼 9 프로', '리닝 적토끼', '라이닝', '적토마', '레드헤어 9', 'Li-Ning', '중국 러닝화', '비교', '울트라', '프로', '베이스', '가성비 러닝화'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -9054,14 +9054,14 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'li-ning-red-hare-9-ultra-truth-2026',
     slug: 'li-ning-red-hare-9-ultra-truth-2026',
-    title: '화제의 "중국 카본화" 정체 — 라이닝 레드헤어 9 울트라는 카본이 아닙니다 | 10만 원대 가성비 슈퍼트레이너의 진실',
+    title: '적토끼 9 울트라는 카본이 아닙니다 — 화제의 "중국 카본화" 정체 | 리닝 적토마(레드헤어 9) 슈퍼트레이너의 진실',
     description: '러닝 커뮤니티가 "이 가격에 카본?"으로 들썩이는 라이닝(Li-Ning) 레드헤어 9 울트라. 하지만 해외 실측 리뷰를 종합하면 이 신발은 카본 레이싱화가 아니라 유리섬유 플레이트를 단 맥스쿠션 슈퍼트레이너입니다. 슈퍼블라스트·메가블라스트 절반 가격이라는 가성비의 실체, "적토끼"가 아닌 "적토마"인 이유, 발볼 좁은 한국 러너가 사기 전 꼭 알아야 할 3가지를 데이터로 정리했습니다.',
     thumbnail: '/images/blog/li-ning-red-hare-9-ultra-truth-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-06',
     category: 'review' as const,
     readingTime: 9,
-    tags: ['라이닝', '레드헤어 9 울트라', '적토마', 'Li-Ning', '중국 러닝화', '슈퍼트레이너', '가성비 러닝화', 'PEBA', '카본화', '슈퍼블라스트'],
+    tags: ['적토끼', '적토끼 9 울트라', '적토끼9 울트라', '리닝 적토끼', '라이닝', '레드헤어 9 울트라', '적토마', 'Li-Ning', '중국 러닝화', '슈퍼트레이너', '가성비 러닝화', 'PEBA', '카본화', '슈퍼블라스트'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -10747,14 +10747,14 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'li-ning-red-hare-9-ultra-budget-supertrainer',
     slug: 'li-ning-red-hare-9-ultra-budget-supertrainer',
-    title: '리닝 적토마 9 울트라 — "10만원대 카본급" 진짜일까? | 커뮤니티 난리 난 중국 슈퍼 트레이너 팩트체크',
-    description: '러닝 커뮤니티에서 화제인 리닝(Li-Ning) 적토마 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구)·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크.',
+    title: '리닝 적토끼 9 울트라 — "10만원대 카본급" 진짜일까? | 적토마(레드헤어 9) 슈퍼 트레이너 팩트체크',
+    description: '러닝 커뮤니티에서 흔히 "적토끼"로 불리는 리닝(Li-Ning) 적토마 9 울트라(Red Hare 9 Ultra). PEBA 3층 미드솔·47mm 스택을 10만원대에 담아 "가성비 카본화"로 불리지만, 실제론 카본이 아닌 유리섬유 플레이트 슈퍼 트레이너입니다. 스펙·가격·구매처(직구·타오바오)·사이즈·장단점과 발볼 넓은 한국 러너 주의점까지 팩트체크했습니다.',
     thumbnail: '/images/blog/li-ning-red-hare-9-ultra-budget-supertrainer.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-01',
     category: 'review' as const,
     readingTime: 9,
-    tags: ['리닝', '적토마 9 울트라', 'Li-Ning Red Hare', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화'],
+    tags: ['리닝 적토끼', '적토끼', '적토끼 9 울트라', '적토끼9 울트라', '리닝', '적토마 9 울트라', 'Li-Ning Red Hare', '레드헤어 9 울트라', '중국 러닝화', '슈퍼 트레이너', '가성비 러닝화', 'PEBA', '카본 플레이트', '직구 러닝화', '타오바오 러닝화'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
