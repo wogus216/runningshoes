@@ -8,6 +8,7 @@ import { SITE_URL, SITE_NAME } from '@/lib/constants';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 import { getShoeDurability } from '@/lib/durability';
+import { withJosa } from '@/lib/korean';
 
 type PageProps = { params: Promise<{ pair: string }> };
 
@@ -20,8 +21,32 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const found = getPairBySlug(pair);
   if (!found) return { title: '비교 페이지를 찾을 수 없습니다' };
   const { a, b } = found;
-  const title = `${a.brand} ${a.name} vs ${b.brand} ${b.name} 비교 — 어떤 게 더 좋을까?`;
-  const description = `${a.brand} ${a.name}과(와) ${b.brand} ${b.name}의 무게, 스택, 드롭, 가격, 한국 러너 적합성을 데이터로 비교합니다.`;
+
+  /**
+   * 제목에 "차이"를 넣는다 — 2026-08-07 GSC 실측에서 이 의도의 검색어 형태가 "비교"가 아니라
+   * **"차이"**였다(`페가수스 41 42 차이` CTR 13.8%, `젤카야노 32 33 차이` 17.9%).
+   * 종전 제목은 "비교 — 어떤 게 더 좋을까?"라 실제 검색어와 어긋나 있었다.
+   */
+  const title = `${a.brand} ${a.name} vs ${b.brand} ${b.name} 차이 — 무게·스택·가격 비교`;
+
+  // description 은 페어마다 실제 수치를 넣는다. 종전 문구는 항목 나열이라 334개 페이지가 전부 같았다
+  const facts: string[] = [];
+  if (a.price && b.price) {
+    const gap = Math.abs(a.price - b.price);
+    facts.push(
+      gap >= 10000
+        ? `가격은 ${(gap / 10000).toFixed(gap % 10000 === 0 ? 0 : 1)}만원 차이(${a.name} ${a.price.toLocaleString()}원 / ${b.name} ${b.price.toLocaleString()}원)`
+        : `가격은 둘 다 ${Math.round(a.price / 10000)}만원대`,
+    );
+  }
+  if (a.specs?.weight && b.specs?.weight) {
+    const gap = Math.abs(a.specs.weight - b.specs.weight);
+    facts.push(gap >= 10 ? `무게는 ${gap}g 차이(${a.specs.weight}g / ${b.specs.weight}g)` : `무게는 ${a.specs.weight}g 대 ${b.specs.weight}g로 비슷`);
+  }
+  // 모델명이 숫자로 끝나면 과/와·은/는이 갈린다(33→과, 32→와). 조사를 쓰지 않고 vs 로 잇는다
+  const description = facts.length
+    ? `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무엇이 다른가. ${facts.join(', ')}. 스택·드롭·토박스 너비·내구성까지 항목별로 나란히 놓고 한국 러너 기준으로 정리했습니다.`
+    : `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무게, 스택, 드롭, 가격, 한국 러너 적합성을 데이터로 비교합니다.`;
   return {
     title,
     description,
@@ -145,27 +170,27 @@ function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const bn = `${b.brand} ${b.name}`;
   const paras: string[] = [];
 
-  let intro = `${an}과(와) ${bn}은(는) 모두 ${category} 카테고리지만, 무게·쿠셔닝·발 적합성에서 분명한 차이가 있습니다.`;
-  if (a.description) intro += ` ${an}은(는) ${a.description}`;
-  if (b.description) intro += ` 반면 ${bn}은(는) ${b.description}`;
+  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리지만, 무게·쿠셔닝·발 적합성에서 분명한 차이가 있습니다.`;
+  if (a.description) intro += ` ${withJosa(an, '은/는')} ${a.description}`;
+  if (b.description) intro += ` 반면 ${withJosa(bn, '은/는')} ${b.description}`;
   paras.push(intro);
 
   const diffs: string[] = [];
   const wa = a.specs?.weight, wb = b.specs?.weight;
   if (wa && wb) {
-    if (Math.abs(wa - wb) >= 10) diffs.push(`무게는 ${wa < wb ? an : bn}이(가) ${Math.abs(wa - wb)}g 더 가벼워 빠른 페이스·대회에 유리합니다`);
-    else diffs.push(`무게는 ${wa}g과 ${wb}g로 거의 같습니다`);
+    if (Math.abs(wa - wb) >= 10) diffs.push(`무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 더 가벼워 빠른 페이스·대회에 유리합니다`);
+    else diffs.push(`무게는 ${wa}g 대 ${wb}g로 거의 같습니다`);
   }
   const ca = a.specs?.cushioning, cb = b.specs?.cushioning;
-  if (ca && cb && Math.abs(ca - cb) >= 1) diffs.push(`쿠셔닝은 ${ca > cb ? an : bn}이(가) 더 두툼해 장거리·회복런에서 편안합니다`);
+  if (ca && cb && Math.abs(ca - cb) >= 1) diffs.push(`쿠셔닝은 ${withJosa(ca > cb ? an : bn, '이/가')} 더 두툼해 장거리·회복런에서 편안합니다`);
   const pa = a.price, pb = b.price;
-  if (pa && pb && Math.abs(pa - pb) >= 10000) diffs.push(`가격은 ${pa < pb ? an : bn}이(가) 약 ${fmtPrice(Math.abs(pa - pb))} 저렴합니다`);
+  if (pa && pb && Math.abs(pa - pb) >= 10000) diffs.push(`가격은 ${withJosa(pa < pb ? an : bn, '이/가')} 약 ${fmtPrice(Math.abs(pa - pb))} 저렴합니다`);
   if (diffs.length) paras.push(diffs.join('. ') + '.');
 
   const fit: string[] = [];
   const wra = WIDTH_RANK[a.koreanFootFit?.toBoxWidth ?? ''] ?? -1;
   const wrb = WIDTH_RANK[b.koreanFootFit?.toBoxWidth ?? ''] ?? -1;
-  if (wra >= 0 && wrb >= 0 && wra !== wrb) fit.push(`발볼은 ${wra > wrb ? an : bn}이(가) 더 넓어 발볼 넓은 한국 러너에게 잘 맞습니다`);
+  if (wra >= 0 && wrb >= 0 && wra !== wrb) fit.push(`발볼은 ${withJosa(wra > wrb ? an : bn, '이/가')} 더 넓어 발볼 넓은 한국 러너에게 잘 맞습니다`);
   if ((a.koreanFootFit?.wideOptions ?? false) !== (b.koreanFootFit?.wideOptions ?? false)) {
     fit.push(`와이드(2E) 옵션은 ${a.koreanFootFit?.wideOptions ? an : bn}만 제공합니다`);
   }
@@ -174,8 +199,8 @@ function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const recs: string[] = [];
   const ra = fmtList(a.targetUsers?.recommended);
   const rb = fmtList(b.targetUsers?.recommended);
-  if (ra) recs.push(`${an}은(는) ${ra} 같은 러너에게`);
-  if (rb) recs.push(`${bn}은(는) ${rb} 같은 러너에게 잘 맞습니다`);
+  if (ra) recs.push(`${withJosa(an, '은/는')} ${ra} 같은 러너에게`);
+  if (rb) recs.push(`${withJosa(bn, '은/는')} ${rb} 같은 러너에게 잘 맞습니다`);
   if (recs.length) paras.push(`종합하면 ${recs.join(', ')}. 본인 발 특성·목적이 애매하면 1분 러닝화 추천으로 후보를 좁혀보세요.`);
 
   return paras;
@@ -194,30 +219,30 @@ function buildFaqs(a: Shoe, b: Shoe): { question: string; answer: string }[] {
     if (wra !== wrb) {
       const wide = wra > wrb ? an : bn;
       const wideFit = wra > wrb ? a.koreanFootFit : b.koreanFootFit;
-      ans = `토박스 기준 ${wide}이(가) 더 넓습니다(${wideFit?.toBoxWidth}). 발볼이 넓은 편이라면 ${wide}이(가) 유리하고, 와이드(2E) 옵션 제공 여부도 함께 확인하세요.`;
+      ans = `토박스 기준 ${withJosa(wide, '이/가')} 더 넓습니다(${wideFit?.toBoxWidth}). 발볼이 넓은 편이라면 ${withJosa(wide, '이/가')} 유리하고, 와이드(2E) 옵션 제공 여부도 함께 확인하세요.`;
     } else {
       ans = `두 모델 모두 토박스 너비가 ${a.koreanFootFit?.toBoxWidth} 수준으로 비슷합니다. 발볼이 넓다면 와이드(2E) 옵션 제공 여부로 골라보세요.`;
     }
-    faqs.push({ question: `${a.name}과 ${b.name} 중 발볼 넓은 한국 러너에게 맞는 건?`, answer: ans });
+    faqs.push({ question: `${withJosa(a.name, '과/와')} ${b.name} 중 발볼 넓은 한국 러너에게 맞는 건?`, answer: ans });
   }
 
   const sa = a.specs?.stability ?? 0, sb = b.specs?.stability ?? 0;
   if (sa && sb && Math.abs(sa - sb) >= 1) {
     const stable = sa > sb ? an : bn;
-    faqs.push({ question: `평발이라 안정성이 중요한데 어느 쪽이 좋나요?`, answer: `안정성 점수는 ${stable}이(가) 더 높습니다(${Math.max(sa, sb)}/10). 평발·오버프로네이션이 있다면 ${stable}을(를) 우선 고려하세요. 발 상태가 애매하면 1분 러닝화 추천으로 확인해볼 수 있습니다.` });
+    faqs.push({ question: `평발이라 안정성이 중요한데 어느 쪽이 좋나요?`, answer: `안정성 점수는 ${withJosa(stable, '이/가')} 더 높습니다(${Math.max(sa, sb)}/10). 평발·오버프로네이션이 있다면 ${withJosa(stable, '을/를')} 우선 고려하세요. 발 상태가 애매하면 1분 러닝화 추천으로 확인해볼 수 있습니다.` });
   }
 
   const va = a.priceAnalysis?.valueRating ?? 0, vb = b.priceAnalysis?.valueRating ?? 0;
   if (va && vb) {
     const value = va >= vb ? an : bn;
-    faqs.push({ question: `가성비는 어느 쪽이 더 좋나요?`, answer: `가성비 점수는 ${value}이(가) 우위입니다(${Math.max(va, vb)}/10, 가격 ${fmtPrice(a.price)} vs ${fmtPrice(b.price)}). 다만 가성비가 곧 본인에게 맞는 신발을 뜻하진 않으니 무게·쿠셔닝·발볼도 함께 보세요.` });
+    faqs.push({ question: `가성비는 어느 쪽이 더 좋나요?`, answer: `가성비 점수는 ${withJosa(value, '이/가')} 우위입니다(${Math.max(va, vb)}/10, 가격 ${fmtPrice(a.price)} vs ${fmtPrice(b.price)}). 다만 가성비가 곧 본인에게 맞는 신발을 뜻하진 않으니 무게·쿠셔닝·발볼도 함께 보세요.` });
   }
 
   const ka = KNEE_RANK[a.injuryPrevention?.kneeIssues ?? ''] ?? -1;
   const kb = KNEE_RANK[b.injuryPrevention?.kneeIssues ?? ''] ?? -1;
   if (ka >= 0 && kb >= 0 && ka !== kb) {
     const knee = ka > kb ? an : bn;
-    faqs.push({ question: `무릎이 안 좋은데 어떤 걸 신는 게 나을까요?`, answer: `무릎 통증 예방 측면에서는 ${knee}이(가) 더 낫게 평가됩니다. 쿠셔닝과 안정성이 무릎 부담을 줄이는 핵심이며, 통증이 지속되면 러닝화 교체와 별개로 전문가 상담을 권합니다.` });
+    faqs.push({ question: `무릎이 안 좋은데 어떤 걸 신는 게 나을까요?`, answer: `무릎 통증 예방 측면에서는 ${withJosa(knee, '이/가')} 더 낫게 평가됩니다. 쿠셔닝과 안정성이 무릎 부담을 줄이는 핵심이며, 통증이 지속되면 러닝화 교체와 별개로 전문가 상담을 권합니다.` });
   }
 
   const cushWinner = (a.specs?.cushioning ?? 0) >= (b.specs?.cushioning ?? 0) ? an : bn;
@@ -338,7 +363,7 @@ export default async function ComparePairPage({ params }: PageProps) {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: `${a.brand} ${a.name} vs ${b.brand} ${b.name}`,
-      description: `${a.brand} ${a.name}과(와) ${b.brand} ${b.name}의 무게·스택·드롭·가격·한국 러너 적합성을 데이터로 비교합니다.`,
+      description: `${a.brand} ${withJosa(a.name, '과/와')} ${b.brand} ${b.name}의 무게·스택·드롭·가격·한국 러너 적합성을 데이터로 비교합니다.`,
       url: `${SITE_URL}/vs/${pair}`,
       about: [
         { '@type': 'Thing', name: `${a.brand} ${a.name}`, url: `${SITE_URL}/shoes/${a.slug}` },
