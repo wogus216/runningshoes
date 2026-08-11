@@ -1743,21 +1743,23 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'new-balance-sc-rebel-preview-2026',
     slug: 'new-balance-sc-rebel-preview-2026',
-    title: '뉴발란스 SC 레벨 미리보기 | 8월 글로벌 출시 — RTR 9.99/10에 BITR "역대 최고 NB"까지, 그런데 발볼이 걸린다',
+    title: '뉴발란스 SC 레벨 한국 출시 확정 — 8월 22일 오전 11시·259,000원 | RTR 9.99/10에 BITR "역대 최고 NB"까지, 그런데 발볼이 걸린다',
     description:
-      '뉴발란스 SC 레벨(SuperComp Rebel)이 8월 글로벌 발매됩니다(218g·40/36mm·드롭 4mm). Road Trail Run 9.99/10에 이어 Believe in the Run도 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 평을 냈습니다. SC 트레이너 v3를 사실상 대체하는 자리입니다. 다만 RTR·Doctors of Running 두 곳이 갑피가 좁다고 지적했고 와이드 옵션도 미확인입니다. 한국 정가는 미발표이며 런칭 캘린더에도 아직 없습니다 — 대회 패키지가 먼저 열립니다.',
+      '뉴발란스 SC 레벨(SuperComp Rebel)의 한국 출시가 확정됐습니다 — 8월 22일(토) 오전 11시, 발매가 259,000원(218g·40/36mm·드롭 4mm). 8월 13일부터는 런허브 여의도에서 체험도 가능합니다. Road Trail Run 9.99/10에 이어 Believe in the Run도 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 평을 냈고, SC 트레이너 v3를 사실상 대체하는 자리입니다. 런유어웨이 10K 패키지(참가권 포함 259,000원)와 단독 구매 중 뭐가 이득인지 계산이 섰습니다 — 다만 RTR·Doctors of Running 두 곳이 갑피가 좁다고 지적했고 와이드 옵션은 여전히 미확인입니다.',
     thumbnail: '/images/blog/new-balance-sc-rebel-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-23',
-    updatedAt: '2026-07-29',
+    updatedAt: '2026-08-12',
     category: 'review' as const,
     readingTime: 8,
     tags: ['뉴발란스 SC 레벨', 'SC Rebel', 'Infinion 폼', 'Energy Arc', '슈퍼 트레이너', '신상 러닝화'],
     content: `
+<div class="deadline-strip">👟 <strong>(8/12 갱신) 한국 출시 확정 — 8월 22일(토) 오전 11시, 발매가 259,000원.</strong> 8월 13일(목)부터 <strong>런허브 여의도</strong>에서 실물 체험이 가능합니다. 발볼이 걱정이라면 출시 전 체험이 답입니다.</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>SC 레벨은 8월 글로벌 발매</strong>($190~200·218g·스택 40/36mm·드롭 4mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
+    <li><strong>SC 레벨 한국 출시가 8월 22일(토) 오전 11시·259,000원으로 확정</strong>됐습니다(218g·스택 40/36mm·드롭 4mm). 새 Infinion 폼에 지면 높이에 깔린 <strong>Energy Arc 플레이트</strong>를 얹은 "훈련·레이스 겸용" 슈퍼 트레이너입니다</li>
     <li>해외 리뷰가 <strong>이례적으로 높습니다</strong> — Road Trail Run 멀티 테스터가 9.99/10, 9.5/10을 줬고, Believe in the Run은 <strong>"역대 최고의 뉴발란스 러닝화"</strong>라는 표현까지 썼습니다. 포지션상 <strong><a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>를 대체</strong>합니다(278g → 218g, 60g 경량화)</li>
     <li>발목을 잡는 건 <strong>갑피 폭</strong>입니다. RTR·DOR <strong>두 곳 모두</strong> "좁다"고 지적했고 와이드 옵션도 없습니다. 발볼 넓은 한국 러너라면 시착 없이는 권하기 어렵습니다</li>
   </ul>
@@ -1777,7 +1779,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>Infinion 폼 (반응성 강화 버전)</td></tr>
     <tr><td>플레이트</td><td>Energy Arc — <strong>폼에 묻히지 않고 지면 쪽에 배치</strong></td></tr>
     <tr><td>아웃솔</td><td>CPU(캐스트 폴리우레탄) — 러버보다 내구성 우위</td></tr>
-    <tr><td>가격 / 발매</td><td>$190(RTR)~$200(공식·BITR) · 2026년 8월 (일자는 소스별로 8/6·8/20이 갈려 확정 발표 대기)</td></tr>
+    <tr><td>가격 / 발매</td><td><strong>한국 259,000원 · 8월 22일(토) 오전 11시</strong> <em>(8/12 확정)</em> · 글로벌 $190(RTR)~$200(공식·BITR)</td></tr>
   </tbody>
 </table>
 
@@ -1812,13 +1814,12 @@ export const posts_2026_07: BlogPost[] = [
 <p>비교 대상이 있습니다. 같은 뉴발란스 <a href="/blog/new-balance-sc-elite-v5-review">SC 엘리트 v5</a>는 토박스 실측 74.5mm로 <strong>"발볼 넓어도 신을 수 있는 드문 슈퍼슈즈"</strong>라는 평가를 받았고 와이드 옵션도 있습니다. DOR도 두 신발을 비교하며 <em>"엘리트 v5는 갑피가 대단히 편안한 반면 SC 레벨은 좁다"</em>고 했습니다. 같은 브랜드 안에서도 성격이 갈리는 셈이죠.</p>
 <p><strong>따라서 발볼이 넓다면 SC 레벨은 온라인 선구매 대상이 아닙니다.</strong> 발볼이 보통이거나 좁은 편이고 발등이 낮다면, 오히려 "딱 감기는 핏"이 장점이 될 수 있습니다. DOR이 <em>"엘리트 v6가 너무 공격적이라 느끼는 러너에게 좋을 수 있다 — 핏만 맞는다면"</em>이라고 단서를 단 이유입니다.</p>
 
-<h2>한국은 언제, 얼마에?</h2>
-<p>현재로선 <strong>한국 정가도, 단독 출시일도 발표되지 않았습니다.</strong> 뉴발란스코리아 런칭 캘린더에도 (7월 말 일정까지 공개된 시점 기준) SC 레벨과 SC 엘리트 v6 모두 올라와 있지 않습니다.</p>
-<p>다만 국내에서 이 신발을 먼저 만나는 경로는 이미 열려 있습니다. <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 서울 10K</a> 오프라인 패키지에 SC 레벨이 묶여 있고, 판매일이 <strong>8월 20일(쉐이크아웃런 패키지)·8월 21일(SC 레벨 패키지)</strong> 매장 선착순입니다. 글로벌 발매일과 같은 날이죠. 패키지가 259,000원이고 10K 참가권이 80,000원이니 신발 몫은 <strong>약 179,000원 상당</strong>으로 계산되지만, <strong>한국 정가가 안 나온 이상 이게 이득인지는 아직 판단할 수 없습니다.</strong></p>
-<p>참고 좌표만 두자면 국내에서 SC 트레이너 v3가 249,000원, 레벨 v5가 189,000원입니다. SC 레벨이 트레이너 v3 자리를 대체한다는 점을 감안하면 그 사이 어딘가가 되겠지만, 이건 어디까지나 추정이고 공식 발표를 기다려야 합니다.</p>
+<h2>한국 출시 확정 — 8월 22일(토) 오전 11시, 259,000원 <em>(8/12 갱신)</em></h2>
+<p>기다리던 숫자가 나왔습니다. <strong>한국 발매가 259,000원, 출시는 8월 22일(토) 오전 11시</strong>입니다. 이 글 초판에서 "트레이너 v3(249,000원)와 레벨 v5(189,000원) 사이 어딘가"로 추정했는데, 대체 대상인 트레이너 v3보다 1만원 높은 가격으로 확정됐습니다. 출시에 앞서 <strong>8월 13일(목)부터 런허브 여의도 매장에서 체험</strong>이 가능합니다 — 아래 발볼 이슈 때문에라도, 살 생각이 있다면 체험을 먼저 잡는 걸 권합니다.</p>
+<p>정가가 나오면서 <a href="/blog/nb-run-your-way-seoul-10k-2026">런유어웨이 서울 10K</a> 패키지의 계산도 끝났습니다. <strong>SC 레벨 패키지(8월 21일 매장 선착순)가 259,000원 — 신발 단독 정가와 같은 값에 10K 참가권(80,000원 상당)이 얹혀 있는 구조</strong>입니다. 대회에 나갈 생각이 조금이라도 있다면 패키지가 명백히 이득이고, 신발만 원하면 하루 뒤 8월 22일 일반 발매를 노리면 됩니다.</p>
 
 <div class="callout warning">
-  <p><strong>확정되지 않은 것들</strong> — ① <strong>한국 정가·단독 출시일 미발표</strong>(런칭 캘린더 미등재) ② <strong>RunRepeat 랩 데이터 미게시</strong>라 충격흡수·에너지 리턴·토박스 실측 mm는 아직 없습니다. 본문의 발볼 평가는 두 매체의 <strong>주관적 착화 평가</strong>이며 정량 수치가 아닙니다 ③ 와이드 옵션 제공 여부도 미확인입니다. 랩 수치와 한국 정가가 나오면 이 글을 정식 리뷰로 갱신하겠습니다.</p>
+  <p><strong>확정되지 않은 것들</strong> — ① <strong>RunRepeat 랩 데이터 미게시</strong>라 충격흡수·에너지 리턴·토박스 실측 mm는 아직 없습니다. 본문의 발볼 평가는 두 매체의 <strong>주관적 착화 평가</strong>이며 정량 수치가 아닙니다 ② <strong>와이드 옵션 제공 여부 미확인</strong>입니다. 한국 정가·출시일은 확정됐고(8/22 오전 11시·259,000원), 랩 수치가 나오면 이 글을 정식 리뷰로 갱신하겠습니다.</p>
 </div>
 
 <div class="faq">
@@ -1833,7 +1834,7 @@ export const posts_2026_07: BlogPost[] = [
   <p>현재 확인되지 않았습니다. SC 엘리트 v5와 SC 트레이너 v3는 국내에 와이드 옵션이 있었지만, SC 레벨은 아직 정보가 없습니다. 발볼이 넓다면 와이드 발매 여부가 확인될 때까지 기다리시길 권합니다.</p>
 </div>
 
-<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰, Doctors of Running 리뷰, Believe in the Run 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 가격은 RTR $190·공식/BITR $200으로 표기가 갈리고, 발매 일자도 소스별로 8/6·8/20이 갈려 "8월"로만 적습니다. 한국 정가·출시일·와이드 옵션은 미발표 상태이며 뉴발란스코리아 런칭 캘린더 미등재를 재확인했습니다(2026-07-29). RunRepeat 랩 데이터는 미게시로, 정량 수치가 나오면 갱신합니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23 · 갱신 2026-07-29 — BITR A Tier 평가 반영)</small></p>
+<p><small>※ 스펙·발매일·가격은 뉴발란스 공식 발표(2026-07-21) 기준이며, 평가는 Road Trail Run 멀티 테스터 리뷰, Doctors of Running 리뷰, Believe in the Run 리뷰(2026-07)를 종합했습니다. 무게 218g은 공식 수치이고 RTR 실측은 212g입니다. 가격은 RTR $190·공식/BITR $200으로 표기가 갈리고, 발매 일자도 소스별로 8/6·8/20이 갈려 "8월"로만 적습니다. 한국 출시일(8/22 토 오전 11시)·발매가(259,000원)·런허브 여의도 체험(8/13~)은 뉴발란스 인스타그램 공지(2026-08-12 확인) 기준입니다. 와이드 옵션은 여전히 미확인이고, RunRepeat 랩 데이터는 미게시로 정량 수치가 나오면 갱신합니다. 형제 모델 스펙은 본 사이트 신발 DB 기준입니다. (작성 2026-07-23 · 갱신 2026-07-29 BITR A Tier 반영 · 2026-08-12 한국 출시일·가격 확정 반영)</small></p>
 `,
   },
   {
@@ -1975,7 +1976,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/nb-run-your-way-seoul-10k-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-22',
-    updatedAt: '2026-07-31',
+    updatedAt: '2026-08-12',
     category: 'news' as const,
     readingTime: 9,
     tags: ['런유어웨이', 'Run your way', '뉴발란스 마라톤', '서울 10K', '여의도 마라톤', '10K 대회', '마라톤 접수', 'SC 레벨'],
@@ -2088,7 +2089,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>패키지에 들어가는 'SC 레벨'이 뭔가요</h2>
 <p>259,000원 패키지의 핵심은 <strong>SC 레벨(SuperComp Rebel)</strong>이라는 신발입니다. 그런데 이 신발, <strong>바로 어제(7월 21일) 글로벌 발표된 신제품</strong>입니다. 뉴발란스가 최상위 카본 레이서 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC 엘리트 v6</a>를 발표하면서 "훈련+레이스데이 패키지"로 함께 내놓은 데일리 트레이너죠.</p>
 <p>공식 발표 기준 SC 레벨은 <strong>218g, 스택 40/36mm, 드롭 4mm</strong>에 뉴발란스의 새 <strong>Infinion 폼</strong>을 얹었고, 글로벌 가격은 <strong>$190</strong>, 발매일은 <strong>8월 20일</strong>입니다. 즉 오프라인 패키지 판매일(8/20)과 글로벌 발매일이 같은 날이라, 이 패키지가 <strong>국내에서 SC 레벨을 손에 넣는 사실상 첫 경로</strong>가 될 가능성이 큽니다.</p>
-<p>가격을 뜯어보면, 패키지 259,000원에서 참가권 80,000원을 빼면 신발 몫이 <strong>약 179,000원</strong>입니다. 다만 SC 레벨의 <strong>한국 정가는 아직 발표되지 않아</strong> 이게 이득인지는 단정할 수 없습니다. 이름이 비슷한 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 <strong>다른 라인</strong>이니 혼동하지 마세요.</p>
+<p><em>(8/12 갱신)</em> 가격 계산이 끝났습니다. SC 레벨의 <strong>한국 단독 발매가 8월 22일(토) 오전 11시·259,000원으로 확정</strong>됐습니다 — 즉 오프라인 패키지(259,000원)는 <strong>신발 단독 정가와 같은 값에 10K 참가권(80,000원 상당)이 통째로 얹힌 구성</strong>입니다. 신발을 살 생각이 있었다면 패키지가 명백히 이득이고, 8월 13일부터는 런허브 여의도에서 실물 체험도 가능합니다. 상세 스펙·해외 평가는 <a href="/blog/new-balance-sc-rebel-preview-2026">SC 레벨 프리뷰 글</a>에 정리돼 있습니다. 이름이 비슷한 기존 <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a>(경량 데일리)와는 <strong>다른 라인</strong>이니 혼동하지 마세요.</p>
 
 <h2>기록증 — 컷오프가 아니라 출발 그룹용입니다</h2>
 <p>이 대회 안내에서 가장 오해가 많은 지점입니다. 결론부터 말하면 <strong>기록이 없어도 참가할 수 있습니다.</strong> 기록증은 출발 그룹을 나누는 데만 쓰입니다.</p>
