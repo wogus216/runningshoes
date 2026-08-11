@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 출시 정보 표 — 뉴발란스 인스타 공지(2026-08-12 확인, 출시일·가격·체험)
+  // + 공식 발표 스펙(218g). 패키지 동가 구조는 런유어웨이 공식 접수 안내 기준.
+  'new-balance-sc-rebel-korea-launch-2026': {
+    title: 'SC 레벨 한국 출시 확정',
+    subtitle: '8월 22일 오전 11시 — 같은 값 패키지엔 참가권이 공짜로 붙는다',
+    data: '259,000원 · 218g 슈퍼 트레이너 · 체험 8/13~ 런허브 여의도',
+  },
   // 출처: posts/2026-08.ts 개요 표 — 롯데리아 공식 인스타그램(@lotteria_kr) 발표 게시물,
   // 2026-08-12 확인. 10/4 서울어린이대공원 5K, 티켓 오픈·참가비 미공개(예매처 롯데잇츠 앱만 확정).
   'lotteria-baebulrun-2026': {
