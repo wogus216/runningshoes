@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 개요 표 — 롯데리아 공식 인스타그램(@lotteria_kr) 발표 게시물,
+  // 2026-08-12 확인. 10/4 서울어린이대공원 5K, 티켓 오픈·참가비 미공개(예매처 롯데잇츠 앱만 확정).
+  'lotteria-baebulrun-2026': {
+    title: '뛰고 나서 버거 — 리아는 배불런',
+    subtitle: '롯데리아의 러닝 페스티벌 — 티켓 오픈은 아직, 앱 가입부터',
+    data: '10월 4일 서울어린이대공원 · 5K · 롯데잇츠 앱 예매',
+  },
   // 출처: posts/2026-08.ts 본문 개요 표 — 공식 접수 사이트(kw-marathon.com 라운드랩 RUN),
   // 2026-08-12 확인. 11/8 춘천, 하프·10K·5K, 5,000명 선착순, 완주 기념품 라운드랩 제품 4종.
   'round-lab-run-2026': {
