@@ -161,3 +161,9 @@ If you are a copyright holder and believe your content has been used inappropria
 - Source: Salomon KR 공식몰 (cdn.shopify.com, L49230100/L49221300/L47770300 GHO 패크샷, 투명 PNG 원본)
 - Date: 2026-07-17
 - Images: 각 5 (side, angle, back, top, outsole)
+
+## Adidas 하이퍼부스트 런
+- Source: adidas Korea 공식 (https://www.adidas.co.kr/하이퍼부스트-런-러닝화/IH9467.html)
+- CDN: assets.adidas.com (w_1000, f_auto)
+- Date: 2026-08-11
+- Images: 6 (side, angle, back, top, outsole, detail)
