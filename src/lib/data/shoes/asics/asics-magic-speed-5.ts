@@ -108,5 +108,5 @@ export const shoe: Shoe = {
     { slug: 'carbon-shoes-not-for-everyone-2026', title: '카본화가 나한테도 맞을까 — 사기 전 자가진단' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FNtPEotN' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F05U5V3H' }],
 };
