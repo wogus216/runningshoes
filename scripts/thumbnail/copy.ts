@@ -38,6 +38,25 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 본문 개요 표 — 공식 접수 사이트(kw-marathon.com 라운드랩 RUN),
+  // 2026-08-12 확인. 11/8 춘천, 하프·10K·5K, 5,000명 선착순, 완주 기념품 라운드랩 제품 4종.
+  'round-lab-run-2026': {
+    title: '완주하면 화장품 4종',
+    subtitle: '2026 라운드랩 RUN — 접수 진행 중, 5,000명 선착순',
+    data: '11월 8일 춘천 의암호 · 하프·10K·5K',
+  },
+  // 출처: posts/2026-08.ts 본문 개요 표 — 공식 대회요강(busanmarathon.com) + KNN 공지
+  // (knn.co.kr/event/493910), 2026-08-12 확인. 12/6 개최, 풀 8만·10K 6만, 12,000명 선착순.
+  'busan-bridge-marathon-2026': {
+    subtitle: '광안대교·부산항대교·남항대교를 하루에 — 접수 8/24 10시',
+    data: '12월 6일 · 풀 8만·10K 6만 · 12,000명 선착순',
+  },
+  // 출처: posts/2026-08.ts 본문 — 롯데 공식 블로그 2025 발표문(blog.lotte.co.kr/49031) +
+  // 파이낸셜뉴스 2025-08-20자(5시간 매진). 2026 일정은 미발표라 작년 실적만 데이터 줄에 쓴다.
+  'style-run-2026-preview': {
+    subtitle: '작년엔 접수 5시간 매진 — 2026 공지는 아직, 8월 하순 유력',
+    data: '작년: 10/19 잠실 · 6,000명 · 마뗑킴 키트',
+  },
   // 아래 4건 출처: posts/2026-08.ts 각 글의 비교표 — 전부 신발 DB 실측(가격·무게·내구·km당 비용).
   'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026': {
     title: '페가수스 프리미엄 vs 벨로시티 4',
