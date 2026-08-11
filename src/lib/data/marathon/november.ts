@@ -44,6 +44,25 @@ export const novemberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'round-lab-run-2026',
+    name: '2026 라운드랩 RUN',
+    date: '2026-11-08',
+    month: '11월',
+    location: '춘천 송암스포츠타운 종합경기장 (강원 춘천시)',
+    region: '강원',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://www.kw-marathon.com/index_roundlab.php',
+    description:
+      '스킨케어 브랜드 라운드랩(운영사 서린컴퍼니, 춘천 소재)이 강원일보와 함께 여는 브랜드 러닝 대회로, 슬로건은 "BETTER SKIN, BETTER ROUND"입니다. 의암호 일대를 달리는 코스이고 종목은 하프·10km·5km 세 가지, 총 5,000명 선착순입니다. 접수는 8월 7일 오전 10시에 시작됐고 별도 마감일 없이 정원 소진 시 종료됩니다(환불은 10월 23일 18시까지만 가능). 완주 기념품에 완주 메달과 함께 라운드랩 제품 4종이 포함되는 것이 특징입니다. 참가비는 접수 페이지에서 확인해야 합니다.',
+    raceInfo: {
+      startTime: '09:00',
+    },
+    registrationStart: '2026-08-07',
+    lastVerified: '2026-08-12',
+  },
+  {
     id: 'sonkeechung-peace-marathon-2026',
     name: '2026 손기정평화마라톤 (제22회)',
     date: '2026-11-15',
