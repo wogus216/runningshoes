@@ -3194,7 +3194,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">860 v15 최저가 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
@@ -3384,7 +3384,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">클라우드몬스터 3 정보 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
@@ -3570,7 +3570,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">매직스피드 5 최저가 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
@@ -3881,7 +3881,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">슈퍼블라스트 3 정보 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>관련 글</h2>
@@ -4369,7 +4369,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">알파플라이 3 최저가 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>관련 글</h2>
@@ -4585,7 +4585,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">1080 v15 최저가 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>관련 글</h2>
@@ -4813,7 +4813,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">카야노 33 정보 (6/1 출시) →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <h2>다른 카테고리 세대 비교</h2>
@@ -5034,7 +5034,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">페가수스 42 정보 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트/쿠팡 파트너스 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
 </div>
 
 <p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>

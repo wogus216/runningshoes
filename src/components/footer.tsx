@@ -59,7 +59,7 @@ export function Footer() {
           <p className="text-xs text-tertiary leading-relaxed max-w-3xl mx-auto text-center mb-4">
             <strong>러닝의 모든것</strong>은 상품 판매 당사자가 아니며, 제휴 업체가 제공하는 상품 정보 및 거래에 대하여 법적 책임을 지지 않습니다.
             상품의 상태, 배송, 환불 및 정품 여부 등에 관한 모든 책임은 실제 판매처에 있습니다.
-            이 포스팅은 네이버 쇼핑 커넥트 및 쿠팡 파트너스 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다.{' '}
+            이 포스팅은 네이버 쇼핑 커넥트 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다.{' '}
             <Link href="/legal" className="underline hover:text-secondary">자세히 보기</Link>
           </p>
           <p className="text-center text-xs text-tertiary">
