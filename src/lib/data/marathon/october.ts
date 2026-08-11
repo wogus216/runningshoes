@@ -26,6 +26,21 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'lotteria-baebulrun-2026',
+    name: '2026 리아는 배불런 (롯데리아 러닝 페스티벌)',
+    date: '2026-10-04',
+    month: '10월',
+    location: '서울어린이대공원 (서울 광진구)',
+    region: '서울',
+    distances: ['5K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://www.instagram.com/p/Db2ivlZAaS1/',
+    description:
+      '롯데리아가 여는 러닝 페스티벌로, 슬로건은 "땀 흘린 만큼, 배부를 자격 있다"입니다. 종목은 5km 하나이며 버거메이트와 함께 뛰고 먹는 축제형 펀런 콘셉트입니다. 티켓 오픈 일정과 프로그램 상세는 추후 공개 예정이고, 예매는 롯데잇츠 앱에서 진행되므로 미리 회원가입을 해두는 것이 좋습니다. 8월 말 롯데잇츠에서 리아 불고기·리아 새우 구매 시 티켓 예매 혜택이 제공될 예정입니다. 참가비·정원·기록 측정 여부는 미공개입니다.',
+    lastVerified: '2026-08-12',
+  },
+  {
     id: 'siheung-half-marathon-2026',
     name: '2026 시흥시 전국하프마라톤대회 (제12회)',
     date: '2026-10-05',
