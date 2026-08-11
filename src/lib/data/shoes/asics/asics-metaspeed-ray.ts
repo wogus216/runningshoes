@@ -106,5 +106,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xEXKXHlH' }],
 };

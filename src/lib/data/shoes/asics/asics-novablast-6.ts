@@ -104,5 +104,5 @@ export const shoe: Shoe = {
     { slug: 'asics-running-shoes-lineup-tier-guide-2026', title: '아식스 러닝화 계급도' },
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5suWuF0P' }],
 };

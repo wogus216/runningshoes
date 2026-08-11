@@ -99,5 +99,5 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~포어풋',
   },
   similarShoes: ['saucony-endorphin-speed-5', 'adidas-adizero-evo-sl', 'new-balance-rebel-v5'],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5SKJKu8u' }],
 };

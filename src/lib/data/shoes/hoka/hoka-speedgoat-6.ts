@@ -96,4 +96,5 @@ export const shoe: Shoe = {
     { slug: 'hoka-speedgoat-6-vs-7-comparison-2026', title: '스피드고트 6 vs 7 — 세대 비교' },
     { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
   ],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F4WDW6D0' }],
 };

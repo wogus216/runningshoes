@@ -125,5 +125,5 @@ export const shoe: Shoe = {
     { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 계급도' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5EC4W6S9' }],
 };

@@ -95,5 +95,5 @@ export const shoe: Shoe = {
     { slug: 'new-balance-hierro-v9-trail-review-2026', title: '뉴발 히에로 v9 리뷰 — 신컬러 출시 & v8 대비 변화' },
     { slug: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026', title: '살로몬 트레일 3종 — 펄사 vs 울트라 글라이드 4 vs S/LAB' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GdTrTaDh' }],
 };

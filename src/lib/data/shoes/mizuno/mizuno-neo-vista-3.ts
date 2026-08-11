@@ -86,4 +86,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'mizuno-neo-vista-3-review-2026', title: '네오 비스타 3 심층 후기' },
   ],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xRg8g5ta' }],
 };
