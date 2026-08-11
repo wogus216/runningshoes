@@ -508,6 +508,22 @@ git commit -m "feat(saturday): (challenge) 라우트 그룹과 /saturday 페이�
 4축을 위(주력)·오른쪽(지구력)·아래(스피드)·왼쪽(꾸준함) 순으로 배치한다.
 `final` 이 있으면 두 폴리곤을 겹쳐 14주 성장을 보여준다.
 
+> ⚠️ **아래 코드의 반지름 계산은 틀렸다 (2026-08-12 리뷰에서 적발, 커밋 `4f11cb2`에서 수정됨).**
+> `r = size/2 - 18`, `lr = r + 12` 로 두면 `size=120`에서 라벨 중심이 x=114/x=6에 놓여
+> viewBox 경계까지 여백이 6밖에 안 남는다. 그런데 `지구력`·`꾸준함` 은 한글 3자라
+> `fontSize=9` 기준 반폭이 13.5라서 **양쪽 다 잘린다.**
+>
+> 실제 구현은 매직 넘버 대신 **라벨 폭 예산에서 반지름을 역산**한다:
+> ```
+> LABEL_HALF_WIDTH = (3 * 9) / 2 = 13.5   // 최대 3글자, CJK 1em 보수 가정
+> LABEL_MARGIN     = 4                     // viewBox 경계까지 남기는 여백
+> PLOT_GAP         = 8                     // 폴리곤 외곽과 라벨 사이 (겹침 방지)
+> lr = c - LABEL_HALF_WIDTH - LABEL_MARGIN // size=120 → 42.5
+> r  = lr - PLOT_GAP                       // size=120 → 34.5
+> ```
+> 각도 공식도 세 군데(폴리곤·축선·라벨)에 중복돼 있어 `axisAngle(i)` 하나로 뽑았다.
+> **현행 코드는 `src/components/challenge/stat-radar.tsx` 를 볼 것.** 아래 블록은 기록용이다.
+
 `src/components/challenge/stat-radar.tsx`:
 
 ```tsx
