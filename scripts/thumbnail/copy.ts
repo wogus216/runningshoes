@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 비교표 — 6개 대회 날짜·참가비는 마라톤 캘린더 DB + 각 대회 공식 발표
+  // (2026-08-12 기준). 카카오 8/17 마감·디즈니 8/31 오픈이 이 글의 행동 트리거.
+  'october-fun-run-races-2026-compare': {
+    title: '10월 축제형 러닝 대회 6개',
+    subtitle: '지금 움직여야 하는 건 둘뿐 — 카카오 8/17 마감, 디즈니 8/31 오픈',
+    data: '참가비 8만원이 표준가 · 기록 지향은 서울레이스 하나뿐',
+  },
   // 출처: posts/2026-08.ts 출시 정보 표 — 뉴발란스 인스타 공지(2026-08-12 확인, 출시일·가격·체험)
   // + 공식 발표 스펙(218g). 패키지 동가 구조는 런유어웨이 공식 접수 안내 기준.
   'new-balance-sc-rebel-korea-launch-2026': {
