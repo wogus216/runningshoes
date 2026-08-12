@@ -37,7 +37,12 @@ const TRENDING_COUNT = 3;
 /** 많이 읽은 글 수 */
 const POST_COUNT = 5;
 
-const OUT_PATH = join(process.cwd(), 'src/lib/data/popular.ts');
+/**
+ * 출력 경로. 기본은 리포 안이지만, 2주 주기 자동 갱신(`scripts/popular-cron.sh`)은
+ * POPULAR_OUT 으로 임시 파일을 지정한다 — 백그라운드 작업이 작업 중인 워킹트리를
+ * 더럽히면 안 되기 때문이다.
+ */
+const OUT_PATH = process.env.POPULAR_OUT || join(process.cwd(), 'src/lib/data/popular.ts');
 
 // ── GA 클라이언트 (ga-report.ts와 동일한 키 해석) ──────────
 
@@ -150,6 +155,20 @@ async function main() {
 
   // 3) 많이 읽은 글
   const posts = postViews.slice(0, POST_COUNT).map((p) => p.slug);
+
+  // ── 안전장치 ──
+  // GA 인증이 조용히 실패하거나 속성 ID가 틀리면 빈 결과가 나온다. 그걸 그대로
+  // 기록하면 자동 갱신(popular-cron.sh)이 텅 빈 인기 목록을 상용에 밀어넣는다.
+  const MIN_CATEGORIES = 3;
+  const MIN_POSTS = 3;
+  const catCount = Object.keys(byCategory).length;
+  if (catCount < MIN_CATEGORIES || posts.length < MIN_POSTS) {
+    console.error(
+      `❌ 결과가 비정상적으로 빈약합니다 (카테고리 ${catCount}/${MIN_CATEGORIES}, 글 ${posts.length}/${MIN_POSTS}).\n` +
+        '   GA 인증·속성 ID·기간을 확인하세요. 파일을 쓰지 않고 중단합니다.'
+    );
+    process.exit(1);
+  }
 
   // ── 기록 ──
   const today = new Intl.DateTimeFormat('en-CA', {
