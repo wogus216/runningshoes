@@ -25,7 +25,7 @@ export const REGION_GROUPS: { id: RegionGroupId; regions: EventRegion[] }[] = [
   { id: '전라', regions: ['전북', '전남', '광주'] },
   { id: '경상', regions: ['경북', '경남', '대구', '울산', '부산'] },
   { id: '제주', regions: ['제주'] },
-  { id: '해외', regions: ['오사카', '교토'] },
+  { id: '해외', regions: ['오사카', '교토', '도쿄'] },
 ];
 
 const REGION_TO_GROUP = new Map<EventRegion, RegionGroupId>(

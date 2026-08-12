@@ -228,4 +228,38 @@ export const marchEvents: MarathonEvent[] = [
     status: '대회종료',
     isMajor: false,
   },
+  // --- 2027 시즌 (해외) ---
+  // 참가료를 entryFees에 넣지 않는 이유는 february.ts 주석 참고(JSON-LD가 KRW 하드코딩).
+  {
+    id: 'tokyo-marathon-2027',
+    name: '도쿄 마라톤 2027',
+    date: '2027-03-07',
+    month: '3월',
+    location: '도쿄도청 출발 → 도쿄역 앞 교코도리 도착',
+    region: '도쿄',
+    distances: ['풀코스'],
+    status: '접수중',
+    isMajor: true,
+    website: 'https://www.marathon.tokyo/',
+    description:
+      '제20회 기념대회로 정원이 40,000명으로 늘었고 10.7km는 마라톤에 통합돼 폐지됐다. 세계 6대 마라톤 중 유일한 아시아 대회. 한국 거주자 참가료는 230 USD(사무수수료·소비세 포함)이고 일반 접수는 2026년 8월 14~28일, 추첨 결과는 9월 18일 발표. 참가자격은 대회일 기준 만 19세 이상이면서 6시간 30분 이내 완주 가능한 사람이다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '중급',
+      certification: 'AIMS',
+      courseDescription:
+        '고지대인 신주쿠 도쿄도청에서 출발해 도쿄역 방향으로 내려가는 구조라 평탄하고 빠른 코스라는 평이 정착돼 있다. 스이도바시·우에노히로코지·칸다·니혼바시·아사쿠사 카미나리몬·료고쿠·몬젠나카초·긴자·다마치·히비야를 지난다. 일본육상경기연맹·AIMS·월드 애슬레틱스 공인 코스.',
+    },
+    raceInfo: {
+      timeLimits: [{ distance: '풀코스', hours: 7, minutes: 0 }],
+      expectedParticipants: 40000,
+      startTime: '09:10',
+    },
+    logistics: {
+      bagStorage: true,
+    },
+    registrationStart: '2026-08-14',
+    registrationEnd: '2026-08-28',
+    lastVerified: '2026-08-12',
+  },
 ];
