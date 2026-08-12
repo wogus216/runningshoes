@@ -16,7 +16,7 @@ import { useDebounce } from './useDebounce';
  * 시·도 17개를 그대로 칩으로 깔면 필터가 목록보다 커진다. 기존 필터 패널이 쓰던
  * 권역 그룹 6개를 그대로 가져왔다.
  */
-export type RegionGroupId = '수도권' | '강원' | '충청' | '전라' | '경상' | '제주';
+export type RegionGroupId = '수도권' | '강원' | '충청' | '전라' | '경상' | '제주' | '해외';
 
 export const REGION_GROUPS: { id: RegionGroupId; regions: EventRegion[] }[] = [
   { id: '수도권', regions: ['서울', '경기', '인천'] },
@@ -25,6 +25,7 @@ export const REGION_GROUPS: { id: RegionGroupId; regions: EventRegion[] }[] = [
   { id: '전라', regions: ['전북', '전남', '광주'] },
   { id: '경상', regions: ['경북', '경남', '대구', '울산', '부산'] },
   { id: '제주', regions: ['제주'] },
+  { id: '해외', regions: ['오사카', '교토'] },
 ];
 
 const REGION_TO_GROUP = new Map<EventRegion, RegionGroupId>(
