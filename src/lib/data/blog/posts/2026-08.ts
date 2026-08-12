@@ -32,7 +32,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '기록을 노린다면 어디로 가야 하나요?',
         answer:
-          '서울레이스(10월 11일, 청계광장 출발 하프·10K)가 유일하게 기록 지향 대회입니다. 도심 100% 아스팔트 평지 순환 코스에 대한육상연맹 공인이라 하프 PB에 친화적입니다. 나머지 다섯 개는 전부 축제형이라 PB용으로는 맞지 않습니다. 다만 서울레이스는 본접수가 5월에 진행됐으니 잔여 접수 여부를 공식 사이트에서 확인해야 합니다.',
+          '서울레이스(10월 11일, 청계광장 출발 하프·10K)가 유일하게 기록 지향 대회입니다. 다만 접수는 이미 끝났습니다 — 본접수가 5월 27일에 진행됐고, 공식 공지도 7월부터 참가자 대상 출발 그룹 배정 안내 단계로 넘어갔습니다. 즉 10월 라인업 여섯 개 중 지금 신청 가능한 기록 대회는 없습니다. 가을에 PB를 노린다면 춘천마라톤 같은 다른 대회를 봐야 하고, 하반기 기록 대회 일정은 별도 글에 정리해뒀습니다.',
       },
       {
         question: '첫 대회인데 어디가 좋을까요?',
@@ -48,7 +48,7 @@ export const posts_2026_08: BlogPost[] = [
   <ul>
     <li><strong>2026년 10월은 브랜드·캐릭터 러닝 대회가 여섯 개 몰린 달입니다</strong> — 배불런·런유어웨이(10/4), 카카오프렌즈 런(10/10), 서울레이스(10/11), 디즈니런(10/24), 그리고 일정 미발표 스타일런</li>
     <li><strong>지금 손을 써야 하는 건 둘뿐</strong> — 카카오는 8/17 마감, 디즈니는 8/31 오픈. 배불런·스타일런은 티켓 오픈 대기, 런유어웨이는 래플이 끝나 매장 패키지만 남았습니다</li>
-    <li><strong>참가비 8만원이 표준가가 됐고</strong>(카카오·디즈니 10K·런유어웨이), 여섯 중 <strong>기록 지향은 서울레이스 하나뿐</strong>입니다. 나머지는 전부 축제형</li>
+    <li><strong>참가비 8만원이 표준가가 됐고</strong>(카카오·디즈니 10K·런유어웨이), 여섯 중 기록 지향은 서울레이스 하나뿐인데 <strong>그마저 5월에 접수가 끝났습니다</strong> — 즉 10월에 지금 신청 가능한 기록 대회는 없고, 남은 건 전부 축제형입니다</li>
   </ul>
 </div>
 
@@ -93,7 +93,7 @@ export const posts_2026_08: BlogPost[] = [
       <td>10/11(일)<br>08:00</td>
       <td>청계광장<br>하프·10K</td>
       <td>하프 7만<br>10K 6만</td>
-      <td>본접수 5월 진행<br><small>잔여 여부 공식 확인</small></td>
+      <td><strong>접수 마감</strong><br><small>본접수 5/27 종료</small></td>
     </tr>
     <tr>
       <td><strong><a href="/marathon/disney-run-incheon-2026">디즈니런 인천</a></strong><br><small>디즈니</small></td>
@@ -157,7 +157,9 @@ export const posts_2026_08: BlogPost[] = [
 
 <p><strong>서울레이스(10/11)</strong>가 유일한 기록 지향 대회입니다. 청계광장→종로→숭례문→시청→청계천→DDP로 이어지는 도심 100% 아스팔트 평지 순환 코스에 대한육상연맹 공인, 작년 12,800명으로 역대 최다를 찍었습니다. 하프 PB를 노린다면 10월 라인업에서 사실상 이 대회 하나입니다.</p>
 
-<p>단, 본접수가 5월(우선접수 5/11~15, 본접수 5/27)에 진행됐습니다. 8월 12일 기준 잔여 접수가 있는지는 공식 사이트에서 직접 확인해야 합니다. 가을 풀코스·하프 기록 대회를 폭넓게 보고 싶다면 <a href="/blog/2026-second-half-marathon-schedule-korea">하반기 마라톤 완전정복</a>이 더 맞습니다.</p>
+<p><strong>단, 접수는 이미 끝났습니다.</strong> 우선접수 5/11~15, 본접수 5/27로 진행됐고, 공식 공지는 7월부터 <strong>참가자 대상 출발 그룹 배정용 기록증 제출</strong> 단계로 넘어갔습니다(8월 7일 자원봉사 모집 공지에서는 참가 규모를 <strong>1만 3천 명</strong>으로 못 박았습니다). 추가접수 공지도 없습니다.</p>
+
+<p>정리하면 <strong>10월 여섯 대회 중 지금 신청할 수 있는 기록 대회는 없습니다.</strong> 남은 다섯은 전부 축제형이고, 그중 그나마 기록에 가까운 건 출발 그룹을 나누는 런유어웨이 10K인데 이마저 래플이 끝났습니다. 가을에 PB를 노린다면 10월 밖에서 찾아야 하고, 대회별 접수일은 <a href="/blog/2026-second-half-marathon-schedule-korea">하반기 마라톤 완전정복</a>에 정리돼 있습니다.</p>
 
 <h2>5. 목적별 30초 추천</h2>
 
@@ -165,7 +167,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>생애 첫 대회 / 가족·아이 동반</strong> → 배불런(5K 단일) 또는 디즈니런 5K(가족 친화 설계)</li>
   <li><strong>굿즈가 목적</strong> → 카카오(러닝 의류 세트 + 협찬 패키지 규모가 가장 큼)</li>
   <li><strong>러닝화가 필요했다</strong> → 런유어웨이 8/20·21 매장 패키지(신발값에 참가권이 붙는 구조)</li>
-  <li><strong>기록·PB</strong> → 서울레이스 하프(잔여 접수 확인 필요)</li>
+  <li><strong>기록·PB</strong> → <strong>10월 안엔 없습니다</strong>(유일한 기록 대회 서울레이스는 5월에 접수 마감) — <a href="/blog/2026-second-half-marathon-schedule-korea">하반기 일정</a>에서 11~12월 대회를 보세요</li>
   <li><strong>패션·트렌드</strong> → 스타일런(발표 대기 — 작년 5시간 매진이라 알림 설정 필수)</li>
   <li><strong>추첨 떨어져도 뛰고 싶다</strong> → 카카오 버추얼 런(카카오맵·같이가치 연계)</li>
 </ul>
@@ -184,7 +186,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">확정되지 않은 항목</p>
-    <p>리아는 배불런의 티켓 오픈일·참가비, 스타일런의 2026년 일정 전체, 서울레이스의 현재 잔여 접수 여부는 2026년 8월 12일 기준 미확인입니다. 카카오프렌즈 런도 접수는 열렸지만 환불 규정·코스 상세·기록 계측 여부 등 세부 요강은 아직 공개 자료에서 확인되지 않았습니다. 각 대회 공식 채널에서 최종 확인하시고, 확정되는 대로 이 글을 갱신하겠습니다.</p>
+    <p>리아는 배불런의 티켓 오픈일·참가비, 스타일런의 2026년 일정 전체는 2026년 8월 12일 기준 미공개입니다. 카카오프렌즈 런도 접수는 열렸지만 환불 규정·코스 상세·기록 계측 여부 등 세부 요강은 아직 공개 자료에서 확인되지 않았습니다. 각 대회 공식 채널에서 최종 확인하시고, 확정되는 대로 이 글을 갱신하겠습니다.</p>
   </div>
 </div>
 
@@ -659,7 +661,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <ul>
   <li><strong>10월 10일</strong> — <a href="/marathon/kakao-friends-run-2026">카카오프렌즈 런</a> (탄천 1만 명, <a href="/blog/kakao-friends-run-2026">접수 분석 글</a> 참고)</li>
-  <li><strong>10월 11일</strong> — <a href="/marathon/seoul-race-2026">서울레이스</a> (도심 하프·10K — 기록 지향이면 이쪽)</li>
+  <li><strong>10월 11일</strong> — <a href="/marathon/seoul-race-2026">서울레이스</a> (도심 하프·10K — 10월 유일의 기록 대회지만 <strong>5월에 접수 마감</strong>)</li>
   <li><strong>10월 중하순(미확정)</strong> — <strong>스타일런</strong> (잠실, 패션 펀런)</li>
   <li><strong>10월 24일</strong> — <a href="/marathon/disney-run-incheon-2026">디즈니런 인천</a> (캐릭터 IP 펀런)</li>
 </ul>
@@ -2740,7 +2742,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>9월</strong> — <a href="/marathon/mudo-run-gyeongju-2026">무한도전 RUN in 경주</a> (예능 IP 펀런)</li>
   <li><strong>10월 4일</strong> — <a href="/blog/lotteria-baebulrun-2026">리아는 배불런</a> (롯데리아, 서울어린이대공원 5K) · <a href="/marathon/nb-run-your-way-seoul-10k-2026">NB 런 유어 웨이 서울 10K</a> (브랜드 대회) — <strong>같은 날 겹칩니다</strong></li>
   <li><strong>10월 10일</strong> — <strong>카카오프렌즈 런</strong> (탄천, 5K·10K)</li>
-  <li><strong>10월 11일</strong> — <a href="/marathon/seoul-race-2026">서울레이스</a> (도심 하프·10K — 기록 지향이면 이쪽)</li>
+  <li><strong>10월 11일</strong> — <a href="/marathon/seoul-race-2026">서울레이스</a> (도심 하프·10K — 10월 유일의 기록 대회지만 <strong>5월에 접수 마감</strong>)</li>
   <li><strong>10월 24일</strong> — <a href="/marathon/disney-run-incheon-2026">디즈니런 인천</a> (캐릭터 IP 펀런)</li>
   <li><strong>10월 중하순(미확정)</strong> — <a href="/blog/style-run-2026-preview">스타일런</a> (롯데백화점, 잠실 패션 펀런)</li>
 </ul>

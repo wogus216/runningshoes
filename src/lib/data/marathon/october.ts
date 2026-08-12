@@ -241,11 +241,11 @@ export const octoberEvents: MarathonEvent[] = [
     location: '청계광장 앞 세종대로',
     region: '서울',
     distances: ['하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://www.seoul-race.co.kr/',
     description:
-      '동마 시리즈 유일 가을 도심 페스티벌형 하프·10K. 청계광장→종로→숭례문→시청→청계천→DDP. 우선접수 5/11~5/15, 본접수 5/27 19시 하프·21시 10K. 2025년 12,800명 역대 최다.',
+      '동마 시리즈 유일 가을 도심 페스티벌형 하프·10K. 청계광장→종로→숭례문→시청→청계천→DDP. 우선접수 5/11~5/15, 본접수 5/27 19시 하프·21시 10K로 진행돼 접수는 종료됐습니다(공식 공지가 7월부터 참가자 대상 출발 그룹 배정용 기록증 제출을 안내하고, 8월 7일 자원봉사 모집 공지에서 참가 규모를 1만 3천 명으로 명시 — 2026-08-12 확인). 2025년 12,800명 역대 최다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
@@ -257,9 +257,11 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '하프', fee: 70000 },
         { distance: '10K', fee: 60000 },
       ],
-      expectedParticipants: 12500,
+      expectedParticipants: 13000,
       startTime: '08:00',
     },
+    registrationEnd: '2026-05-27',
+    lastVerified: '2026-08-12',
   },
   {
     id: 'disney-run-incheon-2026',
