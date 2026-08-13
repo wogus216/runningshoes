@@ -198,6 +198,25 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
+    id: 'brave-cookie-run-seoul-2026',
+    name: '2026 용감한 쿠키RUN in 서울',
+    date: '2026-10-25',
+    month: '10월',
+    location: '서울어린이대공원 (서울 광진구)',
+    region: '서울',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: false,
+    registrationStart: '2026-08-20',
+    registrationEnd: '2026-09-21',
+    lastVerified: '2026-08-13',
+    description:
+      '데브시스터즈 게임 IP "쿠키런"의 첫 오프라인 러닝 대회. 10K 단일 종목이며 서울어린이대공원이 집결지입니다. 접수는 8월 20일(목) 오후 2시부터 9월 21일(월) 오후 5시까지 러너블 앱/웹과 더현대Hi 앱/웹에서 받습니다(참가비 7만원). 같은 주말인 10월 24~25일 "쿠키런 그랜드 페스티벌"이 함께 열립니다. 접수 개시 전이라 정원·코스·기념품 구성은 아직 공개되지 않았으니 오픈 시 공식 요강을 확인하세요.',
+    raceInfo: {
+      entryFees: [{ distance: '10K', fee: 70000 }],
+    },
+  },
+  {
     id: 'busan-sea-marathon-2026',
     name: '성우하이텍 2026 부산바다마라톤',
     date: '2026-10-25',
