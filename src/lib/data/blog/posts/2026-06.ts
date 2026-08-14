@@ -5328,26 +5328,27 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'tokyo-marathon-2027-registration-guide',
     slug: 'tokyo-marathon-2027-registration-guide',
-    title: '도쿄마라톤 2027 신청 완전 가이드 — 지금 열린 자선·추첨·OTG 3가지 길 | 비행 2시간·시차 0, 한국 러너 첫 메이저 1순위',
-    description: '세계 6대 마라톤 중 지금 신청할 수 있는 건 도쿄뿐입니다. 자선(6/24~7/9, 기부 ¥10만)·무료 일반추첨(8/14~8/28)·One Tokyo Global 선행추첨 — 세 가지 길의 비용과 손익, 한국 러너가 자주 틀리는 신청 실수(¥10만은 참가비가 아니다, 단체별 해외 수락 차이)까지 공식 정보로 정리했습니다. 인천에서 2시간·시차 0인 도쿄는 첫 메이저로 가장 합리적입니다.',
+    title: '도쿄마라톤 2027 일반추첨 접수중 — 8/28 17시 마감, 첫날 이미 정원 초과 | 선착순 아니니 서두르지 마세요',
+    description: '도쿄마라톤 2027 일반추첨이 8월 14일(금) 11시(JST)에 열렸고 8월 28일(금) 17시에 마감됩니다. 오픈 4시간 만에 정원(4만 명)을 넘겨 추첨이 확정됐지만 선착순이 아니라 마감 전 아무 때나 넣으면 조건은 같습니다. 참가비는 2027 요강에서 확정 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도), 결과 발표는 9월 18일. 자선(7/9)·One Tokyo Global(8/13) 경로는 이미 마감돼 지금 남은 길은 일반추첨 하나입니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
     thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    updatedAt: '2026-08-14',
     category: 'news' as const,
-    readingTime: 9,
-    tags: ['도쿄마라톤', '도쿄마라톤 2027', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
+    readingTime: 10,
+    tags: ['도쿄마라톤', '도쿄마라톤 2027', '도쿄마라톤 접수', '도쿄마라톤 추첨', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
     content: `
 <div class="deadline-strip">
-  <span class="dl-badge">📢 접수 임박</span>
-  <span class="dl-text">도쿄마라톤 2027 — 자선 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)} 오픈 ~ ${md(MAJOR_DEADLINES.tokyo2027.charity.close)} 마감 · 무료 일반추첨 ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}</span>
+  <span class="dl-badge">🔴 접수중</span>
+  <span class="dl-text">도쿄마라톤 2027 일반추첨 — <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST) 마감</strong> · 첫날 정원 초과로 추첨 확정 · 결과 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</span>
 </div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>세계 6대 메이저 중 지금 신청 가능한 건 도쿄뿐</strong>입니다(런던·베를린·시카고·뉴욕·시드니는 이번 사이클 마감). 도쿄 2027(${MAJOR_DEADLINES.tokyo2027.raceDate.replace(/-/g, '.')})은 신청 창이 열려 있습니다.</li>
-    <li><strong>길은 3가지</strong> — ① 자선(${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}, 최소 기부 ¥10만≈${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}) ② <strong>무료 일반추첨</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}) ③ One Tokyo Global 선행추첨(${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}).</li>
-    <li><strong>한국 러너에게 가장 현실적인 첫 메이저</strong> — 인천→하네다 약 2시간, <strong>시차 0</strong>, 도심 평지 고속 코스. 단 "¥10만이 참가비"라는 오해와 자선 단체별 해외 수락 차이를 꼭 짚어야 합니다.</li>
+    <li><strong>일반추첨이 열렸고 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됩니다(대회일 ${MAJOR_DEADLINES.tokyo2027.raceDate.replace(/-/g, '.')}). 응모는 무료이고, 당첨되면 그때 참가비를 냅니다 — 해외 러너 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong>(국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()}), 2027 요강에서 확정된 금액입니다.</li>
+    <li><strong>오픈 당일 이미 정원을 넘겨 추첨이 확정</strong>됐습니다(정원 ${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명). 다만 <strong>선착순이 아니라</strong> 마감 전에 넣기만 하면 조건이 같습니다 — 공식도 "접속이 몰리면 나중에 다시 시도하라"고 안내합니다. <strong>서두를 이유가 없습니다.</strong></li>
+    <li><strong>지금 남은 길은 일반추첨 하나</strong>입니다 — 자선(${md(MAJOR_DEADLINES.tokyo2027.charity.close)})과 One Tokyo Global(${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)})은 이미 마감됐습니다. 결과는 <strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</strong> My Entry에서 발표되고, 당첨 시 참가비 납부는 ${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)}입니다.</li>
   </ul>
 </div>
 
@@ -5359,22 +5360,33 @@ export const posts_2026_06: BlogPost[] = [
   </div>
 </div>
 
-<h2>지금 열린 3가지 길 — 한눈에 비교</h2>
+<h2>3가지 길 중 지금 열려 있는 건 하나</h2>
+
+<p>도쿄마라톤에 들어가는 경로는 셋이지만 신청 창이 각각 다르게 열리고 닫힙니다. 오늘 기준 상태는 이렇습니다.</p>
 
 <table>
   <thead>
-    <tr><th>경로</th><th>신청 기간</th><th>비용</th><th>특징</th></tr>
+    <tr><th>경로</th><th>신청 기간</th><th>비용</th><th>현재 상태</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>자선(RUN with HEART)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}</td><td>기부 ¥10만~ <strong>+ 참가비 별도</strong></td><td>당첨 걱정 없이 출전권 확보(단체별 조건)</td></tr>
-    <tr><td><strong>일반 추첨(무료 응모)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}</td><td>당첨 시 참가비만</td><td>경쟁률 높음. 가장 저렴하지만 운</td></tr>
-    <tr><td><strong>One Tokyo Global</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}</td><td>연회비 ¥3만 + 당첨 시 참가비</td><td>선행 추첨 + 연속 미당첨 시 특별 추첨 자격</td></tr>
+    <tr><td><strong>일반 추첨(무료 응모)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11시~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)</td><td>응모 무료 · 당첨 시 참가비만</td><td><strong>🔴 접수중</strong> — 유일하게 열려 있음</td></tr>
+    <tr><td><strong>One Tokyo Global</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.open)}~${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}</td><td>연회비 ¥3만 + 당첨 시 참가비</td><td>마감 — 결과 9/1 발표</td></tr>
+    <tr><td><strong>자선(RUN with HEART)</strong></td><td>${md(MAJOR_DEADLINES.tokyo2027.charity.open)}~${md(MAJOR_DEADLINES.tokyo2027.charity.close)}</td><td>기부 ¥10만~ <strong>+ 참가비 별도</strong></td><td>마감 — 기부금 납부만 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지</td></tr>
   </tbody>
 </table>
 
-<p>세 경로는 <strong>동시 신청이 안 됩니다</strong>. "확실히 가고 싶다(돈 더 써도 됨)"면 자선, "비용 최소(운에 맡김)"면 일반 추첨, "매년 도전할 거다"면 One Tokyo Global이 맞습니다.</p>
+<p>세 경로는 <strong>동시 신청이 안 됩니다</strong>. 다만 지금은 고민할 것도 없이 <strong>일반 추첨 하나</strong>만 남았습니다. 아래 자선·One Tokyo Global 설명은 <strong>2028 대회를 노리는 러너를 위한 참고</strong>로 남겨둡니다 — 두 경로 모두 매년 비슷한 시기(자선 6월 말, OTG 7월 말)에 열리므로, 내년에 "확실히 가고 싶다"면 지금부터 계획해야 하는 경로입니다.</p>
 
-<h2>자선 루트의 진실 — "¥10만이 참가비"가 아닙니다</h2>
+<div class="callout warning">
+  <span class="callout-icon">⏳</span>
+  <div class="callout-body">
+    <p class="callout-title">서두를 필요가 없습니다 — 선착순이 아닙니다</p>
+    <p>접수가 열린 ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 오전 11시(JST)로부터 몇 시간 만에 <strong>신청자가 정원 ${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명을 넘겨 추첨 실시가 공식 확정</strong>됐습니다. 그런데 이건 나쁜 소식이 아닙니다 — 도쿄마라톤 일반접수는 <strong>처음부터 선착순이 아니라 추첨</strong>이라, 정원 초과는 예정된 수순입니다.</p>
+    <p>공식 공지도 같은 얘기를 합니다: <em>"접수 직후에는 접속이 몰려 사이트가 느릴 수 있습니다. 선착순으로 접수하지 않으니 나중에 다시 접속해 주세요."</em> <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시 전에 넣기만 하면 당첨 확률은 동일합니다.</strong> 오픈 첫날 광클할 이유가 없다는 뜻입니다.</p>
+  </div>
+</div>
+
+<h2>자선 루트의 진실 — "¥10만이 참가비"가 아닙니다 <small>(2027은 마감 · 2028 대비용)</small></h2>
 
 <div class="callout warning">
   <span class="callout-icon">💸</span>
@@ -5387,20 +5399,54 @@ export const posts_2026_06: BlogPost[] = [
   </div>
 </div>
 
-<p>그래도 자선의 장점은 분명합니다 — <strong>추첨 운에 기대지 않고 출전권을 확보</strong>할 수 있다는 것. 신청은 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)} 오픈해서 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}에 마감되고, 기부금 납부는 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지입니다. 비용을 감수하고 "2027년에 반드시" 가고 싶은 러너에게 맞습니다.</p>
+<p>그래도 자선의 장점은 분명합니다 — <strong>추첨 운에 기대지 않고 출전권을 확보</strong>할 수 있다는 것. 2027 대회는 ${md(MAJOR_DEADLINES.tokyo2027.charity.open)}에 열려 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}에 이미 마감됐고, 지금은 선정된 러너의 기부금 납부만 ${md(MAJOR_DEADLINES.tokyo2027.charity.donatePayBy)}까지 남아 있습니다. <strong>추첨에 기대지 않고 확실히 가고 싶다면 2028 대회를 겨냥해 내년 6월 말을 노려야 합니다</strong> — 매년 이 시기에 열립니다.</p>
 
-<h2>무료로 가는 길 — 일반 추첨</h2>
+<h2>지금 해야 할 것 — 일반 추첨 응모 (${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감)</h2>
 
-<p>가장 저렴한 건 <strong>무료 일반 추첨</strong>입니다. ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.close)}에 응모하고, 당첨되면 그때 참가비만 냅니다(결과는 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} 발표). 참가비는 2026 대회 기준 <strong>해외 러너 약 $230(국내 ¥19,800)</strong>이었는데, <strong>2027 금액은 아직 공식 미발표</strong>라 변동될 수 있습니다.</p>
+<p>응모 자체는 <strong>무료</strong>입니다. ${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11시부터 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST, 한국시간과 동일)까지 넣고, 당첨되면 그때 참가비를 냅니다. 6월에 이 글을 처음 쓸 때는 2027 참가비가 미발표였는데, <strong>이제 공식 요강에 확정됐습니다.</strong></p>
 
-<p>단점은 <strong>경쟁률</strong>입니다. 메이저인 만큼 추첨 당첨이 쉽지 않아요. "올해 안 되면 내년에 또" 식으로 여러 해 도전할 생각이라면, 선행 추첨과 연속 미당첨 보장 제도가 있는 <strong>One Tokyo Global</strong>(연회비 ¥3만)을 함께 고려할 만합니다. 단, 이 제도도 <strong>당첨 보장이 아니라 '특별 추첨 자격'</strong>이라는 점을 오해하면 안 됩니다.</p>
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>응모 기간</td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.open)} 11:00 ~ ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17:00 (JST)</td></tr>
+    <tr><td>참가비</td><td>해외 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong> / 국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()} <small>(사무수수료·소비세 포함)</small></td></tr>
+    <tr><td>짐 보관</td><td>희망 시 <strong>¥${MAJOR_DEADLINES.tokyo2027.ballot.baggageFeeJpy.toLocaleString()} 별도</strong> — 참가비 결제 후 따로 결제해야 합니다</td></tr>
+    <tr><td>결과 발표</td><td>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} · My Entry에서 확인</td></tr>
+    <tr><td>참가비 납부</td><td>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)} 11:00 ~ ${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17:00 (JST)</td></tr>
+    <tr><td>참가 자격</td><td>대회일 기준 만 19세 이상 · <strong>6시간 30분 내 완주 가능한 사람</strong> (대회 제한시간은 7시간)</td></tr>
+    <tr><td>정원</td><td>${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명 (20주년 기념 확대)</td></tr>
+  </tbody>
+</table>
+
+<p>놓치기 쉬운 두 가지가 있습니다. 하나는 <strong>짐 보관이 유료</strong>라는 것 — 참가비에 포함이 아니라 ¥1,200을 따로 결제해야 합니다. 다른 하나는 <strong>당첨 후 납부 기간이 열흘 남짓</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})이라는 것입니다. 발표일에 메일이 오지 않을 수도 있으니 <strong>9월 18일에는 My Entry에 직접 들어가 확인</strong>하세요. 이 기간을 넘기면 당첨돼도 무효입니다.</p>
+
+<p>단점은 <strong>경쟁률</strong>입니다. 오픈 당일 정원이 찬 데서 보듯 메이저 중에서도 인기가 높습니다. "올해 안 되면 내년에 또" 식으로 여러 해 도전할 생각이라면, 선행 추첨과 연속 미당첨 보장 제도가 있는 <strong>One Tokyo Global</strong>(연회비 ¥3만)을 다음 사이클에 고려할 만합니다. 단, 이 제도도 <strong>당첨 보장이 아니라 '특별 추첨 자격'</strong>이라는 점을 오해하면 안 됩니다. 참고로 세미엘리트·One Tokyo Global에서 떨어진 사람도 <strong>일반 추첨에 다시 응모할 수 있습니다</strong>(중복 불이익 없음).</p>
+
+<h2>20주년이라 달라지는 것들</h2>
+
+<p>2027년은 도쿄마라톤 <strong>20회째</strong> 대회입니다. 기념 대회라 평년과 다른 항목이 몇 가지 확정됐습니다.</p>
+
+<ul>
+  <li><strong>정원 4만 명</strong> — 역대 최대 규모로 늘었습니다. 그만큼 추첨 문도 조금 넓어진 셈입니다(대신 10.7km 종목은 마라톤에 통합돼 없어졌습니다)</li>
+  <li><strong>프리미엄 완주 메달</strong> — 지름 <strong>100mm</strong> 특별 에디션입니다. 앞면에 '20' 그래픽, 뒷면에는 코스를 따라 지나는 도쿄 랜드마크가 새겨집니다. 완주자에게만 주어집니다</li>
+  <li><strong>듀오 팀(Duo Team) 부문 신설</strong> — 러너(Pusher)가 전용 버기에 탄 파트너(Rider)를 밀며 함께 뛰는 2인 1팀 종목입니다. <strong>신청 방법이 다릅니다</strong> — 온라인 폼이 아니라 접수 기간 안에 <code>tmf_duo@tokyo42195.org</code>로 연락해야 합니다</li>
+  <li><strong>장애인·휠체어 부문</strong>이 일반접수 안에 함께 열립니다</li>
+  <li><strong>"완주율 100% 지원" 프로젝트</strong> — 참가자에게 WWS(Workout Well-being Scorer)를 제공합니다. PC·스마트폰 카메라로 얼굴을 30초쯤 촬영하면 심박·스트레스 같은 지표를 추정해 컨디션 관리를 돕는 서비스입니다</li>
+</ul>
 
 <h2>한국 러너 신청 체크리스트</h2>
+
+<p>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감 전에 확인할 것들입니다. 시차가 0이라 JST 시각을 그대로 한국시간으로 읽으면 됩니다.</p>
 
 <ul>
   <li><strong>여권 영문명과 100% 일치</strong> — 신청 시 영문 이름을 여권과 다르게 적으면 입국·확인에서 문제가 됩니다.</li>
   <li><strong>해외 결제 카드 준비</strong> — 결제는 신용카드/지정 온라인 결제만. 완료 후 <strong>환불·이름 변경·양도 불가</strong>입니다.</li>
-  <li><strong>환율은 변동分 감안</strong> — ¥10만 ≈ ${MAJOR_DEADLINES.tokyo2027.charity.minDonationKrwApprox}(2026-06 기준). 신청 시점 환율로 다시 계산하세요.</li>
+  <li><strong>My Entry 계정을 먼저 만들 것</strong> — 응모도 결과 확인도 전부 My Entry(myentry.onetokyo.org)에서 이뤄집니다. 계정 생성부터 하다 마감에 쫓기지 마세요.</li>
+  <li><strong>9월 18일은 직접 들어가서 확인</strong> — 당첨 통보 메일이 스팸으로 가거나 누락될 수 있습니다. 납부 기한이 ${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)}까지라 놓치면 당첨이 무효가 됩니다.</li>
+  <li><strong>짐 보관은 별도 결제</strong> — ¥${MAJOR_DEADLINES.tokyo2027.ballot.baggageFeeJpy.toLocaleString()}이 참가비에 포함돼 있지 않습니다. 필요하면 참가비 결제 후 따로 신청하세요.</li>
+  <li><strong>환율은 변동分 감안</strong> — 참가비 USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}는 달러 표기라 결제 시점 환율이 그대로 반영됩니다.</li>
   <li><strong>거리부터 확정</strong> — 첫 풀코스라면 무리하지 말고 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하세요.</li>
   <li><strong>신발</strong> — 평지 고속 코스라 PB를 노린다면 카본 슈퍼슈즈가 유리합니다(아래 추천).</li>
 </ul>
@@ -5430,7 +5476,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 도쿄마라톤·One Tokyo 공식 발표를 토대로 작성했습니다. 2027 참가비 확정액·추첨 결과 발표 정확일·자선 단체별 해외 수락 여부는 공식 미발표/단체별 상이라 변동될 수 있습니다. 신청 전 도쿄마라톤 공식(marathon.tokyo)에서 최종 확인하세요.</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 2026-06-13 최초 작성, <strong>2026-08-14 갱신</strong>. 갱신분은 도쿄마라톤 공식 사이트(marathon.tokyo)를 직접 확인한 내용입니다 — 일반접수 오픈 공지(8/14 11:00 게시)와 정원 초과·추첨 실시 공지(같은 날 15:19 게시), 접수 일정 페이지(경로별 기간·결과 발표·납부 기간), 대회 요강(정원 40,000명·참가비 국내 ¥19,800/해외 USD 230·짐 보관 ¥1,200·참가 자격·제한시간). 20주년 완주 메달 사양(100mm, 앞면 '20' 그래픽·뒷면 도쿄 랜드마크)은 공식 발표를 정리한 인스타그램 @runner_iffu 2026-08-12 게시물 기준입니다. 자선 단체별 해외 거주자 수락 여부는 단체마다 다르므로 개별 확인이 필요합니다. 신청 전 공식에서 최종 확인하세요.</p>
 `,
   },
   {

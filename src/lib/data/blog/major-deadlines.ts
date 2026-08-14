@@ -9,7 +9,7 @@
 //
 // 모든 수치는 공식 발표 기준. 미확정은 명시. 환율은 근사/범위로만.
 
-export const MAJOR_DEADLINES_AS_OF = '2026-06-13';
+export const MAJOR_DEADLINES_AS_OF = '2026-08-14';
 
 // ISO('2026-07-09') → 'M/D'('7/9'). SSOT 날짜를 본문 프로즈에 주입할 때 사용.
 export function md(iso: string): string {
@@ -22,7 +22,7 @@ export const MAJOR_DEADLINES = {
   tokyo2027: {
     name: '도쿄마라톤 2027',
     raceDate: '2027-03-07',
-    statusLabel: '자선 6/24 오픈 · 일반추첨 8/14',
+    statusLabel: '일반추첨 접수중 ~8/28 · 정원 초과로 추첨 확정',
     // 자선(RUN with HEART): 신청 6/24~7/9, 기부금 납부 마감 8/31, 41개 단체, 최소 ¥100,000
     // ⚠️ 단체별로 해외 거주자 수락 여부가 다름(일부 일본 거주자 한정) — 개별 확인 필요
     // ⚠️ 기부금 ¥100,000은 참가비와 별도(참가비 추가 납부)
@@ -35,14 +35,23 @@ export const MAJOR_DEADLINES = {
       charities: 41,
       intlNote: '단체별 상이(일부 일본 거주자 한정) — 개별 확인 필요',
     },
-    // 일반 추첨: 8/14~8/28(공식 PDF 기준, 일부 소스 8/31 표기), 결과 9월 중
-    // 참가비는 2026 기준(국내 ¥19,800 / 해외 $230) — 2027 공식 미발표, 변동 가능
+    // 일반 추첨: 8/14 11:00 ~ 8/28 17:00 JST, 결과 9/18 발표(My Entry), 참가비 납부 9/18~9/30
+    // 2026-08-14 11:00 접수 오픈 → 같은 날 15:19 공식 "정원 초과, 추첨 실시" 공지.
+    // ⚠️ 선착순이 아니다 — 공식이 "혼잡하면 나중에 다시 접속하라"고 명시. 마감 전 아무 때나 넣으면 동일.
+    // 참가비는 2027 요강에서 확정(국내 ¥19,800 / 해외 $230, 사무수수료·소비세 포함) — 2026과 동액.
     ballot: {
       open: '2026-08-14',
       close: '2026-08-28',
-      feeDomesticJpy2026: 19800,
-      feeOverseasUsd2026: 230,
-      resultMonth: '2026년 9월 중',
+      openTimeJst: '11:00',
+      closeTimeJst: '17:00',
+      feeDomesticJpy: 19800,
+      feeOverseasUsd: 230,
+      baggageFeeJpy: 1200, // 짐 보관은 별도 결제(세금 포함)
+      resultMonth: '2026년 9월 18일(금)',
+      feePayFrom: '2026-09-18',
+      feePayBy: '2026-09-30',
+      drawingConfirmed: true, // 2026-08-14 공식 공지로 추첨 확정
+      fieldSize: 40000,
     },
     oneTokyoGlobal: { open: '2026-07-31', close: '2026-08-13', annualFeeJpy: 30000 },
     intlEligible: true,
