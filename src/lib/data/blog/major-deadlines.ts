@@ -9,7 +9,7 @@
 //
 // 모든 수치는 공식 발표 기준. 미확정은 명시. 환율은 근사/범위로만.
 
-export const MAJOR_DEADLINES_AS_OF = '2026-08-14';
+export const MAJOR_DEADLINES_AS_OF = '2026-08-15';
 
 // ISO('2026-07-09') → 'M/D'('7/9'). SSOT 날짜를 본문 프로즈에 주입할 때 사용.
 export function md(iso: string): string {
@@ -53,7 +53,16 @@ export const MAJOR_DEADLINES = {
       drawingConfirmed: true, // 2026-08-14 공식 공지로 추첨 확정
       fieldSize: 40000,
     },
-    oneTokyoGlobal: { open: '2026-07-31', close: '2026-08-13', annualFeeJpy: 30000 },
+    // 해외 거주자 전용 창구(영어 사이트). 2026-08-13 17:00 마감 — 일반응모보다 2주 먼저 닫힘.
+    // ⚠️ 공식 FAQ: "해외 거주자는 국적 불문 영어 사이트에서 엔트리" → 한국 거주자가 지금 열린
+    //    국내 일반응모에 넣어도 유효한지는 공식에 명시 없음(=불명, 본문에서 단정 금지).
+    oneTokyoGlobal: {
+      open: '2026-07-31',
+      close: '2026-08-13',
+      annualFeeJpy: 30000,
+      closed: true,
+      overseasRoute: '해외 거주자는 국적 불문 영어 사이트에서 엔트리(공식 FAQ)',
+    },
     intlEligible: true,
     flightFromICN: '인천→하네다 약 2시간 (가장 가까운 메이저)',
     timezone: '한일 시차 0 (KST = JST)',
@@ -104,8 +113,20 @@ export const MAJOR_DEADLINES = {
   berlin2026: {
     name: '베를린마라톤 2026',
     raceDate: '2026-09-27',
-    statusLabel: '추첨·결과 발표 완료',
+    statusLabel: '2026 추첨 종료 · 다음은 2027 발롯(대회 직후 오픈 패턴)',
     intlEligible: true,
-    note: '세계 최속 평지 코스(세계기록 무대). 코스·PB 에버그린 각도.',
+    // 2027 발롯: 2026-08-15 기준 공식(bmw-berlin-marathon.com) 미게시 = 불명.
+    // 확인된 것은 직전 사이클 실적뿐 — 2026 발롯은 2025-09-25 오픈 ~ 11-05 마감,
+    // 결과 2025-11-27 통보. 즉 "대회 직후 주에 오픈"이 관측된 패턴.
+    // ⚠️ 2차 소스에 '2026-10-01~11-12' 표기가 있으나 공식 확인 불가 → 본문에 쓰지 말 것.
+    nextBallot: {
+      year: 2027,
+      officialAnnouncement: '미게시(2026-08-15 확인)',
+      priorCycleOpen: '2025-09-25',
+      priorCycleClose: '2025-11-05',
+      priorCycleResult: '2025-11-27',
+      watchFrom: '2026-09-27',
+    },
+    note: '세계 최속 평지 코스(세계기록 무대). 2027 발롯 대비 + 코스·PB 에버그린 각도.',
   },
 } as const;
