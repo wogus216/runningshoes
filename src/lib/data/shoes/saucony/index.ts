@@ -18,6 +18,7 @@ import { shoe as sauconyOmniSt23 } from './saucony-omni-st-23';
 import { shoe as sauconyTriumph24 } from './saucony-triumph-24';
 import { shoe as sauconyParamountMax } from './saucony-paramount-max';
 import { shoe as sauconyPeregrine16 } from './saucony-peregrine-16';
+import { shoe as sauconyXodusUltra4 } from './saucony-xodus-ultra-4';
 
 // 신발 1켤레 = 파일 1개 (saucony/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const sauconyShoes: Shoe[] = [
@@ -40,4 +41,5 @@ export const sauconyShoes: Shoe[] = [
   sauconyTriumph24,
   sauconyParamountMax,
   sauconyPeregrine16,
+  sauconyXodusUltra4,
 ];

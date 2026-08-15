@@ -15,7 +15,7 @@ export const shoe: Shoe = {
     '써코니 트레일의 표준 모델. 16세대에서 아웃솔이 Vibram Megagrip으로 바뀌면서 젖은 바위·진흙 접지력이 크게 개선됐고, PWRRUN 폼이 소폭 부드러워지며 스택도 1mm씩 올랐습니다.',
   oneliner: 'Vibram Megagrip 채용 — 드롭 4mm의 민첩한 트레일 표준',
   editorComment:
-    '페레그린 16의 변화는 아웃솔에 집중돼 있습니다. 전 세대까지의 자체 러버에서 Vibram Megagrip + 트랙션 러그로 바뀌면서, 젖은 바위처럼 미끄러운 노면에서의 접지가 눈에 띄게 좋아졌다는 평이 일관됩니다. 러그 높이는 5mm에서 4mm로 오히려 낮아졌는데, 고무 자체의 그립이 올라가 오르막·내리막 모두에서 손해가 없다는 것이 리뷰들의 공통된 평가입니다.\n\n성격은 "민첩한 트레일화"입니다. 스택 32/28mm에 드롭 4mm로 낮고 평평해, 기술적인 바위·나무뿌리 구간에서 발밑 감각이 살아 있습니다. 반대로 울트라 거리의 충격 누적을 견디는 용도라면 스택이 더 높은 엑소더스 울트라 4 쪽이 맞습니다.\n\n사이즈·구매 가이드: 국내 공식몰에 와이드 옵션이 함께 유통됩니다. 드롭 4mm는 로드화(보통 8~10mm)에서 넘어오면 종아리·아킬레스 부하가 확실히 다르니, 첫 몇 회는 거리를 줄여 적응하세요. 2026-08-15 기준 국내 유통 2종 전량이 20% 할인된 143,200원입니다.',
+    '페레그린 16의 변화는 아웃솔에 집중돼 있습니다. 전 세대까지의 자체 러버에서 Vibram Megagrip + 트랙션 러그로 바뀌면서, 젖은 바위처럼 미끄러운 노면에서의 접지가 눈에 띄게 좋아졌다는 평이 일관됩니다. 러그 높이는 5mm에서 4mm로 오히려 낮아졌는데, 고무 자체의 그립이 올라가 오르막·내리막 모두에서 손해가 없다는 것이 리뷰들의 공통된 평가입니다.\n\n성격은 "민첩한 트레일화"입니다. 스택 32/28mm에 드롭 4mm로 낮고 평평해, 기술적인 바위·나무뿌리 구간에서 발밑 감각이 살아 있습니다. 반대로 울트라 거리의 충격 누적을 견디는 용도라면 스택이 더 높은 엑소더스 울트라 4(36/30mm) 쪽이 맞습니다.\n\n사이즈·구매 가이드: 국내 공식몰에 와이드 옵션이 함께 유통됩니다. 드롭 4mm는 로드화(보통 8~10mm)에서 넘어오면 종아리·아킬레스 부하가 확실히 다르니, 첫 몇 회는 거리를 줄여 적응하세요. 2026-08-15 기준 국내 유통 2종 전량이 20% 할인된 143,200원입니다.',
   tags: ['트레일', '비브람', '경량', '기술적 지형'],
 
   specs: {
@@ -57,7 +57,7 @@ export const shoe: Shoe = {
     costPerKm: 298,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['hoka-speedgoat-7', 'salomon-ultra-glide-4', 'new-balance-hierro-v9'],
+    alternatives: ['saucony-xodus-ultra-4', 'hoka-speedgoat-7', 'salomon-ultra-glide-4'],
     valueAdvantages: [
       'Vibram Megagrip 채용 — 젖은 노면 접지력이 세대 최대 개선점',
       '와이드 옵션 국내 유통',
@@ -74,7 +74,7 @@ export const shoe: Shoe = {
       '발볼이 넓어 트레일화 와이드가 필요한 러너',
     ],
     notRecommended: [
-      '울트라 거리 위주 러너 (스택 32mm — 더 두꺼운 울트라 트레일화 권장)',
+      '울트라 거리 위주 러너 (스택 32mm — 엑소더스 울트라 4 권장)',
       '로드 위주 러너 (러그가 아스팔트에서 불필요하게 닳음)',
       '드롭 8mm 이상에 적응된 러너 (4mm — 종아리 부하 증가)',
       '최대 쿠션을 원하는 러너',
@@ -121,6 +121,6 @@ export const shoe: Shoe = {
     landingPattern: '미드풋 중심',
   },
 
-  similarShoes: ['hoka-speedgoat-7', 'adidas-terrex-agravic-4', 'saucony-kinvara-16'],
+  similarShoes: ['saucony-xodus-ultra-4', 'hoka-speedgoat-7', 'adidas-terrex-agravic-4'],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+페레그린+16' }],
 };
