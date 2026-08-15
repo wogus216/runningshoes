@@ -4,6 +4,7 @@ import { shoe as onCloudrunner2 } from './on-cloudrunner-2';
 import { shoe as onCloudmonster2 } from './on-cloudmonster-2';
 import { shoe as onCloudmonsterHyper } from './on-cloudmonster-hyper';
 import { shoe as onCloudrunner3 } from './on-cloudrunner-3';
+import { shoe as onCloudrunner3Max } from './on-cloudrunner-3-max';
 import { shoe as onCloudsurferMax } from './on-cloudsurfer-max';
 import { shoe as onCloudmonster3 } from './on-cloudmonster-3';
 import { shoe as onCloudmonster3Hyper } from './on-cloudmonster-3-hyper';
@@ -24,4 +25,5 @@ export const onShoes: Shoe[] = [
   onCloudmonster3HyperLightspray,
   onCloudflow5,
   onCloudboomStrike,
+  onCloudrunner3Max,
 ];

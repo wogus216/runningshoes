@@ -90,7 +90,7 @@ export const shoe: Shoe = {
       },
   ],
   detailedSpecs: {
-    weight: '264g (RunRepeat 실측, 남성 US 9) / 271g (US 9.5 기준) — 사이즈 기준이 다르니 타 모델과 비교할 땐 US 9 실측치를 쓸 것',
+    weight: '253g (On 한국 공식몰 표기, 남성) / 264g (RunRepeat 실측, 남성 US 9) / 271g (US 9.5 기준) — 사이즈 기준이 다르니 타 모델과 비교할 땐 US 9 실측치를 쓸 것',
     stackHeight: 'On 공식 힐 45mm / 포어풋 39mm — RunRepeat 실측 43.4mm / 34.2mm (전족부에서 4.8mm 차이)',
     drop: 'On 공식 6mm — RunRepeat 실측 9.2mm (3.2mm 차이). RunRepeat 원문: "On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"',
     midsole: 'Helion HF + Helion + CloudTec 이중 밀도 (상부 경도 실측 37.2 AC / 하부 51.2 AC)',

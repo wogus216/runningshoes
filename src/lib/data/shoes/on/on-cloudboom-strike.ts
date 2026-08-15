@@ -88,7 +88,7 @@ export const shoe: Shoe = {
   ],
 
   detailedSpecs: {
-    weight: '201g (남성 US 9 기준)',
+    weight: '210g (On 한국 공식몰 표기, 남성) / 201g (남성 US 9 실측)',
     stackHeight: '힐 38.1mm / 포어풋 34.9mm',
     drop: '3.2mm (Lab 측정치)',
     midsole: 'Helion HF (Pebax)',

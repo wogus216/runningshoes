@@ -87,7 +87,7 @@ export const shoe: Shoe = {
   ],
 
   detailedSpecs: {
-    weight: '278g (남성 US 9 기준)',
+    weight: '278g (남성 US 9 기준) · 여성 231g — On 공식몰은 남성 281g으로 표기',
     stackHeight: '힐 36mm / 포어풋 28mm',
     drop: '8mm',
     midsole: 'Helion HF + Helion EVA + Speedboard',

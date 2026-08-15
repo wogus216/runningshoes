@@ -90,7 +90,7 @@ export const shoe: Shoe = {
   ],
 
   detailedSpecs: {
-    weight: '254g (남성 US 9 기준)',
+    weight: '261g (On 한국 공식몰 표기, 남성) / 254g (남성 US 9 실측) · 여성 225g',
     stackHeight: '힐 37.5mm / 포어풋 27.1mm',
     drop: '10.4mm (Lab 측정치)',
     midsole: 'Helion HF + CloudTec Phase',

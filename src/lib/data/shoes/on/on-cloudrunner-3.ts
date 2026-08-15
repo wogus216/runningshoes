@@ -87,7 +87,7 @@ export const shoe: Shoe = {
       },
   ],
   detailedSpecs: {
-    weight: '317g (남성 US 9.5 기준)',
+    weight: '311g (On 한국 공식몰 표기, 남성) / 317g (남성 US 9.5 실측) — 사이즈 기준이 달라 값이 갈립니다',
     stackHeight: '힐 36.8mm / 포어풋 28.7mm (RunRepeat 실측)',
     drop: '8mm',
     midsole: 'Helion + CloudTec',
