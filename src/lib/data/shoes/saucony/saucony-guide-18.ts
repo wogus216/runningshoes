@@ -16,20 +16,20 @@ export const shoe: Shoe = {
   tags: ['안정화', '입문', '과내전 지원'],
 
   specs: {
-    weight: 278,
+    weight: 272,
     cushioning: 7,
     responsiveness: 6,
     stability: 8,
-    drop: 8,
+    drop: 6,
     durability: 600,
   },
 
   biomechanics: {
     stackHeight: {
-      heel: 36,
-      forefoot: 27.7,
+      heel: 35,
+      forefoot: 29,
     },
-    drop: 8.3,
+    drop: 6,
     carbonPlate: false,
     plateType: null,
     midsoleType: 'PWRRUN',
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['중립 발', '레이싱', '경량화 선호'],
   },
 
-  features: ['PWRRUN 미드솔', 'Guidance Frame', '8.3mm 드롭', '과내전 지원'],
+  features: ['PWRRUN 미드솔', 'Guidance Frame', '공식 6mm 드롭 (RunRepeat 실측 8.3mm)', '과내전 지원'],
 
   priceAnalysis: {
     msrp: 159000,
@@ -68,9 +68,9 @@ export const shoe: Shoe = {
   },
 
   detailedSpecs: {
-    weight: '278g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 36.0mm / 포어풋 27.7mm (실측)',
-    drop: '8.3mm (실측) / 8mm (브랜드 공식)',
+    weight: '272g (남성 US 9 기준, 브랜드 공식) / 245g (여성 US 8) — RunRepeat 실측 278g',
+    stackHeight: '힐 35mm / 포어풋 29mm (브랜드 공식) — RunRepeat 실측 36.0/27.7mm',
+    drop: '6mm (브랜드 공식) — RunRepeat 실측 8.3mm. 깔창에는 8mm로 인쇄돼 있으나 써코니 공식 표기는 6mm',
     midsole: 'PWRRUN',
     plate: '없음',
     outsole: 'XT-900 러버',
@@ -86,7 +86,7 @@ export const shoe: Shoe = {
     {
       userType: '에디터 분석',
       rating: 80,
-      text: '평발이나 과내전으로 고민하는 입문 러너를 위한 가성비 안정화입니다. 15만 9천원으로 카야노(19만 9천원)보다 4만원 낮으면서, 278g에 36mm 힐 스택, 8mm 드롭 구성이고, 121.9mm 넓은 플랫폼으로 착지 안정성이 뛰어납니다. SA 132 충격흡수와 HA 22.8로 쿠셔닝이 적절하고, 61.3% 에너지 리턴으로 반발력은 평균 수준입니다. 통기성 5/5 최상위급으로 여름철 러닝에도 쾌적하고, 토박스 폭이 표준이라 발볼 넓은 한국 러너는 와이드 옵션을 선택하세요. 평발 특성에 적합하며, "무릎 괜찮나요?" 질문하는 과내전 입문 러너에게 부담 없이 추천합니다. 500km 내구성에 km당 약 265원으로 가성비 좋고, Guidance Frame이 과내전을 효과적으로 제어합니다.',
+      text: '평발이나 과내전으로 고민하는 입문 러너를 위한 가성비 안정화입니다. 15만 9천원으로 카야노(19만 9천원)보다 4만원 낮으면서, 공식 272g·35/29mm(RunRepeat 실측 278g·36/27.7mm)에 공식 드롭 6mm 구성이고, 121.9mm 넓은 플랫폼으로 착지 안정성이 뛰어납니다. SA 132 충격흡수와 HA 22.8로 쿠셔닝이 적절하고, 61.3% 에너지 리턴으로 반발력은 평균 수준입니다. 통기성 5/5 최상위급으로 여름철 러닝에도 쾌적하고, 토박스 폭이 표준이라 발볼 넓은 한국 러너는 와이드 옵션을 선택하세요. 평발 특성에 적합하며, "무릎 괜찮나요?" 질문하는 과내전 입문 러너에게 부담 없이 추천합니다. 500km 내구성에 km당 약 265원으로 가성비 좋고, Guidance Frame이 과내전을 효과적으로 제어합니다.',
     },
     {
         userType: '비용 관점 — 최상위 안정화보다 4만원 낮은 가격',
