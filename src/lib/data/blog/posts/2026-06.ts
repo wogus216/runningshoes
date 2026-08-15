@@ -2526,7 +2526,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>라이드 Ride</strong></td><td>데일리 만능</td><td>"처음이면 라이드" — 부드러운 기준점</td></tr>
     <tr><td><strong>트라이엄프 Triumph</strong></td><td>맥스 쿠션</td><td>풀 PEBA를 19만원대에, 본디 킬러</td></tr>
     <tr><td><strong>가이드 / 허리케인</strong></td><td>안정화</td><td>가이드=가성비 / 허리케인=심한 과내전</td></tr>
-    <tr><td><strong>킨바라 Kinvara</strong></td><td>경량 미니멀</td><td>198g, 지면을 느끼는 데일리</td></tr>
+    <tr><td><strong>킨바라 Kinvara</strong></td><td>경량 미니멀</td><td>207g, 지면을 느끼는 데일리</td></tr>
     <tr><td><strong>엔돌핀 Endorphin</strong></td><td>스피드·레이싱</td><td>스피드·프로·엘리트 — 사코니의 핵심</td></tr>
   </tbody>
 </table>
@@ -2560,7 +2560,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/saucony-ride-18"><strong>라이드 18</strong></a></td><td>입문 데일리</td><td>PWRRUN+</td><td>15.9만</td><td>255g</td><td>통기성 최상, 여름 가성비</td></tr>
     <tr><td><a href="/shoes/saucony-guide-18"><strong>가이드 18</strong></a></td><td>가성비 안정화</td><td>PWRRUN</td><td>15.9만</td><td>278g</td><td>카야노 절반가, 121.9mm 광폭</td></tr>
-    <tr><td><a href="/shoes/saucony-kinvara-16"><strong>킨바라 16</strong></a></td><td>경량 미니멀</td><td>PWRRUN</td><td>15.9만</td><td>198g</td><td>198g·4mm, 지면 감각</td></tr>
+    <tr><td><a href="/shoes/saucony-kinvara-16"><strong>킨바라 16</strong></a></td><td>경량 미니멀</td><td>PWRRUN</td><td>15.9만</td><td>207g</td><td>207g·4mm, 지면 감각</td></tr>
     <tr><td><a href="/shoes/saucony-ride-19"><strong>라이드 19</strong></a></td><td>입문 데일리 신상</td><td>SCF PWRRUN+</td><td>17.9만</td><td>255g</td><td>더 부드럽고 넓어진 트레이너</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-azura"><strong>엔돌핀 아주라</strong></a></td><td>엔돌핀 데일리</td><td>PWRRUN PB</td><td>18.9만</td><td>240g</td><td>무플레이트 데일리 스피드</td></tr>
     <tr><td><a href="/shoes/saucony-triumph-23"><strong>트라이엄프 23</strong></a></td><td>맥스 쿠션</td><td>PWRRUN PB (PEBA)</td><td>19.9만</td><td>272g</td><td>풀 PEBA 19만원대, 본디 킬러</td></tr>
@@ -10161,7 +10161,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>통기성</th><th>무게</th><th>가격</th><th>한줄평</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/saucony-kinvara-16">사우코니 킨바라 16</a></td><td>5/5</td><td>198g</td><td>15.9만</td><td>198g 최경량. 여름 스피드 훈련용 1순위</td></tr>
+    <tr><td><a href="/shoes/saucony-kinvara-16">사우코니 킨바라 16</a></td><td>5/5</td><td>207g</td><td>15.9만</td><td>207g 경량. 여름 스피드 훈련용 1순위</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>최상</td><td>232g</td><td>18.5만</td><td>경량 + 통기성 + 적당한 반발. 만능 여름 데일리</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a></td><td>5/5</td><td>241g</td><td>21.9만</td><td>나일론 플레이트 템포화. 여름 템포런도 쾌적</td></tr>
     <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>4/5</td><td>278g</td><td>21.9만</td><td>탄탄한 반발 + 통기성. 도심 데일리·템포 겸용</td></tr>
