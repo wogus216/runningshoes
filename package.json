@@ -21,6 +21,7 @@
     "postbuild": "next-sitemap",
     "prepare": "husky",
     "gsc": "tsx scripts/gsc-report.ts",
+    "gsc:pages": "tsx scripts/gsc-pages.ts",
     "popular": "tsx scripts/ga-popular.ts"
   },
   "dependencies": {
