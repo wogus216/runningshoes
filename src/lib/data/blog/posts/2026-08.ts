@@ -104,7 +104,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>편도 코스 가능성</strong> — 4월 보도 기준으로 풀코스는 편도 코스가 검토됐습니다. 편도면 출발지와 도착지가 달라 <strong>짐 보관과 귀가 동선</strong>을 미리 확인해야 합니다</li>
 </ul>
 
-<p>인천에서 평소 달릴 만한 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>에 정리해뒀습니다.</p>
+<p>인천에서 평소 달릴 만한 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>에 정리해뒀습니다.</p>
 
 <h2>11월 가을 시즌에서의 위치</h2>
 

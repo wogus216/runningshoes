@@ -9,6 +9,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/gangneung-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['강릉 달리기', '강릉 러닝코스', '강릉 러닝 코스', '이색 러닝', '경포호수', '안목 커피거리', '정동진 일출', '강릉 바우길', '송정 솔숲', '남대천', '안반데기', '강릉 마라톤'],
@@ -163,7 +164,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌊</span>
   <div class="callout-body">
     <p class="callout-title">커피의 도시에서 달리다 — 강릉 러닝 여행</p>
-    <p>강릉은 <strong>바다·호수·커피를 한 번에 즐기는</strong> 러닝 여행지입니다. ① 도착 첫날은 <strong>경포호수 둘레 + 경포해변</strong>, ② 커피 러닝은 <strong>안목 커피거리</strong>(러닝 후 바다 커피), ③ 일출은 <strong>정동진·안반데기</strong>, ④ 본격 트레일은 <strong>바우길</strong>로 묶으면 좋습니다. KTX로 서울에서 약 1시간 50분, 러닝 후 강릉 커피·초당두부까지 더하면 완벽한 미식 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주</a>·<a href="/blog/gyeongju-unique-running-courses-7">경주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>강릉은 <strong>바다·호수·커피를 한 번에 즐기는</strong> 러닝 여행지입니다. ① 도착 첫날은 <strong>경포호수 둘레 + 경포해변</strong>, ② 커피 러닝은 <strong>안목 커피거리</strong>(러닝 후 바다 커피), ③ 일출은 <strong>정동진·안반데기</strong>, ④ 본격 트레일은 <strong>바우길</strong>로 묶으면 좋습니다. KTX로 서울에서 약 1시간 50분, 러닝 후 강릉 커피·초당두부까지 더하면 완벽한 미식 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주</a>·<a href="/blog/gyeongju-unique-running-courses-7">경주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -190,6 +191,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/gyeongju-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['경주 달리기', '경주 러닝코스', '경주 러닝 코스', '이색 러닝', '대릉원 첨성대', '보문호수', '경주 남산', '황룡사지 월성', '토함산 불국사', '형산강', '양동마을', '경주 마라톤'],
@@ -344,7 +346,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌙</span>
   <div class="callout-body">
     <p class="callout-title">천년 고도를 달리다 — 경주 러닝 여행</p>
-    <p>경주는 <strong>도시 전체가 박물관인 역사 러닝의 끝판왕</strong>입니다. ① 야경 러닝은 <strong>대릉원·첨성대·동궁과월지</strong>(조명 켜진 신라 유적), ② 봄엔 <strong>보문호 벚꽃 LSD</strong>, ③ 유적 트레일은 <strong>남산</strong>(노천 박물관)·<strong>토함산</strong>(불국사·석굴암), ④ 전통은 <strong>양동마을</strong>로 묶으면 좋습니다. KTX로 서울에서 약 2시간, 러닝 후 신라 유적 관광까지 더하면 완벽한 역사 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>경주는 <strong>도시 전체가 박물관인 역사 러닝의 끝판왕</strong>입니다. ① 야경 러닝은 <strong>대릉원·첨성대·동궁과월지</strong>(조명 켜진 신라 유적), ② 봄엔 <strong>보문호 벚꽃 LSD</strong>, ③ 유적 트레일은 <strong>남산</strong>(노천 박물관)·<strong>토함산</strong>(불국사·석굴암), ④ 전통은 <strong>양동마을</strong>로 묶으면 좋습니다. KTX로 서울에서 약 2시간, 러닝 후 신라 유적 관광까지 더하면 완벽한 역사 러닝 여행. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원</a>·<a href="/blog/jeonju-unique-running-courses-7">전주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -371,6 +373,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/jeonju-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['전주 달리기', '전주 러닝코스', '전주 러닝 코스', '이색 러닝', '전주한옥마을', '전주천 한벽당', '덕진공원 연꽃', '완산칠봉', '건지산 편백숲', '삼천 자전거길', '전주수목원', '전주 마라톤'],
@@ -525,7 +528,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌸</span>
   <div class="callout-body">
     <p class="callout-title">전통과 정취를 달리다 — 전주 러닝 여행</p>
-    <p>전주는 <strong>전통과 슬로시티의 정취를 달릴 수 있는</strong> 도시입니다. ① 정취 러닝은 <strong>이른 새벽 한옥마을 + 전주천 한벽당</strong>, ② 계절 명소는 <strong>덕진공원 연꽃(여름)·완산칠봉 꽃동산(봄)</strong>, ③ 힐링은 <strong>건지산 편백숲·전주수목원</strong>, ④ 강변 LSD는 <strong>삼천</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30분, 러닝 후 전주 비빔밥·콩나물국밥까지 즐기는 미식 러닝 여행으로 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>전주는 <strong>전통과 슬로시티의 정취를 달릴 수 있는</strong> 도시입니다. ① 정취 러닝은 <strong>이른 새벽 한옥마을 + 전주천 한벽당</strong>, ② 계절 명소는 <strong>덕진공원 연꽃(여름)·완산칠봉 꽃동산(봄)</strong>, ③ 힐링은 <strong>건지산 편백숲·전주수목원</strong>, ④ 강변 LSD는 <strong>삼천</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30분, 러닝 후 전주 비빔밥·콩나물국밥까지 즐기는 미식 러닝 여행으로 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산</a>·<a href="/blog/suwon-unique-running-courses-7">수원 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -552,6 +555,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/suwon-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['수원 달리기', '수원 러닝코스', '수원 러닝 코스', '이색 러닝', '수원화성 성곽길', '광교호수공원', '광교산', '서호공원 축만제', '만석공원', '수원천', '영흥수목원', '수원 마라톤'],
@@ -569,7 +573,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏯</span>
   <div class="callout-body">
     <p class="callout-title">수원 러닝만의 매력</p>
-    <p>수원은 인구 120만의 국내 최대 기초자치단체로, <strong>유네스코 세계유산 수원화성·신도시 호수(광교)·명산(광교산)·정조 시대 저수지(서호·만석거)·도심 하천(수원천)</strong>이 어우러져 있습니다. 무엇보다 <strong>수원화성 성곽길</strong>은 약 5.7km 성곽을 따라 달리며 세계유산을 온몸으로 느끼는 국내 유일급 코스. 광교 신도시의 대형 호수공원과 광교산 트레일까지, 역사와 현대를 짧은 이동으로 오갈 수 있는 점이 매력입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>수원에서 달리기 좋은 곳</strong>을 찾는다면 선택지는 생각보다 넓습니다. 수원은 인구 120만의 국내 최대 기초자치단체로, <strong>유네스코 세계유산 수원화성·신도시 호수(광교)·명산(광교산)·정조 시대 저수지(서호·만석거)·도심 하천(수원천)</strong>이 어우러져 있습니다. 무엇보다 <strong>수원화성 성곽길</strong>은 약 5.7km 성곽을 따라 달리며 세계유산을 온몸으로 느끼는 국내 유일급 코스. 광교 신도시의 대형 호수공원과 광교산 트레일까지, 역사와 현대를 짧은 이동으로 오갈 수 있는 점이 매력입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -706,7 +710,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏯</span>
   <div class="callout-body">
     <p class="callout-title">역사와 현대를 한 도시에서 — 수원 러닝 가이드</p>
-    <p>수원은 <strong>세계유산과 신도시를 함께 달릴 수 있는</strong> 보기 드문 도시입니다. ① 역사 러닝은 <strong>수원화성 성곽길 + 수원천</strong>(화홍문·방화수류정), ② 현대 러닝은 <strong>광교호수공원</strong>(신도시 야경), ③ 힐링은 <strong>서호 노을·영흥수목원</strong>, ④ 트레일은 <strong>광교산</strong>으로 묶으면 좋습니다. 수도권이라 지하철·신분당선으로 접근이 쉬워 주말 러닝 나들이에도 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>수원은 <strong>세계유산과 신도시를 함께 달릴 수 있는</strong> 보기 드문 도시입니다. ① 역사 러닝은 <strong>수원화성 성곽길 + 수원천</strong>(화홍문·방화수류정), ② 현대 러닝은 <strong>광교호수공원</strong>(신도시 야경), ③ 힐링은 <strong>서호 노을·영흥수목원</strong>, ④ 트레일은 <strong>광교산</strong>으로 묶으면 좋습니다. 수도권이라 지하철·신분당선으로 접근이 쉬워 주말 러닝 나들이에도 제격. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주</a>·<a href="/blog/ulsan-unique-running-courses-7">울산 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -733,6 +737,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/ulsan-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['울산 달리기', '울산 러닝코스', '울산 러닝 코스', '이색 러닝', '태화강 국가정원', '십리대숲', '대왕암공원', '영남알프스 간월재', '간절곶 일출', '울산대공원', '진하해변', '울산 마라톤'],
@@ -750,7 +755,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🎋</span>
   <div class="callout-body">
     <p class="callout-title">울산 러닝만의 매력</p>
-    <p>울산은 <strong>강(태화강)·바다(대왕암·간절곶·진하)·억새산(영남알프스)·도심 공원(울산대공원)</strong>이 어우러진 동남권 도시입니다. 공업도시로 알려졌지만, 도심을 흐르는 <strong>태화강과 십리대숲</strong>은 국내 2호 국가정원으로 지정될 만큼 생태가 회복됐고, 동쪽으론 대왕암·간절곶 해안이, 서쪽으론 <strong>영남알프스</strong>의 국내 최대 억새 능선이 펼쳐집니다. 강·바다·산을 짧은 이동으로 오갈 수 있는 점이 매력. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>울산에서 달리기 좋은 곳</strong>을 찾는다면 강·바다·산을 모두 오갈 수 있습니다. 울산은 <strong>강(태화강)·바다(대왕암·간절곶·진하)·억새산(영남알프스)·도심 공원(울산대공원)</strong>이 어우러진 동남권 도시입니다. 공업도시로 알려졌지만, 도심을 흐르는 <strong>태화강과 십리대숲</strong>은 국내 2호 국가정원으로 지정될 만큼 생태가 회복됐고, 동쪽으론 대왕암·간절곶 해안이, 서쪽으론 <strong>영남알프스</strong>의 국내 최대 억새 능선이 펼쳐집니다. 강·바다·산을 짧은 이동으로 오갈 수 있는 점이 매력. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -887,7 +892,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌅</span>
   <div class="callout-body">
     <p class="callout-title">강·바다·억새를 하루에 — 울산 러닝 여행</p>
-    <p>울산은 <strong>강·바다·억새산을 짧은 이동으로 오갈 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>태화강 십리대숲·울산대공원</strong>, ② 해안은 <strong>대왕암·간절곶·진하해변</strong>, ③ 본격 트레일은 <strong>영남알프스 간월재</strong>(억새)로 묶으면 좋습니다. 특히 새해엔 <strong>간절곶 일출 러닝</strong>이 특별. KTX로 서울에서 약 2시간 10분이라 주말 러닝 여행도 가능 — 태화강 대숲 + 영남알프스 억새를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>울산은 <strong>강·바다·억새산을 짧은 이동으로 오갈 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>태화강 십리대숲·울산대공원</strong>, ② 해안은 <strong>대왕암·간절곶·진하해변</strong>, ③ 본격 트레일은 <strong>영남알프스 간월재</strong>(억새)로 묶으면 좋습니다. 특히 새해엔 <strong>간절곶 일출 러닝</strong>이 특별. KTX로 서울에서 약 2시간 10분이라 주말 러닝 여행도 가능 — 태화강 대숲 + 영남알프스 억새를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전</a>·<a href="/blog/gwangju-unique-running-courses-7">광주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -914,6 +919,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/gwangju-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['광주 달리기', '광주 러닝코스', '광주 러닝 코스', '이색 러닝', '무등산', '광주천', '푸른길공원', '광주호 메타세쿼이아', '5·18기념공원', '풍암호수공원', '영산강', '광주 마라톤'],
@@ -931,7 +937,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌳</span>
   <div class="callout-body">
     <p class="callout-title">광주 러닝만의 매력</p>
-    <p>광주는 <strong>산(무등산)·도심 하천(광주천)·폐철도 선형공원(푸른길)·호수(광주호·풍암)·강(영산강·황룡강)</strong>이 어우러진 호남권 도시입니다. 광주의 상징 <strong>무등산</strong>은 주상절리(입석대·서석대)로 유명한 트레일 명소이고, 폐철도를 녹지로 되살린 <strong>푸른길공원</strong>은 도심을 가로지르는 광주만의 이색 그린웨이. 도심엔 광주천이 흐르고, 5·18 민주화의 역사가 곳곳에 새겨져 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>광주에서 달리기 좋은 곳</strong>을 찾는다면 산·하천·폐철도까지 선택지가 다양합니다. 광주는 <strong>산(무등산)·도심 하천(광주천)·폐철도 선형공원(푸른길)·호수(광주호·풍암)·강(영산강·황룡강)</strong>이 어우러진 호남권 도시입니다. 광주의 상징 <strong>무등산</strong>은 주상절리(입석대·서석대)로 유명한 트레일 명소이고, 폐철도를 녹지로 되살린 <strong>푸른길공원</strong>은 도심을 가로지르는 광주만의 이색 그린웨이. 도심엔 광주천이 흐르고, 5·18 민주화의 역사가 곳곳에 새겨져 있습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -1068,7 +1074,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🚂</span>
   <div class="callout-body">
     <p class="callout-title">광주에서 뛰는 법 — 폐철도 그린웨이와 명산</p>
-    <p>광주는 <strong>도심 그린웨이와 명산을 함께 즐길 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>광주천·푸른길공원</strong>, ② 본 러닝은 <strong>무등산 트레일</strong>(주상절리), ③ 힐링은 <strong>광주호 메타세쿼이아길</strong>, ④ 강변 LSD는 <strong>영산강</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30~50분이라 주말 러닝 여행도 가능 — 푸른길 도심런 + 무등산 트레일을 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>광주는 <strong>도심 그린웨이와 명산을 함께 즐길 수 있는</strong> 도시입니다. ① 도심 가볍게는 <strong>광주천·푸른길공원</strong>, ② 본 러닝은 <strong>무등산 트레일</strong>(주상절리), ③ 힐링은 <strong>광주호 메타세쿼이아길</strong>, ④ 강변 LSD는 <strong>영산강</strong>으로 묶으면 좋습니다. KTX·SRT로 서울에서 약 1시간 30~50분이라 주말 러닝 여행도 가능 — 푸른길 도심런 + 무등산 트레일을 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주</a>·<a href="/blog/daejeon-unique-running-courses-7">대전 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -1095,6 +1101,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/daejeon-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['대전 달리기', '대전 러닝코스', '대전 러닝 코스', '이색 러닝', '계족산 황톳길', '맨발 러닝', '갑천', '대청호 오백리길', '한밭수목원', '보문산', '장태산 메타세쿼이아', '대전 마라톤'],
@@ -1112,7 +1119,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌲</span>
   <div class="callout-body">
     <p class="callout-title">대전 러닝만의 매력</p>
-    <p>대전은 <strong>황톳길(계족산)·도심 하천(갑천·유등천·대전천)·호수(대청호)·숲(장태산·한밭수목원)·산(보문산)</strong>이 어우러진 중부권 도시입니다. 무엇보다 <strong>계족산 황톳길</strong>은 14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는 전국적 명소로, 다른 도시엔 없는 대전만의 시그니처 코스. 도심엔 3대 하천이 흘러 평지 러닝이 풍부하고, 외곽 대청호·장태산은 숲과 호수 트레일을 제공합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>대전에서 달리기 좋은 곳</strong>을 찾는다면 황톳길부터 호수까지 선택지가 다양합니다. 대전은 <strong>황톳길(계족산)·도심 하천(갑천·유등천·대전천)·호수(대청호)·숲(장태산·한밭수목원)·산(보문산)</strong>이 어우러진 중부권 도시입니다. 무엇보다 <strong>계족산 황톳길</strong>은 14.5km 임도에 황토를 깔아 맨발로 걷고 뛰는 전국적 명소로, 다른 도시엔 없는 대전만의 시그니처 코스. 도심엔 3대 하천이 흘러 평지 러닝이 풍부하고, 외곽 대청호·장태산은 숲과 호수 트레일을 제공합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -1249,7 +1256,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🦶</span>
   <div class="callout-body">
     <p class="callout-title">계족산 황톳길, 맨발 러닝 안전하게 즐기는 법</p>
-    <p>대전의 시그니처 <strong>계족산 황톳길</strong>은 맨발 경험이 핵심입니다. ① 처음엔 <strong>걷기부터</strong> 시작해 발바닥을 적응시키고, ② 유리·돌 등 이물질에 주의하며, ③ 비 온 직후는 미끄러우니 피하고, ④ 끝나면 입구 <strong>세족장</strong>에서 발을 씻으세요. 당뇨 등으로 발 감각이 둔한 분은 맨발을 피하는 게 안전합니다. KTX·SRT로 서울에서 약 1시간이라 주말 러닝 여행도 좋습니다 — 계족산 황톳길 + 대청호를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>대전의 시그니처 <strong>계족산 황톳길</strong>은 맨발 경험이 핵심입니다. ① 처음엔 <strong>걷기부터</strong> 시작해 발바닥을 적응시키고, ② 유리·돌 등 이물질에 주의하며, ③ 비 온 직후는 미끄러우니 피하고, ④ 끝나면 입구 <strong>세족장</strong>에서 발을 씻으세요. 당뇨 등으로 발 감각이 둔한 분은 맨발을 피하는 게 안전합니다. KTX·SRT로 서울에서 약 1시간이라 주말 러닝 여행도 좋습니다 — 계족산 황톳길 + 대청호를 묶어보세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구</a>·<a href="/blog/jeju-unique-running-courses-7">제주 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -1276,6 +1283,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/jeju-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['제주 달리기', '제주 러닝코스', '제주 러닝 코스', '이색 러닝', '제주올레', '사려니숲길', '협재해변', '용두암 해안도로', '새별오름', '한라산 둘레길', '러닝 여행', '제주 마라톤'],
@@ -1293,7 +1301,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌊</span>
   <div class="callout-body">
     <p class="callout-title">제주 러닝만의 매력</p>
-    <p>제주는 <strong>해안(올레·협재·함덕)·숲(사려니·한라산 둘레)·오름(새별·서우봉)·해안도로(용두암~이호)</strong>가 섬 곳곳에 흩어진 러닝 여행지입니다. 에메랄드빛 바다를 끼고 달리다 삼나무 숲으로 들어가고, 억새 가득한 오름을 오르는 경험은 제주에서만 가능. 다만 <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 육지 도시 러닝보다 코스·신발·시간대 선택이 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>제주에서 달리기 좋은 곳</strong>을 찾는다면 제주도 곳곳이 코스가 됩니다. 제주는 <strong>해안(올레·협재·함덕)·숲(사려니·한라산 둘레)·오름(새별·서우봉)·해안도로(용두암~이호)</strong>가 섬 곳곳에 흩어진 러닝 여행지입니다. 에메랄드빛 바다를 끼고 달리다 삼나무 숲으로 들어가고, 억새 가득한 오름을 오르는 경험은 제주에서만 가능. 다만 <strong>바람이 강하고 현무암 돌길·흙길이 많으며 날씨가 자주 바뀌어</strong> 육지 도시 러닝보다 코스·신발·시간대 선택이 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -1430,7 +1438,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">✈️</span>
   <div class="callout-body">
     <p class="callout-title">러닝 여행지로 제주를 200% 즐기는 법</p>
-    <p>제주는 <strong>관광과 러닝을 묶기 가장 좋은 국내 여행지</strong>입니다. ① 도착 첫날·마지막날은 <strong>용두암~이호테우 해안도로</strong>(공항 근접)에서 가볍게, ② 본 러닝은 <strong>올레 7코스·협재 해변</strong>, ③ 힐링은 <strong>사려니숲길</strong>, ④ 짧고 강하게는 <strong>새별오름</strong>으로 묶으면 완벽한 러닝 여행이 됩니다. 단 <strong>제주는 바람·날씨가 변덕스러우니</strong> 윈드재킷과 여벌, 트레일 코스용 신발을 챙기세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>제주는 <strong>관광과 러닝을 묶기 가장 좋은 국내 여행지</strong>입니다. ① 도착 첫날·마지막날은 <strong>용두암~이호테우 해안도로</strong>(공항 근접)에서 가볍게, ② 본 러닝은 <strong>올레 7코스·협재 해변</strong>, ③ 힐링은 <strong>사려니숲길</strong>, ④ 짧고 강하게는 <strong>새별오름</strong>으로 묶으면 완벽한 러닝 여행이 됩니다. 단 <strong>제주는 바람·날씨가 변덕스러우니</strong> 윈드재킷과 여벌, 트레일 코스용 신발을 챙기세요. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천</a>·<a href="/blog/daegu-unique-running-courses-7">대구 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -1457,6 +1465,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/daegu-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-29',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['대구 달리기', '대구 러닝코스', '대구 러닝 코스', '이색 러닝', '수성못', '신천 둔치', '금호강 아양기찻길', '두류공원', '앞산', '팔공산 트레일', '달성습지', '대구 마라톤'],
@@ -1474,7 +1483,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏞️</span>
   <div class="callout-body">
     <p class="callout-title">대구 러닝만의 매력</p>
-    <p>대구는 분지 지형의 내륙 도시로 <strong>호수(수성못)·도심 하천(신천)·강(금호강·낙동강)·산(앞산·팔공산)·습지(달성)</strong>가 시가지를 둘러싸고 있습니다. 바다는 없지만 도심을 남북으로 관통하는 <strong>신천</strong>이 서울의 한강 같은 역할을 하고, 수성못 야경과 팔공산 단풍은 대구를 대표하는 러닝 풍경입니다. 다만 분지라 <strong>여름 폭염이 전국 최고 수준</strong>이라, 시즌과 시간대 선택이 다른 도시보다 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>대구에서 달리기 좋은 곳</strong>을 찾는다면 호수부터 강까지 선택지가 다양합니다. 대구는 분지 지형의 내륙 도시로 <strong>호수(수성못)·도심 하천(신천)·강(금호강·낙동강)·산(앞산·팔공산)·습지(달성)</strong>가 시가지를 둘러싸고 있습니다. 바다는 없지만 도심을 남북으로 관통하는 <strong>신천</strong>이 서울의 한강 같은 역할을 하고, 수성못 야경과 팔공산 단풍은 대구를 대표하는 러닝 풍경입니다. 다만 분지라 <strong>여름 폭염이 전국 최고 수준</strong>이라, 시즌과 시간대 선택이 다른 도시보다 더 중요합니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -1612,7 +1621,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌡️</span>
   <div class="callout-body">
     <p class="callout-title">"대프리카" 폭염, 대구에서 안전하게 뛰는 법</p>
-    <p>대구는 분지 지형이라 <strong>여름 폭염이 전국 최고 수준</strong>입니다. ① 7~8월 한낮(11~16시) 러닝은 피하고 <strong>새벽·야간</strong>으로, ② 평지는 <strong>수성못·신천 야간</strong>(조명 있는 코스), 산은 <strong>이른 오전</strong>으로, ③ 수분·전해질을 평소보다 넉넉히 챙기세요. KTX로 서울에서 약 1시간 50분이라 주말 러닝 여행도 가능 — 수성못 야경 + 팔공산 단풍을 묶으면 좋습니다. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>대구는 분지 지형이라 <strong>여름 폭염이 전국 최고 수준</strong>입니다. ① 7~8월 한낮(11~16시) 러닝은 피하고 <strong>새벽·야간</strong>으로, ② 평지는 <strong>수성못·신천 야간</strong>(조명 있는 코스), 산은 <strong>이른 오전</strong>으로, ③ 수분·전해질을 평소보다 넉넉히 챙기세요. KTX로 서울에서 약 1시간 50분이라 주말 러닝 여행도 가능 — 수성못 야경 + 팔공산 단풍을 묶으면 좋습니다. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울</a>·<a href="/blog/busan-unique-running-courses-7">부산</a>·<a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -2039,11 +2048,12 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: 'incheon-unique-running-courses-7',
     slug: 'incheon-unique-running-courses-7',
-    title: '인천 달리기 좋은 곳 7선 | 인천 러닝 코스 — 송도 센트럴파크부터 영종도 일몰까지',
+    title: '인천 달리기 좋은 곳 7선 | 인천 러닝 코스 — 송도 센트럴파크부터 영종도 비행기 일몰까지',
     description: '송도 센트럴파크 수로 야간 러닝부터 소래습지 갯벌, 영종도 해변 일몰까지 인천에서 달리기 좋은 러닝 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리. 송도·월미도+차이나타운·소래습지·청라호수공원·영종도·계양산·인천대공원 각 코스별 출발지·노면·주의점 가이드.',
     thumbnail: '/images/blog/incheon-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-28',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['인천 달리기', '인천 러닝코스', '인천 러닝 코스', '이색 러닝', '송도 센트럴파크', '월미도 차이나타운', '소래습지생태공원', '청라호수공원', '영종도 해변', '계양산 둘레길', '인천대공원', '인천 마라톤'],
@@ -2061,7 +2071,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">✈️</span>
   <div class="callout-body">
     <p class="callout-title">인천 러닝만의 매력</p>
-    <p>인천은 서해안 항구·개항 도시로 <strong>바다(영종도·월미도)·갯벌·염전(소래)·호수(청라·송도)·계획도시 수로(송도 센트럴파크)·산(계양산)·개항장 근대건축(차이나타운·자유공원)</strong>이 모두 있습니다. 인공수로를 따라 뛰다 5km 안에 갯벌·염전을 만나고, 영종도에서는 머리 위로 비행기가 뜨고 지는 풍경을 보며 뛰는 곳은 한국에서 인천이 유일. 수도권 지하철·공항철도로 접근이 쉬워 <strong>주말 러닝 여행지·해외여행 전후 러닝</strong>으로도 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>인천에서 달리기 좋은 곳</strong>을 찾는다면 바다부터 개항장까지 선택지가 다양합니다. 인천은 서해안 항구·개항 도시로 <strong>바다(영종도·월미도)·갯벌·염전(소래)·호수(청라·송도)·계획도시 수로(송도 센트럴파크)·산(계양산)·개항장 근대건축(차이나타운·자유공원)</strong>이 모두 있습니다. 인공수로를 따라 뛰다 5km 안에 갯벌·염전을 만나고, 영종도에서는 머리 위로 비행기가 뜨고 지는 풍경을 보며 뛰는 곳은 한국에서 인천이 유일. 수도권 지하철·공항철도로 접근이 쉬워 <strong>주말 러닝 여행지·해외여행 전후 러닝</strong>으로도 좋습니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -2199,7 +2209,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🛫</span>
   <div class="callout-body">
     <p class="callout-title">해외여행 전후·수도권 주말, 인천에서 뛰는 법</p>
-    <p>인천은 <strong>공항철도·인천지하철로 접근이 쉬워</strong> 여행 전후 러닝지로 좋습니다. ① 출국 전날 또는 귀국 당일 <strong>영종도 마시안·을왕리 해변</strong>에서 일몰·비행기 러닝, ② 수도권 거주자는 주말 오전 <strong>송도 센트럴파크 → 캐널워크 카페</strong> 코스, ③ 역사·문화를 곁들이려면 <strong>차이나타운 + 자유공원 + 월미도</strong> 한 바퀴를 추천. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>·<a href="/blog/busan-unique-running-courses-7">부산 이색 러닝 코스 7선</a>도 함께 보세요.</p>
+    <p>인천은 <strong>공항철도·인천지하철로 접근이 쉬워</strong> 여행 전후 러닝지로 좋습니다. ① 출국 전날 또는 귀국 당일 <strong>영종도 마시안·을왕리 해변</strong>에서 일몰·비행기 러닝, ② 수도권 거주자는 주말 오전 <strong>송도 센트럴파크 → 캐널워크 카페</strong> 코스, ③ 역사·문화를 곁들이려면 <strong>차이나타운 + 자유공원 + 월미도</strong> 한 바퀴를 추천. 다른 지역 코스가 궁금하다면 <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a>·<a href="/blog/busan-unique-running-courses-7">부산 달리기 좋은 곳 7선</a>도 함께 보세요.</p>
   </div>
 </div>
 
@@ -2226,6 +2236,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/busan-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['부산 달리기', '부산 러닝코스', '부산 러닝 코스', '이색 러닝', '광안리 야간', '해운대 미포철도길', '이기대 갈맷길', '태종대', '을숙도', '송정 해변', '부산시민공원', '부산 마라톤'],
@@ -2243,7 +2254,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🌊</span>
   <div class="callout-body">
     <p class="callout-title">부산 러닝만의 매력</p>
-    <p>부산은 한반도 동남쪽 항구도시로 <strong>바다(해운대·광안리·송정)·강(낙동강·수영강)·산(금정산·이기대·태종대)·도심(시민공원)</strong>이 5km 이내에 결합돼 있습니다. 같은 도시에서 해안·산악·강변·도심 풍경을 모두 경험할 수 있는 곳은 한국에서 부산이 유일. KTX로 서울에서 2시간 30분이라 <strong>주말 러닝 여행지로도 인기</strong>입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>부산에서 달리기 좋은 곳</strong>을 찾는다면 바다부터 산까지 선택지가 넘칩니다. 부산은 한반도 동남쪽 항구도시로 <strong>바다(해운대·광안리·송정)·강(낙동강·수영강)·산(금정산·이기대·태종대)·도심(시민공원)</strong>이 5km 이내에 결합돼 있습니다. 같은 도시에서 해안·산악·강변·도심 풍경을 모두 경험할 수 있는 곳은 한국에서 부산이 유일. KTX로 서울에서 2시간 30분이라 <strong>주말 러닝 여행지로도 인기</strong>입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -2630,6 +2641,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/seoul-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['서울 달리기', '서울 러닝코스', '서울 러닝 코스', '이색 러닝', '남산 러닝', '잠수교 야간 러닝', '응봉산', '서울숲', '양재천', '월드컵공원', '북서울꿈의숲', '올림픽공원'],

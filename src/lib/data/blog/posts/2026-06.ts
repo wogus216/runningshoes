@@ -5861,7 +5861,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>10월은 한 해 마라톤의 심장입니다. 풀코스 PB를 노린다면 이 달에 집중하세요.</p>
 
 <ul>
-  <li><strong>10/25(일) 9시 조선일보 춘천마라톤 — 올해 80주년</strong>. "가을의 전설", 1946년 시작된 의암호 단풍 코스가 압권입니다. 다만 <strong>25km 지점 오르막</strong>이 후반 페이스의 변수죠. 6/11 공식 발표 기준 <strong>신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순</strong>, 참가비는 <strong>풀 15만 원·10K 10만 원</strong>입니다. 풀코스는 역대 빠르게 마감되니 접수일 광클이 필수예요(결제는 풀 7/20~21·10K 7/22~23). 춘천 코스를 미리 즐기고 싶다면 <a href="/blog/chuncheon-unique-running-courses-7">춘천 이색 러닝 코스 7선</a>도 참고하세요.</li>
+  <li><strong>10/25(일) 9시 조선일보 춘천마라톤 — 올해 80주년</strong>. "가을의 전설", 1946년 시작된 의암호 단풍 코스가 압권입니다. 다만 <strong>25km 지점 오르막</strong>이 후반 페이스의 변수죠. 6/11 공식 발표 기준 <strong>신청은 풀코스 7/14(화) 14시·10K 7/16(목) 14시 선착순</strong>, 참가비는 <strong>풀 15만 원·10K 10만 원</strong>입니다. 풀코스는 역대 빠르게 마감되니 접수일 광클이 필수예요(결제는 풀 7/20~21·10K 7/22~23). 춘천 코스를 미리 즐기고 싶다면 <a href="/blog/chuncheon-unique-running-courses-7">춘천 달리기 좋은 곳 7선</a>도 참고하세요.</li>
   <li><strong>10/17 경주국제마라톤</strong> — 동아일보 주최, World Athletics 엘리트 라벨. 첨성대·황룡사지 등 신라 유적을 지나는 평지 코스라 PB 친화적입니다. 풀 일반 7만 원/매니아 6만 원, 총 1.6만 명 규모.</li>
   <li><strong>10/4 안동마라톤</strong> — 획득고도 700m+의 국내 최상급 난코스. 1만 명 선착순이 며칠 만에 조기 마감될 만큼 마니아층이 두텁습니다. "기록보다 도전"을 원하는 러너용.</li>
 </ul>
@@ -7906,7 +7906,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>2026-06 기준 <strong>제27회(2027) 일정은 아직 미발표</strong>입니다. 다만 매년 <strong>3월 마지막 주 일요일 전후</strong> 개최 패턴이 일정해, 2027년에도 3월 하순 개최가 유력합니다. 봄 첫 하프를 노린다면 <strong>연초(1~2월) 접수 오픈</strong>을 기다리면 됩니다. 일정이 공개되면 업데이트하겠습니다.</p>
 
 <h2>마무리</h2>
-<p>인천국제하프마라톤은 화려한 신상 대회는 아니지만, <strong>26년간 봄을 열어 온 수도권 대표 하프</strong>로서 안정적인 운영과 WA 공인 코스, '통곡의 벽'을 넘어 트랙에서 완주하는 특유의 경험을 제공합니다. 겨울 훈련 점검과 봄 시즌 워밍업에 딱 맞는 대회죠. 봄에 하프를 노린다면 매년 3월 하순을 기억해 두세요. 인천에서 평소 뛸 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을, 가을 풀코스는 <a href="/blog/2026-incheon-marathon">인천마라톤</a>을 참고하세요. 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다. 🏃</p>
+<p>인천국제하프마라톤은 화려한 신상 대회는 아니지만, <strong>26년간 봄을 열어 온 수도권 대표 하프</strong>로서 안정적인 운영과 WA 공인 코스, '통곡의 벽'을 넘어 트랙에서 완주하는 특유의 경험을 제공합니다. 겨울 훈련 점검과 봄 시즌 워밍업에 딱 맞는 대회죠. 봄에 하프를 노린다면 매년 3월 하순을 기억해 두세요. 인천에서 평소 뛸 코스가 궁금하다면 <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>을, 가을 풀코스는 <a href="/blog/2026-incheon-marathon">인천마라톤</a>을 참고하세요. 다른 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다. 🏃</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 인천국제하프마라톤 공식·마라톤GO·KorMarathon 등록 정보와 역대 대회 자료를 종합한 내용입니다. 제26회(2026-03-22)는 종료됐고, 제27회(2027) 일정·참가비는 미발표 상태입니다. 참가비·기념품은 제26회 기준이며 회차별로 변동될 수 있으니, 참가 전 공식 홈페이지(incheonmarathon.co.kr)를 확인하세요.</p>
 `,
@@ -7987,7 +7987,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li>같은 인천이라도 성격이 다릅니다 — <a href="/blog/2026-disney-run-incheon-virtual-run">디즈니런 2026 인천</a>(10/24 테마런), <a href="/blog/2026-songdo-lee-bongju-marathon">송도 이봉주 마라톤</a>(6/28 송도)</li>
   <li>11월 서울 대회를 함께 보려면 → <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>(11/15 광화문→잠실)</li>
-  <li>인천에서 평소 뛸 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a></li>
+  <li>인천에서 평소 뛸 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a></li>
 </ul>
 <p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 한 번에 확인하세요.</p>
 
@@ -9340,7 +9340,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>참가비</strong>: 5km <strong>65,000원</strong> · 10km <strong>80,000원</strong> — 유니클로 한정판 티셔츠 + 완주 메달 포함</li>
   <li><strong>티켓 오픈</strong>: <strong>8/31(월) 오전 10시, 선착순 1.5만 명</strong></li>
 </ul>
-<p>주최는 디즈니코리아·스포츠서울·블렌트이고, <strong>유니클로</strong>가 공식 머천다이즈 파트너로 한정 티셔츠를 제작합니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 이색 러닝 코스 7선</a>을 참고하고, 대회 일정은 <a href="/marathon/disney-run-incheon-2026">디즈니런 캘린더 페이지</a>에서도 확인할 수 있습니다.</p>
+<p>주최는 디즈니코리아·스포츠서울·블렌트이고, <strong>유니클로</strong>가 공식 머천다이즈 파트너로 한정 티셔츠를 제작합니다. 인천 러닝 코스가 궁금하다면 → <a href="/blog/incheon-unique-running-courses-7">인천 달리기 좋은 곳 7선</a>을 참고하고, 대회 일정은 <a href="/marathon/disney-run-incheon-2026">디즈니런 캘린더 페이지</a>에서도 확인할 수 있습니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">🎟️</span>
@@ -9537,6 +9537,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/chuncheon-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-05',
+    updatedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
     tags: ['춘천 달리기', '춘천 러닝코스', '춘천 러닝 코스', '이색 러닝', '의암호', '공지천', '소양강 스카이워크', '삼악산', '강촌 북한강', '춘천마라톤'],
@@ -9554,7 +9555,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🚣</span>
   <div class="callout-body">
     <p class="callout-title">춘천 러닝만의 매력</p>
-    <p>춘천은 <strong>의암호·소양강·북한강 같은 물길과 삼악산·봉의산 같은 산</strong>이 어우러진 강원권 대표 러닝 여행지입니다. 도시 어디서 달려도 호수와 강이 따라오고, <strong>춘천마라톤</strong>의 무대인 의암호 호반길은 전국 러너의 버킷리스트죠. 수변 평지로 가볍게 LSD를 즐기다, 삼악산·봉의산으로 트레일까지 맛볼 수 있는 게 춘천의 강점입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
+    <p><strong>춘천에서 달리기 좋은 곳</strong>을 찾는다면 호수부터 산까지 선택지가 다양합니다. 춘천은 <strong>의암호·소양강·북한강 같은 물길과 삼악산·봉의산 같은 산</strong>이 어우러진 강원권 대표 러닝 여행지입니다. 도시 어디서 달려도 호수와 강이 따라오고, <strong>춘천마라톤</strong>의 무대인 의암호 호반길은 전국 러너의 버킷리스트죠. 수변 평지로 가볍게 LSD를 즐기다, 삼악산·봉의산으로 트레일까지 맛볼 수 있는 게 춘천의 강점입니다. 본인 발 특성·부상 이력에 맞는 러닝화 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
   </div>
 </div>
 
@@ -9679,7 +9680,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>마무리 — 호반의 도시를 달리다</h2>
-<p>춘천은 어느 코스를 달려도 물과 산이 함께하는 도시입니다. 춘천마라톤 무대인 의암호에서 가볍게 시작해, 공지천·소양강으로 거리를 잇고, 삼악산·봉의산으로 트레일까지 맛볼 수 있죠. 다른 도시 이색 코스가 궁금하다면 인접한 → <a href="/blog/gangneung-unique-running-courses-7">강릉 이색 러닝 코스 7선</a>, 그리고 → <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>도 함께 보세요. 가을 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다.</p>
+<p>춘천은 어느 코스를 달려도 물과 산이 함께하는 도시입니다. 춘천마라톤 무대인 의암호에서 가볍게 시작해, 공지천·소양강으로 거리를 잇고, 삼악산·봉의산으로 트레일까지 맛볼 수 있죠. 다른 도시 이색 코스가 궁금하다면 인접한 → <a href="/blog/gangneung-unique-running-courses-7">강릉 달리기 좋은 곳 7선</a>, 그리고 → <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a>도 함께 보세요. 가을 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다.</p>
 `,
   },
   {
@@ -9872,7 +9873,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>전망 명소</strong>: 망우·용마산 코스(4코스) — 용마산 스카이워크에서 서울 전경 조망</li>
   <li><strong>가족·꽃놀이</strong>: 안양천 코스(13~14코스) — 봄 벚꽃 명소, 평지라 입문 친화적</li>
 </ul>
-<p>도심 한강 코스만 달려봤다면, 둘레길의 산길은 완전히 다른 결입니다 → <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a></p>
+<p>도심 한강 코스만 달려봤다면, 둘레길의 산길은 완전히 다른 결입니다 → <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a></p>
 
 <h2>"도시 100마일" — FKT라는 도전</h2>
 <p><strong>FKT(Fastest Known Time)</strong>는 정해진 구간을 가장 빠르게 주파한 비공식 기록을 뜻합니다. 마라톤 같은 정식 대회가 아니라, <strong>러너가 스스로 코스를 정하고 시간을 측정</strong>하는 자유로운 형식이죠. 와이즈의 도전처럼 "서울둘레길 전 구간"을 한 번에 도는 것도 하나의 FKT 프로젝트입니다.</p>
@@ -10595,7 +10596,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🌊</span>
   <div class="callout-body">
     <p class="callout-title">한강 러닝이 처음이라면</p>
-    <p>대회 전 코스를 미리 달려보고 싶다면, 광나루~잠실 한강공원 구간을 가볍게 뛰어보세요. 서울 한강·도심 러닝 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 이색 러닝 코스 7선</a>에서 정리했습니다. 다른 가을 대회와 함께 일정을 짜려면 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+    <p>대회 전 코스를 미리 달려보고 싶다면, 광나루~잠실 한강공원 구간을 가볍게 뛰어보세요. 서울 한강·도심 러닝 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a>에서 정리했습니다. 다른 가을 대회와 함께 일정을 짜려면 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
   </div>
 </div>
 
