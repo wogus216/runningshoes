@@ -9532,14 +9532,14 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'chuncheon-unique-running-courses-7',
     slug: 'chuncheon-unique-running-courses-7',
-    title: '춘천 이색 러닝 코스 7선 | 의암호 호반길부터 김유정 실레길까지 — 호수·강·산 결합한 호반의 도시 러닝',
-    description: '춘천마라톤의 성지 의암호 호반길부터 강원 3대 러닝 코스 공지천, 소양강 스카이워크, 삼악산 트레일, 강촌 북한강 자전거길, 봉의산 도심 트레일, 김유정 실레이야기길까지. 호반의 도시 춘천에서 진짜 뛸 만한 이색 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리했습니다.',
+    title: '춘천 달리기 좋은 곳 7선 | 춘천 러닝 코스 — 의암호 호반길부터 김유정 실레길까지',
+    description: '춘천마라톤의 성지 의암호 호반길부터 강원 3대 러닝 코스 공지천, 소양강 스카이워크, 삼악산 트레일, 강촌 북한강 자전거길, 봉의산 도심 트레일, 김유정 실레이야기길까지. 호반의 도시 춘천에서 달리기 좋은 코스 7곳을 거리·난이도·시간대·러닝화 추천까지 정리했습니다.',
     thumbnail: '/images/blog/chuncheon-unique-running-courses-7.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-05',
     category: 'guide' as const,
     readingTime: 11,
-    tags: ['춘천 러닝 코스', '이색 러닝', '의암호', '공지천', '소양강 스카이워크', '삼악산', '강촌 북한강', '춘천마라톤'],
+    tags: ['춘천 달리기', '춘천 러닝코스', '춘천 러닝 코스', '이색 러닝', '의암호', '공지천', '소양강 스카이워크', '삼악산', '강촌 북한강', '춘천마라톤'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
