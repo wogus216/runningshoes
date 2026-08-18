@@ -38,7 +38,7 @@ export const augustEvents: MarathonEvent[] = [
     location: '신정교 하부 영롱이 억새구장 (서울 양천구)',
     region: '서울',
     distances: ['10K', '5K'],
-    status: '대회종료',
+    status: '접수중',
     isMajor: false,
     website: 'https://moonnightrun.kr/',
     description:
@@ -65,7 +65,7 @@ export const augustEvents: MarathonEvent[] = [
     location: '청라하늘대교 영종진광장로 (인천 중구)',
     region: '인천',
     distances: ['10K'],
-    status: '대회종료',
+    status: '접수중',
     isMajor: false,
     website: 'http://icnr.kr/',
     description:
@@ -83,7 +83,7 @@ export const augustEvents: MarathonEvent[] = [
     location: '2018 평창동계올림픽기념관 (강원 평창군)',
     region: '강원',
     distances: ['하프', '10K'],
-    status: '대회종료',
+    status: '접수중',
     isMajor: false,
     website: 'http://www.ifunrunkorea.co.kr/',
     description:
