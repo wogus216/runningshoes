@@ -2,6 +2,138 @@ import { BlogPost } from '@/types/blog';
 
 export const posts_2026_08: BlogPost[] = [
   {
+    id: 'trail-running-shoes-lineup-tier-guide-2026',
+    slug: 'trail-running-shoes-lineup-tier-guide-2026',
+    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 6곳 13종 가격·무게 비교',
+    description:
+      '트레일 러닝화 13종을 근교·입문 / 올라운드 / 쿠션·울트라 / 카본 레이싱 4단으로 정리했습니다. 아식스 젤 벤처 10(8.9만원)부터 살로몬 S/LAB 펄사 4(34만원)까지 가격·무게 비교표와 함께, 트레일화가 로드화·등산화와 뭐가 다른지, 처음 사는 사람은 어느 단부터 시작하면 되는지 정리했습니다.',
+    author: '산초 에디터',
+    publishedAt: '2026-08-19',
+    category: 'guide' as const,
+    readingTime: 11,
+    tags: ['트레일러닝화 계급도', '트레일화', '트레일러닝화 추천', '트레일러닝 입문', '트레일화 등산화 차이', '스피드고트', '살로몬 펄사', '히에로'],
+    faqs: [
+      {
+        question: '트레일화와 등산화는 뭐가 다른가요?',
+        answer:
+          '가장 큰 차이는 무게와 굽힘입니다. 등산화는 발목을 잡아주고 밑창이 단단해 무거운 배낭을 메고 천천히 걷는 데 맞춰져 있습니다. 트레일 러닝화는 250~330g대로 훨씬 가볍고 앞발이 굽어 달릴 수 있게 설계됐습니다. 대신 발목 지지가 없어 무거운 짐을 메고 장시간 걷기에는 불리합니다. 북한산·관악산 같은 근교 산을 달릴 목적이면 트레일화, 종주 산행이면 등산화 쪽입니다.',
+      },
+      {
+        question: '흙길만 달리는데 트레일화가 꼭 필요한가요?',
+        answer:
+          '평탄한 흙길이나 잘 정비된 둘레길이라면 로드화로도 충분합니다. 트레일화가 값을 하는 구간은 젖은 바위·낙엽·자갈처럼 미끄럽거나 발바닥을 찌르는 노면입니다. 러그(밑창 돌기)가 깊어 접지력이 좋고, 모델에 따라 락플레이트가 들어가 돌 충격을 막아줍니다. 근교 흙길 위주라면 굳이 서두를 필요가 없고, 산에 자주 갈 계획이 생겼을 때 사는 편이 낫습니다.',
+      },
+      {
+        question: '처음이면 어느 단부터 사야 하나요?',
+        answer:
+          '근교·입문 단으로 충분합니다. 카본 레이싱 단(29만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 북한산을 달리는 단계에서는 성능을 쓸 일이 없고 내구성도 레이싱에 맞춰져 있습니다. 올라운드 단은 산에 정기적으로 다니기 시작한 뒤에 넘어가도 늦지 않습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>트레일화는 근교·입문 → 올라운드 → 쿠션·울트라 → 카본 레이싱 4단</strong>으로 갈립니다. 가격대는 8.9만~34만원.</li>
+    <li><strong>비싸다고 좋은 게 아닙니다</strong> — 카본 레이싱 단은 울트라 대회·기술 지형용이라, 근교 산책로 위주라면 성능을 다 쓰지 못합니다.</li>
+    <li><strong>처음이면 무조건 저단부터</strong> — 젤 벤처 10이나 살로몬 펄사로 시작해도 북한산·관악산급 코스는 충분히 커버됩니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">⛰️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 트레일화 계급도 한 장</p>
+    <p>브랜드 계급도를 아디다스부터 라이닝까지 10편 만드는 동안 정작 <strong>트레일</strong>은 비워뒀습니다. 이 글은 브랜드를 넘나들며 <strong>가격·무게로 트레일화 전체를 한눈에</strong> 줄 세운 지도예요. 처음 트레일에 입문하는 분은 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>를 함께 보면 좋습니다.</p>
+  </div>
+</div>
+
+<h2>1. 트레일화가 로드화와 뭐가 다른가</h2>
+
+<p>"트레일화"는 흙·자갈·바위 같은 비포장 노면(trail)을 달리기 위한 러닝화입니다. 겉보기엔 로드화와 비슷해도 세 군데가 다르게 설계됩니다.</p>
+
+<ul>
+  <li><strong>아웃솔 러그</strong> — 밑창에 돌기(러그)가 깊게 박혀 있어 흙·낙엽·젖은 바위에서 미끄러지지 않게 잡아줍니다. 로드화의 평평한 밑창으로는 힘을 못 씁니다.</li>
+  <li><strong>락플레이트</strong> — 미드솔 안에 얇은 보호판을 넣어 뾰족한 돌을 밟아도 발바닥까지 충격이 직접 전해지지 않게 막습니다. 모든 모델에 들어가는 건 아니고, 험한 지형을 겨냥한 모델일수록 흔합니다.</li>
+  <li><strong>토캡</strong> — 앞코를 단단하게 감싸 돌부리에 발가락을 부딪혀도 다치지 않게 보호합니다.</li>
+</ul>
+
+<p>여기에 어퍼도 방수·내마모 소재를 많이 쓰고 접지력을 최우선에 두다 보니, 같은 체급이어도 로드화보다 대체로 무겁고 굳건한 느낌입니다.</p>
+
+<h2>2. 등산화와는 뭐가 다른가</h2>
+
+<p>"트레일화 등산화 차이"는 실제로 많이 검색되는 질문입니다. 둘 다 산에서 신는다는 공통점 때문에 헷갈리기 쉽지만, 목적 자체가 다릅니다.</p>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>트레일 러닝화</th><th>등산화</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>무게</strong></td><td>250~330g대</td><td>대부분 400g 이상 (미드컷·하이컷은 더 무거움)</td></tr>
+    <tr><td><strong>발목 지지</strong></td><td>로우컷, 지지 없음 — 빠르게 움직이는 걸음에 맞춤</td><td>미드컷·하이컷으로 발목을 감싸 무거운 배낭에도 버팀</td></tr>
+    <tr><td><strong>밑창 굽힘</strong></td><td>앞발이 부드럽게 굽어 달리는 동작에 맞음</td><td>단단해 굽힘이 적은 대신, 울퉁불퉁한 바위 위에서도 편평하게 딛는 안정감</td></tr>
+    <tr><td><strong>목적</strong></td><td>근교 산·트레일을 빠르게 달리는 코스</td><td>무거운 짐을 메고 오래 걷는 종주 산행</td></tr>
+  </tbody>
+</table>
+
+<p>정리하면, <strong>달리는 게 목적이면 트레일화, 무거운 배낭을 메고 오래 걷는 게 목적이면 등산화</strong>입니다. 북한산·관악산 같은 근교 산을 가볍게 달릴 계획이라면 트레일화 쪽이 맞고, 지리산 종주처럼 여러 날 짐을 메고 걷는다면 등산화가 낫습니다.</p>
+
+<h2>3. 트레일 러닝화 계급도 — 13종 한눈에</h2>
+
+<p>브랜드 6곳(아식스·호카·살로몬·아디다스·뉴발란스·나이키)의 트레일화 13종을 가격·무게 기준 4단으로 줄 세우면 이렇습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>단</th><th>모델</th><th>가격</th><th>무게</th><th>이럴 때</th></tr>
+  </thead>
+  <tbody>
+    <tr><td rowspan="2">근교·입문</td><td><a href="/shoes/asics-gel-venture-10"><strong>아식스 젤 벤처 10</strong></a></td><td>8.9만</td><td>322g</td><td>흙길·산책로 위주 첫 트레일화, 와이드·워터프루프 옵션</td></tr>
+    <tr><td><a href="/shoes/salomon-pulsar"><strong>살로몬 펄사</strong></a></td><td>21만</td><td>290g</td><td>일상 훈련부터 업템포까지 커버하는 데일리 트레이너</td></tr>
+    <tr><td rowspan="4">올라운드</td><td><a href="/shoes/hoka-speedgoat-6"><strong>호카 스피드고트 6</strong></a></td><td>20.5만</td><td>278g</td><td>젖은 바위부터 급경사까지, 와이드·GTX 방수까지 있는 만능형</td></tr>
+    <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>호카 스피드고트 7</strong></a></td><td>21.9만</td><td>281g</td><td>스피드고트 6의 반발력 강화판, 게이터 부착 루프 추가</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>20.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
+    <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
+    <tr><td rowspan="3">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
+    <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
+    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>336g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 토박스</td></tr>
+    <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
+    <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
+    <tr><td><a href="/shoes/salomon-s-lab-pulsar-4"><strong>살로몬 S/LAB 펄사 4</strong></a></td><td>34만</td><td>247g</td><td>20~80km 기술 트레일·VK·스카이러닝 엘리트 레이서</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>27.9만</td><td>265g</td><td>완만~중간 트레일 레이스, 8mm 드롭·44mm 고스택으로 안정적</td></tr>
+  </tbody>
+</table>
+
+<p>※ 가격은 한국 공식가, 무게는 데이터베이스 실측 기준입니다. 발볼·드롭 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>4. 단별로 — 어떤 러너·어떤 산에 맞나</h2>
+
+<h3>근교·입문 (8.9만~21만원)</h3>
+<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다.</p>
+
+<h3>올라운드 (20.5만~27.9만원)</h3>
+<p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
+
+<h3>쿠션·울트라 (18.9만~23만원)</h3>
+<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
+
+<h3>카본 레이싱 (27.9만~34만원)</h3>
+<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 8mm 드롭·44mm 고스택으로 완만~중간 트레일 레이스에서 안정적인 편입니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
+
+<h2>5. 처음 사는 사람에게</h2>
+
+<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(27.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
+
+<h2>한 걸음 더</h2>
+
+<ul>
+  <li>⛰️ 트레일 러닝화 베스트 → <a href="/best/trail">트레일 러닝화 추천</a></li>
+  <li>🏁 트레일 입문이 처음이라면 → <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-08-19 기준 한국 공식 판매가와 신발 데이터베이스 실측 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'incheon-marathon-2026-site-open',
     slug: 'incheon-marathon-2026-site-open',
     title: '2026 인천마라톤 공식 홈페이지 열렸다 — 그런데 안은 전부 COMING SOON | 확정된 건 세 줄, 접수는 9월 초',
