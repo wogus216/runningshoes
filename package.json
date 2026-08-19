@@ -20,7 +20,8 @@
     "verify:cdn": "node scripts/verify-cdn.mjs",
     "postbuild": "next-sitemap",
     "prepare": "husky",
-    "gsc": "tsx scripts/gsc-report.ts"
+    "gsc": "tsx scripts/gsc-report.ts",
+    "gsc:pages": "tsx scripts/gsc-pages.ts"
   },
   "dependencies": {
     "@google-analytics/data": "^6.1.0",
