@@ -14,6 +14,10 @@ import { AdSlot } from '@/components/ads/ad-slot';
 import { splitContentAtMidH2 } from '@/lib/blog/split-content';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 import { img, withCdnImages } from '@/lib/image';
+import { RaceActionStrip } from '@/components/blog/race/race-action-strip';
+import { RaceFactGrid } from '@/components/blog/race/race-fact-grid';
+import { RaceHighlights } from '@/components/blog/race/race-highlights';
+import { RaceElevation } from '@/components/blog/race/race-elevation';
 
 // 블로그 대회 글 제목에서 거리 추론 (신발/젤 CTA 매핑용)
 function inferRaceDistances(title: string): string[] {
@@ -193,9 +197,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* Velog 스타일 헤더 - 카드 래퍼 없음 */}
         <header className="mb-8">
           {/* 제목 */}
-          <h1 className="text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-tight mb-6">
-            {post.title}
-          </h1>
+          <div className="mb-6">
+            <h1 className="text-4xl lg:text-[2.75rem] font-extrabold text-gray-900 leading-tight">
+              {post.raceMeta?.displayTitle ?? post.title}
+            </h1>
+            {post.raceMeta?.displaySubtitle && (
+              <p className="race-subtitle">{post.raceMeta.displaySubtitle}</p>
+            )}
+          </div>
 
           {/* 작성자 · 날짜 */}
           <div className="flex items-center gap-2 text-base text-gray-500 mb-4">
@@ -232,6 +241,21 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               className="h-full w-full object-cover"
               style={{ margin: 0, borderRadius: '28px', boxShadow: 'none' }}
             />
+          </div>
+        )}
+
+        {/* 대회 글 골격 - raceMeta 있는 글만 렌더 (행동 스트립·핵심 카드·고도·차별점) */}
+        {post.raceMeta && (
+          <div className="race-frame">
+            <RaceActionStrip meta={post.raceMeta} />
+            <RaceFactGrid facts={post.raceMeta.facts} />
+            {post.raceMeta.elevation && post.raceMeta.elevation.length >= 2 && (
+              <RaceElevation
+                points={post.raceMeta.elevation}
+                source={post.raceMeta.elevationSource}
+              />
+            )}
+            <RaceHighlights items={post.raceMeta.highlights} />
           </div>
         )}
 

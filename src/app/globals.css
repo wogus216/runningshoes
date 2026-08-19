@@ -930,3 +930,6 @@
   display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap;
   font-size: 11px; color: var(--tertiary); font-variant-numeric: tabular-nums;
 }
+
+.race-frame { display: flex; flex-direction: column; gap: 18px; margin: 20px 0 28px; }
+.race-subtitle { margin: 8px 0 0; font-size: 15px; color: var(--secondary); line-height: 1.5; }
