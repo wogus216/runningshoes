@@ -42,6 +42,7 @@ export interface SaturdayRaceMeta {
 export interface ChatLine {
   who: string;        // 코드네임 ('재춘' 등)
   text: string;       // 원문 그대로
+  at: string;         // 실제 발신 시각. 날이 바뀌면 'MM.DD HH:MM'
   punch?: boolean;    // 뭉치의 펀치라인. 크게 렌더된다
 }
 

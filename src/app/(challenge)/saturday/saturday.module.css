@@ -534,7 +534,28 @@
 .crewIndex,
 .crewDistance { font: 600 9px/1 var(--sat-mono); letter-spacing: .11em; }
 .crewIndex { margin-bottom: auto; color: var(--sat-signal-dark); }
-.crewDistance { margin-top: 26px; white-space: nowrap; }
+.crewDistance {
+  margin-top: 26px;
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  white-space: nowrap;
+}
+
+/* 거리는 이 명단에서 두 번째로 중요한 정보다. 이름 다음으로 크게 읽혀야 한다 */
+.crewDistance b {
+  font: 800 clamp(15px, 1.5vw, 21px)/1 var(--sat-mono);
+  letter-spacing: -.01em;
+  font-variant-numeric: tabular-nums;
+  color: var(--sat-ink);
+}
+
+.crewDistance i {
+  font: 600 9px/1 var(--sat-mono);
+  font-style: normal;
+  letter-spacing: .14em;
+  color: var(--sat-signal-dark);
+}
 
 .crew[data-beat='2'] .crewHeader { opacity: 0; transform: translateY(-24px); pointer-events: none; }
 .crew[data-beat='2'] .crewList { opacity: 1; transform: translateY(0); }
@@ -818,7 +839,7 @@
   .blackoutEnding { max-width: none; white-space: nowrap; }
 
   /* 푸터도 같은 규칙 — max-width: 15ch가 "토요일에만 뛰는 건 아닙니다."를 접고 있었다 */
-  .footer p { max-width: none; white-space: nowrap; font-size: clamp(22px, 2.6vw, 44px); }
+  .footer p { max-width: none; white-space: nowrap; font-size: min(5.2vw, 44px); }
   .footer strong { white-space: nowrap; }
 }
 
@@ -887,7 +908,9 @@
   .crewEntry:last-child { border-bottom: 0; }
   .crewEntry strong { font-size: clamp(25px, 7vw, 36px); }
   .crewIndex { margin: 0; }
-  .crewDistance { margin: 0; font-size: 8px; }
+  .crewDistance { margin: 0; }
+  .crewDistance b { font-size: 17px; }
+  .crewDistance i { font-size: 8px; }
 
   .crew[data-beat='2'] .crewHeader { opacity: 0; pointer-events: none; }
   .crewFinale { left: 20px; right: 20px; }
@@ -918,12 +941,14 @@
   .race[data-beat='2'] .raceDate { transform: translate3d(0, -93%, 0) scale(.78); }
   .raceBottom { left: 20px; right: 20px; bottom: max(72px, calc(env(safe-area-inset-bottom) + 58px)); grid-template-columns: 1fr; gap: 24px; }
   .raceCopy { justify-self: start; }
-  .raceCopy > p { max-width: 19ch; font-size: clamp(21px, 6vw, 29px); }
+  /* 두 줄로 접히면 문장이 아니라 덩어리로 읽힌다. 폭에 맞춰 줄여 한 줄로 유지 */
+  .raceCopy > p { max-width: none; white-space: nowrap; font-size: min(4.6vw, 29px); }
   .blackout { padding-inline: 20px; }
   .blackoutTitle { font-size: clamp(52px, 15vw, 66px); line-height: 1.06; letter-spacing: -.07em; }
 
   .footer { min-height: 65svh; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; padding: 72px 20px max(36px, env(safe-area-inset-bottom)); }
-  .footer p { justify-self: start; text-align: left; }
+  /* 이 폭에서는 이 블록이 실제로 매칭된다 — 한 줄 유지 규칙을 여기 둔다 */
+  .footer p { justify-self: start; text-align: left; max-width: none; white-space: nowrap; font-size: min(5.4vw, 40px); }
 }
 
 @media (max-width: 430px) {
@@ -1086,42 +1111,88 @@
 .burstLines li {
   --line-start: calc(.10 + var(--line-index) * .085);
   --in: clamp(0, calc((var(--local) - var(--line-start)) * 14), 1);
-  display: grid;
-  grid-template-columns: 72px minmax(0, 1fr);
-  gap: 20px;
-  align-items: baseline;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 6px 12px;
   opacity: var(--in);
   transform: translateY(calc((1 - var(--in)) * 18px));
 }
 
+/* 운영자 본인 말만 오른쪽. 대화가 대화로 읽히는 최소 장치다 */
+.mine { justify-content: flex-end; }
+
 .who {
+  order: 1;
+  flex: none;
+  width: 68px;
   color: var(--sat-concrete);
-  font: 600 11px/1.7 var(--sat-mono);
+  font: 600 11px/1.9 var(--sat-mono);
   letter-spacing: .1em;
   text-align: right;
-  white-space: nowrap;
 }
 
-.said {
-  font-size: clamp(17px, 2.1vw, 23px);
+/* 같은 사람이 이어 말하면 이름을 지우되 자리는 남긴다 — 말풍선 왼쪽 선이 흔들리지 않게 */
+.who[data-repeat] { visibility: hidden; }
+.mine .who { display: none; }
+
+.bubble {
+  order: 2;
+  max-width: min(62ch, 78%);
+  padding: 12px 18px;
+  border: 1px solid rgba(212,205,196,.2);
+  border-radius: 2px;
+  background: rgba(212,205,196,.08);
+  font-size: clamp(16px, 1.9vw, 21px);
   line-height: 1.5;
   word-break: keep-all;
 }
 
+.mine .bubble {
+  border-color: transparent;
+  background: var(--sat-paper);
+  color: var(--sat-ink);
+}
+
+.at {
+  order: 3;
+  flex: none;
+  padding-bottom: 3px;
+  color: rgba(151,167,192,.62);
+  font: 600 10px/1 var(--sat-mono);
+  letter-spacing: .08em;
+  font-variant-numeric: tabular-nums;
+}
+
+.mine .at { order: 1; }
+
+/* 날이 바뀌면 줄 위에 가운데 구분자를 둔다 — 보름에 걸친 대화라는 사실이 그대로 보인다 */
+.dayBreak {
+  order: 0;
+  flex-basis: 100%;
+  margin: clamp(10px, 1.6vh, 20px) 0 4px;
+  text-align: center;
+  color: var(--sat-concrete);
+  font: 600 10px/1 var(--sat-mono);
+  letter-spacing: .2em;
+}
+
 /* 뭉치의 펀치라인 하나만 키운다. 색은 올리지 않는다 — 크기로 충분하다 */
-.punchLine .said {
-  font-size: clamp(26px, 4.2vw, 48px);
+.punchLine .bubble {
+  padding: 16px 22px;
+  font-size: clamp(24px, 3.6vw, 40px);
   font-weight: 800;
-  line-height: 1.14;
-  letter-spacing: -.035em;
+  line-height: 1.18;
+  letter-spacing: -.03em;
   color: var(--sat-paper-deep);
 }
 
+.punchLine.mine .bubble { color: var(--sat-ink); }
 .punchLine { margin-block: 6px; }
 
 @media (max-width: 640px) {
-  .burstLines li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
-  .who { text-align: left; }
+  .who { width: 52px; font-size: 10px; }
+  .bubble { max-width: 84%; }
 }
 
 /* ── 사진 벽 ─────────────────────────────────────────────────────────────
