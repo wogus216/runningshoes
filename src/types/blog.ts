@@ -23,6 +23,48 @@ export interface BlogEvent {
   }>;
 }
 
+/** 대회 핵심 카드 한 장 */
+export interface RaceFact {
+  label: string;   // '대회일'
+  value: string;   // '12월 6일'
+  sub?: string;    // '일 · 07:30'
+}
+
+/** 이 대회만의 것 한 항목 */
+export interface RaceHighlight {
+  badge: string;   // '3×' · '12월' · '국내 유일' — 순번(01/02/03) 금지
+  title: string;
+  desc: string;
+}
+
+/** 고도 프로파일 한 점 */
+export interface RaceElevationPoint {
+  km: number;
+  m: number;
+}
+
+/**
+ * 대회 글 구조 데이터. 이 필드가 있는 글만 새 구성 표준으로 렌더되고
+ * validate 검사 대상이 된다. 기존 글은 필드가 없어 영향받지 않는다.
+ * 날짜는 전부 KST 기준 문자열 — 'YYYY-MM-DD' 또는 'YYYY-MM-DDTHH:mm'.
+ */
+export interface RaceMeta {
+  /** 화면용 제목. 검색용 `title` 과 별개이며 40자 이하 */
+  displayTitle: string;
+  displaySubtitle?: string;
+  raceDate: string;
+  registrationStart?: string;
+  registrationEnd?: string;
+  registrationVia?: string;
+  action?: { what: string; how: string };
+  facts: RaceFact[];
+  highlights: RaceHighlight[];
+  elevation?: RaceElevationPoint[];
+  /** 고도 수치의 출처. elevation 이 있으면 반드시 함께 적는다 */
+  elevationSource?: string;
+  marathonId?: string;
+}
+
 export interface BlogPost {
   id: string;
   slug: string;
@@ -39,13 +81,14 @@ export interface BlogPost {
   thumbnail?: string;
   faqs?: BlogFaq[];
   event?: BlogEvent;
+  raceMeta?: RaceMeta;
 }
 
 /**
  * 목록/카드용 경량 포스트 메타 (본문 content 제외, thumbnail 사전 해석).
  * 블로그 목록 페이지가 192편 전체 content를 클라이언트로 직렬화하지 않도록 하기 위한 projection.
  */
-export type BlogPostMeta = Omit<BlogPost, 'content' | 'thumbnail'> & {
+export type BlogPostMeta = Omit<BlogPost, 'content' | 'thumbnail' | 'raceMeta'> & {
   thumbnail: string | null;
 };
 

@@ -16,7 +16,8 @@ export function getAllPosts(): BlogPost[] {
  * 단일 포스트 → 경량 메타 projection (본문 content 제외, thumbnail 사전 해석)
  */
 export function toPostMeta(post: BlogPost): BlogPostMeta {
-  const { content, thumbnail, ...rest } = post;
+  const { content, thumbnail, raceMeta, ...rest } = post;
+  void raceMeta; // 목록 페이로드에서 의도적으로 제외 — 상세 페이지만 쓴다
   return { ...rest, thumbnail: thumbnail ?? extractThumbnail(content) };
 }
 
