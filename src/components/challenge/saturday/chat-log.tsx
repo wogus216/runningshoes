@@ -59,11 +59,15 @@ export function ChatLog() {
               <ol className={styles.burstLines}>
                 {/* 줄이 도착하기 시작하는 지점을 줄 수로 나눠 계산한다.
                     고정 간격이면 줄이 적은 뭉치가 일찍 끝나 남은 스크롤이 죽는다.
-                    어느 뭉치든 마지막 줄이 span 의 70% 지점에서 시작하고,
-                    남은 30%가 뭉치 전체를 읽는 시간이 된다. */}
+
+                    ⚠️ 2026-08-19 실측: 도착 구간이 .08~.70 이라 마지막 줄이 .77 에야 다 뜨는데
+                    뭉치는 .857 부터 사라지기 시작했다 → 다 조립된 화면이 구간의 9%,
+                    모바일에서 41px 밖에 안 됐다. 스와이프 한 번이 400~800px 이니
+                    "읽을 새도 없이 넘어간다"는 피드백은 정확했다.
+                    도착을 .06~.40 으로 앞당겨 .47 에 끝내고, 나머지 42%를 읽는 시간으로 준다. */}
                 {burst.lines.map((line, lineIndex) => {
-                  const step = burst.lines.length > 1 ? 0.62 / (burst.lines.length - 1) : 0;
-                  const lineStart = (0.08 + lineIndex * step).toFixed(4);
+                  const step = burst.lines.length > 1 ? 0.34 / (burst.lines.length - 1) : 0;
+                  const lineStart = (0.06 + lineIndex * step).toFixed(4);
                   const previous = burst.lines[lineIndex - 1];
                   // 같은 사람이 이어 말하면 이름을 다시 적지 않는다
                   const sameSpeaker = previous?.who === line.who;

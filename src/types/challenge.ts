@@ -79,6 +79,10 @@ export interface SaturdayTeaserCopy {
     hook: string;
     next: string;      // 티저를 닫는 예고 한 줄. 웹 마지막 화면과 Remotion 엔딩이 공유한다
   };
+  footer: {
+    nameOrigin: string; // 크루 이름의 유래. 바로 아래 joke 의 전제라 순서를 바꾸지 않는다
+    joke: string;
+  };
 }
 
 export interface WeekEntry {
