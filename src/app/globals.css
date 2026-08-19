@@ -72,6 +72,7 @@
   --background: #000000;
   --foreground: #FFFFFF;
   --warn-soft: #2A2113;      /* 대회 상태 배지 upcoming 배경 */
+  --warning-dark: #D9A24B;   /* :root #96600B 는 다크 배경에서 대비 미달(warn-soft 대비 3.04:1) — 6.96:1 로 재정의 */
 }
 
 @layer base {
