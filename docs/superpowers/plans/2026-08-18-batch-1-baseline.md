@@ -36,3 +36,22 @@
 ## 신규 2편 (T0·R2) — 기준선 없음
 
 노출 0에서 시작. 4주 뒤 **노출 발생 여부**가 1차 기준.
+
+## 4주 후 측정 (2026-09-15 이후 실행)
+
+```bash
+# L2 — 수리 효과
+npm run gsc:pages -- --since=2026-08-18 unique-running-courses-7
+
+# T0 — 신규 노출 발생 여부
+npm run gsc:pages -- --since=2026-08-18 trail-running-shoes-lineup-tier-guide-2026
+
+# R2 — 신규 노출 발생 여부
+npm run gsc:pages -- --since=2026-08-18 recovery-run-vs-lsd-guide-2026
+```
+
+**판정 후 행동**
+
+- L2 성공 → 노출 0인 4편에도 같은 수리 적용 검토
+- L2 롤백 조건 충족 → 제목 원복 (slug는 안 바꿨으므로 원복만 하면 됨)
+- T0·R2 노출 0 → 각도 가설 재검토. 스펙 12절 "가장 유리한 조건에서 실패" 조항 발동
