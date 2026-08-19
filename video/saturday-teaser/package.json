@@ -1,0 +1,39 @@
+{
+  "name": "saturday-teaser",
+  "version": "1.0.0",
+  "description": "쎄러데이 MISSION 00 — 15초 Instagram teaser",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/cli": "4.0.509",
+    "@remotion/fonts": "4.0.509",
+    "@remotion/media": "4.0.509",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.509"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.509",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio --no-open",
+    "build": "remotion bundle",
+    "render:reel": "remotion render SaturdayMission00-Reel output/saturday-mission-00-reel.mp4 --crf=26",
+    "render:web": "remotion render SaturdayMission00-Web output/saturday-mission-00-web.mp4 --crf=23",
+    "render:web-plate": "remotion render SaturdayMission00-WebPlate output/saturday-mission-00-web-plate.mp4 --crf=24",
+    "render:reel-plate": "remotion render SaturdayMission00-ReelPlate output/saturday-mission-00-reel-plate.mp4 --crf=24",
+    "still": "remotion still SaturdayMission00-Reel output/saturday-mission-00-poster.png --frame=390",
+    "still:web": "remotion still SaturdayMission00-Web output/saturday-mission-00-web-poster.png --frame=34",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

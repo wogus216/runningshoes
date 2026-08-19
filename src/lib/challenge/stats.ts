@@ -2,8 +2,9 @@
 // 정규화 상수는 스펙 §6에 고정돼 있다. 값을 바꾸면 과거 주차와 비교가 깨진다.
 
 import type { CrewStats, RadarAxes } from '@/types/challenge';
+import { RACE_META } from '@/lib/data/challenge/saturday';
 
-export const RACE_DATE = '2026-11-15';
+export const RACE_DATE = RACE_META.dateIso;
 
 // 정규화 상수 (스펙 §6 — 변경 금지)
 const MAX_WEEKLY_KM = 60;
@@ -40,6 +41,14 @@ export function daysUntilRace(now: Date): number {
   const [ry, rm, rd] = RACE_DATE.split('-').map(Number);
   const race = Date.UTC(ry, rm - 1, rd);
   return Math.round((race - today) / 86_400_000);
+}
+
+// 티저 보조 문구 — 서버 마크업은 날짜를 보여주고, hydration 뒤 이 라벨만 붙는다
+export function missionDdayLabel(now: Date): string {
+  const days = daysUntilRace(now);
+  if (days > 0) return `D-${days}`;
+  if (days === 0) return 'D-DAY';
+  return 'MISSION DAY PASSED';
 }
 
 // 타임라인 배경 — 주차가 쌓일수록 밝아진다 (스펙 §3 서사)

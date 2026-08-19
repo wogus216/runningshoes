@@ -1,0 +1,1184 @@
+:global(html):has(.saturday),
+:global(body):has(.saturday) {
+  overflow-x: visible;
+}
+
+.saturday {
+  /* 색은 전부 촬영본 8컷의 실제 픽셀에서 뽑았다 (2026-08-15 재생성분).
+     상상해서 정한 이전 팔레트는 폐기 — 특히 #ff5a36 은 8컷 115,200 표본 픽셀 중
+     거리 30 이내가 0.00% 였다(사진에 없는 색). 근거 문서: docs/superpowers/design/saturday-cuts/ */
+  --sat-asphalt: #060809;        /* 배경. 실측 최암부(#181e2a)보다 한 단계 아래 — 배경이 사진보다
+                                    밝으면 사진이 죽는다. 이 한 칸만 기능적으로 정한 값이다 */
+  --sat-asphalt-soft: #1c2430;   /* 일출컷 p15 — 노면 그늘 */
+  --sat-bluehour: #133142;       /* 일출컷 하늘. 그 사진의 26.61% 가 이 색이다 */
+  --sat-paper: #d4cdc4;          /* 일출컷 최근접 거리 3 — 해 뜬 뒤 따뜻한 회색 */
+  --sat-paper-deep: #efe9e1;     /* 하늘 최고광 */
+  --sat-ink: #0a1013;            /* 밝은 면 위 본문 */
+  /* 해는 노랑이지 주황이 아니다. 폐기한 #c2610f(나트륨 가로등)는 AI 컷에만 있던 색으로,
+     실제 사진 40,000px 중 거리 30 이내가 0.00%(최근접 45)였다.
+     #f3cc7c 는 어두운 바닥에서 대비 11:1 이라 면·선·글자를 혼자 다 한다 —
+     그래서 이전의 filament 토큰은 없앴다(어두워서 글자가 못 되던 문제가 사라졌다). */
+  --sat-signal: #f3cc7c;         /* 일출컷의 해 */
+  --sat-signal-dark: #7a4520;    /* 밝은 종이면 위 글자용 (4.8:1) */
+  --sat-concrete: #afaea0;       /* 일출컷 p85 — 하늘과 물의 회색 */
+  --sat-mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --sat-ease-enter: cubic-bezier(.16, 1, .3, 1);
+  --sat-ease-move: cubic-bezier(.65, 0, .35, 1);
+  min-height: 100svh;
+  color: var(--sat-paper);
+  background: var(--sat-asphalt);
+  isolation: isolate;
+}
+
+.saturday *,
+.saturday *::before,
+.saturday *::after {
+  box-sizing: border-box;
+}
+
+.saturday h1,
+.saturday h2,
+.saturday p {
+  margin: 0;
+  color: inherit;
+}
+
+.saturday a:focus-visible,
+.saturday button:focus-visible {
+  outline: 2px solid var(--sat-signal);
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+.skipLink {
+  position: fixed;
+  z-index: 100;
+  top: 12px;
+  left: 16px;
+  padding: 12px 16px;
+  color: var(--sat-asphalt);
+  background: var(--sat-paper);
+  font-size: 14px;
+  font-weight: 800;
+  transform: translateY(-150%);
+  transition: transform 180ms ease;
+}
+
+.skipLink:focus { transform: translateY(0); }
+
+.header {
+  position: fixed;
+  z-index: 50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: max(22px, env(safe-area-inset-top)) clamp(20px, 5vw, 72px) 16px;
+  color: var(--sat-paper);
+  background: linear-gradient(180deg, rgba(6,8,9,.78), transparent);
+  pointer-events: none;
+}
+
+.brand,
+.missionStatus {
+  pointer-events: auto;
+  font: 600 10px/1 var(--sat-mono);
+  letter-spacing: .16em;
+}
+
+.brand {
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: inherit;
+  text-decoration: none;
+}
+
+.brand i {
+  width: 24px;
+  height: 2px;
+  background: var(--sat-signal);
+  transform: skewX(-20deg);
+}
+
+.missionStatus {
+  display: flex;
+  gap: 18px;
+  color: rgba(212,205,196,.64);
+}
+
+.missionStatus span:first-child { color: var(--sat-signal); }
+
+.main { position: relative; z-index: 1; }
+
+.scene {
+  --scene-progress: 0;
+  position: relative;
+  min-height: 280svh;
+  background: var(--sat-asphalt);
+}
+
+.crew { min-height: 340svh; }
+.race { min-height: 300svh; }
+
+.stage {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  overflow: hidden;
+}
+
+.filmGrain {
+  position: absolute;
+  z-index: 16;
+  inset: 0;
+  opacity: .15;
+  pointer-events: none;
+  background-image:
+    repeating-linear-gradient(0deg, transparent 0 3px, rgba(255,255,255,.025) 3px 4px),
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,.08) 0 1px, transparent 1.5px);
+  background-size: auto, 5px 5px;
+  mix-blend-mode: soft-light;
+}
+
+.trackLines {
+  position: absolute;
+  z-index: 2;
+  inset: 0;
+  opacity: .28;
+  background:
+    linear-gradient(171deg, transparent 0 54%, rgba(212,205,196,.15) 54.1% 54.25%, transparent 54.35%),
+    linear-gradient(171deg, transparent 0 67%, rgba(212,205,196,.09) 67.1% 67.22%, transparent 67.32%);
+  pointer-events: none;
+}
+
+.progress {
+  position: absolute;
+  z-index: 25;
+  left: clamp(20px, 5vw, 72px);
+  right: clamp(20px, 5vw, 72px);
+  bottom: max(22px, env(safe-area-inset-bottom));
+  height: 1px;
+  background: rgba(212,205,196,.24);
+}
+
+.progress i {
+  display: block;
+  width: calc(var(--scene-progress) * 100%);
+  height: 2px;
+  background: var(--sat-signal);
+  transform: translateY(-1px);
+}
+
+.progressDark { background: rgba(10,16,19,.24); }
+
+/* Mission Hero */
+.heroStage {
+  padding: clamp(92px, 11vh, 132px) clamp(20px, 5vw, 72px) clamp(54px, 7vh, 82px);
+  background:
+    radial-gradient(circle at 82% 45%, rgba(243,204,124,.13), transparent 28%),
+    var(--sat-asphalt);
+}
+
+/* 지시서 정본: 데스크톱은 16:9 web 영상 — full-bleed로 깔고 그라디언트로 좌측 타이포 가독을 지킨다 */
+.heroMedia {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  background: var(--sat-asphalt-soft);
+}
+
+.heroMedia picture { position: absolute; inset: 0; display: block; }
+
+/* 2026-08-18 — 영상 플레이트에서 실제 사진으로 바뀌면서 처리도 바꿨다.
+   brightness(1.24)·scale(1.02)는 어두운 영상을 들어올리려던 값이라, 노출이 이미 맞은
+   사진에 먹이면 해 주변이 타고 확대로 디테일이 무너진다. 둘 다 제거.
+   흑백은 사진 벽과 같은 처리다 — 페이지 안에 사진 규칙을 하나만 둔다. */
+.heroPlate {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* 러너를 오른쪽 아래로 보내 왼쪽 위를 문구에 내준다 */
+  object-position: 68% 42%;
+  filter: grayscale(1) contrast(1.08);
+}
+
+/* 밴드(문장이 앉는 띠) 뒤에만 어둡게. 화면 중앙 영상은 열어 둔다 */
+.videoShade {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(6,8,9,.72) 0%, rgba(6,8,9,.18) 16%, transparent 34%),
+    /* 문구가 앉는 왼쪽을 눌러 글자 대비를 만든다 (사진은 오른쪽에 열어 둔다) */
+    linear-gradient(90deg, rgba(6,8,9,.86) 0%, rgba(6,8,9,.52) 34%, rgba(6,8,9,.06) 62%, transparent 78%),
+    linear-gradient(0deg, rgba(6,8,9,.92) 0%, rgba(6,8,9,.68) 18%, rgba(6,8,9,.1) 44%, transparent 58%);
+  transition: opacity 700ms ease;
+}
+
+/* 결정 프레임에서만 화면을 눌러 문장 하나만 남긴다 (플레이트가 밝아져 약하게) */
+.hero[data-beat='2'] .videoShade::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(6,8,9, .34);
+}
+
+/* 사운드 토글은 히어로 영상과 함께 걷어냈다 (2026-08-18) */
+
+.heroLabel {
+  position: relative;
+  z-index: 5;
+  width: min(53vw, 780px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font: 500 10px/1 var(--sat-mono);
+  letter-spacing: .15em;
+  color: rgba(212,205,196,.48);
+}
+
+.heroLabel b { color: var(--sat-paper); font-weight: 600; }
+
+.heroCopy {
+  position: relative;
+  z-index: 5;
+  width: min(58vw, 900px);
+  height: calc(100% - 110px);
+}
+
+.heroBeat {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 4%;
+  max-width: 22ch;
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateY(30px);
+  transition:
+    opacity 320ms ease,
+    filter 520ms ease,
+    transform 700ms var(--sat-ease-enter);
+  word-break: keep-all;
+  text-wrap: balance;
+}
+
+.heroQuestion {
+  max-width: 15ch;
+  font-size: clamp(44px, 5.2vw, 88px);
+  font-weight: 880;
+  line-height: 1.18;
+  letter-spacing: -.05em;
+}
+
+/* 한 줄로 흐르되 낱말 단위로만 끊긴다 */
+.heroQuestion span + span::before { content: ' '; }
+
+.heroTurn {
+  max-width: 16ch;
+  font-size: clamp(34px, 3.8vw, 62px);
+  font-weight: 800;
+  line-height: 1.28;
+  letter-spacing: -.05em;
+  color: rgba(212,205,196, .82);
+}
+
+.heroHook {
+  max-width: 11ch;
+  font-size: clamp(58px, 7.4vw, 124px);
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -.065em;
+}
+
+.heroHook i {
+  position: absolute;
+  left: 0;
+  bottom: -.14em;
+  width: 100%;
+  /* 해 색으로 바꾸면서 얇게 — 노랑은 주황보다 밝아 같은 두께면 면적이 더 크게 읽힌다 */
+  height: .042em;
+  background: var(--sat-signal);
+  transform: skewX(-18deg);
+}
+
+.heroFinal {
+  max-width: 26ch;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  font-size: clamp(24px, 2.8vw, 44px);
+  font-weight: 820;
+  line-height: 1.4;
+  letter-spacing: -.045em;
+}
+
+.heroFinal strong {
+  color: var(--sat-signal);
+  font: 600 11px/1 var(--sat-mono);
+  letter-spacing: .18em;
+}
+
+.hero[data-beat='0'] .heroQuestion,
+.hero[data-beat='1'] .heroTurn,
+.hero[data-beat='2'] .heroHook,
+.hero[data-beat='3'] .heroFinal {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateY(0);
+}
+
+/* 밴드 이동 — 질문은 바닥에서, 결정적 한 마디만 화면 가운데로 올라온다 */
+.heroQuestion { bottom: 4%; }
+.heroTurn { bottom: 6%; }
+.heroHook { bottom: 42%; }
+.heroFinal { bottom: 5%; }
+
+/* 영상은 컷마다 아주 조금씩만 더 들어간다. 결정 프레임에서만 감속 */
+.hero[data-beat='1'] .heroPlate { transform: scale(1.05); }
+.hero[data-beat='2'] .heroPlate { transform: scale(1.09); filter: grayscale(1) contrast(1.12); }
+.hero[data-beat='3'] .heroPlate { transform: scale(1.11); filter: grayscale(1) contrast(1.16) brightness(1.06); }
+
+.heroPlate { transition: transform 1400ms var(--sat-ease-move), filter 900ms ease; }
+
+.heroMeta {
+  position: absolute;
+  z-index: 6;
+  left: clamp(20px, 5vw, 72px);
+  bottom: clamp(44px, 8vh, 92px);
+  display: flex;
+  gap: 16px;
+  color: rgba(212,205,196,.58);
+  font: 500 10px/1 var(--sat-mono);
+  letter-spacing: .11em;
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 500ms ease, transform 700ms var(--sat-ease-enter);
+}
+
+.heroMeta span + span::before { content: '/'; margin-right: 16px; color: var(--sat-signal); }
+.hero[data-beat='3'] .heroMeta { opacity: 1; transform: translateY(0); }
+
+.scrollCue {
+  position: absolute;
+  z-index: 6;
+  right: clamp(20px, 5vw, 72px);
+  bottom: clamp(112px, 15vh, 150px);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(212,205,196,.42);
+  font: 500 8px/1 var(--sat-mono);
+  letter-spacing: .15em;
+  writing-mode: vertical-rl;
+}
+
+.scrollCue i { display: block; width: 1px; height: 38px; background: var(--sat-signal); }
+
+/* Crew */
+.crewStage {
+  padding: clamp(92px, 11vh, 132px) clamp(20px, 5vw, 72px) clamp(52px, 7vh, 82px);
+  color: var(--sat-ink);
+  background: var(--sat-paper);
+}
+
+.paperGrid {
+  position: absolute;
+  inset: 0;
+  opacity: .52;
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(10,16,19,.055) 1px, transparent 1px),
+    linear-gradient(rgba(10,16,19,.025) 1px, transparent 1px);
+  background-size: 8.333vw 100%, 100% 48px;
+}
+
+/* 2026-08-18 — 크루 컷을 밝은 사진으로 다시 뽑았다(실측 평균밝기 17% → 81%).
+   흑백 필터 + opacity .52/.18 로 사진을 죽이던 처리는 어두운 야간 컷을 종이 배경에
+   억지로 앉히려던 보정이었다. 사진은 그대로 두고, 글자가 앉는 하단만 스크림으로 덮는다. */
+.crewImage {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  opacity: 0;
+  filter: contrast(1.03) saturate(.97);
+  transition: opacity 700ms ease, transform 1100ms var(--sat-ease-enter);
+  transform: scale(1.05);
+}
+
+.crewImage picture { position: absolute; inset: 0; display: block; }
+.crewImage img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
+.crewImage::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  transition: background 700ms ease;
+  background: linear-gradient(180deg, rgba(212,205,196,.06) 0%, rgba(212,205,196,0) 34%, rgba(212,205,196,.72) 78%, rgba(212,205,196,.94) 100%);
+}
+
+.crew[data-beat='1'] .crewImage,
+.crew[data-beat='2'] .crewImage { opacity: 1; transform: scale(1); }
+/* 명단이 올라오는 마지막 비트에서도 사진을 끄지 않는다 — 스크림만 위로 끌어올린다 */
+.crew[data-beat='3'] .crewImage { opacity: 1; transform: scale(.98); }
+.crew[data-beat='3'] .crewImage::after {
+  background: linear-gradient(180deg, rgba(212,205,196,.5) 0%, rgba(212,205,196,.36) 26%, rgba(212,205,196,.86) 62%, rgba(212,205,196,.96) 100%);
+}
+
+.crewHeader {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  grid-template-columns: 7fr 5fr;
+  align-items: end;
+  gap: 56px;
+  transition: transform 800ms var(--sat-ease-enter), opacity 500ms ease;
+}
+
+.darkKicker,
+.lightKicker {
+  display: block;
+  margin-bottom: 18px;
+  font: 600 10px/1 var(--sat-mono);
+  letter-spacing: .17em;
+}
+
+.darkKicker { color: var(--sat-signal-dark); }
+.lightKicker { color: var(--sat-signal); }
+
+.crewHeader h2 {
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(58px, 7.4vw, 116px);
+  font-weight: 900;
+  line-height: 1.08;
+  letter-spacing: -.065em;
+}
+
+.crewHeader > p {
+  max-width: 26ch;
+  justify-self: end;
+  font-size: clamp(16px, 1.4vw, 21px);
+  font-weight: 650;
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+.assembleWord {
+  position: absolute;
+  z-index: 6;
+  left: 50%;
+  top: 50%;
+  /* 밝은 종이면 위 — signal(#f3cc7c)은 여기서 대비 1.3:1 이라 보이지 않는다 */
+  color: var(--sat-signal-dark);
+  /* 한글 전환어 — mono·과밀 자간은 한글에서 깨진다 */
+  font-size: clamp(76px, 13vw, 208px);
+  font-weight: 900;
+  line-height: 1.04;
+  letter-spacing: -.055em;
+  opacity: 0;
+  transform: translate(-50%, -42%) scale(.72);
+  transition: opacity 220ms ease, transform 900ms var(--sat-ease-enter);
+  white-space: nowrap;
+  mix-blend-mode: multiply;
+}
+
+.crew[data-beat='1'] .assembleWord { opacity: .95; transform: translate(-50%, -50%) scale(1); }
+
+.crewList {
+  position: absolute;
+  z-index: 8;
+  left: clamp(20px, 5vw, 72px);
+  right: clamp(20px, 5vw, 72px);
+  top: clamp(176px, 26vh, 250px);
+  bottom: clamp(56px, 8vh, 90px);
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 3px solid var(--sat-ink);
+  border-bottom: 3px solid var(--sat-ink);
+  list-style: none;
+  opacity: 0;
+  transform: translateY(42px);
+  transition: opacity 360ms ease, transform 760ms var(--sat-ease-enter);
+}
+
+.crewEntry {
+  min-width: 0;
+  padding: 26px 16px 30px;
+  border-right: 1px solid rgba(10,16,19,.28);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  /* 일곱 명이 한 명씩 등장한다. 시간(transition-delay)이 아니라 스크롤 진행도에 묶는다 —
+     그래야 등장 속도를 보는 사람이 쥐고, 되감으면 되감긴다.
+     --scene-progress 는 CinematicDirector 가 씬에 인라인으로 넣는 0~1 숫자다.
+     crew 씬의 beat 2 구간이 .40~.73 이라 그 안에서 7명을 .42~.63 에 배분한다. */
+  --entry-start: calc(.42 + var(--entry-index) * .035);
+  --entry-in: clamp(0, calc((var(--scene-progress, 1) - var(--entry-start)) * 26), 1);
+  opacity: var(--entry-in);
+  transform: translateY(calc((1 - var(--entry-in)) * 30px));
+  transition: background-color 180ms ease;
+}
+
+.crewEntry:last-child { border-right: 0; }
+.crewEntry strong { font-size: clamp(28px, 3vw, 48px); line-height: 1.16; letter-spacing: -.045em; }
+.crewIndex,
+.crewDistance { font: 600 9px/1 var(--sat-mono); letter-spacing: .11em; }
+.crewIndex { margin-bottom: auto; color: var(--sat-signal-dark); }
+.crewDistance { margin-top: 26px; white-space: nowrap; }
+
+.crew[data-beat='2'] .crewHeader { opacity: 0; transform: translateY(-24px); pointer-events: none; }
+.crew[data-beat='2'] .crewList { opacity: 1; transform: translateY(0); }
+
+.crewFinale {
+  position: absolute;
+  z-index: 9;
+  left: clamp(20px, 5vw, 72px);
+  right: clamp(20px, 5vw, 72px);
+  top: 50%;
+  opacity: 0;
+  transform: translateY(calc(-50% + 34px));
+  transition: opacity 420ms ease, transform 760ms var(--sat-ease-enter);
+}
+
+/* 합계는 표가 아니라 숫자 하나다. 같은 사실을 세 칸에 쪼개 적으면 셋 다 작아 보인다. */
+.totals {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px 32px;
+  padding-top: 20px;
+  border-top: 3px solid var(--sat-ink);
+}
+
+.totalKm {
+  display: flex;
+  align-items: baseline;
+  font-variant-numeric: tabular-nums;
+  line-height: .84;
+}
+
+.totalKm strong {
+  font-size: clamp(76px, 13vw, 200px);
+  font-weight: 900;
+  letter-spacing: -.065em;
+}
+
+/* 소수점 이하는 기록지처럼 작게 — 경기 결과 표기의 리듬 */
+.totalKm em {
+  font-style: normal;
+  font-size: clamp(30px, 4.6vw, 68px);
+  font-weight: 800;
+  letter-spacing: -.04em;
+}
+
+.totalKm i {
+  margin-left: .38em;
+  font-style: normal;
+  font: 700 clamp(13px, 1.2vw, 18px)/1 var(--sat-mono);
+  letter-spacing: .18em;
+  color: var(--sat-signal-dark);
+}
+
+.totalNote {
+  padding-bottom: clamp(8px, 1.4vw, 20px);
+  text-align: right;
+  font-size: clamp(14px, 1.4vw, 19px);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.totalNote span {
+  display: block;
+  margin-top: 8px;
+  font: 600 11px/1.6 var(--sat-mono);
+  letter-spacing: .12em;
+  color: rgba(10,16,19,.55);
+}
+
+.totalNote b { color: var(--sat-signal-dark); font-weight: inherit; }
+.crewStatus {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 40px;
+  max-width: 22ch;
+  font-size: clamp(26px, 3.2vw, 50px);
+  font-weight: 850;
+  line-height: 1.22;
+  letter-spacing: -.05em;
+  word-break: keep-all;
+}
+
+.crewStatus span { color: rgba(10,16,19, .5); }
+.crewStatus b { color: var(--sat-ink); font-weight: inherit; }
+.crewStatus b::after {
+  content: '';
+  display: block;
+  width: 2.6em;
+  height: 3px;
+  margin-top: 18px;
+  /* 종이면 위 — 노랑(#f3cc7c)은 여기서 대비 1.3:1 이라 보이지 않는다 */
+  background: var(--sat-signal-dark);
+}
+
+.crew[data-beat='3'] .crewHeader,
+.crew[data-beat='3'] .crewList { opacity: 0; transform: translateY(-54px); pointer-events: none; }
+.crew[data-beat='3'] .crewFinale { opacity: 1; transform: translateY(-50%); }
+
+/* Race target */
+.raceStage {
+  padding: clamp(92px, 11vh, 132px) clamp(20px, 5vw, 72px) clamp(58px, 8vh, 88px);
+  background:
+    radial-gradient(circle at 88% 53%, rgba(243,204,124,.16), transparent 31%),
+    var(--sat-asphalt);
+}
+
+.raceSlash {
+  position: absolute;
+  z-index: 1;
+  top: -20%;
+  right: 16%;
+  width: clamp(120px, 17vw, 280px);
+  height: 140%;
+  background: linear-gradient(90deg, rgba(243,204,124,.03), rgba(243,204,124,.15), rgba(243,204,124,.02));
+  transform: skewX(-21deg);
+}
+
+.raceTop,
+.raceBottom,
+.raceDate { position: relative; z-index: 4; }
+
+.raceTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 450ms ease, transform 720ms var(--sat-ease-enter);
+}
+
+.raceTop p {
+  color: rgba(212,205,196,.48);
+  text-align: right;
+  font: 500 9px/1.6 var(--sat-mono);
+  letter-spacing: .13em;
+}
+
+.raceDate {
+  position: absolute;
+  left: clamp(20px, 5vw, 72px);
+  top: 50%;
+  display: flex;
+  align-items: center;
+  color: var(--sat-paper);
+  font-size: clamp(160px, 25vw, 390px);
+  font-weight: 900;
+  line-height: .74;
+  letter-spacing: -.105em;
+  white-space: nowrap;
+  opacity: .18;
+  filter: blur(11px);
+  transform: translate3d(18vw, -50%, 0) scale(.72);
+  transition:
+    opacity 420ms ease,
+    filter 650ms ease,
+    transform 1100ms var(--sat-ease-move);
+  font-variant-numeric: tabular-nums;
+}
+
+.raceDate b { color: var(--sat-signal); font-weight: inherit; }
+.raceDate span { display: block; }
+
+.race[data-beat='1'] .raceDate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, -50%, 0) scale(1);
+}
+
+.race[data-beat='2'] .raceDate {
+  opacity: 1;
+  filter: blur(0);
+  transform: translate3d(0, -63%, 0) scale(.73);
+  transform-origin: left center;
+}
+
+.race[data-beat='1'] .raceTop,
+.race[data-beat='2'] .raceTop { opacity: 1; transform: translateY(0); }
+
+.raceBottom {
+  position: absolute;
+  left: clamp(20px, 5vw, 72px);
+  right: clamp(20px, 5vw, 72px);
+  bottom: clamp(58px, 10vh, 108px);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: end;
+  opacity: 0;
+  transform: translateY(34px);
+  transition: opacity 450ms ease, transform 760ms var(--sat-ease-enter);
+}
+
+.race[data-beat='2'] .raceBottom { opacity: 1; transform: translateY(0); }
+
+.dday {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--sat-signal);
+  font: 600 10px/1 var(--sat-mono);
+  letter-spacing: .16em;
+}
+
+.raceBottom h2 {
+  font-size: clamp(34px, 4vw, 62px);
+  font-weight: 850;
+  line-height: 1.16;
+  letter-spacing: -.055em;
+}
+
+.raceCopy { max-width: 34ch; justify-self: end; }
+.raceCopy > p { font-size: clamp(20px, 2.2vw, 32px); font-weight: 760; line-height: 1.48; word-break: keep-all; }
+.raceCopy > span { display: block; margin-top: 14px; color: rgba(212,205,196,.5); font: 500 9px/1.5 var(--sat-mono); letter-spacing: .1em; }
+.raceCopy .nextMission { width: fit-content; margin-top: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--sat-signal); color: var(--sat-paper); }
+
+.blackout {
+  position: absolute;
+  z-index: 30;
+  inset: 0;
+  padding: 0 clamp(20px, 7vw, 100px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--sat-paper);
+  background: var(--sat-asphalt);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 620ms ease;
+}
+
+.blackout span,
+.blackout b { color: rgba(212,205,196,.5); font: 600 10px/1 var(--sat-mono); letter-spacing: .18em; }
+.blackoutTitle { margin: 30px 0 34px; font-size: clamp(82px, 13vw, 210px); font-weight: 900; line-height: 1.02; letter-spacing: -.075em; }
+.blackoutTitle i { color: var(--sat-signal); font-style: normal; }
+.blackoutTitle span { color: var(--sat-paper); font: inherit; letter-spacing: inherit; }
+.blackoutEnding { max-width: 30ch; font-size: clamp(17px, 1.7vw, 25px); font-weight: 720; line-height: 1.55; word-break: keep-all; }
+.blackoutNext { margin-top: 30px; }
+.race[data-beat='3'] .blackout { opacity: 1; }
+
+/* Footer */
+.footer {
+  min-height: 52svh;
+  padding: 96px clamp(20px, 5vw, 72px) max(48px, env(safe-area-inset-bottom));
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 32px;
+  align-items: start;
+  color: var(--sat-ink);
+  background: var(--sat-paper);
+  /* 종이면 위 — 색은 signal-dark, 두께는 12px → 6px */
+  border-top: 6px solid var(--sat-signal-dark);
+}
+
+.footer > div { display: flex; flex-direction: column; }
+.footer strong { font-size: clamp(54px, 8vw, 120px); line-height: 1.04; letter-spacing: -.06em; }
+.footer span { margin-top: 18px; font: 600 10px/1 var(--sat-mono); letter-spacing: .17em; }
+.footer p { max-width: 15ch; justify-self: end; text-align: right; font-size: clamp(24px, 3.4vw, 52px); font-weight: 820; line-height: 1.3; letter-spacing: -.05em; }
+.footer a { min-height: 44px; display: inline-flex; align-items: center; align-self: end; width: fit-content; color: rgba(10,16,19,.62); font: 600 10px/1 var(--sat-mono); letter-spacing: .11em; text-decoration: none; border-bottom: 1px solid rgba(10,16,19,.35); }
+
+/* 데스크톱: 핵심 문장은 접지 않는다.
+   폭 제한(max-width/ch)과 좁은 그리드 칸이 줄바꿈의 원인이라 둘 다 푼다.
+   1024px에서도 한 줄에 들어가도록 큰 문장은 vw 상한을 함께 낮춘다. */
+@media (min-width: 901px) {
+  .heroCopy { width: 100%; }
+  .heroBeat { max-width: none; white-space: nowrap; text-wrap: nowrap; }
+  .heroQuestion { font-size: clamp(40px, 4.9vw, 84px); }
+  .heroFinal { gap: 14px; }
+
+  .crewHeader { grid-template-columns: 1fr; gap: 26px; }
+  .crewHeader h2 { flex-direction: row; gap: .3em; white-space: nowrap; }
+  .crewHeader > p { justify-self: start; max-width: none; white-space: nowrap; }
+
+  .crewStatus { max-width: none; }
+  .crewStatus span,
+  .crewStatus b { white-space: nowrap; }
+
+  .raceCopy { max-width: none; }
+  .raceCopy > p { font-size: clamp(18px, 2vw, 28px); white-space: nowrap; }
+  .blackoutEnding { max-width: none; white-space: nowrap; }
+
+  /* 푸터도 같은 규칙 — max-width: 15ch가 "토요일에만 뛰는 건 아닙니다."를 접고 있었다 */
+  .footer p { max-width: none; white-space: nowrap; font-size: clamp(22px, 2.6vw, 44px); }
+  .footer strong { white-space: nowrap; }
+}
+
+@media (max-width: 900px) {
+  .header { padding-inline: 20px; }
+  .statusLong { display: none; }
+  .missionStatus { gap: 0; }
+
+  .heroStage,
+  .crewStage,
+  .raceStage { padding-inline: 20px; }
+
+  .heroMedia {
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: none;
+  }
+
+  .heroPlate { object-position: 60% 45%; filter: grayscale(1) contrast(1.08); transform: scale(1.02); }
+  .hero[data-beat='1'] .heroPlate { transform: scale(1.05); }
+  .hero[data-beat='2'] .heroPlate { transform: scale(1.09); }
+  .hero[data-beat='3'] .heroPlate { transform: scale(1.11); }
+  .videoShade {
+    background:
+      linear-gradient(180deg, rgba(6,8,9,.78) 0%, rgba(6,8,9,.2) 18%, transparent 38%),
+      linear-gradient(0deg, rgba(6,8,9,.94) 0%, rgba(6,8,9,.72) 22%, rgba(6,8,9,.12) 50%, transparent 62%);
+  }
+
+  .heroLabel { width: 100%; }
+  .heroLabel b { display: none; }
+  .heroCopy { width: 100%; height: calc(100% - 90px); }
+  .heroBeat { top: auto; max-width: 14ch; }
+  .heroQuestion { max-width: 11ch; font-size: clamp(38px, 10.5vw, 54px); bottom: 12%; }
+  .heroTurn { max-width: 13ch; font-size: clamp(27px, 7.2vw, 38px); bottom: 13%; }
+  .heroHook { max-width: 8ch; font-size: clamp(50px, 14vw, 72px); bottom: 38%; }
+  .heroFinal { max-width: 17ch; font-size: clamp(21px, 5.6vw, 30px); bottom: 12%; }
+  .heroMeta { left: 20px; right: 20px; bottom: max(104px, calc(env(safe-area-inset-bottom) + 92px)); flex-wrap: wrap; font-size: 8px; line-height: 1.5; }
+  .scrollCue { display: none; }
+  .progress { left: 20px; right: 20px; }
+
+  .crewHeader { grid-template-columns: 1fr; gap: 20px; }
+  .crewHeader h2 { font-size: clamp(52px, 14vw, 74px); }
+  .crewHeader > p { justify-self: start; max-width: 29ch; font-size: 15px; }
+  .assembleWord { font-size: clamp(60px, 18vw, 92px); }
+
+  .crewList {
+    left: 20px;
+    right: 20px;
+    top: 224px;
+    bottom: 60px;
+    grid-template-columns: 1fr;
+    border-width: 2px 0;
+  }
+
+  .crewEntry {
+    min-height: 0;
+    padding: 15px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(10,16,19,.24);
+    display: grid;
+    grid-template-columns: 42px 1fr auto;
+    align-items: center;
+  }
+
+  .crewEntry:last-child { border-bottom: 0; }
+  .crewEntry strong { font-size: clamp(25px, 7vw, 36px); }
+  .crewIndex { margin: 0; }
+  .crewDistance { margin: 0; font-size: 8px; }
+
+  .crew[data-beat='2'] .crewHeader { opacity: 0; pointer-events: none; }
+  .crewFinale { left: 20px; right: 20px; }
+  .totals { border-top-width: 2px; }
+  .totalNote { text-align: left; }
+  .totals p {
+    min-height: 96px;
+    padding: 20px 0;
+    border-right: 0;
+    border-bottom: 1px solid rgba(10,16,19,.22);
+    flex-direction: row;
+    align-items: center;
+  }
+  .totals p:not(:first-child) { padding-left: 0; }
+  .totals strong { font-size: clamp(30px, 9vw, 44px); }
+  .totals span { max-width: 13ch; text-align: right; font-size: 11px; line-height: 1.4; }
+  .crewStatus { max-width: 15ch; margin-bottom: 26px; font-size: clamp(22px, 6.4vw, 30px); }
+  .crewStatus b::after { height: 3px; margin-top: 12px; }
+
+  .raceTop { align-items: flex-start; }
+  .raceTop p { font-size: 7px; }
+  .raceDate {
+    left: 20px;
+    font-size: clamp(106px, 32vw, 150px);
+    letter-spacing: -.12em;
+    transform: translate3d(16vw, -50%, 0) scale(.74);
+  }
+  .race[data-beat='2'] .raceDate { transform: translate3d(0, -93%, 0) scale(.78); }
+  .raceBottom { left: 20px; right: 20px; bottom: max(72px, calc(env(safe-area-inset-bottom) + 58px)); grid-template-columns: 1fr; gap: 24px; }
+  .raceCopy { justify-self: start; }
+  .raceCopy > p { max-width: 19ch; font-size: clamp(21px, 6vw, 29px); }
+  .blackout { padding-inline: 20px; }
+  .blackoutTitle { font-size: clamp(52px, 15vw, 66px); line-height: 1.06; letter-spacing: -.07em; }
+
+  .footer { min-height: 65svh; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; padding: 72px 20px max(36px, env(safe-area-inset-bottom)); }
+  .footer p { justify-self: start; text-align: left; }
+}
+
+@media (max-width: 430px) {
+  .brand { font-size: 8px; letter-spacing: .13em; }
+  .brand i { width: 20px; }
+  .missionStatus { font-size: 8px; }
+  .heroStage { padding-top: max(92px, calc(env(safe-area-inset-top) + 76px)); }
+  .heroMeta span:last-child { display: none; }
+  .crewStage { padding-top: max(86px, calc(env(safe-area-inset-top) + 72px)); }
+  .crewHeader h2 { font-size: clamp(48px, 13.6vw, 60px); }
+  .crewList { top: 206px; }
+  .raceStage { padding-top: max(90px, calc(env(safe-area-inset-top) + 76px)); }
+  .lightKicker { font-size: 8px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene,
+  .crew,
+  .race { min-height: auto; }
+
+  .stage {
+    position: relative;
+    height: auto;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .heroStage { min-height: 120svh; }
+  .heroPlate { transform: none; transition: none; }
+  .heroCopy { height: auto; padding-top: 17vh; display: grid; gap: 20px; }
+  .heroBeat,
+  .hero[data-beat] .heroBeat {
+    position: relative;
+    top: auto;
+    max-width: 16ch;
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+  .heroQuestion { font-size: clamp(48px, 10vw, 92px); }
+  .heroTurn { font-size: clamp(28px, 5vw, 48px); color: rgba(212,205,196,.68); }
+  .heroHook { font-size: clamp(42px, 7vw, 72px); }
+  .heroFinal { font-size: clamp(24px, 4vw, 38px); }
+  .heroMeta { opacity: 1; transform: none; }
+  .scrollCue,
+  .progress { display: none; }
+
+  .crewStage { min-height: 115svh; }
+  /* 모션을 끄면 비트가 진행되지 않으므로, 사진은 그대로 두고 스크림을 마지막 비트 값으로 고정한다 */
+  .crewImage { opacity: 1 !important; transform: none !important; transition: none; }
+  .crewImage::after {
+    background: linear-gradient(180deg, rgba(212,205,196,.5) 0%, rgba(212,205,196,.36) 26%, rgba(212,205,196,.86) 62%, rgba(212,205,196,.96) 100%);
+  }
+  .assembleWord { display: none; }
+
+  /* 단톡은 무대를 풀고 전부 펼쳐 보여준다 */
+  .chatScene { min-height: 0; }
+  .chatStage { position: relative; height: auto; }
+  .chatBursts { display: grid; gap: clamp(44px, 7vw, 84px); }
+  .burst { position: relative; inset: auto; opacity: 1; }
+  .burstLines li { opacity: 1; transform: none; }
+  .crewHeader,
+  .crew[data-beat] .crewHeader { opacity: 1; transform: none; }
+  .crewList,
+  .crew[data-beat] .crewList {
+    position: relative;
+    left: auto;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    margin-top: 46px;
+    height: min(52vh, 520px);
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .crewEntry,
+  .crew[data-beat] .crewEntry { opacity: 1; transform: none; transition: none; }
+  .crewFinale,
+  .crew[data-beat] .crewFinale { position: relative; left: auto; right: auto; top: auto; margin-top: 30px; opacity: 1; transform: none; transition: none; }
+  .totals p { min-height: 90px; }
+
+  .raceStage { min-height: 120svh; display: flex; flex-direction: column; justify-content: space-between; }
+  .raceTop,
+  .race[data-beat] .raceTop,
+  .raceDate,
+  .race[data-beat] .raceDate,
+  .raceBottom,
+  .race[data-beat] .raceBottom { position: relative; left: auto; right: auto; top: auto; bottom: auto; opacity: 1; filter: none; transform: none; transition: none; }
+  .raceDate { margin: auto 0; }
+  .blackout,
+  .race[data-beat] .blackout { position: relative; inset: auto; min-height: 48svh; margin: 60px -20px -58px; opacity: 1; transition: none; }
+}
+
+/* ── 단톡방 발췌 ──────────────────────────────────────────────────────────
+   sticky 무대에서 뭉치가 한 개씩 교체되고, 뭉치 안에서는 메시지가 한 줄씩 도착한다.
+   전부 --scene-progress(0~1)의 함수라 되감으면 대화도 되감긴다. JS 추가 없음. */
+.chatScene {
+  /* 뭉치 하나당 약 0.85 화면. 읽을 시간은 주되 스크롤이 늘어지지 않는 선 */
+  min-height: calc(var(--burst-count) * 85svh);
+  background: var(--sat-bluehour);
+  color: var(--sat-paper);
+}
+
+.chatStage {
+  padding: clamp(84px, 12vh, 148px) clamp(20px, 5vw, 72px) clamp(56px, 8vh, 92px);
+  display: flex;
+  flex-direction: column;
+  gap: clamp(28px, 4vh, 56px);
+}
+
+.chatHeader { flex: none; }
+
+.chatHeader h2 {
+  margin-top: 12px;
+  font-size: clamp(32px, 5.4vw, 68px);
+  font-weight: 900;
+  line-height: .98;
+  letter-spacing: -.05em;
+  color: var(--sat-paper-deep);
+}
+
+.chatBursts,
+.burstLines { margin: 0; padding: 0; list-style: none; }
+
+.chatBursts {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* 뭉치 i 는 진행도 [i/N, (i+1)/N] 구간을 차지한다.
+   --local 은 그 구간 안에서의 0~1. 양 끝에서 빠르게 뜨고 진다. */
+.burst {
+  --span: calc(1 / var(--burst-count));
+  --local: calc((var(--scene-progress, 0) - var(--burst-index) * var(--span)) / var(--span));
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: clamp(0, min(calc(var(--local) * 7), calc((1 - var(--local)) * 7)), 1);
+}
+
+.burstLabel {
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(212,205,196,.22);
+  color: var(--sat-concrete);
+  font: 600 10px/1.5 var(--sat-mono);
+  letter-spacing: .16em;
+}
+
+.burstLines { display: grid; gap: clamp(10px, 1.5vh, 18px); }
+
+/* 줄 j 는 뭉치 안에서 순서대로 도착한다 */
+.burstLines li {
+  --line-start: calc(.10 + var(--line-index) * .085);
+  --in: clamp(0, calc((var(--local) - var(--line-start)) * 14), 1);
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 20px;
+  align-items: baseline;
+  opacity: var(--in);
+  transform: translateY(calc((1 - var(--in)) * 18px));
+}
+
+.who {
+  color: var(--sat-concrete);
+  font: 600 11px/1.7 var(--sat-mono);
+  letter-spacing: .1em;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.said {
+  font-size: clamp(17px, 2.1vw, 23px);
+  line-height: 1.5;
+  word-break: keep-all;
+}
+
+/* 뭉치의 펀치라인 하나만 키운다. 색은 올리지 않는다 — 크기로 충분하다 */
+.punchLine .said {
+  font-size: clamp(26px, 4.2vw, 48px);
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -.035em;
+  color: var(--sat-paper-deep);
+}
+
+.punchLine { margin-block: 6px; }
+
+@media (max-width: 640px) {
+  .burstLines li { grid-template-columns: minmax(0, 1fr); gap: 4px; }
+  .who { text-align: left; }
+}
+
+/* ── 사진 벽 ─────────────────────────────────────────────────────────────
+   아홉 장 전부 폰 세로 사진이다. 자르지 않고 세로 그대로 붙인다 —
+   가로로 크롭하면 인물이 잘리고 '폰으로 찍은 사진'이라는 질감이 사라진다. */
+.wallSection {
+  position: relative;
+  z-index: 1;
+  padding: clamp(88px, 13vh, 168px) clamp(20px, 5vw, 72px) clamp(96px, 15vh, 190px);
+  color: var(--sat-paper);
+  background: var(--sat-asphalt);
+}
+
+.wallInner { max-width: 1240px; margin-inline: auto; }
+
+.wallHeader { margin-bottom: clamp(40px, 5vw, 64px); }
+
+.wallHeader h2 {
+  margin-top: 14px;
+  font-size: clamp(34px, 6vw, 72px);
+  font-weight: 900;
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: var(--sat-paper-deep);
+}
+
+.wall {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(8px, 1vw, 14px);
+}
+
+.wall li {
+  position: relative;
+  overflow: hidden;
+  background: var(--sat-asphalt-soft);
+}
+
+.wall img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
+/* 유일하게 새벽에 찍힌 컷 — 이 페이지 컨셉과 맞는 한 장이라 두 칸을 준다 */
+.wideCell { grid-column: span 2; grid-row: span 2; }
+.wideCell img { aspect-ratio: auto; }
+
+@media (max-width: 900px) {
+  .wall { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* 사진은 아홉 장 전부 흑백이다 — 서로 다른 날·다른 폰이라 색온도가 제각각이고,
+   그대로 두면 한 세트로 묶이지 않는다. 원본 색은 건드리지 않았다(되돌리려면 이 한 줄만 지운다). */
+.wall img { filter: grayscale(1) contrast(1.06); }
