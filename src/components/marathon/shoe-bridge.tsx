@@ -9,6 +9,7 @@ import { img } from '@/lib/image';
 type ShoeBridgeProps = {
   distances: string[];
   eventName: string;
+  excludeSlugs?: string[];
 };
 
 type PricedShoe = CardShoe & { price: number; image: string };
@@ -57,9 +58,10 @@ function shoeCategoriesFor(p: DistanceProfile): string[] {
 }
 
 // 카테고리별 rating 상위 신발을 모아 최대 4종 (결정적 정렬, 중복 제거)
-function pickShoes(categories: string[]): PricedShoe[] {
+// excludeSlugs: 본문에 이미 링크된 신발 — 카드에서 중복 노출하지 않는다
+function pickShoes(categories: string[], excludeSlugs: string[] = []): PricedShoe[] {
   const picked: PricedShoe[] = [];
-  const seen = new Set<string>();
+  const seen = new Set<string>(excludeSlugs);
   for (const cat of categories) {
     const inCat = ALL_SHOES
       .filter((s) => s.category === cat && !seen.has(s.slug))
@@ -92,9 +94,9 @@ const categoryBadge: Record<string, string> = {
   '트레일': 'bg-lime-100 text-lime-700',
 };
 
-export function MarathonShoeBridge({ distances, eventName }: ShoeBridgeProps) {
+export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: ShoeBridgeProps) {
   const profile = analyzeDistances(distances);
-  const shoes = pickShoes(shoeCategoriesFor(profile));
+  const shoes = pickShoes(shoeCategoriesFor(profile), excludeSlugs);
   if (shoes.length === 0) return null;
 
   const needsGel = profile.hasMarathon || profile.hasHalf || profile.hasUltra;

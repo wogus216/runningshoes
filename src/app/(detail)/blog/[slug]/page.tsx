@@ -13,6 +13,7 @@ import { FaqSection } from '@/components/blog/faq-section';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { splitContentAtMidH2 } from '@/lib/blog/split-content';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+import { extractShoeSlugs, SHOE_LINK_BRIDGE_THRESHOLD } from '@/lib/blog/shoe-links';
 import { img, withCdnImages } from '@/lib/image';
 import { RaceActionStrip } from '@/components/blog/race/race-action-strip';
 import { RaceFactGrid } from '@/components/blog/race/race-fact-grid';
@@ -285,14 +286,19 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           })()}
         </article>
 
-        {/* 대회 글 → 신발/젤 CTA (신발 링크 없는 대회/거리 글에만 자동 삽입) */}
+        {/* 대회 글 → 신발/젤 CTA (수동 링크가 적은 글에 자동 삽입) */}
         {(() => {
-          const hasShoeLink = post.content.includes('/shoes/');
+          const shoeSlugs = extractShoeSlugs(post.content);
           const titleHasRace = /마라톤|대회|레이스|에키덴|스카이|울트라|하프|10\s?[kK]|풀코스|러닝.{0,4}이벤트|접수/.test(post.title);
-          if (!titleHasRace || hasShoeLink || post.category === 'review') return null;
+          // 3개 이상이면 맥락 큐레이션이라 브릿지가 끼어들지 않는다
+          if (!titleHasRace || shoeSlugs.length >= SHOE_LINK_BRIDGE_THRESHOLD || post.category === 'review') return null;
           return (
             <div className="mt-10">
-              <MarathonShoeBridge distances={inferRaceDistances(post.title)} eventName="이 대회" />
+              <MarathonShoeBridge
+                distances={inferRaceDistances(post.title)}
+                eventName="이 대회"
+                excludeSlugs={shoeSlugs}
+              />
             </div>
           );
         })()}
