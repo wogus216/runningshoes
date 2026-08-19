@@ -311,20 +311,20 @@ git commit -m "fix(blog): 코스 9편 도입부 검색어 반영 + 도시 간 �
 
 ### Task 3: T0 — 트레일 러닝화 계급도 작성
 
-브랜드 계급도 10편의 검증된 포맷을 트레일에 적용한다. **신발 추가 없이 현 13종으로 쓴다**(스펙 5절에서 사다리 4단이 다 차는 것을 확인함).
+브랜드 계급도 10편의 검증된 포맷을 트레일에 적용한다. **신발 추가 없이 현 15종으로 쓴다**(스펙 5절에서 사다리 4단이 다 차는 것을 확인함).
 
 **Files:**
 - Modify: `src/lib/data/blog/posts/2026-08.ts` (배열 맨 앞에 추가)
 
 **Interfaces:**
-- Consumes: `src/lib/data/shoes/*/` 트레일 13종 데이터
+- Consumes: `src/lib/data/shoes/*/` 트레일 15종 데이터
 - Produces: slug `trail-running-shoes-lineup-tier-guide-2026`. Task 4·5가 참조한다.
 
 **확정 메타:**
 ```typescript
     id: 'trail-running-shoes-lineup-tier-guide-2026',
     slug: 'trail-running-shoes-lineup-tier-guide-2026',
-    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 6곳 13종 가격·무게 비교',
+    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 7곳 15종 가격·무게 비교',
     author: '산초 에디터',
     publishedAt: '2026-08-19',
     category: 'guide' as const,
@@ -350,7 +350,7 @@ git commit -m "fix(blog): 코스 9편 도입부 검색어 반영 + 도시 간 �
 | 카본 레이싱 | S/LAB 펄사 4 | 340,000원 | 247g |
 | 카본 레이싱 | 아그라빅 스피드 울트라 2 | 279,000원 | 265g |
 
-- [ ] **Step 1: 신발 13종 상세 데이터 확인**
+- [ ] **Step 1: 신발 15종 상세 데이터 확인**
 
 Run:
 ```bash
@@ -368,12 +368,12 @@ done
 1. **3줄 요약** (`div.tldr`) — 사다리 4단 요약 + 가격 범위(8.9만~34만) + "입문은 무조건 저단부터"
 2. **트레일화가 뭐가 다른가** — 로드화와의 차이(아웃솔 러그·락플레이트·토캡). `트레일화 뜻` 수요를 받는다
 3. **등산화와는 뭐가 다른가** — `트레일화 등산화 차이`가 자동완성에 있다. 발목 지지·무게·굽힘 차이를 표로
-4. **사다리 4단 표** — 위 13종 전체. 컬럼: 단 / 모델 / 가격 / 무게 / 이럴 때
+4. **사다리 4단 표** — 위 15종 전체. 컬럼: 단 / 모델 / 가격 / 무게 / 이럴 때
 5. **단별 해설 4개** (`h3`) — 각 단이 어떤 러너·어떤 산에 맞는지
 6. **처음 사는 사람에게** — 근교 위주면 저단으로 충분하다는 결론
 7. **출처 각주** — 가격은 한국 공식가 기준, 확인일 명시
 
-**내부링크:** 13종 전부 `/shoes/{slug}`로 링크한다. 그리고 기존 트레일 비교글 3편(`speedgoat-6-vs-pulsar-vs-metafuji-trail-2026`, `tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026`, `salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026`)과 입문 글(`trail-running-appeal-beginner-guide-2026`)로 연결한다.
+**내부링크:** 15종 전부 `/shoes/{slug}`로 링크한다. 그리고 기존 트레일 비교글 3편(`speedgoat-6-vs-pulsar-vs-metafuji-trail-2026`, `tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026`, `salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026`)과 입문 글(`trail-running-appeal-beginner-guide-2026`)로 연결한다.
 
 - [ ] **Step 3: FAQ 3개 추가**
 
@@ -417,7 +417,7 @@ git commit -m "feat(blog): 트레일 러닝화 계급도 2026 — 브랜드 계�
 
 네이버 자동완성에서 '트레일러닝화 계급도'가 시드 2순위인데
 우리는 브랜드 계급도를 10편 만들면서 트레일만 비워뒀다.
-현 13종으로 사다리 4단(근교·올라운드·쿠션울트라·카본레이싱)이
+현 15종으로 사다리 4단(근교·올라운드·쿠션울트라·카본레이싱)이
 전부 차는 것을 확인하고 신발 추가 없이 작성했다."
 ```
 
@@ -527,7 +527,7 @@ Run: `cat scripts/thumbnail/copy.ts | head -40`
 
 `scripts/thumbnail/copy.ts`에 항목을 추가한다.
 
-- T0: 킥커 `트레일 러닝화` / 제목 `계급도 2026` / 데이터 줄 `6개 브랜드 13종 · 8.9만~34만원 (한국 공식가, 2026-08 기준)`
+- T0: 킥커 `트레일 러닝화` / 제목 `계급도 2026` / 데이터 줄 `7개 브랜드 15종 · 8.9만~34만원 (한국 공식가, 2026-08 기준)`
 - R2: 킥커 `회복런` / 제목 `LSD와 뭐가 다른가` / 데이터 줄 `20~40분 · 대화 가능한 페이스`
 
 - [ ] **Step 3: 렌더**

@@ -4,14 +4,14 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'trail-running-shoes-lineup-tier-guide-2026',
     slug: 'trail-running-shoes-lineup-tier-guide-2026',
-    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 6곳 13종 가격·무게 비교',
+    title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 7곳 15종 가격·무게 비교',
     description:
-      '트레일 러닝화 13종을 근교·입문 / 올라운드 / 쿠션·울트라 / 카본 레이싱 4단으로 정리했습니다. 아식스 젤 벤처 10(8.9만원)부터 살로몬 S/LAB 펄사 4(34만원)까지 가격·무게 비교표와 함께, 트레일화가 로드화·등산화와 뭐가 다른지, 처음 사는 사람은 어느 단부터 시작하면 되는지 정리했습니다.',
+      '트레일 러닝화 15종을 근교·입문 / 올라운드 / 쿠션·울트라 / 카본 레이싱 4단으로 정리했습니다. 아식스 젤 벤처 10(8.9만원)부터 살로몬 S/LAB 펄사 4(34만원)까지 가격·무게 비교표와 함께, 트레일화가 로드화·등산화와 뭐가 다른지, 처음 사는 사람은 어느 단부터 시작하면 되는지 정리했습니다.',
     author: '산초 에디터',
     publishedAt: '2026-08-19',
     category: 'guide' as const,
     readingTime: 11,
-    tags: ['트레일러닝화 계급도', '트레일화', '트레일러닝화 추천', '트레일러닝 입문', '트레일화 등산화 차이', '스피드고트', '살로몬 펄사', '히에로'],
+    tags: ['트레일러닝화 계급도', '트레일화', '트레일러닝화 추천', '트레일러닝 입문', '트레일화 등산화 차이', '스피드고트', '살로몬 펄사', '히에로', '페레그린'],
     faqs: [
       {
         question: '트레일화와 등산화는 뭐가 다른가요?',
@@ -77,24 +77,26 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>정리하면, <strong>달리는 게 목적이면 트레일화, 무거운 배낭을 메고 오래 걷는 게 목적이면 등산화</strong>입니다. 북한산·관악산 같은 근교 산을 가볍게 달릴 계획이라면 트레일화 쪽이 맞고, 지리산 종주처럼 여러 날 짐을 메고 걷는다면 등산화가 낫습니다.</p>
 
-<h2>3. 트레일 러닝화 계급도 — 13종 한눈에</h2>
+<h2>3. 트레일 러닝화 계급도 — 15종 한눈에</h2>
 
-<p>브랜드 6곳(아식스·호카·살로몬·아디다스·뉴발란스·나이키)의 트레일화 13종을 가격·무게 기준 4단으로 줄 세우면 이렇습니다.</p>
+<p>브랜드 7곳(아식스·호카·살로몬·아디다스·뉴발란스·나이키·써코니)의 트레일화 15종을 가격·무게 기준 4단으로 줄 세우면 이렇습니다.</p>
 
 <table>
   <thead>
     <tr><th>단</th><th>모델</th><th>가격</th><th>무게</th><th>이럴 때</th></tr>
   </thead>
   <tbody>
-    <tr><td rowspan="2">근교·입문</td><td><a href="/shoes/asics-gel-venture-10"><strong>아식스 젤 벤처 10</strong></a></td><td>8.9만</td><td>322g</td><td>흙길·산책로 위주 첫 트레일화, 와이드·워터프루프 옵션</td></tr>
+    <tr><td rowspan="3">근교·입문</td><td><a href="/shoes/asics-gel-venture-10"><strong>아식스 젤 벤처 10</strong></a></td><td>8.9만</td><td>322g</td><td>흙길·산책로 위주 첫 트레일화, 와이드·워터프루프 옵션</td></tr>
+    <tr><td><a href="/shoes/saucony-peregrine-16"><strong>써코니 페레그린 16</strong></a></td><td>17.9만</td><td>269g</td><td>록플레이트·Vibram Megagrip을 갖춘 써코니 트레일 표준, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/salomon-pulsar"><strong>살로몬 펄사</strong></a></td><td>21만</td><td>290g</td><td>일상 훈련부터 업템포까지 커버하는 데일리 트레이너</td></tr>
     <tr><td rowspan="4">올라운드</td><td><a href="/shoes/hoka-speedgoat-6"><strong>호카 스피드고트 6</strong></a></td><td>20.5만</td><td>278g</td><td>젖은 바위부터 급경사까지, 와이드·GTX 방수까지 있는 만능형</td></tr>
     <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>호카 스피드고트 7</strong></a></td><td>21.9만</td><td>281g</td><td>스피드고트 6의 반발력 강화판, 게이터 부착 루프 추가</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>20.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
-    <tr><td rowspan="3">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
+    <tr><td rowspan="4">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
     <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>336g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 토박스</td></tr>
+    <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>써코니 엑소더스 울트라 4</strong></a></td><td>21.9만</td><td>309g</td><td>PWRRUN PB 슈퍼폼 맥스 쿠션, 울트라 거리용 상위 모델</td></tr>
     <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/salomon-s-lab-pulsar-4"><strong>살로몬 S/LAB 펄사 4</strong></a></td><td>34만</td><td>247g</td><td>20~80km 기술 트레일·VK·스카이러닝 엘리트 레이서</td></tr>
@@ -107,13 +109,13 @@ export const posts_2026_08: BlogPost[] = [
 <h2>4. 단별로 — 어떤 러너·어떤 산에 맞나</h2>
 
 <h3>근교·입문 (8.9만~21만원)</h3>
-<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다.</p>
+<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 269g으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
 
 <h3>올라운드 (20.5만~27.9만원)</h3>
 <p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
 
 <h3>쿠션·울트라 (18.9만~23만원)</h3>
-<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
+<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
 
 <h3>카본 레이싱 (27.9만~34만원)</h3>
 <p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 8mm 드롭·44mm 고스택으로 완만~중간 트레일 레이스에서 안정적인 편입니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
