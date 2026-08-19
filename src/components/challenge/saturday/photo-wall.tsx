@@ -19,7 +19,7 @@ export function PhotoWall() {
 
         <ul className={styles.wall}>
           {SATURDAY_PHOTOS.map((photo) => (
-            <li className={photo.wide ? styles.wideCell : undefined} key={photo.src}>
+            <li className={photo.feature ? styles.featureCell : undefined} key={photo.src}>
               <img
                 src={`/images/challenge/saturday/crew/${photo.src}.webp`}
                 alt={photo.alt}

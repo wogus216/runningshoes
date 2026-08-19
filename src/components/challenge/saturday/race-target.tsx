@@ -10,7 +10,6 @@ export function RaceTarget() {
       aria-labelledby="race-title"
     >
       <div className={`${styles.stage} ${styles.raceStage}`}>
-          <div className={styles.filmGrain} aria-hidden="true" />
           <div className={styles.raceSlash} aria-hidden="true" />
 
           <div className={styles.raceTop}>
@@ -34,23 +33,16 @@ export function RaceTarget() {
             </div>
             <div className={styles.raceCopy}>
               <p>{SATURDAY_COPY.race.hook}</p>
+              {/* 예고는 남기되 무대는 없앴다. 전에는 이 한 줄을 위해 화면 하나를 더 쓰면서
+                  'TO BE CONTINUED'를 210px로 세웠고, 그 결과 페이지의 마지막 인상이
+                  대회 날짜가 아니라 장식 문구였다. 이제 마지막에 남는 건 11 / 15 다 */}
+              <b className={styles.raceNext}>{SATURDAY_COPY.race.next}</b>
             </div>
           </div>
 
         <div className={styles.progress} aria-hidden="true">
           <i />
         </div>
-
-        <section className={styles.blackout} aria-label="다음 미션 예고">
-          <span className={styles.lightKicker}>첫 번째 이야기</span>
-          <p className={styles.blackoutTitle} aria-hidden="true">
-            <i>TO BE</i>
-            <br />
-            <span>CONTINUED</span>
-          </p>
-          <p className={styles.blackoutEnding}>{SATURDAY_COPY.race.ending}</p>
-          <b className={styles.blackoutNext}>{SATURDAY_COPY.race.next}</b>
-        </section>
       </div>
     </section>
   );

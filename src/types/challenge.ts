@@ -59,7 +59,7 @@ export interface ChatBurst {
 export interface CrewPhoto {
   src: string;
   alt: string;      // 장면을 서술한다. 누가 누구인지는 쓰지 않는다
-  wide?: boolean;   // 그리드에서 두 칸을 차지한다
+  feature?: boolean; // 벽에서 세로 두 칸을 차지하는 대표컷. 배열 전체에 한 장만 둔다
 }
 
 export interface SaturdayTeaserCopy {
@@ -77,8 +77,7 @@ export interface SaturdayTeaserCopy {
   race: {
     eyebrow: string;
     hook: string;
-    ending: string;
-    next: string;      // 티저를 닫는 예고 한 줄. 웹 blackout과 Remotion 엔딩이 공유한다
+    next: string;      // 티저를 닫는 예고 한 줄. 웹 마지막 화면과 Remotion 엔딩이 공유한다
   };
 }
 

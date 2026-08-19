@@ -43,7 +43,10 @@ export const SATURDAY_COPY: SaturdayTeaserCopy = {
   hero: {
     question: '풀마라톤, 다 같이 한번 해볼까?',
     turn: '웃자고 한 말이었다.',
-    hook: '농담은 접수됐다.',
+    // 페이지에서 가장 큰 글자는 실제로 누가 한 말이어야 한다(2026-08-19).
+    // 전에는 내가 지어낸 '농담은 접수됐다.'였다 — 나머지 화면이 전부 원본 그대로인데
+    // 첫 화면만 카피라이팅이었다. 아래 signup 뭉치 12:15 의 그 줄을 그대로 올린다.
+    hook: '신청 완료했습니다!!',
     support: '아무도 진심은 아니었다. 접수 전까지는.',
   },
   crew: {
@@ -55,7 +58,8 @@ export const SATURDAY_COPY: SaturdayTeaserCopy = {
     // 군사 브리핑 톤(FINAL MISSION)을 걷어냈다 — 이 이야기는 작전이 아니라 친구들 일이다
     eyebrow: '그날, 파주에서',
     hook: '11월 15일, 농담의 결말을 보러 간다.',
-    ending: '결말은 아직 없다. TO BE CONTINUED.',
+    // ending('결말은 아직 없다. TO BE CONTINUED.')은 제거했다 — 바로 위 hook 과 같은 말을
+    // 두 번 했고, 그걸 담던 blackout 화면이 마지막 인상을 날짜에서 뺏어가고 있었다.
     next: '다음 이야기는 첫 러닝부터',
   },
 };
@@ -69,6 +73,11 @@ export const SATURDAY_COPY: SaturdayTeaserCopy = {
 //       ⚠️ 2026-08-19: 이 규칙을 세 뭉치(fear·saturday·why)에서 어긴 걸 발견해 고쳤다.
 //       원문 풀에서 줄만 골라 담으면 시간순이 뒤섞인다. at(실제 시각)을 필드로 둔 이유가
 //       이것이다 — 줄을 옮기면 시각이 역행해서 바로 보인다. 줄 추가 시 at 을 반드시 확인할 것.
+//       ⚠️ 2026-08-19 추가: 뭉치 '안'의 순서만 보고 뭉치 '끼리'는 안 봤다가 라벨 2건이 틀렸다.
+//       - '한 시간 뒤'는 실제 44분이었고, 앞 뭉치 마지막 줄(12:15)보다 9분 먼저 시작한다
+//       - '토요일 아침'은 실제로 토요일 밤 23:22 이고, 뛴 건 다음 날이다.
+//         2026-08-15는 토요일 — 이 사실이 푸터 농담 '토요일에만 뛰는 건 아닙니다'의 근거다
+//       라벨에 상대 시각을 쓸 때는 앞 뭉치의 마지막 at 과 대조할 것.
 //    3. 없는 말을 만들지 않는다. 빈자리는 비워둔다.
 //
 // 정제 전 원문(대조용):
@@ -103,7 +112,7 @@ export const SATURDAY_CHAT: ChatBurst[] = [
   },
   {
     id: 'gwangmuk',
-    label: '한 시간 뒤 — 형이 한 명 더 들어왔다',
+    label: '같은 날 낮 — 형이 한 명 더 들어왔다',
     lines: [
       { who: '형가', at: '12:06', text: '광묵이 형 초대 좀' },
       { who: '형가', at: '12:07', text: '인사 씨게 박아라' },
@@ -153,7 +162,7 @@ export const SATURDAY_CHAT: ChatBurst[] = [
   },
   {
     id: 'saturday',
-    label: '토요일 아침 — 비 온다는 예보를 받고',
+    label: '토요일 밤 — 다음 날 7시 30분',
     lines: [
       { who: '재춘', at: '08.15 23:22', text: '내일 아침 비 온다는데' },
       { who: '형가', at: '23:39', text: '그냥 뛰자', punch: true },
@@ -186,7 +195,7 @@ export const SATURDAY_CHAT: ChatBurst[] = [
 // ⚠️ 촬영 날짜는 카톡을 거치며 EXIF가 날아가 남아 있지 않다. 시점 라벨을 붙이려면 확인이 필요하다.
 export const SATURDAY_PHOTOS: CrewPhoto[] = [
   // 일출컷은 히어로로 올라갔다 — 같은 사진을 두 번 쓰지 않는다
-  { src: 'spring-road', alt: '연둣빛 산길을 나란히 달리는 세 사람', wide: true },
+  { src: 'spring-road', alt: '연둣빛 산길을 나란히 달리는 세 사람', feature: true },
   { src: 'summer-uphill', alt: '짙은 초록 숲을 끼고 언덕을 오르는 세 사람' },
   { src: 'selfie-four', alt: '러닝 도중 네 사람이 모여 찍은 셀카' },
   { src: 'mirror', alt: '산길 도로반사경에 비친 네 사람' },

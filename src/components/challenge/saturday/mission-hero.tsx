@@ -12,8 +12,8 @@ export function MissionHero() {
     >
       <div className={`${styles.stage} ${styles.heroStage}`}>
         <HeroStill />
-        <div className={styles.filmGrain} aria-hidden="true" />
-        <div className={styles.trackLines} aria-hidden="true" />
+        {/* 필름 그레인·트랙 라인을 걷어냈다 — 배경이 크루가 폰으로 찍은 진짜 사진인데
+            그 위에 가짜 필름 질감을 얹고 있었다. 트랙 라인은 유효 알파 0.04라 보이지도 않았다 */}
 
         {/* 씬 넘버·촬영 라벨 같은 군더더기는 걷어낸다.
             남길 건 이 이야기가 언제 시작됐는지 한 줄뿐 */}
