@@ -12,6 +12,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
 
 const shoesDir = path.join(__dirname, '..', 'src/lib/data/shoes');
 const imagesDir = path.join(__dirname, '..', 'public/images/shoes');
@@ -475,6 +476,28 @@ if (fictionHits.length === 0) {
   fictionHits.slice(0, 3).forEach((h) => console.warn(`     ${h}`));
 }
 console.log('');
+
+// ===========================================
+// 8. 대회 글 구성 표준 (raceMeta 보유 글만)
+// ===========================================
+console.log('\n━━━ 8. 대회 글 구성 표준 ━━━');
+
+try {
+  const out = execFileSync('npx', ['tsx', 'scripts/validate-race-meta.ts'], {
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe'],
+  });
+  process.stdout.write(out.replace(/^RACE_META_RESULT.*$/m, '').trimEnd() + '\n');
+  const m = out.match(/RACE_META_RESULT (\d+) (\d+) (\d+)/);
+  if (m) warnings += Number(m[3]);
+} catch (e) {
+  // 종료 코드 1 = 검사 에러. stdout/stderr 를 그대로 보여주고 에러로 집계한다
+  const out = `${e.stdout ?? ''}${e.stderr ?? ''}`;
+  process.stdout.write(out.replace(/^RACE_META_RESULT.*$/m, '').trimEnd() + '\n');
+  const m = out.match(/RACE_META_RESULT (\d+) (\d+) (\d+)/);
+  errors += m ? Number(m[2]) : 1;
+  if (m) warnings += Number(m[3]);
+}
 
 // ===========================================
 // 결과 요약
