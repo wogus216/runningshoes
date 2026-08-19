@@ -10,6 +10,12 @@ const CHAT_YEAR = '2026';
 /** 날짜가 없는 줄은 직전 날짜를 잇는다 — 뭉치 첫 줄에는 항상 날짜가 있다 */
 const FALLBACK_DATE = '08.10';
 
+/** at 에서 'MM.DD' 만 꺼낸다. 날짜가 없으면(= 앞줄과 같은 날) null */
+function dayOf(at: string | undefined): string | null {
+  if (!at) return null;
+  return at.includes('.') ? at.split(' ')[0] : null;
+}
+
 /** 화면 표기('12:15')를 기계가 읽는 datetime 으로 바꾼다 */
 function toIsoTime(at: string): string {
   const parts = at.split(' ');
@@ -61,8 +67,12 @@ export function ChatLog() {
                   const previous = burst.lines[lineIndex - 1];
                   // 같은 사람이 이어 말하면 이름을 다시 적지 않는다
                   const sameSpeaker = previous?.who === line.who;
-                  // at 에 'MM.DD' 가 붙어 있으면 그날부터 날이 바뀐 것
-                  const dayBreak = line.at.includes('.') ? line.at.split(' ')[0] : null;
+                  // 날짜 구분선은 날이 '바뀐' 줄에만 넣는다.
+                  // 전에는 at 에 'MM.DD' 가 있기만 하면 넣어서, 같은 날 두 줄이 연달아
+                  // 오는 fear 뭉치에서 08.13 이 두 번 떴다. 날짜가 없는 줄은 앞줄과 같은 날이므로
+                  // dayOf 가 null 을 주고, 그 다음 dated 줄이 자연스럽게 '변경'으로 잡힌다.
+                  const thisDay = dayOf(line.at);
+                  const dayBreak = thisDay && thisDay !== dayOf(previous?.at) ? thisDay : null;
 
                   return (
                     <li
