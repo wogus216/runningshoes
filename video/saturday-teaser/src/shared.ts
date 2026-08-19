@@ -12,11 +12,41 @@
 
 import {
   RACE_META,
+  SATURDAY_CHAT,
   SATURDAY_COPY,
   SATURDAY_CREW,
+  SATURDAY_PHOTOS,
 } from "../../../src/lib/data/challenge/saturday";
 
-export { RACE_META, SATURDAY_COPY, SATURDAY_CREW };
+export { RACE_META, SATURDAY_CHAT, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
+
+/**
+ * 릴스는 15초라 단톡 뭉치를 통째로 못 넣는다. 줄을 골라 쓰되 두 가지는 지킨다 —
+ * 문장을 고쳐 쓰지 않고, 원본 안에서의 순서를 바꾸지 않는다.
+ * 어느 뭉치의 몇 번째 줄인지 인덱스로 박아둬서 정본과 대조할 수 있게 한다.
+ */
+const REEL_PICKS = [
+  { burst: "signup", lines: [3, 4, 5] },  // 취소할걸 / 나도 취소할까… / 신청 완료했습니다!!
+  { burst: "fee", lines: [1, 5, 6] },     // 용돈 다 떨어졌는데 / 부가세만이라도 / 아이스크림…
+  { burst: "fear", lines: [1, 2, 7] },    // 버려지면 어케 완주함? / 앰뷸 탈 수 있나? / 그냥 믿고 따라와
+] as const;
+
+export const REEL_CHAT = REEL_PICKS.map((pick) => {
+  const source = SATURDAY_CHAT.find((b) => b.id === pick.burst);
+  if (!source) throw new Error(`릴스가 참조하는 단톡 뭉치가 없다: ${pick.burst}`);
+  return {
+    id: source.id,
+    label: source.label,
+    lines: pick.lines.map((i) => {
+      const line = source.lines[i];
+      if (!line) throw new Error(`${pick.burst} 에 ${i}번 줄이 없다`);
+      return line;
+    }),
+  };
+});
+
+/** 릴스 몽타주에 쓰는 실제 사진 — 흑백 처리는 씬에서 한다 */
+export const REEL_PHOTOS = ["spring-road", "selfie-four", "track-pose", "race-beach"] as const;
 
 /** 영상 장면이 쓰는 표시용 멤버 목록 — 순서·인원은 앱 정본을 그대로 따른다 */
 export const MEMBERS = SATURDAY_CREW.map((member, index) => ({

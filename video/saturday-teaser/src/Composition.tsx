@@ -2,6 +2,7 @@ import { Composition, Folder } from "remotion";
 import { SaturdayMission00 } from "./SaturdayMission00";
 import { SaturdayMission00Web } from "./SaturdayMission00Web";
 import { SaturdayPlate } from "./SaturdayPlate";
+import { SaturdayReelS1 } from "./SaturdayReelS1";
 import { AssembleScene } from "./scenes/AssembleScene";
 import { ColdOpenScene } from "./scenes/ColdOpenScene";
 import { HookScene } from "./scenes/HookScene";
@@ -21,6 +22,13 @@ export const SaturdayCompositions: React.FC = () => {
       <Composition
         id="SaturdayMission00-Reel"
         component={SaturdayMission00}
+        durationInFrames={REEL.durationInFrames}
+        {...base}
+      />
+      {/* 시즌 1 릴스 — 실제 대화·실제 사진. MISSION 00 티저와 별개 물건이다 */}
+      <Composition
+        id="SaturdayReel-S1"
+        component={SaturdayReelS1}
         durationInFrames={REEL.durationInFrames}
         {...base}
       />
