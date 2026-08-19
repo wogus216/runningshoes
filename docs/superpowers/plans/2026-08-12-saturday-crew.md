@@ -1,4 +1,10 @@
-# 쎄러데이 8인 마라톤 기록 페이지 — 1단계 구현 계획
+# 쎄러데이 8인 마라톤 기록 페이지 — 1단계 구현 계획 (이전안)
+
+> **2026-08-13 상태:** 이 문서는 최초의 8인·Blue Hour·주차별 숫자 타임라인 구현안이다.
+> 타입·통계 로직·라우트 골격까지의 구현 이력을 보존하기 위해 남긴다.
+> 이후 작업은 최종 7인 시즌형 사진 앨범 방향을 반영한
+> `docs/superpowers/plans/2026-08-13-saturday-crew-season-archive.md`를 따른다.
+> 이 문서의 남은 코드 예시와 태스크는 그대로 실행하지 않는다.
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 

@@ -24,6 +24,63 @@ export interface CrewMember {
   final?: CrewStats;                // 대회 후. baseline과 함께 있으면 겹쳐 그린다
 }
 
+export interface SaturdayRaceMeta {
+  name: string;
+  dateIso: string;
+  dateLabel: string;
+  datePoster: string;
+  place: string;
+  timezone: 'Asia/Seoul';
+  marathonId: string;
+}
+
+/**
+ * 단톡방에서 그대로 가져온 한 줄.
+ * ⚠️ text 는 원문 그대로 둔다 — 오타·ㅋ·띄어쓰기를 다듬는 순간 남의 말이 된다.
+ *    화면에 쓰는 이름은 코드네임뿐이다. 실명·연락처는 이 파일에 들어오지 않는다.
+ */
+export interface ChatLine {
+  who: string;        // 코드네임 ('재춘' 등)
+  text: string;       // 원문 그대로
+  punch?: boolean;    // 뭉치의 펀치라인. 크게 렌더된다
+}
+
+export interface ChatBurst {
+  id: string;
+  label: string;      // mono 라벨 — 언제·무슨 상황인지
+  lines: ChatLine[];
+}
+
+/**
+ * 크루가 실제로 찍은 사진. 전부 폰 세로 사진이다.
+ * src 는 public/images/challenge/saturday/crew/{src}.webp 의 파일명.
+ */
+export interface CrewPhoto {
+  src: string;
+  alt: string;      // 장면을 서술한다. 누가 누구인지는 쓰지 않는다
+  wide?: boolean;   // 그리드에서 두 칸을 차지한다
+}
+
+export interface SaturdayTeaserCopy {
+  hero: {
+    question: string;
+    turn: string;
+    hook: string;
+    support: string;
+  };
+  crew: {
+    title: string;
+    support: string;
+    statusLine: string;
+  };
+  race: {
+    eyebrow: string;
+    hook: string;
+    ending: string;
+    next: string;      // 티저를 닫는 예고 한 줄. 웹 blackout과 Remotion 엔딩이 공유한다
+  };
+}
+
 export interface WeekEntry {
   memberId: string;
   km?: number;

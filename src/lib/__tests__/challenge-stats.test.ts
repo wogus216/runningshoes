@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { toRadarAxes, daysUntilRace, weekBackdrop } from '@/lib/challenge/stats';
+import { toRadarAxes, daysUntilRace, missionDdayLabel, weekBackdrop } from '@/lib/challenge/stats';
 import type { CrewStats } from '@/types/challenge';
 
 const base: CrewStats = {
@@ -50,6 +50,23 @@ describe('daysUntilRace', () => {
 
   it('대회가 지나면 음수를 돌려준다', () => {
     expect(daysUntilRace(new Date('2026-11-16T09:00:00+09:00'))).toBe(-1);
+  });
+});
+
+describe('missionDdayLabel', () => {
+  it('대회 전에는 D-N', () => {
+    expect(missionDdayLabel(new Date('2026-08-15T02:00:00+09:00'))).toBe('D-92');
+    expect(missionDdayLabel(new Date('2026-11-14T23:00:00+09:00'))).toBe('D-1');
+  });
+
+  it('대회 당일은 D-DAY (KST 경계 기준)', () => {
+    expect(missionDdayLabel(new Date('2026-11-15T06:00:00+09:00'))).toBe('D-DAY');
+    // UTC로는 전날 밤이어도 KST로 당일이면 D-DAY
+    expect(missionDdayLabel(new Date('2026-11-14T16:00:00Z'))).toBe('D-DAY');
+  });
+
+  it('대회가 지나면 MISSION DAY PASSED', () => {
+    expect(missionDdayLabel(new Date('2026-11-16T09:00:00+09:00'))).toBe('MISSION DAY PASSED');
   });
 });
 
