@@ -34,6 +34,7 @@
 
   --signal-dark: #C73800;
   --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
+  --warn-soft: #FBF3E4;      /* 대회 상태 배지 upcoming 배경 */
   --dark-soft: #28241D;
   --light-on-dark: #F7F4ED;
 
@@ -70,6 +71,7 @@
   --border: #38383A;
   --background: #000000;
   --foreground: #FFFFFF;
+  --warn-soft: #2A2113;      /* 대회 상태 배지 upcoming 배경 */
 }
 
 @layer base {
@@ -815,4 +817,37 @@
   text-align: right;
   margin: 0.625rem 0 0 0;
   line-height: 1.5;
+}
+
+/* ── 대회 글 상태 배지 ── */
+.race-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 4px 9px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.race-badge--open { background: var(--accent); color: #fff; }
+.race-badge--upcoming { background: var(--warn-soft); color: var(--warning-dark); border: 1px solid currentColor; }
+.race-badge--tbd { background: var(--surface-strong); color: var(--tertiary); border: 1px solid var(--border); }
+.race-badge--closed,
+.race-badge--past { background: var(--surface-strong); color: var(--tertiary); border: 1px solid var(--border); }
+
+.race-badge__pulse {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: race-badge-pulse 2s ease-in-out infinite;
+}
+@keyframes race-badge-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .race-badge__pulse { animation: none; }
 }
