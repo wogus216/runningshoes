@@ -245,24 +245,23 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </div>
         )}
 
-        {/* 대회 글 골격 - raceMeta 있는 글만 렌더 (행동 스트립·핵심 카드·고도·차별점) */}
-        {post.raceMeta && (
-          <div className="race-frame">
-            <RaceActionStrip meta={post.raceMeta} />
-            <RaceFactGrid facts={post.raceMeta.facts} />
-            {post.raceMeta.elevation && post.raceMeta.elevation.length >= 2 && (
-              <RaceElevation
-                points={post.raceMeta.elevation}
-                source={post.raceMeta.elevationSource}
-              />
-            )}
-            <RaceHighlights items={post.raceMeta.highlights} />
-          </div>
-        )}
-
         {/* 본문 - 카드 래퍼 없음, 깔끔한 타이포그래피.
             H2 3개 이상이면 중간에서 분할해 in-article 광고 슬롯 1개 삽입 */}
         <article>
+          {/* 대회 글 골격 - raceMeta 있는 글만 렌더 (행동 스트립·핵심 카드·고도·차별점) */}
+          {post.raceMeta && (
+            <div className="race-frame">
+              <RaceActionStrip meta={post.raceMeta} />
+              <RaceFactGrid facts={post.raceMeta.facts} />
+              {post.raceMeta.elevation && post.raceMeta.elevation.length >= 2 && (
+                <RaceElevation
+                  points={post.raceMeta.elevation}
+                  source={post.raceMeta.elevationSource}
+                />
+              )}
+              <RaceHighlights items={post.raceMeta.highlights} />
+            </div>
+          )}
           {(() => {
             const sanitized = DOMPurify.sanitize(post.content, {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
