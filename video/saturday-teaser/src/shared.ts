@@ -28,7 +28,7 @@ export { RACE_META, SATURDAY_CHAT, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS
 const REEL_PICKS = [
   { burst: "signup", lines: [3, 4, 5] },  // 취소할걸 / 나도 취소할까… / 신청 완료했습니다!!
   { burst: "fee", lines: [1, 5, 6] },     // 용돈 다 떨어졌는데 / 부가세만이라도 / 아이스크림…
-  { burst: "fear", lines: [1, 2, 7] },    // 버려지면 어케 완주함? / 앰뷸 탈 수 있나? / 그냥 믿고 따라와
+  { burst: "fear", lines: [1, 2, 5] },    // 버려지면 어케 완주함? / 앰뷸 탈 수 있나? / 그냥 믿고 따라와
 ] as const;
 
 export const REEL_CHAT = REEL_PICKS.map((pick) => {

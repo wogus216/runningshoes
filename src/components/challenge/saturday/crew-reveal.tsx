@@ -64,7 +64,8 @@ export function CrewReveal() {
               <span className={styles.crewIndex}>{String(index + 1).padStart(2, '0')}</span>
               <strong>{member.codeName}</strong>
               <span className={styles.crewDistance}>
-                {DISTANCE_KM[member.distance]} KM
+                <b>{DISTANCE_KM[member.distance]}</b>
+                <i>KM</i>
               </span>
             </li>
           ))}
