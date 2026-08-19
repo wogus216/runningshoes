@@ -141,7 +141,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>넉넉한 발볼</strong> — 오후·저녁에 발이 부어 있을 때가 많습니다</li>
 </ul>
 
-<p>현실적인 후보라면 <a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a>처럼 넓은 베이스로 안정감을 주는 쿠션화, <a href="/shoes/hoka-bondi-9">호카 본디 9</a>처럼 스택을 최대한 쌓은 맥스 쿠션, <a href="/shoes/nike-vomero-18">나이키 보메로 18</a>·<a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>처럼 데일리와 회복런을 겸할 수 있는 쿠션화가 무난합니다. 카테고리 전체를 놓고 비교하려면 <a href="/best/max-cushion">쿠션 러닝화 추천</a>에 정리돼 있습니다.</p>
+<p>현실적인 후보라면 <a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a>처럼 넓은 베이스로 안정감을 주는 쿠션화, <a href="/shoes/hoka-bondi-9">호카 본디 9</a>처럼 스택을 최대한 쌓은 맥스 쿠션, <a href="/shoes/nike-vomero-18">나이키 보메로 18</a>·<a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>처럼 데일리와 회복런을 겸할 수 있는 쿠션화가 무난합니다. 카테고리 전체를 놓고 비교하려면 <a href="/best/max-cushion">쿠션 러닝화 추천</a>에 정리돼 있습니다. 회복런용으로 한 켤레를 따로 두는 경우를 다룬 글로는 <a href="/blog/on-cloudmonster-3-review-2026">On 클라우드몬스터 3 후기</a>가 있습니다.</p>
 
 <p>다만 <strong>회복런 때문에 신발을 새로 살 필요는 없습니다.</strong> 갖고 있는 데일리 트레이너 중 가장 푹신한 것으로 충분합니다. 굳이 한 켤레를 더 둔다면, 그건 "회복이 빨라져서"가 아니라 <strong>레이싱화·데일리화의 마모를 나눠 쓰는 효과</strong> 쪽이 더 정직한 이유입니다.</p>
 
