@@ -777,6 +777,19 @@
 .footer > div { display: flex; flex-direction: column; }
 .footer strong { font-size: clamp(54px, 8vw, 120px); line-height: 1.04; letter-spacing: -.06em; }
 .footer span { margin-top: 18px; font: 600 10px/1 var(--sat-mono); letter-spacing: .17em; }
+
+/* 이름 유래. mono 각주로 깔면 또 못 읽으므로 본문 크기로 둔다 —
+   오른쪽 농담('토요일에만 뛰는 건 아닙니다.')의 전제라 읽혀야 값을 한다 */
+.nameOrigin {
+  margin-top: 20px;
+  max-width: 26ch;
+  color: rgba(10,16,19,.72);
+  font-size: clamp(14px, 1.3vw, 17px);
+  font-weight: 620;
+  line-height: 1.55;
+  letter-spacing: -.01em;
+  word-break: keep-all;
+}
 .footer p { max-width: 15ch; justify-self: end; text-align: right; font-size: clamp(24px, 3.4vw, 52px); font-weight: 820; line-height: 1.3; letter-spacing: -.05em; }
 .footer a { min-height: 44px; display: inline-flex; align-items: center; align-self: end; width: fit-content; color: rgba(10,16,19,.62); font: 600 10px/1 var(--sat-mono); letter-spacing: .11em; text-decoration: none; border-bottom: 1px solid rgba(10,16,19,.35); }
 
@@ -995,12 +1008,11 @@
    sticky 무대에서 뭉치가 한 개씩 교체되고, 뭉치 안에서는 메시지가 한 줄씩 도착한다.
    전부 --scene-progress(0~1)의 함수라 되감으면 대화도 되감긴다. JS 추가 없음. */
 .chatScene {
-  /* 뭉치 하나당 0.68 화면(2026-08-19에 0.85에서 내렸다).
-     전에는 줄 간격이 고정값(.085)이라 줄이 적은 뭉치일수록 마지막 줄이 일찍 끝나고
-     남은 스크롤이 통째로 죽었다 — 세 줄짜리 뭉치는 span 의 뒤쪽 70%가 빈 화면이었다.
-     이제 줄 간격을 줄 수로 나눠(chat-log.tsx) 어느 뭉치든 같은 지점에서 끝나므로
-     뭉치당 높이를 줄여도 읽을 시간이 줄지 않는다. */
-  min-height: calc(var(--burst-count) * 68svh);
+  /* 뭉치 하나당 0.88 화면. 85 → 68 로 내렸다가 다시 올렸다(2026-08-19) —
+     "읽을 새도 없이 넘어간다"는 실사용 피드백을 받고 재보니, 높이보다 타이밍이 문제였지만
+     높이도 모자랐다. 뭉치당 481px 은 모바일 스와이프 한 번(400~800px)에 통째로 지나간다.
+     타이밍(위 .burst opacity + chat-log 의 --line-start)과 함께 봐야 하는 값이다. */
+  min-height: calc(var(--burst-count) * 88svh);
   background: var(--sat-bluehour);
   color: var(--sat-paper);
 }
@@ -1052,7 +1064,10 @@
      아래 줄이 이 줄을 덮어쓰므로 safe 미지원 브라우저는 기존 동작 그대로다. */
   justify-content: center;
   justify-content: safe center;
-  opacity: clamp(0, min(calc(var(--local) * 7), calc((1 - var(--local)) * 7)), 1);
+  /* 들어올 땐 1/12, 나갈 땐 1/9 구간을 쓴다. 나가는 시작점을 .857 → .889 로 늦춘 것 —
+     읽는 시간은 '마지막 줄이 다 뜬 뒤부터 사라지기 시작할 때까지'라 이 두 숫자가 정한다.
+     지금: .47 에 완성 → .889 에 사라지기 시작 = 구간의 42% (전에는 9%) */
+  opacity: clamp(0, min(calc(var(--local) * 12), calc((1 - var(--local)) * 9)), 1);
 }
 
 .burstLabel {
@@ -1253,3 +1268,32 @@
    서로 다른 날·다른 폰이라 색온도가 제각각이고, 그대로 두면 한 세트로 묶이지 않는다.
    원본 파일 색은 건드리지 않았다. 되돌리려면 이 한 줄만 지운다. */
 .wall img { filter: grayscale(1) contrast(1.06); }
+
+/* ── 모바일 사용성 (2026-08-19, 실사용 피드백 반영) ────────────────────────
+   파일 맨 뒤에 둔다 — 앞선 폭 미디어쿼리들을 덮어야 하고, "모바일에서만 다른 것"을
+   한군데 모아 두면 다음 사람이 여기만 보면 된다. */
+@media (max-width: 900px) {
+  /* 손가락 스와이프 한 번이 400~800px 이라 데스크톱과 같은 높이면 뭉치가 그냥 지나간다 */
+  .chatScene { min-height: calc(var(--burst-count) * 105svh); }
+
+  /* 8px·7px 로 줄여놓은 규칙들을 되돌린다. 화면이 작다고 글자까지 작을 이유는 없다 —
+     오히려 반대다. 특히 아래 둘은 이 페이지에서 제일 중요한 사실인데 제일 작았다. */
+  .heroMeta { font-size: 11px; }        /* 2026.11.15 · 손기정평화마라톤 · 임진각·파주 */
+  .raceTop p { font-size: 11px; }       /* 임진각 · 파주 — 7px 였다 */
+
+  /* 뭉치 라벨은 대사의 문맥('겁이 나기 시작했다')이라 본문에 준한다 */
+  .burstLabel { font-size: 11px; }
+  .dayBreak { font-size: 11px; }
+
+  /* 라벨·장식성 텍스트는 10px 까지만 — 본문과 위계는 유지하되 7~8px 은 없앤다 */
+  .brand,
+  .missionStatus,
+  .lightKicker,
+  .darkKicker,
+  .footer span,
+  .footer a,
+  .raceCopy > span { font-size: 10px; }
+
+  .crewIndex { font-size: 10px; }
+  .crewDistance i { font-size: 9px; }   /* 숫자 옆 단위라 여기만 더 작게 둔다 */
+}

@@ -5,6 +5,7 @@ import { CrewReveal } from './crew-reveal';
 import { MissionHero } from './mission-hero';
 import { PhotoWall } from './photo-wall';
 import { RaceTarget } from './race-target';
+import { SATURDAY_COPY } from '@/lib/data/challenge/saturday';
 import styles from '@/app/(challenge)/saturday/saturday.module.css';
 
 export function SaturdayTeaser() {
@@ -32,12 +33,14 @@ export function SaturdayTeaser() {
         <RaceTarget />
       </main>
 
+      {/* 이름 → 유래 → 농담 순서다. 유래가 빠지면 농담이 전제 없이 던져진다 */}
       <footer className={styles.footer}>
         <div>
           <strong>쎄러데이</strong>
           <span>SATURDAY RUNNING CREW</span>
+          <small className={styles.nameOrigin}>{SATURDAY_COPY.footer.nameOrigin}</small>
         </div>
-        <p>토요일에만 뛰는 건 아닙니다.</p>
+        <p>{SATURDAY_COPY.footer.joke}</p>
         <Link href="/">러닝의 모든것에서 만듭니다 ↗</Link>
       </footer>
       <CinematicDirector />
