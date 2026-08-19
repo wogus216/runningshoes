@@ -7,6 +7,7 @@ export const posts_2026_08: BlogPost[] = [
     title: '회복런 제대로 하는 법 — LSD와 뭐가 다른가 | 페이스·시간·효과, 근거 있는 것과 없는 것',
     description:
       '회복런과 LSD는 둘 다 느리게 달리지만 목적이 정반대입니다. 페이스·시간·다음날 컨디션으로 갈리는 지점을 표로 정리하고, "회복런이 회복을 빠르게 한다"는 말이 어디까지 근거가 있고 어디부터 아닌지, 회복런에 어떤 신발이 맞는지까지 정리했습니다.',
+    thumbnail: '/images/blog/recovery-run-vs-lsd-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-19',
     category: 'tips' as const,
@@ -174,6 +175,7 @@ export const posts_2026_08: BlogPost[] = [
     title: '트레일 러닝화 계급도 2026 — 근교 산책로부터 카본 레이싱까지 한 장 정리 | 브랜드 7곳 15종 가격·무게 비교',
     description:
       '트레일 러닝화 15종을 근교·입문 / 올라운드 / 쿠션·울트라 / 카본 레이싱 4단으로 정리했습니다. 아식스 젤 벤처 10(8.9만원)부터 살로몬 S/LAB 펄사 4(34만원)까지 가격·무게 비교표와 함께, 트레일화가 로드화·등산화와 뭐가 다른지, 처음 사는 사람은 어느 단부터 시작하면 되는지 정리했습니다.',
+    thumbnail: '/images/blog/trail-running-shoes-lineup-tier-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-19',
     category: 'guide' as const,

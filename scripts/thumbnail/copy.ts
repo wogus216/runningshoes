@@ -357,4 +357,15 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   'running-shoe-terminology-guide': {
     data: '핵심 부위 4가지 · 토박스 68mm↓ 와이드',
   },
+  // 출처: posts/2026-08.ts 4단 사다리 표 — 트레일 15종의 한국 공식가 하단(젤 벤처 10
+  // 8.9만)과 상단(S/LAB 펄사 4 34만). 종수·브랜드 수는 신발 DB `category: '트레일'`
+  // 전수(2026-08-19 실측: 호카 3·살로몬 3·아디다스 2·아식스 2·나이키 2·써코니 2·뉴발란스 1).
+  'trail-running-shoes-lineup-tier-guide-2026': {
+    data: '7개 브랜드 15종 · 8.9만~34만원 (한국 공식가)',
+  },
+  // 출처: posts/2026-08.ts 3절 "얼마나 뛰나" — 20~40분·3~6km 권장 범위와
+  // 2절의 페이스 기준(대화가 자연스럽게 이어지는 속도). 효과는 조건부라 데이터 줄에 넣지 않는다.
+  'recovery-run-vs-lsd-guide-2026': {
+    data: '20~40분 · 3~6km · 대화 가능한 페이스',
+  },
 };
