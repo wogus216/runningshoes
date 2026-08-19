@@ -3,7 +3,9 @@
 export const COLORS = {
   asphalt: "#060809",
   asphaltSoft: "#1c2430",
+  bluehour: "#133142",    // 단톡 비트 배경 (웹 --sat-bluehour)
   paper: "#d4cdc4",
+  paperDeep: "#efe9e1",   // 하늘 최고광 (웹 --sat-paper-deep)
   ink: "#0a1013",
   signal: "#f3cc7c",      // 일출컷의 해. 어두운 면 위 전용
   signalDark: "#7a4520",  // 밝은 종이면 위 글자·선 (노랑은 여기서 대비 1.3:1)
@@ -15,7 +17,7 @@ export const MONO = 'ui-monospace, "SFMono-Regular", Menlo, monospace';
 
 // 로스터·카피는 여기 적지 않는다. 앱 정본(src/lib/data/challenge/saturday.ts)에서 온다.
 // 기존 사용처가 theme에서 MEMBERS를 가져오고 있어 통로만 유지한다.
-export { MEMBERS, DISTANCE_TOTALS, RACE_META, SATURDAY_COPY, CREW_SIZE } from "./shared";
+export { MEMBERS, DISTANCE_TOTALS, RACE_META, SATURDAY_COPY, CREW_SIZE, REEL_CHAT, REEL_PHOTOS } from "./shared";
 
 export const REEL = {
   fps: 30,
