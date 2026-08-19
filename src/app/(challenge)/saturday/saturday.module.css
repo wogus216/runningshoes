@@ -1005,11 +1005,13 @@
   color: var(--sat-paper);
 }
 
+/* 세로 여백은 전부 vh 에 묶는다. 낮은 화면일수록 조여서 가장 긴 뭉치(8줄)가 들어가게 한다.
+   위 패딩만 84px 하한을 유지한다 — 고정 헤더(82px)를 비켜야 킥커가 안 깔린다. */
 .chatStage {
-  padding: clamp(84px, 12vh, 148px) clamp(20px, 5vw, 72px) clamp(56px, 8vh, 92px);
+  padding: clamp(84px, 12vh, 148px) clamp(20px, 5vw, 72px) clamp(36px, 5vh, 92px);
   display: flex;
   flex-direction: column;
-  gap: clamp(28px, 4vh, 56px);
+  gap: clamp(16px, 2.6vh, 56px);
 }
 
 .chatHeader { flex: none; }
@@ -1043,20 +1045,26 @@
   inset: 0;
   display: flex;
   flex-direction: column;
+  /* ⚠️ 그냥 center 면 내용이 컨테이너보다 클 때 위아래 '양쪽'으로 넘친다.
+     위로 넘친 만큼이 헤더를 덮어서 '단톡방 그대로' 와 뭉치 라벨이 겹쳤다
+     (8줄 뭉치 기준 720×720 에서 126px, 500×844 에서도 40px 초과).
+     safe center 는 들어갈 땐 가운데, 넘칠 땐 start 로 떨어져 위를 침범하지 않는다.
+     아래 줄이 이 줄을 덮어쓰므로 safe 미지원 브라우저는 기존 동작 그대로다. */
   justify-content: center;
+  justify-content: safe center;
   opacity: clamp(0, min(calc(var(--local) * 7), calc((1 - var(--local)) * 7)), 1);
 }
 
 .burstLabel {
-  margin-bottom: 26px;
-  padding-bottom: 14px;
+  margin-bottom: clamp(12px, 2.4vh, 26px);
+  padding-bottom: clamp(8px, 1.4vh, 14px);
   border-bottom: 1px solid rgba(212,205,196,.22);
   color: var(--sat-concrete);
   font: 600 10px/1.5 var(--sat-mono);
   letter-spacing: .16em;
 }
 
-.burstLines { display: grid; gap: clamp(10px, 1.5vh, 18px); }
+.burstLines { display: grid; gap: clamp(6px, 1.1vh, 18px); }
 
 /* 줄 j 는 뭉치 안에서 순서대로 도착한다 */
 .burstLines li {
@@ -1095,7 +1103,8 @@
   order: 2;
   margin: 0;
   max-width: min(62ch, 78%);
-  padding: 12px 18px;
+  /* 세로만 vh 에 묶는다. 가로 18px 은 그대로 — 넘치는 건 높이지 폭이 아니다 */
+  padding: clamp(7px, 1.1vh, 12px) 18px;
   border: 1px solid rgba(212,205,196,.2);
   border-radius: 2px;
   background: rgba(212,205,196,.08);
@@ -1124,14 +1133,39 @@
 .mine .at { order: 1; }
 
 /* 날이 바뀌면 줄 위에 가운데 구분자를 둔다 — 보름에 걸친 대화라는 사실이 그대로 보인다 */
+/* 날짜가 바뀐 자리. 숫자만 가운데 띄워두면 말풍선 사이에 낀 미아로 읽혀서
+   양옆에 실선을 붙여 '구분선'이라는 걸 형태로 말하게 했다 */
 .dayBreak {
   order: 0;
   flex-basis: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
   margin: clamp(10px, 1.6vh, 20px) 0 4px;
-  text-align: center;
   color: var(--sat-concrete);
   font: 600 10px/1 var(--sat-mono);
   letter-spacing: .2em;
+}
+
+.dayBreak::before,
+.dayBreak::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: rgba(212,205,196,.16);
+}
+
+/* 아주 낮은 화면(짧은 노트북·가로 폰). safe center 가 헤더 침범은 이미 막지만,
+   가장 긴 뭉치(8줄)가 아래로 82px 넘쳐 펀치라인이 잘렸다 — 뭉치의 결론이 안 보인다.
+   여백은 이미 vh 에 묶여 더 짤 게 없어서, 여기서만 글자를 줄인다.
+   700px 을 경계로 둔 이유: 폰 세로(844)와 보통 노트북(900)은 건드리지 않기 위해서다. */
+@media (max-height: 700px) {
+  .chatHeader h2 { font-size: clamp(28px, 3.6vw, 40px); }
+  .bubble { font-size: clamp(15px, min(1.6vw, 2.6vh), 18px); line-height: 1.3; }
+  /* 여백 clamp 들은 이 높이에서 이미 하한에 닿아 있다 — 라벨과 아래 패딩만 조금 더 남았다.
+     28px 이면 하단 진행바(bottom 22px)를 여전히 비켜난다 */
+  .burstLabel { margin-bottom: 10px; padding-bottom: 8px; }
+  .chatStage { padding-bottom: 28px; }
 }
 
 /* 뭉치의 펀치라인 하나만 키운다. 색은 올리지 않는다 — 크기로 충분하다 */
