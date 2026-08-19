@@ -24,23 +24,10 @@ export function CrewReveal() {
     >
       <div className={`${styles.stage} ${styles.crewStage}`}>
         <div className={styles.paperGrid} aria-hidden="true" />
-        {/* 아트 디렉션(가로/세로 컷 교체)은 next/image 가 표현하지 못한다.
-            images.unoptimized:true 라 next/image 도 어차피 plain img 이므로 picture 를 쓴다.
-            데스크톱은 2400×1600 가로컷, 모바일은 1200×1800 세로컷. */}
-        <div className={styles.crewImage} aria-hidden="true">
-          <picture>
-            <source
-              media="(min-width: 900px)"
-              srcSet="/images/challenge/saturday/seven-runners-wide.webp"
-            />
-            <img
-              src="/images/challenge/saturday/seven-runners.webp"
-              alt=""
-              loading="lazy"
-              decoding="async"
-            />
-          </picture>
-        </div>
+        {/* 배경 사진을 걷어냈다(2026-08-19). 두 가지 이유다 —
+            하나, 일곱 명을 소개하는 화면의 배경이 AI로 만든 익명의 러너들이었다.
+            둘, 바로 다음 섹션이 진짜 사진 벽이라 사진이 두 화면 연속으로 온다.
+            크루는 종이면으로 둔다. 히어로(검정) → 단톡(새벽) → 크루(종이) 계단이 그래야 선다. */}
         <div className={styles.crewHeader}>
           <div>
             <span className={styles.darkKicker}>같이 출발하는 사람들</span>
@@ -52,8 +39,8 @@ export function CrewReveal() {
           <p>{SATURDAY_COPY.crew.support}</p>
         </div>
 
-        <div className={styles.assembleWord} aria-hidden="true">모였다.</div>
-
+        {/* 장식어 '모였다.'를 뺐다 — 208px로 이 섹션 h2(116px)보다 컸다.
+            뜻이 없는 말이 뜻이 있는 말보다 크면 화면이 분위기만 외치고 내용은 속삭인다 */}
         <ol className={styles.crewList} aria-label="쎄러데이 멤버 7명">
           {SATURDAY_CREW.map((member, index) => (
             <li

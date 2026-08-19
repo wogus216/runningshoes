@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import {
   RACE_META,
+  SATURDAY_CHAT,
   SATURDAY_COPY,
   SATURDAY_CREW,
 } from '@/lib/data/challenge/saturday';
@@ -25,8 +26,15 @@ describe('쎄러데이 MISSION 00 정본', () => {
   it('대회 날짜와 핵심 카피가 MISSION 00 정본과 일치한다', () => {
     expect(RACE_META.dateIso).toBe('2026-11-15');
     expect(RACE_META.datePoster).toBe('11 / 15');
-    expect(SATURDAY_COPY.hero.hook).toBe('농담은 접수됐다.');
+    expect(SATURDAY_COPY.hero.hook).toBe('신청 완료했습니다!!');
     expect(SATURDAY_COPY.crew.title).toContain('일곱 명');
+  });
+
+  it('히어로에서 가장 큰 글자는 지어낸 카피가 아니라 단톡 원문이다', () => {
+    // 이 페이지의 전제는 '원본 그대로'다. 첫 화면만 카피라이팅이면 전제가 깨진다.
+    // hook 을 고치려면 실제로 그렇게 말한 줄이 단톡에 있어야 한다.
+    const everyLine = SATURDAY_CHAT.flatMap((burst) => burst.lines.map((line) => line.text));
+    expect(everyLine).toContain(SATURDAY_COPY.hero.hook);
   });
 
   it('여덟 명 시절 placeholder가 정본 어디에도 남아 있지 않다', () => {

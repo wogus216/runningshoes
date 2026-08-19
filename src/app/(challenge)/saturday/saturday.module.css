@@ -1,6 +1,9 @@
 :global(html):has(.saturday),
 :global(body):has(.saturday) {
   overflow-x: visible;
+  /* 전역 body 배경(#17150f)이 iOS 오버스크롤 바운스에서 비쳤다.
+     globals.css 를 건드리지 않고 :has() 로 이 페이지에만 덮는다. */
+  background: #060809;
 }
 
 .saturday {
@@ -77,7 +80,10 @@
   justify-content: space-between;
   padding: max(22px, env(safe-area-inset-top)) clamp(20px, 5vw, 72px) 16px;
   color: var(--sat-paper);
-  background: linear-gradient(180deg, rgba(6,8,9,.78), transparent);
+  /* 스크림이 82px 안에서 .78 → 0 으로 곧장 떨어져서, 글자가 앉는 높이(약 54%)에서는
+     실효 알파가 .36 밖에 안 됐다. 사진 벽(밝은 흑백 사진)을 지날 때 헤더가 2.2:1 로
+     사실상 안 읽혔다. 글자 아래까지 .78 을 유지하고 그 뒤에서 뺀다 — 같은 자리 7.5:1. */
+  background: linear-gradient(180deg, rgba(6,8,9,.88) 0%, rgba(6,8,9,.78) 66%, rgba(6,8,9,0) 100%);
   pointer-events: none;
 }
 
@@ -121,8 +127,14 @@
   background: var(--sat-asphalt);
 }
 
-.crew { min-height: 340svh; }
-.race { min-height: 300svh; }
+/* 무대 높이를 조였다(2026-08-19). 이 값들은 '연출 장치'가 몇 개인지에 맞춰 정해져 있었는데,
+   그 장치들을 걷어내면서 빈 스크롤만 남았다. 근거는 각각 하나씩 —
+   hero  280→240: 비트 4개(질문·전환·훅·마무리) × 60svh
+   crew  340→250: '모였다.'가 차지하던 비트 1이 비었다
+   race  300→210: 마지막 blackout 화면 하나가 통째로 사라졌다 */
+.hero { min-height: 240svh; }
+.crew { min-height: 250svh; }
+.race { min-height: 210svh; }
 
 .stage {
   position: sticky;
@@ -133,29 +145,10 @@
   overflow: hidden;
 }
 
-.filmGrain {
-  position: absolute;
-  z-index: 16;
-  inset: 0;
-  opacity: .15;
-  pointer-events: none;
-  background-image:
-    repeating-linear-gradient(0deg, transparent 0 3px, rgba(255,255,255,.025) 3px 4px),
-    radial-gradient(circle at 30% 20%, rgba(255,255,255,.08) 0 1px, transparent 1.5px);
-  background-size: auto, 5px 5px;
-  mix-blend-mode: soft-light;
-}
-
-.trackLines {
-  position: absolute;
-  z-index: 2;
-  inset: 0;
-  opacity: .28;
-  background:
-    linear-gradient(171deg, transparent 0 54%, rgba(212,205,196,.15) 54.1% 54.25%, transparent 54.35%),
-    linear-gradient(171deg, transparent 0 67%, rgba(212,205,196,.09) 67.1% 67.22%, transparent 67.32%);
-  pointer-events: none;
-}
+/* .filmGrain / .trackLines 제거(2026-08-19).
+   그레인은 진짜 폰 사진 위에 가짜 필름 질감을 얹는 일이었고,
+   트랙 라인은 alpha .15 × opacity .28 = 유효 0.04라 화면에 나타나지 않으면서
+   전체 무대를 덮는 레이어 비용만 내고 있었다. */
 
 .progress {
   position: absolute;
@@ -400,36 +393,9 @@
   background-size: 8.333vw 100%, 100% 48px;
 }
 
-/* 2026-08-18 — 크루 컷을 밝은 사진으로 다시 뽑았다(실측 평균밝기 17% → 81%).
-   흑백 필터 + opacity .52/.18 로 사진을 죽이던 처리는 어두운 야간 컷을 종이 배경에
-   억지로 앉히려던 보정이었다. 사진은 그대로 두고, 글자가 앉는 하단만 스크림으로 덮는다. */
-.crewImage {
-  position: absolute;
-  z-index: 1;
-  inset: 0;
-  opacity: 0;
-  filter: contrast(1.03) saturate(.97);
-  transition: opacity 700ms ease, transform 1100ms var(--sat-ease-enter);
-  transform: scale(1.05);
-}
-
-.crewImage picture { position: absolute; inset: 0; display: block; }
-.crewImage img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%; }
-.crewImage::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  transition: background 700ms ease;
-  background: linear-gradient(180deg, rgba(212,205,196,.06) 0%, rgba(212,205,196,0) 34%, rgba(212,205,196,.72) 78%, rgba(212,205,196,.94) 100%);
-}
-
-.crew[data-beat='1'] .crewImage,
-.crew[data-beat='2'] .crewImage { opacity: 1; transform: scale(1); }
-/* 명단이 올라오는 마지막 비트에서도 사진을 끄지 않는다 — 스크림만 위로 끌어올린다 */
-.crew[data-beat='3'] .crewImage { opacity: 1; transform: scale(.98); }
-.crew[data-beat='3'] .crewImage::after {
-  background: linear-gradient(180deg, rgba(212,205,196,.5) 0%, rgba(212,205,196,.36) 26%, rgba(212,205,196,.86) 62%, rgba(212,205,196,.96) 100%);
-}
+/* .crewImage 제거(2026-08-19) — 일곱 명을 소개하는 화면의 배경이 AI 생성 컷이었다.
+   실사로 갈아끼우는 대신 걷어냈다: 바로 다음 섹션이 진짜 사진 벽이라 사진이 두 화면
+   연속으로 오고, 밝기 계단(검정 → 새벽 → 종이)은 여기가 종이여야 성립한다. */
 
 .crewHeader {
   position: relative;
@@ -470,34 +436,23 @@
   word-break: keep-all;
 }
 
-.assembleWord {
-  position: absolute;
-  z-index: 6;
-  left: 50%;
-  top: 50%;
-  /* 밝은 종이면 위 — signal(#f3cc7c)은 여기서 대비 1.3:1 이라 보이지 않는다 */
-  color: var(--sat-signal-dark);
-  /* 한글 전환어 — mono·과밀 자간은 한글에서 깨진다 */
-  font-size: clamp(76px, 13vw, 208px);
-  font-weight: 900;
-  line-height: 1.04;
-  letter-spacing: -.055em;
-  opacity: 0;
-  transform: translate(-50%, -42%) scale(.72);
-  transition: opacity 220ms ease, transform 900ms var(--sat-ease-enter);
-  white-space: nowrap;
-  mix-blend-mode: multiply;
-}
+/* .assembleWord('모였다.') 제거(2026-08-19) — 208px로, 이 섹션 h2(116px)보다 컸다.
+   뜻 없는 장식어가 뜻 있는 제목을 누르면 화면이 분위기만 외치고 내용은 속삭이게 된다. */
 
-.crew[data-beat='1'] .assembleWord { opacity: .95; transform: translate(-50%, -50%) scale(1); }
-
+/* 2026-08-19 — 명단을 무대 높이만큼 늘리지 않는다.
+   전에는 top/bottom 으로 화면을 꽉 채워서 각 칸이 590px 이 됐고,
+   번호는 맨 위, 이름은 맨 아래에 붙어 가운데 400px 이 빈 채로 남았다.
+   그 공백은 배경 사진이 채우고 있었다 — 사진을 걷어내니 맨살로 드러났다.
+   이제 내용 높이만큼만 차지하고 세로 가운데(finale 과 같은 축)에 앉는다.
+   --list-center 로 뺀 이유: 모바일은 1열 세로 목록이라 늘어나는 게 맞아서 0 으로 덮는다. */
 .crewList {
+  --list-center: -50%;
   position: absolute;
   z-index: 8;
   left: clamp(20px, 5vw, 72px);
   right: clamp(20px, 5vw, 72px);
-  top: clamp(176px, 26vh, 250px);
-  bottom: clamp(56px, 8vh, 90px);
+  top: 50%;
+  bottom: auto;
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
   margin: 0;
@@ -506,7 +461,7 @@
   border-bottom: 3px solid var(--sat-ink);
   list-style: none;
   opacity: 0;
-  transform: translateY(42px);
+  transform: translateY(calc(var(--list-center) + 42px));
   transition: opacity 360ms ease, transform 760ms var(--sat-ease-enter);
 }
 
@@ -521,8 +476,12 @@
   /* 일곱 명이 한 명씩 등장한다. 시간(transition-delay)이 아니라 스크롤 진행도에 묶는다 —
      그래야 등장 속도를 보는 사람이 쥐고, 되감으면 되감긴다.
      --scene-progress 는 CinematicDirector 가 씬에 인라인으로 넣는 0~1 숫자다.
-     crew 씬의 beat 2 구간이 .40~.73 이라 그 안에서 7명을 .42~.63 에 배분한다. */
-  --entry-start: calc(.42 + var(--entry-index) * .035);
+     crew 씬의 beat 2 구간이 .40~.73 이라 그 안에서 7명을 .42~.55 에 배분한다.
+     ⚠️ 간격은 .035 였다. 씬 높이를 340→250svh 로 줄이자 마지막 사람이 .67 에야 들어와서
+     일곱 명이 다 보이는 구간이 .67~.73, 스크롤로 140px(0.15화면)밖에 안 남았다.
+     명단을 다 읽기도 전에 화면이 넘어간다. .022 로 조여 .59 에 끝내고 뒤를 비워 둔다.
+     → 마지막 사람이 들어오는 지점 = .42 + 6 × 간격 + 1/26. 씬 높이를 다시 바꾸면 이 값도 검산할 것. */
+  --entry-start: calc(.42 + var(--entry-index) * .022);
   --entry-in: clamp(0, calc((var(--scene-progress, 1) - var(--entry-start)) * 26), 1);
   opacity: var(--entry-in);
   transform: translateY(calc((1 - var(--entry-in)) * 30px));
@@ -533,7 +492,9 @@
 .crewEntry strong { font-size: clamp(28px, 3vw, 48px); line-height: 1.16; letter-spacing: -.045em; }
 .crewIndex,
 .crewDistance { font: 600 9px/1 var(--sat-mono); letter-spacing: .11em; }
-.crewIndex { margin-bottom: auto; color: var(--sat-signal-dark); }
+/* margin-bottom: auto 였다 — 칸이 늘어나던 시절 번호를 천장에 붙이던 규칙이고,
+   이제 칸이 내용 높이라 고정 간격이 맞다 */
+.crewIndex { margin-bottom: 22px; color: var(--sat-signal-dark); }
 .crewDistance {
   margin-top: 26px;
   display: flex;
@@ -558,7 +519,7 @@
 }
 
 .crew[data-beat='2'] .crewHeader { opacity: 0; transform: translateY(-24px); pointer-events: none; }
-.crew[data-beat='2'] .crewList { opacity: 1; transform: translateY(0); }
+.crew[data-beat='2'] .crewList { opacity: 1; transform: translateY(var(--list-center)); }
 
 .crewFinale {
   position: absolute;
@@ -652,8 +613,9 @@
   background: var(--sat-signal-dark);
 }
 
-.crew[data-beat='3'] .crewHeader,
-.crew[data-beat='3'] .crewList { opacity: 0; transform: translateY(-54px); pointer-events: none; }
+.crew[data-beat='3'] .crewHeader { opacity: 0; transform: translateY(-54px); pointer-events: none; }
+/* 명단은 가운데 기준점(--list-center)에서 위로 빠진다 — 헤더와 달리 0 이 기준이 아니다 */
+.crew[data-beat='3'] .crewList { opacity: 0; transform: translateY(calc(var(--list-center) - 54px)); pointer-events: none; }
 .crew[data-beat='3'] .crewFinale { opacity: 1; transform: translateY(-50%); }
 
 /* Race target */
@@ -726,7 +688,12 @@
   transform: translate3d(0, -50%, 0) scale(1);
 }
 
-.race[data-beat='2'] .raceDate {
+/* beat 3 은 blackout 화면이 쓰던 비트다(2026-08-19에 제거).
+   선택자를 beat 2 만 두면 마지막 구간에서 날짜가 기본값(흐림 .18)으로 되돌아가고
+   하단 블록이 사라져 페이지 마지막 화면이 통째로 비어 버린다 —
+   실제로 그렇게 됐다. beat 3 은 beat 2 의 화면을 그대로 붙잡는다. */
+.race[data-beat='2'] .raceDate,
+.race[data-beat='3'] .raceDate {
   opacity: 1;
   filter: blur(0);
   transform: translate3d(0, -63%, 0) scale(.73);
@@ -734,7 +701,8 @@
 }
 
 .race[data-beat='1'] .raceTop,
-.race[data-beat='2'] .raceTop { opacity: 1; transform: translateY(0); }
+.race[data-beat='2'] .raceTop,
+.race[data-beat='3'] .raceTop { opacity: 1; transform: translateY(0); }
 
 .raceBottom {
   position: absolute;
@@ -750,7 +718,8 @@
   transition: opacity 450ms ease, transform 760ms var(--sat-ease-enter);
 }
 
-.race[data-beat='2'] .raceBottom { opacity: 1; transform: translateY(0); }
+.race[data-beat='2'] .raceBottom,
+.race[data-beat='3'] .raceBottom { opacity: 1; transform: translateY(0); }
 
 .dday {
   display: block;
@@ -770,31 +739,25 @@
 .raceCopy { max-width: 34ch; justify-self: end; }
 .raceCopy > p { font-size: clamp(20px, 2.2vw, 32px); font-weight: 760; line-height: 1.48; word-break: keep-all; }
 .raceCopy > span { display: block; margin-top: 14px; color: rgba(212,205,196,.5); font: 500 9px/1.5 var(--sat-mono); letter-spacing: .1em; }
-.raceCopy .nextMission { width: fit-content; margin-top: 24px; padding-bottom: 8px; border-bottom: 2px solid var(--sat-signal); color: var(--sat-paper); }
-
-.blackout {
-  position: absolute;
-  z-index: 30;
-  inset: 0;
-  padding: 0 clamp(20px, 7vw, 100px);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+/* 예고 한 줄. blackout 무대를 걷어내면서 여기로 내려왔다 —
+   .nextMission 은 어디서도 쓰이지 않던 죽은 규칙이라 그 자리를 대신한다.
+   10px mono 대신 읽히는 크기로 둔다. 각주가 아니라 문장이다. */
+.raceNext {
+  display: block;
+  width: fit-content;
+  margin-top: 26px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid var(--sat-signal);
   color: var(--sat-paper);
-  background: var(--sat-asphalt);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 620ms ease;
+  font-size: clamp(13px, 1.1vw, 15px);
+  font-weight: 700;
+  letter-spacing: -.01em;
 }
 
-.blackout span,
-.blackout b { color: rgba(212,205,196,.5); font: 600 10px/1 var(--sat-mono); letter-spacing: .18em; }
-.blackoutTitle { margin: 30px 0 34px; font-size: clamp(82px, 13vw, 210px); font-weight: 900; line-height: 1.02; letter-spacing: -.075em; }
-.blackoutTitle i { color: var(--sat-signal); font-style: normal; }
-.blackoutTitle span { color: var(--sat-paper); font: inherit; letter-spacing: inherit; }
-.blackoutEnding { max-width: 30ch; font-size: clamp(17px, 1.7vw, 25px); font-weight: 720; line-height: 1.55; word-break: keep-all; }
-.blackoutNext { margin-top: 30px; }
-.race[data-beat='3'] .blackout { opacity: 1; }
+/* .blackout* 제거(2026-08-19) — 'TO BE CONTINUED'를 210px로 세운 전면 무대였다.
+   화면 하나를 통째로 쓰면서 페이지의 마지막 인상을 대회 날짜(11 / 15)에서 빼앗았고,
+   같은 화면 안에 'TO BE CONTINUED'가 두 번 나오게 만들었다.
+   예고 한 줄은 .raceNext 로 살아 있다. */
 
 /* Footer */
 .footer {
@@ -836,7 +799,6 @@
 
   .raceCopy { max-width: none; }
   .raceCopy > p { font-size: clamp(18px, 2vw, 28px); white-space: nowrap; }
-  .blackoutEnding { max-width: none; white-space: nowrap; }
 
   /* 푸터도 같은 규칙 — max-width: 15ch가 "토요일에만 뛰는 건 아닙니다."를 접고 있었다 */
   .footer p { max-width: none; white-space: nowrap; font-size: min(5.2vw, 44px); }
@@ -884,9 +846,10 @@
   .crewHeader { grid-template-columns: 1fr; gap: 20px; }
   .crewHeader h2 { font-size: clamp(52px, 14vw, 74px); }
   .crewHeader > p { justify-self: start; max-width: 29ch; font-size: 15px; }
-  .assembleWord { font-size: clamp(60px, 18vw, 92px); }
 
   .crewList {
+    /* 1열 세로 목록이라 여기서는 무대를 채우는 게 맞다 — 가운데 정렬을 되돌린다 */
+    --list-center: 0px;
     left: 20px;
     right: 20px;
     top: 224px;
@@ -916,17 +879,11 @@
   .crewFinale { left: 20px; right: 20px; }
   .totals { border-top-width: 2px; }
   .totalNote { text-align: left; }
-  .totals p {
-    min-height: 96px;
-    padding: 20px 0;
-    border-right: 0;
-    border-bottom: 1px solid rgba(10,16,19,.22);
-    flex-direction: row;
-    align-items: center;
-  }
-  .totals p:not(:first-child) { padding-left: 0; }
-  .totals strong { font-size: clamp(30px, 9vw, 44px); }
-  .totals span { max-width: 13ch; text-align: right; font-size: 11px; line-height: 1.4; }
+  /* 걷어낸 3칸 표의 잔존 규칙 4개를 삭제했다(2026-08-19).
+     .totals strong 과 .totalKm strong 은 특이도가 같아 뒤에 있는 쪽이 이긴다 —
+     그래서 모바일에서 263.17 이 76px 대신 35~44px 로 눌리고 있었다.
+     구조를 바꿀 때 옛 선택자를 남기면 이렇게 조용히 되살아난다. */
+  .totalNote span { white-space: nowrap; }
   .crewStatus { max-width: 15ch; margin-bottom: 26px; font-size: clamp(22px, 6.4vw, 30px); }
   .crewStatus b::after { height: 3px; margin-top: 12px; }
 
@@ -938,13 +895,12 @@
     letter-spacing: -.12em;
     transform: translate3d(16vw, -50%, 0) scale(.74);
   }
-  .race[data-beat='2'] .raceDate { transform: translate3d(0, -93%, 0) scale(.78); }
+  .race[data-beat='2'] .raceDate,
+  .race[data-beat='3'] .raceDate { transform: translate3d(0, -93%, 0) scale(.78); }
   .raceBottom { left: 20px; right: 20px; bottom: max(72px, calc(env(safe-area-inset-bottom) + 58px)); grid-template-columns: 1fr; gap: 24px; }
   .raceCopy { justify-self: start; }
   /* 두 줄로 접히면 문장이 아니라 덩어리로 읽힌다. 폭에 맞춰 줄여 한 줄로 유지 */
   .raceCopy > p { max-width: none; white-space: nowrap; font-size: min(4.6vw, 29px); }
-  .blackout { padding-inline: 20px; }
-  .blackoutTitle { font-size: clamp(52px, 15vw, 66px); line-height: 1.06; letter-spacing: -.07em; }
 
   .footer { min-height: 65svh; grid-template-columns: 1fr; grid-template-rows: auto 1fr auto; padding: 72px 20px max(36px, env(safe-area-inset-bottom)); }
   /* 이 폭에서는 이 블록이 실제로 매칭된다 — 한 줄 유지 규칙을 여기 둔다 */
@@ -998,12 +954,6 @@
   .progress { display: none; }
 
   .crewStage { min-height: 115svh; }
-  /* 모션을 끄면 비트가 진행되지 않으므로, 사진은 그대로 두고 스크림을 마지막 비트 값으로 고정한다 */
-  .crewImage { opacity: 1 !important; transform: none !important; transition: none; }
-  .crewImage::after {
-    background: linear-gradient(180deg, rgba(212,205,196,.5) 0%, rgba(212,205,196,.36) 26%, rgba(212,205,196,.86) 62%, rgba(212,205,196,.96) 100%);
-  }
-  .assembleWord { display: none; }
 
   /* 단톡은 무대를 풀고 전부 펼쳐 보여준다 */
   .chatScene { min-height: 0; }
@@ -1030,7 +980,6 @@
   .crew[data-beat] .crewEntry { opacity: 1; transform: none; transition: none; }
   .crewFinale,
   .crew[data-beat] .crewFinale { position: relative; left: auto; right: auto; top: auto; margin-top: 30px; opacity: 1; transform: none; transition: none; }
-  .totals p { min-height: 90px; }
 
   .raceStage { min-height: 120svh; display: flex; flex-direction: column; justify-content: space-between; }
   .raceTop,
@@ -1040,16 +989,18 @@
   .raceBottom,
   .race[data-beat] .raceBottom { position: relative; left: auto; right: auto; top: auto; bottom: auto; opacity: 1; filter: none; transform: none; transition: none; }
   .raceDate { margin: auto 0; }
-  .blackout,
-  .race[data-beat] .blackout { position: relative; inset: auto; min-height: 48svh; margin: 60px -20px -58px; opacity: 1; transition: none; }
 }
 
 /* ── 단톡방 발췌 ──────────────────────────────────────────────────────────
    sticky 무대에서 뭉치가 한 개씩 교체되고, 뭉치 안에서는 메시지가 한 줄씩 도착한다.
    전부 --scene-progress(0~1)의 함수라 되감으면 대화도 되감긴다. JS 추가 없음. */
 .chatScene {
-  /* 뭉치 하나당 약 0.85 화면. 읽을 시간은 주되 스크롤이 늘어지지 않는 선 */
-  min-height: calc(var(--burst-count) * 85svh);
+  /* 뭉치 하나당 0.68 화면(2026-08-19에 0.85에서 내렸다).
+     전에는 줄 간격이 고정값(.085)이라 줄이 적은 뭉치일수록 마지막 줄이 일찍 끝나고
+     남은 스크롤이 통째로 죽었다 — 세 줄짜리 뭉치는 span 의 뒤쪽 70%가 빈 화면이었다.
+     이제 줄 간격을 줄 수로 나눠(chat-log.tsx) 어느 뭉치든 같은 지점에서 끝나므로
+     뭉치당 높이를 줄여도 읽을 시간이 줄지 않는다. */
+  min-height: calc(var(--burst-count) * 68svh);
   background: var(--sat-bluehour);
   color: var(--sat-paper);
 }
@@ -1109,7 +1060,9 @@
 
 /* 줄 j 는 뭉치 안에서 순서대로 도착한다 */
 .burstLines li {
-  --line-start: calc(.10 + var(--line-index) * .085);
+  /* --line-start 는 chat-log.tsx 가 줄마다 계산해 넣는다(줄 수로 나눈 값).
+     여기 있는 건 그 값이 없을 때의 안전값일 뿐이다 */
+  --line-start: .10;
   --in: clamp(0, calc((var(--local) - var(--line-start)) * 14), 1);
   display: flex;
   flex-wrap: wrap;
@@ -1125,6 +1078,7 @@
 .who {
   order: 1;
   flex: none;
+  font-style: normal;
   width: 68px;
   color: var(--sat-concrete);
   font: 600 11px/1.9 var(--sat-mono);
@@ -1136,8 +1090,10 @@
 .who[data-repeat] { visibility: hidden; }
 .mine .who { display: none; }
 
+/* blockquote 는 기본 margin 이 크고 cite 는 이탤릭이다. 인용 시맨틱만 취하고 모양은 우리가 정한다 */
 .bubble {
   order: 2;
+  margin: 0;
   max-width: min(62ch, 78%);
   padding: 12px 18px;
   border: 1px solid rgba(212,205,196,.2);
@@ -1158,8 +1114,9 @@
   order: 3;
   flex: none;
   padding-bottom: 3px;
-  color: rgba(151,167,192,.62);
-  font: 600 10px/1 var(--sat-mono);
+  /* .62 는 #133142 위에서 3.06:1 이라 AA(4.5:1) 미달이었다. .82 로 올려 4.6:1 */
+  color: rgba(151,167,192,.82);
+  font: 600 11px/1 var(--sat-mono);
   letter-spacing: .08em;
   font-variant-numeric: tabular-nums;
 }
@@ -1224,7 +1181,10 @@
   padding: 0;
   list-style: none;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* 3열(2026-08-19). 4열 시절엔 대표컷이 2×2를 먹어 총 11칸이 되면서
+     마지막 12번째 칸이 빈 채로 남았고, 사진 한 장이 화면의 1/4밖에 안 됐다.
+     3열 + 대표컷 세로 2칸 = 정확히 9칸(3×3)이라 빈칸이 없고, 장당 크기가 33% 커진다. */
+  grid-template-columns: repeat(3, 1fr);
   gap: clamp(8px, 1vw, 14px);
 }
 
@@ -1242,14 +1202,20 @@
   object-fit: cover;
 }
 
-/* 유일하게 새벽에 찍힌 컷 — 이 페이지 컨셉과 맞는 한 장이라 두 칸을 준다 */
-.wideCell { grid-column: span 2; grid-row: span 2; }
-.wideCell img { aspect-ratio: auto; }
+/* 대표컷은 가로가 아니라 '세로로' 두 칸을 쓴다 — 원본 아홉 장이 전부 폰 세로 사진이라
+   가로로 늘리면 인물이 잘린다. 세로 2칸은 원본 비율에 가깝다 */
+.featureCell { grid-row: span 2; }
+.featureCell img { aspect-ratio: auto; }
 
 @media (max-width: 900px) {
+  /* 2열에서는 대표컷도 한 칸으로 돌린다 — 세로 2칸을 유지하면 총 9칸이 되어
+     마지막 줄에 빈칸이 생긴다. 벽에 걸린 여덟 장 ÷ 2열 = 정확히 네 줄 */
   .wall { grid-template-columns: repeat(2, 1fr); }
+  .featureCell { grid-row: span 1; }
+  .featureCell img { aspect-ratio: 3 / 4; }
 }
 
-/* 사진은 아홉 장 전부 흑백이다 — 서로 다른 날·다른 폰이라 색온도가 제각각이고,
-   그대로 두면 한 세트로 묶이지 않는다. 원본 색은 건드리지 않았다(되돌리려면 이 한 줄만 지운다). */
+/* 벽에 걸린 여덟 장은 전부 흑백이다(원본 아홉 장 중 일출컷은 히어로로 올라갔다) —
+   서로 다른 날·다른 폰이라 색온도가 제각각이고, 그대로 두면 한 세트로 묶이지 않는다.
+   원본 파일 색은 건드리지 않았다. 되돌리려면 이 한 줄만 지운다. */
 .wall img { filter: grayscale(1) contrast(1.06); }
