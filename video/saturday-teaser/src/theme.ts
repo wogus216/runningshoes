@@ -17,7 +17,7 @@ export const MONO = 'ui-monospace, "SFMono-Regular", Menlo, monospace';
 
 // 로스터·카피는 여기 적지 않는다. 앱 정본(src/lib/data/challenge/saturday.ts)에서 온다.
 // 기존 사용처가 theme에서 MEMBERS를 가져오고 있어 통로만 유지한다.
-export { MEMBERS, DISTANCE_TOTALS, RACE_META, SATURDAY_COPY, CREW_SIZE, REEL_PHOTOS, ARCHIVE_COUNTS } from "./shared";
+export { MEMBERS, DISTANCE_TOTALS, RACE_META, SATURDAY_COPY, CREW_SIZE, REEL_PHOTOS, ARCHIVE_COUNTS, ARCHIVE_LINES } from "./shared";
 
 export const REEL = {
   fps: 30,
