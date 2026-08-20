@@ -21,8 +21,18 @@ export const REEL_S1 = {
   chat2: { from: 144, duration: 84 },
   chat3: { from: 228, duration: 84 },
   montage: { from: 312, duration: 68 },
-  race: { from: 380, duration: 70 },
+  // 70 → 150 (2026-08-20). 엔드카드(주소)가 이 씬의 로컬 프레임 62 에서 뜨는데
+  // 70프레임짜리 씬에서는 8프레임 = 0.27초만 보였다 — 주소를 읽을 시간이 아니다.
+  // 150 이면 완전히 뜬 상태로 2.6초. 24자짜리 주소를 읽기에 이 정도는 필요하다.
+  // (날짜 11/15 구간을 줄여서 벌지 않았다 — 거기가 이 영상의 결론이다)
+  race: { from: 380, duration: 150 },
 } as const;
+
+/**
+ * 이 릴스만의 총 길이. REEL.durationInFrames(450)를 그대로 쓰면 안 된다 —
+ * 그 값은 MISSION 00 티저 것이라, 여기서 늘리면 그쪽에 빈 프레임이 붙는다.
+ */
+export const REEL_S1_DURATION = REEL_S1.race.from + REEL_S1.race.duration;
 
 export const SaturdayReelS1: React.FC = () => {
   return (

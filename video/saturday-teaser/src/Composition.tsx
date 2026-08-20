@@ -2,7 +2,7 @@ import { Composition, Folder } from "remotion";
 import { SaturdayMission00 } from "./SaturdayMission00";
 import { SaturdayMission00Web } from "./SaturdayMission00Web";
 import { SaturdayPlate } from "./SaturdayPlate";
-import { SaturdayReelS1 } from "./SaturdayReelS1";
+import { REEL_S1_DURATION, SaturdayReelS1 } from "./SaturdayReelS1";
 import { AssembleScene } from "./scenes/AssembleScene";
 import { ColdOpenScene } from "./scenes/ColdOpenScene";
 import { HookScene } from "./scenes/HookScene";
@@ -29,7 +29,7 @@ export const SaturdayCompositions: React.FC = () => {
       <Composition
         id="SaturdayReel-S1"
         component={SaturdayReelS1}
-        durationInFrames={REEL.durationInFrames}
+        durationInFrames={REEL_S1_DURATION}
         {...base}
       />
       <Composition
