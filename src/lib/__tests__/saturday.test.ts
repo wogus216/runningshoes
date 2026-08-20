@@ -26,15 +26,27 @@ describe('쎄러데이 MISSION 00 정본', () => {
   it('대회 날짜와 핵심 카피가 MISSION 00 정본과 일치한다', () => {
     expect(RACE_META.dateIso).toBe('2026-11-15');
     expect(RACE_META.datePoster).toBe('11 / 15');
-    expect(SATURDAY_COPY.hero.hook).toBe('신청 완료했습니다!!');
+    expect(SATURDAY_COPY.hero.hook).toBe('일곱 명이 신청했다.');
     expect(SATURDAY_COPY.crew.title).toContain('일곱 명');
   });
 
-  it('히어로에서 가장 큰 글자는 지어낸 카피가 아니라 단톡 원문이다', () => {
-    // 이 페이지의 전제는 '원본 그대로'다. 첫 화면만 카피라이팅이면 전제가 깨진다.
-    // hook 을 고치려면 실제로 그렇게 말한 줄이 단톡에 있어야 한다.
-    const everyLine = SATURDAY_CHAT.flatMap((burst) => burst.lines.map((line) => line.text));
-    expect(everyLine).toContain(SATURDAY_COPY.hero.hook);
+  it('화면 카피가 말하는 인원과 실제 로스터가 어긋나지 않는다', () => {
+    // 예전엔 "여덟 명"으로 적혀 있던 게 로스터만 고쳐지고 카피에 남아 있었다.
+    // 인원을 바꾸면 이 테스트가 먼저 깨지도록 둔다.
+    const corpus = JSON.stringify(SATURDAY_COPY);
+    const 한글수사 = ['하나', '둘', '셋', '넷', '다섯', '여섯', '일곱', '여덟', '아홉', '열'];
+    const 등장 = 한글수사.filter((word) => corpus.includes(`${word} 명`));
+    expect(등장).toEqual(['일곱']);
+    expect(SATURDAY_CREW).toHaveLength(7);
+  });
+
+  it('단톡 발췌는 원문 그대로다 — 히어로와 달리 여기는 손대지 않는다', () => {
+    // 문장을 고쳐 쓰기 시작하면 이 섹션이 존재할 이유가 사라진다.
+    // 뭉치마다 '펀치라인'은 정확히 하나이거나 없어야 한다(둘이면 편집한 흔적이다).
+    for (const burst of SATURDAY_CHAT) {
+      expect(burst.lines.filter((line) => line.punch).length).toBeLessThanOrEqual(1);
+      expect(burst.lines.length).toBeGreaterThan(0);
+    }
   });
 
   it('여덟 명 시절 placeholder가 정본 어디에도 남아 있지 않다', () => {
