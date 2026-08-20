@@ -32,7 +32,8 @@
     "still:web": "remotion still SaturdayMission00-Web output/saturday-mission-00-web-poster.png --frame=34",
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
-    "render:s1": "remotion render SaturdayReel-S1 output/saturday-reel-s1.mp4 --crf=26"
+    "render:s1": "remotion render SaturdayReel-S1 output/saturday-reel-s1.mp4 --crf=26",
+    "still:story": "remotion still SaturdayStory-EndCard output/saturday-story-endcard.png"
   },
   "sideEffects": [
     "*.css"

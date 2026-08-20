@@ -3,6 +3,7 @@ import { SaturdayMission00 } from "./SaturdayMission00";
 import { SaturdayMission00Web } from "./SaturdayMission00Web";
 import { SaturdayPlate } from "./SaturdayPlate";
 import { REEL_S1_DURATION, SaturdayReelS1 } from "./SaturdayReelS1";
+import { StoryEndCard } from "./StoryEndCard";
 import { AssembleScene } from "./scenes/AssembleScene";
 import { ColdOpenScene } from "./scenes/ColdOpenScene";
 import { HookScene } from "./scenes/HookScene";
@@ -25,6 +26,14 @@ export const SaturdayCompositions: React.FC = () => {
         durationInFrames={REEL.durationInFrames}
         {...base}
       />
+      {/* 스토리 마지막 장 — 링크 스티커를 얹을 판. 영상이 아니라 스틸이라 1프레임이다 */}
+      <Composition
+        id="SaturdayStory-EndCard"
+        component={StoryEndCard}
+        durationInFrames={1}
+        {...base}
+      />
+
       {/* 시즌 1 릴스 — 실제 대화·실제 사진. MISSION 00 티저와 별개 물건이다 */}
       <Composition
         id="SaturdayReel-S1"
