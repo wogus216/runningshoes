@@ -34,19 +34,29 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
   const title = `${event.name} | ${event.location}`;
 
-  // 실전 정보가 있으면 description에 포함
+  // description 앞부분은 검색 스니펫으로 잘려 나가는 자리다(대략 155자).
+  // 그 자리에 난이도·출발시각 같은 스펙을 넣으면 "지금 신청할 수 있나"라는 질문에
+  // 답하지 못한 채 잘린다 — 접수 상태를 먼저 놓고, 대회 고유 설명이 그 뒤를 잇게 한다.
   const descParts = [
-    `${event.name} - ${formatDate(event.date)}, ${event.location}.`,
-    `${event.distances.join('/')} 코스.`,
+    `${event.name} - ${formatDate(event.date)}, ${event.location}. ${event.distances.join('/')} 코스.`,
   ];
-  if (event.courseInfo) {
-    descParts.push(`난이도 ${event.courseInfo.difficulty}, ${event.courseInfo.terrain} 코스.`);
+  if (event.status === '접수중') {
+    descParts.push(
+      event.registrationEnd
+        ? `접수중 (${formatDate(event.registrationEnd)} 마감).`
+        : '접수중 (마감일 없이 선착순).',
+    );
+  } else if (event.status === '접수예정') {
+    descParts.push(
+      event.registrationStart ? `접수 ${formatDate(event.registrationStart)} 시작.` : '접수 예정.',
+    );
+  } else if (event.status === '마감') {
+    descParts.push('접수 마감.');
   }
-  if (event.raceInfo?.entryFees?.[0]) {
-    descParts.push(`참가비 ${formatFee(event.raceInfo.entryFees[0].fee)}~.`);
-  }
-  if (event.raceInfo?.startTime) {
-    descParts.push(`출발 ${event.raceInfo.startTime}.`);
+  // "~"는 "부터"로 읽히므로 배열 첫 항목(대개 풀코스=최고가)이 아니라 최저가를 쓴다
+  const fees = event.raceInfo?.entryFees;
+  if (fees?.length) {
+    descParts.push(`참가비 ${formatFee(Math.min(...fees.map((f) => f.fee)))}~.`);
   }
   descParts.push(event.description || '한국 마라톤 대회 정보.');
   const description = descParts.join(' ');
