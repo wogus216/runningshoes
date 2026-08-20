@@ -1,0 +1,10 @@
+node_modules
+dist
+.DS_Store
+.env
+
+# 렌더 산출물 — 커밋하지 않는다. output 41MB / build 26MB 이고,
+# 어차피 npm run render:s1 · still:story 로 언제든 다시 뽑는다.
+# (경고: 예전 규칙이 'out' 이라 'output' 이 안 걸리고 있었다)
+output
+build
