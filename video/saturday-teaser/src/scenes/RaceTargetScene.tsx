@@ -1,6 +1,6 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import { FilmTexture } from "../components/FilmTexture";
-import { COLORS, FONT, MONO, RACE_META, SATURDAY_COPY } from "../theme";
+import { ARCHIVE_LINES, COLORS, FONT, MONO, RACE_META, SATURDAY_COPY } from "../theme";
 
 export const RaceTargetScene: React.FC = () => {
   const frame = useCurrentFrame();
@@ -106,21 +106,55 @@ export const RaceTargetScene: React.FC = () => {
           }),
         }}
       >
-        {/* 엔드카드. 2026-08-20 오전에 주소(allrunabout.com/saturday)로 바꿨다가
-            같은 날 되돌렸다 — 운영자가 링크를 인스타 스티커/버튼으로 붙이기로 해서,
-            영상 안에 주소를 박을 이유가 없어졌다.
-            ⚠️ 대신 mp4 가 인스타 밖(카톡 등)으로 재공유되면 출처가 남지 않는다.
-               그 트레이드오프는 알고 내린 결정이다. */}
-        <div style={{ color: "rgba(212,205,196,.5)", fontFamily: MONO, fontSize: 20, fontWeight: 600, letterSpacing: "0.2em" }}>
+        {/* 엔드카드 — 하루 사이 세 번 바뀐 자리라 이유를 남긴다.
+              (1) TO BE CONTINUED 128px  → 15초를 다 본 사람에게 갈 곳이 없었다
+              (2) allrunabout.com/saturday → 링크를 인스타 스티커로 붙이기로 해서 뺐다
+              (3) 지금: 분량 + '프로필 링크에서'
+
+            (1)로 되돌렸던 게 잘못이었다. 'TO BE CONTINUED'는 "다음을 기다려라"인데
+            릴스의 목적은 "지금 가라"라서 문구가 목적과 반대였다.
+            '없는 버튼을 가리키면 거짓말'이라는 논리는 '눌러서 보기 ↓' 에만 해당하지,
+            사실 진술(단톡 N줄·사진 M장)에는 해당하지 않았다.
+
+            프로필 링크는 릴스에서 유일하게 항상 존재하는 클릭 경로다 —
+            URL 을 영상에 박지 않으면서 '어디로'에 답할 수 있는 유일한 말.
+            '다음 편이 있다'는 뜻은 위 킥커(첫 번째 이야기)와 아래 race.next 가 이미 한다. */}
+        <div style={{ color: COLORS.signal, fontFamily: MONO, fontSize: 24, fontWeight: 600, letterSpacing: "0.18em" }}>
           첫 번째 이야기
         </div>
-        <div style={{ marginTop: 38, color: COLORS.signal, fontFamily: FONT, fontSize: 128, fontWeight: 920, lineHeight: 0.82, letterSpacing: "-0.075em" }}>
-          TO BE
+        {ARCHIVE_LINES.map((line, index) => (
+          <div
+            key={line}
+            style={{
+              marginTop: index === 0 ? 38 : 0,
+              color: COLORS.paperDeep,
+              fontFamily: FONT,
+              fontSize: 92,
+              fontWeight: 920,
+              lineHeight: 1.08,
+              letterSpacing: "-0.06em",
+              wordBreak: "keep-all",
+            }}
+          >
+            {line}
+          </div>
+        ))}
+        <div
+          style={{
+            marginTop: 48,
+            paddingBottom: 14,
+            width: "fit-content",
+            borderBottom: `3px solid ${COLORS.signal}`,
+            color: COLORS.signal,
+            fontFamily: FONT,
+            fontSize: 46,
+            fontWeight: 800,
+            letterSpacing: "-0.03em",
+          }}
+        >
+          프로필 링크에서
         </div>
-        <div style={{ color: COLORS.paper, fontFamily: FONT, fontSize: 112, fontWeight: 920, lineHeight: 0.88, letterSpacing: "-0.07em" }}>
-          CONTINUED
-        </div>
-        <div style={{ marginTop: 52, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
+        <div style={{ marginTop: 44, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
           {SATURDAY_COPY.race.next}
         </div>
       </AbsoluteFill>

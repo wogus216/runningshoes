@@ -1,5 +1,5 @@
 import { AbsoluteFill, Img, staticFile } from "remotion";
-import { ARCHIVE_COUNTS, COLORS, FONT, MONO } from "./theme";
+import { ARCHIVE_LINES, COLORS, FONT, MONO } from "./theme";
 
 /**
  * 스토리 마지막 장 — 링크 스티커를 얹을 판.
@@ -55,23 +55,24 @@ export const StoryEndCard: React.FC = () => {
           첫 번째 이야기
         </div>
 
-        {/* 숫자는 정본에서 센다 — 단톡 줄이나 사진이 늘면 이 문장이 따라온다 */}
-        <div
-          style={{
-            marginTop: 38,
-            fontFamily: FONT,
-            fontSize: 86,
-            fontWeight: 920,
-            lineHeight: 1.16,
-            letterSpacing: "-0.055em",
-            color: COLORS.paperDeep,
-            wordBreak: "keep-all",
-          }}
-        >
-          단톡 {ARCHIVE_COUNTS.chatLines}줄, 사진 {ARCHIVE_COUNTS.photos}장.
-          <br />
-          지금 다 있습니다.
-        </div>
+        {/* 릴스 엔드카드와 같은 두 줄이다(ARCHIVE_LINES). 한쪽만 고치면 두 판이 다른 말을 한다 */}
+        {ARCHIVE_LINES.map((line, index) => (
+          <div
+            key={line}
+            style={{
+              marginTop: index === 0 ? 38 : 0,
+              fontFamily: FONT,
+              fontSize: 86,
+              fontWeight: 920,
+              lineHeight: 1.16,
+              letterSpacing: "-0.055em",
+              color: COLORS.paperDeep,
+              wordBreak: "keep-all",
+            }}
+          >
+            {line}
+          </div>
+        ))}
 
         <div
           style={{
