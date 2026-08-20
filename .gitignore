@@ -53,6 +53,7 @@ public/sitemap*.xml
 /CLAUDE.md
 /src/data/running-shoe-review-skill.json
 /src/data/energy-gel-review-skill.json
+/.claude/settings.json
 /.claude/commands/publish-from-url.md
 /.claude/skills/daily-blog-topic/
 /.claude/skills/shoe-comparison-post/

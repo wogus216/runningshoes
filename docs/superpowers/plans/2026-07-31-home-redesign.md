@@ -12,7 +12,7 @@
 
 이 섹션의 요구사항은 **모든 태스크에 암묵적으로 포함**된다.
 
-- **작업 위치**: 워크트리 `/Users/kwonjaehyeon/Programming/sancho/runningshoes/.worktrees/redesign-b` (브랜치 `redesign-b`).
+- **작업 위치**: 워크트리 `.worktrees/redesign-b` (브랜치 `redesign-b`).
   main 머지와 기준선 검증은 2026-07-31에 완료했다 — Task 6은 Step 3부터 진행한다
 - **팔레트**: Warm Performance 고정. 새 메인 유채색 추가 금지
   ```
@@ -333,7 +333,7 @@ console.log(JSON.stringify(out));
 - [ ] **Step 2: 스크립트 실행해 좌표 확보**
 
 ```bash
-cd /Users/kwonjaehyeon/Programming/sancho/runningshoes
+cd "$(git rev-parse --show-toplevel)"
 node .omc/design/silhouette-derivation.mjs > .omc/design/outlines.json
 node -e "const o=require('./.omc/design/outlines.json'); Object.entries(o).forEach(([k,v])=>console.log(k, v.w+'x'+v.h, '샘플', v.top.filter(Boolean).length))"
 ```

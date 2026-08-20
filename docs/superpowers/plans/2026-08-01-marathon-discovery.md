@@ -12,7 +12,7 @@
 
 이 섹션은 **모든 태스크에 암묵적으로 포함**된다.
 
-- **작업 위치**: `main` 브랜치의 메인 워크트리 `/Users/kwonjaehyeon/Programming/sancho/runningshoes`. 홈 리디자인용 `redesign-b`는 이미 머지·배포됐다
+- **작업 위치**: `main` 브랜치의 메인 워크트리(리포 루트). 홈 리디자인용 `redesign-b`는 이미 머지·배포됐다
 - **스펙**: `docs/superpowers/specs/2026-08-01-marathon-discovery-design.md`
 - **팔레트 토큰명** — 시안·스펙의 이름이 아니라 **실제 `globals.css` 이름**을 쓴다. 미정의 `var()`는 조용히 무효가 되어 빌드·tsc·lint 어디서도 안 잡힌다:
   ```

@@ -18,7 +18,9 @@
 
 set -euo pipefail
 
-REPO="/Users/kwonjaehyeon/Programming/sancho/runningshoes"
+# 스크립트 위치에서 리포 루트를 역산한다 — launchd 가 어디서 부르든 동작하고,
+# 개인 홈 경로를 공개 리포에 박지 않는다. POPULAR_REPO 로 덮어쓸 수 있다.
+REPO="${POPULAR_REPO:-$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)}"
 TARGET_PATH="src/lib/data/popular.ts"
 BRANCH="main"
 DRY_RUN="${1:-}"

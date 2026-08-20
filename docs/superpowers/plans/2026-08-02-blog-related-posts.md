@@ -12,7 +12,7 @@
 
 이 섹션은 **모든 태스크에 암묵적으로 포함**된다.
 
-- **작업 위치**: `main` 브랜치 메인 워크트리 `/Users/kwonjaehyeon/Programming/sancho/runningshoes`
+- **작업 위치**: `main` 브랜치 메인 워크트리(리포 루트)
 - **스펙**: `docs/superpowers/specs/2026-08-02-blog-related-posts-design.md`
 - **`getRelatedPosts` / `getRelatedPostsMeta`의 시그니처를 바꾸지 않는다** — 호출처(`src/app/(detail)/blog/[slug]/page.tsx:81`)가 그대로 돌아야 한다
 - **`getRelatedPosts`는 서버에서만 호출한다.** `'use client'` 컴포넌트가 모듈 스코프에서 데이터 getter를 부르면 풀 블로그 데이터가 클라이언트 번들에 실린다 — 이 리포에 실측 712KB 사례가 있다

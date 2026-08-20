@@ -12,7 +12,7 @@
 
 이 섹션은 **모든 태스크에 암묵적으로 포함**된다.
 
-- **작업 위치**: `main` 브랜치 메인 워크트리 `/Users/kwonjaehyeon/Programming/sancho/runningshoes`
+- **작업 위치**: `main` 브랜치 메인 워크트리(리포 루트)
 - **스펙**: `docs/superpowers/specs/2026-08-02-blog-thumbnail-design.md`
 - **팔레트 토큰명** — 시안 이름이 아니라 **실제 `globals.css` 이름**을 쓴다. 미정의 `var()`는 조용히 무효가 되어 빌드·tsc·lint 어디서도 안 잡힌다:
   ```
