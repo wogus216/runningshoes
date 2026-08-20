@@ -17,8 +17,20 @@ import {
   SATURDAY_CREW,
   SATURDAY_PHOTOS,
 } from "../../../src/lib/data/challenge/saturday";
+import { SITE_URL } from "../../../src/lib/constants";
 
 export { RACE_META, SATURDAY_CHAT, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
+
+/**
+ * 엔드카드에 찍히는 주소.
+ *
+ * 왜 필요한가: 인스타 릴스는 영상에도 캡션에도 클릭되는 링크를 못 넣는다.
+ * 프로필 바이오가 유일한 클릭 경로라 3홉이고, 무엇보다 이 mp4 가 카톡으로
+ * 재공유되면 출처가 통째로 사라진다 — 그때 남는 단서는 화면에 찍힌 주소뿐이다.
+ *
+ * 프로토콜은 뺀다. 읽고 외우거나 타이핑할 대상이지 복사할 대상이 아니다.
+ */
+export const REEL_SITE_LABEL = `${SITE_URL.replace(/^https?:\/\//, "")}/saturday`;
 
 /**
  * 릴스는 15초라 단톡 뭉치를 통째로 못 넣는다. 줄을 골라 쓰되 두 가지는 지킨다 —
