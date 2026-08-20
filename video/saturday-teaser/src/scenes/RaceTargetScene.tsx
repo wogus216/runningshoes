@@ -1,6 +1,6 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import { FilmTexture } from "../components/FilmTexture";
-import { ARCHIVE_LINES, COLORS, FONT, MONO, RACE_META, SATURDAY_COPY } from "../theme";
+import { COLORS, FONT, MONO, RACE_META, SATURDAY_COPY } from "../theme";
 
 export const RaceTargetScene: React.FC = () => {
   const frame = useCurrentFrame();
@@ -106,55 +106,37 @@ export const RaceTargetScene: React.FC = () => {
           }),
         }}
       >
-        {/* 엔드카드 — 하루 사이 세 번 바뀐 자리라 이유를 남긴다.
-              (1) TO BE CONTINUED 128px  → 15초를 다 본 사람에게 갈 곳이 없었다
+        {/* 엔드카드 — 하루 사이 네 번 바뀐 자리라 이유를 남긴다.
+              (1) TO BE CONTINUED 128px    → 다 본 사람에게 갈 곳이 없었다
               (2) allrunabout.com/saturday → 링크를 인스타 스티커로 붙이기로 해서 뺐다
-              (3) 지금: 분량 + '프로필 링크에서'
+              (3) (1)로 복귀              → 시제가 반대였다("기다려라" vs "지금 가라")
+              (4) 지금: '자세한 내용은 사이트에서'
 
-            (1)로 되돌렸던 게 잘못이었다. 'TO BE CONTINUED'는 "다음을 기다려라"인데
-            릴스의 목적은 "지금 가라"라서 문구가 목적과 반대였다.
-            '없는 버튼을 가리키면 거짓말'이라는 논리는 '눌러서 보기 ↓' 에만 해당하지,
-            사실 진술(단톡 N줄·사진 M장)에는 해당하지 않았다.
-
-            프로필 링크는 릴스에서 유일하게 항상 존재하는 클릭 경로다 —
-            URL 을 영상에 박지 않으면서 '어디로'에 답할 수 있는 유일한 말.
-            '다음 편이 있다'는 뜻은 위 킥커(첫 번째 이야기)와 아래 race.next 가 이미 한다. */}
+            (4)에서 배운 것 — 분량을 세어 보여주는 안(단톡 42줄·사진 8장)도,
+            경로를 지정하는 안(프로필 링크에서)도 마지막 3초에는 말이 많았다.
+            여기서 필요한 건 '더 있다'와 '어디' 둘뿐이고, 한 문장이면 된다.
+            '다음 편이 있다'는 뜻은 위 킥커(첫 번째 이야기)와 아래 race.next 가 이미 한다.
+            ⚠️ 주소를 안 박았으므로 mp4 가 인스타 밖으로 재공유되면 출처가 안 남는다. */}
         <div style={{ color: COLORS.signal, fontFamily: MONO, fontSize: 24, fontWeight: 600, letterSpacing: "0.18em" }}>
           첫 번째 이야기
         </div>
-        {ARCHIVE_LINES.map((line, index) => (
-          <div
-            key={line}
-            style={{
-              marginTop: index === 0 ? 38 : 0,
-              color: COLORS.paperDeep,
-              fontFamily: FONT,
-              fontSize: 92,
-              fontWeight: 920,
-              lineHeight: 1.08,
-              letterSpacing: "-0.06em",
-              wordBreak: "keep-all",
-            }}
-          >
-            {line}
-          </div>
-        ))}
         <div
           style={{
-            marginTop: 48,
-            paddingBottom: 14,
-            width: "fit-content",
-            borderBottom: `3px solid ${COLORS.signal}`,
-            color: COLORS.signal,
+            marginTop: 40,
+            color: COLORS.paperDeep,
             fontFamily: FONT,
-            fontSize: 46,
-            fontWeight: 800,
-            letterSpacing: "-0.03em",
+            fontSize: 96,
+            fontWeight: 920,
+            lineHeight: 1.08,
+            letterSpacing: "-0.06em",
+            wordBreak: "keep-all",
           }}
         >
-          프로필 링크에서
+          자세한 내용은
+          <br />
+          사이트에서
         </div>
-        <div style={{ marginTop: 44, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
+        <div style={{ marginTop: 52, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
           {SATURDAY_COPY.race.next}
         </div>
       </AbsoluteFill>

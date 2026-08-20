@@ -1,7 +1,6 @@
 import { Audio } from "@remotion/media";
 import { AbsoluteFill, Sequence, staticFile } from "remotion";
 import { FriendsScene } from "./scenes/FriendsScene";
-import { NameOriginScene } from "./scenes/NameOriginScene";
 import { OpenShotScene } from "./scenes/OpenShotScene";
 import { PhotoMontageScene } from "./scenes/PhotoMontageScene";
 import { RaceTargetScene } from "./scenes/RaceTargetScene";
@@ -27,11 +26,12 @@ export const REEL_S1 = {
   // 일출 사진이 이 릴스에서 유일한 새벽이고 팔레트가 나온 컷이라 볼 시간을 준다.
   open: { from: 0, duration: 78 },
   friends: { from: 78, duration: 78 },
-  name: { from: 156, duration: 78 },
-  montage: { from: 234, duration: 132 },
+  // 이름 유래 씬(03)은 뺐다(2026-08-20) — 영상에서 크루명 설명이 어색하다는 판단.
+  // 그 사실은 페이지 푸터가 맡는다(SATURDAY_COPY.footer.nameOrigin).
+  montage: { from: 156, duration: 132 },
   // 150 → 120. 엔드카드에서 주소를 뺐으므로 읽을 양이 줄었다.
   // 그래도 원래 값(70)으로는 못 돌아간다 — 카드가 로컬 62 에 뜨는데 70이면 0.27초다.
-  race: { from: 366, duration: 120 },
+  race: { from: 288, duration: 120 },
 } as const;
 
 /**
@@ -54,15 +54,11 @@ export const SaturdayReelS1: React.FC = () => {
         <FriendsScene />
       </Sequence>
 
-      <Sequence from={REEL_S1.name.from} durationInFrames={REEL_S1.name.duration} name="03 — 이름이 왜 쎄러데이인지">
-        <NameOriginScene />
-      </Sequence>
-
-      <Sequence from={REEL_S1.montage.from} durationInFrames={REEL_S1.montage.duration} name="04 — 사진 몽타주">
+      <Sequence from={REEL_S1.montage.from} durationInFrames={REEL_S1.montage.duration} name="03 — 사진 몽타주">
         <PhotoMontageScene />
       </Sequence>
 
-      <Sequence from={REEL_S1.race.from} durationInFrames={REEL_S1.race.duration} name="05 — 11/15 · 주소">
+      <Sequence from={REEL_S1.race.from} durationInFrames={REEL_S1.race.duration} name="04 — 11/15 · 마무리">
         <RaceTargetScene />
       </Sequence>
 
