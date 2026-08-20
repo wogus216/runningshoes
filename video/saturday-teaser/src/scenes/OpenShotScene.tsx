@@ -21,7 +21,9 @@ export const OpenShotScene: React.FC = () => {
             height: "100%",
             objectFit: "cover",
             objectPosition: "52% 46%",
-            transform: `scale(${interpolate(frame, [0, 48], [1.04, 1.12])})`,
+            /* 씬이 48 → 78프레임으로 늘어서 밀어 넣는 구간도 같이 늘렸다.
+               [0,48] 그대로 두면 뒤 30프레임이 계속 확대돼 끝에서 과하게 당겨진다 */
+            transform: `scale(${interpolate(frame, [0, 78], [1.04, 1.13])})`,
             filter: "grayscale(1) contrast(1.12)",
             opacity: interpolate(frame, [0, 10], [0, 1], { extrapolateRight: "clamp" }),
           }}

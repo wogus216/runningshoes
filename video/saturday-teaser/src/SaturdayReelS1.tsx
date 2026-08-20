@@ -23,11 +23,15 @@ import { COLORS } from "./theme";
  * 흐름: 해보다 먼저 → 누구 → 이름 → 지금까지 → 11/15 → 주소
  */
 export const REEL_S1 = {
-  open: { from: 0, duration: 48 },
-  friends: { from: 48, duration: 78 },
-  name: { from: 126, duration: 78 },
-  montage: { from: 204, duration: 132 },
-  race: { from: 336, duration: 150 },
+  // 48 → 78 (2026-08-20). 1.6초는 첫 컷을 보기도 전에 넘어갔다 —
+  // 일출 사진이 이 릴스에서 유일한 새벽이고 팔레트가 나온 컷이라 볼 시간을 준다.
+  open: { from: 0, duration: 78 },
+  friends: { from: 78, duration: 78 },
+  name: { from: 156, duration: 78 },
+  montage: { from: 234, duration: 132 },
+  // 150 → 120. 엔드카드에서 주소를 뺐으므로 읽을 양이 줄었다.
+  // 그래도 원래 값(70)으로는 못 돌아간다 — 카드가 로컬 62 에 뜨는데 70이면 0.27초다.
+  race: { from: 366, duration: 120 },
 } as const;
 
 /**

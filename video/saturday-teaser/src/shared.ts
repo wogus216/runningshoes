@@ -16,22 +16,17 @@ import {
   SATURDAY_CREW,
   SATURDAY_PHOTOS,
 } from "../../../src/lib/data/challenge/saturday";
-import { SITE_URL } from "../../../src/lib/constants";
 
 // SATURDAY_CHAT 은 더 이상 안 가져온다 — 릴스에서 단톡 세 뭉치를 뺐다(2026-08-20).
 // 단톡은 페이지가 맡는다. 되살릴 일이 생기면 이 커밋을 되돌리면 REEL_PICKS 까지 함께 온다.
 export { RACE_META, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
 
 /**
- * 엔드카드에 찍히는 주소.
- *
- * 왜 필요한가: 인스타 릴스는 영상에도 캡션에도 클릭되는 링크를 못 넣는다.
- * 프로필 바이오가 유일한 클릭 경로라 3홉이고, 무엇보다 이 mp4 가 카톡으로
- * 재공유되면 출처가 통째로 사라진다 — 그때 남는 단서는 화면에 찍힌 주소뿐이다.
- *
- * 프로토콜은 뺀다. 읽고 외우거나 타이핑할 대상이지 복사할 대상이 아니다.
+ * REEL_SITE_LABEL(엔드카드 주소)은 2026-08-20 에 넣었다가 같은 날 뺐다 —
+ * 링크를 인스타 스티커/버튼으로 붙이기로 해서 영상 안에 박을 이유가 없어졌다.
+ * 되살릴 일이 생기면 SITE_URL 에서 파생시킬 것. 영상에 도메인을 직접 적으면
+ * 나중에 도메인을 옮길 때 여기만 조용히 남는다.
  */
-export const REEL_SITE_LABEL = `${SITE_URL.replace(/^https?:\/\//, "")}/saturday`;
 
 /**
  * 릴스 몽타주에 쓰는 실제 사진 — 흑백 처리는 씬에서 한다.
