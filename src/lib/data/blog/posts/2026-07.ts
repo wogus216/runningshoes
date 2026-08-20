@@ -10,7 +10,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/osaka-marathon-2027-entry-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-31',
-    updatedAt: '2026-08-15',
+    updatedAt: '2026-08-20',
     category: 'news' as const,
     readingTime: 7,
     tags: ['오사카 마라톤', '오사카 마라톤 2027', '해외 마라톤 접수', '일본 마라톤', 'JTB 스포츠 스테이션', '마라톤 접수'],
@@ -52,7 +52,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수 마감 임박</strong> — <strong>8월 28일(금) 17시(일본시간)</strong>까지입니다. 정원 28,420명을 넘으면 추첨이라 먼저 낸다고 유리하지도, 미룬다고 득이 될 것도 없습니다. 다만 <strong>마감 시각을 놓치면 그걸로 끝</strong>입니다. 공교롭게 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>도 같은 8/28에 닫힙니다.</div>
+<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수 마감 임박</strong> — <strong>8월 28일(금) 17시(일본시간)</strong>까지입니다. 정원 28,420명을 넘으면 추첨이라 먼저 낸다고 유리하지도, 미룬다고 득이 될 것도 없습니다. 다만 <strong>마감 시각을 놓치면 그걸로 끝</strong>입니다. 공교롭게 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>도 같은 8/28에 닫힙니다. 추첨 없이 확정하고 싶다면 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>이 대안입니다 — 해외 몫 3,000명이 선착순이고 9월 30일까지 열려 있습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>

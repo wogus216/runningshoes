@@ -26,7 +26,7 @@ export const decemberEvents: MarathonEvent[] = [
       startTime: '07:30',
     },
     registrationStart: '2026-08-24',
-    lastVerified: '2026-08-12',
+    lastVerified: '2026-08-20',
   },
   {
     id: 'geumsan-goldrun-marathon-2026',

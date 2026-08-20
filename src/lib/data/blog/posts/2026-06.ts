@@ -2195,13 +2195,13 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'sonkeechung-peace-marathon-2026',
     slug: 'sonkeechung-peace-marathon-2026',
-    title: '2026 손기정평화마라톤 접수 시작 — 8월 9일 오픈, 선착순 마감 | 임진각 이전·6km 신설·참가비 총정리',
+    title: '손기정마라톤 2026 접수 진행 중 — 마감일 없는 선착순, 작년엔 일주일 만에 2만 명 | 임진각 이전·6km 신설·참가비 총정리',
     description:
-      '2026 손기정평화마라톤(손기정 마라톤) 접수가 8월 9일(일) 오전 9시 열렸습니다 — 마감일 없는 선착순이라 2025년(9/13 오픈, 약 2만 명 일주일 내 마감)처럼 빨리 찰 수 있습니다. 대회는 11월 15일(일) 오전 9시 30분 출발, 대회장은 고양 제2자유로에서 임진각(파주)으로 이전. 6km 종목이 신설돼 4개 종목이 됐고 참가비는 전 종목 1만원 인상(풀 7만·하프 6.5만·10K 6만·6K 5만)됐습니다.',
+      '2026 손기정평화마라톤(손기정 마라톤) 접수가 8월 9일(일) 오전 9시에 열려 지금도 진행 중입니다 — 마감일이 따로 없는 선착순이라 정원이 차는 순간 끝나고, 2025년엔 오픈 일주일 안에 약 2만 명이 찼습니다. 신청 후 24시간 안에 결제하지 않으면 내역이 삭제되는 점도 함정입니다. 대회는 11월 15일(일) 오전 9시 30분 출발이고, 대회장이 고양 제2자유로에서 임진각(파주)으로 이전했습니다. 6km가 신설돼 4개 종목이 됐고 참가비는 전 종목 1만원 인상(풀 7만·하프 6.5만·10K 6만·6K 5만)됐습니다.',
     thumbnail: '/images/blog/sonkeechung-peace-marathon-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-08-10',
+    updatedAt: '2026-08-20',
     category: 'news' as const,
     readingTime: 8,
     tags: ['손기정평화마라톤', '손기정 마라톤', '손기정마라톤', '임진각 마라톤', '파주 마라톤', '제2자유로', '평화마라톤', '고양 마라톤', '가을 마라톤', '11월 마라톤', '풀코스 마라톤', '손기정'],
@@ -5370,7 +5370,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-08-15',
+    updatedAt: '2026-08-20',
     category: 'news' as const,
     readingTime: 10,
     tags: ['도쿄마라톤', '도쿄마라톤 2027', '도쿄마라톤 접수', '도쿄마라톤 추첨', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
@@ -5378,6 +5378,10 @@ export const posts_2026_06: BlogPost[] = [
 <div class="deadline-strip">
   <span class="dl-badge">🔴 접수중</span>
   <span class="dl-text">도쿄마라톤 2027 일반추첨 — <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST) 마감</strong> · 첫날 정원 초과로 추첨 확정 · 결과 ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</span>
+</div>
+
+<div class="callout info">
+  <p><strong>추첨을 기다리기 싫다면</strong> — 같은 겨울 시즌의 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>은 해외 거주자 몫 3,000명을 <strong>선착순</strong>으로 받고 접수도 <strong>9월 30일</strong>까지 열려 있습니다. 도쿄 결과 발표(9월 18일)를 확인한 뒤에 넣는 순서가 이론상 가능하지만, 잔여 수량이 공개되지 않아 그때까지 자리가 남으리라는 보장은 없습니다.</p>
 </div>
 
 <div class="tldr">
