@@ -12,14 +12,26 @@
 
 import {
   RACE_META,
+  SATURDAY_CHAT,
   SATURDAY_COPY,
   SATURDAY_CREW,
   SATURDAY_PHOTOS,
 } from "../../../src/lib/data/challenge/saturday";
 
-// SATURDAY_CHAT 은 더 이상 안 가져온다 — 릴스에서 단톡 세 뭉치를 뺐다(2026-08-20).
-// 단톡은 페이지가 맡는다. 되살릴 일이 생기면 이 커밋을 되돌리면 REEL_PICKS 까지 함께 온다.
+// 릴스 본편에서는 단톡을 뺐다(2026-08-20). SATURDAY_CHAT 을 다시 가져오는 건
+// 대사를 쓰기 위해서가 아니라 '분량'을 세기 위해서다 — 아래 ARCHIVE_COUNTS.
 export { RACE_META, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
+
+/**
+ * 사이트에 지금 올라가 있는 분량. 스토리 스틸이 이걸 말한다.
+ *
+ * 세는 값이라 절대 손으로 적지 않는다 — 단톡 줄이나 사진이 늘면 문구가 따라와야 하고,
+ * 실제로 "여덟 명"이 로스터만 고쳐진 채 카피에 남아 있던 사고가 이 프로젝트에 있었다.
+ */
+export const ARCHIVE_COUNTS = {
+  chatLines: SATURDAY_CHAT.reduce((total, burst) => total + burst.lines.length, 0),
+  photos: SATURDAY_PHOTOS.length,
+} as const;
 
 /**
  * REEL_SITE_LABEL(엔드카드 주소)은 2026-08-20 에 넣었다가 같은 날 뺐다 —
