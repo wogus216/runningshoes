@@ -90,7 +90,7 @@
 .brand,
 .missionStatus {
   pointer-events: auto;
-  font: 600 10px/1 var(--sat-mono);
+  font: 600 11px/1 var(--sat-mono);
   letter-spacing: .16em;
 }
 
@@ -232,7 +232,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font: 500 10px/1 var(--sat-mono);
+  font: 500 11px/1 var(--sat-mono);
   letter-spacing: .15em;
   color: rgba(212,205,196,.48);
 }
@@ -349,7 +349,7 @@
   display: flex;
   gap: 16px;
   color: rgba(212,205,196,.58);
-  font: 500 10px/1 var(--sat-mono);
+  font: 500 11px/1 var(--sat-mono);
   letter-spacing: .11em;
   opacity: 0;
   transform: translateY(14px);
@@ -368,7 +368,7 @@
   align-items: center;
   gap: 10px;
   color: rgba(212,205,196,.42);
-  font: 500 8px/1 var(--sat-mono);
+  font: 500 11px/1 var(--sat-mono);
   letter-spacing: .15em;
   writing-mode: vertical-rl;
 }
@@ -411,7 +411,7 @@
 .lightKicker {
   display: block;
   margin-bottom: 18px;
-  font: 600 10px/1 var(--sat-mono);
+  font: 600 11px/1 var(--sat-mono);
   letter-spacing: .17em;
 }
 
@@ -491,7 +491,7 @@
 .crewEntry:last-child { border-right: 0; }
 .crewEntry strong { font-size: clamp(28px, 3vw, 48px); line-height: 1.16; letter-spacing: -.045em; }
 .crewIndex,
-.crewDistance { font: 600 9px/1 var(--sat-mono); letter-spacing: .11em; }
+.crewDistance { font: 600 11px/1 var(--sat-mono); letter-spacing: .11em; }
 /* margin-bottom: auto 였다 — 칸이 늘어나던 시절 번호를 천장에 붙이던 규칙이고,
    이제 칸이 내용 높이라 고정 간격이 맞다 */
 .crewIndex { margin-bottom: 22px; color: var(--sat-signal-dark); }
@@ -512,7 +512,7 @@
 }
 
 .crewDistance i {
-  font: 600 9px/1 var(--sat-mono);
+  font: 600 11px/1 var(--sat-mono);
   font-style: normal;
   letter-spacing: .14em;
   color: var(--sat-signal-dark);
@@ -653,7 +653,7 @@
 .raceTop p {
   color: rgba(212,205,196,.48);
   text-align: right;
-  font: 500 9px/1.6 var(--sat-mono);
+  font: 500 11px/1.6 var(--sat-mono);
   letter-spacing: .13em;
 }
 
@@ -725,7 +725,7 @@
   display: block;
   margin-bottom: 12px;
   color: var(--sat-signal);
-  font: 600 10px/1 var(--sat-mono);
+  font: 600 11px/1 var(--sat-mono);
   letter-spacing: .16em;
 }
 
@@ -738,7 +738,7 @@
 
 .raceCopy { max-width: 34ch; justify-self: end; }
 .raceCopy > p { font-size: clamp(20px, 2.2vw, 32px); font-weight: 760; line-height: 1.48; word-break: keep-all; }
-.raceCopy > span { display: block; margin-top: 14px; color: rgba(212,205,196,.5); font: 500 9px/1.5 var(--sat-mono); letter-spacing: .1em; }
+.raceCopy > span { display: block; margin-top: 14px; color: rgba(212,205,196,.5); font: 500 11px/1.5 var(--sat-mono); letter-spacing: .1em; }
 /* 예고 한 줄. blackout 무대를 걷어내면서 여기로 내려왔다 —
    .nextMission 은 어디서도 쓰이지 않던 죽은 규칙이라 그 자리를 대신한다.
    10px mono 대신 읽히는 크기로 둔다. 각주가 아니라 문장이다. */
@@ -776,7 +776,7 @@
 
 .footer > div { display: flex; flex-direction: column; }
 .footer strong { font-size: clamp(54px, 8vw, 120px); line-height: 1.04; letter-spacing: -.06em; }
-.footer span { margin-top: 18px; font: 600 10px/1 var(--sat-mono); letter-spacing: .17em; }
+.footer span { margin-top: 18px; font: 600 11px/1 var(--sat-mono); letter-spacing: .17em; }
 
 /* 이름 유래. mono 각주로 깔면 또 못 읽으므로 본문 크기로 둔다 —
    오른쪽 농담('토요일에만 뛰는 건 아닙니다.')의 전제라 읽혀야 값을 한다 */
@@ -790,8 +790,11 @@
   letter-spacing: -.01em;
   word-break: keep-all;
 }
-.footer p { max-width: 15ch; justify-self: end; text-align: right; font-size: clamp(24px, 3.4vw, 52px); font-weight: 820; line-height: 1.3; letter-spacing: -.05em; }
-.footer a { min-height: 44px; display: inline-flex; align-items: center; align-self: end; width: fit-content; color: rgba(10,16,19,.62); font: 600 10px/1 var(--sat-mono); letter-spacing: .11em; text-decoration: none; border-bottom: 1px solid rgba(10,16,19,.35); }
+/* align-self: end — 농담은 유래 '다음'에 읽혀야 한다.
+   위에 붙어 있으면 데스크톱에서 눈이 큰 글자 둘(쎄러데이 → 토요일에만…)을 먼저 훑어
+   전제(유래)를 건너뛰고 펀치라인부터 읽는다. 모바일은 어차피 세로로 쌓여 순서가 맞다. */
+.footer p { max-width: 15ch; justify-self: end; align-self: end; text-align: right; font-size: clamp(24px, 3.4vw, 52px); font-weight: 820; line-height: 1.3; letter-spacing: -.05em; }
+.footer a { min-height: 44px; display: inline-flex; align-items: center; align-self: end; width: fit-content; color: rgba(10,16,19,.62); font: 600 11px/1 var(--sat-mono); letter-spacing: .11em; text-decoration: none; border-bottom: 1px solid rgba(10,16,19,.35); }
 
 /* 데스크톱: 핵심 문장은 접지 않는다.
    폭 제한(max-width/ch)과 좁은 그리드 칸이 줄바꿈의 원인이라 둘 다 푼다.
@@ -852,7 +855,7 @@
   .heroTurn { max-width: 13ch; font-size: clamp(27px, 7.2vw, 38px); bottom: 13%; }
   .heroHook { max-width: 8ch; font-size: clamp(50px, 14vw, 72px); bottom: 38%; }
   .heroFinal { max-width: 17ch; font-size: clamp(21px, 5.6vw, 30px); bottom: 12%; }
-  .heroMeta { left: 20px; right: 20px; bottom: max(104px, calc(env(safe-area-inset-bottom) + 92px)); flex-wrap: wrap; font-size: 8px; line-height: 1.5; }
+  .heroMeta { left: 20px; right: 20px; bottom: max(104px, calc(env(safe-area-inset-bottom) + 92px)); flex-wrap: wrap; font-size: 11px; line-height: 1.5; }
   .scrollCue { display: none; }
   .progress { left: 20px; right: 20px; }
 
@@ -886,7 +889,7 @@
   .crewIndex { margin: 0; }
   .crewDistance { margin: 0; }
   .crewDistance b { font-size: 17px; }
-  .crewDistance i { font-size: 8px; }
+  .crewDistance i { font-size: 10px; }
 
   .crew[data-beat='2'] .crewHeader { opacity: 0; pointer-events: none; }
   .crewFinale { left: 20px; right: 20px; }
@@ -901,7 +904,7 @@
   .crewStatus b::after { height: 3px; margin-top: 12px; }
 
   .raceTop { align-items: flex-start; }
-  .raceTop p { font-size: 7px; }
+  .raceTop p { font-size: 11px; }
   .raceDate {
     left: 20px;
     font-size: clamp(106px, 32vw, 150px);
@@ -921,16 +924,16 @@
 }
 
 @media (max-width: 430px) {
-  .brand { font-size: 8px; letter-spacing: .13em; }
+  .brand { font-size: 10px; letter-spacing: .13em; }
   .brand i { width: 20px; }
-  .missionStatus { font-size: 8px; }
+  .missionStatus { font-size: 10px; }
   .heroStage { padding-top: max(92px, calc(env(safe-area-inset-top) + 76px)); }
   .heroMeta span:last-child { display: none; }
   .crewStage { padding-top: max(86px, calc(env(safe-area-inset-top) + 72px)); }
   .crewHeader h2 { font-size: clamp(48px, 13.6vw, 60px); }
   .crewList { top: 206px; }
   .raceStage { padding-top: max(90px, calc(env(safe-area-inset-top) + 76px)); }
-  .lightKicker { font-size: 8px; }
+  .lightKicker { font-size: 10px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -1075,7 +1078,7 @@
   padding-bottom: clamp(8px, 1.4vh, 14px);
   border-bottom: 1px solid rgba(212,205,196,.22);
   color: var(--sat-concrete);
-  font: 600 10px/1.5 var(--sat-mono);
+  font: 600 11px/1.5 var(--sat-mono);
   letter-spacing: .16em;
 }
 
@@ -1158,7 +1161,7 @@
   gap: 12px;
   margin: clamp(10px, 1.6vh, 20px) 0 4px;
   color: var(--sat-concrete);
-  font: 600 10px/1 var(--sat-mono);
+  font: 600 11px/1 var(--sat-mono);
   letter-spacing: .2em;
 }
 
@@ -1197,7 +1200,7 @@
 .punchLine { margin-block: 6px; }
 
 @media (max-width: 640px) {
-  .who { width: 52px; font-size: 10px; }
+  .who { width: 52px; font-size: 11px; }
   .bubble { max-width: 84%; }
 }
 
@@ -1269,31 +1272,11 @@
    원본 파일 색은 건드리지 않았다. 되돌리려면 이 한 줄만 지운다. */
 .wall img { filter: grayscale(1) contrast(1.06); }
 
-/* ── 모바일 사용성 (2026-08-19, 실사용 피드백 반영) ────────────────────────
-   파일 맨 뒤에 둔다 — 앞선 폭 미디어쿼리들을 덮어야 하고, "모바일에서만 다른 것"을
-   한군데 모아 두면 다음 사람이 여기만 보면 된다. */
+/* ── 모바일 (2026-08-19, 실사용 피드백) ─────────────────────────────────
+   글자 크기는 이제 여기서 안 만진다. 2026-08-20 에 mono 라벨 14곳을 전부 11px 로
+   올리면서(데스크톱 포함) 각 미디어쿼리의 7~8px 축소 규칙도 그 자리에서 고쳤다.
+   "줄여놨다가 맨 뒤에서 되돌리는" 구조를 없앤 것 — 값을 두 군데서 관리하면 반드시 어긋난다. */
 @media (max-width: 900px) {
   /* 손가락 스와이프 한 번이 400~800px 이라 데스크톱과 같은 높이면 뭉치가 그냥 지나간다 */
   .chatScene { min-height: calc(var(--burst-count) * 105svh); }
-
-  /* 8px·7px 로 줄여놓은 규칙들을 되돌린다. 화면이 작다고 글자까지 작을 이유는 없다 —
-     오히려 반대다. 특히 아래 둘은 이 페이지에서 제일 중요한 사실인데 제일 작았다. */
-  .heroMeta { font-size: 11px; }        /* 2026.11.15 · 손기정평화마라톤 · 임진각·파주 */
-  .raceTop p { font-size: 11px; }       /* 임진각 · 파주 — 7px 였다 */
-
-  /* 뭉치 라벨은 대사의 문맥('겁이 나기 시작했다')이라 본문에 준한다 */
-  .burstLabel { font-size: 11px; }
-  .dayBreak { font-size: 11px; }
-
-  /* 라벨·장식성 텍스트는 10px 까지만 — 본문과 위계는 유지하되 7~8px 은 없앤다 */
-  .brand,
-  .missionStatus,
-  .lightKicker,
-  .darkKicker,
-  .footer span,
-  .footer a,
-  .raceCopy > span { font-size: 10px; }
-
-  .crewIndex { font-size: 10px; }
-  .crewDistance i { font-size: 9px; }   /* 숫자 옆 단위라 여기만 더 작게 둔다 */
 }

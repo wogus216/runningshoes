@@ -9,8 +9,11 @@ export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
   const pathname = usePathname();
   const isDetailPage = pathname.startsWith('/shoes/');
+  const isSaturdayPage = pathname.startsWith('/saturday');
 
   useEffect(() => {
+    if (isSaturdayPage) return;
+
     const toggleVisibility = () => {
       // 400px 이상 스크롤하면 버튼 표시
       if (window.scrollY > 400) {
@@ -25,7 +28,9 @@ export function ScrollToTop() {
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
-  }, []);
+  }, [isSaturdayPage]);
+
+  if (isSaturdayPage) return null;
 
   const scrollToTop = () => {
     window.scrollTo({
