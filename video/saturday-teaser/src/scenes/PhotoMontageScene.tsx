@@ -2,7 +2,10 @@ import { AbsoluteFill, Img, interpolate, staticFile, useCurrentFrame } from "rem
 import { FilmTexture } from "../components/FilmTexture";
 import { COLORS, FONT, MONO, REEL_PHOTOS } from "../theme";
 
-const PER_SHOT = 17; // 4장 × 17프레임 ≈ 2.2초
+// 6장 × 22프레임 = 132프레임 ≈ 4.4초. 전에는 4장 × 17 = 2.3초였다 —
+// 단톡을 뺀 자리를 여기 줬다. 장수는 REEL_PHOTOS 가 정하므로 나눗셈으로 받는다.
+const TOTAL_FRAMES = 132;
+const PER_SHOT = Math.floor(TOTAL_FRAMES / REEL_PHOTOS.length);
 
 /**
  * 크루가 실제로 찍은 사진 몽타주.

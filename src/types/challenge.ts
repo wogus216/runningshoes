@@ -73,6 +73,7 @@ export interface SaturdayTeaserCopy {
     title: string;
     support: string;
     statusLine: string;
+    bond: string;      // 이 일곱 명이 어떤 사이인지. 릴스 도입부의 전제다
   };
   race: {
     eyebrow: string;

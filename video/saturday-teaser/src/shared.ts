@@ -12,14 +12,15 @@
 
 import {
   RACE_META,
-  SATURDAY_CHAT,
   SATURDAY_COPY,
   SATURDAY_CREW,
   SATURDAY_PHOTOS,
 } from "../../../src/lib/data/challenge/saturday";
 import { SITE_URL } from "../../../src/lib/constants";
 
-export { RACE_META, SATURDAY_CHAT, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
+// SATURDAY_CHAT 은 더 이상 안 가져온다 — 릴스에서 단톡 세 뭉치를 뺐다(2026-08-20).
+// 단톡은 페이지가 맡는다. 되살릴 일이 생기면 이 커밋을 되돌리면 REEL_PICKS 까지 함께 온다.
+export { RACE_META, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS };
 
 /**
  * 엔드카드에 찍히는 주소.
@@ -33,32 +34,23 @@ export { RACE_META, SATURDAY_CHAT, SATURDAY_COPY, SATURDAY_CREW, SATURDAY_PHOTOS
 export const REEL_SITE_LABEL = `${SITE_URL.replace(/^https?:\/\//, "")}/saturday`;
 
 /**
- * 릴스는 15초라 단톡 뭉치를 통째로 못 넣는다. 줄을 골라 쓰되 두 가지는 지킨다 —
- * 문장을 고쳐 쓰지 않고, 원본 안에서의 순서를 바꾸지 않는다.
- * 어느 뭉치의 몇 번째 줄인지 인덱스로 박아둬서 정본과 대조할 수 있게 한다.
+ * 릴스 몽타주에 쓰는 실제 사진 — 흑백 처리는 씬에서 한다.
+ *
+ * 2026-08-20 에 4장 → 6장. 단톡 세 뭉치(8.8초, 릴스의 절반)를 빼면서 생긴 자리를
+ * 사진에 줬다. 15초짜리에서 남의 대화를 세 화면 연속으로 읽히는 것보다,
+ * 이 사람들이 실제로 같이 뛰어온 장면을 보여주는 쪽이 짧은 영상에서 더 빨리 읽힌다.
+ *
+ * selfie-four 는 여기 없다 — FriendsScene 배경으로 쓰므로 중복을 피한다.
+ * sunrise-bridge 는 여는 컷(hero-sunrise)이라 역시 뺀다.
  */
-const REEL_PICKS = [
-  { burst: "signup", lines: [3, 4, 5] },  // 취소할걸 / 나도 취소할까… / 신청 완료했습니다!!
-  { burst: "fee", lines: [1, 5, 6] },     // 용돈 다 떨어졌는데 / 부가세만이라도 / 아이스크림…
-  { burst: "fear", lines: [1, 2, 5] },    // 버려지면 어케 완주함? / 앰뷸 탈 수 있나? / 그냥 믿고 따라와
+export const REEL_PHOTOS = [
+  "spring-road",
+  "summer-uphill",
+  "mirror",
+  "track-pose",
+  "blue-sky-walk",
+  "race-beach",
 ] as const;
-
-export const REEL_CHAT = REEL_PICKS.map((pick) => {
-  const source = SATURDAY_CHAT.find((b) => b.id === pick.burst);
-  if (!source) throw new Error(`릴스가 참조하는 단톡 뭉치가 없다: ${pick.burst}`);
-  return {
-    id: source.id,
-    label: source.label,
-    lines: pick.lines.map((i) => {
-      const line = source.lines[i];
-      if (!line) throw new Error(`${pick.burst} 에 ${i}번 줄이 없다`);
-      return line;
-    }),
-  };
-});
-
-/** 릴스 몽타주에 쓰는 실제 사진 — 흑백 처리는 씬에서 한다 */
-export const REEL_PHOTOS = ["spring-road", "selfie-four", "track-pose", "race-beach"] as const;
 
 /** 영상 장면이 쓰는 표시용 멤버 목록 — 순서·인원은 앱 정본을 그대로 따른다 */
 export const MEMBERS = SATURDAY_CREW.map((member, index) => ({
