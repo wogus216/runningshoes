@@ -1,6 +1,6 @@
 import { AbsoluteFill, Easing, interpolate, useCurrentFrame } from "remotion";
 import { FilmTexture } from "../components/FilmTexture";
-import { COLORS, FONT, MONO, RACE_META, REEL_SITE_LABEL, SATURDAY_COPY } from "../theme";
+import { COLORS, FONT, MONO, RACE_META, SATURDAY_COPY } from "../theme";
 
 export const RaceTargetScene: React.FC = () => {
   const frame = useCurrentFrame();
@@ -106,36 +106,21 @@ export const RaceTargetScene: React.FC = () => {
           }),
         }}
       >
-        {/* 엔드카드(2026-08-20 교체). 전에는 'TO BE CONTINUED' 가 128px 로 서 있었다 —
-            15초를 다 본 사람에게 마지막으로 남는 게 장식 영문이면 갈 곳이 없다.
-            페이지에서도 같은 이유로 걷어낸 물건이다. '다음 편이 있다'는 뜻은
-            아래 race.next 한 줄이 이미 하고 있으니 큰 자리는 주소에 준다. */}
+        {/* 엔드카드. 2026-08-20 오전에 주소(allrunabout.com/saturday)로 바꿨다가
+            같은 날 되돌렸다 — 운영자가 링크를 인스타 스티커/버튼으로 붙이기로 해서,
+            영상 안에 주소를 박을 이유가 없어졌다.
+            ⚠️ 대신 mp4 가 인스타 밖(카톡 등)으로 재공유되면 출처가 남지 않는다.
+               그 트레이드오프는 알고 내린 결정이다. */}
         <div style={{ color: "rgba(212,205,196,.5)", fontFamily: MONO, fontSize: 20, fontWeight: 600, letterSpacing: "0.2em" }}>
           첫 번째 이야기
         </div>
-        <div style={{ marginTop: 40, color: COLORS.paperDeep, fontFamily: FONT, fontSize: 92, fontWeight: 920, lineHeight: 1.02, letterSpacing: "-0.06em" }}>
-          단톡 그대로,
+        <div style={{ marginTop: 38, color: COLORS.signal, fontFamily: FONT, fontSize: 128, fontWeight: 920, lineHeight: 0.82, letterSpacing: "-0.075em" }}>
+          TO BE
         </div>
-        <div style={{ color: COLORS.paperDeep, fontFamily: FONT, fontSize: 92, fontWeight: 920, lineHeight: 1.02, letterSpacing: "-0.06em" }}>
-          사진 그대로.
+        <div style={{ color: COLORS.paper, fontFamily: FONT, fontSize: 112, fontWeight: 920, lineHeight: 0.88, letterSpacing: "-0.07em" }}>
+          CONTINUED
         </div>
-        {/* 주소는 mono 로 둔다 — 문장이 아니라 '입력하는 것'으로 읽혀야 한다 */}
-        <div
-          style={{
-            marginTop: 46,
-            paddingBottom: 14,
-            width: "fit-content",
-            borderBottom: `3px solid ${COLORS.signal}`,
-            color: COLORS.signal,
-            fontFamily: MONO,
-            fontSize: 42,
-            fontWeight: 700,
-            letterSpacing: "0.01em",
-          }}
-        >
-          {REEL_SITE_LABEL}
-        </div>
-        <div style={{ marginTop: 44, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
+        <div style={{ marginTop: 52, color: "rgba(212,205,196,.45)", fontFamily: MONO, fontSize: 18, fontWeight: 600, letterSpacing: "0.18em" }}>
           {SATURDAY_COPY.race.next}
         </div>
       </AbsoluteFill>
