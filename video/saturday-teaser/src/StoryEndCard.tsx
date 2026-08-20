@@ -55,7 +55,9 @@ export const StoryEndCard: React.FC = () => {
           첫 번째 이야기
         </div>
 
-        {/* 릴스 엔드카드와 같은 두 줄이다(ARCHIVE_LINES). 한쪽만 고치면 두 판이 다른 말을 한다 */}
+        {/* 숫자는 정본에서 센다(ARCHIVE_LINES) — 단톡 줄이나 사진이 늘면 다시 뽑을 때 따라온다.
+            릴스 엔드카드는 이 두 줄을 안 쓴다: 거긴 '자세한 내용은 사이트에서' 한 문장이고,
+            여기는 탭할 이유를 대야 하는 자리라 분량을 말한다. */}
         {ARCHIVE_LINES.map((line, index) => (
           <div
             key={line}
