@@ -24,8 +24,10 @@ const TOP_PER_CATEGORY = 10; // 10C2=45 → 6 categories × 45 = 270 pairs max
  * 페어 구성 로직을 손볼 때는 GSC `page` 차원으로 죽은 URL을 먼저 확인할 것.**
  */
 const PINNED_PAIRS: readonly string[] = [
+  'adidas-adizero-evo-sl-vs-hoka-mach-6',
   'adidas-adizero-evo-sl-vs-nike-pegasus-plus',
   'adidas-adizero-evo-sl-vs-nike-rival-fly-4',
+  'adidas-boston-13-vs-hoka-mach-6',
   'adidas-boston-13-vs-nike-pegasus-plus',
   'adidas-boston-13-vs-nike-rival-fly-4',
   'adidas-supernova-rise-2-vs-brooks-ghost-17',
@@ -53,11 +55,14 @@ const PINNED_PAIRS: readonly string[] = [
   'asics-gel-venture-10-vs-salomon-ultra-glide-4',
   'asics-metafuji-trail-vs-hoka-speedgoat-6',
   'asics-metafuji-trail-vs-hoka-tecton-x-3',
+  'asics-novablast-5-vs-hoka-mach-6',
   'asics-novablast-5-vs-nike-pegasus-plus',
   'asics-novablast-5-vs-nike-rival-fly-4',
   'asics-sonicblast-vs-new-balance-sc-trainer-v3',
   'brooks-ghost-17-vs-nike-pegasus-42',
   'hoka-clifton-10-vs-nike-pegasus-42',
+  'hoka-mach-6-vs-li-ning-red-hare-9-pro',
+  'hoka-mach-6-vs-saucony-endorphin-speed-5',
   'hoka-speedgoat-6-vs-hoka-tecton-x-3',
   'hoka-speedgoat-6-vs-salomon-ultra-glide-4',
   'hoka-tecton-x-3-vs-nike-ultrafly',

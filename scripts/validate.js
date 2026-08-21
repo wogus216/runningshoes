@@ -79,6 +79,9 @@ brands.forEach(brand => {
     // `images:`(복수)는 콜론 뒤가 `[` 라 매칭되지 않음 — top-level `image:` 만 잡힘
     const im = block.match(/^ {2}image:\s*['"]([^'"]*)['"]/m);
     if (im) entry.image = im[1];
+    // category — 9번 고정 페어 검증에서 쓴다(페어는 같은 카테고리끼리만 생성됨)
+    const ct = block.match(/^ {2}category:\s*['"]([^'"]*)['"]/m);
+    if (ct) entry.category = ct[1];
   }
 
   // price 필드 추출
@@ -502,6 +505,49 @@ try {
   errors += m ? Number(m[2]) : 1;
   if (m) warnings += Number(m[3]);
 }
+
+// ===========================================
+// 9. pSEO 고정 페어 생존 검증
+// ===========================================
+// 왜 필요한가: `/vs` 페어는 카테고리별 `rating + valueRating` 상위 N(10) 조합이라
+// **신발을 추가하기만 해도 상위 N 구성이 바뀌어 기존 URL 이 조용히 404 가 된다.**
+// 2026-08-10 에 39개, 2026-08-21 에 9개(nike-ultrafly 4 · hoka-mach-6 5)가 이렇게 죽었고
+// 둘 다 사후에야 발견했다(GSC / 네이버 진단 CSV). `PINNED_PAIRS` 는 그 재발을 막는 장치인데,
+// **핀에 적힌 신발이 사라지거나 카테고리가 바뀌면 핀조차 조용히 무효가 된다** —
+// `pairs.ts` 의 생성 로직이 `continue` 로 건너뛰기 때문이다. 그 침묵을 여기서 깬다.
+console.log('\n━━━ 9. pSEO 고정 페어 검증 ━━━');
+
+const pairsSrc = fs.readFileSync(path.join(__dirname, '..', 'src/lib/pseo/pairs.ts'), 'utf-8');
+const pinnedBlock = pairsSrc.match(/const PINNED_PAIRS[^=]*=\s*\[([\s\S]*?)^\];/m);
+const pinnedPairs = pinnedBlock ? [...pinnedBlock[1].matchAll(/'([^']+)'/g)].map((m) => m[1]) : [];
+const categoryBySlug = new Map(shoeEntries.filter((e) => e.category).map((e) => [e.slug, e.category]));
+
+if (!pinnedPairs.length) {
+  error('PINNED_PAIRS 를 읽지 못했습니다 — pairs.ts 의 배열 형식이 바뀌었는지 확인하세요');
+} else {
+  let deadPinned = 0;
+  pinnedPairs.forEach((slug) => {
+    // pairs.ts 와 동일한 규칙: '-vs-' 로 정확히 2조각이어야 하고, 둘 다 존재하며 같은 카테고리
+    const parts = slug.split('-vs-');
+    if (parts.length !== 2) {
+      error(`[pseo] 고정 페어 slug 형식 오류: ${slug}`);
+      deadPinned++;
+      return;
+    }
+    const [a, b] = parts;
+    const ca = categoryBySlug.get(a);
+    const cb = categoryBySlug.get(b);
+    if (!ca || !cb) {
+      error(`[pseo] 고정 페어 /vs/${slug} 가 생성되지 않습니다 — ${!ca ? a : b} 신발이 없습니다 (색인된 URL 이 404 가 됩니다)`);
+      deadPinned++;
+    } else if (ca !== cb) {
+      error(`[pseo] 고정 페어 /vs/${slug} 가 생성되지 않습니다 — 카테고리 불일치(${a}=${ca} / ${b}=${cb})`);
+      deadPinned++;
+    }
+  });
+  if (deadPinned === 0) ok(`고정 페어 ${pinnedPairs.length}개 전부 생성 가능`);
+}
+console.log('');
 
 // ===========================================
 // 결과 요약
