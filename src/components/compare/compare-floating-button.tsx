@@ -14,8 +14,9 @@ export function CompareFloatingButton() {
 
   const isDetailPage = pathname.startsWith('/shoes/');
   const isComparePage = pathname.startsWith('/compare');
+  const isSaturdayPage = pathname.startsWith('/saturday');
 
-  if (compareList.length === 0 || isComparePage) return null;
+  if (compareList.length === 0 || isComparePage || isSaturdayPage) return null;
 
   return (
     <div
@@ -63,6 +64,7 @@ export function CompareFloatingButton() {
           {compareList.length >= 2 ? (
             <Link
               href={`/compare?shoes=${compareList.map(s => s.slug).join(',')}`}
+              rel="nofollow" // 비교함 이동은 UI 동작이지 색인 대상이 아니다 (canonical 은 /compare 고정)
               className="block w-full rounded-full bg-stone-950 py-2.5 text-center text-sm font-medium text-white transition hover:bg-stone-900"
             >
               비교하기

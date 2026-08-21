@@ -52,6 +52,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
         {selectedSlugs.length > 0 && (
           <Link
             href={getCompareUrl()}
+            rel="nofollow" // 비교함 이동은 UI 동작이지 색인 대상이 아니다 (canonical 은 /compare 고정)
             className="flex items-center gap-2 rounded bg-[var(--navy)] px-4 py-2 text-sm font-medium text-white transition hover:bg-[var(--navy-soft)]"
           >
             {selectedSlugs.length}개 비교하기
@@ -234,6 +235,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           </div>
           <Link
             href={getCompareUrl()}
+            rel="nofollow" // 비교함 이동은 UI 동작이지 색인 대상이 아니다 (canonical 은 /compare 고정)
             className="mt-4 flex w-full items-center justify-center gap-2 rounded-[4px] bg-primary py-3 text-sm font-medium text-white transition hover:opacity-90"
           >
             상세 비교 페이지로 이동

@@ -39,8 +39,15 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
           <p className="truncate text-xs text-tertiary">{shoe.name}</p>
         </div>
         <div className="flex flex-shrink-0 items-center gap-2">
+          {/*
+            rel="nofollow" — 이 링크는 사용자를 비교함으로 보내는 UI 동작이지 색인 대상이 아니다.
+            `/compare` 는 canonical 이 쿼리 없는 `/compare` 로 고정돼 있는데도 네이버가
+            `?shoes={slug}` 변형 50개를 개별 문서로 색인해 전부 같은 제목이 됐다
+            (2026-08-21 서치어드바이저 진단 CSV 확인). 크롤러가 따라가지 않게 막는다.
+          */}
           <Link
             href={`/compare?shoes=${shoe.slug}`}
+            rel="nofollow"
             className="rounded border border-stone-900/10 px-4 py-2.5 text-sm font-medium text-primary transition hover:bg-surface"
           >
             + 비교함
