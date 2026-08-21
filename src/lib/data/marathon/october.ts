@@ -35,10 +35,14 @@ export const octoberEvents: MarathonEvent[] = [
     distances: ['5K'],
     status: '접수예정',
     isMajor: false,
-    website: 'https://www.instagram.com/p/Db2ivlZAaS1/',
+    website: 'https://www.instagram.com/p/DcQrqwOAcMu/',
+    registrationStart: '2026-09-01',
+    lastVerified: '2026-08-21',
     description:
-      '롯데리아가 여는 러닝 페스티벌로, 슬로건은 "땀 흘린 만큼, 배부를 자격 있다"입니다. 종목은 5km 하나이며 버거메이트와 함께 뛰고 먹는 축제형 펀런 콘셉트입니다. 티켓 오픈 일정과 프로그램 상세는 추후 공개 예정이고, 예매는 롯데잇츠 앱에서 진행되므로 미리 회원가입을 해두는 것이 좋습니다. 8월 말 롯데잇츠에서 리아 불고기·리아 새우 구매 시 티켓 예매 혜택이 제공될 예정입니다. 참가비·정원·기록 측정 여부는 미공개입니다.',
-    lastVerified: '2026-08-12',
+      '롯데리아가 여는 러닝 페스티벌로, 슬로건은 "땀 흘린 만큼, 배부를 자격 있다"입니다. 티켓은 9월 1일(화) 오후 2시에 롯데잇츠 앱에서 참가권 형태로 열리며, 정원은 2,000명입니다. 종목은 5km 하나로 공식 안내는 "햄버거 라인을 따라 달리는 5km 버거 트랙"이라고 소개합니다. 버거메이트와 함께 뛰고 먹는 축제형 펀런 콘셉트라 기록 경쟁 대회가 아닙니다. 참가비와 프로그램 세부는 8월 21일 기준 여전히 미공개이며, 예매가 앱 전용이므로 오픈 전 회원가입을 마쳐두는 편이 안전합니다.',
+    raceInfo: {
+      expectedParticipants: 2000,
+    },
   },
   {
     id: 'siheung-half-marathon-2026',
