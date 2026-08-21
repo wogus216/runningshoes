@@ -56,7 +56,13 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   };
   const brandLabel = brandLabelMap[shoe.brand] || shoe.brand;
   // 카테고리를 제목 앞쪽 끌개로 — "안정화/쿠션화 러닝화" 류 카테고리 검색 매칭 + SERP 볼드/차별화 (GSC 2026-06-22: 신발상세 CTR이 블로그 리뷰의 1/3이라 끌개 보강)
-  const title = `${brandLabel} ${shoe.name} 후기 — ${shoe.category} 사이즈·발볼·장단점`;
+  //
+  // 카테고리 뒤에 실측 무게를 붙여 접미사를 고유화한다 — 종전에는 접미사가 카테고리 6종뿐이라
+  // 123개 상세가 6그룹으로 겹쳤고, 네이버 서치어드바이저가 "<title> 요소에 동일한 제목인
+  // 웹문서 다수 발견"으로 잡고 있었다(2026-08-21 확인). 무게는 사이즈·발볼과 같은 구매 판단
+  // 축이라 끌개로도 기능한다. 가격은 길이 때문에 뺐다(description 에 이미 있음).
+  const titleWeight = shoe.specs?.weight ? ` ${shoe.specs.weight}g` : '';
+  const title = `${brandLabel} ${shoe.name} 후기 — ${shoe.category}${titleWeight} 사이즈·발볼·장단점`;
 
   // 상세 설명 생성 (150-160자 권장)
   const specs = shoe.specs;
