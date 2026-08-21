@@ -117,6 +117,37 @@ function lastModFor(urlPath) {
   return buildTime;
 }
 
+/**
+ * 크롤러가 수집할 이유가 없는 경로.
+ *
+ * `*.json` 은 페이지가 아니라 클라이언트가 fetch 하는 데이터다(지연로드용 `route.ts`).
+ * 색인 대상이 아닌데 크롤러가 수집을 시도하면 실패로 기록된다 — 네이버 서치어드바이저가
+ * 이를 "접근 불가한 페이지(수집제한)" 4건으로 잡고 있었다(2026-08-21 확인).
+ * robots.txt 로 막으면 시도 자체를 안 한다. 브라우저 fetch 는 영향받지 않는다.
+ *
+ * llms.txt 는 **막지 않는다** — AI 크롤러가 읽어야 하는 파일이다. 다만 루트 관례로
+ * 찾으므로 sitemap 등록은 불필요해서 exclude 에만 넣는다.
+ */
+const DISALLOW = ["/api/*", "/blog-index.json", "/search-index.json", "/shoes-card.json"];
+
+/** robots.txt 에 개별 정책을 남기는 크롤러 — 전부 같은 규칙을 쓴다 */
+const ROBOT_AGENTS = [
+  "*",
+  "GPTBot",
+  "ChatGPT-User",
+  "OAI-SearchBot",
+  "ClaudeBot",
+  "Claude-Web",
+  "anthropic-ai",
+  "PerplexityBot",
+  "Perplexity-User",
+  "Google-Extended",
+  "Applebot-Extended",
+  "CCBot",
+  "Bytespider",
+  "Meta-ExternalAgent",
+];
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || "https://allrunabout.com",
@@ -126,28 +157,18 @@ module.exports = {
   changefreq: "weekly",
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ["/api/*", "/_next/*", "/icon.svg", "/saved", "/blog-index.json", "/search-index.json"],
+  exclude: [
+    "/api/*",
+    "/_next/*",
+    "/icon.svg",
+    "/saved",
+    "/blog-index.json",
+    "/search-index.json",
+    "/shoes-card.json",
+    "/llms.txt",
+  ],
   robotsTxtOptions: {
-    policies: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: ["/api/*"],
-      },
-      { userAgent: "GPTBot", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "ChatGPT-User", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "OAI-SearchBot", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "ClaudeBot", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Claude-Web", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "anthropic-ai", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "PerplexityBot", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Perplexity-User", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Google-Extended", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Applebot-Extended", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "CCBot", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Bytespider", allow: "/", disallow: ["/api/*"] },
-      { userAgent: "Meta-ExternalAgent", allow: "/", disallow: ["/api/*"] },
-    ],
+    policies: ROBOT_AGENTS.map((userAgent) => ({ userAgent, allow: "/", disallow: DISALLOW })),
     additionalSitemaps: [],
   },
   transform: async (config, urlPath) => {
