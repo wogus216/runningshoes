@@ -35,12 +35,20 @@ const PINNED_PAIRS: readonly string[] = [
   'adidas-supernova-rise-3-vs-new-balance-sc-trainer-v3',
   'adidas-terrex-agravic-4-vs-asics-metafuji-trail',
   'adidas-terrex-agravic-4-vs-hoka-tecton-x-3',
+  // nike-ultrafly 페어 4종 — 2026-08-21 네이버 서치어드바이저 진단 CSV 에서 발견.
+  // 트레일 13종 중 ultrafly 가 rating 4 + valueRating 5 = 9점으로 꼴찌라 TOP_PER_CATEGORY(10)
+  // 밖으로 밀려 404 가 돼 있었다(살로몬 3종·히에로 v9 추가로 순위가 뒤로 밀린 결과).
+  // 네이버는 이 URL들을 색인해 두고 있었고, 404 폴백 제목이 전부 같아
+  // "<title> 요소에 동일한 제목인 웹문서 다수 발견"으로 잡혔다.
+  'adidas-terrex-agravic-4-vs-nike-ultrafly',
   'adidas-terrex-agravic-4-vs-salomon-pulsar',
   'adidas-terrex-agravic-4-vs-salomon-ultra-glide-4',
   'adidas-terrex-agravic-speed-ultra-vs-asics-gel-venture-10',
   'adidas-terrex-agravic-speed-ultra-vs-hoka-speedgoat-6',
   'adidas-terrex-agravic-speed-ultra-vs-hoka-tecton-x-3',
+  'adidas-terrex-agravic-speed-ultra-vs-nike-ultrafly',
   'asics-gel-venture-10-vs-hoka-tecton-x-3',
+  'asics-gel-venture-10-vs-nike-ultrafly',
   'asics-gel-venture-10-vs-salomon-pulsar',
   'asics-gel-venture-10-vs-salomon-ultra-glide-4',
   'asics-metafuji-trail-vs-hoka-speedgoat-6',
@@ -52,6 +60,7 @@ const PINNED_PAIRS: readonly string[] = [
   'hoka-clifton-10-vs-nike-pegasus-42',
   'hoka-speedgoat-6-vs-hoka-tecton-x-3',
   'hoka-speedgoat-6-vs-salomon-ultra-glide-4',
+  'hoka-tecton-x-3-vs-nike-ultrafly',
   'hoka-tecton-x-3-vs-salomon-pulsar',
   'hoka-tecton-x-3-vs-salomon-ultra-glide-4',
   'new-balance-1080-v14-vs-new-balance-sc-trainer-v3',
