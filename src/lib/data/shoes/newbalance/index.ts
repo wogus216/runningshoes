@@ -7,6 +7,7 @@ import { shoe as newBalance860V15 } from './new-balance-860-v15';
 import { shoe as newBalance860V14 } from './new-balance-860-v14';
 import { shoe as newBalanceScTrainerV3 } from './new-balance-sc-trainer-v3';
 import { shoe as newBalanceScEliteV5 } from './new-balance-sc-elite-v5';
+import { shoe as newBalanceScRebel } from './new-balance-sc-rebel';
 import { shoe as newBalanceBalosV1 } from './new-balance-balos-v1';
 import { shoe as newBalanceHierroV9 } from './new-balance-hierro-v9';
 
@@ -20,6 +21,7 @@ export const newbalanceShoes: Shoe[] = [
   newBalance860V14,
   newBalanceScTrainerV3,
   newBalanceScEliteV5,
+  newBalanceScRebel,
   newBalanceBalosV1,
   newBalanceHierroV9,
 ];

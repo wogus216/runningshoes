@@ -38,6 +38,20 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-08.ts 요강표 — disneyrunincheon2026.com 대회안내(2026-08-22 확인:
+  // 10/24 상상플랫폼·15,000명·10K 8만/5K 6.5만·접수 8/31 10시) + @disneykorea 8/20 티켓 오픈 공지.
+  'disney-run-incheon-guide': {
+    title: '디즈니런 인천 접수 8/31 10시',
+    subtitle: '요강보다 접수가 먼저 열린다 — 코스도 출발 시각도 아직',
+    data: '10월 24일 상상플랫폼 · 1.5만 명 선착순 · 10K 8만 / 5K 6.5만원',
+  },
+  // 출처: posts/2026-08.ts 비교표 — 두 신발 모두 신발 DB 기준(무게·스택·드롭·플레이트),
+  // SC 레벨 가격·2E 구성은 뉴발란스 코리아 온라인스토어 2026-08-22 확인. 랩 측정치는 양쪽 다 미게시.
+  'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026': {
+    title: 'SC 레벨 vs 슈퍼블라스트 3',
+    subtitle: '같은 259,000원 — 플레이트로 밀 것인가, 폼으로 받칠 것인가',
+    data: '218g·40mm·드롭4 플레이트 有 ↔ 239g·46.5mm·드롭8 플레이트 無',
+  },
   // 출처: posts/2026-06.ts 본문 + marathon/november.ts — 공식 대회요강(2026-08-10 확인:
   // 8/9 09시 접수 개시·마감일 없는 선착순·참가비 인상) + 2025년 약 2만 명 일주일 마감 실적.
   'sonkeechung-peace-marathon-2026': {
@@ -62,9 +76,9 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   // 출처: posts/2026-08.ts 출시 정보 표 — 뉴발란스 인스타 공지(2026-08-12 확인, 출시일·가격·체험)
   // + 공식 발표 스펙(218g). 패키지 동가 구조는 런유어웨이 공식 접수 안내 기준.
   'new-balance-sc-rebel-korea-launch-2026': {
-    title: 'SC 레벨 한국 출시 확정',
-    subtitle: '8월 22일 오전 11시 — 같은 값 패키지엔 참가권이 공짜로 붙는다',
-    data: '259,000원 · 218g 슈퍼 트레이너 · 체험 8/13~ 런허브 여의도',
+    title: 'SC 레벨, 와이드 2E까지 나왔다',
+    subtitle: '좁다던 갑피에 답이 붙었다 — 공식명 SC Rebel V1, 8개 SKU 동일가',
+    data: '259,000원 · 218g 슈퍼 트레이너 · 남성 D·2E / 여성 D',
   },
   // 출처: posts/2026-08.ts 개요 표 — 롯데리아 공식 인스타그램(@lotteria_kr) 발표 게시물,
   // 2026-08-12 확인. 10/4 서울어린이대공원 5K, 티켓 오픈·참가비 미공개(예매처 롯데잇츠 앱만 확정).
