@@ -167,3 +167,10 @@ If you are a copyright holder and believe your content has been used inappropria
 - CDN: assets.adidas.com (w_1000, f_auto)
 - Date: 2026-08-11
 - Images: 6 (side, angle, back, top, outsole, detail)
+
+## New Balance SC Rebel V1
+- Source: 뉴발란스 코리아 공식몰 상품 상세 (https://m.nbkorea.com/product/productDetail.action?styleCode=NBPFGF720U&colCode=35)
+- CDN: image.nbkorea.com/NBRB_Product/20260723/ (1200×1200, 배경 #F5F5F5)
+- Processing: @imgly/background-removal-node(medium) → sharp trim → 800px WebP q88
+- Date: 2026-08-22 (한국 출시일)
+- Images: 6 (side, front, back, angle, outsole, top)
