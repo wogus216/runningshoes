@@ -174,3 +174,11 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: @imgly/background-removal-node(medium) → sharp trim → 800px WebP q88
 - Date: 2026-08-22 (한국 출시일)
 - Images: 6 (side, front, back, angle, outsole, top)
+
+## Asics 슈퍼블라스트 3 — 야외 착화샷 → 공식 투명 제품샷 교체
+- Source: ASICS US 공식 PDP (https://www.asics.com/us/en-us/superblast-3/p/ANA_1013A177-400.html)
+- CDN: images.asics.com Scene7 — `1013A177_400_{VIEW}?wid=1040&hei=1040&fmt=png-alpha` (진짜 투명, 배경제거 불필요)
+- ⚠️ 현행 패턴은 `{SKU}_{COLOR}_{VIEW}` (언더스코어). curl 은 UA + `Referer: https://www.asics.com/` 없으면 403
+- VIEW: SR_RT_GLB(측면·토 오른쪽) / SB_FR_GLB / SB_BK_GLB / SB_FL_GLB / SB_BT_GLB / SB_TP_GLB
+- Date: 2026-08-22
+- Images: 6 (side, front, back, angle, outsole, top) — 기존 발코니 착화샷 5장 대체

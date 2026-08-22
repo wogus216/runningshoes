@@ -45,6 +45,9 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
     subtitle: '요강보다 접수가 먼저 열린다 — 코스도 출발 시각도 아직',
     data: '10월 24일 상상플랫폼 · 1.5만 명 선착순 · 10K 8만 / 5K 6.5만원',
   },
+  // ⚠️ 이 slug 는 실물 신발 좌우 카드(VS) 썸네일을 수동 제작해 쓰고 있다.
+  // render.ts 를 이 slug 로 재실행하면 아래 텍스트 템플릿이 카드 썸네일을 덮어쓴다 — 재생성 금지.
+  // 아래 문구는 대체본이 필요할 때를 위한 보존용이다.
   // 출처: posts/2026-08.ts 비교표 — 두 신발 모두 신발 DB 기준(무게·스택·드롭·플레이트),
   // SC 레벨 가격·2E 구성은 뉴발란스 코리아 온라인스토어 2026-08-22 확인. 랩 측정치는 양쪽 다 미게시.
   'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026': {
