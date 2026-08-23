@@ -19,7 +19,9 @@ export function CourseMap({ eventId, gpx }: { eventId: string; gpx: CourseGpx })
   const map = getCourseMap(eventId);
   if (!map) return null;
 
-  const badge = SOURCE_BADGE[map.source];
+  // 출처 표기는 전부 `gpx` 한 곳에서 온다. 배지는 생성물에서, 링크는 데이터에서
+  // 가져오면 한쪽만 갱신됐을 때 옛 배지와 새 링크가 한 문장에 섞인다
+  const badge = SOURCE_BADGE[gpx.source];
 
   return (
     <figure className="m-0">
@@ -33,11 +35,13 @@ export function CourseMap({ eventId, gpx }: { eventId: string; gpx: CourseGpx })
             {badge.label}
           </span>
         )}
-        {map.source === 'reconstructed' && (
+        {gpx.source === 'reconstructed' && (
           <p className="text-xs leading-relaxed text-secondary">
             공식이 <strong className="font-semibold">글로 밝힌 경유지</strong>만 가져와 지도 도로망 위에
-            새로 이은 <strong className="font-semibold">추정 경로</strong>입니다. 실제 코스와 다를 수
-            있어 거리·고저는 적지 않습니다.
+            새로 이은 <strong className="font-semibold">추정 경로</strong>입니다. 보행 도로망을 따라
+            이었기 때문에 실제 통제 차도와 선이 다를 수 있고,{' '}
+            <strong className="font-semibold">이 경로에서 잰 거리·고도는 적지 않습니다</strong>{' '}
+            (본문의 거리·시간은 대회 공식 발표 수치입니다).
             {gpx.sourceUrl && (
               <>
                 {' '}

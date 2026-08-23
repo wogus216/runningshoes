@@ -2,7 +2,7 @@
 <gpx version="1.1" creator="allrunabout course-map builder" xmlns="http://www.topografix.com/GPX/1/1">
   <metadata>
     <name>hyundai-forest-run-2026</name>
-    <desc>reconstructed · 현대자동차 공식 홈페이지에 텍스트로 적힌 코스 서술 — '여의도 공원 → 여의서로 하단도로 → 여의서로 → 서강대교 → 광흥창역 사거리(반환) → 서강대교 → 여의서로 → 여의서로 하단도로 → 여의도 공원'. 이 서술에 나온 지점만 취해 OSM 보행 도로망 위에서 새로 이었다. 공식 코스맵 이미지는 보지도, 따라 그리지도 않았다.</desc>
+    <desc>reconstructed · 현대자동차 공식 홈페이지에 텍스트로 적힌 코스 서술 — '여의도 공원 → 여의서로 하단도로 → 여의서로 → 서강대교 → 광흥창역 사거리(반환) → 서강대교 → 여의서로 → 여의서로 하단도로 → 여의도 공원'. 이 서술에 나온 지점만 취해 OSM 보행 도로망 위에서 새로 이었다. 공식 코스맵 이미지는 보지도, 따라 그리지도 않았다. 보행 도로망 기준이라 실제 통제 차도와 선이 다를 수 있다.</desc>
     <time>2026-08-23T00:00:00Z</time>
     <copyright author="OpenStreetMap contributors">
       <license>https://opendatacommons.org/licenses/odbl/</license>
@@ -193,8 +193,7 @@
       <trkpt lat="37.529566" lon="126.912682"/>
       <trkpt lat="37.529532" lon="126.912615"/>
       <trkpt lat="37.529504" lon="126.912518"/>
-      <trkpt lat="37.529487" lon="126.912455"/>
-      <trkpt lat="37.529427" lon="126.912479"/>
+      <trkpt lat="37.529385" lon="126.912569"/>
       <trkpt lat="37.529365" lon="126.912503"/>
       <trkpt lat="37.528996" lon="126.912648"/>
       <trkpt lat="37.528683" lon="126.91276"/>
@@ -215,8 +214,8 @@
       <trkpt lat="37.524007" lon="126.91716"/>
       <trkpt lat="37.524536" lon="126.918005"/>
       <trkpt lat="37.524449" lon="126.918082"/>
-      <trkpt lat="37.524423" lon="126.918108"/>
-      <trkpt lat="37.525439" lon="126.91975"/>
+      <trkpt lat="37.524594" lon="126.918317"/>
+      <trkpt lat="37.52485" lon="126.918732"/>
       <trkpt lat="37.525469" lon="126.919724"/>
       <trkpt lat="37.525631" lon="126.919984"/>
       <trkpt lat="37.525754" lon="126.920183"/>

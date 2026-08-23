@@ -38,7 +38,25 @@ const OVERPASS = 'https://overpass-api.de/api/interpreter';
  * 높이는 코스 모양을 따라간다(세로로 긴 코스를 가로 상자에 넣으면 코스가 쪼그라든다).
  * 다만 화면에서 스크롤을 잡아먹지 않도록 비율을 가둔다.
  */
-const CANVAS = { w: 1000, pad: 30, minRatio: 0.55, maxRatio: 1.05 };
+const CANVAS = {
+  w: 1000,
+  pad: 30,
+  minRatio: 0.55,
+  maxRatio: 1.05,
+  /** 지면을 눕히는 비율(세로 압축). 1이면 정투영, 작을수록 눕는다 */
+  tilt: 0.62,
+  /**
+   * 코스를 지면에서 띄우는 높이(px). 건물이 깊이를 만들기 전에는 이걸로 입체감을
+   * 흉내 냈는데, 건물이 생긴 지금은 가림막일 뿐이라 0이다.
+   */
+  lift: 0,
+  /** 건물 높이 과장 배율. 1이면 실제 미터를 지도 축척 그대로 세운다 */
+  heightScale: 1.15,
+  /** 높은 건물이 위로 잘리지 않게 캔버스 위쪽에 남기는 여백(px) */
+  headroom: 120,
+  /** 건물을 깊이 순으로 그리기 위한 밴드 수 — 밴드마다 벽·지붕 패스 하나씩만 낸다 */
+  depthBands: 10,
+};
 
 /**
  * 배경 지형 팔레트. 톤 후보를 눈으로 고르려고 셋을 굽는다.
@@ -49,16 +67,19 @@ const SKINS = {
   night: {
     bg: '#0b0e11', green: '#111a16', water: '#0e1c26', road: '#1b2229', rail: '#181e24',
     grid: 'rgba(255,255,255,.035)',
+    wall: '#161d24', roof: '#38464f', edge: 'rgba(255,255,255,.11)',
   },
   // 흑백 인쇄물. 색을 거의 빼고 선의 굵기만으로 위계를 만든다
   print: {
     bg: '#ffffff', green: '#f1f1ee', water: '#e9eaec', road: '#e2e2e0', rail: '#ebebe9',
     grid: 'rgba(0,0,0,.045)',
+    wall: '#dedbd5', roof: '#ffffff', edge: 'rgba(0,0,0,.22)',
   },
   // 현재 배포본(웜 페이퍼) — 비교 기준
   light: {
     bg: '#faf8f4', green: '#e8eee1', water: '#dce7ee', road: '#e9e4dc', rail: '#ece7df',
     grid: null,
+    wall: '#ded7ca', roof: '#fbf7ef', edge: 'rgba(70,58,42,.20)',
   },
 };
 
@@ -85,14 +106,20 @@ async function postJson(url, body) {
   return res.json();
 }
 
-async function overpass(query) {
-  const res = await fetch(OVERPASS, {
-    method: 'POST',
-    headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' },
-    body: new URLSearchParams({ data: query }),
-  });
-  if (!res.ok) throw new Error(`overpass → ${res.status}`);
-  return res.json();
+/** Overpass 는 공개 무료 인스턴스라 504/429 를 자주 낸다. 저작 시점 도구이니 기다렸다 다시 묻는다 */
+async function overpass(query, tries = 4) {
+  for (let i = 1; i <= tries; i++) {
+    const res = await fetch(OVERPASS, {
+      method: 'POST',
+      headers: { 'User-Agent': UA, 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams({ data: query }),
+    });
+    if (res.ok) return res.json();
+    if (i === tries) throw new Error(`overpass → ${res.status} (${tries}회 시도)`);
+    const wait = 4000 * i;
+    process.stdout.write(`  overpass ${res.status} — ${wait / 1000}초 후 재시도 (${i}/${tries - 1})\n`);
+    await sleep(wait);
+  }
 }
 
 /** Valhalla 는 polyline6 로 형상을 준다 */
@@ -152,17 +179,23 @@ function makeProjector(bbox) {
     CANVAS.maxRatio,
     Math.max(CANVAS.minRatio, (y1 - y0) / (x1 - x0)),
   );
-  const h = Math.round(CANVAS.w * ratio);
+  // 지면을 눕히면 세로가 줄어든다. 줄어든 만큼 캔버스도 낮추되, 솟아오른 건물이
+  // 위로 잘리지 않도록 headroom 을 남긴다
+  const h = Math.round(CANVAS.w * ratio * CANVAS.tilt) + CANVAS.headroom;
   const iw = CANVAS.w - CANVAS.pad * 2;
-  const ih = h - CANVAS.pad * 2;
-  const scale = Math.min(iw / (x1 - x0), ih / (y1 - y0));
+  const ih = h - CANVAS.pad * 2 - CANVAS.headroom;
+  const scale = Math.min(iw / (x1 - x0), ih / ((y1 - y0) * CANVAS.tilt));
   const offX = CANVAS.pad + (iw - (x1 - x0) * scale) / 2;
-  const offY = CANVAS.pad + (ih - (y1 - y0) * scale) / 2;
+  const offY = CANVAS.pad + CANVAS.headroom + (ih - (y1 - y0) * scale * CANVAS.tilt) / 2;
   const project = ([lon, lat]) => [
     Math.round(offX + (rad(lon) - x0) * scale),
-    Math.round(offY + (y1 - mercY(lat)) * scale),
+    Math.round(offY + (y1 - mercY(lat)) * scale * CANVAS.tilt),
   ];
   project.height = h;
+  // 미터를 화면 px 로 바꾸는 비율 — 건물 높이를 세울 때 쓴다.
+  // 경도 1라디안은 위도 φ 에서 R·cos φ 미터다
+  const midLat = (minLat + maxLat) / 2;
+  project.pxPerMeter = scale / (R * Math.cos(rad(midLat)));
   return project;
 }
 
@@ -223,11 +256,17 @@ function stitchRings(ways) {
 
 // ── 1. 경로 ─────────────────────────────────────────────────────────
 
+/**
+ * ⚠️ costing 은 'pedestrian' 이다. 로드레이스는 통제된 차도를 달리는데 보행 라우터는
+ * 인도·횡단보도를 따른다 — 다리 구간에서 특히 갈린다. 그런데도 보행을 쓰는 이유:
+ * 'auto' 는 공원 안 출발지점(문화의 마당)에 못 들어가 출발선을 도로로 밀어내고,
+ * 'bicycle' 은 실측 결과 서강대교를 아예 안 쓴다(최근접 856m).
+ * 셋 다 정답이 아니므로 화면에 이 한계를 그대로 적는다(course-map.tsx 의 캡션).
+ */
 async function routeCourse(cfg) {
   const wp = cfg.waypoints;
-  const seq = cfg.outAndBack ? [...wp, ...wp.slice(0, -1).reverse()] : wp;
   const trip = await postJson(VALHALLA, {
-    locations: seq.map((w) => ({ lat: w.lat, lon: w.lon })),
+    locations: wp.map((w) => ({ lat: w.lat, lon: w.lon })),
     costing: 'pedestrian',
     directions_options: { units: 'kilometers' },
   });
@@ -238,6 +277,10 @@ async function routeCourse(cfg) {
       c.shift();
     pts = pts.concat(c);
   }
+  // 왕복은 되돌아오는 경로를 다시 라우팅하지 않고 편도를 뒤집어 붙인다.
+  // 재라우팅하면 일방통행·횡단 가능 지점 차이로 복귀선이 최대 72m 어긋났다(실측).
+  // 공식이 '같은 길로 복귀'라고 밝힌 코스에서 그 어긋남은 순전한 노이즈다
+  if (cfg.outAndBack) pts = pts.concat(pts.slice(0, -1).reverse());
   return pts;
 }
 
@@ -283,6 +326,106 @@ async function fetchContext(bbox) {
 );
 out geom;`;
   return overpass(q);
+}
+
+/**
+ * 건물 — 도시를 세우는 재료.
+ *
+ * ⚠️ **높이 태그가 있는 건물만 가져온다.** 이 bbox 의 건물 2,133동 중 높이가 적힌 건
+ * 385동(18%)뿐이다. 나머지를 기본 높이로 세우면 없는 도시를 지어내는 것이고,
+ * 이 사이트가 후기 438건을 걷어내며 세운 원칙에 정면으로 걸린다.
+ * 화면에도 "OSM 에 등록된 실제 높이만 세웠다"고 적는다.
+ */
+async function fetchBuildings(bbox) {
+  const [minLon, minLat, maxLon, maxLat] = bbox;
+  const bb = `${minLat},${minLon},${maxLat},${maxLon}`;
+  const q = `[out:json][timeout:120];
+(
+  way["building"]["height"](${bb});
+  way["building"]["building:levels"](${bb});
+  relation["building"]["height"](${bb});
+  relation["building"]["building:levels"](${bb});
+);
+out geom;`;
+  return overpass(q);
+}
+
+/** OSM 높이 태그를 미터로. 없으면 null (= 세우지 않는다) */
+function tagHeight(tags = {}) {
+  const num = (v) => {
+    const m = /^\s*([\d.]+)/.exec(String(v ?? ''));
+    return m ? parseFloat(m[1]) : null;
+  };
+  const h = num(tags.height);
+  if (h) return h;
+  const lv = num(tags['building:levels']);
+  // 층고는 국내 업무·주거 혼재를 감안한 근사다. 층수 자체는 OSM 실데이터
+  return lv ? lv * 3.2 : null;
+}
+
+/**
+ * 건물을 압출해 깊이 순으로 그린다.
+ *
+ * 패스를 건물마다 내면 385동 × (지붕+벽) = 수천 개가 되어 문서가 무거워진다.
+ * 화면 깊이(y)로 밴드를 나누고 **밴드마다 벽 하나 · 지붕 하나**로 합쳐서
+ * 20개 안팎의 패스로 끝낸다. 밴드 순서가 곧 앞뒤 가림 순서다.
+ */
+function buildCity(osm, project) {
+  const px = project.pxPerMeter * CANVAS.heightScale;
+  const items = [];
+
+  for (const el of osm.elements ?? []) {
+    const h = tagHeight(el.tags);
+    if (!h) continue;
+    let rings = [];
+    if (el.type === 'way' && el.geometry) {
+      rings = [el.geometry.map((g) => [g.lon, g.lat])];
+    } else if (el.type === 'relation') {
+      rings = (el.members ?? [])
+        .filter((m) => m.geometry && (m.role === 'outer' || m.role === ''))
+        .map((m) => m.geometry.map((g) => [g.lon, g.lat]));
+    }
+    for (const ring of rings) {
+      const g = [];
+      for (const c of ring) {
+        const p = project(c);
+        const last = g[g.length - 1];
+        if (!last || Math.abs(p[0] - last[0]) + Math.abs(p[1] - last[1]) >= 2) g.push(p);
+      }
+      if (g.length < 3) continue;
+      const w = Math.max(...g.map((p) => p[0])) - Math.min(...g.map((p) => p[0]));
+      const d = Math.max(...g.map((p) => p[1])) - Math.min(...g.map((p) => p[1]));
+      if (Math.max(w, d) < 7) continue; // 화면에서 점만 한 건물은 노이즈
+      const lift = Math.round(h * px);
+      if (lift < 3) continue;
+      items.push({ g, lift, depth: Math.max(...g.map((p) => p[1])) });
+    }
+  }
+
+  if (!items.length) return { bands: [], count: 0, tallest: 0 };
+
+  items.sort((a, b) => a.depth - b.depth); // 먼 것부터
+  const per = Math.ceil(items.length / CANVAS.depthBands);
+  const bands = [];
+  for (let i = 0; i < items.length; i += per) {
+    let walls = '';
+    let roofs = '';
+    for (const it of items.slice(i, i + per)) {
+      const roof = it.g.map((p) => [p[0], p[1] - it.lift]);
+      roofs += roof.map((p, k) => `${k ? 'L' : 'M'}${p[0]} ${p[1]}`).join('') + 'Z';
+      // 벽은 '앞쪽으로 내려오는' 변만 그린다. 뒤로 넘어가는 변은 지붕에 가려 안 보인다
+      for (let k = 0; k < it.g.length; k++) {
+        const a = it.g[k];
+        const b = it.g[(k + 1) % it.g.length];
+        if (b[0] === a[0] && b[1] === a[1]) continue;
+        if (b[0] - a[0] === 0 && b[1] <= a[1]) continue;
+        if (b[0] < a[0]) continue; // 시계방향 기준 뒷면
+        walls += `M${a[0]} ${a[1]}L${b[0]} ${b[1]}L${b[0]} ${b[1] - it.lift}L${a[0]} ${a[1] - it.lift}Z`;
+      }
+    }
+    bands.push({ walls, roofs });
+  }
+  return { bands, count: items.length, tallest: Math.max(...items.map((i) => i.lift)) };
 }
 
 function buildLayers(osm, project) {
@@ -354,16 +497,47 @@ async function build(eventId) {
   await sleep(800);
   const osm = await fetchContext(bbox);
   const layers = buildLayers(osm, project);
+  await sleep(1000);
+  const city = buildCity(await fetchBuildings(bbox), project);
+  process.stdout.write(
+    `  도시 ${city.count}동 (높이 태그 있는 것만) · 최고 ${city.tallest}px · 밴드 ${city.bands.length}\n`,
+  );
   const featureCount = Object.values(layers).reduce((n, a) => n + a.length, 0);
   process.stdout.write(
     `  배경 ${featureCount}개 (물 ${layers.water.length} · 녹지 ${layers.green.length} · 도로 ${layers.roads.length} · 철도 ${layers.rail.length})\n`,
   );
 
+  // ── 입체 ──────────────────────────────────────────────────────────
+  // 지면은 눕혀 두고 코스만 위로 띄운다. 띄운 선 · 지면 그림자 · 둘을 잇는 받침선,
+  // 이 셋이 있으면 새로운 사실 주장 없이 깊이가 생긴다(고도 데이터를 쓰지 않는다 —
+  // SRTM 표본은 도심에서 노이즈가 커서, 추정 경로 위에 그리면 거짓말이 하나 더 는다)
+  const LIFT = CANVAS.lift;
+  const groundPts = pts.map((p) => project(p));
+  const liftedPath = toPath(pts, (p) => {
+    const [x, y] = project(p);
+    return [x, y - LIFT];
+  }, false, 1);
+  const groundPath = toPath(pts, project, false, 1);
+
+  // 받침선 — 화면에서 일정 간격마다 하나씩. 너무 촘촘하면 빗금처럼 보인다
+  const stilts = [];
+  let acc = Infinity;
+  for (let i = 0; i < groundPts.length; i++) {
+    if (i > 0) {
+      acc += Math.hypot(groundPts[i][0] - groundPts[i - 1][0], groundPts[i][1] - groundPts[i - 1][1]);
+    }
+    if (acc >= 44) {
+      acc = 0;
+      const [x, y] = groundPts[i];
+      stilts.push(`M${x} ${y}L${x} ${y - LIFT}`);
+    }
+  }
+
   const markers = cfg.waypoints
     .filter((w) => w.marker)
     .map((w) => {
       const [x, y] = project([w.lon, w.lat]);
-      return { kind: w.marker, x, y, label: w.name };
+      return { kind: w.marker, x, y: y - LIFT, groundY: y, label: w.name };
     });
 
   // 지명 — 지도에 이름이 없으면 어디를 달리는지 읽히지 않는다.
@@ -393,7 +567,7 @@ async function build(eventId) {
       }
     }
     const [x, y] = project(pts[best]);
-    return { title: b.title, note: b.note, at: +(cum[best] / total).toFixed(4), x, y };
+    return { title: b.title, note: b.note, at: +(cum[best] / total).toFixed(4), x, y: y - LIFT };
   });
 
   // 배경은 별도 SVG 파일로 굽는다 — HTML 에 인라인하면 문서가 60KB 무거워지고
@@ -409,6 +583,13 @@ async function build(eventId) {
 <g fill="none" stroke="${c.road}" stroke-width="3" stroke-linecap="round">${layers.roads.map((d) => `<path d="${d}"/>`).join('')}</g>
 <g fill="none" stroke="${c.rail}" stroke-width="2" stroke-dasharray="6 5">${layers.rail.map((d) => `<path d="${d}"/>`).join('')}</g>
 ${c.grid ? `<g fill="none" stroke="${c.grid}" stroke-width="1">${gridLines(project.height)}</g>` : ''}
+${city.bands
+  .map(
+    (b) =>
+      `<g><path d="${b.walls}" fill="${c.wall}" stroke="${c.edge}" stroke-width="0.6"/>` +
+      `<path d="${b.roofs}" fill="${c.roof}" stroke="${c.edge}" stroke-width="0.6"/></g>`,
+  )
+  .join('')}
 </svg>`;
     const bgFile = path.join(MAP_DIR, `${eventId}.bg.${skin}.svg`);
     fs.writeFileSync(bgFile, bg);
@@ -427,7 +608,13 @@ ${c.grid ? `<g fill="none" stroke="${c.grid}" stroke-width="1">${gridLines(proje
     /** 스킨 이름을 끼워 쓴다 — `/data/course-maps/{id}.bg.{skin}.svg` */
     background: `/data/course-maps/${eventId}.bg.{skin}.svg`,
     skins: Object.keys(SKINS),
-    course: toPath(pts, project, false, 1),
+    /** 띄운 코스 — 애니메이션·주자 위치의 기준선 */
+    course: liftedPath,
+    /** 지면에 붙는 그림자 (같은 형상, lift 만큼 아래) */
+    courseGround: groundPath,
+    /** 띄운 선과 그림자를 잇는 받침선 */
+    stilts,
+    lift: LIFT,
     markers,
     landmarks,
     beats,

@@ -1,24 +1,41 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Play } from 'lucide-react';
+import { Pause, Play } from 'lucide-react';
 
 import type { CourseMapData } from '@/lib/course-map';
 
 /**
  * 코스를 '보는 것'이 아니라 '미리 달려보는 것'으로 만드는 뷰.
  *
- * 배경 지형은 <img> 로 뺀 정적 SVG 다(문서를 60KB 무겁게 만들지 않으려고).
- * 그 위에 겹치는 인라인 SVG 에는 경로와 표식만 있고, 글자는 HTML 로 띄운다 —
- * SVG 안의 text 는 지도가 작아지면 같이 줄어들어 모바일에서 읽히지 않는다.
+ * ── 입체 ──
+ * 지면은 눕히고, 그 위에 OSM 에 **실제 높이가 등록된 건물만** 세운 도시를 깐다
+ * (빌더가 저작 시점에 구워둔 정적 SVG). 높이가 없는 건물은 세우지 않는다 —
+ * 기본값으로 세우면 없는 도시를 지어내는 것이다.
+ * 코스 고도는 쓰지 않는다. 추정 경로 위에 노이즈 섞인 SRTM 고도를 얹으면
+ * 거짓말이 하나 더 는다.
  *
- * 색은 전부 globals.css 의 `.course-skin[data-skin]` 이 쥔다. 배경 SVG 만 색이
- * 박혀 있어서 스킨마다 파일이 따로 있다.
+ * ── 플라이오버 ──
+ * 진짜 3D 카메라가 아니다. 구워둔 씬 하나를 CSS transform 으로 확대·이동해
+ * 주자를 따라간다. 런타임 3D·타일·지형 메시가 전부 필요 없다.
+ *
+ * ── 성능 ──
+ * 진행률은 state 가 아니다. rAF 마다 setState 하면 3.4초 동안 React 트리를
+ * 200번 다시 그린다. 진행률은 ref 로 DOM 을 직접 만지고, state 는 활성 구간이
+ * 바뀔 때만 건드린다(달리는 동안 최대 5번).
  */
 
 const RUN_MS = 3400;
 /** 주자 뒤로 남는 잔광의 길이(경로 대비 비율) */
 const TRAIL = 0.06;
+/** 구간을 눌렀을 때 그 지점까지 달려가는 시간 — 거리에 비례 */
+const SEEK_MIN_MS = 260;
+const SEEK_MAX_MS = 700;
+/** 플라이오버 확대 배율 */
+const FLY_ZOOM = 2.4;
+/** 줌인·줌아웃에 쓰는 진행률 구간 */
+const FLY_IN = 0.12;
+const FLY_OUT = 0.08;
 
 const SKIN_LABEL: Record<string, string> = {
   night: '나이트 트랙',
@@ -28,60 +45,179 @@ const SKIN_LABEL: Record<string, string> = {
 
 export function CourseMapView({ data }: { data: CourseMapData }) {
   const [, , vbW, vbH] = data.viewBox;
-  const pathRef = useRef<SVGPathElement>(null);
-  const boxRef = useRef<HTMLDivElement>(null);
-  const rafRef = useRef<number | null>(null);
 
-  const [len, setLen] = useState(0);
-  const [progress, setProgress] = useState(0);
+  const liftedRef = useRef<SVGPathElement>(null);
+  const groundRef = useRef<SVGPathElement>(null);
+  const glowRef = useRef<SVGPathElement>(null);
+  const haloRef = useRef<SVGPathElement>(null);
+  const trailRef = useRef<SVGPathElement>(null);
+  const runnerRef = useRef<HTMLSpanElement>(null);
+  const beaconRef = useRef<SVGLineElement>(null);
+  const boxRef = useRef<HTMLDivElement>(null);
+  const worldRef = useRef<HTMLDivElement>(null);
+  const followRef = useRef(true);
+  const zoomRef = useRef(1);
+
+  const rafRef = useRef<number | null>(null);
+  const lenRef = useRef(0);
+  const progressRef = useRef(0);
+  const activeRef = useRef<number | null>(null);
+
   const [active, setActive] = useState<number | null>(null);
   const [running, setRunning] = useState(false);
   const [still, setStill] = useState(false); // 모션을 줄이기로 한 사용자
   const [skin, setSkin] = useState(data.skins?.[0] ?? 'light');
+  const [follow, setFollow] = useState(true);
 
-  useEffect(() => {
-    if (pathRef.current) setLen(pathRef.current.getTotalLength());
-    setStill(window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+  /**
+   * 카메라 — 구워둔 씬을 확대해 (fx, fy) 지점을 화면 가운데로 가져온다.
+   * transform-origin 이 0 0 이라 scale(S) 뒤의 translate 는 S 로 나눠 계산한다.
+   * 글자와 주자는 같이 커지면 안 되므로 1/S 로 되돌린다.
+   */
+  const camera = useCallback((fx: number, fy: number, S: number) => {
+    const world = worldRef.current;
+    if (!world) return;
+    zoomRef.current = S;
+    const cx = Math.min(1 - 0.5 / S, Math.max(0.5 / S, fx));
+    const cy = Math.min(1 - 0.5 / S, Math.max(0.5 / S, fy));
+    world.style.transform =
+      S === 1
+        ? 'none'
+        : `scale(${S}) translate(${(0.5 / S - cx) * 100}%, ${(0.5 / S - cy) * 100}%)`;
+    const inv = S === 1 ? '' : ` scale(${1 / S})`;
+    world.querySelectorAll<HTMLElement>('[data-keep-size]').forEach((el) => {
+      el.style.transform = `${el.dataset.base ?? ''}${inv}`;
+    });
   }, []);
 
-  const stop = () => {
+  /** 진행률을 DOM 에 바른다. 렌더를 거치지 않는다 */
+  const paint = useCallback(
+    (p: number) => {
+      const len = lenRef.current;
+      if (!len) return;
+      progressRef.current = p;
+      const off = len * (1 - p);
+      for (const r of [liftedRef, groundRef, glowRef, haloRef]) {
+        if (r.current) r.current.style.strokeDashoffset = String(off);
+      }
+      if (trailRef.current) {
+        const w = len * TRAIL;
+        const s = Math.max(0, len * p - w);
+        trailRef.current.style.strokeDasharray = `0 ${s} ${Math.min(w, len * p)} ${len}`;
+      }
+      const path = liftedRef.current;
+      const runner = runnerRef.current;
+      // 끝점(p=1)에서도 주자를 남긴다 — 피니시 구간을 골랐을 때 점이 사라지면
+      // '달려가 멈춘다'는 약속이 깨진다
+      const show = p > 0.001;
+      if (runner) runner.style.display = show ? '' : 'none';
+      if (beaconRef.current) beaconRef.current.style.display = show ? '' : 'none';
+      if (show && path && runner) {
+        const pt = path.getPointAtLength(len * Math.min(1, p));
+        runner.style.left = `${(pt.x / vbW) * 100}%`;
+        runner.style.top = `${(pt.y / vbH) * 100}%`;
+        if (followRef.current) {
+          // 출발에서 줌인, 피니시 직전에 줌아웃 — 그 사이는 주자를 따라간다
+          const inZ = Math.min(1, p / FLY_IN);
+          const outZ = Math.min(1, (1 - p) / FLY_OUT);
+          const S = 1 + (FLY_ZOOM - 1) * Math.min(inZ, outZ);
+          camera(pt.x / vbW, pt.y / vbH, S);
+        }
+        if (beaconRef.current) {
+          beaconRef.current.setAttribute('x1', String(pt.x));
+          beaconRef.current.setAttribute('x2', String(pt.x));
+          beaconRef.current.setAttribute('y1', String(pt.y));
+          beaconRef.current.setAttribute('y2', String(pt.y + data.lift));
+        }
+      }
+    },
+    [vbW, vbH, data.lift, camera],
+  );
+
+  const markBeat = useCallback(
+    (i: number | null) => {
+      if (activeRef.current === i) return;
+      activeRef.current = i;
+      setActive(i);
+    },
+    [],
+  );
+
+  const stop = useCallback(() => {
     if (rafRef.current !== null) cancelAnimationFrame(rafRef.current);
     rafRef.current = null;
-  };
+  }, []);
 
-  const run = useCallback((from = 0) => {
-    stop();
-    setRunning(true);
-    const t0 = performance.now();
-    const span = 1 - from;
-    const tick = (t: number) => {
-      const raw = Math.min(1, (t - t0) / (RUN_MS * span));
-      setProgress(from + span * (1 - Math.pow(1 - raw, 2)));
-      if (raw < 1) rafRef.current = requestAnimationFrame(tick);
-      else {
-        rafRef.current = null;
-        setRunning(false);
-        // 다 달리고 나면 마지막 노트만 켜져 있는 게 아니라 목록 전체가 다시 읽히게 둔다
-        setActive(null);
+  /** from → to 로 이동. followBeats 면 지나치는 구간 노트를 같이 켠다 */
+  const animate = useCallback(
+    (from: number, to: number, ms: number, followBeats: boolean) => {
+      stop();
+      if (still || ms <= 0) {
+        paint(to);
+        return;
       }
-    };
-    rafRef.current = requestAnimationFrame(tick);
+      setRunning(followBeats);
+      const t0 = performance.now();
+      const span = to - from;
+      const tick = (t: number) => {
+        const raw = Math.min(1, (t - t0) / ms);
+        const p = from + span * (1 - Math.pow(1 - raw, 2));
+        paint(p);
+        if (followBeats) {
+          let cur = -1;
+          data.beats.forEach((b, k) => {
+            if (p >= b.at - 0.001) cur = k;
+          });
+          markBeat(cur >= 0 ? cur : null);
+        }
+        if (raw < 1) rafRef.current = requestAnimationFrame(tick);
+        else {
+          rafRef.current = null;
+          setRunning(false);
+          // 다 달리고 나면 목록 전체가 다시 읽히게 두고 카메라도 물린다
+          if (followBeats) {
+            markBeat(null);
+            camera(0.5, 0.5, 1);
+          }
+        }
+      };
+      rafRef.current = requestAnimationFrame(tick);
+    },
+    [data.beats, markBeat, paint, still, stop, camera],
+  );
+
+  // 길이 측정 + 모션 설정 구독(런타임 변경도 따라간다)
+  useEffect(() => {
+    const path = liftedRef.current;
+    if (!path) return;
+    const len = path.getTotalLength();
+    lenRef.current = len;
+    for (const r of [liftedRef, groundRef, glowRef, haloRef]) {
+      if (r.current) r.current.style.strokeDasharray = String(len);
+    }
+    const mq = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const sync = () => setStill(mq.matches);
+    sync();
+    mq.addEventListener('change', sync);
+    return () => mq.removeEventListener('change', sync);
   }, []);
 
   // 화면에 처음 들어올 때 한 번 달린다. 그 뒤로는 사용자가 조작한다
   useEffect(() => {
     const el = boxRef.current;
-    if (!el) return;
+    if (!el || !lenRef.current) return;
     if (still) {
-      setProgress(1);
+      paint(1);
       return;
     }
+    paint(0);
     const io = new IntersectionObserver(
       (entries) => {
         for (const e of entries) {
           if (e.isIntersecting) {
             io.disconnect();
-            run(0);
+            followRef.current = true;
+            animate(0, 1, RUN_MS, true);
           }
         }
       },
@@ -92,44 +228,45 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
       io.disconnect();
       stop();
     };
-  }, [run, still]);
+  }, [animate, paint, still, stop]);
 
-  useEffect(() => stop, []);
-
-  // 달리는 동안 지나친 구간이 곧 지금 읽어야 할 노트다
-  useEffect(() => {
-    if (!running || !data.beats.length) return;
-    let i = -1;
-    data.beats.forEach((b, idx) => {
-      if (progress >= b.at - 0.001) i = idx;
-    });
-    setActive(i >= 0 ? i : null);
-  }, [progress, running, data.beats]);
-
-  const point = (p: number) => {
-    const path = pathRef.current;
-    if (!path || !len) return null;
-    const pt = path.getPointAtLength(len * Math.min(1, Math.max(0, p)));
-    return { left: `${(pt.x / vbW) * 100}%`, top: `${(pt.y / vbH) * 100}%` };
-  };
-
-  const runner = progress > 0.001 && progress < 0.999 ? point(progress) : null;
+  useEffect(() => stop, [stop]);
 
   const goTo = (idx: number) => {
     const b = data.beats[idx];
     if (!b) return;
-    setActive(idx);
-    stop();
+    // 구간을 직접 고르는 건 코스 전체를 견주어 보려는 행동이다 — 카메라는 물린다
+    followRef.current = false;
+    camera(0.5, 0.5, 1);
     setRunning(false);
-    setProgress(b.at === 0 ? 0.002 : b.at);
+    markBeat(idx);
+    const from = progressRef.current;
+    const to = b.at === 0 ? 0.002 : b.at;
+    const ms = Math.min(SEEK_MAX_MS, Math.max(SEEK_MIN_MS, Math.abs(to - from) * SEEK_MAX_MS * 1.6));
+    animate(from, to, ms, false);
   };
 
-  const drawn = { strokeDasharray: len || undefined, strokeDashoffset: len ? len * (1 - progress) : 0 };
-  // 잔광 — 주자 바로 뒤 구간만 밝게. 정지 화면에도 '방금 지나갔다'가 남는다
-  const trailWindow = len * TRAIL;
-  const trailDash = len
-    ? `0 ${Math.max(0, len * progress - trailWindow)} ${Math.min(trailWindow, len * progress)} ${len}`
-    : undefined;
+  /** 달리는 중이면 멈추고, 멈춰 있으면 그 자리에서 이어 달린다 */
+  const togglePlay = () => {
+    if (running) {
+      stop();
+      setRunning(false);
+      return;
+    }
+    followRef.current = follow;
+    const from = progressRef.current >= 0.999 ? 0 : progressRef.current;
+    if (from === 0) markBeat(null);
+    animate(from, 1, RUN_MS * (1 - from), true);
+  };
+
+  const toggleFollow = () => {
+    const next = !follow;
+    setFollow(next);
+    followRef.current = next && running;
+    if (!next) camera(0.5, 0.5, 1);
+  };
+
+  const activeBeat = active !== null ? data.beats[active] : null;
 
   return (
     <div className="course-skin grid gap-4 lg:grid-cols-[minmax(0,1fr)_19rem]" data-skin={skin}>
@@ -138,6 +275,8 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
         ref={boxRef}
         className="relative overflow-hidden rounded-[6px] border border-[var(--accent-line)]"
       >
+        {/* 카메라가 움직이는 대상 — 씬 전체를 한 덩어리로 확대·이동한다 */}
+        <div ref={worldRef} className="origin-top-left will-change-transform">
         {/* 배경 지형 — 저작 시점에 구운 정적 SVG. 런타임 타일 호출 없음 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
@@ -161,6 +300,27 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
             </filter>
           </defs>
 
+          {/* 코스를 지면에서 띄운 경우에만 그림자와 받침선을 깐다.
+              건물이 깊이를 만드는 지도에서는 lift 가 0이라 이 층이 통째로 빠진다 */}
+          {data.lift > 0 && (
+            <>
+              <path
+                d={data.courseGround}
+                fill="none"
+                stroke="var(--m-shadow)"
+                strokeWidth={7}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                opacity={0.5}
+              />
+              <g stroke="var(--m-stilt)" strokeWidth={1.5} strokeLinecap="round">
+                {data.stilts.map((d, i) => (
+                  <path key={`s${i}`} d={d} fill="none" />
+                ))}
+              </g>
+            </>
+          )}
+
           {/* 아직 안 달린 구간도 옅게 깔아둔다 — 어디를 도는 코스인지가 먼저다 */}
           <path
             d={data.course}
@@ -170,27 +330,55 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
             strokeDasharray="3 7"
             strokeLinecap="round"
           />
-          {/* 발광 — 선이 잉크가 아니라 빛으로 읽히게 한다 (라이트 스킨에선 opacity 0) */}
-          <path className="course-glow" d={data.course} fill="none" strokeLinejoin="round" strokeLinecap="round" style={drawn} />
-          <path d={data.course} fill="none" stroke="var(--m-halo)" strokeWidth={12} strokeLinejoin="round" strokeLinecap="round" style={drawn} />
+
+          {data.lift > 0 && (
+            <path
+              ref={groundRef}
+              d={data.courseGround}
+              fill="none"
+              stroke="var(--m-shadow)"
+              strokeWidth={5}
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          )}
           <path
-            ref={pathRef}
+            ref={glowRef}
+            className="course-glow"
+            d={data.course}
+            fill="none"
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+          <path
+            ref={haloRef}
+            d={data.course}
+            fill="none"
+            stroke="var(--m-halo)"
+            strokeWidth={12}
+            strokeLinejoin="round"
+            strokeLinecap="round"
+          />
+          <path
+            ref={liftedRef}
             d={data.course}
             fill="none"
             stroke="var(--m-course)"
             strokeWidth={6}
             strokeLinejoin="round"
             strokeLinecap="round"
-            style={drawn}
           />
           <path
+            ref={trailRef}
             d={data.course}
             fill="none"
             stroke="var(--m-trail)"
             strokeWidth={9}
             strokeLinecap="round"
-            style={{ strokeDasharray: trailDash }}
           />
+
+          {/* 주자에서 지면으로 내리는 기둥 */}
+          <line ref={beaconRef} stroke="var(--accent)" strokeWidth={2} opacity={0.5} style={{ display: 'none' }} />
 
           {data.beats.map((b, i) => (
             <circle
@@ -205,7 +393,13 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
           ))}
           {data.markers.map((m, i) => (
             <g key={`m${i}`}>
-              <circle cx={m.x} cy={m.y} r={m.kind === 'start' ? 15 : 12} fill="var(--m-mark)" />
+              {data.lift > 0 && (
+                <>
+                  <ellipse cx={m.x} cy={m.groundY} rx={9} ry={5} fill="var(--m-shadow)" opacity={0.65} />
+                  <line x1={m.x} y1={m.groundY} x2={m.x} y2={m.y} stroke="var(--m-stilt)" strokeWidth={2} />
+                </>
+              )}
+              <circle cx={m.x} cy={m.y} r={m.kind === 'start' ? 14 : 11} fill="var(--m-mark)" />
               <circle cx={m.x} cy={m.y} r={m.kind === 'start' ? 5 : 4} fill="var(--m-bdot)" />
             </g>
           ))}
@@ -215,11 +409,14 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
         {data.landmarks.map((l, i) => (
           <span
             key={`l${i}`}
-            className="pointer-events-none absolute -translate-x-1/2 -translate-y-1/2 whitespace-nowrap text-[11px] font-semibold tracking-[0.16em]"
+            data-keep-size
+            data-base="translate(-50%,-50%)"
+            className="pointer-events-none absolute whitespace-nowrap text-[11px] font-semibold tracking-[0.16em]"
             style={{
               left: `${(l.x / vbW) * 100}%`,
               top: `${(l.y / vbH) * 100}%`,
               color: 'var(--m-lm)',
+              transform: 'translate(-50%,-50%)',
             }}
           >
             {l.name}
@@ -228,49 +425,74 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
         {data.markers.map((m, i) => (
           <span
             key={`ml${i}`}
-            className="pointer-events-none absolute -translate-x-1/2 whitespace-nowrap text-[11px] font-extrabold"
+            data-keep-size
+            data-base="translate(-50%,-100%)"
+            className="pointer-events-none absolute whitespace-nowrap text-[11px] font-extrabold"
             style={{
               left: `${(m.x / vbW) * 100}%`,
-              top: `calc(${(m.y / vbH) * 100}% + 1.1rem)`,
+              top: `calc(${(m.y / vbH) * 100}% - 1.2rem)`,
               color: 'var(--m-mklab)',
+              transform: 'translate(-50%,-100%)',
             }}
           >
             {m.kind === 'start' ? '출발 · 피니시' : '반환점'}
           </span>
         ))}
 
-        {runner && (
+        <span
+          ref={runnerRef}
+          data-keep-size
+          data-base="translate(-50%,-50%)"
+          className="pointer-events-none absolute z-10"
+          style={{ display: 'none', transform: 'translate(-50%,-50%)' }}
+          aria-hidden="true"
+        >
           <span
-            className="pointer-events-none absolute z-10 -translate-x-1/2 -translate-y-1/2"
-            style={runner}
-            aria-hidden="true"
-          >
-            <span
-              className="block h-3.5 w-3.5 rounded-full"
-              style={{
-                background: 'var(--accent)',
-                boxShadow: '0 0 0 3px var(--m-halo, #fff), 0 0 20px 6px var(--accent-line)',
-              }}
-            />
-          </span>
-        )}
+            className="block h-3.5 w-3.5 rounded-full"
+            style={{
+              background: 'var(--accent)',
+              boxShadow: '0 0 0 3px var(--m-halo, #fff), 0 0 20px 6px var(--accent-line)',
+            }}
+          />
+        </span>
+        </div>
 
         <button
           type="button"
-          onClick={() => {
-            setActive(null);
-            setProgress(0);
-            run(0);
-          }}
+          onClick={togglePlay}
           className="absolute right-2 top-2 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-semibold shadow-sm backdrop-blur transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
           style={{ background: 'var(--m-btnBg)', borderColor: 'var(--m-btnLine)', color: 'var(--m-btnFg)' }}
         >
-          <Play className="h-3 w-3" />
-          코스 달려보기
+          {running ? <Pause className="h-3 w-3" /> : <Play className="h-3 w-3" />}
+          {running ? '여기서 멈추기' : '코스 달려보기'}
         </button>
 
+        <button
+          type="button"
+          onClick={toggleFollow}
+          aria-pressed={follow}
+          className="absolute right-2 top-11 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[11px] font-semibold backdrop-blur transition hover:border-[var(--accent)]"
+          style={
+            follow
+              ? { background: 'var(--accent)', borderColor: 'var(--accent)', color: '#fff' }
+              : { background: 'var(--m-btnBg)', borderColor: 'var(--m-btnLine)', color: 'var(--m-btnFg)' }
+          }
+        >
+          {follow ? '따라가는 중' : '전체 보기'}
+        </button>
+
+        {/* 모바일은 지도와 노트가 위아래로 갈린다 — 지금 어느 구간인지 지도 안에서 알려준다 */}
+        {activeBeat && (
+          <div
+            className="pointer-events-none absolute inset-x-2 bottom-2 rounded-[4px] px-3 py-2 text-xs font-bold backdrop-blur lg:hidden"
+            style={{ background: 'var(--m-btnBg)', color: 'var(--m-mklab)' }}
+          >
+            {activeBeat.title}
+          </div>
+        )}
+
         <span
-          className="pointer-events-none absolute bottom-1 right-2 text-[10px] leading-none opacity-80"
+          className="pointer-events-none absolute bottom-1 right-2 text-[10px] leading-none opacity-80 lg:bottom-1"
           style={{ color: 'var(--m-lm)' }}
         >
           {data.attribution}

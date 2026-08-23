@@ -18,8 +18,15 @@ export interface CourseMapData {
   background: string;
   /** 구워둔 배경 스킨 목록. 첫 항목이 기본값 */
   skins?: string[];
+  /** 지면 위로 띄운 코스 — 애니메이션과 주자 위치의 기준선 */
   course: string;
-  markers: { kind: 'start' | 'turn' | 'via'; x: number; y: number; label: string }[];
+  /** 같은 형상을 지면에 붙인 그림자 */
+  courseGround: string;
+  /** 띄운 선과 그림자를 잇는 받침선 */
+  stilts: string[];
+  /** 띄운 높이(viewBox px) */
+  lift: number;
+  markers: { kind: 'start' | 'turn' | 'via'; x: number; y: number; groundY: number; label: string }[];
   landmarks: { name: string; kind: string; x: number; y: number }[];
   /** 코스 위 구간 노트. at 은 경로상 위치(0~1) — 추정 경로라 km 로는 못 적는다 */
   beats: { title: string; note: string; at: number; x: number; y: number }[];
