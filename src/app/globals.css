@@ -933,3 +933,30 @@
 
 .race-frame { display: flex; flex-direction: column; gap: 18px; margin: 20px 0 28px; }
 .race-subtitle { margin: 8px 0 0; font-size: 15px; color: var(--secondary); line-height: 1.5; }
+
+/* ── 대회 코스 지도 스킨 ────────────────────────────────────────────
+   배경 지형은 스킨별로 구운 정적 SVG(<img>)라 색이 박혀 있고,
+   그 위에 겹치는 코스선·표식·라벨만 여기서 칠한다. 톤이 확정되면
+   나머지 스킨 블록과 안 쓰는 .bg.{skin}.svg 를 함께 지운다. */
+.course-skin {
+  --m-ghost: #b0a494; --m-halo: #ffffff; --m-course: var(--accent); --m-trail: transparent;
+  --m-bdot: #b8ada0; --m-mark: #1c1a17; --m-lm: #7d7267; --m-mklab: #1c1a17;
+  --m-panel: transparent; --m-panelFg: var(--primary); --m-beatOn: rgba(255, 77, 0, .07);
+  --m-btnBg: rgba(255, 255, 255, .9); --m-btnLine: var(--accent-line); --m-btnFg: #4a443c;
+  --m-glow: 0;
+}
+.course-skin[data-skin='night'] {
+  --m-ghost: rgba(255, 255, 255, .16); --m-halo: transparent; --m-course: #ff6a2a;
+  --m-trail: #ffd0b8; --m-bdot: #3c4650; --m-mark: #f2f4f6; --m-lm: #7c8794; --m-mklab: #e7ebef;
+  --m-panel: #0e1216; --m-panelFg: #e7ebef; --m-beatOn: rgba(255, 77, 0, .1);
+  --m-btnBg: rgba(255, 255, 255, .06); --m-btnLine: rgba(255, 255, 255, .18); --m-btnFg: #e7ebef;
+  --m-glow: .55;
+}
+.course-skin[data-skin='print'] {
+  --m-ghost: rgba(0, 0, 0, .22); --m-halo: #ffffff; --m-course: #111315; --m-trail: var(--accent);
+  --m-bdot: #b9b9b6; --m-mark: #111315; --m-lm: #8b8b87; --m-mklab: #111315;
+  --m-panel: #fbfbfa; --m-panelFg: #111315; --m-beatOn: rgba(255, 77, 0, .07);
+  --m-btnBg: rgba(255, 255, 255, .85); --m-btnLine: rgba(0, 0, 0, .18); --m-btnFg: #111315;
+  --m-glow: 0;
+}
+.course-glow { stroke: var(--accent); stroke-width: 14; filter: url(#course-soft); opacity: var(--m-glow); }

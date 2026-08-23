@@ -40,6 +40,37 @@ const OVERPASS = 'https://overpass-api.de/api/interpreter';
  */
 const CANVAS = { w: 1000, pad: 30, minRatio: 0.55, maxRatio: 1.05 };
 
+/**
+ * 배경 지형 팔레트. 톤 후보를 눈으로 고르려고 셋을 굽는다.
+ * 코스선·표식 색은 CSS(globals.css 의 .course-skin-*)가 맡는다 — 여기는 배경뿐이다.
+ */
+const SKINS = {
+  // 잉크 + 시그널. 배경을 내려서 화면에서 가장 밝은 것이 코스 하나가 되게 한다
+  night: {
+    bg: '#0b0e11', green: '#111a16', water: '#0e1c26', road: '#1b2229', rail: '#181e24',
+    grid: 'rgba(255,255,255,.035)',
+  },
+  // 흑백 인쇄물. 색을 거의 빼고 선의 굵기만으로 위계를 만든다
+  print: {
+    bg: '#ffffff', green: '#f1f1ee', water: '#e9eaec', road: '#e2e2e0', rail: '#ebebe9',
+    grid: 'rgba(0,0,0,.045)',
+  },
+  // 현재 배포본(웜 페이퍼) — 비교 기준
+  light: {
+    bg: '#faf8f4', green: '#e8eee1', water: '#dce7ee', road: '#e9e4dc', rail: '#ece7df',
+    grid: null,
+  },
+};
+
+/** 계기 격자 — 그림이 아니라 '측정된 것'처럼 보이게 하는 최소 장치 */
+function gridLines(h) {
+  const step = 100;
+  let d = '';
+  for (let x = step; x < CANVAS.w; x += step) d += `<path d="M${x} 0L${x} ${h}"/>`;
+  for (let y = step; y < h; y += step) d += `<path d="M0 ${y}L${CANVAS.w} ${y}"/>`;
+  return d;
+}
+
 // ── 유틸 ────────────────────────────────────────────────────────────
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -367,19 +398,24 @@ async function build(eventId) {
 
   // 배경은 별도 SVG 파일로 굽는다 — HTML 에 인라인하면 문서가 60KB 무거워지고
   // RSC 페이로드에 한 번 더 실린다. <img> 로 빼면 캐시되는 정적 자산 하나가 된다
-  // 색은 사이트 팔레트(웜 종이 + 시그널 오렌지)에 맞춘다. 일반 지도의 차가운 회색을 쓰면
-  // 페이지 안에서 이 블록만 따로 논다
-  const bg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${CANVAS.w} ${project.height}">
-<rect width="${CANVAS.w}" height="${project.height}" fill="#faf8f4"/>
-<g fill="#e8eee1">${layers.green.map((d) => `<path d="${d}"/>`).join('')}</g>
-<g fill="#dce7ee">${layers.water.map((d) => `<path d="${d}"/>`).join('')}</g>
-<g fill="none" stroke="#e9e4dc" stroke-width="3" stroke-linecap="round">${layers.roads.map((d) => `<path d="${d}"/>`).join('')}</g>
-<g fill="none" stroke="#ece7df" stroke-width="2" stroke-dasharray="6 5">${layers.rail.map((d) => `<path d="${d}"/>`).join('')}</g>
-</svg>`;
+  // 배경은 <img> 로 부르는 정적 파일이라 CSS 로 색을 못 바꾼다 → 스킨별로 구워 둔다.
+  // 톤이 정해지면 SKINS 를 하나만 남기고 나머지 파일을 지운다
   fs.mkdirSync(MAP_DIR, { recursive: true });
-  const bgFile = path.join(MAP_DIR, `${eventId}.bg.svg`);
-  fs.writeFileSync(bgFile, bg);
-  process.stdout.write(`  → ${path.relative(ROOT, bgFile)} (${(fs.statSync(bgFile).size / 1024).toFixed(0)}KB)\n`);
+  for (const [skin, c] of Object.entries(SKINS)) {
+    const bg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${CANVAS.w} ${project.height}">
+<rect width="${CANVAS.w}" height="${project.height}" fill="${c.bg}"/>
+<g fill="${c.green}">${layers.green.map((d) => `<path d="${d}"/>`).join('')}</g>
+<g fill="${c.water}">${layers.water.map((d) => `<path d="${d}"/>`).join('')}</g>
+<g fill="none" stroke="${c.road}" stroke-width="3" stroke-linecap="round">${layers.roads.map((d) => `<path d="${d}"/>`).join('')}</g>
+<g fill="none" stroke="${c.rail}" stroke-width="2" stroke-dasharray="6 5">${layers.rail.map((d) => `<path d="${d}"/>`).join('')}</g>
+${c.grid ? `<g fill="none" stroke="${c.grid}" stroke-width="1">${gridLines(project.height)}</g>` : ''}
+</svg>`;
+    const bgFile = path.join(MAP_DIR, `${eventId}.bg.${skin}.svg`);
+    fs.writeFileSync(bgFile, bg);
+    process.stdout.write(
+      `  → ${path.relative(ROOT, bgFile)} (${(fs.statSync(bgFile).size / 1024).toFixed(0)}KB)\n`,
+    );
+  }
 
   const out = {
     eventId: cfg.eventId,
@@ -388,7 +424,9 @@ async function build(eventId) {
     sourceNote: cfg.sourceNote,
     sourceUrl: cfg.sourceUrl,
     viewBox: [0, 0, CANVAS.w, project.height],
-    background: `/data/course-maps/${eventId}.bg.svg`,
+    /** 스킨 이름을 끼워 쓴다 — `/data/course-maps/{id}.bg.{skin}.svg` */
+    background: `/data/course-maps/${eventId}.bg.{skin}.svg`,
+    skins: Object.keys(SKINS),
     course: toPath(pts, project, false, 1),
     markers,
     landmarks,

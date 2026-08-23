@@ -404,7 +404,9 @@ if (!fs.existsSync(marathonDir)) {
             error(`[marathon] ${name}: gpx.verifiedAt (YYYY-MM-DD) 누락`);
             marathonOk = false;
           }
-          for (const rel of [gfile, `/data/course-maps/${id}.json`, `/data/course-maps/${id}.bg.svg`]) {
+          const mapJson = path.join(__dirname, '..', 'public/data/course-maps', `${id}.json`);
+          const skins = fs.existsSync(mapJson) ? (JSON.parse(fs.readFileSync(mapJson, 'utf8')).skins ?? []) : [];
+          for (const rel of [gfile, `/data/course-maps/${id}.json`, ...skins.map((s) => `/data/course-maps/${id}.bg.${s}.svg`)]) {
             if (rel && !fs.existsSync(path.join(__dirname, '..', 'public', rel))) {
               error(`[marathon] ${name}: 코스 지도 파일 없음 — public${rel} (node scripts/course-map/build.mjs ${id})`);
               marathonOk = false;

@@ -14,8 +14,10 @@ export interface CourseMapData {
   sourceNote?: string;
   sourceUrl?: string;
   viewBox: [number, number, number, number];
-  /** 배경 지형 SVG 경로. 문서에 인라인하지 않고 <img> 로 부른다 */
+  /** 배경 지형 SVG 경로. `{skin}` 자리에 스킨 이름을 끼워 쓴다. 문서에 인라인하지 않고 <img> 로 부른다 */
   background: string;
+  /** 구워둔 배경 스킨 목록. 첫 항목이 기본값 */
+  skins?: string[];
   course: string;
   markers: { kind: 'start' | 'turn' | 'via'; x: number; y: number; label: string }[];
   landmarks: { name: string; kind: string; x: number; y: number }[];
