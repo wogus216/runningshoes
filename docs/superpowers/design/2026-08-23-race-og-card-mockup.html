@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>대회 OG 카드 시안 — 3종</title>
+<style>
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('/fonts/PretendardVariable.woff2') format('woff2-variations');
+    font-weight: 45 920;
+    font-display: swap;
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    background:#E9E4D8; font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;
+    color:#17150F; padding:40px 24px 80px;
+  }
+  h1 { font-size:22px; margin-bottom:6px; }
+  .lead { font-size:14px; color:#6E6A5E; margin-bottom:32px; line-height:1.6; }
+  .row { margin-bottom:44px; }
+  .label { font-size:15px; font-weight:700; margin-bottom:4px; }
+  .note { font-size:13px; color:#6E6A5E; margin-bottom:12px; line-height:1.5; }
+  .stage { width:600px; height:315px; overflow:hidden; border:1px solid #D9D4C8; box-shadow:0 2px 10px rgba(23,21,15,.08); }
+  .card { width:1200px; height:630px; transform:scale(.5); transform-origin:top left;
+          background:#F7F4ED; position:relative; padding:0 86px; display:flex;
+          flex-direction:column; justify-content:center; overflow:hidden; }
+  .bar { position:absolute; top:0; left:0; right:0; height:9px; background:#FF4D00; }
+  .kicker { display:flex; align-items:center; gap:16px; font-size:26px; font-weight:600;
+            letter-spacing:-.01em; margin-bottom:30px; }
+  .kicker::before { content:''; width:56px; height:4px; background:#FF4D00; flex:none; }
+  .title { font-size:68px; font-weight:800; line-height:1.16; letter-spacing:-.03em; }
+  .sub { margin-top:26px; font-size:30px; font-weight:500; color:#6E6A5E; letter-spacing:-.01em; }
+  .brand { position:absolute; bottom:44px; left:86px; font-size:22px; font-weight:600; color:#7C7768; }
+
+  /* B안 — 날짜 블록 */
+  .b-wrap { display:flex; align-items:center; gap:56px; }
+  .b-date { flex:none; text-align:center; border-right:3px solid #D9D4C8; padding-right:56px; }
+  .b-md { font-size:96px; font-weight:800; line-height:1; letter-spacing:-.04em; }
+  .b-dow { margin-top:10px; font-size:30px; font-weight:600; color:#6E6A5E; }
+  .b-year { margin-top:4px; font-size:22px; color:#7C7768; }
+  .b-body .title { font-size:56px; }
+
+  /* C안 — 종목 칩 */
+  .chips { display:flex; gap:12px; margin-top:28px; }
+  .chip { border:2px solid #17150F; padding:8px 22px; font-size:26px; font-weight:700; }
+  .chip.fee { border-color:#D9D4C8; color:#6E6A5E; font-weight:500; }
+</style>
+</head>
+<body>
+  <h1>대회 OG 카드 시안</h1>
+  <p class="lead">
+    1200×630 · 실제 크기의 50%로 표시. 데이터는 모두 DB 보유분(대회명·날짜·장소·종목 = 108개 전부, 참가비 62개).<br>
+    기존 블로그 썸네일 규칙을 따랐습니다 — 종이톤 배경, 밀도 3단, 오렌지는 그래픽에만(텍스트 대비 미달).
+  </p>
+
+  <div class="row">
+    <div class="label">A안 — 날짜 킥커</div>
+    <div class="note">블로그 썸네일과 가장 비슷한 골격. 킥커 자리에 날짜를 넣었습니다(대회에서 가장 먼저 찾는 정보).</div>
+    <div class="stage"><div class="card">
+      <div class="bar"></div>
+      <div class="kicker">2026년 11월 21일 (토)</div>
+      <div class="title">아식스 서울신문<br>고프리런</div>
+      <div class="sub">여의도공원 문화의마당 · 하프 · 10K</div>
+      <div class="brand">러닝의 모든것</div>
+    </div></div>
+  </div>
+
+  <div class="row">
+    <div class="label">B안 — 날짜 블록</div>
+    <div class="note">날짜를 좌측에 큰 덩어리로 세웁니다. 피드에서 축소돼도 "언제"가 먼저 읽힙니다. 대회명이 길면 56px로 줄어듭니다.</div>
+    <div class="stage"><div class="card">
+      <div class="bar"></div>
+      <div class="b-wrap">
+        <div class="b-date">
+          <div class="b-md">11.21</div>
+          <div class="b-dow">토요일</div>
+          <div class="b-year">2026</div>
+        </div>
+        <div class="b-body">
+          <div class="title">아식스 서울신문<br>고프리런</div>
+          <div class="sub">여의도공원 · 하프 · 10K</div>
+        </div>
+      </div>
+      <div class="brand">러닝의 모든것</div>
+    </div></div>
+  </div>
+
+  <div class="row">
+    <div class="label">C안 — 종목 칩</div>
+    <div class="note">종목·참가비를 칩으로 분리해 "내가 뛸 종목이 있나"를 즉시 보이게 합니다. 참가비가 없는 46개 대회는 칩이 하나 줄어듭니다.</div>
+    <div class="stage"><div class="card">
+      <div class="bar"></div>
+      <div class="kicker">2026년 11월 21일 (토) · 여의도공원</div>
+      <div class="title">아식스 서울신문<br>고프리런</div>
+      <div class="chips">
+        <span class="chip">하프</span>
+        <span class="chip">10K</span>
+        <span class="chip fee">참가비 각 7만원</span>
+      </div>
+      <div class="brand">러닝의 모든것</div>
+    </div></div>
+  </div>
+
+  <div class="row">
+    <div class="label">참고 — 데이터가 적은 대회에서 A안</div>
+    <div class="note">참가비 없음(46개), 장소만 짧음. 빈 칸이 생기지 않는지 확인용.</div>
+    <div class="stage"><div class="card">
+      <div class="bar"></div>
+      <div class="kicker">2026년 10월 10일 (토)</div>
+      <div class="title">카카오프렌즈 런 2026</div>
+      <div class="sub">탄천종합운동장 · 10K · 5K</div>
+      <div class="brand">러닝의 모든것</div>
+    </div></div>
+  </div>
+</body>
+</html>

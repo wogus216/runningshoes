@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
-import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 import { AdSlot } from '@/components/ads/ad-slot';
 
@@ -123,6 +123,35 @@ function formatTimeLimit(hours: number, minutes: number): string {
   return `${hours}시간 ${minutes}분`;
 }
 
+/** 참가비 요약 — 전 종목 같으면 "각 N만원", 다르면 종목별로 */
+function feeSummary(fees?: { distance: string; fee: number }[]): string | null {
+  if (!fees?.length) return null;
+  const won = (n: number) => (n % 10_000 === 0 ? `${n / 10_000}만원` : `${(n / 10_000).toFixed(1)}만원`);
+  const uniq = new Set(fees.map((f) => f.fee));
+  return uniq.size === 1
+    ? `참가비 각 ${won(fees[0].fee)}`
+    : fees.map((f) => `${f.distance} ${won(f.fee)}`).join(' · ');
+}
+
+/**
+ * 설명을 문장 단위로 쪼갠다.
+ *
+ * description 은 마크업 없는 한 덩어리라 화면에서 8줄짜리 회색 벽으로 렌더됐다
+ * (2026-08-23 육안 확인). 글자 수는 336자로 길지 않은데 **한 문단에 대회 소개·작년
+ * 이력·종목·참가비·접수일·래플 일정·소스 신뢰도·주의까지 10가지가 뭉쳐 있어**
+ * 무엇 하나 눈에 걸리지 않았다. 종결어미 "~다." 기준으로 끊어 문단을 나눈다.
+ */
+function splitSentences(text?: string): string[] {
+  if (!text) return [];
+  // "~다." 만으로는 "(가격·수량 미공개). 반면 ~" 처럼 괄호로 끝나는 문장이 안 잘려
+  // 접은 안쪽이 다시 벽이 됐다. 마침표+공백을 경계로 삼되, 소수점·약어는 뒤에 공백이
+  // 없으므로 영향받지 않는다.
+  return text
+    .split(/(?<=\.)\s+/)
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
 function formatDate(dateStr: string): string {
   const date = new Date(dateStr);
   const year = date.getFullYear();
@@ -149,6 +178,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   }
 
   const daysUntil = getDaysUntil(event.date);
+  const feeText = feeSummary(event.raceInfo?.entryFees);
+  const sentences = splitSentences(event.description);
 
   // JSON-LD: SportsEvent (enriched)
   const eventStatusMap: Record<string, string> = {
@@ -318,20 +349,63 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
 
           <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">{event.name}</h1>
 
-          {event.description && (
-            <p className="text-secondary mb-4">{event.description}</p>
-          )}
-
-          <div className="space-y-2 text-secondary">
+          {/*
+            핵심 정보를 설명보다 **위**에 둔다. 종전에는 336자짜리 통짜 문단이 먼저 나와
+            "언제·어디서·얼마" 를 찾으려면 8줄을 읽어야 했다(2026-08-23 육안 확인).
+            방문자는 대회 정보를 확인하러 오지 대회 소개를 읽으러 오지 않는다 —
+            같은 날 실측에서 마라톤 진입 세션의 88.8%가 이 페이지 하나만 보고 나갔다.
+          */}
+          <dl className="grid gap-2.5 text-secondary sm:grid-cols-2">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 shrink-0 text-sky-700" />
-              <span className="font-medium">{formatDate(event.date)}</span>
+              <span className="font-medium text-primary">{formatDate(event.date)}</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 shrink-0 text-sky-700" />
               <span>{event.location}</span>
             </div>
-          </div>
+            {event.distances.length > 0 && (
+              <div className="flex items-center gap-2">
+                <Route className="h-5 w-5 shrink-0 text-sky-700" />
+                <span>{event.distances.join(' · ')}</span>
+              </div>
+            )}
+            {feeText && (
+              <div className="flex items-center gap-2">
+                <Wallet className="h-5 w-5 shrink-0 text-sky-700" />
+                <span>{feeText}</span>
+              </div>
+            )}
+            {event.registrationStart && (
+              <div className="flex items-center gap-2">
+                <FileText className="h-5 w-5 shrink-0 text-sky-700" />
+                <span>
+                  접수 <span className="font-medium text-primary">{formatDate(event.registrationStart)}</span> 시작
+                </span>
+              </div>
+            )}
+          </dl>
+
+          {/* 설명은 핵심 정보 아래로. 앞 2문장만 펼쳐 두고 나머지는 접는다 */}
+          {sentences.length > 0 && (
+            <div className="mt-4 space-y-2 text-sm leading-relaxed text-secondary">
+              {sentences.slice(0, 2).map((s, i) => (
+                <p key={i}>{s}</p>
+              ))}
+              {sentences.length > 2 && (
+                <details>
+                  <summary className="cursor-pointer font-medium text-sky-700 hover:underline">
+                    접수·일정 자세히 ({sentences.length - 2}문장 더)
+                  </summary>
+                  <div className="mt-2 space-y-2">
+                    {sentences.slice(2).map((s, i) => (
+                      <p key={i}>{s}</p>
+                    ))}
+                  </div>
+                </details>
+              )}
+            </div>
+          )}
 
           {event.website && (
             <a
