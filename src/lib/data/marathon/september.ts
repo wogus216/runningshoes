@@ -45,7 +45,16 @@ export const septemberEvents: MarathonEvent[] = [
     courseInfo: {
       terrain: '평지',
       difficulty: '초보자',
-      courseDescription: '여의도공원 문화의 마당 출발 → 서강대교 왕복 10km. 평지 도심 코스로 완주 제한 1시간 30분.',
+      courseDescription:
+        '여의도공원 문화의 마당 출발 → 여의서로 하단도로 → 여의서로 → 서강대교 → 광흥창역 사거리(반환) → 같은 길로 복귀. 평지 도심 코스로 완주 제한 1시간 30분.',
+      gpx: {
+        file: '/data/gpx/hyundai-forest-run-2026.gpx',
+        source: 'reconstructed',
+        verifiedAt: '2026-08-23',
+        sourceNote:
+          '현대자동차 공식 홈페이지가 텍스트로 밝힌 경유지를 OSM 보행 도로망 위에서 새로 이었다',
+        sourceUrl: 'https://www.hyundai.com/kr/ko/brand/forestrun/forestrun-apply/finalrun',
+      },
     },
     raceInfo: {
       entryFees: [{ distance: '10K', fee: 50000 }],

@@ -53,6 +53,34 @@ export type CourseTerrain = '평지' | '언덕' | '산악' | '혼합';
 export type CourseDifficulty = '초보자' | '중급' | '상급';
 export type CertificationType = 'IAAF' | 'AIMS' | 'KAF' | '없음';
 
+/**
+ * 코스 경로 데이터의 출처. 화면 표기와 신뢰도를 가른다.
+ * - measured:      직접 달리며 기록한 GPS. 우리가 만든 사실 데이터
+ * - official:      대회가 배포를 허용한 공식 코스 데이터
+ * - reconstructed: 공식 '코스 설명 텍스트'를 읽고 OSM 도로망 위에서 새로 이은 추정 경로.
+ *                  공식 코스맵 이미지를 따라 그린 것이 아니다(그건 2차적저작물이라 금지)
+ */
+export type CourseGpxSource = 'measured' | 'official' | 'reconstructed';
+
+export interface CourseGpx {
+  /** public/data/gpx/{eventId}.gpx */
+  file: string;
+  source: CourseGpxSource;
+  /** 경로를 마지막으로 확인한 날 'YYYY-MM-DD' */
+  verifiedAt: string;
+  /** 경로를 어떤 서술에서 재구성했는지 — reconstructed 면 필수 */
+  sourceNote?: string;
+  /** 그 서술의 출처 URL */
+  sourceUrl?: string;
+  /**
+   * GPX 에서 계산한 값. **reconstructed 면 넣지 않는다** —
+   * 추정 경로의 거리는 실측이 아니라서 숫자로 적는 순간 실측처럼 읽힌다.
+   * (npm run validate 가 이 조합을 에러로 막는다)
+   */
+  distanceKm?: number;
+  elevationGainM?: number;
+}
+
 export interface CourseInfo {
   terrain: CourseTerrain;
   difficulty: CourseDifficulty;
@@ -60,6 +88,7 @@ export interface CourseInfo {
   courseDescription?: string;
   certification?: CertificationType;
   isLoopCourse?: boolean;
+  gpx?: CourseGpx;
 }
 
 // 참가 안내

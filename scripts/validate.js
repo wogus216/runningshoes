@@ -391,6 +391,39 @@ if (!fs.existsSync(marathonDir)) {
           }
         }
 
+        // 코스 GPX — 추정 경로를 실측처럼 보이게 하지 않는 게 핵심이다
+        const gpxBlock = (block.match(/gpx:\s*\{([\s\S]*?)\n\s{6}\}/) || [])[1];
+        if (gpxBlock) {
+          const gsrc = (gpxBlock.match(/source:\s*'([^']+)'/) || [])[1];
+          const gfile = (gpxBlock.match(/file:\s*'([^']+)'/) || [])[1];
+          if (!['measured', 'official', 'reconstructed'].includes(gsrc)) {
+            error(`[marathon] ${name}: gpx.source '${gsrc}' 는 허용되지 않는 값입니다`);
+            marathonOk = false;
+          }
+          if (!/verifiedAt:\s*'\d{4}-\d{2}-\d{2}'/.test(gpxBlock)) {
+            error(`[marathon] ${name}: gpx.verifiedAt (YYYY-MM-DD) 누락`);
+            marathonOk = false;
+          }
+          for (const rel of [gfile, `/data/course-maps/${id}.json`, `/data/course-maps/${id}.bg.svg`]) {
+            if (rel && !fs.existsSync(path.join(__dirname, '..', 'public', rel))) {
+              error(`[marathon] ${name}: 코스 지도 파일 없음 — public${rel} (node scripts/course-map/build.mjs ${id})`);
+              marathonOk = false;
+            }
+          }
+          // 재구성 경로의 거리·고도는 실측이 아니다. 숫자로 적는 순간 실측처럼 읽힌다
+          if (gsrc === 'reconstructed') {
+            if (/distanceKm:|elevationGainM:/.test(gpxBlock)) {
+              error(
+                `[marathon] ${name}: source가 'reconstructed'인데 distanceKm/elevationGainM 이 있습니다 — 추정 경로의 수치는 적지 않습니다`,
+              );
+              marathonOk = false;
+            }
+            if (!/sourceNote:/.test(gpxBlock)) {
+              warn(`[marathon] ${name}: 재구성 경로인데 sourceNote(무엇을 읽고 그렸는지)가 없습니다`);
+            }
+          }
+        }
+
         // 완성도 (경고): 종료된 대회는 제외
         if (status !== '대회종료') {
           if (!/entryFees:/.test(block)) warn(`[marathon] ${name}: 참가비(entryFees) 없음`);

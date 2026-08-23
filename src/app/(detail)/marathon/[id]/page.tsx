@@ -5,6 +5,7 @@ import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
+import { CourseMap } from '@/components/marathon/course-map';
 import { AdSlot } from '@/components/ads/ad-slot';
 
 type MarathonDetailPageProps = {
@@ -490,6 +491,10 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               코스 정보
             </h2>
             <div className="space-y-4">
+              {event.courseInfo.gpx && (
+                <CourseMap eventId={event.id} gpx={event.courseInfo.gpx} />
+              )}
+
               <div className="flex flex-wrap gap-2">
                 <span className={`inline-flex items-center gap-1 rounded-full px-3 py-1 text-sm font-medium ${difficultyStyles[event.courseInfo.difficulty]}`}>
                   <CircleGauge className="h-3.5 w-3.5" />
