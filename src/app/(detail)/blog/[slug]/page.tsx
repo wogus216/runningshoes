@@ -288,9 +288,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* 대회 글 → 신발/젤 CTA (수동 링크가 적은 글에 자동 삽입) */}
         {(() => {
           const shoeSlugs = extractShoeSlugs(post.content);
+          // raceMeta 는 "이건 대회 글"이라는 명시적 선언이라 제목 추측보다 강하다.
+          // 실제로 88RUN 글 제목에 마라톤·대회·10K 가 하나도 없어 정규식이 false 였고,
+          // C등급 대회 글이 신발 CTA 없이 단독 발행될 뻔했다(2026-08-24)
           const titleHasRace = /마라톤|대회|레이스|에키덴|스카이|울트라|하프|10\s?[kK]|풀코스|러닝.{0,4}이벤트|접수/.test(post.title);
+          const isRacePost = Boolean(post.raceMeta) || titleHasRace;
           // 3개 이상이면 맥락 큐레이션이라 브릿지가 끼어들지 않는다
-          if (!titleHasRace || shoeSlugs.length >= SHOE_LINK_BRIDGE_THRESHOLD || post.category === 'review') return null;
+          if (!isRacePost || shoeSlugs.length >= SHOE_LINK_BRIDGE_THRESHOLD || post.category === 'review') return null;
           return (
             <div className="mt-10">
               <MarathonShoeBridge

@@ -72,4 +72,19 @@ describe('deriveRaceStatus', () => {
     const s = deriveRaceStatus(meta, parseKst('2026-08-24T10:00'));
     expect(s.kind).toBe('open');
   });
+
+  // 88RUN 이 이 구멍을 드러냈다 — 8/14 접수 시작, 마감일 없이 정원 1,988명이
+  // 조기 소진. 달력만 보면 '접수중'이라 글 전체와 모순된 배지가 붙는다
+  it('선착순 소진이면 마감일이 없어도 closed', () => {
+    const meta = { ...base, registrationStart: '2026-08-14T11:00', soldOut: { verifiedAt: '2026-08-24' } };
+    const s = deriveRaceStatus(meta, parseKst('2026-08-24'));
+    expect(s.kind).toBe('closed');
+    expect(s.label).toBe('선착순 마감');
+  });
+
+  it('선착순 소진이어도 대회일이 지나면 past 가 이긴다', () => {
+    const meta = { ...base, registrationStart: '2026-08-14T11:00', soldOut: { verifiedAt: '2026-08-24' } };
+    const s = deriveRaceStatus(meta, parseKst('2026-12-07'));
+    expect(s.kind).toBe('past');
+  });
 });

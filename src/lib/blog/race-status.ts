@@ -50,6 +50,12 @@ export function deriveRaceStatus(meta: RaceMeta, now: Date): RaceStatus {
     return { kind: 'upcoming', label: `접수 D-${days}`, daysUntil: days };
   }
 
+  // 선착순 소진은 달력에 없는 축이다. registrationEnd 보다 먼저 본다 —
+  // 마감일이 남아 있어도 정원이 찼으면 신청은 이미 불가능하다
+  if (meta.soldOut) {
+    return { kind: 'closed', label: '선착순 마감', daysUntil: null };
+  }
+
   if (meta.registrationEnd) {
     const end = parseKst(meta.registrationEnd);
     // 마감일은 그 날 끝까지 유효하다

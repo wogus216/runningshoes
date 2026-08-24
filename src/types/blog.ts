@@ -55,6 +55,13 @@ export interface RaceMeta {
   raceDate: string;
   registrationStart?: string;
   registrationEnd?: string;
+  /**
+   * 선착순 정원이 차서 **날짜와 무관하게** 닫힌 경우.
+   * 상태 계산이 달력만 보기 때문에, 이게 없으면 조기 마감된 대회가 '접수중'으로 뜬다.
+   * ⚠️ 대신 `registrationEnd` 에 아무 날짜나 적으면 안 된다 — '그날까지 열려 있었다'는
+   * 없는 사실이 생긴다. 조기 마감은 마감일이 아니라 정원이라는 다른 축이다.
+   */
+  soldOut?: { verifiedAt: string; note?: string };
   registrationVia?: string;
   action?: { what: string; how: string };
   facts: RaceFact[];
