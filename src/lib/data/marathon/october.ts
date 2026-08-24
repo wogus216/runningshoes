@@ -63,7 +63,7 @@ export const octoberEvents: MarathonEvent[] = [
       terrain: '평지',
       difficulty: '중급',
       courseDescription:
-        '한국공학대 제2캠퍼스 출발 → 시화방조제 왕복. 고저차가 거의 없는 완전 평지 직선 코스라 기록 노리기 좋지만, 방조제 특성상 그늘과 바람막이가 전혀 없어 해풍에 그대로 노출됩니다. 급수는 7.5·13.5km 및 반환점 부근.',
+        '한국공학대 제2캠퍼스 출발 → 시화방조제 왕복. 고저차가 거의 없는 완전 평지 직선 코스라 기록 노리기 좋지만, 방조제 특성상 그늘과 바람막이가 전혀 없어 해풍에 그대로 노출됩니다. 하프 급수는 5·7.5·10(반환점 부근)·13.5·16.5km 다섯 곳입니다.',
     },
     raceInfo: {
       entryFees: [
@@ -71,8 +71,13 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '10K', fee: 35000 },
         { distance: '5K', fee: 20000 },
       ],
+      // 공식 코스맵에 표기된 하프 급수 5곳(5·7.5·10·13.5·16.5km).
+      // 5↔16.5, 7.5↔13.5 가 각각 21.1km 로 맞아떨어져 왕복 코스임이 수치로 확인된다
+      aidStations: 5,
+      aidInterval: '약 2.5~3.5km마다',
       startTime: '09:00',
     },
+    lastVerified: '2026-08-24',
   },
   {
     id: 'transjeju-utmb-2026',
