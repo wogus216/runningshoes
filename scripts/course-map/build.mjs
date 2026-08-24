@@ -59,28 +59,13 @@ const CANVAS = {
 };
 
 /**
- * 배경 지형 팔레트. 톤 후보를 눈으로 고르려고 셋을 굽는다.
- * 코스선·표식 색은 CSS(globals.css 의 .course-skin-*)가 맡는다 — 여기는 배경뿐이다.
+ * 배경 지형 팔레트. 2026-08-24 '나이트 트랙'으로 확정 — 지붕·벽 명도 차이가 유일하게
+ * 제대로 읽히고, 1인칭 주행 화면과 톤이 이어진다. 후보 3안은 커밋 히스토리에 있다.
  */
-const SKINS = {
-  // 잉크 + 시그널. 배경을 내려서 화면에서 가장 밝은 것이 코스 하나가 되게 한다
-  night: {
-    bg: '#0b0e11', green: '#111a16', water: '#0e1c26', road: '#1b2229', rail: '#181e24',
-    grid: 'rgba(255,255,255,.035)',
-    wall: '#161d24', roof: '#38464f', edge: 'rgba(255,255,255,.11)',
-  },
-  // 흑백 인쇄물. 색을 거의 빼고 선의 굵기만으로 위계를 만든다
-  print: {
-    bg: '#ffffff', green: '#f1f1ee', water: '#e9eaec', road: '#e2e2e0', rail: '#ebebe9',
-    grid: 'rgba(0,0,0,.045)',
-    wall: '#dedbd5', roof: '#ffffff', edge: 'rgba(0,0,0,.22)',
-  },
-  // 현재 배포본(웜 페이퍼) — 비교 기준
-  light: {
-    bg: '#faf8f4', green: '#e8eee1', water: '#dce7ee', road: '#e9e4dc', rail: '#ece7df',
-    grid: null,
-    wall: '#ded7ca', roof: '#fbf7ef', edge: 'rgba(70,58,42,.20)',
-  },
+const SKIN = {
+  bg: '#0b0e11', green: '#111a16', water: '#0e1c26', road: '#1b2229', rail: '#181e24',
+  grid: 'rgba(255,255,255,.035)',
+  wall: '#161d24', roof: '#38464f', edge: 'rgba(255,255,255,.11)',
 };
 
 /** 계기 격자 — 그림이 아니라 '측정된 것'처럼 보이게 하는 최소 장치 */
@@ -696,7 +681,8 @@ async function build(eventId) {
   // 배경은 <img> 로 부르는 정적 파일이라 CSS 로 색을 못 바꾼다 → 스킨별로 구워 둔다.
   // 톤이 정해지면 SKINS 를 하나만 남기고 나머지 파일을 지운다
   fs.mkdirSync(MAP_DIR, { recursive: true });
-  for (const [skin, c] of Object.entries(SKINS)) {
+  {
+    const c = SKIN;
     const bg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${CANVAS.w} ${project.height}">
 <rect width="${CANVAS.w}" height="${project.height}" fill="${c.bg}"/>
 <g fill="${c.green}">${layers.green.map((d) => `<path d="${d}"/>`).join('')}</g>
@@ -712,7 +698,7 @@ ${city.bands
   )
   .join('')}
 </svg>`;
-    const bgFile = path.join(MAP_DIR, `${eventId}.bg.${skin}.svg`);
+    const bgFile = path.join(MAP_DIR, `${eventId}.bg.svg`);
     fs.writeFileSync(bgFile, bg);
     process.stdout.write(
       `  → ${path.relative(ROOT, bgFile)} (${(fs.statSync(bgFile).size / 1024).toFixed(0)}KB)\n`,
@@ -730,7 +716,6 @@ ${city.bands
     background: `/data/course-maps/${eventId}.bg.{skin}.svg`,
     /** 1인칭 주행 데이터 — 타보기를 누를 때만 받는다 */
     ride: `/data/course-maps/${eventId}.ride.json`,
-    skins: Object.keys(SKINS),
     /** 띄운 코스 — 애니메이션·주자 위치의 기준선 */
     course: liftedPath,
     /** 지면에 붙는 그림자 (같은 형상, lift 만큼 아래) */

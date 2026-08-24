@@ -53,12 +53,6 @@ const FLY_ZOOM = 2.4;
 const FLY_IN = 0.08;
 const FLY_OUT = 0.06;
 
-const SKIN_LABEL: Record<string, string> = {
-  night: '나이트 트랙',
-  print: '프린트',
-  light: '현재 배포본',
-};
-
 export function CourseMapView({ data }: { data: CourseMapData }) {
   const [, , vbW, vbH] = data.viewBox;
 
@@ -82,7 +76,6 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
   const [active, setActive] = useState<number | null>(null);
   const [running, setRunning] = useState(false);
   const [still, setStill] = useState(false); // 모션을 줄이기로 한 사용자
-  const [skin, setSkin] = useState(data.skins?.[0] ?? 'light');
   const [follow, setFollow] = useState(true);
   const [riding, setRiding] = useState(false);
 
@@ -286,7 +279,7 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
   const activeBeat = active !== null ? data.beats[active] : null;
 
   return (
-    <div className="course-skin grid gap-4 lg:grid-cols-[minmax(0,1fr)_19rem]" data-skin={skin}>
+    <div className="course-skin grid gap-4 lg:grid-cols-[minmax(0,1fr)_19rem]">
       {/* ── 지도 ───────────────────────────────────────── */}
       <div
         ref={boxRef}
@@ -297,7 +290,7 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
         {/* 배경 지형 — 저작 시점에 구운 정적 SVG. 런타임 타일 호출 없음 */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src={data.background.replace('{skin}', skin)}
+          src={data.background}
           alt=""
           aria-hidden="true"
           width={vbW}
@@ -535,29 +528,6 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
           <CourseRide src={data.ride} beats={data.beats} onExit={() => setRiding(false)} />
         )}
 
-        {/* 톤 고르기 — 개발 중에만 뜬다. 배포본에는 없다 */}
-        {process.env.NODE_ENV !== 'production' && (data.skins?.length ?? 0) > 1 && (
-          <div className="absolute left-2 top-2 flex gap-1">
-            {data.skins!.map((s) => (
-              <button
-                key={s}
-                type="button"
-                onClick={() => setSkin(s)}
-                aria-pressed={skin === s}
-                className={`rounded-full border px-2.5 py-1 text-[11px] font-bold backdrop-blur transition ${
-                  skin === s ? 'border-[var(--accent)] bg-[var(--accent)] text-white' : ''
-                }`}
-                style={
-                  skin === s
-                    ? undefined
-                    : { background: 'var(--m-btnBg)', borderColor: 'var(--m-btnLine)', color: 'var(--m-btnFg)' }
-                }
-              >
-                {SKIN_LABEL[s] ?? s}
-              </button>
-            ))}
-          </div>
-        )}
       </div>
 
       {/* ── 구간 노트 ──────────────────────────────────── */}
