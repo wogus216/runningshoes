@@ -64,6 +64,16 @@ export const octoberEvents: MarathonEvent[] = [
       difficulty: '중급',
       courseDescription:
         '한국공학대 제2캠퍼스 출발 → 시화방조제 왕복. 고저차가 거의 없는 완전 평지 직선 코스라 기록 노리기 좋지만, 방조제 특성상 그늘과 바람막이가 전혀 없어 해풍에 그대로 노출됩니다. 하프 급수는 5·7.5·10(반환점 부근)·13.5·16.5km 다섯 곳입니다.',
+      gpx: {
+        file: '/data/gpx/siheung-half-marathon-2026.gpx',
+        source: 'reconstructed',
+        verifiedAt: '2026-08-24',
+        sourceNote:
+          "시흥시 공식 대회 안내의 코스 서술 — '한국공학대학교 제2캠퍼스 출발 → 시화방조제 왕복'. 출발지와 방조제 위 도로만 취해 OSM 보행 도로망 위에서 새로 이었다.",
+        sourceUrl: 'https://www.shmarathon.kr/shmarathon/',
+        caveat:
+          "공식은 반환점을 이름으로 밝히지 않았습니다. 코스맵이 10km 급수대를 '반환점 부근'으로 표기한 점과 하프가 21.1km 왕복이라는 조건에서, 분기 없는 방조제 외길 위 편도 10.55km 지점으로 잡았습니다. 실제 반환 지점은 이와 다를 수 있습니다.",
+      },
     },
     raceInfo: {
       entryFees: [

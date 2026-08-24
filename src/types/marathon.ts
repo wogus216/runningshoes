@@ -70,6 +70,13 @@ export interface CourseGpx {
   verifiedAt: string;
   /** 경로를 어떤 서술에서 재구성했는지 — reconstructed 면 필수 */
   sourceNote?: string;
+  /**
+   * 이 코스에서 **공식 서술만으로는 정해지지 않은 지점**이 있을 때 그 사실과 근거.
+   * 기본 고지문은 "공식이 글로 밝힌 경유지만 가져왔다"고 단언하므로, 한 점이라도
+   * 추론으로 놓았으면 여기에 적어야 그 단언이 거짓말이 되지 않는다.
+   * 값이 있으면 지도 아래에 별도 줄로 노출된다.
+   */
+  caveat?: string;
   /** 그 서술의 출처 URL */
   sourceUrl?: string;
   /**

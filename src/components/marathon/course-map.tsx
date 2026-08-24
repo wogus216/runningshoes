@@ -35,9 +35,16 @@ export function CourseMap({ eventId, gpx }: { eventId: string; gpx: CourseGpx })
             {badge.label}
           </span>
         )}
+        {/* 추론으로 놓은 지점이 있으면 먼저 말한다 — 일반 고지문 뒤에 붙이면
+            "공식이 밝힌 것만 썼다"를 읽은 뒤에 정정을 읽게 된다 */}
+        {gpx.caveat && (
+          <p className="rounded-md border border-amber-200 bg-amber-50 px-2.5 py-2 text-xs leading-relaxed text-amber-900">
+            <strong className="font-semibold">일부 지점은 추론입니다</strong> — {gpx.caveat}
+          </p>
+        )}
         {gpx.source === 'reconstructed' && (
           <p className="text-xs leading-relaxed text-secondary">
-            공식이 <strong className="font-semibold">글로 밝힌 경유지</strong>만 가져와 지도 도로망 위에
+            공식이 <strong className="font-semibold">글로 밝힌 코스 서술</strong>을 지도 도로망 위에
             새로 이은 <strong className="font-semibold">추정 경로</strong>입니다. 보행 도로망을 따라
             이었기 때문에 실제 통제 차도와 선이 다를 수 있고,{' '}
             <strong className="font-semibold">이 경로에서 잰 거리·고도는 적지 않습니다</strong>{' '}
