@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 88run.kr 공식 홈(2026-08-24 확인 — 9/12 미사경정공원·08:30 출발·전 종목 1만원·
+  // 접수 8/14 11시·정원 1,988명) + /apply/apply.php 가 "선착순 1988명 조기 마감" 안내로 응답.
+  // 비교 참가비는 우리 marathon DB 의 9월 수도권 대회 값(안산 4만 ~ 런서울런 7만).
+  'seoul-olympic-88run': {
+    title: '1만원 88RUN, 열흘 만에 마감',
+    subtitle: '88올림픽 조정 경기장 자리에서 1,988명이 달린다',
+    data: '9월 12일 미사경정공원 · 전 종목 1만원 · 같은 달 수도권 10K는 4만~7만원',
+  },
   // 출처: posts/2026-08.ts 요강표 — disneyrunincheon2026.com 대회안내(2026-08-22 확인:
   // 10/24 상상플랫폼·15,000명·10K 8만/5K 6.5만·접수 8/31 10시) + @disneykorea 8/20 티켓 오픈 공지.
   'disney-run-incheon-guide': {

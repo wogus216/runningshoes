@@ -2,6 +2,42 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const septemberEvents: MarathonEvent[] = [
   {
+    id: 'seoul-olympic-88run-2026',
+    name: '2026 서울올림픽기념 88RUN',
+    date: '2026-09-12',
+    month: '9월',
+    location: '하남 미사경정공원 (경기 하남시)',
+    region: '경기',
+    distances: ['10K', '5K'],
+    // 8/14 11시 접수 시작 → 공식 신청 페이지가 "선착순 1988명 조기 마감" alert 로 응답한다(2026-08-24 확인)
+    status: '마감',
+    isMajor: false,
+    website: 'https://88run.kr/',
+    description:
+      '서울올림픽기념국민체육진흥공단 경륜경정총괄본부가 여는 러닝 페스티벌. 1988 서울올림픽 조정·카누 경기가 열린 미사리 조정경기장 자리에서 열리며, 정원도 1,988명으로 그해를 따왔습니다. 참가비가 전 종목 1만원이고 10km·5km 외에 가족런이 따로 있습니다. 8월 14일 오전 11시 접수를 시작해 정원이 조기 마감됐습니다. 5km는 기록칩이 제공되지 않으며, 14세 미만은 보호자와 단체 신청만 가능합니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '미사경정공원 일원을 도는 10km·5km 코스. 공식 안내는 코스를 지도 이미지로만 공개해 경유지 지명은 밝히지 않았습니다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 10000 },
+        { distance: '5K', fee: 10000 },
+      ],
+      expectedParticipants: 1988,
+      startTime: '08:30',
+    },
+    raceKit: {
+      pending:
+        '참가 기념품 구성은 공식이 이미지로만 안내해 확인하지 못했습니다. 부스 참여 기념품(에너지젤·샤워타월·생수 등)과는 별개입니다.',
+      verifiedAt: '2026-08-24',
+    },
+    registrationStart: '2026-08-14',
+    lastVerified: '2026-08-24',
+  },
+  {
     id: 'ansan-marathon-2026',
     name: '2026 안산마라톤대회',
     date: '2026-09-20',
