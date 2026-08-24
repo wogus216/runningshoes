@@ -349,6 +349,41 @@ function tagHeight(tags = {}) {
 }
 
 /**
+ * 눈높이에서 보이는 것들 — 노면과 가로수.
+ *
+ * 배경 지도용 쿼리는 간선도로만 가져온다(작은 길은 지도에서 노이즈다). 그런데
+ * 러너는 그 작은 길 **위에** 서 있다. 눈높이 시점에서는 보행로·자전거도로가
+ * 화면의 절반이라 따로 받아야 한다. 폭도 필요하다 — 선 하나로는 노면이 안 된다.
+ */
+async function fetchSurface(bbox) {
+  const [minLon, minLat, maxLon, maxLat] = bbox;
+  const bb = `${minLat},${minLon},${maxLat},${maxLon}`;
+  const q = `[out:json][timeout:120];
+(
+  way["highway"~"^(motorway|trunk|primary|secondary|tertiary|residential|unclassified|service|living_street|pedestrian|footway|path|cycleway)$"](${bb});
+  node["natural"="tree"](${bb});
+  way["natural"="tree_row"](${bb});
+);
+out geom;`;
+  return overpass(q);
+}
+
+/** 도로 폭(m). lanes 태그가 있으면 그걸 쓰고, 없으면 등급별 통상값 */
+const LANE_M = 3.25;
+const DEFAULT_W = {
+  motorway: 14, trunk: 12, primary: 11, secondary: 9, tertiary: 7.5,
+  residential: 6, unclassified: 6, living_street: 5, service: 4,
+  pedestrian: 6, footway: 3, path: 2.5, cycleway: 3,
+};
+function roadWidth(tags = {}) {
+  const w = parseFloat(String(tags.width ?? ''));
+  if (w > 0) return Math.min(30, w);
+  const lanes = parseFloat(String(tags.lanes ?? ''));
+  if (lanes > 0) return Math.min(30, lanes * LANE_M);
+  return DEFAULT_W[tags.highway] ?? 5;
+}
+
+/**
  * 1인칭 주행용 데이터 — 화면 좌표가 아니라 **미터 좌표**로 낸다.
  *
  * 지도는 저작 시점에 한 각도로 구워두면 되지만, 코스를 타고 지나가는 시점은
@@ -358,7 +393,7 @@ function tagHeight(tags = {}) {
  * 별도 파일로 뺀다 — 타보기를 누른 사람만 받으면 되는 데이터를 모든 방문자의
  * 문서에 실을 이유가 없다.
  */
-function buildRide(osmBuildings, osmContext, pts, bbox) {
+function buildRide(osmBuildings, osmContext, osmSurface, pts, bbox) {
   const [minLon, minLat, maxLon, maxLat] = bbox;
   const lat0 = (minLat + maxLat) / 2;
   const lon0 = (minLon + maxLon) / 2;
@@ -430,16 +465,12 @@ function buildRide(osmBuildings, osmContext, pts, bbox) {
     if (flat.length >= 8) water.push(flat);
   }
 
-  // 도로와 녹지 — 지면이 비어 있으면 아무리 빨라도 속도감이 없다.
-  // 1인칭에서 움직임을 느끼게 하는 건 스쳐 지나가는 선들이다
-  const roads = [];
+  // 녹지 — 배경 쿼리에서
   const green = [];
   for (const el of osmContext.elements ?? []) {
     if (!el.geometry) continue;
     const t = el.tags ?? {};
-    const isRoad = !!t.highway;
-    const isGreen = t.leisure === 'park' || !!t.landuse;
-    if (!isRoad && !isGreen) continue;
+    if (!(t.leisure === 'park' || (t.landuse && !t.highway))) continue;
     const flat = [];
     for (const g of el.geometry) {
       const [x, y] = toM([g.lon, g.lat]);
@@ -447,8 +478,43 @@ function buildRide(osmBuildings, osmContext, pts, bbox) {
       if (n && Math.abs(flat[n - 2] - x) + Math.abs(flat[n - 1] - y) < 8) continue;
       flat.push(x, y);
     }
+    if (flat.length >= 4) green.push(flat);
+  }
+
+  // 노면과 가로수 — 눈높이 화면의 절반이다. [폭m, x0,y0, x1,y1, ...]
+  const roads = [];
+  const trees = [];
+  for (const el of osmSurface.elements ?? []) {
+    const t = el.tags ?? {};
+    if (el.type === 'node' && t.natural === 'tree') {
+      const [x, y] = toM([el.lon, el.lat]);
+      trees.push(x, y);
+      continue;
+    }
+    if (!el.geometry) continue;
+    if (t.natural === 'tree_row') {
+      // 가로수길은 선이다 — 12m 간격으로 나무를 심는다(실제 간격은 미상이라 균등 배치)
+      for (let i = 1; i < el.geometry.length; i++) {
+        const [x0, y0] = toM([el.geometry[i - 1].lon, el.geometry[i - 1].lat]);
+        const [x1, y1] = toM([el.geometry[i].lon, el.geometry[i].lat]);
+        const len = Math.hypot(x1 - x0, y1 - y0);
+        const n = Math.floor(len / 12);
+        for (let k = 0; k <= n; k++) {
+          trees.push(Math.round(x0 + ((x1 - x0) * k) / (n || 1)), Math.round(y0 + ((y1 - y0) * k) / (n || 1)));
+        }
+      }
+      continue;
+    }
+    if (!t.highway) continue;
+    const flat = [];
+    for (const g of el.geometry) {
+      const [x, y] = toM([g.lon, g.lat]);
+      const n = flat.length;
+      if (n && Math.abs(flat[n - 2] - x) + Math.abs(flat[n - 1] - y) < 6) continue;
+      flat.push(x, y);
+    }
     if (flat.length < 4) continue;
-    (isRoad ? roads : green).push(flat);
+    roads.push([Math.round(roadWidth(t) * 10) / 10, ...flat]);
   }
 
   const course = [];
@@ -458,7 +524,7 @@ function buildRide(osmBuildings, osmContext, pts, bbox) {
     if (n && course[n - 2] === x && course[n - 1] === y) continue;
     course.push(x, y);
   }
-  return { unit: 'm', lat0, lon0, buildings, water, roads, green, course };
+  return { unit: 'm', lat0, lon0, buildings, water, roads, green, trees, course };
 }
 
 /**
@@ -598,11 +664,13 @@ async function build(eventId) {
   await sleep(1000);
   const osmBuildings = await fetchBuildings(bbox);
   const city = buildCity(osmBuildings, project);
-  const ride = buildRide(osmBuildings, osm, pts, bbox);
+  await sleep(1000);
+  const osmSurface = await fetchSurface(bbox);
+  const ride = buildRide(osmBuildings, osm, osmSurface, pts, bbox);
   const rideFile = path.join(MAP_DIR, `${eventId}.ride.json`);
   fs.writeFileSync(rideFile, JSON.stringify(ride));
   process.stdout.write(
-    `  주행 데이터 건물 ${ride.buildings.length}동 · 물 ${ride.water.length} · 도로 ${ride.roads.length} · 녹지 ${ride.green.length} → ` +
+    `  주행 데이터 건물 ${ride.buildings.length} · 물 ${ride.water.length} · 노면 ${ride.roads.length} · 녹지 ${ride.green.length} · 가로수 ${ride.trees.length / 2} → ` +
       `${path.relative(ROOT, rideFile)} (${(fs.statSync(rideFile).size / 1024).toFixed(0)}KB)\n`,
   );
   process.stdout.write(

@@ -18,25 +18,27 @@ import { Pause, Play, X } from 'lucide-react';
 type RideData = {
   buildings: number[][]; // [높이m, x0,y0, x1,y1, ...]
   water: number[][]; // [x0,y0, x1,y1, ...]
-  roads: number[][];
+  roads: number[][]; // [폭m, x0,y0, x1,y1, ...]
   green: number[][];
+  trees: number[]; // [x0,y0, x1,y1, ...]
   course: number[]; // [x0,y0, x1,y1, ...]
 };
 
-/** 카메라 */
 /**
- * 지면 위 높이. 48m 로 낮췄더니 여의도 타워(100~300m) 사이를 뚫고 지나가
- * 지붕이 머리 위에서 회색 판으로 스쳐 갔다. 중층 위·타워 아래가 맞다 —
- * 타워는 여전히 올려다보이고, 도시 덩어리 안으로는 안 들어간다.
+ * 시점 둘.
+ *
+ * 드론은 코스 전체 모양을 보여준다. 러너는 그 자리에 서 본 느낌을 준다 —
+ * 위에서 보면 아무리 입체로 세워도 결국 '지도'로 읽히기 때문이다.
+ * 러너 시점은 보이는 거리가 짧아 FAR 도 같이 줄인다(그만큼 가볍다).
  */
-const EYE_M = 95; // 지면 위 높이
-const PITCH = 0.38; // 아래로 기운 각(rad)
-const FOV = 1.15; // 시야각(rad)
-const NEAR = 3; // 근평면(m)
-const FAR = 950; // 이 밖은 그리지 않는다
-const SPEED = 95; // m/s — 실제 러너 속도가 아니라 코스를 훑는 속도다
+const CAM = {
+  drone: { eye: 95, pitch: 0.38, fov: 1.15, far: 950, speed: 95, roll: 0.34 },
+  runner: { eye: 1.65, pitch: 0.02, fov: 1.34, far: 420, speed: 16, roll: 0.1 },
+} as const;
+type Mode = keyof typeof CAM;
+
+const NEAR = 2; // 근평면(m)
 const LOOK_AHEAD = 55; // 진행 방향을 이 거리 앞으로 잡아 흔들림을 줄인다
-const MAX_ROLL = 0.34;
 
 /** 밤 도시 팔레트 — 지도 스킨과 별개로 이 화면 고유의 톤이다 */
 const SKY_TOP = '#05070a';
@@ -44,7 +46,10 @@ const SKY_HORIZON = '#16232f';
 const GROUND = '#0b0f14';
 const WATER = '#0d1c28';
 const GREEN = '#0e1611';
-const ROAD = 'rgba(155,175,195,.22)';
+const ROAD = '#161d24';
+const ROAD_EDGE = 'rgba(150,170,190,.13)';
+const TREE = '#16241a';
+const TRUNK = '#1b1a16';
 const WALL = '#141c23';
 const ROOF = '#28333d';
 const EDGE = 'rgba(255,255,255,.10)';
@@ -84,6 +89,8 @@ export function CourseRide({
 
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [playing, setPlaying] = useState(true);
+  const [mode, setMode] = useState<Mode>('drone');
+  const modeRef = useRef<Mode>('drone');
   const [beat, setBeat] = useState<string | null>(null);
   const [pct, setPct] = useState(0);
 
@@ -150,6 +157,8 @@ export function CourseRide({
     }
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
+    const cam = CAM[modeRef.current];
+    const { eye: EYE_M, pitch: PITCH, fov: FOV, far: FAR } = cam;
     const total = cumRef.current[cumRef.current.length - 1];
     const d = distRef.current;
     const [cx, cy] = at(d);
@@ -166,7 +175,7 @@ export function CourseRide({
     const ny = by - ay;
     const cross = fx * ny - fy * nx;
     const turn = Math.atan2(cross, fx * nx + fy * ny);
-    rollRef.current = lerp(rollRef.current, Math.max(-MAX_ROLL, Math.min(MAX_ROLL, -turn * 1.5)), 0.08);
+    rollRef.current = lerp(rollRef.current, Math.max(-cam.roll, Math.min(cam.roll, -turn * 1.5)), 0.08);
     const roll = rollRef.current;
 
     const focal = W / 2 / Math.tan(FOV / 2);
@@ -243,8 +252,8 @@ export function CourseRide({
     // 물·녹지·도로 — 지면이 비어 있으면 속도가 느껴지지 않는다.
     // 스쳐 지나가는 선이 곧 움직임이다
     /** 전부 FAR 밖이면 건너뛴다 */
-    const tooFar = (flat: number[]) => {
-      for (let i = 0; i < flat.length; i += 2) {
+    const tooFar = (flat: number[], from = 0) => {
+      for (let i = from; i < flat.length; i += 2) {
         const dx = flat[i] - cx;
         const dy = flat[i + 1] - cy;
         if (dx * dx + dy * dy <= FAR * FAR) return false;
@@ -259,31 +268,66 @@ export function CourseRide({
     };
     for (const g of data.green) groundPoly(g, GREEN);
     for (const w of data.water) groundPoly(w, WATER);
-    ctx.strokeStyle = ROAD;
-    ctx.lineWidth = 1.5;
+    // 노면 — 폭 있는 띠로 깐다. 선 하나로는 눈높이에서 바닥이 되지 않는다
+    ctx.beginPath();
     for (const r of data.roads) {
-      ctx.beginPath();
-      let started = false;
-      for (let i = 0; i < r.length; i += 2) {
-        const dx = r[i] - cx;
-        const dy = r[i + 1] - cy;
-        if (dx * dx + dy * dy > FAR * FAR) {
-          started = false;
-          continue;
-        }
-        const v = view(r[i], r[i + 1], 0);
-        if (v[1] < NEAR) {
-          started = false;
-          continue;
-        }
-        const [x, y] = project(v);
-        if (started) ctx.lineTo(x, y);
-        else {
-          ctx.moveTo(x, y);
-          started = true;
-        }
+      if (tooFar(r, 1)) continue;
+      const hw = r[0] / 2;
+      for (let i = 1; i + 3 < r.length; i += 2) {
+        const x0 = r[i];
+        const y0 = r[i + 1];
+        const x1 = r[i + 2];
+        const y1 = r[i + 3];
+        const ex = x1 - x0;
+        const ey = y1 - y0;
+        const el = Math.hypot(ex, ey) || 1;
+        const nx = (-ey / el) * hw;
+        const ny = (ex / el) * hw;
+        const quad = clipNear([
+          view(x0 + nx, y0 + ny, 0),
+          view(x1 + nx, y1 + ny, 0),
+          view(x1 - nx, y1 - ny, 0),
+          view(x0 - nx, y0 - ny, 0),
+        ]);
+        if (quad.length < 3) continue;
+        quad.forEach((v, k) => {
+          const [px, py] = project(v);
+          if (k) ctx.lineTo(px, py);
+          else ctx.moveTo(px, py);
+        });
+        ctx.closePath();
       }
+    }
+    ctx.fillStyle = ROAD;
+    ctx.fill();
+    ctx.strokeStyle = ROAD_EDGE;
+    ctx.lineWidth = 1;
+    ctx.stroke();
+
+    // 가로수 — OSM 에 실제로 찍힌 나무만. 높이·수관은 종 정보가 없어 균일하게 둔다
+    for (let i = 0; i < data.trees.length; i += 2) {
+      const tx = data.trees[i];
+      const ty = data.trees[i + 1];
+      const dx = tx - cx;
+      const dy = ty - cy;
+      const dd = dx * dx + dy * dy;
+      if (dd > FAR * FAR || dx * fx + dy * fy < 0) continue;
+      const base = view(tx, ty, 0);
+      const top = view(tx, ty, 7);
+      if (base[1] < NEAR || top[1] < NEAR) continue;
+      const [bxp, byp] = project(base);
+      const [txp, typ] = project(top);
+      const rad2 = Math.abs(byp - typ) * 0.42;
+      ctx.strokeStyle = TRUNK;
+      ctx.lineWidth = Math.max(1, rad2 * 0.22);
+      ctx.beginPath();
+      ctx.moveTo(bxp, byp);
+      ctx.lineTo(txp, typ);
       ctx.stroke();
+      ctx.fillStyle = mix(TREE, SKY_HORIZON, Math.min(0.85, Math.sqrt(dd) / FAR));
+      ctx.beginPath();
+      ctx.ellipse(txp, typ, rad2, rad2 * 0.85, 0, 0, Math.PI * 2);
+      ctx.fill();
     }
 
     // ── 건물: 먼 것부터 ──
@@ -340,37 +384,71 @@ export function CourseRide({
       fillPoly(top, roof, edge);
     }
 
-    // ── 코스: 발밑에서 앞으로 뻗는 선 ──
+    // ── 코스 ──
+    // 드론에서는 공중에 뜬 선이 코스를 읽게 해주지만, 눈높이에서는 자기가 밟는 길이
+    // 눈앞에 떠 있는 셈이 된다. 러너 시점에서는 노면에 칠한 띠로 바꾼다
     const accent =
       getComputedStyle(cv).getPropertyValue('--accent').trim() || '#FF4D00';
     ctx.save();
     ctx.lineCap = 'round';
     ctx.lineJoin = 'round';
-    for (const [width, alpha] of [
-      [16, 0.18],
-      [7, 0.5],
-      [3, 1],
-    ] as const) {
+    if (modeRef.current === 'runner') {
+      // 노면에 그은 안내선. 실제 도로 표시 폭(약 40cm)이 아니면 발밑에서
+      // 화면을 덮는 오렌지 삼각형이 된다
+      const HW = 0.2;
       ctx.beginPath();
-      let started = false;
-      for (let s = -40; s < 780; s += 8) {
-        const [px, py] = at(d + s);
-        const v = view(px, py, 1);
-        if (v[1] < NEAR) {
-          started = false;
-          continue;
-        }
-        const [x, y] = project(v);
-        if (started) ctx.lineTo(x, y);
-        else {
-          ctx.moveTo(x, y);
-          started = true;
-        }
+      for (let s0 = 0; s0 < cam.far; s0 += 6) {
+        const [x0, y0] = at(d + s0);
+        const [x1, y1] = at(d + s0 + 6);
+        const ex = x1 - x0;
+        const ey = y1 - y0;
+        const el = Math.hypot(ex, ey) || 1;
+        const nx = (-ey / el) * HW;
+        const ny = (ex / el) * HW;
+        const quad = clipNear([
+          view(x0 + nx, y0 + ny, 0.04),
+          view(x1 + nx, y1 + ny, 0.04),
+          view(x1 - nx, y1 - ny, 0.04),
+          view(x0 - nx, y0 - ny, 0.04),
+        ]);
+        if (quad.length < 3) continue;
+        quad.forEach((v, k) => {
+          const [px, py] = project(v);
+          if (k) ctx.lineTo(px, py);
+          else ctx.moveTo(px, py);
+        });
+        ctx.closePath();
       }
-      ctx.globalAlpha = alpha;
-      ctx.lineWidth = width;
-      ctx.strokeStyle = accent;
-      ctx.stroke();
+      ctx.fillStyle = accent;
+      ctx.globalAlpha = 0.85;
+      ctx.fill();
+    } else {
+      for (const [width, alpha] of [
+        [16, 0.18],
+        [7, 0.5],
+        [3, 1],
+      ] as const) {
+        ctx.beginPath();
+        let started = false;
+        for (let s0 = -40; s0 < 780; s0 += 8) {
+          const [px0, py0] = at(d + s0);
+          const v = view(px0, py0, 1);
+          if (v[1] < NEAR) {
+            started = false;
+            continue;
+          }
+          const [x, y] = project(v);
+          if (started) ctx.lineTo(x, y);
+          else {
+            ctx.moveTo(x, y);
+            started = true;
+          }
+        }
+        ctx.globalAlpha = alpha;
+        ctx.lineWidth = width;
+        ctx.strokeStyle = accent;
+        ctx.stroke();
+      }
     }
     ctx.restore();
 
@@ -395,7 +473,7 @@ export function CourseRide({
       const dt = lastRef.current ? Math.min(0.05, (t - lastRef.current) / 1000) : 0;
       lastRef.current = t;
       if (playing) {
-        distRef.current += SPEED * dt;
+        distRef.current += CAM[modeRef.current].speed * dt;
         if (distRef.current >= total) distRef.current = 0;
       }
       draw();
@@ -428,12 +506,40 @@ export function CourseRide({
               {beat}
             </div>
           )}
-          <div className="pointer-events-none absolute inset-x-3 bottom-5 h-[3px] rounded-full bg-white/20">
+          {/* 구간 점프 — 눈높이에서 10km 를 다 달릴 수는 없다. 진행 바가 곧 목차다 */}
+          <div className="absolute inset-x-3 bottom-5 h-[3px] rounded-full bg-white/20">
             <div
-              className="h-full rounded-full"
+              className="pointer-events-none h-full rounded-full"
               style={{ width: `${pct * 100}%`, background: 'var(--accent)' }}
             />
+            {beats.map((b, i) => (
+              <button
+                key={i}
+                type="button"
+                onClick={() => {
+                  distRef.current = cumRef.current[cumRef.current.length - 1] * b.at;
+                  draw();
+                }}
+                title={b.title}
+                aria-label={b.title}
+                className="absolute -top-[5px] h-[13px] w-[13px] -translate-x-1/2 rounded-full border-2 border-white/60 bg-black/60 transition hover:border-[var(--accent)] hover:bg-[var(--accent)]"
+                style={{ left: `${b.at * 100}%` }}
+              />
+            ))}
           </div>
+
+          <button
+            type="button"
+            onClick={() => {
+              const next: Mode = mode === 'drone' ? 'runner' : 'drone';
+              modeRef.current = next;
+              setMode(next);
+              draw();
+            }}
+            className="absolute bottom-3 left-3 inline-flex items-center gap-1.5 rounded-full border border-white/25 bg-white/10 px-3 py-1.5 text-[11px] font-bold text-white backdrop-blur transition hover:bg-white/20"
+          >
+            {mode === 'drone' ? '🏃 러너 눈높이로' : '🛩 드론 시점으로'}
+          </button>
 
           <button
             type="button"
@@ -455,8 +561,9 @@ export function CourseRide({
         지도로
       </button>
 
-      <span className="pointer-events-none absolute left-3 top-3 text-[10px] tracking-wide text-white/45">
-        건물은 OpenStreetMap 에 등록된 실제 높이만 세웠습니다
+      <span className="pointer-events-none absolute left-3 top-3 max-w-[60%] text-[10px] leading-snug tracking-wide text-white/45">
+        건물 높이·노면 폭·가로수는 OpenStreetMap 에 등록된 값만 세웠습니다.
+        난간·가로등·간판은 데이터가 없어 비어 있습니다
       </span>
     </div>
   );
