@@ -740,7 +740,10 @@ async function build(eventId) {
     .filter((w) => w.marker)
     .map((w) => {
       const [x, y] = project([w.lon, w.lat]);
-      return { kind: w.marker, x, y: y - LIFT, groundY: y, label: w.name };
+      // label 은 '화면에 이 문구를 써라'는 명시적 지시일 때만 넣는다.
+      // 웨이포인트 이름을 자동으로 흘리면 반환점 마커가 '반환점' 대신 지명이 되어
+      // "여기가 반환점"이라는 마커 본래의 뜻이 사라진다
+      return { kind: w.marker, x, y: y - LIFT, groundY: y, label: w.markerLabel };
     });
 
   // outboundKm 로 잘라 낸 코스는 반환점이 웨이포인트가 아니라 폴리라인 위 한 점이다.

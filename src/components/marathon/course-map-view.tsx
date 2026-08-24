@@ -53,8 +53,19 @@ const FLY_ZOOM = 2.4;
 const FLY_IN = 0.08;
 const FLY_OUT = 0.06;
 
+/**
+ * 이 비율보다 납작한 지도는 구간노트를 옆이 아니라 아래에 둔다.
+ *
+ * 2단 그리드에서는 **구간노트가 행 높이를 정한다**. 세로로 긴 코스(여의도 0.77)는
+ * 지도가 그 높이를 거의 채우지만, 가로로 긴 코스(시흥 방조제 0.46)는 지도가
+ * 절반만 쓰고 아래 226px 이 빈 칸으로 남았다(1280px 뷰포트 실측).
+ * 쌓으면 지도가 컨테이너 폭을 다 써서 오히려 커진다 — 시흥 기준 285 → 446px.
+ */
+const STACK_BELOW_RATIO = 0.6;
+
 export function CourseMapView({ data }: { data: CourseMapData }) {
   const [, , vbW, vbH] = data.viewBox;
+  const stacked = vbH / vbW < STACK_BELOW_RATIO;
 
   const liftedRef = useRef<SVGPathElement>(null);
   const groundRef = useRef<SVGPathElement>(null);
@@ -279,7 +290,9 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
   const activeBeat = active !== null ? data.beats[active] : null;
 
   return (
-    <div className="course-skin grid gap-4 lg:grid-cols-[minmax(0,1fr)_19rem]">
+    <div
+      className={`course-skin grid gap-4 ${stacked ? '' : 'lg:grid-cols-[minmax(0,1fr)_19rem]'}`}
+    >
       {/* ── 지도 ───────────────────────────────────────── */}
       <div
         ref={boxRef}
@@ -445,7 +458,10 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
               transform: 'translate(-50%,-100%)',
             }}
           >
-            {m.kind === 'start' ? '출발 · 피니시' : '반환점'}
+            {/* 출발은 '출발 · 피니시'가 지명보다 많은 걸 말해 준다(같은 자리라는 사실).
+                반환점은 반대다 — 고정 문구로 덮으면 '반환점 (추정)' 처럼 불확실성을
+                담은 표기가 화면에서 지워져 단정으로 읽힌다 */}
+            {m.kind === 'start' ? '출발 · 피니시' : (m.label ?? '반환점')}
           </span>
         ))}
 
@@ -532,7 +548,9 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
 
       {/* ── 구간 노트 ──────────────────────────────────── */}
       <ol
-        className="flex flex-col gap-1.5 rounded-[6px] p-1.5"
+        className={`gap-1.5 rounded-[6px] p-1.5 ${
+          stacked ? 'grid sm:grid-cols-2 xl:grid-cols-3' : 'flex flex-col'
+        }`}
         style={{ background: 'var(--m-panel)', color: 'var(--m-panelFg)' }}
       >
         {data.beats.map((b, i) => (
