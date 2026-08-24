@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
-import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText } from 'lucide-react';
+import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText, Gift } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 import { CourseMap } from '@/components/marathon/course-map';
 import { AdSlot } from '@/components/ads/ad-slot';
@@ -627,6 +627,47 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                     </table>
                   </div>
                 </div>
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* 기념품 · 지급품 — 신청 전에 실제로 확인하는 항목이다 */}
+        {event.raceKit && (
+          <div className="section-card border border-[var(--accent-line)] bg-white/84 p-6">
+            <h2 className="text-lg font-bold text-primary mb-4 flex items-center gap-2">
+              <Gift className="h-5 w-5 text-sky-700" />
+              기념품 · 지급품
+            </h2>
+            <div className="space-y-3">
+              {event.raceKit.items && event.raceKit.items.length > 0 && (
+                <ul className="flex flex-wrap gap-2">
+                  {event.raceKit.items.map((it) => (
+                    <li
+                      key={it}
+                      className="rounded-full border border-[var(--accent-line)] bg-surface px-3 py-1 text-sm text-primary"
+                    >
+                      {it}
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {event.raceKit.byDistance?.map((b) => (
+                <div key={b.distance} className="rounded-[4px] bg-surface p-3">
+                  <dt className="text-xs text-secondary mb-1">{b.distance} 전용 기념품</dt>
+                  <dd className="text-sm font-medium text-primary">{b.item}</dd>
+                </div>
+              ))}
+              {/* 미확정을 비워 두면 '안 준다'로 읽힌다 — 공식 표기를 그대로 노출한다 */}
+              {event.raceKit.pending && (
+                <p className="rounded-[4px] border border-amber-200 bg-amber-50 px-3 py-2 text-xs leading-relaxed text-amber-800">
+                  {event.raceKit.pending}
+                </p>
+              )}
+              {event.raceKit.verifiedAt && (
+                <p className="text-[11px] text-secondary">
+                  공식 발표 기준 · {event.raceKit.verifiedAt} 확인
+                </p>
               )}
             </div>
           </div>

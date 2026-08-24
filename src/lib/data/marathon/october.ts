@@ -75,7 +75,19 @@ export const octoberEvents: MarathonEvent[] = [
       // 5↔16.5, 7.5↔13.5 가 각각 21.1km 로 맞아떨어져 왕복 코스임이 수치로 확인된다
       aidStations: 5,
       aidInterval: '약 2.5~3.5km마다',
+      expectedParticipants: 5000,
       startTime: '09:00',
+    },
+    raceKit: {
+      items: ['배번호', '기록칩(5km 제외)', '완주메달', '기념품', '간식', '모바일 기록증', '안내책자'],
+      byDistance: [{ distance: '5K', item: '햇토미 쌀 3kg' }],
+      pending: '하프·10km 기념품은 공식 표기가 "미정(확정 시 공지)"입니다.',
+      verifiedAt: '2026-08-24',
+    },
+    logistics: {
+      publicTransport: '오이도역·시흥시청 인근에서 무료 셔틀버스 운행 예정',
+      shuttle: '오이도역, 시흥시청 인근 (운행 예정)',
+      bagStorage: true,
     },
     lastVerified: '2026-08-24',
   },

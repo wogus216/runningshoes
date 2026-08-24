@@ -112,6 +112,24 @@ export interface RaceInfo {
   startTime?: string;
 }
 
+/**
+ * 기념품·지급품.
+ *
+ * 러너가 신청 전에 실제로 확인하는 항목인데 필드가 없어 못 담고 있었다.
+ * ⚠️ 미확정을 빈 값으로 두면 '안 준다'로 읽힌다 — 공식이 "미정"이라고 쓴 건
+ * `pending` 에 그대로 적는다.
+ */
+export interface RaceKit {
+  /** 전 종목 공통 지급품 (배번호·기록칩·완주메달 등) */
+  items?: string[];
+  /** 종목별로 다른 기념품 */
+  byDistance?: { distance: string; item: string }[];
+  /** 공식이 아직 공개하지 않은 항목 — 그대로 노출한다 */
+  pending?: string;
+  /** 확인일 'YYYY-MM-DD' */
+  verifiedAt?: string;
+}
+
 // 교통/편의
 export interface Logistics {
   parking?: string;
@@ -134,6 +152,7 @@ export interface MarathonEvent {
   description?: string;
   courseInfo?: CourseInfo;
   raceInfo?: RaceInfo;
+  raceKit?: RaceKit;
   logistics?: Logistics;
   /** 접수 시작일 'YYYY-MM-DD'. 있으면 밴드 판정과 D-day 표기에 쓴다 */
   registrationStart?: string;
