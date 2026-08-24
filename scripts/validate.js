@@ -404,9 +404,19 @@ if (!fs.existsSync(marathonDir)) {
             error(`[marathon] ${name}: gpx.verifiedAt (YYYY-MM-DD) 누락`);
             marathonOk = false;
           }
+          // ⚠️ 여기서 참조할 경로는 생성물이 '실제로 적어 둔' 값이어야 한다.
+          // 전에는 사라진 `skins` 배열을 읽어 빈 배열이 됐고, 그 결과 배경 SVG 를
+          // 한 번도 검사하지 않았다 — background 가 `{skin}` 이 박힌 죽은 URL 로
+          // 남아 지도 두 장이 흰 판으로 배포됐는데 빌드·타입·lint 는 전부 통과했다
           const mapJson = path.join(__dirname, '..', 'public/data/course-maps', `${id}.json`);
-          const skins = fs.existsSync(mapJson) ? (JSON.parse(fs.readFileSync(mapJson, 'utf8')).skins ?? []) : [];
-          for (const rel of [gfile, `/data/course-maps/${id}.json`, ...skins.map((s) => `/data/course-maps/${id}.bg.${s}.svg`)]) {
+          const built = fs.existsSync(mapJson) ? JSON.parse(fs.readFileSync(mapJson, 'utf8')) : {};
+          for (const rel of [built.background, built.ride].filter(Boolean)) {
+            if (/[{}]/.test(rel)) {
+              error(`[marathon] ${name}: 코스 지도 경로에 치환되지 않은 자리표시자가 남아 있습니다 — ${rel}`);
+              marathonOk = false;
+            }
+          }
+          for (const rel of [gfile, `/data/course-maps/${id}.json`, built.background, built.ride].filter(Boolean)) {
             if (rel && !fs.existsSync(path.join(__dirname, '..', 'public', rel))) {
               error(`[marathon] ${name}: 코스 지도 파일 없음 — public${rel} (node scripts/course-map/build.mjs ${id})`);
               marathonOk = false;

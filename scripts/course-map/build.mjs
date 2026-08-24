@@ -262,6 +262,35 @@ async function routeCourse(cfg) {
       c.shift();
     pts = pts.concat(c);
   }
+  // 반환점이 이름 없는 지점일 때(도로 위 아무 데나 콘 하나) 쓴다.
+  // 마지막 웨이포인트는 '그 방향으로 충분히 멀리'만 잡아 두고, 여기서 공식이 밝힌
+  // 편도 거리로 잘라 낸다. 분기 없는 외길에서만 성립한다 — 갈림길이 있으면
+  // '몇 km 지점'이 한 점으로 정해지지 않는다. cfg.outboundNote 에 근거를 적을 것
+  if (cfg.outboundKm) {
+    const target = cfg.outboundKm * 1000;
+    let acc = 0;
+    const cut = [pts[0]];
+    for (let i = 1; i < pts.length; i++) {
+      const seg = haversine(pts[i - 1], pts[i]);
+      if (acc + seg >= target) {
+        const t = (target - acc) / seg; // 마지막 한 조각은 보간해서 정확히 끊는다
+        cut.push([
+          pts[i - 1][0] + (pts[i][0] - pts[i - 1][0]) * t,
+          pts[i - 1][1] + (pts[i][1] - pts[i - 1][1]) * t,
+        ]);
+        acc = target;
+        break;
+      }
+      acc += seg;
+      cut.push(pts[i]);
+    }
+    if (acc < target)
+      throw new Error(
+        `outboundKm ${cfg.outboundKm}km 에 못 미친다 (라우팅 편도 ${(acc / 1000).toFixed(2)}km). ` +
+          `마지막 웨이포인트를 더 멀리 잡을 것`
+      );
+    pts = cut;
+  }
   // 왕복은 되돌아오는 경로를 다시 라우팅하지 않고 편도를 뒤집어 붙인다.
   // 재라우팅하면 일방통행·횡단 가능 지점 차이로 복귀선이 최대 72m 어긋났다(실측).
   // 공식이 '같은 길로 복귀'라고 밝힌 코스에서 그 어긋남은 순전한 노이즈다
@@ -714,6 +743,13 @@ async function build(eventId) {
       return { kind: w.marker, x, y: y - LIFT, groundY: y, label: w.name };
     });
 
+  // outboundKm 로 잘라 낸 코스는 반환점이 웨이포인트가 아니라 폴리라인 위 한 점이다.
+  // 마지막 웨이포인트(‘그 방향으로 멀리’)에 marker 를 달면 코스 밖에 찍히므로 여기서 놓는다
+  if (cfg.outboundKm) {
+    const [x, y] = project(pts[(pts.length - 1) / 2]);
+    markers.push({ kind: 'turn', x, y: y - LIFT, groundY: y, label: cfg.turnLabel ?? '반환점' });
+  }
+
   // 지명 — 지도에 이름이 없으면 어디를 달리는지 읽히지 않는다.
   // 이름 자체는 사실이라 저작권 문제가 없다(공식 코스맵 표기를 베끼지 않는다)
   const landmarks = (cfg.landmarks ?? []).map((l) => {
@@ -780,8 +816,10 @@ ${city.bands
     sourceNote: cfg.sourceNote,
     sourceUrl: cfg.sourceUrl,
     viewBox: [0, 0, CANVAS.w, project.height],
-    /** 스킨 이름을 끼워 쓴다 — `/data/course-maps/{id}.bg.{skin}.svg` */
-    background: `/data/course-maps/${eventId}.bg.{skin}.svg`,
+    // 톤 후보 시절엔 `{skin}` 을 끼워 썼다. 나이트로 확정하며 파일명에서 스킨을
+    // 뺐는데 이 문자열만 남아 배경이 통째로 404 였다 — 화면은 흰 판이 됐고
+    // 빌드·타입·lint 는 전부 통과했다. 골조를 걷을 땐 URL 을 만드는 자리까지 볼 것
+    background: `/data/course-maps/${eventId}.bg.svg`,
     /** 1인칭 주행 데이터 — 타보기를 누를 때만 받는다 */
     ride: `/data/course-maps/${eventId}.ride.json`,
     /** 띄운 코스 — 애니메이션·주자 위치의 기준선 */
