@@ -18,6 +18,8 @@ export interface CourseMapData {
   background: string;
   /** 구워둔 배경 스킨 목록. 첫 항목이 기본값 */
   skins?: string[];
+  /** 1인칭 주행 데이터 경로 — '타보기'를 누를 때만 받아온다 */
+  ride?: string;
   /** 지면 위로 띄운 코스 — 애니메이션과 주자 위치의 기준선 */
   course: string;
   /** 같은 형상을 지면에 붙인 그림자 */

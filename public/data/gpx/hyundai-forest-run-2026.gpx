@@ -3,7 +3,7 @@
   <metadata>
     <name>hyundai-forest-run-2026</name>
     <desc>reconstructed · 현대자동차 공식 홈페이지에 텍스트로 적힌 코스 서술 — '여의도 공원 → 여의서로 하단도로 → 여의서로 → 서강대교 → 광흥창역 사거리(반환) → 서강대교 → 여의서로 → 여의서로 하단도로 → 여의도 공원'. 이 서술에 나온 지점만 취해 OSM 보행 도로망 위에서 새로 이었다. 공식 코스맵 이미지는 보지도, 따라 그리지도 않았다. 보행 도로망 기준이라 실제 통제 차도와 선이 다를 수 있다.</desc>
-    <time>2026-08-23T00:00:00Z</time>
+    <time>2026-08-24T00:00:00Z</time>
     <copyright author="OpenStreetMap contributors">
       <license>https://opendatacommons.org/licenses/odbl/</license>
     </copyright>

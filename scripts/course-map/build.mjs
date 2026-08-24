@@ -364,6 +364,119 @@ function tagHeight(tags = {}) {
 }
 
 /**
+ * 1인칭 주행용 데이터 — 화면 좌표가 아니라 **미터 좌표**로 낸다.
+ *
+ * 지도는 저작 시점에 한 각도로 구워두면 되지만, 코스를 타고 지나가는 시점은
+ * 매 프레임 카메라가 바뀌므로 브라우저가 직접 투영해야 한다. 그래서 여기서는
+ * 원점(코스 중심) 기준 로컬 ENU 미터로만 내보내고, 투영은 클라이언트가 한다.
+ *
+ * 별도 파일로 뺀다 — 타보기를 누른 사람만 받으면 되는 데이터를 모든 방문자의
+ * 문서에 실을 이유가 없다.
+ */
+function buildRide(osmBuildings, osmContext, pts, bbox) {
+  const [minLon, minLat, maxLon, maxLat] = bbox;
+  const lat0 = (minLat + maxLat) / 2;
+  const lon0 = (minLon + maxLon) / 2;
+  const mPerDegLat = (Math.PI / 180) * R;
+  const mPerDegLon = mPerDegLat * Math.cos(rad(lat0));
+  const toM = ([lon, lat]) => [
+    Math.round((lon - lon0) * mPerDegLon),
+    Math.round((lat - lat0) * mPerDegLat),
+  ];
+
+  const buildings = [];
+  for (const el of osmBuildings.elements ?? []) {
+    const h = tagHeight(el.tags);
+    if (!h) continue;
+    let rings = [];
+    if (el.type === 'way' && el.geometry) rings = [el.geometry.map((g) => [g.lon, g.lat])];
+    else if (el.type === 'relation')
+      rings = (el.members ?? [])
+        .filter((m) => m.geometry && (m.role === 'outer' || m.role === ''))
+        .map((m) => m.geometry.map((g) => [g.lon, g.lat]));
+    for (const ring of rings) {
+      const flat = [];
+      for (const c of ring) {
+        const [x, y] = toM(c);
+        const n = flat.length;
+        if (n && flat[n - 2] === x && flat[n - 1] === y) continue;
+        flat.push(x, y);
+      }
+      if (flat.length < 8) continue; // 삼각형 미만은 버린다
+      // OSM 링은 감김 방향이 제각각이다. 반시계로 통일해 두지 않으면 1인칭에서
+      // 뒷면 컬링이 건물마다 반대로 걸려 앞벽이 뚫려 보인다
+      let area = 0;
+      for (let i = 0; i < flat.length; i += 2) {
+        const j = (i + 2) % flat.length;
+        area += flat[i] * flat[j + 1] - flat[j] * flat[i + 1];
+      }
+      if (area < 0) {
+        const rev = [];
+        for (let i = flat.length - 2; i >= 0; i -= 2) rev.push(flat[i], flat[i + 1]);
+        flat.length = 0;
+        flat.push(...rev);
+      }
+      buildings.push([Math.round(h), ...flat.slice(0, 40)]);
+    }
+  }
+
+  // 물 — 이 코스의 하이라이트가 한강 횡단이라 없으면 다리가 허공에 뜬다
+  const waterRings = [];
+  for (const el of osmContext.elements ?? []) {
+    const t = el.tags ?? {};
+    if (el.type === 'relation' && t.natural === 'water') {
+      const ways = (el.members ?? [])
+        .filter((m) => m.geometry && (m.role === 'outer' || m.role === ''))
+        .map((m) => m.geometry.map((g) => [g.lon, g.lat]));
+      for (const ring of stitchRings(ways)) waterRings.push(ring);
+    } else if (el.geometry && (t.natural === 'water' || t.waterway === 'riverbank')) {
+      waterRings.push(el.geometry.map((g) => [g.lon, g.lat]));
+    }
+  }
+  const water = [];
+  for (const ring of waterRings) {
+    const flat = [];
+    for (const c of ring) {
+      const [x, y] = toM(c);
+      const n = flat.length;
+      if (n && Math.abs(flat[n - 2] - x) + Math.abs(flat[n - 1] - y) < 6) continue;
+      flat.push(x, y);
+    }
+    if (flat.length >= 8) water.push(flat);
+  }
+
+  // 도로와 녹지 — 지면이 비어 있으면 아무리 빨라도 속도감이 없다.
+  // 1인칭에서 움직임을 느끼게 하는 건 스쳐 지나가는 선들이다
+  const roads = [];
+  const green = [];
+  for (const el of osmContext.elements ?? []) {
+    if (!el.geometry) continue;
+    const t = el.tags ?? {};
+    const isRoad = !!t.highway;
+    const isGreen = t.leisure === 'park' || !!t.landuse;
+    if (!isRoad && !isGreen) continue;
+    const flat = [];
+    for (const g of el.geometry) {
+      const [x, y] = toM([g.lon, g.lat]);
+      const n = flat.length;
+      if (n && Math.abs(flat[n - 2] - x) + Math.abs(flat[n - 1] - y) < 8) continue;
+      flat.push(x, y);
+    }
+    if (flat.length < 4) continue;
+    (isRoad ? roads : green).push(flat);
+  }
+
+  const course = [];
+  for (const c of pts) {
+    const [x, y] = toM(c);
+    const n = course.length;
+    if (n && course[n - 2] === x && course[n - 1] === y) continue;
+    course.push(x, y);
+  }
+  return { unit: 'm', lat0, lon0, buildings, water, roads, green, course };
+}
+
+/**
  * 건물을 압출해 깊이 순으로 그린다.
  *
  * 패스를 건물마다 내면 385동 × (지붕+벽) = 수천 개가 되어 문서가 무거워진다.
@@ -498,7 +611,15 @@ async function build(eventId) {
   const osm = await fetchContext(bbox);
   const layers = buildLayers(osm, project);
   await sleep(1000);
-  const city = buildCity(await fetchBuildings(bbox), project);
+  const osmBuildings = await fetchBuildings(bbox);
+  const city = buildCity(osmBuildings, project);
+  const ride = buildRide(osmBuildings, osm, pts, bbox);
+  const rideFile = path.join(MAP_DIR, `${eventId}.ride.json`);
+  fs.writeFileSync(rideFile, JSON.stringify(ride));
+  process.stdout.write(
+    `  주행 데이터 건물 ${ride.buildings.length}동 · 물 ${ride.water.length} · 도로 ${ride.roads.length} · 녹지 ${ride.green.length} → ` +
+      `${path.relative(ROOT, rideFile)} (${(fs.statSync(rideFile).size / 1024).toFixed(0)}KB)\n`,
+  );
   process.stdout.write(
     `  도시 ${city.count}동 (높이 태그 있는 것만) · 최고 ${city.tallest}px · 밴드 ${city.bands.length}\n`,
   );
@@ -607,6 +728,8 @@ ${city.bands
     viewBox: [0, 0, CANVAS.w, project.height],
     /** 스킨 이름을 끼워 쓴다 — `/data/course-maps/{id}.bg.{skin}.svg` */
     background: `/data/course-maps/${eventId}.bg.{skin}.svg`,
+    /** 1인칭 주행 데이터 — 타보기를 누를 때만 받는다 */
+    ride: `/data/course-maps/${eventId}.ride.json`,
     skins: Object.keys(SKINS),
     /** 띄운 코스 — 애니메이션·주자 위치의 기준선 */
     course: liftedPath,

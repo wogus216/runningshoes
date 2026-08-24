@@ -1,9 +1,15 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useCallback, useEffect, useRef, useState } from 'react';
-import { Pause, Play } from 'lucide-react';
+import { Pause, Play, Rocket } from 'lucide-react';
 
 import type { CourseMapData } from '@/lib/course-map';
+
+// 타보기를 누르는 사람만 이 코드를 받는다
+const CourseRide = dynamic(() => import('./course-ride').then((m) => m.CourseRide), {
+  ssr: false,
+});
 
 /**
  * 코스를 '보는 것'이 아니라 '미리 달려보는 것'으로 만드는 뷰.
@@ -25,17 +31,27 @@ import type { CourseMapData } from '@/lib/course-map';
  * 바뀔 때만 건드린다(달리는 동안 최대 5번).
  */
 
-const RUN_MS = 3400;
+/**
+ * 코스 한 바퀴를 도는 시간. 3.4초는 너무 빨랐다 — 지형을 알아볼 틈이 없다.
+ * 중간에 언제든 멈추거나 구간을 눌러 건너뛸 수 있으니 넉넉하게 잡는다.
+ */
+const RUN_MS = 8200;
 /** 주자 뒤로 남는 잔광의 길이(경로 대비 비율) */
 const TRAIL = 0.06;
 /** 구간을 눌렀을 때 그 지점까지 달려가는 시간 — 거리에 비례 */
-const SEEK_MIN_MS = 260;
-const SEEK_MAX_MS = 700;
+const SEEK_MIN_MS = 320;
+const SEEK_MAX_MS = 900;
+/**
+ * 이징. ease-out 을 쓰면 초반 30% 시간에 거리의 절반을 지나가서 출발이 튄다.
+ * 부드럽게 붙었다 부드럽게 떨어지는 smoothstep 이 맞다.
+ */
+const ease = (t: number) => t * t * (3 - 2 * t);
+
 /** 플라이오버 확대 배율 */
 const FLY_ZOOM = 2.4;
 /** 줌인·줌아웃에 쓰는 진행률 구간 */
-const FLY_IN = 0.12;
-const FLY_OUT = 0.08;
+const FLY_IN = 0.08;
+const FLY_OUT = 0.06;
 
 const SKIN_LABEL: Record<string, string> = {
   night: '나이트 트랙',
@@ -68,6 +84,7 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
   const [still, setStill] = useState(false); // 모션을 줄이기로 한 사용자
   const [skin, setSkin] = useState(data.skins?.[0] ?? 'light');
   const [follow, setFollow] = useState(true);
+  const [riding, setRiding] = useState(false);
 
   /**
    * 카메라 — 구워둔 씬을 확대해 (fx, fy) 지점을 화면 가운데로 가져온다.
@@ -161,7 +178,7 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
       const span = to - from;
       const tick = (t: number) => {
         const raw = Math.min(1, (t - t0) / ms);
-        const p = from + span * (1 - Math.pow(1 - raw, 2));
+        const p = from + span * ease(raw);
         paint(p);
         if (followBeats) {
           let cur = -1;
@@ -497,6 +514,26 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
         >
           {data.attribution}
         </span>
+
+        {data.ride && !riding && (
+          <button
+            type="button"
+            onClick={() => {
+              stop();
+              setRunning(false);
+              setRiding(true);
+            }}
+            className="absolute bottom-2 left-2 inline-flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-xs font-bold shadow-sm backdrop-blur transition hover:border-[var(--accent)] hover:text-[var(--accent)]"
+            style={{ background: 'var(--m-btnBg)', borderColor: 'var(--m-btnLine)', color: 'var(--m-btnFg)' }}
+          >
+            <Rocket className="h-3 w-3" />
+            코스 타보기
+          </button>
+        )}
+
+        {riding && data.ride && (
+          <CourseRide src={data.ride} beats={data.beats} onExit={() => setRiding(false)} />
+        )}
 
         {/* 톤 고르기 — 개발 중에만 뜬다. 배포본에는 없다 */}
         {process.env.NODE_ENV !== 'production' && (data.skins?.length ?? 0) > 1 && (
