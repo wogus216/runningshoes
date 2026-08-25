@@ -3364,6 +3364,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-plus-2-leak-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-10',
+    updatedAt: '2026-08-25',
     category: 'review' as const,
     readingTime: 6,
     tags: ['나이키 페가수스 플러스 2', '페가수스 플러스', '나이키 러닝화', '러닝화 리크', '신상 러닝화'],
@@ -3377,10 +3378,18 @@ export const posts_2026_07: BlogPost[] = [
   </ul>
 </div>
 
+<div class="callout warning">
+  <span class="callout-icon">✅</span>
+  <div class="callout-body">
+    <p class="callout-title">2026년 8월 25일 갱신 — 공식 발표가 나왔습니다</p>
+    <p>아래 본문은 <strong>2026년 7월 10일 리크 단계에서 작성된 기록</strong>입니다. 이후 나이키가 정식 발표를 했고, 여기서 "확정할 수 없다"고 적은 것들의 답이 나왔습니다. <strong>미드솔은 ZoomX가 맞았고</strong>(ReactX 다운그레이드설은 틀렸습니다), 전족부에 곡선형 Air Zoom 유닛이 노출되는 구조가 더해졌습니다. 또 아래에서 예상 출시를 "2026년 말~2027년 초"로 적었으나 <strong>실제 글로벌 출시는 8월 30일, 한국은 9월 초</strong>로 훨씬 빨랐습니다. 확정된 내용은 <a href="/blog/nike-pegasus-plus-2-release-2026">페가수스 플러스 2 공식 발표 정리</a>에서 보실 수 있습니다.</p>
+  </div>
+</div>
+
 <div class="callout info">
   <span class="callout-icon">🔍</span>
   <div class="callout-body">
-    <p class="callout-title">아직 '리크' 단계 — 공식 발표 아님</p>
+    <p class="callout-title">아직 '리크' 단계 — 공식 발표 아님 (2026년 7월 기준 기록)</p>
     <p>이번 이미지는 나이키 공식 발표가 아니라 <strong>인스타그램 스니커 리크 계정(@the_secret_shoe)을 통해 처음 공개</strong>됐고, SneakerNews가 이를 기사화(2026-07-08)하면서 알려졌습니다. <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>가 나온 지 약 2년 만에 후속작 디자인이 유출된 셈이지만, <strong>정식 스펙·가격·출시일은 여전히 미확정</strong>입니다. 아래 내용은 확인된 것과 확인되지 않은 것을 구분해서 정리했습니다.</p>
   </div>
 </div>
@@ -3409,15 +3418,15 @@ export const posts_2026_07: BlogPost[] = [
 <div class="faq">
   <div class="faq-item">
     <p class="faq-q">Q. 지금 페가수스 플러스를 사도 괜찮을까요, 아니면 2세대를 기다려야 하나요?</p>
-    <p class="faq-a">A. 2세대는 정식 스펙조차 안 나온 리크 단계입니다. 미드솔이 바뀔지도 불확실한 상황이라, 지금 필요하면 <a href="/shoes/nike-pegasus-plus">1세대</a>를 사는 게 합리적입니다. 세대 교체를 기다리기엔 최소 반년 이상(2026년 말~2027년 초 예상) 남았습니다.</p>
+    <p class="faq-a">A. <strong>(2026-08-25 정정)</strong> 이 글을 쓴 7월에는 세대 교체가 "최소 반년 이상(2026년 말~2027년 초) 남았다"고 안내했으나, 실제로는 두 달이 채 안 걸려 8월 30일 글로벌 출시가 확정됐습니다. 다만 두 세대는 대체 관계라기보다 성격이 갈립니다 — <a href="/shoes/nike-pegasus-plus">1세대</a>는 풀렝스 ZoomX의 부드러운 스피드 데일리, 2세대는 전족부 에어를 얹은 템포 트레이너입니다. 자세한 비교는 <a href="/blog/nike-pegasus-plus-2-release-2026">공식 발표 정리</a>를 참고하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 한국 출시는 언제쯤 될까요?</p>
-    <p class="faq-a">A. 아직 글로벌 정식 발표도 없는 단계라 한국 출시일은 예측하기 이릅니다. 정식 발표가 나오면 이 글을 갱신하겠습니다.</p>
+    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 글로벌 출시는 8월 30일, 한국은 9월 초로 안내됐습니다. 판매처는 나이키닷컴·나이키 앱·주요 나이키 매장입니다. 한국 정가는 아직 공개되지 않았습니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 미드솔이 ZoomX인지 ReactX인지는 언제 알 수 있나요?</p>
-    <p class="faq-a">A. 나이키의 공식 발표나 신빙성 있는 매체의 실물 확인 전까지는 확정할 수 없습니다. RunRepeat 등의 정량 랩 데이터가 나오는 시점(정식 출시 후)에야 확실해질 가능성이 큽니다.</p>
+    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 나이키 공식 발표로 <strong>ZoomX</strong>임이 확인됐습니다. ReactX 다운그레이드설은 틀렸고, 여기에 전족부 곡선형 Air Zoom 유닛이 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 높아졌다고 밝혔습니다(제조사 기준). 다만 RunRepeat 등 독립 랩의 정량 측정치는 아직 공개되지 않았습니다.</p>
   </div>
 </div>
 

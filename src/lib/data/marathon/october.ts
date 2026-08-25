@@ -2,6 +2,28 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const octoberEvents: MarathonEvent[] = [
   {
+    id: 'geumcheon-health-run-2026',
+    name: '제22회 금천구청장배 건강달리기대회 (수육런)',
+    date: '2026-10-11',
+    month: '10월',
+    location: '안양천 다목적광장 (서울 금천구)',
+    region: '서울',
+    distances: ['10K', '5K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'http://www.gcrun.kr/',
+    description:
+      '완주 후 수육과 막걸리를 내주는 것으로 알려져 러너들 사이에서 "수육런"으로 불리는 금천구 대회입니다. 접수가 두 번에 나뉘어 열립니다 — 금천구민 9월 1일 10시, 일반 9월 7일 10시. 2024년 제20회 때 정원 950명이 접속 폭주 속에 소진됐고, 2025년 제21회는 900명 규모로 열렸습니다. 참가비 30,000원과 10월 11일 일정은 대회 소식 계정(@runner_iffu) 정리 기준이며, 공식 접수 사이트(gcrun.kr)가 2026-08-25 기준 접속되지 않아 대조하지 못했습니다 — 신청 전 공식 공지를 확인하세요.',
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 30000 },
+        { distance: '5K', fee: 30000 },
+      ],
+    },
+    registrationStart: '2026-09-01',
+    lastVerified: '2026-08-25',
+  },
+  {
     id: 'nb-run-your-way-seoul-10k-2026',
     name: '2026 Run your way Seoul 10K Race (뉴발란스 런유어웨이)',
     date: '2026-10-04',

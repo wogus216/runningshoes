@@ -38,6 +38,22 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: @runner_iffu 2026-08-25 게시 접수 안내(10/11 안양천 다목적광장·10K·5K·
+  // 구민 접수 9/1 10시·일반 9/7 10시). ⚠️ 공식 gcrun.kr 이 접속 불가라 원문 대조를 못 했고,
+  // 특히 참가비(3만원)는 2024년 제20회 1만원 보도와 차이가 커 data 줄에 넣지 않았다.
+  'geumcheon-health-run': {
+    title: '수육런, 일반 접수는 6일 뒤',
+    subtitle: '완주하면 수육과 막걸리가 나오는 금천구 대회',
+    data: '10월 11일 안양천 · 금천구민 9/1 10시 · 일반 9/7 10시',
+  },
+  // 출처: 나이키 공식 뉴스룸 발표(ZoomX 미드솔·전족부 노출 곡선형 Air Zoom·1세대 대비
+  // 에너지 리턴 최소 18%·플레이트 없음) + GQ 코리아 2026-08-21(한국 9월 초) + SneakerNews(8/30).
+  // ⚠️ 무게·스택·드롭과 한국 정가는 미공개라 data 줄에 수치로 넣지 않았다.
+  'nike-pegasus-plus-2-release-2026': {
+    title: '페가수스 플러스 2, ZoomX가 맞았다',
+    subtitle: '갈렸던 미드솔 논쟁의 답 — 전족부에 에어가 드러난다',
+    data: '8월 30일 글로벌 · 한국 9월 초 · 에너지 리턴 +18%(1세대 대비, 나이키 발표)',
+  },
   // 출처: 88run.kr 공식 홈(2026-08-24 확인 — 9/12 미사경정공원·08:30 출발·전 종목 1만원·
   // 접수 8/14 11시·정원 1,988명) + /apply/apply.php 가 "선착순 1988명 조기 마감" 안내로 응답.
   // 비교 참가비는 우리 marathon DB 의 9월 수도권 대회 값(안산 4만 ~ 런서울런 7만).
