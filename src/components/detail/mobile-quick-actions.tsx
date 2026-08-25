@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ExternalLink } from 'lucide-react';
 import type { Shoe } from '@/types/shoe';
@@ -9,20 +9,53 @@ type MobileQuickActionsProps = {
   shoe: Shoe;
 };
 
-export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
-  const [isVisible, setIsVisible] = useState(true);
+/** 이 값보다 작게 움직인 건 손떨림으로 보고 무시한다 (px) */
+const SCROLL_NOISE = 6;
+/** 이 지점 위에서는 히어로에 가격·구매 버튼이 이미 있어 바를 띄우지 않는다 (px) */
+const SHOW_AFTER = 100;
 
-  // 스크롤 위치에 따라 표시 여부 결정
+export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
+  const [isVisible, setIsVisible] = useState(false);
+  const lastY = useRef(0);
+
+  /*
+    아래로 읽는 동안에는 비켜주고, 위로 올리면 돌아온다.
+
+    2026-08-25 실측: 이 바가 화면 하단 70px 를 항상 덮어 본문을 가렸다.
+    부상 섹션의 의료 면책 문구("기존 통증이나 부상 이력이 있다면 전문의 상담을
+    우선하세요")가 잘리는 것을 라이브 스크린샷으로 확인했다 — 하필 가장 가리면
+    안 되는 문장이었다. 바를 더 내릴 여지는 없어서(이미 바닥 0.75rem) 대신
+    **읽는 동안 비켜주는** 쪽으로 바꿨다.
+
+    아래로 스크롤 = 본문을 읽는 중 → 숨긴다.
+    위로 스크롤   = 되돌아보거나 행동하려는 것 → 즉시 띄운다.
+    멈춰 있을 때는 직전 상태를 유지한다(깜빡임 방지).
+
+    DOM 에서 제거하지 않고 transform 으로 밀어낸다 — 사라졌다 튀어나오는 대신
+    미끄러져 들어오고, 레이아웃 시프트도 없다.
+  */
   useEffect(() => {
+    lastY.current = window.scrollY;
+
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 100);
+      const y = window.scrollY;
+      const dy = y - lastY.current;
+
+      if (y <= SHOW_AFTER) {
+        setIsVisible(false);
+      } else if (dy > SCROLL_NOISE) {
+        setIsVisible(false);   // 아래로 — 읽는 중
+      } else if (dy < -SCROLL_NOISE) {
+        setIsVisible(true);    // 위로 — 행동하려는 중
+      }
+
+      if (Math.abs(dy) > SCROLL_NOISE) lastY.current = y;
     };
 
-    window.addEventListener('scroll', handleScroll);
+    handleScroll();
+    window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  if (!isVisible) return null;
 
   // 첫 번째 구매 링크 (공식몰 우선)
   const primaryLink = [...(shoe.purchaseLinks || [])].sort((a, b) => {
@@ -41,7 +74,14 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
   //
   // inset-x-3 여백과 border-2 는 유지해 '떠 있는 카드' 성격은 그대로 둔다.
   return (
-    <div className="fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+0.75rem)] z-40 md:hidden">
+    <div
+      aria-hidden={!isVisible}
+      className={[
+        'fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+0.75rem)] z-40 md:hidden',
+        'transition-transform duration-200 ease-out motion-reduce:transition-none',
+        isVisible ? 'translate-y-0' : 'translate-y-[calc(100%+1.5rem)] pointer-events-none',
+      ].join(' ')}
+    >
       <div className="mx-auto flex max-w-5xl items-center justify-between border-2 border-primary bg-white px-4 py-3">
         <div className="min-w-0 pr-3">
           <p className="font-mono font-bold tabular-nums text-primary">₩{shoe.price?.toLocaleString()}</p>
