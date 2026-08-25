@@ -16,6 +16,64 @@ type SimilarShoesProps = {
   currentCategory?: string;
 };
 
+/**
+ * 이 신발 대비 무엇이 다른지 한 줄로. 카드에 무게 배지만 있어서
+ * "39g 가볍다" 같은 차이만 읽히던 것을 보완한다 (2026-08-25 페르소나 평가).
+ *
+ * 부상 이력 러너에게 필요한 축은 무게가 아니라 **지지력**이었다 —
+ * "이 신발보다 미드풋 지지가 강한 대안"을 묻는데 답할 축이 카드에 없었다.
+ * 그래서 안정성·쿠션을 무게·가격보다 앞에 놓고, 차이가 뚜렷한 것만 최대 2개 고른다.
+ *
+ * 데이터를 새로 만들지 않는다 — 전부 기존 specs 에서 계산한다.
+ * 임계값(2점·20g·2만원)은 "말할 가치가 있는 차이"의 하한선이고,
+ * 그 아래는 오차 범위로 보고 아무 말도 하지 않는다.
+ */
+function describeDifference(base: Shoe, other: SimilarShoeInfo): string[] {
+  const notes: { text: string; weight: number }[] = [];
+
+  const bs = base.specs;
+  const os = other.specs;
+
+  // 안정성만 임계값이 1이다. similarShoes 는 성격이 비슷한 신발을 고르므로 같은
+  // 안정화끼리는 차이가 0~1에 몰린다(카야노 33의 유사 4종은 전부 0~1이었다).
+  // 그런데 부상 이력 러너에게는 이 1점이 유일하게 의미 있는 축이라, 2점을 기다리면
+  // 정작 필요한 사람에게 아무 말도 못 하게 된다.
+  if (bs?.stability != null && os?.stability != null) {
+    const d = os.stability - bs.stability;
+    if (Math.abs(d) >= 1) {
+      const much = Math.abs(d) >= 2;
+      notes.push({
+        text: d > 0
+          ? `지지력 ${much ? '더' : '조금 더'} 강함 +${d}`
+          : `지지력 ${much ? '더' : '조금 더'} 약함 ${d}`,
+        weight: Math.abs(d) * 3,
+      });
+    }
+  }
+  if (bs?.cushioning != null && os?.cushioning != null) {
+    const d = os.cushioning - bs.cushioning;
+    if (Math.abs(d) >= 2) {
+      notes.push({ text: d > 0 ? `쿠션 더 두꺼움 +${d}` : `쿠션 더 얇음 ${d}`, weight: Math.abs(d) * 2 });
+    }
+  }
+  if (bs?.weight != null && os?.weight != null) {
+    const d = os.weight - bs.weight;
+    if (Math.abs(d) >= 20) {
+      notes.push({ text: d > 0 ? `${d}g 무거움` : `${Math.abs(d)}g 가벼움`, weight: Math.abs(d) / 15 });
+    }
+  }
+  const bp = base.price;
+  const op = other.price;
+  if (bp != null && op != null) {
+    const d = op - bp;
+    if (Math.abs(d) >= 20000) {
+      notes.push({ text: d > 0 ? `${Math.round(d / 10000)}만원 비쌈` : `${Math.round(Math.abs(d) / 10000)}만원 저렴`, weight: Math.abs(d) / 30000 });
+    }
+  }
+
+  return notes.sort((a, b) => b.weight - a.weight).slice(0, 2).map(n => n.text);
+}
+
 export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarShoesData, currentCategory }: SimilarShoesProps) {
   const [selectedSlugs, setSelectedSlugs] = useState<string[]>([]);
 
@@ -133,6 +191,15 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                     </span>
                   )}
                 </div>
+                {(() => {
+                  const diffs = describeDifference(currentShoe, shoe);
+                  if (diffs.length === 0) return null;
+                  return (
+                    <p className="mt-1.5 font-mono text-[11px] leading-snug text-tertiary">
+                      {currentShoe.name} 대비 {diffs.join(' · ')}
+                    </p>
+                  );
+                })()}
               </div>
               <div
                 className={cn(

@@ -45,13 +45,25 @@ type ShoeDetailTabsProps = {
   resolvedAlternatives?: ResolvedAlternative[];
 };
 
+/**
+ * 모바일 라벨은 데스크톱을 줄인 축약어가 아니라 **러너가 실제로 쓰는 말**이어야 한다.
+ *
+ * 2026-08-25 모바일 페르소나 평가에서 '발형'이 걸렸다 — 발볼이 넓어 와이드를 찾는
+ * 러너가 "내 발볼 맞나?"를 알고 싶을 때, '발볼'도 '사이즈'도 '핏'도 아닌 '발형'을
+ * 누를 이유가 없다. 정작 그 탭 안에 이 사이트의 최대 강점인 발볼 매칭 도구가 있다.
+ * 데스크톱은 '한국인 발'로 뜻이 통하는데 모바일만 의미가 깎여 있었고,
+ * 트래픽 대부분이 모바일이라 손해가 큰 쪽이 축약을 받고 있었다.
+ *
+ * 탭바는 overflow-x-auto 라 가로 여유가 있지만, 6개가 한 화면에 다 보여야
+ * "탭이 더 있다"는 걸 알 수 있어 3글자를 상한으로 잡았다.
+ */
 const tabs = [
   { id: 'specs', label: '스펙', mobileLabel: '스펙' },
-  { id: 'biomechanics', label: '생체역학', mobileLabel: '역학' },
+  { id: 'biomechanics', label: '생체역학', mobileLabel: '주행감' },
   { id: 'injury', label: '부상 예방', mobileLabel: '부상' },
-  { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발형' },
+  { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발볼' },
   { id: 'price', label: '가격', mobileLabel: '가격' },
-  { id: 'reviews', label: '분석', mobileLabel: '분석' },
+  { id: 'reviews', label: '분석', mobileLabel: '유형별' },
 ] as const;
 
 type TabId = typeof tabs[number]['id'];
@@ -124,7 +136,11 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         <div className={activeTab === 'injury' ? '' : 'hidden'}>
           {shoe.injuryPrevention && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
+              <InjuryPrevention
+                injuryPrevention={shoe.injuryPrevention}
+                specs={shoe.specs}
+                biomechanics={shoe.biomechanics}
+              />
             </div>
           )}
         </div>

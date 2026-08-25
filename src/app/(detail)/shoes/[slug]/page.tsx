@@ -372,16 +372,6 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         {/* Hero Section */}
         <HeroSection shoe={shoe} />
 
-        {/* 구매처/최저가 + 제휴 고지 (purchaseLinks가 있을 때만) */}
-        {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
-          <PurchaseLinks
-            purchaseLinks={shoe.purchaseLinks}
-            shoeName={shoe.name}
-            brand={shoe.brand}
-            msrp={shoe.priceAnalysis?.msrp ?? shoe.price}
-          />
-        )}
-
         {hasCompleteData ? (
           <>
             {/* 한줄 요약 */}
@@ -419,6 +409,29 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
             <h2 className="text-2xl font-bold mb-4 text-primary">상세 정보 준비 중</h2>
             <p className="text-secondary">이 신발의 상세 정보는 곧 업데이트될 예정입니다.</p>
           </div>
+        )}
+
+        {/*
+          구매처/최저가 + 제휴 고지.
+
+          2026-08-25 모바일 실측으로 히어로 직후에서 여기로 내렸다. 이 섹션이 1,072px 를
+          쓰는데, 그만큼 상세 탭이 뒤로 밀려 탭바가 6.0번째 화면에 있었다. 탭 6개 중 5개는
+          누르기 전까지 내용이 안 보이므로, 탭이 밀리면 발볼·부상·가격 정보가 통째로 늦어진다
+          (페르소나 과업 15건 중 부분 판정 8건의 주된 원인이 이 깊이였다).
+
+          내려도 구매 경로는 끊기지 않는다 — MobileQuickActions 가 스크롤 100px 이후
+          '구매처 보기'를 화면 하단에 상시 띄우고 있어 기능이 이미 중복돼 있었다.
+
+          ⚠️ hasCompleteData 블록 **밖**에 두는 것이 중요하다. 상세 데이터가 아직
+          부족한 신발(‘상세 정보 준비 중’ 표시)에서도 구매처는 그대로 나와야 한다.
+        */}
+        {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
+          <PurchaseLinks
+            purchaseLinks={shoe.purchaseLinks}
+            shoeName={shoe.name}
+            brand={shoe.brand}
+            msrp={shoe.priceAnalysis?.msrp ?? shoe.price}
+          />
         )}
 
         {/* 본문 하단 광고 (상세 후, 교차 링크 위) */}

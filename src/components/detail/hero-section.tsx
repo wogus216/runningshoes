@@ -8,6 +8,7 @@ import { SaveButton } from "@/components/saved/save-button";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { getShoeDurability } from "@/lib/durability";
+import { cn } from "@/lib/utils";
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -199,6 +200,27 @@ export function HeroSection({ shoe }: HeroSectionProps) {
             <p className="mt-1 text-[13px] leading-relaxed text-background/60">
               {fitTone.label} · 평발 적합성 {koreanFootFit?.flatFootCompatibility === 'excellent' ? '매우 좋음' : koreanFootFit?.flatFootCompatibility === 'good' ? '좋음' : koreanFootFit?.flatFootCompatibility === 'fair' ? '보통' : koreanFootFit?.flatFootCompatibility === 'poor' ? '낮음' : '정보 없음'}
             </p>
+            {/*
+              와이드 여부를 첫 화면에 세운다 — 2026-08-25 모바일 페르소나 평가 결과.
+              발볼이 넓어 와이드를 찾는 러너에게 이건 '있으면 좋은 정보'가 아니라
+              페이지를 계속 볼지 말지를 가르는 첫 관문인데, 그동안 6.9화면 깊이의
+              '발볼' 탭 안에만 있었다. wideOptions 는 130종 전부 채워져 있어
+              (true 58 / false 72, 누락 0) 데이터를 새로 만들 필요가 없었다.
+
+              '없음'도 반드시 적는다. 빈 값으로 두면 '안 준다'가 아니라 '모른다'로
+              읽히고, 발볼 넓은 러너는 확인하러 6.9화면을 더 내려가야 한다.
+              빠르게 포기시키는 것도 이 자리의 역할이다.
+            */}
+            {koreanFootFit ? (
+              <p className={cn(
+                'mt-2 inline-block border px-2 py-1 font-mono text-[11px] tracking-wide',
+                koreanFootFit.wideOptions
+                  ? 'border-accent/50 text-accent'
+                  : 'border-background/25 text-background/50'
+              )}>
+                {koreanFootFit.wideOptions ? '와이드(2E) 있음' : '와이드 없음'}
+              </p>
+            ) : null}
           </div>
         </div>
       </div>
