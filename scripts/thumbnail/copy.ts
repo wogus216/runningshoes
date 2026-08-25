@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 프로-스펙스 공식몰 기획전(datacls=10321) 직접 확인 2026-08-25 — FULL 329,000 / 10K 279,000,
+  // 판매 8/31·9/1 11시. 신발 정가 259,000 은 INFINITE RUSH 제품페이지(PR0UR25F102).
+  // 참가비 15만/10만은 춘천마라톤 공식 대회요강. 차액 8만원은 이 네 값에서 계산한 것이다.
+  'prospecs-chuncheon-marathon-race-package': {
+    title: '춘마 참가권이 아직 남아 있다',
+    subtitle: '접수는 7월에 끝났다 — 프로-스펙스 패키지 8/31 11시',
+    data: 'FULL 32.9만 / 10K 27.9만 · 따로 사면 40.9만 · 차액 8만원',
+  },
   // 출처: @runner_iffu 2026-08-25 게시 접수 안내(10/11 안양천 다목적광장·10K·5K·
   // 구민 접수 9/1 10시·일반 9/7 10시). ⚠️ 공식 gcrun.kr 이 접속 불가라 원문 대조를 못 했고,
   // 특히 참가비(3만원)는 2024년 제20회 1만원 보도와 차이가 커 data 줄에 넣지 않았다.
