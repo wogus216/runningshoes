@@ -385,7 +385,45 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 </span>
               </div>
             )}
+            {/*
+              접수 마감을 이 자리에 세운다 — 신청 여부를 가르는 가장 급한 정보인데
+              그동안 화면 어디에도 없었다(2026-08-25 실측: 경주 페이지에서 '마감' 관련
+              문구 0건). 상단 배지는 '접수중'이라고만 해서 확인된 정보처럼 읽혔다.
+
+              ⚠️ **마감일이 없으면 비워두지 않고 '미확인'이라고 적는다.** 접수중·접수예정
+              44개 중 39개(89%)에 registrationEnd 가 없다. 빈 값은 '마감일이 없다'가
+              아니라 '우리가 아직 확인 못 했다'는 뜻인데, 안 적으면 전자로 읽혀
+              사용자가 여유 있다고 믿고 갔다가 마감을 맞는다.
+            */}
+            {(event.status === '접수중' || event.status === '접수예정') && (
+              <div className="flex items-center gap-2">
+                <Timer className="h-5 w-5 shrink-0 text-sky-700" />
+                {event.registrationEnd ? (
+                  <span>
+                    접수 <span className="font-medium text-primary">{formatDate(event.registrationEnd)}</span> 마감
+                  </span>
+                ) : (
+                  <span className="text-tertiary">
+                    접수 마감일 <span className="font-medium">미확인</span>
+                    {event.website ? ' — 공식 홈에서 확인하세요' : ''}
+                  </span>
+                )}
+              </div>
+            )}
           </dl>
+          {/*
+            status 를 마지막으로 확인한 날. 대회 status·참가비는 시간이 지나면 자동으로
+            틀려지는 값이라, 언제 기준인지 없이 '접수중'만 보이면 그 자체가 오해를 만든다.
+            현재 lastVerified 는 111개 중 18개(16%)에만 있어 없는 경우가 더 많다 —
+            그 사실도 감추지 않는다.
+          */}
+          {(event.status === '접수중' || event.status === '접수예정') && (
+            <p className="mt-3 font-mono text-[11px] text-tertiary">
+              {event.lastVerified
+                ? `접수 상태 ${formatDate(event.lastVerified)} 확인 기준`
+                : '접수 상태 확인일 미기록 — 신청 전 공식 공지를 확인하세요'}
+            </p>
+          )}
 
           {/* 설명은 핵심 정보 아래로. 앞 2문장만 펼쳐 두고 나머지는 접는다 */}
           {sentences.length > 0 && (

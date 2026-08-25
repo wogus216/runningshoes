@@ -262,6 +262,13 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               <RaceHighlights items={post.raceMeta.highlights} />
             </div>
           )}
+          {/*
+            모바일 목차. 사이드바 목차(아래 TableOfContents)는 `hidden xl:block` 이라
+            1280px 이상에서만 뜨고, 정작 스크롤이 힘든 모바일에는 목차가 없었다.
+            인기 비교글은 17.2화면·섹션 27개다(2026-08-25 실측). 섹션 5개 미만이면
+            컴포넌트가 스스로 렌더를 건너뛴다.
+          */}
+          <TableOfContents variant="mobile" />
           {(() => {
             const sanitized = DOMPurify.sanitize(post.content, {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
