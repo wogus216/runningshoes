@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 type QuickSpecsProps = {
   specs: ShoeSpecs;
   koreanFootFit?: KoreanFootFit;
-  heelStack?: number;
   durability?: DurabilityProfile | null;
 };
 
@@ -43,7 +42,7 @@ function SpecBar({ label, value, percentage, color = 'accent' }: SpecBarProps) {
   );
 }
 
-export function QuickSpecs({ specs, koreanFootFit, heelStack, durability }: QuickSpecsProps) {
+export function QuickSpecs({ specs, koreanFootFit, durability }: QuickSpecsProps) {
   // 토박스 너비 표시
   const getToeboxLabel = () => {
     if (!koreanFootFit?.toBoxWidth) return { text: '표준', color: 'text-primary' };
@@ -75,20 +74,13 @@ export function QuickSpecs({ specs, koreanFootFit, heelStack, durability }: Quic
         )}
       </div>
 
-      {/* 실측 기록표 — 상단 2px 잉크 보더 + 칸 사이 1px 보더 */}
-      <div className="grid grid-cols-2 divide-x divide-y divide-border border-t-2 border-primary md:grid-cols-4 md:divide-y-0">
-        <div className="p-3 text-center md:p-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">무게 (US 9)</p>
-          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{specs.weight}g</p>
-        </div>
-        <div className="p-3 text-center md:p-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">힐 스택</p>
-          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{heelStack || '-'}mm</p>
-        </div>
-        <div className="p-3 text-center md:p-4">
-          <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">드롭</p>
-          <p className="mt-1.5 font-mono text-lg font-bold tabular-nums text-primary md:text-xl">{specs.drop || 10}mm</p>
-        </div>
+      {/*
+        무게·힐 스택·드롭 칸을 뺐다 (2026-08-26). 셋 다 히어로 스펙 카드에 같은 값이
+        같은 화면에 이미 있어, 여기서는 두 번째로 읽는 셈이었다('드롭 8mm' 는 한 화면에
+        9번 등장했다). 토박스만 남긴다 — 히어로 FIT SIGNAL 은 '표준/넓음' 같은 등급으로만
+        말하고, 이 칸은 그 등급을 색으로 구분해 보여주는 다른 표현이다.
+      */}
+      <div className="grid grid-cols-1 border-t-2 border-primary">
         <div className="p-3 text-center md:p-4">
           <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-tertiary">토박스</p>
           <p className={cn("mt-1.5 font-mono text-lg font-bold tabular-nums md:text-xl", toebox.color)}>{toebox.text}</p>

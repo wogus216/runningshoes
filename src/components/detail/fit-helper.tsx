@@ -217,9 +217,21 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
         </div>
       </div>
 
-      <p className="text-[11px] text-tertiary leading-relaxed">
-        ※ 발볼 측정법: 가장 넓은 부분(새끼발가락 뿌리~엄지발가락 뿌리)을 자로 재세요. A4 용지 위에 발을 대고 연필로 외곽선을 그린 후 측정하는 게 정확합니다.
-      </p>
+      {/*
+        측정법 안내를 접는다 (2026-08-26). 이미 자기 발볼을 아는 사람에게는 불필요하고,
+        모르는 사람에게만 필요한 내용이라 기본 노출에서 뺀다. 슬라이더를 만지는 순간
+        "이 숫자를 어떻게 재지?"가 떠오르므로 바로 아래에 두는 위치는 유지한다.
+      */}
+      <details className="group">
+        <summary className="cursor-pointer list-none py-1 text-[11px] font-semibold text-accent [&::-webkit-details-marker]:hidden">
+          <span className="group-open:hidden">내 발볼은 어떻게 재나요?</span>
+          <span className="hidden group-open:inline text-tertiary">접기</span>
+        </summary>
+        <p className="mt-1.5 text-[11px] leading-relaxed text-tertiary">
+          가장 넓은 부분(새끼발가락 뿌리~엄지발가락 뿌리)을 자로 재세요.
+          A4 용지 위에 발을 대고 연필로 외곽선을 그린 후 측정하는 게 정확합니다.
+        </p>
+      </details>
     </section>
   );
 }

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Gem, Check, BadgeDollarSign, ShoppingCart, ArrowRight } from 'lucide-react';
+import { Gem, Check, BadgeDollarSign, ArrowRight } from 'lucide-react';
 import type { PriceAnalysis } from "@/types/shoe";
 import type { DurabilityProfile } from "@/lib/durability";
 
@@ -186,23 +186,13 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
         </div>
       )}
 
-      <div className="rounded border border-border bg-[var(--accent-soft)] p-5">
-        <div className="mb-2 flex items-center gap-2 text-lg font-bold text-slate-900">
-          <ShoppingCart className="h-5 w-5" />
-          구매 팁
-        </div>
-        <div className="space-y-2 text-sm leading-7 text-slate-700">
-          <p>
-            <strong>세일 시기:</strong> 연말/설날 시즌, 아울렛에서 할인가 구매 가능
-          </p>
-          <p>
-            <strong>온라인 구매:</strong> 네이버 쇼핑, 쿠팡에서 가격 비교 필수
-          </p>
-          <p>
-            <strong>착화 권장:</strong> 가능하면 매장에서 먼저 신어보기 (사이즈 확인)
-          </p>
-        </div>
-      </div>
+      {/*
+        '구매 팁' 블록 제거 (2026-08-26).
+        "연말/설날 세일 · 네이버·쿠팡 가격 비교 필수 · 매장에서 먼저 신어보기" 세 줄이
+        하드코딩이라 130종 신발에 글자 하나 안 바뀌고 똑같이 나왔다. 이 신발에 대해
+        알 수 있는 게 없는 문장이고, 이런 게 섞이면 읽는 사람이 주변 문단까지 건너뛴다.
+        구매처·최저가는 페이지 하단 PurchaseLinks 와 하단 고정 바가 이미 담당한다.
+      */}
     </section>
   );
 }

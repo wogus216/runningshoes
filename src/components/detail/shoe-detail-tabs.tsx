@@ -102,7 +102,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         <div className={activeTab === 'specs' ? '' : 'hidden'}>
           {shoe.specs && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} heelStack={shoe.biomechanics?.stackHeight?.heel} durability={durability} />
+              <QuickSpecs specs={shoe.specs} koreanFootFit={shoe.koreanFootFit} durability={durability} />
             </div>
           )}
           {shoe.specs && (
@@ -128,7 +128,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         <div className={activeTab === 'biomechanics' ? '' : 'hidden'}>
           {shoe.biomechanics && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <BiomechanicsAnalysis biomechanics={shoe.biomechanics} weight={shoe.specs?.weight} />
+              <BiomechanicsAnalysis biomechanics={shoe.biomechanics} />
             </div>
           )}
         </div>
@@ -136,11 +136,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         <div className={activeTab === 'injury' ? '' : 'hidden'}>
           {shoe.injuryPrevention && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <InjuryPrevention
-                injuryPrevention={shoe.injuryPrevention}
-                specs={shoe.specs}
-                biomechanics={shoe.biomechanics}
-              />
+              <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
             </div>
           )}
         </div>

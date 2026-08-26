@@ -140,15 +140,23 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
         </div>
       )}
 
-      <div className="rounded-[4px] border border-border bg-white p-4 text-xs text-secondary leading-relaxed">
-        <p className="font-semibold text-primary mb-2">교체 신호 체크리스트</p>
-        <ul className="space-y-1">
+      {/*
+        체크리스트를 접는다 (2026-08-26). 네 줄 모두 이 신발이 아니라 러닝화 일반에
+        해당하는 내용이라 130종에 똑같이 나온다. 필요할 때 펼쳐 보면 되는 성격이라
+        기본 노출에서 뺀다 — 지우지는 않는다. 교체 판단의 실제 기준이라는 점은 그대로다.
+      */}
+      <details className="group rounded-[4px] border border-border bg-white">
+        <summary className="cursor-pointer list-none px-4 py-3 text-xs font-semibold text-accent [&::-webkit-details-marker]:hidden">
+          <span className="group-open:hidden">교체 신호 체크리스트 4가지</span>
+          <span className="hidden group-open:inline text-tertiary">접기</span>
+        </summary>
+        <ul className="space-y-1 border-t border-border px-4 py-3 text-xs leading-relaxed text-secondary">
           <li>• 아웃솔 러그가 눈에 띄게 닳았거나 힐 부분이 기울어짐</li>
           <li>• 미드솔이 눌려서 쿠션감이 현저히 감소</li>
           <li>• 러닝 후 평소 없던 무릎·발목·발바닥 통증 시작</li>
           <li>• 같은 페이스로 뛰는데 발이 더 피곤함</li>
         </ul>
-      </div>
+      </details>
     </section>
   );
 }
