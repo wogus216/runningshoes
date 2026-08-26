@@ -7,7 +7,7 @@ import { ChevronLeft } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPostsMeta } from '@/lib/data/blog';
 import { categoryLabels } from '@/types/blog';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
-import { BlogCard } from '@/components/blog/blog-card';
+import { RelatedPostCard } from '@/components/blog/related-post-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { FaqSection } from '@/components/blog/faq-section';
 import { AdSlot } from '@/components/ads/ad-slot';
@@ -344,9 +344,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {relatedPosts.length > 0 && (
           <section className="mb-16">
             <h2 className="text-xl font-bold text-gray-900 mb-6">관심 있을 만한 포스트</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 gap-2 md:grid-cols-2 md:gap-3">
               {relatedPosts.map((relatedPost) => (
-                <BlogCard key={relatedPost.id} post={relatedPost} />
+                <RelatedPostCard key={relatedPost.id} post={relatedPost} />
               ))}
             </div>
           </section>
