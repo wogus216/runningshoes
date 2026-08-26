@@ -63,6 +63,7 @@ public/sitemap*.xml
 /.codex/
 /.playwright-mcp/
 /.claude/skills/db-audit/
+/.claude/skills/mobile-readability-audit/
 
 # todo-estimates만 추적 (클라우드 월간 점검 루틴이 읽음, 2026-07-29)
 !.omc/
