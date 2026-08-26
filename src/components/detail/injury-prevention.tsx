@@ -47,7 +47,7 @@ export function InjuryPrevention({ injuryPrevention }: InjuryPreventionProps) {
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Injury Prevention</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">관절 부담 관점</h2>
-        <p className="text-sm leading-relaxed text-slate-600">무릎, 아킬레스, 족저근막, 정강이 기준으로 이 신발이 어느 쪽에 더 유리한지 압축해 보여줍니다.</p>
+        <p className="text-[15.5px] leading-relaxed text-slate-600">무릎, 아킬레스, 족저근막, 정강이 기준으로 이 신발이 어느 쪽에 더 유리한지 압축해 보여줍니다.</p>
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-3">

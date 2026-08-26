@@ -209,7 +209,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
           <div className="shrink-0 mt-0.5">{tone.icon}</div>
           <div className="space-y-2">
             <p className={`font-bold text-base ${tone.text}`}>{verdict.headline}</p>
-            <p className="text-sm text-primary leading-relaxed">{verdict.detail}</p>
+            <p className="text-[15.5px] text-primary leading-relaxed">{verdict.detail}</p>
             <p className="text-xs text-tertiary mt-2 pt-2 border-t border-current/10">
               <span className="font-semibold">사이즈 조언:</span> {verdict.sizeAdvice}
             </p>

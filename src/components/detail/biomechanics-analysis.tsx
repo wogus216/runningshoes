@@ -17,7 +17,7 @@ function BiomechCard({ title, value, description }: BiomechCardProps) {
     <div className="rounded border border-border bg-white p-5">
       <p className="text-[11px] font-semibold uppercase tracking-[0.22em] text-slate-500">{title}</p>
       <div className={`mt-3 text-3xl font-black tracking-tight text-slate-950 ${description ? 'mb-3' : ''}`}>{value}</div>
-      {description ? <p className="text-sm leading-7 text-slate-600">{description}</p> : null}
+      {description ? <p className="text-[15.5px] leading-relaxed text-slate-600">{description}</p> : null}
     </div>
   );
 }
@@ -79,7 +79,7 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
           <Microscope className="h-7 w-7 text-stone-700" />
           주행 감각의 구조
         </h2>
-        <p className="text-sm leading-relaxed text-slate-600">
+        <p className="text-[15.5px] leading-relaxed text-slate-600">
           {biomechanics.carbonPlate
             ? '카본 플레이트와 폼 조합이 이 신발의 추진 성향을 만듭니다.'
             : '플레이트 없이 폼과 지오메트리로 성향을 만드는 구조입니다.'}

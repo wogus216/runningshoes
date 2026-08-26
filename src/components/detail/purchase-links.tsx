@@ -86,7 +86,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
           <ExternalLink className="h-6 w-6 text-stone-600" />
           {hasComparison ? '스토어별 최저가 비교' : '구매처 바로가기'}
         </h2>
-        <p className="text-sm leading-relaxed text-slate-600">
+        <p className="text-[15.5px] leading-relaxed text-slate-600">
           {hasComparison
             ? `${brand} ${shoeName}의 ${validLinks.length}개 스토어 가격을 한눈에 비교하세요.`
             : `${brand} ${shoeName}을(를) 판매 스토어에서 바로 만나보세요. 가격은 스토어에서 최종 확인하세요.`}

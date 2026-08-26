@@ -118,7 +118,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
           <BadgeDollarSign className="h-5 w-5" />
           가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})
         </h3>
-        <p className="mb-6 text-sm leading-7 text-slate-700 md:text-base">
+        <p className="mb-6 text-[15.5px] leading-relaxed text-slate-700">
           <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은{" "}
           <strong>&ldquo;{getPriceTierDescription()}&rdquo;</strong> 가격대입니다.{" "}
           {category === "레이싱"
@@ -177,7 +177,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
             <Check className="h-5 w-5" />
             현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
           </strong>
-          <p className="mt-2 text-sm leading-7 text-slate-700">
+          <p className="mt-2 text-[15.5px] leading-relaxed text-slate-700">
             비슷한 가격대의 {priceAnalysis.alternatives.slice(0, 3).map(alt => {
               const shoe = findAlt(alt);
               return shoe.brand && shoe.name ? `${shoe.brand} ${shoe.name}` : alt;

@@ -60,7 +60,7 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
         <span className="text-lg shrink-0" aria-hidden="true">📌</span>
         <div>
           <p className="text-xs font-medium text-secondary mb-1.5">한눈에 보기</p>
-          <p className="text-sm leading-relaxed text-primary">{sentences.join(' ')}</p>
+          <p className="text-[15.5px] leading-relaxed text-primary">{sentences.join(' ')}</p>
         </div>
       </div>
     </section>

@@ -110,7 +110,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
             <div>
               <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-tertiary">Editor Read</p>
-              <p className="mt-2 max-w-[54ch] text-sm leading-7 text-secondary">
+              <p className="mt-2 max-w-[54ch] text-[15.5px] leading-relaxed text-secondary">
                 {shoe.description || `${shoe.brand} ${shoe.name}의 핵심 스펙과 주행 성향을 빠르게 확인할 수 있습니다.`}
               </p>
             </div>

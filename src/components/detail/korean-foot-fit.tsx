@@ -84,7 +84,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
-        <p className="text-sm leading-relaxed text-slate-600">{brand} {shoeName}가 발볼, 평발, 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
+        <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}가 발볼, 평발, 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
@@ -119,7 +119,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           <h4 className="mb-3 flex items-center gap-2 text-sm font-semibold text-primary">
             <span>ℹ️</span> 한국 러너 참고사항
           </h4>
-          <p className="text-sm leading-7 text-secondary">
+          <p className="text-[15.5px] leading-relaxed text-secondary">
             {getNote()}
             {koreanFootFit.wideOptions && (
               <strong className="text-primary"> 와이드 옵션이 제공되니 참고하세요.</strong>

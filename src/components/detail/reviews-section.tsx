@@ -49,14 +49,14 @@ function ReviewCard({ review }: { review: Review }) {
           <span className="text-sm font-bold text-[#e11d48]">에디터 평가 {score}/100</span>
         )}
       </div>
-      <p className="text-sm leading-7 text-slate-700 md:text-base">{preview}</p>
+      <p className="text-[15.5px] leading-relaxed text-slate-700">{preview}</p>
       {rest && (
         <details className="group mt-1">
           <summary className="cursor-pointer list-none py-1.5 text-sm font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
             <span className="group-open:hidden">근거 수치까지 보기</span>
             <span className="hidden group-open:inline text-tertiary">접기</span>
           </summary>
-          <p className="mt-2 text-sm leading-7 text-slate-700 md:text-base">{rest}</p>
+          <p className="mt-2 text-[15.5px] leading-relaxed text-slate-700">{rest}</p>
         </details>
       )}
     </div>
@@ -83,7 +83,7 @@ export function ReviewsSection({ reviews }: ReviewsSectionProps) {
           <MessageSquareText className="h-7 w-7 text-stone-700" />
           러너 유형별 적합성 분석
         </h2>
-        <p className="text-sm leading-relaxed text-slate-600">
+        <p className="text-[15.5px] leading-relaxed text-slate-600">
           실사용자 후기가 아니라 <strong className="font-semibold text-slate-800">랩 실측치를 러너 유형별로 해석</strong>한 것입니다.
         </p>
       </div>
