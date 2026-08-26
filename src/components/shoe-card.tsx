@@ -106,7 +106,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     >
       <div className="relative aspect-[4/3] overflow-hidden border-b border-border bg-[var(--bg-warm-alt)] px-2 pb-1 pt-9 md:aspect-square md:flex md:items-center md:justify-center md:p-4">
         <div className="absolute inset-x-2.5 top-2.5 z-20 flex items-start justify-between gap-2 md:inset-x-4 md:top-4">
-          <span className="border border-accent bg-background/95 px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-accent backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
+          <span className="border border-accent bg-[var(--veil-95)] px-2 py-0.5 font-mono text-[9px] font-bold uppercase tracking-[0.14em] text-accent backdrop-blur md:px-2.5 md:py-1 md:text-[10px] md:tracking-[0.18em]">
             {shoe.category}
           </span>
           <div className="flex items-center gap-1.5">
@@ -190,7 +190,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
             {statChips.map((chip) => (
               <span
                 key={chip}
-                className="rounded-[3px] border border-border bg-background/78 px-2.5 py-1 font-mono text-[11px] font-medium text-secondary"
+                className="rounded-[3px] border border-border bg-[var(--veil-80)] px-2.5 py-1 font-mono text-[11px] font-medium text-secondary"
               >
                 {chip}
               </span>

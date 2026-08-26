@@ -36,6 +36,9 @@ const config: Config = {
         secondary: "var(--secondary)",
         tertiary: "var(--tertiary)",
         accent: "var(--accent)",
+        // --accent(#FF4D00)는 흰 배경 대비 3.33:1 로 소형 텍스트(4.5:1)에 미달한다.
+        // 14px 이하 글자에 시그널 색을 쓸 때는 signal-dark(5.26:1)를 쓸 것.
+        "signal-dark": "var(--signal-dark)",
         positive: "var(--positive)",
         warning: "var(--warning)",
         negative: "var(--negative)",

@@ -189,7 +189,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* 뒤로가기 */}
         <Link
           href="/blog"
-          className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-900 transition-colors mb-8"
+          className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors mb-8"
         >
           <ChevronLeft className="w-4 h-4" />
           목록으로
@@ -356,7 +356,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         <div className="pb-8">
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1.5 text-sm text-gray-400 hover:text-gray-900 transition-colors"
+            className="inline-flex items-center gap-1.5 text-sm text-secondary hover:text-primary transition-colors"
           >
             <ChevronLeft className="w-4 h-4" />
             목록으로 돌아가기

@@ -134,7 +134,7 @@ export function TableOfContents({ variant = 'sidebar' }: TocProps = {}) {
                 } py-1 ${
                   activeId === heading.id
                     ? 'text-gray-900 font-medium border-l-2 border-gray-900 -ml-[2px]'
-                    : 'text-gray-400 hover:text-gray-600'
+                    : 'text-secondary hover:text-primary'
                 }`}
               >
                 {heading.text}

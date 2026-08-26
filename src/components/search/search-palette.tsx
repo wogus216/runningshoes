@@ -116,7 +116,7 @@ export function SearchPalette() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 rounded-[4px] border border-border bg-background/90 px-3 py-2 text-sm text-secondary transition hover:border-primary hover:bg-[var(--accent-soft)] md:min-w-[200px]"
+        className="inline-flex items-center gap-2 rounded-[4px] border border-border bg-[var(--veil-90)] px-3 py-2 text-sm text-secondary transition hover:border-primary hover:bg-[var(--accent-soft)] md:min-w-[200px]"
         aria-label="검색"
       >
         <Search className="h-4 w-4" />

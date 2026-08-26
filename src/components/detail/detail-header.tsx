@@ -51,7 +51,7 @@ export function DetailHeader() {
           <div className="flex items-center gap-2">
             <button
               onClick={handleShare}
-              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-[4px] border border-primary/15 bg-background/80 px-3 py-2 text-sm font-medium text-secondary transition hover:border-primary hover:bg-background"
+              className="inline-flex min-h-[40px] items-center gap-1.5 rounded-[4px] border border-primary/15 bg-[var(--veil-80)] px-3 py-2 text-sm font-medium text-secondary transition hover:border-primary hover:bg-background"
               aria-label="현재 페이지 공유"
             >
               <Share2 className="h-4 w-4" />

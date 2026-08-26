@@ -142,7 +142,7 @@ export function ShoeCrossLinks({ shoe }: { shoe: Shoe }) {
           </ul>
           {restPairs.length > 0 && (
             <details className="group mt-2">
-              <summary className="cursor-pointer list-none py-1.5 text-xs font-semibold text-accent [&::-webkit-details-marker]:hidden">
+              <summary className="cursor-pointer list-none py-1.5 text-xs font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
                 <span className="group-open:hidden">비교 {restPairs.length}개 더 보기</span>
                 <span className="hidden group-open:inline text-tertiary">접기</span>
               </summary>
@@ -171,7 +171,7 @@ export function ShoeCrossLinks({ shoe }: { shoe: Shoe }) {
           </ul>
           {restMatrices.length > 0 && (
             <details className="group mt-2">
-              <summary className="cursor-pointer list-none py-1.5 text-xs font-semibold text-accent [&::-webkit-details-marker]:hidden">
+              <summary className="cursor-pointer list-none py-1.5 text-xs font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
                 <span className="group-open:hidden">가이드 {restMatrices.length}개 더 보기</span>
                 <span className="hidden group-open:inline text-tertiary">접기</span>
               </summary>

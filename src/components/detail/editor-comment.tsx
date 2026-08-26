@@ -42,7 +42,7 @@ export function EditorComment({ comment }: EditorCommentProps) {
 
         {rest.length > 0 && (
           <details className="group">
-            <summary className="cursor-pointer list-none py-1 text-sm font-semibold text-accent [&::-webkit-details-marker]:hidden">
+            <summary className="cursor-pointer list-none py-1 text-sm font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
               <span className="group-open:hidden">이어서 읽기 ({rest.length}문단 더)</span>
               <span className="hidden group-open:inline text-tertiary">접기</span>
             </summary>

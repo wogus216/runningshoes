@@ -166,7 +166,11 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
           {specs ? (
             <>
-              <h2 className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background/55">
+              {/* text-background/55 는 CSS 로 생성되지 않는다(--background 가 헥스 var() 참조라
+                  Tailwind 가 오파시티 변형을 만들지 못함 — globals.css 상단 --positive 주석과 같은 함정).
+                  p 태그는 부모의 text-background 를 상속해 우연히 살아남지만, h 태그는 base 레이어의
+                  h1~h6 { color: var(--primary) } 에 걸려 검은 카드 위 검은 글자(대비 1.00:1)가 됐다. */}
+              <h2 className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background">
                 RunRepeat Lab — Measured
               </h2>
               <div className="relative mt-6 grid grid-cols-2 gap-x-5 gap-y-6">

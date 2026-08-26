@@ -130,14 +130,14 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
       {/* 좌우 화살표 */}
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-background/95 transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
+        className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
         aria-label="이전 이미지"
       >
         <ChevronLeft className="w-5 h-5 text-slate-700" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-background/95 transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
+        className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
         aria-label="다음 이미지"
       >
         <ChevronRight className="w-5 h-5 text-slate-700" />

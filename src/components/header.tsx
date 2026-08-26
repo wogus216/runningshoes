@@ -133,7 +133,7 @@ export function Header() {
           </div>
           <Link
             href="/compare"
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-[4px] border border-border bg-background/90 px-3.5 py-2 text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary hover:bg-[var(--accent-soft)]"
+            className="inline-flex min-h-[44px] items-center gap-2 rounded-[4px] border border-border bg-[var(--veil-90)] px-3.5 py-2 text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary hover:bg-[var(--accent-soft)]"
           >
             <Scale className="h-4 w-4" />
             <span>비교</span>

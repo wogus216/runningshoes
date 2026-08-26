@@ -60,7 +60,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
 
       {measuredRows.length > 0 && (
         <details className="group rounded border border-border bg-white">
-          <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-accent [&::-webkit-details-marker]:hidden">
+          <summary className="cursor-pointer list-none px-4 py-3 text-sm font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
             <span className="group-open:hidden">랩 실측치 — 공식 발표와 다른 값 보기</span>
             <span className="hidden group-open:inline text-tertiary">접기</span>
           </summary>

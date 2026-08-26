@@ -32,6 +32,14 @@
   --positive-soft: #F3F7F5;
   --positive-line: rgba(47, 125, 90, 0.3);
 
+  /* 반투명 종이 배경 — bg-background/95 같은 오파시티 유틸은 CSS 로 생성되지 않는다.
+     --background 가 헥스 var() 참조라 Tailwind 가 <alpha-value> 를 끼워넣지 못해
+     클래스가 통째로 사라지고 배경이 투명해진다(위 --positive 주석과 같은 함정).
+     사전 계산한 톤을 토큰으로 두고 bg-[var(--veil-95)] 형태로 쓸 것. */
+  --veil-95: rgba(247, 244, 237, 0.95);
+  --veil-90: rgba(247, 244, 237, 0.90);
+  --veil-80: rgba(247, 244, 237, 0.80);
+
   --signal-dark: #C73800;
   --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
   --warn-soft: #FBF3E4;      /* 대회 상태 배지 upcoming 배경 */
@@ -334,7 +342,7 @@
 [data-blog-content] figcaption {
   text-align: center;
   font-size: 0.8125rem;
-  color: #A5A090;
+  color: var(--secondary);   /* #A5A090 은 흰 배경 대비 2.61:1 로 미달 — secondary 는 4.92:1 */
   margin-top: 0.625rem;
 }
 
@@ -429,14 +437,14 @@
 [data-blog-content] .highlight-box p { color: rgba(255,255,255,0.85); margin-bottom: 0; }
 [data-blog-content] .highlight-box strong { color: white; }
 
-/* 제품 추천 카드 내 링크 */
+/* 제품 추천 카드 내 링크 — 본문 글자 크기(17px)라 --accent(3.33:1)는 미달, signal-dark(5.26:1) */
 [data-blog-content] a {
-  color: var(--accent);
+  color: var(--signal-dark);
   text-decoration: none;
-  border-bottom: 1px solid rgba(255,77,0,0.35);
+  border-bottom: 1px solid rgba(199,56,0,0.35);
   transition: border-color 0.15s;
 }
-[data-blog-content] a:hover { border-bottom-color: var(--accent); }
+[data-blog-content] a:hover { border-bottom-color: var(--signal-dark); }
 
 /* ── TL;DR 박스 (글 맨 위 한 줄 요약) ───────────────── */
 [data-blog-content] .tldr {

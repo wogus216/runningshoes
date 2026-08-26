@@ -146,7 +146,7 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
         기본 노출에서 뺀다 — 지우지는 않는다. 교체 판단의 실제 기준이라는 점은 그대로다.
       */}
       <details className="group rounded-[4px] border border-border bg-white">
-        <summary className="cursor-pointer list-none px-4 py-3 text-xs font-semibold text-accent [&::-webkit-details-marker]:hidden">
+        <summary className="cursor-pointer list-none px-4 py-3 text-xs font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
           <span className="group-open:hidden">교체 신호 체크리스트 4가지</span>
           <span className="hidden group-open:inline text-tertiary">접기</span>
         </summary>

@@ -52,7 +52,7 @@ function ReviewCard({ review }: { review: Review }) {
       <p className="text-sm leading-7 text-slate-700 md:text-base">{preview}</p>
       {rest && (
         <details className="group mt-1">
-          <summary className="cursor-pointer list-none py-1.5 text-sm font-semibold text-accent [&::-webkit-details-marker]:hidden">
+          <summary className="cursor-pointer list-none py-1.5 text-sm font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
             <span className="group-open:hidden">근거 수치까지 보기</span>
             <span className="hidden group-open:inline text-tertiary">접기</span>
           </summary>

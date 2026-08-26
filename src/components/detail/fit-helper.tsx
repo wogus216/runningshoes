@@ -223,7 +223,7 @@ export function FitHelper({ koreanFootFit, shoeName, brand }: FitHelperProps) {
         "이 숫자를 어떻게 재지?"가 떠오르므로 바로 아래에 두는 위치는 유지한다.
       */}
       <details className="group">
-        <summary className="cursor-pointer list-none py-1 text-[11px] font-semibold text-accent [&::-webkit-details-marker]:hidden">
+        <summary className="cursor-pointer list-none py-1 text-[11px] font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
           <span className="group-open:hidden">내 발볼은 어떻게 재나요?</span>
           <span className="hidden group-open:inline text-tertiary">접기</span>
         </summary>
