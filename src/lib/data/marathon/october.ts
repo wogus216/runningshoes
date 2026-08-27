@@ -710,4 +710,34 @@ export const octoberEvents: MarathonEvent[] = [
       startTime: '08:30',
     },
   },
+  {
+    id: 'style-run-2026',
+    name: '2026 스타일런 (Style Run)',
+    date: '2026-10-18',
+    month: '10월',
+    location: '롯데월드타워 월드파크 잔디광장 (서울 송파구)',
+    region: '서울',
+    distances: ['10K', '5K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://www.lotteon.com/',
+    registrationStart: '2026-09-01',
+    registrationNote: '9월 1일(화) 오전 10시 롯데백화점몰에서 선착순 — 2025년(6,000명)은 사전 접수 5시간 만에 매진',
+    lastVerified: '2026-08-27',
+    description:
+      '롯데백화점이 2017년부터 잠실에서 여는 패션 러닝 페스티벌 8회차. 2026년은 자라의 퍼포먼스 라인 자라 애슬레틱즈(ZARA ATHLETICZ)와 협업하며, 정원이 지난해 6,000명에서 7,000명으로 늘었습니다. 롯데월드타워 월드파크 잔디광장에서 출발해 송파대로와 석촌호수를 도는 5km·10km 두 종목이고 순위·기록 경쟁이 없는 펀런입니다. 참가자 전원에게 자라 애슬레틱즈 협업 5종(티셔츠·러닝모자·양말·가방·반다나)과 스타일런 굿즈 3종(무릎보호대·플라스크 물통·마사지볼) 등 총 8종 키트를 제공합니다. 접수는 9월 1일(화) 오전 10시 롯데백화점몰 선착순이며, 참가비 80,000원은 대회 정보 계정(@runsosik) 광고 게시물 기준으로 언론 보도에는 금액이 실리지 않았습니다. 대회 전 주말(10/15~17)에는 F45와 함께하는 부대 프로그램 "데이아웃"이 3,000명 규모로 열리며 별도 접수는 9월 22일 오전 10시입니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '롯데월드타워 월드파크 잔디광장 출발 → 송파대로 → 석촌호수 순회 후 복귀. 도심 평지 코스이며 기록 측정이 없는 펀런 성격입니다. 종목별 세부 경로·출발 시각은 접수 개시 후 공식 안내 예정.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 80000 },
+        { distance: '5K', fee: 80000 },
+      ],
+      expectedParticipants: 7000,
+    },
+  },
 ];
