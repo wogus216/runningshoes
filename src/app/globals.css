@@ -40,6 +40,18 @@
   --veil-90: rgba(247, 244, 237, 0.90);
   --veil-80: rgba(247, 244, 237, 0.80);
 
+  /* 잉크 다크 패널 위 디밍 텍스트·선 — text-background/55 류 오파시티 유틸은
+     생성되지 않는다(위 --veil 주석과 같은 함정). 사전 계산 토큰으로 쓸 것.
+     대비 실측(#17150F 위): 50% 4.89:1 · 55% 5.71:1 · 60% 6.56:1 — 소형 텍스트 4.5:1 통과. */
+  --dim-on-dark-50: rgba(247, 244, 237, 0.50);
+  --dim-on-dark-55: rgba(247, 244, 237, 0.55);
+  --dim-on-dark-60: rgba(247, 244, 237, 0.60);
+  --line-on-dark-15: rgba(247, 244, 237, 0.15);
+  --line-on-dark-25: rgba(247, 244, 237, 0.25);
+  --accent-line-strong: rgba(255, 77, 0, 0.5);
+  --accent-tint-5: rgba(255, 77, 0, 0.05);
+  --accent-tint-10: rgba(255, 77, 0, 0.10);
+
   --signal-dark: #C73800;
   --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
   --warn-soft: #FBF3E4;      /* 대회 상태 배지 upcoming 배경 */

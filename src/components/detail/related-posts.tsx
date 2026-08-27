@@ -17,7 +17,7 @@ export function RelatedPosts({ posts }: { posts?: RelatedPost[] }) {
           <li key={p.slug}>
             <Link
               href={`/blog/${p.slug}`}
-              className="group flex items-center justify-between gap-2 px-4 py-3 text-sm bg-accent/5 hover:bg-accent/10 border border-accent/25 hover:border-accent rounded-[4px] transition text-primary font-semibold"
+              className="group flex items-center justify-between gap-2 px-4 py-3 text-sm bg-[var(--accent-tint-5)] hover:bg-[var(--accent-tint-10)] border border-[color:var(--accent-line)] hover:border-accent rounded-[4px] transition text-primary font-semibold"
             >
               <span>{p.title}</span>
               <ArrowRight className="w-4 h-4 text-accent shrink-0 transition-transform group-hover:translate-x-1" aria-hidden="true" />

@@ -87,7 +87,7 @@ export default function LegalPage() {
           <p className="mt-2">
             <a
               href="mailto:sanchokwon216@gmail.com"
-              className="text-accent hover:underline"
+              className="text-signal-dark hover:underline"
             >
               sanchokwon216@gmail.com
             </a>

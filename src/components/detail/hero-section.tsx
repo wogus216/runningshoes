@@ -67,7 +67,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
         <div className="border-b-2 border-primary p-5 md:border-b-0 md:border-r-2 md:p-8 lg:p-10">
           <div className="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-tertiary">
             <span>{shoe.category} · {shoe.brand}</span>
-            {primaryLink?.isOfficial && <span className="text-accent">공식 판매처</span>}
+            {primaryLink?.isOfficial && <span className="text-signal-dark">공식 판매처</span>}
           </div>
 
           <h1 className="mt-4 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight text-primary md:text-5xl">
@@ -133,7 +133,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
                   <span>{durability?.rangeLabel ?? '-'} · 약 ₩{shoe.priceAnalysis.costPerKm}/km</span>
                 )}
                 {shoe.priceAnalysis?.valueRating && (
-                  <span className="text-accent">가치 점수 {shoe.priceAnalysis.valueRating.toFixed(1)}</span>
+                  <span className="text-signal-dark">가치 점수 {shoe.priceAnalysis.valueRating.toFixed(1)}</span>
                 )}
               </div>
             </div>
@@ -166,10 +166,9 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
           {specs ? (
             <>
-              {/* text-background/55 는 CSS 로 생성되지 않는다(--background 가 헥스 var() 참조라
-                  Tailwind 가 오파시티 변형을 만들지 못함 — globals.css 상단 --positive 주석과 같은 함정).
-                  p 태그는 부모의 text-background 를 상속해 우연히 살아남지만, h 태그는 base 레이어의
-                  h1~h6 { color: var(--primary) } 에 걸려 검은 카드 위 검은 글자(대비 1.00:1)가 됐다. */}
+              {/* 이 패널의 디밍은 text-background/55 같은 오파시티 유틸이 아니라
+                  globals.css 의 사전 계산 토큰(--dim-on-dark-*)을 쓴다 — 오파시티 유틸은
+                  CSS 로 생성되지 않아 h 태그가 base 레이어 색으로 떨어지는 사고가 있었다(be6663e). */}
               <h2 className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background">
                 RunRepeat Lab — Measured
               </h2>
@@ -180,28 +179,28 @@ export function HeroSection({ shoe }: HeroSectionProps) {
                       {item.value}
                       {item.unit && <span className="text-accent">{item.unit}</span>}
                     </p>
-                    <p className="mt-2 text-[12px] text-background/55">{item.label}</p>
+                    <p className="mt-2 text-[12px] text-[color:var(--dim-on-dark-55)]">{item.label}</p>
                   </div>
                 ))}
               </div>
             </>
           ) : (
-            <p className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background/55">
+            <p className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-[color:var(--dim-on-dark-55)]">
               Spec Sheet — 준비 중
             </p>
           )}
 
           {shoe.rating ? (
-            <div className="relative mt-7 flex items-baseline gap-3 border-t border-background/15 pt-6">
+            <div className="relative mt-7 flex items-baseline gap-3 border-t border-[color:var(--line-on-dark-15)] pt-6">
               <span className="font-mono text-[40px] font-bold leading-none tabular-nums text-accent">{shoe.rating}</span>
-              <span className="text-[13px] text-background/55">/ 5 · 종합 평점</span>
+              <span className="text-[13px] text-[color:var(--dim-on-dark-55)]">/ 5 · 종합 평점</span>
             </div>
           ) : null}
 
-          <div className="relative mt-6 border-t border-background/15 pt-6">
-            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-background/55">Fit Signal</p>
+          <div className="relative mt-6 border-t border-[color:var(--line-on-dark-15)] pt-6">
+            <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[color:var(--dim-on-dark-55)]">Fit Signal</p>
             <p className="mt-2 text-2xl font-bold tracking-tight text-background">{fitTone.value}</p>
-            <p className="mt-1 text-[13px] leading-relaxed text-background/60">
+            <p className="mt-1 text-[13px] leading-relaxed text-[color:var(--dim-on-dark-60)]">
               {fitTone.label} · 평발 적합성 {koreanFootFit?.flatFootCompatibility === 'excellent' ? '매우 좋음' : koreanFootFit?.flatFootCompatibility === 'good' ? '좋음' : koreanFootFit?.flatFootCompatibility === 'fair' ? '보통' : koreanFootFit?.flatFootCompatibility === 'poor' ? '낮음' : '정보 없음'}
             </p>
             {/*
@@ -219,8 +218,8 @@ export function HeroSection({ shoe }: HeroSectionProps) {
               <p className={cn(
                 'mt-2 inline-block border px-2 py-1 font-mono text-[11px] tracking-wide',
                 koreanFootFit.wideOptions
-                  ? 'border-accent/50 text-accent'
-                  : 'border-background/25 text-background/50'
+                  ? 'border-[color:var(--accent-line-strong)] text-accent'
+                  : 'border-[color:var(--line-on-dark-25)] text-[color:var(--dim-on-dark-50)]'
               )}>
                 {koreanFootFit.wideOptions ? '와이드(2E) 있음' : '와이드 없음'}
               </p>

@@ -12,7 +12,7 @@ export function TechBanner() {
         aria-hidden="true"
       />
       <div className="mt-2">
-        <p className="flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-accent">
+        <p className="flex items-center gap-1.5 font-mono text-[11px] font-semibold uppercase tracking-[0.22em] text-signal-dark">
           <Sparkles className="h-3 w-3" />
           TECH
         </p>

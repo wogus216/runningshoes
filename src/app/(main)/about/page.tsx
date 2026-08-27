@@ -332,7 +332,7 @@ export default function AboutPage() {
               </p>
               <a
                 href="/contact"
-                className="text-accent hover:underline font-medium"
+                className="text-signal-dark hover:underline font-medium"
               >
                 문의 페이지 바로가기 →
               </a>

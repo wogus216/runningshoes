@@ -668,7 +668,7 @@ export default function FAQPage() {
         </p>
         <a
           href="mailto:sanchokwon216@gmail.com"
-          className="text-accent hover:underline font-medium"
+          className="text-signal-dark hover:underline font-medium"
         >
           sanchokwon216@gmail.com
         </a>

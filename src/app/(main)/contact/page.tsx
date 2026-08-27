@@ -27,7 +27,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-semibold text-primary mb-3">이메일</h2>
               <a
                 href="mailto:sanchokwon216@gmail.com"
-                className="text-accent hover:underline font-medium text-lg"
+                className="text-signal-dark hover:underline font-medium text-lg"
               >
                 sanchokwon216@gmail.com
               </a>
@@ -87,9 +87,9 @@ export default function ContactPage() {
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">참고 사항</h2>
               <ul className="space-y-2 text-sm">
-                <li>개별 러닝화 추천 문의는 <a href="/recommend" className="text-accent hover:underline">맞춤 추천</a> 기능을 이용해 주세요.</li>
-                <li>자주 묻는 질문은 <a href="/faq" className="text-accent hover:underline">FAQ 페이지</a>에서 확인하실 수 있습니다.</li>
-                <li>개인정보 관련 문의는 <a href="/privacy" className="text-accent hover:underline">개인정보처리방침</a>을 참고해 주세요.</li>
+                <li>개별 러닝화 추천 문의는 <a href="/recommend" className="text-signal-dark hover:underline">맞춤 추천</a> 기능을 이용해 주세요.</li>
+                <li>자주 묻는 질문은 <a href="/faq" className="text-signal-dark hover:underline">FAQ 페이지</a>에서 확인하실 수 있습니다.</li>
+                <li>개인정보 관련 문의는 <a href="/privacy" className="text-signal-dark hover:underline">개인정보처리방침</a>을 참고해 주세요.</li>
               </ul>
             </div>
           </div>

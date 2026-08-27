@@ -29,7 +29,7 @@ export function EditorComment({ comment }: EditorCommentProps) {
 
   return (
     <div className="border border-border border-l-8 border-l-accent bg-white p-6 md:p-7">
-      <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-accent">
+      <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-signal-dark">
         Editor Read
       </p>
       <h3 className="mt-2 text-lg font-bold tracking-tight text-primary">에디터의 한마디</h3>

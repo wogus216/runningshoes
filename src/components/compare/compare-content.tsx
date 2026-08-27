@@ -307,7 +307,7 @@ function ComparePageContent() {
                 onClick={() => suggestedShoe && addShoe(suggestedShoe)}
               >
                 {isOver ? (
-                    <span className="text-sm font-medium text-accent">여기에 놓기</span>
+                    <span className="text-sm font-medium text-signal-dark">여기에 놓기</span>
                 ) : suggestedShoe ? (
                   <>
                     <div className="w-10 h-10 bg-white rounded-[4px] mb-1 flex items-center justify-center overflow-hidden opacity-60">
@@ -319,7 +319,7 @@ function ComparePageContent() {
                     </div>
                     <span className="text-xs text-tertiary">{suggestedShoe.brand}</span>
                     <span className="max-w-full truncate text-xs text-secondary">{suggestedShoe.name}</span>
-                    <span className="mt-1 text-[10px] text-accent">클릭하여 추가</span>
+                    <span className="mt-1 text-[10px] text-signal-dark">클릭하여 추가</span>
                   </>
                 ) : (
                   <>
@@ -341,7 +341,7 @@ function ComparePageContent() {
           </div>
           <button
             onClick={() => setShowSearch(!showSearch)}
-            className="text-sm text-accent hover:underline"
+            className="text-sm text-signal-dark hover:underline"
           >
             {showSearch ? '접기' : '펼치기'}
           </button>

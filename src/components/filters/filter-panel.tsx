@@ -284,7 +284,7 @@ export function FilterPanel({
       <div className="px-4 pt-4 sm:px-5 sm:pt-5">
         <div className="flex items-center gap-2 mb-3">
           <Sparkles className="h-4 w-4 text-accent" />
-          <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">빠른 필터</span>
+          <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-signal-dark">빠른 필터</span>
         </div>
         <div className="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 sm:flex-wrap sm:overflow-visible scrollbar-hide">
           {filterPresets.map((preset) => (
@@ -427,7 +427,7 @@ export function FilterPanel({
           <div>
             <div className="flex items-center gap-2 mb-3">
               <Sparkles className="h-4 w-4 text-accent" />
-              <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-accent">빠른 필터</span>
+              <span className="font-mono text-[11px] font-semibold uppercase tracking-[0.2em] text-signal-dark">빠른 필터</span>
             </div>
             <div className="flex flex-wrap gap-2">
               {filterPresets.map((preset) => (

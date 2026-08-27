@@ -118,8 +118,8 @@ export default function PrivacyPage() {
           </p>
           <ul className="list-disc list-inside space-y-2 leading-relaxed">
             <li>쿠키 사용 거부 및 삭제</li>
-            <li>Google 광고 개인 최적화 해제: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Google 광고 설정</a></li>
-            <li>Google Analytics 차단: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Google Analytics 차단 브라우저 부가기능</a></li>
+            <li>Google 광고 개인 최적화 해제: <a href="https://adssettings.google.com" target="_blank" rel="noopener noreferrer" className="text-signal-dark hover:underline">Google 광고 설정</a></li>
+            <li>Google Analytics 차단: <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-signal-dark hover:underline">Google Analytics 차단 브라우저 부가기능</a></li>
           </ul>
         </section>
 
@@ -131,7 +131,7 @@ export default function PrivacyPage() {
           </p>
           <div className="bg-gray-50 dark:bg-gray-800 rounded-[4px] p-4">
             <p><strong className="text-primary">개인정보 보호책임자</strong></p>
-            <p className="mt-2">이메일: <a href="mailto:sanchokwon216@gmail.com" className="text-accent hover:underline">sanchokwon216@gmail.com</a></p>
+            <p className="mt-2">이메일: <a href="mailto:sanchokwon216@gmail.com" className="text-signal-dark hover:underline">sanchokwon216@gmail.com</a></p>
           </div>
         </section>
 

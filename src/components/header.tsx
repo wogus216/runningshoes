@@ -88,7 +88,7 @@ export function Header() {
                 <div className="mt-1 border-t border-slate-100 pt-1">
                   <Link
                     href="/brands"
-                    className="flex items-center justify-between rounded-[4px] px-3 py-2 text-sm font-semibold text-accent hover:bg-[var(--accent-soft)]"
+                    className="flex items-center justify-between rounded-[4px] px-3 py-2 text-sm font-semibold text-signal-dark hover:bg-[var(--accent-soft)]"
                   >
                     <span>전체 브랜드 비교</span>
                     <ArrowUpRight className="h-3 w-3" />

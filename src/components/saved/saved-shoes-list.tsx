@@ -78,7 +78,7 @@ export function SavedShoesList({ allShoes }: Props) {
         {savedShoes.map((shoe) => (
           <li
             key={shoe.slug}
-            className="flex gap-4 items-center p-4 bg-white border border-border rounded-[4px] hover:border-accent/50 transition"
+            className="flex gap-4 items-center p-4 bg-white border border-border rounded-[4px] hover:border-[color:var(--accent-line-strong)] transition"
           >
             {shoe.image && (
               <Link

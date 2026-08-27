@@ -270,7 +270,7 @@ function buildFaqs(a: Shoe, b: Shoe): { question: string; answer: string }[] {
 function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
   return (
     <div className="flex-1 text-center space-y-3">
-      <div className="text-xs font-semibold text-accent uppercase tracking-wide">{label}</div>
+      <div className="text-xs font-semibold text-signal-dark uppercase tracking-wide">{label}</div>
       {shoe.image && (
         <Link href={`/shoes/${shoe.slug}`} className="block relative w-full aspect-square max-w-[200px] mx-auto bg-surface rounded-[4px]">
           <Image src={img(shoe.image)} alt={`${shoe.brand} ${shoe.name}`} fill sizes="200px" className="object-contain p-2" />
@@ -442,9 +442,9 @@ export default async function ComparePairPage({ params }: PageProps) {
           ))}
         </div>
         <p className="text-sm text-tertiary">
-          더 깊은 분석이 필요하면 <Link href={`/shoes/${a.slug}`} className="text-accent hover:underline">{a.name}</Link>·
-          <Link href={`/shoes/${b.slug}`} className="text-accent hover:underline">{b.name}</Link> 상세 페이지와{' '}
-          <Link href="/recommend" className="text-accent hover:underline">1분 러닝화 추천</Link>을 활용하세요.
+          더 깊은 분석이 필요하면 <Link href={`/shoes/${a.slug}`} className="text-signal-dark hover:underline">{a.name}</Link>·
+          <Link href={`/shoes/${b.slug}`} className="text-signal-dark hover:underline">{b.name}</Link> 상세 페이지와{' '}
+          <Link href="/recommend" className="text-signal-dark hover:underline">1분 러닝화 추천</Link>을 활용하세요.
         </p>
       </section>
 
@@ -453,7 +453,7 @@ export default async function ComparePairPage({ params }: PageProps) {
         <ul className="space-y-2">
           {verdicts.map((v, i) => {
             const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';
-            const winnerColor = v.winnerSlug === 'tie' ? 'text-tertiary' : 'text-accent';
+            const winnerColor = v.winnerSlug === 'tie' ? 'text-tertiary' : 'text-signal-dark';
             return (
               <li key={i} className="flex items-start justify-between gap-4 p-3 bg-white border border-border rounded-[4px]">
                 <div>
@@ -556,9 +556,9 @@ export default async function ComparePairPage({ params }: PageProps) {
           )}
 
           <div className="flex flex-wrap gap-3 text-sm pt-2">
-            <Link href="/recommend" className="text-accent font-medium hover:underline">1분 러닝화 추천 →</Link>
-            <Link href="/compare" className="text-accent font-medium hover:underline">직접 비교하기 →</Link>
-            <Link href="/vs" className="text-accent font-medium hover:underline">전체 비교 보기 →</Link>
+            <Link href="/recommend" className="text-signal-dark font-medium hover:underline">1분 러닝화 추천 →</Link>
+            <Link href="/compare" className="text-signal-dark font-medium hover:underline">직접 비교하기 →</Link>
+            <Link href="/vs" className="text-signal-dark font-medium hover:underline">전체 비교 보기 →</Link>
           </div>
         </section>
       )}
