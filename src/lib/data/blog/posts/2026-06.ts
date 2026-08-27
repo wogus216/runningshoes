@@ -3568,7 +3568,7 @@ export const posts_2026_06: BlogPost[] = [
     tags: ['아식스 러닝화', '아식스 계급도', '러닝화 라인업', '러닝화 등급', '젤 카야노', '젤 님버스', '노바블라스트', '메타스피드', '슈퍼블라스트', 'FF Blast'],
     faqs: [
       { question: '아식스 GEL(젤)이랑 FF Blast는 뭐가 다른가요?', answer: 'GEL은 아식스의 전통 충격흡수 젤 캡슐이고, FF Blast는 통통 튀는 신세대 바운시 폼입니다. 아식스는 클래식 GEL 라인(젤 님버스·젤 카야노 일부)과 신세대 FF Blast 라인(노바·메가·슈퍼블라스트)이 공존합니다. 상징적 전환점이 젤 카야노 33으로, 13년 만에 GEL을 빼고 FF Blast 듀얼 폼으로 바꿨습니다.' },
-      { question: '"blast"가 붙은 모델들은 뭐가 다른가요?', answer: '모두 FF Blast 바운시 폼 계열이지만 성격이 다릅니다. 노바블라스트(데일리 바운시)·메가블라스트(48mm 맥시멀 경량)·소닉블라스트(카본 맥시멀)·슈퍼블라스트(카본 없는 슈퍼트레이너)입니다. 통통 튀는 재미를 원하면 노바블라스트, 대회 가까운 빠른 훈련이면 슈퍼블라스트가 답입니다.' },
+      { question: '"blast"가 붙은 모델들은 뭐가 다른가요?', answer: '모두 FF Blast 바운시 폼 계열이지만 성격이 다릅니다. 노바블라스트(데일리 바운시)·메가블라스트(48mm 맥시멀 경량)·소닉블라스트(Pebax 플레이트가 들어간 템포용)·슈퍼블라스트(플레이트 없는 슈퍼트레이너)입니다. 통통 튀는 재미를 원하면 노바블라스트, 대회 가까운 빠른 훈련이면 슈퍼블라스트가 답입니다.' },
       { question: '아식스 안정화는 뭘 사야 하나요?', answer: '젤 카야노 32 또는 33입니다. 카야노는 전 세계 안정화 추천 1순위로 꼽히는 평발·과내전 끝판왕입니다. 32는 4D Guidance로 단단하게, 33은 FLUIDSUPPORT로 부드럽게 잡아줍니다. 안정화 선택이 처음이면 자가진단부터 하는 걸 권합니다.' },
       { question: '메타스피드 스카이·엣지·레이는 뭐가 다른가요?', answer: '주법으로 갈립니다. 스카이+는 보폭을 늘리는 스트라이드 러너용, 엣지+는 피치(케이던스)를 높이는 러너용입니다. 레이는 129g 초경량 버전으로 전족 착지·단거리에 특화됐습니다. 본인이 보폭형이면 스카이, 회전수형이면 엣지를 고르세요.' },
       { question: '아식스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아식스는 나이키보다 토박스가 넉넉한 편이라 한국 러너에게 친화적입니다. 특히 카야노·GT 라인은 2E·4E 와이드 옵션이 풍부하고, 메가블라스트·소닉블라스트·젤 벤처도 넓은 편입니다. 다만 메타스피드 레이·메타후지 같은 일부 레이싱·트레일은 좁으니 주의하세요.' },
@@ -3645,7 +3645,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/asics-gel-nimbus-28"><strong>젤 님버스 28</strong></a></td><td>프리미엄 쿠션</td><td>FF Blast Plus</td><td>19.9만</td><td>281g</td><td>43.5mm 푹신, 중립 쿠션 대장</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-4"><strong>매직스피드 4</strong></a></td><td>카본 입문</td><td>FF Blast+ · FF Turbo · 카본</td><td>19.9만</td><td>237g</td><td>풀렝스 카본, 메타스피드 입문</td></tr>
     <tr><td><a href="/shoes/asics-gel-kayano-33"><strong>젤 카야노 33</strong></a></td><td>안정화 신상</td><td>FF Blast 듀얼 · FLUIDSUPPORT</td><td>19.9만</td><td>298g</td><td>GEL 졸업, 부드러워진 카야노</td></tr>
-    <tr><td><a href="/shoes/asics-sonicblast"><strong>소닉블라스트</strong></a></td><td>카본 맥시멀</td><td>FF Blast+ · 카본</td><td>22.9만</td><td>255g</td><td>카본 플레이트 맥시멀 쿠션</td></tr>
+    <tr><td><a href="/shoes/asics-sonicblast"><strong>소닉블라스트</strong></a></td><td>플레이트 트레이너</td><td>FF Turbo Squared · FF Blast Max · ASTROPLATE(Pebax)</td><td>22.9만</td><td>255g</td><td>Blast 계열 유일 플레이트, 템포용</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>22.9만</td><td>193g</td><td>193g 포크형 카본, 50g 감량</td></tr>
     <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
     <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>239g</td><td>239g, 더 부드러운 롱런</td></tr>
