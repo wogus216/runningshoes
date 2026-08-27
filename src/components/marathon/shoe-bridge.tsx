@@ -180,7 +180,10 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
         </p>
       </div>
 
-      <ul className="grid gap-3 sm:grid-cols-2">
+      {/* grid-cols-1 은 생략 불가 — 기본 auto 트랙은 max-content 로 커져서 truncate
+          카드(nowrap 텍스트)의 min-content 가 컨테이너를 뚫는다(2026-08-27 모바일 실측 473>418px).
+          grid-cols-1 = minmax(0,1fr) 이라 트랙이 컨테이너에 갇힌다. */}
+      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {shoes.map((s) => (
           <li key={s.slug}>
             <Link
@@ -223,7 +226,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
             <Zap className="h-4 w-4 text-amber-500" />
             장거리 보급용 에너지 젤
           </h3>
-          <ul className="grid gap-3 sm:grid-cols-2">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {gels.map((g) => (
               <li key={g.slug}>
                 <Link
