@@ -483,6 +483,22 @@ const FAKE_SOURCE = [
 // "아직 후기가 부족하다"처럼 부재를 밝히는 서술은 정직한 표현이라 통과시킨다.
 const FAKE_SOURCE_NEGATION = /부족|없|아직|미흡|수집하지/;
 
+// 블로그 본문의 자전적 경험 주장. 2026-08-27 감사에서 "에디터의 무릎 통증 극복기"
+// (정형외과 ITBS 진단·3개월 휴식), "제 첫 풀 마라톤", "지난 3년간 10종 이상 테스트"가
+// 나왔다 — 운영자는 시승을 하지 않고 프로필과도 어긋나는 서술이었다.
+// ⚠️ 넓게 잡으면 오탐이 쏟아진다(`제가`는 "문제가"·"결제가"에 걸리고, `저희 DB 기준`은
+//    사이트 자체 데이터라 정당, `달려봤다면`은 독자를 향한 가정법이다).
+//    그래서 **대체 가능한 정당한 용법이 없는 형태만** 넣는다.
+const BLOG_AUTOBIO = [
+  /제\s*경험상/,
+  /제\s*최애/,
+  /(저도|제가)\s*(첫|처음)\s/,
+  /제\s*(첫|처음)\s*(풀|하프|마라톤|대회)/,
+  /지난\s*\d+\s*년간[^.]{0,30}(테스트|신어|먹어)/,
+  /진단을?\s*받았/,
+  /(신어|먹어|뛰어|달려|착용해)\s*봤습니다/,
+];
+
 // 전환이 끝나면 이 값을 0으로 내리고, 아래 report()를 error로 바꾼다.
 // 그때부터 새 허구 후기는 커밋 자체가 막힌다.
 const FICTION_MIGRATION_REMAINING = 0;
@@ -549,12 +565,22 @@ if (fs.existsSync(blogDir)) {
     const lines = fs.readFileSync(path.join(blogDir, file), 'utf8').split('\n');
     blogScanned++;
     lines.forEach((line, i) => {
+      let flagged = false;
       for (const k of FAKE_SOURCE) {
         const idx = line.indexOf(k);
         if (idx === -1) continue;
         const around = line.slice(Math.max(0, idx - 25), idx + k.length + 25);
         if (FAKE_SOURCE_NEGATION.test(around)) continue;
         report(`[blog/${file}:${i + 1}] 가짜 출처 인용: "${k}" — …${around.trim()}…`);
+        flagged = true;
+        break;
+      }
+      if (flagged) return;
+      for (const re of BLOG_AUTOBIO) {
+        const m = line.match(re);
+        if (!m) continue;
+        const idx = m.index || 0;
+        report(`[blog/${file}:${i + 1}] 자전적 경험 주장: "${m[0]}" — …${line.slice(Math.max(0, idx - 30), idx + 60).trim()}…`);
         break;
       }
     });
