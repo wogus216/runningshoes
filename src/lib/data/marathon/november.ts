@@ -60,7 +60,19 @@ export const novemberEvents: MarathonEvent[] = [
       startTime: '09:00',
     },
     registrationStart: '2026-08-07',
-    lastVerified: '2026-08-12',
+    registrationNote: '선착순 5,000명 마감 — 마감일 미고지',
+    raceKit: {
+      items: [
+        '기념 티셔츠(택배 발송, XS~3XL 남녀공용)',
+        '배번호·기록칩(택배 발송, 종목별 디자인)',
+        '완주 기념 메달(현장, FINISHER 각인·종목별 리본)',
+        '라운드랩 제품 4종(현장) — 독도 토너 200ml·수분 워터젤 마스크·자작나무 선크림 50ml·선 스프레이 100ml',
+      ],
+      pending: '공식 고지: 티셔츠·배번호 디자인과 간식은 Coming Soon(추후 공개)',
+      images: [{ src: '/images/marathon/round-lab-run-2026/kit-1.webp', alt: '2026 라운드랩 RUN 공식 기념품 안내 — 라운드랩 제품 4종' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
   },
   {
     id: 'sonkeechung-peace-marathon-2026',
@@ -74,7 +86,13 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.sonkeechungrun.com',
     registrationStart: '2026-08-09',
-    lastVerified: '2026-08-10',
+    registrationNote: '선착순 마감시까지 — 마감일 미고지 (접수 후 24시간 내 미결제 시 신청 삭제)',
+    raceKit: {
+      items: ['스파이더 퍼포먼스 러닝 윈드 자켓(그레이, 85~110 — 베를린올림픽 우승 90주년 기념 아트워크)', '배번호(기록칩)'],
+      images: [{ src: '/images/marathon/sonkeechung-peace-marathon-2026/kit-1.webp', alt: '2026 손기정평화마라톤 공식 기념품 — 스파이더 러닝 윈드 자켓' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '8월 9일(일) 오전 9시에 접수가 열려 마감일 없이 선착순으로 받고 있습니다 — 2025년엔 오픈 일주일 안에 약 2만 명이 찼습니다. 신청 후 24시간 안에 결제하지 않으면 내역이 삭제됩니다. 올해 가장 큰 변화는 대회장 이전으로, 고양 제2자유로에서 임진각 민통선 일대(파주)로 옮깁니다("임진각~개성 남북평화마라톤으로 발전하는 출발점" 구상). 6km 슬로우가 신설돼 종목은 4개가 됐고, 참가비는 전 종목 1만원 인상됐습니다(풀 7만·하프 6.5만·10K 6만·6K 5만). 1936 베를린올림픽 금메달리스트 손기정 선생을 기리는 평화·통일 테마 대회로 2005년 제1회, 올해가 제22회입니다. 기념품·배번호 패키지는 11월 9일 우체국택배로 발송됩니다. 코스 상세는 공식 준비중 — 2025년까지의 제2자유로 코스와 달라질 수 있습니다(공식 대회요강 2026-08-10 확인).',
     courseInfo: {
@@ -108,9 +126,20 @@ export const novemberEvents: MarathonEvent[] = [
     location: '경북 상주시민운동장',
     region: '경북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://mara1080.com/event/c8dc2c22-a83a-4743-9e34-c884e9809dbb',
+    registrationEnd: '2026-05-28',
+    registrationNote: '1차 접수 마감(선착순 1만 명 달성). 8/31까지 환불 진행 후 취소분 발생 시 2차 접수 공지 예정',
+    raceKit: {
+      byDistance: [
+        { distance: '4.4km', item: '기능성 티셔츠(화이트, 90~110)' },
+        { distance: '10km·하프·풀', item: '선택 1 — 러닝 자켓(폴라폴리스) / 상주 곶감(10입) / 샤인머스켓(1kg)' },
+      ],
+      images: [{ src: '/images/marathon/sangju-gotgam-marathon-2026/kit-1.webp', alt: '2026 상주 곶감 마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '상주 곶감 축제와 연계된 가을 풀코스 마라톤 24회차. 접수는 5월 6일부터 선착순 10,000명(4.4km 2,000·10km 3,000·하프 2,500·풀 2,500)이 찰 때까지이며, 입금·변경·취소는 8월 31일까지입니다. 짧은 종목은 5km가 아니라 4.4km입니다. 아래 참가비는 기본 기념품(상주곶감 또는 샤인머스켓 택1) 기준이며, 러닝 자켓 기념품 선택 시 10km·하프 50,000원·풀 55,000원으로 올라갑니다. 상주시민 4.4km는 15,000원.',
     raceInfo: {
@@ -134,8 +163,16 @@ export const novemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: true,
     website: 'https://mbn-seoulmarathon.com',
+    registrationStart: '2026-07-01',
+    registrationNote: '선착순 마감 — 마감일 미고지 (하프 7/1·10km 7/3 접수 개시, 2026-08-27 기준 마감 표기 없음)',
+    raceKit: {
+      items: ['기념품(티셔츠·양말, 사전 택배)', '번호표·기록칩(사전 택배)', '완주메달(현장)', '골인 간식·생수(현장)'],
+      pending: '공식 고지: 기념품 디자인은 추후 공개',
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
-      'MBN 주최 서울 도심 마라톤(총 3만 명, TV 생중계). 하프는 광화문광장→잠실종합운동장 일직선 편도, 10K는 잠실종합운동장 루프(풀코스 없음). 2026.11.15(일) 07시30분 출발(06시30분 집결) 확정. 참가비 하프 10만 원·10K 7만 원 확정. 접수: 우선신청 6/22(월) 10시~6/23(화) 17시(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), 하프 일반 6/25(목) 14시·10K 일반 6/26(금) 14시(런잇 RUNIT). 세부 코스 경유지는 추후 공개(2026-06-22 기준).',
+      'MBN 주최 서울 도심 마라톤(총 3만 명, TV 생중계). 하프는 광화문광장→잠실종합운동장 일직선 편도, 10K는 잠실종합운동장 루프(풀코스 없음). 2026.11.15(일) 07시30분 출발(06시30분 집결) 확정. 참가비 하프 10만 원·10K 7만 원 확정. 접수: 우선신청 6/22(월) 10시~6/23(화) 17시(선셋마라톤·슈퍼히어로런 신청자·매경PLUS 구독자 한정), 하프 일반 7/1(수) 14시·10K 일반 7/3(금) 14시(런잇 RUNIT, 공식 홈 2026-08-27 확인 — 6월 공지의 6/25·6/26에서 변경됨). 세부 코스 경유지는 추후 공개.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
@@ -206,6 +243,17 @@ export const novemberEvents: MarathonEvent[] = [
     description:
       '백마강변 구드래나루터에서 출발하는 부여 대표 대회 15회차. 하반기 충남권에서 드물게 풀코스를 운영합니다. 부여군마라톤연합회 주최·전국마라톤협회 주관으로, 접수는 6월 30일부터 10월 7일까지입니다. 부여군민 5km는 20,000원.',
     website: 'https://mara1080.com/event/ffc023fc-7a54-4610-bdd6-2bb9a1028122',
+    registrationEnd: '2026-10-07',
+    registrationNote: '선착순 5,000명 — 정원 도달 시 조기 마감(공식 공지)',
+    raceKit: {
+      byDistance: [
+        { distance: '5km', item: '기능성 티셔츠(90~110)' },
+        { distance: '10km·하프·풀', item: '선택 1 — 표고버섯 / 양송이버섯 / 깐밤 600g (현장에서 교환권으로 수령)' },
+      ],
+      images: [{ src: '/images/marathon/buyeo-goodtrae-marathon-2026/kit-1.webp', alt: '제15회 부여 굿뜨래 마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     raceInfo: {
       entryFees: [
         { distance: '풀코스', fee: 50000 },
@@ -224,9 +272,26 @@ export const novemberEvents: MarathonEvent[] = [
     location: '관문체육공원 (경기 과천시)',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://gcrun.co.kr/gcrun/',
+    registrationStart: '2026-07-20',
+    registrationNote: '접수 마감됨 — 선착순 3,000명 도달(공식 공지 2026-08-18, 취소분 추가 접수도 마감)',
+    raceKit: {
+      items: ['공식 기념품', '배번호', '기록칩', '완주메달', '모바일 기록증', '안내책자', '간식'],
+      byDistance: [
+        { distance: '하프', item: '디아도라 러닝베스트·배번호 그립' },
+        { distance: '10km', item: '디아도라 러닝베스트·스포츠 양말' },
+        { distance: '5km', item: '디아도라 경량 토트백' },
+      ],
+      pending: '공식 고지: 기념품 디자인·항목은 변경될 수 있음',
+      images: [
+        { src: '/images/marathon/gwacheon-marathon-2026/kit-1.webp', alt: '2026 과천마라톤 공식 기념품 — 디아도라 러닝베스트' },
+        { src: '/images/marathon/gwacheon-marathon-2026/kit-2.webp', alt: '2026 과천마라톤 공식 기념품 안내' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회(40주년). 7월 20일 14시 시작한 1차 선착순 접수(총 3,000명)는 정원이 차서 마감됐고, 미결제분 결제 마감(7/26 자정) 이후 취소분만큼 7월 27일 14시부터 추가접수가 열립니다. 참가 자격은 하프 19세 이상·10km 14세 이상이며 5km는 제한이 없습니다. 과천시민 5km는 25,000원(한정 수량).',
     raceInfo: {
@@ -249,6 +314,13 @@ export const novemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'https://marathon.ihalla.com/',
+    registrationStart: '2026-07-06',
+    registrationEnd: '2026-09-11',
+    raceKit: {
+      pending: '기념품 안내 페이지가 준비중 — 품목 미공개 (2026-08-27 확인)',
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '한라일보가 주최하는 제주 대표 가을 대회로 풀·하프·10K를 운영합니다. 정식 명칭은 제주감귤국제마라톤대회. 감귤 수확철 제주 동부 해안과 중산간을 달리는 코스이며, 접수는 7월 6일~9월 11일입니다. 제한시간은 풀 5시간·하프 2시간 30분·10km 1시간 30분이고, 유아·초중고생은 30% 할인됩니다.',
     raceInfo: {
@@ -293,6 +365,18 @@ export const novemberEvents: MarathonEvent[] = [
     description:
       '고창군 일대에서 열리는 24회째 대회로 하프·10K·5K를 운영합니다. 접수는 7월 1일부터 선착순 4,000명으로 8월 31일 14시까지입니다. 5km는 기록을 측정하지 않으며 참가비도 10,000원으로 저렴합니다. 클럽 마니아 할인가(하프·10km 25,000원, 기념품 미지급)가 별도로 있습니다.',
     website: 'http://www.gcrun.com/',
+    registrationStart: '2026-07-01',
+    registrationEnd: '2026-08-31',
+    registrationNote: '선착순 4,000명 — 8/31(월) 14:00 마감',
+    raceKit: {
+      items: ['기념품', '번호표', '기록칩', '대회책자', '완주메달', '기록증'],
+      byDistance: [
+        { distance: '하프·10km', item: '고창황토배기 쌀 5kg 또는 복분자주 1세트 택 1 (매니아 부문은 기념품 미지급)' },
+        { distance: '5km', item: '완주메달 또는 장갑 (참가자 선택)' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     raceInfo: {
       entryFees: [
         { distance: '하프', fee: 35000 },
@@ -310,11 +394,22 @@ export const novemberEvents: MarathonEvent[] = [
     location: '남원종합스포츠타운 (전북 남원시)',
     region: '전북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     description:
       '남원종합스포츠타운에서 출발하며, 11월 하순에는 드물게 풀코스를 운영하는 대회입니다. 전국마라톤협회 주관으로 접수는 7월 7일부터 10월 28일까지. 제한시간은 풀 5시간(반환점 2시간 45분)·하프 3시간·10km 2시간이며, 10km 이상은 완주 메달과 지역상품권 1만원을 받습니다. 남원시민 5km는 20,000원.',
     website: 'https://mara1080.com/event/c2cec79b-c38a-4832-bf4f-7ecb499cdcd5',
+    registrationEnd: '2026-08-03',
+    registrationNote: '1차 접수 마감(선착순 6천 명 달성). 9/10까지 환불 진행 후 취소자 200명 이상이면 2차 접수 공지 예정',
+    raceKit: {
+      byDistance: [
+        { distance: '5km', item: '기능성 티셔츠(90~110)' },
+        { distance: '10km·하프·풀', item: '선택 1 — 지역상품권 10,000원(현장 배부) / 레츠고 마라톤화(사전 발송, 참가비 별도 책정)' },
+      ],
+      images: [{ src: '/images/marathon/namwon-chunhyang-marathon-2026/kit-1.webp', alt: '2026 남원 춘향 마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     raceInfo: {
       entryFees: [
         { distance: '풀코스', fee: 50000 },

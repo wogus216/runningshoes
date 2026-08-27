@@ -131,9 +131,12 @@ export const octoberEvents: MarathonEvent[] = [
     location: '제주월드컵경기장·가시리 일대 (제주)',
     region: '제주',
     distances: ['울트라', '트레일'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://transjeju.utmb.world/',
+    registrationStart: '2026-03-18',
+    registrationEnd: '2026-07-31',
+    lastVerified: '2026-08-27',
     description:
       'UTMB 월드시리즈 아시아 공식 대회. 10월 2~4일 제주에서 100M(148km)·100K(104km)·60K·20K 4개 종목으로 열립니다. 접수 마감 7월 31일, 참가비는 USD 기준 100M $280·100K $220·60K $160·20K $90. 60K 이상은 UTMB Index 자격이 필요하지만 20K는 자격 제한 없이 참가할 수 있어 입문 종목으로 적합합니다.',
     courseInfo: {
@@ -152,9 +155,26 @@ export const octoberEvents: MarathonEvent[] = [
     location: '안동시민운동장',
     region: '경북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://admarathon.kr/andong/',
+    registrationStart: '2026-05-06',
+    registrationEnd: '2026-08-18',
+    raceKit: {
+      items: ['배번호', '기록칩(5km 제외)', '완주메달', '모바일 기록증', '안내책자', '간식'],
+      byDistance: [
+        { distance: '풀코스', item: '기념 티셔츠·레이스 백·모자·완주 타월' },
+        { distance: '하프·10km', item: '기념 티셔츠·레이스 백' },
+        { distance: '5km', item: '기념 티셔츠' },
+      ],
+      pending: '공식 고지: 기념품 디자인·항목은 상품성 개선을 위해 변경될 수 있음',
+      images: [
+        { src: '/images/marathon/andong-marathon-2026/kit-1.webp', alt: '2026 안동마라톤 공식 기념 티셔츠' },
+        { src: '/images/marathon/andong-marathon-2026/kit-2.webp', alt: '2026 안동마라톤 공식 레이스 백' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '획득고도 700m+ 국내 최상급 난코스. 5월 6일부터 선착순 10,000명 접수로 종료 예정일이 따로 없으며, 정원이 차면 마감됩니다. 환불 가능 기간은 7월 26일까지. 인기 대회라 종목에 따라 이미 마감됐을 수 있으니 신청 전 공식 페이지에서 잔여 여부를 확인하세요.',
     courseInfo: {
@@ -287,7 +307,16 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: false,
     website: 'https://marathon.busan.com',
     registrationStart: '2026-07-28',
-    lastVerified: '2026-08-10',
+    registrationNote: '정원 12,000명 선착순 — 마감일은 공식이 추후 별도 공지 예정',
+    raceKit: {
+      items: ['공식 기념 티셔츠(흡한속건, XS~2XL)', '기념 양말', '기념 반다나(부산일보 창간 80주년)', '배번호', '기록칩(15km·10km, 5km 제외)', '완주메달', '완주 간식·음료'],
+      images: [
+        { src: '/images/marathon/busan-sea-marathon-2026/kit-1.webp', alt: '2026 부산바다마라톤 공식 기념품 안내' },
+        { src: '/images/marathon/busan-sea-marathon-2026/kit-2.webp', alt: '2026 부산바다마라톤 공식 기념 티셔츠' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '평소 보행이 금지된 광안대교 상층부를 달리는 부산일보사 주최 대회. 벡스코 야외광장에 07:30 집결한 뒤 07:50부터 광안대교 상층부 출발지점으로 이동해 종목별로 출발합니다. 15km·10km 로드레이스와 5km 건강달리기 3개 종목으로 총 12,000명 선착순(15km 2,000·10km 6,500·5km 3,500)이며, 참가비는 15km 70,000원·10km 60,000원·5km 50,000원입니다(골스튜디오 패키지 선택 시 각 +39,000원). 접수는 7월 28일 오후 8시 시작됐고 마감일은 별도 공지 예정 — 정원이 차면 마감입니다. 신청 후 72시간 안에 결제하지 않으면 자동 취소되며, 기념품·배번호는 10월 16일 발송 예정입니다. 교통통제 최소화를 위해 제한시간을 엄격히 적용합니다(15km 2시간 20분·10km 1시간 40분·5km 1시간 20분).',
     courseInfo: {
@@ -422,9 +451,18 @@ export const octoberEvents: MarathonEvent[] = [
     location: '경주시민운동장',
     region: '경북',
     distances: ['풀코스', '하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
-    website: 'https://dongma.club/',
+    website: 'https://www.gyeongjumarathon.com/home',
+    registrationStart: '2026-05-11',
+    registrationEnd: '2026-05-26',
+    raceKit: {
+      items: ['기념 티셔츠 — 아디다스 반팔(남녀공용 XS~3XL). 매니아 부문은 미제공'],
+      pending: '공식 레이스팩 페이지는 "추후 공개 예정" — 티셔츠 외 구성 미공개',
+      images: [{ src: '/images/marathon/gyeongju-international-marathon-2026/kit-1.webp', alt: '2026 경주국제마라톤 공식 기념 티셔츠 (아디다스)' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '동아일보 주최, World Athletics 엘리트 라벨. 유네스코 신라 유적(대릉원·첨성대·동궁과 월지·황룡사지)을 통과하는 평지 순환 코스로 PB 친화적입니다. 정원 1.6만 명(일반 9천 + 동마클럽 매니아 7천)으로 동마 가을 시리즈를 마무리합니다. 서울·공주백제·경주 동아 3개 대회를 모두 완주하면 런저니 메달이 별도 수여됩니다.',
     courseInfo: {
@@ -531,6 +569,14 @@ export const octoberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: true,
     website: 'https://peacemarathon.co.kr',
+    registrationStart: '2026-08-10',
+    registrationNote: '선착순 마감 — 마감일 미고지 (코스별 접수 개시일 상이, 결제 완료 기준)',
+    raceKit: {
+      items: ['티셔츠', '번호표', '기록측정용 칩', '완주메달', '완주 간식'],
+      images: [{ src: '/images/marathon/gangnam-peace-marathon-2026/kit-1.webp', alt: '2026 강남국제평화마라톤 공식 기념 티셔츠' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '강남구·주한미8군 공동 주최, 참가비 전액을 전쟁고아 지원에 기부하는 이색 마라톤(유니세프 한국위원회 후원). 강남페스티벌 연계로 봉은사로 강남 도심을 달립니다. 2026 제23회는 서울시 축제포털 기준 10/5(일) 예정 — 종목·참가비·접수일은 제22회(2025) 기준 추정이며 8월경 공식 발표 예상. 참가비가 풀 3만·하프/10K 2만원대로 저렴한 기부형 대회입니다.',
     courseInfo: {
@@ -577,9 +623,16 @@ export const octoberEvents: MarathonEvent[] = [
     location: '창원종합운동장 (경남 창원시)',
     region: '경남',
     distances: ['10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://knmarathon.co.kr',
+    registrationEnd: '2026-08-14',
+    raceKit: {
+      items: ['기능성 반팔 티셔츠(민트, 80~110)', '배번호', '완주메달', '안내책자', '기록칩(10km — 3km 건강달리기 제외)'],
+      images: [{ src: '/images/marathon/gyeongnam-marathon-2026/kit-1.webp', alt: '제23회 경남마라톤 공식 기념 티셔츠' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '경남신문 주최로 창원스포츠파크 보조경기장에서 출발하는 경남 지역 대회 23회차. 10km 외에 3km 건강달리기(일반 20,000원·학생 15,000원)도 운영합니다. 접수는 7월 13일부터 선착순 4,000명으로 8월 29일까지입니다.',
     raceInfo: {
@@ -598,6 +651,22 @@ export const octoberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'https://hk-marathon.com/',
+    registrationNote: '입금 기준 선착순 7,000명 — 마감일 미고지(접수기간은 "선착순 모집 마감일까지")',
+    raceKit: {
+      items: [
+        '뉴발란스 기능성 티셔츠(사전 배송, 남 95~110·여 85~95)',
+        '뉴발란스 양말(사전 배송)',
+        '배번호·기록칩(사전 배송, 5km는 기록칩 제외)',
+        '웰컴 키트 — 하이뮨 아미노포텐 파워젤',
+        '완주메달(현장, 무료 각인 — 5km 제외)',
+        '완주 패키지 — 용암수·에너지바·이온음료·누룽지팝',
+      ],
+      byDistance: [{ distance: '하프', item: '웰컴 키트에 닥터포헤어 헤어케어 제품 추가 증정' }],
+      pending: '공식 고지: 전체 참가자 기념품 추가 예정',
+      images: [{ src: '/images/marathon/hankyung-seoul-marathon-2026/kit-1.webp', alt: '2026 한경서울마라톤 공식 기념품 안내 — 뉴발란스 티셔츠·양말 등' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '한경미디어그룹이 처음 여는 약 7,000명 규모 대회. 하프는 여의도공원 출발 서강대교·월드컵대교 남단 회귀, 10K는 서강대교 왕복, 5K는 여의도 일대 코스입니다. 접수는 7월 16일부터 선착순.',
     courseInfo: {
@@ -624,9 +693,11 @@ export const octoberEvents: MarathonEvent[] = [
     location: '현암지구공원 (경기 여주시)',
     region: '경기',
     distances: ['하프', '10K'],
-    status: '접수중',
+    status: '접수예정',
     isMajor: false,
     website: 'http://yjmarathon.com/',
+    registrationNote: '공식 홈이 아직 2026년 요강을 게시하지 않음 — 접수 일정 불명 (2026-08-27 확인)',
+    lastVerified: '2026-08-27',
     description:
       '남한강변 현암지구공원에서 출발하는 여주 대표 가을 대회. 하프 1,500명·10K 2,500명·4K 1,000명 등 총 5,000명 선착순이며 1km 휠체어 종목은 무료입니다. 접수는 6월 2일~9월 18일.',
     raceInfo: {

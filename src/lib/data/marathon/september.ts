@@ -48,6 +48,18 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'https://ansanrun.com/',
+    registrationNote: '선착순 6,000명 마감(결제 완료 기준) — 마감일 미고지, 조기 마감 가능(공식 FAQ)',
+    raceKit: {
+      items: ['쌀 3kg', '소비쿠폰 5,000원권(5km 제외)', '배번호', '완주메달', '완주 간식'],
+      byDistance: [{ distance: '5km', item: '소비쿠폰 제외 — 쌀·배번호·메달·간식은 동일' }],
+      pending: '공식 고지: 메달 디자인은 변경 예정, 기념품 색상·디자인 일부 변경 가능',
+      images: [
+        { src: '/images/marathon/ansan-marathon-2026/kit-1.webp', alt: '2026 안산마라톤 공식 기념품 안내 — 하프·10km 구성' },
+        { src: '/images/marathon/ansan-marathon-2026/kit-2.webp', alt: '2026 안산마라톤 공식 기념품 안내 — 5km 구성' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '시화호 남안 대부도에서 열리는 안산시체육회·경기일보 주최 대회. 안산포도축제와 연계되며 기념품으로 쌀 3kg과 소비쿠폰을 제공합니다(5km 제외). 선착순 6,000명 결제 완료자 기준으로 마감되며, 제한시간은 하프 3시간·10km 2시간·5km 1시간. 5km는 기록칩이 제공되지 않습니다.',
     courseInfo: {
@@ -108,6 +120,28 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: true,
     website: 'https://runseoulrun.com/',
+    registrationNote: '선착순 12,000명 마감(결제 기준) — 마감일 미고지',
+    raceKit: {
+      items: [
+        '기념 티셔츠(노스페이스, 택배 발송)',
+        '노스페이스 러닝 양말',
+        '배번호(택배 발송)',
+        '완주메달(현장 지급)',
+        '할리스 기프트 카드 5,000원권',
+        '에너지 젤·리커버리 등 협찬 물품',
+      ],
+      byDistance: [
+        { distance: '하프', item: '헤어 리커버리 샴푸 50ml·파워에이드 (하프 한정)' },
+        { distance: '10km', item: '캐옴 당근 (10km 한정)' },
+      ],
+      images: [
+        { src: '/images/marathon/run-seoul-run-2026/kit-1.webp', alt: '2026 런서울런 공식 기념 티셔츠 (노스페이스)' },
+        { src: '/images/marathon/run-seoul-run-2026/kit-2.webp', alt: '2026 런서울런 완주메달 공식 시안' },
+        { src: '/images/marathon/run-seoul-run-2026/kit-3.webp', alt: '2026 런서울런 노스페이스 러닝 양말' },
+      ],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '서울광장에서 출발하는 도심 하프·10km 대회 20회차. 6월 29일 10시부터 결제자 기준 12,000명 선착순 접수로, 고정 마감일 없이 정원 소진 시 종료됩니다. 참가 정보 수정·환불은 8월 14일 17시까지 가능합니다.',
     courseInfo: {
@@ -223,9 +257,17 @@ export const septemberEvents: MarathonEvent[] = [
     location: '전남 순천 동천천변공원',
     region: '전남',
     distances: ['울트라'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'http://www.scultra100.net/',
+    registrationStart: '2026-04-01',
+    registrationEnd: '2026-08-24',
+    raceKit: {
+      items: ['기념품 — 스포엑스 모자·햇빛가리개', '완주증(기록증)', '배번호 2매'],
+      images: [{ src: '/images/marathon/suncheonman-ultra-2026/kit-1.webp', alt: '2026 순천만 울트라마라톤 공식 기념품 시안' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '순천만 생태공원 주변을 도는 102km 단일 종목 울트라마라톤 20회차. 9월 5일 오후 5시 출발해 밤을 새워 달리며 제한시간은 18시간입니다. 접수는 8월 24일까지.',
     raceInfo: {
@@ -266,6 +308,14 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'https://ganghwamarathon.co.kr',
+    registrationNote: '결제 완료순 3,500명 선착순 마감 — 마감일 미고지',
+    raceKit: {
+      items: ['DRSKIN 무봉제 싱글렛(전 참가자)', '배번호', '완주메달', '완주 간식'],
+      byDistance: [{ distance: '하프·10km', item: '러닝 슬림 벨트·기록칩·온라인 기록증 (5km·가족런 제외)' }],
+      images: [{ src: '/images/marathon/ganghwa-beach-marathon-2026/kit-1.webp', alt: '2026 강화해변마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '강화함상공원을 출발해 강화 해변을 달리는 바다 조망 코스. 선착순 3,500명 소규모 대회로 커플런(10K)·가족런(5K) 종목을 운영합니다. 접수 6/10(수) 14시 시작, 선착순 마감.',
     courseInfo: {
@@ -294,9 +344,18 @@ export const septemberEvents: MarathonEvent[] = [
     location: '서울광장 (서울 중구)',
     region: '서울',
     distances: ['하프', '11K'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://run.ytn.co.kr',
+    registrationStart: '2026-06-17',
+    registrationEnd: '2026-07-10',
+    raceKit: {
+      items: ['공식 티셔츠(무신사, 85~115)', '헤드밴드', '양말', '배번호·기록칩', '완주메달'],
+      pending: '공식 고지: 배번호·완주메달·기념품 디자인은 추후 공개(Coming Soon)',
+      images: [{ src: '/images/marathon/ytn-seoul-tour-marathon-2026/kit-1.webp', alt: '2026 서울투어마라톤 공식 기념품 안내 — 무신사 티셔츠·헤드밴드·양말' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       'YTN 주최 서울 도심 시티투어 마라톤. 서울광장 출발, 동대문·숭례문·청계천 등 구도심 랜드마크를 잇는 평탄한 하프·11K 코스(풀코스 없음). 2026.9.6(일) 07시30분 출발. 참가비 하프 8만·11K 7만 원. 접수 6/17(수) 14시~7/15(수) 17시 선착순(run.ytn.co.kr). 2025년 광화문광장→2026년 서울광장으로 출발지 변경, 11월→9월 초로 시기 이동.',
     courseInfo: {
@@ -326,6 +385,14 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'http://kdjrun.kr/',
+    registrationEnd: '2026-08-30',
+    raceKit: {
+      items: ['기념 티셔츠(랜덤 발송, 85~110)', '완주메달', '간식(빵·음료)', '모바일 기록증(전 종목)'],
+      pending: '공식 고지: 기념품과 경품은 변경될 수 있음',
+      images: [{ src: '/images/marathon/kimdaejung-peace-marathon-2026/kit-1.webp', alt: '2026 김대중평화마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '김대중재단이 주최하는 평화·인권 테마 시민 마라톤. 뚝섬 한강공원 수변무대에서 하프·10km·5km 종목이 오전 8시에 출발합니다. 접수는 8월 30일까지.',
     courseInfo: {
@@ -354,6 +421,15 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'https://energyrun.co.kr/',
+    registrationStart: '2026-06-29',
+    registrationNote: '선착순 마감(참가비 입금 완료 기준) — 마감일 미고지',
+    raceKit: {
+      items: ['기념 티셔츠(PUMA, 85~115)', '완주메달', '기념 양말(VERMON)'],
+      pending: '공식은 기념품을 이미지로만 안내 — 품목명은 공식 이미지 판독 기준',
+      images: [{ src: '/images/marathon/pohang-secondary-battery-marathon-2026/kit-1.webp', alt: '2026 포항 이차전지 마라톤 공식 기념품 안내 — 푸마 티셔츠·메달·양말' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '매일신문 주최로 포항운하관 주차장에서 출발하는 하프·10km·5km 전국 마라톤. 오전 8시 출발, 전 종목 기록칩을 사용합니다. 6월 29일 10시부터 선착순 접수이며 고정 마감일 없이 종목별 정원(하프·10km 각 4,000명, 5km 2,000명) 소진 시 마감됩니다. 2025년에는 9월 송도해수욕장에서 열렸으나 2026년은 날짜·장소가 모두 바뀌었습니다.',
     raceInfo: {
@@ -373,8 +449,14 @@ export const septemberEvents: MarathonEvent[] = [
     location: '금산세계인삼엑스포 주차장 (충남 금산군)',
     region: '충남',
     distances: ['하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
+    registrationEnd: '2026-08-14',
+    raceKit: {
+      items: ['반팔 티셔츠(화이트, 90~110)'],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '금산인삼축제와 연계해 열리는 마라톤. 하프·10km 외에 4km 종목(금산군민 할인)도 운영하며, 금산세계인삼엑스포 주차장에서 오전 8시 30분에 집결합니다. 선착순 3,000명으로 접수는 8월 19일 11시까지(입금 8월 20일 11시까지). 3월에 열리는 금산인삼웰빙마라톤과는 다른 대회입니다.',
     website: 'https://mara1080.com/event/2044eb82-fcdb-4e56-b79b-f3543a6a360d',
@@ -397,6 +479,14 @@ export const septemberEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: true,
     website: 'https://songdorun.net/',
+    registrationNote: '결제 완료순 15,000명 선착순 마감 — 마감일 미고지',
+    raceKit: {
+      items: ['DeÉpo 기능성 티셔츠(XS~2XL)', 'DeÉpo 스포츠 양말', 'DeÉpo 쿨 타월', 'DeÉpo 리유저블백', '완주메달', '배번호', '완주 간식'],
+      byDistance: [{ distance: '하프·10km', item: '기록칩·온라인 기록증 (5km 제외)' }],
+      images: [{ src: '/images/marathon/incheon-songdo-half-marathon-2026/kit-1.webp', alt: '2026 인천 송도 하프마라톤 공식 기념품 안내' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '인천대 송도캠퍼스 정문에서 출발하는 대규모 국제 하프마라톤. 결제완료순 1만 5천 명으로 마감되며, 하프는 만 18세 이상만 참가할 수 있습니다. 오전 8시 출발, 접수는 7월 8일~8월 7일.',
     raceInfo: {

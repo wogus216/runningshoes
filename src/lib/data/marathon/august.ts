@@ -12,6 +12,18 @@ export const augustEvents: MarathonEvent[] = [
     status: '접수중',
     isMajor: false,
     website: 'http://danyangmarathon.kr/',
+    registrationStart: '2026-06-10',
+    registrationNote: '선착순 5,000명 마감 — 마감일 미고지 (2026-08-27 기준 접수 페이지 열려 있음)',
+    raceKit: {
+      items: ['완주메달', '모바일 기록증', '간식', '배번호(기록칩 뒷면 부착, 택배 발송)'],
+      byDistance: [
+        { distance: '10km', item: '단양사랑상품권 10,000원 (현장 배부)' },
+        { distance: '5km', item: '단양사랑상품권 5,000원 (현장 배부)' },
+      ],
+      images: [{ src: '/images/marathon/danyang-moonlight-race-2026/kit-1.webp', alt: '2026 단양 달빛레이스 공식 기념품 안내 — 종목별 상품권·메달·배번호' }],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '한여름 더위를 피해 오후 7시에 출발하는 야간 러닝. 남한강 수변 달맞이길과 도담삼봉 방향 단양팔경 코스를 달빛 아래 달립니다. 피니시 후에는 치킨·맥주·막걸리 푸드부스가 열려 러닝과 축제를 함께 즐길 수 있습니다. 6/10~7/17 선착순 5,000명 접수.',
     courseInfo: {
@@ -104,9 +116,15 @@ export const augustEvents: MarathonEvent[] = [
     location: '여의도 한강공원 물빛광장 (서울 영등포구)',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://seoulhalfrun.kr/',
+    registrationEnd: '2026-08-23',
+    raceKit: {
+      items: ['기념 티셔츠', '완주메달', '기록증(하프·10km·5km)', '간식(빵·음료)'],
+      verifiedAt: '2026-08-27',
+    },
+    lastVerified: '2026-08-27',
     description:
       '여의도 한강공원 물빛광장에서 출발하는 도심 하프마라톤. 하프·10km·5km 전 종목 기록측정과 기념 티셔츠·메달을 제공하며 오전 8시에 출발합니다. 접수는 8월 23일까지.',
     courseInfo: {

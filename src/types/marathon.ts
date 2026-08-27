@@ -133,6 +133,12 @@ export interface RaceKit {
   byDistance?: { distance: string; item: string }[];
   /** 공식이 아직 공개하지 않은 항목 — 그대로 노출한다 */
   pending?: string;
+  /**
+   * 공식 발표 기념품 이미지 — /public 경로.
+   * ⚠️ 공식 실물 사진·공식 시안만 넣는다. AI 생성 등 실물과 다른 이미지는
+   * '실제 기념품'처럼 읽히는 허위 표현이라 금지. 출처는 public/images/marathon/IMAGE_CREDITS.md.
+   */
+  images?: { src: string; alt: string }[];
   /** 확인일 'YYYY-MM-DD' */
   verifiedAt?: string;
 }
@@ -165,6 +171,12 @@ export interface MarathonEvent {
   registrationStart?: string;
   /** 접수 마감일 'YYYY-MM-DD' */
   registrationEnd?: string;
+  /**
+   * 마감일이 날짜로 고지되지 않은 대회의 공식 접수 방식 그대로 (예: "선착순 3,500명 마감 — 마감일 미고지").
+   * registrationEnd 가 없을 때 '미확인' 대신 이걸 보여준다 — 확인했는데 날짜가 없는 것과
+   * 확인 안 한 것은 다르다.
+   */
+  registrationNote?: string;
   /** status를 마지막으로 확인한 날 'YYYY-MM-DD'. 대회 상세에만 노출한다 */
   lastVerified?: string;
 }

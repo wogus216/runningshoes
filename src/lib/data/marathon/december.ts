@@ -30,17 +30,18 @@ export const decemberEvents: MarathonEvent[] = [
   },
   {
     id: 'geumsan-goldrun-marathon-2026',
-    name: '2026 전국마라톤협회 금산 골드런 마라톤',
+    name: '2026 전국마라톤협회 금산 골드런 마라톤 (개최 취소)',
     date: '2026-12-05',
     month: '12월',
     location: '금산세계인삼엑스포주차장 (충남 금산군)',
     region: '충남',
     distances: ['12K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://mara1080.com/event/df4b4e7d-4fbc-4843-858c-f15c032e92cb',
     description:
-      '12월 초 충남 금산에서 열리는 대회로 12km·5km 두 종목을 운영합니다(10km 종목은 없습니다). 전국마라톤협회 주최로 접수는 7월 2일부터 9월 1일까지이며, 전 종목 기록칩을 사용합니다. 제한시간은 12km 2시간·5km 1시간. 12km 클럽대항전도 운영합니다.',
+      '⚠️ 개최 취소된 대회입니다(공식 공지 2026-08-03). 같은 날짜(12/5~6)에 "금산 국제 마라톤"이 열리게 되면서 취소됐고, 골드런 신청자에게는 후속 대회 우선 참가권이 부여됩니다. 참가비 환불은 공식 페이지 신청조회에서 가능하며, 기념품 마라톤화 수령자는 별도 환불 절차를 따릅니다. 후속 대회는 9월 1일 접수 개시 예정입니다.',
+    lastVerified: '2026-08-27',
     raceInfo: {
       entryFees: [
         { distance: '12K', fee: 45000 },

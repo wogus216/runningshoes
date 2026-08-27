@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText, Gift } from 'lucide-react';
@@ -390,18 +391,24 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               그동안 화면 어디에도 없었다(2026-08-25 실측: 경주 페이지에서 '마감' 관련
               문구 0건). 상단 배지는 '접수중'이라고만 해서 확인된 정보처럼 읽혔다.
 
-              ⚠️ **마감일이 없으면 비워두지 않고 '미확인'이라고 적는다.** 접수중·접수예정
-              44개 중 39개(89%)에 registrationEnd 가 없다. 빈 값은 '마감일이 없다'가
-              아니라 '우리가 아직 확인 못 했다'는 뜻인데, 안 적으면 전자로 읽혀
-              사용자가 여유 있다고 믿고 갔다가 마감을 맞는다.
+              ⚠️ **마감일이 없으면 비워두지 않고 '미확인'이라고 적는다.** 빈 값은
+              '마감일이 없다'가 아니라 '우리가 아직 확인 못 했다'는 뜻인데, 안 적으면
+              전자로 읽혀 사용자가 여유 있다고 믿고 갔다가 마감을 맞는다.
+
+              단, 공식이 마감일을 날짜로 고지하지 않는 대회(선착순 마감)가 많다 —
+              2026-08-27 전수 확인 결과 접수중 29건 중 12건이 이 방식. 그 경우
+              registrationNote 에 공식 표기를 그대로 담아 '미확인' 대신 보여준다.
+              확인했는데 날짜가 없는 것과 확인 안 한 것은 다른 상태다.
             */}
             {(event.status === '접수중' || event.status === '접수예정') && (
-              <div className="flex items-center gap-2">
-                <Timer className="h-5 w-5 shrink-0 text-sky-700" />
+              <div className="flex items-start gap-2">
+                <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
                   <span>
                     접수 <span className="font-medium text-primary">{formatDate(event.registrationEnd)}</span> 마감
                   </span>
+                ) : event.registrationNote ? (
+                  <span className="font-medium text-primary">{event.registrationNote}</span>
                 ) : (
                   <span className="text-tertiary">
                     접수 마감일 <span className="font-medium">미확인</span>
@@ -678,6 +685,30 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               기념품 · 지급품
             </h2>
             <div className="space-y-3">
+              {/* 공식 발표 이미지만 넣는다(타입 주석 참조). 공식 기념품 이미지는 세로로 긴
+                  안내 배너가 많아(실측 최대 1508×8191) 잘라서 미리보기하면 내용이 사라지고,
+                  펼쳐 두면 페이지가 2~3화면 늘어난다 — 접기 안에 원본 비율로 담는다. */}
+              {event.raceKit.images && event.raceKit.images.length > 0 && (
+                <details className="rounded-[4px] border border-border bg-surface">
+                  <summary className="cursor-pointer list-none px-3 py-2 text-sm font-semibold text-signal-dark [&::-webkit-details-marker]:hidden">
+                    공식 기념품 이미지 {event.raceKit.images.length}장 보기
+                  </summary>
+                  <div className="space-y-2 px-3 pb-3">
+                    {event.raceKit.images.map((im) => (
+                      <Image
+                        key={im.src}
+                        src={im.src}
+                        alt={im.alt}
+                        width={800}
+                        height={600}
+                        sizes="(max-width: 768px) 100vw, 640px"
+                        className="h-auto w-full rounded-[4px] border border-border"
+                        loading="lazy"
+                      />
+                    ))}
+                  </div>
+                </details>
+              )}
               {event.raceKit.items && event.raceKit.items.length > 0 && (
                 <ul className="flex flex-wrap gap-2">
                   {event.raceKit.items.map((it) => (
