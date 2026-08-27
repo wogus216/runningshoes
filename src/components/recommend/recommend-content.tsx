@@ -246,7 +246,7 @@ function ProfileBadge({
     <span
       className={`inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-medium ${
         warning
-          ? 'bg-warning/10 text-warning'
+          ? 'bg-[var(--warning-tint-10)] text-warning'
           : 'bg-sky-50 text-primary'
       }`}
     >

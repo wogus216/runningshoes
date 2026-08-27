@@ -52,6 +52,20 @@
   --accent-tint-5: rgba(255, 77, 0, 0.05);
   --accent-tint-10: rgba(255, 77, 0, 0.10);
 
+  /* bg-surface/50 류가 생성되지 않아 투명으로 새던 표면·보더·잉크 톤(2026-08-27 전수 정리).
+     전부 배경/보더/장식 전용 — 텍스트 디밍에는 쓰지 않는다(대비 미달). */
+  --surface-veil-40: rgba(255, 255, 255, 0.40);
+  --surface-veil-50: rgba(255, 255, 255, 0.50);
+  --surface-veil-60: rgba(255, 255, 255, 0.60);
+  --warning-tint-10: rgba(201, 129, 18, 0.10);
+  --border-soft: rgba(217, 212, 200, 0.5);
+  --ink-line-15: rgba(23, 21, 15, 0.15);
+  --ink-25: rgba(23, 21, 15, 0.25);
+  --ink-50: rgba(23, 21, 15, 0.50);
+  --ink-80: rgba(23, 21, 15, 0.80);
+  --ink-90: rgba(23, 21, 15, 0.90);
+  --secondary-80: rgba(110, 106, 94, 0.80);
+
   --signal-dark: #C73800;
   --warning-dark: #96600B;   /* 작은 텍스트용 — --warning 은 3.17:1 로 10px 배지에 미달 */
   --warn-soft: #FBF3E4;      /* 대회 상태 배지 upcoming 배경 */

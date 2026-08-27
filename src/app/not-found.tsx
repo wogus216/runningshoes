@@ -5,7 +5,7 @@ export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center space-y-6 max-w-md">
-        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10">
+        <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-[var(--accent-tint-10)]">
           <Search className="w-10 h-10 text-accent" />
         </div>
 

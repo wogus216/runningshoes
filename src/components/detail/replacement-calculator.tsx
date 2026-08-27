@@ -56,10 +56,10 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
         </p>
         {durability && (
           <div className="mt-2 flex flex-wrap items-center gap-1.5 text-[11px] font-semibold">
-            <span className="rounded-full border border-border bg-surface/60 px-2 py-0.5 text-secondary">
+            <span className="rounded-full border border-border bg-[var(--surface-veil-60)] px-2 py-0.5 text-secondary">
               {durability.rangeLabel}
             </span>
-            <span className="rounded-full border border-border bg-surface/60 px-2 py-0.5 text-secondary">
+            <span className="rounded-full border border-border bg-[var(--surface-veil-60)] px-2 py-0.5 text-secondary">
               {durability.basisLabel}
             </span>
             <span
@@ -100,15 +100,15 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
 
       {result && (
         <div className="grid grid-cols-3 gap-2 text-center">
-          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-[var(--surface-veil-50)] p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">교체 주기</div>
             <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.minMonths}~{result.maxMonths}<span className="text-sm">개월</span></div>
           </div>
-          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-[var(--surface-veil-50)] p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">주</div>
             <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{result.minWeeks}~{result.maxWeeks}<span className="text-sm">주</span></div>
           </div>
-          <div className="rounded-[4px] border border-border bg-surface/50 p-3">
+          <div className="rounded-[4px] border border-border bg-[var(--surface-veil-50)] p-3">
             <div className="text-[10px] uppercase tracking-wider text-tertiary font-semibold">누적 km</div>
             <div className="font-mono text-2xl font-black tabular-nums text-slate-950 mt-1">{min}~{max}</div>
           </div>
@@ -129,7 +129,7 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
       )}
 
       {durability && (
-        <div className="rounded-[4px] border border-border bg-surface/40 p-4 text-xs leading-relaxed text-secondary">
+        <div className="rounded-[4px] border border-border bg-[var(--surface-veil-40)] p-4 text-xs leading-relaxed text-secondary">
           <p>{durability.caveat}</p>
           <Link
             href={REPLACEMENT_GUIDE_PATH}

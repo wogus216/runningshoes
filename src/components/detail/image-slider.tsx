@@ -130,14 +130,14 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
       {/* 좌우 화살표 */}
       <button
         onClick={prevSlide}
-        className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
+        className="absolute left-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-[color:var(--ink-line-15)] bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
         aria-label="이전 이미지"
       >
         <ChevronLeft className="w-5 h-5 text-slate-700" />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-primary/15 bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
+        className="absolute right-3 top-1/2 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-[3px] border border-[color:var(--ink-line-15)] bg-[var(--veil-95)] transition-opacity duration-300 group-hover:opacity-100 md:opacity-0 hover:border-primary hover:bg-background"
         aria-label="다음 이미지"
       >
         <ChevronRight className="w-5 h-5 text-slate-700" />
@@ -153,7 +153,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
               "h-[3px] rounded-none transition-all duration-300",
               currentIndex === index
                 ? "w-7 bg-accent"
-                : "w-3 bg-primary/25 hover:bg-primary/50"
+                : "w-3 bg-[var(--ink-25)] hover:bg-[var(--ink-50)]"
             )}
             aria-label={`${index + 1}번 이미지로 이동`}
           />

@@ -212,7 +212,7 @@ export default async function BestPage({ params }: PageProps) {
             </thead>
             <tbody>
               {shoes.map((s, i) => (
-                <tr key={s.slug} className="border-t border-border hover:bg-surface/60">
+                <tr key={s.slug} className="border-t border-border hover:bg-[var(--surface-veil-60)]">
                   <td className="p-3 text-tertiary">{i + 1}</td>
                   <td className="p-3">
                     <Link href={`/shoes/${s.slug}`} className="font-semibold text-primary hover:text-accent">

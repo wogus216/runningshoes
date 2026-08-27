@@ -185,7 +185,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
           <li key={s.slug}>
             <Link
               href={`/shoes/${s.slug}` as never}
-              className="group flex items-center gap-3 rounded-[4px] border border-border bg-surface/50 p-3 transition hover:border-accent hover:bg-white"
+              className="group flex items-center gap-3 rounded-[4px] border border-border bg-[var(--surface-veil-50)] p-3 transition hover:border-accent hover:bg-white"
             >
               <div className="relative h-16 w-16 shrink-0 overflow-hidden rounded-[4px] bg-white">
                 <Image
@@ -228,7 +228,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
               <li key={g.slug}>
                 <Link
                   href={`/gels/${g.slug}` as never}
-                  className="group flex items-center gap-3 rounded-[4px] border border-border bg-surface/50 p-3 transition hover:border-accent hover:bg-white"
+                  className="group flex items-center gap-3 rounded-[4px] border border-border bg-[var(--surface-veil-50)] p-3 transition hover:border-accent hover:bg-white"
                 >
                   <div className="relative h-14 w-14 shrink-0 overflow-hidden rounded-[4px] bg-white">
                     <Image

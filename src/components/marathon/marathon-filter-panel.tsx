@@ -102,7 +102,7 @@ export function MarathonFilterPanel({
           placeholder="대회명, 장소 검색..."
           value={filters.searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
-          className="w-full rounded-[4px] border border-sky-100 bg-white py-2 pl-10 pr-4 text-sm text-primary placeholder:text-secondary/60 focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
+          className="w-full rounded-[4px] border border-sky-100 bg-white py-2 pl-10 pr-4 text-sm text-primary placeholder:text-secondary focus:border-sky-300 focus:outline-none focus:ring-1 focus:ring-sky-300"
         />
       </div>
 
@@ -183,7 +183,7 @@ export function MarathonFilterPanel({
 
             return (
               <div key={group.label}>
-                <span className="text-[10px] text-secondary/60 uppercase tracking-wider">
+                <span className="text-[10px] text-secondary uppercase tracking-wider">
                   {group.label}
                 </span>
                 <div className="flex flex-wrap gap-1.5 mt-1">

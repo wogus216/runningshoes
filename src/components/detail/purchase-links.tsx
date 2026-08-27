@@ -187,7 +187,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
                     href={link.url}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
-                    className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-surface/50 ${
+                    className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-[var(--surface-veil-50)] ${
                       isCheapest ? 'bg-[var(--positive-soft)]' : ''
                     }`}
                   >
@@ -225,7 +225,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
         </div>
       )}
 
-      <div className="rounded border border-border bg-surface/60 p-4 text-xs text-slate-600">
+      <div className="rounded border border-border bg-[var(--surface-veil-60)] p-4 text-xs text-slate-600">
         <p className="mb-2 font-semibold text-slate-700">구매 전 확인</p>
         <ul className="space-y-1">
           <li>- 가격은 수시로 변동됩니다. 실제 판매가는 각 스토어에서 확인하세요.</li>

@@ -49,7 +49,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
           {specRows.map((row, i) => (
             <div
               key={row.label}
-              className={`flex items-start gap-4 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-surface/50' : ''}`}
+              className={`flex items-start gap-4 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-[var(--surface-veil-50)]' : ''}`}
             >
               <dt className="w-28 shrink-0 font-semibold text-tertiary">{row.label}</dt>
               <dd className="flex-1 text-primary">{row.value}</dd>
@@ -68,7 +68,7 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
             {measuredRows.map((row, i) => (
               <div
                 key={row.label}
-                className={`flex items-start gap-4 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-surface/50' : ''}`}
+                className={`flex items-start gap-4 px-4 py-3 text-sm ${i % 2 === 0 ? 'bg-[var(--surface-veil-50)]' : ''}`}
               >
                 <dt className="w-28 shrink-0 font-semibold text-tertiary">{row.label}</dt>
                 <dd className="flex-1 text-primary">{row.value}</dd>

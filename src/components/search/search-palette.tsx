@@ -189,7 +189,7 @@ export function SearchPalette() {
               )}
             </div>
 
-            <div className="flex items-center justify-between border-t border-border bg-surface/50 px-4 py-2 text-[10px] text-tertiary">
+            <div className="flex items-center justify-between border-t border-border bg-[var(--surface-veil-50)] px-4 py-2 text-[10px] text-tertiary">
               <div className="flex items-center gap-3">
                 <span><kbd className="px-1 rounded bg-white border border-border">↑↓</kbd> 이동</span>
                 <span><kbd className="px-1 rounded bg-white border border-border">Enter</kbd> 선택</span>

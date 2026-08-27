@@ -236,7 +236,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                 </tr>
               </thead>
               <tbody>
-                <tr className="border-b border-border/50">
+                <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">가격</td>
                   <td className="text-center py-2.5 px-3 font-mono font-medium tabular-nums text-primary">
                     ₩{currentShoe.price?.toLocaleString()}
@@ -250,7 +250,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                     </td>
                   ))}
                 </tr>
-                <tr className="border-b border-border/50">
+                <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">무게</td>
                   <td className="text-center py-2.5 px-3 font-mono tabular-nums text-primary">
                     {currentShoe.specs?.weight}g
@@ -264,7 +264,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                     </td>
                   ))}
                 </tr>
-                <tr className="border-b border-border/50">
+                <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">쿠셔닝</td>
                   <td className="text-center py-2.5 px-3">
                     <SpecBar value={(currentShoe.specs?.cushioning || 5) * 10} />
@@ -275,7 +275,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                     </td>
                   ))}
                 </tr>
-                <tr className="border-b border-border/50">
+                <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">안정성</td>
                   <td className="text-center py-2.5 px-3">
                     <SpecBar value={(currentShoe.specs?.stability || 5) * 10} color="green" />
