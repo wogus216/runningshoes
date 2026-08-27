@@ -182,3 +182,8 @@ If you are a copyright holder and believe your content has been used inappropria
 - VIEW: SR_RT_GLB(측면·토 오른쪽) / SB_FR_GLB / SB_BK_GLB / SB_FL_GLB / SB_BT_GLB / SB_TP_GLB
 - Date: 2026-08-22
 - Images: 6 (side, front, back, angle, outsole, top) — 기존 발코니 착화샷 5장 대체
+
+## Adidas Hyperboost Edge
+- Source: RunRepeat 랩 측면샷(side) — https://runrepeat.com/adidas-hyperboost-edge / adidas 공식 프레스 팩샷(angle, back) — adidas Newsroom (preview.thenewsmarket.com)
+- Date: 2026-08-27
+- Images: 3 (side, angle, back) — 눈금자 크롭 + @imgly 배경제거 후 WebP

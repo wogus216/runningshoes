@@ -8,6 +8,7 @@ import { shoe as sauconyEndorphinPro4 } from './saucony-endorphin-pro-4';
 import { shoe as sauconyEndorphinElite2 } from './saucony-endorphin-elite-2';
 import { shoe as sauconyEndorphinElite3 } from './saucony-endorphin-elite-3';
 import { shoe as sauconyEndorphinSpeed5 } from './saucony-endorphin-speed-5';
+import { shoe as sauconyEndorphinSpeed6 } from './saucony-endorphin-speed-6';
 import { shoe as sauconyEndorphinTrainer } from './saucony-endorphin-trainer';
 import { shoe as sauconyEndorphinPro5 } from './saucony-endorphin-pro-5';
 import { shoe as sauconyEndorphinAzura } from './saucony-endorphin-azura';
@@ -31,6 +32,7 @@ export const sauconyShoes: Shoe[] = [
   sauconyEndorphinElite2,
   sauconyEndorphinElite3,
   sauconyEndorphinSpeed5,
+  sauconyEndorphinSpeed6,
   sauconyEndorphinTrainer,
   sauconyEndorphinPro5,
   sauconyEndorphinAzura,

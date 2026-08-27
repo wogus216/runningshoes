@@ -11,6 +11,7 @@ import { shoe as asicsMetaspeedSkyPlus } from './asics-metaspeed-sky-plus';
 import { shoe as asicsMetaspeedEdgePlus } from './asics-metaspeed-edge-plus';
 import { shoe as asicsMegablast } from './asics-megablast';
 import { shoe as asicsSonicblast } from './asics-sonicblast';
+import { shoe as asicsSonicblast2 } from './asics-sonicblast-2';
 import { shoe as asicsMagicSpeed5 } from './asics-magic-speed-5';
 import { shoe as asicsMetaspeedRay } from './asics-metaspeed-ray';
 import { shoe as asicsMetafujiTrail } from './asics-metafuji-trail';
@@ -30,6 +31,7 @@ export const asicsShoes: Shoe[] = [
   asicsMetaspeedEdgePlus,
   asicsMegablast,
   asicsSonicblast,
+  asicsSonicblast2,
   asicsMagicSpeed5,
   asicsMetaspeedRay,
   asicsMetafujiTrail,

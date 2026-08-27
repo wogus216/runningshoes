@@ -3,6 +3,7 @@ import { shoe as nikePegasus41 } from './nike-pegasus-41';
 import { shoe as nikePegasus42 } from './nike-pegasus-42';
 import { shoe as nikePegasusPremium } from './nike-pegasus-premium';
 import { shoe as nikePegasusPlus } from './nike-pegasus-plus';
+import { shoe as nikePegasusPlus2 } from './nike-pegasus-plus-2';
 import { shoe as nikeVomero18 } from './nike-vomero-18';
 import { shoe as nikeVomeroPlus } from './nike-vomero-plus';
 import { shoe as nikeVomeroPremium } from './nike-vomero-premium';
@@ -21,6 +22,7 @@ export const nikeShoes: Shoe[] = [
   nikePegasus42,
   nikePegasusPremium,
   nikePegasusPlus,
+  nikePegasusPlus2,
   nikeVomero18,
   nikeVomeroPlus,
   nikeVomeroPremium,

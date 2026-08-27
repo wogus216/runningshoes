@@ -107,6 +107,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['adidas-hyperboost-edge', 'adidas-adizero-evo-sl', 'asics-novablast-6', 'nike-vomero-18'],
   relatedPosts: [
+    { slug: 'adidas-hyperboost-edge-vs-run-comparison-2026', title: '하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이' },
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교' },
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
