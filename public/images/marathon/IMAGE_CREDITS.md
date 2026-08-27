@@ -30,9 +30,10 @@
 | round-lab-run-2026 | kit-1 | https://www.kw-marathon.com/theme/krf/img/01_04_roundlab.jpg |
 | sonkeechung-peace-marathon-2026 | kit-1 | img.raceplan.co.kr (sonkeechungrun.com 공식 게시) |
 | gwacheon-marathon-2026 | kit-1,2 | cdn.blueimg.co.kr/gcrun (공식 홈 게시) |
+| geumsan-insam-festival-marathon-2026 | kit-1 | mara1080.com 공식 souvenir-image API (S3). 파일명은 타 대회("서산-코스모스")지만 운영사가 동일 티셔츠 이미지를 재사용한 것 — 내용이 공식 기술(화이트 반팔, 90~110)과 일치해 재검수 후 채택(2026-08-27 2차) |
 
-제외 기록 (다운로드 후 검수에서 탈락):
-- mbn-seoul-marathon-2026 — 공식 이미지가 실물이 아닌 "디자인 추후 공개" 목업 렌더
-- gochang-dolmen-marathon-2026 — 원본 135×163px 저해상
-- hangang-seoul-half-marathon-2026 — 이미지 경로가 `/img/2024/`라 2024년 시안일 위험
-- geumsan-insam-festival-marathon-2026 — 공식 API가 반환한 파일명이 "2026-서산-코스모스_기념품"으로 타 대회 자산 의심
+제외 기록 (다운로드 후 검수에서 탈락 — 2026-08-27 2차 재시도 결과 포함):
+- mbn-seoul-marathon-2026 — 공식 이미지가 실물이 아닌 "디자인 추후 공개" 목업 렌더 (공식 실물 공개 전까지 불가)
+- gochang-dolmen-marathon-2026 — 원본 저해상 (gift_r.jpg 135px · gift.jpg 192px 둘 다 미달, 2차 확인)
+- hangang-seoul-half-marathon-2026 — `/img/2024/` 경로 시안 + 2026-08-20 게시판 이미지는 HAPPS 의류 판매 홍보 형식이라 '기념티 실물' 확증 없음 (2차 확인, 제외 유지)
+- ~~geumsan-insam~~ → 2차 재검수에서 채택 (위 표 참조)

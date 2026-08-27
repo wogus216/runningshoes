@@ -22,6 +22,15 @@
 | **2026-08-20** | `geumsan-insam-festival-marathon-2026` (september.ts) | 접수 8/19 11시 마감(입금 8/20) → `마감` |
 | **2026-08-25** | `suncheonman-ultra-2026` (september.ts) | 접수 8/24 마감 → `마감` |
 | **2026-09-13** | `hyundai-forest-run-2026` | 대회 익일 → `대회종료`. 후기·현장 콘텐츠 발행 검토 |
+| **2026-08-30** | `danyang-moonlight-race-2026` (august.ts) | 대회(8/29) 익일 → `대회종료` |
+| **2026-08-31** | `kimdaejung-peace-marathon-2026` (september.ts) | 접수 8/30 마감 → `마감` |
+| **2026-09-01** | `gochang-dolmen-marathon-2026` (november.ts) | 접수 8/31 14:00 마감 → `마감` |
+| **2026-09-01** | `sangju-gotgam-marathon-2026` (november.ts) | 8/31까지 환불 진행 후 **2차 접수 개시 여부** 공지 확인 (mara1080 공지). 2차 열리면 status `접수중` 복귀 + registrationNote 갱신 |
+| **2026-09-11** | `namwon-chunhyang-marathon-2026` (november.ts) | 9/10까지 환불 후 **2차 접수 개시 여부** 공지 확인 (취소 200명 이상 시). 동일 처리 |
+| **2026-09-12** | `jeju-mandarin-marathon-2026` (november.ts) | 접수 9/11 마감 → `마감`. 기념품 안내(준비중) 공개 여부도 확인 → raceKit 갱신 |
+| **2026-09-15경** | `yeoju-sejong-marathon-2026` (october.ts) | 공식 홈(yjmarathon.com) 2026 요강 게시 여부 재확인 — 현재 2025 내용 그대로(접수예정 처리 중). 게시되면 접수일·기념품 입력 |
+| **2026-09월 중** | `mbn-seoul-marathon-2026` (november.ts) | 기념품 "디자인 추후 공개" → 실물 공개되면 이미지 수집(목업 금지, [[marathon-racekit-backfill-2026-08]] 검수 기준) |
+| **2026-10-08** | `buyeo-goodtrae-marathon-2026` (november.ts) | 접수 10/7 마감(선착순 5,000 조기 마감 가능 — 그 전에 공지 뜨면 즉시) → `마감` |
 
 ### ⚠️ 오염된 2차 소스 주의 (2026-07-20 실증)
 

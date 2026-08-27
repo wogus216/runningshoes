@@ -454,6 +454,7 @@ export const septemberEvents: MarathonEvent[] = [
     registrationEnd: '2026-08-14',
     raceKit: {
       items: ['반팔 티셔츠(화이트, 90~110)'],
+      images: [{ src: '/images/marathon/geumsan-insam-festival-marathon-2026/kit-1.webp', alt: '2026 금산인삼축제 마라톤 공식 기념 티셔츠 — 공식 예시 이미지(색상·로고 변경 가능 고지)' }],
       verifiedAt: '2026-08-27',
     },
     lastVerified: '2026-08-27',
