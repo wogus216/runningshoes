@@ -470,6 +470,19 @@ const REAL_PROPER = [
   '한강공원', '올림픽공원', '월드컵공원', '양재천', '중랑천',
 ];
 
+// 우리가 수집하지 않는 "사용자 후기"를 근거로 든 서술.
+// 2026-08-27 감사에서 블로그 12건 적발 — 별점도 1인칭도 아니라서 아래 두 목록을
+// 모두 통과했다. 존재하지 않는 출처를 인용하는 것도 같은 종류의 거짓이다.
+// ⚠️ '커뮤니티에서'·'평이 많'은 일부러 넣지 않았다 — "커뮤니티에서 갓신발로 불린다"
+//    같은 통칭 언급이나 외부 전문 리뷰 종합에도 걸려 오탐이 대부분이 된다.
+const FAKE_SOURCE = [
+  '실사용 후기', '사용자 후기', '실제 후기', '유저 후기', '실착 후기',
+  '후기가 많', '후기도 많', '후기를 보면', '후기의 공통', '후기에서도', '후기에서는',
+  '실사용자들이', '착용자들이', '구매자들이',
+];
+// "아직 후기가 부족하다"처럼 부재를 밝히는 서술은 정직한 표현이라 통과시킨다.
+const FAKE_SOURCE_NEGATION = /부족|없|아직|미흡|수집하지/;
+
 // 전환이 끝나면 이 값을 0으로 내리고, 아래 report()를 error로 바꾼다.
 // 그때부터 새 허구 후기는 커밋 자체가 막힌다.
 const FICTION_MIGRATION_REMAINING = 0;
@@ -485,9 +498,23 @@ const reviewRe = /\{\s*userType:\s*'((?:[^'\\]|\\.)*)',\s*(?:rating:\s*([\d.]+),
 // (컴포넌트 쪽 isSourced 정규식과 동일하게 유지).
 const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i;
 
-for (const brand of brands) {
-  const content = readBrandContent(brand);
+// 신발 12개 브랜드 + 젤. 젤 reviews 39건은 2026-08-27까지 이 검사 밖에 있었다.
+const reviewSources = [
+  ...brands.map((b) => ({ label: b, content: readBrandContent(b) })),
+  ...(fs.existsSync('src/lib/data/gels')
+    ? fs
+        .readdirSync('src/lib/data/gels')
+        .filter((f) => f.endsWith('.ts') && f !== 'index.ts')
+        .map((f) => ({
+          label: `gels/${f.replace('.ts', '')}`,
+          content: fs.readFileSync(path.join('src/lib/data/gels', f), 'utf8'),
+        }))
+    : []),
+];
+
+for (const { label: brand, content } of reviewSources) {
   let m;
+  reviewRe.lastIndex = 0;
   while ((m = reviewRe.exec(content)) !== null) {
     const [, userType, rating, text] = m;
     scanned++;
@@ -495,10 +522,17 @@ for (const brand of brands) {
 
     const fp = FIRST_PERSON.filter((k) => text.includes(k));
     const pr = REAL_PROPER.filter((k) => text.includes(k));
+    const fs2 = FAKE_SOURCE.filter(
+      (k) => text.includes(k) && !FAKE_SOURCE_NEGATION.test(text.slice(Math.max(0, text.indexOf(k) - 25), text.indexOf(k) + k.length + 25))
+    );
 
     if (pr.length > 0) {
       report(`[${brand}] "${userType}" 실재 고유명사: ${pr.join(', ')}`);
-    } else if (fp.length >= 2) {
+    } else if (fs2.length > 0) {
+      report(`[${brand}] "${userType}" 가짜 출처 인용: ${fs2.join(', ')}`);
+    } else if (fp.length >= 1) {
+      // 2026-08-27: 임계값을 2 → 1로 내렸다. 한 문장에 1인칭 표현이 하나만 있어도
+      // 실제 경험을 주장하는 것은 마찬가지인데, 기존 기준으로는 그대로 통과했다.
       report(`[${brand}] "${userType}" 1인칭 경험 서술: ${fp.slice(0, 2).join(', ')}`);
     } else if (rating !== undefined) {
       report(`[${brand}] "${userType}" 무출처 별점(rating: ${rating})`);
@@ -506,8 +540,29 @@ for (const brand of brands) {
   }
 }
 
+// 블로그 본문 — 2026-08-27 감사에서 위반 12건이 전부 여기서 나왔다.
+// reviews 필드만 보던 기존 검사의 사각지대였다.
+let blogScanned = 0;
+const blogDir = 'src/lib/data/blog/posts';
+if (fs.existsSync(blogDir)) {
+  for (const file of fs.readdirSync(blogDir).filter((f) => f.endsWith('.ts') && f !== 'index.ts')) {
+    const lines = fs.readFileSync(path.join(blogDir, file), 'utf8').split('\n');
+    blogScanned++;
+    lines.forEach((line, i) => {
+      for (const k of FAKE_SOURCE) {
+        const idx = line.indexOf(k);
+        if (idx === -1) continue;
+        const around = line.slice(Math.max(0, idx - 25), idx + k.length + 25);
+        if (FAKE_SOURCE_NEGATION.test(around)) continue;
+        report(`[blog/${file}:${i + 1}] 가짜 출처 인용: "${k}" — …${around.trim()}…`);
+        break;
+      }
+    });
+  }
+}
+
 if (fictionHits.length === 0) {
-  ok(`리뷰 ${scanned}건 — 1인칭 허구 경험·무출처 별점 없음`);
+  ok(`리뷰 ${scanned}건 · 블로그 ${blogScanned}개 파일 — 1인칭 허구 경험·가짜 출처·무출처 별점 없음`);
 } else if (fictionHits.length > FICTION_MIGRATION_REMAINING) {
   // 기준선보다 늘었다 = 새 허구 후기가 유입됐다. 이건 막는다.
   error(
