@@ -62,6 +62,39 @@ export interface CrewPhoto {
   feature?: boolean; // 벽에서 세로 두 칸을 차지하는 대표컷. 배열 전체에 한 장만 둔다
 }
 
+/**
+ * 선수 소개 페이지(`/saturday/athletes`)의 한 명.
+ *
+ * ⚠️ 이 타입에서 사실인 것은 `name`·`role`(실제 접수 종목)·`characterLine`(단톡 원문 근거)뿐이다.
+ *    기록·페르소나·목표시간을 여기에 만들어 넣지 않는다. 측정치가 없는 필드는 undefined로 두고
+ *    화면이 '측정 전'을 명시한다 — 빈칸을 그럴듯한 말로 메우는 순간 이 페이지는 남의 이야기가 된다.
+ */
+export interface SaturdayAthlete {
+  memberId: CrewMember['id']; // SATURDAY_CREW 와 잇는 키. 로스터가 정본이다
+  nameLatin: string; // 큰 세리프 제목용 로마자. Newsreader 에는 한글 글리프가 없다
+  /** 캐릭터 한 줄. 이름 다음으로 강하게 읽히는 이 페이지의 주인공 정보 */
+  characterLine: string;
+  /** characterLine 의 근거가 된 단톡 원문. 검수 대조용이며 화면에 나가지 않는다 */
+  source: string[];
+  knownFor?: string;
+  /** 실측 러닝 데이터가 생긴 뒤에만 채운다. CrewStats 가 비어 있는 동안은 undefined */
+  runningType?: string;
+  /**
+   * public/images/challenge/saturday/{photo}.webp — 하위 디렉토리를 포함한다.
+   * 개인 초상은 `athletes/{코드네임 로마자}`, 아직 못 받은 사람은 `crew/{장면}`.
+   */
+  photo: string;
+  photoAlt: string;
+  /** 사진마다 얼굴 위치가 달라 개별 조절한다. CSS object-position 값 */
+  objectPosition?: string;
+  /**
+   * 본인 사진이 아니라 크루 단체 사진을 임시로 놓은 상태.
+   * 화면이 이 사실을 숨기지 않는다 — 감추면 '이 사람 사진'으로 읽힌다.
+   * 개인 사진을 받으면 photo 를 바꾸고 이 필드를 지운다.
+   */
+  isPlaceholder?: boolean;
+}
+
 export interface SaturdayTeaserCopy {
   hero: {
     question: string;
