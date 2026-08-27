@@ -150,7 +150,7 @@
    - 이번 범위: Mission Log UI를 만들지는 않지만, 현재 3문단을 버리지 않고 확장할 수 있어야 한다.
 
 3. LongBlack 사용자 제공 글  
-   https://longblack.co/note/2080?ticket=NT26330d9b104ab1416c330f4fca3d41b6d89f
+   https://longblack.co/note/2080
 
    - 참고 이유: 크루를 유명인 중심이 아니라 관계·공동 기억·지속되는 이야기로 바라보게 한 기획 출발점.
    - 적용: 리더·MVP·게스트를 만들지 않고 7명을 동등한 크루원으로 다룬다.
