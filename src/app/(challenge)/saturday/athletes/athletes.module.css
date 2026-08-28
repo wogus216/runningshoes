@@ -25,7 +25,12 @@
   /* 순백보다 반 톤 따뜻하다. 사진의 아이보리·적갈색과 같은 온도에 놓기 위해서다 */
   --ath-bg: #fdfcfa;
   --ath-fg: #0b0b0b;
-  --ath-muted: #7b7b7b;
+  /*
+   * 흰 바탕 대비 5.2:1. 이전 값(#7b7b7b)은 4.13:1 로 WCAG AA(4.5:1)에 못 미쳤고,
+   * 이 색을 쓰는 것 중에는 10px 짜리 진행 안내문과 '← 쎄러데이' 링크가 있었다 —
+   * 작고 흐린 글자일수록 기준을 넘겨야 한다.
+   */
+  --ath-muted: #6b6b6b;
   --ath-cream: #f2ede3;
   --ath-line: rgba(11, 11, 11, 0.12);
   /* 포인트. 번호·작은 라벨·현재 선수 표시에만 쓴다. 흰 바탕 대비 6.4:1 */
@@ -81,6 +86,17 @@
 .page [tabindex='0']:focus-visible {
   outline: 2px solid var(--ath-fg);
   outline-offset: 3px;
+}
+
+/*
+ * globals.css 의 전역 `[tabindex]:focus-visible` 은 값이 -1 이든 0 이든 가리지 않고
+ * Tailwind ring(box-shadow 기반, 이 프로젝트에서 sky-500 = #FF4D00 오렌지)을 그린다.
+ * outline 만 지워선 안 지워지는 이유다 — 여기서 box-shadow 까지 명시적으로 끈다.
+ * `.page` 로 감싸 특이도를 올려서 로드 순서와 무관하게 이긴다.
+ */
+.page .profileName:focus-visible {
+  outline: none;
+  box-shadow: none;
 }
 
 .skipLink {
@@ -165,91 +181,13 @@
   }
 }
 
-/* ── 1. 오프닝 ───────────────────────────────────────────── */
-
-/*
- * 한 장의 포스터로 읽혀야 한다. 사진과 제목 사이에 빈 공간을 두지 않는다 —
- * 예전 구조(`1fr auto` + 사진 max-height 50svh)가 그 사이에 큰 구멍을 만들었다.
- * 지금은 사진이 남는 높이를 전부 먹고, 제목이 사진 바닥에 맞닿는다.
- */
-.intro {
-  display: grid;
-  grid-template-rows: minmax(0, 1fr) auto;
-  height: calc(100svh - var(--ath-bar));
-  min-height: 520px;
-  padding: 0 var(--ath-pad) max(20px, env(safe-area-inset-bottom));
-}
-
-.introMedia {
-  position: relative;
-  min-height: 0;
-  overflow: hidden;
-  background: var(--ath-cream);
-}
-
-.introCopy {
-  display: grid;
-  gap: 6px;
-  padding-top: 14px;
-}
-
-.introEyebrow {
-  font-family: var(--ath-mono);
-  font-size: 10px;
-  font-weight: 500;
-  letter-spacing: 0.2em;
-  color: var(--ath-signal);
-}
-
-/* 이 화면의 유일한 대형 제목 */
-.introTitle {
-  margin: 0;
-  font-family: var(--ath-serif);
-  font-weight: 400;
-  /* 대문자 세리프는 폭이 넓다. `THE STARTING` 이 375px 에서 한 줄에 들어가는 상한 */
-  font-size: clamp(2rem, 10.2vw, 5rem);
-  line-height: 0.9;
-  letter-spacing: -0.035em;
-}
-
-.introTitle em {
-  display: block;
-  font-style: italic;
-}
-
-.introSub {
-  margin: 2px 0 0;
-  font-family: var(--ath-kr);
-  font-weight: 600;
-  font-size: clamp(0.95rem, 4.2vw, 1.25rem);
-  letter-spacing: -0.03em;
-  color: var(--ath-fg);
-}
-
-.introMeta {
-  display: flex;
-  justify-content: space-between;
-  gap: 14px;
-  margin: 10px 0 0;
-  padding-top: 8px;
-  border-top: 1px solid var(--ath-line);
-  font-family: var(--ath-mono);
-  font-size: 10px;
-  letter-spacing: 0.12em;
-  color: var(--ath-muted);
-}
-
-.introScroll {
-  color: var(--ath-fg);
-}
-
-/* ── 2~4. 카드 스택 → 스티키 그리드 ─────────────────────── */
+/* ── 1~4. 카드 스택(첫 화면 자체가 히어로) → 등장 → 스티키 그리드 ── */
 
 /*
  * 스티키 트랙은 JS 가 켠다(data-motion="on"). 기본 HTML 은 그리드 한 화면이다 —
  * JS 가 오기 전에도, 모션 감소에서도, 일곱 명이 그대로 보인다.
  *
- * 320svh. 무대가 100svh 를 쓰므로 실제로 붙어 있는 구간은 앞쪽 70% 남짓이고,
+ * 400svh. 무대가 100svh 를 쓰므로 실제로 붙어 있는 구간은 앞쪽 70% 남짓이고,
  * 등장·정지·그리드가 전부 그 안에서 끝나야 한다(use-deck-scroll.ts 주석 참조).
  */
 .track {
@@ -257,7 +195,7 @@
 }
 
 .track[data-motion='on'] {
-  height: 320svh;
+  height: 400svh;
 }
 
 .stage {
@@ -288,43 +226,110 @@
   text-transform: uppercase;
 }
 
+/*
+ * display:inline-block 이 있어야 GSAP 의 scale 트윈(그리드 도착 팝, athlete-deck.tsx)이
+ * 먹는다 — 인라인 요소는 transform 의 scale 이 무시된다.
+ */
 .stageLabel b {
+  display: inline-block;
+  color: var(--ath-signal);
+  font-weight: 500;
+}
+
+/* 오프닝에서만 보이는 작은 라벨. 부모의 mono·크기·대문자를 그대로 물려받는다 */
+.stageEyebrow {
   color: var(--ath-signal);
   font-weight: 500;
 }
 
 /*
- * 무대 바닥 — 스택에서는 '지금 올라온 선수', 그리드에서는 안내문.
+ * 무대 바닥 — 오프닝 카피, '지금 올라온 선수'(이름+캐릭터 문장), 그리드 안내문.
+ * 셋 중 하나만 렌더링되므로(athlete-deck.tsx) 여기서는 그때그때 모양만 잡는다.
  * 아래에서 올라오는 사진이 이 줄 위를 지나가므로 불투명한 판으로 덮어 둔다.
  * 사진이 이 줄 밑으로 미끄러져 들어가는 게 영화 자막선처럼 읽힌다.
+ *
+ * 높이를 고정한다 — 오프닝 카피(3줄)가 가장 크므로 그 기준으로 잡아 두면
+ * 국면이 바뀔 때마다 이 박스 위 deck 의 높이가 흔들려 카드 위치가 튀는 일이 없다.
  */
 .stageFoot {
   position: relative;
   z-index: 5;
-  min-height: 34px;
+  min-height: clamp(64px, 17svh, 118px);
   background: var(--ath-bg);
+  display: flex;
+  align-items: flex-end;
 }
 
 .stageFoot > * {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  transition: opacity 260ms var(--ath-ease);
+  width: 100%;
+  margin: 0;
+  animation: athFootIn 320ms var(--ath-ease) both;
+}
+
+/* 오프닝 — 카드1(재춘)만 도착한 첫 화면. 그리드의 <h1> 과 같은 두 줄을 먼저 들려준다 */
+.introFoot {
+  display: grid;
+  gap: 8px;
+}
+
+/*
+ * 이 페이지에서 가장 큰 글자다. 마지막 장면의 날짜(.closingDate)보다 커야 한다 —
+ * 선수 소개 페이지에서 사람보다 숫자가 크면 위계가 뒤집힌다.
+ *
+ * line-height 는 0.92 였다. 폰트 크기보다 작은 행간이라 이탤릭 SEVEN 의 잉크가
+ * 줄상자 아래로 4px 넘쳐 바로 다음 줄(일곱 명, 하나의 출발선.)을 덮었다 —
+ * 데스크톱 4px, 모바일 0px 간격으로 실제로 글자가 겹쳤다.
+ */
+.introFootTitle {
+  /*
+   * 이탤릭 SEVEN 의 잉크는 줄상자보다 5px 아래까지 나온다(68px 기준, 실측).
+   * 행간만 고쳐서는 간격이 3px 밖에 안 남는다 — 글자 크기에 비례하는 여백을 따로 준다.
+   */
+  margin: 0 0 0.16em;
+  font-family: var(--ath-serif);
+  font-weight: 400;
+  font-size: clamp(2rem, 10vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.035em;
+}
+
+.introFootTitle em {
+  display: block;
+  font-style: italic;
+}
+
+.introFootSub {
+  font-family: var(--ath-kr);
+  font-weight: 600;
+  font-size: clamp(0.85rem, 3.6vw, 1.05rem);
+  letter-spacing: -0.03em;
+}
+
+.introFootHint {
+  margin-top: 2px;
+  font-family: var(--ath-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--ath-muted);
 }
 
 /*
  * 스택에서 일곱 장의 이름표를 다 띄우면 같은 자리에 전부 겹친다.
- * 카드에서는 이름을 빼고, 지금 화면 맨 위에 있는 한 명만 여기 한 줄로 쓴다.
+ * 카드에서는 이름을 빼고, 지금 화면 맨 위에 있는 한 명의 이름·캐릭터 문장만 여기서 말한다.
  */
+.activeInfo {
+  display: grid;
+  gap: 4px;
+}
+
 .activeName {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
   font-family: var(--ath-kr);
   font-weight: 600;
-  font-size: clamp(1.1rem, 5vw, 1.5rem);
+  font-size: clamp(1.05rem, 4.6vw, 1.4rem);
   letter-spacing: -0.035em;
-  opacity: 1;
 }
 
 .activeName i {
@@ -334,7 +339,7 @@
   font-size: 10px;
   letter-spacing: 0.14em;
   color: var(--ath-signal);
-  margin-right: 8px;
+  margin-right: 4px;
 }
 
 .activeRole {
@@ -345,21 +350,55 @@
   color: var(--ath-muted);
 }
 
+.activeLine {
+  font-family: var(--ath-kr);
+  font-weight: 500;
+  font-size: clamp(0.82rem, 3.2vw, 0.95rem);
+  line-height: 1.4;
+  color: var(--ath-muted);
+  white-space: pre-line;
+}
+
+/*
+ * 데스크톱에서 사진은 넓은 들판에 놓인 하나의 오브제다. 카피를 화면 왼쪽 끝에 붙여 두면
+ * 시선이 가운데 사진에서 왼쪽 아래 글자까지 500px 를 대각선으로 건너야 했고,
+ * 둘이 한 장면으로 읽히지 않았다 — 사진과 같은 축에 세워 한 덩어리로 만든다.
+ * 모바일은 사진이 이미 화면 폭을 채우므로 왼쪽 정렬 그대로 둔다.
+ */
+@media (min-width: 768px) {
+  .track[data-phase='stack'] .introFoot {
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* 이름 줄은 종목이 오른쪽 끝에 붙는 구조라 폭을 사진에 맞춰야 축이 선다 */
+  .track[data-phase='stack'] .activeInfo {
+    max-width: min(46vw, calc((100svh - var(--ath-bar) - 300px) * 0.75));
+    margin-inline: auto;
+  }
+}
+
+/*
+ * 카드를 누를 수 있다는 사실을 알려주는 유일한 문장인데, 10px 흐린 회색이라
+ * 페이지에서 가장 안 보이는 글자였다. 안내문은 자기가 안내하는 것보다 잘 보여야 한다.
+ */
 .gridHint {
   font-family: var(--ath-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
-  color: var(--ath-muted);
+  color: var(--ath-fg);
   text-transform: uppercase;
-  opacity: 0;
 }
 
-.track[data-phase='grid'] .activeName {
-  opacity: 0;
-}
-
-.track[data-phase='grid'] .gridHint {
-  opacity: 1;
+@keyframes athFootIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /*
@@ -387,7 +426,8 @@
 }
 
 /*
- * 스택 카드 = 사진 그 자체. 매트도, 테두리도, 그림자도, 회전도 없다.
+ * 스택 카드 = 사진 그 자체. 매트도, 테두리도, 그림자도 없다. 회전은 올라오는 동안
+ * GSAP 이 ±1도만 살짝 얹었다가 도착하면서 0으로 정돈한다(use-deck-scroll.ts) — 제자리에서는 없다.
  * 중앙 정렬은 `translate` 프로퍼티로 한다 — `transform` 은 GSAP 전용으로 비워둔다.
  * 둘을 한 프로퍼티에 섞으면 스크럽 트윈이 -50% 센터링을 덮어써서 카드가 튀어나간다.
  */
@@ -398,6 +438,20 @@
   translate: -50% -50%;
   width: min(78vw, 340px);
   margin: 0;
+}
+
+/*
+ * 데스크톱에서 340px 고정이면 폰 레이아웃을 1440px 창 한가운데 놓은 것이 된다 —
+ * 실측으로 뷰포트 면적의 12%만 쓰고 좌우로 550px씩 비었다(폰에서는 47%였다).
+ * 폭이 아니라 '무대 높이'를 기준으로 잡는다. 사진이 3:4 라서 높이가 먼저 막히기 때문이다:
+ * 폭 = 쓸 수 있는 높이 × 0.75. 빼는 300px 은 무대가 사진 말고 쓰는 것의 합이다 —
+ * 카운터(15) + 갭(28) + 패딩(28) + 바닥 카피(197) + 여유(32).
+ * 창이 낮아지면 카드도 같이 줄어들어 잘리지 않는다(1440×700 에서도 무대 안에 든다).
+ */
+@media (min-width: 768px) {
+  .deck[data-layout='stack'] .card {
+    width: min(46vw, calc((100svh - var(--ath-bar) - 300px) * 0.75));
+  }
 }
 
 /*
@@ -493,6 +547,34 @@
   transition: opacity 520ms var(--ath-ease) 380ms;
 }
 
+/*
+ * JS 가 돌면(data-motion='on') 이 카피의 등장은 use-deck-scroll.ts 의 GSAP 타임라인이
+ * 대신 맡는다 — Flip 트윈이 끝나기 전부터 겹쳐 들어와야 하는데, CSS 전환이 같이 붙어 있으면
+ * 매 프레임 값을 또 한 번 늦게 스무딩해 뭉개진다. 여기서는 끄고 no-JS·모션감소 기본값만 남긴다.
+ */
+.track[data-motion='on'] .gridCopy {
+  transition: none;
+}
+
+/*
+ * 이 페이지의 유일한 <h1>. 예전에는 h1 이 위의 10px 라벨 하나였고, 화면에서 제목처럼
+ * 읽히는 큰 두 줄은 <p> 였다 — 눈에 보이는 위계와 문서 구조가 반대였다.
+ * 이제 h1 이 둘을 함께 안는다. 보이는 모양은 그대로고, 문서에는 제목이 생긴다.
+ */
+.gridCopyHeading {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font: inherit;
+}
+
+@media (min-width: 768px) {
+  .gridCopyHeading {
+    align-items: center;
+  }
+}
+
 .gridCopyLabel {
   font-family: var(--ath-mono);
   font-size: 10px;
@@ -537,6 +619,24 @@
   aspect-ratio: 3 / 4;
 }
 
+/*
+ * 번호가 앉는 모서리만 어둡게 눌러 둔다. 판(배지)을 깔지 않는 규칙은 지키되,
+ * 흐림 그림자만으로는 밝은 하늘 배경에서 흰 10px 이 읽히지 않았다 —
+ * 01(에펠탑 하늘)·05(맑은 하늘)·07(밝은 노면)에서 번호가 사라졌다.
+ * 사진 전체가 아니라 좌상단 모서리에서만 감쇠하므로 이미지 인상은 그대로다.
+ */
+.cardMedia::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: min(48%, 96px);
+  height: min(30%, 72px);
+  background: linear-gradient(152deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0) 74%);
+  pointer-events: none;
+}
+
 /* 번호는 사진 모서리에 작게. 판을 깔지 않는다 */
 .cardIndex {
   position: absolute;
@@ -548,7 +648,26 @@
   font-weight: 500;
   letter-spacing: 0.12em;
   color: #ffffff;
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.55);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+/*
+ * 본인 사진이 아직 없는 사람에게만. 예전에는 상단 바에 '임시 이미지 2명' 이라는
+ * 합계만 떴는데, 그러면 '둘이 누구인지'를 알 수 없어 나머지 다섯 장까지 의심하게 된다.
+ * 사실을 오해가 생기는 자리(그 카드 위)에 붙인다.
+ */
+.cardPending {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  padding: 3px 6px;
+  background: rgba(11, 11, 11, 0.66);
+  font-family: var(--ath-mono);
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  color: #ffffff;
 }
 
 .cardMeta {
@@ -568,6 +687,21 @@
   font-size: clamp(0.8rem, 3.4vw, 1rem);
   letter-spacing: -0.03em;
   line-height: 1.15;
+}
+
+/*
+ * 누를 수 있다는 신호. 손가락에는 hover 가 없어서 `cursor: pointer` 는 아무것도 알려주지 않고,
+ * 카드에는 밑줄도 화살표도 없어 사진 일곱 장이 그냥 사진으로 읽혔다.
+ * 이 사이트가 이미 쓰는 화살표 어법(← 쎄러데이 / 다음 선수 →)을 그대로 가져온다.
+ */
+.deck[data-layout='grid'] .cardName::after {
+  content: ' →';
+  color: var(--ath-muted);
+}
+
+.card:hover .cardName::after,
+.card:focus-visible .cardName::after {
+  color: var(--ath-signal);
 }
 
 .cardRole {
@@ -602,6 +736,28 @@
   padding: 64px var(--ath-pad) calc(56px + env(safe-area-inset-bottom));
 }
 
+/*
+ * 데스크톱에서 이 페이지의 축은 가운데다 — 히어로도, 격자 한가운데 카피도 가운데에 선다.
+ * 마지막 장면만 왼쪽 끝에 붙어 있으면 오른쪽 2/3 가 통째로 비고, 그 여백이 '의도'가 아니라
+ * '아직 안 채운 자리'로 읽힌다. 모바일은 화면이 좁아 왼쪽 정렬이 그대로 옳다.
+ */
+@media (min-width: 768px) {
+  .closing {
+    justify-items: center;
+    text-align: center;
+  }
+
+  /* 구분선은 화면을 가로지르고, 링크만 가운데 모인다 */
+  .closingLinks {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .track[data-phase='grid'] .gridHint {
+    text-align: center;
+  }
+}
+
 .closingLabel {
   font-family: var(--ath-mono);
   font-size: 10px;
@@ -609,19 +765,26 @@
   color: var(--ath-signal);
 }
 
+/*
+ * 마지막 장면의 정점이되, 페이지의 정점은 아니다.
+ * 이전 값(최대 8rem=128px)은 히어로 제목(44px)의 세 배였다 — 선수 소개 페이지에서
+ * 가장 큰 글자가 대회 날짜였다는 뜻이다. 이제 .introFootTitle 바로 아래에 둔다.
+ */
 .closingDate {
   margin: 0;
   font-family: var(--ath-serif);
   font-weight: 400;
-  font-size: clamp(3.5rem, 22vw, 8rem);
+  font-size: clamp(1.9rem, 9vw, 3.75rem);
   line-height: 0.86;
   letter-spacing: -0.04em;
   white-space: nowrap;
 }
 
+/* 이 섹션의 <h2>. 문서 아웃라인에서 마지막 장면을 부르는 이름이다 */
 .closingRace {
   margin: 0;
   font-family: var(--ath-kr);
+  font-weight: 600;
   font-size: 15px;
   line-height: 1.6;
 }
@@ -640,6 +803,11 @@
   border-top: 1px solid var(--ath-line);
 }
 
+/*
+ * 예전엔 링크 두 개가 크기·굵기·밑줄까지 똑같아 무엇이 다음 걸음인지 알 수 없었다.
+ * 이 페이지를 끝까지 본 사람이 가장 하고 싶은 일은 '이 대회가 뭔데'다 — 그것만 신호색으로 든다.
+ * 상자를 만들지 않는다. 이 페이지에는 버튼이 하나도 없고, 그 평평함이 이 페이지의 성격이다.
+ */
 .closingLinks a {
   display: inline-flex;
   align-items: center;
@@ -647,9 +815,19 @@
   font-family: var(--ath-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
-  color: var(--ath-fg);
+  color: var(--ath-muted);
   text-decoration: none;
-  border-bottom: 1px solid var(--ath-fg);
+  border-bottom: 1px solid var(--ath-line);
+}
+
+.closingLinks a:hover {
+  color: var(--ath-fg);
+  border-bottom-color: var(--ath-fg);
+}
+
+.closingLinks a.closingPrimary {
+  color: var(--ath-signal);
+  border-bottom: 2px solid var(--ath-signal);
 }
 
 /* ── 개인 프로필 ─────────────────────────────────────────── */

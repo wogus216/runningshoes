@@ -1,10 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { AthleteDeck } from '@/components/challenge/saturday/athletes/athlete-deck';
+import { ClosingReveal } from '@/components/challenge/saturday/athletes/closing-reveal';
 import type { AthleteView } from '@/components/challenge/saturday/athletes/types';
 import {
   ATHLETES_COPY,
-  ATHLETES_INTRO_PHOTO,
   SATURDAY_ATHLETES,
 } from '@/lib/data/challenge/saturday-athletes';
 import { RACE_META, SATURDAY_CREW } from '@/lib/data/challenge/saturday';
@@ -68,8 +68,6 @@ function buildAthletes(): AthleteView[] {
 
 export default function SaturdayAthletesPage() {
   const athletes = buildAthletes();
-  // 아직 본인 사진이 없는 사람 수. 마지막 두 장이 들어오면 0 이 되어 표기가 사라진다
-  const photoPending = athletes.filter((athlete) => athlete.isPlaceholder).length;
 
   return (
     <div className={styles.page}>
@@ -86,67 +84,33 @@ export default function SaturdayAthletesPage() {
       </header>
 
       <main id="athletes-main">
-        {/*
-          1. 오프닝 — 한 장의 포스터. 사진이 남는 높이를 전부 먹고 제목이 그 바닥에 맞닿는다.
-          사진과 제목 사이에 빈 공간을 두지 않는다.
-        */}
-        <section className={styles.intro}>
-          <div className={styles.introMedia}>
-            <img
-              className={styles.photo}
-              src={`/images/challenge/saturday/${ATHLETES_INTRO_PHOTO.photo}.webp`}
-              alt={ATHLETES_INTRO_PHOTO.alt}
-              width={1200}
-              height={1600}
-              decoding="async"
-            />
-          </div>
-
-          <div className={styles.introCopy}>
-            <span className={styles.introEyebrow}>{ATHLETES_COPY.eyebrow}</span>
-            <h1 className={styles.introTitle}>
-              {ATHLETES_COPY.titleLead}
-              <em>{ATHLETES_COPY.titleTail}</em>
-            </h1>
-            <p className={styles.introSub}>{ATHLETES_COPY.sub}</p>
-            <p className={styles.introMeta}>
-              <span>{ATHLETES_COPY.meta}</span>
-              <span className={styles.introScroll}>SCROLL ↓</span>
-            </p>
-          </div>
-        </section>
-
-        {/* 2~4. 카드 스택 → 스티키 그리드 → 개인 프로필 */}
+        {/* 1~4. 카드 스택(첫 화면 자체가 히어로) → 등장 → 스티키 그리드 → 개인 프로필 */}
         <AthleteDeck
           athletes={athletes}
           copy={{
+            eyebrow: ATHLETES_COPY.eyebrow,
+            titleLead: ATHLETES_COPY.titleLead,
+            titleTail: ATHLETES_COPY.titleTail,
+            sub: ATHLETES_COPY.sub,
+            scrollHint: ATHLETES_COPY.scrollHint,
             gridTitle: ATHLETES_COPY.gridTitle,
             gridLine: ATHLETES_COPY.gridLine,
             gridHint: ATHLETES_COPY.gridHint,
             photoNotice: ATHLETES_COPY.photoNotice,
-            photoPending:
-              photoPending > 0
-                ? `${ATHLETES_COPY.photoPendingLabel} ${photoPending}명`
-                : null,
+            // 카드에 직접 붙는다 — isPlaceholder 인 사람에게만 뜨고, 사진이 들어오면 저절로 사라진다
+            photoPendingBadge: ATHLETES_COPY.photoPendingLabel,
             statsPending: ATHLETES_COPY.statsPending,
             statsPendingNote: ATHLETES_COPY.statsPendingNote,
           }}
         />
 
-        <section className={styles.closing} aria-labelledby="athletes-race">
-          <span className={styles.closingLabel}>{RACE_META.place}</span>
-          <p className={styles.closingDate} id="athletes-race">
-            {RACE_META.datePoster}
-          </p>
-          <p className={styles.closingRace}>
-            {RACE_META.name}
-            <span>{RACE_META.dateLabel}</span>
-          </p>
-          <div className={styles.closingLinks}>
-            <Link href="/saturday">쎄러데이 이야기 처음부터</Link>
-            <Link href={`/marathon/${RACE_META.marathonId}`}>대회 정보</Link>
-          </div>
-        </section>
+        <ClosingReveal
+          place={RACE_META.place}
+          datePoster={RACE_META.datePoster}
+          name={RACE_META.name}
+          dateLabel={RACE_META.dateLabel}
+          marathonId={RACE_META.marathonId}
+        />
       </main>
     </div>
   );

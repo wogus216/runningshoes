@@ -17,12 +17,18 @@ import styles from '@/app/(challenge)/saturday/athletes/athletes.module.css';
 type DeckProps = {
   athletes: AthleteView[];
   copy: {
+    /** 오프닝 카피 — 01번(재춘)만 도착해 있는 첫 화면에서만 보인다 */
+    eyebrow: string;
+    titleLead: string;
+    titleTail: string;
+    sub: string;
+    scrollHint: string;
     gridTitle: string;
     gridLine: string;
     gridHint: string;
     photoNotice: string;
-    /** 아직 본인 사진이 없는 인원 표기. 전원 확보되면 null */
-    photoPending: string | null;
+    /** 본인 사진이 아직 없는 카드에 직접 붙는 표기. 그 카드에만 뜬다 */
+    photoPendingBadge: string;
     statsPending: string;
     statsPendingNote: string;
   };
@@ -35,19 +41,83 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
   const trackRef = useRef<HTMLElement>(null);
   const deckRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLButtonElement | null)[]>([]);
+  const gridCopyRef = useRef<HTMLDivElement>(null);
   const profileMediaRef = useRef<HTMLDivElement>(null);
   const previousSelected = useRef<number | null>(null);
   const closeTimer = useRef<number | null>(null);
+  const counterRef = useRef<HTMLElement>(null);
+  /** 카운터가 지금 화면에 보여주고 있는 실수값. 다음 트윈이 여기서 이어받는다 */
+  const counterValue = useRef(1);
 
   const [selected, setSelected] = useState<number | null>(null);
   const [closing, setClosing] = useState(false);
-  /** 스택에서 지금 맨 위에 있는 선수. 무대 바닥의 이름 한 줄이 이걸 읽는다 */
+  /** 스택에서 지금 맨 위에 있는 선수. 01번(재춘)만 있으면 -1 — 그동안은 오프닝 카피가 대신 보인다 */
   const [active, setActive] = useState(-1);
+  /** JS·모션이 없으면 기본값 그대로 'grid' — 일곱 명이 항상 보인다 */
+  const [phase, setPhase] = useState<'stack' | 'grid'>('grid');
 
   const reducedMotion = usePrefersReducedMotion();
   const lib = useSaturdayGsap(!reducedMotion);
 
-  useDeckScroll({ lib, trackRef, deckRef, cardsRef, onActiveChange: setActive });
+  useDeckScroll({
+    lib,
+    trackRef,
+    deckRef,
+    cardsRef,
+    gridCopyRef,
+    onActiveChange: setActive,
+    onPhaseChange: setPhase,
+  });
+
+  const total = athletes.length;
+  const activeAthlete = active >= 0 ? athletes[active] : null;
+
+  // 오프닝 카피(01번만 도착) → 카드별 이름·캐릭터 문장(02~07번 도착) → 그리드 안내문
+  const showIntro = phase === 'stack' && active < 1;
+  const showActiveInfo = phase === 'stack' && active >= 1;
+  const showGridHint = phase === 'grid';
+
+  // 지금까지 도착한 카드 / 전체. 그리드로 펼쳐지는 순간 07/07 에서 딱 멈춰 고조감의 정점을 찍는다
+  const counterIndex = showGridHint ? total : (activeAthlete?.index ?? 1);
+  const counterLabel = `${String(counterIndex).padStart(2, '0')}/${String(total).padStart(2, '0')}`;
+
+  /*
+   * JSX 는 항상 counterLabel 을 그린다 — JS 가 늦게 뜨거나 실패해도(reduced-motion 포함)
+   * 숫자가 비어 보이지 않는다. GSAP 이 있을 때만 이 effect 가 그 위에 덧그려서
+   * 02→03 을 뚝뚝 끊지 않고 굴린다. 그리드에 막 도착한 순간에는 숫자가 멈추는 동시에
+   * 살짝 튀었다가 가라앉는다 — 그 정지가 이 장면의 고조점이다.
+   */
+  useEffect(() => {
+    const el = counterRef.current;
+    if (!el || !lib) return;
+
+    const { gsap } = lib;
+    const proxy = { n: counterValue.current };
+    const tl = gsap.timeline();
+
+    tl.to(proxy, {
+      n: counterIndex,
+      duration: 0.3,
+      ease: 'power2.out',
+      onUpdate: () => {
+        counterValue.current = proxy.n;
+        el.textContent = `${String(Math.round(proxy.n)).padStart(2, '0')}/${String(total).padStart(2, '0')}`;
+      },
+    });
+
+    if (showGridHint) {
+      tl.fromTo(
+        el,
+        { scale: 1.4 },
+        { scale: 1, duration: 0.4, ease: 'power3.out' },
+        '-=0.15',
+      );
+    }
+
+    return () => {
+      tl.kill();
+    };
+  }, [lib, counterIndex, showGridHint, total]);
 
   const mediaOf = (index: number) =>
     cardsRef.current[index]?.querySelector<HTMLElement>('[data-media]') ?? null;
@@ -151,9 +221,7 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
     window.scrollTo({ top: trackTop + track.offsetHeight * 0.64 });
   }, []);
 
-  const total = athletes.length;
   const current = selected === null ? null : athletes[selected];
-  const activeAthlete = active >= 0 ? athletes[active] : null;
 
   return (
     <>
@@ -164,8 +232,12 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
       >
         <div className={styles.stage}>
           <p className={styles.stageLabel}>
-            <b>01 — {String(total).padStart(2, '0')}</b>
-            <span>{copy.photoPending}</span>
+            {showIntro ? (
+              <span className={styles.stageEyebrow}>{copy.eyebrow}</span>
+            ) : (
+              /* GSAP 이 뜨면 위 effect 가 이 위에 덧그려서 숫자를 굴린다 */
+              <b ref={counterRef}>{counterLabel}</b>
+            )}
           </p>
 
           <div
@@ -183,7 +255,11 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
                   cardsRef.current[index] = node;
                 }}
                 onClick={() => setSelected(index)}
-                aria-label={`${athlete.name} 선수 소개 열기`}
+                aria-label={
+                  athlete.isPlaceholder
+                    ? `${athlete.name} 선수 소개 열기 (${copy.photoPendingBadge})`
+                    : `${athlete.name} 선수 소개 열기`
+                }
               >
                 <span
                   className={styles.cardMedia}
@@ -197,10 +273,21 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
                     width={860}
                     height={1147}
                     decoding="async"
+                    /* 01번은 첫 화면에 이미 도착해 있는 카드다 — 이 페이지의 LCP 요소라
+                       나머지 여섯 장과 같은 순번으로 받으면 늦는다 */
+                    fetchPriority={index === 0 ? 'high' : undefined}
                   />
                   <span className={styles.cardIndex} aria-hidden="true">
                     {String(athlete.index).padStart(2, '0')}
                   </span>
+                  {/* 이 사진이 본인이 아니라는 사실은 그 카드 위에서 말한다.
+                      상단 바에 합계('임시 이미지 2명')만 적으면 둘이 누구인지 알 수 없어
+                      나머지 다섯 장까지 의심하게 된다. 낭독기에는 aria-label 이 같은 말을 한다 */}
+                  {athlete.isPlaceholder && (
+                    <span className={styles.cardPending} aria-hidden="true">
+                      {copy.photoPendingBadge}
+                    </span>
+                  )}
                 </span>
                 <span className={styles.cardMeta}>
                   <span className={styles.cardName}>{athlete.name}</span>
@@ -209,27 +296,50 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
               </button>
             ))}
 
-            {/* 격자 한가운데를 비워 카피를 앉힌다. 얼굴 위에 글자를 겹치지 않는다 */}
-            <div className={styles.gridCopy}>
-              <span className={styles.gridCopyLabel} id="starting-seven">
-                {copy.gridTitle}
-              </span>
-              <p className={styles.gridCopyLine}>{copy.gridLine}</p>
+            {/*
+              격자 한가운데를 비워 카피를 앉힌다. 얼굴 위에 글자를 겹치지 않는다.
+              이 페이지의 유일한 <h1> — 오프닝에서 먼저 들었던 같은 두 줄의 결론이다
+            */}
+            <div className={styles.gridCopy} ref={gridCopyRef}>
+              {/* 라벨과 큰 두 줄은 두 개의 제목이 아니라 하나의 제목이다.
+                  예전에는 h1 이 10px 라벨 하나였고 큰 줄은 p 였다 — 보이는 위계와 문서가 반대였다 */}
+              <h1 className={styles.gridCopyHeading} id="starting-seven">
+                <span className={styles.gridCopyLabel}>{copy.gridTitle}</span>
+                <span className={styles.gridCopyLine}>{copy.gridLine}</span>
+              </h1>
             </div>
           </div>
 
-          {/* 스택에서는 지금 올라온 한 명만, 그리드에서는 안내문 */}
+          {/*
+            첫 화면엔 오프닝 카피(01번만 도착), 카드가 한 장씩 올라오는 동안엔
+            그 선수의 이름·캐릭터 문장, 그리드에서는 안내문 — 셋 중 하나만 뜬다
+          */}
           <div className={styles.stageFoot}>
-            <p className={styles.activeName} aria-hidden="true">
-              {activeAthlete ? (
-                <>
+            {showIntro && (
+              // 진짜 <h1> 은 그리드의 gridCopy 쪽에 있다(항상 DOM에 존재) — 여긴 그 후렴의
+              // 첫 등장이라 헤딩을 또 만들지 않는다
+              <div className={styles.introFoot}>
+                <p className={styles.introFootTitle}>
+                  {copy.titleLead}
+                  <em>{copy.titleTail}</em>
+                </p>
+                <p className={styles.introFootSub}>{copy.sub}</p>
+                <p className={styles.introFootHint}>{copy.scrollHint}</p>
+              </div>
+            )}
+
+            {showActiveInfo && activeAthlete && (
+              <div className={styles.activeInfo} aria-hidden="true">
+                <p className={styles.activeName}>
                   <i>{String(activeAthlete.index).padStart(2, '0')}</i>
                   {activeAthlete.name}
                   <span className={styles.activeRole}>{activeAthlete.role}</span>
-                </>
-              ) : null}
-            </p>
-            <p className={styles.gridHint}>{copy.gridHint}</p>
+                </p>
+                <p className={styles.activeLine}>{activeAthlete.characterLine}</p>
+              </div>
+            )}
+
+            {showGridHint && <p className={styles.gridHint}>{copy.gridHint}</p>}
           </div>
         </div>
       </section>
