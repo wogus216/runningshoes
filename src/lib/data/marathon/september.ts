@@ -228,22 +228,34 @@ export const septemberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.gongjumarathon.com/',
     description:
-      '동마 시리즈 가을 시즌 개막전. 금강변 평지 풀코스에 32K 옵션이 있어 가을 풀코스 준비용으로 인기입니다. 5월 21일 본접수를 시작해 선착순 마감됐으며, 접수처인 동마클럽에서 현재 품절 상태입니다. 취소·환불은 7월 31일 17시까지 가능합니다.',
+      '동마 시리즈 가을 시즌 개막전. 금강변 평지 풀코스에 32K 옵션이 있어 가을 풀코스 준비용으로 인기입니다. 우선접수 5월 11일에 이어 5월 21일 본접수를 시작해 선착순 마감됐으며, 접수처인 동마클럽에서 현재 품절 상태입니다. 정원은 네 종목 합쳐 12,000명이고, 취소·환불은 7월 31일 17시까지 가능합니다. 동마클럽 매니아 회원은 종목별로 1만 원 싼 참가비가 적용되는 대신 티셔츠를 받지 않습니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
       certification: 'KAF',
-      courseDescription: '공주 금강변 평지 풀코스. 32K 옵션은 풀코스 준비용으로 인기.',
+      courseDescription:
+        '공주시민운동장에서 출발해 같은 자리로 돌아오는 금강변 코스로, 무령왕릉·공산성·공주보 일대를 지납니다. 공식 홈페이지에 풀/32K·하프·10K 코스맵과 풀코스 고도 프로파일이 모두 공개돼 있습니다. 다만 출발·골인 지점 배치도는 "2026 버전으로 추후 업데이트 예정"으로 안내돼 있어 현재 게시분은 이전 연도 기준입니다.',
     },
     raceInfo: {
       entryFees: [
         { distance: '풀코스', fee: 70000 },
         { distance: '32K', fee: 70000 },
-        { distance: '하프', fee: 70000 },
-        { distance: '10K', fee: 70000 },
+        { distance: '하프', fee: 60000 },
+        { distance: '10K', fee: 50000 },
       ],
+      expectedParticipants: 12000,
       startTime: '08:00',
     },
+    raceKit: {
+      items: ['티셔츠', '메달', '배번호'],
+      pending:
+        '메달·배번호 디자인은 공식 홈페이지에 "추후공개"로 표기(2026-08-29 확인). 동마클럽 매니아 참가자는 티셔츠를 지급받지 않습니다',
+      verifiedAt: '2026-08-29',
+    },
+    registrationStart: '2026-05-21',
+    registrationNote:
+      '우선접수 5월 11일(월) 10시~5월 15일(금) 15시, 본접수 5월 21일(목) 19시부터 선착순 마감 — 마감일 미고지. 정원 12,000명이 모두 소진돼 접수처(동마클럽)에서 품절 상태입니다.',
+    lastVerified: '2026-08-29',
   },
   {
     id: 'cheorwon-dmz-peace-marathon-2026',

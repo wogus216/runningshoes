@@ -2,6 +2,43 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const octoberEvents: MarathonEvent[] = [
   {
+    id: 'harry-potter-run-korea-2026',
+    name: '해리포터 런 2026 (Harry Potter Run in Korea)',
+    date: '2026-10-03',
+    month: '10월',
+    location: '부산역 인근 (세부 장소 미공개)',
+    region: '부산',
+    distances: ['5K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://www.instagram.com/stanz_official_kr/',
+    description:
+      '주최사 스탠즈(@stanz_official_kr)가 여는 공식 라이선스 이벤트로, 호그와트 네 기숙사로 나뉘어 달립니다. 5km 비경쟁·비기록 종목 하나만 운영합니다. 오전 9시·오후 2시 두 차례로 나눠 각 3,000명씩 총 6,000명을 모집하며 코스는 두 회차가 같습니다. 티켓은 9월 4일 11시부터 카카오톡 선물하기에서 선착순으로 팔고 1인 4매까지 살 수 있습니다. 참가 기념품 중 기숙사가 갈리는 품목(스포츠타올·배번호)은 고를 수 없고 랜덤 배정입니다 — 원하는 기숙사를 받는다는 보장이 없습니다. 러닝 외에 무대 프로그램과 부스 체험이 함께 열립니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      certification: '없음',
+      courseDescription:
+        '부산역 인근 5km 비경쟁·비기록 코스. 오전·오후 회차의 코스가 동일하며, 세부 구간과 출발 지점은 공개되지 않았습니다.',
+    },
+    raceInfo: {
+      entryFees: [{ distance: '5K', fee: 85000 }],
+      expectedParticipants: 6000,
+      startTime: '09:00 / 14:00',
+    },
+    raceKit: {
+      items: ['티셔츠', '스포츠타올', '스트링백', '배번호', '안내문', 'KIT 박스', '완주 메달'],
+      pending:
+        '완주 메달과 함께 지급되는 협찬사 기프트는 품목 미공개(공식 계정 추후 공지). 기숙사 구분 품목(스포츠타올·배번호)은 랜덤 배정',
+      verifiedAt: '2026-08-29',
+    },
+    registrationStart: '2026-09-04',
+    registrationEnd: '2026-09-18',
+    registrationNote:
+      '9월 4일(금) 11시 카카오톡 선물하기 판매 시작, 9월 18일(금)까지 — 정원 6,000명 선착순이라 기간 내에도 조기 마감될 수 있습니다. 1인 4매 한도. 기념품 KIT는 9월 중순부터 주문 시 입력한 주소로 순차 배송되며 배송비는 없습니다.',
+    lastVerified: '2026-08-29',
+  },
+  {
     id: 'geumcheon-health-run-2026',
     name: '제22회 금천구청장배 건강달리기대회 (수육런)',
     date: '2026-10-11',
