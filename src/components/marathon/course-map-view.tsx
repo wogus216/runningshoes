@@ -289,9 +289,12 @@ export function CourseMapView({ data }: { data: CourseMapData }) {
 
   const activeBeat = active !== null ? data.beats[active] : null;
 
+  // 지도 셀은 배경 이미지의 종횡비만큼만 높다. `items-start` 가 없으면 옆 열(구간 노트)이
+  // 길어질 때 grid 가 지도 셀을 같이 늘려, 지도 아래에 빈 띠가 생기고 거기에 absolute 로
+  // 붙은 '코스 타보기' 버튼이 허공에 뜬다(노트 6개인 인천송도에서 115px).
   return (
     <div
-      className={`course-skin grid gap-4 ${stacked ? '' : 'lg:grid-cols-[minmax(0,1fr)_19rem]'}`}
+      className={`course-skin grid gap-4 ${stacked ? '' : 'lg:grid-cols-[minmax(0,1fr)_19rem] lg:items-start'}`}
     >
       {/* ── 지도 ───────────────────────────────────────── */}
       <div
