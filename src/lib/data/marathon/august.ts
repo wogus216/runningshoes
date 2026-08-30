@@ -9,11 +9,11 @@ export const augustEvents: MarathonEvent[] = [
     location: '단양생태체육공원 (충북 단양)',
     region: '충북',
     distances: ['10K', '5K'],
-    status: '접수중',
+    status: '대회종료',
     isMajor: false,
     website: 'http://danyangmarathon.kr/',
     registrationStart: '2026-06-10',
-    registrationNote: '선착순 5,000명 마감 — 마감일 미고지 (2026-08-27 기준 접수 페이지 열려 있음)',
+    registrationNote: '선착순 5,000명 마감 — 마감일 미고지 (2026-08-27 기준 접수 페이지 열려 있었음)',
     raceKit: {
       items: ['완주메달', '모바일 기록증', '간식', '배번호(기록칩 뒷면 부착, 택배 발송)'],
       byDistance: [
