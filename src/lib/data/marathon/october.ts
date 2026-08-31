@@ -441,7 +441,8 @@ export const octoberEvents: MarathonEvent[] = [
     name: '2026 조선일보 춘천마라톤',
     date: '2026-10-25',
     month: '10월',
-    location: '춘천 의암호',
+    // 공식 대회요강 표기는 "출발장소 춘천 공지천교" — '의암호'는 코스가 도는 호수이지 출발지가 아니다
+    location: '춘천 공지천교',
     region: '강원',
     distances: ['풀코스', '10K'],
     status: '마감',
@@ -453,7 +454,8 @@ export const octoberEvents: MarathonEvent[] = [
       terrain: '언덕',
       difficulty: '상급',
       certification: 'IAAF',
-      courseDescription: '의암호 둘레 코스 + 25km 오르막. PB 친화적이지만 후반 페이스 관리 필수.',
+      courseDescription:
+        '공지천교에서 출발해 의암호를 한 바퀴 도는 국제공인 순환코스입니다. 전반은 호반을 따라 완만해 페이스를 올리기 쉽지만, 25km 지점의 춘천댐 오르막이 이 대회의 성패를 가릅니다 — 그 앞 급수대가 사실상 마지막 보급 기회라 여기서 무리하면 후반이 무너집니다. 출발은 한 번에 하지 않고 최고기록으로 배정된 출발그룹별 순차 출발이며, 마지막 행렬이 나간 5분 뒤 출발선이 닫히고 그 뒤로는 출발매트를 통과하지 못해 기록이 공인되지 않습니다. 넷타임이 제공되므로 앞자리 다툼보다 자기 그룹에서 여유 있게 나서는 편이 낫습니다. 종목별 상세 코스도와 교통통제 구간은 2026-08-31 기준 공식이 아직 "준비중"으로 두고 있습니다.',
     },
     raceInfo: {
       entryFees: [
@@ -477,8 +479,23 @@ export const octoberEvents: MarathonEvent[] = [
       shuttle:
         '서울 4개 지점(시청·잠실·신도림·사당)에서 대회장 직행, 오전 6시 출발(2025년 기준 왕복 2만 원). 공식 홈페이지 예약, 조기 마감됩니다.',
     },
+    raceKit: {
+      items: ['기능성 티셔츠(155~185 사이즈별 실측표 공개)', '배번호', '완주메달(현장 증정)'],
+      byDistance: [
+        {
+          distance: '풀코스',
+          item: '레이스팩에 얼티밋포텐셜 하이드로50, 완주 후 현장에서 얼티브 아몬드두유 저당',
+        },
+        {
+          distance: '10K',
+          item: '레이스팩에 얼티밋포텐셜 러닝에너지젤프리, 완주 후 현장에서 얼티브 파로두유 저당',
+        },
+        { distance: '풀코스·10K 공통', item: '완주 후 샘트리 맛병아리콩(현장 증정)' },
+      ],
+      verifiedAt: '2026-08-31',
+    },
     registrationEnd: '2026-07-23',
-    lastVerified: '2026-08-25',
+    lastVerified: '2026-08-31',
   },
   {
     id: 'gyeongju-international-marathon-2026',
