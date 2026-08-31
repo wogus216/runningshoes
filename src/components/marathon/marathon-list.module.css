@@ -36,7 +36,9 @@
   display: flex; align-items: baseline; gap: 10px;
   padding-bottom: 10px; border-bottom: 2px solid var(--primary);
 }
-.bandTitle { font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
+/* h2 다 — 113개 대회가 4개 밴드로 나뉘는데 문서에 제목 구조가 없었다(2026-08-31).
+   폰트는 여기서 못 박으므로 태그의 기본 마진만 지우면 보이는 건 그대로다. */
+.bandTitle { margin: 0; font-size: 17px; font-weight: 700; letter-spacing: -0.02em; }
 .bandCount { font-family: var(--mono); font-size: 15px; color: var(--signal-dark); font-variant-numeric: tabular-nums; }
 .bandNote {
   margin-top: 12px; font-size: 12.5px; color: var(--secondary);

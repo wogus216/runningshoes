@@ -33,7 +33,7 @@ export function MarathonBand({
     return (
       <details className={`${styles.band} ${styles.folded}`}>
         <summary>
-          <span className={styles.bandTitle}>{band.label}</span>
+          <h2 className={styles.bandTitle}>{band.label}</h2>
           <span className={styles.bandCount}>{band.events.length}</span>
         </summary>
         <div>
@@ -51,7 +51,7 @@ export function MarathonBand({
   return (
     <section className={styles.band}>
       <div className={styles.bandHead}>
-        <span className={styles.bandTitle}>{band.label}</span>
+        <h2 className={styles.bandTitle}>{band.label}</h2>
         <span className={styles.bandCount}>{band.events.length}</span>
       </div>
 

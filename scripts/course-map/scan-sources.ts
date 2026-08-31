@@ -99,7 +99,8 @@ async function get(url: string): Promise<{ status: number; html: string } | null
   try {
     let current = url;
     for (let hop = 0; hop < 12; hop++) {
-      const cookie = [...jar].map(([k, v]) => `${k}=${v}`).join('; ');
+      // Array.from 이어야 한다 — Map 스프레드는 이 tsconfig 타깃에서 TS2802 로 막힌다
+      const cookie = Array.from(jar).map(([k, v]) => `${k}=${v}`).join('; ');
       const res = await fetch(current, {
         headers: {
           'User-Agent': UA,
