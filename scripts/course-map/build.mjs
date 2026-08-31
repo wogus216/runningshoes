@@ -768,11 +768,18 @@ async function build(eventId) {
   const beats = (cfg.beats ?? []).map((b) => {
     let best = 0;
     let bestD = Infinity;
-    // 왕복 코스는 같은 지점이 두 번 나온다 — 갈 때/올 때 중 어느 쪽인지 좁혀서 찾는다
+    // 왕복 코스는 같은 지점이 두 번 나온다 — 갈 때/올 때 중 어느 쪽인지 좁혀서 찾는다.
+    //
+    // 좁히는 조건이 cfg.outAndBack 하나였을 때, 두 다리를 경유지로 **모두 적어 둔** 코스
+    // (그래서 outAndBack:false 인 코스)에서는 노트가 밝힌 leg 가 조용히 무시됐다.
+    // 부산국제마라톤이 그 첫 사례다 — 광안대교를 두 번 건너는데 같은 좌표를 쓴 두 노트가
+    // 둘 다 '첫 번째 통과'에 붙어, 마지막 노트('광안대교 백코스 — 피니시')가 코스 20% 지점에
+    // 찍혔다. 노트가 leg 를 직접 밝혔으면 경로를 어떻게 만들었든 그 말을 따른다.
     const half = total / 2;
     const inLeg = (i) => (b.leg === 'back' ? cum[i] > half : cum[i] <= half);
+    const narrowToLeg = cfg.outAndBack || Boolean(b.leg);
     for (let i = 0; i < pts.length; i++) {
-      if (cfg.outAndBack && !inLeg(i)) continue;
+      if (narrowToLeg && !inLeg(i)) continue;
       const d = haversine(pts[i], [b.lon, b.lat]);
       if (d < bestD) {
         bestD = d;
