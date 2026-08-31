@@ -61,7 +61,13 @@ const FLY_OUT = 0.06;
  * 절반만 쓰고 아래 226px 이 빈 칸으로 남았다(1280px 뷰포트 실측).
  * 쌓으면 지도가 컨테이너 폭을 다 써서 오히려 커진다 — 시흥 기준 285 → 446px.
  */
-const STACK_BELOW_RATIO = 0.6;
+/**
+ * 이 비율보다 납작한 코스는 구간 노트를 지도 **아래**로 내린다.
+ * 옆에 세우면 지도는 짧은데 노트 열만 길어져 왼쪽 아래가 휑해진다.
+ * 0.6 이었을 때 부산브릿지(0.602)가 0.002 차이로 옆세로 빠져 그 증상이 났다 —
+ * 42km 짜리 가로로 긴 코스일수록 폭을 다 쓰는 편이 낫다.
+ */
+const STACK_BELOW_RATIO = 0.65;
 
 export function CourseMapView({ data }: { data: CourseMapData }) {
   const [, , vbW, vbH] = data.viewBox;
