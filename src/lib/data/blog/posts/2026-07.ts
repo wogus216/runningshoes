@@ -52,7 +52,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수 마감 임박</strong> — <strong>8월 28일(금) 17시(일본시간)</strong>까지입니다. 정원 28,420명을 넘으면 추첨이라 먼저 낸다고 유리하지도, 미룬다고 득이 될 것도 없습니다. 다만 <strong>마감 시각을 놓치면 그걸로 끝</strong>입니다. 공교롭게 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>도 같은 8/28에 닫힙니다. 추첨 없이 확정하고 싶다면 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>이 대안입니다 — 해외 몫 3,000명이 선착순이고 9월 30일까지 열려 있습니다.</div>
+<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수는 8월 28일(금) 17시(일본시간)에 마감됐습니다.</strong> 신청했다면 다음 관문은 <strong>9월 28일(월) 추첨 결과 이메일</strong>이라, 그때까지는 아직 참가 확정이 아닙니다. 같은 날 닫힌 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>는 결과가 <strong>9월 18일(금)</strong>에 나오고 참가비를 9월 30일까지 내야 확정됩니다. 지금도 신청할 수 있는 쪽을 찾는다면 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>이 대안입니다 — 해외 몫 3,000명이 추첨 없는 선착순이고 9월 30일까지 열려 있습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -2052,7 +2052,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🎟️ <strong>2026 Run your way Seoul 10K 래플 응모가 7월 31일(금) 오전 10시</strong> 시작됩니다(D-9). 선착순이 아닌 <strong>추첨</strong>이고, 응모 창은 <strong>8월 2일(일) 17시까지 딱 55시간</strong>. 대회는 10월 4일(일) 여의도공원, 참가비 80,000원입니다.</div>
+<div class="deadline-strip">🎟️ <strong>접수가 모두 끝났습니다.</strong> 래플 응모는 8월 2일(일) 17시, 당첨자 결제는 8월 7일(금) 17시에 닫혔고 오프라인 패키지 매장 판매도 8월 20~21일로 종료됐습니다. 대회는 예정대로 <strong>10월 4일(일) 여의도공원</strong>에서 열립니다. 아래 내용은 다음 회차를 노리는 러너를 위해 그대로 둡니다 — 이 대회는 선착순이 아니라 <strong>뉴발란스 멤버십 회원 대상 무작위 추첨</strong>이라, 응모 창이 열린 55시간 안에만 넣으면 빨리 넣든 늦게 넣든 조건이 같습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -2338,7 +2338,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🌊 <strong>2026 시흥시 전국하프마라톤 접수가 7월 22일(수) 오후 2시</strong> 시작됩니다. 10월 5일(월·개천절 대체공휴일) 개최, <strong>시화방조제 왕복 코스</strong>에 하프·10km·5km. 참가비 35,000/35,000/20,000원, <strong>선착순 5,000명</strong>으로 정원이 차면 마감됩니다.</div>
+<div class="deadline-strip">🌊 <strong>2026 시흥시 전국하프마라톤 접수는 7월 22일(수) 오후 2시에 시작됐습니다.</strong> 마감일이 따로 없는 <strong>선착순 5,000명</strong>이라 정원이 차는 순간 끝나므로, 신청 전에 공식 접수 페이지가 아직 열려 있는지부터 확인하세요. 10월 5일(월·개천절 대체공휴일) 개최, <strong>시화방조제 왕복 코스</strong>에 하프·10km·5km. 참가비 35,000/35,000/20,000원.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -5190,7 +5190,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🌳 <strong>2026 포레스트런 접수가 7월 23일(수) 오전 10시</strong> 현대Shop에서 열립니다(현대차 공식 발표 7/16). 9월 12일(토) 여의도공원 출발 <strong>10km, 참가비 50,000원, 선착순 6,500명</strong>. 마감은 7월 30일(목) 23:59이지만 선착순이라 조기 마감 가능성이 있습니다.</div>
+<div class="deadline-strip">🌳 <strong>접수는 7월 30일(목) 23시 59분에 마감됐습니다.</strong> 대회는 예정대로 <strong>9월 12일(토) 여의도공원</strong>에서 열립니다 — 10km, 참가비 50,000원, 정원 6,500명. 아래 내용은 다음 회차를 준비하는 러너를 위해 남겨둡니다(접수처는 현대Shop, 현대차 공식 발표 7/16).</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>

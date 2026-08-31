@@ -416,10 +416,12 @@ export const septemberEvents: MarathonEvent[] = [
     location: '뚝섬 한강공원 수변무대 (서울 광진구)',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'http://kdjrun.kr/',
     registrationEnd: '2026-08-30',
+    registrationNote:
+      '접수 종료 — 공식 접수기간은 8월 30일까지였습니다. 기념품 택배 수령지 변경도 8월 16일로 이미 마감됐습니다(공식 홈 2026-08-31 확인)',
     raceKit: {
       items: ['기념 티셔츠(랜덤 발송, 85~110)', '완주메달', '간식(빵·음료)', '모바일 기록증(전 종목)'],
       pending: '공식 고지: 기념품과 경품은 변경될 수 있음',
