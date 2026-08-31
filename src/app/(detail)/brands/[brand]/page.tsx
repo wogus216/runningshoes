@@ -10,7 +10,7 @@ import {
 import { shoes as allShoes } from '@/lib/data/shoes';
 import { isCompleteShoe } from '@/types/shoe';
 import { categoryOrder } from '@/lib/data/shoes';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 
@@ -39,6 +39,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     alternates: { canonical: `/brands/${brandSlug}` },
     openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,

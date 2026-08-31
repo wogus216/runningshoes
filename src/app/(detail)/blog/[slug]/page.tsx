@@ -71,6 +71,9 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       modifiedTime: post.updatedAt,
       authors: [post.author],
       tags: post.tags,
+      // ⚠️ 페이지가 openGraph 를 지정하면 layout 의 것과 병합되지 않고 통째로 덮인다.
+      // images 를 빼면 글마다 만들어 둔 썸네일이 공유 카드에 안 나간다(2026-08-31 이전 상태).
+      images: [post.thumbnail || DEFAULT_OG_IMAGE],
     },
   };
 }

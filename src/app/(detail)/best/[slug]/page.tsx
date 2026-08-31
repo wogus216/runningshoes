@@ -11,7 +11,7 @@ import {
 } from '@/lib/pseo/matrices';
 import { getAllPairs } from '@/lib/pseo/pairs';
 import { getShoes } from '@/lib/data/shoes';
-import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { img } from '@/lib/image';
 
 const SHOE_COUNT = getShoes().length;
@@ -52,6 +52,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     ...(noindex && { robots: { index: false, follow: true } }),
     alternates: { canonical: `/best/${entry.slug}` },
     openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,

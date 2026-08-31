@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import { getAllBrands } from '@/lib/data/brands';
 import { shoes as allShoes } from '@/lib/data/shoes';
 import { isCompleteShoe } from '@/types/shoe';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 const BRAND_COUNT = getAllBrands().length;
 
@@ -13,6 +13,8 @@ export const metadata: Metadata = {
   description: `나이키, 아식스, 호카, 뉴발란스 등 ${BRAND_COUNT}개 주요 러닝화 브랜드의 라인업, 강점, 추천 모델을 한국 러너 관점에서 비교 분석합니다.`,
   alternates: { canonical: '/brands' },
   openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
     type: 'website',
     locale: 'ko_KR',
     siteName: SITE_NAME,

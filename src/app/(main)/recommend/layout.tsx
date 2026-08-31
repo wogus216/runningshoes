@@ -1,3 +1,4 @@
+import { DEFAULT_OG_IMAGE } from '@/lib/constants';
 import type { Metadata } from "next";
 import { SITE_URL } from "@/lib/constants";
 
@@ -15,6 +16,8 @@ export const metadata: Metadata = {
     "마라톤 러닝화 추천",
   ],
   openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
     title: "맞춤 러닝화 추천 - 러닝의 모든것",
     description:
       "AI가 분석하는 나만의 러닝화. 경험, 발 타입, 부상 이력을 고려한 개인화 추천.",

@@ -1,7 +1,7 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { getMarathonEvents, getMajorEvents } from '@/lib/data/marathon';
-import { SITE_URL } from '@/lib/constants';
+import { SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { MarathonContent } from '@/components/marathon/marathon-content';
 import { groupIntoBands } from '@/lib/marathon/bands';
 
@@ -24,6 +24,8 @@ export function generateMetadata(): Metadata {
     keywords: '마라톤 대회, 마라톤 일정, 2026 마라톤, 마라톤 접수, 접수중인 마라톤, 하프마라톤, 마라톤 참가비, 마라톤 코스, 가을 마라톤, 지역별 마라톤',
     alternates: { canonical: '/marathon' },
     openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
       title: '마라톤 대회 일정 — 지금 접수 중인 대회부터',
       description,
       url: `${SITE_URL}/marathon`,

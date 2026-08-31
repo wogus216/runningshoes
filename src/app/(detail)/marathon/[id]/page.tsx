@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
-import { SITE_URL, SITE_NAME, ADSENSE_SLOTS } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText, Gift } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 import { CourseMap } from '@/components/marathon/course-map';
@@ -20,6 +20,21 @@ export function generateStaticParams() {
   return events.map((event) => ({
     id: event.id,
   }));
+}
+
+/** 검색 스니펫이 잘리는 지점. 한글은 대략 이 길이에서 끊긴다 */
+const META_DESC_MAX = 155;
+
+/** 문장·어절 경계에서 자른다 — 낱말 중간에서 끊긴 스니펫은 그 자체로 신뢰를 깎는다 */
+function truncateAtWord(text: string, max: number): string {
+  const clean = text.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
+  if (!clean) return '';
+  if (clean.length <= max) return clean;
+  const cut = clean.slice(0, max - 1);
+  const sentenceEnd = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('다. '));
+  if (sentenceEnd > max * 0.5) return cut.slice(0, sentenceEnd + 1);
+  const space = cut.lastIndexOf(' ');
+  return (space > max * 0.5 ? cut.slice(0, space) : cut) + '…';
 }
 
 export async function generateMetadata({ params }: MarathonDetailPageProps): Promise<Metadata> {
@@ -39,9 +54,10 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   // description 앞부분은 검색 스니펫으로 잘려 나가는 자리다(대략 155자).
   // 그 자리에 난이도·출발시각 같은 스펙을 넣으면 "지금 신청할 수 있나"라는 질문에
   // 답하지 못한 채 잘린다 — 접수 상태를 먼저 놓고, 대회 고유 설명이 그 뒤를 잇게 한다.
-  const descParts = [
-    `${event.name} - ${formatDate(event.date)}, ${event.location}. ${event.distances.join('/')} 코스.`,
-  ];
+  // 대회명은 title 이 이미 말한다. 스니펫에서 반복하면 155자 중 20~30자를 그대로 버린다.
+  // 날짜는 연도를 떼고(검색 시점에 그해 대회인 게 자명하다) 요일만 남긴다.
+  const shortDate = formatDate(event.date).replace(/^\d{4}년 /, '');
+  const descParts = [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
   if (event.status === '접수중') {
     descParts.push(
       event.registrationEnd
@@ -60,8 +76,13 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   if (fees?.length) {
     descParts.push(`참가비 ${formatFee(Math.min(...fees.map((f) => f.fee)))}~.`);
   }
-  descParts.push(event.description || '한국 마라톤 대회 정보.');
-  const description = descParts.join(' ');
+  // 여기까지가 "언제·어디서·얼마"다. 남는 자리에만 대회 고유 설명을 채운다 —
+  // 예전엔 event.description(300~700자)을 통째로 붙여 스니펫이 3~5배 초과했고,
+  // 검색 결과에서는 어차피 잘려 나가 뒷부분이 버려지고 있었다.
+  const head = descParts.join(' ');
+  const room = META_DESC_MAX - head.length - 1;
+  const tail = room >= 40 ? truncateAtWord(event.description ?? '', room) : '';
+  const description = tail ? `${head} ${tail}` : head;
 
   return {
     title,
@@ -79,6 +100,9 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
       title: `${event.name} - ${SITE_NAME}`,
       description,
       url: `${SITE_URL}/marathon/${id}`,
+      // ⚠️ 페이지가 openGraph 를 지정하면 layout 의 것과 병합되지 않고 통째로 덮인다.
+      // 이 한 줄이 없어서 대회 113개가 공유 카드에 이미지 없이 나가고 있었다(2026-08-31 확인).
+      images: [DEFAULT_OG_IMAGE],
     },
     alternates: {
       canonical: `/marathon/${id}`,

@@ -2,13 +2,15 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getAllPairs } from '@/lib/pseo/pairs';
 import { categoryOrder } from '@/types/shoe';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 export const metadata: Metadata = {
   title: '러닝화 1:1 비교 — 인기 페어 모음',
   description: '같은 카테고리의 인기 러닝화 두 모델을 데이터로 직접 비교합니다. 무게, 스택, 드롭, 가성비, 한국 러너 적합성까지.',
   alternates: { canonical: '/vs' },
   openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
     type: 'website',
     locale: 'ko_KR',
     siteName: SITE_NAME,

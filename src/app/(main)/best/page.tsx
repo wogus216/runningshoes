@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { ArrowRight, Footprints, MapPin, Heart, Wallet, Layers } from 'lucide-react';
 import { getAllMatrices, getMatrixShoes } from '@/lib/pseo/matrices';
 import { getShoes } from '@/lib/data/shoes';
-import { SITE_NAME, SITE_URL } from '@/lib/constants';
+import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 
 const SHOE_COUNT = getShoes().length;
 
@@ -13,6 +13,8 @@ export const metadata: Metadata = {
     `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
   alternates: { canonical: '/best' },
   openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
     type: 'website',
     locale: 'ko_KR',
     siteName: SITE_NAME,

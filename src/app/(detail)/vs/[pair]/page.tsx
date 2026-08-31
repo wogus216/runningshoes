@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
 import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from '@/lib/pseo/pairs';
-import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 import { getShoeDurability } from '@/lib/durability';
@@ -68,6 +68,8 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     description,
     alternates: { canonical: `/vs/${pair}` },
     openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,

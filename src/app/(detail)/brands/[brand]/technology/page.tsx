@@ -3,7 +3,7 @@ import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getBrandBySlug, getAllBrandSlugs } from '@/lib/data/brands';
 import { getShoes } from '@/lib/data/shoes';
-import { SITE_URL, SITE_NAME } from '@/lib/constants';
+import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { BrandTechnologyHero } from '@/components/brand/brand-technology-hero';
 import { TechnologyList } from '@/components/brand/technology-list';
 
@@ -51,6 +51,8 @@ export async function generateMetadata({ params }: BrandTechnologyPageProps): Pr
     ],
     authors: [{ name: SITE_NAME }],
     openGraph: {
+      // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
+      images: [DEFAULT_OG_IMAGE],
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,
