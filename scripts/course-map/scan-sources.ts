@@ -83,17 +83,45 @@ function hasStructureWords(text: string): boolean {
   return /반환|출발|피니시|골인|통제\s*시간|우회|구간/.test(text);
 }
 
+/**
+ * 리다이렉트를 직접 따라가며 **쿠키를 물고 간다.**
+ *
+ * Node 의 `fetch(redirect:'follow')` 는 홉 사이에 쿠키를 유지하지 않는다. raceplan 계열
+ * 대회몰(손기정·부산바다)은 SSO 핸드셰이크가 세션 쿠키를 요구해서, 쿠키 없이 따라가면
+ * `login.raceplan.co.kr` 과 원래 도메인을 오가는 무한 루프에 빠지고 예외로 끝난다 —
+ * 2026-08-31 까지 이 스캔이 그 대회들을 "응답 없음"으로 보고하고 있었지만
+ * 실제로는 쿠키 자만 붙이면 200 이 떨어진다.
+ */
 async function get(url: string): Promise<{ status: number; html: string } | null> {
   const ctrl = new AbortController();
   const timer = setTimeout(() => ctrl.abort(), TIMEOUT);
+  const jar = new Map<string, string>();
   try {
-    const res = await fetch(url, {
-      headers: { 'User-Agent': UA, 'Accept-Language': 'ko-KR,ko;q=0.9' },
-      redirect: 'follow',
-      signal: ctrl.signal,
-    });
-    const html = await res.text();
-    return { status: res.status, html };
+    let current = url;
+    for (let hop = 0; hop < 12; hop++) {
+      const cookie = [...jar].map(([k, v]) => `${k}=${v}`).join('; ');
+      const res = await fetch(current, {
+        headers: {
+          'User-Agent': UA,
+          'Accept-Language': 'ko-KR,ko;q=0.9',
+          ...(cookie ? { Cookie: cookie } : {}),
+        },
+        redirect: 'manual',
+        signal: ctrl.signal,
+      });
+      for (const raw of res.headers.getSetCookie?.() ?? []) {
+        const [pair] = raw.split(';');
+        const eq = pair.indexOf('=');
+        if (eq > 0) jar.set(pair.slice(0, eq).trim(), pair.slice(eq + 1).trim());
+      }
+      const location = res.headers.get('location');
+      if (res.status >= 300 && res.status < 400 && location) {
+        current = new URL(location, current).toString();
+        continue;
+      }
+      return { status: res.status, html: await res.text() };
+    }
+    return null; // 홉 한도 초과 = 진짜 루프
   } catch {
     return null;
   } finally {
