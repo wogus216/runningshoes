@@ -4,11 +4,12 @@ import type { CardShoe } from '@/lib/data/shoes';
 export type UserProfile = {
   experience: 'beginner' | 'intermediate' | 'advanced';
   weeklyDistance: 'low' | 'medium' | 'high'; // ~20km, 20-40km, 40km+
-  purpose: 'training' | 'racing' | 'recovery' | 'all';
+  purpose: 'training' | 'racing' | 'recovery' | 'trail' | 'all';
   footArch: 'flat' | 'normal' | 'high';
   footWidth: 'narrow' | 'standard' | 'wide';
   injuries: string[]; // plantarFasciitis, achillesTendinopathy, kneeIssues, shinSplints
-  budget: 'low' | 'mid' | 'high'; // ~20만, 15-30만, 20만+
+  /** 상한이다. 하한은 두지 않는다 — 아래 budgetRanges 주석 참조 */
+  budget: 'low' | 'mid' | 'high'; // ~20만 / ~30만 / 상한 없음
   preferredBrands: string[];
   season?: 'summer' | 'winter' | 'all'; // 계절 선택
   targetPace?: 'slow' | 'medium' | 'fast'; // 목표 페이스
@@ -105,6 +106,7 @@ const purposeMap = {
   training: ['훈련', '템포', '데일리', '트레이닝'],
   racing: ['레이싱', '대회', '레이스', '기록'],
   recovery: ['회복', '리커버리', '조깅'],
+  trail: ['트레일', '산길', '오프로드', '임도'],
   all: ['올라운더', '다목적', '올라운드'],
 };
 
@@ -120,14 +122,41 @@ const purposeCategoryMap: Record<string, string[]> = {
   training: ['데일리', '입문화', '쿠션화'],
   racing: ['레이싱'],
   recovery: ['쿠션화', '입문화'],
+  trail: ['트레일'],
   all: ['데일리', '입문화', '쿠션화'],
 };
 
+/*
+ * 주간 거리 → 어울리는 카테고리.
+ *
+ * 예전에는 weeklyDistance 가 'high' 일 때만(내구성 가점) 쓰였고, low·medium 은 점수에
+ * 아무 영향이 없었다 — 실측으로 low↔medium 을 바꿔도 상위 10개가 한 개도 안 바뀌었다.
+ * 아홉 개 질문 중 하나가 대부분의 사용자에게 아무 일도 하지 않고 있었다는 뜻이다.
+ */
+const distanceCategoryMap: Record<string, string[]> = {
+  low: ['입문화', '쿠션화'],
+  medium: ['데일리', '쿠션화'],
+  high: ['데일리', '레이싱'],
+};
+
+/*
+ * 예산은 '상한'이다. 하한을 두지 않는다.
+ *
+ * 예전 값은 low 0~20만 / mid 15~30만 / high 20만~∞ 였다. 세 구간이 서로 겹쳐서
+ * 18만원짜리는 low·mid 양쪽에, 25만원짜리는 mid·high 양쪽에 걸렸다 — 사용자는 어느 걸
+ * 골라야 하는지 알 수 없었다. 게다가 하한 때문에 '15-30만원'을 고르면 14만원짜리 좋은
+ * 신발이 아예 후보에서 빠졌다. 예산이라는 말의 뜻과 반대다.
+ *
+ * 카탈로그 분포(130종): 20만 이하 54 · 20~30만 59 · 30만 초과 17.
+ */
 const budgetRanges = {
   low: { min: 0, max: 200000 },
-  mid: { min: 150000, max: 300000 },
-  high: { min: 200000, max: Infinity },
+  mid: { min: 0, max: 300000 },
+  high: { min: 0, max: Infinity },
 };
+
+/** 가성비 계산의 기준선. 상한이 없는 예산에서도 나눗셈이 NaN 이 되지 않게 한다 */
+const PRICE_CEILING = 400000;
 
 export function recommendShoes(shoes: CardShoe[], profile: UserProfile): RecommendedShoe[] {
   const recommendations: RecommendedShoe[] = [];
@@ -139,6 +168,24 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     let score = 0;
     const reasons: string[] = [];
 
+    /*
+     * 이 러너에게 안정화가 '맞는 유형'인가.
+     *
+     * 안정화는 목적·거리로 고르는 카테고리가 아니라 발 상태로 고르는 카테고리다.
+     * 그런데 purposeCategoryMap·distanceCategoryMap 어디에도 없어서, 평발 러너에게도
+     * 목적 가점(+8)과 거리 가점(+14)을 통째로 못 받았다 — 같은 조건의 쿠션화에
+     * 22점을 지고 시작한다는 뜻이다. 평발 가점 +12 로는 못 메운다.
+     * 실측: 평발 프로필 9개 조합 중 8개에서 안정화가 상위 10위 안에 한 켤레도 없었다.
+     *
+     * 트레일과 같은 처방이다 — 그 사람에게 맞는 카테고리면 맵에 든 것으로 친다.
+     */
+    const needsStability =
+      profile.footArch === 'flat' ||
+      profile.injuries.some((i) => ['kneeIssues', 'shinSplints'].includes(i));
+    const fitsCategory = (map: Record<string, string[]>, key: string) =>
+      map[key]?.includes(shoe.category) ||
+      (needsStability && shoe.category === '안정화');
+
     // 1. 예산 필터 (필수) - 상한+하한 모두 체크
     const price = shoe.price || shoe.priceAnalysis?.msrp || 0;
     const budgetRange = budgetRanges[profile.budget];
@@ -148,6 +195,27 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     if (price > 0 && price >= budgetRange.min && price <= budgetRange.max) {
       score += 10;
       reasons.push('예산 범위 내');
+    }
+
+    /*
+     * 1-b. 트레일화는 트레일을 고른 사람에게만 보인다.
+     *
+     * 예전에는 어느 카테고리 맵에도 '트레일' 이 없어서 15종이 어떤 조합에서도 추천되지
+     * 않았다(카탈로그 커버리지 82.7% 의 주원인). 목적에 트레일을 추가하면서, 반대로
+     * 로드 러너의 결과에 트레일화가 새어 나가지 않도록 여기서 갈라 둔다.
+     */
+    if (shoe.category === '트레일' && profile.purpose !== 'trail') {
+      continue;
+    }
+    /*
+     * 반대로 트레일을 고른 사람에게 로드화가 위로 올라오지 않게 눌러 둔다.
+     * 카테고리 가점 +35 만으로는 부족했다 — 로드화가 경험·주간거리·쿠셔닝 등 여러 축에서
+     * 점수를 쌓아 이겼고, 실측에서 트레일 목적인데 상위 10개 중 트레일화가 4개뿐이었다.
+     * 제외하지 않고 감점만 하는 이유는 예산이 낮으면 트레일화 후보가 3종까지 줄어서다
+     * (20만원 이하 기준). 열 자리를 채우되 순서는 트레일이 먼저다.
+     */
+    if (profile.purpose === 'trail' && shoe.category !== '트레일') {
+      score -= 40;
     }
 
     // 2. 발볼 너비 체크
@@ -234,7 +302,8 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       }
     }
     // 카테고리 직접 매핑 (키워드 없어도 카테고리로 매칭)
-    if (experienceCategoryMap[profile.experience]?.includes(shoe.category)) {
+    // advanced 맵에는 안정화가 없다 — 상급자라도 평발이면 필요한 카테고리라 fitsCategory 로 연다
+    if (fitsCategory(experienceCategoryMap, profile.experience)) {
       score += 10;
       reasons.push(`${expLabel} 적합 카테고리`);
     }
@@ -244,6 +313,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       training: '훈련용',
       racing: '레이싱용',
       recovery: '회복용',
+      trail: '트레일용',
       all: '다목적',
     };
     if (shoe.targetUsers?.recommended) {
@@ -261,9 +331,10 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         reasons.push(`${purposeLabels[profile.purpose]}으로 적합`);
       }
     }
-    // 카테고리 직접 매핑 (레이싱은 대폭 강화)
-    if (purposeCategoryMap[profile.purpose]?.includes(shoe.category)) {
-      const categoryBoost = profile.purpose === 'racing' ? 35 : 8;
+    // 카테고리 직접 매핑 (레이싱·트레일은 대폭 강화 — 지형/용도가 다르면 대체재가 없다)
+    if (fitsCategory(purposeCategoryMap, profile.purpose)) {
+      const categoryBoost =
+        profile.purpose === 'racing' || profile.purpose === 'trail' ? 35 : 8;
       score += categoryBoost;
       reasons.push(`${purposeLabels[profile.purpose]} 카테고리`);
     }
@@ -298,6 +369,27 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         score += 10;
         reasons.push('내구성 우수');
       }
+    }
+
+    /*
+     * 10-b. 주간 거리에 어울리는 카테고리 (low·medium 도 결과에 반영된다)
+     *
+     * 가중치 14 는 다른 축(경험 10~12, 목적 8~35)과 같은 눈금에 맞춘 값이다.
+     * 처음에 8 로 넣었더니 상위 10개가 1개밖에 안 바뀌어 사실상 없는 것과 같았다.
+     *
+     * ⚠️ 불일치 감점(-6)은 넣었다가 걷어냈다. 이 맵에 없는 카테고리가 통째로 눌리는데,
+     * 거기에 안정화 18종과 30만원 이상 17종 중 14종(레이싱)이 걸렸다 —
+     * 평발 프로필에서 안정화가 0/10 이 되고, 예산 '상한 없음'이 '30만원까지'와
+     * 결과가 같아졌다(둘 다 실측). 거리는 가점으로만 말한다.
+     */
+    if (fitsCategory(distanceCategoryMap, profile.weeklyDistance)) {
+      const distanceLabels: Record<string, string> = {
+        low: '주 20km 미만',
+        medium: '주 20~40km',
+        high: '주 40km 이상',
+      };
+      score += 14;
+      reasons.push(`${distanceLabels[profile.weeklyDistance]}에 맞는 유형`);
     }
 
     // 11. 선호 브랜드 가점
@@ -459,9 +551,17 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       reasons.push('장거리 내구성 우수');
     }
 
-    // 24. 가격 효율성 (같은 예산 내 저가일수록 가점)
-    if (price > 0 && price >= budgetRange.min && price <= budgetRange.max) {
-      const savingsRatio = (budgetRange.max - price) / (budgetRange.max - budgetRange.min || 1);
+    /*
+     * 24. 가격 효율성 (같은 예산 안에서 쌀수록 가점)
+     *
+     * 상한이 Infinity 인 예산에서는 (∞ - price) / (∞ - min) 이 NaN 이 되어 이 가점이
+     * 통째로 죽어 있었다. 카탈로그 최고가(399,000)를 덮는 기준선으로 바꾼다.
+     */
+    if (price > 0 && price <= budgetRange.max) {
+      const ceiling = Number.isFinite(budgetRange.max)
+        ? budgetRange.max
+        : PRICE_CEILING;
+      const savingsRatio = (ceiling - price) / ceiling;
       if (savingsRatio > 0.3) {
         score += Math.round(savingsRatio * 6);
         reasons.push('예산 대비 효율적');

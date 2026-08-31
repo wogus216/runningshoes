@@ -77,12 +77,13 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
   const profileLabels = {
     experience: { beginner: '입문', intermediate: '중급', advanced: '상급' },
     weeklyDistance: { low: '20km 미만', medium: '20-40km', high: '40km 이상' },
-    purpose: { training: '훈련', racing: '레이스', recovery: '회복', all: '다목적' },
+    purpose: { training: '훈련', racing: '레이스', recovery: '회복', trail: '트레일', all: '다목적' },
     targetPace: { slow: '6분대 이상', medium: '5-6분대', fast: '5분 미만' },
     season: { summer: '여름', winter: '겨울', all: '사계절' },
     footArch: { flat: '평발', normal: '정상', high: '높은 아치' },
     footWidth: { narrow: '좁음', standard: '표준', wide: '넓음' },
-    budget: { low: '20만원 이하', mid: '15-30만원', high: '20만원 이상' },
+    // 설문 라벨과 같은 말을 써야 한다 — 상한 기준(questionnaire.tsx 의 budget 주석 참조)
+    budget: { low: '20만원까지', mid: '30만원까지', high: '상한 없음' },
   };
   const summaryStats = [
     { label: '분석 대상', value: `${totalCount}+` },
@@ -125,10 +126,16 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 <Sparkles className="h-5 w-5" />
                 <span className="text-sm font-semibold">AI 맞춤 추천</span>
               </div>
-              <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
+              {/*
+                모바일 28px — 36px 이면 316px 컨테이너에서 두 줄로 접히는데,
+                하필 '러/닝화' 처럼 단어 중간이 끊긴다(실측: 이 문구는 29.1px 까지 한 줄).
+                데스크톱(md:48px)은 폭이 남아 그대로 둔다.
+                break-keep 은 한글을 띄어쓰기에서만 끊는다 — 없으면 음절 단위로 잘린다.
+              */}
+              <h1 className="text-balance break-keep text-[28px] font-black leading-[1.12] tracking-tight text-slate-950 md:text-5xl md:leading-[0.92]">
                 나한테 맞는 러닝화만 남기기.
               </h1>
-              <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+              <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
                 경험, 주간 거리, 발형, 부상 이력, 예산까지 묻고 결과를 바로 조합합니다. 검색보다 빠르게 시작점을 찾는 용도에 맞게 정리했습니다.
               </p>
             </div>

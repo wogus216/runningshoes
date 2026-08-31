@@ -46,6 +46,8 @@ const questions: Question[] = [
       { value: 'training', label: '훈련', description: '체력 향상, 템포 러닝' },
       { value: 'racing', label: '레이스', description: '대회 참가, 기록 단축' },
       { value: 'recovery', label: '회복', description: '가벼운 조깅, 회복 러닝' },
+      // 이 항목이 없어서 트레일화 15종이 어떤 조합에서도 추천되지 않았다 (2026-08-31)
+      { value: 'trail', label: '트레일', description: '산길, 임도 등 비포장 위주' },
       { value: 'all', label: '다목적', description: '훈련부터 대회까지 모두' },
     ],
   },
@@ -105,11 +107,13 @@ const questions: Question[] = [
   {
     id: 'budget',
     title: '예산은 어느 정도인가요?',
-    description: '신발 구매 예산을 선택해주세요',
+    // 예전 라벨(20만원 이하 / 15-30만원 / 20만원 이상)은 세 구간이 서로 겹쳐서
+    // 18만원짜리도 25만원짜리도 어느 걸 골라야 할지 알 수 없었다. 상한으로 통일한다
+    description: '쓸 수 있는 최대 금액을 골라주세요',
     options: [
-      { value: 'low', label: '20만원 이하', description: '입문~가성비 중시' },
-      { value: 'mid', label: '15-30만원', description: '중간 가격대' },
-      { value: 'high', label: '20만원 이상', description: '프리미엄, 슈퍼슈즈 포함' },
+      { value: 'low', label: '20만원까지', description: '입문~가성비 중심' },
+      { value: 'mid', label: '30만원까지', description: '프리미엄까지 포함' },
+      { value: 'high', label: '상한 없음', description: '카본·슈퍼슈즈까지 전부' },
     ],
   },
 ];
