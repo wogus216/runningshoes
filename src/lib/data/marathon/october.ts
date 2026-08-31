@@ -550,7 +550,7 @@ export const octoberEvents: MarathonEvent[] = [
       images: [{ src: '/images/marathon/gyeongju-international-marathon-2026/kit-1.webp', alt: '2026 경주국제마라톤 공식 기념 티셔츠 (아디다스)' }],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-08-31',
     description:
       '동아일보 주최, World Athletics 엘리트 라벨. 유네스코 신라 유적(대릉원·첨성대·동궁과 월지·황룡사지)을 통과하는 평지 순환 코스로 PB 친화적입니다. 정원 1.6만 명(일반 9천 + 동마클럽 매니아 7천)으로 동마 가을 시리즈를 마무리합니다. 서울·공주백제·경주 동아 3개 대회를 모두 완주하면 런저니 메달이 별도 수여됩니다.',
     courseInfo: {
@@ -558,7 +558,7 @@ export const octoberEvents: MarathonEvent[] = [
       difficulty: '중급',
       certification: 'IAAF',
       courseDescription:
-        '경주시민운동장 출발·귀환 순환 코스. 5~16km 구간에 대릉원(천마총)·첨성대·동궁과 월지(안압지)·반월성·황룡사지 등 신라 유적이 밀집합니다. 획득고도 약 146m로 급경사 없는 평탄 코스이나, 16~24km 북천 오르막과 후반 기복이 변수입니다.',
+        '경주시민운동장 출발·귀환 순환 코스. 5~16km 구간에 대릉원(천마총)·첨성대·동궁과 월지(안압지)·반월성·황룡사지 등 신라 유적이 밀집합니다. 획득고도 약 146m로 급경사 없는 평탄 코스이나, 16~24km 북천 오르막과 후반 기복이 변수입니다. 참가 자격이 종목마다 갈려 풀·하프는 만 18세 이상만 신청할 수 있고 10km는 나이 제한이 없습니다. 휠체어·인라인 같은 보조장비 사용과 유아·유아차 동반은 허용되지 않으며 접수도 개인신청만 받습니다. 교통통제 안내와 시상 내역은 공식에서 아직 "추후 공개"입니다.',
     },
     raceInfo: {
       entryFees: [
