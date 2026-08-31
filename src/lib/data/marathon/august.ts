@@ -116,7 +116,7 @@ export const augustEvents: MarathonEvent[] = [
     location: '여의도 한강공원 물빛광장 (서울 영등포구)',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://seoulhalfrun.kr/',
     registrationEnd: '2026-08-23',

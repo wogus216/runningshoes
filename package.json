@@ -22,7 +22,8 @@
     "prepare": "husky",
     "gsc": "tsx scripts/gsc-report.ts",
     "gsc:pages": "tsx scripts/gsc-pages.ts",
-    "popular": "tsx scripts/ga-popular.ts"
+    "popular": "tsx scripts/ga-popular.ts",
+    "course:scan": "tsx scripts/course-map/scan-sources.ts"
   },
   "dependencies": {
     "@google-analytics/data": "^6.1.0",
