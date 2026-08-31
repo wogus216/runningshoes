@@ -30,6 +30,8 @@ type DeckProps = {
     titleTail: string;
     sub: string;
     scrollHint: string;
+    /** 카드가 올라오는 동안만 카운터 옆에 뜨는 한 줄. 오프닝·그리드에는 없다 */
+    scrollAdvice: string;
     gridTitle: string;
     gridLine: string;
     gridHint: string;
@@ -245,6 +247,17 @@ export function AthleteDeck({ athletes, intro, copy }: DeckProps) {
             ) : (
               /* GSAP 이 뜨면 위 effect 가 이 위에 덧그려서 숫자를 굴린다 */
               <b ref={counterRef}>{counterLabel}</b>
+            )}
+
+            {/*
+              카드가 올라오는 동안에만. 오프닝에는 이미 아래에 SCROLL TO MEET THEM 이 있고,
+              그리드에서는 바닥의 '사진을 누르면…' 이 자리를 넘겨받는다 — 한 화면에 안내는 하나다.
+
+              이름·문장이 아니라 이 줄(카운터 행)에 붙이는 이유: 바닥에 한 줄을 더하면
+              선수마다 글 높이가 달라져 이름의 세로 기준점이 흔들린다(데스크톱은 세로 중앙 정렬).
+            */}
+            {showActiveInfo && (
+              <span className={styles.stageAdvice}>{copy.scrollAdvice}</span>
             )}
           </p>
 

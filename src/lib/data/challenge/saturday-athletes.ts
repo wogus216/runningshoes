@@ -187,6 +187,11 @@ export const ATHLETES_COPY = {
   sub: '일곱 명, 하나의 출발선.',
   meta: '7 RUNNERS / ONE STARTING LINE',
   scrollHint: 'SCROLL TO MEET THEM ↓',
+  // 카드가 올라오는 동안 카운터 줄 오른쪽 끝에만 뜬다(오프닝·그리드에는 없다).
+  // '한 명씩 보인다'가 아니라 '잘 보인다'로 쓴다 — 한 번에 한 명만 넘어가는 건
+  // 스냅 클램프가 이미 보장한다(use-deck-scroll.ts). 천천히 내려서 달라지는 것은
+  // 사진이 아래에서 올라오는 그 과정을 보느냐뿐이다. 없는 효과를 약속하지 않는다.
+  scrollAdvice: '천천히 내려야 잘 보입니다',
   gridTitle: 'THE STARTING SEVEN',
   gridLine: '일곱 명,\n하나의 출발선.',
   gridHint: '사진을 누르면 그 사람 이야기로',

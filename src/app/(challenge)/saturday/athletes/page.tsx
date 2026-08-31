@@ -95,6 +95,7 @@ export default function SaturdayAthletesPage() {
             titleTail: ATHLETES_COPY.titleTail,
             sub: ATHLETES_COPY.sub,
             scrollHint: ATHLETES_COPY.scrollHint,
+            scrollAdvice: ATHLETES_COPY.scrollAdvice,
             gridTitle: ATHLETES_COPY.gridTitle,
             gridLine: ATHLETES_COPY.gridLine,
             gridHint: ATHLETES_COPY.gridHint,

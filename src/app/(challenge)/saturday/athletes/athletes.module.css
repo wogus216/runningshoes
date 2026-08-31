@@ -311,6 +311,34 @@
 }
 
 /*
+ * 카드가 올라오는 동안만 카운터 반대편에 서는 안내 한 줄.
+ *
+ * 부모(.stageLabel)의 mono·대문자·0.16em 자간을 전부 되돌린다 — 한글에 그 조합을
+ * 그대로 물려주면 '천 천 히  내 려 야' 로 벌어져 읽히지 않는다(마지막 장면의
+ * .closingLabel 이 같은 이유로 이미 그렇게 보인다).
+ *
+ * 부모가 space-between 이라 자리는 저절로 오른쪽 끝이다. 360px 에서 카운터(약 40px)와
+ * 합쳐 195px 이라 겹치지 않는다.
+ */
+.stageAdvice {
+  font-family: var(--ath-kr);
+  font-size: 11px;
+  font-weight: 500;
+  /*
+   * 15px 은 이 줄(카운터)의 원래 높이다. 한글 폰트의 기본 행간이 1.5 라 그대로 두면
+   * 이 칸만 17px 이 되어 카운터 행 전체가 커지고, 그 아래 무대가 통째로 밀린다 —
+   * 실측(1440×900): 01번이 도착하는 순간 사진 y 95→96, 이름 89→91.
+   * 안내문 하나 때문에 화면이 움직이면 안내가 아니라 방해다.
+   */
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  text-transform: none;
+  text-align: right;
+  color: var(--ath-muted);
+  animation: athFootIn 320ms var(--ath-ease) both;
+}
+
+/*
  * 무대 바닥 — 오프닝 카피, '지금 올라온 선수'(이름+캐릭터 문장), 그리드 안내문.
  * 셋 중 하나만 렌더링되므로(athlete-deck.tsx) 여기서는 그때그때 모양만 잡는다.
  * 아래에서 올라오는 사진이 이 줄 위를 지나가므로 불투명한 판으로 덮어 둔다.
