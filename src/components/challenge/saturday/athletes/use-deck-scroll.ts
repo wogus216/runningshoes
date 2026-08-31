@@ -4,15 +4,18 @@ import { useEffect, type RefObject } from 'react';
 import type { SaturdayGsap } from './use-saturday-gsap';
 
 /*
- * 스크롤 트랙 배분. 트랙 400svh, 무대 100svh 이므로 무대가 실제로 붙어 있는 구간은
- * 앞쪽 70% 뿐이다. 등장·정지·그리드가 전부 그 안에서 끝나야 한다 —
+ * 스크롤 트랙 배분. 트랙 540svh, 무대 100svh 이므로 무대가 실제로 붙어 있는 구간은
+ * 앞쪽 81% 뿐이다. 등장·정지·그리드가 전부 그 안에서 끝나야 한다 —
  * 이 선을 넘겨 배치하면 그리드가 열리자마자 무대가 위로 흘러가 버린다(실제로 겪었다).
  *
- *   0 ~ 50%   01번(재춘)은 이미 도착해 있고, 02~07번이 한 장씩 올라온다  (약 200svh)
- *             — 그중 맨 앞 11%(약 22svh)는 아무 카드도 움직이지 않는 정지 구간이다.
- *             이 페이지에 막 들어온 사람이 카드 스택을 히어로로 감상할 시간이다.
- *   50 ~ 58%  아무 일도 없다. 잠깐 정지          (약 32svh)
- *   58 ~ 100% 그리드로 펼쳐진 채 붙어 있다       (약 168svh)
+ *   0 ~ 50%   01~07번이 한 장씩 올라온다                      (약 270svh)
+ *             — 그중 맨 앞 24%(약 65svh)는 오프닝 사진만 있는 정지 구간이다.
+ *             이 페이지에 막 들어온 사람이 첫 화면을 감상할 시간이다.
+ *   50 ~ 58%  아무 일도 없다. 잠깐 정지                        (약 43svh)
+ *   58 ~ 100% 그리드로 펼쳐진 채 붙어 있다                     (약 227svh)
+ *
+ * 480 → 540svh 로 늘렸다: 올라오는 카드가 여섯 장에서 일곱 장이 됐는데
+ * 트랙이 그대로면 한 장당 스크롤이 줄어 몰아치듯 지나간다.
  */
 const RISE_END_FRACTION = 0.5;
 const GRID_START_FRACTION = 0.58;
@@ -20,21 +23,42 @@ const RISE_END = `${RISE_END_FRACTION * 100}% top`;
 const GRID_START = `${GRID_START_FRACTION * 100}% top`;
 
 /*
- * 01번(재춘)은 애니메이션 없이 처음부터 제자리다 — 이 페이지의 첫 화면 자체가
- * 이미 도착한 카드 스택이어야 하기 때문이다. 그래서 이 타임라인은 02~07번 여섯 장만 다룬다.
+ * 일곱 장이 전부 올라온다. 그 앞에는 개인이 아닌 오프닝 사진 한 장이 서 있다
+ * (athlete-deck.tsx 의 introCard) — 예전에는 01번 카드가 그 자리를 대신해서
+ * 재춘만 '등장'하지 못하고 배경처럼 서 있었다.
  *
- * HOLD 는 02번이 올라오기 전의 정지 구간(스크롤 20~30svh 상당). 그 뒤로는 간격이
- * 좁아진다 — 여섯 번이 같은 박자로 반복되면 지루해지고, 마지막 장들이 몰아쳐야 장면이 닫힌다.
- * 간격: .90 → .85 → .75 → .65 → .55
+ * HOLD 는 01번이 올라오기 전의 정지 구간(약 63svh). 폰에서 스와이프 한 번 안쪽이라
+ * 첫 카드는 금방 온다.
+ *
+ * 간격은 전부 같다(.90). 예전에는 .95→.55 로 좁혀 가며 '몰아치는' 고조를 만들었는데,
+ * 실측해 보니 마지막 카드가 168px 간격이라 폰에서 한 번 튕기면(관성 포함 1000px 이상)
+ * 두세 명이 통째로 지나갔다. 리듬보다 '한 명씩 만난다'가 이 페이지의 조건이다.
+ * 고조는 이제 카운터(01/07)와 그리드 도착이 만든다.
+ *
+ * 트랙도 540→800svh 로 늘려 한 장당 약 400px 을 준다(아래 SNAP 과 함께 쓴다).
  */
-const HOLD = 0.6;
-const GAPS = [0.9, 0.85, 0.75, 0.65, 0.55];
+const HOLD = 1.2;
+const GAPS = [0.9, 0.9, 0.9, 0.9, 0.9, 0.9];
 const CUES = GAPS.reduce<number[]>(
   (acc, gap) => [...acc, acc[acc.length - 1] + gap],
   [HOLD],
 );
 const CARD_RISE = 1;
 const TIMELINE_END = CUES[CUES.length - 1] + CARD_RISE;
+
+/*
+ * 스크롤이 멈추면 가장 가까운 '카드가 막 도착한 지점'으로 붙는다.
+ *
+ * 거리를 늘리는 것만으로는 부족하다 — 폰의 관성 스크롤은 손을 뗀 뒤에도 계속 굴러서
+ * 사람과 사람 사이 어중간한 자리에 서기 쉽다. 스냅이 있으면 아무리 세게 튕겨도
+ * 착지는 항상 누군가의 얼굴 위다.
+ *
+ * 0 은 오프닝(아무도 안 올라온 상태)이다. 이 자리도 하나의 장면이라 스냅 대상에 넣는다.
+ */
+const SNAP_POINTS = [
+  0,
+  ...CUES.map((cue) => (cue + CARD_RISE) / TIMELINE_END),
+];
 /** 이 시점을 넘긴 카드가 '화면 맨 위'다. 절반 넘게 올라왔을 때 이름을 바꾼다 */
 const ON_TOP_AT = 0.55;
 
@@ -45,7 +69,7 @@ type DeckScrollArgs = {
   cardsRef: RefObject<(HTMLButtonElement | null)[]>;
   /** 격자 한가운데 THE STARTING SEVEN 카피. Flip 이 끝나기 전부터 겹쳐 들어온다 */
   gridCopyRef: RefObject<HTMLDivElement | null>;
-  /** 지금 스택 맨 위에 있는 선수. 01번(재춘)만 도착해 있으면 -1 (오프닝 카피가 대신 보인다) */
+  /** 지금 스택 맨 위에 있는 선수. 아직 한 장도 안 올라왔으면 -1 (오프닝 카피가 보인다) */
   onActiveChange: (index: number) => void;
   /** 'stack' | 'grid'. 모션 감소·JS 미로딩 상태에서는 한 번도 불리지 않는다(기본값 그리드 유지) */
   onPhaseChange: (phase: 'stack' | 'grid') => void;
@@ -92,12 +116,16 @@ export function useDeckScroll({
      * 무대(.deck[data-layout='stack'])가 overflow:hidden 이라 사진이 카드 밖으로 내려가는
      * 모습은 예전과 똑같이 '아래에서 밀려 들어오는' 것으로 보인다.
      *
-     * 01번(재춘)은 애니메이션 대상이 아니다. 처음부터 제자리라 스크럽에서 뺀다.
+     * 일곱 장 전부가 대상이다. 예전에는 01번을 뺐는데(첫 화면에 이미 놓여 있어서),
+     * 지금 그 자리는 오프닝 사진이 맡는다.
      */
-    const medias = cards
+    const risingMedias = cards
       .map((card) => card.querySelector<HTMLElement>('[data-media]'))
       .filter((media): media is HTMLElement => media !== null);
-    const risingMedias = medias.slice(1);
+    /** 격자에서만 보이는 이름표. 스택에서는 CSS 가 display:none 으로 지운다 */
+    const metas = cards
+      .map((card) => card.querySelector<HTMLElement>('[data-meta]'))
+      .filter((meta): meta is HTMLElement => meta !== null);
 
     if (!lib || !track || !deck || cards.length === 0) return;
 
@@ -122,11 +150,32 @@ export function useDeckScroll({
           start: 'top top',
           end: RISE_END,
           scrub: 0.5,
+          /*
+           * delay 0.1 — 손이 아직 화면에 있거나 관성이 살아 있는 동안에는 끼어들지 않는다.
+           * duration 상한 0.45 — 멀리 튕겼을 때 되돌아오는 길이 너무 길면 '끌려간다'고 느낀다.
+           */
+          snap: {
+            snapTo: SNAP_POINTS,
+            duration: { min: 0.15, max: 0.45 },
+            delay: 0.1,
+            ease: 'power2.inOut',
+            /*
+             * directional 기본값(true)은 '스크롤하던 방향으로 속도만큼 더 밀어서' 붙인다.
+             * 세게 튕기면 그 투영이 서너 명을 건너뛰어 버려서, 고치려던 문제를 그대로 재현한다.
+             * false 로 두면 관성이 멎은 자리에서 '가장 가까운 사람'으로 붙는다.
+             *
+             * inertia 도 끈다 — 켜져 있으면 '이 속도면 여기까지 가겠다'를 예측해서 그 지점에
+             * 붙이는데, 실측에서 2000px 튕김이 마지막 07번까지 날아갔다(directional 만 꺼도 동일).
+             * 둘 다 꺼야 '멈춘 자리에서 가장 가까운 사람'이 된다.
+             */
+            directional: false,
+            inertia: false,
+          },
           onUpdate: (self) => {
             const time = self.progress * TIMELINE_END;
             let next = -1;
             for (let i = 0; i < risingMedias.length; i += 1) {
-              if (time >= (CUES[i] ?? 0) + ON_TOP_AT) next = i + 1;
+              if (time >= (CUES[i] ?? 0) + ON_TOP_AT) next = i;
             }
             if (next === active) return;
             active = next;
@@ -179,16 +228,45 @@ export function useDeckScroll({
         // 사진([data-media])은 건드리지 않는다 — 저건 스크럽 타임라인 소유다
         gsap.set(cards, { clearProps: 'transform,opacity' });
 
+        /*
+         * absolute: true 를 쓰지 않는다.
+         *
+         * 그리드의 행은 사진 비율을 지키려고 min-content 다(athletes.module.css).
+         * absolute 는 트윈 동안 일곱 장을 전부 흐름에서 빼내는데, 그러면 행을 채우는
+         * 것이 하나도 남지 않아 행 높이가 0 으로 붕괴한다. Flip 은 그 붕괴한 격자를
+         * 최종 자리로 알고 트윈하고, 트윈이 끝나 흐름으로 돌아오는 순간 진짜 격자
+         * 좌표로 튄다 — 실측(390×844): 07번이 y=754 까지 내려갔다가 517 로 237px 되튐.
+         *
+         * 빼면 카드가 흐름에 남은 채 transform 으로만 움직인다. 첫 프레임부터 행 높이가
+         * 최종값이라 되튐이 없다.
+         */
         const tl = gsap.timeline();
         tl.add(
           Flip.from(state, {
             duration: 0.8,
             ease: 'power3.inOut',
-            absolute: true,
             scale: true,
             stagger: 0.03,
           }),
         );
+
+        /*
+         * 이름표는 카드가 흩어진 뒤에 켠다.
+         *
+         * 격자 레이아웃이 붙는 순간 .cardMeta 의 display:none 이 풀리는데, 그때 카드는
+         * 아직 스택 자리에 겹쳐 있다 — 일곱 개의 이름이 한 점에 포개져 글자 덩어리로 보였다
+         * (실측 캡처로 확인). Flip 이 0.8초라 절반쯤 지난 뒤부터 0.35초에 걸쳐 올린다.
+         */
+        if (next === 'grid') {
+          tl.fromTo(
+            metas,
+            { opacity: 0 },
+            { opacity: 1, duration: 0.35, ease: 'power2.out' },
+            0.5,
+          );
+        } else {
+          gsap.set(metas, { clearProps: 'opacity' });
+        }
 
         if (!gridCopy) return;
         if (next === 'grid') {
@@ -232,7 +310,7 @@ export function useDeckScroll({
       const initialTime = initialRiseProgress * TIMELINE_END;
       let initialActive = -1;
       for (let i = 0; i < risingMedias.length; i += 1) {
-        if (initialTime >= (CUES[i] ?? 0) + ON_TOP_AT) initialActive = i + 1;
+        if (initialTime >= (CUES[i] ?? 0) + ON_TOP_AT) initialActive = i;
       }
       active = initialActive;
       onActiveChange(initialActive);

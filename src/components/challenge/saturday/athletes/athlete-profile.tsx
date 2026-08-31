@@ -12,7 +12,6 @@ type ProfileProps = {
   mediaRef: RefObject<HTMLDivElement | null>;
   photoNotice: string;
   statsPending: string;
-  statsPendingNote: string;
   onPrev: () => void;
   onNext: () => void;
   onClose: () => void;
@@ -25,7 +24,6 @@ export function AthleteProfile({
   mediaRef,
   photoNotice,
   statsPending,
-  statsPendingNote,
   onPrev,
   onNext,
   onClose,
@@ -81,7 +79,10 @@ export function AthleteProfile({
     return () => window.removeEventListener('keydown', onKey);
   }, [athlete.index, total, onPrev, onNext, onClose]);
 
-  const focus = { '--focus': athlete.objectPosition } as CSSProperties;
+  const focus = {
+    '--focus': athlete.objectPosition,
+    '--tone': athlete.tone,
+  } as CSSProperties;
 
   return (
     <div
@@ -136,7 +137,11 @@ export function AthleteProfile({
           {/* 이름 다음으로 가장 크게 읽혀야 하는 줄 */}
           <p className={styles.profileLine}>{athlete.characterLine}</p>
 
-          {/* 라벨은 전부 영문 모노, 값은 한글. 없는 건 '측정 전'이라고 쓴다 */}
+          {/*
+            라벨은 전부 영문 모노, 값은 한글.
+            'Running type' 줄은 걷어냈다 — 일곱 명 전원이 '측정 전'이라 값이 없다는
+            사실만 반복했고, 정보가 없는 자리를 채우는 상태 표기는 이 페이지가 하지 않는다.
+          */}
           <dl className={styles.profileFacts}>
             <div>
               <dt>Event</dt>
@@ -146,12 +151,6 @@ export function AthleteProfile({
               <dt>Known for</dt>
               <dd data-pending={athlete.knownFor ? undefined : 'true'}>
                 {athlete.knownFor ?? statsPending}
-              </dd>
-            </div>
-            <div className={styles.factWide}>
-              <dt>Running type</dt>
-              <dd data-pending={athlete.runningType ? undefined : 'true'}>
-                {athlete.runningType ?? `${statsPending} — ${statsPendingNote}`}
               </dd>
             </div>
           </dl>

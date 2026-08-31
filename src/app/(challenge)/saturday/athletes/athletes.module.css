@@ -38,8 +38,33 @@
 
   --ath-pad: 20px;
   --ath-ease: cubic-bezier(0.16, 1, 0.3, 1);
+  /*
+   * 스택 카드의 폭. 무대 높이 계산에서 다시 쓰기 때문에 변수로 둔다 —
+   * 사진이 3:4 라 무대 높이가 이 값에서 곧바로 나온다(폭 × 4/3 + 카드 내부 gap).
+   *
+   * 폰에서는 화면 폭을 그대로 쓴다(풀블리드). min(78vw, 340px) 이었는데, 그러면
+   * 세로로 쓸 수 있는 581px 중 413px 만 쓰고 카운터와 사진 사이에 183px 이 비었다
+   * (실측 390×844. 360 에서 176px, 430 에서 220px).
+   * 사진이 3:4 라 폭을 늘리는 것 말고는 그 높이를 채울 방법이 없다 —
+   * 세로로 늘리면 잘라내야 하고, 이 페이지는 사진을 자르지 않기로 했다.
+   */
+  --ath-card-w: 100vw;
   /* 상단 바 실제 높이. 스티키 무대가 이 밑에서 시작해야 무대의 첫 줄이 바에 먹히지 않는다 */
   --ath-bar: calc(46px + env(safe-area-inset-top));
+  /*
+   * 그리드 국면의 바닥 카피 높이. 여기 들어가는 건 한 줄짜리 안내문뿐이다
+   * (스택 국면은 아래에서 따로 더 큰 값을 쓴다).
+   *
+   * clamp(64, 17svh, 118) 이었다 — 390×844 에서 118px 을 잡아 놓고 17px 만 쓰고 있었고,
+   * 남은 101px 이 그리드와 마지막 장면 사이의 빈 구간으로 그대로 보였다(실측).
+   */
+  --ath-foot: clamp(44px, 7svh, 64px);
+  /*
+   * 그리드가 실제로 쓸 수 있는 세로 길이. 무대(100svh - 바)에서 무대가 사진 말고
+   * 쓰는 것을 뺀 값이다 — 위아래 패딩 28 + 카운터 줄 15 + 행간 28 = 71, 그리고 바닥 카피.
+   * 사진 비율을 지키려면 격자 폭을 이 높이에서 역산해야 해서 변수로 둔다(아래 max-width).
+   */
+  --ath-deck-h: calc(100svh - var(--ath-bar) - 72px - var(--ath-foot));
 
   --ath-sans: var(--sat-font-sans), var(--font-pretendard), 'Pretendard', system-ui, sans-serif;
   --ath-kr: var(--font-pretendard), 'Pretendard', system-ui, sans-serif;
@@ -65,6 +90,20 @@
 @media (min-width: 1200px) {
   .page {
     --ath-pad: 48px;
+  }
+}
+
+/*
+ * 데스크톱에서 340px 고정이면 폰 레이아웃을 1440px 창 한가운데 놓은 것이 된다 —
+ * 실측으로 뷰포트 면적의 12%만 쓰고 좌우로 550px씩 비었다(폰에서는 47%였다).
+ * 폭이 아니라 '무대 높이'를 기준으로 잡는다. 사진이 3:4 라서 높이가 먼저 막히기 때문이다:
+ * 폭 = 쓸 수 있는 높이 × 0.75. 빼는 300px 은 무대가 사진 말고 쓰는 것의 합이다 —
+ * 카운터(15) + 갭(28) + 패딩(28) + 바닥 카피(197) + 여유(32).
+ * 창이 낮아지면 카드도 같이 줄어들어 잘리지 않는다(1440×700 에서도 무대 안에 든다).
+ */
+@media (min-width: 768px) {
+  .page {
+    --ath-card-w: min(46vw, calc((100svh - var(--ath-bar) - 300px) * 0.75));
   }
 }
 
@@ -120,14 +159,22 @@
 
 /*
  * 아홉 장이 서로 다른 날·다른 폰·다른 빛에서 왔다. 한 화보로 묶되 피부색은 건드리지 않는다 —
- * 채도만 반 걸음 내리고 대비를 아주 조금 올린다. 색상 회전(sepia/hue-rotate)은 쓰지 않는다.
+ * 채도만 반 걸음 내리고 대비는 거의 손대지 않는다. 색상 회전(sepia/hue-rotate)은 쓰지 않는다.
+ *
+ * contrast 는 1.05 였다. 검은 옷·그늘이 뭉개지는 쪽이라 1.01 로 내렸다.
+ * 따뜻함은 필터가 아니라 배경(#fdfcfa)과 여백이 만든다 — 여기서 색을 밀면 피부색이 눌어붙는다.
+ * 일곱 장에 같은 값을 준다. 한 시리즈로 읽히는 게 장당 최적값보다 중요하다.
  */
 .photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: var(--focus, 50% 42%);
-  filter: saturate(0.94) contrast(1.05);
+  /*
+   * 기본값은 여덟 장 공통. 편차가 큰 컷만 데이터에서 --tone 으로 덮는다
+   * (saturday-athletes.ts 의 tone 필드) — 개별 최적화가 아니라 한 시리즈로 모으는 용도다.
+   */
+  filter: var(--tone, saturate(0.9) contrast(1.04) brightness(0.99));
 }
 
 /* ── 상단 바 ─────────────────────────────────────────────── */
@@ -187,15 +234,20 @@
  * 스티키 트랙은 JS 가 켠다(data-motion="on"). 기본 HTML 은 그리드 한 화면이다 —
  * JS 가 오기 전에도, 모션 감소에서도, 일곱 명이 그대로 보인다.
  *
- * 400svh. 무대가 100svh 를 쓰므로 실제로 붙어 있는 구간은 앞쪽 70% 남짓이고,
+ * 800svh. 무대가 100svh 를 쓰므로 실제로 붙어 있는 구간은 앞쪽 87% 남짓이고,
  * 등장·정지·그리드가 전부 그 안에서 끝나야 한다(use-deck-scroll.ts 주석 참조).
+ *
+ * 400 → 480 → 540 → 800 으로 늘려 왔다. 마지막 확장(2026-08-30)의 이유는
+ * '한 번 튕기면 두세 명이 지나간다' 였다 — 카드 한 장당 스크롤이 168~291px 이라
+ * 폰 관성(1000px 이상)에 여러 장이 통째로 실려 갔다. 한 장당 약 400px 로 벌리고
+ * ScrollTrigger 스냅을 함께 건다.
  */
 .track {
   position: relative;
 }
 
 .track[data-motion='on'] {
-  height: 400svh;
+  height: 800svh;
 }
 
 .stage {
@@ -250,14 +302,27 @@
  *
  * 높이를 고정한다 — 오프닝 카피(3줄)가 가장 크므로 그 기준으로 잡아 두면
  * 국면이 바뀔 때마다 이 박스 위 deck 의 높이가 흔들려 카드 위치가 튀는 일이 없다.
+ *
+ * 글은 위(사진 쪽)에 붙인다. flex-end 였을 때는 이름·문장이 이 박스 바닥까지 내려가
+ * 사진과의 사이에 52px 의 빈칸이 하나 더 생겼다(실측 410×740).
  */
 .stageFoot {
   position: relative;
   z-index: 5;
-  min-height: clamp(64px, 17svh, 118px);
+  min-height: var(--ath-foot);
   background: var(--ath-bg);
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
+}
+
+/*
+ * 스택 국면에서만 오프닝 카피 높이로 고정한다 — 그래야 국면이 바뀌어도 위 무대가 흔들리지 않는다.
+ * 값은 오프닝 카피의 실제 구성에서 나온다:
+ *   제목 2줄(2.04em) + 제목 아래 여백(0.16em) = 2.2em, + 서브(약 25px) + 힌트(약 19px) + 갭 16px.
+ * 그리드 국면은 안내문 한 줄뿐이라 여기 해당하지 않는다(--ath-foot 을 그대로 쓴다).
+ */
+.track[data-phase='stack'] .stageFoot {
+  min-height: calc(2.2 * clamp(2rem, 10vw, 4.25rem) + 60px);
 }
 
 .stageFoot > * {
@@ -317,18 +382,33 @@
  * 스택에서 일곱 장의 이름표를 다 띄우면 같은 자리에 전부 겹친다.
  * 카드에서는 이름을 빼고, 지금 화면 맨 위에 있는 한 명의 이름·캐릭터 문장만 여기서 말한다.
  */
+/*
+ * 폭을 사진에 맞춘다. 이름은 왼쪽, 종목은 오른쪽 끝에 붙는 구조라 폭이 안 맞으면
+ * 사진 모서리와 글자 모서리가 어긋나 두 개의 다른 것으로 읽힌다.
+ *
+ * 폰에서는 사진이 화면 끝까지 흐르므로(--ath-card-w: 100vw) 이 max-width 는 걸리지 않고
+ * 무대 패딩 안쪽 폭이 그대로 쓰인다 — 글자까지 화면 끝에 붙이지는 않는다.
+ * 데스크톱에서는 변수가 사진 폭이라 예전처럼 축이 맞는다.
+ */
 .activeInfo {
   display: grid;
-  gap: 4px;
+  gap: 6px;
+  width: 100%;
+  max-width: var(--ath-card-w);
+  margin-inline: auto;
 }
 
+/*
+ * 크기를 올렸다(이름 16.8→22px, 문장 13.1→17px @390). 이 두 줄이 이 페이지의 본문인데
+ * 사진 밑에서 각주만 한 크기로 앉아 있었다 — 사진을 보고 나서 읽을 것이 여기밖에 없다.
+ */
 .activeName {
   display: flex;
   align-items: baseline;
   gap: 4px;
   font-family: var(--ath-kr);
   font-weight: 600;
-  font-size: clamp(1.05rem, 4.6vw, 1.4rem);
+  font-size: clamp(1.3rem, 5.8vw, 1.9rem);
   letter-spacing: -0.035em;
 }
 
@@ -345,7 +425,7 @@
 .activeRole {
   margin-left: auto;
   font-family: var(--ath-mono);
-  font-size: 10px;
+  font-size: 11px;
   letter-spacing: 0.14em;
   color: var(--ath-muted);
 }
@@ -353,8 +433,8 @@
 .activeLine {
   font-family: var(--ath-kr);
   font-weight: 500;
-  font-size: clamp(0.82rem, 3.2vw, 0.95rem);
-  line-height: 1.4;
+  font-size: clamp(1rem, 4.4vw, 1.35rem);
+  line-height: 1.45;
   color: var(--ath-muted);
   white-space: pre-line;
 }
@@ -369,12 +449,6 @@
   .track[data-phase='stack'] .introFoot {
     justify-items: center;
     text-align: center;
-  }
-
-  /* 이름 줄은 종목이 오른쪽 끝에 붙는 구조라 폭을 사진에 맞춰야 축이 선다 */
-  .track[data-phase='stack'] .activeInfo {
-    max-width: min(46vw, calc((100svh - var(--ath-bar) - 300px) * 0.75));
-    margin-inline: auto;
   }
 }
 
@@ -436,40 +510,91 @@
   left: 50%;
   top: 50%;
   translate: -50% -50%;
-  width: min(78vw, 340px);
+  width: var(--ath-card-w);
   margin: 0;
 }
 
 /*
- * 데스크톱에서 340px 고정이면 폰 레이아웃을 1440px 창 한가운데 놓은 것이 된다 —
- * 실측으로 뷰포트 면적의 12%만 쓰고 좌우로 550px씩 비었다(폰에서는 47%였다).
- * 폭이 아니라 '무대 높이'를 기준으로 잡는다. 사진이 3:4 라서 높이가 먼저 막히기 때문이다:
- * 폭 = 쓸 수 있는 높이 × 0.75. 빼는 300px 은 무대가 사진 말고 쓰는 것의 합이다 —
- * 카운터(15) + 갭(28) + 패딩(28) + 바닥 카피(197) + 여유(32).
- * 창이 낮아지면 카드도 같이 줄어들어 잘리지 않는다(1440×700 에서도 무대 안에 든다).
+ * 오프닝 사진 — 카드 일곱 장 뒤에 깔린다. 스택 카드와 같은 상자를 쓴다(같은 폭·3:4).
+ * 01번이 올라오면 정확히 덮이고, 되감으면 다시 드러난다.
  */
-@media (min-width: 768px) {
-  .deck[data-layout='stack'] .card {
-    width: min(46vw, calc((100svh - var(--ath-bar) - 300px) * 0.75));
-  }
+/*
+ * 무대 위쪽에 붙인다. 카드는 세로 가운데지만 카드 상자는 사진보다 7px 크다
+ * (숨은 이름 줄 자리 + gap). 인트로도 가운데로 두면 사진이 3px 어긋나
+ * 01번이 덮이는 순간 살짝 미끄러진다.
+ */
+.introCard {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  translate: -50% 0;
+  z-index: 0;
+  display: block;
+  width: var(--ath-card-w);
+  aspect-ratio: 3 / 4;
+  overflow: hidden;
+  background: var(--ath-cream);
+  pointer-events: none;
+}
+
+/* 격자에서는 지운다 — 남겨두면 여덟 번째 칸을 차지한다 */
+.deck[data-layout='grid'] .introCard {
+  display: none;
+}
+
+/*
+ * 스택 국면의 무대는 사진 높이만 쓰고, 남는 세로 공간을 위로 넘긴 뒤 아래에 붙는다.
+ *
+ * 그 전에는 무대가 1fr 로 남은 공간을 전부 먹고 사진이 그 한가운데 떠 있었다.
+ * 그래서 사진 아래에 무대 여백이 그대로 남았고, 이름·문장은 그 아래 또 한 칸 건너에서
+ * 시작했다 — 실측(410×740): 사진 하단 525 → 이름 상단 660, **135px**.
+ * 사진과 그 사람 이야기는 한 덩어리로 읽혀야 하는데 두 개의 다른 것으로 보였다.
+ *
+ * 높이는 카드에서 곧바로 나온다: 폭 × 4/3(사진 비율) + 7px(카드 안 gap).
+ */
+.track[data-phase='stack'] .deck {
+  height: calc(var(--ath-card-w) * 4 / 3 + 7px);
+  align-self: end;
+  /*
+   * 무대의 좌우 패딩 밖으로 흘려보낸다 — 사진만 화면 끝까지 가고, 그 아래 이름·문장은
+   * 패딩 안에 그대로 남는다. .page 의 overflow-x: clip 이 가로 스크롤을 막는다.
+   */
+  width: var(--ath-card-w);
+  margin-inline: calc(-1 * var(--ath-pad));
 }
 
 /*
  * 그리드 — 카피가 장면의 결론이므로 가운데 행을 통째로 내주고, 사진이 그 위아래를 감싼다.
- * 열과 행을 둘 다 명시한다. auto 트랙은 max-content 로 커져 화면을 뚫고,
- * auto 행은 무대가 눌러 줄이는데 사진은 안 줄어들어 이름이 사진 뒤로 사라진다.
  *
  *   모바일 3열 3행       데스크톱 5열 2행
  *   01 02 03             01 02 03 04 05
  *   [ COPY ] 04          06 [ COPY ] 07
  *   05 06 07
+ *
+ * 행을 1fr 로 잡던 것을 min-content 로 바꾼다.
+ *
+ * 1fr 은 무대 높이를 3등분해 셀에 나눠 주는데, 그 높이는 사진 비율과 아무 상관이 없다.
+ * 그래서 셀이 사진(3:4)보다 홀쭉해졌고 object-fit:cover 가 좌우를 잘라냈다 —
+ * 실측: 360 에서 13.7%, 390 에서 11.9%, 430 에서 13.6%. 몸통 옆이 통째로 날아간다.
+ * 행을 사진에 맞추면 격자 전체가 무대보다 짧아지므로 align-content 로 가운데 세운다
+ * (390×844 기준 격자 526px / 무대 586px).
  */
 .deck[data-layout='grid'] {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-template-rows: repeat(3, min-content);
+  align-content: center;
   gap: 10px;
   height: 100%;
+  /*
+   * 창이 낮으면 3:4 격자가 무대보다 길어져 무대(overflow:hidden) 아래로 잘려 나간다.
+   * 그때는 폭을 줄여 격자 전체를 함께 낮춘다 — 격자 높이 = 4×셀폭 + 86 이므로
+   * 셀폭 = (쓸 수 있는 높이 - 86) / 4, 격자폭 = 3×셀폭 + 20.
+   * 86 대신 94 를 빼는 건 이름 줄이 vw 로 커지기 때문이다(430 에서 16.8px) — 슬랙 8px.
+   * 폰 세로(360~430×800~932)에서는 100% 가 이겨서 아무 일도 일어나지 않는다.
+   */
+  max-width: min(100%, calc((var(--ath-deck-h) - 94px) * 0.75 + 20px));
+  margin-inline: auto;
 }
 
 .deck[data-layout='grid'] .card {
@@ -477,13 +602,6 @@
   min-width: 0;
   min-height: 0;
   translate: none;
-  grid-template-rows: minmax(0, 1fr) auto;
-}
-
-.deck[data-layout='grid'] .cardMedia {
-  aspect-ratio: auto;
-  height: 100%;
-  min-height: 0;
 }
 
 .deck[data-layout='grid'] .card:nth-of-type(1) { grid-area: 1 / 1; }
@@ -497,10 +615,10 @@
 @media (min-width: 768px) {
   .deck[data-layout='grid'] {
     grid-template-columns: repeat(5, minmax(0, 1fr));
-    grid-template-rows: repeat(2, minmax(0, 1fr));
+    grid-template-rows: repeat(2, min-content);
     gap: 16px;
-    max-width: 1200px;
-    margin: 0 auto;
+    /* 5열 2행: 격자 높이 = 2.667×셀폭 + 68(+슬랙 12). 위 3열 식의 데스크톱 판이다 */
+    max-width: min(1200px, calc((var(--ath-deck-h) - 80px) * 1.875 + 64px));
   }
 
   .deck[data-layout='grid'] .card:nth-of-type(1) { grid-area: 1 / 1; }
@@ -520,12 +638,21 @@
   grid-area: 2 / 1 / 3 / 3;
   display: flex;
   flex-direction: column;
+  position: relative;
   justify-content: center;
   gap: 8px;
   min-width: 0;
+  min-height: 0;
   padding: 0 14px;
   background: var(--ath-cream);
   opacity: 0;
+  /*
+   * 행 높이를 사진이 정하게 한다. 안의 제목을 absolute 로 띄우면 이 칸의 min-content
+   * 높이가 0 이 되어, 글자 수·줄바꿈이 격자의 가운데 행을 밀어 올릴 수 없다.
+   * 그 전에는 낮은 화면에서 카피가 좁아져 네 줄로 접혔고, 그 줄 수만큼 격자가
+   * 무대를 뚫었다(실측 390×520: 행2 141px, 격자 352 vs 무대 314).
+   */
+  overflow: hidden;
 }
 
 @media (min-width: 768px) {
@@ -562,9 +689,13 @@
  * 이제 h1 이 둘을 함께 안는다. 보이는 모양은 그대로고, 문서에는 제목이 생긴다.
  */
 .gridCopyHeading {
+  /* inset 은 패딩 박스 기준이라 .gridCopy 의 좌우 14px 여백은 그대로 지켜진다 */
+  position: absolute;
+  inset: 0;
   margin: 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 8px;
   font: inherit;
 }
@@ -583,14 +714,29 @@
   color: var(--ath-signal);
 }
 
+/*
+ * 폭만 보고 크기를 정하면 낮은 화면에서 이 두 줄이 격자의 가운데 행을 밀어 올린다 —
+ * 사진 셀은 높이에 맞춰 줄어드는데 글자는 안 줄어서 격자 전체가 무대를 넘겼다
+ * (실측 390×520: 행2 가 141px, 격자 352px vs 무대 314px). 높이도 같이 본다.
+ */
 .gridCopyLine {
   margin: 0;
   font-family: var(--ath-kr);
   font-weight: 700;
-  font-size: clamp(1.25rem, 6.4vw, 2.4rem);
+  font-size: clamp(1.05rem, min(6.4vw, 4.2svh), 2.4rem);
   line-height: 1.18;
   letter-spacing: -0.045em;
   white-space: pre-line;
+}
+
+/*
+ * 카피 칸이 이제 격자를 밀지는 못하지만(위 overflow), 대신 넘치면 잘린다.
+ * 낮은 화면에서는 칸도 좁아져 두 줄이 서너 줄로 접히므로 한 단계 더 줄인다.
+ */
+@media (max-height: 640px) {
+  .gridCopyLine {
+    font-size: clamp(0.95rem, 3.4svh, 1.5rem);
+  }
 }
 
 /* ── 카드 ────────────────────────────────────────────────── */
@@ -730,10 +876,14 @@
 
 /* ── 5. 마무리 ───────────────────────────────────────────── */
 
+/*
+ * 위 여백을 64 → 32 로 줄였다. 스티키 무대가 풀리는 자리라 무대 바닥 여백과 이 패딩이
+ * 그대로 더해져 두 장면 사이가 벌어져 보였다 — 여백은 무대 쪽이 이미 내고 있다.
+ */
 .closing {
   display: grid;
   gap: 14px;
-  padding: 64px var(--ath-pad) calc(56px + env(safe-area-inset-bottom));
+  padding: 32px var(--ath-pad) calc(56px + env(safe-area-inset-bottom));
 }
 
 /*
@@ -747,7 +897,12 @@
     text-align: center;
   }
 
-  /* 구분선은 화면을 가로지르고, 링크만 가운데 모인다 */
+  /* 구분선은 화면을 가로지르고, 글과 링크만 가운데 모인다 */
+  .closingEnd {
+    width: 100%;
+    justify-items: center;
+  }
+
   .closingLinks {
     width: 100%;
     justify-content: center;
@@ -780,7 +935,7 @@
   white-space: nowrap;
 }
 
-/* 이 섹션의 <h2>. 문서 아웃라인에서 마지막 장면을 부르는 이름이다 */
+/* 대회명. <h2> 였다가 <p> 가 됐다 — 이 섹션의 이름은 이제 '소개는 여기까지.' 다 */
 .closingRace {
   margin: 0;
   font-family: var(--ath-kr);
@@ -794,20 +949,76 @@
   color: var(--ath-muted);
 }
 
-.closingLinks {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 20px;
-  margin-top: 8px;
-  padding-top: 12px;
+/*
+ * 마침표. 대회 블록과 사이에 선을 하나 긋는다 — 위는 '어디로 가는가', 아래는 '여기서 끝난다'.
+ */
+.closingEnd {
+  display: grid;
+  gap: 10px;
+  justify-items: start;
+  margin-top: 20px;
+  padding-top: 22px;
   border-top: 1px solid var(--ath-line);
 }
 
 /*
- * 예전엔 링크 두 개가 크기·굵기·밑줄까지 똑같아 무엇이 다음 걸음인지 알 수 없었다.
- * 이 페이지를 끝까지 본 사람이 가장 하고 싶은 일은 '이 대회가 뭔데'다 — 그것만 신호색으로 든다.
- * 상자를 만들지 않는다. 이 페이지에는 버튼이 하나도 없고, 그 평평함이 이 페이지의 성격이다.
+ * 날짜(.closingDate)보다 작게 둔다. 이 페이지에서 가장 큰 글자는 오프닝 제목이고,
+ * 마침표가 그보다 커지면 소개가 아니라 안내판이 주인공이 된다.
  */
+.closingEndTitle {
+  margin: 0;
+  font-family: var(--ath-serif);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 7.4vw, 2.6rem);
+  line-height: 1.1;
+  letter-spacing: -0.035em;
+}
+
+.closingEndBody {
+  margin: 0;
+  font-family: var(--ath-kr);
+  font-weight: 500;
+  font-size: clamp(0.95rem, 3.9vw, 1.15rem);
+  line-height: 1.6;
+  letter-spacing: -0.02em;
+  color: var(--ath-muted);
+  white-space: pre-line;
+}
+
+/*
+ * 이 페이지의 유일한 CTA. 상자를 만들지 않는다 — 이 페이지엔 버튼이 하나도 없고
+ * 그 평평함이 성격이다. 대신 밑줄을 두껍게(2px 신호색) 해서 나머지 링크와 갈라놓는다.
+ */
+.closingCta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 2px;
+  font-family: var(--ath-kr);
+  font-weight: 600;
+  font-size: clamp(1rem, 4.2vw, 1.2rem);
+  letter-spacing: -0.02em;
+  color: var(--ath-signal);
+  text-decoration: none;
+  border-bottom: 2px solid var(--ath-signal);
+}
+
+.closingCta:hover {
+  color: var(--ath-fg);
+  border-bottom-color: var(--ath-fg);
+}
+
+/*
+ * CTA 아래의 두 갈래. 이 페이지엔 푸터도 내비도 없어서 이것마저 없으면 막다른 길이 된다.
+ * CTA 와 경쟁하지 않도록 작은 모노 회색으로만 남긴다.
+ */
+.closingLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 20px;
+  margin-top: 18px;
+}
+
 .closingLinks a {
   display: inline-flex;
   align-items: center;
@@ -823,11 +1034,6 @@
 .closingLinks a:hover {
   color: var(--ath-fg);
   border-bottom-color: var(--ath-fg);
-}
-
-.closingLinks a.closingPrimary {
-  color: var(--ath-signal);
-  border-bottom: 2px solid var(--ath-signal);
 }
 
 /* ── 개인 프로필 ─────────────────────────────────────────── */
@@ -884,11 +1090,28 @@
   padding: 0 var(--ath-pad);
 }
 
+/*
+ * 사진 원본은 일곱 장 전부 860×1147 = 정확히 3:4 다. 여기서만 높이를 41svh 로 못 박고
+ * 있어서 상자가 거의 정사각이 됐고, object-fit:cover 가 아래를 잘라냈다 —
+ * 실측: 360 에서 23.2%, 390 에서 25.8%, 430 에서 26.5%. object-position 의 Y 가
+ * 대부분 18~20% 라 머리는 남고 다리가 사라졌다. 상자를 사진에 맞추면 잘림이 0 이 된다.
+ *
+ * 본문이 조금 밀려 내려가지만 .profileScroll 이 스크롤을 받는다(실측 오버플로 25px 안팎).
+ */
 .profileMedia {
   position: relative;
   overflow: hidden;
   background: var(--ath-cream);
-  height: clamp(200px, 41svh, 460px);
+  aspect-ratio: 3 / 4;
+  /*
+   * 높이를 화면에 묶는다. 폭만 100% 로 두면 데스크톱에서 사진이 1344×1792 가 되어
+   * 한 장이 화면 두 개를 차지했고, 이름과 캐릭터 문장은 스크롤해야 보였다
+   * (실측 1440×900: 스크롤 넘침 1288px). 3:4 를 지켜야 하므로 높이가 아니라
+   * 폭에 상한을 건다 — 62svh 높이에 해당하는 폭이다.
+   * 폰에서는 이 상한이 화면 폭보다 커서 걸리지 않는다(390 기준 392px vs 350px).
+   */
+  max-width: calc(62svh * 0.75);
+  margin-inline: auto;
 }
 
 /* 잡지 사진 크레딧처럼 사진 바로 아래 한 줄. 사진 위에 얹으면 밝은 컷에서 읽히지 않는다 */
@@ -974,10 +1197,6 @@
   display: grid;
   gap: 3px;
   min-width: 0;
-}
-
-.factWide {
-  grid-column: 1 / -1;
 }
 
 .profileFacts dt {
@@ -1068,6 +1287,247 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* ══ 데스크톱(≥1024px) — 사진과 글이 마주 보는 2열 무대 ══════════ */
+
+/*
+ * 여기까지는 폰 레이아웃을 넓은 창 한가운데 놓은 것이었다. 실측(1440×900):
+ * 사진이 창 왼쪽 30% 안에서 415px 로 서 있고, 제목은 그 아래에 있어 둘이 한 구도로
+ * 읽히지 않았으며, 오른쪽 절반 이상이 목적 없이 비어 있었다.
+ *
+ * 모바일은 한 글자도 건드리지 않는다. 아래 규칙은 전부 ≥1024 안에서만 산다.
+ * DOM 도 늘리지 않는다 — 같은 노드를 CSS 로 다시 앉힐 뿐이다.
+ *
+ * 세 가지 결정이 이 블록 전체를 지배한다.
+ *
+ * 1) 레일이 하나다. 상단 바·무대·마지막 장면이 같은 max-width 안에 선다.
+ *    바만 창 양 끝에 붙어 있으면 정렬 기준이 둘이 되고, 그게 '작게 떨어져 있다'의 정체였다.
+ *
+ * 2) 사진 폭은 두 상한의 작은 쪽이다 — 단의 48% 와 '무대 높이에서 역산한 폭'.
+ *    사진이 3:4 라서 낮은 창에서는 높이가 먼저 막힌다. 폭만 보고 정하면 잘리거나 넘친다.
+ *    (실측 결과 1024~1920 전 구간에서 사진 43~44% / 글 47~49% 로 떨어진다)
+ *
+ * 3) 카운터(01/07)는 두 국면에서 같은 자리에 있는다 — 무대 맨 위 왼쪽.
+ *    스택에서만 오른쪽 단으로 올렸다가 그리드에서 왼쪽 위로 돌리면, 카드가 Flip 으로
+ *    미끄러지는 바로 그 프레임에 숫자만 순간이동한다. 움직이는 건 카드뿐이어야 한다.
+ */
+@media (min-width: 1024px) {
+  .page {
+    /* 무대 안쪽(패딩 제외) 실폭. 아래 열 계산이 전부 이 값에서 나온다 */
+    --ath-shell: min(1360px, calc(100vw - 2 * var(--ath-pad)));
+    --ath-gutter: clamp(48px, 7vw, 120px);
+    /*
+     * 76px = 무대가 사진 말고 쓰는 것의 합(패딩 28 + 카운터 줄 15 + 행간 14) + 슬랙 19.
+     * 카드 상자는 사진보다 7px 크므로(안쪽 gap) 슬랙을 그만큼 더 잡아 둔다.
+     */
+    --ath-card-w: min(
+      calc((var(--ath-shell) - var(--ath-gutter)) * 0.48),
+      calc((100svh - var(--ath-bar) - 76px) * 0.75)
+    );
+  }
+
+  /* 하나의 레일. 셋 다 같은 좌우 기준선을 쓴다 */
+  .topBar,
+  .stage,
+  .closing,
+  .profileBar,
+  .profileScroll,
+  .profileNav {
+    width: 100%;
+    max-width: calc(1360px + 2 * var(--ath-pad));
+    margin-inline: auto;
+  }
+
+  /* ── 장면 1·2 — 왼쪽 사진 / 오른쪽 글 ────────────────────── */
+
+  /*
+   * 카운터는 두 단을 가로질러 맨 윗줄에 남는다(위 결정 3). 그 아래에서만 단이 갈린다.
+   */
+  .track[data-phase='stack'] .stage {
+    grid-template-columns: var(--ath-card-w) minmax(0, 1fr);
+    grid-template-rows: auto minmax(0, 1fr);
+    grid-template-areas:
+      'label label'
+      'deck  foot';
+    column-gap: var(--ath-gutter);
+    row-gap: 14px;
+  }
+
+  .track[data-phase='stack'] .stageLabel {
+    grid-area: label;
+  }
+
+  .track[data-phase='stack'] .deck {
+    grid-area: deck;
+    /* 폰에서는 사진을 화면 끝까지 흘려보냈다(풀블리드). 여기서는 단 안에 든다 */
+    margin-inline: 0;
+    align-self: center;
+    justify-self: start;
+  }
+
+  /*
+   * 글이 앉는 단. 폰에서는 이 박스에 오프닝 카피 높이를 못 박아 뒀는데(카드가 그 위에
+   * 얹혀 있어서 높이가 흔들리면 사진이 튄다), 여기서는 사진이 옆 단이라 그 이유가 없다.
+   * 대신 세로 가운데에 세워 사진과 마주 보게 한다.
+   */
+  .track[data-phase='stack'] .stageFoot {
+    grid-area: foot;
+    min-height: 0;
+    align-items: center;
+  }
+
+  /* 사진이 옆 단으로 갔으므로 가운데 정렬(768~1023 용)을 되돌린다 */
+  .track[data-phase='stack'] .introFoot {
+    justify-items: start;
+    text-align: left;
+    gap: 12px;
+  }
+
+  .introFootHint {
+    margin-top: 6px;
+  }
+
+  /*
+   * 선수 이름·문장. 폰에서는 사진 폭에 맞춰 잘라 뒀는데 여기서는 사진이 옆 단이라
+   * 그 상한이 오히려 글을 좁힌다.
+   *
+   * 종목 라벨을 오른쪽 끝(margin-left:auto)에서 이름 옆으로 데려온다 — 660px 단에서
+   * 끝까지 밀면 이름과 600px 떨어져 둘이 한 줄로 읽히지 않는다.
+   */
+  .activeInfo {
+    max-width: none;
+    margin-inline: 0;
+    gap: 14px;
+  }
+
+  .activeName {
+    font-size: clamp(2rem, 3.2vw, 3rem);
+  }
+
+  .activeRole {
+    margin-left: 16px;
+  }
+
+  .activeLine {
+    font-size: clamp(1.15rem, 1.7vw, 1.6rem);
+    line-height: 1.5;
+  }
+
+  /* ── 장면 3 — 팀 그리드는 그대로 둔다 ─────────────────────
+   * 여기가 지금 데스크톱에서 가장 잘 나오는 구간이다. 레일만 공유하고
+   * 격자 자체(5열 2행·max-width 1200·가운데 정렬)는 손대지 않는다.
+   */
+
+  /* ── 장면 5 — 대회 정보와 마침표를 한 화면에 ─────────────── */
+
+  /*
+   * 세로로 늘어놓으면 '11 / 15' 와 '소개는 여기까지.' 사이가 화면 하나만큼 벌어져
+   * 서로 다른 두 섹션으로 읽혔다. 왼쪽은 어디로 가는가, 오른쪽은 여기서 끝난다 —
+   * 나란히 놓아야 한 장면이다.
+   */
+  /*
+   * 왼쪽 단을 사진 단과 같은 폭(--ath-card-w)으로 잡는다. 그러면 대회 정보의 왼쪽 끝과
+   * 마침표의 왼쪽 끝이 앞 장면들의 사진·글 기준선을 그대로 물려받아, 마지막 화면이
+   * 별도의 페이지가 아니라 같은 무대의 마지막 칸으로 읽힌다.
+   *
+   * 높이는 100svh 로 잡았다가 되돌렸다 — 내용이 220px 인데 화면을 채우게 하면
+   * 위아래로 330px 씩(실측 1440×900) 흰 판이 생겨 '엔딩'이 아니라 '빈 화면'이 됐다.
+   * 여백은 화면이 아니라 패딩이 낸다.
+   */
+  .closing {
+    grid-template-columns: var(--ath-card-w) minmax(0, 1fr);
+    grid-template-areas:
+      'label end'
+      'date  end'
+      'race  end'
+      'links end';
+    column-gap: var(--ath-gutter);
+    row-gap: 12px;
+    align-content: center;
+    justify-items: start;
+    text-align: left;
+    padding-block: clamp(72px, 12svh, 150px);
+  }
+
+  .closingLabel {
+    grid-area: label;
+  }
+  .closingDate {
+    grid-area: date;
+  }
+  .closingRace {
+    grid-area: race;
+  }
+  .closingLinks {
+    grid-area: links;
+    width: auto;
+    justify-content: flex-start;
+    /* 폰에서는 20px 이면 갈라져 보이는데 여기서는 두 링크가 한 덩어리로 붙어 읽혔다 */
+    gap: 0 32px;
+    margin-top: 8px;
+  }
+
+  /*
+   * 가로 구분선을 걷는다. 두 블록이 이미 좌우로 갈려 있는데 선까지 그으면
+   * '한 장면 안의 두 단' 이 아니라 '위아래 두 섹션' 으로 되돌아간다.
+   */
+  .closingEnd {
+    grid-area: end;
+    align-self: center;
+    width: auto;
+    justify-items: start;
+    gap: 16px;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: 0;
+  }
+
+  .closingEndTitle {
+    font-size: clamp(2.2rem, 3.4vw, 3.2rem);
+  }
+
+  .closingEndBody {
+    font-size: clamp(1.05rem, 1.35vw, 1.3rem);
+  }
+
+  /* ── 장면 4 — 개인 프로필도 같은 2열 ────────────────────── */
+
+  /*
+   * 폭만 100% 로 두면 사진이 화면 두 개를 차지하고, 3:4 를 지키려고 폭에만 상한을
+   * 걸면(62svh × 0.75) 이번엔 넓은 창에서 사진이 왼쪽에 작게 남는다.
+   * 단을 나누고, 그 단 안에서 다시 높이로 상한을 건다.
+   */
+  .profileScroll {
+    display: grid;
+    grid-template-columns: minmax(0, 46%) minmax(0, 1fr);
+    column-gap: var(--ath-gutter);
+    align-items: center;
+    align-content: center;
+  }
+
+  .profileMedia {
+    /* 140px = 상단 바 + 하단 이동 바 + 위아래 여유 */
+    max-width: min(100%, calc((100svh - var(--ath-bar) - 140px) * 0.75));
+    margin-inline: 0;
+  }
+
+  .profileBody {
+    gap: 14px;
+    padding: 0;
+  }
+
+  .profileLine {
+    font-size: clamp(1.4rem, 2vw, 1.9rem);
+  }
+
+  .profileFacts {
+    padding-top: 16px;
+  }
+
+  .profileFacts dd {
+    font-size: 14px;
   }
 }
 

@@ -16,8 +16,15 @@ import styles from '@/app/(challenge)/saturday/athletes/athletes.module.css';
 
 type DeckProps = {
   athletes: AthleteView[];
+  /** 아무도 아직 소개되지 않은 첫 화면의 사진. 일곱 장이 그 위로 올라온다 */
+  intro: {
+    photo: string;
+    photoAlt: string;
+    objectPosition?: string;
+    tone?: string;
+  };
   copy: {
-    /** 오프닝 카피 — 01번(재춘)만 도착해 있는 첫 화면에서만 보인다 */
+    /** 오프닝 카피 — 아직 아무 카드도 올라오지 않은 첫 화면에서만 보인다 */
     eyebrow: string;
     titleLead: string;
     titleTail: string;
@@ -30,14 +37,13 @@ type DeckProps = {
     /** 본인 사진이 아직 없는 카드에 직접 붙는 표기. 그 카드에만 뜬다 */
     photoPendingBadge: string;
     statsPending: string;
-    statsPendingNote: string;
   };
 };
 
 // 열림 전환이 끝나지 않아도 화면이 잠기지 않게 하는 상한. 실제 트윈은 420ms다
 const CLOSE_FALLBACK_MS = 700;
 
-export function AthleteDeck({ athletes, copy }: DeckProps) {
+export function AthleteDeck({ athletes, intro, copy }: DeckProps) {
   const trackRef = useRef<HTMLElement>(null);
   const deckRef = useRef<HTMLDivElement>(null);
   const cardsRef = useRef<(HTMLButtonElement | null)[]>([]);
@@ -51,7 +57,7 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
 
   const [selected, setSelected] = useState<number | null>(null);
   const [closing, setClosing] = useState(false);
-  /** 스택에서 지금 맨 위에 있는 선수. 01번(재춘)만 있으면 -1 — 그동안은 오프닝 카피가 대신 보인다 */
+  /** 스택에서 지금 맨 위에 있는 선수. 아직 아무도 안 올라왔으면 -1 — 그동안은 오프닝 카피가 보인다 */
   const [active, setActive] = useState(-1);
   /** JS·모션이 없으면 기본값 그대로 'grid' — 일곱 명이 항상 보인다 */
   const [phase, setPhase] = useState<'stack' | 'grid'>('grid');
@@ -72,9 +78,9 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
   const total = athletes.length;
   const activeAthlete = active >= 0 ? athletes[active] : null;
 
-  // 오프닝 카피(01번만 도착) → 카드별 이름·캐릭터 문장(02~07번 도착) → 그리드 안내문
-  const showIntro = phase === 'stack' && active < 1;
-  const showActiveInfo = phase === 'stack' && active >= 1;
+  // 오프닝 카피(아직 아무도 안 올라옴) → 카드별 이름·캐릭터 문장(01~07번 도착) → 그리드 안내문
+  const showIntro = phase === 'stack' && active < 0;
+  const showActiveInfo = phase === 'stack' && active >= 0;
   const showGridHint = phase === 'grid';
 
   // 지금까지 도착한 카드 / 전체. 그리드로 펼쳐지는 순간 07/07 에서 딱 멈춰 고조감의 정점을 찍는다
@@ -246,6 +252,31 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
             data-layout="grid"
             onFocus={skipStackOnFocus}
           >
+            {/*
+              오프닝 사진. 카드 일곱 장 뒤(z-index 0)에 깔려 있다가 01번이 올라오면 덮인다.
+              그리드에서는 CSS 가 지운다 — 여덟 번째 칸을 차지하면 안 된다.
+              이 페이지의 첫 화면이므로 LCP 요소도 여기다.
+            */}
+            <span
+              className={styles.introCard}
+              style={
+                {
+                  '--focus': intro.objectPosition,
+                  '--tone': intro.tone,
+                } as CSSProperties
+              }
+            >
+              <img
+                className={styles.photo}
+                src={`/images/challenge/saturday/${intro.photo}.webp`}
+                alt={intro.photoAlt}
+                width={1200}
+                height={1600}
+                decoding="async"
+                fetchPriority="high"
+              />
+            </span>
+
             {athletes.map((athlete, index) => (
               <button
                 type="button"
@@ -264,7 +295,12 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
                 <span
                   className={styles.cardMedia}
                   data-media
-                  style={{ '--focus': athlete.objectPosition } as CSSProperties}
+                  style={
+                    {
+                      '--focus': athlete.objectPosition,
+                      '--tone': athlete.tone,
+                    } as CSSProperties
+                  }
                 >
                   <img
                     className={styles.photo}
@@ -273,9 +309,6 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
                     width={860}
                     height={1147}
                     decoding="async"
-                    /* 01번은 첫 화면에 이미 도착해 있는 카드다 — 이 페이지의 LCP 요소라
-                       나머지 여섯 장과 같은 순번으로 받으면 늦는다 */
-                    fetchPriority={index === 0 ? 'high' : undefined}
                   />
                   <span className={styles.cardIndex} aria-hidden="true">
                     {String(athlete.index).padStart(2, '0')}
@@ -289,7 +322,7 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
                     </span>
                   )}
                 </span>
-                <span className={styles.cardMeta}>
+                <span className={styles.cardMeta} data-meta>
                   <span className={styles.cardName}>{athlete.name}</span>
                   <span className={styles.cardRole}>{athlete.role}</span>
                 </span>
@@ -352,7 +385,6 @@ export function AthleteDeck({ athletes, copy }: DeckProps) {
           mediaRef={profileMediaRef}
           photoNotice={copy.photoNotice}
           statsPending={copy.statsPending}
-          statsPendingNote={copy.statsPendingNote}
           onPrev={() => setSelected((index) => Math.max(0, (index ?? 0) - 1))}
           onNext={() =>
             setSelected((index) => Math.min(total - 1, (index ?? 0) + 1))

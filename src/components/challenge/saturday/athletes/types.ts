@@ -17,12 +17,17 @@ export type AthleteView = {
   distanceLabel: string;
   characterLine: string;
   knownFor?: string;
-  /** 실측이 생기기 전까지 undefined. 화면은 '측정 전'을 명시한다 */
-  runningType?: string;
+  /*
+   * runningType 은 뷰 모델에서 뺐다(2026-08-29). 일곱 명 전원이 실측 전이라
+   * 화면에는 '측정 전'만 반복해 나왔다. 데이터 필드(types/challenge.ts)는 남아 있으니
+   * 실측이 생기면 여기에 다시 얹으면 된다.
+   */
   /** `athletes/jaechun` 처럼 하위 디렉토리를 포함한다 */
   photoSrc: string;
   photoAlt: string;
   objectPosition?: string;
+  /** 여덟 장을 한 화보로 묶는 색보정. 없으면 .photo 의 공통 필터가 걸린다 */
+  tone?: string;
   /** 본인 사진이 아직 없어 크루 단체 사진을 놓은 상태. 화면이 이걸 밝힌다 */
   isPlaceholder?: boolean;
 };

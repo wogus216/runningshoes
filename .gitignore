@@ -72,3 +72,4 @@ public/sitemap*.xml
 
 # 쎄러데이 — 크루 원본 활동 내보내기 (GPS·심박 포함, 커밋 금지)
 /private/challenge/
+public/images/challenge/saturday/_inbox/

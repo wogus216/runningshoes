@@ -5,6 +5,7 @@ import { ClosingReveal } from '@/components/challenge/saturday/athletes/closing-
 import type { AthleteView } from '@/components/challenge/saturday/athletes/types';
 import {
   ATHLETES_COPY,
+  ATHLETES_INTRO,
   SATURDAY_ATHLETES,
 } from '@/lib/data/challenge/saturday-athletes';
 import { RACE_META, SATURDAY_CREW } from '@/lib/data/challenge/saturday';
@@ -57,10 +58,10 @@ function buildAthletes(): AthleteView[] {
       distanceLabel: distance.label,
       characterLine: athlete.characterLine,
       knownFor: athlete.knownFor,
-      runningType: athlete.runningType,
       photoSrc: athlete.photo,
       photoAlt: athlete.photoAlt,
       objectPosition: athlete.objectPosition,
+      tone: athlete.tone,
       isPlaceholder: athlete.isPlaceholder,
     };
   });
@@ -87,6 +88,7 @@ export default function SaturdayAthletesPage() {
         {/* 1~4. 카드 스택(첫 화면 자체가 히어로) → 등장 → 스티키 그리드 → 개인 프로필 */}
         <AthleteDeck
           athletes={athletes}
+          intro={ATHLETES_INTRO}
           copy={{
             eyebrow: ATHLETES_COPY.eyebrow,
             titleLead: ATHLETES_COPY.titleLead,
@@ -100,7 +102,6 @@ export default function SaturdayAthletesPage() {
             // 카드에 직접 붙는다 — isPlaceholder 인 사람에게만 뜨고, 사진이 들어오면 저절로 사라진다
             photoPendingBadge: ATHLETES_COPY.photoPendingLabel,
             statsPending: ATHLETES_COPY.statsPending,
-            statsPendingNote: ATHLETES_COPY.statsPendingNote,
           }}
         />
 
@@ -110,6 +111,9 @@ export default function SaturdayAthletesPage() {
           name={RACE_META.name}
           dateLabel={RACE_META.dateLabel}
           marathonId={RACE_META.marathonId}
+          title={ATHLETES_COPY.closingTitle}
+          body={ATHLETES_COPY.closingBody}
+          cta={ATHLETES_COPY.closingCta}
         />
       </main>
     </div>

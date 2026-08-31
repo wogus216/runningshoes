@@ -88,6 +88,12 @@ export interface SaturdayAthlete {
   /** 사진마다 얼굴 위치가 달라 개별 조절한다. CSS object-position 값 */
   objectPosition?: string;
   /**
+   * 여덟 장을 한 화보로 묶기 위한 색보정. CSS filter 값 그대로이며 비파괴다
+   * (원본 파일은 건드리지 않는다). 공통값으로 충분한 사진은 비워 둔다 —
+   * 값이 없으면 athletes.module.css 의 .photo 기본 필터가 걸린다.
+   */
+  tone?: string;
+  /**
    * 본인 사진이 아니라 크루 단체 사진을 임시로 놓은 상태.
    * 화면이 이 사실을 숨기지 않는다 — 감추면 '이 사람 사진'으로 읽힌다.
    * 개인 사진을 받으면 photo 를 바꾸고 이 필드를 지운다.

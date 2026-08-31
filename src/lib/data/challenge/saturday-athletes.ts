@@ -34,6 +34,8 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
     photo: 'athletes/jaechun',
     photoAlt: '에펠탑을 등지고 선 러너',
     objectPosition: '47% 20%',
+    // 코랄 티셔츠가 포인트색(#a8391a)과 경합한다. 채도만 한 단계 더 깎아 두 번째 액센트가 되는 걸 막는다
+    tone: 'saturate(0.76) contrast(1.02) brightness(1)',
   },
   {
     memberId: 'm2',
@@ -48,10 +50,14 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
       '겨우 주 1회 뛰어줄까 말까잖아',
     ],
     knownFor: '먼저 걱정하는 사람',
-    photo: 'crew/summer-uphill',
-    photoAlt: '짙은 초록 숲을 끼고 언덕을 오르는 세 사람',
-    objectPosition: '50% 42%',
-    isPlaceholder: true,
+    // 2026-08-30 본인 사진 도착. 임시(crew/summer-uphill)를 걷어냈다
+    photo: 'athletes/gamja',
+    photoAlt: '흐린 하늘 아래 자전거도로에서 카메라를 보는 러너',
+    objectPosition: '50% 50%',
+    // 흐린 날이라 채도 0.117 로 세트 최저권. 여기서만 채도를 올리는 쪽으로 간다 —
+    // 1.6 부터 초록이 튀고 1.8 에서 하늘이 파래져 1.4 에서 멈췄다(실측 비교).
+    // 헤이즈는 대비로 잡되 1.06 이 상한이다 — 1.08 부터 온통 검은 옷이 뭉갠다(순검정 0.08%→1.36%)
+    tone: 'saturate(1.4) contrast(1.06) brightness(1)',
   },
   {
     memberId: 'm3',
@@ -68,10 +74,14 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
     photo: 'athletes/hyeongga',
     photoAlt: '2026 성남마라톤 기록판 앞에 선 러너',
     objectPosition: '52% 20%',
+    // 오렌지 현수막이 프레임 절반. 세트 유일의 강한 보정이다. contrast 는 1 고정 — 올리면 오렌지가 더 튄다
+    tone: 'saturate(0.56) contrast(1) brightness(0.95)',
   },
   {
     memberId: 'm4',
-    nameLatin: 'GITAE',
+    // 개정 로마자 표기는 Gitae 지만 KITAE 로 쓴다 (운영자 지정, 2026-08-29).
+    // 사진 파일명도 kitae.webp 로 함께 맞췄다
+    nameLatin: 'KITAE',
     // '풀 경험 제일 많으나 술로 인해 기록이 정체'(운영자). 둘 다 단톡에 없는 사실이라
     // source 에 운영자 확인으로 남긴다. 원칙 3 대로 기록에 숫자는 붙이지 않는다
     characterLine: '풀코스는 제일 많이 뛰어봤는데,\n기록은 술자리에 발목이 잡혀 있다.',
@@ -81,9 +91,11 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
       '운영자 확인 — 크루 중 풀코스 경험 최다, 음주로 기록 정체 (2026-08-28)',
     ],
     knownFor: '제일 많이 뛰어본 사람',
-    photo: 'athletes/gitae',
+    photo: 'athletes/kitae',
     photoAlt: '하천변 산책로에서 뛰어오르며 손을 흔드는 러너',
     objectPosition: '39% 32%',
+    // 검정이 아예 없는 유일한 사진(그림자 0.2%). 채도가 아니라 대비가 모자란 케이스라 반대로 조인다
+    tone: 'saturate(0.94) contrast(1.06) brightness(0.97)',
   },
   {
     memberId: 'm5',
@@ -97,10 +109,14 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
       '운영자 확인 — 수영 강사, 실외 종목에는 약함 (2026-08-28)',
     ],
     knownFor: '물에서 온 사람',
-    photo: 'crew/selfie-four',
-    photoAlt: '러닝 도중 네 사람이 모여 찍은 셀카',
-    objectPosition: '50% 35%',
-    isPlaceholder: true,
+    // 2026-08-30 본인 사진 도착. 임시(crew/selfie-four)를 걷어냈다
+    photo: 'athletes/jija',
+    photoAlt: '흐린 하늘 아래 자전거도로에 선 러너',
+    objectPosition: '50% 50%',
+    // 감자와 같은 날 같은 장소다. 짝으로 읽혀야 해서 값을 거의 붙였고,
+    // 대비 0.199 로 조금 더 납작하고 어두운 만큼 밝기만 더 준다.
+    // 대비 상한은 감자와 같은 1.06 (1.10 에서 순검정 0.68%)
+    tone: 'saturate(1.45) contrast(1.06) brightness(1.01)',
   },
   {
     memberId: 'm6',
@@ -134,15 +150,38 @@ export const SATURDAY_ATHLETES: SaturdayAthlete[] = [
     photo: 'athletes/gwangmuk',
     photoAlt: '시드니 트램 정류장 앞 신호등 옆에 선 러너',
     objectPosition: '50% 18%',
+    // 가장 어둡고(0.365) 가장 납작(0.171). 밝기로만 올린다 — contrast 를 같이 올리면 검정 재킷이 뭉갠다
+    tone: 'saturate(0.74) contrast(1) brightness(1.08)',
   },
 ];
+
+/*
+ * 오프닝 사진 — 아직 아무도 소개되지 않은 화면이다.
+ *
+ * 예전에는 01번(재춘) 카드가 여기 이미 놓여 있었고 02번부터 올라왔다. 그러면 재춘만
+ * '등장'을 못 하고 배경처럼 서 있게 된다. 이제 일곱 장이 전부 올라오고, 그 앞에는
+ * 개인이 아닌 크루 사진 한 장이 선다.
+ *
+ * 2026-08-30 운영자가 이 컷으로 지정했다. 유리에 비친 여섯 명 —
+ * 한 사람이 앞서지 않고 크루 전체가 한 프레임에 들어온다.
+ */
+export const ATHLETES_INTRO = {
+  photo: 'crew/glass-reflection',
+  photoAlt: '샤워장 유리문에 비친 크루 여섯 명',
+  objectPosition: '50% 50%',
+  // 유리 너머라 채도 0.087 로 여덟 장 중 최저. 1.9 부터 노란 점자블록이 과해져 1.6 에서 멈췄다.
+  // 대비는 이미 0.249 로 세트 최고라 거의 손대지 않는다
+  tone: 'saturate(1.6) contrast(1.02) brightness(0.98)',
+} as const;
 
 // 화면 문구. 페이지에 하드코딩하지 않는다.
 //
 // 오프닝과 그리드가 같은 두 줄(THE STARTING SEVEN / 일곱 명, 하나의 출발선.)을 쓴다.
 // 중복이 아니라 후렴이다 — 오프닝은 약속이고, 일곱 장이 펼쳐지는 순간이 그 약속의 결론이다.
 export const ATHLETES_COPY = {
-  eyebrow: 'SATURDAY ATHLETES · 01—07',
+  // `· 01—07` 을 뺐다. 진행 상태는 그 옆 카운터(01/07)가 실제로 세면서 말하고,
+  // 여기 붙은 같은 숫자는 세지 않는 장식이라 잡지 템플릿처럼 읽혔다.
+  eyebrow: 'SATURDAY ATHLETES',
   titleLead: 'THE STARTING',
   titleTail: 'SEVEN',
   sub: '일곱 명, 하나의 출발선.',
@@ -154,10 +193,18 @@ export const ATHLETES_COPY = {
   // 그룹 사진을 개인 자리에 놓았다는 사실을 화면에서 숨기지 않는다.
   // 감추면 '이 사람 사진'으로 읽히고, 그건 이 사이트가 하지 않기로 한 일이다.
   //
-  // 2026-08-27: 다섯 명(재춘·형가·기태·남길·광묵) 개인 사진 도착. 감자·지자만 남았다.
-  // 두 문구 다 isPlaceholder 인 사람에게만 붙고, 마지막 두 장이 들어오면 화면에서 저절로 사라진다.
+  // 2026-08-30: 감자·지자 사진이 들어와 **일곱 명 전원이 본인 사진**이 됐다.
+  // isPlaceholder 인 사람이 하나도 없으므로 아래 두 문구는 지금 화면에 뜨지 않는다.
+  // 지우지 않는 이유 — 새 크루원이 사진 없이 들어오면 그날 다시 필요하다.
   photoNotice: '임시 이미지 · 크루 단체 사진',
   photoPendingLabel: '임시 이미지',
+  // knownFor 가 비었을 때만 쓰는 대체어. 프로필의 'Running type: 측정 전' 줄은
+  // 값이 없다는 사실 말고는 말해 주는 게 없어 걷어냈다(2026-08-29)
   statsPending: '측정 전',
-  statsPendingNote: '기록은 첫 러닝부터 쌓입니다',
+  // 마지막 장면 — 여기서 끝나고, 나가는 문은 쎄러데이 티저 하나다.
+  // 대회 블록(임진각·11/15·손기정)은 이 페이지가 향하는 곳이라 그대로 둔다.
+  closingTitle: '소개는 여기까지.',
+  closingBody:
+    '일곱 명이 출발하기 전의 이야기는\n쎄러데이 티저에서 확인할 수 있습니다.',
+  closingCta: '쎄러데이 티저 보기 →',
 } as const;
