@@ -48,15 +48,42 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     };
   }
 
-  // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다
-  const title = `${event.name} | ${event.location}`;
+  // 날짜는 연도를 떼고(검색 시점에 그해 대회인 게 자명하다) 요일만 남긴다.
+  const shortDate = formatDate(event.date).replace(/^\d{4}년 /, '');
+
+  // ── title ────────────────────────────────────────────────────────────
+  // 2026-08-31 개편. 그 전에는 `{대회명} | {장소}` 였는데, 검색자가 원하는 단어가
+  // 하나도 없었다. Bing 실측에서 "손기정마라톤" 6위가 우리였고 5위가 러닝위키였는데
+  // 저쪽 타이틀은 "…접수 일정·정보 총정리 | 참가비·코스"였다 — 같은 유형 페이지끼리
+  // 갈린 건 순위가 아니라 **타이틀이 약속하는 내용**이었다.
+  //
+  //   · 회차(제22회)는 검색어로 거의 안 쓰이면서 20~30자를 먹는다 → 타이틀에서만 벗긴다
+  //     (데이터는 그대로 두므로 본문·구조화 데이터에는 남는다)
+  //   · 의도 키워드는 대회명 **바로 뒤**에 붙인다. 뒤로 밀면 SERP 에서 잘린다
+  //   · 접수가 끝난 대회에 "접수"를 걸면 클릭 후 실망을 준다 → 상태로 갈린다
+  //     ('마감'과 '대회종료'는 검색자 입장에서 같은 상태라 둘로만 나눈다)
+  const shortName = event.name
+    .replace(/\s*\(제\d+회\)/, '')
+    // 영문 병기 괄호도 벗긴다 — "(ASICS SEOUL SHINMUN GO FREE RUN)" 하나가 33자다.
+    // ⚠️ 괄호 안에 한글이 있으면 남긴다. "(뉴발란스 런유어웨이)"는 장식이 아니라
+    //    실제 최다 유입 검색어라("런유어웨이" 145노출) 빼면 매칭을 잃는다.
+    .replace(/\s*\([^)가-힣]*\)/g, '')
+    .trim();
+  const shortPlace = event.location.replace(/\s*\([^)]*\)\s*$/, '');
+  const dateOnly = shortDate.replace(/\s*\([일월화수목금토]\)/, '');
+  const acceptsEntry = event.status === '접수중' || event.status === '접수예정';
+  const intentKeywords = acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
+  // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다.
+  // 그 9자(" | 러닝의 모든것")까지 합쳐 60자 안에 들어가야 SERP 에서 안 잘린다.
+  const titleHead = `${shortName} ${intentKeywords}`;
+  const withPlace = `${titleHead} | ${dateOnly} ${shortPlace}`;
+  // 영문 장문 대회명은 벗겨내도 길다 — 그때는 장소를 접는다(날짜가 장소보다 검색 의도에 가깝다)
+  const title = withPlace.length <= 51 ? withPlace : `${titleHead} | ${dateOnly}`;
 
   // description 앞부분은 검색 스니펫으로 잘려 나가는 자리다(대략 155자).
   // 그 자리에 난이도·출발시각 같은 스펙을 넣으면 "지금 신청할 수 있나"라는 질문에
   // 답하지 못한 채 잘린다 — 접수 상태를 먼저 놓고, 대회 고유 설명이 그 뒤를 잇게 한다.
   // 대회명은 title 이 이미 말한다. 스니펫에서 반복하면 155자 중 20~30자를 그대로 버린다.
-  // 날짜는 연도를 떼고(검색 시점에 그해 대회인 게 자명하다) 요일만 남긴다.
-  const shortDate = formatDate(event.date).replace(/^\d{4}년 /, '');
   const descParts = [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
   if (event.status === '접수중') {
     descParts.push(
