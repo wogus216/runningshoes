@@ -607,20 +607,22 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://peacemarathon.co.kr',
     registrationStart: '2026-08-10',
-    registrationNote: '선착순 마감 — 마감일 미고지 (코스별 접수 개시일 상이, 결제 완료 기준)',
+    registrationNote:
+      '선착순 마감 — 마감일 미고지. 접수가 네 번에 나뉘어 열렸습니다: 강남구민 우선 2,000명 8월 10일(월) 10시 → 풀·하프 8월 11일(화) 10시 → 10km·5km 8월 12일(수) 10시 → 전 코스 8월 13일(목) 10시부터 선착순. 결제까지 마쳐야 접수가 완료되며, 우선 접수 후에는 주소·코스 변경이 일절 불가합니다(공식 요강, 2026-08-31 확인)',
     raceKit: {
       items: ['티셔츠', '번호표', '기록측정용 칩', '완주메달', '완주 간식'],
       images: [{ src: '/images/marathon/gangnam-peace-marathon-2026/kit-1.webp', alt: '2026 강남국제평화마라톤 공식 기념 티셔츠' }],
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-08-31',
     description:
-      '강남구·주한미8군 공동 주최, 참가비 전액을 전쟁고아 지원에 기부하는 이색 마라톤(유니세프 한국위원회 후원). 강남페스티벌 연계로 봉은사로 강남 도심을 달립니다. 2026 제23회는 서울시 축제포털 기준 10/5(일) 예정 — 종목·참가비·접수일은 제22회(2025) 기준 추정이며 8월경 공식 발표 예상. 참가비가 풀 3만·하프/10K 2만원대로 저렴한 기부형 대회입니다.',
+      '강남구·주한미8군 공동 주최, 참가비 전액을 전쟁고아 지원에 기부하는 이색 마라톤(유니세프 한국위원회 후원). 2026년 제23회는 10월 5일(월) 대체공휴일에 열리며, 봉은사로 삼성1동주민센터 앞에서 8시 집결·9시 출발합니다. 참가비가 풀 3만·하프/10km 2만·5km 1만원으로 저렴한 기부형 대회이고, 풀·하프는 만 18세 이상만 신청할 수 있습니다. 제한시간은 풀 5시간·하프 3시간·10km/5km 1시간 50분입니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
       certification: '없음',
-      courseDescription: '봉은사로 출발 강남 도심 순환 코스. 도로 통제형, 평지 위주.',
+      courseDescription:
+        '봉은사로 삼성1동주민센터 앞(봉은사역 4·5번 출구)에서 출발합니다. ⚠️ 공식이 밝힌 가장 중요한 특징은 코스 전 구간이 자전거 도로라는 점입니다 — 도로를 통제해 비우는 방식이 아니라 자전거가 함께 다니는 길을 달리므로, 공식 안내도 "자전거 통행에 유의해 스스로 안전에 각별히 주의하라"고 명시하고 있습니다. 추월이나 무리한 인코스 진입은 피하는 편이 좋습니다. 종목별 코스도는 2026-08-31 기준 전 종목 "COMING SOON"으로 아직 공개되지 않았습니다.',
     },
     raceInfo: {
       entryFees: [
@@ -629,7 +631,17 @@ export const octoberEvents: MarathonEvent[] = [
         { distance: '10K', fee: 20000 },
         { distance: '5K', fee: 10000 },
       ],
-      startTime: '08:00',
+      timeLimits: [
+        { distance: '풀코스', hours: 5, minutes: 0 },
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 1, minutes: 50 },
+        { distance: '5K', hours: 1, minutes: 50 },
+      ],
+      // 공식 요강 "8시 집결 / 9시 출발" — 기존 08:00 은 집결 시각을 출발로 잘못 넣은 값이었다
+      startTime: '09:00',
+    },
+    logistics: {
+      publicTransport: '지하철 9호선 봉은사역 4·5번 출구 (출발지: 서울 강남구 봉은사로 616 삼성1동 주민센터 앞)',
     },
   },
   {
