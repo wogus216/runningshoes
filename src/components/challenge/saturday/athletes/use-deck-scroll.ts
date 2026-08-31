@@ -1,66 +1,86 @@
 'use client';
 
-import { useEffect, type RefObject } from 'react';
+import { useEffect, useState, type RefObject } from 'react';
 import type { SaturdayGsap } from './use-saturday-gsap';
 
 /*
- * 스크롤 트랙 배분. 트랙 540svh, 무대 100svh 이므로 무대가 실제로 붙어 있는 구간은
- * 앞쪽 81% 뿐이다. 등장·정지·그리드가 전부 그 안에서 끝나야 한다 —
- * 이 선을 넘겨 배치하면 그리드가 열리자마자 무대가 위로 흘러가 버린다(실제로 겪었다).
+ * 스크롤 예산은 폰과 데스크톱이 다르다. 중단점은 CSS 의 (max-width: 767px) 와
+ * 반드시 같아야 한다 — 트랙 '길이'는 CSS(athletes.module.css)가 정하고,
+ * 그 안의 '시간 배분'을 여기가 정하기 때문이다. 둘이 어긋나면 그리드가 열리자마자
+ * 무대가 위로 흘러가 버린다.
  *
- *   0 ~ 50%   01~07번이 한 장씩 올라온다                      (약 270svh)
- *             — 그중 맨 앞 24%(약 65svh)는 오프닝 사진만 있는 정지 구간이다.
- *             이 페이지에 막 들어온 사람이 첫 화면을 감상할 시간이다.
- *   50 ~ 58%  아무 일도 없다. 잠깐 정지                        (약 43svh)
- *   58 ~ 100% 그리드로 펼쳐진 채 붙어 있다                     (약 227svh)
+ * 폰 — 트랙 1200svh. 한 번 튕기면 관성이 1000px 넘게 굴러가는데 카드 한 장당
+ *   400px 이라 두세 명이 통째로 실려 갔다. 한 장당 약 950px(390×844 실측)로 벌린다.
+ *   화면을 가득 쓸어내리는 드래그가 약 500px 이므로 손가락만으로는 한 명을 넘길 수 없다.
+ *   그 이상 굴러가는 관성은 아래 스냅 클램프가 한 칸으로 자른다 — 둘이 한 쌍이다.
+ *   트랙을 늘린 만큼 등장 구간의 몫도 함께 늘렸다(0.50 → 0.74). 비율을 그대로 두면
+ *   늘어난 길이가 전부 '그리드가 붙어 있기만 한' 구간으로 간다.
+ *   HOLD 도 1.2 → 0.7 로 줄였다. 그대로면 오프닝 사진만 보는 구간이 1.4화면이 된다.
  *
- * 480 → 540svh 로 늘렸다: 올라오는 카드가 여섯 장에서 일곱 장이 됐는데
- * 트랙이 그대로면 한 장당 스크롤이 줄어 몰아치듯 지나간다.
+ * 데스크톱 — 트랙 800svh. 휠·트랙패드는 관성이 얌전하고 지금 리듬이 만족스러운
+ *   상태라 값을 그대로 둔다.
+ *
+ *   0 ~ riseEnd      01~07번이 한 장씩 올라온다 (앞쪽 HOLD 만큼은 오프닝 사진만)
+ *   riseEnd ~ gridStart  아무 일도 없다. 잠깐 정지
+ *   gridStart ~        그리드로 펼쳐진 채 붙어 있다
  */
-const RISE_END_FRACTION = 0.5;
-const GRID_START_FRACTION = 0.58;
-const RISE_END = `${RISE_END_FRACTION * 100}% top`;
-const GRID_START = `${GRID_START_FRACTION * 100}% top`;
+const PHONE_QUERY = '(max-width: 767px)';
+
+const TUNING = {
+  phone: { hold: 0.7, riseEnd: 0.74, gridStart: 0.8 },
+  desktop: { hold: 1.2, riseEnd: 0.5, gridStart: 0.58 },
+} as const;
 
 /*
- * 일곱 장이 전부 올라온다. 그 앞에는 개인이 아닌 오프닝 사진 한 장이 서 있다
- * (athlete-deck.tsx 의 introCard) — 예전에는 01번 카드가 그 자리를 대신해서
- * 재춘만 '등장'하지 못하고 배경처럼 서 있었다.
- *
- * HOLD 는 01번이 올라오기 전의 정지 구간(약 63svh). 폰에서 스와이프 한 번 안쪽이라
- * 첫 카드는 금방 온다.
- *
- * 간격은 전부 같다(.90). 예전에는 .95→.55 로 좁혀 가며 '몰아치는' 고조를 만들었는데,
- * 실측해 보니 마지막 카드가 168px 간격이라 폰에서 한 번 튕기면(관성 포함 1000px 이상)
- * 두세 명이 통째로 지나갔다. 리듬보다 '한 명씩 만난다'가 이 페이지의 조건이다.
- * 고조는 이제 카운터(01/07)와 그리드 도착이 만든다.
- *
- * 트랙도 540→800svh 로 늘려 한 장당 약 400px 을 준다(아래 SNAP 과 함께 쓴다).
+ * 카드 사이 간격은 전부 같다. 예전에는 .95→.55 로 좁혀 가며 '몰아치는' 고조를
+ * 만들었는데, 마지막 카드가 168px 간격이라 폰에서 한 번 튕기면 두세 명이 지나갔다.
+ * 리듬보다 '한 명씩 만난다'가 이 페이지의 조건이다 —
+ * 고조는 카운터(01/07)와 그리드 도착이 만든다.
  */
-const HOLD = 1.2;
-const GAPS = [0.9, 0.9, 0.9, 0.9, 0.9, 0.9];
-const CUES = GAPS.reduce<number[]>(
-  (acc, gap) => [...acc, acc[acc.length - 1] + gap],
-  [HOLD],
-);
+const GAP = 0.9;
 const CARD_RISE = 1;
-const TIMELINE_END = CUES[CUES.length - 1] + CARD_RISE;
-
-/*
- * 스크롤이 멈추면 가장 가까운 '카드가 막 도착한 지점'으로 붙는다.
- *
- * 거리를 늘리는 것만으로는 부족하다 — 폰의 관성 스크롤은 손을 뗀 뒤에도 계속 굴러서
- * 사람과 사람 사이 어중간한 자리에 서기 쉽다. 스냅이 있으면 아무리 세게 튕겨도
- * 착지는 항상 누군가의 얼굴 위다.
- *
- * 0 은 오프닝(아무도 안 올라온 상태)이다. 이 자리도 하나의 장면이라 스냅 대상에 넣는다.
- */
-const SNAP_POINTS = [
-  0,
-  ...CUES.map((cue) => (cue + CARD_RISE) / TIMELINE_END),
-];
 /** 이 시점을 넘긴 카드가 '화면 맨 위'다. 절반 넘게 올라왔을 때 이름을 바꾼다 */
 const ON_TOP_AT = 0.55;
+
+function buildScrollPlan(isPhone: boolean) {
+  const { hold, riseEnd, gridStart } = isPhone ? TUNING.phone : TUNING.desktop;
+
+  // 일곱 장이 전부 올라온다. 그 앞에는 개인이 아닌 오프닝 사진 한 장이 서 있다
+  // (athlete-deck.tsx 의 introCard) — 예전에는 01번 카드가 그 자리를 대신해서
+  // 재춘만 '등장'하지 못하고 배경처럼 서 있었다.
+  const cues: number[] = [hold];
+  for (let i = 1; i < 7; i += 1) cues.push(cues[i - 1] + GAP);
+  const timelineEnd = cues[cues.length - 1] + CARD_RISE;
+
+  return {
+    cues,
+    timelineEnd,
+    riseEndFraction: riseEnd,
+    gridStartFraction: gridStart,
+    riseEnd: `${riseEnd * 100}% top`,
+    gridStart: `${gridStart * 100}% top`,
+    /*
+     * 스크롤이 멈추면 가장 가까운 '카드가 막 도착한 지점'으로 붙는다.
+     * 0 은 오프닝(아무도 안 올라온 상태)이다. 이 자리도 하나의 장면이라 대상에 넣는다.
+     */
+    snapPoints: [0, ...cues.map((cue) => (cue + CARD_RISE) / timelineEnd)],
+  };
+}
+
+/** 중단점을 실제로 따라간다 — 창을 가로로 줄이면 스크롤 예산도 폰 쪽으로 바뀌어야 한다 */
+function usePhoneViewport() {
+  const [isPhone, setIsPhone] = useState(false);
+
+  useEffect(() => {
+    const query = window.matchMedia(PHONE_QUERY);
+    const sync = () => setIsPhone(query.matches);
+    sync();
+    query.addEventListener('change', sync);
+    return () => query.removeEventListener('change', sync);
+  }, []);
+
+  return isPhone;
+}
 
 type DeckScrollArgs = {
   lib: SaturdayGsap | null;
@@ -94,7 +114,10 @@ export function useDeckScroll({
   onActiveChange,
   onPhaseChange,
 }: DeckScrollArgs) {
+  const isPhone = usePhoneViewport();
+
   useEffect(() => {
+    const plan = buildScrollPlan(isPhone);
     const track = trackRef.current;
     const deck = deckRef.current;
     const gridCopy = gridCopyRef.current;
@@ -132,6 +155,21 @@ export function useDeckScroll({
     const { gsap, ScrollTrigger, Flip } = lib;
     let layout: 'stack' | 'grid' = 'stack';
     let active = -1;
+    let detachTouch: (() => void) | null = null;
+
+    /** 지금 progress 에서 가장 가까운 스냅 지점(0 = 오프닝, 1~7 = 각 선수) */
+    const nearestIndex = (progress: number) => {
+      let best = 0;
+      let bestDistance = Infinity;
+      plan.snapPoints.forEach((point, index) => {
+        const distance = Math.abs(point - progress);
+        if (distance < bestDistance) {
+          bestDistance = distance;
+          best = index;
+        }
+      });
+      return best;
+    };
 
     const context = gsap.context(() => {
       track.dataset.motion = 'on';
@@ -144,18 +182,38 @@ export function useDeckScroll({
         gsap.set(card, { zIndex: index + 1 });
       });
 
+      /*
+       * 한 번의 손가락 제스처는 한 명만 넘긴다.
+       *
+       * 거리를 벌리고 스냅을 걸어도 관성은 여전히 여러 명을 지나간다 — 스냅은
+       * '멈춘 자리에서 가장 가까운 사람'을 고를 뿐이라, 세게 튕기면 그 자리가 세 칸 뒤다.
+       * 그래서 착지 지점을 '손가락이 닿은 순간 서 있던 사람 ±1' 로 자른다.
+       *
+       * 휠·트랙패드·스크롤바에는 적용하지 않는다(clampNextSnap 은 touchstart 만 켠다).
+       * 스크롤바를 끝까지 끌었는데 한 칸만 움직이면 그건 고장으로 읽힌다.
+       */
+      let anchor = 0;
+      let clampNextSnap = false;
+
       const rise = gsap.timeline({
         scrollTrigger: {
           trigger: track,
           start: 'top top',
-          end: RISE_END,
+          end: plan.riseEnd,
           scrub: 0.5,
           /*
            * delay 0.1 — 손이 아직 화면에 있거나 관성이 살아 있는 동안에는 끼어들지 않는다.
            * duration 상한 0.45 — 멀리 튕겼을 때 되돌아오는 길이 너무 길면 '끌려간다'고 느낀다.
            */
           snap: {
-            snapTo: SNAP_POINTS,
+            snapTo: (value) => {
+              const nearest = nearestIndex(value);
+              if (!clampNextSnap) return plan.snapPoints[nearest];
+              clampNextSnap = false;
+              const clamped = Math.min(anchor + 1, Math.max(anchor - 1, nearest));
+              anchor = clamped;
+              return plan.snapPoints[clamped];
+            },
             duration: { min: 0.15, max: 0.45 },
             delay: 0.1,
             ease: 'power2.inOut',
@@ -171,11 +229,23 @@ export function useDeckScroll({
             directional: false,
             inertia: false,
           },
+          /*
+           * 등장 구간 밖으로 나가면 스냅이 아예 불리지 않는다 — 그러면 켜 둔 클램프가
+           * 그대로 남아 있다가, 한참 뒤 스크롤바를 끌 때 발동해 사람을 되돌려 버린다
+           * (실측: 3번에서 세게 튕겨 그리드까지 간 뒤 5번으로 이동하면 4번으로 끌려갔다).
+           * 구간을 벗어나는 순간 끈다.
+           */
+          onLeave: () => {
+            clampNextSnap = false;
+          },
+          onLeaveBack: () => {
+            clampNextSnap = false;
+          },
           onUpdate: (self) => {
-            const time = self.progress * TIMELINE_END;
+            const time = self.progress * plan.timelineEnd;
             let next = -1;
             for (let i = 0; i < risingMedias.length; i += 1) {
-              if (time >= (CUES[i] ?? 0) + ON_TOP_AT) next = i;
+              if (time >= (plan.cues[i] ?? 0) + ON_TOP_AT) next = i;
             }
             if (next === active) return;
             active = next;
@@ -184,8 +254,19 @@ export function useDeckScroll({
         },
       });
 
+      // 손가락이 닿은 순간의 자리를 기억해 둔다. 관성은 여기서 한 칸까지만 갈 수 있다
+      const onTouchStart = () => {
+        const trigger = rise.scrollTrigger;
+        if (!trigger) return;
+        anchor = nearestIndex(trigger.progress);
+        clampNextSnap = true;
+      };
+      window.addEventListener('touchstart', onTouchStart, { passive: true });
+      detachTouch = () =>
+        window.removeEventListener('touchstart', onTouchStart);
+
       risingMedias.forEach((media, index) => {
-        const cue = CUES[index] ?? index;
+        const cue = plan.cues[index] ?? index;
         // 짝수/홀수를 번갈아 반대로 틀어 올린다. 도착하면 다시 0도로 정돈된다(.from 기준값)
         const tilt = index % 2 === 0 ? -1 : 1;
 
@@ -283,7 +364,7 @@ export function useDeckScroll({
 
       ScrollTrigger.create({
         trigger: track,
-        start: GRID_START,
+        start: plan.gridStart,
         end: 'bottom bottom',
         onEnter: () => flipTo('grid'),
         onLeaveBack: () => flipTo('stack'),
@@ -301,33 +382,44 @@ export function useDeckScroll({
        */
       const trackTop = track.getBoundingClientRect().top + window.scrollY;
       const trackHeight = track.offsetHeight; // data-motion='on' 반영 위해 강제 리플로우
-      const riseSpan = trackHeight * RISE_END_FRACTION;
+      const riseSpan = trackHeight * plan.riseEndFraction;
       const initialRiseProgress =
         riseSpan > 0
           ? Math.min(1, Math.max(0, (window.scrollY - trackTop) / riseSpan))
           : 0;
 
-      const initialTime = initialRiseProgress * TIMELINE_END;
+      const initialTime = initialRiseProgress * plan.timelineEnd;
       let initialActive = -1;
       for (let i = 0; i < risingMedias.length; i += 1) {
-        if (initialTime >= (CUES[i] ?? 0) + ON_TOP_AT) initialActive = i;
+        if (initialTime >= (plan.cues[i] ?? 0) + ON_TOP_AT) initialActive = i;
       }
       active = initialActive;
+      anchor = nearestIndex(initialRiseProgress);
       onActiveChange(initialActive);
 
-      if (window.scrollY >= trackTop + trackHeight * GRID_START_FRACTION) {
+      if (window.scrollY >= trackTop + trackHeight * plan.gridStartFraction) {
         flipTo('grid');
       }
+
+      /*
+       * 여기까지 와야 화면이 '진짜' 스택이다. 그 전까지는 프리페인트 스크립트(page.tsx)가
+       * 세워 둔 임시 상태이고, CSS 부팅 블록이 카드와 격자 카피를 감추고 있다.
+       * 이 표시가 붙는 순간 감춤이 풀린다 — page.tsx 의 5초 되돌리기도 이걸 보고 멈춘다.
+       */
+      track.dataset.ready = 'on';
     }, track);
 
     return () => {
+      detachTouch?.();
       context.revert();
       delete track.dataset.motion;
       delete track.dataset.phase;
+      delete track.dataset.ready;
       // 연출을 끄면 기본 상태(그리드 한 화면)로 돌아간다. 일곱 명은 항상 보인다
       deck.dataset.layout = 'grid';
       if (gridCopy) gsap.set(gridCopy, { clearProps: 'opacity,transform' });
       onPhaseChange('grid');
     };
-  }, [lib, trackRef, deckRef, cardsRef, gridCopyRef, onActiveChange, onPhaseChange]);
+    // isPhone — 중단점을 넘으면 스크롤 예산이 통째로 바뀐다. 연출을 걷고 다시 세운다
+  }, [lib, isPhone, trackRef, deckRef, cardsRef, gridCopyRef, onActiveChange, onPhaseChange]);
 }

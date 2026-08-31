@@ -234,6 +234,8 @@ export function AthleteDeck({ athletes, intro, copy }: DeckProps) {
       <section
         className={styles.track}
         ref={trackRef}
+        /* page.tsx 의 프리페인트 스크립트가 이 id 로 찾아 첫 프레임을 스택으로 세운다 */
+        id="athletes-track"
         aria-labelledby="starting-seven"
       >
         <div className={styles.stage}>

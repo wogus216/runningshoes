@@ -105,6 +105,34 @@ export default function SaturdayAthletesPage() {
           }}
         />
 
+        {/*
+          첫 화면에 격자가 한 번 번쩍이던 것을 없앤다.
+
+          GSAP 은 동적 import 라 순서가 이랬다: 정적 HTML(격자 일곱 칸) 페인트 →
+          하이드레이션 → gsap/ScrollTrigger/Flip 내려받기 → 그제서야 스택.
+          폰에서는 그 사이가 눈에 보였다 — 일곱 명이 떴다가 오프닝 사진으로 바뀌었다.
+
+          이 스크립트는 위 마크업이 파싱된 직후, 첫 페인트 전에 동기로 돈다.
+          `data-motion`·`data-phase` 는 React 가 JSX 로 쓰지 않는 속성이라(GSAP 이
+          명령형으로만 만진다) 하이드레이션이 되돌리지 않는다 — 덱의 `data-layout` 은
+          React 소유라 건드리지 않고, CSS 의 부팅 블록이 그 상태를 대신 그린다.
+
+          모션 감소면 아무것도 하지 않는다(GSAP 자체를 안 받는다).
+          GSAP 이 끝내 안 오면 일곱 명이 안 보이는 화면에 갇히므로 5초 뒤 되돌린다.
+        */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              '(function(){try{' +
+              "if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;" +
+              "var t=document.getElementById('athletes-track');if(!t)return;" +
+              "t.dataset.motion='on';t.dataset.phase='stack';" +
+              'setTimeout(function(){if(t.dataset.ready)return;' +
+              'delete t.dataset.motion;delete t.dataset.phase;},5000);' +
+              '}catch(e){}})();',
+          }}
+        />
+
         <ClosingReveal
           place={RACE_META.place}
           datePoster={RACE_META.datePoster}
