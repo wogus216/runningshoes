@@ -5190,7 +5190,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🌳 <strong>접수는 7월 30일(목) 23시 59분에 마감됐습니다.</strong> 대회는 예정대로 <strong>9월 12일(토) 여의도공원</strong>에서 열립니다 — 10km, 참가비 50,000원, 정원 6,500명. 아래 내용은 다음 회차를 준비하는 러너를 위해 남겨둡니다(접수처는 현대Shop, 현대차 공식 발표 7/16).</div>
+<div class="deadline-strip">🌳 <strong>접수 일정이 바뀐 뒤 이미 마감됐습니다.</strong> 이 글이 쓰인 7월 16일 발표 기준으로는 7월 23일 개시였지만, 공식 파이널런 안내의 최종 신청기간은 <strong>8월 3일(월) 10시 ~ 8월 6일(목) 23시 59분</strong>이었고 선착순으로 끝났습니다. 대회는 예정대로 <strong>9월 12일(토) 여의도공원</strong>, 오전 6시 30분 출발입니다. 참가권 50,000원은 <strong>기부금 3만 원 + 참가비 2만 원</strong> 구조라 기부금 영수증을 따로 받을 수 있고, 러닝 패키지는 9월 3일부터 순차 배송됐습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -5259,7 +5259,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>신발은 <strong>카본화가 아니라 쿠션 좋은 데일리 러닝화</strong>가 정답입니다. 10km 완주가 목표인데 얇고 딱딱한 레이싱화를 신으면 오히려 발이 힘들어집니다. 입문 가성비는 <a href="/shoes/nike-pegasus-42">페가수스 42</a>, 통통 튀는 반발감은 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>, 무릎이 걱정된다면 맥스쿠션 <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>이 대표적입니다. 셋 중 고민이라면 <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 젤 님버스 28</a> 비교를, 발볼·체중·부상 이력까지 반영한 추천은 <a href="/recommend">1분 맞춤 추천</a>을 받아보세요. 한여름 훈련용으로는 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>도 함께 보면 좋습니다.</p>
 
 <h2>마무리</h2>
-<p>2026 포레스트런은 <strong>9월 12일(토) 여의도 10km</strong>, 접수는 <strong>7월 23일(수) 오전 10시부터 8일간</strong>입니다. 참가비는 올랐지만 기부 구조와 나무 심기 규모는 오히려 커졌고, 10km 단일에 제한 시간이 넉넉해 <strong>가을 첫 대회로 잡기 좋은 일정</strong>입니다. 다른 가을 대회와 함께 계획하려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
+<p>2026 포레스트런은 <strong>9월 12일(토) 여의도 10km</strong>, 접수는 <strong>8월 3일(월) 10시부터 8월 6일(목)까지</strong> 진행돼 마감됐습니다(7월 16일 발표의 7월 23일 개시에서 변경). 참가비는 올랐지만 기부 구조와 나무 심기 규모는 오히려 커졌고, 10km 단일에 제한 시간이 넉넉해 <strong>가을 첫 대회로 잡기 좋은 일정</strong>입니다. 다른 가을 대회와 함께 계획하려면 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
 
 <p><small>※ 이 글은 2026-07-03 최초 작성 후 <strong>2026-07-20에 전면 갱신</strong>되었습니다. 접수일·참가비·코스·정원은 현대자동차 공식 안내 페이지(hyundai.com/kr/ko/brand/forestrun) 및 2026-07-16 배포 보도자료 기준입니다. 2025년 대회 정보는 참고치입니다. 패키지 세부 구성 등 일부는 공식 확정 정보가 아니므로, 신청 전 현대Shop 접수 페이지와 공식 인스타그램(@hyundai_forestrun)에서 반드시 최종 확인하세요. 대회 사무국 02-2051-8073.</small></p>
 `,
