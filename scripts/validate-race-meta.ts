@@ -7,11 +7,25 @@
  * 타입 그대로 읽는다. 종료 코드로 결과를 전달한다 (1 = 에러 있음).
  */
 import { getAllPosts } from '../src/lib/data/blog';
-import { checkRaceMeta } from '../src/lib/blog/race-meta-rules';
+import {
+  checkRaceMeta,
+  checkDeadlineStrips,
+  STRIP_WITHOUT_ANCHOR_BASELINE,
+} from '../src/lib/blog/race-meta-rules';
 
 const posts = getAllPosts();
 const withMeta = posts.filter((p) => p.raceMeta);
-const issues = withMeta.flatMap(checkRaceMeta);
+
+// raceMeta 보유 글 검사 + raceMeta 와 무관한 deadline-strip 감시를 함께 돌린다.
+// 후자를 여기 붙인 이유: 사각지대를 만드는 건 정확히 "raceMeta 를 안 쓴 글"이라
+// raceMeta 보유분만 보는 검사로는 영원히 안 보인다(2026-09-01 도쿄 사례).
+const strips = checkDeadlineStrips(posts);
+const issues = [...withMeta.flatMap(checkRaceMeta), ...strips.issues];
+
+console.log(
+  `  ℹ️  deadline-strip 보유 ${posts.filter((p) => p.content.includes('class="deadline-strip"')).length}편 · ` +
+    `날짜 앵커 없음 ${strips.withoutAnchor.length}편(기준선 ${STRIP_WITHOUT_ANCHOR_BASELINE})`
+);
 
 const errors = issues.filter((i) => i.level === 'error');
 const warns = issues.filter((i) => i.level === 'warn');

@@ -71,7 +71,7 @@ export const posts_2026_09: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip"><span class="dl-badge">🇦🇺 D-28</span><span class="dl-text"><strong>2027 일반추첨 — 한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시.</strong> 응모 무료·무작위 추첨이라 오픈 대기는 불필요. 당첨 시 카드 자동 결제. 대회일은 2027년 8월 29일(일).</span></div>
+<div class="deadline-strip"><span class="dl-badge">🇦🇺 추첨 예정</span><span class="dl-text"><strong>2027 일반추첨 — 한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시.</strong> 응모 무료·무작위 추첨이라 오픈 대기는 불필요. 당첨 시 카드 자동 결제. 대회일은 2027년 8월 29일(일).</span></div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>

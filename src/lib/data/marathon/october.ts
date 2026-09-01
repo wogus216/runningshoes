@@ -123,7 +123,12 @@ export const octoberEvents: MarathonEvent[] = [
     location: '한국공학대학교 제2캠퍼스 (경기 시흥시 거북섬)',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '접수예정',
+    // 7월 22일 14시에 접수가 열렸는데 '접수예정'으로 남아 있었다(2026-09-01 정정).
+    // 마감일 없는 선착순이라 registrationEnd 로는 상태를 못 잡는 유형 — registrationNote 로 정직 표기한다.
+    status: '접수중',
+    registrationStart: '2026-07-22',
+    registrationNote:
+      '7월 22일(수) 14시부터 선착순 5,000명으로 접수 중이며 마감일이 따로 없습니다. 정원이 차면 그대로 닫히므로 신청 전 공식 접수 페이지가 아직 열려 있는지 확인하세요(잔여 수량 미공개).',
     isMajor: false,
     website: 'https://www.shmarathon.kr/shmarathon/',
     description:

@@ -3179,7 +3179,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🌉 <strong>접수 개시 8월 24일(월) 오전 10시</strong> — 이번 주 월요일입니다. 마감일 없이 <strong>12,000명 선착순</strong>이라 정원이 차면 그대로 끝납니다. 풀코스는 <strong>공식기록증 4시간 30분 이내</strong> 기록이 있어야 신청되니, 주말 안에 기록증 파일부터 찾아두세요. 접수처는 <a href="https://ticket.yes24.com/Perf/59670" target="_blank" rel="noopener">YES24 티켓</a>입니다.</div>
+<div class="deadline-strip">🌉 <strong>선착순 조기 마감됐습니다</strong> — 8월 24일(월) 오전 10시에 <strong>12,000명</strong>(풀 5,000·10km 7,000)으로 접수를 열었고 정원이 채워져 닫혔습니다(공식 홈 안내, 2026-08-27 확인). <strong>대회는 12월 6일(일)</strong>에 열립니다. 아래 내용은 참가 확정자의 준비용, 그리고 다음 회차를 노리는 러너를 위한 기록입니다 — 풀코스는 <strong>만 18세 이상 + 공식기록증 4시간 30분 이내</strong>가 접수 자격이었습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -5104,7 +5104,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🎪 <strong>접수 마감 — 1차 당첨자 발표가 8월 20일(목)</strong>입니다. 결과는 <strong>카카오프렌즈 런 카카오톡 채널을 통해 개별 안내</strong>되므로, 신청할 때 쓴 계정의 채널 알림이 꺼져 있지 않은지부터 확인하세요. 여기서 안 됐더라도 <strong>잔여 티켓이 생기면 8월 30일(일)까지 추가 발표</strong>가 있습니다.</div>
+<div class="deadline-strip">🎪 <strong>접수·발표가 모두 끝났습니다</strong> — 1차 당첨자 발표 8월 20일(목), 잔여 티켓 추가 발표 8월 30일(일)로 종료. 결과는 카카오톡 채널로 개별 안내됐으니 알림이 꺼져 있었다면 채널에서 확인하세요. <strong>대회는 예정대로 10월 10일(토) 탄천</strong>에서 열립니다. 아래 내용은 당첨자의 준비용, 그리고 다음 회차를 노리는 러너를 위한 기록입니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>

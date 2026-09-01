@@ -4309,7 +4309,7 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 9,
     tags: ['런던마라톤', '런던마라톤 2027', '세계 6대 마라톤', '메이저 마라톤', '마라톤 발롯', '자선 마라톤', '영국 ETA', '평지 PB', '식스스타', '마라톤 추첨'],
     content: `
-<div class="deadline-strip">2027 런던마라톤 발롯 결과가 7월 초부터 발표되고 있습니다 — 신청자에게 배치별로 순차 이메일이 발송되며, 참가 계정에서도 당락을 확인할 수 있습니다(단일 발표일 없음). 2027 대회는 사상 처음으로 4월 24~25일 이틀에 걸쳐 열립니다. 발롯을 놓쳤거나 떨어졌다면 자선(charity) 슬롯이 현실적인 잔여 경로입니다.</div>
+<div class="deadline-strip">2027 런던마라톤 발롯 결과는 <strong>7월 초부터 배치별 순차 이메일로 발송됐습니다</strong>(단일 발표일이 없는 방식이라 시점이 사람마다 달랐습니다). 메일을 못 받았더라도 <strong>참가 계정에서 당락을 확인할 수 있습니다.</strong> 2027 대회는 사상 처음으로 <strong>4월 24~25일 이틀</strong>에 걸쳐 열립니다. 발롯을 놓쳤거나 떨어졌다면 <strong>자선(charity) 슬롯</strong>이 현실적인 잔여 경로입니다 — 단체별로 모금액과 마감이 제각각이라 개별 확인이 필요합니다.</div>
 
 <div class="tldr">
   <h2>3줄 요약</h2>
@@ -5289,7 +5289,7 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 8,
     tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 막차 안내</span><span class="dl-text">2026 시카고마라톤(10/11) 일반 추첨은 이미 마감. 지금 신청 가능한 건 자선(9/15) · 투어 패키지(8/16) 두 갈래뿐입니다.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 막차 안내</span><span class="dl-text">2026 시카고마라톤(10/11) 일반 추첨과 <strong>투어 패키지(8/16)는 마감</strong>됐습니다. <strong>지금 남은 건 자선(charity) 한 갈래뿐이고 그마저 9월 15일에 닫힙니다</strong> — 대회가 10월 11일이라 항공·숙소까지 함께 잡아야 하는 일정입니다.</span></div>
 
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
 <li><strong>일반 추첨은 끝났습니다.</strong> 2025-11-18 신청 마감, 12-11 결과 발표로 추첨 경로는 이미 닫혔어요. 2026 대회는 10월 11일(일) 개최되는 48회입니다.</li>

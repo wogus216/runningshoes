@@ -71,3 +71,81 @@ export function checkRaceMeta(post: BlogPost): RaceMetaIssue[] {
 
   return issues;
 }
+
+// ─────────────────────────────────────────────────────────────
+// deadline-strip 감시 — raceMeta 를 안 쓰는 글이 조용히 낡는 것을 막는다
+// ─────────────────────────────────────────────────────────────
+
+/**
+ * 손으로 박은 상대 시간 표현. 쓸 때는 맞지만 **날짜가 지나면 아무 신호 없이 거짓이 된다.**
+ * 2026-09-01 에 부산브릿지 글이 "접수 개시 8월 24일 — 이번 주 월요일입니다"로 남아 있었다.
+ */
+const RELATIVE_TIME =
+  /이번\s?주|다음\s?주|지난\s?주|이번\s?달|오늘|내일|모레|어제|D-\d+|며칠\s?뒤|곧\s?열립니다|임박했습니다/;
+
+/**
+ * 자동 판정의 근거가 되는 날짜를 하나라도 갖고 있는가.
+ * 없으면 이 글은 **날짜 기반 검사의 사각지대**에 놓인다 — 마감이 지나도 아무도 모른다.
+ */
+function hasDateAnchor(post: BlogPost): boolean {
+  return Boolean(post.raceMeta?.raceDate || post.event?.startDate);
+}
+
+/** deadline-strip 안쪽 텍스트만 뽑는다(태그 제거). 없으면 null. */
+export function extractStripText(content: string): string | null {
+  const m = content.match(/<div class="deadline-strip"[^>]*>([\s\S]*?)<\/div>/);
+  if (!m) return null;
+  return m[1].replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+/**
+ * 판정 근거 없이 deadline-strip 을 손으로 관리하는 글의 허용 기준선(래칫).
+ *
+ * 2026-09-01 최초 측정 시 10편이었다. **이 숫자는 오직 내려가기만 해야 한다** —
+ * 새 글은 raceMeta 를 쓰거나 최소한 event.startDate 를 넣어야 하고,
+ * 기존 글을 손볼 때 앵커를 채웠다면 이 값을 함께 낮춘다.
+ */
+export const STRIP_WITHOUT_ANCHOR_BASELINE = 10;
+
+/**
+ * deadline-strip 을 가진 글 전체를 훑는다. raceMeta 유무와 무관하게 적용된다는 점이
+ * `checkRaceMeta` 와 다르다 — 사각지대를 만드는 건 정확히 "raceMeta 를 안 쓴 글"이기 때문이다.
+ */
+export function checkDeadlineStrips(posts: BlogPost[]): {
+  issues: RaceMetaIssue[];
+  withoutAnchor: string[];
+} {
+  const issues: RaceMetaIssue[] = [];
+  const withoutAnchor: string[] = [];
+
+  for (const post of posts) {
+    const strip = extractStripText(post.content);
+    if (strip === null) continue;
+
+    if (!hasDateAnchor(post)) withoutAnchor.push(post.slug);
+
+    const hit = strip.match(RELATIVE_TIME);
+    if (hit) {
+      issues.push({
+        level: 'warn',
+        rule: 'strip-relative-time',
+        slug: post.slug,
+        message: `deadline-strip 에 상대 시간 표현("${hit[0]}")이 있습니다 — 날짜가 지나면 조용히 거짓이 됩니다. 절대 날짜로 바꾸세요`,
+      });
+    }
+  }
+
+  if (withoutAnchor.length > STRIP_WITHOUT_ANCHOR_BASELINE) {
+    issues.push({
+      level: 'error',
+      rule: 'strip-without-anchor',
+      slug: withoutAnchor[withoutAnchor.length - 1],
+      message:
+        `deadline-strip 은 있는데 raceMeta.raceDate 도 event.startDate 도 없는 글이 ` +
+        `${withoutAnchor.length}편입니다(기준선 ${STRIP_WITHOUT_ANCHOR_BASELINE}편). ` +
+        `날짜 기반 검사가 닿지 않아 마감이 지나도 잡히지 않습니다 — 새 글에는 앵커를 넣으세요`,
+    });
+  }
+
+  return { issues, withoutAnchor };
+}
