@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: TCS Sydney Marathon 공식 2027 Ballot 페이지(2026-09-01 확인, 응모 무료·지원
+  // 123,000명·출발 40,000석) + 정확한 일시는 Time Out Australia 2026-09-01 보도
+  // (현지 9/29 10시 AEST ~ 10/19 10시 AEDT). 한국시각 환산은 서머타임(10/4 시작) 반영.
+  'sydney-marathon-2027-registration-guide': {
+    title: '시드니마라톤 2027 추첨, 9월 29일 오픈',
+    subtitle: '응모 무료 · 선착순 아닌 무작위 추첨 · 마감 10월 19일',
+  },
+
   // 출처: 주최사 스탠즈(@stanz_official_kr) 배포 안내 카드 6장 전량 확인 2026-08-29
   // (10/3 부산역 인근, 5km 비경쟁, 09·14시 각 3,000명, 85,000원, 접수 9/4 11시~9/18
   //  카카오톡 선물하기 선착순 1인 4매). 언론 교차 확인 없음 — 전부 주최사 안내물 기준.

@@ -5168,16 +5168,25 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'sydney-marathon-2026-registration-guide',
     slug: 'sydney-marathon-2026-registration-guide',
-    title: '시드니마라톤 2026 신청 — 추첨 마감 후 남은 두 갈래(자선·투어) | 8/30 임박, PB보다 식스스타·하버브리지 경관 코스',
-    description: '2026 시드니마라톤(8/30) 일반추첨은 끝났습니다. 한국에서 들어가는 길은 국제 자선과 공식 여행 패키지 둘뿐 — 정해진 마감보다 자리 소진이 먼저입니다. 자선 모금 티어·비용, 인천 직항 10시간·시차 +1시간·ETA, 그리고 시드니가 PB 코스가 아닌 이유(누적 +313m)까지. 7번째 메이저를 식스스타 메달로.',
+    title: '시드니마라톤 2026 신청 가이드 (대회 종료) — 2027 추첨은 9월 29일 | PB보다 식스스타·하버브리지 경관 코스',
+    description: '2026 시드니마라톤은 8월 30일에 끝났습니다. 다음 사이클인 2027 일반추첨이 한국시각 9월 29일(화) 오전 9시에 열립니다 — 최신 정보는 2027 추첨 가이드에서 보세요. 이 글은 2026 사이클의 신청 경로(자선·공식 여행 패키지) 기록이며, 자선 모금 구조와 인천 직항 10시간·시차·호주 ETA, 시드니가 PB 코스가 아닌 이유(누적 +313m)는 2027에도 그대로 적용됩니다.',
     thumbnail: '/images/blog/sydney-marathon-2026-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    updatedAt: '2026-09-01',
     category: 'news' as const,
     readingTime: 8,
     tags: ['시드니마라톤', '시드니마라톤 2026', '세계 7대 마라톤', '메이저 마라톤', '식스스타', '마라톤 해외원정', '자선 마라톤', '하버브리지', '마라톤 추첨', '해외 마라톤 신청'],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 8/30 D-마이너스</span><span class="dl-text">2026 시드니마라톤 일반추첨은 2025-10-17에 이미 마감. 지금 한국에서 들어가는 길은 <strong>공식 자선(charity)</strong>과 <strong>공식 여행 패키지</strong> 둘뿐 — 정해진 마감보다 자리 소진이 먼저입니다.</span></div>
+<div class="deadline-strip"><span class="dl-badge">🏁 대회 종료</span><span class="dl-text"><strong>2026 시드니마라톤은 8월 30일(일)에 끝났습니다.</strong> 다음은 2027 — 일반추첨이 <strong>한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시</strong>에 열립니다(응모 무료·무작위 추첨). 최신 정보는 <a href="/blog/sydney-marathon-2027-registration-guide"><strong>시드니마라톤 2027 추첨 가이드</strong></a>를 보세요.</span></div>
+
+<div class="callout info">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글은 2026 사이클의 기록입니다</p>
+    <p>아래 내용은 2026년 6월 시점에 "추첨이 끝난 뒤 남은 경로"를 정리한 것이고, <strong>그 대회는 이미 치러졌습니다.</strong> 지금 신청할 수 있는 것은 2027 대회(2027년 8월 29일)이며 <strong>일반추첨이 다시 열려 있습니다</strong> — 자선·투어보다 훨씬 싼 경로이니 먼저 <a href="/blog/sydney-marathon-2027-registration-guide">2027 추첨 가이드</a>를 확인하세요. 다만 이 글의 <strong>코스 성격(누적 +313m·PB 코스가 아닌 이유), 인천 직항 10시간·시차·호주 ETA, 자선 경로의 비용 구조</strong>는 2027에도 그대로 적용되므로 원정 준비용으로는 여전히 유효합니다.</p>
+  </div>
+</div>
 
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>일반추첨은 끝났다.</strong> 2025-10-17 마감·2025-10-29 결과 발표 완료. 남은 합법 경로는 공식 자선과 공식 여행 패키지 2가지뿐.</li><li><strong>막차는 "마감일"이 아니라 "자리 소진".</strong> 자선·패키지 모두 통일된 마감일이 공식 발표되지 않았고, 일부 자선은 이미 "마감(CLOSED)" 표기 — 서두를수록 유리.</li><li><strong>시드니는 PB 코스가 아니다.</strong> 누적 상승 +313m, 하버브리지·옥스퍼드 스트리트 두 오르막. 기록보다 식스스타 메달·경관이 목적인 대회.</li></ul></div>
 
