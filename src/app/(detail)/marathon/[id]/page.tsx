@@ -124,7 +124,13 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,
-      title: `${event.name} - ${SITE_NAME}`,
+      // ⚠️ **네이버는 이 값을 검색 결과 제목으로 쓴다**(2026-09-01 실측).
+      // 예전 값 `${event.name} - ${SITE_NAME}` 이 그대로 노출돼, 위에서 공들여 붙인
+      // 의도 키워드가 네이버에서는 통째로 빠지고 있었다 —
+      // 고프리런이 "2026 아식스 서울신문 고프리런 (ASICS SEOUL SHINMUN GO FREE RUN)"으로
+      // 떠 있었다. 구글은 <title> 을 쓰므로 그쪽엔 영향이 없다.
+      // 날짜·장소는 뺀다. SNS 공유 카드에서는 군더더기이고, siteName 이 따로 나간다.
+      title: titleHead,
       description,
       url: `${SITE_URL}/marathon/${id}`,
       // ⚠️ 페이지가 openGraph 를 지정하면 layout 의 것과 병합되지 않고 통째로 덮인다.
