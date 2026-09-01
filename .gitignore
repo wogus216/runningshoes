@@ -69,6 +69,7 @@ public/sitemap*.xml
 !.omc/
 .omc/*
 !.omc/todo-estimates.md
+!.omc/todo-search-2026-09.md
 
 # 쎄러데이 — 크루 원본 활동 내보내기 (GPS·심박 포함, 커밋 금지)
 /private/challenge/
