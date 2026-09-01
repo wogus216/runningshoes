@@ -21,6 +21,7 @@
     "postbuild": "next-sitemap",
     "prepare": "husky",
     "gsc": "tsx scripts/gsc-report.ts",
+    "naver:rank": "tsx scripts/naver-rank.ts",
     "gsc:pages": "tsx scripts/gsc-pages.ts",
     "popular": "tsx scripts/ga-popular.ts",
     "course:scan": "tsx scripts/course-map/scan-sources.ts"
