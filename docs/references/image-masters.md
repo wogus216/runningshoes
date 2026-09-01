@@ -48,4 +48,4 @@ sharp(src).png() → removeBackground(blob,{model:'medium'})   // @imgly/backgro
 투명 원본이면 배경제거 단계만 건너뛴다. 결과는 코너 alpha=0 인지 확인하고,
 **분홍 같은 유채색 배경에 합성해 잔여 배경을 육안 검증**한다.
 
-관련: `public/images/shoes/IMAGE_CREDITS.md`(수집 건별 기록) · `CLAUDE.md` 의 "신발 이미지 처리 워크플로우"
+관련: `public/images/shoes/IMAGE_CREDITS.md`(수집 건별 기록) · `CLAUDE.md` 의 "신발 이미지 처리"
