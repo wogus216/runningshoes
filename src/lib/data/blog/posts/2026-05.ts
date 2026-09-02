@@ -11735,16 +11735,16 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/2026-chuncheon-marathon-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-02',
-    updatedAt: '2026-07-14',
+    updatedAt: '2026-09-02',
     category: 'news' as const,
     readingTime: 8,
-    tags: ['춘천마라톤', '조선일보 춘천마라톤', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
+    tags: ['춘천마라톤', '조선일보 춘천마라톤', '춘천마라톤 추가접수', '풀코스', 'PB 도전', '가을 마라톤', '대회 일정'],
     content: `
 <div class="callout warning">
-  <span class="callout-icon">⚠️</span>
+  <span class="callout-icon">🍂</span>
   <div class="callout-body">
-    <p class="callout-title">오늘 14:00 풀코스 일반접수 시작 — 지금 대기하세요 (창설 80주년·제80회)</p>
-    <p><strong>풀코스 일반접수가 오늘 2026-07-14(화) 14:00에 시작</strong>됩니다. 10K는 이틀 뒤 2026-07-16(목) 14:00입니다. 매년 선착순 접수는 수 분 내 마감되니 <strong>지금 바로 공식 홈페이지에 로그인해두고 결제수단·신청 정보를 준비</strong>한 뒤 14:00 정각에 새로고침하며 대기하세요. 최신 정보는 공식 홈페이지 <a href="https://www.chuncheonmarathon.com/" rel="noopener noreferrer">chuncheonmarathon.com</a>과 인스타그램 <a href="https://www.instagram.com/chuncheon_marathon/" rel="noopener noreferrer">@chuncheon_marathon</a>에서 확인하세요.</p>
+    <p class="callout-title">본접수는 끝났지만 추가접수가 열립니다 — 풀 9/8, 10K 9/9</p>
+    <p>이 글이 다루는 <strong>7월 본접수(풀 7/14·10K 7/16)는 모두 마감</strong>됐습니다. 다만 미결제분과 취소분으로 <strong>추가 참가신청</strong>이 열립니다 — 풀코스 <strong>9월 8일(화) 14시</strong>, 10km <strong>9월 9일(수) 14시</strong> 선착순이고 <strong>결제는 9월 10일(목) 10~18시 하루뿐</strong>입니다(공식 공지 2026-09-02). 일정과 함정은 <a href="/blog/chuncheon-marathon-additional-registration"><strong>춘천마라톤 추가접수 정리</strong></a>에 따로 적어뒀습니다. 아래 본문의 <strong>코스 분석·페이스 전략·대회장 접근</strong>은 그대로 유효합니다.</p>
   </div>
 </div>
 
