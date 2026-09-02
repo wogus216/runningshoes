@@ -35,8 +35,13 @@ https://allrunabout.com/blog/disney-run-incheon-guide
 
 ```bash
 cd ~/Programming/sancho/runningshoes
-npm run naver:rank -- "site:allrunabout.com/marathon"
+npm run naver:rank -- "2026 아식스 서울신문 고프리런"
 ```
+
+> ⚠️ 2026-09-02 실측: `site:` 연산자 쿼리는 웹문서 탭에서도 **항상 403**이라 못 쓴다 — 일반 검색어로 대체했다.
+> 통합검색(where 없음)·블로그탭도 403 이라 스크립트 기본값을 `where=web` 으로 바꿨다.
+> 그리고 **같은 IP 에서 10건쯤 연속 조회하면 웹문서 탭까지 전부 403** 으로 바뀐다(몇 분 뒤 풀리는지 미확인).
+> 하루에 한 번, 검색어 3~4개만 묶어서 돌릴 것. 그래도 막히면 Chrome MCP 로 검색 화면을 직접 보는 게 폴백이다.
 
 **판정**: 출력의 "제목"이 어떻게 나오는가
 

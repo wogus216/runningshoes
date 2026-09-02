@@ -12,7 +12,7 @@
  * 처방이 완전히 달라지는 갈림길이라 이 수치가 필요하다.
  *
  * 구글은 자동화를 캡차로 막지만(2026-08-31 실측: Chrome MCP·Playwright 모두 실패)
- * **네이버는 UA 만 지정하면 curl 로 그대로 받아진다.**
+ * **네이버는 UA 만 지정하면 curl 로 그대로 받아진다** — 단 2026-09-02 부터 통합검색·블로그탭은 403, 웹문서 탭(where=web)만 200 이라 기본값이 web 이다.
  */
 const UA =
   'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
@@ -73,7 +73,9 @@ function rankList(html: string): Hit[] {
 
 async function main() {
   const argv = process.argv.slice(2);
-  const where = argv.find((a) => a.startsWith('--where='))?.slice(8) ?? '';
+  // 2026-09-02: 통합검색(where 없음)·블로그탭이 UA 만으로는 HTTP 403 을 돌려주기 시작했다.
+  // 웹문서 탭(where=web)은 여전히 200 이라 기본값을 web 으로 옮긴다. 통합검색이 필요하면 --where= 로 비운다.
+  const where = argv.find((a) => a.startsWith('--where='))?.slice(8) ?? 'web';
   const queries = argv.filter((a) => !a.startsWith('--'));
   if (!queries.length) {
     console.error('사용법: npm run naver:rank -- "<검색어>" [...]');
