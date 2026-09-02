@@ -37,8 +37,10 @@
 | 처리일 | 대상 | 작업 |
 |---|---|---|
 | **2026-09-01** | `sangju-gotgam-marathon-2026` (november.ts) | 8/31까지 환불 후 2차 접수 개시 여부 확인(mara1080 공지). 열리면 접수중 복귀 |
-| **2026-09-01** | `gochang-dolmen-marathon-2026` (november.ts) | 접수 8/31 14시 마감 → `마감` |
+| ~~2026-09-01~~ | ~~`gochang-dolmen-marathon-2026`~~ | ✅ 2026-09-02 `마감` 처리(cdc3454) |
 | **2026-09-02** | `geumsan-goldrun-marathon-2026` | 접수 9/1 마감 → `마감` |
+| **2026-09-05경** | `style-run-2026` | 롯데백화점몰 매진 여부 눈확인 → 매진이면 `마감` + 블로그 `style-run` strip. 정원 7,000명(작년 5시간 매진) |
+| **2026-10-22** | `go-free-run-2026` | 환불 마감 10/21 17시 = 접수 마감으로 추정 → 공식 홈 재확인 후 `마감`. 조기 소진 공지 뜨면 즉시 |
 | **2026-09-04** | `lotteria-baebulrun-2026` | 접수 9/3 23:59 마감 → `마감`. 정원 2,000명 조기소진 공지 뜨면 즉시. 블로그 `lotteria-baebulrun-2026`의 deadline-strip·접수 서술도 같이 마감 시제로 |
 | **2026-09-07** | `ytn-seoul-tour-marathon-2026` | 대회(9/6) 익일 → `대회종료`. 티셔츠 공급사 표기 충돌(프로스펙스 vs 무신사) 실물 확인 시 정리 |
 | **2026-09-08** | `chuncheon-marathon-2026` 추가접수 | 풀 9/8 14시 · 10K 9/9 14시 신청 → **9/10 18시 결제 마감 직후 `마감`으로**. 선착순이라 그 전에 소진되면 공식 공지(board.chosun.com) 확인 후 즉시. 블로그 `chuncheon-marathon-additional-registration` 의 deadline-strip 도 함께 |
