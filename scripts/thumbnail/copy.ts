@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 2026 하트런 공식 홈페이지(heartrun.co.kr, 2026-09-03 확인) — 행사개요(10/10 올림픽공원
+  // 피크닉장, 10K·5K 각 1,000명, 5만원), 참가신청 상품 옵션("뛰어서/걸어서"), FAQ(코스 운영 12시까지),
+  // 공지 「참가 신청 안내」(1차 ~9/17 23:59, 2차 9/21 13시~9/25).
+  'heart-run': {
+    title: '하트런, 걸어서 완주해도 되는 기부런',
+    subtitle: '코스는 12시에 닫힌다 — 걷기라면 5km가 편하다',
+    data: '10월 10일 올림픽공원 · 10K·5K 각 1,000명 · 5만원 · 1차 접수 ~9/17',
+  },
   // 출처: TCS Sydney Marathon 공식 2027 Ballot 페이지(2026-09-01 확인, 응모 무료·지원
   // 123,000명·출발 40,000석) + 정확한 일시는 Time Out Australia 2026-09-01 보도
   // (현지 9/29 10시 AEST ~ 10/19 10시 AEDT). 한국시각 환산은 서머타임(10/4 시작) 반영.
