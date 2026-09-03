@@ -444,7 +444,7 @@ export const novemberEvents: MarathonEvent[] = [
     location: '고양종합운동장 (경기 고양시)',
     region: '경기',
     distances: ['하프', '10K'],
-    status: '마감',
+    status: '접수중',
     isMajor: true,
     website: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
     description:
@@ -468,11 +468,11 @@ export const novemberEvents: MarathonEvent[] = [
       expectedParticipants: 12000,
       startTime: '하프 08:00 / 10K 08:20',
     },
-    registrationStart: '2026-07-01',
-    registrationEnd: '2026-07-03',
+    registrationStart: '2026-09-03',
+    registrationEnd: '2026-09-30',
     registrationNote:
-      '본접수는 추첨제 — 7월 1일(수) 14시~3일(금) 17시 신청, 7월 7일(화) 14시 당첨자 발표, 7월 9일(목) 16시까지 결제 완료해야 확정. 포러너 스페셜 패키지는 6월 23일~7월 10일 선착순으로 별도 운영됐습니다.',
-    lastVerified: '2026-08-29',
+      '추가접수 진행 중 — 9월 3일(목) 14시부터 9월 30일(수) 17시까지 러너블(runable.me)에서 선착순. 하프 80,000원·10K 60,000원으로 본접수와 같고, 정원은 미공개이며 조기 종료될 수 있습니다. 선착순이 끝나도 취소로 생긴 잔여 티켓을 수시로 다시 엽니다. 환불은 9월 30일 17시까지 100%(러너블 상품 페이지 2026-09-03 확인). 앞선 본접수는 추첨제였습니다 — 7월 1~3일 신청, 7일 발표, 9일 결제 마감. 포러너 스페셜 패키지는 6월 23일~7월 10일 선착순으로 별도 운영됐습니다.',
+    lastVerified: '2026-09-03',
   },
   {
     id: 'gochang-dolmen-marathon-2026',
