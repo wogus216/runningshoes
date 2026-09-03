@@ -38,6 +38,19 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 러너블 추가접수 상품 페이지(runable.me/product/19627, 2026-09-03 확인) — 9/3 14:00~9/30 17:00 선착순,
+  // 하프 8만·10K 6만, 취소분 수시 오픈, 환불 9/30 17:00.
+  'garmin-run-korea-additional-registration': {
+    title: '가민런 추가접수, 이번엔 선착순',
+    subtitle: '환불 마감이 접수 마감과 같아 취소분이 9월 내내 풀린다',
+    data: '9/3 14시 ~ 9/30 17시 러너블 · 하프 8만 / 10K 6만 · 11월 15일 고양',
+  },
+  // 출처: 런플리(@run_playlist) 2026-09-01 협찬 게시물 — 9/6(일) 08시, 500명, 2km+3km 보물찾기, 종일권 포함, 참가비 미공개.
+  'lotte-world-busan-water-run': {
+    title: '롯데월드 부산, 개장 전 5km 워터런',
+    subtitle: '종일권이 딸려오는데 참가비는 미공개, 접수는 DM으로만',
+    data: '9월 6일(일) 08시 · 500명 · 파크 2km + 보물찾기 3km · 물폭탄',
+  },
   // 출처: 2026 푸르메런 공식 홈페이지(purmerun.com, 2026-09-03 확인) — 대회요강(11/7 월드컵공원
   // 평화광장, 10K 5만·3K 걷기 2만, 2,300/700명, 영수증 불가), 코스도(4~6km 비포장), 유의사항(취소 9/23 17시).
   'purme-run': {

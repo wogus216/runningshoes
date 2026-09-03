@@ -9780,7 +9780,16 @@ export const posts_2026_06: BlogPost[] = [
     category: 'news' as const,
     readingTime: 6,
     tags: ['가민런 코리아', '가민런 메달', '레이스 패키지', '가민 포러너', '마라톤 기념품', '가민런 접수', '포러너 170', '래플 추첨'],
+    event: {
+      name: '2026 가민런 코리아 (Garmin Run Korea)',
+      startDate: '2026-11-15',
+      location: { name: '고양종합운동장', address: '경기 고양시' },
+      organizer: '가민코리아 · 러너블',
+      url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
+    },
     content: `
+<div class="deadline-strip">⏰ <strong>(9/4 갱신) 추가접수가 열렸습니다 — 9월 3일(목) 14시 ~ 9월 30일(수) 17시, 러너블 선착순.</strong> 하프 80,000원·10K 60,000원, 취소분은 수시 재오픈. 자세한 조건은 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>에 정리했습니다.</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
@@ -10840,7 +10849,16 @@ export const posts_2026_06: BlogPost[] = [
     category: 'news' as const,
     readingTime: 8,
     tags: ['가민런', '가민런 코리아', '2026 가민런', '하프마라톤', '고양 마라톤', '가민 워치', '마라톤 접수', '래플 추첨', '데이터 러닝'],
+    event: {
+      name: '2026 가민런 코리아 (Garmin Run Korea)',
+      startDate: '2026-11-15',
+      location: { name: '고양종합운동장', address: '경기 고양시' },
+      organizer: '가민코리아 · 러너블',
+      url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
+    },
     content: `
+<div class="deadline-strip">⏰ <strong>(9/4 갱신) 추가접수가 열렸습니다 — 9월 3일(목) 14시 ~ 9월 30일(수) 17시, 러너블 선착순.</strong> 하프 80,000원·10K 60,000원, 취소분은 수시 재오픈. 자세한 조건은 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>에 정리했습니다.</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
