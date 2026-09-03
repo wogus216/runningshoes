@@ -309,6 +309,7 @@ const today = new Date().toISOString().slice(0, 10);
 
 let marathonOk = true;
 let eventCount = 0;
+const noRegEndOpen = []; // [C] 마감일 없는 접수중·접수예정 — 마감을 감지할 방법이 없는 구멍
 const seenEventIds = new Map();
 
 if (!fs.existsSync(marathonDir)) {
@@ -391,6 +392,27 @@ if (!fs.existsSync(marathonDir)) {
           }
         }
 
+        // ★ 낡은 접수 상태 스캔 — 날짜에서 기계적으로 파생되는 것만 잡는다.
+        // 2026-08-31 손으로 돌린 [A][B][C] 스캔을 여기 편입(사람 기억 → 커밋 관문).
+        // 단 "마감일 지났으니 마감" 일괄 처리는 금지 — 선착순 대회는 연장·재접수가 흔하다.
+        // 에러 메시지는 '공식 확인 후'를 전제로 쓴다.
+        const regStart = pick(/registrationStart:\s*'([^']+)'/);
+        if (status === '접수예정' && regStart && regStart < today) {
+          error(
+            `[marathon] ${name}: registrationStart(${regStart})가 지났는데 status가 '접수예정' → 공식 확인 후 '접수중'(또는 조기 마감이면 '마감')으로`,
+          );
+          marathonOk = false;
+        }
+        if ((status === '접수예정' || status === '접수중') && regEnd && regEnd < today) {
+          error(
+            `[marathon] ${name}: registrationEnd(${regEnd})가 지났는데 status가 '${status}' → 공식 확인 후 '마감'(연장됐으면 registrationEnd 갱신)`,
+          );
+          marathonOk = false;
+        }
+        if ((status === '접수예정' || status === '접수중') && !regEnd && date >= today) {
+          noRegEndOpen.push(`${id}(${date})`);
+        }
+
         // 코스 GPX — 추정 경로를 실측처럼 보이게 하지 않는 게 핵심이다
         const gpxBlock = (block.match(/gpx:\s*\{([\s\S]*?)\n\s{6}\}/) || [])[1];
         if (gpxBlock) {
@@ -445,6 +467,13 @@ if (!fs.existsSync(marathonDir)) {
     });
 
   if (marathonOk) ok(`마라톤 대회 ${eventCount}개 status/날짜 일관성 통과`);
+  if (noRegEndOpen.length) {
+    // 에러가 아니라 목록이다 — 선착순 "마감시까지" 대회는 마감일이 없는 게 정상일 수 있다.
+    // 대신 이 목록은 "자동으로 마감을 감지할 수 없는 대회"이므로 사람이 공식 페이지를 봐야 한다.
+    console.log(
+      `  ℹ️  마감일(registrationEnd) 없는 접수중·접수예정 ${noRegEndOpen.length}건 — 자동 마감 감지 불가, 공식 확인 필요:\n     ${noRegEndOpen.join(' · ')}`,
+    );
+  }
 }
 console.log('');
 
