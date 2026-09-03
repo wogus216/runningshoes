@@ -104,6 +104,7 @@ export const shoe: Shoe = {
 
   similarShoes: ['nike-zoom-fly-6', 'adidas-boston-13', 'saucony-endorphin-speed-5', 'asics-magic-speed-4'],
   relatedPosts: [
+    { slug: 'asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026', title: '매직스피드 5 vs 슈퍼블라스트 3 — 카본 든 쪽이 더 잘 휜다' },
     { slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026', title: '매직스피드 5 vs 줌 플라이 6 — 같은 22.9만원, 55g이 갈린다' },
     { slug: 'carbon-shoes-not-for-everyone-2026', title: '카본화가 나한테도 맞을까 — 사기 전 자가진단' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
