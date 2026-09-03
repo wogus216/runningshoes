@@ -64,7 +64,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '세그멘트 러버',
     upper: '더블레이어 엔지니어드 메쉬',
-    width: '표준(좁음) / 와이드 / X-와이드',
+    width: '표준(좁음) / 와이드 — 한국 공식몰 기준 여성 와이드만 확인(2026-09-03), 남성 와이드·X-와이드 미등재 · RunRepeat 랩 토박스 69.6mm',
     durability: '600-650km',
     price: '₩189,000 (MSRP)',
     costPerKm: '약 ₩291/km (650km 기준)',
@@ -96,6 +96,7 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'hoka-bondi-9'],
   relatedPosts: [
+    { slug: 'nike-vomero-18-vs-vomero-plus-max-cushion-2026', title: '보메로 18 vs 보메로 플러스 — 뒤꿈치는 같고 앞발이 다르다' },
     { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '보메로 18 vs 메가블라스트 — 둘 다 쿠션 10점, 80g 차' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xv6kWolx' }],
