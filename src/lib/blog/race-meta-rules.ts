@@ -105,7 +105,7 @@ export function extractStripText(content: string): string | null {
  * 새 글은 raceMeta 를 쓰거나 최소한 event.startDate 를 넣어야 하고,
  * 기존 글을 손볼 때 앵커를 채웠다면 이 값을 함께 낮춘다.
  */
-export const STRIP_WITHOUT_ANCHOR_BASELINE = 10;
+export const STRIP_WITHOUT_ANCHOR_BASELINE = 4; // 2026-09-03 10→4: 메이저 5편·디즈니·보스턴에 event 앵커 추가. 남은 4편(SC 레벨 프리뷰·런칭, 10월 펀런 비교, 스우시 러너스)은 대회 글이 아니라 앵커가 부적절
 
 /**
  * deadline-strip 을 가진 글 전체를 훑는다. raceMeta 유무와 무관하게 적용된다는 점이

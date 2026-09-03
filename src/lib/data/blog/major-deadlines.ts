@@ -90,7 +90,7 @@ export const MAJOR_DEADLINES = {
   boston2027: {
     name: '보스턴마라톤 2027',
     raceDate: '2027-04-19',
-    statusLabel: 'BQ 기록자만 · 등록주간 2026년 9월',
+    statusLabel: 'BQ 기록자만 · 등록주간 9/14~18(ET 17시 마감) · 합격 통보 10월 초 · 컷오프 미달 약 1,000명 무작위 선발 신설',
     note: '추첨 없음. BQ(Boston Qualifying) 기록 보유자만. 커트오프는 기준 대비 수 분 여유 필요. 자선 경로 별도.',
     intlEligible: true,
   },
@@ -104,11 +104,11 @@ export const MAJOR_DEADLINES = {
   },
   london2027: {
     name: '런던마라톤 2027',
-    raceDate: '2027-04-25',
-    statusLabel: '추첨 마감(5/1) · 7월 결과 발표',
+    raceDate: '2027-04-24', // 사상 첫 이틀 개최 — 4/24(토) 45,000 + 4/25(일) 55,000 (공식 2026-07-09 발표)
+    statusLabel: '추첨 결과 발표됨(7/9) · 2027은 4/24~25 이틀 개최 · 지원 1,338,544명',
     ballotResult: '2026-07',
     intlEligible: true,
-    note: '세계 최다 추첨 경쟁(113만+ 신청). 다음 발롯 대비 + 코스 가이드 각도.',
+    note: '세계 최다 추첨 경쟁(공식 확정 1,338,544명). 다음 발롯 대비 + 코스 가이드 각도. 총 정원 100,000명(이틀 합산).',
   },
   berlin2026: {
     name: '베를린마라톤 2026',

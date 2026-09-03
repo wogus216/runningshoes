@@ -4305,6 +4305,14 @@ export const posts_2026_06: BlogPost[] = [
     author: '산초 에디터',
     publishedAt: '2026-06-13',
     updatedAt: '2026-07-03',
+    event: {
+      name: '런던마라톤 2027 (이틀 개최)',
+      startDate: '2027-04-24',
+      endDate: '2027-04-25',
+      location: { name: '런던 (그리니치 출발)', address: '영국 런던' },
+      organizer: 'London Marathon Events',
+      url: 'https://www.londonmarathonevents.co.uk/',
+    },
     category: 'news' as const,
     readingTime: 9,
     tags: ['런던마라톤', '런던마라톤 2027', '세계 6대 마라톤', '메이저 마라톤', '마라톤 발롯', '자선 마라톤', '영국 ETA', '평지 PB', '식스스타', '마라톤 추첨'],
@@ -4557,6 +4565,13 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/new-york-marathon-2026-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    event: {
+      name: '뉴욕시티마라톤 2026',
+      startDate: '2026-11-01',
+      location: { name: '뉴욕 (스태튼아일랜드 출발)', address: '미국 뉴욕' },
+      organizer: 'New York Road Runners',
+      url: 'https://www.nyrr.org/tcsnycmarathon',
+    },
     category: 'news' as const,
     readingTime: 9,
     tags: ['뉴욕시티마라톤', '뉴욕마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '5개 자치구', '마라톤 추첨', 'NYRR'],
@@ -4817,6 +4832,14 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/boston-marathon-2027-bq-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    updatedAt: '2026-09-03',
+    event: {
+      name: '보스턴마라톤 2027',
+      startDate: '2027-04-19',
+      location: { name: '보스턴 (홉킨턴 출발)', address: '미국 보스턴' },
+      organizer: 'Boston Athletic Association',
+      url: 'https://www.baa.org/',
+    },
     category: 'guide' as const,
     readingTime: 9,
     tags: ['보스턴마라톤', '보스턴마라톤 2027', 'BQ', '보스턴 퀄리파잉', '세계 6대 마라톤', '메이저 마라톤', '마라톤 자격기록', '서울마라톤', '식스스타', '마라톤 기록 단축'],
@@ -4889,7 +4912,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월) 종료 후에야 발표</strong>되므로 지금 단정할 수 없습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
+<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월 14~18일, 미 동부시간 18일 17시 마감) 종료 후 10월 초에 발표</strong>되므로 지금 단정할 수 없습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
 
 <h2>★국내에서 BQ 만들기 — 미국 원정은 필요 없습니다</h2>
 
@@ -5174,6 +5197,13 @@ export const posts_2026_06: BlogPost[] = [
     author: '산초 에디터',
     publishedAt: '2026-06-13',
     updatedAt: '2026-09-01',
+    event: {
+      name: '시드니마라톤 2026',
+      startDate: '2026-08-30',
+      location: { name: '시드니 (밀슨스포인트 출발)', address: '호주 시드니' },
+      organizer: 'TCS Sydney Marathon',
+      url: 'https://sydneymarathon.com/',
+    },
     category: 'news' as const,
     readingTime: 8,
     tags: ['시드니마라톤', '시드니마라톤 2026', '세계 7대 마라톤', '메이저 마라톤', '식스스타', '마라톤 해외원정', '자선 마라톤', '하버브리지', '마라톤 추첨', '해외 마라톤 신청'],
@@ -5285,6 +5315,13 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/chicago-marathon-2026-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    event: {
+      name: '시카고마라톤 2026',
+      startDate: '2026-10-11',
+      location: { name: '시카고 (그랜트파크)', address: '미국 시카고' },
+      organizer: 'Bank of America Chicago Marathon',
+      url: 'https://www.chicagomarathon.com/',
+    },
     category: 'news' as const,
     readingTime: 8,
     tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
@@ -5380,6 +5417,13 @@ export const posts_2026_06: BlogPost[] = [
     author: '산초 에디터',
     publishedAt: '2026-06-13',
     updatedAt: '2026-09-01',
+    event: {
+      name: '도쿄마라톤 2027',
+      startDate: '2027-03-07',
+      location: { name: '도쿄 (도쿄도청 출발)', address: '일본 도쿄' },
+      organizer: '도쿄마라톤재단',
+      url: 'https://www.marathon.tokyo/',
+    },
     category: 'news' as const,
     readingTime: 10,
     tags: ['도쿄마라톤', '도쿄마라톤 2027', '도쿄마라톤 접수', '도쿄마라톤 추첨', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
@@ -9329,6 +9373,13 @@ export const posts_2026_06: BlogPost[] = [
     author: '산초 에디터',
     publishedAt: '2026-06-05',
     updatedAt: '2026-07-03',
+    event: {
+      name: '디즈니런 2026 인천',
+      startDate: '2026-10-24',
+      location: { name: '인천', address: '인천광역시' },
+      organizer: '디즈니런 코리아',
+      url: 'https://disneyrun.kr/',
+    },
     category: 'news' as const,
     readingTime: 6,
     tags: ['디즈니런', '디즈니런 2026', '디즈니 버추얼런', '디즈니런 인천', '버추얼런', '러닝 이벤트', '토이스토리', '인천 마라톤'],

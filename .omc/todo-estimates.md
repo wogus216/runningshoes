@@ -47,7 +47,8 @@
 | **2026-10-22** | `go-free-run-2026` | 환불 마감 10/21 17시 = 접수 마감으로 추정 → 공식 홈 재확인 후 `마감`. 조기 소진 공지 뜨면 즉시 |
 | **2026-09-05** | 검색 점검 ② (`.omc/todo-search-2026-09.md`) | `npm run naver:rank -- "2026 아식스 서울신문 고프리런"` — og:title 가설 확정/기각. 자세한 판정표는 그 파일 ② 절 |
 | **2026-09-07** | `incheon-marathon-2026` + 블로그 2편 | 14시 접수 개시 → `접수중`, 참가비·정원·코스 백필(공식 홈 COMING SOON 해제 확인). 6월 글 `2026-incheon-marathon` strip 도 시제 갱신. 검색 점검 ③ 절 병행 |
-| **2026-09-08경** | 세계 메이저 SSOT `major-deadlines.ts` 보스턴 2027 | 등록주간(9월 중순 패턴) 공식 일정 확인 → statusLabel 갱신 + `MAJOR_DEADLINES_AS_OF` |
+| **2026-09-19** | 세계 메이저 SSOT 보스턴 2027 + 블로그 `boston-marathon-2027-bq-guide` | 등록주간 9/14~18(ET) 종료 익일 → '접수 종료·합격 통보 10월 초 대기' 시제. 10월 초 통보 후 컷오프 수치 반영 |
+| **2026-10-01** | `on-cloudmonster-3-hyper-lightspray` | On 공식몰 재입고 확인(3회 연속 sold out 으로 9/3 구매 링크 제거). 재입고면 purchaseLinks 복구 — GitHub 이슈 #12·#13·#14 가 같은 건 |
 | **2026-09-16** | 세계 메이저 SSOT 시카고 2026 | 자선 9/15 마감 경과 → statusLabel '자선 마감'. 대회 10/11 |
 | **2026-09-20경** | 세계 메이저 SSOT 도쿄 2027 | 추첨 결과 발표(9월) 확인 → statusLabel '결과 발표·당첨자 참가비 납부' 시제로. 블로그 `tokyo-marathon-2027-registration-guide` 도 |
 | **2026-09-22** | 검색 점검 ④ (`.omc/todo-search-2026-09.md`) | 제목 규칙 A/B 1차 판정(구글, 9/22~29 창). 판정표는 그 파일 ④ 절 |

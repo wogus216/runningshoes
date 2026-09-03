@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     upper: 'LightSpray 로봇 스프레이 일체형 (약 33g, 솔기·끈·힐카운터 없음)',
     width: '표준 (와이드 없음)',
     durability: '480-640km (어퍼 장기 내구성 미검증)',
-    price: '₩319,000 (On 한국 공식)',
+    price: '₩319,000 (On 한국 공식) — 공식몰 품절 표시(2026-08-01~09-01 자동 링크 점검 3회 연속 sold out, 2026-09-03 구매 링크 제거. 재입고 확인 시 복구)',
     costPerKm: '약 ₩798/km (400km 기준)',
     footType: '중립',
     landingPattern: '미드풋 중심',
@@ -106,5 +106,4 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교' },
   ],
-  purchaseLinks: [{ store: 'On 공식', url: 'https://www.on.com/en-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex' }],
 };

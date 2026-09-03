@@ -75,3 +75,4 @@ public/sitemap*.xml
 /private/challenge/
 public/images/challenge/saturday/_inbox/
 .superpowers/
+/tsconfig.tsbuildinfo
