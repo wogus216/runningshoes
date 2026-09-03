@@ -1,6 +1,6 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "맞춤 러닝화 추천 | AI 기반 개인화 추천",
@@ -82,25 +82,7 @@ const faqJsonLd = {
   ],
 };
 
-// BreadcrumbList 스키마
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "홈",
-      "item": SITE_URL,
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "맞춤 러닝화 추천",
-      "item": `${SITE_URL}/recommend`,
-    },
-  ],
-};
+const breadcrumbLd = breadcrumbJsonLd([{ name: '맞춤 러닝화 추천', path: '/recommend' }]);
 
 export default function RecommendLayout({
   children,
@@ -115,7 +97,7 @@ export default function RecommendLayout({
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       {children}
     </>

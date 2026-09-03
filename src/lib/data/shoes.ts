@@ -8,6 +8,7 @@ export {
   groupShoesByBrand,
   getBrandsFromShoes,
   getShoeBySlug,
+  getCompleteShoesByBrand,
   getSimilarShoesData,
   toCardShoe,
   getCardShoes,

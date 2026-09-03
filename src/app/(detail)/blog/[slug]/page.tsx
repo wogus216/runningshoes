@@ -5,8 +5,10 @@ import Link from 'next/link';
 import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPostsMeta } from '@/lib/data/blog';
+import { formatDateKo } from '@/lib/format';
 import { categoryLabels } from '@/types/blog';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { RelatedPostCard } from '@/components/blog/related-post-card';
 import { TableOfContents } from '@/components/blog/table-of-contents';
 import { FaqSection } from '@/components/blog/faq-section';
@@ -88,11 +90,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = getRelatedPostsMeta(slug);
 
-  const publishDate = new Date(post.publishedAt).toLocaleDateString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const publishDate = formatDateKo(post.publishedAt);
 
   const articleImage = post.thumbnail
     ? (post.thumbnail.startsWith('http') ? post.thumbnail : `${SITE_URL}${post.thumbnail}`)
@@ -124,15 +122,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     keywords: post.tags.join(', '),
   };
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: '블로그', item: `${SITE_URL}/blog` },
-      { '@type': 'ListItem', position: 3, name: post.title, item: `${SITE_URL}/blog/${slug}` },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: '블로그', path: '/blog' },
+    { name: post.title, path: `/blog/${slug}` },
+  ]);
 
   const faqJsonLd = post.faqs && post.faqs.length > 0 ? {
     '@context': 'https://schema.org',
@@ -179,7 +172,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}

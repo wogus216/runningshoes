@@ -1,4 +1,5 @@
 import type { Shoe, KoreanFootFit } from '@/types/shoe';
+import { isCompleteShoe } from '@/types/shoe';
 import { categoryOrder as sharedCategoryOrder } from '@/types/shoe';
 import { resolveDurabilityRange } from '@/lib/durability';
 import { nikeShoes } from './nike';
@@ -73,6 +74,15 @@ export function getBrandsFromShoes(shoesList: Shoe[] = shoes): string[] {
     return _defaultBrands;
   }
   return Array.from(new Set(shoesList.map((shoe) => shoe.brand))).sort();
+}
+
+/**
+ * 브랜드 페이지 3곳(브랜드 목록·브랜드 상세·기술 가이드)이 쓰는 술어를 한 곳에 둔다.
+ * 2026-09-03 이전에는 기술 가이드만 `isCompleteShoe` 없이 대소문자 무시 비교를 써서
+ * 셋이 미묘하게 달랐다(당시 실데이터에서는 결과가 같았음).
+ */
+export function getCompleteShoesByBrand(brandName: string, shoesList: Shoe[] = shoes): Shoe[] {
+  return shoesList.filter((s) => s.brand === brandName && isCompleteShoe(s));
 }
 
 export function getShoeBySlug(slug: string): Shoe | undefined {

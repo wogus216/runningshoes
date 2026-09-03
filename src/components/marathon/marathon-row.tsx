@@ -1,16 +1,8 @@
 import Link from 'next/link';
 import type { MarathonEvent } from '@/types/marathon';
 import { daysUntil } from '@/lib/marathon/bands';
+import { formatDateShortKo } from '@/lib/format';
 import styles from './marathon-list.module.css';
-
-const WEEKDAY = ['일', '월', '화', '수', '목', '금', '토'];
-
-/** '2026-08-16' → '8/16 토' */
-function formatDate(iso: string): string {
-  const d = new Date(`${iso}T00:00:00Z`);
-  if (Number.isNaN(d.getTime())) return iso;
-  return `${d.getUTCMonth() + 1}/${d.getUTCDate()} ${WEEKDAY[d.getUTCDay()]}`;
-}
 
 /**
  * 상태 칸.
@@ -41,7 +33,7 @@ export function MarathonRow({
   const state = stateLabel(event, today);
   return (
     <Link className={styles.row} href={`/marathon/${event.id}`} hidden={folded}>
-      <span className={styles.date}>{formatDate(event.date)}</span>
+      <span className={styles.date}>{formatDateShortKo(event.date)}</span>
       <span className={styles.name}>
         {event.name}
         {event.isMajor && <span className={styles.major}>MAJOR</span>}

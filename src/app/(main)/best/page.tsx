@@ -4,6 +4,7 @@ import { ArrowRight, Footprints, MapPin, Heart, Wallet, Layers } from 'lucide-re
 import { getAllMatrices, getMatrixShoes } from '@/lib/pseo/matrices';
 import { getShoes } from '@/lib/data/shoes';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 
 const SHOE_COUNT = getShoes().length;
 
@@ -75,14 +76,7 @@ export default function BestHubPage() {
     },
   };
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: '베스트', item: `${SITE_URL}/best` },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([{ name: '베스트', path: '/best' }]);
 
   return (
     <div className="space-y-12">
@@ -92,7 +86,7 @@ export default function BestHubPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <header className="space-y-4">
         <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-2 text-sky-700">

@@ -18,9 +18,9 @@
  * 2. **절대 TOP만 뽑지 않는다.** 1위가 고착되면 나머지 신발이 영영 안 보인다.
  *    카테고리별 1위 + 급상승으로 노출을 분산한다.
  */
+import { resolveKeyFile, displayKeyPath } from './lib/google-auth';
 import { BetaAnalyticsDataClient } from '@google-analytics/data';
-import { readdirSync, statSync, existsSync, writeFileSync } from 'fs';
-import { homedir } from 'os';
+import { writeFileSync } from 'fs';
 import { join } from 'path';
 import { getShoes } from '../src/lib/data/shoes';
 import { categoryOrder } from '../src/types/shoe';
@@ -43,25 +43,6 @@ const POST_COUNT = 5;
  * 더럽히면 안 되기 때문이다.
  */
 const OUT_PATH = process.env.POPULAR_OUT || join(process.cwd(), 'src/lib/data/popular.ts');
-
-// ── GA 클라이언트 (ga-report.ts와 동일한 키 해석) ──────────
-
-function resolveKeyFile(): string {
-  if (process.env.GA_KEY_FILE) return process.env.GA_KEY_FILE;
-  const downloads = join(homedir(), 'Downloads');
-  try {
-    const matches = readdirSync(downloads)
-      .filter((f) => /^blog-auto-494801-.*\.json$/.test(f))
-      .map((f) => join(downloads, f))
-      .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
-    if (matches.length) return matches[0];
-  } catch {
-    /* Downloads 나열 불가 시 아래로 폴백 */
-  }
-  const local = join(process.cwd(), '.ga-key.json');
-  if (existsSync(local)) return local;
-  return join(downloads, 'blog-auto-494801-4f5d2392338c.json');
-}
 
 const KEY_FILE = resolveKeyFile();
 const PROPERTY_ID = process.env.GA_PROPERTY_ID || '523714985';
@@ -103,7 +84,7 @@ function slugFrom(path: string, prefix: string): string | null {
 async function main() {
   const days = Number(process.argv[2]) || 28;
   console.log(`\n📈 인기 데이터 생성 — 최근 ${days}일 vs 이전 ${days}일`);
-  console.log(`🔑 키: ${KEY_FILE.replace(homedir(), '~')}\n`);
+  console.log(`🔑 키: ${displayKeyPath(KEY_FILE)}\n`);
 
   const [cur, prev] = await Promise.all([
     fetchViews(`${days}daysAgo`, 'today'),

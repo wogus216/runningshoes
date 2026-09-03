@@ -2,17 +2,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { BlogCardMeta, categoryLabels } from '@/types/blog';
 import { img } from '@/lib/image';
+import { formatDateKo } from '@/lib/format';
 
 interface BlogCardProps {
   post: BlogCardMeta;
 }
 
 export function BlogCard({ post }: BlogCardProps) {
-  const publishDate = new Date(post.publishedAt).toLocaleDateString('ko-KR', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric',
-  });
+  const publishDate = formatDateKo(post.publishedAt);
 
   const thumbnail = post.thumbnail;
 

@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { getAllPairs } from '@/lib/pseo/pairs';
 import { categoryOrder } from '@/types/shoe';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 
 export const metadata: Metadata = {
   title: '러닝화 1:1 비교 — 인기 페어 모음',
@@ -48,14 +49,7 @@ export default function VsHubPage() {
     },
   };
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: '1:1 비교', item: `${SITE_URL}/vs` },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([{ name: '1:1 비교', path: '/vs' }]);
 
   return (
     <div className="space-y-10">
@@ -65,7 +59,7 @@ export default function VsHubPage() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <header className="space-y-3">
         <h1 className="text-3xl md:text-4xl font-bold text-primary">러닝화 1:1 비교</h1>

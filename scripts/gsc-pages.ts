@@ -21,27 +21,8 @@
  *
  * 선행 조건은 gsc-report.ts와 동일(서비스 계정이 GSC 속성에 추가돼 있어야 함).
  */
+import { resolveKeyFile } from './lib/google-auth';
 import { JWT } from 'google-auth-library';
-import { readdirSync, statSync, existsSync } from 'fs';
-import { homedir } from 'os';
-import { join } from 'path';
-
-function resolveKeyFile(): string {
-  if (process.env.GA_KEY_FILE) return process.env.GA_KEY_FILE;
-  const downloads = join(homedir(), 'Downloads');
-  try {
-    const matches = readdirSync(downloads)
-      .filter((f) => /^blog-auto-494801-.*\.json$/.test(f))
-      .map((f) => join(downloads, f))
-      .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
-    if (matches.length) return matches[0];
-  } catch {
-    /* Downloads 접근 불가 시 로컬 키로 폴백 */
-  }
-  const local = join(process.cwd(), '.ga-key.json');
-  if (existsSync(local)) return local;
-  return join(downloads, 'blog-auto-494801-4f5d2392338c.json');
-}
 
 const SITE_CANDIDATES = process.env.GSC_SITE
   ? [process.env.GSC_SITE]

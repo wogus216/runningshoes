@@ -7,10 +7,11 @@ import {
   getAllBrandSlugs,
   getBrandBySlug,
 } from '@/lib/data/brands';
-import { shoes as allShoes } from '@/lib/data/shoes';
-import { isCompleteShoe } from '@/types/shoe';
+import { getCompleteShoesByBrand } from '@/lib/data/shoes';
+import { formatManwon } from '@/lib/format';
 import { categoryOrder } from '@/lib/data/shoes';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 
@@ -27,9 +28,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const brand = getBrandBySlug(brandSlug);
   if (!brand) return { title: '브랜드를 찾을 수 없습니다' };
 
-  const count = allShoes.filter(
-    (s) => s.brand === brand.name && isCompleteShoe(s),
-  ).length;
+  const count = getCompleteShoesByBrand(brand.name).length;
 
   const title = `${brand.name} 러닝화 전체 비교 — ${count}개 모델 분석 | ${brand.nameKo ?? ''}`;
   const description = `${brand.name}(${brand.nameKo ?? ''})의 러닝화 ${count}개 모델을 카테고리별로 정리. 핵심 기술, 가성비, 한국 러너 적합성까지 한눈에 비교합니다.`;
@@ -55,11 +54,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   };
 }
 
-function formatPrice(p?: number): string {
-  if (!p) return '-';
-  return `${(p / 10000).toFixed(0)}만원`;
-}
-
 function sortByValue(a: Shoe, b: Shoe): number {
   const av = a.priceAnalysis?.valueRating ?? 0;
   const bv = b.priceAnalysis?.valueRating ?? 0;
@@ -72,9 +66,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
   const brand = getBrandBySlug(brandSlug);
   if (!brand) notFound();
 
-  const brandShoes = allShoes
-    .filter((s) => s.brand === brand.name && isCompleteShoe(s))
-    .sort(sortByValue);
+  const brandShoes = getCompleteShoesByBrand(brand.name).sort(sortByValue);
 
   const grouped = categoryOrder
     .map((cat) => ({
@@ -86,20 +78,10 @@ export default async function BrandDetailPage({ params }: PageProps) {
   const topTechnologies = brand.technologies.slice(0, 4);
   const hasTechnologyPage = brand.technologies.length > 0;
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: `${SITE_URL}/` },
-      { '@type': 'ListItem', position: 2, name: '브랜드', item: `${SITE_URL}/brands` },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: brand.name,
-        item: `${SITE_URL}/brands/${brand.id}`,
-      },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: '브랜드', path: '/brands' },
+    { name: brand.name, path: `/brands/${brand.id}` },
+  ]);
 
   const itemListJsonLd = {
     '@context': 'https://schema.org',
@@ -119,7 +101,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
     <article className="space-y-10">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       <script
         type="application/ld+json"
@@ -231,7 +213,7 @@ export default async function BrandDetailPage({ params }: PageProps) {
                     {shoe.description}
                   </p>
                   <div className="flex flex-wrap gap-3 mt-2 text-xs text-tertiary">
-                    <span>가격 {formatPrice(shoe.price)}</span>
+                    <span>가격 {formatManwon(shoe.price)}</span>
                     {shoe.specs?.weight && <span>무게 {shoe.specs.weight}g</span>}
                     {shoe.biomechanics?.drop !== undefined && (
                       <span>드롭 {shoe.biomechanics.drop}mm</span>

@@ -5,6 +5,7 @@ import { ChevronRight, Check } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
+import { formatManwon } from '@/lib/format';
 import type { Shoe } from '@/types/shoe';
 import type { Route } from 'next';
 import { cn } from '@/lib/utils';
@@ -67,7 +68,7 @@ function describeDifference(base: Shoe, other: SimilarShoeInfo): string[] {
   if (bp != null && op != null) {
     const d = op - bp;
     if (Math.abs(d) >= 20000) {
-      notes.push({ text: d > 0 ? `${Math.round(d / 10000)}만원 비쌈` : `${Math.round(Math.abs(d) / 10000)}만원 저렴`, weight: Math.abs(d) / 30000 });
+      notes.push({ text: d > 0 ? `${formatManwon(d)} 비쌈` : `${formatManwon(Math.abs(d))} 저렴`, weight: Math.abs(d) / 30000 });
     }
   }
 

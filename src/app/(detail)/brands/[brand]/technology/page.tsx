@@ -2,8 +2,9 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import type { Metadata } from 'next';
 import { getBrandBySlug, getAllBrandSlugs } from '@/lib/data/brands';
-import { getShoes } from '@/lib/data/shoes';
+import { getCompleteShoesByBrand } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { BrandTechnologyHero } from '@/components/brand/brand-technology-hero';
 import { TechnologyList } from '@/components/brand/technology-list';
 
@@ -78,11 +79,7 @@ export default async function BrandTechnologyPage({ params }: BrandTechnologyPag
     notFound();
   }
 
-  // 이 브랜드의 신발 목록 가져오기
-  const allShoes = getShoes();
-  const brandShoes = allShoes.filter(
-    (shoe) => shoe.brand.toLowerCase() === brand.name.toLowerCase()
-  );
+  const brandShoes = getCompleteShoesByBrand(brand.name);
 
   // JSON-LD 구조화 데이터
   const jsonLd = {
@@ -105,30 +102,10 @@ export default async function BrandTechnologyPage({ params }: BrandTechnologyPag
   };
 
   // BreadcrumbList JSON-LD
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      {
-        '@type': 'ListItem',
-        position: 1,
-        name: '홈',
-        item: SITE_URL,
-      },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: brand.name,
-        item: `${SITE_URL}/brands/${brandSlug}`,
-      },
-      {
-        '@type': 'ListItem',
-        position: 3,
-        name: '기술 가이드',
-        item: `${SITE_URL}/brands/${brandSlug}/technology`,
-      },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: brand.name, path: `/brands/${brandSlug}` },
+    { name: '기술 가이드', path: `/brands/${brandSlug}/technology` },
+  ]);
 
   return (
     <>
@@ -139,7 +116,7 @@ export default async function BrandTechnologyPage({ params }: BrandTechnologyPag
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       <div className="space-y-6">

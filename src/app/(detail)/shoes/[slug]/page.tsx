@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
@@ -219,31 +220,10 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       })
     : [];
 
-  // BreadcrumbList 구조화 데이터
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [
-      {
-        '@type': 'ListItem',
-        'position': 1,
-        'name': '홈',
-        'item': SITE_URL,
-      },
-      {
-        '@type': 'ListItem',
-        'position': 2,
-        'name': shoe.brand,
-        'item': `${SITE_URL}/brands/${shoe.brand.toLowerCase().replace(/\s+/g, '-')}`,
-      },
-      {
-        '@type': 'ListItem',
-        'position': 3,
-        'name': `${shoe.brand} ${shoe.name}`,
-        'item': `${SITE_URL}/shoes/${slug}`,
-      },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: shoe.brand, path: `/brands/${shoe.brand.toLowerCase().replace(/\s+/g, '-')}` },
+    { name: `${shoe.brand} ${shoe.name}`, path: `/shoes/${slug}` },
+  ]);
 
   // Product JSON-LD 구조화 데이터
   // NOTE: aggregateRating과 review는 에디터 분석만으로 구성돼 있어 의도적으로 제외.
@@ -354,7 +334,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   return (
     <>
       {/* BreadcrumbList JSON-LD */}
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {/* Product JSON-LD */}
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
       {/* FAQ JSON-LD (동적 생성, 데이터 있을 때만) */}

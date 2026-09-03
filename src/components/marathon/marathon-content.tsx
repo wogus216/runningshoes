@@ -4,6 +4,7 @@ import { useEffect, useMemo, useState } from 'react';
 import type { MarathonEvent } from '@/types/marathon';
 import { useMarathonFilters } from '@/hooks/useMarathonFilters';
 import { groupIntoBands } from '@/lib/marathon/bands';
+import { localIsoDate } from '@/lib/format';
 import { MarathonChips } from './marathon-chips';
 import { MarathonBand } from './marathon-band';
 import styles from './marathon-list.module.css';
@@ -25,8 +26,7 @@ export function MarathonContent({ events, buildDate }: MarathonContentProps) {
    */
   const [today, setToday] = useState(buildDate);
   useEffect(() => {
-    const now = new Date();
-    const iso = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+    const iso = localIsoDate();
     if (iso !== buildDate) setToday(iso);
   }, [buildDate]);
 

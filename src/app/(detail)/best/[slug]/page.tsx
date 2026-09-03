@@ -10,6 +10,7 @@ import {
   BEST_PAGE_SHOE_LIMIT,
 } from '@/lib/pseo/matrices';
 import { getAllPairs } from '@/lib/pseo/pairs';
+import { formatManwon } from '@/lib/format';
 import { getShoes } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { img } from '@/lib/image';
@@ -66,11 +67,6 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       description: entry.metaDescription,
     },
   };
-}
-
-function formatPrice(p?: number): string {
-  if (!p) return '-';
-  return `${(p / 10000).toFixed(0)}만원`;
 }
 
 export default async function BestPage({ params }: PageProps) {
@@ -177,7 +173,7 @@ export default async function BestPage({ params }: PageProps) {
                   {shoe.oneliner || shoe.description}
                 </p>
                 <div className="flex flex-wrap gap-3 mt-2 text-xs text-tertiary">
-                  <span>가격 {formatPrice(shoe.price)}</span>
+                  <span>가격 {formatManwon(shoe.price)}</span>
                   {shoe.specs?.weight && <span>무게 {shoe.specs.weight}g</span>}
                   {shoe.biomechanics?.drop !== undefined && (
                     <span>드롭 {shoe.biomechanics.drop}mm</span>
@@ -221,7 +217,7 @@ export default async function BestPage({ params }: PageProps) {
                       {s.brand} {s.name}
                     </Link>
                   </td>
-                  <td className="p-3 text-right whitespace-nowrap">{formatPrice(s.price)}</td>
+                  <td className="p-3 text-right whitespace-nowrap">{formatManwon(s.price)}</td>
                   <td className="p-3 text-right whitespace-nowrap">
                     {s.specs?.weight ? `${s.specs.weight}g` : '-'}
                   </td>

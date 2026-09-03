@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Award, Scale } from 'lucide-react';
 import type { Shoe } from '@/types/shoe';
 import { getMatricesForShoe } from '@/lib/pseo/matrices';
+import { formatManwonExact } from '@/lib/format';
 import { getPairsForShoe } from '@/lib/pseo/pairs';
 
 const groupLabel: Record<string, string> = {
@@ -11,12 +12,6 @@ const groupLabel: Record<string, string> = {
   price: '예산',
   'brand-category': '브랜드',
 };
-
-/** 만원 단위로 읽기 좋게. 3만원·2.5만원처럼 소수 한 자리까지만 쓴다. */
-function formatManwon(won: number): string {
-  const man = won / 10000;
-  return `${Number.isInteger(man) ? man : man.toFixed(1)}만원`;
-}
 
 /**
  * 상대 신발이 이 신발과 무엇이 다른지 한 줄로 만든다.
@@ -29,7 +24,7 @@ function diffSummary(shoe: Shoe, other: Shoe): string | null {
 
   const priceGap = (other.price ?? 0) - (shoe.price ?? 0);
   if (shoe.price && other.price && Math.abs(priceGap) >= 10000) {
-    parts.push(`${formatManwon(Math.abs(priceGap))} ${priceGap < 0 ? '싸고' : '비싸고'}`);
+    parts.push(`${formatManwonExact(Math.abs(priceGap))} ${priceGap < 0 ? '싸고' : '비싸고'}`);
   }
 
   const weightGap = (other.specs?.weight ?? 0) - (shoe.specs?.weight ?? 0);

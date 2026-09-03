@@ -5,6 +5,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Heart, Trash2, Scale } from 'lucide-react';
 import { useSavedShoes, removeSavedShoe } from '@/lib/saved-shoes';
+import { formatManwon } from '@/lib/format';
 import { img } from '@/lib/image';
 
 type MinimalShoe = {
@@ -102,7 +103,7 @@ export function SavedShoesList({ allShoes }: Props) {
                 </p>
                 <p className="text-xs text-tertiary mt-0.5">
                   {shoe.category}
-                  {shoe.price && ` · ${(shoe.price / 10000).toFixed(0)}만원`}
+                  {shoe.price && ` · ${formatManwon(shoe.price)}`}
                 </p>
               </Link>
             </div>

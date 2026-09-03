@@ -3,7 +3,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
+import { formatDateKo } from '@/lib/format';
+import { META_DESC_MAX, truncateAtWord, formatFee, formatTimeLimit, feeSummary, splitSentences, getDaysUntil } from '@/lib/marathon/format';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText, Gift } from 'lucide-react';
 import { MarathonShoeBridge } from '@/components/marathon/shoe-bridge';
 import { CourseMap } from '@/components/marathon/course-map';
@@ -22,21 +25,6 @@ export function generateStaticParams() {
   }));
 }
 
-/** 검색 스니펫이 잘리는 지점. 한글은 대략 이 길이에서 끊긴다 */
-const META_DESC_MAX = 155;
-
-/** 문장·어절 경계에서 자른다 — 낱말 중간에서 끊긴 스니펫은 그 자체로 신뢰를 깎는다 */
-function truncateAtWord(text: string, max: number): string {
-  const clean = text.replace(/\*\*/g, '').replace(/\s+/g, ' ').trim();
-  if (!clean) return '';
-  if (clean.length <= max) return clean;
-  const cut = clean.slice(0, max - 1);
-  const sentenceEnd = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('다. '));
-  if (sentenceEnd > max * 0.5) return cut.slice(0, sentenceEnd + 1);
-  const space = cut.lastIndexOf(' ');
-  return (space > max * 0.5 ? cut.slice(0, space) : cut) + '…';
-}
-
 export async function generateMetadata({ params }: MarathonDetailPageProps): Promise<Metadata> {
   const { id } = await params;
   const event = getMarathonEventById(id);
@@ -49,7 +37,7 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   }
 
   // 날짜는 연도를 떼고(검색 시점에 그해 대회인 게 자명하다) 요일만 남긴다.
-  const shortDate = formatDate(event.date).replace(/^\d{4}년 /, '');
+  const shortDate = formatDateKo(event.date, { weekday: true }).replace(/^\d{4}년 /, '');
 
   // ── title ────────────────────────────────────────────────────────────
   // 2026-08-31 개편. 그 전에는 `{대회명} | {장소}` 였는데, 검색자가 원하는 단어가
@@ -88,12 +76,12 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   if (event.status === '접수중') {
     descParts.push(
       event.registrationEnd
-        ? `접수중 (${formatDate(event.registrationEnd)} 마감).`
+        ? `접수중 (${formatDateKo(event.registrationEnd, { weekday: true })} 마감).`
         : '접수중 (마감일 없이 선착순).',
     );
   } else if (event.status === '접수예정') {
     descParts.push(
-      event.registrationStart ? `접수 ${formatDate(event.registrationStart)} 시작.` : '접수 예정.',
+      event.registrationStart ? `접수 ${formatDateKo(event.registrationStart, { weekday: true })} 시작.` : '접수 예정.',
     );
   } else if (event.status === '마감') {
     descParts.push('접수 마감.');
@@ -173,61 +161,6 @@ const difficultyStyles: Record<string, string> = {
   '상급': 'bg-rose-100 text-rose-700',
 };
 
-function formatFee(fee: number): string {
-  return fee.toLocaleString('ko-KR') + '원';
-}
-
-function formatTimeLimit(hours: number, minutes: number): string {
-  if (minutes === 0) return `${hours}시간`;
-  return `${hours}시간 ${minutes}분`;
-}
-
-/** 참가비 요약 — 전 종목 같으면 "각 N만원", 다르면 종목별로 */
-function feeSummary(fees?: { distance: string; fee: number }[]): string | null {
-  if (!fees?.length) return null;
-  const won = (n: number) => (n % 10_000 === 0 ? `${n / 10_000}만원` : `${(n / 10_000).toFixed(1)}만원`);
-  const uniq = new Set(fees.map((f) => f.fee));
-  return uniq.size === 1
-    ? `참가비 각 ${won(fees[0].fee)}`
-    : fees.map((f) => `${f.distance} ${won(f.fee)}`).join(' · ');
-}
-
-/**
- * 설명을 문장 단위로 쪼갠다.
- *
- * description 은 마크업 없는 한 덩어리라 화면에서 8줄짜리 회색 벽으로 렌더됐다
- * (2026-08-23 육안 확인). 글자 수는 336자로 길지 않은데 **한 문단에 대회 소개·작년
- * 이력·종목·참가비·접수일·래플 일정·소스 신뢰도·주의까지 10가지가 뭉쳐 있어**
- * 무엇 하나 눈에 걸리지 않았다. 종결어미 "~다." 기준으로 끊어 문단을 나눈다.
- */
-function splitSentences(text?: string): string[] {
-  if (!text) return [];
-  // "~다." 만으로는 "(가격·수량 미공개). 반면 ~" 처럼 괄호로 끝나는 문장이 안 잘려
-  // 접은 안쪽이 다시 벽이 됐다. 마침표+공백을 경계로 삼되, 소수점·약어는 뒤에 공백이
-  // 없으므로 영향받지 않는다.
-  return text
-    .split(/(?<=\.)\s+/)
-    .map((s) => s.trim())
-    .filter(Boolean);
-}
-
-function formatDate(dateStr: string): string {
-  const date = new Date(dateStr);
-  const year = date.getFullYear();
-  const month = date.getMonth() + 1;
-  const day = date.getDate();
-  const dayOfWeek = ['일', '월', '화', '수', '목', '금', '토'][date.getDay()];
-  return `${year}년 ${month}월 ${day}일 (${dayOfWeek})`;
-}
-
-function getDaysUntil(dateStr: string): number {
-  const eventDate = new Date(dateStr);
-  const today = new Date();
-  today.setHours(0, 0, 0, 0);
-  eventDate.setHours(0, 0, 0, 0);
-  return Math.ceil((eventDate.getTime() - today.getTime()) / (1000 * 60 * 60 * 24));
-}
-
 export default async function MarathonDetailPage({ params }: MarathonDetailPageProps) {
   const { id } = await params;
   const event = getMarathonEventById(id);
@@ -305,15 +238,10 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     };
   }
 
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: '홈', item: SITE_URL },
-      { '@type': 'ListItem', position: 2, name: '마라톤 대회', item: `${SITE_URL}/marathon` },
-      { '@type': 'ListItem', position: 3, name: event.name, item: `${SITE_URL}/marathon/${id}` },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: '마라톤 대회', path: '/marathon' },
+    { name: event.name, path: `/marathon/${id}` },
+  ]);
 
   // FAQ schema for events with practical data
   const faqItems: { question: string; answer: string }[] = [];
@@ -360,7 +288,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       {faqJsonLd && (
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       )}
@@ -417,7 +345,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           <dl className="grid gap-2.5 text-secondary sm:grid-cols-2">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 shrink-0 text-sky-700" />
-              <span className="font-medium text-primary">{formatDate(event.date)}</span>
+              <span className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 shrink-0 text-sky-700" />
@@ -439,7 +367,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               <div className="flex items-center gap-2">
                 <FileText className="h-5 w-5 shrink-0 text-sky-700" />
                 <span>
-                  접수 <span className="font-medium text-primary">{formatDate(event.registrationStart)}</span> 시작
+                  접수 <span className="font-medium text-primary">{formatDateKo(event.registrationStart, { weekday: true })}</span> 시작
                 </span>
               </div>
             )}
@@ -462,7 +390,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
                   <span>
-                    접수 <span className="font-medium text-primary">{formatDate(event.registrationEnd)}</span> 마감
+                    접수 <span className="font-medium text-primary">{formatDateKo(event.registrationEnd, { weekday: true })}</span> 마감
                   </span>
                 ) : event.registrationNote ? (
                   <span className="font-medium text-primary">{event.registrationNote}</span>
@@ -484,7 +412,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           {(event.status === '접수중' || event.status === '접수예정') && (
             <p className="mt-3 font-mono text-[11px] text-tertiary">
               {event.lastVerified
-                ? `접수 상태 ${formatDate(event.lastVerified)} 확인 기준`
+                ? `접수 상태 ${formatDateKo(event.lastVerified, { weekday: true })} 확인 기준`
                 : '접수 상태 확인일 미기록 — 신청 전 공식 공지를 확인하세요'}
             </p>
           )}
@@ -567,7 +495,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">대회 일시</dt>
-              <dd className="font-medium text-primary">{formatDate(event.date)}</dd>
+              <dd className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}</dd>
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>

@@ -12,27 +12,8 @@
  *
  * 키 파일 해석 순서는 ga-report.ts와 동일 (GA_KEY_FILE → ~/Downloads/blog-auto-494801-*.json → ./.ga-key.json)
  */
+import { resolveKeyFile, displayKeyPath } from './lib/google-auth';
 import { JWT } from 'google-auth-library';
-import { readdirSync, statSync, existsSync } from 'fs';
-import { homedir } from 'os';
-import { join } from 'path';
-
-function resolveKeyFile(): string {
-  if (process.env.GA_KEY_FILE) return process.env.GA_KEY_FILE;
-  const downloads = join(homedir(), 'Downloads');
-  try {
-    const matches = readdirSync(downloads)
-      .filter((f) => /^blog-auto-494801-.*\.json$/.test(f))
-      .map((f) => join(downloads, f))
-      .sort((a, b) => statSync(b).mtimeMs - statSync(a).mtimeMs);
-    if (matches.length) return matches[0];
-  } catch {
-    /* Downloads 접근 불가 시 로컬 키로 폴백 */
-  }
-  const local = join(process.cwd(), '.ga-key.json');
-  if (existsSync(local)) return local;
-  return join(downloads, 'blog-auto-494801-4f5d2392338c.json');
-}
 
 // 속성 후보: 환경변수 우선, 없으면 도메인 속성 → URL 접두 속성 순서로 시도
 const SITE_CANDIDATES = process.env.GSC_SITE
@@ -77,7 +58,7 @@ async function main() {
   const range = { startDate: fmtDate(start), endDate: fmtDate(end) };
 
   console.log(`\n🔎 GSC 리포트 — ${range.startDate} ~ ${range.endDate} (${days}일, 데이터 3일 지연 반영)`);
-  console.log(`🔑 키: ${keyFile.replace(homedir(), '~')}`);
+  console.log(`🔑 키: ${displayKeyPath(keyFile)}`);
 
   // 접근 가능한 속성 찾기
   let site: string | null = null;

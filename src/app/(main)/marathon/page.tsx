@@ -1,6 +1,7 @@
 import { Suspense } from 'react';
 import type { Metadata } from 'next';
 import { getMarathonEvents, getMajorEvents } from '@/lib/data/marathon';
+import { localIsoDate } from '@/lib/format';
 import { SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { MarathonContent } from '@/components/marathon/marathon-content';
 import { groupIntoBands } from '@/lib/marathon/bands';
@@ -37,8 +38,7 @@ export default function MarathonPage() {
   const events = getMarathonEvents();
   const majorEvents = getMajorEvents();
   // 빌드 시점 날짜. 클라이언트가 마운트 후 진짜 오늘로 다시 계산한다.
-  const now = new Date();
-  const buildDate = `${now.getFullYear()}-${String(now.getMonth() + 1).padStart(2, '0')}-${String(now.getDate()).padStart(2, '0')}`;
+  const buildDate = localIsoDate();
 
   // 히어로 지표 — 전부 데이터에서 산출한다(하드코딩 금지)
   const bands = groupIntoBands(events, buildDate);

@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getGelBySlug, getGels, getSimilarGelsData } from '@/lib/data/gels';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { HeroSection } from '@/components/gel-detail/hero-section';
 import { GelDetailTabs } from '@/components/gel-detail/gel-detail-tabs';
 
@@ -122,30 +123,10 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
   const similarGelsData = gel.similarGels ? getSimilarGelsData(gel.similarGels) : [];
 
   // BreadcrumbList JSON-LD
-  const breadcrumbJsonLd = {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    'itemListElement': [
-      {
-        '@type': 'ListItem',
-        'position': 1,
-        'name': '홈',
-        'item': SITE_URL,
-      },
-      {
-        '@type': 'ListItem',
-        'position': 2,
-        'name': '에너지 젤',
-        'item': `${SITE_URL}/gels`,
-      },
-      {
-        '@type': 'ListItem',
-        'position': 3,
-        'name': `${gel.brand} ${gel.name}`,
-        'item': `${SITE_URL}/gels/${slug}`,
-      },
-    ],
-  };
+  const breadcrumbLd = breadcrumbJsonLd([
+    { name: '에너지 젤', path: '/gels' },
+    { name: `${gel.brand} ${gel.name}`, path: `/gels/${slug}` },
+  ]);
 
   // NOTE: review·aggregateRating 구조화 데이터는 의도적으로 제외한다.
   // gel.reviews는 실사용자 후기가 아니라 데이터 기반으로 구성한 러너 유형별 분석이라,
@@ -185,7 +166,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
 
   return (
     <>
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
 
       <div className="space-y-4">

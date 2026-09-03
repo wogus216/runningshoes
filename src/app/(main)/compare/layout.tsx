@@ -1,6 +1,6 @@
 import { DEFAULT_OG_IMAGE } from '@/lib/constants';
+import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import type { Metadata } from "next";
-import { SITE_URL } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: "러닝화 비교 | 스펙, 가격, 착화감 한눈에 비교",
@@ -32,25 +32,7 @@ export const metadata: Metadata = {
   },
 };
 
-// BreadcrumbList 스키마
-const breadcrumbJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "홈",
-      "item": SITE_URL,
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "러닝화 비교",
-      "item": `${SITE_URL}/compare`,
-    },
-  ],
-};
+const breadcrumbLd = breadcrumbJsonLd([{ name: '러닝화 비교', path: '/compare' }]);
 
 export default function CompareLayout({
   children,
@@ -61,7 +43,7 @@ export default function CompareLayout({
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       {children}
     </>

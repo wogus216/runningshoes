@@ -1,4 +1,5 @@
 import { shoes } from '@/lib/data/shoes';
+import { formatManwon } from '@/lib/format';
 
 export type SearchItem = {
   type: 'shoe' | 'best' | 'vs';
@@ -33,7 +34,7 @@ export function getSearchIndex(): SearchItem[] {
     items.push({
       type: 'shoe',
       title: `${shoe.brand} ${shoe.name}`,
-      subtitle: `${shoe.category}${shoe.price ? ` · ${(shoe.price / 10000).toFixed(0)}만원` : ''}`,
+      subtitle: `${shoe.category}${shoe.price ? ` · ${formatManwon(shoe.price)}` : ''}`,
       href: `/shoes/${shoe.slug}`,
       keywords,
     });
