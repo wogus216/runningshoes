@@ -11,7 +11,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "validate": "node scripts/validate.js",
+    "validate": "tsx scripts/validate.ts",
     "check:payload": "node scripts/check-payload.js",
     "images": "node scripts/process-images.js",
     "generate:blog": "tsx scripts/generate-blog-post.ts",

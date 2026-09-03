@@ -23,7 +23,7 @@ const TOP_PER_CATEGORY = 10; // 10C2=45 → 6 categories × 45 = 270 pairs max
  * 상위 N에서 밀려나도 계속 생성한다. **새 페어가 색인된 뒤 목록에서 빠지면 같은 사고가 반복되므로,
  * 페어 구성 로직을 손볼 때는 GSC `page` 차원으로 죽은 URL을 먼저 확인할 것.**
  */
-const PINNED_PAIRS: readonly string[] = [
+export const PINNED_PAIRS: readonly string[] = [
   'adidas-adizero-evo-sl-vs-hoka-mach-6',
   'adidas-adizero-evo-sl-vs-nike-pegasus-plus',
   'adidas-adizero-evo-sl-vs-nike-rival-fly-4',
@@ -90,7 +90,7 @@ const PINNED_PAIRS: readonly string[] = [
  * 아래는 90일 노출 700+ 인데 페어가 없던 5종이다(합계 7,589노출). GSC를 다시 볼 때
  * 같은 조건으로 갱신할 것.
  */
-const PINNED_SHOES: readonly string[] = [
+export const PINNED_SHOES: readonly string[] = [
   'asics-gel-kayano-33', // 2,901노출 · 안정화
   'hoka-bondi-9', //        1,877노출 · 쿠션화
   'brooks-glycerin-22', //    972노출 · 쿠션화
