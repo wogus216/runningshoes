@@ -12,8 +12,10 @@ type ReplacementCalculatorProps = {
 
 export function ReplacementCalculator({ durability, shoeName }: ReplacementCalculatorProps) {
   const [weeklyKm, setWeeklyKm] = useState<number>(30);
-  const min = durability?.min ?? 500;
-  const max = durability?.max ?? 700;
+  // 내구성 근거가 없으면 500/700 같은 단일 숫자로 대신하지 않는다 — 실측처럼 읽힌다(CLAUDE.md 규칙 3).
+  // 훅은 조기 반환보다 앞에 둬야 하므로 min/max 는 0으로 두고 아래에서 렌더를 건너뛴다.
+  const min = durability?.min ?? 0;
+  const max = durability?.max ?? 0;
 
   const result = useMemo(() => {
     if (weeklyKm <= 0) return null;
@@ -42,6 +44,8 @@ export function ReplacementCalculator({ durability, shoeName }: ReplacementCalcu
     }
     return null;
   }, [weeklyKm]);
+
+  if (!durability) return null;
 
   return (
     <section className="space-y-4">

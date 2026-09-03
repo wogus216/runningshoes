@@ -191,27 +191,6 @@ export type CompleteShoe = Shoe & Required<Pick<Shoe,
   | 'reviews'
 >>;
 
-/**
- * 기본 정보만 있는 신발 (카드 표시용)
- */
-export type BasicShoe = Pick<Shoe,
-  | 'id'
-  | 'slug'
-  | 'brand'
-  | 'name'
-  | 'category'
-  | 'rating'
-  | 'image'
-  | 'price'
-  | 'tags'
-  | 'description'
->;
-
-/**
- * 비교용 신발 데이터
- */
-export type ComparableShoe = Shoe & Required<Pick<Shoe, 'specs' | 'biomechanics'>>;
-
 // ============================================
 // 타입 가드
 // ============================================
@@ -231,31 +210,3 @@ export function isCompleteShoe(shoe: Shoe): shoe is CompleteShoe {
     shoe.reviews
   );
 }
-
-/**
- * 신발이 비교 가능한 데이터를 가지고 있는지 확인
- */
-export function isComparableShoe(shoe: Shoe): shoe is ComparableShoe {
-  return !!(shoe.specs && shoe.biomechanics);
-}
-
-// ============================================
-// 브랜드 타입
-// ============================================
-
-export const brandList = [
-  'Nike',
-  'Adidas',
-  'Asics',
-  'New Balance',
-  'Hoka',
-  'Brooks',
-  'Saucony',
-  'On',
-  'Mizuno',
-  'Puma',
-  'Li-Ning',
-  'Salomon'
-] as const;
-
-export type Brand = typeof brandList[number];

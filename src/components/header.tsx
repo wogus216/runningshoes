@@ -2,16 +2,17 @@
 
 import Link from 'next/link';
 import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown } from 'lucide-react';
-import { getAllBrands } from '@/lib/data/brands';
 import { SearchPalette } from '@/components/search/search-palette';
 
-const brandLinks = getAllBrands().map((b) => ({
-  id: b.id,
-  name: b.name,
-  nameKo: b.nameKo ?? '',
-}));
+/**
+ * 헤더 브랜드 메뉴에 필요한 최소 필드. 서버 레이아웃에서 `getAllBrands()` 로 만들어 내린다.
+ * 이 파일은 'use client' 라 여기서 데이터를 import 하면 브랜드 기술 설명(160KB)이 통째로
+ * 클라 청크에 실린다 — 2026-09-03 실측 113KB 청크가 149개 HTML 에 붙어 있었다.
+ * 검색 인덱스(712→14.7KB)와 같은 패턴.
+ */
+export type HeaderBrandLink = { id: string; name: string; nameKo: string };
 
-export function Header() {
+export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
   return (
     <header className="sticky top-0 z-50 border-b-2 border-primary bg-[rgba(252,251,249,0.92)] backdrop-blur-xl">
       <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">

@@ -52,30 +52,11 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
 }
 
 /**
- * featured 포스트 가져오기 (최대 limit개)
- */
-export function getFeaturedPosts(limit: number = 3): BlogPost[] {
-  return blogPosts
-    .filter((post) => post.featured)
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime())
-    .slice(0, limit);
-}
-
-/**
  * 카테고리별 포스트 가져오기
  */
 export function getPostsByCategory(category: BlogCategory): BlogPost[] {
   return blogPosts
     .filter((post) => post.category === category)
-    .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
-}
-
-/**
- * 태그별 포스트 가져오기
- */
-export function getPostsByTag(tag: string): BlogPost[] {
-  return blogPosts
-    .filter((post) => post.tags.includes(tag))
     .sort((a, b) => new Date(b.publishedAt).getTime() - new Date(a.publishedAt).getTime());
 }
 

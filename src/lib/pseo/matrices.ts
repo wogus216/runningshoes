@@ -1,6 +1,5 @@
 import type { Shoe } from '@/types/shoe';
 import { shoes as allShoes } from '@/lib/data/shoes';
-import { isCompleteShoe } from '@/types/shoe';
 
 export type MatrixGroup =
   | 'category'
@@ -502,4 +501,3 @@ export function getMatrixShoes(entry: MatrixEntry): Shoe[] {
     });
 }
 
-export { isCompleteShoe };

@@ -108,10 +108,8 @@ export function hasTechnologyData(brandName: string): boolean {
 // 브랜드명으로 기술 페이지 URL 생성
 export function getBrandTechnologyUrl(brandName: string): string | null {
   const brandId = brandName.toLowerCase().replace(/\s+/g, '-');
-  // 특수 케이스 처리
-  const normalizedId = brandId === 'new-balance' ? 'new-balance' : brandId;
   const brand = brands.find(
-    (b) => b.id === normalizedId || b.name.toLowerCase() === brandName.toLowerCase()
+    (b) => b.id === brandId || b.name.toLowerCase() === brandName.toLowerCase()
   );
   if (brand && brand.technologies.length > 0) {
     return `/brands/${brand.id}/technology`;
