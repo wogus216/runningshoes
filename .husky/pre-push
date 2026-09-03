@@ -5,4 +5,12 @@ if [ $? -ne 0 ]; then
   echo "❌ 빌드 실패. 에러를 수정 후 다시 push하세요."
   exit 1
 fi
-echo "✅ 빌드 성공 — push 진행"
+echo "✅ 빌드 성공"
+
+# 페이로드 회귀 가드 — CI 에서 옮겨옴(2026-09-03). 빌드 산출물(.next)이 필요해 빌드 뒤에 둔다
+npm run check:payload
+if [ $? -ne 0 ]; then
+  echo "❌ 페이로드 회귀 — check:payload 출력을 확인하세요."
+  exit 1
+fi
+echo "✅ 페이로드 통과 — push 진행"

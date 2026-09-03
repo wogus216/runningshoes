@@ -18,11 +18,11 @@ export function md(iso: string): string {
 }
 
 export const MAJOR_DEADLINES = {
-  // ── 도쿄 2027 (유일하게 현재 접수 사이클 진행 중) ─────────
+  // ── 도쿄 2027 (일반추첨 8/28 마감 — 결과 발표 대기) ─────────
   tokyo2027: {
     name: '도쿄마라톤 2027',
     raceDate: '2027-03-07',
-    statusLabel: '일반추첨 접수중 ~8/28 · 정원 초과로 추첨 확정',
+    statusLabel: '일반추첨 마감(8/28) · 추첨 결과 9월 발표 대기',
     // 자선(RUN with HEART): 신청 6/24~7/9, 기부금 납부 마감 8/31, 41개 단체, 최소 ¥100,000
     // ⚠️ 단체별로 해외 거주자 수락 여부가 다름(일부 일본 거주자 한정) — 개별 확인 필요
     // ⚠️ 기부금 ¥100,000은 참가비와 별도(참가비 추가 납부)
@@ -81,7 +81,7 @@ export const MAJOR_DEADLINES = {
   chicago2026: {
     name: '시카고마라톤 2026',
     raceDate: '2026-10-11',
-    statusLabel: '추첨 마감 · 자선 ~9/15 · 투어 ~8/16',
+    statusLabel: '추첨 마감 · 자선 ~9/15 · 투어 마감(8/16)',
     charity: { close: '2026-09-15', minFundUsd: 2200 },
     tourClose: '2026-08-16',
     intlEligible: true,

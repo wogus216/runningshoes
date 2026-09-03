@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   verify:
-    name: validate → test → lint → build → payload
+    name: validate → test → lint
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -35,8 +35,6 @@ jobs:
       - name: 린트 (eslint)
         run: npm run lint
 
-      - name: 빌드 (next build)
-        run: npm run build
-
-      - name: 페이로드 회귀 가드
-        run: npm run check:payload
+      # 빌드는 여기서 하지 않는다 — push 마다 세 번(husky pre-push·CI·Cloudflare) 돌던 것을
+      # 둘로 줄였다(2026-09-03). 빌드 검증과 페이로드 가드는 .husky/pre-push 가, 배포 빌드는
+      # Cloudflare Workers Builds 가 맡는다.

@@ -7939,15 +7939,25 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: '2026-incheon-marathon',
     slug: '2026-incheon-marathon',
-    title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·접수·2025 1회 총정리',
+    title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·2025 1회 총정리',
     description: '인천시·대한육상연맹이 주최하는 인천 최초 풀코스 대회 \'인천마라톤\'이 11월 22일(일) 제2회로 열립니다. 2026년엔 청라하늘대교 위를 달리는 편도 코스(바다 위 러닝)가 검토되고, 풀코스 정원도 8천 명으로 확대됐죠. 2만 명 규모·해외 엘리트 초청의 이 공식 시 대회 일정·코스·참가비·접수 정보와 2025 제1회 결과를 정리했습니다.',
     thumbnail: '/images/blog/2026-incheon-marathon.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
+    updatedAt: '2026-09-03',
     category: 'news' as const,
     readingTime: 6,
+    event: {
+      name: '2026 인천마라톤 (제2회)',
+      startDate: '2026-11-22',
+      location: { name: '인천아시아드주경기장', address: '인천광역시 서구 봉수대로 806' },
+      organizer: '인천광역시·대한육상연맹',
+      url: 'http://www.incheonmarathon.or.kr/',
+    },
     tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
     content: `
+<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시</strong>에 열리는 것으로 8월 27일 확정 공지됐고, 참가비·정원·코스 확정 여부와 최신 상태는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 접수 9월 7일 확정 — 홈페이지는 아직 COMING SOON</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
