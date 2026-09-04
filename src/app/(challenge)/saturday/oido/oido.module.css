@@ -1,0 +1,432 @@
+:global(html):has(.story),
+:global(body):has(.story) {
+  overflow-x: clip;
+  background: #0a0d0d;
+}
+
+.story {
+  --black: #0a0d0d;
+  --paper: #eeeae0;
+  --ink: #111513;
+  --sky: #a9c1c8;
+  --signal: #e9ef45;
+  --orange: #ff693f;
+  --line: rgba(238, 234, 224, .3);
+  --pad: clamp(20px, 6vw, 32px);
+  /* 스택 끝에 pretendard 를 둔다. 앞의 mono 넷은 한글 글리프가 없으므로 브라우저가 글자 단위로
+     떨어뜨려 숫자·영문은 mono, 한글만 Pretendard 로 간다. 요소마다 한글을 <b>로 갈라내는 방식은
+     kicker 만 적용되고 11곳이 그대로 남았다 — 선언 한 줄로 막는 게 다시 새지 않는 방법이다 */
+  --mono: ui-monospace, "SFMono-Regular", Menlo, Consolas, pretendard, monospace;
+  /* globals.css 가 :root 에 --tilt: -9deg 를 깔아둔다. 상속되므로 아래 [data-reveal] 의
+     var(--tilt, 0deg) fallback 이 영영 발동하지 않고, tilt 를 지정 안 한 요소까지 9도 기운다.
+     375px 에서 photoLarge 가 456px 로 부풀어 캡션이 화면 밖으로 나갔다(overflow:clip 이 가려서
+     scrollWidth 검사로는 안 잡힘). 여기서 끊는다 — 기울기는 각 요소가 직접 선언한 것만 적용된다. */
+  --tilt: 0deg;
+  --scale: 1;
+  /* 위커(등나무) 4단계 — 밝은 결부터 그늘까지. 종이(--paper)와 같은 난색 계열이라
+     바구니가 배경 위에 "얹힌 물건"으로 읽힌다. 오렌지는 안감으로 내려갔다 */
+  --tan-1: #e3bd8b;
+  --tan-2: #c9995e;
+  --tan-3: #a97a45;
+  --tan-4: #875e33;
+  /* 대각 두 방향이 교차하는 진짜 바구니 짜임. 가로결만 쓰면 대나무 발로 읽힌다 */
+  --wicker:
+    repeating-linear-gradient(56deg, rgba(135,94,51,.62) 0 8px, rgba(227,189,139,.30) 8px 16px),
+    repeating-linear-gradient(-56deg, var(--tan-3) 0 8px, var(--tan-1) 8px 16px);
+  /* 깅엄 체크 — 반투명 두 겹이 겹쳐 교차부가 저절로 진해진다. 바구니 "안"에만 쓴다 */
+  --gingham:
+    repeating-linear-gradient(0deg, rgba(255,105,63,.58) 0 11px, transparent 11px 22px),
+    repeating-linear-gradient(90deg, rgba(255,105,63,.58) 0 11px, transparent 11px 22px);
+  /* 매트는 바구니 "밖" — 깅엄과 같은 패턴을 쓰면 안팎이 구분되지 않는다. 탄색 넓은 격자로 */
+  --mat:
+    repeating-linear-gradient(0deg, rgba(169,122,69,.34) 0 27px, transparent 27px 54px),
+    repeating-linear-gradient(90deg, rgba(169,122,69,.34) 0 27px, transparent 27px 54px);
+  min-height: 100svh;
+  overflow: clip;
+  color: var(--paper);
+  background: var(--black);
+  isolation: isolate;
+}
+
+.story *, .story *::before, .story *::after { box-sizing: border-box; }
+.story h1, .story h2, .story p, .story figure, .story blockquote, .story dl, .story dd { margin: 0; color: inherit; }
+.story main:focus { outline: none; }
+.story img { display: block; }
+.story a:focus-visible { outline: 2px solid var(--signal); outline-offset: 5px; }
+
+.skipLink {
+  position: fixed; z-index: 100; top: 12px; left: 12px;
+  padding: 12px 16px; color: var(--black); background: var(--signal);
+  font-size: 14px; font-weight: 800; transform: translateY(-160%); transition: transform 180ms ease;
+}
+.skipLink:focus { transform: translateY(0); }
+
+.header {
+  position: fixed; z-index: 50; top: 0; left: 0; width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: max(18px, env(safe-area-inset-top)) var(--pad) 24px;
+  color: var(--paper); background: linear-gradient(180deg, rgba(10,13,13,.72), transparent);
+  font: 700 10px/1 var(--mono); letter-spacing: .14em; pointer-events: none;
+}
+.header a { min-height: 44px; display: inline-flex; align-items: center; gap: 10px; color: inherit; text-decoration: none; pointer-events: auto; }
+.header i { width: 22px; height: 2px; background: var(--signal); transform: skewX(-18deg); }
+.header > span { opacity: .72; }
+/* 헤더 뒤가 종이색인 구간(히어로 개봉 · 마지막 바구니)에는 헤더를 잉크색으로 뒤집는다 —
+   안 뒤집으면 밝은 글자가 밝은 배경에 묻힌다. 플래그 이름은 박스가 아니라 배경색 기준이다.
+   같은 조건의 장면이 하나 더 생겼을 때 이름이 맞아야 두 번째에서 또 놓치지 않는다 */
+.story[data-paper-bg='true'] .header { color: var(--ink); background: linear-gradient(180deg, rgba(238,234,224,.88), transparent); }
+.story[data-paper-bg='true'] .header i { background: var(--ink); }
+
+.progress { position: fixed; z-index: 80; inset: 0 0 auto; height: 3px; background: rgba(255,255,255,.1); pointer-events: none; }
+.progress i { display: block; width: 100%; height: 100%; background: var(--signal); transform: scaleX(0); transform-origin: left; will-change: transform; }
+
+.journeyMeter {
+  position: fixed; z-index: 45; right: 12px; bottom: max(16px, env(safe-area-inset-bottom));
+  width: 126px; display: grid; grid-template-columns: 1fr auto; gap: 5px 7px;
+  padding: 10px 11px; color: var(--paper); background: rgba(10,13,13,.88);
+  border: 1px solid rgba(233,239,69,.62); backdrop-filter: blur(10px);
+  font-family: var(--mono); opacity: 0; transform: translateY(10px); transition: opacity 220ms ease, transform 220ms ease; pointer-events: none;
+}
+.journeyMeter[data-active='true'] { opacity: 1; transform: translateY(0); }
+.journeyMeter i { grid-column: 1 / -1; height: 2px; overflow: hidden; background: rgba(255,255,255,.18); }
+.journeyMeter b { display: block; width: 100%; height: 100%; background: var(--signal); transform: scaleX(0); transform-origin: left; }
+.journeyMeter span { color: var(--signal); font-size: 15px; font-weight: 750; letter-spacing: -.05em; }
+.journeyMeter small { align-self: end; padding-bottom: 1px; font-size: 7px; letter-spacing: .05em; }
+
+/* --mono 스택(ui-monospace·SF Mono·Menlo·Consolas) 중 한글 글리프를 가진 폰트가 하나도 없다.
+   그래서 한글은 스택을 끝까지 흘러 OS 폴백으로 떨어졌다 — 아무도 지정한 적 없는 서체다.
+   실측: '가는 길' 폭이 mono 스택 39.17px vs Pretendard 35.64px(다른 폰트라는 증거).
+   숫자는 mono 로 남기고 한글만 Pretendard 로 뺀다. 한글은 12px 미만·양수 자간에서 어절이 분해된다. */
+.kicker {
+  display: inline-flex; align-items: center; gap: 7px; padding: 4px 10px 5px;
+  /* 부모가 flex/grid 인 섹션에서 stretch 되어 라벨이 전폭으로 늘어난다 */
+  width: fit-content; align-self: flex-start; justify-self: start;
+  border: 1.5px solid currentColor;
+  font: 800 12px/1.35 pretendard, sans-serif; letter-spacing: .02em;
+}
+.kicker b { font: 700 10px/1 var(--mono); letter-spacing: .14em; }
+
+/* 175svh 였을 때 375x667 기준 스크롤 예산이 500px 뿐이라, 박스가 400px(0.6화면)만에 사라졌다 —
+   손가락 한 번에 개봉 연출이 통째로 스킵됐다. 예산을 160svh 로 늘려 1.3화면에 걸쳐 열리게 한다. */
+.hero { position: relative; min-height: 260svh; background: #202522; }
+.heroStage { position: sticky; top: 0; height: 100svh; overflow: hidden; }
+.heroImage { object-fit: cover; object-position: center 58%; filter: saturate(1.04) contrast(1.06) brightness(.78); transform: scale(1.03); will-change: transform; }
+.heroWash { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(8,11,10,.58), transparent 38%), linear-gradient(0deg, rgba(8,11,10,.72), transparent 42%); }
+.heroTopline { position: absolute; top: max(84px, calc(env(safe-area-inset-top) + 68px)); left: var(--pad); right: var(--pad); display: flex; justify-content: space-between; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.52); font: 700 9px/1 var(--mono); letter-spacing: .14em; }
+.heroTitle { position: absolute; z-index: 2; top: 17%; left: var(--pad); }
+.heroTitle p { margin-bottom: 12px; color: var(--signal); font-size: 11px; font-weight: 850; letter-spacing: -.02em; }
+.heroTitle h1 { display: block; max-width: 5em; font-size: clamp(50px, 15vw, 76px); font-weight: 950; line-height: .88; letter-spacing: -.09em; word-break: keep-all; }
+.heroSticker {
+  position: absolute; z-index: 3; top: 40%; right: var(--pad); width: 72px; aspect-ratio: 1;
+  display: grid; place-items: center; color: var(--ink); background: var(--orange);
+  border-radius: 50%; text-align: center; font-size: 15px; font-weight: 900; line-height: 1.05;
+  letter-spacing: -.05em; transform: rotate(10deg); box-shadow: 0 8px 22px rgba(0,0,0,.18);
+}
+.heroDistance { position: absolute; z-index: 2; right: var(--pad); bottom: 132px; display: flex; flex-direction: column; align-items: flex-end; }
+.heroDistance strong { font: 500 clamp(76px, 24vw, 112px)/.72 var(--mono); letter-spacing: -.11em; }
+.heroDistance span { margin-top: 18px; color: var(--signal); font: 700 9px/1 var(--mono); letter-spacing: .16em; }
+.runnerRail { position: absolute; z-index: 2; left: var(--pad); right: var(--pad); bottom: 76px; display: flex; gap: 15px; padding-top: 12px; border-top: 1px solid rgba(255,255,255,.45); overflow: hidden; white-space: nowrap; font: 650 8px/1 var(--mono); letter-spacing: .06em; }
+.scrollCue { position: absolute; z-index: 2; right: var(--pad); bottom: max(24px, env(safe-area-inset-bottom)); display: flex; align-items: center; gap: 9px; font: 800 12px/1 pretendard, sans-serif; letter-spacing: .02em; }
+.scrollCue i { width: 32px; height: 1px; background: currentColor; transform-origin: left; animation: cue 1.6s ease-in-out infinite; }
+@keyframes cue { 0%,100% { transform: scaleX(.25); opacity: .35; } 50% { transform: scaleX(1); opacity: 1; } }
+.boxScene {
+  position: absolute; z-index: 10; inset: 0; display: grid; place-items: center;
+  overflow: hidden; background: var(--paper); perspective: 1000px; will-change: opacity;
+}
+/* 모눈 → 깅엄 매트. 모눈은 아무것도 재지 않는 텍스처였지만, 매트는 피크닉의 재료다 */
+.boxScene::before {
+  content: ''; position: absolute; inset: 0; opacity: .42;
+  background: var(--mat);
+}
+
+/* 바구니 — 몸통·뚜껑 두 짝·손잡이를 한 좌표계에 묶는다. overflow 를 열어 둬야 뚜껑이 밖으로 젖혀진다 */
+.basket {
+  position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);
+  width: calc(100% - 40px); max-width: 760px; height: 58svh; will-change: transform;
+}
+.basketHandle {
+  position: absolute; z-index: 3; left: 50%; top: 2px;
+  width: min(52%, 320px); height: clamp(52px, 11svh, 92px);
+  border: 10px solid var(--tan-4); border-bottom: 0; border-radius: 220px 220px 0 0;
+  transform: translate(-50%, -100%);
+}
+/* background 단축에 색을 마지막 레이어로 넣으면 이미지 자리로 파싱돼 무효가 된다 —
+   그래서 뚜껑이 반투명하게 비쳤다. image 와 color 를 분리해야 불투명해진다 */
+.boxBase {
+  position: absolute; inset: 0; overflow: hidden;
+  border: 2px solid var(--ink);
+  background-image: var(--wicker); background-color: var(--tan-2);
+  box-shadow: 10px 12px 0 rgba(17,21,19,.92);
+}
+/* 안감 — 뚜껑이 열리는 만큼 드러난다(초기 opacity 0, 스크롤 디렉터가 올린다).
+   inset 을 줘서 가장자리에 위커가 남아야 "바구니 안을 들여다보는" 것으로 읽힌다.
+   0 으로 두면 몸통이 통째로 천이 돼서 바구니가 사라진다 */
+.boxLining {
+  position: absolute; inset: 7% 6%; opacity: 0; will-change: opacity;
+  border: 2px solid rgba(17,21,19,.34);
+  background-image: var(--gingham); background-color: var(--paper);
+}
+.boxBase::after { content: ''; position: absolute; inset: 9px; border: 1px dashed rgba(17,21,19,.34); pointer-events: none; z-index: 6; }
+
+.boxLidL, .boxLidR {
+  position: absolute; z-index: 7; top: -2px; height: 31%; width: calc(50% + 2px);
+  border: 2px solid var(--ink); border-bottom-width: 5px;
+  background-image: var(--wicker); background-color: var(--tan-2);
+  will-change: transform;
+}
+.boxLidL { left: -2px; transform-origin: left bottom; }
+.boxLidR { right: -2px; transform-origin: right bottom; }
+
+.boxTitle {
+  position: absolute; z-index: 8; inset: 31% 0 0; display: flex; flex-direction: column;
+  justify-content: space-between; padding: 22px 22px 20px; color: var(--ink); will-change: opacity;
+}
+.boxTitle > span { font-size: 17px; font-weight: 900; line-height: 1.02; letter-spacing: -.05em; }
+.boxTitle strong { display: block; font-size: clamp(78px, 24vw, 132px); font-weight: 920; line-height: .78; letter-spacing: -.09em; white-space: nowrap; }
+.boxTitle small { align-self: flex-end; text-align: right; font: 750 8px/1.5 var(--mono); letter-spacing: .12em; }
+.boxTape { position: absolute; z-index: 3; top: 4%; left: 42%; padding: 7px 16px; color: var(--ink); background: rgba(233,239,69,.88); font: 750 8px/1 var(--mono); letter-spacing: .12em; transform: rotate(3deg); }
+.boxPhoto { --item-tilt: -5deg; position: absolute; z-index: 2; top: 10%; left: 7%; width: 61%; height: 47%; overflow: hidden; border: 8px solid var(--paper); border-bottom-width: 26px; box-shadow: 4px 5px 0 rgba(17,21,19,.62); }
+.boxPhoto img { object-fit: cover; object-position: center; filter: saturate(1.04) contrast(1.03); }
+.boxTicket { --item-tilt: 3deg; position: absolute; z-index: 4; right: 5%; bottom: 10%; width: 69%; padding: 14px 13px 12px; color: var(--paper); background: var(--ink); box-shadow: 5px 5px 0 rgba(238,234,224,.5); }
+.boxTicket small, .boxTicket span { display: block; font: 700 7px/1.2 var(--mono); letter-spacing: .12em; }
+.boxTicket strong { display: block; margin: 9px 0; font-size: 17px; font-weight: 900; letter-spacing: -.05em; }
+.boxTicket span { padding-top: 8px; color: var(--signal); border-top: 1px dashed rgba(238,234,224,.42); }
+.boxNames { --item-tilt: 2deg; position: absolute; z-index: 5; top: 13%; right: 5%; display: grid; gap: 5px; }
+.boxNames span { padding: 5px 8px; color: var(--ink); background: var(--paper); border: 1px solid var(--ink); font-size: 10px; font-weight: 850; line-height: 1; }
+.boxRoute { --item-tilt: -4deg; position: absolute; z-index: 1; left: 13%; bottom: 17%; width: 58%; height: 25%; border: 2px dashed var(--ink); border-width: 0 0 2px 2px; border-radius: 0 0 0 100%; }
+.boxRoute::after { content: '↗'; position: absolute; right: -8px; bottom: -12px; color: var(--ink); font: 900 28px/1 var(--mono); }
+.boxScene [data-box-item] { opacity: 0; will-change: opacity, transform; }
+
+.prologue { position: relative; min-height: 108svh; display: flex; flex-direction: column; justify-content: space-between; padding: 104px var(--pad) 72px; overflow: hidden; color: var(--ink); background: var(--paper); }
+.prologue::before { content: ''; position: absolute; top: 19%; right: -70px; width: 170px; aspect-ratio: 1; border: 3px dashed rgba(17,21,19,.18); border-radius: 50%; transform: rotate(-14deg); transition: border-color 420ms ease, transform 620ms cubic-bezier(.2,.8,.2,1); }
+.prologue[data-pass-open='true']::before { border-color: var(--orange); transform: rotate(22deg) scale(.82); }
+.prologue .kicker { color: rgba(17,21,19,.5); }
+.prologue h2 { position: relative; z-index: 1; margin: 50px 0 42px; font-size: clamp(42px, 12.4vw, 62px); font-weight: 900; line-height: 1.07; letter-spacing: -.075em; word-break: keep-all; }
+.prologue h2 em { position: relative; color: var(--paper); font-style: normal; z-index: 0; }
+.prologue h2 em::before { content: ''; position: absolute; z-index: -1; inset: -.02em -.08em -.08em; background: var(--ink); transform: rotate(-1.5deg); }
+.picnicTicket { position: relative; z-index: 1; width: 88%; height: 148px; margin: 0 0 70px auto; padding: 0; border: 0; color: var(--paper); background: transparent; text-align: left; perspective: 900px; transform: rotate(2.4deg); cursor: pointer; -webkit-tap-highlight-color: transparent; }
+.picnicTicket:focus-visible { outline: 3px solid var(--ink); outline-offset: 7px; }
+.ticketInner { position: absolute; inset: 0; display: block; transform-style: preserve-3d; transition: transform 680ms cubic-bezier(.2,.8,.2,1); }
+.picnicTicket[aria-expanded='true'] .ticketInner { transform: rotateY(180deg); }
+.ticketFace { position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: center; padding: 18px 18px 16px; overflow: hidden; backface-visibility: hidden; box-shadow: 7px 8px 0 var(--ink); }
+.ticketFace::before, .ticketFace::after { content: ''; position: absolute; top: 50%; width: 16px; aspect-ratio: 1; border-radius: 50%; background: var(--paper); transform: translateY(-50%); }
+.ticketFace::before { left: -8px; } .ticketFace::after { right: -8px; }
+.ticketFront { background: var(--orange); }
+.ticketBack { background: var(--ink); transform: rotateY(180deg); }
+.ticketFace small, .ticketFace > span { display: block; font: 700 8px/1.3 var(--mono); letter-spacing: .13em; }
+.ticketFace strong { display: block; margin: 12px 0 10px; font-size: 20px; font-weight: 900; line-height: 1.12; letter-spacing: -.05em; }
+.ticketFace > span { padding-top: 9px; border-top: 1px dashed rgba(238,234,224,.62); }
+.ticketFace i { position: absolute; right: 18px; top: 17px; font: 750 8px/1 var(--mono); font-style: normal; letter-spacing: .05em; }
+.ticketBack > span, .ticketBack i { color: var(--signal); }
+.factGrid { display: grid; border-top: 1px solid rgba(17,21,19,.42); }
+.factGrid div { position: relative; display: grid; grid-template-columns: 34% 1fr; gap: 16px; padding: 16px 0; overflow: hidden; border-bottom: 1px solid rgba(17,21,19,.2); transition: padding 360ms ease, background-color 360ms ease; }
+.factGrid div::after { content: 'PACKED'; position: absolute; right: 3px; top: 50%; padding: 4px 5px 3px; border: 1px solid var(--orange); color: var(--orange); font: 800 7px/1 var(--mono); letter-spacing: .08em; opacity: 0; transform: translate(28px, -50%) rotate(-8deg); transition: opacity 280ms ease, transform 420ms cubic-bezier(.2,.8,.2,1); }
+.prologue[data-pass-open='true'] .factGrid div { padding-right: 62px; padding-left: 8px; background: rgba(255,105,63,.055); }
+.prologue[data-pass-open='true'] .factGrid div::after { opacity: 1; transform: translate(0, -50%) rotate(-8deg); }
+.prologue[data-pass-open='true'] .factGrid div:nth-child(2), .prologue[data-pass-open='true'] .factGrid div:nth-child(2)::after { transition-delay: 110ms; }
+.prologue[data-pass-open='true'] .factGrid div:nth-child(3), .prologue[data-pass-open='true'] .factGrid div:nth-child(3)::after { transition-delay: 220ms; }
+/* .story p { color: inherit } 가 (0,1,1) 로 이기므로 .story 를 붙여야 색이 먹는다 */
+.story .prologueNote { margin: 0 0 24px; color: rgba(17,21,19,.6); font: 700 13px/1.75 pretendard, sans-serif; letter-spacing: .01em; }
+.factGrid dt { font: 700 8px/1.35 var(--mono); letter-spacing: .13em; }
+.factGrid dd { font-size: 13px; font-weight: 720; line-height: 1.4; }
+
+.outbound { position: relative; padding: 96px 0 0; color: var(--paper); background: #121817; }
+.outboundHead { position: relative; z-index: 2; padding: 0 var(--pad) 72px; }
+.outboundHead .kicker { color: var(--signal); }
+.outboundHead h2 { margin: 18px 0 36px; max-width: 8em; font-size: clamp(54px, 15vw, 78px); font-weight: 950; line-height: .94; letter-spacing: -.09em; word-break: keep-all; }
+.outboundHead h2 em { display: inline-block; padding: .02em .08em .08em; color: var(--ink); background: var(--signal); font-style: normal; transform: rotate(-2deg); }
+.outboundHead > p:last-child { text-align: right; font: 700 10px/1 var(--mono); letter-spacing: .12em; }
+.photoSequence { display: grid; gap: 24svh; padding-bottom: 18svh; }
+.photoSequence figure { position: relative; overflow: hidden; background: #34403d; }
+.photoSequence img { object-fit: cover; filter: saturate(1.08) contrast(1.04); }
+.photoSequence figure::after { content: ''; position: absolute; inset: 50% 0 0; background: linear-gradient(transparent, rgba(5,8,7,.76)); }
+/* A-B-A. 이전엔 높이 82/68/78 · 폭 100/84/100 · 기울기 0/1.7/−1 로 세 축이 제각기 움직여
+   변주가 아니라 잡음이었다. A 는 전폭·직각 두 장으로 완전히 같게 고정하고, 대비는 B 하나가 진다.
+   1~2° 는 스크랩북이 아니라 렌더링 오류로 읽히므로 B 의 기울기는 결단해서 키운다 */
+.photoLarge, .photoWide { width: 100%; height: 82svh; }
+.photoInset { --tilt: 2.8deg; width: 84%; height: 68svh; margin-left: auto !important; }
+/* bottom:24px 이면 우하단 고정 journeyMeter(높이 51px + bottom 16px)가 캡션 문구를 통째로 덮는다.
+   375px 에서 겹침 실측: 미터 237~363 × 600~651 / 캡션 span 258~353 × 603~643 */
+.photoSequence figcaption { position: absolute; z-index: 2; left: var(--pad); right: var(--pad); bottom: 88px; display: flex; justify-content: space-between; align-items: flex-end; gap: 28px; }
+/* line-height:1 이면 align-items:flex-end 가 박스 아래를 맞춰 km 마커가 문구보다 3px 내려앉는다.
+   본문과 같은 1.45 를 줘야 두 줄의 마지막 베이스라인이 맞는다 */
+.photoSequence figcaption b { color: var(--signal); font: 700 9px/1.45 var(--mono); letter-spacing: .13em; }
+.photoSequence figcaption span { text-align: right; font-size: 14px; font-weight: 750; line-height: 1.45; }
+
+.turn { position: relative; height: 100svh; overflow: hidden; background: var(--black); }
+.turnFrame { position: absolute; inset: 0; overflow: hidden; }
+.turnFrame img { object-fit: cover; object-position: center; filter: saturate(1.02) contrast(1.06) brightness(.7); }
+.turnFrame::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(6,13,16,.38), transparent 42%), linear-gradient(0deg, rgba(6,13,16,.82), transparent 58%); }
+.turnArrow { position: absolute; z-index: 2; top: 8%; right: var(--pad); color: var(--orange); font: 500 clamp(118px, 38vw, 190px)/.7 var(--mono); letter-spacing: -.12em; transform: rotate(-10deg); }
+.turnCopy { position: absolute; z-index: 2; left: var(--pad); right: var(--pad); bottom: max(62px, calc(env(safe-area-inset-bottom) + 46px)); }
+.turnCopy .kicker { color: var(--signal); }
+/* 경유지 숫자가 총거리(히어로 21.51)의 2.3배라 페이지에서 제일 큰 숫자가 반환점이었다.
+   두 숫자를 같은 clamp 로 묶어 위계를 맞추고(총거리 = 그 절반 지점), 잃은 무게는 스탬프 틀이 진다 */
+/* inline-flex 면 앞의 kicker 와 같은 줄을 공유한다 — 데스크톱에선 옆에 붙고 모바일에선 줄바꿈돼
+   같은 컴포넌트가 폭에 따라 다른 배치가 됐다. flex + fit-content 로 항상 새 줄에서 시작하게 한다 */
+.turnStamp {
+  display: flex; width: fit-content; align-items: baseline; gap: 14px; margin: 10px 0 22px;
+  padding: 12px 18px 10px; border: 2px dashed var(--signal); transform: rotate(-2.5deg);
+}
+.turnCopy h2 { font: 500 clamp(76px, 24vw, 112px)/.72 var(--mono); letter-spacing: -.13em; }
+.turnStamp small { color: var(--signal); font: 750 8px/1 var(--mono); letter-spacing: .14em; }
+/* note 가 뒤에 붙었으므로 :last-child 로는 본문을 못 집는다 — 순서로 집는다 */
+.turnCopy > p:nth-of-type(2) { padding-left: 42%; font-size: 16px; font-weight: 800; line-height: 1.45; }
+/* 본문과 같은 42% 들여쓰기를 주면 남는 폭이 178px 라 "오다가 찍/었다" 로 끊긴다 — 전체 폭을 쓴다 */
+.turnNote { margin-top: 16px !important; color: rgba(238,234,224,.66); font: 700 12px/1.5 pretendard, sans-serif; letter-spacing: .01em; }
+.turnUnit { position: absolute; z-index: 2; top: 16%; right: var(--pad); font: 700 10px/1 var(--mono); letter-spacing: .18em; writing-mode: vertical-rl; }
+
+.activity { padding: 106px var(--pad) 116px; color: var(--paper); background: #080b0b; }
+.activityHead .kicker { color: var(--signal); }
+/* .79 는 2줄(`선은 / 기억한다.`) 전용으로 조인 값이었다 — 3줄이 되자 줄끼리 겹쳐 뭉갰다.
+   다른 h2 들이 .88~.95 를 쓰므로 같은 대역으로 올린다 */
+.activityHead h2 { margin: 18px 0 28px; font-size: clamp(50px, 14vw, 82px); font-weight: 950; line-height: .92; letter-spacing: -.09em; }
+/* ch 는 "0" 글자 폭이라 한글에서는 27ch 가 27자가 아니라 약 15자다 — 가용 폭의 42%를 버렸다.
+   한글 measure 는 em 으로 잡는다 */
+.activityHead > p:last-child { max-width: 24em; color: rgba(238,234,224,.62); font-size: 13px; font-weight: 650; line-height: 1.65; }
+.mapSheet { --tilt: -1.5deg; position: relative; width: min(88vw, 420px); margin: 84px auto; padding: 30px 16px 16px; color: var(--ink); background: var(--paper); box-shadow: 11px 14px 0 var(--orange); }
+.mapSheet::before { content: ''; position: absolute; inset: 0; opacity: .12; background: repeating-linear-gradient(0deg, transparent 0 25px, var(--ink) 26px), repeating-linear-gradient(90deg, transparent 0 25px, var(--ink) 26px); pointer-events: none; }
+.mapTape { position: absolute; z-index: 3; top: -12px; left: 50%; padding: 8px 18px; color: var(--ink); background: var(--signal); font: 750 8px/1 var(--mono); letter-spacing: .12em; transform: translateX(-50%) rotate(1deg); }
+/* 원본은 폰 화면녹화(720x1560)였지만 상단 앱 UI(실명·아바타)를 잘라내 720x1250 이 됐다 */
+.routeVideo { position: relative; width: 100%; aspect-ratio: 720 / 1250; object-fit: cover; border: 1px solid rgba(17,21,19,.45); }
+.phoneLabel { position: absolute; z-index: 2; left: 26px; right: 26px; bottom: 28px; padding: 8px 9px; color: var(--signal); background: rgba(5,8,7,.82); text-align: center; font: 700 7px/1 var(--mono); letter-spacing: .09em; }
+/* 원래는 얇은 테두리 + 모노 숫자의 대시보드 카드였다 — 어디에나 있는 부품이다.
+   같은 정보를 담을 어휘를 이 페이지가 이미 갖고 있다(바구니에 매다는 태그).
+   3칸이라 모바일 2열에서 마지막 칸이 홀로 남으므로 전폭으로 채운다 */
+.activityStats { display: grid; grid-template-columns: 1fr 1fr; gap: 13px; }
+.activityStats div:last-child { grid-column: 1 / -1; }
+.activityStats div {
+  position: relative; min-height: 104px; display: flex; flex-direction: column; justify-content: space-between;
+  padding: 13px 14px 12px 32px; color: var(--ink); background: var(--paper);
+  border: 2px solid var(--ink); box-shadow: 5px 6px 0 rgba(255,105,63,.9);
+  transform: rotate(var(--tag-tilt, -1.2deg));
+}
+.activityStats div:nth-child(2) { --tag-tilt: 1.4deg; }
+.activityStats div:nth-child(3) { --tag-tilt: -.6deg; }
+/* 태그 끈을 꿰는 구멍 — 이 하나가 카드를 태그로 읽히게 한다 */
+.activityStats div::before {
+  content: ''; position: absolute; left: 12px; top: 50%; width: 10px; aspect-ratio: 1;
+  border: 2px solid var(--ink); border-radius: 50%; transform: translateY(-50%);
+}
+.activityStats dt { color: rgba(17,21,19,.55); font: 700 8px/1 var(--mono); letter-spacing: .14em; }
+.activityStats dd { font: 600 clamp(26px, 8vw, 38px)/1 var(--mono); letter-spacing: -.08em; }
+.activityStats dd span { color: #c2401a; font-size: 8px; letter-spacing: .08em; }
+
+/* 애시드 옐로를 면으로 깔면 형광펜 em(잉크 글자 + 옐로 바탕)이 이 섹션에서만 작동을 못 한다 —
+   그래서 여기만 text-stroke 로 우회해 놨었다. 배경을 종이로 내리면 시그니처가 제자리로 돌아온다 */
+.returning { padding: 96px 0 130px; color: var(--ink); background: var(--paper); }
+.returnTitle { padding: 0 var(--pad) 72px; }
+.returnTitle .kicker { color: rgba(17,21,19,.54); }
+.returnTitle h2 { margin-top: 16px; max-width: 7em; font-size: clamp(62px, 18vw, 88px); font-weight: 950; line-height: .88; letter-spacing: -.095em; word-break: keep-all; }
+.returnTitle h2 em { display: inline-block; padding: .02em .08em .08em; color: var(--ink); background: var(--signal); font-style: normal; transform: rotate(-2deg); }
+.returning figure { position: relative; overflow: hidden; background: #78827e; }
+.returning img { object-fit: cover; filter: saturate(1.08) contrast(1.04); }
+/* 돌아오는 길은 A-B — 가는 길 A-B-A 의 뒷부분이 잘려나간 형태다. 규칙은 같고 길이만 짧다 */
+.returnFirst { width: 100%; height: 82svh; }
+.returnSecond { --tilt: -2.8deg; width: 84%; height: 68svh; margin: 18svh 0 0 auto !important; }
+.returning figcaption { position: absolute; z-index: 2; left: 18px; bottom: 18px; padding: 10px 12px; color: var(--paper); background: var(--ink); font-size: 12px; font-weight: 720; line-height: 1.45; }
+.returning figcaption b { color: var(--signal); font: 700 8px/1 var(--mono); letter-spacing: .12em; }
+.returnSecond figcaption { color: var(--ink); background: var(--signal); font: 750 12px/1.25 var(--mono); letter-spacing: .02em; }
+
+.finish { position: relative; min-height: 112svh; overflow: hidden; background: #293431; }
+.finishImage { object-fit: cover; object-position: center 52%; filter: saturate(1.02) contrast(1.04) brightness(.76); }
+.finishShade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(7,10,9,.55), transparent 38%), linear-gradient(0deg, rgba(7,10,9,.9), transparent 55%); }
+.finishCopy { position: absolute; z-index: 2; left: var(--pad); right: var(--pad); bottom: 82px; }
+.finishCopy .kicker { color: var(--signal); }
+.finishCopy h2 { margin: 16px 0 40px; color: var(--signal); font-size: clamp(58px, 16vw, 78px); font-weight: 950; line-height: .95; letter-spacing: -.09em; }
+.finishCopy blockquote { padding-top: 20px; border-top: 1px solid rgba(255,255,255,.52); text-align: right; font-size: clamp(30px, 9vw, 42px); font-weight: 900; line-height: 1.15; letter-spacing: -.055em; }
+
+/* 높이는 아래 .closingStage 가 준다 — min-height 를 같이 두면 스테이지 스크롤 예산이 어긋난다 */
+.end { display: flex; flex-direction: column; padding: max(118px, calc(env(safe-area-inset-top) + 96px)) var(--pad) max(34px, env(safe-area-inset-bottom)); color: var(--paper); background: var(--black); }
+.endIndex { color: var(--signal); font: 750 12px/1.3 var(--mono); letter-spacing: .04em; }
+
+/* 마지막 바구니 — 히어로의 개봉을 거꾸로 돌린다. 뚜껑·안감·짜임 클래스를 그대로 재사용하므로
+   두 장면이 어긋날 일이 없다. 음수 인라인 마진으로 .end 의 좌우 패딩을 되물려 매트가 화면 폭을 채운다 */
+.closingStage { position: relative; flex: 0 0 auto; height: 200svh; margin: 20svh calc(var(--pad) * -1) 0; }
+.closingSticky { position: sticky; top: 0; height: 100svh; overflow: hidden; background: var(--paper); perspective: 1000px; }
+.closingSticky::before { content: ''; position: absolute; inset: 0; opacity: .42; background: var(--mat); }
+/* 뚜껑은 96도에서 몸통 높이만큼 위로 선다 — 히어로와 같은 50% 중심이면 헤더에 걸리고 위가 잘린다 */
+.closingSticky .basket { top: 54%; }
+/* JS 가 없으면 인라인 스타일이 안 붙는다 — 기본값은 닫힌 상태(뚜껑 0도·타이틀 보임·내용물 숨김) */
+.closingSticky [data-closing-item] { opacity: 0; will-change: opacity, transform; }
+.closingTitle strong { font: 500 clamp(84px, 26vw, 140px)/.74 var(--mono); letter-spacing: -.12em; }
+.closingSeal {
+  position: absolute; z-index: 9; top: 13%; left: 50%; padding: 7px 15px;
+  color: var(--ink); background: rgba(233,239,69,.94); border: 1px solid rgba(17,21,19,.5);
+  font: 750 8px/1 var(--mono); letter-spacing: .12em; white-space: nowrap;
+  transform: translate(-50%, -50%) rotate(-2.5deg);
+}
+/* 히어로의 "바구니를 열어주세요" 와 짝이다 — 선을 왼쪽에 둬서 방향까지 뒤집는다.
+   .story p { color: inherit } 이 특이도 (0,1,1) 로 이겨서 종이색으로 묻혔다 — .story 를 붙여 되찾는다 */
+.story .closingCue {
+  position: absolute; z-index: 9; right: var(--pad); bottom: max(24px, env(safe-area-inset-bottom));
+  display: flex; align-items: center; gap: 9px; opacity: 0;
+  color: rgba(17,21,19,.62); font: 800 12px/1 pretendard, sans-serif; letter-spacing: .02em;
+}
+.closingCue i { width: 32px; height: 1px; background: currentColor; transform-origin: right; animation: cue 1.6s ease-in-out infinite; }
+.endNames { margin: 64px 0 28px !important; padding-top: 16px; border-top: 1px solid var(--line); font: 700 12px/1.7 var(--mono); letter-spacing: .02em; }
+.endFooter { display: grid; gap: 26px; }
+.endFooter p { color: rgba(238,234,224,.56); font: 650 9px/1.6 var(--mono); letter-spacing: .1em; }
+.endLinks { display: grid; gap: 6px; }
+.endFooter a { min-height: 44px; display: inline-flex; align-items: center; width: fit-content; color: var(--signal); font-size: 13px; font-weight: 760; text-decoration: none; }
+
+.story [data-reveal] { opacity: .15; transform: translateY(42px) rotate(var(--tilt, 0deg)) scale(var(--scale, 1)); transition: opacity 800ms ease, transform 900ms cubic-bezier(.2,.8,.2,1); }
+.story [data-reveal][data-visible='true'] { opacity: 1; transform: translateY(0) rotate(var(--tilt, 0deg)) scale(var(--scale, 1)); }
+
+@media (min-width: 760px) {
+  .story { --pad: clamp(38px, 5vw, 78px); }
+  /* h1 을 박스 뚜껑 → 히어로로 옮길 때 이 두 줄을 같이 안 고쳐서 데스크톱 오버라이드가 죽어 있었다.
+     그 결과 h1(76px)이 섹션 헤드(95~101px)보다 작았다. 태그를 바꿀 땐 미디어쿼리까지 전수검색할 것. */
+  .heroTitle h1 { font-size: clamp(74px, 7.2vw, 118px); }
+  /* 클래스가 .boxLid → .boxTitle 로 바뀐 뒤에도 이 줄만 옛 이름이라 데스크톱에서 죽어 있었다 */
+  .boxTitle strong { font-size: clamp(150px, 17vw, 270px); }
+  .heroSticker { width: 94px; font-size: 19px; }
+  .heroDistance { bottom: 110px; }
+  .runnerRail { max-width: 760px; }
+  .prologue { display: grid; grid-template-columns: 1fr 1.4fr; gap: 6vw; align-content: center; }
+  .prologue .kicker { grid-column: 1; }
+  .prologue h2 { grid-column: 1 / -1; font-size: clamp(64px, 7vw, 108px); }
+  .picnicTicket { grid-column: 1; width: min(88%, 420px); margin: 0 0 20px; align-self: end; }
+  .factGrid { grid-column: 2; }
+  .story .prologueNote { grid-column: 2; }
+  .outboundHead { position: sticky; top: 18vh; width: 38%; padding-bottom: 0; }
+  .outboundHead h2 { font-size: clamp(64px, 6.6vw, 110px); }
+  .photoSequence { margin-top: -46vh; gap: 30vh; }
+  /* 데스크톱도 같은 A-B-A — A 두 장은 폭·높이·정렬까지 완전히 같아야 규칙으로 읽힌다 */
+  .photoLarge, .photoWide { width: 62%; height: 90vh; margin-left: auto !important; }
+  .photoInset { width: 48%; height: 84vh; margin-left: 7vw !important; }
+  /* .turnCopy h2 데스크톱 확대는 뺐다 — 히어로 21.51 은 확대 규칙이 없어서, 여기만 키우면
+     모바일에서 맞춰 놓은 위계가 데스크톱에서 다시 뒤집힌다 */
+  .turnCopy > p:nth-of-type(2) { padding-left: 64%; font-size: 20px; }
+  .activity { display: grid; grid-template-columns: 1fr minmax(300px, 440px); gap: 7vw; align-items: start; }
+  .activityHead { position: sticky; top: 18vh; }
+  .activityHead h2 { font-size: clamp(74px, 7vw, 112px); }
+  .mapSheet { grid-column: 2; margin: 0 auto 90px; }
+  .activityStats { grid-column: 1 / -1; grid-template-columns: repeat(3, 1fr); }
+  .activityStats div:last-child { grid-column: auto; }
+  .returning { display: grid; grid-template-columns: .82fr 1.18fr; gap: 7vw; padding-inline: var(--pad); }
+  .returnTitle { position: sticky; top: 15vh; align-self: start; padding: 0; }
+  .returnTitle h2 { font-size: clamp(72px, 7vw, 116px); }
+  .returnFirst, .returnSecond { grid-column: 2; }
+  .returnFirst { width: 100%; height: 92vh; }
+  .returnSecond { width: 84%; height: 78vh; margin-left: auto !important; }
+  .returnSecond { margin-top: 18vh !important; }
+  .finishCopy { max-width: 760px; }
+  .finishCopy h2 { font-size: clamp(72px, 7vw, 116px); }
+  /* .boxTitle strong 데스크톱 규칙과 특이도가 같아 순서로 진다 — 여기서 되찾아야 한다 */
+  .closingTitle strong { font-size: clamp(120px, 13vw, 208px); }
+  .endFooter { grid-template-columns: 1fr 1fr; align-items: end; }
+  .endLinks { justify-self: end; justify-items: end; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scrollCue i { animation: none; }
+  .progress i { display: none; }
+  .story [data-reveal] { opacity: 1; transform: none; transition: none; }
+  .boxScene { display: none; }
+  /* 닫는 연출을 안 하면 스크롤 예산 100svh 가 빈 화면이 된다 — 스테이지를 접고 닫힌 결과만 보인다 */
+  .closingStage { height: auto; margin-top: 78px; }
+  .closingSticky { position: static; height: 86svh; }
+  .closingCue { display: none; }
+  .ticketInner, .factGrid div, .factGrid div::after, .prologue::before { transition: none; }
+}

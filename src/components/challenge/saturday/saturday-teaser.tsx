@@ -41,6 +41,7 @@ export function SaturdayTeaser() {
           <small className={styles.nameOrigin}>{SATURDAY_COPY.footer.nameOrigin}</small>
         </div>
         <p>{SATURDAY_COPY.footer.joke}</p>
+        <Link href="/saturday/oido">오이도 방조제를 달린 왕복 21.51km →</Link>
         {/* 일곱 명을 한 명씩 보는 화면. 이 티저는 '누가'까지 가지 않고 끝난다 */}
         <Link href="/saturday/athletes">일곱 명 선수 소개 →</Link>
         <Link href="/">러닝의 모든것에서 만듭니다 ↗</Link>
