@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 인천마라톤 공식 유의사항(incheonmarathon.or.kr, 2026-09-04 확인) — 풀 4:59:59 또는 하프 2:09:59,
+  // 인정기간 2024.1.1~2026.10.19, 런카이브 제출 / 부산브릿지마라톤 공식 공지(2026-08-25) — 4:29:59, 타 종목 기록증 제외 명시.
+  'marathon-record-certificate-requirement-2026': {
+    title: '풀코스 신청에 기록증이 필요한 대회들',
+    subtitle: '기준 시간보다 "어떤 종목의 기록을 받아주느냐"가 갈림길이다',
+    data: '인천 4:59:59 · 하프 2:09:59 대체 가능 / 부산브릿지 4:29:59 · 풀코스 기록증만',
+  },
   // 출처: 러너블 추가접수 상품 페이지(runable.me/product/19627, 2026-09-03 확인) — 9/3 14:00~9/30 17:00 선착순,
   // 하프 8만·10K 6만, 취소분 수시 오픈, 환불 9/30 17:00.
   'garmin-run-korea-additional-registration': {
