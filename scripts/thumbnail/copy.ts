@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: JTBC 서울마라톤 공식 공지 3건(marathon.jtbc.com, 2026-09-04 게시) — 추가접수 9/8 14시, 기록제출 9/18 17시 마감(선택),
+  // 레이스팩 SETEC 현장 수령 / 인천 공식 대회소개 9/7 14:00 / 춘천 공식 공지 결제 9/10 10~18시.
+  'marathon-registration-week-september-2026': {
+    title: '풀코스 접수가 사흘 새 셋 열린다',
+    subtitle: '시각은 셋 다 오후 2시인데, 손에 쥐고 있어야 하는 것이 다르다',
+    data: '인천 9/7 기록증 필수 · JTBC 9/8 레이스팩 현장수령 · 춘천 9/8 신청→9/10 결제',
+  },
   // 출처: 인천마라톤 공식 유의사항(incheonmarathon.or.kr, 2026-09-04 확인) — 풀 4:59:59 또는 하프 2:09:59,
   // 인정기간 2024.1.1~2026.10.19, 런카이브 제출 / 부산브릿지마라톤 공식 공지(2026-08-25) — 4:29:59, 타 종목 기록증 제외 명시.
   'marathon-record-certificate-requirement-2026': {
