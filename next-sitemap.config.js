@@ -4,6 +4,37 @@ const fs = require("fs");
 
 const buildTime = new Date().toISOString();
 
+/**
+ * 얕은 복제로 받은 저장소면 전체 이력을 받아 온다.
+ *
+ * 왜 필요한가 — `git log -1 -- <파일>` 은 그 파일을 건드린 커밋을 찾는 명령이라 이력이 있어야
+ * 동작한다. 얕은 복제(`--depth 1`)에는 커밋이 하나뿐이고 그 커밋이 전체 트리를 "추가"한 것으로
+ * 보이므로, **존재하는 모든 경로가 똑같이 최신 커밋 날짜를 돌려받는다.**
+ *
+ * 2026-09-04 실측: 배포된 sitemap 931개 URL의 lastmod가 값 **2개**뿐이었다 —
+ * 최신 커밋 날짜 665개 + 빌드 시각 266개. 파일별로 날짜를 매기려던 아래 로직이 통째로 무력화된
+ * 상태였고, 그래서 7월에 고친 페이지도 "방금 바뀜"으로만 신고돼 재크롤 근거가 사라졌다.
+ *
+ * 실패해도 빌드는 계속한다(네트워크·자격증명이 없을 수 있다). 대신 마지막의 canary 가 경고한다.
+ */
+(function ensureGitHistory() {
+  try {
+    const shallow = execSync("git rev-parse --is-shallow-repository", {
+      encoding: "utf8",
+      cwd: __dirname,
+      stdio: ["ignore", "pipe", "ignore"],
+    }).trim();
+    if (shallow !== "true") return;
+    execSync("git fetch --unshallow --quiet", {
+      cwd: __dirname,
+      stdio: "ignore",
+      timeout: 120000,
+    });
+  } catch {
+    // 이력을 못 받으면 lastmod 가 뭉친다. 아래 canary 가 빌드 로그에 남긴다.
+  }
+})();
+
 const lastModCache = new Map();
 function gitLastMod(filePath) {
   if (!filePath) return buildTime;
@@ -41,6 +72,38 @@ const shoeSlugFileMap = (() => {
 function shoeFileFor(slug) {
   return shoeSlugFileMap[slug] || "src/lib/data/shoes";
 }
+
+// Blog slug → 그 글의 날짜와 파일.
+//
+// 글은 월별 파일(blog/posts/YYYY-MM.ts)에 여러 개씩 들어 있다. 파일 단위 git 날짜를 쓰면 같은 달
+// 글이 전부 같은 날짜를 받으므로, **글 데이터의 updatedAt ?? publishedAt 을 우선 쓴다.** 이 값은
+// git 이력이 없는 빌드 환경에서도 그대로 읽히는 것이 장점이다.
+//
+// 2026-07 분리 전에는 posts.ts 파일 하나였고 이 설정도 그 경로를 보고 있었다. 파일이 사라진 뒤
+// 아무도 눈치채지 못해 **블로그 263개 URL 전부가 lastmod 를 빌드 시각으로 받고 있었다**
+// (2026-09-04 확인). 경로를 손으로 적어 두면 같은 사고가 반복되므로 폴더를 훑어 만든다.
+const blogMeta = (() => {
+  const map = {};
+  const dir = path.join(__dirname, "src/lib/data/blog/posts");
+  try {
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".ts") || f === "index.ts") continue;
+      const rel = `src/lib/data/blog/posts/${f}`;
+      const src = fs.readFileSync(path.join(__dirname, rel), "utf8");
+      // 글 객체는 순서대로 나열돼 있다. slug 부터 다음 slug 직전까지가 그 글의 범위다.
+      const marks = [...src.matchAll(/slug:\s*['"]([^'"]+)['"]/g)];
+      marks.forEach((m, i) => {
+        const chunk = src.slice(m.index, i + 1 < marks.length ? marks[i + 1].index : undefined);
+        const updated = /updatedAt:\s*['"](\d{4}-\d{2}-\d{2})/.exec(chunk);
+        const published = /publishedAt:\s*['"](\d{4}-\d{2}-\d{2})/.exec(chunk);
+        map[m[1]] = { file: rel, date: (updated || published || [])[1] };
+      });
+    }
+  } catch {
+    // 폴더 구조가 또 바뀌면 아래 fallback 이 폴더 전체의 git 날짜를 본다.
+  }
+  return map;
+})();
 
 // noindex: true 플래그가 켜진 신발은 sitemap에서도 제외 (페이지 robots noindex와 일관성).
 // 신발 데이터에 noindex: true만 추가하면 자동 제외 — 별도 등록 불필요.
@@ -91,7 +154,10 @@ function lastModFor(urlPath) {
     return gitLastMod(shoeFileFor(slug));
   }
   if (urlPath.startsWith("/blog/")) {
-    return gitLastMod("src/lib/data/blog/posts.ts");
+    const slug = urlPath.replace("/blog/", "").replace(/\/$/, "");
+    const meta = blogMeta[slug];
+    if (meta && meta.date) return meta.date;
+    return gitLastMod((meta && meta.file) || "src/lib/data/blog/posts");
   }
   if (urlPath.startsWith("/gels/")) {
     return gitLastMod("src/lib/data/gels");
@@ -109,6 +175,17 @@ function lastModFor(urlPath) {
     return gitLastMod("src/lib/pseo/matrices.ts");
   }
   if (urlPath.startsWith("/vs/")) {
+    // 비교 페이지의 내용은 신발 두 켤레다. pairs.ts 하나를 보면 354개 URL이 같은 날짜를 받으므로,
+    // 두 신발 파일 중 더 최근 것을 쓴다. 둘 중 하나라도 못 찾으면 pairs.ts 로 물러선다.
+    const slug = urlPath.replace("/vs/", "").replace(/\/$/, "");
+    const parts = slug.split("-vs-");
+    if (parts.length === 2) {
+      const dates = parts
+        .map((s) => shoeSlugFileMap[s])
+        .filter(Boolean)
+        .map(gitLastMod);
+      if (dates.length === 2) return dates.sort().at(-1);
+    }
     return gitLastMod("src/lib/pseo/pairs.ts");
   }
   if (staticPageMap[urlPath]) {
@@ -148,6 +225,27 @@ const ROBOT_AGENTS = [
   "Meta-ExternalAgent",
 ];
 
+/**
+ * lastmod 가 다시 뭉치면 빌드 로그에 남긴다.
+ *
+ * 이 설정은 파일별 날짜를 매기려고 공들여 짜여 있는데, git 이력이 없거나 경로가 끊기면 **조용히**
+ * 한두 값으로 무너진다. 2026-09-04 에 실제로 931개 URL이 값 2개가 된 채 몇 달을 보냈고, 사람 눈으로
+ * sitemap.xml 을 봐도 날짜가 그럴듯해 보여서 아무도 못 잡았다. 그래서 기계가 세게 한다.
+ *
+ * 빌드를 실패시키지는 않는다 — 배포를 막을 만한 문제는 아니고, 막으면 급할 때 우회 압력이 생긴다.
+ */
+const seenLastmods = new Set();
+const MIN_DISTINCT_LASTMOD = 5;
+process.on("exit", () => {
+  if (seenLastmods.size === 0 || seenLastmods.size >= MIN_DISTINCT_LASTMOD) return;
+  console.warn(
+    `\n[sitemap] ⚠ lastmod 고유값이 ${seenLastmods.size}개뿐입니다 (기대: ${MIN_DISTINCT_LASTMOD}개 이상).\n` +
+      `  git 이력이 없거나(얕은 복제) lastModFor 의 경로가 끊긴 상태일 수 있습니다.\n` +
+      `  값: ${[...seenLastmods].join(", ")}\n` +
+      `  참고: docs/ 의 sitemap lastmod 진단 기록\n`,
+  );
+});
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: process.env.SITE_URL || "https://allrunabout.com",
@@ -173,6 +271,7 @@ module.exports = {
   },
   transform: async (config, urlPath) => {
     const lastmod = lastModFor(urlPath);
+    seenLastmods.add(lastmod);
 
     if (urlPath.startsWith("/shoes/")) {
       const slug = urlPath.replace("/shoes/", "").replace(/\/$/, "");
