@@ -82,6 +82,28 @@ function shoeFileFor(slug) {
 // 2026-07 분리 전에는 posts.ts 파일 하나였고 이 설정도 그 경로를 보고 있었다. 파일이 사라진 뒤
 // 아무도 눈치채지 못해 **블로그 263개 URL 전부가 lastmod 를 빌드 시각으로 받고 있었다**
 // (2026-09-04 확인). 경로를 손으로 적어 두면 같은 사고가 반복되므로 폴더를 훑어 만든다.
+// Marathon id → 그 행사가 실린 월별 파일 (marathon/{month}.ts).
+//
+// 라우트가 `/marathon/[id]` 이고 항목의 식별자 필드 이름이 `slug` 가 아니라 `id` 다.
+// 디렉터리 하나를 보면 행사 하나만 고쳐도 115개 URL이 전부 "우리 다 바뀌었다"고 신고한다.
+// 마라톤은 이 사이트에서 접수 마감·일정이 가장 자주 바뀌는 층이라 매 배포마다 늑대를 부르는 셈이라,
+// 파일 단위로 좁힌다. 행사의 `date` 는 대회 날짜(미래일 수 있다)이지 수정일이 아니므로 쓰지 않는다.
+const marathonIdFileMap = (() => {
+  const map = {};
+  const dir = path.join(__dirname, "src/lib/data/marathon");
+  try {
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".ts") || f === "index.ts") continue;
+      const rel = `src/lib/data/marathon/${f}`;
+      const src = fs.readFileSync(path.join(__dirname, rel), "utf8");
+      for (const m of src.matchAll(/^\s{4}id:\s*['"]([^'"]+)['"]/gm)) map[m[1]] = rel;
+    }
+  } catch {
+    // 구조가 바뀌면 아래 fallback 이 디렉터리 전체를 본다.
+  }
+  return map;
+})();
+
 const blogMeta = (() => {
   const map = {};
   const dir = path.join(__dirname, "src/lib/data/blog/posts");
@@ -163,7 +185,8 @@ function lastModFor(urlPath) {
     return gitLastMod("src/lib/data/gels");
   }
   if (urlPath.startsWith("/marathon/")) {
-    return gitLastMod("src/lib/data/marathon");
+    const id = urlPath.replace("/marathon/", "").replace(/\/$/, "");
+    return gitLastMod(marathonIdFileMap[id] || "src/lib/data/marathon");
   }
   if (urlPath.startsWith("/brands/") && urlPath.endsWith("/technology")) {
     return gitLastMod("src/lib/data/brands");
