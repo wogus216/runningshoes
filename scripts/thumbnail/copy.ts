@@ -40,6 +40,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   // 출처: JTBC 서울마라톤 공식 공지 3건(marathon.jtbc.com, 2026-09-04 게시) — 추가접수 9/8 14시, 기록제출 9/18 17시 마감(선택),
   // 레이스팩 SETEC 현장 수령 / 인천 공식 대회소개 9/7 14:00 / 춘천 공식 공지 결제 9/10 10~18시.
+  // 출처: 인천마라톤 공식 기념품 안내 이미지(incheonmarathon.or.kr/racepack, 업로드일 2026-09-07 판독) —
+  // 풀 7종 / 10km·5km 5종, 5km만 "번호표(기록칩 없음)". 급수는 공식 유의사항(2026-09-03) 기준.
+  'incheon-marathon-2026-race-kit-by-distance': {
+    title: '인천마라톤 5km에는 기록칩이 없다',
+    subtitle: '종목이 거리만 다른 게 아니다 — 문턱과 지원이 같이 움직인다',
+    data: '풀 7종 · 급수 매 5km / 10km 5종 · 급수 1개소 / 5km 5종 · 기록칩도 급수도 없음',
+  },
   'marathon-registration-week-september-2026': {
     title: '풀코스 접수가 사흘 새 셋 열린다',
     subtitle: '시각은 셋 다 오후 2시인데, 손에 쥐고 있어야 하는 것이 다르다',

@@ -7984,11 +7984,11 @@ export const posts_2026_06: BlogPost[] = [
     id: '2026-incheon-marathon',
     slug: '2026-incheon-marathon',
     title: '바다 위 청라하늘대교를 달린다 — 2026 인천마라톤(제2회) | 11/22 인천 첫 풀코스, 코스·2025 1회 총정리',
-    description: '인천시·대한육상연맹이 주최하는 인천 최초 풀코스 대회 \'인천마라톤\'이 11월 22일(일) 제2회로 열립니다. 2026년엔 청라하늘대교 위를 달리는 편도 코스(바다 위 러닝)가 확정됐고, 풀코스 정원도 8천 명으로 확대됐죠. 접수는 9월 7일 14시이며 풀코스는 기록증 제출자만 신청할 수 있습니다. 2만 명 규모·해외 엘리트 초청의 이 공식 시 대회 일정·코스·참가비·접수 정보와 2025 제1회 결과를 정리했습니다.',
+    description: '인천시·대한육상연맹이 주최하는 인천 최초 풀코스 대회 \'인천마라톤\'이 11월 22일(일) 제2회로 열립니다. 2026년엔 청라하늘대교 위를 달리는 편도 코스(바다 위 러닝)가 확정됐고, 풀코스 정원도 8천 명으로 확대됐죠. 접수는 9월 7일 14시에 시작됐고 풀코스는 기록증 제출자만 신청할 수 있습니다. 2만 명 규모·해외 엘리트 초청의 이 공식 시 대회 일정·코스·참가비·접수 정보와 2025 제1회 결과를 정리했습니다.',
     thumbnail: '/images/blog/2026-incheon-marathon.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
-    updatedAt: '2026-09-04',
+    updatedAt: '2026-09-07',
     category: 'news' as const,
     readingTime: 6,
     event: {
@@ -8000,14 +8000,14 @@ export const posts_2026_06: BlogPost[] = [
     },
     tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
     content: `
-<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시</strong>에 열리고, <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
+<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작됐고</strong>, <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>2026 인천마라톤(제2회)이 11월 22일(일) 개최</strong> — 인천시·대한육상연맹이 주최하는 <strong>인천 최초·유일의 공식 풀코스 마라톤</strong>입니다</li>
     <li>2026년 최대 변화는 <strong>청라하늘대교 위를 달리는 편도 코스</strong> — 바다 위를 달리는 국내에서 보기 드문 교량 러닝이 차별점입니다(2026-09-03 공식 코스도로 확정)</li>
-    <li>2만 명 규모(풀코스 8천 명으로 확대)·해외 엘리트 초청의 <strong>"역대급" 공식 시 대회</strong>. 접수는 <strong>9월 7일(월) 14시</strong>에 열립니다</li>
+    <li>2만 명 규모(풀코스 8천 명으로 확대)·해외 엘리트 초청의 <strong>"역대급" 공식 시 대회</strong>. 접수는 <strong>9월 7일(월) 14시에 시작됐습니다</strong></li>
   </ul>
 </div>
 
@@ -8044,7 +8044,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>접수·참가비</h2>
 <ul>
-  <li><strong>접수</strong>: <strong>9월 7일(월) 14시</strong> 개시, 마감일 미고지. 공식 사이트 incheonmarathon.or.kr</li>
+  <li><strong>접수</strong>: <strong>9월 7일(월) 14시</strong> 개시(진행 중), 마감일 미고지. 공식 사이트 incheonmarathon.or.kr</li>
   <li><strong>참가비</strong>: 풀 80,000원 / 10K 50,000원 / 5K 30,000원 — <em>공식 대회소개 표 확정</em></li>
   <li><strong>풀코스 참가 자격</strong>: 만 18세 이상 + 기록증 제출(2024.1.1~2026.10.19 대회의 풀 4:59:59 또는 하프 2:09:59 이내). 런카이브 제출, 미제출 시 자동 환불</li>
   <li><strong>완주 기념품</strong>: 완주 메달 + 기능성 티셔츠 + 온라인 기록증 + 기록칩(풀·10K)</li>
