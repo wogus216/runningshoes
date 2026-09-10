@@ -2,6 +2,122 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'mount-to-coast-korea-launch',
+    slug: 'mount-to-coast-korea-launch',
+    title:
+      '마운트투코스트(Mount to Coast) 한국 상륙 — 서촌 플래그십 오픈, 9월 20일까지 공동구매 | 랩 데이터가 아직 어디에도 없는 신생 브랜드',
+    description:
+      '2022년 프로토타입 개발 후 2023년 ISPO Award를 수상한 퍼포먼스 러닝화 브랜드 Mount to Coast가 한국에 정식 상륙했습니다. 서울 종로구 서촌에 플래그십 스토어를 열었고 온라인 스토어(mounttocoast.co.kr)도 함께 오픈, 9월 20일(일)까지 런업TV 공동구매가 진행됩니다. C1(슈퍼트레이너)·H1(로드투트레일)·T1(롱디스턴스 트레일) 세 라인업에 가격은 199,000~239,000원입니다. 다만 무게·드롭·스택 높이 같은 랩 실측 데이터는 한국·글로벌 공식몰과 RunRepeat 어디에도 아직 게시되지 않았습니다.',
+    thumbnail: '/images/blog/mount-to-coast-korea-launch.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-10',
+    category: 'news' as const,
+    readingTime: 6,
+    tags: [
+      '마운트투코스트',
+      'Mount to Coast',
+      '마운트투코스트 한국',
+      '서촌 러닝화',
+      '신생 러닝화 브랜드',
+      '러닝화 브랜드 런칭',
+      '공동구매',
+      'TUNEDFIT',
+    ],
+    faqs: [
+      {
+        question: '이 브랜드는 국내에서 처음 보는데, 신뢰할 만한가요?',
+        answer:
+          '한국에는 이번이 첫 진출이지만 글로벌 공식몰(mounttocoast.com) 기준 제품별로 수백 개의 소비자 리뷰가 쌓여 있어 완전히 무명은 아닙니다. 2022년 프로토타입 개발, 2023년 ISPO Award 수상 이력도 있습니다. 다만 RunRepeat 같은 제3자 랩 테스트 기관에는 아직 등록돼 있지 않아, 무게·드롭·쿠셔닝 실측치는 이 글을 쓰는 시점까지 확인할 방법이 없습니다.',
+      },
+      {
+        question: 'C1·H1·T1은 각각 어떤 라인업인가요?',
+        answer:
+          '공식 분류 기준 C1은 "Super Trainer"(로드 데일리), H1은 "Road-to-Trail"(로드-트레일 겸용), T1은 "Long-distance Trail"(장거리 트레일)입니다. 국내 온라인 스토어에는 C1과 H1이 먼저 올라와 있고, T1은 글로벌 사이트 기준 라인업입니다.',
+      },
+      {
+        question: 'LightCELL과 CircleCELL은 같은 기술인가요?',
+        answer:
+          '다른 기술입니다. 브랜드 공식 기술 페이지 기준 LightCELL은 "EVA보다 50% 가볍고 에너지 리턴 45% 향상"에 초점을 맞춘 초임계 발포 폼이고, CircleCELL은 "재활용 유기 폐기물을 포함한 100% 재생 원료"로 만든 친환경·고내구성 폼입니다. 국내에 먼저 들어온 C1(Men White) 제품 페이지에는 CircleCELL 폼이 명시돼 있고, LightCELL은 브랜드 소개 문구에 언급된 별도 기술입니다 — 국내 출시 라인업 중 어떤 모델에 LightCELL이 쓰였는지는 이 글을 쓰는 시점까지 확인되지 않았습니다.',
+      },
+      {
+        question: '한국에서 신발 실측 데이터는 언제 나오나요?',
+        answer:
+          '아직 예정이 없습니다. 랩 실측치(무게·드롭·스택 높이·경도)가 공개되거나 RunRepeat 같은 기관이 테스트를 게시하면 이 글과 별도로 상세 리뷰를 다룰 예정입니다.',
+      },
+    ],
+    content: `
+<div class="callout info">
+  <span class="callout-icon">🏔️</span>
+  <div class="callout-body">
+    <p class="callout-title">2022년 프로토타입, 2023년 ISPO Award — 그리고 이번 주 한국 상륙</p>
+    <p>Mount to Coast는 장거리 러닝에 뿌리를 둔 퍼포먼스 러닝화 브랜드로, 2022년 프로토타입 개발을 거쳐 2023년 ISPO Award를 수상하며 이름을 알렸습니다. 슬로건은 "For runners who transcend distance(거리를 초월하는 러너들을 위해)" — 빨리 달리는 신발보다 더 오래 달릴 수 있는 신발을 지향한다고 밝히고 있습니다.</p>
+  </div>
+</div>
+
+<p>서울 종로구 서촌(자하문로10길 25, 경복궁역 4번출구 도보 8분)에 <strong>플래그십 스토어</strong>가 문을 열었고, 온라인 스토어(<a href="https://mounttocoast.co.kr" target="_blank" rel="noopener noreferrer">mounttocoast.co.kr</a>)도 함께 오픈했습니다. <strong>9월 20일(일)까지 런업TV 공동구매 이벤트</strong>가 온라인 스토어를 통해 진행됩니다.</p>
+
+<h2>라인업 — C1·H1·T1</h2>
+
+<table>
+  <thead>
+    <tr><th>라인업</th><th>분류</th><th>가격</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>C1</strong></td><td>Men's / Women's Super Trainer (로드 데일리)</td><td>239,000원</td></tr>
+    <tr><td><strong>H1</strong></td><td>Men's Road-to-Trail (로드-트레일 겸용)</td><td>199,000원</td></tr>
+    <tr><td><strong>T1</strong></td><td>Long-distance Trail (장거리 트레일, 글로벌 라인업)</td><td>-</td></tr>
+  </tbody>
+</table>
+
+<p>국내 온라인 스토어에는 C1(화이트·블랙·울트라바이올렛)과 H1(조슈아 트리)이 먼저 올라와 있습니다. C1 사이즈는 250~300mm 11개 사이즈로 나옵니다.</p>
+
+<h2>두 가지 미드솔 폼 — LightCELL과 CircleCELL은 다른 기술입니다</h2>
+
+<p>브랜드 소개 문구는 "EVA보다 50% 가볍고 45% 높은 에너지 리턴을 제공하는 LightCELL™ 기술"을 내세웁니다. 그런데 국내에 먼저 들어온 <strong>C1 제품 페이지에는 LightCELL이 아니라 CircleCELL 폼</strong>이 명시돼 있습니다. 브랜드 공식 기술 페이지를 확인해보니 이 둘은 같은 기술의 다른 이름이 아니라 <strong>별개의 폼</strong>이었습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>기술명</th><th>초점</th><th>설명</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>LightCELL™</strong></td><td>경량·반발력</td><td>질소를 주입한 초임계 발포 폼. EVA 대비 50% 가볍고 에너지 리턴 45% 향상</td></tr>
+    <tr><td><strong>CircleCELL™</strong></td><td>친환경·내구성</td><td>재활용 유기 폐기물 등 100% 재생 원료. PEBA급 에너지 리턴에 PEBA 대비 거의 2배 수명</td></tr>
+    <tr><td>JETCELL™</td><td>반발력</td><td>자동차 보호 필름에 쓰이는 폴리머에서 착안, PEBA 대비 2배 반발력(참고용 — 국내 출시 라인업 적용 여부 미확인)</td></tr>
+  </tbody>
+</table>
+
+<p>즉 국내에서 먼저 살 수 있는 C1은 CircleCELL 폼 제품이고, LightCELL이 국내 라인업 중 어디에 쓰였는지는 이 글을 쓰는 시점까지 확인되지 않았습니다. 갑피 쪽에서는 <strong>TUNEDFIT 듀얼 레이싱 시스템</strong>이 공통으로 언급됩니다 — 전족부와 중족부 레이스를 독립적으로 조절해 장거리 러닝에서 발이 붓는 불편을 줄이는 구조라고 브랜드는 설명합니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">랩 실측 데이터가 아직 없습니다</p>
+    <p><strong>무게, 드롭(heel-to-toe drop), 스택 높이, 경도 같은 실측 스펙이 한국·글로벌 공식몰 어디에도 게시돼 있지 않습니다.</strong> RunRepeat에서도 제품 페이지·브랜드 페이지 모두 검색되지 않아, 제3자 랩 테스트 역시 아직 없는 것으로 보입니다. 이 사이트는 랩 데이터가 없는 신발에 점수나 평점을 매기지 않으므로, 이 글에는 스펙 비교표나 별점을 넣지 않았습니다. 실측 데이터가 공개되면 별도 상세 리뷰로 다룰 예정입니다.</p>
+  </div>
+</div>
+
+<h2>지금까지 확인된 것</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>브랜드 연혁</td><td>2022년 프로토타입 개발 · 2023년 ISPO Award 수상</td></tr>
+    <tr><td>국내 진출</td><td>서촌 플래그십 스토어 + 온라인 스토어(mounttocoast.co.kr) 오픈</td></tr>
+    <tr><td>플래그십 위치</td><td>서울 종로구 자하문로10길 25 (경복궁역 4번출구 도보 8분)</td></tr>
+    <tr><td>공동구매</td><td>런업TV 공동구매, ~9월 20일(일), 온라인 스토어</td></tr>
+    <tr><td>라인업</td><td>C1(슈퍼트레이너) · H1(로드투트레일) · T1(롱디스턴스 트레일)</td></tr>
+    <tr><td>가격</td><td>C1 239,000원 · H1 199,000원</td></tr>
+    <tr><td>특징 기술</td><td>TUNEDFIT 듀얼 레이싱 · LightCELL·CircleCELL·JETCELL 폼(모델별 적용 상이)</td></tr>
+    <tr><td>랩 실측 스펙</td><td>미공개 (RunRepeat 등재 없음)</td></tr>
+  </tbody>
+</table>
+
+<p><small>출처: 인스타그램 계정 currererunners 게시물(2026-09-10 확인) — 브랜드 소개·기술 설명·플래그십 위치·공동구매 일정. Mount to Coast 한국 공식몰 mounttocoast.co.kr(2026-09-10 확인) — 국내 판매 제품(C1·H1)·가격·사이즈·모델번호. Mount to Coast 글로벌 공식몰 mounttocoast.com(2026-09-10 확인) — 라인업 구성(C1·H1·T1)·가격(USD)·리뷰 수. 글로벌 공식몰 기술 페이지(2026-09-10 확인) — LightCELL·CircleCELL·JETCELL 각 기술 설명. RunRepeat(2026-09-10 확인) — 제품·브랜드 페이지 모두 미등재.</small></p>
+`,
+  },
+  {
     id: 'suunto-yupster-ultra-run-challenge-2026',
     slug: 'suunto-yupster-ultra-run-challenge-2026',
     title:
