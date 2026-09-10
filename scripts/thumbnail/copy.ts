@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: ASICS Marathon de Paris 공식(asicsmarathondeparis.com, 2026-09-10 확인) —
+  // 참가비 €169·추첨제 전환·팀 2~6명 규정. 마감 일시는 공식 추첨 신청 페이지 상단 고지
+  // "jusqu'au mercredi 30 septembre 2026 à 23h59 (heure française)" → KST 10/1 06:59.
+  'paris-marathon-2027-lottery-guide': {
+    title: '파리마라톤, 선착순이 사라졌다',
+    subtitle: '50회 기념 대회가 추첨제로 — 지금 넣든 마감 직전이든 확률은 같다',
+    data: '추첨 신청 무료 · 한국시간 10/1 06:59 마감 · €169 · 팀 2~6명은 한 명만 뽑혀도 전원',
+  },
   // 출처: JTBC 서울마라톤 공식 공지 3건(marathon.jtbc.com, 2026-09-04 게시) — 추가접수 9/8 14시, 기록제출 9/18 17시 마감(선택),
   // 레이스팩 SETEC 현장 수령 / 인천 공식 대회소개 9/7 14:00 / 춘천 공식 공지 결제 9/10 10~18시.
   // 출처: 인천마라톤 공식 기념품 안내 이미지(incheonmarathon.or.kr/racepack, 업로드일 2026-09-07 판독) —
