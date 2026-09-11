@@ -1,0 +1,67 @@
+{
+  "source": "User-provided folder, 2026-09-11",
+  "runDate": "2026-09-05",
+  "distanceKm": 30.02,
+  "images": [
+    {
+      "source": "1000023748.jpg",
+      "output": "station.webp"
+    },
+    {
+      "source": "1000023750.jpg",
+      "output": "riverside.webp"
+    },
+    {
+      "source": "1000023752.jpg",
+      "output": "gel-break.webp"
+    },
+    {
+      "source": "1000023753.jpg",
+      "output": "energy-gel.webp"
+    },
+    {
+      "source": "1000023758.jpg",
+      "output": "sunlight.webp"
+    },
+    {
+      "source": "1000023762.jpg",
+      "output": "pause.webp"
+    },
+    {
+      "source": "1000023765.jpg",
+      "output": "river-walk.webp"
+    },
+    {
+      "source": "1000023766.jpg",
+      "output": "riverside-runner.webp"
+    },
+    {
+      "source": "1000023768.jpg",
+      "output": "portrait.webp"
+    },
+    {
+      "source": "1000023770.jpg",
+      "output": "pointing.webp"
+    },
+    {
+      "source": "1789102682334.jpg",
+      "output": "running-front.webp"
+    },
+    {
+      "source": "1789102693905.jpg",
+      "output": "running-front-two.webp"
+    },
+    {
+      "source": "1789102698197.jpg",
+      "output": "running-back.webp"
+    },
+    {
+      "source": "1789102707104.jpg",
+      "output": "running-back-two.webp"
+    },
+    {
+      "source": "썸네일_게토300.jpg",
+      "output": "gatorade.webp"
+    }
+  ]
+}
