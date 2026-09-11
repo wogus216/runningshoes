@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import styles from './first-thirty.module.css';
 import { chapterStops } from './story-timeline';
+import { TicketMaker } from './ticket-maker';
 
 const Stage = dynamic(() => import('./thirty-stage'), { ssr: false });
 const root = '/images/challenge/saturday/first30';
@@ -164,8 +165,10 @@ export function FirstThirtyStory() {
           </article>
           <button className={styles.saveTicket} onClick={saveTicket} disabled={saving}>{saving ? '티켓 만드는 중…' : '기념 티켓 저장 ↓'}</button>
           <p className={styles.saveStatus} role="status">{saveMessage}</p>
+          <a className={styles.makeOwnLink} href="#ticket-maker">내 기록으로 티켓 만들기 ↘</a>
           <div><a href="#first30-start">처음부터 다시 ↗</a><Link href="/saturday">쎄러데이로 ↗</Link></div><span className={styles.endDate}>첫 30km의 기억 · 2026.09.05</span>
         </section>
+        <TicketMaker />
       </main>
 
       <dialog className={styles.lightbox} ref={dialog} onClose={() => setSelected(null)} onClick={(event) => { if (event.target === event.currentTarget) dialog.current?.close(); }}>
