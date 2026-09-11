@@ -366,6 +366,382 @@ export const posts_2026_09: BlogPost[] = [
 `,
   },
   {
+    id: 'puma-magnify-nitro-3-review',
+    slug: 'puma-magnify-nitro-3-review',
+    title: '푸마 매그니파이 나이트로 3 후기 | PEBA 맥시멀 쿠션을 20만원 이하에 — 부상 예방 전 항목 최상위',
+    description:
+      '매그니파이 나이트로 3는 199,000원에 40mm PEBA 맥시멀 쿠션을 제공합니다. 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent(최상위)입니다. RunRepeat 실측 종합 91점(Superb)으로 이 사이트가 다룬 맥시멀 쿠션화 중 최고 점수입니다. 264g으로 맥시멀치고 가벼운 편이지만, 빠른 페이스에는 맞지 않습니다.',
+    thumbnail: '/images/blog/puma-magnify-nitro-3-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['푸마 매그니파이 나이트로3', 'PEBA 폼', '맥시멀 쿠션', '무릎 보호 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>199,000원에 40mm PEBA 맥시멀 쿠션</strong> — RunRepeat 실측 종합 <strong>91점(Superb)</strong>을 받았습니다</li>
+    <li><strong>부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent(최상위)</strong>입니다</li>
+    <li><strong>드롭 표기가 갈립니다.</strong> 브랜드 공식은 10mm인데 RunRepeat 실측은 11.5mm였습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>무릎·관절 보호가 필요한 장거리·회복주 러너</strong>에게 가성비 좋은 선택입니다. 빠른 페이스 훈련까지 겸하려 한다면 맞지 않는, 용도가 명확한 신발입니다.</p>
+  </div>
+</div>
+
+<h2>20만원 이하 PEBA 맥시멀 쿠션</h2>
+<p>199,000원으로 <a href="/shoes/hoka-bondi-9">본디 9</a>(229,000원 안팎)보다 저렴하면서 40mm 맥시멀 스택과 PEBA 기반 Nitro Foam을 제공합니다. RunRepeat 실측 종합 점수는 <strong>91점(Superb)</strong>으로, 이 사이트가 다룬 맥시멀 쿠션화 중 최고 점수입니다. 264g은 같은 스택의 다른 맥시멀 쿠션화보다 가벼운 축에 속하고, 통기성도 우수해 한국 여름철 장거리에도 무난합니다.</p>
+
+<h2>부상 예방 등급이 전부 최상위인 이유</h2>
+<p>족저근막염·아킬레스건염·무릎·신 스플린트 <strong>네 항목 모두 excellent(최상위) 등급</strong>입니다. 40mm 힐 스택이 충격을 최대한 흡수하는 쪽으로 설계됐고, 안정성 점수도 7/10으로 맥시멀 쿠션화치고 흔들림이 적습니다. 무릎이나 정강이 통증이 걱정되는 러너에게는 이 등급 자체가 구매 이유가 될 수 있습니다.</p>
+
+<h2>드롭 10mm vs 11.5mm — 왜 다른가</h2>
+<p>브랜드 공식 드롭 표기는 10mm인데, RunRepeat 실측은 11.5mm였습니다. 이런 괴리는 <a href="/shoes/puma-magmax-nitro-2">같은 브랜드의 다른 모델</a>에서도 나타난 패턴입니다 — 미드솔 형상이나 측정 지점 차이로 종종 발생하며, 체감상 큰 차이는 아니라는 평가가 일반적입니다.</p>
+
+<h2>발볼 — 한국 러너가 궁금해할 것</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준(standard)이라 대부분 무난하지만, 와이드 옵션은 없어 발볼이 아주 넓다면 매장 착화를 권합니다</li>
+  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 good이고 부상 예방 등급도 전부 최상위라, 아치 지지보다 충격 흡수로 접근하는 러너에게 맞습니다</li>
+  <li><strong>"빠르게 뛸 수 있나요?"</strong> — 반응성 점수가 6/10으로 낮은 편입니다. PEBA 폼이지만 반발이 강한 성격은 아니라, 페이스를 올리면 둔하게 느껴질 수 있습니다</li>
+</ul>
+
+<h2>가격 대비 가치</h2>
+<p>500km 기준 km당 약 398원으로 맥시멀 쿠션화 카테고리에서 가성비가 뛰어난 축입니다. 더 강한 반발감을 원한다면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>를, 예산을 높여 최고 쿠션을 원한다면 <a href="/shoes/hoka-bondi-9">본디 9</a>를 비교해볼 수 있습니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>무릎·정강이 부담이 커 최대 쿠션이 필요한 러너</strong> — 부상 예방 등급 전부 최상위</li>
+  <li><strong>회복주·장거리 위주로 뛰는 러너</strong></li>
+  <li><strong>가성비 있는 맥시멀 쿠션화를 찾는 러너</strong> — km당 약 398원</li>
+  <li>반대로 <strong>빠른 페이스 훈련이나 경량화를 원하는 러너</strong>라면 반응성이 낮은 이 신발보다 다른 카테고리가 맞습니다</li>
+</ul>
+<p>비슷한 맥시멀 쿠션화를 더 비교하고 싶다면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>에서 확인할 수 있습니다.</p>
+
+<h2>마무리</h2>
+<p>매그니파이 나이트로 3는 "무릎 보호가 필요한데 예산은 제한적"이라는 질문에 정확히 답하는 신발입니다. RunRepeat의 91점(Superb)과 전 항목 최상위 부상 예방 등급이 이를 뒷받침합니다. 다만 반응성이 낮다는 한계를 명확히 알고, 용도를 회복주·장거리로 좁혀서 쓰는 게 만족도를 높이는 길입니다.</p>
+`,
+    faqs: [
+      {
+        question: '이 신발로 템포런이나 인터벌을 할 수 있나요?',
+        answer:
+          '권장하지 않습니다. 반응성 점수가 6/10으로 낮고 PEBA 폼이지만 반발이 강한 성격은 아니라, 페이스를 올리면 둔하게 느껴질 수 있습니다. 회복주·장거리 전용으로 쓰는 것이 맞습니다.',
+      },
+      {
+        question: '드롭이 10mm인가요 11.5mm인가요?',
+        answer:
+          '브랜드 공식 표기는 10mm입니다. RunRepeat이 신발을 실측한 값은 11.5mm였습니다. 같은 브랜드의 매그맥스 나이트로 2에서도 비슷한 괴리가 나타났습니다.',
+      },
+      {
+        question: '평발인데 이 신발이 맞을까요?',
+        answer:
+          '평발 호환성이 good으로 평가돼 있고, 부상 예방 등급도 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent입니다. 아치를 강하게 지지하는 안정화 방식이 불편했다면 이런 충격 흡수 중심 설계가 대안이 될 수 있습니다.',
+      },
+    ],
+  },
+  {
+    id: 'puma-magmax-nitro-2-review',
+    slug: 'puma-magmax-nitro-2-review',
+    title: '푸마 매그맥스 나이트로 2 후기 | 레이서와 같은 폼을 500km 내구성으로 — 슈퍼트레이너의 정공법',
+    description:
+      '매그맥스 나이트로 2는 디비에이트 나이트로 엘리트의 Nitro Elite Foam을 500km 내구성 위에 올린 슈퍼트레이너입니다. RunRepeat 실측 종합 83점(Great), 239,000원으로 슈퍼블라스트 2보다 1만원 저렴합니다. 카본이 아닌 TPU 플레이트라 반발력은 한 수 아래지만, 대회 신발과 감각 차이를 줄이려는 로테이션 운용에 맞는 신발입니다.',
+    thumbnail: '/images/blog/puma-magmax-nitro-2-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['푸마 매그맥스 나이트로2', '슈퍼트레이너', 'PWRPLATE', '장거리 훈련화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>레이서와 같은 Nitro Elite Foam을 훈련용 내구성(500km)으로 올린 슈퍼트레이너</strong>입니다. RunRepeat 실측 종합 83점(Great)</li>
+    <li><strong>플레이트가 카본이 아니라 TPU(PWRPLATE)</strong>입니다 — 반발력은 완만하지만 템포런에는 충분한 수준입니다</li>
+    <li><strong>드롭 표기가 갈립니다.</strong> 브랜드 공식은 8mm인데 RunRepeat 실측은 10.5mm였습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>대회 신발과 같은 착지감을 훈련에서 미리 경험하려는 러너</strong>에게 맞습니다. 카본 플레이트의 반발력 자체를 원한다면 <a href="/shoes/hoka-mach-x-3">마하 X 3</a> 같은 카본 슈퍼트레이너를 먼저 보세요.</p>
+  </div>
+</div>
+
+<h2>레이서와 같은 폼, 다른 목적</h2>
+<p>매그맥스 나이트로 2의 정체성은 <strong>같은 브랜드 최상위 레이서와 짝을 이루는 훈련용 파트너</strong>입니다. 디비에이트 나이트로 엘리트 계열에 들어가는 Nitro Elite Foam을 그대로 쓰면서, 내구성을 500km까지 끌어올렸습니다. 대회 신발과 훈련 신발의 착지 감각 차이를 줄이려는 러너에게 의미 있는 설계입니다. RunRepeat 실측 기준 종합 <strong>83점(Great)</strong>으로, 일상 주행 89점·안정성 88점을 특히 높게 평가했습니다(반대로 템포 38점·레이스 27점으로 용도가 명확히 갈립니다).</p>
+
+<h2>드롭 8mm vs 10.5mm — 왜 다른가</h2>
+<p>RunRepeat이 실측한 드롭은 10.5mm인데, 브랜드 공식 표기는 8mm입니다. 이런 차이는 미드솔 형상이나 측정 지점에 따라 종종 발생하며, 이 사이트는 <a href="/shoes/brooks-ghost-18">다른 모델</a>에서도 이런 괴리를 그대로 병기해왔습니다. 체감상 드롭 차이가 크게 느껴지지 않는다는 평가가 일반적이지만, 드롭에 민감한 러너라면 참고할 만한 수치입니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준(standard)이라 발볼 넓은 한국 러너 대부분이 와이드 없이도 편하게 착용 가능합니다</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 good입니다. 훈련용 신발답게 관절 부담을 줄이는 방향으로 설계됐습니다</li>
+  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 good입니다. 안정성 점수도 7/10으로 슈퍼트레이너 중 무난한 편입니다</li>
+</ul>
+
+<h2>가격 대비 가치 — 슈퍼트레이너 3파전 중 가격 우위</h2>
+<p>239,000원은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(249,000원)보다 1만원 저렴합니다. 500km 기준 km당 약 478원으로 훈련용 가성비가 뛰어난 축입니다. 다만 TPU 플레이트라 카본이 들어간 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>나 슈퍼블라스트 2보다는 반발력이 완만합니다 — 반발의 절대치를 우선한다면 카본이 들어간 상위 모델이 맞고, 훈련 전반의 비용을 낮추는 게 목적이라면 매그맥스 쪽입니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>장거리 템포 훈련이 잦은 중상급 러너</strong> — 레이서와 유사한 착지감을 훈련에서 확보</li>
+  <li><strong>대회 신발과 훈련 신발의 감각 차이를 줄이고 싶은 러너</strong></li>
+  <li><strong>슈퍼트레이너를 가성비 있게 시작하려는 러너</strong></li>
+  <li>반대로 <strong>순수 반발력을 최우선으로 한다면</strong> 카본 플레이트가 들어간 마하 X 3나 슈퍼블라스트 2를 먼저 보세요</li>
+</ul>
+
+<h2>마무리</h2>
+<p>매그맥스 나이트로 2는 "레이서의 감각을 훈련에서도"라는 컨셉을 정직하게 구현한 슈퍼트레이너입니다. TPU 플레이트라는 한계가 명확하지만, 그만큼 내구성과 가격에서 이득을 봅니다. 카본의 반발력보다 대회 신발과의 일관성을 중시한다면 합리적인 선택입니다.</p>
+`,
+    faqs: [
+      {
+        question: '카본 플레이트가 아닌데 슈퍼트레이너라고 할 수 있나요?',
+        answer:
+          '슈퍼트레이너는 반드시 카본이 들어가야 하는 카테고리가 아니라, "레이서급 폼 + 훈련용 내구성"을 결합한 신발군을 말합니다. 매그맥스는 TPU 플레이트(PWRPLATE)를 쓰지만 레이서와 같은 Nitro Elite Foam을 채택해 이 카테고리에 속합니다. 다만 순수 반발력은 카본이 들어간 모델보다 낮습니다.',
+      },
+      {
+        question: '드롭이 8mm인가요 10.5mm인가요?',
+        answer:
+          '브랜드 공식 표기는 8mm입니다. RunRepeat이 신발을 실측한 값은 10.5mm였습니다. 체감 차이는 크지 않다는 평가가 일반적입니다.',
+      },
+    ],
+  },
+  {
+    id: 'puma-fast-r-nitro-elite-3-review',
+    slug: 'puma-fast-r-nitro-elite-3-review',
+    title: '푸마 패스트알 나이트로 엘리트 3 후기 | 173g, 알파플라이보다 17g 가벼운 서브3 전용 무기',
+    description:
+      '패스트알 나이트로 엘리트 3는 173g으로 알파플라이 3(190g)보다 17g 가볍습니다. RunRepeat 실측 종합 92점(Superb)으로 이 사이트가 리뷰한 신발 중 최상위권 점수입니다. 379,000원, 250km 내구성으로 순수 서브3 레이스데이 전용 무기라는 포지션이 명확합니다. 다만 RunRepeat은 안정성이 극도로 낮다는 점을 함께 짚었습니다.',
+    thumbnail: '/images/blog/puma-fast-r-nitro-elite-3-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['푸마 패스트알 나이트로 엘리트3', '카본 레이싱화', '마라톤 슈퍼슈즈', '서브3'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>173g — 알파플라이 3(190g)보다 17g 가볍습니다.</strong> RunRepeat 실측 종합 92점(Superb)을 받았습니다</li>
+    <li><strong>379,000원으로 이 사이트 신발 중 최고가권</strong>입니다. 250km 내구성이라 km당 약 1,516원 — 순수 레이스 전용 운용이 전제입니다</li>
+    <li><strong>RunRepeat이 안정성을 "극도로 낮다"고 짚었습니다.</strong> 공격적인 반발력의 대가로, 레이스 경험이 충분한 러너를 대상으로 합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>서브3:00 전후를 노리는 엘리트~상급 러너의 풀 마라톤 전용 무기</strong>입니다. 대회 전용 장비로 하나 마련하려는 게 아니라면, 같은 브랜드의 <a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a>가 접근하기 쉬운 대안입니다.</p>
+  </div>
+</div>
+
+<h2>173g, 왜 이 숫자가 중요한가</h2>
+<p>173g은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(190g)보다 17g 가볍습니다. RunRepeat이 신발을 직접 실측해 매긴 종합 점수는 <strong>92점(Superb)</strong>으로, 이 사이트가 다뤄온 신발들 사이에서도 최상위권입니다. RunRepeat은 이 신발을 "실험적인 플레이트 설계와 최첨단 폼으로 뛰어난 성능을 제공"한다고 평가하면서도, <strong>안정성이 극도로 낮다는 점을 동시에 지적</strong>했습니다. 힐 38.5mm·전족 30.2mm 스택에 익스텐디드 PWRPLATE 카본이 마라톤 후반부까지 추진력을 유지시키는 구조입니다.</p>
+
+<h2>발볼·계절 — 한국 러너가 주의할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁은 편(narrow)이고 와이드 옵션이 없습니다. 반드시 반사이즈 업을 하거나 매장 착화를 먼저 하세요</li>
+  <li><strong>"겨울에도 신을 수 있나요?"</strong> — 겨울 호환성이 poor입니다. A-TPU 계열 폼이 저온에서 경화되는 경향이 있어, 영하권 대회가 주력이라면 감안해야 합니다</li>
+  <li><strong>"안정성이 낮다는 게 어느 정도인가요?"</strong> — RunRepeat이 별도로 짚을 만큼 낮은 수준입니다. 레이스 경험이 부족하거나 착지가 불안정한 러너에게는 부상 위험이 있으니, 충분한 카본화 적응 훈련 후 투입하는 것을 권합니다</li>
+</ul>
+
+<h2>가격 대비 가치 — 3만원 비싸지만 17g 가볍다</h2>
+<p>379,000원은 알파플라이 3(349,000원)보다 3만원 비싸지만, 순수 무게에서 확실히 앞섭니다. 250km 내구성 기준 km당 약 1,516원으로 이 사이트가 다룬 레이싱화 중 가장 비싼 운용 비용입니다 — <strong>서브3:00을 목표로 하는 레이스 당일에만 신는다는 전제가 아니면 가성비를 논하기 어려운 신발</strong>입니다. 접근성을 원한다면 <a href="/shoes/asics-metaspeed-edge-plus">메타스피드 엣지+</a>나 발볼 여유가 있는 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 V5</a>를 비교해보세요.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>서브3:00 전후 목표의 엘리트~상급 러너</strong> — 이 신발이 설계된 정확한 대상입니다</li>
+  <li><strong>풀 마라톤 대회 전용 장비를 따로 마련하려는 러너</strong> — 훈련화와 분리 운용이 전제입니다</li>
+  <li>반대로 <strong>대회 경험이 적거나 착지가 불안정한 러너, 짧은 거리 위주로 뛰는 러너</strong>라면 안정성 낮은 이 신발보다 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a> 같은 접근성 있는 카본화가 낫습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>패스트알 나이트로 엘리트 3는 푸마가 낼 수 있는 최상위 무게·반발력을 그대로 밀어붙인 신발입니다. RunRepeat의 92점(Superb)이 그 성능을 뒷받침하지만, 같은 리뷰가 짚은 낮은 안정성은 이 신발이 아무에게나 맞는 게 아니라는 뜻이기도 합니다. 서브3:00을 실제로 노리는 레이스가 있을 때만 꺼내는 무기로 접근하는 게 맞습니다.</p>
+`,
+    faqs: [
+      {
+        question: '알파플라이 3 대신 이걸 사도 되나요?',
+        answer:
+          '무게(173g vs 190g)만 보면 우위지만 가격이 3만원 비싸고 안정성이 RunRepeat 기준으로도 낮게 평가됐습니다. 카본화 효과는 개인차가 크므로, 가능하면 매장에서 착화 후 결정하는 것을 권합니다.',
+      },
+      {
+        question: '이 신발로 일상 훈련도 할 수 있나요?',
+        answer:
+          '권장하지 않습니다. 내구성 250km에 km당 약 1,516원으로 운용 비용이 높고, 안정성도 낮아 레이스 당일 전용으로 설계됐습니다. 훈련은 별도 신발로 운용하는 것이 맞습니다.',
+      },
+    ],
+  },
+  {
+    id: 'puma-deviate-nitro-elite-3-review',
+    slug: 'puma-deviate-nitro-elite-3-review',
+    title: '푸마 디비에이트 나이트로 엘리트 3 후기 | 베이퍼플라이보다 2만원 싼 77% 에너지 리턴',
+    description:
+      '엘리트 3는 289,000원에 77% 에너지 리턴을 내는 가성비 슈퍼슈즈입니다. 베이퍼플라이 3(310,000원)보다 2만원 저렴하면서 204g으로 무게 차이도 크지 않습니다. 다만 토박스가 좁아 한국 러너에게는 반사이즈 업이 사실상 필요합니다. 4세대가 나온 지금 3세대를 볼 이유가 있는지 정리했습니다.',
+    thumbnail: '/images/blog/puma-deviate-nitro-elite-3-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['푸마 디비에이트 나이트로 엘리트3', 'A-TPU 폼', '카본 레이싱화', '가성비 슈퍼슈즈'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>289,000원에 77% 에너지 리턴</strong> — 베이퍼플라이 3(310,000원)보다 2만원 저렴합니다</li>
+    <li><strong>토박스가 좁습니다(narrow).</strong> 한국 러너 발볼 기준으로는 반사이즈 업이 사실상 필요합니다</li>
+    <li><strong>후속작 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>가 같은 가격에 34g 더 가볍고 토박스도 넓어졌습니다</strong> — 신규 구매라면 4세대 쪽이 유리합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>가성비 슈퍼슈즈를 찾는 <strong>표준~좁은 발볼 러너</strong>에게 맞습니다. 다만 지금 신규로 산다면 같은 가격에 더 가볍고 발볼도 넉넉한 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>를 먼저 보는 게 합리적입니다.</p>
+  </div>
+</div>
+
+<h2>가성비 슈퍼슈즈의 정석</h2>
+<p>289,000원으로 베이퍼플라이 3(310,000원), <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 저렴하면서 <strong>77% 에너지 리턴</strong>은 슈퍼슈즈 시장에서도 상위권입니다. A-TPU 기반 Nitro Elite 폼이 204g에서 탄탄하고 직접적인 반발력을 냅니다. A-TPU 계열은 PEBA보다 마모에 강하다는 소재 업계 평가가 있어, 레이스 후에도 반발 저하가 완만한 편입니다 — 순수 PEBA 레이서보다 아껴 신는 부담이 덜한 게 숨은 장점입니다.</p>
+
+<h2>발볼·계절 — 한국 러너가 주의할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 좁은 편(narrow)이고 와이드 옵션이 없습니다. 발볼이 넓다면 반드시 반사이즈 업을 하거나 매장 착화를 먼저 하세요</li>
+  <li><strong>"겨울에도 신을 수 있나요?"</strong> — 겨울 호환성이 poor로 낮습니다. 저온에서 폼 경화가 뚜렷해 반발이 떨어지므로, 영하권 레이스가 주력이라면 다른 모델을 함께 고려하세요</li>
+  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 poor입니다. 아치 지지가 약해 평발 성향이면 인솔 교체를 검토하는 편이 좋습니다</li>
+</ul>
+
+<h2>지금 사도 될까 — 4세대와 비교</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>엘리트 3</th><th>엘리트 4</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>204g</td><td><strong>170g</strong></td></tr>
+    <tr><td>토박스</td><td>좁음</td><td><strong>표준</strong></td></tr>
+    <tr><td>가격</td><td>289,000원</td><td>289,000원 (동일)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>같은 가격에 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>가 34g 가볍고 토박스도 넓어, <strong>신규 구매라면 4세대 쪽이 명확히 유리합니다.</strong> 다만 3세대가 이미 세일가 25만원대까지 내려온 상태라면, 그 가격 차이가 34g의 가치를 상쇄할 수도 있습니다 — 재고 할인가를 확인해보고 판단하세요.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>가성비를 최우선으로 하는 레이서</strong> — 저렴한 재고가 있다면 여전히 매력적입니다</li>
+  <li><strong>표준~좁은 발볼의 전방 착지 러너</strong></li>
+  <li>반대로 <strong>발볼이 넓거나 겨울 레이스가 주력</strong>이라면 다른 모델을 우선 고려하세요</li>
+</ul>
+
+<h2>마무리</h2>
+<p>엘리트 3는 등장 당시 "가성비 슈퍼슈즈"라는 포지션이 정확했던 신발입니다. 다만 후속작이 같은 가격에 확실히 개선된 지금은, 재고 할인이 크지 않은 이상 신규 구매 우선순위에서는 4세대에 밀립니다.</p>
+`,
+    faqs: [
+      {
+        question: '엘리트 3와 4, 지금 사면 뭐가 나은가요?',
+        answer:
+          '같은 가격(289,000원)이라면 엘리트 4가 명확히 유리합니다 — 34g 더 가볍고 토박스도 좁음에서 표준으로 넓어졌습니다. 3세대가 할인 중이라면 가격 차이와 34g의 체감 가치를 비교해 판단하세요.',
+      },
+      {
+        question: '발볼이 넓은데 신어도 되나요?',
+        answer:
+          '토박스가 좁은 편(narrow)이고 와이드 옵션이 없어 발볼이 넓다면 불편할 수 있습니다. 반사이즈 업을 하거나 매장에서 먼저 착화해보는 것을 권합니다.',
+      },
+    ],
+  },
+  {
+    id: 'puma-deviate-nitro-elite-4-review',
+    slug: 'puma-deviate-nitro-elite-4-review',
+    title: '푸마 디비에이트 나이트로 엘리트 4 후기 | 170g, 3세대보다 34g 가벼워졌는데 가격은 그대로',
+    description:
+      '엘리트 4는 170g으로 3세대(204g)보다 34g 가벼워졌습니다. 가격은 289,000원으로 동일합니다. RunRepeat 실측 기준 종합 89점(Superb)을 받았고, 토박스도 표준으로 넓어져 발볼 호환성이 개선됐습니다. 3세대를 갈아탈 이유가 뚜렷한 드문 세대교체를 정리했습니다.',
+    thumbnail: '/images/blog/puma-deviate-nitro-elite-4-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['푸마 디비에이트 나이트로 엘리트4', 'NITROFOAM ELITE', '카본 레이싱화', '마라톤 슈퍼슈즈'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>170g — 3세대(204g)보다 34g 가벼워졌습니다.</strong> 가격은 289,000원으로 동일합니다</li>
+    <li><strong>RunRepeat 실측 종합 89점(Superb)</strong>을 받았습니다. 스택은 힐 37.2mm·전족 28.3mm, 드롭 8.9mm입니다</li>
+    <li><strong>토박스가 표준으로 넓어져</strong> 3세대의 좁은 발볼 문제가 개선됐습니다. 다만 와이드 옵션은 여전히 없습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>5K부터 풀 마라톤까지 PR을 노리는 레이스데이 전용 신발</strong>입니다. <a href="/shoes/puma-deviate-nitro-elite-3">3세대</a>를 갖고 있다면 34g 경량화만으로도 갈아탈 이유가 충분하고, 처음 카본 레이싱화를 산다면 알파플라이 3·메타스피드 스카이+보다 저렴한 입문 옵션입니다.</p>
+  </div>
+</div>
+
+<h2>34g — 흔치 않은 확실한 세대교체 이유</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>엘리트 3</th><th>엘리트 4</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>204g</td><td><strong>170g (−34g)</strong></td></tr>
+    <tr><td>스택(힐/전족)</td><td>39.2/28.6mm</td><td>37.2/28.3mm</td></tr>
+    <tr><td>드롭</td><td>10.6mm</td><td>8.9mm</td></tr>
+    <tr><td>토박스</td><td>좁음(narrow)</td><td><strong>표준(standard)</strong></td></tr>
+    <tr><td>가격</td><td>289,000원</td><td>289,000원 (동일)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>같은 가격에 34g이 가벼워졌다는 건 레이싱화 세대교체에서 흔치 않은 확실한 명분입니다. 무게뿐 아니라 <strong>토박스도 좁음(narrow)에서 표준(standard)으로 넓어졌는데</strong>, 3세대의 가장 큰 약점이 발볼 좁음이었던 걸 감안하면 한국 러너에게 실질적인 개선입니다. RunRepeat이 신발을 직접 실측·평가해 <strong>종합 89점(Superb)</strong>을 매겼습니다 — 이 사이트가 자체 확보한 다른 리뷰들과 별개의, 제3자 랩의 독립적인 평가입니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 3세대의 좁음(narrow)에서 표준(standard)으로 개선됐습니다. 다만 와이드 옵션은 여전히 없어, 발볼이 아주 넓다면 매장 착화를 권합니다</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎 전부 caution(주의)입니다. 카본 레이싱화 공통의 한계로, 레이스 전용 운용을 전제로 설계된 신발입니다</li>
+  <li><strong>"초보도 신을 수 있나요?"</strong> — 권장하지 않습니다. 공격적인 카본 플레이트와 낮은 안정성 점수(6/10)는 레이스 경험이 있는 중상급 러너를 겨냥합니다</li>
+</ul>
+
+<h2>가격 대비 가치 — 알파플라이 3보다 6만원 저렴</h2>
+<p>289,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(349,000원)보다 6만원, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 4만원 저렴합니다. 400km 기준 km당 약 722원으로 레이싱화 카테고리에서는 합리적인 축입니다. 다만 이 단가는 레이스 전용 운용을 전제로 한 것이라, 훈련까지 이 신발로 소화하면 실제 마모는 더 빠릅니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>5K~마라톤 PR을 노리는 러너</strong> — 170g 초경량과 커브드 카본 플레이트의 조합</li>
+  <li><strong>3세대를 신고 있고 발볼 불편을 겪었던 러너</strong> — 토박스 개선이 체감될 가능성이 큽니다</li>
+  <li><strong>처음 카본 레이싱화를 사는 중상급 러너</strong> — 최상위 플래그십인 <a href="/shoes/puma-fast-r-nitro-elite-3">패스트알 나이트로 엘리트 3</a>보다 접근하기 쉬운 입문 옵션</li>
+  <li>반대로 <strong>일상 훈련·회복주까지 겸하려 하거나 평발이 심한 러너</strong>라면 맞지 않습니다</li>
+</ul>
+<p>다른 카본 레이싱화와 비교하고 싶다면 <a href="/best/racing">레이싱화 추천</a>에서 확인할 수 있습니다.</p>
+
+<h2>마무리</h2>
+<p>엘리트 4는 "다음 세대를 사야 할 이유"가 명확한 드문 업데이트입니다. 같은 가격에 34g 경량화와 발볼 개선을 동시에 이뤘고, RunRepeat의 독립 평가(89점 Superb)도 이를 뒷받침합니다. 카본 레이싱화 입문 옵션으로도, 3세대의 후속 선택으로도 설득력 있는 신발입니다.</p>
+`,
+    faqs: [
+      {
+        question: '엘리트 4와 3, 뭐가 다른가요?',
+        answer:
+          '무게가 204g에서 170g으로 34g 가벼워졌고, 토박스가 좁음(narrow)에서 표준(standard)으로 넓어졌습니다. 드롭도 10.6mm에서 8.9mm로 낮아졌습니다. 가격은 289,000원으로 동일합니다.',
+      },
+      {
+        question: 'RunRepeat 평점이 자체 에디터 평점과 다른데 왜 그런가요?',
+        answer:
+          'RunRepeat은 신발을 직접 실측·테스트하는 제3자 랩입니다(종합 89점 Superb). 이 사이트의 에디터 분석은 국내 공식몰 스펙과 Believe in the Run 등 다른 소스를 종합한 별개의 평가라 수치가 다를 수 있습니다. 두 출처 모두 참고용으로 병기합니다.',
+      },
+      {
+        question: '알파플라이 3 대신 이걸 사도 될까요?',
+        answer:
+          '용도가 맞다면 충분히 대안이 됩니다. 170g으로 알파플라이 3(190g)보다 가볍고 가격은 6만원 저렴합니다. 다만 카본화 효과는 러너마다 차이가 크다는 연구가 있어, 가능하다면 매장에서 먼저 착화해보는 것을 권합니다.',
+      },
+    ],
+  },
+  {
     id: 'brooks-ghost-18-review',
     slug: 'brooks-ghost-18-review',
     title: '브룩스 고스트 18 후기 | 17세대와 무게까지 같다 — 그런데 드롭 표기가 다르다',
