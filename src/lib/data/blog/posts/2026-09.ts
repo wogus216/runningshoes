@@ -657,6 +657,356 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
+    id: 'mizuno-hyperwarp-elite-review',
+    slug: 'mizuno-hyperwarp-elite-review',
+    title: '미즈노 하이퍼워프 엘리트 후기 | 170g·38mm, 퓨어와 프로 사이 균형점을 찾은 마라톤 레이서',
+    description:
+      '하이퍼워프 엘리트는 미즈노 하이퍼워프 3형제 중 풀 마라톤에 최적화된 모델입니다. 139g 퓨어보다 쿠셔닝이 풍부하고 201g 프로보다 가벼워, 170g·38mm 스택으로 서브3~서브3:30 목표 러너를 겨냥합니다. PEBA 미드솔에 풀렝스 카본 플레이트, 349,000원. 토박스가 좁아 한국 러너는 반사이즈 업이 필요합니다.',
+    thumbnail: '/images/blog/mizuno-hyperwarp-elite-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['미즈노 하이퍼워프 엘리트', 'PEBA 카본화', '마라톤 슈퍼슈즈', '풀코스 레이싱화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>170g·38mm 스택</strong> — 하이퍼워프 3형제 중 풀 마라톤에 최적화된 균형점입니다</li>
+    <li><strong>드롭 3.5mm의 낮은 구성</strong>이라 전족부·중족부 착지 러너에게 자연스러운 전환을 유도합니다</li>
+    <li><strong>토박스가 좁고(narrow) 와이드 옵션이 없습니다.</strong> 한국 러너는 반사이즈 업과 매장 시착을 권장합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>서브3~서브3:30을 노리는 풀 마라톤 레이스 전용 신발</strong>입니다. 5K~10K가 목표라면 더 가벼운 <a href="/shoes/mizuno-hyperwarp-pure">하이퍼워프 퓨어</a>, 훈련까지 겸하려면 <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a>를 함께 비교해보세요.</p>
+  </div>
+</div>
+
+<h2>3형제 중 왜 엘리트가 마라톤용인가</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>모델</th><th>무게</th><th>힐 스택</th><th>주력 거리</th></tr></thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure">퓨어</a></td><td>139g</td><td>34mm</td><td>5K~10K</td></tr>
+    <tr><td><strong>엘리트</strong></td><td><strong>170g</strong></td><td><strong>38mm</strong></td><td><strong>풀 마라톤</strong></td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro">프로</a></td><td>201g</td><td>39mm</td><td>훈련+대회 겸용</td></tr>
+  </tbody>
+</table>
+</div>
+<p>미즈노 하이퍼워프 라인은 거리별로 세 모델을 명확히 갈라뒀습니다. 퓨어가 극한의 경량으로 단거리에, 프로가 접근성으로 훈련 겸용에 초점을 맞췄다면, <strong>엘리트는 그 사이에서 풀 마라톤 후반부 쿠셔닝과 경량을 동시에 잡으려는 모델</strong>입니다. 38mm 힐 스택이 35km 이후에도 충격을 흡수하면서, 170g이라는 무게로 후반 다리 피로를 줄입니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁은 편(narrow)이고 와이드 옵션이 없습니다. 반드시 반사이즈 업을 하거나 매장 착화를 먼저 하세요</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 아킬레스건·무릎은 good이지만 족저근막염·신 스플린트는 caution(주의)입니다. 레이스 전용 설계의 트레이드오프입니다</li>
+  <li><strong>"평발인데 신어도 되나요?"</strong> — 안정성 점수가 5/10으로 낮은 편이라 평발이나 과내전이 있다면 20km 이후 발 안쪽 피로가 누적될 수 있습니다. 지지가 필요하다면 측면 플레어가 있는 <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a> 쪽을 검토하세요</li>
+</ul>
+
+<h2>가격 대비 가치</h2>
+<p>349,000원은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(309,000원 안팎)보다 비싸지만, PEBA 미드솔의 안정적인 플랫폼이 차별점입니다. 300km 내구성 기준 km당 약 1,163원으로 레이스데이 전용 투자에 해당합니다. 가성비보다 성능에 집중한 신발이라, 서브3~서브3:30을 실제로 노리는 레이스가 있을 때 투입하는 게 맞습니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>서브3~서브3:30 목표의 풀 마라톤 러너</strong> — 이 신발이 겨냥하는 정확한 대상</li>
+  <li><strong>전족부·중족부 착지 러너</strong> — 3.5mm 로우 드롭이 자연스럽게 맞습니다</li>
+  <li>반대로 <strong>5K~10K가 주력이라면</strong> <a href="/shoes/mizuno-hyperwarp-pure">하이퍼워프 퓨어</a>가, <strong>평발이거나 훈련까지 겸하려면</strong> <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a>가 더 맞습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>하이퍼워프 엘리트는 미즈노가 슈퍼슈즈 시장에서 내놓은 균형 잡힌 답입니다. 3형제 중 어느 쪽도 아닌 정확히 풀 마라톤 자리를 겨냥했고, 안정적인 PEBA 플랫폼이 베이퍼플라이 계열과 다른 선택지를 원하는 러너에게 설득력이 있습니다.</p>
+`,
+    faqs: [
+      {
+        question: '엘리트와 퓨어, 프로 중 뭘 사야 하나요?',
+        answer:
+          '거리로 결정하세요. 5K~10K 단거리 기록이 목표면 139g의 퓨어, 풀 마라톤이 목표면 170g·38mm 스택의 엘리트, 훈련과 대회를 한 켤레로 겸하려면 201g의 프로가 맞습니다.',
+      },
+      {
+        question: '평발인데 신어도 되나요?',
+        answer:
+          '권장하지 않습니다. 안정성 점수가 5/10으로 낮아 평발이나 과내전이 심하면 장거리에서 발 안쪽 피로가 누적될 수 있습니다. 측면 플레어가 있는 하이퍼워프 프로가 상대적으로 안정적입니다.',
+      },
+    ],
+  },
+  {
+    id: 'mizuno-hyperwarp-pro-review',
+    slug: 'mizuno-hyperwarp-pro-review',
+    title: '미즈노 하이퍼워프 프로 후기 | 201g, 3형제 중 가장 실용적인 훈련+대회 겸용 슈퍼트레이너',
+    description:
+      '하이퍼워프 프로는 카본 인퓨즈드 나일론 플레이트를 써서 퓨어·엘리트보다 강성을 낮춘 슈퍼트레이너입니다. 201g·39mm 스택으로 템포런부터 하프·풀 마라톤 대회까지 한 켤레로 커버합니다. 319,000원으로 3형제 중 가장 저렴하고, 극단적 측면 플레어가 발목 안정성을 더합니다.',
+    thumbnail: '/images/blog/mizuno-hyperwarp-pro-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['미즈노 하이퍼워프 프로', '슈퍼트레이너', '카본 인퓨즈드 나일론', '겸용 레이싱화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>카본 인퓨즈드 나일론 플레이트</strong> — 순수 카본보다 유연해 <a href="/shoes/mizuno-hyperwarp-elite">엘리트</a>·<a href="/shoes/mizuno-hyperwarp-pure">퓨어</a>보다 전환이 자연스럽습니다</li>
+    <li><strong>201g·39mm 스택</strong>으로 템포런부터 대회까지 한 켤레로 겸용할 수 있습니다</li>
+    <li><strong>319,000원 — 3형제 중 가장 저렴합니다.</strong> 극단적 측면 플레어가 발목 안정성을 더합니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>플레이트가 들어간 신발을 처음 신으면서 안정성도 필요한 러너</strong>에게 맞습니다. 훈련과 대회를 분리 운용하고 순수 반발력을 원한다면 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 쪽이 낫습니다.</p>
+  </div>
+</div>
+
+<h2>3형제 중 가장 순화된 성격</h2>
+<p>하이퍼워프 프로는 퓨어·엘리트의 공격적인 성격을 순화해 접근성을 높인 슈퍼트레이너입니다. <strong>카본 인퓨즈드 나일론 플레이트</strong>는 순수 카본보다 유연해 전환이 급격하지 않고, <strong>Enerzy XP 미드솔</strong>은 PEBA보다 안정적이어서 템포런부터 대회까지 폭넓게 활용할 수 있습니다. 카본화의 반응은 개인차가 커서(연구상 러닝 이코노미 ±11%p) 같은 신발로도 득실이 갈리는데, 프로의 비교적 온건한 강성은 그 리스크를 줄이는 방향의 설계입니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준(standard)이라 한국 러너 평균 발볼에 무난하지만, 와이드 옵션이 없어 발볼이 아주 넓다면 반사이즈 업을 권장합니다</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 아킬레스건·무릎·신 스플린트 전부 good입니다. 3형제 중 가장 균형 잡힌 등급입니다</li>
+  <li><strong>"발목이 불안정한데 괜찮을까요?"</strong> — 극단적 측면 플레어가 발목 흔들림을 잡아주는 구조라, 발목 불안정 러너에게 3형제 중 가장 적합합니다</li>
+</ul>
+
+<h2>가격 대비 가치 — 마하 X 3보다 비싸지만 겸용성이 다르다</h2>
+<p>319,000원은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(249,000원)보다 7만원 비싸지만, 차별점은 측면 플레어의 안정감입니다. 스택이 높은 트레이너에서 좌우 흔들림이 신경 쓰였다면 이 구조가 값을 합니다. 400km 내구성 기준 km당 약 798원으로 가성비가 뛰어나지는 않지만, 훈련과 대회를 한 켤레로 겸할 수 있어 실질적 활용도는 높습니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>템포런·인터벌 훈련과 하프·풀 마라톤 대회를 한 켤레로 겸하려는 러너</strong></li>
+  <li><strong>발목이 불안정하거나 카본화가 처음인 러너</strong> — 순화된 강성과 측면 플레어</li>
+  <li>반대로 <strong>순수 반발력을 최우선으로 한다면</strong> <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>가, <strong>이지런·리커버리가 목적이라면</strong> 다른 카테고리가 맞습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>하이퍼워프 프로는 "카본화를 매일 신을 수 있게"라는 접근으로 설계된 신발입니다. 3형제 중 가장 저렴하면서 가장 실용적인 위치이고, 극단적 측면 플레어라는 독자적인 안정화 장치가 다른 슈퍼트레이너와의 차별점입니다.</p>
+`,
+    faqs: [
+      {
+        question: '하이퍼워프 프로로 매일 훈련해도 되나요?',
+        answer:
+          '가능합니다. 카본 인퓨즈드 나일론 플레이트가 순수 카본보다 부드럽고 Enerzy XP 미드솔이 안정적이라 템포런부터 대회까지 활용할 수 있습니다. 다만 400km 내구성이라 주행거리가 많으면 운용 비용이 빠르게 올라갑니다.',
+      },
+      {
+        question: '마하 X 3 대신 이걸 사야 할 이유가 있나요?',
+        answer:
+          '발목이 불안정하거나 스택이 높은 트레이너에서 좌우 흔들림이 걱정된다면 하이퍼워프 프로의 극단적 측면 플레어가 도움이 됩니다. 순수 가성비만 본다면 마하 X 3가 7만원 저렴합니다.',
+      },
+    ],
+  },
+  {
+    id: 'mizuno-hyperwarp-pure-review',
+    slug: 'mizuno-hyperwarp-pure-review',
+    title: '미즈노 하이퍼워프 퓨어 후기 | 139g 극한 경량 — 미즈노 역사상 가장 가벼운 레이서',
+    description:
+      '하이퍼워프 퓨어는 139g으로 미즈노 레이싱화 역사상 가장 가벼운 모델입니다. PEBA 미드솔과 풀렝스 카본 플레이트, 34mm 로우 스택으로 5K~10K 단거리 기록 단축에 특화됐습니다. 399,000원, 내구성 200km로 순수 레이스데이 전용 무기입니다. 풀 마라톤에는 쿠션이 부족하니 용도를 좁혀서 접근해야 합니다.',
+    thumbnail: '/images/blog/mizuno-hyperwarp-pure-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['미즈노 하이퍼워프 퓨어', '초경량 레이싱화', 'PEBA 카본화', '5K 10K 레이서'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>139g — 미즈노 레이싱화 역사상 가장 가볍습니다.</strong> 메타스피드 레이(129g) 다음가는 초경량 체급입니다</li>
+    <li><strong>34mm 로우 스택·3.5mm 드롭</strong>으로 5K~10K 단거리에 최적화됐습니다. 풀 마라톤에는 쿠션이 부족합니다</li>
+    <li><strong>399,000원에 내구성 200km</strong> — 이 사이트가 다룬 신발 중 km당 단가가 가장 높은 축(약 1,995원)입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>5K~10K 기록 단축을 노리는 엘리트~상급 러너 전용</strong>입니다. 풀 마라톤이 목표라면 스택이 더 높은 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>를 보세요.</p>
+  </div>
+</div>
+
+<h2>139g, 왜 이렇게까지 가벼운가</h2>
+<p>139g은 미즈노가 슈퍼슈즈 경쟁에 본격 참전했다는 선언에 가까운 무게입니다. PEBA 미드솔의 반응성과 풀렝스 카본 플레이트가 만드는 공격적인 라이드는 빠르게 달릴수록 진가를 발휘하도록 설계됐습니다. 다만 34mm 힐·30.5mm 전족부라는 로우 스택은 <strong>쿠션 여유가 얇다는 뜻</strong>이기도 합니다 — 풀 마라톤 30km 이후에는 이 여유가 바닥날 수 있습니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁고(narrow) 와이드 옵션이 없습니다. 발볼이 넓다면 매장에서 반드시 시착해보세요</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·신 스플린트 warning(경고), 아킬레스건·무릎 caution(주의)입니다. 3형제 중 가장 낮은 등급이라 하체 부하에 충분히 적응된 러너에게만 권합니다</li>
+  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 poor(부적합)입니다. 안정성이 부족해 무릎 부담이 커질 수 있으니 피하는 것을 권합니다</li>
+</ul>
+
+<h2>거리를 좁혀서 접근해야 하는 신발</h2>
+<p>같은 라인의 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>(170g·38mm)와는 거리로 갈립니다. 퓨어는 5K~10K에 최적화돼 있어 풀코스가 목표라면 스택이 더 높은 엘리트가 맞습니다. 3.5mm의 낮은 드롭이 전방 추진을 강하게 유도하는 구조라 하체 부하가 크므로, 인터벌 등으로 충분히 적응된 러너가 아니면 부담이 됩니다.</p>
+
+<h2>가격 대비 가치</h2>
+<p>399,000원·내구성 200km 기준 km당 약 1,995원으로 이 사이트가 다룬 신발 중 운용 비용이 가장 높은 축입니다. 가성비를 논할 신발이 아니라, <strong>5K/10K 대회에서 PB 갱신을 노리는 투자</strong>로 접근해야 합니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>5K/10K 기록 단축을 노리는 엘리트~상급 러너</strong></li>
+  <li><strong>전족부 착지에 익숙하고 하체 부하에 적응된 러너</strong></li>
+  <li>반대로 <strong>풀 마라톤이 목표이거나 평발·과내전이 있는 러너</strong>라면 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>나 다른 모델이 맞습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>하이퍼워프 퓨어는 용도를 극단적으로 좁힌 신발입니다. 139g이라는 숫자 자체가 목적이고, 그 목적에 맞는 거리(5K~10K)와 러너(전족부 착지, 충분한 적응)에게만 투자 가치가 있습니다. 범용성을 기대하고 사면 실망할 신발입니다.</p>
+`,
+    faqs: [
+      {
+        question: '이 신발로 풀 마라톤을 뛸 수 있나요?',
+        answer:
+          '권장하지 않습니다. 34mm 로우 스택이라 쿠션 여유가 얇아 30km 이후 충격 흡수가 부족할 수 있습니다. 풀 마라톤이 목표라면 38mm 스택의 하이퍼워프 엘리트를 권합니다.',
+      },
+      {
+        question: '평발인데 신어도 되나요?',
+        answer:
+          '권장하지 않습니다. 평발 호환성이 poor로 분류돼 있고 안정성도 낮아, 무릎이나 발 안쪽에 부담이 커질 수 있습니다.',
+      },
+    ],
+  },
+  {
+    id: 'mizuno-wave-horizon-8-review',
+    slug: 'mizuno-wave-horizon-8-review',
+    title: '미즈노 웨이브 호라이즌 8 후기 | 미디얼 러버월 삼중 구조 — 시장 최강 수준의 과내전 제어',
+    description:
+      '웨이브 호라이즌 8은 미디얼 포스트·미디얼 플레어·미디얼 러버월까지 삼중 안정 구조를 갖춘 미즈노의 프리미엄 안정화입니다. 179,000원으로 카야노 32보다 2만원 저렴하면서 42mm 스택의 듀얼 폼으로 쿠셔닝까지 챙겼습니다. 다만 323g으로 무거워 느린 페이스 조깅·워킹 전용입니다.',
+    thumbnail: '/images/blog/mizuno-wave-horizon-8-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['미즈노 웨이브 호라이즌8', '안정화', '과내전', '미디얼 러버월'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>미디얼 포스트 + 미디얼 플레어 + 미디얼 러버월 삼중 구조</strong> — 심한 과내전을 겨냥한 안정화 중에서도 개입이 강한 축입니다</li>
+    <li><strong>179,000원으로 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(199,000원)보다 2만원 저렴</strong>하면서 42mm 스택 듀얼 폼으로 쿠셔닝도 갖췄습니다</li>
+    <li><strong>323g으로 무겁습니다.</strong> 6~8분대 조깅·워킹 전용이지 빠른 페이스에는 맞지 않습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>발이 안쪽으로 심하게 꺾이는 강한 과내전·평발 러너</strong>에게 가장 강력하게 추천할 수 있는 신발입니다. 빠른 페이스까지 소화하려 한다면 더 가벼운 안정화를 함께 보세요.</p>
+  </div>
+</div>
+
+<h2>삼중 안정 구조 — 카야노보다 개입이 직접적</h2>
+<p>미디얼 포스트와 미디얼 러버월을 겹친 구조는 발 안쪽을 벽처럼 막는 방식입니다. <a href="/shoes/asics-gel-kayano-33">카야노</a> 계열의 단계적 가이드나 브룩스의 GuideRails보다 <strong>개입이 훨씬 직접적</strong>입니다. 내전 각도를 물리적으로 제한하는 성격이라 과내전이 강한 경우에는 확실히 유효하지만, 지지가 과하게 느껴질 수도 있어 성향에 따라 호불호가 갈립니다. 42mm 스택의 ENERZY NXT+ENERZY 듀얼 폼이 이 지지 구조 위에서 쿠셔닝을 함께 담당합니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 넓은(wide) 편이고 <strong>2E 와이드 옵션까지 있어</strong> 발볼 넓은 한국 러너에게 최적입니다</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위), 아킬레스건·신 스플린트 good입니다</li>
+  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. 이 사이트가 다룬 안정화 중 가장 강한 지지력을 제공합니다</li>
+</ul>
+
+<h2>323g — 조깅·워킹 겸용, 속도는 부적합</h2>
+<p>323g이라는 무게는 러닝화보다 워킹·올데이 슈즈에 가까운 수준입니다. 6분~8분/km의 느린 조깅에서는 42mm 스택이 편안하게 받쳐주지만, <strong>페이스를 5분대로 올리면 무게가 그대로 부담이 됩니다.</strong> 조깅과 워킹을 겸하는 용도에서는 최상급이고, 속도 훈련이 목적이라면 다른 모델을 봐야 합니다.</p>
+
+<h2>가격 대비 가치</h2>
+<p>179,000원은 카야노 32(199,000원)보다 2만원 저렴합니다. 900km 내구성 기준 km당 약 199원으로 안정화 카테고리에서 운용 비용이 가장 낮은 축입니다. 더 가벼운 안정화를 원한다면 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>나 카야노 32와 비교해보세요.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>심한 과내전·평발로 발목 불안정성이 큰 러너</strong> — 삼중 구조의 정확한 대상</li>
+  <li><strong>느린 페이스 조깅과 일상 워킹을 겸하려는 러너</strong></li>
+  <li>반대로 <strong>빠른 페이스 훈련까지 소화하려 하거나 가벼운 신발을 원한다면</strong> 다른 안정화 모델이 맞습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>웨이브 호라이즌 8은 "지지를 최우선으로"라는 질문에 타협 없이 답한 신발입니다. 323g이라는 무게가 확실한 대가지만, 심한 과내전이나 평발로 다른 안정화로는 부족했던 러너에게는 이 정도의 개입이 필요한 경우가 실제로 있습니다.</p>
+`,
+    faqs: [
+      {
+        question: '카야노 32 대신 이걸 사야 할 이유가 있나요?',
+        answer:
+          '과내전이 특히 심하다면 미디얼 러버월까지 더해진 삼중 구조가 카야노보다 강한 지지를 제공합니다. 가격도 2만원 저렴합니다. 다만 무게가 323g으로 카야노보다 무거워, 지지의 강도와 무게를 맞바꾸는 선택입니다.',
+      },
+      {
+        question: '이 신발로 빠르게 뛸 수 있나요?',
+        answer:
+          '권장하지 않습니다. 323g으로 무거워 5분대 이상 페이스에서는 부담이 됩니다. 6분~8분/km의 조깅이나 워킹 겸용으로 쓰는 것이 맞습니다.',
+      },
+    ],
+  },
+  {
+    id: 'mizuno-wave-inspire-21-review',
+    slug: 'mizuno-wave-inspire-21-review',
+    title: '미즈노 웨이브 인스파이어 21 후기 | km당 177원, 안정화 카테고리 가성비 1위',
+    description:
+      '웨이브 인스파이어 21은 159,000원에 900km 이상 내구성으로 km당 약 177원 — 안정화 카테고리 최고 가성비입니다. RunRepeat 실측(2025-06-05 게시)도 종합 82점(Great)으로 확인했습니다. Wave 플레이트로 과내전을 제어하고, 넓은 토박스와 와이드 옵션까지 갖춰 발볼 넓은 한국 러너에게 우호적입니다.',
+    thumbnail: '/images/blog/mizuno-wave-inspire-21-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['미즈노 웨이브 인스파이어21', '안정화', '가성비 러닝화', '과내전 러닝화'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>159,000원·900km 내구성 — km당 약 177원.</strong> 안정화 카테고리 전체에서 가성비 1위입니다</li>
+    <li><strong>RunRepeat 실측 종합 82점(Great)</strong>을 받았습니다(286g, 드롭 12.9mm — 이 사이트 DB와 정확히 일치)</li>
+    <li><strong>토박스가 넓고(wide) 와이드 옵션도 있어</strong> 발볼 넓은 한국 러너에게 그대로 맞는 안정화입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>과내전·평발로 안정화가 필요한데 가격 부담 없이 시작하고 싶은 러너</strong>에게 망설임 없이 추천할 수 있는 신발입니다.</p>
+  </div>
+</div>
+
+<h2>안정화 카테고리 가성비 1위</h2>
+<p>159,000원에 900km 이상 내구성은 km당 약 177원을 의미합니다. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(199,000원)의 80% 가격이면서 Wave Plate로 확실한 과내전 제어를 제공합니다. <strong>RunRepeat이 신발을 직접 실측해 매긴 종합 점수는 82점(Great)</strong>이고, 무게 286g·드롭 12.9mm는 이 사이트가 확보한 수치와 정확히 일치합니다 — 두 소스가 독립적으로 같은 값에 도달했다는 뜻입니다.</p>
+
+<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
+<ul>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스 폭 98.4mm·높이 30.9mm로 매우 넓고 높은 편이며, <strong>와이드 옵션까지 있어</strong> 발볼 110mm 이상도 수용합니다</li>
+  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 excellent(최상위)입니다</li>
+  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. "평발인데 괜찮나요?"라는 질문에 자신 있게 추천할 수 있는 신발입니다</li>
+</ul>
+
+<h2>12.9mm 하이드롭 — 힐스트라이커 전용</h2>
+<p>12.9mm의 높은 드롭은 힐스트라이커에게 자연스러운 전환을 유도합니다. 반대로 <strong>53.3% 에너지 리턴은 반발력이 낮은 편</strong>이라, 5분30초~7분30초/km의 느린 페이스 전용입니다. 겨울 경화율이 19%로 낮아 사계절 무난하게 활용할 수 있다는 점은 한국 기후에 우호적입니다.</p>
+
+<h2>가격 대비 가치</h2>
+<p>900km 내구성 기준 km당 약 177원은 안정화 카테고리 최고 가성비입니다. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>보다 저렴하게 시작하고 싶다면 망설일 이유가 없고, 더 높은 수준의 안정성이나 반발력이 필요하다면 그쪽으로 넘어가기 전 이 신발로 먼저 확인해보는 것도 방법입니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>과내전·평발로 안정화가 필요한 입문~중급 러너</strong></li>
+  <li><strong>발볼이 넓고 높은 한국형 발을 가진 러너</strong></li>
+  <li><strong>가격 부담 없이 안정화를 시작하려는 러너</strong> — km당 177원</li>
+  <li>반대로 <strong>중족부·전족부 착지이거나 빠른 페이스를 원하는 러너</strong>는 맞지 않습니다</li>
+</ul>
+
+<h2>마무리</h2>
+<p>웨이브 인스파이어 21은 "안정화인데 저렴한 것"을 찾는 질문에 가장 정직한 답입니다. RunRepeat의 독립적인 실측이 이 사이트의 데이터와 정확히 일치했다는 점도 신뢰도를 더합니다. 화려하지 않지만, 넓은 발볼과 과내전을 가진 한국 러너에게는 실용적인 선택입니다.</p>
+`,
+    faqs: [
+      {
+        question: '카야노 32 대신 이걸 사도 될까요?',
+        answer:
+          '가격 우선이라면 충분합니다. 20% 저렴하면서 Wave Plate로 기본적인 과내전 제어를 제공합니다. 다만 카야노가 제공하는 단계적 지지나 최신 폼 기술까지는 아니므로, 안정성 요구 수준이 높다면 카야노 쪽이 낫습니다.',
+      },
+      {
+        question: '빠르게 뛸 수 있는 신발인가요?',
+        answer:
+          '아닙니다. 에너지 리턴이 53.3%로 낮은 편이라 5분30초~7분30초/km의 느린 페이스 전용입니다. 템포런이나 인터벌에는 맞지 않습니다.',
+      },
+    ],
+  },
+  {
     id: 'puma-deviate-nitro-elite-4-review',
     slug: 'puma-deviate-nitro-elite-4-review',
     title: '푸마 디비에이트 나이트로 엘리트 4 후기 | 170g, 3세대보다 34g 가벼워졌는데 가격은 그대로',
