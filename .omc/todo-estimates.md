@@ -211,4 +211,4 @@ AI 콘텐츠팜 블로그가 마라톤 접수일을 틀리게 퍼뜨린다(안�
 - [ ] adidas-terrex-agravic-4 한국 정가 — adidas.co.kr 403 차단으로 미확정(US $145 기준 209,000원 추정 유지 중). Chrome MCP 로그인 세션으로만 확인 가능
 - [ ] Merrell Agility Peak 6 — best-trail 글 추천 대상이나 브랜드 인프라 없어 미추가. 브랜드 추가 시 함께
 - [ ] `mount-to-coast-korea-launch` — 신생 브랜드(한국 첫 진출 2026-09-10). RunRepeat·공식몰 모두 랩 실측(무게·드롭·스택 높이) 미게시라 신발 DB 미등록 상태. 랩 데이터 게시되거나 3rd party 리뷰(BITR/RTR 등) 등재 확인되면 `new-brand-checklist` 절차대로 `src/lib/data/shoes/mount-to-coast/` 신설 검토(C1·H1 우선, 국내 판매 사이즈·가격은 이미 확인됨: C1 239,000원·H1 199,000원). LightCELL/CircleCELL 중 국내 출시 모델에 어느 폼이 실제 적용됐는지도 미확인.
-- [ ] `brooks-ghost-18` — 2026-09-11 신규 DB 등록(랩 RunRepeat 실측+한국 정가 169,000원 확인, review 카테고리 사각지대 스캔에서 발견). **이미지 미확보**(`/best/` 매트릭스 미편입 상태) — brooksrunning.co.kr 공식 제품샷 또는 npm run images 파이프라인으로 확보 필요. 드롭 표기 불일치(공식 10mm/RunRepeat 실측 12.2mm) 리뷰에 명시함.
+- [x] `brooks-ghost-18` — 2026-09-11 신규 DB 등록(랩 RunRepeat 실측+한국 정가 169,000원 확인, review 카테고리 사각지대 스캔에서 발견). 드롭 표기 불일치(공식 10mm/RunRepeat 실측 12.2mm) 리뷰에 명시함. **이미지 확보 완료(2026-09-11)** — brooksrunning.co.kr(카페24) 공식 투명 제품샷 5장, 출처는 `IMAGE_CREDITS.md` 참조.

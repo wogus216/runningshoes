@@ -187,3 +187,10 @@ If you are a copyright holder and believe your content has been used inappropria
 - Source: RunRepeat 랩 측면샷(side) — https://runrepeat.com/adidas-hyperboost-edge / adidas 공식 프레스 팩샷(angle, back) — adidas Newsroom (preview.thenewsmarket.com)
 - Date: 2026-08-27
 - Images: 3 (side, angle, back) — 눈금자 크롭 + @imgly 배경제거 후 WebP
+
+## Brooks 고스트 18
+- Source: brooksrunning.co.kr 공식몰 PDP(남성 화이트, product/864) — ego lite로 img 태그 스캔해 발견
+- CDN: ecimg.cafe24img.com(카페24) — `product/big/{날짜}/{hash}.png`(메인) / `product/extra/big/{날짜}/{hash}.png`(추가 각도), 진짜 투명(코너 alpha=0 확인), 배경제거 불필요
+- 앵글: side=BigImage, angle/back/top/outsole=ThumbImage 순번으로 구분(alt 텍스트 없음 — naturalWidth 650 필터 + 다운로드 후 육안 확인으로 매칭)
+- Date: 2026-09-11
+- Images: 5 (side, angle, back, top, outsole)
