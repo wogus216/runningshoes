@@ -7,6 +7,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import styles from './first-thirty.module.css';
 import { chapterStops } from './story-timeline';
 import { TicketMaker } from './ticket-maker';
+import { TICKET_RATIOS, type TicketRatio } from './ticket-layout';
 
 const Stage = dynamic(() => import('./thirty-stage'), { ssr: false });
 const root = '/images/challenge/saturday/first30';
@@ -33,6 +34,7 @@ export function FirstThirtyStory() {
   const [selected, setSelected] = useState<number | null>(null);
   const [saving, setSaving] = useState(false);
   const [saveMessage, setSaveMessage] = useState('');
+  const [ratio, setRatio] = useState<TicketRatio>('4:5');
   const photoOpen = selected !== null;
   const story = useRef<HTMLDivElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
@@ -74,7 +76,7 @@ export function FirstThirtyStory() {
     setSaving(true); setSaveMessage('');
     try {
       const { downloadTicket } = await import('./ticket-download');
-      await downloadTicket();
+      await downloadTicket(ratio);
       setSaveMessage('기념 티켓을 저장했어요.');
     } catch { setSaveMessage('저장하지 못했어요. 다시 시도해주세요.'); }
     finally { setSaving(false); }
@@ -163,7 +165,7 @@ export function FirstThirtyStory() {
             <dl><div><dt>RUNNER</dt><dd>권재현</dd></div><div><dt>DATE</dt><dd>05 SEP 2026</dd></div><div><dt>ROUTE</dt><dd>신대방 ↔ 마곡나루</dd></div></dl>
             <p><span>25 KM PLANNED → 30.02 KM DONE</span><span>함께 달린 형묵에게.</span></p>
           </article>
-          <button className={styles.saveTicket} onClick={saveTicket} disabled={saving}>{saving ? '티켓 만드는 중…' : '기념 티켓 저장 ↓'}</button>
+          <div className={styles.ratioPicker} role="group" aria-label="저장할 이미지 비율">{TICKET_RATIOS.map(option => <button key={option.id} type="button" onClick={() => setRatio(option.id)} aria-pressed={ratio === option.id} data-on={ratio === option.id || undefined}><b>{option.label}</b><small>{option.note}</small></button>)}</div><button className={styles.saveTicket} onClick={saveTicket} disabled={saving}>{saving ? '티켓 만드는 중…' : '기념 티켓 저장 ↓'}</button>
           <p className={styles.saveStatus} role="status">{saveMessage}</p>
           <a className={styles.makeOwnLink} href="#ticket-maker">내 기록으로 티켓 만들기 ↘</a>
           <div><a href="#first30-start">처음부터 다시 ↗</a><Link href="/saturday">쎄러데이로 ↗</Link></div><span className={styles.endDate}>첫 30km의 기억 · 2026.09.05</span>

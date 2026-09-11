@@ -2,6 +2,7 @@
 
 import { ChangeEvent, FormEvent, useEffect, useMemo, useState } from 'react';
 import styles from './first-thirty.module.css';
+import { TICKET_RATIOS, type TicketRatio } from './ticket-layout';
 
 const fallbackPhoto = '/images/challenge/saturday/first30/pointing.webp';
 const months = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'];
@@ -21,13 +22,14 @@ function distanceParts(value: string) {
 }
 
 export function TicketMaker() {
-  const [runner, setRunner] = useState('나의 이름');
+  const [runner, setRunner] = useState('김형묵');
   const [distance, setDistance] = useState('10.00');
   const [date, setDate] = useState('2026-09-13');
   const [route, setRoute] = useState('출발지 ↔ 도착지');
   const [caption, setCaption] = useState('오늘의 러닝.');
   const [message, setMessage] = useState('준비는 계속된다.');
   const [photoUrl, setPhotoUrl] = useState(fallbackPhoto);
+  const [ratio, setRatio] = useState<TicketRatio>('4:5');
   const [saving, setSaving] = useState(false);
   const [status, setStatus] = useState('');
   const formattedDate = useMemo(() => dateLabels(date), [date]);
@@ -49,7 +51,7 @@ export function TicketMaker() {
     event.preventDefault(); setSaving(true); setStatus('');
     try {
       const { downloadCustomTicket } = await import('./ticket-download');
-      await downloadCustomTicket({ runner, distance: formattedDistance.value, date, route, caption, message, photoSrc: photoUrl });
+      await downloadCustomTicket({ runner, distance: formattedDistance.value, date, route, caption, message, photoSrc: photoUrl, ratio });
       setStatus('나만의 러닝 티켓을 저장했어요.');
     } catch { setStatus('티켓을 저장하지 못했어요. 다시 시도해주세요.'); }
     finally { setSaving(false); }
@@ -72,7 +74,7 @@ export function TicketMaker() {
         <label><span>코스</span><input value={route} maxLength={28} onChange={e => setRoute(e.target.value)} required /></label>
         <label><span>사진 위 한마디</span><input value={caption} maxLength={24} onChange={e => setCaption(e.target.value)} required /></label>
         <label><span>마지막 문장</span><input value={message} maxLength={30} onChange={e => setMessage(e.target.value)} required /></label>
-        <button type="submit" disabled={saving}>{saving ? '티켓 만드는 중…' : '내 티켓 저장 ↓'}</button>
+        <div className={styles.ratioPicker} role="group" aria-label="저장할 이미지 비율">{TICKET_RATIOS.map(option => <button key={option.id} type="button" onClick={() => setRatio(option.id)} aria-pressed={ratio === option.id} data-on={ratio === option.id || undefined}><b>{option.label}</b><small>{option.note}</small></button>)}</div><button type="submit" disabled={saving}>{saving ? '티켓 만드는 중…' : '내 티켓 저장 ↓'}</button>
         <p role="status">{status}</p>
       </form>
 
