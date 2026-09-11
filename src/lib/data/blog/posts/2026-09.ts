@@ -2,6 +2,227 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'beginner-running-shoes-lineup-tier-guide-2026',
+    slug: 'beginner-running-shoes-lineup-tier-guide-2026',
+    title:
+      '입문 러닝화 계급도 2026 — 가격표 말고 "km당 비용"으로 줄 세우기 | 브랜드 10곳 28종 한 장 정리',
+    description:
+      '18만원대 이하 입문 러닝화 28종을 브랜드 10곳에서 모아 3단으로 정리했습니다. 핵심은 가격표가 아니라 km당 비용입니다 — 가장 비싼 마하 6(185,000원)가 km당 약 411원으로 이 표에서 가장 비싸고, 159,000원짜리 웨이브 인스파이어 21이 약 177원으로 가장 쌉니다. 가격 순위와 실제 비용 순위가 어긋나는 이유, 한국 발볼 기준 토박스·와이드 옵션까지 함께 정리했습니다.',
+    thumbnail: '/images/blog/beginner-running-shoes-lineup-tier-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'guide' as const,
+    readingTime: 12,
+    tags: [
+      '입문 러닝화 계급도',
+      '입문 러닝화 추천',
+      '첫 러닝화',
+      'km당 비용',
+      '러닝화 가성비',
+      '러닝화 발볼',
+      '와이드 러닝화',
+      '초보 러닝화',
+    ],
+    faqs: [
+      {
+        question: 'km당 비용이 뭔가요? 그냥 싼 걸 사면 안 되나요?',
+        answer:
+          'km당 비용은 신발값을 교체할 때까지 달릴 수 있는 거리로 나눈 값입니다. 신발은 한 번 사고 끝이 아니라 주기적으로 갈아야 하는 소모품이라, 실제로 지갑에서 나가는 돈은 가격표가 아니라 이 값에 가깝습니다. 예를 들어 라이벌 플라이 4는 139,000원으로 이 표에서 가장 싼 축인데 km당 약 309원이고, 169,000원인 고스트 17은 약 211원입니다. 3만원 더 싸게 샀는데 1km당 100원 가까이 더 내는 셈입니다. 주 3회 10km씩 달리면 그 차이가 한 달에 1만원 넘게 벌어집니다.',
+      },
+      {
+        question: '그럼 km당 비용이 제일 싼 걸 고르면 되나요?',
+        answer:
+          '아니요. km당 비용은 세 축 중 하나일 뿐입니다. 이 표에서 km당 가장 싼 축에 있는 레드헤어 9는 320g으로 가장 무겁고, 웨이브 인스파이어 21과 웨이브 호라이즌 8은 과내전(발이 안쪽으로 무너지는 주법)을 잡아주는 안정화라 발 모양이 안 맞으면 오히려 불편할 수 있습니다. 발볼·주법·무게를 먼저 맞춘 뒤, 비슷한 후보가 둘 이상 남았을 때 km당 비용으로 끊는 순서가 맞습니다.',
+      },
+      {
+        question: '발볼이 넓은데 어떤 걸 봐야 하나요?',
+        answer:
+          '이 표에서 기본 토박스가 넓게 나온 건 아디제로 SL2, 슈퍼노바 라이즈 2, 고스트 맥스 3, 웨이브 호라이즌 8, 웨이브 인스파이어 21입니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
+      },
+      {
+        question: '입문화인데 18만원은 너무 비싼 거 아닌가요?',
+        answer:
+          '한국 공식몰 정가 기준으로 주력 입문 모델 대부분이 15~18만원대에 형성돼 있습니다. 이보다 아래는 선택지가 급격히 줄고(9~14만원대는 이 표에서 3종), 위로 올라가면 입문화가 아니라 쿠션화·레이싱화 영역입니다. 다만 정가가 전부는 아닙니다. 이전 세대 모델이 남아 있으면 실구매가가 크게 내려가는데, 이 표에도 고스트 17과 18, 웨이브 라이더 29와 30, 노바블라스트 5와 6처럼 세대가 겹치는 모델이 여럿 있습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>입문화는 가격표로 줄 세우면 틀립니다.</strong> 신발값을 교체할 때까지 달릴 거리로 나눈 값(이 글에서 쓰는 <strong>km당 비용</strong>)으로 봐야 실제 지출이 보입니다.</li>
+    <li><strong>이 표에서 가장 비싼 신발이 km당으로도 가장 비쌉니다</strong> — 마하 6(185,000원, km당 약 411원). 반대로 159,000원짜리 웨이브 인스파이어 21이 약 177원으로 가장 쌉니다. 가격 차이는 16%인데 km당은 2.3배입니다.</li>
+    <li><strong>한국 러너는 순서를 하나 더 지켜야 합니다</strong> — 발볼과 와이드 옵션으로 후보를 먼저 거르고, 그다음에 km당 비용으로 끊습니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🪜</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 브랜드를 가로지르는 첫 계급도</p>
+    <p>지금까지 계급도는 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>, <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>처럼 <strong>브랜드별</strong>로 만들었습니다. 이 글은 반대로 <strong>브랜드를 가로질러</strong> 입문 가격대만 한 판에 모은 지도입니다. 특정 브랜드를 이미 정했다면 브랜드 계급도로, "어느 브랜드든 상관없으니 첫 신발을 고르고 싶다"면 이 글로 보시면 됩니다. 추천 순위 형태가 필요하면 <a href="/blog/first-running-shoe-guide-2026">인생 첫 러닝화 추천 TOP 8</a>이 따로 있습니다.</p>
+  </div>
+</div>
+
+<h2>1. 왜 가격표로 줄 세우면 틀리는가</h2>
+
+<p>러닝화를 처음 사는 사람은 보통 가격순으로 목록을 정렬합니다. 그런데 러닝화는 한 번 사서 오래 쓰는 물건이 아니라 <strong>주기적으로 갈아야 하는 소모품</strong>입니다. 밑창이 닳고 미드솔이 주저앉으면 쿠션이 사라지고, 그 상태로 계속 달리면 무릎과 정강이에 부담이 갑니다.</p>
+
+<p>그래서 실제로 지갑에서 나가는 돈은 신발값 하나가 아니라 <strong>"교체할 때까지 1km 달리는 데 드는 돈"</strong>입니다. 이 글에서는 이걸 <strong>km당 비용</strong>이라고 부르겠습니다. 계산은 단순합니다.</p>
+
+<ul>
+  <li><strong>km당 비용 = 한국 정가 ÷ 교체 시점까지의 주행거리</strong></li>
+</ul>
+
+<p>이 값이 왜 중요한지는 두 신발만 나란히 놓으면 바로 보입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>한국 정가</th><th>km당 비용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000원</td><td>약 <strong>309원</strong></td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000원</td><td>약 <strong>211원</strong></td></tr>
+  </tbody>
+</table>
+
+<p>라이벌 플라이 4가 3만원 쌉니다. 그런데 km당으로는 고스트 17이 약 100원 저렴합니다. 주 3회 10km씩 달리면 한 달 120km, 차이는 <strong>월 1만 2천원</strong>입니다. 두 달이면 처음 아낀 3만원이 사라지고, 그 뒤로는 계속 손해입니다. <strong>"싼 신발"과 "싸게 달리는 신발"은 다른 신발입니다.</strong></p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">km당 비용은 추정값입니다 — 이 글이 재는 것과 못 재는 것</p>
+    <p>이 사이트는 <strong>자체 랩 테스트를 하지 않습니다.</strong> km당 비용의 분모(교체 시점까지의 주행거리)는 아웃솔 마모를 기준으로 한 <strong>추정</strong>이며, 브랜드나 외부 랩이 공개한 자료를 정리한 값입니다. 그래서 이 글은 "몇 km에서 갈아야 한다"는 단정을 하지 않고 <strong>모델 간 상대 비교</strong>에만 씁니다. 애초에 널리 퍼진 500~800km 교체설 자체가 근거가 얇다는 건 <a href="/blog/running-shoe-500km-replacement-myth-2026">따로 검증한 글</a>에 정리해 뒀습니다. 반대로 <strong>가격은 추정이 아닙니다</strong> — 전부 한국 공식몰 정가입니다.</p>
+  </div>
+</div>
+
+<h2>2. 입문화 계급도 — 3단</h2>
+
+<p>18만원대 이하, 트레일화를 뺀 28종을 가격대로 3단으로 나눴습니다. 각 단 안에서는 <strong>km당 비용이 싼 순서</strong>입니다. 가격 순서와 어긋나는 지점이 이 표의 핵심입니다.</p>
+
+<h3>1단 · 초저가 (9~14만원) — 선택지가 적고, 대가가 분명하다</h3>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/li-ning-red-hare-9">리닝 레드헤어 9</a></td><td>95,000원</td><td>320g</td><td><strong>약 158원</strong></td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/li-ning-red-hare-9-pro">리닝 레드헤어 9 프로</a></td><td>140,000원</td><td>222g</td><td>약 233원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000원</td><td>236g</td><td>약 309원</td><td>좁음</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p><strong>레드헤어 9은 이 표 전체에서 km당 비용이 가장 쌉니다.</strong> 대신 320g으로 가장 무겁습니다. 무게는 입문자에게 생각보다 크게 와닿는 값이라, "가장 싸게 달릴 수 있지만 가장 무겁다"를 받아들일 수 있는지가 갈림길입니다. 1단 세 켤레는 모두 <strong>와이드 옵션이 없습니다.</strong> 발볼이 넓다면 이 단은 통째로 건너뛰는 게 맞습니다.</p>
+
+<h3>2단 · 표준 입문 (14~17만원) — 대부분의 첫 신발이 여기 있다</h3>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>286g</td><td><strong>약 177원</strong></td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-29">미즈노 웨이브 라이더 29</a></td><td>169,000원</td><td>258g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/adidas-supernova-rise-3">아디다스 슈퍼노바 라이즈 3</a></td><td>159,000원</td><td>270g</td><td>약 245원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>149,000원</td><td>257g</td><td>약 248원</td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-18">사코니 라이드 18</a></td><td>159,000원</td><td>255g</td><td>약 265원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>272g</td><td>약 265원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/li-ning-red-hare-9-ultra">리닝 레드헤어 9 울트라</a></td><td>150,000원</td><td>246g</td><td>약 273원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a></td><td>169,000원</td><td>255g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td><td>169,000원</td><td>286g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a> <span style="color:#0284c7;">안정화</span></td><td>169,000원</td><td>296g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000원</td><td>281g</td><td>약 289원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000원</td><td>245g</td><td>약 298원</td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a></td><td>159,000원</td><td>207g</td><td>약 318원</td><td>표준</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p>여기가 이 글에서 제일 중요한 표입니다. <strong>같은 159,000원에 웨이브 인스파이어 21은 km당 약 177원, 킨바라 16은 약 318원입니다 — 1.8배 차이가 정가 0원 차이 안에서 벌어집니다.</strong> 킨바라 16이 나쁜 신발이라는 뜻은 아닙니다. 207g으로 이 표에서 가장 가볍고, 가벼운 신발은 대체로 밑창을 덜 깔기 때문에 수명이 짧습니다. <strong>무게와 km당 비용은 맞바꾸는 관계</strong>라고 보는 게 정확합니다.</p>
+
+<p>고스트 17과 18, 웨이브 라이더 29와 30, 노바블라스트 5와 6처럼 <strong>세대가 겹치는 모델</strong>이 여럿인 것도 이 단의 특징입니다. 이전 세대는 정가가 같아도 실구매가가 내려가 있는 경우가 많아, km당 비용이 실제로는 표보다 더 좋아집니다.</p>
+
+<h3>3단 · 상위 입문 (17~18.5만원) — 올라간 값이 어디로 갔는지 확인할 것</h3>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-wave-horizon-8">미즈노 웨이브 호라이즌 8</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>323g</td><td><strong>약 199원</strong></td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-30">미즈노 웨이브 라이더 30</a></td><td>179,000원</td><td>267g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/asics-novablast-6">아식스 노바블라스트 6</a></td><td>179,000원</td><td>249g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-19">사코니 라이드 19</a></td><td>179,000원</td><td>255g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></td><td>179,000원</td><td>303g</td><td>약 256원</td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-guide-19">사코니 가이드 19</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>298g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 V14</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>295g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></td><td>179,000원</td><td>254g</td><td>약 325원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a></td><td>179,000원</td><td>224g</td><td>약 358원</td><td>좁음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000원</td><td>232g</td><td><strong>약 411원</strong></td><td>표준</td><td>있음</td></tr>
+  </tbody>
+</table>
+
+<p><strong>이 표의 최고가인 마하 6이 km당으로도 최고가입니다.</strong> 웨이브 인스파이어 21과 비교하면 정가는 16% 비싼데 km당은 2.3배입니다. 마하 6은 232g의 가벼운 스피드 성향 신발이라 밑창을 덜 깔았고, 그만큼 수명이 짧게 잡혀 있습니다. 즉 <strong>올라간 값이 "더 오래 쓰는 것"이 아니라 "더 가볍게 달리는 것"으로 갔습니다.</strong> 그게 지금 나에게 필요한 값인지가 판단 기준입니다. 첫 신발이라면 대체로 아직 아닙니다.</p>
+
+<p>반대로 호라이즌 8은 323g으로 이 단에서 가장 무겁지만 km당 약 199원으로 가장 쌉니다. 이 단에서도 <strong>무게와 km당 비용의 맞바꿈</strong>이 그대로 반복됩니다.</p>
+
+<h2>3. 한국 러너는 여기서 한 단계를 더 거쳐야 한다</h2>
+
+<p>위의 표는 km당 비용 순서지만, <strong>실제 구매 순서는 그 반대입니다.</strong> 발볼부터 거르고 마지막에 km당 비용으로 끊어야 합니다. 발이 안 맞는 신발은 아무리 싸게 달려도 계속 신지 못하기 때문입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>발볼 기준</th><th>해당 모델</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>, <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>, <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td></tr>
+    <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
+    <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
+    <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
+  </tbody>
+</table>
+
+<p>표에 없는 나머지는 토박스가 표준이면서 와이드 옵션도 나오는 모델입니다. 발볼이 넓은 편이라면 그쪽이 가장 안전한 사냥터입니다.</p>
+
+<p>두 번째 필터는 <strong>주법</strong>입니다. 위 표에서 파란색 <span style="color:#0284c7;">안정화</span> 표시가 붙은 다섯 켤레(웨이브 인스파이어 21, 웨이브 호라이즌 8, 가이드 18·19, 스트럭처 26, 860 V14)는 발이 안쪽으로 무너지는 과내전을 잡아주도록 설계된 신발입니다. 과내전이 아닌 사람이 신으면 오히려 발 바깥쪽으로 밀리는 느낌이 날 수 있습니다. 내 발이 어느 쪽인지 모르겠다면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">과내전 자가진단 가이드</a>를 먼저 보세요. <strong>km당 비용 상위권에 안정화가 몰려 있는 건 우연이 아닙니다</strong> — 지지 구조를 넣느라 밑창을 두껍고 단단하게 깔기 때문에 결과적으로 오래 갑니다. 다만 그건 "안정화가 이득"이라는 뜻이 아니라 "안정화가 필요한 사람에게는 이득이 더 크다"는 뜻입니다.</p>
+
+<h2>4. 그래서 처음이면 어떻게 고르나</h2>
+
+<p>순서만 지키면 됩니다.</p>
+
+<ol>
+  <li><strong>발볼로 거른다</strong> — 넓으면 와이드 없는 모델을 먼저 후보에서 뺍니다.</li>
+  <li><strong>주법으로 거른다</strong> — 과내전이면 안정화, 아니면 중립화로 좁힙니다.</li>
+  <li><strong>무게를 정한다</strong> — 가벼운 쪽을 택할수록 km당 비용은 대체로 올라갑니다. 그 대가를 받아들일지 정합니다.</li>
+  <li><strong>남은 후보를 km당 비용으로 끊는다</strong> — 여기서 처음으로 이 글의 표가 쓰입니다.</li>
+</ol>
+
+<p>이 순서를 지키면 "가장 싼 걸 샀는데 발이 아파서 안 신게 됐다"와 "제일 비싼 걸 샀는데 반년 만에 갈아야 했다"를 둘 다 피할 수 있습니다.</p>
+
+<h2>5. 한 걸음 더</h2>
+
+<p>브랜드를 이미 정했다면 브랜드별 계급도가 더 깊습니다. 각 브랜드가 라인 이름·번호·폼으로 등급을 어떻게 표시하는지 정리해 뒀습니다.</p>
+
+<ul>
+  <li><a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 계급도</a> — 페가수스·보메로·스트럭처·Fly, 라인으로 읽는 법</li>
+  <li><a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 계급도</a> — GEL 클래식 vs FF Blast 신세대</li>
+  <li><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 계급도</a> — 맥스 쿠션과 "X" 접미사</li>
+  <li><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스 계급도</a> — GTS와 DNA 폼</li>
+  <li><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 계급도</a> — Wave 전통과 하이퍼워프</li>
+  <li><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니 계급도</a> — PWRRUN과 엔돌핀</li>
+  <li><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 계급도</a> — 아디제로 사다리와 EnergyRods</li>
+  <li><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 계급도</a> — 숫자 6x·8x·10xx가 알려주는 것</li>
+  <li><a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마 계급도</a> — 나이트로와 엘리트·퓨어</li>
+  <li><a href="/blog/on-running-shoes-lineup-tier-guide-2026">온(On) 계급도</a> — 수식어로 읽는 클라우드 라인</li>
+</ul>
+
+<p>산길을 달릴 생각이라면 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>가 따로 있습니다.</p>
+
+<p><small>※ 가격은 2026년 9월 11일 기준 한국 공식몰 정가입니다. 할인·이전 세대 재고에 따라 실구매가는 달라질 수 있습니다. km당 비용은 정가를 아웃솔 마모 기준 추정 수명으로 나눈 값으로, 자체 랩 실측이 아니라 <strong>모델 간 상대 비교용</strong>입니다. 무게는 US 9(남성) 기준 공개 수치이며 사이즈에 따라 달라집니다.</small></p>
+`,
+  },
+  {
     id: 'mount-to-coast-korea-launch',
     slug: 'mount-to-coast-korea-launch',
     title:
