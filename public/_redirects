@@ -3,3 +3,4 @@
 # www → apex 301은 존 레벨 Redirect Rule로 처리 (Cloudflare 대시보드 Rules → Redirect Rules)
 /blog/beginner-running-shoe-guide-2025 /blog/first-running-shoe-guide-2026 301
 /blog/running-shoe-lifespan-care /blog/running-shoe-lifespan-replacement-guide 301
+/blog/carbon-plate-shoes-comparison-2025 /blog/carbon-plate-shoes-guide-2026 301

@@ -146,7 +146,7 @@ export const posts_2026_04: BlogPost[] = [
 <p>브랜드 페이지에서 "FF Blast+", "FuelCell", "LightStrike Pro" 같은 이름을 보면 이제 감이 올 겁니다. 전부 미드솔 폼 소재의 브랜드별 이름입니다. 어퍼 소재, 아웃솔 두께, 힐카운터 강도를 체크하는 습관이 생기면 20만원 이상짜리 신발을 살 때 훨씬 후회가 줄어듭니다.</p>
 
 <ul>
-  <li>카본 플레이트 신발 궁금하다면 → <a href="/best/carbon-plate-shoes-comparison-2025">카본화 비교 가이드</a></li>
+  <li>카본 플레이트 신발 궁금하다면 → <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 비교 가이드</a></li>
   <li>발볼 넓은 분 → <a href="/blog/wide-feet-running-shoes-korea">와이드 러닝화 가이드</a></li>
   <li>내 발에 맞는 신발 찾기 → <a href="/recommend">1분 러닝화 추천</a></li>
 </ul>

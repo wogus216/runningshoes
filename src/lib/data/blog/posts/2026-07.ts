@@ -1004,7 +1004,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>슈퍼크리티컬 폼(가벼운 데일리·슈퍼트레이너)</strong> — <a href="/shoes/asics-novablast-6">노바블라스트 6</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
   <li><strong>EVA(가성비 입문)</strong> — <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a> 등 입문화</li>
 </ul>
-<p>폼 위·아래에 들어가는 <strong>플레이트</strong>가 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">시리즈 2편 — 플레이트 완전 해설</a>로 이어집니다(카본·유리섬유·나일론의 차이와 만드는 회사). 실제 카본화 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>, 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
+<p>폼 위·아래에 들어가는 <strong>플레이트</strong>가 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">시리즈 2편 — 플레이트 완전 해설</a>로 이어집니다(카본·유리섬유·나일론의 차이와 만드는 회사). 실제 카본화 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a>, 브랜드별 자체 기술 명칭은 각 <a href="/brands">브랜드 페이지</a>의 기술 탭에서 확인할 수 있습니다.</p>
 
 <div class="faq">
   <h2>자주 묻는 질문</h2>
@@ -1264,7 +1264,7 @@ export const posts_2026_07: BlogPost[] = [
 </div>
 
 <div class="callout info">
-  <p><strong>한 줄 결론.</strong> 풀코스 폭발력이면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>, 보폭 늘려 스피드를 내면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, 발볼이 넓거나 부드러운 착지를 원하면 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>입니다. 카본화 입문 개념은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>, 나이키 내부 대결은 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3</a>을 참고하세요.</p>
+  <p><strong>한 줄 결론.</strong> 풀코스 폭발력이면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>, 보폭 늘려 스피드를 내면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, 발볼이 넓거나 부드러운 착지를 원하면 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>입니다. 카본화 입문 개념은 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a>, 나이키 내부 대결은 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3</a>을 참고하세요.</p>
 </div>
 
 <h2>세 켤레 한눈에 보기</h2>
@@ -2281,7 +2281,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 첫 카본화 후보로 어떤가요?</p>
-    <p class="faq-a">A. SC 엘리트 라인은 안정적인 라이드 덕에 카본 입문 후보로 자주 꼽힙니다. 다만 30만원대 레이스 전용화라는 점은 같으니, 입문 관점의 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>와 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 같은 대안까지 함께 보고 정하세요.</p>
+    <p class="faq-a">A. SC 엘리트 라인은 안정적인 라이드 덕에 카본 입문 후보로 자주 꼽힙니다. 다만 30만원대 레이스 전용화라는 점은 같으니, 입문 관점의 비교는 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>와 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 같은 대안까지 함께 보고 정하세요.</p>
   </div>
 </div>
 
@@ -2399,7 +2399,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>이 코스엔 어떤 신발이 맞을까</h2>
 <p>고저차 없는 평지 직선 아웃앤백은 <strong>카본 레이싱화의 장점이 가장 잘 나오는 조건</strong>입니다. 오르막에서 무게 부담이 생기거나 기술 구간에서 접지가 불안해질 일이 없으니까요.</p>
-<p><strong>하프 기록을 노린다면</strong> — 정점은 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>(30.9만)와 <a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a>(29.9만)입니다. 가격 부담이 크다면 <a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a>(22.9만)가 카본 플레이트를 갖추면서도 20만원대라 하프 입문 레이싱화로 현실적입니다. 카본화 자체가 처음이라면 <a href="/blog/carbon-plate-shoes-comparison-2025">카본화 비교 가이드</a>에서 원리와 주의점을 먼저 확인하세요 — <strong>초보가 무작정 신으면 종아리 부담이 큽니다.</strong></p>
+<p><strong>하프 기록을 노린다면</strong> — 정점은 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>(30.9만)와 <a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a>(29.9만)입니다. 가격 부담이 크다면 <a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a>(22.9만)가 카본 플레이트를 갖추면서도 20만원대라 하프 입문 레이싱화로 현실적입니다. 카본화 자체가 처음이라면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 비교 가이드</a>에서 원리와 주의점을 먼저 확인하세요 — <strong>초보가 무작정 신으면 종아리 부담이 큽니다.</strong></p>
 <p><strong>완주가 목표라면</strong> 레이싱화보다 쿠션 좋은 데일리화가 낫습니다. <a href="/shoes/nike-pegasus-42">페가수스 42</a>(16.9만)는 입문 올라운더로 무난하고, 무릎이 걱정된다면 맥스쿠션 <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(19.9만)가 안전합니다. 21km를 얇고 딱딱한 레이싱화로 버티려다 발이 먼저 지치는 경우가 많습니다.</p>
 <p>발볼·체중·부상 이력까지 반영한 추천은 <a href="/recommend">1분 맞춤 추천</a>을 받아보세요.</p>
 
@@ -4462,7 +4462,7 @@ export const posts_2026_07: BlogPost[] = [
 </div>
 
 <h2>④ 25만원 이상 — 카본 슈퍼슈즈 (레이스 무기)</h2>
-<p>카본 플레이트 + 고반발 폼으로 <strong>기록을 앞당기는 레이스 전용 신발</strong>입니다. 반드시 알아둘 것 — 슈퍼슈즈는 <strong>매일 신는 신발이 아니고, 첫 러닝화는 더더욱 아닙니다.</strong> 데일리 한 켤레를 갖춘 뒤, 대회 기록을 노릴 때 추가하는 게 순서예요. 카본화의 원리·초보 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 비교</a>에 자세히 있습니다.</p>
+<p>카본 플레이트 + 고반발 폼으로 <strong>기록을 앞당기는 레이스 전용 신발</strong>입니다. 반드시 알아둘 것 — 슈퍼슈즈는 <strong>매일 신는 신발이 아니고, 첫 러닝화는 더더욱 아닙니다.</strong> 데일리 한 켤레를 갖춘 뒤, 대회 기록을 노릴 때 추가하는 게 순서예요. 카본화의 원리·초보 주의점은 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 비교</a>에 자세히 있습니다.</p>
 <div class="table-wrap">
 <table>
   <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>이런 러너에게</th></tr></thead>
@@ -4508,7 +4508,7 @@ export const posts_2026_07: BlogPost[] = [
 <h3>Q. 발볼이 넓은데 가격대별로 뭘 봐야 하나요?</h3>
 <p>예산보다 <strong>토박스 너비·와이드 옵션</strong>이 먼저입니다. ~15만원은 <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>(와이드 성향), 카본에서는 좁은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>보다 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(74.5mm)가 편합니다. 브랜드별 발볼 정리는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드</a>에 있어요.</p>
 <h3>Q. 카본 슈퍼슈즈, 초보도 살 수 있나요?</h3>
-<p>살 수는 있지만 <strong>매일 신는 용도로는 부적합</strong>합니다. 첫 카본이면 22만원대 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a>처럼 반발이 순한 "입문 카본"으로 시작하고, 엘리트 레이서(30만원대)는 근력이 붙고 대회 기록을 노릴 때 추가하세요. 원리와 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 비교</a>에 정리했습니다.</p>
+<p>살 수는 있지만 <strong>매일 신는 용도로는 부적합</strong>합니다. 첫 카본이면 22만원대 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a>처럼 반발이 순한 "입문 카본"으로 시작하고, 엘리트 레이서(30만원대)는 근력이 붙고 대회 기록을 노릴 때 추가하세요. 원리와 주의점은 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a>에 정리했습니다.</p>
 <h3>Q. 데일리 한 켤레로 훈련도 레이스도 하고 싶어요.</h3>
 <p>20만원대 "슈퍼 트레이너"가 답입니다. <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>(카본 없이 빠른 반발)이나 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(나일론 플레이트)는 조깅·템포·5K 레이스까지 한 켤레로 소화합니다. 다만 풀코스 기록을 진지하게 노린다면 레이스용 카본은 별도로 갖추는 게 좋아요.</p>
 `,
@@ -4820,7 +4820,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>수명이 다한 신발을 교체</strong>하는 것 — 이건 확실한 위험 관리입니다. 미드솔이 주저앉은 신발로 장거리를 반복하지 마세요</li>
   <li><strong>회복·재활기의 부담 줄이기</strong> — 복귀 초기엔 부드러운 충격 흡수가 다리의 심리적·물리적 부담을 덜어줍니다</li>
   <li><strong>중족골 피로골절엔 뻣뻣한 밑창·록커</strong>가 발허리 굽힘을 줄여 부하를 분산합니다</li>
-  <li><strong>급격한 신발 전환을 피하기</strong> — 갑자기 드롭을 낮추거나 미니멀화로 바꾸면 중족골·종아리 부하가 급증합니다. <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈퍼슈즈</a>도 전족부 부하를 바꿔 발배뼈(주상골) 피로골절과 연관됐다는 소규모 보고가 있어, 미니멀 전환과 마찬가지로 몇 주에 걸쳐 서서히 적응해야 합니다</li>
+  <li><strong>급격한 신발 전환을 피하기</strong> — 갑자기 드롭을 낮추거나 미니멀화로 바꾸면 중족골·종아리 부하가 급증합니다. <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 슈퍼슈즈</a>도 전족부 부하를 바꿔 발배뼈(주상골) 피로골절과 연관됐다는 소규모 보고가 있어, 미니멀 전환과 마찬가지로 몇 주에 걸쳐 서서히 적응해야 합니다</li>
 </ul>
 <p>이런 맥락에서, 훈련량이 많거나 복귀기인 러너가 <strong>일상 주행·회복주에 쓰기 좋은 충격 흡수형 신발</strong>을 고른다면 아래가 무난합니다. 다시 강조하지만 이건 "예방약"이 아니라 "부담을 덜어주는 보조"입니다.</p>
 <div class="table-wrap">
@@ -5520,7 +5520,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>"발볼이 넓다"</strong> → 보스턴 13이나 엔돌핀 스피드 5(둘 다 표준). 줌 플라이 6(좁음)은 비추천.</li>
   <li><strong>"이것보다 더 두껍고 부드러운 고스택 슈퍼트레이너"</strong> → <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을 보세요. 레이스 당일용 풀 카본 레이서는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 상위 모델입니다.</li>
 </ul>
-<p>카본·나일론 플레이트의 원리와 입문 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>에서 더 깊게 정리했습니다.</p>
+<p>카본·나일론 플레이트의 원리와 입문 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>에서 더 깊게 정리했습니다.</p>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq">
@@ -5618,7 +5618,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>"레이스보다 데일리 트레일 훈련용"</strong> → 카본 레이서는 과합니다. <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">데일리 트레일 3종(스피드고트·펄사·아그라빅)</a>을 보세요.</li>
   <li><strong>"그립·안정이 최우선, 반발은 덜 중요"</strong> → 카본 없이도 충분합니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>나 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>가 더 안전하고 저렴합니다.</li>
 </ul>
-<p>기술 트레일·스카이레이스 입문이라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를, 카본 플레이트의 원리와 주의점은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>를 함께 보면 좋습니다.</p>
+<p>기술 트레일·스카이레이스 입문이라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를, 카본 플레이트의 원리와 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>를 함께 보면 좋습니다.</p>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq">
@@ -5935,7 +5935,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 슈퍼슈즈가 처음인데 첫 카본화로 괜찮을까요?</p>
-    <p class="faq-a">A. 전작 1은 로우드롭 + 미드풋 착지 특화라 입문용으로 까다로웠는데, <strong>2는 평가가 달라졌습니다</strong>. Road Trail Run은 2를 두고 "레이싱화치고 안정적"이라며 <strong>카본화 입문자에게도 권할 만하다</strong>고 봤습니다. 다만 이는 한 매체의 초기 평가이고, 여전히 5mm 로우드롭이라 힐 착지가 강한 러너는 아킬레스·종아리 부담을 확인해야 합니다. 더 안전하게 가려면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>가 무난하고, 카본화 입문 주의사항은 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 가이드</a>를 참고하세요.</p>
+    <p class="faq-a">A. 전작 1은 로우드롭 + 미드풋 착지 특화라 입문용으로 까다로웠는데, <strong>2는 평가가 달라졌습니다</strong>. Road Trail Run은 2를 두고 "레이싱화치고 안정적"이라며 <strong>카본화 입문자에게도 권할 만하다</strong>고 봤습니다. 다만 이는 한 매체의 초기 평가이고, 여전히 5mm 로우드롭이라 힐 착지가 강한 러너는 아킬레스·종아리 부담을 확인해야 합니다. 더 안전하게 가려면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>가 무난하고, 카본화 입문 주의사항은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>를 참고하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 한국 가격은 얼마이고 어디서 살 수 있나요?</p>

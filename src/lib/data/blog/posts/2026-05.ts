@@ -3602,7 +3602,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>관련 글</h2>
 
 <ul>
-  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
   <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
   <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
   <li><a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략 가이드</a></li>
@@ -3901,7 +3901,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈 양강</a></li>
   <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈 비교</a></li>
-  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
   <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a></li>
   <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 안정화 세대 비교</a></li>
   <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a></li>
@@ -4150,7 +4150,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 나이키 카본 양강 비교</a></li>
-  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
   <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
   <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
   <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
@@ -4387,7 +4387,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>관련 글</h2>
 
 <ul>
-  <li><a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
+  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
   <li><a href="/blog/2026-nike-alphafly-4-prototype">알파플라이 4 프로토타입 — 11월 출시 임박</a></li>
   <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
   <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
@@ -5018,7 +5018,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>완전 OK. 41은 한국 입문화 부동의 1위였고, 42가 압도적 개선판은 아닙니다. 이월 13만원대로 살 수 있다면 가성비 최강. 단 발볼 4E급이라면 42 와이드 권장(41 와이드는 재고 빠르게 줄어드는 중).</p>
 
 <h3>Q. 카본 슈즈로 가야 할까요?</h3>
-<p>페가수스 41·42 모두 카본 슈즈가 아닌 데일리 트레이너입니다. 카본 슈즈는 풀코스/하프 레이스 + 페이스 훈련 전용. 데일리 훈련은 페가수스 같은 일반 트레이너가 정답. 카본 슈즈 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 슈즈 비교 →</a></p>
+<p>페가수스 41·42 모두 카본 슈즈가 아닌 데일리 트레이너입니다. 카본 슈즈는 풀코스/하프 레이스 + 페이스 훈련 전용. 데일리 훈련은 페가수스 같은 일반 트레이너가 정답. 카본 슈즈 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 →</a></p>
 
 <h3>Q. 10km 넘어가는 거리도 쓸 수 있나요?</h3>
 <p>둘 다 10~13km까지는 무난하지만 그 이상은 비추. BITR도 42를 "6-13km 스윗스팟의 원 트릭 포니"로 평가. 하프 이상은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>, 또는 줌 플라이 6 분리.</p>
@@ -7112,7 +7112,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏃</span>
   <div class="callout-body">
     <p class="callout-title">카본화 입문이 막막하다면</p>
-    <p>카본 플레이트 슈퍼슈즈는 부상 위험과 비용이 모두 큰 카테고리입니다. 본인 발볼·체중·페이스에 맞는 후보를 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 한국 카본화 전반 비교는 <a href="/blog/carbon-plate-shoes-comparison-2025">카본 플레이트 러닝화 완벽 비교</a>, 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 참고.</p>
+    <p>카본 플레이트 슈퍼슈즈는 부상 위험과 비용이 모두 큰 카테고리입니다. 본인 발볼·체중·페이스에 맞는 후보를 좁히고 싶다면 <a href="/recommend">맞춤 러닝화 추천</a>을 활용하세요. 한국 카본화 전반 비교는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 완벽 비교</a>, 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 참고.</p>
   </div>
 </div>
 

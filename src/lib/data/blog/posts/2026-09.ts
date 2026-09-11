@@ -2,6 +2,363 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'carbon-plate-running-shoes-lineup-tier-guide-2026',
+    slug: 'carbon-plate-running-shoes-lineup-tier-guide-2026',
+    title:
+      '카본화 계급도 2026 — "카본"이 묶고 있는 서로 다른 물건 셋 | 브랜드 9곳 30종, km당 274원부터 1,995원까지',
+    description:
+      '카본 플레이트가 들어간 로드 러닝화 30종을 트레이너·레이서·서브2 3단으로 정리했습니다. km당 비용이 274원(디비에이트 나이트로 4)부터 1,995원(메타스피드 레이·하이퍼워프 퓨어)까지 7.3배 벌어집니다 — "카본화"라는 한 단어가 성격이 전혀 다른 물건 셋을 묶고 있다는 뜻입니다. 한국 발볼 기준 토박스 분포(30종 중 넓은 것 0종)까지 함께 정리했습니다.',
+    thumbnail: '/images/blog/carbon-plate-running-shoes-lineup-tier-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'guide' as const,
+    readingTime: 13,
+    tags: [
+      '카본화 계급도',
+      '카본 플레이트 러닝화',
+      '슈퍼슈즈',
+      '카본 트레이너',
+      '레이싱화',
+      '마라톤 러닝화',
+      '카본화 발볼',
+      'km당 비용',
+    ],
+    faqs: [
+      {
+        question: '카본화면 다 대회용 아닌가요?',
+        answer:
+          '아닙니다. 이 표의 30종 중 9종은 훈련용으로 설계된 "카본 트레이너"입니다. 매직스피드 5, 줌 플라이 6, 디비에이트 나이트로 4 같은 모델은 카본이나 유사 플레이트가 들어 있지만 밑창을 두껍게 깔아 매주 신을 수 있게 만들었습니다. km당 비용이 274~576원으로 레이서(722~1,495원)나 최상위(1,163~1,995원)와 확연히 다릅니다. "카본화를 사고 싶다"는 입문 러너에게 실제로 맞는 건 대개 이 트레이너 단입니다.',
+      },
+      {
+        question: '30만원대와 20만원대 카본화는 뭐가 다른가요?',
+        answer:
+          '가장 큰 차이는 수명과 용도입니다. 20만원대 트레이너는 훈련에 쓰라고 만든 신발이라 오래 가고, 30만원대 레이서는 대회날 최대 반발을 내라고 만든 신발이라 폼이 무르고 빨리 주저앉습니다. 그래서 정가는 1.5배 차이인데 km당 비용은 3~5배까지 벌어집니다. 대회를 1년에 한두 번 나가는 단계라면 레이서 한 켤레를 사서 아껴 신는 것보다, 트레이너 한 켤레로 훈련까지 소화하는 쪽이 총지출이 적습니다.',
+      },
+      {
+        question: '발볼이 넓은데 카본화를 신을 수 있나요?',
+        answer:
+          '선택지가 많지 않습니다. 이 표 30종 중 토박스가 넓게 분류된 모델은 0종이고, 좁은 편이 13종(43%), 나머지 17종이 표준입니다. 와이드 옵션이 나오는 건 6종(20%)뿐으로, 메타스피드 스카이+·엣지+, SC 엘리트 V5, SC 리벨, SC 트레이너 V3, 디비에이트 나이트로 4입니다. 입문화에서는 토박스가 넓은 모델도 있고 와이드도 흔했는데, 카본화는 발을 단단히 잡아야 플레이트가 작동한다는 설계 전제 때문에 전반적으로 좁습니다. 발볼이 넓다면 이 6종부터 보는 게 순서입니다.',
+      },
+      {
+        question: '카본화가 정말 기록을 줄여주나요?',
+        answer:
+          '이 글은 제품 지도라 효과 자체는 다루지 않습니다. 효과는 개인차가 크고 페이스에 크게 의존한다는 것이 반복적으로 보고돼 왔는데, 그 근거와 자가진단은 따로 정리한 글 두 편에 있습니다. 원리·규정·역사는 카본 플레이트 러닝화 가이드, 나에게 맞는지는 "카본화가 나한테도 맞을까" 쪽을 보세요. 이 글에서는 "어떤 카본화가 어디쯤 있는가"만 다룹니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>"카본화"는 한 종류가 아닙니다.</strong> 신발값을 교체할 때까지 달릴 거리로 나눈 값(<strong>km당 비용</strong>)이 274원부터 1,995원까지 <strong>7.3배</strong> 벌어집니다. 입문화에서는 이 격차가 2.6배였습니다.</li>
+    <li><strong>그래서 3단으로 갈립니다</strong> — 매주 신는 <strong>카본 트레이너</strong>(19.9~25.9만), 대회날 신는 <strong>레이서</strong>(26.9~32.9만), 기록을 갈아넣는 <strong>서브2 최상위</strong>(33.9~39.9만).</li>
+    <li><strong>한국 러너는 먼저 발볼부터 봐야 합니다</strong> — 30종 중 토박스가 넓은 모델은 <strong>0종</strong>이고, 와이드 옵션이 나오는 건 6종뿐입니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🏁</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 제품 지도. 원리와 효과는 다른 글에</p>
+    <p>이 글은 <strong>어떤 카본화가 어디쯤 있는가</strong>만 다룹니다. 카본 플레이트가 어떻게 작동하는지, World Athletics 규정이 무엇인지는 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>에, 내가 효과를 볼 체질인지는 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a>에 있습니다. 같은 방식으로 만든 <a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a>도 있습니다.</p>
+  </div>
+</div>
+
+<h2>1. 7.3배 — 한 단어가 숨기고 있는 것</h2>
+
+<p>러닝화 이야기에서 "카본화"는 보통 한 덩어리로 불립니다. 그런데 카본 플레이트가 들어간 로드 러닝화 30종을 한 표에 올려놓으면, 한 덩어리가 아니라는 게 바로 드러납니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>km당 비용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/puma-deviate-nitro-4">푸마 디비에이트 나이트로 4</a></td><td>219,000원</td><td>약 <strong>274원</strong></td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a></td><td>399,000원</td><td>약 <strong>1,995원</strong></td></tr>
+  </tbody>
+</table>
+
+<p>정가는 1.8배 차이인데 <strong>km당 비용은 7.3배</strong>입니다. <a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문화 계급도</a>에서 같은 격차가 2.6배였던 걸 생각하면, 카본화 쪽이 훨씬 심하게 벌어져 있습니다.</p>
+
+<p>이유는 단순합니다. <strong>두 신발은 신는 날 수가 다릅니다.</strong> 디비에이트 나이트로 4는 매주 훈련에 신으라고 만든 신발이고, 메타스피드 레이는 129g까지 깎아 대회날 기록을 내라고 만든 신발입니다. 후자는 폼이 무르고 빨리 주저앉습니다. 같은 "카본화"라는 이름 아래 <strong>성격이 전혀 다른 물건이 최소 셋</strong> 들어 있습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">km당 비용은 추정값입니다</p>
+    <p>이 사이트는 <strong>자체 랩 테스트를 하지 않습니다.</strong> km당 비용의 분모(교체 시점까지의 주행거리)는 아웃솔 마모를 기준으로 한 <strong>추정</strong>이며, 브랜드·외부 랩이 공개한 자료를 정리한 값입니다. 그래서 "몇 km에서 갈아야 한다"는 단정 없이 <strong>모델 간 상대 비교</strong>에만 씁니다. 널리 퍼진 교체 주기 숫자 자체가 근거가 얇다는 건 <a href="/blog/running-shoe-500km-replacement-myth-2026">따로 검증한 글</a>에 있습니다. 반대로 <strong>가격은 추정이 아닙니다</strong> — 전부 한국 공식몰 정가입니다.</p>
+  </div>
+</div>
+
+<h2>2. 1단 · 카본 트레이너 (19.9~25.9만원) — 매주 신는 카본</h2>
+
+<p>플레이트가 들어 있지만 <strong>훈련용으로 설계된</strong> 신발들입니다. 밑창을 두껍게 깔아 수명을 확보했고, 그만큼 반발도 순합니다. 카본화가 처음이라면 실제로 필요한 건 대개 이 단입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/puma-deviate-nitro-4">푸마 디비에이트 나이트로 4</a></td><td>219,000원</td><td>250g</td><td><strong>약 274원</strong></td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-trainer">사코니 엔돌핀 트레이너</a></td><td>219,000원</td><td>285g</td><td>약 365원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-3">푸마 디비에이트 나이트로 3</a></td><td>219,000원</td><td>268g</td><td>약 487원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-trainer-v3">뉴발란스 SC 트레이너 V3</a></td><td>249,000원</td><td>278g</td><td>약 498원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-4">아식스 매직스피드 4</a></td><td>199,000원</td><td>237g</td><td>약 569원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000원</td><td>193g</td><td>약 572원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a></td><td>229,000원</td><td>248g</td><td>약 572원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-rebel">뉴발란스 SC 리벨 V1</a></td><td>259,000원</td><td>218g</td><td>약 576원</td><td>좁음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-streakfly-2">나이키 스트릭플라이 2</a></td><td>219,000원</td><td>128g</td><td>약 1,095원</td><td>좁음</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p><strong>스트릭플라이 2가 이 단의 예외입니다.</strong> 가격은 트레이너 대역인데 km당 약 1,095원으로, 아래 레이서 단 대부분보다 비쌉니다. 128g으로 이 표 전체에서 가장 가볍기 때문입니다 — <strong>가격이 아니라 무게가 km당 비용을 정한다</strong>는 걸 가장 선명하게 보여주는 사례입니다. 5km·10km 레이스용 초경량 플랫으로 보는 게 맞고, 훈련화로 사면 금방 갈아야 합니다.</p>
+
+<p>이 단에서 매직스피드 5와 줌 플라이 6은 정가도 km당 비용도 거의 같아 직접 맞붙는 관계입니다. 둘의 차이는 <a href="/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026">매직스피드 5 vs 줌 플라이 6</a>에서 따로 비교했습니다. 플레이트 없이 같은 값을 내는 대안이 궁금하다면 <a href="/blog/asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026">카본 vs 무플레이트</a> 쪽입니다.</p>
+
+<h2>3. 2단 · 카본 레이서 (26.9~32.9만원) — 대회날의 신발</h2>
+
+<p>대부분의 사람이 "카본화"라고 말할 때 떠올리는 영역입니다. 폼과 플레이트를 반발에 맞춰 짰기 때문에 훈련에 매일 신으면 수명이 급격히 짧아집니다.</p>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-4">푸마 디비에이트 나이트로 엘리트 4</a></td><td>289,000원</td><td>170g</td><td><strong>약 722원</strong></td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro">미즈노 하이퍼워프 프로</a></td><td>319,000원</td><td>201g</td><td>약 798원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-4">사코니 엔돌핀 프로 4</a></td><td>269,000원</td><td>220g</td><td>약 897원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/puma-deviate-nitro-elite-3">푸마 디비에이트 나이트로 엘리트 3</a></td><td>289,000원</td><td>204g</td><td>약 963원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">사코니 엔돌핀 프로 5</a></td><td>299,000원</td><td>206g</td><td>약 997원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/hoka-rocket-x-3">호카 로켓 X 3</a></td><td>299,000원</td><td>220g</td><td>약 997원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-5">브룩스 하이페리온 엘리트 5</a></td><td>299,000원</td><td>204g</td><td>약 997원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC 엘리트 V5</a></td><td>319,000원</td><td>198g</td><td>약 1,063원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/hoka-cielo-x1">호카 씨엘로 X1</a></td><td>329,000원</td><td>208g</td><td>약 1,097원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/on-cloudboom-strike">온 클라우드붐 스트라이크</a></td><td>329,000원</td><td>201g</td><td>약 1,097원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000원</td><td>166g</td><td>약 1,236원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></td><td>329,000원</td><td>205g</td><td>약 1,316원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-edge-plus">아식스 메타스피드 엣지+</a></td><td>329,000원</td><td>208g</td><td>약 1,316원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디제로 아디오스 프로 4</a></td><td>299,000원</td><td>200g</td><td>약 1,495원</td><td>좁음</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p>여기서도 <strong>가격 순서와 km당 순서가 어긋납니다.</strong> 아디오스 프로 4는 299,000원으로 이 단 중간값인데 km당 약 1,495원으로 가장 비싸고, 디비에이트 나이트로 엘리트 4는 289,000원으로 비슷한 값인데 약 722원입니다 — <strong>같은 28~29만원대 안에서 2배</strong>가 벌어집니다.</p>
+
+<p>알파플라이·메타스피드 스카이+·SC 엘리트 V5의 성격 차이는 <a href="/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026">카본 레이서 3파전</a>에서 따로 다뤘습니다. 이 단에서 <strong>와이드가 나오는 건 메타스피드 스카이+·엣지+와 SC 엘리트 V5 셋뿐</strong>입니다.</p>
+
+<h2>4. 3단 · 서브2 최상위 (33.9~39.9만원) — 여기부터는 다른 계산</h2>
+
+<table>
+  <thead>
+    <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite">미즈노 하이퍼워프 엘리트</a></td><td>349,000원</td><td>170g</td><td><strong>약 1,163원</strong></td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트알 나이트로 엘리트 3</a></td><td>379,000원</td><td>173g</td><td>약 1,516원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a></td><td>339,000원</td><td>197g</td><td>약 1,695원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>349,000원</td><td>201g</td><td>약 1,745원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-elite-3">사코니 엔돌핀 엘리트 3</a></td><td>369,000원</td><td>207g</td><td>약 1,845원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a></td><td>399,000원</td><td>129g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure">미즈노 하이퍼워프 퓨어</a></td><td>399,000원</td><td>139g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
+  </tbody>
+</table>
+
+<p>이 단은 <strong>7종 전부 와이드가 없고, 5종이 좁은 토박스</strong>입니다. 무게도 129~207g로 극단에 몰려 있습니다. 메타스피드 레이(129g)와 하이퍼워프 퓨어(139g)는 이 표에서 가장 가벼우면서 km당 비용도 가장 비싼 두 켤레인데, 이 둘이 같은 자리에 있는 게 우연이 아닙니다 — <strong>무게를 깎는다는 건 밑창을 덜 깐다는 뜻</strong>이고, 그 대가가 곧바로 km당 비용으로 돌아옵니다.</p>
+
+<h2>5. 한국 러너를 위한 발볼 지도</h2>
+
+<p>카본화에서 발볼은 입문화보다 훨씬 빡빡합니다. 플레이트가 제 역할을 하려면 발이 신발 안에서 밀리지 않아야 해서, 설계부터 좁게 잡는 경우가 많기 때문입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>30종 중</th><th>내용</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>토박스 넓음</strong></td><td><strong>0종</strong></td><td>없습니다. 입문화에는 5종 있었습니다</td></tr>
+    <tr><td><strong>토박스 좁음</strong></td><td>13종 (43%)</td><td>발볼이 넓다면 대부분 후보에서 빠집니다</td></tr>
+    <tr><td><strong>와이드 옵션 제공</strong></td><td>6종 (20%)</td><td>아래 목록이 전부입니다</td></tr>
+  </tbody>
+</table>
+
+<p><strong>와이드가 나오는 6종</strong> — <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, <a href="/shoes/asics-metaspeed-edge-plus">메타스피드 엣지+</a>, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 V5</a>, <a href="/shoes/new-balance-sc-rebel">SC 리벨 V1</a>, <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 V3</a>, <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a>. 발볼이 넓다면 <strong>여기서 시작하는 게 순서</strong>입니다. 뉴발란스가 셋, 아식스가 둘이라 사실상 두 브랜드가 이 영역을 잡고 있습니다.</p>
+
+<h2>6. 그래서 어느 단부터 사야 하나</h2>
+
+<ol>
+  <li><strong>대회를 아직 안 나간다면</strong> — 카본화 자체가 아직 이릅니다. <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a>를 먼저 보세요.</li>
+  <li><strong>대회를 준비하기 시작했다면 1단(트레이너)</strong> — 훈련에 신으면서 플레이트 감각에 적응할 수 있고, km당 비용이 레이서의 3분의 1 수준입니다.</li>
+  <li><strong>연 2회 이상 기록을 노린다면 2단(레이서)</strong> — 대회날 전용으로 아껴 신는 걸 전제로 합니다.</li>
+  <li><strong>3단은 기록이 신발에 걸려 있을 때</strong> — 40만원에 가까운 값과 짧은 수명을 기록으로 회수할 수 있는 단계에서만 성립합니다.</li>
+</ol>
+
+<p>순서를 건너뛰어서 생기는 가장 흔한 손해는 <strong>레이서를 사서 훈련에 신는 것</strong>입니다. 반발이 좋아 계속 신게 되는데, 그러면 대회 전에 이미 주저앉습니다. 1단과 2단을 한 켤레씩 갖추는 조합이, 2단 두 켤레보다 대체로 싸게 먹힙니다.</p>
+
+<h2>7. 한 걸음 더</h2>
+
+<ul>
+  <li><a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a> — 작동 원리, World Athletics 규정, 적응 기간</li>
+  <li><a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a> — 사기 전 자가진단</li>
+  <li><a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a> — 같은 방식으로 만든 입문 가격대 지도</li>
+  <li><a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">에보 SL — 카본 없는 슈퍼폼</a> — 플레이트 없이 비슷한 값을 노리는 쪽</li>
+  <li>브랜드별 전체 라인업은 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>, <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>, <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a>, <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>, <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> 계급도에 있습니다.</li>
+</ul>
+
+<p><small>※ 가격은 2026년 9월 11일 기준 한국 공식몰 정가입니다. 할인·이전 세대 재고에 따라 실구매가는 달라질 수 있습니다. km당 비용은 정가를 아웃솔 마모 기준 추정 수명으로 나눈 값으로, 자체 랩 실측이 아니라 <strong>모델 간 상대 비교용</strong>입니다. 무게는 US 9(남성) 기준 공개 수치입니다. 트레일용 카본화(메타후지 트레일, 울트라플라이, 테크톤 X 3)는 노면이 달라 이 표에서 제외했습니다.</small></p>
+`,
+  },
+  {
+    id: 'carbon-plate-shoes-guide-2026',
+    slug: 'carbon-plate-shoes-guide-2026',
+    title:
+      '카본 플레이트 러닝화 가이드 2026 — 원리·대회 규정·적응법 | "레이스 전용"이라는 말이 더는 맞지 않는 이유',
+    description:
+      '카본 플레이트가 실제로 무슨 일을 하는지, World Athletics 40mm 규정이 무엇인지, 처음 신을 때 어떻게 적응해야 하는지 정리했습니다. 2025년까지 통하던 "카본화는 레이스 전용"이라는 원칙은 카본 트레이너 등장으로 절반만 맞는 말이 됐습니다. 어떤 모델이 어디쯤 있는지는 카본화 계급도에서 따로 다룹니다.',
+    thumbnail: '/images/blog/carbon-plate-shoes-guide-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-11',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: [
+      '카본 플레이트',
+      '카본화 원리',
+      'World Athletics 규정',
+      '카본화 적응',
+      '슈퍼슈즈',
+      '카본 트레이너',
+      '러닝화 플레이트',
+    ],
+    faqs: [
+      {
+        question: '카본 플레이트는 정확히 무슨 일을 하나요?',
+        answer:
+          '크게 네 가지로 설명됩니다. 첫째, 단단한 판이 휘었다 펴지면서 추진에 쓰이는 힘을 돌려줍니다. 둘째, 발가락 관절이 굽으면서 새어 나가던 힘을 판이 대신 받아 손실을 줄입니다. 셋째, 두꺼운 고반발 폼과 짝을 이뤄 판만으로는 못 내는 반발을 만듭니다. 넷째, 밑창을 곡선으로 깎은 로커 구조와 함께 발이 앞으로 굴러가게 유도합니다. 핵심은 판 혼자가 아니라 폼과의 조합이라는 점입니다.',
+      },
+      {
+        question: '대회에서 못 신는 신발도 있나요?',
+        answer:
+          '있습니다. World Athletics는 로드 종목에서 밑창 두께(스택 높이) 40mm 이하, 플레이트 1개라는 기준을 두고 있습니다. 이 기준을 넘는 신발은 공인 기록이 걸린 대회에서 쓸 수 없습니다. 다만 국내 일반 참가자 대회는 주최 측 규정에 따라 다르고 대부분 문제 삼지 않으므로, 기록 공인이 걸린 경기에 나갈 때만 확인하면 됩니다. 구매 전 확인이 필요하면 해당 모델의 스택 높이를 상세 페이지에서 보세요.',
+      },
+      {
+        question: '카본화는 훈련에 신으면 안 되나요?',
+        answer:
+          '2025년까지는 그 말이 대체로 맞았지만 지금은 절반만 맞습니다. 당시에는 카본화가 곧 레이스용 슈퍼슈즈였는데, 이후 밑창을 두껍게 깔아 훈련용으로 만든 "카본 트레이너"가 각 브랜드에서 나왔습니다. 매직스피드, 줌 플라이, 디비에이트 나이트로, SC 트레이너 같은 계열이 여기 해당합니다. 반면 30만원대 레이서는 여전히 대회날 위주로 쓰는 게 맞습니다. 어느 모델이 어느 쪽인지는 카본화 계급도에 정리해 뒀습니다.',
+      },
+      {
+        question: '처음 신을 때 얼마나 적응해야 하나요?',
+        answer:
+          '일반적으로 권장되는 방식은 4~8주에 걸쳐 단계적으로 늘리는 것입니다. 처음 1~2주는 3~5km 짧은 거리로 감각만 익히고, 3~4주차에 템포런이나 인터벌에 쓰고, 5~6주차에 롱런 일부 구간, 7~8주차에 레이스와 비슷한 조건에서 시험해 보는 순서입니다. 가장 피해야 할 것은 레이스 당일 처음 신는 것입니다. 카본화는 종아리와 아킬레스에 걸리는 부하 위치를 바꾸기 때문에, 적응 없이 풀코스를 뛰면 후반에 문제가 생기기 쉽습니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>카본 플레이트는 혼자 일하지 않습니다</strong> — 두꺼운 고반발 폼과 짝을 이뤘을 때만 값을 합니다. 2017년에 갑자기 터진 이유도 판이 아니라 폼이 따라왔기 때문입니다.</li>
+    <li><strong>대회 규정이 있습니다</strong> — World Athletics 기준 로드 종목 스택 높이 40mm 이하, 플레이트 1개. 기록 공인이 걸린 경기에서만 문제가 됩니다.</li>
+    <li><strong>"카본화는 레이스 전용"은 이제 절반만 맞습니다</strong> — 훈련용으로 설계된 카본 트레이너가 따로 생겼습니다. 적응은 여전히 4~8주가 권장됩니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🧩</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 원리와 규정. 제품 선택은 다른 글에</p>
+    <p>이 글은 <strong>카본화가 무엇인지</strong>를 다룹니다. <strong>어떤 모델을 살지</strong>는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 계급도</a>에서 30종을 가격·무게·km당 비용으로 줄 세워 뒀고, <strong>내가 효과를 볼 체질인지</strong>는 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a>에 자가진단으로 정리돼 있습니다.</p>
+  </div>
+</div>
+
+<h2>1. 카본 플레이트가 하는 일</h2>
+
+<p>미드솔(밑창의 두꺼운 완충층) 안에 얇고 단단한 탄소섬유 판을 넣은 것이 카본 플레이트 러닝화입니다. 이 판이 하는 일은 네 갈래로 설명됩니다.</p>
+
+<ul>
+  <li><strong>에너지 리턴</strong> — 착지에서 판이 휘었다가 발을 밀어낼 때 펴지면서, 눌린 힘의 일부를 추진으로 돌려줍니다.</li>
+  <li><strong>레버 효과</strong> — 달릴 때 발가락 관절이 굽으면서 힘이 새어 나가는데, 판이 그 굽힘을 대신 받아 손실을 줄입니다.</li>
+  <li><strong>폼과의 조합</strong> — 판 혼자서는 그냥 뻣뻣한 신발입니다. 두껍고 잘 튀는 폼 안에 들어갔을 때만 "스프링" 역할이 나옵니다.</li>
+  <li><strong>로커 구조</strong> — 밑창 앞뒤를 곡선으로 깎아, 발이 바닥을 구르듯 앞으로 넘어가게 유도합니다.</li>
+</ul>
+
+<p>여기서 중요한 건 세 번째입니다. <strong>판은 조연이고 폼이 주연에 가깝습니다.</strong> 실제로 플레이트 없이 폼만으로 비슷한 값을 노리는 신발도 있는데, 그 접근은 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">에보 SL</a> 같은 모델에서 볼 수 있습니다.</p>
+
+<h2>2. 왜 하필 2017년이었나</h2>
+
+<p>카본 플레이트를 신발에 넣는 아이디어 자체는 새롭지 않습니다. 1990년대에도 실험적인 시도가 있었지만 널리 퍼지지 못했습니다. 당시엔 <strong>판을 감쌀 만한 폼이 없었기</strong> 때문입니다.</p>
+
+<p>2017년의 변화는 판이 아니라 폼에서 왔습니다. PEBA 계열 소재가 들어오면서 기존 EVA 폼보다 훨씬 가볍고 잘 튀는 미드솔을 두껍게 쌓을 수 있게 됐고, 그 안에 판을 넣자 비로소 조합이 작동했습니다. 이후 세계 기록이 잇달아 경신되면서 <strong>"기술 도핑인가 혁신인가"</strong>라는 논쟁이 붙었고, 그 결과로 나온 것이 아래 규정입니다.</p>
+
+<p>폼과 플레이트 소재 자체를 더 깊게 보고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>에 카본·유리섬유·나일론의 차이가 정리돼 있습니다.</p>
+
+<h2>3. World Athletics 규정 — 대회에서 신을 수 있는 신발</h2>
+
+<p>세계육상연맹은 논쟁 이후 로드 종목에 두 가지 기준을 세웠습니다.</p>
+
+<ul>
+  <li><strong>스택 높이 40mm 이하</strong> — 밑창 두께 상한입니다.</li>
+  <li><strong>플레이트 1개</strong> — 판을 여러 장 겹치는 것을 막습니다.</li>
+</ul>
+
+<p>이 기준을 넘는 신발은 <strong>공인 기록이 걸린 대회</strong>에서 쓸 수 없습니다. 실제로 시중에는 40mm를 넘기면서 "훈련용·비공인 레이스용"을 표방하는 맥시멀 모델도 있습니다.</p>
+
+<p>다만 <strong>한국의 일반 참가자 대회 대부분은 이 규정을 직접 문제 삼지 않습니다.</strong> 주최 측 요강에 따르는 것이 원칙이므로, 기록 공인이 걸린 경기에 나가는 경우에만 확인하면 됩니다. 신발별 스택 높이는 각 <a href="/shoes/nike-alphafly-3">상세 페이지</a>의 스펙에서 볼 수 있습니다.</p>
+
+<h2>4. "레이스 전용"이라는 말이 더는 다 맞지 않는 이유</h2>
+
+<p>2025년까지 카본화 조언의 기본값은 <strong>"레이스용이다, 훈련에 매일 신지 마라"</strong>였습니다. 그때는 카본화가 곧 30만원대 슈퍼슈즈였으니 맞는 말이었습니다.</p>
+
+<p>지금은 사정이 달라졌습니다. 각 브랜드가 <strong>밑창을 두껍게 깔고 반발을 순하게 만든 훈련용 카본</strong>을 따로 내놓았습니다. 아식스 매직스피드, 나이키 줌 플라이, 푸마 디비에이트 나이트로, 뉴발란스 SC 트레이너 같은 계열입니다. 이들은 매주 신는 것을 전제로 설계됐습니다.</p>
+
+<p>그래서 지금 맞는 조언은 이렇게 갈립니다.</p>
+
+<ul>
+  <li><strong>카본 트레이너</strong> — 훈련에 신으라고 만든 신발입니다. 카본 감각에 적응하는 용도로도 이쪽이 맞습니다.</li>
+  <li><strong>레이서·최상위</strong> — 여전히 대회날 위주입니다. 반발에 맞춰 폼을 무르게 짰기 때문에, 훈련에 매일 신으면 정작 대회 전에 주저앉습니다.</li>
+</ul>
+
+<p>어느 모델이 어느 쪽이고 실제 비용이 얼마나 차이 나는지는 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 계급도</a>에 30종을 줄 세워 정리했습니다.</p>
+
+<h2>5. 적응 — 레이스 당일 처음 신지 않기</h2>
+
+<p>카본화는 일반 러닝화와 발에 걸리는 부하 위치가 다릅니다. 처음 신으면 어색하거나 불안정하게 느껴지는 것이 보통이고, 특히 <strong>종아리와 아킬레스</strong>에 부담이 몰리는 경우가 많습니다.</p>
+
+<p>흔히 권장되는 적응 방식은 <strong>4~8주에 걸친 단계적 도입</strong>입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>시기</th><th>어떻게</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>1~2주차</strong></td><td>3~5km 짧은 거리로 감각만 익힙니다</td></tr>
+    <tr><td><strong>3~4주차</strong></td><td>템포런·인터벌 같은 빠른 훈련에 씁니다</td></tr>
+    <tr><td><strong>5~6주차</strong></td><td>롱런의 일부 구간에서 신어 봅니다</td></tr>
+    <tr><td><strong>7~8주차</strong></td><td>레이스와 비슷한 조건에서 시험합니다</td></tr>
+  </tbody>
+</table>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">레이스 당일 처음 신는 것이 가장 흔한 실수입니다</p>
+    <p>새 카본화를 대회 아침에 꺼내 신는 경우가 의외로 많습니다. 적응 없이 풀코스를 뛰면 후반에 종아리가 먼저 무너지는 일이 잦습니다. 급격한 신발 전환이 중족부 부하를 바꾼다는 점은 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a>에서도 다룬 내용입니다. <strong>최소한 레이스 전 스피드 훈련 2~3회는 같은 신발로 소화하세요.</strong></p>
+  </div>
+</div>
+
+<h2>6. 그래서 나에게 필요한가</h2>
+
+<p>이 글은 원리와 규정을 다루는 자리라, "효과가 얼마나 되는가"는 다루지 않습니다. 효과는 <strong>개인차와 페이스에 크게 좌우된다</strong>는 점이 반복해서 보고돼 왔고, 그 근거와 자가진단은 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a>에 따로 정리했습니다. 사기 전에 그 글을 먼저 보시길 권합니다.</p>
+
+<p>살 단계가 됐다면 순서는 이렇습니다.</p>
+
+<ol>
+  <li><a href="/blog/carbon-shoes-not-for-everyone-2026">자가진단</a>으로 내가 효과를 볼 쪽인지 확인</li>
+  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">계급도</a>에서 트레이너·레이서·최상위 중 내 단계 고르기</li>
+  <li>발볼 확인 — 카본화는 전반적으로 좁습니다. 와이드가 나오는 모델은 많지 않습니다</li>
+  <li>4~8주 적응 계획 세우기</li>
+</ol>
+
+<p>아직 첫 러닝화 단계라면 카본은 이릅니다. <a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a>부터 보세요.</p>
+
+<p><small>※ World Athletics 규정은 로드 종목 기준이며 트랙 종목은 세부 기준이 다릅니다. 국내 대회 적용 여부는 각 대회 요강을 확인하세요. 적응 기간 4~8주는 널리 통용되는 권장안으로, 개인의 주력·부상 이력에 따라 달라집니다. 이 글은 일반적인 정리이며 의학적 조언이 아닙니다.</small></p>
+`,
+  },
+  {
     id: 'beginner-running-shoes-lineup-tier-guide-2026',
     slug: 'beginner-running-shoes-lineup-tier-guide-2026',
     title:
