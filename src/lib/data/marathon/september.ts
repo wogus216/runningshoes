@@ -261,10 +261,15 @@ export const septemberEvents: MarathonEvent[] = [
       startTime: '08:00',
     },
     raceKit: {
-      items: ['티셔츠', '메달', '배번호'],
-      pending:
-        '메달·배번호 디자인은 공식 홈페이지에 "추후공개"로 표기(2026-08-29 확인). 동마클럽 매니아 참가자는 티셔츠를 지급받지 않습니다',
-      verifiedAt: '2026-08-29',
+      items: ['티셔츠(아디다스)', '완주메달', '배번호'],
+      images: [
+        {
+          src: '/images/marathon/gongju-baekje-marathon-2026/kit-1.webp',
+          alt: '2026 공주백제마라톤 완주메달 — 공식 예시 이미지(이름·기록·색상 등 변경 가능 고지)',
+        },
+      ],
+      pending: '배번호 디자인은 부문·그룹별 예시만 공개(2026-09-09 확인), 실제 배번호는 참가자 개별 지급 시 확정',
+      verifiedAt: '2026-09-09',
     },
     registrationStart: '2026-05-21',
     registrationNote:

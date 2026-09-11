@@ -9,6 +9,7 @@
 
 | 대회 (event id) | 파일 | 출처 URL |
 |---|---|---|
+| gongju-baekje-marathon-2026 | kit-1 | cdn.imweb.me (gongjumarathon.com 공식 홈 "기념품" 페이지, 2026-09-09 게시) — 완주메달, 이름·기록은 예시 |
 | danyang-moonlight-race-2026 | kit-1 | http://danyangmarathon.kr/assets/souvenir.jpg |
 | ansan-marathon-2026 | kit-1,2 | https://ansanrun.com/2026gi/hm2.jpg · /2026gi/52.jpg |
 | run-seoul-run-2026 | kit-1~3 | cdn.imweb.me (runseoulrun.com 공식 접수처 게시) |
