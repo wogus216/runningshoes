@@ -122,5 +122,8 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['saucony-triumph-24', 'saucony-hurricane-26', 'saucony-endorphin-trainer'],
+  relatedPosts: [
+    { slug: 'saucony-paramount-max-review', title: '파라마운트 맥스 후기 — 302g, 호카 본디 9와 같은 체급' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+파라마운트+맥스' }],
 };
