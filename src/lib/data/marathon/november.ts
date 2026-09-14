@@ -442,7 +442,7 @@ export const novemberEvents: MarathonEvent[] = [
     location: '조천체육관 (제주 제주시)',
     region: '제주',
     distances: ['풀코스', '하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://marathon.ihalla.com/',
     registrationStart: '2026-07-06',
@@ -451,7 +451,9 @@ export const novemberEvents: MarathonEvent[] = [
       pending: '기념품 안내 페이지가 준비중 — 품목 미공개 (2026-08-27 확인)',
       verifiedAt: '2026-08-27',
     },
-    lastVerified: '2026-08-27',
+    lastVerified: '2026-09-14',
+    registrationNote:
+      '접수 종료 — 2026-09-14 공식 홈(marathon.ihalla.com) 확인. ⚠️ 마감일 표기가 엇갈립니다: 공식 홈 메인은 "접수마감 2026년 07월 17일"로 적고 있는데 이 DB에는 9월 11일로 들어와 있었습니다(2026-08-27 기입). 어느 쪽이 맞든 오늘 기준 두 날짜 모두 지나 접수는 닫혔습니다. registrationEnd 는 근거를 확인하기 전까지 기존 값을 유지합니다 — 공식 카운터가 8월 초 시점에 멈춰 있어 페이지 자체가 낡았을 가능성도 있습니다.',
     description:
       '한라일보가 주최하는 제주 대표 가을 대회로 풀·하프·10K를 운영합니다. 정식 명칭은 제주감귤국제마라톤대회. 감귤 수확철 제주 동부 해안과 중산간을 달리는 코스이며, 접수는 7월 6일~9월 11일입니다. 제한시간은 풀 5시간·하프 2시간 30분·10km 1시간 30분이고, 유아·초중고생은 30% 할인됩니다.',
     raceInfo: {
