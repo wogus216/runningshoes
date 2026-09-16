@@ -81,11 +81,11 @@ export const MAJOR_DEADLINES = {
   chicago2026: {
     name: '시카고마라톤 2026',
     raceDate: '2026-10-11',
-    statusLabel: '추첨 마감 · 자선 ~9/15 · 투어 마감(8/16)',
+    statusLabel: '전 경로 마감 — 추첨·자선(9/15)·투어(8/16) 종료 · 대회 10/11',
     charity: { close: '2026-09-15', minFundUsd: 2200 },
     tourClose: '2026-08-16',
     intlEligible: true,
-    note: '완전 평지 = PB/BQ 최적. 2027 추첨은 2026년 10월 말 오픈 예정.',
+    note: '완전 평지 = PB/BQ 최적. 2026 대회는 10월 11일이며 참가 경로가 모두 닫혔습니다(자선 9/15 마감 경과, 2026-09-16 기준). 지금 지원할 수 있는 건 2027 대회이고, 추첨은 2026년 10월 말 오픈 예정입니다.',
   },
   boston2027: {
     name: '보스턴마라톤 2027',
