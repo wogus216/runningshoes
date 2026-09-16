@@ -928,11 +928,11 @@ export const octoberEvents: MarathonEvent[] = [
     location: '하남 미사경정공원 (경기 하남시)',
     region: '경기',
     distances: ['10K', '5K'],
-    status: '접수예정',
+    status: '접수중',
     isMajor: false,
     registrationStart: '2026-09-14',
     registrationEnd: '2026-10-15',
-    lastVerified: '2026-09-10',
+    lastVerified: '2026-09-16',
     description:
       '공룡을 테마로 한 콘셉트 러닝 대회로, 지난해는 안전상의 이유로 오프라인 개최가 취소됐던 대회입니다. 2026년 대회는 10월 25일(일) 오전 8시부터 오후 12시 30분까지 하남 미사경정공원에서 10km·5km 두 종목으로 열립니다. 접수는 9월 14일(월)부터 10월 15일(목)까지이고, 참가 티켓은 9월 14일부터 카카오톡 선물하기를 통해서만 판매됩니다(일반 온라인 접수 페이지 별도 공지 없음). 참가비는 10km 80,000원·5km 70,000원입니다. 코스 상세와 출발 시각별 그룹 편성, 주최사는 아직 공개되지 않았습니다.',
     raceInfo: {
