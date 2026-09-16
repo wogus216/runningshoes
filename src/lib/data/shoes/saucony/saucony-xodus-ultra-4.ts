@@ -122,5 +122,5 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['saucony-peregrine-16', 'hoka-speedgoat-7', 'salomon-ultra-glide-4'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+엑소더스+울트라+4' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+엑소더스+울트라+4' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZmcRmVhc' }],
 };

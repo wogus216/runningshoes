@@ -103,5 +103,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'bondi-9-vs-glycerin-max-2-cushion-2026', title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GM36EYXT' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GM36EYXT' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YA29QMeW' }],
 };

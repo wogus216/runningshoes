@@ -108,5 +108,5 @@ export const shoe: Shoe = {
     { slug: 'saucony-running-shoes-lineup-tier-guide-2026', title: '써코니 러닝화 계급도' },
     { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZkPEWQq4' }],
 };

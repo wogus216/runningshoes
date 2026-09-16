@@ -105,5 +105,5 @@ export const shoe: Shoe = {
     { slug: 'nike-pegasus-premium-vs-vomero-18', title: '페가수스 프리미엄 vs 보메로 18 — 같은 ZoomX, 9만원 차이' },
     { slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026', title: '페가수스 프리미엄 vs 벨로시티 4 — 10만원 비싼데 84g 무겁다' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FW05kgCI' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5ajbWFsp' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YWLNjZ4C' }],
 };

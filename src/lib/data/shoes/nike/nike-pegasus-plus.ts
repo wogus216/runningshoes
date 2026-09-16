@@ -95,5 +95,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-pegasus-41', 'nike-pegasus-premium'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FNIVA3p5' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5jXKodXH' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YV6p8ZBA' }],
 };

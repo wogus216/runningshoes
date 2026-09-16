@@ -24,7 +24,9 @@
     "naver:rank": "tsx scripts/naver-rank.ts",
     "gsc:pages": "tsx scripts/gsc-pages.ts",
     "popular": "tsx scripts/ga-popular.ts",
-    "course:scan": "tsx scripts/course-map/scan-sources.ts"
+    "course:scan": "tsx scripts/course-map/scan-sources.ts",
+    "links:fetch": "node scripts/fetch-naver-issued.mjs",
+    "links:check": "tsx scripts/check-purchase-links.ts"
   },
   "dependencies": {
     "@google-analytics/data": "^6.1.0",

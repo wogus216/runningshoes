@@ -86,5 +86,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['asics-metafuji-trail', 'nike-ultrafly'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5c8NGYoA' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5Jqx93HC' }],
 };

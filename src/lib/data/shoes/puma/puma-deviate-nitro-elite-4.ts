@@ -125,5 +125,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=푸마+데비에이트+니트로+엘리트+4' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FYrNb0VX' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y9LMXOdU' }],
 };

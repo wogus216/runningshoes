@@ -108,8 +108,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
   ],
-  purchaseLinks: [
-    { store: '네이버', url: 'https://naver.me/GhwHPxQp' },
-    { store: '푸마 공식', url: 'https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html' },
-  ],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GhwHPxQp'}, { store: '푸마 공식', url: 'https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Zatu6Ulo' }],
 };

@@ -98,5 +98,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-pegasus-premium', 'hoka-clifton-10'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GWWzoMpq' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5vJliDsn' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YoNhfJZY' }],
 };

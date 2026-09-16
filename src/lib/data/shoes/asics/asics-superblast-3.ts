@@ -110,5 +110,5 @@ export const shoe: Shoe = {
     { slug: 'asics-superblast-2-vs-3-comparison', title: '슈퍼블라스트 2 vs 3 — 세대 비교' },
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5PWBjalA' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5PWBjalA' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Yyku9ido' }],
 };

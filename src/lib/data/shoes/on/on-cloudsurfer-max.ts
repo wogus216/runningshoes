@@ -102,5 +102,5 @@ export const shoe: Shoe = {
     landingPattern: '미드풋~힐스트라이크',
   },
   similarShoes: ['asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-1080-v15'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드서퍼+맥스' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5g4H49D6' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y7IFvwCy' }],
 };

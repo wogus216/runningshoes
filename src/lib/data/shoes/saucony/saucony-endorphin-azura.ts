@@ -103,5 +103,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['adidas-adizero-evo-sl', 'new-balance-rebel-v5', 'puma-velocity-nitro-4', 'saucony-endorphin-speed-5'],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZeyJm3Cm' }],
 };

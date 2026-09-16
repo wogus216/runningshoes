@@ -97,5 +97,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-zoom-fly-6', 'saucony-endorphin-speed-5', 'new-balance-sc-trainer-v3'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GnRnwT4x' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GnRnwT4x' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YxEs1B6q' }],
 };

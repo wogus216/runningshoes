@@ -116,5 +116,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['new-balance-1080-v15', 'new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GrghghAW' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GrghghAW' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YQEe4HD2' }],
 };

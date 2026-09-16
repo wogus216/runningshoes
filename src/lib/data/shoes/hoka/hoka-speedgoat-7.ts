@@ -92,7 +92,7 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['hoka-speedgoat-6', 'adidas-terrex-agravic-4', 'asics-metafuji-trail'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F93cpbLs' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/I5wVhSCe' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YGuqedZ6' }],
   relatedPosts: [
     { slug: 'hoka-speedgoat-6-vs-7-comparison-2026', title: '스피드고트 6 vs 7 — 세대 비교' },
     { slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 메타후지 트레일' },

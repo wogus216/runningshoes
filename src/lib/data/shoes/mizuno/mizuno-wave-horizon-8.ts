@@ -102,5 +102,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YJQEHI6u' }],
 };

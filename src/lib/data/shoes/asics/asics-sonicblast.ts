@@ -120,7 +120,7 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['asics-sonicblast-2', 'asics-superblast-3', 'asics-megablast', 'saucony-endorphin-speed-5'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5IiG2z0P' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5IiG2z0P' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YwYegQXQ' }],
   relatedPosts: [
     { slug: 'asics-sonicblast-review-2026', title: '아식스 소닉블라스트 후기' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },

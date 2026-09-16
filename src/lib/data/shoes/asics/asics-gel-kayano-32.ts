@@ -100,5 +100,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026', title: '사탕수수·피마자 폼 — 바이오 러닝화 추적' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GxLH2kjm' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F93JaTG9' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YqQiSGgS' }],
 };

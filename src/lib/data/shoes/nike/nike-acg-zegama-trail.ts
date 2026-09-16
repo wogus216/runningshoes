@@ -92,4 +92,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'nike-acg-zegama-trail-review-2026', title: 'ACG 제가마 트레일 후기' },
   ],
+  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YTmZjVRY' }],
 };

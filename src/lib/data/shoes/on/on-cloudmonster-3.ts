@@ -107,5 +107,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 상위 라인은 뭐가 다른가' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드몬스터+3' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FwGUGiSl' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y4ZrVOUe' }],
 };

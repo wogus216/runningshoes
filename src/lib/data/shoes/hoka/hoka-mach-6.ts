@@ -103,5 +103,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfwsEh' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfwsEh' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YEskxTzw' }],
 };

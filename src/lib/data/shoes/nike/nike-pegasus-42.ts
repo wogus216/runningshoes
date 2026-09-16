@@ -120,5 +120,5 @@ export const shoe: Shoe = {
     { slug: 'nike-pegasus-42-review', title: '페가수스 42 심층 후기' },
     { slug: 'nike-pegasus-premium-vs-vomero-18', title: '페가수스 프리미엄 vs 보메로 18' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xG0f5GZl' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xG0f5GZl' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YVpBLvnE' }],
 };

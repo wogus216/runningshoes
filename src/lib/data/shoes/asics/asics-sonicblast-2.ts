@@ -108,4 +108,5 @@ export const shoe: Shoe = {
     },
   ],
   similarShoes: ['asics-sonicblast', 'asics-megablast', 'new-balance-sc-rebel', 'asics-superblast-3', 'saucony-endorphin-speed-6'],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/IGsHD4kO' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Ywh7e3Pg' }],
 };

@@ -111,5 +111,5 @@ export const shoe: Shoe = {
     { slug: 'puma-deviate-nitro-3-vs-4-comparison', title: '디비에이트 나이트로 3 vs 4' },
     { slug: 'puma-running-shoes-lineup-tier-guide-2026', title: '푸마 러닝화 계급도' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZ9hMP' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G6R1Anvw' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZcvtSdhs' }],
 };

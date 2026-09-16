@@ -113,5 +113,5 @@ export const shoe: Shoe = {
     { slug: 'nike-pegasus-41-vs-42-comparison', title: '페가수스 41 vs 42 — 세대 비교' },
     { slug: 'first-running-shoe-guide-2026', title: '첫 러닝화 완벽 가이드' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FxCvSGHY' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5eDHQ0w3' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YUKD3sNU' }],
 };

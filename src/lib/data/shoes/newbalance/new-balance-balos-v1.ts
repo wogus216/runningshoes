@@ -102,5 +102,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['new-balance-1080-v15', 'asics-novablast-5', 'hoka-mach-6', 'saucony-endorphin-azura'],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YRknuuPs' }],
 };

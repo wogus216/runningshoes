@@ -99,5 +99,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-rival-fly-4', 'saucony-kinvara-16'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FE3AfoAm' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FE3AfoAm' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YmJGppgO' }],
 };

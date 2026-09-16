@@ -98,5 +98,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'nike-vomero-18-vs-vomero-plus-max-cushion-2026', title: '보메로 18 vs 보메로 플러스 — 3만원이 사는 건 앞발' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5FEWi6hH' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/Faeh6rMC' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y1xkHLEW' }],
 };

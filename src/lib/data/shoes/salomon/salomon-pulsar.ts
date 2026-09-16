@@ -92,7 +92,7 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['hoka-speedgoat-6', 'salomon-ultra-glide-4'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GahbTKXI' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GahbTKXI' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Zdb4gVdA' }],
   relatedPosts: [
     { slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 메타후지 트레일' },
     { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },

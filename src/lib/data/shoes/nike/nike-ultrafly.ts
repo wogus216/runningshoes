@@ -91,5 +91,5 @@ export const shoe: Shoe = {
     { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5jXn3l3X' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5jXn3l3X' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YZuBFQwm' }],
 };

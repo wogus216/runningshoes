@@ -108,5 +108,5 @@ export const shoe: Shoe = {
     { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GuDSfLaW' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GuDSfLaW' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZgBi24J2' }],
 };

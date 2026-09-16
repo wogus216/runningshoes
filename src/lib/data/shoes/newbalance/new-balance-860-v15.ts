@@ -109,5 +109,5 @@ export const shoe: Shoe = {
     { slug: 'new-balance-860-v14-vs-v15-comparison', title: '860 v14 vs v15 — 세대 비교' },
     { slug: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026', title: '카야노33 vs 글리세린GTS22 vs 860 v15 — 안정화 3강' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GowyA70j' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GowyA70j' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YPX3MVyu' }],
 };

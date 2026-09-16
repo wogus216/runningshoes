@@ -96,5 +96,5 @@ export const shoe: Shoe = {
     { slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026', title: '웨이브 라이더 29 vs 페가수스 42 — 같은 값 대결' },
     { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F2nAQfXh' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F2nAQfXh' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YLTaBarA' }],
 };

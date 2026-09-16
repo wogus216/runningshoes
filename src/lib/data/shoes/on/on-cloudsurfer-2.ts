@@ -106,5 +106,5 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-novablast-5'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xumQduZr' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xumQduZr' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y62oSWHc' }],
 };

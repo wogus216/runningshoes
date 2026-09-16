@@ -97,7 +97,7 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max', 'asics-sonicblast'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZwq76' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x2cZwq76' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YuffW3mm' }],
   relatedPosts: [
     { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '메가블라스트 vs 보메로 18 — 둘 다 쿠션 10점, 80g 차' },
     { slug: 'asics-megablast-review-2026', title: '아식스 메가블라스트 후기 — 힐 45.1mm에 218g' },

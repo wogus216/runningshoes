@@ -92,5 +92,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['hoka-speedgoat-6', 'adidas-terrex-agravic-speed-ultra'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xqb1ojvL' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xqb1ojvL' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZdU7nO8q' }],
 };

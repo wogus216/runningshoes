@@ -90,5 +90,5 @@ export const shoe: Shoe = {
     { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },
     { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FkarcfZr' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FkarcfZr' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YqaHMs9s' }],
 };

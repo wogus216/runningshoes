@@ -101,5 +101,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-vomero-plus', 'nike-vomero-18'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GuDSmTFv' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5ajbW7Mw' }],
 };

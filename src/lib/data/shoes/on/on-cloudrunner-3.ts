@@ -102,5 +102,5 @@ export const shoe: Shoe = {
     landingPattern: '힐스트라이크 중심',
   },
   similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'nike-structure-26'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=온러닝+클라우드러너+3' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5CC8C7yv' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y6lQtqFw' }],
 };

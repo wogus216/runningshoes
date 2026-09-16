@@ -131,5 +131,5 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'brooks-ghost-18-review', title: '고스트 18 후기 — 17세대와 무엇이 달라졌나' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=브룩스+고스트18' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=브룩스+고스트18' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YzGqWYVx' }],
 };

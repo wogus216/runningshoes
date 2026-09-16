@@ -104,5 +104,5 @@ export const shoe: Shoe = {
   ],
 
   similarShoes: ['hoka-mach-6', 'nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xy7L7Ihl' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xy7L7Ihl' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZjoxbBi8' }],
 };

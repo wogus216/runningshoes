@@ -135,4 +135,5 @@ export const shoe: Shoe = {
     '2026년 1월 적토마 9 가족(Ultra·PRO·베이스) 동시 출시 중 베이스 모델입니다. 신상 + 비주류 브랜드라 RunRepeat 등 독립 랩 데이터가 없고, 무게(약 320g/CN40)·드롭(9mm)은 识货 커뮤니티 실측, 스택 수치는 공식 미공개라 드롭 기반 추정치입니다(detailedSpecs에 추정 표기). 9 Ultra(유리섬유 플레이트 맥스쿠션)·9 PRO(TPU 데일리)와 달리 베이스는 단층 폼 무플레이트 입문 트레이너이며, 전족 와이드 설계로 발볼 넓은 러너 적합성이 형제 모델보다 높습니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 전족 와이드 설계라 적토마 9 시리즈 중 발볼 넓은 러너에게 가장 잘 맞습니다. 병행가 95,000원에 내구성 600km 기준 km당 약 158원으로, 입문화 중 압도적 가성비입니다. 정식 유통·AS를 원하면 클리프턴 10이나 880 V15가 비슷한 입문 쿠션화 대안입니다.',
 
   similarShoes: ['li-ning-red-hare-9-pro', 'hoka-clifton-10', 'new-balance-880-v15'],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xQJkGrY4' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YHN5MIhg' }],
 };

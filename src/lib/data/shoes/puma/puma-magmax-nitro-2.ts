@@ -106,5 +106,5 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
-  purchaseLinks: [],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5OldpCvg' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Za8o8aei' }],
 };

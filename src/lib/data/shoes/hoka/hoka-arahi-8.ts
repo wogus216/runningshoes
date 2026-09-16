@@ -95,5 +95,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'saucony-guide-18', 'new-balance-860-v14'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC6kvVq' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xXnyvCTB' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YBJBjGKa' }],
 };

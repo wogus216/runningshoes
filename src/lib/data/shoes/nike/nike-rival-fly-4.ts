@@ -95,5 +95,5 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['asics-magic-speed-4', 'new-balance-rebel-v5', 'saucony-kinvara-16'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC64J5r' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FjC64J5r' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YXr0yYs8' }],
 };

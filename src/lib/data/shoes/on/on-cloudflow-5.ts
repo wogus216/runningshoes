@@ -103,5 +103,5 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['saucony-kinvara-16', 'adidas-boston-13', 'nike-pegasus-41'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5qcGx7yW' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5qcGx7yW' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y3C751em' }],
 };

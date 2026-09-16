@@ -108,5 +108,5 @@ export const shoe: Shoe = {
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
     { slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026', title: '사탕수수·피마자 폼 — 바이오 러닝화 추적' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/Fc5D2chz' }],
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/Fc5D2chz' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y2WD3Rhk' }],
 };
