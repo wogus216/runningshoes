@@ -9,6 +9,7 @@ export const shoe: Shoe = {
   rating: 4.5,
   price: 219000,
   status: 'new',
+  image: '/images/shoes/nike/pegasus-plus-2/side.webp',
   description:
     '1세대의 약점이던 미드풋 고정과 좁은 토박스를 손보고, 전족부에 노출형 에어 줌 유닛을 새로 넣은 템포 트레이너. 스택은 38/28mm로 높아졌고 한국 정가는 219,000원(나이키 코리아, 2026-09-03 기준 "출시 예정")입니다.',
   oneliner: 'ZoomX에 전족부 에어 줌을 더한 2세대 — 핏은 확 좋아졌고 성격은 데일리에 가깝다',

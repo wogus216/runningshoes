@@ -9,6 +9,15 @@ export const shoe: Shoe = {
   rating: 4.5,
   status: 'new',
   price: 229000,
+  image: '/images/shoes/asics/sonicblast2/side.webp',
+  images: [
+    '/images/shoes/asics/sonicblast2/side.webp',
+    '/images/shoes/asics/sonicblast2/angle.webp',
+    '/images/shoes/asics/sonicblast2/front.webp',
+    '/images/shoes/asics/sonicblast2/back.webp',
+    '/images/shoes/asics/sonicblast2/top.webp',
+    '/images/shoes/asics/sonicblast2/outsole.webp',
+  ],
   description:
     '아식스 Blast 계열에서 유일하게 플레이트가 들어가는 소닉블라스트의 2세대. 갈래진 포크형 ASTROPLATE와 전족부 트램폴린 포드를 새로 넣고 약 14g 가벼워졌습니다. 9월 1일 글로벌 출시됐고, 한국은 아식스코리아 RISE & SHINE 컬렉션으로 9월 8~9일 정식 출시돼 공식몰에 229,000원(1세대와 동일가)으로 등재됐습니다(2026-09-11 asics.co.kr 확인 — 남성 255~290, 여성 230~255).',
   oneliner: '1세대의 둔한 뒤꿈치를 고친 46mm 템포 트레이너 — 9월 한국 출시, 229,000원',
