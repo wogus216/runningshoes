@@ -101,6 +101,8 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2'],
   relatedPosts: [
+    { slug: 'pegasus-42-vs-premium-daily-2026', title: '페가수스 42 vs 프리미엄 — 11만원 차이로 와이드가 사라진다' },
+    { slug: 'nike-pegasus-premium-vs-vomero-18', title: '페가수스 프리미엄 vs 보메로 18 — 같은 ZoomX, 9만원 차이' },
     { slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026', title: '페가수스 프리미엄 vs 벨로시티 4 — 10만원 비싼데 84g 무겁다' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FW05kgCI' }],
