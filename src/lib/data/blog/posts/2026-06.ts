@@ -3622,7 +3622,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>Amplifoam (EVA)</strong></td><td>가성비 입문</td><td>젤 벤처</td></tr>
     <tr><td><strong>FF Blast+ / Plus</strong></td><td>안정적 데일리·쿠션</td><td>님버스 · 카야노</td></tr>
     <tr><td><strong>FF Blast Max</strong></td><td>바운시 데일리</td><td>노바블라스트</td></tr>
-    <tr><td><strong>FF Blast Turbo</strong></td><td>맥시멀 경량</td><td>메가블라스트</td></tr>
+    <tr><td><strong>FF Turbo² (A-TPU)</strong></td><td>맥시멀 경량</td><td>메가블라스트</td></tr>
     <tr><td><strong>FF Turbo+ (PEBA)</strong></td><td>레이싱 최상위 반발</td><td>슈퍼블라스트 · 메타스피드</td></tr>
     <tr><td><strong>FF Leap</strong></td><td>신세대 경량 폼</td><td>슈퍼블라스트 3 · 매직스피드 5 · 메타스피드 레이</td></tr>
   </tbody>
@@ -3650,7 +3650,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
     <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>239g</td><td>239g, 더 부드러운 롱런</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>메타후지 트레일</strong></a></td><td>트레일 레이싱</td><td>FF Turbo · 카본</td><td>27.9만</td><td>258g</td><td>카본 트레일 레이서</td></tr>
-    <tr><td><a href="/shoes/asics-megablast"><strong>메가블라스트</strong></a></td><td>맥시멀 바운시</td><td>FF Blast Turbo</td><td>29.9만</td><td>218g</td><td>48mm인데 218g, 구름 위 달리기</td></tr>
+    <tr><td><a href="/shoes/asics-megablast"><strong>메가블라스트</strong></a></td><td>맥시멀 바운시</td><td>FF Turbo²</td><td>29.9만</td><td>218g</td><td>힐 45.1mm에 218g, 구름 위 달리기</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-sky-plus"><strong>메타스피드 스카이+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>205g</td><td>스트라이드(보폭) 서브3</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-edge-plus"><strong>메타스피드 엣지+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>208g</td><td>케이던스(피치) 슈퍼슈즈</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-ray"><strong>메타스피드 레이</strong></a></td><td>초경량 레이싱</td><td>FF Leap (ATPU)</td><td>39.9만</td><td>129g</td><td>129g, 81% 에너지 전족 특화</td></tr>
