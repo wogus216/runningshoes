@@ -1369,7 +1369,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/mizuno-hyperwarp-elite">미즈노 하이퍼워프 엘리트</a></td><td>349,000원</td><td>170g</td><td><strong>약 1,163원</strong></td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트알 나이트로 엘리트 3</a></td><td>379,000원</td><td>173g</td><td>약 1,516원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a></td><td>339,000원</td><td>197g</td><td>약 1,695원</td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>349,000원</td><td>201g</td><td>약 1,745원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000원</td><td>201g</td><td>약 1,695원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-3">사코니 엔돌핀 엘리트 3</a></td><td>369,000원</td><td>207g</td><td>약 1,845원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a></td><td>399,000원</td><td>129g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/mizuno-hyperwarp-pure">미즈노 하이퍼워프 퓨어</a></td><td>399,000원</td><td>139g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
@@ -2348,7 +2348,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>가격 대비 가치 — 3만원 비싸지만 17g 가볍다</h2>
-<p>379,000원은 알파플라이 3(349,000원)보다 3만원 비싸지만, 순수 무게에서 확실히 앞섭니다. 250km 내구성 기준 km당 약 1,516원으로 이 사이트가 다룬 레이싱화 중 가장 비싼 운용 비용입니다 — <strong>서브3:00을 목표로 하는 레이스 당일에만 신는다는 전제가 아니면 가성비를 논하기 어려운 신발</strong>입니다. 접근성을 원한다면 <a href="/shoes/asics-metaspeed-edge-plus">메타스피드 엣지+</a>나 발볼 여유가 있는 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 V5</a>를 비교해보세요.</p>
+<p>379,000원은 알파플라이 3(339,000원)보다 4만원 비싸지만, 순수 무게에서 확실히 앞섭니다. 250km 내구성 기준 km당 약 1,516원으로 이 사이트가 다룬 레이싱화 중 가장 비싼 운용 비용입니다 — <strong>서브3:00을 목표로 하는 레이스 당일에만 신는다는 전제가 아니면 가성비를 논하기 어려운 신발</strong>입니다. 접근성을 원한다면 <a href="/shoes/asics-metaspeed-edge-plus">메타스피드 엣지+</a>나 발볼 여유가 있는 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 V5</a>를 비교해보세요.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -3129,7 +3129,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>가격 대비 가치</h2>
-<p>299,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(349,000원)보다 5만원 저렴합니다. 300km 내구성 기준 km당 약 997원이고, 2~3번 레이스에 활용 가능합니다.</p>
+<p>299,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(339,000원)보다 4만원 저렴합니다. 300km 내구성 기준 km당 약 997원이고, 2~3번 레이스에 활용 가능합니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -4120,7 +4120,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>가격 대비 가치 — 알파플라이 3보다 6만원 저렴</h2>
-<p>289,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(349,000원)보다 6만원, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 4만원 저렴합니다. 400km 기준 km당 약 722원으로 레이싱화 카테고리에서는 합리적인 축입니다. 다만 이 단가는 레이스 전용 운용을 전제로 한 것이라, 훈련까지 이 신발로 소화하면 실제 마모는 더 빠릅니다.</p>
+<p>289,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(339,000원)보다 5만원, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 4만원 저렴합니다. 400km 기준 km당 약 722원으로 레이싱화 카테고리에서는 합리적인 축입니다. 다만 이 단가는 레이스 전용 운용을 전제로 한 것이라, 훈련까지 이 신발로 소화하면 실제 마모는 더 빠릅니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>

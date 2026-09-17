@@ -1271,7 +1271,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>항목</th><th>알파플라이 3</th><th>메타스피드 스카이+</th><th>SC 엘리트 v5</th></tr></thead>
   <tbody>
-    <tr><td>가격(한국)</td><td>349,000원</td><td>329,000원</td><td><strong>319,000원</strong></td></tr>
+    <tr><td>가격(한국)</td><td>339,000원</td><td>329,000원</td><td><strong>319,000원</strong></td></tr>
     <tr><td>무게</td><td>201g</td><td>205g</td><td><strong>198g</strong></td></tr>
     <tr><td>스택(힐/전족)</td><td>38 / 30mm</td><td>39 / <strong>34mm</strong></td><td>39 / 29mm</td></tr>
     <tr><td>드롭</td><td>9mm</td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
@@ -1287,7 +1287,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>나이키 알파플라이 3 — 폭발적 반발의 풀코스 끝판왕</h2>
 <p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(10/10)이 셋 중 가장 폭발적입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
-<p>약점은 <strong>발볼과 가격</strong>입니다. 토박스가 좁은 데다 와이드 옵션이 없어, 발볼 넓은 러너는 레이스 후반 발가락 눌림을 겪을 수 있습니다. 349,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
+<p>약점은 <strong>발볼과 가격</strong>입니다. 토박스가 좁은 데다 와이드 옵션이 없어, 발볼 넓은 러너는 레이스 후반 발가락 눌림을 겪을 수 있습니다. 339,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
 
 <h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
@@ -4482,7 +4482,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>206g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000</td><td>166g</td><td>레이스(스피드)</td><td>166g 초경량, 5K~하프 스피드</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a></td><td>319,000</td><td>198g</td><td>레이스(넓은 발)</td><td>발볼 넓어도 신는 슈퍼슈즈(74.5mm)</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>349,000</td><td>201g</td><td>레이스(풀 끝판)</td><td>풀코스 최대 추진, 상급자용</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000</td><td>201g</td><td>레이스(풀 끝판)</td><td>풀코스 최대 추진, 상급자용</td></tr>
   </tbody>
 </table>
 </div>
@@ -5920,7 +5920,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>한국 러너가 주목할 점</h2>
 <ul>
-  <li><strong>가격</strong> — 국내 정가 <strong>329,000원</strong>으로 전작과 같습니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(37만원대)보다 4만원가량 저렴한 포지션을 그대로 유지합니다. 글로벌 정가는 전작 $280에서 $250로 내렸는데 국내가는 그대로라, 환율·유통 구조를 감안해도 국내 러너가 인하 혜택을 보지는 못했습니다. 라이트스프레이 클라우드붐 스트라이크 2는 <strong>419,000원</strong>으로 국내 정식 유통됩니다.</li>
+  <li><strong>가격</strong> — 국내 정가 <strong>329,000원</strong>으로 전작과 같습니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(33만 9천원)보다 1만원가량 저렴한 포지션을 그대로 유지합니다. 글로벌 정가는 전작 $280에서 $250로 내렸는데 국내가는 그대로라, 환율·유통 구조를 감안해도 국내 러너가 인하 혜택을 보지는 못했습니다. 라이트스프레이 클라우드붐 스트라이크 2는 <strong>419,000원</strong>으로 국내 정식 유통됩니다.</li>
   <li><strong>발볼 — 이번 세대에서 가장 반가운 변화</strong>. 1은 표준~좁은 편에 <strong>와이드 옵션이 없어</strong> 발볼 넓은 러너에게 빡빡했는데, 출시 직후 나온 Road Trail Run 리뷰는 2의 토박스를 <strong>"roomy(넉넉하다)"</strong>고 평가하며 <strong>"레이싱화 평균보다 패딩이 넉넉해 발볼 넓은 러너에게 적합"</strong>이라고 명시했습니다. 발볼 때문에 On 레이서를 포기했던 한국 러너라면 다시 신어볼 이유가 생긴 셈입니다. 단 같은 리뷰가 <strong>미드풋 고정을 위해 끈을 꽤 조여야 한다</strong>고 지적했으니, 발등이 낮다면 착화 확인은 필요합니다. 발볼이 넓다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 참고하세요.</li>
   <li><strong>착지 유형</strong> — 클라우드붐 스트라이크는 로우드롭 설계라 <strong>미드풋·앞발 착지 러너에 최적</strong>입니다. 힐(뒤꿈치) 착지가 강한 러너는 아킬레스·종아리 부담이 커질 수 있어, 슈퍼슈즈 입문이라면 오히려 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>처럼 힐 착지 관용도가 높은 모델이 무난합니다.</li>
   <li><strong>용도</strong> — 300km 안팎 내구성의 <strong>레이스·포인트 훈련 전용</strong> 슈퍼슈즈입니다. 데일리 조깅까지 한 켤레로 굴리려는 목적이면 맞지 않습니다.</li>

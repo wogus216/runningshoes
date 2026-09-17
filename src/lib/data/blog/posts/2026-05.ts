@@ -4002,7 +4002,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>narrow</td><td>가성비 카본 최강</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>206g</td><td>70%+</td><td><strong>standard</strong></td><td>발볼 친화 + 첫 카본</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>78%</strong></td><td>좁음(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>35만원</td><td>201g</td><td>74.9%</td><td>좁음</td><td>풀코스 후반 보호</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>33만 9천원</td><td>201g</td><td>74.9%</td><td>좁음</td><td>풀코스 후반 보호</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만원</td><td>215g</td><td>72%+</td><td><strong>76mm (넓음)</strong></td><td>발볼 4E급 유일 선택</td></tr>
   </tbody>
@@ -4093,7 +4093,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 30만원, 166g 압도적 가벼움 + 78% 에너지 리턴</li>
-  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 35만원, Air Pods + 38mm 스택 풀코스 후반 보호</li>
+  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 33만 9천원, Air Pods + 38mm 스택 풀코스 후반 보호</li>
   <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 32만원, 라이트스트라이크 프로 + 에너지로드</li>
   <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 32만원, 토박스 76mm 발볼 친화</li>
   <li><a href="/shoes/saucony-endorphin-elite-2">사우코니 엔돌핀 엘리트 2</a> — 33만원, IncrediRUN 폼 80.6% 에너지 리턴(최강)</li>
@@ -4162,8 +4162,8 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: 'nike-vaporfly-4-vs-alphafly-3-comparison',
     slug: 'nike-vaporfly-4-vs-alphafly-3-comparison',
-    title: '나이키 베이퍼플라이 4 vs 알파플라이 3 비교 | 30만원 베이퍼 vs 35만원 알파 — 5만원 차이로 갈리는 Sub-3 vs Sub-3:30 선택',
-    description: '베이퍼플라이 4(166g/309,000원)와 알파플라이 3(201g/349,000원)을 RunRepeat 실측 + 풀코스 사용기로 비교. -35g 가벼움 vs 풀코스 후반 Air Pods 보호 — Sub-3 vs Sub-3:30 페이스별 최적 선택, 알파플라이 4 출시(11월) 전 지금 사야 하나 답까지.',
+    title: '나이키 베이퍼플라이 4 vs 알파플라이 3 비교 | 30만원 베이퍼 vs 34만원 알파 — 3만원 차이로 갈리는 Sub-3 vs Sub-3:30 선택',
+    description: '베이퍼플라이 4(166g/309,000원)와 알파플라이 3(201g/339,000원)을 RunRepeat 실측 + 풀코스 사용기로 비교. -35g 가벼움 vs 풀코스 후반 Air Pods 보호 — Sub-3 vs Sub-3:30 페이스별 최적 선택, 알파플라이 4 출시(11월) 전 지금 사야 하나 답까지.',
     thumbnail: '/images/blog/nike-vaporfly-4-vs-alphafly-3-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-17',
@@ -4174,7 +4174,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li>가격 5만원 차이 (베이퍼 309,000원 / 알파 349,000원). 본질 차이는 <strong>"가벼움·반응성(베이퍼)" vs "풀코스 후반 보호(알파)"</strong></li>
+    <li>가격 3만원 차이 (베이퍼 309,000원 / 알파 339,000원). 본질 차이는 <strong>"가벼움·반응성(베이퍼)" vs "풀코스 후반 보호(알파)"</strong></li>
     <li>무게 차이 <strong>-35g (베이퍼 166g vs 알파 201g)</strong> + 베이퍼 78% vs 알파 74.9% 에너지 리턴 — 베이퍼가 가성비·반응성 모두 우위</li>
     <li>알파플라이의 차별 무기는 <strong>Air Pods + 38mm 힐 스택</strong>. <strong>Sub-3 풀코스 35km 이후 다리 보호</strong>가 결정적. <strong>Sub-3:30 이하면 베이퍼 4가 더 합리적</strong></li>
   </ul>
@@ -4196,7 +4196,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>출시</strong></td><td>2025년</td><td>2024년</td><td>베이퍼 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td><strong>309,000원</strong></td><td>349,000원</td><td>+40,000원 (알파 비쌈)</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td><strong>309,000원</strong></td><td>339,000원</td><td>+30,000원 (알파 비쌈)</td></tr>
     <tr><td><strong>스트릿 가격</strong></td><td>280,000원</td><td>310,000원</td><td>+30,000원</td></tr>
     <tr><td><strong>무게 (US M9)</strong></td><td><strong>166g</strong></td><td>201g</td><td><strong>+35g (알파 무거움)</strong></td></tr>
     <tr><td><strong>힐 스택</strong></td><td>34mm (실측 34.1mm)</td><td><strong>38mm</strong></td><td>+4mm (알파 우위)</td></tr>
@@ -4210,7 +4210,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>토박스</strong></td><td>73.2mm (좁음)</td><td>표준 (좁음)</td><td>둘 다 좁음 — 한국 발볼 주의</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
     <tr><td><strong>안정성</strong></td><td>6/10</td><td>6/10</td><td>둘 다 평발·과내전 비추</td></tr>
-    <tr><td><strong>Cost/km</strong></td><td>약 1,236원</td><td>약 1,745원</td><td>베이퍼 가성비 압승</td></tr>
+    <tr><td><strong>Cost/km</strong></td><td>약 1,236원</td><td>약 1,695원</td><td>베이퍼 가성비 압승</td></tr>
     <tr><td><strong>대표 기록</strong></td><td>춘마·뉴욕 등 Sub-3:30 PB 신발</td><td>킵툼 세계신기록 신발</td><td>알파 = 엘리트 상징성</td></tr>
   </tbody>
 </table>
@@ -4252,7 +4252,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">5분/km 이상 페이스에서 카본 슈즈는 오히려 역효과</p>
-    <p>알파플라이 3·베이퍼플라이 4 모두 <strong>3:00~4:30 min/km 페이스 전용</strong>. 5분/km 이상 느린 페이스에서는 ① 카본 플레이트가 종아리·아킬레스를 잡아당겨 부상 위험 ↑, ② 38mm/34mm 하이스택이 좌우로 불안정해져서 발목 부담 ↑, ③ 35만원 신발 효과 거의 없음. <strong>Sub-4 이상 풀코스 목표라면 슈퍼 트레이너(슈퍼블라스트 3, 매직 스피드 5)가 정답</strong>.</p>
+    <p>알파플라이 3·베이퍼플라이 4 모두 <strong>3:00~4:30 min/km 페이스 전용</strong>. 5분/km 이상 느린 페이스에서는 ① 카본 플레이트가 종아리·아킬레스를 잡아당겨 부상 위험 ↑, ② 38mm/34mm 하이스택이 좌우로 불안정해져서 발목 부담 ↑, ③ 34만원 신발 효과 거의 없음. <strong>Sub-4 이상 풀코스 목표라면 슈퍼 트레이너(슈퍼블라스트 3, 매직 스피드 5)가 정답</strong>.</p>
   </div>
 </div>
 
@@ -7021,8 +7021,8 @@ export const posts_2026_05: BlogPost[] = [
     <tr><th>항목</th><th>알파플라이 3 (현행)</th><th>알파플라이 4 (예상)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>무게</strong></td><td>220g (US M9)</td><td>경량화 (구체값 미공개)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm</td><td><strong>4-6mm</strong></td></tr>
+    <tr><td><strong>무게</strong></td><td>218g (US M10, 나이키 공식)</td><td>208g (US M10) — 확정</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm</td><td>4-6mm 예상 → <strong>8mm 유지 확정</strong></td></tr>
     <tr><td><strong>미드솔</strong></td><td>ZoomX (기존 포뮬러)</td><td><strong>ZoomX 신 포뮬러</strong></td></tr>
     <tr><td><strong>Air Zoom 유닛</strong></td><td>힐+전족부 분리</td><td><strong>연속형 바텀 (갭 제거)</strong></td></tr>
     <tr><td><strong>카본 플레이트</strong></td><td>Flyplate (기존)</td><td>지오메트리 변경</td></tr>
@@ -11588,7 +11588,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>97g가 어떻게 가능했나 — 카본 플레이트를 버린 신발</h2>
 
-<p>지난 몇 년 슈퍼슈즈 경쟁의 핵심은 "더 두꺼운 폼 + 더 단단한 카본 플레이트"였습니다. 그런데 이 조합은 무게의 한계가 있었어요. Vaporfly 4도 166g, Alphafly 3는 220g입니다.</p>
+<p>지난 몇 년 슈퍼슈즈 경쟁의 핵심은 "더 두꺼운 폼 + 더 단단한 카본 플레이트"였습니다. 그런데 이 조합은 무게의 한계가 있었어요. Vaporfly 4도 166g, Alphafly 3는 201g입니다(둘 다 RunRepeat 절단 실측).</p>
 
 <p>아디다스가 에보 3에서 한 일은 <strong>카본 플레이트를 통째로 버린 것</strong>입니다.</p>
 
