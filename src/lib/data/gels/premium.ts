@@ -8,7 +8,7 @@ export const premiumGels: Gel[] = [
     name: 'Gel 100',
     category: '프리미엄',
     rating: 5,
-    price: 6408,
+    price: 6417,
     description: '엘리우드 킵초게가 세계 신기록(2:01:09)을 세울 때 선택한 에너지 젤. 특허받은 Hydrogel 기술로 탄수화물을 캡슐화해 위장 장애를 최소화. 단 6가지 성분, 비건 가능.',
     tags: ['하이드로젤', '프리미엄', '서브3', '위장 안전', '엘리트', '킵초게', '비건'],
     image: '/images/gels/maurten/main.webp',
@@ -72,18 +72,21 @@ export const premiumGels: Gel[] = [
     },
 
     priceAnalysis: {
-      msrp: 8325,
-      bulkPrice: 6408,
-      marathonCost: 32040,
+      msrp: 6417,
+      marathonCost: 32085,
       yangGangComparison: '양갱(800원) 대비 8배 비싸지만, 킵초게가 세계 신기록을 세울 때 선택한 이유가 있다. 흡수 속도와 위장 안정성에서 압도적 우위.',
       valueRating: 4,
       priceTier: 'super-premium',
-      priceCheckedAt: '2026-02-01',
-      priceSource: 'LIXLI 12개입 76,900원 기준 (개당 6,408원)',
+      priceCheckedAt: '2026-09-17',
+      priceSource: '네이버 쇼핑 energear 12개입 77,000원 기준 (개당 6,417원, 배송비 9,900원 별도). 국내 정식 유통 없이 해외직구로만 판매',
       alternatives: ['sis-beta-fuel', '226ers-high-energy'],
     },
 
-    purchaseLinks: [],
+    // 네이버 커넥트·쿠팡 모두 카탈로그에 없어 제휴 링크가 불가능하다(2026-09-17 확인).
+    // 수수료는 없지만 국내에서 정가로 살 수 있는 유일한 경로라 일반 링크로 둔다.
+    purchaseLinks: [
+      { store: '네이버 쇼핑', url: 'https://smartstore.naver.com/energear/products/12182873112' },
+    ],
 
     features: [
       '킵초게 세계 신기록(2:01:09) 레이스 연료',
@@ -117,7 +120,7 @@ export const premiumGels: Gel[] = [
     name: 'Beta Fuel',
     category: '프리미엄',
     rating: 4,
-    price: 4433,
+    price: 3700,
     description: '1:0.8 듀얼 소스 비율로 최대 흡수율을 추구하는 고농축 에너지 젤. 40g 탄수화물 + 전해질(나트륨, 칼륨, 마그네슘) + 비타민 B6/B12까지 올인원.',
     tags: ['듀얼소스', '고농축', '1:0.8', '프리미엄', '등장', '전해질', '비타민B'],
     image: '/images/gels/sis/main.webp',
@@ -182,14 +185,13 @@ export const premiumGels: Gel[] = [
     },
 
     priceAnalysis: {
-      msrp: 4433,
-      bulkPrice: 3113,
-      marathonCost: 13299,
-      yangGangComparison: '양갱(800원) 대비 5.5배. 하지만 40g/패킷이라 섭취 횟수 절반 → 실질 비용 차이 줄어듦. 전해질+비타민B까지 포함이라 별도 보충제 불필요.',
+      msrp: 3700,
+      marathonCost: 11100,
+      yangGangComparison: '양갱(800원) 대비 4.6배. 하지만 40g/패킷이라 섭취 횟수 절반 → 실질 비용 차이 줄어듦. 전해질+비타민B까지 포함이라 별도 보충제 불필요.',
       valueRating: 6,
       priceTier: 'premium',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '터커넉 30개입 기준 (오렌지 133,000원/개당 4,433원, 사과 93,400원/개당 3,113원)',
+      priceCheckedAt: '2026-09-17',
+      priceSource: '네이버 쇼핑 energear 30개입 111,000원 기준 (개당 3,700원, 배송비 9,900원 별도). 국내 정식 유통 없이 해외직구로만 판매',
       alternatives: ['maurten-gel-100', '226ers-high-energy'],
     },
 
@@ -216,7 +218,11 @@ export const premiumGels: Gel[] = [
       },
     ],
 
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g7f5DBhWxw' }],
+    purchaseLinks: [
+      // 네이버 쪽이 개당 3,700원으로 쿠팡(4,663원)보다 싸다. 커넥트 카탈로그엔 없어 제휴 링크는 불가.
+      { store: '네이버 쇼핑', url: 'https://smartstore.naver.com/energear/products/12846699102' },
+      { store: '쿠팡', url: 'https://link.coupang.com/a/g7f5DBhWxw' },
+    ],
 
     similarGels: ['maurten-gel-100', '226ers-high-energy', 'gu-roctane-energy-gel'],
   },
@@ -227,7 +233,7 @@ export const premiumGels: Gel[] = [
     name: 'High Energy Gel',
     category: '프리미엄',
     rating: 4,
-    price: 7000,
+    price: 10892,
     description: 'Cyclodextrin(Cluster Dextrin®) 기반 50g 탄수화물 대용량 에너지 젤. 쾰른 리스트 도핑 방지 인증. 9가지 맛 + BCAA/카페인/솔티 라인업.',
     tags: ['대용량', '50g', '사이클', '울트라', '고농축', '사이클로덱스트린', '쾰른리스트', '도핑방지'],
     image: '/images/gels/226ers/main.webp',
@@ -291,18 +297,20 @@ export const premiumGels: Gel[] = [
     },
 
     priceAnalysis: {
-      msrp: 7000,
-      bulkPrice: 5500,
-      marathonCost: 21000,
-      yangGangComparison: '양갱(800원) 대비 8.75배이지만, 50g/패킷이라 g당 가성비는 프리미엄 중 상위. 쾰른 리스트 인증 + 9가지 라인업 프리미엄.',
+      msrp: 10892,
+      marathonCost: 32676,
+      yangGangComparison: '양갱(800원) 대비 13.6배이지만, 50g/패킷이라 g당 가성비는 프리미엄 중 상위. 쾰른 리스트 인증 + 9가지 라인업 프리미엄.',
       valueRating: 6,
-      priceTier: 'premium',
-      priceCheckedAt: '2026-02-01',
-      priceSource: 'Key Power Sports (싱가포르) 개당 ₩7,000',
+      priceTier: 'super-premium',
+      priceCheckedAt: '2026-09-17',
+      priceSource: '롯데온 24개입 261,400원 기준 (개당 10,892원). 네이버 쇼핑·쿠팡에는 이 라인(High Energy 76g) 취급처가 없어 국내 구매처가 사실상 한 곳뿐',
       alternatives: ['sis-beta-fuel', 'maurten-gel-100'],
     },
 
-    purchaseLinks: [],
+    // High Energy(76g) 라인은 네이버 쇼핑·쿠팡에 취급처가 없다. 롯데온이 확인된 유일한 국내 경로다.
+    purchaseLinks: [
+      { store: '롯데온', url: 'https://www.lotteon.com/p/product/LO2768021531' },
+    ],
 
     features: [
       'Cyclodextrin (Cluster Dextrin®) 기반 - 빠른 위 통과 + 낮은 삼투압',

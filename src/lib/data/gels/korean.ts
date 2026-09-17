@@ -340,7 +340,7 @@ export const koreanGels: Gel[] = [
     name: 'Mag-on 에너지젤',
     category: '스테디셀러',
     rating: 4,
-    price: 2537,
+    price: 3958,
     description: '수용성 마그네슘 50mg + 카페인 25mg을 기본 탑재한 일본 세로토레(Serotore) 제조 에너지 젤. 레이스 후반 근육 경련(쥐) 방지의 대명사. Amazon JP 4.2★(333리뷰).',
     tags: ['마그네슘', '경련방지', '일본', '카페인', '수용성마그네슘'],
     image: '/images/gels/magon/main.webp',
@@ -404,18 +404,20 @@ export const koreanGels: Gel[] = [
     },
 
     priceAnalysis: {
-      msrp: 2537,
-      bulkPrice: 1705,
-      marathonCost: 12685,
-      yangGangComparison: '양갱(800원) 대비 3.2배. 수용성 마그네슘 50mg + 카페인 25mg + 탄수화물 30g을 감안하면 합리적.',
+      msrp: 3958,
+      marathonCost: 19790,
+      yangGangComparison: '양갱(800원) 대비 4.9배. 수용성 마그네슘 50mg + 카페인 25mg + 탄수화물 30g을 감안하면 합리적.',
       valueRating: 7,
       priceTier: 'mid',
-      priceCheckedAt: '2026-02-01',
-      priceSource: 'Amazon JP 12개입 KRW 30,441 (개당 2,537원), 쿠팡 직구 12개입 15,300~20,460원',
+      priceCheckedAt: '2026-09-17',
+      priceSource: '네이버 쇼핑 riyoo 12개입 47,500원 기준 (개당 3,958원, 무료배송). 국내 정식 유통 없이 해외직구로만 판매',
       alternatives: ['enup-power-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [],
+    // 커넥트 카탈로그에 없어 제휴 링크 불가. 쿠팡은 개당 4,000~6,600원으로 더 비싸다(2026-09-17).
+    purchaseLinks: [
+      { store: '네이버 쇼핑', url: 'https://smartstore.naver.com/riyoo/products/13716053649' },
+    ],
 
     features: [
       '수용성 마그네슘 50mg (고흡수율) - 근경련 예방',

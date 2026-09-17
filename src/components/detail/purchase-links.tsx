@@ -32,6 +32,9 @@ const ALLOWED_PURCHASE_DOMAINS = [
   'nbkorea.com', 'hoka.com', 'brooksrunning.co.kr',
   'saucony.co.kr', 'on-running.com', 'kr.puma.com', 'mizunokorea.co.kr',
   'abcmart.co.kr', 'musinsa.com',
+  // 226ERS High Energy 처럼 네이버·쿠팡 어디에도 취급처가 없는 수입 젤의 유일한 국내 경로.
+  // 화이트리스트에 없으면 링크가 경고 없이 걸러지므로, 새 판매처를 쓸 때는 여기부터 확인할 것.
+  'lotteon.com',
 ];
 
 function isValidPurchaseUrl(url: string): boolean {
