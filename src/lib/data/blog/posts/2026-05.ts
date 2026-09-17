@@ -6954,12 +6954,12 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: '2026-nike-alphafly-4-prototype',
     slug: '2026-nike-alphafly-4-prototype',
-    title: '나이키 알파플라이 4 출시일 언제? 11월 시카고 직전 유력 | 프로토타입으로 드러난 스펙 변화 총정리',
-    description: '알파플라이 4는 언제 나오고 무엇이 달라지나 — 현재까지 확인된 것을 한 번에 정리했습니다. 정식 출시는 2026년 11월 시카고 마라톤 직전이 유력하고, World Athletics 승인 리스트에 "Nike-Dev 16141"로 등록된 프로토타입에서 드롭 하향(4~6mm)·전족부 ZoomX 증량·듀얼 Air Zoom 연속형 바텀·카본 플레이트 신지오메트리가 확인됐습니다. 알파플라이 3와의 차이, 아디오스 프로 에보 3를 포함한 슈퍼슈즈 4파전 구도까지 함께 봅니다.',
+    title: '나이키 알파플라이 4 프로토타입 기록 | 출시 전 예측과 9/17 공식 발표의 대조',
+    description: '알파플라이 4가 공개되기 전, World Athletics 승인 리스트의 "Nike-Dev 16141" 프로토타입과 유출 이미지로 스펙 변화를 예측했던 글입니다. 2026년 9월 17일 나이키 공식 발표로 출시일·드롭·가격·Air Zoom 구조 예측이 빗나갔고, 미드솔 신 포뮬러와 와이드 플레이트는 맞았습니다. 확정된 공식 스펙은 별도 글에 정리했습니다.',
     thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-12',
-    updatedAt: '2026-08-10',
+    updatedAt: '2026-09-17',
     category: 'news' as const,
     readingTime: 8,
     tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
@@ -6968,6 +6968,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>나이키 <strong>알파플라이 4 프로토타입</strong>이 2026 보스턴 마라톤에서 Charles Hicks의 <strong>미국 남자 역대 2위</strong>를 만들며 정체 노출 — World Athletics 등록 코드 <strong>Nike-Dev 16141</strong></li>
+    <li><strong>2026-09-17 갱신 — 아래 예측 중 넷이 빗나갔습니다.</strong> 실제 출시는 11월이 아닌 <strong>9/17 선행·10/29 확대</strong>, 드롭은 4~6mm가 아닌 <strong>8mm 유지</strong>, 정가는 $285~330이 아닌 <strong>$280</strong>, Air Zoom은 연속형이 아닌 <strong>전족부 듀얼 유닛 유지</strong>였습니다. 확정된 공식 스펙과 한국 출시 상황은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 확정 정리</a>에서 보세요</li>
     <li>핵심 변화: <strong>드롭 4-6mm로 하향</strong> + 전족부 ZoomX 증량 + <strong>듀얼 Air Zoom 유닛 + 연속형 바텀</strong>(힐~전족부 갭 제거) + 카본 플레이트 신지오메트리</li>
     <li>정식 출시는 <strong>2026년 11월 시카고 마라톤 직전</strong> 예상. 같은 해 발매된 <a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a>(97g)와의 슈퍼슈즈 4파전 본격화</li>
   </ul>
