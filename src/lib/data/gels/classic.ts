@@ -110,7 +110,10 @@ export const classicGels: Gel[] = [
 
     similarGels: ['enup-power-gel', 'kolon-perfect-power-gel', 'maurten-gel-100'],
 
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g7f4AqtLWK' }],
+    purchaseLinks: [
+      { store: '네이버', url: 'https://naver.me/xjYb3VXn' },
+      { store: '쿠팡', url: 'https://link.coupang.com/a/g7f4AqtLWK' },
+    ],
   },
   {
     id: 'kolon-perfect-power-gel',
