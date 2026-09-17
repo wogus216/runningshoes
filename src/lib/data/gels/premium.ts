@@ -216,7 +216,7 @@ export const premiumGels: Gel[] = [
       },
     ],
 
-    purchaseLinks: [],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g7f5DBhWxw' }],
 
     similarGels: ['maurten-gel-100', '226ers-high-energy', 'gu-roctane-energy-gel'],
   },

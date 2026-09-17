@@ -303,7 +303,7 @@ export const koreanGels: Gel[] = [
       alternatives: ['kolon-perfect-power-gel', 'up-energy-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [],
+    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g7f3xKL6xo' }],
 
     features: [
       '팔라티노스(Palatinose) 기반 - 저GI 지속 에너지',
