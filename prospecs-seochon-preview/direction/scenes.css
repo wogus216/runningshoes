@@ -1,0 +1,208 @@
+/* Each chapter keeps its own reading pace; all content is visible without JS. */
+.introduction{padding-top:100px;padding-bottom:105px}
+.exhibition-title h1{font-size:clamp(70px,8vw,96px)}
+.memory-copy{margin-top:90px}
+.place{padding-bottom:80px;overflow:visible}
+.place-story{grid-template-columns:1fr 1.1fr;gap:10%;padding:0 7.5%;align-items:start;margin-bottom:0}
+.place-copy{margin-top:100px}
+.place-story figure{width:100%}
+.place-copy.scene-stay{position:sticky;top:26svh}
+
+/* The archive has a normal document layout until scroll enhancement is active. */
+.archive-sequence{position:relative;background:#eeefe8;margin:0 0 40px}
+.archive-sticky{padding:38px 6% 30px}
+.archive-top{display:grid;grid-template-columns:1fr 1fr auto;align-items:baseline;gap:20px;padding-bottom:20px}
+.archive-top h2{font-size:clamp(27px,3vw,40px)}
+.archive-top p{font-size:13px;color:var(--sub)}
+.archive-top>a{font-size:11px;color:var(--sub)}
+.archive-dates{display:none}
+.archive-picture{margin:20px auto 55px;max-width:900px;scroll-margin-top:20px}
+.archive-picture img{max-height:62svh;max-width:720px;margin-inline:auto;object-fit:contain;filter:grayscale(1)}
+.archive-picture figcaption{text-align:center;font-size:14px}
+.archive-years{position:relative;display:flex;justify-content:space-between;gap:12px;padding-top:20px}
+.archive-years>a{display:flex;flex-direction:column;align-items:center;min-width:44px;min-height:44px;font-size:16px;font-variant-numeric:tabular-nums;text-decoration:none;position:relative;isolation:isolate}
+.archive-years small{font-size:10px;line-height:1.4;color:var(--sub)}
+.archive-years>a::before{content:"";width:5px;height:5px;border:1px solid #858e7d;background:#eeefe8;position:absolute;top:-23px;left:calc(50% - 3px)}
+.archive-years>a:hover,.archive-years>a[aria-current="true"]{color:#3b5934}
+.archive-years>a[aria-current="true"]::before{background:#3b5934;border-color:#3b5934;transform:scale(1.45)}
+.archive-years>a[aria-current="true"]>span{font-weight:600}
+.archive-line{height:1px;position:absolute;left:22px;right:22px;top:0;background:#bdc4b5;overflow:hidden}
+.archive-line i{position:absolute;inset:0;background:#445b3c;transform:scaleX(0);transform-origin:left}
+.archive-footnote{display:flex;justify-content:space-between;gap:15px;margin-top:10px;color:var(--sub);font-size:10px}
+.archive-scroll-hint{display:none}
+.archive-ready{height:335svh}
+.archive-ready .archive-sticky{height:100svh;position:sticky;top:0;display:grid;grid-template-rows:auto minmax(0,1fr) auto;gap:18px;overflow:hidden}
+.archive-ready .archive-top{padding-bottom:0}
+.archive-ready .archive-composition{display:grid;grid-template-columns:23% minmax(0,1fr);gap:1.5%;min-height:0;align-items:stretch}
+.archive-ready .archive-dates{position:relative;display:block;align-self:center;height:230px;z-index:7}
+.archive-date{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;opacity:0}
+.archive-year{font-family:Baskerville,"Times New Roman",serif;font-size:clamp(78px,10vw,142px);line-height:1;letter-spacing:-.04em;font-variant-numeric:tabular-nums;color:#30382d}
+.archive-month{font-size:14px;margin:18px 0 22px}
+.archive-date p{font-size:13px;line-height:1.7;color:var(--sub);max-width:18ch}
+.archive-ready .archive-pictures{position:relative;min-width:0;min-height:0;overflow:clip;isolation:isolate}
+.archive-ready .archive-picture{position:absolute;inset:12% 13%;max-width:none;margin:0;display:flex;align-items:center;justify-content:center;transform:translate3d(32%,4%,0) scale(.65);opacity:0;transform-origin:50% 50%;pointer-events:none}
+.archive-ready .archive-picture img{width:100%;height:100%;max-width:540px;max-height:460px;object-fit:contain;object-position:50% 50%}
+.archive-ready .archive-picture figcaption{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}
+.archive-ready .archive-date:first-child{opacity:1}
+.archive-ready .archive-picture:first-child{transform:none;opacity:1;z-index:5}
+.archive-ready .archive-picture:nth-child(2){opacity:.26;z-index:4}
+.archive-ready .archive-scroll-hint{display:block}
+.archive-ready .archive-bottom{position:relative;z-index:8;padding-top:13px}
+
+.archive-arrival{max-width:950px;margin:0 auto;padding:45px 7% 55px;text-align:center}
+.archive-arrival p{font-size:clamp(27px,3.6vw,48px);line-height:1.6;letter-spacing:-.035em;text-wrap:balance}
+.archive-arrival span{display:block;margin-bottom:20px;font-size:11px;letter-spacing:.08em;color:var(--sub)}
+
+/* The first floor moves from one illuminated frame to the room around it. */
+.prologue{padding-top:100px;padding-bottom:65px}
+.floor-heading{margin-bottom:50px}
+.prologue-layout{align-items:start;grid-template-columns:1.4fr 1fr;gap:9%}
+.film-main.scene-stay{position:sticky;top:8svh}
+.film-main img{max-height:77svh;object-fit:contain;object-position:left top}
+.film-story{padding-top:55px;min-height:108svh;display:flex;flex-direction:column;align-items:start}
+.film-story h3{font-size:clamp(26px,2.7vw,39px)}
+.film-story>p{margin-top:25px}
+.film-detail{margin-top:auto;padding-top:65px;width:100%}
+.film-detail img{aspect-ratio:3/4;max-height:65svh;object-fit:cover}
+.prologue-pause{margin:75px 4% 65px;font-size:clamp(30px,4.5vw,62px);letter-spacing:-.035em;line-height:1.5;text-align:center;text-wrap:balance}
+.postcard{margin-top:0;grid-template-columns:1.2fr 1fr;gap:10%;max-width:1300px}
+.postcard figure{width:100%}
+.postcard-actions{list-style:none;margin:38px 0 0;padding:0;display:flex;justify-content:space-between;gap:16px;max-width:430px;border-top:1px solid #c5cbbd}
+.postcard-actions li{position:relative;padding-top:15px;font-size:14px;white-space:nowrap}
+.postcard-actions li::before{content:"";position:absolute;top:-1px;height:1px;background:#445b3c;left:0;right:0;transform:scaleX(var(--step-reveal,1));transform-origin:left}
+
+/* Enter the second floor wide; then linger close to individual objects. */
+.runners{padding-top:100px}
+.runner-heading{margin-bottom:50px}
+.runner-room{overflow:hidden}
+.runner-room img{aspect-ratio:16/10}
+.runner-intro{padding-top:80px;padding-bottom:75px}
+.runner-objects{display:block;padding:0 7.5%;max-width:1600px}
+.object-moment{display:grid;gap:10%;align-items:start}
+.medal-moment{grid-template-columns:1fr 1.2fr}
+.object-text{padding-top:85px}
+.object-text.scene-stay{position:sticky;top:27svh;padding-top:0;margin-top:85px}
+.object-text h3{font-size:clamp(42px,5.5vw,78px);line-height:1.3}
+.object-text p{font-size:15px;color:var(--sub);line-height:2;margin-top:28px}
+.medals{width:100%}
+.book-moment{grid-template-columns:1.3fr 1fr;gap:8%;margin-top:70px;align-items:center}
+.book-moment .object-text{padding:0}
+.book-moment h3{font-size:clamp(33px,4vw,57px)}
+.book-moment .books{margin:0}
+.runner-question{padding-top:100px;padding-bottom:100px}
+.runner-question p{font-size:clamp(31px,4.7vw,65px);text-align:center}
+.invitation{grid-template-columns:.8fr 1.2fr;gap:12%;padding-top:15px}
+.invitation>div>p{font-size:clamp(31px,4.2vw,60px)}
+.visit{padding-top:85px}
+
+@media(max-width:1000px) and (min-width:701px){
+  .archive-ready .archive-composition{grid-template-columns:22% minmax(0,1fr)}
+  .archive-year{font-size:90px}.archive-date p{font-size:12px}.archive-top p{font-size:11px}
+  .place-story{gap:6%}.place-copy{margin-top:45px}.place-copy h2{font-size:30px}
+  .object-text h3{font-size:48px}.object-text p{font-size:14px}.book-moment h3{font-size:38px}
+}
+@media(max-width:700px){
+  .introduction{padding:70px 7% 65px}.exhibition-title h1{font-size:clamp(59px,15vw,82px)}.memory-copy{margin-top:60px}
+  .place{padding-bottom:60px}.place-story{grid-template-columns:1fr;gap:30px;padding:0 7%;margin-bottom:0}.place-copy{margin-top:0}.place-copy.scene-stay{position:static}.place-story figure{width:83%}
+  .archive-sequence{margin-bottom:0}.archive-sticky{padding:24px 5% 18px}.archive-top{grid-template-columns:1fr auto;gap:8px;padding-bottom:15px}.archive-top h2{font-size:26px}.archive-top p{grid-column:1;font-size:11px}.archive-top>a{grid-column:2;grid-row:1 / 3;align-self:center;font-size:10px}
+  .archive-ready{height:310svh}.archive-ready .archive-sticky{gap:12px}.archive-ready .archive-composition{grid-template-columns:1fr;grid-template-rows:92px minmax(0,1fr);gap:12px}.archive-ready .archive-dates{height:92px;width:100%;align-self:start}.archive-date{display:grid;grid-template-columns:auto 1fr;grid-template-rows:32px 1fr;column-gap:22px;align-items:center}.archive-year{font-size:clamp(72px,20vw,100px);grid-row:1 / 3;line-height:.95}.archive-month{font-size:12px;margin:0;align-self:end}.archive-date p{font-size:11px;margin-top:5px;align-self:start;max-width:none}.archive-ready .archive-pictures{margin:0}.archive-ready .archive-picture{inset:10% 11%}.archive-ready .archive-picture img{max-width:100%;max-height:100%}.archive-footnote{font-size:9px;gap:12px}.archive-footnote p{max-width:48%;line-height:1.5}.archive-years{gap:5px;padding-top:16px}.archive-years>a{font-size:13px}.archive-years small{font-size:9px}.archive-years>a::before{top:-19px}.archive-picture{margin-bottom:35px}.archive-picture figcaption{font-size:12px}
+  .prologue{padding-top:65px}.floor-heading{margin-bottom:30px}.prologue-layout{grid-template-columns:1fr;gap:0}.film-main.scene-stay{position:static}.film-main img{max-height:none;object-fit:cover}.film-story{min-height:0;padding-top:35px}.film-story h3{font-size:27px}.film-detail{width:78%;margin-top:32px;padding-top:0}.film-detail img{max-height:none}.prologue-pause{font-size:30px;margin:48px 0 38px}.postcard{grid-template-columns:1fr;gap:30px}.postcard figure{width:95%}.postcard-actions{margin-top:28px;gap:12px}.postcard-actions li{font-size:12px}
+  .runners{padding-top:60px}.runner-heading{margin-bottom:30px}.runner-room img{aspect-ratio:3/4}.runner-intro{padding:50px 7% 40px}.runner-objects{padding:0 6%}.object-moment{grid-template-columns:1fr;gap:25px}.object-text.scene-stay{position:static;margin:0}.object-text{padding:0}.object-text h3{font-size:46px}.object-text p{font-size:14px;margin-top:20px}.medals{width:96%;margin-left:auto}.book-moment{margin-top:50px;gap:28px}.book-moment .books{width:100%;margin:0}.book-moment .object-text{padding-left:5%}.book-moment h3{font-size:36px}.runner-question{padding:65px 7%}.runner-question p{font-size:31px;text-align:left}.invitation{grid-template-columns:1fr;gap:30px;padding:0}.invitation>div>p{font-size:33px}.visit{padding-top:55px}
+}
+@media(prefers-reduced-motion:reduce){
+  .scene-stay{position:static!important}.film-story{min-height:0}.film-detail{margin-top:40px;padding-top:0}.runner-room img{clip-path:none!important;transform:none!important}.postcard-actions li::before{transform:none!important}
+}
+
+/* Round the photograph itself, including letterboxed images. */
+.archive-picture img{border-radius:8px}
+.archive-ready .archive-picture img{width:auto;height:auto;max-width:min(100%,540px);max-height:min(100%,460px);border-radius:8px}
+@media(max-width:700px){.archive-picture img{border-radius:6px}.archive-ready .archive-picture img{max-width:100%;max-height:100%;border-radius:6px}}
+
+/* First floor: three distinct stops, without enlarged or pinned photographs. */
+.prologue{max-width:1360px;padding:65px 7% 90px}
+.prologue .floor-heading{margin-bottom:52px}
+.prologue-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center}
+.film-main{width:min(100%,435px);justify-self:start}
+.film-main img{width:100%;height:auto;max-height:none;aspect-ratio:auto;object-fit:contain;border-radius:8px}
+.film-story{padding:0;min-height:0;display:block}
+.floor-scene-label{display:block;font-size:11px;letter-spacing:.06em;color:var(--sub);margin-bottom:24px}
+.film-story h3{font-size:clamp(27px,2.7vw,37px);line-height:1.55}
+.film-story>p{font-size:14px;line-height:2;margin-top:24px}
+.film-story .film-afterthought{font-size:12px;margin-top:38px;color:var(--sub)}
+.film-room-scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:115px 0 105px}
+.film-room-copy{padding-left:12%}
+.film-room-copy h3{font-size:clamp(26px,2.8vw,38px);line-height:1.55}
+.film-room-copy>p{font-size:14px;line-height:2;color:var(--sub);margin-top:25px}
+.film-room-copy .film-room-note{font-size:17px;color:var(--ink);margin-top:40px}
+.film-room-scene .film-detail{width:min(100%,355px);padding:0;margin:0;justify-self:end}
+.film-room-scene .film-detail img{width:100%;height:auto;max-height:none;aspect-ratio:auto;border-radius:8px}
+.prologue .postcard{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:0;padding-top:65px;border-top:1px solid var(--line)}
+.prologue .postcard figure{width:min(100%,385px)}
+.prologue .postcard figure img{border-radius:8px}
+.prologue .postcard h3{font-size:clamp(26px,2.7vw,36px);line-height:1.55}
+.prologue .postcard p{font-size:14px}
+.prologue .postcard .letter-note{font-size:12px}
+.floor-photo img{opacity:calc(.7 + .3 * var(--floor-entry,1));transform:translateY(calc(12px * (1 - var(--floor-entry,1))))}
+@media(max-width:700px){
+  .prologue{padding:45px 7% 65px}.prologue .floor-heading{margin-bottom:30px}
+  .prologue-layout{grid-template-columns:1fr;gap:32px}.film-main{width:86%;max-width:340px}.film-story{padding:0 0 0 7%}.film-story h3{font-size:27px}
+  .floor-scene-label{font-size:10px;margin-bottom:17px}.film-story>p br{display:none}.film-story .film-afterthought{margin-top:25px}
+  .film-room-scene{grid-template-columns:1fr;gap:30px;margin:65px 0}.film-room-copy{padding-left:0}.film-room-copy h3{font-size:27px}.film-room-copy .film-room-note{margin-top:24px;font-size:16px}
+  .film-room-scene .film-detail{width:76%;max-width:300px;justify-self:end}
+  .prologue .postcard{grid-template-columns:1fr;gap:30px;padding-top:40px}.prologue .postcard figure{width:86%;max-width:330px}.postcard-copy{padding-left:7%}.prologue .postcard h3{font-size:27px}
+  .floor-photo img,.film-main img,.film-room-scene .film-detail img,.prologue .postcard figure img{border-radius:6px}
+}
+@media(prefers-reduced-motion:reduce){.floor-photo img{opacity:1;transform:none}}
+
+/* Second floor: a quiet collection catalogue, led by objects rather than a hero effect. */
+.runners{padding-top:112px}
+.runners .runner-heading{display:block;padding:0 7.5%;max-width:1120px;margin:0 auto 58px}
+.runners .runner-kicker{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;margin-bottom:52px;font-size:10px;letter-spacing:.07em;color:var(--sub)}
+.runners .runner-heading h2{font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-size:clamp(48px,6vw,82px);font-weight:400;line-height:1.15;letter-spacing:-.055em}
+.runners .runner-deck{margin:25px 0 0 42%;font-size:15px;line-height:2;color:var(--sub)}
+.runners .runner-floor{display:none}
+.runners .runner-room{width:100%;overflow:visible}
+.runners .runner-room img{aspect-ratio:16/9;object-fit:cover;object-position:50% 56%;clip-path:none!important;transform:none!important}
+.runners .runner-room figcaption{margin:13px 7.5% 0;font-size:11px;color:var(--sub)}
+.runners .runner-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;max-width:1100px;padding:92px 7.5% 100px;align-items:start}
+.runner-intro-label{font-size:10px;letter-spacing:.08em;color:var(--sub);padding-top:8px}
+.runners .runner-intro p{font-size:17px;line-height:2;color:var(--ink)}
+.runners .runner-objects{display:block;padding:0 12%;max-width:1320px}
+.runners .object-moment{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:12%;align-items:center;padding-top:36px}
+.runners .object-moment + .object-moment{margin-top:155px;padding-top:0}
+.runners .object-text{padding:0}
+.runners .object-text.scene-stay{position:static;margin:0}
+.runners .object-label{display:block;font-size:10px;letter-spacing:.08em;color:var(--sub);margin-bottom:22px}
+.runners .object-text h3{font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-size:clamp(28px,3.3vw,46px);font-weight:400;line-height:1.5;letter-spacing:-.05em}
+.runners .object-text p{font-size:14px;line-height:2;color:var(--sub);margin-top:25px}
+.runners .medals{width:min(100%,430px);justify-self:center}
+.runners .medals img{border-radius:8px}
+.runners .book-moment{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center}
+.runners .books{width:min(100%,520px);margin:0}
+.runners .books img{border-radius:8px}
+.runners .runner-question{max-width:1100px;padding:155px 7.5% 130px;margin:auto}
+.runners .runner-question p{font-size:clamp(26px,3.5vw,47px);line-height:1.55;text-align:left;color:var(--ink)}
+
+@media(max-width:700px){
+  .runners{padding-top:70px}
+  .runners .runner-heading{padding:0 7%;margin-bottom:36px}
+  .runners .runner-kicker{margin-bottom:30px;font-size:9px}
+  .runners .runner-kicker span:last-child{max-width:13ch;text-align:right}
+  .runners .runner-heading h2{font-size:48px}
+  .runners .runner-deck{margin:18px 0 0;font-size:13px;line-height:1.9}
+  .runners .runner-room img{aspect-ratio:3/4;object-position:center}
+  .runners .runner-room figcaption{margin:11px 7% 0}
+  .runners .runner-intro{display:block;padding:62px 7% 66px}
+  .runner-intro-label{display:block;margin-bottom:22px}
+  .runners .runner-intro p{font-size:15px;line-height:2}
+  .runners .runner-intro p br{display:none}
+  .runners .runner-objects{padding:0 9%}
+  .runners .object-moment,.runners .book-moment{display:flex;flex-direction:column;gap:34px;align-items:stretch;padding-top:0}
+  .runners .object-moment + .object-moment{margin-top:88px}
+  .runners .medals,.runners .books{width:88%;max-width:none;align-self:center}
+  .runners .object-text h3{font-size:32px}
+  .runners .object-text p{font-size:13px;margin-top:18px}
+  .runners .object-text p br{display:none}
+  .runners .runner-question{padding:100px 9% 82px}
+  .runners .runner-question p{font-size:29px;text-align:left}
+}
