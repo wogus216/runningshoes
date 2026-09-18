@@ -159,7 +159,14 @@ const staticPageMap = {
   "/best": "src/app/(main)/best/page.tsx",
   "/vs": "src/app/(main)/vs/page.tsx",
   "/brands": "src/app/(main)/brands/page.tsx",
+  "/seochon": "public/seochon.html",
 };
+
+/**
+ * Next 라우트가 아닌 public/ 정적 페이지. next-sitemap 은 빌드 매니페스트의 페이지만 자동 수집하므로
+ * 여기서 직접 추가한다. 다른 페이지처럼 슬래시 없는 주소(/seochon → seochon.html)가 대표 주소다.
+ */
+const STATIC_HTML_PAGES = ["/seochon"];
 
 function lastModFor(urlPath) {
   if (urlPath.startsWith("/shoes/")) {
@@ -283,6 +290,8 @@ module.exports = {
     "/shoes-card.json",
     "/llms.txt",
   ],
+  additionalPaths: async (config) =>
+    Promise.all(STATIC_HTML_PAGES.map((urlPath) => config.transform(config, urlPath))),
   robotsTxtOptions: {
     policies: ROBOT_AGENTS.map((userAgent) => ({ userAgent, allow: "/", disallow: DISALLOW })),
     additionalSitemaps: [],
