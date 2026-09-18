@@ -190,9 +190,6 @@
 .floor-arrival{padding:40px 7% 8px}
 .mobile-break{display:none}
 @media(max-width:700px){.mobile-break{display:inline}}
-/* The name card was photographed sideways; rotate it on screen only and frame the card. */
-.plate-card{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:8px}
-.plate .plate-card img{position:absolute;left:50%;top:50%;width:165%;max-width:none;height:auto;border-radius:0;transform:translate(-50%,-50%) rotate(-90deg)}
 .plate-quote{margin:28px 0 0;padding-left:22px;border-left:1px solid #445b3c;max-width:30em}
 .plate-quote p{font-size:17px;line-height:2;color:var(--ink);letter-spacing:-.02em}
 .plate-split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:6%;align-items:center}
@@ -201,10 +198,10 @@
 .plate-medals{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
 .plate-medals .plate-label{order:-1}
 .plate-medals figure{justify-self:end;max-width:520px}
-.plate-person{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
-.plate-person figure{max-width:300px}
-.plate .plate-card img{filter:contrast(1.08) brightness(1.06)}
-.plate-person .plate-quote p{font-size:clamp(19px,1.8vw,25px);line-height:1.85}
+/* The name card photo carried a hard shadow, so the last plate is the card's own text, set large. */
+.plate-note .plate-label{max-width:1000px}
+.plate-note .plate-quote{margin-top:34px;padding-left:28px;max-width:none}
+.plate-note .plate-quote p{font-size:clamp(22px,2.2vw,31px);line-height:1.75;letter-spacing:-.035em}
 .runners .runner-question{max-width:1100px;margin:0 auto;padding:96px 7.5% 100px}
 .runners .runner-question p{font-size:clamp(28px,3.8vw,52px);line-height:1.55;letter-spacing:-.04em;text-align:center}
 
@@ -231,8 +228,8 @@
   .plate-room img{aspect-ratio:4/3}
   .plate-split{display:block}
   .plate-split figure,.plate-medals figure{width:86%}
-  .plate-person figure{width:66%}
-  .plate-person .plate-quote p{font-size:17px}
+  .plate-note .plate-quote{padding-left:18px}
+  .plate-note .plate-quote p{font-size:19px;line-height:1.8}
   .runners .runner-plates-note{font-size:15px}
   .runners .runner-plates-note br{display:none}
   .plate-label,.plate-wide .plate-label{display:block}
