@@ -536,4 +536,18 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   'recovery-run-vs-lsd-guide-2026': {
     data: '20~40분 · 3~6km · 대화 가능한 페이스',
   },
+  // 출처: bbangrun.com 기념품·코스 페이지 + 2026.bbangrun.com 판매 페이지(2026-09-18 확인) —
+  // 전 코스·9/9 취소표 판매 종료, 빵가방 5종, 하프 07:30 출발.
+  'daejeon-bbangbbang-run': {
+    title: '대전 빵빵런, 이제 남은 건 당일',
+    subtitle: '취소표까지 전 코스 매진 — 빵가방 5종과 셔틀 05:10편',
+    data: '10/9·10/10 엑스포시민광장 · 하프 6.9만 / 10K·5K 5.9만 · 성심당 튀김소보로 포함',
+  },
+  // 출처: smtownrunclub.com 규정·안내 이미지 + KREAM 상품 페이지(2026-09-18 확인) —
+  // 2차 9/10 판매 종료, 양도 불가, 공연 입장 배번 필수, 15:30 WayV·민호·하츠투하츠.
+  'smtown-run-club': {
+    title: 'SMTOWN RUN CLUB, 배번이 입장권',
+    subtitle: '2차 접수까지 마감 — 10월 3일 영종도 당일 시간표와 셔틀',
+    data: '10K · 10:00 그룹 출발 · 15:30 WayV·민호·하츠투하츠 · 양도 불가',
+  },
 };
