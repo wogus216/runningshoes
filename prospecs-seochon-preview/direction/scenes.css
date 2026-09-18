@@ -110,7 +110,7 @@
   .archive-sequence{margin-bottom:0}.archive-sticky{padding:24px 5% 18px}.archive-top{grid-template-columns:1fr auto;gap:8px;padding-bottom:15px}.archive-top h2{font-size:26px}.archive-top p{grid-column:1;font-size:11px}.archive-top>a{grid-column:2;grid-row:1 / 3;align-self:center;font-size:10px}
   .archive-ready{height:310svh}.archive-ready .archive-sticky{gap:12px}.archive-ready .archive-composition{grid-template-columns:1fr;grid-template-rows:92px minmax(0,1fr);gap:12px}.archive-ready .archive-dates{height:92px;width:100%;align-self:start}.archive-date{display:grid;grid-template-columns:auto 1fr;grid-template-rows:32px 1fr;column-gap:22px;align-items:center}.archive-year{font-size:clamp(72px,20vw,100px);grid-row:1 / 3;line-height:.95}.archive-month{font-size:12px;margin:0;align-self:end}.archive-date p{font-size:11px;margin-top:5px;align-self:start;max-width:none}.archive-ready .archive-pictures{margin:0}.archive-ready .archive-picture{inset:10% 11%}.archive-ready .archive-picture img{max-width:100%;max-height:100%}.archive-footnote{font-size:9px;gap:12px}.archive-footnote p{max-width:48%;line-height:1.5}.archive-years{gap:5px;padding-top:16px}.archive-years>a{font-size:13px}.archive-years small{font-size:9px}.archive-years>a::before{top:-19px}.archive-picture{margin-bottom:35px}.archive-picture figcaption{font-size:12px}
   .prologue{padding-top:65px}.floor-heading{margin-bottom:30px}.prologue-layout{grid-template-columns:1fr;gap:0}.film-main.scene-stay{position:static}.film-main img{max-height:none;object-fit:cover}.film-story{min-height:0;padding-top:35px}.film-story h3{font-size:27px}.film-detail{width:78%;margin-top:32px;padding-top:0}.film-detail img{max-height:none}.prologue-pause{font-size:30px;margin:48px 0 38px}.postcard{grid-template-columns:1fr;gap:30px}.postcard figure{width:95%}.postcard-actions{margin-top:28px;gap:12px}.postcard-actions li{font-size:12px}
-  .runners{padding-top:60px}.runner-heading{margin-bottom:30px}.runner-room img{aspect-ratio:3/4}.runner-intro{padding:50px 7% 40px}.runner-objects{padding:0 6%}.object-moment{grid-template-columns:1fr;gap:25px}.object-text.scene-stay{position:static;margin:0}.object-text{padding:0}.object-text h3{font-size:46px}.object-text p{font-size:14px;margin-top:20px}.medals{width:96%;margin-left:auto}.book-moment{margin-top:50px;gap:28px}.book-moment .books{width:100%;margin:0}.book-moment .object-text{padding-left:5%}.book-moment h3{font-size:36px}.runner-question{padding:65px 7%}.runner-question p{font-size:31px;text-align:left}.invitation{grid-template-columns:1fr;gap:30px;padding:0}.invitation>div>p{font-size:33px}.visit{padding-top:55px}
+  .runners{padding-top:60px}.runner-heading{margin-bottom:30px}.runner-room img{aspect-ratio:3/4}.runner-intro{padding:50px 7% 40px}.runner-objects{padding:0 6%}.object-moment{grid-template-columns:1fr;gap:25px}.object-text.scene-stay{position:static;margin:0}.object-text{padding:0}.object-text h3{font-size:46px}.object-text p{font-size:14px;margin-top:20px}.medals{width:96%;margin-left:auto}.book-moment{margin-top:50px;gap:28px}.book-moment .books{width:100%;margin:0}.book-moment .object-text{padding-left:5%}.book-moment h3{font-size:36px}.runner-question{padding:65px 7%}.runner-question p{font-size:31px;text-align:left}.invitation{grid-template-columns:1fr;gap:30px;padding:0}.invitation figure{width:100%}.invitation>div{padding-left:0}.invitation>div>p{font-size:33px}.visit{padding-top:55px}
 }
 @media(prefers-reduced-motion:reduce){
   .scene-stay{position:static!important}.film-story{min-height:0}.film-detail{margin-top:40px;padding-top:0}.runner-room img{clip-path:none!important;transform:none!important}.postcard-actions li::before{transform:none!important}
@@ -243,3 +243,20 @@
   .runners .runner-question p{font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){.course-fill{transform:none}}
+
+/* One content grid: every section starts on the same gutter. The masthead and footer keep the outer frame. */
+:root{--g:max(7.5%, calc((100% - 1320px) / 2))}
+@media(min-width:701px){
+  .introduction,.archive-sticky,.place-story,.prologue,.runners .runner-heading,.invitation{padding-left:var(--g);padding-right:var(--g)}
+  .introduction,.place-story,.prologue,.runners .runner-heading,.invitation{max-width:none;margin-left:0;margin-right:0}
+  .plates-course{max-width:none;--course-x:calc(var(--g) - 44px)}
+  .plates{padding-left:var(--g);padding-right:var(--g)}
+  .plate::before{left:-48px}
+  .visit{margin-left:var(--g);margin-right:var(--g);padding-left:0;padding-right:0}
+}
+/* Nothing on a phone smaller than 11px; captions 12px. */
+@media(max-width:700px){
+  .year span,.scroll-cue,.skip,.archive-top>a,.archive-years small,.archive-footnote,.archive-footnote p,.archive-scroll-hint,.floor-scene-label,.runners .runner-kicker,.plate-no,footer,footer details p{font-size:11px}
+  figcaption,.place-story figcaption,.film-detail figcaption,.runners .runner-room figcaption{font-size:12px}
+  .archive-sticky{padding-left:7%;padding-right:7%}
+}
