@@ -7,6 +7,9 @@
 .place-copy{margin-top:100px}
 .place-story figure{width:100%}
 .place-copy.scene-stay{position:sticky;top:26svh}
+.place-photos{display:flex;flex-direction:column;gap:20px;width:100%}
+.place-photos .place-photo-detail{width:56%;align-self:flex-end;margin-top:4px}
+.place-photo-detail figcaption{font-size:12px}
 
 /* The archive has a normal document layout until scroll enhancement is active. */
 .archive-sequence{position:relative;background:#eeefe8;margin:0 0 40px}
@@ -103,7 +106,7 @@
 }
 @media(max-width:700px){
   .introduction{padding:70px 7% 65px}.exhibition-title h1{font-size:clamp(59px,15vw,82px)}.memory-copy{margin-top:60px}
-  .place{padding-bottom:60px}.place-story{grid-template-columns:1fr;gap:30px;padding:0 7%;margin-bottom:0}.place-copy{margin-top:0}.place-copy.scene-stay{position:static}.place-story figure{width:83%}
+  .place{padding-bottom:60px}.place-story{grid-template-columns:1fr;gap:30px;padding:0 7%;margin-bottom:0}.place-copy{margin-top:0}.place-copy.scene-stay{position:static}.place-story figure{width:83%}.place-photos{gap:22px}.place-photos .place-photo-detail{width:72%}
   .archive-sequence{margin-bottom:0}.archive-sticky{padding:24px 5% 18px}.archive-top{grid-template-columns:1fr auto;gap:8px;padding-bottom:15px}.archive-top h2{font-size:26px}.archive-top p{grid-column:1;font-size:11px}.archive-top>a{grid-column:2;grid-row:1 / 3;align-self:center;font-size:10px}
   .archive-ready{height:310svh}.archive-ready .archive-sticky{gap:12px}.archive-ready .archive-composition{grid-template-columns:1fr;grid-template-rows:92px minmax(0,1fr);gap:12px}.archive-ready .archive-dates{height:92px;width:100%;align-self:start}.archive-date{display:grid;grid-template-columns:auto 1fr;grid-template-rows:32px 1fr;column-gap:22px;align-items:center}.archive-year{font-size:clamp(72px,20vw,100px);grid-row:1 / 3;line-height:.95}.archive-month{font-size:12px;margin:0;align-self:end}.archive-date p{font-size:11px;margin-top:5px;align-self:start;max-width:none}.archive-ready .archive-pictures{margin:0}.archive-ready .archive-picture{inset:10% 11%}.archive-ready .archive-picture img{max-width:100%;max-height:100%}.archive-footnote{font-size:9px;gap:12px}.archive-footnote p{max-width:48%;line-height:1.5}.archive-years{gap:5px;padding-top:16px}.archive-years>a{font-size:13px}.archive-years small{font-size:9px}.archive-years>a::before{top:-19px}.archive-picture{margin-bottom:35px}.archive-picture figcaption{font-size:12px}
   .prologue{padding-top:65px}.floor-heading{margin-bottom:30px}.prologue-layout{grid-template-columns:1fr;gap:0}.film-main.scene-stay{position:static}.film-main img{max-height:none;object-fit:cover}.film-story{min-height:0;padding-top:35px}.film-story h3{font-size:27px}.film-detail{width:78%;margin-top:32px;padding-top:0}.film-detail img{max-height:none}.prologue-pause{font-size:30px;margin:48px 0 38px}.postcard{grid-template-columns:1fr;gap:30px}.postcard figure{width:95%}.postcard-actions{margin-top:28px;gap:12px}.postcard-actions li{font-size:12px}
@@ -154,55 +157,77 @@
 }
 @media(prefers-reduced-motion:reduce){.floor-photo img{opacity:1;transform:none}}
 
-/* Second floor: a quiet collection catalogue, led by objects rather than a hero effect. */
-.runners{padding-top:112px}
-.runners .runner-heading{display:block;padding:0 7.5%;max-width:1120px;margin:0 auto 58px}
-.runners .runner-kicker{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;margin-bottom:52px;font-size:10px;letter-spacing:.07em;color:var(--sub)}
-.runners .runner-heading h2{font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-size:clamp(48px,6vw,82px);font-weight:400;line-height:1.15;letter-spacing:-.055em}
-.runners .runner-deck{margin:25px 0 0 42%;font-size:15px;line-height:2;color:var(--sub)}
-.runners .runner-floor{display:none}
-.runners .runner-room{width:100%;overflow:visible}
-.runners .runner-room img{aspect-ratio:16/9;object-fit:cover;object-position:50% 56%;clip-path:none!important;transform:none!important}
-.runners .runner-room figcaption{margin:13px 7.5% 0;font-size:11px;color:var(--sub)}
-.runners .runner-intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;max-width:1100px;padding:92px 7.5% 100px;align-items:start}
-.runner-intro-label{font-size:10px;letter-spacing:.08em;color:var(--sub);padding-top:8px}
-.runners .runner-intro p{font-size:17px;line-height:2;color:var(--ink)}
-.runners .runner-objects{display:block;padding:0 12%;max-width:1320px}
-.runners .object-moment{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:12%;align-items:center;padding-top:36px}
-.runners .object-moment + .object-moment{margin-top:155px;padding-top:0}
-.runners .object-text{padding:0}
-.runners .object-text.scene-stay{position:static;margin:0}
-.runners .object-label{display:block;font-size:10px;letter-spacing:.08em;color:var(--sub);margin-bottom:22px}
-.runners .object-text h3{font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-size:clamp(28px,3.3vw,46px);font-weight:400;line-height:1.5;letter-spacing:-.05em}
-.runners .object-text p{font-size:14px;line-height:2;color:var(--sub);margin-top:25px}
-.runners .medals{width:min(100%,430px);justify-self:center}
-.runners .medals img{border-radius:8px}
-.runners .book-moment{grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);align-items:center}
-.runners .books{width:min(100%,520px);margin:0}
-.runners .books img{border-radius:8px}
-.runners .runner-question{max-width:1100px;padding:155px 7.5% 130px;margin:auto}
-.runners .runner-question p{font-size:clamp(26px,3.5vw,47px);line-height:1.55;text-align:left;color:var(--ink)}
+/* Second floor: numbered plates along one course line, each labelled like a museum object. */
+.runners{padding:0}
+.runner-hall{padding:120px 0 0}
+.runners .runner-heading{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);align-items:end;gap:0 8%;max-width:1320px;padding:0 7.5%;margin:0 auto 96px}
+.runners .runner-kicker{grid-column:1 / -1;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:13px 0 0;margin-bottom:64px;font-size:10px;letter-spacing:.08em;color:var(--sub)}
+.runners .runner-heading h2{font-family:"Baskerville","Times New Roman",serif;font-size:clamp(58px,7.6vw,112px);font-weight:400;line-height:1.02;letter-spacing:-.04em}
+.runners .runner-heading h2 em{display:block;margin-top:.32em;font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-style:normal;font-size:.42em;letter-spacing:-.04em;line-height:1.4}
+.runners .runner-deck{margin:0 0 .6em;font-size:15px;line-height:2;color:var(--sub)}
 
-@media(max-width:700px){
-  .runners{padding-top:70px}
-  .runners .runner-heading{padding:0 7%;margin-bottom:36px}
-  .runners .runner-kicker{margin-bottom:30px;font-size:9px}
-  .runners .runner-kicker span:last-child{max-width:13ch;text-align:right}
-  .runners .runner-heading h2{font-size:48px}
-  .runners .runner-deck{margin:18px 0 0;font-size:13px;line-height:1.9}
-  .runners .runner-room img{aspect-ratio:3/4;object-position:center}
-  .runners .runner-room figcaption{margin:11px 7% 0}
-  .runners .runner-intro{display:block;padding:62px 7% 66px}
-  .runner-intro-label{display:block;margin-bottom:22px}
-  .runners .runner-intro p{font-size:15px;line-height:2}
-  .runners .runner-intro p br{display:none}
-  .runners .runner-objects{padding:0 9%}
-  .runners .object-moment,.runners .book-moment{display:flex;flex-direction:column;gap:34px;align-items:stretch;padding-top:0}
-  .runners .object-moment + .object-moment{margin-top:88px}
-  .runners .medals,.runners .books{width:88%;max-width:none;align-self:center}
-  .runners .object-text h3{font-size:32px}
-  .runners .object-text p{font-size:13px;margin-top:18px}
-  .runners .object-text p br{display:none}
-  .runners .runner-question{padding:100px 9% 82px}
-  .runners .runner-question p{font-size:29px;text-align:left}
+.plates-course{--course-x:calc(7.5% + 18px);position:relative;max-width:1320px;margin:0 auto}
+.plates-course::before,.course-fill{content:"";position:absolute;left:var(--course-x);top:0;bottom:0;width:1px;background:#c9cec1}
+.course-fill{background:#445b3c;transform:scaleY(var(--course,1));transform-origin:top}
+.plates-course::after{content:"";position:absolute;left:calc(var(--course-x) - 4px);bottom:-5px;width:9px;height:9px;border-radius:50%;background:#445b3c}
+.plates{list-style:none;margin:0;padding:0 7.5% 150px calc(7.5% + 70px)}
+.plate{position:relative;scroll-margin-top:40px}
+.plate + .plate{margin-top:170px}
+.plate::before{content:"";position:absolute;left:-56px;top:5px;width:7px;height:7px;border:1px solid #858e7d;background:var(--paper)}
+.plate img{border-radius:8px}
+.plate-label{display:grid;grid-template-columns:110px minmax(0,1fr);column-gap:28px;align-content:start}
+.plate-no{grid-row:1 / span 4;font-size:10px;letter-spacing:.09em;color:var(--sub);padding-top:4px;font-variant-numeric:tabular-nums}
+.plate-label h3{font-size:clamp(25px,2.6vw,36px);line-height:1.45;letter-spacing:-.045em}
+.plate-meta{margin-top:12px;font-size:12px;color:var(--sub);letter-spacing:.01em}
+.plate-label>p:not(.plate-meta){margin-top:26px;max-width:34em;font-size:15px;line-height:2;color:var(--sub)}
+.plate-wide figure{margin-bottom:40px}
+.plate-wide .plate-label{grid-template-columns:110px minmax(0,1fr) minmax(0,1fr);column-gap:28px}
+.plate-wide .plate-label>p:not(.plate-meta){grid-column:3;grid-row:1 / span 3;margin-top:0}
+.plate-room img{aspect-ratio:2/1;object-fit:cover;object-position:50% 38%}
+/* The name card was photographed sideways; rotate it on screen only and frame the card. */
+.plate-card{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:8px}
+.plate .plate-card img{position:absolute;left:50%;top:50%;width:165%;max-width:none;height:auto;border-radius:0;transform:translate(-50%,-50%) rotate(-90deg)}
+.plate-quote{margin:28px 0 0;padding-left:22px;border-left:1px solid #445b3c;max-width:30em}
+.plate-quote p{font-size:17px;line-height:2;color:var(--ink);letter-spacing:-.02em}
+.plate-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:center}
+.plate-split figure{width:min(100%,470px)}
+.plate-panel figure{justify-self:start}
+.plate-medals .plate-label{order:-1}
+.plate-medals figure{justify-self:end;width:min(100%,430px)}
+.runners .runner-question{max-width:1100px;margin:0 auto;padding:130px 7.5% 140px}
+.runners .runner-question p{font-size:clamp(28px,3.8vw,52px);line-height:1.55;letter-spacing:-.04em;text-align:center}
+
+@media(max-width:1000px) and (min-width:701px){
+  .runners .runner-heading{grid-template-columns:1fr}
+  .runners .runner-deck{margin-top:30px}
+  .plate-label,.plate-wide .plate-label{grid-template-columns:90px minmax(0,1fr)}
+  .plate-wide .plate-label>p:not(.plate-meta){grid-column:2;grid-row:auto;margin-top:26px}
 }
+@media(max-width:700px){
+  .runner-hall{padding-top:80px}
+  .runners .runner-heading{display:block;padding:0 7%;margin-bottom:56px}
+  .runners .runner-kicker{margin-bottom:40px;font-size:9px}
+  .runners .runner-kicker{gap:12px}
+  .runners .runner-kicker span{white-space:nowrap}
+  .runners .runner-heading h2{font-size:clamp(44px,12.5vw,62px)}
+  .runners .runner-deck{margin-top:26px;font-size:13px;line-height:1.9}
+  .plates-course{--course-x:calc(7% + 4px)}
+  .plates{padding:0 7% 96px calc(7% + 30px)}
+  .plate + .plate{margin-top:96px}
+  .plate::before{left:-30px}
+  .plate figure{margin-bottom:26px}
+  .plate img{border-radius:6px}
+  .plate-room img{aspect-ratio:4/3}
+  .plate-split{display:block}
+  .plate-split figure,.plate-medals figure{width:86%}
+  .plate-label,.plate-wide .plate-label{display:block}
+  .plate-no{display:block;margin-bottom:12px}
+  .plate-label h3{font-size:24px}
+  .plate-label>p:not(.plate-meta),.plate-wide .plate-label>p:not(.plate-meta){margin-top:18px;font-size:14px}
+  .plate-label>p br{display:none}
+  .plate-quote{margin-top:20px;padding-left:16px}
+  .plate-quote p{font-size:15px}
+  .runners .runner-question{padding:88px 7% 84px}
+  .runners .runner-question p{font-size:28px}
+}
+@media(prefers-reduced-motion:reduce){.course-fill{transform:none}}
