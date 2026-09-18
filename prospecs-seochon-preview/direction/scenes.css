@@ -172,7 +172,7 @@
 .plates-course::after{content:"";position:absolute;left:calc(var(--course-x) - 4px);bottom:-5px;width:9px;height:9px;border-radius:50%;background:#445b3c}
 .plates{list-style:none;margin:0;padding:0 7.5% 150px calc(7.5% + 70px)}
 .plate{position:relative;scroll-margin-top:40px}
-.plate + .plate{margin-top:170px}
+.plate + .plate{margin-top:135px}
 .plate::before{content:"";position:absolute;left:-56px;top:5px;width:7px;height:7px;border:1px solid #858e7d;background:var(--paper)}
 .plate img{border-radius:8px}
 .plate-label{display:grid;grid-template-columns:110px minmax(0,1fr);column-gap:28px;align-content:start}
@@ -183,17 +183,25 @@
 .plate-wide figure{margin-bottom:40px}
 .plate-wide .plate-label{grid-template-columns:110px minmax(0,1fr) minmax(0,1fr);column-gap:28px}
 .plate-wide .plate-label>p:not(.plate-meta){grid-column:3;grid-row:1 / span 3;margin-top:0}
-.plate-room img{aspect-ratio:2/1;object-fit:cover;object-position:50% 38%}
+.plate-room img{aspect-ratio:2/1;object-fit:cover;object-position:50% 22%}
+/* Keep the left panel (Legend of Fall, 1946, timeline); the shipping crate sits past 57% width. */
+.plate-panel img{aspect-ratio:3/4;object-fit:cover;object-position:0% 50%}
+.runners .runner-plates-note{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;line-height:1.9;color:var(--ink)}
 /* The name card was photographed sideways; rotate it on screen only and frame the card. */
 .plate-card{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:8px}
 .plate .plate-card img{position:absolute;left:50%;top:50%;width:165%;max-width:none;height:auto;border-radius:0;transform:translate(-50%,-50%) rotate(-90deg)}
 .plate-quote{margin:28px 0 0;padding-left:22px;border-left:1px solid #445b3c;max-width:30em}
 .plate-quote p{font-size:17px;line-height:2;color:var(--ink);letter-spacing:-.02em}
-.plate-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9%;align-items:center}
-.plate-split figure{width:min(100%,470px)}
+.plate-split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:6%;align-items:center}
+.plate-split figure{width:100%;max-width:560px}
 .plate-panel figure{justify-self:start}
+.plate-medals{grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
 .plate-medals .plate-label{order:-1}
-.plate-medals figure{justify-self:end;width:min(100%,430px)}
+.plate-medals figure{justify-self:end;max-width:520px}
+.plate-person{grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr)}
+.plate-person figure{max-width:300px}
+.plate .plate-card img{filter:contrast(1.08) brightness(1.06)}
+.plate-person .plate-quote p{font-size:clamp(19px,1.8vw,25px);line-height:1.85}
 .runners .runner-question{max-width:1100px;margin:0 auto;padding:130px 7.5% 140px}
 .runners .runner-question p{font-size:clamp(28px,3.8vw,52px);line-height:1.55;letter-spacing:-.04em;text-align:center}
 
@@ -220,6 +228,10 @@
   .plate-room img{aspect-ratio:4/3}
   .plate-split{display:block}
   .plate-split figure,.plate-medals figure{width:86%}
+  .plate-person figure{width:66%}
+  .plate-person .plate-quote p{font-size:17px}
+  .runners .runner-plates-note{font-size:11px}
+  .runners .runner-plates-note br{display:none}
   .plate-label,.plate-wide .plate-label{display:block}
   .plate-no{display:block;margin-bottom:12px}
   .plate-label h3{font-size:24px}
