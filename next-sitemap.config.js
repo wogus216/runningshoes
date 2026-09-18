@@ -216,10 +216,14 @@ function lastModFor(urlPath) {
  * 이를 "접근 불가한 페이지(수집제한)" 4건으로 잡고 있었다(2026-08-21 확인).
  * robots.txt 로 막으면 시도 자체를 안 한다. 브라우저 fetch 는 영향받지 않는다.
  *
+ * `/compare?` 는 비교 도구의 파라미터 변형(`/compare?shoes=...`)이다. 정적 페이지 하나라 변형마다
+ * 제목·설명이 같고, canonical(→ /compare) 이 있어도 네이버는 변형을 제각각 수집해
+ * "동일 제목 46 · 동일 설명문 46" 으로 잡았다(2026-09-18). prefix 매칭이라 `/compare` 자체는 열려 있다.
+ *
  * llms.txt 는 **막지 않는다** — AI 크롤러가 읽어야 하는 파일이다. 다만 루트 관례로
  * 찾으므로 sitemap 등록은 불필요해서 exclude 에만 넣는다.
  */
-const DISALLOW = ["/api/*", "/blog-index.json", "/search-index.json", "/shoes-card.json"];
+const DISALLOW = ["/api/*", "/blog-index.json", "/search-index.json", "/shoes-card.json", "/compare?"];
 
 /** robots.txt 에 개별 정책을 남기는 크롤러 — 전부 같은 규칙을 쓴다 */
 const ROBOT_AGENTS = [

@@ -24,6 +24,12 @@ const TOP_PER_CATEGORY = 10; // 10C2=45 → 6 categories × 45 = 270 pairs max
  * 페어 구성 로직을 손볼 때는 GSC `page` 차원으로 죽은 URL을 먼저 확인할 것.**
  */
 export const PINNED_PAIRS: readonly string[] = [
+  // 2026-09-18 네이버 "접근 불가한 페이지" 4건 — 소닉블라스트 2 등록(8/27)으로 1세대가 쿠션화
+  // 상위 N에서 밀려나며 404가 된 페어. 네이버가 이미 수집한 URL이라 되살린다.
+  'adidas-supernova-rise-3-vs-asics-sonicblast',
+  'asics-megablast-vs-asics-sonicblast',
+  'asics-sonicblast-vs-new-balance-1080-v14',
+  'asics-sonicblast-vs-nike-vomero-18',
   'adidas-adizero-evo-sl-vs-hoka-mach-6',
   'adidas-adizero-evo-sl-vs-nike-pegasus-plus',
   'adidas-adizero-evo-sl-vs-nike-rival-fly-4',
