@@ -68,6 +68,13 @@ export const shoe: Shoe = {
       '평발·과내전',
     ],
   },
+  priceAnalysis: {
+    msrp: 229000,
+    costPerKm: 458,
+    valueRating: 7,
+    priceTier: 'premium',
+    alternatives: ['asics-sonicblast', 'asics-superblast-3', 'new-balance-sc-rebel'],
+  },
   features: [
     '포크형 ASTROPLATE — Blast 계열 중 소닉블라스트 전용 기술',
     '전족부 트램폴린 포드 (신규)',

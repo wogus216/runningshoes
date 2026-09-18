@@ -59,6 +59,13 @@ export const shoe: Shoe = {
       '낮은 드롭·로커형 발놀림을 선호하는 러너',
     ],
   },
+  priceAnalysis: {
+    msrp: 219000,
+    costPerKm: 487,
+    valueRating: 7,
+    priceTier: 'premium',
+    alternatives: ['nike-pegasus-plus', 'saucony-endorphin-speed-5', 'asics-novablast-5'],
+  },
   features: [
     '전족부 노출형 커브드 Air Zoom 유닛 (신규)',
     '재설계 ZoomX — 1세대보다 유연해진 반발',

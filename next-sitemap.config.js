@@ -127,25 +127,16 @@ const blogMeta = (() => {
   return map;
 })();
 
-// noindex: true 플래그가 켜진 신발은 sitemap에서도 제외 (페이지 robots noindex와 일관성).
-// 신발 데이터에 noindex: true만 추가하면 자동 제외 — 별도 등록 불필요.
-function isNoindexShoe(slug) {
-  const file = shoeSlugFileMap[slug];
-  if (!file) return false;
-  try {
-    return /^ {2}noindex:\s*true/m.test(fs.readFileSync(path.join(__dirname, file), "utf8"));
-  } catch {
-    return false;
-  }
-}
-
-// /best 페이지의 noindex 여부는 **빌드된 HTML**에서 읽는다.
-// 어느 그룹을 noindex 할지는 src/app/(detail)/best/[slug]/page.tsx 한 곳에서만 정하고,
-// 여기서는 그 결과를 확인만 한다 — 목록을 두 곳에 복제하면 반드시 어긋난다.
+// noindex 페이지는 sitemap 에서 뺀다 — 판정은 **빌드된 HTML** 의 robots meta 로 한다.
+// noindex 를 거는 이유(신발 noindex 플래그, isCompleteShoe 미충족, /best 브랜드×카테고리 그룹 등)는
+// 각 page.tsx 한 곳에서만 정하고, 여기서는 결과만 읽는다 — 목록을 복제하면 반드시 어긋난다.
+// 과거엔 신발 플래그·/best 만 걸러서, 데이터가 덜 찬 신발(noindex)이 sitemap 에 남았고
+// 네이버가 그 URL 을 수집해 "meta robots 로 색인에서 제외된 페이지"로 쌓았다(2026-09-18).
 // (postbuild 시점이라 out/ 은 이미 만들어져 있다.)
-function isNoindexBestPage(slug) {
+function isNoindexBuilt(urlPath) {
+  const rel = urlPath === "/" ? "index" : urlPath.replace(/^\//, "").replace(/\/$/, "");
   try {
-    const html = fs.readFileSync(path.join(__dirname, "out", "best", `${slug}.html`), "utf8");
+    const html = fs.readFileSync(path.join(__dirname, "out", `${rel}.html`), "utf8");
     return /<meta name="robots" content="[^"]*noindex/.test(html);
   } catch {
     return false;
@@ -296,14 +287,9 @@ module.exports = {
     const lastmod = lastModFor(urlPath);
     seenLastmods.add(lastmod);
 
+    if (isNoindexBuilt(urlPath)) return null;
     if (urlPath.startsWith("/shoes/")) {
-      const slug = urlPath.replace("/shoes/", "").replace(/\/$/, "");
-      if (isNoindexShoe(slug)) return null; // noindex 신발은 sitemap 제외
       return { loc: urlPath, changefreq: "weekly", priority: 0.9, lastmod };
-    }
-    if (urlPath.startsWith("/best/")) {
-      const slug = urlPath.replace("/best/", "").replace(/\/$/, "");
-      if (isNoindexBestPage(slug)) return null; // noindex 페이지는 sitemap 제외
     }
     if (urlPath === "/marathon") {
       return { loc: urlPath, changefreq: "daily", priority: 0.8, lastmod };
