@@ -407,6 +407,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         */}
         {shoe.purchaseLinks && shoe.purchaseLinks.length > 0 && (
           <PurchaseLinks
+            id="purchase-links"
             purchaseLinks={shoe.purchaseLinks}
             shoeName={shoe.name}
             brand={shoe.brand}

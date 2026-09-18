@@ -7,6 +7,10 @@ type PurchaseLinksProps = {
   shoeName: string;
   brand: string;
   msrp?: number;
+  // 이 컴포넌트는 페이지 하단과 "가격" 탭 안(shoe-detail-tabs.tsx) 두 군데서 쓰인다.
+  // id를 컴포넌트에 박아두면 같은 페이지에 중복 id가 생기니, 앵커가 필요한
+  // 호출부(page.tsx 하단)에서만 넘긴다.
+  id?: string;
 };
 
 // 스토어별 아이콘/색상
@@ -46,7 +50,7 @@ function isValidPurchaseUrl(url: string): boolean {
   }
 }
 
-export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: PurchaseLinksProps) {
+export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: PurchaseLinksProps) {
   if (!purchaseLinks || purchaseLinks.length === 0) {
     return null;
   }
@@ -82,7 +86,7 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp }: Purchase
   const hasComparison = pricedLinks.length >= 2;
 
   return (
-    <section className="space-y-5">
+    <section id={id} className={id ? 'scroll-mt-20 space-y-5' : 'space-y-5'}>
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Where To Buy</p>
         <h2 className="flex items-center gap-3 text-2xl font-black tracking-tight text-slate-950">

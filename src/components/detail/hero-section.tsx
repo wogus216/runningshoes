@@ -5,6 +5,7 @@ import type { Shoe } from "@/types/shoe";
 import { ImageSlider } from "./image-slider";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
+import { AffiliateDisclosureInline } from "./affiliate-disclosure";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
 import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { getShoeDurability } from "@/lib/durability";
@@ -19,11 +20,13 @@ export function HeroSection({ shoe }: HeroSectionProps) {
   const koreanFootFit = shoe.koreanFootFit;
   // 이미지 배열 준비 (images가 있으면 사용, 없으면 image를 배열로)
   const images = shoe.images?.length ? shoe.images : (shoe.image ? [shoe.image] : []);
-  const primaryLink = [...(shoe.purchaseLinks || [])].sort((a, b) => {
+  // 공식몰 우선 정렬. 네이버·쿠팡처럼 판매처가 2곳 이상이면 하나만 골라 놓치지 않도록
+  // 전부 버튼으로 노출한다(둘 다 제휴 수수료가 걸려 있어 한쪽만 보여주면 기회 손실).
+  const sortedPurchaseLinks = [...(shoe.purchaseLinks || [])].sort((a, b) => {
     if (a.isOfficial && !b.isOfficial) return -1;
     if (!a.isOfficial && b.isOfficial) return 1;
     return 0;
-  })[0];
+  });
 
   // 내구성은 단일 숫자가 아니라 근거 등급이 붙은 범위로 표기한다 (@/lib/durability)
   const durability = getShoeDurability(shoe);
@@ -67,7 +70,7 @@ export function HeroSection({ shoe }: HeroSectionProps) {
         <div className="border-b-2 border-primary p-5 md:border-b-0 md:border-r-2 md:p-8 lg:p-10">
           <div className="flex flex-wrap items-center justify-between gap-2 font-mono text-[11px] uppercase tracking-[0.2em] text-tertiary">
             <span>{shoe.category} · {shoe.brand}</span>
-            {primaryLink?.isOfficial && <span className="text-signal-dark">공식 판매처</span>}
+            {sortedPurchaseLinks[0]?.isOfficial && <span className="text-signal-dark">공식 판매처</span>}
           </div>
 
           <h1 className="mt-4 text-balance text-4xl font-extrabold leading-[1.05] tracking-tight text-primary md:text-5xl">
@@ -138,21 +141,41 @@ export function HeroSection({ shoe }: HeroSectionProps) {
               </div>
             </div>
 
-            <div className="flex flex-col gap-2 sm:flex-row">
-              {primaryLink ? (
-                <a
-                  href={primaryLink.url}
-                  target="_blank"
-                  rel="noopener noreferrer nofollow"
-                  className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-accent px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
-                >
-                  구매처 보기
-                  <ArrowUpRight className="h-4 w-4" />
-                </a>
-              ) : null}
-              <AddToCompareButton shoe={shoe} className="min-h-[48px] justify-center" />
-              <SaveButton slug={shoe.slug ?? ''} variant="full" className="min-h-[48px]" />
+            <div className="flex flex-col gap-2">
+              {sortedPurchaseLinks.length > 0 && (
+                <div className="flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+                  {sortedPurchaseLinks.length === 1 ? (
+                    <a
+                      href={sortedPurchaseLinks[0].url}
+                      target="_blank"
+                      rel="noopener noreferrer nofollow"
+                      className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-accent px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
+                    >
+                      구매처 보기
+                      <ArrowUpRight className="h-4 w-4" />
+                    </a>
+                  ) : (
+                    sortedPurchaseLinks.map((link) => (
+                      <a
+                        key={`${link.store}-${link.url}`}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer nofollow"
+                        className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-accent px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
+                      >
+                        {link.store}에서 구매
+                        <ArrowUpRight className="h-4 w-4" />
+                      </a>
+                    ))
+                  )}
+                </div>
+              )}
+              <div className="flex flex-col gap-2 sm:flex-row">
+                <AddToCompareButton shoe={shoe} className="min-h-[48px] justify-center" />
+                <SaveButton slug={shoe.slug ?? ''} variant="full" className="min-h-[48px]" />
+              </div>
             </div>
+            {sortedPurchaseLinks.length > 0 && <AffiliateDisclosureInline purchaseLinks={shoe.purchaseLinks} />}
           </div>
         </div>
 
