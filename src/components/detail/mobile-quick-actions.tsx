@@ -2,8 +2,9 @@
 
 import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ChevronDown } from 'lucide-react';
 import type { Shoe } from '@/types/shoe';
+import { getDisclosureText } from './affiliate-disclosure';
 
 type MobileQuickActionsProps = {
   shoe: Shoe;
@@ -57,12 +58,15 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // 첫 번째 구매 링크 (공식몰 우선)
-  const primaryLink = [...(shoe.purchaseLinks || [])].sort((a, b) => {
+  // 공식몰 우선 정렬. 판매처가 2곳 이상이면(네이버+쿠팡 등) 하나로 단정하지 않고
+  // 하단 전체 비교 섹션(#purchase-links)으로 보낸다 — 히어로와 같은 판단.
+  const sortedLinks = [...(shoe.purchaseLinks || [])].sort((a, b) => {
     if (a.isOfficial && !b.isOfficial) return -1;
     if (!a.isOfficial && b.isOfficial) return 1;
     return 0;
-  })[0];
+  });
+  const primaryLink = sortedLinks[0];
+  const hasMultipleLinks = sortedLinks.length >= 2;
 
   // 바닥에 더 붙인다 (4rem → 0.75rem). 2026-08-25 모바일 실측에서 두 가지가 걸렸다.
   //
@@ -102,15 +106,34 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
             + 비교함
           </Link>
           {primaryLink ? (
-            <a
-              href={primaryLink.url}
-              target="_blank"
-              rel="noopener noreferrer nofollow"
-              className="flex items-center gap-1.5 rounded bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
-            >
-              구매처 보기
-              <ExternalLink className="h-3.5 w-3.5" />
-            </a>
+            // 바 너비가 360px 화면에서 이미 빠듯하다(2026-08-25 픽셀 튜닝) — 아이콘을
+            // 추가로 넣었더니 가격과 겹치는 버그가 났다. 폭을 늘리지 않고 title로만 고지한다.
+            // 실제 노출은 히어로의 AffiliateDisclosureInline(스크롤 100px 이전, 이 바보다
+            // 먼저 보임) + 하단 PurchaseLinks 섹션의 AffiliateDisclosure가 담당한다.
+            //
+            // 판매처가 2곳 이상이면 여기서 하나만 골라 바로 나가지 않고 #purchase-links
+            // 전체 비교 섹션으로 스크롤한다 — 나머지 판매처(제휴 링크)를 놓치지 않게.
+            hasMultipleLinks ? (
+              <Link
+                href="#purchase-links"
+                title={getDisclosureText(shoe.purchaseLinks)}
+                className="flex items-center gap-1.5 rounded bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
+              >
+                구매처 비교
+                <ChevronDown className="h-3.5 w-3.5" />
+              </Link>
+            ) : (
+              <a
+                href={primaryLink.url}
+                target="_blank"
+                rel="noopener noreferrer nofollow"
+                title={getDisclosureText(shoe.purchaseLinks)}
+                className="flex items-center gap-1.5 rounded bg-stone-950 px-5 py-2.5 text-sm font-medium text-white transition hover:bg-stone-900"
+              >
+                구매처 보기
+                <ExternalLink className="h-3.5 w-3.5" />
+              </a>
+            )
           ) : (
             <button
               disabled

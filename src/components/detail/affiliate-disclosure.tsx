@@ -6,7 +6,12 @@ interface PurchaseLinkLike {
   store?: string;
 }
 
-function getDisclosureText(purchaseLinks?: PurchaseLinkLike[]): string {
+/**
+ * 쿠팡 파트너스 고지 문구는 운영정책이 요구하는 표준 문구
+ * ("이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.")를
+ * 그대로 쓴다 — 축약하면 안 된다.
+ */
+export function getDisclosureText(purchaseLinks?: PurchaseLinkLike[]): string {
   if (!purchaseLinks || purchaseLinks.length === 0) {
     return '이 포스팅은 제휴 활동의 일환으로, 판매 발생 시 수수료를 제공받을 수 있습니다.';
   }
@@ -19,13 +24,13 @@ function getDisclosureText(purchaseLinks?: PurchaseLinkLike[]): string {
   );
 
   if (hasNaver && hasCoupang) {
-    return '이 포스팅은 네이버 쇼핑 커넥트 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다. 일부 링크는 쿠팡 파트너스 활동의 일환으로, 일정액의 수수료를 제공받습니다.';
+    return '이 포스팅은 네이버 쇼핑 커넥트 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다. 일부 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
   }
   if (hasNaver) {
     return '이 포스팅은 네이버 쇼핑 커넥트 활동의 일환으로, 판매 발생 시 수수료를 제공받습니다.';
   }
   if (hasCoupang) {
-    return '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 일정액의 수수료를 제공받습니다.';
+    return '이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.';
   }
 
   return '이 포스팅은 제휴 활동의 일환으로, 판매 발생 시 수수료를 제공받을 수 있습니다.';
@@ -42,5 +47,27 @@ export function AffiliateDisclosure({ purchaseLinks }: { purchaseLinks?: Purchas
         </Link>
       </p>
     </div>
+  );
+}
+
+/**
+ * 박스 없이 한 줄로만 쓰는 축약형 — 히어로 CTA처럼 첫 화면에 바로 노출되지만
+ * 공간이 좁은 자리용. 문구 자체는 AffiliateDisclosure와 동일한 getDisclosureText를 쓴다.
+ */
+export function AffiliateDisclosureInline({
+  purchaseLinks,
+  className = '',
+}: {
+  purchaseLinks?: PurchaseLinkLike[];
+  className?: string;
+}) {
+  if (!purchaseLinks || purchaseLinks.length === 0) return null;
+  return (
+    <p className={`text-[11px] leading-relaxed text-tertiary ${className}`}>
+      {getDisclosureText(purchaseLinks)}{' '}
+      <Link href="/legal" className="underline hover:text-primary">
+        자세히
+      </Link>
+    </p>
   );
 }
