@@ -122,7 +122,7 @@
 @media(max-width:700px){.archive-picture img{border-radius:6px}.archive-ready .archive-picture img{max-width:100%;max-height:100%;border-radius:6px}}
 
 /* First floor: three distinct stops, without enlarged or pinned photographs. */
-.prologue{max-width:1360px;padding:65px 7% 90px}
+.prologue{max-width:1360px;padding:65px 7% 64px}
 .prologue .floor-heading{margin-bottom:52px}
 .prologue-layout{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center}
 .film-main{width:min(100%,435px);justify-self:start}
@@ -132,14 +132,14 @@
 .film-story h3{font-size:clamp(27px,2.7vw,37px);line-height:1.55}
 .film-story>p{font-size:14px;line-height:2;margin-top:24px}
 .film-story .film-afterthought{font-size:12px;margin-top:38px;color:var(--sub)}
-.film-room-scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:115px 0 105px}
+.film-room-scene{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:84px 0 76px}
 .film-room-copy{padding-left:12%}
 .film-room-copy h3{font-size:clamp(26px,2.8vw,38px);line-height:1.55}
 .film-room-copy>p{font-size:14px;line-height:2;color:var(--sub);margin-top:25px}
 .film-room-copy .film-room-note{font-size:17px;color:var(--ink);margin-top:40px}
 .film-room-scene .film-detail{width:min(100%,355px);padding:0;margin:0;justify-self:end}
 .film-room-scene .film-detail img{width:100%;height:auto;max-height:none;aspect-ratio:auto;border-radius:8px}
-.prologue .postcard{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:0;padding-top:65px;border-top:1px solid var(--line)}
+.prologue .postcard{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:11%;align-items:center;margin:0;padding-top:52px;border-top:1px solid var(--line)}
 .prologue .postcard figure{width:min(100%,385px)}
 .prologue .postcard figure img{border-radius:8px}
 .prologue .postcard h3{font-size:clamp(26px,2.7vw,36px);line-height:1.55}
@@ -147,20 +147,20 @@
 .prologue .postcard .letter-note{font-size:12px}
 .floor-photo img{opacity:calc(.7 + .3 * var(--floor-entry,1));transform:translateY(calc(12px * (1 - var(--floor-entry,1))))}
 @media(max-width:700px){
-  .prologue{padding:45px 7% 65px}.prologue .floor-heading{margin-bottom:30px}
+  .prologue{padding:45px 7% 48px}.prologue .floor-heading{margin-bottom:30px}
   .prologue-layout{grid-template-columns:1fr;gap:32px}.film-main{width:86%;max-width:340px}.film-story{padding:0 0 0 7%}.film-story h3{font-size:27px}
   .floor-scene-label{font-size:10px;margin-bottom:17px}.film-story>p br{display:none}.film-story .film-afterthought{margin-top:25px}
-  .film-room-scene{grid-template-columns:1fr;gap:30px;margin:65px 0}.film-room-copy{padding-left:0}.film-room-copy h3{font-size:27px}.film-room-copy .film-room-note{margin-top:24px;font-size:16px}
+  .film-room-scene{grid-template-columns:1fr;gap:30px;margin:48px 0}.film-room-copy{padding-left:0}.film-room-copy h3{font-size:27px}.film-room-copy .film-room-note{margin-top:24px;font-size:16px}
   .film-room-scene .film-detail{width:76%;max-width:300px;justify-self:end}
-  .prologue .postcard{grid-template-columns:1fr;gap:30px;padding-top:40px}.prologue .postcard figure{width:86%;max-width:330px}.postcard-copy{padding-left:7%}.prologue .postcard h3{font-size:27px}
+  .prologue .postcard{grid-template-columns:1fr;gap:30px;padding-top:32px}.prologue .postcard figure{width:86%;max-width:330px}.postcard-copy{padding-left:7%}.prologue .postcard h3{font-size:27px}
   .floor-photo img,.film-main img,.film-room-scene .film-detail img,.prologue .postcard figure img{border-radius:6px}
 }
 @media(prefers-reduced-motion:reduce){.floor-photo img{opacity:1;transform:none}}
 
 /* Second floor: numbered plates along one course line, each labelled like a museum object. */
 .runners{padding:0}
-.runner-hall{padding:120px 0 0}
-.runners .runner-heading{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);align-items:end;gap:0 8%;max-width:1320px;padding:0 7.5%;margin:0 auto 96px}
+.runner-hall{padding:96px 0 0}
+.runners .runner-heading{display:grid;grid-template-columns:minmax(0,1.9fr) minmax(0,1fr);align-items:end;gap:0 8%;max-width:1320px;padding:0 7.5%;margin:0 auto 72px}
 .runners .runner-kicker{grid-column:1 / -1;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:13px 0 0;margin-bottom:64px;font-size:10px;letter-spacing:.08em;color:var(--sub)}
 .runners .runner-heading h2{font-family:"Baskerville","Times New Roman",serif;font-size:clamp(58px,7.6vw,112px);font-weight:400;line-height:1.02;letter-spacing:-.04em}
 .runners .runner-heading h2 em{display:block;margin-top:.32em;font-family:"Apple SD Gothic Neo","Noto Sans KR",sans-serif;font-style:normal;font-size:.42em;letter-spacing:-.04em;line-height:1.4}
@@ -170,9 +170,9 @@
 .plates-course::before,.course-fill{content:"";position:absolute;left:var(--course-x);top:0;bottom:0;width:1px;background:#c9cec1}
 .course-fill{background:#445b3c;transform:scaleY(var(--course,1));transform-origin:top}
 .plates-course::after{content:"";position:absolute;left:calc(var(--course-x) - 4px);bottom:-5px;width:9px;height:9px;border-radius:50%;background:#445b3c}
-.plates{list-style:none;margin:0;padding:0 7.5% 150px calc(7.5% + 70px)}
+.plates{list-style:none;margin:0;padding:0 7.5% 110px calc(7.5% + 70px)}
 .plate{position:relative;scroll-margin-top:40px}
-.plate + .plate{margin-top:135px}
+.plate + .plate{margin-top:100px}
 .plate::before{content:"";position:absolute;left:-56px;top:5px;width:7px;height:7px;border:1px solid #858e7d;background:var(--paper)}
 .plate img{border-radius:8px}
 .plate-label{display:grid;grid-template-columns:110px minmax(0,1fr);column-gap:28px;align-content:start}
@@ -186,7 +186,10 @@
 .plate-room img{aspect-ratio:2/1;object-fit:cover;object-position:50% 22%}
 /* Keep the left panel (Legend of Fall, 1946, timeline); the shipping crate sits past 57% width. */
 .plate-panel img{aspect-ratio:3/4;object-fit:cover;object-position:0% 50%}
-.runners .runner-plates-note{margin-top:22px;padding-top:14px;border-top:1px solid var(--line);font-size:12px;line-height:1.9;color:var(--ink)}
+.runners .runner-plates-note{max-width:28em;margin-top:24px;font-size:16px;line-height:1.75;color:var(--ink)}
+.floor-arrival{padding:40px 7% 8px}
+.mobile-break{display:none}
+@media(max-width:700px){.mobile-break{display:inline}}
 /* The name card was photographed sideways; rotate it on screen only and frame the card. */
 .plate-card{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:8px}
 .plate .plate-card img{position:absolute;left:50%;top:50%;width:165%;max-width:none;height:auto;border-radius:0;transform:translate(-50%,-50%) rotate(-90deg)}
@@ -202,7 +205,7 @@
 .plate-person figure{max-width:300px}
 .plate .plate-card img{filter:contrast(1.08) brightness(1.06)}
 .plate-person .plate-quote p{font-size:clamp(19px,1.8vw,25px);line-height:1.85}
-.runners .runner-question{max-width:1100px;margin:0 auto;padding:130px 7.5% 140px}
+.runners .runner-question{max-width:1100px;margin:0 auto;padding:96px 7.5% 100px}
 .runners .runner-question p{font-size:clamp(28px,3.8vw,52px);line-height:1.55;letter-spacing:-.04em;text-align:center}
 
 @media(max-width:1000px) and (min-width:701px){
@@ -212,7 +215,7 @@
   .plate-wide .plate-label>p:not(.plate-meta){grid-column:2;grid-row:auto;margin-top:26px}
 }
 @media(max-width:700px){
-  .runner-hall{padding-top:80px}
+  .runner-hall{padding-top:64px}
   .runners .runner-heading{display:block;padding:0 7%;margin-bottom:56px}
   .runners .runner-kicker{margin-bottom:40px;font-size:9px}
   .runners .runner-kicker{gap:12px}
@@ -220,8 +223,8 @@
   .runners .runner-heading h2{font-size:clamp(44px,12.5vw,62px)}
   .runners .runner-deck{margin-top:26px;font-size:13px;line-height:1.9}
   .plates-course{--course-x:calc(7% + 4px)}
-  .plates{padding:0 7% 96px calc(7% + 30px)}
-  .plate + .plate{margin-top:96px}
+  .plates{padding:0 7% 72px calc(7% + 30px)}
+  .plate + .plate{margin-top:64px}
   .plate::before{left:-30px}
   .plate figure{margin-bottom:26px}
   .plate img{border-radius:6px}
@@ -230,7 +233,7 @@
   .plate-split figure,.plate-medals figure{width:86%}
   .plate-person figure{width:66%}
   .plate-person .plate-quote p{font-size:17px}
-  .runners .runner-plates-note{font-size:11px}
+  .runners .runner-plates-note{font-size:15px}
   .runners .runner-plates-note br{display:none}
   .plate-label,.plate-wide .plate-label{display:block}
   .plate-no{display:block;margin-bottom:12px}
@@ -239,7 +242,7 @@
   .plate-label>p br{display:none}
   .plate-quote{margin-top:20px;padding-left:16px}
   .plate-quote p{font-size:15px}
-  .runners .runner-question{padding:88px 7% 84px}
+  .runners .runner-question{padding:64px 7% 64px}
   .runners .runner-question p{font-size:28px}
 }
 @media(prefers-reduced-motion:reduce){.course-fill{transform:none}}
