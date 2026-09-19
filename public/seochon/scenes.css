@@ -259,15 +259,11 @@
 .invitation .invite-facts{margin-top:36px;font-size:14px;line-height:1.8;letter-spacing:0;color:var(--sub);text-wrap:pretty}
 .invite-facts strong{font-weight:600;color:var(--ink)}
 .invite-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px;margin-top:20px}
-.invitation .invite-button{display:inline-flex;align-items:center;justify-content:center;min-height:48px;min-width:168px;margin:0;padding:0 28px;border:1px solid var(--ink);font-size:14px;letter-spacing:.02em;transition:background-color 150ms,color 150ms}
-.invitation .invite-button:hover{background:var(--ink);color:var(--paper);text-decoration:none}
 .invitation .invite-map{display:inline-flex;align-items:center;gap:8px;margin:0;padding:6px 0;font-size:13px;border-bottom:1px solid var(--line)}
 .invitation .invite-map:hover{text-decoration:none;border-bottom-color:var(--ink)}
 @media(max-width:700px){
   .invitation .invite-facts{margin-top:26px;font-size:13px}
-  .invitation .invite-button{width:100%}
 }
-@media(prefers-reduced-motion:reduce){.invitation .invite-button{transition:none}}
 /* Nothing on a phone smaller than 11px; captions 12px. */
 @media(max-width:700px){
   .year span,.scroll-cue,.skip,.archive-top>a,.archive-years small,.archive-footnote,.archive-footnote p,.archive-scroll-hint,.floor-scene-label,.runners .runner-kicker,.plate-no,footer,footer details p{font-size:11px}
