@@ -82,7 +82,10 @@ export const koreanGels: Gel[] = [
       alternatives: ['enup-power-gel', 'gu-roctane-energy-gel'],
     },
 
-    purchaseLinks: [],
+    // 쿠팡 얼티밋포텐셜 러닝에너지젤 6포(상품ID 8826285373). 공식몰 외 유일한 온라인 정품 경로라 추가(2026-09-19).
+    purchaseLinks: [
+      { store: '쿠팡', url: 'https://link.coupang.com/a/haUiB6NJwy' },
+    ],
 
     features: [
       '리퀴드(물) 제형 - 목넘김 최상',
@@ -414,9 +417,11 @@ export const koreanGels: Gel[] = [
       alternatives: ['enup-power-gel', 'gu-roctane-energy-gel'],
     },
 
-    // 커넥트 카탈로그에 없어 제휴 링크 불가. 쿠팡은 개당 4,000~6,600원으로 더 비싸다(2026-09-17).
+    // 네이버(riyoo 개당 3,958원)가 사실상 최저. 쿠팡 매실맛 12개입은 개당 3,929원으로 동급이라 병기(2026-09-19).
+    // 레몬 12입(6,615원)·체험세트처럼 비싼 리스팅도 있으니 링크는 12개입 정품 박스 기준.
     purchaseLinks: [
       { store: '네이버 쇼핑', url: 'https://smartstore.naver.com/riyoo/products/13716053649' },
+      { store: '쿠팡', url: 'https://link.coupang.com/a/haUcCGGfXo' },
     ],
 
     features: [
