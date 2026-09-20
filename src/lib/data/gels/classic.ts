@@ -443,6 +443,11 @@ export const classicGels: Gel[] = [
         store: '네이버',
         url: 'https://naver.me/FfsbmE4Y',
       },
+      {
+        // 요헤미티 에너지젤 지속형 보급 파워젤(무카페인, 사이트 데이터와 동일). 쿠팡 병기(2026-09-20).
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/hb4vIaurwi',
+      },
     ],
   },
   {
