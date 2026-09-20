@@ -676,6 +676,11 @@ export const classicGels: Gel[] = [
         store: '네이버',
         url: 'https://naver.me/xnrJdjJo',
       },
+      {
+        // 뉴케어 스포식스 에너지젤 청포도맛 8p (개당 1,450원). 네이버 SET가 최저지만 쿠팡 병기(2026-09-20).
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/hb2IBC4jF6',
+      },
     ],
   },
 ];

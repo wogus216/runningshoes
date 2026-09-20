@@ -198,6 +198,11 @@ export const koreanGels: Gel[] = [
         store: '네이버',
         url: 'https://naver.me/5kP8K4RR',
       },
+      {
+        // 아미노바이탈 아미노샷 4p (개당 2,612원, highvibe 3,500원보다 쌈). 쿠팡 병기(2026-09-20).
+        store: '쿠팡',
+        url: 'https://link.coupang.com/a/hb2K3xz0M0',
+      },
     ],
 
     features: [
