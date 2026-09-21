@@ -277,36 +277,36 @@
 
 /* ---------- 모션: .run 이 붙었을 때만 얹는다 ---------- */
 
-.run .viz .data { animation: labRun var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
-.run .viz .drop { animation: labOut var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
-.run .viz .name { animation: nameFade var(--dur) ease both; animation-delay: var(--d, 0s); }
-.run .viz .rail { animation: railRun var(--dur) cubic-bezier(0.25, 0.75, 0.3, 1) both; animation-delay: var(--d, 0s); }
-.run .viz .railTag { animation: fadeAt var(--dur) ease both; animation-delay: var(--d, 0s); }
-.run .viz .startline,
-.run .viz .startlineTag { animation: startIn var(--dur) ease both; }
-.run .viz .streak { animation: streakRun var(--dur) cubic-bezier(0.1, 0.8, 0.2, 1) both; animation-delay: var(--d, 0s); }
+.run .data { animation: labRun var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
+.run .drop { animation: labOut var(--dur) cubic-bezier(0.2, 0.7, 0.25, 1) both; animation-delay: var(--d, 0s); }
+.run .name { animation: nameFade var(--dur) ease both; animation-delay: var(--d, 0s); }
+.run .rail { animation: railRun var(--dur) cubic-bezier(0.25, 0.75, 0.3, 1) both; animation-delay: var(--d, 0s); }
+.run .railTag { animation: fadeAt var(--dur) ease both; animation-delay: var(--d, 0s); }
+.run .startline,
+.run .startlineTag { animation: startIn var(--dur) ease both; }
+.run .streak { animation: streakRun var(--dur) cubic-bezier(0.1, 0.8, 0.2, 1) both; animation-delay: var(--d, 0s); }
 
 /* 실루엣: 두 겹 모두 마지막에 전진(shoeAdvance). 샤프만 와이프·선명화.
    고스트는 첫 프레임부터 .12로 보이다가(§4.6 첫 1초 인지) 샤프가 선명해지는 구간에
    맞춰 사라진다 — 두 겹이 겹친 채 남으면 선이 두꺼워진다. */
-.run .viz .silGhost {
+.run .silGhost {
   animation:
     silGhostFade var(--dur) ease both,
     shoeAdvance var(--dur) cubic-bezier(0.3, 0.6, 0.2, 1) both;
 }
-.run .viz .silSharp {
+.run .silSharp {
   animation:
     silReveal var(--dur) ease both,
     silWipe var(--dur) cubic-bezier(0.35, 0.1, 0.2, 1) both,
     shoeAdvance var(--dur) cubic-bezier(0.3, 0.6, 0.2, 1) both;
 }
-.run .viz .figFoot { animation: drawFoot var(--dur) cubic-bezier(0.4, 0.1, 0.2, 1) both; }
-.run .viz .figTick { animation: tickIn var(--dur) ease both; }
-.run .viz .figFit { animation: fitIn var(--dur) ease both; }
+.run .figFoot { animation: drawFoot var(--dur) cubic-bezier(0.4, 0.1, 0.2, 1) both; }
+.run .figTick { animation: tickIn var(--dur) ease both; }
+.run .figFit { animation: fitIn var(--dur) ease both; }
 
 /* CTA 화살표 — 마지막 장면에서 한 번 반응한다. .viz 밖이라 따로 재생시킨다.
    카피와 CTA 자체는 움직이지 않는다(§4.3). */
-.run .hCta .arw { animation: ctaArrow var(--dur) cubic-bezier(0.3, 0.7, 0.3, 1) both; }
+.arrowRun { animation: ctaArrow var(--dur) cubic-bezier(0.3, 0.7, 0.3, 1) both; }
 .hCta:hover .arw { animation: none; transform: translateX(3px); }
 
 @keyframes labRun {

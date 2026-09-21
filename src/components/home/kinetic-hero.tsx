@@ -104,7 +104,7 @@ export function KineticHero() {
   };
 
   return (
-    <section ref={ref} className={`${styles.hero} ${play ? styles.run : ''}`}>
+    <section ref={ref} className={styles.hero}>
       <div className={styles.heroIn}>
         <div>
           <p className={styles.hKicker}>KOREAN RUNNER FIT INDEX</p>
@@ -119,7 +119,7 @@ export function KineticHero() {
             해외 평가를 한국 러너의 기준으로 다시 봅니다.
           </p>
           <Link href="/recommend" className={styles.hCta} onClick={handleRecommendClick}>
-            약 1분 · 9문항 맞춤 추천 <span className={styles.arw}>→</span>
+            약 1분 · 9문항 맞춤 추천 <span className={`${styles.arw} ${play ? styles.arrowRun : ''}`}>→</span>
           </Link>
           <p className={styles.hMeta}>러닝 경험 · 주간 거리 · 발볼 · 러닝 목적 · 예산</p>
           <br />
@@ -128,7 +128,7 @@ export function KineticHero() {
           </a>
         </div>
 
-        <div className={styles.viz} aria-hidden="true">
+        <div className={`${styles.viz} ${play ? styles.run : ''}`} aria-hidden="true">
           <div className={styles.track}>
             <span className={styles.lane} />
             <span className={styles.lane} />

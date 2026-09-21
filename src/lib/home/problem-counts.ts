@@ -17,6 +17,8 @@ export type ProblemThumb = {
   brand: string;
   name: string;
   image: string;
+  /** 홈 패널 전용 소형 자산 — 상세 페이지 원본을 내려받지 않는다. */
+  thumb: string;
 };
 
 export type ProblemData = {
@@ -53,7 +55,13 @@ export function getProblemData(): ProblemData {
       leadThumbs = shoes
         .filter((s) => Boolean(s.image))
         .slice(0, LEAD_THUMB_COUNT)
-        .map((s) => ({ slug: s.slug, brand: s.brand, name: s.name, image: s.image as string }));
+        .map((s) => {
+          const image = s.image as string;
+          const thumb = image.endsWith('/side.webp')
+            ? image.replace(/\/side\.webp$/, '/thumb.webp')
+            : image.replace(/\.webp$/, '-thumb.webp');
+          return { slug: s.slug, brand: s.brand, name: s.name, image, thumb };
+        });
     }
   }
 

@@ -1,8 +1,10 @@
+@import './fonts/pretendard-dynamic/pretendardvariable-dynamic-subset.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Pretendard는 next/font/local(layout.tsx)로 셀프호스트 → --font-pretendard 변수로 주입 */
+/* Pretendard 공식 92개 dynamic subset — 필요한 한글 글리프 청크만 요청 */
 
 :root {
   /* Ink + Signal (리디자인 B, 2026-07-30) — 웜 화이트 그라운드 · 잉크 타이포 · 세이프티 오렌지 단일 시그널 */
@@ -112,7 +114,7 @@
 @layer base {
   * {
     @apply border-[var(--border)];
-    font-family: var(--font-pretendard), 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+    font-family: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   }
 
   body {

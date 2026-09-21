@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Script from "next/script";
-import localFont from "next/font/local";
 import "@/app/globals.css";
 import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
@@ -13,19 +12,6 @@ import { getAllBrands } from "@/lib/data/brands";
 const SHOE_COUNT = getShoes().length;
 const BRAND_COUNT = getAllBrands().length;
 const SITE_DESCRIPTION_WITH_COUNT = `${SHOE_COUNT}개 ${SITE_DESCRIPTION}`;
-
-// Pretendard 셀프호스트 (next/font/local). 'self'로 서빙되어 렌더블로킹 외부요청·CSP 의존 없음.
-// 이전 globals.css의 @import(jsDelivr)는 @tailwind 뒤에 위치해 브라우저가 무시 → 폰트 미로드였음.
-const pretendard = localFont({
-  src: "./fonts/PretendardVariable.woff2",
-  // 느린 첫 방문에서는 2MB 폰트가 LCP를 막지 않도록 시스템 폰트로 먼저 그린다.
-  // 폰트가 이미 캐시된 방문자는 Pretendard를 그대로 사용한다.
-  display: "optional",
-  // 2MB variable font를 모든 route의 critical preload 경쟁에 넣지 않는다.
-  preload: false,
-  weight: "45 920",
-  variable: "--font-pretendard",
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -159,7 +145,7 @@ const organizationJsonLd = {
 
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang="ko" className={pretendard.variable} suppressHydrationWarning>
+    <html lang="ko" suppressHydrationWarning>
       <body className={cn("min-h-screen font-sans antialiased")}>
         {/* 이미지 CDN(jsDelivr, 프로덕션 배포에서만 활성)용 LCP 방어 preconnect (React 19가 head로 hoist) */}
         {process.env.NEXT_PUBLIC_IMAGE_CDN && (

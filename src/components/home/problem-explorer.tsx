@@ -82,9 +82,8 @@ export function ProblemExplorer({ counts, leadThumbs = [] }: ProblemExplorerProp
                       })
                     }
                   >
-                    {/* 원본은 정사각(800×800) 제품샷이라 1:1로 예약하고, 표시 크기는 CSS가 잡는다
-                        (max-height + width:auto). next.config.js 가 unoptimized:true 라 변환 없이 서빙된다 */}
-                    <Image src={s.image} alt={`${s.brand} ${s.name}`} width={100} height={100} />
+                    {/* next.config.js가 unoptimized라 홈 전용 160px 자산을 직접 사용한다. */}
+                    <Image src={s.thumb} alt={`${s.brand} ${s.name}`} width={100} height={100} />
                     <span>{s.name}</span>
                   </Link>
                 ))}
