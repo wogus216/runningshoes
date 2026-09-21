@@ -1,0 +1,233 @@
+/* scripts/thumbnail/ig-card-dark.css
+ *
+ * 인스타 4:5 스펙 카드 — 다크 3안(photo / blur / dark).
+ *
+ * 왜 다크인가: 첫 시안(ig-card.css)은 종이톤 + 흰 칩이었고, 1티어 계정 피드에
+ * 섞어 놓으면 웹 배너처럼 이질적이었다(2026-09-17 운영자 판정).
+ * @runsosik · @runninglife_korea · @run_playlist 25장의 공통 인상은
+ * "어두운 배경 + 흰 초굵은 한글 + 하단 정렬"이다. 그 톤을 맞춘다.
+ *
+ * 오렌지(#FF4D00)는 우리 시그널이라 유지한다 — 대비가 확보되는 그래픽·라벨에만.
+ */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../src/app/fonts/PretendardVariable.woff2') format('woff2-variations');
+  font-weight: 45 920;
+  font-display: block;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #0F1216;
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  color: #FFFFFF;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── 배경 레이어 ───────────────────────────── */
+.bg {
+  position: absolute;
+  inset: 0;
+}
+.bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 42%;
+}
+
+/* 텍스트 가독성 — 하단으로 갈수록 짙게. Runsosik 2번 카드가 대비를
+   확보하지 못해 중단부가 읽히지 않았다. 그 실패를 반복하지 않는다. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 18, 22, 0.55) 0%,
+    rgba(15, 18, 22, 0.30) 28%,
+    rgba(15, 18, 22, 0.80) 62%,
+    rgba(15, 18, 22, 0.96) 100%
+  );
+}
+
+/* ── 공통 프레임 ───────────────────────────── */
+.frame {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 72px 80px 64px;
+}
+
+.bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 10px;
+  background: #FF4D00;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+.kicker::before {
+  content: '';
+  width: 54px;
+  height: 5px;
+  background: #FF4D00;
+  flex: none;
+}
+
+.cat {
+  font-size: 26px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.spacer { flex: 1; min-height: 0; }
+
+/* ── 제목 — 하단 정렬, 흰 초굵은 한글 ───────── */
+/* 제목 길이에 따라 급을 내린다 — 96px 고정이면 "Saucony 트라이엄프 24" 에서
+   "24" 가 혼자 떨어진다(2026-09-17 실측). 글자 수는 렌더 스크립트가 센다. */
+.title.t-long { font-size: 80px; letter-spacing: -0.04em; }
+.title.t-xlong { font-size: 68px; letter-spacing: -0.042em; }
+
+.title {
+  font-size: 96px;
+  font-weight: 800;
+  line-height: 1.12;
+  letter-spacing: -0.038em;
+  word-break: keep-all;
+  text-shadow: 0 2px 28px rgba(0, 0, 0, 0.45);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* 수치는 제목 바로 아래 한 줄 — 레퍼런스는 큰 숫자 타일을 쓰지 않았다 */
+.stats {
+  margin-top: 30px;
+  display: flex;
+  align-items: baseline;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.stat {
+  display: flex;
+  align-items: baseline;
+  gap: 9px;
+}
+
+.stat b {
+  font-size: 58px;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.stat b i {
+  font-style: normal;
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.stat span {
+  font-size: 25px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.66);
+}
+
+.divider {
+  width: 1px;
+  height: 42px;
+  background: rgba(255, 255, 255, 0.24);
+  align-self: center;
+}
+
+/* ── 근거 줄 ───────────────────────────────── */
+.band {
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, 0.20);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.band p {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  word-break: keep-all;
+}
+
+.band p em {
+  font-style: normal;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.62);
+}
+
+.footer {
+  margin-top: 30px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: 24px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.56);
+}
+
+.footer strong {
+  font-weight: 700;
+  color: #FFFFFF;
+  letter-spacing: 0.01em;
+}
+
+/* ── 다크: 사진 없이 신발만. 제품을 중앙에 크게 앉힌다 ── */
+body.v-dark .bg { display: none; }
+body.v-dark .scrim {
+  background: radial-gradient(
+    120% 80% at 50% 34%,
+    rgba(255, 77, 0, 0.16) 0%,
+    rgba(15, 18, 22, 0) 58%
+  );
+}
+body.v-dark .product {
+  position: absolute;
+  left: -20px; right: -20px;
+  top: 300px;
+  height: 460px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body.v-dark .product img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* 제품이 들어간 만큼 제목 블록을 아래로 밀어 겹침을 막는다 */
+body.v-dark .spacer { flex: 1; }
+
+/* photo(사진 배경) · blur(신발 확대·블러 배경) 두 안은 2026-09-17 폐기했다.
+   photo: 사진 속 러너가 신은 신발이 대상 제품이 아니어서 오독을 부른다.
+   blur: 배경색이 신발 색에 종속돼 검정 어퍼+흰 미드솔에서 회색이 되고 대비가 무너졌다.
+   둘 다 실패 판정이므로 골조를 남기지 않는다. */

@@ -1,0 +1,204 @@
+/* scripts/thumbnail/ig-card.css
+ *
+ * 인스타 피드용 4:5 스펙 카드 (1080×1350).
+ *
+ * 규격 근거: 2026-09-17 @runninglife_korea · @runsosik · @run_playlist 게시물
+ * 25장을 실측한 결과 예외 없이 비율 0.800(1080×1350 또는 1440×1800)이었다.
+ *
+ * 레이아웃은 RIFE WIKI 의 본문 카드형을 따랐다 — 상단에 텍스트 블록, 하단에
+ * 제품 이미지. 세 계정의 표지 문법(사진 전면 + 오버레이)은 우리가 쓸 수 없다:
+ * 신발 공식 이미지는 배경이 제거된 투명 PNG 라서 전면 배경이 안 된다.
+ *
+ * 색은 card.css 와 동일한 실제 hex 를 쓴다(헤드리스 Chrome 단독 렌더라 CSS
+ * 변수를 물려받지 못한다). 오렌지는 그래픽에만 — 소형 텍스트에 쓰면 대비 3.03 미달.
+ */
+@font-face {
+  font-family: 'Pretendard';
+  src: url('../../src/app/fonts/PretendardVariable.woff2') format('woff2-variations');
+  font-weight: 45 920;
+  font-display: block;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  width: 1080px;
+  height: 1350px;
+  background: #F7F4ED;              /* --bg-warm 종이 */
+  font-family: 'Pretendard', -apple-system, sans-serif;
+  color: #17150F;                   /* --primary 잉크 */
+  display: flex;
+  flex-direction: column;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.bar {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 12px;
+  background: #FF4D00;              /* --accent */
+}
+
+/* ── 상단 킥커 줄 — RIFE WIKI 의 좌측 라벨 + 우측 카테고리 + 규칙선 구조 ── */
+.head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 74px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #D9D4C8; /* --border */
+}
+
+.kicker {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+/* 오렌지 대시는 card.css 와 같은 장치 — 색은 그래픽에만 얹는다 */
+.kicker::before {
+  content: '';
+  width: 60px;
+  height: 5px;
+  background: #FF4D00;
+  flex: none;
+}
+
+.cat {
+  font-size: 27px;
+  font-weight: 500;
+  color: #6E6A5E;                   /* --secondary */
+  letter-spacing: -0.01em;
+}
+
+/* ── 제목 — 4:5 는 세로가 길어 3줄까지 허용한다(og 카드는 2줄) ── */
+.title {
+  margin-top: 44px;
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -0.034em;
+  word-break: keep-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.lede {
+  margin-top: 26px;
+  font-size: 40px;
+  font-weight: 500;
+  color: #6E6A5E;
+  letter-spacing: -0.018em;
+  word-break: keep-all;
+}
+
+/* ── 수치 칩 3개 — RIFE 가 색상 스와치를 붙이는 자리에 우리는 스펙을 붙인다 ── */
+.chips {
+  display: flex;
+  gap: 14px;
+  margin-top: 46px;
+}
+
+.chip {
+  flex: 1;
+  background: #FFFFFF;
+  border: 1px solid #D9D4C8;
+  padding: 24px 22px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.chip b {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  font-variant-numeric: tabular-nums;
+}
+
+.chip b i {
+  font-style: normal;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin-left: 4px;
+}
+
+.chip span {
+  font-size: 24px;
+  font-weight: 500;
+  color: #6E6A5E;
+  letter-spacing: -0.01em;
+}
+
+/* ── 근거 밴드 — 토박스 등급과 교체 범위. 단일 숫자는 절대 찍지 않는다 ── */
+.band {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.band p {
+  font-size: 27px;
+  font-weight: 600;
+  letter-spacing: -0.012em;
+  word-break: keep-all;
+}
+
+.band p em {
+  font-style: normal;
+  font-weight: 500;
+  color: #6E6A5E;
+}
+
+/* ── 하단 제품 이미지 — 남은 높이를 전부 먹는다 ── */
+.shot {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px -30px 0;
+}
+
+.shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* 알파 채널이 없는 이미지 — 종이톤에 그대로 얹으면 흰 사각형이 드러난다.
+   흰 패널로 감싸 의도된 면으로 만든다(칩과 같은 흰색이라 화면이 어긋나지 않는다).
+   134종 중 25종이 이 경로를 탄다(2026-09-17 실측). 근본 해결은 투명 PNG 재확보다. */
+.shot--framed {
+  background: #FFFFFF;
+  border: 1px solid #D9D4C8;
+  padding: 18px 24px;
+  margin: 8px 0 0;
+}
+
+/* ── 푸터 — 남들이 면책을 쓰는 자리에 우리는 근거를 쓴다 ── */
+.footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding: 18px 0 44px;
+  border-top: 1px solid #D9D4C8;
+  font-size: 25px;
+  font-weight: 500;
+  color: #6E6A5E;
+  letter-spacing: -0.005em;
+}
+
+.footer strong {
+  font-weight: 700;
+  color: #17150F;
+  letter-spacing: 0.01em;
+}
