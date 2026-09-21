@@ -104,6 +104,24 @@ const marathonIdFileMap = (() => {
   return map;
 })();
 
+// Fabric slug → 그 주제가 실린 유형별 파일 (fabrics/{type}.ts).
+// 파일 하나를 보면 12개 URL이 전부 같은 날짜를 받으므로 slug 단위로 좁힌다.
+const fabricSlugFileMap = (() => {
+  const map = {};
+  const dir = path.join(__dirname, "src/lib/data/fabrics");
+  try {
+    for (const f of fs.readdirSync(dir)) {
+      if (!f.endsWith(".ts") || f === "index.ts") continue;
+      const rel = `src/lib/data/fabrics/${f}`;
+      const src = fs.readFileSync(path.join(__dirname, rel), "utf8");
+      for (const m of src.matchAll(/^\s{4}slug:\s*['"]([^'"]+)['"]/gm)) map[m[1]] = rel;
+    }
+  } catch {
+    // 구조가 바뀌면 아래 fallback 이 디렉터리 전체를 본다.
+  }
+  return map;
+})();
+
 const blogMeta = (() => {
   const map = {};
   const dir = path.join(__dirname, "src/lib/data/blog/posts");
@@ -155,6 +173,7 @@ const staticPageMap = {
   "/recommend": "src/app/(main)/recommend/page.tsx",
   "/marathon": "src/app/(main)/marathon/page.tsx",
   "/gels": "src/app/(main)/gels/page.tsx",
+  "/fabrics": "src/app/(main)/fabrics/page.tsx",
   "/blog": "src/app/(main)/blog/page.tsx",
   "/best": "src/app/(main)/best/page.tsx",
   "/vs": "src/app/(main)/vs/page.tsx",
@@ -181,6 +200,10 @@ function lastModFor(urlPath) {
   }
   if (urlPath.startsWith("/gels/")) {
     return gitLastMod("src/lib/data/gels");
+  }
+  if (urlPath.startsWith("/fabrics/")) {
+    const slug = urlPath.replace("/fabrics/", "").replace(/\/$/, "");
+    return gitLastMod(fabricSlugFileMap[slug] || "src/lib/data/fabrics");
   }
   if (urlPath.startsWith("/marathon/")) {
     const id = urlPath.replace("/marathon/", "").replace(/\/$/, "");

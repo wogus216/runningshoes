@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown } from 'lucide-react';
+import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown, Shirt } from 'lucide-react';
 import { SearchPalette } from '@/components/search/search-palette';
 
 /**
@@ -104,6 +104,13 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
           >
             <Beaker className="h-4 w-4" />
             <span>젤</span>
+          </Link>
+          <Link
+            href="/fabrics"
+            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+          >
+            <Shirt className="h-4 w-4" />
+            <span>원단</span>
           </Link>
           <Link
             href="/marathon"

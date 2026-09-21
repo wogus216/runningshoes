@@ -65,11 +65,25 @@ public/sitemap*.xml
 /.claude/skills/db-audit/
 /.claude/skills/mobile-readability-audit/
 
-# todo-estimates만 추적 (클라우드 월간 점검 루틴이 읽음, 2026-07-29)
-!.omc/
-.omc/*
-!.omc/todo-estimates.md
-!.omc/todo-search-2026-09.md
+# 모든 깊이의 .omc 를 제외하고, 루트 것만 되살려 todo 두 개를 추적한다
+# (클라우드 월간 점검 루틴이 읽음, 2026-07-29).
+#
+# ⚠️ 예외 규칙에는 선행 슬래시가 **필수**다. `!.omc/` 처럼 쓰면 끝에만 슬래시가 있어
+#    gitignore 가 이를 "모든 깊이" 패턴으로 읽고, public/images/.omc 같은 하위 세션
+#    상태까지 되살려 버린다 — 실제로 그렇게 새고 있었다(2026-09-21).
+**/.omc/
+!/.omc/
+/.omc/*
+!/.omc/todo-estimates.md
+!/.omc/todo-search-2026-09.md
+
+# 러닝 의류 원단 리서치 원본 (로컬 전용 — 공개 리포에 두지 않는다)
+#
+# /fabrics 페이지로 나가는 것은 **결론**이고, 여기 있는 것은 그 결론을 만든 **방법과 원자료**다.
+# 조성 실측 373행·수집 경로·모집단 설계·조작된 인용 판별 기록이 곧 차별점이라 분리한다.
+# 페이지가 인용하는 1차 소스는 페이지에 실명으로 다 적혀 있으므로 근거가 가려지지는 않는다.
+/docs/references/apparel-fabric-research.md
+/docs/references/apparel-research-raw/
 
 # 쎄러데이 — 크루 원본 활동 내보내기 (GPS·심박 포함, 커밋 금지)
 /private/challenge/

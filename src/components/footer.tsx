@@ -29,6 +29,14 @@ export function Footer() {
               </ul>
             </div>
             <div>
+              <h4 className="font-medium text-sm mb-3 text-primary">러닝복 원단</h4>
+              <ul className="space-y-2 text-sm text-secondary">
+                <li><Link href="/fabrics" className="hover:text-primary transition">원단 사전</Link></li>
+                <li><Link href="/fabrics/kca-running-jacket-2025" className="hover:text-primary transition">재킷 8종 실측</Link></li>
+                <li><Link href="/fabrics/polyester" className="hover:text-primary transition">폴리에스터</Link></li>
+              </ul>
+            </div>
+            <div>
               <h4 className="font-medium text-sm mb-3 text-primary">마라톤 대회</h4>
               <ul className="space-y-2 text-sm text-secondary">
                 <li><Link href="/marathon" className="hover:text-primary transition">전체 일정</Link></li>
