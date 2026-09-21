@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
 import { getShoes } from "@/lib/data/shoes";
 import { getAllBrands } from "@/lib/data/brands";
 
@@ -18,7 +18,11 @@ const SITE_DESCRIPTION_WITH_COUNT = `${SHOE_COUNT}개 ${SITE_DESCRIPTION}`;
 // 이전 globals.css의 @import(jsDelivr)는 @tailwind 뒤에 위치해 브라우저가 무시 → 폰트 미로드였음.
 const pretendard = localFont({
   src: "./fonts/PretendardVariable.woff2",
-  display: "swap",
+  // 느린 첫 방문에서는 2MB 폰트가 LCP를 막지 않도록 시스템 폰트로 먼저 그린다.
+  // 폰트가 이미 캐시된 방문자는 Pretendard를 그대로 사용한다.
+  display: "optional",
+  // 2MB variable font를 모든 route의 critical preload 경쟁에 넣지 않는다.
+  preload: false,
   weight: "45 920",
   variable: "--font-pretendard",
 });
@@ -166,11 +170,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-              strategy="afterInteractive"
+              strategy="lazyOnload"
             />
             <Script
               id="ga4-init"
-              strategy="afterInteractive"
+              strategy="lazyOnload"
               dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
@@ -182,13 +186,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
             />
           </>
         )}
-        {/* AdSense — afterInteractive로 렌더 블로킹 방지 (Auto Ads는 onLoad 후에도 동작) */}
-        <Script
-          async
-          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}

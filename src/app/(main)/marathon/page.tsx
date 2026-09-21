@@ -5,6 +5,7 @@ import { localIsoDate } from '@/lib/format';
 import { SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { MarathonContent } from '@/components/marathon/marathon-content';
 import { groupIntoBands } from '@/lib/marathon/bands';
+import type { MarathonListEvent } from '@/types/marathon';
 
 /**
  * 메타는 데이터에서 산출한다 — 종전 문구가 8월에도 "경주벚꽃마라톤·춘천호반마라톤"(둘 다 봄)을
@@ -56,6 +57,21 @@ export default function MarathonPage() {
     { label: '이번 달', value: `${thisMonth}` },
     { label: '다음 달', value: `${nextMonth}` },
   ];
+
+  // 목록 클라이언트에는 필터·행 렌더에 필요한 필드만 전달한다.
+  const listEvents: MarathonListEvent[] = events.map((event) => ({
+    id: event.id,
+    name: event.name,
+    date: event.date,
+    location: event.location,
+    region: event.region,
+    distances: event.distances,
+    status: event.status,
+    isMajor: event.isMajor,
+    description: event.description,
+    registrationStart: event.registrationStart,
+    registrationEnd: event.registrationEnd,
+  }));
 
   // JSON-LD: 메이저 대회 SportsEvent + Offers
   const jsonLd = {
@@ -162,7 +178,7 @@ export default function MarathonPage() {
         </section>
 
         <Suspense>
-          <MarathonContent events={events} buildDate={buildDate} />
+          <MarathonContent events={listEvents} buildDate={buildDate} />
         </Suspense>
       </div>
     </>

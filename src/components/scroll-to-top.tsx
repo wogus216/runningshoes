@@ -1,12 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { ArrowUp } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 export function ScrollToTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const frameRef = useRef<number | null>(null);
   const pathname = usePathname();
   const isDetailPage = pathname.startsWith('/shoes/');
   const isSaturdayPage = pathname.startsWith('/saturday');
@@ -15,18 +16,19 @@ export function ScrollToTop() {
     if (isSaturdayPage) return;
 
     const toggleVisibility = () => {
-      // 400px 이상 스크롤하면 버튼 표시
-      if (window.scrollY > 400) {
-        setIsVisible(true);
-      } else {
-        setIsVisible(false);
-      }
+      if (frameRef.current !== null) return;
+      frameRef.current = window.requestAnimationFrame(() => {
+        frameRef.current = null;
+        // 400px 이상 스크롤하면 버튼 표시
+        setIsVisible(window.scrollY > 400);
+      });
     };
 
     window.addEventListener('scroll', toggleVisibility);
 
     return () => {
       window.removeEventListener('scroll', toggleVisibility);
+      if (frameRef.current !== null) window.cancelAnimationFrame(frameRef.current);
     };
   }, [isSaturdayPage]);
 

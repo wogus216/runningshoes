@@ -7,15 +7,15 @@ import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { AffiliateDisclosureInline } from "./affiliate-disclosure";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
-import { getBrandTechnologyUrl } from "@/lib/data/brands";
 import { getShoeDurability } from "@/lib/durability";
 import { cn } from "@/lib/utils";
 
 type HeroSectionProps = {
   shoe: Shoe;
+  brandTechnologyUrl?: `/brands/${string}/technology`;
 };
 
-export function HeroSection({ shoe }: HeroSectionProps) {
+export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
   const specs = shoe.specs;
   const koreanFootFit = shoe.koreanFootFit;
   // 이미지 배열 준비 (images가 있으면 사용, 없으면 image를 배열로)
@@ -92,9 +92,9 @@ export function HeroSection({ shoe }: HeroSectionProps) {
 
           <div className="mt-6 space-y-4">
             <div className="flex flex-wrap items-center gap-2">
-              {getBrandTechnologyUrl(shoe.brand) && (
+              {brandTechnologyUrl && (
                 <Link
-                  href={getBrandTechnologyUrl(shoe.brand) as `/brands/${string}/technology`}
+                  href={brandTechnologyUrl}
                   className="inline-flex items-center gap-1 border border-border px-2.5 py-1 font-mono text-[11px] uppercase tracking-wider text-secondary transition hover:border-accent hover:text-accent"
                 >
                   <FlaskConical className="h-3 w-3" />

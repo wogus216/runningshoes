@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 import { OidoScrollDirector } from '@/components/challenge/saturday/oido-scroll-director';
+import { LazyRouteVideo } from '@/components/challenge/lazy-route-video';
 import { SITE_URL } from '@/lib/constants';
 import styles from './oido.module.css';
 
@@ -196,7 +197,7 @@ export default function OidoStoryPage() {
           </div>
           <div className={styles.mapSheet} data-reveal>
             <span className={styles.mapTape}>TODAY&apos;S ROUTE</span>
-            <video className={styles.routeVideo} src={`${IMAGE_ROOT}/route.mp4`} poster={`${IMAGE_ROOT}/route-poster.webp`} autoPlay muted loop playsInline preload="metadata" aria-label="오이도 왕복 21.51km GPS 경로 애니메이션" />
+            <LazyRouteVideo className={styles.routeVideo} src={`${IMAGE_ROOT}/route.mp4`} poster={`${IMAGE_ROOT}/route-poster.webp`} ariaLabel="오이도 왕복 21.51km GPS 경로 애니메이션" />
             <span className={styles.phoneLabel}>OIDO MUSEUM ↔ SIHWA DYKE</span>
           </div>
           {/* PACE 는 뺐다 — 6'55"는 03:03:24 와 맞지 않는다(21.51km ÷ 3:03:24 = 8'32"/km).

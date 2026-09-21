@@ -2,6 +2,7 @@ import { Fragment } from 'react';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import DOMPurify from 'isomorphic-dompurify';
 import { ChevronLeft } from 'lucide-react';
 import { getPostBySlug, getAllPosts, getRelatedPostsMeta } from '@/lib/data/blog';
@@ -232,11 +233,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         {/* 히어로 이미지 */}
         {post.thumbnail && (
           <div className="relative -mx-4 mb-10 aspect-[1200/630] overflow-hidden rounded-[4px] sm:-mx-0">
-            <img
+            <Image
               src={img(post.thumbnail)}
               alt={post.title}
-              className="h-full w-full object-cover"
-              style={{ margin: 0, borderRadius: '28px', boxShadow: 'none' }}
+              fill
+              priority
+              sizes="(max-width: 640px) calc(100vw - 2rem), 768px"
+              className="object-cover"
+              style={{ borderRadius: '28px', boxShadow: 'none' }}
             />
           </div>
         )}

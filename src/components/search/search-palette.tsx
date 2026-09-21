@@ -8,6 +8,7 @@ import type { SearchItem } from '@/lib/search-index';
 // 인덱스는 팔레트가 처음 열릴 때 /search-index.json 에서 1회 로드한다
 // (모든 페이지 RSC 페이로드에 ~41KB를 싣지 않기 위한 지연 로드).
 let cachedIndex: SearchItem[] | null = null;
+let cachedRequest: Promise<SearchItem[]> | null = null;
 
 function scoreMatch(query: string, item: SearchItem): number {
   const q = query.toLowerCase().trim();
@@ -38,12 +39,26 @@ export function SearchPalette() {
 
   // 처음 열릴 때 인덱스 로드 (모듈 스코프 캐시로 세션 내 1회)
   useEffect(() => {
-    if (!open || cachedIndex) return;
+    if (!open) return;
+    if (cachedIndex) {
+      setItems(cachedIndex);
+      return;
+    }
     let cancelled = false;
-    fetch('/search-index.json')
-      .then((res) => (res.ok ? res.json() : []))
-      .then((data: SearchItem[]) => {
+    if (!cachedRequest) {
+      cachedRequest = fetch('/search-index.json').then((res) => {
+        if (!res.ok) throw new Error(`search-index.json ${res.status}`);
+        return res.json() as Promise<SearchItem[]>;
+      }).then((data) => {
         cachedIndex = data;
+        return data;
+      }).catch((error) => {
+        cachedRequest = null;
+        throw error;
+      });
+    }
+    cachedRequest
+      .then((data) => {
         if (!cancelled) setItems(data);
       })
       .catch(() => {});

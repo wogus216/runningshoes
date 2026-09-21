@@ -8,6 +8,7 @@ import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/re
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
+import { RunnerArchetypeCard } from '@/components/recommend/runner-archetype-card';
 import { recordRecommend } from '@/lib/recent';
 
 interface RecommendContentProps {
@@ -176,6 +177,8 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
           <Questionnaire onComplete={handleComplete} />
         ) : (
           <div className="space-y-6">
+            <RunnerArchetypeCard profile={profile} />
+
             <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-6 backdrop-blur">
               <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">
                 Profile Snapshot

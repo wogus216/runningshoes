@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback, TouchEvent } from 'react';
+import { useState, useEffect, useCallback, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight, ShoppingBag } from 'lucide-react';
 import { cn } from '@/lib/utils';
@@ -15,8 +15,10 @@ type ImageSliderProps = {
 export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSliderProps) {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isHovered, setIsHovered] = useState(false);
+  const [isInView, setIsInView] = useState(false);
   const [touchStart, setTouchStart] = useState(0);
   const [touchEnd, setTouchEnd] = useState(0);
+  const containerRef = useRef<HTMLDivElement>(null);
 
   // 이미지가 없거나 1개면 슬라이더 비활성화
   const hasMultipleImages = images && images.length > 1;
@@ -34,20 +36,37 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
     goToSlide(currentIndex + 1);
   }, [currentIndex, goToSlide]);
 
+  // 화면 밖에서는 자동 슬라이드 타이머와 상태 업데이트를 멈춘다.
+  useEffect(() => {
+    const container = containerRef.current;
+    if (!container || !hasMultipleImages) return;
+    if (!('IntersectionObserver' in window)) {
+      setIsInView(true);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      ([entry]) => setIsInView(entry.isIntersecting),
+      { rootMargin: '100px 0px' },
+    );
+    observer.observe(container);
+    return () => observer.disconnect();
+  }, [hasMultipleImages]);
+
   const prevSlide = useCallback(() => {
     goToSlide(currentIndex - 1);
   }, [currentIndex, goToSlide]);
 
   // 자동 슬라이드
   useEffect(() => {
-    if (!hasMultipleImages || isHovered) return;
+    if (!hasMultipleImages || !isInView || isHovered) return;
 
     const interval = setInterval(() => {
       nextSlide();
     }, autoPlayInterval);
 
     return () => clearInterval(interval);
-  }, [hasMultipleImages, isHovered, nextSlide, autoPlayInterval]);
+  }, [hasMultipleImages, isInView, isHovered, nextSlide, autoPlayInterval]);
 
   // 터치 핸들러
   const handleTouchStart = (e: TouchEvent) => {
@@ -101,6 +120,7 @@ export function ImageSlider({ images, alt, autoPlayInterval = 3000 }: ImageSlide
 
   return (
     <div
+      ref={containerRef}
       className="group relative aspect-square overflow-hidden rounded-[2px] bg-[var(--surface-strong)]"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}

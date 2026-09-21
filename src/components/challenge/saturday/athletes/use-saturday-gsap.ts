@@ -28,21 +28,25 @@ export function useSaturdayGsap(enabled: boolean) {
     let cancelled = false;
 
     void (async () => {
-      const [core, scrollTrigger, flip] = await Promise.all([
-        import('gsap'),
-        import('gsap/ScrollTrigger'),
-        import('gsap/Flip'),
-      ]);
-      if (cancelled) return;
+      try {
+        const [core, scrollTrigger, flip] = await Promise.all([
+          import('gsap'),
+          import('gsap/ScrollTrigger'),
+          import('gsap/Flip'),
+        ]);
+        if (cancelled) return;
 
-      core.gsap.registerPlugin(scrollTrigger.ScrollTrigger, flip.Flip);
-      const loaded: SaturdayGsap = {
-        gsap: core.gsap,
-        ScrollTrigger: scrollTrigger.ScrollTrigger,
-        Flip: flip.Flip,
-      };
-      libRef.current = loaded;
-      setLib(loaded);
+        core.gsap.registerPlugin(scrollTrigger.ScrollTrigger, flip.Flip);
+        const loaded: SaturdayGsap = {
+          gsap: core.gsap,
+          ScrollTrigger: scrollTrigger.ScrollTrigger,
+          Flip: flip.Flip,
+        };
+        libRef.current = loaded;
+        setLib(loaded);
+      } catch {
+        // 모션은 라이브러리 로딩 실패 시에도 정적 콘텐츠로 동작해야 한다.
+      }
     })();
 
     return () => {
@@ -55,7 +59,8 @@ export function useSaturdayGsap(enabled: boolean) {
 
 /** 서버에서는 항상 false. 클라이언트 마운트 후 실제 값으로 바뀌고 변경도 따라간다 */
 export function usePrefersReducedMotion() {
-  const [reduced, setReduced] = useState(false);
+  // 확인 전에는 모션을 활성화하지 않아 reduced-motion 사용자에게 GSAP을 먼저 받게 하지 않는다.
+  const [reduced, setReduced] = useState<boolean | null>(null);
 
   useEffect(() => {
     const query = window.matchMedia('(prefers-reduced-motion: reduce)');

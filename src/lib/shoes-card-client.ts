@@ -8,13 +8,15 @@ let cached: Promise<CardShoe[]> | null = null;
 
 export function loadCardShoes(): Promise<CardShoe[]> {
   if (!cached) {
-    cached = fetch('/shoes-card.json').then((res) => {
-      if (!res.ok) {
-        cached = null; // 실패 시 다음 호출에서 재시도
-        throw new Error(`shoes-card.json ${res.status}`);
-      }
-      return res.json();
-    });
+    cached = fetch('/shoes-card.json')
+      .then((res) => {
+        if (!res.ok) throw new Error(`shoes-card.json ${res.status}`);
+        return res.json();
+      })
+      .catch((error) => {
+        cached = null; // 네트워크/파싱 실패도 다음 호출에서 재시도
+        throw error;
+      });
   }
   return cached;
 }

@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import type { MarathonEvent } from '@/types/marathon';
+import type { MarathonListEvent } from '@/types/marathon';
 import { useMarathonFilters } from '@/hooks/useMarathonFilters';
 import { groupIntoBands } from '@/lib/marathon/bands';
 import { localIsoDate } from '@/lib/format';
@@ -14,7 +14,7 @@ const VERIFY_NOTE =
   '접수 상태는 공식 발표를 수동 확인한 값입니다. 신청 전 공식 페이지에서 다시 확인하세요.';
 
 interface MarathonContentProps {
-  events: MarathonEvent[];
+  events: MarathonListEvent[];
   /** 빌드 시점 날짜 'YYYY-MM-DD'. 서버 렌더와 하이드레이션 첫 렌더가 이 값을 쓴다 */
   buildDate: string;
 }

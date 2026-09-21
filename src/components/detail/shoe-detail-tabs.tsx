@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import dynamic from 'next/dynamic';
 import { QuickSpecs } from '@/components/detail/quick-specs';
 import { DetailedSpecs } from '@/components/detail/detailed-specs';
@@ -70,8 +70,26 @@ type TabId = typeof tabs[number]['id'];
 
 export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }: ShoeDetailTabsProps) {
   const [activeTab, setActiveTab] = useState<TabId>('specs');
+  const [chartReady, setChartReady] = useState(false);
+  const chartRef = useRef<HTMLDivElement>(null);
   // 내구성 범위·근거 등급은 한 번만 계산해 스펙/가격 탭이 같은 값을 쓰게 한다
   const durability = getShoeDurability(shoe);
+
+  useEffect(() => {
+    const target = chartRef.current;
+    if (!target || typeof IntersectionObserver === 'undefined') {
+      setChartReady(true);
+      return;
+    }
+    const observer = new IntersectionObserver(([entry]) => {
+      if (entry.isIntersecting) {
+        setChartReady(true);
+        observer.disconnect();
+      }
+    }, { rootMargin: '240px' });
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, []);
 
   return (
     <div className="space-y-5">
@@ -111,11 +129,15 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
                 <p className="text-[11px] font-semibold uppercase tracking-[0.26em] text-sky-700">Spec Chart</p>
                 <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">숫자로 보는 성향</h2>
               </div>
-              <SpecRadarChart
-                specs={shoe.specs}
-                priceValueRating={shoe.priceAnalysis?.valueRating}
-                shoeName={shoe.name}
-              />
+              <div ref={chartRef} className="min-h-[300px]">
+                {chartReady && (
+                  <SpecRadarChart
+                    specs={shoe.specs}
+                    priceValueRating={shoe.priceAnalysis?.valueRating}
+                    shoeName={shoe.name}
+                  />
+                )}
+              </div>
             </div>
           )}
           {shoe.detailedSpecs && (

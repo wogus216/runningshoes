@@ -181,6 +181,12 @@ export interface MarathonEvent {
   lastVerified?: string;
 }
 
+/** 목록 화면에 실제로 필요한 필드만 서버에서 클라이언트로 전달한다. */
+export type MarathonListEvent = Pick<MarathonEvent,
+  'id' | 'name' | 'date' | 'location' | 'region' | 'distances' | 'status' | 'isMajor' |
+  'description' | 'registrationStart' | 'registrationEnd'
+>;
+
 export const EVENT_MONTHS: EventMonth[] = [
   '3월',
   '4월',

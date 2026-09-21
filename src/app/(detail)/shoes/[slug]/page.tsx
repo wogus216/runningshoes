@@ -1,6 +1,7 @@
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
+import { getBrandTechnologyUrl } from '@/lib/data/brands';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { AdSlot } from '@/components/ads/ad-slot';
@@ -350,7 +351,10 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
         <Breadcrumb brand={shoe.brand} category={shoe.category} shoeName={shoe.name} />
 
         {/* Hero Section */}
-        <HeroSection shoe={shoe} />
+        <HeroSection
+          shoe={shoe}
+          brandTechnologyUrl={getBrandTechnologyUrl(shoe.brand) as `/brands/${string}/technology` | undefined}
+        />
 
         {hasCompleteData ? (
           <>

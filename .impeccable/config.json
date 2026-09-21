@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "side-tab",
+        "value": "*",
+        "files": [
+          "src/app/globals.css"
+        ],
+        "createdAt": "2026-09-21T07:06:26.552Z",
+        "reason": "Agent: semantic editorial callouts and race-fact items use accent borders to communicate hierarchy, not decorative card tabs"
+      }
+    ]
+  }
+}

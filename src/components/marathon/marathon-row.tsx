@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import type { MarathonEvent } from '@/types/marathon';
+import type { MarathonListEvent } from '@/types/marathon';
 import { daysUntil } from '@/lib/marathon/bands';
 import { formatDateShortKo } from '@/lib/format';
 import styles from './marathon-list.module.css';
@@ -9,7 +9,7 @@ import styles from './marathon-list.module.css';
  * `registrationEnd`가 있으면 D-day를 계산하고, 없으면 수동 status를 그대로 보여준다.
  * 채워진 대회만 정확해지는 구조라 백필 없이도 점진적으로 좋아진다.
  */
-function stateLabel(event: MarathonEvent, today: string): { text: string; dday: boolean } {
+function stateLabel(event: MarathonListEvent, today: string): { text: string; dday: boolean } {
   if (event.registrationEnd) {
     const left = daysUntil(event.registrationEnd, today);
     if (left >= 0) return { text: `D-${left} 마감`, dday: true };
@@ -22,7 +22,7 @@ export function MarathonRow({
   today,
   folded = false,
 }: {
-  event: MarathonEvent;
+  event: MarathonListEvent;
   today: string;
   /**
    * 아직 펼치지 않은 행. **렌더는 하되 숨긴다** — 잘라내면 대회 링크가 정적 HTML에서

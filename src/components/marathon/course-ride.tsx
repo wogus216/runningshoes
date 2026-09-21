@@ -86,6 +86,7 @@ export function CourseRide({
   const distRef = useRef(0);
   const rollRef = useRef(0);
   const lastRef = useRef(0);
+  const lastPctRef = useRef(-1);
 
   const [status, setStatus] = useState<'loading' | 'ready' | 'error'>('loading');
   const [playing, setPlaying] = useState(true);
@@ -454,7 +455,10 @@ export function CourseRide({
 
     // ── HUD 로 넘길 상태 ──
     const p = d / total;
-    setPct(p);
+    if (lastPctRef.current < 0 || Math.abs(p - lastPctRef.current) >= 0.01 || p >= 1) {
+      lastPctRef.current = p;
+      setPct(p);
+    }
     let cur: string | null = null;
     for (const b of beats) if (p >= b.at - 0.001) cur = b.title;
     setBeat(cur);
@@ -469,13 +473,15 @@ export function CourseRide({
       draw();
       return;
     }
+    if (!playing) {
+      draw();
+      return;
+    }
     const tick = (t: number) => {
       const dt = lastRef.current ? Math.min(0.05, (t - lastRef.current) / 1000) : 0;
       lastRef.current = t;
-      if (playing) {
-        distRef.current += CAM[modeRef.current].speed * dt;
-        if (distRef.current >= total) distRef.current = 0;
-      }
+      distRef.current += CAM[modeRef.current].speed * dt;
+      if (distRef.current >= total) distRef.current = 0;
       draw();
       rafRef.current = requestAnimationFrame(tick);
     };

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo, useCallback } from 'react';
-import type { MarathonEvent, EventRegion, EventDistance } from '@/types/marathon';
+import type { MarathonListEvent, EventRegion, EventDistance } from '@/types/marathon';
 import { EVENT_DISTANCES } from '@/types/marathon';
 import { matchesDistanceFilter } from '@/lib/marathon/distance';
 import { useDebounce } from './useDebounce';
@@ -46,7 +46,7 @@ const initialFilters: MarathonFilterState = {
   searchQuery: '',
 };
 
-function matchesSearch(event: MarathonEvent, query: string): boolean {
+function matchesSearch(event: MarathonListEvent, query: string): boolean {
   if (!query) return true;
   const q = query.toLowerCase();
   return (
@@ -56,7 +56,7 @@ function matchesSearch(event: MarathonEvent, query: string): boolean {
   );
 }
 
-export function useMarathonFilters(events: MarathonEvent[]) {
+export function useMarathonFilters(events: MarathonListEvent[]) {
   const [filters, setFilters] = useState<MarathonFilterState>(initialFilters);
   const debouncedSearchQuery = useDebounce(filters.searchQuery, 300);
 

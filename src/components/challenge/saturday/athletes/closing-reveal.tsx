@@ -46,7 +46,7 @@ export function ClosingReveal({
   const linksRef = useRef<HTMLDivElement>(null);
 
   const reducedMotion = usePrefersReducedMotion();
-  const lib = useSaturdayGsap(!reducedMotion);
+  const lib = useSaturdayGsap(reducedMotion === false);
 
   useEffect(() => {
     const section = sectionRef.current;

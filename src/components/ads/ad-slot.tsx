@@ -32,25 +32,56 @@ export function AdSlot({
   minHeight,
 }: AdSlotProps) {
   const pushedRef = useRef(false);
+  const containerRef = useRef<HTMLElement>(null);
   // fluid(in-article)는 가변이라 보수적으로, display/auto는 모바일 반응형 배너 높이로 예약
   const reservedHeight = minHeight ?? (format === 'fluid' ? 200 : 280);
 
   useEffect(() => {
-    if (pushedRef.current) return;
     if (!slot || !ADSENSE_CLIENT_ID) return;
     if (typeof window === 'undefined') return;
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-      pushedRef.current = true;
-    } catch {
-      // AdSense 스크립트 로드 전 호출 시 silent fail — afterInteractive로 곧 로드됨
-    }
+
+    const loadAd = () => {
+      if (pushedRef.current) return;
+
+      // 광고 슬롯이 실제 뷰포트 근처에 왔을 때만 AdSense를 로드한다.
+      // 전역 레이아웃에서 즉시 로드하던 160KB+ 스크립트를 초기 렌더 경로에서 제외한다.
+      if (!document.querySelector('script[data-adsense-loader]')) {
+        const script = document.createElement('script');
+        script.async = true;
+        script.crossOrigin = 'anonymous';
+        script.dataset.adsenseLoader = 'true';
+        script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`;
+        document.head.appendChild(script);
+      }
+
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+        pushedRef.current = true;
+      } catch {
+        // 네트워크 차단 등으로 실패하면 다음 마운트에서 다시 시도한다.
+      }
+    };
+
+    const container = containerRef.current;
+    if (!container) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          loadAd();
+          observer.disconnect();
+        }
+      },
+      { rootMargin: '300px 0px' },
+    );
+    observer.observe(container);
+    return () => observer.disconnect();
   }, [slot]);
 
   if (!slot || !ADSENSE_CLIENT_ID) return null;
 
   return (
     <aside
+      ref={containerRef}
       className={`ad-slot my-10 not-prose ${className}`.trim()}
       aria-label={label}
       role="complementary"

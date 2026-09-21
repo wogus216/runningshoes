@@ -65,7 +65,7 @@ export function AthleteDeck({ athletes, intro, copy }: DeckProps) {
   const [phase, setPhase] = useState<'stack' | 'grid'>('grid');
 
   const reducedMotion = usePrefersReducedMotion();
-  const lib = useSaturdayGsap(!reducedMotion);
+  const lib = useSaturdayGsap(reducedMotion === false);
 
   useDeckScroll({
     lib,

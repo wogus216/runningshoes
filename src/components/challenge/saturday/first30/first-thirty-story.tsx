@@ -39,6 +39,7 @@ export function FirstThirtyStory() {
   const story = useRef<HTMLDivElement>(null);
   const dialog = useRef<HTMLDialogElement>(null);
   const routeVideo = useRef<HTMLVideoElement>(null);
+  const routeVideoSrc = `${root}/route.mp4`;
   const handleWebglFailure = useCallback(() => setWebglFailed(true), []);
 
   useEffect(() => {
@@ -64,13 +65,21 @@ export function FirstThirtyStory() {
   useEffect(() => {
     const video = routeVideo.current;
     if (!video || !motion) { video?.pause(); return; }
+    const load = () => {
+      if (video.src) return;
+      video.src = routeVideoSrc;
+      video.load();
+    };
     const observer = new IntersectionObserver(([entry]) => {
-      if (entry.isIntersecting) void video.play().catch(() => undefined);
+      if (entry.isIntersecting) {
+        load();
+        void video.play().catch(() => undefined);
+      }
       else video.pause();
     }, { threshold: .45 });
     observer.observe(video);
     return () => { observer.disconnect(); video.pause(); };
-  }, [motion]);
+  }, [motion, routeVideoSrc]);
 
   const saveTicket = async () => {
     setSaving(true); setSaveMessage('');
@@ -145,7 +154,7 @@ export function FirstThirtyStory() {
 
         <section className={styles.record} id="first30-record" tabIndex={-1}>
           <div className={styles.recordCopy}><p className={styles.eyebrow}>THE RECEIPT / 남겨둔 기록</p><h2>30<span>.02</span><small>KM</small></h2><p>목표보다 5.02km 더.<br />내가 달려본 가장 긴 거리.</p><dl><div><dt>날짜</dt><dd>2026.09.05</dd></div><div><dt>출발</dt><dd>07:29 · 신대방역</dd></div><div><dt>코스</dt><dd>마곡나루 찍고 돌아오기</dd></div><div><dt>함께</dt><dd>형묵</dd></div></dl></div>
-          <figure className={styles.routeVideo}><video ref={routeVideo} controls loop playsInline muted preload="metadata" poster={`${root}/route-poster.webp`} aria-label="2026년 9월 5일 러닝 경로 영상, 최종 거리 30.02km"><source src={`${root}/route.mp4`} type="video/mp4" /><a href={`${root}/route.mp4`}>러닝 경로 영상 보기</a></video><figcaption><span aria-hidden="true">●</span> 30KM REPLAY · 그날 달린 길 / GARMIN 기록</figcaption></figure>
+          <figure className={styles.routeVideo}><video ref={routeVideo} controls loop playsInline muted preload="none" poster={`${root}/route-poster.webp`} aria-label="2026년 9월 5일 러닝 경로 영상, 최종 거리 30.02km"><a href={routeVideoSrc}>러닝 경로 영상 보기</a></video><figcaption><span aria-hidden="true">●</span> 30KM REPLAY · 그날 달린 길 / GARMIN 기록</figcaption></figure>
         </section>
 
         <section className={styles.memories} aria-labelledby="memory-title">

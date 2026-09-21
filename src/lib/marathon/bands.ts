@@ -1,4 +1,4 @@
-import type { MarathonEvent } from '@/types/marathon';
+import type { MarathonListEvent } from '@/types/marathon';
 
 /**
  * 대회 목록의 시점 밴드.
@@ -19,7 +19,7 @@ export type BandId = 'open' | 'upcoming' | 'closed' | 'past';
 export type Band = {
   id: BandId;
   label: string;
-  events: MarathonEvent[];
+  events: MarathonListEvent[];
 };
 
 const BAND_ORDER: { id: BandId; label: string }[] = [
@@ -40,7 +40,7 @@ export function daysUntil(dateStr: string, today: string): number {
 }
 
 /** 판정 순서가 곧 우선순위다 — past를 먼저 걸러낸 뒤 접수 기간, 마지막이 수동 status. */
-export function bandOf(event: MarathonEvent, today: string): BandId {
+export function bandOf(event: MarathonListEvent, today: string): BandId {
   // 1. 지난 대회 — 날짜만 본다. 유일하게 100% 자동 판정되는 밴드다.
   if (event.date < today) return 'past';
 
@@ -64,8 +64,8 @@ export function bandOf(event: MarathonEvent, today: string): BandId {
 }
 
 /** 4개 밴드를 항상 같은 순서로 반환한다. 비어 있어도 자리를 지킨다(호출자가 숨김을 결정). */
-export function groupIntoBands(events: readonly MarathonEvent[], today: string): Band[] {
-  const buckets: Record<BandId, MarathonEvent[]> = {
+export function groupIntoBands(events: readonly MarathonListEvent[], today: string): Band[] {
+  const buckets: Record<BandId, MarathonListEvent[]> = {
     open: [], upcoming: [], closed: [], past: [],
   };
   for (const e of events) buckets[bandOf(e, today)].push(e);

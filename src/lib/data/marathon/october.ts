@@ -786,6 +786,7 @@ export const octoberEvents: MarathonEvent[] = [
     distances: ['하프', '10K', '5K'],
     status: '마감',
     isMajor: false,
+    website: 'https://gimjesm.co.kr/',
     description:
       '김제지평선축제 기간에 열리는 25회째 대회로, 코스를 따라 만개한 코스모스 길이 가을 러닝 명소입니다. 하프·5K 각 1,500명, 10K 2,000명 등 총 5,000명 선착순 접수(5/20 시작)로 조기 마감됐습니다.',
     raceInfo: {
@@ -933,6 +934,7 @@ export const octoberEvents: MarathonEvent[] = [
     distances: ['10K', '5K'],
     status: '접수중',
     isMajor: false,
+    website: 'https://jurassicparkrun.co.kr/',
     registrationStart: '2026-09-14',
     registrationEnd: '2026-10-15',
     lastVerified: '2026-09-16',
