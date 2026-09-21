@@ -323,7 +323,9 @@ export const octoberEvents: MarathonEvent[] = [
     isMajor: false,
     website: 'https://seoulopen.or.kr/',
     description:
-      '광화문 출발 도심 하프·10K. 월요일(공휴일) 개최. 본접수 5/10 마감됨.',
+      '⚠️ [2026-09-21] 10월 5일 개최 예정이던 일정이 연기됐습니다. 공식 공지(seoulopen.or.kr)에 새 날짜는 아직 없고 "개별 안내 예정"만 기재돼 있습니다. 연기 사유는 공식 미기재로 불명. 기접수자는 9/21~10/23 환불 접수 가능(카드 3~7일, 현금 5일 이내). 광화문 출발 도심 하프·10K, 본접수 5/10 마감됨(연기 이전 정보).',
+    registrationNote: '일정 연기 — 새 날짜 미정(개별 안내 예정), 환불 접수 9/21~10/23',
+    lastVerified: '2026-09-21',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',

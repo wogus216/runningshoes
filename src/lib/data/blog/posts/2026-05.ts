@@ -11337,6 +11337,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-04',
+    updatedAt: '2026-09-21',
     category: 'news' as const,
     readingTime: 5,
     tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
@@ -11381,24 +11382,24 @@ export const posts_2026_05: BlogPost[] = [
       },
     ],
     content: `
+<div class="callout warning">
+  <span class="callout-icon">🚨</span>
+  <div class="callout-body">
+    <p class="callout-title">[2026-09-21 업데이트] 대회 일정 연기 — 새 날짜 미정</p>
+    <p>10월 5일 개최 예정이던 2026 서울 오픈 마라톤이 <strong>일정 연기</strong>로 공지됐습니다. 공식 홈페이지 공지(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=48" rel="noopener noreferrer">seoulopen.or.kr</a>)에 새 일정은 아직 없고 "개별 안내 예정"으로만 적혀 있습니다. 연기 사유도 공식 공지에는 명시돼 있지 않아 불명입니다. 이미 접수한 러너는 <strong>2026년 9월 21일~10월 23일 환불 접수</strong>가 진행 중이며(카드 취소 승인 3~7일, 현금 환불 5일 이내), 확정된 새 대회로 등록을 유지하는 선등록 링크도 우선 제공된다고 안내되어 있습니다. 아래 본문은 연기 이전(5월 접수 시점) 기준 정보이며, 새 날짜가 확정되면 갱신하겠습니다.</p>
+  </div>
+</div>
+
 <div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
+  <span class="tldr-label">3줄 요약 (연기 이전 기준)</span>
   <ul>
-    <li>2026년 10월 5일(월) 광화문광장 앞 출발 → 무교로 도착, 하프·10K 평탄 도심 코스</li>
+    <li>2026년 10월 5일(월) 광화문광장 앞 출발 → 무교로 도착, 하프·10K 평탄 도심 코스 — 이 일정은 연기됨(새 날짜 미정)</li>
     <li>접수 마감 5월 10일(일) 선착순, 하프 80,000원 · 10K 60,000원</li>
     <li>풀코스 없음 — 풀이 목표라면 춘천(10/25 예상), 도심 분위기·페이스메이커 운영을 원하면 이 대회</li>
   </ul>
 </div>
 
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 마감 — 5월 10일(일)</p>
-    <p>대회는 10월 5일(월), 접수는 <strong>2026년 5월 10일(일)까지 선착순</strong>입니다. 정원이 차면 조기 마감 가능성 있어요. 광화문 도심 코스라 대회 분위기 자체에 매력을 느낀다면 이번 주 안에 결정하시는 게 좋습니다.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
+<h2>핵심 정보 한눈에 (연기 이전 기준)</h2>
 
 <div class="stat-grid">
   <div class="stat-card accent">
