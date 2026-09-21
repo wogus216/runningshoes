@@ -113,6 +113,7 @@ export const reportFabrics: Fabric[] = [
       '한국소비자원이 시험한 착용 섬유제품은 확인된 것이 32건입니다. "32건이 전부"라는 뜻이 아닙니다 — 1차 검색에서 누락됐던 항목이 2차에서 발견된 적이 있습니다.',
     ],
     related: ['gore-tex-infinium', 'ret-iso-11092', 'wicking-ommc'],
+    relatedPosts: ['2026-seonsa-marathon-gangdong', 'fall-marathon-race-day-checklist-2026'],
     updatedAt: '2026-09-07',
     keywords: [
       '러닝 재킷 추천',

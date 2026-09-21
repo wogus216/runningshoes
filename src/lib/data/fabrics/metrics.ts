@@ -178,6 +178,7 @@ export const metricFabrics: Fabric[] = [
       '해외 소비자기관 6곳을 확인했으나 러닝 의류를 시험하는 곳은 없었습니다.',
     ],
     related: ['ret-iso-11092', 'upf', 'kca-running-jacket-2025'],
+    relatedPosts: ['hot-weather-summer-running-safety-guide-korea', 'summer-breathable-running-shoes-2026'],
     updatedAt: '2026-09-07',
     keywords: ['흡한속건', 'AATCC TM195', 'OMMC', '건조속도', '접촉냉감', 'Qmax'],
   },

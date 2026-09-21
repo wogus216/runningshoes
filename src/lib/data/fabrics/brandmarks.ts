@@ -207,6 +207,7 @@ export const brandmarkFabrics: Fabric[] = [
       'DWR(발수 코팅)이 몇 번 세탁하면 떨어지는지는 브랜드 공식 문서가 말하지 않습니다.',
     ],
     related: ['ret-iso-11092', 'kca-running-jacket-2025'],
+    relatedPosts: ['rainy-season-running-guide-korea', 'wet-running-shoes-drying-care-guide-korea'],
     updatedAt: '2026-09-07',
     keywords: ['고어텍스', 'GORE-TEX INFINIUM', '윈드스토퍼', '러닝 재킷 방수', '방풍 재킷'],
   },

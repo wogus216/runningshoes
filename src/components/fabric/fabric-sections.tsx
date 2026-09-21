@@ -1,6 +1,6 @@
 import { Fragment } from 'react';
 import Link from 'next/link';
-import { AlertTriangle, ExternalLink, HelpCircle, XCircle } from 'lucide-react';
+import { AlertTriangle, BookOpen, ExternalLink, HelpCircle, XCircle } from 'lucide-react';
 import type { EvidenceGrade, Fabric, FabricClaim, FabricTable } from '@/types/fabric';
 import { evidenceGradeLabels } from '@/types/fabric';
 
@@ -209,6 +209,32 @@ export function RelatedFabrics({ items }: { items: Fabric[] }) {
           >
             <span className="block font-semibold text-slate-900">{f.name}</span>
             <span className="mt-1 block text-sm leading-relaxed text-slate-600"><RichText text={f.summary} /></span>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+/**
+ * 원단 페이지 → 블로그 회유.
+ *
+ * 원단 지식은 그 자체로 검색되지 않는다 — 사람들이 검색하는 건 "장마철 러닝",
+ * "폭염에 뭐 입지" 같은 **상황**이다. 그 상황을 다룬 글로 넘겨야 이 섹션이 고립되지 않는다.
+ * 본문을 품은 BlogPost 를 받지 않고 제목·slug 만 받는다(번들 보호는 호출부 주석 참고).
+ */
+export function RelatedFabricPosts({ items }: { items: { slug: string; title: string }[] }) {
+  if (items.length === 0) return null;
+  return (
+    <ul className="space-y-2">
+      {items.map((post) => (
+        <li key={post.slug}>
+          <Link
+            href={{ pathname: `/blog/${post.slug}` }}
+            className="flex items-start gap-2 rounded-[4px] border border-slate-200 bg-white p-4 text-sm leading-relaxed text-slate-700 transition-colors hover:border-slate-400 hover:text-slate-900"
+          >
+            <BookOpen className="mt-0.5 h-4 w-4 shrink-0 text-slate-400" aria-hidden />
+            <span>{post.title}</span>
           </Link>
         </li>
       ))}

@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getFabricBySlug, getFabrics, getRelatedFabrics } from '@/lib/data/fabrics';
+import { getPostBySlug } from '@/lib/data/blog';
 import { fabricTypeMeta } from '@/types/fabric';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
@@ -9,6 +10,7 @@ import {
   ClaimList,
   FabricDataTable,
   MisconceptionList,
+  RelatedFabricPosts,
   RelatedFabrics,
   RichText,
   UnknownsPanel,
@@ -74,6 +76,19 @@ export default async function FabricDetailPage({ params }: FabricDetailPageProps
 
   const typeMeta = fabricTypeMeta[fabric.type];
   const related = getRelatedFabrics(fabric);
+
+  // 블로그 회유 링크. 조회를 **서버인 이 파일에서** 끝내고 제목·slug 만 넘긴다 —
+  // 본문을 품은 BlogPost 를 그대로 내려보내면 클라 번들에 글 전체가 실린다(헤더 검색 인덱스 사례).
+  // 없는 slug 는 조용히 버리지 않고 개발 중 경고한다(getRelatedFabrics 와 같은 규칙).
+  const relatedPosts = (fabric.relatedPosts ?? [])
+    .map((postSlug) => {
+      const post = getPostBySlug(postSlug);
+      if (!post && process.env.NODE_ENV !== 'production') {
+        console.warn(`[fabrics] ${fabric.slug}.relatedPosts 가 없는 slug 를 가리킵니다: ${postSlug}`);
+      }
+      return post ? { slug: post.slug, title: post.title } : undefined;
+    })
+    .filter((post): post is { slug: string; title: string } => Boolean(post));
 
   // ⚠️ aggregateRating·review(Person 저자)는 넣지 않는다 — 이 사이트는 후기를 수집하지 않는다.
   const jsonLd = {
@@ -186,6 +201,15 @@ export default async function FabricDetailPage({ params }: FabricDetailPageProps
             함께 보면 좋은 주제
           </h2>
           <RelatedFabrics items={related} />
+        </section>
+      )}
+
+      {relatedPosts.length > 0 && (
+        <section aria-labelledby="related-posts" className="space-y-4">
+          <h2 id="related-posts" className="text-xl font-bold text-slate-900">
+            이 원단이 실제로 문제가 되는 상황
+          </h2>
+          <RelatedFabricPosts items={relatedPosts} />
         </section>
       )}
 
