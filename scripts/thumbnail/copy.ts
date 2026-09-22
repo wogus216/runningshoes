@@ -543,6 +543,11 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
     subtitle: '취소표까지 전 코스 매진 — 빵가방 5종과 셔틀 05:10편',
     data: '10/9·10/10 엑스포시민광장 · 하프 6.9만 / 10K·5K 5.9만 · 성심당 튀김소보로 포함',
   },
+  // 출처: adidas.com.au 제품 페이지(2026-09-22 확인) — 정식명 ADIZERO ADIOS PRO 5,
+  // $380 AUD, 카본 ENERGYRIM 신설. 한국·미국 공식몰 검색 결과 없음(2026-09-22).
+  'adidas-adizero-adios-pro-5-release-2026': {
+    data: '$380 AUD · 카본 ENERGYRIM 신설 · 한국·미국 미출시(2026-09-22 확인)',
+  },
   // 출처: seoul.bbangrun.com 대회소개·코스·참가권 페이지(2026-09-21 확인) —
   // 11/14 뚝섬한강공원, 10K·5K 각 59,000원, 제한시간 공식 페이지 간 불일치(참가권 100/60분 vs 코스 90/90분).
   'seoul-bbangbbang-run': {

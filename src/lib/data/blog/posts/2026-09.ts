@@ -2,6 +2,101 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'adidas-adizero-adios-pro-5-release-2026',
+    slug: 'adidas-adizero-adios-pro-5-release-2026',
+    title:
+      '아디제로 아디오스 프로 5 공개 — "프로 5"가 아니라 "아디오스 프로 5"였다 | 공식 확인, 한국 출시는 아직',
+    description:
+      '아디다스가 아디제로 아디오스 프로 5를 공식 공개했습니다. 인스타에 돈 "아디제로 프로 5"라는 이름 때문에 별도 라인처럼 보였지만, 공식 페이지를 직접 열어보니 정체는 국내에도 이미 있는 아디오스 프로 4의 다음 세대였습니다. 호주 공식몰 기준 가격 $380, 카본이 들어간 신형 ENERGYRIM 구조까지 공식 소스로 확인했고, 무게·드롭 수치와 한국 출시는 아직 확인하지 못했습니다.',
+    thumbnail: '/images/blog/adidas-adizero-adios-pro-5-release-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-22',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['아디다스', '아디제로', '아디오스 프로 5', '카본화', '슈퍼슈즈', '러닝화 출시'],
+    faqs: [
+      {
+        question: '"아디제로 프로 5"와 "아디오스 프로 5"는 다른 신발인가요?',
+        answer:
+          '같은 신발입니다. 정식 제품명은 "ADIZERO ADIOS PRO 5"이고, 아디다스 공식 호주 온라인몰(adidas.com.au)에서 2026년 9월 22일에 직접 확인했습니다. 국내에 이미 출시된 아디제로 아디오스 프로 4의 다음 세대이며, 별도의 하위 라인이 아닙니다.',
+      },
+      {
+        question: '한국에는 언제, 얼마에 나오나요?',
+        answer:
+          '2026년 9월 22일 기준 아디다스 코리아 공식몰(adidas.co.kr)과 미국몰(adidas.com) 모두 검색 결과가 없어, 한국 출시일과 국내 가격은 아직 확인되지 않습니다. 호주 공식몰 가격은 380호주달러이며, 프로모션 할인 대상에서 제외된다고 명시돼 있습니다.',
+      },
+      {
+        question: '아디오스 프로 4와 무엇이 달라졌나요?',
+        answer:
+          '공식 제품 페이지가 밝힌 변화는 두 가지입니다. 첫째, 카본이 함유된 <strong>ENERGYRIM</strong> 구조를 신설했다고 소개하며 "이 구조를 적용한 첫 슈퍼슈즈"라고 설명합니다 — 프로 4가 쓰던 5개의 개별 카본 Energy Rods 구조와는 다른 설계로 보입니다. 둘째, LIGHTSTRIKE PRO 미드솔을 "튜닝"했고 LIGHTTRAXION+Continental 아웃솔을 적용했다고 밝힙니다. 다만 무게·드롭·스택 높이의 정확한 수치는 공식 페이지에서 직접 확인하지 못했습니다.',
+      },
+      {
+        question: '기록 경신용 신발인가요?',
+        answer:
+          '공식 페이지는 "레이스 데이를 위한 최선의 선택"이라 소개하며, "서브2 공식 신발인 아디오스 프로 에보 3와 같은 기록 경신 기술로 제작됐다"고 밝히고 있습니다. 즉 에보 3보다 한 단계 아래지만 같은 계보의 레이스 전용 슈퍼슈즈입니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>정식 명칭은 <strong>"아디제로 아디오스 프로 5"</strong> — 인스타에 돌던 "아디제로 프로 5"는 별도 라인이 아니라 이 신발의 축약 표기였습니다</li>
+    <li>국내에도 이미 있는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>의 다음 세대이고, 카본이 들어간 신형 <strong>ENERGYRIM</strong> 구조를 처음 적용했다고 공식이 밝혔습니다</li>
+    <li>호주 공식몰 가격은 <strong>$380 AUD</strong>. 한국·미국 공식몰에는 2026년 9월 22일 기준 검색 결과가 없어 한국 출시일·가격은 아직 불명입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글이 근거로 삼은 것</p>
+    <p>아디다스 호주 공식 온라인몰(adidas.com.au)의 제품 페이지를 2026년 9월 22일 직접 열어 확인했습니다. 같은 시각 아디다스 코리아(adidas.co.kr)·미국몰(adidas.com)에서 "adizero pro 5"를 검색했으나 결과가 없었습니다. 무게·드롭·스택 높이의 정확한 수치는 확인 과정에서 페이지가 반복적으로 응답하지 않아 대조하지 못했고, 이 글에는 넣지 않았습니다.</p>
+  </div>
+</div>
+
+<h2>이름부터 정리 — "프로 5"가 아니라 "아디오스 프로 5"</h2>
+
+<p>인스타그램에 "아디다스 아디제로 프로5 모델이 오피셜 공개되었다"는 소식이 돌았습니다. 이 이름만 보면 국내에 이미 있는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(29만 9천원, 카본 Energy Rods 5개)와는 다른 별도의 레이싱화 라인처럼 읽힙니다.</p>
+
+<p>공식 몰을 직접 열어 확인한 결과는 달랐습니다. 아디다스 호주 공식몰에서 판매 중인 제품의 정식 명칭은 <strong>"ADIZERO ADIOS PRO 5 RUNNING SHOES"</strong>입니다. 즉 이번 신발은 새 라인이 아니라, 국내에도 이미 출시돼 있는 <strong>아디오스 프로 4의 다음 세대</strong>입니다. "아디제로 프로 5"는 정식 명칭 중 "아디오스"를 뺀 축약 표기였던 셈입니다.</p>
+
+<h2>공식이 밝힌 것</h2>
+
+<table>
+  <thead>
+    <tr><th>항목</th><th>공식 표기(adidas.com.au)</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>가격</strong></td><td>$380 AUD (프로모션 할인 제외)</td></tr>
+    <tr><td><strong>미드솔</strong></td><td>LIGHTSTRIKE PRO — "에너지 리턴과 경량 성능을 위해 튜닝"</td></tr>
+    <tr><td><strong>신설 구조</strong></td><td>카본 함유 ENERGYRIM — 공식이 "이 구조를 쓴 첫 슈퍼슈즈"라고 소개</td></tr>
+    <tr><td><strong>아웃솔</strong></td><td>LIGHTTRAXION + Continental™ 고무</td></tr>
+    <tr><td><strong>계보</strong></td><td>"서브2 공식 신발인 아디오스 프로 에보 3와 같은 기록 경신 기술로 제작"</td></tr>
+  </tbody>
+</table>
+
+<p>제품 소개 문구는 "디스트랙션 프리 어퍼, 폭발적인 언더풋 감각, 한층 가벼워진 패키지에 담긴 최신 ENERGYRIM 기술로 레이스 데이 최선의 선택"이라고 돼 있습니다. 페이지에는 "*아디오스 프로 4 대비, UK 사이즈 8.5 기준"이라는 각주가 붙어 있어 프로 4와의 정량 비교 수치가 존재하는 것은 분명하지만, 그 각주가 정확히 어떤 수치(무게인지 에너지 리턴인지)에 달려 있는지는 페이지 접속이 반복적으로 끊겨 확인하지 못했습니다.</p>
+
+<h2>프로 4와 무엇이 달라졌나 — 구조가 바뀌었습니다</h2>
+
+<p><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>는 카본 <strong>Energy Rods 2.0</strong> 5개를 미드솔에 개별적으로 박아 넣는 구조였습니다(무게 200g, 힐 스택 37mm, 드롭 8mm, 반발력 10/10). 이번 프로 5는 이 개별 로드 구조 대신 <strong>ENERGYRIM</strong>이라는 카본 함유 단일 테두리 구조로 바뀌었다고 공식이 소개합니다. 로드 여러 개를 박는 방식에서 테두리 하나로 감싸는 방식으로, 설계 철학 자체가 달라진 것으로 보입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">아직 확인 못한 것</p>
+    <p>무게·드롭·스택 높이의 정확한 수치, 그리고 국내 발매 일정·가격은 2026년 9월 22일 기준 공식 소스로 확인하지 못했습니다. 인스타그램에 돌던 "175g", "에너지 리턴 +9%", "전작 대비 -25g" 같은 수치는 공식 페이지에서 직접 대조하지 못했으므로 이 글에는 신지 않았습니다. 확인되는 대로 갱신하겠습니다.</p>
+  </div>
+</div>
+
+<h2>지금 한국 러너에게 의미 있는 것</h2>
+
+<p>국내에서 지금 살 수 있는 것은 여전히 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(29만 9천원)입니다. 프로 4는 토박스가 좁은 편(narrow)이라 발볼 넓은 러너에게는 선택이 어려웠는데, 프로 5의 핏이 이 부분을 개선했는지는 공식 소스로 아직 확인되지 않았습니다. 프로 5의 한국 출시일·가격이 나오기 전까지는, 가을 대회를 앞둔 러너라면 이미 검증된 프로 4나 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 같은 대안을 그대로 검토하는 편이 현실적입니다.</p>
+
+<p><small>출처: 아디다스 공식 호주 온라인몰(adidas.com.au) 아디제로 아디오스 프로 5 제품 페이지, 2026년 9월 22일 확인. 같은 날 아디다스 코리아(adidas.co.kr)·미국몰(adidas.com) 검색 결과 없음도 함께 확인했습니다. 인스타그램 계정 @runner_iffu의 게시물이 이 소식의 최초 트리거였으나, 본문의 사실 관계는 전부 공식 몰 대조를 거쳤습니다. 무게·드롭 등 실측 수치와 한국 출시 정보는 확인되는 대로 갱신할 예정입니다.</small></p>
+`,
+  },
+  {
     id: 'seoul-bbangbbang-run',
     slug: 'seoul-bbangbbang-run',
     title:

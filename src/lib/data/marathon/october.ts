@@ -400,7 +400,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '서울어린이대공원 (서울 광진구)',
     region: '서울',
     distances: ['10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://runable.me/product/20032?comp=19600',
     registrationStart: '2026-08-20',
