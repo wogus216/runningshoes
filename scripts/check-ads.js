@@ -5,7 +5,7 @@
  * 실패하면 빌드가 실패하고 wrangler deploy 까지 가지 않는다.
  *
  * 2026-09-21 perf 커밋(ee32cc2)이 전역 AdSense 스크립트를 지우고 광고 슬롯을 lazy load 로,
- * GA 를 lazyOnload 로 바꿔 Auto ads 가 0 이 되고 노출이 급감했다(9/22~23, 트래픽은 +22%).
+ * GA 를 lazyOnload 로 바꿔 Auto ads 가 0 이 되고 노출이 급감했다(9/22~23. 같은 날 GA 조회수는 13일 평균 대비 −5% 수준).
  * 소스 문구가 아니라 **실제 배포될 HTML** 에 스크립트가 afterInteractive 로 박혔는지 본다 —
  * 어떤 경로로 지워지거나 늦춰져도 여기서 걸린다.
  */
