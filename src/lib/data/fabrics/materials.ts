@@ -10,15 +10,15 @@ export const materialFabrics: Fabric[] = [
     type: 'material',
     name: '폴리에스터',
     nameEn: 'Polyester',
-    summary: '러닝복 273벌 중 81.7%의 주소재. 잘 마르는 이유와 냄새가 쌓이는 이유가 같은 물성에서 나온다.',
+    summary: '데카트론 코리아·Nike 미국 273개 모델 중 81.7%의 주소재. 잘 마르고 냄새가 쌓이는 이유가 같은 물성에서 나온다.',
     intro:
-      '러닝복을 뒤집어 라벨을 보면 대부분 폴리에스터가 적혀 있습니다. 실제로 세어 봤습니다 — 273벌 중 223벌(81.7%)이 폴리에스터를 주소재로 썼습니다. ' +
+      '러닝복을 뒤집어 라벨을 보면 대부분 폴리에스터가 적혀 있습니다. 데카트론 코리아와 Nike 미국 사이트에서 273개 모델을 세어 보니 223개(81.7%)가 폴리에스터를 주소재로 썼습니다. ' +
       '그런데 폴리에스터의 최대 장점(빨리 마름)과 최대 단점(냄새가 안 빠짐)은 서로 다른 성질이 아니라 **같은 물성 하나에서 갈라져 나옵니다.** 수분율 0.3%입니다.',
     claims: [
       {
         text:
-          '러닝 의류 273벌 중 223벌(81.7%)이 폴리에스터 주소재였습니다. 표기가 아예 없는 제품은 0건으로, 조성은 법정 표시 의무라 반드시 어딘가에 적혀 있습니다.',
-        grade: 'A',
+          '데카트론 코리아 206개와 Nike 미국 67개 모델 중 223개(81.7%)가 폴리에스터 주소재였습니다. 이 표본에서 조성 표기가 아예 없는 제품은 0건이었습니다.',
+        grade: 'S',
         source: '자체 실측 — 데카트론 코리아 러닝웨어 전수 206벌 + Nike.com(미국) 러닝 의류 67벌, 주소재 50% 초과 기준, 2026-09-04',
         caveat:
           '데카트론이 표본의 75.5%를 차지해 통합 수치가 사실상 가성비 세그먼트 한 곳에 지배됩니다. 국내 브랜드는 이 표본에 포함되지 않았습니다.',
@@ -83,7 +83,7 @@ export const materialFabrics: Fabric[] = [
     ],
     related: ['nylon', 'merino-wool', 'elastane'],
     relatedPosts: ['summer-breathable-running-shoes-2026'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['폴리에스터', '러닝복 소재', '기능성 티셔츠 원단', '러닝복 냄새', '흡한속건'],
   },
 
@@ -101,20 +101,20 @@ export const materialFabrics: Fabric[] = [
       {
         text:
           '러닝 의류 273벌 중 나일론 주소재는 43벌이었습니다. 흔히 생각하는 타이츠가 아니라 아우터(52벌 중 13)와 언더웨어(20벌 중 7)에서 비중이 높았습니다.',
-        grade: 'A',
+        grade: 'S',
         source: '자체 실측 — 데카트론 코리아 206 + Nike.com(미국) 67, 주소재 50% 초과 기준, 2026-09-04',
       },
       {
         text:
           '기준에 따라 수치가 2배 이상 벌어집니다. 데카트론 표본에서 나일론은 주소재로 세면 17.5%, 안감·이너까지 포함하면 41.7%입니다.',
-        grade: 'A',
+        grade: 'S',
         source: '자체 실측 — 데카트론 코리아 러닝웨어 전수 206벌, 2026-09-04',
         caveat: '이 숫자를 인용할 때는 어느 기준인지 반드시 함께 적어야 합니다. 기준 없이 옮기면 둘 다 틀린 값이 됩니다.',
       },
       {
         text:
           '국내 유통 하의에서는 방향이 반대로 나타났습니다. 무신사 5개 브랜드 하의 54건에서 나일론 33건 대 폴리에스터 13건으로 나일론이 앞섰습니다.',
-        grade: 'A',
+        grade: 'S',
         source: '자체 실측 — 무신사 프로스펙스·코오롱스포츠·안다르·데상트·러닝라이프 N=100(실질 86), 2026-09-04',
         caveat:
           '브랜드 5곳뿐이고 수집 경로가 브랜드마다 달랐습니다. 대리 지표이지 국내 시장 전체가 아니므로 일반화하지 않습니다.',
@@ -124,6 +124,7 @@ export const materialFabrics: Fabric[] = [
           'Under Armour Iso-Chill은 나일론에 이산화티타늄(TiO₂)을 더하고, 실을 리본처럼 납작한 이형단면으로 뽑아 피부 접촉면을 넓힌 것입니다.',
         grade: 'B',
         source: 'Under Armour 공식 기술 설명',
+        sourceUrl: 'https://about.underarmour.com/en/stories/2020/01/you-have-to-feel-it-to-believe-it.html',
         caveat: '성능 수치(7~12% VO₂max 관련 주장)는 프로토콜과 표본수가 공개되지 않은 브랜드 자체 시험입니다.',
       },
     ],
@@ -145,7 +146,7 @@ export const materialFabrics: Fabric[] = [
       '국내 하의에서 나일론이 우세한 이유가 소재 선택인지 특정 카테고리(레깅스) 편중인지 구분하지 못했습니다.',
     ],
     related: ['polyester', 'elastane'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['나일론', '폴리아미드', '러닝 타이츠 소재', '러닝 레깅스 원단'],
   },
 
@@ -163,13 +164,13 @@ export const materialFabrics: Fabric[] = [
       {
         text:
           '엘라스테인 10% 초과 비율은 품목마다 크게 갈립니다. 타이츠·팬츠 82%, 쇼츠 59%, 언더웨어 50%, 상의 29%, 아우터 21%입니다. 전체로는 46%입니다.',
-        grade: 'A',
+        grade: 'S',
         source: '자체 실측 — 데카트론 코리아 206 + Nike.com(미국) 67, N=273, 2026-09-04',
       },
       {
         text:
           '브랜드마다 다른 이름으로 적습니다. 프로스펙스·안다르·코오롱스포츠·데상트는 "폴리우레탄", 러닝라이프는 "스판덱스"라고 표기합니다. 같은 섬유의 다른 표기이지 별개 소재가 아닙니다.',
-        grade: 'A',
+        grade: 'S',
         source: '자체 실측 — 무신사 5개 브랜드 상품 고시 정보, 2026-09-04',
       },
       {
@@ -201,7 +202,7 @@ export const materialFabrics: Fabric[] = [
       '"가수분해는 40℃에서 30℃보다 3.8배 빠르다"로 널리 인용되는 수치 역시 존재하지 않는 논문을 출처로 답니다.',
     ],
     related: ['polyester', 'nylon'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['엘라스테인', '스판덱스', '폴리우레탄', '러닝 타이츠 수명', '레깅스 늘어남'],
   },
 
@@ -221,6 +222,7 @@ export const materialFabrics: Fabric[] = [
           '울은 흡습발열량이 비스코스보다 20%, 면보다 50% 큽니다. 수분을 흡수할 때 열이 나는 성질로, 수분율 0.3%인 폴리에스터에는 이 메커니즘이 없습니다.',
         grade: 'A',
         source: 'Abedin F & DenHartog E (2023), Fibers 11(5):47',
+        sourceUrl: 'https://doi.org/10.3390/fib11050047',
       },
       {
         text:
@@ -248,7 +250,7 @@ export const materialFabrics: Fabric[] = [
     ],
     related: ['polyester'],
     relatedPosts: ['rainy-season-running-guide-korea', 'running-foot-care-blisters-toenails-2026'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['메리노 울', '겨울 러닝복', '울 베이스레이어', '흡습발열'],
   },
 ];

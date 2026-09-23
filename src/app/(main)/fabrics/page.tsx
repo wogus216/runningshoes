@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getFabrics, groupFabricsByType } from '@/lib/data/fabrics';
-import { fabricTypeMeta, fabricTypeOrder, evidenceGradeLabels } from '@/types/fabric';
+import { fabricTypeMeta, fabricTypeOrder, evidenceGradeLabels, evidenceGradeOrder } from '@/types/fabric';
 import { SITE_URL } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { EvidenceBadge, RichText } from '@/components/fabric/fabric-sections';
@@ -69,7 +69,7 @@ export default function FabricsPage() {
           근거 등급 읽는 법
         </h2>
         <dl className="mt-3 space-y-3">
-          {(['A', 'B', 'C'] as const).map((g) => (
+          {evidenceGradeOrder.map((g) => (
             <div key={g} className="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:gap-3">
               <dt className="shrink-0">
                 <EvidenceBadge grade={g} />

@@ -10,10 +10,10 @@ export const metricFabrics: Fabric[] = [
     type: 'metric',
     name: '증발저항 Ret (ISO 11092)',
     nameEn: 'Water-vapour resistance, ISO 11092',
-    summary: '땀이 원단을 통과하는 어려움을 재는 국제규격. 그런데 러닝복에 이 수치가 적힌 사례는 0건이다.',
+    summary: '땀이 원단을 통과하는 어려움을 재는 국제규격. 조사한 러닝복 판매 페이지에서는 이 수치가 확인되지 않았다.',
     intro:
       '"통기성이 좋다"를 숫자로 만들면 Ret입니다. 원단이 수증기를 얼마나 막는지를 재는 값이고, 낮을수록 잘 통과시킵니다. ' +
-      '국제규격도 있고 시험 장비도 있습니다. **그런데 러닝복 판매 페이지에서 이 숫자를 본 적이 있으신가요?** 저희가 찾은 표기 사례는 0건입니다.',
+      '국제규격도 있고 시험 장비도 있습니다. **그런데 러닝복 판매 페이지에서 이 숫자를 본 적이 있으신가요?** 조사한 브랜드·판매 페이지에서는 표기 사례를 찾지 못했습니다.',
     claims: [
       {
         text:
@@ -45,13 +45,14 @@ export const metricFabrics: Fabric[] = [
           '측정 방식 자체에도 한계가 있습니다. ISO 11092는 정상상태 시험이라 실제 착용만큼 섬유별 차이를 잡아내지 못합니다. 미국 NC State가 이 문제 때문에 ASTM F3628을 새로 만들었습니다.',
         grade: 'A',
         source: 'ASTM F3628 제정 배경 문서',
+        sourceUrl: 'https://store.astm.org/f3628-23.html',
       },
     ],
     measurements: [
       { label: '규격 번호', value: 'ISO 11092:2026', note: '2014년판은 폐지' },
       { label: '단위', value: 'm²·Pa/W', note: '증발저항 Ret' },
       { label: '열저항 단위', value: 'm²·K/W', note: 'Rct' },
-      { label: '러닝복 표기 사례', value: '0건', note: '자체 조사 범위 내' },
+      { label: '러닝복 표기 사례', value: '조사 표본 0건', note: '확인한 브랜드·판매 페이지 범위' },
     ],
     misconceptions: [
       {
@@ -68,7 +69,7 @@ export const metricFabrics: Fabric[] = [
       '규격 본문(17쪽)은 유료라 열람하지 못했습니다. 이 페이지의 인용은 전부 무료 공개된 초록 범위입니다.',
     ],
     related: ['gore-tex-infinium', 'polyester', 'kca-running-jacket-2025'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['Ret', 'ISO 11092', '증발저항', '원단 통기성', '투습도'],
   },
 
@@ -78,9 +79,9 @@ export const metricFabrics: Fabric[] = [
     type: 'metric',
     name: 'UPF 자외선 차단지수',
     nameEn: 'UPF (Ultraviolet Protection Factor)',
-    summary: '러닝복에서 널리 표기되는 사실상 유일한 성능 수치. 그래서 비교에 실제로 쓸 수 있다.',
+    summary: '조사 범위에서 러닝복에 가장 일관되게 표기된 성능 수치. 규격이 있어 제품 비교에 활용할 수 있다.',
     intro:
-      '이 섹션 전체를 관통하는 결론은 "브랜드가 수치를 안 준다"입니다. **UPF만 예외입니다.** ' +
+      '이 섹션 전체를 관통하는 결론은 "브랜드가 수치를 잘 공개하지 않는다"입니다. 조사 범위에서는 **UPF가 가장 일관된 예외였습니다.** ' +
       '자외선 차단지수는 여름 러닝복에 널리 표기되고, 등급 체계가 규격으로 정해져 있어 제품 간 비교가 실제로 가능합니다.',
     claims: [
       {
@@ -91,8 +92,8 @@ export const metricFabrics: Fabric[] = [
       },
       {
         text:
-          '러닝 의류에서 소비자에게 널리 공개되는 성능 수치는 확인한 범위에서 UPF가 유일합니다. GSM·공기투과도·Ret·건조속도·발수는 브랜드 표기 사례를 찾지 못했습니다.',
-        grade: 'A',
+          '러닝 의류에서 소비자에게 가장 일관되게 공개된 성능 수치는 확인한 범위에서 UPF였습니다. GSM·공기투과도·Ret·건조속도·발수는 조사한 브랜드·판매 페이지에서 표기 사례를 찾지 못했습니다.',
+        grade: 'S',
         source: '자체 조사 — 브랜드 공식 기술 페이지 및 한국 판매 페이지, 2026-09-04',
       },
       {
@@ -100,6 +101,7 @@ export const metricFabrics: Fabric[] = [
           '젝시믹스는 상품 상세 페이지에 KOTITI 공인시험성적서를 이미지로 공개하며, 여기에 UPF 실측치가 포함됩니다. 조성(%)은 끝내 공개하지 않으면서 시험성적서는 공개하는 구조입니다.',
         grade: 'A',
         source: '자체 확인 — 젝시믹스 상품 상세 페이지 KOTITI 성적서 2개 SKU, 2026-09-04',
+        sourceUrl: 'https://www.musinsa.com/products/5277661',
         caveat:
           '재현 확인은 2개 SKU에서만 했습니다. 다른 브랜드 4곳은 각 1개 SKU만 열람해 성적서가 없음을 확인했으므로, "젝시믹스만 그렇다"고 단정하지 않습니다.',
       },
@@ -107,14 +109,14 @@ export const metricFabrics: Fabric[] = [
     measurements: [
       { label: '규격', value: 'AS/NZS 4399 · KS K 0850' },
       { label: '등급', value: '15 / 30 / 50 / 50+' },
-      { label: '러닝복 표기', value: '널리 표기됨', note: '다른 지표는 사실상 0건' },
+      { label: '러닝복 표기', value: '널리 표기됨', note: '다른 지표는 조사 표본에서 확인되지 않음' },
     ],
     unknowns: [
       'UPF 등급이 세탁·마모 후 얼마나 유지되는지에 대한 브랜드 공개 데이터는 확보하지 못했습니다.',
       '젖은 상태에서 UPF가 어떻게 변하는지도 확인하지 못했습니다.',
     ],
     related: ['wicking-ommc', 'polyester'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['UPF', '자외선 차단', '여름 러닝복', '기능성 의류 자외선'],
   },
 
@@ -134,18 +136,19 @@ export const metricFabrics: Fabric[] = [
           '액체수분관리성은 AATCC TM195(MMT)로 측정하며 OMMC 1~5급으로 표기합니다. 건조속도는 ISO 17617(= KS K ISO 17617)로 별도 측정합니다.',
         grade: 'A',
         source: 'AATCC TM195, ISO 17617 규격 체계',
+        sourceUrl: 'https://www.iso.org/standard/60156.html',
       },
       {
         text:
           '이 지표들은 브랜드 표기 사례가 없는 반면, 한국소비자원 시험 결과에는 등급으로 공개됩니다. 즉 수치가 없는 게 아니라 **판매자가 아니라 공공기관 쪽에 있습니다.**',
-        grade: 'A',
+        grade: 'S',
         source: '자체 조사 — 브랜드 공식 문서 대조 + 한국소비자원 시험 결과, 2026-09-04',
       },
       {
         text:
           '정량 수치를 대는 쪽은 브랜드가 아니라 소재 공급사입니다. Pertex Quantum · Salomon AdvancedSkin Dry · HeiQ Smart Temp · UA Iso-Chill · 37.5는 숫자를 냅니다. ' +
           'Nike · adidas · lululemon · Brooks · New Balance · ASICS는 정성 표현뿐입니다.',
-        grade: 'B',
+        grade: 'S',
         source: '각 소재 공급사 공식 기술 자료',
         caveat: '37.5와 Iso-Chill의 수치는 자체 시험이며 프로토콜과 표본수가 공개되지 않았습니다. 인용 시 "브랜드 자체 시험"을 병기해야 합니다.',
       },
@@ -153,7 +156,8 @@ export const metricFabrics: Fabric[] = [
         text:
           '접촉냉감(Qmax)은 JIS L 1927로 측정하며 0.100 W/cm² 이상이면 냉감으로 봅니다. 러닝복에서는 문구만 쓰이고 수치는 대개 표기되지 않습니다.',
         grade: 'A',
-        source: 'JIS L 1927 규격',
+        source: 'JIS L 1927 부속서 B 참고기준 — 한국소비자원 스포츠 티셔츠 시험',
+        sourceUrl: 'https://www.kca.go.kr/kca/sub.do?menukey=5293&mode=view&no=1003341998',
       },
     ],
     measurements: [
@@ -174,12 +178,12 @@ export const metricFabrics: Fabric[] = [
     ],
     unknowns: [
       'AATCC·ASTM 규격 전문은 유료라 열람하지 못했습니다. 이 페이지는 규격 번호와 단위·등급 체계까지만 다룹니다.',
-      '한국 시험기관 3사에서 공개된 러닝복 시험 데이터는 찾지 못했습니다.',
-      '해외 소비자기관 6곳을 확인했으나 러닝 의류를 시험하는 곳은 없었습니다.',
+      '한국 시험기관 3사의 자체 자료실에서는 공개된 러닝복 제품별 시험 데이터를 찾지 못했습니다. 다만 젝시믹스 상품 페이지에서는 KOTITI 성적서 이미지가 확인됐습니다.',
+      '해외 소비자기관의 러닝 의류 시험은 일부 존재하지만, 무료로 제품별 원측정값까지 공개한 자료는 확인 범위에서 홋카이도립 소비생활센터 자료뿐이었습니다.',
     ],
     related: ['ret-iso-11092', 'upf', 'kca-running-jacket-2025'],
     relatedPosts: ['hot-weather-summer-running-safety-guide-korea', 'summer-breathable-running-shoes-2026'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: ['흡한속건', 'AATCC TM195', 'OMMC', '건조속도', '접촉냉감', 'Qmax'],
   },
 ];

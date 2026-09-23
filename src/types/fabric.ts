@@ -15,18 +15,22 @@ export type FabricType = 'material' | 'brandmark' | 'metric' | 'report';
 /**
  * 근거 등급.
  *
- * - `A` — 공공기관 실측 · 국제규격 원문 · 공인시험성적서 · 동료심사 논문
- * - `B` — 브랜드·소재공급사 공식 1차 문서의 정량 수치. **"자체 시험"임을 병기해야 한다**
- * - `C` — 정성 서술뿐(수치 없음). 브랜드 주장으로만 인용하고 사실처럼 쓰지 않는다
+ * - `A` — 독립 검증: 공공기관 실측 · 국제규격 원문 · 공인시험성적서 · 동료심사 논문
+ * - `B` — 공식 1차 자료: 제조사·소재공급사의 조성·정책·정량 수치. 자체 시험은 그 사실을 병기
+ * - `C` — 브랜드의 정성 서술뿐(수치 없음). 브랜드 주장으로만 인용하고 사실처럼 쓰지 않는다
+ * - `S` — 산초 자체 조사: 공개 카탈로그를 정해진 표본·기준으로 직접 집계하거나 대조한 결과
  *
  * 등급이 안 붙는 주장은 이 섹션에 실을 수 없다. "후기가 많다"류는 출처가 아니라 가짜 출처다.
  */
-export type EvidenceGrade = 'A' | 'B' | 'C';
+export type EvidenceGrade = 'A' | 'B' | 'C' | 'S';
+
+export const evidenceGradeOrder: EvidenceGrade[] = ['A', 'B', 'C', 'S'];
 
 export const evidenceGradeLabels: Record<EvidenceGrade, { label: string; desc: string }> = {
-  A: { label: '실측·규격', desc: '공공기관 실측, 국제규격 원문, 공인시험성적서, 동료심사 논문' },
-  B: { label: '브랜드 자체 시험', desc: '브랜드·소재공급사 공식 문서의 수치. 프로토콜은 대개 미공개' },
+  A: { label: '독립 검증', desc: '공공기관 실측, 국제규격 원문, 공인시험성적서, 동료심사 논문' },
+  B: { label: '공식 1차 자료', desc: '제조사·소재공급사의 조성, 정책, 정량 수치. 자체 시험은 그 사실을 병기' },
   C: { label: '정성 서술', desc: '수치 없이 말로만 설명된 것. 브랜드 주장으로만 인용' },
+  S: { label: '산초 자체 조사', desc: '공개 카탈로그를 명시한 표본·기준으로 직접 집계하거나 대조한 결과' },
 };
 
 export interface FabricClaim {

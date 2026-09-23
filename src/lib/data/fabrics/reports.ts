@@ -15,7 +15,7 @@ export const reportFabrics: Fabric[] = [
     nameEn: 'KCA Running Jacket Test 2025',
     summary: '나이키·아디다스·뉴발란스 등 8종을 공공기관이 직접 시험했다. 언론은 등급만 옮겼고 원표는 옮기지 않았다.',
     intro:
-      '러닝 의류에는 러닝화의 RunRepeat 같은 제3자 실측 기관이 없습니다. **딱 하나 예외가 한국소비자원입니다.** ' +
+      '러닝 의류는 러닝화처럼 제품별 실측을 상시 공개하는 기관이 드뭅니다. 국내에서 확인한 가장 체계적인 공공 실측 자료가 **한국소비자원 시험**입니다. ' +
       '2025년 11월, 러닝 재킷 8종을 실제로 시험한 결과가 공개됐습니다. 언론 보도는 별 등급과 순위만 옮겼고 ' +
       '제품별 수치·가격이 담긴 원표는 확인한 범위에서 어디에도 옮겨지지 않았습니다. 그 원표를 그대로 싣습니다.',
     claims: [
@@ -24,24 +24,28 @@ export const reportFabrics: Fabric[] = [
           '1.8m/s의 정면 바람에서 상체 보온성이 평균 14.8% 감소했습니다. 바람이 재킷의 보온을 깎아내는 정도를 실제로 잰 수치입니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
       },
       {
         text:
           '반팔 티셔츠만 입었을 때와 비교하면 재킷을 걸친 쪽이 보온성이 최소 73% 이상 개선됐습니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
       },
       {
         text:
           '시험 조건은 15℃·습도 63%(서울 가을 평균), 풍속 1.8m/s(서울 가을 평균 풍속 2.0m/s와 유사), 머리·손을 제외한 상체 기준입니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05) 본문',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
       },
       {
         text:
           '제품 선정은 최근 3년 내 구매자 1,500명 설문(2025년 3월)으로 상위 8개 브랜드를 고른 뒤, 각 브랜드에서 기준을 충족하는 제품 중 최저가를 택하는 방식이었습니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
         caveat: '따라서 각 브랜드의 플래그십이 아닙니다. 브랜드 최고 성능을 비교한 시험이 아닙니다.',
       },
       {
@@ -49,12 +53,14 @@ export const reportFabrics: Fabric[] = [
           '8개 제품 전부가 지퍼 내구성 2,000회, 필링, 색상 견뢰도, 안전성 시험에 적합했습니다. PFOA·PFOS는 전 제품 불검출이었습니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
       },
       {
         text:
           '소비자 실태에서는 76.6%가 세탁기로 세탁한다고 답했습니다. 손세탁 표시 3개사 중 2개사가 표시 개선 회신을 했습니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
         caveat: '아래 원표에서 손세탁 표시 제품(데상트·안다르·젝시믹스)을 확인할 수 있습니다.',
       },
       {
@@ -62,6 +68,7 @@ export const reportFabrics: Fabric[] = [
           '한국소비자원 총평은 나이키 리펠 마일러가 "가격 대비 품질 양호"였습니다.',
         grade: 'A',
         source: '한국소비자원 보도자료 (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
       },
     ],
     tables: [
@@ -114,7 +121,7 @@ export const reportFabrics: Fabric[] = [
     ],
     related: ['gore-tex-infinium', 'ret-iso-11092', 'wicking-ommc'],
     relatedPosts: ['2026-seonsa-marathon-gangdong', 'fall-marathon-race-day-checklist-2026'],
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-23',
     keywords: [
       '러닝 재킷 추천',
       '바람막이 비교',
