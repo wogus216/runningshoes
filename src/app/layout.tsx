@@ -156,11 +156,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <>
             <Script
               src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-              strategy="lazyOnload"
+              strategy="afterInteractive"
             />
             <Script
               id="ga4-init"
-              strategy="lazyOnload"
+              strategy="afterInteractive"
               dangerouslySetInnerHTML={{
                 __html: `
                   window.dataLayer = window.dataLayer || [];
