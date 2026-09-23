@@ -17,6 +17,7 @@
     "images": "node scripts/process-images.js",
     "generate:blog": "tsx scripts/generate-blog-post.ts",
     "ga": "tsx scripts/ga-report.ts",
+    "adsense": "tsx scripts/adsense-report.ts",
     "purge": "node scripts/purge-jsdelivr.mjs",
     "verify:cdn": "node scripts/verify-cdn.mjs",
     "postbuild": "next-sitemap && node scripts/check-ads.js",

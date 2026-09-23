@@ -90,3 +90,6 @@ public/sitemap*.xml
 public/images/challenge/saturday/_inbox/
 .superpowers/
 /tsconfig.tsbuildinfo
+
+# AdSense 사용자 OAuth 토큰 — scripts/adsense-report.ts 폴백 경로
+.adsense-token.json
