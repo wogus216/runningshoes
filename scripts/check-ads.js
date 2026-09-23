@@ -1,6 +1,8 @@
 #!/usr/bin/env node
 /**
- * 광고·GA 로딩 회귀 가드 — pre-push 에서 빌드 산출물(.next)을 검사한다.
+ * 광고·GA 로딩 회귀 가드 — postbuild 에서 배포 산출물(out/)을 검사한다.
+ * postbuild 라 로컬·pre-push·Cloudflare Workers Builds 어디서 빌드해도 돈다 —
+ * 실패하면 빌드가 실패하고 wrangler deploy 까지 가지 않는다.
  *
  * 2026-09-21 perf 커밋(ee32cc2)이 전역 AdSense 스크립트를 지우고 광고 슬롯을 lazy load 로,
  * GA 를 lazyOnload 로 바꿔 Auto ads 가 0 이 되고 노출이 급감했다(9/22~23, 트래픽은 +22%).
@@ -11,10 +13,10 @@ const fs = require('fs');
 const path = require('path');
 
 const ROOT = path.join(__dirname, '..');
-const APP_DIR = path.join(ROOT, '.next', 'server', 'app');
+const APP_DIR = path.join(ROOT, 'out'); // output: 'export' — wrangler 가 서빙하는 그 폴더
 
 if (!fs.existsSync(APP_DIR)) {
-  console.error('❌ .next/server/app 없음 — npm run build 후 실행하세요.');
+  console.error('❌ out/ 없음 — npm run build 후 실행하세요.');
   process.exit(1);
 }
 

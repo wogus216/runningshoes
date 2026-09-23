@@ -19,7 +19,7 @@
     "ga": "tsx scripts/ga-report.ts",
     "purge": "node scripts/purge-jsdelivr.mjs",
     "verify:cdn": "node scripts/verify-cdn.mjs",
-    "postbuild": "next-sitemap",
+    "postbuild": "next-sitemap && node scripts/check-ads.js",
     "prepare": "husky",
     "gsc": "tsx scripts/gsc-report.ts",
     "naver:rank": "tsx scripts/naver-rank.ts",
