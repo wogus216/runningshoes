@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
 import { getShoes } from "@/lib/data/shoes";
 import { getAllBrands } from "@/lib/data/brands";
 
@@ -172,6 +172,13 @@ export default function RootLayout({ children }: RootLayoutProps) {
             />
           </>
         )}
+        {/* AdSense — afterInteractive로 렌더 블로킹 방지 (Auto Ads는 onLoad 후에도 동작) */}
+        <Script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${ADSENSE_CLIENT_ID}`}
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
