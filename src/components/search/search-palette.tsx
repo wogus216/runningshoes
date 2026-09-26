@@ -131,29 +131,37 @@ export function SearchPalette() {
     <>
       <button
         onClick={() => setOpen(true)}
-        className="inline-flex items-center gap-2 rounded-[4px] border border-border bg-[var(--veil-90)] px-3 py-2 text-sm text-secondary transition hover:border-primary hover:bg-[var(--accent-soft)] md:min-w-[200px]"
+        className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center gap-2 rounded-[4px] border border-border bg-[var(--veil-90)] px-3 py-2 text-sm text-secondary transition-colors hover:border-primary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent lg:min-w-[200px] lg:justify-start"
         aria-label="검색"
       >
         <Search className="h-4 w-4" />
-        <span className="flex-1 text-left hidden sm:inline">신발 이름으로 검색...</span>
-        <kbd className="hidden md:inline rounded border border-stone-900/10 bg-surface px-1.5 py-0.5 text-[10px] font-mono text-tertiary">
+        <span className="hidden flex-1 whitespace-nowrap text-left lg:inline">신발 이름으로 검색…</span>
+        <kbd className="hidden rounded border border-stone-900/10 bg-surface px-1.5 py-0.5 font-mono text-[10px] text-tertiary 2xl:inline">
           ⌘K
         </kbd>
       </button>
 
       {open && (
-        <div
-          className="fixed inset-0 z-[100] bg-slate-950/40 backdrop-blur-sm flex items-start justify-center pt-[10vh] px-4"
-          onClick={() => setOpen(false)}
-        >
+        <div className="fixed inset-0 z-[100] flex items-start justify-center px-4 pt-[10vh]">
+          <button
+            type="button"
+            className="absolute inset-0 cursor-default bg-slate-950/40 backdrop-blur-sm"
+            onClick={() => setOpen(false)}
+            aria-label="검색 닫기"
+          />
           <div
-            className="w-full max-w-2xl bg-white rounded-[4px] overflow-hidden"
-            onClick={(e) => e.stopPropagation()}
+            className="relative w-full max-w-2xl overflow-hidden rounded-[4px] bg-white"
+            role="dialog"
+            aria-modal="true"
+            aria-label="신발 검색"
           >
-            <div className="flex items-center gap-3 border-b border-border px-4 py-3">
+            <div className="flex items-center gap-3 border-b border-border px-4 py-3 focus-within:ring-2 focus-within:ring-inset focus-within:ring-accent">
               <Search className="h-5 w-5 text-tertiary shrink-0" />
               <input
                 ref={inputRef}
+                name="shoe-search"
+                autoComplete="off"
+                aria-label="신발 이름, 브랜드 또는 카테고리 검색"
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
@@ -161,20 +169,20 @@ export function SearchPalette() {
                 }}
                 onKeyDown={onKeyDown}
                 placeholder="신발 이름, 브랜드, 카테고리로 검색 (예: 페가수스, 카본, 입문화)"
-                className="flex-1 bg-transparent text-base text-primary placeholder:text-tertiary outline-none"
+                className="min-w-0 flex-1 bg-transparent text-base text-primary placeholder:text-tertiary focus-visible:outline-none"
               />
               <button
                 onClick={() => setOpen(false)}
-                className="shrink-0 rounded-[3px] p-1 text-tertiary hover:bg-[var(--accent-soft)]"
+                className="shrink-0 rounded-[3px] p-2 text-tertiary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
                 aria-label="닫기"
               >
                 <X className="h-4 w-4" />
               </button>
             </div>
 
-            <div className="max-h-[60vh] overflow-y-auto">
+            <div className="max-h-[60vh] overflow-y-auto overscroll-contain">
               {results.length === 0 ? (
-                <div className="p-8 text-center text-sm text-tertiary">
+                <div className="p-8 text-center text-sm text-tertiary" role="status">
                   검색 결과가 없습니다. 다른 키워드로 시도해보세요.
                 </div>
               ) : (
@@ -184,7 +192,7 @@ export function SearchPalette() {
                       <button
                         onClick={() => go(item.href)}
                         onMouseEnter={() => setCursor(i)}
-                        className={`w-full flex items-center gap-3 px-4 py-3 text-left transition ${
+                        className={`flex w-full items-center gap-3 px-4 py-3 text-left transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-accent ${
                           i === cursor ? 'bg-sky-50' : 'hover:bg-surface'
                         }`}
                       >

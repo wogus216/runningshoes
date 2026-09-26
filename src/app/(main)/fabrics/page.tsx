@@ -68,13 +68,13 @@ export default function FabricsPage() {
         <h2 id="grade-legend" className="text-base font-bold text-slate-800">
           근거 등급 읽는 법
         </h2>
-        <dl className="mt-3 space-y-3">
+        <dl className="mt-3 grid grid-cols-2 gap-2 sm:block sm:space-y-3">
           {evidenceGradeOrder.map((g) => (
-            <div key={g} className="flex flex-col gap-1.5 sm:flex-row sm:items-baseline sm:gap-3">
+            <div key={g} className="flex min-w-0 flex-col gap-1.5 sm:flex-row sm:items-baseline sm:gap-3">
               <dt className="shrink-0">
                 <EvidenceBadge grade={g} />
               </dt>
-              <dd className="text-sm leading-relaxed text-slate-700">{evidenceGradeLabels[g].desc}</dd>
+              <dd className="hidden text-sm leading-relaxed text-slate-700 sm:block">{evidenceGradeLabels[g].desc}</dd>
             </div>
           ))}
         </dl>

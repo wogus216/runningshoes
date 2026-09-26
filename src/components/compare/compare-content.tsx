@@ -141,7 +141,7 @@ function ComparePageContent() {
   };
 
   // 드래그 핸들러
-  const handleDragStart = (e: DragEvent<HTMLDivElement>, shoe: CardShoe) => {
+  const handleDragStart = (e: DragEvent<HTMLElement>, shoe: CardShoe) => {
     setDraggedShoe(shoe);
     e.dataTransfer.effectAllowed = 'move';
     e.dataTransfer.setData('text/plain', shoe.slug || '');
@@ -152,7 +152,7 @@ function ComparePageContent() {
     setDragOverSlot(null);
   };
 
-  const handleDragOver = (e: DragEvent<HTMLDivElement>, slotIndex: number) => {
+  const handleDragOver = (e: DragEvent<HTMLElement>, slotIndex: number) => {
     e.preventDefault();
     e.dataTransfer.dropEffect = 'move';
     setDragOverSlot(slotIndex);
@@ -162,7 +162,7 @@ function ComparePageContent() {
     setDragOverSlot(null);
   };
 
-  const handleDrop = (e: DragEvent<HTMLDivElement>, slotIndex: number) => {
+  const handleDrop = (e: DragEvent<HTMLElement>, slotIndex: number) => {
     e.preventDefault();
     if (draggedShoe) {
       addShoeToSlot(draggedShoe, slotIndex);
@@ -173,7 +173,7 @@ function ComparePageContent() {
 
   return (
     <div className="space-y-5">
-      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-6 md:px-8 md:py-8">
+      <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-white px-5 py-5 md:px-8 md:py-8">
         <div className="pointer-events-none absolute inset-0">
         </div>
 
@@ -193,7 +193,7 @@ function ComparePageContent() {
 
             <div className="space-y-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-sky-700">Compare Board</p>
-              <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
+              <h1 className="break-keep text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
                 감이 아니라 나란히 놓고 고르게.
               </h1>
               <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
@@ -202,7 +202,7 @@ function ComparePageContent() {
             </div>
           </div>
 
-          <div className="grid gap-3 sm:grid-cols-3">
+          <div className="hidden gap-3 sm:grid sm:grid-cols-3">
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-accent" />
               <p className="mt-4 text-sm font-semibold text-slate-950">추천 조합</p>
@@ -268,6 +268,7 @@ function ComparePageContent() {
                   if (shoeId) removeShoe(shoeId);
                 }}
                 className="absolute -top-2 -right-2 p-1 rounded-full bg-negative text-white hover:opacity-80 z-10"
+                aria-label={`${shoe.name} 비교에서 삭제`}
               >
                 <X className="h-3 w-3" />
               </button>
@@ -293,18 +294,20 @@ function ComparePageContent() {
               .slice(idx, idx + 1)[0];
 
             return (
-              <div
+              <button
+                type="button"
                 key={`empty-${idx}`}
                 onDragOver={(e) => handleDragOver(e, slotIndex)}
                 onDragLeave={handleDragLeave}
                 onDrop={(e) => handleDrop(e, slotIndex)}
                 className={cn(
-                  "flex min-h-[132px] cursor-pointer flex-col items-center justify-center rounded-[4px] border-2 border-dashed p-4 text-center transition-all",
+                  "flex min-h-[132px] w-full cursor-pointer flex-col items-center justify-center rounded-[4px] border-2 border-dashed p-4 text-center transition-[border-color,background-color,transform] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                   isOver
                     ? "scale-105 border-sky-300 bg-sky-50"
                     : "border-sky-100 bg-white/70 hover:border-sky-300 hover:bg-sky-50"
                 )}
                 onClick={() => suggestedShoe && addShoe(suggestedShoe)}
+                aria-label={suggestedShoe ? `${suggestedShoe.brand} ${suggestedShoe.name} 비교에 추가` : '빈 비교 슬롯'}
               >
                 {isOver ? (
                     <span className="text-sm font-medium text-signal-dark">여기에 놓기</span>
@@ -327,7 +330,7 @@ function ComparePageContent() {
                     <span className="text-xs text-tertiary mt-1">드래그하여 추가</span>
                   </>
                 )}
-              </div>
+              </button>
             );
           })}
         </div>
@@ -353,7 +356,10 @@ function ComparePageContent() {
               <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-tertiary" />
               <input
                 type="text"
-                placeholder="신발 이름, 브랜드 검색..."
+                name="compare-shoe-search"
+                autoComplete="off"
+                aria-label="비교할 신발 이름 또는 브랜드 검색"
+                placeholder="신발 이름, 브랜드 검색…"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 className="w-full rounded-full border border-sky-100 bg-white py-3 pl-11 pr-4 text-sm focus:border-sky-300 focus:outline-none focus:ring-2 focus:ring-sky-200"
@@ -367,14 +373,15 @@ function ComparePageContent() {
                 const isDragging = draggedShoe?.slug === shoe.slug;
 
                 return (
-                  <div
+                  <button
+                    type="button"
                     key={shoe.id || shoe.slug}
                     draggable={!isSelected && canAdd}
                     onDragStart={(e) => handleDragStart(e, shoe)}
                     onDragEnd={handleDragEnd}
                     onClick={() => !isSelected && canAdd && addShoe(shoe)}
                     className={cn(
-                      "cursor-pointer select-none rounded-[22px] border p-4 text-left transition-all",
+                      "w-full cursor-pointer select-none rounded-[22px] border p-4 text-left transition-[border-color,background-color,opacity,transform] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent",
                       isDragging && "opacity-50 scale-95",
                       isSelected
                         ? "border-sky-300 bg-sky-50 cursor-default"
@@ -382,6 +389,8 @@ function ComparePageContent() {
                         ? "border-sky-100 bg-white hover:-translate-y-0.5 hover:border-sky-300"
                         : "border-stone-900/10 bg-surface opacity-50 cursor-not-allowed"
                     )}
+                    disabled={isSelected || !canAdd}
+                    aria-label={`${shoe.brand} ${shoe.name}${isSelected ? ' 선택됨' : ' 비교에 추가'}`}
                   >
                     <div className="flex items-center gap-3">
                       {/* 드래그 핸들 */}
@@ -406,7 +415,7 @@ function ComparePageContent() {
                         <span className="flex-shrink-0 rounded-full bg-[var(--navy)] px-2 py-1 text-xs text-white">선택됨</span>
                       )}
                     </div>
-                  </div>
+                  </button>
                 );
               })}
             </div>

@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown, Shirt } from 'lucide-react';
+import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown, Shirt, Menu } from 'lucide-react';
 import { SearchPalette } from '@/components/search/search-palette';
 
 /**
@@ -12,13 +12,22 @@ import { SearchPalette } from '@/components/search/search-palette';
  */
 export type HeaderBrandLink = { id: string; name: string; nameKo: string };
 
+const browseLinks = [
+  { href: '/brands', label: '브랜드' },
+  { href: '/gels', label: '에너지 젤' },
+  { href: '/fabrics', label: '러닝복 원단' },
+  { href: '/marathon', label: '마라톤 대회' },
+  { href: '/blog', label: '블로그' },
+  { href: '/best', label: '베스트 가이드' },
+] as const;
+
 export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
   return (
     <header className="sticky top-0 z-50 border-b-2 border-primary bg-[rgba(252,251,249,0.92)] backdrop-blur-xl">
-      <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-4 px-4 py-3 md:px-6">
+      <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-2 px-4 py-3 md:px-6 xl:gap-4">
         <Link
           href="/"
-          className="group flex min-w-0 items-center gap-3 transition-transform duration-200 hover:-translate-y-0.5"
+          className="group flex shrink-0 items-center gap-3 transition-transform duration-200 hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2"
         >
           {/* Logo mark — 3 speed-streak bars */}
           <svg
@@ -52,24 +61,24 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
             {/* Bar 3 — top, shortest */}
             <rect x="14" y="12" width="14" height="3" rx="1.5" fill="url(#streak-grad)" opacity="0.48" transform="rotate(-22 14 12)" />
           </svg>
-          <div className="min-w-0">
+          <div className="hidden min-w-0 sm:block">
             <p className="font-mono text-[9px] font-bold uppercase tracking-[0.38em] text-accent">All Run About</p>
             <p className="truncate text-[15px] font-bold leading-tight tracking-tight text-slate-900 md:text-base">러닝의 모든것</p>
           </div>
         </Link>
 
-        <nav className="hidden items-center gap-1 md:flex">
+        <nav className="hidden shrink-0 items-center gap-1 xl:flex">
           <div className="group relative">
             <Link
               href="/brands"
-              className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary group-hover:bg-[var(--accent-soft)] group-hover:text-primary"
+              className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent group-hover:bg-[var(--accent-soft)] group-hover:text-primary"
               aria-haspopup="true"
             >
               <FlaskConical className="h-4 w-4" />
               <span>브랜드</span>
               <ChevronDown className="h-3 w-3 transition-transform group-hover:rotate-180" />
             </Link>
-            <div className="invisible absolute left-0 top-full z-40 w-56 translate-y-1 pt-1 opacity-0 transition-all duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
+            <div className="invisible absolute left-0 top-full z-40 w-56 translate-y-1 pt-1 opacity-0 transition-[opacity,transform] duration-150 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:visible group-focus-within:translate-y-0 group-focus-within:opacity-100">
               <div className="rounded-[4px] border border-[var(--accent-line)] bg-white/95 p-2 backdrop-blur-xl">
                 <ul className="grid grid-cols-1 gap-0.5">
                   {brandLinks.map((b) => (
@@ -100,60 +109,82 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
           </div>
           <Link
             href="/gels"
-            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Beaker className="h-4 w-4" />
             <span>젤</span>
           </Link>
           <Link
             href="/fabrics"
-            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Shirt className="h-4 w-4" />
             <span>원단</span>
           </Link>
           <Link
             href="/marathon"
-            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Trophy className="h-4 w-4" />
             <span>대회</span>
           </Link>
           <Link
             href="/blog"
-            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <BookOpen className="h-4 w-4" />
             <span>블로그</span>
           </Link>
           <Link
             href="/best"
-            className="inline-flex items-center gap-2 rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary"
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
           >
             <Award className="h-4 w-4" />
             <span>베스트</span>
           </Link>
         </nav>
 
-        <div className="flex items-center gap-2">
-          <div className="hidden sm:block">
+        <div className="flex min-w-0 items-center gap-2">
+          <div className="shrink-0">
             <SearchPalette />
           </div>
           <Link
             href="/compare"
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-[4px] border border-border bg-[var(--veil-90)] px-3.5 py-2 text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary hover:bg-[var(--accent-soft)]"
+            className="inline-flex min-h-[44px] min-w-[44px] shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[4px] border border-border bg-[var(--veil-90)] px-3 py-2 text-sm font-semibold text-primary transition-colors duration-200 hover:border-primary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+            aria-label="신발 비교"
           >
             <Scale className="h-4 w-4" />
-            <span>비교</span>
+            <span className="hidden sm:inline">비교</span>
           </Link>
           <Link
             href="/recommend"
-            className="inline-flex min-h-[44px] items-center gap-2 rounded-[4px] bg-accent px-4 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:bg-primary"
+            className="inline-flex min-h-[44px] shrink-0 items-center gap-2 whitespace-nowrap rounded-[4px] bg-accent px-3 py-2 text-sm font-semibold text-white transition-colors duration-200 hover:bg-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2 sm:px-4"
           >
             <Sparkles className="h-4 w-4" />
-            <span>맞춤 추천</span>
+            <span className="sm:hidden">추천</span>
+            <span className="hidden sm:inline">맞춤 추천</span>
             <ArrowUpRight className="hidden h-4 w-4 sm:block" />
           </Link>
+          <details className="group relative shrink-0 xl:hidden">
+            <summary
+              className="flex min-h-[44px] min-w-[44px] cursor-pointer list-none items-center justify-center rounded-[4px] border border-border bg-[var(--veil-90)] text-primary transition-colors hover:border-primary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent [&::-webkit-details-marker]:hidden"
+              aria-label="둘러보기 메뉴"
+            >
+              <Menu className="h-5 w-5" aria-hidden="true" />
+            </summary>
+            <nav className="absolute right-0 top-full z-50 mt-2 w-48 rounded-[4px] border border-[var(--accent-line)] bg-white p-2 shadow-lg">
+              {browseLinks.map((item) => (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={(event) => event.currentTarget.closest('details')?.removeAttribute('open')}
+                  className="block rounded-[3px] px-3 py-2.5 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                >
+                  {item.label}
+                </Link>
+              ))}
+            </nav>
+          </details>
         </div>
       </div>
     </header>

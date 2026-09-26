@@ -155,10 +155,10 @@ export default function MarathonPage() {
               </div>
               <div className="space-y-3">
                 <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-sky-700">Race Calendar</p>
-                <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
+                <h1 className="break-keep text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
                   2026 마라톤 대회 일정
                 </h1>
-                <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+                <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
                   지금 접수 중인 대회부터 먼저 보여줍니다. 권역·거리로 좁히면 신청할 수 있는 대회만 남습니다.
                 </p>
               </div>

@@ -42,10 +42,10 @@ export default function BlogPage() {
             </div>
             <div className="space-y-3">
               <p className="text-[11px] font-semibold uppercase tracking-[0.32em] text-sky-700">Editorial Notes</p>
-              <h1 className="text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
+              <h1 className="break-keep text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
                 러닝을 오래 가게 만드는 정보만.
               </h1>
-              <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+              <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
                 러닝화 선택, 부상 예방, 훈련 팁, 신제품 흐름까지 읽기 좋게 정리한 편집형 가이드 섹션입니다.
               </p>
             </div>
