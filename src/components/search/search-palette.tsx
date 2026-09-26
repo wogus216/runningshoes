@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect, useMemo, useRef, useCallback } from 'react';
+import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { Search, X, CornerDownLeft } from 'lucide-react';
 import type { SearchItem } from '@/lib/search-index';
@@ -36,6 +37,8 @@ export function SearchPalette() {
   const [cursor, setCursor] = useState(0);
   const [items, setItems] = useState<SearchItem[]>(cachedIndex ?? []);
   const inputRef = useRef<HTMLInputElement>(null);
+  const dialogRef = useRef<HTMLDivElement>(null);
+  const returnFocusRef = useRef<HTMLElement | null>(null);
 
   // 처음 열릴 때 인덱스 로드 (모듈 스코프 캐시로 세션 내 1회)
   useEffect(() => {
@@ -84,15 +87,46 @@ export function SearchPalette() {
     return () => window.removeEventListener('keydown', onKey);
   }, [open]);
 
-  // 열렸을 때 포커스
+  // 열렸을 때 포커스, 닫힐 때 열기 전 위치로 포커스 복귀
   useEffect(() => {
     if (open) {
+      returnFocusRef.current = document.activeElement instanceof HTMLElement ? document.activeElement : null;
       setTimeout(() => inputRef.current?.focus(), 10);
       setCursor(0);
-    } else {
-      setQuery('');
+      return () => {
+        const el = returnFocusRef.current;
+        if (el?.isConnected) el.focus();
+      };
     }
+    setQuery('');
   }, [open]);
+
+  // 열린 동안 뒤 페이지 스크롤 잠금 — html·body 둘 다 overflow-x:hidden 이라 스크롤 주체는 html 이다
+  useEffect(() => {
+    if (!open) return;
+    const root = document.documentElement;
+    const prev = root.style.overflow;
+    root.style.overflow = 'hidden';
+    return () => {
+      root.style.overflow = prev;
+    };
+  }, [open]);
+
+  // Tab 을 dialog 안에서 순환시킨다(aria-modal 이라 밖으로 나가면 안 된다)
+  function trapFocus(e: React.KeyboardEvent) {
+    if (e.key !== 'Tab' || !dialogRef.current) return;
+    const focusables = dialogRef.current.querySelectorAll<HTMLElement>('input, button:not([disabled])');
+    if (focusables.length === 0) return;
+    const first = focusables[0];
+    const last = focusables[focusables.length - 1];
+    if (e.shiftKey && document.activeElement === first) {
+      e.preventDefault();
+      last.focus();
+    } else if (!e.shiftKey && document.activeElement === last) {
+      e.preventDefault();
+      first.focus();
+    }
+  }
 
   const results = useMemo(() => {
     if (!query.trim()) return items.slice(0, 10);
@@ -141,19 +175,26 @@ export function SearchPalette() {
         </kbd>
       </button>
 
-      {open && (
+      {/*
+        body 로 portal — 헤더의 backdrop-filter 가 fixed 자손의 기준을 헤더로 바꿔
+        오버레이가 헤더 높이(~90px)만 덮고 배경 클릭 닫기가 먹지 않았다(2026-09-26).
+      */}
+      {open && createPortal(
         <div className="fixed inset-0 z-[100] flex items-start justify-center px-4 pt-[10vh]">
           <button
             type="button"
+            tabIndex={-1}
+            aria-hidden="true"
             className="absolute inset-0 cursor-default bg-slate-950/40 backdrop-blur-sm"
             onClick={() => setOpen(false)}
-            aria-label="검색 닫기"
           />
           <div
+            ref={dialogRef}
             className="relative w-full max-w-2xl overflow-hidden rounded-[4px] bg-white"
             role="dialog"
             aria-modal="true"
             aria-label="신발 검색"
+            onKeyDown={trapFocus}
           >
             <div className="flex items-center gap-3 border-b border-border px-4 py-3 focus-within:ring-2 focus-within:ring-inset focus-within:ring-accent">
               <Search className="h-5 w-5 text-tertiary shrink-0" />
@@ -221,7 +262,8 @@ export function SearchPalette() {
               <span>{results.length}개 결과</span>
             </div>
           </div>
-        </div>
+        </div>,
+        document.body,
       )}
     </>
   );
