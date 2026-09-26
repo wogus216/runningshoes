@@ -196,7 +196,7 @@ function ComparePageContent() {
               <h1 className="break-keep text-balance text-4xl font-black leading-[0.92] tracking-tight text-slate-950 md:text-5xl">
                 감이 아니라 나란히 놓고 고르게.
               </h1>
-              <p className="max-w-2xl text-sm leading-7 text-slate-600 md:text-base">
+              <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
                 무게, 쿠셔닝, 안정성, 발볼, 가격까지 한 번에 올려두고 차이를 빠르게 읽을 수 있게 다시 정리했습니다.
               </p>
             </div>
