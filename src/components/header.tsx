@@ -1,6 +1,8 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { ArrowUpRight, Scale, Sparkles, FlaskConical, Beaker, BookOpen, Trophy, Award, ChevronDown, Shirt, Menu } from 'lucide-react';
 import { SearchPalette } from '@/components/search/search-palette';
 
@@ -22,6 +24,34 @@ const browseLinks = [
 ] as const;
 
 export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
+  // 헤더는 라우트가 바뀌어도 다시 마운트되지 않아 details 의 open 이 다음 페이지로 따라간다.
+  // 경로 변경·바깥 클릭·Esc 에서 닫는다(메뉴 안 링크는 같은 경로 재클릭도 있어 onClick 으로 따로 닫는다).
+  const menuRef = useRef<HTMLDetailsElement>(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    if (menuRef.current) menuRef.current.open = false;
+  }, [pathname]);
+
+  useEffect(() => {
+    const onPointerDown = (event: PointerEvent) => {
+      const menu = menuRef.current;
+      if (menu?.open && !menu.contains(event.target as Node)) menu.open = false;
+    };
+    const onKeyDown = (event: KeyboardEvent) => {
+      const menu = menuRef.current;
+      if (event.key !== 'Escape' || !menu?.open) return;
+      menu.open = false;
+      menu.querySelector('summary')?.focus();
+    };
+    document.addEventListener('pointerdown', onPointerDown);
+    document.addEventListener('keydown', onKeyDown);
+    return () => {
+      document.removeEventListener('pointerdown', onPointerDown);
+      document.removeEventListener('keydown', onKeyDown);
+    };
+  }, []);
+
   return (
     <header className="sticky top-0 z-50 border-b-2 border-primary bg-[rgba(252,251,249,0.92)] backdrop-blur-xl">
       <div className="mx-auto flex min-h-16 max-w-6xl items-center justify-between gap-2 px-4 py-3 md:px-6 xl:gap-4">
@@ -165,7 +195,7 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
             <span className="hidden sm:inline">맞춤 추천</span>
             <ArrowUpRight className="hidden h-4 w-4 sm:block" />
           </Link>
-          <details className="group relative shrink-0 xl:hidden">
+          <details ref={menuRef} className="group relative shrink-0 xl:hidden">
             <summary
               className="flex min-h-[44px] min-w-[44px] cursor-pointer list-none items-center justify-center rounded-[4px] border border-border bg-[var(--veil-90)] text-primary transition-colors hover:border-primary hover:bg-[var(--accent-soft)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent [&::-webkit-details-marker]:hidden"
               aria-label="둘러보기 메뉴"
