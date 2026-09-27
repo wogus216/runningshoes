@@ -38,6 +38,14 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 자이스 스마일 레이스 공식 홈페이지 메인·참가신청 안내·유의사항
+  // (2026-09-27 확인) — 11/22 여의도, 선착순 5,000명, 10K 65,000원·5K 55,000원,
+  // 제한시간 90분·60분. 기념품 페이지는 구성 미게시라 썸네일에서 제외.
+  'zeiss-smile-race': {
+    title: '자이스 스마일 레이스, 5천 명 선착순',
+    subtitle: '11월 22일 여의도 — 5K도 기록칩이 포함된다',
+    data: '10K 6.5만 · 5K 5.5만원 · 제한시간 90분 / 60분 · 접수 중',
+  },
   // 출처: ASICS Marathon de Paris 공식(asicsmarathondeparis.com, 2026-09-10 확인) —
   // 참가비 €169·추첨제 전환·팀 2~6명 규정. 마감 일시는 공식 추첨 신청 페이지 상단 고지
   // "jusqu'au mercredi 30 septembre 2026 à 23h59 (heure française)" → KST 10/1 06:59.

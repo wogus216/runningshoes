@@ -2,6 +2,46 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const novemberEvents: MarathonEvent[] = [
   {
+    id: 'zeiss-smile-race-2026',
+    name: '2026 자이스 스마일 레이스',
+    date: '2026-11-22',
+    month: '11월',
+    location: '여의도공원 문화의 마당 (서울 영등포구)',
+    region: '서울',
+    distances: ['10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://zeiss-smilerace.kr/marathon/code/8050/',
+    registrationNote:
+      '공식 홈페이지에서 개인·단체 참가 신청 버튼이 활성 상태임을 2026년 9월 27일 확인했습니다. 별도 마감일 없이 결제 완료 기준 선착순 5,000명이 차면 조기 마감되며, 접수가 끝나면 환불 신청도 함께 종료됩니다.',
+    lastVerified: '2026-09-27',
+    description:
+      '칼자이스·TV CHOSUN·한국실명예방재단이 주최하고 런코리아가 주관하는 눈 건강 테마 러닝 대회입니다. 11월 22일 오전 7시 30분 여의도공원 문화의 마당에서 출발하며 10K·5K 두 종목 모두 기록칩을 제공합니다. 참가비는 10K 65,000원, 5K 55,000원이고 정원은 결제 완료 기준 선착순 5,000명입니다. 제한시간은 10K 1시간 30분·5K 1시간이며 이후 교통 통제가 해제됩니다. 참가 자격 제한은 없지만 참가권 양도와 대리 참가는 실격 사유입니다. 공식 유의사항은 기념품과 안내 책자를 사전 택배 발송한다고 안내하지만, 기념품 페이지에는 2026년 9월 27일 현재 구체적인 구성·이미지가 공개되지 않았습니다.',
+    courseInfo: {
+      terrain: '평지',
+      difficulty: '초보자',
+      courseDescription:
+        '여의도공원 문화의 마당에서 출발해 한강변을 달리는 10K·5K 반환형 코스입니다. 공식은 코스가 변경될 수 있다고 고지하고 있으며 상세 고도와 급수대 위치는 2026년 9월 27일 기준 확인되지 않았습니다.',
+      isLoopCourse: false,
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '10K', fee: 65000 },
+        { distance: '5K', fee: 55000 },
+      ],
+      timeLimits: [
+        { distance: '10K', hours: 1, minutes: 30 },
+        { distance: '5K', hours: 1, minutes: 0 },
+      ],
+      expectedParticipants: 5000,
+      startTime: '07:30',
+    },
+    raceKit: {
+      pending: '공식 유의사항은 기념품·안내 책자 사전 택배 발송을 안내하지만, 기념품 페이지에는 구성·이미지가 아직 게시되지 않음(2026-09-27 확인)',
+      verifiedAt: '2026-09-27',
+    },
+  },
+  {
     id: 'save-race-2026',
     name: '2026 세이브 레이스 (Save Race)',
     date: '2026-11-07',

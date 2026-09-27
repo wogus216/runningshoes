@@ -40,6 +40,9 @@ export function deriveRaceStatus(meta: RaceMeta, now: Date): RaceStatus {
   }
 
   if (!meta.registrationStart) {
+    if (meta.registrationOpen) {
+      return { kind: 'open', label: '접수중', daysUntil: null };
+    }
     return { kind: 'tbd', label: '접수 미정', daysUntil: null };
   }
 

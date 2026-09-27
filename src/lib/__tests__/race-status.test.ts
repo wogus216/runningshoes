@@ -27,6 +27,13 @@ describe('deriveRaceStatus', () => {
     expect(s.daysUntil).toBeNull();
   });
 
+  it('시작일은 미공개여도 공식 접수 화면이 열렸다면 open', () => {
+    const meta = { ...base, registrationOpen: { verifiedAt: '2026-09-27' } };
+    const s = deriveRaceStatus(meta, parseKst('2026-09-27'));
+    expect(s.kind).toBe('open');
+    expect(s.label).toBe('접수중');
+  });
+
   it('접수 시작 전이면 upcoming 이고 D-n 을 센다', () => {
     const meta = { ...base, registrationStart: '2026-08-24T10:00' };
     const s = deriveRaceStatus(meta, parseKst('2026-08-19T09:00'));
