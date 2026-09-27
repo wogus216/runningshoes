@@ -5635,6 +5635,7 @@ export const posts_2026_09: BlogPost[] = [
     thumbnail: '/images/blog/incheon-marathon-2026-race-kit-by-distance.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-07',
+    updatedAt: '2026-09-27',
     category: 'news' as const,
     readingTime: 8,
     tags: [
@@ -5693,7 +5694,7 @@ export const posts_2026_09: BlogPost[] = [
   </ul>
 </div>
 
-<div class="deadline-strip">⏰ <strong>접수는 9월 7일(월) 14시에 시작됐고 마감일은 고지되지 않았습니다</strong> — 풀코스 기록증 제출·참가 취소·종목 변경이 모두 <strong>10월 19일(월) 14시</strong> 한 날에 몰려 있습니다. 종목을 고르기 전에 아래 표부터 보세요.</div>
+<div class="deadline-strip">⏰ <strong>접수는 9월 7일(월) 14시에 시작돼 9월 27일 확인 시 참가권 품절로 끝났습니다</strong>(마감 공지 없음) — 이미 신청했다면 풀코스 기록증 제출·참가 취소·종목 변경이 모두 <strong>10월 19일(월) 14시</strong> 한 날에 몰려 있습니다. 추가접수(공식은 "마감 이후 안내 예정")를 노린다면 아래 표부터 보세요.</div>
 
 <div class="callout info">
   <span class="callout-icon">📋</span>
@@ -5811,7 +5812,7 @@ export const posts_2026_09: BlogPost[] = [
     thumbnail: '/images/blog/marathon-registration-week-september-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-04',
-    updatedAt: '2026-09-09',
+    updatedAt: '2026-09-27',
     category: 'news' as const,
     readingTime: 9,
     tags: [
@@ -5871,7 +5872,7 @@ export const posts_2026_09: BlogPost[] = [
   </ul>
 </div>
 
-<div class="deadline-strip">⏰ <strong>셋 중 둘은 닫혔습니다(2026년 9월 21일 기준).</strong> 춘천은 9월 10일 결제 창으로, <strong>JTBC 추가접수는 9월 18일(금) 17시로 마감</strong>됐습니다 — 기록 제출·참가 취소도 같은 시각에 함께 끝났습니다. 남은 것은 <strong>인천마라톤뿐</strong>이고 마감일 미고지 상태로 접수 중입니다(기록증 제출 마감 10월 19일 14시). 아래 내용은 접수 주간이던 9월 9일 시점의 기록입니다.</div>
+<div class="deadline-strip">⏰ <strong>셋 모두 닫혔습니다(2026년 9월 27일 기준).</strong> 춘천은 9월 10일 결제 창으로, <strong>JTBC 추가접수는 9월 18일(금) 17시로 마감</strong>됐습니다 — 기록 제출·참가 취소도 같은 시각에 함께 끝났습니다. <strong>인천마라톤도 9월 27일 확인 시 참가권이 모두 품절</strong>로 표시됩니다(마감 공지 없음 · 이미 신청했다면 기록증 제출 마감 10월 19일 14시). 아래 내용은 접수 주간이던 9월 9일 시점의 기록입니다.</div>
 
 <div class="callout info">
   <p><strong>왜 한 주에 몰렸나</strong> — 셋 중 둘은 <strong>남은 자리를 푸는 접수</strong>입니다. JTBC는 4월 추첨으로 끝난 본접수의 미등록 티켓을, 춘천은 7월 본접수의 미결제·취소분을 각각 선착순으로 엽니다. 인천만 <strong>첫 접수</strong>입니다. 성격이 다르니 준비도 다릅니다.</p>

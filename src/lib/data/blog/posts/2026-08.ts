@@ -1968,7 +1968,7 @@ export const posts_2026_08: BlogPost[] = [
     thumbnail: '/images/blog/incheon-marathon-2026-site-open.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-13',
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-27',
     category: 'news' as const,
     readingTime: 8,
     tags: ['인천마라톤', '2026 인천마라톤', '청라하늘대교', '인천 풀코스 마라톤', '11월 마라톤', '가을 마라톤 접수', '인천 러닝 대회', '마라톤 기록증'],
@@ -2023,13 +2023,13 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>참가접수가 9월 7일(월) 오후 2시에 시작됐습니다.</strong> 마감일은 고지되지 않았고, 참가 취소·종목 변경은 10월 19일(월) 14시까지 가능합니다</li>
+    <li><strong>참가접수는 9월 7일(월) 오후 2시에 시작돼 9월 27일 확인 시 품절로 끝났습니다.</strong> 마감 공지는 없었고, 이미 신청했다면 참가 취소·종목 변경은 10월 19일(월) 14시까지 가능합니다</li>
     <li><strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong> — 2024년 1월 1일 이후 대회에서 <strong>풀 4:59:59</strong> 또는 <strong>하프 2:09:59</strong> 이내 완주 기록을 런카이브로 내야 하고, 미제출 시 자동 환불됩니다. 10km·5km는 조건 없음</li>
     <li><strong>청라하늘대교 통과가 코스도로 확정</strong>됐습니다(9월 3일 공개). 풀코스는 영종 운서역에서 출발해 다리를 건너 인천아시아드 주경기장으로 들어오는 편도이고, 제한시간은 5시간입니다</li>
   </ul>
 </div>
 
-<div class="deadline-strip">⏰ <strong>9월 7일(월) 14시 접수가 시작됐습니다</strong> — 마감일은 고지되지 않았고 9월 7일 밤까지 마감 공지도 없습니다. 풀코스 신청에는 기록증이 필요하며 제출 마감은 10월 19일 14시입니다. 같은 날 기념품·공지사항 메뉴도 함께 열려 <a href="/blog/incheon-marathon-2026-race-kit-by-distance">종목별로 받는 것이 다르다는 사실</a>이 확정됐습니다.</div>
+<div class="deadline-strip">⏰ <strong>접수가 끝났습니다 — 9월 27일 확인 시 공식 참가신청의 일반·14세 미만 참가권이 모두 품절 표시입니다.</strong> 9월 7일(월) 14시에 시작했고 마감 공지는 따로 없어 정확한 마감 시점은 알 수 없습니다. 추가접수는 공식이 "참가신청 마감 이후 안내 예정"이라고만 밝혔습니다. 이미 풀코스를 신청했다면 기록증 제출 마감은 10월 19일 14시입니다. 같은 날 기념품·공지사항 메뉴도 함께 열려 <a href="/blog/incheon-marathon-2026-race-kit-by-distance">종목별로 받는 것이 다르다는 사실</a>이 확정됐습니다.</div>
 
 <div class="callout info">
   <p><strong>인천마라톤이 왜 주목받나요?</strong> 인천은 인구 300만 대도시인데도 오랫동안 시 단위 공식 풀코스 마라톤이 없었습니다. 인천시와 대한육상연맹이 2025년 처음 연 인천마라톤이 그 자리를 메웠고, 올해가 <strong>제2회</strong>입니다. 여기에 평소 달릴 수 없는 <strong>청라하늘대교</strong>를 코스에 넣는 방안이 검토되면서 "바다 위를 달리는 풀코스"라는 기대가 붙었고, 9월 3일 코스도로 확정됐습니다.</p>

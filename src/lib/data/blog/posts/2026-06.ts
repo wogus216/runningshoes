@@ -7988,7 +7988,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/2026-incheon-marathon.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
-    updatedAt: '2026-09-07',
+    updatedAt: '2026-09-27',
     category: 'news' as const,
     readingTime: 6,
     event: {
@@ -8000,7 +8000,7 @@ export const posts_2026_06: BlogPost[] = [
     },
     tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
     content: `
-<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작됐고</strong>, <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
+<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작돼 9월 27일 확인 시 품절로 끝났고</strong>, <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -8044,7 +8044,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>접수·참가비</h2>
 <ul>
-  <li><strong>접수</strong>: <strong>9월 7일(월) 14시</strong> 개시(진행 중), 마감일 미고지. 공식 사이트 incheonmarathon.or.kr</li>
+  <li><strong>접수</strong>: <strong>9월 7일(월) 14시</strong> 개시 — <strong>9월 27일 확인 시 참가권 품절로 접수 종료</strong>(마감 공지 없음). 공식 사이트 incheonmarathon.or.kr</li>
   <li><strong>참가비</strong>: 풀 80,000원 / 10K 50,000원 / 5K 30,000원 — <em>공식 대회소개 표 확정</em></li>
   <li><strong>풀코스 참가 자격</strong>: 만 18세 이상 + 기록증 제출(2024.1.1~2026.10.19 대회의 풀 4:59:59 또는 하프 2:09:59 이내). 런카이브 제출, 미제출 시 자동 환불</li>
   <li><strong>완주 기념품</strong>: 완주 메달 + 기능성 티셔츠 + 온라인 기록증 + 기록칩(풀·10K)</li>
