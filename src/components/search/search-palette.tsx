@@ -5,6 +5,7 @@ import { createPortal } from 'react-dom';
 import { useRouter } from 'next/navigation';
 import { Search, X, CornerDownLeft } from 'lucide-react';
 import type { SearchItem } from '@/lib/search-index';
+import { shouldFullReload } from '@/components/ads/full-reload-nav';
 
 // 인덱스는 팔레트가 처음 열릴 때 /search-index.json 에서 1회 로드한다
 // (모든 페이지 RSC 페이로드에 ~41KB를 싣지 않기 위한 지연 로드).
@@ -141,7 +142,9 @@ export function SearchPalette() {
   const go = useCallback(
     (href: string) => {
       setOpen(false);
-      router.push(href as never);
+      // 모바일 전체 로드 실험(full-reload-nav) — 검색 결과 이동도 같은 규칙을 따른다
+      if (shouldFullReload()) window.location.assign(href);
+      else router.push(href as never);
     },
     [router],
   );
