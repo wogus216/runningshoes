@@ -555,6 +555,13 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
     subtitle: '대전 이어 서울에서도 — 11월 14일 뚝섬한강공원',
     data: '10K·5K 각 5.9만원 · 접수 9/21 15시 오픈 · 환불 10/2 17시까지',
   },
+  // 출처: RunRepeat 랩(Structure 26·Adrenaline GTS 25·Kayano 33·Arahi 8, 2026-09-27 확인) + nike.com/kr 제품 페이지 —
+  // 비틀림 강성 14.0Nm(넷 중 최저)·힐 에너지 리턴 57.2%(최고)·169,000원·반 사이즈 크게.
+  'nike-structure-26-review': {
+    title: '나이키 스트럭처 26, 가장 유연한 안정화',
+    subtitle: '카야노 33·어드레날린 25·아라히 8과 같은 기준으로 실측 비교',
+    data: '비틀림 강성 14.0Nm(넷 중 최저) · 에너지 리턴 57.2% · 16.9만원 · 반 사이즈 크게',
+  },
   // 출처: fila.co.kr 대회 페이지·RUN/ESPRESSO 패키지 페이지·스피드템포 플러스 상품 페이지(2026-09-27 확인) —
   // 11/15 상암 평화의광장 10K, RUN 70,000원·ESPRESSO 179,000원(신발 정가와 동일), 환불 9/30 17시.
   'fila-run-espresso-10k-seoul': {

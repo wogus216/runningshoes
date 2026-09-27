@@ -97,6 +97,127 @@ export const posts_2026_09: BlogPost[] = [
 `,
   },
   {
+    id: 'nike-structure-26-review',
+    slug: 'nike-structure-26-review',
+    title: '나이키 스트럭처 26 후기 | 안정화 4종 실측 비교 — 가장 유연한 쪽, 반 사이즈 크게',
+    description:
+      '스트럭처 26을 카야노 33·어드레날린 GTS 25·아라히 8과 같은 기준(RunRepeat 실측)으로 나란히 놨습니다. 무게·스택은 어드레날린과 거의 같은데 비틀림 강성은 넷 중 가장 낮고 에너지 리턴은 가장 높습니다. 공식이 권하는 반 사이즈 업과 여성용뿐인 국내 와이드까지 정리했습니다.',
+    thumbnail: '/images/blog/nike-structure-26-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-27',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['나이키 스트럭처 26', '안정화 러닝화', '과내전', '평발', '카야노 33', '어드레날린 GTS 25'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li>무게 296g·스택 36.1/26.0mm·드롭 10mm로 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>와 치수가 거의 같은데, 가격은 2만원 낮은 <strong>16만 9천원</strong>입니다</li>
+    <li>신발을 비틀 때 버티는 힘(비틀림 강성)이 비교한 안정화 넷 중 가장 낮고 반발력은 가장 높은 <strong>유연한 안정화</strong>입니다 — 강한 교정보다 부드러운 지지 쪽입니다</li>
+    <li>나이키 코리아가 <strong>반 사이즈 크게</strong> 주문하라고 안내하고, 국내 공식몰 와이드는 <strong>여성용뿐</strong>입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">👟</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p><strong>과내전이 가볍고, 딱딱하게 잡아 주는 안정화가 부담스러웠던 러너</strong>에게 맞습니다. 발이 안쪽으로 크게 무너져 강한 교정이 필요하다면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>이 더 확실한 선택입니다. 전체 스펙과 구매처는 <a href="/shoes/nike-structure-26">스트럭처 26 상세</a>에 모아 뒀습니다.</p>
+  </div>
+</div>
+
+<h2>같은 기준으로 나란히 — 안정화 4종 실측</h2>
+
+<p>안정화를 비교할 때 가장 흔한 실수는 기준이 다른 숫자를 나란히 놓는 것입니다. 무게만 해도 공식 발표는 브랜드마다 재는 사이즈가 달라, 나이키 코리아는 스트럭처 26을 "약 321g(280mm 기준)"으로 적지만 랩 실측은 남성 US 9 기준 296g입니다. 그래서 아래 표는 <strong>전부 RunRepeat 랩 실측(남성 US 9)</strong>으로 통일했고, 가격만 국내 공식몰 정가입니다. 같은 기준 실측이 없는 <a href="/shoes/new-balance-860-v15">뉴발란스 860 v15</a>는 표에서 뺐습니다.</p>
+
+<p>표를 읽기 전에 세 가지만 짚습니다. <strong>비틀림 강성(Nm)</strong>은 신발을 비틀 때 버티는 힘으로, 높을수록 착지 때 발이 안쪽으로 꺾이는 움직임에 더 많이 저항합니다. <strong>굽힘 강성(N)</strong>은 앞코를 구부리는 데 드는 힘이고, <strong>경도(AC)</strong>는 폼이 단단한 정도라 낮을수록 부드럽고, <strong>충격흡수(SA)</strong>는 높을수록 착지 충격을 더 받아 냅니다.</p>
+
+<table>
+  <thead>
+    <tr><th></th><th>스트럭처 26</th><th>어드레날린 GTS 25</th><th>카야노 33</th><th>아라히 8</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>국내 정가</strong></td><td><strong>169,000원</strong></td><td>189,000원</td><td>199,000원</td><td>199,000원</td></tr>
+    <tr><td><strong>무게</strong></td><td>296g</td><td>295g</td><td>298g</td><td><strong>259g</strong></td></tr>
+    <tr><td><strong>스택 (힐/전족)</strong></td><td>36.1 / 26.0mm</td><td>36.1 / 25.9mm</td><td>36.8 / 28.3mm</td><td>39.4 / 28.1mm</td></tr>
+    <tr><td><strong>드롭 (실측)</strong></td><td>10.1mm</td><td>10.2mm</td><td>8.5mm</td><td>11.3mm</td></tr>
+    <tr><td><strong>폼 경도</strong></td><td>34.9 AC</td><td>34.5 AC</td><td>32.8 AC</td><td>35.8 AC</td></tr>
+    <tr><td><strong>충격흡수 (힐)</strong></td><td>132 SA</td><td>138 SA</td><td>132 SA</td><td>138 SA</td></tr>
+    <tr><td><strong>에너지 리턴 (힐)</strong></td><td><strong>57.2%</strong></td><td>52.1%</td><td>50.0%</td><td>54.4%</td></tr>
+    <tr><td><strong>비틀림 강성</strong></td><td><strong>14.0 Nm</strong></td><td>14.3 Nm</td><td>20.1 Nm</td><td>19.5 Nm</td></tr>
+    <tr><td><strong>굽힘 강성</strong></td><td>13.8 N</td><td>14.3 N</td><td>19.7 N</td><td>18.3 N</td></tr>
+    <tr><td><strong>힐 카운터</strong></td><td>3/5</td><td>4/5</td><td>4/5</td><td>3/5</td></tr>
+    <tr><td><strong>토박스 너비</strong></td><td>71.9mm</td><td>72.8mm</td><td>72.4mm</td><td>73.6mm</td></tr>
+    <tr><td><strong>아웃솔 마모</strong></td><td>0.6mm</td><td>0.5mm</td><td>1.1mm</td><td>0.5mm</td></tr>
+  </tbody>
+</table>
+
+<p>스트럭처 26이 넷 중 튀는 곳은 두 줄입니다. 비틀림·굽힘 강성이 가장 낮고, 에너지 리턴은 가장 높습니다. 발을 강하게 붙잡아 교정하기보다, 지지는 깔아 두되 신발 자체는 부드럽게 굽고 반발이 살아 있는 쪽 — 이 글이 <strong>유연한 안정화</strong>라고 부르는 성격입니다. 다만 안정성을 숫자 하나로 잴 수는 없습니다. 비틀림 강성과 힐 카운터는 "신발이 얼마나 개입하는가"를 가늠하는 대리 지표일 뿐, 밑창 폭과 내측 지지 구조도 함께 작동합니다.</p>
+
+<h2>어드레날린 GTS 25와는 치수가 쌍둥이, 성격은 다르다</h2>
+
+<p>무게(296 대 295g), 힐 스택(36.1mm 동일), 드롭(10.1 대 10.2mm), 폼 경도(34.9 대 34.5 AC)까지 두 신발은 거의 같은 몸을 갖고 있습니다. 갈리는 곳은 세 가지입니다. 스트럭처 26은 힐 에너지 리턴이 5%p 높고(57.2 대 52.1%), 뒤꿈치를 감싸는 힐 카운터는 한 단계 무릅니다(3 대 4/5). 그리고 2만원 쌉니다. 같은 치수에서 <strong>반발을 조금 더 원하면 스트럭처 26, 뒤꿈치를 더 단단히 잡아 주길 원하면 어드레날린</strong>입니다. 두 신발의 스펙을 한 화면에서 비교하려면 <a href="/vs/brooks-adrenaline-gts-25-vs-nike-structure-26">어드레날린 GTS 25 vs 스트럭처 26</a> 비교 페이지가 있습니다.</p>
+
+<h2>카야노 33과는 "얼마나 잡아 주나"가 갈린다</h2>
+
+<p>차이가 가장 큰 상대는 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>입니다. 비틀림 강성이 20.1 대 14.0Nm로 카야노가 약 44% 높고, 굽힘 강성(19.7 대 13.8N)과 힐 카운터(4 대 3/5)도 전부 카야노 쪽이 단단합니다. 반대로 에너지 리턴은 스트럭처 26이 7%p 넘게 높습니다(57.2 대 50.0%). 카야노가 발목이 안쪽으로 크게 무너지는 러너를 위한 <strong>강하게 개입하는 안정화</strong>라면, 스트럭처 26은 그 개입이 부담스러운 러너를 위한 <strong>유연한 안정화</strong>입니다. 가격은 3만원 차이입니다(<a href="/vs/asics-gel-kayano-33-vs-nike-structure-26">카야노 33 vs 스트럭처 26 비교</a>).</p>
+
+<h2>아라히 8은 더 높고 더 가볍다</h2>
+
+<p><a href="/shoes/hoka-arahi-8">아라히 8</a>은 259g으로 넷 중 유일하게 300g 아래이고, 힐 스택이 39.4mm로 가장 높습니다. 공식 드롭은 8mm인데 실측은 11.3mm로 오히려 스트럭처 26보다 뒤가 높게 나왔다는 점도 알아 둘 만합니다. 비틀림 강성은 19.5Nm로 카야노 쪽에 가깝습니다. 가벼우면서 더 단단히 잡아 주는 안정화를 원하면 아라히 8, 가격과 유연함을 우선하면 스트럭처 26입니다. 아라히 8은 <a href="/blog/hoka-arahi-8-review">별도 후기</a>에서 자세히 다뤘습니다(<a href="/vs/hoka-arahi-8-vs-nike-structure-26">아라히 8 vs 스트럭처 26 비교</a>).</p>
+
+<h2>발볼·사이즈 — 한국 러너가 궁금해할 것</h2>
+<ul>
+  <li><strong>"사이즈는 어떻게 고르나요?"</strong> — 나이키 코리아 공식몰이 "정사이즈보다 작게 나온 제품으로, 반 사이즈 크게 주문하는 것을 추천"한다고 직접 적어 뒀고, RunRepeat도 "약간 작다"고 측정했습니다. 평소 사이즈보다 반 사이즈 크게가 출발점입니다.</li>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스 실측 71.9mm로 표준 폭(68~75mm) 안이지만, 비교한 넷 중에서는 가장 좁습니다(차이는 최대 1.7mm). 국내 공식몰의 와이드 모델은 <strong>여성용(HQ2589)뿐</strong>이고 남성 와이드는 없어(2026-09-27 확인), 발볼 넓은 남성은 반 사이즈 크게 시착해 보고 고르는 편이 안전합니다.</li>
+  <li><strong>"무릎이 걱정돼요"</strong> — 10mm 드롭과 36mm 힐 스택은 뒤꿈치로 착지하는 러너에게 익숙한 구성입니다. 다만 신발 하나로 통증이 해결된다는 근거는 없으니, 이미 통증이 있다면 전문의 상담이 먼저입니다.</li>
+</ul>
+
+<h2>가격 대비 가치</h2>
+<p>국내 정가 16만 9천원으로 비교한 넷 중 가장 쌉니다 — 어드레날린보다 2만원, 카야노 33·아라히 8보다 3만원 낮습니다. 2026-09-27 확인 시점에는 나이키 코리아 공식몰이 추석 할인(9/28까지)으로 152,100원에 팔고 있었습니다. 아웃솔 마모 실측은 0.6mm로 어드레날린·아라히(0.5mm)와 비슷하고 카야노 33(1.1mm)보다 적게 닳았습니다.</p>
+
+<h2>누구에게 맞을까</h2>
+<ul>
+  <li><strong>가벼운~중간 정도 과내전 러너</strong> — 지지는 필요하지만 강한 교정은 과했던 경우</li>
+  <li><strong>안정화의 뻣뻣함이 싫었던 러너</strong> — 넷 중 가장 유연하고 반발이 살아 있습니다</li>
+  <li><strong>가격이 중요한 안정화 입문자</strong> — 넷 중 최저가</li>
+  <li>반대로 <strong>발이 안쪽으로 크게 무너지는 러너</strong>는 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>, <strong>가벼운 안정화</strong>를 원하면 <a href="/shoes/hoka-arahi-8">아라히 8</a>이 맞습니다</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글이 다루지 않은 것</p>
+    <p>착화감·통기성처럼 숫자로 잡히지 않는 부분은 이 사이트가 직접 신어 보지 않기 때문에 평가하지 않았습니다. 스트럭처 25와의 차이도 같은 기준의 25 실측을 확보하지 못해 다루지 않았습니다. 수치는 전부 RunRepeat 랩 실측이며, 개별 러너의 체감과는 다를 수 있습니다.</p>
+  </div>
+</div>
+
+<p><small>출처: RunRepeat 랩 테스트 — Nike Structure 26, Brooks Adrenaline GTS 25, ASICS Gel Kayano 33, HOKA Arahi 8 (2026-09-27 확인, 남성 US 9 기준). 가격·사이즈 안내·와이드 판매 여부·공식 무게(약 321g, 280mm)는 나이키 코리아 공식몰(nike.com/kr) 스트럭처 26 제품 페이지 2026-09-27 확인. 다른 모델 가격은 이 사이트 러닝화 데이터베이스의 국내 정가 기준입니다.</small></p>
+`,
+    faqs: [
+      {
+        question: '스트럭처 26 사이즈는 어떻게 고르나요?',
+        answer:
+          '나이키 코리아 공식몰이 "정사이즈보다 작게 나온 제품으로, 반 사이즈 크게 주문하는 것을 추천"한다고 안내하고, RunRepeat 측정도 "약간 작다"였습니다. 평소 사이즈보다 반 사이즈 크게 고르는 것이 출발점입니다.',
+      },
+      {
+        question: '와이드 모델이 있나요?',
+        answer:
+          '2026년 9월 27일 기준 나이키 코리아 공식몰에는 여성 와이드(HQ2589)만 있고 남성 와이드는 검색되지 않습니다. 토박스 실측은 71.9mm로 표준 폭입니다.',
+      },
+      {
+        question: '카야노 33 대신 사도 될까요?',
+        answer:
+          '과내전 정도에 따라 다릅니다. 비틀림 강성이 카야노 33(20.1Nm)보다 크게 낮은 14.0Nm라 교정 개입이 약한 대신 에너지 리턴은 높습니다(57.2% 대 50.0%). 강한 교정이 필요하면 카야노, 부드러운 지지로 충분하면 스트럭처 26이 3만원 저렴한 선택입니다.',
+      },
+      {
+        question: '어드레날린 GTS 25와 뭐가 다른가요?',
+        answer:
+          '무게·스택·드롭·폼 경도는 거의 같습니다. 스트럭처 26이 힐 에너지 리턴이 약 5%p 높고 2만원 저렴한 대신, 힐 카운터는 어드레날린(4/5)보다 한 단계 무릅니다(3/5).',
+      },
+    ],
+  },
+  {
     id: 'fila-run-espresso-10k-seoul',
     slug: 'fila-run-espresso-10k-seoul',
     title:
