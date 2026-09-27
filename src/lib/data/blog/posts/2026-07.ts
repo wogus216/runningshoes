@@ -2198,6 +2198,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/new-balance-sc-elite-v6-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-22',
+    updatedAt: '2026-09-27',
     category: 'review' as const,
     readingTime: 7,
     tags: ['뉴발란스 SC 엘리트 v6', 'SC Elite V6', 'Infinion 폼', '카본 슈퍼슈즈', '신상 러닝화', '마라톤 레이싱화'],
@@ -2209,6 +2210,14 @@ export const posts_2026_07: BlogPost[] = [
     <li>미드솔이 <strong>Infinion 폼</strong>(뉴발란스 "가장 가벼운 폼")으로 표기되고 공식 무게 <strong>190g</strong>(첫 시착 실측은 180g) — v5 실측 198g에서 확실히 가벼워집니다. 카본 플레이트도 재설계</li>
     <li>관건은 <strong>발볼</strong> — v5의 74.5mm 토박스는 "발볼 넓어도 신는 슈퍼슈즈"라는 정체성이었는데, 첫 시착 리뷰는 <strong>"플랫폼이 v5보다 좁다"</strong>고 말합니다. 발볼이 넓다면 랩 실측이 나올 때까지 <strong>와이드 옵션이 있는 v5</strong>가 안전한 선택입니다</li>
   </ul>
+</div>
+
+<div class="callout success">
+  <span class="callout-icon">🔔</span>
+  <div class="callout-body">
+    <p class="callout-title">[업데이트 9/27] 국내 출시 — 정가 389,000원, 폭은 D 하나</p>
+    <p>뉴발란스코리아 공식몰에 SC 엘리트 v6(남성, D)가 <strong>389,000원</strong>에 올라와 있습니다(2026년 9월 27일 확인). v5 정가 319,000원보다 7만 원 올랐고, 국내 공식몰의 폭 옵션은 <strong>D 하나</strong>뿐입니다. 이 글이 기다리던 토박스 실측도 나왔습니다 — RunRepeat 기준 <strong>71.4mm</strong>로 v5의 74.5mm보다 약 3mm 좁아졌고, RunRepeat는 전체 핏이 매우 타이트하고 반 치수 작게 나온다고 평가했습니다. "발볼 넓어도 신는 슈퍼슈즈" 자리는 v6가 이어받지 못했습니다. 실측 전체는 <a href="/shoes/new-balance-sc-elite-v6">SC 엘리트 v6 상세</a>에 정리했고, 아래 본문은 출시 전(7월 22일) 작성한 내용입니다.</p>
+  </div>
 </div>
 
 <div class="callout info">
@@ -2871,6 +2880,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/brooks-ghost-max-4-hyperion-elite-6-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-14',
+    updatedAt: '2026-09-27',
     category: 'review' as const,
     readingTime: 7,
     tags: ['브룩스 고스트 맥스 4', '브룩스 하이페리온 엘리트 6', '신상 러닝화', '레이싱화', '맥스쿠션', '브룩스'],
@@ -2882,6 +2892,14 @@ export const posts_2026_07: BlogPost[] = [
     <li><strong>고스트 맥스 4는 스택(40/34mm)·드롭(6mm)·폼(DNA Loft v3)이 전작과 거의 동일</strong>한 미세 조정형 업데이트 — 무게만 약 14g 가벼워졌습니다</li>
     <li><strong>하이페리온 엘리트 6은 드롭을 11.2mm→7mm로 낮추고 플레이트를 재설계</strong> — Believe in the Run이 "브룩스가 실제로 추천할 만한 첫 레이싱화"라 평했습니다. 한국 출시는 둘 다 아직 미확정입니다</li>
   </ul>
+</div>
+
+<div class="callout success">
+  <span class="callout-icon">🔔</span>
+  <div class="callout-body">
+    <p class="callout-title">[업데이트 9/27] 고스트 맥스 4 국내 출시 — 정가 189,000원</p>
+    <p>브룩스코리아 공식몰에 고스트 맥스 4가 <strong>189,000원</strong>(전작 179,000원보다 1만 원 인상)으로 올라와 있고, 남녀 모두 <strong>와이드(WIDE)</strong>를 함께 판매합니다(2026년 9월 27일 확인). RunRepeat 랩 실측도 게시됐는데, 공식 6mm 드롭이 실측으로는 <strong>9.0mm</strong>였습니다. 실측 전체는 <a href="/shoes/brooks-ghost-max-4">고스트 맥스 4 상세</a>에 정리했습니다. 아래 본문은 미국 출시 전(7월 14일) 작성한 내용이라, 고스트 맥스 4의 한국 출시·가격 서술은 이 안내가 우선합니다.</p>
+  </div>
 </div>
 
 <div class="callout info">

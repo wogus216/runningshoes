@@ -194,3 +194,23 @@ If you are a copyright holder and believe your content has been used inappropria
 - 앵글: side=BigImage, angle/back/top/outsole=ThumbImage 순번으로 구분(alt 텍스트 없음 — naturalWidth 650 필터 + 다운로드 후 육안 확인으로 매칭)
 - Date: 2026-09-11
 - Images: 5 (side, angle, back, top, outsole)
+
+## Brooks 고스트 맥스 4
+- Source: 브룩스코리아 공식몰 PDP (여성 로즈 와이드, product/971)
+- CDN: ecimg.cafe24img.com 공식 투명 PNG
+- Date: 2026-09-23
+- Images: 1 (side)
+
+## New Balance SC Elite V6
+- Source: 뉴발란스코리아 공식몰 상품 상세 (style NBPFGF718M, colCode 45)
+- CDN: image.nbkorea.com/NBRB_Product/20260825/ 공식 제품 이미지
+- Processing: sharp 800px WebP q85
+- Date: 2026-09-23
+- Images: 5 (side, front, back, angle, outsole)
+
+## On LightSpray Cloudboom Strike 2
+- Source: On 대한민국 공식몰 PDP (White/Lime, SKU 3UG30022929)
+- CDN: images.ctfassets.net/hnk2vsx53n6l 공식 투명 PNG
+- Processing: sharp 800px WebP q85
+- Date: 2026-09-23
+- Images: 6 (side, medial, back, angle, top, outsole)

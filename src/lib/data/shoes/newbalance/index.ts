@@ -10,6 +10,7 @@ import { shoe as newBalanceScEliteV5 } from './new-balance-sc-elite-v5';
 import { shoe as newBalanceScRebel } from './new-balance-sc-rebel';
 import { shoe as newBalanceBalosV1 } from './new-balance-balos-v1';
 import { shoe as newBalanceHierroV9 } from './new-balance-hierro-v9';
+import { shoe as newBalanceScEliteV6 } from './new-balance-sc-elite-v6';
 
 // 신발 1켤레 = 파일 1개 (newbalance/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const newbalanceShoes: Shoe[] = [
@@ -24,4 +25,5 @@ export const newbalanceShoes: Shoe[] = [
   newBalanceScRebel,
   newBalanceBalosV1,
   newBalanceHierroV9,
+  newBalanceScEliteV6,
 ];

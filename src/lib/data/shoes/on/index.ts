@@ -11,6 +11,7 @@ import { shoe as onCloudmonster3Hyper } from './on-cloudmonster-3-hyper';
 import { shoe as onCloudmonster3HyperLightspray } from './on-cloudmonster-3-hyper-lightspray';
 import { shoe as onCloudflow5 } from './on-cloudflow-5';
 import { shoe as onCloudboomStrike } from './on-cloudboom-strike';
+import { shoe as onCloudboomStrike2Lightspray } from './on-cloudboom-strike-2-lightspray';
 
 // 신발 1켤레 = 파일 1개 (on/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const onShoes: Shoe[] = [
@@ -26,4 +27,5 @@ export const onShoes: Shoe[] = [
   onCloudflow5,
   onCloudboomStrike,
   onCloudrunner3Max,
+  onCloudboomStrike2Lightspray,
 ];
