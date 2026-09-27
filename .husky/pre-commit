@@ -1,3 +1,13 @@
+# main 체크아웃 커밋 차단 — 여러 에이전트(Codex·Claude)가 같은 폴더를 동시에 쓰면 남의 git add 가 내 커밋에
+# 섞이고 pre-push 빌드가 남의 미커밋 작업까지 빌드한다(2026-09-27). 작업은 scripts/wt.sh new <이름> 의 worktree 에서.
+# 사람이 꼭 main 체크아웃에서 커밋해야 하면: ALLOW_MAIN_CHECKOUT=1 git commit ...
+if [ "$(git rev-parse --absolute-git-dir)" = "$(git rev-parse --path-format=absolute --git-common-dir)" ] \
+  && [ "${ALLOW_MAIN_CHECKOUT:-}" != "1" ]; then
+  echo "❌ main 체크아웃에서는 커밋하지 않는다 — scripts/wt.sh new <작업이름> 으로 worktree 를 만들어 거기서 커밋·ship."
+  echo "   (정말 여기서 커밋해야 하면 ALLOW_MAIN_CHECKOUT=1 git commit ...)"
+  exit 1
+fi
+
 # 신발 또는 마라톤 대회 데이터가 변경된 경우 검증 실행
 # (마라톤은 status/개최일 일관성 검사 — 종료된 대회가 '접수중'으로 남는 것을 막는다)
 # husky v9는 훅을 `sh -e`로 실행한다. grep은 매칭이 없으면 exit 1을 반환하므로
