@@ -555,6 +555,13 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
     subtitle: '대전 이어 서울에서도 — 11월 14일 뚝섬한강공원',
     data: '10K·5K 각 5.9만원 · 접수 9/21 15시 오픈 · 환불 10/2 17시까지',
   },
+  // 출처: fila.co.kr 대회 페이지·RUN/ESPRESSO 패키지 페이지·스피드템포 플러스 상품 페이지(2026-09-27 확인) —
+  // 11/15 상암 평화의광장 10K, RUN 70,000원·ESPRESSO 179,000원(신발 정가와 동일), 환불 9/30 17시.
+  'fila-run-espresso-10k-seoul': {
+    title: '휠라 런앤에스프레소 10K, 추가 접수 중',
+    subtitle: '11월 15일 상암 — ESPRESSO 패키지 가격이 신발 정가와 같다',
+    data: 'RUN 7만 · ESPRESSO 17.9만(스피드템포 플러스 포함) · 환불 9/30 17시까지',
+  },
   // 출처: smtownrunclub.com 규정·안내 이미지 + KREAM 상품 페이지(2026-09-18 확인) —
   // 2차 9/10 판매 종료, 양도 불가, 공연 입장 배번 필수, 15:30 WayV·민호·하츠투하츠.
   'smtown-run-club': {
