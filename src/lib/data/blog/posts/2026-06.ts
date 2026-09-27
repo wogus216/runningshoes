@@ -4832,7 +4832,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/boston-marathon-2027-bq-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-03',
+    updatedAt: '2026-09-27',
     event: {
       name: '보스턴마라톤 2027',
       startDate: '2027-04-19',
@@ -4912,7 +4912,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월 14~18일, 미 동부시간 18일 17시 마감) 종료 후 10월 초에 발표</strong>되므로 지금 단정할 수 없습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
+<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월 14~18일, 미 동부시간 18일 17시 마감) 종료 후 10월 초에 발표</strong>되므로 지금 단정할 수 없습니다. 등록주간에는 지원 33,656건이 접수됐고, B.A.A.는 합격·불합격 통보를 10월 초까지 보내되 컷오프는 미리 예측하지 않는다고 밝혔습니다(2026년 9월 21일 공지). 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
 
 <h2>★국내에서 BQ 만들기 — 미국 원정은 필요 없습니다</h2>
 
@@ -5412,11 +5412,11 @@ export const posts_2026_06: BlogPost[] = [
     id: 'tokyo-marathon-2027-registration-guide',
     slug: 'tokyo-marathon-2027-registration-guide',
     title: '도쿄마라톤 2027 추첨 마감 — 결과는 9월 18일, 당첨되면 9/30까지 결제 | 아직 열린 겨울 메이저는 교토',
-    description: '도쿄마라톤 2027 일반추첨이 8월 28일(금) 17시(JST)에 마감됐습니다. 다음 관문은 9월 18일(금) 결과 발표이고, 당첨자는 9월 18일부터 9월 30일까지 참가비를 내야 자리가 확정됩니다 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도). 오픈 4시간 만에 정원 4만 명을 넘겨 추첨이 확정됐던 대회입니다. 지금 신청할 수 있는 겨울 메이저를 찾는다면 해외 거주자 3,000명을 선착순으로 받는 교토 마라톤 2027이 9월 30일까지 열려 있습니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
+    description: '도쿄마라톤 2027 일반추첨이 8월 28일(금) 17시(JST)에 마감됐습니다. 결과 통보일(9월 18일)은 지났고, 당첨자는 9월 30일 17시(JST)까지 참가비를 내야 자리가 확정됩니다 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도). 오픈 4시간 만에 정원 4만 명을 넘겨 추첨이 확정됐던 대회입니다. 지금 신청할 수 있는 겨울 메이저를 찾는다면 해외 거주자 3,000명을 선착순으로 받는 교토 마라톤 2027이 9월 30일까지 열려 있습니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
     thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-01',
+    updatedAt: '2026-09-27',
     event: {
       name: '도쿄마라톤 2027',
       startDate: '2027-03-07',
@@ -5429,8 +5429,8 @@ export const posts_2026_06: BlogPost[] = [
     tags: ['도쿄마라톤', '도쿄마라톤 2027', '도쿄마라톤 접수', '도쿄마라톤 추첨', '세계 6대 마라톤', '메이저 마라톤', '마라톤 해외원정', '자선 마라톤', 'One Tokyo', '도쿄마라톤 신청', '식스스타', '러닝 버킷리스트'],
     content: `
 <div class="deadline-strip">
-  <span class="dl-badge">⏳ 결과 대기</span>
-  <span class="dl-text">도쿄마라톤 2027 일반추첨은 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됐습니다. 다음 관문은 <strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} 결과 발표</strong> · 당첨 시 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 참가비 납부</strong>(기한 내 미납 시 자리 소멸).</span>
+  <span class="dl-badge">📬 결과 통보일 지남</span>
+  <span class="dl-text">도쿄마라톤 2027 일반추첨은 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됐고, 공식 결과 통보일(<strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</strong>)도 지났습니다. 당첨됐다면 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17시(JST)까지 참가비 납부</strong>(기한 내 미납 시 자리 소멸).</span>
 </div>
 
 <div class="callout warning">
