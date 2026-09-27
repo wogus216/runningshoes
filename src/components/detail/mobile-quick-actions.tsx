@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { ExternalLink, ChevronDown } from 'lucide-react';
 import type { Shoe } from '@/types/shoe';
 import { getDisclosureText } from './affiliate-disclosure';
+import { useBottomAnchorAd } from '@/components/ads/use-bottom-anchor-ad';
 
 type MobileQuickActionsProps = {
   shoe: Shoe;
@@ -18,6 +19,14 @@ const SHOW_AFTER = 100;
 export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
   const [isVisible, setIsVisible] = useState(false);
   const lastY = useRef(0);
+  /*
+    AdSense 하단 앵커가 떠 있으면 바를 화면 상단으로 옮긴다(2026-09-27).
+    앵커(펼침 390×330px, z-index 최대)가 이 바를 완전히 덮었고, 광고 바로 옆 버튼은 오클릭을
+    유도한다(정책 위험). 앵커 위로 올리는 안은 펼침 상태에서 바가 화면 한가운데로 가서 기각.
+    상단에 고정 요소가 있으면(헤더가 보이는 동안) 그 아래에 둔다.
+  */
+  const anchorAtBottom = useBottomAnchorAd();
+  const [topClear, setTopClear] = useState(0);
 
   /*
     아래로 읽는 동안에는 비켜주고, 위로 올리면 돌아온다.
@@ -41,6 +50,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
     const handleScroll = () => {
       const y = window.scrollY;
       const dy = y - lastY.current;
+      setTopClear(Math.max(0, Math.round(document.querySelector('header')?.getBoundingClientRect().bottom ?? 0)));
 
       if (y <= SHOW_AFTER) {
         setIsVisible(false);
@@ -81,10 +91,16 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
     <div
       aria-hidden={!isVisible}
       className={[
-        'fixed inset-x-3 bottom-[calc(env(safe-area-inset-bottom)+0.75rem)] z-40 md:hidden',
+        'fixed inset-x-3 z-40 md:hidden',
+        anchorAtBottom ? '' : 'bottom-[calc(env(safe-area-inset-bottom)+0.75rem)]',
         'transition-transform duration-200 ease-out motion-reduce:transition-none',
-        isVisible ? 'translate-y-0' : 'translate-y-[calc(100%+1.5rem)] pointer-events-none',
+        isVisible
+          ? 'translate-y-0'
+          : anchorAtBottom
+            ? '-translate-y-[calc(100%+1.5rem)] pointer-events-none'
+            : 'translate-y-[calc(100%+1.5rem)] pointer-events-none',
       ].join(' ')}
+      style={anchorAtBottom ? { top: `calc(env(safe-area-inset-top) + ${topClear + 12}px)` } : undefined}
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between border-2 border-primary bg-white px-4 py-3">
         <div className="min-w-0 pr-3">
