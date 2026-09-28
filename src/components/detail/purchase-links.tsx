@@ -104,6 +104,9 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
         // ── 최저가 강조 카드 (가격 비교 가능 시) ──
         <a
           href={cheapestLink.url}
+          data-purchase-link
+          data-purchase-store={cheapestLink.store}
+          data-purchase-placement={id ? 'shoe_bottom_featured' : 'shoe_price_tab_featured'}
           target="_blank"
           rel="noopener noreferrer nofollow"
           className="group block rounded border border-[var(--positive-line)] bg-white p-5 transition md:p-6"
@@ -142,6 +145,9 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
               <a
                 key={index}
                 href={link.url}
+                data-purchase-link
+                data-purchase-store={link.store}
+                data-purchase-placement={id ? 'shoe_bottom_card' : 'shoe_price_tab_card'}
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 className="group flex items-center justify-between gap-3 rounded border border-border bg-white p-4 transition hover:border-slate-300 sm:p-5"
@@ -192,6 +198,9 @@ export function PurchaseLinks({ purchaseLinks, shoeName, brand, msrp, id }: Purc
                 <li key={index}>
                   <a
                     href={link.url}
+                    data-purchase-link
+                    data-purchase-store={link.store}
+                    data-purchase-placement={id ? 'shoe_bottom_list' : 'shoe_price_tab_list'}
                     target="_blank"
                     rel="noopener noreferrer nofollow"
                     className={`grid grid-cols-[1fr_auto] sm:grid-cols-[1fr_auto_auto] gap-3 sm:gap-4 px-4 py-4 sm:px-5 transition hover:bg-[var(--surface-veil-50)] ${

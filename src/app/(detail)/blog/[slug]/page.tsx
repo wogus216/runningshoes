@@ -272,7 +272,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           {(() => {
             const sanitized = DOMPurify.sanitize(post.content, {
               ALLOWED_TAGS: ['h2', 'h3', 'h4', 'p', 'ul', 'ol', 'li', 'strong', 'em', 'a', 'img', 'figure', 'figcaption', 'table', 'thead', 'tbody', 'tr', 'th', 'td', 'br', 'blockquote', 'span', 'div', 'sup', 'sub', 'hr'],
-              ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height'],
+              ALLOWED_ATTR: ['href', 'src', 'alt', 'class', 'target', 'rel', 'loading', 'decoding', 'width', 'height', 'data-purchase-link', 'data-purchase-product-type', 'data-purchase-product-id', 'data-purchase-product-name', 'data-purchase-brand', 'data-purchase-apparel-category', 'data-purchase-store', 'data-purchase-placement'],
             });
             const segments = splitContentAtMidH2(withCdnImages(sanitized));
             return segments.map((seg, i) => (

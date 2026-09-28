@@ -6,6 +6,7 @@ import { CompareProvider } from "@/contexts/compare-context";
 import { CompareFloatingButton } from "@/components/compare/compare-floating-button";
 import { ScrollToTop } from "@/components/scroll-to-top";
 import { FullReloadNav } from "@/components/ads/full-reload-nav";
+import { PurchaseClickTracker } from "@/components/analytics/purchase-click-tracker";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, DEFAULT_OG_IMAGE, ADSENSE_CLIENT_ID, GA_MEASUREMENT_ID, IS_PRODUCTION_DEPLOY } from "@/lib/constants";
 import { getShoes } from "@/lib/data/shoes";
 import { getAllBrands } from "@/lib/data/brands";
@@ -190,6 +191,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
         <CompareProvider>
+          <PurchaseClickTracker />
           {children}
           <CompareFloatingButton />
           <ScrollToTop />

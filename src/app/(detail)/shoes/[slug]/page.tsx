@@ -346,7 +346,13 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
       {/* 재방문 "이어보기" 기록 (화면 렌더 없음) */}
       <RecordView slug={shoe.slug} name={shoe.name} category={shoe.category} image={shoe.image} />
 
-      <div className="space-y-4">
+      <div
+        className="space-y-4"
+        data-purchase-product-type="shoe"
+        data-purchase-product-id={shoe.slug}
+        data-purchase-product-name={shoe.name}
+        data-purchase-brand={shoe.brand}
+      >
         {/* 브레드크럼 */}
         <Breadcrumb brand={shoe.brand} category={shoe.category} shoeName={shoe.name} />
 

@@ -34,6 +34,58 @@ export type EventParams = {
 
 type Gtag = (command: 'event', event: string, params?: Record<string, unknown>) => void;
 
+export type PurchaseClickInput = {
+  href: string;
+  siteOrigin: string;
+  product_type: 'shoe' | 'apparel';
+  product_name: string;
+  product_id?: string;
+  brand?: string;
+  apparel_category?: string;
+  store: string;
+  page_slug: string;
+  button_position: string;
+};
+
+/** 실제 제휴 단축 링크만 제휴로 분류한다. 네이버 쇼핑 검색·공식몰은 none. */
+export function buildPurchaseClick(input: PurchaseClickInput) {
+  let destination: URL;
+  try {
+    destination = new URL(input.href);
+  } catch {
+    return null;
+  }
+  if (!['http:', 'https:'].includes(destination.protocol) || destination.origin === input.siteOrigin) return null;
+
+  const host = destination.hostname.toLowerCase();
+  const affiliate_type = host === 'naver.me'
+    ? 'naver'
+    : host === 'link.coupang.com' || host === 'coupa.ng'
+      ? 'coupang'
+      : 'none';
+
+  return {
+    product_type: input.product_type,
+    product_name: input.product_name,
+    ...(input.product_id && { product_id: input.product_id }),
+    ...(input.brand && { brand: input.brand }),
+    ...(input.apparel_category && { apparel_category: input.apparel_category }),
+    store: input.store || host,
+    page_slug: input.page_slug,
+    button_position: input.button_position,
+    affiliate_type,
+    destination_host: host,
+  };
+}
+
+/** 구매 확정이 아닌 외부 구매처 이동 클릭. 링크 이동을 지연시키지 않는다. */
+export function trackPurchaseClick(params: NonNullable<ReturnType<typeof buildPurchaseClick>>): void {
+  if (typeof window === 'undefined') return;
+  const gtag = (window as unknown as { gtag?: Gtag }).gtag;
+  if (typeof gtag !== 'function') return;
+  gtag('event', 'purchase_link_click', { ...params, transport_type: 'beacon' });
+}
+
 const fired = new Set<string>();
 
 /** gtag가 없는 환경(SSR, 애드블락 등)에서는 조용히 무시한다. */

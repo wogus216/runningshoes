@@ -141,6 +141,9 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
             ) : (
               <a
                 href={primaryLink.url}
+                data-purchase-link
+                data-purchase-store={primaryLink.store}
+                data-purchase-placement="shoe_mobile_bar"
                 target="_blank"
                 rel="noopener noreferrer nofollow"
                 title={getDisclosureText(shoe.purchaseLinks)}

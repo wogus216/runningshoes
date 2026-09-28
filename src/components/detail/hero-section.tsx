@@ -147,6 +147,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   {sortedPurchaseLinks.length === 1 ? (
                     <a
                       href={sortedPurchaseLinks[0].url}
+                      data-purchase-link
+                      data-purchase-store={sortedPurchaseLinks[0].store}
+                      data-purchase-placement="shoe_hero"
                       target="_blank"
                       rel="noopener noreferrer nofollow"
                       className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-accent px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
@@ -159,6 +162,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                       <a
                         key={`${link.store}-${link.url}`}
                         href={link.url}
+                        data-purchase-link
+                        data-purchase-store={link.store}
+                        data-purchase-placement="shoe_hero"
                         target="_blank"
                         rel="noopener noreferrer nofollow"
                         className="inline-flex min-h-[48px] items-center justify-center gap-2 bg-accent px-6 py-3 text-sm font-bold text-white transition hover:opacity-90"
