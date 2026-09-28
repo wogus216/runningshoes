@@ -2,6 +2,108 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'berlin-marathon-2026-results',
+    slug: 'berlin-marathon-2026-results',
+    title:
+      '베를린마라톤 2026 결과 — 아세파 2:11:04 코스기록, 40km까지 세계기록 페이스 | 남자 아돌라 2:02:50',
+    description:
+      '2026 베를린마라톤에서 티그스트 아세파가 2시간 11분 04초로 자신의 코스기록을 49초 줄였습니다. 35km까지 2:09:36 페이스였지만 막판 오른쪽 다리 이상으로 세계기록은 놓쳤습니다. 남자부 우승 구예 아돌라 2:02:50, 엘리트 톱3, 내 기록 확인법과 아직 열리지 않은 2027 발롯의 다음 공식 확인일을 정리했습니다.',
+    thumbnail: '/images/blog/berlin-marathon-2026-results.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-28',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['베를린마라톤', '베를린마라톤 2026', '티그스트 아세파', '구예 아돌라', '마라톤 기록', '세계 6대 마라톤', '베를린마라톤 2027'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>여자부 티그스트 아세파 2:11:04</strong> — 자신의 2023년 베를린 코스기록을 49초 줄였고, 역대 여자 마라톤 3위 기록을 냈습니다</li>
+    <li><strong>남자부 구예 아돌라 2:02:50</strong> — 2021년에 이어 베를린 두 번째 우승. 남녀 우승 기록 합계는 역대 마라톤 대회 중 두 번째로 빨랐습니다</li>
+    <li><strong>2027 발롯은 아직 공식 미게시</strong> — 10월 1일 공식 ‘2027 전망’ 행사가 예정돼 있지만, 그날이 접수 시작일이라는 뜻은 아닙니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔎</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글이 근거로 삼은 것</p>
+    <p><strong>BMW 베를린마라톤 공식 9월 27일 경기 보도자료와 공식 결과 페이지</strong>를 2026년 9월 28일 대조했습니다. 엘리트 기록·중간 통과기록·참가 규모·아세파의 오른쪽 다리 이상은 주최 측 발표만 사용했습니다. 2027 일정은 공식 미게시 상태라 날짜를 추정하지 않았습니다.</p>
+  </div>
+</div>
+
+<h2>결과 한눈에 보기</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>부문</th><th>1위</th><th>2위</th><th>3위</th></tr></thead>
+  <tbody>
+    <tr><td>남자</td><td><strong>구예 아돌라</strong><br>2:02:50</td><td>게메추 디다 디리바<br>2:03:19</td><td>가브리엘 게이<br>2:03:59</td></tr>
+    <tr><td>여자</td><td><strong>티그스트 아세파</strong><br>2:11:04</td><td>베다투 히르파<br>2:16:53</td><td>데라 디다<br>2:16:55</td></tr>
+  </tbody>
+</table>
+</div>
+<p>남자부는 아돌라가 2021년에 이어 베를린에서 두 번째 우승을 차지했습니다. 2위와 29초 차, 3위와 1분 09초 차였습니다. 여자부는 아세파가 2위에 5분 49초 앞선 압도적인 우승이었습니다.</p>
+<p>남녀 우승 기록을 합치면 <strong>4시간 13분 54초</strong>입니다. 주최 측은 이를 2024년 시카고의 4시간 12분 40초에 이은 <strong>역대 두 번째로 빠른 마라톤 대회</strong>라고 발표했습니다. 올해 대회에는 162개국에서 5만 6천 명 넘는 러너가 등록했습니다.</p>
+
+<h2>아세파는 35km까지 2시간 09분대를 달렸습니다</h2>
+<p>완주 기록만 보면 세계기록 2시간 09분 56초와 1분 08초 차입니다. 하지만 경기 흐름은 훨씬 가까웠습니다. 아세파는 10km를 <strong>30분 48초</strong>, 하프를 <strong>1시간 04분 57초</strong>, 30km를 <strong>1시간 32분 19초</strong>에 통과했습니다. 35km 지점의 예상 완주 기록은 <strong>2시간 09분 36초</strong>로, 세계기록보다 20초 빠른 페이스였습니다.</p>
+<p>변수는 마지막 약 2km에서 생겼습니다. 공식 발표에 따르면 오른쪽 다리에 갑작스러운 이상이 나타나 절뚝이며 속도가 떨어졌고, 결승 뒤에는 진단을 위해 병원으로 이동했습니다. 정확한 부상명은 발표되지 않았습니다. 그러고도 2시간 11분 04초로 들어와 자신이 2023년 세운 베를린 코스기록 2시간 11분 53초를 <strong>49초</strong> 줄였습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">막판 통증을 ‘참고 달린 성공담’으로 읽으면 안 됩니다</p>
+    <p>아세파의 상태는 엘리트 의료진이 즉시 확인한 상황입니다. 일반 러너가 레이스 중 보행이 달라질 정도의 통증이나 한쪽 다리 기능 저하를 느낀다면 기록보다 중단과 의료 확인을 먼저 두는 편이 안전합니다. 이번 결과가 통증을 참고 완주하라는 근거는 아닙니다.</p>
+  </div>
+</div>
+
+<h2>내 기록과 완주증은 공식 결과 페이지에서 찾습니다</h2>
+<p>베를린마라톤 공식 결과 페이지에는 2026 라이브 트래킹·결과 검색 링크가 열려 있습니다. 참가자는 이름이나 배번호로 기록을 검색하고 완주증을 확인할 수 있으며, 주최 측 촬영 사진과 영상도 같은 결과 동선에서 연결됩니다.</p>
+<ul>
+  <li><strong>공식 결과</strong> — <a href="https://www.bmw-berlin-marathon.com/en/the-race/results" target="_blank" rel="noopener noreferrer">BMW 베를린마라톤 결과·완주증 페이지</a></li>
+  <li><strong>엘리트 경기 공식 발표</strong> — <a href="https://www.bmw-berlin-marathon.com/en/news-media/news/detail/outstanding-performances-at-the-bmw-berlin-marathon-2026" target="_blank" rel="noopener noreferrer">2026 경기 보도자료</a></li>
+</ul>
+<p>검색 결과 전체를 다른 곳에 재배포하는 것은 공식 페이지의 이용 조건상 제한됩니다. 개인 기록 확인과 완주증 내려받기 용도로 이용하는 것이 맞습니다.</p>
+
+<h2>2027에 뛰고 싶다면 10월 1일 발표를 기다리세요</h2>
+<p>대회가 끝났다고 2027 발롯이 자동으로 열린 것은 아닙니다. <strong>9월 28일 현재 공식 추첨 페이지는 여전히 2026 사이클 일정만 표시</strong>하고 있습니다. 확인된 다음 공식 일정은 <strong>10월 1일 오전 11시 30분(현지시간), 브란덴부르크 문에서 열리는 ‘2027 전망’ 언론 행사</strong>입니다.</p>
+<p>다만 이것은 발표 행사이지, 발롯 시작일 공지가 아닙니다. 직전 사이클은 대회 직후에 추첨 창이 열렸지만 올해도 같은 날짜 간격이라고 단정할 수 없습니다. 지금 할 일은 공식 일정이 나오기 전에 개인 계정과 여권 영문명, 해외결제 카드를 준비하고 <a href="/blog/berlin-marathon-2026-guide">베를린마라톤 2027 접수 준비 가이드</a>를 확인하는 것입니다.</p>
+
+<div class="major-next">
+  <p><strong>다음 한 걸음</strong></p>
+  <ul>
+    <li><strong>2027 출전을 노린다면</strong> → <a href="/blog/berlin-marathon-2026-guide">발롯·기록 우선·자선·투어 경로와 한국 출발 준비</a>를 먼저 확인하세요</li>
+    <li><strong>다른 메이저도 비교한다면</strong> → <a href="/blog/world-marathon-majors-guide-2026">세계 메이저 대회별 진입 방식과 코스 성격</a>을 한눈에 볼 수 있습니다</li>
+    <li><strong>내년 PB가 목표라면</strong> → <a href="/blog/lsd-training-beginner-guide-korea">LSD 장거리 훈련 가이드</a>로 풀코스 지구력부터 준비하세요</li>
+  </ul>
+</div>
+
+<p><small>출처: BMW BERLIN-MARATHON 공식 ‘Outstanding Performances at the BMW BERLIN-MARATHON 2026’, 공식 Results and certificates, 공식 Media Section. 모두 2026년 9월 28일 확인. 2027 발롯 일정은 확인 시점에 공식 미게시이며 10월 1일 행사는 ‘A Look Ahead to 2027’로만 공지돼 있습니다.</small></p>
+`,
+    faqs: [
+      {
+        question: '2026 베를린마라톤 남녀 우승자는 누구인가요?',
+        answer:
+          '남자부는 에티오피아의 구예 아돌라가 2시간 02분 50초로 우승했고, 여자부는 에티오피아의 티그스트 아세파가 2시간 11분 04초로 우승했습니다. 아돌라는 2021년에 이어 두 번째 베를린 우승, 아세파는 세 번째 우승입니다.',
+      },
+      {
+        question: '티그스트 아세파는 세계기록을 세웠나요?',
+        answer:
+          '아닙니다. 35km까지 예상 완주 2시간 09분 36초로 세계기록 페이스였지만 마지막 약 2km에서 오른쪽 다리 이상이 생겨 2시간 11분 04초로 완주했습니다. 세계기록은 아니지만 자신의 베를린 코스기록을 49초 줄였고 역대 여자 마라톤 3위 기록입니다.',
+      },
+      {
+        question: '2026 베를린마라톤 내 기록은 어디서 확인하나요?',
+        answer:
+          'BMW 베를린마라톤 공식 Results and certificates 페이지의 2026 결과·라이브 트래킹 링크에서 이름이나 배번호로 검색할 수 있습니다. 완주증과 공식 사진·영상도 같은 결과 동선에서 확인할 수 있습니다.',
+      },
+      {
+        question: '2027 베를린마라톤 추첨은 시작됐나요?',
+        answer:
+          '2026년 9월 28일 현재 공식 추첨 페이지에는 2027 일정이 게시되지 않았습니다. 10월 1일 현지에서 공식 ‘2027 전망’ 언론 행사가 예정돼 있지만, 그날이 발롯 시작일이라고 발표된 것은 아닙니다.',
+      },
+    ],
+  },
+  {
     id: 'zeiss-smile-race',
     slug: 'zeiss-smile-race',
     title:

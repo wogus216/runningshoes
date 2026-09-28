@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: BMW BERLIN-MARATHON 공식 경기 보도자료·결과(2026-09-28 확인) —
+  // 아세파 2:11:04 코스기록, 35km 예상 2:09:36, 아돌라 2:02:50.
+  'berlin-marathon-2026-results': {
+    title: '아세파 2:11:04, 마지막 2km가 갈랐다',
+    subtitle: '35km까지 세계기록 페이스 — 그래도 베를린 코스기록 49초 단축',
+    data: '여자 1위 티그스트 아세파 2:11:04 · 남자 1위 구예 아돌라 2:02:50',
+  },
   // 출처: 자이스 스마일 레이스 공식 홈페이지 메인·참가신청 안내·유의사항
   // (2026-09-27 확인) — 11/22 여의도, 선착순 5,000명, 10K 65,000원·5K 55,000원,
   // 제한시간 90분·60분. 기념품 페이지는 구성 미게시라 썸네일에서 제외.
