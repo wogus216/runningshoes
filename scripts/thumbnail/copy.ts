@@ -38,6 +38,11 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: posts/2026-09.ts 허브 본문 표 — 브랜드 11곳 × 5칸, 최저 레드헤어 9 9.5만 ·
+  // 최고 SC 엘리트 V6 38.9만(2026-09-28 한국 공식가, 신발 DB). 제목·부제엔 가격 범위가 없다.
+  'running-shoes-tier-chart-2026': {
+    data: '브랜드 11곳 × 5칸 · 대표 모델 9.5만~38.9만원',
+  },
   // 출처: BMW BERLIN-MARATHON 공식 경기 보도자료·결과(2026-09-28 확인) —
   // 아세파 2:11:04 코스기록, 35km 예상 2:09:36, 아돌라 2:02:50.
   'berlin-marathon-2026-results': {
@@ -256,8 +261,8 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   // 아래 4건 출처: posts/2026-08.ts 각 글의 비교표 — 전부 신발 DB 실측(가격·무게·내구·km당 비용).
   'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026': {
     title: '페가수스 프리미엄 vs 벨로시티 4',
-    subtitle: '10만원 더 비싼데 84g 무겁다',
-    data: '27.9만 vs 17.9만 · 308g vs 224g · km당 465원 vs 358원',
+    subtitle: '11만원 더 비싼데 84g 무겁다',
+    data: '28.9만 vs 17.9만 · 308g vs 224g · km당 482원 vs 358원',
   },
   'asics-megablast-vs-nike-vomero-18-max-cushion-2026': {
     title: '메가블라스트 vs 보메로 18',

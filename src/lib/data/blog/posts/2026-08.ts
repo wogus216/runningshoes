@@ -736,7 +736,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td><a href="/shoes/nike-pegasus-42">페가수스 42</a></td><td>ReactX</td><td>286g</td><td>169,000원</td><td>매일 신는 기본</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-plus">페가수스 플러스</a> (1세대)</td><td>풀렝스 ZoomX</td><td>244g</td><td>219,000원</td><td>가볍고 반응 빠른 스피드 데일리</td></tr>
     <tr><td><strong>페가수스 플러스 2</strong></td><td>ZoomX + 전족부 Air Zoom</td><td>약 265g (280mm, 공식)</td><td><strong>219,000원</strong></td><td>템포 트레이너</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a></td><td>ZoomX+ReactX+에어</td><td>308g</td><td>279,000원</td><td>맥시멀 쿠션 상위판</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a></td><td>ZoomX+ReactX+에어</td><td>308g</td><td>289,000원</td><td>맥시멀 쿠션 상위판</td></tr>
   </tbody>
 </table>
 <p class="caption">※ 42·플러스 1세대·프리미엄 수치는 저희 데이터베이스 기준(US M9). 플러스 2 무게는 나이키 코리아 제품 페이지의 280mm 기준 공식값이라 기준 사이즈가 다릅니다.</p>
@@ -1953,7 +1953,7 @@ export const posts_2026_08: BlogPost[] = [
 <ul>
   <li>⛰️ 트레일 러닝화 베스트 → <a href="/best/trail">트레일 러닝화 추천</a></li>
   <li>🏁 트레일 입문이 처음이라면 → <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a></li>
-  <li>🟦 다른 브랜드 계급도 → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
+  <li>🟦 다른 브랜드 계급도 → <a href="/blog/running-shoes-tier-chart-2026"><strong>11개 브랜드 한 장 보기</strong></a> · <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a> · <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a> · <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a> · <a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카</a> · <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스</a></li>
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-08-19 기준 한국 공식 판매가와 신발 데이터베이스 실측 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
@@ -3742,20 +3742,21 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
     slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
-    title: '페가수스 프리미엄 vs 벨로시티 나이트로 4 차이 — 10만원 더 비싼데 84g 무겁다',
+    title: '페가수스 프리미엄 vs 벨로시티 나이트로 4 차이 — 11만원 더 비싼데 84g 무겁다',
     description:
-      '나이키 페가수스 프리미엄(279,000원·308g)과 푸마 벨로시티 나이트로 4(179,000원·224g)는 값과 무게가 정반대로 붙습니다. 비싼 쪽이 84g 무겁고, 대신 쿠션 10/10에 힐 스택 43mm를 줍니다. 벨로시티는 10만원 싸고 84g 가볍고 km당 358원으로 경제적이며 와이드 옵션까지 있습니다. 다만 프리미엄은 무릎이 주의 등급이고 와이드가 없습니다. 어느 쪽이 내 러닝에 맞는지 실측으로 갈라드립니다.',
+      '나이키 페가수스 프리미엄(289,000원·308g)과 푸마 벨로시티 나이트로 4(179,000원·224g)는 값과 무게가 정반대로 붙습니다. 비싼 쪽이 84g 무겁고, 대신 쿠션 10/10에 힐 스택 43mm를 줍니다. 벨로시티는 11만원 싸고 84g 가볍고 km당 358원으로 경제적이며 와이드 옵션까지 있습니다. 다만 프리미엄은 무릎이 주의 등급이고 와이드가 없습니다. 어느 쪽이 내 러닝에 맞는지 실측으로 갈라드립니다.',
     thumbnail: '/images/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
+    updatedAt: '2026-09-28',
     category: 'review' as const,
     readingTime: 8,
     tags: ['페가수스 프리미엄', '나이키 페가수스 프리미엄', '벨로시티 나이트로 4', '푸마 벨로시티', '데일리 러닝화', '맥스쿠션', 'ZoomX', 'Nitro Foam', '러닝화 비교', '입문 러닝화'],
     faqs: [
       {
-        question: '10만원 차이가 날 만한가요?',
+        question: '11만원 차이가 날 만한가요?',
         answer:
-          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 10만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 7/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(465원)보다 23% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
+          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 11만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 7/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(482원)보다 26% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
       },
       {
         question: '발볼이 넓은데 어느 쪽인가요?',
@@ -3777,9 +3778,9 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>값과 무게가 정반대로 붙습니다</strong> — <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 279,000원·308g / <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 179,000원·224g. <strong>10만원 더 비싼 쪽이 84g 무겁습니다</strong></li>
+    <li><strong>값과 무게가 정반대로 붙습니다</strong> — <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 289,000원·308g / <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 179,000원·224g. <strong>11만원 더 비싼 쪽이 84g 무겁습니다</strong></li>
     <li><strong>프리미엄이 파는 건 푹신함</strong> — 쿠션 10/10, 힐 스택 43mm, 풀렝스 Air Zoom. 벨로시티는 스택 34mm에 쿠션 7/10</li>
-    <li><strong>갈림길 셋</strong> — km당 465원 vs 358원, 와이드 옵션(벨로시티만 있음), 무릎 등급(프리미엄이 주의)</li>
+    <li><strong>갈림길 셋</strong> — km당 482원 vs 358원, 와이드 옵션(벨로시티만 있음), 무릎 등급(프리미엄이 주의)</li>
   </ul>
 </div>
 
@@ -3798,7 +3799,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>페가수스 프리미엄</th><th>벨로시티 나이트로 4</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>279,000원</td><td><strong>179,000원</strong></td></tr>
+    <tr><td>한국 정가</td><td>289,000원</td><td><strong>179,000원</strong></td></tr>
     <tr><td>무게</td><td>308g</td><td><strong>224g</strong> (84g 가벼움)</td></tr>
     <tr><td>스택 (힐/전족)</td><td><strong>43 / 31mm</strong></td><td>34 / 24mm</td></tr>
     <tr><td>드롭</td><td>12mm</td><td>10mm</td></tr>
@@ -3807,7 +3808,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
     <tr><td>토박스 / 와이드</td><td>좁은 편 / <strong>없음</strong></td><td>좁은 편 / <strong>있음</strong></td></tr>
     <tr><td>무릎 등급</td><td><strong>주의</strong></td><td>양호</td></tr>
-    <tr><td>내구 · km당</td><td>600km · 465원</td><td>500km · <strong>358원</strong></td></tr>
+    <tr><td>내구 · km당</td><td>600km · 482원</td><td>500km · <strong>358원</strong></td></tr>
     <tr><td>가성비 점수</td><td>8/10</td><td><strong>10/10</strong></td></tr>
     <tr><td>적정 페이스</td><td>5:00–6:30 /km</td><td>4:30–6:30 /km</td></tr>
   </tbody>
@@ -3815,7 +3816,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
 
-<h2>10만원으로 사는 것 — 스택 9mm와 쿠션 3점</h2>
+<h2>11만원으로 사는 것 — 스택 9mm와 쿠션 3점</h2>
 
 <p>가격 차이가 어디로 갔는지는 명확합니다. <strong>힐 스택 43mm 대 34mm, 무려 9mm 차이</strong>입니다. 여기에 ZoomX와 ReactX를 겹치고 풀렝스 Air Zoom 유닛까지 넣은 게 페가수스 프리미엄이고, 그 결과가 쿠션 10/10입니다.</p>
 
@@ -3847,7 +3848,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>족저근막염 이력</strong> → <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>(excellent)</li>
   <li><strong>푹신함이 최우선</strong> → 프리미엄(쿠션 10, 스택 43mm)</li>
   <li><strong>가벼움이 최우선</strong> → 벨로시티(224g)</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 벨로시티(10만원 싸고 km당 358원)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 벨로시티(11만원 싸고 km당 358원)</li>
   <li><strong>더 푹신한 쿠션화를 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a>도 보세요</li>
 </ul>
 

@@ -2,6 +2,216 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'running-shoes-tier-chart-2026',
+    slug: 'running-shoes-tier-chart-2026',
+    title:
+      '러닝화 계급도 2026 — 브랜드 11곳 등급표 한 장 | 나이키·아식스·뉴발란스·호카·브룩스·아디다스·온·푸마·미즈노·사코니·리닝',
+    description:
+      '러닝화(런닝화) 계급도 2026. 나이키·아식스·뉴발란스·호카·브룩스·아디다스·온·푸마·미즈노·사코니·리닝 11개 브랜드를 입문·데일리, 쿠션, 안정화, 슈퍼트레이너, 카본 레이싱 5칸으로 한 장에 정리했습니다. 칸별 현행 대표 모델과 한국 공식가, 브랜드마다 다른 등급 표시법, 가격대별 카본 비율, 브랜드별 발볼 분포까지 담았습니다.',
+    thumbnail: '/images/blog/running-shoes-tier-chart-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-28',
+    category: 'guide' as const,
+    readingTime: 9,
+    tags: [
+      '러닝화 계급도',
+      '런닝화 계급도',
+      '러닝화 계급도 2026',
+      '러닝화 등급',
+      '러닝화 등급표',
+      '러닝화 라인업',
+      '러닝화 브랜드 비교',
+      '브랜드별 러닝화',
+    ],
+    faqs: [
+      {
+        question: '러닝화 계급도가 뭔가요?',
+        answer:
+          '러닝화를 용도와 기술(미드솔 폼·카본 플레이트)에 따라 줄 세운 표입니다. 어느 브랜드든 입문·데일리, 쿠션, 안정화, 슈퍼트레이너, 카본 레이싱 다섯 칸으로 나뉘고, 브랜드마다 그 칸을 표시하는 이름 규칙만 다릅니다(뉴발란스는 번호, 나이키는 플러스·프리미엄 접미사, 사코니는 엔돌핀 같은 서브 라인). 위 칸이 모든 러너에게 더 좋은 신발이라는 뜻은 아닙니다. 칸이 다르면 용도가 다릅니다.',
+      },
+      {
+        question: '비싼 러닝화가 상위 등급인가요?',
+        answer:
+          '레이싱화에서만 대체로 맞습니다. 이 사이트 신발 DB에서 가격이 확인된 136종 가운데 25만원 이상은 38종이고, 그중 27종이 카본 플레이트를 넣은 모델입니다. 반대로 15만원 미만 6종에는 카본이 하나도 없습니다. 25만원 위의 가격은 대부분 대회용 기술값이라는 뜻입니다. 데일리 라인에도 30만원 가까운 "프리미엄" 모델이 있지만 폼을 겹쳐 무거워지고 토박스가 좁아지는 경우가 있어, 가격이 높다고 매일 신기에 더 좋은 신발은 아닙니다.',
+      },
+      {
+        question: '첫 러닝화는 어느 칸에서 골라야 하나요?',
+        answer:
+          '입문·데일리 칸에서 고르면 됩니다. 이 사이트 DB의 입문화 14종 가격 중앙값은 17.4만원이고, 브랜드마다 이 칸의 기준 모델이 하나씩 있습니다(페가수스 42·노바블라스트 6·880 V15·클리프톤 10·고스트 18 등). 다만 발이 안쪽으로 무너지는 과내전이 있으면 안정화 칸을, 발볼이 넓으면 와이드 옵션이 있는 모델을 먼저 보세요. km당 비용으로 입문화를 줄 세운 입문 러닝화 계급도도 함께 참고하면 좋습니다.',
+      },
+      {
+        question: '발볼이 넓으면 어느 브랜드부터 봐야 하나요?',
+        answer:
+          '이 사이트 DB의 토박스 분류로는 나이키가 16종 중 6종이 좁음으로, 모델이 9종 이상인 브랜드 가운데 좁은 모델 비율이 가장 높습니다(리닝은 3종 중 2종). 다만 브랜드보다 모델 차이가 더 큽니다. 같은 나이키라도 페가수스 42는 한국 와이드가 정식 출시됐고, 페가수스 프리미엄·보메로 프리미엄은 좁음으로 분류됩니다. 각 브랜드 계급도의 발볼 절에서 모델별 와이드 옵션을 확인하세요.',
+      },
+      {
+        question: '이 계급도는 언제 기준인가요?',
+        answer:
+          '2026년 9월 28일 기준 한국 공식가와 이 사이트 신발 DB에 등록된 모델 기준입니다. 브랜드별 계급도 11편도 같은 날 라인업·가격을 갱신했습니다. 후속 모델이 나오면 브랜드 계급도와 이 표를 함께 고칩니다.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>러닝화 계급도는 "비싼 순서"가 아니라 "용도 순서"입니다</strong> — 어느 브랜드든 입문·데일리 → 쿠션·안정화 → 슈퍼트레이너 → 카본 레이싱 다섯 칸으로 나뉘고, 브랜드마다 칸을 표시하는 이름 규칙만 다릅니다.</li>
+    <li>브랜드 11곳의 칸별 <strong>현행 대표 모델과 한국 공식가</strong>를 한 장 표로 모았습니다. 행마다 그 브랜드의 전체 라인업 계급도로 이어집니다.</li>
+    <li><strong>가격은 등급이 아니라 기술값입니다</strong> — 이 사이트 DB 136종 중 25만원 이상 38종의 71%(27종)가 카본 레이싱화이고, 15만원 미만 6종에는 카본이 없습니다.</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🗺️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 역할 — 브랜드별 계급도 11편의 지도</p>
+    <p>나이키·아식스·뉴발란스처럼 브랜드 하나를 깊게 판 계급도는 따로 있습니다. 이 글은 그 11편을 <strong>한 장에 겹쳐 놓고 브랜드끼리 가로로 비교</strong>하는 지도입니다. 가격은 한국 공식가(2026-09-28 기준), 모델 분류와 토박스는 이 사이트 신발 DB 기준이며, 이 사이트는 신발을 직접 시험하지 않습니다 — 스펙은 브랜드 공식 자료와 외부 실측(RunRepeat 등)을 따릅니다.</p>
+  </div>
+</div>
+
+<h2>1. 계급도는 다섯 칸 — 브랜드가 달라도 구조는 같다</h2>
+
+<p>브랜드마다 이름은 제각각이지만 라인업을 펼쳐 보면 거의 같은 다섯 칸으로 나뉩니다. 먼저 내가 어느 칸의 러너인지 정하면, 브랜드 선택은 그다음 문제입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>칸</th><th>누구에게</th><th>DB 가격 중앙값</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>입문·데일리</strong></td><td>첫 러닝화, 주 2~4회 조깅·일상 훈련</td><td>입문화 17.4만 · 데일리 18.9만</td></tr>
+    <tr><td><strong>쿠션</strong></td><td>장거리·회복주, 착지 충격이 걱정될 때(프리미엄·맥스 쿠션)</td><td>21.9만</td></tr>
+    <tr><td><strong>안정화</strong></td><td>발이 안쪽으로 무너지는(과내전) 러너</td><td>19.9만</td></tr>
+    <tr><td><strong>슈퍼트레이너·템포</strong></td><td>인터벌·빌드업 같은 빠른 훈련</td><td>—</td></tr>
+    <tr><td><strong>카본 레이싱</strong></td><td>대회·기록 도전</td><td>30.4만</td></tr>
+  </tbody>
+</table>
+
+<p>※ 중앙값은 이 사이트 신발 DB의 분류 기준입니다(입문화 14종·데일리 21종·쿠션화 36종·안정화 18종·레이싱 32종). 슈퍼트레이너는 DB에 별도 분류가 없어 비웠습니다.</p>
+
+<h2>2. 러닝화 계급도 한 장 — 브랜드 11곳 × 5칸</h2>
+
+<p>각 칸에는 그 브랜드의 <strong>현행 기준 모델</strong> 하나(필요하면 둘)를 넣었습니다. 브랜드 이름을 누르면 전체 라인업 계급도로, 모델 이름을 누르면 상세 스펙으로 갑니다. "—"는 그 칸에 해당하는 라인이 DB에 없다는 뜻입니다.</p>
+
+<table style="word-break:keep-all">
+  <thead>
+    <tr><th>브랜드</th><th>입문·데일리</th><th>쿠션</th><th>안정화</th><th>슈퍼트레이너·템포</th><th>카본 레이싱</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키</strong></a></td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> 16.9만</td><td><a href="/shoes/nike-vomero-18">보메로 18</a> 18.9만</td><td><a href="/shoes/nike-structure-26">스트럭처 26</a> 16.9만</td><td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 22.9만</td><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 30.9만</td></tr>
+    <tr><td><a href="/blog/asics-running-shoes-lineup-tier-guide-2026"><strong>아식스</strong></a></td><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a> 17.9만</td><td><a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a> 19.9만</td><td><a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 19.9만</td><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 25.9만</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 32.9만</td></tr>
+    <tr><td><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026"><strong>뉴발란스</strong></a></td><td><a href="/shoes/new-balance-880-v15">880 V15</a> 18.9만</td><td><a href="/shoes/new-balance-1080-v15">1080 V15</a> 20.9만</td><td><a href="/shoes/new-balance-860-v15">860 V15</a> 18.9만</td><td><a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a> 25.9만</td><td><a href="/shoes/new-balance-sc-elite-v6">SC 엘리트 V6</a> 38.9만</td></tr>
+    <tr><td><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026"><strong>호카</strong></a></td><td><a href="/shoes/hoka-clifton-10">클리프톤 10</a> 19.9만</td><td><a href="/shoes/hoka-bondi-9">본디 9</a> 22.9만</td><td><a href="/shoes/hoka-arahi-8">아라히 8</a> 19.9만</td><td><a href="/shoes/hoka-mach-x-3">마하 X 3</a> 24.9만</td><td><a href="/shoes/hoka-rocket-x-3">로켓 X 3</a> 29.9만</td></tr>
+    <tr><td><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026"><strong>브룩스</strong></a></td><td><a href="/shoes/brooks-ghost-18">고스트 18</a> 16.9만</td><td><a href="/shoes/brooks-glycerin-22">글리세린 22</a> 20.9만</td><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a> 18.9만</td><td><a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 21.9만</td><td><a href="/shoes/brooks-hyperion-elite-5">하이페리온 엘리트 5</a> 29.9만</td></tr>
+    <tr><td><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026"><strong>아디다스</strong></a></td><td><a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a> 15.9만</td><td>—</td><td>—</td><td><a href="/shoes/adidas-boston-13">보스턴 13</a> 17.9만</td><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 29.9만</td></tr>
+    <tr><td><a href="/blog/on-running-shoes-lineup-tier-guide-2026"><strong>온</strong></a></td><td><a href="/shoes/on-cloudrunner-2">클라우드러너 2</a> 18.9만</td><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 22.9만</td><td><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a> 19.9만</td><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a> 25.9만</td><td><a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a> 32.9만</td></tr>
+    <tr><td><a href="/blog/puma-running-shoes-lineup-tier-guide-2026"><strong>푸마</strong></a></td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 17.9만</td><td><a href="/shoes/puma-magnify-nitro-3">매그니파이 나이트로 3</a> 19.9만</td><td>—</td><td><a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 21.9만</td><td><a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a> 28.9만</td></tr>
+    <tr><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노</strong></a></td><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a> 17.9만</td><td><a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a> 18.9만</td><td><a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a> 15.9만</td><td><a href="/shoes/mizuno-wave-rebellion-flash-3">웨이브 리벨리온 플래시 3</a> 19.9만</td><td><a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 34.9만</td></tr>
+    <tr><td><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026"><strong>사코니</strong></a></td><td><a href="/shoes/saucony-ride-19">라이드 19</a> 17.9만</td><td><a href="/shoes/saucony-triumph-24">트라이엄프 24</a> 20.9만</td><td><a href="/shoes/saucony-guide-19">가이드 19</a> 17.9만</td><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 21.9만</td><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> 29.9만</td></tr>
+    <tr><td><a href="/blog/li-ning-red-hare-9-lineup-2026"><strong>리닝</strong></a></td><td><a href="/shoes/li-ning-red-hare-9">레드헤어 9</a> 9.5만 · <a href="/shoes/li-ning-red-hare-9-pro">9 프로</a> 14만</td><td><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a> 15만</td><td>—</td><td>—</td><td>—</td></tr>
+  </tbody>
+</table>
+
+<p>※ 가격은 한국 공식가(2026-09-28 기준)입니다. 같은 칸의 전작·상위 모델, 트레일 모델은 각 브랜드 계급도에 모두 있습니다. 표가 넓어 모바일에서는 옆으로 밀어서 보세요.</p>
+
+<p>※ 한국 공식몰에 후속 세대가 올라와 있지만 아직 이 표에 넣지 않은 모델이 있습니다 — 아디다스 아디오스 프로 5, 브룩스 하이페리온 엘리트 6·글리세린 GTS 23, 푸마 벨로시티 나이트로 5, 미즈노 웨이브 인스파이어 22. 스펙과 한국 정가를 확인해 등록한 뒤 이 표와 브랜드 계급도를 함께 고칩니다.</p>
+
+<h2>3. 브랜드마다 "등급 표시법"이 다르다</h2>
+
+<p>같은 다섯 칸을 브랜드마다 다른 이름 규칙으로 표시합니다. 이 규칙만 알면 처음 보는 모델도 어느 칸인지 짐작할 수 있습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>브랜드</th><th>등급을 읽는 신호</th><th>전체 라인업</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>뉴발란스</strong></td><td>번호 — 6x 안정화 · 8x 중립 데일리 · 10xx 프리미엄 쿠션. 스피드·레이싱은 번호 대신 이름(레벨·SC 레벨·SC Elite)</td><td><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 계급도</a></td></tr>
+    <tr><td><strong>나이키</strong></td><td>라인 이름(페가수스·보메로·스트럭처) + 접미사 플러스·프리미엄, 이름에 Fly가 붙으면 카본 레이싱(라이벌 플라이는 예외)</td><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 계급도</a></td></tr>
+    <tr><td><strong>아식스</strong></td><td>GEL 클래식(카야노·님버스) vs FF Blast 신세대, "blast"가 붙으면 반발 폼, 메타스피드는 카본</td><td><a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 계급도</a></td></tr>
+    <tr><td><strong>호카</strong></td><td>클리프톤·본디·마하 데일리 라인 + 이름의 "X"가 퍼포먼스 강화(로켓 X·마하 X)</td><td><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 계급도</a></td></tr>
+    <tr><td><strong>브룩스</strong></td><td>"GTS"가 붙으면 안정화, "맥스"가 붙으면 맥시멀 스택, 하이페리온은 스피드 라인</td><td><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026">브룩스 계급도</a></td></tr>
+    <tr><td><strong>아디다스</strong></td><td>슈퍼노바 = 데일리, 아디제로 = 스피드 서브브랜드(SL2 → 보스턴 → Evo SL → 아디오스 프로 사다리)</td><td><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 계급도</a></td></tr>
+    <tr><td><strong>온</strong></td><td>모든 이름이 "클라우드~", 뒤에 붙는 하이퍼·맥스·라이트스프레이가 등급</td><td><a href="/blog/on-running-shoes-lineup-tier-guide-2026">온 계급도</a></td></tr>
+    <tr><td><strong>푸마</strong></td><td>모든 라인이 NITRO 폼, "엘리트"가 붙으면 카본 레이싱, "퓨어"는 무카본</td><td><a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마 계급도</a></td></tr>
+    <tr><td><strong>미즈노</strong></td><td>전통 "웨이브"(Wave 플레이트) 라인 vs 신세대 "하이퍼워프" 카본 라인</td><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 계급도</a></td></tr>
+    <tr><td><strong>사코니</strong></td><td>전통 라인(라이드·가이드·트라이엄프) vs "엔돌핀" 스피드 서브 라인 — 엔돌핀이 붙으면 스피드·레이싱 계열</td><td><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니 계급도</a></td></tr>
+    <tr><td><strong>리닝</strong></td><td>레드헤어 9(적토마) 삼형제 — 기본 · 프로 · 울트라</td><td><a href="/blog/li-ning-red-hare-9-lineup-2026">리닝 레드헤어 9 라인업</a></td></tr>
+  </tbody>
+</table>
+
+<h2>4. 비싼 게 상위 등급일까 — 가격대별로 보면</h2>
+
+<p>이 사이트 신발 DB에서 한국 공식가가 확인된 136종을 가격대로 나누면, 가격이 무엇을 반영하는지가 보입니다.</p>
+
+<table>
+  <thead>
+    <tr><th>가격대</th><th>모델 수</th><th>그중 카본</th><th>가장 많은 칸</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>15만원 미만</td><td>6종</td><td>0종</td><td>입문·데일리</td></tr>
+    <tr><td>15~20만원</td><td>50종</td><td>1종</td><td>안정화 14종 · 입문화 11종</td></tr>
+    <tr><td>20~25만원</td><td>42종</td><td>7종</td><td>쿠션화 19종</td></tr>
+    <tr><td>25만원 이상</td><td>38종</td><td><strong>27종</strong></td><td>레이싱 25종</td></tr>
+  </tbody>
+</table>
+
+<p>20만원 전후까지는 <strong>용도를 고르는 돈</strong>이고, 25만원 위부터는 대부분 <strong>대회용 기술(카본 플레이트·PEBA 계열 폼)의 값</strong>입니다. 그래서 "비싼 게 상위 등급"은 레이싱 칸에서만 대체로 맞습니다. 데일리 라인에도 30만원 가까운 프리미엄이 있지만(<a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 28.9만·<a href="/shoes/nike-vomero-premium">보메로 프리미엄</a> 29.9만), 폼을 겹쳐 무겁고 토박스가 좁은 편이라 매일 신기에 더 좋은 신발이라고 보긴 어렵습니다. 가격대별 추천은 <a href="/blog/running-shoes-recommend-by-price-2026">가격대별 러닝화 추천</a>에 따로 정리했습니다.</p>
+
+<h2>5. 발볼로 보면 — 브랜드별 토박스 분포</h2>
+
+<p>한국 러너가 브랜드를 고를 때 가장 먼저 걸리는 게 발볼입니다. 이 사이트 신발 DB의 토박스 분류를 브랜드별로 세면 이렇습니다.</p>
+
+<table>
+  <thead>
+    <tr><th>브랜드</th><th>좁음</th><th>표준</th><th>넓음</th></tr>
+  </thead>
+  <tbody>
+    <tr><td>나이키</td><td><strong>6</strong></td><td>8</td><td>2</td></tr>
+    <tr><td>아식스</td><td>3</td><td>14</td><td>0</td></tr>
+    <tr><td>뉴발란스</td><td>2</td><td>10</td><td>0</td></tr>
+    <tr><td>호카</td><td>1</td><td>9</td><td>1</td></tr>
+    <tr><td>브룩스</td><td>1</td><td>8</td><td>2</td></tr>
+    <tr><td>아디다스</td><td>2</td><td>6</td><td>2</td></tr>
+    <tr><td>온</td><td>0</td><td>13</td><td>0</td></tr>
+    <tr><td>푸마</td><td>3</td><td>6</td><td>0</td></tr>
+    <tr><td>미즈노</td><td>2</td><td>7</td><td>2</td></tr>
+    <tr><td>사코니</td><td>2</td><td>18</td><td>1</td></tr>
+    <tr><td>리닝</td><td>2</td><td>1</td><td>0</td></tr>
+  </tbody>
+</table>
+
+<p>※ 분류 기준은 좁음 68mm 미만 · 표준 68~75mm · 넓음 75mm 초과입니다. 모델마다 근거(실측·공식 핏 표기)가 다르니 구매 전 상세 페이지의 발볼 항목을 확인하세요.</p>
+
+<p>나이키는 16종 중 6종이 좁음으로, 모델이 9종 이상인 브랜드 가운데 좁은 모델 비율이 가장 높습니다(리닝은 3종뿐이라 비율 비교에서 뺐습니다). 다만 <strong>브랜드보다 모델 차이가 더 큽니다</strong> — 같은 브랜드 안에서도 와이드 옵션이 있는 모델과 없는 모델이 갈립니다. 모델별 와이드 옵션은 각 브랜드 계급도의 발볼 절에, 발볼 넓은 러너를 위한 실측 비교는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 있습니다.</p>
+
+<h2>6. 용도별로 브랜드를 가로질러 보려면</h2>
+
+<ul>
+  <li><strong>🟢 첫 러닝화</strong> → <a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a> — 가격표 대신 km당 비용으로 줄 세웠습니다.</li>
+  <li><strong>🏁 카본화</strong> → <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 러닝화 계급도</a> — 트레이너·레이서·서브2급을 한 장에 나눴습니다.</li>
+  <li><strong>⛰️ 트레일</strong> → <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a> — 살로몬을 포함한 트레일 전용 라인업입니다.</li>
+  <li><strong>🦶 평발·과내전</strong> → <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a> — 내가 안정화 칸의 러너인지부터 확인합니다.</li>
+  <li><strong>☁️ 무릎·장거리</strong> → <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a></li>
+</ul>
+
+<h2>7. 브랜드별 계급도 11편</h2>
+
+<ul>
+  <li><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키 러닝화 계급도</strong></a> — 페가수스·보메로·스트럭처·Fly, 라인 이름과 접미사로 읽기</li>
+  <li><a href="/blog/asics-running-shoes-lineup-tier-guide-2026"><strong>아식스 러닝화 계급도</strong></a> — 카야노·님버스·노바블라스트·메타스피드, GEL과 FF Blast</li>
+  <li><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026"><strong>뉴발란스 러닝화 계급도</strong></a> — 6x·8x·10xx 번호로 읽는 라인업</li>
+  <li><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026"><strong>호카 러닝화 계급도</strong></a> — 클리프톤·본디·마하·아라히, 맥스 쿠션과 X</li>
+  <li><a href="/blog/brooks-running-shoes-lineup-tier-guide-2026"><strong>브룩스 러닝화 계급도</strong></a> — 고스트·글리세린·아드레날린, GTS와 맥스</li>
+  <li><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026"><strong>아디다스 러닝화 계급도</strong></a> — 슈퍼노바와 아디제로 스피드 사다리</li>
+  <li><a href="/blog/on-running-shoes-lineup-tier-guide-2026"><strong>온 러닝화 계급도</strong></a> — 클라우드 이름 뒤 수식어로 읽기</li>
+  <li><a href="/blog/puma-running-shoes-lineup-tier-guide-2026"><strong>푸마 러닝화 계급도</strong></a> — 나이트로 폼과 엘리트·퓨어</li>
+  <li><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노 러닝화 계급도</strong></a> — 웨이브 전통과 하이퍼워프 카본</li>
+  <li><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026"><strong>사코니 러닝화 계급도</strong></a> — 전통 라인과 엔돌핀 스피드 라인</li>
+  <li><a href="/blog/li-ning-red-hare-9-lineup-2026"><strong>리닝 레드헤어 9 라인업</strong></a> — 기본·프로·울트라 삼형제</li>
+</ul>
+
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-09-28 기준 한국 공식가와 이 사이트 신발 DB(브랜드 공식 자료·외부 실측 기반)를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
+`,
+  },
+  {
     id: 'berlin-marathon-2026-results',
     slug: 'berlin-marathon-2026-results',
     title:
@@ -1382,12 +1592,13 @@ export const posts_2026_09: BlogPost[] = [
     id: 'pegasus-42-vs-premium-daily-2026',
     slug: 'pegasus-42-vs-premium-daily-2026',
     title:
-      '페가수스 42 vs 페가수스 프리미엄 | 11만원을 더 주면 ZoomX가 들어오고 와이드가 사라진다',
+      '페가수스 42 vs 페가수스 프리미엄 | 12만원을 더 주면 ZoomX가 들어오고 와이드가 사라진다',
     description:
-      '같은 페가수스인데 가격이 169,000원과 279,000원으로 갈립니다. 11만원을 더 내면 ZoomX 폼이 얹히고 스택이 6mm 높아지지만, 무게는 22g 늘고 와이드 옵션은 사라집니다. 발볼 넓은 러너에게는 비싼 쪽이 오히려 안 맞을 수 있다는 뜻입니다. 여기에 검증의 비대칭도 있습니다 — 42는 신발을 절단해 잰 랩 데이터가 공개돼 있지만 프리미엄은 브랜드 표기뿐입니다.',
+      '같은 페가수스인데 가격이 169,000원과 289,000원으로 갈립니다. 12만원을 더 내면 ZoomX 폼이 얹히고 스택이 6mm 높아지지만, 무게는 22g 늘고 와이드 옵션은 사라집니다. 발볼 넓은 러너에게는 비싼 쪽이 오히려 안 맞을 수 있다는 뜻입니다. 여기에 검증의 비대칭도 있습니다 — 42는 신발을 절단해 잰 랩 데이터가 공개돼 있지만 프리미엄은 브랜드 표기뿐입니다.',
     thumbnail: '/images/blog/pegasus-42-vs-premium-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-16',
+    updatedAt: '2026-09-28',
     category: 'review' as const,
     readingTime: 8,
     tags: [
@@ -1402,7 +1613,7 @@ export const posts_2026_09: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>11만원 차이로 얻는 건 ZoomX 폼과 스택 6mm입니다.</strong> 프리미엄은 ReactX 위에 ZoomX를 한 겹 더 얹어 힐 43mm까지 쌓았습니다(42는 37mm)</li>
+    <li><strong>12만원 차이로 얻는 건 ZoomX 폼과 스택 6mm입니다.</strong> 프리미엄은 ReactX 위에 ZoomX를 한 겹 더 얹어 힐 43mm까지 쌓았습니다(42는 37mm)</li>
     <li><strong>대신 22g 무거워지고, 와이드 옵션이 없어집니다.</strong> 프리미엄은 토박스가 좁은 쪽이고 2E 같은 넓은 사이즈 자체를 팔지 않습니다 — 발볼이 넓다면 비싼 쪽이 오히려 못 맞습니다</li>
     <li><strong>검증 수준도 다릅니다.</strong> 42는 신발을 반으로 잘라 잰 외부 랩 수치가 공개돼 있는데, 프리미엄은 브랜드가 적은 숫자뿐입니다. 둘의 수치를 나란히 놓고 읽으면 안 되는 이유입니다</li>
   </ul>
@@ -1412,7 +1623,7 @@ export const posts_2026_09: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>대부분의 러너에게는 <a href="/shoes/nike-pegasus-42">페가수스 42</a>가 맞습니다.</strong> 프리미엄은 "더 두꺼운 쿠션을 원하고, 발볼이 좁고, 11만원을 더 낼 수 있는" 세 조건이 모두 맞을 때만 값을 합니다. 42를 더 알고 싶다면 <a href="/blog/nike-pegasus-42-review">42 단독 후기</a>와 <a href="/blog/nike-pegasus-41-vs-42-comparison">41과의 세대 비교</a>를 먼저 보세요.</p>
+    <p><strong>대부분의 러너에게는 <a href="/shoes/nike-pegasus-42">페가수스 42</a>가 맞습니다.</strong> 프리미엄은 "더 두꺼운 쿠션을 원하고, 발볼이 좁고, 12만원을 더 낼 수 있는" 세 조건이 모두 맞을 때만 값을 합니다. 42를 더 알고 싶다면 <a href="/blog/nike-pegasus-42-review">42 단독 후기</a>와 <a href="/blog/nike-pegasus-41-vs-42-comparison">41과의 세대 비교</a>를 먼저 보세요.</p>
   </div>
 </div>
 
@@ -1422,7 +1633,7 @@ export const posts_2026_09: BlogPost[] = [
 <table>
   <thead><tr><th>항목</th><th>페가수스 42</th><th>페가수스 프리미엄</th></tr></thead>
   <tbody>
-    <tr><td>한국 정가</td><td><strong>169,000원</strong></td><td><strong>279,000원</strong> (+110,000)</td></tr>
+    <tr><td>한국 정가</td><td><strong>169,000원</strong></td><td><strong>289,000원</strong> (+120,000)</td></tr>
     <tr><td>무게</td><td>286g <small>(랩 실측)</small></td><td><strong>308g</strong> <small>(브랜드 표기)</small></td></tr>
     <tr><td>스택(힐/전족)</td><td>37 / 27mm <small>(공식)</small></td><td><strong>43 / 31mm</strong></td></tr>
     <tr><td>드롭</td><td>10mm <small>(공식)</small></td><td>12mm</td></tr>
@@ -1432,7 +1643,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td>토박스</td><td>표준</td><td><strong>좁음</strong></td></tr>
     <tr><td>와이드 옵션</td><td><strong>있음</strong></td><td><strong>없음</strong></td></tr>
     <tr><td>평발 적합성</td><td>양호</td><td>양호</td></tr>
-    <tr><td>km당 비용</td><td><strong>약 282원</strong></td><td>약 465원</td></tr>
+    <tr><td>km당 비용</td><td><strong>약 282원</strong></td><td>약 482원</td></tr>
     <tr><td>대표 용도</td><td>매일 신는 데일리</td><td>장거리·회복주 맥스 쿠션</td></tr>
   </tbody>
 </table>
@@ -1452,11 +1663,11 @@ export const posts_2026_09: BlogPost[] = [
 
 <h2>한국 러너라면 여기서 갈립니다 — 와이드 옵션</h2>
 <p>이 비교에서 가격보다 먼저 봐야 할 항목이 있습니다. <strong>프리미엄은 토박스가 좁은 쪽이고, 와이드 옵션 자체를 팔지 않습니다.</strong> 42는 표준 토박스에 와이드가 나옵니다.</p>
-<p>한국 러너의 발볼이 서구 기준보다 넓은 편이라는 점을 생각하면 이건 작은 차이가 아닙니다. 11만원을 더 냈는데 5km쯤에서 새끼발가락이 눌리기 시작하면, 그 쿠션이 아무리 좋아도 소용이 없습니다. <strong>발볼이 넓다는 자각이 있다면 프리미엄은 후보에서 빼는 편이 낫고</strong>, 그래도 맥스 쿠션을 원한다면 와이드가 나오는 다른 모델을 찾는 쪽이 순서에 맞습니다.</p>
+<p>한국 러너의 발볼이 서구 기준보다 넓은 편이라는 점을 생각하면 이건 작은 차이가 아닙니다. 12만원을 더 냈는데 5km쯤에서 새끼발가락이 눌리기 시작하면, 그 쿠션이 아무리 좋아도 소용이 없습니다. <strong>발볼이 넓다는 자각이 있다면 프리미엄은 후보에서 빼는 편이 낫고</strong>, 그래도 맥스 쿠션을 원한다면 와이드가 나오는 다른 모델을 찾는 쪽이 순서에 맞습니다.</p>
 
 <h2>내게 맞는 건?</h2>
 <ul>
-  <li><strong>첫 러닝화이거나 주력 데일리를 고른다면</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. km당 282원으로 프리미엄의 60% 수준이고, 실패 확률이 낮습니다</li>
+  <li><strong>첫 러닝화이거나 주력 데일리를 고른다면</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. km당 282원으로 프리미엄의 약 58% 수준이고, 실패 확률이 낮습니다</li>
   <li><strong>발볼이 넓거나 와이드를 신어왔다면</strong> → <a href="/shoes/nike-pegasus-42">42</a>가 사실상 유일한 선택입니다. 프리미엄에는 와이드가 없습니다</li>
   <li><strong>무릎·발목이 걱정되고 쿠션을 최우선으로 둔다면</strong> → <a href="/shoes/nike-pegasus-premium">프리미엄</a>. 단 발볼이 좁아야 합니다</li>
   <li><strong>장거리 전용화를 따로 두려는 경우</strong> → 프리미엄을 회복주·LSD에 두고 42를 매일 신는 조합이 무난합니다. 한 켤레만 산다면 42입니다</li>
@@ -1466,7 +1677,7 @@ export const posts_2026_09: BlogPost[] = [
 <h2>자주 묻는 질문</h2>
 <div class="faq">
   <div class="faq-item">
-    <p class="faq-q">Q. 11만원 더 주면 그만큼 빨라지나요?</p>
+    <p class="faq-q">Q. 12만원 더 주면 그만큼 빨라지나요?</p>
     <p class="faq-a">A. 그렇게 보기 어렵습니다. 프리미엄은 42보다 22g 무겁고, 둘 다 카본 플레이트가 없습니다. 쿠션과 반발 점수는 프리미엄이 높지만(10/8 vs 8/7) 이는 충격 흡수와 폼 반발 성향을 나타내는 값이지 기록 단축을 보장하는 수치가 아닙니다. 기록이 목적이라면 같은 값으로 레이싱화를 보는 편이 목적에 맞습니다.</p>
   </div>
   <div class="faq-item">
@@ -1483,13 +1694,13 @@ export const posts_2026_09: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 이 사이트 신발 DB — 한국 공식가 기준(페가수스 42 169,000원 · 페가수스 프리미엄 279,000원). 42의 무게·스택·드롭 실측치는 RunRepeat 랩 데이터(2026-04-25 게시), 프리미엄 수치는 나이키 표기입니다. 이 사이트는 시승이나 자체 랩 테스트를 하지 않습니다. 작성 2026년 9월 16일.</small></p>
+<p><small>출처: 이 사이트 신발 DB — 한국 공식가 기준(페가수스 42 169,000원 · 페가수스 프리미엄 289,000원). 42의 무게·스택·드롭 실측치는 RunRepeat 랩 데이터(2026-04-25 게시), 프리미엄 수치는 나이키 표기입니다. 이 사이트는 시승이나 자체 랩 테스트를 하지 않습니다. 작성 2026년 9월 16일.</small></p>
 `,
     faqs: [
       {
         question: '페가수스 42와 페가수스 프리미엄 중 뭘 사야 하나요?',
         answer:
-          '대부분의 러너에게는 페가수스 42(169,000원)가 맞습니다. km당 비용이 282원으로 프리미엄(465원)의 60% 수준이고, 와이드 옵션이 있어 발볼이 넓어도 대응됩니다. 프리미엄(279,000원)은 쿠션을 최우선으로 두고, 발볼이 좁으며, 11만원을 더 낼 수 있는 경우에만 값을 합니다.',
+          '대부분의 러너에게는 페가수스 42(169,000원)가 맞습니다. km당 비용이 282원으로 프리미엄(482원)의 약 58% 수준이고, 와이드 옵션이 있어 발볼이 넓어도 대응됩니다. 프리미엄(289,000원)은 쿠션을 최우선으로 두고, 발볼이 좁으며, 12만원을 더 낼 수 있는 경우에만 값을 합니다.',
       },
       {
         question: '페가수스 프리미엄은 와이드가 없나요?',
@@ -2589,7 +2800,7 @@ export const posts_2026_09: BlogPost[] = [
   <li><a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a> — 사기 전 자가진단</li>
   <li><a href="/blog/beginner-running-shoes-lineup-tier-guide-2026">입문 러닝화 계급도</a> — 같은 방식으로 만든 입문 가격대 지도</li>
   <li><a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">에보 SL — 카본 없는 슈퍼폼</a> — 플레이트 없이 비슷한 값을 노리는 쪽</li>
-  <li>브랜드별 전체 라인업은 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>, <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>, <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a>, <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>, <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> 계급도에 있습니다.</li>
+  <li>브랜드별 전체 라인업은 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키</a>, <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>, <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">사코니</a>, <a href="/blog/puma-running-shoes-lineup-tier-guide-2026">푸마</a>, <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노</a> 계급도에 있습니다. 11개 브랜드를 한 장에 겹친 표는 <a href="/blog/running-shoes-tier-chart-2026">러닝화 계급도 2026</a>에 있습니다.</li>
 </ul>
 
 <p><small>※ 가격은 2026년 9월 11일 기준 한국 공식몰 정가입니다. 할인·이전 세대 재고에 따라 실구매가는 달라질 수 있습니다. km당 비용은 정가를 아웃솔 마모 기준 추정 수명으로 나눈 값으로, 자체 랩 실측이 아니라 <strong>모델 간 상대 비교용</strong>입니다. 무게는 US 9(남성) 기준 공개 수치입니다. 트레일용 카본화(메타후지 트레일, 울트라플라이, 테크톤 X 3)는 노면이 달라 이 표에서 제외했습니다.</small></p>
@@ -2953,6 +3164,7 @@ export const posts_2026_09: BlogPost[] = [
 <p>브랜드를 이미 정했다면 브랜드별 계급도가 더 깊습니다. 각 브랜드가 라인 이름·번호·폼으로 등급을 어떻게 표시하는지 정리해 뒀습니다.</p>
 
 <ul>
+  <li><a href="/blog/running-shoes-tier-chart-2026"><strong>러닝화 계급도 2026 — 브랜드 11곳 한 장</strong></a> — 아래 11편을 한 표로 겹쳐 본 지도</li>
   <li><a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 계급도</a> — 페가수스·보메로·스트럭처·Fly, 라인으로 읽는 법</li>
   <li><a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 계급도</a> — GEL 클래식 vs FF Blast 신세대</li>
   <li><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026">호카 계급도</a> — 맥스 쿠션과 "X" 접미사</li>
@@ -6987,7 +7199,7 @@ export const posts_2026_09: BlogPost[] = [
   <li><strong>발볼이 넓은 여성</strong> → 보메로 18 와이드(189,000원). 플러스는 여성 와이드가 없습니다</li>
   <li><strong>운용 비용을 최우선</strong> → 보메로 18(km당 291원, 랩 마모 1.1mm)</li>
   <li><strong>발가락으로 밀어 차는 감각을 원한다</strong> → 둘 다 맞지 않습니다. 강성 16~20N의 로커 구조라 <a href="/shoes/nike-pegasus-42">페가수스 42</a>처럼 낮은 스택을 보세요</li>
-  <li><strong>나이키 안에서 한 단계 위를 본다</strong> → <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>(289,000원). 플러스와 7만원 차이인데 회복 조깅 목적이면 그만한 차이가 나지 않는다는 것이 우리 DB의 판단입니다</li>
+  <li><strong>나이키 안에서 한 단계 위를 본다</strong> → <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>(299,000원). 플러스와 8만원 차이인데 회복 조깅 목적이면 그만한 차이가 나지 않는다는 것이 우리 DB의 판단입니다</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>
