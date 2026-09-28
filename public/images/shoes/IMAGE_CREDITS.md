@@ -19,6 +19,18 @@ All product images used in this project are sourced from official brand websites
 | Puma | [puma.com](https://www.puma.com) |
 | Saucony | [saucony.com](https://www.saucony.com) |
 
+## Nike Alphafly 4
+
+- Source: Nike official product page (IU4686-002, https://www.nike.com/t/alphafly-4-mens-road-racing-shoes-lw5UiD4C)
+- Date: 2026-09-28
+- Images: 1 (`side`)
+
+## Adidas Adizero Adios Pro 5
+
+- Source: adidas Korea official product page (KI8294, https://www.adidas.co.kr/%EC%95%84%EB%94%94%EC%A0%9C%EB%A1%9C-%EC%95%84%EB%94%94%EC%98%A4%EC%8A%A4-%ED%94%84%EB%A1%9C-5-%EB%9F%AC%EB%8B%9D%ED%99%94/KI8294.html)
+- Date: 2026-09-28
+- Images: 1 (`side`)
+
 ## Puma Deviate NITRO Elite 4
 
 - Source: PUMA Korea official product page (https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06)

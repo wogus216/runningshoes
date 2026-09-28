@@ -10,6 +10,7 @@ import { shoe as nikeVomeroPremium } from './nike-vomero-premium';
 import { shoe as nikeStructure26 } from './nike-structure-26';
 import { shoe as nikeRivalFly4 } from './nike-rival-fly-4';
 import { shoe as nikeAlphafly3 } from './nike-alphafly-3';
+import { shoe as nikeAlphafly4 } from './nike-alphafly-4';
 import { shoe as nikeZoomFly6 } from './nike-zoom-fly-6';
 import { shoe as nikeVaporfly4 } from './nike-vaporfly-4';
 import { shoe as nikeStreakfly2 } from './nike-streakfly-2';
@@ -29,6 +30,7 @@ export const nikeShoes: Shoe[] = [
   nikeStructure26,
   nikeRivalFly4,
   nikeAlphafly3,
+  nikeAlphafly4,
   nikeZoomFly6,
   nikeVaporfly4,
   nikeStreakfly2,
