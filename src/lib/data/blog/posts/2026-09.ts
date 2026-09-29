@@ -24,7 +24,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '발볼이 넓으면 어느 쪽을 골라야 하나요?',
         answer:
-          '표준 사이즈 토박스 실측은 라이즈 3가 74.5mm(같은 랩 평균 73.2mm), 보메로 18이 69.6mm입니다. 앞발 공간은 라이즈 3가 5mm 더 넉넉합니다. 다만 보메로 18은 한국 공식몰에서 남녀 와이드가 판매되어(2026-09-29 확인) 표준이 좁아도 대응할 수 있고, 라이즈 3의 와이드 옵션 여부는 확인하지 못했습니다.',
+          '표준 사이즈 토박스 실측은 라이즈 3가 74.5mm(같은 랩 평균 73.2mm), 보메로 18이 69.6mm입니다. 앞발 공간은 라이즈 3가 5mm 더 넉넉합니다. 두 신발 모두 한국 공식몰에서 와이드가 판매되어(2026-09-29 확인) 표준이 맞지 않아도 대응할 수 있습니다. 와이드 가격은 라이즈 3가 표준과 같은 159,000원, 보메로 18이 189,000원입니다.',
       },
       {
         question: '뒤꿈치로 착지하는데 어느 쪽이 맞나요?',
@@ -34,7 +34,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '가격 차이 3만원은 값어치가 있나요?',
         answer:
-          '3만원(159,000원 대 189,000원)이 사는 것은 뒤꿈치 스택 7.5mm와 높은 드롭, 와이드 옵션의 선택지입니다. 반대로 라이즈 3는 34g 가볍고 폼이 더 부드러우며 에너지 리턴이 앞발 62.8%로 보메로(58.9%)보다 높게 나왔습니다. 내구성은 갈립니다. 아웃솔 마모는 라이즈 3가 0.8mm로 적지만 뒤꿈치 패딩 내구성은 1/5로 약하고, 보메로 18은 5/5입니다.',
+          '3만원(159,000원 대 189,000원)이 사는 것은 뒤꿈치 스택 7.5mm와 높은 드롭입니다. 반대로 라이즈 3는 34g 가볍고 폼이 더 부드러우며 에너지 리턴이 앞발 62.8%로 보메로(58.9%)보다 높게 나왔습니다. 내구성은 갈립니다. 아웃솔 마모는 라이즈 3가 0.8mm로 적지만 뒤꿈치 패딩 내구성은 1/5로 약하고, 보메로 18은 5/5입니다.',
       },
     ],
     content: `
@@ -43,7 +43,7 @@ export const posts_2026_09: BlogPost[] = [
   <ul>
     <li><strong>159,000원 대 189,000원, 실측 무게 264g 대 298g</strong> — <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>가 3만원 싸고 34g 가볍습니다(같은 랩 RunRepeat 실측). 둘 다 카본 플레이트 없는 쿠션 중심 신발입니다</li>
     <li><strong>쿠션 실측은 생각보다 가깝습니다</strong> — 충격흡수(SA, 높을수록 많이 흡수)가 뒤꿈치 140 대 147, 앞발 112 대 116입니다. 갈리는 건 <a href="/shoes/nike-vomero-18">보메로 18</a>의 뒤꿈치 스택 42.5mm(라이즈 3 35.0mm)와 드롭 13.9mm(라이즈 3 7.8mm)입니다</li>
-    <li><strong>앞발 공간은 라이즈 3가 넓고, 와이드 선택지는 보메로 18이 있습니다</strong> — 표준 토박스가 74.5mm 대 69.6mm이고, 보메로 18은 한국 공식몰에서 남녀 와이드가 팔립니다</li>
+    <li><strong>앞발 공간은 라이즈 3가 5mm 넓고, 와이드는 둘 다 팝니다</strong> — 표준 토박스가 74.5mm 대 69.6mm이고, 한국 공식몰에서 두 신발 모두 와이드 버전이 판매됩니다</li>
   </ul>
 </div>
 
@@ -51,7 +51,7 @@ export const posts_2026_09: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>가격·무게·앞발 공간, 그리고 미드풋 착지라면 슈퍼노바 라이즈 3</strong>, <strong>뒤꿈치 착지에 뒤꿈치 쿠션량이 목적이거나 와이드가 필요하면 보메로 18</strong>입니다. 보메로 18을 다른 맥스쿠션과 비교한 글은 <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">보메로 18 vs 메가블라스트</a>, 라이즈 3의 전작과 비교한 글은 <a href="/blog/adidas-supernova-rise-2-vs-3-comparison">슈퍼노바 라이즈 2 vs 3</a>에 있습니다.</p>
+    <p><strong>가격·무게·앞발 공간, 그리고 미드풋 착지라면 슈퍼노바 라이즈 3</strong>, <strong>뒤꿈치 착지에 뒤꿈치 쿠션량이 목적이면 보메로 18</strong>입니다. 보메로 18을 다른 맥스쿠션과 비교한 글은 <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">보메로 18 vs 메가블라스트</a>, 라이즈 3의 전작과 비교한 글은 <a href="/blog/adidas-supernova-rise-2-vs-3-comparison">슈퍼노바 라이즈 2 vs 3</a>에 있습니다.</p>
   </div>
 </div>
 
@@ -72,19 +72,19 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td>에너지 리턴 (힐/앞발)</td><td>58.8% / <strong>62.8%</strong></td><td>56.9% / 58.9%</td></tr>
     <tr><td>폼 부드러움 (AC, 낮을수록 부드러움)</td><td><strong>28.6</strong></td><td>30.5</td></tr>
     <tr><td>토박스 너비 (표준 사이즈)</td><td><strong>74.5mm</strong></td><td>69.6mm</td></tr>
-    <tr><td>와이드 옵션 (한국 공식몰)</td><td>확인 안 됨</td><td><strong>남녀 모두 판매</strong></td></tr>
+    <tr><td>와이드 옵션 (한국 공식몰)</td><td>판매 (159,000원)</td><td>남녀 모두 판매 (189,000원)</td></tr>
     <tr><td>아웃솔 마모 / 뒤꿈치 패딩 내구성</td><td><strong>0.8mm</strong> / 1점 (5점 만점)</td><td>1.1mm / <strong>5점</strong></td></tr>
     <tr><td>착지 유형 (랩 분류)</td><td>미드·포어풋</td><td>뒤꿈치</td></tr>
   </tbody>
 </table>
 
-<p><small>데이터: RunRepeat 랩 실측(라이즈 3 페이지 2026-08-06 갱신 · 보메로 18 랩 페이지), 한국 정가는 사이트 신발 DB, 와이드는 나이키 코리아 공식몰(2026-09-29 확인). 무게는 브랜드 표기로는 남성 기준 라이즈 3 264g, 보메로 18 325g으로 더 벌어지지만, 랩 실측은 두 신발의 시험 사이즈가 공개되지 않아 표기와 직접 대조하지 않았습니다.</small></p>
+<p><small>데이터: RunRepeat 랩 실측(라이즈 3 페이지 2026-08-06 갱신 · 보메로 18 랩 페이지), 한국 정가는 사이트 신발 DB, 와이드는 아디다스·나이키 코리아 공식몰(2026-09-29 확인). 무게는 브랜드 표기로는 남성 기준 라이즈 3 264g, 보메로 18 325g으로 더 벌어지지만, 랩 실측은 두 신발의 시험 사이즈가 공개되지 않아 표기와 직접 대조하지 않았습니다.</small></p>
 
 <h2>슈퍼노바 라이즈 3 — 3만원 싸고 가볍고 앞발이 넓은 쿠션 데일리</h2>
 
-<p>라이즈 3는 전작 대비 랩 실측 스택이 힐 33.5에서 35.0mm(+1.5mm), 앞발 24.0에서 27.2mm(+3.2mm)로 늘었고, 충격흡수는 힐 127에서 140 SA, 앞발 96에서 112 SA로 올랐습니다. 반대로 에너지 리턴은 앞발이 전작 69.5%에서 62.8%로 떨어졌습니다(RunRepeat). 토박스는 74.5mm로 같은 랩 평균(73.2mm)보다 넓고, RunRepeat는 이 신발의 장점으로 부피가 큰 발에도 여유 있는 핏을 꼽았습니다.</p>
+<p>라이즈 3는 전작 대비 랩 실측 스택이 힐 33.5에서 35.0mm(+1.5mm), 앞발 24.0에서 27.2mm(+3.2mm)로 늘었고, 충격흡수는 힐 127에서 140 SA, 앞발 96에서 112 SA로 올랐습니다. 반대로 뒤꿈치 에너지 리턴은 전작 69.5%에서 58.8%로 떨어졌습니다(RunRepeat). 토박스는 74.5mm로 같은 랩 평균(73.2mm)보다 넓고, RunRepeat는 이 신발의 장점으로 부피가 큰 발에도 여유 있는 핏을 꼽았습니다.</p>
 
-<p>약점은 세 가지입니다. 사이즈가 RunRepeat 집계에서 <strong>"약간 작게 나옴"</strong>(82표)이라 길이가 애매하면 반 사이즈 크게 시착해야 하고, 뒤꿈치 패딩 내구성이 5점 만점에 1점으로 약하며, 한국 공식몰의 와이드 옵션 여부는 확인하지 못했습니다.</p>
+<p>약점은 두 가지입니다. 사이즈가 RunRepeat 집계에서 <strong>"약간 작게 나옴"</strong>(82표)이라 길이가 애매하면 반 사이즈 크게 시착해야 하고(아디다스 한국 안내는 "정사이즈"), 뒤꿈치 패딩 내구성이 5점 만점에 1점으로 약합니다. 한국 공식몰에서는 표준과 같은 159,000원에 와이드 버전도 팝니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 미드풋·포어풋 착지로 편한 페이스의 장거리를 달리는 러너, 예산과 무게를 줄이고 싶은 분, 앞발 공간이 넉넉한 신발을 찾는 분.</p>
 
@@ -107,7 +107,7 @@ export const posts_2026_09: BlogPost[] = [
   <li><strong>뒤꿈치 착지에 쿠션량 최우선</strong> → 보메로 18 (뒤꿈치 스택 42.5mm)</li>
   <li><strong>미드풋·포어풋 착지, 낮은 드롭</strong> → 슈퍼노바 라이즈 3 (드롭 7.8mm)</li>
   <li><strong>앞발 공간이 넉넉해야 한다</strong> → 슈퍼노바 라이즈 3 (토박스 74.5mm)</li>
-  <li><strong>표준이 좁아 와이드가 필요하다</strong> → 보메로 18 와이드 (남녀 모두 판매)</li>
+  <li><strong>표준이 좁아 와이드가 필요하다</strong> → 두 신발 모두 와이드 판매 (라이즈 3 159,000원 · 보메로 18 189,000원)</li>
   <li><strong>다른 대안도 보고 싶다</strong> → <a href="/shoes/hoka-clifton-10">호카 클리프톤 10</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a></li>
 </ul>
 
@@ -115,7 +115,7 @@ export const posts_2026_09: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">이 글이 확인하지 못한 것</p>
-    <p>라이즈 3의 한국 공식몰 와이드 옵션 여부와 두 신발의 랩 시험 사이즈는 확인하지 못했습니다. 내구성은 랩의 아웃솔 마모·패딩 측정치이고, 실제 교체 시점(km)을 뜻하지 않습니다.</p>
+    <p>두 신발의 랩 시험 사이즈는 확인하지 못했습니다. 내구성은 랩의 아웃솔 마모·패딩 측정치이고, 실제 교체 시점(km)을 뜻하지 않습니다.</p>
   </div>
 </div>
 
@@ -123,9 +123,9 @@ export const posts_2026_09: BlogPost[] = [
 
 <div class="faq">
   <div class="faq-item"><p class="faq-q">슈퍼노바 라이즈 3와 보메로 18 중 더 푹신한 건 어느 쪽인가요?</p><p class="faq-a">같은 랩 실측으로는 보메로 18이 조금 앞섭니다. 뒤꿈치 충격흡수가 147 대 140 SA, 앞발이 116 대 112 SA입니다. 폼의 부드러움은 오히려 라이즈 3(28.6 AC)가 보메로 18(30.5 AC)보다 낮게 나왔고, 체감 차이는 뒤꿈치 스택 높이(35.0 대 42.5mm)에서 옵니다.</p></div>
-  <div class="faq-item"><p class="faq-q">발볼이 넓으면 어느 쪽을 골라야 하나요?</p><p class="faq-a">표준 토박스 실측은 라이즈 3가 74.5mm, 보메로 18이 69.6mm로 라이즈 3가 5mm 넉넉합니다. 다만 보메로 18은 한국 공식몰에서 남녀 와이드가 판매되고(2026-09-29 확인), 라이즈 3의 와이드 옵션은 확인하지 못했습니다.</p></div>
+  <div class="faq-item"><p class="faq-q">발볼이 넓으면 어느 쪽을 골라야 하나요?</p><p class="faq-a">표준 토박스 실측은 라이즈 3가 74.5mm, 보메로 18이 69.6mm로 라이즈 3가 5mm 넉넉합니다. 두 신발 모두 한국 공식몰에서 와이드가 판매됩니다(2026-09-29 확인).</p></div>
   <div class="faq-item"><p class="faq-q">뒤꿈치로 착지하는데 어느 쪽이 맞나요?</p><p class="faq-a">같은 랩의 분류로 보메로 18이 뒤꿈치 착지, 라이즈 3가 미드·포어풋 착지 신발입니다. 뒤꿈치 스택과 드롭이 높은 보메로 18이 뒤꿈치 착지에서 쿠션량을 더 씁니다.</p></div>
-  <div class="faq-item"><p class="faq-q">가격 차이 3만원은 값어치가 있나요?</p><p class="faq-a">3만원은 뒤꿈치 스택 7.5mm와 높은 드롭, 와이드 선택지, 5점 만점의 뒤꿈치 패딩 내구성을 사는 값입니다. 라이즈 3는 34g 가볍고 에너지 리턴이 앞발 62.8%로 더 높지만 뒤꿈치 패딩 내구성은 1점으로 약합니다.</p></div>
+  <div class="faq-item"><p class="faq-q">가격 차이 3만원은 값어치가 있나요?</p><p class="faq-a">3만원은 뒤꿈치 스택 7.5mm와 높은 드롭, 5점 만점의 뒤꿈치 패딩 내구성을 사는 값입니다. 라이즈 3는 34g 가볍고 에너지 리턴이 앞발 62.8%로 더 높지만 뒤꿈치 패딩 내구성은 1점으로 약합니다.</p></div>
 </div>
 
 <p><small>출처: RunRepeat 랩 데이터(라이즈 3 · 보메로 18, 무게·스택·드롭·충격흡수·에너지 리턴·폼 부드러움·토박스·내구성·착지 유형) · 사이즈 평가는 RunRepeat 집계(82표) · 사이트 신발 DB(한국 정가) · 나이키 코리아 공식몰(보메로 18 와이드, 2026-09-29 확인). 작성 2026년 9월 29일 · 랩 실측 반영 개정 2026년 9월 29일.</small></p>
@@ -3609,7 +3609,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>, <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>, <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
-    <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
+    <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
   </tbody>
 </table>
 

@@ -3223,7 +3223,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/adidas-supernova-rise-2"><strong>슈퍼노바 라이즈 2</strong></a></td><td>전작 데일리</td><td>Dreamstrike+</td><td>14.9만</td><td>257g</td><td>라이즈 3 이전 세대, 힐스트라이커 친화</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-sl2"><strong>아디제로 SL2</strong></a></td><td>가성비 트레이닝</td><td>Lightstrike Pro + 2.0</td><td>14.9만</td><td>245g</td><td>경량 멀티 트레이너, 아디제로 입문</td></tr>
-    <tr><td><a href="/shoes/adidas-supernova-rise-3"><strong>슈퍼노바 라이즈 3</strong></a></td><td>데일리 쿠션</td><td>Dreamstrike+ (20%↑)</td><td>15.9만</td><td>270g</td><td>현행 슈퍼노바, 쿠션 중심 데일리</td></tr>
+    <tr><td><a href="/shoes/adidas-supernova-rise-3"><strong>슈퍼노바 라이즈 3</strong></a></td><td>데일리 쿠션</td><td>Dreamstrike+ (20%↑)</td><td>15.9만</td><td>264g</td><td>현행 슈퍼노바, 쿠션 중심 데일리</td></tr>
     <tr><td><a href="/shoes/adidas-boston-13"><strong>보스턴 13</strong></a></td><td>슈퍼트레이너</td><td>Lightstrike Pro + 로드 2.0</td><td>17.9만</td><td>254g</td><td>Energy Rods, 훈련+레이스 겸용</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>테렉스 아그라빅 4</strong></a></td><td>올라운드 트레일</td><td>Lightstrike (EVA)</td><td>20.9만</td><td>283g</td><td>Continental 그립 1순위</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>83% 에너지, 가성비 끝판왕</td></tr>
@@ -6081,8 +6081,8 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'adidas-supernova-rise-2-vs-3-comparison',
     slug: 'adidas-supernova-rise-2-vs-3-comparison',
-    title: '아디다스 슈퍼노바 라이즈 2 vs 슈퍼노바 라이즈 3 비교 | "입문화"가 "쿠션화"로 — 스택 +3.5mm·드롭 10→8mm·와이드 옵션 사라진 변화 총정리',
-    description: '슈퍼노바 라이즈 2(149,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 힐 스택 33.5→37mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 와이드 옵션 폐지까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
+    title: '아디다스 슈퍼노바 라이즈 2 vs 슈퍼노바 라이즈 3 비교 | "입문화"가 "쿠션화"로 — 랩 실측 스택 +1.5mm·앞발 +3.2mm·토박스 3.2mm 좁아진 변화 총정리',
+    description: '슈퍼노바 라이즈 2(149,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
     thumbnail: '/images/shoes/adidas/supernovarise3/main.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6093,9 +6093,9 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>"입문화"가 "쿠션화"로 승급</strong> — 라이즈 3는 힐 스택 33.5→37mm, 포어풋 24→29mm로 키우고 Dreamstrike+ 폼을 20% 더 부드럽게 바꿔, 입문 데일리에서 본격 장거리 쿠션화로 성격이 바뀌었습니다.</li>
-    <li>핵심 트레이드오프: <strong>드롭 10→8mm·무게 257→270g(+13g)</strong>. 더 두툼해진 대신 힐스트라이커 입문자 친화도와 경쾌함은 살짝 양보했죠.</li>
-    <li>한국 러너에게 가장 큰 변수는 <strong>와이드 옵션 폐지</strong>. 라이즈 2는 와이드가 있었지만 라이즈 3는 표준만 — 발볼 4E+ 러너라면 이게 결정타입니다.</li>
+    <li><strong>"입문화"가 "쿠션화"로 승급</strong> — 라이즈 3는 랩 실측 힐 스택 33.5→35.0mm, 포어풋 24.0→27.2mm로 키우고 Dreamstrike+ 폼을 20% 더 부드럽게 바꿔, 입문 데일리에서 본격 장거리 쿠션화로 성격이 바뀌었습니다.</li>
+    <li>핵심 트레이드오프: <strong>드롭 10→8mm·무게 257→264g(+7g)</strong>. 더 두툼해진 대신 힐스트라이커 입문자 친화도와 경쾌함은 살짝 양보했죠.</li>
+    <li>한국 러너에게 가장 큰 변수는 <strong>토박스</strong>. 랩 실측이 77.7mm에서 74.5mm로 3.2mm 좁아졌지만 같은 랩 평균(73.2mm)보다는 넓고, 라이즈 3도 한국 공식몰에서 와이드가 판매됩니다(2026-09-29 확인).</li>
   </ul>
 </div>
 
@@ -6103,7 +6103,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🧭</span>
   <div class="callout-body">
     <p class="callout-title">이 글은 "라이즈 2 살까, 3로 갈까"를 정리하는 데일리 트레이너 세대 비교입니다</p>
-    <p>"슈퍼노바 라이즈 3 후기", "라이즈 2 vs 3 차이"를 찾는 분이 많아 두 세대를 한 줄에 세웠습니다. 결론부터 말하면 <strong>같은 이름이지만 카테고리가 달라진 신발</strong>이에요. 라이즈 2는 와이드 옵션을 갖춘 10mm 드롭 입문화, 라이즈 3는 스택을 키워 무릎 보호에 더 특화된 쿠션화입니다. 본 글은 확정 수치(스택·드롭·무게·가격·specs 점수)만으로 비교하고, 발볼·평발·무릎·세일 타이밍별로 어느 세대가 맞는지 매트릭스로 정리했습니다.</p>
+    <p>"슈퍼노바 라이즈 3 후기", "라이즈 2 vs 3 차이"를 찾는 분이 많아 두 세대를 한 줄에 세웠습니다. 결론부터 말하면 <strong>같은 이름이지만 카테고리가 달라진 신발</strong>이에요. 라이즈 2는 토박스가 넓고 드롭이 높은 입문화, 라이즈 3는 스택을 키워 무릎 보호에 더 특화된 쿠션화입니다. 스택·드롭·무게·토박스는 RunRepeat 랩 실측, 가격은 한국 공식몰 정가 기준입니다. 이 글은 처음에 라이즈 3의 와이드가 폐지됐다고 썼지만 2026-09-29 아디다스 한국 공식몰에서 와이드 판매를 확인해 바로잡았습니다. 이 기준으로 비교하고, 발볼·평발·무릎·세일 타이밍별로 어느 세대가 맞는지 매트릭스로 정리했습니다.</p>
   </div>
 </div>
 
@@ -6117,9 +6117,11 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>카테고리</strong></td><td>입문화</td><td><strong>쿠션화</strong></td><td>성격 변화 (입문 → 본격 쿠션)</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>149,000원</td><td><strong>159,000원</strong></td><td>+10,000원</td></tr>
     <tr><td><strong>실구매가 (참고)</strong></td><td>약 135,000원</td><td>약 145,000원</td><td>세일 시 둘 다 더 내려감</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>257g</td><td>270g</td><td>+13g (라이즈 3가 더 묵직)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>33.5mm</td><td><strong>37mm</strong></td><td>+3.5mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>24mm</td><td><strong>29mm</strong></td><td>+5mm (장거리 후반 쿠션 ↑)</td></tr>
+    <tr><td><strong>무게 (랩 실측)</strong></td><td>257g</td><td>264g</td><td>+7g (라이즈 3가 약간 묵직)</td></tr>
+    <tr><td><strong>힐 스택 (랩 실측)</strong></td><td>33.5mm</td><td><strong>35.0mm</strong></td><td>+1.5mm</td></tr>
+    <tr><td><strong>전족부 스택 (랩 실측)</strong></td><td>24.0mm</td><td><strong>27.2mm</strong></td><td>+3.2mm (장거리 후반 쿠션 ↑)</td></tr>
+    <tr><td><strong>충격흡수 (힐/앞발, SA)</strong></td><td>127 / 96</td><td><strong>140 / 112</strong></td><td>높을수록 많이 흡수 (같은 랩 평균 힐 131)</td></tr>
+    <tr><td><strong>뒤꿈치 에너지 리턴</strong></td><td><strong>69.5%</strong></td><td>58.8%</td><td>라이즈 3가 덜 튐 (같은 랩 평균 58.8%)</td></tr>
     <tr><td><strong>드롭</strong></td><td>10mm</td><td><strong>8mm</strong></td><td>-2mm (미드풋 착지 유도)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>Dreamstrike+</td><td><strong>Dreamstrike+ (20% softer/bouncier)</strong></td><td>20% 더 부드럽고 탄력 ↑</td></tr>
     <tr><td><strong>쿠셔닝 점수</strong></td><td>9/10</td><td>9/10</td><td>동일 (체감 부드러움은 3 우위)</td></tr>
@@ -6129,8 +6131,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>km당 비용</strong></td><td>약 265원</td><td>약 260원</td><td>거의 동일</td></tr>
     <tr><td><strong>아웃솔</strong></td><td>Adiwear 러버</td><td><strong>Adiwear 풀 커버리지</strong></td><td>커버리지 확대</td></tr>
     <tr><td><strong>어퍼</strong></td><td>메쉬</td><td><strong>PRIMEWEAVE 소프트 메쉬 + 거셋 텅</strong></td><td>플러시·풋홀드 개선</td></tr>
-    <tr><td><strong>토박스</strong></td><td>넓음 (wide fit)</td><td>표준 (68.4mm)</td><td>기본 핏이 좁아짐</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td><strong>있음 (표준/와이드)</strong></td><td>없음 (표준만)</td><td>발볼 넓은 러너 핵심 변수</td></tr>
+    <tr><td><strong>토박스 (랩 실측)</strong></td><td><strong>77.7mm</strong></td><td>74.5mm</td><td>-3.2mm (둘 다 랩 평균 73.2mm 이상)</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>있음 (표준/와이드)</td><td>있음 (한국 공식몰 159,000원, 2026-09-29 확인)</td><td>둘 다 와이드 선택 가능</td></tr>
   </tbody>
 </table>
 
@@ -6148,10 +6150,10 @@ export const posts_2026_06: BlogPost[] = [
       </thead>
       <tbody>
         <tr><td><strong>겨냥 러너</strong></td><td>첫 하프 준비·쿠션 중시 입문자</td><td>장거리·무릎 보호·25km+ LSD 러너</td></tr>
-        <tr><td><strong>스택·드롭</strong></td><td>33.5/24mm, 10mm 드롭 (힐 착지 친화)</td><td>37/29mm, 8mm 드롭 (미드풋 유도)</td></tr>
-        <tr><td><strong>핏 전략</strong></td><td>넓은 토박스 + 와이드 옵션으로 발볼 커버</td><td>표준 토박스 + PRIMEWEAVE 풋홀드 강화</td></tr>
+        <tr><td><strong>스택·드롭</strong></td><td>33.5/24.0mm, 10mm 드롭 (힐 착지 친화)</td><td>35.0/27.2mm, 8mm 드롭 (미드풋 유도)</td></tr>
+        <tr><td><strong>핏 전략</strong></td><td>넓은 토박스(77.7mm) + 와이드 옵션</td><td>토박스는 좁아졌지만(74.5mm) 와이드 유지 + PRIMEWEAVE 풋홀드 강화</td></tr>
         <tr><td><strong>강점</strong></td><td>가볍고(257g) 입문자 안정성(8/10) ↑</td><td>장거리 후반 쿠션 유지·내구성(650km) ↑</td></tr>
-        <tr><td><strong>약점</strong></td><td>전족부 스택 24mm로 장거리 후반 얇음</td><td>와이드 폐지·무게 +13g·안정성 -1</td></tr>
+        <tr><td><strong>약점</strong></td><td>전족부 스택 24mm로 장거리 후반 얇음</td><td>뒤꿈치 에너지 리턴 하락(69.5→58.8%)·무게 +7g·안정성 -1</td></tr>
       </tbody>
     </table>
   </div>
@@ -6162,19 +6164,19 @@ export const posts_2026_06: BlogPost[] = [
 <h2>5가지 핵심 변화 점검</h2>
 
 <h3>1. 카테고리 승급 — 입문화 → 쿠션화 ✅ 가장 큰 변화</h3>
-<p>스택을 힐 +3.5mm, 포어풋 +5mm 키운 게 결정적입니다. 라이즈 2의 전족부 24mm는 장거리 후반에 얇게 느껴질 수 있는데, 라이즈 3는 29mm로 키워 <strong>25km 이후에도 쿠션이 살아있는 설계</strong>로 바뀌었어요.</p>
+<p>랩 실측 스택을 힐 +1.5mm, 포어풋 +3.2mm 키운 게 결정적입니다. 라이즈 2의 전족부 24.0mm는 장거리 후반에 얇게 느껴질 수 있는데, 라이즈 3는 27.2mm로 키우고 앞발 충격흡수도 96에서 112 SA로 올려 <strong>25km 이후에도 쿠션이 살아있는 설계</strong>로 바뀌었어요.</p>
 
 <h3>2. Dreamstrike+ 20% 부드러움·탄력 ✅ 체감 쿠션 개선</h3>
-<p>쿠셔닝 점수는 둘 다 9/10이지만, 라이즈 3의 Dreamstrike+는 <strong>20% 더 부드럽고 탄력 있게(softer/bouncier)</strong> 재배합됐습니다. 점수가 같아도 실제 발에 닿는 부드러움은 라이즈 3가 한 수 위라는 의미죠. 데일리 조깅에서 "통통 튀는" 느낌을 원한다면 라이즈 3 쪽입니다.</p>
+<p>쿠셔닝 점수는 둘 다 9/10이지만, 라이즈 3의 Dreamstrike+는 <strong>20% 더 부드럽고 탄력 있게(softer/bouncier)</strong> 재배합됐습니다. 점수가 같아도 실제 발에 닿는 부드러움은 라이즈 3가 한 수 위라는 의미죠. 다만 같은 랩 기준 뒤꿈치 에너지 리턴은 라이즈 2가 69.5%, 라이즈 3가 58.8%라 "통통 튀는" 반발은 오히려 라이즈 2가 앞섭니다. 라이즈 3의 장점은 튀는 느낌이 아니라 부드러움과 충격흡수(힐 127→140 SA)입니다.</p>
 
 <h3>3. 드롭 10mm → 8mm ⚠️ 착지 패턴 변화</h3>
 <p>2mm 줄어든 드롭은 양날의 검입니다. 8mm로 낮아지면서 <strong>미드풋 착지를 유도</strong>하고 아킬레스 부담은 약간 줄지만, 라이즈 2의 10mm에 익숙한 뒤꿈치 착지 입문자라면 종아리·아킬레스 적응 기간이 필요할 수 있어요. 힐스트라이커 입문자에게는 오히려 라이즈 2의 10mm가 더 편할 수 있습니다.</p>
 
-<h3>4. 무게 257g → 270g (+13g) ⚠️ 약간 묵직해짐</h3>
-<p>스택을 키운 대가로 13g 무거워졌습니다. 둘 다 빠른 페이스용은 아니지만(반응성 7/10), <strong>가벼움 우선이라면 라이즈 2</strong>가 유리합니다. 다만 270g도 쿠션화 카테고리에서는 표준 범위라 LSD·데일리에서는 무게가 크게 거슬리진 않습니다.</p>
+<h3>4. 무게 257g → 264g (+7g) ⚠️ 약간 묵직해짐</h3>
+<p>스택을 키운 대가로 7g 무거워졌습니다. 둘 다 빠른 페이스용은 아니지만(반응성 7/10), <strong>가벼움 우선이라면 라이즈 2</strong>가 유리합니다. 다만 264g도 쿠션화 카테고리에서는 표준 범위라 LSD·데일리에서는 무게가 크게 거슬리진 않습니다.</p>
 
-<h3>5. 와이드 옵션 폐지 ⚠️ 발볼 넓은 한국 러너 핵심 주의</h3>
-<p>라이즈 2는 <strong>표준/와이드 2종</strong>을 제공했지만, 라이즈 3는 표준만 나옵니다. 라이즈 3의 토박스 자체는 68.4mm로 좁지 않은 편이라 표준~약간 넓은 발은 커버되지만, <strong>중족부 핏이 좁아</strong> 발볼 4E+ 러너는 끈을 헐겁게 매야 하는 경우가 생겨요. 발볼이 확실히 넓다면 와이드가 있는 라이즈 2가 안전합니다.</p>
+<h3>5. 토박스 3.2mm 좁아짐, 와이드는 유지 ⚠️ 발볼 넓은 한국 러너 확인 포인트</h3>
+<p>랩 실측 토박스는 라이즈 2 77.7mm에서 라이즈 3 74.5mm로 <strong>3.2mm 좁아졌습니다</strong>. 그래도 같은 랩 평균(73.2mm)보다는 넓고, 두 세대 모두 <strong>표준/와이드 2종</strong>이 있습니다. 아디다스 한국 공식몰에서 라이즈 3 와이드는 표준과 같은 159,000원에 판매됩니다(2026-09-29 확인). 발볼이 확실히 넓다면 라이즈 3 와이드나 토박스가 더 넓은 라이즈 2를 매장에서 먼저 신어 보세요. 사이즈는 RunRepeat 집계에서 "약간 작게"(82표)로 나오는 반면 아디다스 한국 안내는 "정사이즈"라 길이는 시착으로 확인하는 편이 안전합니다.</p>
 
 <h2>상황별 구매 결정 매트릭스</h2>
 
@@ -6183,10 +6185,10 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
   </thead>
   <tbody>
-    <tr><td>발볼 4E+ (와이드 필수)</td><td><strong>라이즈 2 (와이드)</strong></td><td>라이즈 3는 와이드 옵션 없음</td></tr>
-    <tr><td>25km+ LSD·풀 준비 + 후반 쿠션 우선</td><td><strong>라이즈 3</strong></td><td>전족부 29mm·Dreamstrike+ 20% 업그레이드</td></tr>
+    <tr><td>발볼 4E+ (와이드 필수)</td><td><strong>라이즈 2 또는 라이즈 3 와이드</strong></td><td>둘 다 와이드 판매, 토박스는 라이즈 2가 3.2mm 더 넓음</td></tr>
+    <tr><td>25km+ LSD·풀 준비 + 후반 쿠션 우선</td><td><strong>라이즈 3</strong></td><td>전족부 27.2mm(랩)·Dreamstrike+ 20% 업그레이드</td></tr>
     <tr><td>첫 하프 준비 입문자 (힐 착지)</td><td><strong>라이즈 2</strong></td><td>10mm 드롭·가벼운 257g·입문 친화</td></tr>
-    <tr><td>무릎 통증·관절 보호 최우선</td><td><strong>라이즈 3</strong></td><td>37mm 힐 스택·excellent 등급</td></tr>
+    <tr><td>무릎 통증·관절 보호 최우선</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·충격흡수 140 SA·excellent 등급</td></tr>
     <tr><td>가벼운 과내전 (약한 안정성 필요)</td><td><strong>라이즈 2</strong></td><td>안정성 8/10 (3은 7/10·완전 중립용)</td></tr>
     <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 1만원 저렴</td></tr>
     <tr><td>부드러운 "통통 튀는" 데일리 우선</td><td><strong>라이즈 3</strong></td><td>Dreamstrike+ 20% softer/bouncier</td></tr>
@@ -6205,7 +6207,7 @@ export const posts_2026_06: BlogPost[] = [
       <li><strong>MSRP 차이는 1만원(149,000 vs 159,000원).</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
       <li><strong>라이즈 2는 후속작 출시로 세일 진입.</strong> 네이버·공식몰에서 13만원대, 시즌 오프엔 더 내려가는 경우가 많아 입문·표준 발볼이라면 가성비 메리트가 큽니다.</li>
       <li><strong>라이즈 3는 현행 모델.</strong> 정가~약 145,000원 실구매가 선에서 형성되며, 세일 폭은 라이즈 2보다 작습니다. 후반 쿠션·내구성을 산다는 관점이면 충분히 합리적.</li>
-      <li><strong>발볼 4E+면 가격보다 와이드 유무가 우선.</strong> 라이즈 2 와이드 재고가 빠지기 전에 본인 사이즈를 확보하는 게 안전합니다.</li>
+      <li><strong>발볼이 넓다면 가격 차(1만원)보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
     </ul>
   </div>
 </div>
@@ -6219,7 +6221,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
   </thead>
   <tbody>
-    <tr><td>무릎 통증 (러너스 니·장경인대염)</td><td><strong>라이즈 3</strong></td><td>37mm 힐 스택·kneeIssues excellent</td></tr>
+    <tr><td>무릎 통증 (러너스 니·장경인대염)</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·kneeIssues excellent</td></tr>
     <tr><td>아킬레스건염 이력</td><td><strong>라이즈 3</strong></td><td>드롭 10→8mm·achilles excellent</td></tr>
     <tr><td>족저근막염</td><td>라이즈 2 = 3</td><td>둘 다 plantarFasciitis excellent</td></tr>
     <tr><td>정강이 부목 (Shin Splints)</td><td>라이즈 2 = 3</td><td>둘 다 shinSplints excellent</td></tr>
@@ -6236,7 +6238,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>라이즈 2/3 외에 같은 장거리 쿠션 영역에서 검토할 만한 옵션입니다.</p>
 
 <ul>
-  <li><a href="/shoes/adidas-supernova-rise-3">아디다스 슈퍼노바 라이즈 3</a> — 37mm 스택·Dreamstrike+ 20% 업그레이드, 무릎 보호 쿠션화</li>
+  <li><a href="/shoes/adidas-supernova-rise-3">아디다스 슈퍼노바 라이즈 3</a> — 랩 실측 힐 35mm·Dreamstrike+ 20% 업그레이드, 무릎 보호 쿠션화</li>
   <li><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a> — 와이드 옵션·10mm 드롭, 발볼 넓은 입문자 1순위</li>
   <li><a href="/shoes/hoka-clifton-10">호카 클리프톤 10</a> — 225g 경량 맥시멀 쿠션. 라이즈보다 가볍지만 약 2만원 비쌈</li>
   <li><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a> — FF BLAST MAX·통통 튀는 쿠션, 데일리~템포 겸용</li>
@@ -6246,16 +6248,16 @@ export const posts_2026_06: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. 라이즈 2 → 라이즈 3 업그레이드 가치 있나요?</h3>
-<p>라이즈 2가 500km 이내로 멀쩡하다면 굳이 갈 필요 없습니다. 다만 <strong>30km 이후 발바닥이 뻐근했던 분</strong>이라면 라이즈 3의 전족부 +5mm·Dreamstrike+ 20% 업그레이드가 후반 쿠션을 확실히 채워줘 체감 차이가 큽니다. 반대로 가벼움·10mm 드롭·와이드가 좋았다면 라이즈 2를 더 사두는 게 나을 수 있어요.</p>
+<p>라이즈 2가 500km 이내로 멀쩡하다면 굳이 갈 필요 없습니다. 다만 <strong>30km 이후 발바닥이 뻐근했던 분</strong>이라면 라이즈 3의 전족부 +3.2mm(랩 실측)·앞발 충격흡수 96→112 SA가 후반 쿠션을 확실히 채워줘 체감 차이가 큽니다. 반대로 가벼움·10mm 드롭·와이드가 좋았다면 라이즈 2를 더 사두는 게 나을 수 있어요.</p>
 
 <h3>Q. 발볼이 넓은데 라이즈 3 표준으로 괜찮을까요?</h3>
-<p>라이즈 3 토박스는 68.4mm로 좁은 편은 아니라 <strong>표준~약간 넓은 발은 커버</strong>됩니다. 다만 중족부 핏이 좁아 발볼 4E 이상이면 끈을 헐겁게 매야 하는 경우가 생겨요. 확실히 넓다면 와이드가 있는 라이즈 2가 안전합니다. 매장 착화로 중족부 압박을 꼭 확인하세요.</p>
+<p>라이즈 3 토박스는 랩 실측 74.5mm로 같은 랩 평균(73.2mm)보다 넓어 <strong>표준~약간 넓은 발은 커버</strong>됩니다. 확실히 넓다면 한국 공식몰에서 파는 와이드 버전(159,000원)을 고르세요. 라이즈 2(랩 77.7mm)가 3.2mm 더 넓긴 합니다. 매장 착화로 압박 부위를 꼭 확인하세요.</p>
 
 <h3>Q. 초보 입문자에게는 어느 쪽이 나을까요?</h3>
 <p>힐로 착지하는 입문자라면 <strong>10mm 드롭·257g의 라이즈 2</strong>가 더 친화적입니다. 안정성도 8/10으로 약간 높아 흔들림이 덜하죠. 라이즈 3는 8mm 드롭·미드풋 유도라 입문보다는 어느 정도 거리를 뛰는 데일리·장거리 러너에게 더 맞습니다.</p>
 
 <h3>Q. 둘 다 풀코스 가능한가요?</h3>
-<p>가능합니다. 다만 페이스에 따라 다릅니다. <strong>Sub-4~Sub-5 완주 + 무릎/쿠션 우선이라면 라이즈 3</strong>가 후반 쿠션에서 유리하고, 입문자가 첫 하프~풀을 무리 없이 완주하는 용도라면 라이즈 2도 충분합니다. Sub-3:30 이하 빠른 레이스는 둘 다 무게(257~270g)·반응성(7/10) 한계로 카본 슈즈 분리를 권합니다.</p>
+<p>가능합니다. 다만 페이스에 따라 다릅니다. <strong>Sub-4~Sub-5 완주 + 무릎/쿠션 우선이라면 라이즈 3</strong>가 후반 쿠션에서 유리하고, 입문자가 첫 하프~풀을 무리 없이 완주하는 용도라면 라이즈 2도 충분합니다. Sub-3:30 이하 빠른 레이스는 둘 다 무게(257~264g)·반응성(7/10) 한계로 카본 슈즈 분리를 권합니다.</p>
 
 <h3>Q. 평발인데 둘 중 하나 신어도 되나요?</h3>
 <p>가벼운 평발이라면 둘 다 flatFootCompatibility good이라 두꺼운 쿠션으로 충격을 흡수해줍니다. 다만 <strong>아치 지지력 자체는 안정화(GT-2000 등)보다 약합니다</strong>. 과내전이 심하다면 라이즈가 아니라 안정화로 가야 해요. 본인 프로네이션이 헷갈리면 <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a>를 먼저 확인하세요.</p>
@@ -6267,7 +6269,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">발볼과 목적이 갈림길입니다</p>
     <p><strong>발볼 넓음·입문·가성비·가벼움 우선</strong>이라면 <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>입니다. 와이드 옵션·10mm 드롭·257g·안정성 8/10이 입문 한국 러너에게 더 안전하고, 후속작 출시로 세일가 13만원대 메리트까지 있죠. 단 와이드 재고는 먼저 빠지니 본인 사이즈를 일찍 확보하세요.</p>
-    <p><strong>완전 중립발·장거리/무릎 보호·후반 쿠션 우선</strong>이라면 <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>입니다. 37mm 스택·전족부 29mm·Dreamstrike+ 20% 업그레이드·650km 내구성으로 25km+ LSD와 무릎 보호 데일리에 강합니다. 와이드가 없다는 점만 발볼로 걸러내면 됩니다.</p>
+    <p><strong>완전 중립발·장거리/무릎 보호·후반 쿠션 우선</strong>이라면 <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>입니다. 랩 실측 힐 35.0mm·전족부 27.2mm·Dreamstrike+ 20% 업그레이드·650km(추정) 내구성으로 25km+ LSD와 무릎 보호 데일리에 강합니다. 발볼이 넓다면 와이드 버전을 고르면 됩니다.</p>
     <p><strong>둘 다 처음</strong>이라면 매장에서 동시 착화가 정답입니다. 드롭(10 vs 8mm)과 중족부 핏 차이가 발에서 바로 갈리거든요. 본인 발이 어느 쪽에 편한지 5분만 걸어보면 답이 나옵니다.</p>
   </div>
 </div>
