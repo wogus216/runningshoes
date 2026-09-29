@@ -270,7 +270,7 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
   };
   if (shoe.koreanFootFit?.toBoxWidth) {
     const widthLabel = widthMap[shoe.koreanFootFit.toBoxWidth] || shoe.koreanFootFit.toBoxWidth;
-    const wideOpt = shoe.koreanFootFit.wideOptions ? ' 와이드(2E·4E) 옵션이 정식 출시되어 발볼 넓은 한국 러너도 안심하고 선택할 수 있습니다.' : ' 와이드 옵션이 없어 발볼 매우 넓은 러너는 사이즈 +0.5를 권장하거나 다른 와이드 옵션 모델을 고려하세요.';
+    const wideOpt = shoe.koreanFootFit.wideOptions ? ' 와이드 옵션이 있어 발볼 넓은 한국 러너도 선택지가 있습니다(와이드 폭·판매 성별은 모델마다 달라 상세 스펙에서 확인하세요).' : ' 와이드 옵션이 없어 발볼 매우 넓은 러너는 사이즈 +0.5를 권장하거나 다른 와이드 옵션 모델을 고려하세요.';
     faqItems.push({
       q: `${shoe.brand} ${shoe.name}이 발볼 넓은 한국 러너에게 맞나요?`,
       a: `토박스 너비가 ${widthLabel} 등급으로 분류됩니다.${wideOpt}`,

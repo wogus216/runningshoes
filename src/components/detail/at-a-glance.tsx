@@ -45,7 +45,7 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
   if (recommended) {
     const widthPart =
       width && width !== 'standard'
-        ? ` 토박스는 ${widthLabel[width]} 등급으로, 발볼 넓은 러너는 ${wideOpt ? '와이드 옵션(2E·X-와이드)을 권장' : '사이즈 +0.5 또는 다른 와이드 모델을 검토'}하세요.`
+        ? ` 토박스는 ${widthLabel[width]} 등급으로, 발볼 넓은 러너는 ${wideOpt ? '와이드 옵션을 권장' : '사이즈 +0.5 또는 다른 와이드 모델을 검토'}하세요.`
         : wideOpt
           ? ' 와이드 옵션이 정식 출시되어 발볼 넓은 한국 러너도 선택폭이 있습니다.'
           : '';
