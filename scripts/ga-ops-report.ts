@@ -6,6 +6,14 @@
  *
  * purchase_link_click과 자동 click은 같은 사용자 행동을 중복 측정하므로 합산하지 않는다.
  * 구매처 집계는 click의 pagePath+linkUrl을 현재 신발 DB/블로그 CTA와 대조한다.
+ * 링크를 교체한 뒤에도 옛 URL 클릭이 빠지지 않도록 신발·블로그 페이지 모두 제휴 호스트(naver.me·쿠팡)는 폴백으로 센다.
+ *
+ * 측정 보정 (2026-09-29):
+ * - GA4는 처리에 24~48시간이 걸린다. 창 끝날(어제)의 참여 세션 비율이 20% 미만이면 미처리로 보고
+ *   현재·비교 창 양쪽에서 같은 위치의 날을 빼 같은 일수로 비교한다(9/28 참여 1.6%가 7일 창을 오염시킨 사례).
+ * - GSC는 `/blog/x#heading-N` 앵커 행을 기본 URL과 합치면 CTR이 왜곡된다(카야노 33, 8/29~9/26: 합산 1.41% vs 기본 4.15%).
+ *   CTR·순위·후보 판정은 `#` 없는 기본 URL 행만 쓰고, 앵커 노출은 별도로 표기한다.
+ * - GSC 창은 정확히 N일(종료일 = 오늘−3일, 시작일 = 종료일−(N−1)일).
  */
 import { BetaAnalyticsDataClient, type protos } from '@google-analytics/data';
 import { JWT } from 'google-auth-library';
@@ -16,7 +24,8 @@ import { resolveKeyFile } from './lib/google-auth';
 type Row = protos.google.analytics.data.v1beta.IRow;
 type PurchaseTarget = { type: 'shoe' | 'apparel'; name: string; store: string };
 type SearchPageRow = { keys: string[]; clicks: number; impressions: number; ctr: number; position: number };
-type SearchPage = { clicks: number; impressions: number; weightedPosition: number };
+type SearchPage = { clicks: number; impressions: number; weightedPosition: number; anchorClicks: number; anchorImpressions: number };
+type DateRange = { startDate: string; endDate: string };
 
 const days = Number(process.argv[2] ?? 28);
 if (!Number.isInteger(days) || days < 1 || days > 90) {
@@ -26,18 +35,28 @@ if (!Number.isInteger(days) || days < 1 || days > 90) {
 
 const client = new BetaAnalyticsDataClient({ keyFilename: resolveKeyFile() });
 const property = `properties/${process.env.GA_PROPERTY_ID || '523714985'}`;
-const current = { startDate: `${days}daysAgo`, endDate: 'yesterday' };
-const previous = { startDate: `${days * 2}daysAgo`, endDate: `${days + 1}daysAgo` };
+// 창 끝에서 미처리로 판정해 뺀 날 수(trim)만큼 현재·비교 창의 끝을 똑같이 당긴다. trim=0이면 기존 창 그대로.
+const windows = (trim: number) => ({
+  current: { startDate: `${days}daysAgo`, endDate: trim ? `${1 + trim}daysAgo` : 'yesterday' },
+  previous: { startDate: `${days * 2}daysAgo`, endDate: `${days + 1 + trim}daysAgo` },
+});
+const INCOMPLETE_ENGAGED_RATIO = 0.2; // 8/1~9/27 일별 최저 59.1%, 미처리였던 9/28은 1.6%
+const MAX_TRIM_DAYS = 2; // 공식 처리 지연 24~48시간
 const value = (row: Row, i: number) => row.dimensionValues?.[i]?.value ?? '';
 const metric = (row: Row, i: number) => Number(row.metricValues?.[i]?.value ?? 0);
 const number = (n: number) => Math.round(n).toLocaleString('ko-KR');
 const change = (now: number, before: number) => before ? `${now >= before ? '+' : ''}${((now / before - 1) * 100).toFixed(1)}%` : '비교 불가';
 const perHundred = (clicks: number, views: number) => views ? (clicks / views * 100).toFixed(1) : '-';
 const kst = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(date);
-const periodEnd = new Date(Date.now() - 86400_000);
-const periodStart = new Date(Date.now() - days * 86400_000);
-const searchEnd = new Date(Date.now() - 3 * 86400_000);
-const searchStart = new Date(searchEnd.getTime() - days * 86400_000);
+const daysAgo = (n: number) => new Date(Date.now() - n * 86400_000);
+const periodStart = daysAgo(days);
+const searchEnd = daysAgo(3);
+const searchStart = new Date(searchEnd.getTime() - (days - 1) * 86400_000); // 양끝 포함 정확히 N일
+// GA 'date' 값(YYYYMMDD)에서 n일 전 날짜를 YYYY-MM-DD로 — 시간대 변환 없이 달력 계산만 한다.
+const shiftDate = (yyyymmdd: string, n: number) => {
+  const d = new Date(Date.UTC(+yyyymmdd.slice(0, 4), +yyyymmdd.slice(4, 6) - 1, +yyyymmdd.slice(6, 8) - n));
+  return d.toISOString().slice(0, 10);
+};
 
 function normalizedUrl(raw: string): string | null {
   try {
@@ -58,6 +77,7 @@ function affiliateStore(raw: string): string | null {
 function purchaseCatalog() {
   const targets = new Map<string, Map<string, PurchaseTarget>>();
   const shoes = new Map<string, ReturnType<typeof getShoes>[number]>();
+  const blogs = new Set<string>();
   const add = (path: string, raw: string, target: PurchaseTarget) => {
     const url = normalizedUrl(raw);
     if (!url) return;
@@ -76,6 +96,7 @@ function purchaseCatalog() {
 
   // 기존 affiliate-btn와 앞으로 글에 넣을 data-purchase-link를 모두 같은 목록에 넣는다.
   for (const post of blogPosts) {
+    blogs.add(`/blog/${post.slug}`);
     for (const match of Array.from(post.content.matchAll(/<a\b([^>]*)>([\s\S]*?)<\/a>/gi))) {
       const attrs = match[1];
       if (!/\baffiliate-btn\b|\bdata-purchase-link\b/.test(attrs)) continue;
@@ -91,10 +112,10 @@ function purchaseCatalog() {
       add(`/blog/${post.slug}`, href, { type, name, store });
     }
   }
-  return { targets, shoes };
+  return { targets, shoes, blogs };
 }
 
-async function report(dateRange: typeof current, dimensions: string[], metrics: string[], eventName?: string) {
+async function report(dateRange: DateRange, dimensions: string[], metrics: string[], eventName?: string) {
   const [response] = await client.runReport({
     property,
     dateRanges: [dateRange],
@@ -105,6 +126,28 @@ async function report(dateRange: typeof current, dimensions: string[], metrics: 
   });
   if ((response.rowCount ?? 0) > 10000) throw new Error(`${dimensions.join('+')} 보고서가 10,000행을 초과했습니다. 부분 집계로 보고하지 않습니다.`);
   return response.rows ?? [];
+}
+
+/**
+ * 창 끝(어제부터 거꾸로)에서 GA4 일일 처리가 끝나지 않은 것으로 보이는 날.
+ * 참여 세션 비율 20% 미만(또는 세션 0)이면 미처리로 본다. 처리된 날이 나오면 멈춘다.
+ * 하루씩 따로 조회해 날짜 문자열은 GA가 준 값(속성 시간대)을 그대로 쓴다.
+ */
+async function incompleteTrailingDays() {
+  const checks = await Promise.all(Array.from({ length: MAX_TRIM_DAYS }, async (_, i) => {
+    const n = i + 1;
+    const [row] = await report({ startDate: `${n}daysAgo`, endDate: `${n}daysAgo` }, ['date'], ['sessions', 'engagedSessions']);
+    const sessions = row ? metric(row, 0) : 0;
+    const engaged = row ? metric(row, 1) : 0;
+    const date = row ? value(row, 0) : kst(daysAgo(n)).replace(/-/g, '');
+    return { date, sessions, engaged, ratio: sessions ? engaged / sessions : 0 };
+  }));
+  const flagged: typeof checks = [];
+  for (const day of checks) {
+    if (day.sessions && day.ratio >= INCOMPLETE_ENGAGED_RATIO) break;
+    flagged.push(day);
+  }
+  return flagged;
 }
 
 function searchPath(raw: string): string {
@@ -147,10 +190,16 @@ async function searchConsolePages(): Promise<Map<string, SearchPage>> {
   const pages = new Map<string, SearchPage>();
   for (const row of rows) {
     const path = searchPath(row.keys[0]);
-    const page = pages.get(path) ?? { clicks: 0, impressions: 0, weightedPosition: 0 };
-    page.clicks += row.clicks;
-    page.impressions += row.impressions;
-    page.weightedPosition += row.position * row.impressions;
+    const page = pages.get(path) ?? { clicks: 0, impressions: 0, weightedPosition: 0, anchorClicks: 0, anchorImpressions: 0 };
+    if (row.keys[0].includes('#')) {
+      // `#heading-N` 앵커 행은 합치면 CTR·순위가 왜곡된다(파일 머리 주석 참고) — 참고용으로만 따로 센다.
+      page.anchorClicks += row.clicks;
+      page.anchorImpressions += row.impressions;
+    } else {
+      page.clicks += row.clicks;
+      page.impressions += row.impressions;
+      page.weightedPosition += row.position * row.impressions;
+    }
     pages.set(path, page);
   }
   return pages;
@@ -177,30 +226,41 @@ function purchaseClicks(rows: Row[], catalog: ReturnType<typeof purchaseCatalog>
   const byStore = new Map<string, number>();
   const byType = new Map<string, number>();
   let unmatchedShoe = 0;
+  let blogFallback = 0;
   for (const row of rows) {
     const page = value(row, 0).replace(/\/$/, '') || '/';
     const url = normalizedUrl(value(row, 1));
     if (!url) continue;
     const target = catalog.targets.get(page)?.get(url);
     const shoe = catalog.shoes.get(page);
-    // 링크가 교체된 과거 신발 기록도 제휴 단축 링크라면 놓치지 않는다.
-    const fallbackStore = shoe ? affiliateStore(url) : null;
+    // 링크가 교체된 과거 기록도 제휴 단축 링크라면 놓치지 않는다 — 신발·블로그 모두.
+    // (블로그는 2026-09-29 추가: 페가 41 vs 42 글 CTA를 바꾸자 옛 URL 클릭이 집계에서 빠졌다.)
+    // 한 행은 target 또는 폴백 중 하나로만 세고, /shoes/와 /blog/ 경로는 겹치지 않아 중복 집계가 없다.
+    const fallbackStore = shoe || catalog.blogs.has(page) ? affiliateStore(url) : null;
     if (!target && !fallbackStore) {
       if (shoe) unmatchedShoe += metric(row, 0);
       continue;
     }
     const clicks = metric(row, 0);
     const store = target?.store ?? fallbackStore!;
-    const type = target?.type ?? 'shoe';
+    // 블로그 폴백은 상품 유형을 알 수 없다 — 그 글의 현재 CTA가 전부 의류일 때만 의류로 본다.
+    const pageTargets = Array.from(catalog.targets.get(page)?.values() ?? []);
+    const type = target?.type ?? (!shoe && pageTargets.length && pageTargets.every((t) => t.type === 'apparel') ? 'apparel' : 'shoe');
+    if (!target && !shoe) blogFallback += clicks;
     byPage.set(page, (byPage.get(page) ?? 0) + clicks);
     byStore.set(store, (byStore.get(store) ?? 0) + clicks);
     byType.set(type, (byType.get(type) ?? 0) + clicks);
   }
-  return { byPage, byStore, byType, unmatchedShoe, total: Array.from(byPage.values()).reduce((a, b) => a + b, 0) };
+  return { byPage, byStore, byType, unmatchedShoe, blogFallback, total: Array.from(byPage.values()).reduce((a, b) => a + b, 0) };
 }
 
 async function main() {
   const catalog = purchaseCatalog();
+  const incomplete = await incompleteTrailingDays();
+  const trim = Math.min(incomplete.length, days - 1); // 창은 최소 1일 남긴다
+  const { current, previous } = windows(trim);
+  const effectiveDays = days - trim;
+  const periodEnd = daysAgo(1 + trim);
   const [tot, oldTot, sources, pageRaw, oldViewsRaw, landingRaw, oldLandingRaw, clicksRaw, oldClicksRaw, eventRaw, metadata] = await Promise.all([
     report(current, [], ['sessions', 'screenPageViews', 'engagementRate']),
     report(previous, [], ['sessions', 'screenPageViews', 'engagementRate']),
@@ -229,8 +289,22 @@ async function main() {
   const wanted = ['product_type', 'product_name', 'brand', 'store', 'affiliate_type', 'button_position', 'apparel_category'];
   const registered = wanted.filter((name) => dimensions.has(`customEvent:${name}`));
 
-  console.log(`\n📊 GA4 운영 리포트 · ${kst(periodStart)} ~ ${kst(periodEnd)} (${days}일, 오늘 제외)`);
-  console.log(`기준: ${property} · 직전 ${days}일과 비교 · 구매 완료/수익 아님\n`);
+  const trimNote = trim ? ` · 미처리 ${trim}일 제외` : '';
+  console.log(`\n📊 GA4 운영 리포트 · ${kst(periodStart)} ~ ${kst(periodEnd)} (${effectiveDays}일, 오늘 제외${trimNote})`);
+  console.log(`기준: ${property} · 직전 ${effectiveDays}일과 비교 · 구매 완료/수익 아님`);
+  const excludedCurrent = incomplete.slice(0, trim).map((d) => shiftDate(d.date, 0));
+  const excludedPrevious = incomplete.slice(0, trim).map((d) => shiftDate(d.date, days));
+  for (const day of incomplete) {
+    const detail = day.sessions ? `참여 세션 ${number(day.engaged)}/${number(day.sessions)} (${(day.ratio * 100).toFixed(1)}%)` : '세션 0';
+    console.log(`⚠️  GA4 처리 전으로 보이는 날: ${shiftDate(day.date, 0)} ${detail} — 참여 비율 ${INCOMPLETE_ENGAGED_RATIO * 100}% 미만`);
+  }
+  if (trim) {
+    console.log(`   → 현재 창에서 ${excludedCurrent.join(', ')}, 같은 규칙(창 끝 ${trim}일)으로 비교 창에서 ${excludedPrevious.join(', ')} 제외 — 양쪽 ${effectiveDays}일씩 비교`);
+  }
+  if (incomplete.length > trim) {
+    console.log(`   → 창을 최소 1일 남기느라 ${incomplete.slice(trim).map((d) => shiftDate(d.date, 0)).join(', ')}는 제외하지 못함. 이 결과는 판단에 쓰지 말고 1~2일 뒤 다시 실행할 것.`);
+  }
+  console.log('');
   console.log(`세션 ${number(metric(now, 0))} (${change(metric(now, 0), metric(before, 0))}) · 조회 ${number(metric(now, 1))} (${change(metric(now, 1), metric(before, 1))}) · 참여율 ${(metric(now, 2) * 100).toFixed(1)}%`);
   console.log(`구매처 이동 클릭 ${number(clicks.total)} (${change(clicks.total, oldClicks.total)}) · 신발 ${number(clicks.byType.get('shoe') ?? 0)} / 의류 ${number(clicks.byType.get('apparel') ?? 0)}`);
   console.log('※ GA4 자동 외부 링크 click만 집계. 새 purchase_link_click 이벤트를 더하지 않아 중복 없음.');
@@ -313,28 +387,33 @@ async function main() {
   console.log(`  (not set)/경로 없음 ${number(unknownLandingSessions)}세션은 페이지별 이탈 목록에서 제외.`);
   console.log('  ※ 이탈률은 참여 없는 세션 비율. 의도한 정보를 빠르게 얻고 끝난 방문도 포함될 수 있어 페이지 내용과 함께 판단.');
 
-  console.log(`\n━━ GSC 검색 유입 콘텐츠 (${kst(searchStart)} ~ ${kst(searchEnd)}, 약 3일 지연) ━━`);
+  console.log(`\n━━ GSC 검색 유입 콘텐츠 (${kst(searchStart)} ~ ${kst(searchEnd)}, ${days}일, 약 3일 지연) ━━`);
   const seoCandidatePaths: string[] = [];
   try {
     const searchPages = await searchConsolePages();
+    const anchorNote = (data: SearchPage) => data.anchorImpressions ? ` · 앵커 노출 ${number(data.anchorImpressions)}(클릭 ${number(data.anchorClicks)}) 별도` : '';
     const byClicks = Array.from(searchPages.entries()).sort((a, b) => b[1].clicks - a[1].clicks).slice(0, 5);
     for (const [path, data] of byClicks) {
       const ctr = data.impressions ? (data.clicks / data.impressions) * 100 : 0;
       const position = data.impressions ? data.weightedPosition / data.impressions : 0;
       const page = views.get(path);
       const engagedPerView = page?.views ? page.engagementSeconds / page.views : 0;
-      console.log(`  검색 클릭 ${number(data.clicks)} · 노출 ${number(data.impressions)} · CTR ${ctr.toFixed(1)}% · 평균순위 ${position.toFixed(1)} · GA 조회 ${number(page?.views ?? 0)} · 참여 ${engagedPerView.toFixed(1)}초/조회 · 제휴 이동 ${number(clicks.byPage.get(path) ?? 0)} · ${pageLabel(path)}`);
+      console.log(`  검색 클릭 ${number(data.clicks)} · 노출 ${number(data.impressions)} · CTR ${ctr.toFixed(1)}% · 평균순위 ${position.toFixed(1)}${anchorNote(data)} · GA 조회 ${number(page?.views ?? 0)} · 참여 ${engagedPerView.toFixed(1)}초/조회 · 제휴 이동 ${number(clicks.byPage.get(path) ?? 0)} · ${pageLabel(path)}`);
     }
     if (!byClicks.length) console.log('  해당 기간 검색 유입 페이지 없음');
     const seoCandidates = Array.from(searchPages.entries())
       .filter(([, data]) => data.impressions >= 50 && data.weightedPosition / data.impressions <= 12 && data.clicks / data.impressions < 0.03)
       .sort((a, b) => b[1].impressions - a[1].impressions).slice(0, 5);
-    console.log('  검색 개선 후보: 노출 ≥50, 평균순위 12위 이내, CTR <3%');
+    console.log('  검색 개선 후보: 노출 ≥50, 평균순위 12위 이내, CTR <3% (# 없는 기본 URL 기준)');
     for (const [path, data] of seoCandidates) {
       seoCandidatePaths.push(path);
-      console.log(`    노출 ${number(data.impressions)} · CTR ${(data.clicks / data.impressions * 100).toFixed(1)}% · ${pageLabel(path)}`);
+      console.log(`    노출 ${number(data.impressions)} · CTR ${(data.clicks / data.impressions * 100).toFixed(1)}% · 평균순위 ${(data.weightedPosition / data.impressions).toFixed(1)}${anchorNote(data)} · ${pageLabel(path)}`);
     }
     if (!seoCandidates.length) console.log('    해당 후보 없음');
+    const anchored = Array.from(searchPages.values()).filter((data) => data.anchorImpressions);
+    const anchorImpressions = anchored.reduce((sum, data) => sum + data.anchorImpressions, 0);
+    const anchorClicks = anchored.reduce((sum, data) => sum + data.anchorClicks, 0);
+    console.log(`  ※ CTR·순위·후보는 # 없는 기본 URL 행만으로 계산. #앵커 행(${anchored.length}개 페이지, 노출 ${number(anchorImpressions)}·클릭 ${number(anchorClicks)})은 합치면 CTR이 왜곡돼 따로 표기.`);
     console.log('  ※ GSC 검색 클릭과 GA 조회는 집계 기간·정의가 달라 일치 비율로 해석하지 않음.');
   } catch (error) {
     console.log(`  GSC 조회 불가: ${error instanceof Error ? error.message : String(error)} (GA4 나머지 보고는 계속 표시)`);
@@ -383,12 +462,14 @@ async function main() {
   console.log('\n━━ 블로그 구매처 이동 TOP 5 (조회 ≥20) ━━');
   for (const row of blogClickRows.slice(0, 5)) console.log(`  ${number(row.clicks)}클릭 / ${number(row.views)}조회 (${perHundred(row.clicks, row.views)} /100조회) · ${row.secondsPerView.toFixed(1)}초/조회 · ${row.post.title.slice(0, 42)}`);
   if (!blogClickRows.length) console.log('  기준을 만족하는 블로그 없음');
-  console.log('  ※ 자동 외부 click 중 블로그 CTA URL과 일치한 이벤트만 포함. 구매 건수나 수익이 아님.');
+  console.log('  ※ 자동 외부 click 중 블로그 CTA URL과 일치하거나 제휴 호스트(naver.me·쿠팡)인 이벤트만 포함(교체 전 옛 링크 포함). 구매 건수나 수익이 아님.');
 
   console.log('\n━━ 측정 상태 ━━');
   console.log(`  맞춤 측정기준 Data API 반영 ${registered.length}/${wanted.length}: ${registered.length === wanted.length ? '모두 표시' : `아직 반영되지 않음 (${wanted.filter((d) => !registered.includes(d)).join(', ')})`}`);
   console.log('  ※ GA4 관리자에서 저장한 뒤 Data API에 표시되기까지 시간이 걸릴 수 있음. 미표시만으로 미등록이라고 판단하지 않음.');
   console.log(`  신발 페이지에서 구매처로 확인되지 않은 외부 클릭 ${number(clicks.unmatchedShoe)}건은 합계에서 제외(옛 제휴 단축 링크는 포함).`);
+  console.log(`  블로그 현재 CTA에 없는 옛 제휴 링크 클릭 ${number(clicks.blogFallback)}건은 합계에 포함.`);
+  if (trim) console.log(`  GA 창 끝 미처리 제외: 현재 창 ${excludedCurrent.join(', ')} · 비교 창 ${excludedPrevious.join(', ')} (참여 세션 비율 ${INCOMPLETE_ENGAGED_RATIO * 100}% 미만 기준).`);
   const unknownSource = sourceSessions.get('(not set)') ?? 0;
   console.log(`  유입 출처 (not set) ${number(unknownSource)}세션 (${metric(now, 0) ? (unknownSource / metric(now, 0) * 100).toFixed(1) : '0.0'}%) — 원인 미확인.`);
   console.log('  자동 click만으로 상품·버튼 위치를 분해하지 않음. 새 purchase_link_click 매개변수는 GA4에서 사용 가능해진 뒤 보고서·탐색에서 볼 수 있음.');

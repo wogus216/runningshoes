@@ -1,12 +1,20 @@
 /**
  * 구매 링크 유효성 + 품절 체크 스크립트
  * 실행: npm run links:check
+ *       npm run links:check -- --offline   # HTTP GET 생략 — 발급 내역 판정만 (제휴 링크에 요청을 보내지 않는다)
+ *
+ * ⚠️ 옵션 없이 돌리면 신발의 쿠팡·공식몰 링크에 실제 GET을 보낸다(쿠팡 파트너스 클릭 집계에 섞일 수 있다).
+ *    로컬 점검은 --offline 으로 하고, HTTP 확인이 꼭 필요할 때만 옵션 없이 돌린다.
  *
  * 체크 항목:
- * 1. HTTP 상태 (404/에러)
- * 2. 품절/판매종료 텍스트 감지 (GET으로 HTML 파싱)
+ * 1. HTTP 상태 (404/에러)                          — --offline 이면 생략
+ * 2. 품절/판매종료 텍스트 감지 (GET으로 HTML 파싱)  — --offline 이면 생략
  * 3. 어필리에이트가 아닌 URL (네이버 쇼핑 "검색결과" 링크 = 수수료 0)
  * 4. naver.me 링크의 실제 판매 상태 — 커넥트 발급 내역과 대조
+ * 5. 블로그 본문 제휴 링크 (2026-09-29) — naver.me 는 발급 내역으로, 쿠팡은 요청 없이 "확인불가"로.
+ *    신발 DB만 보던 탓에 블로그 naver.me CTA 11건 중 비SALE 5건·발급 내역에 없음 3건이 경보 없이 남아 있었다.
+ *    신발 결과·요약과 섞지 않고 별도 섹션으로 출력한다. 종료 코드는 기존처럼 문제 건수와 무관하다
+ *    (CI는 요약 줄의 숫자로 판정한다 — .github/workflows/check-links.yml).
  *
  * ⚠️ 3·4번이 왜 있는지 (2026-09-16):
  * naver.me 는 429(rate limit)가 떠서 "봇 차단 = 확인불가"로 분류하고 검사를 건너뛰고 있었다.
@@ -19,9 +27,11 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { resolve } from 'node:path';
 
+import { getAllPosts } from '../src/lib/data/blog';
 import { getShoes } from '../src/lib/data/shoes';
 
 const ISSUED_PATH = resolve(process.cwd(), '.omc/naver-issued-links.json');
+const OFFLINE = process.argv.includes('--offline');
 
 type IssuedRow = {
   shortenUrl?: string;
@@ -45,6 +55,32 @@ function loadIssued(): { map: Map<string, IssuedRow>; fetchedAt?: string } {
 /** 어필리에이트 추적이 붙지 않는 URL — 클릭돼도 수수료가 0이다 */
 function isNonAffiliate(url: string): boolean {
   return url.includes('search.shopping.naver.com');
+}
+
+const COUPANG_HOSTS = ['link.coupang.com', 'coupa.ng'];
+
+/** 블로그 본문 <a href>에서 제휴·쇼핑 링크만 (글 slug, URL) 단위로 모은다. 네트워크 없음. */
+function blogPurchaseLinks() {
+  const links = new Map<string, { slug: string; url: string; count: number; cta: boolean }>();
+  for (const post of getAllPosts()) {
+    for (const match of Array.from(post.content.matchAll(/<a\b([^>]*)>/gi))) {
+      const attrs = match[1];
+      const url = attrs.match(/\bhref=["']([^"']+)["']/)?.[1];
+      if (!url) continue;
+      let host = '';
+      try {
+        host = new URL(url).hostname;
+      } catch {
+        continue; // 상대 경로(내부 링크)
+      }
+      if (host !== 'naver.me' && !COUPANG_HOSTS.includes(host) && !isNonAffiliate(url)) continue;
+      const key = `${post.slug}|${url}`;
+      const cta = /\baffiliate-btn\b|\bdata-purchase-link\b/.test(attrs);
+      const prev = links.get(key);
+      links.set(key, { slug: post.slug, url, count: (prev?.count ?? 0) + 1, cta: (prev?.cta ?? false) || cta });
+    }
+  }
+  return Array.from(links.values());
 }
 
 // 품절 감지 키워드 (쿠팡/네이버 공통)
@@ -148,6 +184,7 @@ async function main() {
   const coupangOnly: string[] = [];
   const deadProduct: { slug: string; status: string; productName: string }[] = [];
   const notIssued: string[] = [];
+  const skippedOffline: { slug: string; store: string }[] = [];
 
   if (issued.map.size === 0) {
     console.log('\n⚠️  .omc/naver-issued-links.json 이 없다 — naver.me 판매 상태를 판정할 수 없다.');
@@ -156,6 +193,7 @@ async function main() {
     console.log(`\n📄 커넥트 발급 내역 ${issued.map.size}건 (수거 ${issued.fetchedAt ?? '시점 불명'})`);
   }
 
+  if (OFFLINE) console.log('\n⏭️  --offline: HTTP GET 단계를 생략한다 — 쿠팡·공식몰 링크는 요청을 보내지 않고 "오프라인 생략"으로 센다.');
   console.log(`\n🔍 ${shoes.length}개 신발의 구매 링크 체크 중...\n`);
 
   for (const shoe of shoes) {
@@ -198,6 +236,13 @@ async function main() {
         continue;
       }
 
+      // 3) --offline: 여기부터는 HTTP 요청이 필요한 링크다 — 보내지 않고 건너뛴다
+      if (OFFLINE) {
+        skippedOffline.push({ slug: shoe.slug, store: link.store });
+        console.log(`⏭️  ${shoe.slug} (${link.store}) [오프라인 생략]`);
+        continue;
+      }
+
       const result = await checkLink(link.url);
       results.push({ slug: shoe.slug, store: link.store, url: link.url, ...result });
 
@@ -235,6 +280,7 @@ async function main() {
   console.log(`  🔴 품절(HTML 감지): ${soldOut.length}개`);
   console.log(`  ❌ 에러: ${failed.length}개`);
   console.log(`  ⚠️  확인불가: ${unchecked.length}개`);
+  if (OFFLINE) console.log(`  ⏭️  오프라인 생략(HTTP 미확인): ${skippedOffline.length}개`);
   console.log(`  ⚪ 링크없음: ${noLinks.length}개`);
 
   if (deadProduct.length > 0) {
@@ -277,13 +323,19 @@ async function main() {
   // 링크 단위 집계만 보면 "네이버는 죽었지만 쿠팡이 살아 있는" 신발을 고장으로 오판한다.
   // 실제로 중요한 건 "이 신발에 살아 있는 구매 경로가 하나라도 있는가"다.
   const alive = new Set([...healthy.map((h) => h.slug), ...healthyConnect, ...coupangOnly]);
-  const dead = shoes.filter((s) => !alive.has(s.slug));
+  // --offline 에서 HTTP로만 판정되는 링크(공식몰 등)만 남은 신발은 "없음"이 아니라 "보류"다.
+  const skippedSlugs = new Set(skippedOffline.map((s) => s.slug));
+  const pending = shoes.filter((s) => !alive.has(s.slug) && skippedSlugs.has(s.slug));
+  const dead = shoes.filter((s) => !alive.has(s.slug) && !skippedSlugs.has(s.slug));
 
   console.log(`\n${'='.repeat(60)}`);
   console.log(`🧭 신발 단위 판정 (전체 ${shoes.length}종)`);
   console.log(`  ✅ 구매 경로 있음: ${alive.size}종`);
   console.log(`  ⛔ 구매 경로 없음: ${dead.length}종`);
   if (dead.length > 0) console.log(`     ${dead.map((s) => s.slug).join(', ')}`);
+  if (pending.length > 0) {
+    console.log(`  ⏭️  오프라인이라 판정 보류: ${pending.length}종 — ${pending.map((s) => s.slug).join(', ')}`);
+  }
   console.log(
     `  ℹ️  쿠팡 링크 보유 ${coupangOnly.length}종 — 쿠팡은 봇 차단으로 판매 상태를 자동 판정할 수 없다.`,
   );
@@ -298,7 +350,69 @@ async function main() {
     );
     console.log('   네이버 커넥트에서 재발급 후 purchaseLinks 를 교체할 것.');
   }
+
+  reportBlogLinks(issued);
   console.log('');
+}
+
+/**
+ * 블로그 본문 제휴 링크 — 신발 결과와 섞지 않는 별도 섹션. 네트워크 요청을 보내지 않는다.
+ * (요약 문구는 CI가 grep 하는 "🔴 품절: N개"·"❌ 에러: N개"와 겹치지 않게 쓴다)
+ */
+function reportBlogLinks(issued: ReturnType<typeof loadIssued>) {
+  const links = blogPurchaseLinks();
+  const tally = { ok: 0, dead: 0, notIssued: 0, unjudged: 0, coupang: 0, nonAffiliate: 0 };
+
+  console.log(`\n${'='.repeat(60)}`);
+  console.log(`📝 블로그 본문 제휴 링크 (${new Set(links.map((l) => l.slug)).size}편 · ${links.length}개 링크)`);
+  if (issued.map.size === 0) console.log('  ⚠️  발급 내역이 없어 naver.me 판매 상태를 판정하지 못한다 — `npm run links:fetch` 먼저.');
+
+  for (const link of links) {
+    const where = `${link.slug} · ${link.url.replace(/^https?:\/\//, '')}${link.count > 1 ? ` ×${link.count}` : ''}${link.cta ? '' : ' · CTA 아님(본문 링크)'}`;
+    if (isNonAffiliate(link.url)) {
+      tally.nonAffiliate++;
+      console.log(`  💸 ${where} [어필리에이트 아님: 검색결과 URL]`);
+      continue;
+    }
+    if (COUPANG_HOSTS.includes(new URL(link.url).hostname)) {
+      tally.coupang++;
+      console.log(`  ⚠️  ${where} [확인불가: 쿠팡 — 클릭 기록 방지로 요청 안 보냄]`);
+      continue;
+    }
+    // naver.me
+    if (issued.map.size === 0) {
+      tally.unjudged++;
+      console.log(`  ⚠️  ${where} [판정 불가: 발급 내역 없음]`);
+      continue;
+    }
+    const rec = issued.map.get(link.url.split('/').pop() ?? '');
+    if (!rec) {
+      tally.notIssued++;
+      console.log(`  ❓ ${where} [발급 내역에 없음 — 삭제됐거나 다른 계정]`);
+      continue;
+    }
+    const name = (rec.productName ?? '').slice(0, 40);
+    if (rec.productStatus !== 'SALE' || rec.enabled === false) {
+      tally.dead++;
+      const status = rec.enabled === false ? `${rec.productStatus}/disabled` : String(rec.productStatus);
+      console.log(`  🔴 ${where} [${status}] ${name}`);
+      continue;
+    }
+    tally.ok++;
+    console.log(`  ✅ ${where} [SALE] ${name}`);
+  }
+  if (!links.length) console.log('  제휴 링크 없음');
+
+  const fix = tally.dead + tally.notIssued + tally.nonAffiliate;
+  console.log(
+    `  요약: 정상 ${tally.ok} · 판매중지·품절 ${tally.dead} · 발급 내역에 없음 ${tally.notIssued} · 어필리에이트 아님 ${tally.nonAffiliate}` +
+      ` · 쿠팡 확인불가 ${tally.coupang}${tally.unjudged ? ` · 판정 불가 ${tally.unjudged}` : ''}`,
+  );
+  if (fix > 0) {
+    console.log(`  ⚠️  블로그 본문에서 손봐야 할 링크 ${fix}개 — 신발 DB의 현행 링크로 바꾸거나 재발급할 것 (발급 내역 수거 ${issued.fetchedAt ?? '시점 불명'} 기준).`);
+  } else if (tally.unjudged === 0) {
+    console.log('  ✅ 블로그 본문 제휴 링크에서 판정 가능한 문제 없음 (쿠팡은 별도 육안 확인).');
+  }
 }
 
 main();
