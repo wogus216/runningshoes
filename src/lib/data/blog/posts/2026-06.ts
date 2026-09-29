@@ -9532,8 +9532,8 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'asics-gel-kayano-33-review',
     slug: 'asics-gel-kayano-33-review',
-    title: '아식스 젤 카야노 33 솔직 리뷰 | 13년 만의 구조 대변혁 — 부드러워졌지만 호불호가 갈리는 이유',
-    description: '카야노 33은 4D Guidance System을 버리고 FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼으로 안정성의 방향 자체를 바꿨습니다. "역대 가장 부드럽고 일관됐다"는 호평과 "전작이 더 좋았다"는 혹평이 극명히 갈리죠. 확정 스펙과 미게시 랩 데이터를 구분해 정리하고, 평발·과내전 한국 러너에게 32와 33 중 무엇이 맞는지 답합니다.',
+    title: '아식스 젤 카야노 33 리뷰 | 32와 차이·호불호 갈리는 이유 — 평발·발볼 넓은 러너 선택법',
+    description: '카야노 33은 32의 4D Guidance 대신 FLUIDSUPPORT와 FF BLAST MAX·PLUS 2층 폼으로 안정성을 만드는 방식을 바꿨습니다. 부드러워진 대신 반발이 줄었다는 평가까지 근거와 함께 정리하고, 평발·과내전·발볼 넓은 러너가 32와 33 중 무엇을 고를지 답합니다.',
     thumbnail: '/images/blog/asics-gel-kayano-33-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-05',
