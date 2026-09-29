@@ -57,9 +57,9 @@ export const februaryEvents: MarathonEvent[] = [
     isMajor: true,
     website: 'https://www.osaka-marathon.com/',
     registrationNote:
-      '접수 종료 — 일반 응모는 8월 28일(금) 17시(JST)에 마감됐습니다. 정원 초과 시 추첨이며 당락은 9월 28일(월) 이메일로 통보되므로, 그때까지는 신청자도 참가 확정이 아닙니다(공식 2026-08-31 확인)',
+      '접수 종료 — 일반 응모는 8월 28일(금) 17시(JST)에 마감됐고, 추첨 결과는 9월 28일(월) 이메일로 발송됐습니다. 해외(JTB 스포츠 스테이션) 당첨자는 결과 메일 속 결제 링크로 10월 19일(월) 23:59(JST)까지 결제해야 참가가 확정됩니다(공식·JTB 2026-09-29 확인)',
     description:
-      '제15회 대회. 평탄해 기록을 노리기 좋다는 평이 많은 도심 코스다. 한국 거주자는 JTB스포츠스테이션에서 신청하며, 참가료 145 USD에 필수 자선모금 10 USD와 수수료 11%가 붙어 실제 결제액은 약 172 USD. 정원 초과 시 추첨이고 결과는 2026년 9월 28일 발표.',
+      '제15회 대회. 평탄해 기록을 노리기 좋다는 평이 많은 도심 코스다. 한국 거주자는 JTB스포츠스테이션에서 신청하며, 참가료 145 USD에 필수 자선모금 10 USD와 수수료 11%가 붙어 실제 결제액은 약 172 USD. 정원 초과로 추첨했고 결과는 2026년 9월 28일 이메일로 발송됐다. 해외 당첨자는 10월 19일 23:59(일본시간)까지 결제해야 참가가 확정된다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '중급',
@@ -69,10 +69,10 @@ export const februaryEvents: MarathonEvent[] = [
     },
     raceInfo: {
       timeLimits: [{ distance: '풀코스', hours: 7, minutes: 0 }],
-      expectedParticipants: 28420,
+      expectedParticipants: 31970,
     },
     registrationStart: '2026-07-28',
     registrationEnd: '2026-08-28',
-    lastVerified: '2026-08-12',
+    lastVerified: '2026-09-29',
   },
 ];
