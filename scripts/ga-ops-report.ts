@@ -194,11 +194,12 @@ async function main() {
   console.log('  ※ 행동 지표일 뿐 구매 의도·실제 판매량은 아님. 링크 품질과 글 맥락을 함께 확인.');
 
   console.log('\n━━ 측정 상태 ━━');
-  console.log(`  맞춤 측정기준 ${registered.length}/${wanted.length}: ${registered.length === wanted.length ? '등록 완료' : `미등록 ${wanted.filter((d) => !registered.includes(d)).join(', ')}`}`);
+  console.log(`  맞춤 측정기준 Data API 반영 ${registered.length}/${wanted.length}: ${registered.length === wanted.length ? '모두 표시' : `아직 반영되지 않음 (${wanted.filter((d) => !registered.includes(d)).join(', ')})`}`);
+  console.log('  ※ GA4 관리자에서 저장한 뒤 Data API에 표시되기까지 시간이 걸릴 수 있음. 미표시만으로 미등록이라고 판단하지 않음.');
   console.log(`  신발 페이지에서 구매처로 확인되지 않은 외부 클릭 ${number(clicks.unmatchedShoe)}건은 합계에서 제외(옛 제휴 단축 링크는 포함).`);
   const unknownSource = sourceSessions.get('(not set)') ?? 0;
   console.log(`  유입 출처 (not set) ${number(unknownSource)}세션 (${metric(now, 0) ? (unknownSource / metric(now, 0) * 100).toFixed(1) : '0.0'}%) — 원인 미확인.`);
-  console.log('  자동 click에 없는 상품·버튼 위치별 세부값은 맞춤 측정기준 등록 후부터 볼 수 있음.');
+  console.log('  자동 click만으로 상품·버튼 위치를 분해하지 않음. 새 purchase_link_click 매개변수는 GA4에서 사용 가능해진 뒤 보고서·탐색에서 볼 수 있음.');
   const actions = [];
   if (rising.length) actions.push(`급상승 글 “${rising[0].post.title.slice(0, 22)}…”의 신발 내부 링크 점검`);
   if (shoeRows[0]?.clicks) actions.push(`${shoeRows[0].shoe.brand} ${shoeRows[0].shoe.name} 판매처 가격·재고 확인`);
