@@ -5037,7 +5037,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/FxCvSGHY" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/5eDHQ0w3" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">페가수스 41 최저가 →</span>
     </a>
