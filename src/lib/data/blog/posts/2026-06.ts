@@ -774,7 +774,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>둘 다 ZoomX+ReactX 듀얼 폼 + 43mm 힐 스택</strong>이지만, <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>에는 <strong>Full-length Air Zoom Unit</strong>이 추가돼 반발력(8/10)이 살아있고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그게 없는 대신 <strong>순수 맥스 쿠션</strong>(반발 6/10)에 집중합니다</li>
-    <li><strong>가격이 10만원 차이</strong>(프리미엄 28.9만 vs 보메로 18.9만). 그리고 결정적으로 <strong>보메로만 와이드·X-와이드 옵션이 있고, 프리미엄은 와이드가 없습니다</strong>. 발볼 넓은 한국 러너에겐 이게 사실상 결론을 정합니다</li>
+    <li><strong>가격이 10만원 차이</strong>(프리미엄 28.9만 vs 보메로 18.9만). 그리고 결정적으로 <strong>보메로만 와이드 옵션이 있고(한국 공식몰 남녀, 2026-09-29 확인), 프리미엄은 와이드가 없습니다</strong>. 발볼 넓은 한국 러너에겐 이게 사실상 결론을 정합니다</li>
     <li><strong>통통 튀는 데일리 + 발볼 좁음 + 예산 여유 → 페가수스 프리미엄</strong>, <strong>순수 쿠션·무릎 보호 + 발볼 넓음 + 가성비 → 보메로 18</strong>입니다</li>
   </ul>
 </div>
@@ -798,7 +798,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>미드솔</td><td>ZoomX+ReactX+<strong>Air Zoom Unit</strong></td><td>ZoomX+ReactX</td></tr>
     <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>6 / 10</td></tr>
     <tr><td>쿠션</td><td>10 / 10</td><td>10 / 10</td></tr>
-    <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드·X-와이드 O</strong></td></tr>
+    <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드 O (남녀)</strong></td></tr>
     <tr><td>최적 페이스</td><td>5:00~6:30/km</td><td>5:30~7:00/km</td></tr>
     <tr><td>내구성 / km당</td><td>600km / 약 482원</td><td>650km / 약 291원</td></tr>
   </tbody>
@@ -810,7 +810,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>가장 큰 구조적 차이입니다. 페가수스 프리미엄에는 발 전체에 걸친 <strong>Air Zoom Unit</strong>이 들어가 발을 앞으로 밀어주는 <strong>반발(8/10)</strong>을 만듭니다. 덕분에 같은 쿠션이라도 "통통 튀는" 느낌이고, 가끔 페이스를 올리는 날에도 대응이 됩니다. 보메로 18은 이 부품이 없어 <strong>순수하게 푹신한(반발 6/10)</strong> 쪽입니다. 회복런·LSD처럼 "편하게 오래"가 목적이면 보메로가, "쿠션은 두껍되 굴러가는 맛도 원한다"면 프리미엄이 맞습니다.</p>
 
 <h3>② 와이드 옵션 — 발볼 넓으면 사실상 결론</h3>
-<p>둘 다 표준은 좁은 편(narrow)입니다. 그런데 <strong>보메로 18은 와이드·X-와이드 옵션이 있고, 페가수스 프리미엄은 와이드가 없습니다.</strong> 발볼 넓은 한국 러너라면 이 한 줄로 답이 정해집니다 — 프리미엄은 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없습니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
+<p>둘 다 표준은 좁은 편(narrow)입니다. 그런데 <strong>보메로 18은 와이드 옵션이 있고(한국 공식몰 남녀), 페가수스 프리미엄은 와이드가 없습니다.</strong> 발볼 넓은 한국 러너라면 이 한 줄로 답이 정해집니다 — 프리미엄은 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없습니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
 
 <h3>③ 가격 — 10만원으로 뭘 사는가</h3>
 <p>프리미엄이 10만원 비쌉니다. 그 돈으로 사는 건 <strong>Air Zoom Unit의 반발 + 프리미엄 니트 어퍼</strong>입니다. 반대로 보메로는 10만원 아끼면서 와이드 선택지와 더 긴 내구성(650km)을 얻죠. 순수 쿠션 데일리로만 쓸 거라면 <strong>보메로 18의 가성비가 분명히 앞섭니다.</strong></p>
@@ -3624,7 +3624,7 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 13,
     tags: ['아식스 러닝화', '아식스 계급도', '러닝화 라인업', '러닝화 등급', '젤 카야노', '젤 님버스', '노바블라스트', '메타스피드', '슈퍼블라스트', 'FF Blast'],
     faqs: [
-      { question: '아식스 GEL(젤)이랑 FF Blast는 뭐가 다른가요?', answer: 'GEL은 아식스의 전통 충격흡수 젤 캡슐이고, FF Blast는 통통 튀는 신세대 바운시 폼입니다. 아식스는 클래식 GEL 라인(젤 님버스·젤 카야노 일부)과 신세대 FF Blast 라인(노바·메가·슈퍼블라스트)이 공존합니다. 상징적 전환점이 젤 카야노 33으로, 13년 만에 GEL을 빼고 FF Blast 듀얼 폼으로 바꿨습니다.' },
+      { question: '아식스 GEL(젤)이랑 FF Blast는 뭐가 다른가요?', answer: 'GEL은 아식스의 전통 충격흡수 젤 캡슐이고, FF Blast는 통통 튀는 신세대 바운시 폼입니다. 아식스는 클래식 GEL 라인(젤 님버스·젤 카야노 일부)과 신세대 FF Blast 라인(노바·메가·슈퍼블라스트)이 공존합니다. 상징적 사례가 젤 카야노 33으로, 뒤꿈치 PureGEL은 유지한 채 미드솔을 FF BLAST MAX(위)·FF BLAST PLUS(아래) 2층 폼으로 구성했습니다.' },
       { question: '"blast"가 붙은 모델들은 뭐가 다른가요?', answer: '모두 FF Blast 바운시 폼 계열이지만 성격이 다릅니다. 노바블라스트(데일리 바운시)·메가블라스트(힐 45.1mm 맥시멀 경량)·소닉블라스트(Pebax 플레이트가 들어간 쿠션 템포용)·슈퍼블라스트(플레이트 없는 슈퍼트레이너)입니다. 노바블라스트 6은 전족에 FF Turbo²를 더했고, 소닉블라스트 2는 플레이트를 포크형으로 바꾼 2세대입니다. 통통 튀는 재미를 원하면 노바블라스트, 대회 가까운 빠른 훈련이면 슈퍼블라스트가 답입니다.' },
       { question: '아식스 안정화는 뭘 사야 하나요?', answer: '젤 카야노 32 또는 33입니다. 카야노는 전 세계 안정화 추천 1순위로 꼽히는 평발·과내전 끝판왕입니다. 32는 4D Guidance로 단단하게, 33은 FLUIDSUPPORT로 부드럽게 잡아줍니다. 안정화 선택이 처음이면 자가진단부터 하는 걸 권합니다.' },
       { question: '메타스피드 스카이·엣지·레이는 뭐가 다른가요?', answer: '주법으로 갈립니다. 스카이+는 보폭을 늘리는 스트라이드 러너용, 엣지+는 피치(케이던스)를 높이는 러너용입니다. 레이는 129g 초경량 버전으로 전족 착지·단거리에 특화됐습니다. 본인이 보폭형이면 스카이, 회전수형이면 엣지를 고르세요.' },
@@ -3665,7 +3665,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>핵심 전환점이 <strong>젤 카야노 33</strong>입니다. 13년간 GEL을 고수하던 카야노가 GEL을 빼고 FF Blast 듀얼 폼으로 바뀌었어요(이 변화의 호불호는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>에). 그만큼 아식스의 중심축이 GEL에서 FF Blast로 이동하는 중입니다.</p>
+<p>상징적 사례가 <strong>젤 카야노 33</strong>입니다. 이름에 GEL이 붙은 카야노도 뒤꿈치 PureGEL만 남기고, 미드솔은 FF BLAST MAX·FF BLAST PLUS 2층 폼이 맡아요(이 변화의 호불호는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>에). 그만큼 아식스의 중심축이 GEL에서 FF Blast로 이동하는 중입니다.</p>
 
 <h2>2. FF 폼이 등급을 만든다 — Amplifoam → FF Blast → FF Turbo</h2>
 
@@ -3798,7 +3798,7 @@ export const posts_2026_06: BlogPost[] = [
     faqs: [
       { question: '나이키 러닝화 라인은 어떻게 구분하나요?', answer: '숫자가 아니라 라인 이름으로 구분합니다. 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 데일리 라인이고, 이름에 Fly가 붙으면(베이퍼플라이·알파플라이·줌 플라이·스트릭플라이) 카본 레이싱 라인입니다. 라이벌 플라이는 예외적으로 Fly가 붙지만 카본 없는 가성비 템포화입니다.' },
       { question: '페가수스 플러스, 프리미엄은 일반 페가수스와 뭐가 다른가요?', answer: '같은 라인의 상위 등급입니다. 기본(41·42)은 ReactX 폼, 플러스는 더 가벼운 ZoomX 폼(2세대 플러스 2는 전족부 에어 줌 추가), 프리미엄은 ZoomX+ReactX+에어를 겹친 맥시멀 버전입니다. 가격도 기본 16만원대 → 플러스 21만원대 → 프리미엄 28만원대로 올라갑니다. 보메로도 18 → 플러스 → 프리미엄(50mm) 순으로 같은 규칙입니다.' },
-      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-28)으로 와이드가 있는 모델은 페가수스 42(남녀)와 보메로 플러스(남성)이고, 스트럭처 26·보메로 18은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 기본 폭이 넉넉합니다.' },
+      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-29)으로 와이드가 있는 모델은 페가수스 42·보메로 18(남녀)과 보메로 플러스(남성)이고, 스트럭처 26은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 기본 폭이 넉넉합니다.' },
       { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(13.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
       { question: 'ZoomX가 뭔가요? 다른 폼이랑 어떻게 다른가요?', answer: 'ZoomX는 나이키 최상위 PEBA 폼으로, 가볍고 반발력이 최고입니다. 원래 베이퍼플라이 같은 레이싱화에만 쓰다가 보메로·페가수스 플러스 같은 데일리로 내려왔습니다. 입문은 Cushlon, 데일리는 ReactX(안정적), 프리미엄·레이싱은 ZoomX(반발), 거기에 카본 플레이트가 더해지면 슈퍼슈즈입니다.' },
     ],
@@ -3808,7 +3808,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong>나이키는 숫자가 아니라 "라인 이름"으로 읽습니다</strong> — 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 축, 이름에 <strong>Fly</strong>가 붙으면 카본 레이싱입니다.</li>
     <li><strong>플러스·프리미엄 = 같은 라인의 상위 등급</strong> — 기본(ReactX) → 플러스(ZoomX 경량) → 프리미엄(맥시멀). 폼은 Cushlon→ReactX→ZoomX→카본 순으로 올라갑니다.</li>
-    <li><strong>나이키는 토박스가 좁습니다</strong> — 발볼 넓은 한국 러너는 와이드 옵션(한국 공식몰 기준 페가수스 42 남녀·보메로 플러스 남성, 스트럭처 26·보메로 18은 여성만)부터 확인하세요.</li>
+    <li><strong>나이키는 토박스가 좁습니다</strong> — 발볼 넓은 한국 러너는 와이드 옵션(한국 공식몰 기준 페가수스 42·보메로 18 남녀·보메로 플러스 남성, 스트럭처 26은 여성만)부터 확인하세요.</li>
   </ul>
 </div>
 
@@ -3910,8 +3910,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>와이드 있음 (한국 공식몰)</strong></td><td>페가수스 42(남녀) · 보메로 플러스(남성)</td></tr>
-    <tr><td><strong>와이드 여성만 (한국 공식몰)</strong></td><td>스트럭처 26 · 보메로 18</td></tr>
+    <tr><td><strong>와이드 있음 (한국 공식몰)</strong></td><td>페가수스 42(남녀) · 보메로 18(남녀) · 보메로 플러스(남성)</td></tr>
+    <tr><td><strong>와이드 여성만 (한국 공식몰)</strong></td><td>스트럭처 26</td></tr>
     <tr><td><strong>표준 (보통)</strong></td><td>페가수스 42(72.3mm) · 페가수스 플러스 2 · 베이퍼플라이 4(73.2mm) · 알파플라이 3</td></tr>
     <tr><td><strong>넓은 편 (트레일)</strong></td><td>ACG 제가마 트레일 · 울트라플라이 — 별도 와이드 없이 기본 폭이 넉넉</td></tr>
     <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 프리미엄 · 페가수스 플러스(1세대) · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
@@ -3922,7 +3922,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">📏</span>
   <div class="callout-body">
     <p class="callout-title">발볼 넓으면 와이드 라인 또는 다른 브랜드</p>
-    <p>흥미롭게도 <strong>프리미엄·플러스 같은 비싼 라인일수록 토박스가 좁습니다.</strong> 발볼이 넓다면 한국 공식몰에 와이드가 있는 페가수스 42·보메로 플러스(여성은 스트럭처 26·보메로 18도)를 고르거나, 토박스가 넉넉한 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>·아식스를 함께 보세요. 발볼별 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
+    <p>흥미롭게도 <strong>프리미엄·플러스 같은 비싼 라인일수록 토박스가 좁습니다.</strong> 발볼이 넓다면 한국 공식몰에 와이드가 있는 페가수스 42·보메로 18·보메로 플러스(여성은 스트럭처 26도)를 고르거나, 토박스가 넉넉한 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>·아식스를 함께 보세요. 발볼별 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
   </div>
 </div>
 
@@ -7310,7 +7310,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>지지 방식이 다르다 — 핵심 차이</h2>
 <ul>
-  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 13년 만에 딱딱한 기둥을 버리고 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
+  <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 30~32의 4D Guidance 대신 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
   <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
   <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 6mm로 낮고 330g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
 </ul>
@@ -7353,7 +7353,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>발이 안쪽으로 무너지는 <strong>과내전(오버프로네이션)·평발</strong>이라면, 안쪽을 받쳐주는 <strong>안정화 러닝화</strong>가 무릎·발목 부상을 줄여줍니다</li>
-    <li>종합 톱픽은 <strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> — 13년 만에 부드러워진 FLUIDSUPPORT로 "지지하되 딱딱하지 않은" 균형이 좋습니다(우리 사이트에서도 가장 많이 보는 안정화)</li>
+    <li>종합 톱픽은 <strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> — FLUIDSUPPORT로 바뀌며 "지지하되 딱딱하지 않은" 균형이 좋습니다(우리 사이트에서도 가장 많이 보는 안정화)</li>
     <li>가성비라면 <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>·<a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>(15만원대), 평발 특화는 <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>가 답입니다</li>
   </ul>
 </div>
@@ -7392,7 +7392,7 @@ export const posts_2026_06: BlogPost[] = [
 </table>
 
 <h2>👑 종합 톱픽 — 아식스 카야노 33</h2>
-<p><a href="/shoes/asics-gel-kayano-33">카야노 33</a>은 13년간 이어온 딱딱한 안정 기둥을 버리고 <strong>FLUIDSUPPORT + 듀얼 폼</strong>으로 "지지는 하되 부드러운" 방향으로 바뀌었습니다. 그만큼 호불호도 갈리는데, 자세한 변화는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 솔직 리뷰</a>와 <a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a>에서 정리했어요. 단단한 클래식 안정감을 원하면 32가, 부드러운 신형을 원하면 33이 맞습니다.</p>
+<p><a href="/shoes/asics-gel-kayano-33">카야노 33</a>은 32까지 쓰던 4D Guidance를 버리고 <strong>FLUIDSUPPORT + 듀얼 폼</strong>으로 "지지는 하되 부드러운" 방향으로 바뀌었습니다. 그만큼 호불호도 갈리는데, 자세한 변화는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>와 <a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a>에서 정리했어요. 단단한 클래식 안정감을 원하면 32가, 부드러운 신형을 원하면 33이 맞습니다.</p>
 
 <div class="callout tip">
   <span class="callout-icon">⚖️</span>
@@ -9544,7 +9544,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li>카야노 33은 <strong>13년 이어온 4D Guidance System(가이드레일)을 폐지</strong>하고 <strong>FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼</strong>으로 — 안정성을 "교정"이 아닌 "부드러운 가이드"로 바꾼 대변혁작입니다</li>
+    <li>카야노 33은 <strong>카야노 30~32에 쓰인 4D Guidance System을 폐지</strong>하고 <strong>FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼</strong>으로 — 안정성을 "교정"이 아닌 "부드러운 가이드"로 바꾼 대변혁작입니다</li>
     <li>평가가 <strong>극명히 갈립니다</strong>: "역대 가장 부드럽고 일관된 카야노"(호평) vs "전작의 통통 튀는 반발이 사라져 단단하고 밋밋하다"(혹평, Doctors of Running은 C+ 등급)</li>
     <li>결론은 명확합니다 — <strong>반발·경쾌함을 원하면 전작 32, 차분하고 부드러운 안정·장거리·워킹용이면 33</strong>. 발 성향에 따라 선택이 갈립니다</li>
   </ul>
@@ -9553,7 +9553,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">🔧</span>
   <div class="callout-body">
-    <p class="callout-title">13년 만에 "안정성을 만드는 방식"이 바뀌었다</p>
+    <p class="callout-title">"안정성을 만드는 방식"이 바뀌었다</p>
     <p>카야노는 오랫동안 <strong>딱딱한 의료 포스트·가이드 시스템</strong>으로 발이 안쪽으로 무너지는 걸 막아주는 정통 안정화였습니다. 33은 이 공식을 버렸습니다. 발 아치를 밀어내는 장치 없이, <strong>넓어진 바닥 + 폼 밀도 차이 + 미드솔 지오메트리(직선 라스트·미디얼 플레어)</strong>로 자연스럽게 발을 잡아주는 "지오메트릭 안정성"으로 전환했죠. ASICS의 표현으로는 <strong>"움직임을 교정하기보다 보행 단계마다 안내한다"</strong>는 철학입니다.</p>
   </div>
 </div>
@@ -9572,12 +9572,12 @@ export const posts_2026_06: BlogPost[] = [
 </table>
 <p>상단의 <strong>FF Blast Max</strong>는 아식스의 통통 튀는 쿠션화 노바블라스트 계열에서 온 폼으로, 처음 신었을 때 <strong>구름 같은 부드러움</strong>을 줍니다. 그 아래 더 단단한 FF Blast Plus가 받쳐 안정성을 만드는 구조죠. 자세한 항목별 비교는 → <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a>에서 다룹니다.</p>
 
-<h2>스펙 — 확정값과 "아직 모르는 값"</h2>
+<h2>스펙 — 공식 발표값과 RunRepeat 실측값</h2>
 <div class="callout warning">
   <span class="callout-icon">🧪</span>
   <div class="callout-body">
-    <p class="callout-title">신상 데이터 안내</p>
-    <p>2026년 6월 출시 직후라 <strong>RunRepeat의 독립 절단 랩 테스트가 카야노 33에 대해 아직 미게시</strong>입니다. 즉 <strong>충격흡수(SA)·경도(HA)·에너지 리턴%·토박스 너비</strong> 같은 정밀 랩 수치는 33에 대해 확정값이 없습니다. 아래 확정 스펙은 제조사·리뷰어 스펙시트 기준이며, 랩 수치는 전작 32를 참고로만 병기합니다.</p>
+    <p class="callout-title">랩 데이터 출처</p>
+    <p>출시 직후엔 독립 랩 수치가 없었지만, <strong>RunRepeat이 2026년 7월 3일 카야노 33 랩 테스트를 게시</strong>했습니다. 아래 스택·충격흡수·에너지 리턴·토박스·무게는 그 실측값이고, 공식 발표값과 다른 항목(스택)은 둘 다 적었습니다.</p>
   </div>
 </div>
 <ul>

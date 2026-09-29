@@ -3941,7 +3941,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
     slug: 'adrenaline-gts-25-vs-kayano-33-stability-2026',
     title: '아드레날린 GTS 25 vs 카야노 33 | 브룩스 vs 아식스 안정화 대결 — 강한 교정·가성비 vs 부드러운 안정성',
-    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 13년 만에 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(199,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
+    description: '평발·과내전 러너의 영원한 고민, 브룩스 아드레날린 GTS 25와 아식스 젤 카야노 33을 정면 비교합니다. 아드레날린은 GuideRails로 강하게 잡아주고 800km 내구성·189,000원 가성비가 강점, 카야노 33은 30~32의 4D Guidance를 버리고 FLUIDSUPPORT+듀얼 폼으로 "부드러운 안정성"을 택했습니다(199,000원). 교정력·쿠션·드롭·가격·내구성을 기준으로 갈라, 과내전 정도와 예산에 맞는 선택을 정리했습니다.',
     thumbnail: '/images/blog/adrenaline-gts-25-vs-kayano-33-stability-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-08',
@@ -3988,7 +3988,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>가장 큰 차이 — 어떻게 "잡아주느냐"</h2>
 <p>두 신발의 핵심 차이는 <strong>과내전(오버프로네이션, 발이 안쪽으로 무너지는 것)을 잡는 방식</strong>입니다.</p>
 <p><strong>아드레날린 GTS 25</strong>는 <strong>GuideRails</strong>를 씁니다. 발 양옆에 가드레일 같은 구조를 둬서, <strong>발이 정상 범위를 벗어나 무너지려 할 때만 물리적으로 막아주는</strong> 방식이에요. 여기에 미디얼 포스트(안쪽 단단한 폼)까지 더해 안정성 점수가 9/10입니다. <strong>교정력이 확실하고 직관적</strong>이라, 과내전이 심하거나 안정화가 처음인 러너에게 믿음직합니다. 대신 DNA Loft v3가 <strong>다소 단단한 착화감</strong>(HA 25.1)이라 푹신함을 기대하면 아쉬울 수 있습니다.</p>
-<p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 13년간 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 검증 데이터가 아직 부족</strong>합니다.</p>
+<p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 카야노 30부터 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 검증 데이터가 아직 부족</strong>합니다.</p>
 
 <h2>쿠션·드롭·무게</h2>
 <p>쿠션은 <strong>생각보다 차이가 크지 않습니다</strong>. 카야노 33은 공식 스택이 40mm로 발표됐지만 RunRepeat 실측은 힐 36.8mm로, 아드레날린(37mm)과 사실상 같습니다. 쿠션 점수도 둘 다 8/10이죠. 다만 카야노는 FF BLAST MAX 덕에 <strong>착지 순간의 부드러움</strong>이, 아드레날린은 DNA Loft v3의 <strong>일관된 단단함</strong>이 특징이라 성격이 다릅니다.</p>
@@ -4015,7 +4015,7 @@ export const posts_2026_07: BlogPost[] = [
     faqs: [
       {
         question: '과내전(평발)이 심한데 아드레날린과 카야노 33 중 뭐가 나을까요?',
-        answer: '과내전이 심하다면 아드레날린 GTS 25가 더 안전합니다. GuideRails + 미디얼 포스트로 발이 무너지는 것을 물리적으로 강하게 막아주고, 13년 넘게 검증된 방식입니다. 카야노 33은 강한 4D Guidance를 폐지하고 부드러운 FLUIDSUPPORT로 바꿔 "부드러운 안정성"을 택했는데, 심한 과내전에는 교정력이 부족하게 느껴질 수 있고 신기술이라 검증 데이터도 아직 적습니다. 심한 과내전이라면 아드레날린을, 경도~중등도 과내전에 쿠션을 원하면 카야노를 권합니다.',
+        answer: '과내전이 심하다면 아드레날린 GTS 25가 더 안전합니다. GuideRails + 미디얼 포스트로 발이 무너지는 것을 물리적으로 강하게 막아주고, 아드레날린 GTS 자체가 20년 넘게 이어진 브룩스의 대표 안정화 라인입니다(Brooks 공식 블로그). 카야노 33은 강한 4D Guidance를 폐지하고 부드러운 FLUIDSUPPORT로 바꿔 "부드러운 안정성"을 택했는데, 심한 과내전에는 교정력이 부족하게 느껴질 수 있고 신기술이라 검증 데이터도 아직 적습니다. 심한 과내전이라면 아드레날린을, 경도~중등도 과내전에 쿠션을 원하면 카야노를 권합니다.',
       },
       {
         question: '안정화인데 쿠션이 푹신한 걸 원해요. 뭐가 나을까요?',

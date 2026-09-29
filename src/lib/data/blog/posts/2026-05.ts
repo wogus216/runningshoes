@@ -3201,7 +3201,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-store">상세</span>
       <span class="affiliate-btn-product">860 v14 정보 (4E 옵션) →</span>
     </a>
-    <a href="https://search.shopping.naver.com/search/all?query=%EB%89%B4%EB%B0%9C%EB%9E%80%EC%8A%A4+860+v15" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/GowyA70j" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">860 v15 최저가 →</span>
     </a>
@@ -3573,11 +3573,11 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/FYqW0XcA" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/xll2P3cx" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">매직스피드 4 최저가 →</span>
     </a>
-    <a href="https://naver.me/FNtPEotN" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/F05U5V3H" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">매직스피드 5 최저가 →</span>
     </a>
@@ -3884,9 +3884,9 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/GnRnwT4x" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">슈퍼블라스트 2 최저가 →</span>
+    <a href="https://link.coupang.com/a/g5YxEs1B6q" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">슈퍼블라스트 2 보기 →</span>
     </a>
     <a href="/shoes/asics-superblast-3" class="affiliate-btn pending">
       <span class="affiliate-btn-store">상세</span>
@@ -4138,7 +4138,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/57QzqCm0" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/x0OoxmwE" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">엔돌핀 프로 4 최저가 →</span>
     </a>
@@ -4376,7 +4376,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">베이퍼플라이 4 최저가 →</span>
     </a>
-    <a href="https://naver.me/F2ny4AOj" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/xG0ghXsY" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">알파플라이 3 최저가 →</span>
     </a>
@@ -4588,13 +4588,13 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/GPlbVErM" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">1080 v14 최저가 →</span>
+    <a href="https://link.coupang.com/a/g5YNVlXtts" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">1080 v14 보기 →</span>
     </a>
-    <a href="https://naver.me/xAA0rggd" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">1080 v15 최저가 →</span>
+    <a href="https://link.coupang.com/a/g5YOBYxbmm" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">1080 v15 보기 →</span>
     </a>
   </div>
   <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
@@ -4617,7 +4617,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'asics-kayano-32-vs-33-comparison',
     slug: 'asics-kayano-32-vs-33-comparison',
     title: '아식스 카야노 33 vs 32 비교 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 출시 후 평발 한국 러너는 어느 세대?',
-    description: '6월 1일 출시된 카야노 33(199,000원)과 검증된 32(같은 정가 199,000원, 세일 진입). 13년 만의 구조 대변혁 — 4D Guidance System 폐지·FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
+    description: '6월 1일 출시된 카야노 33(199,000원)과 검증된 32(같은 정가 199,000원, 세일 진입). 안정 방식 교체 — 카야노 30~32의 4D Guidance System 대신 FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
     thumbnail: '/images/blog/asics-kayano-32-vs-33-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-17',
@@ -4628,9 +4628,9 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>13년 만의 구조 대변혁</strong> — 33은 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
+    <li><strong>안정 방식 교체</strong> — 33은 4D Guidance System(카야노 30~32) 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
     <li>안정 철학이 정반대: <strong>32 = 단단한 폼으로 발 무너짐 막기</strong>, <strong>33 = 부드러운 폼이 발 모양에 맞춰 변형되며 잡기</strong></li>
-    <li>가격 차이 ~1만원(MSRP)이지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 더 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 13년 검증된 32가 더 안전</strong>할 수 있음</li>
+    <li>가격 차이 ~1만원(MSRP)이지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 더 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 4D Guidance로 세 세대 검증된 32가 더 안전</strong>할 수 있음</li>
   </ul>
 </div>
 
@@ -4656,7 +4656,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
     <tr><td><strong>전족부 스택</strong></td><td>32mm</td><td>32mm</td><td>동일</td></tr>
     <tr><td><strong>드롭</strong></td><td>10mm (공식)</td><td><strong>8mm</strong></td><td>-2mm (아킬레스 부담 ↓)</td></tr>
-    <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (13년 검증)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
+    <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (카야노 30~32)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>FF Blast+ ECO 단일 폼</td><td><strong>FF BLAST MAX (탑) + FF BLAST PLUS (하단) 듀얼</strong></td><td>최초 듀얼 폼</td></tr>
     <tr><td><strong>안정성 점수</strong></td><td>10/10 (검증)</td><td>9/10 (검증 부족)</td><td>-1</td></tr>
     <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>7/10</td><td>+1 (FF BLAST MAX)</td></tr>
@@ -4683,7 +4683,7 @@ export const posts_2026_05: BlogPost[] = [
       <tbody>
         <tr><td><strong>발상</strong></td><td>단단한 폼으로 발이 안쪽으로 무너지는 걸 막는다</td><td>부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡는다</td></tr>
         <tr><td><strong>구조</strong></td><td>중창 안쪽에 단단한 EVA 인서트 (직접 교정력)</td><td>지오메트리(밑창 형상) + 듀얼 폼 (간접 안내)</td></tr>
-        <tr><td><strong>장점</strong></td><td>심한 과내전에도 확실한 교정. 13년 검증</td><td>발이 자연스럽게 움직이면서 안정성 확보. 단단함이 사라져 편안함 ↑</td></tr>
+        <tr><td><strong>장점</strong></td><td>심한 과내전에도 확실한 교정. 세 세대(30~32) 검증</td><td>발이 자연스럽게 움직이면서 안정성 확보. 단단함이 사라져 편안함 ↑</td></tr>
         <tr><td><strong>단점</strong></td><td>"안정화는 딱딱하다"는 평가의 원인</td><td>심한 과내전에는 교정력 부족 가능성 (검증 부족)</td></tr>
       </tbody>
     </table>
@@ -4695,7 +4695,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>5가지 핵심 변화 점검</h2>
 
 <h3>1. 4D Guidance System 폐지 ⚠️ 가장 큰 변화</h3>
-<p>13년간 카야노의 정체성이었던 단단한 EVA 인서트가 사라졌습니다. <strong>32까지의 "단단한 안정감"에 익숙했던 평발 러너에게는 33이 낯설게 느껴질 가능성</strong>이 큽니다. 반대로 "안정화라 그런가 쿠션이 좀 단단했다"고 느꼈던 러너에게는 환영할 변화.</p>
+<p>32까지 쓰인 4D Guidance의 안쪽 지지 구조가 사라졌습니다. <strong>32까지의 "단단한 안정감"에 익숙했던 평발 러너에게는 33이 낯설게 느껴질 가능성</strong>이 큽니다. 반대로 "안정화라 그런가 쿠션이 좀 단단했다"고 느꼈던 러너에게는 환영할 변화.</p>
 
 <h3>2. FF BLAST MAX 도입 ✅ 쿠션 부드러움 개선</h3>
 <p>슈퍼블라스트 3·노바블라스트 5 등에서 호평 받은 FF BLAST MAX가 카야노 시리즈에 처음 도입. 32의 FF Blast+ ECO 대비 <strong>더 부드럽고 반발력도 약간 개선</strong>. "안정화인데 가볍게 통통 튀는 느낌"이 카야노 33의 정체성이 될 가능성.</p>
@@ -4716,7 +4716,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
   </thead>
   <tbody>
-    <tr><td>심한 과내전 + 13년 검증 안전 우선</td><td><strong>32 (세일 대기)</strong></td><td>4D Guidance 강한 교정력, FLUIDSUPPORT 검증 부족</td></tr>
+    <tr><td>심한 과내전 + 검증된 방식 우선</td><td><strong>32 (세일 대기)</strong></td><td>4D Guidance 강한 교정력, FLUIDSUPPORT 검증 부족</td></tr>
     <tr><td>발볼 4E+ (X-와이드 필수)</td><td><strong>32 X-와이드 (세일)</strong></td><td>33 X-와이드 출시 미확정</td></tr>
     <tr><td>가성비 우선 + 표준~와이드 발볼</td><td><strong>32 (세일 12~14만원)</strong></td><td>33 출시 후 30~40% 세일 시점</td></tr>
     <tr><td>"안정화는 단단하다"고 느꼈던 러너</td><td><strong>33</strong></td><td>FF BLAST MAX 도입으로 쿠션 부드러움 ↑</td></tr>
@@ -4775,7 +4775,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>카야노 외 안정화 옵션도 검토할 가치:</p>
 
 <ul>
-  <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 13년 검증된 4D Guidance, 평발 1순위</li>
+  <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 세 세대 검증된 4D Guidance, 평발 1순위</li>
   <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
   <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 19만원대</li>
   <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (294g)</li>
@@ -4807,7 +4807,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
-    <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 13년 검증·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
+    <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 검증된 4D Guidance·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
     <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 19만원대 정가는 32와 동일하니, 신상 특유의 랩 데이터 공백을 감수하더라도 새로운 부드러운 안정성을 시도해볼 가치 ↑.</p>
     <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
   </div>
@@ -4816,7 +4816,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="affiliate-cta">
   <p class="affiliate-cta-label">바로 구매</p>
   <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/GxLH2kjm" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+    <a href="https://naver.me/F93JaTG9" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">카야노 32 최저가 →</span>
     </a>
@@ -4878,7 +4878,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📊</span>
   <div class="callout-body">
     <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 랩 실측(2026-04-25 공개) + Believe in the Run B티어 평가 + Road Trail Run 8.79/10 + 한국 나이키 공식몰 가격(2026-05-17 기준) + 산초 에디터 한강 5~10km 한 달 사용기. 양 신발 단독 리뷰는 <a href="/shoes/nike-pegasus-41">페가수스 41 상세</a> · <a href="/shoes/nike-pegasus-42">페가수스 42 상세</a>에서 확인.</p>
+    <p>RunRepeat 랩 실측(2026-04-25 공개) + Believe in the Run B티어 평가 + Road Trail Run 8.79/10 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독 리뷰는 <a href="/shoes/nike-pegasus-41">페가수스 41 상세</a> · <a href="/shoes/nike-pegasus-42">페가수스 42 상세</a>에서 확인.</p>
   </div>
 </div>
 
@@ -4910,10 +4910,10 @@ export const posts_2026_05: BlogPost[] = [
 <h2>핵심 변화 5가지 — 마케팅 vs 실제</h2>
 
 <h3>1. 풀 렝스 Air Zoom 추가 ✅ 진짜 변화</h3>
-<p>41의 듀얼 포드(힐+전족부 분리 Zoom) → 42에서 풀 렝스 곡선형 Air Zoom으로 교체. 중족~전족부 착지 시 반발감이 확실히 개선됐고, 41에서 밋밋하다고 지적됐던 전족부 반발이 개선된 가장 큰 이유. 5km 이지런에서 41보다 약간 통통 튀는 느낌.</p>
+<p>41의 듀얼 포드(힐+전족부 분리 Zoom) → 42에서 풀 렝스 곡선형 Air Zoom으로 교체. 구조상 중족~전족부 착지까지 Air Zoom이 받치도록 바뀐 게 핵심입니다. 다만 RunRepeat 실측 전족부 에너지 리턴은 61.4→61.2%로 거의 같아, 반발 수치가 커졌다고 보긴 어렵습니다(아래 4번).</p>
 
 <h3>2. 힐 스택 +2.4mm 실측 부드러움 ✅ 진짜 변화</h3>
-<p>RunRepeat 실측: 힐 스택 33.6→36mm, 힐 SA(충격 흡수) 125→131(+6). 한강 아스팔트 5~10km 데일리에서 뒤꿈치 착지 시 무릎 충격 흡수가 확실히 부드러워짐. <strong>무릎 약한 러너에게 42가 더 유리</strong>.</p>
+<p>RunRepeat 실측: 힐 스택 33.6→36mm, 힐 SA(충격 흡수) 125→131(+6). 뒤꿈치 착지 충격을 더 받아 주는 쪽으로 측정됐으니 <strong>무릎이 약한 뒤꿈치 착지 러너라면 42가 더 유리할 가능성이 큽니다</strong>.</p>
 
 <h3>3. 한국 와이드 SKU 정식 출시 ✅ 한국 러너 핵심 변화</h3>
 <p>41까지는 한국 나이키 공식몰에서 와이드 SKU 찾기가 쉽지 않았고 가끔 풀려도 컬러·사이즈 선택지 제한적. <strong>42는 출시 시점부터 남성·여성 와이드 모두 169,000원 동일가</strong>로 정식 출시. 발볼 4E급 한국 러너에게는 이게 가장 의미 있는 업그레이드.</p>
@@ -5073,7 +5073,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/running-shoe-trends-2026-eva-replacement">2026 러닝화 트렌드 — EVA 대체 폼</a></li>
 </ul>
 
-<p><small>출처: RunRepeat 랩 데이터(페가수스 41/42, 2026-04-25 게시) / Believe in the Run 페가수스 42 리뷰 / Road Trail Run 8.79/10 / 한국 나이키 공식몰 가격(2026-05-17 기준) / 산초 에디터 한강 5~10km 한 달 사용 비교. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><small>출처: RunRepeat 랩 데이터(페가수스 41/42, 2026-04-25 게시) / Believe in the Run 페가수스 42 리뷰 / Road Trail Run 8.79/10 / 한국 나이키 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
 `,
   },
   {
@@ -7430,7 +7430,7 @@ export const posts_2026_05: BlogPost[] = [
     id: '2026-asics-kayano-33-launch',
     slug: '2026-asics-kayano-33-launch',
     title: 'ASICS GEL-KAYANO 33 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
-    description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 13년간 유지된 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
+    description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 카야노 30~32의 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
     thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-11',
@@ -7442,7 +7442,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>ASICS GEL-KAYANO 33 — <strong>2026년 6월 1일 글로벌 동시 출시</strong>. 글로벌 $170, 한국 정가 199,000원</li>
-    <li>13년간 유지된 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
+    <li>카야노 30~32에 쓰인 <strong>4D Guidance System 폐지 → FLUIDSUPPORT 신기술</strong>로 안정성 메커니즘 전환. 카야노 시리즈 최초 <strong>FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</strong></li>
     <li>스택 40mm·드롭 8mm·무게 298g — 32와 거의 동일한 외형이지만 <strong>착화감은 완전히 다른 방향</strong>으로 진화. 32 재고 세일이 33 발매 직후 시작될 것</li>
   </ul>
 </div>
@@ -7459,7 +7459,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <p>카야노 시리즈는 1993년 1세대 출시 이후 33세대까지 이어진 ASICS의 <strong>안정화 플래그십</strong>입니다. 한국 러너 사이에서도 "평발이면 카야노", "발목 안쪽으로 무너지면 카야노"가 거의 공식처럼 굳어진 모델이죠. <a href="/blog/2026-heavy-runner-running-shoes">과체중 러너 러닝화 TOP 10</a>에서도 카야노 32를 안정화 1순위로 추천한 이유입니다.</p>
 
-<p>그런데 이번 33은 단순한 마이너 업데이트가 아닙니다. <strong>2013년 카야노 19부터 13년간 유지된 4D Guidance System을 통째로 폐지</strong>하고 새 안정성 시스템(FLUIDSUPPORT)을 도입했습니다. 카야노의 정체성이라 할 미디얼 포스트(안쪽 단단한 폼)·트러스틱(Trusstic) 구조가 사라지는 첫 세대라는 뜻입니다.</p>
+<p>그런데 이번 33은 단순한 마이너 업데이트가 아닙니다. <strong>카야노 30(2023)부터 세 세대 이어진 4D Guidance System을 통째로 폐지</strong>하고 새 안정성 시스템(FLUIDSUPPORT)을 도입했습니다. 카야노의 정체성이라 할 미디얼 포스트(안쪽 단단한 폼)·트러스틱(Trusstic) 구조가 사라지는 첫 세대라는 뜻입니다.</p>
 
 <h2>한 눈에 보는 카야노 33</h2>
 
@@ -7569,7 +7569,7 @@ export const posts_2026_05: BlogPost[] = [
       <td><a href="/shoes/asics-gel-kayano-32">Kayano 32</a></td>
       <td>199,000원</td>
       <td>300g</td>
-      <td>4D Guidance, 단단한 안정성, 13년 검증</td>
+      <td>4D Guidance, 단단한 안정성, 세 세대 검증</td>
     </tr>
     <tr>
       <td><a href="/shoes/brooks-glycerin-gts-22">Brooks Glycerin GTS 22</a></td>
