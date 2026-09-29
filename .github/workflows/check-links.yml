@@ -28,7 +28,9 @@ jobs:
           npx tsx scripts/check-purchase-links.ts 2>&1 | tee link-check-output.txt
           # 요약의 실제 카운트로 판정 (요약 라인의 🔴/❌ 이모지 오탐 방지)
           # 품절/에러가 1개 이상일 때만 후속 단계(메일·이슈) 실행
-          soldout=$(grep -oE '🔴 품절: [0-9]+개' link-check-output.txt | grep -oE '[0-9]+' | head -1)
+          # 요약 줄은 "🔴 판매중지·품절(커넥트 판정): N개"·"🔴 품절(HTML 감지): N개" 두 개다 — 합산한다.
+          # (2026-09-29 전까지는 '🔴 품절: N개'를 찾아 한 번도 매치되지 않았다)
+          soldout=$(grep -oE '🔴 (판매중지·품절\(커넥트 판정\)|품절\(HTML 감지\)): [0-9]+개' link-check-output.txt | grep -oE '[0-9]+개$' | tr -d '개' | awk '{s+=$1} END {print s+0}')
           errors=$(grep -oE '❌ 에러: [0-9]+개' link-check-output.txt | grep -oE '[0-9]+' | head -1)
           if [ "${soldout:-0}" -gt 0 ] || [ "${errors:-0}" -gt 0 ]; then
             echo "has_issues=true" >> "$GITHUB_OUTPUT"
