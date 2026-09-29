@@ -3467,7 +3467,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '발볼이 넓은데 어떤 걸 봐야 하나요?',
         answer:
-          '이 표에서 기본 토박스가 넓게 나온 건 아디제로 SL2, 슈퍼노바 라이즈 2, 고스트 맥스 3, 웨이브 호라이즌 8, 웨이브 인스파이어 21입니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
+          '이 표에서 기본 토박스가 넓게 나온 건 슈퍼노바 라이즈 2, 고스트 맥스 3, 웨이브 호라이즌 8, 웨이브 인스파이어 21입니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
       },
       {
         question: '입문화인데 18만원은 너무 비싼 거 아닌가요?',
@@ -3564,7 +3564,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td><td>169,000원</td><td>286g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a> <span style="color:#0284c7;">안정화</span></td><td>169,000원</td><td>296g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000원</td><td>281g</td><td>약 289원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000원</td><td>245g</td><td>약 298원</td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000원</td><td>245g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a></td><td>159,000원</td><td>207g</td><td>약 318원</td><td>표준</td><td>없음</td></tr>
   </tbody>
 </table>
@@ -3606,7 +3606,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>발볼 기준</th><th>해당 모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>, <a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>, <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td></tr>
+    <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>, <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
     <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
@@ -4722,7 +4722,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>마무리</h2>
-<p>아디제로 SL2는 "다음 단계로 넘어가기 전"이라는 포지션이 정확한 신발입니다. 넓은 발볼과 합리적인 가격, 준수한 반응성을 갖춰 실패 확률이 낮고, 보스턴이나 카본화로 넘어가기 전 발을 만드는 용도로 특히 유용합니다.</p>
+<p>아디제로 SL2는 "다음 단계로 넘어가기 전"이라는 포지션이 정확한 신발입니다. 와이드 옵션과 합리적인 가격, 준수한 반응성을 갖춰 실패 확률이 낮고, 보스턴이나 카본화로 넘어가기 전 발을 만드는 용도로 특히 유용합니다.</p>
 `,
     faqs: [
       {

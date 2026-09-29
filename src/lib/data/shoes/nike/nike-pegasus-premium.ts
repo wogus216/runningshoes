@@ -69,7 +69,7 @@ export const shoe: Shoe = {
     plate: '없음 (Air Zoom Unit이 플레이트 역할)',
     outsole: '다이아몬드 패턴 고무',
     upper: '프리미엄 니트 + 메쉬 (통기성 최상)',
-    width: '좁음 (Narrow fit, 와이드 옵션 없음)',
+    width: '좁음 (Narrow fit, 와이드 옵션 없음) — RunRepeat 랩 토박스 70.3mm(평균 73.2mm), 테이퍼 디자인',
     durability: '600km 예상',
     price: '₩289,000 (MSRP — nike.com/kr 2026-09-28 확인, 기본 컬러 HQ2592·HQ2593 기준. 이전 표기 ₩279,000)',
     costPerKm: '약 ₩482/km (600km 기준)',

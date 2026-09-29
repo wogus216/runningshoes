@@ -78,7 +78,7 @@ export const shoe: Shoe = {
     plate: '3/4 카본 플레이트',
     outsole: '최소 러버',
     upper: '초경량 메쉬',
-    width: '좁음',
+    width: '좁음 — RunRepeat 랩 토박스 69.6mm(평균 73.2mm), 급격한 테이퍼라 발볼 넓으면 마라톤 거리에서 힘들다는 평가 · 표준 폭만 출시',
     durability: '200km',
     price: '₩399,000',
     costPerKm: '약 ₩1,995/km (200km 기준)',

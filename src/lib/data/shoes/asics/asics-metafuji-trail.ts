@@ -69,7 +69,7 @@ export const shoe: Shoe = {
     plate: '풀 카본 플레이트',
     outsole: 'ASICSGRIP + 약 2.7mm 러그',
     upper: 'Motion Wrap TR 경량 메쉬',
-    width: '표준 (좁은 편, 와이드 없음)',
+    width: '좁은 편 — RunRepeat 랩 토박스 69.6mm(트레일 평균 74.4mm), 딱 맞는 핏 · 와이드 없음',
     durability: '550-600km',
     price: '₩279,000 (MSRP)',
     costPerKm: '약 ₩465/km (600km 기준)',

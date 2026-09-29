@@ -70,7 +70,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '와플 디자인 러버',
     upper: '엔지니어드 메쉬 + 플러시 패딩',
-    width: '표준 Only',
+    width: '표준 Only — RunRepeat 랩 토박스 68.6mm(평균 73.2mm), 급격히 테이퍼진 토박스',
     durability: '600-650km 예상',
     price: '₩299,000 (MSRP — nike.com/kr 2026-09-28 확인, 기본 컬러 HQ2050·HM5973 기준. 이전 표기 ₩289,000)',
     costPerKm: '약 ₩460/km (650km 기준)',
