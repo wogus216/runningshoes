@@ -2,6 +2,194 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'eworld-83tower-uphill-run-challenge',
+    slug: 'eworld-83tower-uphill-run-challenge',
+    title:
+      '2026 이월드 83타워 업힐런 챌린지 — 10월 11일 대구 | 참가비·코스·접수 마감 9월 30일',
+    description:
+      '2026 이월드 83타워 업힐런 챌린지가 10월 11일 대구에서 열립니다. 1.8km 오르막 도로를 달린 뒤 83타워 계단 550개를 올라 77층 전망대까지 가는 업힐+수직 러닝 대회입니다. 참가비 55,000원, 선착순 500명, 접수는 9월 30일까지. 이월드 자유이용권·피니셔 메달 포함.',
+    thumbnail: '/images/blog/eworld-83tower-uphill-run-challenge.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-29',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: [
+      '83타워 업힐런',
+      '이월드 업힐런',
+      '대구 마라톤',
+      '업힐 러닝',
+      '타워러닝',
+      '10월 마라톤',
+      '러닝대회 접수',
+    ],
+    event: {
+      name: '2026 이월드 83타워 업힐런 챌린지 (UP TO 83)',
+      startDate: '2026-10-11T07:00',
+      location: {
+        name: '이월드 제1주차장 스타트존',
+        address: '대구 달서구 두류공원로 200',
+      },
+      organizer: '㈜이월드 / 페스티벌잼',
+      url: 'https://leisure-web.yanolja.com/leisure/10365567',
+      offers: [
+        {
+          name: '업힐런 챌린지',
+          priceKrw: 55000,
+          url: 'https://leisure-web.yanolja.com/leisure/10365567',
+        },
+      ],
+    },
+    raceMeta: {
+      displayTitle: '83타워 업힐런, 1.8km 달리고 77층을 오른다',
+      displaySubtitle: '10월 11일 07:00 — 접수 마감 9월 30일',
+      raceDate: '2026-10-11',
+      registrationStart: '2026-09-03',
+      registrationEnd: '2026-09-30',
+      registrationVia: '야놀자 NOL(leisure-web.yanolja.com)',
+      action: {
+        what: '접수 마감이 2026년 9월 30일입니다',
+        how: '야놀자 NOL 앱 또는 웹사이트에서 신청합니다. 선착순 500명이며, 만 18세 이상 성인만 참가할 수 있습니다. 참가비는 55,000원이고 9월 30일 이전 취소 시 100% 환불, 이후에는 환불이 불가합니다. 야놀자 NOL 접수 페이지를 2026년 9월 29일 직접 열어 확인했습니다.',
+      },
+      facts: [
+        { label: '대회일', value: '10월 11일', sub: '일 · 07:00 출발' },
+        { label: '장소', value: '이월드', sub: '대구 달서구 두류공원로 200' },
+        { label: '코스', value: '1.8km + 계단 550개', sub: '오르막 도로 → 4층~77층' },
+        { label: '참가비', value: '55,000원' },
+        { label: '정원', value: '500명', sub: '선착순' },
+        { label: '접수 마감', value: '9월 30일', sub: '야놀자 NOL' },
+      ],
+      highlights: [
+        {
+          badge: '202m',
+          title: '오르막 도로와 실내 계단을 연속으로 오르는 하이브리드 코스입니다',
+          desc: '이월드 제1주차장에서 출발해 약 1.8km 오르막 도로를 달린 뒤 83타워 4층으로 진입합니다. 이후 엘리베이터 없이 계단 550개를 올라 77층 전망대(높이 202m)까지 올라가는 구성입니다. 야외 러닝과 실내 수직 러닝이 결합된 형태로, 일반적인 도로 레이스나 타워러닝과 다릅니다.',
+        },
+        {
+          badge: '자유이용권',
+          title: '웰컴키트에 이월드 자유이용권 1매가 포함됩니다',
+          desc: 'KorMarathon 기준 웰컴키트에는 이월드 자유이용권 1매, 짐색, 링티제로, 링티에너지젤, 파워오투 망고, 스포츠 타월이 포함됩니다. 이월드 자유이용권의 현장 판매가는 44,000원이므로 참가비(55,000원) 대비 키트의 실질 가치가 높은 편입니다.',
+        },
+        {
+          badge: '메달',
+          title: '완주자에게 83타워 시그니처 공식 메달이 수여됩니다',
+          desc: '완주증, 포토 서비스, 완주자 애프터파티가 준비돼 있고, 83타워를 모티브로 한 공식 메달이 제공됩니다.',
+        },
+      ],
+    },
+    content: `
+<div class="deadline-strip">🏔️ <strong>접수 마감 2026년 9월 30일.</strong> 야놀자 NOL에서 선착순 500명을 모집합니다. 대회는 <strong>10월 11일(일) 오전 7시</strong>, 대구 이월드 제1주차장 출발.</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔎</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글이 근거로 삼은 것</p>
+    <p><strong>야놀자 NOL 접수 페이지</strong>를 2026년 9월 29일 직접 열어 대회일·장소·참가비·환불 조건을 확인했습니다. 코스 거리·계단 수·웰컴키트·정원은 <strong>KorMarathon</strong> 레이스 정보 페이지에서 확인했습니다. 이월드 공식 홈페이지(eworld.kr)는 SPA 구조로 대회 정보를 직접 열람하지 못했습니다.</p>
+  </div>
+</div>
+
+<h2>대회 개요</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>대회명</td><td>2026 이월드 83타워 업힐런 챌린지 (UP TO 83)</td></tr>
+    <tr><td>대회일</td><td>2026년 10월 11일(일) 오전 07:00</td></tr>
+    <tr><td>장소</td><td>대구 이월드 제1주차장 스타트존 (달서구 두류공원로 200)</td></tr>
+    <tr><td>코스</td><td>1.8km 오르막 도로 + 83타워 4층→77층 계단 550개</td></tr>
+    <tr><td>참가비</td><td>55,000원</td></tr>
+    <tr><td>정원</td><td>선착순 500명</td></tr>
+    <tr><td>참가 자격</td><td>만 18세 이상 성인</td></tr>
+    <tr><td>접수</td><td>야놀자 NOL · 9월 3일~9월 30일</td></tr>
+    <tr><td>주최</td><td>㈜이월드 / 페스티벌잼</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>코스 — 1.8km 오르막을 달리고, 77층을 오른다</h2>
+<p>출발은 이월드 제1주차장입니다. 약 1.8km 오르막 도로를 달린 뒤 83타워 4층으로 진입해 엘리베이터 없이 계단 550개를 올라 77층 전망대까지 올라갑니다. 전망대 높이는 202m입니다.</p>
+<p>일반적인 도로 레이스와 다른 점이 두 가지 있습니다. 첫째, 전 구간이 오르막입니다. 평지 구간이 사실상 없으므로 도로 1.8km와 체감 난이도가 다릅니다. 둘째, 야외 러닝 직후 실내 계단 오르기로 전환됩니다. 달리기와 계단 오르기는 쓰는 근육군이 다르기 때문에 후반에 대퇴사두근과 종아리에 부하가 집중됩니다.</p>
+
+<div class="callout tip">
+  <span class="callout-icon">💡</span>
+  <div class="callout-body">
+    <p class="callout-title">타워러닝이 처음이라면</p>
+    <p><a href="/blog/lotte-world-tower-skyrun-tower-running-guide">타워러닝 완전 가이드</a>에서 계단 오르기 페이스 전략, 난간 활용법, 호흡법을 정리해뒀습니다. 83타워는 순수 계단 구간이 4층~77층(550개)인데, 롯데월드타워 스카이런(2,917개)보다 짧은 대신 앞에 1.8km 야외 오르막이 붙어 있어 출발 시점의 체력 관리가 핵심입니다.</p>
+  </div>
+</div>
+
+<h2>참가비 55,000원 — 웰컴키트의 실질 가치</h2>
+<p>참가비는 <strong>55,000원</strong>입니다. 웰컴키트에는 다음이 포함됩니다:</p>
+<ul>
+  <li><strong>이월드 자유이용권 1매</strong> — 현장 판매가 44,000원</li>
+  <li>짐색</li>
+  <li>링티제로, 링티에너지젤</li>
+  <li>파워오투 망고</li>
+  <li>스포츠 타월</li>
+</ul>
+<p>자유이용권만으로 참가비의 80%에 해당합니다. 대회 후 이월드에서 시간을 보낼 계획이라면 참가비 대비 돌아오는 것이 큰 편입니다.</p>
+
+<h2>완주 혜택</h2>
+<ul>
+  <li><strong>83타워 시그니처 공식 메달</strong></li>
+  <li>완주증</li>
+  <li>포토 서비스</li>
+  <li>완주자 애프터파티</li>
+</ul>
+
+<h2>접수 — 9월 30일까지, 야놀자 NOL</h2>
+<p>접수는 <strong>야놀자 NOL</strong> 앱 또는 웹사이트에서 합니다. 선착순 500명이므로 마감일 전에 정원이 차면 조기 마감될 수 있습니다.</p>
+<ul>
+  <li><strong>접수 기간</strong>: 2026년 9월 3일 ~ 9월 30일</li>
+  <li><strong>참가 자격</strong>: 만 18세 이상 성인</li>
+  <li><strong>환불</strong>: 9월 30일 이전 취소 시 100% 환불, 이후 환불 불가</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">환불은 접수 마감일까지만 가능합니다</p>
+    <p>9월 30일 이전에 취소하면 100% 환불되지만, 그 이후에는 환불이 불가합니다. 접수 마감일과 환불 마감일이 같으므로, 참가 여부가 불확실하다면 마감일 전에 결정해야 합니다.</p>
+  </div>
+</div>
+
+<h2>대구에서 달리기 — 이월드와 두류공원</h2>
+<p>이월드는 두류공원 안에 있습니다. 대구에서 달리기 좋은 곳을 찾고 있다면 <a href="/blog/daegu-unique-running-courses-7">대구 러닝 코스 7선</a>에서 두류공원을 포함한 코스를 정리해뒀습니다. 대회 전후로 대구 러닝을 경험해볼 수 있는 코스입니다.</p>
+
+<h2>참가 전 체크리스트</h2>
+<ul>
+  <li><strong>접수 마감 9월 30일</strong> — 선착순 500명이 차면 조기 마감될 수 있습니다</li>
+  <li><strong>만 18세 이상</strong> — 미성년자는 참가할 수 없습니다</li>
+  <li><strong>오르막 + 계단</strong> — 전 구간 상승이므로 평지 대회와 체감이 다릅니다</li>
+  <li><strong>환불은 9/30 전까지</strong> — 접수 마감 이후에는 환불이 불가합니다</li>
+  <li><strong>이월드 자유이용권 포함</strong> — 대회 후 놀이공원 이용 계획을 세워두면 참가비 가치가 올라갑니다</li>
+</ul>
+
+<p><small>출처: 야놀자 NOL 접수 페이지(leisure-web.yanolja.com/leisure/10365567, 2026-09-29 확인), KorMarathon 레이스 정보(kormarathon.com, 2026-09-29 확인). 마라톤GO 스니펫(주최사 정보). 이월드 공식 홈페이지(eworld.kr)는 SPA 구조로 대회 정보를 직접 열람하지 못했습니다.</small></p>
+`,
+    faqs: [
+      {
+        question: '83타워 업힐런 챌린지 접수는 어디서 하나요?',
+        answer:
+          '야놀자 NOL 앱 또는 웹사이트에서 신청합니다. 접수 기간은 9월 3일부터 9월 30일까지이며, 선착순 500명입니다.',
+      },
+      {
+        question: '83타워 업힐런 코스는 어떻게 되나요?',
+        answer:
+          '이월드 제1주차장에서 출발해 약 1.8km 오르막 도로를 달린 뒤, 83타워 4층에서 77층 전망대까지 계단 550개를 올라갑니다. 전망대 높이는 202m입니다.',
+      },
+      {
+        question: '83타워 업힐런 참가비는 얼마인가요?',
+        answer:
+          '55,000원입니다. 웰컴키트에 이월드 자유이용권 1매(현장 판매가 44,000원), 짐색, 보충제 등이 포함됩니다.',
+      },
+      {
+        question: '83타워 업힐런 환불은 가능한가요?',
+        answer:
+          '9월 30일 이전 취소 시 100% 환불됩니다. 9월 30일 이후에는 환불이 불가합니다.',
+      },
+    ],
+  },
+  {
     id: 'running-shoes-tier-chart-2026',
     slug: 'running-shoes-tier-chart-2026',
     title:
