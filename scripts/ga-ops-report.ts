@@ -8,12 +8,15 @@
  * 구매처 집계는 click의 pagePath+linkUrl을 현재 신발 DB/블로그 CTA와 대조한다.
  */
 import { BetaAnalyticsDataClient, type protos } from '@google-analytics/data';
+import { JWT } from 'google-auth-library';
 import { getShoes } from '../src/lib/data/shoes';
 import { blogPosts } from '../src/lib/data/blog/posts';
 import { resolveKeyFile } from './lib/google-auth';
 
 type Row = protos.google.analytics.data.v1beta.IRow;
 type PurchaseTarget = { type: 'shoe' | 'apparel'; name: string; store: string };
+type SearchPageRow = { keys: string[]; clicks: number; impressions: number; ctr: number; position: number };
+type SearchPage = { clicks: number; impressions: number; weightedPosition: number };
 
 const days = Number(process.argv[2] ?? 28);
 if (!Number.isInteger(days) || days < 1 || days > 90) {
@@ -33,6 +36,8 @@ const perHundred = (clicks: number, views: number) => views ? (clicks / views * 
 const kst = (date: Date) => new Intl.DateTimeFormat('en-CA', { timeZone: 'Asia/Seoul' }).format(date);
 const periodEnd = new Date(Date.now() - 86400_000);
 const periodStart = new Date(Date.now() - days * 86400_000);
+const searchEnd = new Date(Date.now() - 3 * 86400_000);
+const searchStart = new Date(searchEnd.getTime() - days * 86400_000);
 
 function normalizedUrl(raw: string): string | null {
   try {
@@ -102,6 +107,71 @@ async function report(dateRange: typeof current, dimensions: string[], metrics: 
   return response.rows ?? [];
 }
 
+function searchPath(raw: string): string {
+  try {
+    return new URL(raw).pathname.replace(/\/$/, '') || '/';
+  } catch {
+    return raw.replace(/#.*$/, '').replace(/\/$/, '') || '/';
+  }
+}
+
+async function searchConsolePages(): Promise<Map<string, SearchPage>> {
+  const key = require(resolveKeyFile());
+  const auth = new JWT({
+    email: key.client_email,
+    key: key.private_key,
+    scopes: ['https://www.googleapis.com/auth/webmasters.readonly'],
+  });
+  const sites = process.env.GSC_SITE ? [process.env.GSC_SITE] : ['sc-domain:allrunabout.com', 'https://allrunabout.com/'];
+  const dateRange = { startDate: kst(searchStart), endDate: kst(searchEnd) };
+  let site = '';
+  let rows: SearchPageRow[] = [];
+  let lastError = '';
+  for (const candidate of sites) {
+    try {
+      const url = `https://searchconsole.googleapis.com/webmasters/v3/sites/${encodeURIComponent(candidate)}/searchAnalytics/query`;
+      const result = await auth.request<{ rows?: SearchPageRow[] }>({
+        url,
+        method: 'POST',
+        data: { ...dateRange, dimensions: ['page'], rowLimit: 25000 },
+      });
+      site = candidate;
+      rows = result.data.rows ?? [];
+      break;
+    } catch (error) {
+      lastError = error instanceof Error ? error.message : String(error);
+    }
+  }
+  if (!site) throw new Error(`GSC 속성 접근 실패: ${lastError}`);
+
+  const pages = new Map<string, SearchPage>();
+  for (const row of rows) {
+    const path = searchPath(row.keys[0]);
+    const page = pages.get(path) ?? { clicks: 0, impressions: 0, weightedPosition: 0 };
+    page.clicks += row.clicks;
+    page.impressions += row.impressions;
+    page.weightedPosition += row.position * row.impressions;
+    pages.set(path, page);
+  }
+  return pages;
+}
+
+function contentGroup(path: string): string {
+  if (path.startsWith('/blog/')) return '블로그';
+  if (path.startsWith('/shoes/')) return '신발 상세';
+  if (path.startsWith('/marathon/')) return '대회 상세';
+  if (path.startsWith('/vs/')) return '신발 비교 글';
+  if (path.startsWith('/best/')) return '추천 목록';
+  if (path === '/compare') return '비교';
+  if (path === '/recommend') return '추천';
+  if (path.startsWith('/brands/')) return '브랜드';
+  if (path.startsWith('/gels/')) return '젤·영양';
+  if (path.startsWith('/fabrics/')) return '의류 소재';
+  if (path.startsWith('/saturday')) return '산초 토요일';
+  if (path === '/') return '홈';
+  return '기타';
+}
+
 function counts(rows: Row[]) {
   return new Map(rows.map((row) => [value(row, 0).replace(/\/$/, '') || '/', metric(row, 0)]));
 }
@@ -135,18 +205,24 @@ function purchaseClicks(rows: Row[], catalog: ReturnType<typeof purchaseCatalog>
 
 async function main() {
   const catalog = purchaseCatalog();
-  const [tot, oldTot, sources, viewsRaw, oldViewsRaw, clicksRaw, oldClicksRaw, metadata] = await Promise.all([
+  const [tot, oldTot, sources, pageRaw, oldViewsRaw, landingRaw, clicksRaw, oldClicksRaw, eventRaw, metadata] = await Promise.all([
     report(current, [], ['sessions', 'screenPageViews', 'engagementRate']),
     report(previous, [], ['sessions', 'screenPageViews', 'engagementRate']),
     report(current, ['sessionSourceMedium'], ['sessions']),
-    report(current, ['pagePath'], ['screenPageViews']),
+    report(current, ['pagePath'], ['screenPageViews', 'userEngagementDuration']),
     report(previous, ['pagePath'], ['screenPageViews']),
+    report(current, ['landingPage'], ['sessions', 'bounceRate', 'engagedSessions']),
     report(current, ['pagePath', 'linkUrl'], ['eventCount'], 'click'),
     report(previous, ['pagePath', 'linkUrl'], ['eventCount'], 'click'),
+    report(current, ['eventName'], ['eventCount']),
     client.getMetadata({ name: `${property}/metadata` }),
   ]);
   const now = tot[0], before = oldTot[0];
-  const views = counts(viewsRaw), oldViews = counts(oldViewsRaw);
+  const views = new Map(pageRaw.map((row) => [value(row, 0).replace(/\/$/, '') || '/', {
+    views: metric(row, 0),
+    engagementSeconds: metric(row, 1),
+  }]));
+  const oldViews = counts(oldViewsRaw);
   const clicks = purchaseClicks(clicksRaw, catalog);
   const oldClicks = purchaseClicks(oldClicksRaw, catalog);
   const dimensions = new Set((metadata[0].dimensions ?? []).map((d) => d.apiName));
@@ -167,7 +243,7 @@ async function main() {
   const naverSessions = (sourceSessions.get('m.search.naver.com / referral') ?? 0) + (sourceSessions.get('naver / organic') ?? 0);
   console.log(`  네이버 관련 두 경로 합계 ${number(naverSessions)} · 구글 자연검색 ${number(sourceSessions.get('google / organic') ?? 0)} (GA4 채널 표기는 서로 다름)`);
 
-  const posts = blogPosts.map((post) => ({ post, views: views.get(`/blog/${post.slug}`) ?? 0, prev: oldViews.get(`/blog/${post.slug}`) ?? 0 }));
+  const posts = blogPosts.map((post) => ({ post, views: views.get(`/blog/${post.slug}`)?.views ?? 0, prev: oldViews.get(`/blog/${post.slug}`) ?? 0 }));
   console.log('\n━━ 많이 읽은 글 TOP 5 ━━');
   for (const item of posts.sort((a, b) => b.views - a.views).slice(0, 5)) {
     console.log(`  ${number(item.views)}회 · ${item.post.title.slice(0, 47)} · /blog/${item.post.slug}`);
@@ -177,8 +253,96 @@ async function main() {
   for (const item of rising) console.log(`  +${number(item.views - item.prev)}회 · ${item.post.title.slice(0, 47)}`);
   if (!rising.length) console.log('  충분한 증가 사례 없음');
 
+  const pageRows = Array.from(views.entries()).map(([path, data]) => ({
+    path,
+    ...data,
+    secondsPerView: data.views ? data.engagementSeconds / data.views : 0,
+  }));
+  const pageLabel = (path: string) => {
+    const post = blogPosts.find((item) => `/blog/${item.slug}` === path);
+    if (post) return `${post.title.slice(0, 38)} · ${path}`;
+    const shoe = catalog.shoes.get(path);
+    if (shoe) return `${shoe.brand} ${shoe.name} · ${path}`;
+    return path;
+  };
+
+  const groups = new Map<string, { views: number; engagementSeconds: number; pages: number }>();
+  for (const page of pageRows) {
+    const group = contentGroup(page.path);
+    const item = groups.get(group) ?? { views: 0, engagementSeconds: 0, pages: 0 };
+    item.views += page.views;
+    item.engagementSeconds += page.engagementSeconds;
+    item.pages += 1;
+    groups.set(group, item);
+  }
+  console.log('\n━━ 콘텐츠 유형별 소비 ━━');
+  for (const [group, data] of Array.from(groups.entries()).sort((a, b) => b[1].views - a[1].views)) {
+    const avg = data.views ? data.engagementSeconds / data.views : 0;
+    console.log(`  ${group} · ${number(data.views)}조회 · 참여 ${Math.round(data.engagementSeconds / 3600)}시간 · 조회당 ${avg.toFixed(1)}초 · ${data.pages}개 경로`);
+  }
+  console.log('  ※ 조회당 참여 시간은 userEngagementDuration ÷ 조회수로 계산한 평균치.');
+
+  console.log('\n━━ 오래 읽힌 페이지 TOP 5 (조회 ≥30) ━━');
+  const deepReads = pageRows.filter((page) => page.views >= 30 && contentGroup(page.path) !== '기타')
+    .sort((a, b) => b.secondsPerView - a.secondsPerView).slice(0, 5);
+  for (const page of deepReads) console.log(`  조회당 ${page.secondsPerView.toFixed(1)}초 · ${number(page.views)}조회 · ${pageLabel(page.path)}`);
+  if (!deepReads.length) console.log('  기준을 만족하는 페이지 없음');
+
+  const landingRows = landingRaw.map((row) => ({ path: value(row, 0), sessions: metric(row, 0), bounceRate: metric(row, 1) }));
+  const unknownLandingSessions = landingRows.filter((row) => !row.path || row.path === '(not set)').reduce((sum, row) => sum + row.sessions, 0);
+  const highBounce = landingRows.filter((row) => row.path.startsWith('/') && row.sessions >= 20)
+    .sort((a, b) => b.bounceRate - a.bounceRate).slice(0, 5);
+  console.log('\n━━ 이탈률 높은 랜딩 페이지 TOP 5 (세션 ≥20) ━━');
+  for (const row of highBounce) console.log(`  이탈률 ${(row.bounceRate * 100).toFixed(1)}% · ${number(row.sessions)}세션 · ${pageLabel(row.path)}`);
+  if (!highBounce.length) console.log('  기준을 만족하는 랜딩 페이지 없음');
+  console.log(`  (not set)/경로 없음 ${number(unknownLandingSessions)}세션은 페이지별 이탈 목록에서 제외.`);
+  console.log('  ※ 이탈률은 참여 없는 세션 비율. 의도한 정보를 빠르게 얻고 끝난 방문도 포함될 수 있어 페이지 내용과 함께 판단.');
+
+  console.log(`\n━━ GSC 검색 유입 콘텐츠 (${kst(searchStart)} ~ ${kst(searchEnd)}, 약 3일 지연) ━━`);
+  const seoCandidatePaths: string[] = [];
+  try {
+    const searchPages = await searchConsolePages();
+    const byClicks = Array.from(searchPages.entries()).sort((a, b) => b[1].clicks - a[1].clicks).slice(0, 5);
+    for (const [path, data] of byClicks) {
+      const ctr = data.impressions ? (data.clicks / data.impressions) * 100 : 0;
+      const position = data.impressions ? data.weightedPosition / data.impressions : 0;
+      console.log(`  검색 클릭 ${number(data.clicks)} · 노출 ${number(data.impressions)} · CTR ${ctr.toFixed(1)}% · 평균순위 ${position.toFixed(1)} · GA 조회 ${number(views.get(path)?.views ?? 0)} · ${pageLabel(path)}`);
+    }
+    if (!byClicks.length) console.log('  해당 기간 검색 유입 페이지 없음');
+    const seoCandidates = Array.from(searchPages.entries())
+      .filter(([, data]) => data.impressions >= 50 && data.weightedPosition / data.impressions <= 12 && data.clicks / data.impressions < 0.03)
+      .sort((a, b) => b[1].impressions - a[1].impressions).slice(0, 5);
+    console.log('  검색 개선 후보: 노출 ≥50, 평균순위 12위 이내, CTR <3%');
+    for (const [path, data] of seoCandidates) {
+      seoCandidatePaths.push(path);
+      console.log(`    노출 ${number(data.impressions)} · CTR ${(data.clicks / data.impressions * 100).toFixed(1)}% · ${pageLabel(path)}`);
+    }
+    if (!seoCandidates.length) console.log('    해당 후보 없음');
+    console.log('  ※ GSC 검색 클릭과 GA 조회는 집계 기간·정의가 달라 일치 비율로 해석하지 않음.');
+  } catch (error) {
+    console.log(`  GSC 조회 불가: ${error instanceof Error ? error.message : String(error)} (GA4 나머지 보고는 계속 표시)`);
+  }
+
+  const eventCounts = new Map(eventRaw.map((row) => [value(row, 0), metric(row, 0)]));
+  const navigationEvents = [
+    ['home_recommend_start', '홈 추천 시작 클릭'],
+    ['home_problem_category_click', '홈 문제별 탐색'],
+    ['home_shoe_detail_click', '홈 신발 상세 이동'],
+    ['home_compare_click', '홈 비교 이동 클릭'],
+    ['home_blog_click', '홈 블로그 이동'],
+    ['home_filter_apply', '홈 신발 목록 필터 적용'],
+    ['home_shoe_index_expand', '홈 신발 목록 더 보기'],
+    ['home_resume_click', '최근 본 항목 이어보기'],
+    ['home_resume_clear', '최근 기록 지우기'],
+    ['home_ad_view', '홈 광고 영역 노출'],
+    ['home_trust_methodology_open', '분석 방법 보기'],
+  ] as const;
+  console.log('\n━━ 이미 수집 중인 홈 상호작용 ━━');
+  for (const [event, label] of navigationEvents) console.log(`  ${label} · ${number(eventCounts.get(event) ?? 0)}회`);
+  console.log('  ※ 이벤트 발생 횟수. 추천 완료·비교 구성 완료는 별도 이벤트가 아직 없어 단계별 전환율로 보지 않음.');
+
   const shoeRows = Array.from(catalog.shoes.entries()).map(([path, shoe]) => ({
-    path, shoe, views: views.get(path) ?? 0, clicks: clicks.byPage.get(path) ?? 0,
+    path, shoe, views: views.get(path)?.views ?? 0, clicks: clicks.byPage.get(path) ?? 0,
   }));
   console.log('\n━━ 구매처 클릭 상위 신발 ━━');
   for (const item of shoeRows.sort((a, b) => b.clicks - a.clicks).slice(0, 8)) {
@@ -205,6 +369,9 @@ async function main() {
   if (shoeRows[0]?.clicks) actions.push(`${shoeRows[0].shoe.brand} ${shoeRows[0].shoe.name} 판매처 가격·재고 확인`);
   if (low.length) actions.push(`${low[0].shoe.brand} ${low[0].shoe.name} 구매 버튼·판매처 점검`);
   if (unknownSource / Math.max(1, metric(now, 0)) > 0.05) actions.push('유입 출처 (not set) 증가 원인 점검');
+  if (unknownLandingSessions / Math.max(1, metric(now, 0)) > 0.05) actions.push('랜딩 경로 누락 세션 원인 확인');
+  if (highBounce[0]) actions.push(`랜딩 이탈 상위 “${pageLabel(highBounce[0].path).slice(0, 35)}…” 맥락 확인`);
+  if (seoCandidatePaths[0]) actions.push(`“${pageLabel(seoCandidatePaths[0]).slice(0, 35)}…” 검색 제목·설명 점검`);
   if (!actions.length) actions.push('현재 추세 유지, 다음 기간에 다시 비교');
   console.log('\n다음 행동: ' + actions.map((action, index) => `${index + 1}. ${action}`).join(' · ') + '\n');
 }
