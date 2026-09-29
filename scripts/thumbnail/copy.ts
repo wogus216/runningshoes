@@ -38,11 +38,11 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
-  // 출처: 사이트 신발 DB(한국 공식몰 정가·DB 표기 무게) — 라이즈 3 159,000원·270g, 보메로 18 189,000원·298g.
+  // 출처: 사이트 신발 DB(한국 공식몰 정가) · RunRepeat 랩 실측 무게(2026-09-29 원문 확인) — 라이즈 3 159,000원·264g, 보메로 18 189,000원·298g.
   'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026': {
     title: '슈퍼노바 라이즈 3 vs 보메로 18',
-    subtitle: '3만원·28g 차이 — 스택 차이는 표기와 실측이 다릅니다',
-    data: '159,000원 · 270g  vs  189,000원 · 298g',
+    subtitle: '3만원·34g 차이 — 쿠션 실측은 140 대 147 SA로 가깝다',
+    data: '159,000원 · 264g  vs  189,000원 · 298g (RunRepeat 랩 실측)',
   },
   // 출처: 한경서울마라톤 공식 홈페이지 메인·공지(2026-09-29 확인) — 10/5 여의도공원,
   // 접수 8/28 마감, 하프 8만·10K 7만·5K 6만원(5K 기록칩 없음).
