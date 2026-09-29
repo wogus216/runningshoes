@@ -289,6 +289,22 @@ const BLOG_AUTOBIO = [
   /제\s*경험상/, /제\s*최애/, /(저도|제가)\s*(첫|처음)\s/, /제\s*(첫|처음)\s*(풀|하프|마라톤|대회)/,
   /지난\s*\d+\s*년간[^.]{0,30}(테스트|신어|먹어)/, /진단을?\s*받았/, /(신어|먹어|뛰어|달려|착용해)\s*봤습니다/,
 ];
+// 블로그의 1인칭 착용·시승 서술(2026-09-29 정리 55곳). 절대 규칙 4 — 우리는 신발을 신어 보고 평가하지 않는다.
+// 비교글 출처줄의 "산초 에디터 한강 … 사용기/비교 주행", 본문의 "5km 이지런에서 … 느낌" 같은 형태가 2026-05 발행 이후 4개월 넘게 검증을 통과했다.
+// ⚠️ 독자 권유("직접 신어 보세요")·정직 고지("직접 신어 보지 않습니다")·외부 인용 따옴표("달려보니 …")는 정당하므로
+//    넓은 `직접 신어`·`실착`·`사용기` 단독은 넣지 않았다 — 과거형·주어·거리 숫자가 붙은 형태만 잡는다.
+const BLOG_WEAR_CLAIM = [
+  /(한\s*달|한강|에디터)[^.<\n]{0,20}(사용기|사용\s*비교|비교\s*주행|실주)/,
+  /(구입|구매)해[^.<\n]{0,25}(사용한|사용했|신었|달렸|착용했)/,
+  /한\s*달간?[^.<\n]{0,25}(사용한|착용한|신은|신어\s?본)/,
+  /에디터(가|는)?\s*(직접\s*)?(신어|신고|착용해|달려\s?보|뛰어\s?보)/,
+  /필자\s*(의\s*)?발/,
+  /(신어|착용해|써)\s?보니/,
+  /(?<!["“'‘])(달려|뛰어)\s?보니/,
+  /(\d+\s*km|\d+분\/km)\s*(이지런|조깅|LSD)(에서)?[^.<\n]{0,30}(느낌|체감)/,
+  /\d+\s*km\s*(돌|뛸|달릴)\s*때[^.<\n]{0,30}(느낌|체감)/,
+  /1차\s*(사용\s*)?후기/,
+];
 // 출처가 명시된 항목만 rating 을 허용한다. 새 외부 매체를 인용하면 여기 추가할 것(컴포넌트 isSourced 정규식과 동일 유지).
 const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i;
 // 전환이 끝난 상태. 0 이상이면 새 허구 후기 = 커밋 차단.
@@ -337,13 +353,20 @@ for (const file of fs.readdirSync(blogDir).filter((f) => f.endsWith('.ts') && f 
       if (!m) continue;
       const idx = m.index ?? 0;
       fictionHits.push(`[blog/${file}:${i + 1}] 자전적 경험 주장: "${m[0]}" — …${line.slice(Math.max(0, idx - 30), idx + 60).trim()}…`);
+      return;
+    }
+    for (const re of BLOG_WEAR_CLAIM) {
+      const m = line.match(re);
+      if (!m) continue;
+      const idx = m.index ?? 0;
+      fictionHits.push(`[blog/${file}:${i + 1}] 1인칭 착용·시승 서술: "${m[0]}" — …${line.slice(Math.max(0, idx - 30), idx + m[0].length + 30).trim()}…`);
       break;
     }
   });
 }
 
 if (fictionHits.length === 0) {
-  ok(`리뷰 ${scanned}건 · 블로그 ${blogScanned}개 파일 — 1인칭 허구 경험·가짜 출처·무출처 별점 없음`);
+  ok(`리뷰 ${scanned}건 · 블로그 ${blogScanned}개 파일 — 1인칭 허구 경험·착용 서술·가짜 출처·무출처 별점 없음`);
 } else if (fictionHits.length > FICTION_MIGRATION_REMAINING) {
   error(
     `허구 후기 ${fictionHits.length}건 — 기준선 ${FICTION_MIGRATION_REMAINING}건보다 ${fictionHits.length - FICTION_MIGRATION_REMAINING}건 증가. ` +

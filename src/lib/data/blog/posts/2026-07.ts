@@ -4,9 +4,9 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'osaka-marathon-2027-entry-guide',
     slug: 'osaka-marathon-2027-entry-guide',
-    title: '오사카 마라톤 2027 접수 방법 총정리 | 해외 신청은 JTB로 — 8월 28일 마감, 실부담 약 171달러',
+    title: '오사카 마라톤 2027 접수 방법 총정리 | 해외 신청은 JTB로 — 8월 28일 마감, 실부담 약 172달러',
     description:
-      '오사카 마라톤 2027(2027년 2월 28일, 제15회)의 일반 러너 접수가 8월 28일 17시(일본시간)에 마감됐습니다. 한국 등 해외 거주자는 일본 내 러너가 쓰는 런넷이 아니라 JTB 스포츠 스테이션으로 따로 신청하고, 참가비도 해외 기준 145달러로 별도 책정돼 있습니다. 여기에 해외 결제분 사무수수료 11%와 자선 모금 2구좌(10달러)가 더해져 실부담은 약 171달러입니다. 정원 28,420명이 넘으면 추첨이라 신청했다고 다 뛰는 것도 아닙니다. 접수 일정·참가비·신청 절차·여행사 대안까지 오사카시 공식 발표를 근거로 정리했습니다.',
+      '오사카 마라톤 2027(2027년 2월 28일, 제15회)의 일반 러너 접수가 8월 28일 17시(일본시간)에 마감됐습니다. 한국 등 해외 거주자는 일본 내 러너가 쓰는 런넷이 아니라 JTB 스포츠 스테이션으로 따로 신청하고, 참가비도 해외 기준 145달러로 별도 책정돼 있습니다. 여기에 해외 결제분 사무수수료 11%와 자선 모금 2구좌(10달러)가 더해져 실부담은 약 172달러입니다. 정원 28,420명이 넘으면 추첨이라 신청했다고 다 뛰는 것도 아닙니다. 접수 일정·참가비·신청 절차·여행사 대안까지 오사카시 공식 발표를 근거로 정리했습니다.',
     thumbnail: '/images/blog/osaka-marathon-2027-entry-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-31',
@@ -58,7 +58,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>대회일은 2027년 2월 28일(일)</strong>, 제15회 오사카 마라톤입니다. 일반 러너 접수는 <strong>7/28~8/28</strong>, 정원 <strong>28,420명 초과 시 추첨</strong>으로 참가자를 가립니다</li>
-    <li><strong>한국 거주자는 런넷이 아니라 JTB 스포츠 스테이션(jtbsports.jp)</strong>으로 신청합니다. 참가비는 해외 기준 <strong>145달러</strong>(국내 16,000엔과 별도 책정)인데, 여기에 <strong>해외 결제분 사무 수수료 11%</strong>와 <strong>자선 모금 2구좌 이상(최소 10달러)</strong>이 붙어 <strong>실부담은 약 171~172달러</strong>가 됩니다</li>
+    <li><strong>한국 거주자는 런넷이 아니라 JTB 스포츠 스테이션(jtbsports.jp)</strong>으로 신청합니다. 참가비는 해외 기준 <strong>145달러</strong>(국내 16,000엔과 별도 책정)인데, 여기에 <strong>해외 결제분 사무 수수료 11%</strong>와 <strong>자선 모금 2구좌 이상(최소 10달러)</strong>이 붙어 <strong>실부담은 약 172달러</strong>가 됩니다</li>
     <li>본인 사정으로 인한 취소는 <strong>입금 후 환불되지 않는다</strong>는 게 공통 원칙입니다. 신청 전 여권 등 신원 확인 서류를 미리 준비하고, 결제 전 최신 규정을 한 번 더 확인하는 게 안전합니다</li>
   </ul>
 </div>
@@ -124,7 +124,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">🧮</span>
   <div class="callout-body">
     <p class="callout-title">한국 러너 실부담 — 145달러가 끝이 아닙니다</p>
-    <p>풀마라톤 해외 참가비 <strong>145달러</strong> + 자선 모금 최소 <strong>10달러</strong>(2구좌) + 사무 수수료 <strong>11%</strong> = <strong>약 171~172달러</strong>가 최소 결제액입니다. 원화로는 환율 1,400원 기준 <strong>약 24만 원</strong> 선입니다(환율에 따라 달라집니다). 자선 모금은 선택이 아니라 <strong>2구좌 이상 필수</strong>라는 점, 수수료가 참가비에만 붙는지 총액에 붙는지에 따라 1달러 안팎 차이가 날 수 있다는 점을 감안해 <strong>결제 화면의 최종 금액</strong>을 확인하세요.</p>
+    <p>풀마라톤 해외 참가비 <strong>145달러</strong> + 자선 모금 최소 <strong>10달러</strong>(2구좌) + 사무 수수료 <strong>11%</strong> = <strong>약 172달러</strong>가 최소 결제액입니다. 원화로는 환율 1,400원 기준 <strong>약 24만 원</strong> 선입니다(환율에 따라 달라집니다). 자선 모금은 선택이 아니라 <strong>2구좌 이상 필수</strong>라는 점, JTB 안내상 수수료 11%는 참가비와 자선 모금을 합친 총액에 붙는다는 점(2026-09-29 확인, (145+10)×1.11 ≈ 172.05달러)을 감안해 <strong>결제 화면의 최종 금액</strong>을 확인하세요.</p>
   </div>
 </div>
 
@@ -153,7 +153,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>대회일</td><td>2027.2.28(일)</td><td>2027.3.7(일)</td></tr>
     <tr><td>정원</td><td>28,420명</td><td>40,000명</td></tr>
     <tr><td>해외 거주자 창구</td><td><strong>JTB 스포츠 스테이션 — 8/28 마감</strong></td><td>영어 사이트(GLOBAL) — <strong>8/13 마감</strong></td></tr>
-    <tr><td>실부담</td><td>약 171~172달러</td><td>$230(당첨 시 납부)</td></tr>
+    <tr><td>실부담</td><td>약 172달러</td><td>$230(당첨 시 납부)</td></tr>
     <tr><td>성격</td><td>간사이 접근성·평지 코스</td><td>세계 6대 메이저·식스스타 대상</td></tr>
   </tbody>
 </table>
@@ -2835,7 +2835,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>소닉블라스트, 어떤 신발인가</h2>
 <p>소닉블라스트는 아식스 Blast 계열에서 <strong>유일하게 플레이트가 들어간 모델</strong>입니다. 상단에 FF Turbo Squared, 하단에 FF Blast Max를 겹친 듀얼 폼 위에 <strong>3/4 길이 ASTROPLATE</strong>를 얹었습니다.</p>
 <p>여기서 짚고 넘어갈 것이 있습니다. 일부 매체가 이 플레이트를 카본으로 소개하지만 <strong>실제 소재는 Pebax</strong>입니다. 신발을 반으로 잘라 확인한 RunRepeat을 비롯해 Believe in the Run과 Doctors of Running이 모두 Pebax로 명시했습니다. 카본만큼 단단하지 않고 좀 더 유연하게 휘는 소재라, 같은 "플레이트 러닝화"라도 카본 레이서와는 성격이 다릅니다.</p>
-<p>스택은 브랜드 표기가 힐 46mm·전족 38mm인데, 실제로 잘라 재보니 <strong>45.4mm·36.4mm</strong>였습니다. 드롭도 표기 8mm와 달리 실측 9.0mm로 나왔습니다. 무게는 남성 US9 기준 255g입니다.</p>
+<p>스택은 브랜드 표기가 힐 46mm·전족 38mm인데, RunRepeat이 신발을 잘라 잰 값은 <strong>45.4mm·36.4mm</strong>였습니다. 드롭도 표기 8mm와 달리 실측 9.0mm로 나왔습니다. 무게는 남성 US9 기준 255g입니다.</p>
 
 <h2>메가블라스트와 뭐가 다른가</h2>
 <p>두 신발은 "같은 성능을 싸게"의 관계가 아닙니다. <strong>용도가 다른 신발</strong>입니다.</p>
