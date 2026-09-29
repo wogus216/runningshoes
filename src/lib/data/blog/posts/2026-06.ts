@@ -7206,7 +7206,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
-    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 216g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
+    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 261g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
     <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·wide), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
   </ul>
 </div>
@@ -7225,17 +7225,17 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>쿠션</th><th>무게</th><th>드롭</th><th>발볼</th><th>가격</th><th>특징</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>216g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
+    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>261g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>281g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>넓음</strong></td><td><strong>179,000</strong></td><td>발볼 넓은 가성비</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>좁음</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
   </tbody>
 </table>
 
 <h2>👑 종합 톱픽 — 뉴발란스 1080 v15</h2>
-<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 40mm 힐 스택의 푹신함을 갖추고도 <strong>216g으로 동급에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
+<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 40mm 힐 스택의 푹신함을 갖추고도 <strong>261g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
 
 <div class="callout tip">
   <span class="callout-icon">🖥️</span>
@@ -7247,7 +7247,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>목적별 베스트</h2>
 <ul>
-  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(216g)</li>
+  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(261g)</li>
   <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(wide·17만원대, 119mm 광폭 플랫폼)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>

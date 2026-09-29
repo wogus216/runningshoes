@@ -1593,9 +1593,9 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
     slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
-    title: '뉴발란스 1080 v15 vs 아식스 님버스 28 — 프리미엄 데일리 쿠션, 65g이 가른다',
+    title: '뉴발란스 1080 v15 vs 아식스 님버스 28 — 프리미엄 데일리 쿠션, 반발과 드롭이 가른다',
     description:
-      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 216g의 경량 반응형, 님버스 28은 281g의 최대 쿠션입니다. 무게 65g 차이가 만드는 주행감, 스택·드롭·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
+      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 261g의 반응형, 님버스 28은 281g의 최대 쿠션입니다. 반발(7 vs 5/10)과 드롭(6 vs 8mm)이 만드는 주행감, 무게·스택·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
     thumbnail: '/images/blog/new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',
@@ -1606,7 +1606,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>같은 프리미엄 데일리 쿠션이지만 성격이 정반대</strong> — <a href="/shoes/new-balance-1080-v15">1080 v15</a>는 216g의 경량 반응형, <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>은 281g의 최대 쿠션. 무게 차이가 무려 <strong>65g</strong>입니다</li>
+    <li><strong>같은 프리미엄 데일리 쿠션이지만 성격이 정반대</strong> — <a href="/shoes/new-balance-1080-v15">1080 v15</a>는 261g의 반응형, <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>은 281g의 최대 쿠션. 무게 차이는 <strong>20g</strong>으로 크지 않고, 갈리는 건 반발과 드롭입니다</li>
     <li><strong>가볍고 경쾌하게, 롱런도 페이스를 살리고 싶다면 1080 v15</strong>(반발 7·드롭 6mm). <strong>최대한 푹신하게, 관절 보호와 회복주 위주라면 님버스 28</strong>(쿠션 10·스택 43.5mm)</li>
     <li>둘 다 <strong>와이드(2E) 옵션</strong>이 있어 발볼 넓은 한국 러너도 안심이고, 무릎 보호는 <strong>둘 다 최상(excellent)</strong>. 가격은 님버스가 1만원 저렴합니다</li>
   </ul>
@@ -1621,7 +1621,7 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>뉴발란스 1080 v15</th><th>아식스 젤 님버스 28</th></tr></thead>
   <tbody>
     <tr><td>가격(한국)</td><td>209,000원</td><td><strong>199,000원</strong></td></tr>
-    <tr><td>무게</td><td><strong>216g</strong> (남 US9)</td><td>281g</td></tr>
+    <tr><td>무게</td><td><strong>261g</strong> (남성, 뉴발란스 공식)</td><td>281g</td></tr>
     <tr><td>스택(힐/전족)</td><td>40 / 34mm</td><td><strong>43.5 / 35.5mm</strong></td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Infinion (질소 슈퍼크리티컬)</td><td>FF BLAST PLUS</td></tr>
@@ -1637,7 +1637,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준)입니다.</small></p>
 
 <h2>뉴발란스 1080 v15 — 프리미엄인데 가볍다</h2>
-<p>1080 v15의 정체성은 <strong>"프리미엄 쿠션인데 216g"</strong>이라는 한 문장에 있습니다. 님버스보다 65g이나 가벼운데, 이건 데일리 트레이너 두 켤레의 무게 차이라기보다 거의 "쿠션화 vs 템포화" 급의 격차입니다. 새로 도입된 Infinion 질소 슈퍼크리티컬 폼이 부드러우면서도 반발(7/10)을 살려, 느린 조깅부터 페이스를 올린 롱런까지 한 켤레로 커버합니다. 드롭도 6mm로 낮아 발 앞쪽으로 자연스럽게 굴러가는 느낌이 좋습니다.</p>
+<p>1080 v15의 정체성은 <strong>"프리미엄 쿠션인데 반응형"</strong>이라는 한 문장에 있습니다. 무게는 261g으로 님버스보다 20g 가벼운 정도라 결정적인 차이는 아닙니다. 새로 도입된 Infinion 질소 슈퍼크리티컬 폼이 부드러우면서도 반발(7/10)을 살려, 느린 조깅부터 페이스를 올린 롱런까지 한 켤레로 커버합니다. 드롭도 6mm로 낮아 발 앞쪽으로 자연스럽게 굴러가는 느낌이 좋습니다.</p>
 <p>약점은 <strong>안정성(6/10)</strong>입니다. 스택이 높은 중립화 특성상 발이 심하게 안쪽으로 무너지는 과내전 러너에게는 지지가 부족할 수 있습니다. 님버스보다 km당 비용(348원)도 약간 높고요.</p>
 <p><strong>✅ 이런 분께</strong> — 프리미엄 쿠션의 보호는 원하지만 무거운 신발이 싫은 분, 데일리 한 켤레로 조깅과 롱런을 다 소화하고 싶은 분, 경쾌한 반발을 선호하는 중립 발 러너.</p>
 
@@ -1659,11 +1659,11 @@ export const posts_2026_07: BlogPost[] = [
   <h2>자주 묻는 질문</h2>
   <div class="faq-item">
     <p class="faq-q">Q. 초보 러너인데 둘 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. 무릎 보호가 둘 다 최상이라 입문용으로 모두 무난합니다. 다만 처음엔 안정감이 중요한데, 묵직하게 받쳐주는 님버스 28이 심리적으로 더 편할 수 있습니다. 반대로 무거운 신발이 부담되면 216g의 1080 v15가 발이 가볍습니다. 더 저렴한 입문 옵션은 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 참고하세요.</p>
+    <p class="faq-a">A. 무릎 보호가 둘 다 최상이라 입문용으로 모두 무난합니다. 다만 처음엔 안정감이 중요한데, 묵직하게 받쳐주는 님버스 28이 심리적으로 더 편할 수 있습니다. 반대로 무거운 신발이 부담되면 261g의 1080 v15가 조금 더 가볍습니다. 더 저렴한 입문 옵션은 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 참고하세요.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">Q. 65g 차이가 실제로 체감되나요?</p>
-    <p class="faq-a">A. 네, 확실히 체감됩니다. 65g은 양발 130g으로, 10km 이상 뛰면 다리 피로도에서 차이가 납니다. 대신 님버스는 그 무게만큼 쿠션과 안정을 돌려주니, "가벼움 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
+    <p class="faq-q">Q. 무게 차이가 실제로 체감되나요?</p>
+    <p class="faq-a">A. 크지 않습니다. 261g과 281g으로 한 발 20g 차이라, 체감은 무게보다 반발(7 vs 5/10)과 드롭(6 vs 8mm)에서 더 갈릴 가능성이 큽니다. 님버스는 그만큼 쿠션과 안정을 돌려주니, "반응성 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 마라톤 풀코스에 신어도 되나요?</p>
@@ -4508,7 +4508,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>강점</th></tr></thead>
   <tbody>
-    <tr><td><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 V15</a></td><td>209,000</td><td>216g</td><td>프리미엄 쿠션</td><td>216g으로 가벼운데 푹신, 완성도 최상</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 V15</a></td><td>209,000</td><td>261g</td><td>프리미엄 쿠션</td><td>261g으로 가벼운 편인데 푹신, 완성도 최상</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td><td>209,000</td><td>293g</td><td>부드러운 쿠션</td><td>말랑한 발밑·데일리 럭셔리</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 Evo SL</a></td><td>209,000</td><td>223g</td><td>가성비 슈퍼트레이너</td><td>카본 없이 빠른 반발, 훈련·레이스 겸용</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a></td><td>219,000</td><td>241g</td><td>템포 트레이너</td><td>나일론 플레이트, 스피드 훈련 최적</td></tr>
@@ -4520,7 +4520,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">🦵</span>
   <div class="callout-body">
     <p class="callout-title">이 구간의 선택</p>
-    <p><strong>가볍고 푹신한 만능 쿠션</strong>이면 <a href="/shoes/new-balance-1080-v15">1080 V15</a>(216g·프리미엄 쿠션의 정석), <strong>무릎·관절 보호를 최우선</strong>하면 <a href="/shoes/hoka-bondi-9">본디 9</a>(<a href="/blog/hoka-bondi-9-review">상세 후기</a>)입니다. <strong>훈련과 레이스를 한 켤레로</strong> 겸하고 싶다면 카본 없이 빠른 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>(<a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">가성비 슈퍼트레이너 리뷰</a>)이나 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>가 답입니다. 맥스쿠션과 무릎 보호의 관계는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션 무릎 보호 가이드</a>에 정리했어요.</p>
+    <p><strong>가볍고 푹신한 만능 쿠션</strong>이면 <a href="/shoes/new-balance-1080-v15">1080 V15</a>(261g·프리미엄 쿠션의 정석), <strong>무릎·관절 보호를 최우선</strong>하면 <a href="/shoes/hoka-bondi-9">본디 9</a>(<a href="/blog/hoka-bondi-9-review">상세 후기</a>)입니다. <strong>훈련과 레이스를 한 켤레로</strong> 겸하고 싶다면 카본 없이 빠른 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>(<a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">가성비 슈퍼트레이너 리뷰</a>)이나 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>가 답입니다. 맥스쿠션과 무릎 보호의 관계는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션 무릎 보호 가이드</a>에 정리했어요.</p>
   </div>
 </div>
 
