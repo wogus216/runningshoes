@@ -95,5 +95,8 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['hoka-clifton-10', 'asics-novablast-5', 'nike-pegasus-premium'],
+  relatedPosts: [
+    { slug: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026', title: '슈퍼노바 라이즈 3 vs 보메로 18 — 3만원·28g 차이, 스택은 표기와 실측이 다르다' },
+  ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x8krNTuj' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Ypt08AlU' }],
 };
