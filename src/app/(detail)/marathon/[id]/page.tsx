@@ -3,8 +3,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
-import { formatDateKo } from '@/lib/format';
+import { formatDateKo, localIsoDate } from '@/lib/format';
 import { META_DESC_MAX, truncateAtWord, formatFee, formatTimeLimit, feeSummary, splitSentences, getDaysUntil } from '@/lib/marathon/format';
+import { bandOf } from '@/lib/marathon/bands';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { Calendar, MapPin, ExternalLink, ArrowLeft, Trophy, Mountain, Clock, Users, Bus, Car, Package, Timer, Droplets, Route, Award, CircleGauge, Wallet, FileText, Gift } from 'lucide-react';
@@ -173,6 +174,14 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   const feeText = feeSummary(event.raceInfo?.entryFees);
   const sentences = splitSentences(event.description);
 
+  // 접수 마감 판정은 목록 밴드(bands.ts)와 같은 규칙 — **날짜가 수동 status를 이긴다.**
+  // 2026-09-29 오사카(마감) 모바일 히어로에 마감일·registrationNote·확인일이 하나도 없이
+  // "접수 7월 28일 시작"만 남아 접수 예정처럼 읽혔다. 아래 표시 조건이 접수중·접수예정만 봤다.
+  // 빌드 시점 날짜라 배포 사이에는 낡을 수 있다(getDaysUntil 과 같은 한계).
+  const registrationClosed = bandOf(event, localIsoDate()) === 'closed';
+  // 마감일이 지났는데 status 가 아직 접수중·접수예정이면 배지(히어로·대회 정보 두 곳)도 날짜를 따른다 — '접수 마감' 줄과 모순되지 않게
+  const displayStatus = registrationClosed && (event.status === '접수중' || event.status === '접수예정') ? '마감' : event.status;
+
   // JSON-LD: SportsEvent (enriched)
   const eventStatusMap: Record<string, string> = {
     '접수중': 'https://schema.org/EventScheduled',
@@ -314,8 +323,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 MAJOR
               </span>
             )}
-            <span className={`rounded-full px-3 py-1 text-sm font-medium ${statusStyles[event.status]}`}>
-              {event.status}
+            <span className={`rounded-full px-3 py-1 text-sm font-medium ${statusStyles[displayStatus]}`}>
+              {displayStatus}
             </span>
             {daysUntil > 0 && (
               <span className="rounded-full bg-surface px-3 py-1 text-sm text-secondary">
@@ -363,7 +372,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 <span>{feeText}</span>
               </div>
             )}
-            {event.registrationStart && (
+            {/* 마감된 대회에서 '시작'만 단독으로 남으면 접수 예정처럼 읽힌다 — 마감이면 아래 '접수 마감' 줄로 대신한다 */}
+            {event.registrationStart && !registrationClosed && (
               <div className="flex items-center gap-2">
                 <FileText className="h-5 w-5 shrink-0 text-sky-700" />
                 <span>
@@ -385,7 +395,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
               registrationNote 에 공식 표기를 그대로 담아 '미확인' 대신 보여준다.
               확인했는데 날짜가 없는 것과 확인 안 한 것은 다른 상태다.
             */}
-            {(event.status === '접수중' || event.status === '접수예정') && (
+            {!registrationClosed && (event.status === '접수중' || event.status === '접수예정') && (
               <div className="flex items-start gap-2">
                 <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
                 {event.registrationEnd ? (
@@ -402,6 +412,25 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 )}
               </div>
             )}
+            {/*
+              마감된 대회는 "지금 신청 가능한가"의 답(마감)과 다음 관문(추첨 결과·결제 기한·환불 등)을
+              registrationNote 로 보여준다. 노트는 마감 후 시제로 적혀 있다(2026-09-29 마감 34건 확인).
+              노트 원문의 ** 강조 표기는 렌더하지 않고 걷어낸다.
+            */}
+            {registrationClosed && (
+              <div className="flex items-start gap-2 sm:col-span-2">
+                <Timer className="mt-0.5 h-5 w-5 shrink-0 text-sky-700" />
+                <div>
+                  <span className="font-medium text-primary">접수 마감</span>
+                  {event.registrationEnd && (
+                    <span> · {formatDateKo(event.registrationEnd, { weekday: true })}까지</span>
+                  )}
+                  {event.registrationNote && (
+                    <p className="mt-1 text-sm leading-relaxed">{event.registrationNote.replace(/\*\*/g, '')}</p>
+                  )}
+                </div>
+              </div>
+            )}
           </dl>
           {/*
             status 를 마지막으로 확인한 날. 대회 status·참가비는 시간이 지나면 자동으로
@@ -409,11 +438,13 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             현재 lastVerified 는 111개 중 18개(16%)에만 있어 없는 경우가 더 많다 —
             그 사실도 감추지 않는다.
           */}
-          {(event.status === '접수중' || event.status === '접수예정') && (
+          {(registrationClosed || event.status === '접수중' || event.status === '접수예정') && (
             <p className="mt-3 font-mono text-[11px] text-tertiary">
               {event.lastVerified
                 ? `접수 상태 ${formatDateKo(event.lastVerified, { weekday: true })} 확인 기준`
-                : '접수 상태 확인일 미기록 — 신청 전 공식 공지를 확인하세요'}
+                : registrationClosed
+                  ? '접수 상태 확인일 미기록 — 공식 공지를 확인하세요'
+                  : '접수 상태 확인일 미기록 — 신청 전 공식 공지를 확인하세요'}
             </p>
           )}
 
@@ -500,8 +531,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>
               <dd>
-                <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusStyles[event.status]}`}>
-                  {event.status}
+                <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusStyles[displayStatus]}`}>
+                  {displayStatus}
                 </span>
               </dd>
               {event.lastVerified && (
