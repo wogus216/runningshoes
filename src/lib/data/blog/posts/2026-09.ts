@@ -2,6 +2,130 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_09: BlogPost[] = [
   {
+    id: 'skechers-aero-burst-slip-ins-review-2026',
+    slug: 'skechers-aero-burst-slip-ins-review-2026',
+    title:
+      '스케쳐스 에어로 버스트 슬립인스 리뷰 | 21만 9천 원, 발볼 넓은 러너도 괜찮을까?',
+    description:
+      '스케쳐스 에어로 버스트 슬립인스는 219,000원짜리 맥스쿠션 러닝화입니다. 협찬 착화 후기와 RunRepeat·Doctors of Running 실측을 나눠 보고, 발볼·무게·러닝 페이스별로 살 만한지 정리했습니다.',
+    thumbnail: '/images/blog/skechers-aero-burst-slip-ins-review-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-09-30',
+    updatedAt: '2026-09-30',
+    category: 'review' as const,
+    readingTime: 6,
+    tags: ['스케쳐스 에어로 버스트', '에어로 버스트 슬립인스', '스케쳐스 러닝화', '맥스쿠션 러닝화', '발볼 넓은 러닝화', '러닝화 리뷰'],
+    faqs: [
+      {
+        question: '에어로 버스트 슬립인스는 안정화인가요?',
+        answer:
+          '높고 넓은 바닥과 아치핏 인솔이 안정적인 느낌을 줄 수 있지만, Doctors of Running은 일반형을 맥스쿠션 중립화로 분류합니다. 과내전을 교정하는 안정화라고 단정하기 어렵고, 안정화가 필요하다면 매장에서 직접 걸어 보고 고르세요.',
+      },
+      {
+        question: '발볼 넓은 한국 러너도 신을 수 있나요?',
+        answer:
+          '협찬 게시물 작성자는 넉넉하다고 적었지만, RunRepeat의 일반형 실측 토박스 너비는 70.7mm로 같은 랩 평균 73.2mm보다 좁았고 Doctors of Running도 넓은 발은 먼저 신어 보라고 권합니다. 슬립인스 모델의 별도 토박스 실측은 확인되지 않았으니, 후기 하나만 보고 넓다고 판단하지 말고 시착을 권합니다.',
+      },
+      {
+        question: '장거리나 빠른 페이스에도 잘 맞나요?',
+        answer:
+          '높은 쿠션과 로커 구조는 편한 조깅과 롱런에 어울립니다. 다만 Doctors of Running과 Believe in the Run 모두 무게감을 단점으로 들었고, 속도를 올릴 때 반응이 둔해질 수 있다고 평가했습니다. 가벼운 템포런용 한 켤레를 찾는다면 다른 모델과 비교해 보세요.',
+      },
+      {
+        question: '슬립인스 가격은 얼마인가요?',
+        answer:
+          '2026년 9월 30일 스케쳐스 코리아 공식몰 기준 일반형은 209,000원, 슬립인스는 219,000원입니다. 색상과 사이즈별 재고 및 판매가는 구매 전에 공식몰에서 다시 확인하세요.',
+      },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>일반형 209,000원, 슬립인스 219,000원</strong> — 스케쳐스 코리아 공식몰에서 판매하는 높은 쿠션의 러닝화입니다</li>
+    <li><strong>편한 조깅·롱런용에 가까운 중립화</strong> — 브랜드는 아치핏과 넓은 바닥을 강조하지만, 전문가 리뷰는 과내전 교정 안정화가 아니라 맥스쿠션 중립화로 분류합니다</li>
+    <li><strong>발볼은 꼭 신어 보고 판단하세요</strong> — 협찬 후기는 넉넉하다고 했지만, RunRepeat 일반형 실측 토박스는 70.7mm로 평균보다 좁았습니다. 슬립인스 별도 실측은 없습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🎯</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론</p>
+    <p>에어로 버스트 슬립인스는 <strong>신고 벗기 편한 높은 쿠션의 데일리 러닝화</strong>를 찾는 사람에게 후보가 됩니다. 다만 219,000원에 300g대 무게이고, 발볼이 넓은 러너에게 잘 맞는다는 실측 근거는 없습니다. 구매 전 착화가 우선입니다.</p>
+  </div>
+</div>
+
+<p>스케쳐스가 워킹화 브랜드라는 인상을 바꿀 만한 러닝화가 나왔습니다. <strong>에어로 버스트</strong>는 Hyper Burst ICE 미드솔, H형 카본 인퓨즈드 플레이트, Goodyear 아웃솔을 넣은 높은 쿠션의 트레이너입니다. 이 글은 그중 뒤꿈치 고정 장치를 적용한 <strong>슬립인스 모델</strong>이 궁금한 러너를 위해 국내 가격과 공개된 실측·리뷰를 구분해 살펴봅니다.</p>
+
+<p>먼저 자료의 범위를 분명히 할게요. 인스타그램 @daily__dear의 글은 <strong>#제품제공</strong> 표시가 있는 착화 후기입니다. 산초 에디터가 제품을 직접 테스트한 리뷰가 아니며, 후기와 외부 랩 테스트는 서로 다른 신발 버전과 조건에서 나온 자료입니다. 아래에서 협찬 후기는 작성자 경험으로, RunRepeat·Doctors of Running 수치는 일반형 리뷰로 구분합니다.</p>
+
+<h2>가격은 슬립인스 219,000원, 일반형은 209,000원</h2>
+
+<table>
+  <thead><tr><th>항목</th><th>확인한 내용</th></tr></thead>
+  <tbody>
+    <tr><td>한국 공식가</td><td>일반형 209,000원 · 슬립인스 219,000원</td></tr>
+    <tr><td>브랜드 공개 스택·드롭</td><td>힐 42mm · 앞발 36mm · 드롭 6mm</td></tr>
+    <tr><td>미드솔·아웃솔</td><td>Hyper Burst ICE · Goodyear Performance Outsole</td></tr>
+    <tr><td>구조</td><td>H형 카본 인퓨즈드 플레이트 · Hyper Arc 로커</td></tr>
+    <tr><td>무게 참고</td><td>브랜드 미국 페이지: 슬립인스 337g (남성 US 9) · 협찬 후기: 364g (280mm, 개인 측정)</td></tr>
+    <tr><td>RunRepeat 일반형 실측</td><td>322g · 힐 SA 145 · 에너지 리턴 60.3% · 토박스 70.7mm</td></tr>
+  </tbody>
+</table>
+
+<p><small>브랜드 스펙·가격: <a href="https://www.skecherskorea.co.kr/product/SP0MRCFY111" rel="noopener noreferrer">스케쳐스 코리아 에어로 버스트 슬립인스</a>, <a href="https://www.skecherskorea.co.kr/product/SP0MRCFX113" rel="noopener noreferrer">일반형 상품 페이지</a> (2026-09-30 확인). 슬립인스 무게: <a href="https://www.skechers.com/skechers-slip-ins-aero-burst/246215_BKW.html" rel="noopener noreferrer">스케쳐스 미국 공식 페이지</a> (남성 US 9 기준). 랩 수치: <a href="https://runrepeat.com/skechers-aero-burst" rel="noopener noreferrer">RunRepeat 에어로 버스트 리뷰</a>. 세 무게는 사이즈와 측정 조건, 신발 버전이 달라 서로 직접 비교할 수 없습니다.</small></p>
+
+<h2>편한 조깅과 롱런에 맞춘 높은 쿠션</h2>
+
+<p>RunRepeat가 일반형에서 측정한 힐 충격흡수는 145 SA로 해당 랩 평균 131보다 높았습니다. 힐 스택은 41.7mm, 앞발은 32.9mm였고, 힐 에너지 리턴은 60.3%입니다. 이 조합은 빠른 턴오버를 돕는 경량화보다 <strong>높은 폼과 로커로 편한 페이스를 이어 가는 맥스쿠션 트레이너</strong> 쪽에 가깝습니다.</p>
+
+<p>Doctors of Running도 편한 일상 러닝과 롱런에 쓸 수 있는 신발로 평가했습니다. 다만 페이스를 높이면 무게가 느껴지고, 빠른 구간에서 반응이 평평해진다고 지적했습니다. Believe in the Run 리뷰 역시 초반의 탄성과 넉넉한 착화감을 장점으로 꼽는 한편 무겁다는 점을 아쉬움으로 남겼습니다. 두 리뷰 모두 브랜드가 제품을 제공했다고 공개했습니다.</p>
+
+<p>따라서 주 2~3회 편한 조깅, 회복런, 롱런에 쓸 푹신한 신발을 찾는다면 후보로 볼 수 있습니다. 인터벌이나 템포런에서 가벼운 반발을 기대하거나, 한 켤레로 훈련 전부를 해결하고 싶다면 무게와 페이스 한계를 먼저 고려하세요.</p>
+
+<h2>“발볼 넉넉” 후기는 있지만, 넓은 발에 맞는다고 단정할 수는 없습니다</h2>
+
+<p>글감이 된 인스타그램 게시물은 280mm 착화에서 발볼과 발등이 넉넉했다고 전합니다. 하지만 RunRepeat의 일반형 토박스 실측은 <strong>70.7mm</strong>로 같은 랩 평균 73.2mm보다 좁았습니다. Doctors of Running도 토박스가 특별히 넓지는 않다며 발볼이 넓은 러너는 구매 전에 신어 보라고 권합니다.</p>
+
+<p>이 차이를 어느 한쪽이 틀렸다고 볼 수는 없습니다. 발 모양과 사이즈, 끈 조임, 신발 버전이 다르고, 공개 랩 데이터는 슬립인스가 아닌 일반형 기준입니다. 그래서 “한국인 발볼에도 넉넉하다”는 결론은 아직 근거가 부족합니다. 앞발이 넓거나 발등이 높은 편이라면 양발을 신어 보고, 조깅할 때 발가락이 밀리거나 뒤꿈치가 뜨지 않는지도 확인하세요.</p>
+
+<h2>안정감은 있지만, 교정용 안정화와는 다릅니다</h2>
+
+<p>높은 미드솔과 로커, 아치핏 인솔, 앞발 플레이트가 발을 받쳐 주는 느낌을 줄 수 있습니다. 다만 Doctors of Running은 에어로 버스트를 <strong>맥스쿠션 중립 트레이너</strong>로 분류합니다. 앞발 플레이트와 측벽이 높은 폼을 어느 정도 잡아 주지만, 중족부가 좁아 안정화 카테고리까지는 아니라는 설명입니다.</p>
+
+<p>아치핏이라는 이름만으로 평발이나 과내전에 필요한 지지력을 보장한다고 생각하면 곤란합니다. 안정화가 필요하거나 특정 부상 이력이 있다면 이 모델 하나로 해결하려 하지 말고, 전문점에서 달리는 동작과 착화감을 확인해 주세요.</p>
+
+<h2>누구에게 추천할까?</h2>
+
+<ul>
+  <li><strong>후보로 볼 만한 러너</strong> — 높은 쿠션과 로커가 편하고, 신고 벗기 쉬운 구조가 필요하며, 주로 편한 페이스로 달리는 사람</li>
+  <li><strong>먼저 신어 볼 러너</strong> — 앞발이 넓거나 발등이 높고, 발에 맞는 신발을 찾기 어려운 사람</li>
+  <li><strong>다른 유형을 찾을 러너</strong> — 가벼운 템포화, 빠른 반응, 과내전 교정 목적의 안정화가 필요한 사람</li>
+</ul>
+
+<p>비슷한 가격대의 쿠션화를 함께 보고 싶다면 <a href="/shoes/saucony-triumph-23">써코니 트라이엄프 23</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a>의 실측과 착화 성향도 비교해 보세요. 무게와 폼 성격, 발볼은 모델마다 다르니 가격만으로 고르기보다 실제 발에 맞는지를 먼저 확인하는 편이 좋습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">이 글의 수치가 적용되는 범위</p>
+    <p>RunRepeat의 무게·쿠션·토박스 수치는 일반형 에어로 버스트의 랩 테스트입니다. 슬립인스 모델의 별도 실측은 확인하지 못했습니다. 한국 착화 후기는 제품 제공을 받은 작성자의 경험이며, 모든 발에 같은 핏을 보장하지 않습니다.</p>
+  </div>
+</div>
+
+<h2>자주 묻는 질문</h2>
+
+<div class="faq">
+  <div class="faq-item"><p class="faq-q">에어로 버스트 슬립인스는 안정화인가요?</p><p class="faq-a">브랜드는 아치핏과 높은 바닥 구조를 강조하지만, Doctors of Running은 일반형을 맥스쿠션 중립화로 분류합니다. 교정용 안정화가 필요하다면 직접 신어 보고 판단하세요.</p></div>
+  <div class="faq-item"><p class="faq-q">발볼 넓은 러너도 괜찮나요?</p><p class="faq-a">협찬 후기는 넉넉하다고 했지만, 일반형의 RunRepeat 토박스는 70.7mm로 같은 랩 평균 73.2mm보다 좁습니다. 슬립인스 실측은 없어, 발볼이 넓다면 시착이 필요합니다.</p></div>
+  <div class="faq-item"><p class="faq-q">빠른 러닝에도 쓸 수 있나요?</p><p class="faq-a">가벼운 조깅과 롱런에 더 어울립니다. 외부 리뷰는 무게가 느껴지고 페이스를 높일 때 반응이 둔해진다고 평가했습니다.</p></div>
+  <div class="faq-item"><p class="faq-q">한국 가격은 얼마인가요?</p><p class="faq-a">2026년 9월 30일 공식몰 기준 일반형은 209,000원, 슬립인스는 219,000원입니다. 재고와 판매가는 바뀔 수 있으니 구매 전에 공식몰을 확인하세요.</p></div>
+</div>
+
+<p><small>출처: 스케쳐스 코리아 공식 상품 페이지(가격·구조·스택·드롭, 2026-09-30 확인) · RunRepeat 에어로 버스트 일반형 랩 테스트(무게·충격흡수·에너지 리턴·토박스) · Doctors of Running 및 Believe in the Run 일반형 리뷰(두 리뷰 모두 제품 제공 사실 공개) · @daily__dear 협찬 착화 후기(<a href="https://www.instagram.com/daily__dear/p/Dd4Bqr0kiv9/" rel="noopener noreferrer">원문, #제품제공</a>). 썸네일: 스케쳐스 코리아 공식 상품 이미지. 작성 2026년 9월 30일.</small></p>
+`,
+  },
+  {
     id: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026',
     slug: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026',
     title:
@@ -6591,7 +6715,7 @@ export const posts_2026_09: BlogPost[] = [
     id: 'marathon-registration-week-september-2026',
     slug: 'marathon-registration-week-september-2026',
     title:
-      '풀코스 접수 셋의 결과가 갈렸다 — 춘천만 마감, 인천·JTBC는 진행 중 | 대회마다 준비물이 다르다',
+      '가을 풀코스 마라톤 추가접수 결과와 다음 대안 | 인천·춘천·JTBC 신청 체크리스트',
     description:
       '9월 7일 인천마라톤 본접수, 8일 JTBC 서울마라톤 추가접수와 춘천마라톤 추가접수가 연달아 열립니다. 세 대회 모두 오후 2시 시작이라 일정만 보면 똑같아 보이지만, 접수 버튼을 누르기 전에 손에 쥐고 있어야 하는 것이 전부 다릅니다 — 인천은 기록증이 없으면 신청 자체가 막히고, 춘천은 신청과 결제가 이틀 떨어져 있으며, JTBC는 레이스팩을 10월 말 서울에서 직접 받아야 합니다. 대회별 조건과 함정을 공식 공지 기준으로 정리했습니다.',
     thumbnail: '/images/blog/marathon-registration-week-september-2026.webp',
@@ -7881,7 +8005,7 @@ export const posts_2026_09: BlogPost[] = [
     id: 'heart-run',
     slug: 'heart-run',
     title:
-      '2026 하트런 접수 9월 17일까지 — 올림픽공원 10K·5K 5만원, 걸어서 참가해도 된다 | 시각장애아동 기부런, 2차 접수 9/21',
+      '2026 하트런 접수 마감 | 10월 10일 올림픽공원, 걷기 참가도 가능',
     description:
       '10월 10일(토) 올림픽공원 피크닉장, 10km·5km 각 5만원·정원 1,000명 선착순. 신청 화면에서 "걸어서"를 고를 수 있는 기부런이지만 코스는 12시에 닫힙니다. 1차 9/17, 2차 9/21~25. 기부영수증은 안 나옵니다.',
     thumbnail: '/images/blog/heart-run.webp',
