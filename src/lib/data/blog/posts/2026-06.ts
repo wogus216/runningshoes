@@ -9868,7 +9868,7 @@ export const posts_2026_06: BlogPost[] = [
       url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
     },
     content: `
-<div class="deadline-strip">⏰ <strong>(9/4 갱신) 추가접수가 열렸습니다 — 9월 3일(목) 14시 ~ 9월 30일(수) 17시, 러너블 선착순.</strong> 하프 80,000원·10K 60,000원, 취소분은 수시 재오픈. 자세한 조건은 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>에 정리했습니다.</div>
+<div class="deadline-strip">⏰ <strong>(9/30 갱신) 러너블의 추가접수 공지 기한인 9월 30일(수) 17시가 지났습니다.</strong> 별도 연장·재오픈 여부는 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>과 러너블 상품 페이지에서 확인하세요.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -10937,7 +10937,7 @@ export const posts_2026_06: BlogPost[] = [
       url: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
     },
     content: `
-<div class="deadline-strip">⏰ <strong>(9/4 갱신) 추가접수가 열렸습니다 — 9월 3일(목) 14시 ~ 9월 30일(수) 17시, 러너블 선착순.</strong> 하프 80,000원·10K 60,000원, 취소분은 수시 재오픈. 자세한 조건은 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>에 정리했습니다.</div>
+<div class="deadline-strip">⏰ <strong>(9/30 갱신) 러너블의 추가접수 공지 기한인 9월 30일(수) 17시가 지났습니다.</strong> 별도 연장·재오픈 여부는 <a href="/blog/garmin-run-korea-additional-registration">가민런 추가접수 글</a>과 러너블 상품 페이지에서 확인하세요.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
