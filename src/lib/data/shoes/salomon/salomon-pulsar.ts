@@ -69,7 +69,7 @@ export const shoe: Shoe = {
     plate: '없음 (록플레이트 미적용)',
     outsole: 'Contagrip + 4mm 러그',
     upper: '경량 메시 + quickLACE + SensiFit',
-    width: '표준(좁은 편, 와이드 옵션 없음)',
+    width: '좁은 편 (와이드 옵션 없음, 한국 공식몰 신발폭 Standard 표기) — 추정: RunRepeat "Pulsar Trail"과 동일 제품(한국 공식 281g·스택 29/23mm·드롭 6mm가 랩 무게 281g·드롭과 일치)일 때 랩 토박스 71.8mm(트레일 평균 74.4mm), 랩 본문 "notable tapering towards the front"·"more suitable for medium-to-narrow feet"',
     durability: '500km (250마일+ 후 폼 성능 유지 보고)',
     price: '₩210,000 (한국 공식)',
     costPerKm: '약 ₩420/km (500km 기준)',
