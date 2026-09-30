@@ -3507,7 +3507,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼이 넓은데 어느 쪽인가요?',
         answer:
-          '둘 다 괜찮습니다. 토박스가 모두 표준 폭이고 와이드 옵션도 양쪽 다 있습니다. 이 항목으로는 갈리지 않으니, 실제 착화 시 발등 높이나 갑피 조임 느낌으로 판단하는 편이 낫습니다.',
+          '둘 다 와이드 옵션이 있지만 표준 폭은 페가수스 42가 더 넉넉합니다. RunRepeat 실측 토박스는 고스트 17이 69.6mm(평균 73.2mm)로 좁은 편이고 페가수스 42는 72.3mm로 표준입니다. 발볼이 넓다면 고스트 17은 와이드를 전제로 보는 편이 안전합니다.',
       },
       {
         question: '입문자에게는 어느 쪽인가요?',
@@ -3529,7 +3529,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>조금이라도 탄력 있고 부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭·발볼로는 갈리지 않으니 이 두 축으로만 판단하면 됩니다.</p>
+    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>조금이라도 탄력 있고 부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭으로는 갈리지 않고 발볼은 페가수스 42가 조금 더 넉넉하니(표준 토박스 69.6 대 72.3mm) 이 점을 함께 보세요.</p>
   </div>
 </div>
 
@@ -3547,7 +3547,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>미드솔</td><td>DNA Loft v3</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 6</td><td>8 / <strong>7</strong></td></tr>
     <tr><td>안정성</td><td>7/10</td><td>7/10 <em>(동일)</em></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준 / 있음</td><td>표준 / 있음 <em>(동일)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td><strong>좁은 편 (랩 69.6mm)</strong> / 있음</td><td>표준 (랩 72.3mm) / 있음</td></tr>
     <tr><td>부상 예방</td><td>네 항목 모두 양호</td><td><strong>족저·아킬레스·정강이 excellent</strong>, 무릎 양호</td></tr>
     <tr><td>내구 · km당</td><td><strong>800km · 211원</strong></td><td>600km · 282원</td></tr>
     <tr><td>적정 페이스</td><td>5:30–7:00 /km</td><td>5:00–7:00 /km</td></tr>
@@ -3560,7 +3560,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>고스트와 페가수스는 국내에서 가장 많이 팔리는 데일리 두 라인입니다. 그만큼 "뭐가 다르냐"는 질문이 많은데, 솔직하게 답하면 <strong>숫자로는 거의 안 다릅니다.</strong></p>
 
-<p>가격 같고, 무게 3g 차, 드롭 같고, 스택 1mm 차, 안정성 같고, 발볼 조건도 같습니다. 스펙표를 나란히 놓고 "이게 더 좋다"고 말할 근거가 대부분 없습니다.</p>
+<p>가격 같고, 무게 3g 차, 드롭 같고, 스택 1mm 차, 안정성 같고, 발볼은 토박스 실측이 다릅니다(고스트 17 69.6mm, 페가수스 42 72.3mm). 스펙표를 나란히 놓고 "이게 더 좋다"고 말할 근거가 대부분 없습니다.</p>
 
 <p>그래서 차이가 나는 <strong>두 항목</strong>에 집중하는 게 맞습니다.</p>
 
@@ -3592,7 +3592,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>족저근막염·아킬레스·정강이 이력</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>(세 항목 excellent)</li>
   <li><strong>가끔 페이스를 올린다</strong> → 페가수스 42(반발 7, 5:00부터)</li>
   <li><strong>부드럽게 받쳐주는 느낌이 좋다</strong> → 고스트 17(DNA Loft v3)</li>
-  <li><strong>발볼이 넓다</strong> → 둘 다 가능. 양쪽 다 와이드 옵션이 있습니다</li>
+  <li><strong>발볼이 넓다</strong> → 둘 다 와이드 옵션이 있지만, 표준 폭이 더 넉넉한 페가수스 42가 유리합니다</li>
   <li><strong>더 푹신한 쪽을 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a> 같은 맥스쿠션으로</li>
   <li><strong>더 가벼운 쪽을 원한다</strong> → <a href="/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026">벨로시티 나이트로 4</a>(224g)도 후보</li>
 </ul>

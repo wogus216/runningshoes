@@ -1369,7 +1369,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>Enerzy NXT</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
     <tr><td>쿠션 / 반발</td><td>7 / 6</td><td><strong>8 / 7</strong></td></tr>
     <tr><td>안정성</td><td>7</td><td>7</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / <strong>2E 있음</strong></td><td>표준 / <strong>2E 있음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td><strong>넓음 (랩 76.7mm)</strong> / <strong>2E 있음</strong></td><td>표준 (랩 72.3mm) / <strong>2E 있음</strong></td></tr>
     <tr><td>내구 / km당</td><td><strong>800km / 약 211원</strong></td><td>600km / 약 282원</td></tr>
     <tr><td>대표 용도</td><td>내구·가성비 데일리</td><td>반발·범용 데일리</td></tr>
   </tbody>

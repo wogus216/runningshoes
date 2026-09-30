@@ -50,7 +50,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'good',
     wideOptions: false,
     winterCompatibility: 'good',
@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     plate: '카본 플레이트 (PWRPLATE)',
     outsole: 'PumaGrip 러버',
     upper: '니트 어퍼',
-    width: '좁음~표준',
+    width: '좁음 — RunRepeat 실측 토박스 69.7mm(평균 73.2mm), 70mm 미만의 드문 좁은 편',
     durability: '450km',
     price: '₩219,000 (MSRP) / 세일 시 ₩185,000~',
     costPerKm: '약 ₩487/km (450km 기준)',

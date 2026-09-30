@@ -44,7 +44,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'good',
     wideOptions: true,
     winterCompatibility: 'excellent',
@@ -113,7 +113,7 @@ export const shoe: Shoe = {
     plate: '록플레이트 (돌 보호)',
     outsole: 'Vibram Megagrip + 트랙션 러그 3.5mm(RunRepeat 실측, 15세대 4.7mm) · 접지력 CoF 0.72 · 마모 0.5mm',
     upper: '트레일용 메쉬 · 토박스 내구성 2/5(RunRepeat, 평균 3.1)',
-    width: '표준(RunRepeat 실측 토박스 70.3mm) · 와이드 옵션 국내 유통',
+    width: '좁은 편 — RunRepeat 실측 토박스 70.3mm(트레일 평균 74.4mm), 이전 세대와 같은 테이퍼드 토박스라 발가락 벌어짐이 제한적 · 와이드 옵션 국내 유통',
     durability: '600km+ (아웃솔 마모 0.5mm — RunRepeat 실측, 15세대 대비 절반)',
     price: '179,000원 · 2026-08-15 기준 20% 할인 143,200원 (국내 2종 전량)',
     costPerKm: '약 ₩298/km (600km, 정가 기준)',
