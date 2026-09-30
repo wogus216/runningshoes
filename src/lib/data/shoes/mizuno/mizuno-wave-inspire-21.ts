@@ -42,7 +42,7 @@ export const shoe: Shoe = {
     shinSplints: 'excellent',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
+    toBoxWidth: 'standard',
     flatFootCompatibility: 'excellent',
     wideOptions: true,
     winterCompatibility: 'good',
@@ -89,7 +89,7 @@ export const shoe: Shoe = {
     plate: 'Wave Plate (힐 부분)',
     outsole: 'X10 러버 (4.5mm 두께)',
     upper: '자카드 메쉬',
-    width: '넓음 (98.4mm)',
+    width: '표준 — RunRepeat 랩 토박스 73.5mm(평균 73.2mm, 랩 본문 "average"). 전체 폭 98.4mm는 넓은 편이나 토박스 등급의 근거는 아님',
     durability: '900km+',
     price: '₩159,000',
     costPerKm: '약 ₩177/km (900km 기준)',

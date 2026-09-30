@@ -42,7 +42,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'wide',
+    toBoxWidth: 'standard',
     flatFootCompatibility: 'excellent',
     wideOptions: true,
     winterCompatibility: 'good',
@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 에어 메쉬',
-    width: '와이드',
+    width: '표준 — RunRepeat 랩 토박스 73.4mm(평균 73.2mm), 표준 고스트(69.6mm)보다는 넓지만 절대 기준으로는 평균 수준',
     durability: '700km',
     price: '₩179,000',
     costPerKm: '약 ₩256/km (700km 기준)',

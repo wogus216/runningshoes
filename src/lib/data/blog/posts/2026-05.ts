@@ -7093,7 +7093,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong>봄 마라톤(5~6월) PB 도전 러너</strong> — 출시 시점이 가을 이후. 지금 필요한 신발이면 베이퍼플라이 4가 정답</li>
   <li><strong>서브3 이상 페이스 러너</strong> — 알파플라이 시리즈의 강점(30km+ 안정성)이 발휘되는 페이스는 서브3 이하. 그 이상이면 베이퍼플라이 4가 더 가성비 좋음</li>
-  <li><strong>발볼 넓은 한국 러너</strong> — 와이드 미드풋이라도 알파플라이 시리즈의 토박스는 통상 narrow~standard. 발볼 큰 러너는 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>가 더 안전</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — 와이드 미드풋이라도 알파플라이 시리즈의 토박스는 통상 narrow~standard. 발볼 큰 러너는 시착이 필수입니다. 비교 대상인 <a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a>도 토박스 실측 71.0mm에 RunRepeat가 "tapered toebox"를 지적한 좁은 쪽이라 더 안전하다고 말하기 어렵습니다</li>
   <li><strong>예산 30만원 이하</strong> — 정식 출시가 40만원대 추정. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 또는 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(15만원대)이 합리적</li>
 </ul>
 

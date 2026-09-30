@@ -610,7 +610,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 83%의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
 
 <h3>③ 가격·발볼 — 와이드가 필요하면 답이 좁아진다</h3>
-<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 전작보다 토박스가 넓어졌지만 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 반면 에보 SL과 마하 6은 <strong>와이드 옵션이 있어</strong> 발볼 고민을 덜 수 있습니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
+<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 전작보다 토박스가 넓어졌지만 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 반면 에보 SL과 마하 6은 <strong>와이드 옵션이 있어</strong> 발볼 고민을 덜 수 있습니다. 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
 
 <div class="callout success">
   <span class="callout-icon">💡</span>
@@ -640,7 +640,7 @@ export const posts_2026_06: BlogPost[] = [
   <p class="faq-q">Q. 첫 슈퍼트레이너로는 어느 걸 추천하나요?</p>
   <p class="faq-a">A. 예산이 허락하면 <strong>슈퍼블라스트 3</strong>입니다 — 46.5mm 고스택이 어떤 페이스에서도 실패가 없고, 한 켤레로 훈련 대부분을 커버합니다. 다만 26만원이 부담되거나 발볼이 넓다면 <strong>에보 SL(세일 15만대)</strong>이 슈퍼폼 입문으로 가장 현실적입니다. 가볍고, 와이드도 있고, 가성비가 압도적이에요.</p>
   <p class="faq-q">Q. 발볼이 넓은데 슈퍼블라스트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 전작보다 토박스가 넓어졌다지만 표준은 표준이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 와이드가 있는 <strong>에보 SL</strong>이나 <strong>마하 6</strong>이 안전합니다.</p>
+  <p class="faq-a">A. 권하기 어렵습니다. 전작보다 토박스가 넓어졌다지만 표준은 표준이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 와이드가 있는 <strong>에보 SL</strong>이나 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요.</p>
   <p class="faq-q">Q. 이 신발들로 마라톤 대회에 나가도 되나요?</p>
   <p class="faq-a">A. 됩니다. 특히 슈퍼블라스트 3는 46.5mm 슈퍼폼으로 <strong>서브-4~서브-3.5 러너의 풀코스 레이스화로도 충분</strong>합니다. 다만 기록 단축이 목적인 빠른 러너라면 카본화가 한 수 위예요. "완주·꾸준한 페이스"가 목표면 이 세 켤레로도 대회를 잘 치를 수 있습니다. 카본화와의 차이가 궁금하면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 보세요.</p>
   <p class="faq-q">Q. 더 보고 싶은 대안이 있나요?</p>
@@ -2059,7 +2059,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>안정화</td><td>평발+족저근막 1순위. FF Blast 쿠션 + 안정 시스템으로 아치 무너짐 억제</td></tr>
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>안정화</td><td>가이드레일이 발·무릎 정렬을 잡아주는 대표 안정화</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a></td><td>안정화</td><td>Wave 플레이트의 단단한 지지 + 넉넉한 발볼</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a></td><td>안정화</td><td>Wave 플레이트의 단단한 지지 + 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>맥스쿠션</td><td>중립발용. 넓고 단단한 베이스 + 맥스쿠션으로 충격 분산</td></tr>
     <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td>쿠션(드롭 14mm)</td><td>높은 드롭 + 맥스쿠션이라 종아리·근막에 너그러움</td></tr>
   </tbody>
@@ -2648,8 +2648,8 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>와이드 옵션 있음</strong></td><td>라이드 18·19 · 가이드 18·19 · 트라이엄프 23·24 · 허리케인 25·26 · 옴니 ST 23 · 페레그린 16</td></tr>
-    <tr><td><strong>표준 (무난)</strong></td><td>킨바라 16 · 엔돌핀 스피드 5·아주라 · 엔돌핀 프로 4(실측 72.5mm) · 엔돌핀 트레이너(토박스는 좁은 편) · 파라마운트 맥스(넉넉한 편, 국내 와이드 없음) · 엑소더스 울트라 4(국내 와이드 없음) · 엔돌핀 엘리트 3(전작보다 넓힌 직각형 토박스 — 실측 전 추정)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 5(실측 69.3mm) · 엔돌핀 엘리트 2(전작 레이싱)</td></tr>
+    <tr><td><strong>표준 (무난)</strong></td><td>킨바라 16 · 엔돌핀 스피드 5·아주라 · 엔돌핀 프로 4(실측 72.5mm) · 파라마운트 맥스(넉넉한 편, 국내 와이드 없음) · 엑소더스 울트라 4(국내 와이드 없음) · 엔돌핀 엘리트 3(전작보다 넓힌 직각형 토박스 — 실측 전 추정)</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 5(실측 69.3mm) · 엔돌핀 트레이너(실측 70.1mm) · 엔돌핀 엘리트 2(전작 레이싱)</td></tr>
   </tbody>
 </table>
 
@@ -2804,7 +2804,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>넓음·와이드 (한국 친화)</strong></td><td>웨이브 라이더 29(76.7mm) · 인스파이어(와이드) · 호라이즌(와이드)</td></tr>
+    <tr><td><strong>넓음·와이드 (한국 친화)</strong></td><td>웨이브 라이더 29(76.7mm) · 인스파이어(와이드 옵션, 표준폭 토박스는 73.5mm로 평균 수준) · 호라이즌(와이드)</td></tr>
     <tr><td><strong>표준</strong></td><td>웨이브 라이더 30(랩 실측 전, 와이드 옵션 있음) · 웨이브 스카이 · 리벨리온 플래시 · 네오 비스타 3(71.7mm) · 하이퍼워프 프로</td></tr>
     <tr><td><strong>좁음 (주의)</strong></td><td>하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
   </tbody>
@@ -3319,7 +3319,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '고스트랑 글리세린은 뭐가 다른가요?', answer: '고스트는 만능 데일리(DNA Loft v3, 현행 고스트 18 16.9만), 글리세린은 프리미엄 쿠션(DNA Tuned, 20.9만)입니다. 매일 부담 없이 다양하게 쓸 거면 고스트, 더 푹신하고 고급스러운 쿠션을 원하면 글리세린입니다. 둘 다 "맥스" 버전(고스트 맥스 4 18.9만·글리세린 맥스)이 있는데, 스택을 키운 맥시멀 쿠션입니다.' },
       { question: '브룩스 안정화는 아드레날린이랑 글리세린 GTS 중 뭘 사야 하나요?', answer: '아드레날린 GTS 25(18.9만)는 가성비 안정화로 과내전 입문자의 정답, 글리세린 GTS 22(20.9만)는 글리세린의 프리미엄 쿠션에 GuideRails를 더한 상위 버전입니다. 처음 안정화면 아드레날린, 쿠션까지 욕심나면 글리세린 GTS입니다. 둘 다 카야노보다 저렴합니다.' },
       { question: 'GuideRails 안정화는 다른 안정화랑 어떻게 다른가요?', answer: '대부분의 안정화가 발 안쪽을 단단한 판으로 받친다면, GuideRails는 양옆에 가드레일을 두고 무릎의 과도한 움직임을 제한하는 방식입니다. 발이 아니라 무릎 정렬을 잡아주는 셈이라 과교정 느낌이 적고 자연스럽습니다. 그래서 "안정화는 딱딱하다"는 분께 잘 맞습니다.' },
-      { question: '브룩스는 발볼 넓은 한국 러너에게 맞나요?', answer: '잘 맞는 편입니다. 브룩스는 와이드 옵션이 풍부합니다 — 고스트 18은 국내 와이드(2E)까지 나옵니다. 고스트 맥스 3·글리세린 맥스(1세대)는 기본 토박스가 넓은 편이지만, 현행 고스트 맥스 4는 토박스 실측 71.3mm로 전작보다 좁아져 발볼이 넓다면 국내 와이드 모델을 우선 보세요. 하이페리온 엘리트 같은 카본 레이싱은 좁으니 주의하세요.' },
+      { question: '브룩스는 발볼 넓은 한국 러너에게 맞나요?', answer: '잘 맞는 편입니다. 브룩스는 와이드 옵션이 풍부합니다 — 고스트 18은 국내 와이드(2E)까지 나옵니다. 글리세린 맥스(1세대)는 기본 토박스가 넓은 편이고 고스트 맥스 3는 평균 수준(73.4mm)에 와이드 옵션이 있으며, 현행 고스트 맥스 4는 토박스 실측 71.3mm로 전작보다 좁아져 발볼이 넓다면 국내 와이드 모델을 우선 보세요. 하이페리온 엘리트 같은 카본 레이싱은 좁으니 주의하세요.' },
     ],
     content: `
 <div class="tldr">
@@ -3439,14 +3439,14 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>넓음 (와이드 친화)</strong></td><td>고스트 맥스 3(전작) · 글리세린 맥스</td></tr>
-    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 18(국내 2E) · 고스트 17 · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 글리세린 맥스 2 · 아드레날린 GTS · 글리세린 GTS</td></tr>
+    <tr><td><strong>넓음 (와이드 친화)</strong></td><td>글리세린 맥스(랩 본문 "feels roomy")</td></tr>
+    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 18(국내 2E) · 고스트 17 · 고스트 맥스 3(전작, 73.4mm) · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 글리세린 맥스 2 · 아드레날린 GTS · 글리세린 GTS</td></tr>
     <tr><td><strong>표준</strong></td><td>하이페리온 맥스 3</td></tr>
     <tr><td><strong>좁음 (주의)</strong></td><td>하이페리온 엘리트 5(레이싱)</td></tr>
   </tbody>
 </table>
 
-<p>발볼이 넓다면 데일리는 고스트 18 와이드, 맥스 쿠션은 글리세린 맥스나 고스트 맥스 4 와이드가 무난합니다. 고스트 맥스는 4세대에서 토박스가 전작보다 좁아졌으니 3세대의 넉넉한 핏을 기대하고 사지 마세요. 발볼·평발 전반의 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
+<p>발볼이 넓다면 데일리는 고스트 18 와이드, 맥스 쿠션은 글리세린 맥스나 고스트 맥스 4 와이드가 무난합니다. 고스트 맥스는 4세대에서 토박스가 전작(73.4mm)보다 좁아졌으니(71.3mm) 3세대와 같은 핏을 기대하고 사지 마세요. 발볼·평발 전반의 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 실측이 있습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -3477,7 +3477,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '호카 모델명에 "X"가 붙으면 뭐가 다른가요?', answer: 'X는 퍼포먼스를 강화한 상위 시리즈입니다. 로켓 X·씨엘로 X·테크톤 X는 카본 플레이트가 들어간 레이싱화이고, 마하 X는 PEBA를 더한 슈퍼트레이너입니다. 일반 라인(클리프톤·본디·마하)이 데일리라면, X 시리즈는 대회·빠른 훈련용이라고 보면 됩니다.' },
       { question: '클리프톤이랑 본디는 뭐가 다른가요?', answer: '클리프톤은 가벼운 만능 데일리(275g), 본디는 최대 쿠션 끝판왕(303g)입니다. 매일 다양하게 쓸 거면 클리프톤, 무릎 보호와 푹신함이 최우선이면 본디입니다. 본디는 123mm 초광폭 플랫폼과 와이드 옵션으로 안정감도 더 좋습니다.' },
       { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(299g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
-      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 본디·클리프톤·마하·아라히는 표준 폭입니다. 다만 로켓 X 같은 레이싱은 좁으니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
+      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 본디·클리프톤·아라히는 표준 폭입니다. 반대로 마하 6(실측 70.1mm)·스피드고트 7(71.4mm)과 로켓 X 같은 레이싱은 좁은 편이니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
     ],
     content: `
 <div class="tldr">
@@ -7196,7 +7196,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'max-cushion-running-shoes-knee-protection-2026',
     slug: 'max-cushion-running-shoes-knee-protection-2026',
     title: '무릎 지키는 맥스쿠션 러닝화 추천 2026 | 1080 v15·님버스 28·고스트 맥스 3·본디 9 — 발볼·무게·관절 보호 비교',
-    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28·호카 본디 9(최고 쿠션), 브룩스 고스트 맥스 3(발볼 넓은 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
+    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28·호카 본디 9(최고 쿠션), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
     thumbnail: '/images/blog/max-cushion-running-shoes-knee-protection-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -7209,7 +7209,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
     <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 261g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
-    <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·wide), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
+    <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·와이드 옵션), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
   </ul>
 </div>
 
@@ -7230,7 +7230,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>261g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>281g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>넓음</strong></td><td><strong>179,000</strong></td><td>발볼 넓은 가성비</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
     <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
   </tbody>
@@ -7251,7 +7251,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(261g)</li>
   <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
-  <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(wide·17만원대, 119mm 광폭 플랫폼)</li>
+  <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
   <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
 </ul>

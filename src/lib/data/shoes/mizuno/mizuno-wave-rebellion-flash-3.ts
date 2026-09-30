@@ -44,7 +44,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'fair',
     wideOptions: false,
     winterCompatibility: 'fair',
@@ -91,7 +91,7 @@ export const shoe: Shoe = {
     plate: '유리섬유 강화 나일론 플레이트',
     outsole: '전체 러버',
     upper: '엔지니어드 메쉬 (90%+ 재활용)',
-    width: '표준',
+    width: '좁은 편 · 토박스 70.2mm — RunRepeat 평균 73.2mm보다 3.0mm 좁고 "confirms a narrow fit", Flash 2보다 여유가 줄었다는 평가',
     durability: '500km',
     price: '₩199,000 ($180)',
     costPerKm: '약 ₩398/km (500km 기준)',

@@ -43,7 +43,7 @@ export const shoe: Shoe = {
     shinSplints: 'caution',
   },
   koreanFootFit: {
-    toBoxWidth: 'narrow',
+    toBoxWidth: 'standard',
     flatFootCompatibility: 'poor',
     wideOptions: false,
     winterCompatibility: 'excellent',
@@ -88,7 +88,7 @@ export const shoe: Shoe = {
     plate: 'SpeedVault+ 카본 플레이트',
     outsole: '미니멀 러버',
     upper: '초경량 메쉬',
-    width: '좁음',
+    width: '표준 (경쟁 핏) — RunRepeat 랩 토박스 71.5mm(평균 73.2mm보다 1.7mm 좁음). 랩 본문: 레이싱 핏이라 "tight feel rather than a roomy toebox"지만 토박스는 "in line with most super shoes"',
     durability: '300km',
     price: '₩299,000',
     costPerKm: '약 ₩997/km (300km 기준)',

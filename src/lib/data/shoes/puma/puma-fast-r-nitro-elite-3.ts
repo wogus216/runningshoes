@@ -50,7 +50,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'narrow',
+    toBoxWidth: 'standard',
     flatFootCompatibility: 'poor',
     wideOptions: false,
     winterCompatibility: 'poor',
@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     plate: 'PWRPLATE 카본 (익스텐디드 디자인)',
     outsole: 'PumaGrip 러버 (1.5mm)',
     upper: 'Ultraweave 메쉬 (4/5 통기성)',
-    width: '표준 (좁음)',
+    width: '표준 (레이싱 핏) — RunRepeat 랩 토박스 72.3mm(평균 73.2mm보다 0.9mm 좁음, 랩 본문 "only by a small margin"). 전체 핏은 snug이나 "far from an ultra-narrow"',
     durability: '250km (레이싱 전용)',
     price: '₩379,000 (MSRP) / 세일 시 ₩260,000~',
     costPerKm: '약 ₩1,516/km (250km 기준)',

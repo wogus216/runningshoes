@@ -45,7 +45,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'poor',
     wideOptions: false,
     winterCompatibility: 'excellent',
@@ -88,7 +88,7 @@ export const shoe: Shoe = {
     plate: '카본 Speedboard',
     outsole: '1.8mm 풀커버 러버, 마모 0.5mm·전족 마찰계수 0.76 (RunRepeat)',
     upper: 'LightSpray 로봇 분사 일체형, 끈 없음',
-    width: '좁은 전체 핏 91.5mm / 토박스 69.0mm, 와이드 없음',
+    width: '좁은 전체 핏 91.5mm / 토박스 69.0mm(RunRepeat 평균 73.2mm보다 4.2mm 좁음), 와이드 없음 — RunRepeat: "definitely super snug", 라이트스프레이 어퍼는 끈으로 핏 조절 불가',
     durability: '약 300km (레이싱 운용 예상)',
     price: '₩419,000 (On 대한민국 공식몰)',
     costPerKm: '약 ₩1,397/km (300km 기준)',

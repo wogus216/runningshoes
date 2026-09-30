@@ -50,7 +50,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'good',
     wideOptions: false,
     winterCompatibility: 'good',
@@ -81,7 +81,7 @@ export const shoe: Shoe = {
     plate: '3/4 길이 카본 플레이트',
     outsole: '러버 + 강화 EVA',
     upper: '메쉬 (고통기성)',
-    width: '표준 (D) - 토박스 좁음',
+    width: '표준 (D) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁음, RunRepeat: "undeniably a tapered, race-inspired design"',
     durability: '600km+',
     price: '219,000원',
     costPerKm: '약 ₩365/km (600km 기준)',

@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: 'PumaGrip 러버',
     upper: '엔지니어드 메쉬',
-    width: '표준 (좁은 편, 와이드 옵션 있음)',
+    width: '좁은 편 (와이드 옵션 있음) — RunRepeat 랩 토박스 71.6mm(평균 73.2mm)로 수치 차이는 1.6mm이나, 랩 본문이 "Velocity Nitro series has never been about a roomy fit, and version 4 keeps that same tight feel"이라고 평가',
     durability: '500km',
     price: '₩179,000 (MSRP) / 세일 시 ₩140,000~',
     costPerKm: '약 ₩358/km (500km 기준)',

@@ -5017,7 +5017,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>모델</th><th>왜 이 신발</th></tr></thead>
   <tbody>
-    <tr><td><strong><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></strong></td><td>넓은 토박스 + 메타록커 + 맥스쿠션 — 모튼신경종이 원하는 3박자를 한 신발에</td></tr>
+    <tr><td><strong><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></strong></td><td>와이드 옵션 + 메타록커 + 맥스쿠션 (표준폭 토박스는 73.4mm로 평균 수준)</td></tr>
     <tr><td><strong><a href="/shoes/brooks-glycerin-max">브룩스 글리세린 맥스</a></strong></td><td>부드러운 맥스쿠션 데일리, 여유 있는 앞볼로 발볼 압박 완화</td></tr>
     <tr><td><strong><a href="/shoes/asics-megablast">아식스 메가블라스트</a></strong></td><td>높은 스택의 푹신한 쿠션 + 넓은 토박스, 장거리 전족부 보호</td></tr>
     <tr><td><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></strong></td><td>과회내를 동반한 경우 — 안정화 + 와이드 + 록커 조합</td></tr>
@@ -5086,7 +5086,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 어떤 러닝화를 사야 하나요?</p>
-    <p class="faq-a">A. <strong>넓은 토박스(75mm+) 또는 와이드(2E/4E) 옵션</strong>을 우선하세요. 전족부 쿠션이 두툼하고 록커가 있으면 더 좋습니다. 브룩스 고스트 맥스 3, 글리세린 맥스, 아식스 메가블라스트처럼 앞볼 여유가 큰 쿠션화가 무난한 출발점이에요. 온라인 구매 시 반드시 와이드 규격을 확인하고, 가능하면 시착으로 앞볼 압박 여부를 체크하세요.</p>
+    <p class="faq-a">A. <strong>넓은 토박스(75mm+) 또는 와이드(2E/4E) 옵션</strong>을 우선하세요. 전족부 쿠션이 두툼하고 록커가 있으면 더 좋습니다. 글리세린 맥스(74.3mm)·아식스 메가블라스트(74.3mm)처럼 토박스가 평균보다 넓거나, 고스트 맥스 3(73.4mm)처럼 와이드 옵션이 있는 쿠션화가 무난한 출발점이에요. 온라인 구매 시 반드시 와이드 규격을 확인하고, 가능하면 시착으로 앞볼 압박 여부를 체크하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 결국 수술해야 하나요?</p>

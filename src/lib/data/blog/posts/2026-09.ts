@@ -3327,7 +3327,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/puma-deviate-nitro-elite-3">푸마 디비에이트 나이트로 엘리트 3</a></td><td>289,000원</td><td>204g</td><td>약 963원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">사코니 엔돌핀 프로 5</a></td><td>299,000원</td><td>206g</td><td>약 997원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/hoka-rocket-x-3">호카 로켓 X 3</a></td><td>299,000원</td><td>220g</td><td>약 997원</td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/brooks-hyperion-elite-5">브룩스 하이페리온 엘리트 5</a></td><td>299,000원</td><td>204g</td><td>약 997원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-5">브룩스 하이페리온 엘리트 5</a></td><td>299,000원</td><td>204g</td><td>약 997원</td><td>표준(경쟁 핏)</td><td>없음</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC 엘리트 V5</a></td><td>319,000원</td><td>198g</td><td>약 1,063원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/hoka-cielo-x1">호카 씨엘로 X1</a></td><td>329,000원</td><td>208g</td><td>약 1,097원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/on-cloudboom-strike">온 클라우드붐 스트라이크</a></td><td>329,000원</td><td>201g</td><td>약 1,097원</td><td>표준</td><td>없음</td></tr>
@@ -3592,7 +3592,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '발볼이 넓은데 어떤 걸 봐야 하나요?',
         answer:
-          '이 표에서 기본 토박스가 넓게 나온 건 슈퍼노바 라이즈 2, 고스트 맥스 3, 웨이브 호라이즌 8, 웨이브 인스파이어 21입니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
+          '이 표에서 기본 토박스가 넓게 나온 건 슈퍼노바 라이즈 2, 웨이브 호라이즌 8입니다. 고스트 맥스 3(73.4mm)와 웨이브 인스파이어 21(73.5mm)은 RunRepeat 평균(73.2mm) 수준이라 표준으로 분류하되 둘 다 와이드 옵션이 있습니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
       },
       {
         question: '입문화인데 18만원은 너무 비싼 거 아닌가요?',
@@ -3676,7 +3676,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>286g</td><td><strong>약 177원</strong></td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>286g</td><td><strong>약 177원</strong></td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-29">미즈노 웨이브 라이더 29</a></td><td>169,000원</td><td>258g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
@@ -3709,12 +3709,12 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/mizuno-wave-rider-30">미즈노 웨이브 라이더 30</a></td><td>179,000원</td><td>267g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/asics-novablast-6">아식스 노바블라스트 6</a></td><td>179,000원</td><td>249g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-ride-19">사코니 라이드 19</a></td><td>179,000원</td><td>255g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></td><td>179,000원</td><td>303g</td><td>약 256원</td><td>넓음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></td><td>179,000원</td><td>303g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-guide-19">사코니 가이드 19</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>298g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 V14</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>295g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></td><td>179,000원</td><td>254g</td><td>약 325원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a></td><td>179,000원</td><td>224g</td><td>약 358원</td><td>좁음</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000원</td><td>232g</td><td><strong>약 411원</strong></td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000원</td><td>232g</td><td><strong>약 411원</strong></td><td>좁음(70.1mm)</td><td>있음</td></tr>
   </tbody>
 </table>
 
@@ -3731,7 +3731,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>발볼 기준</th><th>해당 모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>, <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a></td></tr>
+    <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
     <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
@@ -5986,7 +5986,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'mizuno-wave-inspire-21-review',
     title: '미즈노 웨이브 인스파이어 21 후기 | km당 177원, 안정화 카테고리 가성비 1위',
     description:
-      '웨이브 인스파이어 21은 159,000원에 900km 이상 내구성으로 km당 약 177원 — 안정화 카테고리 최고 가성비입니다. RunRepeat 실측(2025-06-05 게시)도 종합 82점(Great)으로 확인했습니다. Wave 플레이트로 과내전을 제어하고, 넓은 토박스와 와이드 옵션까지 갖춰 발볼 넓은 한국 러너에게 우호적입니다.',
+      '웨이브 인스파이어 21은 159,000원에 900km 이상 내구성으로 km당 약 177원 — 안정화 카테고리 최고 가성비입니다. RunRepeat 실측(2025-06-05 게시)도 종합 82점(Great)으로 확인했습니다. Wave 플레이트로 과내전을 제어하고, 전체 폭이 넓은 편(98.4mm)에 와이드 옵션까지 갖춰 발볼 넓은 한국 러너에게 우호적입니다. 다만 토박스는 73.5mm로 RunRepeat 평균 수준입니다.',
     thumbnail: '/images/blog/mizuno-wave-inspire-21-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
@@ -5999,7 +5999,7 @@ export const posts_2026_09: BlogPost[] = [
   <ul>
     <li><strong>159,000원·900km 내구성 — km당 약 177원.</strong> 안정화 카테고리 전체에서 가성비 1위입니다</li>
     <li><strong>RunRepeat 실측 종합 82점(Great)</strong>을 받았습니다(286g, 드롭 12.9mm — 이 사이트 DB와 정확히 일치)</li>
-    <li><strong>토박스가 넓고(wide) 와이드 옵션도 있어</strong> 발볼 넓은 한국 러너에게 그대로 맞는 안정화입니다</li>
+    <li><strong>전체 폭이 넓고 와이드 옵션도 있어</strong> 발볼 넓은 한국 러너에게 맞는 안정화입니다(토박스 자체는 73.5mm로 평균 수준)</li>
   </ul>
 </div>
 
@@ -6016,7 +6016,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
 <ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스 폭 98.4mm·높이 30.9mm로 매우 넓고 높은 편이며, <strong>와이드 옵션까지 있어</strong> 발볼 110mm 이상도 수용합니다</li>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 전체 폭 98.4mm·높이 30.9mm로 넓고 높은 편이며(토박스는 73.5mm로 평균 수준), <strong>와이드 옵션까지 있어</strong> 발볼 110mm 이상도 수용합니다</li>
   <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 excellent(최상위)입니다</li>
   <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. "평발인데 괜찮나요?"라는 질문에 자신 있게 추천할 수 있는 신발입니다</li>
 </ul>
@@ -6036,7 +6036,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>마무리</h2>
-<p>웨이브 인스파이어 21은 "안정화인데 저렴한 것"을 찾는 질문에 가장 정직한 답입니다. RunRepeat의 독립적인 실측이 이 사이트의 데이터와 정확히 일치했다는 점도 신뢰도를 더합니다. 화려하지 않지만, 넓은 발볼과 과내전을 가진 한국 러너에게는 실용적인 선택입니다.</p>
+<p>웨이브 인스파이어 21은 "안정화인데 저렴한 것"을 찾는 질문에 가장 정직한 답입니다. RunRepeat의 독립적인 실측이 이 사이트의 데이터와 정확히 일치했다는 점도 신뢰도를 더합니다. 화려하지 않지만, 발볼이 넓고 과내전을 가진 한국 러너에게는 와이드 옵션을 고를 수 있어 실용적인 선택입니다.</p>
 `,
     faqs: [
       {

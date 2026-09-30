@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 메쉬',
-    width: '와이드',
+    width: '넓은 편 — RunRepeat 랩 토박스 74.3mm(평균 73.2mm)로 수치 차이는 1.1mm이나, 랩 본문이 "feels roomy thanks to the stretchy mesh and the broader midfoot area"·"not one of those super-tapered toeboxes from Brooks"라고 평가(전체 폭은 94.5mm 표준). 경계선 사례',
     durability: '700km',
     price: '₩239,000',
     costPerKm: '약 ₩341/km (700km 기준)',

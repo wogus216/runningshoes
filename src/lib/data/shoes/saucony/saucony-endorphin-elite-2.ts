@@ -75,7 +75,7 @@ export const shoe: Shoe = {
     plate: '풀렝스 카본 플레이트',
     outsole: '경량 러버',
     upper: '초경량 메쉬',
-    width: '표준 (D)',
+    width: '좁음 (D 단일) — RunRepeat 랩 토박스 71.0mm(평균 73.2mm)로 수치 차이는 2.2mm이나, 랩 본문이 "the tapered toebox of the Elite 2 could be an issue for marathons"(넓은 발은 1시간 뒤 조임)라고 평가',
     durability: '200km+',
     price: '339,000원',
     costPerKm: '약 ₩1,695/km (200km 기준)',

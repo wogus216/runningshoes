@@ -63,7 +63,7 @@ export const shoe: Shoe = {
     plate: '풀 카본 플레이트',
     outsole: 'Vibram Megagrip Litebase + 약 3mm 러그',
     upper: 'Vaporweave 경량',
-    width: '표준 (토박스 넓은 편)',
+    width: '넓은 편 — RunRepeat 랩 토박스 76.7mm(트레일 평균 74.4mm), 랩 본문 "wider than most competitors"·"felt spacious from the start". 단 Vaporweave 어퍼가 신축이 거의 없고 토박스 높이는 낮아(24.5mm) 발등 쪽은 답답할 수 있음',
     durability: '400-500km',
     price: '₩299,000 (발매가 기준)',
     costPerKm: '약 ₩664/km (450km 기준)',

@@ -44,7 +44,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'good',
     wideOptions: true,
     winterCompatibility: 'poor',
@@ -91,11 +91,11 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '러버 커버리지',
     upper: '엔지니어드 메쉬',
-    width: '표준 (와이드 옵션 있음)',
+    width: '좁은 편 (와이드 옵션 있음) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁고 엄지 부위에서 급격히 좁아지는 테이퍼형',
     durability: '500km',
     price: '₩185,000 (MSRP) / 세일 시 ₩160,000~',
     costPerKm: '약 ₩411/km (450km 기준)',
-    footType: '표준 발볼 / 와이드 옵션 있음',
+    footType: '보통~좁은 발볼 / 발볼 넓으면 와이드 옵션',
     landingPattern: '힐스트라이크~미드풋',
   },
 

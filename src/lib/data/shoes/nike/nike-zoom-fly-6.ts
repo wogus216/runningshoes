@@ -71,7 +71,7 @@ export const shoe: Shoe = {
     plate: '풀렝스 카본 Flyplate (curved)',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 메쉬 (더블 레이어)',
-    width: '좁음 — RunRepeat 랩 토박스 72.6mm(평균 73.2mm), 발가락 공간·높이가 모두 제한적',
+    width: '좁음 — RunRepeat 랩 토박스 72.6mm(평균 73.2mm)로 수치 차이는 0.6mm뿐이나, 랩 본문이 "This narrow design reinforces Nike\'s intention"·"the snug toebox could be a major drawback for many"라고 평가. 발가락 공간·높이가 모두 제한적',
     durability: '350-400km',
     price: '₩229,000 (MSRP)',
     costPerKm: '약 ₩572/km (400km 기준)',

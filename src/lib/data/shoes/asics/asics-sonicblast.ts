@@ -45,7 +45,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'poor',
     wideOptions: false,
     winterCompatibility: 'fair',
@@ -89,7 +89,7 @@ export const shoe: Shoe = {
     plate: '3/4 길이 ASTROPLATE — Pebax 소재 (카본 아님)',
     outsole: 'ASICSGRIP (두께 2.0mm · 마모 실측 1.0mm · 전족 접지력 0.96)',
     upper: '자카드 메시 (통기성 5/5) — 단 토박스 내구성 1/5로 취약',
-    width: '표준폭 단일 (와이드 없음) · 토박스 70.1mm / 최대폭 92.8mm — 평균보다 좁음',
+    width: '표준폭 단일 (와이드 없음) · 토박스 70.1mm(RunRepeat 평균 73.2mm보다 3.1mm 좁음) / 최대폭 92.8mm — RunRepeat: "too tapered, especially during long runs"',
     durability: '450-550km — 아웃솔은 양호하나 갑피가 먼저 상할 가능성',
     price: '₩229,000 (한국 정가) · 미국 $180',
     costPerKm: '약 ₩458/km (500km 기준)',

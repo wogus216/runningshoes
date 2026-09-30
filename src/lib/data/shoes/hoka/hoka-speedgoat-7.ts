@@ -42,7 +42,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'fair',
     wideOptions: true,
     winterCompatibility: 'good',
@@ -69,7 +69,7 @@ export const shoe: Shoe = {
     plate: '없음 (플레이트리스 데일리 트레일)',
     outsole: 'Vibram Megagrip + 신규 러그 패턴, 러그 깊이 4.5mm',
     upper: '경량 RPET 우븐 텍스타일 + 신축 다이나믹 뱀프',
-    width: '표준(전작보다 살짝 좁음) + 와이드 옵션',
+    width: '좁은 편(전작보다 좁아짐) + 와이드 옵션 · 토박스 71.4mm — RunRepeat 트레일 평균 74.4mm보다 3.0mm 좁고 "close-fitting, locked-in feel"',
     durability: '500km 추정 (아웃솔·토박스 내구성 우수 평가, 정량 km 테스트는 미확인)',
     price: '₩219,000 (무신사 확인가, 한국 공식 사이트 등재는 미확인)',
     costPerKm: '약 ₩438/km (500km 기준)',

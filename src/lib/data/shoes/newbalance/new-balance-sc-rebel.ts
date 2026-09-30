@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     plate: 'Energy Arc — 폼 사이가 아니라 지면 쪽에 배치',
     outsole: '고무 아웃솔 (마모 실측 미게시)',
     upper: '경량 엔지니어드 메쉬',
-    width: '남성 D / 남성 2E(와이드) / 여성 D — 뉴발란스 코리아 2026-08-22 확인',
+    width: '남성 D / 남성 2E(와이드) / 여성 D — 뉴발란스 코리아 2026-08-22 확인. 토박스 71.2mm(RunRepeat 평균 73.2mm보다 2.0mm 좁음)로 수치 차이는 작으나 랩 본문이 "tapered shape (71.2 mm) that creates a very snug fit"이라고 평가',
     durability: '400~500km (추정 — 랩 마모 측정 미게시)',
     price: '259,000원',
     costPerKm: '약 ₩576/km (450km 기준)',
