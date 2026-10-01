@@ -1,4 +1,5 @@
 import { BlogPost } from '@/types/blog';
+import { posts_2026_10 } from './2026-10';
 import { posts_2026_09 } from './2026-09';
 import { posts_2026_08 } from './2026-08';
 import { posts_2026_07 } from './2026-07';
@@ -11,6 +12,7 @@ import { posts_2026_02 } from './2026-02';
 
 // 월별 파일에서 재조립 — API(blogPosts)는 분할 전과 동일.
 export const blogPosts: BlogPost[] = [
+  ...posts_2026_10,
   ...posts_2026_09,
   ...posts_2026_08,
   ...posts_2026_07,
