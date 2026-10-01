@@ -10,7 +10,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/osaka-marathon-2027-entry-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-31',
-    updatedAt: '2026-09-29',
+    updatedAt: '2026-10-01',
     category: 'news' as const,
     readingTime: 7,
     tags: ['오사카 마라톤', '오사카 마라톤 2027', '해외 마라톤 접수', '일본 마라톤', 'JTB 스포츠 스테이션', '마라톤 접수'],
@@ -52,7 +52,7 @@ export const posts_2026_07: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수는 8월 28일(금) 17시(일본시간)에 마감됐습니다.</strong> 추첨 결과 이메일은 <strong>9월 28일(월)에 발송</strong>됐습니다. 당첨됐다면 메일 속 결제 링크로 <strong>10월 19일(월) 23:59(일본시간)까지 결제</strong>해야 참가가 확정됩니다(JTB 스포츠 스테이션 안내). 같은 날 닫힌 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>는 결과가 <strong>9월 18일(금)</strong>에 나오고 참가비를 9월 30일까지 내야 확정됩니다. 지금도 신청할 수 있는 쪽을 찾는다면 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>이 대안입니다 — 해외 몫 3,000명이 추첨 없는 선착순이고 9월 30일까지 열려 있습니다.</div>
+<div class="deadline-strip">🇯🇵 <strong>오사카 마라톤 2027 일반 러너 접수는 8월 28일(금) 17시(일본시간)에 마감됐습니다.</strong> 추첨 결과 이메일은 <strong>9월 28일(월)에 발송</strong>됐습니다. 당첨됐다면 메일 속 결제 링크로 <strong>10월 19일(월) 23:59(일본시간)까지 결제</strong>해야 참가가 확정됩니다(JTB 스포츠 스테이션 안내). 같은 날 닫힌 <a href="/blog/tokyo-marathon-2027-registration-guide">도쿄마라톤 2027 일반 엔트리</a>는 결과가 9월 18일에 나왔고 참가비 납부도 <strong>9월 30일에 종료</strong>됐습니다. 대안으로 거론되던 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>의 해외 러너 접수(선착순 3,000명)도 <strong>9월 30일 17시(JST)에 종료</strong>됐습니다(공식 영문 사이트 10/1 확인). 지금 신청 가능한 경로는 이 글 기준으로 확인되지 않았습니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>

@@ -4515,8 +4515,8 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'berlin-marathon-2026-guide',
     slug: 'berlin-marathon-2026-guide',
-    title: '베를린마라톤 2027 접수 준비 — 발롯 일정은 아직 미게시 | 10월 1일 공식 발표·기록 우선·자선·투어',
-    description: '베를린마라톤 2026은 9월 27일 종료됐고 다음 목표는 2027 대회입니다. 9월 28일 현재 공식 발롯 일정은 아직 게시되지 않았으며, 10월 1일 주최 측의 2027 전망 발표가 예정돼 있습니다. 직전 발롯 일정, 개인·팀 응모, 기록 우선·자선·공식 투어 경로와 한국 러너의 계정·여권·결제 준비를 정리했습니다.',
+    title: '베를린마라톤 2027 접수 준비 — 발롯 접수 10월 1일 시작(공식 홈페이지) | 기록 우선·자선·투어',
+    description: '베를린마라톤 2026은 9월 27일 종료됐고 다음 목표는 2027 대회입니다. 9월 28일 시점에는 공식 발롯 일정이 게시되지 않았지만, 10월 1일 확인 결과 공식 홈페이지가 2027 추첨 접수 시작일을 10월 1일로 게시했습니다. 마감일·참가비·빠른 러너 기준은 불명입니다. 직전 발롯 일정, 개인·팀 응모, 기록 우선·자선·공식 투어 경로와 한국 러너의 계정·여권·결제 준비를 정리했습니다.',
     thumbnail: '/images/blog/berlin-marathon-2026-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
@@ -4526,14 +4526,14 @@ export const posts_2026_06: BlogPost[] = [
     tags: ['베를린마라톤', '베를린마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', '마라톤 세계기록', 'PB 마라톤', '평지 코스', '솅겐', '식스스타', '마라톤 해외원정'],
     content: `
 <div class="callout info">
-<p><strong>지금 상태 한눈에 (2026-09-28 기준)</strong> — 2026 대회는 <strong>9월 27일 종료</strong>됐고, 다음 목표는 2027 대회입니다. 공식 추첨 페이지에는 아직 2027 발롯 날짜가 올라오지 않았습니다. 확인된 다음 일정은 <strong>10월 1일 주최 측의 ‘2027 전망’ 언론 행사</strong>입니다. 발표 행사와 접수 시작은 같은 뜻이 아니므로, 이 글은 미공개 날짜를 추정하지 않고 지금 준비할 계정·서류·응모 경로를 정리합니다.</p>
+<p><strong>지금 상태 한눈에 (2026-10-01 확인)</strong> — 2026 대회는 <strong>9월 27일 종료</strong>됐고, 다음 목표는 2027 대회(공식 문장 기준 <strong>2027년 9월 26일</strong>)입니다. 9월 28일까지 없던 2027 발롯 날짜가 10월 1일 공식 홈페이지에 올라왔습니다. <strong>추첨 접수 시작은 10월 1일</strong>입니다. 다만 마감일·참가비·빠른 러너 기준은 공식 확정이 확인되지 않았고, 공식 추첨 페이지는 연도 표기가 2026으로 남아 있으며 직전 사이클 문구가 섞여 있습니다. 10월 1일의 ‘2027 전망’ 언론 행사는 접수 공지와 별개의 행사입니다.</p>
 </div>
 
 <div class="tldr">
   <span class="tldr-label">먼저 결론</span>
   <ul>
     <li><strong>2026 대회는 끝났습니다</strong> — 구예 아돌라 2:02:50, 티그스트 아세파 2:11:04로 9월 27일 경기가 종료됐습니다. 자세한 결과는 <a href="/blog/berlin-marathon-2026-results">2026 결과 정리</a>에서 확인할 수 있습니다.</li>
-    <li><strong>다음은 2027 발롯</strong>인데, 9월 28일 현재 <strong>공식 페이지에 일정이 아직 올라오지 않았습니다.</strong> 10월 1일 공식 ‘2027 전망’ 행사가 예정돼 있습니다.</li>
+    <li><strong>다음은 2027 발롯</strong>인데, 10월 1일 확인 시 <strong>공식 홈페이지가 접수 시작일을 10월 1일로 게시</strong>했습니다. 마감일·참가비·빠른 러너 기준은 불명입니다.</li>
     <li><strong>직전 사이클은 대회 직후 열렸습니다</strong> — 2026 발롯은 2025년 9월 25일에 열려 11월 6일에 닫혔습니다. 올해도 같다고 단정하지 말고, 개인 계정·여권 영문명·해외결제 카드를 먼저 준비하세요.</li>
   </ul>
 </div>
@@ -4565,19 +4565,19 @@ export const posts_2026_06: BlogPost[] = [
 <p>이 글에서 가장 실질적인 부분입니다. 2026에 들어가지 못했다면 다음 기회는 2027 대회이고, <strong>그 관문은 생각보다 빨리, 그리고 짧게 열립니다.</strong></p>
 
 <div class="callout warning">
-<p><strong>먼저 분명히 할 것</strong> — 2026년 9월 28일 기준으로 <strong>2027 발롯의 공식 일정은 아직 게시되지 않았습니다.</strong> 베를린마라톤 공식 등록·추첨 안내 페이지는 여전히 2026 대회 내용만 담고 있습니다. 공식 미디어 일정에는 10월 1일 ‘2027 전망’ 행사가 잡혀 있지만, 이를 발롯 오픈일로 해석해서는 안 됩니다. 아래 표는 예측이 아니라 <strong>직전 사이클에 실제로 일어난 일</strong>입니다.</p>
+<p><strong>먼저 분명히 할 것</strong> — 2026년 9월 28일까지는 2027 발롯의 공식 일정이 게시되지 않았고, <strong>10월 1일 공식 홈페이지가 ‘2027 추첨 접수는 10월 1일 시작’이라고 게시</strong>했습니다. 다만 공식 추첨 페이지의 세부(연도 표기·기록 기준·코드 유효기한)는 직전 2026 사이클 문구가 남아 있어 2027 값으로 쓸 수 없습니다. 미디어 일정의 10월 1일 ‘2027 전망’ 행사는 접수 공지가 아닌 언론 행사입니다. 아래 표의 왼쪽 열은 <strong>직전 사이클에 실제로 일어난 일</strong>입니다.</p>
 </div>
 
 <table>
 <thead><tr><th>단계</th><th>2026 대회 사이클 실적</th><th>2027은?</th></tr></thead>
 <tbody>
-<tr><td>발롯 접수 시작</td><td>2025년 9월 25일 <small>(2025 대회 직후)</small></td><td rowspan="3"><strong>공식 미게시</strong><br><small>10월 1일 2027 전망 행사 예정</small></td></tr>
+<tr><td>발롯 접수 시작</td><td>2025년 9월 25일 <small>(2025 대회 직후)</small></td><td rowspan="3"><strong>접수 시작 10월 1일(공식 홈페이지)</strong><br><small>마감·결과 통보일은 공식 확정 불명</small></td></tr>
 <tr><td>발롯 접수 마감</td><td>2025년 11월 6일</td></tr>
 <tr><td>추첨 결과 통보</td><td>2025년 11월 말 <small>(이메일)</small></td></tr>
 </tbody>
 </table>
 
-<p>직전 사이클에서 읽을 수 있는 신호는 <strong>대회가 끝난 직후 접수 준비를 마쳐야 한다</strong>는 것입니다. 다만 2026 대회 다음 날인 9월 28일까지도 2027 페이지는 열리지 않았습니다. 과거 패턴을 공식 일정처럼 단정하지 말고, 10월 1일 발표와 공식 등록 페이지를 차례로 확인해야 합니다.</p>
+<p>직전 사이클에서 읽을 수 있는 신호는 <strong>대회가 끝난 직후 접수 준비를 마쳐야 한다</strong>는 것입니다. 2026 대회 다음 날인 9월 28일까지는 2027 페이지가 열리지 않았지만, 10월 1일에 접수 시작일이 공식 게시됐습니다. 과거 패턴을 2027 마감일처럼 단정하지 말고 공식 등록 페이지의 확정 문구를 확인해야 합니다.</p>
 
 <h3>지금 해둘 것 — 신청이 아니라 준비</h3>
 
@@ -4631,7 +4631,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
-<p class="disclaimer">본 글은 2026년 6월 13일 최초 작성, <strong>2026년 9월 28일 베를린마라톤 공식 결과·등록·미디어 안내를 재확인해 2027 준비 글로 전환</strong>했습니다. 2026 대회 종료, 2026 발롯 실제 일정(2025-09-25 오픈 / 11-06 마감 / 11월 말 결과 통보), 10월 1일 ‘2027 전망’ 공식 행사, 개인·팀·빠른 러너·자선·투어 경로를 반영했습니다. <strong>2027 발롯의 공식 일정과 참가비는 이 시점 기준 미게시 상태</strong>이며, 발표 행사를 접수 시작일로 단정하지 않습니다. 항공편·비자/ETIAS 정책은 변동될 수 있으므로 신청·출국 전 공식 사이트와 항공사·대사관 안내로 최신 정보를 재확인하세요. — 산초 에디터</p>
+<p class="disclaimer">본 글은 2026년 6월 13일 최초 작성, <strong>2026년 9월 28일 베를린마라톤 공식 결과·등록·미디어 안내를 재확인해 2027 준비 글로 전환</strong>했습니다. 2026 대회 종료, 2026 발롯 실제 일정(2025-09-25 오픈 / 11-06 마감 / 11월 말 결과 통보), 10월 1일 ‘2027 전망’ 공식 행사, 개인·팀·빠른 러너·자선·투어 경로를 반영했습니다. <strong>2027 발롯은 10월 1일 공식 홈페이지가 접수 시작일(10월 1일)을 게시했고, 마감일·참가비는 공식 확정이 확인되지 않은 상태</strong>이며, 언론 행사를 접수 공지로 단정하지 않습니다. 항공편·비자/ETIAS 정책은 변동될 수 있으므로 신청·출국 전 공식 사이트와 항공사·대사관 안내로 최신 정보를 재확인하세요. — 산초 에디터</p>
 `,
   },
   {
@@ -4986,10 +4986,11 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>2024</td><td>5분 29초</td></tr>
     <tr><td>2025</td><td>6분 51초</td></tr>
     <tr><td>2026</td><td>4분 34초</td></tr>
+    <tr><td>2027</td><td>5분 17초</td></tr>
   </tbody>
 </table>
 
-<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. 다만 <strong>2027년 컷오프는 등록주간(2026년 9월 14~18일, 미 동부시간 18일 17시 마감) 종료 후 10월 초에 발표</strong>되므로 지금 단정할 수 없습니다. 등록주간에는 지원 33,656건이 접수됐고, B.A.A.는 합격·불합격 통보를 10월 초까지 보내되 컷오프는 미리 예측하지 않는다고 밝혔습니다(2026년 9월 21일 공지). 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
+<p>2026년에 기준을 5분 강화한 덕에 컷오프가 6분 51초(2025)에서 4분 34초(2026)로 완화됐습니다. <strong>2027년 컷오프는 9월 29일 B.A.A. 공식 공지로 5분 17초로 확정됐습니다</strong>(등록주간은 2026년 9월 14~18일). 같은 표에서 B.A.A.는 2027 대회 미합격자를 8,019명으로 기록하고 있고, 합격·불합격 통보는 10월 초까지 보낸다고 밝혔습니다. 컷오프에 못 든 지원자 중 약 1,000명은 무작위 선발(BQ Selection)로 출전권을 받을 수 있습니다. 과거 패턴으로 보면 <strong>기준보다 최소 5분, 안전하게는 7~8분 여유</strong>를 목표로 잡는 게 현실적인 전략입니다. "기준 딱 맞춰 통과"는 거의 매년 탈락 위험이 있다고 보면 됩니다.</p>
 
 <h2>★국내에서 BQ 만들기 — 미국 원정은 필요 없습니다</h2>
 
@@ -5080,14 +5081,14 @@ export const posts_2026_06: BlogPost[] = [
 
 <p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
-<p class="disclaimer">※ BQ 자격 기준·자격 윈도·자선 모금 하한선은 baa.org 공식 발표(2026-06 확인) 기준입니다. <strong>2027 등록주간 확정일과 컷오프 수치는 2026년 9월 등록주간 전후로 발표</strong>되며, 컷오프는 매년 지원자 수에 따라 달라지므로 본문의 과거 수치(2024~2026)는 참고용일 뿐 2027 결과를 보장하지 않습니다. 신청 전 반드시 baa.org와 각 국내 대회 공식 페이지에서 최신 정보를 확인하세요.</p>
+<p class="disclaimer">※ BQ 자격 기준·자격 윈도·자선 모금 하한선은 baa.org 공식 발표(2026-06 확인) 기준입니다. <strong>2027 컷오프(5분 17초)는 2026-09-29 B.A.A. 공지(2026-10-01 확인) 기준</strong>이며, 컷오프는 매년 지원자 수에 따라 달라지므로 본문의 과거 수치(2024~2027)는 다음 회차 결과를 보장하지 않습니다. 신청 전 반드시 baa.org와 각 국내 대회 공식 페이지에서 최신 정보를 확인하세요.</p>
 `,
   },
   {
     id: 'overseas-marathon-travel-checklist-korea',
     slug: 'overseas-marathon-travel-checklist-korea',
     title: '한국 러너 해외 메이저 마라톤 원정 매뉴얼 — 항공·시차·입국허가·결제·보험 끝판 체크리스트 | 인천 출발, 7대 메이저 통합 정리',
-    description: '해외 메이저 마라톤 원정, 신청보다 준비물에서 사고가 납니다. 인천(ICN) 출발·한국 여권·한국 카드 기준으로 여행자보험(스포츠 특약), 해외결제 카드(DCC 끄기), 카본화 기내반입, 빕 수령, 시차 적응까지 — 도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕 7대 메이저 물류를 한 표로 묶은 에버그린 매뉴얼. 미국 ESTA, 영국 ETA(£20·2025-01-08 의무화), EU ETIAS(2026 Q4 출시 예정) 최신 입국 허가 포함.',
+    description: '해외 메이저 마라톤 원정, 신청보다 준비물에서 사고가 납니다. 인천(ICN) 출발·한국 여권·한국 카드 기준으로 여행자보험(스포츠 특약), 해외결제 카드(DCC 끄기), 카본화 기내반입, 빕 수령, 시차 적응까지 — 도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕 7대 메이저 물류를 한 표로 묶은 에버그린 매뉴얼. 미국 ESTA, 영국 ETA(£20·2025-01-08 의무화), EU ETIAS(2026년 10월 현재 시행 전·시작일 미공지) 최신 입국 허가 포함.',
     thumbnail: '/images/blog/overseas-marathon-travel-checklist-korea.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
@@ -5097,7 +5098,7 @@ export const posts_2026_06: BlogPost[] = [
     faqs: [
       {
         question: '해외 마라톤 갈 때 입국 허가(ESTA·ETA·ETIAS)는 어떻게 다른가요?',
-        answer: '미국(시카고·보스턴·뉴욕)은 ESTA(USD $21·2년 유효)를 출발 72시간 전까지, 영국(런던)은 2025년 1월 8일부터 의무화된 ETA(£20·2년 유효)를 여행 3영업일 전까지 신청합니다. EU(베를린)는 2026년 6월 기준 ETIAS가 아직 필수가 아니며(2026 Q4 출시 예정, 전환기 후 2027년 본격 시행 예정), 호주(시드니)는 ETA가 필요합니다. 셋 다 비자는 아니지만 없으면 탑승이 거부되며, 규정은 자주 바뀌므로 발권 직후 공식 사이트에서 확인하세요.',
+        answer: '미국(시카고·보스턴·뉴욕)은 ESTA(USD $21·2년 유효)를 출발 72시간 전까지, 영국(런던)은 2025년 1월 8일부터 의무화된 ETA(£20·2년 유효)를 여행 3영업일 전까지 신청합니다. EU(베를린)는 2026년 10월 1일 기준 ETIAS가 아직 시행 전이어서 필수가 아니며(EU 공식 페이지는 시작일을 출시 몇 달 전에 공지한다고 안내하고 현재 날짜는 없습니다), 호주(시드니)는 ETA가 필요합니다. 셋 다 비자는 아니지만 없으면 탑승이 거부되며, 규정은 자주 바뀌므로 발권 직후 공식 사이트에서 확인하세요.',
       },
       {
         question: '인천에서 메이저 개최 도시까지 비행시간이 얼마나 되나요?',
@@ -5117,7 +5118,7 @@ export const posts_2026_06: BlogPost[] = [
       },
     ],
     content: `
-<div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>원정 사고는 '신청'이 아니라 '준비물 디테일'에서 난다.</strong> 여행자보험 스포츠 보장, 해외결제 카드 DCC 끄기, 레이스화 기내반입 — 이 셋이 90%를 막는다.</li><li><strong>도시별로 항공·시차·입국허가가 다르다.</strong> 7대 메이저(도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕)를 인천 출발 기준 한 표로. 미국=ESTA, 영국=ETA(2025년부터 의무), EU=ETIAS(2026 Q4 출시 예정 — 올해는 아직 불필요). 셋 다 비자는 아니지만 없으면 탑승 거부.</li><li><strong>비자·입국·보험 규정은 자주 바뀐다.</strong> 이 글은 일반 원칙 정리용 — 결제·신청 전 반드시 각 공식 페이지에서 최신 규정을 직접 확인하세요.</li></ul></div>
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul><li><strong>원정 사고는 '신청'이 아니라 '준비물 디테일'에서 난다.</strong> 여행자보험 스포츠 보장, 해외결제 카드 DCC 끄기, 레이스화 기내반입 — 이 셋이 90%를 막는다.</li><li><strong>도시별로 항공·시차·입국허가가 다르다.</strong> 7대 메이저(도쿄·시드니·런던·베를린·시카고·보스턴·뉴욕)를 인천 출발 기준 한 표로. 미국=ESTA, 영국=ETA(2025년부터 의무), EU=ETIAS(시행 전·시작일 미공지 — 현재는 불필요). 셋 다 비자는 아니지만 없으면 탑승 거부.</li><li><strong>비자·입국·보험 규정은 자주 바뀐다.</strong> 이 글은 일반 원칙 정리용 — 결제·신청 전 반드시 각 공식 페이지에서 최신 규정을 직접 확인하세요.</li></ul></div>
 
 <div class="callout info"><span class="callout-icon">💡</span><div class="callout-body"><p class="callout-title">이 글의 위치 — 도시 가이드의 '공통 준비물' 허브</p><p>이건 특정 대회 신청 가이드가 아니라, <strong>어느 메이저에 가든 똑같이 챙겨야 하는 공통 실무</strong>를 한 번에 묶은 매뉴얼입니다. 신청 절차·자선·추첨 일정은 도시별 가이드(<a href="/blog/tokyo-marathon-2027-registration-guide">도쿄</a>·<a href="/blog/sydney-marathon-2026-registration-guide">시드니</a>·<a href="/blog/chicago-marathon-2026-registration-guide">시카고</a>)에 있고, 이 글은 그 위에 얹는 "들고 갈 것·확인할 것" 체크리스트입니다. 모든 정보는 <strong>인천(ICN) 출발·한국 여권·한국 발급 카드</strong> 기준입니다.</p></div></div>
 
@@ -5218,7 +5219,7 @@ export const posts_2026_06: BlogPost[] = [
 <tr><td><strong>🗼 도쿄</strong> (HND/NRT)</td><td>직항 약 <strong>2시간 30분</strong></td><td><strong>0시간</strong></td><td>일본 단기 방문 <strong>무비자</strong> · 무료</td></tr>
 <tr><td><strong>🌉 시드니</strong> (SYD)</td><td>직항 약 <strong>10시간 20~35분</strong></td><td><strong>+1시간</strong>(AEST)</td><td>호주 <strong>ETA 필수</strong> · 약 AUD $20</td></tr>
 <tr><td><strong>🇬🇧 런던</strong> (LHR)</td><td>직항 약 <strong>13.5~14.8시간</strong></td><td><strong>−8시간</strong>(BST)</td><td>영국 <strong>ETA 필수</strong> · £20</td></tr>
-<tr><td><strong>🇩🇪 베를린</strong> (BER)</td><td><strong>직항 없음</strong> — FRA 경유 약 14시간 45분+</td><td><strong>−7시간</strong>(CEST)</td><td>무비자 90일 · <strong>ETIAS 2026 Q4 예정</strong>(현재 불필요)</td></tr>
+<tr><td><strong>🇩🇪 베를린</strong> (BER)</td><td><strong>직항 없음</strong> — FRA 경유 약 14시간 45분+</td><td><strong>−7시간</strong>(CEST)</td><td>무비자 90일 · <strong>ETIAS 시행 전</strong>(시작일 미공지, 현재 불필요)</td></tr>
 <tr><td><strong>🌆 시카고</strong> (ORD)</td><td>직항 약 <strong>13시간 30분</strong></td><td><strong>−14시간</strong>(CDT)</td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
 <tr><td><strong>🦞 보스턴</strong> (BOS)</td><td>직항 약 <strong>13시간 50분</strong>(KE)</td><td><strong>−13시간</strong>(EDT)</td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
 <tr><td><strong>🗽 뉴욕</strong> (JFK/EWR)</td><td>직항 약 <strong>14시간</strong></td><td><strong>−13~14시간</strong></td><td>미국 <strong>ESTA 필수</strong> · USD $21</td></tr>
@@ -5234,7 +5235,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
 <li><strong>미국 — ESTA (시카고·보스턴·뉴욕):</strong> 한국은 비자면제프로그램(VWP) 대상이라 ESTA로 90일 무비자 입국. 비용 <strong>USD $21</strong>, 유효기간 <strong>2년</strong>(여권 만료가 빠르면 그날까지). 공식 사이트 <strong>esta.cbp.dhs.gov</strong>에서만 신청하고, 규정상 <strong>출발 72시간 전까지</strong> 신청 권고.</li>
 <li><strong>영국 — ETA (런던) ★2025년부터 의무화:</strong> 영국은 <strong>2025년 1월 8일부터 한국 여권 소지자에게 ETA를 의무화</strong>했습니다. \'그냥 무비자\'로 들어가던 시절은 끝났습니다. 비용 <strong>£20</strong>(약 3만 4천~3만 6천 원), 한 번 받으면 <strong>2년간 여러 번 입국</strong>(1회 최대 6개월 체류). <strong>\'UK ETA\' 공식 앱</strong>(또는 GOV.UK)에서 신청하면 대개 몇 분 내 자동 승인되며, 권고는 <strong>여행 3영업일 전까지</strong>. 런던마라톤 지원자는 반드시 챙기세요.</li>
-<li><strong>EU — ETIAS (베를린), 아직 \'예정\':</strong> 독일 포함 솅겐 지역은 한국 여권으로 <strong>180일 중 90일 무비자</strong>입니다. 화제의 ETIAS는 2026년 6월 기준 <strong>아직 시행 전</strong>으로, 공식 일정상 <strong>2026년 4분기(Q4) 출시 예정</strong>이며 출시 후에도 전환기·유예기간을 거쳐 <strong>본격 의무화는 2027년</strong>으로 잡혀 있습니다. 즉 <strong>2026년 안에 베를린마라톤(9월 말)을 간다면 ETIAS 없이 입국</strong>됩니다. 시행 후 비용은 <strong>€20</strong>(만 18세 미만·70세 이상 무료) 예정. 이 일정은 EU가 여러 번 미뤄온 만큼 <strong>출발 전 EU 공식 사이트(travel-europe.europa.eu)에서 최신 시행 여부 확인 필수</strong>.</li>
+<li><strong>EU — ETIAS (베를린), 아직 \'예정\':</strong> 독일 포함 솅겐 지역은 한국 여권으로 <strong>180일 중 90일 무비자</strong>입니다. 화제의 ETIAS는 2026년 10월 1일 기준 <strong>아직 시행 전</strong>입니다. EU 공식 페이지는 "ETIAS is currently not in operation"이라며 시작일을 출시 몇 달 전에 공지하겠다고 안내하고, 현재 페이지에는 날짜가 없습니다(2025년 7월 기사는 2026년 4분기를 언급했지만 이후 갱신된 날짜는 확인되지 않았습니다). 따라서 지금 신청할 수 있는 ETIAS는 없고 <strong>시작일이 공지되기 전에는 ETIAS 없이 입국</strong>합니다. 시행 후 비용은 <strong>€20</strong>(만 18세 미만·70세 이상 무료) 예정. 이 일정은 EU가 여러 번 미뤄온 만큼 <strong>출발 전 EU 공식 사이트(travel-europe.europa.eu)에서 최신 시행 여부 확인 필수</strong>.</li>
 <li><strong>호주 — ETA (시드니):</strong> 호주는 ETA(전자여행허가)가 필요합니다. 공식 앱으로 신청하며 비용은 약 AUD $20 수준.</li>
 <li><strong>일본 — 무비자 (도쿄):</strong> 단기 방문은 무비자가 일반적. 다만 입국 규정은 변동될 수 있으니 출발 전 최신 안내 확인.</li>
 </ul>
@@ -5262,7 +5263,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <p>🗺️ 6대 메이저 전체 비교와 "어디부터 갈까"가 궁금하다면 <a href="/blog/world-marathon-majors-guide-2026">세계 6대 마라톤 완전정복</a>에서 한눈에 보세요.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문은 한국 러너의 해외 메이저 원정 준비를 일반 원칙 수준으로 정리한 매뉴얼입니다. 입국 허가 정보(미국 ESTA USD $21·2년, 영국 ETA £20·2025-01-08 한국 의무화·2년, EU ETIAS €20·2026 Q4 출시 예정·전환기 후 2027 본격 시행 예정, 호주 ETA·일본 단기 무비자)와 비행시간·시차는 2026년 6월 기준 공식·공개 자료를 바탕으로 정리했습니다. 여행자보험 보장 범위·면책, 카드 해외 수수료, 입국 허가 규정·수수료·시행일은 상품·카드사·항공사·각국 정책마다 다르고 <strong>예고 없이 변경</strong>됩니다 — 본문에 특정 상품·금액을 단정하지 않은 이유입니다. 환율은 변동분이라 본문에 단정하지 않았습니다. 보험·결제·입국·의학 관련 사항은 반드시 신청·결제 전 각 보험사·카드사·항공사·각국 입국 당국(ESTA=esta.cbp.dhs.gov, UK ETA=공식 앱/GOV.UK, ETIAS=travel-europe.europa.eu)·의료진 등 공식·전문 출처에서 최신 내용을 직접 확인하세요. 항공 소요시간·시차는 일반적 직항 기준 근사치로 편·계절에 따라 달라질 수 있습니다.</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본문은 한국 러너의 해외 메이저 원정 준비를 일반 원칙 수준으로 정리한 매뉴얼입니다. 입국 허가 정보(미국 ESTA USD $21·2년, 영국 ETA £20·2025-01-08 한국 의무화·2년, EU ETIAS €20(수수료는 EU 공식 안내)·시행 전·시작일 미공지(2026-10-01 확인), 호주 ETA·일본 단기 무비자)와 비행시간·시차는 2026년 6월 기준 공식·공개 자료를 바탕으로 정리했습니다. 여행자보험 보장 범위·면책, 카드 해외 수수료, 입국 허가 규정·수수료·시행일은 상품·카드사·항공사·각국 정책마다 다르고 <strong>예고 없이 변경</strong>됩니다 — 본문에 특정 상품·금액을 단정하지 않은 이유입니다. 환율은 변동분이라 본문에 단정하지 않았습니다. 보험·결제·입국·의학 관련 사항은 반드시 신청·결제 전 각 보험사·카드사·항공사·각국 입국 당국(ESTA=esta.cbp.dhs.gov, UK ETA=공식 앱/GOV.UK, ETIAS=travel-europe.europa.eu)·의료진 등 공식·전문 출처에서 최신 내용을 직접 확인하세요. 항공 소요시간·시차는 일반적 직항 기준 근사치로 편·계절에 따라 달라질 수 있습니다.</p>
 `,
   },
   {
@@ -5488,12 +5489,12 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'tokyo-marathon-2027-registration-guide',
     slug: 'tokyo-marathon-2027-registration-guide',
-    title: '도쿄마라톤 2027 추첨 마감 — 결과는 9월 18일, 당첨되면 9/30까지 결제 | 아직 열린 겨울 메이저는 교토',
-    description: '도쿄마라톤 2027 일반추첨이 8월 28일(금) 17시(JST)에 마감됐습니다. 결과 통보일(9월 18일)은 지났고, 당첨자는 9월 30일 17시(JST)까지 참가비를 내야 자리가 확정됩니다 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도). 오픈 4시간 만에 정원 4만 명을 넘겨 추첨이 확정됐던 대회입니다. 지금 신청할 수 있는 겨울 메이저를 찾는다면 해외 거주자 3,000명을 선착순으로 받는 교토 마라톤 2027이 9월 30일까지 열려 있습니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
+    title: '도쿄마라톤 2027 추첨 마감 — 결과는 9월 18일, 참가비 납부는 9/30 종료 | 교토 해외 접수도 마감',
+    description: '도쿄마라톤 2027 일반추첨이 8월 28일(금) 17시(JST)에 마감됐습니다. 결과 통보일(9월 18일)이 지났고, 당첨자의 참가비 납부도 9월 30일 17시(JST)에 종료됐습니다 — 해외 USD 230·국내 ¥19,800(짐 보관 ¥1,200 별도). 오픈 4시간 만에 정원 4만 명을 넘겨 추첨이 확정됐던 대회입니다. 대안으로 꼽히던 교토 마라톤 2027의 해외 러너 접수(선착순 3,000명)도 9월 30일에 종료됐습니다. 20주년 100mm 프리미엄 완주 메달과 듀오 팀 신설까지 공식 기준으로 정리했습니다.',
     thumbnail: '/images/blog/tokyo-marathon-2027-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-27',
+    updatedAt: '2026-10-01',
     event: {
       name: '도쿄마라톤 2027',
       startDate: '2027-03-07',
@@ -5507,7 +5508,7 @@ export const posts_2026_06: BlogPost[] = [
     content: `
 <div class="deadline-strip">
   <span class="dl-badge">📬 결과 통보일 지남</span>
-  <span class="dl-text">도쿄마라톤 2027 일반추첨은 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됐고, 공식 결과 통보일(<strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</strong>)도 지났습니다. 당첨됐다면 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17시(JST)까지 참가비 납부</strong>(기한 내 미납 시 자리 소멸).</span>
+  <span class="dl-text">도쿄마라톤 2027 일반추첨은 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 17시(JST)에 마감</strong>됐고, 공식 결과 통보일(<strong>${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth}</strong>)도 지났습니다. 참가비 납부도 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 17시(JST)에 종료</strong>됐고 기한 내 미납분은 자리가 소멸됐습니다. 공식 뉴스에 추가 모집 공지는 아직 없습니다(10/1 확인).</span>
 </div>
 
 <div class="callout warning">
@@ -5521,8 +5522,8 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout tip">
   <span class="callout-icon">🇯🇵</span>
   <div class="callout-body">
-    <p class="callout-title">지금 신청 가능한 겨울 메이저 — 교토가 9월 30일까지</p>
-    <p>같은 겨울 시즌의 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>은 해외 거주자 몫 3,000명을 <strong>선착순</strong>으로 받고 <strong>9월 30일</strong>까지 열려 있습니다. 도쿄 결과 발표(${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth})를 보고 떨어졌을 때 넣는 순서가 날짜상 가능하지만, <strong>잔여 수량이 공개되지 않아 그때까지 자리가 남으리라는 보장은 없습니다.</strong> 도쿄 결과와 무관하게 교토도 뛸 생각이라면 먼저 확보해두는 편이 안전합니다.</p>
+    <p class="callout-title">같은 겨울 메이저 — 교토 해외 러너 접수는 9월 30일에 종료</p>
+    <p>같은 겨울 시즌의 <a href="/blog/kyoto-marathon-entry-guide">교토 마라톤 2027</a>은 해외 거주자 몫 3,000명을 <strong>선착순</strong>으로 받았고 해외 러너 접수는 <strong>9월 30일 17시(JST)에 종료</strong>됐습니다(공식 영문 사이트 10/1 확인, 신청 페이지 closed). 도쿄 결과를 보고 넣으려던 분에게는 이미 닫힌 경로입니다.</p>
   </div>
 </div>
 
@@ -5530,7 +5531,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>2027 도쿄의 모든 신청 경로가 닫혔습니다</strong> — 일반추첨 ${md(MAJOR_DEADLINES.tokyo2027.ballot.close)} 마감, 자선 ${md(MAJOR_DEADLINES.tokyo2027.charity.close)}, One Tokyo Global ${md(MAJOR_DEADLINES.tokyo2027.oneTokyoGlobal.close)}. 대회일은 ${MAJOR_DEADLINES.tokyo2027.raceDate.replace(/-/g, '.')}이고, 새로 들어갈 방법은 남아 있지 않습니다.</li>
-    <li><strong>응모한 사람의 다음 일정은 둘</strong>입니다 — ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} My Entry에서 결과 발표, 당첨 시 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 참가비 납부</strong>. 금액은 해외 러너 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong>(국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()})이고, <strong>기한을 넘기면 당첨돼도 자리가 사라집니다.</strong></li>
+    <li><strong>응모한 사람의 일정은 둘이었고 모두 지났습니다</strong> — ${MAJOR_DEADLINES.tokyo2027.ballot.resultMonth} My Entry에서 결과 발표, 당첨 시 <strong>${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)} 참가비 납부(종료)</strong>. 금액은 해외 러너 <strong>USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}</strong>(국내 ¥${MAJOR_DEADLINES.tokyo2027.ballot.feeDomesticJpy.toLocaleString()})이고, <strong>기한을 넘긴 당첨은 자리가 사라졌습니다.</strong></li>
     <li><strong>경쟁률의 감을 남겨둡니다</strong> — 오픈 당일 이미 정원 ${MAJOR_DEADLINES.tokyo2027.ballot.fieldSize.toLocaleString()}명을 넘겨 추첨이 확정됐습니다. 다만 선착순이 아니어서 마감 전에 넣기만 하면 조건이 같았습니다. <strong>2028 사이클도 같은 구조라면 오픈 날 서두를 이유는 없습니다</strong> — 8월 중순 오픈에 2주 창이었다는 점만 기억해두면 됩니다.</li>
   </ul>
 </div>
@@ -5603,7 +5604,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>놓치기 쉬운 두 가지가 있습니다. 하나는 <strong>짐 보관이 유료</strong>라는 것 — 참가비에 포함이 아니라 ¥1,200을 따로 결제해야 합니다. 다른 하나는 <strong>당첨 후 납부 기간이 열흘 남짓</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})이라는 것입니다. 발표일에 메일이 오지 않을 수도 있으니 <strong>9월 18일에는 My Entry에 직접 들어가 확인</strong>하세요. 이 기간을 넘기면 당첨돼도 무효입니다.</p>
+<p>놓치기 쉬운 두 가지가 있습니다. 하나는 <strong>짐 보관이 유료</strong>라는 것 — 참가비에 포함이 아니라 ¥1,200을 따로 결제해야 합니다. 다른 하나는 <strong>당첨 후 납부 기간이 열흘 남짓</strong>(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayFrom)}~${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})이었다는 것입니다. 이 기간은 9월 30일에 끝났고, 넘긴 당첨은 무효입니다. 내년 같은 시즌에 응모한다면 <strong>발표일에 My Entry에 직접 들어가 확인</strong>하는 습관이 안전합니다(메일이 누락될 수 있습니다).</p>
 
 <p>단점은 <strong>경쟁률</strong>입니다. 오픈 당일 정원이 찬 데서 보듯 메이저 중에서도 인기가 높습니다. "올해 안 되면 내년에 또" 식으로 여러 해 도전할 생각이라면, 선행 추첨과 연속 미당첨 보장 제도가 있는 <strong>One Tokyo Global</strong>(연회비 ¥3만)을 다음 사이클에 고려할 만합니다. 단, 이 제도도 <strong>당첨 보장이 아니라 '특별 추첨 자격'</strong>이라는 점을 오해하면 안 됩니다. 참고로 세미엘리트·One Tokyo Global에서 떨어진 사람도 <strong>일반 추첨에 다시 응모할 수 있습니다</strong>(중복 불이익 없음).</p>
 
@@ -5662,7 +5663,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>여권 영문명과 100% 일치</strong> — 신청 시 영문 이름을 여권과 다르게 적으면 입국·확인에서 문제가 됩니다.</li>
   <li><strong>해외 결제 카드 준비</strong> — 결제는 신용카드/지정 온라인 결제만. 완료 후 <strong>환불·이름 변경·양도 불가</strong>입니다.</li>
   <li><strong>My Entry 계정을 먼저 만들 것</strong> — 응모도 결과 확인도 전부 My Entry(myentry.onetokyo.org)에서 이뤄집니다. 계정 생성부터 하다 마감에 쫓기지 마세요.</li>
-  <li><strong>9월 18일은 직접 들어가서 확인</strong> — 당첨 통보 메일이 스팸으로 가거나 누락될 수 있습니다. 납부 기한이 ${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)}까지라 놓치면 당첨이 무효가 됩니다.</li>
+  <li><strong>발표일에는 직접 들어가서 확인</strong> — 당첨 통보 메일이 스팸으로 가거나 누락될 수 있습니다. 이번 시즌 납부 기한(${md(MAJOR_DEADLINES.tokyo2027.ballot.feePayBy)})은 이미 지났고, 놓친 당첨은 무효였습니다.</li>
   <li><strong>짐 보관은 별도 결제</strong> — ¥${MAJOR_DEADLINES.tokyo2027.ballot.baggageFeeJpy.toLocaleString()}이 참가비에 포함돼 있지 않습니다. 필요하면 참가비 결제 후 따로 신청하세요.</li>
   <li><strong>환율은 변동分 감안</strong> — 참가비 USD ${MAJOR_DEADLINES.tokyo2027.ballot.feeOverseasUsd}는 달러 표기라 결제 시점 환율이 그대로 반영됩니다.</li>
   <li><strong>거리부터 확정</strong> — 첫 풀코스라면 무리하지 말고 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준을 먼저 점검하세요.</li>

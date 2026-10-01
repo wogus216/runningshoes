@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     upper: 'LightSpray 로봇 스프레이 일체형 (약 33g, 솔기·끈·힐카운터 없음)',
     width: '표준 (와이드 없음)',
     durability: '480-640km (어퍼 장기 내구성 미검증)',
-    price: '₩319,000 (On 한국 공식) — 공식몰 품절 표시(2026-08-01~09-01 자동 링크 점검 3회 연속 sold out). 2026-09-16 기준 구매 링크는 네이버 판매처(₩339,800)로 연결',
+    price: '₩319,000 (On 한국 공식) — 2026-10-01 공식몰 재고 확인: 블랙 아폴로 M25~M28.5 구간 재고 있음, 일부 색상·사이즈 한정("재고 소진 시까지"). 8~9월에는 3회 연속 sold out 이었음',
     costPerKm: '약 ₩798/km (400km 기준)',
     footType: '중립',
     landingPattern: '미드풋 중심',
@@ -106,5 +106,8 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GNJlJ6pr' }],
+  purchaseLinks: [
+    { store: 'On 공식몰', url: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670', isOfficial: true },
+    { store: '네이버', url: 'https://naver.me/GNJlJ6pr' },
+  ],
 };
