@@ -21,38 +21,38 @@ export interface PopularData {
 }
 
 export const popular: PopularData = {
-  generatedAt: '2026-09-03',
+  generatedAt: '2026-10-01',
   windowDays: 28,
   shoesByCategory: {
       "입문화": [
           "puma-velocity-nitro-4"
       ],
       "데일리": [
-          "asics-novablast-5"
+          "adidas-adizero-evo-sl"
       ],
       "쿠션화": [
-          "nike-vomero-plus"
+          "new-balance-1080-v15"
       ],
       "레이싱": [
           "asics-superblast-3"
       ],
       "안정화": [
-          "asics-gel-kayano-33"
+          "hoka-arahi-8"
       ],
       "트레일": [
           "asics-gel-venture-10"
       ]
   },
   trendingShoes: [
-      "puma-velocity-nitro-4",
-      "adidas-supernova-rise-3",
+      "adidas-adizero-evo-sl",
+      "asics-novablast-5",
       "new-balance-1080-v15"
   ],
   posts: [
-      "asics-go-free-run-2026",
+      "new-balance-running-shoes-lineup-tier-guide-2026",
       "asics-gel-kayano-33-review",
       "li-ning-red-hare-9-lineup-2026",
-      "lotteria-baebulrun-2026",
-      "nike-pegasus-41-vs-42-comparison"
+      "running-shoes-recommend-by-price-2026",
+      "stability-shoes-self-diagnosis-fit-guide-2026"
   ],
 };
