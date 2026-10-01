@@ -20,7 +20,7 @@ export const februaryEvents: MarathonEvent[] = [
     location: '타케비시 스타디움 교토(니시쿄고쿠) 출발 → 헤이안진구 앞 도착',
     region: '교토',
     distances: ['풀코스'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://kyoto-marathon.com/',
     description:
@@ -43,7 +43,7 @@ export const februaryEvents: MarathonEvent[] = [
     },
     registrationStart: '2026-07-16',
     registrationEnd: '2026-09-30',
-    lastVerified: '2026-08-12',
+    lastVerified: '2026-10-01',
   },
   {
     id: 'osaka-marathon-2027',
