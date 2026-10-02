@@ -4399,7 +4399,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'new-balance-1080-v14-vs-v15-comparison',
     slug: 'new-balance-1080-v14-vs-v15-comparison',
     title: '뉴발란스 1080 v14 vs v15 비교 | Fresh Foam X→인피니온 폼 교체 + 약 24g 감량 + 토박스 narrow→standard — 사실상 다른 신발',
-    description: '1080 v14(285g/199,000원)와 v15(261g/209,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. 약 24g 감량 + 폼 자체 교체 + 토박스 narrow→standard + 4E 와이드 추가 — 같은 라인 세대 변화 중 역대급. v14 할인 13만원대 살까, v15 신상 21만원 살까 매트릭스.',
+    description: '1080 v14(285g/199,000원)와 v15(261g/209,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. 약 24g 감량(측정 기준이 다름: v14는 RunRepeat 실측, v15는 한국 공식 표기) + 폼 자체 교체 + 토박스 narrow→standard + 4E 와이드 추가 — 같은 라인 세대 변화 중 역대급. v14 할인 13만원대 살까, v15 신상 21만원 살까 매트릭스.',
     thumbnail: '/images/blog/new-balance-1080-v14-vs-v15-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-17',
@@ -4410,7 +4410,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>같은 라인 세대 변화 중 역대급</strong> — v15는 v14 대비 약 24g 감량(285→261g) + Fresh Foam X → 인피니온(질소 주입 슈퍼크리티컬) 폼 교체</li>
+    <li><strong>같은 라인 세대 변화 중 역대급</strong> — v15는 v14 대비 약 24g 감량(285→261g, 단 v14는 RunRepeat 실측·v15는 한국 공식 표기라 기준이 다릅니다) + Fresh Foam X → 인피니온(질소 주입 슈퍼크리티컬) 폼 교체</li>
     <li>한국 러너 핵심 개선 3가지: <strong>토박스 narrow → standard</strong> + <strong>4E 와이드 옵션 추가</strong> + <strong>힐 스택 +3mm(37→40mm)</strong></li>
     <li>가격 차이 1만원(MSRP). 단 <strong>v14 할인 13~15만원대</strong>로 풀려 실제 차이 5~7만원. "별개의 신발"이라 본인 우선순위(가벼움 vs 가성비)로 갈림</li>
   </ul>
@@ -4553,7 +4553,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. v14 → v15 업그레이드 가치 있나요?</h3>
-<p>가치 큼. <strong>약 24g 감량 + 폼 자체 교체 + 토박스 standard + 4E 옵션</strong> — 같은 라인 세대 변화 중 거의 가장 큰 폭. v14를 300km 이내 신었다면 그냥 v14 굴리고, v14가 수명 다 됐거나 발볼 4E급이라면 무조건 v15.</p>
+<p>가치 큼. <strong>약 24g 감량(측정 기준이 다름: v14는 RunRepeat 실측, v15는 한국 공식 표기) + 폼 자체 교체 + 토박스 standard + 4E 옵션</strong> — 같은 라인 세대 변화 중 거의 가장 큰 폭. v14를 300km 이내 신었다면 그냥 v14 굴리고, v14가 수명 다 됐거나 발볼 4E급이라면 무조건 v15.</p>
 
 <h3>Q. v15가 정말 v14보다 부드러운가요?</h3>
 <p>"부드러움 절대치"는 v14의 HA 11.9 초소프트가 살짝 더 부드러울 수 있음 (검증 데이터 기준). 다만 v15의 인피니온 폼은 NB가 에너지 리턴 향상을 내세운 폼이라, 반발감은 v15 쪽일 가능성이 있음(v15 랩 수치는 작성 시점 미게시). <strong>리커버리 위주 = v14, 데일리 + 페이스 가끔 올리기 = v15</strong>가 정답.</p>
@@ -7640,7 +7640,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>이번 팝업이 왜 중요한가</h2>
 
-<p>NB 1080 v15는 2026년 발매된 뉴발란스 플래그십 쿠션화입니다. 전작 v14 대비 <strong>약 24g 경량화(285→261g)</strong> + 인피니온(질소 주입 슈퍼크리티컬 폼) 채택으로 거의 다른 신발이 됐죠. <a href="/shoes/new-balance-1080-v15">1080 v15</a>를 한국 러너에게 매력적으로 만드는 핵심 3가지:</p>
+<p>NB 1080 v15는 2026년 발매된 뉴발란스 플래그십 쿠션화입니다. 전작 v14 대비 <strong>약 24g 경량화(285→261g, v14 랩 실측 대 v15 공식 표기)</strong> + 인피니온(질소 주입 슈퍼크리티컬 폼) 채택으로 거의 다른 신발이 됐죠. <a href="/shoes/new-balance-1080-v15">1080 v15</a>를 한국 러너에게 매력적으로 만드는 핵심 3가지:</p>
 
 <ul>
   <li><strong>261g 경량 쿠션화</strong> — 힐 40mm 스택 맥스 쿠션 중 가벼운 편</li>

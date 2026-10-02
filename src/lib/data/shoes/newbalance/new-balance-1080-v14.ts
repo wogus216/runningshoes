@@ -43,7 +43,7 @@ export const shoe: Shoe = {
   },
 
   detailedSpecs: {
-    weight: '285g (남성 US 9 기준)',
+    weight: '285g (RunRepeat 랩 실측, 남성 — 측정 사이즈 미표기) / 298g (브랜드 스펙 10.5oz)',
     stackHeight: '힐 37.0mm / 포어풋 32.8mm (실측)',
     drop: '4.2mm (실측) / 6mm (브랜드 공식)',
     midsole: 'Fresh Foam X (프리미엄 EVA 기반 폼)',
