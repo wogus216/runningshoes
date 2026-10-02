@@ -49,11 +49,24 @@ describe('runner analysis scoring', () => {
     expect(analysis.match.character.id).toBe('heracles');
   });
 
-  it('uses neutral interval fallbacks when no dates or weekdays are provided', () => {
+  it('estimates intervals from the run count when no dates or weekdays are provided', () => {
     const { traits, fallbacksUsed } = scoreRunner({ ...SAMPLE_SNAPSHOT, usualWeekdays: undefined });
     expect(traits.recoveryMargin).toBeLessThanOrEqual(70);
     expect(traits.consistency).toBe(50);
-    expect(fallbacksUsed).toEqual(expect.arrayContaining(['neutralIntervals', 'neutralConsistency']));
+    expect(fallbacksUsed).toEqual(expect.arrayContaining(['runCountIntervals', 'neutralConsistency']));
+  });
+
+  it('spreads the runs evenly over 28 days when the schedule is unknown', () => {
+    // 28회 → 간격 1일(35점). 140km ÷ 28 = 1회 5km, 강한 훈련 없음.
+    const { traits } = scoreRunner({
+      ...SAMPLE_SNAPSHOT,
+      totalDistanceKm: 140,
+      runCount: 28,
+      longestRunKm: 8,
+      usualWeekdays: undefined,
+      raceGoal: undefined,
+    });
+    expect(traits.recoveryMargin).toBeCloseTo(51.36, 2);
   });
 
   it('rejects impossible direct-input snapshots', () => {
@@ -77,6 +90,43 @@ describe('runner analysis scoring', () => {
     const snapshot = { ...SAMPLE_SNAPSHOT, ...patch };
     expect(validateSnapshot(snapshot)).toContain(`${field} must be a finite number`);
     expect(() => scoreRunner(snapshot)).toThrow();
+  });
+});
+
+describe('weekday intervals', () => {
+  // 엔진 요일: 0 = 일 … 6 = 토.
+  const withDays = (usualWeekdays: number[]) => scoreRunner({ ...SAMPLE_SNAPSHOT, usualWeekdays }).traits;
+
+  it('gives back-to-back days less recovery margin than spread days', () => {
+    const mondayTuesday = withDays([1, 2]);
+    const mondayThursday = withDays([1, 4]);
+    expect(mondayTuesday.recoveryMargin).toBeLessThan(mondayThursday.recoveryMargin - 10);
+  });
+
+  it('reads the pattern, not the calendar position', () => {
+    expect(withDays([1, 2])).toEqual(withDays([4, 5]));
+    expect(withDays([0, 2, 4])).toEqual(withDays([1, 3, 5]));
+  });
+
+  it('keeps an evenly spread week on the average-gap anchors', () => {
+    // 화·목·일: 간격 2·2·3일 → 75·75·90점. 평균 간격 2.33일을 앵커에 넣은 80점과 같다.
+    const { recoveryMargin } = withDays([2, 4, 0]);
+    const averageRunScore = 80 + 20 * (150 / 8 - 15) / 7;
+    const loadMargin = 100 - averageRunScore * 0.5 - 81.25 * 0.25;
+    expect(recoveryMargin).toBeCloseTo(80 * 0.45 + 80 * 0.25 + 100 * 0.2 + loadMargin * 0.1, 6);
+  });
+
+  it('treats a single weekday as a 7-day gap, not as no answer', () => {
+    const { traits, fallbacksUsed } = scoreRunner({ ...SAMPLE_SNAPSHOT, usualWeekdays: [0] });
+    expect(fallbacksUsed).toEqual(['usualWeekdaysForIntervals']);
+    expect(traits.consistency).toBe(75);
+    expect(traits.recoveryMargin).toBe(85);
+  });
+
+  it('lowers the margin as the week fills up', () => {
+    const margins = [[1], [1, 4], [1, 3, 5], [0, 2, 4, 6], [0, 1, 3, 4, 6], [0, 1, 2, 3, 4, 5], [0, 1, 2, 3, 4, 5, 6]]
+      .map((days) => withDays(days).recoveryMargin);
+    margins.slice(1).forEach((margin, index) => expect(margin).toBeLessThanOrEqual(margins[index]));
   });
 });
 
