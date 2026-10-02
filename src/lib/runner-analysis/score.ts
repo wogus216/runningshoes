@@ -40,13 +40,18 @@ function uniqueValidWeekdays(weekdays: number[] | undefined) {
     .sort((a, b) => a - b);
 }
 
-function averageCyclicGap(weekdays: number[]) {
-  if (weekdays.length < 2) return null;
-  const gaps = weekdays.map((day, index) => {
+// 요일 하나는 간격 7일이다. 간격의 합은 늘 7이라 평균만 보면 요일 위치가 사라진다.
+function cyclicGaps(weekdays: number[]) {
+  if (weekdays.length === 0) return null;
+  return weekdays.map((day, index) => {
     const next = weekdays[(index + 1) % weekdays.length];
     return index === weekdays.length - 1 ? next + 7 - day : next - day;
   });
-  return gaps.reduce((sum, gap) => sum + gap, 0) / gaps.length;
+}
+
+// 간격마다 점수를 매긴 뒤 평균한다. 이틀 연속은 평균에 묻히지 않고 짧은 간격으로 남는다.
+function gapScore(gaps: number[]) {
+  return gaps.reduce((sum, gap) => sum + piecewise(gap, GAP_ANCHORS), 0) / gaps.length;
 }
 
 function targetPressure(snapshot: RunnerSnapshot28d) {
@@ -107,21 +112,23 @@ export function scoreRunner(snapshot: RunnerSnapshot28d) {
 
   const fallbacksUsed: string[] = [];
   const weekdays = uniqueValidWeekdays(snapshot.usualWeekdays);
-  const weekdayGap = averageCyclicGap(weekdays);
-  let generalGapScore = 50;
-  let longRunGapScore = 50;
+  const gaps = cyclicGaps(weekdays);
+  let generalGapScore: number;
   let recoveryCap = 70;
   let consistency = 50;
 
-  if (weekdayGap !== null) {
-    generalGapScore = piecewise(weekdayGap, GAP_ANCHORS);
-    longRunGapScore = generalGapScore;
+  if (gaps !== null) {
+    generalGapScore = gapScore(gaps);
     recoveryCap = 85;
     consistency = 75;
     fallbacksUsed.push('usualWeekdaysForIntervals');
   } else {
-    fallbacksUsed.push('neutralIntervals', 'neutralConsistency');
+    // 일정 정보가 없으면 28일에 고르게 뛴 것으로 본다(스펙 '선택값을 건너뛴 경우'). R 상한 70은 그대로.
+    generalGapScore = piecewise(snapshot.windowDays / snapshot.runCount, GAP_ANCHORS);
+    fallbacksUsed.push('runCountIntervals', 'neutralConsistency');
   }
+  // 장거리가 어느 요일인지 모르므로 평균 간격 점수를 쓴다.
+  const longRunGapScore = generalGapScore;
 
   const qualityGapScore = snapshot.qualitySessionCount === 0 ? 100 : generalGapScore;
   const loadMargin = clampScore(100 - averageRunScore * 0.5 - distanceScore * 0.25);
