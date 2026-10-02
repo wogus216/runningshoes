@@ -63,6 +63,21 @@ function targetPressure(snapshot: RunnerSnapshot28d) {
 export function validateSnapshot(snapshot: RunnerSnapshot28d) {
   const errors: string[] = [];
   if (snapshot.windowDays !== 28) errors.push('windowDays must be 28');
+  // NaN은 아래 비교를 전부 통과하고 piecewise()에서 마지막 앵커 점수가 된다. 여기서 막는다.
+  const numbers = {
+    totalDistanceKm: snapshot.totalDistanceKm,
+    runCount: snapshot.runCount,
+    averagePaceSecPerKm: snapshot.averagePaceSecPerKm,
+    longestRunKm: snapshot.longestRunKm,
+    qualitySessionCount: snapshot.qualitySessionCount,
+    ...(snapshot.raceGoal && {
+      'raceGoal.distanceKm': snapshot.raceGoal.distanceKm,
+      'raceGoal.targetTimeMinutes': snapshot.raceGoal.targetTimeMinutes,
+    }),
+  };
+  for (const [field, value] of Object.entries(numbers)) {
+    if (!Number.isFinite(value)) errors.push(`${field} must be a finite number`);
+  }
   if (snapshot.totalDistanceKm <= 0) errors.push('totalDistanceKm must be greater than 0');
   if (snapshot.runCount <= 0) errors.push('runCount must be greater than 0');
   if (snapshot.averagePaceSecPerKm <= 0) errors.push('averagePaceSecPerKm must be greater than 0');

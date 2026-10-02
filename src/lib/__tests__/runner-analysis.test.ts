@@ -64,6 +64,20 @@ describe('runner analysis scoring', () => {
       'qualitySessionCount must be between 0 and runCount',
     );
   });
+
+  it.each([
+    ['totalDistanceKm', { totalDistanceKm: Number.NaN }],
+    ['runCount', { runCount: Number.POSITIVE_INFINITY }],
+    ['averagePaceSecPerKm', { averagePaceSecPerKm: Number.NaN }],
+    ['longestRunKm', { longestRunKm: Number.NaN }],
+    ['qualitySessionCount', { qualitySessionCount: Number.NaN }],
+    ['raceGoal.distanceKm', { raceGoal: { distanceKm: Number.NaN, targetTimeMinutes: 230 } }],
+    ['raceGoal.targetTimeMinutes', { raceGoal: { distanceKm: 42.195, targetTimeMinutes: Number.POSITIVE_INFINITY } }],
+  ] as const)('rejects a non-finite %s instead of scoring it', (field, patch) => {
+    const snapshot = { ...SAMPLE_SNAPSHOT, ...patch };
+    expect(validateSnapshot(snapshot)).toContain(`${field} must be a finite number`);
+    expect(() => scoreRunner(snapshot)).toThrow();
+  });
 });
 
 describe('runner character classification', () => {
