@@ -677,7 +677,7 @@ export const posts_2026_08: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-plus-2-release-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-25',
-    updatedAt: '2026-09-03',
+    updatedAt: '2026-10-02',
     category: 'review' as const,
     readingTime: 7,
     tags: [
@@ -694,7 +694,7 @@ export const posts_2026_08: BlogPost[] = [
   <ul>
     <li><strong>미드솔 논쟁이 끝났습니다.</strong> 7월 리크 때 소스마다 ZoomX(프리미엄 폼)와 ReactX(보급형 폼)로 갈렸던 부분은 <strong>ZoomX</strong>로 확정됐고, 여기에 <strong>전족부 곡선형 Air Zoom 유닛</strong>이 겉으로 드러나는 형태로 얹혔습니다</li>
     <li>나이키는 이 조합이 <strong>1세대 페가수스 플러스 대비 에너지 리턴을 최소 18% 높였다</strong>고 밝혔습니다(제조사 발표 기준). 카본 플레이트는 들어가지 않습니다</li>
-    <li>글로벌 출시는 <strong>8월 30일</strong>, 한국은 <strong>9월 초</strong>로 안내됐습니다. <strong>(9/3 갱신)</strong> 나이키 코리아에 남·여 <strong>219,000원</strong>, "출시 예정"으로 등록됐습니다 — 1세대와 같은 값입니다. 공식 무게는 약 265g(280mm), 오프셋 10mm</li>
+    <li>글로벌 출시는 <strong>8월 30일</strong>, 한국은 <strong>9월 초</strong>로 안내됐습니다. <strong>(10/2 갱신)</strong> 나이키 코리아에서 남·여 <strong>219,000원</strong>에 판매 중으로 바뀐 것을 확인했습니다(9/3에는 "출시 예정") — 1세대와 같은 값입니다. 공식 무게는 약 265g(280mm), 오프셋 10mm</li>
   </ul>
 </div>
 
@@ -769,7 +769,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>미국 가격은 소스에 따라 <strong>$165에서 $170 사이</strong>로 다르게 적혀 있습니다. 컬러웨이별로 다를 가능성이 있습니다(9월 3일 출시 예정인 특정 컬러가 $170으로 표기된 사례가 있습니다).</p>
 
-<p><strong>(9월 3일 갱신)</strong> 나이키 코리아 온라인 스토어에 남성·여성 모두 <strong>219,000원</strong>, "출시 예정"(알림 받기)으로 등록됐습니다. 정확한 국내 판매 개시일은 아직 표기되지 않았습니다. <strong>1세대 한국 정가 219,000원과 같은 값</strong>입니다 — 미국에서는 $180→$165로 내렸지만 국내가는 그대로입니다. 제품 페이지에 와이드 옵션은 없고, 공식 무게는 약 265g(280mm 기준)·오프셋 10mm로 적혀 있습니다. 상세 스펙과 적합성 분석은 <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2 상세 페이지</a>에 정리했습니다.</p>
+<p><strong>(9월 3일 갱신)</strong> 나이키 코리아 온라인 스토어에 남성·여성 모두 <strong>219,000원</strong>, "출시 예정"(알림 받기)으로 등록됐습니다. 정확한 국내 판매 개시일은 표기되지 않았습니다. <strong>(10월 2일 갱신)</strong> 같은 상품 페이지에서 사이즈 선택과 장바구니가 활성화돼 판매가 시작된 것을 확인했습니다. 구매 선택은 <a href="/blog/nike-pegasus-42-vs-pegasus-plus-2-daily-2026">페가수스 42와의 비교 글</a>에 정리했습니다. <strong>1세대 한국 정가 219,000원과 같은 값</strong>입니다 — 미국에서는 $180→$165로 내렸지만 국내가는 그대로입니다. 제품 페이지에 와이드 옵션은 없고, 공식 무게는 약 265g(280mm 기준)·오프셋 10mm로 적혀 있습니다. 상세 스펙과 적합성 분석은 <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2 상세 페이지</a>에 정리했습니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⏳</span>
@@ -799,7 +799,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 한국 가격은 얼마인가요?</p>
-    <p class="faq-a">A. <strong>219,000원</strong>입니다(나이키 코리아 온라인 스토어, 2026년 9월 3일 확인, 남·여 동일). 1세대 한국 정가와 같은 값이며, 미국 정가가 $180에서 $165로 내려간 것과 달리 국내가는 유지됐습니다. 확인 시점에는 "출시 예정" 상태였고 정확한 판매 개시일은 표기돼 있지 않았습니다.</p>
+    <p class="faq-a">A. <strong>219,000원</strong>입니다(나이키 코리아 온라인 스토어, 2026년 9월 3일 확인, 남·여 동일). 1세대 한국 정가와 같은 값이며, 미국 정가가 $180에서 $165로 내려간 것과 달리 국내가는 유지됐습니다. 9월 3일 확인 시점에는 "출시 예정" 상태였고, 10월 2일 재확인에서 판매 중(사이즈 선택·장바구니 활성)으로 바뀌어 있었습니다. 정확한 판매 개시일은 표기돼 있지 않았습니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 무게가 얼마나 되나요?</p>
