@@ -130,6 +130,44 @@ describe('weekday intervals', () => {
   });
 });
 
+describe('quality sessions up to "6회 이상"', () => {
+  const withQuality = (qualitySessionCount: number, runCount = 14) =>
+    scoreRunner({ ...SAMPLE_SNAPSHOT, totalDistanceKm: 100, runCount, longestRunKm: 18, qualitySessionCount }).traits;
+
+  it('accepts every chip from 0 to 6 and keeps raising the stimulus', () => {
+    const stimuli = [0, 1, 2, 3, 4, 5, 6].map((count) => withQuality(count).stimulus);
+    stimuli.slice(1).forEach((stimulus, index) => expect(stimulus).toBeGreaterThan(stimuli[index]));
+  });
+
+  it('scores 6 the same as more once the ratio is saturated too', () => {
+    expect(withQuality(9)).toEqual(withQuality(6));
+  });
+
+  it('does not clamp counts above 6 itself — the ratio still reads them, so the 6+ cap lives in the input', () => {
+    expect(withQuality(8, 20).qualityAffinity).toBeGreaterThan(withQuality(6, 20).qualityAffinity);
+  });
+});
+
+describe('average pace', () => {
+  const RECORD = { ...SAMPLE_SNAPSHOT, goal: 'record' as const, raceGoal: undefined };
+
+  it('does not change the result without a race goal', () => {
+    const results = [150, 330, 779].map((pace) => analyzeRunner({ ...RECORD, averagePaceSecPerKm: pace }));
+    expect(results[1].traits).toEqual(results[0].traits);
+    expect(results[2].traits).toEqual(results[0].traits);
+    expect(new Set(results.map((result) => result.match.character.id)).size).toBe(1);
+  });
+
+  it('moves only the stimulus when a race goal is given', () => {
+    const raceGoal = { distanceKm: 42.195, targetTimeMinutes: 230 };
+    const [fast, mid, slow] = [300, 330, 400].map((pace) =>
+      scoreRunner({ ...RECORD, averagePaceSecPerKm: pace, raceGoal }).traits);
+    expect(fast.stimulus).toBeGreaterThan(mid.stimulus);
+    expect(mid.stimulus).toBeGreaterThan(slow.stimulus);
+    expect({ ...slow, stimulus: 0 }).toEqual({ ...fast, stimulus: 0 });
+  });
+});
+
 describe('runner character classification', () => {
   it('contains the complete 12-house, 36-character matrix', () => {
     expect(RUNNER_CHARACTERS).toHaveLength(36);
