@@ -2750,7 +2750,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/mizuno-wave-inspire-21"><strong>웨이브 인스파이어 21</strong></a></td><td>가성비 안정화</td><td>Enerzy + NXT · Wave</td><td>15.9만</td><td>286g</td><td>미즈노 최저가 안정화, 와이드 옵션</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-22"><strong>웨이브 인스파이어 22</strong></a></td><td>안정화(신)</td><td>Enerzy NXT · Wave</td><td>16.9만</td><td>280g(랩)</td><td>랩 드롭 7.6mm로 낮아진 22, 힐 핏은 시착 필요</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-inspire-21"><strong>웨이브 인스파이어 21</strong></a></td><td>전작 가성비 안정화</td><td>Enerzy + NXT · Wave</td><td>15.9만</td><td>286g</td><td>미즈노 최저가 안정화, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-29"><strong>웨이브 라이더 29</strong></a></td><td>데일리 만능(전작)</td><td>Enerzy NXT · Wave</td><td>16.9만</td><td>258g</td><td>30의 전작, 76.7mm 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-horizon-8"><strong>웨이브 호라이즌 8</strong></a></td><td>프리미엄 안정화</td><td>Enerzy NXT + Enerzy · Wave</td><td>17.9만</td><td>323g</td><td>미디얼 러버월, 최강 과내전 제어</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-30"><strong>웨이브 라이더 30</strong></a></td><td>데일리 만능</td><td>Enerzy NXT 듀얼레이어 · 풀렝스 Wave</td><td>17.9만</td><td>267g</td><td>30세대 대개편, 힐 42.5mm(공식)로 스택 상승</td></tr>
@@ -2908,7 +2909,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/puma-velocity-nitro-4"><strong>벨로시티 나이트로 4</strong></a></td><td>입문 데일리</td><td>Nitro Foam</td><td>17.9만</td><td>224g</td><td>가성비 최강 데일리 트레이너</td></tr>
+    <tr><td><a href="/shoes/puma-velocity-nitro-5"><strong>벨로시티 나이트로 5</strong></a></td><td>입문 데일리(신)</td><td>ATPU NITROFOAM</td><td>17.9만</td><td>238g(랩)</td><td>4와 같은 값, 더 부드러운 폼에 남·여 와이드 판매</td></tr>
+    <tr><td><a href="/shoes/puma-velocity-nitro-4"><strong>벨로시티 나이트로 4</strong></a></td><td>전작 입문 데일리</td><td>Nitro Foam</td><td>17.9만</td><td>224g</td><td>가성비 최강 데일리 트레이너</td></tr>
     <tr><td><a href="/shoes/puma-deviate-pure-nitro"><strong>디비에이트 퓨어</strong></a></td><td>무카본 슈퍼폼</td><td>100% PEBA NITROFOAM</td><td>18.9만</td><td>215g</td><td>무플레이트, 데일리+스피드</td></tr>
     <tr><td><a href="/shoes/puma-magnify-nitro-3"><strong>매그니파이 나이트로 3</strong></a></td><td>맥스 쿠션</td><td>Nitro Foam (PEBA)</td><td>19.9만</td><td>264g</td><td>PEBA 맥시멀, 20만↓ 관절 보호</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-3"><strong>디비에이트 나이트로 3</strong></a></td><td>카본 슈퍼트레이너</td><td>Nitro + Nitro Elite + 카본</td><td>21.9만</td><td>268g</td><td>21.9만 카본, 마하X보다 절약</td></tr>
@@ -3393,11 +3395,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-ghost-max-4"><strong>고스트 맥스 4</strong></a></td><td>맥스 쿠션 데일리</td><td>DNA Loft v3</td><td>18.9만</td><td>286g</td><td>현행 고스트 맥스, 힐 충격흡수 145 SA의 단단한 보호</td></tr>
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>300g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-22"><strong>글리세린 22</strong></a></td><td>프리미엄 쿠션</td><td>DNA Tuned</td><td>20.9만</td><td>293g</td><td>체중별 반응하는 고급 쿠션</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>프리미엄 안정화</td><td>DNA Tuned + GuideRails</td><td>20.9만</td><td>305g</td><td>글리세린 쿠션 + 안정화</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>전작 프리미엄 안정화</td><td>DNA Tuned + GuideRails</td><td>20.9만</td><td>305g</td><td>글리세린 쿠션 + 안정화</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-gts-23"><strong>글리세린 GTS 23</strong></a></td><td>프리미엄 안정화(신)</td><td>DNA Tuned(질소 주입) + GuideRails</td><td>20.9만</td><td>306g</td><td>22와 같은 값·비슷한 무게, 남녀 와이드·미디엄 판매(랩 미게시)</td></tr>
     <tr><td><a href="/shoes/brooks-hyperion-max-3"><strong>하이페리온 맥스 3</strong></a></td><td>슈퍼트레이너</td><td>DNA Gold (PEBA) + Flash</td><td>21.9만</td><td>283g</td><td>PEBA 첫 진성 슈퍼트레이너</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-max"><strong>글리세린 맥스</strong></a></td><td>맥시멀 쿠션</td><td>DNA Tuned</td><td>23.9만</td><td>305g</td><td>42mm·148 SA 역대 최강 충격흡수</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>312g</td><td>47mm 극강 맥시멀</td></tr>
-    <tr><td><a href="/shoes/brooks-hyperion-elite-5"><strong>하이페리온 엘리트 5</strong></a></td><td>카본 레이싱</td><td>DNA Gold (PEBA) + 카본</td><td>29.9만</td><td>204g</td><td>76.9% 에너지, 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-5"><strong>하이페리온 엘리트 5</strong></a></td><td>전작 카본 레이싱</td><td>DNA Gold (PEBA) + 카본</td><td>29.9만</td><td>204g</td><td>76.9% 에너지, 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-6"><strong>하이페리온 엘리트 6</strong></a></td><td>카본 레이싱(신)</td><td>DNA Gold (PEBA) + 카본</td><td>31.9만</td><td>198g</td><td>드롭 7mm로 낮춘 6세대, 5보다 2만원 비쌈(랩 미게시)</td></tr>
   </tbody>
 </table>
 

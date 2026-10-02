@@ -226,3 +226,31 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85
 - Date: 2026-09-23
 - Images: 6 (side, medial, back, angle, top, outsole)
+
+## Brooks Hyperion Elite 6
+- Source: 브룩스 코리아 공식몰 상품 상세 (남녀공용 타이거릴리 MEDIUM)
+- CDN: ecimg.cafe24img.com/pg90b05313110010/brooksrunning 공식 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-02
+- Images: 3 (side, angle, detail=반대 측면)
+
+## Brooks Glycerin GTS 23
+- Source: 브룩스 코리아 공식몰 상품 상세 (남성 블랙 MEDIUM)
+- CDN: ecimg.cafe24img.com/pg90b05313110010/brooksrunning 공식 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-02
+- Images: 1 (side)
+
+## Puma Velocity Nitro 5
+- Source: 푸마 코리아 공식몰 PDP (312944, PUMA White-Ultra Red)
+- CDN: images.puma.com 공식 PNG (sv01~sv04 뷰)
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-02
+- Images: 4 (side, top, angle, detail=반대 측면)
+
+## Mizuno Wave Inspire 22
+- Source: 미즈노 코리아 공식몰 상품 상세 (WAVE INSPIRE 22, 화이트)
+- CDN: kor.mizuno.com/web/product/big 공식 JPG
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-02
+- Images: 1 (side)

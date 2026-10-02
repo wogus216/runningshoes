@@ -8,6 +8,7 @@ import { shoe as pumaDeviateNitro3 } from './puma-deviate-nitro-3';
 import { shoe as pumaDeviateNitroElite3 } from './puma-deviate-nitro-elite-3';
 import { shoe as pumaDeviateNitroElite4 } from './puma-deviate-nitro-elite-4';
 import { shoe as pumaFastRNitroElite3 } from './puma-fast-r-nitro-elite-3';
+import { shoe as pumaVelocityNitro5 } from './puma-velocity-nitro-5';
 
 // 신발 1켤레 = 파일 1개 (puma/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const pumaShoes: Shoe[] = [
@@ -20,4 +21,5 @@ export const pumaShoes: Shoe[] = [
   pumaDeviateNitroElite3,
   pumaDeviateNitroElite4,
   pumaFastRNitroElite3,
+  pumaVelocityNitro5,
 ];
