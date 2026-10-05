@@ -832,7 +832,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '여의도공원 문화의마당 (서울 영등포구)',
     region: '서울',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://hk-marathon.com/',
     registrationStart: '2026-07-16',
@@ -854,7 +854,7 @@ export const octoberEvents: MarathonEvent[] = [
     },
     lastVerified: '2026-09-29',
     description:
-      '한경미디어그룹이 처음 여는 약 7,000명 규모 대회. 하프는 여의도공원 출발 서강대교·월드컵대교 남단 회귀, 10K는 서강대교 왕복, 5K는 여의도 일대 코스입니다. 접수는 7월 16일부터 선착순으로 진행돼 8월 28일 마감됐습니다.',
+      '한경미디어그룹이 처음 마련한 약 7,000명 규모 대회. 하프는 여의도공원 출발 서강대교·월드컵대교 남단 회귀, 10K는 서강대교 왕복, 5K는 여의도 일대 코스입니다. 접수는 7월 16일부터 선착순으로 진행돼 8월 28일 마감됐습니다.',
     courseInfo: {
       terrain: '평지',
       difficulty: '초보자',
