@@ -179,12 +179,18 @@ export interface MarathonEvent {
   registrationNote?: string;
   /** status를 마지막으로 확인한 날 'YYYY-MM-DD'. 대회 상세에만 노출한다 */
   lastVerified?: string;
+  /**
+   * 공식이 일정 연기를 알렸고 새 날짜가 아직 없을 때만 true. `date`는 원래 일정 그대로 둔다.
+   * 날짜가 지나도 '지난 대회'로 보내지 않고, validate·due-check 는 에러 대신 매번 경고로 띄운다.
+   * 새 날짜가 나오면 이 플래그를 지우고 date 를 고친다.
+   */
+  postponed?: true;
 }
 
 /** 목록 화면에 실제로 필요한 필드만 서버에서 클라이언트로 전달한다. */
 export type MarathonListEvent = Pick<MarathonEvent,
   'id' | 'name' | 'date' | 'location' | 'region' | 'distances' | 'status' | 'isMajor' |
-  'description' | 'registrationStart' | 'registrationEnd'
+  'description' | 'registrationStart' | 'registrationEnd' | 'postponed'
 >;
 
 export const EVENT_MONTHS: EventMonth[] = [

@@ -18,6 +18,7 @@ import path from 'node:path';
 import { shoes } from '../src/lib/data/shoes';
 import { gels } from '../src/lib/data/gels';
 import { marathonEvents } from '../src/lib/data/marathon';
+import { isPast } from '../src/lib/marathon/bands';
 import { getAllPosts } from '../src/lib/data/blog';
 import { PINNED_PAIRS } from '../src/lib/pseo/pairs';
 import { checkRaceMeta, checkDeadlineStrips, STRIP_WITHOUT_ANCHOR_BASELINE } from '../src/lib/blog/race-meta-rules';
@@ -188,10 +189,12 @@ const noRegEndOpen: string[] = []; // [C] 마감일 없는 접수중·접수예�
     if (!e.date || !e.status || !e.month) { error(`[marathon] ${name}: date/month/status 필수 필드 누락`); marathonOk = false; continue; }
     if (!VALID_STATUS.includes(e.status)) { error(`[marathon] ${name}: 알 수 없는 status '${e.status}'`); marathonOk = false; }
 
-    // ★ 핵심: 개최일이 지났는데 대회종료가 아님
-    if (e.date < today && e.status !== '대회종료') {
+    // ★ 핵심: 개최일이 지났는데 대회종료가 아님 (연기는 isPast 가 false — 바로 아래 경고로 따로 띄운다)
+    if (isPast(e, today) && e.status !== '대회종료') {
       error(`[marathon] ${name}: 개최일(${e.date})이 지났는데 status가 '${e.status}' → '대회종료'로 변경 필요`); marathonOk = false;
     }
+    // 연기는 에러가 아니지만 조용히 묻히면 안 된다 — 새 날짜가 나올 때까지 매 실행 경고
+    if (e.postponed) warn(`[marathon] ${name}: 연기 — 새 날짜 미정, 공식 재확인 (date ${e.date}는 원래 일정)`);
     // month 가 date 와 어긋남 (필터링이 깨짐)
     const monthFromDate = `${parseInt(e.date.slice(5, 7), 10)}월`;
     if (e.month !== monthFromDate) { error(`[marathon] ${name}: month('${e.month}')가 date(${e.date} → ${monthFromDate})와 불일치`); marathonOk = false; }

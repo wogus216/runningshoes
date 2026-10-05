@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { bandOf, groupIntoBands, daysUntil } from '@/lib/marathon/bands';
+import { bandOf, groupIntoBands, daysUntil, isPast } from '@/lib/marathon/bands';
 import type { MarathonEvent } from '@/types/marathon';
 
 const TODAY = '2026-08-01';
@@ -42,6 +42,12 @@ describe('bandOf', () => {
 
   it('status가 대회종료인데 날짜가 미래면 closed로 둔다(past는 날짜로만)', () => {
     expect(bandOf(ev({ date: '2026-09-01', status: '대회종료' }), TODAY)).toBe('closed');
+  });
+
+  it('연기(postponed)는 원래 날짜가 지나도 지난 대회가 아니다 — validate 에러 조건(isPast)도 false', () => {
+    const e = ev({ date: '2026-07-31', status: '마감', postponed: true });
+    expect(isPast(e, TODAY)).toBe(false);
+    expect(bandOf(e, TODAY)).toBe('closed');
   });
 });
 

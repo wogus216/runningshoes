@@ -57,6 +57,7 @@ if (fs.existsSync(mdir)) {
         rs: pick(/registrationStart:\s*'([^']+)'/),
         re: pick(/registrationEnd:\s*'([^']+)'/),
         verified: pick(/lastVerified:\s*'([^']+)'/),
+        postponed: /postponed:\s*true/.test(block),
       });
     }
   }
@@ -105,12 +106,16 @@ if (fs.existsSync(todoPath)) {
 // ② 마라톤 DB — 날짜만으로 확정되는 것
 {
   const bad = [];
-  for (const { id, date, status, rs, re } of events) {
-    if (date && date < today && status !== '대회종료') bad.push(`${id}: 개최일 ${date} 지남, status '${status}' → 대회종료`);
+  const held = [];
+  for (const { id, date, status, rs, re, postponed } of events) {
+    // 연기는 원래 날짜가 지나도 대회종료가 아니다 — 🚨 대신 아래 ⏸ 로 매번 띄운다
+    if (postponed) held.push(`${id}: 연기 — 새 날짜 미정(원래 일정 ${date}), 공식 재확인`);
+    else if (date && date < today && status !== '대회종료') bad.push(`${id}: 개최일 ${date} 지남, status '${status}' → 대회종료`);
     if (status === '접수예정' && rs && rs < today) bad.push(`${id}: 접수 시작 ${rs} 지남, 아직 '접수예정' → 공식 확인 후 접수중/마감`);
     if ((status === '접수예정' || status === '접수중') && re && re < today) bad.push(`${id}: 접수 마감 ${re} 지남, 아직 '${status}' → 공식 확인 후 마감(연장이면 registrationEnd 갱신)`);
   }
   if (bad.length) lines.push(`🚨 마라톤 DB 날짜 불일치 ${bad.length}건 (validate 가 커밋을 막는다)`, ...bad.map(s => `   ${s}`));
+  if (held.length) lines.push(`⏸ 일정 연기 ${held.length}건 — 새 날짜가 나올 때까지 매번 뜬다. 공식 공지 재확인`, ...held.map(s => `   ${s}`));
 }
 
 // ③ 멈춘 작업 — main 체크아웃과 worktree 를 본다. git 이 없거나 실패하면 조용히 건너뛴다

@@ -39,10 +39,19 @@ export function daysUntil(dateStr: string, today: string): number {
   return Math.round((a - b) / DAY);
 }
 
+/**
+ * 대회일이 지났는가 — 밴드와 validate 가 같은 판정을 쓴다.
+ * 연기(postponed)는 date 가 원래 일정이라 지나도 '지난 대회'가 아니다.
+ */
+export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed'>, today: string): boolean {
+  return event.date < today && !event.postponed;
+}
+
 /** 판정 순서가 곧 우선순위다 — past를 먼저 걸러낸 뒤 접수 기간, 마지막이 수동 status. */
 export function bandOf(event: MarathonListEvent, today: string): BandId {
   // 1. 지난 대회 — 날짜만 본다. 유일하게 100% 자동 판정되는 밴드다.
-  if (event.date < today) return 'past';
+  //    단 연기(새 날짜 미정)는 원래 날짜가 지나도 past가 아니다 — 접수 기간·status로 내려간다.
+  if (isPast(event, today)) return 'past';
 
   // 2. 접수 기간이 있으면 그걸 믿는다(수동 status보다 최신).
   if (event.registrationEnd && event.registrationEnd < today) return 'closed';

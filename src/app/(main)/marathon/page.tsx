@@ -71,6 +71,7 @@ export default function MarathonPage() {
     description: event.description,
     registrationStart: event.registrationStart,
     registrationEnd: event.registrationEnd,
+    postponed: event.postponed,
   }));
 
   // JSON-LD: 메이저 대회 SportsEvent + Offers
@@ -88,7 +89,7 @@ export default function MarathonPage() {
         '@type': 'SportsEvent',
         name: event.name,
         startDate: event.date,
-        eventStatus: 'https://schema.org/EventScheduled',
+        eventStatus: event.postponed ? 'https://schema.org/EventPostponed' : 'https://schema.org/EventScheduled',
         eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
         location: {
           '@type': 'Place',

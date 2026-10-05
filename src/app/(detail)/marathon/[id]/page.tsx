@@ -59,7 +59,8 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
     .replace(/\s*\([^)가-힣]*\)/g, '')
     .trim();
   const shortPlace = event.location.replace(/\s*\([^)]*\)\s*$/, '');
-  const dateOnly = shortDate.replace(/\s*\([일월화수목금토]\)/, '');
+  // 연기(새 날짜 미정)면 원래 날짜를 제목에 걸지 않는다 — 그날 열리는 대회처럼 읽힌다
+  const dateOnly = event.postponed ? '일정 연기' : shortDate.replace(/\s*\([일월화수목금토]\)/, '');
   const acceptsEntry = event.status === '접수중' || event.status === '접수예정';
   const intentKeywords = acceptsEntry ? '접수·참가비·코스' : '코스·참가비·기념품';
   // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다.
@@ -73,7 +74,9 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   // 그 자리에 난이도·출발시각 같은 스펙을 넣으면 "지금 신청할 수 있나"라는 질문에
   // 답하지 못한 채 잘린다 — 접수 상태를 먼저 놓고, 대회 고유 설명이 그 뒤를 잇게 한다.
   // 대회명은 title 이 이미 말한다. 스니펫에서 반복하면 155자 중 20~30자를 그대로 버린다.
-  const descParts = [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
+  const descParts = event.postponed
+    ? [`일정 연기 — 새 날짜 미정(원래 ${shortDate}). ${event.location}. ${event.distances.join('·')}.`]
+    : [`${shortDate} ${event.location}. ${event.distances.join('·')}.`];
   if (event.status === '접수중') {
     descParts.push(
       event.registrationEnd
@@ -145,6 +148,7 @@ const statusStyles: Record<string, string> = {
   '접수중': 'bg-[var(--navy)] text-white',
   '마감': 'bg-slate-400 text-white',
   '대회종료': 'bg-slate-200 text-slate-600',
+  '일정 연기': 'bg-amber-100 text-amber-700',
 };
 
 const distanceDescriptions: Record<string, string> = {
@@ -180,7 +184,10 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   // 빌드 시점 날짜라 배포 사이에는 낡을 수 있다(getDaysUntil 과 같은 한계).
   const registrationClosed = bandOf(event, localIsoDate()) === 'closed';
   // 마감일이 지났는데 status 가 아직 접수중·접수예정이면 배지(히어로·대회 정보 두 곳)도 날짜를 따른다 — '접수 마감' 줄과 모순되지 않게
-  const displayStatus = registrationClosed && (event.status === '접수중' || event.status === '접수예정') ? '마감' : event.status;
+  // 연기는 status 와 별개로 배지에서 먼저 알린다 — '마감'만 보이면 그날 열리는 대회처럼 읽힌다
+  const displayStatus = event.postponed
+    ? '일정 연기'
+    : registrationClosed && (event.status === '접수중' || event.status === '접수예정') ? '마감' : event.status;
 
   // JSON-LD: SportsEvent (enriched)
   const eventStatusMap: Record<string, string> = {
@@ -201,7 +208,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     endDate: event.date,
     description: event.description ||
       `${event.name} - ${event.location}에서 개최되는 ${event.distances.join(', ')} 마라톤 대회입니다.`,
-    eventStatus: eventStatusMap[event.status],
+    eventStatus: event.postponed ? 'https://schema.org/EventPostponed' : eventStatusMap[event.status],
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
       '@type': 'Place',
@@ -336,7 +343,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 오늘 개최
               </span>
             )}
-            {daysUntil < 0 && (
+            {daysUntil < 0 && !event.postponed && (
               <span className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-500">
                 대회 종료
               </span>
@@ -354,7 +361,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           <dl className="grid gap-2.5 text-secondary sm:grid-cols-2">
             <div className="flex items-center gap-2">
               <Calendar className="h-5 w-5 shrink-0 text-sky-700" />
-              <span className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}</span>
+              <span className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="h-5 w-5 shrink-0 text-sky-700" />
@@ -526,7 +533,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">대회 일시</dt>
-              <dd className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}</dd>
+              <dd className="font-medium text-primary">{formatDateKo(event.date, { weekday: true })}{event.postponed && ' → 일정 연기(새 날짜 미정)'}</dd>
             </div>
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>

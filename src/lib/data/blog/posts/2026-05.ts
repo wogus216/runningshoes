@@ -11315,7 +11315,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏃</span>
   <div class="callout-body">
     <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
-    <p>같은 10월 가을 메이저 대회를 함께 검토해보세요 — <a href="/blog/2026-seoul-open-marathon-registration">서울 오픈 마라톤(10/5 광화문, 5/10 마감)</a>, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상, 풀코스)</a>. 본인 목표(완주/PB/풀/하프)와 일정에 맞춰 1~2개 선택이 정석입니다.</p>
+    <p>같은 10월 가을 메이저 대회를 함께 검토해보세요 — <a href="/blog/2026-seoul-open-marathon-registration">서울 오픈 마라톤(10/5 예정이던 일정 연기 — 새 날짜 미정)</a>, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상, 풀코스)</a>. 본인 목표(완주/PB/풀/하프)와 일정에 맞춰 1~2개 선택이 정석입니다.</p>
   </div>
 </div>
 
