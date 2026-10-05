@@ -66,7 +66,7 @@ export async function generateMetadata({ params }: MarathonDetailPageProps): Pro
   // 사이트명은 app/layout.tsx 의 title.template(`%s | ${SITE_NAME}`)이 붙인다 — 여기서 또 붙이면 두 번 나온다.
   // 그 9자(" | 러닝의 모든것")까지 합쳐 60자 안에 들어가야 SERP 에서 안 잘린다.
   const titleHead = `${shortName} ${intentKeywords}`;
-  const withPlace = `${titleHead} | ${dateOnly} ${shortPlace}`;
+  const withPlace = `${titleHead} | ${dateOnly}${event.postponed ? ' ·' : ''} ${shortPlace}`;
   // 영문 장문 대회명은 벗겨내도 길다 — 그때는 장소를 접는다(날짜가 장소보다 검색 의도에 가깝다)
   const title = withPlace.length <= 51 ? withPlace : `${titleHead} | ${dateOnly}`;
 
