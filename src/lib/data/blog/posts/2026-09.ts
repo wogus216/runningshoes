@@ -1680,7 +1680,7 @@ export const posts_2026_09: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🎤 <strong>접수 종료.</strong> 1차(8/6) 매진, 추가 수량 2차(8/18~9/10)도 판매가 끝났습니다(2026년 9월 18일 KREAM 확인). 대회는 <strong>10월 3일(토·개천절) 인천 영종도 왕산마리나항</strong>, 티켓 양도·재판매는 공식 금지입니다.</div>
+<div class="deadline-strip">🎤 <strong>접수 종료.</strong> 1차(8/6) 매진, 추가 수량 2차(8/18~9/10)도 판매가 끝났습니다(2026년 9월 18일 KREAM 확인). 대회일은 <strong>10월 3일(토·개천절) 인천 영종도 왕산마리나항</strong>이었고 이미 지났습니다. 티켓 양도·재판매는 공식 금지였습니다.</div>
 
 <div class="callout info">
   <span class="callout-icon">🏁</span>

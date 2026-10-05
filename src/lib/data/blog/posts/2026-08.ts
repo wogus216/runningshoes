@@ -95,13 +95,13 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">⏰ <strong>매진됐습니다</strong> — 9월 4일(금) 11시에 열린 판매가 서류상 마감일(9월 18일)보다 훨씬 이르게 끝났습니다. 주최사는 추가 티켓을 열겠다고 했지만 <strong>"일정 추후공지"</strong>로만 안내했고, 창구는 다시 카카오톡 선물하기입니다.</div>
+<div class="deadline-strip">⏰ <strong>매진됐습니다</strong> — 9월 4일(금) 11시에 열린 판매가 서류상 마감일(9월 18일)보다 훨씬 이르게 끝났습니다. 주최사는 추가 티켓을 열겠다고 했지만 <strong>"일정 추후공지"</strong>로만 안내했고, 창구는 다시 카카오톡 선물하기입니다. <strong>대회일(10월 3일)은 지났습니다</strong> — 위 내용은 판매 당시 기준입니다.</div>
 
 <div class="callout info">
   <span class="callout-icon">⚡</span>
   <div class="callout-body">
     <p class="callout-title">티켓은 이미 매진됐습니다</p>
-    <p>10월 3일(토) <strong>부산 북항친수공원</strong>에서 <strong>해리포터 런 2026</strong>이 열립니다. 5km 단일 종목에 기록 측정이 없고, 오전 9시·오후 2시 두 차례로 나눠 각 3,000명씩 <strong>총 6,000명</strong>을 받습니다. 주최는 스탠즈(STANZ)이고, 공식 안내물에 워너브라더스 라이선스 표기(© &amp; ™ WBEI)가 붙어 있는 정식 IP 이벤트입니다. 티켓은 9월 4일 오전 11시에 카카오톡 선물하기에서 열려 <strong>같은 날 오전 중에 매진</strong>됐고, 지금 살 수 있는 창구는 없습니다. 이 글은 <strong>추가 티켓을 기다리는 사람</strong>과 <strong>이미 산 사람</strong>을 위해 남깁니다.</p>
+    <p>10월 3일(토) <strong>부산 북항친수공원</strong>에서 <strong>해리포터 런 2026</strong>이 열릴 예정이었던 대회로, 개최일이 지났습니다. 5km 단일 종목에 기록 측정이 없고, 오전 9시·오후 2시 두 차례로 나눠 각 3,000명씩 <strong>총 6,000명</strong>을 받습니다. 주최는 스탠즈(STANZ)이고, 공식 안내물에 워너브라더스 라이선스 표기(© &amp; ™ WBEI)가 붙어 있는 정식 IP 이벤트입니다. 티켓은 9월 4일 오전 11시에 카카오톡 선물하기에서 열려 <strong>같은 날 오전 중에 매진</strong>됐고, 당시 살 수 있는 창구는 없었습니다. 이 글은 판매 당시 기준의 기록으로 남깁니다.</p>
   </div>
 </div>
 
@@ -2694,7 +2694,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🍔 <strong>접수 마감 — 9월 3일(목) 오후 11시 59분 종료</strong>(9월 4일 공식 페이지 "구매 기간 종료" 확인). 참가권은 정상가 50,000원 · 할인가 45,000원이었고 정원 2,000명, <strong>만 19세 이상</strong>. 대회일 10월 4일(일) <strong>07:30 출발</strong>. 환불은 <strong>9월 10일까지</strong> 롯데잇츠 앱 주문내역에서.</div>
+<div class="deadline-strip">🍔 <strong>접수 마감 — 9월 3일(목) 오후 11시 59분 종료</strong>(9월 4일 공식 페이지 "구매 기간 종료" 확인). 참가권은 정상가 50,000원 · 할인가 45,000원이었고 정원 2,000명, <strong>만 19세 이상</strong>. 대회일은 10월 4일(일)이었고(<strong>07:30 출발</strong>) 이미 지났습니다. 환불은 <strong>9월 10일까지</strong> 롯데잇츠 앱 주문내역에서.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
