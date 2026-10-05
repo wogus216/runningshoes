@@ -1,0 +1,8 @@
+/* Ruler (ruler.js). Ink ticks on paper, a brass needle. Colours come from custom properties so the host page decides. */
+.rcm .ruler{--ruler-ink:#302e26;--ruler-brass:#735630;--ruler-font:StudyCondensed,'Barlow Condensed',sans-serif;position:relative;height:var(--ruler-h,48px);overflow:hidden;cursor:grab;user-select:none;-webkit-user-select:none;touch-action:none;-webkit-tap-highlight-color:transparent;-webkit-mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent);mask-image:linear-gradient(90deg,transparent,#000 16%,#000 84%,transparent)}
+.rcm .ruler.is-dragging{cursor:grabbing}
+.rcm .ruler:focus-visible{outline:2px solid var(--ruler-brass);outline-offset:-2px;border-radius:6px}
+.rcm .ruler-band{position:absolute;inset:0;width:100%;height:100%;display:block}
+/* The needle is longer than the tallest tick so it reads as the pointer, with a round head sitting above the band. */
+.rcm .ruler-needle{position:absolute;left:50%;top:0;width:2px;height:calc(var(--ruler-h,48px) * .7);margin-left:-1px;border-radius:1px;background:var(--ruler-brass);pointer-events:none}
+.rcm .ruler-needle::before{content:"";position:absolute;left:50%;top:-1px;width:7px;height:7px;margin-left:-3.5px;border-radius:50%;background:var(--ruler-brass)}
