@@ -95,7 +95,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">⏰ <strong>매진됐습니다</strong> — 9월 4일(금) 11시에 열린 판매가 서류상 마감일(9월 18일)보다 훨씬 이르게 끝났습니다. 주최사는 추가 티켓을 열겠다고 했지만 <strong>"일정 추후공지"</strong>로만 안내했고, 창구는 다시 카카오톡 선물하기입니다. <strong>대회일(10월 3일)은 지났습니다</strong> — 위 내용은 판매 당시 기준입니다.</div>
+<div class="deadline-strip">🏁 <strong>대회 종료</strong> — 대회일인 <strong>10월 3일(토)</strong>이 지났습니다(부산 북항친수공원). 티켓은 9월 4일(금) 11시에 열린 판매가 서류상 마감일(9월 18일)보다 훨씬 이르게 매진됐습니다. 아래 내용은 판매·준비 기간에 쓴 기록입니다.</div>
 
 <div class="callout info">
   <span class="callout-icon">⚡</span>
@@ -2333,7 +2333,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">⏰ <strong>관문 넷이 열렸고 하나가 남았습니다</strong> — 디즈니런 인천(8/31 오픈, 선착순 1.5만)·스타일런(9/1 10시, 롯데백화점몰 7,000명)·<strong>리아는 배불런</strong>(<strong>~9월 3일(목) 23:59</strong>, 롯데잇츠 앱, 2,000명, <strong>5만원</strong>)이 접수 중이고, <strong>해리포터 런은 9월 4일(금) 11시</strong>(카카오톡 선물하기, 6,000명, <strong>8.5만원</strong>)에 열립니다. 배불런 할인가 4.5만원 조건(리아 불고기·새우 구매)은 <strong>9월 3일까지</strong> 유효합니다. 용감한 쿠키RUN도 ~9/21 17시까지 열려 있습니다.</div>
+<div class="deadline-strip">🏁 <strong>세 대회가 끝났습니다(2026년 10월 6일 기준)</strong> — <strong>해리포터 런</strong>(10/3)·<strong>리아는 배불런</strong>·뉴발란스 런유어웨이(둘 다 10/4)는 대회일이 지났습니다. 스타일런(9/1 당일 매진)과 용감한 쿠키RUN(9/21 17시 마감)은 접수가 닫혔고, 디즈니런 인천(10/24)의 현재 접수 상태는 <a href="/marathon/disney-run-incheon-2026">대회 페이지</a>에서 확인하세요. 아래 내용은 접수가 몰리던 8월 말 시점의 기록입니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -2694,7 +2694,7 @@ export const posts_2026_08: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip">🍔 <strong>접수 마감 — 9월 3일(목) 오후 11시 59분 종료</strong>(9월 4일 공식 페이지 "구매 기간 종료" 확인). 참가권은 정상가 50,000원 · 할인가 45,000원이었고 정원 2,000명, <strong>만 19세 이상</strong>. 대회일은 10월 4일(일)이었고(<strong>07:30 출발</strong>) 이미 지났습니다. 환불은 <strong>9월 10일까지</strong> 롯데잇츠 앱 주문내역에서.</div>
+<div class="deadline-strip">🏁 <strong>대회 종료</strong> — 대회일인 <strong>10월 4일(일)</strong>이 지났습니다. 접수는 9월 3일(목) 오후 11시 59분에 마감됐고(9월 4일 공식 페이지 "구매 기간 종료" 확인), 참가권은 정상가 50,000원 · 할인가 45,000원, 정원 2,000명, <strong>만 19세 이상</strong>이었습니다. 환불 기한(9월 10일)도 지났습니다. 아래 내용은 접수·준비 기간에 쓴 기록입니다.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
