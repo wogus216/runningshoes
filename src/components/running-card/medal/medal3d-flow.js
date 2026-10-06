@@ -24,8 +24,9 @@ import * as Ruler from './ruler.js';
 import { MARKUP } from './medal3d-flow-markup.js';
 
 // The body of mountMedalFlow is the study script, kept at its own indentation so it diffs line for line against ad6d632.
-// judge({ values, origins, raceGoal }) → { ok: true, analysis } | { ok: false, reason: 'sample' | 'invalid', fields }
-// (running-card-medal.tsx: snapshotFromFlowInput → analyzeRunner). Called after 07; the analysis stays in this mount.
+// judge({ values, origins, raceGoal }) → { ok: true, analysis, title } | { ok: false, reason: 'sample' | 'invalid', fields }
+// (running-card-medal.tsx: snapshotFromFlowInput → analyzeRunner, title = the figure's epithet). Called after 07; the
+// analysis stays in this mount.
 export function mountMedalFlow(container, { judge }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
@@ -259,7 +260,7 @@ function syncInputs() {
 const choiceFields = { 4: '#hard-fields', 5: '#goal-fields', 6: '#day-fields' };
 function changeStage(next, instant = false) {
   const left = complete ? -1 : stage;
-  stopMotion(); stage = next; complete = false; touched = false; hideConfirm(); closeShare(false);
+  stopMotion(); stage = next; complete = false; touched = false; hideConfirm(); closeShare(false); settlePlate();
   $('.chapters').classList.remove('is-done');
   root.dataset.scene = scenes[stage];
   $('.complete').hidden = true;
@@ -325,7 +326,7 @@ function navigate(next, instant = false) {
 // judgement on numbers the runner has not made theirs). A value the adapter refuses: back to its step. Otherwise the
 // analysis is kept and the medal completes. fallbacksUsed stays in the analysis and is never shown.
 const fieldStage = { distance: 0, count: 1, pace: 2, longest: 3, hard: 4, goal: 5, days: 6, raceGoal: 5 };
-let analysis = null;
+let analysis = null, epithet = '';
 function toResult(instant) {
   const verdict = judge({ values: { ...values, days: [...values.days] }, origins: { ...origins }, raceGoal });
   if (!verdict.ok) {
@@ -336,7 +337,7 @@ function toResult(instant) {
     if (field === 'raceGoal') openRaceGoal(true); else focusField();
     return;
   }
-  analysis = verdict.analysis;
+  analysis = verdict.analysis; epithet = verdict.title;
   finish(instant);
 }
 function finish(instant) {
@@ -356,13 +357,12 @@ function finish(instant) {
     const small = document.createElement('small'); small.textContent = unit; dd.append(small); row.append(dt, dd); return row;
   }));
   $('#summary-extra').textContent = extraLine();
-  // Placeholder line for the judgement. S3에서 여덟 번째 각인으로 교체 — the plate takes the figure's house sign and name.
-  $('#completion-note').textContent = `판정: ${analysis.match.character.name}`;
   $('#complete-figure').setAttribute('aria-label', describe());
   $('#gl').setAttribute('aria-label', describe()); $('#gl').tabIndex = 0;
   commit(left);
   const quick = instant || stillMedal();
-  go({ instant: quick, afterStrike: !quick && lastStrikeAt > performance.now() - 120 });
+  const wideIn = go({ instant: quick, afterStrike: !quick && lastStrikeAt > performance.now() - 120 });
+  engrave(quick, wideIn);
   syncNav();
   if (!quick) {
     const panel = $('.complete'); panel.getAnimations().forEach(a => a.cancel());
@@ -640,7 +640,68 @@ function thumb(sig, N) {
 function describe() {
   const rec = liveRec(), P = places();
   const parts = scenes.map((k, i) => `${String(i + 1).padStart(2, '0')} ${Relief.NAMES[k]} ${P[i].face === 'empty' ? '빈 자리' : P[i].face === 'blank' ? '각인 안 한 민짜(예시값)' : Relief.label(k, rec)}`);
-  return `지난 28일의 메달. 끈 아래 동전 일곱 개가 가운데 판을 둘러싼 고리예요. 한 시 방향부터 시계 방향으로 ${parts.join(', ')}.`;
+  const named = plate.figure ? ` 가운데 명판에는 ${plate.figure.house} 가문 기호와 ${plate.figure.name}.` : '';
+  return `지난 28일의 메달. 끈 아래 동전 일곱 개가 가운데 판을 둘러싼 고리예요. 한 시 방향부터 시계 방향으로 ${parts.join(', ')}.${named}`;
+}
+
+// ==== the eighth strike: the plate ====================================================================================
+// After 07 the judgement goes onto the centre plate: the figure's house sign and name (Relief.plate(figure), built like a
+// face). It is struck in the coins' grammar once the whole medal is in view — the new face at preview strength for a
+// drop's time, then on impact the relief rises to full in 260ms and the medal gives once (strikeCoin) — and then the
+// title turns to the figure and its epithet. While the map is made, the line under the title (a status) says the spec's
+// wait line, once. Reduced motion or a slow renderer: the plate and the title change at once. Without WebGL the flat
+// drawing shows the plate's preview. The plate keeps its figure while the record is edited; a new figure strikes again.
+const WAIT = '28일의 기록을 신화로 번역하고 있어요';
+// figure: the one struck on the plate ({ id, name, house, title }) · pending: the id whose map is on its way · s: strike
+// strength (uPlate) · h: only a tween's clock, the wait until the whole medal is in view · ready: the map's promise.
+const plate ={ sig: 'plate', figure: null, s: 1, h: 0, pending: null, ready: null };
+const uPlate = { value: 1 };
+const plateSig = f => `plate:${f.id}`;
+function engrave(quick, wideIn) {
+  const c = analysis.match.character, f = { id: c.id, name: c.name, house: c.house, title: epithet };
+  if (plate.figure && plate.figure.id === f.id) { plate.pending = null; plate.ready = null; titled(f, false); return; }
+  untitled();
+  plate.pending = f.id;
+  const at = performance.now() + (wideIn ?? 0);
+  plate.ready = want(plateSig(f), { type: 'plate', figure: { name: f.name, house: f.house } }, 0).then(() => { if (!destroyed && plate.pending === f.id) strikePlate(f, quick, at); });
+}
+function strikePlate(f, quick, at) {
+  plate.pending = null;
+  if (quick || !renderer || !complete) { showPlate(f); plate.s = 1; dirty(); titled(f, true); return; }
+  stopTween(plate, 's');
+  tween(plate, 'h', 1, Math.max(1, at - performance.now()), t => t, 0, () => {
+    showPlate(f); plate.s = PREVIEW; dirty();
+    tween(plate, 's', 1, 260, easeOut, DROP, () => titled(f, true));
+    recoil.v = 0; tween(recoil, 'v', 1, 280, t => t, DROP, () => { recoil.v = 0; });
+  });
+}
+// The plate's maps go onto the enamel; maps of plates no longer shown are let go.
+function showPlate(f) {
+  const sig = plateSig(f);
+  plate.sig = sig; plate.figure = f;
+  if (renderer) setPlate(sig);
+  for (const [s, face] of faces) {
+    if (s === sig || (s !== 'plate' && !s.startsWith('plate:'))) continue;
+    if (face.tex) Object.values(face.tex).forEach(freeTexture);
+    faces.delete(s); flats.delete(s);
+  }
+  dirty();
+}
+// Leaving the finished medal mid-strike: the plate is struck at once.
+function settlePlate() {
+  for (let t = tweens.find(x => x.obj === plate); t; t = tweens.find(x => x.obj === plate)) { tweens.splice(tweens.indexOf(t), 1); t.obj[t.prop] = t.to; if (t.onDone) t.onDone(); }
+}
+function untitled() {
+  $('#complete-title').textContent = '지난 28일의 메달';
+  const line = $('#complete-epithet'); line.textContent = WAIT; line.classList.add('is-wait');
+}
+function titled(f, struck) {
+  const title = $('#complete-title'), line = $('#complete-epithet');
+  title.textContent = f.name; line.textContent = f.title; line.classList.remove('is-wait');
+  if (!struck) return;
+  $('#medal-status').textContent = `명판을 새겼어요. ${f.house} 가문, ${f.name}.`;
+  $('#complete-figure').setAttribute('aria-label', describe()); $('#gl').setAttribute('aria-label', describe());
+  if (complete) [title, line].forEach(el => animate(el, [{ opacity: .2, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }], 320));
 }
 
 // ==== faces: built in workers (or here), cached by signature =========================================================
@@ -724,7 +785,7 @@ function buildHere(m) {
   const flip = (a, w, h, ch) => glOk ? Relief.bottomUp(a, w, h, ch) : a;
   if (m.type === 'coin') { const f = Relief.coin(m.key, m.rec, m.state, m.S, { height: true }), S = f.S; return { S, polish: flip(f.polish, S, S, 1), normal: flip(f.normal, S, S, 4), orm: flip(f.orm, S, S, 2), height: flip(f.height, S, S, 1) }; }
   if (m.type === 'socket') { const f = Relief.socket(m.S, m.label), S = f.S; return { S, polish: flip(f.polish, S, S, 1), normal: flip(f.normal, S, S, 4), orm: flip(f.orm, S, S, 2) }; }
-  if (m.type === 'plate') { const p = Relief.plate(); return { W: p.W, Hh: p.Hh, polish: flip(p.polish, p.W, p.Hh, 1), normal: flip(p.normal, p.W, p.Hh, 4), orm: flip(p.orm, p.W, p.Hh, 2), metal: flip(p.metal, p.W, p.Hh, 1) }; }
+  if (m.type === 'plate') { const p = Relief.plate(m.figure); return { W: p.W, Hh: p.Hh, polish: flip(p.polish, p.W, p.Hh, 1), normal: flip(p.normal, p.W, p.Hh, 4), orm: flip(p.orm, p.W, p.Hh, 2), metal: flip(p.metal, p.W, p.Hh, 1) }; }
   const r = Relief.ribbon(m.W); return { W: r.W, Hh: r.Hh, print: flip(new Uint8Array(r.print), r.W, r.Hh, 4), normal: flip(r.normal, r.W, r.Hh, 4) };
 }
 function finishJob(j, data) {
@@ -794,19 +855,20 @@ const recoil = { v: 0 };
 // ---- materials (3D-1's kit) ------------------------------------------------------------------------------------------
 // Albedo from the polish map: oxide where it is 0, the finish's metal where it is 1. With `turn`, the anisotropic highlight
 // runs round the coin's centre and only where the metal is polished. With `strike`, uStrike (0…1) is how far the relief
-// has been struck: below 1 the polish contrast and the roughness map fade toward an even satin.
-function polished(mat, { metal = uMetal, oxide = uOxide, turn = false, strike = null } = {}) {
+// has been struck: below 1 the polish contrast and the roughness map fade toward an even satin (`ground`; the plate's
+// letters fade into its enamel instead, ground 0).
+function polished(mat, { metal = uMetal, oxide = uOxide, turn = false, strike = null, ground = .62 } = {}) {
   mat.onBeforeCompile = sh => {
     sh.uniforms.uMetal = metal; sh.uniforms.uOxide = oxide;
     if (strike) sh.uniforms.uStrike = strike;
     let fs = sh.fragmentShader.replace('#include <common>', `#include <common>\nuniform vec3 uMetal;\nuniform vec3 uOxide;${strike ? '\nuniform float uStrike;' : ''}`)
-      .replace('#include <map_fragment>', `#ifdef USE_MAP\n\tfloat polishK = texture2D( map, vMapUv ).r;${strike ? '\n\tpolishK = mix( 0.62, polishK, uStrike );' : ''}\n\tdiffuseColor.rgb *= mix( uOxide, uMetal, polishK );\n#else\n\tfloat polishK = 1.0;\n#endif`);
+      .replace('#include <map_fragment>', `#ifdef USE_MAP\n\tfloat polishK = texture2D( map, vMapUv ).r;${strike ? `\n\tpolishK = mix( ${ground.toFixed(2)}, polishK, uStrike );` : ''}\n\tdiffuseColor.rgb *= mix( uOxide, uMetal, polishK );\n#else\n\tfloat polishK = 1.0;\n#endif`);
     if (strike) fs = fs.replace('#include <roughnessmap_fragment>', '#include <roughnessmap_fragment>\n\troughnessFactor = mix( 0.36, roughnessFactor, uStrike );');
     if (turn) fs = fs.replace('#include <lights_physical_fragment>', THREE.ShaderChunk.lights_physical_fragment.replace('vec2 anisotropyV = anisotropyVector;',
       '#ifdef USE_MAP\n\t\tvec2 turnUv = vMapUv - 0.5;\n\t\tvec2 anisotropyV = normalize( vec2( - turnUv.y, turnUv.x ) + 1e-4 ) * anisotropyVector.x * polishK;\n\t#else\n\t\tvec2 anisotropyV = anisotropyVector;\n\t#endif'));
     sh.fragmentShader = fs;
   };
-  mat.customProgramCacheKey = () => `polish${turn ? '-turn' : ''}${strike ? '-strike' : ''}`;
+  mat.customProgramCacheKey = () => `polish${turn ? '-turn' : ''}${strike ? '-strike' : ''}${ground !== .62 ? `-${ground}` : ''}`;
   return mat;
 }
 function applyFinish() {
@@ -918,7 +980,8 @@ function settleNow() {
   if (camTween) { rig = camTween.to; camTween = null; }
   dirty();
 }
-// Arrange the medal for the step (or the end): which coin hovers, which are seated, where the camera is.
+// Arrange the medal for the step (or the end): which coin hovers, which are seated, where the camera is. Returns in how
+// many ms the whole medal will be in view on this move (null: not on this move, or at once).
 function go({ instant = false, afterStrike = false, enterDelay = null } = {}) {
   const quick = instant || stillMedal();
   // Without WebGL the camera cuts and never shows the whole medal during the input: the face changes at once there.
@@ -945,6 +1008,7 @@ function go({ instant = false, afterStrike = false, enterDelay = null } = {}) {
   const wideIn = moveCamera(quick, afterStrike);
   // Coins waiting to be struck again are struck as the whole medal comes into view.
   if (wideIn !== null) restrikes.forEach(k => restrike(k, Math.max(0, wideIn - 60)));
+  return wideIn;
 }
 function flushRestrikes() {
   restrikes.forEach(k => { const slot = slots[k]; if (!slot) return; stopTween(slot, 'z'); stopTween(slot, 's'); slot.z = 0; slot.s = 1; slot.striking = false; slot.rec = committed; });
@@ -1106,6 +1170,8 @@ function setQuality(q) {
 let poseKey = '';
 function render() {
   applyRig(); applySlots();
+  // The plate's strike: as a coin's face, the letters' metal and their walls come up with it.
+  uPlate.value = plate.s; kit.enamel.normalScale.set(plate.s, plate.s);
   // The wall shadow follows the medal's pose (tilt, the give under a strike); redrawn whenever that pose changed.
   const pose = `${pivot.rotation.x.toFixed(5)},${pivot.rotation.y.toFixed(5)},${pivot.position.z.toFixed(5)}`;
   if (pose !== poseKey) { poseKey = pose; shadowDirty = true; }
@@ -1230,7 +1296,7 @@ async function start3d() {
   };
   const floorMat = () => polished(new THREE.MeshPhysicalMaterial({ map: P.polish, normalMap: P.normal, roughnessMap: P.orm, aoMap: P.orm, metalness: 1, roughness: 1, anisotropy: .3 }), { turn: true });
   kit.socketFloor = floorMat();
-  kit.enamel = polished(new THREE.MeshPhysicalMaterial({ map: P.polish, normalMap: P.normal, roughnessMap: P.orm4, aoMap: P.orm4, metalnessMap: P.orm4, metalness: 1, roughness: 1, clearcoat: 1, clearcoatRoughness: .06 }), { oxide: uEnamel });
+  kit.enamel = polished(new THREE.MeshPhysicalMaterial({ map: P.polish, normalMap: P.normal, roughnessMap: P.orm4, aoMap: P.orm4, metalnessMap: P.orm4, metalness: 1, roughness: 1, clearcoat: 1, clearcoatRoughness: .06 }), { oxide: uEnamel, strike: uPlate, ground: 0 });
   kit.ribbon = new THREE.MeshPhysicalMaterial({ map: P.print, normalMap: P.normal, normalScale: new THREE.Vector2(.55, .55), color: new THREE.Color('#9a9a9a'), roughness: .66, metalness: 0, sheen: .45, sheenRoughness: .5, sheenColor: new THREE.Color('#ff9a66'), side: THREE.DoubleSide });
   // A dense face mesh (96 rings × 384) so the displacement map can raise the relief; 3D-1 uses 24 × 160.
   // Face meshes by distance: dense (96 rings × 384) for the open coin the camera is close to and for the share image,
@@ -1264,11 +1330,14 @@ async function start3d() {
 }
 // Plate and ribbon maps from the builder: the plate's AO/roughness and metal channels go into one texture as in 3D-1.
 function setPlate(sig) {
-  const d = faces.get(sig).data, n = d.W * d.Hh, orm = new Uint8Array(n * 4);
-  for (let i = 0; i < n; i++) { orm[i * 4] = d.orm[i * 2]; orm[i * 4 + 1] = d.orm[i * 2 + 1]; orm[i * 4 + 2] = d.metal[i]; orm[i * 4 + 3] = 255; }
-  const o = dataTex(orm, d.W, d.Hh, 4);
-  faces.get(sig).tex = { polish: dataTex(d.polish, d.W, d.Hh, 1), normal: dataTex(d.normal, d.W, d.Hh, 4), orm: o };
-  Object.assign(kit.enamel, { map: faces.get(sig).tex.polish, normalMap: faces.get(sig).tex.normal, roughnessMap: o, aoMap: o, metalnessMap: o });
+  const f = faces.get(sig);
+  if (!f.tex) {
+    const d = f.data, n = d.W * d.Hh, orm = new Uint8Array(n * 4);
+    for (let i = 0; i < n; i++) { orm[i * 4] = d.orm[i * 2]; orm[i * 4 + 1] = d.orm[i * 2 + 1]; orm[i * 4 + 2] = d.metal[i]; orm[i * 4 + 3] = 255; }
+    f.tex = { polish: dataTex(d.polish, d.W, d.Hh, 1), normal: dataTex(d.normal, d.W, d.Hh, 4), orm: dataTex(orm, d.W, d.Hh, 4) };
+  }
+  const o = f.tex.orm;
+  Object.assign(kit.enamel, { map: f.tex.polish, normalMap: f.tex.normal, roughnessMap: o, aoMap: o, metalnessMap: o });
 }
 function setRibbon(sig) {
   const d = faces.get(sig).data;
@@ -1310,7 +1379,18 @@ function flatDraw() {
     g.save(); g.beginPath(); g.arc(x - lift, y - lift, .93 * ppu, 0, Math.PI * 2); g.clip(); g.drawImage(flatFace(slot.sig), x - lift - .93 * ppu, y - lift - .93 * ppu, 1.86 * ppu, 1.86 * ppu); g.restore();
   });
   const [px, py] = P(0, 0); g.fillStyle = '#17150f'; g.beginPath(); if (g.roundRect) g.roundRect(px - 1.09 * ppu, py - .36 * ppu, 2.18 * ppu, .72 * ppu, .1 * ppu); else g.rect(px - 1.09 * ppu, py - .36 * ppu, 2.18 * ppu, .72 * ppu); g.fill();
+  // The struck plate: its own maps, lit flat as the coins are.
+  if (plate.figure && faces.has(plate.sig)) { g.save(); g.clip(); g.drawImage(flatPlate(plate.sig), px - 1.09 * ppu, py - .36 * ppu, 2.18 * ppu, .72 * ppu); g.restore(); return; }
   g.fillStyle = f.metal; g.font = `650 ${.22 * ppu}px StudySans, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'alphabetic'; g.fillText('지난 28일', px, py - .06 * ppu);
+}
+function flatPlate(sig) {
+  if (!flats.has(sig)) {
+    const d = faces.get(sig).data, hex = s => [1, 3, 5].map(i => parseInt(s.slice(i, i + 2), 16));
+    const c = document.createElement('canvas'); c.width = d.W; c.height = d.Hh;
+    c.getContext('2d').putImageData(Relief.preview({ W: d.W, Hh: d.Hh, polish: d.polish, normal: d.normal }, hex(FINISHES[finishKey].metal), hex('#17150f')), 0, 0);
+    flats.set(sig, c);
+  }
+  return flats.get(sig);
 }
 
 // ---- completion: finish, share image ---------------------------------------------------------------------------------
@@ -1319,8 +1399,8 @@ $$('input[name=finish]').forEach(input => input.addEventListener('change', () =>
   if (renderer) applyFinish();
   dirty(); syncNav();
 }));
-// All seated coins at the seat size before a share render.
-function facesReady() { syncCoins(); return Promise.all(slots.filter(s => s.wantSig).map(s => want(s.wantSig, null, 1).then(() => showBest(s)))); }
+// All seated coins at the seat size, and the plate being struck, before a share render.
+function facesReady() { syncCoins(); return Promise.all([...slots.filter(s => s.wantSig).map(s => want(s.wantSig, null, 1).then(() => showBest(s))), plate.ready]); }
 const SUPER = 2;
 async function shareCanvas(kind) {
   const [W, H] = SHARE_SIZES[kind], c = document.createElement('canvas');

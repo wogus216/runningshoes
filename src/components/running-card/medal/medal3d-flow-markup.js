@@ -79,11 +79,11 @@ export const MARKUP = `
         <label><input type="radio" name="finish" value="brass"><span>황동</span></label>
       </fieldset>
     </div>
+    <p class="complete-epithet" id="complete-epithet" role="status"></p>
     <div class="complete-figure" id="complete-figure" role="img" aria-label=""></div>
     <p class="tilt-hint" aria-hidden="true">메달을 끌어 빛에 비춰 보세요</p>
     <dl id="summary"></dl>
     <p id="summary-extra"></p>
-    <p class="completion-note" id="completion-note"></p>
     <div class="complete-actions"><button type="button" id="edit-records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>다시 다듬기</button><button type="button" id="save-image" aria-expanded="false" aria-controls="share-sheet">이미지로 저장<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg></button></div>
     <div class="share-sheet" id="share-sheet" role="group" aria-labelledby="share-title" hidden>
       <p id="share-title" tabindex="-1">어떤 크기로 저장할까요? 고른 마감으로 저장돼요.</p>
