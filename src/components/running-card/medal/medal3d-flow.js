@@ -344,19 +344,17 @@ function toResult(instant) {
   analysis = verdict.analysis; epithet = verdict.title; verdictKept = verdict;
   finish(instant);
 }
+// Only reached with no sample left (judge refuses samples, D1), so the summary carries no 예시 tag.
 function finish(instant) {
   const left = complete ? -1 : stage;
   stopMotion(); complete = true; hideConfirm(); syncRaceToggle();
   $$('[data-go]').forEach(button => button.removeAttribute('aria-current'));
   $('.chapters').classList.add('is-done');
   root.dataset.scene = 'complete'; $('.complete').hidden = false;
-  $('#summary').replaceChildren(...summaryEntries().map(([lead, label, n, unit, key]) => {
+  $('#summary').replaceChildren(...summaryEntries().map(([lead, label, n, unit]) => {
     const row = document.createElement('div'); row.className = 'summary-item';
     // The lead words go on short screens, where the four numbers share one row.
     const dt = document.createElement('dt'), head = document.createElement('span'); head.className = 'dt-lead'; head.textContent = lead; dt.append(head, label);
-    if (origins[key] === 'sample') {
-      const tag = document.createElement('span'); tag.className = 'sample-tag'; tag.textContent = '예시'; dt.append(tag);
-    }
     const dd = document.createElement('dd'); dd.textContent = n;
     const small = document.createElement('small'); small.textContent = unit; dd.append(small); row.append(dt, dd); return row;
   }));
@@ -375,7 +373,7 @@ function finish(instant) {
   $('#complete-title').focus({ preventScroll: true });
   root.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
-const summaryEntries = () => [['28일', '총거리', format(value('distance')), 'km', 'distance'], ['러닝', '횟수', format(value('count')), '회', 'count'], ['평균', '페이스', paceLabel(), '/km', 'pace'], ['', '최장거리', format(value('longest')), 'km', 'longest']];
+const summaryEntries = () => [['28일', '총거리', format(value('distance')), 'km'], ['러닝', '횟수', format(value('count')), '회'], ['평균', '페이스', paceLabel(), '/km'], ['', '최장거리', format(value('longest')), 'km']];
 const extraLine = () => `강한 훈련 ${hardText()} · 목표 ${goals[values.goal][0]}${values.days.length ? ` · ${dayList()}` : ''}`;
 
 function inputChanged(key, raw) {
