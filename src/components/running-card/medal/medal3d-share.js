@@ -82,7 +82,7 @@ export async function drawShare(g, kind, info, renderFigure) {
   }
   g.fillStyle = th.rule; g.fillRect(M, ruleY, W - 2 * M, 2);
   const rest = ['hard', 'goal', 'days'].every(k => entered.has(k));
-  const extra = rest ? `강한 훈련 ${rec.hard >= 3 ? '3회 이상' : `${rec.hard}회`} · 목표 ${GOALS[rec.goal]}${rec.days.length ? ` · ${rec.days.map(d => DAYS[d]).join('·')}` : ''}` : '강한 훈련 · 목표 · 요일은 아직 입력 전이에요.';
+  const extra = rest ? `강한 훈련 ${rec.hard >= 6 ? '6회 이상' : `${rec.hard}회`} · 목표 ${GOALS[rec.goal]}${rec.days.length ? ` · ${rec.days.map(d => DAYS[d]).join('·')}` : ''}` : '강한 훈련 · 목표 · 요일은 아직 입력 전이에요.';
   g.textAlign = 'left'; g.fillStyle = th.ink; fitText(g, extra, M, story ? ruleY + 60 : H - 76, W - 2 * M, story ? 36 : 32, 550);
   const note = samples.size ? '예시 표시는 직접 입력하지 않은 시연 값이라, 그 동전은 각인하지 않은 민짜로 남겼어요.'
     : info.coins.includes('empty') ? '아직 입력하지 않은 자리는 빈 소켓으로 남겼어요.' : '';
