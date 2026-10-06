@@ -452,18 +452,127 @@ export function socket(S = 256, label = '') {
   pxs = 1;
   return { S, H, ...maps(H, S, S, { depth: .05 / (2 / S), lo: .42, hi: .5, oxide: [.05, .06], top: .55, rough: [.55, .35], ao: 1, shadow: 0, wear: 0 }) };
 }
-// The centre plate's enamel: one ink enamel, raised metal letters 지난 28일 and a rule; below it stays empty for the
-// sentence that comes later. polish is 1 on metal, 0 on enamel, and the metal channel matches it.
-export function plate(W = 1024, Hh = 338, size = [2.18, .72]) {
+// ---- the eighth strike: the figure's house sign ----------------------------------------------------------------------
+// S3 (step 1 of D8): one sign per house of the twelve, drawn as Canvas paths in a box of ±1 (y down) and struck like the
+// coins' motifs — white is raised metal, black (carve) cuts back to the enamel. Plain silhouettes with strokes of .13 box
+// units or more: on the finished medal the sign is about 25–30px tall. The house of 니케 gets the herald's staff without
+// wings (D9: no wings next to that name).
+const carve = (g, draw) => { g.save(); g.fillStyle = g.strokeStyle = '#000'; draw(); g.restore(); };
+const shape = (g, pts) => { g.beginPath(); pts.forEach(([x, y], i) => i ? g.lineTo(x, y) : g.moveTo(x, y)); g.closePath(); };
+// A ring of round shapes each cut out of the ones drawn before it, so they read as separate grains, grapes.
+const cut = (g, path, w = .07) => { path(); carve(g, () => { g.lineWidth = w; g.stroke(); }); g.fill(); };
+export const SIGNS = {
+  // A thunderbolt.
+  '제우스': g => { shape(g, [[-.04, -1], [.52, -1], [.14, -.2], [.5, -.2], [-.4, 1], [-.06, .1], [-.44, .1]]); g.fill(); },
+  // The eye of a peacock's feather on its quill.
+  '헤라': g => {
+    g.beginPath(); g.moveTo(0, -1); g.bezierCurveTo(.8, -.72, .8, .3, 0, .52); g.bezierCurveTo(-.8, .3, -.8, -.72, 0, -1); g.fill();
+    g.lineWidth = .17; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, .42); g.lineTo(0, 1); g.stroke();
+    carve(g, () => { g.beginPath(); g.ellipse(0, -.17, .36, .42, 0, 0, TAU); g.fill(); });
+    g.beginPath(); g.ellipse(0, -.15, .21, .25, 0, 0, TAU); g.fill();
+  },
+  // A trident.
+  '포세이돈': g => {
+    g.lineWidth = .2; g.lineCap = 'butt';
+    g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.66); g.stroke();
+    g.beginPath(); g.moveTo(-.6, -.66); g.lineTo(-.6, -.44); g.quadraticCurveTo(-.6, -.12, 0, -.12); g.quadraticCurveTo(.6, -.12, .6, -.44); g.lineTo(.6, -.66); g.stroke();
+    for (const x of [-.6, 0, .6]) { shape(g, [[x, -1], [x + .2, -.6], [x - .2, -.6]]); g.fill(); }
+  },
+  // An ear of wheat: a top grain and three pairs down a stem.
+  '데메테르': g => {
+    g.lineWidth = .12; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.4); g.stroke();
+    const grains = [[0, -.72, 0], ...[-.38, -.04, .3].flatMap(y => [[-.22, y, -.6], [.22, y, .6]])];
+    for (const [x, y, a] of grains) cut(g, () => { g.beginPath(); g.ellipse(x, y, .17, .29, a, 0, TAU); });
+  },
+  // An owl, face on: ear tufts, two eyes cut into the face, the beak.
+  '아테나': g => {
+    g.beginPath(); g.ellipse(0, .14, .7, .86, 0, 0, TAU); g.fill();
+    for (const s of [-1, 1]) { shape(g, [[s * .18, -.52], [s * .66, -1], [s * .7, -.4]]); g.fill(); }
+    carve(g, () => { for (const s of [-1, 1]) { g.beginPath(); g.arc(s * .29, -.2, .25, 0, TAU); g.fill(); } shape(g, [[-.11, .12], [.11, .12], [0, .36]]); g.fill(); });
+    for (const s of [-1, 1]) { g.beginPath(); g.arc(s * .29, -.2, .11, 0, TAU); g.fill(); }
+  },
+  // The sun: a disc ringed by eight rays.
+  '아폴론': g => {
+    g.beginPath(); g.arc(0, 0, .46, 0, TAU); g.fill();
+    for (let k = 0; k < 8; k++) { const a = k / 8 * TAU - Math.PI / 2, w = .17; shape(g, [[.6 * Math.cos(a - w), .6 * Math.sin(a - w)], [Math.cos(a), Math.sin(a)], [.6 * Math.cos(a + w), .6 * Math.sin(a + w)]]); g.fill(); }
+    carve(g, () => { g.lineWidth = .08; g.beginPath(); g.arc(0, 0, .3, 0, TAU); g.stroke(); });
+  },
+  // A crescent moon, horns up.
+  '아르테미스': g => {
+    g.beginPath(); g.arc(0, -.22, .86, 0, TAU); g.fill();
+    carve(g, () => { g.beginPath(); g.arc(0, -.64, .76, 0, TAU); g.fill(); });
+  },
+  // A round shield over a spear.
+  '아레스': g => {
+    g.lineWidth = .14; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.88, .88); g.lineTo(.7, -.7); g.stroke();
+    shape(g, [[.98, -.98], [.54, -.8], [.8, -.54]]); g.fill();
+    g.beginPath(); g.arc(-.04, .04, .66, 0, TAU); g.fill();
+    carve(g, () => { g.lineWidth = .09; g.beginPath(); g.arc(-.04, .04, .5, 0, TAU); g.stroke(); g.lineWidth = .07; g.beginPath(); g.arc(-.04, .04, .18, 0, TAU); g.stroke(); });
+  },
+  // A scallop shell: a fan of seven ribs with a scalloped rim, on its hinge.
+  '아프로디테': g => {
+    const cy = .4, R = 1.0, a0 = Math.PI * 1.14, a1 = Math.PI * 1.86, ribs = 7, at = (a, r) => [r * Math.cos(a), cy + r * Math.sin(a)];
+    g.beginPath(); g.moveTo(0, cy); g.lineTo(...at(a0, .93 * R));
+    for (let k = 0; k < ribs; k++) { const t1 = a0 + (a1 - a0) * (k + 1) / ribs, tm = a0 + (a1 - a0) * (k + .5) / ribs; g.quadraticCurveTo(...at(tm, 1.07 * R), ...at(t1, .93 * R)); }
+    g.closePath(); g.fill();
+    shape(g, [[-.22, cy - .04], [.22, cy - .04], [.13, cy + .2], [-.13, cy + .2]]); g.fill();
+    carve(g, () => { g.lineWidth = .07; g.lineCap = 'butt'; for (let k = 1; k < ribs; k++) { const t = a0 + (a1 - a0) * k / ribs; g.beginPath(); g.moveTo(...at(t, .26)); g.lineTo(...at(t, .86 * R)); g.stroke(); } });
+  },
+  // An anvil, horn to the left.
+  '헤파이스토스': g => {
+    g.beginPath(); g.moveTo(-.3, -.66); g.lineTo(.96, -.66); g.lineTo(.96, -.4); g.lineTo(.46, -.32); g.lineTo(.3, .16); g.lineTo(.72, .46); g.lineTo(.72, .66);
+    g.lineTo(-.72, .66); g.lineTo(-.72, .46); g.lineTo(-.3, .16); g.lineTo(-.42, -.3); g.quadraticCurveTo(-.74, -.34, -1, -.56); g.quadraticCurveTo(-.7, -.7, -.3, -.66); g.closePath(); g.fill();
+  },
+  // The herald's staff with two snakes wound round it, their heads facing at the top (wingless, see above).
+  '헤르메스': g => {
+    g.lineWidth = .14; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.74); g.stroke();
+    g.beginPath(); g.arc(0, -.84, .15, 0, TAU); g.fill();
+    g.lineWidth = .15; g.lineCap = 'round';
+    for (const s of [-1, 1]) {
+      const pt = t => [s * .46 * Math.sin(TAU * 1.25 * t), .8 - 1.36 * t];
+      g.beginPath(); for (let i = 0; i <= 64; i++) { const [x, y] = pt(.9 * i / 64); if (i) g.lineTo(x, y); else g.moveTo(x, y); } g.stroke();
+      const [hx, hy] = pt(.9); g.beginPath(); g.ellipse(hx - s * .04, hy - .02, .13, .1, 0, 0, TAU); g.fill();
+    }
+  },
+  // A bunch of grapes under its leaf.
+  '디오니소스': g => {
+    g.lineWidth = .11; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, -.5); g.quadraticCurveTo(.02, -.8, .22, -.98); g.stroke();
+    g.beginPath(); g.ellipse(-.36, -.7, .34, .17, -.35, 0, TAU); g.fill();
+    for (const [y, xs] of [[-.3, [-.42, -.14, .14, .42]], [.02, [-.28, 0, .28]], [.34, [-.14, .14]], [.66, [0]]]) for (const x of xs) cut(g, () => { g.beginPath(); g.arc(x, y, .18, 0, TAU); });
+  },
+};
+// Plate layout (plate units, centre origin, y down): the sign on the left, a short rule, then the name and its house
+// centred in the rest. 지난 28일 leaves the plate: the share image's masthead and the ribbon carry it.
+const SIGN_X = -.64, SIGN_R = .265, RULE_X = -.27, TEXT_X = .37, TEXT_W = 1.1, NAME_Y = .02, HOUSE_Y = .215;
+function figurePlate(figure, W, Hh, scale) {
+  const sign = SIGNS[figure.house];
+  const a = bevel(mask(W, g => { g.translate(SIGN_X, 0); g.scale(SIGN_R, SIGN_R); if (sign) sign(g); }, W, Hh, scale), W, Hh, 2);
+  const b = bevel(mask(W, g => {
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    const fit = (text, size, weight) => { g.font = `${weight} ${size * scale}px StudySans, sans-serif`; const w = g.measureText(text).width; if (w > TEXT_W * scale) g.font = `${weight} ${size * scale * TEXT_W * scale / w}px StudySans, sans-serif`; };
+    g.textAlign = 'center'; g.textBaseline = 'alphabetic';
+    const x = W / 2 + TEXT_X * scale, y = v => Hh / 2 + v * scale;
+    fit(figure.name, .25, 760); g.fillText(figure.name, x, y(NAME_Y));
+    fit(`${figure.house} 가문`, .135, 550); g.fillText(`${figure.house} 가문`, x, y(HOUSE_Y));
+    g.fillRect(W / 2 + RULE_X * scale - .007 * scale, y(-.21), .014 * scale, .42 * scale);
+  }, W, Hh, scale), W, Hh, 1);
+  for (let i = 0; i < a.length; i++) a[i] = Math.max(a[i], b[i]);
+  return a;
+}
+// The centre plate's enamel: one ink enamel with raised metal letters. Until the judgement it reads 지난 28일 over a
+// rule; with a figure ({ name, house }: the eighth strike) it carries the house sign and the name. polish is 1 on metal,
+// 0 on enamel, and the metal channel matches it. Same figure, same pixels.
+/** @param {{ name: string, house: string } | null} [figure] */
+export function plate(figure = null, W = 1024, Hh = 338, size = [2.18, .72]) {
   pxs = W / 1024;
   const scale = W / size[0];
-  const letters = mask(W, g => {
+  const m = figure ? figurePlate(figure, W, Hh, scale) : bevel(mask(W, g => {
     g.setTransform(1, 0, 0, 1, 0, 0);
     g.font = `650 ${.2 * scale}px StudySans, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'alphabetic';
     g.fillText('지난 28일', W / 2, Hh * .44);
     g.fillRect(W / 2 - .42 * scale, Hh * .56, .84 * scale, .014 * scale);
-  }, W, Hh, scale);
-  const m = bevel(letters, W, Hh, 1), H = new Float32Array(W * Hh);
+  }, W, Hh, scale), W, Hh, 1);
+  const H = new Float32Array(W * Hh);
   for (let i = 0; i < H.length; i++) H[i] = .2 + .5 * m[i];
   const metal = m.map(v => smooth(.3, .6, v));
   const out = maps(H, W, Hh, { depth: .03 / (size[0] / W), lo: .3, hi: .5, oxide: [0, 0], top: .95, rough: [.10, .34], metal, ao: .4, shadow: 0, wear: .4 });
@@ -496,11 +605,11 @@ export function ribbon(W = 512, Hh = 2048) {
   }
   return { W, Hh, print, normal: n };
 }
-// A flat, lit preview of a coin from its own maps (used when WebGL is not available).
+// A flat, lit preview of a coin (or of the plate: W × Hh) from its own maps (used when WebGL is not available).
 export function preview(face, metal, oxide, light = [-.5, -.62, .6]) {
-  const { S, polish, normal } = face, out = new ImageData(S, S);
+  const { S, polish, normal } = face, W = face.W || S, Hh = face.Hh || S, out = new ImageData(W, Hh);
   const l = Math.hypot(...light), L = light.map(v => v / l);
-  for (let i = 0; i < S * S; i++) {
+  for (let i = 0; i < W * Hh; i++) {
     const o = i * 4, p = polish[i] / 255, nx = normal[o] / 127.5 - 1, ny = -(normal[o + 1] / 127.5 - 1), nz = normal[o + 2] / 127.5 - 1;
     const lam = clamp(nx * L[0] + ny * L[1] + nz * L[2], 0, 1), spec = Math.pow(clamp(lam, 0, 1), 18) * p;
     for (let c = 0; c < 3; c++) out.data[o + c] = clamp((oxide[c] + (metal[c] - oxide[c]) * p) * (.35 + .75 * lam) + spec * 90, 0, 255);
