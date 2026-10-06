@@ -61,6 +61,15 @@ describe('명판 맵 결정성', () => {
     expect(digest(Relief.plate(figureOf(a))).metal).not.toBe(digest(Relief.plate(figureOf(b))).metal);
   }, 60_000);
 
+  it('가문명은 명판에 새기지 않는다: 이름이 같으면 가문이 달라도 글자 자리 금속이 같다', () => {
+    // 금속 채널은 블러 없이 마스크에서 바로 나온다 — 구분선 오른쪽(명판 폭의 40%부터)은 이름만의 픽셀이다.
+    const a = metalOf(Relief.plate({ name: '니케', house: '헤르메스' })), b = Relief.plate({ name: '니케', house: '제우스' });
+    const W = b.W, from = Math.round(W * .4);
+    let diff = 0;
+    for (let y = 0; y < b.Hh; y++) for (let x = from; x < W; x++) if (a[y * W + x] !== metalOf(b)[y * W + x]) diff++;
+    expect(diff).toBe(0);
+  }, 60_000);
+
   it('판정 전 명판(지난 28일)도 두 번 만들면 같고, 인물 명판과는 다르다', () => {
     const blank = digest(Relief.plate());
     expect(digest(Relief.plate())).toEqual(blank);
