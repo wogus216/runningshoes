@@ -1189,7 +1189,7 @@ function setFloor(k, sig) {
 }
 const sync = () => { const gl = renderer.getContext(), px = new Uint8Array(4); gl.readPixels(0, 0, 1, 1, gl.RGBA, gl.UNSIGNED_BYTE, px); };
 async function start3d() {
-  THREE = await import('three');
+  THREE = await import('./medal3d-three.js');
   if (destroyed) return;
   const canvas = $('#gl');
   renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true, powerPreference: 'high-performance' });
@@ -1449,13 +1449,18 @@ start().catch(e => {
 });
 
 // ---- teardown ----------------------------------------------------------------------------------------------------------
+// A disposed texture also lets go of its pixels. three keeps a disposed renderer reachable from a texture of its own
+// module (a lookup table's dispose listener), and that renderer's shadow pass still holds the depth materials it made
+// from ours, with our maps (displacement, polish) in them: without this a remount kept about 2MB of face data per mount
+// (dev Fast Refresh, measured with a heap snapshot).
+function freeTexture(t) { t.dispose(); t.image = null; }
 // Geometries, materials and every texture a material holds (the face maps, the placeholders, the blob shadow).
 function disposeTree(object) {
   object.traverse(o => {
     o.geometry?.dispose();
     for (const m of [o.material].flat()) {
       if (!m) continue;
-      for (const v of Object.values(m)) if (v && v.isTexture) v.dispose();
+      for (const v of Object.values(m)) if (v && v.isTexture) freeTexture(v);
       m.dispose();
     }
   });
@@ -1476,8 +1481,8 @@ function destroy() {
   mediaReduce.removeEventListener('change', applyReduce);
   if (shareUrl) URL.revokeObjectURL(shareUrl);
   if (renderer) {
-    for (const f of faces.values()) if (f.tex) Object.values(f.tex).forEach(t => t.dispose());
-    if (blank1) Object.values(blank1).forEach(t => t.dispose());
+    for (const f of faces.values()) if (f.tex) Object.values(f.tex).forEach(freeTexture);
+    if (blank1) Object.values(blank1).forEach(freeTexture);
     if (scene) disposeTree(scene);
     [denseGeo, midGeo, flatGeo, kit?.socketFloor].forEach(x => x?.dispose());
     envTarget?.dispose();
@@ -1487,6 +1492,10 @@ function destroy() {
     renderer = null;
   }
   faces.clear(); flats.clear(); thumbs.clear();
+  // The scene graph holds every face map through its materials' textures. Whatever still holds destroy() (React keeps
+  // an effect's cleanup for a while) must not keep them.
+  slots.length = 0; solids.length = 0;
+  THREE = scene = camera = body = medal = pivot = key = rim = kit = blank1 = envTarget = denseGeo = midGeo = flatGeo = null;
   container.replaceChildren();
 }
 return destroy;
