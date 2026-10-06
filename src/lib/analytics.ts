@@ -32,6 +32,29 @@ export type EventParams = {
   filter_value?: string;
 };
 
+/**
+ * 러닝 카드(/running-card) 이벤트 — 스펙 '핵심 측정 이벤트'의 이름 그대로. 보내는 쪽은 `@/lib/runner-analysis/track`
+ * (허용 매개변수만 골라 track/trackOnce 로 넘긴다). 여기는 타입뿐이라 이 모듈을 싣는 루트 레이아웃 청크가 커지지 않는다.
+ * 입력한 기록 원값(거리·횟수·페이스·최장거리·목표 기록)은 매개변수에 없다 — 판정 결과(인물·대표 축)와 화면 동작만.
+ */
+export type RunnerEvent =
+  | 'runner_analysis_started'
+  | 'runner_input_step_completed'
+  | 'runner_result_viewed'
+  | 'runner_cover_saved'
+  | 'runner_carousel_saved'
+  | 'runner_share_started'
+  | 'runner_shared_link_opened';
+
+export type RunnerEventParams = {
+  character_id?: string;
+  lead_axis?: 'endurance' | 'stimulus' | 'recoveryMargin';
+  image_size?: 'story' | 'feed';
+  hide_numbers?: 'true' | 'false';
+  share_method?: 'share' | 'clipboard';
+  step_number?: number;
+};
+
 type Gtag = (command: 'event', event: string, params?: Record<string, unknown>) => void;
 
 export type PurchaseClickInput = {
@@ -89,7 +112,9 @@ export function trackPurchaseClick(params: NonNullable<ReturnType<typeof buildPu
 const fired = new Set<string>();
 
 /** gtag가 없는 환경(SSR, 애드블락 등)에서는 조용히 무시한다. */
-export function track(event: HomeEvent, params: EventParams = {}): void {
+export function track(event: HomeEvent, params?: EventParams): void;
+export function track(event: RunnerEvent, params?: RunnerEventParams): void;
+export function track(event: HomeEvent | RunnerEvent, params: EventParams | RunnerEventParams = {}): void {
   if (typeof window === 'undefined') return;
   const gtag = (window as unknown as { gtag?: Gtag }).gtag;
   if (typeof gtag !== 'function') return;
@@ -97,10 +122,13 @@ export function track(event: HomeEvent, params: EventParams = {}): void {
 }
 
 /** 같은 key로는 세션 내 1회만 발화한다(광고 노출·인덱스 확장 등 중복 방지). */
-export function trackOnce(key: string, event: HomeEvent, params?: EventParams): void {
+export function trackOnce(key: string, event: HomeEvent, params?: EventParams): void;
+export function trackOnce(key: string, event: RunnerEvent, params?: RunnerEventParams): void;
+export function trackOnce(key: string, event: HomeEvent | RunnerEvent, params?: EventParams | RunnerEventParams): void {
   if (fired.has(key)) return;
   fired.add(key);
-  track(event, params);
+  // 두 오버로드 모두 같은 track 본문을 지난다. 단언은 오버로드를 고르려는 타입뿐이다(런타임 코드는 전과 같다).
+  track(event as HomeEvent, params as EventParams);
 }
 
 /** 테스트 전용: trackOnce의 발화 이력을 초기화한다. */
