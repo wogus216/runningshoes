@@ -38,7 +38,7 @@ self.onmessage = async ({ data: m }) => {
     const out = { polish: rows(f.polish, S, S, 1, m.up), normal: rows(f.normal, S, S, 4, m.up), orm: rows(f.orm, S, S, 2, m.up) };
     send({ type: 'built', id: m.id, S, ms: performance.now() - t0, ...out }, Object.values(out).map(a => a.buffer));
   } else if (m.type === 'plate') {
-    const p = Relief.plate(), W = p.W, Hh = p.Hh;
+    const p = Relief.plate(m.figure), W = p.W, Hh = p.Hh;
     const out = { polish: rows(p.polish, W, Hh, 1, m.up), normal: rows(p.normal, W, Hh, 4, m.up), orm: rows(p.orm, W, Hh, 2, m.up), metal: rows(p.metal, W, Hh, 1, m.up) };
     send({ type: 'built', id: m.id, W, Hh, ms: performance.now() - t0, ...out }, Object.values(out).map(a => a.buffer));
   } else if (m.type === 'ribbon') {
