@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import { trackRunner } from '@/lib/runner-analysis/track';
 import { analyzeRunner } from '@/lib/runner-analysis/analyze';
 import { explainRunner, type RunnerExplanation } from '@/lib/runner-analysis/explain';
 import { snapshotFromFlowInput, type FlowInput, type FlowSnapshotResult } from '@/lib/runner-analysis/from-flow-input';
@@ -52,8 +53,17 @@ export default function RunningCardMedal({ onRestart }: { onRestart: () => void 
     if (!el) return;
     const mounted: MountedFlow = mountMedalFlow(el, {
       judge: judgeFlowInput,
-      onReveal: (verdict: (MedalVerdict & { ok: true }) | null) => setRevealed(verdict),
+      onReveal: (verdict: (MedalVerdict & { ok: true }) | null) => {
+        setRevealed(verdict);
+        // 결과 표지(인물로 바뀐 완료 화면)가 실제로 보이는 순간. 같은 인물은 페이지에서 한 번만.
+        if (verdict) {
+          const id = verdict.analysis.match.character.id;
+          trackRunner('runner_result_viewed', { character_id: id, lead_axis: verdict.explanation.lead.axis }, `runner-result-${id}`);
+        }
+      },
       onOpenResult: () => setWantOpen(true),
+      // 01–07 단계 완료(값을 받아 동전을 새긴 순간). 단계마다 페이지에서 한 번만 — 몇 단계까지 왔는지를 센다.
+      onStep: (step: number) => trackRunner('runner_input_step_completed', { step_number: step }, `runner-step-${step}`),
     });
     flow.current = mounted;
     return () => {

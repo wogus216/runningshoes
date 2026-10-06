@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { trackRunner } from '@/lib/runner-analysis/track';
 import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
 import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { readSharedRunnerCard, type SharedCardReadResult } from '@/lib/runner-analysis/share';
@@ -18,12 +19,24 @@ export default function RunningCardShared({ raw, onStart }: { raw: string; onSta
     // 형식이 틀린 링크는 그냥 첫 화면이다.
     if (result.status === 'invalid') onStart();
     else setRead(result);
+    // 열람 기한 안의 공유 링크가 열렸다. 보낸 사람 자신이 열어도 잡힌다(세션을 가를 정보가 링크에 없다).
+    if (result.status === 'valid') trackRunner('runner_shared_link_opened', { character_id: result.card.characterId }, 'runner-shared-opened');
   }, [raw, onStart]);
 
   if (!read) return <div className="rcm" />;
 
   const start = (
-    <button type="button" className="rc-primary" onClick={onStart}>내 메달 만들기</button>
+    <button
+      type="button"
+      className="rc-primary"
+      onClick={() => {
+        // 공유받은 화면이 이 페이지의 유일한 '시작' 버튼이다(직접 들어오면 01 입력부터라 시작 버튼이 없다).
+        trackRunner('runner_analysis_started');
+        onStart();
+      }}
+    >
+      내 메달 만들기
+    </button>
   );
 
   if (read.status === 'expired') {
