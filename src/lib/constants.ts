@@ -42,6 +42,10 @@ export const ADSENSE_SLOTS = {
   // 홈 전용 슬롯 등록 완료(2026-07-13). env 미설정 시 하드코딩 전용 ID로 폴백.
   homeBottom:
     process.env.NEXT_PUBLIC_ADSENSE_SLOT_HOME_BOTTOM || '8774844686',
+  // 러닝 카드 결과 카드 아래·공유 위 (display 1개). 전용 슬롯은 아직 AdSense 콘솔에서 만들기 전이다(2026-10-06).
+  // 운영자가 만들어 env 나 아래 폴백 자리('')에 ID를 넣기 전에는 AdSlot 이 렌더하지 않는다.
+  // 다른 위치의 ID를 빌려 쓰지 않는다 — 위치별 보고가 섞인다.
+  runningCardResult: process.env.NEXT_PUBLIC_ADSENSE_SLOT_RUNNING_CARD_RESULT || '',
 } as const;
 
 // GA4 설정
