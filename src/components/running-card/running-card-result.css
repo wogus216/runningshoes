@@ -1,0 +1,80 @@
+/* Result card (S4) under the finished medal, and the shared-link view. Same ink page, paper text, orange accent and
+   Pretendard as the medal (.rcm tokens in medal/medal3d-flow.css); numbers in StudyCondensed as on the coins.
+   No shine, no rays (3D-2). Everything is under .rcm, so nothing leaks to other pages. */
+.rcm .rc-result{position:relative;width:100%;max-width:480px;margin:0 auto;padding:44px 24px calc(56px + env(safe-area-inset-bottom));border-top:1px solid var(--line-25);background:var(--ink)}
+/* Margins and list styles start from the site's reset (Tailwind preflight): 0 and none. Headings take the page colour
+   (globals.css gives h1–h6 var(--primary), dark on this ink page). */
+.rcm .rc-result{color:var(--paper)}
+.rcm .rc-result h2,.rcm .rc-result h3{color:inherit}
+.rcm .rc-result h2:focus{outline:none}
+
+.rcm .rc-house{font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
+.rcm .rc-name{margin-top:8px;font-size:40px;font-weight:480;line-height:1.1;letter-spacing:-.045em}
+.rcm .rc-epithet{margin-top:8px;font-size:17px;font-weight:500;line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
+
+.rcm .rc-lead{display:flex;align-items:flex-end;gap:14px;margin-top:26px;padding-top:14px;border-top:1px solid var(--line-25)}
+.rcm .rc-lead strong{font:700 64px/.9 StudyCondensed,sans-serif;letter-spacing:-.02em;color:var(--accent)}
+.rcm .rc-lead span{display:block;font-size:16px;font-weight:550}
+.rcm .rc-lead small{display:block;margin-top:3px;font-size:13px;color:var(--dim-60)}
+
+.rcm .rc-oracle{margin-top:24px;padding-left:14px;border-left:2px solid var(--accent);font-size:20px;font-weight:450;line-height:1.5;letter-spacing:-.02em;word-break:keep-all}
+
+.rcm .rc-section{margin-top:44px}
+.rcm .rc-section>h3{font-size:14px;font-weight:600;color:var(--dim-60);letter-spacing:-.01em}
+
+.rcm .rc-scores{margin-top:6px}
+.rcm .rc-score{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;column-gap:12px;padding:10px 0 12px;border-top:1px solid var(--line-25)}
+.rcm .rc-score dt{font-size:16px;font-weight:550}
+.rcm .rc-score dt small{margin-left:8px;font-size:12px;font-weight:450;color:var(--dim-60)}
+.rcm .rc-score dd{font:700 40px/1 StudyCondensed,sans-serif;letter-spacing:-.02em}
+.rcm .rc-bar{display:block;height:4px;margin-top:9px;background:var(--line-15);overflow:hidden}
+.rcm .rc-bar i{display:block;height:100%;background:var(--paper)}
+.rcm .rc-score.is-lead dt,.rcm .rc-score.is-lead dd{color:var(--accent)}
+.rcm .rc-score.is-lead .rc-bar i{background:var(--accent)}
+.rcm .rc-race{margin-top:8px;font-size:13px;line-height:1.5;color:var(--dim-60);word-break:keep-all}
+
+.rcm .rc-evidence{margin-top:6px;padding:0;list-style:none}
+.rcm .rc-evidence li{display:flex;align-items:baseline;gap:12px;padding:12px 0;border-top:1px solid var(--line-25);font-size:17px;font-weight:600;letter-spacing:-.02em;word-break:keep-all}
+.rcm .rc-evidence li span{flex:none;font:700 16px StudyCondensed,sans-serif;color:var(--accent)}
+
+.rcm .rc-notes{margin-top:44px;display:grid;gap:22px}
+.rcm .rc-notes dt{font-size:13px;font-weight:600;color:var(--dim-60)}
+.rcm .rc-notes dd{margin-top:6px;font-size:16px;line-height:1.6;word-break:keep-all}
+.rcm .rc-next{padding:16px 18px 18px;border:1px solid var(--line-40);border-radius:16px}
+.rcm .rc-next dt{color:var(--accent)}
+
+.rcm .rc-def{margin-top:32px;padding-top:14px;border-top:1px solid var(--line-25);font-size:13px;line-height:1.55;color:var(--dim-60);word-break:keep-all}
+
+.rcm .rc-share{margin-top:44px;padding-top:20px;border-top:1px solid var(--line-25)}
+.rcm .rc-share>h3{font-size:16px;font-weight:600}
+.rcm .rc-sizes{display:flex;gap:8px;margin:14px 0 0;padding:0;border:0}
+.rcm .rc-sizes label{position:relative;flex:1;cursor:pointer}
+.rcm .rc-sizes input{position:absolute;opacity:0;width:1px;height:1px;pointer-events:none}
+.rcm .rc-sizes span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:52px;border:1px solid var(--line-25);border-radius:14px;font-size:15px;font-weight:550;color:var(--dim-70)}
+.rcm .rc-sizes small{font:700 13px StudyCondensed,sans-serif;letter-spacing:.03em;opacity:.75}
+.rcm .rc-sizes input:checked+span{border-color:var(--paper);color:var(--paper);box-shadow:inset 0 0 0 1px var(--paper)}
+.rcm .rc-sizes input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.rcm .rc-toggle{display:flex;align-items:center;justify-content:space-between;gap:12px;width:100%;min-height:48px;margin-top:10px;padding:0 4px;font-size:15px;text-align:left}
+.rcm .rc-toggle i{position:relative;flex:none;width:40px;height:24px;border-radius:12px;background:var(--line-25);transition:background .2s}
+.rcm .rc-toggle i::after{content:'';position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--paper);transition:transform .2s}
+.rcm .rc-toggle[aria-pressed=true] i{background:var(--accent)}
+.rcm .rc-toggle[aria-pressed=true] i::after{transform:translateX(16px)}
+.rcm .rc-actions{display:grid;gap:8px;margin-top:8px}
+.rcm .rc-actions button,.rcm .rc-actions a{display:flex;align-items:center;justify-content:center;gap:8px;height:52px;border-radius:28px;border:1px solid var(--line-40);font-size:16px;font-weight:550}
+.rcm .rc-actions .rc-primary{background:var(--paper);color:var(--ink);border-color:var(--paper);font-weight:600}
+.rcm .rc-actions button:disabled{opacity:.55}
+.rcm .rc-row{display:flex;gap:8px}
+.rcm .rc-row>*{flex:1;min-width:0}
+.rcm .rc-share-note{margin-top:12px;font-size:13px;line-height:1.55;color:var(--dim-60);word-break:keep-all}
+.rcm .rc-status{margin-top:10px;font-size:14px;line-height:1.5;color:var(--paper);word-break:keep-all}
+.rcm .rc-status:empty{display:none}
+.rcm .rc-open{display:flex;gap:8px;margin-top:8px}
+.rcm .rc-open a{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:22px;border:1px solid var(--line-25);font-size:14px;color:var(--accent)}
+
+.rcm .rc-shoes{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:40px;padding:18px 20px;border-radius:16px;background:var(--ink-2);border:1px solid var(--line-25)}
+.rcm .rc-shoes b{display:block;font-size:16px;font-weight:600}
+.rcm .rc-shoes small{display:block;margin-top:3px;font-size:13px;line-height:1.45;color:var(--dim-60);word-break:keep-all}
+.rcm .rc-shoes svg{flex:none}
+.rcm .rc-restart{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;margin-top:12px;border:1px solid var(--line-25);border-radius:28px;font-size:16px;font-weight:550;color:var(--dim-70)}
+
+@media(prefers-reduced-motion:reduce){.rcm .rc-toggle i,.rcm .rc-toggle i::after{transition:none}}

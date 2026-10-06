@@ -19,15 +19,18 @@
 // ?nogl/?worker=0/… switches, window.__medal3dFlow and its timings) are left out; the medal and the input are the same.
 import * as Relief from './medal3d-relief.js';
 import { proceduralBody, strap, coinAt, faceGeometry, BOUNDS } from './medal3d-body.js';
-import { drawShare, SHARE_SIZES } from './medal3d-share.js';
+import { drawCover, drawAnalysis, SHARE_SIZES } from './medal3d-share.js';
 import * as Ruler from './ruler.js';
 import { MARKUP } from './medal3d-flow-markup.js';
 
 // The body of mountMedalFlow is the study script, kept at its own indentation so it diffs line for line against ad6d632.
-// judge({ values, origins, raceGoal }) → { ok: true, analysis, title } | { ok: false, reason: 'sample' | 'invalid', fields }
+// judge({ values, origins, raceGoal }) → { ok: true, analysis, title, … } | { ok: false, reason: 'sample' | 'invalid', fields }
 // (running-card-medal.tsx: snapshotFromFlowInput → analyzeRunner, title = the figure's epithet). Called after 07; the
 // analysis stays in this mount.
-export function mountMedalFlow(container, { judge }) {
+// S4: onReveal(verdict) when the title turns to the figure (the result card opens under the medal), onReveal(null) when
+// the finished medal is left; onOpenResult() from '분석 펼쳐보기'. Returns { destroy, shareImage } (the result card's
+// share buttons call shareImage).
+export function mountMedalFlow(container, { judge, onReveal, onOpenResult }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
 
@@ -259,7 +262,9 @@ function syncInputs() {
 const choiceFields = { 4: '#hard-fields', 5: '#goal-fields', 6: '#day-fields' };
 function changeStage(next, instant = false) {
   const left = complete ? -1 : stage;
-  stopMotion(); stage = next; complete = false; touched = false; hideConfirm(); closeShare(false); settlePlate();
+  // Leaving the finished medal closes the result card: it belongs to the record as it was judged.
+  if (left === -1) onReveal(null);
+  stopMotion(); stage = next; complete = false; touched = false; hideConfirm(); settlePlate();
   $('.chapters').classList.remove('is-done');
   root.dataset.scene = scenes[stage];
   $('.complete').hidden = true;
@@ -325,7 +330,7 @@ function navigate(next, instant = false) {
 // judgement on numbers the runner has not made theirs). A value the adapter refuses: back to its step. Otherwise the
 // analysis is kept and the medal completes. fallbacksUsed stays in the analysis and is never shown.
 const fieldStage = { distance: 0, count: 1, pace: 2, longest: 3, hard: 4, goal: 5, days: 6, raceGoal: 5 };
-let analysis = null, epithet = '';
+let analysis = null, epithet = '', verdictKept = null;
 function toResult(instant) {
   const verdict = judge({ values: { ...values, days: [...values.days] }, origins: { ...origins }, raceGoal });
   if (!verdict.ok) {
@@ -336,12 +341,12 @@ function toResult(instant) {
     if (field === 'raceGoal') openRaceGoal(true); else focusField();
     return;
   }
-  analysis = verdict.analysis; epithet = verdict.title;
+  analysis = verdict.analysis; epithet = verdict.title; verdictKept = verdict;
   finish(instant);
 }
 function finish(instant) {
   const left = complete ? -1 : stage;
-  stopMotion(); complete = true; hideConfirm(); closeShare(false); syncRaceToggle();
+  stopMotion(); complete = true; hideConfirm(); syncRaceToggle();
   $$('[data-go]').forEach(button => button.removeAttribute('aria-current'));
   $('.chapters').classList.add('is-done');
   root.dataset.scene = 'complete'; $('.complete').hidden = false;
@@ -701,6 +706,8 @@ function untitled() {
 function titled(f, struck) {
   const title = $('#complete-title'), line = $('#complete-epithet');
   title.textContent = f.name; line.textContent = f.title; line.classList.remove('is-wait');
+  // The eighth strike is done: the result card opens under the medal (S4, D5).
+  if (complete) onReveal(verdictKept);
   if (!struck) return;
   $('#medal-status').textContent = `명판을 새겼어요. ${f.house} 가문, ${f.name}.`;
   $('#complete-figure').setAttribute('aria-label', describe()); $('#gl').setAttribute('aria-label', describe());
@@ -1364,22 +1371,27 @@ function flatDraw() {
   if (cv.width !== Math.round(width * dpr)) { cv.width = Math.round(width * dpr); cv.height = Math.round(height * dpr); }
   const g = cv.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, width, height);
   const r = complete ? completeRig() : focusRig(stage), ppu = height / ((r.D - .24) * 2 * Math.tan(FOV * Math.PI / 360));
-  const P = (x, y) => [width / 2 + (x - r.x) * ppu, height / 2 - (y - r.y) * ppu], f = FINISHES[finishKey];
+  flatPaint(g, width, height, ppu, r.x, r.y);
+}
+// The flat medal into g (w × h): ppu pixels per unit, world point (cx, cy) in the middle. The share image passes its own
+// framing (fitShare's) and, with the numbers hidden, a blank face for the record coins.
+function flatPaint(g, width, height, ppu, cx, cy, faceOf = slot => slot.sig) {
+  const P = (x, y) => [width / 2 + (x - cx) * ppu, height / 2 - (y - cy) * ppu], f = FINISHES[finishKey];
   g.fillStyle = '#ff4d00';
   for (const s of [-1, 1]) { const a = .40, [x0, y0] = P(0, 3.48); g.beginPath(); g.moveTo(x0 - .95 * ppu, y0); g.lineTo(x0 + .95 * ppu, y0); g.lineTo(x0 + (.95 + s * 14 * Math.sin(a)) * ppu, y0 - 14 * ppu); g.lineTo(x0 + (-.95 + s * 14 * Math.sin(a)) * ppu, y0 - 14 * ppu); g.fill(); }
   g.fillStyle = f.metal; g.beginPath();
   for (let i = 0; i < 7; i++) { const [x, y] = P(...coinAt(i)); g.moveTo(x + 1.16 * ppu, y); g.arc(x, y, 1.16 * ppu, 0, Math.PI * 2); }
   g.fill();
   slots.forEach(slot => {
-    const [x, y] = P(...coinAt(slot.k));
+    const [x, y] = P(...coinAt(slot.k)), sig = faceOf(slot);
     g.fillStyle = f.oxide; g.beginPath(); g.arc(x, y, ppu, 0, Math.PI * 2); g.fill();
-    if (!slot.present || !slot.sig || !faces.has(slot.sig)) {
+    if (!slot.present || !sig || !faces.has(sig)) {
       g.strokeStyle = 'rgba(247,244,237,.45)'; g.setLineDash([5, 4]); g.lineWidth = 1.5; g.beginPath(); g.arc(x, y, .84 * ppu, 0, Math.PI * 2); g.stroke(); g.setLineDash([]);
       g.fillStyle = 'rgba(247,244,237,.6)'; g.font = `700 ${Math.max(10, .3 * ppu)}px StudyCondensed, sans-serif`; g.textAlign = 'center'; g.textBaseline = 'middle'; g.fillText(String(slot.k + 1).padStart(2, '0'), x, y);
       return;
     }
     const lift = slot.z * .06 * ppu;
-    g.save(); g.beginPath(); g.arc(x - lift, y - lift, .93 * ppu, 0, Math.PI * 2); g.clip(); g.drawImage(flatFace(slot.sig), x - lift - .93 * ppu, y - lift - .93 * ppu, 1.86 * ppu, 1.86 * ppu); g.restore();
+    g.save(); g.beginPath(); g.arc(x - lift, y - lift, .93 * ppu, 0, Math.PI * 2); g.clip(); g.drawImage(flatFace(sig), x - lift - .93 * ppu, y - lift - .93 * ppu, 1.86 * ppu, 1.86 * ppu); g.restore();
   });
   const [px, py] = P(0, 0); g.fillStyle = '#17150f'; g.beginPath(); if (g.roundRect) g.roundRect(px - 1.09 * ppu, py - .36 * ppu, 2.18 * ppu, .72 * ppu, .1 * ppu); else g.rect(px - 1.09 * ppu, py - .36 * ppu, 2.18 * ppu, .72 * ppu); g.fill();
   // The struck plate: its own maps, lit flat as the coins are.
@@ -1396,71 +1408,67 @@ function flatPlate(sig) {
   return flats.get(sig);
 }
 
-// ---- completion: finish, share image ---------------------------------------------------------------------------------
+// ---- completion: finish, share images --------------------------------------------------------------------------------
 $$('input[name=finish]').forEach(input => input.addEventListener('change', () => {
   finishKey = input.value; flats.clear();
   if (renderer) applyFinish();
   dirty(); syncNav();
 }));
+// '분석 펼쳐보기': a plate still on its way is struck at once (its map first), then the result card is shown (S4).
+$('#open-result').addEventListener('click', async () => {
+  if (plate.ready) await plate.ready;
+  if (destroyed || !complete) return;
+  settlePlate(); onOpenResult();
+});
 // All seated coins at the seat size, and the plate being struck, before a share render.
 function facesReady() { syncCoins(); return Promise.all([...slots.filter(s => s.wantSig).map(s => want(s.wantSig, null, 1).then(() => showBest(s))), plate.ready]); }
 const SUPER = 2;
-async function shareCanvas(kind) {
+// With the record numbers hidden, the coins that carry them (01 총거리 … 05 강한 훈련) go blank on share image 1.
+// 06 목표 and 07 요일 are choices, not numbers, and stay.
+const HIDDEN = new Set([0, 1, 2, 3, 4]);
+// The medal for share image 1 in the figure box: a front-on WebGL render, or without WebGL the flat drawing in the same
+// framing (it used to be the screen's layout scaled down, so the medal came out small).
+function renderFigure(g, fig, hideNumbers) {
+  const blank = blankSig(RES.seat), faceOf = slot => (hideNumbers && HIDDEN.has(slot.k) ? blank : slot.sig);
+  if (!renderer) {
+    // fitShare's framing without a camera: k pixels per unit, the medal's bottom bottomPad × h above the box's bottom.
+    const { widthShare = .95, heightShare = .80, bottomPad = .065 } = fig.fit, mw = 2 * BOUNDS.x, mh = BOUNDS.top - BOUNDS.bottom;
+    const k = Math.min(widthShare * fig.w / mw, heightShare * fig.h / mh), yc = BOUNDS.bottom - bottomPad * fig.h / k + fig.h / k / 2;
+    g.save(); g.translate(fig.x, fig.y); flatPaint(g, fig.w, fig.h, k, 0, yc, faceOf); g.restore();
+    return { k, medalWidth: k * mw, coinRadius: k };
+  }
+  const swapped = [];
+  for (const slot of slots) if (faceOf(slot) !== slot.sig) { swapped.push([slot, slot.sig]); applyFace(slot, blank); }
+  const keepPr = renderer.getPixelRatio(), keepTilt = [tilt.x, tilt.y];
+  const shadowAt = size => { key.shadow.mapSize.set(size, size); if (key.shadow.map) { key.shadow.map.dispose(); key.shadow.map = null; } renderer.shadowMap.needsUpdate = true; };
+  renderer.setPixelRatio(1); renderer.setSize(fig.w * SUPER, fig.h * SUPER, false); shadowAt(2048);
+  const cam = camera.clone(), f = fitShare(cam, fig.w, fig.h, fig.fit);
+  tilt.x = tilt.y = 0; sharing = true; applySlots(); pivot.rotation.set(0, 0, 0); pivot.position.set(0, 0, 0); medal.position.set(0, 0, 0);
+  renderer.render(scene, cam); sharing = false;
+  g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
+  g.drawImage(renderer.domElement, fig.x, fig.y, fig.w, fig.h);
+  for (const [slot, sig] of swapped) applyFace(slot, sig);
+  shadowAt(1024);
+  renderer.setPixelRatio(keepPr); renderer.setSize(width, height, false); [tilt.x, tilt.y] = keepTilt; shadowDirty = true; render();
+  return f;
+}
+// Share images (D6), drawn on canvas (no DOM capture): 'cover' = the medal with its struck plate + figure, epithet,
+// oracle · 'analysis' = the three scores, the two pieces of evidence, strength, watch-out, next 14 days. card holds the
+// result card's texts (running-card-result.tsx); the layout is medal3d-share.js. Resolves to a PNG blob.
+async function shareImage(kind, page, { card, hideNumbers = false }) {
+  if (!complete) throw new Error('share before the medal is finished');
   const [W, H] = SHARE_SIZES[kind], c = document.createElement('canvas');
   c.width = W; c.height = H;
   const g = c.getContext('2d');
-  await facesReady();
-  settleNow();
-  const P = places();
-  const info = { rec: liveRec(), coins: P.map(p => p.face), samples: scenes.slice(0, 4).filter(k => origins[k] === 'sample'), entered: scenes, finish: FINISHES[finishKey].name, backdrop: 'stage' };
-  await drawShare(g, kind, info, fig => {
-    if (!renderer) { flatDraw(); const flat = $('#flat'), s = Math.min(fig.w / flat.width, fig.h / flat.height); g.drawImage(flat, fig.x + (fig.w - flat.width * s) / 2, fig.y + fig.h - flat.height * s, flat.width * s, flat.height * s); return null; }
-    const keepPr = renderer.getPixelRatio(), keepTilt = [tilt.x, tilt.y];
-    const shadowAt = size => { key.shadow.mapSize.set(size, size); if (key.shadow.map) { key.shadow.map.dispose(); key.shadow.map = null; } renderer.shadowMap.needsUpdate = true; };
-    renderer.setPixelRatio(1); renderer.setSize(fig.w * SUPER, fig.h * SUPER, false); shadowAt(2048);
-    const cam = camera.clone(), f = fitShare(cam, fig.w, fig.h, fig.fit);
-    tilt.x = tilt.y = 0; sharing = true; applySlots(); pivot.rotation.set(0, 0, 0); pivot.position.set(0, 0, 0); medal.position.set(0, 0, 0);
-    renderer.render(scene, cam); sharing = false;
-    g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
-    g.drawImage(renderer.domElement, fig.x, fig.y, fig.w, fig.h);
-    shadowAt(1024);
-    renderer.setPixelRatio(keepPr); renderer.setSize(width, height, false); [tilt.x, tilt.y] = keepTilt; shadowDirty = true; render();
-    return f;
-  });
-  return c;
+  if (page === 'cover') {
+    await facesReady();
+    if (hideNumbers) await want(blankSig(RES.seat), coinMsg('distance', liveRec(), 'blank', RES.seat), 0);
+    if (destroyed) throw new Error('destroyed');
+    settleNow();
+    await drawCover(g, kind, card, fig => renderFigure(g, fig, hideNumbers));
+  } else await drawAnalysis(g, kind, card, hideNumbers);
+  return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
 }
-let shareUrl = '';
-function closeShare(restoreFocus = true) {
-  if ($('#share-sheet').hidden) return;
-  $('#share-sheet').hidden = true; $('#save-image').setAttribute('aria-expanded', 'false'); $('.complete').classList.remove('sharing');
-  if (restoreFocus) $('#save-image').focus();
-}
-$('#save-image').addEventListener('click', () => {
-  $('#share-sheet').hidden = false; $('#save-image').setAttribute('aria-expanded', 'true'); $('.complete').classList.add('sharing');
-  $('#share-status').textContent = ''; $('#share-open').hidden = !shareUrl;
-  $('#share-sample').hidden = !sampleItems().length;
-  $('#share-title').focus({ preventScroll: true });
-});
-$('#share-close').addEventListener('click', () => closeShare());
-$('#share-sheet').addEventListener('keydown', e => { if (e.key === 'Escape') closeShare(); });
-$$('[data-share]').forEach(button => button.addEventListener('click', async () => {
-  const kind = button.dataset.share, [W, H] = SHARE_SIZES[kind], name = kind === 'story' ? '스토리' : '피드', status = $('#share-status');
-  // Browsers without a[download] get a window opened inside the tap, which keeps it from being blocked as a popup.
-  const fallback = 'download' in HTMLAnchorElement.prototype ? null : window.open('', '_blank');
-  status.textContent = `${name} 이미지를 만드는 중이에요.`;
-  const blob = await new Promise(resolve => shareCanvas(kind).then(c => c.toBlob(resolve, 'image/png')));
-  if (destroyed) return;
-  if (shareUrl) URL.revokeObjectURL(shareUrl);
-  shareUrl = URL.createObjectURL(blob);
-  if (fallback) { fallback.location.href = shareUrl; status.textContent = `새 탭에 ${name} 이미지를 열었어요. 길게 눌러 저장하세요.`; }
-  else {
-    const link = document.createElement('a'); link.href = shareUrl; link.download = `running-medal3d-28d-${finishKey}-${kind}-${W}x${H}.png`;
-    document.body.append(link); link.click(); link.remove();
-    status.textContent = `${name} 이미지(${W}×${H}, ${finishKey === 'brass' ? '황동' : '은'}) 저장을 시작했어요. 저장되지 않으면 아래에서 새 탭으로 여세요.`;
-  }
-  $('#share-open').hidden = false;
-}));
-$('#share-open').addEventListener('click', () => { if (shareUrl) window.open(shareUrl, '_blank'); });
 
 // ---- page ------------------------------------------------------------------------------------------------------------
 function resize() {
@@ -1562,7 +1570,6 @@ function destroy() {
   document.removeEventListener('pointerdown', onPointerDown, true);
   document.removeEventListener('visibilitychange', onVisibility);
   mediaReduce.removeEventListener('change', applyReduce);
-  if (shareUrl) URL.revokeObjectURL(shareUrl);
   if (renderer) {
     for (const f of faces.values()) if (f.tex) Object.values(f.tex).forEach(freeTexture);
     if (blank1) Object.values(blank1).forEach(freeTexture);
@@ -1581,5 +1588,5 @@ function destroy() {
   THREE = scene = camera = body = medal = pivot = key = rim = kit = blank1 = envTarget = denseGeo = midGeo = flatGeo = null;
   container.replaceChildren();
 }
-return destroy;
+return { destroy, shareImage };
 }
