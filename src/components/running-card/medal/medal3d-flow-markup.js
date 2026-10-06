@@ -1,5 +1,7 @@
 // The page of medal3d-flow.html (3D-3 `ad6d632`), everything inside <body> except the review tools. mountMedalFlow()
 // writes it into its container on every mount, so each mount starts from the same markup.
+// S4: the share sheet (스토리·피드 저장) left the finished medal for the result card under it (running-card-result.tsx);
+// its place in the actions is '분석 펼쳐보기'.
 export const MARKUP = `
 <main class="journey" data-scene="distance">
   <canvas id="gl" tabindex="-1" role="img" aria-label="지난 28일의 메달" aria-describedby="medal-status"></canvas>
@@ -86,15 +88,7 @@ export const MARKUP = `
     <p class="tilt-hint" aria-hidden="true">메달을 끌어 빛에 비춰 보세요</p>
     <dl id="summary"></dl>
     <p id="summary-extra"></p>
-    <div class="complete-actions"><button type="button" id="edit-records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>다시 다듬기</button><button type="button" id="save-image" aria-expanded="false" aria-controls="share-sheet">이미지로 저장<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg></button></div>
-    <div class="share-sheet" id="share-sheet" role="group" aria-labelledby="share-title" hidden>
-      <p id="share-title" tabindex="-1">어떤 크기로 저장할까요? 고른 마감으로 저장돼요.</p>
-      <p id="share-sample" hidden>예시값으로 남은 숫자에는 이미지에도 ‘예시’가 표시되고, 그 동전은 민짜로 남아요.</p>
-      <button type="button" data-share="story">스토리 <small>1080×1920</small></button>
-      <button type="button" data-share="feed">피드 <small>1080×1350</small></button>
-      <p id="share-status" role="status"></p>
-      <div class="share-tail"><button type="button" id="share-open" hidden>새 탭에서 이미지 열기</button><button type="button" id="share-close">닫기</button></div>
-    </div>
+    <div class="complete-actions"><button type="button" id="edit-records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>다시 다듬기</button><button type="button" id="open-result">분석 펼쳐보기<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14m-6-6 6 6 6-6"/></svg></button></div>
   </section>
 </main>
 `;
