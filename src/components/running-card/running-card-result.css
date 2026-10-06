@@ -80,4 +80,17 @@
 .rcm .rc-shoes svg{flex:none}
 .rcm .rc-restart{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;height:52px;margin-top:12px;border:1px solid var(--line-25);border-radius:28px;font-size:16px;font-weight:550;color:var(--dim-70)}
 
+/* Shared link: a page of its own, no medal (the link carries no records), no ad slot (spec 186행). */
+.rcm .rc-shared{min-height:100svh;border-top:0;padding-top:0}
+.rcm .rc-shared .rc-mast{display:flex;align-items:center;justify-content:space-between;height:66px;font-size:15px}
+.rcm .rc-shared .rc-mast a{font-weight:650;letter-spacing:-.025em}
+.rcm .rc-shared .rc-mast a span{color:var(--dim-50);margin:0 3px}
+.rcm .rc-shared .rc-mast>span{font-size:14px;color:var(--dim-60)}
+.rcm .rc-shared .rc-from{margin-top:28px;font-size:14px;color:var(--dim-60)}
+.rcm .rc-shared .rc-house{display:block;margin-top:18px}
+/* 내 메달 만들기: 짧은 화면(375×667)에서도 보이게 화면 아래에 고정한다. sticky 는 html·body 의 overflow-x:hidden
+   (globals.css) 때문에 붙지 않는다. 고정한 만큼 화면 아래를 비운다. */
+.rcm .rc-shared{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
+.rcm .rc-shared .rc-start{position:fixed;z-index:5;left:0;right:0;bottom:0;max-width:480px;margin:0 auto;padding:14px 24px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(to bottom,rgba(23,21,15,0),var(--ink) 18px)}
+
 @media(prefers-reduced-motion:reduce){.rcm .rc-toggle i,.rcm .rc-toggle i::after{transition:none}}

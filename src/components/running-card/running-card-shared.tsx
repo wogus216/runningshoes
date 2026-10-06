@@ -1,0 +1,77 @@
+'use client';
+
+import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
+import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
+import { readSharedRunnerCard, type SharedCardReadResult } from '@/lib/runner-analysis/share';
+import { RunnerScores } from './running-card-scores';
+
+// 공유 링크로 들어온 화면(D11). 링크에 담긴 것(인물·세 점수)과 인물에 딸린 문구(가문·칭호·신탁)만 보인다.
+// 근거·강점·맹점·다음 행동은 보내는 사람의 기록에서 나온 것이라 링크로 되살릴 수 없고, 메달도 기록 동전이라 그리지 않는다.
+// 광고 슬롯은 두지 않는다(스펙 186행 '공유 링크로 들어온 사람은 광고 없이'). 아래 '내 메달 만들기'가 새 흐름을 연다.
+export default function RunningCardShared({ raw, onStart }: { raw: string; onStart: () => void }) {
+  const [read, setRead] = useState<Exclude<SharedCardReadResult, { status: 'invalid' }> | null>(null);
+
+  useEffect(() => {
+    const result = readSharedRunnerCard(raw, RUNNER_CHARACTERS.map((c) => c.id));
+    // 형식이 틀린 링크는 그냥 첫 화면이다.
+    if (result.status === 'invalid') onStart();
+    else setRead(result);
+  }, [raw, onStart]);
+
+  if (!read) return <div className="rcm" />;
+
+  const start = (
+    <button type="button" className="rc-primary" onClick={onStart}>내 메달 만들기</button>
+  );
+
+  if (read.status === 'expired') {
+    return (
+      <div className="rcm">
+        <section className="rc-result rc-shared" aria-labelledby="rc-shared-title">
+          <Masthead />
+          <h2 className="rc-name" id="rc-shared-title">열람 기한이 지난 링크예요</h2>
+          <p className="rc-epithet">공유 링크는 만든 날부터 7일 동안 열려요. 지난 28일 기록으로 내 메달을 만들어 보세요.</p>
+          <div className="rc-actions rc-start">{start}</div>
+        </section>
+      </div>
+    );
+  }
+
+  const { characterId, scores } = read.card;
+  const character = RUNNER_CHARACTERS.find((c) => c.id === characterId)!;
+  const presentation = getCharacterPresentation(characterId);
+  // 대표 수치: 결과 카드와 같은 규칙(인물 목표와 가장 가까운 공개 축). 링크의 점수는 정수라 드물게 원래 결과와 갈릴 수 있다.
+  const gap = (axis: (typeof PUBLIC_AXES)[number][0]) => Math.abs(scores[axis] - character.traits[axis]);
+  const leadAxis = PUBLIC_AXES.map(([axis]) => axis).reduce((best, axis) => (gap(axis) < gap(best) ? axis : best));
+
+  return (
+    <div className="rcm">
+      <section className="rc-result rc-shared" aria-labelledby="rc-shared-title">
+        <Masthead />
+        <p className="rc-from">공유받은 러닝 카드 · 지난 28일</p>
+        <p className="rc-house">{character.house} 가문</p>
+        <h2 className="rc-name" id="rc-shared-title">{character.name}</h2>
+        <p className="rc-epithet">{presentation.title}</p>
+        <blockquote className="rc-oracle"><p>“{presentation.oracle}”</p></blockquote>
+        <section className="rc-section" aria-labelledby="rc-shared-scores">
+          <h3 id="rc-shared-scores">세 점수</h3>
+          <RunnerScores scores={PUBLIC_AXES.map(([axis, label]) => ({ label, value: scores[axis], lead: axis === leadAxis }))} />
+        </section>
+        <p className="rc-def">{RECOVERY_MARGIN_NOTE}</p>
+        <div className="rc-actions rc-start">{start}</div>
+      </section>
+    </div>
+  );
+}
+
+function Masthead() {
+  return (
+    <header className="rc-mast">
+      {/* 미리 받지 않는다 — 홈 CSS 를 preload 했다가 안 쓰면 콘솔 경고가 남는다(메달 머리글도 미리 받지 않는 a). */}
+      <Link href="/" prefetch={false}>러닝 카드<span> / </span>산초</Link>
+      <span>지난 28일</span>
+    </header>
+  );
+}

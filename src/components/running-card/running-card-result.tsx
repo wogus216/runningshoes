@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
+import { createSharedRunnerCard, sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
 import { RunnerScores } from './running-card-scores';
 
@@ -105,7 +106,7 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
 
       <AdSlot slot={ADSENSE_SLOTS.runningCardResult} format="auto" label="러닝 카드 결과 아래 광고" />
 
-      <ShareBlock id={character.id} card={card} shareImage={shareImage} />
+      <ShareBlock id={character.id} card={card} scores={analysis.publicScores} shareImage={shareImage} />
 
       <Link href="/recommend" prefetch={false} className="rc-shoes">
         <span>
@@ -121,7 +122,7 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
 
 type Saved = { page: SharePage; url: string; name: string };
 
-function ShareBlock({ id, card, shareImage }: { id: string; card: ShareCard; shareImage: ShareImage }) {
+function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareCard; scores: JudgedRunner['analysis']['publicScores']; shareImage: ShareImage }) {
   const [kind, setKind] = useState<ShareKind>('story');
   const [hideNumbers, setHideNumbers] = useState(false);
   const [busy, setBusy] = useState(false);
@@ -168,6 +169,23 @@ function ShareBlock({ id, card, shareImage }: { id: string; card: ShareCard; sha
     }
   }
 
+  async function shareLink() {
+    const url = sharedRunnerCardUrl(window.location.origin, createSharedRunnerCard(id, scores));
+    const text = `지난 28일, 내 러닝 카드는 ${card.name} — ${card.title}`;
+    try {
+      if (navigator.share) {
+        await navigator.share({ title: '러닝 카드', text, url });
+        setStatus('공유 화면을 열었어요.');
+        return;
+      }
+      await navigator.clipboard.writeText(`${text}\n${url}`);
+      setStatus('링크를 복사했어요.');
+    } catch (error) {
+      if (error instanceof DOMException && error.name === 'AbortError') return;
+      setStatus('링크를 공유하지 못했어요. 한 번 더 눌러 주세요.');
+    }
+  }
+
   return (
     <section className="rc-share" aria-labelledby="rc-share-title">
       <h3 id="rc-share-title">공유</h3>
@@ -190,10 +208,12 @@ function ShareBlock({ id, card, shareImage }: { id: string; card: ShareCard; sha
         </button>
         <div className="rc-row">
           <button type="button" disabled={busy} onClick={() => save(['cover'])}>표지만 저장</button>
+          <button type="button" onClick={shareLink}>링크 공유</button>
         </div>
       </div>
       <p className="rc-share-note">
         숫자를 숨기면 메달의 기록 동전(총거리·횟수·페이스·최장거리·강한 훈련)이 민짜로, 근거가 숫자 없는 말로 바뀌어요.
+        링크에는 인물과 세 점수, 열람 기한(7일)만 담기고 입력한 기록은 담기지 않아요.
       </p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && (
