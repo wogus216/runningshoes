@@ -453,10 +453,11 @@ export function socket(S = 256, label = '') {
   return { S, H, ...maps(H, S, S, { depth: .05 / (2 / S), lo: .42, hi: .5, oxide: [.05, .06], top: .55, rough: [.55, .35], ao: 1, shadow: 0, wear: 0 }) };
 }
 // ---- the eighth strike: the figure's house sign ----------------------------------------------------------------------
-// S3 (step 1 of D8): one sign per house of the twelve, drawn as Canvas paths in a box of ±1 (y down) and struck like the
+// S3 (step 1 of D8): one sign per house of the twelve, drawn as Canvas paths in a box from -1 to 1 (y down) and struck like the
 // coins' motifs — white is raised metal, black (carve) cuts back to the enamel. Plain silhouettes with strokes of .13 box
-// units or more: on the finished medal the sign is about 25–30px tall. The house of 니케 gets the herald's staff without
-// wings (D9: no wings next to that name).
+// units or more: on the finished medal the sign is about 25 to 30px tall. Hera's crown, Hermes' winged hat and the plainer
+// wheat ear replaced a peacock eye, a wingless snake staff (it read as a medical sign) and a seven-grain ear that did not
+// read at that size (operator, 2026-10-06; D9 is about a lone NIKE, the name here is in Hangul).
 const carve = (g, draw) => { g.save(); g.fillStyle = g.strokeStyle = '#000'; draw(); g.restore(); };
 const shape = (g, pts) => { g.beginPath(); pts.forEach(([x, y], i) => i ? g.lineTo(x, y) : g.moveTo(x, y)); g.closePath(); };
 // A ring of round shapes each cut out of the ones drawn before it, so they read as separate grains, grapes.
@@ -464,12 +465,12 @@ const cut = (g, path, w = .07) => { path(); carve(g, () => { g.lineWidth = w; g.
 export const SIGNS = {
   // A thunderbolt.
   '제우스': g => { shape(g, [[-.04, -1], [.52, -1], [.14, -.2], [.5, -.2], [-.4, 1], [-.06, .1], [-.44, .1]]); g.fill(); },
-  // The eye of a peacock's feather on its quill.
+  // A crown (diadem): three points with balls on a band, the band cut off by a groove.
   '헤라': g => {
-    g.beginPath(); g.moveTo(0, -1); g.bezierCurveTo(.8, -.72, .8, .3, 0, .52); g.bezierCurveTo(-.8, .3, -.8, -.72, 0, -1); g.fill();
-    g.lineWidth = .17; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, .42); g.lineTo(0, 1); g.stroke();
-    carve(g, () => { g.beginPath(); g.ellipse(0, -.17, .36, .42, 0, 0, TAU); g.fill(); });
-    g.beginPath(); g.ellipse(0, -.15, .21, .25, 0, 0, TAU); g.fill();
+    shape(g, [[-.86, .5], [-.74, -.27], [-.38, .19], [0, -.55], [.38, .19], [.74, -.27], [.86, .5]]); g.fill();
+    shape(g, [[-.86, .48], [.86, .48], [.86, .8], [-.86, .8]]); g.fill();
+    for (const [x, y, r] of [[-.74, -.38, .13], [0, -.68, .15], [.74, -.38, .13]]) { g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill(); }
+    carve(g, () => { g.lineWidth = .08; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.9, .47); g.lineTo(.9, .47); g.stroke(); });
   },
   // A trident.
   '포세이돈': g => {
@@ -478,11 +479,10 @@ export const SIGNS = {
     g.beginPath(); g.moveTo(-.6, -.66); g.lineTo(-.6, -.44); g.quadraticCurveTo(-.6, -.12, 0, -.12); g.quadraticCurveTo(.6, -.12, .6, -.44); g.lineTo(.6, -.66); g.stroke();
     for (const x of [-.6, 0, .6]) { shape(g, [[x, -1], [x + .2, -.6], [x - .2, -.6]]); g.fill(); }
   },
-  // An ear of wheat: a top grain and three pairs down a stem.
+  // An ear of wheat: a top grain and two pairs, large, on a thick stem.
   '데메테르': g => {
-    g.lineWidth = .12; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.4); g.stroke();
-    const grains = [[0, -.72, 0], ...[-.38, -.04, .3].flatMap(y => [[-.22, y, -.6], [.22, y, .6]])];
-    for (const [x, y, a] of grains) cut(g, () => { g.beginPath(); g.ellipse(x, y, .17, .29, a, 0, TAU); });
+    g.lineWidth = .17; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, .2); g.stroke();
+    for (const [x, y, a] of [[0, -.6, 0], [-.25, -.16, -.55], [.25, -.16, .55], [-.25, .26, -.55], [.25, .26, .55]]) cut(g, () => { g.beginPath(); g.ellipse(x, y, .21, .34, a, 0, TAU); }, .09);
   },
   // An owl, face on: ear tufts, two eyes cut into the face, the beak.
   '아테나': g => {
@@ -523,16 +523,16 @@ export const SIGNS = {
     g.beginPath(); g.moveTo(-.3, -.66); g.lineTo(.96, -.66); g.lineTo(.96, -.4); g.lineTo(.46, -.32); g.lineTo(.3, .16); g.lineTo(.72, .46); g.lineTo(.72, .66);
     g.lineTo(-.72, .66); g.lineTo(-.72, .46); g.lineTo(-.3, .16); g.lineTo(-.42, -.3); g.quadraticCurveTo(-.74, -.34, -1, -.56); g.quadraticCurveTo(-.7, -.7, -.3, -.66); g.closePath(); g.fill();
   },
-  // The herald's staff with two snakes wound round it, their heads facing at the top (wingless, see above).
+  // The winged hat (petasos): a low crown on a wide brim, a hat band cut in, three feathers fanning up from each side.
   '헤르메스': g => {
-    g.lineWidth = .14; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.74); g.stroke();
-    g.beginPath(); g.arc(0, -.84, .15, 0, TAU); g.fill();
-    g.lineWidth = .15; g.lineCap = 'round';
-    for (const s of [-1, 1]) {
-      const pt = t => [s * .46 * Math.sin(TAU * 1.25 * t), .8 - 1.36 * t];
-      g.beginPath(); for (let i = 0; i <= 64; i++) { const [x, y] = pt(.9 * i / 64); if (i) g.lineTo(x, y); else g.moveTo(x, y); } g.stroke();
-      const [hx, hy] = pt(.9); g.beginPath(); g.ellipse(hx - s * .04, hy - .02, .13, .1, 0, 0, TAU); g.fill();
+    const by = .42;
+    for (const s of [-1, 1]) for (const [a, len] of [[-1.25, .66], [-.92, .74], [-.6, .7]]) {
+      const ux = s * Math.cos(a), uy = Math.sin(a), rx = .28 * s, ry = by - .34;
+      cut(g, () => { g.beginPath(); g.ellipse(rx + ux * len / 2, ry + uy * len / 2, len / 2, .13, Math.atan2(uy, ux), 0, TAU); }, .06);
     }
+    g.beginPath(); g.ellipse(0, by - .02, .44, .48, 0, Math.PI, TAU); g.closePath(); g.fill();
+    g.beginPath(); g.ellipse(0, by, .8, .17, 0, 0, TAU); g.fill();
+    carve(g, () => { g.lineWidth = .08; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.42, by - .13); g.lineTo(.42, by - .13); g.stroke(); });
   },
   // A bunch of grapes under its leaf.
   '디오니소스': g => {
@@ -541,20 +541,23 @@ export const SIGNS = {
     for (const [y, xs] of [[-.3, [-.42, -.14, .14, .42]], [.02, [-.28, 0, .28]], [.34, [-.14, .14]], [.66, [0]]]) for (const x of xs) cut(g, () => { g.beginPath(); g.arc(x, y, .18, 0, TAU); });
   },
 };
-// Plate layout (plate units, centre origin, y down): the sign on the left, a short rule, then the name and its house
-// centred in the rest. 지난 28일 leaves the plate: the share image's masthead and the ribbon carry it.
-const SIGN_X = -.64, SIGN_R = .265, RULE_X = -.27, TEXT_X = .37, TEXT_W = 1.1, NAME_Y = .02, HOUSE_Y = .215;
+// Plate layout (plate units, centre origin, y down): the sign on the left, a short rule, then the name alone, as large as
+// the rest allows (the house's name goes to the result card, S4). 지난 28일 leaves the plate: the share image's masthead
+// and the ribbon carry it.
+const SIGN_X = -.66, SIGN_R = .265, RULE_X = -.31, TEXT_X = .39, TEXT_W = 1.2, NAME_SIZE = .34;
 function figurePlate(figure, W, Hh, scale) {
   const sign = SIGNS[figure.house];
   const a = bevel(mask(W, g => { g.translate(SIGN_X, 0); g.scale(SIGN_R, SIGN_R); if (sign) sign(g); }, W, Hh, scale), W, Hh, 2);
   const b = bevel(mask(W, g => {
     g.setTransform(1, 0, 0, 1, 0, 0);
-    const fit = (text, size, weight) => { g.font = `${weight} ${size * scale}px StudySans, sans-serif`; const w = g.measureText(text).width; if (w > TEXT_W * scale) g.font = `${weight} ${size * scale * TEXT_W * scale / w}px StudySans, sans-serif`; };
     g.textAlign = 'center'; g.textBaseline = 'alphabetic';
-    const x = W / 2 + TEXT_X * scale, y = v => Hh / 2 + v * scale;
-    fit(figure.name, .25, 760); g.fillText(figure.name, x, y(NAME_Y));
-    fit(`${figure.house} 가문`, .135, 550); g.fillText(`${figure.house} 가문`, x, y(HOUSE_Y));
-    g.fillRect(W / 2 + RULE_X * scale - .007 * scale, y(-.21), .014 * scale, .42 * scale);
+    const font = size => `760 ${size}px StudySans, sans-serif`;
+    g.font = font(NAME_SIZE * scale);
+    let ink = g.measureText(figure.name);
+    if (ink.width > TEXT_W * scale) { g.font = font(NAME_SIZE * scale * TEXT_W * scale / ink.width); ink = g.measureText(figure.name); }
+    // Centred on the plate's middle line by the letters' own ink, not the font's em box.
+    g.fillText(figure.name, W / 2 + TEXT_X * scale, Hh / 2 + (ink.actualBoundingBoxAscent - ink.actualBoundingBoxDescent) / 2);
+    g.fillRect(W / 2 + RULE_X * scale - .007 * scale, Hh / 2 - .21 * scale, .014 * scale, .42 * scale);
   }, W, Hh, scale), W, Hh, 1);
   for (let i = 0; i < a.length; i++) a[i] = Math.max(a[i], b[i]);
   return a;
