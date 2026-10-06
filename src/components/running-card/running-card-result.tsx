@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { AdSlot } from '@/components/ads/ad-slot';
+import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import type { JudgedRunner } from './running-card-medal';
 import { RunnerScores } from './running-card-scores';
@@ -52,7 +54,7 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
 }
 
 // 결과 카드(S4, 설계 §3-2). 표지(가문·인물·칭호·대표 수치·신탁) → 분석 내지(세 점수·근거 2·강점·맹점·다음 14일)
-// → 회복 여유 정의 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
+// → 회복 여유 정의 → 광고 1 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
 export function RunningCardResult({ judged, shareImage, onRestart }: { judged: JudgedRunner; shareImage: ShareImage; onRestart: () => void }) {
   const { analysis, snapshot } = judged;
   const character = analysis.match.character;
@@ -100,6 +102,8 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
       </dl>
 
       <p className="rc-def">{RECOVERY_MARGIN_NOTE}</p>
+
+      <AdSlot slot={ADSENSE_SLOTS.runningCardResult} format="auto" label="러닝 카드 결과 아래 광고" />
 
       <ShareBlock id={character.id} card={card} shareImage={shareImage} />
 
