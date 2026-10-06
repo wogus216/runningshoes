@@ -312,6 +312,8 @@ module.exports = {
     "/search-index.json",
     "/shoes-card.json",
     "/llms.txt",
+    // 출시 전 러닝 카드 — 페이지도 noindex 다(src/app/running-card/page.tsx). 공개 전환 때 함께 푼다.
+    "/running-card",
   ],
   additionalPaths: async (config) =>
     Promise.all(STATIC_HTML_PAGES.map((urlPath) => config.transform(config, urlPath))),
