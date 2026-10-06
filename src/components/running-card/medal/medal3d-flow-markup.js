@@ -15,7 +15,7 @@ export const MARKUP = `
     <button data-go="5" data-state="empty" aria-label="06 목표" disabled><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>06</i></span><b>목표</b></button>
     <button data-go="6" data-state="empty" aria-label="07 요일, 선택" disabled><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>07</i></span><b>요일</b></button>
   </nav>
-  <div class="scene-intro"><p class="eyebrow" id="chapter-name">DISTANCE / 01</p><h1 id="scene-heading" tabindex="-1">지난 28일 동안,<br>얼마나 달렸나요?</h1><button type="button" class="mode-toggle" id="pace-mode" aria-pressed="false" hidden>총 시간으로 입력</button><button type="button" class="mode-toggle" id="race-goal-open" aria-expanded="false" aria-controls="race-goal" hidden>목표 기록 넣기</button></div>
+  <div class="scene-intro"><p class="eyebrow" id="chapter-name">DISTANCE / 01</p><h1 id="scene-heading" tabindex="-1">지난 28일 동안,<br>얼마나 달렸나요?</h1><button type="button" class="mode-toggle" id="pace-mode" aria-pressed="false" hidden>총 시간으로 입력</button></div>
   <div class="medal-stage" id="medal-stage" aria-hidden="true"></div>
   <p class="stage-note" id="stage-note" role="status">메달 틀을 준비하고 있어요</p>
   <p class="sr-only" id="medal-status" role="status"></p>
@@ -44,6 +44,8 @@ export const MARKUP = `
         <label><input type="radio" name="goal" value="race"><span>대회</span></label>
         <label><input type="radio" name="goal" value="health_fun"><span>건강과 재미</span></label>
       </div></fieldset>
+      <button type="button" class="race-goal-open" id="race-goal-open" aria-expanded="false" aria-controls="race-goal" aria-describedby="race-goal-why" hidden><b><span aria-hidden="true">＋ </span>목표 기록 넣기</b><small>선택</small></button>
+      <p class="sr-only" id="race-goal-why">목표 거리와 기록을 넣으면 평균 페이스를 목표와 견줘 판정해요.</p>
       <fieldset class="choices day-fields" id="day-fields" aria-describedby="field-hint" hidden><legend>평소 러닝 요일 <span>선택</span></legend><div class="day-row">
         <button type="button" data-day="0" aria-pressed="false" aria-label="월요일">월</button><button type="button" data-day="1" aria-pressed="false" aria-label="화요일">화</button><button type="button" data-day="2" aria-pressed="false" aria-label="수요일">수</button><button type="button" data-day="3" aria-pressed="false" aria-label="목요일">목</button><button type="button" data-day="4" aria-pressed="false" aria-label="금요일">금</button><button type="button" data-day="5" aria-pressed="false" aria-label="토요일">토</button><button type="button" data-day="6" aria-pressed="false" aria-label="일요일">일</button>
       </div></fieldset>

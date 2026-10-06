@@ -219,7 +219,6 @@ function updateHint() {
   if (stage >= 4) {
     $('#field-hint').textContent = stage === 4 && safe('count') < 6 ? `러닝 ${format(value('count'))}회보다 많은 선택지는 고를 수 없어요.`
       : over ? `28일 동안 ${format(value('count'))}회면 주 ${tenth(value('count') / 4)}회꼴이에요. 가끔 달린 요일은 빼고 주로 달리는 요일만 골라 주세요.`
-      : stage === 5 && wantsRace() && !raceGoal ? '목표 거리와 기록을 넣으면 평균 페이스를 목표와 견줘 판정해요. 선택 항목이에요.'
       : copy[stage][5];
     $('#next-label').textContent = stage === last && !values.days.length ? '요일은 건너뛸게요' : copy[stage][4];
     return;
@@ -449,10 +448,14 @@ let raceGoal = null;
 const wantsRace = () => values.goal === 'race' || values.goal === 'record';
 const spanText = min => { const h = Math.floor(min / 60), m = Math.round(min % 60); return `${h ? `${h}시간` : ''}${h && m ? ' ' : ''}${m || !h ? `${m}분` : ''}`; };
 const raceText = g => `${raceNames[g.distanceKm]} ${spanText(g.targetTimeMinutes)}`;
+// The way in is one line right under the goal chips, where the eye is after choosing (it was over the question, top right,
+// and was not found on a phone). It takes the hint's place; the sheet never opens by itself.
 function syncRaceToggle() {
   const button = $('#race-goal-open'), show = !complete && stage === 5 && wantsRace();
-  button.hidden = !show;
-  button.textContent = raceGoal ? raceText(raceGoal) : '목표 기록 넣기';
+  button.hidden = !show; $('#interaction').classList.toggle('race-goal-entry', show);
+  const label = button.querySelector('b');
+  if (raceGoal) label.textContent = raceText(raceGoal); else label.innerHTML = '<span aria-hidden="true">＋ </span>목표 기록 넣기';
+  button.querySelector('small').textContent = raceGoal ? '· 고치기' : '선택';
   button.setAttribute('aria-label', raceGoal ? `목표 기록 ${raceText(raceGoal)}, 고치기` : '목표 거리와 기록 넣기, 선택 항목');
   if (!show) closeRaceGoal(false);
 }
