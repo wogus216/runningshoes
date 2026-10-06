@@ -30,7 +30,8 @@ import { MARKUP } from './medal3d-flow-markup.js';
 // S4: onReveal(verdict) when the title turns to the figure (the result card opens under the medal), onReveal(null) when
 // the finished medal is left; onOpenResult() from '분석 펼쳐보기'. Returns { destroy, shareImage } (the result card's
 // share buttons call shareImage).
-export function mountMedalFlow(container, { judge, onReveal, onOpenResult }) {
+// S5: onStep(n) when step n (1 … 7) is accepted and its coin struck — the measurement events live in React.
+export function mountMedalFlow(container, { judge, onReveal, onOpenResult, onStep }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
 
@@ -320,6 +321,7 @@ function navigate(next, instant = false) {
     if (note && noteShown !== note) { setNote(note); return; }
     // The coin of this step is struck now, before any confirmation, so the medal answers the press itself.
     strike(stage, instant);
+    onStep(stage + 1);
     // Sample values stay marked as samples so the final step can still ask about them.
     if (origins[scenes[stage]] !== 'sample') origins[scenes[stage]] = 'confirmed';
     furthest = Math.max(furthest, Math.min(next, last));

@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { AdSlot } from '@/components/ads/ad-slot';
+import { trackRunner } from '@/lib/runner-analysis/track';
 import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { createSharedRunnerCard, sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
@@ -149,6 +150,8 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       urls.current.forEach((url) => URL.revokeObjectURL(url));
       urls.current = made.map((m) => m.url);
       setSaved(made);
+      // 이미지를 만들어 저장(또는 새 탭)까지 넘긴 순간. 기록 숫자는 매개변수에 없다 — 숨김 여부만.
+      trackRunner(pages.length === 2 ? 'runner_carousel_saved' : 'runner_cover_saved', { character_id: id, image_size: kind, hide_numbers: hideNumbers ? 'true' : 'false' });
       if (fallback) {
         fallback.location.href = made[0].url;
         setStatus(`새 탭에 ${name} 표지를 열었어요. 길게 눌러 저장하세요. 나머지는 아래에서 열 수 있어요.`);
@@ -174,10 +177,12 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
     const text = `지난 28일, 내 러닝 카드는 ${card.name} — ${card.title}`;
     try {
       if (navigator.share) {
+        trackRunner('runner_share_started', { character_id: id, share_method: 'share' });
         await navigator.share({ title: '러닝 카드', text, url });
         setStatus('공유 화면을 열었어요.');
         return;
       }
+      trackRunner('runner_share_started', { character_id: id, share_method: 'clipboard' });
       await navigator.clipboard.writeText(`${text}\n${url}`);
       setStatus('링크를 복사했어요.');
     } catch (error) {
