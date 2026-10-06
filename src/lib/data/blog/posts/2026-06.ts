@@ -3795,7 +3795,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/nike-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-06',
     category: 'guide' as const,
     readingTime: 12,
     tags: ['나이키 러닝화', '나이키 계급도', '러닝화 라인업', '러닝화 등급', '페가수스', '보메로', '베이퍼플라이', '알파플라이', 'ZoomX', '나이키 토박스'],
@@ -3885,11 +3885,28 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/nike-vomero-premium"><strong>보메로 프리미엄</strong></a></td><td>회복용 맥스</td><td>ZoomX + 에어팟 4개</td><td>29.9만</td><td>326g</td><td>역대 최고 50mm 스택</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>울트라플라이</strong></a></td><td>트레일 레이싱</td><td>ZoomX + 카본</td><td>29.9만</td><td>299g</td><td>트레일 최초 ZoomX+카본</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 78% 에너지 리턴</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3"><strong>알파플라이 3</strong></a></td><td>최상위 레이싱</td><td>ZoomX+에어팟+카본</td><td>33.9만</td><td>201g</td><td>킵툼 세계기록 슈즈</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3"><strong>알파플라이 3</strong></a></td><td>풀 레이싱(마라톤)</td><td>ZoomX+에어팟+카본</td><td>33.9만</td><td>201g</td><td>킵툼 세계기록 슈즈</td></tr>
   </tbody>
 </table>
 
 <p>※ 가격은 한국 공식가(2026-09-28 확인 기준), 무게는 신발 DB의 공개 수치입니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+
+<h2>3-1. 9월 30일, 나이키가 레이싱화를 다시 짰다 — "위계"가 아니라 "선택지"</h2>
+
+<p>나이키는 2026년 9월 30일 레이싱화 세 켤레를 한 번에 발표하면서 <strong>"레이싱화를 위계로 정리하는 대신 선택지로 설계했다"</strong>고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 비싼 쪽이 위가 아니라, <strong>어떤 레이스를 뛰는 러너인지에 따라 고르라</strong>는 뜻입니다. 알파플라이 4는 2026년 10월 6일 나이키 코리아 검색에 아직 없고, 에이펙스·스우시플라이는 글로벌 출시 전입니다.</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>신발</th><th>나이키가 밝힌 대상</th><th>공식 구성</th><th>출시</th></tr></thead>
+  <tbody>
+    <tr><td><strong>스우시플라이</strong></td><td>첫 레이스를 준비하거나 새 목표에 도전하는 러너</td><td>SkyX 초임계 폼 + 카본 Flyplate. 가격은 "레이싱 라인보다 접근하기 쉬운 가격"이라고만 밝힘</td><td>2027년 2월 중국 → 봄 글로벌</td></tr>
+    <tr><td><a href="/blog/nike-alphafly-4-official-specs-2026"><strong>알파플라이 4</strong></a></td><td>거리 내내 반응성·편안함·안정성·효율의 균형을 원하는 러너</td><td>글로벌 정가 $280. 무게·스택을 읽는 법은 공식 스펙 글 참고</td><td>9월 17일 한정 선행, 10월 29일 확대(나이키 발표상 "10월")</td></tr>
+    <tr><td><a href="/blog/nike-apex-announcement-super-shoe-baseline-2026"><strong>에이펙스</strong></a></td><td>마라톤 성능의 끝을 쫓는 러너</td><td>에어 줌 유닛 4개를 2개씩 겹쳐 쌓은 구조, 힐·전족부 40mm·드롭 0mm. 가격·무게 미공개</td><td>2027년 1월</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>이 발표의 새 시스템에 <strong>베이퍼플라이는 들어 있지 않고</strong>, 보도자료에서 10여 년 전 제품으로만 언급됐습니다. 다만 이 발표가 베이퍼플라이 단종을 밝힌 것은 아닙니다 — 위 등급표의 베이퍼플라이 4(9월 28일 기준 정가 30.9만)와 알파플라이 3(10월 6일 나이키 코리아 판매 확인)은 지금 한국에서 살 수 있는 레이싱화입니다. 그래서 이 계급도의 등급표는 <strong>지금 살 수 있는 모델 기준</strong>으로 두고, 새 세 켤레는 한국 출시가 확인되면 표에 넣겠습니다.</p>
 
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
@@ -3900,7 +3917,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/nike-structure-26">스트럭처 26</a>. 나이키 유일 안정화입니다. 다만 한국 공식몰 와이드는 여성용만 있습니다(2026-09-28 확인). 다른 브랜드 안정화와 비교하려면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>를 보세요.</li>
   <li><strong>⚡ 가볍게·조금 빠르게</strong> → <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2</a>(ZoomX + 전족부 에어). 2세대는 핏이 좋아진 대신 성격이 데일리 쪽으로 옮겨 갔으니, 가벼움이 최우선이면 1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>(244g) 할인분도 선택지입니다. 세대 변화는 <a href="/blog/nike-pegasus-plus-2-release-2026">페가수스 플러스 2 출시 정리</a>에 있습니다.</li>
   <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 베이퍼 반값으로 카본을 경험합니다.</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(166g) 또는 최상위 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>. 둘의 차이는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼 vs 알파 비교</a>에 있습니다.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(166g) 또는 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> — 지금 한국에서 살 수 있는 둘입니다(9월 30일 발표된 새 레이싱 3종은 위 3-1 참고). 둘의 차이는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼 vs 알파 비교</a>에 있습니다.</li>
   <li><strong>💨 5K·10K 단거리 PB</strong> → <a href="/shoes/nike-streakfly-2">스트릭플라이 2</a>(128g).</li>
   <li><strong>⛰️ 트레일</strong> → <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>(맥스 쿠션·넓은 토박스), 트레일 레이스는 카본의 <a href="/shoes/nike-ultrafly">울트라플라이</a>. 제가마의 상세 평가는 <a href="/blog/nike-acg-zegama-trail-review-2026">ACG 제가마 트레일 리뷰</a>에, 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
 </ul>

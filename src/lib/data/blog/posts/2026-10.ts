@@ -171,7 +171,7 @@ export const posts_2026_10: BlogPost[] = [
   </tbody>
 </table>
 
-<p>나이키는 이번 발표에서 레이싱화를 <strong>"위계가 아니라 선택지로"</strong> 설계했다고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 역할을 옮기면 <strong>스우시플라이(Swooshfly)는 "레이스 데이의 문을 여는" 신발, 알파플라이 4는 "속도와 반응성·편안함·안정성·효율의 균형"을 맞춘 신발, 에이펙스는 "마라톤 성능의 끝을 쫓는 러너"를 위한 신발</strong>입니다. 출시는 알파플라이 4가 10월, 에이펙스가 2027년 1월, 스우시플라이가 2027년 2월입니다. 에이펙스의 에어 줌은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4에서 새로 도입한 것과 같은 기술</a>이고, 그걸 2단으로 쌓았다는 게 구조상 가장 큰 차이입니다.</p>
+<p>나이키는 이번 발표에서 레이싱화를 <strong>"위계가 아니라 선택지로"</strong> 설계했다고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 역할을 옮기면 <strong>스우시플라이(Swooshfly)는 "레이스 데이의 문을 여는" 신발, 알파플라이 4는 "속도와 반응성·편안함·안정성·효율의 균형"을 맞춘 신발, 에이펙스는 "마라톤 성능의 끝을 쫓는 러너"를 위한 신발</strong>입니다. 출시는 알파플라이 4가 10월, 에이펙스가 2027년 1월, 스우시플라이가 2027년 2월 중국 출시 뒤 봄에 글로벌입니다. 에이펙스의 에어 줌은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4에서 새로 도입한 것과 같은 기술</a>이고, 그걸 2단으로 쌓았다는 게 구조상 가장 큰 차이입니다.</p>
 
 <h2>"40%"는 어디에 대한 40%인가 — 세 숫자의 기준점</h2>
 
