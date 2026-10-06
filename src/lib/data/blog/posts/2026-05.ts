@@ -6951,16 +6951,24 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: '2026-nike-alphafly-4-prototype',
     slug: '2026-nike-alphafly-4-prototype',
-    title: '나이키 알파플라이 4 프로토타입 기록 | 출시 전 예측과 9/17 공식 발표의 대조',
-    description: '알파플라이 4가 공개되기 전, World Athletics 승인 리스트의 "Nike-Dev 16141" 프로토타입과 유출 이미지로 스펙 변화를 예측했던 글입니다. 2026년 9월 17일 나이키 공식 발표로 출시일·드롭·가격·Air Zoom 구조 예측이 빗나갔고, 미드솔 신 포뮬러와 와이드 플레이트는 맞았습니다. 확정된 공식 스펙은 별도 글에 정리했습니다.',
+    title: '나이키 알파플라이 4 출시일·가격 | 9/17 선행·10/29 확대 발매, 한국은 미정 — 프로토타입 예측과의 대조',
+    description: '알파플라이 4는 2026년 9월 17일 공식 발표와 함께 한정 선행 발매됐고 확대 발매는 10월 29일, 글로벌 정가는 $280입니다. 한국은 10월 6일 기준 나이키 코리아에 아직 없습니다. 나이키는 9월 30일 알파플라이 4·에이펙스(2027년 1월)·스우시플라이(2027년 2월)를 "위계가 아닌 선택지"로 묶어 발표했습니다. 아래는 5월 프로토타입 단계의 예측이 공식 발표와 어떻게 갈렸는지의 기록이며, 확정 스펙은 별도 글로 안내합니다.',
     thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-12',
-    updatedAt: '2026-09-17',
+    updatedAt: '2026-10-06',
     category: 'news' as const,
     readingTime: 8,
     tags: ['나이키', 'Nike', 'AlphaFly 4', '알파플라이 4', '슈퍼슈즈', '카본화', '보스턴 마라톤', 'ZoomX', '러닝화 발매'],
     content: `
+<div class="callout info">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">지금 기준 정리 (2026년 10월 6일)</p>
+    <p><strong>알파플라이 4는 9월 17일 공식 발표와 함께 한정 선행 발매됐고, 확대 발매는 10월 29일, 글로벌 정가는 $280입니다.</strong> 한국은 10월 6일 나이키 코리아 검색에 아직 올라오지 않았습니다(같은 검색에서 알파플라이 3은 판매 중). 나이키는 9월 30일 알파플라이 4·에이펙스(2027년 1월)·스우시플라이(2027년 2월)를 "레이스 데이 시스템"으로 묶어 발표하면서, 레이싱화를 <strong>위계가 아니라 선택지</strong>로 설계했다고 밝혔습니다. 확정 스펙은 <a href="/blog/nike-alphafly-4-official-specs-2026">알파플라이 4 공식 스펙 정리</a>에, 에이펙스는 <a href="/blog/nike-apex-announcement-super-shoe-baseline-2026">에이펙스 공개 글</a>에 있습니다. 아래는 5월 프로토타입 단계에서 쓴 예측 기록입니다.</p>
+  </div>
+</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
@@ -6974,7 +6982,7 @@ export const posts_2026_05: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">📅</span>
   <div class="callout-body">
-    <p class="callout-title">8/10 기준 출시일 현황 — 나이키 공식 발표는 아직 없습니다</p>
+    <p class="callout-title">8/10 기준 출시일 현황 — 나이키 공식 발표는 아직 없습니다 (지난 기록 — 9월 17일 공식 발표됨)</p>
     <p>2026년 8월 10일 현재까지 나이키의 <strong>공식 출시일 발표는 나오지 않았습니다</strong>. 11월 시카고 마라톤 직전이라는 시점은 알파플라이 1~3의 전례(주요 메이저 직전 공개)와 프로토타입 배포 단계에서 추정한 것이지 확정이 아닙니다. 다만 World Athletics 승인 리스트의 <strong>Nike-Dev 16141은 2026년 10월 1일 만료</strong> 예정이라, 그 전후로 정식 모델명 등록이나 발표가 나올 가능성이 있습니다. 확정 발표가 나오는 대로 이 글을 갱신하겠습니다.</p>
   </div>
 </div>
@@ -7427,7 +7435,7 @@ export const posts_2026_05: BlogPost[] = [
     id: '2026-asics-kayano-33-launch',
     slug: '2026-asics-kayano-33-launch',
     title: 'ASICS GEL-KAYANO 33 | 6/1 출시 — 4D 가이던스 버린 FLUIDSUPPORT, 32와 무엇이 달라졌나',
-    description: '아식스 안정화 플래그십 카야노 33이 2026년 6월 1일 글로벌 동시 출시됩니다. 글로벌 $170 / 한국 추정 199,000원대. 핵심 변화는 카야노 30~32의 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
+    description: '아식스 안정화 플래그십 카야노 33은 2026년 6월 1일 글로벌 출시로 발표된 모델입니다. 글로벌 $170, 한국 정가 199,000원(아식스 코리아 공식몰). 핵심 변화는 카야노 30~32의 4D Guidance System 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX 듀얼 폼. 32와 비교 + 한국 러너가 33을 사야 하나 32를 사야 하나 답까지.',
     thumbnail: '/images/blog/2026-asics-kayano-33-launch.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-11',
@@ -7435,6 +7443,14 @@ export const posts_2026_05: BlogPost[] = [
     readingTime: 8,
     tags: ['아식스', 'Asics', 'GEL-KAYANO 33', '카야노', '안정화', 'FLUIDSUPPORT', 'FF BLAST MAX', '러닝화 발매'],
     content: `
+<div class="callout info">
+  <span class="callout-icon">📌</span>
+  <div class="callout-body">
+    <p class="callout-title">출시 이후 정리</p>
+    <p>카야노 33은 출시됐고 한국 정가는 <strong>199,000원</strong>(아식스 코리아 공식몰, 32와 같은 값)입니다. 32와의 실제 차이, 호불호가 갈리는 이유, 평발·발볼 넓은 러너의 선택법은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>에 정리했습니다. 아래는 출시 전(5월) 기준으로 쓴 기록입니다.</p>
+  </div>
+</div>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
