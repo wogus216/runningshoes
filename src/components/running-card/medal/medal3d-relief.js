@@ -3,7 +3,7 @@
 // polish (oxidised 0 … polished 1), normal, and AO/roughness/metalness. Heights come from the entered values only, and the
 // sand and patina noise is hashed from pixel positions, so the same record always gives the same pixels.
 // Coin ↔ input: 1 총거리 = laps of a track · 2 러닝 횟수 = domed dots in frames of ten · 3 평균 페이스 = guilloché waves
-// (faster is tighter) · 4 최장거리 = the ridden share of a winding road · 5 강한 훈련 = chevrons raised out of three slots ·
+// (faster is tighter) · 4 최장거리 = the ridden share of a winding road · 5 강한 훈련 = chevrons raised out of six slots ·
 // 6 목표 = one of five emblems · 7 요일 = seven segments of a week ring, the chosen days raised and polished.
 
 export const KEYS = ['distance', 'count', 'pace', 'longest', 'hard', 'goal', 'days'];
@@ -46,7 +46,7 @@ export function label(key, rec) {
     case 'count': return `${rec.count}회`;
     case 'pace': return paceText(rec.pace);
     case 'longest': return `최장 ${km(rec.longest)}KM`;
-    case 'hard': return rec.hard >= 3 ? '강한 3회+' : `강한 ${rec.hard}회`;
+    case 'hard': return rec.hard >= 6 ? '강한 6회+' : `강한 ${rec.hard}회`;
     case 'goal': return GOALS[rec.goal] || '';
     case 'days': return !rec.days || !rec.days.length ? '건너뜀' : rec.days.length === 7 ? '매일' : rec.days.map(d => DAYS[d]).join('');
   }
@@ -54,7 +54,7 @@ export function label(key, rec) {
 }
 // What a coin's face depends on — the cache key, so a coin is redrawn only when its own input changes.
 export function signature(key, rec, state, S) {
-  const v = { distance: rec.distance, count: map.dots(rec.count), pace: rec.pace, longest: `${rec.longest}/${rec.distance}`, hard: Math.min(rec.hard, 3), goal: rec.goal, days: (rec.days || []).join('') }[key];
+  const v = { distance: rec.distance, count: map.dots(rec.count), pace: rec.pace, longest: `${rec.longest}/${rec.distance}`, hard: Math.min(rec.hard, 6), goal: rec.goal, days: (rec.days || []).join('') }[key];
   return state === 'struck' ? `${key}:${v}:${label(key, rec)}:${S}` : `${key}:${state}:${S}`;
 }
 
@@ -279,13 +279,15 @@ function longestCoin(H, S, rec) {
   // Start bar across the road.
   level(H, bevel(mask(S, g => { g.lineCap = 'butt'; g.lineWidth = .028; const [sx, sy] = pts[0]; g.beginPath(); g.moveTo(sx - .07, sy); g.lineTo(sx + .07, sy); g.stroke(); }), S, S, 1), RAISE + .04);
 }
-// 5 강한 훈련 — three nested chevron slots; the first N from the top are raised and polished, the rest stay carved.
+// 5 강한 훈련 — six nested chevron slots, one per chip (0 … 5 and 6 = '6회 이상'); the first N from the top are raised and
+// polished, the rest stay carved. Six fit where three did by a flatter angle and narrower strokes: the stack runs from
+// .45 above the motif centre to just over the exergue line, and the gap between strokes stays about half a stroke.
 function hardCoin(H, S, rec) {
-  const n = Math.min(3, Math.max(0, rec.hard)), rise = .34, half = .44;
-  const chevron = (g, k) => { const ay = FC - .40 + k * .23; g.beginPath(); g.moveTo(-half, ay + rise); g.lineTo(0, ay); g.lineTo(half, ay + rise); };
-  for (let k = 0; k < 3; k++) {
+  const n = Math.min(6, Math.max(0, rec.hard)), rise = .30, half = .42, top = FC - .45, pitch = .132;
+  const chevron = (g, k) => { const ay = top + k * pitch; g.beginPath(); g.moveTo(-half, ay + rise); g.lineTo(0, ay); g.lineTo(half, ay + rise); };
+  for (let k = 0; k < 6; k++) {
     const on = k < n;
-    level(H, bevel(mask(S, g => { g.lineJoin = 'miter'; g.lineCap = 'butt'; g.lineWidth = on ? .13 : .118; chevron(g, k); g.stroke(); }), S, S, on ? 2 : 1), on ? RAISE : LOW);
+    level(H, bevel(mask(S, g => { g.lineJoin = 'miter'; g.lineCap = 'butt'; g.lineWidth = on ? .07 : .062; chevron(g, k); g.stroke(); }), S, S, on ? 2 : 1), on ? RAISE : LOW);
   }
 }
 // 6 목표 — one emblem per goal.

@@ -15,7 +15,7 @@ export const MARKUP = `
     <button data-go="5" data-state="empty" aria-label="06 목표" disabled><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>06</i></span><b>목표</b></button>
     <button data-go="6" data-state="empty" aria-label="07 요일, 선택" disabled><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>07</i></span><b>요일</b></button>
   </nav>
-  <div class="scene-intro"><p class="eyebrow" id="chapter-name">DISTANCE / 01</p><h1 id="scene-heading" tabindex="-1">지난 28일 동안,<br>얼마나 달렸나요?</h1><button type="button" class="mode-toggle" id="pace-mode" aria-pressed="false" hidden>총 시간으로 입력</button></div>
+  <div class="scene-intro"><p class="eyebrow" id="chapter-name">DISTANCE / 01</p><h1 id="scene-heading" tabindex="-1">지난 28일 동안,<br>얼마나 달렸나요?</h1><button type="button" class="mode-toggle" id="pace-mode" aria-pressed="false" hidden>총 시간으로 입력</button><button type="button" class="mode-toggle" id="race-goal-open" aria-expanded="false" aria-controls="race-goal" hidden>목표 기록 넣기</button></div>
   <div class="medal-stage" id="medal-stage" aria-hidden="true"></div>
   <p class="stage-note" id="stage-note" role="status">메달 틀을 준비하고 있어요</p>
   <p class="sr-only" id="medal-status" role="status"></p>
@@ -32,7 +32,10 @@ export const MARKUP = `
         <label><input type="radio" name="hard" value="0"><span>0<small>회</small></span></label>
         <label><input type="radio" name="hard" value="1"><span>1<small>회</small></span></label>
         <label><input type="radio" name="hard" value="2"><span>2<small>회</small></span></label>
-        <label><input type="radio" name="hard" value="3"><span>3<small>회 이상</small></span></label>
+        <label><input type="radio" name="hard" value="3"><span>3<small>회</small></span></label>
+        <label><input type="radio" name="hard" value="4"><span>4<small>회</small></span></label>
+        <label><input type="radio" name="hard" value="5"><span>5<small>회</small></span></label>
+        <label><input type="radio" name="hard" value="6"><span>6<small>회 이상</small></span></label>
       </div></fieldset>
       <fieldset class="choices goal-fields" id="goal-fields" aria-describedby="field-hint field-error" hidden><legend>목표</legend><div class="goal-row">
         <label><input type="radio" name="goal" value="habit"><span>습관</span></label>
@@ -52,8 +55,20 @@ export const MARKUP = `
     <footer class="journey-footer"><button type="button" id="previous" class="previous" aria-label="이전 입력" disabled><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg></button><button type="submit" id="next"><span id="next-label">예시 150km로 다음</span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></button></footer>
     <div class="sample-confirm" id="sample-confirm" role="group" aria-labelledby="sample-confirm-text" hidden>
       <p id="sample-confirm-text" tabindex="-1"></p>
-      <button type="button" id="sample-keep">예시값 그대로 볼게요</button>
+      <button type="button" id="sample-keep">이 숫자가 내 기록이 맞아요</button>
       <button type="button" id="sample-edit">직접 입력할게요</button>
+    </div>
+    <div class="race-goal" id="race-goal" role="group" aria-labelledby="race-goal-title" hidden>
+      <p id="race-goal-title" tabindex="-1">목표 거리와 기록 <span>선택</span></p>
+      <fieldset class="race-distance" aria-label="목표 거리"><div class="goal-row">
+        <label><input type="radio" name="race-distance" value="5"><span>5km</span></label>
+        <label><input type="radio" name="race-distance" value="10"><span>10km</span></label>
+        <label><input type="radio" name="race-distance" value="21.0975"><span>하프</span></label>
+        <label><input type="radio" name="race-distance" value="42.195"><span>풀</span></label>
+      </div></fieldset>
+      <fieldset class="time-fields race-time" aria-label="목표 기록"><div class="time-row"><label><input id="race-hours" type="text" inputmode="numeric" autocomplete="off" enterkeyhint="next" aria-label="목표 기록, 시간" aria-describedby="race-goal-status"><span>시간</span></label><span class="colon" aria-hidden="true">:</span><label><input id="race-minutes" type="text" inputmode="numeric" autocomplete="off" enterkeyhint="done" aria-label="목표 기록, 분" aria-describedby="race-goal-status"><span>분</span></label></div></fieldset>
+      <p id="race-goal-status" role="status"></p>
+      <div class="race-goal-actions"><button type="button" id="race-goal-clear">목표 기록 없이</button><button type="button" id="race-goal-save">이 목표로</button></div>
     </div>
   </form>
   <section class="complete" hidden aria-labelledby="complete-title">
@@ -68,7 +83,7 @@ export const MARKUP = `
     <p class="tilt-hint" aria-hidden="true">메달을 끌어 빛에 비춰 보세요</p>
     <dl id="summary"></dl>
     <p id="summary-extra"></p>
-    <p class="completion-note" id="completion-note">입력 시연이에요. 분석 결과는 아직 연결하지 않았어요.</p>
+    <p class="completion-note" id="completion-note"></p>
     <div class="complete-actions"><button type="button" id="edit-records"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 12H5m6-6-6 6 6 6"/></svg>다시 다듬기</button><button type="button" id="save-image" aria-expanded="false" aria-controls="share-sheet">이미지로 저장<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m-5-5 5 5 5-5M5 20h14"/></svg></button></div>
     <div class="share-sheet" id="share-sheet" role="group" aria-labelledby="share-title" hidden>
       <p id="share-title" tabindex="-1">어떤 크기로 저장할까요? 고른 마감으로 저장돼요.</p>

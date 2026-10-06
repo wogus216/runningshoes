@@ -24,7 +24,9 @@ import * as Ruler from './ruler.js';
 import { MARKUP } from './medal3d-flow-markup.js';
 
 // The body of mountMedalFlow is the study script, kept at its own indentation so it diffs line for line against ad6d632.
-export function mountMedalFlow(container) {
+// judge({ values, origins, raceGoal }) → { ok: true, analysis } | { ok: false, reason: 'sample' | 'invalid', fields }
+// (running-card-medal.tsx: snapshotFromFlowInput → analyzeRunner). Called after 07; the analysis stays in this mount.
+export function mountMedalFlow(container, { judge }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
 
@@ -64,13 +66,13 @@ const copy = [
   ['FARTHEST / 04', '지난 28일 중,<br>가장 멀리 달린 날은?', '최장거리', 'km', '다음: 강한 훈련', '한 번의 러닝에서 달린 가장 긴 거리예요.'],
   ['INTENSITY / 05', '지난 28일 중,<br>강하게 달린 건 몇 번?', '강한 훈련 횟수', '회', '다음: 목표', '없었다면 0회를 고르세요.', '인터벌·템포·레이스처럼 숨이 찬 러닝을 세요.'],
   ['PURPOSE / 06', '지금 러닝의<br>가장 큰 목표는?', '목표', '', '다음: 요일', '고르면 동전의 상징이 바뀌어요.'],
-  ['WEEKDAYS / 07', '평소 어느 요일에<br>달리나요?', '평소 러닝 요일', '', '메달 보기', '선택 항목이에요. 비워 둬도 돼요.'],
+  ['WEEKDAYS / 07', '평소 어느 요일에<br>달리나요?', '평소 러닝 요일', '', '메달 보기', '선택 항목이에요. 주로 달리는 요일을 고르면 회복 여유를 더 정확히 계산해요.'],
 ];
 // Goal keys match the engine (habit/endurance/record/race/health_fun). The second name is the emblem on coin 06.
 const goals = { habit: ['습관', '감긴 고리'], endurance: ['지구력', '두 봉우리'], record: ['기록', '스톱워치'], race: ['대회', '결승 아치'], health_fun: ['건강과 재미', '∞ 고리'] };
 const dayNames = ['월', '화', '수', '목', '금', '토', '일'];
 const dayList = () => values.days.map(d => dayNames[d]).join('·');
-const hardText = () => values.hard === 3 ? '3회 이상' : `${values.hard}회`;
+const hardText = () => values.hard === 6 ? '6회 이상' : `${values.hard}회`;
 const paceLabel = () => `${value('minutes')}:${String(value('seconds')).padStart(2, '0')}`;
 
 // Same contract as RecordsStep. Empty required fields stay empty, never receive sample defaults.
@@ -78,7 +80,7 @@ function validation(index) {
   const key = scenes[index];
   if (index === 4) {
     if (values.hard === null) return '강한 훈련 횟수를 골라 주세요. 없었다면 0회예요.';
-    // 3 stands for "3회 이상", so it needs at least three runs.
+    // 6 stands for "6회 이상", so it needs at least six runs.
     if (values.hard > safe('count')) return `러닝 횟수가 ${format(value('count'))}회라 그보다 많이 고를 수 없어요. 다시 골라 주세요.`;
     return '';
   }
@@ -135,7 +137,7 @@ function sampleItems() {
 }
 function hideConfirm() { $('#sample-confirm').hidden = true; root.classList.remove('confirming'); }
 function showConfirm(items) {
-  $('#sample-confirm-text').textContent = `${items.map(item => item.text).join(', ')}는 예시값이에요. 그 동전은 각인하지 않은 민짜로 남아요.`;
+  $('#sample-confirm-text').textContent = `${items.map(item => item.text).join(', ')}는 예시값 그대로예요. 내 기록이 맞으면 이 숫자로 새기고 판정해요.`;
   $('#sample-confirm').hidden = false; root.classList.add('confirming');
   $('#sample-confirm-text').focus({ preventScroll: true });
 }
@@ -192,7 +194,7 @@ function derivedText() {
     if (validation(4)) return '';
     return values.hard === 0 ? `강한 훈련 없이 러닝 ${format(value('count'))}회` : `러닝 ${format(value('count'))}회 중 ${hardText()}`;
   }
-  if (stage === 5) return values.goal ? `목표 동전 · ${goals[values.goal][1]}` : '';
+  if (stage === 5) return values.goal ? `목표 동전 · ${goals[values.goal][1]}${wantsRace() && raceGoal ? ` · ${raceText(raceGoal)}` : ''}` : '';
   if (stage === 6) return values.days.length ? `${dayList()} · 주 ${values.days.length}일` : '';
   if (stage === 0 || validation(stage) || validation(0)) return '';
   const distance = value('distance');
@@ -207,10 +209,17 @@ function derivedText() {
   // Defined distances: half 21.0975 km, full 42.195 km.
   return value('longest') > fullKm ? `${text} · 풀코스 거리를 넘었어요` : value('longest') > halfKm ? `${text} · 하프 거리를 넘었어요` : text;
 }
+// 07: more days than the runs make in a week (round(runs ÷ 4)) read as a shorter rest between runs. A line, never a block.
+const daysOver = () => values.days.length > Math.round(safe('count') / 4);
 function updateHint() {
   derived.textContent = derivedText();
+  const over = stage === 6 && daysOver();
+  $('#field-hint').classList.toggle('is-warn', over);
   if (stage >= 4) {
-    $('#field-hint').textContent = stage === 4 && safe('count') < 3 ? `러닝 ${format(value('count'))}회보다 많은 선택지는 고를 수 없어요.` : copy[stage][5];
+    $('#field-hint').textContent = stage === 4 && safe('count') < 6 ? `러닝 ${format(value('count'))}회보다 많은 선택지는 고를 수 없어요.`
+      : over ? `28일 동안 ${format(value('count'))}회면 주 ${tenth(value('count') / 4)}회꼴이에요. 가끔 달린 요일은 빼고 주로 달리는 요일만 골라 주세요.`
+      : stage === 5 && wantsRace() && !raceGoal ? '목표 거리와 기록을 넣으면 평균 페이스를 목표와 견줘 판정해요. 선택 항목이에요.'
+      : copy[stage][5];
     $('#next-label').textContent = stage === last && !values.days.length ? '요일은 건너뛸게요' : copy[stage][4];
     return;
   }
@@ -260,7 +269,7 @@ function changeStage(next, instant = false) {
   $('#unit').textContent = text[3];
   $('#record').hidden = stage >= 4;
   Object.entries(choiceFields).forEach(([index, selector]) => { $(selector).hidden = Number(index) !== stage; });
-  $('#number-row').hidden = stage === 2; setTimeMode(false);
+  $('#number-row').hidden = stage === 2; setTimeMode(false); syncRaceToggle();
   $$('.count-step').forEach(button => { button.hidden = stage !== 1; });
   numeric.inputMode = stage === 1 ? 'numeric' : 'decimal';
   numeric.setAttribute('aria-label', text[2]);
@@ -309,14 +318,30 @@ function navigate(next, instant = false) {
     // Sample values stay marked as samples so the final step can still ask about them.
     if (origins[scenes[stage]] !== 'sample') origins[scenes[stage]] = 'confirmed';
     furthest = Math.max(furthest, Math.min(next, last));
-    const samples = next === done ? sampleItems() : [];
-    if (samples.length) { showConfirm(samples); return; }
   }
-  if (next === done) finish(instant); else changeStage(next, instant);
+  if (next === done) toResult(instant); else changeStage(next, instant);
+}
+// After 07: the input goes to judge() (the S1 adapter, then the engine). Sample numbers left: the confirm block (D1 — no
+// judgement on numbers the runner has not made theirs). A value the adapter refuses: back to its step. Otherwise the
+// analysis is kept and the medal completes. fallbacksUsed stays in the analysis and is never shown.
+const fieldStage = { distance: 0, count: 1, pace: 2, longest: 3, hard: 4, goal: 5, days: 6, raceGoal: 5 };
+let analysis = null;
+function toResult(instant) {
+  const verdict = judge({ values: { ...values, days: [...values.days] }, origins: { ...origins }, raceGoal });
+  if (!verdict.ok) {
+    if (verdict.reason === 'sample') { showConfirm(sampleItems()); return; }
+    const field = verdict.fields[0];
+    changeStage(fieldStage[field] ?? 0, true);
+    touched = true; showError(true);
+    if (field === 'raceGoal') openRaceGoal(true); else focusField();
+    return;
+  }
+  analysis = verdict.analysis;
+  finish(instant);
 }
 function finish(instant) {
   const left = complete ? -1 : stage;
-  stopMotion(); complete = true; hideConfirm(); closeShare(false);
+  stopMotion(); complete = true; hideConfirm(); closeShare(false); syncRaceToggle();
   $$('[data-go]').forEach(button => button.removeAttribute('aria-current'));
   $('.chapters').classList.add('is-done');
   root.dataset.scene = 'complete'; $('.complete').hidden = false;
@@ -331,7 +356,8 @@ function finish(instant) {
     const small = document.createElement('small'); small.textContent = unit; dd.append(small); row.append(dt, dd); return row;
   }));
   $('#summary-extra').textContent = extraLine();
-  $('#completion-note').textContent = sampleItems().length ? '예시값으로 넘긴 동전은 각인하지 않은 민짜로 남았어요. 입력 시연이라 분석은 아직 연결하지 않았어요.' : '입력 시연이에요. 분석 결과는 아직 연결하지 않았어요.';
+  // Placeholder line for the judgement. S3에서 여덟 번째 각인으로 교체 — the plate takes the figure's house sign and name.
+  $('#completion-note').textContent = `판정: ${analysis.match.character.name}`;
   $('#complete-figure').setAttribute('aria-label', describe());
   $('#gl').setAttribute('aria-label', describe()); $('#gl').tabIndex = 0;
   commit(left);
@@ -382,7 +408,7 @@ paceMode.addEventListener('click', () => {
   });
 });
 function choiceChanged() {
-  touched = true; hideConfirm(); clearNote(); syncChoices(); updateHint(); showError();
+  touched = true; hideConfirm(); clearNote(); syncChoices(); syncRaceToggle(); updateHint(); showError();
   live();
 }
 $$('input[name=hard]').forEach(radio => radio.addEventListener('change', () => { values.hard = Number(radio.value); origins.hard = 'edited'; choiceChanged(); }));
@@ -395,13 +421,95 @@ $$('[data-day]').forEach(button => button.addEventListener('click', () => {
 // Enter on a radio advances like Enter in a number field.
 $$('.choices input').forEach(radio => radio.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); form.requestSubmit(); } }));
 form.addEventListener('submit', e => { e.preventDefault(); if (!validation(stage)) document.activeElement.blur(); navigate(stage + 1); });
-$('#sample-keep').addEventListener('click', () => finish());
+// '이 숫자가 내 기록이 맞아요': the samples become the runner's numbers (confirmed). Their blanks are struck as the whole
+// medal comes into view, the way 04 is struck again (held blank until then; at once without the camera move).
+function confirmSamples() {
+  const rec = liveRec();
+  sampleItems().forEach(({ index }) => {
+    origins[scenes[index]] = 'confirmed';
+    if (!struck.has(index)) return;
+    held.add(index); restrikes.add(index);
+    want(Relief.signature(scenes[index], rec, 'struck', RES.seat), coinMsg(scenes[index], rec, 'struck', RES.seat), 3);
+  });
+  toResult();
+}
+$('#sample-keep').addEventListener('click', confirmSamples);
 $('#sample-edit').addEventListener('click', () => {
   const first = sampleItems()[0];
   changeStage(first ? first.index : 0, true);
   (stage === 2 ? minutes : numeric).focus();
 });
 $('#previous').addEventListener('click', () => navigate(Math.max(0, stage - 1)));
+
+// ---- 06 target (optional): distance and time for '대회'·'기록' (S1 handoff 4, D2) --------------------------------------
+// The engine compares the average pace with the target pace only when it has one (score.ts targetPressure); the adapter
+// passes it for these two goals only. It opens over the input panel, where the confirm block opens.
+const raceNames = { 5: '5km', 10: '10km', 21.0975: '하프', 42.195: '풀' };
+let raceGoal = null;
+const wantsRace = () => values.goal === 'race' || values.goal === 'record';
+const spanText = min => { const h = Math.floor(min / 60), m = Math.round(min % 60); return `${h ? `${h}시간` : ''}${h && m ? ' ' : ''}${m || !h ? `${m}분` : ''}`; };
+const raceText = g => `${raceNames[g.distanceKm]} ${spanText(g.targetTimeMinutes)}`;
+function syncRaceToggle() {
+  const button = $('#race-goal-open'), show = !complete && stage === 5 && wantsRace();
+  button.hidden = !show;
+  button.textContent = raceGoal ? raceText(raceGoal) : '목표 기록 넣기';
+  button.setAttribute('aria-label', raceGoal ? `목표 기록 ${raceText(raceGoal)}, 고치기` : '목표 거리와 기록 넣기, 선택 항목');
+  if (!show) closeRaceGoal(false);
+}
+function raceEntry() {
+  const distance = Number($$('input[name=race-distance]').find(r => r.checked)?.value || 0), h = $('#race-hours').value.trim(), m = $('#race-minutes').value.trim();
+  // field: where the cursor goes when the entry is refused.
+  if (!distance) return { error: '목표 거리를 골라 주세요.', field: 'distance' };
+  if (!h && !m) return { error: '목표 기록을 입력해 주세요.', field: 'hours' };
+  if (!/^\d*$/.test(h)) return { error: '시간과 분은 정수로 입력해 주세요.', field: 'hours' };
+  if (!/^\d*$/.test(m)) return { error: '시간과 분은 정수로 입력해 주세요.', field: 'minutes' };
+  if (Number(m) > 59) return { error: '분은 0부터 59까지 입력해 주세요.', field: 'minutes' };
+  const total = Number(h || 0) * 60 + Number(m || 0);
+  if (total <= 0) return { error: '목표 기록은 0보다 커야 해요.', field: 'hours' };
+  // The engine reads a target pace between 2:30 and 12:00 per km only.
+  const pace = total * 60 / distance;
+  if (pace < 150 || pace > 720) return { error: `목표 페이스가 ${paceText(Math.round(pace))}/km예요. 1km당 2분 30초에서 12분 사이가 되도록 확인해 주세요.`, field: 'hours' };
+  return { goal: { distanceKm: distance, targetTimeMinutes: total }, pace: Math.round(pace) };
+}
+function raceStatus(force) {
+  const entry = raceEntry(), status = $('#race-goal-status');
+  status.textContent = entry.goal ? `목표 페이스 ${paceText(entry.pace)}/km` : force ? entry.error : '';
+  status.classList.toggle('is-error', !entry.goal && force);
+  return entry;
+}
+function openRaceGoal(force = false) {
+  const g = raceGoal;
+  $$('input[name=race-distance]').forEach(r => { r.checked = !!g && Number(r.value) === g.distanceKm; });
+  $('#race-hours').value = g ? String(Math.floor(g.targetTimeMinutes / 60)) : '';
+  $('#race-minutes').value = g ? String(Math.round(g.targetTimeMinutes % 60)) : '';
+  $('#race-goal').hidden = false; root.classList.add('race-goal-on');
+  $('#race-goal-open').setAttribute('aria-expanded', 'true');
+  raceStatus(force);
+  $('#race-goal-title').focus({ preventScroll: true });
+}
+function closeRaceGoal(restoreFocus = true) {
+  if ($('#race-goal').hidden) return;
+  $('#race-goal').hidden = true; root.classList.remove('race-goal-on');
+  $('#race-goal-open').setAttribute('aria-expanded', 'false');
+  if (restoreFocus && !$('#race-goal-open').hidden) $('#race-goal-open').focus();
+}
+function setRaceGoal(goal) { raceGoal = goal; closeRaceGoal(); syncRaceToggle(); updateHint(); }
+$('#race-goal-open').addEventListener('click', () => openRaceGoal());
+$('#race-goal-save').addEventListener('click', () => {
+  const entry = raceStatus(true);
+  if (entry.goal) setRaceGoal(entry.goal);
+  else ({ distance: $('input[name=race-distance]'), hours: $('#race-hours'), minutes: $('#race-minutes') })[entry.field].focus();
+});
+$('#race-goal-clear').addEventListener('click', () => setRaceGoal(null));
+$('#race-goal').addEventListener('keydown', e => { if (e.key === 'Escape') { e.preventDefault(); closeRaceGoal(); } });
+$$('input[name=race-distance]').forEach(radio => radio.addEventListener('change', () => raceStatus(false)));
+// The sheet sits inside the form: Enter moves on or saves here, never submits the step.
+[$('#race-hours'), $('#race-minutes')].forEach(input => {
+  input.addEventListener('input', () => raceStatus(false));
+  input.addEventListener('focus', () => input.select());
+  input.addEventListener('keydown', e => { if (e.key !== 'Enter') return; e.preventDefault(); if (input.id === 'race-hours') $('#race-minutes').focus(); else $('#race-goal-save').click(); });
+});
+$$('input[name=race-distance]').forEach(radio => radio.addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); $('#race-hours').focus(); } }));
 $$('[data-go]').forEach(button => button.addEventListener('click', () => navigate(Number(button.dataset.go))));
 $('#add-run').addEventListener('click', () => { values.count = String(Math.max(1, Math.floor(safe('count')) + 1)); origins.count = 'edited'; touched = true; syncInputs(); live(); });
 $('#subtract-run').addEventListener('click', () => { values.count = String(Math.max(1, Math.floor(safe('count')) - 1)); origins.count = 'edited'; touched = true; syncInputs(); live(); });
@@ -441,7 +549,7 @@ function places() {
   return scenes.map((key, i) => {
     const m = markOf(i), open = !complete && i === stage;
     if (open) return { face: m === 'live' ? 'struck' : 'blank', hover: true };
-    if (complete || struck.has(i)) return { face: m === 'engraved' ? 'struck' : 'blank', hover: false };
+    if (complete || struck.has(i)) return { face: m === 'engraved' && !held.has(i) ? 'struck' : 'blank', hover: false };
     return { face: 'empty', hover: false };
   });
 }
@@ -451,6 +559,8 @@ const recFor = (k, p) => p.hover ? liveRec() : slots[k]?.rec || committed || liv
 // changes, the coin keeps its face until it is struck again where it can be seen: on the look at the whole medal after a
 // Next, on the way to the completed medal, or when its own step is opened. Same input, same face, once it has been.
 const restrikes = new Set();
+// Confirmed samples whose coins still show their blank until they are struck (confirmSamples).
+const held = new Set();
 const faceFamily = (k, rec) => Relief.signature(scenes[k], rec, 'struck', 0);
 function commit(left) {
   committed = liveRec();
@@ -838,7 +948,7 @@ function go({ instant = false, afterStrike = false, enterDelay = null } = {}) {
 }
 function flushRestrikes() {
   restrikes.forEach(k => { const slot = slots[k]; if (!slot) return; stopTween(slot, 'z'); stopTween(slot, 's'); slot.z = 0; slot.s = 1; slot.striking = false; slot.rec = committed; });
-  restrikes.clear();
+  restrikes.clear(); held.clear();
 }
 // Struck again with a face that changed elsewhere: lifted a little, set down with the new face, the relief rising as in a
 // strike. The medal does not give under it; it is a smaller blow than Next.
@@ -847,7 +957,7 @@ function restrike(k, delay) {
   if (!slot) return;
   slot.striking = true;
   tween(slot, 'z', .2, 140, easeOut, delay, () => {
-    restrikes.delete(k); slot.rec = committed; slot.s = PREVIEW;
+    restrikes.delete(k); held.delete(k); slot.rec = committed; slot.s = PREVIEW;
     syncCoins(); syncNav();
     tween(slot, 'z', 0, 150, easeIn, 0, () => tween(slot, 's', 1, 260, easeOut, 0, () => { slot.striking = false; }));
   });
