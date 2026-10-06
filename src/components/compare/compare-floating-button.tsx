@@ -15,8 +15,10 @@ export function CompareFloatingButton() {
   const isDetailPage = pathname.startsWith('/shoes/');
   const isComparePage = pathname.startsWith('/compare');
   const isSaturdayPage = pathname.startsWith('/saturday');
+  // 러닝 카드는 한 화면짜리 입력 흐름이라 하단 고정 버튼이 '다음' 버튼을 가린다.
+  const isRunningCardPage = pathname.startsWith('/running-card');
 
-  if (compareList.length === 0 || isComparePage || isSaturdayPage) return null;
+  if (compareList.length === 0 || isComparePage || isSaturdayPage || isRunningCardPage) return null;
 
   return (
     <div

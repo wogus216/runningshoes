@@ -11,9 +11,11 @@ export function ScrollToTop() {
   const pathname = usePathname();
   const isDetailPage = pathname.startsWith('/shoes/');
   const isSaturdayPage = pathname.startsWith('/saturday');
+  // 러닝 카드는 한 화면짜리 입력 흐름이라 하단 고정 버튼이 입력 패널을 가린다.
+  const isHidden = isSaturdayPage || pathname.startsWith('/running-card');
 
   useEffect(() => {
-    if (isSaturdayPage) return;
+    if (isHidden) return;
 
     const toggleVisibility = () => {
       if (frameRef.current !== null) return;
@@ -30,9 +32,9 @@ export function ScrollToTop() {
       window.removeEventListener('scroll', toggleVisibility);
       if (frameRef.current !== null) window.cancelAnimationFrame(frameRef.current);
     };
-  }, [isSaturdayPage]);
+  }, [isHidden]);
 
-  if (isSaturdayPage) return null;
+  if (isHidden) return null;
 
   const scrollToTop = () => {
     window.scrollTo({
