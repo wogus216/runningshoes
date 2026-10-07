@@ -26,6 +26,9 @@ export type ShareCard = {
   next: string;
   leadTag: string;
   recoveryNote: string;
+  // 인물 그림(presentation.image). 있으면 1장째가 그림을 배경으로 깐다(S5-D). 표식으로 뺀 14명은 없다.
+  image?: string;
+  imageFocus?: number;
 };
 export type ShareImage = (kind: ShareKind, page: SharePage, options: { card: ShareCard; hideNumbers: boolean }) => Promise<Blob>;
 
@@ -55,6 +58,8 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
     next: explanation.nextAction.text,
     leadTag: LEAD_TAG,
     recoveryNote: RECOVERY_MARGIN_NOTE,
+    image: presentation.image,
+    imageFocus: presentation.imageFocus,
   };
 }
 

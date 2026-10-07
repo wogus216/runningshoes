@@ -1465,7 +1465,7 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
     if (hideNumbers) await want(blankSig(RES.seat), coinMsg('distance', liveRec(), 'blank', RES.seat), 0);
     if (destroyed) throw new Error('destroyed');
     settleNow();
-    await drawCover(g, kind, card, fig => renderFigure(g, fig, hideNumbers));
+    await drawCover(g, kind, card, (fig, target = g) => renderFigure(target, fig, hideNumbers));
   } else await drawAnalysis(g, kind, card, hideNumbers);
   return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
 }
