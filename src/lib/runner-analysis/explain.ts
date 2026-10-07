@@ -4,9 +4,9 @@ import type {
   RunnerSnapshot28d,
   RunnerTraits,
 } from '@/types/runner-analysis';
-import { getCharacterPresentation, PUBLIC_AXES } from './presentation';
+import { getCharacterPresentation, leadAxisOf } from './presentation';
 
-// 결과 카드의 대표 수치·근거 2·강점·맹점·다음 14일 행동(스펙 168·404-436행). 자유 생성 없이 점수 규칙과
+// 결과 카드의 대표 수치·근거 2·강점·맹점·다음 14일 행동(스펙 404-436행, 대표 수치는 운영자 결정 2026-10-07). 자유 생성 없이 점수 규칙과
 // 검수된 문장만 조합한다. 판정과 같은 반올림 전 특성값을 쓴다.
 
 export type PublicAxis = keyof PublicRunnerScores;
@@ -111,9 +111,8 @@ export function explainRunner(snapshot: RunnerSnapshot28d, analysis: RunnerAnaly
   const gap = (trait: Trait) => Math.abs(traits[trait] - character.traits[trait]);
   const presentation = getCharacterPresentation(character.id);
 
-  // 대표 수치: 공개 3축 가운데 판정에 가장 크게 기여한 축. 세 축의 가중치가 같으므로(18%) 인물 목표와 가장 가까운 축이다.
-  // 같으면 지구력 · 훈련 자극 · 회복 여유 순.
-  const leadAxis = PUBLIC_AXES.map(([axis]) => axis).reduce((best, axis) => (gap(axis) < gap(best) ? axis : best));
+  // 대표 수치: 인물 목표값이 가장 높은 공개 축(presentation.ts leadAxisOf). 공유 링크 화면도 같은 함수를 쓴다.
+  const leadAxis = leadAxisOf(character.traits);
 
   // 근거 1: 인물 목표와 가장 가까우면서 사용자 점수가 60 이상인 특성의 계열. 60 이상이 없으면 문턱 없이 가장 가까운 것.
   // 차이가 같으면 계열 우선순위가 앞선 것.
