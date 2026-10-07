@@ -6,7 +6,7 @@ import { AdSlot } from '@/components/ads/ad-slot';
 import { trackRunner } from '@/lib/runner-analysis/track';
 import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, LEAD_NOTE, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
-import { createSharedRunnerCard, sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
+import { sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
 import { RunnerScores } from './running-card-scores';
 
@@ -175,7 +175,7 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
   }
 
   async function shareLink() {
-    const url = sharedRunnerCardUrl(window.location.origin, createSharedRunnerCard(id, scores));
+    const url = sharedRunnerCardUrl(window.location.origin, { characterId: id, scores });
     const text = `지난 28일, 내 러닝 카드는 ${card.name} — ${card.title}`;
     try {
       if (navigator.share) {
@@ -220,7 +220,7 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       </div>
       <p className="rc-share-note">
         숫자를 숨기면 메달의 기록 동전(총거리·횟수·페이스·최장거리·강한 훈련)이 민짜로, 근거가 숫자 없는 말로 바뀌어요.
-        링크에는 인물과 세 점수, 열람 기한(7일)만 담기고 입력한 기록은 담기지 않아요.
+        링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.
       </p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && (
