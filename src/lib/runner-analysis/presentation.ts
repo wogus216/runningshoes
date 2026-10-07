@@ -302,7 +302,10 @@ export const PUBLIC_AXES = [
 export function leadAxisOf(target: Record<(typeof PUBLIC_AXES)[number][0], number>) {
   return PUBLIC_AXES.map(([axis]) => axis).reduce((best, axis) => (target[axis] > target[best] ? axis : best));
 }
+// 표기(리드 판단 2026-10-07): 결과 카드 표지 띠의 설명 줄은 LEAD_NOTE, 점수 줄 꼬리표(결과 카드·공유받은 화면·공유 2장 분석)는
+// 같은 말이 두 번 나오지 않게 짧은 LEAD_TAG. '대표 수치'라는 말은 화면·이미지에 쓰지 않는다.
 export const LEAD_NOTE = '이 인물의 중심 점수';
+export const LEAD_TAG = '중심 점수';
 
 // 회복 여유는 몸의 회복이 아니다(스펙 12·283행, 설계 §6-4). 3축이 보이는 곳에 이 줄을 함께 둔다.
 // 설계 §6-4 예시는 '고른 요일 사이 간격'이지만, 요일을 건너뛰면 엔진이 28일 ÷ 횟수로 간격을 어림하므로 '달린 날'로 쓴다.

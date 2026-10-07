@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { trackRunner } from '@/lib/runner-analysis/track';
 import { ADSENSE_SLOTS } from '@/lib/constants';
-import { getCharacterPresentation, LEAD_NOTE, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
+import { getCharacterPresentation, LEAD_NOTE, LEAD_TAG, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
 import { RunnerScores } from './running-card-scores';
@@ -23,7 +23,7 @@ export type ShareCard = {
   strength: string;
   watchout: string;
   next: string;
-  leadNote: string;
+  leadTag: string;
   recoveryNote: string;
 };
 export type ShareImage = (kind: ShareKind, page: SharePage, options: { card: ShareCard; hideNumbers: boolean }) => Promise<Blob>;
@@ -52,7 +52,7 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
     strength: explanation.strength.text,
     watchout: explanation.watchout.text,
     next: explanation.nextAction.text,
-    leadNote: LEAD_NOTE,
+    leadTag: LEAD_TAG,
     recoveryNote: RECOVERY_MARGIN_NOTE,
   };
 }
@@ -75,7 +75,7 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
         <strong>{lead.value}</strong>
         <p>
           <span>{lead.label}</span>
-          <small>{card.leadNote}</small>
+          <small>{LEAD_NOTE}</small>
         </p>
       </div>
       <blockquote className="rc-oracle"><p>“{card.oracle}”</p></blockquote>
