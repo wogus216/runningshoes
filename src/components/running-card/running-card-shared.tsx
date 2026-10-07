@@ -6,9 +6,10 @@ import { trackRunner } from '@/lib/runner-analysis/track';
 import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
 import { getCharacterPresentation, leadAxisOf, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { readSharedRunnerCard, type SharedRunnerCard } from '@/lib/runner-analysis/share';
+import { RunnerPortrait } from './running-card-portrait';
 import { RunnerScores } from './running-card-scores';
 
-// 공유 링크로 들어온 화면(D11). 링크에 담긴 것(인물·세 점수)과 인물에 딸린 문구(가문·칭호·신탁)만 보인다.
+// 공유 링크로 들어온 화면(D11). 링크에 담긴 것(인물·세 점수)과 인물에 딸린 것(이미지 S5-C·가문·칭호·신탁)만 보인다.
 // 근거·강점·맹점·다음 행동은 보내는 사람의 기록에서 나온 것이라 링크로 되살릴 수 없고, 메달도 기록 동전이라 그리지 않는다.
 // 광고 슬롯은 두지 않는다(스펙 186행 '공유 링크로 들어온 사람은 광고 없이'). 아래 '내 메달 만들기'가 새 흐름을 연다.
 export default function RunningCardShared({ raw, onStart }: { raw: string; onStart: () => void }) {
@@ -51,6 +52,8 @@ export default function RunningCardShared({ raw, onStart }: { raw: string; onSta
       <section className="rc-result rc-shared" aria-labelledby="rc-shared-title">
         <Masthead />
         <p className="rc-from">공유받은 러닝 카드 · 지난 28일</p>
+        {/* 첫 화면 안이라 바로 받는다. 링크에 담긴 인물 한 장뿐이다. */}
+        <RunnerPortrait id={characterId} name={character.name} priority />
         <p className="rc-house">{character.house} 가문</p>
         <h2 className="rc-name" id="rc-shared-title">{character.name}</h2>
         <p className="rc-epithet">{presentation.title}</p>

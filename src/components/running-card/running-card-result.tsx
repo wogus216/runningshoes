@@ -8,6 +8,7 @@ import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, LEAD_NOTE, LEAD_TAG, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
+import { RunnerPortrait } from './running-card-portrait';
 import { RunnerScores } from './running-card-scores';
 
 export type ShareKind = 'story' | 'feed';
@@ -57,7 +58,7 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
   };
 }
 
-// 결과 카드(S4, 설계 §3-2). 표지(가문·인물·칭호·대표 수치·신탁) → 분석 내지(세 점수·근거 2·강점·맹점·다음 14일)
+// 결과 카드(S4, 설계 §3-2). 표지(인물 이미지 S5-C·가문·인물·칭호·대표 수치·신탁) → 분석 내지(세 점수·근거 2·강점·맹점·다음 14일)
 // → 회복 여유 정의 → 광고 1 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
 export function RunningCardResult({ judged, shareImage, onRestart }: { judged: JudgedRunner; shareImage: ShareImage; onRestart: () => void }) {
   const { analysis, snapshot } = judged;
@@ -68,6 +69,8 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
 
   return (
     <section className="rc-result" id="rc-result" aria-labelledby="rc-result-name">
+      {/* 메달 아래라 첫 화면 밖이다 — 지연 로드(next/image 기본). 결과가 나온 인물 한 장만 받는다. */}
+      <RunnerPortrait id={character.id} name={character.name} />
       <p className="rc-house">{character.house} 가문</p>
       <h2 className="rc-name" id="rc-result-name" tabIndex={-1}>{character.name}</h2>
       <p className="rc-epithet">{card.title}</p>

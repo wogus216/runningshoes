@@ -8,6 +8,13 @@
 .rcm .rc-result h2,.rcm .rc-result h3{color:inherit}
 .rcm .rc-result h2:focus{outline:none}
 
+/* Character portrait (S5-C proposal). The frame takes its size from aspect-ratio and max-height before the image
+   arrives, so nothing below it moves (CLS 0). The cap keeps the name on screen after '분석 펼쳐보기' scrolls here
+   (375×667: 56svh = 373px). Faces sit in the upper third of the 9:16 originals, hence the 22% focus. */
+.rcm .rc-portrait{position:relative;width:100%;aspect-ratio:4/5;max-height:56svh;margin:0 0 22px;overflow:hidden;border-radius:16px;background:var(--ink-2)}
+.rcm .rc-portrait img{object-fit:cover;object-position:50% 22%}
+.rcm .rc-portrait figcaption{position:absolute;right:10px;bottom:10px;padding:3px 8px;border-radius:10px;background:rgba(23,21,15,.62);font-size:11px;line-height:1.4;color:var(--dim-70)}
+
 .rcm .rc-house{font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
 .rcm .rc-name{margin-top:8px;font-size:40px;font-weight:480;line-height:1.1;letter-spacing:-.045em}
 .rcm .rc-epithet{margin-top:8px;font-size:17px;font-weight:500;line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
@@ -88,6 +95,8 @@
 .rcm .rc-shared .rc-mast>span{font-size:14px;color:var(--dim-60)}
 .rcm .rc-shared .rc-from{margin-top:28px;font-size:14px;color:var(--dim-60)}
 .rcm .rc-shared .rc-house{display:block;margin-top:18px}
+/* Lower cap here: the fixed '내 메달 만들기' bar covers the bottom ~80px, and the name must clear it on 375×667. */
+.rcm .rc-shared .rc-portrait{margin-top:18px;max-height:44svh}
 /* 내 메달 만들기: 짧은 화면(375×667)에서도 보이게 화면 아래에 고정한다. sticky 는 html·body 의 overflow-x:hidden
    (globals.css) 때문에 붙지 않는다. 고정한 만큼 화면 아래를 비운다. */
 .rcm .rc-shared{padding-bottom:calc(112px + env(safe-area-inset-bottom))}
