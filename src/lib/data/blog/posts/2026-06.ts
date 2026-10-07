@@ -571,8 +571,8 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>셋 다 카본 없는 200g대 경량 트레이너</strong>지만 급이 다릅니다. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>만 <strong>46.5mm 고스택 + 슈퍼폼</strong>의 진짜 "슈퍼트레이너"이고, <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>은 <strong>슈퍼폼을 가장 싸고 가볍게</strong>(36mm·223g·세일 15만대), <a href="/shoes/hoka-mach-6">마하 6</a>은 <strong>EVA 기반 통기성 올라운더</strong>(36mm·최저가 18.5만)입니다</li>
-    <li><strong>한 켤레로 롱런·마라톤 페이스 훈련·업템포를 다 → 슈퍼블라스트 3</strong>. <strong>슈퍼폼 반발을 최저가·최경량·와이드로 → 에보 SL</strong>. <strong>예산 최소 + 여름 통기성 + 전통적 데일리감 → 마하 6</strong>입니다</li>
-    <li><strong>발볼 넓으면 슈퍼블라스트 3는 탈락</strong>(와이드 없음) — 에보 SL이나 마하 6의 와이드를 고르세요. 무릎 보호·고스택 안정감을 최우선으로 보면 46.5mm 슈퍼블라스트 3가 한 수 위입니다</li>
+    <li><strong>한 켤레로 롱런·마라톤 페이스 훈련·업템포를 다 → 슈퍼블라스트 3</strong>. <strong>슈퍼폼 반발을 최저가·최경량으로 → 에보 SL</strong>. <strong>예산 최소 + 여름 통기성 + 전통적 데일리감 → 마하 6</strong>입니다</li>
+    <li><strong>발볼 넓으면 슈퍼블라스트 3는 탈락</strong>(와이드 없음) — 에보 SL도 2026년 10월 한국 공식몰 기준 와이드가 없어, 세 켤레 중엔 마하 6 와이드가 답입니다. 무릎 보호·고스택 안정감을 최우선으로 보면 46.5mm 슈퍼블라스트 3가 한 수 위입니다</li>
   </ul>
 </div>
 
@@ -595,7 +595,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>미드솔 폼</td><td>FF LEAP + FF BLAST PLUS<br><small>(슈퍼폼)</small></td><td>100% Lightstrike Pro<br><small>(슈퍼폼)</small></td><td>Supercritical EVA<br><small>(일반 EVA)</small></td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>10 / 9</strong></td><td>8 / 9</td><td>7 / 8</td></tr>
     <tr><td>최적 페이스</td><td>4:00~5:30/km</td><td>4:00~6:00/km</td><td>4:30~6:00/km</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 O</strong></td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>표준 · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 없음</strong> (2026년 10월 한국 공식몰 기준)</td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 471원</td><td>500km / 약 418원</td><td>450km / <strong>약 411원</strong></td></tr>
     <tr><td>한 줄 성격</td><td>고스택 슈퍼트레이너</td><td>슈퍼폼 가성비 데일리</td><td>여름·통기성 올라운더</td></tr>
   </tbody>
@@ -610,13 +610,13 @@ export const posts_2026_06: BlogPost[] = [
 <p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 83%의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
 
 <h3>③ 가격·발볼 — 와이드가 필요하면 답이 좁아진다</h3>
-<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 전작보다 토박스가 넓어졌지만 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 반면 에보 SL과 마하 6은 <strong>와이드 옵션이 있어</strong> 발볼 고민을 덜 수 있습니다. 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
+<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 전작보다 토박스가 넓어졌지만 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 에보 SL도 사정이 비슷합니다. RunRepeat은 Normal·Wide 두 폭으로 표기하지만, <strong>2026년 10월 아디다스 한국 공식몰에서는 에보 SL 와이드가 검색되지 않습니다</strong>(미국 공식몰도 같습니다). 표준폭 실측은 앞발 가장 넓은 곳이 97.5mm(평균 95.2mm)로 넉넉한데 엄지 위치 토박스는 71.6mm(평균 73.2mm)로, RunRepeat 표현대로 앞쪽이 급하게 좁아집니다. 그래서 세 켤레 중 <strong>와이드가 있는 건 마하 6뿐</strong>입니다. 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
 
 <div class="callout success">
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 정리</p>
-    <p><strong>슈퍼블라스트 3 = 46.5mm 고스택 + 슈퍼폼의 진짜 슈퍼트레이너</strong>(한 켤레로 롱런·마라톤 훈련까지, 단 비싸고 와이드 없음). <strong>에보 SL = 슈퍼폼 반발을 가장 싸고 가볍게</strong>(최경량 223g·세일 15만대·와이드, 단 스택 낮음). <strong>마하 6 = 통기성 최강 가성비 올라운더</strong>(최저가 18.5만·여름 쾌적, 단 EVA라 겨울에 단단). 세 켤레 모두 카본 없는 경량 트레이너라는 큰 틀은 같습니다.</p>
+    <p><strong>슈퍼블라스트 3 = 46.5mm 고스택 + 슈퍼폼의 진짜 슈퍼트레이너</strong>(한 켤레로 롱런·마라톤 훈련까지, 단 비싸고 와이드 없음). <strong>에보 SL = 슈퍼폼 반발을 가장 싸고 가볍게</strong>(최경량 223g·세일 15만대, 단 스택 낮고 한국 공식몰 와이드 없음). <strong>마하 6 = 통기성 최강 가성비 올라운더</strong>(최저가 18.5만·여름 쾌적, 단 EVA라 겨울에 단단). 세 켤레 모두 카본 없는 경량 트레이너라는 큰 틀은 같습니다.</p>
   </div>
 </div>
 
@@ -626,10 +626,10 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td>한 켤레로 롱런·마라톤 페이스 훈련·업템포를 다 소화</td><td><strong>슈퍼블라스트 3</strong></td></tr>
     <tr><td>25km+ 장거리에서 무릎·발 보호(고스택)가 최우선</td><td><strong>슈퍼블라스트 3</strong></td></tr>
-    <tr><td>슈퍼폼 반발을 최저가·최경량으로 + 발볼 넓음</td><td><strong>에보 SL</strong> (세일 15만대·223g·와이드)</td></tr>
+    <tr><td>슈퍼폼 반발을 최저가·최경량으로</td><td><strong>에보 SL</strong> (세일 15만대·223g)</td></tr>
     <tr><td>인터벌·짧은 템포처럼 가볍고 날렵한 느낌</td><td><strong>에보 SL</strong> 또는 <strong>마하 6</strong></td></tr>
     <tr><td>예산이 가장 빠듯하다 / 한여름 통기성 중시</td><td><strong>마하 6</strong> (18.5만·통기성 5/5)</td></tr>
-    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>에보 SL</strong> 또는 <strong>마하 6</strong> (슈블 3는 와이드 없음)</td></tr>
+    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>마하 6</strong> 와이드 (슈블 3·에보 SL은 2026년 10월 한국 공식몰 기준 와이드 없음)</td></tr>
   </tbody>
 </table>
 
@@ -638,9 +638,9 @@ export const posts_2026_06: BlogPost[] = [
   <p class="faq-q">Q. 슈퍼트레이너가 정확히 뭔가요? 카본화랑 뭐가 다른가요?</p>
   <p class="faq-a">A. 슈퍼트레이너는 <strong>카본 플레이트 없이 슈퍼폼 + 높은 스택</strong>으로 만든 다목적 훈련화입니다. 카본화처럼 강하게 튕겨주진 않지만, 플레이트 특유의 불안정함·딱딱함이 없어 <strong>매일 훈련해도 발·종아리 부담이 적습니다.</strong> 그래서 카본화는 대회·포인트 훈련 전용으로 아끼고, 평소 롱런·템포는 슈퍼트레이너로 굴리는 조합이 요즘 정석이에요. 셋 중 슈퍼블라스트 3가 가장 슈퍼트레이너 정의에 부합하고, 마하 6는 EVA 기반이라 엄밀히는 "경량 데일리"에 가깝습니다.</p>
   <p class="faq-q">Q. 첫 슈퍼트레이너로는 어느 걸 추천하나요?</p>
-  <p class="faq-a">A. 예산이 허락하면 <strong>슈퍼블라스트 3</strong>입니다 — 46.5mm 고스택이 어떤 페이스에서도 실패가 없고, 한 켤레로 훈련 대부분을 커버합니다. 다만 26만원이 부담되거나 발볼이 넓다면 <strong>에보 SL(세일 15만대)</strong>이 슈퍼폼 입문으로 가장 현실적입니다. 가볍고, 와이드도 있고, 가성비가 압도적이에요.</p>
+  <p class="faq-a">A. 예산이 허락하면 <strong>슈퍼블라스트 3</strong>입니다 — 46.5mm 고스택이 어떤 페이스에서도 실패가 없고, 한 켤레로 훈련 대부분을 커버합니다. 다만 26만원이 부담되면 <strong>에보 SL(세일 15만대)</strong>이 슈퍼폼 입문으로 가장 현실적입니다. 가볍고 가성비가 압도적이에요. 단 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 없어, 발볼이 넓어 와이드가 꼭 필요하다면 세 켤레 중엔 <strong>마하 6 와이드</strong>뿐입니다.</p>
   <p class="faq-q">Q. 발볼이 넓은데 슈퍼블라스트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 전작보다 토박스가 넓어졌다지만 표준은 표준이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 와이드가 있는 <strong>에보 SL</strong>이나 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요.</p>
+  <p class="faq-a">A. 권하기 어렵습니다. 전작보다 토박스가 넓어졌다지만 표준은 표준이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 세 켤레 중 와이드가 있는 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요. 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 판매되지 않습니다.</p>
   <p class="faq-q">Q. 이 신발들로 마라톤 대회에 나가도 되나요?</p>
   <p class="faq-a">A. 됩니다. 특히 슈퍼블라스트 3는 46.5mm 슈퍼폼으로 <strong>서브-4~서브-3.5 러너의 풀코스 레이스화로도 충분</strong>합니다. 다만 기록 단축이 목적인 빠른 러너라면 카본화가 한 수 위예요. "완주·꾸준한 페이스"가 목표면 이 세 켤레로도 대회를 잘 치를 수 있습니다. 카본화와의 차이가 궁금하면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 보세요.</p>
   <p class="faq-q">Q. 더 보고 싶은 대안이 있나요?</p>
@@ -7169,7 +7169,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>정체 — 아디오스 프로의 폼을 그대로</h2>
-<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>83% 에너지 리턴은 동급 최고 수준</strong>이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋고, 와이드 옵션까지 있죠.</p>
+<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>83% 에너지 리턴은 동급 최고 수준</strong>이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋습니다.</p>
 
 <table>
   <thead><tr><th>항목</th><th>Evo SL</th></tr></thead>
@@ -7178,7 +7178,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>플레이트</td><td><strong>없음</strong> (카본 아님)</td></tr>
     <tr><td>무게 / 스택 / 드롭</td><td>223g / 36·28mm / 8mm</td></tr>
     <tr><td>에너지 리턴</td><td><strong>83%</strong> (동급 최고)</td></tr>
-    <tr><td>발볼</td><td>표준 (와이드 옵션 O)</td></tr>
+    <tr><td>발볼</td><td>표준 — 엄지 위치 토박스 71.6mm(RunRepeat 평균 73.2mm) · 와이드는 한국 공식몰 미판매(2026년 10월 확인)</td></tr>
     <tr><td>가격</td><td>209,000원</td></tr>
   </tbody>
 </table>

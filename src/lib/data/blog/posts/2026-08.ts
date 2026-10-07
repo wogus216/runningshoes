@@ -3354,7 +3354,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
     title: '에보 SL vs 노바블라스트 6 차이 — 3만원 아끼면 km당 비용이 63% 싸진다 | 반발이냐 수명이냐',
     description:
-      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7이지만 쿠션 9에 700km, km당 256원으로 63% 경제적입니다. 둘 다 와이드 옵션이 있고 평발 적합성도 같아, 실제 갈림길은 반발과 총비용입니다.',
+      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7이지만 쿠션 9에 700km, km당 256원으로 63% 경제적입니다. 평발 적합성은 같지만 와이드는 노바 6에만 있어(에보 SL은 2026년 10월 한국 공식몰 기준 없음), 발볼이 넓지 않다면 갈림길은 반발과 총비용입니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -3375,7 +3375,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼이 넓으면 어느 쪽인가요?',
         answer:
-          '둘 다 가능합니다. 토박스가 모두 표준 폭이고 와이드 옵션도 양쪽 다 있습니다. 평발 적합성도 둘 다 보통(fair)으로 같아, 발 조건으로는 갈리지 않습니다.',
+          '노바 6입니다. 표준폭 토박스 실측은 에보 SL 71.6mm·노바 6 71.0mm(RunRepeat, 평균 73.2mm)로 비슷하지만, 와이드 버전은 노바 6에만 있습니다. 에보 SL은 2026년 10월 아디다스 한국 공식몰 기준 와이드가 판매되지 않습니다. 평발 적합성은 둘 다 보통(fair)으로 같습니다.',
       },
       {
         question: '한 켤레만 산다면요?',
@@ -3389,7 +3389,7 @@ export const posts_2026_08: BlogPost[] = [
   <ul>
     <li><strong>둘 다 플레이트 없는 고성능 데일리</strong> — <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a> 209,000원·223g·반발 9 / <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 179,000원·249g·쿠션 9</li>
     <li><strong>정가는 3만원 차인데 km당은 63% 벌어집니다</strong> — 418원 대 <strong>256원</strong>(내구 500km 대 700km)</li>
-    <li><strong>발 조건으로는 안 갈립니다</strong> — 토박스 표준, 와이드 옵션, 평발 적합성이 전부 같습니다. 판단은 반발이냐 수명이냐로 좁혀집니다</li>
+    <li><strong>발볼이 넓어 와이드가 필요하면 노바 6</strong> — 표준폭 토박스는 비슷하지만(에보 SL 71.6mm·노바 6 71.0mm) 와이드는 노바 6에만 있습니다(에보 SL은 2026년 10월 한국 공식몰 기준 없음). 그 밖에는 판단이 반발이냐 수명이냐로 좁혀집니다</li>
   </ul>
 </div>
 
@@ -3416,7 +3416,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>플레이트</td><td>없음</td><td>없음 <em>(동일)</em></td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / <strong>9</strong></td><td><strong>9</strong> / 7</td></tr>
     <tr><td>안정성</td><td>6/10</td><td>6/10 <em>(동일)</em></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준 / 있음</td><td>표준 / 있음 <em>(동일)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / <strong>없음</strong> <em>(한국 공식몰, 2026-10)</em></td><td>표준(71.0mm) / <strong>있음</strong></td></tr>
     <tr><td>평발 적합성</td><td>보통</td><td>보통 <em>(동일)</em></td></tr>
     <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>700km · 256원</strong></td></tr>
     <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:30–6:30 /km</td></tr>
@@ -4401,7 +4401,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     title: '아디제로 Evo SL vs 보스턴 13 차이 — 3만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
     description:
-      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(179,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 325원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드 옵션은 에보 SL에만 있어 발볼 넓은 러너는 여기서 갈립니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
+      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(179,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 325원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4422,7 +4422,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼이 넓은데 어느 쪽인가요?',
         answer:
-          '에보 SL입니다. 두 켤레 모두 토박스는 표준 폭이지만 와이드 옵션은 에보 SL에만 있습니다. 보스턴 13은 와이드가 없어서, 발볼이 넓다면 표준 폭 하나로 승부해야 합니다. 매장 착화가 어렵다면 이 항목만으로 에보 SL이 안전한 선택입니다.',
+          '둘 중에선 차이가 크지 않습니다. 2026년 10월 아디다스 한국 공식몰 기준 두 켤레 모두 와이드 버전이 없고, RunRepeat 실측 엄지 위치 토박스도 에보 SL 71.6mm·보스턴 13 70.6mm로 둘 다 평균(73.2mm)보다 조금 좁습니다. 발볼이 넓다면 두 켤레 모두 매장에서 먼저 신어 보고, 와이드가 꼭 필요하면 아디다스에서는 한국 공식몰에 와이드 버전이 있는 슈퍼노바 라이즈 3·아디제로 SL2를 보세요.',
       },
       {
         question: '평발이거나 발이 안쪽으로 무너지는 편이면요?',
@@ -4441,7 +4441,7 @@ export const posts_2026_08: BlogPost[] = [
   <ul>
     <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(179,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
     <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 325원 대 418원으로 22% 유리합니다</li>
-    <li><strong>발볼 넓은 한국 러너는 여기서 끝납니다</strong> — 와이드 옵션이 <strong>에보 SL에만</strong> 있습니다. 보스턴 13은 표준 폭 하나뿐입니다</li>
+    <li><strong>발볼로는 갈리지 않습니다</strong> — 2026년 10월 한국 공식몰 기준 <strong>두 켤레 모두 와이드가 없고</strong>, 엄지 위치 토박스 실측도 에보 SL 71.6mm·보스턴 13 70.6mm로 1mm 차이입니다(RunRepeat, 평균 73.2mm)</li>
   </ul>
 </div>
 
@@ -4449,7 +4449,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>데일리부터 템포까지 한 켤레로 가볍게 굴리고 싶다면 에보 SL</strong>, <strong>훈련 강도가 높고 하프 레이스까지 겸할 생각이면 보스턴 13</strong>입니다. 발볼이 넓으면 에보 SL, 발이 안쪽으로 무너지는 편이면 보스턴 13으로 갈립니다. 각각을 다른 상대와 붙인 글도 있습니다 — <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">에보 SL이 낀 슈퍼트레이너 3파전</a>, <a href="/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026">보스턴 13이 낀 템포 트레이너 3파전</a>.</p>
+    <p><strong>데일리부터 템포까지 한 켤레로 가볍게 굴리고 싶다면 에보 SL</strong>, <strong>훈련 강도가 높고 하프 레이스까지 겸할 생각이면 보스턴 13</strong>입니다. 발이 안쪽으로 무너지는 편이면 보스턴 13 쪽이고, 발볼은 둘 다 한국 공식몰 와이드가 없어 갈림길이 되지 않습니다. 각각을 다른 상대와 붙인 글도 있습니다 — <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">에보 SL이 낀 슈퍼트레이너 3파전</a>, <a href="/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026">보스턴 13이 낀 템포 트레이너 3파전</a>.</p>
   </div>
 </div>
 
@@ -4469,7 +4469,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>쿠션 / 반발</td><td><strong>8</strong> / 9</td><td>7 / 9</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
     <tr><td>아웃솔</td><td>컨티넨탈 러버</td><td>컨티넨탈 러버</td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준 / <strong>있음</strong></td><td>표준 / <strong>없음</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / 없음</td><td>표준(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
     <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
     <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 325원</strong></td></tr>
     <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:00–5:30 /km</td></tr>
@@ -4496,7 +4496,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>약점은 <strong>안정성 6/10</strong>입니다. 안정 장치가 사실상 없는 중립화라, 지치면 발이 안쪽으로 무너지는 러너에게는 장거리에서 불리합니다. 내구도 500km로 보스턴 13보다 짧아 km당 418원이 됩니다.</p>
 
-<p><strong>✅ 이런 분께</strong> — 가벼운 발놀림을 우선하는 분, 조깅과 템포를 한 켤레로 해결하려는 분, <strong>발볼이 넓어 와이드가 필요한 분</strong>, 족저근막염 이력이 있는 분(예방 등급 excellent).</p>
+<p><strong>✅ 이런 분께</strong> — 가벼운 발놀림을 우선하는 분, 조깅과 템포를 한 켤레로 해결하려는 분, 족저근막염 이력이 있는 분(예방 등급 excellent).</p>
 
 <h2>보스턴 13 — 굴려주고 잡아주는 쪽</h2>
 
@@ -4506,14 +4506,14 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>그리고 <strong>km당 325원</strong>입니다. 3만원 싼 데다 내구가 50km 길어, 총비용에서 22% 유리합니다.</p>
 
-<p>약점은 두 가지입니다. <strong>와이드 옵션이 없고</strong>, 적정 페이스가 4:00–5:30으로 느린 조깅에는 무겁게 느껴질 수 있습니다. 입문 단계에서 첫 신발로 고르기엔 성격이 뚜렷한 편입니다.</p>
+<p>약점은 두 가지입니다. <strong>와이드 옵션이 없고</strong>(에보 SL도 마찬가지), 적정 페이스가 4:00–5:30으로 느린 조깅에는 무겁게 느껴질 수 있습니다. 입문 단계에서 첫 신발로 고르기엔 성격이 뚜렷한 편입니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 템포·인터벌 비중이 큰 중급 이상 러너, 하프 레이스를 같은 신발로 뛸 분, 발이 안쪽으로 무너지는 편인 분, 총비용을 중시하는 분.</p>
 
 <h2>내게 맞는 건?</h2>
 
 <ul>
-  <li><strong>발볼이 넓다</strong> → <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>. 와이드가 있는 쪽이 여기뿐입니다. 다른 조건을 다 이깁니다</li>
+  <li><strong>발볼이 넓어 와이드가 꼭 필요하다</strong> → 둘 다 아닙니다. 2026년 10월 한국 공식몰 기준 두 켤레 모두 와이드가 없습니다. 아디다스에서는 와이드 버전이 있는 <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>·<a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>를 보세요</li>
   <li><strong>평발이거나 후반에 발이 무너진다</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>(안정성 8, 평발 good)</li>
   <li><strong>주 3~4회 조깅 + 가끔 템포</strong> → 에보 SL. 페이스 폭이 넓습니다</li>
   <li><strong>주 5회 이상 + 포인트 훈련이 고정</strong> → 보스턴 13. 굴림이 훈련에서 값을 합니다</li>
@@ -4534,7 +4534,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 초보인데 둘 중 하나를 첫 신발로 사도 되나요?</p>
-    <p class="faq-a">A. 굳이 고르면 에보 SL입니다. 페이스 폭이 넓고 와이드가 있어 실패 확률이 낮습니다. 보스턴 13은 템포·인터벌을 전제로 설계돼 있어 첫 신발로는 성격이 뚜렷한 편입니다. 다만 둘 다 20만원 안팎이라, 입문이라면 더 무난한 가격대부터 보는 것도 방법입니다.</p>
+    <p class="faq-a">A. 굳이 고르면 에보 SL입니다. 적정 페이스 폭이 4:00–6:00으로 넓어 실패 확률이 낮습니다. 보스턴 13은 템포·인터벌을 전제로 설계돼 있어 첫 신발로는 성격이 뚜렷한 편입니다. 다만 둘 다 20만원 안팎이라, 입문이라면 더 무난한 가격대부터 보는 것도 방법입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 아디다스 라인에서 이 둘의 위치는 어디쯤인가요?</p>

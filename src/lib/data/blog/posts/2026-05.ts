@@ -7889,7 +7889,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong>순수 퍼포먼스 목적 러너</strong> — 같은 미드솔의 일반 에보 SL이 15만원(세일가)에 살 수 있습니다. 좌우 짝짝이 색감이 거슬리면 본전 못 뽑음</li>
   <li><strong>안정화·과내전 러너</strong> — 에보 SL은 안정성 6/10. 베이스 자체가 중립~빠른 페이스용이라 발 안정성 필요한 러너에게는 부적합. <a href="/shoes/asics-gel-kayano-32">카야노 32</a>나 <a href="/shoes/new-balance-860-v15">860 v15</a>가 정답</li>
-  <li><strong>발볼 넓은 한국 러너</strong> — BAPE 협업 버전은 표준 폭만 출시. 와이드 옵션 없음. 일반 에보 SL의 와이드(2E)를 살 거면 그쪽이 더 합리적</li>
+  <li><strong>발볼 넓은 한국 러너</strong> — BAPE 협업 버전은 표준 폭만 출시. 와이드 옵션 없음. 일반 에보 SL도 2026년 10월 한국 공식몰 기준 와이드가 없고, 표준폭 엄지 위치 토박스가 71.6mm(RunRepeat 평균 73.2mm)라 발볼이 넓다면 매장에서 먼저 신어 보세요</li>
 </ul>
 
 <h2>2026 아디다스 협업 흐름 정리</h2>
@@ -7941,7 +7941,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🏃</span>
   <div class="callout-body">
     <p class="callout-title">러닝 우선이라면 일반 에보 SL이 정답</p>
-    <p>BAPE 협업이 끌리지 않거나 한정판 게임이 부담스럽다면, 일반 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>이 같은 성능을 15만원(세일가)에 제공합니다. 와이드 옵션까지 있어 한국 러너에게 더 적합. 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
+    <p>BAPE 협업이 끌리지 않거나 한정판 게임이 부담스럽다면, 일반 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>이 같은 성능을 15만원(세일가)에 제공합니다. 다만 일반판도 2026년 10월 한국 공식몰 기준 와이드는 없습니다. 발볼 넓은 러너는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a>도 함께 참고하세요.</p>
   </div>
 </div>
 

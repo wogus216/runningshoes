@@ -1887,7 +1887,7 @@ export const posts_2026_07: BlogPost[] = [
       {
         question: '하이퍼부스트 엣지, 발볼 넓은 사람도 신을 수 있나요?',
         answer:
-          '권하기 어렵습니다. 토박스 폭 자체는 71.4mm로 표준이지만 높이가 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 와이드가 있는 아디제로 Evo SL 쪽이 현실적입니다.',
+          '권하기 어렵습니다. 토박스 폭 자체는 71.4mm로 표준이지만 높이가 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 아디다스 안에서는 토박스 74.5mm(RunRepeat 평균 73.2mm)에 한국 공식몰 와이드 버전도 있는 슈퍼노바 라이즈 3 쪽이 현실적입니다(2026년 10월 확인). 아디제로 Evo SL은 같은 시점 한국 공식몰에 와이드가 없습니다.',
       },
       {
         question: '힐 칼라가 쓸린다는 게 무슨 말인가요?',
@@ -1977,7 +1977,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>같은 <strong>플레이트 없는 슈퍼 트레이너</strong> 안에서 성격이 갈립니다. 참고로 아디다스는 이 신발을 "아디다스 최초의 무플레이트 슈퍼 트레이너"로 소개하는데, <strong>업계 최초는 아닙니다</strong> — 아식스 슈퍼블라스트가 먼저 이 자리를 열었습니다.</p>
 <ul>
   <li><strong><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></strong>(25.9만·239g) — 가장 직접적인 경쟁작. 듀얼 폼이라 <strong>더 안정적이고 갑피 평가가 낫습니다.</strong> 대신 엣지가 단일 폼이라 라이드가 더 매끄럽습니다</li>
-  <li><strong><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></strong>(20.9만·223g) — 같은 아디다스지만 <strong>직접 경쟁이 아닙니다.</strong> Evo SL은 짧고 빠른 거리, 엣지는 길고 느린 거리 + 맥시멀 쿠션. <strong>더 싸고 가볍고 와이드도 있습니다</strong>(<a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>)</li>
+  <li><strong><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></strong>(20.9만·223g) — 같은 아디다스지만 <strong>직접 경쟁이 아닙니다.</strong> Evo SL은 짧고 빠른 거리, 엣지는 길고 느린 거리 + 맥시멀 쿠션. <strong>더 싸고 가볍습니다</strong>(단 2026년 10월 한국 공식몰 기준 와이드는 없음, <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>)</li>
   <li><strong><a href="/shoes/asics-megablast">아식스 메가블라스트</a></strong> — 218g로 더 가볍고 빠르며 갑피가 낫지만, 덜 안정적이고 더 비쌉니다</li>
   <li><strong><a href="/shoes/nike-vomero-plus">나이키 보메로 플러스</a></strong>(272g) — 엣지가 25g 가볍고 전족부 반발이 강한 대신, 보메로가 더 안정적입니다</li>
   <li><strong><a href="/shoes/hoka-mach-6">호카 마하 6</a></strong>(18.5만) — 예산을 줄이면서 가벼운 템포화를 원할 때. 스택은 훨씬 낮습니다</li>
