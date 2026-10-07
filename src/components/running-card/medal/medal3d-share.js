@@ -1,10 +1,11 @@
 // Share images (S4, D6): two pages drawn straight onto a canvas, in M3's grammar (ink page, masthead, allrunabout.com
-// bottom right). 1 = the cover: the medal with its struck plate, then the house, the figure, the epithet and the oracle.
+// bottom right). 1 = the cover: the medal with its struck plate, then the house, the figure, the epithet and the oracle —
+// or, when the figure has a picture (S5-D), the picture over the whole page with the medal small beside the name.
 // 2 = the analysis page: the three scores, the two pieces of evidence, strength, watch-out, the next 14 days, and what
 // 회복 여유 is not. The medal itself is drawn by the caller (a front-on WebGL render, or the flat drawing); this file only
 // lays out the page around it.
 // card (running-card-result.tsx): { house, name, title, oracle, scores: [{ label, value, lead }], evidence: [{ text,
-// hiddenText }], strength, watchout, next, leadTag, recoveryNote }. Nothing about where the numbers came from (예시·입력 경로·
+// hiddenText }], strength, watchout, next, leadTag, recoveryNote, image? }. Nothing about where the numbers came from (예시·입력 경로·
 // fallbacksUsed) is in it.
 // Text: the masthead keeps the medal subset (StudySans); the card's sentences use the page's Pretendard Variable (the
 // site's dynamic subset, loaded by unicode range for exactly these letters — the result card shows the same sentences),
@@ -64,13 +65,9 @@ function address(g, W, H, story) {
   g.fillText('allrunabout.com', W - M, H - (story ? 64 : 36));
 }
 
-// Page 1. renderFigure(fig) draws the medal into fig ({ x, y, w, h, fit }) and returns its fit.
-export async function drawCover(g, kind, card, renderFigure) {
-  await fontsFor(card);
-  const [W, H] = SHARE_SIZES[kind], story = kind === 'story', width = W - 2 * M;
-  g.fillStyle = TH.bg; g.fillRect(0, 0, W, H);
-  const rule = masthead(g, W, story);
-  // The words, from the bottom up, so the medal takes what is left.
+// The words of page 1, from the bottom up (so the medal takes what is left): the oracle (two lines at most), a short
+// rule, the epithet, the name, the house.
+function coverWords(g, H, story, card, width) {
   const z = story ? { oracle: 46, lh: 64, title: 44, name: 128, house: 34, gap: 92 } : { oracle: 36, lh: 50, title: 36, name: 96, house: 28, gap: 70 };
   font(g, 450, z.oracle);
   const oracle = wrap(g, `“${card.oracle}”`, width).slice(0, 2);
@@ -80,7 +77,33 @@ export async function drawCover(g, kind, card, renderFigure) {
   const titleY = ruleY - z.title * .95;
   const nameY = titleY - z.title * 1.55;
   const houseY = nameY - z.name * 1.08;
-  const figure = { x: 0, y: rule + 4, w: W, h: houseY - z.house - (story ? 36 : 22) - rule - 4, fit: story ? { widthShare: .86, heightShare: .86, bottomPad: .02 } : { widthShare: .70, heightShare: .88, bottomPad: .02 } };
+  return { z, oracle, firstOracle, ruleY, titleY, nameY, houseY };
+}
+// nameWidth: the house and the name give way to the medal beside them on the picture cover.
+function drawWords(g, card, L, width, nameWidth = width) {
+  g.textAlign = 'left';
+  g.fillStyle = TH.part; fitText(g, `${card.house} 가문`, M, L.houseY, nameWidth, L.z.house, 600);
+  g.fillStyle = TH.ink; fitText(g, card.name, M, L.nameY, nameWidth, L.z.name, 760);
+  fitText(g, card.title, M, L.titleY, width, L.z.title, 500);
+  g.fillStyle = TH.rule; g.fillRect(M, L.ruleY, 120, 3);
+  g.fillStyle = TH.ink; font(g, 450, L.z.oracle);
+  L.oracle.forEach((line, i) => g.fillText(line, M, L.firstOracle + i * L.z.lh));
+}
+
+const AI_LABEL = 'AI 생성 이미지';
+const loadPicture = src => new Promise(resolve => { const img = new Image(); img.onload = () => resolve(img); img.onerror = () => resolve(null); img.src = src; });
+
+// Page 1. renderFigure(fig, target?) draws the medal into fig ({ x, y, w, h, fit }) on target (default: the page) and
+// returns its fit. With the figure's picture (card.image, S5-D) the page is the picture with the medal on it; without one
+// (the 14 held back for their marks), or if it does not load, the page is the medal cover.
+export async function drawCover(g, kind, card, renderFigure) {
+  const [picture] = await Promise.all([card.image ? loadPicture(card.image) : null, fontsFor(card, AI_LABEL)]);
+  const [W, H] = SHARE_SIZES[kind], story = kind === 'story', width = W - 2 * M;
+  if (picture) return pictureCover(g, W, H, story, width, card, renderFigure, picture);
+  g.fillStyle = TH.bg; g.fillRect(0, 0, W, H);
+  const rule = masthead(g, W, story);
+  const L = coverWords(g, H, story, card, width);
+  const figure = { x: 0, y: rule + 4, w: W, h: L.houseY - L.z.house - (story ? 36 : 22) - rule - 4, fit: story ? { widthShare: .86, heightShare: .86, bottomPad: .02 } : { widthShare: .70, heightShare: .88, bottomPad: .02 } };
   const glow = g.createRadialGradient(W / 2, figure.y + figure.h * .64, 0, W / 2, figure.y + figure.h * .64, W * .55);
   glow.addColorStop(0, TH.glow); glow.addColorStop(1, 'rgba(0,0,0,0)');
   g.fillStyle = glow; g.fillRect(0, figure.y, W, figure.h);
@@ -89,13 +112,54 @@ export async function drawCover(g, kind, card, renderFigure) {
   const fit = renderFigure(figure);
   g.restore();
   g.fillStyle = TH.rule; g.fillRect(M, rule, W - 2 * M, 2);
-  g.textAlign = 'left';
-  g.fillStyle = TH.part; fitText(g, `${card.house} 가문`, M, houseY, width, z.house, 600);
-  g.fillStyle = TH.ink; fitText(g, card.name, M, nameY, width, z.name, 760);
-  fitText(g, card.title, M, titleY, width, z.title, 500);
-  g.fillStyle = TH.rule; g.fillRect(M, ruleY, 120, 3);
-  g.fillStyle = TH.ink; font(g, 450, z.oracle);
-  oracle.forEach((line, i) => g.fillText(line, M, firstOracle + i * z.lh));
+  drawWords(g, card, L, width);
+  address(g, W, H, story);
+  return fit;
+}
+
+// Page 1 with the picture (운영자 결정 2026-10-07): the picture covers the page, shaded under the masthead and down into
+// the words; the medal stands small at the right beside the house and the name, its ribbon fading into the picture.
+// The picture says 'AI 생성 이미지', as on the result card.
+function pictureCover(g, W, H, story, width, card, renderFigure, picture) {
+  // A story page (9:16, as the picture) shows it whole. A feed page (4:5) cuts it: the head (imageFocus, its height in the
+  // picture) goes to 36% of the page, as far as the picture reaches — heads sit anywhere from 13% to 44% of the pictures.
+  const s = Math.max(W / picture.naturalWidth, H / picture.naturalHeight), pw = picture.naturalWidth * s, ph = picture.naturalHeight * s;
+  const py = Math.min(0, Math.max(H - ph, H * .36 - (card.imageFocus ?? .3) * ph));
+  g.fillStyle = TH.bg; g.fillRect(0, 0, W, H);
+  g.imageSmoothingEnabled = true; g.imageSmoothingQuality = 'high';
+  g.drawImage(picture, (W - pw) / 2, py, pw, ph);
+  const L = coverWords(g, H, story, card, width), wordsTop = L.houseY - L.z.house;
+  const topShade = story ? 360 : 300, top = g.createLinearGradient(0, 0, 0, topShade);
+  top.addColorStop(0, 'rgba(23,21,15,.62)'); top.addColorStop(1, 'rgba(23,21,15,0)');
+  g.fillStyle = top; g.fillRect(0, 0, W, topShade);
+  const from = wordsTop - (story ? 520 : 400), low = g.createLinearGradient(0, from, 0, H);
+  low.addColorStop(0, 'rgba(23,21,15,0)');
+  low.addColorStop((wordsTop - 40 - from) / (H - from), 'rgba(23,21,15,.88)');
+  low.addColorStop(1, 'rgba(23,21,15,.96)');
+  g.fillStyle = low; g.fillRect(0, from, W, H - from);
+  const rule = masthead(g, W, story);
+  // The label on a dark pill under the masthead, right.
+  const ls = story ? 28 : 24, padX = ls * .6, padY = ls * .38;
+  font(g, 500, ls); g.textAlign = 'right'; g.textBaseline = 'alphabetic';
+  const lw = g.measureText(AI_LABEL).width, ly = rule + (story ? 36 : 28);
+  g.fillStyle = 'rgba(23,21,15,.58)'; g.beginPath();
+  if (g.roundRect) g.roundRect(W - M - lw - 2 * padX, ly, lw + 2 * padX, ls + 2 * padY, (ls + 2 * padY) / 2); else g.rect(W - M - lw - 2 * padX, ly, lw + 2 * padX, ls + 2 * padY);
+  g.fill();
+  g.fillStyle = 'rgba(247,244,237,.86)'; g.fillText(AI_LABEL, W - M - padX, ly + padY + ls * .86);
+  // The medal on its own transparent canvas (both renders leave the background clear), the top of the ribbon faded out,
+  // then set on the page with a soft shadow. Its foot sits on the name's line.
+  const mw = story ? 400 : 340, mh = Math.round(mw * 1.35), off = document.createElement('canvas');
+  off.width = mw; off.height = mh;
+  const o = off.getContext('2d');
+  const fit = renderFigure({ x: 0, y: 0, w: mw, h: mh, fit: { widthShare: .98, heightShare: .74, bottomPad: .01 } }, o);
+  o.globalCompositeOperation = 'destination-in';
+  const fade = o.createLinearGradient(0, 0, 0, mh * .3);
+  fade.addColorStop(0, 'rgba(0,0,0,0)'); fade.addColorStop(1, '#000');
+  o.fillStyle = fade; o.fillRect(0, 0, mw, mh);
+  g.save(); g.shadowColor = 'rgba(0,0,0,.5)'; g.shadowBlur = 36; g.shadowOffsetY = 10;
+  g.drawImage(off, W - M - mw, L.nameY + (story ? 14 : 10) - mh);
+  g.restore();
+  drawWords(g, card, L, width, width - fit.medalWidth - 32);
   address(g, W, H, story);
   return fit;
 }

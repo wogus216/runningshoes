@@ -22,6 +22,19 @@ describe('인물 이미지 경로', () => {
     }
   });
 
+  // 피드 공유 이미지(S5-D)는 imageFocus 로 그림을 자른다. 그림이 돌아오면 머리 위치도 같이 적어야 한다.
+  it('그림이 있는 인물은 머리 위치(imageFocus)가 0–1 사이로 있고, 없는 인물은 없다', () => {
+    for (const id of PRESENTATION_IDS) {
+      const { image, imageFocus } = getCharacterPresentation(id);
+      if (!image) {
+        expect(imageFocus, id).toBeUndefined();
+        continue;
+      }
+      expect(imageFocus, id).toBeGreaterThan(0);
+      expect(imageFocus, id).toBeLessThan(1);
+    }
+  });
+
   it('폴더에 경로 없는 이미지가 남아 있지 않다(뺀 14명 포함)', () => {
     const files = fs.readdirSync(path.join(PUBLIC, 'images/running-card')).filter((f) => f.endsWith('.webp'));
     const used = PRESENTATION_IDS.map((id) => getCharacterPresentation(id).image).filter(Boolean);
