@@ -2,6 +2,185 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'mexicana-run-with-pepsi',
+    slug: 'mexicana-run-with-pepsi',
+    title: '멕시카나런 with 펩시 접수 안내 | 11월 7일 파주 5km, 2만원에 선착순 500명',
+    description: '2026 멕시카나런 with 펩시는 11월 7일 오전 8시 30분 파주출판도시에서 열리는 5km 펀런입니다. 접수는 10월 12~14일, 참가비 2만원, 선착순 500명입니다. 공식 완주 기프트에는 멕시카나 3만원 모바일 금액권이 안내돼 있습니다. 신청 방법과 미공개 혜택 조건을 구분해 정리했습니다.',
+    thumbnail: '/images/blog/mexicana-run-with-pepsi.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-07',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['멕시카나런', '펩시', '파주 러닝', '5km 펀런', '대회 접수'],
+    event: {
+      name: '2026 멕시카나런 with 펩시',
+      startDate: '2026-11-07T08:30:00+09:00',
+      location: { name: '파주출판도시 일대' },
+      url: 'https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&mode=view',
+      offers: [{ name: '5km FUN RUN', priceKrw: 20000, availabilityEnds: '2026-10-14', url: 'https://www.mexicana.co.kr/' }],
+    },
+    raceMeta: {
+      displayTitle: '멕시카나런, 파주에서 5km 치킨레이스',
+      displaySubtitle: '11월 7일 토요일 — 2만원 · 선착순 500명',
+      raceDate: '2026-11-07',
+      registrationStart: '2026-10-12',
+      registrationEnd: '2026-10-14',
+      registrationVia: '멕시카나 홈페이지 — 공식 포스터가 안내한 신청 경로',
+      action: {
+        what: '10월 12~14일 공식 홈페이지에서 신청',
+        how: '정원은 선착순 500명입니다. 공식 공지에서 참가 신청 경로를 확인하세요. 10월 7일 확인한 포스터에는 접수 시작 시각과 별도 결제 링크가 적혀 있지 않습니다.',
+      },
+      facts: [
+        { label: '대회일', value: '11월 7일', sub: '토요일 · 08:30 출발' },
+        { label: '장소', value: '파주출판도시', sub: '공식 표기: 파주출판도시 일대' },
+        { label: '종목', value: '5km FUN RUN', sub: '기록 측정 여부는 미확인' },
+        { label: '참가비', value: '20,000원', sub: '선착순 500명' },
+        { label: '접수', value: '10/12~14', sub: '시작·마감 시각 미고지' },
+      ],
+      highlights: [
+        { badge: '500명', title: '접수 기간은 사흘, 정원은 선착순입니다', desc: '10월 12일(월)부터 14일(수)까지 신청을 받습니다. <strong>선착순 500명</strong>이므로 마지막 날까지 자리가 남는다는 보장은 없습니다. 다만 시작 시각은 공식 포스터에 없으니 임의로 자정이나 오전 10시를 가정하지 마세요.' },
+        { badge: '3만원', title: '금액권은 완주 기프트, 다른 구성은 아직 물음표입니다', desc: '공식 포스터의 <strong>완주 기프트에 멕시카나 모바일 금액권 30,000원</strong>이 안내돼 있습니다. 스타트 패키지와 다른 기프트, 애프터 파티의 상세 구성은 대부분 물음표로 가렸습니다. 금액권 사용·수령 조건은 신청 전에 확인해야 합니다.' },
+      ],
+    },
+    faqs: [
+      { question: '멕시카나런 접수는 언제, 어디서 하나요?', answer: '공식 포스터 기준 2026년 10월 12~14일 멕시카나 홈페이지에서 신청합니다. 선착순 500명이며 접수 시작 시각과 별도 결제 링크는 10월 7일 확인한 공지에 없었습니다.' },
+      { question: '참가비와 대회 날짜는 어떻게 되나요?', answer: '참가비는 20,000원입니다. 11월 7일 토요일 오전 8시 30분 파주출판도시 일대에서 출발하는 5km 펀런입니다.' },
+      { question: '멕시카나 3만원 금액권을 주나요?', answer: '공식 포스터의 완주 기프트에 멕시카나 모바일 금액권 30,000원이 안내돼 있습니다. 지급 절차·유효기간·사용 조건은 포스터에서 확인되지 않아 신청 페이지의 최종 안내를 확인해야 합니다.' },
+    ],
+    content: `
+<p>5km를 달리고 치킨과 펩시를 즐기는 가을 펀런이 파주에 열립니다. <strong>멕시카나런 with 펩시</strong>입니다. 광고 게시물만 떠돌던 단계에서 벗어나, 멕시카나가 <strong>10월 6일 공식 홈페이지에 행사 포스터</strong>를 올렸습니다.</p>
+<p>신청 전에 볼 것은 두 가지입니다. <strong>2만원에 선착순 500명</strong>이라는 접수 조건, 그리고 <strong>완주 기프트의 3만원 금액권</strong>과 아직 공개되지 않은 다른 기념품을 구분하는 것입니다. 이 글은 10월 7일 확인한 공식 포스터를 기준으로 씁니다.</p>
+
+<h2>접수는 10월 12~14일, 신청 경로는 멕시카나 홈페이지</h2>
+<p>공식 포스터에 적힌 신청 기간은 <strong>2026년 10월 12일(월)~14일(수)</strong>입니다. 참가비는 <strong>20,000원</strong>, 정원은 <strong>선착순 500명</strong>입니다. 신청 경로로 <a href="https://www.mexicana.co.kr/" target="_blank" rel="noopener noreferrer">멕시카나 홈페이지</a>를 안내합니다.</p>
+<p>포스터에는 접수 시작·마감 시각이나 별도 신청 폼 주소가 없습니다. SNS 댓글이나 DM으로 링크를 받는 방식만 기다리기보다 <a href="https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&amp;mode=view" target="_blank" rel="noopener noreferrer">공식 행사 공지</a>를 기준으로 신청 경로를 확인하세요. 정원이 작은 만큼 관심이 있다면 접수 첫날 확인하는 편이 낫습니다.</p>
+
+<h2>11월 7일 오전 8시 30분, 파주출판도시에서 5km</h2>
+<table>
+  <thead><tr><th>항목</th><th>공식 포스터 안내</th></tr></thead>
+  <tbody>
+    <tr><td>일시</td><td>2026년 11월 7일(토) · 오전 8시 30분 출발</td></tr>
+    <tr><td>장소</td><td>파주출판도시 일대</td></tr>
+    <tr><td>종목</td><td>5km FUN RUN</td></tr>
+    <tr><td>정원·참가비</td><td>선착순 500명 · 20,000원</td></tr>
+    <tr><td>신청 기간</td><td>10월 12일(월)~14일(수)</td></tr>
+  </tbody>
+</table>
+<p>오전 8시 30분은 <strong>출발 시각</strong>입니다. 집결 시각으로 읽으면 안 됩니다. 정확한 집결 위치와 배번 수령 시간, 교통·주차 안내는 신청 페이지나 후속 공지에서 확인해야 합니다.</p>
+<p>포스터에 코스 프리뷰가 있지만, 주최 측은 <strong>이해를 돕기 위한 그림으로 실제와 다를 수 있으며 안전을 위해 코스를 바꿀 수 있다</strong>고 안내합니다. 이 그림만으로 반환점·급수대·고도를 확정하지 않았습니다. 기록칩, 제한시간, 시상 여부도 확인한 포스터에는 없습니다.</p>
+
+<h2>‘참가비보다 더 돌려받는다’는 말은 조건부터 확인</h2>
+<p>공식 포스터는 <strong>스타트 패키지, 완주 기프트, 애프터 파티</strong>를 예고합니다. 완주 기프트에는 <strong>멕시카나 모바일 금액권 30,000원</strong>이 명시돼 있습니다. 다만 티셔츠·가방처럼 보이는 다른 이미지 대부분에는 물음표가 붙어 있어 구성과 규격을 확정할 수 없습니다.</p>
+<p>금액권의 액면가는 참가비보다 1만원 높습니다. 그래도 바로 <strong>2만원 내고 1만원 이득</strong>이라고 결론 내리기는 이릅니다. 사용처, 유효기간, 최소 주문금액, 수령 절차를 공식 신청 화면에서 확인해야 실제로 쓸 수 있는 혜택인지 판단할 수 있습니다. 특히 공식은 이를 ‘완주 기프트’에 넣었으므로 신청만 하면 받는다고 단정하지 마세요.</p>
+<div class="callout info"><strong>신청 전 체크</strong> — 금액권과 기념품의 최종 구성, 환불 마감, 미성년자 참가 조건을 확인하세요. 10월 7일 확인한 공식 포스터에서는 이 조건들을 확인하지 못했습니다.</div>
+
+<h2>이런 러너에게 어울립니다</h2>
+<p><strong>기록보다 친구와의 가벼운 5km와 행사 분위기가 목적</strong>이라면 관심을 가질 만합니다. 반대로 공식 기록증이나 순위 경쟁이 필요하다면 기록 측정 안내부터 확인해야 합니다. 같은 11월 7일에는 <a href="/blog/purme-run">월드컵공원 푸르메런</a>도 열리니, 날짜가 겹치는 다른 대회를 이미 신청했다면 일정을 먼저 대조하세요.</p>
+<p>신발은 새 레이싱화를 마련하기보다 이미 길들인 데일리 러닝화가 실용적입니다. 5km 거리보다 아침 이동과 현장 대기까지 편하게 소화할 수 있는지가 선택 기준입니다.</p>
+
+<h2>확인한 출처</h2>
+<p><a href="https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&amp;mode=view" target="_blank" rel="noopener noreferrer">멕시카나 공식 「2026 멕시카나런 with 펩시」 공지</a> — 2026년 10월 6일 등록, 첨부 포스터 원문을 10월 7일 확인했습니다. 날짜·출발 시각·장소·거리·정원·참가비·신청 기간은 이 포스터 기준입니다. 혜택 상세와 접수 링크가 공개되면 갱신하겠습니다.</p>
+`,
+  },
+  {
+    id: 'beatempo-korea-f45',
+    slug: 'beatempo-korea-f45',
+    title: '비템포 코리아 × F45 접수·가격 | 크리스마스 킨텍스 실내 5·10km, 얼리버드 10월 11일까지',
+    description: '2026년 12월 25~27일 킨텍스에서 열리는 비템포 코리아 × F45는 실내 러닝·피트니스 축제입니다. 러닝 5km 55,000원·10km 70,000원, CJ온스타일 얼리버드 판매는 10월 11일까지입니다. 러닝과 F45·파티 티켓의 차이, 회차당 정원과 환불 기한을 공식 안내로 정리했습니다.',
+    thumbnail: '/images/blog/beatempo-korea-f45.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-07',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['비템포 코리아', 'BEATEMPO', 'F45', '킨텍스', '실내 러닝', '크리스마스 러닝'],
+    event: {
+      name: 'BEATEMPO KOREA 2026 × F45',
+      startDate: '2026-12-25',
+      endDate: '2026-12-27',
+      location: { name: '킨텍스 제2전시장 7·8홀 및 회의실' },
+      organizer: '킨텍스 · F45',
+      url: 'https://beatempokorea.com/home/',
+      offers: [
+        { name: 'BEATEMPO 150 · 5km 러닝', priceKrw: 55000, availabilityEnds: '2026-10-11', url: 'https://display.cjonstyle.com/p/mocode/M1242889' },
+        { name: 'BEATEMPO 150 · 10km 러닝', priceKrw: 70000, availabilityEnds: '2026-10-11', url: 'https://display.cjonstyle.com/p/mocode/M1242889' },
+      ],
+    },
+    raceMeta: {
+      displayTitle: '비템포, 크리스마스에 실내 5·10km',
+      displaySubtitle: '12월 25~27일 킨텍스 — 러닝과 F45는 별도 티켓',
+      raceDate: '2026-12-25',
+      registrationStart: '2026-10-06T20:00',
+      registrationEnd: '2026-10-11',
+      registrationVia: 'CJ온스타일 — 1차 얼리버드 판매 기간 기준',
+      action: {
+        what: '1차 얼리버드는 10월 11일까지',
+        how: '<a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">CJ온스타일 구매 페이지</a>에서 러닝 거리·참가 날짜·오전 또는 오후 회차를 확인하세요. 일반관람권이나 F45 티켓을 러닝 참가권으로 혼동하지 마세요. 이후 판매 일정과 옵션별 잔여 수량은 확인하지 않았습니다.',
+      },
+      facts: [
+        { label: '행사일', value: '12월 25~27일', sub: '금~일 · 크리스마스 주말' },
+        { label: '장소', value: '킨텍스 제2전시장', sub: '7·8홀 및 회의실' },
+        { label: '러닝', value: '실내 5km · 10km', sub: '회차당 최대 1,000명' },
+        { label: '러닝 참가비', value: '5.5만 / 7만원', sub: '5km / 10km · 공식 티켓 안내 기준' },
+        { label: '1차 판매', value: '10/6~11', sub: '10월 6일 20:00 개시' },
+      ],
+      highlights: [
+        { badge: 'INDOOR', title: '한겨울 실내에서 음악과 조명 터널을 달립니다', desc: 'BEATEMPO 150은 킨텍스 실내 트랙에서 달리는 <strong>5km·10km 러닝 프로그램</strong>입니다. 공인 기록 대회로 소개할 근거는 확보하지 못했고, 기록칩과 순위 산정 여부도 확인한 안내에 없습니다.' },
+        { badge: '별도 티켓', title: '러닝권 하나로 F45와 파티까지 모두 참가하는 구조는 아닙니다', desc: '러닝, F45 PEAK500, 요가·명상, 나이트 펀런·공연은 티켓이 구분됩니다. 여러 프로그램을 묶은 패키지도 있으니 <strong>이름보다 포함 항목</strong>을 보고 골라야 합니다.' },
+        { badge: '10/31', title: '러닝 환불 기한은 행사일보다 훨씬 앞입니다', desc: '공식 FAQ는 PEAK500을 제외한 프로그램에 대해 <strong>10월 31일 오후 6시 이후 취소·환불 불가</strong>를 안내합니다. 12월 행사라고 환불 결정도 12월에 할 수 있는 것은 아닙니다.' },
+      ],
+    },
+    faqs: [
+      { question: '비템포 러닝 참가비는 얼마인가요?', answer: '공식 티켓 안내 기준 BEATEMPO 150 러닝은 5km 55,000원, 10km 70,000원입니다. 일반관람권 35,000원은 러닝 참가권이 아닙니다.' },
+      { question: '얼리버드는 언제까지 구매할 수 있나요?', answer: 'CJ온스타일 1차 얼리버드 판매는 2026년 10월 6일 오후 8시부터 10월 11일까지입니다. 회차별 재고와 이후 판매 일정은 구매 페이지에서 확인해야 합니다.' },
+      { question: '러닝 참가권에 F45와 파티도 포함되나요?', answer: '러닝·F45 PEAK500·요가·명상·나이트 펀런·공연은 별도 티켓이 구분되어 있습니다. 함께 참가하려면 해당 프로그램이나 포함 항목이 맞는 패키지를 선택하세요.' },
+      { question: '러닝 참가권은 언제까지 환불할 수 있나요?', answer: '공식 FAQ는 PEAK500 외 프로그램에 대해 2026년 10월 31일 오후 6시 이후 취소·환불 불가를 안내합니다. 최종 구매 화면의 상품별 약관도 확인하세요.' },
+    ],
+    content: `
+<p>크리스마스에 달리고 싶은데 추운 바깥은 부담스럽다면, 킨텍스에서 열리는 <strong>비템포 코리아 × F45</strong>가 선택지가 될 수 있습니다. 12월 25~27일 실내 러닝과 F45 운동, 요가·명상, 음악 프로그램을 모은 행사입니다.</p>
+<p>러너가 먼저 알아둘 것은 <strong>러닝 참가권과 F45·파티 티켓이 구분된다는 점</strong>입니다. 가장 저렴한 관람권을 사면 러닝까지 할 수 있다고 생각하면 안 됩니다. 아래는 10월 7일 공식 홈페이지·FAQ·CJ온스타일 판매 페이지를 확인한 내용입니다.</p>
+
+<h2>얼리버드는 10월 11일까지, 러닝은 5.5만·7만원</h2>
+<p><a href="https://corp.cjonstyle.com/ko/newsroom/press/145" target="_blank" rel="noopener noreferrer">CJ온스타일 공식 발표</a>에 따르면 1차 얼리버드 판매는 <strong>10월 6일 오후 8시~11일</strong>입니다. <a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">실제 구매 페이지</a>에서 러닝의 오전·오후 회차와 프로그램별 상품이 구분된 것을 확인했습니다. 날짜와 옵션별 남은 수량은 구매 시점에 다시 보세요.</p>
+<table>
+  <thead><tr><th>티켓</th><th>공식 안내 가격</th><th>고를 때 확인할 것</th></tr></thead>
+  <tbody>
+    <tr><td>BEATEMPO 150 · 5km</td><td>55,000원</td><td>러닝 날짜·오전/오후 회차</td></tr>
+    <tr><td>BEATEMPO 150 · 10km</td><td>70,000원</td><td>러닝 날짜·오전/오후 회차</td></tr>
+    <tr><td>일반관람</td><td>35,000원</td><td>러닝 참가권과 구분</td></tr>
+    <tr><td>러닝 + 파티 패키지</td><td>5km 120,000원 / 10km 130,000원</td><td>선택 날짜와 포함 파티</td></tr>
+    <tr><td>F45 PEAK500</td><td>개인 140,000원 / 2인 페어 125,000원 / 4인 페어 110,000원</td><td>각 가격은 1인 기준 · 팀 사전 구성</td></tr>
+  </tbody>
+</table>
+<p>표는 <a href="https://beatempokorea.com/home/t1.php?s=11" target="_blank" rel="noopener noreferrer">공식 티켓 안내</a>의 가격입니다. 실제 결제가는 선택 상품·옵션의 최종 화면이 기준입니다. 공식 가격에 쿠폰 할인을 임의로 빼서 ‘최저가’로 소개하지 않았습니다.</p>
+
+<h2>실내 5·10km는 어떤 방식인가요?</h2>
+<p><a href="https://beatempokorea.com/home/p2.php?s=32" target="_blank" rel="noopener noreferrer">BEATEMPO 150 공식 프로그램 안내</a>는 음악과 조명 터널을 즐기는 실내 트랙 러닝으로 소개합니다. 운영일은 <strong>12월 25~27일</strong>, 장소는 <strong>킨텍스 제2전시장 7·8홀 및 회의실</strong>입니다. <strong>회차당 최대 1,000명</strong>을 안내합니다.</p>
+<p>주최 측의 예상 소요시간은 5km 20~40분, 10km 40~90분이며, <strong>90분을 초과하면 러닝을 종료</strong>한다고 적혀 있습니다. 예상 소요시간은 내가 꼭 그 안에 들어와야 한다는 기록 기준과는 다르지만, 종료 규정은 선택 전에 확인할 필요가 있습니다.</p>
+<p>확인한 안내에는 한 바퀴 길이와 기록칩·순위 산정 방식이 없습니다. 따라서 일반 도로 마라톤처럼 공식 기록을 남기는 행사라고 단정하지 않습니다. 겨울 실내에서 달리는 경험이 목적이라면 어울리고, 기록증이 필요하다면 운영사무국에 측정 방식을 먼저 물어보세요.</p>
+
+<h2>F45와 나이트 펀런은 날짜도 내용도 다릅니다</h2>
+<ul>
+  <li><strong>12월 25일:</strong> 러닝·요가·명상, 밤에는 NIGHT FUN RUN. 공식 티켓 안내의 나이트 펀런은 80,000원이며 DJ EDM Festival을 포함합니다.</li>
+  <li><strong>12월 26일:</strong> 러닝·F45·요가·명상, 밤에는 ANTIDOTE FESTIVAL. 공연 티켓은 81,000원으로 별도 안내됩니다.</li>
+  <li><strong>12월 27일:</strong> 러닝·F45·요가·명상 프로그램.</li>
+</ul>
+<p><a href="https://beatempokorea.com/home/p1.php?s=31" target="_blank" rel="noopener noreferrer">F45 PEAK500</a>은 5개 스테이션에서 총 30분 동안 운동하는 프로그램입니다. 실내 5km·10km 러닝과는 별개입니다. 2인·4인 페어는 팀을 먼저 구성한 뒤 신청해야 하므로 혼자 신청하면 현장에서 자동으로 팀을 만들어준다고 생각하면 안 됩니다.</p>
+<p>달리기만 하고 싶다면 BEATEMPO 150 러닝권부터, 운동과 파티까지 함께 즐기려면 패키지의 <strong>거리·참가일·포함 프로그램</strong>을 함께 확인하세요. 패키지 이름만 보고 모든 프로그램이 포함된다고 가정하면 불필요한 지출이 생길 수 있습니다.</p>
+
+<h2>10월에 사는 12월 티켓, 환불 기한은 10월 31일</h2>
+<p><a href="https://beatempokorea.com/home/f1.php?s=71" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 <strong>PEAK500 외 프로그램의 취소·환불이 10월 31일 오후 6시 이후 불가</strong>하다고 안내합니다. 러닝을 신청할 때도 이 날짜를 확인하세요. 행사일보다 약 두 달 앞서 환불 가능 여부를 결정해야 하는 구조입니다.</p>
+<p>PEAK500은 별도 규정을 씁니다. 1차 판매 기준 프로그램 운영일 50일 전 오전 9시까지 100%, 30일 전 오전 9시까지 50% 환불, 이후 취소·환불 불가이며 7일 전 오전 9시까지 선수 변경이 가능하다고 안내합니다. <strong>러닝 환불 기한을 PEAK500에 그대로 적용하면 안 됩니다.</strong> 최종 결제 화면의 상품별 약관을 함께 보세요.</p>
+<p>입장은 모바일 티켓 QR코드를 확인한 뒤 팔찌를 받는 방식입니다. 실제 참가자 본인 명의로 예매하고, 티켓 양도나 증여·재판매가 가능한지는 약관을 먼저 확인하세요. 참가 연령과 보호자 동반 규정은 이번에 확인한 프로그램·티켓·FAQ 본문에서 확인하지 못했습니다.</p>
+
+<h2>장비보다 먼저 고를 것은 참가 목적</h2>
+<p>겨울 실내 러닝과 음악을 함께 즐기려는 러너에게는 흥미로운 선택입니다. 반대로 공인 기록을 목표로 하거나, 러닝권 하나로 모든 운동을 체험하고 싶다면 신청 전에 확인할 항목이 더 있습니다.</p>
+<p>러닝만 참가한다면 익숙한 데일리 러닝화부터 생각하면 됩니다. F45까지 한다면 달리기용 신발이 각 스테이션 운동에도 맞는지 따로 점검하세요. 킨텍스 주차는 행사 시간대에 혼잡할 수 있으므로 이동 시간도 여유 있게 잡는 편이 좋습니다.</p>
+
+<h2>확인한 출처</h2>
+<p><a href="https://beatempokorea.com/home/" target="_blank" rel="noopener noreferrer">비템포 공식 홈페이지</a>의 행사·프로그램·티켓·FAQ, <a href="https://corp.cjonstyle.com/ko/newsroom/press/145" target="_blank" rel="noopener noreferrer">CJ온스타일 10월 6일 공식 발표</a>, <a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">CJ온스타일 실제 구매 페이지</a>를 2026년 10월 7일 확인했습니다. 회차별 잔여 수량·최종 결제 조건·프로그램 변경은 구매 전 공식 안내를 다시 확인하세요.</p>
+`,
+  },
+  {
     id: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026',
     slug: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026',
     title:

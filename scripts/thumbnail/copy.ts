@@ -38,6 +38,16 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 멕시카나 공식 10/6 공지 첨부 포스터(2026-10-07 확인).
+  'mexicana-run-with-pepsi': {
+    title: '멕시카나런, 2만원에 5km',
+    subtitle: '11월 7일 파주 · 선착순 500명\n접수는 10월 12~14일',
+  },
+  // 출처: 비템포 공식 티켓·프로그램 및 CJ온스타일 발표(2026-10-07 확인).
+  'beatempo-korea-f45': {
+    title: '크리스마스, 실내에서 5·10km',
+    subtitle: '비템포 × F45 · 킨텍스 12월 25~27일\n얼리버드 10월 11일까지',
+  },
   // 출처: 사이트 신발 DB(한국 공식몰 정가) · RunRepeat 랩 실측 무게(2026-09-29 원문 확인) — 라이즈 3 159,000원·264g, 보메로 18 189,000원·298g.
   'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026': {
     title: '슈퍼노바 라이즈 3 vs 보메로 18',
