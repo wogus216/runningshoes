@@ -7,8 +7,9 @@
 // 나머지는 aa794de 원문 그대로다.
 // 원본의 englishName(D9 — 단독 NIKE)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
 // image 는 S5-C(2026-10-07)에 원본 PNG 를 WebP 로 바꿔 넣었다. AI 생성 이미지이고 출처는 public/images/running-card/IMAGE_CREDITS.md.
-// 옷·신발에 상표처럼 읽히는 표식이 있는 6명(제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스)은 image 가 없다
-// (docs/running-card-s5-report.md S5-C). 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다.
+// 옷·신발에 상표처럼 읽히는 표식이 있는 10명은 image 가 없다(표식을 지운 판 재생성 대기, docs/running-card-s5-report.md S5-C).
+// 제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스(S5-C 판정) + 헤파이스토스·아레스·헥토르·펜테실레이아(리드 판단 2026-10-07).
+// 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다.
 // watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
 // nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
 type CharacterPresentation = {
@@ -119,7 +120,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   ares: {
     title: '불꽃 같은 자극을 다루는 자',
-    image: '/images/running-card/ares.webp',
     oracle: '강함은 방향을 가질 때 오래 남는다.',
     strength: '강한 세션에서 몰입과 추진력이 선명합니다.',
     watchout: '강한 날 뒤의 쉬는 날을 건너뛰면 리듬이 무너질 수 있습니다.',
@@ -136,7 +136,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hephaestus: {
     title: '보이지 않는 시간을 단단히 쌓는 자',
-    image: '/images/running-card/hephaestus.webp',
     oracle: '가장 단단한 발걸음은 꺼지지 않는 불에서 나온다.',
     strength: '작은 훈련을 차곡차곡 쌓아 기반을 만듭니다.',
     watchout: '쌓인 거리를 의지로만 버티지 말고 달린 날 사이 간격도 살펴보세요.',
@@ -248,7 +247,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hector: {
     title: '긴 레이스를 끝까지 지키는 자',
-    image: '/images/running-card/hector.webp',
     oracle: '마지막까지 남는 힘은 쌓아 온 걸음에서 나온다.',
     strength: '거리와 빠른 훈련을 꾸준히 이어갈 기반이 있습니다.',
     watchout: '잘 버티는 주에도 쉬는 날을 지나치지 마세요.',
@@ -256,7 +254,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penthesilea: {
     title: '강한 순간에 중심을 지키는 자',
-    image: '/images/running-card/penthesilea.webp',
     oracle: '속도를 다루는 힘은 멈출 때도 빛난다.',
     strength: '빠른 훈련에서도 긴 호흡을 잃지 않는 추진력이 있습니다.',
     watchout: '강한 자극 뒤에는 쉬운 날을 분명히 남겨두세요.',
