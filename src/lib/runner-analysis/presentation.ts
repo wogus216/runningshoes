@@ -7,9 +7,10 @@
 // 나머지는 aa794de 원문 그대로다.
 // 원본의 englishName(D9 — 단독 NIKE)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
 // image 는 S5-C(2026-10-07)에 원본 PNG 를 WebP 로 바꿔 넣었다. AI 생성 이미지이고 출처는 public/images/running-card/IMAGE_CREDITS.md.
-// 옷·신발에 상표처럼 읽히는 표식이 있는 10명은 image 가 없다(표식을 지운 판 재생성 대기, docs/running-card-s5-report.md S5-C).
-// 제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스(S5-C 판정) + 헤파이스토스·아레스·헥토르·펜테실레이아(리드 판단 2026-10-07).
-// 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다.
+// 옷·신발에 상표처럼 읽히는 표식이 있는 14명은 image 가 없다(표식을 지운 판 재생성 대기, docs/running-card-s5-report.md S5-C·S5-D).
+// 제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스(S5-C 판정) + 헤파이스토스·아레스·헥토르·펜테실레이아(리드 판단 2026-10-07)
+// + 헤라·포세이돈·페넬로페·시시포스(리드가 원본 해상도로 확대해 찾음, 2026-10-07).
+// 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다. 공유 이미지 1장째는 image 가 있을 때만 그림을 배경으로 깔고(S5-D), 없으면 메달 표지 그대로다.
 // watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
 // nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
 type CharacterPresentation = {
@@ -65,7 +66,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   sisyphus: {
     title: '반복으로 산을 넘는 자',
-    image: '/images/running-card/sisyphus.webp',
     oracle: '오늘의 한 걸음도 결국 경사를 바꾼다.',
     strength: '눈에 띄지 않는 날에도 루틴을 유지하는 힘이 단단합니다.',
     watchout: '같은 방식이 길어지면 기록의 변화를 알아차리기 어려울 수 있습니다.',
@@ -73,7 +73,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   poseidon: {
     title: '파도를 밀어내며 나아가는 자',
-    image: '/images/running-card/poseidon.webp',
     oracle: '거친 리듬도 너를 멈추게 하진 못한다.',
     strength: '거리와 강도가 커져도 앞으로 나아가는 힘이 있습니다.',
     watchout: '강한 날이 이어질수록 달린 날 사이 간격을 먼저 확보하세요.',
@@ -103,7 +102,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hera: {
     title: '자기 리듬을 품위 있게 지키는 자',
-    image: '/images/running-card/hera.webp',
     oracle: '흔들리지 않는 리듬이 가장 멀리 데려간다.',
     strength: '무리하지 않고도 목표를 향한 질서를 오래 유지합니다.',
     watchout: '계획이 흐트러진 날에는 스스로에게 너무 엄격해지지 마세요.',
@@ -175,7 +173,6 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penelope: {
     title: '하루의 약속을 오래 지키는 자',
-    image: '/images/running-card/penelope.webp',
     oracle: '이어온 하루들이 너의 가장 긴 길이다.',
     strength: '무리 없이 정해진 러닝 리듬을 오래 유지하는 힘이 있습니다.',
     watchout: '익숙한 일정만 반복하면 새로운 목표가 흐려질 수 있습니다.',
