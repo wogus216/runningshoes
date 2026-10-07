@@ -37,17 +37,19 @@ describe('공유 링크(D11 — URL 방식)', () => {
 });
 
 // 공유받은 화면(running-card-shared.tsx)은 링크로 되읽은 인물로 leadAxisOf 를 부르고, 링크의 정수 점수를 보인다.
+// 1만 명 계산은 describe 에서 한다 — it 안에 두면 전체 실행이 붐빌 때 5초 제한에 걸린다(runner-explain 과 같은 방식).
 describe('공유받은 화면의 대표 수치 = 결과 카드 대표 수치(합성 1만 명)', () => {
+  const differ = syntheticRunners().flatMap((snapshot) => {
+    const analysis = analyzeRunner(snapshot);
+    const { lead } = explainRunner(snapshot, analysis);
+    const url = new URL(sharedRunnerCardUrl('https://allrunabout.com', { characterId: analysis.match.character.id, scores: analysis.publicScores }));
+    const read = readSharedRunnerCard(url.searchParams.get('card'), IDS);
+    if (!read) return [snapshot];
+    const axis = leadAxisOf(RUNNER_CHARACTERS.find((c) => c.id === read.characterId)!.traits);
+    return axis === lead.axis && read.scores[axis] === lead.value ? [] : [snapshot];
+  });
+
   it('링크로 되읽은 인물·점수로 고른 축과 값이 결과 카드(explainRunner)와 같다', () => {
-    const differ = syntheticRunners().flatMap((snapshot) => {
-      const analysis = analyzeRunner(snapshot);
-      const { lead } = explainRunner(snapshot, analysis);
-      const url = new URL(sharedRunnerCardUrl('https://allrunabout.com', { characterId: analysis.match.character.id, scores: analysis.publicScores }));
-      const read = readSharedRunnerCard(url.searchParams.get('card'), IDS);
-      if (!read) return [snapshot];
-      const axis = leadAxisOf(RUNNER_CHARACTERS.find((c) => c.id === read.characterId)!.traits);
-      return axis === lead.axis && read.scores[axis] === lead.value ? [] : [snapshot];
-    });
     expect(differ).toEqual([]);
   });
 });
