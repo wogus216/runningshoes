@@ -5,11 +5,15 @@
 // 신탁·강점·맹점·다음 행동은 §6 대조 결과(docs/running-card-s4-report.md 3-2 걸림 19·3-3 경계 1–13)의 대체안으로 바꿨다
 // (운영자 결정 2026-10-07). 경계 14 페넬로페의 다음 행동은 걷기라도 활동을 늘리는 말이라 문장과 nextRunRaises 를 그대로 둔다.
 // 나머지는 aa794de 원문 그대로다.
-// 원본의 englishName(D9 — 단독 NIKE)·image(D12 — 출처 기록 전)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
+// 원본의 englishName(D9 — 단독 NIKE)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
+// image 는 S5-C(2026-10-07)에 원본 PNG 를 WebP 로 바꿔 넣었다. AI 생성 이미지이고 출처는 public/images/running-card/IMAGE_CREDITS.md.
+// 옷·신발에 상표처럼 읽히는 표식이 있는 6명(제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스)은 image 가 없다
+// (docs/running-card-s5-report.md S5-C). 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다.
 // watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
 // nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
 type CharacterPresentation = {
   title: string;
+  image?: string;
   oracle: string;
   strength: string;
   watchout: string;
@@ -20,6 +24,7 @@ type CharacterPresentation = {
 const PRESENTATIONS: Record<string, CharacterPresentation> = {
   heracles: {
     title: '먼 거리를 묵묵히 완수하는 자',
+    image: '/images/running-card/heracles.webp',
     oracle: '먼 길은 이미 너의 편이다.',
     strength: '한 번 정한 거리를 끝까지 가져가는 힘이 선명합니다.',
     watchout: '긴 거리를 감당하는 힘에 비해 훈련 변화는 적은 편입니다.',
@@ -27,6 +32,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   athena: {
     title: '페이스를 설계하는 자',
+    image: '/images/running-card/athena.webp',
     oracle: '계획은 이미 결승선을 향한다.',
     strength: '거리와 자극, 리듬을 함께 조절하는 감각이 좋습니다.',
     watchout: '계획이 촘촘할수록 쉬는 날도 계획 안에 넣어야 합니다.',
@@ -34,6 +40,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   odysseus: {
     title: '항로가 바뀌어도 끝내 도착하는 자',
+    image: '/images/running-card/odysseus.webp',
     oracle: '길을 읽는 사람은 돌아가도 길을 잃지 않는다.',
     strength: '상황이 달라도 긴 호흡을 유지하는 적응력이 있습니다.',
     watchout: '리듬이 흔들리는 주에는 목표를 작게 다시 잡는 편이 좋습니다.',
@@ -41,6 +48,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   achilles: {
     title: '가장 빠른 순간을 노리는 자',
+    image: '/images/running-card/achilles.webp',
     oracle: '빠름은 준비된 리듬에서 나온다.',
     strength: '강한 자극이 필요한 날에 집중도를 끌어올리는 힘이 있습니다.',
     watchout: '빠른 날 다음의 빈 공간도 훈련 일부로 남겨 두세요.',
@@ -48,6 +56,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hestia: {
     title: '꺼지지 않는 리듬을 지키는 자',
+    image: '/images/running-card/hestia.webp',
     oracle: '작은 불빛이 가장 오래 길을 밝힌다.',
     strength: '무리하지 않고도 러닝을 생활 안에 남기는 힘이 있습니다.',
     watchout: '익숙함이 편안해질수록 가끔은 새로운 자극도 필요합니다.',
@@ -55,6 +64,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   sisyphus: {
     title: '반복으로 산을 넘는 자',
+    image: '/images/running-card/sisyphus.webp',
     oracle: '오늘의 한 걸음도 결국 경사를 바꾼다.',
     strength: '눈에 띄지 않는 날에도 루틴을 유지하는 힘이 단단합니다.',
     watchout: '같은 방식이 길어지면 기록의 변화를 알아차리기 어려울 수 있습니다.',
@@ -62,6 +72,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   poseidon: {
     title: '파도를 밀어내며 나아가는 자',
+    image: '/images/running-card/poseidon.webp',
     oracle: '거친 리듬도 너를 멈추게 하진 못한다.',
     strength: '거리와 강도가 커져도 앞으로 나아가는 힘이 있습니다.',
     watchout: '강한 날이 이어질수록 달린 날 사이 간격을 먼저 확보하세요.',
@@ -76,6 +87,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   artemis: {
     title: '자기만의 길을 읽는 자',
+    image: '/images/running-card/artemis.webp',
     oracle: '고요한 길 위에서 가장 먼 곳을 본다.',
     strength: '스스로 리듬을 지키며 긴 호흡을 이어가는 힘이 있습니다.',
     watchout: '잘 달리는 주일수록 달린 날 사이 간격도 함께 살펴보세요.',
@@ -90,6 +102,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hera: {
     title: '자기 리듬을 품위 있게 지키는 자',
+    image: '/images/running-card/hera.webp',
     oracle: '흔들리지 않는 리듬이 가장 멀리 데려간다.',
     strength: '무리하지 않고도 목표를 향한 질서를 오래 유지합니다.',
     watchout: '계획이 흐트러진 날에는 스스로에게 너무 엄격해지지 마세요.',
@@ -97,6 +110,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   demeter: {
     title: '자기 페이스를 길러내는 자',
+    image: '/images/running-card/demeter.webp',
     oracle: '천천히 쌓은 계절은 결국 너의 거리가 된다.',
     strength: '서두르지 않고 꾸준히 다음 러닝을 이어갑니다.',
     watchout: '편안한 리듬에 머물면 새로운 자극이 늦어질 수 있습니다.',
@@ -105,6 +119,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   ares: {
     title: '불꽃 같은 자극을 다루는 자',
+    image: '/images/running-card/ares.webp',
     oracle: '강함은 방향을 가질 때 오래 남는다.',
     strength: '강한 세션에서 몰입과 추진력이 선명합니다.',
     watchout: '강한 날 뒤의 쉬는 날을 건너뛰면 리듬이 무너질 수 있습니다.',
@@ -112,6 +127,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   aphrodite: {
     title: '기분 좋은 리듬을 오래 남기는 자',
+    image: '/images/running-card/aphrodite.webp',
     oracle: '즐거움이야말로 가장 오래 가는 동력이다.',
     strength: '부담 없는 루틴을 스스로 만들어 갑니다.',
     watchout: '편안함만 이어지면 목표가 흐려질 수 있습니다.',
@@ -120,6 +136,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hephaestus: {
     title: '보이지 않는 시간을 단단히 쌓는 자',
+    image: '/images/running-card/hephaestus.webp',
     oracle: '가장 단단한 발걸음은 꺼지지 않는 불에서 나온다.',
     strength: '작은 훈련을 차곡차곡 쌓아 기반을 만듭니다.',
     watchout: '쌓인 거리를 의지로만 버티지 말고 달린 날 사이 간격도 살펴보세요.',
@@ -127,6 +144,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hermes: {
     title: '가벼운 발걸음으로 길을 여는 자',
+    image: '/images/running-card/hermes.webp',
     oracle: '빠른 사람은 먼저 가는 대신 더 멀리 본다.',
     strength: '짧은 자극과 빠른 전환 속에서 리듬을 찾는 감각이 좋습니다.',
     watchout: '속도를 올리는 만큼 천천히 달리는 날도 남겨 두세요.',
@@ -134,6 +152,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   dionysus: {
     title: '달리는 즐거움으로 리듬을 잇는 자',
+    image: '/images/running-card/dionysus.webp',
     oracle: '몸이 즐거운 길은 다시 찾게 된다.',
     strength: '즐거움을 동력으로 삼아 러닝을 오래 이어갑니다.',
     watchout: '즐겁게 빨라진 날 다음에는 한 번 쉬어 가세요.',
@@ -141,6 +160,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   persephone: {
     title: '계절이 바뀌어도 다시 피어나는 자',
+    image: '/images/running-card/persephone.webp',
     oracle: '쉬어 가는 날도 다음 계절의 시작이다.',
     strength: '자신에게 맞는 속도로 꾸준히 다시 나섭니다.',
     watchout: '쉬어 가는 주에는 예전 기록과 자신을 비교하지 마세요.',
@@ -148,6 +168,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   perseus: {
     title: '결정적인 순간을 꿰뚫는 자',
+    image: '/images/running-card/perseus.webp',
     oracle: '방향을 정한 발걸음은 흔들리지 않는다.',
     strength: '목표를 향한 빠른 훈련에서 집중력이 뚜렷합니다.',
     watchout: '강한 날이 이어지면 쉬운 러닝을 일정에 먼저 넣어두세요.',
@@ -155,6 +176,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penelope: {
     title: '하루의 약속을 오래 지키는 자',
+    image: '/images/running-card/penelope.webp',
     oracle: '이어온 하루들이 너의 가장 긴 길이다.',
     strength: '무리 없이 정해진 러닝 리듬을 오래 유지하는 힘이 있습니다.',
     watchout: '익숙한 일정만 반복하면 새로운 목표가 흐려질 수 있습니다.',
@@ -163,6 +185,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   theseus: {
     title: '복잡한 길에서도 방향을 찾는 자',
+    image: '/images/running-card/theseus.webp',
     oracle: '갈림길에서도 너의 리듬은 답을 안다.',
     strength: '거리와 훈련 자극을 함께 조절하며 목표로 나아갑니다.',
     watchout: '훈련이 잘 풀리는 때일수록 거리가 쌓이는 속도를 살펴보세요.',
@@ -185,6 +208,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   nike: {
     title: '결승선을 향해 리듬을 끌어올리는 자',
+    image: '/images/running-card/nike.webp',
     oracle: '승리는 마지막 보폭까지 자신을 지키는 일이다.',
     strength: '목표가 뚜렷할 때 빠른 훈련을 꾸준히 이어갑니다.',
     watchout: '기록을 노리는 기간에는 쉬는 날도 훈련의 일부입니다.',
@@ -192,6 +216,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   themis: {
     title: '강약의 균형을 읽는 자',
+    image: '/images/running-card/themis.webp',
     oracle: '오래 가는 리듬은 균형에서 시작된다.',
     strength: '꾸준한 빈도와 회복 여유를 함께 지키는 힘이 있습니다.',
     watchout: '익숙한 강도에 머물 때는 목표에 맞는 변화를 살펴보세요.',
@@ -207,6 +232,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   daedalus: {
     title: '자기 훈련을 설계하는 자',
+    image: '/images/running-card/daedalus.webp',
     oracle: '정교한 하루가 더 먼 내일을 만든다.',
     strength: '훈련 자극과 일상의 리듬을 함께 조절합니다.',
     watchout: '계획이 어긋난 날에는 거리를 줄여 다시 맞춰 보세요.',
@@ -214,6 +240,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   orion: {
     title: '먼 길의 끝을 바라보는 자',
+    image: '/images/running-card/orion.webp',
     oracle: '먼 곳을 보는 눈은 오늘의 보폭을 아낀다.',
     strength: '긴 거리를 감당하며 자기 호흡을 유지하는 힘이 있습니다.',
     watchout: '긴 러닝 다음에는 다음 러닝까지의 간격을 먼저 살펴보세요.',
@@ -221,6 +248,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hector: {
     title: '긴 레이스를 끝까지 지키는 자',
+    image: '/images/running-card/hector.webp',
     oracle: '마지막까지 남는 힘은 쌓아 온 걸음에서 나온다.',
     strength: '거리와 빠른 훈련을 꾸준히 이어갈 기반이 있습니다.',
     watchout: '잘 버티는 주에도 쉬는 날을 지나치지 마세요.',
@@ -228,6 +256,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penthesilea: {
     title: '강한 순간에 중심을 지키는 자',
+    image: '/images/running-card/penthesilea.webp',
     oracle: '속도를 다루는 힘은 멈출 때도 빛난다.',
     strength: '빠른 훈련에서도 긴 호흡을 잃지 않는 추진력이 있습니다.',
     watchout: '강한 자극 뒤에는 쉬운 날을 분명히 남겨두세요.',
@@ -235,6 +264,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   psyche: {
     title: '작은 걸음을 오래 믿는 자',
+    image: '/images/running-card/psyche.webp',
     oracle: '다시 달릴 수 있는 마음이 길을 이어준다.',
     strength: '무리하지 않고 자신의 리듬을 꾸준히 이어갑니다.',
     watchout: '편안한 러닝이 익숙해졌다면 목표에 맞는 변화를 살펴보세요.',
@@ -243,6 +273,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   eros: {
     title: '달리는 즐거움을 먼저 찾는 자',
+    image: '/images/running-card/eros.webp',
     oracle: '즐거운 한 걸음이 다음 걸음을 부른다.',
     strength: '짧고 빠른 러닝에서 에너지와 몰입이 살아납니다.',
     watchout: '기분 좋은 속도로 달린 뒤에도 쉬는 날을 남겨두세요.',
@@ -250,6 +281,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   prometheus: {
     title: '먼 거리를 향해 불을 밝히는 자',
+    image: '/images/running-card/prometheus.webp',
     oracle: '오래 타는 불은 서두르지 않는다.',
     strength: '긴 거리와 훈련 자극을 함께 감당하는 힘이 있습니다.',
     watchout: '훈련이 잘 되는 주에도 회복 여유를 점검해 보세요.',
@@ -264,6 +296,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   pheidippides: {
     title: '긴 길의 끝까지 호흡을 잇는 자',
+    image: '/images/running-card/pheidippides.webp',
     oracle: '먼 길일수록 다음 한 걸음을 아껴라.',
     strength: '긴 거리를 향한 집중력과 지속력이 뚜렷합니다.',
     watchout: '긴 러닝을 한 뒤에는 쉬는 날을 확보하세요.',
@@ -271,6 +304,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   ariadne: {
     title: '흩어진 길을 리듬으로 잇는 자',
+    image: '/images/running-card/ariadne.webp',
     oracle: '너만의 길은 다시 이어 달릴 수 있다.',
     strength: '일상 속에서도 러닝을 꾸준히 이어가는 힘이 있습니다.',
     watchout: '익숙한 페이스가 길어지면 가벼운 새 자극을 시도해 보세요.',
