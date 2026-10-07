@@ -38,6 +38,11 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 소비자원 카본 러닝화 7종 공식 보도자료·종합표(2026-10-07 확인).
+  'kca-carbon-running-shoes-test-2026': {
+    title: '카본화 7종, 항목마다 다르다',
+    subtitle: '소비자원 시험 · 충격흡수와 무릎 평가는 별개',
+  },
   // 출처: 멕시카나 공식 10/6 공지 첨부 포스터(2026-10-07 확인).
   'mexicana-run-with-pepsi': {
     title: '멕시카나런, 2만원에 5km',
