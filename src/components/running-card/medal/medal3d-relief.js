@@ -541,6 +541,13 @@ export const SIGNS = {
     for (const [y, xs] of [[-.3, [-.42, -.14, .14, .42]], [.02, [-.28, 0, .28]], [.34, [-.14, .14]], [.66, [0]]]) for (const x of xs) cut(g, () => { g.beginPath(); g.arc(x, y, .18, 0, TAU); });
   },
 };
+// The signs in words, for the status line a screen reader hears (it cannot see the plate).
+export const SIGN_NAMES = {
+  '제우스': '번개', '헤라': '왕관', '포세이돈': '삼지창', '데메테르': '밀 이삭', '아테나': '올빼미', '아폴론': '태양 원반',
+  '아르테미스': '초승달', '아레스': '둥근 방패', '아프로디테': '가리비', '헤파이스토스': '모루', '헤르메스': '날개 달린 모자', '디오니소스': '포도송이',
+};
+// The house's god would be named twice (아테나 가문, 아테나), so the sign stands for the house (S4 report 3-3 경계 15).
+export const plateStatus = figure => `명판을 새겼어요. ${figure.house === figure.name ? '' : `${figure.house} 가문의 `}${SIGN_NAMES[figure.house]} 기호와 ${figure.name}.`;
 // Plate layout (plate units, centre origin, y down): the sign on the left, a short rule, then the name alone, as large as
 // the rest allows (the house's name goes to the result card, S4). 지난 28일 leaves the plate: the share image's masthead
 // and the ribbon carry it.

@@ -2,8 +2,9 @@
 // 칭호(title)는 S3, 신탁·강점·맹점·다음 행동은 S4에서 가져왔다. 둘 다 원본과 글자 단위로 대조하는 스크립트로 옮겼다.
 // 칭호를 설계 §6에 대조한 결과는 docs/running-card-s3-report.md 3절에 있다. 걸린 4개와 아레스는 운영자 결정(2026-10-06)으로
 // 바꿨고(헤스티아·디오니소스·프시케·오르페우스·아레스), 경계 6개는 그대로 두었다. 나머지는 aa794de 원문 그대로다.
-// 신탁·강점·맹점·다음 행동은 aa794de 원문 그대로다. §6 대조 결과(걸림·경계와 대체안)는 docs/running-card-s4-report.md 3절에
-// 있고, 바꿀지는 운영자가 고른다.
+// 신탁·강점·맹점·다음 행동은 §6 대조 결과(docs/running-card-s4-report.md 3-2 걸림 19·3-3 경계 1–13)의 대체안으로 바꿨다
+// (운영자 결정 2026-10-07). 경계 14 페넬로페의 다음 행동은 걷기라도 활동을 늘리는 말이라 문장과 nextRunRaises 를 그대로 둔다.
+// 나머지는 aa794de 원문 그대로다.
 // 원본의 englishName(D9 — 단독 NIKE)·image(D12 — 출처 기록 전)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
 // watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
 // nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
@@ -29,7 +30,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     oracle: '계획은 이미 결승선을 향한다.',
     strength: '거리와 자극, 리듬을 함께 조절하는 감각이 좋습니다.',
     watchout: '계획이 촘촘할수록 쉬는 날도 계획 안에 넣어야 합니다.',
-    nextRun: '다음 러닝은 오늘보다 조금 여유 있는 페이스로 마무리하세요.',
+    nextRun: '다음 러닝은 평소보다 조금 여유 있는 페이스로 마무리하세요.',
   },
   odysseus: {
     title: '항로가 바뀌어도 끝내 도착하는 자',
@@ -50,20 +51,20 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     oracle: '작은 불빛이 가장 오래 길을 밝힌다.',
     strength: '무리하지 않고도 러닝을 생활 안에 남기는 힘이 있습니다.',
     watchout: '익숙함이 편안해질수록 가끔은 새로운 자극도 필요합니다.',
-    nextRun: '평소와 같은 시간에 짧게라도 러닝을 이어가세요.',
+    nextRun: '다음 러닝도 짧게라도 평소 리듬대로 이어가세요.',
   },
   sisyphus: {
     title: '반복으로 산을 넘는 자',
     oracle: '오늘의 한 걸음도 결국 경사를 바꾼다.',
     strength: '눈에 띄지 않는 날에도 루틴을 유지하는 힘이 단단합니다.',
-    watchout: '같은 방식이 길어지면 피로를 알아차리기 어려울 수 있습니다.',
+    watchout: '같은 방식이 길어지면 기록의 변화를 알아차리기 어려울 수 있습니다.',
     nextRun: '이번 주 한 번은 평소 코스의 반대 방향으로 달려보세요.',
   },
   poseidon: {
     title: '파도를 밀어내며 나아가는 자',
     oracle: '거친 리듬도 너를 멈추게 하진 못한다.',
-    strength: '거리와 압박이 커질수록 앞으로 밀어붙이는 힘이 있습니다.',
-    watchout: '강한 날이 이어질수록 회복의 여백을 먼저 확보해야 합니다.',
+    strength: '거리와 강도가 커져도 앞으로 나아가는 힘이 있습니다.',
+    watchout: '강한 날이 이어질수록 달린 날 사이 간격을 먼저 확보하세요.',
     nextRun: '다음 러닝은 거리를 줄이고 호흡이 편한 페이스로 마치세요.',
   },
   apollo: {
@@ -76,15 +77,15 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   artemis: {
     title: '자기만의 길을 읽는 자',
     oracle: '고요한 길 위에서 가장 먼 곳을 본다.',
-    strength: '혼자서도 리듬을 지키며 긴 호흡을 이어가는 힘이 있습니다.',
-    watchout: '혼자 잘 달릴수록 회복 신호도 혼자 놓치지 않게 살펴야 합니다.',
+    strength: '스스로 리듬을 지키며 긴 호흡을 이어가는 힘이 있습니다.',
+    watchout: '잘 달리는 주일수록 달린 날 사이 간격도 함께 살펴보세요.',
     nextRun: '다음 러닝은 평소보다 짧게, 풍경을 느끼는 속도로 달려보세요.',
   },
   zeus: {
     title: '폭풍 속에서도 리듬을 지배하는 자',
     oracle: '천둥이 울려도 너의 보폭은 흔들리지 않는다.',
     strength: '강한 목표 앞에서 집중도와 추진력을 동시에 끌어올립니다.',
-    watchout: '앞서 나가는 날일수록 회복의 신호를 늦게 알아차릴 수 있습니다.',
+    watchout: '앞서 나가는 날일수록 다음 러닝까지의 간격을 먼저 정해 두세요.',
     nextRun: '다음 러닝은 기록보다 부드러운 착지에 집중해 보세요.',
   },
   hera: {
@@ -97,7 +98,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   demeter: {
     title: '자기 페이스를 길러내는 자',
     oracle: '천천히 쌓은 계절은 결국 너의 거리가 된다.',
-    strength: '컨디션의 오르내림 속에서도 꾸준히 다음 러닝을 준비합니다.',
+    strength: '서두르지 않고 꾸준히 다음 러닝을 이어갑니다.',
     watchout: '편안한 리듬에 머물면 새로운 자극이 늦어질 수 있습니다.',
     nextRun: '이번 주 한 번은 마지막 10분만 조금 경쾌하게 달려보세요.',
     nextRunRaises: true,
@@ -106,44 +107,44 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '불꽃 같은 자극을 다루는 자',
     oracle: '강함은 방향을 가질 때 오래 남는다.',
     strength: '강한 세션에서 몰입과 추진력이 선명합니다.',
-    watchout: '강한 날 뒤의 회복을 건너뛰면 리듬이 무너질 수 있습니다.',
+    watchout: '강한 날 뒤의 쉬는 날을 건너뛰면 리듬이 무너질 수 있습니다.',
     nextRun: '다음 러닝은 짧게, 대화할 수 있는 속도로 달리세요.',
   },
   aphrodite: {
     title: '기분 좋은 리듬을 오래 남기는 자',
     oracle: '즐거움이야말로 가장 오래 가는 동력이다.',
-    strength: '몸의 감각을 읽으며 부담 없는 루틴을 만듭니다.',
+    strength: '부담 없는 루틴을 스스로 만들어 갑니다.',
     watchout: '편안함만 이어지면 목표가 흐려질 수 있습니다.',
     nextRun: '이번 주 한 번은 평소보다 5분만 더, 가볍게 이어가세요.',
     nextRunRaises: true,
   },
   hephaestus: {
     title: '보이지 않는 시간을 단단히 쌓는 자',
-    oracle: '가장 단단한 발걸음은 매일의 불에서 나온다.',
-    strength: '작은 훈련도 놓치지 않고 몸의 기반을 만듭니다.',
-    watchout: '누적 피로를 의지로만 넘기지 않도록 주의하세요.',
-    nextRun: '다음 러닝은 평소 거리의 70%만 달리고 가볍게 끝내세요.',
+    oracle: '가장 단단한 발걸음은 꺼지지 않는 불에서 나온다.',
+    strength: '작은 훈련을 차곡차곡 쌓아 기반을 만듭니다.',
+    watchout: '쌓인 거리를 의지로만 버티지 말고 달린 날 사이 간격도 살펴보세요.',
+    nextRun: '다음 러닝은 평소보다 짧게 달리고 가볍게 끝내세요.',
   },
   hermes: {
     title: '가벼운 발걸음으로 길을 여는 자',
     oracle: '빠른 사람은 먼저 가는 대신 더 멀리 본다.',
     strength: '짧은 자극과 빠른 전환 속에서 리듬을 찾는 감각이 좋습니다.',
-    watchout: '속도를 올리는 만큼 천천히 회복하는 시간도 남겨 두세요.',
+    watchout: '속도를 올리는 만큼 천천히 달리는 날도 남겨 두세요.',
     nextRun: '다음 러닝은 20분 동안 시계를 보지 않고 가볍게 달리세요.',
   },
   dionysus: {
     title: '달리는 즐거움으로 리듬을 잇는 자',
     oracle: '몸이 즐거운 길은 다시 찾게 된다.',
-    strength: '기분과 분위기를 동력으로 삼아 러닝을 오래 이어갑니다.',
-    watchout: '즐거운 날의 속도가 다음 날의 피로가 되지 않게 살펴보세요.',
+    strength: '즐거움을 동력으로 삼아 러닝을 오래 이어갑니다.',
+    watchout: '즐겁게 빨라진 날 다음에는 한 번 쉬어 가세요.',
     nextRun: '다음 러닝은 좋아하는 코스에서 말할 수 있는 속도로 즐겨보세요.',
   },
   persephone: {
     title: '계절이 바뀌어도 다시 피어나는 자',
-    oracle: '멈춤은 끝이 아니라 다음 계절의 시작이다.',
-    strength: '컨디션이 달라져도 자신에게 맞는 속도로 다시 시작합니다.',
-    watchout: '회복이 필요할 때 예전 기록과 자신을 비교하지 마세요.',
-    nextRun: '다음 러닝은 평소 거리의 절반으로, 몸의 신호만 따라가세요.',
+    oracle: '쉬어 가는 날도 다음 계절의 시작이다.',
+    strength: '자신에게 맞는 속도로 꾸준히 다시 나섭니다.',
+    watchout: '쉬어 가는 주에는 예전 기록과 자신을 비교하지 마세요.',
+    nextRun: '다음 러닝은 평소보다 짧게, 편한 속도로만 달려 보세요.',
   },
   perseus: {
     title: '결정적인 순간을 꿰뚫는 자',
@@ -164,13 +165,13 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '복잡한 길에서도 방향을 찾는 자',
     oracle: '갈림길에서도 너의 리듬은 답을 안다.',
     strength: '거리와 훈련 자극을 함께 조절하며 목표로 나아갑니다.',
-    watchout: '훈련이 잘 풀리는 때일수록 피로가 쌓이는 속도를 살펴보세요.',
+    watchout: '훈련이 잘 풀리는 때일수록 거리가 쌓이는 속도를 살펴보세요.',
     nextRun: '다음 러닝은 속도를 바꾸지 않고 편안한 리듬으로 마치세요.',
   },
   orpheus: {
     title: '자신만의 리듬을 따르는 자',
     oracle: '좋은 리듬은 오래 달릴 이유를 남긴다.',
-    strength: '몸의 감각을 읽고 자신에게 맞는 러닝을 이어갑니다.',
+    strength: '자신에게 맞는 러닝을 스스로 골라 이어갑니다.',
     watchout: '편안한 페이스가 익숙해지면 가벼운 변화도 시도해 보세요.',
     nextRun: '다음 러닝은 마지막 5분만 조금 경쾌하게 달려보세요.',
     nextRunRaises: true,
@@ -179,7 +180,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '자기 속도로 앞서 나가는 자',
     oracle: '빠른 발은 고요한 준비에서 완성된다.',
     strength: '속도를 높이는 훈련에서 민첩함과 집중력이 돋보입니다.',
-    watchout: '강한 자극 다음에는 몸이 회복할 시간을 확보하세요.',
+    watchout: '강한 자극 다음에는 쉬는 날을 먼저 확보하세요.',
     nextRun: '다음 러닝은 오르막을 피하고 대화할 수 있는 속도로 달리세요.',
   },
   nike: {
@@ -208,21 +209,21 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '자기 훈련을 설계하는 자',
     oracle: '정교한 하루가 더 먼 내일을 만든다.',
     strength: '훈련 자극과 일상의 리듬을 함께 조절합니다.',
-    watchout: '계획이 어긋난 날에도 몸의 상태를 기준으로 조정해 보세요.',
+    watchout: '계획이 어긋난 날에는 거리를 줄여 다시 맞춰 보세요.',
     nextRun: '다음 러닝은 시작 전 목표를 하나만 정하고 가볍게 마치세요.',
   },
   orion: {
     title: '먼 길의 끝을 바라보는 자',
     oracle: '먼 곳을 보는 눈은 오늘의 보폭을 아낀다.',
     strength: '긴 거리를 감당하며 자기 호흡을 유지하는 힘이 있습니다.',
-    watchout: '긴 러닝 다음에는 거리보다 회복 상태를 먼저 살펴보세요.',
+    watchout: '긴 러닝 다음에는 다음 러닝까지의 간격을 먼저 살펴보세요.',
     nextRun: '다음 러닝은 평소보다 짧게 달리며 호흡을 편하게 유지하세요.',
   },
   hector: {
     title: '긴 레이스를 끝까지 지키는 자',
-    oracle: '마지막까지 남는 힘은 매일의 걸음에서 나온다.',
+    oracle: '마지막까지 남는 힘은 쌓아 온 걸음에서 나온다.',
     strength: '거리와 빠른 훈련을 꾸준히 이어갈 기반이 있습니다.',
-    watchout: '잘 버티는 날에도 쌓인 피로를 지나치지 마세요.',
+    watchout: '잘 버티는 주에도 쉬는 날을 지나치지 마세요.',
     nextRun: '다음 러닝은 평소보다 짧게, 대화할 수 있는 속도로 달리세요.',
   },
   penthesilea: {
@@ -244,7 +245,7 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '달리는 즐거움을 먼저 찾는 자',
     oracle: '즐거운 한 걸음이 다음 걸음을 부른다.',
     strength: '짧고 빠른 러닝에서 에너지와 몰입이 살아납니다.',
-    watchout: '기분 좋은 속도로 달린 뒤에도 회복할 시간을 남겨두세요.',
+    watchout: '기분 좋은 속도로 달린 뒤에도 쉬는 날을 남겨두세요.',
     nextRun: '다음 한 번은 속도 목표 없이 20분만 가볍게 달리세요.',
   },
   prometheus: {
@@ -265,13 +266,13 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
     title: '긴 길의 끝까지 호흡을 잇는 자',
     oracle: '먼 길일수록 다음 한 걸음을 아껴라.',
     strength: '긴 거리를 향한 집중력과 지속력이 뚜렷합니다.',
-    watchout: '최장 거리가 늘어난 뒤에는 회복할 날을 확보하세요.',
+    watchout: '긴 러닝을 한 뒤에는 쉬는 날을 확보하세요.',
     nextRun: '다음 러닝은 거리 대신 편안한 호흡에 집중해 짧게 달리세요.',
   },
   ariadne: {
     title: '흩어진 길을 리듬으로 잇는 자',
     oracle: '너만의 길은 다시 이어 달릴 수 있다.',
-    strength: '일상의 변화 속에서도 러닝을 다시 이어가는 힘이 있습니다.',
+    strength: '일상 속에서도 러닝을 꾸준히 이어가는 힘이 있습니다.',
     watchout: '익숙한 페이스가 길어지면 가벼운 새 자극을 시도해 보세요.',
     nextRun: '다음 러닝은 낯선 짧은 코스를 편안한 속도로 달려보세요.',
   },

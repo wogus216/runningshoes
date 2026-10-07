@@ -71,7 +71,7 @@ const copy = [
   ['FARTHEST / 04', '지난 28일 중,<br>가장 멀리 달린 날은?', '최장거리', 'km', '다음: 강한 훈련', '한 번의 러닝에서 달린 가장 긴 거리예요.'],
   ['INTENSITY / 05', '지난 28일 중,<br>강하게 달린 건 몇 번?', '강한 훈련 횟수', '회', '다음: 목표', '없었다면 0회를 고르세요.', '인터벌·템포·레이스처럼 숨이 찬 러닝을 세요.'],
   ['PURPOSE / 06', '지금 러닝의<br>가장 큰 목표는?', '목표', '', '다음: 요일', '고르면 동전의 상징이 바뀌어요.'],
-  ['WEEKDAYS / 07', '평소 어느 요일에<br>달리나요?', '평소 러닝 요일', '', '메달 보기', '선택 항목이에요. 주로 달리는 요일을 고르면 회복 여유를 더 정확히 계산해요.'],
+  ['WEEKDAYS / 07', '평소 어느 요일에<br>달리나요?', '평소 러닝 요일', '', '메달 보기', '선택 항목이에요. 주로 달리는 요일을 고르면 그 간격으로 회복 여유를 계산해요.'],
 ];
 // Goal keys match the engine (habit/endurance/record/race/health_fun). The second name is the emblem on coin 06.
 const goals = { habit: ['습관', '감긴 고리'], endurance: ['지구력', '두 봉우리'], record: ['기록', '스톱워치'], race: ['대회', '결승 아치'], health_fun: ['건강과 재미', '∞ 고리'] };
@@ -709,7 +709,7 @@ function titled(f, struck) {
   // The eighth strike is done: the result card opens under the medal (S4, D5).
   if (complete) onReveal(verdictKept);
   if (!struck) return;
-  $('#medal-status').textContent = `명판을 새겼어요. ${f.house} 가문, ${f.name}.`;
+  $('#medal-status').textContent = Relief.plateStatus(f);
   $('#complete-figure').setAttribute('aria-label', describe()); $('#gl').setAttribute('aria-label', describe());
   if (complete) [title, line].forEach(el => animate(el, [{ opacity: .2, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }], 320));
 }

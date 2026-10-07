@@ -29,6 +29,16 @@ describe('명판 가문 기호', () => {
   it('36명의 12가문마다 기호가 있고, 남는 기호가 없다', () => {
     expect(HOUSES).toHaveLength(12);
     expect(Object.keys(Relief.SIGNS).sort()).toEqual([...HOUSES].sort());
+    expect(Object.keys(Relief.SIGN_NAMES).sort()).toEqual([...HOUSES].sort());
+  });
+
+  // S4 보고 3-3 경계 15: 가문의 신이면 '아테나 가문, 아테나'처럼 이름이 겹친다 → 기호가 가문을 대신한다.
+  it('각인 알림: 가문의 신은 기호와 이름, 나머지는 가문의 기호와 이름', () => {
+    expect(Relief.plateStatus({ name: '아테나', house: '아테나' })).toBe('명판을 새겼어요. 올빼미 기호와 아테나.');
+    expect(Relief.plateStatus({ name: '오디세우스', house: '아테나' })).toBe('명판을 새겼어요. 아테나 가문의 올빼미 기호와 오디세우스.');
+    const lines = RUNNER_CHARACTERS.map(c => Relief.plateStatus(figureOf(c)));
+    expect(lines.filter(line => /undefined|가문,/.test(line))).toEqual([]);
+    expect(LEADS.every(c => c.name === c.house)).toBe(true);
   });
 });
 
