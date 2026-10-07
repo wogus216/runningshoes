@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { trackRunner } from '@/lib/runner-analysis/track';
 import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
-import { getCharacterPresentation, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
+import { getCharacterPresentation, leadAxisOf, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { readSharedRunnerCard, type SharedCardReadResult } from '@/lib/runner-analysis/share';
 import { RunnerScores } from './running-card-scores';
 
@@ -55,9 +55,8 @@ export default function RunningCardShared({ raw, onStart }: { raw: string; onSta
   const { characterId, scores } = read.card;
   const character = RUNNER_CHARACTERS.find((c) => c.id === characterId)!;
   const presentation = getCharacterPresentation(characterId);
-  // 대표 수치: 결과 카드와 같은 규칙(인물 목표와 가장 가까운 공개 축). 링크의 점수는 정수라 드물게 원래 결과와 갈릴 수 있다.
-  const gap = (axis: (typeof PUBLIC_AXES)[number][0]) => Math.abs(scores[axis] - character.traits[axis]);
-  const leadAxis = PUBLIC_AXES.map(([axis]) => axis).reduce((best, axis) => (gap(axis) < gap(best) ? axis : best));
+  // 대표 수치: 결과 카드와 같은 함수(인물 목표값이 가장 높은 공개 축). 인물만으로 정해지므로 원래 결과와 갈리지 않는다.
+  const leadAxis = leadAxisOf(character.traits);
 
   return (
     <div className="rcm">

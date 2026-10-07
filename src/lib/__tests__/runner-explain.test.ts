@@ -3,7 +3,7 @@ import type { RunnerAnalysis, RunnerSnapshot28d, RunnerTraits } from '@/types/ru
 import { analyzeRunner } from '@/lib/runner-analysis/analyze';
 import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
 import { explainRunner, STEADY_NEXT_RUN, WATCHOUT_RULE_TEXT } from '@/lib/runner-analysis/explain';
-import { getCharacterPresentation, PRESENTATION_IDS } from '@/lib/runner-analysis/presentation';
+import { getCharacterPresentation, leadAxisOf, PRESENTATION_IDS } from '@/lib/runner-analysis/presentation';
 import { syntheticRunners } from './support/synthetic-runners';
 
 // 스펙 기준 사례 A(442-468행).
@@ -58,11 +58,26 @@ describe('explainRunner — 스펙 기준 사례 A', () => {
     expect(explanation.watchout).toEqual({ rule: 'enduranceWithoutVariety', text: '긴 거리를 감당하는 힘에 비해 훈련 변화는 적은 편입니다.' });
   });
 
-  it('대표 수치는 인물 목표와 가장 가까운 공개 축이고, 화면 정수와 같다', () => {
-    const target = analysis.match.character.traits;
-    const gaps = (['endurance', 'stimulus', 'recoveryMargin'] as const).map((axis) => [axis, Math.abs(analysis.traits[axis] - target[axis])] as const);
-    const closest = gaps.reduce((best, g) => (g[1] < best[1] ? g : best))[0];
-    expect(explanation.lead).toEqual({ axis: closest, value: analysis.publicScores[closest] });
+  it('대표 수치는 인물 목표값이 가장 높은 공개 축(헤라클레스 E95 → 지구력)이고, 화면 정수와 같다', () => {
+    expect(explanation.lead).toEqual({ axis: 'endurance', value: analysis.publicScores.endurance });
+  });
+});
+
+describe('대표 수치 축 — 인물 목표값이 가장 높은 공개 축(운영자 결정 2026-10-07)', () => {
+  it('같으면 지구력 → 훈련 자극 → 회복 여유 순', () => {
+    expect(leadAxisOf({ endurance: 50, stimulus: 50, recoveryMargin: 50 })).toBe('endurance');
+    expect(leadAxisOf({ endurance: 40, stimulus: 60, recoveryMargin: 60 })).toBe('stimulus');
+    expect(leadAxisOf({ endurance: 40, stimulus: 50, recoveryMargin: 60 })).toBe('recoveryMargin');
+    // 아르테미스 E80·S70·R80 — 지구력과 회복 여유가 같다.
+    expect(leadAxisOf(RUNNER_CHARACTERS.find((c) => c.id === 'artemis')!.traits)).toBe('endurance');
+  });
+
+  it.each(RUNNER_CHARACTERS.map((c) => [c.name, c.id] as const))('%s: 사용자 점수와 상관없이 같은 축', (_name, id) => {
+    const target = RUNNER_CHARACTERS.find((c) => c.id === id)!.traits;
+    const top = Math.max(target.endurance, target.stimulus, target.recoveryMargin);
+    const axes = [explainRunner(BASE, verdict(id, {})), explainRunner(BASE, verdict(id, { endurance: 0, stimulus: 100, recoveryMargin: 0 })), explainRunner(BASE, verdict(id, { endurance: 100, stimulus: 0, recoveryMargin: 100 }))].map((e) => e.lead.axis);
+    expect(new Set(axes).size).toBe(1);
+    expect(target[axes[0]]).toBe(top);
   });
 });
 

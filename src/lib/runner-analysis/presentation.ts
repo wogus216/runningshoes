@@ -297,6 +297,13 @@ export const PUBLIC_AXES = [
   ['recoveryMargin', '회복 여유'],
 ] as const;
 
+// 대표 수치(운영자 결정 2026-10-07): 공개 3축 중 인물 목표값이 가장 높은 축의 사용자 점수. 같으면 지구력 · 훈련 자극 · 회복 여유 순.
+// 인물만으로 축이 정해지므로 결과 카드와 공유 링크 화면이 갈리지 않는다. 스펙 168행('판정에 가장 크게 기여한 축')과 다르다.
+export function leadAxisOf(target: Record<(typeof PUBLIC_AXES)[number][0], number>) {
+  return PUBLIC_AXES.map(([axis]) => axis).reduce((best, axis) => (target[axis] > target[best] ? axis : best));
+}
+export const LEAD_NOTE = '이 인물의 중심 점수';
+
 // 회복 여유는 몸의 회복이 아니다(스펙 12·283행, 설계 §6-4). 3축이 보이는 곳에 이 줄을 함께 둔다.
 // 설계 §6-4 예시는 '고른 요일 사이 간격'이지만, 요일을 건너뛰면 엔진이 28일 ÷ 횟수로 간격을 어림하므로 '달린 날'로 쓴다.
 export const RECOVERY_MARGIN_NOTE = '회복 여유: 달린 날 사이 간격과 1회 거리로 본 훈련 여백이에요. 몸의 회복 상태가 아니에요.';

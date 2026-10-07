@@ -4,7 +4,7 @@
 // 회복 여유 is not. The medal itself is drawn by the caller (a front-on WebGL render, or the flat drawing); this file only
 // lays out the page around it.
 // card (running-card-result.tsx): { house, name, title, oracle, scores: [{ label, value, lead }], evidence: [{ text,
-// hiddenText }], strength, watchout, next, recoveryNote }. Nothing about where the numbers came from (예시·입력 경로·
+// hiddenText }], strength, watchout, next, leadNote, recoveryNote }. Nothing about where the numbers came from (예시·입력 경로·
 // fallbacksUsed) is in it.
 // Text: the masthead keeps the medal subset (StudySans); the card's sentences use the page's Pretendard Variable (the
 // site's dynamic subset, loaded by unicode range for exactly these letters — the result card shows the same sentences),
@@ -41,8 +41,8 @@ function wrap(g, text, maxWidth) {
 }
 
 async function fontsFor(card, extra = '') {
-  const text = [card.house, card.name, card.title, card.oracle, card.strength, card.watchout, card.next, card.recoveryNote,
-    ...card.evidence.flatMap(e => [e.text, e.hiddenText]), ...card.scores.map(s => s.label), '가문 세 점수 대표 수치 이 인물이 된 기록 강점 놓치기 쉬운 것 다음 14일, 한 가지 “”', extra].join(' ');
+  const text = [card.house, card.name, card.title, card.oracle, card.strength, card.watchout, card.next, card.leadNote, card.recoveryNote,
+    ...card.evidence.flatMap(e => [e.text, e.hiddenText]), ...card.scores.map(s => s.label), '가문 세 점수 이 인물이 된 기록 강점 놓치기 쉬운 것 다음 14일, 한 가지 “”', extra].join(' ');
   await Promise.all([
     document.fonts.load(`500 40px "Pretendard Variable"`, text),
     ...['700 100px StudyCondensed', '450 40px StudySans', '650 40px StudySans'].map(f => document.fonts.load(f, '러닝 카드 산초 지난 28일 0123456789 allrunabout.com')),
@@ -113,7 +113,7 @@ export async function drawAnalysis(g, kind, card, hideNumbers) {
     put(() => { g.fillStyle = TH.ink; fitText(g, card.name, M, y, width, 92 * s, 760); });
     y += 62 * s;
     put(() => { g.fillStyle = TH.ink; fitText(g, card.title, M, y, width, 40 * s, 500); });
-    // The three scores: label, a 0–100 bar, the integer. The lead score (판정에 가장 크게 기여한 축) in the accent.
+    // The three scores: label, a 0–100 bar, the integer. The lead score (the axis the figure's target puts highest) in the accent, with leadNote.
     y += 84 * s;
     put(() => { g.fillStyle = TH.muted; fitText(g, '세 점수', M, y, width, 30 * s, 550); });
     y += 26 * s;
@@ -122,7 +122,7 @@ export async function drawAnalysis(g, kind, card, hideNumbers) {
       put(() => {
         g.fillStyle = TH.rule; g.fillRect(M, rowTop, width, 2);
         g.textAlign = 'left'; g.fillStyle = c; font(g, 550, 38 * s); g.fillText(score.label, M, rowTop + 58 * s);
-        if (score.lead) { const lw = g.measureText(score.label).width; g.fillStyle = TH.muted; font(g, 450, 26 * s); g.fillText('대표 수치', M + lw + 16 * s, rowTop + 58 * s); }
+        if (score.lead) { const lw = g.measureText(score.label).width; g.fillStyle = TH.muted; font(g, 450, 26 * s); g.fillText(card.leadNote, M + lw + 16 * s, rowTop + 58 * s); }
         const barW = width - 190 * s, by = rowTop + 80 * s;
         g.fillStyle = TH.track; g.fillRect(M, by, barW, 8 * s);
         g.fillStyle = c; g.fillRect(M, by, barW * Math.max(0, Math.min(100, score.value)) / 100, 8 * s);

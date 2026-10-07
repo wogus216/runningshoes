@@ -1,5 +1,8 @@
 import { describe, expect, it } from 'vitest';
+import { analyzeRunner } from '@/lib/runner-analysis/analyze';
 import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
+import { explainRunner } from '@/lib/runner-analysis/explain';
+import { leadAxisOf } from '@/lib/runner-analysis/presentation';
 import {
   createSharedRunnerCard,
   encodeSharedRunnerCard,
@@ -7,6 +10,7 @@ import {
   SHARE_TTL_MS,
   sharedRunnerCardUrl,
 } from '@/lib/runner-analysis/share';
+import { syntheticRunners } from './support/synthetic-runners';
 
 const IDS = RUNNER_CHARACTERS.map((c) => c.id);
 const NOW = Date.UTC(2026, 9, 6, 12);
@@ -41,5 +45,21 @@ describe('공유 링크(D11 — URL 방식)', () => {
     ['JSON(프로토타입 형식)', JSON.stringify({ version: 1, characterId: 'athena' })],
   ])('형식이 틀리면 invalid — %s', (_name, raw) => {
     expect(readSharedRunnerCard(raw, IDS, NOW).status).toBe('invalid');
+  });
+});
+
+// 공유받은 화면(running-card-shared.tsx)은 링크로 되읽은 인물로 leadAxisOf 를 부르고, 링크의 정수 점수를 보인다.
+describe('공유받은 화면의 대표 수치 = 결과 카드 대표 수치(합성 1만 명)', () => {
+  it('링크로 되읽은 인물·점수로 고른 축과 값이 결과 카드(explainRunner)와 같다', () => {
+    const differ = syntheticRunners().flatMap((snapshot) => {
+      const analysis = analyzeRunner(snapshot);
+      const { lead } = explainRunner(snapshot, analysis);
+      const url = new URL(sharedRunnerCardUrl('https://allrunabout.com', createSharedRunnerCard(analysis.match.character.id, analysis.publicScores, NOW)));
+      const read = readSharedRunnerCard(url.searchParams.get('card'), IDS, NOW);
+      if (read.status !== 'valid') return [snapshot];
+      const axis = leadAxisOf(RUNNER_CHARACTERS.find((c) => c.id === read.card.characterId)!.traits);
+      return axis === lead.axis && read.card.scores[axis] === lead.value ? [] : [snapshot];
+    });
+    expect(differ).toEqual([]);
   });
 });
