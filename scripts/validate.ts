@@ -176,7 +176,8 @@ console.log('');
 // 독자가 끝난 대회에 신청하려 든다(2026-07 실제 10건). 사람의 기억에 의존하지 않도록 기계적으로 막는다.
 console.log('━━━ 6. 마라톤 대회 데이터 검증 ━━━');
 const VALID_STATUS = ['접수예정', '접수중', '마감', '대회종료'];
-const today = new Date().toISOString().slice(0, 10);
+// '오늘'은 한국 날짜다. toISOString 은 UTC 라 KST 0~9시에 하루 전으로 계산된다(2026-10-07 수정).
+const today = new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 let marathonOk = true;
 const noRegEndOpen: string[] = []; // [C] 마감일 없는 접수중·접수예정 — 마감을 감지할 방법이 없는 구멍
 {

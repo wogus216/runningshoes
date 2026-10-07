@@ -30,7 +30,8 @@ import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 const ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const today = process.argv[2] || new Date().toISOString().slice(0, 10);
+// '오늘'은 한국 날짜다. toISOString 은 UTC 라 KST 0~9시에 하루 전으로 계산돼 알림이 하루 늦게 떴다(2026-10-07 수정).
+const today = process.argv[2] || new Date(Date.now() + 9 * 60 * 60 * 1000).toISOString().slice(0, 10);
 const plusDays = (d, n) => {
   const t = new Date(`${d}T00:00:00Z`);
   t.setUTCDate(t.getUTCDate() + n);
