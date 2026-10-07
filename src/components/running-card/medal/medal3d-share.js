@@ -91,7 +91,13 @@ function drawWords(g, card, L, width, nameWidth = width) {
 }
 
 const AI_LABEL = 'AI 생성 이미지';
-const loadPicture = src => new Promise(resolve => { const img = new Image(); img.onload = () => resolve(img); img.onerror = () => resolve(null); img.src = src; });
+// A request that never answers must not hold the save: after `wait` the cover goes without the picture (the medal cover).
+const loadPicture = (src, wait = 4000) => new Promise(resolve => {
+  const img = new Image();
+  const done = value => { clearTimeout(timer); img.onload = img.onerror = null; resolve(value); };
+  const timer = setTimeout(() => done(null), wait);
+  img.onload = () => done(img); img.onerror = () => done(null); img.src = src;
+});
 
 // Page 1. renderFigure(fig, target?) draws the medal into fig ({ x, y, w, h, fit }) on target (default: the page) and
 // returns its fit. With the figure's picture (card.image, S5-D) the page is the picture with the medal on it; without one
