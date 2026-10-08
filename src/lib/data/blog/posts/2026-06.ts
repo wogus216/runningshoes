@@ -3619,11 +3619,11 @@ export const posts_2026_06: BlogPost[] = [
     slug: 'asics-running-shoes-lineup-tier-guide-2026',
     title: '아식스 러닝화 계급도 2026 — 카야노·님버스·노바블라스트·메타스피드, GEL부터 FF Blast까지 전체 라인업 | 입문부터 슈퍼슈즈까지 한 장 정리',
     description:
-      '아식스 러닝화 17종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 39.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',
+      '아식스 러닝화 18종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 39.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',
     thumbnail: '/images/blog/asics-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-08',
     category: 'guide' as const,
     readingTime: 13,
     tags: ['아식스 러닝화', '아식스 계급도', '러닝화 라인업', '러닝화 등급', '젤 카야노', '젤 님버스', '노바블라스트', '메타스피드', '슈퍼블라스트', 'FF Blast'],
@@ -3691,9 +3691,9 @@ export const posts_2026_06: BlogPost[] = [
 
 <p>요약하면 <strong>FF Turbo+가 아식스 최상위 레이싱 폼(PEBA)</strong>입니다. 재밌는 건 슈퍼블라스트가 이 FF Turbo+로 <strong>카본 플레이트 없이</strong> 71% 에너지 리턴을 내는 "무카본 슈퍼슈즈"라는 점이에요.</p>
 
-<h2>3. 아식스 러닝화 계급도 — 17종 한눈에</h2>
+<h2>3. 아식스 러닝화 계급도 — 18종 한눈에</h2>
 
-<p>라인 × 폼으로 현재 한국에서 살 수 있는 아식스 러닝화 17종을 줄 세우면 이렇게 됩니다. 2026년 하반기 후속작 <strong>노바블라스트 6</strong>·<strong>소닉블라스트 2</strong>가 들어오면서 5·1세대는 "전작"으로 표기했습니다 — 할인 재고가 있으면 가성비 선택지입니다.</p>
+<p>라인 × 폼으로 현재 한국에서 살 수 있는 아식스 러닝화 18종을 줄 세우면 이렇게 됩니다. 2026년 하반기 후속작 <strong>노바블라스트 6</strong>·<strong>소닉블라스트 2</strong>가 들어오면서 5·1세대는 "전작"으로 표기했습니다 — 할인 재고가 있으면 가성비 선택지입니다.</p>
 
 <table>
   <thead>
@@ -3711,6 +3711,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/asics-sonicblast-2"><strong>소닉블라스트 2</strong></a></td><td>플레이트 트레이너 (현행)</td><td>FF Turbo Squared · FF Blast Max · 포크형 ASTROPLATE(Pebax)</td><td>22.9만</td><td>242g</td><td>플레이트를 포크형으로 바꾼 2세대, 가격 동결</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>22.9만</td><td>193g</td><td>193g 포크형 카본, 50g 감량</td></tr>
     <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/asics-gel-slowcush"><strong>젤 슬로우쿠시</strong></a></td><td>회복런 전용 쿠션 (10월 신상)</td><td>FF LUXE PLUS · PureGEL PLUS</td><td>24.9만</td><td>298g</td><td>공식 스택 48mm, 느린 날 전용 맥스쿠션</td></tr>
     <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>239g</td><td>239g, 더 부드러운 롱런</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>메타후지 트레일</strong></a></td><td>트레일 레이싱</td><td>FF Turbo · 카본</td><td>27.9만</td><td>258g</td><td>카본 트레일 레이서</td></tr>
     <tr><td><a href="/shoes/asics-megablast"><strong>메가블라스트</strong></a></td><td>맥시멀 바운시</td><td>FF Turbo²</td><td>29.9만</td><td>218g</td><td>힐 45.1mm에 218g, 구름 위 달리기</td></tr>
@@ -3720,14 +3721,14 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>※ 가격은 한국 공식가(2026-09-28 확인 기준), 무게는 신발 DB의 공개 수치입니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+<p>※ 가격은 한국 공식가(2026-09-28 확인 기준, 젤 슬로우쿠시는 10-08 확인), 무게는 신발 DB의 공개 수치입니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
 
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
 <ul>
   <li><strong>🟢 통통 튀는 만능 데일리</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(17.9만). 아식스 입문의 정석으로, 6세대는 전족에 FF Turbo²를 더해 앞꿈치 반발을 보강했습니다. 1만원 싼 전작 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>(16.9만)는 할인 재고가 있으면 가성비 대안입니다. 다른 브랜드 데일리와 비교는 <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>에.</li>
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/asics-gel-kayano-32">젤 카야노 32</a>(단단) 또는 <a href="/shoes/asics-gel-kayano-33">33</a>(부드러움). 둘의 차이는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33</a>에, 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에 있습니다.</li>
-  <li><strong>☁️ 푹신한 프리미엄 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(43.5mm). 더 가볍고 높은 스택을 원하면 힐 45.1mm에 218g인 <a href="/shoes/asics-megablast">메가블라스트</a>.</li>
+  <li><strong>☁️ 푹신한 프리미엄 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(43.5mm). 더 가볍고 높은 스택을 원하면 힐 45.1mm에 218g인 <a href="/shoes/asics-megablast">메가블라스트</a>. 이지런·회복런만 맡길 신발을 따로 두려면 10월 출시된 <a href="/shoes/asics-gel-slowcush">젤 슬로우쿠시</a>(24.9만)가 있는데, 님버스 28보다 5만원 비싸고 빠른 페이스에는 둔하다는 랩 평가가 있어 차이는 <a href="/blog/asics-gel-slowcush-korea-launch-2026">젤 슬로우쿠시 출시 정리</a>에 따로 적었습니다.</li>
   <li><strong>🎯 쿠션 있는 템포·롱런(플레이트)</strong> → <a href="/shoes/asics-sonicblast-2">소닉블라스트 2</a>(22.9만). 포크형 Pebax 플레이트가 들어간 2세대로, 1세대와 같은 가격입니다. 1세대 분석은 <a href="/blog/asics-sonicblast-review-2026">소닉블라스트 리뷰</a>에.</li>
   <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 또는 더 가벼운 <a href="/shoes/asics-magic-speed-5">5</a>. 둘의 차이는 <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5</a>에.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련·롱런</strong> → <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(템포) 또는 <a href="/shoes/asics-superblast-3">3</a>(부드러운 롱런). 비교는 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3</a>에.</li>

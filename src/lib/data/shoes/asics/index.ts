@@ -16,6 +16,7 @@ import { shoe as asicsMagicSpeed5 } from './asics-magic-speed-5';
 import { shoe as asicsMetaspeedRay } from './asics-metaspeed-ray';
 import { shoe as asicsMetafujiTrail } from './asics-metafuji-trail';
 import { shoe as asicsGelVenture10 } from './asics-gel-venture-10';
+import { shoe as asicsGelSlowcush } from './asics-gel-slowcush';
 
 // 신발 1켤레 = 파일 1개 (asics/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const asicsShoes: Shoe[] = [
@@ -36,4 +37,5 @@ export const asicsShoes: Shoe[] = [
   asicsMetaspeedRay,
   asicsMetafujiTrail,
   asicsGelVenture10,
+  asicsGelSlowcush,
 ];

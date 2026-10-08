@@ -2,6 +2,116 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'asics-gel-slowcush-korea-launch-2026',
+    slug: 'asics-gel-slowcush-korea-launch-2026',
+    title: '아식스 젤 슬로우쿠시 한국 출시 | 249,000원 회복런 전용화 — 님버스 28과 무엇이 다른가',
+    description: '아식스 젤 슬로우쿠시(GEL-SLOWCUSH)가 10월 7일 한국에 출시됐습니다. 공식몰 249,000원으로 님버스 28보다 5만원 비쌉니다. 공식 298g·스택 48/40mm·드롭 8mm와 RTINGS 실측 279.7g·드롭 10.4mm를 나눠 정리하고, 쿠션은 님버스 28보다 많지만 가성비는 밀린다는 랩 평가와 로커·발볼·무릎 관점에서 누구에게 맞는지 정리했습니다.',
+    thumbnail: '/images/blog/asics-gel-slowcush-korea-launch-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-08',
+    category: 'review' as const,
+    readingTime: 7,
+    tags: ['젤 슬로우쿠시', '젤 슬로우쿠쉬', 'GEL-SLOWCUSH', '아식스 신상', '회복런 러닝화', '맥스쿠션 러닝화', '젤 님버스 28'],
+    faqs: [
+      { question: '젤 슬로우쿠시 한국 가격과 출시일은 언제인가요?', answer: '아식스코리아 공식몰 가격은 249,000원이고, 한국 출시일은 10월 7일입니다(아식스코리아 공식 인스타그램 공지). 남여공용 230~285 사이즈, 2색으로 등재돼 있습니다(10월 8일 확인). 글로벌 출시는 10월 1일, 미국 공식가는 $200입니다.' },
+      { question: '젤 님버스 28과 무엇이 다른가요?', answer: '아식스는 두 신발을 모두 Maximum 쿠션·중립으로 분류합니다. 슬로우쿠시는 공식 힐 스택 48mm로 님버스 28(43.5mm)보다 높고, 미드솔이 FF LUXE PLUS와 PureGEL PLUS로 바뀌었습니다. RTINGS는 슬로우쿠시의 쿠션이 더 많고 부드럽지만, 이지런·회복런 용도의 가성비는 님버스 28이 낫다고 평가했습니다. 한국 가격 차이는 5만원입니다.' },
+      { question: '발볼이 넓은데 젤 슬로우쿠시를 신어도 되나요?', answer: '와이드 옵션이 없습니다. 미국 공식몰 폭 옵션이 Standard 하나이고 한국 공식몰도 남여공용 단일 폭입니다. Doctors of Running은 토박스가 안쪽은 곧고 바깥쪽은 조금 더 좁아지는 형태라고 했고, 힐 칼라 패딩 때문에 뒤꿈치가 약간 조인다고 했습니다. 토박스 실측 너비는 아직 공개된 랩 수치가 없어 매장에서 신어 보고 고르는 편이 안전합니다.' },
+      { question: '무릎이 안 좋은데 도움이 되나요?', answer: '높은 스택으로 착지 충격을 줄이는 쪽으로 설계됐지만, 부상 예방 효과를 시험한 자료는 없습니다. Doctors of Running 리뷰어는 로커 덕분에 아킬레스건 부담이 줄었다고 하면서도 고관절과 무릎의 압력은 늘었다고 적었습니다. 로커가 강한 신발에서 흔한 힘의 이동이라는 설명입니다. 통증이 이어지면 신발보다 진료가 먼저입니다.' },
+      { question: '초보 러너의 첫 러닝화로 괜찮나요?', answer: '느린 페이스에 맞춘 신발이라는 점은 입문 단계와 맞지만, 첫 신발 한 켤레로 모든 훈련을 해야 한다면 가격과 범용성에서 님버스 28(199,000원)이나 노바블라스트 6(179,000원)이 먼저입니다. 페이스를 올리면 둔하게 느껴질 수 있다는 것이 RTINGS와 Doctors of Running의 공통 평가입니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>10월 7일 한국 출시, 아식스코리아 공식몰 249,000원</strong>입니다. 아식스가 이지런·회복 주행용으로 새로 만든 맥스쿠션화로, 공식 스택 48/40mm·드롭 8mm·298g이고 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(199,000원)보다 5만원 비쌉니다.</li>
+    <li><strong>RTINGS 랩은 "쿠션은 님버스 28보다 많고 부드럽지만, 가성비는 님버스 28"</strong>로 정리했습니다. 탄력(에너지 리턴) 점수는 10점 만점에 3.1로, 페이스를 올리면 둔하게 느껴질 수 있다는 평입니다.</li>
+    <li><strong>느린 날만 맡기는 신발, 즉 '전용화'</strong>입니다. 빠른 날 신을 신발이 따로 있을 때 값을 하고, 한 켤레로 모든 훈련을 해야 한다면 님버스 28이나 노바블라스트 6이 먼저입니다. 와이드 옵션은 없습니다.</li>
+  </ul>
+</div>
+
+<p>아식스가 '빠르게'가 아니라 '천천히'를 이름에 건 러닝화를 냈습니다. <a href="/shoes/asics-gel-slowcush">젤 슬로우쿠시(GEL-SLOWCUSH)</a>는 9월 17일 글로벌 보도자료로 공개돼 10월 1일 글로벌 출시됐고, 한국에는 10월 7일 들어왔습니다. 판매처에 따라 '젤 슬로우쿠쉬'로도 표기하는데, 이 글은 아식스코리아 공식몰 표기인 '젤 슬로우쿠시'를 씁니다.</p>
+<p>아식스 보도자료가 밝힌 용도는 <strong>이지런, 회복 주행, 저강도 훈련</strong>입니다. 속도나 기록에 대한 약속은 한 줄도 없습니다. 이 글에서는 이렇게 한 가지 페이스 구간을 잘하려고 나머지를 내려놓은 신발을 <strong>전용화</strong>라고 부르겠습니다. 전용화를 살지 말지는 결국 "그 구간이 내 훈련에서 신발을 따로 둘 만큼 큰가"의 문제라서, 아래 수치도 그 질문에 답하는 순서로 놓았습니다.</p>
+
+<div class="callout info"><strong>이 글의 수치는 출처가 셋입니다</strong> — ① 아식스 공식 표기(미국·뉴질랜드·한국 공식몰과 보도자료), ② RTINGS 랩 측정(10월 7일 게시, 남성 US 9), ③ Doctors of Running 리뷰(9월 18일 게시). 공식 표기와 랩 측정은 같은 항목이라도 값이 다르게 나오므로 표에서 칸을 나눴습니다. 신발을 절단해 폼 경도·토박스 너비까지 재는 RunRepeat 랩은 10월 8일 기준 아직 없습니다.</div>
+
+<h2>한국 출시 정보 — 249,000원, 남여공용 단일 폭</h2>
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td>출시일</td><td>한국 10월 7일(아식스코리아 공식 인스타그램 공지) · 글로벌 10월 1일</td></tr>
+    <tr><td>가격</td><td><strong>249,000원</strong>(아식스코리아 공식몰) · 미국 공식가 $200</td></tr>
+    <tr><td>사이즈</td><td>230~285(남여공용)</td></tr>
+    <tr><td>색상</td><td>2색(공식몰 목록 기준) — 오렌지 글로우/체리 토마토(1013A187.800) 포함</td></tr>
+    <tr><td>폭</td><td>표준 1종 — 와이드 없음(미국 공식몰도 Standard만)</td></tr>
+    <tr><td>공식몰 상세 표기</td><td>298g · 미드솔 FF LUXE+ · 아웃솔 AHAR+ · 엔지니어드 메시</td></tr>
+  </tbody>
+</table>
+<p>10월 8일 오후 공식몰에서 오렌지 글로우 색상은 260~285 사이즈가 품절로 표시돼 있었습니다. 출시 직후 재고라 바뀔 수 있습니다.</p>
+<p>가격 위치를 보면 성격이 보입니다. 같은 아식스 쿠션 라인의 님버스 28이 199,000원, 장거리와 빠른 훈련까지 겸하는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>가 259,000원입니다(10월 8일 공식몰 기준). <strong>느린 날 전용 신발이 다목적 프리미엄 트레이너와 1만원 차이</strong>입니다. 미국 공식가로는 슬로우쿠시 $200, 님버스 28 $170으로 약 18% 차이인데, 한국에서는 5만원, 약 25% 차이로 벌어집니다.</p>
+
+<h2>스펙 — 공식 수치와 랩 수치를 나눠 읽어야 합니다</h2>
+<p>공식 표기와 랩 측정은 재는 주체도 기준도 다릅니다. 같은 신발인데도 무게가 18g, 드롭이 2.4mm 차이 납니다. 그래서 님버스 28과 비교할 때도 공식은 공식끼리, 실측은 실측끼리 맞췄습니다.</p>
+<table>
+  <thead><tr><th>항목</th><th>슬로우쿠시 공식</th><th>슬로우쿠시 RTINGS 실측</th><th>님버스 28 공식</th><th>님버스 28 RunRepeat 실측</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>298g</td><td>279.7g</td><td>281g</td><td>278g</td></tr>
+    <tr><td>힐 스택</td><td>48mm</td><td>46.6mm</td><td>43.5mm</td><td>39.5mm</td></tr>
+    <tr><td>포어풋 스택</td><td>40mm</td><td>미공개</td><td>—</td><td>—</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>10.4mm</td><td>8mm</td><td>—</td></tr>
+    <tr><td>쿠션 등급(아식스 분류)</td><td>Maximum</td><td>—</td><td>Maximum</td><td>—</td></tr>
+    <tr><td>미드솔</td><td>FF LUXE PLUS + PureGEL PLUS</td><td>플레이트 없음</td><td>FF BLAST PLUS + PureGEL</td><td>—</td></tr>
+  </tbody>
+</table>
+<p>표에서 읽을 것은 두 가지입니다. 첫째, <strong>공식끼리는 슬로우쿠시가 님버스 28보다 17g 무겁고 힐이 4.5mm 높지만, 실측끼리는 무게가 비슷합니다.</strong> 측정 기관이 달라 1~2g 차이는 의미 있게 읽지 않았습니다. 둘째, RTINGS가 잰 드롭은 10.4mm로 공식 8mm보다 높습니다. 드롭이 낮은 신발을 신다가 넘어온다면 '8mm'라는 숫자보다 높게 느낄 수 있습니다.</p>
+
+<h2>무엇이 새로운가 — FF LUXE PLUS와 PureGEL PLUS</h2>
+<p>미드솔 소재 두 가지가 이 신발에서 처음 나옵니다. <strong>FF LUXE PLUS</strong>는 아식스가 '구름 같은' 착지감을 내세운 새 폼으로, 미국 공식몰 설명에 따르면 기존 FF LUXE보다 반발 수준을 높였습니다. 뒤꿈치의 <strong>PureGEL PLUS</strong>는 님버스 28에도 들어가는 PureGEL의 다음 세대입니다. 젤을 물리적으로 발포해 기존 PureGEL보다 <strong>약 20% 가볍고</strong>, 육각기둥을 틈을 두고 배열해 부드럽게 눌리다가 하중이 끝까지 실리면 틈이 메워지면서 바닥까지 꺼지는 느낌을 막는 구조라고 아식스는 설명합니다.</p>
+<p>보도자료에서 아식스 글로벌 제품 담당 Paul Lang은 개발의 출발점이 "속도나 퍼포먼스 향상이 아니라, 이지런을 어떻게 더 즐겁게 만들까라는 질문"이었다고 밝혔습니다. 브랜드가 처음부터 전용화로 기획했다는 뜻이고, 아래 랩 결과도 같은 방향을 가리킵니다.</p>
+
+<h2>랩과 리뷰가 본 것 — 쿠션은 위, 탄력과 가성비는 아래</h2>
+<h3>RTINGS(10월 7일 게시)</h3>
+<ul>
+  <li>쿠셔닝 점수 8.9/10. 님버스 28과 비교해 <strong>"쿠션이 전반적으로 더 많고 더 부드럽다"</strong>고 했습니다.</li>
+  <li>그런데 같은 비교의 결론은 <strong>"이지런·회복런 용도의 가성비는 님버스 28이 낫다"</strong>입니다.</li>
+  <li>에너지 리턴 점수 3.1/10(전족부 3.5, 뒤꿈치 2.2). "페이스를 올리면 무겁고 탄력이 부족하게 느껴질 수 있다"고 적었고, 5K·10K 레이스 용도 점수는 5.6입니다.</li>
+  <li>슈퍼블라스트 3에 대해서는 "훨씬 가볍고 탄력 있으며 쿠션도 많아" 장거리와 빠른 훈련에 더 강한 선택이라고 봤습니다.</li>
+  <li>통기성 점수 6.0/10이고, 젖은 뒤 마르는 데 48시간 넘게 걸렸습니다. 한여름이나 장마철에는 따져 볼 부분입니다.</li>
+</ul>
+<h3>Doctors of Running(9월 18일 게시, Matt Klein)</h3>
+<p>이 리뷰를 읽으려면 <strong>로커</strong>를 먼저 알아 두면 좋습니다. 밑창을 흔들의자 다리처럼 둥글게 깎아, 발목을 많이 접지 않아도 뒤꿈치에서 앞꿈치로 굴러가듯 넘어가게 만든 구조입니다.</p>
+<ul>
+  <li>뒤꿈치 로커를 "지금까지 본 아식스 트레이너 중 가장 좋고 매끄러운 설계"로 평가했습니다. 전족부는 잘 휘지 않지만 긴 로커가 전환을 쉽게 만든다고 했습니다.</li>
+  <li>바닥이 꽤 넓고 라스트가 곧은 데다 안쪽 측벽이 높아 <strong>안정적인 중립화(stable neutral)</strong>로 분류했습니다. 별도 지지 장치는 없지만 뒤꿈치·미드풋에 가벼운 안정성이 필요한 정도까지는 맞는다는 평입니다.</li>
+  <li>아킬레스건 재활 중인 리뷰어 본인은 로커가 <strong>힘줄 부담을 눈에 띄게 덜어 준다</strong>고 했습니다. 대신 <strong>고관절과 무릎의 압력은 늘었다</strong>고 함께 적었고, 로커 신발에서 흔한 힘의 이동이라고 설명했습니다. 부드러운 미드솔은 고관절이 불안정한 러너에게 다소 불리할 수 있다는 주의도 남겼습니다.</li>
+  <li>페이스를 올리면 폼이 충분히 빠르게 반응하지 않는다고 했습니다. RTINGS의 낮은 탄력 점수와 같은 방향입니다.</li>
+  <li>아웃솔 고무가 성겨 노출된 미드솔이 많고, 틈에 돌과 가시가 잘 끼어 <strong>매끈한 길 외에는 피하라</strong>고 했습니다. 약 35마일(56km)을 달린 뒤 마모는 뒤꿈치 바깥쪽과 전족부에 경미한 정도였습니다.</li>
+</ul>
+
+<h2>전용화의 값은 로테이션 안에서만 돌아옵니다</h2>
+<p>두 매체의 평가를 겹치면 그림이 선명합니다. 느린 페이스에서는 님버스 28보다 푹신하고, 페이스를 올리면 둔합니다. 전용화다운 결과입니다. 문제는 값입니다. 5만원을 더 내고 얻는 것은 느린 날의 착지감이고, 그 차이는 다른 신발이 빠른 날을 맡아 줄 때만 의미가 생깁니다.</p>
+<ul>
+  <li><strong>후보가 되는 경우</strong> — 주 4회 이상 달리고 템포·인터벌용 신발이 이미 있으며, 그 사이 이지런·회복런을 대화가 될 만큼 느리게 달리는 러너. 다리가 무거운 날 부드러운 착지를 최우선으로 둔다면 전용화의 장점이 가장 크게 남습니다. 회복런을 어떤 페이스와 시간으로 달려야 하는지는 <a href="/blog/recovery-run-vs-lsd-guide-2026">회복런 vs LSD 가이드</a>에 정리했습니다.</li>
+  <li><strong>님버스 28이 먼저인 경우</strong> — 한 켤레로 이지런부터 장거리까지 소화해야 하는 러너. RTINGS 결론대로 쿠션은 조금 덜해도 가성비는 님버스 28이 낫고, 5만원이 남습니다. 더 가볍고 통통 튀는 쪽이 좋다면 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(179,000원)도 있습니다.</li>
+  <li><strong>슈퍼블라스트 3가 나은 경우</strong> — 장거리에서 페이스를 올리는 날도 같은 신발로 달리고 싶은 러너. 1만원 차이로 무게와 탄력을 얻습니다.</li>
+  <li><strong>다른 브랜드의 같은 성격</strong> — 두 매체가 모두 비교한 <a href="/shoes/saucony-paramount-max">써코니 파라마운트 맥스</a>(259,000원, 8월 15일 써코니코리아 공식몰 기준)는 더 탄력 있는 쪽이고, Doctors of Running은 로커와 안정성에서 슬로우쿠시를 더 높게 봤습니다. RTINGS는 <a href="/shoes/hoka-bondi-9">호카 본디 9</a>가 더 탄력 있지만 안정성은 낮다고 비교했습니다. 맥스쿠션화 전체 비교는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션 러닝화 추천</a>에, 아식스 안에서의 위치는 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 러닝화 계급도</a>에 있습니다.</li>
+</ul>
+
+<div class="callout warning"><strong>아직 확정되지 않은 것</strong> — ① RunRepeat 랩이 없어 폼 경도·에너지 리턴 %·토박스 실측 너비가 비어 있습니다. 사이트 신발 페이지의 발볼 등급 '표준'은 잠정입니다. ② 신발 페이지의 내구성 450~550km는 Doctors of Running의 56km 주행 소견과 성긴 아웃솔 구조로 매긴 <strong>추정</strong>입니다. 교체 주기 숫자를 읽는 법은 <a href="/blog/running-shoe-500km-replacement-myth-2026">500km 교체설 검증</a>에 있습니다. ③ 품절 사이즈는 10월 8일 오후 공식몰 표시 기준입니다. RunRepeat 랩이 올라오면 이 글과 신발 페이지를 갱신합니다.</div>
+
+<h2>출처와 확인 범위</h2>
+<ul>
+  <li><a href="https://corp.asics.com/en/press/article/asics-introduces-the-all-new-gel-slowcushtm-shoe-more-comfort-to-move-body-and-mind" target="_blank" rel="noopener noreferrer">아식스 글로벌 보도자료</a> — 2026년 9월 17일. 용도, FF LUXE PLUS·PureGEL PLUS, 10월 1일 글로벌 출시·$200, Paul Lang 발언.</li>
+  <li><a href="https://www.asics.com/us/en-us/gel-slowcush/p/ANA_1013A187-250.html" target="_blank" rel="noopener noreferrer">아식스 미국 공식몰 젤 슬로우쿠시</a> — 드롭 8mm·298g·Maximum·Neutral·폭 Standard, FF LUXE PLUS·PureGEL PLUS 설명. 님버스 28 공식값(281g·드롭 8mm·$170)은 같은 공식몰 <a href="https://www.asics.com/us/en-us/gel-nimbus-28/p/ANA_1011C127-800.html" target="_blank" rel="noopener noreferrer">님버스 28 상품 페이지</a>에서 확인했습니다.</li>
+  <li>스택 48/40mm는 아식스 뉴질랜드 공식몰 상품 정보와 Doctors of Running 표기가 같습니다.</li>
+  <li><a href="https://www.asics.co.kr/p/AKR_112631101-800" target="_blank" rel="noopener noreferrer">아식스코리아 공식몰</a> — 249,000원·남여공용 230~285·298g·FF LUXE+·AHAR+(10월 8일 확인). 님버스 28·슈퍼블라스트 3·노바블라스트 6 가격도 같은 날 공식몰 기준입니다.</li>
+  <li><a href="https://www.rtings.com/running-shoes/reviews/asics/gel-slowcush" target="_blank" rel="noopener noreferrer">RTINGS 리뷰</a> — 10월 7일 게시, 남성 US 9 측정.</li>
+  <li><a href="https://www.doctorsofrunning.com/asics-gel-slowcush-review/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰</a> — 9월 18일 게시, Matt Klein.</li>
+  <li>님버스 28 실측(278g·힐 39.5mm)과 공식 힐 스택 43.5mm는 <a href="https://runrepeat.com/asics-gel-nimbus-28" target="_blank" rel="noopener noreferrer">RunRepeat 님버스 28 랩</a> 기준입니다.</li>
+</ul>
+<p><small>공식 표기와 랩 측정값을 같은 칸에 섞지 않았습니다. RTINGS 점수(10점 만점)는 RunRepeat 랩 수치나 이 사이트 신발 점수로 환산하지 않았습니다. 이 사이트는 신발을 직접 시착·시승하지 않으며, 착화감 서술은 모두 위 매체의 기록을 옮긴 것입니다. 2026년 10월 8일 확인.</small></p>
+`,
+  },
+  {
     id: 'kca-carbon-running-shoes-test-2026',
     slug: 'kca-carbon-running-shoes-test-2026',
     title: '한국소비자원 카본화 7종 시험 | 줌플라이 6·푸마 충격흡수 우수, 무릎 평가는 따로 봐야 합니다',

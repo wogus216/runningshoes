@@ -9,6 +9,14 @@
 
 ---
 
+## 👟 10월 8일 발행 — 젤 슬로우쿠시 신상 등록 후속
+
+| 확인일 | 대상 | 할 일 |
+|---|---|---|
+| **2026-10-22경** | `asics-gel-slowcush` + 블로그 `asics-gel-slowcush-korea-launch-2026` | RunRepeat 랩 게시 확인(10/8 `runrepeat.com/asics-gel-slowcush` 404, 대조군 님버스 28 정상). 게시되면 토박스 mm·평균 대비로 `toBoxWidth` 재판정(현재 standard 잠정), 폼 경도·에너지 리턴 %, 무게·스택 실측을 detailedSpecs 에 넣고 글 warning ①을 갱신. 없으면 2주 뒤로 이월 |
+| **2026-10-22경** | 같은 대상 | specs 점수 근거 재검토 — cushioning 10(RTINGS '님버스 28보다 쿠션 많음'·아식스 Maximum 분류)·responsiveness 4(RTINGS 에너지 리턴 3.1/10)·stability 7(DOR stable neutral, 고관절 불안정 주의)·durability 500(추정, DOR 56km 소견·성긴 아웃솔). 랩 수치가 나오면 매핑표 기준으로 다시 매긴다 |
+| **2026-10-15경** | 같은 대상 | 10/8 오후 공식몰 오렌지 글로우 260~285 품절 표시 → 재입고·두 번째 색상 재고 확인. 글의 '품절' 문장은 시점 표기라 그대로 두되, 전 사이즈 품절·단종이면 본문 갱신. 네이버·쿠팡 구매 링크 발급은 운영자 범위 |
+
 ## 📰 10월 7일 발행 — 펀런·실내 러닝 후속
 
 | 확인일 | 대상 | 할 일 |

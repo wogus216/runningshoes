@@ -254,3 +254,10 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
 - Date: 2026-10-02
 - Images: 1 (side)
+
+## ASICS GEL-SLOWCUSH
+- Source: 아식스 공식 이미지 CDN (Scene7) — 1013A187, 색상 800 ORANGE GLOW/CHERRY TOMATO (아식스코리아 공식몰 판매 색상)
+- CDN: images.asics.com/is/image/asics/1013A187_800_{VIEW}?fmt=png-alpha 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-08
+- Images: 6 (side=SR_RT, front, back, angle=SB_FL, outsole=SB_BT, top)
