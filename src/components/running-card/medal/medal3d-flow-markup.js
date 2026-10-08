@@ -7,7 +7,7 @@ export const MARKUP = `
   <canvas id="gl" tabindex="-1" role="img" aria-label="지난 28일의 메달" aria-describedby="medal-status"></canvas>
   <canvas id="flat" aria-hidden="true"></canvas>
   <div class="scrim" aria-hidden="true"></div>
-  <header class="masthead"><a href="/">러닝 카드<span> / </span>산초</a><span class="period">지난 28일</span></header>
+  <header class="masthead"><a href="/">러닝 카드<span> / </span>올런바웃</a><span class="period">지난 28일</span></header>
   <nav class="chapters" aria-label="입력 단계, 메달의 일곱 자리">
     <button data-go="0" data-state="open" aria-label="01 총거리" aria-current="step"><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>01</i></span><b>총거리</b></button>
     <button data-go="1" data-state="empty" aria-label="02 러닝 횟수" disabled><span class="nav-coin" aria-hidden="true"><canvas width="52" height="52"></canvas><i>02</i></span><b>횟수</b></button>

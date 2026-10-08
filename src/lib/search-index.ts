@@ -2,7 +2,7 @@ import { shoes } from '@/lib/data/shoes';
 import { formatManwon } from '@/lib/format';
 
 export type SearchItem = {
-  type: 'shoe' | 'best' | 'vs';
+  type: 'shoe' | 'best' | 'vs' | 'tool';
   title: string;
   subtitle?: string;
   href: string;
@@ -15,7 +15,13 @@ let _index: SearchItem[] | null = null;
 export function getSearchIndex(): SearchItem[] {
   if (_index) return _index;
 
-  const items: SearchItem[] = [];
+  const items: SearchItem[] = [{
+    type: 'tool',
+    title: '러닝카드',
+    subtitle: '지난 28일의 러닝 기록으로 나의 카드 만들기',
+    href: '/running-card',
+    keywords: '러닝카드 러닝 카드 러너 유형 테스트 메달 기록 공유 올런바웃 running card',
+  }];
 
   // 신발 (상위 항목)
   for (const shoe of shoes) {

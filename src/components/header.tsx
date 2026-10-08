@@ -21,6 +21,7 @@ const browseLinks = [
   { href: '/marathon', label: '마라톤 대회' },
   { href: '/blog', label: '블로그' },
   { href: '/best', label: '베스트 가이드' },
+  { href: '/running-card', label: '러닝카드' },
 ] as const;
 
 export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
@@ -171,6 +172,13 @@ export function Header({ brandLinks }: { brandLinks: HeaderBrandLink[] }) {
           >
             <Award className="h-4 w-4" />
             <span>베스트</span>
+          </Link>
+          <Link
+            href="/running-card"
+            prefetch={false}
+            className="inline-flex shrink-0 items-center gap-2 whitespace-nowrap rounded-[3px] px-3 py-2 text-sm font-medium text-secondary transition-colors hover:bg-[var(--accent-soft)] hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+          >
+            <span>러닝카드</span>
           </Link>
         </nav>
 

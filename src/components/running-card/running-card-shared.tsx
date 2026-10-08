@@ -73,7 +73,7 @@ function Masthead() {
   return (
     <header className="rc-mast">
       {/* 미리 받지 않는다 — 홈 CSS 를 preload 했다가 안 쓰면 콘솔 경고가 남는다(메달 머리글도 미리 받지 않는 a). */}
-      <Link href="/" prefetch={false}>러닝 카드<span> / </span>산초</Link>
+      <Link href="/" prefetch={false}>러닝 카드<span> / </span>올런바웃</Link>
       <span>지난 28일</span>
     </header>
   );

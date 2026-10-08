@@ -52,7 +52,7 @@ async function fontsFor(card, extra = '') {
     ...card.evidence.flatMap(e => [e.text, e.hiddenText]), ...card.scores.map(s => s.label), '가문 세 점수 이 인물이 된 기록 강점 놓치기 쉬운 것 다음 14일, 한 가지 “”', extra].join(' ');
   await Promise.all([
     document.fonts.load(`500 40px "Pretendard Variable"`, text),
-    ...['700 100px StudyCondensed', '450 40px StudySans', '650 40px StudySans'].map(f => document.fonts.load(f, '러닝 카드 산초 지난 28일 0123456789 allrunabout.com')),
+    ...['700 100px StudyCondensed', '450 40px StudySans', '650 40px StudySans'].map(f => document.fonts.load(f, '러닝 카드 올런바웃 지난 28일 0123456789 allrunabout.com')),
   ]).catch(() => {});
 }
 
@@ -62,7 +62,7 @@ function masthead(g, W, story, onPicture = false) {
   const top = story ? TOP.story : TOP.feed, size = story ? 36 : 32;
   g.textBaseline = 'alphabetic'; g.textAlign = 'left'; font(g, 650, size, 'StudySans, sans-serif');
   let x = M;
-  for (const [t, c] of [['러닝 카드', TH.ink], [' / ', TH.muted], ['산초', TH.ink]]) { g.fillStyle = c; g.fillText(t, x, top); x += g.measureText(t).width; }
+  for (const [t, c] of [['러닝 카드', TH.ink], [' / ', TH.muted], ['올런바웃', TH.ink]]) { g.fillStyle = c; g.fillText(t, x, top); x += g.measureText(t).width; }
   g.textAlign = 'right'; font(g, 450, size, 'StudySans, sans-serif'); g.fillStyle = onPicture ? 'rgba(247,244,237,.86)' : TH.muted; g.fillText('지난 28일', W - M, top);
   const rule = ruleOf(story);
   g.fillStyle = onPicture ? 'rgba(247,244,237,.40)' : TH.rule; g.fillRect(M, rule, W - 2 * M, 2);

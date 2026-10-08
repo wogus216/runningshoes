@@ -54,6 +54,7 @@ export function Footer() {
             <div>
               <h4 className="font-medium text-sm mb-3 text-primary">정보</h4>
               <ul className="space-y-2 text-sm text-secondary">
+                <li><Link href="/running-card" prefetch={false} className="hover:text-primary transition">나의 러닝카드 만들기</Link></li>
                 <li><Link href="/about" className="hover:text-primary transition">사이트 소개</Link></li>
                 <li><Link href="/faq" className="hover:text-primary transition">자주 묻는 질문</Link></li>
                 <li><Link href="/privacy" className="hover:text-primary transition">개인정보처리방침</Link></li>

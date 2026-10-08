@@ -172,7 +172,7 @@ export function SearchPalette() {
         aria-label="검색"
       >
         <Search className="h-4 w-4" />
-        <span className="hidden flex-1 whitespace-nowrap text-left lg:inline">신발 이름으로 검색…</span>
+        <span className="hidden flex-1 whitespace-nowrap text-left lg:inline">신발·러닝카드 검색…</span>
         <kbd className="hidden rounded border border-stone-900/10 bg-surface px-1.5 py-0.5 font-mono text-[10px] text-tertiary 2xl:inline">
           ⌘K
         </kbd>
@@ -196,7 +196,7 @@ export function SearchPalette() {
             className="relative w-full max-w-2xl overflow-hidden rounded-[4px] bg-white"
             role="dialog"
             aria-modal="true"
-            aria-label="신발 검색"
+            aria-label="사이트 검색"
             onKeyDown={trapFocus}
           >
             <div className="flex items-center gap-3 border-b border-border px-4 py-3 focus-within:ring-2 focus-within:ring-inset focus-within:ring-accent">
@@ -205,14 +205,14 @@ export function SearchPalette() {
                 ref={inputRef}
                 name="shoe-search"
                 autoComplete="off"
-                aria-label="신발 이름, 브랜드 또는 카테고리 검색"
+                aria-label="신발 이름, 브랜드, 카테고리 또는 러닝카드 검색"
                 value={query}
                 onChange={(e) => {
                   setQuery(e.target.value);
                   setCursor(0);
                 }}
                 onKeyDown={onKeyDown}
-                placeholder="신발 이름, 브랜드, 카테고리로 검색 (예: 페가수스, 카본, 입문화)"
+                placeholder="신발·브랜드·러닝카드 검색 (예: 페가수스, 카본, 러닝카드)"
                 className="min-w-0 flex-1 bg-transparent text-base text-primary placeholder:text-tertiary focus-visible:outline-none"
               />
               <button
