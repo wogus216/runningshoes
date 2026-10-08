@@ -96,7 +96,7 @@ log('결과:', name);
 
 async function grab(tag) {
   // Intercept only the new-tab destination; render the current settings through the real button.
-  await ev(`window.__qaOpenOriginal = window.open; window.__qaImageUrls = []; window.open = () => ({opener: null, document: {body: {}}, location: {set href(url) {window.__qaImageUrls.push(url)}}, close() {}})`);
+  await ev(`window.__qaOpenOriginal = window.open; window.__qaCreateOriginal = URL.createObjectURL; window.__qaBlobs = {}; URL.createObjectURL = (blob) => {const url = window.__qaCreateOriginal(blob); window.__qaBlobs[url] = blob; return url}; window.__qaImageUrls = []; window.open = () => ({opener: null, document: {body: {}}, location: {set href(url) {window.__qaImageUrls.push(url)}}, close() {}})`);
   for (const [i, selector] of ['.rc-open button:first-child', '.rc-open button:last-child'].entries()) {
     await click(selector);
     for (let wait = 0; wait < 120; wait++) {
@@ -105,12 +105,12 @@ async function grab(tag) {
     }
     const href = await ev(`window.__qaImageUrls[${i}]`);
     if (!href) throw new Error('current-settings image did not open');
-    const b64 = await ev(`fetch(${JSON.stringify(href)}).then(r => r.blob()).then(b => new Promise(res => { const f = new FileReader(); f.onload = () => res(f.result.split(',')[1]); f.readAsDataURL(b); }))`);
+    const b64 = await ev(`new Promise(res => { const f = new FileReader(); f.onload = () => res(f.result.split(',')[1]); f.readAsDataURL(window.__qaBlobs[${JSON.stringify(href)}]); })`);
     const file = path.join(OUT, `${LABEL}-${tag}-${i + 1}.png`);
     fs.writeFileSync(file, Buffer.from(b64, 'base64'));
     log('저장', path.basename(file), fs.statSync(file).size);
   }
-  await ev('window.open = window.__qaOpenOriginal');
+  await ev('window.open = window.__qaOpenOriginal; URL.createObjectURL = window.__qaCreateOriginal');
 }
 async function saveTwo(tag) {
   await click('.rc-actions .rc-primary');
