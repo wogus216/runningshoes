@@ -68,7 +68,7 @@ export const metricFabrics: Fabric[] = [
       '높은 습도에서 원단 간 차이가 사라지는 교차점은 논리적 귀결일 뿐 실측이 아닙니다.',
       '규격 본문(17쪽)은 유료라 열람하지 못했습니다. 이 페이지의 인용은 전부 무료 공개된 초록 범위입니다.',
     ],
-    related: ['gore-tex-infinium', 'polyester', 'kca-running-jacket-2025'],
+    related: ['gore-tex-infinium', 'polyester', 'kca-running-jacket-2025', 'air-permeability-iso-9237'],
     updatedAt: '2026-09-23',
     keywords: ['Ret', 'ISO 11092', '증발저항', '원단 통기성', '투습도'],
   },
@@ -185,5 +185,93 @@ export const metricFabrics: Fabric[] = [
     relatedPosts: ['hot-weather-summer-running-safety-guide-korea', 'summer-breathable-running-shoes-2026'],
     updatedAt: '2026-09-23',
     keywords: ['흡한속건', 'AATCC TM195', 'OMMC', '건조속도', '접촉냉감', 'Qmax'],
+  },
+  {
+    id: 'air-permeability-iso-9237',
+    slug: 'air-permeability-iso-9237',
+    type: 'metric',
+    name: '공기투과도 (ISO 9237)',
+    nameEn: 'Air Permeability (ISO 9237)',
+    summary: '바람막이의 "통기성"을 재는 규격. 높을수록 땀(수증기)은 잘 빠지지만 바람 부는 날엔 덜 따뜻하다 — 한국소비자원이 밝힌 상반 관계다.',
+    intro:
+      '러닝 재킷 설명의 "통기성"은 대개 말로만 적혀 있지만, 원단이 공기를 얼마나 통과시키는지는 국제규격 **ISO 9237**(한국 채택본 KS K ISO 9237)로 잴 수 있습니다. ' +
+      '한국소비자원도 러닝 재킷 8종을 이 규격으로 시험했습니다. 다만 브랜드 상품 페이지에서 이 수치를 본 적은 이번 조사 범위에서 없습니다.',
+    claims: [
+      {
+        text:
+          'ISO 9237:1995 「Textiles — Determination of the permeability of fabrics to air」는 1995년 6월 발행됐고, 2023년 재검토에서 확인돼 현행입니다. 공기를 통과시키는 대부분의 원단에 쓰는 측정법입니다.',
+        grade: 'A',
+        source: 'ISO 공식 규격 페이지 — ISO 9237:1995 (2026-10-08 확인)',
+        sourceUrl: 'https://www.iso.org/standard/16869.html',
+      },
+      {
+        text:
+          '한국소비자원 러닝 재킷 시험(2025-11-05)은 공기투과도를 **원단 기준으로 KS K ISO 9237**에 따라 시험했습니다. 결과는 ★ 3단계 등급으로 공개됐습니다.',
+        grade: 'A',
+        source: '한국소비자원 보도자료 PDF (2025-11-05) — 주요 시험항목 표',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
+      },
+      {
+        text:
+          '한국소비자원은 "공기투과도가 높으면 내부의 수증기를 잘 배출할 수 있는 장점이 있지만, 바람이 많이 부는 환경에서는 상대적으로 체온유지성이 떨어지는 특성이 있다"고 적고, 두 기능을 상반 관계로 봤습니다.',
+        grade: 'A',
+        source: '한국소비자원 보도자료 PDF (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
+      },
+      {
+        text:
+          'Vasile 등(2025)은 ISO 9237:1995에 따라 100 Pa 압력차·20 cm² 시험 면적으로 피부에 닿는 니트 18종을 쟀고, 공기투과도가 138 mm/s에서 1,382 mm/s까지 **약 10배** 차이 났습니다.',
+        grade: 'A',
+        source: 'Vasile et al., Materials 18(8):1859, 2025 (CC BY)',
+        sourceUrl: 'https://doi.org/10.3390/ma18081859',
+        caveat: '시료는 작업복·베이스레이어용 티셔츠 13종과 폴로 5종이며 시판 러닝복 비교가 아닙니다. 같은 티셔츠용 니트라도 통기 폭이 이만큼 넓다는 사실까지만 옮깁니다.',
+      },
+      {
+        text:
+          'Özkan 등(2023)은 건강한 남성 장거리 러너 10명을 27℃·습도 45% 실험실에서 트레드밀로 달리게 하고 티셔츠 5종을 비교했습니다(원단 공기투과도는 EN ISO 9237, 100 Pa). 공기투과도가 높고 열저항이 낮은 **텐셀 싱글저지·폴리에스터 메시**에서 옷 안 온도·습도가 낮게 나타났습니다.',
+        grade: 'A',
+        source: 'Özkan et al., Scientific Reports 13:14883, 2023 (CC BY 4.0)',
+        sourceUrl: 'https://doi.org/10.1038/s41598-023-42085-2',
+        caveat: '피험자 10명의 실험실 결과이고, 통계적으로 유의한 온도 차이는 텐셀 싱글저지에서 확인됐습니다. 열저항도 함께 달라 공기투과도 하나만의 효과로 분리한 실험은 아닙니다.',
+      },
+      {
+        text:
+          '조사 범위에서 러닝복 상품 페이지에 공기투과도 수치를 적은 브랜드는 찾지 못했습니다. 같은 페이지들에서 무게(GSM)·UPF·혼용률은 적은 곳이 있었습니다.',
+        grade: 'S',
+        source: '자체 조사 — Norrøna·Path Projects·Rab·Janji·Patagonia·Nike 상품 페이지 직접 열람 (2026-09-04)',
+        caveat: '6개 브랜드 표본입니다. "어느 브랜드도 공개하지 않는다"는 전칭이 아니라 확인한 범위의 결과입니다.',
+      },
+    ],
+    measurements: [
+      { label: '규격', value: 'ISO 9237:1995 = KS K ISO 9237', note: '2023년 재확인, 현행' },
+      { label: '단위', value: 'L/m²/s 또는 mm/s', note: '1 L/m²/s = 1 mm/s 로 같은 값' },
+      { label: '논문 시험 조건', value: '100 Pa 압력차', note: 'Vasile 2025 · Özkan 2023' },
+      { label: '한국소비자원 공개 방식', value: '★ 3단계 등급', note: '원측정값 비공개' },
+    ],
+    misconceptions: [
+      {
+        myth: '공기투과도가 높은 재킷일수록 좋은 재킷이다.',
+        reality:
+          '한국소비자원은 공기투과도와 체온유지성을 상반되는 기능으로 봤습니다. 보온이 중요하면 체온유지성이 좋은 쪽을, 땀(수증기) 배출이 중요하면 공기투과도가 높은 쪽을 고르라는 것이 소비자원의 안내입니다. 우열이 아니라 용도의 문제입니다.',
+        source: '한국소비자원 보도자료 PDF (2025-11-05)',
+        sourceUrl: 'https://www.kca.go.kr/home/sub.do?menukey=4002&mode=view&no=1003952123',
+      },
+      {
+        myth: '공기가 잘 통하는 원단이 땀 증발도 그만큼 잘 된다 — 같은 지표다.',
+        reality:
+          '다른 규격으로 재는 다른 값입니다. 공기투과도는 ISO 9237, 땀(수증기) 증발 저항 Ret는 ISO 11092로 잽니다. Özkan 등(2023) 표 1에서 폴리에스터 91%·스판덱스 9% 싱글저지는 **공기투과도가 5종 중 가장 낮았지만 증발저항도 가장 낮았습니다**(낮을수록 수증기가 잘 빠짐). 두 순위는 일치하지 않습니다.',
+        source: 'Özkan et al., Scientific Reports 13:14883, 2023 — Table 1',
+        sourceUrl: 'https://doi.org/10.1038/s41598-023-42085-2',
+      },
+    ],
+    unknowns: [
+      '한국소비자원 재킷 시험의 원측정값(L/m²/s)과 시험 압력차는 보도자료에서 확인하지 못했습니다 — ★ 등급만 공개됐습니다.',
+      'ISO 9237 원문은 유료라 규격이 정한 압력차·시험 면적을 직접 확인하지 못했습니다. 위의 100 Pa는 두 논문이 쓴 조건입니다.',
+      '원단 공기투과도가 완성된 재킷의 실제 환기(지퍼·통풍구·핏)와 어떻게 이어지는지 정량 자료는 찾지 못했습니다.',
+    ],
+    related: ['kca-running-jacket-2025', 'ret-iso-11092', 'wicking-ommc', 'gore-tex-infinium'],
+    relatedPosts: ['fall-marathon-race-day-checklist-2026', 'hot-weather-summer-running-safety-guide-korea'],
+    updatedAt: '2026-10-08',
+    keywords: ['공기투과도', '통기성', 'ISO 9237', 'KS K ISO 9237', '바람막이 통기성', '러닝 재킷 통기성'],
   },
 ];

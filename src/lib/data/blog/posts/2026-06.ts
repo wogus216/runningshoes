@@ -10409,7 +10409,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">신발만 시원해선 부족 — 여름 러닝 3가지 디테일</p>
     <ul>
-      <li><strong>양말이 절반이다</strong>: 아무리 통기성 좋은 신발도 면양말이면 땀이 갇힙니다. <strong>쿨맥스·메리노 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로 바꾸면 물집이 크게 줍니다.</li>
+      <li><strong>양말이 절반이다</strong>: 아무리 통기성 좋은 신발도 면양말이면 땀이 갇힙니다. <strong><a href="/fabrics/coolmax">쿨맥스</a>·메리노 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로 바꾸면 물집이 크게 줍니다.</li>
       <li><strong>배수 ≠ 방수</strong>: 장마철엔 방수(GTX)보다 <strong>물이 빨리 빠지는 메쉬</strong>가 낫습니다. 방수화는 한번 물이 들어오면 안 빠져 더 무겁습니다.</li>
       <li><strong>여름엔 반 사이즈 여유</strong>: 더위에 발이 붓기 때문에, 통기성 좋은 신발이라도 꽉 끼면 물집·발톱 멍이 생깁니다.</li>
     </ul>

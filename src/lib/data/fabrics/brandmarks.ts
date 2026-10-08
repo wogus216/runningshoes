@@ -219,4 +219,90 @@ export const brandmarkFabrics: Fabric[] = [
     updatedAt: '2026-09-23',
     keywords: ['고어텍스', 'GORE-TEX INFINIUM', '윈드스토퍼', '러닝 재킷 방수', '방풍 재킷'],
   },
+  {
+    id: 'coolmax',
+    slug: 'coolmax',
+    type: 'brandmark',
+    name: 'COOLMAX (쿨맥스)',
+    nameEn: 'COOLMAX',
+    summary: '러닝 양말 설명에 자주 나오는 이름. 원단이 아니라 다른 섬유와 섞어 쓰는 섬유 브랜드이고, 공식 설명은 "대개 폴리에스터"까지다.',
+    intro:
+      '"쿨맥스·메리노 같은 흡습속건 소재" — 러닝 양말을 고를 때 자주 보는 문장입니다. COOLMAX는 The LYCRA Company가 소유한 **섬유 브랜드**입니다. ' +
+      '공식 설명은 소재와 원리를 말로 풀어 줄 뿐 건조 시간 같은 수치는 내놓지 않습니다. 공식 문서에서 확인되는 것과 확인되지 않는 것을 나눠 적습니다.',
+    claims: [
+      {
+        text:
+          'The LYCRA Company 공식 FAQ는 COOLMAX가 "원단도 완제품도 아니며", 다른 섬유와 섞어 옷을 만드는 **섬유(fiber)**라고 설명합니다. 같은 회사가 LYCRA·THERMOLITE 브랜드도 소유합니다.',
+        grade: 'B',
+        source: 'The LYCRA Company 공식 FAQ — About COOLMAX Technology (2026-10-08 확인)',
+        sourceUrl: 'https://www.lycra.com/en/frequently-asked-questions-coolmax/about-coolmax-technology',
+      },
+      {
+        text:
+          '소재는 공식 설명 기준으로 "대개 폴리에스터 또는 다른 합성섬유"입니다. 공식 제품 목록에는 나일론 기반 제품군(COOLMAX fiber powered by nylon)도 올라 있습니다.',
+        grade: 'B',
+        source: 'COOLMAX 공식 사이트 — What Is COOLMAX Fiber? (2026-10-08 확인)',
+        sourceUrl: 'https://www.coolmax.com/en/what-is-coolmax-fiber',
+      },
+      {
+        text:
+          '원리 설명은 이렇습니다 — 섬유 표면을 따라 미세한 홈(grooves·channels)이 나 있어 땀을 피부에서 옮기고, 바깥면에 닿은 수분을 넓게 펴서 증발을 돕는다.',
+        grade: 'C',
+        source: 'COOLMAX 공식 사이트 — What Is COOLMAX Fiber?',
+        sourceUrl: 'https://www.coolmax.com/en/what-is-coolmax-fiber',
+        caveat: '기전 서술뿐입니다. 건조 시간·증발량 같은 측정값은 공식 페이지에 없어 브랜드 설명으로만 인용합니다.',
+      },
+      {
+        text:
+          '공식 페이지는 COOLMAX 이름을 쓰려면 "엄격한 성능 기준에 따라 시험·인증"을 통과해야 한다고 밝힙니다.',
+        grade: 'B',
+        source: 'COOLMAX 공식 사이트 — What Is COOLMAX Fiber?',
+        sourceUrl: 'https://www.coolmax.com/en/what-is-coolmax-fiber',
+        caveat: '그 기준의 시험 방법·합격선·결과 수치는 공개되지 않았습니다(2026-10-08 확인).',
+      },
+    ],
+    tables: [
+      {
+        caption: 'COOLMAX 공식 제품군과 재생 원료 표기 (coolmax.com, 2026-10-08 확인)',
+        headers: ['제품군', '공식 설명', '재생 원료 표기'],
+        rows: [
+          ['COOLMAX EcoMade', '흡습·냉감', '재생 소재 100%'],
+          ['COOLMAX PRO EcoMade', '고강도 조건용 냉감', '재생 PET 병 100%'],
+          ['COOLMAX CloakFX', '땀자국을 가림', '재생 폴리에스터 100%'],
+          ['COOLMAX ALL SEASON', '사계절용', '소비자 사용 후 재생 자원 최소 90%'],
+          ['COOLMAX freshFX', '더 오래 쾌적(방취 계열)', '재생 PET 병 최소 90%'],
+          ['COOLMAX fiber powered by nylon', '나일론 기반', '표기 없음'],
+        ],
+        footnotes: [
+          '재생 원료 비중은 원료 조달에 관한 표기이지 흡한속건 성능을 나타내는 수치가 아닙니다.',
+          '2026-09-04 조사 때 CloakFX는 재생 폴리에스터 93%로 적혀 있었습니다. 공식 표기도 바뀌므로 인용할 때는 확인 날짜를 함께 적습니다.',
+        ],
+      },
+    ],
+    misconceptions: [
+      {
+        myth: '쿨맥스는 폴리에스터의 다른 이름이다.',
+        reality:
+          '대부분 폴리에스터지만 공식 표현은 "대개 폴리에스터 또는 다른 합성섬유"이고, 나일론 기반 제품군도 있습니다. 또 COOLMAX는 다른 섬유와 섞어 쓰는 섬유라서 양말이나 옷 전체가 COOLMAX라는 뜻이 아닙니다. 실제 조성은 제품 라벨의 혼용률로 확인해야 합니다.',
+        source: 'COOLMAX 공식 사이트 + The LYCRA Company 공식 FAQ',
+        sourceUrl: 'https://www.lycra.com/en/frequently-asked-questions-coolmax/about-coolmax-technology',
+      },
+      {
+        myth: '쿨맥스는 시원함·건조 속도가 수치로 검증된 소재다.',
+        reality:
+          '공식 페이지에는 "시험·인증을 통과해야 이름을 쓸 수 있다"는 문장만 있고, 시험법·합격선·결과 수치가 없습니다. 흡한속건을 수치로 비교하려면 AATCC TM195 같은 규격 시험 결과가 따로 필요합니다.',
+        source: 'COOLMAX 공식 사이트',
+        sourceUrl: 'https://www.coolmax.com/en/what-is-coolmax-fiber',
+      },
+    ],
+    unknowns: [
+      'COOLMAX 성능 인증의 시험 방법·합격선·결과 수치 — 공식 페이지에 없습니다.',
+      '특정 양말·의류 제품에 COOLMAX 섬유가 몇 % 들어가는지 — 섬유 브랜드라 제품마다 다르고, 이 페이지는 제품 라벨을 조사하지 않았습니다.',
+      'COOLMAX 제품과 일반 폴리에스터 제품을 같은 규격으로 비교한 공공기관 시험은 이 조사에서 다루지 못했습니다.',
+    ],
+    related: ['polyester', 'wicking-ommc', 'merino-wool', 'dri-fit'],
+    relatedPosts: ['running-foot-care-blisters-toenails-2026', 'summer-breathable-running-shoes-2026'],
+    updatedAt: '2026-10-08',
+    keywords: ['쿨맥스', 'COOLMAX', '쿨맥스 양말', '러닝 양말 소재', '흡한속건 소재'],
+  },
 ];
