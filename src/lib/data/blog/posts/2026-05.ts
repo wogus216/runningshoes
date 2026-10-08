@@ -1951,7 +1951,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>러닝화</strong></td><td>통기 좋은 메시 데일리화 (배수형)</td><td>젖어도 빨리 마르고 가벼움. 방수화는 한번 차면 안 빠짐</td></tr>
-    <tr><td><strong>양말</strong></td><td>합성섬유·메리노 (면 금지)</td><td>면은 물 먹으면 물집 유발. 여벌 1켤레 지참</td></tr>
+    <tr><td><strong>양말</strong></td><td>합성섬유·<a href="/fabrics/merino-wool">메리노</a> (면 금지)</td><td>면은 물 먹으면 물집 유발. 여벌 1켤레 지참</td></tr>
     <tr><td><strong>모자</strong></td><td>챙 있는 러닝캡</td><td>빗물이 눈에 들어오는 걸 차단 — 우중런 만족도 1순위</td></tr>
     <tr><td><strong>상의</strong></td><td>얇은 기능성 티 또는 경량 윈드재킷</td><td>두꺼운 방수재킷은 땀이 안 빠져 더 젖음</td></tr>
     <tr><td><strong>마찰 방지</strong></td><td>바셀린·러닝 전용 밤</td><td>젖은 상태 장거리 시 사타구니·겨드랑이·발 쓸림 방지</td></tr>
@@ -1983,7 +1983,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <p><strong>양말은 면 금지</strong>: 면 양말은 물을 머금어 무겁고 발과의 마찰을 키워 물집을 부릅니다. <strong>합성섬유나 메리노울 양말</strong>을 쓰고, 장거리라면 중간에 갈아 신을 <strong>여벌 양말</strong>을 챙기세요.</p>
 
-<p><strong>상의는 얇게</strong>: 두꺼운 방수 재킷은 땀이 안 빠져 안에서 더 젖습니다. 여름 장마철엔 <strong>얇은 기능성 티 한 장</strong>이 오히려 쾌적. 바람·기온 저하가 걱정되면 <strong>경량 윈드재킷</strong> 정도면 충분합니다.</p>
+<p><strong>상의는 얇게</strong>: 두꺼운 방수 재킷은 땀이 안 빠져 안에서 더 젖습니다. 여름 장마철엔 <strong>얇은 기능성 티 한 장</strong>이 오히려 쾌적. 바람·기온 저하가 걱정되면 <strong>경량 윈드재킷</strong> 정도면 충분합니다. 재킷 라벨에 GORE-TEX만 적혀 있으면 방수용인지 방풍용인지 알 수 없는데, 라벨 색으로 가리는 법은 <a href="/fabrics/gore-tex-infinium">GORE-TEX INFINIUM 해설</a>에 정리했습니다.</p>
 
 <p><strong>전자기기 방수</strong>: 스마트폰은 지퍼백·방수파우치에, 무선이어폰·러닝워치는 방수 등급을 확인하세요. 폭우 땐 터치스크린 오작동이 잦으니 출발 전 코스를 미리 세팅해두면 편합니다.</p>
 

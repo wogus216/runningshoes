@@ -10185,7 +10185,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>① 시간대를 옮긴다</strong>: 가장 강력한 대비책. <strong>일출 직후(새벽)</strong>가 기온·복사열이 가장 낮습니다. 야간런은 시원하지만 <strong>열대야로 습도가 높고</strong> 낮 동안 달궈진 아스팔트 복사열이 남아있어 새벽보다 불리할 수 있습니다.</li>
   <li><strong>② 강도를 낮춘다</strong>: 같은 페이스도 더위에선 심박이 더 오릅니다. 여름엔 기록 욕심을 내려놓고 <strong>대화 가능한 저강도(Zone 2)</strong> 위주로 → <a href="/blog/running-fat-loss-zone2-guide">Zone 2 가이드</a>. 더위 적응에는 2주 정도 걸립니다.</li>
-  <li><strong>③ 통기성 복장·신발</strong>: 땀 배출이 생명입니다. 밝은색·흡습속건 옷, 통기성 좋은 메쉬 러닝화로 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
+  <li><strong>③ 통기성 복장·신발</strong>: 땀 배출이 생명입니다. 밝은색·<a href="/fabrics/wicking-ommc">흡습속건 옷</a>, 통기성 좋은 메쉬 러닝화로 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
   <li><strong>④ 머리·목을 식힌다</strong>: 챙모자·선글라스로 직사광선을 막고, 얼음·쿨토시로 목덜미·손목(굵은 혈관)을 식히면 체감 온도가 크게 낮아집니다.</li>
   <li><strong>⑤ 코스를 바꾼다</strong>: 그늘·강변·숲길 위주로. 아스팔트·복사열 강한 도심 직선 코스는 피하세요.</li>
   <li><strong>⑥ 무리하지 않는다</strong>: 컨디션 난조·전날 음주·수면 부족이면 <strong>쉬는 게 훈련</strong>입니다. 여름 며칠 빠진다고 실력이 사라지지 않습니다.</li>
@@ -10409,7 +10409,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">신발만 시원해선 부족 — 여름 러닝 3가지 디테일</p>
     <ul>
-      <li><strong>양말이 절반이다</strong>: 아무리 통기성 좋은 신발도 면양말이면 땀이 갇힙니다. <strong>쿨맥스·메리노 같은 흡습속건 소재</strong>로 바꾸면 물집이 크게 줍니다.</li>
+      <li><strong>양말이 절반이다</strong>: 아무리 통기성 좋은 신발도 면양말이면 땀이 갇힙니다. <strong>쿨맥스·메리노 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로 바꾸면 물집이 크게 줍니다.</li>
       <li><strong>배수 ≠ 방수</strong>: 장마철엔 방수(GTX)보다 <strong>물이 빨리 빠지는 메쉬</strong>가 낫습니다. 방수화는 한번 물이 들어오면 안 빠져 더 무겁습니다.</li>
       <li><strong>여름엔 반 사이즈 여유</strong>: 더위에 발이 붓기 때문에, 통기성 좋은 신발이라도 꽉 끼면 물집·발톱 멍이 생깁니다.</li>
     </ul>
@@ -10754,7 +10754,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>핵심 ① — 참가비 3만원에 바람막이까지</h2>
 
-<p>이 대회의 최대 매력은 <strong>가성비</strong>입니다. 하프부터 5km 걷기까지 <strong>전 종목 3만원</strong>인데, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 줍니다. 가을·겨울 러닝에 바로 쓰는 기능성 자켓이라 사실상 참가비 값을 하는 셈이죠. 완주자에게는 <strong>완주메달과 기록증</strong>도 제공됩니다.</p>
+<p>이 대회의 최대 매력은 <strong>가성비</strong>입니다. 하프부터 5km 걷기까지 <strong>전 종목 3만원</strong>인데, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 줍니다. 가을·겨울 러닝에 바로 쓰는 기능성 자켓이라 사실상 참가비 값을 하는 셈이죠. 러닝 재킷의 체온유지성·공기투과도·발수성을 공공기관이 직접 시험한 결과는 <a href="/fabrics/kca-running-jacket-2025">한국소비자원 러닝 재킷 8종 시험</a>에 정리했습니다. 완주자에게는 <strong>완주메달과 기록증</strong>도 제공됩니다.</p>
 
 <h2>핵심 ② — 교통통제 없는 한강 평지 코스</h2>
 
