@@ -112,7 +112,7 @@ const loadPicture = (src, wait = 4000) => new Promise(resolve => {
 
 // Page 1. renderFigure(fig, target?) draws the medal into fig ({ x, y, w, h, fit }) on target (default: the page) and
 // returns its fit. With the figure's picture (card.image, S5-D) the page is the picture with the medal on it; without one
-// (the 14 held back for their marks), or if it does not load, the page is the medal cover.
+// or if it does not load, the page is the medal cover.
 export async function drawCover(g, kind, card, renderFigure) {
   const [picture] = await Promise.all([card.image ? loadPicture(card.image) : null, fontsFor(card, AI_LABEL)]);
   const [W, H] = SHARE_SIZES[kind], story = kind === 'story', width = W - 2 * M;

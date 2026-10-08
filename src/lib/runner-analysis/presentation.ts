@@ -7,16 +7,14 @@
 // 나머지는 aa794de 원문 그대로다.
 // 원본의 englishName(D9 — 단독 NIKE)·rhythm(결과 카드에 자리 없음)은 가져오지 않았다.
 // image 는 S5-C(2026-10-07)에 원본 PNG 를 WebP 로 바꿔 넣었다. AI 생성 이미지이고 출처는 public/images/running-card/IMAGE_CREDITS.md.
-// 옷·신발에 상표처럼 읽히는 표식이 있는 14명은 image 가 없다(표식을 지운 판 재생성 대기, docs/running-card-s5-report.md S5-C·S5-D).
-// 제우스·오르페우스·아폴론·벨레로폰·아탈란타·탈로스(S5-C 판정) + 헤파이스토스·아레스·헥토르·펜테실레이아(리드 판단 2026-10-07)
-// + 헤라·포세이돈·페넬로페·시시포스(리드가 원본 해상도로 확대해 찾음, 2026-10-07).
+// 표식으로 제외했던 14명은 2026-10-08 편집본 검수 후 복원했다. 전원 image·imageFocus 가 있다.
 // 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다. 공유 이미지 1장째는 image 가 있을 때만 그림을 배경으로 깔고(S5-D), 없으면 메달 표지 그대로다.
 // watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
 // nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
 type CharacterPresentation = {
   title: string;
   image?: string;
-  // 그림 속 머리 중심의 세로 위치(0=위, 1=아래). 리드가 10% 눈금을 그은 접촉 시트로 눈대중한 값(2026-10-07, ±0.03 정도).
+  // 그림 속 머리 중심의 세로 위치(0=위, 1=아래). 원본·편집본에서 머리 중심을 수동 확인한 값(2026-10-07/08, ±0.03 정도).
   // 피드(4:5) 공유 이미지가 그림을 자를 때 머리를 남기는 데만 쓴다(medal3d-share.js). image 가 있으면 반드시 있다.
   imageFocus?: number;
   oracle: string;
@@ -74,6 +72,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   sisyphus: {
     title: '반복으로 산을 넘는 자',
+    image: '/images/running-card/sisyphus.webp',
+    imageFocus: 0.27,
     oracle: '오늘의 한 걸음도 결국 경사를 바꾼다.',
     strength: '눈에 띄지 않는 날에도 루틴을 유지하는 힘이 단단합니다.',
     watchout: '같은 방식이 길어지면 기록의 변화를 알아차리기 어려울 수 있습니다.',
@@ -81,6 +81,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   poseidon: {
     title: '파도를 밀어내며 나아가는 자',
+    image: '/images/running-card/poseidon.webp',
+    imageFocus: 0.23,
     oracle: '거친 리듬도 너를 멈추게 하진 못한다.',
     strength: '거리와 강도가 커져도 앞으로 나아가는 힘이 있습니다.',
     watchout: '강한 날이 이어질수록 달린 날 사이 간격을 먼저 확보하세요.',
@@ -88,6 +90,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   apollo: {
     title: '가장 빛나는 리듬을 찾는 자',
+    image: '/images/running-card/apollo.webp',
+    imageFocus: 0.16,
     oracle: '빠름은 빛처럼 정확한 순간에 온다.',
     strength: '훈련의 자극과 페이스 변화를 섬세하게 받아들이는 편입니다.',
     watchout: '좋은 감각을 쫓다 보면 쉬운 날의 가치를 잊기 쉽습니다.',
@@ -104,6 +108,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   zeus: {
     title: '폭풍 속에서도 리듬을 지배하는 자',
+    image: '/images/running-card/zeus.webp',
+    imageFocus: 0.29,
     oracle: '천둥이 울려도 너의 보폭은 흔들리지 않는다.',
     strength: '강한 목표 앞에서 집중도와 추진력을 동시에 끌어올립니다.',
     watchout: '앞서 나가는 날일수록 다음 러닝까지의 간격을 먼저 정해 두세요.',
@@ -111,6 +117,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hera: {
     title: '자기 리듬을 품위 있게 지키는 자',
+    image: '/images/running-card/hera.webp',
+    imageFocus: 0.31,
     oracle: '흔들리지 않는 리듬이 가장 멀리 데려간다.',
     strength: '무리하지 않고도 목표를 향한 질서를 오래 유지합니다.',
     watchout: '계획이 흐트러진 날에는 스스로에게 너무 엄격해지지 마세요.',
@@ -128,6 +136,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   ares: {
     title: '불꽃 같은 자극을 다루는 자',
+    image: '/images/running-card/ares.webp',
+    imageFocus: 0.33,
     oracle: '강함은 방향을 가질 때 오래 남는다.',
     strength: '강한 세션에서 몰입과 추진력이 선명합니다.',
     watchout: '강한 날 뒤의 쉬는 날을 건너뛰면 리듬이 무너질 수 있습니다.',
@@ -145,6 +155,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hephaestus: {
     title: '보이지 않는 시간을 단단히 쌓는 자',
+    image: '/images/running-card/hephaestus.webp',
+    imageFocus: 0.30,
     oracle: '가장 단단한 발걸음은 꺼지지 않는 불에서 나온다.',
     strength: '작은 훈련을 차곡차곡 쌓아 기반을 만듭니다.',
     watchout: '쌓인 거리를 의지로만 버티지 말고 달린 날 사이 간격도 살펴보세요.',
@@ -188,6 +200,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penelope: {
     title: '하루의 약속을 오래 지키는 자',
+    image: '/images/running-card/penelope.webp',
+    imageFocus: 0.33,
     oracle: '이어온 하루들이 너의 가장 긴 길이다.',
     strength: '무리 없이 정해진 러닝 리듬을 오래 유지하는 힘이 있습니다.',
     watchout: '익숙한 일정만 반복하면 새로운 목표가 흐려질 수 있습니다.',
@@ -205,6 +219,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   orpheus: {
     title: '자신만의 리듬을 따르는 자',
+    image: '/images/running-card/orpheus.webp',
+    imageFocus: 0.30,
     oracle: '좋은 리듬은 오래 달릴 이유를 남긴다.',
     strength: '자신에게 맞는 러닝을 스스로 골라 이어갑니다.',
     watchout: '편안한 페이스가 익숙해지면 가벼운 변화도 시도해 보세요.',
@@ -213,6 +229,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   atalanta: {
     title: '자기 속도로 앞서 나가는 자',
+    image: '/images/running-card/atalanta.webp',
+    imageFocus: 0.27,
     oracle: '빠른 발은 고요한 준비에서 완성된다.',
     strength: '속도를 높이는 훈련에서 민첩함과 집중력이 돋보입니다.',
     watchout: '강한 자극 다음에는 쉬는 날을 먼저 확보하세요.',
@@ -239,6 +257,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   bellerophon: {
     title: '속도를 높이며 길을 여는 자',
+    image: '/images/running-card/bellerophon.webp',
+    imageFocus: 0.31,
     oracle: '높이 오르는 날에도 발밑의 리듬을 잊지 마라.',
     strength: '빠른 훈련에 반응하며 기록을 향해 나아갑니다.',
     watchout: '강한 세션에 비해 회복 여유가 적을 수 있습니다.',
@@ -264,6 +284,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   hector: {
     title: '긴 레이스를 끝까지 지키는 자',
+    image: '/images/running-card/hector.webp',
+    imageFocus: 0.38,
     oracle: '마지막까지 남는 힘은 쌓아 온 걸음에서 나온다.',
     strength: '거리와 빠른 훈련을 꾸준히 이어갈 기반이 있습니다.',
     watchout: '잘 버티는 주에도 쉬는 날을 지나치지 마세요.',
@@ -271,6 +293,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   penthesilea: {
     title: '강한 순간에 중심을 지키는 자',
+    image: '/images/running-card/penthesilea.webp',
+    imageFocus: 0.38,
     oracle: '속도를 다루는 힘은 멈출 때도 빛난다.',
     strength: '빠른 훈련에서도 긴 호흡을 잃지 않는 추진력이 있습니다.',
     watchout: '강한 자극 뒤에는 쉬운 날을 분명히 남겨두세요.',
@@ -306,6 +330,8 @@ const PRESENTATIONS: Record<string, CharacterPresentation> = {
   },
   talos: {
     title: '흔들림 없이 거리를 쌓는 자',
+    image: '/images/running-card/talos.webp',
+    imageFocus: 0.26,
     oracle: '단단함은 반복한 하루의 모양을 닮는다.',
     strength: '꾸준한 러닝으로 긴 거리를 버틸 기반을 만듭니다.',
     watchout: '같은 방식이 오래 이어지면 새로운 자극이 부족할 수 있습니다.',

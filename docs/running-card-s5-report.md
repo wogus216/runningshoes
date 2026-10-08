@@ -871,6 +871,8 @@ S4 회귀(S4 `scenario.mjs`, 같은 서버):
 
 ### E-4. 다음
 
+2026-10-08 업데이트: 아래 14장 표식 제거·WebP·머리 위치·코드 연결·검증은 완료했다. [완료 기록](running-card-assets-2026-10-08.md) 참조. 출시 점검 항목은 별도다.
+
 - ~~운영자: 5초 테스트~~ → 건너뛰고 사진풍 유지(운영자 결정 2026-10-08).
 - **운영자**: 표식으로 뺀 14장을 ChatGPT에서 표식만 지운 판으로 다시 만든다. 인물별 표식은 `public/images/running-card/IMAGE_CREDITS.md` '쓰지 않은 이미지' 표에 있다.
   - 원본 PNG 는 `.worktrees/running-card-prototype/public/images/running-card/` 에만 있다. git 이 추적하지 않는 파일이라 **그 worktree 를 지우면 원본도 사라진다.** 정리 전에 옮긴다.
