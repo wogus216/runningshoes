@@ -1091,7 +1091,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>③ 양말·의류·소품 — 물집과 쓸림을 막는다</h2>
 <p>완주를 망치는 건 의외로 사소한 것들입니다. 물집, 젖꼭지 쓸림, 사타구니 쓸림 — 전부 미리 막을 수 있습니다.</p>
 <ul>
-  <li><strong>흡습·속건 러닝 양말</strong> — 면양말은 땀을 머금어 물집의 주범입니다. 발 관리 상세는 <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱멍 예방 가이드</a> 참고. 신발을 브랜드 공식몰에서 살 때 <strong>같은 스토어의 러닝 양말도 함께</strong> 담으면 준비가 한 번에 끝납니다</li>
+  <li><strong>흡습·속건 러닝 양말</strong> — 면양말은 땀을 머금어 물집의 주범입니다. 발 관리 상세는 <a href="/blog/running-foot-care-blisters-toenails-2026">물집·발톱멍 예방 가이드</a>, 소재별로 고르는 법은 <a href="/blog/running-socks-guide-fiber-composition-2026">러닝 양말 혼용률 지도</a> 참고. 신발을 브랜드 공식몰에서 살 때 <strong>같은 스토어의 러닝 양말도 함께</strong> 담으면 준비가 한 번에 끝납니다</li>
   <li><strong>니플밴드 / 바세린</strong> — 남성은 젖꼭지 쓸림, 모두에게 사타구니·겨드랑이 쓸림 방지 필수(특히 풀코스)</li>
   <li><strong>날씨별 상의</strong> — 가을 아침은 쌀쌀하니 출발 전 버리는 옷(우비·헌 옷) 준비, 뛰면 더워지므로 얇게. 러닝 재킷을 새로 산다면 <a href="/fabrics/kca-running-jacket-2025">한국소비자원 러닝 재킷 8종 시험</a>에서 체온유지성·<a href="/fabrics/air-permeability-iso-9237">공기투과도</a>를 먼저 비교해 보세요</li>
   <li><strong>선크림·립밤</strong> — 몇 시간 야외 노출, 특히 풀코스</li>
@@ -5739,7 +5739,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>물집은 <strong>반복 마찰 + 열 + 습기</strong>로 피부 층이 분리되며 그 사이에 진물이 차는 현상입니다. 여름엔 땀으로 발이 젖어 마찰 저항이 커지면서 특히 잘 생기죠. 주로 새끼발가락 옆, 발뒤꿈치, 발가락 끝, 발바닥 앞쪽에 생깁니다.</p>
 <h3>예방법 (효과 순서대로)</h3>
 <ul>
-  <li><strong>양말이 절반이다</strong> — 면양말은 땀을 머금어 최악입니다. <strong><a href="/fabrics/coolmax">쿨맥스</a>·<a href="/fabrics/merino-wool">메리노</a> 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로만 바꿔도 물집이 크게 줄어요. 물집이 잦다면 <strong>이중(더블레이어) 양말</strong>이 마찰을 양말끼리 흡수해 확실히 효과적입니다.</li>
+  <li><strong>양말이 절반이다</strong> — 면양말은 땀을 머금어 최악입니다. <strong><a href="/fabrics/coolmax">쿨맥스</a>·<a href="/fabrics/merino-wool">메리노</a> 같은 <a href="/fabrics/wicking-ommc">흡습속건 소재</a></strong>로만 바꿔도 물집이 크게 줄어요. 어떤 양말이 어떤 소재인지는 <a href="/blog/running-socks-guide-fiber-composition-2026">러닝 양말 22종 혼용률 지도</a>에 정리했습니다. 물집이 잦다면 <strong>이중(더블레이어) 양말</strong>이 마찰을 양말끼리 흡수해 확실히 효과적입니다.</li>
   <li><strong>사이즈·발볼</strong> — 헐렁하면 발이 신발 안에서 놀아 마찰이 늘고, 꽉 끼면 압박으로 생깁니다. 새끼발가락 물집이 잦다면 발볼이 좁은 것이니 <a href="/blog/wide-feet-running-shoes-korea">와이드(2E·4E)</a>를 고려하세요. 정사이즈 기준은 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>를 참고하고요.</li>
   <li><strong>마찰 줄이기</strong> — 물집 잘 생기는 부위에 <strong>바세린·전용 안티챗 밤</strong>을 바르거나, 파우더로 건조 상태를 유지합니다. 장거리·대회 전엔 미리 발라두세요.</li>
   <li><strong>끈 묶기(힐락 레이싱)</strong> — 발뒤꿈치가 들리며 쓸리는 물집엔, 맨 위 구멍을 이용한 <strong>힐락(heel-lock) 묶기</strong>로 발을 뒤에서 잡아주면 효과가 큽니다.</li>

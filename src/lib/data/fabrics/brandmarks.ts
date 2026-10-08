@@ -301,7 +301,7 @@ export const brandmarkFabrics: Fabric[] = [
       'COOLMAX 제품과 일반 폴리에스터 제품을 같은 규격으로 비교한 공공기관 시험은 이 조사에서 다루지 못했습니다.',
     ],
     related: ['polyester', 'wicking-ommc', 'merino-wool', 'dri-fit'],
-    relatedPosts: ['running-foot-care-blisters-toenails-2026', 'summer-breathable-running-shoes-2026'],
+    relatedPosts: ['running-foot-care-blisters-toenails-2026', 'summer-breathable-running-shoes-2026', 'running-socks-guide-fiber-composition-2026'],
     updatedAt: '2026-10-08',
     keywords: ['쿨맥스', 'COOLMAX', '쿨맥스 양말', '러닝 양말 소재', '흡한속건 소재'],
   },
