@@ -1297,6 +1297,7 @@ export const posts_2026_09: BlogPost[] = [
     thumbnail: '/images/blog/fila-run-espresso-10k-seoul.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-27',
+    updatedAt: '2026-10-09',
     category: 'news' as const,
     readingTime: 5,
     tags: ['휠라 런앤에스프레소', 'FILA RUN & ESPRESSO', '휠라', '스피드템포 플러스', '서울 10K', '11월 마라톤', '상암월드컵공원'],
@@ -1316,8 +1317,8 @@ export const posts_2026_09: BlogPost[] = [
         { label: '장소', value: '상암 평화의광장', sub: '서울월드컵공원' },
         { label: '종목', value: '10K 단일', sub: '넷타임 계측' },
         { label: '참가비', value: '7만 / 17.9만', sub: 'RUN / ESPRESSO(러닝화 포함)' },
-        { label: '접수', value: '10/8(목) 17시까지', sub: '선착순 · 조기 종료 가능' },
-        { label: '환불', value: '10/8(목) 17시까지', sub: '이후 취소·변경 불가' },
+        { label: '접수', value: '10/8 마감', sub: 'ESPRESSO SOLD OUT 표기' },
+        { label: '환불', value: '10/8 마감', sub: '취소·정보 변경 불가' },
       ],
       highlights: [
         {
@@ -1362,7 +1363,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '코스는 어떻게 되나요?',
         answer:
-          '2026년 9월 27일 기준 공식 페이지에 러닝 코스·스폰서·완주 기념품은 "추후 공개 예정"으로 남아 있습니다. 출발지는 서울 상암월드컵공원 평화의광장이며, 코스가 공개되면 갱신하겠습니다.',
+          '2026년 10월 9일 기준 공식 페이지에 러닝 코스·스폰서·완주 기념품은 여전히 "추후 공개 예정"으로 남아 있습니다. 다만 9월 28일 공지로 완주 메달이 공개됐고, 10K를 완주한 참가자에게만 줍니다. 출발지는 서울 상암월드컵공원 평화의광장이며, 코스가 공개되면 갱신하겠습니다.',
       },
     ],
     content: `
@@ -1444,7 +1445,7 @@ export const posts_2026_09: BlogPost[] = [
   </tbody>
 </table>
 
-<p><small>출처: 휠라 공식몰(fila.co.kr) RUN &amp; ESPRESSO 10K SEOUL 대회 페이지, FILA RUN·FILA ESPRESSO 패키지 판매 페이지, 스피드템포 플러스 상품 페이지(2026년 9월 27일 확인). 접수·취소·환불 기한은 두 패키지 판매 페이지를 9월 30일 다시 확인해 10월 8일 17시로 갱신했습니다. 두 페이지에 품절 표기는 보이지 않았지만 실제 잔여 수량은 결제 단계에서만 알 수 있습니다. 이 소식의 최초 트리거는 인스타그램 @run_playlist의 협찬(#AD) 게시물이었고, 본문의 사실 관계는 휠라 공식 페이지를 근거로 했습니다.</small></p>
+<p><small>출처: 휠라 공식몰(fila.co.kr) RUN &amp; ESPRESSO 10K SEOUL 대회 페이지, FILA RUN·FILA ESPRESSO 패키지 판매 페이지, 스피드템포 플러스 상품 페이지(2026년 9월 27일 확인). 접수·취소·환불 기한은 두 패키지 판매 페이지를 9월 30일 다시 확인해 10월 8일 17시로 갱신했습니다. 두 페이지에 품절 표기는 보이지 않았지만 실제 잔여 수량은 결제 단계에서만 알 수 있습니다. 기한이 지난 10월 9일 대회 페이지를 다시 확인해 ESPRESSO "SOLD OUT"·RUN "접수 마감" 표기와 9월 28일 완주 메달 공지를 반영했습니다. 이 소식의 최초 트리거는 인스타그램 @run_playlist의 협찬(#AD) 게시물이었고, 본문의 사실 관계는 휠라 공식 페이지를 근거로 했습니다.</small></p>
 `,
   },
   {

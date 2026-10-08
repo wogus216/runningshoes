@@ -10209,10 +10209,11 @@ export const posts_2026_06: BlogPost[] = [
     id: 'joyce-hubner-367-consecutive-marathons-world-record',
     slug: 'joyce-hubner-367-consecutive-marathons-world-record',
     title: '매일 풀코스 367일, 그리고 멈추지 않는다 | 독일 러너 조이스 휘브너의 세계기록 — "495일·21,000km" 도전의 진실과 매일 마라톤의 과학',
-    description: '독일의 38세 러너 조이스 휘브너가 367일 연속 마라톤 풀코스 완주로 여성 세계기록을 경신했습니다. 기존 기록(벨기에 힐데 도소뉴 366일)을 넘겼지만 도전은 진행 중 — 최종 목표는 495일·21,000km·독일 2,000개 도시 잇기입니다. 그녀가 누구인지, 어떻게 매일 버티는지, 그리고 "매일 마라톤"이 몸에 무슨 일을 일으키는지(왜 일반 러너는 따라 하면 안 되는지)를 과학적으로 풀어봅니다.',
+    description: '독일의 38세 러너 조이스 휘브너가 367일 연속 마라톤 풀코스 완주로 여성 세계기록을 경신했습니다. 기존 기록(벨기에 힐데 도소뉴 366일)을 넘긴 뒤 459일 연속까지 이어 갔다가 부상으로 멈췄고, 남은 36개 마라톤을 마저 달려 495개·독일 2,059개 도시를 채우겠다고 밝혔습니다. 그녀가 누구인지, 어떻게 매일 버티는지, 그리고 "매일 마라톤"이 몸에 무슨 일을 일으키는지(왜 일반 러너는 따라 하면 안 되는지)를 과학적으로 풀어봅니다.',
     thumbnail: '/images/blog/joyce-hubner-367-consecutive-marathons-world-record.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-04',
+    updatedAt: '2026-10-09',
     category: 'news' as const,
     readingTime: 9,
     tags: ['조이스 휘브너', '연속 마라톤 세계기록', '매일 마라톤', '울트라 러닝', '마라톤 회복', '러닝 동기부여', '러닝 과학', '러너 스토리'],
@@ -10221,7 +10222,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>독일 38세 러너 <strong>조이스 휘브너</strong>가 6월 2일 <strong>367일 연속 마라톤 풀코스(42.195km)</strong> 완주로 여성 세계기록을 경신했습니다 — 기존 기록(벨기에 힐데 도소뉴 366일)을 하루 넘긴 순간</li>
-    <li>놀랍게도 <strong>도전은 아직 진행 중</strong>. 최종 목표는 <strong>495일 연속·총 21,000km</strong>로 독일 2,000개 도시·마을을 잇는 것, 오는 <strong>10월 8일 베를린</strong>에서 피니시 예정입니다</li>
+    <li>그 뒤로도 매일 달려 <strong>459일 연속</strong>까지 이어 갔지만 <strong>부상(골막염)으로 중단</strong>했습니다. 원래 10월 8일 베를린 피니시 계획은 미뤄졌고, 본인은 남은 <strong>36개 마라톤</strong>을 마저 달려 495개·독일 2,059개 도시를 채우겠다고 밝혔습니다 — 재개 날짜는 아직 없습니다(10월 9일 본인 인스타그램 확인)</li>
     <li>단일 마라톤도 몸이 회복하는 데 <strong>1~2주</strong>가 필요합니다. 매일 달리는 그녀의 비결은 "기록이 아닌 완주", 데이터 모니터링과 전담 팀 — <strong>일반 러너가 따라 할 일이 절대 아닙니다</strong></li>
   </ul>
 </div>
@@ -10229,8 +10230,8 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">🇩🇪</span>
   <div class="callout-body">
-    <p class="callout-title">기록은 깨졌고, 그녀는 여전히 달리는 중입니다</p>
-    <p>2026년 6월 2일, 독일 니더작센주의 작은 길 위에서 한 여성이 <strong>367번째 마라톤</strong>을 완주했습니다. 그냥 367번이 아니라 <strong>367일 동안 하루도 빠짐없이</strong> 매일 42.195km를 달린 끝의 한 걸음이었죠. 이 순간 그녀는 여성 연속 마라톤 세계기록을 새로 썼습니다. 그런데 더 놀라운 건 — 그녀가 아직 <strong>멈추지 않았다</strong>는 사실입니다.</p>
+    <p class="callout-title">기록은 깨졌고, 그녀는 459일까지 달렸습니다</p>
+    <p>2026년 6월 2일, 독일 니더작센주의 작은 길 위에서 한 여성이 <strong>367번째 마라톤</strong>을 완주했습니다. 그냥 367번이 아니라 <strong>367일 동안 하루도 빠짐없이</strong> 매일 42.195km를 달린 끝의 한 걸음이었죠. 이 순간 그녀는 여성 연속 마라톤 세계기록을 새로 썼습니다. 그런데 더 놀라운 건 — 그 뒤로도 <strong>92일을 더</strong> 달려 459일 연속까지 이어 갔다는 사실입니다.</p>
   </div>
 </div>
 
@@ -10251,13 +10252,14 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>기존 세계기록</td><td>벨기에 러너 힐데 도소뉴 — <strong>366일</strong> 연속(2024년 윤년에 매일 완주)</td></tr>
-    <tr><td>조이스의 기록</td><td><strong>367일</strong> 연속(2026년 6월 2일 경신, 진행 중)</td></tr>
+    <tr><td>조이스의 기록</td><td><strong>367일</strong> 연속(2026년 6월 2일 경신) → 이후 <strong>459일</strong> 연속까지 연장, 부상으로 중단</td></tr>
     <tr><td>시작일</td><td>2025년 6월 1일, 독일 헬름슈테트</td></tr>
-    <tr><td>최종 목표</td><td><strong>495일</strong> 연속 · 독일 도시·마을 <strong>2,000곳</strong> · 총 <strong>약 21,000km</strong></td></tr>
-    <tr><td>피니시 예정</td><td>2026년 <strong>10월 8일 베를린</strong></td></tr>
+    <tr><td>459일까지 달린 거리</td><td><strong>19,819km</strong> · 누적 상승 238,159m · 함께 달린 사람 중 229명이 첫 풀코스 완주(본인 집계)</td></tr>
+    <tr><td>최종 목표</td><td>마라톤 <strong>495개</strong> · 독일 도시 <strong>2,059곳</strong> · 총 <strong>약 21,000km</strong> — 남은 마라톤 36개</td></tr>
+    <tr><td>피니시</td><td>원래 2026년 10월 8일 베를린 예정 → <strong>부상으로 연기</strong>. 베를린 올림픽 스타디움 피니시를 목표로 하며 날짜는 미정</td></tr>
   </tbody>
 </table>
-<p>21,000km는 서울에서 부산까지(약 400km)를 <strong>52번 왕복</strong>하는 거리입니다. 그것도 매일 멈추지 않고, 1년 4개월 넘게요.</p>
+<p>21,000km는 서울에서 부산까지(약 400km)를 <strong>편도로 52번</strong> 넘게 달리는 거리입니다. 조이스는 그중 19,819km를 459일 동안 하루도 쉬지 않고 달렸습니다.</p>
 
 <h2>매일 마라톤, 몸에는 무슨 일이 일어날까</h2>
 <p>여기서부터가 러너라면 진짜 궁금한 부분입니다. <strong>마라톤을 매일 뛰는 게 신체적으로 가능한 일</strong>일까요?</p>
@@ -10282,7 +10284,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">감동은 받되, 절대 따라 하지 마세요</p>
-    <p>이런 기록은 영감을 주지만, <strong>일반 러너가 흉내 낼 영역이 아닙니다</strong>. 회복 없이 누적되는 부하는 피로 골절·건염·면역 저하·심장 부담으로 이어집니다. "매일 뛰어야 는다"는 흔한 오해는 오히려 부상으로 가는 지름길입니다. 초보일수록 <strong>주 3~4회 + 회복일</strong>이 정답입니다. 페이스부터 잡고 싶다면 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a>를, 무릎이 걱정이라면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>을 참고하세요.</p>
+    <p>이런 기록은 영감을 주지만, <strong>일반 러너가 흉내 낼 영역이 아닙니다</strong>. 회복 없이 누적되는 부하는 피로 골절·건염·면역 저하·심장 부담으로 이어집니다. 전담 팀과 데이터로 관리한 조이스조차 459번째 마라톤 뒤 골막염(본인 표기 Knochenhautentzündung)으로 도전을 멈췄습니다. "매일 뛰어야 는다"는 흔한 오해는 오히려 부상으로 가는 지름길입니다. 초보일수록 <strong>주 3~4회 + 회복일</strong>이 정답입니다. 페이스부터 잡고 싶다면 <a href="/blog/lsd-training-beginner-guide-korea">LSD 훈련 입문 가이드</a>를, 무릎이 걱정이라면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 러닝화 선택법</a>을 참고하세요.</p>
   </div>
 </div>
 
@@ -10293,9 +10295,9 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>회복과 데이터를 신뢰한다</strong> — 감이 아니라 심박·부하 데이터로 몸 상태를 읽습니다. 부상 없이 볼륨을 늘리는 접근은 <a href="/blog/nsm-norwegian-singles-method-training">노르웨이식 훈련법(NSM)</a>의 철학과도 통합니다.</li>
   <li><strong>목표를 잘게 쪼갠다</strong> — 495일이라는 거대한 숫자도 결국 "오늘 하루"의 반복입니다. 풀코스 완주 전략을 거리별로 나누는 법은 <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이스·멘탈 가이드</a>에서 다룹니다.</li>
 </ul>
-<p>10월 8일 베를린에서 그녀가 495번째 피니시 라인을 통과하는 순간까지, 멈추지 않는 조이스 휘브너의 여정에 응원을 보냅니다. 그리고 우리는 우리 페이스대로, 오늘 하루의 러닝을 꾸준히 이어가면 됩니다.</p>
+<p>부상을 딛고 남은 36개를 달려 베를린 올림픽 스타디움에서 495번째 피니시 라인을 통과하는 순간까지, 조이스 휘브너의 여정에 응원을 보냅니다. 그리고 우리는 우리 페이스대로, 오늘 하루의 러닝을 꾸준히 이어가면 됩니다.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 기사는 동마클럽(@dongmaclub) 및 해외 매체(Yahoo Sports, SRF, t-online 등) 보도를 종합·재구성했습니다. 회복·신체 영향 관련 내용은 일반적인 의학 정보이며, 개인의 운동 처방을 대체하지 않습니다.</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 기사는 동마클럽(@dongmaclub) 및 해외 매체(Yahoo Sports, SRF, t-online 등) 보도를 종합·재구성했습니다. 459일 연속 뒤 중단, 누적 거리·상승 고도, 남은 36개 계획, 골막염은 조이스 휘브너 본인 인스타그램(@runninggirl.joyce) 2026년 10월 6~8일 게시물로 확인했습니다(10월 9일 확인). 회복·신체 영향 관련 내용은 일반적인 의학 정보이며, 개인의 운동 처방을 대체하지 않습니다.</p>
 `,
   },
   {
