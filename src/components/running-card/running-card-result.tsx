@@ -213,10 +213,14 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
           </label>
         ))}
       </fieldset>
-      <button type="button" className="rc-toggle" aria-pressed={hideNumbers} onClick={() => setHideNumbers((v) => !v)}>
-        이미지에서 기록 숫자 숨기기
+      <button type="button" className="rc-toggle" aria-pressed={hideNumbers} aria-describedby="rc-hide-note" onClick={() => setHideNumbers((v) => !v)}>
+        이미지에서 내 기록 숨기기
         <i aria-hidden="true" />
       </button>
+      {/* 무엇이 지워지는지는 누르기 전에 읽혀야 한다 — 저장 버튼 아래 있던 설명을 토글 바로 아래로 옮겼다(S5-E). */}
+      <p className="rc-toggle-note" id="rc-hide-note">
+        켜면 이미지 속 메달의 기록 동전(총거리·횟수·페이스·최장거리·강한 훈련·요일)에 항목 이름만 남고, 근거는 숫자 없는 말로 바뀌어요.
+      </p>
       <div className="rc-actions">
         <button type="button" className="rc-primary" disabled={busy} onClick={() => save(['cover', 'analysis'])}>
           {busy ? '이미지를 만드는 중…' : '이미지 2장 저장'}
@@ -226,10 +230,7 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
           <button type="button" onClick={shareLink}>링크 공유</button>
         </div>
       </div>
-      <p className="rc-share-note">
-        숫자를 숨기면 메달의 기록 동전(총거리·횟수·페이스·최장거리·강한 훈련)이 민짜로, 근거가 숫자 없는 말로 바뀌어요.
-        링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.
-      </p>
+      <p className="rc-share-note">링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.</p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && (
         <div className="rc-open">

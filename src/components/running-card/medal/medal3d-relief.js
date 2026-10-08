@@ -193,6 +193,23 @@ function legend(H, S, text) {
   });
   level(H, bevel(m, S, S, 1), RAISE);
 }
+// The record's name alone in the field (state 'hidden', S5-E): a finished coin that tells what it records but not how
+// much — the motif carries the amount (dots per run, laps, chevrons), so it goes with the number.
+function fieldWord(H, S, text) {
+  const m = mask(S, g => {
+    g.setTransform(1, 0, 0, 1, 0, 0);
+    let fs = .34 * S / 2;
+    const font = s => `650 ${s}px StudySans, sans-serif`;
+    g.font = font(fs);
+    const maxW = 1.22 * S / 2, w = g.measureText(text).width;
+    if (w > maxW) { fs *= maxW / w; g.font = font(fs); }
+    g.textAlign = 'center'; g.textBaseline = 'alphabetic';
+    const y = (1 + FC) * S / 2 + fs * .36;
+    g.lineWidth = .011 * S / 2; g.lineJoin = 'round';
+    g.fillText(text, S / 2, y); g.strokeText(text, S / 2, y);
+  });
+  level(H, bevel(m, S, S, 1), RAISE);
+}
 
 // 1 총거리 — laps of a track, outer lane first; a partial lap runs counter-clockwise from the start line and ends in a dot.
 function stadium(a, b, cx, cy, n = 480) {
@@ -409,7 +426,7 @@ function maps(H, W, Hh, { depth, lo = .26, hi = .42, oxide = [.004, .02], top = 
 
 // ---- public builders -------------------------------------------------------------------------------------------------
 // One coin face at S×S. state: 'struck' (the input's relief), 'blank' (an unstruck planchet: the value was left as the
-// sample). Layers, in order: base (band, beads, ring and exergue lines on a cast ground) → the input's motif → the
+// sample), 'hidden' (share image 1 with the record hidden: the struck base with the record's name, no amount). Layers, in order: base (band, beads, ring and exergue lines on a cast ground) → the input's motif → the
 // legend → polishing marks; then the finish layers in maps().
 // With { height: true } it also returns `height` for a displacement map (3D-2): the height field softened to about the
 // vertex spacing of a dense face mesh, as 0..1 of H = .8, so the mesh follows the large forms and the normal map keeps
@@ -427,16 +444,17 @@ function struckOrBlank(key, rec, state, S) {
   pxs = S / 512;
   let H;
   if (state === 'struck') { H = struckBase(S); unit = MOTIF; try { motifs[key](H, S, rec); } finally { unit = 1; } legend(H, S, label(key, rec)); }
+  else if (state === 'hidden') { H = struckBase(S); fieldWord(H, S, NAMES[key]); }
   else {
     // Blank: a smooth satin planchet, very slightly dished — no beads, no legend, nothing struck.
     H = new Float32Array(S * S);
     const { sand } = noise(S);
     forEachPixel(S, (x, y, i) => { const r = Math.hypot(x, y); H[i] = .36 - .03 * r * r + .004 * (sand[i] - .5) - .06 * smooth(.95, 1.02, r); });
   }
-  const marks = scratches(H, S, seedOf(`${key}:${state}`), state === 'struck' ? 170 : 120);
+  const marks = scratches(H, S, seedOf(`${key}:${state}`), state !== 'blank' ? 170 : 120);
   // The face disc spans .93 coin radii: depth = relief of .10 coin radii per H unit, in texels.
   const depth = .10 / (1.86 / S);
-  const out = state === 'struck' ? maps(H, S, S, { depth, marks }) : maps(H, S, S, { depth, marks, lo: -1, hi: 0, top: .82, rough: [.32, .28], ao: .6, shadow: 0, wear: 0 });
+  const out = state !== 'blank' ? maps(H, S, S, { depth, marks }) : maps(H, S, S, { depth, marks, lo: -1, hi: 0, top: .82, rough: [.32, .28], ao: .6, shadow: 0, wear: 0 });
   pxs = 1;
   return { S, H, ...out };
 }

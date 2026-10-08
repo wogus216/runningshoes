@@ -819,9 +819,11 @@ function want(sig, msg, prio = 3, place = null) {
   pump();
   return j.promise;
 }
-// Least recently used coin faces go past the budget; faces on the medal (or about to be) stay.
+// Least recently used coin faces go past the budget; faces on the medal (or about to be) stay, and so do the faces a
+// share render is waiting on (sharePins: the record-hidden faces are on no slot until the render swaps them in).
+const sharePins = new Set();
 function evict() {
-  const inUse = new Set(slots.flatMap(s => [s.sig, s.wantSig]));
+  const inUse = new Set([...slots.flatMap(s => [s.sig, s.wantSig]), ...sharePins]);
   const coins = [...faces.entries()].filter(([, f]) => f.kind === 'coin').sort((a, b) => a[1].used - b[1].used);
   let total = coins.reduce((n, [, f]) => n + f.bytes, 0);
   for (const [sig, f] of coins) {
@@ -1374,7 +1376,7 @@ function flatDraw() {
   flatPaint(g, width, height, ppu, r.x, r.y);
 }
 // The flat medal into g (w × h): ppu pixels per unit, world point (cx, cy) in the middle. The share image passes its own
-// framing (fitShare's) and, with the numbers hidden, a blank face for the record coins.
+// framing (fitShare's) and, with the record hidden, the record coins' name-only faces.
 function flatPaint(g, width, height, ppu, cx, cy, faceOf = slot => slot.sig) {
   const P = (x, y) => [width / 2 + (x - cx) * ppu, height / 2 - (y - cy) * ppu], f = FINISHES[finishKey];
   g.fillStyle = '#ff4d00';
@@ -1423,13 +1425,15 @@ $('#open-result').addEventListener('click', async () => {
 // All seated coins at the seat size, and the plate being struck, before a share render.
 function facesReady() { syncCoins(); return Promise.all([...slots.filter(s => s.wantSig).map(s => want(s.wantSig, null, 1).then(() => showBest(s))), plate.ready]); }
 const SUPER = 2;
-// With the record numbers hidden, the coins that carry them (01 총거리 … 05 강한 훈련) go blank on share image 1.
-// 06 목표 and 07 요일 are choices, not numbers, and stay.
-const HIDDEN = new Set([0, 1, 2, 3, 4]);
+// With the record hidden, the coins that carry it (01 총거리 … 05 강한 훈련, and 07 요일 — the days run are a routine
+// someone could follow) show only the record's name on share image 1. They used to go blank, and five blank coins read
+// as unopened badge slots (S5-E, 운영자 결정 2026-10-08). 06 목표 is a choice, not a record, and stays.
+const HIDDEN = new Set([0, 1, 2, 3, 4, 6]);
+const hiddenSig = k => `${scenes[k]}:hidden:${RES.seat}`;
 // The medal for share image 1 in the figure box: a front-on WebGL render, or without WebGL the flat drawing in the same
 // framing (it used to be the screen's layout scaled down, so the medal came out small).
 function renderFigure(g, fig, hideNumbers) {
-  const blank = blankSig(RES.seat), faceOf = slot => (hideNumbers && HIDDEN.has(slot.k) ? blank : slot.sig);
+  const faceOf = slot => (hideNumbers && HIDDEN.has(slot.k) ? hiddenSig(slot.k) : slot.sig);
   if (!renderer) {
     // fitShare's framing without a camera: k pixels per unit, the medal's bottom bottomPad × h above the box's bottom.
     const { widthShare = .95, heightShare = .80, bottomPad = .065 } = fig.fit, mw = 2 * BOUNDS.x, mh = BOUNDS.top - BOUNDS.bottom;
@@ -1438,7 +1442,7 @@ function renderFigure(g, fig, hideNumbers) {
     return { k, medalWidth: k * mw, coinRadius: k };
   }
   const swapped = [];
-  for (const slot of slots) if (faceOf(slot) !== slot.sig) { swapped.push([slot, slot.sig]); applyFace(slot, blank); }
+  for (const slot of slots) { const sig = faceOf(slot); if (sig !== slot.sig) { swapped.push([slot, slot.sig]); applyFace(slot, sig); } }
   const keepPr = renderer.getPixelRatio(), keepTilt = [tilt.x, tilt.y];
   const shadowAt = size => { key.shadow.mapSize.set(size, size); if (key.shadow.map) { key.shadow.map.dispose(); key.shadow.map = null; } renderer.shadowMap.needsUpdate = true; };
   renderer.setPixelRatio(1); renderer.setSize(fig.w * SUPER, fig.h * SUPER, false); shadowAt(2048);
@@ -1462,14 +1466,18 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
   const g = c.getContext('2d');
   if (page === 'cover') {
     await facesReady();
-    if (hideNumbers) await want(blankSig(RES.seat), coinMsg('distance', liveRec(), 'blank', RES.seat), 0);
-    if (destroyed) throw new Error('destroyed');
-    settleNow();
-    // drawCover waits for the picture and the fonts first; the flow may be torn down ('다시 하기') in between.
-    await drawCover(g, kind, card, (fig, target = g) => {
+    const pins = hideNumbers ? [...HIDDEN].map(hiddenSig) : [];
+    pins.forEach(sig => sharePins.add(sig));
+    try {
+      if (hideNumbers) await Promise.all([...HIDDEN].map(k => want(hiddenSig(k), coinMsg(scenes[k], liveRec(), 'hidden', RES.seat), 0)));
       if (destroyed) throw new Error('destroyed');
-      return renderFigure(target, fig, hideNumbers);
-    });
+      settleNow();
+      // drawCover waits for the picture and the fonts first; the flow may be torn down ('다시 하기') in between.
+      await drawCover(g, kind, card, (fig, target = g) => {
+        if (destroyed) throw new Error('destroyed');
+        return renderFigure(target, fig, hideNumbers);
+      });
+    } finally { pins.forEach(sig => sharePins.delete(sig)); }
   } else await drawAnalysis(g, kind, card, hideNumbers);
   return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
 }
