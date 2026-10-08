@@ -80,6 +80,33 @@ export const posts_2026_10: BlogPost[] = [
 </table>
 <p class="caption">혼용률·가격은 2026년 10월 8일 한국 공식 판매처 기준입니다. *쿠팡 상품은 표시 할인 전 가격 대신 당일 판매가를 켤레 수로 나눴습니다. 타비오 레이싱 런은 공식 표기 합계가 99%입니다. 스마트울은 확인 당일 37,000원에 할인 판매 중이었습니다.</p>
 
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매 — 네이버 쇼핑 커넥트에 있는 5종</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://naver.me/xxoNbCRb" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">인진지 러너 세미크루 (발가락) →</span>
+    </a>
+    <a href="https://naver.me/GFshvMC1" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">인진지 러너 미니크루 (발가락) →</span>
+    </a>
+    <a href="https://naver.me/5XcyEHYd" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">삭스업 어텐션 드라이 PRO →</span>
+    </a>
+    <a href="https://naver.me/xcgBUIua" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">삭스업 컴프레션 러닝 크루 →</span>
+    </a>
+    <a href="https://naver.me/Fz8ijJpA" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">네이버</span>
+      <span class="affiliate-btn-product">스마트울 애슬리트 에디션 런 크루 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다. 판매처는 삭스업 공식 스토어와 아웃도어 판매점(에어마운틴·고캠프)이고 가격은 판매처마다 다를 수 있습니다. 나머지 17종은 커넥트에 같은 모델이 없어 링크를 달지 않았습니다 — <strong>링크가 있는 제품이 더 좋은 제품이라는 뜻은 아닙니다.</strong></p>
+</div>
+
 <h2>4갈래로 읽기</h2>
 <h3>① 나일론 위주 — 데카트론·아식스·삭스업·브룩스 고스트·나이키 라이트웨이트</h3>
 <p>나일론이 50~94%입니다. 22종 가운데 가장 많은 8종이 여기 속하고, 가격도 1켤레 2,650원(데카트론)부터 35,000원(아식스 메타스피드)까지 가장 넓게 퍼져 있습니다. 같은 갈래 안에서 갈리는 건 <strong>신축 섬유 비율</strong>입니다. 삭스업 컴프레션이 15%로 가장 높고, 아식스 퍼포먼스 런은 3%입니다.</p>
