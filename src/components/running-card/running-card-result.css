@@ -80,7 +80,7 @@
 .rcm .rc-status{margin-top:10px;font-size:14px;line-height:1.5;color:var(--paper);word-break:keep-all}
 .rcm .rc-status:empty{display:none}
 .rcm .rc-open{display:flex;gap:8px;margin-top:8px}
-.rcm .rc-open a{flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:22px;border:1px solid var(--line-25);font-size:14px;color:var(--accent)}
+.rcm .rc-open button{background:none;cursor:pointer;flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:22px;border:1px solid var(--line-25);font-size:14px;color:var(--accent)}
 
 .rcm .rc-shoes{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:40px;padding:18px 20px;border-radius:16px;background:var(--ink-2);border:1px solid var(--line-25)}
 .rcm .rc-shoes b{display:block;font-size:16px;font-weight:600}

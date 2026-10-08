@@ -131,7 +131,7 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
   );
 }
 
-type Saved = { page: SharePage; url: string; name: string };
+type Saved = { page: SharePage; url: string; name: string; file: File };
 
 function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareCard; scores: JudgedRunner['analysis']['publicScores']; shareImage: ShareImage }) {
   const [kind, setKind] = useState<ShareKind>('story');
@@ -142,6 +142,48 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
   const urls = useRef<string[]>([]);
 
   useEffect(() => () => urls.current.forEach((url) => URL.revokeObjectURL(url)), []);
+
+  function clearSaved() {
+    urls.current.forEach((url) => URL.revokeObjectURL(url));
+    urls.current = [];
+    setSaved([]);
+    setStatus('');
+  }
+
+  async function openImage(page: SharePage) {
+    if (busy) return;
+    const tab = window.open('', '_blank');
+    if (!tab) {
+      setStatus('새 탭이 차단됐어요. 팝업을 허용하고 다시 눌러 주세요.');
+      return;
+    }
+    tab.opener = null;
+    tab.document.title = '러닝 카드 이미지 준비 중';
+    tab.document.body.textContent = '현재 설정으로 이미지를 만드는 중이에요.';
+    setBusy(true);
+    try {
+      const blob = await shareImage(kind, page, { card, hideNumbers });
+      const url = URL.createObjectURL(blob);
+      urls.current.push(url);
+      tab.location.href = url;
+      setStatus('현재 설정으로 이미지를 열었어요. 길게 눌러 저장할 수 있어요.');
+    } catch {
+      tab.close();
+      setStatus('이미지를 열지 못했어요. 다시 눌러 주세요.');
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  async function shareFiles() {
+    try {
+      await navigator.share({ files: saved.map((m) => m.file), title: '러닝 카드' });
+      setStatus('기기 저장·공유 화면을 열었어요.');
+    } catch (error) {
+      if (error instanceof DOMException && error.name === 'AbortError') return;
+      setStatus('기기 공유를 열지 못했어요. 아래 이미지 열기를 이용해 주세요.');
+    }
+  }
 
   async function save(pages: SharePage[]) {
     if (busy) return;
@@ -155,7 +197,8 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       for (const page of pages) {
         const blob = await shareImage(kind, page, { card, hideNumbers });
         const order = page === 'cover' ? 1 : 2;
-        made.push({ page, url: URL.createObjectURL(blob), name: `running-card-${id}-${order}-${page}-${kind}-${size.replace('×', 'x')}.png` });
+        const filename = `running-card-${id}-${order}-${page}-${kind}-${size.replace('×', 'x')}.png`;
+        made.push({ page, url: URL.createObjectURL(blob), name: filename, file: new File([blob], filename, { type: 'image/png' }) });
       }
       urls.current.forEach((url) => URL.revokeObjectURL(url));
       urls.current = made.map((m) => m.url);
@@ -172,7 +215,9 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
           document.body.append(link); link.click(); link.remove();
           await new Promise((resolve) => setTimeout(resolve, 300));
         }
-        setStatus(`${name} 이미지(${size}) ${made.length}장 저장을 시작했어요. 저장되지 않으면 아래에서 새 탭으로 여세요.`);
+        setStatus(navigator.canShare?.({ files: made.map((m) => m.file) })
+          ? `${name} 이미지 ${made.length}장을 만들었어요. 아래 '기기에 저장·공유'를 눌러 저장하세요.`
+          : `${name} 이미지(${size}) ${made.length}장 저장을 시작했어요. 저장되지 않으면 아래에서 이미지를 열어 저장하세요.`);
       }
     } catch {
       fallback?.close();
@@ -208,12 +253,12 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
         <legend className="sr-only">이미지 크기</legend>
         {(Object.keys(SIZES) as ShareKind[]).map((k) => (
           <label key={k}>
-            <input type="radio" name="rc-size" value={k} checked={kind === k} onChange={() => setKind(k)} />
+            <input type="radio" name="rc-size" value={k} checked={kind === k} disabled={busy} onChange={() => { clearSaved(); setKind(k); }} />
             <span>{SIZES[k].name}<small>{SIZES[k].size}</small></span>
           </label>
         ))}
       </fieldset>
-      <button type="button" className="rc-toggle" aria-pressed={hideNumbers} aria-describedby="rc-hide-note" onClick={() => setHideNumbers((v) => !v)}>
+      <button type="button" className="rc-toggle" aria-pressed={hideNumbers} aria-describedby="rc-hide-note" disabled={busy} onClick={() => { clearSaved(); setHideNumbers((v) => !v); }}>
         이미지에서 내 기록 숨기기
         <i aria-hidden="true" />
       </button>
@@ -232,13 +277,14 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       </div>
       <p className="rc-share-note">링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.</p>
       <p className="rc-status" role="status">{status}</p>
-      {saved.length > 0 && (
-        <div className="rc-open">
-          {saved.map((m) => (
-            <a key={m.url} href={m.url} target="_blank" rel="noopener">{m.page === 'cover' ? '1장 표지 열기' : '2장 분석 열기'}</a>
-          ))}
-        </div>
+      {saved.length > 0 && typeof navigator !== 'undefined' && navigator.canShare?.({ files: saved.map((m) => m.file) }) && (
+        <button type="button" className="rc-primary" disabled={busy} onClick={shareFiles}>기기에 저장·공유</button>
       )}
+      <p className="rc-share-note">다운로드가 되지 않으면 이미지를 열어 길게 눌러 저장하세요. 이미지 열기는 현재 숨기기·크기 설정을 반영해요.</p>
+      <div className="rc-open">
+        <button type="button" disabled={busy} onClick={() => openImage('cover')}>1장 표지 열기</button>
+        <button type="button" disabled={busy} onClick={() => openImage('analysis')}>2장 분석 열기</button>
+      </div>
     </section>
   );
 }

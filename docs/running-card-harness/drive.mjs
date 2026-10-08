@@ -95,17 +95,26 @@ const name = await ev(`(() => { const h = document.querySelector('.rc-share') &&
 log('결과:', name);
 
 async function grab(tag) {
-  const links = await ev(`[...document.querySelectorAll('.rc-open a')].map(a => a.href)`);
-  for (const [i, href] of links.entries()) {
+  // Intercept only the new-tab destination; render the current settings through the real button.
+  await ev(`window.__qaOpenOriginal = window.open; window.__qaImageUrls = []; window.open = () => ({opener: null, document: {body: {}}, location: {set href(url) {window.__qaImageUrls.push(url)}}, close() {}})`);
+  for (const [i, selector] of ['.rc-open button:first-child', '.rc-open button:last-child'].entries()) {
+    await click(selector);
+    for (let wait = 0; wait < 120; wait++) {
+      await sleep(250);
+      if (await ev(`window.__qaImageUrls.length > ${i}`)) break;
+    }
+    const href = await ev(`window.__qaImageUrls[${i}]`);
+    if (!href) throw new Error('current-settings image did not open');
     const b64 = await ev(`fetch(${JSON.stringify(href)}).then(r => r.blob()).then(b => new Promise(res => { const f = new FileReader(); f.onload = () => res(f.result.split(',')[1]); f.readAsDataURL(b); }))`);
     const file = path.join(OUT, `${LABEL}-${tag}-${i + 1}.png`);
     fs.writeFileSync(file, Buffer.from(b64, 'base64'));
     log('저장', path.basename(file), fs.statSync(file).size);
   }
+  await ev('window.open = window.__qaOpenOriginal');
 }
 async function saveTwo(tag) {
   await click('.rc-actions .rc-primary');
-  for (let i = 0; i < 80; i++) { await sleep(500); if (await ev(`(() => { const s = document.querySelector('.rc-status')?.textContent || ''; return /저장을 시작|새 탭/.test(s) || /만들지 못/.test(s); })()`)) break; }
+  for (let i = 0; i < 80; i++) { await sleep(500); if (await ev(`(() => { const s = document.querySelector('.rc-status')?.textContent || ''; return /저장을 시작|만들었어요|새 탭/.test(s) || /만들지 못/.test(s); })()`)) break; }
   log(tag, await ev(`document.querySelector('.rc-status')?.textContent`));
   await grab(tag);
 }
@@ -117,13 +126,35 @@ for (const kind of ['feed', 'story']) {
   await click('.rc-toggle');
   log('toggle', await pressed());
   await saveTwo(`${kind}-hidden`);
+  await click('.rc-toggle');
+  await grab(`${kind}-shown-without-saving`);
+  await click('.rc-toggle');
+  await grab(`${kind}-hidden-without-saving`);
 }
 // The share section as it reads on the phone.
 await ev(`document.querySelector('.rc-share').scrollIntoView({ block: 'start' })`);
 await sleep(600);
+// The same settings must redraw identical PNG bytes even without pressing Save again.
+for (const kind of ['feed', 'story']) {
+  for (const mode of ['shown', 'hidden']) {
+    for (const page of [1, 2]) {
+      const saved = fs.readFileSync(path.join(OUT, `${LABEL}-${kind}-${mode}-${page}.png`));
+      const reopened = fs.readFileSync(path.join(OUT, `${LABEL}-${kind}-${mode}-without-saving-${page}.png`));
+      if (!saved.equals(reopened)) throw new Error(`${kind} ${mode} reopened stale image ${page}`);
+    }
+  }
+}
+// Android-capable browsers receive actual PNG File objects through Web Share.
+await ev(`(() => {navigator.canShare=({files})=>files?.every(f=>f.type==='image/png');navigator.share=async payload=>{window.__qaSharedFiles=payload.files.map(f=>({name:f.name,size:f.size,type:f.type}))}})()`);
+await click('.rc-actions .rc-primary');
+for(let i=0;i<80;i++){await sleep(500);if(await ev(`!!document.querySelector('.rc-share > button.rc-primary')`))break;}
+await click('.rc-share > button.rc-primary');
+const sharedFiles=await ev('window.__qaSharedFiles');
+if(sharedFiles?.length!==2||sharedFiles.some(f=>f.size<1000||f.type!=='image/png'))throw new Error('native image share did not receive PNG files');
+log('native share files',sharedFiles);
 const shot = await send('Page.captureScreenshot', { format: 'png' });
 fs.writeFileSync(path.join(OUT, `${LABEL}-share-section.png`), Buffer.from(shot.result.data, 'base64'));
 log('errors', errors.length ? errors : '없음');
 clearTimeout(watchdog);
 kill();
-process.exit(0);
+process.exit(errors.length ? 1 : 0);
