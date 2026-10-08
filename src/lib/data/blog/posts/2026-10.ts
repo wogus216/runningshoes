@@ -43,7 +43,7 @@ export const posts_2026_10: BlogPost[] = [
 
 <h2>러닝 양말 22종 혼용률 지도 — 4갈래</h2>
 <p>판매처가 표기한 혼용률을 그대로 옮겨 갈래별로 나눴습니다(숫자는 %, 원문으로 검산할 수 있습니다). 가격은 1켤레 기준 정가이고 묶음은 켤레 수로 나눴습니다. <strong>신축</strong>은 폴리우레탄·스판덱스·엘라스테인·라이크라(같은 계열의 다른 이름), <strong>PP</strong>는 폴리프로필렌입니다.</p>
-<p>구매 버튼은 네이버 쇼핑 커넥트에 같은 모델이 있는 5종에만 달았습니다. 나머지 17종은 커넥트에 같은 모델이 없어 링크가 없을 뿐, <strong>링크가 있는 제품이 더 좋은 제품이라는 뜻은 아닙니다.</strong></p>
+<p>구매 버튼은 네이버 쇼핑 커넥트나 쿠팡에서 같은 모델을 확인한 12종에만 달았습니다(브랜드 제품은 판매가가 공식 정가의 50~115%인 것만). 나머지 10종은 두 곳에서 같은 모델을 확인하지 못해 링크가 없을 뿐, <strong>링크가 있는 제품이 더 좋은 제품이라는 뜻은 아닙니다.</strong></p>
 
 <h3>① 나일론 위주 (8종) — 나일론 50~94%, 면·울 0%</h3>
 <p>가장 많은 갈래이고 가격 폭도 가장 넓습니다. 갈래 안에서 갈리는 건 <strong>신축 섬유 비율</strong>입니다.</p>
@@ -71,8 +71,16 @@ export const posts_2026_10: BlogPost[] = [
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">삭스업 어텐션 드라이 PRO →</span>
     </a>
+    <a href="https://link.coupang.com/a/hG9MclhCMK" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">나이키 런 라이트웨이트 크루 →</span>
+    </a>
+    <a href="https://link.coupang.com/a/hG9MKQfldI" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">아식스 퍼포먼스 런 삭스 크루 →</span>
+    </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다. 판매처는 삭스업 공식 스토어이고 가격은 바뀔 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 네이버 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다(판매처 삭스업 공식 스토어). 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격은 바뀔 수 있습니다.</p>
 </div>
 
 <h3>② 폴리에스터 위주 (5종) — 폴리에스터 70~96%, 면·울 0%</h3>
@@ -117,6 +125,28 @@ export const posts_2026_10: BlogPost[] = [
   </tbody>
 </table>
 <p class="caption">*쿠팡 상품은 표시 할인 전 가격 대신 2026년 10월 8일 판매가를 켤레 수로 나눴습니다.</p>
+<div class="affiliate-cta">
+  <p class="affiliate-cta-label">바로 구매 — ③ 갈래</p>
+  <div class="affiliate-cta-buttons">
+    <a href="https://link.coupang.com/a/hG9NWlvexw" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">타비오 레이싱 런 프로 (발가락) →</span>
+    </a>
+    <a href="https://link.coupang.com/a/hG9NkqlL88" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">타비오 레이싱 런 (발가락) →</span>
+    </a>
+    <a href="https://link.coupang.com/a/hG9OvABlQa" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">탑브로 러닝 중목 쿠션 6켤레 →</span>
+    </a>
+    <a href="https://link.coupang.com/a/hG9O7iQD2O" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">라이프모아 삼중 쿠션 장목 7켤레 →</span>
+    </a>
+  </div>
+  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 쿠팡 판매가는 바뀔 수 있습니다.</p>
+</div>
 
 <h3>④ 메리노 (2종) — 울 50~56%</h3>
 <p>나머지는 대부분 나일론이고, 정가 38,000~53,000원으로 22종 중 가장 비쌉니다. 울은 땀을 섬유 안에 흡수하는 쪽이라 ①·② 합성섬유 양말과 성향이 정반대입니다. 울이 젖었을 때 열을 내는 성질(흡습발열)과, 관련 연구 상당수가 울 업계 지원을 받았다는 사실은 <a href="/fabrics/merino-wool">메리노 울 원단 해설</a>에 정리했습니다.</p>
@@ -134,8 +164,12 @@ export const posts_2026_10: BlogPost[] = [
       <span class="affiliate-btn-store">네이버</span>
       <span class="affiliate-btn-product">스마트울 애슬리트 에디션 런 크루 →</span>
     </a>
+    <a href="https://link.coupang.com/a/hG9KcuUKwm" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
+      <span class="affiliate-btn-store">쿠팡</span>
+      <span class="affiliate-btn-product">단터프 런 쿼터 →</span>
+    </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다. 판매처는 아웃도어 판매점 고캠프이고 가격은 바뀔 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 네이버 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다(판매처 아웃도어 판매점 고캠프). 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격은 바뀔 수 있습니다.</p>
 </div>
 
 <h2>"면 금지"는 반만 맞다</h2>
