@@ -79,7 +79,8 @@ export const MARKUP = `
     <div class="complete-head">
       <h1 id="complete-title" tabindex="-1">지난 28일의 메달</h1>
       <fieldset class="finish"><legend class="sr-only">메달 마감</legend>
-        <label><input type="radio" name="finish" value="silver" checked><span>은</span></label>
+        <label><input type="radio" name="finish" value="gold" checked><span>금</span></label>
+        <label><input type="radio" name="finish" value="silver"><span>은</span></label>
         <label><input type="radio" name="finish" value="brass"><span>황동</span></label>
       </fieldset>
     </div>

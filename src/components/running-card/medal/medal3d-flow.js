@@ -836,10 +836,11 @@ function evict() {
 
 // ==== 3D ==============================================================================================================
 const FINISHES = {
+  gold: { name: '새틴 골드', metal: '#f3c66d', oxide: '#241707', env: .85 },
   silver: { name: '산화 은', metal: '#eeede9', oxide: '#1e1c1a', env: .75 },
   brass: { name: '앤티크 황동', metal: '#f0d9a8', oxide: '#17110b', env: .8 },
 };
-let finishKey = 'silver';
+let finishKey = 'gold';
 // Hover: how far the open coin floats over its socket. ENTER: where a coin comes in from (and leaves to). PREVIEW: the
 // relief strength while the value is open. RELIEF: real height per unit of H in coin units — the same .10 the normal map
 // assumes (medal3d-relief.js coin(): depth), so the mesh and the shading agree. Letters and lines stand about .046 above

@@ -8,7 +8,6 @@ import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, LEAD_NOTE, LEAD_TAG, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
-import { RunnerPortrait } from './running-card-portrait';
 import { RunnerScores } from './running-card-scores';
 
 export type ShareKind = 'story' | 'feed';
@@ -26,7 +25,7 @@ export type ShareCard = {
   next: string;
   leadTag: string;
   recoveryNote: string;
-  // 인물 그림(presentation.image). 있으면 1장째가 그림을 배경으로 깐다(S5-D). 표식으로 뺀 14명은 없다.
+  // 그림은 선택 사항이다. 현재 결과·공유 표지는 메달을 중심으로 그린다.
   image?: string;
   imageFocus?: number;
 };
@@ -58,12 +57,10 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
     next: explanation.nextAction.text,
     leadTag: LEAD_TAG,
     recoveryNote: RECOVERY_MARGIN_NOTE,
-    image: presentation.image,
-    imageFocus: presentation.imageFocus,
   };
 }
 
-// 결과 카드(S4, 설계 §3-2). 표지(인물 이미지 S5-C·가문·인물·칭호·대표 수치·신탁) → 분석 내지(세 점수·근거 2·강점·맹점·다음 14일)
+// 결과 카드(S4, 설계 §3-2). 위의 3D 메달에서 이어지는 기록 요약(가문·인물·칭호·대표 수치·신탁) → 분석(세 점수·근거 2·강점·맹점·다음 14일)
 // → 회복 여유 정의 → 광고 1 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
 export function RunningCardResult({ judged, shareImage, onRestart }: { judged: JudgedRunner; shareImage: ShareImage; onRestart: () => void }) {
   const { analysis, snapshot } = judged;
@@ -74,8 +71,7 @@ export function RunningCardResult({ judged, shareImage, onRestart }: { judged: J
 
   return (
     <section className="rc-result" id="rc-result" aria-labelledby="rc-result-name">
-      {/* 메달 아래라 첫 화면 밖이다 — 지연 로드(next/image 기본). 결과가 나온 인물 한 장만 받는다. */}
-      <RunnerPortrait id={character.id} name={character.name} />
+      <div className="rc-result-mast"><span>RUNNING CARD / 28D</span><span>나의 메달 분석</span></div>
       <p className="rc-house">{character.house} 가문</p>
       <h2 className="rc-name" id="rc-result-name" tabIndex={-1}>{character.name}</h2>
       <p className="rc-epithet">{card.title}</p>

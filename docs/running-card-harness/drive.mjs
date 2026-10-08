@@ -147,7 +147,8 @@ for (const kind of ['feed', 'story']) {
 // Android-capable browsers receive actual PNG File objects through Web Share.
 await ev(`(() => {navigator.canShare=({files})=>files?.every(f=>f.type==='image/png');navigator.share=async payload=>{window.__qaSharedFiles=payload.files.map(f=>({name:f.name,size:f.size,type:f.type}))}})()`);
 await click('.rc-actions .rc-primary');
-for(let i=0;i<80;i++){await sleep(500);if(await ev(`!!document.querySelector('.rc-share > button.rc-primary')`))break;}
+for(let i=0;i<80;i++){await sleep(500);if(await ev(`!!document.querySelector('.rc-share > button.rc-primary:not(:disabled)')`))break;}
+if(!(await ev(`!!document.querySelector('.rc-share > button.rc-primary:not(:disabled)')`)))throw new Error('native image share button did not become ready');
 await click('.rc-share > button.rc-primary');
 const sharedFiles=await ev('window.__qaSharedFiles');
 if(sharedFiles?.length!==2||sharedFiles.some(f=>f.size<1000||f.type!=='image/png'))throw new Error('native image share did not receive PNG files');

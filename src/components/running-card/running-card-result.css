@@ -1,12 +1,14 @@
 /* Result card (S4) under the finished medal, and the shared-link view. Same ink page, paper text, orange accent and
    Pretendard as the medal (.rcm tokens in medal/medal3d-flow.css); numbers in StudyCondensed as on the coins.
    No shine, no rays (3D-2). Everything is under .rcm, so nothing leaks to other pages. */
-.rcm .rc-result{position:relative;width:100%;max-width:480px;margin:0 auto;padding:44px 24px calc(56px + env(safe-area-inset-bottom));border-top:1px solid var(--line-25);background:var(--ink)}
+.rcm .rc-result{position:relative;width:100%;max-width:480px;margin:0 auto;padding:26px 24px calc(56px + env(safe-area-inset-bottom));border-top:1px solid #9b723b;background:radial-gradient(ellipse 105% 300px at 50% -90px,rgba(190,139,58,.2),transparent 75%),var(--ink)}
 /* Margins and list styles start from the site's reset (Tailwind preflight): 0 and none. Headings take the page colour
    (globals.css gives h1–h6 var(--primary), dark on this ink page). */
 .rcm .rc-result{color:var(--paper)}
 .rcm .rc-result h2,.rcm .rc-result h3{color:inherit}
 .rcm .rc-result h2:focus{outline:none}
+.rcm .rc-result-mast{display:flex;align-items:center;justify-content:space-between;gap:8px;padding-bottom:15px;border-bottom:1px solid rgba(242,196,113,.42);font:700 12px/1.3 StudyCondensed,sans-serif;letter-spacing:.12em;color:#e6bc78}
+.rcm .rc-result-mast span:last-child{font:500 12px/1.3 'Pretendard Variable',Pretendard,sans-serif;letter-spacing:0;color:var(--dim-70)}
 
 /* Character portrait (S5-C proposal). The frame takes its size from aspect-ratio and max-height before the image
    arrives, so nothing below it moves (CLS 0). The cap keeps the name on screen after '분석 펼쳐보기' scrolls here
@@ -15,16 +17,19 @@
 .rcm .rc-portrait img{object-fit:cover;object-position:50% 22%}
 .rcm .rc-portrait figcaption{position:absolute;right:10px;bottom:10px;padding:3px 8px;border-radius:10px;background:rgba(23,21,15,.62);font-size:12px;line-height:1.4;color:var(--dim-70)}
 
+.rcm .rc-result:not(.rc-shared) .rc-house{margin-top:43px;color:#e6bc78}
 .rcm .rc-house{font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
-.rcm .rc-name{margin-top:8px;font-size:40px;font-weight:480;line-height:1.1;letter-spacing:-.045em}
+.rcm .rc-name{margin-top:8px;font-size:40px;font-weight:600;line-height:1.1;letter-spacing:-.045em}
 .rcm .rc-epithet{margin-top:8px;font-size:17px;font-weight:500;line-height:1.45;letter-spacing:-.02em;word-break:keep-all}
 
+.rcm .rc-result:not(.rc-shared) .rc-lead{padding:20px 18px 22px;border:1px solid rgba(242,196,113,.45);border-radius:4px;background:linear-gradient(135deg,rgba(197,143,60,.14),rgba(197,143,60,.02) 72%)}
 .rcm .rc-lead{display:flex;align-items:flex-end;gap:14px;margin-top:26px;padding-top:14px;border-top:1px solid var(--line-25)}
+.rcm .rc-result:not(.rc-shared) .rc-lead strong{color:#f4cc84}
 .rcm .rc-lead strong{font:700 64px/.9 StudyCondensed,sans-serif;letter-spacing:-.02em;color:var(--accent)}
 .rcm .rc-lead span{display:block;font-size:16px;font-weight:550}
 .rcm .rc-lead small{display:block;margin-top:3px;font-size:13px;color:var(--dim-60)}
 
-.rcm .rc-oracle{margin-top:24px;padding-left:14px;border-left:2px solid var(--accent);font-size:20px;font-weight:450;line-height:1.5;letter-spacing:-.02em;word-break:keep-all}
+.rcm .rc-oracle{margin-top:24px;padding-left:14px;border-left:2px solid #d6a75d;font-size:20px;font-weight:450;line-height:1.5;letter-spacing:-.02em;word-break:keep-all}
 
 .rcm .rc-section{margin-top:44px}
 .rcm .rc-section>h3{font-size:14px;font-weight:600;color:var(--dim-60);letter-spacing:-.01em}
@@ -79,6 +84,8 @@
 .rcm .rc-share-note{margin-top:12px;font-size:13px;line-height:1.55;color:var(--dim-60);word-break:keep-all}
 .rcm .rc-status{margin-top:10px;font-size:14px;line-height:1.5;color:var(--paper);word-break:keep-all}
 .rcm .rc-status:empty{display:none}
+.rcm .rc-share>.rc-primary{display:flex;align-items:center;justify-content:center;width:100%;min-height:52px;margin-top:12px;border:1px solid var(--paper);border-radius:28px;background:var(--paper);color:var(--ink);font-size:16px;font-weight:600}
+.rcm .rc-share>.rc-primary:disabled{opacity:.55}
 .rcm .rc-open{display:flex;gap:8px;margin-top:8px}
 .rcm .rc-open button{background:none;cursor:pointer;flex:1;display:flex;align-items:center;justify-content:center;min-height:44px;border-radius:22px;border:1px solid var(--line-25);font-size:14px;color:var(--accent)}
 
