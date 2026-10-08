@@ -13,7 +13,7 @@
    (375×667: 56svh = 373px). Faces sit in the upper third of the 9:16 originals, hence the 22% focus. */
 .rcm .rc-portrait{position:relative;width:100%;aspect-ratio:4/5;max-height:56svh;margin:0 0 22px;overflow:hidden;border-radius:16px;background:var(--ink-2)}
 .rcm .rc-portrait img{object-fit:cover;object-position:50% 22%}
-.rcm .rc-portrait figcaption{position:absolute;right:10px;bottom:10px;padding:3px 8px;border-radius:10px;background:rgba(23,21,15,.62);font-size:11px;line-height:1.4;color:var(--dim-70)}
+.rcm .rc-portrait figcaption{position:absolute;right:10px;bottom:10px;padding:3px 8px;border-radius:10px;background:rgba(23,21,15,.62);font-size:12px;line-height:1.4;color:var(--dim-70)}
 
 .rcm .rc-house{font-size:13px;font-weight:600;letter-spacing:.12em;color:var(--accent)}
 .rcm .rc-name{margin-top:8px;font-size:40px;font-weight:480;line-height:1.1;letter-spacing:-.045em}
@@ -75,6 +75,7 @@
 .rcm .rc-actions button:disabled{opacity:.55}
 .rcm .rc-row{display:flex;gap:8px}
 .rcm .rc-row>*{flex:1;min-width:0}
+.rcm .rc-toggle-note{margin:2px 4px 0;font-size:13px;line-height:1.55;color:var(--dim-60);word-break:keep-all}
 .rcm .rc-share-note{margin-top:12px;font-size:13px;line-height:1.55;color:var(--dim-60);word-break:keep-all}
 .rcm .rc-status{margin-top:10px;font-size:14px;line-height:1.5;color:var(--paper);word-break:keep-all}
 .rcm .rc-status:empty{display:none}
