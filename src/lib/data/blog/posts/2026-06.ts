@@ -10208,7 +10208,7 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'joyce-hubner-367-consecutive-marathons-world-record',
     slug: 'joyce-hubner-367-consecutive-marathons-world-record',
-    title: '매일 풀코스 367일, 그리고 멈추지 않는다 | 독일 러너 조이스 휘브너의 세계기록 — "495일·21,000km" 도전의 진실과 매일 마라톤의 과학',
+    title: '매일 풀코스 459일, 부상 뒤에도 끝나지 않은 도전 | 독일 러너 조이스 휘브너의 세계기록 — "495개·21,000km" 도전의 현재와 매일 마라톤의 과학',
     description: '독일의 38세 러너 조이스 휘브너가 367일 연속 마라톤 풀코스 완주로 여성 세계기록을 경신했습니다. 기존 기록(벨기에 힐데 도소뉴 366일)을 넘긴 뒤 459일 연속까지 이어 갔다가 부상으로 멈췄고, 남은 36개 마라톤을 마저 달려 495개·독일 2,059개 도시를 채우겠다고 밝혔습니다. 그녀가 누구인지, 어떻게 매일 버티는지, 그리고 "매일 마라톤"이 몸에 무슨 일을 일으키는지(왜 일반 러너는 따라 하면 안 되는지)를 과학적으로 풀어봅니다.',
     thumbnail: '/images/blog/joyce-hubner-367-consecutive-marathons-world-record.webp',
     author: '산초 에디터',

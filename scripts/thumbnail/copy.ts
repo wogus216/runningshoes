@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 조이스 휘브너 본인 인스타그램 @runninggirl.joyce 2026-10-06 게시물(10/9 확인) — 459일·19,819km·
+  // 238,159Hm·남은 36개, 10/7 게시물 Knochenhautentzündung. 본문 표(posts/2026-06.ts)와 같은 값.
+  'joyce-hubner-367-consecutive-marathons-world-record': {
+    title: '매일 풀코스 459일, 끝나지 않은 도전',
+    subtitle: '조이스 휘브너 · 367일째 여성 세계기록, 459일째 골막염으로 중단 · 남은 36개는 재개 날짜 미정',
+    data: '459일 연속 · 19,819km · 누적 상승 238,159m (본인 집계)',
+  },
   // 출처: 소비자원 카본 러닝화 7종 공식 보도자료·종합표(2026-10-07 확인).
   'kca-carbon-running-shoes-test-2026': {
     title: '카본화 7종, 항목마다 다르다',
