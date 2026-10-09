@@ -966,7 +966,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '대전 엑스포시민광장 (대전 서구 둔산대로 169)',
     region: '대전',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://bbangrun.com/',
     registrationStart: '2026-06-30',
