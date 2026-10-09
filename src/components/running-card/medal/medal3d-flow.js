@@ -31,7 +31,8 @@ import { MARKUP } from './medal3d-flow-markup.js';
 // the finished medal is left; onOpenResult() from '분석 펼쳐보기'. Returns { destroy, shareImage } (the result card's
 // share buttons call shareImage).
 // S5: onStep(n) when step n (1 … 7) is accepted and its coin struck — the measurement events live in React.
-export function mountMedalFlow(container, { judge, onReveal, onOpenResult, onStep }) {
+// S6: figures ({ id, house, name } of every figure) — the names the reveal shuffles through before the plate is struck.
+export function mountMedalFlow(container, { judge, onReveal, onOpenResult, onStep, figures = [] }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
 
@@ -56,6 +57,9 @@ let values = sample(), stage = 0, furthest = 0, touched = false, complete = fals
 let origins = sampleOrigins();
 let width = 390, height = 844;
 let keyboard = false;
+// S6 reveal (see 'reveal' below): declared up here because changeStage() and destroy() stop it.
+const reveal = { on: false, played: false, t0: 0, timers: [], raf: 0, last: 0, shuffleRaf: 0, landed: false, sparks: [], names: [], shown: -1, nextSwap: 0, ctx: null, scale: 1 };
+const view = { zoom: 1 };
 const mediaReduce = matchMedia('(prefers-reduced-motion: reduce)');
 const reduced = () => mediaReduce.matches;
 const clamp = (n, low, high) => Math.max(low, Math.min(high, n));
@@ -265,7 +269,7 @@ function changeStage(next, instant = false) {
   const left = complete ? -1 : stage;
   // Leaving the finished medal closes the result card: it belongs to the record as it was judged.
   if (left === -1) onReveal(null);
-  stopMotion(); stage = next; complete = false; touched = false; hideConfirm(); settlePlate();
+  stopMotion(); stopReveal(); stage = next; complete = false; touched = false; hideConfirm(); settlePlate();
   $('.chapters').classList.remove('is-done');
   root.dataset.scene = scenes[stage];
   $('.complete').hidden = true;
@@ -366,9 +370,12 @@ function finish(instant) {
   commit(left);
   const quick = instant || stillMedal();
   const wideIn = go({ instant: quick, afterStrike: !quick && lastStrikeAt > performance.now() - 120 });
-  engrave(quick, wideIn);
+  // S6: the first completion of a mount is staged — the plate waits for the reveal, which brings the panel in itself.
+  const staged = !quick && !reveal.played;
+  if (staged) playReveal(wideIn);
+  engrave(quick, staged ? REVEAL.strike : wideIn);
   syncNav();
-  if (!quick) {
+  if (!quick && !staged) {
     const panel = $('.complete'); panel.getAnimations().forEach(a => a.cancel());
     panel.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 420, delay: 560, fill: 'backwards', easing: 'ease-out' });
   }
@@ -662,7 +669,7 @@ function describe() {
 const WAIT = '28일의 기록을 신화로 번역하고 있어요';
 // figure: the one struck on the plate ({ id, name, house, title }) · pending: the id whose map is on its way · s: strike
 // strength (uPlate) · h: only a tween's clock, the wait until the whole medal is in view · ready: the map's promise.
-const plate ={ sig: 'plate', figure: null, s: 1, h: 0, pending: null, ready: null };
+const plate ={ sig: 'plate', figure: null, s: 1, h: 0, pending: null, ready: null, at: 0, waiting: null };
 const uPlate = { value: 1 };
 const plateSig = f => `plate:${f.id}`;
 function engrave(quick, wideIn) {
@@ -670,15 +677,23 @@ function engrave(quick, wideIn) {
   if (plate.figure && plate.figure.id === f.id) { plate.pending = null; plate.ready = null; titled(f, false); return; }
   untitled();
   plate.pending = f.id;
-  const at = performance.now() + (wideIn ?? 0);
-  plate.ready = want(plateSig(f), { type: 'plate', figure: { name: f.name, house: f.house } }, 0).then(() => { if (!destroyed && plate.pending === f.id) strikePlate(f, quick, at); });
+  // plate.at, not a closure: 건너뛰기 brings the strike forward while the plate's map is still being built.
+  plate.at = performance.now() + (wideIn ?? 0);
+  plate.ready = want(plateSig(f), { type: 'plate', figure: { name: f.name, house: f.house } }, 0).then(() => { if (!destroyed && plate.pending === f.id) strikePlate(f, quick); });
 }
-function strikePlate(f, quick, at) {
+function strikePlate(f, quick) {
+  const at = plate.at;
+  // Without WebGL there is no tween to wait on: the flat plate is struck when the reveal says so.
+  if (reveal.on && !renderer && complete && at > performance.now() + 16) {
+    plate.waiting = () => { plate.waiting = null; if (!destroyed && plate.pending === f.id) strikePlate(f, quick); };
+    later(plate.waiting, at - performance.now()); return;
+  }
   plate.pending = null;
-  if (quick || !renderer || !complete) { showPlate(f); plate.s = 1; dirty(); titled(f, true); return; }
+  if (quick || !renderer || !complete) { showPlate(f); plate.s = 1; dirty(); if (reveal.on) revealImpact(f); titled(f, true); return; }
   stopTween(plate, 's');
   tween(plate, 'h', 1, Math.max(1, at - performance.now()), t => t, 0, () => {
     showPlate(f); plate.s = PREVIEW; dirty();
+    if (reveal.on) later(() => revealImpact(f), DROP);
     tween(plate, 's', 1, 260, easeOut, DROP, () => titled(f, true));
     recoil.v = 0; tween(recoil, 'v', 1, 280, t => t, DROP, () => { recoil.v = 0; });
   });
@@ -712,7 +727,198 @@ function titled(f, struck) {
   $('#medal-status').textContent = Relief.plateStatus(f);
   $('#complete-figure').setAttribute('aria-label', describe()); $('#gl').setAttribute('aria-label', describe());
   if (complete) [title, line].forEach(el => animate(el, [{ opacity: .2, transform: 'translateY(5px)' }, { opacity: 1, transform: 'translateY(0)' }], 320));
+  if (complete && reveal.on) endReveal();
 }
+
+// ==== reveal: the judgement before the figure (S6, 운영자 요청 2026-10-10) ===========================================
+// The first completion of a mount takes about ten seconds instead of one: the medal sways under the light while the seven
+// coins are struck again one by one under their records, the figures shuffle, the plate is struck with a flash and
+// sparks, and only then do the title, the panel and the result card (its ad slot untouched) come in. Once per mount;
+// never with reduced motion or a slow renderer (finish() passes quick); 건너뛰기 ends it at once. The plate is struck at
+// REVEAL.strike or when its map is ready, whichever is later, and everything after the strike waits for the strike.
+const REVEAL = { first: 1150, step: 640, shuffle: 5900, strike: 8800, hold: 560 };
+function later(fn, ms) { reveal.timers.push(setTimeout(() => { if (!destroyed && reveal.on) fn(); }, ms)); }
+function revealRecords() {
+  const days = dayList();
+  return [
+    ['총거리', value('distance'), 'km'], ['러닝 횟수', value('count'), '회'], ['평균 페이스', paceLabel(), '/km'], ['최장거리', value('longest'), 'km'],
+    ['강한 훈련', hardText(), ''], ['목표', goals[values.goal]?.[0] ?? '', ''], ['평소 요일', days || '고르지 않음', ''],
+  ];
+}
+function playReveal(wideIn) {
+  const box = $('#reveal'), bar = $('#reveal-bar');
+  Object.assign(reveal, { on: true, played: true, t0: performance.now(), landed: false, shown: -1 });
+  root.classList.add('revealing');
+  box.hidden = false; box.classList.remove('is-out', 'is-shuffle', 'is-landed');
+  $('#reveal-kicker').textContent = 'JUDGEMENT / 28D';
+  $('#reveal-step').textContent = '기록을 메달에 새기는 중'; $('#reveal-of').textContent = '00 / 07';
+  $('#reveal-label').textContent = '지난 28일, 일곱 개의 기록'; $('#reveal-value').textContent = '';
+  $('#reveal-record').hidden = false; $('#reveal-figure').hidden = true;
+  bar.getAnimations().forEach(a => a.cancel());
+  bar.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }], { duration: REVEAL.strike + DROP, easing: 'linear', fill: 'forwards' });
+  $('#medal-status').textContent = '일곱 개의 기록으로 어울리는 인물을 찾고 있어요';
+  sizeSparks();
+  // The camera backs off a little as it arrives and comes in slowly until the strike.
+  const first = Math.max(REVEAL.first, (wideIn ?? 0) + 120);
+  view.zoom = 1; tween(view, 'zoom', 1.07, first, easeOut, 0, () => tween(view, 'zoom', .99, REVEAL.strike - first, easeInOut));
+  const records = revealRecords();
+  records.forEach((rec, k) => later(() => revealCoin(k, rec), first + k * REVEAL.step));
+  later(revealShuffle, REVEAL.shuffle);
+  loop();
+}
+function revealCoin(k, [label, n, unit]) {
+  $('#reveal-of').textContent = `0${k + 1} / 07`;
+  $('#reveal-label').textContent = `0${k + 1} ${label}`;
+  const out = $('#reveal-value');
+  if (typeof n === 'number') {
+    const t0 = performance.now(), count = now => {
+      if (!reveal.on || out.dataset.k !== String(k)) return;
+      const e = easeOut(clamp((now - t0) / 460, 0, 1));
+      out.textContent = format(Number.isInteger(n) ? Math.round(n * e) : Math.round(n * e * 10) / 10);
+      out.append(Object.assign(document.createElement('small'), { textContent: unit }));
+      if (e < 1) requestAnimationFrame(count);
+    };
+    out.dataset.k = String(k); requestAnimationFrame(count);
+  } else {
+    out.dataset.k = String(k); out.textContent = n;
+    if (unit) out.append(Object.assign(document.createElement('small'), { textContent: unit }));
+  }
+  $('#reveal-record').animate([{ opacity: 0, transform: 'translateY(10px)', filter: 'blur(4px)' }, { opacity: 1, transform: 'none', filter: 'blur(0)' }], { duration: 300, easing: 'cubic-bezier(.16,1,.3,1)' });
+  // The coin is lifted and struck again (a coin still being re-struck with a changed face is left to that).
+  const slot = slots[k], hit = () => { const p = coinScreen(k); burstAt(p, 18, .7); ripple(p, p.r * 2.4); };
+  if (!renderer || !slot || !slot.present || slot.striking) { hit(); return; }
+  stopTween(slot, 'z'); stopTween(slot, 's'); slot.striking = true;
+  tween(slot, 'z', .24, 170, easeOut, 0, () => {
+    slot.s = .5;
+    tween(slot, 'z', 0, 140, easeIn, 0, () => {
+      hit();
+      recoil.v = 0; tween(recoil, 'v', 1, 220, t => t, 0, () => { recoil.v = 0; });
+      tween(slot, 's', 1, 300, easeOut, 0, () => { slot.striking = false; });
+    });
+  });
+}
+function revealShuffle() {
+  $('#reveal').classList.add('is-shuffle');
+  $('#reveal-kicker').textContent = 'MATCHING / 22 FIGURES';
+  $('#reveal-step').textContent = '어울리는 인물을 찾는 중';
+  $('#reveal-record').hidden = true; $('#reveal-figure').hidden = false;
+  const own = analysis?.match.character.id;
+  reveal.names = figures.filter(f => f.id !== own);
+  if (!reveal.names.length) reveal.names = [{ house: '', name: '…' }];
+  reveal.nextSwap = 0; reveal.shuffleRaf = requestAnimationFrame(shuffleFrame);
+}
+// Fast at first, slowing toward the strike like a wheel coming to rest; the right name only lands with the plate.
+function shuffleFrame(now) {
+  reveal.shuffleRaf = 0;
+  if (!reveal.on || reveal.landed || destroyed) return;
+  if (now >= reveal.nextSwap) {
+    let i = Math.floor(Math.random() * reveal.names.length);
+    if (reveal.names.length > 1 && i === reveal.shown) i = (i + 1) % reveal.names.length;
+    reveal.shown = i;
+    const f = reveal.names[i];
+    $('#reveal-house').textContent = f.house ? `${f.house} 가문` : ''; $('#reveal-name').textContent = f.name;
+    const t = clamp((now - reveal.t0 - REVEAL.shuffle) / (REVEAL.strike - REVEAL.shuffle), 0, 1);
+    reveal.nextSwap = now + 55 + 300 * t * t;
+  }
+  reveal.shuffleRaf = requestAnimationFrame(shuffleFrame);
+}
+// The eighth strike lands: the figure's own name, a flash and sparks from the plate, a ring, the medal giving under it.
+function revealImpact(f) {
+  if (!reveal.on || reveal.landed) return;
+  reveal.landed = true; cancelAnimationFrame(reveal.shuffleRaf);
+  const box = $('#reveal');
+  box.classList.remove('is-shuffle'); box.classList.add('is-landed');
+  $('#reveal-record').hidden = true; $('#reveal-figure').hidden = false;
+  $('#reveal-kicker').textContent = 'STRUCK / 08';
+  $('#reveal-step').textContent = '여덟 번째 각인'; $('#reveal-of').textContent = '08 / 08';
+  $('#reveal-house').textContent = `${f.house} 가문`; $('#reveal-name').textContent = f.name;
+  $('#reveal-figure').animate([{ transform: 'scale(1.16)', opacity: .3, filter: 'blur(6px)' }, { transform: 'none', opacity: 1, filter: 'blur(0)' }], { duration: 560, easing: 'cubic-bezier(.16,1,.3,1)' });
+  const p = plateScreen(), flash = $('#reveal-flash');
+  burstAt(p, 96, 1.25); ripple(p, 240, 'is-big'); later(() => ripple(p, 150), 90);
+  flash.style.setProperty('--x', `${p.x}px`); flash.style.setProperty('--y', `${p.y}px`);
+  flash.animate([{ opacity: 0 }, { opacity: .95, offset: .1 }, { opacity: 0 }], { duration: 760, easing: 'ease-out' });
+  root.animate([{ transform: 'none' }, { transform: 'translate(-3px,2px)' }, { transform: 'translate(3px,-2px)' }, { transform: 'translate(-1px,1px)' }, { transform: 'none' }], { duration: 280, easing: 'ease-out' });
+  tween(view, 'zoom', 1.035, 110, easeOut, 0, () => tween(view, 'zoom', 1, 640, easeOut));
+}
+// After the strike the name holds a moment, then the overlay gives way to the panel and '분석 펼쳐보기' calls.
+function endReveal() {
+  later(() => {
+    $('#reveal').classList.add('is-out');
+    root.classList.remove('revealing');
+    // The overlay's words go first (.2s), so its name and the panel's title never stand on each other.
+    const panel = $('.complete'); panel.getAnimations().forEach(a => a.cancel());
+    panel.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 560, delay: 200, fill: 'backwards', easing: 'cubic-bezier(.16,1,.3,1)' });
+    $('#open-result').classList.add('is-calling');
+    later(() => stopReveal(), 600);
+  }, REVEAL.hold);
+}
+// Ends the reveal where it stands (건너뛰기, leaving the medal, destroy): no timers, no overlay, the medal back to face.
+function stopReveal() {
+  if (!reveal.on && $('#reveal').hidden) return;
+  reveal.on = false; reveal.timers.forEach(clearTimeout); reveal.timers = [];
+  cancelAnimationFrame(reveal.shuffleRaf); reveal.shuffleRaf = 0;
+  $('#reveal').hidden = true; root.classList.remove('revealing'); plate.waiting = null;
+  if (destroyed) return;
+  stopTween(view, 'zoom'); view.zoom = 1;
+  if (renderer && !drag) spring = true;
+  dirty();
+}
+function skipReveal() {
+  if (!reveal.on) return;
+  plate.at = performance.now();
+  const waiting = plate.waiting;
+  settleNow(); stopReveal(); waiting?.();
+  $('.complete').getAnimations().forEach(a => a.cancel());
+  $('#open-result').classList.add('is-calling');
+  $('#complete-title').focus({ preventScroll: true });
+}
+// A point of the medal on screen, with r: how many pixels one unit (about a coin's radius) spans there.
+const toScreen = (x, y, z) => {
+  if (!renderer || !THREE) { const f = boxOf($('#complete-figure')); return { x: f.x + f.w / 2, y: f.y + f.h / 2, r: Math.min(f.w, f.h) / 8 }; }
+  const at = (dx) => { const v = new THREE.Vector3(x + dx, y, z); medal.localToWorld(v); v.project(camera); return { x: (v.x + 1) / 2 * width, y: (1 - v.y) / 2 * height }; };
+  const p = at(0), q = at(1);
+  return { x: p.x, y: p.y, r: Math.hypot(q.x - p.x, q.y - p.y) };
+};
+const coinScreen = k => { const [x, y] = coinAt(k); return toScreen(x, y, .27); };
+const plateScreen = () => toScreen(0, 0, .2);
+function ripple(p, size, cls = '') {
+  const el = document.createElement('i');
+  el.className = `reveal-ring ${cls}`.trim(); el.style.cssText = `left:${p.x}px;top:${p.y}px;width:${size}px;height:${size}px`;
+  $('#reveal-fx').append(el);
+  el.animate([{ transform: 'translate(-50%,-50%) scale(.3)', opacity: 1 }, { transform: 'translate(-50%,-50%) scale(1.7)', opacity: 0 }], { duration: 680, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'forwards' })
+    .finished.then(() => el.remove(), () => el.remove());
+}
+function sizeSparks() {
+  const c = $('#reveal-sparks'), r = Math.min(2, devicePixelRatio || 1);
+  c.width = Math.round(width * r); c.height = Math.round(height * r);
+  reveal.ctx = c.getContext('2d'); reveal.scale = r;
+}
+function burstAt(p, n, power) {
+  if (!reveal.ctx || $('#reveal-sparks').width !== Math.round(width * reveal.scale)) sizeSparks();
+  for (let i = 0; i < n; i++) {
+    const a = Math.random() * Math.PI * 2, v = (120 + Math.random() * 460) * power;
+    reveal.sparks.push({ x: p.x, y: p.y, vx: Math.cos(a) * v, vy: Math.sin(a) * v - 80 * power, life: 0, max: .4 + Math.random() * .6, w: 1 + Math.random() * 1.8, hot: Math.random() });
+  }
+  if (!reveal.raf) { reveal.last = performance.now(); reveal.raf = requestAnimationFrame(sparkFrame); }
+}
+function sparkFrame(now) {
+  reveal.raf = 0;
+  const g = reveal.ctx;
+  if (!g || destroyed) return;
+  const dt = Math.min(.05, (now - reveal.last) / 1000); reveal.last = now;
+  g.setTransform(reveal.scale, 0, 0, reveal.scale, 0, 0); g.clearRect(0, 0, width, height);
+  g.globalCompositeOperation = 'lighter'; g.lineCap = 'round';
+  reveal.sparks = reveal.sparks.filter(s => (s.life += dt) < s.max);
+  for (const s of reveal.sparks) {
+    const k = 1 - s.life / s.max, x0 = s.x, y0 = s.y, slow = Math.pow(.2, dt);
+    s.vx *= slow; s.vy = s.vy * slow + 560 * dt; s.x += s.vx * dt; s.y += s.vy * dt;
+    g.strokeStyle = `hsla(${36 + s.hot * 14},100%,${60 + s.hot * 32}%,${k})`; g.lineWidth = s.w * (.5 + k);
+    g.beginPath(); g.moveTo(x0 - (s.x - x0) * 1.8, y0 - (s.y - y0) * 1.8); g.lineTo(s.x, s.y); g.stroke();
+  }
+  g.globalCompositeOperation = 'source-over';
+  if (reveal.sparks.length) reveal.raf = requestAnimationFrame(sparkFrame); else g.clearRect(0, 0, width, height);
+}
+$('#reveal-skip').addEventListener('click', skipReveal);
 
 // ==== faces: built in workers (or here), cached by signature =========================================================
 // The probe context is given back at once, so it does not count against the page's WebGL contexts.
@@ -1063,6 +1269,8 @@ function strikeCoin(k, quick) {
   slot.striking = true;
   tween(slot, 'z', 0, DROP, easeIn);
   tween(slot, 's', 1, 260, easeOut, DROP, () => { slot.striking = false; });
+  // S6: a few sparks and a ring where it lands (the reveal's, smaller). Not drawn flat: the flat coin has no fall.
+  if (renderer) setTimeout(() => { if (destroyed) return; const p = coinScreen(k); burstAt(p, 12, .55); ripple(p, p.r * 2.4); }, DROP);
   recoil.v = 0; tween(recoil, 'v', 1, 280, t => t, DROP, () => { recoil.v = 0; });
 }
 // Moves the camera; returns in how many ms the whole medal will be in view on this move (null: it will not be).
@@ -1151,8 +1359,9 @@ function dirty() { if (renderer || flatMode) loop(); }
 function loop() { if (!raf) raf = requestAnimationFrame(frame); }
 function applyRig() {
   if (!rig) return;
-  camera.fov = FOV; camera.aspect = width / height; camera.position.set(rig.x, rig.y, rig.D); camera.lookAt(rig.x, rig.y, 0);
-  camera.near = Math.max(.1, rig.D - 4); camera.far = rig.D + 4; camera.updateProjectionMatrix();
+  const D = rig.D * view.zoom;
+  camera.fov = FOV; camera.aspect = width / height; camera.position.set(rig.x, rig.y, D); camera.lookAt(rig.x, rig.y, 0);
+  camera.near = Math.max(.1, D - 4); camera.far = D + 4; camera.updateProjectionMatrix();
   pivot.position.set(rig.fx, rig.fy, -.045 * Math.sin(Math.PI * recoil.v)); medal.position.set(-rig.fx, -rig.fy, 0);
   pivot.rotation.set(tilt.x, tilt.y, 0);
 }
@@ -1203,10 +1412,15 @@ function frame(now) {
     for (const [p, v] of [['x', 'vx'], ['y', 'vy']]) { tilt[v] += (-K * tilt[p] - C * tilt[v]) * dt; tilt[p] += tilt[v] * dt; }
     if (Math.abs(tilt.x) + Math.abs(tilt.y) < .0006 && Math.abs(tilt.vx) + Math.abs(tilt.vy) < .002) { tilt.x = tilt.y = tilt.vx = tilt.vy = 0; spring = false; setQuality('full'); }
   }
+  // S6 reveal: the medal sways under the light, settling to face front just before the plate is struck.
+  if (reveal.on && !reveal.landed && !drag) {
+    const t = (now - reveal.t0) / 1000, a = clamp(t / 1.2, 0, 1) * clamp((REVEAL.strike / 1000 - t) / .9, 0, 1);
+    tilt.x = a * .06 * Math.sin(t * 1.7); tilt.y = a * .2 * Math.sin(t * 1.1);
+  }
   const moving = stepTweens(now) | stepCamera(now);
   lastFrame = now;
   render();
-  if (moving || spring || drag) loop(); else lastFrame = 0;
+  if (moving || spring || drag || reveal.on) loop(); else lastFrame = 0;
 }
 // Drag the medal to hold it to the light; it springs back to face you. Never an input.
 function bindTilt(canvas) {
@@ -1587,6 +1801,7 @@ function disposeTree(object) {
 function destroy() {
   if (destroyed) return;
   destroyed = true;
+  stopReveal(); cancelAnimationFrame(reveal.raf);
   cancelAnimationFrame(raf); raf = 0;
   clearTimeout(idleTimer); clearTimeout(mainTimer); clearTimeout(builderTimer);
   stopMotion(); tweens.length = 0; camTween = null;

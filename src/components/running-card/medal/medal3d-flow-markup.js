@@ -21,6 +21,15 @@ export const MARKUP = `
   <div class="medal-stage" id="medal-stage" aria-hidden="true"></div>
   <p class="stage-note" id="stage-note" role="status">메달 틀을 준비하고 있어요</p>
   <p class="sr-only" id="medal-status" role="status"></p>
+  <div class="reveal-fx" id="reveal-fx" aria-hidden="true"><div class="reveal-sweep"></div><canvas class="reveal-sparks" id="reveal-sparks"></canvas><div class="reveal-flash" id="reveal-flash"></div></div>
+  <div class="reveal" id="reveal" hidden>
+    <div class="reveal-head" aria-hidden="true">
+      <p class="reveal-kicker" id="reveal-kicker">JUDGEMENT / 28D</p>
+      <p class="reveal-record" id="reveal-record"><span id="reveal-label"></span><b id="reveal-value"></b></p>
+      <p class="reveal-figure" id="reveal-figure" hidden><span id="reveal-house"></span><b id="reveal-name"></b></p>
+    </div>
+    <div class="reveal-foot"><p class="reveal-count" aria-hidden="true"><span id="reveal-step">기록을 메달에 새기는 중</span><span id="reveal-of">00 / 07</span></p><div class="reveal-track" aria-hidden="true"><i id="reveal-bar"></i></div><button type="button" class="reveal-skip" id="reveal-skip">건너뛰기</button></div>
+  </div>
   <form id="record-form" novalidate>
     <div class="record" id="record">
       <label class="record-label" id="record-label" for="record-value">28일 총거리 <span>예시 · 숫자를 눌러 입력</span></label>

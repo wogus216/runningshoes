@@ -72,3 +72,47 @@ html:has(.rcm),body:has(.rcm){background:#17150f}
 @media(max-height:700px) and (max-width:599px){.rcm #ruler{--ruler-h:34px;margin-top:-4px}.rcm .race-goal{gap:6px}.rcm .race-goal .time-row input,.rcm .race-goal .time-row .colon{font-size:40px}.rcm .journey{--intro-top:96px;--intro-h:82px;--panel:168px;--footer-h:48px}.rcm .journey[data-scene=pace] .record-label{margin-bottom:4px}.rcm .mode-toggle{top:-5px}.rcm .masthead{height:48px}.rcm .chapters button{min-height:40px}.rcm .eyebrow{margin-bottom:3px;font-size:12px}.rcm h1{font-size:26px}.rcm .scene-intro h1{line-height:1.12}.rcm .scene-def{font-size:13px}.rcm .number-row input{font-size:66px}.rcm .pace-row input,.rcm .colon{font-size:66px}.rcm .time-row input,.rcm .time-row .colon{font-size:54px}.rcm .record-label{font-size:15px}.rcm .interaction p{margin-top:3px;font-size:14px}.rcm .hard-row span{height:54px;font-size:44px;line-height:54px}.rcm .goal-row span{min-height:40px;font-size:18px}.rcm .day-row button{height:40px}.rcm .count-step{height:40px}.rcm #subtract-run{width:40px}.rcm .complete h1{font-size:23px}.rcm .finish span{height:36px;min-width:42px}.rcm .summary-item{padding:4px 0 1px}.rcm .summary-item dd{font-size:30px}.rcm #summary-extra{padding-top:5px;font-size:14px}.rcm .complete-epithet{margin-top:1px;height:18px;font-size:13.5px;line-height:18px}.rcm .complete-epithet.is-wait{font-size:13px}.rcm .complete-actions{margin-top:8px}.rcm .complete-actions button{height:48px}.rcm .complete dl{grid-template-columns:repeat(4,minmax(0,1fr));column-gap:10px}.rcm .summary-item dt{font-size:12px}.rcm .summary-item dt .dt-lead{display:none}.rcm .summary-item dd{font-size:24px}.rcm .summary-item dd small{font-size:12px;margin-left:2px}.rcm .journey[data-scene=complete] .scrim{background:linear-gradient(to bottom,rgba(23,21,15,.9) 0,rgba(23,21,15,.72) 88px,rgba(23,21,15,0) 150px)}}
 @media(prefers-reduced-motion:reduce){.rcm *,.rcm *::before,.rcm *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 .rcm .reduced-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+
+/* S6 판정 연출(운영자 요청 2026-10-10) — 마운트의 첫 완료에서 약 10초. 모션 줄이기·느린 렌더러에서는 열리지 않는다(flow.js finish).
+   판정이 끝날 때까지 완료 패널은 투명하고 눌리지 않는다. 광고 칸은 결과 카드에 그대로 있다.
+   .reveal-fx(불꽃·링·섬광)는 입력 단계에서도 쓴다 — 동전이 소켓에 떨어질 때 작게. */
+.rcm .journey.revealing .complete{opacity:0}
+.rcm .journey.revealing .complete,.rcm .journey.revealing .complete *{pointer-events:none!important}
+.rcm .reveal{position:absolute;inset:0;z-index:6;pointer-events:none;transition:opacity .55s ease-out}
+.rcm .reveal[hidden]{display:none}
+.rcm .reveal.is-out{opacity:0}
+.rcm .reveal-fx{position:absolute;inset:0;z-index:5;pointer-events:none;overflow:hidden}
+.rcm .reveal-fx::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .6s ease-out;background:radial-gradient(120% 72% at 50% 54%,transparent 42%,rgba(9,8,5,.66) 100%)}
+.rcm .journey.revealing .reveal-fx::before{opacity:1}
+.rcm .journey:not(.revealing) .reveal-sweep{display:none}
+.rcm .reveal.is-out .reveal-head,.rcm .reveal.is-out .reveal-foot{opacity:0;transition:opacity .2s ease-out}
+.rcm .reveal-sweep{position:absolute;top:18%;bottom:20%;left:-55%;width:55%;background:linear-gradient(100deg,transparent 18%,rgba(255,222,150,.14) 42%,rgba(255,246,222,.34) 50%,rgba(255,222,150,.14) 58%,transparent 82%);mix-blend-mode:screen;-webkit-mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 78%,transparent);mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 78%,transparent);animation:rcv-sweep 2.2s cubic-bezier(.45,0,.2,1) .6s infinite}
+.rcm .reveal-sparks{position:absolute;inset:0;width:100%;height:100%}
+.rcm .reveal-flash{position:absolute;inset:0;opacity:0;background:radial-gradient(circle at var(--x,50%) var(--y,50%),rgba(255,251,238,.96) 0,rgba(255,214,140,.58) 12%,rgba(255,168,80,.14) 34%,transparent 60%);mix-blend-mode:screen}
+.rcm .reveal-ring{position:absolute;border-radius:50%;border:2px solid rgba(255,216,146,.92);box-shadow:0 0 18px rgba(255,186,96,.55),inset 0 0 12px rgba(255,186,96,.35)}
+.rcm .reveal-ring.is-big{border-width:3px}
+.rcm .reveal-head{position:absolute;left:24px;right:24px;top:var(--intro-top)}
+.rcm .reveal-kicker{margin:0 0 10px;font:700 12px/1.2 StudyCondensed,sans-serif;letter-spacing:.16em;color:#e6bc78}
+.rcm .reveal-record,.rcm .reveal-figure{margin:0;display:flex;flex-direction:column;gap:3px}
+.rcm .reveal-record[hidden],.rcm .reveal-figure[hidden]{display:none}
+.rcm .reveal-record span{font-size:15px;color:var(--dim-70)}
+.rcm .reveal-record b{min-height:1.05em;font:700 46px/1.05 StudyCondensed,'Pretendard Variable',Pretendard,sans-serif;font-variant-numeric:tabular-nums;color:var(--paper);text-shadow:0 0 26px rgba(255,186,96,.38)}
+.rcm .reveal-record b small{margin-left:6px;font:600 18px/1 'Pretendard Variable',Pretendard,sans-serif;color:var(--dim-70);text-shadow:none}
+.rcm .reveal-figure span{min-height:1.3em;font-size:14px;color:#e6bc78}
+.rcm .reveal-figure b{font-size:36px;line-height:1.15;font-weight:700;letter-spacing:-.01em;color:var(--paper)}
+.rcm .reveal.is-shuffle .reveal-figure b{color:rgba(247,244,237,.8)}
+.rcm .reveal.is-landed .reveal-figure b{color:#f6d590;text-shadow:0 0 30px rgba(255,186,96,.6)}
+.rcm .reveal-foot{position:absolute;left:24px;right:24px;bottom:var(--foot);display:grid;grid-template-columns:1fr auto;align-items:center;gap:10px 14px}
+.rcm .reveal-count{grid-column:1/-1;margin:0;display:flex;justify-content:space-between;gap:12px;font-size:13px;color:var(--dim-70)}
+.rcm .reveal-count span:last-child{font:700 13px/1.2 StudyCondensed,sans-serif;letter-spacing:.1em;color:#e6bc78}
+.rcm .reveal-track{height:3px;border-radius:2px;background:var(--line-15);overflow:hidden}
+.rcm .reveal-track i{display:block;height:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,#9b723b,#f2c471 70%,#fff3d6);box-shadow:0 0 10px rgba(242,196,113,.7)}
+.rcm .reveal-skip{pointer-events:auto;min-height:44px;padding:0 18px;border-radius:22px;border:1px solid var(--line-25);background:rgba(23,21,15,.62);font-size:14px;color:var(--paper);cursor:pointer}
+@keyframes rcv-sweep{from{transform:translateX(0) skewX(-12deg)}to{transform:translateX(300%) skewX(-12deg)}}
+/* 판정이 끝나면 '분석 펼쳐보기'가 다음 할 일이라고 세 번만 알린다 */
+.rcm #open-result.is-calling{position:relative;overflow:hidden}
+.rcm #open-result.is-calling::after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(100deg,transparent 30%,rgba(242,196,113,.6) 50%,transparent 70%);transform:translateX(-100%);animation:rcv-call 1.7s cubic-bezier(.45,0,.2,1) .5s 3}
+.rcm #open-result.is-calling svg{animation:rcv-bob 1.7s ease-in-out .5s 3}
+@keyframes rcv-call{to{transform:translateX(100%)}}
+@keyframes rcv-bob{0%,100%{transform:none}50%{transform:translateY(3px)}}
+@media (prefers-reduced-motion:reduce){.rcm .reveal-sweep,.rcm #open-result.is-calling::after,.rcm #open-result.is-calling svg{animation:none}}

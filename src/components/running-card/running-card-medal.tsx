@@ -6,6 +6,7 @@ import { analyzeRunner } from '@/lib/runner-analysis/analyze';
 import { explainRunner, type RunnerExplanation } from '@/lib/runner-analysis/explain';
 import { snapshotFromFlowInput, type FlowInput, type FlowSnapshotResult } from '@/lib/runner-analysis/from-flow-input';
 import { getCharacterTitle } from '@/lib/runner-analysis/presentation';
+import { RUNNER_CHARACTERS } from '@/lib/runner-analysis/characters';
 import type { RunnerAnalysis, RunnerSnapshot28d } from '@/types/runner-analysis';
 import { mountMedalFlow } from './medal/medal3d-flow';
 import { RunningCardResult, type ShareImage } from './running-card-result';
@@ -64,6 +65,8 @@ export default function RunningCardMedal({ onRestart }: { onRestart: () => void 
       onOpenResult: () => setWantOpen(true),
       // 01–07 단계 완료(값을 받아 동전을 새긴 순간). 단계마다 페이지에서 한 번만 — 몇 단계까지 왔는지를 센다.
       onStep: (step: number) => trackRunner('runner_input_step_completed', { step_number: step }, `runner-step-${step}`),
+      // S6: 판정 연출이 명판을 치기 전에 훑는 인물 이름들.
+      figures: RUNNER_CHARACTERS.map(({ id, house, name }) => ({ id, house, name })),
     });
     flow.current = mounted;
     return () => {
