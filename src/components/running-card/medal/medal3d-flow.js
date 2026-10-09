@@ -379,7 +379,7 @@ function finish(instant) {
     const panel = $('.complete'); panel.getAnimations().forEach(a => a.cancel());
     panel.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 420, delay: 560, fill: 'backwards', easing: 'ease-out' });
   }
-  $('#complete-title').focus({ preventScroll: true });
+  (staged ? $('#reveal-skip') : $('#complete-title')).focus({ preventScroll: true });
   root.scrollIntoView({ behavior: 'instant', block: 'start' });
 }
 const summaryEntries = () => [['28일', '총거리', format(value('distance')), 'km'], ['러닝', '횟수', format(value('count')), '회'], ['평균', '페이스', paceLabel(), '/km'], ['', '최장거리', format(value('longest')), 'km']];
@@ -748,6 +748,7 @@ function revealRecords() {
 function playReveal(wideIn) {
   const box = $('#reveal'), bar = $('#reveal-bar');
   Object.assign(reveal, { on: true, played: true, t0: performance.now(), landed: false, shown: -1 });
+  $('.complete').inert = true;
   root.classList.add('revealing');
   box.hidden = false; box.classList.remove('is-out', 'is-shuffle', 'is-landed');
   $('#reveal-kicker').textContent = 'JUDGEMENT / 28D';
@@ -849,11 +850,12 @@ function endReveal() {
     const panel = $('.complete'); panel.getAnimations().forEach(a => a.cancel());
     panel.animate([{ opacity: 0, transform: 'translateY(8px)' }, { opacity: 1, transform: 'none' }], { duration: 560, delay: 200, fill: 'backwards', easing: 'cubic-bezier(.16,1,.3,1)' });
     $('#open-result').classList.add('is-calling');
-    later(() => stopReveal(), 600);
+    later(() => { stopReveal(); $('#complete-title').focus({ preventScroll: true }); }, 600);
   }, REVEAL.hold);
 }
 // Ends the reveal where it stands (건너뛰기, leaving the medal, destroy): no timers, no overlay, the medal back to face.
 function stopReveal() {
+  $('.complete').inert = false;
   if (!reveal.on && $('#reveal').hidden) return;
   reveal.on = false; reveal.timers.forEach(clearTimeout); reveal.timers = [];
   cancelAnimationFrame(reveal.shuffleRaf); reveal.shuffleRaf = 0;
@@ -1752,7 +1754,7 @@ async function start() {
   if (destroyed) return;
   if (!glOk) {
     for (let k = 0; k < 7; k++) slots.push({ k, present: false, showAt: 0, z: 0, s: 1, sig: null, wantSig: null, kind: 'blank', place: null, leaving: false, striking: false });
-    flatMode = true; root.classList.add('no-gl'); $('#stage-note').hidden = false; $('#stage-note').textContent = '3D를 그릴 수 없어 같은 부조를 평면으로 보여 드려요';
+    flatMode = true; root.classList.add('no-gl'); $('#stage-note').hidden = true; $('#medal-status').textContent = '3D를 그릴 수 없어 같은 부조를 평면으로 보여 드려요';
     await Promise.all(first);
     if (destroyed) return;
     syncCoins(); go({ instant: true }); dirty();
