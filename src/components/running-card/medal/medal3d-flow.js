@@ -1481,7 +1481,20 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
         return renderFigure(target, fig, hideNumbers);
       });
     } finally { pins.forEach(sig => sharePins.delete(sig)); }
-  } else await drawAnalysis(g, kind, card, hideNumbers);
+  } else {
+    await facesReady();
+    const pins = hideNumbers ? [...HIDDEN].map(hiddenSig) : [];
+    pins.forEach(sig => sharePins.add(sig));
+    try {
+      if (hideNumbers) await Promise.all([...HIDDEN].map(k => want(hiddenSig(k), coinMsg(scenes[k], liveRec(), 'hidden', RES.seat), 0)));
+      if (destroyed) throw new Error('destroyed');
+      settleNow();
+      await drawAnalysis(g, kind, card, hideNumbers, (fig, target = g) => {
+        if (destroyed) throw new Error('destroyed');
+        return renderFigure(target, fig, hideNumbers);
+      });
+    } finally { pins.forEach(sig => sharePins.delete(sig)); }
+  }
   return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
 }
 

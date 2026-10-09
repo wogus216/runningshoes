@@ -189,18 +189,20 @@ function pictureCover(g, W, H, story, width, card, renderFigure, picture) {
 }
 
 // Page 2. The record numbers in the evidence give way to their hiddenText when hideNumbers.
-export async function drawAnalysis(g, kind, card, hideNumbers) {
+export async function drawAnalysis(g, kind, card, hideNumbers, renderFigure) {
   await fontsFor(card);
   const [W, H] = SHARE_SIZES[kind], story = kind === 'story', width = W - 2 * M;
   // Laid out top-down at scale s; the scale shrinks until the page ends above the footnote and the address.
   const page = (s, draw) => {
     const put = (fn) => { if (draw) fn(); };
     let y = ruleOf(story) + 100 * s;
-    put(() => { g.textAlign = 'left'; g.fillStyle = TH.part; fitText(g, `${card.house} 가문`, M, y, width, 32 * s, 600); });
+    const medalSize = 300 * s, identityWidth = width - medalSize - 20 * s;
+    put(() => renderFigure?.({ x: W - M - medalSize, y: ruleOf(story) + 12 * s, w: medalSize, h: medalSize, fit: { widthShare: .94, heightShare: .94, bottomPad: .02 } }, g));
+    put(() => { g.textAlign = 'left'; g.fillStyle = TH.part; fitText(g, `${card.house} 가문`, M, y, identityWidth, 32 * s, 600); });
     y += 100 * s;
-    put(() => { g.fillStyle = TH.ink; fitText(g, card.name, M, y, width, 92 * s, 760); });
+    put(() => { g.fillStyle = TH.ink; fitText(g, card.name, M, y, identityWidth, 92 * s, 760); });
     y += 62 * s;
-    put(() => { g.fillStyle = TH.ink; fitText(g, card.title, M, y, width, 40 * s, 500); });
+    put(() => { g.fillStyle = TH.ink; fitText(g, card.title, M, y, identityWidth, 40 * s, 500); });
     // The three scores: label, a 0–100 bar, the integer. The lead score (the axis the figure's target puts highest) in the accent, with leadTag.
     y += 84 * s;
     put(() => { g.fillStyle = TH.muted; fitText(g, '세 점수', M, y, width, 30 * s, 550); });
