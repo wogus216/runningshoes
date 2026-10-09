@@ -799,7 +799,7 @@ function revealCoin(k, [label, n, unit]) {
 }
 function revealShuffle() {
   $('#reveal').classList.add('is-shuffle');
-  $('#reveal-kicker').textContent = 'MATCHING / 22 FIGURES';
+  $('#reveal-kicker').textContent = `MATCHING / ${figures.length} FIGURES`;
   $('#reveal-step').textContent = '어울리는 인물을 찾는 중';
   $('#reveal-record').hidden = true; $('#reveal-figure').hidden = false;
   const own = analysis?.match.character.id;
@@ -1655,7 +1655,9 @@ function renderFigure(g, fig, hideNumbers) {
     // fitShare's framing without a camera: k pixels per unit, the medal's bottom bottomPad × h above the box's bottom.
     const { widthShare = .95, heightShare = .80, bottomPad = .065 } = fig.fit, mw = 2 * BOUNDS.x, mh = BOUNDS.top - BOUNDS.bottom;
     const k = Math.min(widthShare * fig.w / mw, heightShare * fig.h / mh), yc = BOUNDS.bottom - bottomPad * fig.h / k + fig.h / k / 2;
-    g.save(); g.translate(fig.x, fig.y); flatPaint(g, fig.w, fig.h, k, 0, yc, faceOf); g.restore();
+    // Clipped to the box as the WebGL render is: the flat ribbon runs 14 units up and crossed the analysis image's header
+    // (S6 QA 2026-10-10, '지난 28일' under the small medal).
+    g.save(); g.translate(fig.x, fig.y); g.beginPath(); g.rect(0, 0, fig.w, fig.h); g.clip(); flatPaint(g, fig.w, fig.h, k, 0, yc, faceOf); g.restore();
     return { k, medalWidth: k * mw, coinRadius: k };
   }
   const swapped = [];
