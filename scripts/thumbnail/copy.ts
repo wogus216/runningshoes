@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: 미즈노 보도자료 corp.mizuno.com/jp/news-release/2026/20261008(2026-10-09 원문 확인) — 4종·일본 발매일·
+  // 일본 세금 포함가. 한국 가격·출시일은 미발표.
+  'mizuno-hyperwarp-2-lineup-announcement-2026': {
+    title: '미즈노 하이퍼워프 2세대, 4종으로',
+    subtitle: '서브3는 퓨어 2·엘리트 2, 3~4시간대는 카본화 레이서, 훈련은 페이서 · 한국 출시는 미정',
+    data: '일본 ¥35,200 · ¥29,700 · ¥22,000 · ¥18,700 (11/6·12/10 발매)',
+  },
   // 출처: 조이스 휘브너 본인 인스타그램 @runninggirl.joyce 2026-10-06 게시물(10/9 확인) — 459일·19,819km·
   // 238,159Hm·남은 36개, 10/7 게시물 Knochenhautentzündung. 본문 표(posts/2026-06.ts)와 같은 값.
   'joyce-hubner-367-consecutive-marathons-world-record': {
