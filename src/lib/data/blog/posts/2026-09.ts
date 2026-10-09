@@ -699,7 +699,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/blog/adidas-running-shoes-lineup-tier-guide-2026"><strong>아디다스</strong></a></td><td><a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a> 15.9만</td><td>—</td><td>—</td><td><a href="/shoes/adidas-boston-13">보스턴 13</a> 17.9만</td><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a> 29.9만</td></tr>
     <tr><td><a href="/blog/on-running-shoes-lineup-tier-guide-2026"><strong>온</strong></a></td><td><a href="/shoes/on-cloudrunner-2">클라우드러너 2</a> 18.9만</td><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 22.9만</td><td><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a> 19.9만</td><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a> 25.9만</td><td><a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a> 32.9만</td></tr>
     <tr><td><a href="/blog/puma-running-shoes-lineup-tier-guide-2026"><strong>푸마</strong></a></td><td><a href="/shoes/puma-velocity-nitro-5">벨로시티 나이트로 5</a> 17.9만</td><td><a href="/shoes/puma-magnify-nitro-3">매그니파이 나이트로 3</a> 19.9만</td><td>—</td><td><a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 21.9만</td><td><a href="/shoes/puma-deviate-nitro-elite-4">디비에이트 나이트로 엘리트 4</a> 28.9만</td></tr>
-    <tr><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노</strong></a></td><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a> 17.9만</td><td><a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a> 18.9만</td><td><a href="/shoes/mizuno-wave-inspire-22">웨이브 인스파이어 22</a> 16.9만</td><td><a href="/shoes/mizuno-wave-rebellion-flash-3">웨이브 리벨리온 플래시 3</a> 19.9만</td><td><a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 34.9만</td></tr>
+    <tr><td><a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026"><strong>미즈노</strong></a></td><td><a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a> 17.9만</td><td><a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a> 18.9만</td><td><a href="/shoes/mizuno-wave-inspire-22">웨이브 인스파이어 22</a> 16.9만</td><td><a href="/shoes/mizuno-wave-rebellion-flash-3">웨이브 리벨리온 플래시 3</a> 19.9만</td><td><a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 27.9만</td></tr>
     <tr><td><a href="/blog/saucony-running-shoes-lineup-tier-guide-2026"><strong>사코니</strong></a></td><td><a href="/shoes/saucony-ride-19">라이드 19</a> 17.9만</td><td><a href="/shoes/saucony-triumph-24">트라이엄프 24</a> 20.9만</td><td><a href="/shoes/saucony-guide-19">가이드 19</a> 17.9만</td><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 21.9만</td><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> 29.9만</td></tr>
     <tr><td><a href="/blog/li-ning-red-hare-9-lineup-2026"><strong>리닝</strong></a></td><td><a href="/shoes/li-ning-red-hare-9">레드헤어 9</a> 9.5만 · <a href="/shoes/li-ning-red-hare-9-pro">9 프로</a> 14만</td><td><a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a> 15만</td><td>—</td><td>—</td><td>—</td></tr>
   </tbody>
@@ -3207,10 +3207,11 @@ export const posts_2026_09: BlogPost[] = [
     title:
       '카본화 계급도 2026 — "카본"이 묶고 있는 서로 다른 물건 셋 | 브랜드 9곳 30종, km당 274원부터 1,995원까지',
     description:
-      '카본 플레이트가 들어간 로드 러닝화 30종을 트레이너·레이서·서브2 3단으로 정리했습니다. km당 비용이 274원(디비에이트 나이트로 4)부터 1,995원(메타스피드 레이·하이퍼워프 퓨어)까지 7.3배 벌어집니다 — "카본화"라는 한 단어가 성격이 전혀 다른 물건 셋을 묶고 있다는 뜻입니다. 한국 발볼 기준 토박스 분포(30종 중 넓은 것 0종)까지 함께 정리했습니다.',
+      '카본 플레이트가 들어간 로드 러닝화 30종을 트레이너·레이서·서브2 3단으로 정리했습니다. km당 비용이 274원(디비에이트 나이트로 4)부터 1,995원(메타스피드 레이)까지 7.3배 벌어집니다 — "카본화"라는 한 단어가 성격이 전혀 다른 물건 셋을 묶고 있다는 뜻입니다. 한국 발볼 기준 토박스 분포(30종 중 넓은 것 0종)까지 함께 정리했습니다.',
     thumbnail: '/images/blog/carbon-plate-running-shoes-lineup-tier-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
+    updatedAt: '2026-10-09',
     category: 'guide' as const,
     readingTime: 13,
     tags: [
@@ -3227,7 +3228,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '카본화면 다 대회용 아닌가요?',
         answer:
-          '아닙니다. 이 표의 30종 중 9종은 훈련용으로 설계된 "카본 트레이너"입니다. 매직스피드 5, 줌 플라이 6, 디비에이트 나이트로 4 같은 모델은 카본이나 유사 플레이트가 들어 있지만 밑창을 두껍게 깔아 매주 신을 수 있게 만들었습니다. km당 비용이 274~576원으로 레이서(722~1,495원)나 최상위(1,163~1,995원)와 확연히 다릅니다. "카본화를 사고 싶다"는 입문 러너에게 실제로 맞는 건 대개 이 트레이너 단입니다.',
+          '아닙니다. 이 표의 30종 중 10종은 훈련용으로 설계된 "카본 트레이너"입니다. 매직스피드 5, 줌 플라이 6, 디비에이트 나이트로 4 같은 모델은 카본이나 유사 플레이트가 들어 있지만 밑창을 두껍게 깔아 매주 신을 수 있게 만들었습니다. km당 비용이 274~623원으로 레이서(722~1,545원)나 최상위(1,516~1,995원)와 확연히 다릅니다. "카본화를 사고 싶다"는 입문 러너에게 실제로 맞는 건 대개 이 트레이너 단입니다.',
       },
       {
         question: '30만원대와 20만원대 카본화는 뭐가 다른가요?',
@@ -3306,11 +3307,12 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000원</td><td>193g</td><td>약 572원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a></td><td>229,000원</td><td>248g</td><td>약 572원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-rebel">뉴발란스 SC 리벨 V1</a></td><td>259,000원</td><td>218g</td><td>약 576원</td><td>좁음</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro">미즈노 하이퍼워프 프로</a></td><td>249,000원</td><td>201g</td><td>약 623원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/nike-streakfly-2">나이키 스트릭플라이 2</a></td><td>219,000원</td><td>128g</td><td>약 1,095원</td><td>좁음</td><td>없음</td></tr>
   </tbody>
 </table>
 
-<p><strong>스트릭플라이 2가 이 단의 예외입니다.</strong> 가격은 트레이너 대역인데 km당 약 1,095원으로, 아래 레이서 단 대부분보다 비쌉니다. 128g으로 이 표 전체에서 가장 가볍기 때문입니다 — <strong>가격이 아니라 무게가 km당 비용을 정한다</strong>는 걸 가장 선명하게 보여주는 사례입니다. 5km·10km 레이스용 초경량 플랫으로 보는 게 맞고, 훈련화로 사면 금방 갈아야 합니다.</p>
+<p><strong>스트릭플라이 2가 이 단의 예외입니다.</strong> 가격은 트레이너 대역인데 km당 약 1,095원으로, 아래 레이서 단 절반 이상보다 비쌉니다. 128g으로 이 표 전체에서 가장 가볍기 때문입니다 — <strong>가격이 아니라 무게가 km당 비용을 정한다</strong>는 걸 가장 선명하게 보여주는 사례입니다. 5km·10km 레이스용 초경량 플랫으로 보는 게 맞고, 훈련화로 사면 금방 갈아야 합니다.</p>
 
 <p>이 단에서 매직스피드 5와 줌 플라이 6은 정가도 km당 비용도 거의 같아 직접 맞붙는 관계입니다. 둘의 차이는 <a href="/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026">매직스피드 5 vs 줌 플라이 6</a>에서 따로 비교했습니다. 플레이트 없이 같은 값을 내는 대안이 궁금하다면 <a href="/blog/asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026">카본 vs 무플레이트</a> 쪽입니다.</p>
 
@@ -3324,8 +3326,8 @@ export const posts_2026_09: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/puma-deviate-nitro-elite-4">푸마 디비에이트 나이트로 엘리트 4</a></td><td>289,000원</td><td>170g</td><td><strong>약 722원</strong></td><td>표준</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pro">미즈노 하이퍼워프 프로</a></td><td>319,000원</td><td>201g</td><td>약 798원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-4">사코니 엔돌핀 프로 4</a></td><td>269,000원</td><td>220g</td><td>약 897원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite">미즈노 하이퍼워프 엘리트</a></td><td>279,000원</td><td>170g</td><td>약 930원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-elite-3">푸마 디비에이트 나이트로 엘리트 3</a></td><td>289,000원</td><td>204g</td><td>약 963원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">사코니 엔돌핀 프로 5</a></td><td>299,000원</td><td>206g</td><td>약 997원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/hoka-rocket-x-3">호카 로켓 X 3</a></td><td>299,000원</td><td>220g</td><td>약 997원</td><td>좁음</td><td>없음</td></tr>
@@ -3337,10 +3339,11 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></td><td>329,000원</td><td>205g</td><td>약 1,316원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-edge-plus">아식스 메타스피드 엣지+</a></td><td>329,000원</td><td>208g</td><td>약 1,316원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디제로 아디오스 프로 4</a></td><td>299,000원</td><td>200g</td><td>약 1,495원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure">미즈노 하이퍼워프 퓨어</a></td><td>309,000원</td><td>139g</td><td><strong>약 1,545원</strong></td><td>좁음</td><td>없음</td></tr>
   </tbody>
 </table>
 
-<p>여기서도 <strong>가격 순서와 km당 순서가 어긋납니다.</strong> 아디오스 프로 4는 299,000원으로 이 단 중간값인데 km당 약 1,495원으로 가장 비싸고, 디비에이트 나이트로 엘리트 4는 289,000원으로 비슷한 값인데 약 722원입니다 — <strong>같은 28~29만원대 안에서 2배</strong>가 벌어집니다.</p>
+<p>여기서도 <strong>가격 순서와 km당 순서가 어긋납니다.</strong> 아디오스 프로 4는 299,000원으로 이 단 중간값인데 km당 약 1,495원으로 하이퍼워프 퓨어(약 1,545원) 다음으로 비싸고, 디비에이트 나이트로 엘리트 4는 289,000원으로 비슷한 값인데 약 722원입니다 — <strong>같은 28~29만원대 안에서 2배</strong>가 벌어집니다.</p>
 
 <p>알파플라이·메타스피드 스카이+·SC 엘리트 V5의 성격 차이는 <a href="/blog/nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026">카본 레이서 3파전</a>에서 따로 다뤘습니다. 이 단에서 <strong>와이드가 나오는 건 메타스피드 스카이+·엣지+와 SC 엘리트 V5 셋뿐</strong>입니다.</p>
 
@@ -3351,17 +3354,15 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>모델</th><th>정가</th><th>무게</th><th>km당</th><th>토박스</th><th>와이드</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-elite">미즈노 하이퍼워프 엘리트</a></td><td>349,000원</td><td>170g</td><td><strong>약 1,163원</strong></td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트알 나이트로 엘리트 3</a></td><td>379,000원</td><td>173g</td><td>약 1,516원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트알 나이트로 엘리트 3</a></td><td>379,000원</td><td>173g</td><td><strong>약 1,516원</strong></td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a></td><td>339,000원</td><td>197g</td><td>약 1,695원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000원</td><td>201g</td><td>약 1,695원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-3">사코니 엔돌핀 엘리트 3</a></td><td>369,000원</td><td>207g</td><td>약 1,845원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a></td><td>399,000원</td><td>129g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pure">미즈노 하이퍼워프 퓨어</a></td><td>399,000원</td><td>139g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
   </tbody>
 </table>
 
-<p>이 단은 <strong>7종 전부 와이드가 없고, 5종이 좁은 토박스</strong>입니다. 무게도 129~207g로 극단에 몰려 있습니다. 메타스피드 레이(129g)와 하이퍼워프 퓨어(139g)는 이 표에서 가장 가벼우면서 km당 비용도 가장 비싼 두 켤레인데, 이 둘이 같은 자리에 있는 게 우연이 아닙니다 — <strong>무게를 깎는다는 건 밑창을 덜 깐다는 뜻</strong>이고, 그 대가가 곧바로 km당 비용으로 돌아옵니다.</p>
+<p>이 단은 <strong>5종 전부 와이드가 없고, 3종이 좁은 토박스</strong>입니다. 무게도 129~207g로 극단에 몰려 있습니다. 메타스피드 레이(129g)는 이 표에서 가장 가벼우면서 km당 비용도 가장 비싼데, 이게 우연이 아닙니다 — 2단에서 가장 가벼운 하이퍼워프 퓨어(139g)가 그 단의 km당 비용 1위인 것도 같은 이유입니다. <strong>무게를 깎는다는 건 밑창을 덜 깐다는 뜻</strong>이고, 그 대가가 곧바로 km당 비용으로 돌아옵니다.</p>
 
 <h2>5. 한국 러너를 위한 발볼 지도</h2>
 
@@ -5708,10 +5709,11 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'mizuno-hyperwarp-elite-review',
     title: '미즈노 하이퍼워프 엘리트 후기 | 170g·38mm, 퓨어와 프로 사이 균형점을 찾은 마라톤 레이서',
     description:
-      '하이퍼워프 엘리트는 미즈노 하이퍼워프 3형제 중 풀 마라톤에 최적화된 모델입니다. 139g 퓨어보다 쿠셔닝이 풍부하고 201g 프로보다 가벼워, 170g·38mm 스택으로 서브3~서브3:30 목표 러너를 겨냥합니다. PEBA 미드솔에 풀렝스 카본 플레이트, 349,000원. 토박스가 좁아 한국 러너는 반사이즈 업이 필요합니다.',
+      '하이퍼워프 엘리트는 미즈노 하이퍼워프 3형제 중 풀 마라톤에 최적화된 모델입니다. 139g 퓨어보다 쿠셔닝이 풍부하고 201g 프로보다 가벼워, 170g·38mm 스택으로 서브3~서브3:30 목표 러너를 겨냥합니다. PEBA 미드솔에 풀렝스 카본 플레이트, 279,000원. 토박스가 좁아 한국 러너는 반사이즈 업이 필요합니다.',
     thumbnail: '/images/blog/mizuno-hyperwarp-elite-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
+    updatedAt: '2026-10-09',
     category: 'review' as const,
     readingTime: 7,
     tags: ['미즈노 하이퍼워프 엘리트', 'PEBA 카본화', '마라톤 슈퍼슈즈', '풀코스 레이싱화'],
@@ -5754,7 +5756,7 @@ export const posts_2026_09: BlogPost[] = [
 </ul>
 
 <h2>가격 대비 가치</h2>
-<p>349,000원은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(309,000원 안팎)보다 비싸지만, PEBA 미드솔의 안정적인 플랫폼이 차별점입니다. 300km 내구성 기준 km당 약 1,163원으로 레이스데이 전용 투자에 해당합니다. 가성비보다 성능에 집중한 신발이라, 서브3~서브3:30을 실제로 노리는 레이스가 있을 때 투입하는 게 맞습니다.</p>
+<p>279,000원은 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(309,000원 안팎)보다 3만 원 낮고, PEBA 미드솔의 안정적인 플랫폼이 차별점입니다. 300km 내구성 기준 km당 약 930원으로 레이스데이 전용 투자에 해당합니다. 가성비보다 성능에 집중한 신발이라, 서브3~서브3:30을 실제로 노리는 레이스가 있을 때 투입하는 게 맞습니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -5784,10 +5786,11 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'mizuno-hyperwarp-pro-review',
     title: '미즈노 하이퍼워프 프로 후기 | 201g, 3형제 중 가장 실용적인 훈련+대회 겸용 슈퍼트레이너',
     description:
-      '하이퍼워프 프로는 카본 인퓨즈드 나일론 플레이트를 써서 퓨어·엘리트보다 강성을 낮춘 슈퍼트레이너입니다. 201g·39mm 스택으로 템포런부터 하프·풀 마라톤 대회까지 한 켤레로 커버합니다. 319,000원으로 3형제 중 가장 저렴하고, 극단적 측면 플레어가 발목 안정성을 더합니다.',
+      '하이퍼워프 프로는 카본 인퓨즈드 나일론 플레이트를 써서 퓨어·엘리트보다 강성을 낮춘 슈퍼트레이너입니다. 201g·39mm 스택으로 템포런부터 하프·풀 마라톤 대회까지 한 켤레로 커버합니다. 249,000원으로 3형제 중 가장 저렴하고, 극단적 측면 플레어가 발목 안정성을 더합니다.',
     thumbnail: '/images/blog/mizuno-hyperwarp-pro-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
+    updatedAt: '2026-10-09',
     category: 'review' as const,
     readingTime: 7,
     tags: ['미즈노 하이퍼워프 프로', '슈퍼트레이너', '카본 인퓨즈드 나일론', '겸용 레이싱화'],
@@ -5797,7 +5800,7 @@ export const posts_2026_09: BlogPost[] = [
   <ul>
     <li><strong>카본 인퓨즈드 나일론 플레이트</strong> — 순수 카본보다 유연해 <a href="/shoes/mizuno-hyperwarp-elite">엘리트</a>·<a href="/shoes/mizuno-hyperwarp-pure">퓨어</a>보다 전환이 자연스럽습니다</li>
     <li><strong>201g·39mm 스택</strong>으로 템포런부터 대회까지 한 켤레로 겸용할 수 있습니다</li>
-    <li><strong>319,000원 — 3형제 중 가장 저렴합니다.</strong> 극단적 측면 플레어가 발목 안정성을 더합니다</li>
+    <li><strong>249,000원 — 3형제 중 가장 저렴합니다.</strong> 극단적 측면 플레어가 발목 안정성을 더합니다</li>
   </ul>
 </div>
 
@@ -5819,8 +5822,8 @@ export const posts_2026_09: BlogPost[] = [
   <li><strong>"발목이 불안정한데 괜찮을까요?"</strong> — 극단적 측면 플레어가 발목 흔들림을 잡아주는 구조라, 발목 불안정 러너에게 3형제 중 가장 적합합니다</li>
 </ul>
 
-<h2>가격 대비 가치 — 마하 X 3보다 비싸지만 겸용성이 다르다</h2>
-<p>319,000원은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(249,000원)보다 7만원 비싸지만, 차별점은 측면 플레어의 안정감입니다. 스택이 높은 트레이너에서 좌우 흔들림이 신경 쓰였다면 이 구조가 값을 합니다. 400km 내구성 기준 km당 약 798원으로 가성비가 뛰어나지는 않지만, 훈련과 대회를 한 켤레로 겸할 수 있어 실질적 활용도는 높습니다.</p>
+<h2>가격 대비 가치 — 마하 X 3와 같은 값, 겸용성이 다르다</h2>
+<p>249,000원은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(249,000원)와 같은 값이고, 차별점은 측면 플레어의 안정감입니다. 스택이 높은 트레이너에서 좌우 흔들림이 신경 쓰였다면 이 구조가 값을 합니다. 400km 내구성 기준 km당 약 623원으로 가성비가 뛰어나지는 않지만, 훈련과 대회를 한 켤레로 겸할 수 있어 실질적 활용도는 높습니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -5850,10 +5853,11 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'mizuno-hyperwarp-pure-review',
     title: '미즈노 하이퍼워프 퓨어 후기 | 139g 극한 경량 — 미즈노 역사상 가장 가벼운 레이서',
     description:
-      '하이퍼워프 퓨어는 139g으로 미즈노 레이싱화 역사상 가장 가벼운 모델입니다. PEBA 미드솔과 풀렝스 카본 플레이트, 34mm 로우 스택으로 5K~10K 단거리 기록 단축에 특화됐습니다. 399,000원, 내구성 200km로 순수 레이스데이 전용 무기입니다. 풀 마라톤에는 쿠션이 부족하니 용도를 좁혀서 접근해야 합니다.',
+      '하이퍼워프 퓨어는 139g으로 미즈노 레이싱화 역사상 가장 가벼운 모델입니다. PEBA 미드솔과 풀렝스 카본 플레이트, 34mm 로우 스택으로 5K~10K 단거리 기록 단축에 특화됐습니다. 309,000원, 내구성 200km로 순수 레이스데이 전용 무기입니다. 풀 마라톤에는 쿠션이 부족하니 용도를 좁혀서 접근해야 합니다.',
     thumbnail: '/images/blog/mizuno-hyperwarp-pure-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
+    updatedAt: '2026-10-09',
     category: 'review' as const,
     readingTime: 6,
     tags: ['미즈노 하이퍼워프 퓨어', '초경량 레이싱화', 'PEBA 카본화', '5K 10K 레이서'],
@@ -5863,7 +5867,7 @@ export const posts_2026_09: BlogPost[] = [
   <ul>
     <li><strong>139g — 미즈노 레이싱화 역사상 가장 가볍습니다.</strong> 메타스피드 레이(129g) 다음가는 초경량 체급입니다</li>
     <li><strong>34mm 로우 스택·3.5mm 드롭</strong>으로 5K~10K 단거리에 최적화됐습니다. 풀 마라톤에는 쿠션이 부족합니다</li>
-    <li><strong>399,000원에 내구성 200km</strong> — 이 사이트가 다룬 신발 중 km당 단가가 가장 높은 축(약 1,995원)입니다</li>
+    <li><strong>309,000원에 내구성 200km</strong> — 이 사이트가 다룬 신발 중 km당 단가가 높은 축(약 1,545원, 141종 중 5번째)입니다</li>
   </ul>
 </div>
 
@@ -5889,7 +5893,7 @@ export const posts_2026_09: BlogPost[] = [
 <p>같은 라인의 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>(170g·38mm)와는 거리로 갈립니다. 퓨어는 5K~10K에 최적화돼 있어 풀코스가 목표라면 스택이 더 높은 엘리트가 맞습니다. 3.5mm의 낮은 드롭이 전방 추진을 강하게 유도하는 구조라 하체 부하가 크므로, 인터벌 등으로 충분히 적응된 러너가 아니면 부담이 됩니다.</p>
 
 <h2>가격 대비 가치</h2>
-<p>399,000원·내구성 200km 기준 km당 약 1,995원으로 이 사이트가 다룬 신발 중 운용 비용이 가장 높은 축입니다. 가성비를 논할 신발이 아니라, <strong>5K/10K 대회에서 PB 갱신을 노리는 투자</strong>로 접근해야 합니다.</p>
+<p>309,000원·내구성 200km 기준 km당 약 1,545원으로 이 사이트가 다룬 신발 141종 중 5번째로 운용 비용이 높습니다. 가성비를 논할 신발이 아니라, <strong>5K/10K 대회에서 PB 갱신을 노리는 투자</strong>로 접근해야 합니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>

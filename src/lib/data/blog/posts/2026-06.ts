@@ -2671,18 +2671,18 @@ export const posts_2026_06: BlogPost[] = [
     slug: 'mizuno-running-shoes-lineup-tier-guide-2026',
     title: '미즈노 러닝화 계급도 2026 — 웨이브 라이더·인스파이어·하이퍼워프, Wave 플레이트로 읽는 전체 라인업 | 입문부터 카본 슈퍼슈즈까지 한 장 정리',
     description:
-      '미즈노 러닝화 11종을 전통 Wave 라인(라이더 데일리·스카이 쿠션·인스파이어/호라이즌 안정화·리벨리온 템포)과 네오 비스타 플레이트 트레이너, 신세대 하이퍼워프 카본으로 한 장에. 30세대로 바뀐 웨이브 라이더 30까지 반영했습니다. 인스파이어 15.9만부터 하이퍼워프 퓨어 39.9만까지 가격·무게·폼 비교표 + Wave 플레이트가 뭔지 + 하이퍼워프 3형제 거리별 차이 + 미즈노가 의외로 발볼 넓은 이유까지 정리했습니다.',
+      '미즈노 러닝화 11종을 전통 Wave 라인(라이더 데일리·스카이 쿠션·인스파이어/호라이즌 안정화·리벨리온 템포)과 네오 비스타 플레이트 트레이너, 신세대 하이퍼워프 카본으로 한 장에. 30세대로 바뀐 웨이브 라이더 30까지 반영했습니다. 인스파이어 15.9만부터 하이퍼워프 퓨어 30.9만까지 가격·무게·폼 비교표 + Wave 플레이트가 뭔지 + 하이퍼워프 3형제 거리별 차이 + 미즈노가 의외로 발볼 넓은 이유까지 정리했습니다.',
     thumbnail: '/images/blog/mizuno-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-09',
     category: 'guide' as const,
     readingTime: 12,
     tags: ['미즈노 러닝화', '미즈노 계급도', '러닝화 라인업', '러닝화 등급', '웨이브 라이더', '웨이브 인스파이어', '하이퍼워프', 'Wave 플레이트', '안정화', '일본 러닝화'],
     faqs: [
       { question: '미즈노 "웨이브(Wave)"가 뭔가요?', answer: '미즈노의 정체성인 미드솔 플레이트입니다. 파도 모양의 플라스틱 판이 들어가 충격을 분산하고 반발과 안정성을 동시에 제공해요. 그래서 미즈노 특유의 "딴딴하고 안정적인" 착지감이 나옵니다. 전통 라인은 모두 "웨이브 OO"(라이더·스카이·인스파이어·호라이즌·리벨리온)로 시작합니다.' },
       { question: '하이퍼워프는 웨이브랑 뭐가 다른가요?', answer: '하이퍼워프(HyperWarp)는 미즈노의 신세대 카본 슈퍼슈즈 라인입니다. 전통 Wave 플레이트 대신 카본 플레이트와 PEBA 폼을 넣어 슈퍼슈즈 경쟁에 본격 참전한 모델이에요. 즉 "웨이브"는 안정·데일리의 전통, "하이퍼워프"는 레이싱 최상위 신세대라고 보면 됩니다.' },
-      { question: '하이퍼워프 퓨어·엘리트·프로는 뭐가 다른가요?', answer: '거리와 용도로 갈립니다. 퓨어는 139g 극한 경량으로 5K·10K 단거리 특화(최고가 39.9만), 엘리트는 170g으로 풀마라톤 레이스용, 프로는 201g 슈퍼트레이너로 훈련+대회 겸용입니다. 단거리 PB면 퓨어, 풀코스 레이스면 엘리트, 카본 훈련까지 겸하면 프로입니다.' },
+      { question: '하이퍼워프 퓨어·엘리트·프로는 뭐가 다른가요?', answer: '거리와 용도로 갈립니다. 퓨어는 139g 극한 경량으로 5K·10K 단거리 특화(최고가 30.9만), 엘리트는 170g으로 풀마라톤 레이스용, 프로는 201g 슈퍼트레이너로 훈련+대회 겸용입니다. 단거리 PB면 퓨어, 풀코스 레이스면 엘리트, 카본 훈련까지 겸하면 프로입니다.' },
       { question: '미즈노 안정화는 인스파이어랑 호라이즌 중 뭘 사야 하나요?', answer: '웨이브 인스파이어 21(15.9만)은 미즈노 안정화 중 가장 저렴한 가성비 모델, 웨이브 호라이즌 8(17.9만)은 미디얼 러버월과 Wave로 시장 최강 수준의 과내전 제어를 제공하는 프리미엄입니다. 가벼운 지지면 인스파이어, 심한 과내전·강한 교정이면 호라이즌입니다. 둘 다 와이드 옵션이 있습니다.' },
       { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 후속 라이더 30은 아직 랩 실측이 없어 폭 평가가 갈립니다(Believe in the Run은 좁은 편, Road Trail Run은 볼륨이 큰 편으로 평가). 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
     ],
@@ -2759,9 +2759,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>290g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-3"><strong>웨이브 리벨리온 플래시 3</strong></a></td><td>미드풋 템포</td><td>Enerzy XP (TPEE) + NXT</td><td>19.9만</td><td>244g</td><td>TPEE 듀얼폼, 플래시 2 진화형</td></tr>
     <tr><td><a href="/shoes/mizuno-neo-vista-3"><strong>네오 비스타 3</strong></a></td><td>플레이트 쿠션 트레이너</td><td>Enerzy NXT + 유리섬유 플레이트</td><td>21.9만</td><td>266g</td><td>고스택 극쿠션, 카본 없는 슈퍼트레이너</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>하이퍼워프 프로</strong></a></td><td>슈퍼트레이너</td><td>Enerzy XP + 카본</td><td>31.9만</td><td>201g</td><td>39mm, 훈련+대회 겸용</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>하이퍼워프 엘리트</strong></a></td><td>풀 레이싱</td><td>PEBA + 카본</td><td>34.9만</td><td>170g</td><td>38mm, 풀마라톤 특화</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>하이퍼워프 퓨어</strong></a></td><td>단거리 레이싱</td><td>PEBA + 카본</td><td>39.9만</td><td>139g</td><td>139g 극한 경량, 5K·10K 특화</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>하이퍼워프 프로</strong></a></td><td>슈퍼트레이너</td><td>Enerzy XP + 카본</td><td>24.9만</td><td>201g</td><td>39mm, 훈련+대회 겸용</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>하이퍼워프 엘리트</strong></a></td><td>풀 레이싱</td><td>PEBA + 카본</td><td>27.9만</td><td>170g</td><td>38mm, 풀마라톤 특화</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>하이퍼워프 퓨어</strong></a></td><td>단거리 레이싱</td><td>PEBA + 카본</td><td>30.9만</td><td>139g</td><td>139g 극한 경량, 5K·10K 특화</td></tr>
   </tbody>
 </table>
 
@@ -2788,9 +2788,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>특화 거리</th><th>무게·가격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>퓨어</strong></a></td><td>5K·10K 단거리</td><td>139g · 39.9만</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>엘리트</strong></a></td><td>풀마라톤 레이스</td><td>170g · 34.9만</td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>프로</strong></a></td><td>훈련+대회 슈퍼트레이너</td><td>201g · 31.9만</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pure"><strong>퓨어</strong></a></td><td>5K·10K 단거리</td><td>139g · 30.9만</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-elite"><strong>엘리트</strong></a></td><td>풀마라톤 레이스</td><td>170g · 27.9만</td></tr>
+    <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>프로</strong></a></td><td>훈련+대회 슈퍼트레이너</td><td>201g · 24.9만</td></tr>
   </tbody>
 </table>
 
