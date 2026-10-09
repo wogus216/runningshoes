@@ -261,3 +261,10 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-08
 - Images: 6 (side=SR_RT, front, back, angle=SB_FL, outsole=SB_BT, top)
+
+## Mizuno Neo Daichi 10
+- Source: 미즈노 유럽 공식몰 이미지 CDN (Salesforce Commerce) — J1GM268051, 색상 포기 듀(미즈노 한국 공식몰 판매 색상)
+- CDN: emea.mizuno.com/dw/image/v2/BDBS_PRD/on/demandware.static/-/Sites-masterCatalog_Mizuno/default/…/AW26/Footwear/SH_J1GM268051_{00,02,03,04,05,11}.png 투명 PNG 2000×2000
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-09
+- Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)

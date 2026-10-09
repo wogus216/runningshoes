@@ -11,6 +11,7 @@ import { shoe as mizunoHyperwarpPro } from './mizuno-hyperwarp-pro';
 import { shoe as mizunoNeoVista3 } from './mizuno-neo-vista-3';
 import { shoe as mizunoWaveRider30 } from './mizuno-wave-rider-30';
 import { shoe as mizunoWaveInspire22 } from './mizuno-wave-inspire-22';
+import { shoe as mizunoNeoDaichi10 } from './mizuno-neo-daichi-10';
 
 // 신발 1켤레 = 파일 1개 (mizuno/{slug}.ts). 추가 시 파일 생성 후 여기 등록.
 export const mizunoShoes: Shoe[] = [
@@ -26,4 +27,5 @@ export const mizunoShoes: Shoe[] = [
   mizunoHyperwarpPro,
   mizunoNeoVista3,
   mizunoWaveInspire22,
+  mizunoNeoDaichi10,
 ];
