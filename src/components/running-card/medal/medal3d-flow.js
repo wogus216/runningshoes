@@ -270,6 +270,9 @@ function changeStage(next, instant = false) {
   // Leaving the finished medal closes the result card: it belongs to the record as it was judged.
   if (left === -1) onReveal(null);
   stopMotion(); stopReveal(); stage = next; complete = false; touched = false; hideConfirm(); settlePlate();
+  if (stage === 3 && origins.longest === 'sample') {
+    values.longest = String(Math.min(value('distance'), Math.max(30, Math.ceil(value('distance') / value('count') * 10) / 10)));
+  }
   $('.chapters').classList.remove('is-done');
   root.dataset.scene = scenes[stage];
   $('.complete').hidden = true;
@@ -592,7 +595,7 @@ function commit(left) {
 function strike(i, instant) {
   struck.add(i);
   const p = places()[i];
-  $('#medal-status').textContent = p.face === 'struck' ? `${coinNames[i]} 동전을 새겼어요.` : i < 4 ? `${coinNames[i]}은 예시값이라 각인하지 않은 민짜를 앉혔어요.` : '';
+  $('#medal-status').textContent = p.face === 'struck' ? `${coinNames[i]} 동전을 새겼어요.` : i < 4 ? `${coinNames[i]}는 예시값이라 각인하지 않은 민짜를 앉혔어요.` : '';
   committed = liveRec();
   if (slots[i]) slots[i].rec = committed;
   restrikes.delete(i);
