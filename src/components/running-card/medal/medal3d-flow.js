@@ -836,7 +836,7 @@ function evict() {
 
 // ==== 3D ==============================================================================================================
 const FINISHES = {
-  gold: { name: '새틴 골드', metal: '#f3c66d', oxide: '#241707', env: .85 },
+  gold: { name: '새틴 골드', metal: '#f6d58c', oxide: '#241707', env: 1.02, key: 4.2, rim: 2.6 },
   silver: { name: '산화 은', metal: '#eeede9', oxide: '#1e1c1a', env: .75 },
   brass: { name: '앤티크 황동', metal: '#f0d9a8', oxide: '#17110b', env: .8 },
 };
@@ -888,6 +888,8 @@ function applyFinish() {
   const f = FINISHES[finishKey];
   uMetal.value = new THREE.Color(f.metal); uOxide.value = new THREE.Color(f.oxide); uEnamel.value = new THREE.Color('#17150f');
   if (scene) scene.environmentIntensity = f.env;
+  if (key) key.intensity = f.key || 3.6;
+  if (rim) rim.intensity = f.rim || 2.2;
   for (const [m, p] of solids) m.color.lerpColors(uOxide.value, uMetal.value, p);
 }
 function dataTex(src, w, h, channels, colorSpace = null, repeat = false) {
