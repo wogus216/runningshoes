@@ -8,7 +8,7 @@ export const posts_2026_10: BlogPost[] = [
     description: '국내에서 파는 러닝 양말 22종(나이키·아식스·뉴발란스·브룩스·데상트·데카트론·인진지·타비오·삭스업·스마트울·단터프·쿠팡 상위 국내 제품)의 공식 혼용률을 모아 섬유 성질별로 다시 계산했습니다. 나일론·폴리에스터·면 혼방·메리노 4갈래로 갈리고, 쿠팡 상위 국내 제품은 면 70%였습니다. 소재로 알 수 있는 것과 없는 것을 나눠, 땀·물집·겨울·조이는 핏 상황별로 고르는 법을 정리했습니다.',
     thumbnail: '/images/blog/running-socks-guide-fiber-composition-2026.webp',
     author: '산초 에디터',
-    publishedAt: '2026-10-08',
+    publishedAt: '2026-10-09',
     category: 'guide' as const,
     readingTime: 9,
     tags: ['러닝 양말 추천', '러닝 양말', '마라톤 양말', '발가락양말', '메리노 양말', '쿨맥스 양말', '러닝 양말 소재'],
