@@ -3890,7 +3890,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">슈퍼블라스트 3 정보 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>
 
 <h2>관련 글</h2>
@@ -4594,7 +4594,7 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-product">1080 v15 보기 →</span>
     </a>
   </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
+  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>
 
 <h2>관련 글</h2>
