@@ -2,11 +2,18 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { ArrowUpRight, Share2, ChevronLeft } from 'lucide-react';
 import { SITE_NAME } from '@/lib/constants';
 
 export function DetailHeader() {
+  const router = useRouter();
   const [shareLabel, setShareLabel] = useState('공유');
+
+  const handleBack = () => {
+    const fromRecommend = new URLSearchParams(window.location.search).get('from') === 'recommend';
+    router.push(fromRecommend ? '/recommend#recommend-results' : '/');
+  };
 
   const handleShare = async () => {
     const shareData = {
@@ -35,13 +42,14 @@ export function DetailHeader() {
       <div className="mx-auto max-w-5xl px-4">
         <div className="flex h-16 items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3">
-            <Link
-              href="/"
+            <button
+              type="button"
+              onClick={handleBack}
               className="rounded-full p-2 transition-colors hover:bg-white/70"
-              aria-label="홈으로 이동"
+              aria-label="이전 화면으로 이동"
             >
               <ChevronLeft className="w-5 h-5" strokeWidth={1.5} aria-hidden="true" />
-            </Link>
+            </button>
             <div className="min-w-0">
               <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-slate-500">Running Index</p>
               <Link href="/" className="truncate text-base font-bold text-primary md:text-lg">{SITE_NAME}</Link>

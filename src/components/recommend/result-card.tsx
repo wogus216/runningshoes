@@ -47,28 +47,18 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       )}
     >
       <div className="absolute inset-x-0 top-0 h-1.5 bg-[linear-gradient(90deg,var(--accent)_0%,var(--signal-dark)_100%)]" />
-      {/* 랭킹 뱃지 */}
-      <div
-        className={cn(
-          "absolute -top-3 -left-3 w-10 h-10 rounded-full flex items-center justify-center text-lg font-bold",
-          isTopPick
-            ? "bg-[var(--navy)] text-white"
-            : "border border-sky-100 bg-white text-primary"
-        )}
-      >
-        {rank}
+      <div className="mb-3 flex items-center justify-between gap-2">
+        <span className={cn(
+          "flex h-8 w-8 items-center justify-center rounded-full text-sm font-bold",
+          isTopPick ? "bg-[var(--navy)] text-white" : "border border-sky-100 bg-white text-primary"
+        )}>{rank}</span>
+        {isTopPick && <span className="rounded-full bg-[var(--navy)] px-3 py-1 text-xs font-medium text-white">최고 추천</span>}
       </div>
 
-      {isTopPick && (
-        <span className="absolute -top-3 right-4 rounded-full bg-[var(--navy)] px-3 py-1 text-xs font-medium text-white">
-          최고 추천
-        </span>
-      )}
-
       {/* 헤더 */}
-      <div className="flex items-start gap-4 mb-4 pt-2">
+      <div className="mb-4 grid grid-cols-[4rem_minmax(0,1fr)] items-start gap-x-3 gap-y-2 sm:grid-cols-[4rem_minmax(0,1fr)_auto]">
         {/* 이미지 */}
-        <div className="flex h-16 w-16 flex-shrink-0 items-center justify-center overflow-hidden rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))]">
+        <div className="row-span-2 flex h-16 w-16 items-center justify-center overflow-hidden rounded-[4px] bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.98),rgba(226,240,252,0.92))] sm:row-span-1">
           {shoe.image ? (
             <Image src={img(shoe.image)} alt={shoe.name} width={64} height={64} className="object-contain" />
           ) : (
@@ -76,16 +66,16 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
           )}
         </div>
 
-        <div className="flex-1 min-w-0">
+        <div className="min-w-0">
           <p className="text-xs uppercase tracking-wider text-sky-700">
             {shoe.brand}
           </p>
-          <h3 className="text-lg font-bold text-primary truncate">{shoe.name}</h3>
+          <h3 className="break-keep text-lg font-bold text-primary">{shoe.name}</h3>
           <p className="text-sm text-secondary">{shoe.category}</p>
         </div>
 
-        <div className="text-right flex-shrink-0">
-        <div className="flex items-center gap-0.5">
+        <div className="min-w-0 text-left sm:text-right">
+          <div className="flex items-center gap-0.5">
             {Array.from({ length: 5 }).map((_, i) => (
               <Star
                 key={i}
@@ -99,7 +89,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
             ))}
           </div>
           {shoe.price && (
-            <p className="text-lg font-bold text-primary mt-1">
+            <p className="mt-1 whitespace-nowrap text-lg font-bold text-primary">
               ₩{shoe.price.toLocaleString()}
             </p>
           )}
@@ -130,9 +120,9 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
             {shoe.matchReasons.slice(0, 4).map((reason, idx) => (
               <span
                 key={idx}
-                className="inline-flex items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700"
+                className="inline-flex max-w-full items-center gap-1 rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700"
               >
-                <Check className="h-3 w-3" />
+                <Check className="h-3 w-3 shrink-0" />
                 {reason}
               </span>
             ))}
@@ -162,7 +152,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
                   <p className="text-xs font-semibold text-tertiary uppercase tracking-wider mb-2">
                     추천 신발 평균 대비
                   </p>
-                  <div className="grid grid-cols-3 gap-2">
+                  <div className="grid gap-2 sm:grid-cols-3">
                     <div className="flex items-center gap-1 text-xs">
                       {getComparisonIcon(shoe.comparisonToAvg.cushioning)}
                       <span className="text-secondary">쿠셔닝</span>
@@ -205,28 +195,26 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
       )}
 
       {/* 주요 스펙 */}
-      <div className="mb-4 grid grid-cols-3 gap-3 rounded-[4px] bg-sky-50 p-3">
+      <div className="mb-4 grid grid-cols-3 gap-1 rounded-[4px] bg-sky-50 p-3 sm:gap-3">
         <div className="text-center">
           <p className="text-xs text-tertiary">무게</p>
-          <p className="font-bold text-primary">{shoe.specs?.weight}g</p>
+          <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.weight}g</p>
         </div>
         <div className="text-center">
           <p className="text-xs text-tertiary">쿠셔닝</p>
-          <p className="font-bold text-primary">{shoe.specs?.cushioning}/10</p>
+          <p className="break-words text-sm font-bold text-primary sm:text-base">{shoe.specs?.cushioning}/10</p>
         </div>
         <div className="text-center">
           <p className="text-xs text-tertiary">내구성 (추정)</p>
-          <p className="font-bold text-primary">{getShoeDurability(shoe)?.rangeLabel ?? '-'}</p>
+          <p className="break-words text-sm font-bold text-primary sm:text-base">{getShoeDurability(shoe)?.rangeLabel ?? '-'}</p>
         </div>
       </div>
 
       {/* 액션 버튼 */}
       <div className="flex items-center gap-3">
-        <Link href={`/shoes/${shoe.slug}`} className="flex-1">
-          <button className="flex w-full items-center justify-center gap-2 rounded-full bg-[var(--navy)] py-3 text-sm font-semibold text-white transition hover:bg-[var(--navy-soft)]">
-            상세 보기
-            <ArrowRight className="h-4 w-4" />
-          </button>
+        <Link href={{ pathname: `/shoes/${shoe.slug}`, query: { from: 'recommend' } }} className="flex flex-1 items-center justify-center gap-2 rounded-full bg-[var(--navy)] py-3 text-sm font-semibold text-white transition hover:bg-[var(--navy-soft)]">
+          상세 보기
+          <ArrowRight className="h-4 w-4" />
         </Link>
         <AddToCompareButton shoe={shoe} variant="icon" className="h-12 w-12" />
       </div>

@@ -102,6 +102,12 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
     recordRecommend(summary);
   }, [profile]);
 
+  useEffect(() => {
+    if (!profile || !recommendations.length || window.location.hash !== '#recommend-results') return;
+    const frame = requestAnimationFrame(() => document.getElementById('recommend-results')?.scrollIntoView({ block: 'start' }));
+    return () => cancelAnimationFrame(frame);
+  }, [profile, recommendations.length]);
+
   return (
     <div className="space-y-6">
       <section className="relative overflow-hidden rounded-[4px] border border-[var(--accent-line)] bg-[linear-gradient(135deg,rgba(255,255,255,0.98)_0%,rgba(247,244,237,0.94)_44%,rgba(239,234,224,0.92)_100%)] px-5 py-5 md:px-8 md:py-8">
@@ -210,7 +216,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
 
             {/* 추천 결과 */}
             {recommendations.length > 0 ? (
-              <div className="space-y-4">
+              <div id="recommend-results" className="scroll-mt-20 space-y-4">
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Recommendation Board</p>
                   <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">추천 신발</h2>
