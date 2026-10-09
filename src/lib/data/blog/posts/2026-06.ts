@@ -5415,6 +5415,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/chicago-marathon-2026-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
+    updatedAt: '2026-10-10',
     event: {
       name: '시카고마라톤 2026',
       startDate: '2026-10-11',
@@ -5426,7 +5427,7 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 8,
     tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 막차 안내</span><span class="dl-text">2026 시카고마라톤(10/11) 일반 추첨과 <strong>투어 패키지(8/16)는 마감</strong>됐습니다. <strong>지금 남은 건 자선(charity) 한 갈래뿐이고 그마저 9월 15일에 닫힙니다</strong> — 대회가 10월 11일이라 항공·숙소까지 함께 잡아야 하는 일정입니다.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 2027 접수중</span><span class="dl-text">2026 대회(10월 11일)는 모든 신청 경로가 닫혔습니다. <strong>2027 대회(2027년 10월 10일) 지원은 한국시간 10월 30일(금) 새벽 4시까지 열려 있습니다</strong> — 일정·기록 기준표·신청 순서는 <a href="/blog/chicago-marathon-2027-application-guide">시카고마라톤 2027 접수 가이드</a>에 정리했습니다.</span></div>
 
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
 <li><strong>일반 추첨은 끝났습니다.</strong> 2025-11-18 신청 마감, 12-11 결과 발표로 추첨 경로는 이미 닫혔어요. 2026 대회는 10월 11일(일) 개최되는 48회입니다.</li>

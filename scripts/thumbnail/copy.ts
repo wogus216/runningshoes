@@ -38,6 +38,13 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: chicagomarathon.com/apply 원문(2026-10-09 확인) — 지원 10/8~10/29 14시(미국 중부)=한국 10/30 04시,
+  // 추첨 결과 12/8, 해외 거주자 참가비 $260, 기록 보장 16~34세 남 2:50·여 3:20.
+  'chicago-marathon-2027-application-guide': {
+    title: '시카고마라톤 2027, 접수 시작',
+    subtitle: '한국시간 10월 30일 새벽 4시 마감 · 추첨 결과 12월 8일 · 선착순 아님',
+    data: '참가비 $260(해외) · 기록 보장 16~34세 남 2:50 · 여 3:20',
+  },
   // 출처: 미즈노 보도자료 corp.mizuno.com/jp/news-release/2026/20261008(2026-10-09 원문 확인) — 4종·일본 발매일·
   // 일본 세금 포함가. 한국 가격·출시일은 미발표.
   'mizuno-hyperwarp-2-lineup-announcement-2026': {
