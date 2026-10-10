@@ -1690,19 +1690,19 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
   c.width = W; c.height = H;
   const g = c.getContext('2d');
   if (page === 'cover') {
+    const coverFinish = finishKey;
     await facesReady();
-    const pins = hideNumbers ? [...HIDDEN].map(hiddenSig) : [];
-    pins.forEach(sig => sharePins.add(sig));
-    try {
-      if (hideNumbers) await Promise.all([...HIDDEN].map(k => want(hiddenSig(k), coinMsg(scenes[k], liveRec(), 'hidden', RES.seat), 0)));
+    if (destroyed) throw new Error('destroyed');
+    const coverId = plate.figure.id;
+    settleNow();
+    // Only cover 1 uses M2's round medal. The analysis and the live medal keep their scene and maps.
+    const { renderCoverMedal, paintCoverMedal } = await import('./medal-cover-renderer.js');
+    const medalImage = await renderCoverMedal({ id: coverId, finish: coverFinish, webgl: !!renderer });
+    if (destroyed) throw new Error('destroyed');
+    await drawCover(g, kind, card, (fig, target = g) => {
       if (destroyed) throw new Error('destroyed');
-      settleNow();
-      // drawCover waits for the picture and the fonts first; the flow may be torn down ('다시 하기') in between.
-      await drawCover(g, kind, card, (fig, target = g) => {
-        if (destroyed) throw new Error('destroyed');
-        return renderFigure(target, fig, hideNumbers);
-      });
-    } finally { pins.forEach(sig => sharePins.delete(sig)); }
+      return paintCoverMedal(target, fig, medalImage);
+    });
   } else {
     await facesReady();
     const pins = hideNumbers ? [...HIDDEN].map(hiddenSig) : [];

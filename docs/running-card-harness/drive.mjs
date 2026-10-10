@@ -1,16 +1,17 @@
 // Drives /running-card in headless Chrome over CDP with mouse clicks at element centres, then saves the share images
 // through the result card's own buttons and reads them back from the '열기' links (blob URLs).
-// Usage: node drive.mjs <outDir> <url> [label] [distanceKm] [hard] [goal]
+// Usage: node drive.mjs <outDir> <url> [label] [distanceKm] [hard] [goal] [webgl|flat]
 // Ad and analytics hosts are blocked (a headless run must not count as ad impressions).
 import { spawn } from 'node:child_process';
 import fs from 'node:fs';
 import path from 'node:path';
 
-const [OUT, URL_, LABEL = 'run', DIST = '', HARD = '2', GOAL = 'habit'] = process.argv.slice(2);
+const [OUT, URL_, LABEL = 'run', DIST = '', HARD = '2', GOAL = 'habit', MODE = 'webgl'] = process.argv.slice(2);
 fs.mkdirSync(OUT, { recursive: true });
 const PORT = 9300 + Math.floor(Math.random() * 600);
 const chrome = spawn('/Applications/Google Chrome.app/Contents/MacOS/Google Chrome', [
   '--headless=new', `--remote-debugging-port=${PORT}`, `--user-data-dir=${path.join(OUT, `.chrome-${PORT}`)}`,
+  ...(MODE === 'flat' ? ['--disable-3d-apis'] : []),
   '--window-size=390,844', '--enable-unsafe-swiftshader', '--use-angle=swiftshader', '--no-first-run', '--force-device-scale-factor=2', '--host-resolver-rules=MAP *googlesyndication.com 0.0.0.0, MAP *doubleclick.net 0.0.0.0, MAP *google-analytics.com 0.0.0.0, MAP *googletagmanager.com 0.0.0.0, MAP *adtrafficquality.google 0.0.0.0, MAP *googleadservices.com 0.0.0.0, MAP *fundingchoicesmessages.google.com 0.0.0.0', '--disable-extensions', '--disable-component-extensions-with-background-pages', 'about:blank',
 ], { stdio: 'ignore' });
 const kill = () => { try { chrome.kill('SIGKILL'); } catch {} };
@@ -87,6 +88,9 @@ for (let step = 0; step < 60; step++) {
 }
 if (!(await ev(vis('.complete')))) { log('FAIL: never reached the finished medal'); console.log(errors.join('\n')); kill(); process.exit(1); }
 await sleep(3500);
+if (await ev(`document.querySelector('.journey').classList.contains('revealing')`)) await click('#reveal-skip');
+for (let i = 0; i < 120 && !(await ev(`!!document.querySelector('.rc-result')`)); i++) await sleep(250);
+if (!(await ev(`!!document.querySelector('.rc-result')`))) throw new Error('result did not become ready');
 const figure = await ev(`document.querySelector('#complete-epithet')?.textContent`);
 log('완성:', figure);
 await click('#open-result');
@@ -155,6 +159,28 @@ if(sharedFiles?.length!==2||sharedFiles.some(f=>f.size<1000||f.type!=='image/png
 log('native share files',sharedFiles);
 const shot = await send('Page.captureScreenshot', { format: 'png' });
 fs.writeFileSync(path.join(OUT, `${LABEL}-share-section.png`), Buffer.from(shot.result.data, 'base64'));
+const hrefs = await ev(`[...document.querySelectorAll('.rc-result a[href]')].map(a=>({text:a.textContent.trim(),href:a.href}))`);
+const links = await Promise.all(hrefs.map(async a => { const r = await fetch(a.href); return { ...a, status: r.status }; }));
+if (!links.length || links.some(a => a.status !== 200)) throw new Error('broken result link');
+fs.writeFileSync(path.join(OUT, `${LABEL}-links.json`), JSON.stringify(links, null, 2));
+log('result links', links);
+for (const finish of ['silver', 'brass']) {
+  await click(`input[name=finish][value=${finish}] + span`);
+  await click('.rc-actions .rc-row button:first-child');
+  for (let i = 0; i < 120; i++) {
+    await sleep(250);
+    if (await ev(`!document.querySelector('.rc-actions .rc-primary').disabled`)) break;
+  }
+  await click('.rc-share > button.rc-primary');
+  const files = await ev('window.__qaSharedFiles');
+  if (files?.length !== 1 || files[0].size < 1000 || !files[0].name.includes('cover')) throw new Error(`${finish} cover-only share failed`);
+  await grab(`${finish}-cover-only`);
+}
+if (fs.readFileSync(path.join(OUT, `${LABEL}-silver-cover-only-1.png`)).equals(fs.readFileSync(path.join(OUT, `${LABEL}-brass-cover-only-1.png`)))) throw new Error('finish did not update cover');
+await click('.rc-restart');
+for (let i = 0; i < 120 && !(await ev(`!!document.querySelector('#next') && !document.querySelector('.rc-result')`)); i++) await sleep(250);
+if (!(await ev(`!!document.querySelector('#next') && !document.querySelector('.rc-result')`))) throw new Error('restart failed');
+log('restart', 'passed');
 log('errors', errors.length ? errors : '없음');
 clearTimeout(watchdog);
 kill();
