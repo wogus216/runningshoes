@@ -93,7 +93,7 @@ export function RunningCardResult({ judged, drawResultMedal, finishRevision, sha
     <section className="rc-result" id="rc-result" aria-labelledby="rc-result-name">
       <div className="rc-result-mast"><span>RUNNING CARD / 28D</span><span>나의 메달 분석</span></div>
       <figure className="rc-result-medal" data-status={medalStatus}>
-        <canvas ref={medalCanvas} width={640} height={640} role="img" aria-label={`${character.name}과 지난 28일의 기록이 새겨진 메달`} />
+        <canvas ref={medalCanvas} width={640} height={640} role="img" aria-label={`지난 28일의 기록 동전과 ${character.name}을 상징하는 표식이 새겨진 메달`} />
         {medalStatus === 'loading' && <figcaption>메달을 새기는 중…</figcaption>}
         {medalStatus === 'error' && <figcaption>메달을 보여주지 못했어요. 위의 완성된 메달을 확인해 주세요.</figcaption>}
       </figure>

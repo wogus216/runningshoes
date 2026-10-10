@@ -1,3 +1,5 @@
+import { CHARACTER_SIGNS } from './medal3d-character-signs.js';
+
 // 3D-1 relief maps for the seven coins of the 28-day medal. No three.js here: every coin face is drawn as a height field
 // in face units (the struck face is the unit disc, y down), then turned into the maps the coin material reads —
 // polish (oxidised 0 … polished 1), normal, and AO/roughness/metalness. Heights come from the entered values only, and the
@@ -470,127 +472,26 @@ export function socket(S = 256, label = '') {
   pxs = 1;
   return { S, H, ...maps(H, S, S, { depth: .05 / (2 / S), lo: .42, hi: .5, oxide: [.05, .06], top: .55, rough: [.55, .35], ao: 1, shadow: 0, wear: 0 }) };
 }
-// ---- the eighth strike: the figure's house sign ----------------------------------------------------------------------
-// S3 (step 1 of D8): one sign per house of the twelve, drawn as Canvas paths in a box from -1 to 1 (y down) and struck like the
-// coins' motifs — white is raised metal, black (carve) cuts back to the enamel. Plain silhouettes with strokes of .13 box
-// units or more: on the finished medal the sign is about 25 to 30px tall. Hera's crown, Hermes' winged hat and the plainer
-// wheat ear replaced a peacock eye, a wingless snake staff (it read as a medical sign) and a seven-grain ear that did not
-// read at that size (operator, 2026-10-06; D9 is about a lone NIKE, the name here is in Hangul).
-const carve = (g, draw) => { g.save(); g.fillStyle = g.strokeStyle = '#000'; draw(); g.restore(); };
-const shape = (g, pts) => { g.beginPath(); pts.forEach(([x, y], i) => i ? g.lineTo(x, y) : g.moveTo(x, y)); g.closePath(); };
-// A ring of round shapes each cut out of the ones drawn before it, so they read as separate grains, grapes.
-const cut = (g, path, w = .07) => { path(); carve(g, () => { g.lineWidth = w; g.stroke(); }); g.fill(); };
-export const SIGNS = {
-  // A thunderbolt.
-  '제우스': g => { shape(g, [[-.04, -1], [.52, -1], [.14, -.2], [.5, -.2], [-.4, 1], [-.06, .1], [-.44, .1]]); g.fill(); },
-  // A crown (diadem): three points with balls on a band, the band cut off by a groove.
-  '헤라': g => {
-    shape(g, [[-.86, .5], [-.74, -.27], [-.38, .19], [0, -.55], [.38, .19], [.74, -.27], [.86, .5]]); g.fill();
-    shape(g, [[-.86, .48], [.86, .48], [.86, .8], [-.86, .8]]); g.fill();
-    for (const [x, y, r] of [[-.74, -.38, .13], [0, -.68, .15], [.74, -.38, .13]]) { g.beginPath(); g.arc(x, y, r, 0, TAU); g.fill(); }
-    carve(g, () => { g.lineWidth = .08; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.9, .47); g.lineTo(.9, .47); g.stroke(); });
-  },
-  // A trident.
-  '포세이돈': g => {
-    g.lineWidth = .2; g.lineCap = 'butt';
-    g.beginPath(); g.moveTo(0, 1); g.lineTo(0, -.66); g.stroke();
-    g.beginPath(); g.moveTo(-.6, -.66); g.lineTo(-.6, -.44); g.quadraticCurveTo(-.6, -.12, 0, -.12); g.quadraticCurveTo(.6, -.12, .6, -.44); g.lineTo(.6, -.66); g.stroke();
-    for (const x of [-.6, 0, .6]) { shape(g, [[x, -1], [x + .2, -.6], [x - .2, -.6]]); g.fill(); }
-  },
-  // An ear of wheat: a top grain and two pairs, large, on a thick stem.
-  '데메테르': g => {
-    g.lineWidth = .17; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, 1); g.lineTo(0, .2); g.stroke();
-    for (const [x, y, a] of [[0, -.6, 0], [-.25, -.16, -.55], [.25, -.16, .55], [-.25, .26, -.55], [.25, .26, .55]]) cut(g, () => { g.beginPath(); g.ellipse(x, y, .21, .34, a, 0, TAU); }, .09);
-  },
-  // An owl, face on: ear tufts, two eyes cut into the face, the beak.
-  '아테나': g => {
-    g.beginPath(); g.ellipse(0, .14, .7, .86, 0, 0, TAU); g.fill();
-    for (const s of [-1, 1]) { shape(g, [[s * .18, -.52], [s * .66, -1], [s * .7, -.4]]); g.fill(); }
-    carve(g, () => { for (const s of [-1, 1]) { g.beginPath(); g.arc(s * .29, -.2, .25, 0, TAU); g.fill(); } shape(g, [[-.11, .12], [.11, .12], [0, .36]]); g.fill(); });
-    for (const s of [-1, 1]) { g.beginPath(); g.arc(s * .29, -.2, .11, 0, TAU); g.fill(); }
-  },
-  // The sun: a disc ringed by eight rays.
-  '아폴론': g => {
-    g.beginPath(); g.arc(0, 0, .46, 0, TAU); g.fill();
-    for (let k = 0; k < 8; k++) { const a = k / 8 * TAU - Math.PI / 2, w = .17; shape(g, [[.6 * Math.cos(a - w), .6 * Math.sin(a - w)], [Math.cos(a), Math.sin(a)], [.6 * Math.cos(a + w), .6 * Math.sin(a + w)]]); g.fill(); }
-    carve(g, () => { g.lineWidth = .08; g.beginPath(); g.arc(0, 0, .3, 0, TAU); g.stroke(); });
-  },
-  // A crescent moon, horns up.
-  '아르테미스': g => {
-    g.beginPath(); g.arc(0, -.22, .86, 0, TAU); g.fill();
-    carve(g, () => { g.beginPath(); g.arc(0, -.64, .76, 0, TAU); g.fill(); });
-  },
-  // A round shield over a spear.
-  '아레스': g => {
-    g.lineWidth = .14; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.88, .88); g.lineTo(.7, -.7); g.stroke();
-    shape(g, [[.98, -.98], [.54, -.8], [.8, -.54]]); g.fill();
-    g.beginPath(); g.arc(-.04, .04, .66, 0, TAU); g.fill();
-    carve(g, () => { g.lineWidth = .09; g.beginPath(); g.arc(-.04, .04, .5, 0, TAU); g.stroke(); g.lineWidth = .07; g.beginPath(); g.arc(-.04, .04, .18, 0, TAU); g.stroke(); });
-  },
-  // A scallop shell: a fan of seven ribs with a scalloped rim, on its hinge.
-  '아프로디테': g => {
-    const cy = .4, R = 1.0, a0 = Math.PI * 1.14, a1 = Math.PI * 1.86, ribs = 7, at = (a, r) => [r * Math.cos(a), cy + r * Math.sin(a)];
-    g.beginPath(); g.moveTo(0, cy); g.lineTo(...at(a0, .93 * R));
-    for (let k = 0; k < ribs; k++) { const t1 = a0 + (a1 - a0) * (k + 1) / ribs, tm = a0 + (a1 - a0) * (k + .5) / ribs; g.quadraticCurveTo(...at(tm, 1.07 * R), ...at(t1, .93 * R)); }
-    g.closePath(); g.fill();
-    shape(g, [[-.22, cy - .04], [.22, cy - .04], [.13, cy + .2], [-.13, cy + .2]]); g.fill();
-    carve(g, () => { g.lineWidth = .07; g.lineCap = 'butt'; for (let k = 1; k < ribs; k++) { const t = a0 + (a1 - a0) * k / ribs; g.beginPath(); g.moveTo(...at(t, .26)); g.lineTo(...at(t, .86 * R)); g.stroke(); } });
-  },
-  // An anvil, horn to the left.
-  '헤파이스토스': g => {
-    g.beginPath(); g.moveTo(-.3, -.66); g.lineTo(.96, -.66); g.lineTo(.96, -.4); g.lineTo(.46, -.32); g.lineTo(.3, .16); g.lineTo(.72, .46); g.lineTo(.72, .66);
-    g.lineTo(-.72, .66); g.lineTo(-.72, .46); g.lineTo(-.3, .16); g.lineTo(-.42, -.3); g.quadraticCurveTo(-.74, -.34, -1, -.56); g.quadraticCurveTo(-.7, -.7, -.3, -.66); g.closePath(); g.fill();
-  },
-  // The winged hat (petasos): a low crown on a wide brim, a hat band cut in, three feathers fanning up from each side.
-  '헤르메스': g => {
-    const by = .42;
-    for (const s of [-1, 1]) for (const [a, len] of [[-1.25, .66], [-.92, .74], [-.6, .7]]) {
-      const ux = s * Math.cos(a), uy = Math.sin(a), rx = .28 * s, ry = by - .34;
-      cut(g, () => { g.beginPath(); g.ellipse(rx + ux * len / 2, ry + uy * len / 2, len / 2, .13, Math.atan2(uy, ux), 0, TAU); }, .06);
-    }
-    g.beginPath(); g.ellipse(0, by - .02, .44, .48, 0, Math.PI, TAU); g.closePath(); g.fill();
-    g.beginPath(); g.ellipse(0, by, .8, .17, 0, 0, TAU); g.fill();
-    carve(g, () => { g.lineWidth = .08; g.lineCap = 'butt'; g.beginPath(); g.moveTo(-.42, by - .13); g.lineTo(.42, by - .13); g.stroke(); });
-  },
-  // A bunch of grapes under its leaf.
-  '디오니소스': g => {
-    g.lineWidth = .11; g.lineCap = 'butt'; g.beginPath(); g.moveTo(0, -.5); g.quadraticCurveTo(.02, -.8, .22, -.98); g.stroke();
-    g.beginPath(); g.ellipse(-.36, -.7, .34, .17, -.35, 0, TAU); g.fill();
-    for (const [y, xs] of [[-.3, [-.42, -.14, .14, .42]], [.02, [-.28, 0, .28]], [.34, [-.14, .14]], [.66, [0]]]) for (const x of xs) cut(g, () => { g.beginPath(); g.arc(x, y, .18, 0, TAU); });
-  },
-};
-// The signs in words, for the status line a screen reader hears (it cannot see the plate).
-export const SIGN_NAMES = {
-  '제우스': '번개', '헤라': '왕관', '포세이돈': '삼지창', '데메테르': '밀 이삭', '아테나': '올빼미', '아폴론': '태양 원반',
-  '아르테미스': '초승달', '아레스': '둥근 방패', '아프로디테': '가리비', '헤파이스토스': '모루', '헤르메스': '날개 달린 모자', '디오니소스': '포도송이',
-};
-// The house's god would be named twice (아테나 가문, 아테나), so the sign stands for the house (S4 report 3-3 경계 15).
-export const plateStatus = figure => `명판을 새겼어요. ${figure.house === figure.name ? '' : `${figure.house} 가문의 `}${SIGN_NAMES[figure.house]} 기호와 ${figure.name}.`;
-// Plate layout (plate units, centre origin, y down): the sign on the left, a short rule, then the name alone, as large as
-// the rest allows (the house's name goes to the result card, S4). 지난 28일 leaves the plate: the share image's masthead
-// and the ribbon carry it.
-const SIGN_X = -.66, SIGN_R = .265, RULE_X = -.31, TEXT_X = .39, TEXT_W = 1.2, NAME_SIZE = .34;
+// ---- the eighth strike: one mark for each of the 36 figures ----------------------------------------------
+export const plateStatus = figure => `명판에 ${figure.name}의 ${CHARACTER_SIGNS[figure.id].name} 표식을 새겼어요.`;
+// Plate layout (plate units, centre origin, y down): one figure mark in the middle, balanced by short rules.
+// The name is in the result heading; 지난 28일 stays on the unjudged plate, the ribbon and the share masthead.
 function figurePlate(figure, W, Hh, scale) {
-  const sign = SIGNS[figure.house];
-  const a = bevel(mask(W, g => { g.translate(SIGN_X, 0); g.scale(SIGN_R, SIGN_R); if (sign) sign(g); }, W, Hh, scale), W, Hh, 2);
-  const b = bevel(mask(W, g => {
-    g.setTransform(1, 0, 0, 1, 0, 0);
-    g.textAlign = 'center'; g.textBaseline = 'alphabetic';
-    const font = size => `760 ${size}px StudySans, sans-serif`;
-    g.font = font(NAME_SIZE * scale);
-    let ink = g.measureText(figure.name);
-    if (ink.width > TEXT_W * scale) { g.font = font(NAME_SIZE * scale * TEXT_W * scale / ink.width); ink = g.measureText(figure.name); }
-    // Centred on the plate's middle line by the letters' own ink, not the font's em box.
-    g.fillText(figure.name, W / 2 + TEXT_X * scale, Hh / 2 + (ink.actualBoundingBoxAscent - ink.actualBoundingBoxDescent) / 2);
-    g.fillRect(W / 2 + RULE_X * scale - .007 * scale, Hh / 2 - .21 * scale, .014 * scale, .42 * scale);
-  }, W, Hh, scale), W, Hh, 1);
-  for (let i = 0; i < a.length; i++) a[i] = Math.max(a[i], b[i]);
-  return a;
+  const sign = CHARACTER_SIGNS[figure.id];
+  if (!sign) throw new Error(`Unknown medal figure: ${figure.id}`);
+  return bevel(mask(W, g => {
+    g.scale(.31, .31);
+    sign.draw(g);
+    // Short flanking rules keep the wide cartouche balanced without competing with the figure's mark.
+    g.setTransform(scale, 0, 0, scale, W / 2, Hh / 2);
+    g.fillRect(-.85, -.012, .34, .024);
+    g.fillRect(.51, -.012, .34, .024);
+  }, W, Hh, scale), W, Hh, 2);
 }
-// The centre plate's enamel: one ink enamel with raised metal letters. Until the judgement it reads 지난 28일 over a
-// rule; with a figure ({ name, house }: the eighth strike) it carries the house sign and the name. polish is 1 on metal,
+// The centre plate's enamel: one ink enamel with a raised metal mark. Until the judgement it reads 지난 28일 over a
+// rule; with a figure ({ id, name }: the eighth strike) it carries that figure's own mark. polish is 1 on metal,
 // 0 on enamel, and the metal channel matches it. Same figure, same pixels.
-/** @param {{ name: string, house: string } | null} [figure] */
+/** @param {{ id: string, name: string, house: string } | null} [figure] */
 export function plate(figure = null, W = 1024, Hh = 338, size = [2.18, .72]) {
   pxs = W / 1024;
   const scale = W / size[0];
@@ -607,6 +508,7 @@ export function plate(figure = null, W = 1024, Hh = 338, size = [2.18, .72]) {
   pxs = 1;
   return { W, Hh, H, ...out };
 }
+export const characterSignName = id => CHARACTER_SIGNS[id]?.name;
 // Ribbon print: signal orange with ink edge stripes and the allrunabout wordmark repeated along the length. Texture x =
 // across the ribbon, y = along it. The weave (normal map): grosgrain ribs across the width — the weft — over fine warp
 // threads along the length, each rib a little uneven, and the selvedge rolled at both edges.

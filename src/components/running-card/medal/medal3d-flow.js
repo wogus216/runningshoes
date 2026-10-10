@@ -658,12 +658,12 @@ function thumb(sig, N) {
 function describe() {
   const rec = liveRec(), P = places();
   const parts = scenes.map((k, i) => `${String(i + 1).padStart(2, '0')} ${Relief.NAMES[k]} ${P[i].face === 'empty' ? '빈 자리' : P[i].face === 'blank' ? '각인 안 한 민짜(예시값)' : Relief.label(k, rec)}`);
-  const named = plate.figure ? ` 가운데 명판에는 ${plate.figure.house} 가문 기호와 ${plate.figure.name}.` : '';
+  const named = plate.figure ? ` 가운데 명판에는 ${plate.figure.name}을 상징하는 ${Relief.characterSignName(plate.figure.id)} 표식.` : '';
   return `지난 28일의 메달. 끈 아래 동전 일곱 개가 가운데 판을 둘러싼 고리예요. 한 시 방향부터 시계 방향으로 ${parts.join(', ')}.${named}`;
 }
 
 // ==== the eighth strike: the plate ====================================================================================
-// After 07 the judgement goes onto the centre plate: the figure's house sign and name (Relief.plate(figure), built like a
+// After 07 the judgement goes onto the centre plate: the figure's own mark (Relief.plate(figure), built like a
 // face). It is struck in the coins' grammar once the whole medal is in view — the new face at preview strength for a
 // drop's time, then on impact the relief rises to full in 260ms and the medal gives once (strikeCoin) — and then the
 // title turns to the figure and its epithet. While the map is made, the line under the title (a status) says the spec's
@@ -682,7 +682,7 @@ function engrave(quick, wideIn) {
   plate.pending = f.id;
   // plate.at, not a closure: 건너뛰기 brings the strike forward while the plate's map is still being built.
   plate.at = performance.now() + (wideIn ?? 0);
-  plate.ready = want(plateSig(f), { type: 'plate', figure: { name: f.name, house: f.house } }, 0).then(() => { if (!destroyed && plate.pending === f.id) strikePlate(f, quick); });
+  plate.ready = want(plateSig(f), { type: 'plate', figure: { id: f.id, name: f.name, house: f.house } }, 0).then(() => { if (!destroyed && plate.pending === f.id) strikePlate(f, quick); });
 }
 function strikePlate(f, quick) {
   const at = plate.at;
