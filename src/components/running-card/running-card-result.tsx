@@ -62,16 +62,41 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
 
 // 결과 카드(S4, 설계 §3-2). 위의 3D 메달에서 이어지는 기록 요약(가문·인물·칭호·대표 수치·신탁) → 분석(세 점수·근거 2·강점·맹점·다음 14일)
 // → 회복 여유 정의 → 광고 1 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
-export function RunningCardResult({ judged, shareImage, onRestart }: { judged: JudgedRunner; shareImage: ShareImage; onRestart: () => void }) {
+export function RunningCardResult({ judged, drawResultMedal, finishRevision, shareImage, onRestart }: {
+  judged: JudgedRunner;
+  drawResultMedal: (canvas: HTMLCanvasElement) => Promise<void>;
+  finishRevision: number;
+  shareImage: ShareImage;
+  onRestart: () => void;
+}) {
   const { analysis, snapshot } = judged;
   const character = analysis.match.character;
   const card = shareCardOf(judged);
   const lead = card.scores.find((s) => s.lead)!;
   const raceGoal = snapshot.raceGoal;
+  const medalCanvas = useRef<HTMLCanvasElement>(null);
+  const [medalStatus, setMedalStatus] = useState<'loading' | 'ready' | 'error'>('loading');
+
+  useEffect(() => {
+    const canvas = medalCanvas.current;
+    if (!canvas) return;
+    let active = true;
+    drawResultMedal(canvas).then(() => {
+      if (active) setMedalStatus('ready');
+    }).catch(() => {
+      if (active) setMedalStatus('error');
+    });
+    return () => { active = false; };
+  }, [drawResultMedal, finishRevision, character.id]);
 
   return (
     <section className="rc-result" id="rc-result" aria-labelledby="rc-result-name">
       <div className="rc-result-mast"><span>RUNNING CARD / 28D</span><span>나의 메달 분석</span></div>
+      <figure className="rc-result-medal" data-status={medalStatus}>
+        <canvas ref={medalCanvas} width={640} height={640} role="img" aria-label={`${character.name}과 지난 28일의 기록이 새겨진 메달`} />
+        {medalStatus === 'loading' && <figcaption>메달을 새기는 중…</figcaption>}
+        {medalStatus === 'error' && <figcaption>메달을 보여주지 못했어요. 위의 완성된 메달을 확인해 주세요.</figcaption>}
+      </figure>
       <p className="rc-house">{character.house} 가문</p>
       <h2 className="rc-name" id="rc-result-name" tabIndex={-1}>{character.name}</h2>
       <p className="rc-epithet">{card.title}</p>

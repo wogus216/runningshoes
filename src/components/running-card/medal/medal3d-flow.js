@@ -32,7 +32,7 @@ import { MARKUP } from './medal3d-flow-markup.js';
 // share buttons call shareImage).
 // S5: onStep(n) when step n (1 … 7) is accepted and its coin struck — the measurement events live in React.
 // S6: figures ({ id, house, name } of every figure) — the names the reveal shuffles through before the plate is struck.
-export function mountMedalFlow(container, { judge, onReveal, onOpenResult, onStep, figures = [] }) {
+export function mountMedalFlow(container, { judge, onReveal, onOpenResult, onStep, onFinishChange, figures = [] }) {
 container.innerHTML = MARKUP;
 let destroyed = false, observer = null;
 
@@ -1637,6 +1637,7 @@ $$('input[name=finish]').forEach(input => input.addEventListener('change', () =>
   finishKey = input.value; flats.clear();
   if (renderer) applyFinish();
   dirty(); syncNav();
+  onFinishChange?.();
 }));
 // '분석 펼쳐보기': a plate still on its way is struck at once (its map first), then the result card is shown (S4).
 $('#open-result').addEventListener('click', async () => {
@@ -1717,6 +1718,25 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
     } finally { pins.forEach(sig => sharePins.delete(sig)); }
   }
   return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
+}
+
+// The result card uses the same struck faces and finish as the completed medal and the share cover.
+async function drawResultMedal(canvas) {
+  if (!complete) throw new Error('preview before the medal is finished');
+  await facesReady();
+  if (destroyed || !complete) throw new Error('medal is gone');
+  settleNow();
+  const g = canvas.getContext('2d');
+  g.clearRect(0, 0, canvas.width, canvas.height);
+  renderFigure(g, { x: 0, y: 0, w: canvas.width, h: canvas.height,
+    fit: { widthShare: .94, heightShare: .94, bottomPad: .03 } }, false);
+  // Only the medal belongs in the result portrait; the long ribbon is cut by this square frame.
+  g.save();
+  g.globalCompositeOperation = 'destination-out';
+  const fade = g.createLinearGradient(0, 0, 0, 50);
+  fade.addColorStop(0, '#000'); fade.addColorStop(.55, '#000'); fade.addColorStop(1, 'transparent');
+  g.fillStyle = fade; g.fillRect(0, 0, canvas.width, 50);
+  g.restore();
 }
 
 // ---- page ------------------------------------------------------------------------------------------------------------
@@ -1838,5 +1858,5 @@ function destroy() {
   THREE = scene = camera = body = medal = pivot = key = rim = kit = blank1 = envTarget = denseGeo = midGeo = flatGeo = null;
   container.replaceChildren();
 }
-return { destroy, shareImage };
+return { destroy, shareImage, drawResultMedal };
 }

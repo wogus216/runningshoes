@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { trackRunner } from '@/lib/runner-analysis/track';
 import { analyzeRunner } from '@/lib/runner-analysis/analyze';
 import { explainRunner, type RunnerExplanation } from '@/lib/runner-analysis/explain';
@@ -37,7 +37,7 @@ export function judgeFlowInput(input: FlowInput): MedalVerdict {
   };
 }
 
-type MountedFlow = { destroy: () => void; shareImage: ShareImage };
+type MountedFlow = { destroy: () => void; shareImage: ShareImage; drawResultMedal: (canvas: HTMLCanvasElement) => Promise<void> };
 
 // 3D 메달 입력 흐름(3D-3 시안, vanilla three)을 붙였다 뗀다. 화면과 동작은 전부 medal3d-flow.js 가 가진다.
 // 마운트할 때마다 마크업을 새로 쓰고, 뗄 때 렌더러·워커·타이머·문서 리스너를 정리한다.
@@ -48,6 +48,11 @@ export default function RunningCardMedal({ onRestart }: { onRestart: () => void 
   const flow = useRef<MountedFlow | null>(null);
   const [revealed, setRevealed] = useState<JudgedRunner | null>(null);
   const [wantOpen, setWantOpen] = useState(false);
+  const [finishRevision, setFinishRevision] = useState(0);
+  const drawResultMedal = useCallback((canvas: HTMLCanvasElement) => {
+    if (!flow.current) return Promise.reject(new Error('medal is gone'));
+    return flow.current.drawResultMedal(canvas);
+  }, []);
 
   useEffect(() => {
     const el = container.current;
@@ -63,6 +68,7 @@ export default function RunningCardMedal({ onRestart }: { onRestart: () => void 
         }
       },
       onOpenResult: () => setWantOpen(true),
+      onFinishChange: () => setFinishRevision((revision) => revision + 1),
       // 01–07 단계 완료(값을 받아 동전을 새긴 순간). 단계마다 페이지에서 한 번만 — 몇 단계까지 왔는지를 센다.
       onStep: (step: number) => trackRunner('runner_input_step_completed', { step_number: step }, `runner-step-${step}`),
       // S6: 판정 연출이 명판을 치기 전에 훑는 인물 이름들.
@@ -91,6 +97,8 @@ export default function RunningCardMedal({ onRestart }: { onRestart: () => void 
       {revealed && (
         <RunningCardResult
           judged={revealed}
+          drawResultMedal={drawResultMedal}
+          finishRevision={finishRevision}
           shareImage={(kind, page, options) => {
             if (!flow.current) return Promise.reject(new Error('medal is gone'));
             return flow.current.shareImage(kind, page, options);
