@@ -1,5 +1,5 @@
 // Render the actual /shall-we-run DOM. No separate approximation of the website.
-// Usage: node video/shall-we-run/render.mjs http://localhost:3027 /absolute/output
+// Usage: node video/shall-we-run/render.mjs http://localhost:3028 /absolute/output [15|34]
 import fs from 'node:fs';
 import path from 'node:path';
 import os from 'node:os';
@@ -7,8 +7,24 @@ import { spawn, execFileSync } from 'node:child_process';
 import { once } from 'node:events';
 import sharp from 'sharp';
 
-const [base = 'http://localhost:3027', destination] = process.argv.slice(2);
+const [base = 'http://localhost:3028', destination, durationArgument = '34'] = process.argv.slice(2);
 if (!destination) throw new Error('An output directory is required.');
+const duration = Number(durationArgument);
+if (![15, 34].includes(duration)) throw new Error('Choose a 15- or 34-second edit.');
+// The short edit cuts between the existing site chapters; it does not speed up
+// the whole film and shorten the badge's reading time proportionally.
+const edit = duration === 15 ? [
+  { start: 0, end: 1.5, from: 0, to: 2.9, chapter: 'start' },
+  { start: 1.5, end: 5, from: 3, to: 9.999, chapter: 'film' },
+  { start: 5, end: 8, from: 15, to: 19.999, chapter: 'reason' },
+  { start: 8, end: 12, from: 20.4, to: 26.9, chapter: 'finish' },
+  { start: 12, end: 15, from: 30, to: 33.999, chapter: 'next' },
+] : [{ start: 0, end: 34, from: 0, to: 34 }];
+const storyTime = time => {
+  const segment = edit.find(part => time >= part.start && time < part.end) || edit.at(-1);
+  return segment.from + Math.min(1, Math.max(0, (time - segment.start) / (segment.end - segment.start))) * (segment.to - segment.from);
+};
+const sampleTimes = duration === 15 ? [0, 2, 5.5, 7.5, 10, 13.5] : [0, 6, 12, 19, 24, 32];
 const output = path.resolve(destination);
 fs.mkdirSync(output, { recursive: true });
 const chromePath = process.env.SHALL_WE_RUN_CHROME || '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome';
@@ -57,8 +73,9 @@ try {
     await evaluate(`(async()=>{await document.fonts.ready; await Promise.all([...document.images].map(i=>i.decode())); document.querySelectorAll('nextjs-portal').forEach(e=>e.remove());})()`);
   };
   const screenshot = async (format = 'png') => Buffer.from((await send('Page.captureScreenshot', { format, ...(format === 'jpeg' ? { quality: 95 } : {}), captureBeyondViewport: false })).data, 'base64');
+  const paint = async seconds => evaluate(`(async()=>{window.setShallWeRunTime(${seconds}); await new Promise(resolve=>requestAnimationFrame(()=>requestAnimationFrame(resolve)));})()`);
 
-  const report = { viewports: [], scroll: [], reducedMotion: null, noJavaScript: null, video: null, errors };
+  const report = { duration, edit, viewports: [], scroll: [], reducedMotion: null, noJavaScript: null, video: null, encodedFrames: [], errors };
   for (const width of [360, 390, 430, 1440]) {
     await viewport(width, width > 600 ? 900 : 800);
     await load(false);
@@ -113,41 +130,57 @@ try {
   await sharp(cover).extract({ left: 0, top: 285, width: 1080, height: 1350 }).toFile(path.join(output, 'cover-preview-4x5.png'));
   await sharp(cover).extract({ left: 0, top: 420, width: 1080, height: 1080 }).toFile(path.join(output, 'cover-preview-square.png'));
   await evaluate(`delete document.querySelector('[data-enhanced]').dataset.cover`);
-  for (const time of [0, 6, 12, 19, 24, 32]) {
-    await evaluate(`window.setShallWeRunTime(${time})`);
+  for (const time of sampleTimes) {
+    await paint(storyTime(time));
     fs.writeFileSync(path.join(output, `scene-${time}s.png`), await screenshot());
   }
   for (let i = 0; i < 7; i++) {
-    await evaluate(`window.setShallWeRunTime(${3.5 + i})`);
+    await paint(3.5 + i);
     fs.writeFileSync(path.join(output, `marathon-${i + 1}.png`), await screenshot());
   }
   const sheet = await sharp({ create: { width: 1080, height: 1280, channels: 3, background: '#101010' } })
-    .composite(await Promise.all([0, 6, 12, 19, 24, 32].map(async (time, i) => ({ input: await sharp(path.join(output, `scene-${time}s.png`)).resize(360, 640).toBuffer(), left: (i % 3) * 360, top: Math.floor(i / 3) * 640 })))).png().toBuffer();
+    .composite(await Promise.all(sampleTimes.map(async (time, i) => ({ input: await sharp(path.join(output, `scene-${time}s.png`)).resize(360, 640).toBuffer(), left: (i % 3) * 360, top: Math.floor(i / 3) * 640 })))).png().toBuffer();
   fs.writeFileSync(path.join(output, 'storyboard-contact-sheet.png'), sheet);
 
-  const videoPath = path.join(output, 'shall-we-run-reel-1080x1920.mp4');
+  const videoPath = path.join(output, duration === 15 ? 'shall-we-run-reel-15s-1080x1920.mp4' : 'shall-we-run-reel-1080x1920.mp4');
   encoder = spawn('ffmpeg', ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'image2pipe', '-framerate', '30', '-vcodec', 'mjpeg', '-i', 'pipe:0', '-an', '-vf', 'scale=in_range=full:out_range=tv', '-c:v', 'libx264', '-preset', 'medium', '-crf', '18', '-pix_fmt', 'yuv420p', '-color_range', 'tv', '-movflags', '+faststart', videoPath], { stdio: ['pipe', 'ignore', 'pipe'] });
   encoder.stderr.on('data', chunk => { encoderError += chunk.toString(); });
   const completion = once(encoder, 'close');
   let heldBadge, heldEnd;
-  for (let frame = 0; frame < 1020; frame++) {
+  for (let frame = 0; frame < duration * 30; frame++) {
     const time = frame / 30;
+    const sourceTime = storyTime(time);
     let jpg;
-    if (time >= 20.4 && time < 27 && heldBadge) jpg = heldBadge;
-    else if (time >= 30 && heldEnd) jpg = heldEnd;
+    if (sourceTime >= 20.4 && sourceTime < 27 && heldBadge) jpg = heldBadge;
+    else if (sourceTime >= 30 && heldEnd) jpg = heldEnd;
     else {
-      await evaluate(`window.setShallWeRunTime(${time})`);
+      await paint(sourceTime);
       jpg = await screenshot('jpeg');
-      if (time >= 20.4 && time < 27) heldBadge = jpg;
-      if (time >= 30) heldEnd = jpg;
+      if (sourceTime >= 20.4 && sourceTime < 27) heldBadge = jpg;
+      if (sourceTime >= 30) heldEnd = jpg;
     }
     if (!encoder.stdin.write(jpg)) await once(encoder.stdin, 'drain');
-    if (frame % 90 === 0) console.log(`Rendered ${time.toFixed(0)} / 34 seconds`);
+    if (frame % 90 === 0) console.log(`Rendered ${time.toFixed(0)} / ${duration} seconds`);
   }
   encoder.stdin.end();
   const [code] = await completion;
   if (code !== 0) throw new Error(`ffmpeg failed: ${encoderError}`);
   report.video = JSON.parse(execFileSync('ffprobe', ['-v', 'error', '-show_streams', '-show_format', '-of', 'json', videoPath], { encoding: 'utf8' }));
+  const videoStream = report.video.streams.find(stream => stream.codec_type === 'video');
+  if (Number(videoStream.nb_frames) !== duration * 30 || Math.abs(Number(report.video.format.duration) - duration) > .02) throw new Error('Encoded video duration or frame count mismatch');
+  // Inspect the encoded MP4 itself, not just the pre-encoding page screenshots.
+  for (const time of sampleTimes) {
+    const decoded = execFileSync('ffmpeg', ['-v', 'error', '-ss', String(time), '-i', videoPath, '-frames:v', '1', '-f', 'image2pipe', '-vcodec', 'png', 'pipe:1'], { maxBuffer: 16 * 1024 * 1024 });
+    const pixels = async input => sharp(input).resize(72, 128).removeAlpha().raw().toBuffer();
+    const [actual, expected] = await Promise.all([pixels(decoded), pixels(path.join(output, `scene-${time}s.png`))]);
+    const difference = actual.reduce((sum, value, i) => sum + Math.abs(value - expected[i]), 0) / actual.length;
+    if (difference > 8) throw new Error(`Encoded frame does not match scene at ${time}s: ${difference}`);
+    fs.writeFileSync(path.join(output, `encoded-${time}s.png`), decoded);
+    report.encodedFrames.push({ time, sourceTime: storyTime(time), meanPixelDifference: difference });
+  }
+  const encodedSheet = await sharp({ create: { width: 1080, height: 1280, channels: 3, background: '#101010' } })
+    .composite(await Promise.all(sampleTimes.map(async (time, i) => ({ input: await sharp(path.join(output, `encoded-${time}s.png`)).resize(360, 640).toBuffer(), left: (i % 3) * 360, top: Math.floor(i / 3) * 640 })))).png().toBuffer();
+  fs.writeFileSync(path.join(output, 'encoded-video-contact-sheet.png'), encodedSheet);
   if (errors.length) throw new Error(errors.join('\n'));
   fs.writeFileSync(path.join(output, 'render-report.json'), JSON.stringify(report, null, 2));
   console.log(`Saved reel, cover, six scenes and verification report to ${output}`);
