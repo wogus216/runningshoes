@@ -1720,23 +1720,19 @@ async function shareImage(kind, page, { card, hideNumbers = false }) {
   return new Promise((resolve, reject) => c.toBlob(b => (b ? resolve(b) : reject(new Error('toBlob'))), 'image/png'));
 }
 
-// The result card uses the same struck faces and finish as the completed medal and the share cover.
+// The live result portrait uses the cover's single die-struck medal, without its ribbon.
 async function drawResultMedal(canvas) {
   if (!complete) throw new Error('preview before the medal is finished');
   await facesReady();
   if (destroyed || !complete) throw new Error('medal is gone');
   settleNow();
+  const id = plate.figure.id, finish = finishKey;
+  const { renderCoverMedal } = await import('./medal-cover-renderer.js');
+  const portrait = await renderCoverMedal({ id, finish, width: 1024, webgl: !!renderer, portrait: true });
+  if (destroyed || !complete || id !== plate.figure.id || finish !== finishKey) throw new Error('medal is gone');
   const g = canvas.getContext('2d');
   g.clearRect(0, 0, canvas.width, canvas.height);
-  renderFigure(g, { x: 0, y: 0, w: canvas.width, h: canvas.height,
-    fit: { widthShare: .94, heightShare: .94, bottomPad: .03 } }, false);
-  // Only the medal belongs in the result portrait; the long ribbon is cut by this square frame.
-  g.save();
-  g.globalCompositeOperation = 'destination-out';
-  const fade = g.createLinearGradient(0, 0, 0, 50);
-  fade.addColorStop(0, '#000'); fade.addColorStop(.55, '#000'); fade.addColorStop(1, 'transparent');
-  g.fillStyle = fade; g.fillRect(0, 0, canvas.width, 50);
-  g.restore();
+  g.drawImage(portrait, 0, 0, canvas.width, canvas.height);
 }
 
 // ---- page ------------------------------------------------------------------------------------------------------------

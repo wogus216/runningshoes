@@ -164,7 +164,7 @@ function ribbonTexture() {
   return c;
 }
 
-async function webglMedal(relief, finish, width, height) {
+async function webglMedal(relief, finish, width, height, portrait = false) {
   const T = await import('./medal3d-three.js');
   let renderer, environment, scene, room;
   try {
@@ -176,7 +176,7 @@ async function webglMedal(relief, finish, width, height) {
     try { environment = pmrem.fromScene(room, .08, .1, 30); } finally { pmrem.dispose(); }
     scene.environment = environment.texture; scene.environmentIntensity = 1.0;
     const f = FINISH[finish], medal = new T.Group(); scene.add(medal);
-    medal.rotation.set(.055, -.12, -.035); medal.position.y = -.13;
+    medal.rotation.set(.055, -.12, -.035); medal.position.y = portrait ? 0 : -.13;
     const metal = new T.MeshPhysicalMaterial({ color: f.metal, metalness: 1, roughness: .25 });
     const edge = new T.MeshPhysicalMaterial({ color: f.bright, metalness: 1, roughness: .2 });
     const profile = [[0,-.09],[.94,-.09],[.989,-.065],[1,-.036],[1,.032],[.984,.064],[.95,.071],[.926,.047],[.921,.018],[0,.018]].map(p => new T.Vector2(...p));
@@ -193,17 +193,19 @@ async function webglMedal(relief, finish, width, height) {
     map.colorSpace=T.SRGBColorSpace;
     const face = new T.Mesh(faceGeometry(T,relief),new T.MeshPhysicalMaterial({map,roughnessMap,roughness:1,metalness:1,clearcoat:.1,clearcoatRoughness:.35}));
     medal.add(face);
-    const loop = new T.Mesh(new T.TorusGeometry(.105,.022,16,96),edge); loop.position.set(0,1.035,.02); medal.add(loop);
-    const ribbonMap=new T.CanvasTexture(ribbonTexture()); ribbonMap.colorSpace=T.SRGBColorSpace;
-    const ribbonMat=new T.MeshPhysicalMaterial({map:ribbonMap,roughness:.83,metalness:0,sheen:.3,sheenRoughness:.7,side:T.DoubleSide});
-    for(const s of [-1,1]) {
-      const ribbon=new T.Mesh(new T.PlaneGeometry(.29,.54,1,12),ribbonMat);
-      ribbon.position.set(s*.12,1.31,-.06); ribbon.rotation.z=-s*.20; medal.add(ribbon);
+    if (!portrait) {
+      const loop = new T.Mesh(new T.TorusGeometry(.105,.022,16,96),edge); loop.position.set(0,1.035,.02); medal.add(loop);
+      const ribbonMap=new T.CanvasTexture(ribbonTexture()); ribbonMap.colorSpace=T.SRGBColorSpace;
+      const ribbonMat=new T.MeshPhysicalMaterial({map:ribbonMap,roughness:.83,metalness:0,sheen:.3,sheenRoughness:.7,side:T.DoubleSide});
+      for(const s of [-1,1]) {
+        const ribbon=new T.Mesh(new T.PlaneGeometry(.29,.54,1,12),ribbonMat);
+        ribbon.position.set(s*.12,1.31,-.06); ribbon.rotation.z=-s*.20; medal.add(ribbon);
+      }
     }
     const key=new T.DirectionalLight(0xfff7eb,1.0); key.position.set(-3,4,5); scene.add(key);
     const rim=new T.DirectionalLight(0xffffff,.5); rim.position.set(4,1,2); scene.add(rim);
     const camera=new T.PerspectiveCamera(28,width/height,.1,30);
-    camera.position.set(0,.11,2.68/(2*Math.tan(14*Math.PI/180))); camera.lookAt(0,.11,0);
+    camera.position.set(0,portrait ? 0 : .11,(portrait ? 2.36 : 2.68)/(2*Math.tan(14*Math.PI/180))); camera.lookAt(0,portrait ? 0 : .11,0);
     renderer.render(scene,camera);
     const result=canvas(width,height); result.getContext('2d').drawImage(renderer.domElement,0,0);
     result.dataset.renderer='webgl'; return result;
@@ -214,11 +216,11 @@ async function webglMedal(relief, finish, width, height) {
 }
 
 // The same raised mark and round body, lit on the CPU when WebGL is unavailable.
-function flatMedal(relief,finish,width,height) {
+function flatMedal(relief,finish,width,height,portrait = false) {
   const out=canvas(width,height), g=out.getContext('2d'), {S,height:H}=relief, f=FINISH[finish];
-  const R=width*.447, cx=width/2, cy=height*.566;
+  const R=width*(portrait ? .46 : .447), cx=width/2, cy=height*(portrait ? .5 : .566);
   g.save(); g.translate(cx,cy);
-  for(const s of [-1,1]) {
+  if(!portrait) for(const s of [-1,1]) {
     g.save(); g.translate(s*R*.12,-R*1.29); g.rotate(s*.20);
     g.fillStyle='#c8532c';g.fillRect(-R*.145,-R*.28,R*.29,R*.56);
     for(let y=-R*.28;y<R*.28;y+=2){g.fillStyle='rgba(255,190,123,.13)';g.fillRect(-R*.145,y,R*.29,.65);}g.restore();
@@ -242,20 +244,20 @@ function flatMedal(relief,finish,width,height) {
   }
   const field=canvas(S);field.getContext('2d').putImageData(img,0,0);g.drawImage(field,-R*.92,-R*.92,R*1.84,R*1.84);
   g.strokeStyle=f.bright;g.lineWidth=R*.007;g.beginPath();g.arc(0,0,R*.923,0,TAU);g.stroke();
-  g.lineWidth=R*.023;g.strokeStyle=f.dark;g.beginPath();g.arc(0,-R*1.038,R*.104,0,TAU);g.stroke();
-  g.lineWidth=R*.014;g.strokeStyle=f.bright;g.stroke();g.restore();out.dataset.renderer='flat';return out;
+  if(!portrait){g.lineWidth=R*.023;g.strokeStyle=f.dark;g.beginPath();g.arc(0,-R*1.038,R*.104,0,TAU);g.stroke();g.lineWidth=R*.014;g.strokeStyle=f.bright;g.stroke();}
+  g.restore();out.dataset.renderer='flat';return out;
 }
 
-export async function renderCoverMedal({id,finish='gold',width=1024,webgl=true}) {
+export async function renderCoverMedal({id,finish='gold',width=1024,webgl=true,portrait=false}) {
   if(!FINISH[finish])throw new Error(`Unknown cover finish: ${finish}`);
-  const relief=coverRelief(id), height=Math.round(width*1.25);
+  const relief=coverRelief(id), height=portrait?width:Math.round(width*1.25);
   if(webgl) {
-    try{return await webglMedal(relief,finish,width,height);}catch(error){
+    try{return await webglMedal(relief,finish,width,height,portrait);}catch(error){
       // An unavailable/lost context is a rendering capability failure; use the same round relief.
       if(!/WebGL|context|GPU/i.test(String(error)))throw error;
     }
   }
-  return flatMedal(relief,finish,width,height);
+  return flatMedal(relief,finish,width,height,portrait);
 }
 
 export function paintCoverMedal(g,fig,medal) {

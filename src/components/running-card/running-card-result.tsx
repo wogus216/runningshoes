@@ -93,7 +93,7 @@ export function RunningCardResult({ judged, drawResultMedal, finishRevision, sha
     <section className="rc-result" id="rc-result" aria-labelledby="rc-result-name">
       <div className="rc-result-mast"><span>RUNNING CARD / 28D</span><span>나의 메달 분석</span></div>
       <figure className="rc-result-medal" data-status={medalStatus}>
-        <canvas ref={medalCanvas} width={640} height={640} role="img" aria-label={`지난 28일의 기록 동전과 ${character.name}을 상징하는 표식이 새겨진 메달`} />
+        <canvas ref={medalCanvas} width={640} height={640} role="img" aria-label={`${character.name}을 상징하는 표식 하나가 새겨진 원형 메달`} />
         {medalStatus === 'loading' && <figcaption>메달을 새기는 중…</figcaption>}
         {medalStatus === 'error' && <figcaption>메달을 보여주지 못했어요. 위의 완성된 메달을 확인해 주세요.</figcaption>}
       </figure>
@@ -296,6 +296,7 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
           <button type="button" onClick={shareLink}>링크 공유</button>
         </div>
       </div>
+      <p className="rc-share-note">1장은 단일 메달 표지, 2장은 7개 기록 메달이 담긴 분석 이미지예요.</p>
       <p className="rc-share-note">링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.</p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && typeof navigator !== 'undefined' && navigator.canShare?.({ files: saved.map((m) => m.file) }) && (
