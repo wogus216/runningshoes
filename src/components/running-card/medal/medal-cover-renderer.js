@@ -5,12 +5,17 @@ import { CHARACTER_SIGNS } from './medal3d-character-signs.js';
 const TAU = Math.PI * 2;
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const FINISH = {
-  gold: { metal: '#b99548', bright: '#f0d18c', dark: '#8c6427', rough: .39 },
+  gold: { metal: '#c2a064', bright: '#f3ddb0', dark: '#725124', rough: .43 },
   silver: { metal: '#a7abad', bright: '#e9ebe8', dark: '#72787b', rough: .36 },
   brass: { metal: '#99733e', bright: '#d8b879', dark: '#684a25', rough: .44 },
 };
 const rgb = hex => [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16));
 const canvas = (w, h = w) => Object.assign(document.createElement('canvas'), { width: w, height: h });
+// Avalanche the coordinate hash so the metal grain cannot form diagonal checkerboard bands.
+function surfaceNoise(x,y) {
+  let h=Math.imul(x+1,374761393)^Math.imul(y+1,668265263);
+  h=Math.imul(h^(h>>>13),1274126177);return ((h^(h>>>16))>>>0)/4294967295;
+}
 
 // Optical editions for the three hero motifs. The small analysis marks remain in CHARACTER_SIGNS unchanged.
 function drawSign(id, g) {
@@ -19,6 +24,11 @@ function drawSign(id, g) {
     g.rotate(-.46);
     shape([[-.61,-.67],[.64,-.67],[.71,-.6],[.71,-.31],[.64,-.24],[-.61,-.24],[-.68,-.31],[-.68,-.6]]);
     shape([[-.115,-.32],[.115,-.32],[.105,.87],[.05,.93],[-.05,.93],[-.105,.87]]);
+    // Cut into the same die: a forged head facet and a recessed handle channel.
+    g.fillStyle='#b0b0b0';
+    shape([[-.61,-.62],[.61,-.62],[.65,-.57],[.65,-.49],[-.61,-.49]]);
+    g.strokeStyle='#b8b8b8';g.lineWidth=.037;
+    g.beginPath();g.moveTo(-.025,-.12);g.lineTo(-.025,.73);g.stroke();
   } else if(id==='apollo') {
     g.lineWidth=.042;
     for(const s of [-1,1]) {
@@ -28,14 +38,28 @@ function drawSign(id, g) {
         for(const direction of [-1,1]) {
           g.save();g.translate(s*x,y);g.scale(s,1);g.rotate(direction===1?.68:-.80);
           g.beginPath();g.moveTo(0,.035);g.bezierCurveTo(-.10,-.08,-.085,-.22,0,-.32);
-          g.bezierCurveTo(.085,-.22,.10,-.08,0,.035);g.fill();g.restore();
+          g.bezierCurveTo(.085,-.22,.10,-.08,0,.035);g.fill();
+          g.strokeStyle='#b0b0b0';g.lineWidth=.023;
+          g.beginPath();g.moveTo(0,-.025);g.quadraticCurveTo(.014,-.15,0,-.245);g.stroke();g.restore();
         }
       }
     }
   } else if(id==='zeus') {
     shape([[-.12,-.32],[-.86,-.68],[-.95,-.6],[-.72,-.26],[-.94,-.33],[-.66,.03],[-.86,-.03],[-.51,.28],[-.64,.24],[-.23,.48],[0,.68],[.23,.48],[.64,.24],[.51,.28],[.86,-.03],[.66,.03],[.94,-.33],[.72,-.26],[.95,-.6],[.86,-.68],[.12,-.32]]);
-    shape([[-.15,-.28],[-.18,-.63],[-.09,-.83],[.10,-.83],[.20,-.71],[.38,-.62],[.14,-.60],[.13,-.25]]);
+    g.beginPath();g.moveTo(-.15,-.28);g.lineTo(-.16,-.57);
+    g.bezierCurveTo(-.19,-.76,-.04,-.85,.12,-.79);
+    g.lineTo(.21,-.70);g.lineTo(.35,-.65);g.lineTo(.32,-.55);g.lineTo(.25,-.59);
+    g.lineTo(.14,-.57);g.bezierCurveTo(.09,-.48,.10,-.37,.13,-.25);g.closePath();g.fill();
     shape([[-.16,.40],[-.29,.80],[-.08,.73],[0,.91],[.08,.73],[.29,.80],[.16,.40]]);
+    // Three incised feather channels per wing give the eagle its own sculpted relief.
+    g.strokeStyle='#ababab';g.lineWidth=.043;
+    for(const s of [-1,1]) {
+      for(const [x,y,ex,ey] of [[.22,-.19,.76,-.48],[.23,-.02,.69,-.17],[.22,.14,.52,.09]]) {
+        g.beginPath();g.moveTo(s*x,y);g.quadraticCurveTo(s*(x+.13),y-.04,s*ex,ey);g.stroke();
+      }
+    }
+    g.lineWidth=.026;g.beginPath();g.moveTo(0,.46);g.lineTo(0,.73);g.stroke();
+    g.fillStyle='#777';g.beginPath();g.arc(.115,-.694,.022,0,TAU);g.fill();
   } else CHARACTER_SIGNS[id].draw(g);
 }
 
@@ -78,7 +102,7 @@ export function coverRelief(id, S = 1024) {
   g.drawImage(source, left, top, w, h, (S - w * k) / 2, (S - h * k) / 2, w * k, h * k);
   const pixels = g.getImageData(0, 0, S, S).data;
   const raw = Float32Array.from({ length: S * S }, (_, i) => pixels[i * 4] / 255);
-  const height = blur(raw, S, Math.max(1, Math.round(S * .009)));
+  const height = blur(raw, S, Math.max(1, Math.round(S * .006)));
   for (let i = 0; i < height.length; i++) { const t = clamp((height[i] - .025) / .95, 0, 1); height[i] = t * t * (3 - 2 * t); }
   return { S, height };
 }
@@ -90,7 +114,7 @@ function faceGeometry(T, relief) {
     const x = clamp(u * (S - 1), 0, S - 1), y = clamp((1 - v) * (S - 1), 0, S - 1);
     const x0=Math.floor(x),y0=Math.floor(y),x1=Math.min(S-1,x0+1),y1=Math.min(S-1,y0+1),tx=x-x0,ty=y-y0;
     const a=height[y0*S+x0]*(1-tx)+height[y0*S+x1]*tx,b=height[y1*S+x0]*(1-tx)+height[y1*S+x1]*tx;
-    return .025 + .045 * Math.max(0, 1 - (u-.5)**2*4 - (v-.5)**2*4) + (a*(1-ty)+b*ty) * .032;
+    return .025 + .065 * Math.max(0, 1 - (u-.5)**2*4 - (v-.5)**2*4) + (a*(1-ty)+b*ty) * .038;
   };
   pos.push(0, 0, zAt(.5, .5)); uv.push(.5, .5);
   for (let r = 1; r <= rings; r++) for (let s = 0; s < segs; s++) {
@@ -121,11 +145,11 @@ function fieldMaps(relief, finish) {
   const color = canvas(S), rough = canvas(S), c = color.getContext('2d'), r = rough.getContext('2d');
   const a = c.createImageData(S, S), b = r.createImageData(S, S);
   for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) {
-    const i = y * S + x, p = height[i], hash = ((Math.imul(x + 1, 374761393) ^ Math.imul(y + 1, 668265263)) >>> 0) / 4294967295;
-    const grain = (hash - .5) * 4 + Math.sin(y * 2.4 + Math.sin(x * .009)) * 1.1;
+    const i = y * S + x, p = height[i], hash = surfaceNoise(x,y);
+    const grain = (hash - .5) * 2.5;
     for (let j = 0; j < 3; j++) a.data[i * 4 + j] = base[j] + (bright[j] - base[j]) * p * .035 + grain * (1 - p * .75);
     a.data[i * 4 + 3] = b.data[i * 4 + 3] = 255;
-    const v = (f.rough - p * .12) * 255 + (hash - .5) * 5;
+    const v = (f.rough - p * .21) * 255 + (hash - .5) * 8 * (1-p*.9);
     b.data[i * 4] = b.data[i * 4 + 1] = b.data[i * 4 + 2] = v;
   }
   c.putImageData(a, 0, 0); r.putImageData(b, 0, 0);
@@ -134,13 +158,13 @@ function fieldMaps(relief, finish) {
 
 function studio(T) {
   const s = new T.Scene();
-  s.add(new T.Mesh(new T.SphereGeometry(20, 24, 12), new T.MeshBasicMaterial({ color: new T.Color(.42, .40, .36), side: T.BackSide })));
+  s.add(new T.Mesh(new T.SphereGeometry(20, 24, 12), new T.MeshBasicMaterial({ color: new T.Color(.13, .125, .115), side: T.BackSide })));
   const panel = (w, h, power, xyz) => {
     const m = new T.Mesh(new T.PlaneGeometry(w, h), new T.MeshBasicMaterial({ color: new T.Color(1, .98, .94).multiplyScalar(power), side: T.DoubleSide }));
     m.position.set(...xyz); m.lookAt(0, 0, 0); s.add(m);
   };
-  panel(7, 13, 4.2, [-5, 5, 10]); panel(3, 15, 2.6, [9, 0, 6]);
-  panel(10, 3, 1.5, [0, -7, 10]); panel(6, 11, .7, [5, 2, 16]);
+  panel(5, 13, 5.0, [-5, 5, 10]); panel(2, 14, 3.4, [9, 0, 6]);
+  panel(10, 2, 1.8, [0, -7, 10]); panel(6, 11, .45, [5, 2, 16]);
   return s;
 }
 
@@ -157,7 +181,9 @@ function disposeTree(root) {
 
 function ribbonTexture() {
   const c = canvas(256, 512), g = c.getContext('2d');
-  g.fillStyle = '#cc4e24'; g.fillRect(0, 0, 256, 512);
+  const fold=g.createLinearGradient(0,0,256,0);
+  fold.addColorStop(0,'#83351f');fold.addColorStop(.18,'#bb4928');fold.addColorStop(.46,'#d9683d');fold.addColorStop(.78,'#b24425');fold.addColorStop(1,'#7c2e1b');
+  g.fillStyle = fold; g.fillRect(0, 0, 256, 512);
   for (let y = 0; y < 512; y += 3) { g.fillStyle = y % 6 ? 'rgba(255,182,104,.16)' : 'rgba(76,20,5,.18)'; g.fillRect(0, y, 256, 1); }
   for (let x = 0; x < 256; x += 2) { g.fillStyle = 'rgba(255,208,149,.05)'; g.fillRect(x, 0, 1, 512); }
   g.fillStyle = 'rgba(69,25,15,.7)'; g.fillRect(13, 0, 5, 512); g.fillRect(238, 0, 5, 512);
@@ -198,7 +224,13 @@ async function webglMedal(relief, finish, width, height, portrait = false) {
       const ribbonMap=new T.CanvasTexture(ribbonTexture()); ribbonMap.colorSpace=T.SRGBColorSpace;
       const ribbonMat=new T.MeshPhysicalMaterial({map:ribbonMap,roughness:.83,metalness:0,sheen:.3,sheenRoughness:.7,side:T.DoubleSide});
       for(const s of [-1,1]) {
-        const ribbon=new T.Mesh(new T.PlaneGeometry(.29,.54,1,12),ribbonMat);
+        const ribbonGeometry=new T.PlaneGeometry(.29,.54,16,20), positions=ribbonGeometry.attributes.position;
+        for(let i=0;i<positions.count;i++) {
+          const x=positions.getX(i)/.145,y=positions.getY(i)/.27;
+          positions.setZ(i,.028*Math.cos(x*Math.PI*.65)+.012*Math.sin(y*2+x));
+        }
+        ribbonGeometry.computeVertexNormals();
+        const ribbon=new T.Mesh(ribbonGeometry,ribbonMat);
         ribbon.position.set(s*.12,1.31,-.06); ribbon.rotation.z=-s*.20; medal.add(ribbon);
       }
     }
@@ -233,12 +265,12 @@ function flatMedal(relief,finish,width,height,portrait = false) {
   for(let y=0;y<S;y++)for(let x=0;x<S;x++){
     const i=y*S+x,u=(x+.5)/S*2-1,v=1-(y+.5)/S*2;
     if(u*u+v*v>1)continue;
-    const nx=(H[y*S+Math.max(0,x-1)]-H[y*S+Math.min(S-1,x+1)])*S*.00875+u*.0985;
-    const ny=(H[Math.min(S-1,y+1)*S+x]-H[Math.max(0,y-1)*S+x])*S*.00875+v*.0985;
+    const nx=(H[y*S+Math.max(0,x-1)]-H[y*S+Math.min(S-1,x+1)])*S*(.038/3.656)+u*(.26/1.828);
+    const ny=(H[Math.min(S-1,y+1)*S+x]-H[Math.max(0,y-1)*S+x])*S*(.038/3.656)+v*(.26/1.828);
     const len=Math.hypot(nx,ny,1), light=clamp((nx*L[0]+ny*L[1]+L[2])/len,0,1);
     const reflection=.77+.13*Math.exp(-(((u+v*.5+.38)/.30)**2))+.08*Math.cos(u*2.1-v*1.5);
     const shade=(.45+.70*light)*reflection, p=H[i];
-    const grain=(((Math.imul(x+1,374761393)^Math.imul(y+1,668265263))>>>0)%13-6)*.30;
+    const grain=(surfaceNoise(x,y)-.5)*2.5*(1-p*.75);
     for(let c=0;c<3;c++)img.data[i*4+c]=clamp((base[c]+(bright[c]-base[c])*p*.035)*shade+grain,0,255);
     img.data[i*4+3]=255;
   }
