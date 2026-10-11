@@ -1,0 +1,155 @@
+'use client';
+
+import { useEffect, useRef, useState } from 'react';
+import Link from 'next/link';
+import { paintStory, STORY_DURATION, STORY_SCENES } from './story-timeline';
+import styles from './story.module.css';
+
+declare global {
+  interface Window {
+    /** Installed only with ?capture=1, for the local video renderer. */
+    setShallWeRunTime?: (seconds: number) => void;
+  }
+}
+
+export function ShallWeRunStory() {
+  const rootRef = useRef<HTMLDivElement>(null);
+  const railRef = useRef<HTMLDivElement>(null);
+  const [badgeFailed, setBadgeFailed] = useState(false);
+
+  useEffect(() => {
+    const root = rootRef.current;
+    const rail = railRef.current;
+    if (!root || !rail) return;
+    const media = window.matchMedia('(prefers-reduced-motion: reduce)');
+    const capture = new URLSearchParams(window.location.search).get('capture') === '1';
+    let disposed = false;
+    let generation = 0;
+    let cleanup: (() => void) | undefined;
+    const previousOverflow = document.body.style.overflowX;
+    // body overflow:hidden would become the sticky stage's scrolling ancestor.
+    document.body.style.overflowX = 'clip';
+    const start = async () => {
+      const currentGeneration = ++generation;
+      cleanup?.();
+      cleanup = undefined;
+      root.removeAttribute('data-enhanced');
+      root.removeAttribute('data-capture');
+      root.removeAttribute('data-paper');
+      root.removeAttribute('style');
+      root.querySelectorAll<HTMLElement>('[data-scene]').forEach(el => {
+        el.removeAttribute('style'); el.removeAttribute('aria-hidden'); el.removeAttribute('inert');
+      });
+      if (capture) {
+        root.dataset.enhanced = 'true'; root.dataset.capture = 'true';
+        window.setShallWeRunTime = t => paintStory(root, t);
+        paintStory(root, 0);
+        cleanup = () => { delete window.setShallWeRunTime; };
+        return;
+      }
+      if (media.matches) return;
+      try {
+        const [{ gsap }, { ScrollTrigger }] = await Promise.all([import('gsap'), import('gsap/ScrollTrigger')]);
+        if (disposed || media.matches || currentGeneration !== generation) return;
+        gsap.registerPlugin(ScrollTrigger);
+        root.dataset.enhanced = 'true';
+        const trigger = ScrollTrigger.create({
+          trigger: rail, start: 'top top', end: 'bottom bottom',
+          onUpdate: self => paintStory(root, self.progress * STORY_DURATION),
+          onRefresh: self => paintStory(root, self.progress * STORY_DURATION),
+        });
+        paintStory(root, trigger.progress * STORY_DURATION);
+        const onNav = (event: MouseEvent) => {
+          if (!(event.target instanceof Element)) return;
+          const link = event.target.closest<HTMLAnchorElement>('[data-nav-scene]');
+          if (!link) return;
+          event.preventDefault();
+          const scene = STORY_SCENES[Number(link.dataset.navScene)];
+          window.scrollTo({ top: trigger.start + ((scene.start + 0.6) / STORY_DURATION) * (trigger.end - trigger.start), behavior: 'smooth' });
+        };
+        root.addEventListener('click', onNav);
+        cleanup = () => { trigger.kill(); root.removeEventListener('click', onNav); };
+      } catch {
+        // A failed optional motion chunk leaves the server-rendered story readable.
+        if (!disposed && currentGeneration === generation) root.removeAttribute('data-enhanced');
+      }
+    };
+    void start();
+    media.addEventListener('change', start);
+    return () => {
+      disposed = true; generation++; cleanup?.(); media.removeEventListener('change', start);
+      document.body.style.overflowX = previousOverflow;
+    };
+  }, []);
+
+  return (
+    <div ref={rootRef} className={styles.story}>
+      <div ref={railRef} className={styles.rail}>
+        <div className={styles.stage}>
+          <div className={styles.track} aria-hidden="true"><i /><i /><i /><i /></div>
+          <header className={styles.header}>
+            <Link href="/">allrunabout<span> / 개인 러닝 기록</span></Link>
+            <span>2026.10.11</span>
+          </header>
+          <section id="start" data-scene className={`${styles.scene} ${styles.start}`}>
+            <p className={styles.context}>쉘위런 시네마런 챌린지</p>
+            <h1><span>영화가</span><span>시작되기 전에,</span><em>나는 달렸다.</em></h1>
+            <div className={styles.run} aria-hidden="true">RUN.</div>
+            <p className={styles.signature}>한 편의 영화를 기다리는 나의 출발.</p>
+          </section>
+          <section id="film" data-scene className={`${styles.scene} ${styles.film}`}>
+            <div className={styles.seven} aria-hidden="true">7</div>
+            <div className={styles.filmCopy}>
+              <p className={styles.filmTitle}>쉘위런 <span>SHALL WE RUN</span></p>
+              <h2>우리는 왜<br /><em>달리는가?</em></h2>
+              <p>션의 세계 7대 마라톤 도전을 따라가는<br />러닝 다큐멘터리.</p>
+              <div className={styles.marks} aria-hidden="true">{Array.from({ length: 7 }, (_, i) => <i key={i} />)}</div>
+              <p className={styles.filmNote}>한 사람의 도전에서, 나의 한 걸음으로.</p>
+            </div>
+          </section>
+          <section id="weekend" data-scene className={`${styles.scene} ${styles.weekend}`}>
+            <p className={styles.personal}>나는 왜 달렸을까.</p>
+            <h2>주말엔,<br />나가기가<br /><em>쉽지 않았다.</em></h2>
+            <p>평소에도 달렸지만,<br />주말의 출발은 쉽지 않았다.</p>
+            <div className={styles.startingLine} aria-hidden="true" />
+          </section>
+          <section id="reason" data-scene className={`${styles.scene} ${styles.reason}`}>
+            <div className={styles.reasonFirst}><h2>이번엔,<br /><em>나갈 이유가</em><br />있었다.</h2><p>쉘위런 챌린지가 그 이유가 됐다.</p></div>
+            <div className={styles.reasonLast}><h2>그래서,<br />조금 더<br /><em>달렸다.</em></h2><p>영화를 기다리는 마음이<br />나를 한 번 더 밖으로 데려갔다.</p></div>
+          </section>
+          <section id="finish" data-scene className={`${styles.scene} ${styles.finish}`}>
+            <h2>결국, <em>달렸다.</em></h2>
+            <p className={styles.finishTitle}>쉘위런 시네마런 챌린지 완주</p>
+            {/* The complete original badge, including mission text and date. */}
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/challenge/shall-we-run/badge-original.jpg" width="1080" height="1317" alt="런데이 쉘위런 시네마런 챌린지 누적 11.2km 미션 달성 완주 배지, 2026년 10월 11일" className={styles.badge} hidden={badgeFailed} onError={() => setBadgeFailed(true)} />
+            {badgeFailed && <p className={styles.badgeNotice}>배지 이미지를 불러오지 못했습니다.<br />완주 배지 획득 · 2026.10.11</p>}
+            <p className={styles.achievement}>누적 <strong>11.2km</strong> 미션 달성</p>
+            <a className={styles.original} href="/images/challenge/shall-we-run/badge-original.jpg" target="_blank" rel="noopener noreferrer">완주 배지 원본 보기 ↗</a>
+          </section>
+          <section id="next" data-scene className={`${styles.scene} ${styles.next}`}>
+            <div className={styles.waiting}><h2>영화를<br />기다리며,<br /><em>한 번 더 달렸다.</em></h2></div>
+            <div className={styles.invite}><h2>다음 한 걸음,<br /><em>같이 달릴까요?</em></h2><p>당신의 다음 출발을 응원합니다.</p></div>
+            <div className={styles.endCredits}><p>쉘위런 · 2026.10.16 메가박스 단독 개봉</p><a href="https://www.instagram.com/sancho216_doit/" target="_blank" rel="noopener noreferrer">@sancho216_doit ↗</a><span>allrunabout.com</span></div>
+          </section>
+          <nav className={styles.navigation} aria-label="러닝 이야기 장면">
+            {STORY_SCENES.map((scene, i) => <a key={scene.id} href={`#${scene.id}`} data-nav-scene={i}>{scene.label}</a>)}
+          </nav>
+        </div>
+      </div>
+      <footer className={styles.footer}>
+        <div>
+          <h2>내가 기다리는 영화, 쉘위런.</h2>
+          <p>션의 세계 7대 마라톤 도전을 통해 “우리는 왜 달리는가?”를 묻는 다큐멘터리. 달리기와 나눔, 함께하는 사람들의 이야기를 담고, 박보검이 내레이션으로 참여합니다.</p>
+          <p>나는 아직 영화를 보지 않았습니다. 개봉을 기다리며 런데이 시네마런 챌린지에 참여했고, 누적 11.2km 미션을 마쳤습니다. 이 페이지는 그때의 개인 기록입니다.</p>
+          <p className={styles.sources}>
+            <a href="https://sbsstar.net/article/N1008763307/seans-world-marathon-journey-to-be-released-in-documentary-film-narrated-by-park-bogum" target="_blank" rel="noopener noreferrer">영화 소개 출처 ↗</a>
+            <a href="https://www.instagram.com/p/Dd7knECEras/" target="_blank" rel="noopener noreferrer">런데이 챌린지 안내 ↗</a>
+          </p>
+          <Link className={styles.back} href="/">allrunabout으로 돌아가기 ↗</Link>
+        </div>
+        <p className={styles.colophon}>2026.10.11의 기록 · sancho216_doit</p>
+      </footer>
+    </div>
+  );
+}

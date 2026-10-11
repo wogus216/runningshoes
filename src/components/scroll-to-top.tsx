@@ -12,7 +12,7 @@ export function ScrollToTop() {
   const isDetailPage = pathname.startsWith('/shoes/');
   const isSaturdayPage = pathname.startsWith('/saturday');
   // 러닝 카드는 한 화면짜리 입력 흐름이라 하단 고정 버튼이 입력 패널을 가린다.
-  const isHidden = isSaturdayPage || pathname.startsWith('/running-card');
+  const isHidden = isSaturdayPage || pathname.startsWith('/running-card') || pathname === '/shall-we-run';
 
   useEffect(() => {
     if (isHidden) return;
