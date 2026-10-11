@@ -76,6 +76,16 @@ try {
     if (state.scene !== expected || Math.abs(state.stageTop) > 1) throw new Error(`Scroll scene mismatch: ${JSON.stringify(state)}`);
     report.scroll.push({ time, ...state });
   }
+  report.marathons = [];
+  await evaluate(`document.querySelector('[data-nav-scene="1"]').click()`);
+  await sleep(1000);
+  for (const [i, expected] of ['tokyo', 'boston', 'london', 'sydney', 'berlin', 'chicago', 'new-york'].entries()) {
+    await evaluate(`document.querySelector('[data-marathon-link="${i}"]').click()`);
+    await sleep(700);
+    const state = await evaluate(`(()=>{const r=document.querySelector('[data-race]');return {race:r.dataset.race,pressed:r.querySelector('[data-marathon-link="${i}"]').getAttribute('aria-pressed')};})()`);
+    if (state.race !== expected || state.pressed !== 'true') throw new Error(`Marathon navigation failed: ${expected}`);
+    report.marathons.push(state);
+  }
   // The chapter navigation must move the native page to the requested chapter.
   await evaluate(`document.querySelector('[data-nav-scene="4"]').click()`);
   await sleep(1000);
@@ -106,6 +116,10 @@ try {
   for (const time of [0, 6, 12, 19, 24, 32]) {
     await evaluate(`window.setShallWeRunTime(${time})`);
     fs.writeFileSync(path.join(output, `scene-${time}s.png`), await screenshot());
+  }
+  for (let i = 0; i < 7; i++) {
+    await evaluate(`window.setShallWeRunTime(${3.5 + i})`);
+    fs.writeFileSync(path.join(output, `marathon-${i + 1}.png`), await screenshot());
   }
   const sheet = await sharp({ create: { width: 1080, height: 1280, channels: 3, background: '#101010' } })
     .composite(await Promise.all([0, 6, 12, 19, 24, 32].map(async (time, i) => ({ input: await sharp(path.join(output, `scene-${time}s.png`)).resize(360, 640).toBuffer(), left: (i % 3) * 360, top: Math.floor(i / 3) * 640 })))).png().toBuffer();

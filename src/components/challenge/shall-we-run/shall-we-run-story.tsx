@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { paintStory, STORY_DURATION, STORY_SCENES } from './story-timeline';
 import styles from './story.module.css';
+import { MARATHONS } from './marathons';
 
 declare global {
   interface Window {
@@ -61,11 +62,13 @@ export function ShallWeRunStory() {
         paintStory(root, trigger.progress * STORY_DURATION);
         const onNav = (event: MouseEvent) => {
           if (!(event.target instanceof Element)) return;
-          const link = event.target.closest<HTMLAnchorElement>('[data-nav-scene]');
+          const link = event.target.closest<HTMLElement>('[data-nav-scene], [data-marathon-link]');
           if (!link) return;
           event.preventDefault();
-          const scene = STORY_SCENES[Number(link.dataset.navScene)];
-          window.scrollTo({ top: trigger.start + ((scene.start + 0.6) / STORY_DURATION) * (trigger.end - trigger.start), behavior: 'smooth' });
+          const time = link.dataset.marathonLink !== undefined
+            ? 3.15 + Number(link.dataset.marathonLink)
+            : STORY_SCENES[Number(link.dataset.navScene)].start + 0.6;
+          window.scrollTo({ top: trigger.start + (time / STORY_DURATION) * (trigger.end - trigger.start), behavior: 'smooth' });
         };
         root.addEventListener('click', onNav);
         cleanup = () => { trigger.kill(); root.removeEventListener('click', onNav); };
@@ -86,16 +89,26 @@ export function ShallWeRunStory() {
     <div ref={rootRef} className={styles.story}>
       <div ref={railRef} className={styles.rail}>
         <div className={styles.stage}>
+          <div className={styles.backdrop} aria-hidden="true">
+            {MARATHONS.map(race => (
+              // eslint-disable-next-line @next/next/no-img-element
+              <img key={race.id} data-race-photo src={race.src} alt="" fetchPriority={race.id === 'new-york' ? 'high' : 'low'} decoding="async" style={{ objectPosition: race.position }} />
+            ))}
+          </div>
           <div className={styles.track} aria-hidden="true"><i /><i /><i /><i /></div>
           <header className={styles.header}>
             <Link href="/">allrunabout<span> / 개인 러닝 기록</span></Link>
             <span>2026.10.11</span>
           </header>
           <section id="start" data-scene className={`${styles.scene} ${styles.start}`}>
+            <div className={styles.staticHero} aria-hidden="true">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src={MARATHONS[6].src} alt="" fetchPriority="high" decoding="async" />
+            </div>
             <p className={styles.context}>쉘위런 시네마런 챌린지</p>
             <h1><span>영화가</span><span>시작되기 전에,</span><em>나는 달렸다.</em></h1>
             <div className={styles.run} aria-hidden="true">RUN.</div>
-            <p className={styles.signature}>한 편의 영화를 기다리는 나의 출발.</p>
+            <p className={styles.signature}>한 편의 영화를 기다리는 나의 출발.<span>뉴욕 마라톤 대회 자료사진</span></p>
           </section>
           <section id="film" data-scene className={`${styles.scene} ${styles.film}`}>
             <div className={styles.seven} aria-hidden="true">7</div>
@@ -103,8 +116,19 @@ export function ShallWeRunStory() {
               <p className={styles.filmTitle}>쉘위런 <span>SHALL WE RUN</span></p>
               <h2>우리는 왜<br /><em>달리는가?</em></h2>
               <p>션의 세계 7대 마라톤 도전을 따라가는<br />러닝 다큐멘터리.</p>
-              <div className={styles.marks} aria-hidden="true">{Array.from({ length: 7 }, (_, i) => <i key={i} />)}</div>
-              <p className={styles.filmNote}>한 사람의 도전에서, 나의 한 걸음으로.</p>
+              <div className={styles.marks} aria-label="세계 7개 대회의 자료사진">
+                {MARATHONS.map((race, i) => <button key={race.id} type="button" data-marathon-link={i} aria-label={`${race.city} 마라톤 사진으로 이동`} aria-pressed="false"><span>{i + 1}</span></button>)}
+              </div>
+              <div className={styles.raceLabels}>
+                {MARATHONS.map((race, i) => <p key={race.id} data-race-label hidden={i !== 0}><strong>{race.name}</strong><span>{race.city} 마라톤 · 대회 자료사진</span></p>)}
+              </div>
+            </div>
+            <div className={styles.staticGallery}>
+              {MARATHONS.map(race => <figure key={race.id}>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={race.src} alt={`${race.city} 마라톤 자료사진`} width="720" height="480" style={{ objectPosition: race.position }} />
+                <figcaption>{race.city} 마라톤</figcaption>
+              </figure>)}
             </div>
           </section>
           <section id="weekend" data-scene className={`${styles.scene} ${styles.weekend}`}>
@@ -147,6 +171,12 @@ export function ShallWeRunStory() {
             <a href="https://www.instagram.com/p/Dd7knECEras/" target="_blank" rel="noopener noreferrer">런데이 챌린지 안내 ↗</a>
           </p>
           <Link className={styles.back} href="/">allrunabout으로 돌아가기 ↗</Link>
+          <details id="photo-credits" className={styles.photoCredits}>
+            <summary>세계 7개 대회 사진 출처</summary>
+            <p>개최연도가 다른 대회 자료사진입니다. 사진은 크기·표시 영역·색조를 조정해 사용했으며, 각 사진의 이용 조건을 따릅니다.</p>
+            <ul>{MARATHONS.map(race => <li key={race.id}><strong>{race.city}</strong> — {race.author} · <a href={race.source} target="_blank" rel="noopener noreferrer">사진 원본</a> · <a href={race.licenseUrl} target="_blank" rel="noopener noreferrer">{race.license}</a></li>)}</ul>
+            <p>가공된 사진 파일은 해당 원본과 동일한 라이선스로 제공합니다.</p>
+          </details>
         </div>
         <p className={styles.colophon}>2026.10.11의 기록 · sancho216_doit</p>
       </footer>

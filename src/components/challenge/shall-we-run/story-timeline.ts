@@ -1,3 +1,5 @@
+import { MARATHONS } from './marathons';
+
 /** Seconds are an editing timeline, not a measurement of the runner's activity. */
 export const STORY_DURATION = 34;
 export const STORY_SCENES = [
@@ -30,6 +32,20 @@ export function paintStory(root: HTMLElement, seconds: number) {
   });
   const paper = t >= 20 && t < 27;
   const lineTime = Math.min(t, 30);
+  const raceIndex = t >= 3 && t < 10 ? Math.min(6, Math.floor(t - 3)) : 6;
+  const raceProgress = t >= 3 && t < 10 ? clamp(t - 3 - raceIndex) : clamp(Math.min(t, 3) / 3);
+  root.style.setProperty('--photo-opacity', paper ? '0' : t < 10 ? '1' : t < 20 ? '.28' : '.65');
+  root.style.setProperty('--photo-scale', String(1.04 + raceProgress * .025));
+  root.querySelectorAll<HTMLElement>('[data-race-photo]').forEach((photo, i) => {
+    photo.style.opacity = i === raceIndex ? '1' : '0';
+  });
+  root.querySelectorAll<HTMLElement>('[data-race-label]').forEach((label, i) => {
+    label.hidden = i !== raceIndex;
+  });
+  root.querySelectorAll<HTMLElement>('[data-marathon-link]').forEach((button, i) => {
+    button.setAttribute('aria-pressed', String(i === raceIndex));
+  });
+  root.dataset.race = MARATHONS[raceIndex].id;
   root.dataset.paper = String(paper);
   root.style.setProperty('--line-x', `${-30 + clamp(lineTime / STORY_DURATION) * 55}%`);
   root.style.setProperty('--line-turn', `${-15 + clamp(lineTime / STORY_DURATION) * 25}deg`);

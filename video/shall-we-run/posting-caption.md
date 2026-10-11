@@ -14,6 +14,12 @@
 나의 러닝 기록: https://allrunabout.com/shall-we-run
 완주 배지 획득: 2026.10.11
 
+세계 7개 대회 자료사진: Wikimedia Commons.
+사진 출처·촬영자·라이선스: https://allrunabout.com/shall-we-run#photo-credits
+TheNickster, ArnoldReinhold, DanHuddleston, Sheminghui.WU, Lear 21,
+Benjamin Lipsman, Martineric. 사진별 CC BY / CC BY-SA 이용 조건으로 사용.
+크기·표시 영역·색조 조정. 각 가공 사진은 원본과 동일한 라이선스로 제공.
+
 ---
 
 ## 게시 전에 확정할 항목
