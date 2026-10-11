@@ -3,7 +3,7 @@ import { CHARACTER_SIGNS } from './medal3d-character-signs.js';
 // M2 cover only: one die-struck round medal. No personal records enter this renderer.
 // Each call owns its scene and GPU resources; the seven-coin analysis scene is never touched.
 const TAU = Math.PI * 2;
-const FACE_RADIUS = .855;
+const FACE_RADIUS = .635;
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const FINISH = {
   gold: { metal: '#c2a064', bright: '#f3ddb0', dark: '#725124', field: '#493820', rough: .55 },
@@ -97,7 +97,7 @@ export function coverRelief(id, S = 1024) {
     left = Math.min(left, x); right = Math.max(right, x); top = Math.min(top, y); bottom = Math.max(bottom, y);
   }
   // Optical sizing: every sign gets the same longest dimension; a thin spear is not stretched into a broad one.
-  const w = right - left + 1, h = bottom - top + 1, k = S * .62 / Math.max(w, h);
+  const w = right - left + 1, h = bottom - top + 1, k = S * .76 / Math.max(w, h);
   const mask = canvas(S), g = mask.getContext('2d', { willReadFrequently: true });
   g.fillStyle = '#000'; g.fillRect(0, 0, S, S);
   g.drawImage(source, left, top, w, h, (S - w * k) / 2, (S - h * k) / 2, w * k, h * k);
@@ -167,7 +167,53 @@ function studio(T) {
   };
   panel(5, 13, 5.0, [-5, 5, 10]); panel(2, 14, 3.4, [9, 0, 6]);
   panel(10, 2, 1.8, [0, -7, 10]); panel(6, 11, .45, [5, 2, 16]);
+  // Reflect into the raised sign at the fixed camera/medal angle.
+  panel(9, 7, 2.0, [-7, -5, 10]);
   return s;
+}
+
+// Four rows of cut-metal pyramids. Each triangle has its own normal, so the
+// decoration reflects the studio as real facets instead of a printed pattern.
+// The CPU renderer projects these same triangles when WebGL is unavailable.
+function ornamentTriangles() {
+  const triangles=[], polar=(r,a,z)=>[r*Math.cos(a),r*Math.sin(a),z];
+  const pyramid=(corners,peak)=>{
+    for(let i=0;i<4;i++)triangles.push([corners[i],corners[(i+1)%4],peak]);
+  };
+  for(let row=0;row<4;row++) {
+    const inner=.661+row*.066,outer=inner+.066,segments=72,step=TAU/segments;
+    const low=.030+row*.013,high=low+.013;
+    for(let i=0;i<segments;i++) {
+      const a=(i+row*.27)*step,b=a+step;
+      pyramid([polar(inner,a,low),polar(outer,a+step*.27,high),polar(outer,b+step*.27,high),polar(inner,b,low)],
+        polar((inner+outer)/2,(a+b)/2+step*.135,(low+high)/2+.032));
+    }
+  }
+  // Narrow radial cuts crown the outside of the faceted annulus.
+  for(let i=0;i<120;i++) {
+    const a=i/120*TAU,b=(i+.80)/120*TAU;
+    pyramid([polar(.936,a,.102),polar(.974,a,.109),polar(.974,b,.109),polar(.936,b,.102)],polar(.955,(a+b)/2,.124));
+  }
+  return triangles;
+}
+
+function ornamentGeometry(T) {
+  const geometry=new T.BufferGeometry();
+  geometry.setAttribute('position',new T.Float32BufferAttribute(ornamentTriangles().flat(2),3));
+  geometry.computeVertexNormals();return geometry;
+}
+
+function paintFlatOrnament(g,R,finish) {
+  const f=FINISH[finish],base=rgb(f.metal),bright=rgb(f.bright);
+  for(const triangle of ornamentTriangles()) {
+    const [a,b,c]=triangle,u=b.map((v,i)=>v-a[i]),v=c.map((n,i)=>n-a[i]);
+    const nx=u[1]*v[2]-u[2]*v[1],ny=u[2]*v[0]-u[0]*v[2],nz=u[0]*v[1]-u[1]*v[0];
+    const length=Math.hypot(nx,ny,nz),light=Math.max(0,(-.45*nx+.55*ny+.70*nz)/length);
+    const shine=Math.pow(light,12),shade=.34+.68*light;
+    const color=base.map((value,i)=>Math.round(clamp(value*shade+bright[i]*shine*.24,0,255)));
+    g.fillStyle=`rgb(${color.join(',')})`;g.beginPath();
+    triangle.forEach(([x,y],i)=>i?g.lineTo(x*R,-y*R):g.moveTo(x*R,-y*R));g.closePath();g.fill();
+  }
 }
 
 function disposeTree(root) {
@@ -204,14 +250,15 @@ async function webglMedal(relief, finish, width, height, portrait = false) {
     try { environment = pmrem.fromScene(room, .08, .1, 30); } finally { pmrem.dispose(); }
     scene.environment = environment.texture; scene.environmentIntensity = 1.0;
     const f = FINISH[finish], medal = new T.Group(); scene.add(medal);
-    medal.rotation.set(.13, -.23, -.045); medal.position.y = portrait ? 0 : -.13;
+    medal.rotation.set(.25, -.34, -.07); medal.position.y = portrait ? 0 : -.13;
     const metal = new T.MeshPhysicalMaterial({ color: f.metal, metalness: 1, roughness: .25 });
     const edge = new T.MeshPhysicalMaterial({ color: f.bright, metalness: 1, roughness: .2 });
-    const profile = [[0,-.24],[.94,-.24],[.985,-.205],[1,-.15],[1,.045],[.98,.092],[.935,.11],[.902,.092],[.884,.072],[.865,.030],[.855,.006],[0,.006]].map(p => new T.Vector2(...p));
+    const profile = [[0,-.27],[.945,-.27],[.983,-.238],[1,-.19],[1,.045],[.985,.094],[.975,.112],[.932,.098],[.925,.065],[.658,.016],[.64,.004],[0,.004]].map(p => new T.Vector2(...p));
     const body = new T.Mesh(new T.LatheGeometry(profile, 384), metal); body.rotation.x = Math.PI / 2; medal.add(body);
-    for (const [r,z,tube] of [[.975,.10,.009],[.863,.028,.007]]) {
+    for (const [r,z,tube] of [[.983,.101,.008],[.93,.09,.007],[.651,.034,.010],[.638,.019,.005]]) {
       const ring = new T.Mesh(new T.TorusGeometry(r,tube,12,384),edge); ring.position.z=z; medal.add(ring);
     }
+    medal.add(new T.Mesh(ornamentGeometry(T),new T.MeshPhysicalMaterial({color:f.metal,metalness:1,roughness:.32,flatShading:true})));
     const reedGeo = new T.PlaneGeometry(.005, .15), reedMat = new T.MeshPhysicalMaterial({ color: f.dark, metalness: 1, roughness: .38, side: T.DoubleSide });
     for (let i=0;i<240;i++) {
       const a=i/240*TAU, reed=new T.Mesh(reedGeo,reedMat);
@@ -260,9 +307,10 @@ function flatMedal(relief,finish,width,height,portrait = false) {
     for(let y=-R*.28;y<R*.28;y+=2){g.fillStyle='rgba(255,190,123,.13)';g.fillRect(-R*.145,y,R*.29,.65);}g.restore();
   }
   const disk=(x,y,r,fill)=>{g.fillStyle=fill;g.beginPath();g.arc(x,y,r,0,TAU);g.fill();};
-  disk(R*.014,R*.045,R,f.dark);
+  disk(R*.030,R*.072,R,f.dark);
   const edge=g.createLinearGradient(-R,-R,R,R);edge.addColorStop(0,f.bright);edge.addColorStop(.38,f.metal);edge.addColorStop(.7,f.dark);edge.addColorStop(1,f.bright);
-  disk(0,0,R,edge);disk(0,0,R*.963,f.dark);disk(0,0,R*.951,edge);disk(0,0,R*.888,f.dark);disk(0,0,R*.875,edge);
+  disk(0,0,R,edge);disk(0,0,R*.963,f.dark);disk(0,0,R*.951,edge);
+  paintFlatOrnament(g,R,finish);
   const img=new ImageData(S,S), base=rgb(f.field), bright=rgb(f.metal), L=[-.45,.55,.70];
   for(let y=0;y<S;y++)for(let x=0;x<S;x++){
     const i=y*S+x,u=(x+.5)/S*2-1,v=1-(y+.5)/S*2;
@@ -277,7 +325,9 @@ function flatMedal(relief,finish,width,height,portrait = false) {
     img.data[i*4+3]=255;
   }
   const field=canvas(S);field.getContext('2d').putImageData(img,0,0);g.drawImage(field,-R*FACE_RADIUS,-R*FACE_RADIUS,R*2*FACE_RADIUS,R*2*FACE_RADIUS);
-  g.strokeStyle=f.bright;g.lineWidth=R*.007;g.beginPath();g.arc(0,0,R*.863,0,TAU);g.stroke();
+  for(const [radius,line] of [[.983,.008],[.93,.006],[.651,.009],[.638,.004]]) {
+    g.strokeStyle=f.bright;g.lineWidth=R*line;g.beginPath();g.arc(0,0,R*radius,0,TAU);g.stroke();
+  }
   if(!portrait){g.lineWidth=R*.023;g.strokeStyle=f.dark;g.beginPath();g.arc(0,-R*1.038,R*.104,0,TAU);g.stroke();g.lineWidth=R*.014;g.strokeStyle=f.bright;g.stroke();}
   g.restore();out.dataset.renderer='flat';return out;
 }
