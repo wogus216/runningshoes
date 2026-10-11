@@ -206,6 +206,26 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
     }
   }
 
+  function downloadSaved(file: Saved) {
+    if ('download' in HTMLAnchorElement.prototype) {
+      const link = document.createElement('a');
+      link.href = file.url;
+      link.download = file.name;
+      document.body.append(link);
+      link.click();
+      link.remove();
+      setStatus(`${file.page === 'cover' ? '1장 표지' : '2장 분석'} 다운로드를 시작했어요.`);
+      return;
+    }
+    const tab = window.open(file.url, '_blank');
+    if (tab) {
+      tab.opener = null;
+      setStatus(`${file.page === 'cover' ? '1장 표지' : '2장 분석'}를 새 탭에서 열었어요. 길게 눌러 저장하세요.`);
+    } else {
+      setStatus('이미지를 열지 못했어요. 팝업 허용 후 다시 눌러 주세요.');
+    }
+  }
+
   async function save(pages: SharePage[]) {
     if (busy) return;
     const { name, size } = SIZES[kind];
@@ -300,9 +320,27 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       <p className="rc-share-note">링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.</p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && typeof navigator !== 'undefined' && navigator.canShare?.({ files: saved.map((m) => m.file) }) && (
-        <button type="button" className="rc-primary" disabled={busy} onClick={shareFiles}>기기에 저장·공유</button>
+        <button type="button" className="rc-primary" disabled={busy} onClick={shareFiles}>
+          {saved.length === 2 ? '이미지 2장 함께 보내기' : '표지 이미지 공유·저장'}
+        </button>
       )}
-      <p className="rc-share-note">다운로드가 되지 않으면 이미지를 열어 길게 눌러 저장하세요. 이미지 열기는 현재 숨기기·크기 설정을 반영해요.</p>
+      {saved.length > 0 && (
+        <>
+          <p className="rc-share-note">
+            {saved.length === 2
+              ? '한 장만 다운로드됐다면 아래에서 빠진 이미지를 따로 저장하세요. 두 장을 다른 앱으로 함께 보내려면 위 버튼을 누르세요.'
+              : '표지 이미지가 다운로드되지 않았다면 아래 버튼으로 다시 저장할 수 있어요.'}
+          </p>
+          <div className="rc-open">
+            {saved.map((file) => (
+              <button key={file.page} type="button" disabled={busy} onClick={() => downloadSaved(file)}>
+                {file.page === 'cover' ? '1장 표지 다운로드' : '2장 분석 다운로드'}
+              </button>
+            ))}
+          </div>
+        </>
+      )}
+      <p className="rc-share-note">이미지 열기는 현재 숨기기·크기 설정을 반영해요. 다운로드가 되지 않으면 열어서 길게 눌러 저장하세요.</p>
       <div className="rc-open">
         <button type="button" disabled={busy} onClick={() => openImage('cover')}>1장 표지 열기</button>
         <button type="button" disabled={busy} onClick={() => openImage('analysis')}>2장 분석 열기</button>
