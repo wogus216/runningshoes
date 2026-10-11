@@ -2,6 +2,101 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'daegu-marathon-application-guide',
+    slug: 'daegu-marathon-application-guide',
+    title: '2027 대구마라톤 접수 일정·참가비·코스 | 풀코스 10월 12일 시작, WA 골드라벨',
+    description: '2027 대구국제마라톤(2월 28일, WA 골드라벨) 접수가 10월 12일 시작됩니다. 풀·10km·건강달리기 종목별 접수·결제 기간과 참가비, 접수 방법을 공식 사이트로 정리했습니다.',
+    thumbnail: '/images/blog/daegu-marathon-application-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-11',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['대구마라톤', '대구국제마라톤', 'WA 골드라벨', '풀코스', '마라톤 접수', '2027 마라톤'],
+    event: {
+      name: '2027 대구국제마라톤',
+      startDate: '2027-02-28T08:00:00+09:00',
+      location: { name: '국채보상공원 및 대구 시내 일원' },
+      organizer: '대구광역시',
+      url: 'https://daegumarathon.daegu.go.kr/kor/index.do',
+      offers: [
+        { name: '마스터즈 풀코스', priceKrw: 90000, availabilityEnds: '2026-10-18', url: 'https://daegumarathon.daegu.go.kr/korAply/index.do' },
+        { name: '10km', priceKrw: 60000, availabilityEnds: '2026-11-01', url: 'https://daegumarathon.daegu.go.kr/korAply/index.do' },
+      ],
+    },
+    raceMeta: {
+      displayTitle: '2027 대구마라톤, 풀코스 접수 시작',
+      displaySubtitle: '2월 28일 일요일 — WA 골드라벨 · 국채보상공원 출발',
+      raceDate: '2027-02-28',
+      registrationStart: '2026-10-12T10:00',
+      registrationEnd: '2026-11-01',
+      registrationVia: '대구마라톤 공식 홈페이지 접수 페이지',
+      action: {
+        what: '풀코스 접수 10월 12일(월) 10시 시작',
+        how: '<a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">공식 접수 페이지</a>에서 종목별 접수 기간에 신청합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간에 반드시 결제해야 참가가 확정됩니다.',
+      },
+      facts: [
+        { label: '대회일', value: '2027년 2월 28일', sub: '일요일 · 08:00 출발' },
+        { label: '장소', value: '국채보상공원', sub: '대구 시내 일원' },
+        { label: '종목', value: '풀·10km·건강달리기', sub: '엘리트 풀코스 별도' },
+        { label: '참가비', value: '풀 9만 / 10km 6만원', sub: '건강달리기 — 공식 미게시' },
+        { label: '풀 접수', value: '10/12(월)~18(일)', sub: '10:00 시작 · 결제 10/19~25' },
+        { label: '10km·건강', value: '10/26(월)~11/1(일)', sub: '결제 11/2~8' },
+      ],
+      highlights: [
+        { badge: 'WA 골드', title: 'WA 골드라벨 공인 대회입니다', desc: '대구국제마라톤은 <strong>World Athletics 골드라벨</strong> 대회입니다. 국내에서 WA 라벨을 보유한 풀코스 대회는 서울·대구 등 손에 꼽힙니다.' },
+        { badge: '접수≠확정', title: '접수와 결제가 분리돼 있습니다', desc: '접수 기간에 신청한 뒤, <strong>별도 결제 기간에 참가비를 내야 참가가 확정</strong>됩니다. 풀코스는 접수 10/12~18, 결제 10/19~25입니다. 결제 기간을 놓치면 접수가 취소될 수 있습니다.' },
+        { badge: '2월', title: '겨울 훈련 후 첫 풀코스 시즌', desc: '2월 말은 겨울 훈련을 마치고 봄 시즌을 여는 시점입니다. 국내 메이저 풀코스 중 가장 이른 시기에 열리므로, <strong>상반기 기록 도전 첫 기회</strong>로 삼는 러너가 많습니다.' },
+      ],
+    },
+    faqs: [
+      { question: '2027 대구마라톤 접수는 언제, 어디서 하나요?', answer: '풀코스(마스터즈)는 2026년 10월 12일(월) 10시부터 18일(일) 23시 59분까지, 10km·건강달리기는 10월 26일(월) 10시부터 11월 1일(일) 23시 59분까지 공식 접수 페이지(daegumarathon.daegu.go.kr)에서 신청합니다. 단체접수는 11월 16~19일입니다.' },
+      { question: '대구마라톤 참가비는 얼마인가요?', answer: '풀코스 90,000원, 10km 60,000원입니다. 건강달리기(5km) 참가비는 공식 접수 페이지에 아직 게시되지 않았습니다.' },
+      { question: '접수하면 바로 참가가 확정되나요?', answer: '아닙니다. 접수와 결제가 분리돼 있습니다. 풀코스는 10월 19~25일, 10km·건강달리기는 11월 2~8일 결제 기간에 참가비를 내야 참가가 확정됩니다.' },
+    ],
+    content: `
+<div class="deadline-strip"><span class="dl-badge">📢 접수 예정</span><span class="dl-text"><strong>2027 대구국제마라톤(2027년 2월 28일)</strong> 풀코스(마스터즈) 접수가 <strong>2026년 10월 12일(월) 10시에 열립니다.</strong> 10km·건강달리기는 10월 26일(월) 10시부터 접수합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간을 반드시 확인하세요.</span></div>
+
+<h2>종목별 접수·결제 일정</h2>
+<p>2027 대구국제마라톤은 <strong>엘리트 풀코스·마스터즈 풀코스·10km·건강달리기(5km)</strong> 네 종목으로 나뉩니다. 일반 러너가 신청하는 것은 마스터즈 풀코스·10km·건강달리기이며, <strong>접수와 결제가 분리된 2단계 구조</strong>입니다.</p>
+<table>
+  <thead><tr><th>종목</th><th>접수 기간</th><th>결제 기간</th><th>참가비</th></tr></thead>
+  <tbody>
+    <tr><td><strong>마스터즈 풀코스</strong></td><td>10/12(월) 10:00 ~ 10/18(일) 23:59</td><td>10/19(월) ~ 10/25(일)</td><td>90,000원</td></tr>
+    <tr><td><strong>10km</strong></td><td>10/26(월) 10:00 ~ 11/1(일) 23:59</td><td>11/2(월) ~ 11/8(일)</td><td>60,000원</td></tr>
+    <tr><td><strong>건강달리기(5km)</strong></td><td>10/26(월) 10:00 ~ 11/1(일) 23:59</td><td>11/2(월) ~ 11/8(일)</td><td>공식 미게시</td></tr>
+    <tr><td><strong>단체접수</strong></td><td>11/16(월) 10:00 ~ 11/19(목) 23:59</td><td colspan="2">공식 안내 확인</td></tr>
+  </tbody>
+</table>
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">접수 ≠ 참가 확정</p><p>접수 기간에 신청만 하면 끝이 아닙니다. <strong>별도 결제 기간에 참가비를 납부해야 참가가 확정</strong>됩니다. 풀코스 기준, 접수 마감(10/18)과 결제 시작(10/19) 사이에 하루 간격이 있으니 달력에 결제일을 미리 적어두세요.</p></div></div>
+<p>건강달리기(5km) 참가비는 공식 접수 페이지에 아직 게시되지 않았습니다. 10월 26일 접수가 열리면 확인할 수 있습니다.</p>
+
+<h2>대회 개요 — WA 골드라벨 풀코스</h2>
+<p>대구국제마라톤은 <strong>World Athletics(WA) 골드라벨</strong> 대회입니다. 국내에서 WA 라벨을 보유한 풀코스 대회는 손에 꼽히며, 기록 공인과 국제 대회 자격에 유리합니다.</p>
+<ul>
+  <li><strong>대회일:</strong> 2027년 2월 28일(일) 08:00 출발</li>
+  <li><strong>장소:</strong> 국채보상공원 및 대구 시내 일원</li>
+  <li><strong>종목:</strong> 엘리트 풀코스 / 마스터즈 풀코스 / 10km / 건강달리기(5km)</li>
+  <li><strong>접수:</strong> <a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">대구마라톤 공식 접수 페이지</a></li>
+</ul>
+<p>2월 말은 겨울 훈련을 마치고 봄 시즌을 여는 시점입니다. 국내 메이저 풀코스 중 가장 이른 시기에 열리므로, 상반기 기록 도전의 첫 기회로 삼는 러너가 많습니다.</p>
+
+<h2>접수 전 확인할 것</h2>
+<ul>
+  <li><strong>선착순·추첨 여부:</strong> 공식 사이트에 선착순인지 추첨인지 명시돼 있지 않습니다. 접수 시작 시각(10시)에 맞춰 준비하되, 정원과 선발 방식은 접수 페이지가 열리면 직접 확인하세요.</li>
+  <li><strong>WMAC 사전접수:</strong> WMAC(세계마스터즈육상선수권) 참가자 대상 사전접수가 10월 5~11일로 이미 진행됐습니다. 일반 접수와 별개입니다.</li>
+  <li><strong>환불·취소:</strong> 공식 사이트에서 환불 조건을 확인하지 못했습니다. 접수 전에 환불 정책을 반드시 확인하세요.</li>
+</ul>
+
+<h2>풀코스 준비가 처음이라면</h2>
+<p>대회일까지 약 <strong>4개월 반</strong>입니다. 풀코스가 처음이라면 16~20주 훈련 프로그램을 시작하기에 적절한 시점입니다. 이미 하프 이상 경험이 있다면 장거리 주간 주행량을 점진적으로 늘려가는 계획을 세울 수 있습니다.</p>
+<p>본인 러닝 스타일과 목표에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다. 국내 마라톤 일정 전체는 <a href="/marathon">마라톤 일정 페이지</a>에서 확인하세요.</p>
+
+<h2>출처</h2>
+<p><a href="https://daegumarathon.daegu.go.kr/kor/index.do" target="_blank" rel="noopener noreferrer">대구국제마라톤 공식 홈페이지</a> 및 <a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">접수 페이지</a> — 2026년 10월 11일 확인. 대회일·장소·종목·접수 및 결제 기간·참가비(풀코스·10km)는 이 공식 페이지 기준입니다.</p>
+<p><small>건강달리기(5km) 참가비는 접수 개시 전이라 공식 접수 페이지에 미게시 상태입니다. 선착순·추첨 여부, 정원, 환불 조건도 확인한 페이지에서 명시를 찾지 못했습니다. 이 항목들은 접수가 열리면 갱신하겠습니다.</small></p>
+`,
+  },
+  {
     id: 'chicago-marathon-2027-application-guide',
     slug: 'chicago-marathon-2027-application-guide',
     title: '시카고마라톤 2027 접수 시작 | 한국시간 10/30 새벽 4시 마감·12/8 추첨 발표 — 기록 기준표·자선 $2,500·참가비 $260',
