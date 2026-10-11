@@ -173,7 +173,7 @@ export function ShallWeRunStory() {
         <div>
           <h2>내가 기다리는 영화, 쉘위런.</h2>
           <p>션의 세계 7대 마라톤 도전을 통해 “우리는 왜 달리는가?”를 묻는 다큐멘터리. 달리기와 나눔, 함께하는 사람들의 이야기를 담고, 박보검이 내레이션으로 참여합니다.</p>
-          <p>평소에도 달리지만 주말엔 밖으로 나가는 게 쉽지 않았다. 〈쉘위런〉의 개봉을 기다리며 참여한 런데이 챌린지가 이번엔 달릴 이유가 되어줬다. 덕분에 한 번 더 달렸고, 누적 11.2km를 채웠다. 완주 배지를 받고 나니 이 달리기를 조금 특별하게 남기고 싶어졌다.</p>
+          <p>평소에도 달리긴 하는데, 주말엔 밖에 나가는 게 쉽지 않더라고요. 〈쉘위런〉 개봉을 기다리다가 런데이 시네마런 챌린지에 참여했어요. 덕분에 주말에도 한 번 더 나가서 달렸고, 누적 11.2km 미션을 마쳤어요. 배지를 받고 나니까 이번 러닝을 기념으로 남기고 싶어서 이 페이지를 만들었어요.</p>
           <p className={styles.sources}>
             <a href="https://sbsstar.net/article/N1008763307/seans-world-marathon-journey-to-be-released-in-documentary-film-narrated-by-park-bogum" target="_blank" rel="noopener noreferrer">영화 소개 출처 ↗</a>
             <a href="https://www.instagram.com/p/Dd7knECEras/" target="_blank" rel="noopener noreferrer">런데이 챌린지 안내 ↗</a>
@@ -181,7 +181,7 @@ export function ShallWeRunStory() {
           <section className={styles.rundayInfo} aria-labelledby="runday-heading">
             <RundayMark />
             <h2 id="runday-heading">내 출발을 만든 앱, 런데이.</h2>
-            <p>챌린지에 참여하고, 달린 거리를 쌓고, 완주 배지를 받기까지. 이번 러닝은 런데이와 함께했다. 다음에도 달릴 이유가 필요하면 앱을 열어봐야겠다.</p>
+            <p>챌린지 신청부터 완주 배지를 받기까지, 런데이 앱으로 참여했어요. 달릴 목표가 생기니까 주말에도 한 번 더 나가게 되더라고요.</p>
             <div className={styles.appLinks}>
               <a href="https://link.runday.co.kr/app" target="_blank" rel="noopener noreferrer">런데이 앱 열기 ↗</a>
               <a href="https://apps.apple.com/kr/app/runday/id1042937618" target="_blank" rel="noopener noreferrer">App Store ↗</a>
