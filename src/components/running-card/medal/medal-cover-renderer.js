@@ -96,8 +96,15 @@ export function coverRelief(id, S = 1024) {
   for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) if (ink[(y * S + x) * 4] > 64) {
     left = Math.min(left, x); right = Math.max(right, x); top = Math.min(top, y); bottom = Math.max(bottom, y);
   }
-  // Optical sizing: every sign gets the same longest dimension; a thin spear is not stretched into a broad one.
-  const w = right - left + 1, h = bottom - top + 1, k = S * .76 / Math.max(w, h);
+  // Preserve the hero sizing, but keep diagonal tips and square corners inside
+  // the circular face. Bounding-box sizing alone can clip them at the rim.
+  const w = right - left + 1, h = bottom - top + 1;
+  const cx = (left + right + 1) / 2, cy = (top + bottom + 1) / 2;
+  let reach = 0;
+  for (let y = top; y <= bottom; y++) for (let x = left; x <= right; x++) if (ink[(y * S + x) * 4] > 64) {
+    reach = Math.max(reach, Math.hypot(x + .5 - cx, y + .5 - cy));
+  }
+  const k = Math.min(S * .76 / Math.max(w, h), S * .47 / Math.max(1, reach));
   const mask = canvas(S), g = mask.getContext('2d', { willReadFrequently: true });
   g.fillStyle = '#000'; g.fillRect(0, 0, S, S);
   g.drawImage(source, left, top, w, h, (S - w * k) / 2, (S - h * k) / 2, w * k, h * k);

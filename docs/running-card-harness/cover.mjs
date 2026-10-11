@@ -18,6 +18,8 @@ console.log(JSON.stringify(RUNNER_CHARACTERS.map(c=>({id:c.id,house:c.house,name
 const chosen = selected === 'all' ? cards : selected.split(',').map(id => {
   const c = cards.find(c => c.id === id); if (!c) throw new Error(`unknown figure ${id}`); return c;
 });
+// A broad apple or tower legitimately covers >35% at the larger M2 scale.
+// Reject near-solid masks at 55%; separately assert radial clearance at 96%.
 const html = `<!doctype html><meta charset="utf-8"><style>
 @import url('/type/pretendardvariable-dynamic-subset.css');
 @font-face{font-family:StudySans;src:url('/font/medal-sans.woff2');font-weight:45 920}
@@ -27,7 +29,7 @@ body{background:#17150f;color:#eee;font:14px sans-serif}
 <script type="module">
 import {renderCoverMedal,paintCoverMedal,coverRelief} from '/module/medal-cover-renderer.js';
 import {drawCover,SHARE_SIZES} from '/module/medal3d-share.js';
-window.make=async(card,finish,webgl)=>{const start=performance.now();const relief=coverRelief(card.id,256);const raised=relief.height.filter(x=>x>.5).length/relief.height.length;if(raised<.01||raised>.35)throw new Error('empty or solid mark '+card.id);const medal=await renderCoverMedal({id:card.id,finish,webgl});const images={};for(const kind of ['feed','story']){const [w,h]=SHARE_SIZES[kind];const c=Object.assign(document.createElement('canvas'),{width:w,height:h});await drawCover(c.getContext('2d'),kind,card,(fig,target=c.getContext('2d'))=>paintCoverMedal(target,fig,medal));images[kind]=c.toDataURL('image/png').split(',')[1]}return {images,raised,renderer:medal.dataset.renderer,ms:Math.round(performance.now()-start),medal:medal.toDataURL('image/png').split(',')[1]}};
+window.make=async(card,finish,webgl)=>{const start=performance.now();const relief=coverRelief(card.id,256);const raised=relief.height.filter(x=>x>.5).length/relief.height.length;if(raised<.01||raised>.55)throw new Error('empty or solid mark '+card.id);let maxRadius=0;for(let y=0;y<relief.S;y++)for(let x=0;x<relief.S;x++)if(relief.height[y*relief.S+x]>.1)maxRadius=Math.max(maxRadius,Math.hypot((x+.5)/relief.S*2-1,(y+.5)/relief.S*2-1));if(maxRadius>.96)throw new Error('mark too close to circular rim '+card.id+' '+maxRadius);const medal=await renderCoverMedal({id:card.id,finish,webgl});const images={};for(const kind of ['feed','story']){const [w,h]=SHARE_SIZES[kind];const c=Object.assign(document.createElement('canvas'),{width:w,height:h});await drawCover(c.getContext('2d'),kind,card,(fig,target=c.getContext('2d'))=>paintCoverMedal(target,fig,medal));images[kind]=c.toDataURL('image/png').split(',')[1]}return {images,raised,maxRadius,renderer:medal.dataset.renderer,ms:Math.round(performance.now()-start),medal:medal.toDataURL('image/png').split(',')[1]}};
 window.ready=true;
 </script>`;
 const modules = new Set(['medal-cover-renderer.js', 'medal3d-character-signs.js', 'medal3d-three.js', 'medal3d-share.js']);
@@ -75,7 +77,7 @@ try {
     if(unique.has(r.medal))throw new Error(`duplicate medal ${c.id}`);unique.add(r.medal);
     for (const [kind, png] of Object.entries(r.images)) fs.writeFileSync(path.join(output, `${c.id}-${finish}-${kind}.png`), Buffer.from(png, 'base64'));
     fs.writeFileSync(path.join(output, `${c.id}-${finish}-medal.png`), Buffer.from(r.medal, 'base64'));
-    report.push({ id: c.id, renderer: r.renderer, ms: r.ms, raised: r.raised }); console.log(report.at(-1));
+    report.push({ id: c.id, renderer: r.renderer, ms: r.ms, raised: r.raised, maxRadius: r.maxRadius }); console.log(report.at(-1));
   }
   // A new renderer after disposal must produce the same result with the same inputs.
   const c = chosen[0], repeat = await ev(`window.make(${JSON.stringify(c)},${JSON.stringify(finish)},${mode !== 'flat'})`);
