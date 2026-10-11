@@ -3,11 +3,12 @@ import { CHARACTER_SIGNS } from './medal3d-character-signs.js';
 // M2 cover only: one die-struck round medal. No personal records enter this renderer.
 // Each call owns its scene and GPU resources; the seven-coin analysis scene is never touched.
 const TAU = Math.PI * 2;
+const FACE_RADIUS = .855;
 const clamp = (x, a, b) => Math.max(a, Math.min(b, x));
 const FINISH = {
-  gold: { metal: '#c2a064', bright: '#f3ddb0', dark: '#725124', rough: .43 },
-  silver: { metal: '#a7abad', bright: '#e9ebe8', dark: '#72787b', rough: .36 },
-  brass: { metal: '#99733e', bright: '#d8b879', dark: '#684a25', rough: .44 },
+  gold: { metal: '#c2a064', bright: '#f3ddb0', dark: '#725124', field: '#493820', rough: .55 },
+  silver: { metal: '#a7abad', bright: '#e9ebe8', dark: '#72787b', field: '#363b3e', rough: .51 },
+  brass: { metal: '#99733e', bright: '#d8b879', dark: '#684a25', field: '#3e2d1c', rough: .57 },
 };
 const rgb = hex => [1, 3, 5].map(i => parseInt(hex.slice(i, i + 2), 16));
 const canvas = (w, h = w) => Object.assign(document.createElement('canvas'), { width: w, height: h });
@@ -96,7 +97,7 @@ export function coverRelief(id, S = 1024) {
     left = Math.min(left, x); right = Math.max(right, x); top = Math.min(top, y); bottom = Math.max(bottom, y);
   }
   // Optical sizing: every sign gets the same longest dimension; a thin spear is not stretched into a broad one.
-  const w = right - left + 1, h = bottom - top + 1, k = S * .58 / Math.max(w, h);
+  const w = right - left + 1, h = bottom - top + 1, k = S * .62 / Math.max(w, h);
   const mask = canvas(S), g = mask.getContext('2d', { willReadFrequently: true });
   g.fillStyle = '#000'; g.fillRect(0, 0, S, S);
   g.drawImage(source, left, top, w, h, (S - w * k) / 2, (S - h * k) / 2, w * k, h * k);
@@ -114,12 +115,12 @@ function faceGeometry(T, relief) {
     const x = clamp(u * (S - 1), 0, S - 1), y = clamp((1 - v) * (S - 1), 0, S - 1);
     const x0=Math.floor(x),y0=Math.floor(y),x1=Math.min(S-1,x0+1),y1=Math.min(S-1,y0+1),tx=x-x0,ty=y-y0;
     const a=height[y0*S+x0]*(1-tx)+height[y0*S+x1]*tx,b=height[y1*S+x0]*(1-tx)+height[y1*S+x1]*tx;
-    return .025 + .065 * Math.max(0, 1 - (u-.5)**2*4 - (v-.5)**2*4) + (a*(1-ty)+b*ty) * .038;
+    return .012 + .012 * Math.max(0, 1 - (u-.5)**2*4 - (v-.5)**2*4) + (a*(1-ty)+b*ty) * .064;
   };
   pos.push(0, 0, zAt(.5, .5)); uv.push(.5, .5);
   for (let r = 1; r <= rings; r++) for (let s = 0; s < segs; s++) {
     const f = r / rings, a = s / segs * TAU, u = .5 + .5 * f * Math.cos(a), v = .5 + .5 * f * Math.sin(a);
-    pos.push(.914 * f * Math.cos(a), .914 * f * Math.sin(a), zAt(u, v)); uv.push(u, v);
+    pos.push(FACE_RADIUS * f * Math.cos(a), FACE_RADIUS * f * Math.sin(a), zAt(u, v)); uv.push(u, v);
   }
   for (let s = 0; s < segs; s++) index.push(0, 1 + s, 1 + (s + 1) % segs);
   for (let r = 1; r < rings; r++) for (let s = 0; s < segs; s++) {
@@ -132,7 +133,7 @@ function faceGeometry(T, relief) {
   // Sample the continuous height field: triangle density must not stripe the bevel.
   for (let i=0;i<uv.length;i+=2) {
     const u=uv[i],v=uv[i+1],e=1/S;
-    const nx=-(zAt(u+e,v)-zAt(u-e,v))/(e*3.656),ny=-(zAt(u,v+e)-zAt(u,v-e))/(e*3.656),n=Math.hypot(nx,ny,1);
+    const nx=-(zAt(u+e,v)-zAt(u-e,v))/(e*4*FACE_RADIUS),ny=-(zAt(u,v+e)-zAt(u,v-e))/(e*4*FACE_RADIUS),n=Math.hypot(nx,ny,1);
     normals.push(nx/n,ny/n,1/n);
   }
   geometry.setAttribute('normal',new T.Float32BufferAttribute(normals,3));
@@ -141,15 +142,16 @@ function faceGeometry(T, relief) {
 }
 
 function fieldMaps(relief, finish) {
-  const { S, height } = relief, f = FINISH[finish], base = rgb(f.metal), bright = rgb(f.bright);
+  const { S, height } = relief, f = FINISH[finish], base = rgb(f.field), bright = rgb(f.metal);
   const color = canvas(S), rough = canvas(S), c = color.getContext('2d'), r = rough.getContext('2d');
   const a = c.createImageData(S, S), b = r.createImageData(S, S);
   for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) {
     const i = y * S + x, p = height[i], hash = surfaceNoise(x,y);
     const grain = (hash - .5) * 2.5;
-    for (let j = 0; j < 3; j++) a.data[i * 4 + j] = base[j] + (bright[j] - base[j]) * p * .035 + grain * (1 - p * .75);
+    // Recesses retain a dark patina; raised metal is burnished on the same die.
+    for (let j = 0; j < 3; j++) a.data[i * 4 + j] = base[j] + (bright[j] - base[j]) * p + grain * (1 - p * .75);
     a.data[i * 4 + 3] = b.data[i * 4 + 3] = 255;
-    const v = (f.rough - p * .21) * 255 + (hash - .5) * 8 * (1-p*.9);
+    const v = (f.rough - p * .30) * 255 + (hash - .5) * 8 * (1-p*.9);
     b.data[i * 4] = b.data[i * 4 + 1] = b.data[i * 4 + 2] = v;
   }
   c.putImageData(a, 0, 0); r.putImageData(b, 0, 0);
@@ -202,18 +204,18 @@ async function webglMedal(relief, finish, width, height, portrait = false) {
     try { environment = pmrem.fromScene(room, .08, .1, 30); } finally { pmrem.dispose(); }
     scene.environment = environment.texture; scene.environmentIntensity = 1.0;
     const f = FINISH[finish], medal = new T.Group(); scene.add(medal);
-    medal.rotation.set(.055, -.12, -.035); medal.position.y = portrait ? 0 : -.13;
+    medal.rotation.set(.13, -.23, -.045); medal.position.y = portrait ? 0 : -.13;
     const metal = new T.MeshPhysicalMaterial({ color: f.metal, metalness: 1, roughness: .25 });
     const edge = new T.MeshPhysicalMaterial({ color: f.bright, metalness: 1, roughness: .2 });
-    const profile = [[0,-.09],[.94,-.09],[.989,-.065],[1,-.036],[1,.032],[.984,.064],[.95,.071],[.926,.047],[.921,.018],[0,.018]].map(p => new T.Vector2(...p));
+    const profile = [[0,-.24],[.94,-.24],[.985,-.205],[1,-.15],[1,.045],[.98,.092],[.935,.11],[.902,.092],[.884,.072],[.865,.030],[.855,.006],[0,.006]].map(p => new T.Vector2(...p));
     const body = new T.Mesh(new T.LatheGeometry(profile, 384), metal); body.rotation.x = Math.PI / 2; medal.add(body);
-    for (const [r,z,tube] of [[.971,.066,.006],[.922,.026,.006]]) {
+    for (const [r,z,tube] of [[.975,.10,.009],[.863,.028,.007]]) {
       const ring = new T.Mesh(new T.TorusGeometry(r,tube,12,384),edge); ring.position.z=z; medal.add(ring);
     }
-    const reedGeo = new T.PlaneGeometry(.005, .067), reedMat = new T.MeshPhysicalMaterial({ color: f.dark, metalness: 1, roughness: .38, side: T.DoubleSide });
+    const reedGeo = new T.PlaneGeometry(.005, .15), reedMat = new T.MeshPhysicalMaterial({ color: f.dark, metalness: 1, roughness: .38, side: T.DoubleSide });
     for (let i=0;i<240;i++) {
       const a=i/240*TAU, reed=new T.Mesh(reedGeo,reedMat);
-      reed.position.set(1.0005*Math.cos(a),1.0005*Math.sin(a),-.014); reed.rotation.set(Math.PI/2,0,a-Math.PI/2); medal.add(reed);
+      reed.position.set(1.0005*Math.cos(a),1.0005*Math.sin(a),-.067); reed.rotation.set(Math.PI/2,0,a-Math.PI/2); medal.add(reed);
     }
     const maps = fieldMaps(relief,finish), map = new T.CanvasTexture(maps.color), roughnessMap = new T.CanvasTexture(maps.rough);
     map.colorSpace=T.SRGBColorSpace;
@@ -260,22 +262,22 @@ function flatMedal(relief,finish,width,height,portrait = false) {
   const disk=(x,y,r,fill)=>{g.fillStyle=fill;g.beginPath();g.arc(x,y,r,0,TAU);g.fill();};
   disk(R*.014,R*.045,R,f.dark);
   const edge=g.createLinearGradient(-R,-R,R,R);edge.addColorStop(0,f.bright);edge.addColorStop(.38,f.metal);edge.addColorStop(.7,f.dark);edge.addColorStop(1,f.bright);
-  disk(0,0,R,edge);disk(0,0,R*.963,f.dark);disk(0,0,R*.951,edge);
-  const img=new ImageData(S,S), base=rgb(f.metal), bright=rgb(f.bright), L=[-.45,.55,.70];
+  disk(0,0,R,edge);disk(0,0,R*.963,f.dark);disk(0,0,R*.951,edge);disk(0,0,R*.888,f.dark);disk(0,0,R*.875,edge);
+  const img=new ImageData(S,S), base=rgb(f.field), bright=rgb(f.metal), L=[-.45,.55,.70];
   for(let y=0;y<S;y++)for(let x=0;x<S;x++){
     const i=y*S+x,u=(x+.5)/S*2-1,v=1-(y+.5)/S*2;
     if(u*u+v*v>1)continue;
-    const nx=(H[y*S+Math.max(0,x-1)]-H[y*S+Math.min(S-1,x+1)])*S*(.038/3.656)+u*(.26/1.828);
-    const ny=(H[Math.min(S-1,y+1)*S+x]-H[Math.max(0,y-1)*S+x])*S*(.038/3.656)+v*(.26/1.828);
+    const nx=(H[y*S+Math.max(0,x-1)]-H[y*S+Math.min(S-1,x+1)])*S*(.064/(4*FACE_RADIUS))+u*(.048/(2*FACE_RADIUS));
+    const ny=(H[Math.min(S-1,y+1)*S+x]-H[Math.max(0,y-1)*S+x])*S*(.064/(4*FACE_RADIUS))+v*(.048/(2*FACE_RADIUS));
     const len=Math.hypot(nx,ny,1), light=clamp((nx*L[0]+ny*L[1]+L[2])/len,0,1);
     const reflection=.77+.13*Math.exp(-(((u+v*.5+.38)/.30)**2))+.08*Math.cos(u*2.1-v*1.5);
     const shade=(.45+.70*light)*reflection, p=H[i];
     const grain=(surfaceNoise(x,y)-.5)*2.5*(1-p*.75);
-    for(let c=0;c<3;c++)img.data[i*4+c]=clamp((base[c]+(bright[c]-base[c])*p*.035)*shade+grain,0,255);
+    for(let c=0;c<3;c++)img.data[i*4+c]=clamp((base[c]+(bright[c]-base[c])*p)*shade+grain,0,255);
     img.data[i*4+3]=255;
   }
-  const field=canvas(S);field.getContext('2d').putImageData(img,0,0);g.drawImage(field,-R*.92,-R*.92,R*1.84,R*1.84);
-  g.strokeStyle=f.bright;g.lineWidth=R*.007;g.beginPath();g.arc(0,0,R*.923,0,TAU);g.stroke();
+  const field=canvas(S);field.getContext('2d').putImageData(img,0,0);g.drawImage(field,-R*FACE_RADIUS,-R*FACE_RADIUS,R*2*FACE_RADIUS,R*2*FACE_RADIUS);
+  g.strokeStyle=f.bright;g.lineWidth=R*.007;g.beginPath();g.arc(0,0,R*.863,0,TAU);g.stroke();
   if(!portrait){g.lineWidth=R*.023;g.strokeStyle=f.dark;g.beginPath();g.arc(0,-R*1.038,R*.104,0,TAU);g.stroke();g.lineWidth=R*.014;g.strokeStyle=f.bright;g.stroke();}
   g.restore();out.dataset.renderer='flat';return out;
 }
@@ -296,6 +298,6 @@ export function paintCoverMedal(g,fig,medal) {
   const k=Math.min(fig.w*.82/medal.width,fig.h*.98/medal.height),w=medal.width*k,h=medal.height*k;
   const x=fig.x+(fig.w-w)/2,y=fig.y+(fig.h-h)/2;
   g.save();g.imageSmoothingEnabled=true;g.imageSmoothingQuality='high';
-  g.shadowColor='rgba(0,0,0,.42)';g.shadowBlur=22;g.shadowOffsetX=12;g.shadowOffsetY=18;
+  g.shadowColor='rgba(0,0,0,.60)';g.shadowBlur=18;g.shadowOffsetX=12;g.shadowOffsetY=20;
   g.drawImage(medal,x,y,w,h);g.restore();return{medalWidth:w*.90};
 }
