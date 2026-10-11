@@ -13,6 +13,14 @@ declare global {
   }
 }
 
+function RundayMark() {
+  return <a className={styles.rundayMark} href="https://link.runday.co.kr/app" target="_blank" rel="noopener noreferrer">
+    {/* eslint-disable-next-line @next/next/no-img-element */}
+    <img src="/images/challenge/shall-we-run/runday-app-icon.jpg" width="44" height="44" alt="" />
+    <span><strong>런데이 × 쉘위런</strong><small>시네마런 챌린지</small></span>
+  </a>;
+}
+
 export function ShallWeRunStory() {
   const rootRef = useRef<HTMLDivElement>(null);
   const railRef = useRef<HTMLDivElement>(null);
@@ -105,7 +113,7 @@ export function ShallWeRunStory() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src={MARATHONS[6].src} alt="" fetchPriority="high" decoding="async" />
             </div>
-            <p className={styles.context}>쉘위런 시네마런 챌린지</p>
+            <p className={styles.context}>런데이 × 쉘위런 시네마런 챌린지</p>
             <h1><span>영화가</span><span>시작되기 전에,</span><em>나는 달렸다.</em></h1>
             <div className={styles.run} aria-hidden="true">RUN.</div>
             <p className={styles.signature}>한 편의 영화를 기다리는 나의 출발.<span>뉴욕 마라톤 대회 자료사진</span></p>
@@ -138,12 +146,12 @@ export function ShallWeRunStory() {
             <div className={styles.startingLine} aria-hidden="true" />
           </section>
           <section id="reason" data-scene className={`${styles.scene} ${styles.reason}`}>
-            <div className={styles.reasonFirst}><h2>이번엔,<br /><em>나갈 이유가</em><br />있었다.</h2><p>쉘위런 챌린지가 그 이유가 됐다.</p></div>
-            <div className={styles.reasonLast}><h2>그래서,<br />조금 더<br /><em>달렸다.</em></h2><p>영화를 기다리는 마음이<br />나를 한 번 더 밖으로 데려갔다.</p></div>
+            <div className={styles.reasonFirst}><RundayMark /><h2>이번엔,<br /><em>나갈 이유가</em><br />있었다.</h2><p>런데이 앱에서 신청한 챌린지가<br />주말에 나갈 이유가 됐다.</p></div>
+            <div className={styles.reasonLast}><RundayMark /><h2>그래서,<br />조금 더<br /><em>달렸다.</em></h2><p>영화를 기다리는 마음이<br />나를 한 번 더 밖으로 데려갔다.</p></div>
           </section>
           <section id="finish" data-scene className={`${styles.scene} ${styles.finish}`}>
             <h2>결국, <em>달렸다.</em></h2>
-            <p className={styles.finishTitle}>쉘위런 시네마런 챌린지 완주</p>
+            <p className={styles.finishTitle}>런데이 × 쉘위런 시네마런 챌린지 완주</p>
             {/* The complete original badge, including mission text and date. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/images/challenge/shall-we-run/badge-original.jpg" width="1080" height="1317" alt="런데이 쉘위런 시네마런 챌린지 누적 11.2km 미션 달성 완주 배지, 2026년 10월 11일" className={styles.badge} hidden={badgeFailed} onError={() => setBadgeFailed(true)} />
@@ -165,11 +173,22 @@ export function ShallWeRunStory() {
         <div>
           <h2>내가 기다리는 영화, 쉘위런.</h2>
           <p>션의 세계 7대 마라톤 도전을 통해 “우리는 왜 달리는가?”를 묻는 다큐멘터리. 달리기와 나눔, 함께하는 사람들의 이야기를 담고, 박보검이 내레이션으로 참여합니다.</p>
-          <p>나는 아직 영화를 보지 않았습니다. 개봉을 기다리며 런데이 시네마런 챌린지에 참여했고, 누적 11.2km 미션을 마쳤습니다. 이 페이지는 그때의 개인 기록입니다.</p>
+          <p>평소에도 달리지만 주말엔 밖으로 나가는 게 쉽지 않았다. 〈쉘위런〉의 개봉을 기다리며 참여한 런데이 챌린지가 이번엔 달릴 이유가 되어줬다. 덕분에 한 번 더 달렸고, 누적 11.2km를 채웠다. 완주 배지를 받고 나니 이 달리기를 조금 특별하게 남기고 싶어졌다.</p>
           <p className={styles.sources}>
             <a href="https://sbsstar.net/article/N1008763307/seans-world-marathon-journey-to-be-released-in-documentary-film-narrated-by-park-bogum" target="_blank" rel="noopener noreferrer">영화 소개 출처 ↗</a>
             <a href="https://www.instagram.com/p/Dd7knECEras/" target="_blank" rel="noopener noreferrer">런데이 챌린지 안내 ↗</a>
           </p>
+          <section className={styles.rundayInfo} aria-labelledby="runday-heading">
+            <RundayMark />
+            <h2 id="runday-heading">내 출발을 만든 앱, 런데이.</h2>
+            <p>챌린지에 참여하고, 달린 거리를 쌓고, 완주 배지를 받기까지. 이번 러닝은 런데이와 함께했다. 다음에도 달릴 이유가 필요하면 앱을 열어봐야겠다.</p>
+            <div className={styles.appLinks}>
+              <a href="https://link.runday.co.kr/app" target="_blank" rel="noopener noreferrer">런데이 앱 열기 ↗</a>
+              <a href="https://apps.apple.com/kr/app/runday/id1042937618" target="_blank" rel="noopener noreferrer">App Store ↗</a>
+              <a href="https://play.google.com/store/apps/details?id=com.hanbit.rundayfree&hl=ko" target="_blank" rel="noopener noreferrer">Google Play ↗</a>
+            </div>
+            <p className={styles.appSource}><a href="https://www.runday.co.kr/" target="_blank" rel="noopener noreferrer">런데이 공식 사이트 ↗</a> · 앱 아이콘: 런데이 App Store 제공 이미지</p>
+          </section>
           <Link className={styles.back} href="/">allrunabout으로 돌아가기 ↗</Link>
           <details id="photo-credits" className={styles.photoCredits}>
             <summary>세계 7개 대회 사진 출처</summary>
