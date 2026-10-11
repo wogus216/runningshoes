@@ -64,6 +64,189 @@ function drawSign(id, g) {
   } else CHARACTER_SIGNS[id].draw(g);
 }
 
+// Cover-scale chasing: shallow cuts within the existing die, inspired by
+// repousse metalwork. The approved heroes already have their own sculpted cuts.
+// Intersect with the original ink so neither silhouettes nor open holes change.
+function chaseSign(id, source) {
+  if (['hephaestus', 'apollo', 'zeus'].includes(id)) return;
+  const S = source.width, detail = canvas(S), g = detail.getContext('2d');
+  g.translate(S / 2, S / 2); g.scale(S * .44, S * .44);
+  g.lineCap = g.lineJoin = 'round';
+  const line = (points, width = .045, color = '#969696') => {
+    g.strokeStyle = color; g.lineWidth = width; g.beginPath();
+    points.forEach(([x,y],i)=>i?g.lineTo(x,y):g.moveTo(x,y)); g.stroke();
+  };
+  const curve = (a,b,c,width = .045) => {
+    g.strokeStyle='#969696';g.lineWidth=width;g.beginPath();g.moveTo(...a);g.quadraticCurveTo(...b,...c);g.stroke();
+  };
+  const ring = (x,y,r,width = .04) => {
+    g.strokeStyle='#969696';g.lineWidth=width;g.beginPath();g.arc(x,y,r,0,TAU);g.stroke();
+  };
+  const facet = points => {
+    g.fillStyle='#cdcdcd';g.beginPath();points.forEach(([x,y],i)=>i?g.lineTo(x,y):g.moveTo(x,y));g.closePath();g.fill();
+  };
+  switch (id) {
+    case 'heracles':
+      g.rotate(-.55);
+      curve([-.12,-.91],[-.24,-.62],[-.13,-.68]);
+      curve([.12,-.94],[.26,-.65],[.15,-.39]);
+      line([[0,-.16],[0,.69]],.035);
+      for(const y of [.48,.63,.78])line([[-.1,y],[.1,y+.055]],.032);
+      break;
+    case 'perseus':
+      curve([-.66,.4],[.06,.61],[.69,.39]);
+      for(const [x,y] of [[-.17,-.17],[.06,-.3],[.28,-.32]])line([[x+.14,y-.04],[x+.20,y-.27]],.04);
+      line([[-.29,.26],[-.10,.46]],.055);break;
+    case 'hera':
+      facet([[-.75,.28],[-.65,-.20],[-.47,.22]]);
+      facet([[.40,.22],[.68,-.24],[.78,.28]]);
+      line([[-.66,.48],[.66,.48]],.035);
+      for(const x of [-.44,0,.44]) {
+        line([[x-.075,.16],[x,.055],[x+.075,.16],[x,.25],[x-.075,.16]],.035);
+      }
+      line([[0,-.49],[0,-.07]],.035);break;
+    case 'penelope':
+      line([[-.22,-.55],[0,-.76],[.22,-.55]],.04);
+      for(const y of [-.22,-.08,.06,.20])line([[-.24,y],[.24,y+.06]],.032);
+      line([[-.17,.55],[0,.72],[.17,.55]],.04);break;
+    case 'themis':
+      ring(0,-.75,.067,.034);
+      line([[0,-.54],[0,.58]],.035);
+      for(const s of [-1,1])line([[s*.39,.28],[s*.46,.37],[s*.73,.37],[s*.82,.28]],.038);
+      line([[-.22,.78],[.22,.78]],.03);break;
+    case 'poseidon':
+      curve([-.67,.25],[-.19,-.38],[.58,-.21],.05);
+      curve([-.48,.34],[-.03,.02],[.49,-.01],.035);
+      line([[.10,-.40],[.14,-.67]],.032);ring(.51,-.26,.025,.032);break;
+    case 'theseus':
+      line([[-.72,-.79],[.79,-.79],[.79,.79],[-.79,.79],[-.79,-.39],[.4,-.39],[.4,.4],[-.4,.4],[-.4,-.05]],.03,'#b5b5b5');break;
+    case 'bellerophon':
+      line([[-.20,-.11],[-.52,.52]],.035);line([[.20,-.11],[.52,.52]],.035);
+      line([[-.42,.59],[.42,.59]],.04);
+      ring(-.62,.59,.045,.03);ring(.62,.59,.045,.03);break;
+    case 'demeter':
+      curve([-.57,-.39],[-.33,-.77],[.18,-.54],.045);
+      line([[-.25,.59],[.23,-.29]],.035);
+      for(const y of [.58,.72])line([[-.38+(y-.84)*(-.56),y],[-.24+(y-.84)*(-.56),y+.07]],.032);
+      break;
+    case 'persephone':
+      curve([-.39,-.17],[-.56,.24],[-.30,.60]);
+      curve([.39,-.17],[.56,.24],[.30,.60]);
+      for(const [x,y] of [[-.2,.1],[.2,.1],[0,.42]])ring(x,y,.135,.026);
+      line([[0,-.53],[0,-.33]],.04);break;
+    case 'hestia':
+      line([[-.62,.29],[.62,.29]],.04);line([[-.49,.44],[.49,.44]],.03);
+      curve([-.10,-.63],[-.33,-.24],[-.01,-.08],.05);
+      curve([.18,-.43],[.29,-.19],[.09,-.08],.035);break;
+    case 'athena':
+      for(const [x,y,s] of [[-.47,.48,-1],[-.15,.12,1],[.18,-.24,-1],[.48,-.6,1]]) {
+        g.save();g.translate(x+s*.16,y-.12);g.rotate(s*.65);
+        line([[0,-.21],[0,.21]],.034);
+        g.restore();
+      }break;
+    case 'odysseus':
+      g.rotate(.47);curve([0,-.9],[-.10,-.60],[0,-.28],.045);
+      curve([.09,-.85],[.19,-.60],[.08,-.34],.032);
+      line([[0,-.05],[0,.62]],.028);break;
+    case 'daedalus':
+      ring(0,-.71,.075,.033);
+      line([[-.10,-.47],[-.47,.65]],.035);line([[.10,-.47],[.47,.65]],.035);
+      line([[-.18,.05],[.18,.05]],.028);break;
+    case 'achilles':
+      facet([[.53,-.61],[.84,-.93],[.61,-.51]]);
+      line([[-.52,.65],[.40,-.46]],.03);
+      for(const t of [0,.12,.24])line([[-.49+t,.62-t*1.2],[-.40+t,.66-t*1.2]],.03);break;
+    case 'orpheus':
+      for(const s of [-1,1])curve([s*.59,-.36],[s*.54,.39],[s*.20,.58],.043);
+      for(const x of [-.49,-.25,0,.25,.49])ring(x,-.59,.028,.025);
+      line([[-.20,.63],[.20,.63]],.035);break;
+    case 'artemis':
+      curve([-.40,-.68],[.65,0],[-.40,.68],.045);
+      for(const x of [-.22,-.08,.06])line([[x,-.055],[x+.04,.055]],.028);
+      facet([[.36,0],[.75,0],[.32,.17]]);break;
+    case 'atalanta':
+      curve([-.34,-.39],[-.73,.02],[-.36,.46],.055);
+      curve([.35,-.31],[.65,.13],[.27,.54],.035);
+      curve([-.12,.58],[0,.51],[.12,.58],.035);
+      line([[.13,-.63],[.53,-.80]],.035);break;
+    case 'orion':
+      for(const [x,y] of [[-.58,.25],[0,0],[.58,-.25]]) {
+        facet([[x,y-.27],[x,y],[x+.27,y],[x+.08,y-.08]]);
+        facet([[x,y],[x,y+.27],[x-.08,y+.08],[x-.27,y]]);
+      }break;
+    case 'ares':
+      curve([-.50,-.05],[-.38,-.57],[.18,-.55],.055);
+      curve([.24,-.48],[.51,-.33],[.51,.15],.04);
+      line([[.02,.36],[.14,.16],[.53,.16]],.045);
+      for(const x of [-.4,-.2,0,.2,.4])line([[x,-.82],[x+.05,-.69]],.035);break;
+    case 'hector':
+      for(const y of [-.32,-.03,.29,.57])line([[-.6,y],[.6,y]],.035);
+      for(const [x,y] of [[-.30,-.31],[.30,-.31],[-.5,-.02],[.50,-.02],[-.35,.30],[.35,.30]])line([[x,y],[x,y+.19]],.035);
+      line([[-.20,.66],[-.20,.05],[.20,.05],[.20,.66]],.033);break;
+    case 'penthesilea':
+      for(const s of [-1,1]) {
+        facet([[s*.74,-.61],[s*.85,-.08],[s*.74,.25],[s*.62,.18],[s*.71,-.08]]);
+        curve([s*.29,-.37],[s*.58,-.22],[s*.28,.03],.04);
+      }
+      for(const y of [.50,.63,.76])line([[-.07,y],[.07,y+.04]],.027);break;
+    case 'aphrodite':
+      curve([-.30,.21],[.21,-.06],[.39,.28],.05);
+      for(const y of [.30,.40,.50])curve([-.37,y],[.03,y+.06],[.25,y-.08],.032);
+      line([[-.67,.11],[-.48,.39]],.036);ring(.58,-.34,.027,.034);break;
+    case 'psyche':
+      for(const s of [-1,1]) {
+        curve([s*.13,-.20],[s*.48,-.66],[s*.72,-.22],.045);
+        curve([s*.17,.27],[s*.47,.17],[s*.58,.49],.04);
+        line([[s*.18,.35],[s*.39,.58]],.033);
+      }break;
+    case 'eros':
+      facet([[.86,-.86],[.60,-.55],[.71,-.34]]);
+      line([[-.58,.44],[.42,-.40]],.03);
+      line([[-.73,.40],[-.58,.47],[-.48,.66]],.035);break;
+    case 'prometheus':
+      curve([-.10,-.73],[-.31,-.44],[0,-.29],.05);
+      curve([.17,-.56],[.29,-.40],[.10,-.30],.033);
+      line([[-.28,-.18],[.28,-.18]],.035);
+      for(const y of [.33,.48,.63,.78])line([[-.08,y],[.08,y+.055]],.03);break;
+    case 'talos':
+      for(const r of [.3,.55,.79])for(const a of [1.2,2.4,3.6,4.8])line([[Math.cos(a)*(r-.034),Math.sin(a)*(r-.034)],[Math.cos(a)*(r+.034),Math.sin(a)*(r+.034)]],.022);
+      facet([[-.11,-.12],[.08,-.16],[.02,.02],[-.08,.13]]);break;
+    case 'hermes':
+      for(const s of [-1,1])for(const [x,y] of [[.32,-.3],[.47,-.56],[.63,-.76]])line([[s*.40,-.03],[s*(x+.08),y+.12]],.035);
+      curve([-.27,-.03],[0,-.33],[.27,-.03],.04);
+      line([[-.48,.29],[.48,.29]],.035);break;
+    case 'nike':
+      for(const [x,y] of [[-.22,.44],[0,.05],[.2,-.32]]) {
+        line([[x-.07,y-.09],[x-.37,y-.25]],.03);
+        line([[x+.09,y+.01],[x+.32,y+.12]],.03);
+      }break;
+    case 'pheidippides':
+      line([[-.33,.70],[-.33,-.53],[0,-.72],[.33,-.53],[.33,.70]],.045);
+      line([[-.25,.53],[.25,.53]],.035);
+      line([[0,-.43],[0,-.33]],.04);break;
+    case 'dionysus':
+      for(const y of [-.70,-.53])line([[-.16,y],[0,y-.12],[.16,y]],.033);
+      for(const s of [-1,1])line([[s*.13,-.38],[s*.54,-.22]],.033);
+      line([[0,.03],[0,.76]],.03);break;
+    case 'ariadne':
+      for(const a of [.25,.65,1.05,1.45,1.85,2.25,2.65,3.05,3.45,3.85,4.25,4.65,5.05,5.45,5.85]) {
+        line([[-.1+Math.cos(a)*.54,.04+Math.sin(a)*.54],[-.1+Math.cos(a+.08)*.65,.04+Math.sin(a+.08)*.65]],.025);
+      }break;
+    case 'sisyphus':
+      facet([[.01,-.53],[.24,-.65],[.51,-.52],[.33,-.35]]);
+      curve([-.07,-.28],[-.17,.04],[.18,.12],.05);
+      line([[-.62,.72],[.55,.35]],.03);break;
+  }
+  const context = source.getContext('2d', { willReadFrequently: true });
+  const base = context.getImageData(0,0,S,S), cuts = g.getImageData(0,0,S,S).data;
+  for(let i=0;i<base.data.length;i+=4) {
+    const alpha=cuts[i+3]/255;
+    const value=Math.min(base.data[i],base.data[i]*(1-alpha)+cuts[i]*alpha);
+    base.data[i]=base.data[i+1]=base.data[i+2]=value;
+  }
+  context.putImageData(base,0,0);
+}
+
 function blur(src, S, radius) {
   const a = Float32Array.from(src), b = new Float32Array(a.length), n = radius * 2 + 1;
   for (let pass = 0; pass < 2; pass++) {
@@ -91,6 +274,7 @@ export function coverRelief(id, S = 1024) {
   s.fillStyle = '#000'; s.fillRect(0, 0, S, S);
   s.translate(S / 2, S / 2); s.scale(S * .44, S * .44);
   s.fillStyle = s.strokeStyle = '#fff'; s.lineCap = s.lineJoin = 'round'; drawSign(id,s);
+  chaseSign(id,source);
   const ink = s.getImageData(0, 0, S, S).data;
   let left = S, top = S, right = 0, bottom = 0;
   for (let y = 0; y < S; y++) for (let x = 0; x < S; x++) if (ink[(y * S + x) * 4] > 64) {
