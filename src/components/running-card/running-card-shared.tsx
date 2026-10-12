@@ -60,6 +60,7 @@ export default function RunningCardShared({ raw, onStart }: { raw: string; onSta
           <RunnerScores scores={PUBLIC_AXES.map(([axis, label]) => ({ label, value: scores[axis], lead: axis === leadAxis }))} />
         </section>
         <p className="rc-def">{RECOVERY_MARGIN_NOTE}</p>
+        <p className="rc-share-note">공유 링크에는 인물과 세 점수만 담겨 있어요. 기록에 따른 상세 해석은 보낸 사람의 분석 이미지에서 볼 수 있어요.</p>
         <div className="rc-actions rc-start">{start}</div>
       </section>
     </div>

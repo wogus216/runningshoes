@@ -61,6 +61,7 @@ log('setup'); await send('Network.enable'); log('network');
 await send('Network.setBlockedURLs', { urls: ['*googlesyndication*', '*doubleclick*', '*googletagmanager*', '*google-analytics*', '*adtrafficquality*', '*googleadservices*', '*fundingchoices*'] });
 await send('Runtime.enable');
 await send('Page.enable');
+await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
 await send('Browser.setDownloadBehavior', { behavior: 'deny' });
 log('opened with the page');
 for (let i = 0; i < 240 && !(await ev(`!!document.querySelector('#next')`)); i++) await sleep(500);
@@ -97,11 +98,34 @@ await click('#open-result');
 await sleep(3500);
 const name = await ev(`(() => { const h = document.querySelector('.rc-share') && document.querySelector('h2, .rc-name, [class*=name]'); return document.title + ' | ' + (document.querySelector('.rcm h2')?.textContent || ''); })()`);
 log('결과:', name);
+// Rich report: readable mobile width, native calculation disclosures, complete five-part copy.
+const reportCheck = await ev(`(() => {
+  const root = document.querySelector('.rc-result');
+  return { headings: [...root.querySelectorAll('h3')].map(e => e.textContent),
+    count: root.querySelectorAll('.rc-insight details').length,
+    overflow: document.documentElement.scrollWidth > innerWidth,
+    text: root.innerText };
+})()`);
+if (reportCheck.count !== 3 || reportCheck.overflow || !reportCheck.headings.includes('지난 28일의 나')) throw new Error('rich report layout incomplete');
+fs.writeFileSync(path.join(OUT, `${LABEL}-report.json`), JSON.stringify(reportCheck, null, 2));
+await click('.rc-insight summary');
+if (!await ev(`document.querySelector('.rc-insight details').open`)) throw new Error('calculation disclosure did not open');
+await click('.rc-insight summary');
+await ev(`document.querySelector('.rc-introduction').scrollIntoView({block:'start'})`);
+await sleep(300);
+const reportShot = await send('Page.captureScreenshot', {format:'png'});
+fs.writeFileSync(path.join(OUT, `${LABEL}-report.png`), Buffer.from(reportShot.result.data, 'base64'));
+await send('Emulation.setDeviceMetricsOverride', { width: 320, height: 740, deviceScaleFactor: 2, mobile: true });
+await sleep(300);
+if (await ev(`document.documentElement.scrollWidth > innerWidth`)) throw new Error('320px report overflow');
+await send('Emulation.setDeviceMetricsOverride', { width: 390, height: 844, deviceScaleFactor: 2, mobile: true });
+
+
 
 async function grab(tag) {
   // Intercept only the new-tab destination; render the current settings through the real button.
   await ev(`window.__qaOpenOriginal = window.open; window.__qaCreateOriginal = URL.createObjectURL; window.__qaBlobs = {}; URL.createObjectURL = (blob) => {const url = window.__qaCreateOriginal(blob); window.__qaBlobs[url] = blob; return url}; window.__qaImageUrls = []; window.open = () => ({opener: null, document: {body: {}}, location: {set href(url) {window.__qaImageUrls.push(url)}}, close() {}})`);
-  for (const [i, selector] of ['.rc-open button:first-child', '.rc-open button:last-child'].entries()) {
+  for (const [i, selector] of ['.rc-share > .rc-open:last-child button:first-child', '.rc-share > .rc-open:last-child button:last-child'].entries()) {
     await click(selector);
     for (let wait = 0; wait < 120; wait++) {
       await sleep(250);

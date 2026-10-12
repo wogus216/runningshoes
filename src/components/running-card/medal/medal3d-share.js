@@ -2,12 +2,11 @@
 // bottom right). 1 = the cover: the medal with its struck plate, then the house, the figure, the epithet and the oracle —
 // or, when the figure has a picture (S5-D), the picture over the whole page with the medal small in the ink at its foot
 // beside the words (S5-E).
-// 2 = the analysis page: the three scores, the two pieces of evidence, strength, watch-out, the next 14 days, and what
+// 2 = the analysis page: the personal introduction, three score interpretations, strength, balance, and what
 // 회복 여유 is not. The medal itself is drawn by the caller (a front-on WebGL render, or the flat drawing); this file only
 // lays out the page around it.
-// card (running-card-result.tsx): { house, name, title, oracle, scores: [{ label, value, lead }], evidence: [{ text,
-// hiddenText }], strength, watchout, next, leadTag, recoveryNote, image? }. Nothing about where the numbers came from (예시·입력 경로·
-// fallbacksUsed) is in it.
+// card (running-card-result.tsx): identity, scores, analysis { visible, hidden }, leadTag, recoveryNote, image?.
+// Each analysis variant is an edited excerpt. Hidden copy contains no raw record numbers.
 // Text: the masthead keeps the medal subset (StudySans); the card's sentences use the page's Pretendard Variable (the
 // site's dynamic subset, loaded by unicode range for exactly these letters — the result card shows the same sentences),
 // with StudySans behind it. Numbers are StudyCondensed, as on the coins.
@@ -48,8 +47,10 @@ function wrap(g, text, maxWidth) {
 }
 
 async function fontsFor(card, extra = '') {
-  const text = [card.house, card.name, card.title, card.oracle, card.strength, card.watchout, card.next, card.leadTag, card.recoveryNote,
-    ...card.evidence.flatMap(e => [e.text, e.hiddenText]), ...card.scores.map(s => s.label), '가문 세 점수 이 인물이 된 기록 강점 놓치기 쉬운 것 다음 14일, 한 가지 “”', extra].join(' ');
+  const variants = card.analysis ? Object.values(card.analysis) : [];
+  const text = [card.house, card.name, card.title, card.oracle, card.leadTag, card.recoveryNote,
+    ...variants.flatMap(v => [v.introduction, v.strength, v.watchout, ...v.scores.map(s => `${s.label} ${s.summary}`)]),
+    '가문 강점 살펴볼 점 내 러닝 프로필 자체 지표 · 순위가 아니에요', extra].join(' ');
   await Promise.all([
     document.fonts.load(`500 40px "Pretendard Variable"`, text),
     ...['700 100px StudyCondensed', '450 40px StudySans', '650 40px StudySans'].map(f => document.fonts.load(f, '러닝 카드 올런바웃 지난 28일 0123456789 allrunabout.com')),
@@ -188,77 +189,64 @@ function pictureCover(g, W, H, story, width, card, renderFigure, picture) {
   return fit;
 }
 
-// Page 2. The record numbers in the evidence give way to their hiddenText when hideNumbers.
+// Page 2: fixed readable type, with a separately edited excerpt. Never shrink the whole report to fit.
 export async function drawAnalysis(g, kind, card, hideNumbers, renderFigure) {
   await fontsFor(card);
   const [W, H] = SHARE_SIZES[kind], story = kind === 'story', width = W - 2 * M;
-  // Laid out top-down at scale s; the scale shrinks until the page ends above the footnote and the address.
-  const page = (s, draw) => {
-    const put = (fn) => { if (draw) fn(); };
-    let y = ruleOf(story) + 100 * s;
-    const medalSize = 300 * s, identityWidth = width - medalSize - 20 * s;
-    put(() => renderFigure?.({ x: W - M - medalSize, y: ruleOf(story) + 12 * s, w: medalSize, h: medalSize, fit: { widthShare: .94, heightShare: .94, bottomPad: .02 } }, g));
-    put(() => { g.textAlign = 'left'; g.fillStyle = TH.part; fitText(g, `${card.house} 가문`, M, y, identityWidth, 32 * s, 600); });
-    y += 100 * s;
-    put(() => { g.fillStyle = TH.ink; fitText(g, card.name, M, y, identityWidth, 92 * s, 760); });
-    y += 62 * s;
-    put(() => { g.fillStyle = TH.ink; fitText(g, card.title, M, y, identityWidth, 40 * s, 500); });
-    // The three scores: label, a 0–100 bar, the integer. The lead score (the axis the figure's target puts highest) in the accent, with leadTag.
-    y += 84 * s;
-    put(() => { g.fillStyle = TH.muted; fitText(g, '세 점수', M, y, width, 30 * s, 550); });
-    y += 26 * s;
-    for (const score of card.scores) {
-      const rowTop = y, c = score.lead ? TH.part : TH.ink;
-      put(() => {
-        g.fillStyle = TH.rule; g.fillRect(M, rowTop, width, 2);
-        g.textAlign = 'left'; g.fillStyle = c; font(g, 550, 38 * s); g.fillText(score.label, M, rowTop + 58 * s);
-        if (score.lead) { const lw = g.measureText(score.label).width; g.fillStyle = TH.muted; font(g, 450, 26 * s); g.fillText(card.leadTag, M + lw + 16 * s, rowTop + 58 * s); }
-        const barW = width - 190 * s, by = rowTop + 80 * s;
-        g.fillStyle = TH.track; g.fillRect(M, by, barW, 8 * s);
-        g.fillStyle = c; g.fillRect(M, by, barW * Math.max(0, Math.min(100, score.value)) / 100, 8 * s);
-        g.textAlign = 'right'; g.fillStyle = c; font(g, 700, 92 * s, 'StudyCondensed, sans-serif'); g.fillText(String(score.value), W - M, rowTop + 92 * s);
-      });
-      y += 112 * s;
-    }
-    // Evidence: the two records this figure came from.
-    y += 70 * s;
-    put(() => { g.textAlign = 'left'; g.fillStyle = TH.muted; fitText(g, '이 인물이 된 기록', M, y, width, 30 * s, 550); });
-    card.evidence.forEach((e, i) => {
-      y += 66 * s;
-      put(() => {
-        // The numbers in the muted ink: the accent is kept for the house, the lead score and the next 14 days (S5-E).
-        g.textAlign = 'left'; g.fillStyle = TH.muted; font(g, 700, 40 * s, 'StudyCondensed, sans-serif'); g.fillText(`0${i + 1}`, M, y);
-        g.fillStyle = TH.ink; fitText(g, hideNumbers ? e.hiddenText : e.text, M + 76 * s, y, width - 76 * s, 40 * s, 600);
-      });
-    });
-    // Strength, watch-out, the next 14 days.
-    y += 40 * s;
-    for (const [label, text, accent] of [['강점', card.strength], ['놓치기 쉬운 것', card.watchout], ['다음 14일, 한 가지', card.next, true]]) {
-      y += 70 * s;
-      const at = y;
-      put(() => { g.textAlign = 'left'; g.fillStyle = accent ? TH.part : TH.muted; fitText(g, label, M, at, width, 28 * s, 550); });
-      font(g, 450, 38 * s);
-      for (const line of wrap(g, text, width)) {
-        y += 54 * s;
-        const ly = y;
-        put(() => { g.fillStyle = TH.ink; font(g, 450, 38 * s); g.fillText(line, M, ly); });
-      }
-    }
-    return y;
-  };
-  // Footnote (what 회복 여유 is) and the address sit at the bottom. The footnote keeps the card from reading as a body
-  // measurement, so it is set to be read on a phone, not just to be there (S5-E: 23px came out at about 8pt).
-  const noteSize = story ? 30 : 27, noteLh = noteSize * 1.45;
-  font(g, 450, noteSize);
-  const note = wrap(g, card.recoveryNote, width);
-  const noteTop = H - footOf(story) - 54 - (note.length - 1) * noteLh;
-  let s = story ? 1 : .8;
-  while (s > .6 && page(s, false) > noteTop - noteSize - 40) s -= .02;
+  const report = hideNumbers ? card.analysis.hidden : card.analysis.visible;
   g.fillStyle = TH.bg; g.fillRect(0, 0, W, H);
   masthead(g, W, story);
-  page(s, true);
-  g.fillStyle = TH.rule; g.fillRect(M, noteTop - noteSize - 22, width, 2);
-  g.textAlign = 'left'; g.fillStyle = 'rgba(247,244,237,.72)'; font(g, 450, noteSize);
-  note.forEach((line, i) => g.fillText(line, M, noteTop + i * noteLh));
+  let y = ruleOf(story) + 42;
+  const medalSize = 170;
+  renderFigure?.({ x: W - M - medalSize, y: ruleOf(story) + 8, w: medalSize, h: medalSize, fit: { widthShare: .94, heightShare: .94, bottomPad: .02 } }, g);
+  g.textAlign = 'left'; g.fillStyle = TH.part;
+  fitText(g, `${card.house} 가문`, M, y, width - medalSize - 20, 28, 600);
+  y += 70;
+  g.fillStyle = TH.ink; fitText(g, card.name, M, y, width - medalSize - 20, 64, 760);
+  y += 48;
+  fitText(g, card.title, M, y, width, 34, 550);
+
+  // Fixed 36px body = 13px when a 1080px image is shown at 390px. Fit by choosing short copy, not tiny type.
+  function paragraph(text, at, color = TH.ink, size = 36, lineHeight = 46) {
+    font(g, 450, size); g.fillStyle = color; g.textAlign = 'left';
+    const lines = wrap(g, text, width);
+    lines.forEach((line, i) => g.fillText(line, M, at + i * lineHeight));
+    return at + (lines.length - 1) * lineHeight;
+  }
+  font(g, 450, 36);
+  const introduction = wrap(g, report.introduction, width).length <= 3 ? report.introduction : card.analysis.hidden.introduction;
+  const bodyLines = text => { font(g, 450, 36); return wrap(g, text, width).length; };
+  const note = '자체 지표 · 순위가 아니에요. 회복 여유는 훈련 간격과 거리로 본 여백이며, 몸의 회복 상태가 아니에요.';
+  font(g, 450, 28);
+  const noteLines = wrap(g, note, width), noteLh = 37;
+  const noteTop = H - footOf(story) - 52 - (noteLines.length - 1) * noteLh;
+  const baseEnd = y + 54 + (bodyLines(introduction) - 1) * 46 + 32
+    + report.scores.reduce((height, score) => height + 110 + (bodyLines(score.summary) - 1) * 46, 0)
+    + [report.strength, report.watchout].reduce((height, text) => height + 76 + (bodyLines(text) - 1) * 46, 0);
+  // Short reports get breathing room; long reports keep the same type size and tighter section gaps.
+  const space = Math.max(0, Math.min(40, (noteTop - 54 - baseEnd) / 6));
+  y = paragraph(introduction, y + 54 + space) + 32;
+
+  for (const score of report.scores) {
+    g.fillStyle = TH.rule; g.fillRect(M, y, width, 2);
+    g.textAlign = 'left'; g.fillStyle = score.lead ? TH.part : TH.ink;
+    font(g, 600, 34); g.fillText(score.label, M, y + 40);
+    if (score.lead) {
+      const labelWidth = g.measureText(score.label).width;
+      font(g, 450, 26); g.fillStyle = TH.muted; g.fillText(card.leadTag, M + labelWidth + 18, y + 40);
+    }
+    g.textAlign = 'right'; g.fillStyle = score.lead ? TH.part : TH.ink;
+    font(g, 700, 54, 'StudyCondensed, sans-serif'); g.fillText(String(score.value), W - M, y + 42);
+    y = paragraph(score.summary, y + 86) + 24 + space;
+  }
+  for (const [label, text] of [['강점', report.strength], ['살펴볼 점', report.watchout]]) {
+    y += 20 + space;
+    g.textAlign = 'left'; g.fillStyle = TH.part; font(g, 600, 28); g.fillText(label, M, y);
+    y = paragraph(text, y + 44) + 12;
+  }
+  // Visible definition, with room reserved for story controls and the site address.
+  if (y > noteTop - 42) throw new Error('analysis copy exceeds readable layout');
+  g.fillStyle = TH.rule; g.fillRect(M, noteTop - 34, width, 2);
+  paragraph(note, noteTop, 'rgba(247,244,237,.72)', 28, noteLh);
   address(g, W, H, story);
 }

@@ -8,7 +8,7 @@ import { ADSENSE_SLOTS } from '@/lib/constants';
 import { getCharacterPresentation, LEAD_NOTE, LEAD_TAG, PUBLIC_AXES, RECOVERY_MARGIN_NOTE } from '@/lib/runner-analysis/presentation';
 import { sharedRunnerCardUrl } from '@/lib/runner-analysis/share';
 import type { JudgedRunner } from './running-card-medal';
-import { RunnerScores } from './running-card-scores';
+import { runnerShareAnalysis, type RunnerShareAnalysis } from '@/lib/runner-analysis/explain';
 
 export type ShareKind = 'story' | 'feed';
 export type SharePage = 'cover' | 'analysis';
@@ -19,10 +19,7 @@ export type ShareCard = {
   title: string;
   oracle: string;
   scores: Array<{ label: string; value: number; lead: boolean }>;
-  evidence: Array<{ text: string; hiddenText: string }>;
-  strength: string;
-  watchout: string;
-  next: string;
+  analysis: { visible: RunnerShareAnalysis; hidden: RunnerShareAnalysis };
   leadTag: string;
   recoveryNote: string;
   // 그림은 선택 사항이다. 현재 결과·공유 표지는 메달을 중심으로 그린다.
@@ -35,13 +32,6 @@ const SIZES: Record<ShareKind, { name: string; size: string }> = {
   story: { name: '스토리', size: '1080×1920' },
   feed: { name: '피드', size: '1080×1350' },
 };
-const RACE_NAMES: Record<number, string> = { 5: '5km', 10: '10km', 21.0975: '하프', 42.195: '풀코스' };
-
-const minutesText = (minutes: number) => {
-  const h = Math.floor(minutes / 60), m = Math.round(minutes % 60);
-  return [h ? `${h}시간` : '', m || !h ? `${m}분` : ''].filter(Boolean).join(' ');
-};
-
 function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard {
   const character = analysis.match.character;
   const presentation = getCharacterPresentation(character.id);
@@ -51,17 +41,14 @@ function shareCardOf({ analysis, title, explanation }: JudgedRunner): ShareCard 
     title,
     oracle: presentation.oracle,
     scores: PUBLIC_AXES.map(([axis, label]) => ({ label, value: analysis.publicScores[axis], lead: axis === explanation.lead.axis })),
-    evidence: explanation.evidence.map(({ text, hiddenText }) => ({ text, hiddenText })),
-    strength: explanation.strength.text,
-    watchout: explanation.watchout.text,
-    next: explanation.nextAction.text,
+    analysis: { visible: runnerShareAnalysis(explanation, false), hidden: runnerShareAnalysis(explanation, true) },
     leadTag: LEAD_TAG,
     recoveryNote: RECOVERY_MARGIN_NOTE,
   };
 }
 
-// 결과 카드(S4, 설계 §3-2). 위의 3D 메달에서 이어지는 기록 요약(가문·인물·칭호·대표 수치·신탁) → 분석(세 점수·근거 2·강점·맹점·다음 14일)
-// → 회복 여유 정의 → 광고 1 → 공유 → 신발 추천 → 다시 하기. 메달 아래 같은 문서에서 열린다(D5).
+// 메달 아래에서 개인 소개 → 유형 근거 → 점수 해석 → 강점과 균형 → 다음 행동으로 읽는다.
+// 공유 이미지는 같은 설명에서 만든 짧은 요약을 사용한다.
 export function RunningCardResult({ judged, drawResultMedal, finishRevision, shareImage, onRestart }: {
   judged: JudgedRunner;
   drawResultMedal: (canvas: HTMLCanvasElement) => Promise<void>;
@@ -69,11 +56,10 @@ export function RunningCardResult({ judged, drawResultMedal, finishRevision, sha
   shareImage: ShareImage;
   onRestart: () => void;
 }) {
-  const { analysis, snapshot } = judged;
+  const { analysis, explanation } = judged;
   const character = analysis.match.character;
   const card = shareCardOf(judged);
   const lead = card.scores.find((s) => s.lead)!;
-  const raceGoal = snapshot.raceGoal;
   const medalCanvas = useRef<HTMLCanvasElement>(null);
   const [medalStatus, setMedalStatus] = useState<'loading' | 'ready' | 'error'>('loading');
 
@@ -109,30 +95,53 @@ export function RunningCardResult({ judged, drawResultMedal, finishRevision, sha
       </div>
       <blockquote className="rc-oracle"><p>“{card.oracle}”</p></blockquote>
 
-      <section className="rc-section" aria-labelledby="rc-scores-title">
-        <h3 id="rc-scores-title">세 점수</h3>
-        <RunnerScores scores={card.scores} />
-        {raceGoal && (
-          <p className="rc-race">
-            훈련 자극에는 목표 기록({RACE_NAMES[raceGoal.distanceKm] ?? `${raceGoal.distanceKm}km`} {minutesText(raceGoal.targetTimeMinutes)})과 평균 페이스의 차이가 10% 들어 있어요.
-          </p>
-        )}
+      <section className="rc-section rc-introduction" aria-labelledby="rc-intro-title">
+        <h3 id="rc-intro-title">지난 28일의 나</h3>
+        <p>{explanation.introduction.text}</p>
       </section>
 
       <section className="rc-section" aria-labelledby="rc-evidence-title">
-        <h3 id="rc-evidence-title">이 인물이 된 기록</h3>
+        <h3 id="rc-evidence-title">이 인물과 닮은 이유</h3>
         <ol className="rc-evidence">
-          {card.evidence.map((e, i) => (
-            <li key={e.text}><span>0{i + 1}</span>{e.text}</li>
+          {explanation.evidence.map((e, i) => (
+            <li key={e.family}>
+              <span aria-hidden="true">0{i + 1}</span>
+              <div><b>{e.text}</b><p>{e.interpretation}</p></div>
+            </li>
           ))}
         </ol>
+        <p className="rc-reading-note">러닝 기록의 특성 80%와 목표 20%를 함께 비교한 유형이에요.</p>
       </section>
 
-      <dl className="rc-notes">
-        <div><dt>강점</dt><dd>{card.strength}</dd></div>
-        <div><dt>놓치기 쉬운 것</dt><dd>{card.watchout}</dd></div>
-        <div className="rc-next"><dt>다음 14일, 한 가지</dt><dd>{card.next}</dd></div>
-      </dl>
+      <section className="rc-section" aria-labelledby="rc-scores-title">
+        <h3 id="rc-scores-title">세 점수 읽기</h3>
+        <p className="rc-reading-note">지난 28일을 읽는 자체 지표예요. 다른 러너와의 순위나 실력 등급은 아니에요.</p>
+        <div className="rc-score-insights">
+          {explanation.scoreInsights.map((score) => (
+            <div key={score.axis} className={`rc-insight${score.lead ? ' is-lead' : ''}`}>
+              <div className="rc-insight-heading">
+                <h4>{score.label}{score.lead && <small>{LEAD_TAG}</small>}</h4>
+                <strong>{score.value}<small>/ 100</small></strong>
+              </div>
+              <span className="rc-bar" aria-hidden="true"><i style={{ width: `${score.value}%` }} /></span>
+              <p>{score.summary}</p>
+              <details>
+                <summary>{score.label} 계산 근거</summary>
+                <p>{score.detail}</p>
+              </details>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className="rc-section" aria-labelledby="rc-balance-title">
+        <h3 id="rc-balance-title">내 스타일의 강점과 균형</h3>
+        <dl className="rc-notes">
+          <div><dt>강점 · {explanation.strength.title}</dt><dd>{explanation.strength.text}</dd></div>
+          <div><dt>살펴볼 점 · {explanation.watchout.title}</dt><dd>{explanation.watchout.text}</dd></div>
+          <div className="rc-next"><dt>내 스타일을 살리는 한 가지</dt><dd><b>{explanation.nextAction.title}</b><p>{explanation.nextAction.text}</p></dd></div>
+        </dl>
+      </section>
 
       <p className="rc-def">{RECOVERY_MARGIN_NOTE}</p>
 
@@ -305,7 +314,7 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
       </button>
       {/* 무엇이 지워지는지는 누르기 전에 읽혀야 한다 — 저장 버튼 아래 있던 설명을 토글 바로 아래로 옮겼다(S5-E). */}
       <p className="rc-toggle-note" id="rc-hide-note">
-        켜면 이미지 속 메달의 기록 동전(총거리·횟수·페이스·최장거리·강한 훈련·요일)에 항목 이름만 남고, 근거는 숫자 없는 말로 바뀌어요.
+        켜면 기록 메달의 숫자·요일과 소개의 기록 수치를 숨겨요. 러닝 스타일 해석과 인물·세 점수는 남아요.
       </p>
       <div className="rc-actions">
         <button type="button" className="rc-primary" disabled={busy} onClick={() => save(['cover', 'analysis'])}>
@@ -316,8 +325,8 @@ function ShareBlock({ id, card, scores, shareImage }: { id: string; card: ShareC
           <button type="button" onClick={shareLink}>링크 공유</button>
         </div>
       </div>
-      <p className="rc-share-note">1장은 단일 메달 표지, 2장은 7개 기록 메달이 담긴 분석 이미지예요.</p>
-      <p className="rc-share-note">링크에는 인물과 세 점수만 담기고 입력한 기록은 담기지 않아요.</p>
+      <p className="rc-share-note">1장은 메달 표지, 2장은 내 러닝 소개·점수 해석·강점과 균형을 담은 요약이에요.</p>
+      <p className="rc-share-note">링크는 인물과 세 점수만 전해요. 내 기록을 해석한 설명까지 전하려면 이미지를 공유하세요.</p>
       <p className="rc-status" role="status">{status}</p>
       {saved.length > 0 && typeof navigator !== 'undefined' && navigator.canShare?.({ files: saved.map((m) => m.file) }) && (
         <button type="button" className="rc-primary" disabled={busy} onClick={shareFiles}>

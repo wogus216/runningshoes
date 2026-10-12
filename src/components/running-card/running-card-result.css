@@ -124,3 +124,27 @@
   }
 }
 @keyframes rc-rise{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+
+/* 기록을 읽는 다섯 단락. 본문은 16px, 계산식은 필요할 때 펼친다. */
+.rcm .rc-introduction>p{margin-top:12px;font-size:17px;line-height:1.85;letter-spacing:-.02em;word-break:keep-all;overflow-wrap:anywhere}
+.rcm .rc-evidence li>div{min-width:0}
+.rcm .rc-evidence li b{font-weight:600;overflow-wrap:anywhere}
+.rcm .rc-evidence li p{margin-top:8px;font-size:15px;line-height:1.7;font-weight:400;color:var(--dim-70);overflow-wrap:anywhere}
+.rcm .rc-reading-note{margin-top:10px;font-size:13px;line-height:1.65;color:var(--dim-70);word-break:keep-all}
+.rcm .rc-score-insights{margin-top:18px}
+.rcm .rc-insight{padding:20px 0;border-top:1px solid var(--line-25)}
+.rcm .rc-insight-heading{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.rcm .rc-insight-heading h4{color:var(--paper);font-size:17px;font-weight:600}
+.rcm .rc-insight-heading h4 small{display:inline-block;margin-left:8px;font-size:11px;font-weight:450;color:var(--dim-70)}
+.rcm .rc-insight-heading strong{white-space:nowrap;font:700 40px/1 StudyCondensed,sans-serif}
+.rcm .rc-insight-heading strong small{margin-left:4px;font-size:16px;color:var(--dim-60)}
+.rcm .rc-insight.is-lead h4,.rcm .rc-insight.is-lead strong{color:var(--accent)}
+.rcm .rc-insight.is-lead .rc-bar i{background:var(--accent)}
+.rcm .rc-insight>p{margin-top:12px;font-size:16px;line-height:1.6;word-break:keep-all}
+.rcm .rc-insight details{margin-top:4px;color:var(--dim-70);font-size:13px;line-height:1.7}
+.rcm .rc-insight summary{width:fit-content;min-height:44px;padding:12px 0;cursor:pointer}
+.rcm .rc-insight summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:2px}
+.rcm .rc-insight details p{padding:0 0 8px;word-break:keep-all;overflow-wrap:anywhere}
+.rcm .rc-section>.rc-notes{margin-top:18px}
+.rcm .rc-next dd b{font-weight:550}
+.rcm .rc-next dd p{margin-top:8px;color:var(--dim-70);font-size:15px}

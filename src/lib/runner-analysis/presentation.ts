@@ -9,8 +9,8 @@
 // image 는 S5-C(2026-10-07)에 원본 PNG 를 WebP 로 바꿔 넣었다. AI 생성 이미지이고 출처는 public/images/running-card/IMAGE_CREDITS.md.
 // 표식으로 제외했던 14명은 2026-10-08 편집본 검수 후 복원했다. 전원 image·imageFocus 가 있다.
 // 결과 카드·공유받은 화면은 image 가 없으면 그림 자리를 비우지 않고 건너뛴다. 공유 이미지 1장째는 image 가 있을 때만 그림을 배경으로 깔고(S5-D), 없으면 메달 표지 그대로다.
-// watchout 은 맹점 규칙 1–4에 걸리지 않을 때 쓰는 인물별 기본 맹점, nextRun 은 다음 14일 행동이다(explain.ts).
-// nextRunRaises: 거리·속도를 늘리는 다음 행동. 회복 여유가 50 미만이면 explain.ts 가 이 문장을 쓰지 않는다(스펙 434행).
+// strength·watchout·nextRun·nextRunRaises는 초기 인물별 편집 문구를 보존한 것이다.
+// 2026-10-12부터 결과의 강점·균형·행동은 explain.ts에서 기록과 목표로 선택한다.
 type CharacterPresentation = {
   title: string;
   image?: string;
