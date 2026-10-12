@@ -2,16 +2,74 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'chicago-marathon-2026-results',
+    slug: 'chicago-marathon-2026-results',
+    title: '시카고마라톤 2026 결과 | 여자 3명 2시간 15분 이내, 키프루토 2:01:09 우승',
+    description: '10월 11일 시카고마라톤에서 하위 페이사가 2:13:33으로 2연패, 아모스 키프루토가 2:01:09로 우승했습니다. 여자 상위 3명 모두 2시간 15분 이내 완주한 첫 마라톤입니다. 남녀 결과와 개인 기록 조회, 신청 중인 2027 대회 안내를 공식 자료로 정리했습니다.',
+    thumbnail: '/images/blog/chicago-marathon-2026-results.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-12',
+    category: 'news' as const,
+    readingTime: 3,
+    tags: ['시카고마라톤', '시카고마라톤 2026', '마라톤 결과', '하위 페이사', '아모스 키프루토', '시카고마라톤 2027'],
+    faqs: [
+      { question: '2026 시카고마라톤 우승자는 누구인가요?', answer: '남자는 케냐의 아모스 키프루토(2:01:09), 여자는 에티오피아의 하위 페이사(2:13:33)입니다. World Athletics의 10월 11일 공식 보고 기준입니다.' },
+      { question: '내 완주 기록은 어디서 확인하나요?', answer: '대회 공식 홈페이지의 Results에서 2026 RESULTS를 선택하면 개인 기록 조회 페이지로 연결됩니다. 공식 완주증은 참가자 계정에서 제공될 예정이라고 안내돼 있습니다.' },
+      { question: '2027 시카고마라톤은 지금 신청할 수 있나요?', answer: '네. 추첨 및 기록 보장 신청은 한국시간 2026년 10월 30일 새벽 4시까지이며 추첨 결과는 12월 8일 이메일로 안내됩니다. 대회일은 2027년 10월 10일입니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>남자 키프루토 2:01:09, 여자 페이사 2:13:33 우승.</strong> 2026년 10월 11일 열린 시카고마라톤 결과입니다.</li>
+<li><strong>여자 1~3위 모두 2시간 15분 이내.</strong> World Athletics가 마라톤 사상 최초라고 발표했습니다.</li>
+<li><strong>다음 대회 신청은 진행 중.</strong> 2027년 대회 지원 마감은 한국시간 10월 30일 새벽 4시입니다.</li>
+</ul></div>
+
+<h2>여자 결과 — 페이사 2연패, 상위 3명 모두 2:15 이내</h2>
+<table><thead><tr><th>순위</th><th>선수</th><th>국가</th><th>기록</th></tr></thead><tbody>
+<tr><td>1</td><td>하위 페이사 (Hawi Feysa)</td><td>에티오피아</td><td><strong>2:13:33</strong></td></tr>
+<tr><td>2</td><td>샤론 로케디 (Sharon Lokedi)</td><td>케냐</td><td>2:14:07</td></tr>
+<tr><td>3</td><td>브리짓 코스게이 (Brigid Kosgei)</td><td>케냐</td><td>2:14:55</td></tr>
+</tbody></table>
+<p>페이사는 지난해 우승 기록 2:14:57을 <strong>1분 24초 단축</strong>하며 타이틀을 지켰습니다. 이번 경기의 중심은 <strong>시상대에 오른 세 선수 모두가 2:15 안에 들어온 것</strong>입니다. World Athletics는 이런 결과가 나온 첫 마라톤이라고 설명했습니다.</p>
+
+<h2>남자 결과 — 키프루토, 3위·2위 다음은 우승</h2>
+<table><thead><tr><th>순위</th><th>선수</th><th>국가</th><th>기록</th></tr></thead><tbody>
+<tr><td>1</td><td>아모스 키프루토 (Amos Kipruto)</td><td>케냐</td><td><strong>2:01:09</strong></td></tr>
+<tr><td>2</td><td>타데세 비킬라 (Tadese Bikila)</td><td>에티오피아</td><td>2:02:56</td></tr>
+<tr><td>3</td><td>밀케사 멩게샤 (Milkesa Mengesha)</td><td>에티오피아</td><td>2:03:46</td></tr>
+</tbody></table>
+<p>키프루토는 시카고에서 2024년 3위, 2025년 2위를 기록한 뒤 올해 정상에 올랐습니다. <strong>종전 개인 최고기록보다 30초 빠른 기록</strong>입니다. 후반부에 선두 경쟁을 벌이던 제이컵 키플리모를 따돌렸고, 비킬라와 멩게샤가 2·3위로 들어왔습니다.</p>
+<p><small>표는 남녀 엘리트 상위 3명이며 휠체어·연령별 결과는 포함하지 않았습니다. 출처: <a href="https://worldathletics.org/news/report/feysa-kipruto-2026-chicago-marathon" target="_blank" rel="noopener noreferrer">World Athletics 공식 경기 보고</a>(10월 11일).</small></p>
+
+<h2>참가했다면 — 개인 기록·사진·완주증 확인</h2>
+<p><a href="https://www.chicagomarathon.com/results/" target="_blank" rel="noopener noreferrer">대회 공식 결과 페이지</a>에서 <strong>2026 RESULTS</strong>를 선택해 개인 기록을 확인할 수 있습니다. 같은 페이지에 사진을 제공하는 MarathonFoto 링크도 있습니다.</p>
+<p>공식 안내는 완주증을 <strong>참가자 계정에서 출력하거나 PDF로 저장할 수 있도록 제공할 예정</strong>이라고 설명합니다. 지금 모두 발급됐다는 뜻은 아니므로 계정의 제공 상태를 확인하세요. 기록집은 12월 발송 예정이며 완주자에게 디지털판도 제공한다고 안내합니다.</p>
+
+<h2>다음 출발선 — 2027 신청은 열려 있습니다</h2>
+<p><strong>2027년 대회일은 10월 10일</strong>입니다. <a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">공식 Apply 페이지</a> 기준 추첨·기록 보장 신청 마감은 미국 중부시간 10월 29일 오후 2시, <strong>한국시간 10월 30일(금) 새벽 4시</strong>입니다.</p>
+<p>추첨은 마감 후 전체 지원자 중에서 뽑으며 선착순이 아닙니다. 결과는 12월 8일 이메일로 통보됩니다. 한국 거주자의 일반 참가비는 <strong>260달러에 처리 수수료가 추가</strong>됩니다. 연령별 기록 보장 기준과 당첨 후 납부 순서는 <a href="/blog/chicago-marathon-2027-application-guide">2027 접수 가이드</a>에서 확인하세요.</p>
+
+<h2>확인한 출처</h2>
+<ul>
+<li><a href="https://worldathletics.org/news/report/feysa-kipruto-2026-chicago-marathon" target="_blank" rel="noopener noreferrer">World Athletics 경기 보고</a>: 남녀 순위·기록·경기 내용.</li>
+<li><a href="https://www.chicagomarathon.com/results/" target="_blank" rel="noopener noreferrer">시카고마라톤 Results</a>: 기록·사진·완주증·기록집.</li>
+<li><a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">시카고마라톤 Apply</a>: 2027 신청 기간·추첨·참가비.</li>
+</ul>
+<p><small>2026년 10월 12일 원문 확인. 이후 기록 정정이 있으면 공식 결과가 우선합니다.</small></p>
+`,
+  },
+  {
     id: 'daegu-marathon-application-guide',
     slug: 'daegu-marathon-application-guide',
-    title: '2027 대구마라톤 접수 일정·참가비·코스 | 풀코스 10월 12일 시작, WA 골드라벨',
-    description: '2027 대구국제마라톤(2월 28일, WA 골드라벨) 접수가 10월 12일 시작됩니다. 풀·10km·건강달리기 종목별 접수·결제 기간과 참가비, 접수 방법을 공식 사이트로 정리했습니다.',
+    title: '2027 대구마라톤 접수 시작 | 풀코스 10/12~18·9만원, 결제는 10/19~25',
+    description: '2027 대구마라톤 풀코스 신청이 10월 12일 10시에 시작됐습니다. 18일 23:59까지 신청하고 19~25일 별도 결제하는 구조입니다. 참가비 9만원, 10km·건강달리기는 10월 26일 신청 시작. 공식 접수 상품의 실제 개시와 12월 10일 환불 기한을 확인해 정리했습니다.',
     thumbnail: '/images/blog/daegu-marathon-application-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-11',
+    updatedAt: '2026-10-12',
     category: 'news' as const,
     readingTime: 4,
-    tags: ['대구마라톤', '대구국제마라톤', 'WA 골드라벨', '풀코스', '마라톤 접수', '2027 마라톤'],
+    tags: ['대구마라톤', '대구국제마라톤', '풀코스 접수', '풀코스', '마라톤 접수', '2027 마라톤'],
     event: {
       name: '2027 대구국제마라톤',
       startDate: '2027-02-28T08:00:00+09:00',
@@ -25,13 +83,14 @@ export const posts_2026_10: BlogPost[] = [
     },
     raceMeta: {
       displayTitle: '2027 대구마라톤, 풀코스 접수 시작',
-      displaySubtitle: '2월 28일 일요일 — WA 골드라벨 · 국채보상공원 출발',
+      displaySubtitle: '2월 28일 일요일 — 국채보상공원·대구 시내 일원',
       raceDate: '2027-02-28',
       registrationStart: '2026-10-12T10:00',
+      registrationOpen: { verifiedAt: '2026-10-12T10:09:53+09:00' },
       registrationEnd: '2026-11-01',
       registrationVia: '대구마라톤 공식 홈페이지 접수 페이지',
       action: {
-        what: '풀코스 접수 10월 12일(월) 10시 시작',
+        what: '풀코스 신청 개시 확인 — 10월 18일 23:59까지',
         how: '<a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">공식 접수 페이지</a>에서 종목별 접수 기간에 신청합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간에 반드시 결제해야 참가가 확정됩니다.',
       },
       facts: [
@@ -43,7 +102,7 @@ export const posts_2026_10: BlogPost[] = [
         { label: '10km·건강', value: '10/26(월)~11/1(일)', sub: '결제 11/2~8' },
       ],
       highlights: [
-        { badge: 'WA 골드', title: 'WA 골드라벨 공인 대회입니다', desc: '대구국제마라톤은 <strong>World Athletics 골드라벨</strong> 대회입니다. 국내에서 WA 라벨을 보유한 풀코스 대회는 서울·대구 등 손에 꼽힙니다.' },
+        { badge: '2/28', title: '대회일은 2027년 2월 28일입니다', desc: '국채보상공원 및 대구 시내 일원에서 열립니다. <strong>오전 8시 출발</strong>로 안내되며, 신청일과 대회일을 구분해 준비하세요.' },
         { badge: '접수≠확정', title: '접수와 결제가 분리돼 있습니다', desc: '접수 기간에 신청한 뒤, <strong>별도 결제 기간에 참가비를 내야 참가가 확정</strong>됩니다. 풀코스는 접수 10/12~18, 결제 10/19~25입니다. 결제 기간을 놓치면 접수가 취소될 수 있습니다.' },
         { badge: '2월', title: '겨울 훈련 후 첫 풀코스 시즌', desc: '2월 말은 겨울 훈련을 마치고 봄 시즌을 여는 시점입니다. 국내 메이저 풀코스 중 가장 이른 시기에 열리므로, <strong>상반기 기록 도전 첫 기회</strong>로 삼는 러너가 많습니다.' },
       ],
@@ -51,10 +110,19 @@ export const posts_2026_10: BlogPost[] = [
     faqs: [
       { question: '2027 대구마라톤 접수는 언제, 어디서 하나요?', answer: '풀코스(마스터즈)는 2026년 10월 12일(월) 10시부터 18일(일) 23시 59분까지, 10km·건강달리기는 10월 26일(월) 10시부터 11월 1일(일) 23시 59분까지 공식 접수 페이지(daegumarathon.daegu.go.kr)에서 신청합니다. 단체접수는 11월 16~19일입니다.' },
       { question: '대구마라톤 참가비는 얼마인가요?', answer: '풀코스 90,000원, 10km 60,000원입니다. 건강달리기(5km) 참가비는 공식 접수 페이지에 아직 게시되지 않았습니다.' },
+      { question: '취소·환불은 언제까지 가능한가요?', answer: '2026년 12월 10일(목) 23:59까지 가능합니다. 공식 참가접수 유의사항은 참가신청-환불신청 메뉴에서 본인이 직접 처리해야 한다고 안내합니다.' },
       { question: '접수하면 바로 참가가 확정되나요?', answer: '아닙니다. 접수와 결제가 분리돼 있습니다. 풀코스는 10월 19~25일, 10km·건강달리기는 11월 2~8일 결제 기간에 참가비를 내야 참가가 확정됩니다.' },
     ],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 접수 예정</span><span class="dl-text"><strong>2027 대구국제마라톤(2027년 2월 28일)</strong> 풀코스(마스터즈) 접수가 <strong>2026년 10월 12일(월) 10시에 열립니다.</strong> 10km·건강달리기는 10월 26일(월) 10시부터 접수합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간을 반드시 확인하세요.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 풀코스 신청 시작</span><span class="dl-text"><strong>2027 대구국제마라톤(2027년 2월 28일)</strong> 풀코스(마스터즈) 신청이 <strong>2026년 10월 12일(월) 10시에 시작됐습니다.</strong> 10km·건강달리기는 10월 26일(월) 10시부터 접수합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간을 반드시 확인하세요.</span></div>
+
+<h2>10월 12일 풀코스 신청, 이렇게 확인하세요</h2>
+<ol>
+<li><a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">공식 참가접수 페이지</a>에서 <strong>풀코스(42.195km)</strong> 상품을 선택합니다. 10월 12일 10:09 기준 이 상품 1종과 참가신청 버튼이 표시됐습니다.</li>
+<li><strong>참가신청</strong>을 누르고 공식 화면의 로그인·입력 안내를 따라 진행합니다. 접속이 지연되면 대기열 화면의 안내에 따라 기다리세요.</li>
+<li>신청을 마쳤다면 신청 내역을 확인하고 <strong>10월 19~25일 결제</strong>를 준비하세요.</li>
+</ol>
+<p>대회일은 <strong>2027년 2월 28일(일) 오전 8시</strong>이고, 10월 12일 시작된 것은 참가 신청입니다. 신청 완료 뒤에는 내 신청 내역이 남았는지 확인하고 결제일을 달력에 적어두세요.</p>
 
 <h2>종목별 접수·결제 일정</h2>
 <p>2027 대구국제마라톤은 <strong>엘리트 풀코스·마스터즈 풀코스·10km·건강달리기(5km)</strong> 네 종목으로 나뉩니다. 일반 러너가 신청하는 것은 마스터즈 풀코스·10km·건강달리기이며, <strong>접수와 결제가 분리된 2단계 구조</strong>입니다.</p>
@@ -67,11 +135,11 @@ export const posts_2026_10: BlogPost[] = [
     <tr><td><strong>단체접수</strong></td><td>11/16(월) 10:00 ~ 11/19(목) 23:59</td><td colspan="2">공식 안내 확인</td></tr>
   </tbody>
 </table>
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">접수 ≠ 참가 확정</p><p>접수 기간에 신청만 하면 끝이 아닙니다. <strong>별도 결제 기간에 참가비를 납부해야 참가가 확정</strong>됩니다. 풀코스 기준, 접수 마감(10/18)과 결제 시작(10/19) 사이에 하루 간격이 있으니 달력에 결제일을 미리 적어두세요.</p></div></div>
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">접수 ≠ 참가 확정</p><p>접수 기간에 신청만 하면 끝이 아닙니다. <strong>별도 결제 기간에 참가비를 납부해야 참가가 확정</strong>됩니다. 풀코스는 신청 마감 다음 날인 10월 19일부터 결제 주간이 시작됩니다. 신청을 마쳤다면 달력에 결제 시작일과 마감일을 함께 적어두세요.</p></div></div>
 <p>건강달리기(5km) 참가비는 공식 접수 페이지에 아직 게시되지 않았습니다. 10월 26일 접수가 열리면 확인할 수 있습니다.</p>
 
-<h2>대회 개요 — WA 골드라벨 풀코스</h2>
-<p>대구국제마라톤은 <strong>World Athletics(WA) 골드라벨</strong> 대회입니다. 국내에서 WA 라벨을 보유한 풀코스 대회는 손에 꼽히며, 기록 공인과 국제 대회 자격에 유리합니다.</p>
+<h2>대회 개요 — 2월 28일 대구 도심에서 출발</h2>
+<p>2027 대구마라톤은 <strong>국채보상공원 및 대구 시내 일원</strong>에서 열립니다. 풀코스 신청이 시작된 10월 12일과 실제 대회일인 2027년 2월 28일을 구분하세요.</p>
 <ul>
   <li><strong>대회일:</strong> 2027년 2월 28일(일) 08:00 출발</li>
   <li><strong>장소:</strong> 국채보상공원 및 대구 시내 일원</li>
@@ -82,9 +150,9 @@ export const posts_2026_10: BlogPost[] = [
 
 <h2>접수 전 확인할 것</h2>
 <ul>
-  <li><strong>선착순·추첨 여부:</strong> 공식 사이트에 선착순인지 추첨인지 명시돼 있지 않습니다. 접수 시작 시각(10시)에 맞춰 준비하되, 정원과 선발 방식은 접수 페이지가 열리면 직접 확인하세요.</li>
+  <li><strong>정원·선발 방식:</strong> 이번에 확인한 공개 접수 상품 목록에서는 정원과 선착순·추첨 여부를 확인하지 못했습니다. 신청 전에 공식 대회개요·공지의 최신 조건을 함께 확인하세요.</li>
   <li><strong>WMAC 사전접수:</strong> WMAC(세계마스터즈육상선수권) 참가자 대상 사전접수가 10월 5~11일로 이미 진행됐습니다. 일반 접수와 별개입니다.</li>
-  <li><strong>환불·취소:</strong> 공식 사이트에서 환불 조건을 확인하지 못했습니다. 접수 전에 환불 정책을 반드시 확인하세요.</li>
+  <li><strong>환불·취소:</strong> 공식 참가접수 유의사항은 <strong>2026년 12월 10일(목) 23:59까지</strong> 취소·환불이 가능하며, 참가신청-환불신청 페이지에서 본인이 직접 처리해야 한다고 안내합니다.</li>
 </ul>
 
 <h2>풀코스 준비가 처음이라면</h2>
@@ -92,8 +160,8 @@ export const posts_2026_10: BlogPost[] = [
 <p>본인 러닝 스타일과 목표에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다. 국내 마라톤 일정 전체는 <a href="/marathon">마라톤 일정 페이지</a>에서 확인하세요.</p>
 
 <h2>출처</h2>
-<p><a href="https://daegumarathon.daegu.go.kr/kor/index.do" target="_blank" rel="noopener noreferrer">대구국제마라톤 공식 홈페이지</a> 및 <a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">접수 페이지</a> — 2026년 10월 11일 확인. 대회일·장소·종목·접수 및 결제 기간·참가비(풀코스·10km)는 이 공식 페이지 기준입니다.</p>
-<p><small>건강달리기(5km) 참가비는 접수 개시 전이라 공식 접수 페이지에 미게시 상태입니다. 선착순·추첨 여부, 정원, 환불 조건도 확인한 페이지에서 명시를 찾지 못했습니다. 이 항목들은 접수가 열리면 갱신하겠습니다.</small></p>
+<p><a href="https://daegumarathon.daegu.go.kr/kor/index.do" target="_blank" rel="noopener noreferrer">대구국제마라톤 공식 홈페이지</a> 및 <a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">접수 페이지</a> — 2026년 10월 11일 확인. 기존 일정 안내는 10월 11일 확인 자료 기준입니다. <strong>10월 12일 10:09 공식 참가접수 목록에서 풀코스 상품·신청 버튼·9만원·신청 종료 10월 18일 23:59를 확인</strong>했습니다. 같은 페이지의 유의사항에서 취소·환불 기한 12월 10일 23:59를 확인했습니다.</p>
+<p><small>10월 12일 공개 접수 목록에는 풀코스 1종만 표시됐습니다. 건강달리기(5km) 상품의 참가비는 이번 확인에서 확보하지 못했습니다. 선착순·추첨 여부와 정원은 이번에 확인한 접수 상품 목록에는 명시되지 않았습니다. 10월 12일 브라우저가 대기열 주소로 이동하는 현상도 확인했으므로, 접속이 지연되면 공식 화면 안내에 따라 기다리세요.</small></p>
 `,
   },
   {
@@ -830,11 +898,12 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: 'beatempo-korea-f45',
     slug: 'beatempo-korea-f45',
-    title: '비템포 코리아 × F45 접수·가격 | 크리스마스 킨텍스 실내 5·10km, 얼리버드 10월 11일까지',
-    description: '2026년 12월 25~27일 킨텍스에서 열리는 비템포 코리아 × F45는 실내 러닝·피트니스 축제입니다. 러닝 5km 55,000원·10km 70,000원, CJ온스타일 얼리버드 판매는 10월 11일까지입니다. 러닝과 F45·파티 티켓의 차이, 회차당 정원과 환불 기한을 공식 안내로 정리했습니다.',
+    title: '비템포 코리아 × F45 접수·가격 | 크리스마스 킨텍스 실내 5·10km, 1차 얼리버드 종료·후속 판매 확인',
+    description: '2026년 12월 25~27일 킨텍스에서 열리는 비템포 코리아 × F45는 실내 러닝·피트니스 축제입니다. 러닝 5km 55,000원·10km 70,000원, 공지된 1차 얼리버드 기간은 10월 11일 종료됐습니다. 후속 판매 일정은 확인되지 않았습니다. 러닝과 F45·파티 티켓의 차이, 회차당 정원과 환불 기한을 공식 안내로 정리했습니다.',
     thumbnail: '/images/blog/beatempo-korea-f45.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-07',
+    updatedAt: '2026-10-12',
     category: 'news' as const,
     readingTime: 5,
     tags: ['비템포 코리아', 'BEATEMPO', 'F45', '킨텍스', '실내 러닝', '크리스마스 러닝'],
@@ -858,8 +927,8 @@ export const posts_2026_10: BlogPost[] = [
       registrationEnd: '2026-10-11',
       registrationVia: 'CJ온스타일 — 1차 얼리버드 판매 기간 기준',
       action: {
-        what: '1차 얼리버드는 10월 11일까지',
-        how: '<a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">CJ온스타일 구매 페이지</a>에서 러닝 거리·참가 날짜·오전 또는 오후 회차를 확인하세요. 일반관람권이나 F45 티켓을 러닝 참가권으로 혼동하지 마세요. 이후 판매 일정과 옵션별 잔여 수량은 확인하지 않았습니다.',
+        what: '1차 얼리버드 기간 종료 — 후속 판매 여부 확인',
+        how: '<a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">CJ온스타일 구매 페이지</a>에서 러닝 거리·참가 날짜·오전 또는 오후 회차를 확인하세요. 일반관람권이나 F45 티켓을 러닝 참가권으로 혼동하지 마세요. 10월 12일 공식 티켓 안내는 기존 가격과 구매 링크를 유지하나, 실제 구매 페이지가 열리지 않아 후속 일정·잔여 수량을 확인하지 못했습니다.',
       },
       facts: [
         { label: '행사일', value: '12월 25~27일', sub: '금~일 · 크리스마스 주말' },
@@ -876,7 +945,7 @@ export const posts_2026_10: BlogPost[] = [
     },
     faqs: [
       { question: '비템포 러닝 참가비는 얼마인가요?', answer: '공식 티켓 안내 기준 BEATEMPO 150 러닝은 5km 55,000원, 10km 70,000원입니다. 일반관람권 35,000원은 러닝 참가권이 아닙니다.' },
-      { question: '얼리버드는 언제까지 구매할 수 있나요?', answer: 'CJ온스타일 1차 얼리버드 판매는 2026년 10월 6일 오후 8시부터 10월 11일까지입니다. 회차별 재고와 이후 판매 일정은 구매 페이지에서 확인해야 합니다.' },
+      { question: '얼리버드는 언제까지 구매할 수 있나요?', answer: '공지된 1차 판매 기간(10월 6일 오후 8시~11일)은 지났습니다. 10월 12일 후속 판매 일정과 실제 구매 가능 여부는 확인되지 않았으므로 공식 판매 페이지에서 확인하세요.' },
       { question: '러닝 참가권에 F45와 파티도 포함되나요?', answer: '러닝·F45 PEAK500·요가·명상·나이트 펀런·공연은 별도 티켓이 구분되어 있습니다. 함께 참가하려면 해당 프로그램이나 포함 항목이 맞는 패키지를 선택하세요.' },
       { question: '러닝 참가권은 언제까지 환불할 수 있나요?', answer: '공식 FAQ는 PEAK500 외 프로그램에 대해 2026년 10월 31일 오후 6시 이후 취소·환불 불가를 안내합니다. 최종 구매 화면의 상품별 약관도 확인하세요.' },
     ],
@@ -884,8 +953,8 @@ export const posts_2026_10: BlogPost[] = [
 <p>크리스마스에 달리고 싶은데 추운 바깥은 부담스럽다면, 킨텍스에서 열리는 <strong>비템포 코리아 × F45</strong>가 선택지가 될 수 있습니다. 12월 25~27일 실내 러닝과 F45 운동, 요가·명상, 음악 프로그램을 모은 행사입니다.</p>
 <p>러너가 먼저 알아둘 것은 <strong>러닝 참가권과 F45·파티 티켓이 구분된다는 점</strong>입니다. 가장 저렴한 관람권을 사면 러닝까지 할 수 있다고 생각하면 안 됩니다. 아래는 10월 7일 공식 홈페이지·FAQ·CJ온스타일 판매 페이지를 확인한 내용입니다.</p>
 
-<h2>얼리버드는 10월 11일까지, 러닝은 5.5만·7만원</h2>
-<p><a href="https://corp.cjonstyle.com/ko/newsroom/press/145" target="_blank" rel="noopener noreferrer">CJ온스타일 공식 발표</a>에 따르면 1차 얼리버드 판매는 <strong>10월 6일 오후 8시~11일</strong>입니다. <a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">실제 구매 페이지</a>에서 러닝의 오전·오후 회차와 프로그램별 상품이 구분된 것을 확인했습니다. 날짜와 옵션별 남은 수량은 구매 시점에 다시 보세요.</p>
+<h2>1차 얼리버드 기간 종료 — 러닝 안내 가격 5.5만·7만원</h2>
+<p><a href="https://corp.cjonstyle.com/ko/newsroom/press/145" target="_blank" rel="noopener noreferrer">CJ온스타일 공식 발표</a>에 따르면 1차 얼리버드 판매는 <strong>10월 6일 오후 8시~11일</strong>입니다. <a href="https://display.cjonstyle.com/p/mocode/M1242889" target="_blank" rel="noopener noreferrer">실제 구매 페이지</a>에서 러닝의 오전·오후 회차와 프로그램별 상품이 구분된 것을 확인했습니다. 해당 판매 기간은 지났습니다. 10월 12일 공식 티켓 안내에 가격과 구매 링크는 남아 있으나 구매 페이지 접근이 되지 않아 후속 판매 개시 여부는 확인하지 못했습니다.</p>
 <table>
   <thead><tr><th>티켓</th><th>공식 안내 가격</th><th>고를 때 확인할 것</th></tr></thead>
   <tbody>

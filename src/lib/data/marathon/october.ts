@@ -91,7 +91,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '안양천 다목적광장 (서울 금천구)',
     region: '서울',
     distances: ['10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'http://www.gcrun.kr/',
     description:
@@ -471,7 +471,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '청계광장 앞 세종대로',
     region: '서울',
     distances: ['하프', '11K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: true,
     website: 'https://www.seoul-race.co.kr/',
     description:
@@ -692,7 +692,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '전남 나주종합스포츠파크',
     region: '전남',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://najumarathon.com',
     description:
