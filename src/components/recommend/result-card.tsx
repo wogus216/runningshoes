@@ -3,7 +3,7 @@
 import { useState, memo } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Star, Check, ArrowRight, ChevronDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
+import { Star, Check, AlertTriangle, ArrowRight, ChevronDown, TrendingUp, TrendingDown, Minus } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { AddToCompareButton } from '@/components/compare/add-to-compare-button';
 import { img } from '@/lib/image';
@@ -28,12 +28,10 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
     return <Minus className="h-3 w-3 text-tertiary" />;
   };
 
-  const getComparisonText = (value: number, unit: string, inverted = false) => {
+  const getComparisonText = (value: number, unit: string) => {
     if (value === 0) return '평균';
     const absValue = Math.abs(value);
-    const direction = inverted
-      ? (value < 0 ? '+' : '-')
-      : (value > 0 ? '+' : '-');
+    const direction = value > 0 ? '+' : '-';
     return `${direction}${absValue}${unit}`;
   };
 
@@ -130,11 +128,21 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
         </div>
       )}
 
+      {shoe.matchWarnings.length > 0 && (
+        <div className="mb-4 rounded-[4px] border border-amber-200 bg-amber-50 p-3">
+          <p className="mb-2 flex items-center gap-2 text-xs font-semibold text-amber-900"><AlertTriangle className="h-4 w-4" />선택 조건에서 확인할 점</p>
+          <ul className="space-y-1 text-sm text-amber-900">
+            {shoe.matchWarnings.map(warning => <li key={warning}>{warning}</li>)}
+          </ul>
+        </div>
+      )}
+
       {/* 상세 추천 이유 */}
       {shoe.detailedReason && (
         <div className="mb-4">
           <button
             onClick={() => setShowDetails(!showDetails)}
+            aria-expanded={showDetails}
             className="flex items-center gap-2 text-sm font-medium text-sky-700 transition hover:opacity-80"
           >
             <ChevronDown className={cn("h-4 w-4 transition-transform", showDetails && "rotate-180")} />
@@ -172,7 +180,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
                         shoe.comparisonToAvg.weight < 0 ? "text-sky-700" :
                         shoe.comparisonToAvg.weight > 0 ? "text-negative" : "text-tertiary"
                       )}>
-                        {getComparisonText(shoe.comparisonToAvg.weight, 'g', true)}
+                        {getComparisonText(shoe.comparisonToAvg.weight, 'g')}
                       </span>
                     </div>
                     <div className="flex items-center gap-1 text-xs">

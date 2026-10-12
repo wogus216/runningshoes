@@ -7,6 +7,7 @@ import type { UserProfile } from '@/lib/recommendation';
 
 type QuestionnaireProps = {
   onComplete: (profile: UserProfile) => void;
+  isLoading?: boolean;
 };
 
 type Question = {
@@ -118,7 +119,7 @@ const questions: Question[] = [
   },
 ];
 
-export function Questionnaire({ onComplete }: QuestionnaireProps) {
+export function Questionnaire({ onComplete, isLoading = false }: QuestionnaireProps) {
   const [currentStep, setCurrentStep] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string | string[]>>({
     experience: '',
@@ -243,6 +244,8 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
             <button
               key={option.value}
               onClick={() => handleSelect(option.value)}
+              disabled={isLoading}
+              aria-pressed={isSelected}
               className={cn(
                 "w-full rounded-[4px] border p-4 text-left transition-all",
                 isSelected
@@ -306,7 +309,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
       <div className="flex items-center justify-between gap-4">
         <button
           onClick={handleBack}
-          disabled={currentStep === 0}
+          disabled={currentStep === 0 || isLoading}
           className={cn(
             "flex items-center gap-2 px-5 py-3 rounded-full text-sm font-medium transition",
             currentStep === 0
@@ -320,7 +323,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
 
         <button
           onClick={handleNext}
-          disabled={!canProceed}
+          disabled={!canProceed || isLoading}
           className={cn(
             "flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition",
             canProceed
@@ -328,7 +331,7 @@ export function Questionnaire({ onComplete }: QuestionnaireProps) {
               : "bg-border text-tertiary cursor-not-allowed"
           )}
         >
-          {currentStep === questions.length - 1 ? '결과 보기' : '다음'}
+          {isLoading ? '추천 준비 중…' : currentStep === questions.length - 1 ? '결과 보기' : '다음'}
           <ChevronRight className="h-4 w-4" />
         </button>
       </div>

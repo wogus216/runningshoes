@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { recommendShoes, type UserProfile } from "@/lib/recommendation";
+import { recommendShoes, getTopShoesForInjury, isUserProfile, type UserProfile } from "@/lib/recommendation";
 import { shoes } from "@/lib/data/shoes";
 
 const baseProfile: UserProfile = {
@@ -129,5 +129,96 @@ describe("추천 결함 회귀 방지", () => {
     const high = recommendShoes(shoes, { ...baseProfile, budget: "high" });
     const cheapest = Math.min(...high.map(price).filter((p) => p > 0));
     expect(cheapest).toBeLessThan(200000);
+  });
+});
+
+// 2026-10-12 결과 화면 점검에서 확인한 조건 누출의 회귀 검증.
+describe("추천 조건과 결과의 일관성", () => {
+  it("평발·빠른 페이스를 함께 골라도 트레일 목적에는 트레일화만 나온다", () => {
+    const result = recommendShoes(shoes, {
+      ...baseProfile, purpose: "trail", footArch: "flat", targetPace: "fast",
+    });
+    expect(result.length).toBeGreaterThan(0);
+    expect(result.every(s => s.category === "트레일")).toBe(true);
+    expect(result.length).toBeLessThan(10); // 예산 내 후보가 적어도 로드화로 채우지 않는다.
+  });
+
+  it("상급자·빠른 페이스가 회복 용도를 뒤집지 않는다", () => {
+    const result = recommendShoes(shoes, {
+      ...baseProfile, purpose: "recovery", experience: "advanced", targetPace: "fast", budget: "high",
+    });
+    expect(result.length).toBeGreaterThan(0);
+    expect(result.some(s => s.category === "레이싱")).toBe(false);
+  });
+
+  it("넓은 발에 좁고 와이드 옵션도 없는 신발을 추천하지 않는다", () => {
+    const result = recommendShoes(shoes, {
+      ...baseProfile, footWidth: "wide", purpose: "racing", targetPace: "fast", budget: "high",
+    });
+    expect(result.some(s => s.koreanFootFit?.toBoxWidth === "narrow" && !s.koreanFootFit.wideOptions)).toBe(false);
+    const source = shoes.find(s => s.specs && s.price && s.price <= 200000 && s.koreanFootFit)!;
+    const narrow = { ...source, koreanFootFit: { ...source.koreanFootFit!, toBoxWidth: "narrow" as const, wideOptions: false } };
+    expect(recommendShoes([narrow], { ...baseProfile, footWidth: "wide" })).toHaveLength(0);
+  });
+
+  it("입문자 비추천이 명시된 제품을 입문자에게 추천하지 않는다", () => {
+    const source = shoes.find(s => s.specs && s.price)!;
+    const shoe = { ...source, targetUsers: { recommended: [], notRecommended: ["입문 러너"] } };
+    expect(recommendShoes([shoe], { ...baseProfile, budget: "high" })).toHaveLength(0);
+    expect(recommendShoes([shoe], { ...baseProfile, experience: "intermediate", budget: "high" })).toHaveLength(1);
+    // ‘입문화 중 무거움’은 입문자 비추천과 다르다.
+    expect(recommendShoes([{ ...shoe, targetUsers: { recommended: [], notRecommended: ["입문화 중 가벼운 축은 아님"] } }], { ...baseProfile, budget: "high" })).toHaveLength(1);
+  });
+
+  it("정가가 확인되지 않은 신발은 예산에 맞는 후보로 취급하지 않는다", () => {
+    const shoe = { ...shoes.find(s => s.specs)!, price: undefined, priceAnalysis: undefined };
+    expect(recommendShoes([shoe], baseProfile)).toHaveLength(0);
+  });
+
+  it("선택한 부상 중 warning인 신발은 제외하고 caution은 결과에 표시한다", () => {
+    const source = shoes.find(s => s.specs && s.price && s.injuryPrevention)!;
+    const caution = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: "caution" as const } };
+    const warning = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: "warning" as const } };
+    const profile: UserProfile = { ...baseProfile, injuries: ["kneeIssues"], budget: "high" };
+    expect(recommendShoes([warning], profile)).toHaveLength(0);
+    expect(recommendShoes([caution], profile)[0]?.matchWarnings).toContain("무릎 관련 평가: 주의 필요");
+  });
+
+  it("한 후보이거나 동점인 후보도 상대 점수와 표시 범위를 지킨다", () => {
+    const source = shoes.find(s => s.specs && s.price && s.price <= 200000)!;
+    const single = recommendShoes([source], baseProfile);
+    expect(single[0].matchScore).toBe(100);
+    const repeated = Array.from({ length: 12 }, (_, i) => ({ ...source, id: `same-brand-${i}`, slug: `same-brand-${i}` }));
+    const result = recommendShoes(repeated, baseProfile);
+    expect(result.every(s => s.matchScore >= 0 && s.matchScore <= 100)).toBe(true);
+  });
+
+  it("평균 대비 차이는 화면에 나온 추천 신발끼리 비교한다", () => {
+    const result = recommendShoes(shoes, baseProfile);
+    const avg = result.reduce((sum, s) => sum + s.specs!.weight, 0) / result.length;
+    for (const s of result) expect(s.comparisonToAvg?.weight).toBe(Math.round(s.specs!.weight - avg));
+  });
+});
+
+
+describe("추천 결과의 부상 후보와 세션 복원", () => {
+  it("부상별 후보는 본 추천의 예산·용도·복수 부상 조건을 유지한다", () => {
+    const profile: UserProfile = { ...baseProfile, purpose: "trail", injuries: ["kneeIssues", "achillesTendinopathy"] };
+    const results = recommendShoes(shoes, profile);
+    const top = getTopShoesForInjury(results, "kneeIssues");
+    for (const shoe of top) {
+      expect(results.some(s => s.id === shoe.id)).toBe(true);
+      expect(shoe.category).toBe("트레일");
+      expect(shoe.price ?? shoe.priceAnalysis?.msrp ?? Infinity).toBeLessThanOrEqual(200000);
+      expect(shoe.injuryPrevention?.achillesTendinopathy).not.toBe("warning");
+    }
+  });
+
+  it("유효한 기존 설문은 복원하고 손상된 선택지는 거절한다", () => {
+    expect(isUserProfile(baseProfile)).toBe(true);
+    expect(isUserProfile({ ...baseProfile, targetPace: "fast", season: "winter" })).toBe(true);
+    for (const value of [null, [], {}, { ...baseProfile, budget: "old-budget" }, { ...baseProfile, injuries: ["none"] }, { ...baseProfile, targetPace: "unknown" }, { ...baseProfile, preferredBrands: null }]) {
+      expect(isUserProfile(value)).toBe(false);
+    }
   });
 });

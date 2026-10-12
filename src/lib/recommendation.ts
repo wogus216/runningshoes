@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 import type { CardShoe } from '@/lib/data/shoes';
+import { withJosa } from '@/lib/korean';
 
 export type UserProfile = {
   experience: 'beginner' | 'intermediate' | 'advanced';
@@ -15,10 +16,30 @@ export type UserProfile = {
   targetPace?: 'slow' | 'medium' | 'fast'; // 목표 페이스
 };
 
+/** 세션에 남은 설문이 현재 선택지와 맞는지 확인한다. */
+export function isUserProfile(value: unknown): value is UserProfile {
+  if (!value || typeof value !== 'object') return false;
+  const p = value as Record<string, unknown>;
+  const choices: Record<string, readonly string[]> = {
+    experience: ['beginner', 'intermediate', 'advanced'],
+    weeklyDistance: ['low', 'medium', 'high'],
+    purpose: ['training', 'racing', 'recovery', 'trail', 'all'],
+    footArch: ['flat', 'normal', 'high'],
+    footWidth: ['narrow', 'standard', 'wide'],
+    budget: ['low', 'mid', 'high'],
+  };
+  if (!Object.entries(choices).every(([key, options]) => typeof p[key] === 'string' && options.includes(p[key] as string))) return false;
+  if (p.targetPace !== undefined && !['slow', 'medium', 'fast'].includes(p.targetPace as string)) return false;
+  if (p.season !== undefined && !['summer', 'winter', 'all'].includes(p.season as string)) return false;
+  return Array.isArray(p.injuries) && p.injuries.every(i => typeof i === 'string' && Object.hasOwn(injuryTips, i))
+    && Array.isArray(p.preferredBrands) && p.preferredBrands.every(b => typeof b === 'string');
+}
+
 export type RecommendedShoe = CardShoe & {
   matchScore: number;       // 정규화된 점수 (0-100)
   rawScore: number;         // 원시 점수
   matchReasons: string[];
+  matchWarnings: string[];
   detailedReason?: string;  // 상세 추천 이유
   comparisonToAvg?: {       // 평균 대비 스펙 비교
     cushioning: number;
@@ -167,6 +188,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
 
     let score = 0;
     const reasons: string[] = [];
+    const warnings: string[] = [];
 
     /*
      * 이 러너에게 안정화가 '맞는 유형'인가.
@@ -184,10 +206,13 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       profile.injuries.some((i) => ['kneeIssues', 'shinSplints'].includes(i));
     const fitsCategory = (map: Record<string, string[]>, key: string) =>
       map[key]?.includes(shoe.category) ||
-      (needsStability && shoe.category === '안정화');
+      (needsStability && shoe.category === '안정화' &&
+        (map !== purposeCategoryMap || ['training', 'recovery', 'all'].includes(key)));
 
     // 1. 예산 필터 (필수) - 상한+하한 모두 체크
-    const price = shoe.price || shoe.priceAnalysis?.msrp || 0;
+    const price = shoe.price ?? shoe.priceAnalysis?.msrp;
+    // 한국 가격이 미확인인 제품은 예산을 검증할 수 없다.
+    if (price === undefined || !Number.isFinite(price) || price <= 0) continue;
     const budgetRange = budgetRanges[profile.budget];
     if (price > 0 && (price > budgetRange.max || price < budgetRange.min)) {
       continue; // 예산 범위 밖 제외
@@ -197,26 +222,14 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       reasons.push('예산 범위 내');
     }
 
-    /*
-     * 1-b. 트레일화는 트레일을 고른 사람에게만 보인다.
-     *
-     * 예전에는 어느 카테고리 맵에도 '트레일' 이 없어서 15종이 어떤 조합에서도 추천되지
-     * 않았다(카탈로그 커버리지 82.7% 의 주원인). 목적에 트레일을 추가하면서, 반대로
-     * 로드 러너의 결과에 트레일화가 새어 나가지 않도록 여기서 갈라 둔다.
-     */
-    if (shoe.category === '트레일' && profile.purpose !== 'trail') {
-      continue;
-    }
-    /*
-     * 반대로 트레일을 고른 사람에게 로드화가 위로 올라오지 않게 눌러 둔다.
-     * 카테고리 가점 +35 만으로는 부족했다 — 로드화가 경험·주간거리·쿠셔닝 등 여러 축에서
-     * 점수를 쌓아 이겼고, 실측에서 트레일 목적인데 상위 10개 중 트레일화가 4개뿐이었다.
-     * 제외하지 않고 감점만 하는 이유는 예산이 낮으면 트레일화 후보가 3종까지 줄어서다
-     * (20만원 이하 기준). 열 자리를 채우되 순서는 트레일이 먼저다.
-     */
-    if (profile.purpose === 'trail' && shoe.category !== '트레일') {
-      score -= 40;
-    }
+    // 노면과 용도는 가점보다 먼저 적용한다. 적은 후보를 다른 용도의 신발로 채우지 않는다.
+    if (profile.purpose === 'trail' ? shoe.category !== '트레일' : shoe.category === '트레일') continue;
+    if (profile.purpose === 'recovery' && shoe.category === '레이싱') continue;
+
+    // 데이터에 입문자 비추천이 명시된 제품을 경험 가점으로 다시 올리지 않는다.
+    if (profile.experience === 'beginner' && shoe.targetUsers?.notRecommended.some(text =>
+      /^(입문|초보)(?:\s*러너|자)?$/.test(text.trim())
+    )) continue;
 
     // 2. 발볼 너비 체크
     if (shoe.koreanFootFit?.toBoxWidth) {
@@ -225,8 +238,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
           score += 5;
           reasons.push('와이드 옵션 제공');
         } else {
-          score -= 10;
-          reasons.push('발볼이 좁아 맞지 않을 수 있음');
+          continue; // 넓은 발에 좁은 일반판만 있는 모델은 제외
         }
       } else if (profile.footWidth === shoe.koreanFootFit.toBoxWidth) {
         score += 15;
@@ -248,7 +260,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         reasons.push('평발에 적합');
       } else if (compatibility === 'poor') {
         score -= 15;
-        reasons.push('평발에 부적합');
+        warnings.push('평발 적합성 평가: 낮음');
       }
     }
 
@@ -269,14 +281,15 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         if (level) {
           if (level === 'excellent') {
             injuryBonus += 30;
-            reasons.push(`${injuryLabels[injury]} 예방에 매우 좋음`);
+            reasons.push(`${injuryLabels[injury]} 관련 평가: 매우 좋음`);
           } else if (level === 'good') {
             injuryBonus += 8;
-            reasons.push(`${injuryLabels[injury]} 예방에 좋음`);
+            reasons.push(`${injuryLabels[injury]} 관련 평가: 좋음`);
           } else if (level === 'warning') {
             hasWarning = true;
           } else if (level === 'caution') {
             score -= 20;
+            warnings.push(`${injuryLabels[injury]} 관련 평가: 주의 필요`);
           }
         }
       }
@@ -430,12 +443,6 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
           } else if (summerLevel === 'poor') {
             score -= 10;
           }
-        } else {
-          // 여름 데이터가 없으면 무게로 추론
-          if (shoe.specs.weight && shoe.specs.weight < 250) {
-            score += 10;
-            reasons.push('가벼워서 여름에 적합');
-          }
         }
       }
     }
@@ -571,7 +578,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     // 25. 최고 쿠셔닝(10) 특별 보너스
     if (shoe.specs.cushioning === 10 && (profile.purpose === 'recovery' || profile.targetPace === 'slow' || (profile.experience === 'beginner' && profile.weeklyDistance === 'low'))) {
       score += 10;
-      reasons.push('최상급 쿠셔닝 (recovery 특화)');
+      reasons.push('최상급 쿠셔닝');
     }
 
     // 26. 카본 레이싱 + 높은 안정성 조합 (안정적 레이싱 니치)
@@ -592,7 +599,8 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
         ...shoe,
         matchScore: 0, // 나중에 정규화
         rawScore: score,
-        matchReasons: reasons.filter(r => !r.includes('부적합') && !r.includes('맞지 않을')).slice(0, 5),
+        matchReasons: Array.from(new Set(reasons)).slice(0, 5),
+        matchWarnings: warnings,
       });
     }
   }
@@ -602,53 +610,36 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     return [];
   }
 
-  // 평균 스펙 계산 (비교용)
-  const avgSpecs = {
-    cushioning: recommendations.reduce((sum, r) => sum + (r.specs?.cushioning || 0), 0) / recommendations.length,
-    weight: recommendations.reduce((sum, r) => sum + (r.specs?.weight || 0), 0) / recommendations.length,
-    durability: recommendations.reduce((sum, r) => sum + (r.specs?.durability || 0), 0) / recommendations.length,
-  };
-
   const maxScore = Math.max(...recommendations.map(r => r.rawScore));
   const minScore = Math.min(...recommendations.map(r => r.rawScore));
-  const scoreRange = maxScore - minScore || 1;
+  const scoreRange = maxScore - minScore;
+  const normalized = recommendations.map(r => ({
+    ...r,
+    matchScore: scoreRange === 0 ? 100 : Math.round(30 + ((r.rawScore - minScore) / scoreRange) * 70),
+  })).sort((a, b) => b.matchScore - a.matchScore);
 
-  // 정규화된 점수 계산 및 상세 이유 생성
-  const normalizedRecommendations = recommendations.map(r => {
-    const matchScore = Math.round(30 + ((r.rawScore - minScore) / scoreRange) * 70);
-
-    // 스펙 비교 (평균 대비)
-    const comparisonToAvg = {
-      cushioning: Math.round((r.specs?.cushioning || 0) - avgSpecs.cushioning),
-      weight: Math.round((r.specs?.weight || 0) - avgSpecs.weight),
-      durability: Math.round((r.specs?.durability || 0) - avgSpecs.durability),
-    };
-
-    // 상세 추천 이유 생성
-    const detailedReason = generateDetailedReason(r, profile, comparisonToAvg);
-
-    return {
-      ...r,
-      matchScore,
-      comparisonToAvg,
-      detailedReason,
-    };
-  });
-
-  // 브랜드 다양성: 감점 방식 (같은 브랜드 N번째 → 점수 감점)
-  const sorted = normalizedRecommendations.sort((a, b) => b.matchScore - a.matchScore);
+  // ブランド 다양성은 유지하되 표시 점수가 음수가 되지 않게 한다.
   const brandOrder: Record<string, number> = {};
-
-  const diversified = sorted.map(r => {
+  const result = normalized.map(r => {
     brandOrder[r.brand] = (brandOrder[r.brand] || 0) + 1;
-    const penalty = brandOrder[r.brand] > 1 ? 5 * (brandOrder[r.brand] - 1) : 0;
-    return { ...r, matchScore: r.matchScore - penalty };
-  });
+    const penalty = 5 * (brandOrder[r.brand] - 1);
+    return { ...r, matchScore: Math.max(0, r.matchScore - penalty) };
+  }).sort((a, b) => b.matchScore - a.matchScore).slice(0, 10);
 
-  // 최종 정렬 후 상위 10개
-  return diversified
-    .sort((a, b) => b.matchScore - a.matchScore)
-    .slice(0, 10);
+  // ‘추천 신발 평균’은 실제 결과에 나온 신발을 기준으로 한다.
+  const avgSpecs = {
+    cushioning: result.reduce((sum, r) => sum + r.specs!.cushioning, 0) / result.length,
+    weight: result.reduce((sum, r) => sum + r.specs!.weight, 0) / result.length,
+    durability: result.reduce((sum, r) => sum + r.specs!.durability, 0) / result.length,
+  };
+  return result.map(r => {
+    const comparisonToAvg = {
+      cushioning: Math.round(r.specs!.cushioning - avgSpecs.cushioning),
+      weight: Math.round(r.specs!.weight - avgSpecs.weight),
+      durability: Math.round(r.specs!.durability - avgSpecs.durability),
+    };
+    return { ...r, comparisonToAvg, detailedReason: generateDetailedReason(r, profile, comparisonToAvg) };
+  });
 }
 
 // 상세 추천 이유 생성 함수
@@ -660,36 +651,28 @@ function generateDetailedReason(
   const parts: string[] = [];
 
   // 기본 소개
-  parts.push(`${shoe.brand} ${shoe.name}은(는) ${shoe.category} 카테고리의 신발로`);
+  parts.push(`${withJosa(`${shoe.brand} ${shoe.name}`, '은/는')} ${shoe.category} 카테고리의 신발입니다.`);
 
   // 경험 수준에 따른 설명
   if (profile.experience === 'beginner') {
-    if (shoe.specs?.cushioning && shoe.specs.cushioning >= 7) {
-      parts.push('입문자에게 필요한 충분한 쿠셔닝을 제공합니다.');
-    } else {
-      parts.push('입문자도 편하게 사용할 수 있습니다.');
-    }
-  } else if (profile.experience === 'advanced') {
-    if (shoe.biomechanics?.carbonPlate) {
-      parts.push('엘리트 러너의 기록 단축에 도움을 주는 카본 플레이트가 탑재되어 있습니다.');
-    } else {
-      parts.push('상급 러너의 훈련에 적합한 성능을 갖추고 있습니다.');
-    }
+    parts.push('입문 러너는 쿠셔닝과 착화감을 함께 확인해보세요.');
+  } else if (profile.experience === 'advanced' && shoe.biomechanics?.carbonPlate) {
+    parts.push('카본 플레이트가 탑재되어 있습니다.');
   }
 
   // 스펙 비교 설명
   const specComparisons: string[] = [];
   if (comparison.cushioning > 0) {
-    specComparisons.push(`쿠셔닝이 평균보다 ${comparison.cushioning}점 높고`);
+    specComparisons.push(`쿠셔닝이 추천 평균보다 ${comparison.cushioning}점 높습니다`);
   }
   if (comparison.weight < -10) {
-    specComparisons.push(`무게가 평균보다 ${Math.abs(comparison.weight)}g 가볍습니다`);
+    specComparisons.push(`무게가 추천 평균보다 ${Math.abs(comparison.weight)}g 가볍습니다`);
   } else if (comparison.durability > 50) {
-    specComparisons.push(`내구성이 평균보다 ${comparison.durability}km 더 뛰어납니다`);
+    specComparisons.push(`예상 내구성이 추천 평균보다 ${comparison.durability}km 길게 입력되어 있습니다`);
   }
 
   if (specComparisons.length > 0) {
-    parts.push(specComparisons.join(', ') + '.');
+    parts.push(specComparisons.join('. ') + '.');
   }
 
   // 부상 관련 설명
@@ -706,7 +689,7 @@ function generateDetailedReason(
     });
     if (protectedInjuries.length > 0) {
       const names = protectedInjuries.map(i => injuryLabels[i]).join(', ');
-      parts.push(`${names} 예방에 효과적인 설계가 적용되어 있습니다.`);
+      parts.push(`${names} 관련 신발 데이터에서 좋음 이상의 평가를 받았습니다.`);
     }
   }
 

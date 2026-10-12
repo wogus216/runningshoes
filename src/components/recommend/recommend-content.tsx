@@ -2,13 +2,11 @@
 
 import { useEffect, useState } from 'react';
 import { RotateCcw, Sparkles, ArrowUpRight, Activity } from 'lucide-react';
-import type { CardShoe } from '@/lib/data/shoes';
 import { loadCardShoes } from '@/lib/shoes-card-client';
-import { recommendShoes, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
+import { recommendShoes, isUserProfile, type UserProfile, type RecommendedShoe } from '@/lib/recommendation';
 import { Questionnaire } from '@/components/recommend/questionnaire';
 import { ResultCard } from '@/components/recommend/result-card';
 import { InjuryAnalysis } from '@/components/recommend/injury-analysis';
-import { RunnerArchetypeCard } from '@/components/recommend/runner-archetype-card';
 import { recordRecommend } from '@/lib/recent';
 
 interface RecommendContentProps {
@@ -21,53 +19,63 @@ const RECOMMEND_PROFILE_KEY = 'recommend-profile';
 export function RecommendContent({ totalCount }: RecommendContentProps) {
   const [profile, setProfile] = useState<UserProfile | null>(null);
   const [recommendations, setRecommendations] = useState<RecommendedShoe[]>([]);
-  // 결과 화면(InjuryAnalysis)용 — 퀴즈 완료 시점에 지연 로드로 채워진다
-  const [loadedShoes, setLoadedShoes] = useState<CardShoe[]>([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [failedProfile, setFailedProfile] = useState<UserProfile | null>(null);
 
-  // 마운트 시: 신발 데이터를 미리 받아두고, 직전 세션에 완료한 설문이 있으면 결과를 복원한다.
-  // (결과 화면에서 신발 상세로 갔다가 뒤로가기 했을 때 설문을 다시 하지 않도록)
+  // 데이터를 미리 받되 실패를 ‘조건에 맞는 신발 없음’으로 표시하지 않는다.
   useEffect(() => {
     let cancelled = false;
-    void (async () => {
-      const allShoes = await loadCardShoes().catch(() => [] as CardShoe[]);
-      if (cancelled) return;
-      let saved: string | null = null;
-      try {
-        saved = sessionStorage.getItem(RECOMMEND_PROFILE_KEY);
-      } catch {
-        /* sessionStorage 접근 불가(프라이빗 모드 등) 시 복원 생략 */
+    let savedProfile: UserProfile | null = null;
+    try {
+      const saved = sessionStorage.getItem(RECOMMEND_PROFILE_KEY);
+      if (saved) {
+        const parsed: unknown = JSON.parse(saved);
+        if (isUserProfile(parsed)) savedProfile = parsed;
+        else sessionStorage.removeItem(RECOMMEND_PROFILE_KEY);
       }
-      if (!saved) return;
+    } catch {
+      /* 저장소 접근 불가 또는 손상된 값이면 새 설문으로 시작 */
+    }
+    if (savedProfile) setIsLoading(true);
+    void (async () => {
       try {
-        const savedProfile = JSON.parse(saved) as UserProfile;
-        setLoadedShoes(allShoes);
+        const allShoes = await loadCardShoes();
+        if (cancelled || !savedProfile) return;
         setRecommendations(recommendShoes(allShoes, savedProfile));
         setProfile(savedProfile);
       } catch {
-        /* 손상된 값이면 무시 */
+        if (!cancelled && savedProfile) setFailedProfile(savedProfile);
+      } finally {
+        if (!cancelled && savedProfile) setIsLoading(false);
       }
     })();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, []);
 
   const handleComplete = async (userProfile: UserProfile) => {
-    const allShoes = await loadCardShoes();
-    const results = recommendShoes(allShoes, userProfile);
-    setLoadedShoes(allShoes);
-    setRecommendations(results);
-    setProfile(userProfile);
+    if (isLoading) return;
+    setIsLoading(true);
+    setFailedProfile(null);
     try {
-      sessionStorage.setItem(RECOMMEND_PROFILE_KEY, JSON.stringify(userProfile));
+      const allShoes = await loadCardShoes();
+      setRecommendations(recommendShoes(allShoes, userProfile));
+      setProfile(userProfile);
+      try {
+        sessionStorage.setItem(RECOMMEND_PROFILE_KEY, JSON.stringify(userProfile));
+      } catch {
+        /* 저장 실패 시에도 이번 결과 표시 */
+      }
     } catch {
-      /* 저장 실패 시에도 이번 세션 결과 표시엔 문제없다 */
+      setFailedProfile(userProfile);
+    } finally {
+      setIsLoading(false);
     }
   };
 
   const handleReset = () => {
     setProfile(null);
     setRecommendations([]);
+    setFailedProfile(null);
     try {
       sessionStorage.removeItem(RECOMMEND_PROFILE_KEY);
     } catch {
@@ -131,7 +139,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
             <div className="space-y-3">
               <div className="inline-flex items-center gap-2 rounded-full bg-sky-50 px-4 py-2 text-sky-700">
                 <Sparkles className="h-5 w-5" />
-                <span className="text-sm font-semibold">AI 맞춤 추천</span>
+                <span className="text-sm font-semibold">맞춤 러닝화 추천</span>
               </div>
               {/*
                 모바일 28px — 36px 이면 316px 컨테이너에서 두 줄로 접히는데,
@@ -150,6 +158,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
             {profile && (
               <button
                 onClick={handleReset}
+                disabled={isLoading}
                 className="inline-flex items-center gap-2 rounded-full border border-sky-100 bg-white/82 px-4 py-2 text-sm font-medium text-secondary transition hover:bg-white hover:text-primary"
               >
                 <RotateCcw className="h-4 w-4" />
@@ -178,13 +187,19 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
         </div>
       </section>
 
+        {failedProfile && (
+          <div role="alert" className="rounded-[4px] border border-amber-200 bg-amber-50 p-4 text-sm text-amber-900">
+            <p>신발 데이터를 불러오지 못했어요. 연결 상태를 확인한 뒤 다시 시도해주세요.</p>
+            <button type="button" disabled={isLoading} onClick={() => handleComplete(failedProfile)} className="mt-3 rounded-full border border-amber-900/20 px-4 py-2 font-semibold">다시 불러오기</button>
+          </div>
+        )}
+        {isLoading && <p role="status" className="text-sm text-secondary">추천 신발을 불러오는 중이에요.</p>}
+
         {/* 설문 또는 결과 */}
         {!profile ? (
-          <Questionnaire onComplete={handleComplete} />
+          <Questionnaire onComplete={handleComplete} isLoading={isLoading} />
         ) : (
           <div className="space-y-6">
-            <RunnerArchetypeCard profile={profile} />
-
             <section className="rounded-[4px] border border-[var(--accent-line)] bg-white/84 p-6 backdrop-blur">
               <p className="mb-4 text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">
                 Profile Snapshot
@@ -210,7 +225,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
 
             {/* 부상별 분석 */}
             {profile.injuries.length > 0 && (
-              <InjuryAnalysis injuries={profile.injuries} allShoes={loadedShoes} />
+              <InjuryAnalysis injuries={profile.injuries} allShoes={recommendations} />
             )}
 
 
@@ -220,6 +235,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Recommendation Board</p>
                   <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">추천 신발</h2>
+                  <p className="mt-2 text-sm text-secondary">매칭 점수는 선택 조건 안의 후보를 비교한 상대 점수예요. 예산 내 후보가 적으면 가능한 신발만 보여드려요.</p>
                 </div>
                 <div className="grid gap-4 md:grid-cols-2">
                   {recommendations.map((shoe, idx) => (

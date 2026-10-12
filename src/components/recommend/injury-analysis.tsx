@@ -29,7 +29,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
         </div>
         <div>
           <h3 className="text-lg font-bold text-primary">부상별 맞춤 분석</h3>
-          <p className="text-sm text-secondary">선택하신 부상에 맞는 신발과 팁을 확인하세요</p>
+          <p className="text-sm text-secondary">설문 조건을 통과한 추천 신발에서 부상별 평가를 확인하세요</p>
         </div>
       </div>
 
@@ -51,6 +51,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
             >
               <button
                 onClick={() => setExpandedInjury(isExpanded ? null : injuryKey)}
+                aria-expanded={isExpanded}
                 className="w-full flex items-center justify-between p-4 text-left"
               >
                 <div className="flex items-center gap-3">
@@ -77,7 +78,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                   <div>
                     <p className="text-sm font-semibold text-primary mb-3 flex items-center gap-2">
                       <Star className="h-4 w-4 text-sky-700" />
-                      {injury.name} 예방에 좋은 신발 TOP 3
+                      {injury.name} 이력 고려 후보 TOP 3
                     </p>
                     {topShoes.length > 0 ? (
                       <div className="space-y-2">
@@ -118,7 +119,7 @@ export function InjuryAnalysis({ injuries, allShoes }: InjuryAnalysisProps) {
                       </div>
                     ) : (
                       <p className="text-sm text-secondary p-3 bg-surface rounded-[4px]">
-                        해당 부상에 특화된 신발 데이터를 준비 중입니다.
+                        현재 예산·용도·발형 조건 안에서 좋음 이상으로 평가된 후보가 없습니다.
                       </p>
                     )}
                   </div>
