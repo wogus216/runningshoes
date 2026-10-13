@@ -817,8 +817,8 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: 'mexicana-run-with-pepsi',
     slug: 'mexicana-run-with-pepsi',
-    title: '멕시카나런 with 펩시 접수 안내 | 11월 7일 파주 5km, 2만원에 선착순 500명',
-    description: '2026 멕시카나런 with 펩시는 11월 7일 오전 8시 30분 파주출판도시에서 열리는 5km 펀런입니다. 접수는 10월 12~14일, 참가비 2만원, 선착순 500명입니다. 공식 완주 기프트에는 멕시카나 3만원 모바일 금액권이 안내돼 있습니다. 신청 방법과 미공개 혜택 조건을 구분해 정리했습니다.',
+    title: '멕시카나런 with 펩시 접수 마감 | 11월 7일 파주 5km, 참가비 2만원',
+    description: '2026 멕시카나런 with 펩시는 11월 7일 오전 8시 30분 파주출판도시에서 열리는 5km 펀런입니다. 10월 13일 공식 공지와 이벤터스에서 인원 마감을 확인했습니다. 참가비는 2만원, 정원은 500명입니다. 공식 완주 기프트에는 멕시카나 3만원 모바일 금액권이 안내돼 있습니다. 신청 방법과 미공개 혜택 조건을 구분해 정리했습니다.',
     thumbnail: '/images/blog/mexicana-run-with-pepsi.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-07',
@@ -830,37 +830,38 @@ export const posts_2026_10: BlogPost[] = [
       startDate: '2026-11-07T08:30:00+09:00',
       location: { name: '파주출판도시 일대' },
       url: 'https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&mode=view',
-      offers: [{ name: '5km FUN RUN', priceKrw: 20000, availabilityEnds: '2026-10-14', url: 'https://www.mexicana.co.kr/' }],
+      offers: [{ name: '5km FUN RUN', priceKrw: 20000, availabilityEnds: '2026-10-15', url: 'https://event-us.kr/mexicanarunwithpepsi/event/135419' }],
     },
     raceMeta: {
       displayTitle: '멕시카나런, 파주에서 5km 치킨레이스',
-      displaySubtitle: '11월 7일 토요일 — 2만원 · 선착순 500명',
+      displaySubtitle: '11월 7일 토요일 — 2만원 · 접수 마감',
       raceDate: '2026-11-07',
       registrationStart: '2026-10-12',
-      registrationEnd: '2026-10-14',
-      registrationVia: '멕시카나 홈페이지 — 공식 포스터가 안내한 신청 경로',
+      registrationEnd: '2026-10-15',
+      registrationVia: '이벤터스 — 10월 13일 인원 마감 확인',
       action: {
-        what: '10월 12~14일 공식 홈페이지에서 신청',
-        how: '정원은 선착순 500명입니다. 공식 공지에서 참가 신청 경로를 확인하세요. 10월 7일 확인한 포스터에는 접수 시작 시각과 별도 결제 링크가 적혀 있지 않습니다.',
+        what: '접수 마감 — 기존 신청 내역 확인',
+        how: '10월 13일 공식 공지의 SOLD OUT·접수 마감 안내와 이벤터스의 인원마감을 확인했습니다. 신청자는 이벤터스 마이페이지에서 신청 내역과 취소·환불 조건을 확인하세요.',
       },
       facts: [
         { label: '대회일', value: '11월 7일', sub: '토요일 · 08:30 출발' },
         { label: '장소', value: '파주출판도시', sub: '공식 표기: 파주출판도시 일대' },
         { label: '종목', value: '5km FUN RUN', sub: '기록 측정 여부는 미확인' },
         { label: '참가비', value: '20,000원', sub: '선착순 500명' },
-        { label: '접수', value: '10/12~14', sub: '시작·마감 시각 미고지' },
+        { label: '접수', value: '인원 마감', sub: '10월 13일 공식 확인' },
       ],
       highlights: [
-        { badge: '500명', title: '접수 기간은 사흘, 정원은 선착순입니다', desc: '10월 12일(월)부터 14일(수)까지 신청을 받습니다. <strong>선착순 500명</strong>이므로 마지막 날까지 자리가 남는다는 보장은 없습니다. 다만 시작 시각은 공식 포스터에 없으니 임의로 자정이나 오전 10시를 가정하지 마세요.' },
+        { badge: '마감', title: '참가 신청이 마감됐습니다', desc: '10월 13일 공식 공지에 <strong>SOLD OUT·접수 마감</strong>이 표시됐고, 실제 신청처인 이벤터스도 인원마감 상태입니다. 이벤터스의 신청 기간 표기는 10월 12일 10:00~15일 15:00이지만 정원이 먼저 마감됐습니다.' },
         { badge: '3만원', title: '금액권은 완주 기프트, 다른 구성은 아직 물음표입니다', desc: '공식 포스터의 <strong>완주 기프트에 멕시카나 모바일 금액권 30,000원</strong>이 안내돼 있습니다. 스타트 패키지와 다른 기프트, 애프터 파티의 상세 구성은 대부분 물음표로 가렸습니다. 금액권 사용·수령 조건은 신청 전에 확인해야 합니다.' },
       ],
     },
     faqs: [
-      { question: '멕시카나런 접수는 언제, 어디서 하나요?', answer: '공식 포스터 기준 2026년 10월 12~14일 멕시카나 홈페이지에서 신청합니다. 선착순 500명이며 접수 시작 시각과 별도 결제 링크는 10월 7일 확인한 공지에 없었습니다.' },
+      { question: '멕시카나런 접수는 언제, 어디서 하나요?', answer: '10월 13일 공식 공지에서 접수 마감을, 실제 신청처인 이벤터스에서 인원마감을 확인했습니다. 기존 신청자는 이벤터스 마이페이지에서 신청 내역을 확인하세요.' },
       { question: '참가비와 대회 날짜는 어떻게 되나요?', answer: '참가비는 20,000원입니다. 11월 7일 토요일 오전 8시 30분 파주출판도시 일대에서 출발하는 5km 펀런입니다.' },
       { question: '멕시카나 3만원 금액권을 주나요?', answer: '공식 포스터의 완주 기프트에 멕시카나 모바일 금액권 30,000원이 안내돼 있습니다. 지급 절차·유효기간·사용 조건은 포스터에서 확인되지 않아 신청 페이지의 최종 안내를 확인해야 합니다.' },
     ],
     content: `
+<div class="callout info"><strong>10월 13일 갱신: 접수 마감</strong> — 멕시카나 공식 공지에 SOLD OUT과 참가신청 접수 마감이 표시됐습니다. 공식 공지가 연결한 <a href="https://event-us.kr/mexicanarunwithpepsi/event/135419" target="_blank" rel="noopener noreferrer">이벤터스 신청 페이지</a>도 인원마감 상태입니다. 신청 기간 표기는 10월 12일 10:00~15일 15:00으로 기존 포스터(12~14일)와 다르지만, 정원이 먼저 마감됐습니다. 기존 신청자는 이벤터스 마이페이지에서 신청 내역과 취소·환불 규정을 확인하세요. 행사별 환불 마감과 금액권 사용·수령 세부 조건은 추가 확인이 필요합니다. 아래는 10월 7일 포스터를 기준으로 작성한 행사 소개입니다.</div>
 <p>5km를 달리고 치킨과 펩시를 즐기는 가을 펀런이 파주에 열립니다. <strong>멕시카나런 with 펩시</strong>입니다. 광고 게시물만 떠돌던 단계에서 벗어나, 멕시카나가 <strong>10월 6일 공식 홈페이지에 행사 포스터</strong>를 올렸습니다.</p>
 <p>신청 전에 볼 것은 두 가지입니다. <strong>2만원에 선착순 500명</strong>이라는 접수 조건, 그리고 <strong>완주 기프트의 3만원 금액권</strong>과 아직 공개되지 않은 다른 기념품을 구분하는 것입니다. 이 글은 10월 7일 확인한 공식 포스터를 기준으로 씁니다.</p>
 
@@ -892,7 +893,7 @@ export const posts_2026_10: BlogPost[] = [
 <p>신발은 새 레이싱화를 마련하기보다 이미 길들인 데일리 러닝화가 실용적입니다. 5km 거리보다 아침 이동과 현장 대기까지 편하게 소화할 수 있는지가 선택 기준입니다.</p>
 
 <h2>확인한 출처</h2>
-<p><a href="https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&amp;mode=view" target="_blank" rel="noopener noreferrer">멕시카나 공식 「2026 멕시카나런 with 펩시」 공지</a> — 2026년 10월 6일 등록, 첨부 포스터 원문을 10월 7일 확인했습니다. 날짜·출발 시각·장소·거리·정원·참가비·신청 기간은 이 포스터 기준입니다. 혜택 상세와 접수 링크가 공개되면 갱신하겠습니다.</p>
+<p><a href="https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&amp;mode=view" target="_blank" rel="noopener noreferrer">멕시카나 공식 「2026 멕시카나런 with 펩시」 공지</a> — 2026년 10월 6일 등록, 첨부 포스터 원문을 10월 7일 확인했습니다. 날짜·출발 시각·장소·거리·정원·참가비·신청 기간은 이 포스터 기준입니다. 10월 13일 공식 공지의 접수 마감 표시와 연결된 이벤터스 신청 페이지를 추가 확인했습니다. 혜택 세부 조건은 공개 확인 시 갱신하겠습니다.</p>
 `,
   },
   {
