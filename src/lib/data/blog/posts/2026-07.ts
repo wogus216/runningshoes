@@ -4417,6 +4417,7 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'running-shoes-recommend-by-price-2026',
     slug: 'running-shoes-recommend-by-price-2026',
+    seoTitle: '러닝화 추천 2026 — 10·15·20만원대 가성비부터 카본까지',
     title: '러닝화 추천 2026 가격대별 정리 | 10만원대 가성비부터 15·20만원대, 카본까지 — 예산별 베스트',
     description: '러닝화 가격과 가성비를 예산 구간별로 정리한 추천입니다. 10만원대 가성비 입문화, 완성도 높은 모델이 몰린 15만~20만원대 데일리, 20만원대 프리미엄 쿠션, 25만원 이상 카본 레이싱화까지 — 실측 가격·무게·발볼을 기준으로 예산마다 목적별(입문·데일리·쿠션·안정·레이싱) 베스트를 골랐습니다. 비싼 신발이 항상 정답은 아닙니다.',
     thumbnail: '/images/blog/running-shoes-recommend-by-price-2026.webp',

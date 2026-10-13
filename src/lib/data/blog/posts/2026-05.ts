@@ -3035,6 +3035,7 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: 'new-balance-860-v14-vs-v15-comparison',
     slug: 'new-balance-860-v14-vs-v15-comparison',
+    seoTitle: '뉴발란스 860 v14 vs v15 비교 — 평발·4E 와이드·가격 차이',
     title: '뉴발란스 860 v14 vs v15 비교 | 4E 와이드 사라진 신상 v15 살까, 평발 4종 옵션 v14 살까',
     description: '860 v14(295g/179,000원)와 v15(330g/189,000원)을 풀데이터로 직접 비교. v15가 무거워지고(+35g) 와이드 옵션 축소(4종 → 1종) 등 후퇴한 부분 + 이중 밀도 폼·넓어진 힐 플랫폼 등 보강. 평발·과내전 한국 러너 안정화 가성비 매트릭스.',
     thumbnail: '/images/blog/new-balance-860-v14-vs-v15-comparison.webp',
@@ -3612,6 +3613,7 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: 'asics-superblast-2-vs-3-comparison',
     slug: 'asics-superblast-2-vs-3-comparison',
+    seoTitle: '아식스 슈퍼블라스트 2 vs 3 비교 — 쿠션·발볼·가격 차이',
     title: '아식스 슈퍼블라스트 2 vs 3 비교 | FF Turbo+ "템포 무기" vs FF LEAP "롱런 부드러움" — 와이드 옵션 v2 vs 스택 +3.5mm v3, 카본 없는 슈퍼슈즈 가성비',
     description: '슈퍼블라스트 2(252g/249,000원)와 3(239g/259,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. -13g 경량화 + FF Turbo+ 단일 → FF LEAP+BLAST PLUS 듀얼 폼 교체 + 스택 +3.5mm. v3가 와이드 옵션 제거된 함정과 v2 이월 가성비 시나리오, 첫 슈퍼트레이너 입문 매트릭스.',
     thumbnail: '/images/blog/asics-superblast-2-vs-3-comparison.webp',
@@ -6951,6 +6953,7 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: '2026-nike-alphafly-4-prototype',
     slug: '2026-nike-alphafly-4-prototype',
+    seoTitle: '나이키 알파플라이 4 출시일·가격 — 10월 29일 확대 발매, 한국 미정',
     title: '나이키 알파플라이 4 출시일·가격 | 9/17 선행·10/29 확대 발매, 한국은 미정 — 프로토타입 예측과의 대조',
     description: '알파플라이 4는 2026년 9월 17일 공식 발표와 함께 한정 선행 발매됐고 확대 발매는 10월 29일, 글로벌 정가는 $280입니다. 한국은 10월 6일 기준 나이키 코리아에 아직 없습니다. 나이키는 9월 30일 알파플라이 4·에이펙스(2027년 1월)·스우시플라이(2027년 2월 중국·봄 글로벌)를 "위계가 아닌 선택지"로 묶어 발표했습니다. 아래는 5월 프로토타입 단계의 예측이 공식 발표와 어떻게 갈렸는지의 기록이며, 확정 스펙은 별도 글로 안내합니다.',
     thumbnail: '/images/blog/2026-nike-alphafly-4-prototype.webp',

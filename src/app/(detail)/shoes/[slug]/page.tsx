@@ -4,6 +4,7 @@ import { getShoeBySlug, getShoes, getSimilarShoesData } from '@/lib/data/shoes';
 import { getBrandTechnologyUrl } from '@/lib/data/brands';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS, IS_PRODUCTION_DEPLOY } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
+import { shoeDescription } from '@/lib/seo/shoe-description';
 import { AdSlot } from '@/components/ads/ad-slot';
 import { isCompleteShoe } from '@/types/shoe';
 import { Breadcrumb } from '@/components/detail/breadcrumb';
@@ -66,35 +67,8 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
   const titleWeight = shoe.specs?.weight ? ` ${shoe.specs.weight}g` : '';
   const title = `${brandLabel} ${shoe.name} 후기 — ${shoe.category}${titleWeight} 사이즈·발볼·장단점`;
 
-  // 상세 설명 생성 (150-160자 권장)
-  const specs = shoe.specs;
-  const price = shoe.price?.toLocaleString();
-  const weight = specs?.weight;
-  const category = shoe.category;
-
-  // 발볼(토박스)은 사이즈 검색 인텐트가 커서 등급과 무관하게 항상 노출
-  const footWidthMap: Record<string, string> = {
-    narrow: '발볼 좁음',
-    standard: '발볼 표준',
-    wide: '발볼 넓음',
-  };
-  const footFit = shoe.koreanFootFit?.toBoxWidth ? footWidthMap[shoe.koreanFootFit.toBoxWidth] : null;
-
-  // 한글 모델명을 설명문 맨 앞에 — SERP 볼드 매칭용.
-  // shoe.description은 "Nike의 대표 맥스 쿠션..."처럼 한글 모델명을 담지 않아, 122종 전부
-  // meta description에 모델명이 빠져 있었다 (2026-08-07 렌더 HTML 전수 확인: h1 in desc = 0/11).
-  // "보메로18"로 검색해도 SERP 설명문에서 강조가 안 돼 CTR 손실. 160자 초과분은 뒤쪽 공통 문구가
-  // 잘리는데, 그건 전 페이지 동일 카피라 모델명을 앞세우는 쪽이 이득이다.
-  const descriptionParts = [
-    `${brandLabel} ${shoe.name}`,
-    shoe.description || `${shoe.brand} ${shoe.name} 후기`,
-    weight ? `무게 ${weight}g` : null,
-    footFit,
-    price ? `정가 ${price}원` : null,
-    category ? `${category} 러닝화` : null,
-  ].filter(Boolean);
-
-  const description = `${descriptionParts.join(' · ')} — 사이즈·장단점·추천 대상까지 한국 러너 후기`.slice(0, 160);
+  // 모델명·가격·무게·발볼을 보존하고 긴 소개만 문장/단어 경계에서 줄인다.
+  const description = shoeDescription(shoe, brandLabel);
 
   // 키워드 생성
   const keywords = [

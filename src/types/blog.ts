@@ -80,6 +80,8 @@ export interface BlogPost {
   title: string;
   description: string;
   content: string;
+  /** 검색 결과용 제목. 생략하면 화면용 title을 사용한다. */
+  seoTitle?: string;
   author: string;
   publishedAt: string;
   updatedAt?: string;

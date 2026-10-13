@@ -3617,6 +3617,7 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'asics-running-shoes-lineup-tier-guide-2026',
     slug: 'asics-running-shoes-lineup-tier-guide-2026',
+    seoTitle: '아식스 러닝화 계급도 2026 — 입문·쿠션·안정화·카본 라인업',
     title: '아식스 러닝화 계급도 2026 — 카야노·님버스·노바블라스트·메타스피드, GEL부터 FF Blast까지 전체 라인업 | 입문부터 슈퍼슈즈까지 한 장 정리',
     description:
       '아식스 러닝화 18종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 39.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',

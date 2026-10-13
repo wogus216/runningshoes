@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: post.title,
+    title: post.seoTitle || post.title,
     description: post.description,
     keywords: post.tags.join(', '),
     authors: [{ name: post.author }],

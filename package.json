@@ -24,6 +24,8 @@
     "postbuild": "next-sitemap && node scripts/check-ads.js",
     "prepare": "husky",
     "gsc": "tsx scripts/gsc-report.ts",
+    "indexnow": "node scripts/indexnow.mjs",
+    "test:indexnow": "node --test scripts/__tests__/indexnow.test.mjs",
     "naver:rank": "tsx scripts/naver-rank.ts",
     "gsc:pages": "tsx scripts/gsc-pages.ts",
     "popular": "tsx scripts/ga-popular.ts",

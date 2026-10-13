@@ -6,7 +6,7 @@ import { BlogList } from '@/components/blog/blog-list';
 
 export const metadata: Metadata = {
   title: '러닝 가이드 & 팁',
-  description: '러닝화 선택 가이드, 러닝 팁, 부상 예방법, 신제품 리뷰 등 러너를 위한 유용한 정보를 제공합니다.',
+  description: '한국 러너를 위한 러닝화 리뷰·브랜드 계급도·모델별 비교와 대회 접수 소식을 모았습니다. 실측 스펙, 한국 정가, 사이즈·발볼 정보를 바탕으로 신발을 고르고, 훈련 팁과 마라톤 신청 가이드를 주제별로 찾아보세요.',
   keywords: '러닝 가이드, 러닝화 선택, 러닝 팁, 부상 예방, 러닝화 리뷰',
   alternates: { canonical: '/blog' },
 };

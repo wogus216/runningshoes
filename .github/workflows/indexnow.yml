@@ -1,0 +1,55 @@
+name: IndexNow after deployment
+
+on:
+  check_run:
+    types: [completed]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: indexnow-production
+  cancel-in-progress: false
+
+jobs:
+  notify:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.check_run.app.slug == 'cloudflare-workers-and-pages' &&
+       github.event.check_run.name == 'Workers Builds: runningshoes' &&
+       github.event.check_run.conclusion == 'success')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ github.event.check_run.head_sha || github.sha }}
+          fetch-depth: 0
+
+      - name: main 배포인지 확인
+        id: production
+        run: |
+          if git merge-base --is-ancestor HEAD origin/main; then
+            echo 'main=true' >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-node@v6
+        if: steps.production.outputs.main == 'true'
+        with:
+          node-version: '22'
+          cache: npm
+
+      - uses: actions/cache@v4
+        if: steps.production.outputs.main == 'true'
+        with:
+          path: .cache/indexnow-sha
+          key: indexnow-${{ github.event.check_run.head_sha || github.sha }}
+          restore-keys: indexnow-
+
+      - name: 의존성 설치
+        if: steps.production.outputs.main == 'true'
+        run: npm ci
+
+      - name: 배포된 변경 URL 통지
+        if: steps.production.outputs.main == 'true'
+        run: npm run indexnow

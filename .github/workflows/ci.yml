@@ -32,6 +32,9 @@ jobs:
       - name: 테스트 (vitest)
         run: npm test
 
+      - name: IndexNow 변경 URL 검증
+        run: npm run test:indexnow
+
       - name: 린트 (eslint)
         run: npm run lint
 
