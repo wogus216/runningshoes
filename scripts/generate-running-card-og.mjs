@@ -34,5 +34,5 @@ const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" v
 </svg>`;
 
 const output = fileURLToPath(new URL('public/images/running-card-og-v1.png', root));
-await sharp(Buffer.from(svg)).png({ compressionLevel: 9 }).toFile(output);
+await sharp(Buffer.from(svg)).png({ compressionLevel: 9, palette: true, quality: 90 }).toFile(output);
 console.log(`OG 이미지 생성: ${output} (1200×630)`);
