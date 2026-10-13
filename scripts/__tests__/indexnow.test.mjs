@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { changedDataRoutes, changedRoutes } from '../indexnow.mjs';
+import { changedDataRoutes, changedRoutes, gitText } from '../indexnow.mjs';
 
 test('월별 글 하나를 고치면 해당 글만 통지한다', () => {
   const before = `export const posts = [{slug: 'one', content: 'old'}, {slug: 'two', content: 'unchanged'}];`;
@@ -25,4 +25,10 @@ test('일정 데이터는 id를 사용하고, sitemap에 없는 noindex URL은 �
 
 test('공유 신발 설명 변경은 색인 가능한 신발 URL만 대상으로 한다', () => {
   assert.deepEqual(changedRoutes([{file: 'src/lib/seo/shoe-description.ts'}], ['https://allrunabout.com/shoes/one', 'https://allrunabout.com/blog/one']), ['https://allrunabout.com/shoes/one']);
+});
+
+test('큰 월별 원본도 기본 1MB 버퍼 제한에 잘리지 않는다', () => {
+  const source = gitText('show', 'HEAD:src/lib/data/blog/posts/2026-06.ts');
+  assert.ok(Buffer.byteLength(source) > 1024 * 1024);
+  assert.ok(source.trimEnd().endsWith('];'));
 });

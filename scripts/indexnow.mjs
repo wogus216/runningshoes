@@ -7,7 +7,8 @@ import ts from 'typescript';
 
 const SITE = 'https://allrunabout.com';
 const CACHE = '.cache/indexnow-sha';
-const git = (...args) => execFileSync('git', args, { encoding: 'utf8' }).trim();
+export const gitText = (...args) => execFileSync('git', args, { encoding: 'utf8', maxBuffer: 32 * 1024 * 1024 }).trim();
+const git = gitText;
 
 export function dataEntries(source, field) {
   const file = ts.createSourceFile('data.ts', source, ts.ScriptTarget.Latest, true);
@@ -90,9 +91,13 @@ async function main() {
     return git('show', `${ref}:${file}`);
   };
   const changes = files.map(file => ({ file, before: readAt(base, file), after: readAt(head, file) }));
-  const urls = await sitemapUrls();
-  const routes = changedRoutes(changes, urls);
+  const sitemapFile = args.find(a => a.startsWith('--sitemap-file='))?.slice(15);
+  const urls = sitemapFile
+    ? [...readFileSync(sitemapFile, 'utf8').matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1].replaceAll('&amp;', '&'))
+    : await sitemapUrls();
+  const routes = !baseArg && !existsSync(CACHE) ? urls : changedRoutes(changes, urls);
   console.log(`IndexNow: ${routes.length} URL (${base.slice(0, 8)} → ${head.slice(0, 8)})`);
+  if (sitemapFile && !args.includes('--dry-run')) throw new Error('--sitemap-file은 --dry-run에서만 사용할 수 있습니다.');
   if (args.includes('--dry-run')) { console.log(routes.join('\n')); return; }
   if (routes.length) {
     const key = readFileSync('public/indexnow-key.txt', 'utf8').trim();
