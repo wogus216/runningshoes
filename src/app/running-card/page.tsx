@@ -2,8 +2,8 @@ import type { Metadata, Viewport } from 'next';
 import { RunningCardLoader } from '@/components/running-card/running-card-loader';
 
 const title = '러닝카드 | 나는 어떤 러너일까? — 올런바웃';
-const description = '나는 어떤 러너일까? 지난 28일의 거리·횟수·페이스로 나의 러닝 유형과 강점, 다음 러닝을 위한 조언을 확인하세요. 나를 닮은 신화 속 인물과 나만의 러닝카드를 만들어 친구에게 공유해 보세요.';
-const ogImage = '/images/running-card-og-v1.png';
+const description = '나는 어떤 러너일까? 지난 28일의 거리·횟수·페이스로 나의 러닝 유형과 강점, 다음 러닝을 위한 조언을 확인하세요. 기록으로 완성한 나만의 러닝 메달과 분석 카드를 친구에게 공유해 보세요.';
+const ogImage = '/images/running-card-og-v2.png';
 
 export const metadata: Metadata = {
   title: { absolute: title },
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
       url: ogImage,
       width: 1200,
       height: 630,
-      alt: '나는 어떤 러너일까? 지난 28일의 기록으로 만드는 나만의 러닝카드',
+      alt: '나는 어떤 러너일까? 지난 28일의 기록으로 만드는 나만의 러닝 메달',
       type: 'image/png',
     }],
   },
