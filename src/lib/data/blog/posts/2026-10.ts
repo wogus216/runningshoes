@@ -5,7 +5,7 @@ export const posts_2026_10: BlogPost[] = [
     id: 'garmin-vo2max-estimate-guide',
     slug: 'garmin-vo2max-estimate-guide',
     title: '가민 VO₂ Max 떨어지는 이유 | 워치 추정치와 실제 체력, 이렇게 구분하세요',
-    description: '꾸준히 뛰는데 가민 VO₂ Max가 내려갔다면 무엇부터 확인해야 할까요? 심박수·속도로 계산하는 워치 추정치와 호흡가스 검사값의 차이, 더위·고도·설정·측정 조건, 가민과 애플워치의 갱신 조건을 공식 매뉴얼과 INTERLIVE 연구로 정리했습니다.',
+    description: '꾸준히 뛰는데 가민 VO₂ Max가 내려갔다면 날씨·코스, 최대심박 설정, 심박·GPS 기록, 실제 달리기 상태부터 확인하세요. 워치 추정치와 호흡가스 검사의 차이, 가민·애플워치의 갱신 조건을 공식 매뉴얼과 연구로 설명합니다.',
     thumbnail: '/images/blog/garmin-vo2max-estimate-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-14',
@@ -25,8 +25,8 @@ export const posts_2026_10: BlogPost[] = [
 <li><strong>같은 조건의 추이와 실제 달리기를 함께 봅니다.</strong> 하루 숫자에 맞춰 훈련 강도를 바꾸기보다, 비슷한 페이스에서의 심박과 훈련 수행을 같이 확인하세요.</li>
 </ul></div>
 
-<p>훈련은 꾸준히 했는데 러닝을 저장하자 VO₂ Max가 내려갑니다. 대회 준비가 잘못되고 있는 것인지, 쉬어야 하는 것인지 신경 쓰이죠. 이때 먼저 구분할 것은 <strong>몸의 능력과 워치가 그 능력을 계산한 값</strong>입니다. 둘은 연결돼 있지만 같은 방식으로 얻은 숫자는 아닙니다.</p>
-<p>이 글의 중심은 <strong>추정치와 실제 수행의 구분</strong>입니다. 숫자를 무시하자는 뜻은 아닙니다. 숫자가 왜 달라졌는지 확인하고, 훈련 판단에 어느 정도 반영할지 정하자는 이야기입니다.</p>
+<p>꾸준히 뛰었는데 러닝을 저장하자 VO₂ Max가 내려갔습니다. 대회 준비가 잘못되고 있는 건지 신경 쓰이죠. 워치는 심박수와 속도 등으로 체력을 추정하기 때문에, <strong>한 번의 하락만으로 체력이 떨어졌다고 단정하기는 어렵습니다.</strong></p>
+<p>훈련 강도를 바꾸기 전에 그날의 날씨와 코스, 워치 설정, 활동 기록을 살펴보세요. 비슷한 조건에서 달린 페이스·심박과 체감 부담까지 비교하면 숫자를 해석할 자료가 생깁니다.</p>
 
 <h2>VO₂ Max는 무엇을 말하는 숫자인가</h2>
 <p>VO₂ Max는 운동할 때 몸이 사용할 수 있는 <strong>최대 산소 섭취 능력</strong>입니다. 러닝 워치에서는 보통 체중 1kg당 1분에 사용할 수 있는 산소량인 <strong>mL/kg/min</strong>으로 표시합니다. 심장·폐가 산소를 전달하고 근육이 활용하는 능력을 보는 심폐 체력 지표입니다.</p>
@@ -34,31 +34,31 @@ export const posts_2026_10: BlogPost[] = [
 <table><thead><tr><th>구분</th><th>호흡가스 검사</th><th>러닝 워치</th></tr></thead><tbody>
 <tr><td>얻는 방법</td><td>운동 중 호흡가스를 분석</td><td>심박·속도 등의 입력 정보로 추정</td></tr>
 <tr><td>확인할 것</td><td>검사 방식·운동 조건</td><td>기기·설정·갱신 조건·기록 품질</td></tr>
-<tr><td>이 글에서의 활용</td><td>추정값과 구별하는 기준</td><td>실제 수행과 함께 읽는 참고 지표</td></tr>
+<tr><td>결과를 읽는 기준</td><td>검사 방식과 조건을 함께 확인</td><td>같은 기기의 추이와 실제 달리기를 비교</td></tr>
 </tbody></table>
-<p><small>측정·추정 방식은 <a href="https://www.firstbeat.com/en/science-and-physiology/fitness-level/" target="_blank" rel="noopener noreferrer">Firstbeat 공식 설명</a>과 <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">INTERLIVE 연구</a>를 대조했습니다.</small></p>
+<p><small>출처: <a href="https://www.firstbeat.com/en/science-and-physiology/fitness-level/" target="_blank" rel="noopener noreferrer">Firstbeat 공식 설명</a> · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">INTERLIVE 연구</a>.</small></p>
 
 <h2>숫자가 떨어졌을 때 먼저 살필 네 가지</h2>
 <h3>1. 같은 길을 같은 환경에서 뛰었는가</h3>
 <p>평지에서 선선하게 달린 기록과 더운 날 언덕에서 달린 기록을 그대로 나란히 놓으면 해석이 어렵습니다. Garmin은 고온과 고도가 훈련 수행에 영향을 주며, 고도에 노출된 동안 VO₂ Max가 일시적으로 내려갈 수 있다고 안내합니다.</p>
 <p>포러너 970에는 <strong>22°C 초과·고도 800m 초과</strong> 환경에서 추정치와 훈련 상태를 보정하는 기능이 있습니다. 더위 적응 기능은 GPS 활동과 연결된 휴대전화의 날씨 정보가 필요합니다. 이 기준은 해당 모델의 기능 조건이며, 모든 워치가 같은 보정을 한다는 뜻은 아닙니다.</p>
-<p>숫자가 달라진 러닝의 코스·기온·고도를 먼저 확인하세요. 도심 평지 이지런과 산길 트레일을 같은 테스트로 취급하지 않는 것만으로도 해석의 출발점이 달라집니다. <a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-70386BCC-5682-4C5C-9A87-C32AF9B6473B.html" target="_blank" rel="noopener noreferrer">Garmin 환경 보정 안내</a></p>
+<p>숫자가 달라진 날의 코스·기온·고도를 이전 기록과 비교하세요. 도심 평지 이지런과 산길 트레일은 달리는 조건이 다릅니다. <a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-70386BCC-5682-4C5C-9A87-C32AF9B6473B.html" target="_blank" rel="noopener noreferrer">Garmin 환경 보정 안내</a></p>
 
 <h3>2. 최대심박과 사용자 정보가 맞는가</h3>
-<p>포러너 970 매뉴얼은 정확도를 위해 <strong>사용자 프로필과 최대심박 설정</strong>을 확인하라고 안내합니다. 처음에는 러닝 수행을 학습하기 위해 여러 차례의 기록이 필요할 수 있습니다. 새 워치를 쓰기 시작한 직후의 숫자도 이 맥락에서 읽어야 합니다.</p>
-<p>설정이 바뀐 시점과 숫자가 바뀐 시점이 겹치는지 살펴보세요. 다만 숫자를 높이기 위해 최대심박을 임의로 바꾸면 비교 기준 자체를 바꾸는 셈입니다. 입력 정보의 정확성을 확인하는 것이 목적입니다.</p>
+<p>포러너 970 매뉴얼은 정확도를 위해 <strong>사용자 프로필과 최대심박 설정</strong>을 확인하라고 안내합니다. 새 워치는 러닝 수행을 학습하는 데 여러 차례의 기록이 필요할 수 있어 초기 추정값이 부정확해 보일 수 있습니다.</p>
+<p>설정이 바뀐 날부터 숫자가 달라졌는지 살펴보세요. 최대심박은 본인에게 맞는 값인지 확인하되, VO₂ Max를 높이려고 임의로 조정하지 마세요.</p>
 
 <h3>3. 심박·GPS 기록에 이상한 구간이 있는가</h3>
-<p>심박과 속도가 계산의 입력이라면, 갑자기 튀는 심박이나 끊긴 GPS 궤적도 확인 대상입니다. Firstbeat가 신뢰할 수 있는 구간을 선별한다고 설명하는 만큼, <strong>원본 그래프를 보지 않고 마지막 숫자만 읽는 방식</strong>은 정보가 부족합니다.</p>
-<p>기록이 어색한 날은 활동 그래프와 기기 착용 상태를 먼저 확인하고, 기기 매뉴얼의 측정 안내를 따르세요. 이 점검으로 원인이 확정되는 것은 아니지만 훈련을 바꾸기 전에 입력 데이터를 검토할 수 있습니다.</p>
+<p>활동 기록을 열어 <strong>심박이 갑자기 튀거나 GPS 궤적이 끊긴 구간</strong>이 있는지 살펴보세요. 심박과 속도는 추정에 쓰이는 데이터이며, Firstbeat는 신뢰할 수 있는 구간을 골라 계산한다고 설명합니다.</p>
+<p>기록이 어색하다면 워치 착용 상태와 매뉴얼의 측정 안내도 확인하세요. 그래프 이상만으로 하락 원인을 확정할 수는 없지만, 훈련을 바꾸기 전에 점검할 항목입니다.</p>
 
 <h3>4. 숫자만 달라졌는가, 달리기도 달라졌는가</h3>
-<p>워치 숫자는 내려갔는데 비슷한 조건의 러닝을 계획대로 수행하고 있다면, 그것도 함께 기록할 정보입니다. 반대로 동일한 코스·페이스에서 심박과 체감 부담이 계속 높아지고 훈련을 반복해서 끝내기 어렵다면, 수치 변화와 실제 수행을 함께 살펴볼 이유가 있습니다.</p>
-<p><strong>이것은 원인을 판정하는 자가진단표가 아닙니다.</strong> 에디터가 권하는 기록 비교 순서입니다. 수면·피로·최근 훈련량을 함께 적어 두고 회복 상태를 검토하세요. 성능 저하가 이어지거나 몸에 이상이 느껴진다면 숫자를 만회하는 훈련보다 원인을 확인하는 것이 먼저입니다.</p>
+<p>워치 숫자가 내려갔어도 비슷한 조건의 러닝을 계획대로 마쳤다면 그 사실을 함께 기록하세요. 같은 코스·페이스에서 심박과 체감 부담이 계속 높아지고 훈련을 끝내기 어려워졌다면, 수면·피로·최근 훈련량도 살펴볼 필요가 있습니다.</p>
+<p>이 비교는 회복 상태를 살피는 참고 자료이며 하락 원인을 진단해 주지는 않습니다. 달리기 수행이 계속 저하되거나 몸에 이상이 느껴진다면 훈련 강도를 높이기 전에 원인을 확인하세요.</p>
 
-<h2>연구에서도 ‘평균이 맞는다’와 ‘내 값이 맞는다’는 달랐습니다</h2>
+<h2>평균 오차가 작아도 개인 오차는 남습니다</h2>
 <p>2022년 INTERLIVE 체계적 문헌고찰·메타분석은 <strong>14개 검증 연구, 총 403명</strong>을 살폈습니다. 운동 데이터를 쓰는 기기는 전체 집단의 평균 차이가 작았지만, 개인 수준의 추정 오차는 여전히 컸습니다. 즉, 여러 사람의 평균이 검사값과 가까워도 한 사람의 숫자를 정밀한 검사 결과처럼 다룰 수 있다는 뜻은 아닙니다.</p>
-<p>이 연구는 2021년 1월까지의 문헌을 검색했으므로 <strong>2026년 최신 워치 한 모델의 오차율로 그대로 적용할 수 없습니다.</strong> 개인 오차와 하루 사이의 변동도 다른 문제입니다. 연구 결과를 근거로 “몇 포인트 하락은 무조건 오차”라고 선을 긋지 않습니다. 여기서 가져올 핵심은 측정 방법과 개인 오차를 구분하는 태도입니다. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">연구 원문</a></p>
+<p>검색 대상은 2021년 1월까지의 문헌이라 <strong>2026년 최신 워치 한 모델의 오차율로 그대로 적용할 수 없습니다.</strong> 개인별 오차를 다룬 결과로 하루 사이의 변동까지 설명할 수도 없습니다. “몇 포인트 하락까지는 무조건 오차”라고 판단할 근거는 이 연구에 없습니다. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">연구 원문</a></p>
 
 <h2>가민과 애플워치, 갱신 조건부터 다릅니다</h2>
 <table><thead><tr><th>기기 예시</th><th>공식 안내상 조건</th><th>읽을 때 주의할 점</th></tr></thead><tbody>
@@ -69,31 +69,31 @@ export const posts_2026_10: BlogPost[] = [
 <p><small>출처: <a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-015C6746-435D-48E0-8ED8-CA2C81684E38.html" target="_blank" rel="noopener noreferrer">포러너 970 러닝 VO₂ Max 매뉴얼</a> · <a href="https://support.apple.com/en-us/108790" target="_blank" rel="noopener noreferrer">Apple 심폐 피트니스 안내</a>.</small></p>
 
 <h2>수치를 만회하기보다 훈련 목적을 지키세요</h2>
-<p>“최대심박 70% 이상, 10분”은 가민의 계산 조건입니다. 모든 러닝을 그 이상으로 하라는 지시도, 수치가 떨어질 때 인터벌을 추가하라는 처방도 아닙니다. 회복을 위해 잡은 날까지 숫자에 맞춰 강하게 바꾸면 원래 훈련 계획과 멀어집니다.</p>
+<p>포러너 970의 “최대심박 70% 이상, 10분”은 추정치를 갱신하는 조건입니다. 회복런까지 이 조건에 맞춰 강하게 뛰거나 수치를 올리려고 인터벌을 추가하는 근거로 쓰지 마세요. 그날의 훈련 목적에 맞는 강도를 지키세요.</p>
 <p>훈련 기록에는 <strong>코스·날씨, 페이스·심박, 체감 부담, 수면·피로</strong>를 함께 남겨 보세요. 같은 기기에서 비슷한 조건으로 누적한 추이와 실제 러닝을 비교할 자료가 됩니다. 한 번의 하락보다 반복되는 변화가 판단에 더 많은 맥락을 줍니다.</p>
-<p>쉬운 러닝의 목적이 헷갈린다면 <a href="/blog/recovery-run-vs-lsd-guide-2026">회복런과 LSD의 차이</a>, 장거리 훈련을 구성하려면 <a href="/blog/lsd-training-beginner-guide-korea">초보 러너 LSD 가이드</a>를 함께 보세요. 워치 숫자를 읽는 법과 훈련 계획을 짜는 법을 연결하되, 하나의 수치가 계획 전체를 대신하게 하지는 마세요.</p>
+<p>회복을 위한 러닝과 장거리 훈련의 강도를 구분하고 싶다면 <a href="/blog/recovery-run-vs-lsd-guide-2026">회복런과 LSD의 차이</a>를 보세요. 장거리 훈련을 처음 계획한다면 <a href="/blog/lsd-training-beginner-guide-korea">초보 러너 LSD 가이드</a>가 도움이 됩니다.</p>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq"><p class="faq-q">Q. 가민 VO₂ Max와 애플워치 수치 중 무엇이 정답인가요?</p><p class="faq-a">A. 두 기기의 숫자만으로 정답을 고르기 어렵습니다. 계산 조건과 입력 정보가 다르며 둘 다 추정치입니다. 같은 기기의 추이를 먼저 보고, 정확한 평가가 필요한 경우에는 검사 목적에 맞는 방법을 전문가와 상의하세요.</p></div>
 <div class="faq"><p class="faq-q">Q. 체력이 좋아졌는데도 숫자가 그대로일 수 있나요?</p><p class="faq-a">A. 숫자 하나가 훈련 결과의 전부를 보여주지는 않습니다. 계획한 러닝을 수행하는지, 비슷한 조건에서의 페이스와 심박이 어떻게 달라지는지 함께 확인하세요. 추정치가 갱신되는 활동 조건도 점검할 항목입니다.</p></div>
-<div class="faq"><p class="faq-q">Q. 하루 하락은 무시해도 되나요?</p><p class="faq-a">A. 한 번의 수치만으로 체력 저하를 단정하지 않는다는 뜻이지, 모든 하락을 무시하라는 뜻은 아닙니다. 환경과 설정, 원본 활동 기록을 먼저 확인하고 반복되는 변화와 실제 컨디션을 함께 살피세요.</p></div>
+<div class="faq"><p class="faq-q">Q. 하루 하락은 무시해도 되나요?</p><p class="faq-a">A. 한 번의 하락은 환경·설정·활동 기록과 함께 확인하세요. 이후에도 하락이 반복되는지, 실제 달리기와 컨디션도 달라졌는지 살피는 편이 좋습니다.</p></div>
 
 <h2>확인한 출처</h2>
 <ul>
-<li><a href="https://www.firstbeat.com/en/science-and-physiology/fitness-level/" target="_blank" rel="noopener noreferrer">Firstbeat Fitness Level</a> — VO₂ Max와 심박·속도 기반 추정 방식.</li>
-<li><a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-015C6746-435D-48E0-8ED8-CA2C81684E38.html" target="_blank" rel="noopener noreferrer">Garmin 포러너 970 매뉴얼</a> — 프로필·최대심박·러닝 갱신 조건.</li>
-<li><a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-70386BCC-5682-4C5C-9A87-C32AF9B6473B.html" target="_blank" rel="noopener noreferrer">Garmin 더위·고도 적응 안내</a> — 환경 영향과 모델별 보정 조건.</li>
-<li><a href="https://support.apple.com/en-us/108790" target="_blank" rel="noopener noreferrer">Apple 심폐 피트니스 안내</a> — 사용 활동과 사용자 정보.</li>
-<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">Molina-Garcia 외, Sports Medicine, 2022</a> — INTERLIVE 체계적 문헌고찰·메타분석.</li>
+<li><a href="https://www.firstbeat.com/en/science-and-physiology/fitness-level/" target="_blank" rel="noopener noreferrer">Firstbeat Fitness Level</a>: VO₂ Max와 심박·속도 기반 추정 방식.</li>
+<li><a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-015C6746-435D-48E0-8ED8-CA2C81684E38.html" target="_blank" rel="noopener noreferrer">Garmin 포러너 970 매뉴얼</a>: 프로필·최대심박·러닝 갱신 조건.</li>
+<li><a href="https://www8.garmin.com/manuals/webhelp/GUID-025D75CF-3445-49E1-8D81-1AA74AB4E00F/EN-US/GUID-70386BCC-5682-4C5C-9A87-C32AF9B6473B.html" target="_blank" rel="noopener noreferrer">Garmin 더위·고도 적응 안내</a>: 환경 영향과 모델별 보정 조건.</li>
+<li><a href="https://support.apple.com/en-us/108790" target="_blank" rel="noopener noreferrer">Apple 심폐 피트니스 안내</a>: 사용 활동과 사용자 정보.</li>
+<li><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC9213394/" target="_blank" rel="noopener noreferrer">Molina-Garcia 외, Sports Medicine, 2022</a>: INTERLIVE 체계적 문헌고찰·메타분석.</li>
 </ul>
-<p><small>2026년 10월 14일 공식 안내와 연구 원문 확인. 글감 트리거는 같은 날 게시된 @daily__dear의 VO₂ Max 카드이며, 본문은 제조사 자료와 연구를 대조해 작성했습니다. 기기 조건은 모델·소프트웨어에 따라 달라질 수 있습니다.</small></p>
+<p><small>2026년 10월 14일 공식 안내와 연구 원문 확인. 관련 게시물: 같은 날 @daily__dear의 VO₂ Max 카드. 기기 조건은 모델·소프트웨어에 따라 달라질 수 있습니다.</small></p>
 `,
   },
   {
     id: 'jebudo-sea-road-festival',
     slug: 'jebudo-sea-road-festival',
     title: '제부도 씨로드 페스티벌 2026 접수·참가비 | 11월 14일 바닷길 5·10km, 셔틀은 별도 3만원',
-    description: '제부도 바닷길을 달리는 2026 씨로드 페스티벌은 11월 14일 개최, 5K·10K 모두 참가비 6만원입니다. 10월 25일 접수 마감, 왕복 셔틀 별도 3만원, 케이블카·지역상품권 혜택과 환불 10월 25일 21시, 공식 안내의 미확정 항목까지 직접 확인했습니다.',
+    description: '2026 제부도 씨로드 페스티벌은 11월 14일 개최, 5K·10K 모두 참가비 6만원입니다. 왕복 셔틀을 쓰면 1인 9만원. 10월 25일 접수 마감, 같은 날 21시 환불 마감과 코스·셔틀·케이블카 이동 조건을 확인하세요.',
     thumbnail: '/images/blog/jebudo-sea-road-festival.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-14',
@@ -114,7 +114,7 @@ export const posts_2026_10: BlogPost[] = [
     },
     raceMeta: {
       displayTitle: '바닷길을 달리는 제부도 씨로드 페스티벌',
-      displaySubtitle: '5K는 섬 한 바퀴, 10K는 바닷길 왕복까지 — 이동비를 함께 계산하세요',
+      displaySubtitle: '5K는 섬 한 바퀴, 10K는 바닷길 왕복까지. 이동비도 함께 계산하세요',
       raceDate: '2026-11-14',
       registrationEnd: '2026-10-25',
       registrationOpen: { verifiedAt: '2026-10-14T12:58:02+09:00' },
@@ -141,11 +141,11 @@ export const posts_2026_10: BlogPost[] = [
       { question: '제부도 씨로드 페스티벌은 언제 열리나요?', answer: '2026년 11월 14일(토) 제부도 바닷길·화성 황금해안길 일원에서 열립니다. 공식 러닝 시간은 08:30~10:30이며 참가자는 07:30까지 도착하도록 안내됩니다. 기존 10월 4일 일정에서 변경됐습니다.' },
       { question: '참가비와 셔틀 요금은 얼마인가요?', answer: '5K·10K 모두 1인 60,000원입니다. 왕복 셔틀은 별도 30,000원이므로 선택하면 합계 90,000원입니다. 식비 등 개인 지출은 별도입니다.' },
       { question: '접수와 환불은 언제까지인가요?', answer: '접수 마감일은 10월 25일이며 정원에 따라 조기 마감될 수 있습니다. 환불 요청은 10월 25일 21시까지 신청번호·참가자 성명을 사무국 이메일로 보내야 합니다. 접수 마감 시각은 별도로 확인되지 않았습니다.' },
-      { question: '티셔츠는 택배로 오나요, 현장에서 받나요?', answer: '공식 배송 공지는 사전 배송, 공식 FAQ는 현장 지급으로 안내가 다릅니다. 본문에서 한쪽을 확정하지 않았습니다. 최종 참가자 안내나 사무국에 수령 방식을 확인하세요.' },
+      { question: '티셔츠는 택배로 오나요, 현장에서 받나요?', answer: '공식 배송 공지는 사전 배송, 공식 FAQ는 현장 지급으로 안내가 다릅니다. 최종 참가자 안내나 사무국에 수령 방식을 확인하세요.' },
     ],
     content: `
-<p>바다를 사이에 둔 길을 달리고, 완주 후 케이블카로 제부도를 둘러보는 하루. <strong>2026 제부도 씨로드 페스티벌</strong>은 러닝과 여행을 함께 계획하고 싶은 사람에게 맞는 대회입니다. 다만 참가비 6만원만 보고 신청하기 전에 이동 방법을 먼저 정하는 편이 좋습니다. 왕복 셔틀을 쓰면 비용이 9만원으로 달라집니다.</p>
-<p>런플리의 10월 13일 게시물을 출발점으로 <a href="https://www.jebudorun.com/" target="_blank" rel="noopener noreferrer">대회 공식 홈페이지</a>의 요강·코스·신청 폼·공지·FAQ를 직접 대조했습니다. 일정은 <strong>10월 4일에서 11월 14일로 변경</strong>됐습니다. 예전 포스터나 기사로 여행 일정을 잡았다면 날짜부터 다시 확인하세요.</p>
+<p><strong>2026 제부도 씨로드 페스티벌은 11월 14일 열립니다.</strong> 5K·10K 참가비는 모두 6만원이고, 왕복 셔틀을 선택하면 1인 9만원입니다. 참가자는 07:30까지 도착해야 하므로 신청할 때 이동 방법도 함께 정하세요.</p>
+<p><a href="https://www.jebudorun.com/" target="_blank" rel="noopener noreferrer">대회 공식 홈페이지</a>의 일정은 <strong>10월 4일에서 11월 14일로 변경</strong>됐습니다. 런플리의 10월 13일 게시물로 대회를 알게 됐거나 예전 포스터를 저장해 뒀다면, 여행 일정을 잡기 전에 날짜부터 확인하세요.</p>
 
 <h2>5K와 10K, 바닷길 구간이 다릅니다</h2>
 <table><thead><tr><th>종목</th><th>공식 코스 설명</th><th>선택할 때 볼 점</th></tr></thead><tbody>
@@ -153,15 +153,15 @@ export const posts_2026_10: BlogPost[] = [
 <tr><td><strong>10K</strong></td><td>바닷길 왕복 + 섬내 일주</td><td>섬과 육지를 연결하는 길까지 달리는 코스</td></tr>
 </tbody></table>
 <p>두 종목 모두 바다 풍경을 만나는 대회지만, <strong>바닷길을 왕복하는 경험이 목적이면 10K</strong>입니다. 5K에도 같은 구간이 있다고 생각하고 신청하지 마세요. 거리·코스 지도는 <a href="https://www.jebudorun.com/info?tab=course" target="_blank" rel="noopener noreferrer">공식 코스 안내</a>에서 확인할 수 있습니다.</p>
-<p>모세길은 물때와 날씨의 영향을 받는 구간입니다. 공식은 상황에 따라 출발 시각 조정, 코스 변경·단축이나 중단이 있을 수 있다고 안내합니다. “바닷길 코스니까 평탄한 기록 대회”라고 단정하기보다, 풍경과 현장 운영을 함께 받아들일 수 있는지 보고 선택하세요.</p>
+<p>모세길은 물때와 날씨의 영향을 받습니다. 주최 측은 상황에 따라 출발 시각 조정, 코스 변경·단축이나 중단이 있을 수 있다고 안내합니다. 바닷길 구간을 기대하고 신청한다면 출발 전 최종 운영 공지를 확인하세요.</p>
 
 <h2>참가비 6만원, 셔틀을 쓰면 합계 9만원</h2>
 <table><thead><tr><th>선택</th><th>1인 비용</th><th>포함 범위</th></tr></thead><tbody>
 <tr><td>5K 또는 10K 참가</td><td><strong>60,000원</strong></td><td>참가비·공식 참가자 혜택</td></tr>
 <tr><td>참가 + 왕복 셔틀</td><td><strong>90,000원</strong></td><td>참가비 60,000원 + 셔틀 30,000원</td></tr>
 </tbody></table>
-<p>9만원은 공식 요금 두 항목을 더한 계산입니다. 식비나 개인 여행 비용까지 포함한 총예산은 아닙니다. 자가용을 쓴다면 연료비·주차 조건도 따로 확인해야 하므로, 차를 가져가는 편이 무조건 저렴하다고 판단할 수는 없습니다.</p>
-<p>공식 혜택에는 기념 티셔츠·메달·에너지젤과 <strong>제부도 지역상품권 1만원 상당, 서해랑 해상케이블카 왕복권 2만2천원 상당</strong>이 안내돼 있습니다. 상품권과 이용권은 현금 환급이 아니므로 참가비에서 3만2천원을 빼 “실질 참가비”라고 계산하지 않습니다. 실제로 사용할 계획이 있는 혜택인지가 더 중요합니다.</p>
+<p>셔틀 이용 시 9만원은 참가비와 교통비의 합계입니다. 식비와 개인 여행 비용은 따로 잡으세요. 자가용을 쓴다면 연료비·주차 조건까지 확인한 뒤 비교하면 됩니다.</p>
+<p>참가자 혜택은 기념 티셔츠·메달·에너지젤과 <strong>제부도 지역상품권 1만원 상당, 서해랑 해상케이블카 왕복권 2만2천원 상당</strong>입니다. 상품권과 이용권을 받아도 참가비 6만원은 그대로 내야 합니다. 완주 후 실제로 사용할 계획이 있는지 살펴보세요.</p>
 
 <h2>셔틀은 06:20 출발, 귀가는 15시 또는 17시</h2>
 <p><a href="https://www.jebudorun.com/info" target="_blank" rel="noopener noreferrer">공식 행사 안내</a>에 올라온 왕복 셔틀 출발지는 아래 다섯 곳입니다. 모두 <strong>06:20 출발</strong>로 안내돼 있습니다.</p>
@@ -179,8 +179,8 @@ export const posts_2026_10: BlogPost[] = [
 <p>배번호표가 케이블카 탑승 티켓을 대신한다는 안내는 있지만, 참가자 이용권의 <strong>사용 방법·탑승 시간은 최종 공지를 확인</strong>해야 합니다. 주차장에서 출발선까지 이동할 시간을 남기세요. 상세 집결지 주소도 확인일 기준 추가 안내 대상입니다.</p>
 
 <h2>신청은 입금 확인까지, 접수 마감은 10월 25일</h2>
-<p>10월 14일 확인 시 <a href="https://www.jebudorun.com/apply" target="_blank" rel="noopener noreferrer">공식 참가 신청 폼</a>이 열려 있습니다. 코스·티셔츠 사이즈·배송 주소를 입력하고 안내에 따라 <strong>계좌이체</strong>합니다. FAQ는 입금 확인 후 참가 확정이라고 설명하므로 신청서 작성만으로 완료됐다고 생각하지 마세요.</p>
-<p><strong>접수 마감일은 10월 25일</strong>이며 정원에 따라 조기 마감될 수 있습니다. 등록 마감의 정확한 시각은 확인되지 않았습니다. 환불 마감 시각과 같다고 임의로 맞추지 않았습니다.</p>
+<p>10월 14일 확인 시 <a href="https://www.jebudorun.com/apply" target="_blank" rel="noopener noreferrer">공식 참가 신청 폼</a>이 열려 있습니다. 코스·티셔츠 사이즈·배송 주소를 입력한 뒤 안내에 따라 <strong>계좌이체</strong>하세요. 참가 확정은 신청서 제출 후 입금 확인까지 마쳐야 합니다.</p>
+<p><strong>접수 마감일은 10월 25일</strong>이며 정원에 따라 조기 마감될 수 있습니다. 정확한 접수 마감 시각은 확인되지 않았습니다. 아래 환불 기한인 21시를 접수 마감 시각으로 생각하지 마세요.</p>
 <p>연령은 실제 신청 폼에서 <strong>5K 만 8세 이상, 10K 만 14세 이상</strong>으로 안내합니다. FAQ에는 5K 보호자 동의·유모차 가능 문구도 있지만 세부 조건이 충분히 정리돼 있지 않습니다. 어린 자녀와 참가하려면 신청 폼의 조건을 우선 확인하고, 경계 연도나 유모차 동반은 사무국에 문의하세요.</p>
 
 <h2>환불은 10월 25일 21시까지 이메일로 요청</h2>
@@ -188,20 +188,20 @@ export const posts_2026_10: BlogPost[] = [
 <p>기한 이후 개인 사정에 따른 환불은 제한되지만 행사 취소·연기와 법령에 따른 권리는 예외로 안내돼 있습니다. 참가권 양도·판매와 대리 참가는 금지입니다.</p>
 
 <h2>기념품 안내에서 아직 확인할 부분</h2>
-<div class="callout warning"><strong>티셔츠 수령 방식이 공식 문서 안에서도 다릅니다.</strong><p>배송 공지는 티셔츠를 사전 배송 품목에 넣었지만, FAQ는 현장 지급 품목으로 적었습니다. 배번호·기록칩의 사전 배송 안내는 공통입니다. 티셔츠는 한쪽을 확정해 안내하지 않으며 최종 문자나 사무국 확인이 필요합니다.</p></div>
-<p>케이블카 이용 조건과 집결지 상세 주소도 최종 참가자 안내를 다시 확인하세요. 안내의 빈칸을 일반적인 대회 운영 방식으로 채우지 않았습니다. 출발 전에 챙길 물건은 <a href="/blog/fall-marathon-race-day-checklist-2026">가을 대회 준비물 체크리스트</a>에서, 러닝 양말을 고르는 기준은 <a href="/blog/running-socks-guide-fiber-composition-2026">소재별 러닝 양말 가이드</a>에서 확인할 수 있습니다.</p>
+<div class="callout warning"><strong>티셔츠 수령 방식은 최종 안내를 확인하세요.</strong><p>배송 공지는 티셔츠를 사전 배송 품목에 넣었지만, FAQ는 현장 지급 품목으로 적었습니다. 배번호·기록칩은 두 안내 모두 사전 배송입니다. 티셔츠 수령 방식은 최종 문자나 사무국에 확인하세요.</p></div>
+<p>출발 전에는 케이블카 이용 조건과 집결지 상세 주소도 최종 참가자 안내에서 확인하세요. 준비물은 <a href="/blog/fall-marathon-race-day-checklist-2026">가을 대회 준비물 체크리스트</a>, 러닝 양말 선택 기준은 <a href="/blog/running-socks-guide-fiber-composition-2026">소재별 러닝 양말 가이드</a>에서 볼 수 있습니다.</p>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq"><p class="faq-q">Q. 5K도 제부도 바닷길을 왕복하나요?</p><p class="faq-a">A. 공식 설명상 5K는 섬내 일주입니다. 바닷길 왕복과 섬내 일주를 함께 달리는 종목은 10K입니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 비가 와도 개최하나요?</p><p class="faq-a">A. FAQ는 우천 시 원칙적 진행으로 안내하지만, 기상특보·해상 안전·관계기관 통제에 따라 변경이나 취소가 가능하다고 설명합니다. 출발 전 공식 공지와 문자 안내를 확인하세요.</p></div>
-<div class="faq"><p class="faq-q">Q. 배번호를 현장에서 받아도 되나요?</p><p class="faq-a">A. 공식은 배번호를 사전 배송한다고 안내합니다. 케이블카에서도 배번호표를 사용하므로 미수령 상태라면 출발 전에 사무국에 문의하세요. 현장 재발급 가능 여부를 확인하지 못해 가능하다고 안내하지 않습니다.</p></div>
+<div class="faq"><p class="faq-q">Q. 배번호를 현장에서 받아도 되나요?</p><p class="faq-a">A. 배번호는 사전 배송이며 현장 재발급 가능 여부는 확인되지 않았습니다. 케이블카에서도 배번호표를 사용하므로 받지 못했다면 출발 전에 사무국에 문의하세요.</p></div>
 
 <h2>확인한 출처</h2>
 <ul>
-<li><a href="https://www.jebudorun.com/" target="_blank" rel="noopener noreferrer">공식 홈페이지</a> — 변경된 대회일·참가비·접수 마감일·혜택.</li>
-<li><a href="https://www.jebudorun.com/info" target="_blank" rel="noopener noreferrer">행사 안내</a> · <a href="https://www.jebudorun.com/info?tab=course" target="_blank" rel="noopener noreferrer">코스 안내</a> — 코스·집결·셔틀·주차·통제.</li>
-<li><a href="https://www.jebudorun.com/apply" target="_blank" rel="noopener noreferrer">신청 폼</a> — 실제 신청 화면·연령·추가 셔틀 요금.</li>
-<li><a href="https://www.jebudorun.com/notice" target="_blank" rel="noopener noreferrer">공지·FAQ</a> — 일정 변경·배송·입금·환불·양도 규정.</li>
+<li><a href="https://www.jebudorun.com/" target="_blank" rel="noopener noreferrer">공식 홈페이지</a>: 변경된 대회일·참가비·접수 마감일·혜택.</li>
+<li><a href="https://www.jebudorun.com/info" target="_blank" rel="noopener noreferrer">행사 안내</a> · <a href="https://www.jebudorun.com/info?tab=course" target="_blank" rel="noopener noreferrer">코스 안내</a>: 코스·집결·셔틀·주차·통제.</li>
+<li><a href="https://www.jebudorun.com/apply" target="_blank" rel="noopener noreferrer">신청 폼</a>: 실제 신청 화면·연령·추가 셔틀 요금.</li>
+<li><a href="https://www.jebudorun.com/notice" target="_blank" rel="noopener noreferrer">공지·FAQ</a>: 일정 변경·배송·입금·환불·양도 규정.</li>
 </ul>
 <p><small>2026년 10월 14일 공식 원문·실제 신청 화면 확인. 이후 운영 변경은 주최 측 최종 안내가 우선합니다.</small></p>
 `,
@@ -210,7 +210,7 @@ export const posts_2026_10: BlogPost[] = [
     id: 'shall-we-run-movie-2026',
     slug: 'shall-we-run-movie-2026',
     title: '션 쉘위런 개봉일·예매 | 세계 7대 마라톤 다큐멘터리, 10월 16일 메가박스',
-    description: '션의 세계 7대 마라톤 도전을 다룬 다큐멘터리 쉘위런(Shall We Run)이 2026년 10월 16일 개봉합니다. 메가박스 공식 영화 페이지에서 개봉일·전체관람가·예매 경로를 확인하고, 러너가 읽을 관람 포인트와 상영관 확인 순서를 정리했습니다.',
+    description: '션의 세계 7대 마라톤 도전을 다룬 다큐멘터리 쉘위런(Shall We Run)이 2026년 10월 16일 메가박스에서 개봉합니다. 전체관람가이며 상영 지점·회차는 예매 화면에서 확인할 수 있습니다. 개봉 전 공개 정보를 바탕으로 예매 방법과 관람할 때 나눌 이야기를 정리했습니다.',
     thumbnail: '/images/blog/shall-we-run-movie-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-14',
@@ -218,20 +218,20 @@ export const posts_2026_10: BlogPost[] = [
     readingTime: 4,
     tags: ['쉘위런', '션 다큐멘터리', '쉘위런 개봉일', '쉘위런 예매', 'Shall We Run', '러닝 영화', '세계 7대 마라톤', '메가박스'],
     faqs: [
-      { question: '쉘위런 개봉일은 언제인가요?', answer: '메가박스 공식 영화 페이지 기준 2026년 10월 16일입니다. 이 글은 10월 14일 공개 정보와 예매 경로를 확인해 작성했습니다.' },
+      { question: '쉘위런 개봉일은 언제인가요?', answer: '메가박스 공식 영화 페이지 기준 2026년 10월 16일입니다. 10월 14일 확인한 정보이며 상영 지점과 회차는 예매 화면에서 확인하세요.' },
       { question: '쉘위런은 어디서 예매하나요?', answer: '메가박스 공식 영화 상세 페이지의 예매 메뉴에서 날짜·극장·회차를 확인할 수 있습니다. 메가박스 단독 표시를 확인했으며 모든 지점에서 상영한다는 뜻은 아닙니다.' },
       { question: '쉘위런 관람 등급과 러닝타임은 어떻게 되나요?', answer: '공식 영화 페이지에서 전체관람가를 확인했습니다. 러닝타임은 확인일 기준 0분으로 표시돼 있어 확정된 상영시간으로 안내하지 않습니다. 예매 전에 최신 상세 정보를 확인하세요.' },
-      { question: '영화를 직접 본 리뷰인가요?', answer: '개봉 전 공식 소개·예매 정보에 기반한 안내입니다. 작품의 장면·완성도·평점을 관람 결과처럼 평가하지 않았습니다.' },
+      { question: '영화를 직접 본 리뷰인가요?', answer: '개봉 전 공식 소개와 예매 정보를 바탕으로 한 안내입니다. 관람 후 리뷰는 아닙니다.' },
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
 <li><strong>「쉘위런」은 션의 세계 7대 마라톤 도전을 다룬 다큐멘터리입니다.</strong> 영문 제목은 Shall We Run입니다.</li>
-<li><strong>메가박스 공식 개봉일은 2026년 10월 16일, 전체관람가.</strong> 단독 표시와 예매 경로를 확인했습니다.</li>
+<li><strong>2026년 10월 16일 메가박스 단독 개봉, 전체관람가.</strong> 공식 영화 페이지에서 예매할 수 있습니다.</li>
 <li><strong>상영 지점·회차는 예매 화면에서 따로 확인하세요.</strong> 개봉 전 공개 정보에 기반한 관람 안내입니다.</li>
 </ul></div>
 
-<p>대회 결과를 보면 가장 먼저 눈에 들어오는 것은 기록입니다. 이번에는 달린 시간을 잠시 내려놓고, 한 사람이 여러 출발선에 서는 이유를 따라가 볼 기회가 생겼습니다. <strong>션의 마라톤 도전을 다룬 「쉘위런」이 10월 16일 개봉</strong>합니다.</p>
-<p>러닝라이프의 10월 13일 소개 게시물을 확인한 뒤 <a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 공식 영화 페이지</a>에서 개봉일·등급·예매 경로를 대조했습니다. 이 글은 공개된 소개를 바탕으로 영화를 고르는 데 필요한 정보를 정리한 안내입니다.</p>
+<p><strong>션의 세계 7대 마라톤 도전을 담은 다큐멘터리 「쉘위런」이 10월 16일 개봉합니다.</strong> 메가박스 단독 상영으로 안내돼 있어 가까운 지점의 상영 여부와 회차를 먼저 확인하면 됩니다.</p>
+<p>개봉 전 공개 정보 기준으로 전체관람가이며, <a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 공식 영화 페이지</a>에서 예매할 수 있습니다. 아직 관람 전이므로 작품 평가는 다루지 않습니다.</p>
 
 <h2>개봉일·관람 등급·예매, 확인된 정보</h2>
 <table><thead><tr><th>항목</th><th>확인한 내용</th></tr></thead><tbody>
@@ -240,24 +240,18 @@ export const posts_2026_10: BlogPost[] = [
 <tr><td>중심 인물·소재</td><td>가수 션의 세계 7대 마라톤 도전</td></tr>
 <tr><td>개봉일</td><td><strong>2026년 10월 16일(금)</strong></td></tr>
 <tr><td>관람 등급</td><td>전체관람가</td></tr>
-<tr><td>상영 안내</td><td>메가박스 영화 목록의 단독 표시 확인</td></tr>
+<tr><td>상영 안내</td><td>메가박스 단독 상영</td></tr>
 <tr><td>예매</td><td>메가박스 공식 상세 페이지에서 날짜·극장·회차 선택</td></tr>
 </tbody></table>
-<p>메가박스에 올라온 공식 소개는 완주 과정과 러너의 내면, 공동체와의 연결을 다루는 작품으로 설명합니다. 러닝 자세나 훈련 계획을 알려주는 교육 영상보다는 <strong>달리는 사람과 그 여정을 따라가는 다큐멘터리</strong>라는 점에서 접근하는 편이 맞겠습니다.</p>
+<p>메가박스의 공식 소개는 완주 과정과 러너의 내면, 공동체와의 연결을 작품의 소재로 제시합니다. 션이 왜 달리고 누구와 그 경험을 나누는지에 관심이 있다면 살펴볼 만한 영화입니다.</p>
 
 <h2>2025년 션의 도전, 영화 속 ‘세계 7대’의 맥락</h2>
-<p>러닝라이프 소개에 따르면 영화의 배경은 션이 <strong>2025년 한 해 도쿄·보스턴·런던·시드니·베를린·시카고·뉴욕을 달린 여정</strong>입니다. 그래서 작품을 소개하는 “세계 7대 마라톤”은 이 도전을 가리키는 맥락으로 읽으면 됩니다.</p>
-<p>도시 이름만으로도 러너에게는 서로 다른 목표가 떠오릅니다. 해외 대회를 여행과 함께 계획하는 사람, 언젠가 보스턴 출발선에 서고 싶은 사람, 첫 풀코스를 준비하는 사람에게 영화의 출발점이 다르게 다가갈 수 있습니다.</p>
-<p>각 대회의 신청 방식까지 알고 싶다면 <a href="/blog/world-marathon-majors-guide-2026">세계 메이저 마라톤 가이드</a>를 함께 보세요. 보스턴 참가를 목표로 한다면 <a href="/blog/boston-marathon-2027-bq-guide">보스턴 자격기록과 국내 대회 활용 가이드</a>가 별도로 있습니다. 영화의 도전과 본인의 현실적인 참가 계획을 연결하는 데 쓸 자료입니다.</p>
+<p>러닝라이프 소개에 따르면 영화의 배경은 션이 <strong>2025년 한 해 도쿄·보스턴·런던·시드니·베를린·시카고·뉴욕을 달린 여정</strong>입니다. 작품의 “세계 7대 마라톤”은 이 도전을 가리킵니다.</p>
+<p>관람 후 해외 대회에 도전하고 싶어졌다면 <a href="/blog/world-marathon-majors-guide-2026">세계 메이저 마라톤 가이드</a>에서 대회별 신청 방식을 확인하세요. 보스턴을 목표로 한다면 <a href="/blog/boston-marathon-2027-bq-guide">보스턴 자격기록과 국내 대회 활용 가이드</a>에서 참가 조건을 살펴볼 수 있습니다.</p>
 
-<h2>러너라면 이런 질문을 가지고 볼 만합니다</h2>
-<p>공식 소개에 기대어 제안하는 <strong>에디터의 관람 관점</strong>은 세 가지입니다. 실제 장면이나 연출을 미리 평가한 목록은 아닙니다.</p>
-<h3>1. 내가 다음 출발선에 서고 싶은 이유는 무엇인가</h3>
-<p>개인 최고기록, 낯선 도시의 풍경, 크루와의 약속. 같은 마라톤을 신청해도 목표는 다를 수 있습니다. 공식 소개가 던지는 “우리는 왜 달리는가?”를 본인의 이유와 나란히 놓고 보면, 기록표와 다른 관점으로 러닝을 생각해 볼 수 있습니다.</p>
-<h3>2. 혼자 달리는 도전과 함께하는 경험은 어떻게 연결되는가</h3>
-<p>공식 소개에는 공동체와의 연결이 작품의 주제로 들어 있습니다. 러닝을 개인의 성취로 보는 사람과 모임의 경험으로 보는 사람이 함께 보고 이야기를 나눌 출발점입니다. 크루원과 관람한다면 같은 작품에서 무엇이 다르게 남았는지 이야기해 보세요.</p>
-<h3>3. 영화 속 목표를 내 일정에 옮기면 무엇이 필요한가</h3>
-<p>해외 마라톤을 달리고 싶은 마음이 생겼다면, 다음 단계는 항공권보다 접수 방식·참가 자격·대회일을 확인하는 일입니다. 영화의 감상과 훈련 처방은 구별하세요. 다른 사람의 도전 일정을 자신의 훈련량이나 회복 기준으로 그대로 옮길 필요는 없습니다.</p>
+<h2>관람 후 크루원과 나눠볼 이야기</h2>
+<p>공식 소개의 “우리는 왜 달리는가?”를 각자의 경험에 비춰 이야기해 보세요. 개인 최고기록을 위해 달리는지, 낯선 도시를 달려보고 싶은지, 크루와의 약속이 동기가 되는지 답이 다를 수 있습니다. 첫 풀코스를 준비하는 사람도 자신이 다음 출발선에 서고 싶은 이유를 떠올려볼 만합니다.</p>
+<p>공동체와의 연결도 작품 소개에 담긴 주제입니다. 혼자 완주한 경험과 크루원과 함께 달린 경험에서 무엇이 다르게 남았는지 나눠보세요. 영화가 해외 마라톤에 도전할 계기가 됐다면 접수 방식·참가 자격·대회일부터 확인하면 됩니다.</p>
 
 <h2>예매 전에 상영 지점·회차를 확인하세요</h2>
 <p>메가박스 단독이라는 표시는 <strong>모든 메가박스 지점에서 같은 회차로 상영한다는 뜻은 아닙니다.</strong> 공식 상세 페이지의 예매 메뉴에서 원하는 날짜와 방문 가능한 극장을 함께 확인하세요. 관람료도 지점·회차·좌석 선택과 적용 혜택에 따라 예매 화면에서 확인하는 편이 정확합니다.</p>
@@ -266,22 +260,22 @@ export const posts_2026_10: BlogPost[] = [
 <li>예매 메뉴에서 방문할 날짜와 극장, 상영 회차를 확인합니다.</li>
 <li>관람료·좌석·취소 조건을 확인한 뒤 자신의 일정에 맞게 선택합니다.</li>
 </ol>
-<p>대회나 주말 러닝과 같은 날로 계획한다면 이동 시간을 먼저 확보하세요. 가까운 지점에서 원하는 시간에 상영하는지는 실제 예매 화면으로 판단해야 합니다.</p>
+<p>대회나 주말 러닝과 같은 날 관람한다면 러닝 장소에서 극장까지 이동할 시간도 남겨두세요.</p>
 
-<h2>아직 확정해 적지 않은 정보</h2>
-<p>10월 14일 공식 상세 페이지의 러닝타임은 <strong>‘0분’으로 표시</strong>돼 있습니다. 입력되지 않은 값으로 보일 수 있지만, 이를 실제 상영시간으로 안내하거나 다른 소개 자료의 숫자로 임의 보완하지 않았습니다. 관람 전 최신 상세 정보를 확인하세요.</p>
-<p>OTT 공개 일정이나 별도의 전국 상영관 목록도 이번 확인에서 확보하지 못했습니다. 해당 정보가 필요하면 배급·극장 측 후속 안내를 확인하세요. 개봉 전 페이지의 관객수나 평점으로 작품의 완성도를 판단하지 않습니다.</p>
+<h2>러닝타임과 OTT 공개일은 추가 확인이 필요합니다</h2>
+<p>10월 14일 공식 상세 페이지의 러닝타임은 <strong>‘0분’으로 표시</strong>돼 있어 실제 상영시간을 확인할 수 없습니다. 관람 후 일정을 잡을 때는 최신 상세 정보에서 러닝타임을 확인하세요.</p>
+<p>OTT 공개 일정과 별도의 전국 상영관 목록도 확인되지 않았습니다. 온라인 관람을 기다린다면 배급·극장 측 후속 안내를 확인하세요.</p>
 
 <h2>자주 묻는 질문</h2>
-<div class="faq"><p class="faq-q">Q. 러닝을 하지 않는 사람도 볼 만한가요?</p><p class="faq-a">A. 공식 소개는 기록 경쟁뿐 아니라 개인의 도전과 공동체를 소재로 제시합니다. 그 주제에 관심이 있다면 선택할 이유가 있습니다. 재미나 감동의 정도를 관람한 것처럼 보장하지는 않습니다.</p></div>
-<div class="faq"><p class="faq-q">Q. 쉘위런을 보고 마라톤 훈련법을 배울 수 있나요?</p><p class="faq-a">A. 공식 소개상 션의 도전을 따라가는 다큐멘터리입니다. 개인별 훈련 프로그램이나 회복 지침을 제공하는 자료로 소개하지 않습니다. 훈련 계획은 본인의 경험과 몸 상태를 기준으로 별도로 정하세요.</p></div>
+<div class="faq"><p class="faq-q">Q. 러닝을 하지 않는 사람도 볼 만한가요?</p><p class="faq-a">A. 공식 소개는 개인의 도전과 공동체를 소재로 제시합니다. 러닝 경험이 없어도 그 주제에 관심이 있다면 살펴볼 만합니다.</p></div>
+<div class="faq"><p class="faq-q">Q. 쉘위런을 보고 마라톤 훈련법을 배울 수 있나요?</p><p class="faq-a">A. 션의 도전을 따라가는 다큐멘터리이며 개인별 훈련 프로그램이나 회복 지침을 제공하는 자료는 아닙니다. 본인의 훈련량과 회복 계획은 러닝 경험과 몸 상태에 맞춰 별도로 정하세요.</p></div>
 <div class="faq"><p class="faq-q">Q. 온라인으로도 볼 수 있나요?</p><p class="faq-a">A. 확인한 정보는 10월 16일 메가박스 극장 개봉입니다. OTT 공개일은 확인하지 못했습니다.</p></div>
 
 <h2>확인한 출처</h2>
 <ul>
-<li><a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 「쉘위런」 상세 페이지</a> — 제목·장르·공식 소개·개봉일·관람 등급·예매 경로.</li>
-<li><a href="https://www.megabox.co.kr/movie/comingsoon" target="_blank" rel="noopener noreferrer">메가박스 상영예정작 목록</a> — 작품 등록·단독 표시.</li>
-<li><a href="https://www.instagram.com/runninglife_korea/p/DebZfEOP9Pq/" target="_blank" rel="noopener noreferrer">러닝라이프 10월 13일 게시물</a> — 글감 트리거·2025년 도전 배경. 개봉일은 극장 공식 정보로 대조했습니다.</li>
+<li><a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 「쉘위런」 상세 페이지</a>: 제목·장르·공식 소개·개봉일·관람 등급·예매 경로.</li>
+<li><a href="https://www.megabox.co.kr/movie/comingsoon" target="_blank" rel="noopener noreferrer">메가박스 상영예정작 목록</a>: 작품 등록·단독 표시.</li>
+<li><a href="https://www.instagram.com/runninglife_korea/p/DebZfEOP9Pq/" target="_blank" rel="noopener noreferrer">러닝라이프 10월 13일 게시물</a>: 2025년 도전 배경.</li>
 </ul>
 <p><small>2026년 10월 14일 공개 원문 확인. 상영 일정과 제공 정보는 이후 바뀔 수 있으므로 관람 전 공식 예매 화면을 확인하세요.</small></p>
 `,
