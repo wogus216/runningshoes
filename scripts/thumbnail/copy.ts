@@ -38,6 +38,24 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: Garmin·Apple 공식 매뉴얼 + INTERLIVE 연구(2026-10-14 확인).
+  'garmin-vo2max-estimate-guide': {
+    title: 'VO₂ Max가 내려갔다면',
+    subtitle: '체력 변화와 워치 추정치를 나누어 읽는 법',
+    data: '설정 · 환경 · 기록 품질부터 확인',
+  },
+  // 출처: jebudorun.com 공식 요강·신청 폼·공지(2026-10-14 확인).
+  'jebudo-sea-road-festival': {
+    title: '제부도, 바닷길을 달리다',
+    subtitle: '11월 14일 · 5K / 10K\n접수 마감 10월 25일',
+    data: '참가비 6만원 · 왕복 셔틀 별도 3만원',
+  },
+  // 출처: 메가박스 공식 상세 페이지·상영예정작 목록(2026-10-14 확인).
+  'shall-we-run-movie-2026': {
+    title: '션의 마라톤, 극장으로',
+    subtitle: '다큐멘터리 〈쉘위런〉\n10월 16일 메가박스 개봉',
+    data: '세계 7대 마라톤 도전 · 전체관람가',
+  },
   // 출처: chicagomarathon.com/apply 원문(2026-10-09 확인) — 지원 10/8~10/29 14시(미국 중부)=한국 10/30 04시,
   // 추첨 결과 12/8, 해외 거주자 참가비 $260, 기록 보장 16~34세 남 2:50·여 3:20.
   'chicago-marathon-2027-application-guide': {
