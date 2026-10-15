@@ -2,6 +2,75 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'backyard-ultra-world-team-championship-2026',
+    slug: 'backyard-ultra-world-team-championship-2026',
+    title: '백야드 울트라 세계팀선수권 2026 | 각자 자기 나라에서 달리는 세계선수권',
+    description: '2026 백야드 울트라 세계팀선수권은 한국 시간 10월 17일 밤 9시 동시에 출발합니다. 매시간 약 6.706km를 달리는 규칙, 남는 시간의 휴식, 국가별 최대 15명의 바퀴 합산 방식과 관전 포인트를 정리했습니다.',
+    thumbnail: '/images/blog/backyard-ultra-world-team-championship-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-15',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['백야드 울트라', '백야드 세계팀선수권', '울트라마라톤', '해외 러닝 소식', '러닝 대회 규칙'],
+    faqs: [
+      { question: '2026 백야드 울트라 세계팀선수권은 언제 시작하나요?', answer: '2026년 10월 17일 토요일 밤 9시, 한국 시간 기준입니다. 공식 세계 동시 출발 시각인 12:00 UTC에 9시간을 더한 값입니다. 각국 공식 위성 대회가 같은 순간에 출발합니다.' },
+      { question: '백야드 울트라는 매시간 얼마나 달리나요?', answer: '매 정각 출발해 약 6.706km의 한 바퀴를 1시간 안에 마쳐야 합니다. 다음 정각에 다시 출발하고, 한 바퀴를 마친 뒤 남은 시간에 휴식과 정비를 합니다.' },
+      { question: '세계팀선수권의 국가 점수는 어떻게 계산하나요?', answer: '국가별 최대 15명의 선수가 완료한 바퀴를 모두 더합니다. 가장 많은 누적 바퀴를 기록한 국가가 우승합니다. 팀원 한 명의 기록만으로 국가 순위가 정해지지 않습니다.' },
+      { question: '선수들은 모두 같은 나라에 모여서 달리나요?', answer: '각국의 공식 위성 대회 코스에 모여 달립니다. 같은 순간에 출발하지만 실제 달리는 장소와 현지 시각은 다릅니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>10월 17일 토요일 밤 9시, 한국 시간으로 동시에 출발합니다.</strong> 각국 선수들은 자기 나라의 공식 대회 코스에서 달립니다.</li>
+<li><strong>매시간 약 6.706km를 한 바퀴씩 반복합니다.</strong> 일찍 돌아오면 다음 정각까지 남은 시간에 쉴 수 있습니다.</li>
+<li><strong>팀 점수는 선수들이 완료한 바퀴의 합계입니다.</strong> 국가별 최대 15명 모두의 기록이 순위에 반영됩니다.</li>
+</ul></div>
+
+<p>세계선수권인데 선수들이 한 나라에 모이지 않습니다. <strong>2026 백야드 울트라 세계팀선수권</strong>은 각국의 공식 코스에서 같은 순간에 출발합니다. 한국 시간으로는 <strong>10월 17일 토요일 밤 9시</strong>입니다.</p>
+<p>매시간 달려야 할 거리는 약 6.706km. 이 거리를 마친 뒤에도 결승은 오지 않습니다. 다음 정각이 되면 다시 출발선에 서야 하죠. 개인이 얼마나 오래 남는지와 국가 전체가 몇 바퀴를 쌓는지를 함께 보는 경기입니다.</p>
+
+<h2>약 6.706km를 달리고, 다음 정각에 다시 출발</h2>
+<p>백야드 울트라에서는 <strong>한 바퀴를 1시간 안에 마치고 매 정각 다시 출발</strong>합니다. 경기 기록에 나오는 <strong>야드(yard)</strong>는 이 한 바퀴를 가리킵니다. 여기서는 1야드가 약 6.706km인 셈입니다.</p>
+<p>처음부터 “오늘은 10바퀴를 달리면 끝”이라고 정해 놓지 않습니다. 다음 바퀴를 시간 안에 마치지 못하거나 다음 출발에 나서지 못하면 더 이어갈 수 없습니다. 일반적인 백야드 방식에서는 마지막으로 남은 선수도 한 바퀴를 더 마쳐야 개인 우승자가 됩니다.</p>
+<p><small>거리·시간·개인 우승 방식: <a href="https://www.autra.asn.au/event/2026-Backyard-Ultra-World-Team-Championships" target="_blank" rel="noopener noreferrer">호주 울트라·트레일러너협회 대회 안내</a> · <a href="https://runningmagazine.ca/trail-running/canada-gets-ready-for-world-backyard-ultra-champs/" target="_blank" rel="noopener noreferrer">Canadian Running의 10월 14일 프리뷰</a>.</small></p>
+
+<h2>45분에 들어오면 15분, 55분에 들어오면 5분</h2>
+<p>한 바퀴를 빨리 마치면 다음 출발까지 쓸 시간이 늘어납니다. 예를 들어 밤 9시에 출발했다고 해 보겠습니다.</p>
+<table><thead><tr><th>한 바퀴를 마친 시각</th><th>다음 출발</th><th>그 사이 남는 시간</th></tr></thead><tbody>
+<tr><td>21:45</td><td>22:00</td><td><strong>15분</strong></td></tr>
+<tr><td>21:55</td><td>22:00</td><td><strong>5분</strong></td></tr>
+</tbody></table>
+<p>위 표는 규칙을 이해하기 위한 계산 예시입니다. 실제로 어느 속도가 유리한지는 선수와 상황에 따라 달라집니다. 주최 측 안내와 Canadian Running은 바퀴 사이에 먹고, 옷을 갈아입거나 잠깐 잘 수 있다고 설명합니다. 쉴 수는 있어도 <strong>다음 출발 시각을 늦출 수는 없습니다.</strong></p>
+<p>24바퀴를 모두 마치면 거리는 약 161km가 됩니다. 밤이 지나고 다음 날이 돼도 한 바퀴의 거리와 다음 출발을 알리는 시계는 그대로입니다.</p>
+
+<h2>팀전에서는 먼저 멈춘 선수의 바퀴도 남습니다</h2>
+<p>이 대회를 볼 때 가장 재미있는 차이는 <strong>국가별 바퀴 합산</strong>입니다. Big’s Backyard Ultra 공식 안내에 따르면 한 국가에는 최대 15개의 출발 자리가 있고, 선수들이 완료한 바퀴를 모두 더해 팀 점수를 계산합니다. 낮은 기록을 버리는 방식은 아닙니다.</p>
+<p>예를 들어 15명이 각각 20바퀴를 달렸다면 팀 점수는 <strong>300바퀴</strong>입니다. 이후 먼저 경기를 마친 선수의 20바퀴도 국가 점수에 남습니다. 끝까지 달리는 선수뿐 아니라 다른 팀원들이 얼마나 오래 바퀴를 보태는지도 봐야 하는 이유입니다.</p>
+<p>공식 기록 화면에서 국가별 총점이 보인다면, 개인 최고 기록과 나란히 살펴보세요. 한 선수가 가장 오래 남았다는 사실만으로 그 나라의 팀 우승까지 결정되는 것은 아닙니다.</p>
+<p><small>팀 점수·최대 출발 인원: <a href="https://bigsbackyardultra.com/" target="_blank" rel="noopener noreferrer">Big’s Backyard Ultra 공식 세계팀선수권 안내</a> · <a href="https://bigsbackyardultra.com/road-to-bigs/" target="_blank" rel="noopener noreferrer">공식 국가대표 선발 안내</a>.</small></p>
+
+<h2>같은 순간, 서로 다른 코스에서 달립니다</h2>
+<p>세계 동시 출발 시각은 <strong>10월 17일 12:00 UTC</strong>입니다. 미국 중부는 오전 7시(CDT), 호주 시드니가 있는 뉴사우스웨일스는 밤 11시(AEDT)에 해당합니다. 한국은 UTC보다 9시간 빨라 같은 날 밤 9시입니다.</p>
+<p>각국 대표는 자기 나라에 마련된 공식 위성 대회에 모입니다. 출발 시각은 같아도 코스와 현지의 낮·밤은 다릅니다. 중계를 볼 때는 선수의 바퀴 수와 함께 그곳이 지금 어떤 시간대인지 확인하면 경기 흐름을 이해하기 쉽습니다.</p>
+<p>국가대표 선발에는 지정 실버티켓 대회 우승과 예선 기간 성적을 바탕으로 한 선발 경로가 있습니다. 나라마다 배정이 달라, 실제 명단은 <a href="https://bigsbackyardultra.com/world-team-championship-2026/" target="_blank" rel="noopener noreferrer">공식 국가별 로스터</a>를 확인하는 것이 정확합니다.</p>
+
+<h2>처음 본다면 이 세 가지를 따라가 보세요</h2>
+<ul>
+<li><strong>이번 정각에 몇 명이 다시 출발했는가.</strong> 바퀴를 마친 인원과 다음 출발에 선 인원을 함께 봅니다.</li>
+<li><strong>선수가 돌아온 뒤 얼마나 시간이 남았는가.</strong> 도착 시각을 보면 다음 출발 전 준비할 여유를 알 수 있습니다.</li>
+<li><strong>국가별 누적 바퀴가 어떻게 변하는가.</strong> 개인 선두와 팀 순위를 따로 따라가면 팀전의 흐름이 보입니다.</li>
+</ul>
+<p>현재 확인 가능한 관전 경로로는 호주 주최자 Red’s Backyard Ultra가 안내하는 <a href="https://www.redsbackyardultra.com.au/2026worldteamchampionships" target="_blank" rel="noopener noreferrer">호주팀 중계·라이브 기록 링크</a>가 있습니다. 해당 페이지의 ‘Follow the Action’에서 확인하세요. 호주팀을 따라가는 경로이므로 세계 전체 중계로 생각하지는 마세요.</p>
+<p>직접 참가할 대회를 찾는다면 노면부터 살펴보세요. 백야드라는 경기 방식만으로 모든 코스가 같은 산길이라고 볼 수는 없습니다. 트레일 코스용 장비를 고를 때는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 용도·가격대 안내</a>에서 선택 기준을 확인할 수 있습니다.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq"><p class="faq-q">Q. 쉬거나 잠을 자도 되나요?</p><p class="faq-a">A. 한 바퀴를 마친 뒤 다음 정각까지 남는 시간에 휴식·보급·정비를 합니다. 다만 다음 바퀴의 출발에는 맞춰야 합니다.</p></div>
+<div class="faq"><p class="faq-q">Q. 참가국 수나 한국팀 명단은 어디서 보나요?</p><p class="faq-a">A. 공식 국가별 로스터를 확인하세요. 이 글에서는 최종 참가국 수와 한국팀 출전을 확정해 적지 않았습니다.</p></div>
+<div class="faq"><p class="faq-q">Q. 언제 끝나는 대회인가요?</p><p class="faq-a">A. 정해진 시간이나 바퀴 수를 채우면 끝나는 방식이 아닙니다. 남은 선수들의 진행과 완료한 바퀴를 공식 기록에서 확인하면 됩니다.</p></div>
+
+<p><small>출처: Big’s Backyard Ultra 공식 대회·선발 안내, 호주 울트라·트레일러너협회, 호주 주최자 Red’s Backyard Ultra, Canadian Running(2026년 10월 14일). 2026년 10월 15일 확인. 약 6.706km는 소수 셋째 자리까지 반올림한 표기이며, 휴식 시간과 300바퀴는 규칙 설명용 계산 예시입니다.</small></p>
+`,
+  },
+  {
     id: 'garmin-vo2max-estimate-guide',
     slug: 'garmin-vo2max-estimate-guide',
     title: '가민 VO₂ Max 떨어지는 이유 | 워치 추정치와 실제 체력, 이렇게 구분하세요',
