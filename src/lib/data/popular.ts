@@ -21,7 +21,7 @@ export interface PopularData {
 }
 
 export const popular: PopularData = {
-  generatedAt: '2026-10-01',
+  generatedAt: '2026-10-15',
   windowDays: 28,
   shoesByCategory: {
       "입문화": [
@@ -34,25 +34,25 @@ export const popular: PopularData = {
           "new-balance-1080-v15"
       ],
       "레이싱": [
-          "asics-superblast-3"
+          "new-balance-sc-rebel"
       ],
       "안정화": [
-          "hoka-arahi-8"
+          "asics-gel-kayano-33"
       ],
       "트레일": [
           "asics-gel-venture-10"
       ]
   },
   trendingShoes: [
-      "adidas-adizero-evo-sl",
-      "asics-novablast-5",
-      "new-balance-1080-v15"
+      "puma-velocity-nitro-5",
+      "on-cloudmonster-2",
+      "on-cloudmonster-3-hyper"
   ],
   posts: [
       "new-balance-running-shoes-lineup-tier-guide-2026",
+      "running-shoes-recommend-by-price-2026",
       "asics-gel-kayano-33-review",
       "li-ning-red-hare-9-lineup-2026",
-      "running-shoes-recommend-by-price-2026",
       "stability-shoes-self-diagnosis-fit-guide-2026"
   ],
 };
