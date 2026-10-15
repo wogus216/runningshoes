@@ -90,6 +90,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
   return (
     <div
       aria-hidden={!isVisible}
+      data-floating-ui // 러닝카드 안내 카드가 이 바를 피해 위로 올라간다(running-card-promo.tsx place)
       className={[
         'fixed inset-x-3 z-40 md:hidden',
         anchorAtBottom ? '' : 'bottom-[calc(env(safe-area-inset-bottom)+0.75rem)]',

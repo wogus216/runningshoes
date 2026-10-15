@@ -46,6 +46,7 @@ export function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
+      data-floating-ui // 러닝카드 안내 카드가 이 버튼을 피해 위로 올라간다
       className={cn(
         'fixed left-4 z-30 md:bottom-6 md:left-6',
         'bottom-[calc(env(safe-area-inset-bottom)+6rem)]',

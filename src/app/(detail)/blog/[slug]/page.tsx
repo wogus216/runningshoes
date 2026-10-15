@@ -22,6 +22,7 @@ import { RaceActionStrip } from '@/components/blog/race/race-action-strip';
 import { RaceFactGrid } from '@/components/blog/race/race-fact-grid';
 import { RaceHighlights } from '@/components/blog/race/race-highlights';
 import { RaceElevation } from '@/components/blog/race/race-elevation';
+import { RunningCardPromo } from '@/components/running-card-promo';
 
 // 블로그 대회 글 제목에서 거리 추론 (신발/젤 CTA 매핑용)
 function inferRaceDistances(title: string): string[] {
@@ -290,6 +291,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
               </Fragment>
             ));
           })()}
+          {/* 러닝카드 안내 — 감지 지점은 본문 마지막 조각 바로 뒤(본문 안 FAQ 포함, 본문 밖 브릿지·FAQ·광고·관련 글 제외).
+              '완독'이 아니라 '본문 끝 도달'을 잰다. */}
+          <RunningCardPromo sourceType="blog" sourceSlug={slug} />
         </article>
 
         {/* 대회 글 → 신발/젤 CTA (수동 링크가 적은 글에 자동 삽입) */}

@@ -22,6 +22,7 @@ export function CompareFloatingButton() {
 
   return (
     <div
+      data-floating-ui // 러닝카드 안내 카드가 이 버튼을 피해 위로 올라가고, 패널을 펼친 동안은 비켜 준다
       className={cn(
         "fixed right-4 z-40 md:right-6 md:bottom-6",
         "bottom-[calc(env(safe-area-inset-bottom)+6rem)]",

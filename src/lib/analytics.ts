@@ -55,6 +55,19 @@ export type RunnerEventParams = {
   step_number?: number;
 };
 
+/**
+ * 블로그·신발 상세의 러닝카드 안내 카드 이벤트. 보내는 쪽은 `@/components/running-card-promo`.
+ * clicked 는 참여 링크 클릭일 뿐 결과 생성 완료가 아니다. 클릭률 = clicked 수 / viewed 수(순사용자 전환율 아님).
+ */
+export type RunnerPromoEvent = 'runner_promo_viewed' | 'runner_promo_clicked' | 'runner_promo_dismissed';
+
+export type RunnerPromoEventParams = {
+  campaign_id: string;
+  source_type: 'blog' | 'shoe';
+  source_slug: string;
+  transport_type?: 'beacon';
+};
+
 type Gtag = (command: 'event', event: string, params?: Record<string, unknown>) => void;
 
 export type PurchaseClickInput = {
@@ -114,7 +127,8 @@ const fired = new Set<string>();
 /** gtag가 없는 환경(SSR, 애드블락 등)에서는 조용히 무시한다. */
 export function track(event: HomeEvent, params?: EventParams): void;
 export function track(event: RunnerEvent, params?: RunnerEventParams): void;
-export function track(event: HomeEvent | RunnerEvent, params: EventParams | RunnerEventParams = {}): void {
+export function track(event: RunnerPromoEvent, params: RunnerPromoEventParams): void;
+export function track(event: HomeEvent | RunnerEvent | RunnerPromoEvent, params: EventParams | RunnerEventParams | RunnerPromoEventParams = {}): void {
   if (typeof window === 'undefined') return;
   const gtag = (window as unknown as { gtag?: Gtag }).gtag;
   if (typeof gtag !== 'function') return;
@@ -124,7 +138,8 @@ export function track(event: HomeEvent | RunnerEvent, params: EventParams | Runn
 /** 같은 key로는 세션 내 1회만 발화한다(광고 노출·인덱스 확장 등 중복 방지). */
 export function trackOnce(key: string, event: HomeEvent, params?: EventParams): void;
 export function trackOnce(key: string, event: RunnerEvent, params?: RunnerEventParams): void;
-export function trackOnce(key: string, event: HomeEvent | RunnerEvent, params?: EventParams | RunnerEventParams): void {
+export function trackOnce(key: string, event: RunnerPromoEvent, params: RunnerPromoEventParams): void;
+export function trackOnce(key: string, event: HomeEvent | RunnerEvent | RunnerPromoEvent, params?: EventParams | RunnerEventParams | RunnerPromoEventParams): void {
   if (fired.has(key)) return;
   fired.add(key);
   // 두 오버로드 모두 같은 track 본문을 지난다. 단언은 오버로드를 고르려는 타입뿐이다(런타임 코드는 전과 같다).

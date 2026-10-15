@@ -20,6 +20,7 @@ import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
 import { RelatedPosts } from '@/components/detail/related-posts';
 import { getPostsLinkingToShoe } from '@/lib/data/blog';
+import { RunningCardPromo } from '@/components/running-card-promo';
 
 type ShoeDetailPageProps = {
   params: Promise<{
@@ -355,6 +356,10 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
             {/* 핵심 3박스: 추천/비추천/특징 */}
             <CoreBoxes shoe={shoe} />
+
+            {/* 러닝카드 안내 — 핵심 리뷰·추천 대상(CoreBoxes)을 본 지점. 뒤의 상세 탭을 읽었다고 보지 않는다.
+                상세 정보 준비 중 페이지(이 분기 밖)에는 달지 않는다. */}
+            <RunningCardPromo sourceType="shoe" sourceSlug={shoe.slug} />
 
             {/* 본문 중간 광고 (핵심 정보 후, 상세 탭 전) */}
             <AdSlot
