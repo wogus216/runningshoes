@@ -189,9 +189,10 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
   // 화면에 그리기 전에 자리를 잡고, 공간이 있을 때만 이 탭의 1회를 쓴다. 기록을 못 남기면 띄우지 않는다.
   useLayoutEffect(() => {
     if (stage !== 'measuring' || !cardRef.current) return;
-    // 한 프레임에 위로 크게 뛰면(목차 이동 등) IO 콜백 없이 '지나침'이 남을 수 있다 — 띄우기 직전에 실제 자리를 다시 본다
+    // 한 프레임에 위로 크게 뛰면(목차 이동 등) IO 콜백 없이 '지나침'이 남을 수 있다 — 띄우기 직전에 실제 자리를 다시 본다.
+    // 기준은 IO 와 같은 레이아웃 뷰포트 높이(clientHeight). innerHeight 는 핀치 줌·iOS 툴바에 따라 달라 판정이 어긋난다.
     const sentinel = sentinelRef.current;
-    if (!sentinel || sentinel.getBoundingClientRect().top >= window.innerHeight - CARD_ZONE) {
+    if (!sentinel || sentinel.getBoundingClientRect().top >= document.documentElement.clientHeight - CARD_ZONE) {
       inView.current = false;
       setStage('waiting');
       return;
