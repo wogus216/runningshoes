@@ -1,0 +1,7 @@
+# Editorial image sources — 2026-10-16
+
+- `cube-attempt.webp` and `../george-scholey-rubiks-cube-mile-2026.webp`: Daniel Pham / Canadian Running. Actual Toronto cube-mile attempt photograph from https://runningmagazine.ca/the-scene/toronto-runner-smashes-rubiks-cube-mile-world-record/ . Original image: https://runningmagazine.ca/wp-content/uploads/2026/10/scholey-rubiks-cube-e1792094877167-1200x675.jpg .
+- `hakone-2025.webp` and `../hakone-ekiden-qualifier-2026.webp`: 月陸Online / 月刊陸上競技. Photograph captioned as the **2025 qualifier**, used as an explicitly identified archive image. Source: https://www.rikujyokyogi.co.jp/archives/219435 . Original: https://www.rikujyokyogi.co.jp/wp-content/uploads/2026/10/ee892c0808de38c29cf7a4b4020d3102.jpg .
+- `refill-station.webp` and `../new-york-marathon-water-refill-stations-2026.webp`: HydraPak's Chicago Distance Series announcement, https://www.hydrapak.com/fr/blogs/beyond-adventure/bank-of-america-chicago-marathon . Chicago 13.1 refill equipment photograph used as an explicitly identified reference image, not as a photograph of the future New York event. Original: https://cdn.shopify.com/s/files/1/0249/4598/3578/files/img-22faa863-2d94-49c8-8be0-6e07ce254f92_1.png?v=1780433680 .
+
+Images resized to WebP. Thumbnails also crop the source and add an editorial headline. Source and archive/reference labels appear in article captions or thumbnail artwork.

@@ -2,6 +2,161 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'hakone-ekiden-qualifier-2026',
+    slug: 'hakone-ekiden-qualifier-2026',
+    title: '하코네 역전 예선 2026 | 상위 10명의 하프 기록을 더하는 팀전, 10월 17일 관전법',
+    description: '제103회 하코네 역전 예선은 2026년 10월 17일 오전 8시 30분 예정입니다. 학교별 10~12명이 하프마라톤을 달리고 상위 10명의 합계로 본선 진출 10개교를 선발합니다. 공식 규칙과 방송·기록 확인 경로를 정리했습니다.',
+    thumbnail: '/images/blog/hakone-ekiden-qualifier-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-16',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['하코네 역전', '하코네 예선', '일본 러닝', '하프마라톤', '대학 육상', '해외 러닝 소식'],
+    faqs: [
+      { question: '2026 하코네 역전 예선은 언제 시작하나요?', answer: '공식 요강은 2026년 10월 17일 토요일 오전 8시 30분 출발 예정으로 안내합니다. 일본과 한국의 시각은 같습니다. 이 예선은 2027년 1월 제103회 본선 출전교를 선발합니다.' },
+      { question: '하코네 예선도 릴레이인가요?', answer: '예선은 학교별 10~12명이 하프마라톤 21.0975km를 달리는 방식입니다. 각 학교 상위 10명의 기록 합계로 순위를 정해 10개교를 선발합니다.' },
+      { question: '하코네 예선 기록과 중계는 어디서 확인하나요?', answer: '하코네 공식 사이트의 예선 기록 메뉴와 일본TV의 예선 기록속보를 확인할 수 있습니다. 일본TV는 10월 17일 08:25~10:25 간토 지역 등 방송을 안내합니다. 한국에서의 실시간 재생 가능 여부는 서비스별로 확인해야 합니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>10월 17일 오전 8시 30분 출발 예정입니다.</strong> 한국·일본 시각이 같으며 2027년 1월 하코네 역전 본선 출전권을 놓고 달립니다.</li>
+<li><strong>학교별 상위 10명의 하프 기록을 더합니다.</strong> 10~12명이 출전하고 합계가 빠른 10개교가 선발됩니다.</li>
+<li><strong>선두 선수와 학교별 합계를 함께 보세요.</strong> 개인 순위만으로 본선 진출교가 정해지지 않습니다.</li>
+</ul></div>
+
+<p><strong>하프마라톤에서 같은 학교 선수 열 명의 기록을 더하면 어떤 경기가 될까요?</strong> 10월 17일 열리는 제103회 하코네 역전 예선이 바로 그런 팀전입니다. 어깨띠를 이어 달리는 1월 본선과 달리, 예선에서는 선수들이 각자 하프 거리를 완주합니다.</p>
+<figure><img src="/images/blog/overseas-20261016/hakone-2025.webp" alt="2025년 하코네 역전 예선에서 여러 학교 선수들이 함께 달리는 자료 사진" width="800" height="533" loading="lazy" /><figcaption>2025년 예선 자료 사진. 올해 경기 결과를 보여주는 사진은 아닙니다. 사진: 월륙Online·월간육상경기.</figcaption></figure>
+
+<h2>왜 10번째 주자까지 봐야 할까</h2>
+<p>학교가 내보낼 수 있는 선수는 10~12명입니다. 그중 <strong>상위 10명의 완주 기록 합계</strong>로 학교 순위를 정합니다. 12명이 뛰었다면 11·12번째 기록은 합계에서 빠집니다. 본선 출전권은 상위 10개교에 돌아갑니다.</p>
+<p>이 방식에서는 학교 내 10번째 선수의 1초도 합계에 그대로 들어갑니다. 에이스가 앞에서 벌어놓은 시간과 뒤쪽 선수들이 지켜낸 시간을 함께 봐야 하는 이유입니다. 결승선을 가장 먼저 통과한 선수가 속한 학교도 나머지 선수들의 기록을 기다려야 합니다.</p>
+<table><thead><tr><th>화면에서 볼 것</th><th>의미</th></tr></thead><tbody>
+<tr><td>개인 선두·개인 순위</td><td>각 선수의 현재 경쟁 위치</td></tr>
+<tr><td>학교별 상위 10명 합계</td><td>본선 진출을 결정하는 팀 기록</td></tr>
+<tr><td>팀 10위 부근</td><td>본선 진출권의 경계</td></tr>
+</tbody></table>
+<p>합계가 같으면 상위 10명의 순위 합이 작은 학교가 앞섭니다. 그것도 같을 때는 각 학교 최상위 선수의 순위로 결정합니다. <a href="https://www.hakone-ekiden.jp/_assets/2026/103hakoneyosen_yoko.pdf" target="_blank" rel="noopener noreferrer">공식 예선 요강</a></p>
+
+<h2>집단으로 뛰는 학교, 각자 판단하는 학교</h2>
+<p>같은 유니폼끼리 모여 달리는 장면에도 관심을 가져보세요. 월륙Online의 10월 15일 전망은 학교별 선수층과 전술을 함께 짚습니다. 팀 합계가 걸려 있어도 모든 학교가 같은 방식으로 달릴 필요는 없습니다. 집단이 유지되는지, 선수마다 다른 위치에서 레이스를 이어가는지 보는 재미가 있습니다.</p>
+<p>관전할 때는 특정 선수 한 명의 빠른 출발을 학교 전체의 우세로 바로 읽지 않는 편이 좋습니다. 팀의 기록에 들어갈 열 명이 어디에 있는지가 다음 질문입니다. <a href="https://www.rikujyokyogi.co.jp/archives/219435" target="_blank" rel="noopener noreferrer">월륙Online 예선 전망</a></p>
+
+<h2>날짜·코스·방송과 기록 확인</h2>
+<table><thead><tr><th>항목</th><th>공식 안내</th></tr></thead><tbody>
+<tr><td>예선 출발</td><td>2026년 10월 17일 토요일 08:30 예정</td></tr>
+<tr><td>거리</td><td>하프마라톤 21.0975km</td></tr>
+<tr><td>코스</td><td>육상자위대 다치카와 주둔지 → 다치카와 시가지 → 국영 쇼와기념공원</td></tr>
+<tr><td>일본TV 방송</td><td>10월 17일 08:25~10:25, 간토 지역 등</td></tr>
+<tr><td>본선</td><td>2027년 1월 2~3일</td></tr>
+</tbody></table>
+<p>방송 시각과 경기 출발 시각은 5분 차이가 납니다. <a href="https://www.ntv.co.jp/hakone/info/3760062as8mh7v3nwxdk.html" target="_blank" rel="noopener noreferrer">일본TV 방송 공지</a>는 일본 내 방송 안내이며 한국에서의 실시간 시청을 보장하는 안내는 아닙니다.</p>
+<p>영상 재생이 어렵다면 <a href="https://www.hakone-ekiden.jp/" target="_blank" rel="noopener noreferrer">하코네 공식 홈페이지</a>의 예선 기록 메뉴와 <a href="https://www.ntv.co.jp/hakone/yosen_sougou/" target="_blank" rel="noopener noreferrer">일본TV 예선 기록속보</a>를 확인하세요. 경기 전에는 결과가 비어 있을 수 있습니다. 경기가 끝나면 개인 기록과 학교별 합계를 나란히 살펴보면 됩니다.</p>
+<p><small>2026년 10월 16일 공식 요강·방송 안내와 일본 현지 전망 기사를 대조했습니다. 출발 시각은 공식 요강의 ‘예정’ 표기를 따랐습니다.</small></p>
+`,
+  },
+  {
+    id: 'new-york-marathon-water-refill-stations-2026',
+    slug: 'new-york-marathon-water-refill-stations-2026',
+    title: '뉴욕마라톤 2026 리필 급수대 | 내 물병을 채우는 5곳과 휴대 용기 규정',
+    description: '2026 뉴욕마라톤은 기존 일반 급수대 25곳에 개인 물병을 채우는 리필 급수대 5곳을 추가합니다. 공식 마일 위치와 km 환산, 1L 이하 용기·러닝 베스트 규정, 파리 대회 참가자의 리필 경험을 함께 정리했습니다.',
+    thumbnail: '/images/blog/new-york-marathon-water-refill-stations-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-16',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['뉴욕마라톤', '리필 급수대', '러닝 물병', '소프트플라스크', '마라톤 급수', '해외 러닝 소식'],
+    faqs: [
+      { question: '2026 뉴욕마라톤 리필 급수대는 어디에 있나요?', answer: 'NYRR 공식 발표는 마일 8·14·17·20·23의 5곳을 안내합니다. 약 12.9·22.5·27.4·32.2·37.0km에 해당하며 km는 마일을 환산해 소수 첫째 자리로 반올림한 값입니다.' },
+      { question: '뉴욕마라톤의 기존 컵 급수도 이용할 수 있나요?', answer: 'NYRR는 일반 급수대 25곳과 리필 급수대 5곳을 함께 운영한다고 발표했습니다. 리필 급수대는 개인 컵·물병·플라스크를 채울 수 있는 추가 선택지입니다.' },
+      { question: '러닝 베스트를 입고 뉴욕마라톤에 참가할 수 있나요?', answer: '확인한 NYRR 규정은 앞주머니에 1L 이하 물병을 넣는 베스트를 허용하며 배번호를 가리지 않아야 합니다. 등쪽 물주머니는 사용하지 못하고 대회 전·중에 채우면 안 됩니다. 최종 허용 여부는 대회 보안 검사와 최신 참가자 안내를 따릅니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>뉴욕마라톤에 리필 급수대 5곳이 추가됩니다.</strong> 기존 일반 급수대 25곳과 함께 운영하는 개인 용기용 급수입니다.</li>
+<li><strong>위치는 마일 8·14·17·20·23입니다.</strong> 개인 물병을 들고 달린다면 급수 계획에 표시해 둘 수 있습니다.</li>
+<li><strong>물병과 베스트 규정도 확인하세요.</strong> 용기는 1L 이하, 베스트는 앞주머니 물병과 배번호 노출 조건을 확인해야 합니다.</li>
+</ul></div>
+
+<p><strong>마라톤 급수대에서 컵을 받아 마시는 대신 내 물병을 채우는 선택지가 늘고 있습니다.</strong> 뉴욕로드러너스(NYRR)는 11월 1일 열리는 2026 뉴욕마라톤에 코스 내 셀프 리필 급수대 다섯 곳을 마련한다고 발표했습니다.</p>
+<p>공식 발표는 9월 16일에 나왔습니다. 최근 Believe in the Run의 리필 급수 체험 기사가 이를 다시 조명하면서, 러너가 실제로 어떻게 사용할지가 관심거리로 이어졌습니다.</p>
+<figure><img src="/images/blog/overseas-20261016/refill-station.webp" alt="개인 물병에 물을 채우는 Culligan 리필 급수 설비의 공개 이미지" width="960" height="540" loading="lazy" /><figcaption>개인 물병용 리필 설비 참고 이미지. HydraPak의 시카고 디스턴스 시리즈 소개 자료이며, 2026 뉴욕 대회 현장 사진은 아닙니다. 이미지: HydraPak.</figcaption></figure>
+
+<h2>내 물병을 채울 수 있는 다섯 지점</h2>
+<p>NYRR는 마일 8·14·17·20·23에 각 한 곳씩 리필 급수대를 안내합니다. 한국 러너가 거리 감각을 잡기 쉽도록 km로 환산하면 아래와 같습니다.</p>
+<table><thead><tr><th>공식 위치</th><th>km 환산</th></tr></thead><tbody>
+<tr><td>8마일</td><td>약 12.9km</td></tr>
+<tr><td>14마일</td><td>약 22.5km</td></tr>
+<tr><td>17마일</td><td>약 27.4km</td></tr>
+<tr><td>20마일</td><td>약 32.2km</td></tr>
+<tr><td>23마일</td><td>약 37.0km</td></tr>
+</tbody></table>
+<p><small>환산: 1마일=1.609344km, 소수 첫째 자리 반올림. km 값은 계산값이며 현장 표지 위치를 새로 측정한 값은 아닙니다.</small></p>
+<p>기존 <strong>일반 급수대 25곳</strong>도 함께 안내돼 있습니다. 개인 용기를 들고 갈지는 본인의 장비와 급수 방식에 맞춰 정하면 됩니다. 리필 지점만으로 코스 전체 급수 간격을 판단할 필요는 없습니다. <a href="https://testcache.nyrr.org/media-center/press-release/2026_0916_2026tcsnycmsustainabilityinitiatives" target="_blank" rel="noopener noreferrer">NYRR 공식 발표</a></p>
+
+<h2>물병을 챙긴다면 용량과 베스트부터</h2>
+<p>NYRR의 반입 규정은 급수 용기를 <strong>1L 이하</strong>로 제한하며 유리 용기는 금지합니다. 베스트는 앞주머니의 물병을 사용할 수 있고, 배번호를 가리지 않아야 합니다. 등쪽 물주머니가 함께 달린 제품이라면 그 물주머니에 대회 전이나 도중 물을 채우면 안 됩니다.</p>
+<p>규정에는 허용되는 허리 벨트·가방 등의 유형도 따로 나옵니다. 한국에서 평소 사용하는 장비라고 해서 그대로 허용될 것이라 생각하지 말고, 출국 전에 자신의 물병 용량과 휴대 방식이 맞는지 확인하세요. 보안 구역 반입품은 현장 검사를 받습니다. <a href="https://testcache.nyrr.org/run/guidelines-and-procedures/policies-rules-and-regulations/prohibited-items" target="_blank" rel="noopener noreferrer">NYRR 허용·금지 품목</a></p>
+
+<h2>파리에서 직접 채워본 러너는 어땠을까</h2>
+<p>Believe in the Run의 Ryan Haines는 파리마라톤에서 개인 플라스크를 채운 경험을 썼습니다. 손으로 잡는 호스는 수압이 강하게 느껴졌고, 직접 조절하는 수도꼭지가 채우기 편했다고 설명합니다. 당시에는 개인 최고기록을 노리는 레이스가 아니었다는 조건도 함께 밝혔습니다.</p>
+<p>이 경험에서 가져올 만한 준비는 단순합니다. 달리다 물병을 꺼내고, 뚜껑을 열어 채운 뒤, 다시 넣는 동작을 대회 전에 해보는 것입니다. 기록을 노린다면 멈추는 시간을 포함해 어떤 급수 방식을 쓸지 정할 수 있습니다. 파리의 체험담만으로 뉴욕 현장의 대기시간이나 설비 작동 방식을 단정할 수는 없습니다.</p>
+<p><small>체험 출처: <a href="https://believeintherun.com/articles/chicago-new-york-marathon-culligan-water/" target="_blank" rel="noopener noreferrer">Ryan Haines의 리필 급수 기사</a>. 필자는 Salomon·HydraPak의 플라스크 제공을 밝혔으며 원문에는 제휴 구매 링크가 있습니다.</small></p>
+
+<h2>컵을 얼마나 줄였는지는 대회 뒤의 질문</h2>
+<p>리필 설비가 생긴다는 사실과 실제로 줄어든 일회용품의 양은 별도로 확인할 정보입니다. 이번 공식 발표만으로 뉴욕 대회의 컵 감축 실적을 계산할 수는 없습니다. 참가자에게 지금 필요한 것은 사용할 급수 지점과 반입 가능한 장비입니다.</p>
+<p>한국 대회를 준비한다면 <a href="/blog/fall-marathon-race-day-checklist-2026">대회 당일 준비물 체크리스트</a>와 해당 대회의 급수·장비 규정을 함께 확인하세요.</p>
+<p><small>2026년 10월 16일 NYRR 공식 발표·반입 규정과 실명 체험 기사를 대조했습니다. 설비 참고 사진 출처: <a href="https://www.hydrapak.com/fr/blogs/beyond-adventure/bank-of-america-chicago-marathon" target="_blank" rel="noopener noreferrer">HydraPak의 시카고 디스턴스 시리즈 소개</a>. 실제 운영은 최종 참가자 안내를 따르세요.</small></p>
+`,
+  },
+  {
+    id: 'george-scholey-rubiks-cube-mile-2026',
+    slug: 'george-scholey-rubiks-cube-mile-2026',
+    title: '큐브 4개 풀고 1마일 5분 9초 | 조지 스콜리의 토론토 도전, 기네스 승인 대기',
+    description: '조지 스콜리가 토론토에서 큐브 네 개 풀이 시간까지 포함한 1마일 5:09.25를 기록했습니다. 큐브와 달리기를 번갈아 하는 순서, 계속 작동하는 시계, 기네스 승인 대기 상태를 당사자 게시물과 인터뷰로 확인했습니다.',
+    thumbnail: '/images/blog/george-scholey-rubiks-cube-mile-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-16',
+    category: 'news' as const,
+    readingTime: 3,
+    tags: ['큐브 마일', '조지 스콜리', 'George Scholey', '이색 러닝', '1마일', '해외 러닝 소식'],
+    faqs: [
+      { question: '큐브 마일에서 조지 스콜리가 기록한 시간은 얼마인가요?', answer: '본인이 2026년 10월 12일 공개한 시간은 5분 9.25초입니다. 큐브 네 개를 푸는 시간과 1마일 달리기를 모두 포함하며 시계는 계속 작동합니다.' },
+      { question: '큐브를 달리는 동안 계속 맞추나요?', answer: 'Canadian Running의 당사자 인터뷰는 출발 전 큐브 하나를 풀고, 마지막 바퀴를 제외한 각 바퀴 뒤에 다시 큐브를 푸는 순서를 설명합니다. 큐브 풀이와 달리기를 번갈아 하는 도전입니다.' },
+      { question: '기네스 세계기록으로 공인됐나요?', answer: '10월 16일 확인한 본인 게시물에는 기네스 월드 레코즈의 확인을 기다리고 있다고 명시돼 있습니다. 공개한 도전 기록과 승인 완료 상태를 구분해야 합니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>큐브 네 개 풀이와 1마일 달리기를 합쳐 5:09.25입니다.</strong> 영국 출신 조지 스콜리가 토론토에서 공개한 도전 기록입니다.</li>
+<li><strong>큐브를 푸는 동안에도 시계는 갑니다.</strong> 풀이와 달리기를 번갈아 이어가며 시간을 줄였습니다.</li>
+<li><strong>기네스 승인은 대기 중입니다.</strong> 10월 16일 확인한 당사자 게시물의 안내입니다.</li>
+</ul></div>
+
+<p><strong>1마일을 5분 9.25초에 달렸는데, 그 안에 큐브 네 개를 푸는 시간까지 들어 있습니다.</strong> 조지 스콜리(George Scholey)가 10월 12일 토론토에서 공개한 큐브 마일 도전입니다. 풀이 중에도 시계는 멈추지 않습니다.</p>
+<figure><img src="/images/blog/overseas-20261016/cube-attempt.webp" alt="토론토 큐브 마일 도전에서 큐브를 든 조지 스콜리와 트랙 옆 관중" width="960" height="540" loading="lazy" /><figcaption>큐브 마일 도전 현장의 조지 스콜리. 사진: Daniel Pham / Canadian Running.</figcaption></figure>
+
+<h2>큐브 하나, 한 바퀴, 다시 큐브 하나</h2>
+<p>Canadian Running의 당사자 인터뷰에 따르면 출발 전에 큐브 하나를 풀고, 첫 세 바퀴를 마칠 때마다 새 큐브를 하나씩 풉니다. 마지막에는 남은 거리를 달려 피니시합니다. 미리 큐브를 살펴보고 풀이를 계획하는 시간은 주어지지 않았다고 설명합니다.</p>
+<table><thead><tr><th>순서</th><th>동작</th></tr></thead><tbody>
+<tr><td>출발</td><td>큐브 1개 풀이 → 400m</td></tr>
+<tr><td>두 번째</td><td>새 큐브 풀이 → 400m</td></tr>
+<tr><td>세 번째</td><td>새 큐브 풀이 → 400m</td></tr>
+<tr><td>마지막</td><td>새 큐브 풀이 → 약 409m</td></tr>
+</tbody></table>
+<p>1마일은 <strong>1,609.344m</strong>입니다. 400m 트랙 네 바퀴보다 약 9m 더 길어 마지막 구간에 그 거리가 붙습니다. 5:09.25를 전체 거리로 나누면 <strong>km당 약 3분 12초</strong>에 해당합니다. 이 값은 큐브 풀이 시간까지 포함해 계산한 평균이며, 실제 달린 구간만의 페이스는 아닙니다.</p>
+<p><small>순서와 사전 관찰 조건 출처: <a href="https://runningmagazine.ca/the-scene/toronto-runner-smashes-rubiks-cube-mile-world-record/" target="_blank" rel="noopener noreferrer">Canadian Running의 스콜리 인터뷰</a>, 10월 15일 기사. 거리·평균 페이스는 단위 환산과 계산입니다.</small></p>
+
+<h2>숨찬 상태에서 바로 손을 움직여야 한다</h2>
+<p>스콜리는 인터뷰에서 이번 시도의 큐브 풀이가 평균 약 9초 걸렸다고 말합니다. 같은 큐브라도 사전에 들여다볼 수 있을 때와, 한 바퀴를 빠르게 달린 직후 바로 받아 풀 때의 조건이 달랐던 겁니다.</p>
+<p>달리기 기록만 줄이는 문제에 큐브를 받아들이고 푸는 전환이 더해집니다. 트랙에서 숨을 고르는 몇 초도 전체 시간에 들어가므로, 큐브를 잘 푸는 능력과 반복해서 빠르게 달리는 능력을 한 도전 안에서 연결해야 합니다.</p>
+
+<h2>기록 공개와 기네스 승인, 지금 확인된 단계</h2>
+<p>스콜리는 자신의 <a href="https://www.instagram.com/reel/Deaa2ZmOUCm/" target="_blank" rel="noopener noreferrer">10월 12일 게시물</a>에서 5:09.25를 공개하면서 기네스 확인은 아직 대기 중이라고 밝혔습니다. 영상과 증인 진술, 계시 자료를 모아 검토받아야 한다는 설명입니다.</p>
+<p>따라서 현재 전할 소식은 <strong>‘큐브 네 개를 포함해 1마일 5:09.25를 공개했다’</strong>까지입니다. 승인 결과는 기네스나 당사자의 후속 발표로 확인할 수 있습니다.</p>
+<p>도전 순서를 더 살펴보고 싶다면 WCA 웹사이트에 게시된 <a href="https://www.worldcubeassociation.org/competitions/SwisscubingCupMBII2026" target="_blank" rel="noopener noreferrer">별도 대회의 큐브 마일 안내</a>에도 큐브 풀이와 트랙 주행을 번갈아 하는 방식이 나옵니다. 이 안내는 스콜리의 기네스 심사 규정 자체를 뜻하지는 않습니다.</p>
+<p><small>2026년 10월 16일 당사자 캡션·실명 인터뷰·별도 대회 안내를 대조했습니다. 전체 영상의 계시나 큐브 풀이를 자체 판정한 기록은 아닙니다. 현장 사진 출처: Daniel Pham / Canadian Running.</small></p>
+`,
+  },
+  {
     id: 'dongma-run-journey-medal-2026',
     slug: 'dongma-run-journey-medal-2026',
     title: '2026 런저니 메달 공개 | 서울·공주·경주 완주 조건과 경주 수령 안내',
