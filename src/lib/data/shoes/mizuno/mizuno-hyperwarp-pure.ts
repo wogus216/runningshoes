@@ -67,7 +67,9 @@ export const shoe: Shoe = {
     costPerKm: 1545,
     valueRating: 5,
     priceTier: 'super-premium',
-    alternatives: ['asics-metaspeed-ray', 'nike-streakfly-2', 'saucony-endorphin-elite-2'],
+    // 2026-10-16: 정가 399,000→309,000 정정 후 가격대(±3만) 기준으로 교체. 메타스피드 레이(399,000)·스트릭플라이 2(219,000)는
+    // 특성이 가장 가까워 similarShoes 에 남긴다.
+    alternatives: ['nike-vaporfly-4', 'adidas-adios-pro-4', 'saucony-endorphin-elite-2'],
   },
 
   detailedSpecs: {

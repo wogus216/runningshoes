@@ -81,7 +81,7 @@ export const shoe: Shoe = {
     plate: '웨이브 플레이트 (뒤꿈치~미드풋 강성·가이드, 안쪽 지지 중심에서 진화)',
     outsole: '내마모 러버 (RunRepeat 랩 마모 0.5mm)',
     upper: '엔지니어드 메쉬',
-    width: '표준 — RunRepeat 랩 토박스 72.7mm(평균 73.2mm보다 0.5mm 좁음). Doctors of Running은 전체적으로 "slightly wide"이나 뒤꿈치가 얕아 고정이 약하다고 평가. 한국 공식몰에 SW(J1GC2645 계열) 별도 상품 판매 확인 — SW 의미는 공식 설명 미확인(추정: 슈퍼와이드)',
+    width: '표준 — RunRepeat 랩 토박스 72.7mm(평균 73.2mm보다 0.5mm 좁음). Doctors of Running은 전체적으로 "slightly wide"이나 뒤꿈치가 얕아 고정이 약하다고 평가. 한국 공식몰(kor.mizuno.com WAVE INSPIRE 22 카테고리)에 SW 별도 상품 9종(남 J1GC2645 SW·여 J1GD2645 SW, 같은 169,000원) 판매 확인(2026-10-16). 상품 페이지 텍스트에 SW 의 뜻·발볼 표기가 없어 의미는 여전히 미확인(추정: 슈퍼와이드 — 미즈노 일본 표기 관례). 별도 폭 SKU 자체는 확정',
     durability: '800km 안팎(추정) — 아웃솔 마모 0.5mm(RunRepeat 랩)는 측정했으나 km 환산은 공식 없음',
     price: '₩169,000 (미즈노 코리아 소비자가, 2026-10-02 확인 — 할인가 ₩135,200 표기) · 미국 $149.95 · 21은 ₩159,000',
     costPerKm: '약 ₩211/km (800km 가정, 추정)',

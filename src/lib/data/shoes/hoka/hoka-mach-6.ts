@@ -91,7 +91,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '러버 커버리지',
     upper: '엔지니어드 메쉬',
-    width: '좁은 편 (와이드 옵션 있음) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁고 엄지 부위에서 급격히 좁아지는 테이퍼형',
+    width: '좁은 편 (와이드 2E 옵션 있음 — 한국 판매 확인: 롯데ON 「[호카]호카 마하 6 와이드 남성 러닝화 1147833-BNGH 2E」 2026-10-16. hoka.co.kr 은 접속 불가) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁고 엄지 부위에서 급격히 좁아지는 테이퍼형',
     durability: '500km',
     price: '₩185,000 (MSRP) / 세일 시 ₩160,000~',
     costPerKm: '약 ₩411/km (450km 기준)',
