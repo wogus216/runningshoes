@@ -2,6 +2,144 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'dongma-run-journey-medal-2026',
+    slug: 'dongma-run-journey-medal-2026',
+    title: '2026 런저니 메달 공개 | 서울·공주·경주 완주 조건과 경주 수령 안내',
+    description: '2026 동마 런저니 메달이 공개됐습니다. 세 도시를 담은 디자인과 이름·기록 각인, 서울마라톤 완주 및 공주·경주 10km 이상 완주 조건을 정리했습니다. 경주실내체육관 멤버십&런저니존은 배번호 하단 2026 RUN JOURNEY 표시를 확인하세요.',
+    thumbnail: '/images/blog/dongma-run-journey-medal-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-16',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['런저니 메달', '동마 런저니', '경주마라톤', '서울마라톤', '공주백제마라톤', '마라톤 메달'],
+    faqs: [
+      { question: '2026 런저니 메달은 어떤 조건으로 받나요?', answer: '서울마라톤 공식 런저니 안내는 2026 서울마라톤을 완주한 런저니 레이스 참가자가 공주백제마라톤과 경주마라톤에서 각각 10km 이상 코스를 완주하면 추가 메달을 받는다고 설명합니다. 현장 대상 확인을 위해 배번호 하단의 2026 RUN JOURNEY 표시도 확인하세요.' },
+      { question: '공주와 경주에서 풀코스를 뛰어야 하나요?', answer: '공식 런저니 안내의 하반기 조건은 두 대회 각각 10km 이상 코스 완주입니다. 세 대회 모두 풀코스를 완주해야 한다는 조건으로 바꾸어 읽지 마세요.' },
+      { question: '경주에서는 어디에서 메달을 받나요?', answer: '경주마라톤의 멤버십&런저니존은 경주실내체육관에 마련됩니다. 배번호 하단에 2026 RUN JOURNEY가 표시된 참가자가 입장할 수 있으며, 골인 후 해당 완주자에게 런저니 메달을 지급하고 성명·기록 각인을 안내합니다. 세부 이동 동선은 현장 안내를 따르세요.' },
+      { question: '메달에 이름과 기록을 새길 수 있나요?', answer: '경주마라톤 공식 멤버십&런저니존 안내에 성명과 기록 각인이 명시돼 있습니다. 공개된 뒷면 사진의 이름과 기록은 디자인을 보여주는 예시입니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>2026 런저니 메달이 공개됐습니다.</strong> 서울·공주·경주를 한 메달에 담고, 뒷면에 이름과 기록을 새길 수 있습니다.</li>
+<li><strong>런저니 참가자의 세 대회 완주를 기념합니다.</strong> 공식 안내의 조건은 서울마라톤 완주와 공주·경주 각각 10km 이상 코스 완주입니다.</li>
+<li><strong>경주에서는 배번호 하단을 확인하세요.</strong> ‘2026 RUN JOURNEY’ 표시가 있는 참가자는 경주실내체육관의 전용 존을 이용하며, 해당 완주자에게 골인 후 메달을 지급합니다.</li>
+</ul></div>
+
+<p>한반도 지도에 보석 세 개를 박고, 그 둘레에 세 도시의 풍경을 새겼습니다. 경주마라톤 사무국이 <strong>2026 런저니(RUN JOURNEY) 메달</strong>을 공개했습니다. 서울에서 시작해 공주를 거쳐 경주까지 이어지는 한 해의 달리기를 기념하는 메달입니다.</p>
+<p>마지막 대회인 경주마라톤은 <strong>10월 17일 토요일</strong> 열립니다. 수령 대상이라면 메달 사진과 함께 배번호 표시, 전용 존 위치도 미리 확인해 두세요.</p>
+
+<figure><img src="/images/blog/runjourney-medal-2026/front.webp" alt="경주마라톤 사무국이 공개한 2026 런저니 메달 앞면과 세 도시의 이름이 새겨진 끈" width="960" height="1280" loading="lazy" /><figcaption>공개된 런저니 메달 앞면. 사진: 경주마라톤 사무국 공식 인스타그램.</figcaption></figure>
+
+<h2>서울·공주·경주를 담은 메달</h2>
+<p>메달 중앙에는 한반도 지도가 있고, 지도 위에는 보라·주황·빨강 보석이 배치돼 있습니다. 공개 이미지에서는 각각 서울마라톤·공주백제마라톤·경주마라톤의 고유색으로 소개합니다. 주변에는 도시를 상징하는 건축물과 문양이 들어가고, 끈에도 세 대회 이름이 이어집니다.</p>
+<p>뒷면은 이름과 세 대회의 종목·기록을 남기는 자리입니다. 같은 디자인의 메달이라도 자신이 달린 거리와 시간을 새기면 한 해의 기록을 함께 보관할 수 있습니다.</p>
+<figure><img src="/images/blog/runjourney-medal-2026/back.webp" alt="참가자 이름과 서울·공주·경주 각 대회의 종목 및 기록을 각인한 런저니 메달 뒷면 공개 예시" width="960" height="1280" loading="lazy" /><figcaption>뒷면 각인 예시. 사진 속 성명과 기록은 공개 이미지의 예시이며 실제 수령자의 기록으로 인용한 것이 아닙니다. 사진: 경주마라톤 사무국.</figcaption></figure>
+<p><small>디자인 원문: <a href="https://www.instagram.com/gyeongju__marathon/p/DehHjKeFEoZ/" target="_blank" rel="noopener noreferrer">경주마라톤 공식 메달 공개</a>.</small></p>
+
+<h2>세 대회 모두 풀코스를 뛰어야 하나요?</h2>
+<p>서울마라톤 공식 런저니 안내는 <strong>2026 서울마라톤을 완주한 런저니 레이스 참가자</strong>가 하반기 공주백제마라톤과 경주마라톤에서 <strong>각각 10km 이상 코스</strong>를 완주하면 런저니 메달을 추가로 받는다고 설명합니다.</p>
+<table><thead><tr><th>확인할 대회</th><th>공식 런저니 안내의 완주 조건</th></tr></thead><tbody>
+<tr><td>2026 서울마라톤</td><td>해당 대회 완주</td></tr>
+<tr><td>2026 공주백제마라톤</td><td>10km 이상 코스 완주</td></tr>
+<tr><td>2026 경주마라톤</td><td>10km 이상 코스 완주</td></tr>
+</tbody></table>
+<p>따라서 공주와 경주까지 모두 풀코스로 달려야 한다는 뜻은 아닙니다. 각 대회의 완주 메달에 더해 받는 별도 메달이며, 런저니 참가 여부와 현장 대상 표시는 함께 확인해야 합니다. <a href="https://seoul-marathon.com/89" target="_blank" rel="noopener noreferrer">서울마라톤 공식 런저니 안내</a></p>
+
+<h2>경주에서 받는다면 배번호부터 확인하세요</h2>
+<p>경주마라톤 공식 <strong>‘멤버십&런저니존 이용 안내’</strong>에 따르면 전용 존은 <strong>경주실내체육관</strong>에 마련됩니다. 입장 대상은 배번호 하단에 <strong>‘2026 RUN JOURNEY’</strong>가 표시된 참가자입니다.</p>
+<ol>
+<li><strong>출발 전:</strong> 배번호 표시를 확인하고 경주실내체육관의 전용 물품보관소·탈의실을 이용합니다. 짐을 맡긴 뒤 본인 출발그룹의 집결 위치로 이동합니다.</li>
+<li><strong>골인 후:</strong> 해당 완주자에게 런저니 메달을 지급하며 성명·기록 각인을 안내합니다. 서비스별 이동 동선은 현장 안내를 따릅니다.</li>
+<li><strong>기록 포토존:</strong> 배번호 확인 후 촬영할 수 있습니다.</li>
+</ol>
+<p>본인이 수령 대상이라고 생각하는데 배번호에 표시가 없다면, 대회 전 사무국에 참가 정보와 배번호를 확인하세요. 세 대회 기록을 갖고 있다는 이유만으로 현장 전용 존에 바로 입장할 수 있다고 판단하지 않는 편이 좋습니다.</p>
+<p><small>수령·이용 원문: <a href="https://www.gyeongjumarathon.com/52/?idx=175078781&bmode=view" target="_blank" rel="noopener noreferrer">경주마라톤 공식 멤버십&런저니존 안내</a> · <a href="https://www.instagram.com/gyeongju__marathon/p/DebJM_Oj5Rq/" target="_blank" rel="noopener noreferrer">같은 내용의 공식 인스타그램 안내</a>. 2026년 10월 16일 확인.</small></p>
+
+<h2>경주 대회 전날 챙길 것</h2>
+<p>메달을 받을 곳과 출발그룹 집결 위치는 따로 확인하세요. 짐을 맡긴 뒤 출발 구역까지 이동할 시간이 필요합니다. 배번호는 입장 확인과 기록 포토존에도 쓰이므로 골인 후에도 보관하세요.</p>
+<p>마라톤 준비물을 다시 점검하고 싶다면 <a href="/blog/fall-marathon-race-day-checklist-2026">마라톤 준비물 체크리스트</a>에서 장비와 대회 당일 준비를 확인할 수 있습니다.</p>
+<p><small>이 글은 2026년 10월 16일 공식 메달 공개 이미지, 서울마라톤 런저니 안내, 경주마라톤 현장 이용 안내를 대조해 작성했습니다. 수령 운영이 바뀌면 사무국의 최종 안내를 우선하세요.</small></p>
+`,
+  },
+  {
+    id: 'jtbc-seoul-marathon-pacemaker-2026',
+    slug: 'jtbc-seoul-marathon-pacemaker-2026',
+    title: '2026 JTBC 서울마라톤 페이스메이커 | 풀코스 65명·10K 7명, 그룹별 목표 기록표',
+    description: '2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다. 풀코스 A~H 8개 그룹의 목표 완주 기록과 배치 인원, 10K 35·40·50·60분 페이서를 정리했습니다. 풀코스 광화문·10K 상암 분리 출발과 엑스포 안내도 함께 확인하세요.',
+    thumbnail: '/images/blog/jtbc-seoul-marathon-pacemaker-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-16',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['JTBC 서울마라톤', '제마 페이스메이커', '페이스메이커', '출발그룹', '10K 페이서', '코리아러닝엑스포'],
+    faqs: [
+      { question: '2026 JTBC 서울마라톤 페이스메이커는 몇 명인가요?', answer: '공식 공개 기준 풀코스 A~H 8개 출발그룹에 총 65명, 10K에 7명입니다.' },
+      { question: 'JTBC 서브4 페이서는 어느 그룹에 있나요?', answer: '목표 완주 기록 4시간 페이서는 D그룹 5명과 E그룹 2명으로 안내됐습니다. D그룹 스페셜 페이서는 디어입니다. 페이서 배치표는 본인의 출발그룹을 바꾸는 안내가 아니므로 배정된 그룹 안에서 확인하세요.' },
+      { question: '10K 50분 페이스메이커는 어느 그룹에 있나요?', answer: 'B그룹 허인화, C그룹 홍성훈이 50분 목표 페이서로 공개됐습니다. 본인의 배정 그룹과 목표 시간을 함께 확인하세요.' },
+      { question: '풀코스와 10K의 출발 장소가 같은가요?', answer: '다릅니다. 10월 12일 공식 코스 안내 기준 풀코스는 광화문광장 출발·올림픽공원 도착, 10K는 상암월드컵공원 출발·여의도공원 도착입니다. 두 종목 모두 집결 06:30, 출발 07:30으로 안내됐습니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>풀코스 페이스메이커는 총 65명입니다.</strong> A~H 8개 그룹에서 목표 완주 기록별로 배치됩니다.</li>
+<li><strong>같은 목표 기록도 출발그룹이 다릅니다.</strong> 예를 들어 4시간 페이서는 D·E그룹에 있으니 본인의 배정 그룹부터 확인하세요.</li>
+<li><strong>10K는 7명, 출발지는 상암입니다.</strong> 풀코스는 광화문광장에서 출발하므로 두 종목의 집결 장소를 구분해야 합니다.</li>
+</ul></div>
+
+<p><strong>2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다.</strong> 11월 1일 대회에서 풀코스는 A~H 8개 출발그룹에 65명, 10K는 7명이 배치됩니다.</p>
+<p>목표 완주 기록만 찾기 전에 배번호·참가자 안내에서 자신의 출발그룹을 먼저 확인하세요. 같은 3시간 또는 4시간 페이서가 여러 그룹에 나뉘어 있습니다. 아래 시간은 km당 페이스가 아니라 <strong>각 페이서의 목표 완주 기록</strong>입니다.</p>
+
+<h2>풀코스: 내 그룹에 어떤 목표 기록이 있나요?</h2>
+<table><thead><tr><th>출발그룹</th><th>목표 완주 기록 · 배치 인원</th><th>합계</th></tr></thead><tbody>
+<tr><td>A</td><td>2:49 · 2명</td><td>2명</td></tr>
+<tr><td>B</td><td>3:00 · 2명 / 3:10 · 2명 / 3:20 · 2명</td><td>6명</td></tr>
+<tr><td>C</td><td>3:00 · 1명 / 3:10 · 1명 / 3:20 · 2명 / 3:30 · 5명 / 3:40 · 2명</td><td>11명</td></tr>
+<tr><td>D</td><td>3:40 · 4명 / 3:50 · 4명 / 4:00 · 5명</td><td>13명</td></tr>
+<tr><td>E</td><td>3:50 · 2명 / 4:00 · 2명 / 4:10 · 3명 / 4:20 · 2명 / 4:30 · 2명</td><td>11명</td></tr>
+<tr><td>F</td><td>4:10 · 2명 / 4:30 · 2명 / 4:50 · 2명</td><td>6명</td></tr>
+<tr><td>G</td><td>4:10 · 2명 / 4:40 · 2명 / 4:50 · 2명</td><td>6명</td></tr>
+<tr><td>H</td><td>4:20 · 2명 / 4:30 · 2명 / 4:40 · 2명 / 5:00 · 4명</td><td>10명</td></tr>
+</tbody></table>
+<p><small>시간은 시:분. 공식 배치표를 옮겼으며 그룹별 합계는 표의 인원을 더한 값입니다. 전체 합계는 65명입니다.</small></p>
+<p>스페셜 페이서는 <strong>C그룹 3시간 30분 최혜인</strong>, <strong>D그룹 4시간 디어</strong>입니다. 위 배치 인원 안에 포함된 안내이며 별도로 더해 67명으로 세지 않습니다.</p>
+<p>서브4를 준비한다면 D·E그룹의 4시간 배치를, 4시간 30분을 목표로 한다면 E·F·H그룹의 배치를 확인할 수 있습니다. 다만 <strong>페이서 표는 출발그룹 변경 안내가 아닙니다.</strong> 본인 그룹 안에서 목표 시간과 맞는 배치를 찾으세요.</p>
+
+<h2>10K: 35·40·50·60분 페이서 7명</h2>
+<table><thead><tr><th>출발그룹</th><th>목표 완주 기록</th><th>페이스메이커</th></tr></thead><tbody>
+<tr><td>A</td><td>35분</td><td>김태권</td></tr>
+<tr><td>A</td><td>40분</td><td>이은석</td></tr>
+<tr><td>B</td><td>40분</td><td>김현한</td></tr>
+<tr><td>B</td><td>50분</td><td>허인화</td></tr>
+<tr><td>C</td><td>50분</td><td>홍성훈</td></tr>
+<tr><td>C</td><td>60분</td><td>최은석</td></tr>
+<tr><td>D</td><td>60분</td><td>신재현</td></tr>
+</tbody></table>
+<p>10K 공식 페이서는 골드러시 10K에서 선발됐습니다. 50분 목표는 B·C그룹에, 60분 목표는 C·D그룹에 나뉘어 있습니다. 페이서 이름과 본인 그룹을 함께 저장해 두면 대회 전 다시 찾기 편합니다.</p>
+<p><small>풀코스·10K 배치 출처: <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiWEtln-ZS/" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 페이스메이커 공개</a>. 캡션과 두 장의 공식 배치 이미지를 2026년 10월 16일 대조했습니다.</small></p>
+
+<h2>페이서를 찾기 전에 집결 장소부터</h2>
+<p>올해는 풀코스 출발지가 바뀌어 두 종목을 분리 운영합니다. 예전의 ‘전 종목 상암 출발’ 안내를 저장해 두었다면 이동 계획을 고쳐야 합니다.</p>
+<table><thead><tr><th>종목</th><th>출발·집결</th><th>도착</th></tr></thead><tbody>
+<tr><td>풀코스</td><td>광화문광장</td><td>올림픽공원</td></tr>
+<tr><td>10K</td><td>상암월드컵공원</td><td>여의도공원</td></tr>
+</tbody></table>
+<p>공식 코스 안내의 집결 시각은 <strong>06:30</strong>, 출발은 <strong>07:30</strong>으로 두 종목이 같습니다. 페이서 배치와 별개로 물품보관·출발구역 진입 등 최종 참가자 안내도 확인하세요.</p>
+<p><small>출처: 10월 12일 게시된 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175063425" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 코스 안내</a>. 최신 대회 정보는 <a href="/marathon/jtbc-seoul-marathon-2026">JTBC 서울마라톤 대회 페이지</a>에서도 확인할 수 있습니다.</small></p>
+
+<h2>레이스팩 수령 때 함께 확인할 엑스포 소식</h2>
+<p>레이스팩은 택배 없이 <strong>SETEC 1관 현장</strong>에서 받습니다. 공식 수령 공지는 <strong>10월 29~30일 12:00~20:00, 31일 10:00~23:00</strong>으로 안내합니다. SETEC 주차장은 이용할 수 없으며, 개인 QR코드를 통한 대리 수령이 가능합니다. <a href="https://marathon.jtbc.com/17/?bmode=view&idx=173732896" target="_blank" rel="noopener noreferrer">공식 레이스팩 수령 공지</a></p>
+<p>공식 계정은 코리아러닝엑스포에서 잠스트 무릎보호대를 <strong>10월 29일·30일 각각 선착순 5,000개씩</strong> 증정한다고 안내했습니다. 장소는 <strong>SETEC 1관 레이스팩 수령 현장</strong>, 운영 시간은 <strong>12:00~20:00</strong>입니다. 1인 1개이며 수량이 소진되면 일찍 끝날 수 있습니다.</p>
+<p>이 일정은 보호대 증정 행사에 해당합니다. 레이스팩 수령 전체 일정이나 모든 참가자에게 지급되는 기본 구성으로 읽지 마세요. 방문 날짜와 수령 조건은 별도로 확인하는 편이 좋습니다. <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiSER4H_iK/" target="_blank" rel="noopener noreferrer">공식 증정 행사 안내</a></p>
+
+<h2>대회 전 저장할 세 가지</h2>
+<ul>
+<li><strong>내 종목과 출발그룹:</strong> 풀코스·10K를 구분하고 배정된 그룹을 확인합니다.</li>
+<li><strong>내 그룹의 목표 기록과 페이서:</strong> 완주 목표에 맞는 배치를 표에서 찾습니다.</li>
+<li><strong>대회 당일 이동 경로:</strong> 풀코스는 광화문, 10K는 상암으로 이동하도록 준비합니다.</li>
+</ul>
+<p><small>페이스메이커 배치는 2026년 10월 16일 공식 공개 기준입니다. 이후 변동이나 현장 운영은 사무국의 최종 안내를 따르세요.</small></p>
+`,
+  },
+  {
     id: 'backyard-ultra-world-team-championship-2026',
     slug: 'backyard-ultra-world-team-championship-2026',
     title: '백야드 울트라 세계팀선수권 2026 | 각자 자기 나라에서 달리는 세계선수권',
@@ -279,28 +417,29 @@ export const posts_2026_10: BlogPost[] = [
     id: 'shall-we-run-movie-2026',
     slug: 'shall-we-run-movie-2026',
     title: '션 쉘위런 개봉일·예매 | 세계 7대 마라톤 다큐멘터리, 10월 16일 메가박스',
-    description: '션의 세계 7대 마라톤 도전을 다룬 다큐멘터리 쉘위런(Shall We Run)이 2026년 10월 16일 메가박스에서 개봉합니다. 전체관람가이며 상영 지점·회차는 예매 화면에서 확인할 수 있습니다. 개봉 전 공개 정보를 바탕으로 예매 방법과 관람할 때 나눌 이야기를 정리했습니다.',
+    description: '션의 세계 7대 마라톤 도전을 다룬 다큐멘터리 쉘위런(Shall We Run)이 2026년 10월 16일 메가박스에서 개봉했습니다. 전체관람가이며 상영 지점·회차는 예매 화면에서 확인할 수 있습니다. 공식 영화 정보와 예매 경로, 관람할 때 나눌 이야기를 정리했습니다.',
     thumbnail: '/images/blog/shall-we-run-movie-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-14',
+    updatedAt: '2026-10-16',
     category: 'news' as const,
     readingTime: 4,
     tags: ['쉘위런', '션 다큐멘터리', '쉘위런 개봉일', '쉘위런 예매', 'Shall We Run', '러닝 영화', '세계 7대 마라톤', '메가박스'],
     faqs: [
-      { question: '쉘위런 개봉일은 언제인가요?', answer: '메가박스 공식 영화 페이지 기준 2026년 10월 16일입니다. 10월 14일 확인한 정보이며 상영 지점과 회차는 예매 화면에서 확인하세요.' },
+      { question: '쉘위런 개봉일은 언제인가요?', answer: '메가박스 공식 영화 페이지 기준 2026년 10월 16일입니다. 10월 16일 공식 페이지를 다시 확인했으며 상영 지점과 회차는 예매 화면에서 확인하세요.' },
       { question: '쉘위런은 어디서 예매하나요?', answer: '메가박스 공식 영화 상세 페이지의 예매 메뉴에서 날짜·극장·회차를 확인할 수 있습니다. 메가박스 단독 표시를 확인했으며 모든 지점에서 상영한다는 뜻은 아닙니다.' },
       { question: '쉘위런 관람 등급과 러닝타임은 어떻게 되나요?', answer: '공식 영화 페이지에서 전체관람가를 확인했습니다. 러닝타임은 확인일 기준 0분으로 표시돼 있어 확정된 상영시간으로 안내하지 않습니다. 예매 전에 최신 상세 정보를 확인하세요.' },
-      { question: '영화를 직접 본 리뷰인가요?', answer: '개봉 전 공식 소개와 예매 정보를 바탕으로 한 안내입니다. 관람 후 리뷰는 아닙니다.' },
+      { question: '영화를 직접 본 리뷰인가요?', answer: '공식 소개와 예매 정보를 바탕으로 한 안내입니다. 관람 후 리뷰는 아닙니다.' },
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
 <li><strong>「쉘위런」은 션의 세계 7대 마라톤 도전을 다룬 다큐멘터리입니다.</strong> 영문 제목은 Shall We Run입니다.</li>
 <li><strong>2026년 10월 16일 메가박스 단독 개봉, 전체관람가.</strong> 공식 영화 페이지에서 예매할 수 있습니다.</li>
-<li><strong>상영 지점·회차는 예매 화면에서 따로 확인하세요.</strong> 개봉 전 공개 정보에 기반한 관람 안내입니다.</li>
+<li><strong>상영 지점·회차는 예매 화면에서 따로 확인하세요.</strong> 공식 소개와 예매 정보에 기반한 관람 안내입니다.</li>
 </ul></div>
 
-<p><strong>션의 세계 7대 마라톤 도전을 담은 다큐멘터리 「쉘위런」이 10월 16일 개봉합니다.</strong> 메가박스 단독 상영으로 안내돼 있어 가까운 지점의 상영 여부와 회차를 먼저 확인하면 됩니다.</p>
-<p>개봉 전 공개 정보 기준으로 전체관람가이며, <a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 공식 영화 페이지</a>에서 예매할 수 있습니다. 아직 관람 전이므로 작품 평가는 다루지 않습니다.</p>
+<p><strong>션의 세계 7대 마라톤 도전을 담은 다큐멘터리 「쉘위런」이 10월 16일 개봉했습니다.</strong> 메가박스 단독 상영으로 안내돼 있어 가까운 지점의 상영 여부와 회차를 먼저 확인하면 됩니다.</p>
+<p>10월 16일 공식 페이지 기준 전체관람가이며, <a href="https://www.megabox.co.kr/movie-detail?rpstMovieNo=26066200" target="_blank" rel="noopener noreferrer">메가박스 공식 영화 페이지</a>에서 예매할 수 있습니다. 아직 관람 전이므로 작품 평가는 다루지 않습니다.</p>
 
 <h2>개봉일·관람 등급·예매, 확인된 정보</h2>
 <table><thead><tr><th>항목</th><th>확인한 내용</th></tr></thead><tbody>
@@ -339,6 +478,8 @@ export const posts_2026_10: BlogPost[] = [
 <div class="faq"><p class="faq-q">Q. 러닝을 하지 않는 사람도 볼 만한가요?</p><p class="faq-a">A. 공식 소개는 개인의 도전과 공동체를 소재로 제시합니다. 러닝 경험이 없어도 그 주제에 관심이 있다면 살펴볼 만합니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 쉘위런을 보고 마라톤 훈련법을 배울 수 있나요?</p><p class="faq-a">A. 션의 도전을 따라가는 다큐멘터리이며 개인별 훈련 프로그램이나 회복 지침을 제공하는 자료는 아닙니다. 본인의 훈련량과 회복 계획은 러닝 경험과 몸 상태에 맞춰 별도로 정하세요.</p></div>
 <div class="faq"><p class="faq-q">Q. 온라인으로도 볼 수 있나요?</p><p class="faq-a">A. 확인한 정보는 10월 16일 메가박스 극장 개봉입니다. OTT 공개일은 확인하지 못했습니다.</p></div>
+
+<p><small>10월 16일 공식 상세 페이지에서 개봉일과 예매 경로를 재확인했습니다. 러닝타임은 여전히 0분으로 표시돼 확정 시간을 안내하지 않습니다. 상영 회차와 좌석은 방문할 극장의 예매 화면에서 확인하세요.</small></p>
 
 <h2>확인한 출처</h2>
 <ul>
