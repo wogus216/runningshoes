@@ -80,6 +80,7 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
   anchorRef.current = anchorAtBottom;
   const scrolledDown = useRef(false);
   const inView = useRef(false);
+  const seenBefore = useRef(false);
   const evaluateRef = useRef<() => void>(() => {});
   const onDoneRef = useRef(onDone);
   onDoneRef.current = onDone;
@@ -129,9 +130,17 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
     }
 
     // '닿았거나 지나쳤다'로 본다 — 광고 앵커·비교 패널 때문에 미뤄진 사이 감지 지점이 화면 위로 지나가도,
-    // 막힌 게 풀리면 뜰 수 있게. (위로 되돌아가 감지 지점이 카드 영역 아래로 내려가면 다시 false)
+    // 막힌 게 풀리면 뜰 수 있게. 단 '지나침'은 감지 지점이 띠 안이나 아래에 있는 걸 한 번이라도 본 뒤에만 인정한다 —
+    // 해시(#purchase-links)·스크롤 복원으로 처음부터 감지 지점 아래에서 시작한 방문자는 핵심 박스를 본 적이 없다.
     const io = new IntersectionObserver(([entry]) => {
-      inView.current = entry.rootBounds ? entry.boundingClientRect.top < entry.rootBounds.bottom : entry.isIntersecting;
+      const bounds = entry.rootBounds;
+      if (!bounds) {
+        inView.current = entry.isIntersecting;
+      } else {
+        const top = entry.boundingClientRect.top;
+        if (entry.isIntersecting || top >= bounds.bottom) seenBefore.current = true;
+        inView.current = entry.isIntersecting || (seenBefore.current && top < bounds.bottom);
+      }
       evaluate();
     }, { rootMargin: `0px 0px -${CARD_ZONE}px 0px` });
     io.observe(sentinel);
@@ -180,6 +189,13 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
   // 화면에 그리기 전에 자리를 잡고, 공간이 있을 때만 이 탭의 1회를 쓴다. 기록을 못 남기면 띄우지 않는다.
   useLayoutEffect(() => {
     if (stage !== 'measuring' || !cardRef.current) return;
+    // 한 프레임에 위로 크게 뛰면(목차 이동 등) IO 콜백 없이 '지나침'이 남을 수 있다 — 띄우기 직전에 실제 자리를 다시 본다
+    const sentinel = sentinelRef.current;
+    if (!sentinel || sentinel.getBoundingClientRect().top >= window.innerHeight - CARD_ZONE) {
+      inView.current = false;
+      setStage('waiting');
+      return;
+    }
     const { hasRoom, clearance } = place(cardRef.current);
     if (!hasRoom) setStage('waiting');
     // 마운트 뒤에 다른 탭에서 닫았거나(24시간 숨김) 이 탭의 다른 문서(bfcache 복원 전)가 1회를 썼을 수 있다 — 띄우기 직전에 다시 본다
@@ -188,7 +204,7 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
       setClearance(clearance);
       setStage('shown');
     } else onDone();
-  }, [stage, onDone]);
+  }, [stage, onDone, sentinelRef]);
 
   // 닫거나 페이지를 떠나면 비켜 올라갔던 버튼을 제자리로
   useEffect(() => () => setClearance(''), []);
