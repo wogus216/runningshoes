@@ -46,10 +46,10 @@ export function ScrollToTop() {
   return (
     <button
       onClick={scrollToTop}
-      data-floating-ui // 러닝카드 안내 카드가 이 버튼을 피해 위로 올라간다
+      data-floating-ui="yields" // 모바일: 러닝카드 안내 카드가 떠 있는 동안 카드 위로 비켜 올라간다(--promo-clearance)
       className={cn(
         'fixed left-4 z-30 md:bottom-6 md:left-6',
-        'bottom-[calc(env(safe-area-inset-bottom)+6rem)]',
+        'bottom-[max(calc(env(safe-area-inset-bottom)+6rem),var(--promo-clearance,0px))]',
         isDetailPage ? 'hidden md:flex' : 'flex',
         'h-10 w-10 items-center justify-center',
         'rounded-full border border-stone-900/10 bg-white/92 backdrop-blur-xl',

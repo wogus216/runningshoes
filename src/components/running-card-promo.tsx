@@ -16,9 +16,12 @@ import { PROMO_CAMPAIGN_ID, browserStores, canAutoShow, hideForADay, markShown }
   이 컴포넌트가 놓인 자리가 감지 지점이다. 뜨는 조건(모두 만족):
     1. 이 탭에서 아직 안 띄웠고 24시간 숨김 기간이 아니다(저장소가 막혔거나 값이 깨졌으면 안 띄운다)
     2. 방문자가 직접 입력(휠·터치·키·클릭)한 뒤 아래로 스크롤했다 — 스크롤 복원·해시 이동만으로는 안 뜬다
-    3. 감지 지점이 화면에 들어왔다(IntersectionObserver)
+    3. 감지 지점이 화면 하단 카드 영역(CARD_ZONE) 위로 올라왔다(IntersectionObserver) — 카드가 뜨는 순간
+       아직 읽는 중인 본문 마지막 줄을 덮지 않고, 본문 뒤 영역 위에 놓이게
     4. 대화상자·메뉴·비교 패널을 쓰는 중이 아니고, 하단 앵커 광고가 떠 있지 않다
-    5. 다른 고정 UI(구매 바·비교·맨 위로)를 피해 올려도 헤더 아래에 들어갈 공간이 있다
+    5. 다른 고정 UI 를 피해도 헤더 아래에 들어갈 공간이 있다
+  자리: 모바일은 화면 맨 아래(읽는 구간 밖)에 붙는다. 맨 위로·비교 버튼이 카드 위로 비켜 올라가고(--promo-clearance),
+  구매 바만은 매출 동선이라 카드가 그 위로 올라간다. PC 는 우하단, 비교 버튼이 있으면 그 위.
   한 번 뜬 뒤에는 감지 지점이 화면 밖으로 나가도 닫지 않는다. 4·5가 깨지는 동안만 잠시 비켜 준다.
   읽기 속도 추정·체류 타이머·exit intent 는 넣지 않았다 — 빠른 스크롤과 실제 읽기를 구분할 수 있다고 보지 않는다.
 */
@@ -27,6 +30,8 @@ type Source = { sourceType: 'blog' | 'shoe'; sourceSlug: string };
 
 /** 카드와 다른 고정 UI·헤더 사이 간격(px) */
 const GAP = 8;
+/** 화면 하단에서 카드가 차지하는 높이(px). 모바일 카드 176–198px + 아래 여백 12px + 간격. 감지 지점이 이 위로 올라와야 뜬다. */
+const CARD_ZONE = 240;
 
 // 메달은 현재 제품 렌더러 출력(scripts/assets/running-card-og-athena.png, 640×800)을 192×240 WebP 로 줄인 것이다.
 // sharp resize(192, 240, lanczos3) → webp({ quality: 80, alphaQuality: 90, effort: 6 }). 글자 든 OG 이미지를 줄여 쓰지 않는다.
@@ -36,9 +41,13 @@ export function RunningCardPromo(source: Source) {
   const sentinelRef = useRef<HTMLSpanElement>(null);
   const [eligible, setEligible] = useState(false);
   const finish = useCallback(() => setEligible(false), []);
+  const checked = useRef(false);
 
   // 저장소는 클라이언트에서만 읽는다(SSG·hydration 유지). 안 띄울 탭이면 감지 장치를 하나도 달지 않는다.
+  // 한 번만 판정한다 — canAutoShow 가 깨진 값을 지우므로, Strict Mode 의 두 번째 실행이 판정을 뒤집지 않게.
   useEffect(() => {
+    if (checked.current) return;
+    checked.current = true;
     setEligible(canAutoShow(browserStores(), Date.now()));
   }, []);
 
@@ -72,6 +81,8 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
   const scrolledDown = useRef(false);
   const inView = useRef(false);
   const evaluateRef = useRef<() => void>(() => {});
+  const onDoneRef = useRef(onDone);
+  onDoneRef.current = onDone;
 
   const params: RunnerPromoEventParams = { campaign_id: PROMO_CAMPAIGN_ID, source_type: sourceType, source_slug: sourceSlug };
 
@@ -80,8 +91,12 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
     if (stageRef.current === 'waiting') {
       if (scrolledDown.current && inView.current && !blocked) setStage('measuring');
     } else if (stageRef.current === 'shown' && cardRef.current) {
-      const hasRoom = place(cardRef.current);
-      setAside(blocked || !hasRoom);
+      const { hasRoom, clearance } = place(cardRef.current);
+      const stepAside = blocked || !hasRoom;
+      // 숨기기(visibility:hidden) 전에 포커스를 옮긴다 — 숨긴 뒤에는 브라우저가 포커스를 body 로 떨어뜨린다
+      if (stepAside && cardRef.current.contains(document.activeElement)) sentinelRef.current?.focus({ preventScroll: true });
+      setAside(stepAside);
+      setClearance(stepAside ? '' : clearance);
     }
   };
 
@@ -113,11 +128,19 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
       window.addEventListener('scroll', onScroll, { passive: true });
     }
 
+    // '닿았거나 지나쳤다'로 본다 — 광고 앵커·비교 패널 때문에 미뤄진 사이 감지 지점이 화면 위로 지나가도,
+    // 막힌 게 풀리면 뜰 수 있게. (위로 되돌아가 감지 지점이 카드 영역 아래로 내려가면 다시 false)
     const io = new IntersectionObserver(([entry]) => {
-      inView.current = entry.isIntersecting;
+      inView.current = entry.rootBounds ? entry.boundingClientRect.top < entry.rootBounds.bottom : entry.isIntersecting;
       evaluate();
-    });
+    }, { rootMargin: `0px 0px -${CARD_ZONE}px 0px` });
     io.observe(sentinel);
+
+    // 뒤로 가기로 메모리에서 복원된 페이지(bfcache)에는 떠 있던 카드를 남기지 않는다(지시서 3절). 닫기로 세지 않는다.
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted && stageRef.current !== 'waiting') onDoneRef.current();
+    };
+    window.addEventListener('pageshow', onPageShow);
 
     // 대화상자·메뉴·비교 패널·다른 고정 UI 의 상태 변화. 카드 자신의 변화는 건너뛴다(자기 갱신 루프 방지).
     // 같은 노드를 한 관찰자로 두 번 observe 하면 옵션이 덮어써진다 — 직계 자식(포털로 붙는 대화상자·비교 버튼)과
@@ -144,6 +167,7 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
       portals.disconnect();
       states.disconnect();
       window.removeEventListener('resize', evaluate);
+      window.removeEventListener('pageshow', onPageShow);
       if (frame !== null) window.cancelAnimationFrame(frame);
     };
   }, [sentinelRef]);
@@ -156,28 +180,46 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
   // 화면에 그리기 전에 자리를 잡고, 공간이 있을 때만 이 탭의 1회를 쓴다. 기록을 못 남기면 띄우지 않는다.
   useLayoutEffect(() => {
     if (stage !== 'measuring' || !cardRef.current) return;
-    if (!place(cardRef.current)) setStage('waiting');
-    else if (markShown(browserStores())) setStage('shown');
-    else onDone();
+    const { hasRoom, clearance } = place(cardRef.current);
+    if (!hasRoom) setStage('waiting');
+    // 마운트 뒤에 다른 탭에서 닫았거나(24시간 숨김) 이 탭의 다른 문서(bfcache 복원 전)가 1회를 썼을 수 있다 — 띄우기 직전에 다시 본다
+    else if (!canAutoShow(browserStores(), Date.now())) onDone();
+    else if (markShown(browserStores())) {
+      setClearance(clearance);
+      setStage('shown');
+    } else onDone();
   }, [stage, onDone]);
+
+  // 닫거나 페이지를 떠나면 비켜 올라갔던 버튼을 제자리로
+  useEffect(() => () => setClearance(''), []);
 
   // 실제로 보인 순간 1회. 억제(비켜 준 상태)·후보 단계는 보내지 않는다.
   useEffect(() => {
     if (stage === 'shown' && !aside) trackOnce('runner-promo-viewed', 'runner_promo_viewed', params);
   });
 
-  // 비켜 주는 동안 카드 안 포커스가 허공에 남지 않게
+  // 폰트 교체·메달 이미지 실패로 카드 높이가 바뀌면 버튼이 비켜 올라갈 높이와 공간 판정을 다시 한다.
+  // 카드 안의 변화는 MutationObserver 에서 걸러지므로 크기는 따로 본다.
   useEffect(() => {
-    if (aside && cardRef.current?.contains(document.activeElement)) sentinelRef.current?.focus({ preventScroll: true });
-  }, [aside, sentinelRef]);
+    const card = cardRef.current;
+    if (stage !== 'shown' || !card) return;
+    const ro = new ResizeObserver(() => evaluateRef.current());
+    ro.observe(card);
+    return () => ro.disconnect();
+  }, [stage]);
 
   if (stage === 'waiting') return null;
+
+  // 카드를 내린다. 포커스가 카드 안에 있었으면 감지 지점으로 돌려준다.
+  const remove = () => {
+    if (cardRef.current?.contains(document.activeElement)) sentinelRef.current?.focus({ preventScroll: true });
+    onDone();
+  };
 
   const close = () => {
     hideForADay(browserStores(), Date.now());
     trackOnce('runner-promo-dismissed', 'runner_promo_dismissed', params);
-    if (cardRef.current?.contains(document.activeElement)) sentinelRef.current?.focus({ preventScroll: true });
-    onDone();
+    remove();
   };
 
   const hidden = stage === 'measuring' || aside;
@@ -190,7 +232,8 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
         if (event.key === 'Escape') close();
       }}
       className={[
-        'fixed inset-x-3 z-40 md:left-auto md:right-6 md:w-[400px]',
+        // 구매 바가 미끄러져 들어올 때(200ms) 같이 올라간다
+        'fixed inset-x-3 z-40 transition-[bottom] duration-200 ease-out motion-reduce:transition-none md:left-auto md:right-6 md:w-[400px]',
         hidden ? 'invisible pointer-events-none' : 'animate-[fade-in-up_240ms_ease-out_both] motion-reduce:animate-none',
       ].join(' ')}
     >
@@ -223,6 +266,8 @@ function PromoController({ sourceType, sourceSlug, sentinelRef, onDone }: Contro
             onClick={() => {
               hideForADay(browserStores(), Date.now());
               trackOnce('runner-promo-clicked', 'runner_promo_clicked', { ...params, transport_type: 'beacon' });
+              // 새 탭으로 열었거나 뒤로 가기로 돌아와도 카드가 남지 않게. 이동은 링크가 그대로 한다.
+              remove();
             }}
             className="mt-3 inline-flex min-h-[44px] items-center rounded-full bg-[#FF4D00] px-4 text-sm font-bold text-[#17150F] transition-colors hover:bg-[#FF6A26] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#F5EFDF] focus-visible:ring-offset-2 focus-visible:ring-offset-[#17150F]"
           >
@@ -247,21 +292,31 @@ function overlayOpen(): boolean {
   return document.querySelector('[aria-modal="true"], dialog[open], header details[open], [data-floating-ui] [aria-label="비교함 접기"]') !== null;
 }
 
+/** 모바일에서 맨 위로·비교 버튼이 카드 위로 비켜 올라갈 높이(그 버튼들의 bottom 이 max(기본, 이 값)). 빈 문자열이면 제자리. */
+function setClearance(value: string) {
+  if (value) document.documentElement.style.setProperty('--promo-clearance', value);
+  else document.documentElement.style.removeProperty('--promo-clearance');
+}
+
 /**
- * 카드를 다른 고정 UI(data-floating-ui) 위로 올려 겹치지 않게 놓는다. z-index 로 덮지 않는다.
- * 헤더 아래에 들어갈 공간이 없으면 false.
+ * 카드 자리를 잡는다. z-index 로 덮지 않는다.
+ *   - data-floating-ui(구매 바, PC 의 비교 버튼): 카드가 그 위로 올라간다
+ *   - data-floating-ui="yields"(맨 위로·비교 버튼): 모바일에서는 카드가 맨 아래에 붙고 버튼이 비킨다(clearance)
+ * hasRoom: 헤더 아래에 들어갈 공간이 있는가. clearance: 모바일 버튼이 올라갈 CSS 높이(PC 는 빈 문자열).
  *
  * 고정 요소의 offsetTop/offsetHeight 는 transform 을 무시한 최종 자리라, 미끄러져 들어오는 중인 구매 바도
  * 도착할 자리로 계산된다. 숨은 상태의 고정 UI 는 pointer-events:none 이라(구매 바·맨 위로 버튼) 그걸로 거른다.
  */
-function place(card: HTMLElement): boolean {
+function place(card: HTMLElement): { hasRoom: boolean; clearance: string } {
   const vh = window.innerHeight;
-  const base = window.matchMedia('(min-width: 768px)').matches ? 24 : 12;
+  const mobile = !window.matchMedia('(min-width: 768px)').matches;
+  const base = mobile ? 12 : 24;
   const left = card.offsetLeft;
   const right = left + card.offsetWidth;
 
   let lift = 0;
   document.querySelectorAll<HTMLElement>('[data-floating-ui]').forEach((el) => {
+    if (mobile && el.dataset.floatingUi === 'yields') return;
     if (el.offsetHeight === 0 || getComputedStyle(el).pointerEvents === 'none') return;
     const top = el.offsetTop;
     const l = el.offsetLeft;
@@ -270,10 +325,16 @@ function place(card: HTMLElement): boolean {
     lift = Math.max(lift, vh - top + GAP);
   });
 
-  card.style.bottom = lift
+  const bottom = lift
     ? `max(calc(env(safe-area-inset-bottom) + ${base}px), ${lift}px)`
     : `calc(env(safe-area-inset-bottom) + ${base}px)`;
+  card.style.bottom = bottom;
 
+  // bottom 이 전환(200ms) 중이어도 도착할 자리로 판단한다. safe-area 는 뺀 근사다.
   const headerBottom = Math.max(0, document.querySelector('body header')?.getBoundingClientRect().bottom ?? 0);
-  return card.getBoundingClientRect().top >= headerBottom + GAP;
+  const top = vh - Math.max(base, lift) - card.offsetHeight;
+  return {
+    hasRoom: top >= headerBottom + GAP,
+    clearance: mobile ? `calc(${bottom} + ${card.offsetHeight + GAP}px)` : '',
+  };
 }

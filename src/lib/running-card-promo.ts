@@ -22,7 +22,10 @@ export function browserStores(): PromoStores | null {
   }
 }
 
-/** 이 탭에서 자동으로 띄워도 되는가. 이미 띄웠거나, 숨김 기간이거나, 읽을 수 없거나 값이 깨졌으면 false. */
+/**
+ * 이 탭에서 자동으로 띄워도 되는가. 이미 띄웠거나, 숨김 기간이거나, 읽을 수 없거나 값이 깨졌으면 false.
+ * 깨진 값(숫자가 아님·24시간보다 먼 미래 — 기기 시계가 틀렸던 흔적)은 이번엔 띄우지 않고 지워서 다음부터 스스로 복구된다.
+ */
 export function canAutoShow(stores: PromoStores | null, now: number): boolean {
   if (!stores) return false;
   try {
@@ -30,7 +33,10 @@ export function canAutoShow(stores: PromoStores | null, now: number): boolean {
     const raw = stores.local.getItem(HIDE_KEY);
     if (raw === null) return true;
     const until = Number(raw);
-    if (raw.trim() === '' || !Number.isFinite(until)) return false;
+    if (raw.trim() === '' || !Number.isFinite(until) || until - now > HIDE_MS) {
+      stores.local.removeItem(HIDE_KEY);
+      return false;
+    }
     return now >= until;
   } catch {
     return false;

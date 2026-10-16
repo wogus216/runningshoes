@@ -41,6 +41,11 @@ describe('러닝카드 안내 카드 노출 상태', () => {
     const s = stores();
     s.local.setItem('arb:running-card-promo:hidden-until', 'not-a-time');
     expect(canAutoShow(s, NOW)).toBe(false);
+    // 깨진 값은 지워져 다음 판정부터 복구된다(영구 숨김 방지). 24시간보다 먼 미래도 깨진 값으로 본다.
+    expect(canAutoShow(s, NOW)).toBe(true);
+    s.local.setItem('arb:running-card-promo:hidden-until', String(NOW + HIDE_MS + 60_000));
+    expect(canAutoShow(s, NOW)).toBe(false);
+    expect(canAutoShow(s, NOW)).toBe(true);
 
     const blocked: PromoStores = { session: throwingStorage(), local: throwingStorage() };
     expect(canAutoShow(blocked, NOW)).toBe(false);

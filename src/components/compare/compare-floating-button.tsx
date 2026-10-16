@@ -22,10 +22,12 @@ export function CompareFloatingButton() {
 
   return (
     <div
-      data-floating-ui // 러닝카드 안내 카드가 이 버튼을 피해 위로 올라가고, 패널을 펼친 동안은 비켜 준다
+      // 러닝카드 안내 카드와 공존: 모바일은 이 버튼이 카드 위로 비켜 올라가고(--promo-clearance),
+      // PC 는 카드가 이 버튼 위로 올라간다. 패널을 펼친 동안은 카드가 비켜 준다.
+      data-floating-ui="yields"
       className={cn(
         "fixed right-4 z-40 md:right-6 md:bottom-6",
-        "bottom-[calc(env(safe-area-inset-bottom)+6rem)]",
+        "bottom-[max(calc(env(safe-area-inset-bottom)+6rem),var(--promo-clearance,0px))]",
         isDetailPage && "hidden md:block"
       )}
     >
