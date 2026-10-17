@@ -44,6 +44,12 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
     subtitle: '체력 변화와 워치 추정치를 나누어 읽는 법',
     data: '설정 · 환경 · 기록 품질부터 확인',
   },
+  // 출처: fest.kakaopay.com 공식 오프라인·온라인 대회 안내(2026-10-17 확인).
+  'kakaopay-long-run': {
+    title: '션과 달리는 롱런 2026',
+    subtitle: '11월 28일 · 하남 미사경정공원 10K\n티켓 10월 20일 14시 · 선착순 5,000명',
+    data: '참가비 6만원 · 온라인 걸음 기부는 무료',
+  },
   // 출처: jebudorun.com 공식 요강·신청 폼·공지(2026-10-14 확인).
   'jebudo-sea-road-festival': {
     title: '제부도, 바닷길을 달리다',

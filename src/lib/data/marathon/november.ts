@@ -2,6 +2,36 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const novemberEvents: MarathonEvent[] = [
   {
+    id: 'kakaopay-longrun-2026',
+    name: '2026 카카오페이 롱런',
+    date: '2026-11-28',
+    month: '11월',
+    location: '미사경정공원 (경기 하남시)',
+    region: '경기',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://fest.kakaopay.com/esg/longrun/about',
+    registrationStart: '2026-10-20',
+    registrationEnd: '2026-11-03',
+    registrationNote:
+      '공식 페이지 오프라인 탭 기준(2026-10-17 확인): 10K 참가권은 10월 20일(화) 14:00부터 비마이프렌즈 b.stage 플랫폼(회원가입 필요)에서 선착순 5,000명 판매, 접수 11월 3일(화) 23:59까지이며 취소·환불도 같은 시각까지만 가능합니다. 1인 1회·단체 신청 불가, 미성년자는 보호자 동반 시 현장 참여 가능. 온라인 대회(걸음 기부)는 카카오페이 앱 만보기에서 10월 20일 14:00~11월 18일 23:59 무료 참여.',
+    lastVerified: '2026-10-17',
+    description:
+      '카카오페이가 가수 션과 함께 여는 온·오프라인 기부 마라톤 2회차입니다. 오프라인은 11월 28일(토) 하남 미사경정공원에서 10K 셀러브레이션 런으로 열리며 07:30 집결·09:00 출발, 선착순 5,000명, 참가비 6만원입니다. 온라인은 카카오페이 앱 만보기로 걸음을 모으는 방식으로 누구나 무료이며, 100억·300억·500억 걸음을 달성할 때마다 카카오페이가 5억원씩 총 15억원을 함께일하는재단(소상공인 지원)에 기부합니다. 2025년 1회차는 26만 5천여 명이 225억 걸음을 모아 20억원을 기부했습니다.',
+    raceInfo: {
+      entryFees: [{ distance: '10K', fee: 60000 }],
+      expectedParticipants: 5000,
+      startTime: '09:00',
+    },
+    raceKit: {
+      items: ['롱런 롱슬리브 티셔츠', '롱런 러닝캡', '롱런 런 크루 삭스', '배번호', '기록칩(배번호 뒷면)'],
+      byDistance: [{ distance: '10K', item: '완주 메달(현장 카카오페이 부스에서 기록 레이저 각인) · 롱런 리유저블백 — 현장 참가자에게 도착지에서 지급, 미참석 시 미제공' }],
+      pending: '5종 지참 물품의 사전 배송 일정·배송 방식은 공식 유의사항에 명시되지 않음(2026-10-17 확인)',
+      verifiedAt: '2026-10-17',
+    },
+  },
+  {
     id: 'zeiss-smile-race-2026',
     name: '2026 자이스 스마일 레이스',
     date: '2026-11-22',
