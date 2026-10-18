@@ -27,6 +27,8 @@
     "indexnow": "node scripts/indexnow.mjs",
     "test:indexnow": "node --test scripts/__tests__/indexnow.test.mjs",
     "naver:rank": "tsx scripts/naver-rank.ts",
+    "naver:trend": "tsx scripts/naver-datalab.ts",
+    "ig:insights": "tsx scripts/ig-insights.ts",
     "gsc:pages": "tsx scripts/gsc-pages.ts",
     "popular": "tsx scripts/ga-popular.ts",
     "course:scan": "tsx scripts/course-map/scan-sources.ts",
