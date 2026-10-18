@@ -41,6 +41,7 @@
 | sonkeechung-peace-marathon-2026 | kit-1 | img.raceplan.co.kr (sonkeechungrun.com 공식 게시) |
 | gwacheon-marathon-2026 | kit-1,2 | cdn.blueimg.co.kr/gcrun (공식 홈 게시) |
 | geumsan-insam-festival-marathon-2026 | kit-1 | mara1080.com 공식 souvenir-image API (S3). 파일명은 타 대회("서산-코스모스")지만 운영사가 동일 티셔츠 이미지를 재사용한 것 — 내용이 공식 기술(화이트 반팔, 90~110)과 일치해 재검수 후 채택(2026-08-27 2차) |
+| marvel-run-korea-2026 | kit-1~4 | marvelrunkorea2026.com 공식 홈 "기념품" 페이지(`/images/main/guide/` 원본 PNG, 2026-10-18 확인) — kit-1~3 은 종목별 메달 이미지에서 리본을 잘라내고 메달 앞·뒤만 남김, kit-4 는 티셔츠 앞·뒤 두 장을 나란히 합침. 공식이 "예시 이미지이며 실제품과 상이할 수 있음"이라고 고지 |
 
 제외 기록 (다운로드 후 검수에서 탈락 — 2026-08-27 2차 재시도 결과 포함):
 - ~~mbn-seoul-marathon-2026 — 공식 이미지가 "디자인 추후 공개" 목업 렌더라 제외~~ → 2026-09-30 공식 기념품 이미지(gifts_pc.jpg) 공개 확인 후 kit-1로 채택 (티셔츠·양말 실물 이미지)
