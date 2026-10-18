@@ -625,7 +625,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '경주시민운동장',
     region: '경북',
     distances: ['풀코스', '하프', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: true,
     website: 'https://www.gyeongjumarathon.com/home',
     registrationStart: '2026-05-11',
@@ -717,7 +717,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '충북 문의체육공원',
     region: '충북',
     distances: ['풀코스', '하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://race.cjsports.or.kr',
     description:
