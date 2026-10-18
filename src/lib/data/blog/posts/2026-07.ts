@@ -3452,7 +3452,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-plus-2-leak-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-10',
-    updatedAt: '2026-08-25',
+    updatedAt: '2026-10-18',
     category: 'review' as const,
     readingTime: 6,
     tags: ['나이키 페가수스 플러스 2', '페가수스 플러스', '나이키 러닝화', '러닝화 리크', '신상 러닝화'],
@@ -3514,7 +3514,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 미드솔이 ZoomX인지 ReactX인지는 언제 알 수 있나요?</p>
-    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 나이키 공식 발표로 <strong>ZoomX</strong>임이 확인됐습니다. ReactX 다운그레이드설은 틀렸고, 여기에 전족부 곡선형 Air Zoom 유닛이 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 높아졌다고 밝혔습니다(제조사 기준). 다만 RunRepeat 등 독립 랩의 정량 측정치는 아직 공개되지 않았습니다.</p>
+    <p class="faq-a">A. <strong>(2026-08-25 확정)</strong> 나이키 공식 발표로 <strong>ZoomX</strong>임이 확인됐습니다. ReactX 다운그레이드설은 틀렸고, 여기에 전족부 곡선형 Air Zoom 유닛이 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 높아졌다고 밝혔습니다(제조사 기준). <strong>(2026-10-18 갱신)</strong> 10월 12일 게시된 RunRepeat 랩에서는 에너지 리턴이 전족부 69.0%·힐 65.5%로, 1세대와 비슷한 수준으로 측정됐습니다.</p>
   </div>
 </div>
 

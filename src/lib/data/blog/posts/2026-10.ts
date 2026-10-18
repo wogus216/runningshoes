@@ -1909,6 +1909,7 @@ export const posts_2026_10: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-42-vs-pegasus-plus-2-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-02',
+    updatedAt: '2026-10-18',
     category: 'review' as const,
     readingTime: 8,
     tags: [
@@ -1935,7 +1936,7 @@ export const posts_2026_10: BlogPost[] = [
 
 <h2>두 켤레 한눈에 보기</h2>
 
-<p>먼저 짚을 것이 있습니다. 아래 표의 수치는 <strong>측정 방식이 서로 다릅니다.</strong> 42는 RunRepeat 랩 실측이 있고, 플러스 2는 아직 랩이 게시되지 않아 나이키 공식 스펙과 해외 리뷰어 실측을 씁니다. 같은 행이라도 같은 잣대가 아니니 표 아래 주석을 함께 보세요.</p>
+<p><strong>(10월 18일 갱신)</strong> 처음 글을 쓴 10월 2일에는 플러스 2의 랩 데이터가 없었지만, 10월 12일 RunRepeat 랩이 게시돼 이제 <strong>두 모델을 같은 랩의 실측으로 나란히</strong> 볼 수 있습니다. 공식 스펙과 실측이 함께 있는 행은 괄호로 출처를 적었습니다.</p>
 
 <table>
   <thead>
@@ -1943,18 +1944,20 @@ export const posts_2026_10: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>한국 정가</td><td><strong>169,000원</strong></td><td><strong>219,000원</strong> (5만원 차)</td></tr>
-    <tr><td>무게</td><td>286g (RunRepeat 실측, US M9)</td><td>258g (나이키 공식, US M9) · 270g (Doctors of Running 실측, US M10)</td></tr>
-    <tr><td>힐/전족부 스택</td><td>37/27mm (공식) · 36/22mm (RunRepeat 실측)</td><td>38/28mm (공식, 랩 실측 없음)</td></tr>
-    <tr><td>드롭</td><td>10mm (공식) · 14mm (RunRepeat 실측)</td><td>10mm (공식)</td></tr>
+    <tr><td>무게</td><td>286g (RunRepeat 실측, US M9)</td><td><strong>247g (RunRepeat 실측)</strong> · 258g (나이키 공식, US M9)</td></tr>
+    <tr><td>힐/전족부 스택</td><td>37/27mm (공식) · 36/22mm (RunRepeat 실측)</td><td>38/28mm (공식) · 37.7/27.3mm (RunRepeat 실측)</td></tr>
+    <tr><td>드롭</td><td>10mm (공식) · 14mm (RunRepeat 실측)</td><td>10mm (공식) · 10.4mm (RunRepeat 실측)</td></tr>
+    <tr><td>힐 충격흡수</td><td>131 SA (RunRepeat 실측)</td><td><strong>147 SA</strong> (RunRepeat 실측)</td></tr>
+    <tr><td>에너지 리턴 (전족부/힐)</td><td>61.2% / 57.1% (RunRepeat 실측)</td><td><strong>69.0% / 65.5%</strong> (RunRepeat 실측)</td></tr>
     <tr><td>미드솔</td><td>ReactX + 풀 렝스 에어 줌</td><td><strong>ZoomX + 전족부 노출형 에어 줌</strong></td></tr>
     <tr><td>카본 플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>토박스</td><td>72.3mm (RunRepeat 실측)</td><td>랩 실측 없음 · 1세대보다 넓어졌다는 평가</td></tr>
+    <tr><td>토박스</td><td>72.3mm (RunRepeat 실측)</td><td>71.3mm (RunRepeat 실측, 평균 73.2mm)</td></tr>
     <tr><td>와이드 옵션</td><td><strong>남·여 정식 편성</strong></td><td><strong>없음</strong> (나이키 코리아 9/3 확인)</td></tr>
     <tr><td>외부 평가</td><td>Believe in the Run B 티어 (디자인 A·가치 A·퍼포먼스 C)</td><td>Believe in the Run A 티어 (디자인 A·가치 A·퍼포먼스 B)</td></tr>
   </tbody>
 </table>
 
-<p><small>무게는 기준 사이즈가 달라 258g과 286g을 바로 빼서 28g 차이라고 읽으면 안 됩니다. 같은 US M9 기준으로 맞춘 비교 실측은 아직 없습니다. 스택은 42의 공식값과 실측이 전족부에서 5mm 어긋나므로, 플러스 2의 공식 38/28mm도 랩이 나오면 달라질 수 있습니다. 내구성은 두 모델 모두 랩 마모 실측이 없어 표에 넣지 않았습니다. 42·플러스 2의 가격과 와이드 여부는 나이키 코리아 기준이며 플러스 2는 2026년 10월 2일 판매 페이지에서 확인했습니다.</small></p>
+<p><small>무게는 같은 RunRepeat 실측끼리 비교하면 플러스 2가 39g 가볍습니다(247g vs 286g). 나이키 공식 258g과 42의 실측 286g을 빼서 28g 차이로 읽으면 측정 주체가 다른 값끼리의 비교가 됩니다. 스택은 42가 공식값과 실측이 전족부에서 5mm 어긋난 반면, 플러스 2는 공식 38/28mm와 실측 37.7/27.3mm가 1mm 안쪽으로 맞았습니다. 내구성은 km로 환산할 근거가 없어 표에 넣지 않았습니다. 42·플러스 2의 가격과 와이드 여부는 나이키 코리아 기준이며 플러스 2는 2026년 10월 2일 판매 페이지에서 확인했습니다.</small></p>
 
 <h2>페가수스 42 — 169,000원에 와이드까지, 안전한 기본값</h2>
 
@@ -1968,7 +1971,7 @@ export const posts_2026_10: BlogPost[] = [
 
 <p>플러스 2는 1세대의 약점이던 미드풋 헐거움과 좁은 토박스를 손봤습니다. Doctors of Running은 자신이 테스트한 나이키 트레이너 중 핏이 가장 좋다고 평가했고, 1세대의 딱딱하던 ZoomX가 중간 정도로 유연해졌다고 짚었습니다. Believe in the Run은 A 티어를 줬지만 전족부 에어 줌의 반발이 템포 훈련을 감당할 만큼은 아니라서 <strong>이름이 말하는 템포 트레이너보다 데일리 트레이너에 가깝다</strong>고 봤습니다.</p>
 
-<p>이 모델에서 조심할 구조는 힐입니다. Doctors of Running은 뒤꿈치가 좁고 미드풋 플랫폼이 매우 좁아 힐 스트라이커에게 불안정할 수 있다고 지적했습니다. 또 와이드 옵션이 없어서 발볼 걱정이 있으면 매장 착화가 먼저입니다. 랩 수치(충격흡수·에너지 리턴·토박스)는 확인한 범위에서 아직 게시되지 않았습니다.</p>
+<p>이 모델에서 조심할 구조는 힐입니다. Doctors of Running은 뒤꿈치가 좁고 미드풋 플랫폼이 매우 좁아 힐 스트라이커에게 불안정할 수 있다고 지적했습니다. 또 와이드 옵션이 없어서 발볼 걱정이 있으면 매장 착화가 먼저입니다. <strong>(10월 18일 갱신)</strong> RunRepeat 랩에서 힐 충격흡수는 147 SA로 42(131 SA)보다 높고, 에너지 리턴도 전족부 69.0%로 42(61.2%)보다 높았습니다. 다만 RunRepeat은 이 반발이 1세대와 비슷한 수준이라 에어 줌이 반발을 끌어올렸다고 보지는 않았습니다. 토박스는 71.3mm로 42(72.3mm)보다 1mm 좁습니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 이지런 위주지만 가끔 속도를 올리는 러너, 1세대 플러스의 핏이 불만이었던 러너, 앞볼 여유가 표준 폭이면 충분한 러너.</p>
 
@@ -1979,7 +1982,7 @@ export const posts_2026_10: BlogPost[] = [
   <li><strong>평발·과내전 성향이다</strong> → 42. 플러스 2는 아치 지지가 없는 중립 전용 구조라 권하기 어렵습니다</li>
   <li><strong>뒤꿈치 착지가 중심이다</strong> → 42. 플러스 2의 좁은 힐·미드풋이 걸릴 수 있습니다</li>
   <li><strong>이지런에 템포를 섞는다</strong> → <a href="/shoes/nike-pegasus-plus-2">플러스 2</a>. 다만 본격 인터벌·레이스용은 플레이트가 있는 모델을 따로 두세요</li>
-  <li><strong>1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>에서 넘어온다</strong> → 핏이 개선됐으므로 플러스 2. 무게는 1세대 실측 244g보다 늘었습니다</li>
+  <li><strong>1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>에서 넘어온다</strong> → 핏이 개선됐으므로 플러스 2. 무게는 RunRepeat 실측 247g으로, RunRepeat은 1세대와 거의 같다고 봤습니다</li>
   <li><strong>예산이 가장 중요하다</strong> → 42. 5만원을 아끼는 쪽이 합리적인 구간이 넓습니다</li>
 </ul>
 
@@ -1992,11 +1995,11 @@ export const posts_2026_10: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 플러스 2가 42보다 28g 가벼운가요?</p>
-    <p class="faq-a">A. 그렇게 읽으면 안 됩니다. 258g은 나이키 공식 US M9 값이고 42의 286g은 RunRepeat 실측입니다. 측정 주체가 다릅니다. Doctors of Running이 US M10으로 잰 270g을 감안하면 차이는 이보다 작을 가능성이 있습니다(추정).</p>
+    <p class="faq-a">A. 28g은 나이키 공식 258g(US M9)과 42의 RunRepeat 실측 286g을 뺀 값이라 측정 주체가 달라 맞지 않습니다. <strong>(10월 18일 갱신)</strong> 같은 RunRepeat 실측끼리 비교하면 플러스 2가 247g, 42가 286g으로 플러스 2가 39g 가볍습니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 플러스 2를 신어도 되나요?</p>
-    <p class="faq-a">A. 1세대보다 앞볼 여유가 늘었지만 와이드 옵션이 없고 토박스 실측도 없습니다. 발볼이 넓다면 와이드가 있는 42가 안전하고, 플러스 2는 매장 착화 후 결정하세요.</p>
+    <p class="faq-a">A. 와이드 옵션이 없고, RunRepeat 토박스 실측이 71.3mm로 평균(73.2mm)과 42(72.3mm)보다 조금 좁습니다. RunRepeat도 발볼이 정말 넓은 러너는 다른 신발을 보라고 적었습니다. 발볼이 넓다면 와이드가 있는 42가 안전하고, 플러스 2는 매장 착화 후 결정하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 42 가격이 169,000원이 맞나요?</p>
@@ -2004,7 +2007,7 @@ export const posts_2026_10: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 나이키 코리아 페가수스 플러스 2 상품 페이지(2026년 10월 2일 확인) · 페가수스 42 RunRepeat 랩 데이터(2026년 4월 25일 게시분) · Believe in the Run·Doctors of Running 플러스 2 리뷰 · 나이키 공식 스펙 · 작성 2026년 10월 2일. 플러스 2의 RunRepeat 랩은 확인한 범위에서 미게시이며 게시되면 수치를 갱신합니다.</small></p>
+<p><small>출처: 나이키 코리아 페가수스 플러스 2 상품 페이지(2026년 10월 2일 확인) · 페가수스 42 RunRepeat 랩 데이터(2026년 4월 25일 게시분) · Believe in the Run·Doctors of Running 플러스 2 리뷰 · 나이키 공식 스펙 · 작성 2026년 10월 2일. 플러스 2 RunRepeat 랩 데이터(2026년 10월 12일 게시)는 10월 18일 반영.</small></p>
 `,
   },
   {

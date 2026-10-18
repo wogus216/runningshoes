@@ -677,7 +677,7 @@ export const posts_2026_08: BlogPost[] = [
     thumbnail: '/images/blog/nike-pegasus-plus-2-release-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-25',
-    updatedAt: '2026-10-02',
+    updatedAt: '2026-10-18',
     category: 'review' as const,
     readingTime: 7,
     tags: [
@@ -718,7 +718,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">📐</span>
   <div class="callout-body">
     <p class="callout-title">18%는 제조사 주장이지 랩 실측이 아닙니다</p>
-    <p>이 수치는 나이키가 자사 발표에서 밝힌 값입니다. RunRepeat 같은 독립 랩의 에너지 리턴 측정치는 아직 공개되지 않았습니다. 제조사가 어떤 조건에서 무엇을 기준으로 쟀는지는 공개되지 않으므로, 실사용 체감과 그대로 일치한다고 보기는 이릅니다. 독립 랩 수치가 나오면 이 글에 반영하겠습니다.</p>
+    <p>이 수치는 나이키가 자사 발표에서 밝힌 값입니다. 글을 쓴 8월 25일에는 RunRepeat 같은 독립 랩의 에너지 리턴 측정치가 없었습니다. 제조사가 어떤 조건에서 무엇을 기준으로 쟀는지는 공개되지 않으므로, 실사용 체감과 그대로 일치한다고 보기는 이릅니다. <strong>(10월 18일 갱신)</strong> 10월 12일 게시된 RunRepeat 랩에서는 에너지 리턴이 전족부 69.0%·힐 65.5%로 측정됐습니다. 평균(61.5%)보다는 높지만, RunRepeat은 1세대와 비슷한 수준이라 나이키가 내세운 큰 폭의 향상은 찾지 못했다고 적었습니다.</p>
   </div>
 </div>
 
@@ -775,7 +775,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">⏳</span>
   <div class="callout-body">
     <p class="callout-title">아직 공개되지 않은 것 — 신발 데이터베이스 등록을 보류했습니다</p>
-    <p>공식 발표에도 <strong>무게(g), 힐·전족부 스택 높이, 드롭</strong>은 포함되지 않았고 독립 랩 측정치도 아직 없습니다. 한국 정가는 9월 3일 나이키 코리아 등록으로 확인됐고(219,000원), 그에 따라 <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a>를 연결했습니다. 랩 실측치는 공개되는 대로 상세 페이지의 추정값을 교체합니다.</p>
+    <p>공식 발표에도 <strong>무게(g), 힐·전족부 스택 높이, 드롭</strong>은 포함되지 않았고 독립 랩 측정치도 당시에는 없었습니다. 한국 정가는 9월 3일 나이키 코리아 등록으로 확인됐고(219,000원), 그에 따라 <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a>를 연결했습니다. <strong>(10월 18일 갱신)</strong> 10월 12일 RunRepeat 랩이 게시돼 상세 페이지에 반영했습니다 — 무게 247g, 힐/전족부 스택 37.7/27.3mm, 드롭 10.4mm, 힐 충격흡수 147 SA(평균 131 SA, 1세대 125 SA), 토박스 71.3mm(평균 73.2mm)입니다.</p>
   </div>
 </div>
 
@@ -811,7 +811,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 나이키 공식 뉴스룸 발표(about.nike.com, 2026년 8월) · Gear Patrol · GQ 코리아(2026년 8월 21일, 한국 9월 초 출시) · SneakerNews(출시일) · 1세대·페가수스 42·프리미엄 수치는 본 사이트 신발 데이터베이스 기준. 무게·스택·드롭 등 정량 수치는 2026년 8월 25일 기준 미공개였으며, 독립 랩 측정치가 공개되면 갱신합니다. <strong>2026년 9월 3일 갱신</strong>: 한국 정가 219,000원·공식 무게 약 265g(280mm)·오프셋 10mm·와이드 옵션 없음은 나이키 코리아 온라인 스토어 제품 페이지(nike.com/kr, IM2541-600) 기준.</small></p>
+<p><small>출처: 나이키 공식 뉴스룸 발표(about.nike.com, 2026년 8월) · Gear Patrol · GQ 코리아(2026년 8월 21일, 한국 9월 초 출시) · SneakerNews(출시일) · 1세대·페가수스 42·프리미엄 수치는 본 사이트 신발 데이터베이스 기준. 무게·스택·드롭 등 정량 수치는 2026년 8월 25일 기준 미공개였으며, 독립 랩 측정치가 공개되면 갱신합니다. <strong>2026년 9월 3일 갱신</strong>: 한국 정가 219,000원·공식 무게 약 265g(280mm)·오프셋 10mm·와이드 옵션 없음은 나이키 코리아 온라인 스토어 제품 페이지(nike.com/kr, IM2541-600) 기준. <strong>2026년 10월 18일 갱신</strong>: RunRepeat 랩 실측(2026년 10월 12일 게시) 반영.</small></p>
 `,
   },
   {
