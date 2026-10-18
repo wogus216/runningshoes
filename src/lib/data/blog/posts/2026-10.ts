@@ -242,32 +242,51 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: 'hakone-ekiden-qualifier-2026',
     slug: 'hakone-ekiden-qualifier-2026',
-    title: '하코네 역전 예선 2026 | 상위 10명의 하프 기록을 더하는 팀전, 10월 17일 관전법',
-    description: '제103회 하코네 역전 예선은 2026년 10월 17일 오전 8시 30분 예정입니다. 학교별 10~12명이 하프마라톤을 달리고 상위 10명의 합계로 본선 진출 10개교를 선발합니다. 공식 규칙과 방송·기록 확인 경로를 정리했습니다.',
+    title: '하코네 역전 예선 2026 결과 | 도요대 1위, 본선 진출 10개교와 상위 10명 합계',
+    description: '제103회 하코네 역전 예선이 2026년 10월 17일 열렸습니다. 공식 팀 성적 기준 도요대가 10시간 31분 30초로 1위, 호세이대가 10위로 본선 막차를 탔습니다. 진출 10개교의 합계 기록과 10·11위 차이, 상위 10명 합산 규칙을 정리했습니다.',
     thumbnail: '/images/blog/hakone-ekiden-qualifier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-16',
+    updatedAt: '2026-10-18',
     category: 'news' as const,
-    readingTime: 4,
+    readingTime: 5,
     tags: ['하코네 역전', '하코네 예선', '일본 러닝', '하프마라톤', '대학 육상', '해외 러닝 소식'],
     faqs: [
-      { question: '2026 하코네 역전 예선은 언제 시작하나요?', answer: '공식 요강은 2026년 10월 17일 토요일 오전 8시 30분 출발 예정으로 안내합니다. 일본과 한국의 시각은 같습니다. 이 예선은 2027년 1월 제103회 본선 출전교를 선발합니다.' },
+      { question: '2026 하코네 역전 예선에서 본선에 진출한 학교는 어디인가요?', answer: '하코네 공식 사이트에 게시된 팀 성적 기준 상위 10개교는 도요대·주오가쿠인대·도카이대·센슈대·도쿄농업대·야마나시가쿠인대·다이토분카대·가나가와대·일본체육대·호세이대입니다. 예선은 2026년 10월 17일 오전 8시 30분에 출발했고, 이 10개교가 2027년 1월 제103회 본선에 나섭니다.' },
       { question: '하코네 예선도 릴레이인가요?', answer: '예선은 학교별 10~12명이 하프마라톤 21.0975km를 달리는 방식입니다. 각 학교 상위 10명의 기록 합계로 순위를 정해 10개교를 선발합니다.' },
-      { question: '하코네 예선 기록과 중계는 어디서 확인하나요?', answer: '하코네 공식 사이트의 예선 기록 메뉴와 일본TV의 예선 기록속보를 확인할 수 있습니다. 일본TV는 10월 17일 08:25~10:25 간토 지역 등 방송을 안내합니다. 한국에서의 실시간 재생 가능 여부는 서비스별로 확인해야 합니다.' },
+      { question: '하코네 예선 전체 기록은 어디서 확인하나요?', answer: '하코네 공식 사이트에 팀 성적·종합 결과·개인 결과 PDF가 게시돼 있습니다. 학교별 합계와 합계에 들어간 10명의 개인 순위·기록을 함께 볼 수 있습니다.' },
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>10월 17일 오전 8시 30분 출발 예정입니다.</strong> 한국·일본 시각이 같으며 2027년 1월 하코네 역전 본선 출전권을 놓고 달립니다.</li>
-<li><strong>학교별 상위 10명의 하프 기록을 더합니다.</strong> 10~12명이 출전하고 합계가 빠른 10개교가 선발됩니다.</li>
-<li><strong>선두 선수와 학교별 합계를 함께 보세요.</strong> 개인 순위만으로 본선 진출교가 정해지지 않습니다.</li>
+<li><strong>도요대가 10시간 31분 30초로 1위를 차지했습니다.</strong> 10월 17일 오전 8시 30분에 출발한 예선의 공식 팀 성적입니다.</li>
+<li><strong>본선 막차는 10위 호세이대입니다.</strong> 11위 고쿠시칸대와는 합계 1분 46초 차이였습니다.</li>
+<li><strong>개인 1위의 학교가 팀 1위는 아니었습니다.</strong> 개인 1위 키피에곤의 야마나시가쿠인대는 팀 6위, 도요대의 최고 순위 선수는 개인 4위였습니다.</li>
 </ul></div>
 
-<p><strong>하프마라톤에서 같은 학교 선수 열 명의 기록을 더하면 어떤 경기가 될까요?</strong> 10월 17일 열리는 제103회 하코네 역전 예선이 바로 그런 팀전입니다. 어깨띠를 이어 달리는 1월 본선과 달리, 예선에서는 선수들이 각자 하프 거리를 완주합니다.</p>
+<p><strong>하프마라톤에서 같은 학교 선수 열 명의 기록을 더하면 어떤 경기가 될까요?</strong> 10월 17일 열린 제103회 하코네 역전 예선이 바로 그런 팀전입니다. 어깨띠를 이어 달리는 1월 본선과 달리, 예선에서는 선수들이 각자 하프 거리를 완주합니다.</p>
 <figure><img src="/images/blog/overseas-20261016/hakone-2025.webp" alt="2025년 하코네 역전 예선에서 여러 학교 선수들이 함께 달리는 자료 사진" width="800" height="533" loading="lazy" /><figcaption>2025년 예선 자료 사진. 올해 경기 결과를 보여주는 사진은 아닙니다. 사진: 월륙Online·월간육상경기.</figcaption></figure>
+
+<h2>본선에 진출한 10개교</h2>
+<p>하코네 공식 사이트에 게시된 팀 성적입니다. 합계는 학교별 상위 10명의 하프마라톤 기록을 더한 시간입니다.</p>
+<table><thead><tr><th>순위</th><th>학교</th><th>상위 10명 합계</th></tr></thead><tbody>
+<tr><td>1</td><td>도요대</td><td>10:31:30</td></tr>
+<tr><td>2</td><td>주오가쿠인대</td><td>10:33:31</td></tr>
+<tr><td>3</td><td>도카이대</td><td>10:33:41</td></tr>
+<tr><td>4</td><td>센슈대</td><td>10:33:42</td></tr>
+<tr><td>5</td><td>도쿄농업대</td><td>10:34:33</td></tr>
+<tr><td>6</td><td>야마나시가쿠인대</td><td>10:35:18</td></tr>
+<tr><td>7</td><td>다이토분카대</td><td>10:35:23</td></tr>
+<tr><td>8</td><td>가나가와대</td><td>10:36:48</td></tr>
+<tr><td>9</td><td>일본체육대</td><td>10:39:52</td></tr>
+<tr><td>10</td><td>호세이대</td><td>10:40:08</td></tr>
+<tr><td>11</td><td>고쿠시칸대</td><td>10:41:54</td></tr>
+</tbody></table>
+<p>11위는 본선 진출권 밖이며, 10위와의 차이를 보여주기 위해 함께 적었습니다. 3위 도카이대와 4위 센슈대는 열 명의 기록을 더하고도 1초 차이였습니다. 1위와 10위의 차이는 8분 38초, 10위와 11위의 차이는 1분 46초입니다(공식 합계 기록으로 계산). 공식 자료: <a href="https://www.hakone-ekiden.jp/_assets/2026/103yosen_teamresult.pdf" target="_blank" rel="noopener noreferrer">팀 성적</a> · <a href="https://www.hakone-ekiden.jp/_assets/2026/103yosen_sougou.pdf" target="_blank" rel="noopener noreferrer">종합 결과</a> · <a href="https://www.hakone-ekiden.jp/_assets/2026/103yose_kozin.pdf" target="_blank" rel="noopener noreferrer">개인 결과</a></p>
 
 <h2>왜 10번째 주자까지 봐야 할까</h2>
 <p>학교가 내보낼 수 있는 선수는 10~12명입니다. 그중 <strong>상위 10명의 완주 기록 합계</strong>로 학교 순위를 정합니다. 12명이 뛰었다면 11·12번째 기록은 합계에서 빠집니다. 본선 출전권은 상위 10개교에 돌아갑니다.</p>
 <p>이 방식에서는 학교 내 10번째 선수의 1초도 합계에 그대로 들어갑니다. 에이스가 앞에서 벌어놓은 시간과 뒤쪽 선수들이 지켜낸 시간을 함께 봐야 하는 이유입니다. 결승선을 가장 먼저 통과한 선수가 속한 학교도 나머지 선수들의 기록을 기다려야 합니다.</p>
+<p>올해 결과가 이를 그대로 보여줍니다. 개인 1위는 1시간 0분 48초의 브라이언 키피에곤(야마나시가쿠인대)이었지만 그의 학교는 팀 6위였습니다. 팀 1위 도요대에서 가장 빠른 선수는 개인 4위(1:01:05)였고, 합계에 들어간 10번째 선수는 개인 118위(1:04:06)였습니다. 종합 결과에 실린 열 명의 개인 순위를 보면 학교별 선수층의 차이가 드러납니다.</p>
 <table><thead><tr><th>화면에서 볼 것</th><th>의미</th></tr></thead><tbody>
 <tr><td>개인 선두·개인 순위</td><td>각 선수의 현재 경쟁 위치</td></tr>
 <tr><td>학교별 상위 10명 합계</td><td>본선 진출을 결정하는 팀 기록</td></tr>
@@ -276,20 +295,19 @@ export const posts_2026_10: BlogPost[] = [
 <p>합계가 같으면 상위 10명의 순위 합이 작은 학교가 앞섭니다. 그것도 같을 때는 각 학교 최상위 선수의 순위로 결정합니다. <a href="https://www.hakone-ekiden.jp/_assets/2026/103hakoneyosen_yoko.pdf" target="_blank" rel="noopener noreferrer">공식 예선 요강</a></p>
 
 <h2>집단으로 뛰는 학교, 각자 판단하는 학교</h2>
-<p>같은 유니폼끼리 모여 달리는 장면에도 관심을 가져보세요. 월륙Online의 10월 15일 전망은 학교별 선수층과 전술을 함께 짚습니다. 팀 합계가 걸려 있어도 모든 학교가 같은 방식으로 달릴 필요는 없습니다. 집단이 유지되는지, 선수마다 다른 위치에서 레이스를 이어가는지 보는 재미가 있습니다.</p>
-<p>관전할 때는 특정 선수 한 명의 빠른 출발을 학교 전체의 우세로 바로 읽지 않는 편이 좋습니다. 팀의 기록에 들어갈 열 명이 어디에 있는지가 다음 질문입니다. <a href="https://www.rikujyokyogi.co.jp/archives/219435" target="_blank" rel="noopener noreferrer">월륙Online 예선 전망</a></p>
+<p>같은 유니폼끼리 모여 달리는 방식도 학교마다 달랐습니다. 대회 전 월륙Online의 10월 15일 전망은 학교별 선수층과 전술을 함께 짚었습니다. 팀 합계가 걸려 있어도 모든 학교가 같은 방식으로 달릴 필요는 없습니다. 집단이 유지되는지, 선수마다 다른 위치에서 레이스를 이어가는지 보는 재미가 있습니다.</p>
+<p>다시보기나 다음 대회를 볼 때도 특정 선수 한 명의 빠른 출발을 학교 전체의 우세로 바로 읽지 않는 편이 좋습니다. 팀의 기록에 들어갈 열 명이 어디에 있는지가 다음 질문입니다. <a href="https://www.rikujyokyogi.co.jp/archives/219435" target="_blank" rel="noopener noreferrer">월륙Online 예선 전망</a></p>
 
-<h2>날짜·코스·방송과 기록 확인</h2>
+<h2>날짜·코스와 기록 확인</h2>
 <table><thead><tr><th>항목</th><th>공식 안내</th></tr></thead><tbody>
-<tr><td>예선 출발</td><td>2026년 10월 17일 토요일 08:30 예정</td></tr>
+<tr><td>예선 출발</td><td>2026년 10월 17일 토요일 08:30</td></tr>
 <tr><td>거리</td><td>하프마라톤 21.0975km</td></tr>
 <tr><td>코스</td><td>육상자위대 다치카와 주둔지 → 다치카와 시가지 → 국영 쇼와기념공원</td></tr>
 <tr><td>일본TV 방송</td><td>10월 17일 08:25~10:25, 간토 지역 등</td></tr>
 <tr><td>본선</td><td>2027년 1월 2~3일</td></tr>
 </tbody></table>
-<p>방송 시각과 경기 출발 시각은 5분 차이가 납니다. <a href="https://www.ntv.co.jp/hakone/info/3760062as8mh7v3nwxdk.html" target="_blank" rel="noopener noreferrer">일본TV 방송 공지</a>는 일본 내 방송 안내이며 한국에서의 실시간 시청을 보장하는 안내는 아닙니다.</p>
-<p>영상 재생이 어렵다면 <a href="https://www.hakone-ekiden.jp/" target="_blank" rel="noopener noreferrer">하코네 공식 홈페이지</a>의 예선 기록 메뉴와 <a href="https://www.ntv.co.jp/hakone/yosen_sougou/" target="_blank" rel="noopener noreferrer">일본TV 예선 기록속보</a>를 확인하세요. 경기 전에는 결과가 비어 있을 수 있습니다. 경기가 끝나면 개인 기록과 학교별 합계를 나란히 살펴보면 됩니다.</p>
-<p><small>2026년 10월 16일 공식 요강·방송 안내와 일본 현지 전망 기사를 대조했습니다. 출발 시각은 공식 요강의 ‘예정’ 표기를 따랐습니다.</small></p>
+<p>일본TV는 <a href="https://www.ntv.co.jp/hakone/info/3760062as8mh7v3nwxdk.html" target="_blank" rel="noopener noreferrer">일본 내 방송</a>으로 예선을 중계했습니다. 전체 기록은 <a href="https://www.hakone-ekiden.jp/" target="_blank" rel="noopener noreferrer">하코네 공식 홈페이지</a>에 게시된 팀 성적·종합 결과·개인 결과 PDF와 <a href="https://www.ntv.co.jp/hakone/yosen_sougou/" target="_blank" rel="noopener noreferrer">일본TV 예선 기록 페이지</a>에서 확인할 수 있습니다. 개인 기록과 학교별 합계를 나란히 살펴보면 됩니다.</p>
+<p><small>2026년 10월 16일 공식 요강·방송 안내와 일본 현지 전망 기사를 대조해 작성했고, 2026년 10월 18일 하코네 공식 사이트에 게시된 팀 성적·종합 결과·개인 결과 PDF로 결과를 갱신했습니다. 학교명은 한국어 독음으로 옮겼으며 순위 간 차이는 공식 합계 기록으로 계산한 값입니다.</small></p>
 `,
   },
   {
@@ -536,27 +554,29 @@ export const posts_2026_10: BlogPost[] = [
     id: 'backyard-ultra-world-team-championship-2026',
     slug: 'backyard-ultra-world-team-championship-2026',
     title: '백야드 울트라 세계팀선수권 2026 | 각자 자기 나라에서 달리는 세계선수권',
-    description: '2026 백야드 울트라 세계팀선수권은 한국 시간 10월 17일 밤 9시 동시에 출발합니다. 매시간 약 6.706km를 달리는 규칙, 남는 시간의 휴식, 국가별 최대 15명의 바퀴 합산 방식과 관전 포인트를 정리했습니다.',
+    description: '2026 백야드 울트라 세계팀선수권이 한국 시간 10월 17일 밤 9시 각국에서 동시에 출발했습니다. 매시간 약 6.706km를 달리는 규칙, 남는 시간의 휴식, 국가별 최대 15명의 바퀴 합산 방식과 공식 라이브 기록 확인 경로를 정리했습니다.',
     thumbnail: '/images/blog/backyard-ultra-world-team-championship-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-15',
+    updatedAt: '2026-10-18',
     category: 'news' as const,
     readingTime: 5,
     tags: ['백야드 울트라', '백야드 세계팀선수권', '울트라마라톤', '해외 러닝 소식', '러닝 대회 규칙'],
     faqs: [
-      { question: '2026 백야드 울트라 세계팀선수권은 언제 시작하나요?', answer: '2026년 10월 17일 토요일 밤 9시, 한국 시간 기준입니다. 공식 세계 동시 출발 시각인 12:00 UTC에 9시간을 더한 값입니다. 각국 공식 위성 대회가 같은 순간에 출발합니다.' },
+      { question: '2026 백야드 울트라 세계팀선수권은 언제 시작했나요?', answer: '2026년 10월 17일 토요일 밤 9시, 한국 시간 기준으로 출발했습니다. 공식 세계 동시 출발 시각인 12:00 UTC에 9시간을 더한 값입니다. 각국 공식 위성 대회가 같은 순간에 출발했습니다.' },
       { question: '백야드 울트라는 매시간 얼마나 달리나요?', answer: '매 정각 출발해 약 6.706km의 한 바퀴를 1시간 안에 마쳐야 합니다. 다음 정각에 다시 출발하고, 한 바퀴를 마친 뒤 남은 시간에 휴식과 정비를 합니다.' },
       { question: '세계팀선수권의 국가 점수는 어떻게 계산하나요?', answer: '국가별 최대 15명의 선수가 완료한 바퀴를 모두 더합니다. 가장 많은 누적 바퀴를 기록한 국가가 우승합니다. 팀원 한 명의 기록만으로 국가 순위가 정해지지 않습니다.' },
       { question: '선수들은 모두 같은 나라에 모여서 달리나요?', answer: '각국의 공식 위성 대회 코스에 모여 달립니다. 같은 순간에 출발하지만 실제 달리는 장소와 현지 시각은 다릅니다.' },
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>10월 17일 토요일 밤 9시, 한국 시간으로 동시에 출발합니다.</strong> 각국 선수들은 자기 나라의 공식 대회 코스에서 달립니다.</li>
+<li><strong>10월 17일 토요일 밤 9시, 한국 시간으로 동시에 출발했습니다.</strong> 각국 선수들은 자기 나라의 공식 대회 코스에서 달립니다.</li>
 <li><strong>매시간 약 6.706km를 한 바퀴씩 반복합니다.</strong> 일찍 돌아오면 다음 정각까지 남은 시간에 쉴 수 있습니다.</li>
 <li><strong>팀 점수는 선수들이 완료한 바퀴의 합계입니다.</strong> 국가별 최대 15명 모두의 기록이 순위에 반영됩니다.</li>
 </ul></div>
 
-<p>세계선수권인데 선수들이 한 나라에 모이지 않습니다. <strong>2026 백야드 울트라 세계팀선수권</strong>은 각국의 공식 코스에서 같은 순간에 출발합니다. 한국 시간으로는 <strong>10월 17일 토요일 밤 9시</strong>입니다.</p>
+<p>세계선수권인데 선수들이 한 나라에 모이지 않습니다. <strong>2026 백야드 울트라 세계팀선수권</strong>은 각국의 공식 코스에서 같은 순간에 출발했습니다. 한국 시간으로는 <strong>10월 17일 토요일 밤 9시</strong>였습니다.</p>
+<p>한국 시간 10월 18일 오후 4시 30분쯤 확인한 공식 라이브 대시보드에서 경기는 20번째 바퀴가 진행 중이었습니다. 대시보드는 각국 레이스 디렉터가 매시간 결과를 입력하며, 확인 과정에서 기록이 바뀔 수 있다고 안내합니다. 종료 시점과 개인·국가 우승은 아직 정해지지 않았습니다.</p>
 <p>매시간 달려야 할 거리는 약 6.706km. 이 거리를 마친 뒤에도 결승은 오지 않습니다. 다음 정각이 되면 다시 출발선에 서야 하죠. 개인이 얼마나 오래 남는지와 국가 전체가 몇 바퀴를 쌓는지를 함께 보는 경기입니다.</p>
 
 <h2>약 6.706km를 달리고, 다음 정각에 다시 출발</h2>
@@ -580,7 +600,7 @@ export const posts_2026_10: BlogPost[] = [
 <p><small>팀 점수·최대 출발 인원: <a href="https://bigsbackyardultra.com/" target="_blank" rel="noopener noreferrer">Big’s Backyard Ultra 공식 세계팀선수권 안내</a> · <a href="https://bigsbackyardultra.com/road-to-bigs/" target="_blank" rel="noopener noreferrer">공식 국가대표 선발 안내</a>.</small></p>
 
 <h2>같은 순간, 서로 다른 코스에서 달립니다</h2>
-<p>세계 동시 출발 시각은 <strong>10월 17일 12:00 UTC</strong>입니다. 미국 중부는 오전 7시(CDT), 호주 시드니가 있는 뉴사우스웨일스는 밤 11시(AEDT)에 해당합니다. 한국은 UTC보다 9시간 빨라 같은 날 밤 9시입니다.</p>
+<p>세계 동시 출발 시각은 <strong>10월 17일 12:00 UTC</strong>였습니다. 미국 중부는 오전 7시(CDT), 호주 시드니가 있는 뉴사우스웨일스는 밤 11시(AEDT)에 해당합니다. 한국은 UTC보다 9시간 빨라 같은 날 밤 9시였습니다.</p>
 <p>각국 대표는 자기 나라에 마련된 공식 위성 대회에 모입니다. 출발 시각은 같아도 코스와 현지의 낮·밤은 다릅니다. 중계를 볼 때는 선수의 바퀴 수와 함께 그곳이 지금 어떤 시간대인지 확인하면 경기 흐름을 이해하기 쉽습니다.</p>
 <p>국가대표 선발에는 지정 실버티켓 대회 우승과 예선 기간 성적을 바탕으로 한 선발 경로가 있습니다. 나라마다 배정이 달라, 실제 명단은 <a href="https://bigsbackyardultra.com/world-team-championship-2026/" target="_blank" rel="noopener noreferrer">공식 국가별 로스터</a>를 확인하는 것이 정확합니다.</p>
 
@@ -590,7 +610,8 @@ export const posts_2026_10: BlogPost[] = [
 <li><strong>선수가 돌아온 뒤 얼마나 시간이 남았는가.</strong> 도착 시각을 보면 다음 출발 전 준비할 여유를 알 수 있습니다.</li>
 <li><strong>국가별 누적 바퀴가 어떻게 변하는가.</strong> 개인 선두와 팀 순위를 따로 따라가면 팀전의 흐름이 보입니다.</li>
 </ul>
-<p>현재 확인 가능한 관전 경로로는 호주 주최자 Red’s Backyard Ultra가 안내하는 <a href="https://www.redsbackyardultra.com.au/2026worldteamchampionships" target="_blank" rel="noopener noreferrer">호주팀 중계·라이브 기록 링크</a>가 있습니다. 해당 페이지의 ‘Follow the Action’에서 확인하세요. 호주팀을 따라가는 경로이므로 세계 전체 중계로 생각하지는 마세요.</p>
+<p>전체 진행 상황은 Big’s Backyard Ultra 공식 사이트가 연결한 <a href="https://wtc2026.bigsbackyardultra.com/" target="_blank" rel="noopener noreferrer">세계팀선수권 라이브 대시보드</a>에서 볼 수 있습니다. 국가별 누적 바퀴, 남은 선수 수, 바퀴별 기록이 시간마다 갱신됩니다. 같은 공식 사이트는 <a href="https://www.youtube.com/@backyardultrachannel" target="_blank" rel="noopener noreferrer">공식 유튜브 채널</a>을 라이브 스트림 경로로 안내합니다.</p>
+<p>호주팀을 따로 따라가려면 호주 주최자 Red’s Backyard Ultra가 안내하는 <a href="https://www.redsbackyardultra.com.au/2026worldteamchampionships" target="_blank" rel="noopener noreferrer">호주팀 중계·라이브 기록 링크</a>의 ‘Follow the Action’을 확인하세요. 호주팀을 따라가는 경로이므로 세계 전체 중계로 생각하지는 마세요.</p>
 <p>직접 참가할 대회를 찾는다면 노면부터 살펴보세요. 백야드라는 경기 방식만으로 모든 코스가 같은 산길이라고 볼 수는 없습니다. 트레일 코스용 장비를 고를 때는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 용도·가격대 안내</a>에서 선택 기준을 확인할 수 있습니다.</p>
 
 <h2>자주 묻는 질문</h2>
@@ -598,7 +619,7 @@ export const posts_2026_10: BlogPost[] = [
 <div class="faq"><p class="faq-q">Q. 참가국 수나 한국팀 명단은 어디서 보나요?</p><p class="faq-a">A. 공식 국가별 로스터를 확인하세요. 이 글에서는 최종 참가국 수와 한국팀 출전을 확정해 적지 않았습니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 언제 끝나는 대회인가요?</p><p class="faq-a">A. 정해진 시간이나 바퀴 수를 채우면 끝나는 방식이 아닙니다. 남은 선수들의 진행과 완료한 바퀴를 공식 기록에서 확인하면 됩니다.</p></div>
 
-<p><small>출처: Big’s Backyard Ultra 공식 대회·선발 안내, 호주 울트라·트레일러너협회, 호주 주최자 Red’s Backyard Ultra, Canadian Running(2026년 10월 14일). 2026년 10월 15일 확인. 약 6.706km는 소수 셋째 자리까지 반올림한 표기이며, 휴식 시간과 300바퀴는 규칙 설명용 계산 예시입니다.</small></p>
+<p><small>출처: Big’s Backyard Ultra 공식 대회·선발 안내, 호주 울트라·트레일러너협회, 호주 주최자 Red’s Backyard Ultra, Canadian Running(2026년 10월 14일). 2026년 10월 15일 확인. 진행 상황은 2026년 10월 18일 공식 라이브 대시보드로 갱신했습니다. 약 6.706km는 소수 셋째 자리까지 반올림한 표기이며, 휴식 시간과 300바퀴는 규칙 설명용 계산 예시입니다.</small></p>
 `,
   },
   {
