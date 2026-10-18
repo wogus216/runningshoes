@@ -9,6 +9,15 @@
 
 ---
 
+## 📸 인스타 API 토큰 (2026-10-18 발급)
+
+`IG_ACCESS_TOKEN`(.env.local, Instagram 로그인 방식 장기 토큰 60일) — `npm run ig:insights` 로 10/18 21시 연결 확인(@allrunabout MEDIA_CREATOR).
+
+| 날짜 | 대상 | 작업 |
+|---|---|---|
+| **2026-10-23** | 10/20 카카오페이 릴스 | 게시 후 72h±6h 창에서 `npm run ig:insights` 1회 기록(창 표시 ●). 비팔로워 비율은 API 미제공 → Aside 웹 "인사이트 보기"로 보충, 대리 지표 표기 |
+| **2026-12-10** | `IG_ACCESS_TOKEN` | 만료(발급 10/18 + 60일 = 12/17경) 1주 전 — 개발자 대시보드에서 재발급하거나 refresh_access_token 으로 연장. 만료되면 `ig:insights` 가 인증 오류로 멈춘다 |
+
 ## 💛 10월 17일 발행 — 카카오페이 롱런 2026 후속 · 쿠키런 취소 정정
 
 블로그 `kakaopay-long-run` + DB `kakaopay-longrun-2026`(11월). 1차 소스는 fest.kakaopay.com 오프라인·온라인 탭(10/17 확인). 쿠키런은 데일리안 10/16 보도(운영사무국 10/15 공식 SNS 공지 인용)로 취소 반영 — DB `brave-cookie-run-seoul-2026`·글 `brave-cookie-run-seoul-2026`.
