@@ -98,6 +98,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F3YG0bMm' }],
+  purchaseLinks: [],
   tags: ['쿠션화', '맥시멀', '관절 보호', '장거리'],
 };

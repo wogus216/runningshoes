@@ -100,5 +100,5 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['asics-superblast-2', 'nike-vomero-18', 'new-balance-sc-trainer-v3', 'puma-deviate-nitro-3'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xNnMDilg' }],
+  purchaseLinks: [],
 };
