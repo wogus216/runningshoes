@@ -965,12 +965,12 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: 'daegu-marathon-application-guide',
     slug: 'daegu-marathon-application-guide',
-    title: '2027 대구마라톤 접수 시작 | 풀코스 10/12~18·9만원, 결제는 10/19~25',
-    description: '2027 대구마라톤 풀코스 신청이 10월 12일 10시에 시작됐습니다. 18일 23:59까지 신청하고 19~25일 별도 결제하는 구조입니다. 참가비 9만원, 10km·건강달리기는 10월 26일 신청 시작. 공식 접수 상품의 실제 개시와 12월 10일 환불 기한을 확인해 정리했습니다.',
+    title: '2027 대구마라톤 풀코스 신청 마감 | 10/19~25 결제·9만원, 10km 신청은 10/26부터',
+    description: '2027 대구마라톤 풀코스 신청 기간이 끝났습니다. 공식 일정상 10월 19~25일은 기존 신청자의 결제 기간입니다. 풀코스 참가비 9만원, 10km·건강달리기 신청은 10월 26일부터입니다. 신청 내역과 결제 상태, 12월 10일 환불 기한을 확인하세요.',
     thumbnail: '/images/blog/daegu-marathon-application-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-11',
-    updatedAt: '2026-10-12',
+    updatedAt: '2026-10-19',
     category: 'news' as const,
     readingTime: 4,
     tags: ['대구마라톤', '대구국제마라톤', '풀코스 접수', '풀코스', '마라톤 접수', '2027 마라톤'],
@@ -986,7 +986,7 @@ export const posts_2026_10: BlogPost[] = [
       ],
     },
     raceMeta: {
-      displayTitle: '2027 대구마라톤, 풀코스 접수 시작',
+      displayTitle: '2027 대구마라톤, 풀코스 결제 주간',
       displaySubtitle: '2월 28일 일요일 — 국채보상공원·대구 시내 일원',
       raceDate: '2027-02-28',
       registrationStart: '2026-10-12T10:00',
@@ -994,8 +994,8 @@ export const posts_2026_10: BlogPost[] = [
       registrationEnd: '2026-11-01',
       registrationVia: '대구마라톤 공식 홈페이지 접수 페이지',
       action: {
-        what: '풀코스 신청 개시 확인 — 10월 18일 23:59까지',
-        how: '<a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">공식 접수 페이지</a>에서 종목별 접수 기간에 신청합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간에 반드시 결제해야 참가가 확정됩니다.',
+        what: '풀코스 기존 신청자 결제 — 10월 19~25일',
+        how: '공식 홈페이지에 로그인해 기존 신청 내역과 결제 상태를 확인하세요. 공식 일정상 풀코스 결제 기간은 10월 19~25일입니다. 10km·건강달리기 신규 신청은 10월 26일부터입니다.',
       },
       facts: [
         { label: '대회일', value: '2027년 2월 28일', sub: '일요일 · 08:00 출발' },
@@ -1018,13 +1018,13 @@ export const posts_2026_10: BlogPost[] = [
       { question: '접수하면 바로 참가가 확정되나요?', answer: '아닙니다. 접수와 결제가 분리돼 있습니다. 풀코스는 10월 19~25일, 10km·건강달리기는 11월 2~8일 결제 기간에 참가비를 내야 참가가 확정됩니다.' },
     ],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 풀코스 신청 시작</span><span class="dl-text"><strong>2027 대구국제마라톤(2027년 2월 28일)</strong> 풀코스(마스터즈) 신청이 <strong>2026년 10월 12일(월) 10시에 시작됐습니다.</strong> 10km·건강달리기는 10월 26일(월) 10시부터 접수합니다. 접수와 결제가 분리돼 있으니, 접수 후 결제 기간을 반드시 확인하세요.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 풀코스 결제 주간</span><span class="dl-text"><strong>풀코스 신청 기간(10/12~18)이 끝났습니다.</strong> 공식 일정상 기존 신청자는 <strong>10월 19일(월)~25일(일)</strong>에 참가비를 결제해야 합니다. 10km·건강달리기 신규 신청은 10월 26일(월) 10시부터입니다.</span></div>
 
-<h2>10월 12일 풀코스 신청, 이렇게 확인하세요</h2>
+<h2>풀코스를 신청했다면 결제 상태를 확인하세요</h2>
 <ol>
-<li><a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">공식 참가접수 페이지</a>에서 <strong>풀코스(42.195km)</strong> 상품을 선택합니다. 10월 12일 10:09 기준 이 상품 1종과 참가신청 버튼이 표시됐습니다.</li>
-<li><strong>참가신청</strong>을 누르고 공식 화면의 로그인·입력 안내를 따라 진행합니다. 접속이 지연되면 대기열 화면의 안내에 따라 기다리세요.</li>
-<li>신청을 마쳤다면 신청 내역을 확인하고 <strong>10월 19~25일 결제</strong>를 준비하세요.</li>
+<li><a href="https://daegumarathon.daegu.go.kr/kor/index.do" target="_blank" rel="noopener noreferrer">공식 홈페이지</a>에 로그인해 기존 풀코스 신청 내역을 확인하세요. 신규 신청 기간은 10월 18일 23:59에 끝났습니다.</li>
+<li>신청 내역의 결제 안내에 따라 <strong>10월 19~25일</strong>에 참가비 9만원을 결제하세요. 공개 상품 목록은 10월 19일 정오 확인 당시 0개였으며, 로그인 후 개인별 결제 화면의 실제 작동은 확인하지 않았습니다.</li>
+<li>결제 후 신청 내역의 결제 상태를 다시 확인하세요. 신청만으로 참가가 확정되지는 않습니다.</li>
 </ol>
 <p>대회일은 <strong>2027년 2월 28일(일) 오전 8시</strong>이고, 10월 12일 시작된 것은 참가 신청입니다. 신청 완료 뒤에는 내 신청 내역이 남았는지 확인하고 결제일을 달력에 적어두세요.</p>
 
@@ -1039,7 +1039,7 @@ export const posts_2026_10: BlogPost[] = [
     <tr><td><strong>단체접수</strong></td><td>11/16(월) 10:00 ~ 11/19(목) 23:59</td><td colspan="2">공식 안내 확인</td></tr>
   </tbody>
 </table>
-<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">접수 ≠ 참가 확정</p><p>접수 기간에 신청만 하면 끝이 아닙니다. <strong>별도 결제 기간에 참가비를 납부해야 참가가 확정</strong>됩니다. 풀코스는 신청 마감 다음 날인 10월 19일부터 결제 주간이 시작됩니다. 신청을 마쳤다면 달력에 결제 시작일과 마감일을 함께 적어두세요.</p></div></div>
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">접수 ≠ 참가 확정</p><p>접수 기간에 신청만 하면 끝이 아닙니다. <strong>별도 결제 기간에 참가비를 납부해야 참가가 확정</strong>됩니다. 공식 일정상 풀코스는 10월 19~25일 결제 주간입니다. 신청을 마쳤다면 결제 상태와 마감일을 함께 확인하세요.</p></div></div>
 <p>건강달리기(5km) 참가비는 공식 접수 페이지에 아직 게시되지 않았습니다. 10월 26일 접수가 열리면 확인할 수 있습니다.</p>
 
 <h2>대회 개요 — 2월 28일 대구 도심에서 출발</h2>
@@ -1052,7 +1052,7 @@ export const posts_2026_10: BlogPost[] = [
 </ul>
 <p>2월 말은 겨울 훈련을 마치고 봄 시즌을 여는 시점입니다. 국내 메이저 풀코스 중 가장 이른 시기에 열리므로, 상반기 기록 도전의 첫 기회로 삼는 러너가 많습니다.</p>
 
-<h2>접수 전 확인할 것</h2>
+<h2>추가 종목 신청 전 확인할 것</h2>
 <ul>
   <li><strong>정원·선발 방식:</strong> 이번에 확인한 공개 접수 상품 목록에서는 정원과 선착순·추첨 여부를 확인하지 못했습니다. 신청 전에 공식 대회개요·공지의 최신 조건을 함께 확인하세요.</li>
   <li><strong>WMAC 사전접수:</strong> WMAC(세계마스터즈육상선수권) 참가자 대상 사전접수가 10월 5~11일로 이미 진행됐습니다. 일반 접수와 별개입니다.</li>
@@ -1064,6 +1064,7 @@ export const posts_2026_10: BlogPost[] = [
 <p>본인 러닝 스타일과 목표에 맞는 러닝화는 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁힐 수 있습니다. 국내 마라톤 일정 전체는 <a href="/marathon">마라톤 일정 페이지</a>에서 확인하세요.</p>
 
 <h2>출처</h2>
+<p>2026년 10월 19일 풀코스 신청 기간 경과와 공식 일정상의 결제 주간을 반영했습니다. 같은 날 정오 공식 접수 페이지는 총 0개 상품을 표시했습니다. 로그인 후 개인별 결제 기능의 실제 개시 여부는 확인하지 않았습니다.</p>
 <p><a href="https://daegumarathon.daegu.go.kr/kor/index.do" target="_blank" rel="noopener noreferrer">대구국제마라톤 공식 홈페이지</a> 및 <a href="https://daegumarathon.daegu.go.kr/korAply/index.do" target="_blank" rel="noopener noreferrer">접수 페이지</a> — 2026년 10월 11일 확인. 기존 일정 안내는 10월 11일 확인 자료 기준입니다. <strong>10월 12일 10:09 공식 참가접수 목록에서 풀코스 상품·신청 버튼·9만원·신청 종료 10월 18일 23:59를 확인</strong>했습니다. 같은 페이지의 유의사항에서 취소·환불 기한 12월 10일 23:59를 확인했습니다.</p>
 <p><small>10월 12일 공개 접수 목록에는 풀코스 1종만 표시됐습니다. 건강달리기(5km) 상품의 참가비는 이번 확인에서 확보하지 못했습니다. 선착순·추첨 여부와 정원은 이번에 확인한 접수 상품 목록에는 명시되지 않았습니다. 10월 12일 브라우저가 대기열 주소로 이동하는 현상도 확인했으므로, 접속이 지연되면 공식 화면 안내에 따라 기다리세요.</small></p>
 `,

@@ -882,7 +882,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '현암지구공원 (경기 여주시)',
     region: '경기',
     distances: ['하프', '10K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://www.mara1080.com/event/edaee6e1-0d92-4248-9927-06ed3b0abfd0',
     registrationNote:
@@ -913,7 +913,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '롯데월드타워 월드파크 잔디광장 (서울 송파구)',
     region: '서울',
     distances: ['10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://www.lotteon.com/',
     registrationStart: '2026-09-01',
