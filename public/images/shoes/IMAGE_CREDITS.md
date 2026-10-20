@@ -268,3 +268,17 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-09
 - Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)
+
+## Kiprun Kipstorm Elite
+- Source: 데카트론 한국 공식몰 상품 상세 (남성 카본 레이싱화 킵스톰 엘리트 8961380, 울트라 화이트/플루오 네온 핑크)
+- CDN: contents.mediadecathlon.com 공식 JPG 2048×2048 (연회색 스튜디오 배경)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 흰 배경 평탄화, 800px WebP q85
+- Date: 2026-10-20
+- Images: 4 (side=p3039107 외측, detail=p3039123 내측, top=p3039138, outsole=p3039109)
+
+## Kiprun Kipsummit Max
+- Source: 데카트론 한국 공식몰 상품 상세 (남성 트레일러닝화 킵서밋 맥스 8970093, 허니 옐로우)
+- CDN: contents.mediadecathlon.com 공식 JPG 2048×2048 (연회색 스튜디오 배경)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 흰 배경 평탄화, 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=p3024498 외측, angle=p3024485 앞 사선, detail=p3024560 내측, top=p3024510, outsole=p3024502)

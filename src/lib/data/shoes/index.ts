@@ -12,6 +12,7 @@ import { hokaShoes } from './hoka';
 import { brooksShoes } from './brooks';
 import { mizunoShoes } from './mizuno';
 import { onShoes } from './on';
+import { kiprunShoes } from './kiprun';
 import { liningShoes } from './lining';
 import { salomonShoes } from './salomon';
 
@@ -29,6 +30,7 @@ export const shoes: Shoe[] = [
   ...brooksShoes,
   ...mizunoShoes,
   ...pumaShoes,
+  ...kiprunShoes,
   ...liningShoes,
   ...salomonShoes,
 ];

@@ -9,6 +9,7 @@ import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
+import { kiprunBrand } from './kiprun';
 import { liningBrand } from './lining';
 import { salomonBrand } from './salomon';
 
@@ -24,6 +25,7 @@ export const brands: Brand[] = [
   newBalanceBrand,
   pumaBrand,
   mizunoBrand,
+  kiprunBrand,
   liningBrand,
   salomonBrand,
 ];
@@ -129,5 +131,6 @@ export {
   newBalanceBrand,
   pumaBrand,
   mizunoBrand,
+  kiprunBrand,
   liningBrand,
 };

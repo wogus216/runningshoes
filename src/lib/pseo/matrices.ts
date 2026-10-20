@@ -32,6 +32,7 @@ const brandSlugMap: Record<string, string> = {
   On: 'on',
   Mizuno: 'mizuno',
   Puma: 'puma',
+  Kiprun: 'kiprun',
   'Li-Ning': 'li-ning',
   Salomon: 'salomon',
 };
