@@ -268,3 +268,10 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-09
 - Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)
+
+## Diadora Atomo Star / Frequenza 2 / Nucleo 2 / Mythos Blushield Volo 5
+- Source: 디아도라 한국 공식몰(diadorakorea.com, 하이라이트브랜즈 운영) 상품 이미지 — Cafe24 /web/product/big·/web/product/extra/big 1000×1000 JPG
+  - 아토모 스타: product_no=5699 (BLACK) · 프리퀀자 2: 5646 (LIGHT BLUE) · 누클레오 2: 5194 (WHITE) · 미토스 블루실드 볼로 5: 4617 (ORANGE)
+- Processing: 좌상단 쇼핑몰 아이콘·하단 "made in italy" 문구를 배경색으로 덮은 뒤 @imgly/background-removal-node(medium) 배경 제거 → 알파 보정(×3) → trim·800×800 투명 패딩 WebP q85
+- Date: 2026-10-20
+- Images: 모델당 4 (side, angle, top, outsole)

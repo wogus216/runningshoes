@@ -4,6 +4,7 @@ import { adidasBrand } from './adidas';
 import { asicsBrand } from './asics';
 import { hokaBrand } from './hoka';
 import { brooksBrand } from './brooks';
+import { diadoraBrand } from './diadora';
 import { sauconyBrand } from './saucony';
 import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
@@ -19,6 +20,7 @@ export const brands: Brand[] = [
   asicsBrand,
   hokaBrand,
   brooksBrand,
+  diadoraBrand,
   sauconyBrand,
   onBrand,
   newBalanceBrand,
@@ -124,6 +126,7 @@ export {
   asicsBrand,
   hokaBrand,
   brooksBrand,
+  diadoraBrand,
   sauconyBrand,
   onBrand,
   newBalanceBrand,

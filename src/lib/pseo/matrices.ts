@@ -28,6 +28,7 @@ const brandSlugMap: Record<string, string> = {
   'New Balance': 'new-balance',
   Hoka: 'hoka',
   Brooks: 'brooks',
+  Diadora: 'diadora',
   Saucony: 'saucony',
   On: 'on',
   Mizuno: 'mizuno',
