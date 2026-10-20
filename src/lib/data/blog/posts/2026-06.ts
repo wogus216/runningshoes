@@ -5309,13 +5309,13 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 8,
     tags: ['시드니마라톤', '시드니마라톤 2026', '세계 7대 마라톤', '메이저 마라톤', '식스스타', '마라톤 해외원정', '자선 마라톤', '하버브리지', '마라톤 추첨', '해외 마라톤 신청'],
     content: `
-<div class="deadline-strip"><span class="dl-badge">🏁 대회 종료</span><span class="dl-text"><strong>2026 시드니마라톤은 8월 30일(일)에 끝났습니다.</strong> 다음은 2027 — 일반추첨이 <strong>한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시</strong>에 열립니다(응모 무료·무작위 추첨). 최신 정보는 <a href="/blog/sydney-marathon-2027-registration-guide"><strong>시드니마라톤 2027 추첨 가이드</strong></a>를 보세요.</span></div>
+<div class="deadline-strip"><span class="dl-badge">🏁 대회 종료</span><span class="dl-text"><strong>2026 시드니마라톤은 8월 30일(일)에 끝났습니다.</strong> 다음은 2027 — 일반추첨은 <strong>한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시</strong>에 진행돼 마감됐고(응모 무료·무작위 추첨), 결과는 <strong>11월 3일</strong> 통보됩니다. 최신 정보는 <a href="/blog/sydney-marathon-2027-registration-guide"><strong>시드니마라톤 2027 추첨 가이드</strong></a>를 보세요.</span></div>
 
 <div class="callout info">
   <span class="callout-icon">📌</span>
   <div class="callout-body">
     <p class="callout-title">이 글은 2026 사이클의 기록입니다</p>
-    <p>아래 내용은 2026년 6월 시점에 "추첨이 끝난 뒤 남은 경로"를 정리한 것이고, <strong>그 대회는 이미 치러졌습니다.</strong> 지금 신청할 수 있는 것은 2027 대회(2027년 8월 29일)이며 <strong>일반추첨이 다시 열려 있습니다</strong> — 자선·투어보다 훨씬 싼 경로이니 먼저 <a href="/blog/sydney-marathon-2027-registration-guide">2027 추첨 가이드</a>를 확인하세요. 다만 이 글의 <strong>코스 성격(누적 +313m·PB 코스가 아닌 이유), 인천 직항 10시간·시차·호주 ETA, 자선 경로의 비용 구조</strong>는 2027에도 그대로 적용되므로 원정 준비용으로는 여전히 유효합니다.</p>
+    <p>아래 내용은 2026년 6월 시점에 "추첨이 끝난 뒤 남은 경로"를 정리한 것이고, <strong>그 대회는 이미 치러졌습니다.</strong> 지금 신청할 수 있는 것은 2027 대회(2027년 8월 29일)이며 <strong>일반추첨은 10월 19일 마감돼 11월 3일 결과 통보를 기다리는 중입니다</strong> — 추첨 일정과 낙첨 후 자선·여행 경로는 <a href="/blog/sydney-marathon-2027-registration-guide">2027 추첨 가이드</a>를 확인하세요. 다만 이 글의 <strong>코스 성격(누적 +313m·PB 코스가 아닌 이유), 인천 직항 10시간·시차·호주 ETA, 자선 경로의 비용 구조</strong>는 2027에도 그대로 적용되므로 원정 준비용으로는 여전히 유효합니다.</p>
   </div>
 </div>
 

@@ -8466,11 +8466,11 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'sydney-marathon-2027-registration-guide',
     title: '시드니마라톤 2027 추첨 접수 시작 — 응모 무료·국제 참가비 AUD 330, 10월 19일 마감',
     description:
-      '2027 시드니마라톤 일반추첨이 열렸습니다. 한국시각 9월 29일(화) 오전 9시부터 10월 19일(월) 오전 8시까지 응모할 수 있습니다. 응모는 무료·무작위 추첨이며, 당첨 시 국제 참가비 AUD 330이 11월 3일 자동 결제됩니다. 2027 대회일은 8월 29일(일)입니다.',
+      '2027 시드니마라톤 일반추첨이 한국시각 10월 19일(월) 오전 8시에 마감됐습니다(9월 29일 오전 9시 시작). 응모는 무료·무작위 추첨이었고, 결과는 11월 3일 이메일로 통보되며 당첨 시 국제 참가비 AUD 330이 같은 날 자동 결제됩니다. 2027 대회일은 8월 29일(일)입니다.',
     thumbnail: '/images/blog/sydney-marathon-2027-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-01',
-    updatedAt: '2026-09-29',
+    updatedAt: '2026-10-20',
     category: 'news' as const,
     readingTime: 8,
     tags: [
@@ -8498,12 +8498,12 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '2027 시드니마라톤 추첨은 언제 열리나요?',
         answer:
-          '현지 시각으로 2026년 9월 29일(화) 오전 10시(AEST)에 열려 10월 19일(월) 오전 10시(AEDT)에 닫힙니다. 한국 시각으로 환산하면 9월 29일(화) 오전 9시에 열리고 10월 19일(월) 오전 8시에 닫힙니다. 여는 시각과 닫는 시각의 환산 차이가 한 시간 나는 이유는 그 사이 10월 4일에 호주 서머타임이 시작돼 시차가 +1시간에서 +2시간으로 벌어지기 때문입니다. 공식 발표일인 11월 3일에 당첨·낙첨을 이메일로 통보합니다.',
+          '현지 시각으로 2026년 9월 29일(화) 오전 10시(AEST)에 열려 10월 19일(월) 오전 10시(AEDT)에 마감됐습니다. 한국 시각으로 환산하면 9월 29일(화) 오전 9시에 열려 10월 19일(월) 오전 8시에 닫혔고, 공식 추첨 페이지는 10월 20일 현재 "NOW CLOSED"로 표시됩니다. 여는 시각과 닫는 시각의 환산 차이가 한 시간 나는 이유는 그 사이 10월 4일에 호주 서머타임이 시작돼 시차가 +1시간에서 +2시간으로 벌어지기 때문입니다. 공식 발표일인 11월 3일에 당첨·낙첨을 이메일로 통보합니다.',
       },
       {
         question: '오픈 시각에 대기하고 있어야 하나요?',
         answer:
-          '아닙니다. 선착순이 아니라 무작위 추첨입니다. 접수 기간 안에 응모만 해두면 언제 넣었는지는 당락에 영향을 주지 않습니다. 국내 대회처럼 오픈 시각에 광클할 필요가 없다는 뜻입니다. 다만 마감 시각이 한국 시각 오전 8시라 출근 시간대와 겹치므로, 마지막 날로 미루지 말고 여유 있게 넣어두는 편이 안전합니다.',
+          '아닙니다. 선착순이 아니라 무작위 추첨입니다. 접수 기간 안에 응모했다면 언제 넣었는지는 당락에 영향을 주지 않습니다. 2027 추첨은 10월 19일 한국시각 오전 8시에 마감됐고, 결과는 11월 3일 통보됩니다.',
       },
       {
         question: '응모하는 데 돈이 드나요?',
@@ -8532,13 +8532,13 @@ export const posts_2026_09: BlogPost[] = [
       },
     ],
     content: `
-<div class="deadline-strip"><span class="dl-badge">🇦🇺 추첨 접수 중</span><span class="dl-text"><strong>2027 일반추첨 — 한국시각 9월 29일(화) 오전 9시 ~ 10월 19일(월) 오전 8시.</strong> <a href="https://www.tcssydneymarathon.com/sign-up">공식 추첨 안내</a>에서 신청하세요. 응모 무료·무작위 추첨, 당첨 시 국제 참가비 AUD 330 자동 결제(11월 3일). 대회일은 2027년 8월 29일(일).</span></div>
+<div class="deadline-strip"><span class="dl-badge">🇦🇺 추첨 마감 · 결과 대기</span><span class="dl-text"><strong>2027 일반추첨은 한국시각 10월 19일(월) 오전 8시에 마감됐습니다.</strong> 결과는 <strong>11월 3일</strong> 이메일로 통보되고, 당첨자는 같은 날 국제 참가비 AUD 330이 등록 카드로 자동 결제됩니다(<a href="https://www.tcssydneymarathon.com/sign-up">공식 추첨 안내</a>). 11월 6일 이후에도 연락이 없을 때만 문의하라고 안내합니다. 대회일은 2027년 8월 29일(일).</span></div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>추첨 창이 열렸습니다</strong> — 현지 9월 29일(화) 10시(AEST) ~ 10월 19일(월) 10시(AEDT). 한국시각으로는 <strong>9/29 오전 9시 ~ 10/19 오전 8시</strong>인데, 여는 시각과 닫는 시각의 환산이 한 시간 다릅니다(그 사이 호주 서머타임 시작)</li>
-    <li><strong>선착순이 아니라 무작위 추첨입니다.</strong> 기간 안에만 넣으면 됩니다. <strong>응모는 무료</strong>이고, 당첨되면 <strong>11월 3일 국제 참가비 AUD 330</strong>이 등록한 카드로 자동 결제됩니다</li>
+    <li><strong>추첨이 마감됐습니다</strong> — 현지 9월 29일(화) 10시(AEST) ~ 10월 19일(월) 10시(AEDT), 한국시각 <strong>9/29 오전 9시 ~ 10/19 오전 8시</strong>였습니다. 결과 통보·당첨자 결제는 <strong>11월 3일</strong>입니다</li>
+    <li><strong>선착순이 아니라 무작위 추첨이었습니다.</strong> <strong>응모는 무료</strong>였고, 당첨되면 <strong>11월 3일 국제 참가비 AUD 330</strong>이 등록한 카드로 자동 결제됩니다</li>
     <li><strong>2026년엔 12만 3천 명이 지원했고 출발 자리는 4만 석이었습니다</strong>(둘 다 공식 수치). 다만 4만 석에 자선·여행패키지·보장출전이 섞여 있어 <strong>단순 나눗셈으로 당첨률을 계산할 수 없습니다</strong> — 추첨 몫은 공개되지 않았습니다</li>
   </ul>
 </div>
@@ -8572,8 +8572,8 @@ export const posts_2026_09: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⏰</span>
   <div class="callout-body">
-    <p class="callout-title">마감이 한국시각 월요일 오전 8시입니다</p>
-    <p>출근길과 정확히 겹칩니다. 그런데 이 대회는 <strong>선착순이 아니라 무작위 추첨</strong>이라 마지막 날까지 끌 이유가 전혀 없습니다. 창이 열린 날 넣어두면 끝나는 일을 굳이 마감일 아침으로 미루지 마세요. 국내 인기 대회의 "오픈 광클" 습관을 그대로 가져올 필요도 없습니다 — <strong>9월 29일 오전 9시에 대기하는 것도, 10월 19일 아침에 서두르는 것도 당락과 무관합니다.</strong></p>
+    <p class="callout-title">마감은 한국시각 10월 19일(월) 오전 8시였습니다</p>
+    <p>이 대회는 <strong>선착순이 아니라 무작위 추첨</strong>이라, 기간 안에 응모했다면 언제 넣었는지는 당락과 무관합니다. 이제 남은 일정은 <strong>11월 3일 결과 통보·당첨자 자동 결제</strong>입니다.</p>
   </div>
 </div>
 
@@ -8650,10 +8650,10 @@ export const posts_2026_09: BlogPost[] = [
 <h2>지금 할 일</h2>
 
 <ol>
-  <li><strong><a href="https://www.tcssydneymarathon.com/sign-up">공식 2027 추첨 안내</a>에서 10월 19일 오전 8시(KST) 전에 응모</strong> — 선착순이 아니므로 접수 기간 안에만 넣으면 됩니다</li>
+  <li><strong>11월 3일 결과 메일 확인</strong> — 2027 추첨은 10월 19일 오전 8시(KST)에 마감됐습니다. 정크·스팸함도 확인하고, 11월 6일 이후에도 연락이 없으면 <a href="https://www.tcssydneymarathon.com/sign-up">공식 추첨 안내</a>의 문의 경로를 이용하세요</li>
   <li><strong>결제 카드를 확인하기</strong> — 당첨 시 11월 3일 국제 참가비 AUD 330이 자동 청구됩니다. 카드가 그날까지 유효하고 해외 결제가 열려 있는지 확인하세요</li>
   <li><strong>공식 안내 확인</strong> — 추첨 배정석·연령 제한 등 공개되지 않은 세부 조건은 공식 페이지에서 확인하세요</li>
-  <li><strong>1년 뒤 일정을 먼저 판단</strong> — 대회는 2027년 8월 29일(일)입니다. "되면 간다"가 아니라면 넣지 않는 편이 낫습니다</li>
+  <li><strong>1년 뒤 일정을 먼저 판단</strong> — 대회는 2027년 8월 29일(일)입니다. 당첨되면 11월 3일 참가비가 바로 결제되므로, 그 전에 휴가·항공 일정을 가늠해 두세요</li>
 </ol>
 
 <p>다른 메이저의 접수 창과 겹쳐 보려면 <a href="/blog/world-marathon-majors-guide-2026">6대 메이저 관문 정리</a>를, 국내 가을 대회 일정은 <a href="/marathon">마라톤 캘린더</a>에서 확인하세요.</p>
@@ -8662,11 +8662,11 @@ export const posts_2026_09: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">아직 공개되지 않은 것들</p>
-    <p>2026년 9월 29일 기준 공식 추첨 안내에서 아직 확인되지 않는 항목은 <strong>2027 추첨 배정 좌석 수</strong>, <strong>자선 경로의 최소 모금액과 마감</strong>, <strong>공식 여행 패키지 세부</strong>, <strong>연령 제한</strong>입니다. 제한시간은 공식 마라톤 안내에 7시간으로 표시돼 있습니다. 확인되지 않은 조건을 추정으로 메우지 않습니다.</p>
+    <p>2026년 9월 29일 기준(10월 20일 마감 상태 재확인) 공식 추첨 안내에서 아직 확인되지 않는 항목은 <strong>2027 추첨 배정 좌석 수</strong>, <strong>자선 경로의 최소 모금액과 마감</strong>, <strong>공식 여행 패키지 세부</strong>, <strong>연령 제한</strong>입니다. 제한시간은 공식 마라톤 안내에 7시간으로 표시돼 있습니다. 확인되지 않은 조건을 추정으로 메우지 않습니다.</p>
   </div>
 </div>
 
-<p><small>출처: <strong>TCS Sydney Marathon 공식 <a href="https://www.tcssydneymarathon.com/sign-up">2027 Ballot 페이지</a></strong>(2026-09-29 확인, 2026-10-01 재확인 — 신청 페이지 기준 변경 없음, FAQ 요금 표기는 불일치) — 추첨 일정(현지 9/29 10시 AEST~10/19 10시 AEDT), 11월 3일 결과·자동 결제, 참가비(국내 AUD 280·국제 AUD 330), 응모 무료·무작위 추첨, 2026년 지원자 123,000명 이상·출발 자리 40,000석 이상을 확인했습니다. 2027 출발 좌석 중 일반추첨 배정분은 미공개입니다. 제한시간 7시간은 <a href="https://www.tcssydneymarathon.com/marathon">공식 마라톤 안내</a> 기준입니다. 한국시각 환산은 AEST(UTC+10)·AEDT(UTC+11)와 KST(UTC+9)의 차이를 직접 계산했고, 2026년 호주 동부 서머타임 시작일(10월 4일)을 반영했습니다. 코스 누적 상승 +313m와 원정 조건은 이 사이트의 <a href="/blog/sydney-marathon-2026-registration-guide">2026 시드니마라톤 신청 가이드</a> 정리 기준입니다.</small></p>
+<p><small>출처: <strong>TCS Sydney Marathon 공식 <a href="https://www.tcssydneymarathon.com/sign-up">2027 Ballot 페이지</a></strong>(2026-09-29 확인, 2026-10-01 재확인 — 신청 페이지 기준 변경 없음, FAQ 요금 표기는 불일치. 2026-10-20 재확인 — 추첨 "NOW CLOSED", 11월 3일 결과·결제와 11월 6일 이후 문의 안내) — 추첨 일정(현지 9/29 10시 AEST~10/19 10시 AEDT), 11월 3일 결과·자동 결제, 참가비(국내 AUD 280·국제 AUD 330), 응모 무료·무작위 추첨, 2026년 지원자 123,000명 이상·출발 자리 40,000석 이상을 확인했습니다. 2027 출발 좌석 중 일반추첨 배정분은 미공개입니다. 제한시간 7시간은 <a href="https://www.tcssydneymarathon.com/marathon">공식 마라톤 안내</a> 기준입니다. 한국시각 환산은 AEST(UTC+10)·AEDT(UTC+11)와 KST(UTC+9)의 차이를 직접 계산했고, 2026년 호주 동부 서머타임 시작일(10월 4일)을 반영했습니다. 코스 누적 상승 +313m와 원정 조건은 이 사이트의 <a href="/blog/sydney-marathon-2026-registration-guide">2026 시드니마라톤 신청 가이드</a> 정리 기준입니다.</small></p>
 `,
   },
 ];
