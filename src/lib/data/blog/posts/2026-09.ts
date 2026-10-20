@@ -3722,7 +3722,7 @@ export const posts_2026_09: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/mizuno-wave-horizon-8">미즈노 웨이브 호라이즌 8</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>323g</td><td><strong>약 199원</strong></td><td>넓음</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-rider-30">미즈노 웨이브 라이더 30</a></td><td>179,000원</td><td>267g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-30">미즈노 웨이브 라이더 30</a></td><td>179,000원</td><td>266g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/asics-novablast-6">아식스 노바블라스트 6</a></td><td>179,000원</td><td>249g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-ride-19">사코니 라이드 19</a></td><td>179,000원</td><td>255g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></td><td>179,000원</td><td>303g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
@@ -5966,7 +5966,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
 <ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 넓은(wide) 편이고 <strong>2E 와이드 옵션까지 있어</strong> 발볼 넓은 한국 러너에게 최적입니다</li>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 넓은(wide) 편이고 <strong>한국 공식몰은 발볼 표기 '넓음(4E)'인 SW 모델만 판매해</strong> 발볼 넓은 한국 러너에게 최적입니다</li>
   <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위), 아킬레스건·신 스플린트 good입니다</li>
   <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. 이 사이트가 다룬 안정화 중 가장 강한 지지력을 제공합니다</li>
 </ul>

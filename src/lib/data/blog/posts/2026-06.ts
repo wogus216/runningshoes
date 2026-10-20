@@ -2684,7 +2684,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '하이퍼워프는 웨이브랑 뭐가 다른가요?', answer: '하이퍼워프(HyperWarp)는 미즈노의 신세대 카본 슈퍼슈즈 라인입니다. 전통 Wave 플레이트 대신 카본 플레이트와 PEBA 폼을 넣어 슈퍼슈즈 경쟁에 본격 참전한 모델이에요. 즉 "웨이브"는 안정·데일리의 전통, "하이퍼워프"는 레이싱 최상위 신세대라고 보면 됩니다.' },
       { question: '하이퍼워프 퓨어·엘리트·프로는 뭐가 다른가요?', answer: '거리와 용도로 갈립니다. 퓨어는 139g 극한 경량으로 5K·10K 단거리 특화(최고가 30.9만), 엘리트는 170g으로 풀마라톤 레이스용, 프로는 201g 슈퍼트레이너로 훈련+대회 겸용입니다. 단거리 PB면 퓨어, 풀코스 레이스면 엘리트, 카본 훈련까지 겸하면 프로입니다.' },
       { question: '미즈노 안정화는 인스파이어랑 호라이즌 중 뭘 사야 하나요?', answer: '웨이브 인스파이어 21(15.9만)은 미즈노 안정화 중 가장 저렴한 가성비 모델, 웨이브 호라이즌 8(17.9만)은 미디얼 러버월과 Wave로 시장 최강 수준의 과내전 제어를 제공하는 프리미엄입니다. 가벼운 지지면 인스파이어, 심한 과내전·강한 교정이면 호라이즌입니다. 둘 다 와이드 옵션이 있습니다.' },
-      { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 후속 라이더 30은 아직 랩 실측이 없어 폭 평가가 갈립니다(Believe in the Run은 좁은 편, Road Trail Run은 볼륨이 큰 편으로 평가). 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
+      { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 후속 라이더 30은 랩 토박스가 73.3mm로 평균 수준이라 29보다 좁습니다(리뷰어 평가는 Believe in the Run 좁은 편, Road Trail Run 볼륨이 큰 편으로 갈림). 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
     ],
     content: `
 <div class="tldr">
@@ -2754,9 +2754,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/mizuno-wave-inspire-21"><strong>웨이브 인스파이어 21</strong></a></td><td>전작 가성비 안정화</td><td>Enerzy + NXT · Wave</td><td>15.9만</td><td>286g</td><td>미즈노 최저가 안정화, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-29"><strong>웨이브 라이더 29</strong></a></td><td>데일리 만능(전작)</td><td>Enerzy NXT · Wave</td><td>16.9만</td><td>258g</td><td>30의 전작, 76.7mm 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-horizon-8"><strong>웨이브 호라이즌 8</strong></a></td><td>프리미엄 안정화</td><td>Enerzy NXT + Enerzy · Wave</td><td>17.9만</td><td>323g</td><td>미디얼 러버월, 최강 과내전 제어</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-rider-30"><strong>웨이브 라이더 30</strong></a></td><td>데일리 만능</td><td>Enerzy NXT 듀얼레이어 · 풀렝스 Wave</td><td>17.9만</td><td>267g</td><td>30세대 대개편, 힐 42.5mm(공식)로 스택 상승</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-30"><strong>웨이브 라이더 30</strong></a></td><td>데일리 만능</td><td>Enerzy NXT 듀얼레이어 · 풀렝스 Wave</td><td>17.9만</td><td>266g</td><td>30세대 대개편, 힐 42.5mm(공식)로 스택 상승</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-2"><strong>웨이브 리벨리온 플래시 2</strong></a></td><td>미드풋 템포(전작)</td><td>Enerzy Lite+ (PEBA)</td><td>18.9만</td><td>239g</td><td>극단적 힐 베벨 로커</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>290g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>295g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-3"><strong>웨이브 리벨리온 플래시 3</strong></a></td><td>미드풋 템포</td><td>Enerzy XP (TPEE) + NXT</td><td>19.9만</td><td>244g</td><td>TPEE 듀얼폼, 플래시 2 진화형</td></tr>
     <tr><td><a href="/shoes/mizuno-neo-vista-3"><strong>네오 비스타 3</strong></a></td><td>플레이트 쿠션 트레이너</td><td>Enerzy NXT + 유리섬유 플레이트</td><td>21.9만</td><td>266g</td><td>고스택 극쿠션, 카본 없는 슈퍼트레이너</td></tr>
     <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>하이퍼워프 프로</strong></a></td><td>슈퍼트레이너</td><td>Enerzy XP + 카본</td><td>24.9만</td><td>201g</td><td>39mm, 훈련+대회 겸용</td></tr>
@@ -2770,7 +2770,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
 <ul>
-  <li><strong>🟢 첫 미즈노·만능 데일리</strong> → <a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a>. 30세대에서 스택·폼·플레이트가 모두 바뀌었고, 아직 랩 실측이 없어 일부 수치는 공식 스펙 기준입니다. 넓은 토박스(76.7mm)가 실측으로 확인된 쪽은 전작 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>이니 발볼이 가장 걱정이면 29 재고도 함께 보세요. 두 세대 차이는 <a href="/blog/mizuno-wave-rider-29-vs-30-comparison-2026">라이더 29 vs 30 비교</a>에 있습니다.</li>
+  <li><strong>🟢 첫 미즈노·만능 데일리</strong> → <a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a>. 30세대에서 스택·폼·플레이트가 모두 바뀌었고, 랩 토박스는 73.3mm로 평균 수준입니다. 넓은 토박스(76.7mm)가 실측으로 확인된 쪽은 전작 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>이니 발볼이 가장 걱정이면 29 재고도 함께 보세요. 두 세대 차이는 <a href="/blog/mizuno-wave-rider-29-vs-30-comparison-2026">라이더 29 vs 30 비교</a>에 있습니다.</li>
   <li><strong>🦶 평발·안정(가성비)</strong> → <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a>(15.9만). 강한 과내전이면 <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>(미디얼 러버월). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
   <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a>(44mm 질소 폼).</li>
   <li><strong>🛋️ 푹신한데 조금 더 굴러가게</strong> → <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>(유리섬유 플레이트 고스택, 21.9만). 상세 평가는 <a href="/blog/mizuno-neo-vista-3-review-2026">네오 비스타 3 리뷰</a>에 있습니다.</li>
@@ -2806,12 +2806,12 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>넓음·와이드 (한국 친화)</strong></td><td>웨이브 라이더 29(76.7mm) · 인스파이어(와이드 옵션, 표준폭 토박스는 73.5mm로 평균 수준) · 호라이즌(와이드)</td></tr>
-    <tr><td><strong>표준</strong></td><td>웨이브 라이더 30(랩 실측 전, 와이드 옵션 있음) · 웨이브 스카이 · 리벨리온 플래시 · 네오 비스타 3(71.7mm) · 하이퍼워프 프로</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
+    <tr><td><strong>표준</strong></td><td>웨이브 라이더 30(73.3mm, 와이드 옵션 있음) · 리벨리온 플래시 · 네오 비스타 3(71.7mm) · 하이퍼워프 프로</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>웨이브 스카이 9(70.4mm, 와이드 옵션 있음) · 하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
   </tbody>
 </table>
 
-<p>데일리는 라이더(넓은 토박스 실측은 29 기준), 안정화는 인스파이어·호라이즌이 발볼 걱정 없이 무난합니다. 레이싱(하이퍼워프 퓨어·엘리트)만 좁으니 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+<p>데일리는 라이더(넓은 토박스 실측은 29 기준), 안정화는 인스파이어·호라이즌이 발볼 걱정 없이 무난합니다. 레이싱(하이퍼워프 퓨어·엘리트)은 좁으니 발볼 넓으면 반 치수 크게 신으세요. 맥스 쿠션 웨이브 스카이 9도 토박스가 좁은 편(70.4mm)이라 발볼이 넓다면 와이드 버전을 고르세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -6836,7 +6836,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     slug: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     title: '미즈노 웨이브 리벨리온 플래시 2 vs 플래시 3 비교 | PEBA→TPEE 듀얼폼 전환·드롭 그대로, 미드풋 템포 트레이너 세대 차이 총정리',
-    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 스택 35.2→37.5mm, 반응성 7→8 개선이 핵심. 3mm 저드롭 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
+    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 힐 스택 35.2→40.0mm, 반응성 7→8 개선이 핵심. 랩 드롭은 2.9→7.5mm로 높아진 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
     thumbnail: '/images/shoes/mizuno/waverebellionflash3/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6848,7 +6848,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>핵심 변화는 상단 폼</strong> — 2의 Enerzy Lite+(PEBA) 단일 감성에서, 3은 <strong>ENERZY XP(TPEE) 상단 + ENERZY NXT(EVA) 하단</strong> 듀얼 구조로 바뀌어 착지는 더 부드럽고 푸시오프는 더 탄력 있게 재설계됐습니다.</li>
-    <li>스택 35.2→37.5mm, 반응성 점수 7→8로 상승. 단 <strong>3mm 저드롭·미드풋 착지 전용</strong>이라는 정체성은 그대로 — 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
+    <li>힐 스택 35.2→40.0mm, 반응성 점수 7→8로 상승. 랩 드롭은 <strong>2.9→7.5mm로 높아져 3은 저드롭에서 벗어났지만</strong>, 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
     <li>MSRP는 189,000원 → 199,000원(+1만원). 두 신발 모두 와이드 옵션이 없어 발볼 넓은 한국 러너는 반 사이즈 업 또는 매장 시착이 필수입니다.</li>
   </ul>
 </div>
@@ -6872,9 +6872,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>상태</strong></td><td>이전 세대 (세일 진입권)</td><td><strong>신상</strong></td><td>세대 교체</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>189,000원</td><td><strong>199,000원</strong></td><td>+10,000원</td></tr>
     <tr><td><strong>무게 (Lab)</strong></td><td>239g</td><td>244g</td><td>+5g (사실상 동일)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>35.2mm</td><td><strong>37.5mm</strong></td><td>+2.3mm (쿠션 ↑)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>32.3mm</td><td><strong>34.5mm</strong></td><td>+2.2mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>3mm</td><td>사실상 동일 (저드롭 유지)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>35.2mm</td><td><strong>40.0mm</strong></td><td>+4.8mm (쿠션 ↑)</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>32.3mm</td><td><strong>32.5mm</strong></td><td>+0.2mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>7.5mm (Lab)</td><td>+4.6mm (저드롭 → 중간 드롭)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>Enerzy Lite+ (PEBA) + Enerzy 듀얼</td><td><strong>ENERZY XP (TPEE) 상단 + ENERZY NXT (EVA) 하단</strong></td><td>상단 폼 소재 교체</td></tr>
     <tr><td><strong>플레이트</strong></td><td>Wave 플레이트 (유리섬유, 곡선형)</td><td>유리섬유 강화 나일론 플레이트 (평판형)</td><td>형상·구성 변경</td></tr>
     <tr><td><strong>반응성 점수</strong></td><td>7/10</td><td><strong>8/10</strong></td><td>+1 (TPEE 탄성)</td></tr>
@@ -6884,13 +6884,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>아웃솔</strong></td><td>G3 러버</td><td>전체 러버 (젖은 노면 그립 강조)</td><td>커버리지 확대</td></tr>
     <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>엔지니어드 메쉬 (90%+ 재활용)</td><td>지속가능 소재</td></tr>
     <tr><td><strong>최적 페이스</strong></td><td>4:00–5:30 /km</td><td>4:00–5:00 /km</td><td>3이 살짝 더 빠른 영역</td></tr>
-    <tr><td><strong>토박스 / 와이드</strong></td><td>표준 (94.8mm) / 와이드 없음</td><td>표준 / 와이드 없음</td><td>둘 다 와이드 미제공</td></tr>
+    <tr><td><strong>토박스 / 와이드</strong></td><td>표준 (토박스 73.3mm) / 와이드 없음</td><td>표준 / 와이드 없음</td><td>둘 다 와이드 미제공</td></tr>
   </tbody>
 </table>
 
 <h2>핵심 변화 — PEBA 단일 감성 vs TPEE 듀얼 폼</h2>
 
-<p>플래시 2와 3의 가장 본질적인 차이는 <strong>상단 폼 소재를 바꿔 라이드의 '캐릭터'를 다시 잡았다</strong>는 점입니다. 무게·드롭·로커 지오메트리 같은 골격은 거의 그대로 두고, 발이 닿는 첫 감촉과 튕겨나가는 마무리를 손봤습니다.</p>
+<p>플래시 2와 3의 가장 본질적인 차이는 <strong>상단 폼 소재를 바꿔 라이드의 '캐릭터'를 다시 잡았다</strong>는 점입니다. 무게·로커 지오메트리 같은 골격은 거의 그대로 두고, 발이 닿는 첫 감촉과 튕겨나가는 마무리를 손봤습니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">🔄</span>
@@ -6918,11 +6918,11 @@ export const posts_2026_06: BlogPost[] = [
 <h3>1. 상단 폼 PEBA → ENERZY XP(TPEE) ✅ 가장 큰 변화</h3>
 <p>플래시 2의 Enerzy Lite+(PEBA)가 직접적이고 탄탄한 반발이었다면, 3의 ENERZY XP는 <strong>착지 시 한 박자 부드럽게 받아준 뒤 튕겨내는 이중 구조</strong>입니다. "2는 딱딱하게 바닥을 친다"고 느꼈던 러너에게는 환영할 변화이고, 반대로 "PEBA의 즉각적인 반발이 좋았다"는 러너에게는 다소 무뎌졌다고 느껴질 수 있습니다. 취향이 갈리는 지점이니 가능하면 두 폼을 직접 밟아보고 결정하세요.</p>
 
-<h3>2. 스택 35.2→37.5mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
-<p>힐·전족부 모두 약 2mm씩 두꺼워졌습니다. 쿠션 점수 자체는 7/10로 동일하게 잡혀 있지만, 실제로는 <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
+<h3>2. 힐 스택 35.2→40.0mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
+<p>힐은 4.8mm 두꺼워졌고 전족부는 거의 같습니다(32.3→32.5mm). 쿠션 점수 자체는 7/10로 동일하게 잡혀 있지만, 실제로는 <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
 
-<h3>3. 드롭 3mm 유지 ⚠️ 여전히 미드풋 전용</h3>
-<p>2가 2.9mm, 3이 3mm로 <strong>저드롭 정체성은 그대로</strong>입니다. 이건 미즈노가 "힐로 착지하지 마세요"라는 메시지를 계속 유지한다는 뜻이죠. 힐스트라이커가 두 신발 중 무엇을 신어도 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
+<h3>3. 드롭 2.9→7.5mm ⚠️ 3은 저드롭에서 벗어남</h3>
+<p>RunRepeat 랩 실측 드롭은 2가 2.9mm, 3이 7.5mm로 <strong>3은 저드롭이 아닙니다</strong>. 극단적 저드롭은 2에만 해당해, 힐스트라이커가 2를 신으면 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
 
 <h3>4. 무게 +5g (239→244g) ↔ 사실상 동일</h3>
 <p>스택을 2mm 이상 올리고도 무게 증가가 5g에 그칩니다. 체감상 차이가 거의 없는 수준이고, 둘 다 240g 안팎의 경량 템포 영역에 머뭅니다.</p>
@@ -6941,9 +6941,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>PEBA의 즉각 반발·롤링 장난기가 좋다</td><td><strong>2 (세일)</strong></td><td>곡선형 Wave 플레이트 + PEBA 직접 반발</td></tr>
     <tr><td>서브 3:30 레이스데이 겸용</td><td><strong>3</strong></td><td>스택 ↑·4:00–5:00 최적 페이스로 레이스 영역</td></tr>
     <tr><td>가성비 + 템포런 위주</td><td><strong>2 (세일 13~15만원)</strong></td><td>3 출시로 2 가격 인하, 600km 내구성</td></tr>
-    <tr><td>하프 후반 다리 보호 여유 필요</td><td><strong>3</strong></td><td>힐 37.5mm 스택으로 후반 쿠션 여유</td></tr>
+    <tr><td>하프 후반 다리 보호 여유 필요</td><td><strong>3</strong></td><td>힐 40.0mm 스택으로 후반 쿠션 여유</td></tr>
     <tr><td>2 사용 중 + 400km 이내 멀쩡</td><td><strong>2 계속</strong></td><td>업그레이드 가치 제한적</td></tr>
-    <tr><td>힐스트라이커 / 과내전 입문</td><td>둘 다 비추</td><td>3mm 저드롭·낮은 안정성, 안정화로 분리</td></tr>
+    <tr><td>힐스트라이커 / 과내전 입문</td><td>둘 다 비추</td><td>2는 2.9mm 저드롭, 둘 다 낮은 안정성 — 안정화로 분리</td></tr>
     <tr><td>발볼 4E 이상 넓은 발</td><td>둘 다 시착 필수</td><td>와이드 옵션 미제공, 표준 토박스</td></tr>
     <tr><td>친환경 소재 선호</td><td><strong>3</strong></td><td>어퍼 90%+ 재활용 소재</td></tr>
   </tbody>
@@ -6979,11 +6979,11 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>아킬레스건염 이력</td><td><strong>3</strong></td><td>스택 ↑로 착지 충격 분산 여유 (achilles: 2=caution → 3=good)</td></tr>
-    <tr><td>족저근막염</td><td>2 = 3</td><td>둘 다 good — 단 저드롭이라 적응기 필요</td></tr>
+    <tr><td>족저근막염</td><td>2 = 3</td><td>둘 다 good — 단 2는 저드롭이라 적응기 필요</td></tr>
     <tr><td>무릎 통증 (러너스 니)</td><td><strong>2</strong></td><td>knee: 2=good vs 3=caution, 3이 더 공격적 세팅</td></tr>
     <tr><td>정강이 부목 (Shin Splints)</td><td>2 = 3</td><td>둘 다 good</td></tr>
     <tr><td>평발 + 과내전</td><td>둘 다 비추</td><td>flatFoot fair·안정성 5~6/10, 안정화로 분리 권장</td></tr>
-    <tr><td>힐스트라이크 습관</td><td>둘 다 주의</td><td>3mm 저드롭, 최소 2주 적응기 필수</td></tr>
+    <tr><td>힐스트라이크 습관</td><td>둘 다 주의</td><td>2는 2.9mm 저드롭, 최소 2주 적응기 필수</td></tr>
   </tbody>
 </table>
 
@@ -7011,10 +7011,10 @@ export const posts_2026_06: BlogPost[] = [
 <p>가능은 하지만 목적이 다릅니다. 두 신발 모두 카본 슈퍼슈즈가 아니라 <strong>유리섬유 계열 플레이트의 템포 트레이너</strong>입니다. 3이 스택과 TPEE 덕에 하프~풀 후반 버티기에 조금 더 유리하지만, 본격적인 PB 도전 풀코스라면 카본 레이서를 따로 두는 게 정석입니다. 플래시 라인은 '레이스데이 겸 템포런'의 중간 무기로 보세요.</p>
 
 <h3>Q. 발볼이 넓은데 둘 중 뭐가 나은가요?</h3>
-<p>아쉽게도 <strong>두 모델 다 와이드 옵션이 없습니다.</strong> 토박스는 표준(2 기준 94.8mm)이라 발볼 넓은 한국 러너에게는 약간 빡빡할 수 있어요. 반 사이즈 업 또는 매장 시착이 필수이고, 발볼 106mm 이상이라면 다른 모델을 검토하는 게 안전합니다. 발볼 이슈는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a>를 참고하세요.</p>
+<p>아쉽게도 <strong>두 모델 다 와이드 옵션이 없습니다.</strong> 토박스는 표준(2 기준 랩 73.3mm)이라 발볼 넓은 한국 러너에게는 약간 빡빡할 수 있어요. 반 사이즈 업 또는 매장 시착이 필수이고, 발볼 106mm 이상이라면 다른 모델을 검토하는 게 안전합니다. 발볼 이슈는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a>를 참고하세요.</p>
 
 <h3>Q. 힐로 착지하는데 신어도 되나요?</h3>
-<p>권하지 않습니다. 2(2.9mm)·3(3mm) 모두 <strong>극단적 저드롭 + 힐 베벨 로커</strong> 설계라 힐스트라이크 습관이 있으면 초반에 아킬레스건이 당깁니다. 굳이 미드풋 전환을 목표로 한다면 최소 2주 적응기를 두고 거리를 천천히 늘리세요. 착지 교정 의도 없이 그냥 편한 데일리를 찾는다면 이 라인은 맞지 않습니다.</p>
+<p>권하지 않습니다. 2(랩 드롭 2.9mm)는 <strong>극단적 저드롭 + 힐 베벨 로커</strong> 설계라 힐스트라이크 습관이 있으면 초반에 아킬레스건이 당깁니다. 3은 랩 드롭이 7.5mm로 높아졌지만 무릎 부담 등급이 caution이라 힐스트라이커에게는 여전히 권하지 않습니다. 굳이 미드풋 전환을 목표로 한다면 최소 2주 적응기를 두고 거리를 천천히 늘리세요. 착지 교정 의도 없이 그냥 편한 데일리를 찾는다면 이 라인은 맞지 않습니다.</p>
 
 <h3>Q. 미즈노 처음인데 입문용으로 괜찮나요?</h3>
 <p>입문용은 아닙니다. 두 신발 모두 <strong>미드풋/포어풋 착지가 어느 정도 잡힌 중급 이상</strong>을 전제로 합니다. 미즈노 첫 신발이라면 데일리 라인(웨이브 라이더)이나 안정화(웨이브 인스파이어)로 시작한 뒤, 템포런의 재미를 알게 됐을 때 플래시로 넘어오는 순서를 권합니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 →</a>도 함께 보세요.</p>

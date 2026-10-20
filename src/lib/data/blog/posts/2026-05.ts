@@ -8140,7 +8140,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong>적합:</strong> 체중 80kg+ + 평발·과내전 약간, 한국 마라톤 대회에서 자주 보이는 미즈노 라인업 좋아하는 러너</li>
-  <li><strong>주의:</strong> 토박스 표준 — 발볼 매우 넓으면 다른 브랜드</li>
+  <li><strong>주의:</strong> 토박스 좁은 편(RunRepeat 랩 70.4mm) — 발볼 넓으면 와이드 버전 선택</li>
 </ul>
 
 <h3>10위. <a href="/shoes/new-balance-860-v15">New Balance 860 v15</a> — 가성비 안정화</h3>
@@ -8169,7 +8169,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>6</td><td><strong>Glycerin 22</strong></td><td>209,000원</td><td>293g</td><td>38mm</td><td>쿠션화</td><td>2E</td></tr>
     <tr><td>7</td><td><strong>Triumph 23</strong></td><td>199,000원</td><td>272g</td><td>37mm</td><td>쿠션화</td><td>2E</td></tr>
     <tr><td>8</td><td><strong>Cloudmonster 3</strong></td><td>229,000원</td><td>295g</td><td>34mm</td><td>쿠션화</td><td>없음</td></tr>
-    <tr><td>9</td><td><strong>Wave Sky 9</strong></td><td>189,000원</td><td>290g</td><td>40mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>9</td><td><strong>Wave Sky 9</strong></td><td>189,000원</td><td>295g</td><td>40mm</td><td>쿠션화</td><td>2E</td></tr>
     <tr><td>10</td><td><strong>NB 860 v15</strong></td><td>189,000원</td><td>330g</td><td>34mm</td><td>안정화</td><td>2E·4E</td></tr>
   </tbody>
 </table>
