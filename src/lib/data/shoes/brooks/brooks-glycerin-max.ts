@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   editorComment: '148 SA 충격흡수와 42.3mm 힐 스택은 현존하는 브룩스 라인업 중 관절 보호 최정상입니다. 23만 9천원 프리미엄 가격이 부담스럽지만, 74.3mm 넓은 토박스 덕에 별도 와이드 모델 없이도 발볼 넓은 한국 러너가 편하게 신을 수 있습니다. 겨울 경화율 17%로 Bondi 9(22%)보다 사계절 안정성이 뛰어나고, 통기성 5/5라 여름에도 착용 가능합니다. 305g 무게와 52% 에너지 리턴은 리커버리 런 전용임을 의미하며, 템포런을 겸하려면 하이페리온 맥스를 보세요.\n\n사이즈·구매 가이드: 토박스가 넓은 와이드 폭이고 와이드 옵션도 있어 발볼 넓은 한국 러너는 기본 사이즈로도 편하게 신을 수 있습니다. 239,000원에 km당 약 341원은 프리미엄이지만 관절 보호 성능이 절실한 러너라면 투자 가치가 있습니다. 예산이 부담된다면 본디 9이나 젤 님버스 28이 더 저렴한 대안입니다.',
   specs: {
     weight: 305,
-    cushioning: 10,
+    cushioning: 9,
     responsiveness: 6,
     stability: 6,
     drop: 7,
@@ -83,7 +83,7 @@ export const shoe: Shoe = {
     weight: '305g (US 9 Lab 측정)',
     stackHeight: '힐 42.3mm / 포어풋 35.7mm (Lab)',
     drop: '6.6mm (Lab 측정)',
-    midsole: 'DNA Tuned (듀얼 밀도 EVA)',
+    midsole: 'DNA Tuned (듀얼 밀도 EVA) · 충격흡수 148 SA는 RunRepeat 랩 힐 기준',
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 메쉬',
