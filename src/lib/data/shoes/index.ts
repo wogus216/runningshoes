@@ -15,6 +15,7 @@ import { onShoes } from './on';
 import { kiprunShoes } from './kiprun';
 import { liningShoes } from './lining';
 import { salomonShoes } from './salomon';
+import { underArmourShoes } from './underarmour';
 
 // Re-export from types/shoe.ts to keep a single source of truth
 export const categoryOrder: readonly string[] = sharedCategoryOrder;
@@ -33,6 +34,7 @@ export const shoes: Shoe[] = [
   ...kiprunShoes,
   ...liningShoes,
   ...salomonShoes,
+  ...underArmourShoes,
 ];
 
 // 유틸리티 함수들

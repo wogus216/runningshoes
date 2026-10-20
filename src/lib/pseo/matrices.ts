@@ -35,6 +35,7 @@ const brandSlugMap: Record<string, string> = {
   Kiprun: 'kiprun',
   'Li-Ning': 'li-ning',
   Salomon: 'salomon',
+  'Under Armour': 'under-armour',
 };
 
 const categorySlugMap: Record<string, string> = {

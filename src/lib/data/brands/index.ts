@@ -12,6 +12,7 @@ import { mizunoBrand } from './mizuno';
 import { kiprunBrand } from './kiprun';
 import { liningBrand } from './lining';
 import { salomonBrand } from './salomon';
+import { underArmourBrand } from './underarmour';
 
 // 모든 브랜드 데이터
 export const brands: Brand[] = [
@@ -28,6 +29,7 @@ export const brands: Brand[] = [
   kiprunBrand,
   liningBrand,
   salomonBrand,
+  underArmourBrand,
 ];
 
 // 브랜드 ID로 브랜드 데이터 가져오기
@@ -133,4 +135,5 @@ export {
   mizunoBrand,
   kiprunBrand,
   liningBrand,
+  underArmourBrand,
 };

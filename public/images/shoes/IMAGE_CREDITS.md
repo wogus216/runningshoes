@@ -282,3 +282,17 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 흰 배경 평탄화, 800px WebP q85
 - Date: 2026-10-20
 - Images: 5 (side=p3024498 외측, angle=p3024485 앞 사선, detail=p3024560 내측, top=p3024510, outsole=p3024502)
+
+## Under Armour Velociti Elite 2
+- Source: 언더아머 공식 이미지 CDN (Scene7) — 3027205, 색상 102 (언더아머 한국 공식몰 판매 색상)
+- CDN: underarmour.scene7.com/is/image/Underarmour/3027205-102_{DEFAULT,A,PAIR,TOE,SOLE}?wid=1600&fmt=png-alpha 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-20
+- Images: 5 (side=DEFAULT, detail=A 반대 측면, angle=PAIR, top=TOE, outsole=SOLE)
+
+## Under Armour Infinite Elite 2
+- Source: 언더아머 공식 이미지 CDN (Scene7) — 3028169(남성), 색상 001 (언더아머 한국 공식몰 판매 색상)
+- CDN: underarmour.scene7.com/is/image/Underarmour/3028169-001_{DEFAULT,A,PAIR,TOE,SOLE}?wid=1600&fmt=png-alpha 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-20
+- Images: 5 (side=DEFAULT, detail=A 반대 측면, angle=PAIR, top=TOE, outsole=SOLE)
