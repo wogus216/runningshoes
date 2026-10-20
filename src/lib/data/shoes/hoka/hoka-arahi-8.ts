@@ -16,7 +16,7 @@ export const shoe: Shoe = {
   tags: ['안정화', '라이트 스태빌리티', 'H-Frame', '평발'],
   specs: {
     weight: 259,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 6,
     stability: 9,
     drop: 11,
@@ -60,7 +60,7 @@ export const shoe: Shoe = {
     weight: '259g (RunRepeat 랩, US 9 기준)',
     stackHeight: '힐 39.4mm / 포어풋 28.1mm (RunRepeat 랩, US 9 기준)',
     drop: '11.3mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 8mm)',
-    midsole: 'CMEVA 폼 (16.4 HA, Soft)',
+    midsole: 'CMEVA 폼 (16.4 HA, Soft) · 충격흡수 138 SA는 RunRepeat 랩 힐 기준',
     plate: '없음 (H-Frame 안정화)',
     outsole: '듀라브레이드 러버',
     upper: '자카드 메쉬',

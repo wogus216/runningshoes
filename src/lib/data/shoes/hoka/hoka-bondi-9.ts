@@ -17,7 +17,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 303,
-    cushioning: 10,
+    cushioning: 9,
     responsiveness: 5,
     stability: 8,
     drop: 9,
@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     weight: '303g (남성 US 9 기준)',
     stackHeight: '힐 41mm / 포어풋 32mm',
     drop: '9.1mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
-    midsole: 'Supercritical EVA (초경량 고탄성 폼)',
+    midsole: 'Supercritical EVA (초경량 고탄성 폼) · 충격흡수 146 SA는 RunRepeat 랩 힐 기준',
     plate: '없음',
     outsole: '듀라브레이드 러버',
     upper: '엔지니어드 메쉬',
