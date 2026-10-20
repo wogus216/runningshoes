@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['레이싱', '카본', '엘리트', '슈퍼화', '에너지 리턴'],
   specs: {
     weight: 210,
-    cushioning: 7,
-    responsiveness: 9,
+    cushioning: 10,
+    responsiveness: 10,
     stability: 5,
     drop: 5.7,
     durability: 200,

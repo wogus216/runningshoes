@@ -26,8 +26,8 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 298,
-    cushioning: 8,
-    responsiveness: 5,
+    cushioning: 9,
+    responsiveness: 6,
     stability: 8,
     drop: 6,
     durability: 600,
@@ -114,7 +114,7 @@ export const shoe: Shoe = {
     weight: '298g (남성 US 9 기준, RunRepeat 실측 — 매체별 275~298g 편차)',
     stackHeight: '힐 37.4mm / 포어풋 31.4mm (RunRepeat 실측)',
     drop: '6mm (공식·실측 동일)',
-    midsole: 'PWRRUN (2026 개선 배합)',
+    midsole: 'PWRRUN (2026 개선 배합) · 에너지 리턴 힐 54.8% (전족부 값 없음 — 반응성 점수는 힐 기준)',
     plate: '없음',
     outsole: '러버 보강 아웃솔 (전작 대비 커버리지 확대)',
     upper: '엔지니어드 메쉬',
