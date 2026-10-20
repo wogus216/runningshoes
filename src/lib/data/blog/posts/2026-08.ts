@@ -1402,7 +1402,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>드롭</td><td><strong>4mm</strong></td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Infinion</td><td>FF LEAP + FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td><strong>Energy Arc</strong> <small>(지면 쪽 배치)</small></td><td><strong>없음</strong></td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 9</td><td><strong>10</strong> / 9</td></tr>
+    <tr><td>쿠션 / 반발</td><td>10 / <strong>10</strong></td><td>10 / 8</td></tr>
     <tr><td>안정성</td><td>5</td><td>6</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁은 편 / <strong>2E 있음</strong></td><td>좁은 편(71.6mm) / <strong>없음</strong></td></tr>
     <tr><td>내구 · km당</td><td>400~500km <small>(추정)</small> · 약 576원</td><td><strong>500~600km</strong> · 약 471원</td></tr>
@@ -1426,7 +1426,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 공식 기준 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 공식 239g으로 21g 무겁습니다.</p>
 
-<p>플레이트가 없다는 게 곧 "느리다"는 뜻은 아닙니다. 반발 점수는 9로 SC 레벨과 같고, 적정 페이스도 4:00~5:30으로 겹칩니다. 차이는 <strong>추진의 성격</strong>입니다 — 플레이트가 굴려주는 느낌이 아니라 폼이 눌렸다 튀어나오는 느낌에 가깝습니다. 같은 무플레이트 계열인 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>와의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">별도 글</a>에서 다뤘습니다.</p>
+<p>플레이트가 없다는 게 곧 "느리다"는 뜻은 아닙니다. 반발 점수는 8로 SC 레벨(10)보다 낮지만, 적정 페이스는 4:00~5:30으로 겹칩니다. 차이는 <strong>추진의 성격</strong>입니다 — 플레이트가 굴려주는 느낌이 아니라 폼이 눌렸다 튀어나오는 느낌에 가깝습니다. 같은 무플레이트 계열인 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>와의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">별도 글</a>에서 다뤘습니다.</p>
 
 <p>실용적인 강점은 <strong>내구</strong>입니다. 500~600km로 km당 약 471원이라, SC 레벨보다 100원 이상 쌉니다. 훈련 주력으로 쓸 신발에서 이 차이는 누적됩니다. 부상 관점에서도 8mm 드롭 덕에 아킬레스 부담이 낮은 쪽(우리 DB 평가 excellent)이라, 저드롭이 부담스러운 러너에게 안전한 선택입니다.</p>
 
@@ -1465,8 +1465,8 @@ export const posts_2026_08: BlogPost[] = [
     <p class="faq-a">A. "좁다"는 평가는 Road Trail Run과 Doctors of Running이 <strong>표준폭(D)</strong>을 신고 남긴 주관적 소감이고, 토박스 실측 mm는 아직 없습니다. 2E는 그보다 한 단계 넓은 규격이므로 표준폭에서 느낀 압박은 상당 부분 해소될 가능성이 높습니다. 다만 실측이 없는 상태라 단정하기 어렵고, 저드롭·플레이트 조합은 착화감 편차도 크니 가능하면 신어보고 결정하는 편이 안전합니다.</p>
   </div>
   <div class="faq-item">
-    <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 왜 쿠션 점수가 높나요?</p>
-    <p class="faq-a">A. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 공식 수치 기준으로 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
+    <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 쿠션 점수는 어떻게 되나요?</p>
+    <p class="faq-a">A. 우리 DB 쿠션 점수는 두 모델 모두 10으로 같습니다. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 공식 수치 기준으로 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 첫 슈퍼 트레이너로는 어느 쪽이 낫나요?</p>
@@ -3348,7 +3348,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
     title: '에보 SL vs 노바블라스트 6 차이 — 3만원 아끼면 km당 비용이 63% 싸진다 | 반발이냐 수명이냐',
     description:
-      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7이지만 쿠션 9에 700km, km당 256원으로 63% 경제적입니다. 평발 적합성은 같지만 와이드는 노바 6에만 있어(에보 SL은 2026년 10월 한국 공식몰 기준 없음), 발볼이 넓지 않다면 갈림길은 반발과 총비용입니다.',
+      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7에 쿠션은 9로 같지만 700km, km당 256원으로 63% 경제적입니다. 평발 적합성은 같지만 와이드는 노바 6에만 있어(에보 SL은 2026년 10월 한국 공식몰 기준 없음), 발볼이 넓지 않다면 갈림길은 반발과 총비용입니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -3364,7 +3364,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '둘 다 플레이트가 없는데 뭐가 다른가요?',
         answer:
-          '폼의 성격이 다릅니다. 에보 SL은 아디다스 최상위 폼인 Lightstrike Pro를 미드솔 100%에 써서 반발 9/10을 냈고, 노바블라스트 6은 FF Blast Max에 전족부만 FF Turbo Squared를 얹어 쿠션 9/10 쪽으로 갔습니다. 에보 SL은 튕기고 노바 6은 푹신합니다.',
+          '폼의 성격이 다릅니다. 에보 SL은 아디다스 최상위 폼인 Lightstrike Pro를 미드솔 100%에 써서 반발 9/10을 냈고, 노바블라스트 6은 FF Blast Max에 전족부만 FF Turbo Squared를 얹어 쿠션 9/10 쪽으로 갔습니다(쿠션 점수는 에보 SL도 9/10으로 같습니다). 에보 SL은 튕기고 노바 6은 푹신합니다.',
       },
       {
         question: '발볼이 넓으면 어느 쪽인가요?',
@@ -3408,7 +3408,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>드롭</td><td>8mm</td><td>7mm</td></tr>
     <tr><td>미드솔</td><td>100% Lightstrike Pro</td><td>FF Blast Max + FF Turbo Squared(전족)</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음 <em>(동일)</em></td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / <strong>9</strong></td><td><strong>9</strong> / 7</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / <strong>9</strong></td><td>9 / 7</td></tr>
     <tr><td>안정성</td><td>6/10</td><td>6/10 <em>(동일)</em></td></tr>
     <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / <strong>없음</strong> <em>(한국 공식몰, 2026-10)</em></td><td>좁은 편(71.0mm) / <strong>있음</strong></td></tr>
     <tr><td>평발 적합성</td><td>보통</td><td>보통 <em>(동일)</em></td></tr>
@@ -4294,7 +4294,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>미드솔</td><td>FF Leap + FF Blast+</td><td>ZoomX + SR-02</td></tr>
     <tr><td>플레이트</td><td><strong>포크형</strong> 카본</td><td><strong>풀렝스 곡선형</strong> 카본 Flyplate</td></tr>
     <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61% / 67%</td></tr>
-    <tr><td>쿠션 / 반발</td><td>6 / 8</td><td><strong>7 / 9</strong></td></tr>
+    <tr><td>쿠션 / 반발</td><td>6 / 7</td><td><strong>7 / 8</strong></td></tr>
     <tr><td>안정성</td><td>5/10</td><td><strong>7/10</strong></td></tr>
     <tr><td>토박스</td><td><strong>표준</strong></td><td><strong>좁은 편</strong></td></tr>
     <tr><td>와이드 옵션</td><td>2E 있음</td><td>없음</td></tr>
@@ -4345,7 +4345,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>줌 플라이 6 — 안정적으로 굴려주는 쪽</h2>
 
-<p>248g은 요즘 카본화 기준으로 가볍지 않지만, <strong>힐 40mm 스택에 풀렝스 카본 Flyplate</strong>를 넣고 이 무게면 납득할 구성입니다. ZoomX와 SR-02를 겹친 듀얼 폼으로 반발 점수는 9/10, 두 켤레 중 높습니다.</p>
+<p>248g은 요즘 카본화 기준으로 가볍지 않지만, <strong>힐 40mm 스택에 풀렝스 카본 Flyplate</strong>를 넣고 이 무게면 납득할 구성입니다. ZoomX와 SR-02를 겹친 듀얼 폼으로 반발 점수는 8/10, 두 켤레 중 높습니다.</p>
 
 <p>진짜 강점은 <strong>안정성 7/10</strong>입니다. 페이스가 무너지는 후반에도 형태가 유지되고, 드롭 10mm라 힐 착지 습관이 있는 러너도 무리 없이 신을 수 있습니다. 아킬레스·족저근막·정강이 세 항목이 모두 양호로 잡힌 것도 여기서 옵니다.</p>
 
@@ -4460,7 +4460,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>드롭</td><td>8mm</td><td><strong>6mm</strong></td></tr>
     <tr><td>미드솔</td><td><strong>100% Lightstrike Pro</strong></td><td>Lightstrike Pro + Energy Rods 2.0</td></tr>
     <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>8</strong> / 9</td><td>7 / 9</td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 9</td><td>7 / 9</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
     <tr><td>아웃솔</td><td>컨티넨탈 러버</td><td>컨티넨탈 러버</td></tr>
     <tr><td>토박스 / 와이드</td><td>좁은 편(71.6mm) / 없음</td><td>좁은 편(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
@@ -4484,7 +4484,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>아디제로 Evo SL — 가벼움으로 미는 쪽</h2>
 
-<p>223g은 데일리화 기준으로 확실히 가벼운 축입니다. 여기에 힐 36mm 스택이 붙어 있어서, 가벼운데 쿠션이 얇지 않습니다. 쿠션 점수가 8/10으로 보스턴 13(7)보다 오히려 높습니다.</p>
+<p>223g은 데일리화 기준으로 확실히 가벼운 축입니다. 여기에 힐 36mm 스택이 붙어 있어서, 가벼운데 쿠션이 얇지 않습니다. 쿠션 점수가 9/10으로 보스턴 13(7)보다 오히려 높습니다.</p>
 
 <p>플레이트가 없다는 건 <strong>발이 자기 리듬대로 구를 수 있다</strong>는 뜻이기도 합니다. 로드가 밀어주는 감각이 부담스러운 러너, 조깅부터 템포까지 페이스 폭을 넓게 쓰는 러너에게 맞습니다. 적정 페이스가 4:00–6:00으로 보스턴 13보다 느린 쪽까지 열려 있는 것도 같은 이유입니다.</p>
 
