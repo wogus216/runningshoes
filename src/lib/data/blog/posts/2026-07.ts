@@ -1257,7 +1257,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>3대 브랜드 최상위 카본, 반발은 셋 다 만점(10)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
+    <li><strong>3대 브랜드 최상위 카본, 반발은 10·9·10으로 셋 다 최정상급</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
     <li><strong>가르는 건 발볼</strong> — 알파플라이 3은 토박스가 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드가 없습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, SC 엘리트 v5는 토박스 74.5mm에 와이드까지 갖췄습니다</li>
     <li>가격은 SC 엘리트 v5가 가장 저렴(319,000원)하고 내구도 가장 길어, <strong>발볼 넓은 한국 러너에겐 가성비까지 답</strong>이 됩니다</li>
   </ul>
@@ -1277,7 +1277,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>9mm</td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
     <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
     <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 10</td><td>7 / 10</td><td>7 / 10</td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / 10</td><td>8 / 9</td><td>9 / 10</td></tr>
     <tr><td>발볼 / 와이드</td><td>넓은 편(75.3mm) / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
     <tr><td>내구 / km당</td><td>약 200km</td><td>약 250km</td><td><strong>약 300km</strong></td></tr>
     <tr><td>대표 성격</td><td>폭발적 반발·풀코스</td><td>보폭형 스트라이드</td><td>부드러움·발볼·가성비</td></tr>
@@ -1291,7 +1291,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
 
 <h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
-<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(10/10)을 내면서, 전족 스택이 30.8mm(실측)로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
+<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(9/10)을 내면서, 전족 스택이 30.8mm(실측)로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
 <p>약점은 <strong>주법 의존성</strong>입니다. 보폭형이 아닌 피치형 러너에겐 스카이가 최적이 아닐 수 있어, 자신의 주법을 알고 골라야 합니다. 낮은 드롭이 힐 스트라이커에겐 이질적일 수도 있습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 보폭을 늘려 스피드를 내는 러너, 전족 쿠션과 안정을 원하는 분, 낮은 드롭(5mm)을 선호하는 미드풋 착지 러너.</p>
 
@@ -1453,7 +1453,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Hyperboost Pro 폼</td><td>FF LEAP + FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>10 / 9</td><td>10 / 9</td></tr>
+    <tr><td>쿠션 / 반발</td><td>10 / 9</td><td>10 / 8</td></tr>
     <tr><td>안정성</td><td>5</td><td>6</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁은 편 / 없음</td><td>좁은 편 / 없음</td></tr>
     <tr><td>내구 / km당</td><td><strong>700km / 약 356원</strong></td><td>550km / 약 471원</td></tr>
@@ -1595,7 +1595,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
     title: '뉴발란스 1080 v15 vs 아식스 님버스 28 — 프리미엄 데일리 쿠션, 반발과 드롭이 가른다',
     description:
-      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 255g(실측)의 반응형, 님버스 28은 278g의 최대 쿠션입니다. 반발(7 vs 5/10)과 드롭(6 vs 8mm)이 만드는 주행감, 무게·스택·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
+      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 255g(실측)의 반응형, 님버스 28은 278g의 최대 쿠션입니다. 반발(7 vs 6/10)과 드롭(6 vs 8mm)이 만드는 주행감, 무게·스택·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
     thumbnail: '/images/blog/new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',
@@ -1626,7 +1626,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Infinion (질소 슈퍼크리티컬)</td><td>FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>9 / <strong>7</strong></td><td><strong>10</strong> / 5</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / <strong>7</strong></td><td><strong>10</strong> / 6</td></tr>
     <tr><td>안정성</td><td>6</td><td><strong>8</strong></td></tr>
     <tr><td>발볼 / 와이드</td><td>표준 / <strong>2E 있음</strong></td><td>표준 / <strong>2E 있음</strong></td></tr>
     <tr><td>무릎 보호</td><td>최상</td><td>최상</td></tr>
@@ -1643,7 +1643,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>아식스 젤 님버스 28 — 구름 위의 최대 쿠션</h2>
 <p>님버스 28은 반대 방향으로 갑니다. <strong>힐 스택 39.5mm(실측), 쿠션 10/10</strong>의 아식스 최상급 쿠션화로, FF BLAST PLUS 폼이 착지 충격을 최대한 흡수합니다. 278g의 묵직함이 오히려 안정감(8/10)으로 작용해, 지친 다리로 뛰는 회복주나 장시간 서 있는 상황에서 발을 확실히 받쳐줍니다. km당 306원으로 가성비도 1080보다 낫고, 가격도 1만원 저렴합니다.</p>
-<p>약점은 <strong>반발(5/10)</strong>입니다. 푹신함을 극대화한 대신 페이스를 올리면 폼이 눌려 굼뜨게 느껴집니다. 무게도 있어 스피드 훈련용은 아닙니다.</p>
+<p>약점은 <strong>반발(6/10)</strong>입니다. 푹신함을 극대화한 대신 페이스를 올리면 폼이 눌려 굼뜨게 느껴집니다. 무게도 있어 스피드 훈련용은 아닙니다.</p>
 <p><strong>✅ 이런 분께</strong> — 무릎·관절 보호가 최우선인 분, 체중이 있어 충격 흡수가 중요한 분, 빠르게 뛰기보다 편하고 푹신하게 오래 뛰고 싶은 분.</p>
 
 <h2>내게 맞는 건?</h2>
@@ -1663,7 +1663,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 무게 차이가 실제로 체감되나요?</p>
-    <p class="faq-a">A. 크지 않습니다. 255g(실측)과 278g으로 한 발 약 23g 차이라, 체감은 무게보다 반발(7 vs 5/10)과 드롭(6 vs 8mm)에서 더 갈릴 가능성이 큽니다. 님버스는 그만큼 쿠션과 안정을 돌려주니, "반응성 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
+    <p class="faq-a">A. 크지 않습니다. 255g(실측)과 278g으로 한 발 약 23g 차이라, 체감은 무게보다 반발(7 vs 6/10)과 드롭(6 vs 8mm)에서 더 갈릴 가능성이 큽니다. 님버스는 그만큼 쿠션과 안정을 돌려주니, "반응성 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 마라톤 풀코스에 신어도 되나요?</p>
@@ -4736,7 +4736,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>9mm</td><td><strong>6mm</strong></td></tr>
     <tr><td>미드솔</td><td>Supercritical EVA</td><td>DNA Tuned (질소 주입)</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>10 / 5</td><td>10 / 4</td></tr>
+    <tr><td>쿠션 / 반발</td><td>10 / 5</td><td>8 / 6</td></tr>
     <tr><td>안정성</td><td><strong>8 (초광폭 123mm 베이스)</strong></td><td>7</td></tr>
     <tr><td>발볼 / 평발 호환</td><td>좁은 편·<strong>평발 excellent</strong></td><td>표준(스너그)·평발 good</td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 416원</td><td><strong>600km</strong> / 약 415원</td></tr>
@@ -4748,13 +4748,13 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>데이터 출처: 사이트 신발 DB(RunRepeat 랩 데이터·브랜드 공식 스펙 기반) · 한국 공식가 기준. 무게·스택은 US M9 기준.</small></p>
 
 <h2>호카 본디 9 — 넓게 받쳐주는 안정형 맥시멀</h2>
-<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 정체성은 <strong>123mm에 달하는 초광폭 플랫폼</strong>입니다. 발바닥이 닿는 면적이 넓으니 착지할 때 좌우로 덜 흔들리고, 이게 곧 안정성 8점과 <strong>평발 호환 excellent</strong>로 이어집니다. Supercritical EVA 폼은 글리세린 맥스보다 반발(5)이 살짝 높아 완전히 죽은 느낌은 아니고, 41mm 힐 스택 + 9mm 드롭이라 <strong>힐로 착지하는 러너에게 편안</strong>합니다. 303g으로 이 체급에선 오히려 가벼운 축이고, 정가도 2만 원 쌉니다.</p>
+<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 정체성은 <strong>123mm에 달하는 초광폭 플랫폼</strong>입니다. 발바닥이 닿는 면적이 넓으니 착지할 때 좌우로 덜 흔들리고, 이게 곧 안정성 8점과 <strong>평발 호환 excellent</strong>로 이어집니다. Supercritical EVA 폼의 반발(5)은 글리세린 맥스(6)보다 살짝 낮지만 완전히 죽은 느낌은 아니고, 41mm 힐 스택 + 9mm 드롭이라 <strong>힐로 착지하는 러너에게 편안</strong>합니다. 303g으로 이 체급에선 오히려 가벼운 축이고, 정가도 2만 원 쌉니다.</p>
 <p>약점은 명확합니다. <strong>토박스가 72.5mm로 좁은 편</strong>이라 발볼 넓은 한국 러너는 와이드를 반드시 골라야 하고, 빠른 페이스로 밀어붙이는 신발은 아닙니다(6:00/km보다 느린 조깅·회복주 전용). 반발도 절대적으로 높진 않아 템포런엔 부적합해요.</p>
 <p><strong>✅ 이런 분께</strong> — 평발이거나 발 흔들림이 신경 쓰이는 러너, 무릎·발목 이력이 있어 안정적인 쿠션을 원하는 러너, 장시간 서서 일하거나 걷는 시간이 긴 분, 예산을 조금이라도 아끼고 싶은 분. 발볼이 넓다면 와이드 옵션은 필수입니다.</p>
 
 <h2>브룩스 글리세린 맥스 2 — 가장 높이 띄우는 로커형 맥시멀</h2>
 <p><a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>의 무기는 <strong>47mm 힐 / 41mm 포어풋이라는, 두 신발 중 가장 두꺼운 스택</strong>입니다. 발밑에 폼을 최대로 쌓아 충격흡수 절대량이 크고, v2에서 <strong>로커(굴림) 지오메트리가 강화</strong>돼 체중이 앞으로 매끄럽게 넘어갑니다. 드롭이 6mm로 낮아 미드풋 착지 성향 러너에게 자연스럽고, 내구성도 600km로 조금 더 깁니다.</p>
-<p>다만 정직하게 짚을 점이 있습니다. <strong>DNA Tuned 폼이 v1보다 단단해져 "구름 위" 같던 부드러움이 줄었다</strong>는 평가가 실사용 리뷰에서 나옵니다(반발 4로 가장 낮음). 318g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. <strong>피팅이 스너그(꽉 끼는 편)</strong>라 발볼 넓은 러너는 반 사이즈 업을 고려해야 합니다(한국 공식몰은 와이드 미판매).</p>
+<p>다만 정직하게 짚을 점이 있습니다. <strong>DNA Tuned 폼이 v1보다 단단해져 "구름 위" 같던 부드러움이 줄었다</strong>는 평가가 실사용 리뷰에서 나옵니다(쿠션 8/10·반발 6/10). 318g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. <strong>피팅이 스너그(꽉 끼는 편)</strong>라 발볼 넓은 러너는 반 사이즈 업을 고려해야 합니다(한국 공식몰은 와이드 미판매).</p>
 <p><strong>✅ 이런 분께</strong> — 발밑을 최대한 높이 띄운 맥시멀 스택을 원하는 러너, 로커로 굴러가는 주행감과 낮은 드롭(6mm)을 선호하는 러너, 내구성을 조금 더 챙기고 싶은 러너. 단, "폭신 말랑"보다 "단단하고 안정적으로 굴러가는" 쪽에 가깝다는 걸 감안하세요.</p>
 
 <h2>내게 맞는 건? — 상황별 정리</h2>
