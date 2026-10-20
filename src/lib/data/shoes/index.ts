@@ -10,9 +10,11 @@ import { sauconyShoes } from './saucony';
 import { pumaShoes } from './puma';
 import { hokaShoes } from './hoka';
 import { brooksShoes } from './brooks';
+import { diadoraShoes } from './diadora';
 import { mizunoShoes } from './mizuno';
 import { onShoes } from './on';
 import { liningShoes } from './lining';
+import { merrellShoes } from './merrell';
 import { salomonShoes } from './salomon';
 
 // Re-export from types/shoe.ts to keep a single source of truth
@@ -27,9 +29,11 @@ export const shoes: Shoe[] = [
   ...onShoes,
   ...sauconyShoes,
   ...brooksShoes,
+  ...diadoraShoes,
   ...mizunoShoes,
   ...pumaShoes,
   ...liningShoes,
+  ...merrellShoes,
   ...salomonShoes,
 ];
 

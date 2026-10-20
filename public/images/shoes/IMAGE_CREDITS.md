@@ -268,3 +268,31 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-09
 - Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)
+
+## Diadora Atomo Star / Frequenza 2 / Nucleo 2 / Mythos Blushield Volo 5
+- Source: 디아도라 한국 공식몰(diadorakorea.com, 하이라이트브랜즈 운영) 상품 이미지 — Cafe24 /web/product/big·/web/product/extra/big 1000×1000 JPG
+  - 아토모 스타: product_no=5699 (BLACK) · 프리퀀자 2: 5646 (LIGHT BLUE) · 누클레오 2: 5194 (WHITE) · 미토스 블루실드 볼로 5: 4617 (ORANGE)
+- Processing: 좌상단 쇼핑몰 아이콘·하단 "made in italy" 문구를 배경색으로 덮은 뒤 @imgly/background-removal-node(medium) 배경 제거 → 알파 보정(×3) → trim·800×800 투명 패딩 WebP q85
+- Date: 2026-10-20
+- Images: 모델당 4 (side, angle, top, outsole)
+
+## Merrell Agility Peak 6
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=2891, [남성] 어질리티 피크 6 BLACK, M26A1-MLC300)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680~1000px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)
+
+## Merrell Trail Glove 8
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=2904, [남성] 트레일 글러브 8 BLACK, M26A1-MBL330)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680~1000px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)
+
+## Merrell MTL SpeedArc Peak
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=3071, [공용] MTL 스피드아크 피크 BLACK)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)

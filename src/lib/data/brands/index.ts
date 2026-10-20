@@ -4,12 +4,14 @@ import { adidasBrand } from './adidas';
 import { asicsBrand } from './asics';
 import { hokaBrand } from './hoka';
 import { brooksBrand } from './brooks';
+import { diadoraBrand } from './diadora';
 import { sauconyBrand } from './saucony';
 import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
 import { liningBrand } from './lining';
+import { merrellBrand } from './merrell';
 import { salomonBrand } from './salomon';
 
 // 모든 브랜드 데이터
@@ -19,12 +21,14 @@ export const brands: Brand[] = [
   asicsBrand,
   hokaBrand,
   brooksBrand,
+  diadoraBrand,
   sauconyBrand,
   onBrand,
   newBalanceBrand,
   pumaBrand,
   mizunoBrand,
   liningBrand,
+  merrellBrand,
   salomonBrand,
 ];
 
@@ -124,10 +128,12 @@ export {
   asicsBrand,
   hokaBrand,
   brooksBrand,
+  diadoraBrand,
   sauconyBrand,
   onBrand,
   newBalanceBrand,
   pumaBrand,
   mizunoBrand,
   liningBrand,
+  merrellBrand,
 };
