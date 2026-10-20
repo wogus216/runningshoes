@@ -4736,7 +4736,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>9mm</td><td><strong>6mm</strong></td></tr>
     <tr><td>미드솔</td><td>Supercritical EVA</td><td>DNA Tuned (질소 주입)</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>10 / 5</td><td>8 / 6</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / 5</td><td>8 / 6</td></tr>
     <tr><td>안정성</td><td><strong>8 (초광폭 123mm 베이스)</strong></td><td>7</td></tr>
     <tr><td>발볼 / 평발 호환</td><td>좁은 편·<strong>평발 excellent</strong></td><td>표준(스너그)·평발 good</td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 416원</td><td><strong>600km</strong> / 약 415원</td></tr>
