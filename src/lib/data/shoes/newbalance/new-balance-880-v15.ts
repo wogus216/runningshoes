@@ -43,14 +43,14 @@ export const shoe: Shoe = {
   },
 
   detailedSpecs: {
-    weight: '286g (남성 US 9 기준)',
+    weight: '286g (RunRepeat 실측, 남성 US 9 기준)',
     stackHeight: '힐 39.7mm / 포어풋 35.4mm (실측)',
     drop: '4.3mm (실측) / 6mm (브랜드 공식)',
     midsole: 'Fresh Foam X (EVA 기반 고밀도 폼)',
     plate: '없음',
     outsole: '고무 아웃솔',
     upper: '엔지니어드 메쉬',
-    width: '표준 (D), 와이드 (2E) 옵션',
+    width: '표준 — 토박스 74.6mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 1.4mm 넓음), 최대폭 95.0mm(평균 95.2mm). 랩 본문 "just a fraction above our current average… we don\'t have aggressive tapering in the toebox". 폭 옵션: 기존 DB 표준(D)·와이드(2E), RunRepeat 기준 해외 Narrow·Normal·Wide·X-Wide — 한국 공식몰 2026-10-20 미등재로 국내 폭 확인 불가',
     durability: '600km+',
     price: '189,000원',
     costPerKm: '약 ₩315/km (600km 기준)',

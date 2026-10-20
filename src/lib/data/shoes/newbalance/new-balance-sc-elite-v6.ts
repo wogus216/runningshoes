@@ -19,7 +19,7 @@ export const shoe: Shoe = {
   price: 389000,
   description: '고반발 Infinion 폼과 재설계한 Energy Arc 카본 플레이트를 사용한 뉴발란스 최상위 레이싱화입니다.',
   oneliner: '190g·전족 79.4% 에너지 리턴, v5보다 빠르지만 핏은 더 좁아진 슈퍼슈즈',
-  editorComment: 'RunRepeat 실측 에너지 리턴이 힐 75.3%·전족 79.4%로, v5에서 아쉬웠던 반발력을 확실히 끌어올렸습니다. 190g의 가벼운 무게와 Infinion 폼, Energy Arc 카본 플레이트 조합은 5K부터 풀코스까지 기록을 노리는 러너에게 맞습니다. 다만 v5의 강점이던 넉넉한 발볼은 유지되지 않았습니다. 토박스는 71.4mm로 표준 범위지만 RunRepeat가 전체 핏이 좁고 반 치수 작게 나온다고 평가했으므로, 발볼이 넓은 한국 러너는 반드시 시착하고 국내 판매가 389,000원이라는 높은 가격도 함께 고려해야 합니다.',
+  editorComment: 'RunRepeat 실측 에너지 리턴이 힐 75.3%·전족 79.4%로, v5에서 아쉬웠던 반발력을 확실히 끌어올렸습니다. 190g의 가벼운 무게와 Infinion 폼, Energy Arc 카본 플레이트 조합은 5K부터 풀코스까지 기록을 노리는 러너에게 맞습니다. 다만 v5의 강점이던 넉넉한 발볼은 유지되지 않았습니다. 토박스는 71.4mm(랩 평균 73.2mm)로 RunRepeat가 "tapered"라고 표현했고 전체 핏도 좁고 반 치수 작게 나온다고 평가했습니다. 한국 공식몰에 남성 2E 와이드가 있으니 발볼이 넓은 한국 러너는 2E로 시착하고 국내 판매가 389,000원이라는 높은 가격도 함께 고려해야 합니다.',
   specs: {
     weight: 190,
     cushioning: 8,
@@ -43,9 +43,9 @@ export const shoe: Shoe = {
     shinSplints: 'caution',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'poor',
-    wideOptions: false,
+    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
   },
@@ -76,7 +76,7 @@ export const shoe: Shoe = {
     },
     {
       userType: '한국 러너 구매 분석',
-      text: '토박스 71.4mm는 수치상 표준이지만 RunRepeat는 전체 핏이 매우 타이트하고 반 치수 작게 나온다고 평가했습니다. v5의 넉넉한 핏을 기대하면 다를 수 있으며, 한국 공식몰에서 와이드가 확인되지 않아 발볼 러너는 매장 시착이 필수입니다.',
+      text: '토박스 71.4mm(랩 평균 73.2mm)를 RunRepeat는 "tapered toebox"로 표현했고, 전체 핏이 매우 타이트하고 반 치수 작게 나온다고 평가했습니다. v5의 넉넉한 핏을 기대하면 다를 수 있습니다. 한국 공식몰에는 남성 2E 와이드가 있어(여성은 D) 발볼 러너는 2E부터 시착해보는 것이 좋습니다.',
     },
   ],
   detailedSpecs: {
@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     plate: '재설계 Energy Arc 풀렝스 카본 플레이트',
     outsole: '1mm급 경량 PU 아웃솔, 미드풋 노출 폼',
     upper: 'FANTOMFIT 반투명 메쉬',
-    width: '좁은 전체 핏, 토박스 71.4mm / 한국 공식몰 D',
+    width: '좁음 — 토박스 71.4mm(RunRepeat 실측, 엄지 부위·US 9 D 기준; 같은 랩 평균 73.2mm보다 1.8mm 좁음), 최대폭 90.7mm(평균 95.2mm). 랩 본문 "a tapered toebox width of 71.4 mm", "we measured a very tight 90.7 mm". 한국 공식몰(nbkorea.com, 2026-10-20) 남성 D·2E / 여성 D',
     durability: '약 300km (얇은 아웃솔·노출 폼 기반 예상)',
     price: '₩389,000 (뉴발란스코리아)',
     costPerKm: '약 ₩1,297/km (300km 기준)',
