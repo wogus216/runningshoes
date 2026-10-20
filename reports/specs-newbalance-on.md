@@ -262,8 +262,6 @@
 | stability · durability | 7 · 600 | — | — | 판단불가 |
 | weight / drop | 298 / 8 | 실측 298g (L90) / 8mm (출처 미표기, L92) | — | weight 일치 · **감사 diff: weight 317→298** |
 
-> 참고: 이 파일의 `oneliner`(L20)와 `editorComment`(L21)가 **NB 860 v14 문구("듀얼 폼 10.9/23.8 HA, 평발 특화 17만원", Fresh Foam X, Kayano 32 비교 등)로 채워져 있다.** 점수 감사 범위 밖이지만 복붙 오류로 보여 별도 확인 필요.
-
 #### on-cloudsurfer-2
 | 필드 | 현재 | 근거 수치 (위치) | 기대 | 판정 |
 |---|---|---|---|---|
