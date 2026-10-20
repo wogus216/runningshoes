@@ -25,8 +25,8 @@ export const shoe: Shoe = {
   tags: ['레이싱', '카본 플레이트', 'PEBA', '대회용', '신상'],
   specs: {
     weight: 193,
-    cushioning: 7,
-    responsiveness: 9,
+    cushioning: 10,
+    responsiveness: 10,
     stability: 6,
     drop: 11,
     durability: 300,
