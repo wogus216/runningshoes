@@ -1258,7 +1258,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>3대 브랜드 최상위 카본, 반발은 셋 다 만점(10)</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
-    <li><strong>가르는 건 발볼</strong> — 알파플라이는 좁고 와이드도 없어 발볼 넓으면 어렵습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, 특히 SC 엘리트 v5는 토박스 74.5mm로 <strong>"발볼 넓어도 신는 유일한 슈퍼슈즈"</strong></li>
+    <li><strong>가르는 건 발볼</strong> — 알파플라이 3은 토박스가 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드가 없습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, SC 엘리트 v5는 토박스 74.5mm에 와이드까지 갖췄습니다</li>
     <li>가격은 SC 엘리트 v5가 가장 저렴(319,000원)하고 내구도 가장 길어, <strong>발볼 넓은 한국 러너에겐 가성비까지 답</strong>이 됩니다</li>
   </ul>
 </div>
@@ -1278,7 +1278,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
     <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 10</td><td>7 / 10</td><td>7 / 10</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>넓은 편(75.3mm) / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
     <tr><td>내구 / km당</td><td>약 200km</td><td>약 250km</td><td><strong>약 300km</strong></td></tr>
     <tr><td>대표 성격</td><td>폭발적 반발·풀코스</td><td>보폭형 스트라이드</td><td>부드러움·발볼·가성비</td></tr>
   </tbody>
@@ -1287,7 +1287,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>나이키 알파플라이 3 — 폭발적 반발의 풀코스 끝판왕</h2>
 <p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(10/10)이 셋 중 가장 폭발적입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
-<p>약점은 <strong>발볼과 가격</strong>입니다. 토박스가 좁은 데다 와이드 옵션이 없어, 발볼 넓은 러너는 레이스 후반 발가락 눌림을 겪을 수 있습니다. 339,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
+<p>약점은 <strong>사이즈와 가격</strong>입니다. 토박스는 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드 옵션이 없고 사이즈 판정이 "Slightly small"이라, 발볼이 아주 넓다면 시착이 필요합니다. 339,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
 
 <h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
@@ -1302,7 +1302,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>내 레이스엔 뭘?</h2>
 <ul>
-  <li><strong>발볼이 넓다</strong> → 고민 없이 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(74.5mm+와이드). 알파플라이는 피하세요</li>
+  <li><strong>발볼이 넓다</strong> → 고민 없이 <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(74.5mm+와이드). 알파플라이 3도 토박스는 넓은 편(75.3mm)이지만 와이드가 없어 시착이 필요합니다</li>
   <li><strong>풀코스 기록 · 폭발적 반발</strong> → <a href="/shoes/nike-alphafly-3">알파플라이 3</a></li>
   <li><strong>보폭을 늘려 뛴다 · 낮은 드롭 선호</strong> → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></li>
   <li><strong>부드러운 착지 · 예산을 아낀다</strong> → <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>(가장 저렴·내구 최고)</li>
@@ -1313,7 +1313,7 @@ export const posts_2026_07: BlogPost[] = [
   <h2>자주 묻는 질문</h2>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 알파플라이는 정말 안 되나요?</p>
-    <p class="faq-a">A. 불가능하진 않지만 권하지 않습니다. 알파플라이 3은 토박스가 좁고 와이드 옵션이 없어, 레이스 후반 발이 부으면 발가락이 눌려 물집·통증이 생기기 쉽습니다. 발볼이 넓다면 SC 엘리트 v5(74.5mm)나 와이드가 있는 메타스피드 스카이+가 안전합니다.</p>
+    <p class="faq-a">A. 안 되는 건 아닙니다. 알파플라이 3은 RunRepeat 실측 토박스 75.3mm로 레이싱화 중 넓은 편(랩 평가 "exceptionally broad for a racing shoe")이지만, 와이드 옵션이 없고 사이즈 판정이 "Slightly small"이라 시착이 필요합니다. 와이드 사이즈가 필요할 만큼 발볼이 넓다면 와이드가 있는 SC 엘리트 v5나 메타스피드 스카이+가 안전합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 메타스피드는 스카이와 엣지 중 뭘 골라야 하나요?</p>
@@ -1369,7 +1369,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>Enerzy NXT</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
     <tr><td>쿠션 / 반발</td><td>7 / 6</td><td><strong>8 / 7</strong></td></tr>
     <tr><td>안정성</td><td>7</td><td>7</td></tr>
-    <tr><td>발볼 / 와이드</td><td><strong>넓음 (랩 76.7mm)</strong> / <strong>2E 있음</strong></td><td>표준 (랩 72.3mm) / <strong>2E 있음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td><strong>넓음 (랩 76.7mm)</strong> / <strong>2E 있음</strong></td><td>좁음 (랩 72.3mm) / <strong>2E 있음</strong></td></tr>
     <tr><td>내구 / km당</td><td><strong>800km / 약 211원</strong></td><td>600km / 약 282원</td></tr>
     <tr><td>대표 용도</td><td>내구·가성비 데일리</td><td>반발·범용 데일리</td></tr>
   </tbody>
@@ -1541,7 +1541,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF Blast Max + 전족 FF Turbo Squared</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 7</td><td><strong>9</strong> / 7 <em>(실측 SA 143 · 리턴 55.4%)</em></td></tr>
     <tr><td>안정성</td><td><strong>7</strong></td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / <strong>2E 있음</strong></td><td>표준(71.0mm) / <strong>있음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁음(72.3mm) / <strong>2E 있음</strong></td><td>표준(71.0mm) / <strong>있음</strong></td></tr>
     <tr><td>평발 적합</td><td>보통</td><td>부적합(아치 지지 약)</td></tr>
     <tr><td>내구 / km당</td><td>600km / 약 282원</td><td>700km / 약 256원</td></tr>
     <tr><td>대표 용도</td><td>안정적 범용 데일리</td><td>경쾌한 고반발 데일리</td></tr>
@@ -2264,7 +2264,7 @@ export const posts_2026_07: BlogPost[] = [
 </div>
 
 <h2>SC 엘리트, 어떤 신발이었나</h2>
-<p><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 "가장 빠른 슈퍼슈즈"가 아니라 <strong>"발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>로 자리를 잡은 신발입니다. 토박스 74.5mm는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 6~7mm 넓어, 레이스 후반 발가락 눌림 때문에 카본화를 포기했던 한국 러너의 사실상 유일한 선택지였죠. 와이드 옵션까지 있는 슈퍼슈즈는 지금도 드뭅니다. 자세한 이야기는 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 정리했습니다.</p>
+<p><a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 "가장 빠른 슈퍼슈즈"가 아니라 <strong>"발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>로 자리를 잡은 신발입니다. 토박스 74.5mm는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(73.2mm)보다 넓고 <a href="/shoes/nike-alphafly-3">알파플라이</a>(75.3mm)와는 비슷한 수준이라, 레이스 후반 발가락 눌림이 고민인 한국 러너에게 유력한 선택지였죠. 와이드 옵션까지 있는 슈퍼슈즈는 지금도 드뭅니다. 자세한 이야기는 <a href="/blog/new-balance-sc-elite-v5-review">v5 후기</a>에서 정리했습니다.</p>
 <p>그 후속작이 공식 발표됐습니다. 트라이애슬론 세계챔피언 알렉스 이(Alex Yee)와 미국 마라톤 기록 보유자 에밀리 시슨이 개발에 참여했고 — 참고로 이가 발렌시아에서 세운 PB 2:06:38은 <strong>v5를 신고</strong> 달린 기록입니다 — v6는 8월 6일 뉴발란스닷컴과 리테일 매장에서 글로벌 발매됩니다.</p>
 
 <h2>v5 → v6, 무엇이 달라지나</h2>
@@ -2492,7 +2492,7 @@ export const posts_2026_07: BlogPost[] = [
       {
         question: '발볼 넓은 편인데 괜찮을까요?',
         answer:
-          '캐스캐디아 20은 전작보다 플랫폼을 약간 좁혀 기술적인 발놀림을 개선했다고 알려졌습니다. 발볼이 넓다면 착화가 필요하며, 넓은 발볼을 우선한다면 한국 러너 사이에서 토룸이 여유롭다고 평가받는 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>이나 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>도 함께 비교해 보세요.',
+          '캐스캐디아 20은 전작보다 플랫폼을 약간 좁혀 기술적인 발놀림을 개선했다고 알려졌습니다. 발볼이 넓다면 착화가 필요합니다. 비교 후보인 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 RunRepeat 실측 토박스 72.8mm로 트레일 평균(74.3mm)보다 좁고, 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 표준 버전이 71.4mm로 좁아 발볼이 넓다면 와이드 버전을 보는 편이 맞습니다.',
       },
     ],
     content: `
@@ -2560,7 +2560,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>vs 호카 <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a></strong> — 스피드고트가 맥시멀 쿠션의 만능형이라면, 캐스캐디아는 스택이 더 낮고(38/32mm) 드롭 6mm로 <strong>지면 감각·안정성</strong>이 좋은 균형형입니다.</li>
   <li><strong>vs 뉴발 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a></strong> — 둘 다 "로드에서 트레일로" 넘어가는 데일리 쿠션 트레일화라 가장 직접적인 경쟁입니다. 러그·폼 성향으로 갈립니다.</li>
   <li><strong>vs 살로몬 <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a></strong> — 울트라·와이드 지향 쿠션 트레일화. 장거리 편안함을 최우선한다면 함께 봐야 할 대안입니다.</li>
-  <li><strong>발볼</strong> — 캐스캐디아 20은 플랫폼을 약간 좁힌 세대라, 발볼이 넉넉한 편을 원하면 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>도 비교 대상입니다.</li>
+  <li><strong>발볼</strong> — 캐스캐디아 20은 플랫폼을 약간 좁힌 세대라, 발볼이 넉넉한 편을 원하면 착화가 필요합니다. 나이키 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>도 토박스가 실측 72.8mm로 트레일 평균보다 좁아 발볼 대안으로는 약합니다.</li>
 </ul>
 
 <div class="callout warning">
@@ -3262,7 +3262,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'nike-acg-zegama-trail-review-2026',
     title: '나이키 ACG 제가마 트레일 후기 | 시리즈 최고 완성도 — 토박스 더 넓어진 맥시멀 쿠션 울트라화',
     description:
-      '나이키 제가마가 3세대 만에 프리미엄 아웃도어 라인 ACG로 이관됐습니다. ZoomX 비중을 늘리고 새 라스트로 토박스를 넓혔으며, Vibram Megagrip 아웃솔로 그립까지 챙겨 Believe in the Run에서 퍼포먼스 S티어를 받았습니다. 발볼 넓은 한국 러너에게 드물게 우호적인 나이키 트레일화인 이유와, 336g의 무게를 감안해도 선택할 만한 이유를 정리했습니다.',
+      '나이키 제가마가 3세대 만에 프리미엄 아웃도어 라인 ACG로 이관됐습니다. ZoomX 비중을 늘리고 새 라스트를 적용했으며, Vibram Megagrip 아웃솔로 그립까지 챙겨 Believe in the Run에서 퍼포먼스 S티어를 받았습니다. 토박스 실측이 전작보다 좁아진 점과, 실측 306g의 무게를 감안해도 선택할 만한 이유를 정리했습니다.',
     thumbnail: '/images/blog/nike-acg-zegama-trail-review-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-10',
@@ -3274,8 +3274,8 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>나이키 제가마가 프리미엄 아웃도어 라인 ACG로 이관</strong>되며 3세대를 맞았습니다. Believe in the Run은 "제가마 시리즈 중 지금까지 최고"라며 <strong>퍼포먼스 S티어</strong>를 매겼습니다</li>
-    <li>핵심 변화는 <strong>ZoomX 비중 확대 + 새 라스트로 넓힌 토박스</strong>입니다. 전작(제가마 2)도 이미 넓은 편(97.5mm)이었는데 이번엔 그보다 더 여유로워져, 발볼 넓은 한국 러너에게 드물게 우호적인 나이키 트레일화입니다</li>
-    <li>다만 <strong>336g으로 동급 대비 무거운 편</strong>이고 4mm 저드롭이라 적응이 필요합니다. 한국 정가 219,000원, 빠른 반응형보다는 장거리 울트라 컴포트 용도입니다</li>
+    <li>핵심 변화는 <strong>ZoomX 비중 확대 + 새 라스트</strong>입니다. 다만 RunRepeat 실측 토박스는 72.8mm로 전작 제가마 2(76.4mm)보다 오히려 좁아졌고, 가장 넓은 부분(96.9mm)이 트레일 평균보다 넓어 중족부 여유가 남은 정도입니다</li>
+    <li>다만 <strong>실측 306g(나이키 표기 336g)으로 가벼운 편은 아니</strong>고 4mm 저드롭이라 적응이 필요합니다. 한국 정가 219,000원, 빠른 반응형보다는 장거리 울트라 컴포트 용도입니다</li>
   </ul>
 </div>
 
@@ -3293,7 +3293,7 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td>제가마(1세대)</td><td>2021</td><td>나이키 트레일 최초 ZoomX 도입</td></tr>
     <tr><td>제가마 2</td><td>2024</td><td>Vibram Megagrip 아웃솔 추가</td></tr>
-    <tr><td><strong>ACG 제가마</strong></td><td><strong>2026</strong></td><td><strong>ACG 라인 이관, ZoomX 비중 확대, 토박스 확장, 힐 락다운 개선</strong></td></tr>
+    <tr><td><strong>ACG 제가마</strong></td><td><strong>2026</strong></td><td><strong>ACG 라인 이관, ZoomX 비중 확대, 새 라스트 적용, 힐 락다운 개선</strong></td></tr>
   </tbody>
 </table>
 
@@ -3301,34 +3301,34 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>항목</th><th>ACG 제가마</th><th>제가마 2(참고)</th></tr></thead>
   <tbody>
-    <tr><td>무게</td><td>336g(남성 M10) / 273g(여성 W8)</td><td>302g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>38 / 34mm</td><td>30.3 / 26.3mm</td></tr>
-    <tr><td>드롭</td><td>4mm</td><td>4.0mm</td></tr>
+    <tr><td>무게</td><td>306g(RunRepeat 실측, 남성 US 9) · 나이키 표기 336g(남성 M10) / 273g(여성 W8)</td><td>302g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>38 / 34mm(브랜드 표기) · 31.2 / 27.5mm(RunRepeat 실측)</td><td>30.3 / 26.3mm</td></tr>
+    <tr><td>드롭</td><td>4mm(브랜드 표기) · 3.7mm(실측)</td><td>4.0mm</td></tr>
     <tr><td>미드솔</td><td>ZoomX(상층) + Cushlon 3.0(하층)</td><td>ZoomX + Cushlon 3.0</td></tr>
     <tr><td>아웃솔</td><td>Vibram Megagrip(약 2/3 커버리지)</td><td>Vibram Megagrip</td></tr>
     <tr><td>가격</td><td>$180 / 219,000원(한국)</td><td>$180</td></tr>
     <tr><td>평가</td><td><strong>BITR S티어(Design A·Value A·Performance S)</strong></td><td>-</td></tr>
   </tbody>
 </table>
-<p class="caption">※ ACG 제가마 무게·스택·드롭은 Believe in the Run 실측 기준(2026-04-30 출시). 한국 정가는 nike.com/kr에서 확인했으나 직접 접속이 봇 차단돼 검색 교차검증으로 확정했습니다.</p>
+<p class="caption">※ ACG 제가마 무게·스택·드롭은 나이키 표기와 RunRepeat 랩 실측(남성 US 9)을 함께 적었습니다(2026-04-30 출시). 한국 정가는 nike.com/kr에서 확인했으나 직접 접속이 봇 차단돼 검색 교차검증으로 확정했습니다.</p>
 
-<h2>가장 큰 변화 — 넓어진 토박스</h2>
-<p>전작 제가마 2도 토박스 최대 97.5mm(발가락 부위 76.4mm)로 이미 트레일화치고 넓은 편이었습니다. 이번 ACG 버전은 <strong>새 라스트로 전족·미드풋 공간을 한층 더 넓혔습니다.</strong> 카본 레이서나 좁은 트레일 레이싱화에 발가락이 눌리던 러너라면 반가운 변화입니다. 여기에 <strong>힐 카운터 쿠셔닝과 세미 부티 구조</strong>로 락다운을 강화해, "발이 신발을 제어하는 게 아니라 러너가 신발을 제어하는" 느낌을 준다는 평가(BITR)를 받았습니다.</p>
-<p>미드솔은 ZoomX 비중을 늘리고 Cushlon 3.0을 하단에 배치한 듀얼 폼 구조입니다. 힐 38mm의 넉넉한 스택이 장거리에서 충격을 확실히 흡수하면서도, ZoomX 특유의 반발력을 잃지 않았다는 게 리뷰어들의 공통된 평입니다.</p>
+<h2>가장 큰 변화 — 새 라스트와 달라진 토박스</h2>
+<p>전작 제가마 2는 토박스 최대 97.5mm(발가락 부위 76.4mm)로 트레일화치고 넓은 편이었습니다. 이번 ACG 버전은 새 라스트를 적용했는데, <strong>RunRepeat 실측 토박스는 72.8mm로 전작보다 오히려 좁아졌습니다</strong>(트레일 평균 74.3mm). 랩도 "more in line with other Nike shoes"라고 평가했습니다. 가장 넓은 부분은 96.9mm로 트레일 평균(95.7mm)보다 넓어 중족부 여유는 남아 있습니다. 여기에 <strong>힐 카운터 쿠셔닝과 세미 부티 구조</strong>로 락다운을 강화해, "발이 신발을 제어하는 게 아니라 러너가 신발을 제어하는" 느낌을 준다는 평가(BITR)를 받았습니다.</p>
+<p>미드솔은 ZoomX 비중을 늘리고 Cushlon 3.0을 하단에 배치한 듀얼 폼 구조입니다. 힐 38mm(브랜드 표기, 실측 31.2mm)의 넉넉한 스택이 장거리에서 충격을 확실히 흡수하면서도, ZoomX 특유의 반발력을 잃지 않았다는 게 리뷰어들의 공통된 평입니다.</p>
 
 <h2>약점 — 무게와 저드롭 적응</h2>
-<p>336g(남성 M10)은 동급 경쟁작 대비 <strong>확실히 무거운 편</strong>입니다. 살로몬 S/Lab 울트라 글라이드 2(약 320g), 노스페이스 벡티브 엔듀리스 4(약 309g) 등과 비교되며 지적된 부분입니다. 빠른 페이스의 반응형 트레일화를 원한다면 이 무게가 걸림돌이 될 수 있습니다.</p>
+<p>나이키 표기는 336g(남성 M10)이지만 RunRepeat 실측은 <strong>306g(남성 US 9)</strong>으로, 가벼운 편은 아닙니다. 빠른 페이스의 반응형 트레일화를 원한다면 이 무게가 걸림돌이 될 수 있습니다.</p>
 <p>드롭도 4mm로 낮은 편이라, 힐 착지가 강하거나 아킬레스건·종아리에 이력이 있는 러너는 적응 기간이 필요합니다. 초기 착화 시 신발끈을 제대로 조이지 않으면 힐 슬립이 생긴다는 지적도 있으니, 첫 착용 때 락다운을 신경 써서 조이세요.</p>
 
 <h2>한국 러너 관점 — 토박스와 가격</h2>
-<p>발볼 넓은 한국 러너에게 나이키 트레일화는 선택지가 많지 않았습니다. <a href="/shoes/nike-ultrafly">울트라플라이</a>가 토박스 76.7mm로 넓은 편이었지만 카본 레이싱화라 완만한 코스 전용이었죠. ACG 제가마는 전작보다 더 넓어진 토박스와 맥시멀 쿠션을 갖춰, <strong>발볼이 넓으면서 장거리 컴포트를 원하는 러너</strong>에게 나이키 안에서는 사실상 유일한 선택지입니다. 별도 와이드 SKU는 없지만 기본 라스트 자체가 넉넉합니다.</p>
+<p>발볼 넓은 한국 러너에게 나이키 트레일화는 선택지가 많지 않았습니다. <a href="/shoes/nike-ultrafly">울트라플라이</a>가 토박스 76.7mm로 넓은 편이었지만 카본 레이싱화라 완만한 코스 전용이었죠. ACG 제가마는 가장 넓은 부분(실측 96.9mm)이 트레일 평균보다 넓어 중족부 여유가 있지만, 토박스는 실측 72.8mm로 전작(76.4mm)보다 좁아져 <strong>발가락 쪽 공간이 중요한 발볼 넓은 러너</strong>에게는 확실한 대안이 되기 어렵습니다. 별도 와이드 SKU도 없으므로 시착이 필요합니다.</p>
 <p>가격은 219,000원으로, 같은 맥시멀 쿠션 울트라 트레일화인 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(23만원, 와이드 옵션 있음)보다 약간 저렴합니다. 다만 출시 초기(2026-04-30 글로벌)라 한국 정가·내구성 실측치는 교차검증 기준이며, 확정 정보가 나오면 갱신하겠습니다.</p>
 
 <h2>누구에게 맞나</h2>
 <ul>
   <li><strong>울트라마라톤·장거리 트레일</strong> 위주로 편안함을 최우선한다면 강력 추천</li>
-  <li><strong>발볼이 넓어</strong> 트레일 레이싱화의 좁은 토박스가 부담스러웠던 러너</li>
-  <li>반대로 <strong>가벼운 반응형이나 빠른 페이스 레이싱</strong>이 목적이라면 336g이 부담될 수 있어, <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(278g)나 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(258g, 카본)을 함께 비교해보세요</li>
+  <li><strong>중족부 여유</strong>를 원하는 트레일 러너(단, 토박스는 실측 72.8mm로 전작보다 좁아 발가락 공간이 중요하면 시착 필수)</li>
+  <li>반대로 <strong>가벼운 반응형이나 빠른 페이스 레이싱</strong>이 목적이라면 실측 306g도 부담될 수 있어, <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(278g)나 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(258g, 카본)을 함께 비교해보세요</li>
 </ul>
 <p>자세한 스펙·가격·구매 정보는 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일 상세 페이지</a>에서 확인할 수 있습니다. 다른 트레일화와의 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">트레일화 3파전(스피드고트6 vs 펄사 vs 메타후지)</a>에서, 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>에서 확인하세요.</p>
 
@@ -3336,7 +3336,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="faq">
   <div class="faq-item">
     <p class="faq-q">Q. 제가마 2에서 갈아탈 만한가요?</p>
-    <p class="faq-a">A. 토박스가 더 넓어지고 힐 락다운이 개선됐다는 게 확인된 변화입니다. 다만 무게가 늘었으니(302g→336g), 편안함·핏 개선을 중시한다면 갈아탈 만하고 경량성이 우선이라면 신중히 판단하세요.</p>
+    <p class="faq-a">A. 힐 락다운이 개선됐다는 평가가 있지만, 토박스는 RunRepeat 실측 72.8mm로 제가마 2(76.4mm)보다 오히려 좁아졌습니다. 무게도 실측 306g(남성 US 9)으로 가벼운 편은 아니니, 쿠션·락다운 개선을 중시한다면 갈아탈 만하고 발가락 공간이나 경량성이 우선이라면 시착 후 판단하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 한국 산악(북한산·관악산)에서도 쓸 수 있나요?</p>
@@ -3344,7 +3344,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 와이드 옵션이 있나요?</p>
-    <p class="faq-a">A. 별도 와이드 SKU는 없습니다. 다만 전작 대비 라스트 자체를 넓힌 설계라, 발볼이 넓은 러너도 표준 사이즈로 대응되는 경우가 많습니다.</p>
+    <p class="faq-a">A. 별도 와이드 SKU는 없습니다. RunRepeat 실측 토박스가 72.8mm로 전작(76.4mm)보다 좁아졌으므로, 발볼이 넓은 러너는 시착 후 결정하세요.</p>
   </div>
 </div>
 
@@ -4466,7 +4466,7 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>149,000</td><td>257g</td><td>입문·쿠션(와이드)</td><td>발볼 넓은 입문자, 무난한 데일리</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000</td><td>245g</td><td>데일리·가벼운 스피드</td><td>조깅+가끔 템포까지 한 켤레로</td></tr>
-    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000</td><td>236g</td><td>경량 데일리</td><td>가볍게 뛰고 싶은 입문자(발볼 좁음)</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>129,000</td><td>236g</td><td>경량 데일리</td><td>가볍게 뛰고 싶은 입문자(발볼 좁음)</td></tr>
     <tr><td><a href="/shoes/li-ning-red-hare-9-pro">리닝 레드헤어 9 프로</a></td><td>140,000</td><td>222g</td><td>가성비 데일리</td><td>가벼운 반발을 최저가로</td></tr>
     <tr><td><a href="/shoes/li-ning-red-hare-9">리닝 레드헤어 9</a></td><td>95,000</td><td>320g</td><td>초입문(10만 미만)</td><td>예산 최소, 걷기+가벼운 조깅</td></tr>
   </tbody>
@@ -5545,17 +5545,17 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>보스턴 13</th><th>줌 플라이 6</th><th>엔돌핀 스피드 5</th></tr></thead>
   <tbody>
     <tr><td>브랜드</td><td>아디다스</td><td>나이키</td><td>써코니</td></tr>
-    <tr><td><strong>한국 가격</strong></td><td><strong>179,000원(최저)</strong></td><td>229,000원</td><td>219,000원</td></tr>
+    <tr><td><strong>한국 가격</strong></td><td><strong>179,000원(최저)</strong></td><td>209,000원</td><td>219,000원</td></tr>
     <tr><td>무게(US 9)</td><td>254g</td><td>248g</td><td><strong>241g(최경량)</strong></td></tr>
     <tr><td>힐 스택</td><td>34mm</td><td><strong>40mm(최고)</strong></td><td>37.4mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>10mm</td><td>10.6mm</td></tr>
     <tr><td>미드솔</td><td>Lightstrike Pro</td><td>ZoomX+SR-02</td><td>PWRRUN PB(PEBA)</td></tr>
     <tr><td><strong>플레이트</strong></td><td>유리섬유 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td>높음</td><td>61%</td><td><strong>73.2%(최고)</strong></td></tr>
+    <tr><td>에너지 리턴</td><td>높음</td><td>힐 61% / 앞발 67%</td><td><strong>73.2%(최고)</strong></td></tr>
     <tr><td>아웃솔</td><td><strong>컨티넨탈(그립최강)</strong></td><td>러버</td><td>XT-900 러버</td></tr>
     <tr><td><strong>발볼</strong></td><td>표준</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
     <tr><td>안정성</td><td><strong>높음(8)</strong></td><td>중(7)</td><td>낮음(5)</td></tr>
-    <tr><td>내구성 / km당</td><td><strong>550km / 325원</strong></td><td>400km / 572원</td><td>500km / 438원</td></tr>
+    <tr><td>내구성 / km당</td><td><strong>550km / 325원</strong></td><td>400km / 523원</td><td>500km / 438원</td></tr>
     <tr><td>대표 성격</td><td>가성비 만능 내구</td><td>풀카본 스피드</td><td>부드러운 매일 훈련</td></tr>
   </tbody>
 </table>
@@ -5567,8 +5567,8 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 훈련+하프 레이스 겸용 한 켤레 / 가성비·내구를 중시 / 비 오는 날도 자주 뛰는 러너 / 안정감을 원하는 중급+</p>
 
 <h2>줌 플라이 6 — 풀 카본 + 최고 스택의 스피드형</h2>
-<p><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a>은 <strong>베이퍼플라이의 기술을 훈련용으로 옮긴</strong> 슈퍼트레이너입니다. <strong>ZoomX + SR-02 듀얼 폼 + 풀렝스 카본 Flyplate</strong>로, 셋 중 유일하게 통짜 카본 플레이트를 넣어 빠른 페이스(3분30초~5분/km)에서 추진력이 가장 또렷합니다. 힐 스택 40mm로 셋 중 가장 두꺼워 충격 흡수도 좋고, 베이퍼플라이(30만원)의 65% 값이라 카본 입문용으로 인기죠.</p>
-<p>단점은 두 가지입니다. 첫째, <strong>발볼이 좁아(narrow) 발볼 넓은 한국 러너에게 부담</strong>이고 와이드 옵션도 없습니다. 둘째, 내구성이 400km로 셋 중 가장 짧아 km당 572원으로 비용이 높습니다. "빠른 페이스에서 풀카본 손맛"을 원하는 <strong>발볼 표준~좁은 중급 이상</strong>에게 맞습니다.</p>
+<p><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a>은 <strong>베이퍼플라이의 기술을 훈련용으로 옮긴</strong> 슈퍼트레이너입니다. <strong>ZoomX + SR-02 듀얼 폼 + 풀렝스 카본 Flyplate</strong>로, 셋 중 유일하게 통짜 카본 플레이트를 넣어 빠른 페이스(3분30초~5분/km)에서 추진력이 가장 또렷합니다. 힐 스택 40mm로 셋 중 가장 두꺼워 충격 흡수도 좋고, 베이퍼플라이(30만 9천원)의 약 68% 값이라 카본 입문용으로 인기죠.</p>
+<p>단점은 두 가지입니다. 첫째, <strong>발볼이 좁아(narrow) 발볼 넓은 한국 러너에게 부담</strong>이고 와이드 옵션도 없습니다. 둘째, 내구성이 400km로 셋 중 가장 짧아 km당 523원으로 비용이 높습니다. "빠른 페이스에서 풀카본 손맛"을 원하는 <strong>발볼 표준~좁은 중급 이상</strong>에게 맞습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 풀카본 추진력을 원하는 러너 / 빠른 템포·인터벌 / 발볼 표준~좁음 / 카본 플레이트 입문</p>
 
 <h2>엔돌핀 스피드 5 — 부드러운 반발, 매일 굴리는 갓성비</h2>

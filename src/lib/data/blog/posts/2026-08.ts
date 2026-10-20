@@ -755,7 +755,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>경량화</strong> — 전작 대비 10% 가벼워졌다는 서술이 나왔습니다. 다만 절대 무게(g)는 공개되지 않았습니다</li>
 </ul>
 
-<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 표준 폭이었는데, 페가수스 42 계열 라스트로 옮겨오면서 앞쪽 여유가 어떻게 달라졌는지는 실물 측정이 나와야 판단할 수 있습니다. 다만 방향 자체는 넓어지는 쪽입니다.</p>
+<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 좁은 폭(실측 71.6mm)이었는데, 페가수스 42 계열 라스트로 옮겨오면서 앞쪽 여유가 어떻게 달라졌는지는 실물 측정이 나와야 판단할 수 있습니다. 다만 방향 자체는 넓어지는 쪽입니다.</p>
 
 <h2>우리 예상이 빗나간 지점 — 출시가 훨씬 빨랐다</h2>
 
@@ -1922,7 +1922,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
     <tr><td rowspan="4">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
     <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>336g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 토박스</td></tr>
+    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>306g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 중족부</td></tr>
     <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>써코니 엑소더스 울트라 4</strong></a></td><td>21.9만</td><td>309g</td><td>PWRRUN PB 슈퍼폼 맥스 쿠션, 울트라 거리용 상위 모델</td></tr>
     <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
@@ -1942,7 +1942,7 @@ export const posts_2026_08: BlogPost[] = [
 <p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
 
 <h3>쿠션·울트라 (18.9만~23만원)</h3>
-<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
+<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 중족부가 넓은(실측 96.9mm) 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
 
 <h3>카본 레이싱 (27.9만~34만원)</h3>
 <p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 8mm 드롭·44mm 고스택으로 완만~중간 트레일 레이스에서 안정적인 편입니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
@@ -4228,7 +4228,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
     title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 22.9만원, 55g이 갈린다 | 다치는 곳도 정반대',
     description:
-      '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 229,000원, km당 572원, 적정 페이스 3:30~5:00까지 전부 같습니다. 다른 건 무게 193g 대 248g(55g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
+      '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 209,000원, km당 약 522~523원, 적정 페이스 3:30~5:00까지 전부 같습니다. 다른 건 무게 193g 대 248g(55g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
     thumbnail: '/images/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4239,7 +4239,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '두 신발 가격이 정말 같나요?',
         answer:
-          '네. 한국 공식 정가가 둘 다 229,000원입니다. 내구성도 400km로 같아 km당 비용도 약 572원으로 동일합니다. 적정 페이스도 3:30~5:00/km로 겹칩니다. 가격·수명·목표 페이스가 전부 같은 상태에서 설계만 다른, 보기 드문 비교입니다.',
+          '네. 한국 공식 정가가 둘 다 209,000원입니다. 내구성도 400km로 같아 km당 비용도 약 522~523원으로 사실상 같습니다. 적정 페이스도 3:30~5:00/km로 겹칩니다. 가격·수명·목표 페이스가 전부 같은 상태에서 설계만 다른, 보기 드문 비교입니다.',
       },
       {
         question: '55g 차이가 그렇게 큰가요?',
@@ -4266,7 +4266,7 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격·수명·목표 페이스가 전부 같습니다</strong> — 둘 다 229,000원, 400km, km당 572원, 3:30~5:00/km. 이 조건에서 설계만 다릅니다</li>
+    <li><strong>가격·수명·목표 페이스가 전부 같습니다</strong> — 둘 다 209,000원, 400km, km당 약 522~523원, 3:30~5:00/km. 이 조건에서 설계만 다릅니다</li>
     <li><strong>갈리는 건 무게와 드롭</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 193g·드롭 7mm·포크형 카본 / <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 248g·드롭 10mm·풀렝스 곡선형 카본. <strong>55g 차이</strong>입니다</li>
     <li><strong>다치는 곳이 정반대입니다</strong> — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의. 발볼도 줌 플라이가 좁은 편이라 한국 러너는 여기서 갈립니다</li>
   </ul>
@@ -4287,18 +4287,18 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>매직스피드 5</th><th>줌 플라이 6</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>229,000원</td><td>229,000원 <em>(동일)</em></td></tr>
+    <tr><td>한국 정가</td><td>209,000원</td><td>209,000원 <em>(동일)</em></td></tr>
     <tr><td>무게</td><td><strong>193g</strong></td><td>248g</td></tr>
     <tr><td>스택 (힐/전족)</td><td>37 / 30mm</td><td><strong>40</strong> / 30mm</td></tr>
     <tr><td>드롭</td><td><strong>7mm</strong></td><td><strong>10mm</strong></td></tr>
     <tr><td>미드솔</td><td>FF Leap + FF Blast+</td><td>ZoomX + SR-02</td></tr>
     <tr><td>플레이트</td><td><strong>포크형</strong> 카본</td><td><strong>풀렝스 곡선형</strong> 카본 Flyplate</td></tr>
-    <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61%</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61% / 67%</td></tr>
     <tr><td>쿠션 / 반발</td><td>6 / 8</td><td><strong>7 / 9</strong></td></tr>
     <tr><td>안정성</td><td>5/10</td><td><strong>7/10</strong></td></tr>
     <tr><td>토박스</td><td><strong>표준</strong></td><td><strong>좁은 편</strong></td></tr>
     <tr><td>와이드 옵션</td><td>없음</td><td>없음</td></tr>
-    <tr><td>내구 · km당</td><td>400km · 572원</td><td>400km · 572원 <em>(동일)</em></td></tr>
+    <tr><td>내구 · km당</td><td>400km · 522원</td><td>400km · 523원 <em>(사실상 동일)</em></td></tr>
     <tr><td>적정 페이스</td><td>3:30–5:00 /km</td><td>3:30–5:00 /km <em>(동일)</em></td></tr>
   </tbody>
 </table>
@@ -4337,7 +4337,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>193g은 카본화 중에서도 가벼운 축이고, 전작(242g)에서 <strong>50g을 덜어낸</strong> 결과입니다. 세대가 바뀌며 성격이 달라진 신발이에요.</p>
 
-<p>플레이트가 <strong>포크형</strong>이라는 게 특징입니다. 풀렝스처럼 판 전체가 밀어주는 대신 갈라진 형태라 전환이 부드럽고, 카본이 처음인 러너가 느끼는 이질감이 덜합니다. 에너지 리턴은 힐 64.6% / 전족 62.6%로 줌 플라이(61%)보다 높게 측정됐습니다.</p>
+<p>플레이트가 <strong>포크형</strong>이라는 게 특징입니다. 풀렝스처럼 판 전체가 밀어주는 대신 갈라진 형태라 전환이 부드럽고, 카본이 처음인 러너가 느끼는 이질감이 덜합니다. 에너지 리턴은 힐 64.6% / 전족 62.6%로, 힐은 줌 플라이(61%)보다 높고 전족은 줌 플라이(67%)가 더 높게 측정됐습니다.</p>
 
 <p>약점은 <strong>안정성 5/10</strong>입니다. 이 수치는 카본화 중에서도 낮은 편이고, 위에서 본 부상 등급 세 개가 주의로 잡힌 배경이기도 합니다. 지치면 발이 흔들리는 러너가 장거리에 쓰기엔 부담이 있습니다.</p>
 
@@ -4387,7 +4387,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 229,000원)이며 실판매가는 다를 수 있습니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다 — 통증이 있다면 전문의 진료를 받으세요. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 209,000원)이며 실판매가는 다를 수 있습니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다 — 통증이 있다면 전문의 진료를 받으세요. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {

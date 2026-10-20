@@ -691,7 +691,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>브랜드</th><th>입문·데일리</th><th>쿠션</th><th>안정화</th><th>슈퍼트레이너·템포</th><th>카본 레이싱</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키</strong></a></td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> 16.9만</td><td><a href="/shoes/nike-vomero-18">보메로 18</a> 18.9만</td><td><a href="/shoes/nike-structure-26">스트럭처 26</a> 16.9만</td><td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 22.9만</td><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 30.9만</td></tr>
+    <tr><td><a href="/blog/nike-running-shoes-lineup-tier-guide-2026"><strong>나이키</strong></a></td><td><a href="/shoes/nike-pegasus-42">페가수스 42</a> 16.9만</td><td><a href="/shoes/nike-vomero-18">보메로 18</a> 18.9만</td><td><a href="/shoes/nike-structure-26">스트럭처 26</a> 16.9만</td><td><a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 20.9만</td><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a> 30.9만</td></tr>
     <tr><td><a href="/blog/asics-running-shoes-lineup-tier-guide-2026"><strong>아식스</strong></a></td><td><a href="/shoes/asics-novablast-6">노바블라스트 6</a> 17.9만</td><td><a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a> 19.9만</td><td><a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 19.9만</td><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 25.9만</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 32.9만</td></tr>
     <tr><td><a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026"><strong>뉴발란스</strong></a></td><td><a href="/shoes/new-balance-880-v15">880 V15</a> 18.9만</td><td><a href="/shoes/new-balance-1080-v15">1080 V15</a> 20.9만</td><td><a href="/shoes/new-balance-860-v15">860 V15</a> 18.9만</td><td><a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a> 25.9만</td><td><a href="/shoes/new-balance-sc-elite-v6">SC 엘리트 V6</a> 38.9만</td></tr>
     <tr><td><a href="/blog/hoka-running-shoes-lineup-tier-guide-2026"><strong>호카</strong></a></td><td><a href="/shoes/hoka-clifton-10">클리프톤 10</a> 19.9만</td><td><a href="/shoes/hoka-bondi-9">본디 9</a> 22.9만</td><td><a href="/shoes/hoka-arahi-8">아라히 8</a> 19.9만</td><td><a href="/shoes/hoka-mach-x-3">마하 X 3</a> 24.9만</td><td><a href="/shoes/hoka-rocket-x-3">로켓 X 3</a> 29.9만</td></tr>
@@ -2244,7 +2244,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td><strong>ZoomX + ReactX</strong> + 풀렝스 Air Zoom</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음 (Air Zoom이 그 역할)</td></tr>
     <tr><td>쿠션 / 반발 / 안정</td><td>8 / 7 / <strong>7</strong></td><td><strong>10</strong> / <strong>8</strong> / 6</td></tr>
-    <tr><td>토박스</td><td>표준</td><td><strong>좁음</strong></td></tr>
+    <tr><td>토박스</td><td>좁음(표준 사이즈 72.3mm)</td><td><strong>좁음</strong>(70.3mm)</td></tr>
     <tr><td>와이드 옵션</td><td><strong>있음</strong></td><td><strong>없음</strong></td></tr>
     <tr><td>평발 적합성</td><td>양호</td><td>양호</td></tr>
     <tr><td>km당 비용</td><td><strong>약 282원</strong></td><td>약 482원</td></tr>
@@ -2266,7 +2266,7 @@ export const posts_2026_09: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 무릎·발목 부담을 최우선으로 줄이고 싶은 러너, 장거리 LSD와 회복주에 전용화를 두고 싶은 러너, <strong>발볼이 좁은</strong> 러너.</p>
 
 <h2>한국 러너라면 여기서 갈립니다 — 와이드 옵션</h2>
-<p>이 비교에서 가격보다 먼저 봐야 할 항목이 있습니다. <strong>프리미엄은 토박스가 좁은 쪽이고, 와이드 옵션 자체를 팔지 않습니다.</strong> 42는 표준 토박스에 와이드가 나옵니다.</p>
+<p>이 비교에서 가격보다 먼저 봐야 할 항목이 있습니다. <strong>프리미엄은 토박스가 좁은 쪽이고, 와이드 옵션 자체를 팔지 않습니다.</strong> 42도 표준 사이즈 토박스는 좁은 편(72.3mm)이지만 와이드가 나옵니다.</p>
 <p>한국 러너의 발볼이 서구 기준보다 넓은 편이라는 점을 생각하면 이건 작은 차이가 아닙니다. 12만원을 더 냈는데 5km쯤에서 새끼발가락이 눌리기 시작하면, 그 쿠션이 아무리 좋아도 소용이 없습니다. <strong>발볼이 넓다는 자각이 있다면 프리미엄은 후보에서 빼는 편이 낫고</strong>, 그래도 맥스 쿠션을 원한다면 와이드가 나오는 다른 모델을 찾는 쪽이 순서에 맞습니다.</p>
 
 <h2>내게 맞는 건?</h2>
@@ -2309,7 +2309,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '페가수스 프리미엄은 와이드가 없나요?',
         answer:
-          '없습니다. 프리미엄은 토박스가 좁은 쪽이고 와이드 옵션 자체를 제공하지 않습니다. 반면 페가수스 42는 표준 토박스에 와이드 옵션이 나옵니다. 한국 러너의 발볼을 고려하면 이 차이가 가격보다 먼저 판단해야 할 항목입니다.',
+          '없습니다. 프리미엄은 토박스가 좁은 쪽이고 와이드 옵션 자체를 제공하지 않습니다. 반면 페가수스 42는 표준 사이즈 토박스가 좁은 편(72.3mm)이지만 와이드 옵션이 나옵니다. 한국 러너의 발볼을 고려하면 이 차이가 가격보다 먼저 판단해야 할 항목입니다.',
       },
       {
         question: '프리미엄이 42보다 무겁다는 게 사실인가요?',
@@ -3220,7 +3220,7 @@ export const posts_2026_09: BlogPost[] = [
     title:
       '카본화 계급도 2026 — "카본"이 묶고 있는 서로 다른 물건 셋 | 브랜드 9곳 30종, km당 274원부터 1,995원까지',
     description:
-      '카본 플레이트가 들어간 로드 러닝화 30종을 트레이너·레이서·서브2 3단으로 정리했습니다. km당 비용이 274원(디비에이트 나이트로 4)부터 1,995원(메타스피드 레이)까지 7.3배 벌어집니다 — "카본화"라는 한 단어가 성격이 전혀 다른 물건 셋을 묶고 있다는 뜻입니다. 한국 발볼 기준 토박스 분포(30종 중 넓은 것 0종)까지 함께 정리했습니다.',
+      '카본 플레이트가 들어간 로드 러닝화 30종을 트레이너·레이서·서브2 3단으로 정리했습니다. km당 비용이 274원(디비에이트 나이트로 4)부터 1,995원(메타스피드 레이)까지 7.3배 벌어집니다 — "카본화"라는 한 단어가 성격이 전혀 다른 물건 셋을 묶고 있다는 뜻입니다. 한국 발볼 기준 토박스 분포(30종 중 넓은 것 1종)까지 함께 정리했습니다.',
     thumbnail: '/images/blog/carbon-plate-running-shoes-lineup-tier-guide-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
@@ -3251,7 +3251,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '발볼이 넓은데 카본화를 신을 수 있나요?',
         answer:
-          '선택지가 많지 않습니다. 이 표 30종 중 토박스가 넓게 분류된 모델은 0종이고, 좁은 편이 13종(43%), 나머지 17종이 표준입니다. 와이드 옵션이 나오는 건 6종(20%)뿐으로, 메타스피드 스카이+·엣지+, SC 엘리트 V5, SC 리벨, SC 트레이너 V3, 디비에이트 나이트로 4입니다. 입문화에서는 토박스가 넓은 모델도 있고 와이드도 흔했는데, 카본화는 발을 단단히 잡아야 플레이트가 작동한다는 설계 전제 때문에 전반적으로 좁습니다. 발볼이 넓다면 이 6종부터 보는 게 순서입니다.',
+          '선택지가 많지 않습니다. 이 표 30종 중 토박스가 넓게 분류된 모델은 알파플라이 3 1종(와이드 없음)이고, 좁은 편이 13종(43%), 나머지 16종이 표준입니다. 와이드 옵션이 나오는 건 6종(20%)뿐으로, 메타스피드 스카이+·엣지+, SC 엘리트 V5, SC 리벨, SC 트레이너 V3, 디비에이트 나이트로 4입니다. 입문화에서는 토박스가 넓은 모델도 있고 와이드도 흔했는데, 카본화는 발을 단단히 잡아야 플레이트가 작동한다는 설계 전제 때문에 전반적으로 좁습니다. 발볼이 넓다면 이 6종부터 보는 게 순서입니다.',
       },
       {
         question: '카본화가 정말 기록을 줄여주나요?',
@@ -3265,7 +3265,7 @@ export const posts_2026_09: BlogPost[] = [
   <ul>
     <li><strong>"카본화"는 한 종류가 아닙니다.</strong> 신발값을 교체할 때까지 달릴 거리로 나눈 값(<strong>km당 비용</strong>)이 274원부터 1,995원까지 <strong>7.3배</strong> 벌어집니다. 입문화에서는 이 격차가 2.6배였습니다.</li>
     <li><strong>그래서 3단으로 갈립니다</strong> — 매주 신는 <strong>카본 트레이너</strong>(19.9~25.9만), 대회날 신는 <strong>레이서</strong>(26.9~32.9만), 기록을 갈아넣는 <strong>서브2 최상위</strong>(33.9~39.9만).</li>
-    <li><strong>한국 러너는 먼저 발볼부터 봐야 합니다</strong> — 30종 중 토박스가 넓은 모델은 <strong>0종</strong>이고, 와이드 옵션이 나오는 건 6종뿐입니다.</li>
+    <li><strong>한국 러너는 먼저 발볼부터 봐야 합니다</strong> — 30종 중 토박스가 넓은 모델은 <strong>1종</strong>(알파플라이 3)이고, 와이드 옵션이 나오는 건 6종뿐입니다.</li>
   </ul>
 </div>
 
@@ -3318,7 +3318,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/new-balance-sc-trainer-v3">뉴발란스 SC 트레이너 V3</a></td><td>249,000원</td><td>278g</td><td>약 498원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-4">아식스 매직스피드 4</a></td><td>199,000원</td><td>237g</td><td>약 569원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000원</td><td>193g</td><td>약 572원</td><td>표준</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a></td><td>229,000원</td><td>248g</td><td>약 572원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a></td><td>209,000원</td><td>248g</td><td>약 523원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-rebel">뉴발란스 SC 리벨 V1</a></td><td>259,000원</td><td>218g</td><td>약 576원</td><td>좁음</td><td>있음</td></tr>
     <tr><td><a href="/shoes/mizuno-hyperwarp-pro">미즈노 하이퍼워프 프로</a></td><td>249,000원</td><td>201g</td><td>약 623원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/nike-streakfly-2">나이키 스트릭플라이 2</a></td><td>219,000원</td><td>128g</td><td>약 1,095원</td><td>좁음</td><td>없음</td></tr>
@@ -3369,7 +3369,7 @@ export const posts_2026_09: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3">푸마 패스트알 나이트로 엘리트 3</a></td><td>379,000원</td><td>173g</td><td><strong>약 1,516원</strong></td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-2">사코니 엔돌핀 엘리트 2</a></td><td>339,000원</td><td>197g</td><td>약 1,695원</td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000원</td><td>201g</td><td>약 1,695원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000원</td><td>201g</td><td>약 1,695원</td><td>넓음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-elite-3">사코니 엔돌핀 엘리트 3</a></td><td>369,000원</td><td>207g</td><td>약 1,845원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-ray">아식스 메타스피드 레이</a></td><td>399,000원</td><td>129g</td><td><strong>약 1,995원</strong></td><td>좁음</td><td>없음</td></tr>
   </tbody>
@@ -3386,7 +3386,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>구분</th><th>30종 중</th><th>내용</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>토박스 넓음</strong></td><td><strong>0종</strong></td><td>없습니다. 입문화에는 5종 있었습니다</td></tr>
+    <tr><td><strong>토박스 넓음</strong></td><td><strong>1종</strong></td><td>알파플라이 3뿐입니다(와이드 없음). 입문화에는 5종 있었습니다</td></tr>
     <tr><td><strong>토박스 좁음</strong></td><td>13종 (43%)</td><td>발볼이 넓다면 대부분 후보에서 빠집니다</td></tr>
     <tr><td><strong>와이드 옵션 제공</strong></td><td>6종 (20%)</td><td>아래 목록이 전부입니다</td></tr>
   </tbody>
@@ -3598,7 +3598,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: 'km당 비용이 뭔가요? 그냥 싼 걸 사면 안 되나요?',
         answer:
-          'km당 비용은 신발값을 교체할 때까지 달릴 수 있는 거리로 나눈 값입니다. 신발은 한 번 사고 끝이 아니라 주기적으로 갈아야 하는 소모품이라, 실제로 지갑에서 나가는 돈은 가격표가 아니라 이 값에 가깝습니다. 예를 들어 라이벌 플라이 4는 139,000원으로 이 표에서 가장 싼 축인데 km당 약 309원이고, 169,000원인 고스트 17은 약 211원입니다. 3만원 더 싸게 샀는데 1km당 100원 가까이 더 내는 셈입니다. 주 3회 10km씩 달리면 그 차이가 한 달에 1만원 넘게 벌어집니다.',
+          'km당 비용은 신발값을 교체할 때까지 달릴 수 있는 거리로 나눈 값입니다. 신발은 한 번 사고 끝이 아니라 주기적으로 갈아야 하는 소모품이라, 실제로 지갑에서 나가는 돈은 가격표가 아니라 이 값에 가깝습니다. 예를 들어 라이벌 플라이 4는 129,000원으로 이 표에서 가장 싼 축인데 km당 약 287원이고, 169,000원인 고스트 17은 약 211원입니다. 4만원 더 싸게 샀는데 1km당 약 76원 더 내는 셈입니다. 주 3회 10km씩 달리면 그 차이가 한 달에 9천원가량 벌어집니다.',
       },
       {
         question: '그럼 km당 비용이 제일 싼 걸 고르면 되나요?',
@@ -3608,7 +3608,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '발볼이 넓은데 어떤 걸 봐야 하나요?',
         answer:
-          '이 표에서 기본 토박스가 넓게 나온 건 슈퍼노바 라이즈 2, 웨이브 호라이즌 8입니다. 고스트 맥스 3(73.4mm)와 웨이브 인스파이어 21(73.5mm)은 RunRepeat 평균(73.2mm) 수준이라 표준으로 분류하되 둘 다 와이드 옵션이 있습니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4는 좁지만 와이드가 나옵니다.',
+          '이 표에서 기본 토박스가 넓게 나온 건 슈퍼노바 라이즈 2, 웨이브 호라이즌 8입니다. 고스트 맥스 3(73.4mm)와 웨이브 인스파이어 21(73.5mm)은 RunRepeat 평균(73.2mm) 수준이라 표준으로 분류하되 둘 다 와이드 옵션이 있습니다. 반대로 라이벌 플라이 4, 벨로시티 나이트로 4, 레드헤어 9 프로·울트라, 페가수스 41·42(표준 사이즈 기준)는 좁은 편으로 분류돼 있습니다. 이 중 라이벌 플라이 4와 레드헤어 계열은 와이드 옵션 자체가 없어서, 발볼이 넓다면 애초에 후보에서 빼는 편이 안전합니다. 벨로시티 나이트로 4와 페가수스 41·42는 좁지만 와이드가 나옵니다.',
       },
       {
         question: '입문화인데 18만원은 너무 비싼 거 아닌가요?',
@@ -3651,12 +3651,12 @@ export const posts_2026_09: BlogPost[] = [
     <tr><th>모델</th><th>한국 정가</th><th>km당 비용</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000원</td><td>약 <strong>309원</strong></td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>129,000원</td><td>약 <strong>287원</strong></td></tr>
     <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000원</td><td>약 <strong>211원</strong></td></tr>
   </tbody>
 </table>
 
-<p>라이벌 플라이 4가 3만원 쌉니다. 그런데 km당으로는 고스트 17이 약 100원 저렴합니다. 주 3회 10km씩 달리면 한 달 120km, 차이는 <strong>월 1만 2천원</strong>입니다. 두 달이면 처음 아낀 3만원이 사라지고, 그 뒤로는 계속 손해입니다. <strong>"싼 신발"과 "싸게 달리는 신발"은 다른 신발입니다.</strong></p>
+<p>라이벌 플라이 4가 4만원 쌉니다. 그런데 km당으로는 고스트 17이 약 76원 저렴합니다. 주 3회 10km씩 달리면 한 달 120km, 차이는 <strong>월 약 9천원</strong>입니다. 다섯 달이 안 돼 처음 아낀 4만원이 사라지고, 그 뒤로는 계속 손해입니다. <strong>"싼 신발"과 "싸게 달리는 신발"은 다른 신발입니다.</strong></p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
@@ -3679,7 +3679,7 @@ export const posts_2026_09: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/li-ning-red-hare-9">리닝 레드헤어 9</a></td><td>95,000원</td><td>320g</td><td><strong>약 158원</strong></td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/li-ning-red-hare-9-pro">리닝 레드헤어 9 프로</a></td><td>140,000원</td><td>222g</td><td>약 233원</td><td>좁음</td><td>없음</td></tr>
-    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000원</td><td>236g</td><td>약 309원</td><td>좁음</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>129,000원</td><td>236g</td><td>약 287원</td><td>좁음</td><td>없음</td></tr>
   </tbody>
 </table>
 
@@ -3702,9 +3702,9 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>272g</td><td>약 265원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/li-ning-red-hare-9-ultra">리닝 레드헤어 9 울트라</a></td><td>150,000원</td><td>246g</td><td>약 273원</td><td>좁음</td><td>없음</td></tr>
     <tr><td><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a></td><td>169,000원</td><td>255g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td><td>169,000원</td><td>286g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a></td><td>169,000원</td><td>286g</td><td>약 282원</td><td>좁음</td><td>있음</td></tr>
     <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a> <span style="color:#0284c7;">안정화</span></td><td>169,000원</td><td>296g</td><td>약 282원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000원</td><td>281g</td><td>약 289원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000원</td><td>281g</td><td>약 289원</td><td>좁음</td><td>있음</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000원</td><td>245g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-kinvara-16">사코니 킨바라 16</a></td><td>159,000원</td><td>207g</td><td>약 318원</td><td>표준</td><td>없음</td></tr>
   </tbody>
@@ -4596,7 +4596,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'nike-rival-fly-4-review',
     title: '나이키 라이벌 플라이 4 후기 | 236g·13만원대 — 가성비 템포 트레이너',
     description:
-      '라이벌 플라이 4는 Cushlon 3.0 폼으로 236g 경량화와 반응성을 동시에 확보한 가성비 템포 트레이너입니다. 139,000원으로 아식스 매직스피드 4보다 6만원 저렴합니다. 다만 26mm 얇은 힐 스택은 장거리에 부적합하고, 토박스가 좁아 발볼 넓은 한국 러너는 피해야 합니다.',
+      '라이벌 플라이 4는 Cushlon 3.0 폼으로 236g 경량화와 반응성을 동시에 확보한 가성비 템포 트레이너입니다. 129,000원으로 아식스 매직스피드 4보다 7만원 저렴합니다. 다만 26mm 얇은 힐 스택은 장거리에 부적합하고, 토박스가 좁아 발볼 넓은 한국 러너는 피해야 합니다.',
     thumbnail: '/images/blog/nike-rival-fly-4-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
@@ -4607,7 +4607,7 @@ export const posts_2026_09: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>139,000원으로 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a>(199,000원)보다 6만원 저렴</strong>합니다 — 경량 템포 트레이너 중 가장 낮은 가격대입니다</li>
+    <li><strong>129,000원으로 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a>(199,000원)보다 7만원 저렴</strong>합니다 — 경량 템포 트레이너 중 가장 낮은 가격대입니다</li>
     <li><strong>236g에 Cushlon 3.0 폼으로 반응성(8/10)을 확보</strong>했습니다. 템포런·인터벌 훈련에 충분합니다</li>
     <li><strong>토박스가 좁고(narrow) 와이드 옵션이 없습니다.</strong> 발볼 넓은 한국 러너는 피하는 것을 권합니다</li>
   </ul>
@@ -4621,8 +4621,8 @@ export const posts_2026_09: BlogPost[] = [
   </div>
 </div>
 
-<h2>13만원대 가성비 템포 트레이너</h2>
-<p>Cushlon 3.0 폼으로 236g 경량화와 반응성을 동시에 확보한 가성비 템포 트레이너입니다. 139,000원으로 <a href="/shoes/asics-magic-speed-4">아식스 매직스피드 4</a>(199,000원)보다 6만원 저렴하면서 템포런(4:00-5:30/km)과 인터벌 훈련에 충분합니다. 레이싱화 워밍업용으로 부담 없이 사용할 수 있습니다.</p>
+<h2>12만원대 가성비 템포 트레이너</h2>
+<p>Cushlon 3.0 폼으로 236g 경량화와 반응성을 동시에 확보한 가성비 템포 트레이너입니다. 129,000원으로 <a href="/shoes/asics-magic-speed-4">아식스 매직스피드 4</a>(199,000원)보다 7만원 저렴하면서 템포런(4:00-5:30/km)과 인터벌 훈련에 충분합니다. 레이싱화 워밍업용으로 부담 없이 사용할 수 있습니다.</p>
 
 <h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
 <ul>
@@ -4635,7 +4635,7 @@ export const posts_2026_09: BlogPost[] = [
 <p>힐 26mm로 스택이 낮아 지면 감각이 직접적인 대신 장거리에서는 충격 흡수가 부족합니다. 1km 반복 같은 트랙 인터벌에 특화된 성격이고, 10km 이하 스피드 세션으로 용도를 한정해야 합니다.</p>
 
 <h2>가격 대비 가치</h2>
-<p>139,000원, 세일가는 10만원대 초반까지 내려갑니다. 450km 기준 km당 약 309원으로 훈련화 중 운용 비용이 가장 낮은 축입니다. 단가가 낮아 트레드밀용·야외용으로 나눠 두 켤레를 운용하는 방식도 부담이 적습니다.</p>
+<p>129,000원, 세일가는 10만원대 초반까지 내려갑니다. 450km 기준 km당 약 287원으로 훈련화 중 운용 비용이 가장 낮은 축입니다. 단가가 낮아 트레드밀용·야외용으로 나눠 두 켤레를 운용하는 방식도 부담이 적습니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -4665,7 +4665,7 @@ export const posts_2026_09: BlogPost[] = [
     slug: 'nike-streakfly-2-review',
     title: '나이키 스트릭플라이 2 후기 | 128g 트랙 스파이크급 — 5K·10K 전용 초경량 레이서',
     description:
-      '스트릭플라이 2는 128g 초경량에 카본 Flyplate를 탑재한 5K/10K 단거리 레이스 전용 슈퍼슈즈입니다. 77% 에너지 리턴, 219,000원으로 베이퍼플라이 4의 71% 가격입니다. 다만 27mm 얇은 쿠셔닝은 하프마라톤 이상에 부적합하고, 좁은 토박스는 발볼 넓은 러너에게 걸림돌입니다.',
+      '스트릭플라이 2는 128g 초경량에 카본 Flyplate를 탑재한 5K/10K 단거리 레이스 전용 슈퍼슈즈입니다. 에너지 리턴 76~78%(RunRepeat 실측 힐 76.3%·앞발 77.9%), 219,000원으로 베이퍼플라이 4의 71% 가격입니다. 다만 27mm 얇은 쿠셔닝은 하프마라톤 이상에 부적합하고, 좁은 토박스는 발볼 넓은 러너에게 걸림돌입니다.',
     thumbnail: '/images/blog/nike-streakfly-2-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-11',
@@ -4676,7 +4676,7 @@ export const posts_2026_09: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>128g — 트랙 스파이크급 초경량</strong>입니다. ZoomX + 카본 Flyplate로 77% 에너지 리턴을 냅니다</li>
+    <li><strong>128g — 트랙 스파이크급 초경량</strong>입니다. ZoomX + 카본 Flyplate로 에너지 리턴 76~78%를 냅니다</li>
     <li><strong>219,000원으로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(309,000원)의 71% 가격</strong>이면서 5K/10K에서는 오히려 더 적합합니다</li>
     <li><strong>27mm 얇은 쿠셔닝(4/10)</strong> — 하프마라톤 이상에는 부적합하고 거리를 5K~10K로 한정해야 합니다</li>
   </ul>
@@ -4691,7 +4691,7 @@ export const posts_2026_09: BlogPost[] = [
 </div>
 
 <h2>트랙 스파이크급 무게, 그 대가</h2>
-<p>ZoomX + 카본 Flyplate로 128g 트랙 스파이크급 초경량과 77% 에너지 리턴을 달성한 5K/10K 단거리 레이스 전용 슈퍼슈즈입니다. 전작 v1에서 가장 큰 변화는 카본 Flyplate 추가입니다. 128g의 무게는 유지하면서 플레이트가 들어가 전족부 전환이 더 날카로워졌습니다.</p>
+<p>ZoomX + 카본 Flyplate로 128g 트랙 스파이크급 초경량과 에너지 리턴 76~78%(RunRepeat 실측)를 달성한 5K/10K 단거리 레이스 전용 슈퍼슈즈입니다. 전작 v1에서 가장 큰 변화는 카본 Flyplate 추가입니다. 128g의 무게는 유지하면서 플레이트가 들어가 전족부 전환이 더 날카로워졌습니다.</p>
 
 <h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
 <ul>
@@ -4853,7 +4853,7 @@ export const posts_2026_09: BlogPost[] = [
 <p>6분대에서는 쿠션 부족으로 느껴지지만, 5분30초 안팎으로 올라가면 245g의 경량과 반응성이 살아납니다. 기초 근력과 주행거리가 어느 정도 쌓인 뒤에 넘어오는 순서가 맞고, 입문 단계라면 쿠션 위주의 데일리가 낫습니다.</p>
 
 <h2>가격 대비 가치</h2>
-<p>149,000원, 이 가격대 경쟁 모델(<a href="/shoes/saucony-kinvara-16">킨바라 16</a> 159,000원·<a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a> 139,000원)과 비교하면 Lightstrike Pro 듀얼 폼이 들어가 반응성에서 우위가 있습니다. 500km 기준 km당 약 298원입니다.</p>
+<p>149,000원, 이 가격대 경쟁 모델(<a href="/shoes/saucony-kinvara-16">킨바라 16</a> 159,000원·<a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a> 129,000원)과 비교하면 Lightstrike Pro 듀얼 폼이 들어가 반응성에서 우위가 있습니다. 500km 기준 km당 약 298원입니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -7695,7 +7695,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '3만원 차이면 뭐가 달라지나요?',
         answer:
-          '미드솔이 바뀝니다. 18은 위에 ZoomX, 아래에 ReactX를 겹친 듀얼 폼이고 플러스는 전체가 ZoomX입니다. 그 결과 에너지 리턴이 힐 56.9%에서 67.1%로, 전족부 58.9%에서 68.8%로 10%p씩 오르고, 드롭이 실측 13.9mm에서 10mm로 내려옵니다. 무게는 298g에서 289g으로 9g 가벼워집니다. 반대로 내구 기준 km당 비용은 291원에서 337원으로 올라갑니다.',
+          '미드솔이 바뀝니다. 18은 위에 ZoomX, 아래에 ReactX를 겹친 듀얼 폼이고 플러스는 전체가 ZoomX입니다. 그 결과 에너지 리턴이 힐 56.9%에서 67.1%로, 전족부 58.9%에서 68.8%로 10%p씩 오르고, 드롭이 실측 13.9mm에서 9.6mm로 내려옵니다. 무게는 298g에서 289g으로 9g 가벼워집니다. 반대로 내구 기준 km당 비용은 291원에서 337원으로 올라갑니다.',
       },
       {
         question: '무릎이 안 좋은데 어느 쪽인가요?',
@@ -7743,8 +7743,8 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td>한국 정가</td><td><strong>189,000원</strong></td><td>219,000원</td></tr>
     <tr><td>와이드 (한국 공식몰)</td><td><strong>남녀</strong> 189,000원</td><td><strong>남성만</strong> 209,000원</td></tr>
     <tr><td>무게</td><td>298g</td><td><strong>289g</strong></td></tr>
-    <tr><td>스택 실측 (힐/전족)</td><td>42.5 / 28.6mm</td><td><strong>45 / 35mm</strong></td></tr>
-    <tr><td>드롭 실측</td><td><strong>13.9mm</strong></td><td><strong>10mm</strong></td></tr>
+    <tr><td>스택 실측 (힐/전족)</td><td>42.5 / 28.6mm</td><td>42.3 / <strong>32.7mm</strong></td></tr>
+    <tr><td>드롭 실측</td><td><strong>13.9mm</strong></td><td><strong>9.6mm</strong></td></tr>
     <tr><td>미드솔</td><td>ZoomX + ReactX 듀얼</td><td><strong>풀렝스 ZoomX</strong></td></tr>
     <tr><td>충격흡수 실측 (힐/전족)</td><td>147 / 116 SA</td><td>147 / <strong>131</strong> SA</td></tr>
     <tr><td>에너지 리턴 실측 (힐/전족)</td><td>56.9% / 58.9%</td><td><strong>67.1% / 68.8%</strong></td></tr>
@@ -7763,7 +7763,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <p>이 비교에서 가장 먼저 놓아야 할 사실입니다. 두 신발의 <strong>힐 충격흡수가 147 SA로 완전히 같습니다.</strong> 미드솔 경도도 30.5 대 32.5 AC로 18이 오히려 아주 조금 더 부드럽습니다. "플러스니까 더 푹신하겠지"라는 기대는 뒤꿈치에서는 성립하지 않습니다.</p>
 
-<p>갈리는 자리는 <strong>앞발</strong>입니다. 전족부 충격흡수가 18은 116, 플러스는 131입니다. 스택 실측도 전족부에서 28.6mm 대 35mm로 6mm 넘게 차이가 납니다(힐은 42.5 대 45mm로 2.5mm). 18은 뒤꿈치는 두껍고 앞발은 얇은 신발이고, 플러스는 앞발까지 두꺼운 신발입니다. 그래서 드롭이 13.9mm에서 10mm로 내려옵니다.</p>
+<p>갈리는 자리는 <strong>앞발</strong>입니다. 전족부 충격흡수가 18은 116, 플러스는 131입니다. 스택 실측도 전족부에서 28.6mm 대 32.7mm로 4mm 넘게 차이가 납니다(힐은 42.5 대 42.3mm로 사실상 같음). 18은 뒤꿈치는 두껍고 앞발은 얇은 신발이고, 플러스는 앞발까지 두꺼운 신발입니다. 그래서 드롭이 13.9mm에서 9.6mm로 내려옵니다.</p>
 
 <p>이 <strong>앞발 차이</strong>가 이 글의 나머지 전부를 설명합니다. 착지 위치도, 장거리 후반의 감각도, 3만원의 값어치도 여기서 나옵니다.</p>
 
@@ -7779,13 +7779,13 @@ export const posts_2026_09: BlogPost[] = [
 
 <p>18의 실측 드롭 13.9mm는 요즘 로드화 중 가장 높은 축입니다. 뒤꿈치가 앞발보다 손가락 한 마디 가까이 높다는 뜻이고, <strong>힐 스트라이커에게는 그 자체가 장점</strong>입니다 — 착지하는 곳에 두꺼운 폼이 있고, 아킬레스는 늘어날 필요가 없습니다.</p>
 
-<p>같은 이유로 미드풋·포어풋 착지에서는 18이 어색합니다. 앞발로 내려오면 28.6mm 얇은 쪽에 착지하고, 높은 뒤꿈치가 뒤에서 걸리는 느낌이 납니다. 플러스는 드롭 10mm에 전족부 35mm라 <strong>어디로 착지해도 폼이 받아줍니다.</strong> 착지 위치가 일정하지 않거나 지치면 미드풋으로 바뀌는 러너라면 이 차이가 3만원보다 큽니다.</p>
+<p>같은 이유로 미드풋·포어풋 착지에서는 18이 어색합니다. 앞발로 내려오면 28.6mm 얇은 쪽에 착지하고, 높은 뒤꿈치가 뒤에서 걸리는 느낌이 납니다. 플러스는 드롭 9.6mm에 전족부 32.7mm(실측)라 <strong>어디로 착지해도 폼이 받아줍니다.</strong> 착지 위치가 일정하지 않거나 지치면 미드풋으로 바뀌는 러너라면 이 차이가 3만원보다 큽니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">공식 표기 스택으로 비교하면 반대로 읽힙니다</p>
-    <p>나이키 공식 표기로 보메로 18은 힐 46mm인데, 같은 신발의 랩 실측은 42.5mm입니다. 표기와 실측이 3.5mm 어긋납니다. 우리 DB에 적힌 두 신발의 표기 스택(18 46mm·플러스 42mm)만 놓고 보면 "18이 더 두껍다"로 읽히지만, 같은 랩 실측으로는 플러스가 힐 2.5mm·전족부 6.4mm 더 두껍습니다. 브랜드 표기는 인솔 포함 여부 등 기준이 제각각이라 <strong>두 신발을 비교할 때는 같은 랩의 실측만 나란히 놓아야</strong> 합니다. 이 글은 전부 그렇게 했습니다.</p>
+    <p>나이키 공식 표기로 보메로 18은 힐 46mm인데, 같은 신발의 랩 실측은 42.5mm입니다. 표기와 실측이 3.5mm 어긋납니다. 우리 DB에 적힌 두 신발의 표기 스택(18 힐 46/전족 36mm·플러스 45/35mm)만 놓고 보면 앞발까지 "18이 더 두껍다"로 읽히지만, 같은 랩 실측으로는 힐은 사실상 같고(42.5 대 42.3mm) 전족부는 플러스가 4.1mm 더 두껍습니다. 브랜드 표기는 인솔 포함 여부 등 기준이 제각각이라 <strong>두 신발을 비교할 때는 같은 랩의 실측만 나란히 놓아야</strong> 합니다. 이 글은 전부 그렇게 했습니다.</p>
   </div>
 </div>
 
@@ -7799,7 +7799,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <h2>보메로 플러스 — 3만원으로 앞발과 반발을 사는 쪽</h2>
 
-<p>219,000원이 사는 것은 세 가지입니다. 전족부 6.4mm 두꺼운 폼(충격흡수 116→131), 에너지 리턴 10%p(57→67%), 그리고 드롭 4mm(14→10mm). 무게도 9g 가벼워지고 우리 DB의 무릎 적합성 등급도 양호에서 최상으로 오릅니다. 이 에너지 리턴 차이(57→67%)는 30km 안팎 LSD 후반처럼 다리가 지친 구간에서 드러날 가능성이 있습니다.</p>
+<p>219,000원이 사는 것은 세 가지입니다. 전족부 4.1mm 두꺼운 폼(충격흡수 116→131), 에너지 리턴 10%p(57→67%), 그리고 드롭 약 4mm(13.9→9.6mm, 실측). 무게도 9g 가벼워지고 우리 DB의 무릎 적합성 등급도 양호에서 최상으로 오릅니다. 이 에너지 리턴 차이(57→67%)는 30km 안팎 LSD 후반처럼 다리가 지친 구간에서 드러날 가능성이 있습니다.</p>
 
 <p>대신 <strong>강성 19.8N</strong>은 각오해야 합니다. 신발이 스스로 굴러가는 대신 발이 접히는 감각은 줄어듭니다. 랩 토박스 71.1mm도 좁은 축이라 여성 러너는 와이드가 없어 표준폭입니다. km당 337원은 18보다 46원 비싸고, 650km 기준으로 신발 한 켤레 수명 동안 약 3만원 — 정가 차이가 그대로 운용 비용 차이가 됩니다.</p>
 
@@ -7809,7 +7809,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <ul>
   <li><strong>뒤꿈치 착지 + 쿠션량이 목적</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(힐 충격흡수가 같은데 3만원 쌉니다)</li>
-  <li><strong>미드풋 착지 / 착지가 흔들린다</strong> → <a href="/shoes/nike-vomero-plus">보메로 플러스</a>(전족부 35mm·드롭 10mm)</li>
+  <li><strong>미드풋 착지 / 착지가 흔들린다</strong> → <a href="/shoes/nike-vomero-plus">보메로 플러스</a>(전족부 실측 32.7mm·드롭 실측 9.6mm)</li>
   <li><strong>25km 넘기면 다리가 죽는다</strong> → 보메로 플러스(에너지 리턴 67%)</li>
   <li><strong>발볼이 넓은 남성</strong> → 둘 다 와이드가 있습니다. 쿠션량이 목적이면 18 와이드(189,000원), 앞발 반발이 필요하면 플러스 와이드(209,000원)</li>
   <li><strong>발볼이 넓은 여성</strong> → 보메로 18 와이드(189,000원). 플러스는 여성 와이드가 없습니다</li>

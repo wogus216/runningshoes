@@ -873,7 +873,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 압도적으로 넓어, 레이스 후반 발가락 눌림이 고질병이던 한국 러너에게 사실상 유일한 선택지입니다</li>
+    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(73.2mm)보다 넓고 <a href="/shoes/nike-alphafly-3">알파플라이</a>(75.3mm)와는 비슷한 수준이라, 레이스 후반 발가락 눌림이 고민인 한국 러너에게 유력한 선택지입니다</li>
     <li><strong>v4 대비 30g 빠진 198g</strong>로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell 폼(HA 15.2 울트라소프트)이 74.8% 에너지 리턴을 내고, 0.61 그립으로 젖은 노면도 안정적입니다</li>
     <li><strong>29만원(할인가)으로 베이퍼플라이(31만원)보다 저렴</strong>합니다. 다만 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
   </ul>
@@ -906,7 +906,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>실제로 어떤 느낌이냐</h2>
 <h3>넓은 토박스 — 이게 전부라고 해도 될 만큼</h3>
-<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이(67.8mm), 알파플라이(68.4mm)보다 6~7mm 넓습니다. 숫자로는 작아 보여도, 레이스 후반 발이 부으면 이 차이가 "완주 가능"과 "고통"을 가릅니다. 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림에서 자유로운</strong> 거의 유일한 슈퍼슈즈입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
+<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이 4(73.2mm)보다 1.3mm 넓고, 알파플라이 3(75.3mm)보다는 0.8mm 좁은 수준입니다(RunRepeat 실측). 슈퍼슈즈 중 넓은 축이라 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림 부담을 줄일 수 있는</strong> 선택지입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
 
 <h3>반발 — 부드럽게 굴러가되 폭발적이진 않다</h3>
 <p>100% PEBA FuelCell 폼은 HA 15.2로 매우 부드럽고, 74.8% 에너지 리턴은 분명 상위권입니다. 새 Energy Arc 플레이트 곡률이 중족부에서 전족부로의 전환을 매끄럽게 만들어, 3:30~4:30/km 페이스에서 자연스럽게 굴러갑니다. 다만 솔직히 말하면 <strong>알파플라이 같은 "튕겨내는" 폭발력은 아닙니다.</strong> 부드럽게 밀어주는 쪽이라, 순수 반발 최대치를 원하는 서브3 이하 엘리트에겐 다른 선택이 나을 수 있습니다.</p>
@@ -3804,8 +3804,8 @@ export const posts_2026_06: BlogPost[] = [
     faqs: [
       { question: '나이키 러닝화 라인은 어떻게 구분하나요?', answer: '숫자가 아니라 라인 이름으로 구분합니다. 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 데일리 라인이고, 이름에 Fly가 붙으면(베이퍼플라이·알파플라이·줌 플라이·스트릭플라이) 카본 레이싱 라인입니다. 라이벌 플라이는 예외적으로 Fly가 붙지만 카본 없는 가성비 템포화입니다.' },
       { question: '페가수스 플러스, 프리미엄은 일반 페가수스와 뭐가 다른가요?', answer: '같은 라인의 상위 등급입니다. 기본(41·42)은 ReactX 폼, 플러스는 더 가벼운 ZoomX 폼(2세대 플러스 2는 전족부 에어 줌 추가), 프리미엄은 ZoomX+ReactX+에어를 겹친 맥시멀 버전입니다. 가격도 기본 16만원대 → 플러스 21만원대 → 프리미엄 28만원대로 올라갑니다. 보메로도 18 → 플러스 → 프리미엄(50mm) 순으로 같은 규칙입니다.' },
-      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-29)으로 와이드가 있는 모델은 페가수스 42·보메로 18(남녀)과 보메로 플러스(남성)이고, 스트럭처 26은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 기본 폭이 넉넉합니다.' },
-      { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(13.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
+      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-29)으로 와이드가 있는 모델은 페가수스 42·보메로 18(남녀)과 보메로 플러스(남성)이고, 스트럭처 26은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 중족부는 넓지만 토박스가 실측 72.8mm로 표준 수준이고 와이드가 없습니다.' },
+      { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(12.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
       { question: 'ZoomX가 뭔가요? 다른 폼이랑 어떻게 다른가요?', answer: 'ZoomX는 나이키 최상위 PEBA 폼으로, 가볍고 반발력이 최고입니다. 원래 베이퍼플라이 같은 레이싱화에만 쓰다가 보메로·페가수스 플러스 같은 데일리로 내려왔습니다. 입문은 Cushlon, 데일리는 ReactX(안정적), 프리미엄·레이싱은 ZoomX(반발), 거기에 카본 플레이트가 더해지면 슈퍼슈즈입니다.' },
     ],
     content: `
@@ -3872,7 +3872,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/nike-rival-fly-4"><strong>라이벌 플라이 4</strong></a></td><td>가성비 템포</td><td>Cushlon</td><td>13.9만</td><td>236g</td><td>최저가 입문 템포 트레이너</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4"><strong>라이벌 플라이 4</strong></a></td><td>가성비 템포</td><td>Cushlon</td><td>12.9만</td><td>236g</td><td>최저가 입문 템포 트레이너</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-41"><strong>페가수스 41</strong></a></td><td>입문 데일리(전작)</td><td>ReactX</td><td>15.9만</td><td>281g</td><td>42의 전작, 재고·할인 시 가성비</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-42"><strong>페가수스 42</strong></a></td><td>입문 데일리</td><td>ReactX + 풀렝스 에어</td><td>16.9만</td><td>286g</td><td>첫 나이키 1순위, 와이드 정식 출시</td></tr>
     <tr><td><a href="/shoes/nike-structure-26"><strong>스트럭처 26</strong></a></td><td>안정화</td><td>ReactX + 미드풋 서포트</td><td>16.9만</td><td>296g</td><td>나이키 유일 안정화, 한국 와이드는 여성용만</td></tr>
@@ -3881,12 +3881,12 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/nike-pegasus-plus"><strong>페가수스 플러스</strong></a></td><td>스피드 데일리(전작)</td><td>풀렝스 ZoomX</td><td>21.9만</td><td>244g</td><td>1세대 — 경량 데일리+템포, 공식몰 할인 판매 중(9/28)</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-plus-2"><strong>페가수스 플러스 2</strong></a></td><td>스피드 데일리</td><td>ZoomX + 전족부 에어 줌</td><td>21.9만</td><td>258g</td><td>2세대 — 핏 개선, 성격은 데일리 쪽으로</td></tr>
     <tr><td><a href="/shoes/nike-streakfly-2"><strong>스트릭플라이 2</strong></a></td><td>단거리 레이싱</td><td>ZoomX + 카본</td><td>21.9만</td><td>128g</td><td>128g, 5K·10K 전용 초경량</td></tr>
-    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>ACG 제가마 트레일</strong></a></td><td>트레일 맥스 쿠션</td><td>ZoomX + Cushlon 3.0</td><td>21.9만</td><td>336g</td><td>ACG 이관 3세대, Vibram 메가그립·넓은 토박스</td></tr>
-    <tr><td><a href="/shoes/nike-zoom-fly-6"><strong>줌 플라이 6</strong></a></td><td>슈퍼트레이너</td><td>ZoomX + 카본</td><td>22.9만</td><td>248g</td><td>베이퍼 반값, 첫 카본 입문</td></tr>
+    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>ACG 제가마 트레일</strong></a></td><td>트레일 맥스 쿠션</td><td>ZoomX + Cushlon 3.0</td><td>21.9만</td><td>306g</td><td>ACG 이관 3세대, Vibram 메가그립·넓은 중족부</td></tr>
+    <tr><td><a href="/shoes/nike-zoom-fly-6"><strong>줌 플라이 6</strong></a></td><td>슈퍼트레이너</td><td>ZoomX + 카본</td><td>20.9만</td><td>248g</td><td>베이퍼 반값, 첫 카본 입문</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-premium"><strong>페가수스 프리미엄</strong></a></td><td>맥시멀 데일리</td><td>ZoomX+ReactX+에어</td><td>28.9만</td><td>308g</td><td>43mm 3중 폼, 데일리 끝판</td></tr>
     <tr><td><a href="/shoes/nike-vomero-premium"><strong>보메로 프리미엄</strong></a></td><td>회복용 맥스</td><td>ZoomX + 에어팟 4개</td><td>29.9만</td><td>326g</td><td>역대 최고 50mm 스택</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>울트라플라이</strong></a></td><td>트레일 레이싱</td><td>ZoomX + 카본</td><td>29.9만</td><td>299g</td><td>트레일 최초 ZoomX+카본</td></tr>
-    <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 78% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 힐 78% 에너지 리턴</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3"><strong>알파플라이 3</strong></a></td><td>풀 레이싱(마라톤)</td><td>ZoomX+에어팟+카본</td><td>33.9만</td><td>201g</td><td>킵툼 세계기록 슈즈</td></tr>
   </tbody>
 </table>
@@ -3914,14 +3914,14 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>🟢 첫 러닝화·가장 무난</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 풀렝스 에어에 와이드까지, 나이키의 정석입니다. 41과의 차이는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>에, 42의 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 리뷰</a>에 정리했습니다.</li>
-  <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(13.9만) 또는 전작 할인분 — <a href="/shoes/nike-pegasus-41">페가수스 41</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스 1세대</a>. 할인가는 수시로 바뀌니 공식몰에서 확인하세요.</li>
+  <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(12.9만) 또는 전작 할인분 — <a href="/shoes/nike-pegasus-41">페가수스 41</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스 1세대</a>. 할인가는 수시로 바뀌니 공식몰에서 확인하세요.</li>
   <li><strong>☁️ 푹신하게·무릎 보호</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(힐 46mm). 더 푹신하면 <a href="/shoes/nike-vomero-plus">보메로 플러스</a>, 극한 회복용은 50mm <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>.</li>
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/nike-structure-26">스트럭처 26</a>. 나이키 유일 안정화입니다. 다만 한국 공식몰 와이드는 여성용만 있습니다(2026-09-28 확인). 다른 브랜드 안정화와 비교하려면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>를 보세요.</li>
   <li><strong>⚡ 가볍게·조금 빠르게</strong> → <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2</a>(ZoomX + 전족부 에어). 2세대는 핏이 좋아진 대신 성격이 데일리 쪽으로 옮겨 갔으니, 가벼움이 최우선이면 1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>(244g) 할인분도 선택지입니다. 세대 변화는 <a href="/blog/nike-pegasus-plus-2-release-2026">페가수스 플러스 2 출시 정리</a>에 있습니다.</li>
   <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 베이퍼 반값으로 카본을 경험합니다.</li>
   <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(166g) 또는 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> — 지금 한국에서 살 수 있는 둘입니다(9월 30일 발표된 새 레이싱 3종은 위 3-1 참고). 둘의 차이는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼 vs 알파 비교</a>에 있습니다.</li>
   <li><strong>💨 5K·10K 단거리 PB</strong> → <a href="/shoes/nike-streakfly-2">스트릭플라이 2</a>(128g).</li>
-  <li><strong>⛰️ 트레일</strong> → <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>(맥스 쿠션·넓은 토박스), 트레일 레이스는 카본의 <a href="/shoes/nike-ultrafly">울트라플라이</a>. 제가마의 상세 평가는 <a href="/blog/nike-acg-zegama-trail-review-2026">ACG 제가마 트레일 리뷰</a>에, 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
+  <li><strong>⛰️ 트레일</strong> → <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>(맥스 쿠션·넓은 중족부), 트레일 레이스는 카본의 <a href="/shoes/nike-ultrafly">울트라플라이</a>. 제가마의 상세 평가는 <a href="/blog/nike-acg-zegama-trail-review-2026">ACG 제가마 트레일 리뷰</a>에, 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
 </ul>
 
 <h2>5. 발볼 — 나이키 토박스, 한국 러너는 꼭 확인</h2>
@@ -3935,9 +3935,9 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong>와이드 있음 (한국 공식몰)</strong></td><td>페가수스 42(남녀) · 보메로 18(남녀) · 보메로 플러스(남성)</td></tr>
     <tr><td><strong>와이드 여성만 (한국 공식몰)</strong></td><td>스트럭처 26</td></tr>
-    <tr><td><strong>표준 (보통)</strong></td><td>페가수스 42(72.3mm) · 페가수스 플러스 2 · 베이퍼플라이 4(73.2mm) · 알파플라이 3</td></tr>
-    <tr><td><strong>넓은 편 (트레일)</strong></td><td>ACG 제가마 트레일 · 울트라플라이 — 별도 와이드 없이 기본 폭이 넉넉</td></tr>
-    <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 프리미엄 · 페가수스 플러스(1세대) · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
+    <tr><td><strong>표준 (보통)</strong></td><td>페가수스 플러스 2 · 베이퍼플라이 4(73.2mm) · ACG 제가마 트레일(72.8mm)</td></tr>
+    <tr><td><strong>넓은 편</strong></td><td>알파플라이 3(75.3mm) · 울트라플라이(트레일) — 별도 와이드 없이 기본 폭이 넉넉</td></tr>
+    <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 42 표준 사이즈(72.3mm, 와이드 있음) · 보메로 플러스 표준 사이즈(71.1mm, 남성 와이드 있음) · 페가수스 프리미엄 · 페가수스 플러스(1세대) · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
   </tbody>
 </table>
 
@@ -3956,7 +3956,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>페가수스</strong>: 42(16.9만) → 플러스 2(21.9만) → 프리미엄(28.9만)</li>
   <li><strong>보메로</strong>: 18(18.9만) → 플러스(21.9만) → 프리미엄(29.9만)</li>
-  <li><strong>레이싱</strong>: 줌 플라이(22.9만) → 베이퍼플라이(30.9만) → 알파플라이(33.9만)</li>
+  <li><strong>레이싱</strong>: 줌 플라이(20.9만) → 베이퍼플라이(30.9만) → 알파플라이(33.9만)</li>
 </ul>
 
 <p>중요한 건 <strong>"프리미엄"이 항상 더 좋은 건 아니라는 점</strong>입니다. 프리미엄은 폼을 겹쳐 무겁고(페가수스 프리미엄 308g, 보메로 프리미엄 326g) 토박스도 좁아집니다. 대부분의 러너에게는 <strong>기본 페가수스 42나 보메로 18이 가성비·실용성에서 더 낫습니다.</strong> 프리미엄은 "최대 쿠션·최대 회복"이라는 특정 목적이 분명할 때만 의미가 있습니다.</p>
@@ -4080,7 +4080,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(공개 수치 285g→261g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
   <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓어 와이드 없이도 발볼이 편합니다.</li>
   <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 218g·스택 40mm에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
-  <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v6">SC Elite V6</a>(38.9만, 190g). 인피니온 폼과 재설계한 카본 Energy Arc로 전족 에너지 리턴을 끌어올린 최신 슈퍼슈즈지만, 핏이 좁아져(토박스 71.4mm) 발볼이 넓으면 꼭 신어 보고 사세요. 발볼 넓은 러너에게는 토박스 74.5mm로 베이퍼플라이·알파플라이보다 넓은 전작 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(31.9만)가 여전히 드문 선택지입니다. V6 변화는 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC Elite V6 프리뷰</a>에.</li>
+  <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v6">SC Elite V6</a>(38.9만, 190g). 인피니온 폼과 재설계한 카본 Energy Arc로 전족 에너지 리턴을 끌어올린 최신 슈퍼슈즈지만, 핏이 좁아져(토박스 71.4mm) 발볼이 넓으면 꼭 신어 보고 사세요. 발볼 넓은 러너에게는 토박스 74.5mm로 베이퍼플라이 4(73.2mm)보다 넓은 전작 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(31.9만)가 여전히 드문 선택지입니다. V6 변화는 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC Elite V6 프리뷰</a>에.</li>
   <li><strong>🎈 바운시한 프리미엄 데일리</strong> → <a href="/shoes/new-balance-balos-v1">발로스 V1</a>. 레이싱 외 유일하게 PEBA를 담은 통통 튀는 데일리. 다만 25.9만원으로 가격이 부담입니다.</li>
   <li><strong>⛰️ 트레일·로드투트레일</strong> → <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>(18.9만). Fresh Foam X 듀얼 밀도에 비브람 메가그립을 붙인 쿠션 올라운드 트레일화입니다. 상세는 <a href="/blog/new-balance-hierro-v9-trail-review-2026">히에로 v9 리뷰</a>에, 브랜드를 가로지른 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
 </ul>
