@@ -190,6 +190,16 @@ USD 환산을 금지하므로 **규칙을 지키면 페이지가 비고, 페이�
 
 ---
 
+## 🇰🇷 프로스펙스 브랜드 신규 — 4종 신상 추정 등록 (2026-10-20, `cloud/brand-prospecs`)
+
+`prospecs-speed-rush-3`·`prospecs-hyper-rush-2-tempo`·`prospecs-infinite-rush-rev`·`prospecs-duplex-gf`. 무게·오프셋·240/270mm 굽높이·소재는 프로스펙스 공식몰 상품 상세(Product Spec·사이즈 가이드 표·Features). RunRepeat 4종 모두 404(대조군 `nike-pegasus-41` 200, 브랜드 카탈로그 `/catalog/prospecs-running-shoes` 404 vs nike 200). 점수는 네오 다이치 10과 같은 방식(동급 4~5종 중앙값에서 쿠션·반발 −1), 토박스는 실측이 없어 전부 `standard` 자리값.
+
+| 처리일 | 대상 | 할 일 |
+|---|---|---|
+| **2026-11-20** | 프로스펙스 4종 | RunRepeat 랩 게시 확인(`runrepeat.com/prospecs-speed-rush-3`·`prospecs-hyper-rush-2-tempo`·`prospecs-infinite-rush-rev`·`prospecs-duplex-gf`, 대조군 `nike-pegasus-41`) → 게시되면 specs·toBoxWidth·detailedSpecs '(추정)' 걷기. 미게시면 한 달 이월 |
+| **2026-11-20** | `prospecs-infinite-rush-rev` | 공식 사이즈 가이드 뒤꿈치 굽높이(240mm 35·270mm 33, 다른 모델과 반대) 정정 여부 재확인. 지금은 앞꿈치 30 + 오프셋 5에 맞춰 270mm 35mm로 읽고 detailedSpecs 에 추정 표기 |
+| **2026-11-20** | 프로스펙스 4종 — 링크 | 공식몰 링크만 있음. 쿠팡·네이버 제휴 링크 발급 시도(이번 세션 미시도) |
+
 ## 🥾 미즈노 네오 다이치 10 — 신상 추정 등록 (2026-10-09)
 
 `mizuno-neo-daichi-10`. RunRepeat·BITR·RTR·DOR 이 이 모델과 직전 웨이브 다이치 9 모두 미게시라, 점수는 운영자 승인 '보수적 추정'(동급 4종 중앙값에서 쿠션·반발 −1: 쿠션 7·반발 5·안정 7·내구 500km·평점 4·가성비 8). 무게·두께·드롭·폼·아웃솔·락 플레이트는 미즈노 한국 공식 스펙표.

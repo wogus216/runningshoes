@@ -7,6 +7,7 @@ import { brooksBrand } from './brooks';
 import { sauconyBrand } from './saucony';
 import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
+import { prospecsBrand } from './prospecs';
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
 import { liningBrand } from './lining';
@@ -22,6 +23,7 @@ export const brands: Brand[] = [
   sauconyBrand,
   onBrand,
   newBalanceBrand,
+  prospecsBrand,
   pumaBrand,
   mizunoBrand,
   liningBrand,
@@ -127,6 +129,7 @@ export {
   sauconyBrand,
   onBrand,
   newBalanceBrand,
+  prospecsBrand,
   pumaBrand,
   mizunoBrand,
   liningBrand,

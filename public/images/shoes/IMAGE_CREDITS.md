@@ -268,3 +268,31 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-09
 - Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)
+
+## Prospecs Speed Rush 3
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S111, BLACK)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S111/PR0UR26S111_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
+
+## Prospecs Hyper Rush 2 Tempo
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S801, BLACK)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S801/PR0UR26S801_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
+
+## Prospecs Infinite Rush Rev.
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26F101, BLUE)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26F101/PR0UR26F101_{01,02,04,05,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_04, back=_05, outsole=_D02)
+
+## Prospecs Duplex GF
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S202 색상 — 흰색 PR0UR26S201은 배경과 구분이 어려워 제외)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S202/PR0UR26S202_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
