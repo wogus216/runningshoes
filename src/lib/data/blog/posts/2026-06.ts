@@ -39,7 +39,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>무게(US 9)</td><td>290g</td><td>295g</td><td><strong>247g</strong></td></tr>
     <tr><td>힐 / 전족 스택</td><td>29 / 23mm</td><td><strong>39 / 31mm</strong></td><td>33 / 26mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>optiFOAM2 (eTPU)</td><td>OptiFoam + RelieveSphere</td><td>optiFOAM+ PEBA 듀얼</td></tr>
+    <tr><td>미드솔</td><td>Opti FOAM Evo</td><td>OptiFoam + RelieveSphere</td><td>Energy Foam+ 듀얼</td></tr>
     <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 5</td><td>7 / 7</td></tr>
     <tr><td>러그(아웃솔)</td><td>4mm</td><td>3.9mm</td><td>3mm</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁음 · <strong>없음</strong></td><td>좁음 · <strong>와이드 O</strong></td><td>표준(74mm) · 없음</td></tr>
@@ -54,7 +54,7 @@ export const posts_2026_06: BlogPost[] = [
 <p><strong>펄사</strong>는 단종된 센스 라이드의 후속으로, <strong>근교 트레일을 빠르게 즐기고 도로까지 겸용</strong>하는 만능 데일리입니다. 29mm 스택에 6mm 드롭으로 경쾌해 업템포 트레일 훈련에 맞죠. <strong>울트라 글라이드 4</strong>는 정반대로 <strong>50~100km 울트라를 푹신하게</strong> 가는 컴포트화고, <strong>S/LAB 펄사 4</strong>는 <strong>VK·스카이러닝처럼 빠르고 험한 기술 코스</strong>를 레이싱하는 엘리트용입니다. "어떤 트레일을, 얼마나 멀리"가 먼저 정해져야 답이 나옵니다.</p>
 
 <h3>② 쿠션 vs 스피드 — 정반대의 두 극단</h3>
-<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(47~51%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + optiFOAM+ PEBA</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
+<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(48~52%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + Energy Foam+ 듀얼 폼</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
 
 <h3>③ 발볼·가격 — 한국 러너에겐 발볼이 결정적</h3>
 <p>살로몬은 전통적으로 <strong>발볼이 좁기로</strong> 유명합니다. 펄사는 전족부가 좁고 낮은데 <strong>와이드 옵션이 없어</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고, S/LAB 펄사 4는 토박스가 74mm로 전작보다 넓어졌지만 역시 와이드는 없습니다. <strong>울트라 글라이드 4만 와이드 옵션(한국 공식몰)이 있어</strong>, 발볼이 넓다면 사실상 이 모델이 답입니다. 가격은 펄사(21만) → 울트라 글라이드(23만) → S/LAB(34만) 순으로, S/LAB은 350km 내구성에 km당 약 971원이라 <strong>레이스 전용 운용</strong>이 전제입니다.</p>

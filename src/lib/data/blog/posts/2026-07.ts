@@ -3389,7 +3389,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td><strong>258g</strong></td></tr>
     <tr><td>힐 / 전족 스택</td><td><strong>40 / 35mm</strong></td><td>29 / 23mm</td><td>44.7 / 34.4mm</td></tr>
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>10mm</td></tr>
-    <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>optiFOAM2(eTPU)</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
+    <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>Opti FOAM Evo</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td><td><strong>풀 카본 플레이트</strong></td></tr>
     <tr><td>쿠션 / 반응</td><td>8 / 5</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
     <tr><td>안정성</td><td><strong>8</strong></td><td>7</td><td>4</td></tr>
@@ -3406,7 +3406,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 트레일이 처음이거나, 여러 지형을 오가는 종주·울트라 위주거나, 발볼 넓어 와이드가 필요한 러너.</p>
 
 <h2>펄사 — 근교 트레일을 가볍게, 도로도 겸용</h2>
-<p>단종된 센스 라이드의 빈자리를 메우는 <strong>올라운드 데일리 트레이너</strong>입니다. 신형 <strong>optiFOAM2(eTPU)</strong> 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 하프~40km 정도의 일상 훈련부터 업템포까지 한 켤레로 소화합니다. 290g으로 맥스쿠션 트레일화보다는 무겁지만 quickLACE + SensiFit 잠금이 안정적이라 도로-트레일 겸용 데일리로 편합니다.</p>
+<p>단종된 센스 라이드의 빈자리를 메우는 <strong>올라운드 데일리 트레이너</strong>입니다. <strong>Opti FOAM Evo</strong> 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 하프~40km 정도의 일상 훈련부터 업템포까지 한 켤레로 소화합니다. 290g으로 맥스쿠션 트레일화보다는 무겁지만 quickLACE + SensiFit 잠금이 안정적이라 도로-트레일 겸용 데일리로 편합니다.</p>
 <p>다만 <strong>전족부가 좁고 낮아</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고 와이드 옵션이 없습니다. 4mm Contagrip 러그는 건조한 혼합 지형엔 무난하지만, 젖은 바위·진흙과 록플레이트 없는 기술 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일을 빠르게 즐기는" 용도에 맞습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 도로와 근교 트레일을 한 켤레로 겸용하고 싶거나, 트레일 하프~40km 데일리 훈련 위주거나, 좀 더 가벼운 감각을 원하는 발볼 표준~좁은 러너.</p>
 
@@ -5647,9 +5647,9 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><strong>무게(US 9)</strong></td><td>275g</td><td>299g</td><td><strong>247g(최경량)</strong></td></tr>
     <tr><td>힐 스택</td><td>38mm</td><td>37mm</td><td>33mm</td></tr>
     <tr><td>드롭</td><td>7mm</td><td><strong>12mm</strong></td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>PEBA 듀얼</td><td>ZoomX(Pebax)</td><td>optiFOAM+ 듀얼</td></tr>
+    <tr><td>미드솔</td><td>PEBA 듀얼</td><td>ZoomX(Pebax)</td><td>Energy Foam+ 듀얼</td></tr>
     <tr><td><strong>플레이트</strong></td><td>윙드 카본(듀얼)</td><td>풀 카본</td><td><strong>없음(폼+Active Chassis)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td><strong>~70%(최고)</strong></td><td>중상</td><td>47~57%(낮음)</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>~70%(최고)</strong></td><td>중상</td><td>48~58%(낮음)</td></tr>
     <tr><td>아웃솔</td><td>Vibram Megagrip 4mm</td><td>Vibram Litebase 3mm</td><td>Contagrip 3mm</td></tr>
     <tr><td>안정성/제어</td><td>중(힐 고정 약함)</td><td><strong>낮음(완만 전용)</strong></td><td><strong>높음(기술 암반)</strong></td></tr>
     <tr><td>토박스</td><td>73mm 표준</td><td><strong>76.7mm 넓음</strong></td><td>74mm 표준</td></tr>
@@ -5670,8 +5670,8 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 완만한 임도·그래블·파이어로드 레이스 / 발볼이 넓어 트레일화 선택이 어려웠던 러너 / 빠른 페이스·비테크니컬 울트라</p>
 
 <h2>S/LAB 펄사 4 — 급경사 기술 산악의 제어형 레이서</h2>
-<p><a href="/shoes/salomon-s-lab-pulsar-4">살로몬 S/LAB 펄사 4</a>는 살로몬 최상위 S/LAB 라인의 <strong>엘리트 기술 트레일 레이서</strong>입니다. 셋 중 유일하게 <strong>카본 플레이트가 없고</strong>, 대신 <strong>optiFOAM+ 듀얼 폼 + Matryx(아라미드) 어퍼 + Active Chassis</strong>로 승부합니다. <strong>247g 최경량</strong>에 급경사 암반에서도 발을 단단히 제어해(Road Trail Run 호평), <strong>20~80km 기술 트레일·VK(버티컬 킬로미터)·스카이러닝</strong>처럼 빠르고 험한 코스에 특화됐죠. 안정성·제어가 세 켤레 중 가장 뛰어나 <strong>한국 산악의 바위·급경사 코스에 가장 잘 맞습니다.</strong></p>
-<p>약점은 <strong>34만원 레이싱화치고 에너지 리턴이 47~57%로 낮고</strong>(카본이 없으니 직선 추진은 약함), 초기 런에서 <strong>폼 청킹(내구성) 우려</strong>가 보고됐으며 내구성이 350km로 짧습니다. 미드풋-토박스 경계 핀칭도 지적됩니다. "직선 속도"보다 "험지 제어와 경량"을 사는 신발입니다.</p>
+<p><a href="/shoes/salomon-s-lab-pulsar-4">살로몬 S/LAB 펄사 4</a>는 살로몬 최상위 S/LAB 라인의 <strong>엘리트 기술 트레일 레이서</strong>입니다. 셋 중 유일하게 <strong>카본 플레이트가 없고</strong>, 대신 <strong>Energy Foam+ 듀얼 폼 + Matryx(아라미드) 어퍼 + Active Chassis</strong>로 승부합니다. <strong>247g 최경량</strong>에 급경사 암반에서도 발을 단단히 제어해(Road Trail Run 호평), <strong>20~80km 기술 트레일·VK(버티컬 킬로미터)·스카이러닝</strong>처럼 빠르고 험한 코스에 특화됐죠. 안정성·제어가 세 켤레 중 가장 뛰어나 <strong>한국 산악의 바위·급경사 코스에 가장 잘 맞습니다.</strong></p>
+<p>약점은 <strong>34만원 레이싱화치고 에너지 리턴이 48~58%로 낮고</strong>(카본이 없으니 직선 추진은 약함), 초기 런에서 <strong>폼 청킹(내구성) 우려</strong>가 보고됐으며 내구성이 350km로 짧습니다. 미드풋-토박스 경계 핀칭도 지적됩니다. "직선 속도"보다 "험지 제어와 경량"을 사는 신발입니다.</p>
 <p><strong>✅ 이런 분께</strong> — VK·스카이러닝·급경사 암반 기술 레이스 / 20~80km 기술 트레일 / 카본 없이 폼+경량 제어를 원하는 엘리트 러너</p>
 
 <h2>내 레이스엔 뭘 신을까</h2>
@@ -5696,7 +5696,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. S/LAB 펄사 4는 카본이 없는데 왜 이렇게 비싼가요?</p>
-    <p class="faq-a">A. 카본 대신 <strong>Matryx 아라미드 어퍼·Active Chassis·247g 경량화·optiFOAM+ 폼</strong> 같은 엘리트 소재와 구조에 값이 매겨진 S/LAB 프리미엄입니다. 직선 반발(에너지 리턴)은 카본 모델보다 낮지만, <strong>험지 제어와 경량</strong>이 강점이라 용도가 다릅니다.</p>
+    <p class="faq-a">A. 카본 대신 <strong>Matryx 아라미드 어퍼·Active Chassis·247g 경량화·Energy Foam+ 폼</strong> 같은 엘리트 소재와 구조에 값이 매겨진 S/LAB 프리미엄입니다. 직선 반발(에너지 리턴)은 카본 모델보다 낮지만, <strong>험지 제어와 경량</strong>이 강점이라 용도가 다릅니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 셋 다 괜찮나요?</p>
@@ -5845,7 +5845,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td>283g</td></tr>
     <tr><td><strong>힐 스택</strong></td><td><strong>40mm(맥스)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>9mm</td></tr>
-    <tr><td>미드솔</td><td>CMEVA 맥스쿠션</td><td>optiFOAM2 (eTPU)</td><td>Lightstrike EVA(단단)</td></tr>
+    <tr><td>미드솔</td><td>CMEVA 맥스쿠션</td><td>Opti FOAM Evo</td><td>Lightstrike EVA(단단)</td></tr>
     <tr><td>아웃솔</td><td>Vibram Megagrip 5mm</td><td>Contagrip 4mm</td><td>Continental 3mm대</td></tr>
     <tr><td>그립 강점</td><td>만능(젖은 바위 최상위)</td><td>건조 혼합 지형</td><td>테크니컬·진흙 최상위</td></tr>
     <tr><td>쿠션 / 반발</td><td>푹신 / 둔함</td><td>중간 / 경쾌</td><td>단단 / 또렷</td></tr>
@@ -5863,7 +5863,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 트레일 입문 첫 켤레 / 50km+ 장거리·울트라 / 발볼 넓어 와이드가 필요한 러너 / 하이킹 겸용</p>
 
 <h2>펄사 — 가볍고 경쾌한 근교 스피드형</h2>
-<p><a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 단종된 센스 라이드의 자리를 잇는 올라운드 데일리 트레이너입니다. 스피드고트가 "푹신한 만능형"이라면, 펄사는 정반대인 <strong>저스택(힐 29mm)·경쾌한 스피드형</strong>입니다. 신형 optiFOAM2(100% eTPU) 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 트레일 하프~40km 훈련부터 업템포까지 한 켤레로 소화합니다.</p>
+<p><a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 단종된 센스 라이드의 자리를 잇는 올라운드 데일리 트레이너입니다. 스피드고트가 "푹신한 만능형"이라면, 펄사는 정반대인 <strong>저스택(힐 29mm)·경쾌한 스피드형</strong>입니다. Opti FOAM Evo 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 트레일 하프~40km 훈련부터 업템포까지 한 켤레로 소화합니다.</p>
 <p>quickLACE + SensiFit의 발 잠금이 살로몬답게 정확하고, 낮은 스택 덕에 지면 감각이 또렷해 <strong>근교 트레일을 빠르게 달리는 훈련</strong>에 특히 잘 맞습니다. 발밑이 낮으니 발목이 꺾일 위험도 덜하죠.</p>
 <p>단점은 두 가지입니다. 첫째, <strong>전족부가 좁고 낮아(narrow) 발볼 넓은 한국 러너에겐 불편</strong>하고 와이드 옵션이 없습니다. 사이즈가 길게 나와 반 사이즈 다운 평이 많고요. 둘째, 4mm Contagrip 러그와 <strong>록플레이트 부재</strong>로 젖은 바위·진흙·날카로운 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일 스피드"에 특화된 신발입니다.</p>
 <p><strong>✅ 이런 분께</strong> — 근교 산·둘레길을 빠르게 / 도로-트레일 겸용 원슈즈 / 저스택·경쾌한 반응 선호 / 발볼 표준~좁은 러너</p>

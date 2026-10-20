@@ -1936,7 +1936,7 @@ export const posts_2026_08: BlogPost[] = [
 <h2>4. 단별로 — 어떤 러너·어떤 산에 맞나</h2>
 
 <h3>근교·입문 (8.9만~21만원)</h3>
-<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 269g으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
+<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 Opti FOAM Evo 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 269g으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
 
 <h3>올라운드 (20.5만~27.9만원)</h3>
 <p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
