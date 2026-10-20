@@ -3972,10 +3972,10 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>브룩스 아드레날린 GTS 25</th><th>아식스 젤 카야노 33</th></tr></thead>
   <tbody>
     <tr><td>안정화 방식</td><td><strong>GuideRails</strong>(측면 가드레일) + 미디얼 포스트</td><td><strong>FLUIDSUPPORT</strong>(부드러운 폼 지오메트리, 4D 폐지)</td></tr>
-    <tr><td>무게(US 9)</td><td>300g</td><td>298g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>37 / 27mm</td><td>40 / 32mm</td></tr>
+    <tr><td>무게(US 9)</td><td>295g</td><td>298g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>36 / 26mm</td><td>40 / 32mm</td></tr>
     <tr><td>드롭</td><td>10mm</td><td><strong>8mm</strong>(아킬레스 부담↓)</td></tr>
-    <tr><td>미드솔</td><td>DNA Loft v3(단단, HA 25.1)</td><td><strong>FF BLAST MAX + PLUS 듀얼 폼</strong>(부드러움)</td></tr>
+    <tr><td>미드솔</td><td>DNA Loft v3(중간 경도, 랩 34.5 AC)</td><td><strong>FF BLAST MAX + PLUS 듀얼 폼</strong>(부드러움)</td></tr>
     <tr><td>쿠션 성향</td><td>단단·탄탄</td><td><strong>푹신·부드러움</strong></td></tr>
     <tr><td>내구성</td><td><strong>800km</strong>(안정화 최상위)</td><td>~650km(추정)</td></tr>
     <tr><td>발볼 / 와이드</td><td>표준 / <strong>와이드 있음</strong>(힐 폭 95mm 넓음)</td><td>표준 / 와이드 있음</td></tr>
@@ -3987,12 +3987,12 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>가장 큰 차이 — 어떻게 "잡아주느냐"</h2>
 <p>두 신발의 핵심 차이는 <strong>과내전(오버프로네이션, 발이 안쪽으로 무너지는 것)을 잡는 방식</strong>입니다.</p>
-<p><strong>아드레날린 GTS 25</strong>는 <strong>GuideRails</strong>를 씁니다. 발 양옆에 가드레일 같은 구조를 둬서, <strong>발이 정상 범위를 벗어나 무너지려 할 때만 물리적으로 막아주는</strong> 방식이에요. 여기에 미디얼 포스트(안쪽 단단한 폼)까지 더해 안정성 점수가 9/10입니다. <strong>교정력이 확실하고 직관적</strong>이라, 과내전이 심하거나 안정화가 처음인 러너에게 믿음직합니다. 대신 DNA Loft v3가 <strong>다소 단단한 착화감</strong>(HA 25.1)이라 푹신함을 기대하면 아쉬울 수 있습니다.</p>
+<p><strong>아드레날린 GTS 25</strong>는 <strong>GuideRails</strong>를 씁니다. 발 양옆에 가드레일 같은 구조를 둬서, <strong>발이 정상 범위를 벗어나 무너지려 할 때만 물리적으로 막아주는</strong> 방식이에요. 여기에 미디얼 포스트(안쪽 단단한 폼)까지 더해 안정성 점수가 9/10입니다. <strong>교정력이 확실하고 직관적</strong>이라, 과내전이 심하거나 안정화가 처음인 러너에게 믿음직합니다. 대신 DNA Loft v3는 랩 경도 34.5 AC로 랩 평균(35.4 AC)과 비슷한 <strong>중간 경도</strong>라 푹신함을 기대하면 아쉬울 수 있습니다.</p>
 <p><strong>카야노 33</strong>은 정반대 접근으로 갔습니다. 카야노 30부터 쓰던 <strong>4D Guidance System(단단한 폼으로 막는 방식)을 폐지하고</strong>, <strong>FLUIDSUPPORT</strong> — 부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 감싸는 방식 — 으로 바꿨습니다. 게다가 카야노 최초로 <strong>FF BLAST MAX + PLUS 듀얼 폼</strong>을 얹어 "안정화라 쿠션이 단단하다"는 오랜 약점을 정조준했죠. 즉 <strong>부드럽고 쿠션 좋은 안정화</strong>입니다. 다만 강한 교정력에 익숙했던 심한 과내전 러너에겐 <strong>지지가 부족하게 느껴질 수 있고, 신기술이라 검증 데이터가 아직 부족</strong>합니다.</p>
 
 <h2>쿠션·드롭·무게</h2>
-<p>쿠션은 <strong>생각보다 차이가 크지 않습니다</strong>. 카야노 33은 공식 스택이 40mm로 발표됐지만 RunRepeat 실측은 힐 36.8mm로, 아드레날린(37mm)과 사실상 같습니다. 쿠션 점수도 둘 다 8/10이죠. 다만 카야노는 FF BLAST MAX 덕에 <strong>착지 순간의 부드러움</strong>이, 아드레날린은 DNA Loft v3의 <strong>일관된 단단함</strong>이 특징이라 성격이 다릅니다.</p>
-<p><strong>드롭은 카야노가 8mm, 아드레날린이 10mm</strong>입니다. 2mm 차이지만, 드롭이 낮은 카야노가 <strong>아킬레스건 부담이 약간 덜해</strong> 아킬레스 이력이 있는 러너에게 유리합니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염 가이드</a> 참고). 무게는 300g vs 298g으로 사실상 동일합니다.</p>
+<p>쿠션은 <strong>생각보다 차이가 크지 않습니다</strong>. 카야노 33은 공식 스택이 40mm로 발표됐지만 RunRepeat 실측은 힐 36.8mm로, 아드레날린(36.1mm)과 사실상 같습니다. 쿠션 점수도 둘 다 8/10이죠. 다만 카야노는 FF BLAST MAX 덕에 <strong>착지 순간의 부드러움</strong>이, 아드레날린은 DNA Loft v3의 <strong>일관된 단단함</strong>이 특징이라 성격이 다릅니다.</p>
+<p><strong>드롭은 카야노가 8mm, 아드레날린이 10mm</strong>입니다. 2mm 차이지만, 드롭이 낮은 카야노가 <strong>아킬레스건 부담이 약간 덜해</strong> 아킬레스 이력이 있는 러너에게 유리합니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염 가이드</a> 참고). 무게는 295g vs 298g으로 사실상 동일합니다.</p>
 
 <h2>내구성·가격 — 아드레날린의 영역</h2>
 <p>순수 가성비는 <strong>아드레날린이 앞섭니다.</strong> 가격이 <strong>189,000원으로 10,000원 저렴</strong>하고, 내구성이 <strong>800km로 안정화 카테고리 최상위</strong>라 km당 약 236원 — 매일 신어도 부담이 적습니다. 카야노 33은 199,000원에 내구 약 650km로 km당 약 306원입니다. 정가 차이는 1만원으로 크지 않지만, 내구성 차이 때문에 장기 비용에서 벌어집니다. <strong>"매일 신는 안정화 데일리 한 켤레"를 오래 쓰려면 아드레날린</strong>이 경제적입니다.</p>
@@ -4019,7 +4019,7 @@ export const posts_2026_07: BlogPost[] = [
       },
       {
         question: '안정화인데 쿠션이 푹신한 걸 원해요. 뭐가 나을까요?',
-        answer: '착지 순간의 부드러움은 카야노 33이 앞섭니다. FF BLAST MAX 듀얼 폼이라 발을 딛는 느낌이 더 무르죠. 다만 랩 실측을 보면 격차가 크지 않습니다 — 힐 스택은 카야노 36.8mm 대 아드레날린 37mm로 사실상 동일하고, 쿠션 점수도 둘 다 8/10입니다. 카야노 33은 페이스를 올리면 미드솔이 빠르게 눌려 단단해지는 성향이라, 이지런·워킹 위주면 카야노 33, 일관된 지지감과 템포까지 아우르려면 아드레날린을 고르세요.',
+        answer: '착지 순간의 부드러움은 카야노 33이 앞섭니다. FF BLAST MAX 듀얼 폼이라 발을 딛는 느낌이 더 무르죠. 다만 랩 실측을 보면 격차가 크지 않습니다 — 힐 스택은 카야노 36.8mm 대 아드레날린 36.1mm로 사실상 동일하고, 쿠션 점수도 둘 다 8/10입니다. 카야노 33은 페이스를 올리면 미드솔이 빠르게 눌려 단단해지는 성향이라, 이지런·워킹 위주면 카야노 33, 일관된 지지감과 템포까지 아우르려면 아드레날린을 고르세요.',
       },
       {
         question: '가격과 내구성만 보면 뭐가 이득인가요?',
@@ -4491,7 +4491,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000</td><td>281g</td><td>올라운더 스테디셀러</td><td>가성비·범용성 최강, 어디에나</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000</td><td>232g</td><td>경량 데일리</td><td>232g 가벼운 몸놀림·템포까지</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></td><td>199,000</td><td>281g</td><td>맥스쿠션 입구</td><td>무릎 보호·장거리, 푹신함 최상</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>189,000</td><td>300g</td><td>안정화</td><td>평발·과회내 지지, 대표 안정화</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>189,000</td><td>295g</td><td>안정화</td><td>평발·과회내 지지, 대표 안정화</td></tr>
   </tbody>
 </table>
 </div>
@@ -4699,7 +4699,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'bondi-9-vs-glycerin-max-2-cushion-2026',
     slug: 'bondi-9-vs-glycerin-max-2-cushion-2026',
     title: '호카 본디 9 vs 브룩스 글리세린 맥스 2 | 맥스쿠션 데일리 대결 — 무릎 지키는 최고 쿠션, 뭘 살까',
-    description: '무릎·관절 보호가 필요한 러너를 위한 두 맥시멀 쿠션화 정면 비교. 본디 9(229,000원·303g·힐 41mm·초광폭 123mm 안정 플랫폼)와 글리세린 맥스 2(249,000원·312g·힐 47mm·강화 로커)를 가격·스택·드롭·발볼·평발·내구성으로 하나씩 뜯어봤습니다. 평발이면 본디, 최대 스택과 굴러가는 로커를 원하면 글리세린 맥스 — 둘 다 무릎 보호는 최상급입니다. 발볼 넓은 한국 러너의 사이즈 함정(본디는 와이드, 글리맥스는 반 사이즈 업)까지 정리했습니다.',
+    description: '무릎·관절 보호가 필요한 러너를 위한 두 맥시멀 쿠션화 정면 비교. 본디 9(229,000원·303g·힐 41mm·초광폭 123mm 안정 플랫폼)와 글리세린 맥스 2(249,000원·318g·힐 47mm·강화 로커)를 가격·스택·드롭·발볼·평발·내구성으로 하나씩 뜯어봤습니다. 평발이면 본디, 최대 스택과 굴러가는 로커를 원하면 글리세린 맥스 — 둘 다 무릎 보호는 최상급입니다. 발볼 넓은 한국 러너의 사이즈 함정(본디는 와이드, 글리맥스는 반 사이즈 업)까지 정리했습니다.',
     thumbnail: '/images/blog/bondi-9-vs-glycerin-max-2-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-06',
@@ -4711,7 +4711,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>둘 다 무릎·관절 보호는 최상급(injuryPrevention 전 항목 excellent)</strong>입니다. 갈리는 건 성격이에요 — 본디 9는 <strong>초광폭 123mm 베이스로 "안정감"</strong>, 글리세린 맥스 2는 <strong>47mm 초고 스택으로 "절대 쿠션량"</strong></li>
-    <li><strong>평발·안정 우선이면 본디 9(229,000원)</strong>, <strong>최대 스택과 굴러가는 로커·낮은 드롭이면 글리세린 맥스 2(249,000원)</strong>. 본디가 2만 원 싸고 9g 가볍고 평발 호환이 한 등급 위입니다</li>
+    <li><strong>평발·안정 우선이면 본디 9(229,000원)</strong>, <strong>최대 스택과 굴러가는 로커·낮은 드롭이면 글리세린 맥스 2(249,000원)</strong>. 본디가 2만 원 싸고 15g 가볍고 평발 호환이 한 등급 위입니다</li>
     <li><strong>발볼 넓은 한국 러너는 사이즈 함정 주의</strong> — 본디 9는 토박스가 좁은 편(72.5mm)이라 <strong>와이드 필수</strong>, 글리세린 맥스 2는 스너그 피팅이라 <strong>반 사이즈 업</strong> 권장</li>
   </ul>
 </div>
@@ -4730,7 +4730,7 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>호카 본디 9</th><th>브룩스 글리세린 맥스 2</th></tr></thead>
   <tbody>
     <tr><td>가격(정가)</td><td><strong>229,000원</strong></td><td>249,000원 (+2만)</td></tr>
-    <tr><td>무게(US M9)</td><td><strong>303g</strong></td><td>312g (+9g)</td></tr>
+    <tr><td>무게(US M9)</td><td><strong>303g</strong></td><td>318g (+15g)</td></tr>
     <tr><td>힐 / 포어풋 스택</td><td>41 / 32mm</td><td><strong>47 / 41mm</strong></td></tr>
     <tr><td>드롭</td><td>9mm</td><td><strong>6mm</strong></td></tr>
     <tr><td>미드솔</td><td>Supercritical EVA</td><td>DNA Tuned (질소 주입)</td></tr>
@@ -4753,7 +4753,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>브룩스 글리세린 맥스 2 — 가장 높이 띄우는 로커형 맥시멀</h2>
 <p><a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>의 무기는 <strong>47mm 힐 / 41mm 포어풋이라는, 두 신발 중 가장 두꺼운 스택</strong>입니다. 발밑에 폼을 최대로 쌓아 충격흡수 절대량이 크고, v2에서 <strong>로커(굴림) 지오메트리가 강화</strong>돼 체중이 앞으로 매끄럽게 넘어갑니다. 드롭이 6mm로 낮아 미드풋 착지 성향 러너에게 자연스럽고, 내구성도 600km로 조금 더 깁니다.</p>
-<p>다만 정직하게 짚을 점이 있습니다. <strong>DNA Tuned 폼이 v1보다 단단해져 "구름 위" 같던 부드러움이 줄었다</strong>는 평가가 실사용 리뷰에서 나옵니다(반발 4로 가장 낮음). 312g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. <strong>피팅이 스너그(꽉 끼는 편)</strong>라 발볼 넓은 러너는 와이드 + 반 사이즈 업을 함께 고려해야 합니다.</p>
+<p>다만 정직하게 짚을 점이 있습니다. <strong>DNA Tuned 폼이 v1보다 단단해져 "구름 위" 같던 부드러움이 줄었다</strong>는 평가가 실사용 리뷰에서 나옵니다(반발 4로 가장 낮음). 318g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. <strong>피팅이 스너그(꽉 끼는 편)</strong>라 발볼 넓은 러너는 반 사이즈 업을 고려해야 합니다(한국 공식몰은 와이드 미판매).</p>
 <p><strong>✅ 이런 분께</strong> — 발밑을 최대한 높이 띄운 맥시멀 스택을 원하는 러너, 로커로 굴러가는 주행감과 낮은 드롭(6mm)을 선호하는 러너, 내구성을 조금 더 챙기고 싶은 러너. 단, "폭신 말랑"보다 "단단하고 안정적으로 굴러가는" 쪽에 가깝다는 걸 감안하세요.</p>
 
 <h2>내게 맞는 건? — 상황별 정리</h2>
@@ -4761,7 +4761,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>평발이다 / 발이 안쪽으로 무너진다</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>. 초광폭 베이스 + 평발 호환 excellent가 결정적입니다</li>
   <li><strong>발밑을 최대한 높이 띄우고 싶다 / 로커로 굴러가는 느낌 선호</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>. 47mm 스택과 강화 로커가 답입니다</li>
   <li><strong>낮은 드롭(6mm) 미드풋 착지가 편하다</strong> → 글리세린 맥스 2 / <strong>힐 착지가 편하고 드롭 여유(9mm)를 원한다</strong> → 본디 9</li>
-  <li><strong>발볼이 넓다</strong> → 둘 다 와이드가 있지만, 본디는 와이드 필수, 글리맥스는 와이드 + 반 사이즈 업까지 고려</li>
+  <li><strong>발볼이 넓다</strong> → 본디는 와이드 필수, 글리맥스는 한국 공식몰에 와이드가 없어 반 사이즈 업까지 고려</li>
   <li><strong>예산·무게를 아끼고 싶다</strong> → 본디 9(2만 원 싸고 9g 가벼움) / <strong>내구성을 조금 더 원한다</strong> → 글리세린 맥스 2(600km)</li>
   <li><strong>더 저렴한 맥스쿠션 대안</strong>이 궁금하면 <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>도 후보입니다. 본디와의 직접 비교는 <a href="/blog/hoka-bondi-9-vs-asics-nimbus-28">본디 9 vs 님버스 28</a>에서 다뤘어요</li>
 </ul>
@@ -4774,7 +4774,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 어느 쪽이 편한가요?</p>
-    <p class="faq-a">A. 기본 폭은 둘 다 넉넉하지 않습니다. 본디 9는 토박스가 72.5mm로 좁은 편이라 <strong>와이드 옵션이 사실상 필수</strong>이고, 글리세린 맥스 2는 v2에서 피팅이 스너그해져 <strong>반 사이즈 업(+와이드)</strong>을 권장합니다. 발볼이 특히 넓다면 실측 후 매장 착용을 추천합니다.</p>
+    <p class="faq-a">A. 기본 폭은 둘 다 넉넉하지 않습니다. 본디 9는 토박스가 72.5mm로 좁은 편이라 <strong>와이드 옵션이 사실상 필수</strong>이고, 글리세린 맥스 2는 v2에서 피팅이 스너그해져 <strong>반 사이즈 업</strong>을 권장합니다(한국 공식몰은 와이드 미판매). 발볼이 특히 넓다면 실측 후 매장 착용을 추천합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 이 신발들로 빠르게 달려도 되나요?</p>

@@ -3694,7 +3694,7 @@ export const posts_2026_09: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a> <span style="color:#0284c7;">안정화</span></td><td>159,000원</td><td>286g</td><td><strong>약 177원</strong></td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a></td><td>169,000원</td><td>289g</td><td>약 211원</td><td>좁음(70.6mm)</td><td>있음</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-29">미즈노 웨이브 라이더 29</a></td><td>169,000원</td><td>258g</td><td>약 211원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/adidas-supernova-rise-3">아디다스 슈퍼노바 라이즈 3</a></td><td>159,000원</td><td>264g</td><td>약 245원</td><td>표준</td><td>없음</td></tr>
     <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>149,000원</td><td>257g</td><td>약 248원</td><td>넓음</td><td>있음</td></tr>
@@ -3748,7 +3748,7 @@ export const posts_2026_09: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a></td></tr>
-    <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
+    <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/brooks-ghost-18">고스트 18</a>, <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
     <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
   </tbody>
@@ -6204,7 +6204,7 @@ export const posts_2026_09: BlogPost[] = [
 
 <h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
 <ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스 실측 70.6mm로 이 사이트 기준(68~75mm) 표준 구간이지만, RunRepeat 자체 평균(73.2mm) 대비로는 좁은 편입니다. 17세대와 마찬가지로 발볼이 넓다면 <strong>와이드(2E) 옵션</strong>을 선택하는 게 안전합니다(brooksrunning.co.kr에 남녀 화이트·와이드 코코넛 등재)</li>
+  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스 실측 70.6mm로 RunRepeat 평균(73.2mm)보다 2.6mm 좁은 편입니다. 17세대와 마찬가지로 발볼이 넓다면 <strong>와이드(2E) 옵션</strong>을 선택하는 게 안전합니다(brooksrunning.co.kr에 남녀 화이트·와이드 코코넛 등재)</li>
   <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎 모두 good입니다. 신 스플린트는 fair로 다소 아쉽습니다</li>
   <li><strong>"과내전이 있는데 신어도 되나요?"</strong> — 힐 카운터 경직도가 5/5로 뒤꿈치 착지에는 안정적이지만, 중등도 이상 과내전이 있다면 브룩스 자체적으로도 안정화 라인인 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>를 권장합니다</li>
   <li><strong>"초보도 신을 수 있나요?"</strong> — 브룩스의 대표 입문화답게 착지 충격에 관대하고 실패 확률이 낮은 선택입니다</li>
@@ -6244,7 +6244,7 @@ export const posts_2026_09: BlogPost[] = [
       {
         question: '와이드 옵션이 있나요?',
         answer:
-          '있습니다. brooksrunning.co.kr에 남성 화이트(Medium)와 남성 코코넛(Wide) 색상이 등재돼 있습니다(2026-09-10 확인). 토박스가 실측 70.6mm로 표준~좁은 편이라 발볼이 넓다면 와이드를 권장합니다.',
+          '있습니다. brooksrunning.co.kr에 남성 화이트(Medium)와 남성 코코넛(Wide) 색상이 등재돼 있습니다(2026-09-10 확인). 토박스가 실측 70.6mm로 좁은 편이라 발볼이 넓다면 와이드를 권장합니다.',
       },
       {
         question: '과내전이 있는데 신어도 되나요?',

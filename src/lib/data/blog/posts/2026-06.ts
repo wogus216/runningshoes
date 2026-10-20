@@ -3393,15 +3393,15 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-ghost-17"><strong>고스트 17</strong></a></td><td>전작 데일리</td><td>DNA Loft v3</td><td>16.9만</td><td>289g</td><td>공식몰 아울렛 재고 — 할인 시 가성비</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3"><strong>고스트 맥스 3</strong></a></td><td>전작 맥스 쿠션</td><td>DNA Loft v3</td><td>17.9만</td><td>303g</td><td>119mm 광폭, 공식몰 아울렛 재고</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-4"><strong>고스트 맥스 4</strong></a></td><td>맥스 쿠션 데일리</td><td>DNA Loft v3</td><td>18.9만</td><td>286g</td><td>현행 고스트 맥스, 힐 충격흡수 145 SA의 단단한 보호</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>300g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>295g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-22"><strong>글리세린 22</strong></a></td><td>프리미엄 쿠션</td><td>DNA Tuned</td><td>20.9만</td><td>293g</td><td>체중별 반응하는 고급 쿠션</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>전작 프리미엄 안정화</td><td>DNA Tuned + GuideRails</td><td>20.9만</td><td>305g</td><td>글리세린 쿠션 + 안정화</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-23"><strong>글리세린 GTS 23</strong></a></td><td>프리미엄 안정화(신)</td><td>DNA Tuned(질소 주입) + GuideRails</td><td>20.9만</td><td>306g</td><td>22와 같은 값·비슷한 무게, 남녀 와이드·미디엄 판매(랩 미게시)</td></tr>
     <tr><td><a href="/shoes/brooks-hyperion-max-3"><strong>하이페리온 맥스 3</strong></a></td><td>슈퍼트레이너</td><td>DNA Gold (PEBA) + Flash</td><td>21.9만</td><td>283g</td><td>PEBA 첫 진성 슈퍼트레이너</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-max"><strong>글리세린 맥스</strong></a></td><td>맥시멀 쿠션</td><td>DNA Tuned</td><td>23.9만</td><td>305g</td><td>42mm·148 SA 역대 최강 충격흡수</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>312g</td><td>47mm 극강 맥시멀</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>318g</td><td>47mm 극강 맥시멀</td></tr>
     <tr><td><a href="/shoes/brooks-hyperion-elite-5"><strong>하이페리온 엘리트 5</strong></a></td><td>전작 카본 레이싱</td><td>DNA Gold (PEBA) + 카본</td><td>29.9만</td><td>204g</td><td>76.9% 에너지, 슈퍼슈즈</td></tr>
-    <tr><td><a href="/shoes/brooks-hyperion-elite-6"><strong>하이페리온 엘리트 6</strong></a></td><td>카본 레이싱(신)</td><td>DNA Gold (PEBA) + 카본</td><td>31.9만</td><td>198g</td><td>드롭 7mm로 낮춘 6세대, 5보다 2만원 비쌈(랩 미게시)</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-6"><strong>하이페리온 엘리트 6</strong></a></td><td>카본 레이싱(신)</td><td>DNA Gold (PEBA) + 카본</td><td>31.9만</td><td>193g</td><td>공식 드롭 7mm(랩 실측 10.6mm), 5보다 2만원 비쌈</td></tr>
   </tbody>
 </table>
 
@@ -3444,9 +3444,9 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>넓음 (와이드 친화)</strong></td><td>글리세린 맥스(랩 본문 "feels roomy")</td></tr>
-    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 18(국내 2E) · 고스트 17 · 고스트 맥스 3(전작, 73.4mm) · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 글리세린 맥스 2 · 아드레날린 GTS · 글리세린 GTS</td></tr>
-    <tr><td><strong>표준</strong></td><td>하이페리온 맥스 3</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>하이페리온 엘리트 5(레이싱)</td></tr>
+    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 17 · 고스트 맥스 3(전작, 73.4mm) · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 아드레날린 GTS · 글리세린 GTS</td></tr>
+    <tr><td><strong>표준</strong></td><td>글리세린 맥스 2(73.4mm, 한국 와이드 미판매) · 하이페리온 맥스 3</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>고스트 18(70.6mm, 국내 와이드 2E 있음) · 하이페리온 엘리트 6(70.3mm, 레이싱) · 하이페리온 엘리트 5(레이싱)</td></tr>
   </tbody>
 </table>
 
@@ -6592,7 +6592,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'brooks-glycerin-max-1-vs-2-comparison',
     slug: 'brooks-glycerin-max-1-vs-2-comparison',
     title: '브룩스 글리세린 맥스 vs 글리세린 맥스 2 비교 | 42mm→47mm 스택 +1만원, "구름 푹신" vs "단단한 로커" — 무릎·평발 한국 러너는 어느 세대?',
-    description: '글리세린 맥스(239,000원·305g·42mm)와 맥스 2(249,000원·312g·47mm) 맥시멀 쿠션화 세대 비교. 스택 +5mm·로커 강화 대신 폼이 단단해지고 토박스가 좁아진 변화. 무릎 보호·평발·발볼·세일 타이밍까지 부상별 매트릭스로 정리.',
+    description: '글리세린 맥스(239,000원·305g·42mm)와 맥스 2(249,000원·318g·47mm) 맥시멀 쿠션화 세대 비교. 스택 +5mm·로커 강화 대신 폼이 단단해지고 토박스가 좁아진 변화. 무릎 보호·평발·발볼·세일 타이밍까지 부상별 매트릭스로 정리.',
     thumbnail: '/images/shoes/brooks/glycerinmax2/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6626,7 +6626,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong>카테고리</strong></td><td>쿠션화 (맥시멀)</td><td>쿠션화 (맥시멀)</td><td>동일</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>239,000원</td><td><strong>249,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>305g</td><td><strong>312g</strong></td><td>+7g (스택 증가분)</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>305g</td><td><strong>318g</strong></td><td>+13g (스택 증가분)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>42mm (랩 42.3)</td><td><strong>47mm</strong></td><td>+5mm</td></tr>
     <tr><td><strong>전족부 스택</strong></td><td>36mm (랩 35.7)</td><td><strong>41mm</strong></td><td>+5mm</td></tr>
     <tr><td><strong>드롭</strong></td><td>7mm (랩 6.6)</td><td>6mm</td><td>-1mm (사실상 동일)</td></tr>
@@ -6640,7 +6640,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>아웃솔</strong></td><td>러버 아웃솔</td><td>러버 아웃솔</td><td>동일</td></tr>
     <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td><strong>트리플 자카드 메쉬</strong> (스너그)</td><td>피팅 타이트 ↑</td></tr>
     <tr><td><strong>토박스</strong></td><td><strong>와이드 (74.3mm)</strong></td><td>표준 (반 사이즈 업 권장)</td><td>좁아짐 ⚠️</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>있음</td><td>있음</td><td>동일</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>있음</td><td>없음 (한국 공식몰 미디엄만)</td><td>맥스 2는 와이드 없음</td></tr>
     <tr><td><strong>평발 호환</strong></td><td>excellent</td><td>good</td><td>v1 우위</td></tr>
   </tbody>
 </table>
@@ -6683,7 +6683,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>로커(밑창 앞쪽 곡선)가 강화돼 47mm 고스택에도 발이 앞으로 자연스럽게 굴러갑니다. 어퍼가 트리플 자카드 메쉬로 발을 더 단단히 감싸 좌우 흔들림이 줄었어요. 고스택 맥시멀화의 고질병인 "흔들거림"을 잡은 건 분명한 개선입니다.</p>
 
 <h3>4. 토박스 wide→standard ⚠️ 발볼 넓은 한국 러너 주의</h3>
-<p>이게 한국 러너에게 가장 체감되는 변화일 수 있습니다. v1은 토박스 74.3mm <strong>와이드</strong>라 별도 와이드 모델 없이도 발볼 넓은 발이 편했는데, 맥스 2는 스너그 피팅으로 바뀌어 <strong>표준(standard)</strong>이 됐습니다. 와이드 버전에서도 핏이 꽉 맞아 반 사이즈 업을 권한다는 리뷰가 반복돼요. 발볼 넓다면 맥스 2는 반드시 시착하거나 와이드 옵션 + 반 사이즈 업을 고려하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
+<p>이게 한국 러너에게 가장 체감되는 변화일 수 있습니다. v1은 토박스 74.3mm <strong>와이드</strong>라 별도 와이드 모델 없이도 발볼 넓은 발이 편했는데, 맥스 2는 스너그 피팅으로 바뀌어 <strong>표준(standard)</strong>이 됐습니다. 와이드 버전에서도 핏이 꽉 맞아 반 사이즈 업을 권한다는 리뷰가 반복돼요. 발볼 넓다면 맥스 2는 한국 공식몰에 와이드가 없으니 반드시 시착하고 반 사이즈 업을 고려하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
 
 <h3>5. 내구성 700→600km ⚠️ km당 비용 상승</h3>
 <p>내구성이 100km 줄고 가격은 1만원 올라, km당 비용이 341원→415원으로 꽤 뜁니다. 가성비만 보면 v1이 분명 위. 맥스 2의 +1만원은 "더 높은 스택 + 더 안정적인 라이드"에 지불하는 값이라고 보면 됩니다.</p>
@@ -6703,7 +6703,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>최대 스택 = 최대 충격흡수가 목표</td><td><strong>맥스 2</strong></td><td>힐 47mm로 +5mm 더 높음</td></tr>
     <tr><td>무릎 부상 복귀 / 퇴행성 관절 초기</td><td>둘 다 excellent</td><td>kneeIssues 둘 다 최상, 발볼로 선택</td></tr>
     <tr><td>v1 사용 중 + 500km 이내 멀쩡</td><td><strong>v1 계속</strong></td><td>맥스 2 업그레이드 가치 미미, 토박스만 손해</td></tr>
-    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>312g·반응성 4~5, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
+    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>305~318g·반응성 4~5, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
   </tbody>
 </table>
 
@@ -6769,10 +6769,10 @@ export const posts_2026_06: BlogPost[] = [
 <p>v1이 500km 이내 멀쩡하다면 그냥 굴리세요. <strong>특히 발볼 넓거나 v1의 푹신함을 좋아했다면 맥스 2로 갈 이유가 거의 없습니다</strong> — 토박스는 좁아지고 폼은 단단해졌으니까요. "v1이 너무 물렁해서 흔들렸다"고 느꼈던 러너만 맥스 2의 안정적인 로커가 답입니다.</p>
 
 <h3>Q. 발볼 넓은데 맥스 2 괜찮나요?</h3>
-<p>주의가 필요합니다. 맥스 2는 v1의 와이드 토박스(74.3mm)에서 standard로 좁아졌고 스너그 피팅이라 <strong>리뷰마다 "반 사이즈 업"이 반복 권장</strong>됩니다. 발볼 넓다면 ① v1 와이드 토박스를 노리거나 ② 맥스 2 와이드 옵션 + 반 사이즈 업을 시착 후 결정하세요.</p>
+<p>주의가 필요합니다. 맥스 2는 v1의 와이드 토박스(74.3mm)에서 standard로 좁아졌고 스너그 피팅이라 <strong>리뷰마다 "반 사이즈 업"이 반복 권장</strong>됩니다. 발볼 넓다면 ① v1 와이드 토박스를 노리거나 ② 맥스 2는 한국 공식몰에 와이드가 없으니 반 사이즈 업을 시착 후 결정하세요.</p>
 
 <h3>Q. 둘 다 빠르게 달릴 수 있나요?</h3>
-<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g·반응성 5, 맥스 2 312g·반응성 4로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
+<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g·반응성 5, 맥스 2 318g·반응성 4로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
 
 <h3>Q. 무릎이 안 좋은데 어느 쪽이 더 좋나요?</h3>
 <p>둘 다 무릎 보호 excellent 등급이라 우열을 가리기 어렵습니다. 순수 충격흡수만 보면 47mm 맥스 2가 한 칸 위지만, <strong>실제 차이는 발볼·푹신함 취향에서 갈립니다</strong>. 발볼 넓고 부드러운 게 좋으면 v1, 흔들림 없는 안정적 착지가 좋으면 맥스 2. 무릎 부상 복귀라면 매장 시착으로 본인 발에 맞는 쪽을 고르세요.</p>
@@ -7408,7 +7408,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>199,000</td><td>지지력 최상위, 대신 반발은 평범</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>300g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>295g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
     <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>J-Frame</td><td>299g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 특화·4종 와이드</td></tr>

@@ -3159,7 +3159,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (260g, 199,000원)</strong> — 안정화 프리미엄. 860 v14보다 2만원 비싸지만 35g 가벼움. 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
-  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (303g, 199,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
+  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (295g, 199,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
   <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (270g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 25g 가벼움 + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
   <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (310g, 259,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
 </ul>
@@ -4777,7 +4777,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 세 세대 검증된 4D Guidance, 평발 1순위</li>
   <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
   <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 19만원대</li>
-  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (294g)</li>
+  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (295g)</li>
   <li><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> — 맥시멀 쿠션 + 안정화 결합</li>
 </ul>
 
@@ -8030,7 +8030,7 @@ export const posts_2026_05: BlogPost[] = [
   <div class="stat-card">
     <span class="stat-label">최강 쿠션</span>
     <span class="stat-value">Glycerin Max 2</span>
-    <span class="stat-sub">249,000원 / 312g</span>
+    <span class="stat-sub">249,000원 / 318g</span>
   </div>
   <div class="stat-card">
     <span class="stat-label">균형형 1위</span>
@@ -8057,9 +8057,9 @@ export const posts_2026_05: BlogPost[] = [
 
 <h3>2위. <a href="/shoes/brooks-glycerin-max-2">Brooks Glycerin Max 2</a> — 최대 쿠션 + 흔들림 방지</h3>
 
-<p><strong>가격 249,000원 · 무게 312g · 평점 4.0</strong></p>
+<p><strong>가격 249,000원 · 무게 318g · 평점 4.0</strong></p>
 
-<p>Glycerin 시리즈 최상위. DNA Tuned 폼(<strong>힐 12% 더 부드럽고 / 전족부 25% 더 반응적</strong>인 듀얼 셀 구조)이 과체중 러너의 두 가지 니즈를 동시에 만족시킵니다. 312g으로 무겁지만 그만큼 안정적이며, 베이스가 넓어 측면 흔들림이 거의 없습니다.</p>
+<p>Glycerin 시리즈 최상위. DNA Tuned 폼(<strong>힐 12% 더 부드럽고 / 전족부 25% 더 반응적</strong>인 듀얼 셀 구조)이 과체중 러너의 두 가지 니즈를 동시에 만족시킵니다. 318g으로 무겁지만 그만큼 안정적이며, 베이스가 넓어 측면 흔들림이 거의 없습니다.</p>
 
 <ul>
   <li><strong>적합:</strong> 체중 85kg+, 장거리(15km+) 추천, 발에 안정감을 원하는 러너</li>
@@ -8103,7 +8103,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <p><strong>가격 209,000원 · 무게 293g · 평점 5.0</strong></p>
 
-<p>Glycerin Max 2의 동생 모델. 같은 DNA Loft v3 폼을 사용하면서 4만원 저렴. 312g→293g으로 더 가볍고, 쿠션감은 90% 이상 유지됩니다. <strong>처음 과체중 러너용 신발을 사보는 러너</strong>에게 진입 부담이 가장 낮은 선택지.</p>
+<p>Glycerin Max 2의 동생 모델. 같은 DNA Loft v3 폼을 사용하면서 4만원 저렴. 318g→293g으로 더 가볍고, 쿠션감은 90% 이상 유지됩니다. <strong>처음 과체중 러너용 신발을 사보는 러너</strong>에게 진입 부담이 가장 낮은 선택지.</p>
 
 <ul>
   <li><strong>적합:</strong> 첫 쿠션화 입문, 체중 75~85kg, 주 3~4회 데일리</li>
@@ -8162,7 +8162,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>1</td><td><strong>Hoka Bondi 9</strong></td><td>229,000원</td><td>303g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
-    <tr><td>2</td><td><strong>Glycerin Max 2</strong></td><td>249,000원</td><td>312g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
+    <tr><td>2</td><td><strong>Glycerin Max 2</strong></td><td>249,000원</td><td>318g</td><td>43mm</td><td>쿠션화</td><td>없음</td></tr>
     <tr><td>3</td><td><strong>Nimbus 28</strong></td><td>199,000원</td><td>281g</td><td>43mm</td><td>쿠션화</td><td>2E</td></tr>
     <tr><td>4</td><td><strong>Kayano 32</strong></td><td>199,000원</td><td>300g</td><td>40mm</td><td>안정화</td><td>2E</td></tr>
     <tr><td>5</td><td><strong>NB 1080 v15</strong></td><td>209,000원</td><td>261g</td><td>40mm</td><td>쿠션화</td><td>2E·4E</td></tr>
