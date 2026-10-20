@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '3D Fit Print 상단',
-    width: '표준 (와이드 옵션 있음)',
+    width: '표준 (와이드 옵션 있음) — RunRepeat 랩 토박스 73.7mm(평균 73.2mm), 랩 본문 "a more accommodating 73.7 mm—right in the average range". 토박스 높이 23.6mm는 낮은 편("one of the most compact toeboxes")',
     durability: '800km',
     price: '₩209,000',
     costPerKm: '약 ₩261/km (800km 기준)',
