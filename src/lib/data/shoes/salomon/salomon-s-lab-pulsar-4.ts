@@ -16,9 +16,9 @@ export const shoe: Shoe = {
   category: '트레일',
   rating: 4.2,
   price: 340000,
-  description: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서. 247g 경량에 optiFOAM+ 듀얼레이어와 Matryx 어퍼·Active Chassis로, 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐습니다.',
+  description: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서. 247g 경량에 Energy Foam+·Energy Foam 듀얼레이어와 Matryx 어퍼·Active Chassis로, 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐습니다.',
   oneliner: '엘리트 기술 트레일 레이서 — 247g S/LAB',
-  editorComment: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서입니다. 247g 경량에 optiFOAM+(PEBA/EVA) + optiFOAM 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx(아라미드) 어퍼와 Active Chassis로 급경사 암반에서도 안정적인 제어를 보여줍니다(Road Trail Run 호평). 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 47~57%로 낮고, 초기 런에서 폼 청킹(내구성) 우려가 보고됐으며, 미드풋-토박스 경계 핀칭이 지적됩니다.\n\n사이즈·구매 가이드: 토박스 74mm로 전작(v3)보다 넓어져 표준 발볼에 맞습니다. 정가 340,000원(고가)에 내구성 350km 기준 km당 약 971원이며, 카본 플레이트는 없습니다(폼 추진). 더 저렴한 올라운드는 펄사, 카본 트레일 레이서는 호카 테크톤 X 3가 대안입니다.',
+  editorComment: '살로몬 S/LAB 라인의 엘리트 기술 트레일 레이서입니다. 247g 경량에 Energy Foam+(상층) + Energy Foam(하층) 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx(아라미드) 어퍼와 Active Chassis로 급경사 암반에서도 안정적인 제어를 보여줍니다(Road Trail Run 호평). 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 48~58%(RunRepeat 실측 힐 47.7%·앞발 57.6%)로 낮고, 초기 런에서 폼 청킹(내구성) 우려가 보고됐으며, 미드풋-토박스 경계 핀칭이 지적됩니다.\n\n사이즈·구매 가이드: 토박스 74mm로 전작(v3)보다 넓어져 표준 발볼에 맞습니다. 정가 340,000원(고가)에 내구성 350km 기준 km당 약 971원이며, 카본 플레이트는 없습니다(폼 추진). 더 저렴한 올라운드는 펄사, 카본 트레일 레이서는 호카 테크톤 X 3가 대안입니다.',
   tags: ['트레일', '레이싱', '엘리트', 'S/LAB', '경량'],
   specs: {
     weight: 247,
@@ -32,7 +32,7 @@ export const shoe: Shoe = {
     stackHeight: { heel: 33, forefoot: 26 },
     drop: 7,
     carbonPlate: false,
-    midsoleType: 'optiFOAM+ (PEBA/EVA) + optiFOAM 듀얼레이어',
+    midsoleType: 'Energy Foam+ + Energy Foam 듀얼레이어',
     optimalPace: '4:00-6:00 min/km (기술 트레일 레이싱)',
   },
   injuryPrevention: {
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['20~80km 기술 트레일 레이싱', 'VK·스카이러닝·급경사 산악', '경량 레이서를 원하는 엘리트 러너', '카본 없이 폼 추진을 선호하는 러너'],
     notRecommended: ['최고 에너지 리턴 기대 러너', '50마일+ 울트라 거리', '발볼 매우 넓은 러너', '진흙·루즈 소일 코스', '가성비 우선 러너(고가)'],
   },
-  features: ['optiFOAM+ PEBA 듀얼레이어', 'Matryx 아라미드 어퍼', 'Active Chassis 안정 구조', '247g 초경량', 'quickLACE + Contagrip(3mm 러그)'],
+  features: ['Energy Foam+ 듀얼레이어', 'Matryx 아라미드 어퍼', 'Active Chassis 안정 구조', '247g 초경량', 'quickLACE + Contagrip(3mm 러그)'],
   priceAnalysis: {
     msrp: 340000,
     streetPrice: 320000,
@@ -62,14 +62,14 @@ export const shoe: Shoe = {
     alternatives: ['hoka-tecton-x-3', 'salomon-pulsar'],
   },
   detailedSpecs: {
-    weight: '247g (US 9 기준)',
+    weight: '247g (RunRepeat 실측, 남성 US 9) · 한국 공식몰 표기 250g',
     stackHeight: '힐 32.6mm / 포어풋 25.5mm',
     drop: '7.1mm (실측)',
-    midsole: 'optiFOAM+ (PEBA/EVA 상층) + optiFOAM (EVA 하층)',
+    midsole: 'Energy Foam+(상층) + Energy Foam(하층) — 살로몬 공식 표기. RunRepeat는 Energy Foam을 EVA 계열로 설명하며 "no carbon plate" 확인',
     plate: '없음 (폼 추진, Active Chassis)',
     outsole: 'Contagrip + 3.0mm 러그',
     upper: 'Matryx 아라미드 파이버 + quickLACE',
-    width: '표준',
+    width: '표준 — RunRepeat 랩 토박스 74.0mm(트레일 평균 74.3mm, -0.3mm), 랩 본문 "a near-average width of 74.0 mm… for most runners, the Pulsar 4 should feel perfectly comfortable and accommodating". 가장 넓은 부분 94.9mm. 한국 공식몰 와이드 없음(2026-10-20 확인)',
     durability: '350km (초기 폼 청킹 우려 보고)',
     price: '₩340,000 (한국 공식, S/LAB 프리미엄)',
     costPerKm: '약 ₩971/km (350km 기준)',
@@ -80,7 +80,7 @@ export const shoe: Shoe = {
     {
       userType: '에디터 분석',
       rating: 83,
-      text: '빠르고 험한 기술 트레일을 위한 S/LAB 엘리트 레이서입니다. 247g 경량에 optiFOAM+ 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx 어퍼와 Active Chassis가 급경사 암반에서 발을 단단히 제어합니다(RTR 호평). 20~80km 기술 레이스·VK에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 47~57%로 낮고, 초기 폼 청킹 내구성 우려와 미드풋 핀칭이 단점입니다. 카본 없이 폼으로 달리는 엘리트 트레일 레이서를 원할 때 선택지입니다.',
+      text: '빠르고 험한 기술 트레일을 위한 S/LAB 엘리트 레이서입니다. 247g 경량에 Energy Foam+·Energy Foam 듀얼레이어로 쿠션과 반응성을 함께 잡았고, Matryx 어퍼와 Active Chassis가 급경사 암반에서 발을 단단히 제어합니다(RTR 호평). 20~80km 기술 레이스·VK에 특화됐죠. 다만 34만 원 레이싱화치고 에너지 리턴이 48~58%(RunRepeat 실측 힐 47.7%·앞발 57.6%)로 낮고, 초기 폼 청킹 내구성 우려와 미드풋 핀칭이 단점입니다. 카본 없이 폼으로 달리는 엘리트 트레일 레이서를 원할 때 선택지입니다.',
     },
     {
         userType: '예상 적합 — 기술 코스 트레일 레이스 전용',

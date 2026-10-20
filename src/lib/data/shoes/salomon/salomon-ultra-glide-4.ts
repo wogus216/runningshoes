@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   price: 230000,
   description: '50~100km 울트라 장거리에 특화된 살로몬의 맥스쿠션 트레일화. 41mm 스택의 OptiFoam과 RelieveSphere 충격분산으로 "바위 위가 평지보다 편하다"는 평을 받는 장거리 컴포트 슈즈입니다. 와이드 옵션도 있습니다.',
   oneliner: '맥스쿠션 울트라 — RelieveSphere 암반 컴포트',
-  editorComment: '"긴 거리를 푹신하게"를 원하는 울트라 러너용 맥스쿠션 트레일화입니다. 41mm 스택의 OptiFoam이 플러시한 쿠션을 주는데, RelieveSphere 기술 덕에 "바위 위가 평지보다 편하다"(Believe in the Run)는 평이 나올 만큼 암반 충격 분산이 뛰어납니다. 맥스쿠션치고 295g으로 가벼운 편이라 50~100km 울트라·하이볼륨 데일리·하이킹 겸용에 두루 맞죠. 다만 에너지 리턴이 47~51%로 동급 대비 낮아 빠른 페이스용은 아니고, 축열·수분 잔류로 더운 날엔 불리하며, 가파른 내리막 장시간엔 무릎 부담이 보고됩니다.\n\n사이즈·구매 가이드: 표준 버전은 전족부가 뾰족해(토박스 71.4mm) 발볼 넓은 한국 러너는 와이드 버전(한국 공식몰 판매)을 선택하세요. 정가 230,000원에 km당 약 511원이며, 같은 쿠션 울트라로는 호카 스피드고트 6, 빠른 울트라엔 아디다스 테렉스 아그라빅 스피드 울트라가 대안입니다.',
+  editorComment: '"긴 거리를 푹신하게"를 원하는 울트라 러너용 맥스쿠션 트레일화입니다. 41mm 스택의 OptiFoam이 플러시한 쿠션을 주는데, RelieveSphere 기술 덕에 "바위 위가 평지보다 편하다"(Believe in the Run)는 평이 나올 만큼 암반 충격 분산이 뛰어납니다. 맥스쿠션치고 295g으로 가벼운 편이라 50~100km 울트라·하이볼륨 데일리·하이킹 겸용에 두루 맞죠. 다만 에너지 리턴이 48~52%(RunRepeat 실측 힐 47.6%·앞발 51.6%)로 동급 대비 낮아 빠른 페이스용은 아니고, 축열·수분 잔류로 더운 날엔 불리하며, 가파른 내리막 장시간엔 무릎 부담이 보고됩니다.\n\n사이즈·구매 가이드: 표준 버전은 전족부가 뾰족해(토박스 71.4mm) 발볼 넓은 한국 러너는 와이드 버전(한국 공식몰 판매)을 선택하세요. 정가 230,000원에 km당 약 511원이며, 같은 쿠션 울트라로는 호카 스피드고트 6, 빠른 울트라엔 아디다스 테렉스 아그라빅 스피드 울트라가 대안입니다.',
   tags: ['트레일', '울트라', '맥스쿠션', '와이드', '장거리'],
   specs: {
     weight: 295,
@@ -62,14 +62,14 @@ export const shoe: Shoe = {
     alternatives: ['hoka-speedgoat-6', 'adidas-terrex-agravic-speed-ultra'],
   },
   detailedSpecs: {
-    weight: '295g (US 9 기준)',
+    weight: '295g (RunRepeat 실측, 남성 US 9) · 한국 공식몰 표기 285g',
     stackHeight: '힐 38.6mm / 포어풋 31.1mm',
     drop: '7.5mm (실측)',
     midsole: 'OptiFoam (Energy Foam) + RelieveSphere',
     plate: '없음 (RelieveSphere 충격분산 구조)',
     outsole: 'Contagrip + 3.9mm 러그',
     upper: '통기성 메시 + quickLACE',
-    width: '표준 + 와이드 옵션',
+    width: '좁음(표준 버전 기준) / 와이드 — RunRepeat 랩 토박스 71.4mm(트레일 평균 74.3mm, -2.9mm), 랩 본문 "At just 71.4 mm, the Ultra Glide 4 features an unmistakably pointy design"·"favors runners with narrow feet due to its sharply-tapered forefoot shape". 한국 공식몰 "울트라 글라이드 4 와이드"(L49216200, 230,000원) 판매(2026-10-20 확인)',
     durability: '450km (아웃솔 우수 0.7mm, 힐 패딩 취약 2/5)',
     price: '₩230,000 (한국 공식)',
     costPerKm: '약 ₩511/km (450km 기준)',
@@ -80,7 +80,7 @@ export const shoe: Shoe = {
     {
       userType: '에디터 분석',
       rating: 85,
-      text: '울트라 장거리에서 "푹신하게 굴러가는" 컴포트가 강점인 맥스쿠션 트레일화입니다. OptiFoam 41mm 스택에 RelieveSphere 충격분산이 더해져 암반에서도 발바닥 부담이 적고("바위 위가 평지보다 편하다"는 BITR 평), 295g으로 맥스쿠션치고 가벼워 50~100km에서 다리 피로를 덜어줍니다. 다만 에너지 리턴 47~51%로 빠른 페이스엔 둔하고, 축열·수분 잔류로 더운 날엔 불리하며, 표준 버전은 전족부가 좁아 발볼 넓은 러너는 와이드가 필수입니다.',
+      text: '울트라 장거리에서 "푹신하게 굴러가는" 컴포트가 강점인 맥스쿠션 트레일화입니다. OptiFoam 41mm 스택에 RelieveSphere 충격분산이 더해져 암반에서도 발바닥 부담이 적고("바위 위가 평지보다 편하다"는 BITR 평), 295g으로 맥스쿠션치고 가벼워 50~100km에서 다리 피로를 덜어줍니다. 다만 에너지 리턴 48~52%(실측)로 빠른 페이스엔 둔하고, 축열·수분 잔류로 더운 날엔 불리하며, 표준 버전은 전족부가 좁아 발볼 넓은 러너는 와이드가 필수입니다.',
     },
     {
         userType: '예상 적합 — 50km급 울트라 트레일',
