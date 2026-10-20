@@ -68,7 +68,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: 'Vibram Megagrip + 3.3mm 러그',
     upper: '엔지니어드 메시(통기성 3/5)',
-    width: '표준(토박스 73.4mm) — 미국은 2E 와이드 있음, 한국 판매 미확인',
+    width: '표준 — 토박스 73.4mm(RunRepeat 실측, 엄지 부위; 같은 랩 트레일 평균 74.4mm보다 1.0mm 좁음), 최대폭 94.7mm. 랩 본문 "noticeably pointy shape… a below-average result for the toebox, but still not narrow per se". 한국 공식몰(nbkorea.com, 2026-10-20) 남성 D / 여성 B — 국내 와이드 없음(해외는 2E·4E)',
     durability: '600km (아웃솔 마모 0.9mm 우수, 힐 패딩 5/5)',
     price: '₩189,000 (한국 공식)',
     costPerKm: '약 ₩315/km (600km 기준)',
