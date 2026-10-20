@@ -6632,7 +6632,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>7mm (랩 6.6)</td><td>6mm</td><td>-1mm (사실상 동일)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>DNA Tuned</td><td>DNA Tuned (질소 주입, 단단해짐)</td><td>경도 ↑ ("재미" ↓)</td></tr>
     <tr><td><strong>지오메트리</strong></td><td>기본 로커</td><td><strong>강화된 로커</strong></td><td>전환 매끄러움 ↑</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td><strong>10/10</strong></td><td>8/10</td><td>-2 (폼 경화)</td></tr>
+    <tr><td><strong>쿠션 점수</strong></td><td><strong>9/10</strong></td><td>8/10</td><td>-1 (폼 경화)</td></tr>
     <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>6/10</td><td>동일</td></tr>
     <tr><td><strong>안정성 점수</strong></td><td>6/10</td><td><strong>7/10</strong></td><td>+1 (로커+스너그 핏)</td></tr>
     <tr><td><strong>내구성</strong></td><td>700km</td><td><strong>600km</strong></td><td>-100km</td></tr>
@@ -6677,7 +6677,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>전족부도 36→41mm로 같이 +5mm. 본디 9(약 40mm)보다도 높은 <strong>현존 최상위급 스택</strong>입니다. 체중 있는 러너, 퇴행성 관절 초기, 무릎 부상 복귀 러너에게 착지 충격 흡수는 v1보다 한 단계 더 위. 다만 스택이 높아질수록 빠른 페이스는 더 답답해지니 "오로지 보호 우선"일 때 의미 있는 변화예요.</p>
 
 <h3>2. DNA Tuned 폼 경화 ⚠️ "구름 푹신함" 후퇴</h3>
-<p>맥스 2의 가장 논쟁적인 변화. v1을 아꼈던 러너들이 "v2가 단단해져서 구름 위를 걷는 느낌이 사라졌다"고 입을 모읍니다. 쿠션 점수도 10→8로 두 칸 내려갔죠(반응성 점수는 6으로 동일). <strong>리커버리 슈즈의 핵심인 "푹신함"을 최우선으로 본다면 이건 다운그레이드</strong>로 느껴질 수 있습니다. 반대로 "v1은 너무 물렁해서 불안했다"면 환영할 변화.</p>
+<p>맥스 2의 가장 논쟁적인 변화. v1을 아꼈던 러너들이 "v2가 단단해져서 구름 위를 걷는 느낌이 사라졌다"고 입을 모읍니다. 쿠션 점수도 9→8로 한 칸 내려갔죠(반응성 점수는 6으로 동일). <strong>리커버리 슈즈의 핵심인 "푹신함"을 최우선으로 본다면 이건 다운그레이드</strong>로 느껴질 수 있습니다. 반대로 "v1은 너무 물렁해서 불안했다"면 환영할 변화.</p>
 
 <h3>3. 강화된 로커 + 스너그 피팅 ✅ 안정성 6→7</h3>
 <p>로커(밑창 앞쪽 곡선)가 강화돼 47mm 고스택에도 발이 앞으로 자연스럽게 굴러갑니다. 어퍼가 트리플 자카드 메쉬로 발을 더 단단히 감싸 좌우 흔들림이 줄었어요. 고스택 맥시멀화의 고질병인 "흔들거림"을 잡은 건 분명한 개선입니다.</p>
@@ -7254,8 +7254,8 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>255g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>278g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td>9</td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>8</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
     <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
   </tbody>
@@ -7275,7 +7275,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>목적별 베스트</h2>
 <ul>
   <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
-  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
+  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9)·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
   <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
