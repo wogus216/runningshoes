@@ -5950,7 +5950,7 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td>무게</td><td>201g</td><td><strong>191g</strong>(공식) / 200g(RTR 실측)</td><td>공식 -10g, 실측은 거의 동일</td></tr>
     <tr><td>스택(힐/전족)</td><td>38.1 / 34.9mm(랩 실측)</td><td><strong>40 / 35mm</strong>(RTR 측정)</td><td>힐 소폭 증가</td></tr>
-    <tr><td>드롭</td><td>3.2mm(랩 실측) / 6mm(공식)</td><td><strong>5mm</strong>(공식)</td><td>측정 기준 상이</td></tr>
+    <tr><td>드롭</td><td>3.2mm(랩 실측) / 4mm(공식)</td><td><strong>5mm</strong>(공식)</td><td>측정 기준 상이</td></tr>
     <tr><td>미드솔</td><td>Helion HF</td><td><strong>Helion HF (폼 약 15% 경량화)</strong></td><td>같은 폼, 밀도 개선</td></tr>
     <tr><td>쿠션 구조</td><td>CloudTec</td><td><strong>CloudTec Sphere(신규)</strong></td><td>구름 포드 재설계</td></tr>
     <tr><td>플레이트</td><td>카본 Speedboard</td><td>카본 Speedboard(강성↑·경량화)</td><td>추진력 강화</td></tr>
@@ -5958,7 +5958,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>한국가</td><td>₩329,000</td><td><strong>₩329,000</strong></td><td>동결</td></tr>
   </tbody>
 </table>
-<p><small>※ 스트라이크 2는 아직 RunRepeat 랩(절단 테스트) 미게시 상태로, 위 수치는 On 공식 발표와 Road Trail Run 리뷰 측정치입니다. <strong>스트라이크 1의 값은 RunRepeat 랩 실측이라 측정 주체가 달라 세대 간 직접 비교에는 주의가 필요합니다</strong>(랩은 공식 스펙보다 드롭이 낮게 나오는 경향이 있습니다 — 1도 공식 6mm였지만 랩 실측은 3.2mm였습니다). 에너지 리턴 등 정량 수치는 랩 게시 후 갱신합니다.</small></p>
+<p><small>※ 스트라이크 2는 아직 RunRepeat 랩(절단 테스트) 미게시 상태로, 위 수치는 On 공식 발표와 Road Trail Run 리뷰 측정치입니다. <strong>스트라이크 1의 값은 RunRepeat 랩 실측이라 측정 주체가 달라 세대 간 직접 비교에는 주의가 필요합니다</strong>(랩은 공식 스펙보다 드롭이 낮게 나오는 경향이 있습니다 — 1도 공식 4mm였지만 랩 실측은 3.2mm였습니다). 에너지 리턴 등 정량 수치는 랩 게시 후 갱신합니다.</small></p>
 
 <h2>핵심은 CloudTec Sphere</h2>
 <p>이번 세대의 진짜 이야깃거리는 <strong>CloudTec Sphere</strong>입니다. On의 정체성인 바닥 구름 포드(CloudTec)를 <strong>구(球)형 구조로 재설계</strong>해, 착지 시 충격을 더 균일하게 눌러주고 반발 방향을 앞으로 모으는 것이 목표라고 On은 설명합니다. 여기에 미드솔 폼(Helion HF)을 약 15% 가볍게 만들어, 스택은 유지하면서 무게만 덜어낸 것이 이번 경량화의 핵심입니다.</p>
@@ -5975,7 +5975,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>한국 러너가 주목할 점</h2>
 <ul>
   <li><strong>가격</strong> — 국내 정가 <strong>329,000원</strong>으로 전작과 같습니다. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(33만 9천원)보다 1만원가량 저렴한 포지션을 그대로 유지합니다. 글로벌 정가는 전작 $280에서 $250로 내렸는데 국내가는 그대로라, 환율·유통 구조를 감안해도 국내 러너가 인하 혜택을 보지는 못했습니다. 라이트스프레이 클라우드붐 스트라이크 2는 <strong>419,000원</strong>으로 국내 정식 유통됩니다.</li>
-  <li><strong>발볼 — 이번 세대에서 가장 반가운 변화</strong>. 1은 표준~좁은 편에 <strong>와이드 옵션이 없어</strong> 발볼 넓은 러너에게 빡빡했는데, 출시 직후 나온 Road Trail Run 리뷰는 2의 토박스를 <strong>"roomy(넉넉하다)"</strong>고 평가하며 <strong>"레이싱화 평균보다 패딩이 넉넉해 발볼 넓은 러너에게 적합"</strong>이라고 명시했습니다. 발볼 때문에 On 레이서를 포기했던 한국 러너라면 다시 신어볼 이유가 생긴 셈입니다. 단 같은 리뷰가 <strong>미드풋 고정을 위해 끈을 꽤 조여야 한다</strong>고 지적했으니, 발등이 낮다면 착화 확인은 필요합니다. 발볼이 넓다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 참고하세요.</li>
+  <li><strong>발볼 — 이번 세대에서 가장 반가운 변화</strong>. 1은 토박스 73.4mm(RunRepeat 실측, 랩 평균 73.2mm)로 표준이지만 <strong>와이드 옵션이 없어</strong> 발볼 넓은 러너에게는 부담이었는데, 출시 직후 나온 Road Trail Run 리뷰는 2의 토박스를 <strong>"roomy(넉넉하다)"</strong>고 평가하며 <strong>"레이싱화 평균보다 패딩이 넉넉해 발볼 넓은 러너에게 적합"</strong>이라고 명시했습니다. 발볼 때문에 On 레이서를 포기했던 한국 러너라면 다시 신어볼 이유가 생긴 셈입니다. 단 같은 리뷰가 <strong>미드풋 고정을 위해 끈을 꽤 조여야 한다</strong>고 지적했으니, 발등이 낮다면 착화 확인은 필요합니다. 발볼이 넓다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 참고하세요.</li>
   <li><strong>착지 유형</strong> — 클라우드붐 스트라이크는 로우드롭 설계라 <strong>미드풋·앞발 착지 러너에 최적</strong>입니다. 힐(뒤꿈치) 착지가 강한 러너는 아킬레스·종아리 부담이 커질 수 있어, 슈퍼슈즈 입문이라면 오히려 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>처럼 힐 착지 관용도가 높은 모델이 무난합니다.</li>
   <li><strong>용도</strong> — 300km 안팎 내구성의 <strong>레이스·포인트 훈련 전용</strong> 슈퍼슈즈입니다. 데일리 조깅까지 한 켤레로 굴리려는 목적이면 맞지 않습니다.</li>
 </ul>

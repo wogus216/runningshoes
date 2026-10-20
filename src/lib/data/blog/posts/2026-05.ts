@@ -3238,7 +3238,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'on-cloudmonster-2-vs-3-comparison',
     slug: 'on-cloudmonster-2-vs-3-comparison',
     title: 'On 클라우드몬스터 2 vs 3 비교 | "푹신함" vs "굴러가는 느낌" — 토박스 좁은 2 살까, 핏 넓어진 3 살까',
-    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 확장 + 힐 스택 -2.9mm 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
+    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 축소(RunRepeat 실측 74.5→71.0mm) + 힐 스택 -2.9mm 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
     thumbnail: '/images/blog/on-cloudmonster-2-vs-3-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
@@ -3249,9 +3249,9 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"좁은 토박스 + 푹신함"의 2</strong>에서 <strong>"넓어진 핏 + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
-    <li>3의 진짜 변화 3가지: <strong>앞발 핏 확장 (2의 약점 보강)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 스택 -2.9mm 약간 단단해진 라이드</strong></li>
-    <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 좁아서 불편했다면 3가 답</li>
+    <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"표준 토박스(실측 74.5mm) + 푹신함"의 2</strong>에서 <strong>"더 좁아진 토박스(실측 71.0mm) + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
+    <li>3의 진짜 변화 3가지: <strong>앞발 공간 축소 (토박스 실측 74.5→71.0mm)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 스택 -2.9mm 약간 단단해진 라이드</strong></li>
+    <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 여유가 우선이면 실측상 더 넓은 2가 유리(3는 71.0mm로 평균 이하)</li>
   </ul>
 </div>
 
@@ -3279,9 +3279,9 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>6.6mm</td><td>6mm</td><td>-0.6mm</td></tr>
     <tr><td><strong>미드솔</strong></td><td>Helion HF + CloudTec 더블 레이어</td><td>Helion HF + CloudTec</td><td>포뮬레이션 미세 조정</td></tr>
     <tr><td><strong>록커</strong></td><td>보통</td><td><strong>강한 록커</strong></td><td>굴러가는 느낌 ↑</td></tr>
-    <tr><td><strong>앞발 핏</strong></td><td>표준 (좁다는 평 많음)</td><td><strong>넓어진 핏</strong></td><td>전작 약점 보강</td></tr>
-    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>137 (RunRepeat)</td><td>비슷 (Lab 미공개)</td><td>맥스 쿠션 영역 유지</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>56.5%</td><td>약간 감소 추정</td><td>반발보다 안정 지향</td></tr>
+    <tr><td><strong>앞발 핏</strong></td><td>토박스 74.5mm (실측)</td><td><strong>토박스 71.0mm (실측)</strong></td><td>-3.5mm 좁아짐</td></tr>
+    <tr><td><strong>힐 SA (충격 흡수)</strong></td><td>137 (RunRepeat)</td><td>123 (RunRepeat)</td><td>-14 SA</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>56.5%</td><td>58.7%</td><td>+2.2%p</td></tr>
     <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>없음</td><td>양쪽 모두 ❌</td></tr>
     <tr><td><strong>내구성</strong></td><td>500km</td><td>500km</td><td>동일</td></tr>
     <tr><td><strong>km당 비용</strong></td><td>약 ₩438</td><td>약 ₩458</td><td>+₩20 살짝 악화</td></tr>
@@ -3291,11 +3291,11 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>3의 진짜 변화 3가지</h2>
 
-<h3>1. 앞발 핏 확장 — 2의 가장 큰 약점 보강</h3>
+<h3>1. 앞발 핏 — 넓어지지 않고 오히려 좁아졌다</h3>
 
 <p>클라우드몬스터 2에서 가장 자주 지적된 약점이 "<strong>토박스가 좁다</strong>"였습니다. 표준 폭(D)인데도 앞볼 여유가 부족하다는 지적이 해외 리뷰에서 반복됐고, 와이드 옵션도 없어 발볼 4E급은 선택 자체가 어려웠습니다.</p>
 
-<p>3는 <strong>앞발 공간을 의도적으로 넓혔습니다</strong>. On이 공식적으로 "easier-fitting toe box" 표현을 사용했습니다. 다만 <strong>와이드 옵션은 여전히 없음</strong> — 발볼 4E급은 메가 와이드 필요라면 여전히 부적합.</p>
+<p>그런데 RunRepeat 실측 토박스는 2의 74.5mm에서 3는 <strong>71.0mm로 오히려 좁아졌습니다</strong>(랩 평균 73.2mm보다 2.2mm 좁음, 랩 평가 "below the average"). 한국 공식몰은 레귤러만 판매해 <strong>와이드 옵션도 없음</strong> — 2의 앞볼이 답답했다면 3로는 해결되지 않고, 발볼 4E급은 여전히 부적합.</p>
 
 <h3>2. 강한 록커 — "푹신함"에서 "굴러가는 느낌"으로</h3>
 
@@ -3335,7 +3335,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>무릎 약함 + 푹신한 쿠션 우선</td><td><strong>2 이월 18~20만원</strong></td><td>137 SA 충격흡수 + 더블 CloudTec 푹신함</td></tr>
-    <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 정가 22만원</strong></td><td>앞발 핏 확장이 결정적</td></tr>
+    <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 비추</strong></td><td>3 토박스는 실측 71.0mm로 2(74.5mm)보다 좁음 — 와이드 옵션 있는 대안 검토</td></tr>
     <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>37.9mm 스택의 푹신함이 후반부 결정적</td></tr>
     <tr><td>데일리 easy run (5~10km)</td><td>3</td><td>강한 록커가 자연스러운 페이스 유지</td></tr>
     <tr><td>발볼 표준 + 가성비</td><td>2 블프 14~17만원</td><td>km당 ₩438 최저 가격대 진입</td></tr>
@@ -3357,10 +3357,10 @@ export const posts_2026_05: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
-<p>2가 500km 안 신었다면 그냥 2 굴리세요. 2의 푹신함에 만족했다면 3는 미묘하게 단단해진 라이드라 만족도가 약간 떨어질 수 있습니다. 반대로 <strong>"2 토박스가 좁아서 발가락 압박 있었다"</strong>면 3가 답. <strong>"좀 더 굴러가는 느낌이 필요하다"</strong> 싶어도 3.</p>
+<p>2가 500km 안 신었다면 그냥 2 굴리세요. 2의 푹신함에 만족했다면 3는 미묘하게 단단해진 라이드라 만족도가 약간 떨어질 수 있습니다. 반대로 <strong>"좀 더 굴러가는 느낌이 필요하다"</strong> 싶다면 3. 단 <strong>"2 토박스가 좁아서 발가락 압박 있었다"</strong>면 3는 답이 아닙니다 — 3의 토박스는 실측 71.0mm로 2(74.5mm)보다 좁습니다.</p>
 
 <h3>Q. On 클라우드몬스터가 처음인데 2와 3 중 뭐가 좋나요?</h3>
-<p>발볼 표준이면 <strong>2 이월 18~20만원</strong>이 가성비 최강. 137 SA 충격흡수와 푹신한 CloudTec 착지감은 On의 본질을 잘 보여주고, 4만원 절약. 발볼이 표준보다 약간 넓다면 <strong>3 정가</strong>. 매장 착화로 양쪽 비교가 가장 정확합니다.</p>
+<p>발볼 표준이면 <strong>2 이월 18~20만원</strong>이 가성비 최강. 137 SA 충격흡수와 푹신한 CloudTec 착지감은 On의 본질을 잘 보여주고, 4만원 절약. 발볼이 표준보다 약간 넓다면 토박스 실측이 더 넓은 <strong>2(74.5mm)</strong>가 3(71.0mm)보다 유리. 매장 착화로 양쪽 비교가 가장 정확합니다.</p>
 
 <h3>Q. 풀코스 가능한가요?</h3>
 <p>2는 무겁지만 137 SA 충격흡수가 풀코스 30~35km 이후 무릎 보호에 유리. 다만 <strong>292~295g 무게</strong>로 빠른 페이스(Sub-3:30 이하)는 부담. Sub-4 ~ Sub-5 완주 목표 + 무릎 안전 우선이라면 두 모델 모두 OK. 페이스 욕심 있다면 <a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a> 또는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 분리.</p>
@@ -3369,16 +3369,16 @@ export const posts_2026_05: BlogPost[] = [
 <p><strong>둘 다 비추</strong>. RunRepeat 통기성 2/5로 7~8월 한강 러닝에는 발이 답답할 수 있습니다. 여름 전용으론 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이나 <a href="/shoes/new-balance-1080-v15">1080 v15</a> 같은 통기성 좋은 모델 추천. 봄·가을·겨울이 클라우드몬스터 시즌입니다.</p>
 
 <h3>Q. 발볼 넓은데 클라우드몬스터 살 수 있나요?</h3>
-<p>3가 2보다 핏이 넓어졌지만 <strong>와이드 옵션은 양쪽 모두 없음</strong>. 발볼 standard~약간 넓음까지는 3로 커버 가능, 4E급이면 비추. 4E라면 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v15(4E 옵션)</a>가 사실상 유일한 맥스 쿠션 대안. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드 →</a></p>
+<p>실측 토박스는 오히려 3(71.0mm)가 2(74.5mm)보다 좁고 <strong>와이드 옵션은 양쪽 모두 없음</strong>. 발볼 standard~약간 넓음까지는 2가 그나마 낫고, 4E급이면 비추. 4E라면 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v15(4E 옵션)</a>가 사실상 유일한 맥스 쿠션 대안. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 러너 가이드 →</a></p>
 
 <h2>결론 — 내 추천</h2>
 
 <div class="callout success">
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
-    <p class="callout-title">푹신함·가성비 vs 록커·넓은 핏 — 본인 우선순위로 명확히 갈리는 선택</p>
+    <p class="callout-title">푹신함·가성비 vs 록커 전환감 — 본인 우선순위로 명확히 갈리는 선택</p>
     <p><strong>무릎 약함 + 푹신한 쿠션 + 가성비 우선</strong>이라면 <a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a> 이월 18~20만원. 137 SA 충격흡수와 더블 CloudTec 푹신함은 On 맥스 쿠션의 본질이고, 3보다 4만원 절약. 블프(11월)에 14~17만원까지 갈 가능성 있지만 인기 사이즈 빠짐 주의.</p>
-    <p><strong>토박스 넓은 핏 + 굴러가는 페이스 유지</strong>가 우선이면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정가 22만원. 앞발 공간이 명확히 넓어졌고 강한 록커가 자연스러운 페이스 유지를 도와줍니다. 데일리 easy run에 가장 자연스러운 라이드.</p>
+    <p><strong>굴러가는 페이스 유지</strong>가 우선이면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a> 정가 22만원. 토박스는 실측 71.0mm로 2(74.5mm)보다 좁아졌으니 발볼 여유는 기대하지 말고, 강한 록커가 자연스러운 페이스 유지를 도와줍니다. 데일리 easy run에 가장 자연스러운 라이드.</p>
     <p><strong>발볼 4E급 또는 여름 전용 한국 러너</strong>는 둘 다 부적합. 4E는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션), 여름은 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>이 더 적합한 선택입니다.</p>
   </div>
 </div>

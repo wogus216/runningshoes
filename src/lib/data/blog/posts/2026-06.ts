@@ -2999,7 +2999,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: 'CloudTec(클라우드텍)이 뭔가요?', answer: '온의 정체성인 밑창 기술입니다. 바닥에 구멍 뚫린 "구름(Cloud)" 포드가 줄지어 있어, 착지할 때 눌리며 충격을 흡수하고 발을 굴려줍니다. 이 독특한 착지감이 온의 시그니처예요. 호불호가 갈리지만 한 번 적응하면 특유의 굴러가는 느낌을 좋아하는 러너가 많습니다.' },
       { question: '클라우드몬스터 하이퍼랑 라이트스프레이는 뭐가 다른가요?', answer: '둘 다 클라우드몬스터의 상위 버전입니다. 하이퍼는 Pebax(PEBA) 폼을 넣어 가볍고 반발이 좋은 무플레이트 슈퍼트레이너(RunRepeat US 9 실측 258~264g), 라이트스프레이는 거기에 로봇이 분사해 만든 초경량 어퍼를 더해 205g까지 줄인 최상위 버전입니다. 가격은 하이퍼 25.9만, 라이트스프레이 31.9만입니다.' },
       { question: '온에도 안정화 러닝화가 있나요?', answer: '클라우드러너 3(19.9만)와 여기에 Helion HF 폼을 더해 쿠션을 올린 클라우드러너 3 맥스(21.9만)가 안정화로 분류됩니다. 다만 아식스 카야노 같은 강한 교정 방식이 아니라, 힐 가이던스로 뒤꿈치를 안정적으로 잡아주는 가벼운 지지에 가깝습니다. 러닝과 워킹 겸용으로 좋지만, 심한 평발·과내전이라면 카야노·아드레날린 같은 전문 안정화를 함께 보세요.' },
-      { question: '온은 발볼 넓은 한국 러너에게 맞나요?', answer: '주의가 필요합니다. 온은 토박스가 좁은 편이고 와이드 옵션을 거의 제공하지 않습니다. 3세대(클라우드몬스터 3 등)에서 핏이 다소 넓어졌지만, 발볼이 많이 넓다면 반 치수 크게 신거나 토박스가 넉넉한 아식스·뉴발란스를 함께 고려하세요.' },
+      { question: '온은 발볼 넓은 한국 러너에게 맞나요?', answer: '주의가 필요합니다. 온은 토박스가 좁은 편이고 와이드 옵션을 거의 제공하지 않습니다. 3세대 클라우드몬스터 3는 RunRepeat 실측 토박스가 71.0mm로 전작(74.5mm)보다 오히려 좁아졌으니, 발볼이 많이 넓다면 반 치수 크게 신거나 토박스가 넉넉한 아식스·뉴발란스를 함께 고려하세요.' },
     ],
     content: `
 <div class="tldr">
@@ -3070,12 +3070,12 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/on-cloudrunner-2"><strong>클라우드러너 2</strong></a></td><td>입문 데일리</td><td>Helion + CloudTec</td><td>18.9만</td><td>275g</td><td>힐 카운터 최강 안정 (단종)</td></tr>
     <tr><td><a href="/shoes/on-cloudsurfer-2"><strong>클라우드서퍼 2</strong></a></td><td>입문 쿠션</td><td>Helion HF + CloudTec Phase</td><td>19.9만</td><td>254g</td><td>세련된 전환, On 입문 첫 선택</td></tr>
-    <tr><td><a href="/shoes/on-cloudrunner-3"><strong>클라우드러너 3</strong></a></td><td>안정화</td><td>Helion + CloudTec</td><td>19.9만</td><td>317g</td><td>힐 가이던스, 러닝+워킹 겸용</td></tr>
+    <tr><td><a href="/shoes/on-cloudrunner-3"><strong>클라우드러너 3</strong></a></td><td>안정화</td><td>Helion + CloudTec</td><td>19.9만</td><td>298g</td><td>힐 가이던스, 러닝+워킹 겸용</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-2"><strong>클라우드몬스터 2</strong></a></td><td>전작 맥시멀 쿠션</td><td>Helion HF + CloudTec</td><td>21.9만</td><td>292g</td><td>더블 CloudTec 독특한 착지감</td></tr>
     <tr><td><a href="/shoes/on-cloudsurfer-max"><strong>클라우드서퍼 맥스</strong></a></td><td>맥시멀 쿠션</td><td>Helion + CloudTec Phase</td><td>21.9만</td><td>292g</td><td>안정적 CloudTec, 미드풋 친화</td></tr>
-    <tr><td><a href="/shoes/on-cloudflow-5"><strong>클라우드플로우 5</strong></a></td><td>경량 스피드</td><td>Helion + Speedboard</td><td>21.9만</td><td>278g</td><td>Speedboard 스피드 훈련 전용</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5"><strong>클라우드플로우 5</strong></a></td><td>경량 스피드</td><td>Helion + Speedboard</td><td>21.9만</td><td>271g</td><td>Speedboard 스피드 훈련 전용</td></tr>
     <tr><td><a href="/shoes/on-cloudrunner-3-max"><strong>클라우드러너 3 맥스</strong></a></td><td>쿠션 안정화</td><td>Helion HF + Helion</td><td>21.9만</td><td>330g</td><td>러너 3의 지지 구조에 HF 폼으로 쿠션 강화</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3"><strong>클라우드몬스터 3</strong></a></td><td>맥시멀 쿠션 신상</td><td>Helion HF + CloudTec</td><td>22.9만</td><td>295g</td><td>넓어진 핏·강한 록커, easy run</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3"><strong>클라우드몬스터 3</strong></a></td><td>맥시멀 쿠션 신상</td><td>Helion HF + CloudTec</td><td>22.9만</td><td>295g</td><td>강한 록커, easy run (토박스 71.0mm로 좁아짐)</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-hyper"><strong>클라우드몬스터 하이퍼</strong></a></td><td>전작 슈퍼트레이너</td><td>Helion HF (Pebax)</td><td>25.9만</td><td>258g</td><td>몬스터 2에서 34g 뺀 경량판</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper"><strong>클라우드몬스터 3 하이퍼</strong></a></td><td>슈퍼트레이너 신상</td><td>Helion HF + Helion</td><td>25.9만</td><td>264g</td><td>무플레이트, 장거리·템포 균형</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray"><strong>몬스터 3 하이퍼 라이트스프레이</strong></a></td><td>초경량 슈퍼트레이너</td><td>Helion HF + Helion 이중밀도</td><td>31.9만</td><td>205g</td><td>로봇이 만든 어퍼, 205g 초경량</td></tr>
@@ -3090,7 +3090,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>🟢 첫 온·부드러운 쿠션</strong> → <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>. CloudTec Phase의 세련된 전환감, 입문 첫 선택. <a href="/blog/on-cloudsurfer-2-review-2026">클라우드서퍼 2 리뷰</a> 참고.</li>
-  <li><strong>☁️ 맥시멀 쿠션·회복런</strong> → <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>. 베스트셀러, 넓어진 핏. <a href="/blog/on-cloudmonster-3-review-2026">몬스터 3 리뷰</a>·<a href="/blog/on-cloudmonster-2-vs-3-comparison">몬스터 2 vs 3</a>에서 차이를 확인하세요.</li>
+  <li><strong>☁️ 맥시멀 쿠션·회복런</strong> → <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>. 베스트셀러, 강한 록커(토박스는 실측 71.0mm로 좁은 편). <a href="/blog/on-cloudmonster-3-review-2026">몬스터 3 리뷰</a>·<a href="/blog/on-cloudmonster-2-vs-3-comparison">몬스터 2 vs 3</a>에서 차이를 확인하세요.</li>
   <li><strong>🦶 안정·워킹 겸용</strong> → <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>. 힐 가이던스 안정화(강한 교정은 아님). <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3 리뷰</a>. 쿠션까지 원하면 <a href="/shoes/on-cloudrunner-3-max">클라우드러너 3 맥스</a>(21.9만) — <a href="/blog/on-cloudrunner-3-max-review">3 맥스 후기</a>에서 차이를 봅니다. 다른 브랜드 안정화는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단</a>에.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>. 무플레이트 슈퍼트레이너. <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼 리뷰</a> 참고.</li>
   <li><strong>🪶 가벼운 게 최우선</strong> → <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이</a>(205g). 로봇 어퍼의 최상위. <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 리뷰</a>에.</li>
@@ -3106,8 +3106,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>성격</th><th>무게</th><th>가격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a></td><td>전작 맥시멀(토박스 좁음)</td><td>292g</td><td>21.9만</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>신형, 넓어진 핏·강한 록커</td><td>295g</td><td>22.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a></td><td>전작 맥시멀(토박스 74.5mm 표준)</td><td>292g</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>신형, 강한 록커(토박스 71.0mm로 좁아짐)</td><td>295g</td><td>22.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a></td><td>전작 PEBA 경량 슈퍼트레이너</td><td>258g</td><td>25.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>신형 무플레이트 슈퍼트레이너</td><td>264g</td><td>25.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray">3 하이퍼 라이트스프레이</a></td><td>로봇 어퍼 초경량 최상위</td><td>205g</td><td>31.9만</td></tr>
@@ -3118,11 +3118,11 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>6. 발볼 — 온은 좁은 편, 한국 러너 주의</h2>
 
-<p>온의 약점은 <strong>좁은 토박스</strong>입니다. 와이드 옵션도 거의 없어 발볼 넓은 한국 러너는 주의해야 해요. 3세대에서 핏이 다소 넓어졌지만 여전히 넉넉하다고 보긴 어렵습니다.</p>
+<p>온의 약점은 <strong>좁은 토박스</strong>입니다. 와이드 옵션도 거의 없어 발볼 넓은 한국 러너는 주의해야 해요. 3세대 클라우드몬스터 3는 토박스가 오히려 좁아졌고(실측 74.5→71.0mm), 모델별 편차도 큽니다.</p>
 
 <ul>
-  <li><strong>그나마 넓어진 쪽</strong>: 클라우드몬스터 3(넓어진 핏), 클라우드서퍼 계열.</li>
-  <li><strong>좁은 편(주의)</strong>: 클라우드몬스터 2, 레이싱·하이퍼 라인. 특히 라이트스프레이 클라우드붐 스트라이크 2는 토박스 69.0mm에 끈이 없는 일체형 어퍼라 핏을 조절할 수 없습니다.</li>
+  <li><strong>그나마 넓은 쪽</strong>: 클라우드플로우 5(토박스 77.2mm 실측, 국내는 여성 모델만), 클라우드몬스터 2(74.5mm). 클라우드서퍼 2는 73.5mm로 평균 수준.</li>
+  <li><strong>좁은 편(주의)</strong>: 클라우드몬스터 3·클라우드러너 3(각 71.0mm), 클라우드서퍼 맥스(71.4mm). 특히 라이트스프레이 클라우드붐 스트라이크 2는 토박스 69.0mm에 끈이 없는 일체형 어퍼라 핏을 조절할 수 없습니다.</li>
   <li><strong>와이드 없음</strong>: 새로 나온 클라우드러너 3 맥스도 국내 와이드 옵션이 없습니다.</li>
 </ul>
 
@@ -8341,7 +8341,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>구매</strong></td><td>중고·병행·재고만</td><td>한국 공식 판매 중</td></tr>
-    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>약 300g대</td></tr>
+    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>298g (실측)</td></tr>
     <tr><td><strong>토박스</strong></td><td>72.4mm (더 넓음)</td><td>71.0mm</td></tr>
     <tr><td><strong>스택·안정성</strong></td><td>기본</td><td>스택↑·힐 클립 개선</td></tr>
   </tbody>
@@ -8408,7 +8408,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드러너 3는 <strong>힐 가이던스(힐 클립)로 후족부를 잡아주는 "가벼운 안정화"</strong> — 카야노·아드레날린 같은 본격 교정형이 아니라 <strong>경미한 과내전</strong>용입니다</li>
-    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(약 300g대) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
+    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(실측 298g) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
     <li>한국 공식엔 <strong>와이드가 없고</strong>(미국엔 있음) 빠른 훈련엔 부적합 — <strong>편안한 이지런·워킹 겸용 안정화</strong>를 원하는 러너에게 맞습니다</li>
   </ul>
 </div>
@@ -8422,7 +8422,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>클라우드러너 3, 어떤 신발인가</h2>
-<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g대 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
+<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g(실측 298g) 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
 
 <h2>'안정화'의 진실 — 얼마나 잡아주나</h2>
 <p>가장 중요한 포인트입니다. 클라우드러너 3의 안정화는 <strong>"경미한 수준(mild-to-moderate)"</strong>입니다.</p>
@@ -8445,7 +8445,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>강점만큼 단점도 분명해 평가가 갈립니다.</p>
 <ul>
   <li><strong>반발이 약합니다</strong> — Helion 폼의 에너지 리턴이 53%로 낮아, Believe in the Run은 <strong>"벽돌 같은 느낌"</strong>이라며 D티어를 줬습니다. 톡 쏘는 추진력은 없습니다</li>
-  <li><strong>무겁습니다</strong> — 약 300g대로, 빠른 페이스·인터벌엔 둔합니다</li>
+  <li><strong>무겁습니다</strong> — 약 300g(실측 298g)으로, 빠른 페이스·인터벌엔 둔합니다</li>
   <li><strong>통기성 제한</strong> — 한여름엔 더울 수 있습니다</li>
 </ul>
 <p>즉 RunRepeat·BGL은 "편안하고 안정적"이라 호평(90점), BITR은 "반발 없고 애매하다"고 혹평 — <strong>무엇을 기대하느냐</strong>에 따라 갈리는 신발입니다.</p>
@@ -8457,7 +8457,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th></th><th>클라우드러너 2</th><th>클라우드러너 3 (이 글)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>무게</strong></td><td>약 275g</td><td>약 300g대 (무거워짐)</td></tr>
+    <tr><td><strong>무게</strong></td><td>약 275g</td><td>298g (실측, 무거워짐)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>33.6mm</td><td>36.8mm (쿠션↑)</td></tr>
     <tr><td><strong>안정성·어퍼</strong></td><td>기본</td><td>힐 클립·어퍼 개선</td></tr>
     <tr><td><strong>반발</strong></td><td>57%</td><td>53% (소폭↓)</td></tr>
@@ -8470,7 +8470,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">한국 러너가 사기 전 체크</p>
     <ul>
-      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71mm 표준이고 어퍼 볼륨은 넉넉한 편이라 보통 발은 무난하나, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
+      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71.0mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁아지는 형태라, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
       <li><strong>빠른 훈련엔 부적합</strong> — 반발이 약하고 무거워 템포·인터벌용은 아닙니다</li>
       <li><strong>안정화 기대치</strong> — 심한 과내전·평발이면 지지가 부족할 수 있어 카야노 계열이 안전합니다</li>
     </ul>
@@ -8498,7 +8498,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>네, 그게 이 신발의 강점입니다. 안정적이고 어퍼가 편해 <strong>출퇴근 워킹 + 이지런</strong> 겸용에 잘 맞습니다. 다만 빠른 러닝엔 둔합니다.</p>
 
 <h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스는 71mm 표준이지만 어퍼 볼륨이 넉넉해 보통~약간 넓은 발은 무난합니다. 단 <strong>한국 공식 와이드가 없어</strong> 발볼이 많이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
+<p>전체 폭은 평균 수준이지만 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 앞쪽이 좁아지는 형태입니다. <strong>한국 공식 와이드도 없어</strong> 발볼이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
 
 <h3>Q. 입문용으로 사도 되나요?</h3>
 <p>안정적이고 내구성이 좋아 무난하지만, 반발이 약해 "달리는 재미"는 덜합니다. 안정감·편안함을 우선한다면 좋은 선택입니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고하세요.</p>
@@ -8621,7 +8621,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'on-cloudsurfer-max-review-2026',
     slug: 'on-cloudsurfer-max-review-2026',
     title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 2만원 차이',
-    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 3만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
+    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 2만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
     thumbnail: '/images/blog/on-cloudsurfer-max-review-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
@@ -8633,7 +8633,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드서퍼 맥스는 이름과 달리 <strong>폭신한 맥스쿠션이 아니라 "단단하고 안정적인" 데일리화</strong> — 에너지 리턴이 48%로 역대 최저권이라 반발감을 기대하면 실망합니다</li>
-    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 3만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
+    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 2만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
     <li>그럼에도 <strong>넓은 플랫폼의 안정성·접지력·평발 지지력</strong>은 분명한 강점. "단단하고 안정적인 회복런·일상 겸용"을 원하는 러너에겐 맞습니다</li>
   </ul>
 </div>
@@ -8673,7 +8673,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>무게</strong></td><td>292g</td><td>254g (Max가 38g 무거움)</td></tr>
   </tbody>
 </table>
-<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 3만 원 비쌉니다.</strong> 전문 리뷰어들이 "가격 프리미엄을 정당화하기 어렵다"고 입을 모으는 이유죠. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
+<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 2만 원 비쌉니다.</strong> 전문 리뷰어들이 "가격 프리미엄을 정당화하기 어렵다"고 입을 모으는 이유죠. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
@@ -8682,7 +8682,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>레이싱 루프 결함</strong> — 끈을 잡아주는 패브릭 루프가 미끄러운 끈을 못 잡아 <strong>주행 중 풀린다</strong>는 지적이 많습니다. 끈도 과도하게 길어 걸릴 수 있습니다</li>
       <li><strong>통기성 부족</strong> — 어퍼가 좋아 보여도 실제 환기는 약해, 한여름 한강 러닝엔 더울 수 있습니다</li>
-      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm로 표준 하단. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
+      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁은 편. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
       <li><strong>가격</strong> — 21만 9천원은 단단한 데일리화로는 프리미엄. 가성비는 약합니다</li>
     </ul>
   </div>
@@ -8704,7 +8704,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>맞는 사람</strong>: "단단하고 안정적인" 회복런·일상 겸용 데일리를 원하고, 온 디자인을 좋아하며, 평발 지지가 필요한 러너</li>
       <li><strong>맞지 않는 사람</strong>: 폭신한 맥스쿠션을 기대하는 러너, 빠른 반발을 원하는 러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
-      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(3만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
+      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(2만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
     </ul>
   </div>
 </div>
@@ -8714,16 +8714,16 @@ export const posts_2026_06: BlogPost[] = [
 <p>SA 141 충격흡수로 <strong>무릎 보호엔 충분</strong>합니다. 단 "폭신하게 꺼지는" 쿠션이 아니라 "단단하게 받쳐주는" 보호라는 점을 기대치에 반영하세요.</p>
 
 <h3>Q. 그냥 클라우드서퍼 2 사는 게 낫나요?</h3>
-<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 3만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
+<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 2만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
 
 <h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스가 71.4mm로 <strong>표준 하단</strong>이라 좁은 편이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
+<p>토박스가 71.4mm로 <strong>랩 평균(73.2mm)보다 좁은 편</strong>이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
 
 <h3>Q. 러닝 입문용으로 사도 되나요?</h3>
 <p>안정적이라 회복·가벼운 조깅엔 무난하지만, 21만 9천원 가격과 "Max 기대치"를 생각하면 입문용으로 최선은 아닙니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보고 결정하세요.</p>
 
 <h2>마무리</h2>
-<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>3만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
+<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>2만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
 `,
@@ -8732,7 +8732,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'on-cloudmonster-3-review-2026',
     slug: 'on-cloudmonster-3-review-2026',
     title: '회복런엔 이만한 게 없다 — On 클라우드몬스터 3 리뷰 | 넓어진 핏·강해진 록커의 데일리 쿠션화, 하이퍼와 뭐가 다른가',
-    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 3세대는 핏이 넓어져 한국 러너에게 한결 편해졌죠. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
+    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 다만 3세대 토박스는 71.0mm(RunRepeat 실측)로 전작(74.5mm)보다 좁아졌습니다. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
     thumbnail: '/images/blog/on-cloudmonster-3-review-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
@@ -8744,7 +8744,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드몬스터 3는 푹신한 <strong>Helion 단일 폼 + 강한 록커</strong>로 "굴러가는 느낌"을 살린 <strong>데일리 쿠션화</strong> — 빠른 훈련보다 <strong>easy run·회복런·입문</strong>에 맞습니다</li>
-    <li>3세대의 핵심 변화는 <strong>넓어진 핏</strong> — 토박스가 여유로워져 발볼 있는 한국 러너에게 한결 편해졌습니다</li>
+    <li>3세대 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작 클라우드몬스터 2(74.5mm)보다 좁아져, 발볼 있는 한국 러너는 착화 확인이 필요합니다</li>
     <li>단, <strong>약 295g으로 무거운 편</strong>이고 어퍼 내구성·와이드 부재가 약점. 빠른 훈련을 원하면 슈퍼트레이너인 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>가 맞습니다</li>
   </ul>
 </div>
@@ -8753,7 +8753,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">☁️</span>
   <div class="callout-body">
     <p class="callout-title">'몬스터'라는 이름값</p>
-    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지하면서 <strong>핏을 넓혀</strong> 더 많은 발에 맞게 다듬었습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
+    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지했지만, 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작보다 좁아졌습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
   </div>
 </div>
 
@@ -8793,7 +8793,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>무겁습니다</strong> — 약 295g으로 동급 데일리화 중 무거운 편. 빠른 페이스엔 둔하게 느껴집니다</li>
       <li><strong>어퍼 내구성 주의</strong> — 랩 테스트에서 토박스 내구성이 낮게 평가됐습니다. 거친 사용엔 마모가 빠를 수 있어요</li>
-      <li><strong>와이드 옵션이 없습니다</strong> — 3세대로 핏이 넓어졌지만 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
+      <li><strong>와이드 옵션이 없습니다</strong> — 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 평균보다 좁고 한국 공식몰엔 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
       <li><strong>가격</strong> — 22만 9천원은 데일리화로는 프리미엄. 가성비 데일리라면 다른 선택지도 많습니다</li>
     </ul>
   </div>
@@ -8837,7 +8837,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>용도가 다릅니다. <strong>데일리·회복</strong>이 목적이면 일반 3, <strong>빠른 장거리 훈련</strong>까지 원하면 하이퍼입니다. 단순 상위호환이 아니라 성격이 다른 신발이에요.</p>
 
 <h2>마무리</h2>
-<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 3세대로 핏까지 넓어져 한국 러너에게 더 편해졌고요. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
+<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 다만 토박스는 71.0mm(RunRepeat 실측)로 전작보다 좁아져, 발볼 넓은 러너는 착화 확인이 필요합니다. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat 랩 데이터, 전문 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
 `,
@@ -10367,7 +10367,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-kinvara-16">사우코니 킨바라 16</a></td><td>5/5</td><td>207g</td><td>15.9만</td><td>207g 경량. 여름 스피드 훈련용 1순위</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>최상</td><td>232g</td><td>18.5만</td><td>경량 + 통기성 + 적당한 반발. 만능 여름 데일리</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a></td><td>5/5</td><td>241g</td><td>21.9만</td><td>나일론 플레이트 템포화. 여름 템포런도 쾌적</td></tr>
-    <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>4/5</td><td>278g</td><td>21.9만</td><td>탄탄한 반발 + 통기성. 도심 데일리·템포 겸용</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>2/5</td><td>271g</td><td>21.9만</td><td>탄탄한 반발. 통기성은 RunRepeat 2/5로 낮은 편 — 도심 데일리·템포 겸용</td></tr>
   </tbody>
 </table>
 
