@@ -1887,7 +1887,7 @@ export const posts_2026_07: BlogPost[] = [
       {
         question: '하이퍼부스트 엣지, 발볼 넓은 사람도 신을 수 있나요?',
         answer:
-          '권하기 어렵습니다. 토박스 폭 자체는 71.4mm로 표준이지만 높이가 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 아디다스 안에서는 토박스 74.5mm(RunRepeat 평균 73.2mm)에 한국 공식몰 와이드 버전도 있는 슈퍼노바 라이즈 3 쪽이 현실적입니다(2026년 10월 확인). 아디제로 Evo SL은 같은 시점 한국 공식몰에 와이드가 없습니다.',
+          '권하기 어렵습니다. 토박스 폭이 71.4mm로 평균(73.2mm)보다 좁은 편이고 높이도 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 아디다스 안에서는 토박스 74.5mm(RunRepeat 평균 73.2mm)에 한국 공식몰 와이드 버전도 있는 슈퍼노바 라이즈 3 쪽이 현실적입니다(2026년 10월 확인). 아디제로 Evo SL은 같은 시점 한국 공식몰에 와이드가 없습니다.',
       },
       {
         question: '힐 칼라가 쓸린다는 게 무슨 말인가요?',
@@ -1934,7 +1934,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>에너지 리턴</td><td>힐 <strong>73.6%</strong></td><td>카본 레이싱화에 근접</td></tr>
     <tr><td>미드솔 경도</td><td>32.5 AC</td><td>매우 부드러움</td></tr>
     <tr><td>강성(30° 굽힘)</td><td>19.8N</td><td>플레이트 없이 단단함</td></tr>
-    <tr><td>토박스</td><td>폭 71.4mm / <strong>높이 24.8mm</strong></td><td>폭은 표준, 높이가 낮음</td></tr>
+    <tr><td>토박스</td><td>폭 71.4mm / <strong>높이 24.8mm</strong></td><td>폭은 좁은 편, 높이도 낮음</td></tr>
     <tr><td>통기성</td><td><strong>62 BR</strong></td><td>평균 이하</td></tr>
     <tr><td>아웃솔 마모</td><td>0.6mm</td><td>매우 우수</td></tr>
     <tr><td>가격</td><td><strong>249,000원</strong></td><td>km당 약 356원(700km 기준)</td></tr>
@@ -1968,7 +1968,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>반대로 <strong>저온에서 폼이 굳는 비율이 9%</strong>에 그칩니다. 대부분의 러닝화가 영하에서 딱딱해져 쿠션이 사라지는 걸 감안하면 이건 실질적인 장점입니다. 한겨울 새벽에 자주 뛴다면 오히려 이 신발의 계절이 그때입니다.</p>
 
 <h3>발 — 폭보다 볼륨이 문제입니다</h3>
-<p>토박스 폭은 71.4mm로 <strong>표준 범위</strong>입니다. 문제는 <strong>높이가 24.8mm로 낮다</strong>는 것이라, 발볼보다 <strong>발등이 높은 발</strong>에서 압박이 먼저 옵니다. 게다가 <strong>와이드 옵션이 아예 없습니다</strong>(D 표준폭 단일). 발볼 기준으로 신발을 고르는 방법은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>에 정리해뒀습니다.</p>
+<p>토박스 폭은 71.4mm로 평균(73.2mm)보다 <strong>좁은 편</strong>(앞쪽이 좁아지는 테이퍼형)입니다. 게다가 <strong>높이가 24.8mm로 낮아</strong> 발볼뿐 아니라 <strong>발등이 높은 발</strong>에서도 압박이 옵니다. 게다가 <strong>와이드 옵션이 아예 없습니다</strong>(D 표준폭 단일). 발볼 기준으로 신발을 고르는 방법은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>에 정리해뒀습니다.</p>
 
 <h3>착지 유형 — 힐 스트라이커는 주의</h3>
 <p>Doctors of Running이 짚은 구조 문제입니다. 45mm급 맥시멀 신발은 뒤꿈치가 부드럽게 굴러가도록 <strong>힐 베벨(뒤꿈치 깎기)</strong>이 필요한데, 이 신발은 후방 플레어가 넓어 뒤꿈치가 예상보다 <strong>일찍 지면에 닿습니다</strong>. 리뷰어는 이 때문에 힐 착지 러너에게 <strong>정강이 부담이 늘 수 있다</strong>고 봤습니다. 인구의 75~85%가 힐 착지라는 점을 감안하면 가볍게 넘길 얘기가 아닙니다. 정강이 통증 이력이 있다면 <a href="/blog/shin-splints-running-shoes-2026">신 스플린트 가이드</a>를 함께 보세요.</p>
@@ -4464,7 +4464,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>이런 사람에게</th></tr></thead>
   <tbody>
-    <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>149,000</td><td>257g</td><td>입문·쿠션(와이드)</td><td>발볼 넓은 입문자, 무난한 데일리</td></tr>
+    <tr><td><a href="/shoes/adidas-supernova-rise-2">아디다스 슈퍼노바 라이즈 2</a></td><td>159,000</td><td>257g</td><td>입문·쿠션(와이드)</td><td>발볼 넓은 입문자, 무난한 데일리</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-sl2">아디다스 아디제로 SL2</a></td><td>149,000</td><td>245g</td><td>데일리·가벼운 스피드</td><td>조깅+가끔 템포까지 한 켤레로</td></tr>
     <tr><td><a href="/shoes/nike-rival-fly-4">나이키 라이벌 플라이 4</a></td><td>139,000</td><td>236g</td><td>경량 데일리</td><td>가볍게 뛰고 싶은 입문자(발볼 좁음)</td></tr>
     <tr><td><a href="/shoes/li-ning-red-hare-9-pro">리닝 레드헤어 9 프로</a></td><td>140,000</td><td>222g</td><td>가성비 데일리</td><td>가벼운 반발을 최저가로</td></tr>
@@ -5527,8 +5527,8 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>셋 다 "훈련+레이스 겸용" 템포 트레이너지만 플레이트 성격이 다릅니다</strong> — 보스턴 13은 유리섬유 Energy Rods, 줌 플라이 6은 풀 카본, 엔돌핀 스피드 5는 나일론(유연)</li>
-    <li><strong>가성비·내구·그립 → 보스턴 13</strong>(179k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(73.2% 리턴)</li>
-    <li>발볼 넓은 한국 러너는 <strong>줌 플라이 6(좁음) 주의</strong>, 보스턴·엔돌핀은 표준이라 무난합니다</li>
+    <li><strong>가성비·내구·그립 → 보스턴 13</strong>(189k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(73.2% 리턴)</li>
+    <li>발볼 넓은 한국 러너는 <strong>줌 플라이 6(좁음) 주의</strong>, 보스턴 13도 토박스가 좁은 편(70.6mm)이라 시착 권장, 엔돌핀은 표준입니다</li>
   </ul>
 </div>
 
@@ -5545,7 +5545,7 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>보스턴 13</th><th>줌 플라이 6</th><th>엔돌핀 스피드 5</th></tr></thead>
   <tbody>
     <tr><td>브랜드</td><td>아디다스</td><td>나이키</td><td>써코니</td></tr>
-    <tr><td><strong>한국 가격</strong></td><td><strong>179,000원(최저)</strong></td><td>229,000원</td><td>219,000원</td></tr>
+    <tr><td><strong>한국 가격</strong></td><td><strong>189,000원(최저)</strong></td><td>229,000원</td><td>219,000원</td></tr>
     <tr><td>무게(US 9)</td><td>254g</td><td>248g</td><td><strong>241g(최경량)</strong></td></tr>
     <tr><td>힐 스택</td><td>34mm</td><td><strong>40mm(최고)</strong></td><td>37.4mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>10mm</td><td>10.6mm</td></tr>
@@ -5553,17 +5553,17 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><strong>플레이트</strong></td><td>유리섬유 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
     <tr><td>에너지 리턴</td><td>높음</td><td>61%</td><td><strong>73.2%(최고)</strong></td></tr>
     <tr><td>아웃솔</td><td><strong>컨티넨탈(그립최강)</strong></td><td>러버</td><td>XT-900 러버</td></tr>
-    <tr><td><strong>발볼</strong></td><td>표준</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
+    <tr><td><strong>발볼</strong></td><td>좁은 편</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
     <tr><td>안정성</td><td><strong>높음(8)</strong></td><td>중(7)</td><td>낮음(5)</td></tr>
-    <tr><td>내구성 / km당</td><td><strong>550km / 325원</strong></td><td>400km / 572원</td><td>500km / 438원</td></tr>
+    <tr><td>내구성 / km당</td><td><strong>550km / 343원</strong></td><td>400km / 572원</td><td>500km / 438원</td></tr>
     <tr><td>대표 성격</td><td>가성비 만능 내구</td><td>풀카본 스피드</td><td>부드러운 매일 훈련</td></tr>
   </tbody>
 </table>
 <p><small>※ 무게·스택·에너지 리턴은 RunRepeat 실측 및 공식 기준. 가격은 한국 MSRP.</small></p>
 
 <h2>보스턴 13 — 가성비·내구·그립의 만능 트레이너</h2>
-<p><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a>은 "훈련도 하고 레이스도 뛰고 싶은데 하나로 안 되나요?"에 가장 먼저 추천하는 만능 템포 트레이너입니다. <strong>Lightstrike Pro + 유리섬유 Energy Rods 2.0</strong>(통짜 플레이트 대신 유리섬유 막대)로 254g에 뛰어난 반응성을 내면서, 셋 중 <strong>가장 저렴하고(179,000원) 가장 오래 갑니다(550km)</strong>. km당 약 325원으로 플레이트 트레이너 중 가성비 최상위죠.</p>
-<p>결정적 강점은 <strong>컨티넨탈 러버 아웃솔</strong>입니다. 비 온 뒤 젖은 한강·아스팔트에서도 그립이 확실해 사계절 훈련에 안심이 됩니다. 안정성도 8로 셋 중 가장 높아 25km LSD에서도 무릎 부담이 적고요. 발볼은 표준이라 보통 발볼은 무난하지만, 와이드 옵션이 없어 매우 넓은 발은 시착이 필요합니다.</p>
+<p><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a>은 "훈련도 하고 레이스도 뛰고 싶은데 하나로 안 되나요?"에 가장 먼저 추천하는 만능 템포 트레이너입니다. <strong>Lightstrike Pro + 유리섬유 Energy Rods 2.0</strong>(통짜 플레이트 대신 유리섬유 막대)로 254g에 뛰어난 반응성을 내면서, 셋 중 <strong>가장 저렴하고(189,000원) 가장 오래 갑니다(550km)</strong>. km당 약 343원으로 플레이트 트레이너 중 가성비 최상위죠.</p>
+<p>결정적 강점은 <strong>컨티넨탈 러버 아웃솔</strong>입니다. 비 온 뒤 젖은 한강·아스팔트에서도 그립이 확실해 사계절 훈련에 안심이 됩니다. 안정성도 8로 셋 중 가장 높아 25km LSD에서도 무릎 부담이 적고요. 발볼은 좁은 편(RunRepeat 토박스 70.6mm, 평균 73.2mm)이고 와이드 옵션도 없어 발볼이 넓다면 시착이 필요합니다.</p>
 <p><strong>✅ 이런 분께</strong> — 훈련+하프 레이스 겸용 한 켤레 / 가성비·내구를 중시 / 비 오는 날도 자주 뛰는 러너 / 안정감을 원하는 중급+</p>
 
 <h2>줌 플라이 6 — 풀 카본 + 최고 스택의 스피드형</h2>
@@ -5578,10 +5578,10 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>내 훈련엔 뭘 신을까</h2>
 <ul>
-  <li><strong>"한 켤레로 오래, 가성비 좋게, 비오는 날도"</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 179k·550km·컨티넨탈 그립으로 만능입니다.</li>
+  <li><strong>"한 켤레로 오래, 가성비 좋게, 비오는 날도"</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 189k·550km·컨티넨탈 그립으로 만능입니다.</li>
   <li><strong>"빠른 페이스에서 풀카본 추진력"</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 단 발볼이 좁으니 넓은 발은 피하세요.</li>
   <li><strong>"매일 부드럽게 굴리는 훈련화, 발·관절 부담 적게"</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 나일론 플레이트라 유연하고 73% 반발입니다.</li>
-  <li><strong>"발볼이 넓다"</strong> → 보스턴 13이나 엔돌핀 스피드 5(둘 다 표준). 줌 플라이 6(좁음)은 비추천.</li>
+  <li><strong>"발볼이 넓다"</strong> → 엔돌핀 스피드 5(표준). 보스턴 13은 좁은 편이라 시착 필수, 줌 플라이 6(좁음)은 비추천.</li>
   <li><strong>"이것보다 더 두껍고 부드러운 고스택 슈퍼트레이너"</strong> → <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을 보세요. 레이스 당일용 풀 카본 레이서는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 상위 모델입니다.</li>
 </ul>
 <p>카본·나일론 플레이트의 원리와 입문 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>에서 더 깊게 정리했습니다.</p>
@@ -5811,7 +5811,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
     slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
     title: '20만원대 트레일화 3파전 | 스피드고트 6 vs 펄사 vs 테렉스 아그라빅 4 — 쿠션·스피드·그립, 내 산엔 뭘?',
-    description: '한국에서 가장 많이 팔리는 20만원대 트레일화 세 켤레를 정면 비교했습니다. 호카 스피드고트 6(맥스쿠션·만능 그립·와이드), 살로몬 펄사(저스택·경쾌한 스피드), 아디다스 테렉스 아그라빅 4(Continental 러버·테크니컬 그립). 가격은 거의 같지만(20.5~21만원) 쿠션·무게·드롭·그립 성격이 완전히 다릅니다. 장거리 울트라냐, 근교 스피드 훈련이냐, 북한산 바위 테크니컬이냐 — 내 산과 용도에 맞는 한 켤레를 골라드립니다.',
+    description: '한국에서 가장 많이 팔리는 20만원대 트레일화 세 켤레를 정면 비교했습니다. 호카 스피드고트 6(맥스쿠션·만능 그립·와이드), 살로몬 펄사(저스택·경쾌한 스피드), 아디다스 테렉스 아그라빅 4(Continental 러버·테크니컬 그립). 가격은 16.9~21만원대지만 쿠션·무게·드롭·그립 성격이 완전히 다릅니다. 장거리 울트라냐, 근교 스피드 훈련이냐, 북한산 바위 테크니컬이냐 — 내 산과 용도에 맞는 한 켤레를 골라드립니다.',
     thumbnail: '/images/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-02',
@@ -5822,7 +5822,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격은 거의 같지만(20.5~21만원) 성격은 정반대</strong> — 스피드고트 6은 맥스쿠션 만능형, 펄사는 저스택 스피드형, 아그라빅 4는 테크니컬 그립형입니다</li>
+    <li><strong>가격은 16.9~21만원대, 성격은 정반대</strong> — 스피드고트 6은 맥스쿠션 만능형, 펄사는 저스택 스피드형, 아그라빅 4는 테크니컬 그립형입니다</li>
     <li><strong>장거리·발볼 넓음 → 스피드고트 6</strong>(힐 40mm 쿠션 + 유일한 와이드 옵션), <strong>근교 빠른 훈련 → 펄사</strong>(힐 29mm·경쾌), <strong>북한산 바위·진흙 → 아그라빅 4</strong>(Continental 러버)</li>
     <li>한국 산은 화강암 바위·뿌리가 많은 테크니컬 지형이라 <strong>그립과 안정성</strong>이 핵심 — 발볼 넓은 러너는 와이드가 있는 스피드고트가 사실상 유일한 선택입니다</li>
   </ul>
@@ -5841,7 +5841,7 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>스피드고트 6</th><th>펄사</th><th>아그라빅 4</th></tr></thead>
   <tbody>
     <tr><td>브랜드</td><td>호카</td><td>살로몬</td><td>아디다스 테렉스</td></tr>
-    <tr><td>한국 가격</td><td>205,000원</td><td>210,000원</td><td>약 209,000원</td></tr>
+    <tr><td>한국 가격</td><td>205,000원</td><td>210,000원</td><td>169,000원</td></tr>
     <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td>283g</td></tr>
     <tr><td><strong>힐 스택</strong></td><td><strong>40mm(맥스)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>9mm</td></tr>
@@ -5854,7 +5854,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>대표 용도</td><td>장거리·울트라·만능</td><td>근교 스피드 훈련</td><td>바위·진흙 테크니컬</td></tr>
   </tbody>
 </table>
-<p><small>※ 스택·무게는 전문 리뷰(Road Trail Run·DOR) 및 공식 기준. 펄사·아그라빅 4는 2025~26 신모델이라 RunRepeat 정량 랩 일부 미게시로, 수치는 공식·전문 리뷰 종합입니다. 아그라빅 4 한국가는 미확정 추정입니다.</small></p>
+<p><small>※ 스택·무게는 전문 리뷰(Road Trail Run·DOR) 및 공식 기준. 펄사·아그라빅 4는 2025~26 신모델이라 RunRepeat 정량 랩 일부 미게시로, 수치는 공식·전문 리뷰 종합입니다. 아그라빅 4 한국가는 아디다스 공식몰 정가(169,000원)입니다.</small></p>
 
 <h2>스피드고트 6 — 트레일 첫 켤레의 표준</h2>
 <p><a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>은 트레일 데일리의 대명사입니다. "트레일화 하나만 추천"이라는 질문에 가장 먼저 나오는 이름이죠. 핵심은 <strong>힐 40mm 맥스쿠션 + Vibram Megagrip 최상위 그립</strong>입니다. 6세대는 측면 마이크로 돌기(Traction Lug)를 더해 젖은 바위·급경사·진흙 어디서든 그립이 흔들리지 않고(Road Trail Run 10/10), 높은 스택인데도 내부 섀시가 발을 잡아줘 안정성이 뛰어납니다(DOR A등급).</p>
@@ -5906,7 +5906,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 각 모델 상세 페이지(스피드고트 6·펄사·아그라빅 4) 스펙 및 Road Trail Run·Doctors of Running 리뷰 종합 · 한국 공식 가격 기준(아그라빅 4는 미확정 추정) · 작성 2026년 7월 2일. 신모델 정량 랩(RunRepeat) 게시 시 갱신합니다.</small></p>
+<p><small>출처: 각 모델 상세 페이지(스피드고트 6·펄사·아그라빅 4) 스펙 및 Road Trail Run·Doctors of Running 리뷰 종합 · 한국 공식 가격 기준 · 작성 2026년 7월 2일. 신모델 정량 랩(RunRepeat) 게시 시 갱신합니다.</small></p>
 `,
   },
   {

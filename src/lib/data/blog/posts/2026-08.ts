@@ -445,7 +445,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>하이퍼부스트 엣지 — 45mm 감각이 목적일 때</h2>
 <p>엣지의 강점은 명확합니다. 힐 충격흡수 154는 최상위권이고, 폼 경도 32.5 AC로 무른 편이라 발이 푹 잠기는 감각이 강합니다. 44.6mm를 얹고도 247g에 머문 것도 인상적입니다. 플레이트가 없는데 종방향으로는 단단한 편이라, 곧게 뻗은 길을 일정한 페이스로 밀 때 특히 잘 맞습니다. <strong>아웃솔은 100km를 달려도 마모가 거의 보이지 않아</strong> 700km 이상을 기대할 수 있고, 그 덕에 km당 비용은 356원으로 런(438원)보다 오히려 저렴합니다.</p>
-<p>약점은 갑피 한 곳에 몰려 있습니다. 앞서 말한 힐 칼라 쓸림이 첫째고, 통기성 62는 러닝화 평균 이하라 한여름에 발열이 갇힙니다. 토박스 폭 71.4mm는 표준이지만 높이가 24.8mm로 낮아 발볼보다 발등에서 먼저 걸립니다. 안정성 평가도 낮은 편이라 발이 안쪽으로 무너지는 러너에게는 권하지 않습니다.</p>
+<p>약점은 갑피 한 곳에 몰려 있습니다. 앞서 말한 힐 칼라 쓸림이 첫째고, 통기성 62는 러닝화 평균 이하라 한여름에 발열이 갇힙니다. 토박스 폭 71.4mm는 평균(73.2mm)보다 좁은 편이고 높이도 24.8mm로 낮아 발볼과 발등 모두에서 걸릴 수 있습니다. 안정성 평가도 낮은 편이라 발이 안쪽으로 무너지는 러너에게는 권하지 않습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 45mm급 고스택의 푹신한 감각 자체를 원하는 분, 주간 거리가 많아 아웃솔 수명이 중요한 분, 뒤꿈치 복사뼈가 예민하지 않은 중립 발 러너.</p>
 
 <h2>하이퍼부스트 런 — 매일 신을 형태로 정리한 쪽</h2>
@@ -1918,7 +1918,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td><a href="/shoes/salomon-pulsar"><strong>살로몬 펄사</strong></a></td><td>21만</td><td>290g</td><td>일상 훈련부터 업템포까지 커버하는 데일리 트레이너</td></tr>
     <tr><td rowspan="4">올라운드</td><td><a href="/shoes/hoka-speedgoat-6"><strong>호카 스피드고트 6</strong></a></td><td>20.5만</td><td>278g</td><td>젖은 바위부터 급경사까지, 와이드·GTX 방수까지 있는 만능형</td></tr>
     <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>호카 스피드고트 7</strong></a></td><td>21.9만</td><td>281g</td><td>스피드고트 6의 반발력 강화판, 게이터 부착 루프 추가</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>20.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>16.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
     <tr><td rowspan="4">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
     <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
@@ -1927,7 +1927,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/salomon-s-lab-pulsar-4"><strong>살로몬 S/LAB 펄사 4</strong></a></td><td>34만</td><td>247g</td><td>20~80km 기술 트레일·VK·스카이러닝 엘리트 레이서</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>27.9만</td><td>265g</td><td>완만~중간 트레일 레이스, 8mm 드롭·44mm 고스택으로 안정적</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>28.9만</td><td>269g</td><td>완만~중간 트레일 레이스, 측정 드롭 0.1mm(아디다스 표기 8mm)의 전족·미드풋 착지형</td></tr>
   </tbody>
 </table>
 
@@ -1938,18 +1938,18 @@ export const posts_2026_08: BlogPost[] = [
 <h3>근교·입문 (8.9만~21만원)</h3>
 <p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 269g으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
 
-<h3>올라운드 (20.5만~27.9만원)</h3>
+<h3>올라운드 (16.9만~27.9만원)</h3>
 <p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
 
 <h3>쿠션·울트라 (18.9만~23만원)</h3>
 <p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
 
-<h3>카본 레이싱 (27.9만~34만원)</h3>
-<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 8mm 드롭·44mm 고스택으로 완만~중간 트레일 레이스에서 안정적인 편입니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
+<h3>카본 레이싱 (28.9만~34만원)</h3>
+<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 아디다스 표기 8mm 드롭과 달리 RunRepeat 측정 드롭이 0.1mm(힐 30.7mm)인 전족·미드풋 착지형으로, 완만~중간 트레일 레이스에서 빠릅니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
 
 <h2>5. 처음 사는 사람에게</h2>
 
-<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(27.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
+<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(28.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -4057,7 +4057,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
     title: '노바블라스트 6 vs 보스턴 13 차이 — 같은 17.9만원, 5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
     description:
-      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원으로 똑같고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 325원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
+      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원 대 189,000원으로 1만원 차이고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 343원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
     thumbnail: '/images/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4068,7 +4068,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '두 신발 가격이 같은데 뭘 기준으로 고르나요?',
         answer:
-          '용도입니다. 둘 다 179,000원이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 9/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
+          '용도입니다. 정가는 179,000원 대 189,000원으로 1만원 차이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 9/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
       },
       {
         question: '무게가 5g밖에 차이 안 나는데 왜 느낌이 다른가요?',
@@ -4088,16 +4088,16 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '오래 신는 쪽은요?',
         answer:
-          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 325원으로 약 27% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
+          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 343원으로 약 34% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
       },
     ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격이 똑같고 무게도 5g 차입니다</strong> — 둘 다 179,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
+    <li><strong>가격은 1만원 차, 무게는 5g 차입니다</strong> — 179,000원 대 189,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
     <li><strong>그런데 성격이 정확히 반대입니다</strong> — 쿠션 9 대 7, 반발 7 대 9. 노바 6은 <strong>플레이트 없이 39.2mm 스택으로 푹신하게</strong>, 보스턴 13은 <strong>유리섬유 Energy Rods로 굴려서</strong> 갑니다</li>
-    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 325원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
+    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 343원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
   </ul>
 </div>
 
@@ -4116,7 +4116,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>노바블라스트 6</th><th>보스턴 13</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>179,000원</td><td>179,000원 <em>(동일)</em></td></tr>
+    <tr><td>한국 정가</td><td>179,000원</td><td>189,000원 <em>(1만원 차)</em></td></tr>
     <tr><td>무게</td><td>249g</td><td>254g <em>(5g 차)</em></td></tr>
     <tr><td>스택 (힐/전족)</td><td><strong>39.2 / 32.1mm</strong></td><td>36 / 30mm</td></tr>
     <tr><td>드롭</td><td>7mm</td><td>6mm</td></tr>
@@ -4124,9 +4124,9 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>7 / <strong>9</strong></td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준 / <strong>있음</strong></td><td>표준 / <strong>없음</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준 / <strong>있음</strong></td><td>좁은 편 / <strong>없음</strong></td></tr>
     <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 325원</td></tr>
+    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 343원</td></tr>
     <tr><td>적정 페이스</td><td>4:30–6:30 /km</td><td>4:00–5:30 /km</td></tr>
   </tbody>
 </table>
@@ -4135,7 +4135,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>스펙표가 비슷한데 왜 다른 신발인가</h2>
 
-<p>가격이 같고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
+<p>가격이 1만원 차이고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
 
 <p>이유는 <strong>힘이 어디서 나오느냐</strong>입니다.</p>
 
@@ -4157,7 +4157,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>쿠션 9/10은 데일리화 중에서도 상위입니다. 힐 39.2mm 스택에 플레이트가 없어서, 발이 방해받지 않고 폼을 그대로 씁니다. 이지런·회복런·장거리 훈련처럼 <strong>편한 페이스로 오래 달리는 날</strong>에 값을 합니다.</p>
 
-<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 27% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
+<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 34% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
 
 <p>약점은 <strong>안정성 6/10</strong>과 평발 적합성 fair입니다. 스택이 높고 플레이트가 없다 보니 지쳤을 때 발이 흔들릴 여지가 있습니다. 그리고 반발 7/10이라 페이스를 확 올리는 날에는 심심하게 느껴집니다.</p>
 
@@ -4169,7 +4169,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>드롭 6mm에 전족 스택 30mm라 미드풋으로 착지해 굴리는 주법과 잘 맞습니다. 하프 레이스를 이 신발로 뛰는 것도 무리가 없습니다.</p>
 
-<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 325원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
+<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 343원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 템포·인터벌이 주간 계획에 고정된 분, 하프 레이스를 겸할 분, 발이 안쪽으로 무너지는 편인 분, 굴려주는 감각을 좋아하는 분.</p>
 
@@ -4194,7 +4194,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>주력 페이스가 4분 초반</strong> → 보스턴 13</li>
   <li><strong>주 5회 이상, 대부분 조깅</strong> → 노바 6(700km·와이드·쿠션 9)</li>
   <li><strong>포인트 훈련이 고정, 하프 레이스 예정</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 27% 유리)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 34% 유리)</li>
   <li><strong>예산을 더 줄이고 싶다</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a> 할인 재고(169,000원·스택 41mm)</li>
   <li><strong>같은 값대 다른 후보도 보고 싶다</strong> → <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>도 함께 보세요</li>
 </ul>
@@ -4212,7 +4212,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
-    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 같은 값이라 예산 계산도 단순합니다.</p>
+    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 정가 차이가 1만원이라 예산 계산도 단순합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 겨울에는 어느 쪽이 나은가요?</p>
@@ -4220,7 +4220,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 179,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(노바블라스트 6 179,000원 · 보스턴 13 189,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {
@@ -4395,7 +4395,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     title: '아디제로 Evo SL vs 보스턴 13 차이 — 3만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
     description:
-      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(179,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 325원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
+      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(189,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 343원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4426,15 +4426,15 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '오래 신는 쪽은 어디인가요?',
         answer:
-          '보스턴 13이 550km, 에보 SL이 500km 기준입니다. 정가로 나누면 km당 325원 대 418원으로 보스턴 13이 약 22% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며 체중·노면·주법에 따라 크게 달라집니다 — 단일 숫자로 교체 시점을 정하지 마세요.',
+          '보스턴 13이 550km, 에보 SL이 500km 기준입니다. 정가로 나누면 km당 343원 대 418원으로 보스턴 13이 약 18% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며 체중·노면·주법에 따라 크게 달라집니다 — 단일 숫자로 교체 시점을 정하지 마세요.',
       },
     ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(179,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
-    <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 325원 대 418원으로 22% 유리합니다</li>
+    <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(189,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
+    <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 343원 대 418원으로 18% 유리합니다</li>
     <li><strong>발볼로는 갈리지 않습니다</strong> — 2026년 10월 한국 공식몰 기준 <strong>두 켤레 모두 와이드가 없고</strong>, 엄지 위치 토박스 실측도 에보 SL 71.6mm·보스턴 13 70.6mm로 1mm 차이입니다(RunRepeat, 평균 73.2mm)</li>
   </ul>
 </div>
@@ -4454,7 +4454,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>아디제로 Evo SL</th><th>보스턴 13</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>209,000원</td><td><strong>179,000원</strong></td></tr>
+    <tr><td>한국 정가</td><td>209,000원</td><td><strong>189,000원</strong></td></tr>
     <tr><td>무게</td><td><strong>223g</strong></td><td>254g</td></tr>
     <tr><td>스택 (힐/전족)</td><td>36 / 28mm</td><td>36 / <strong>30mm</strong></td></tr>
     <tr><td>드롭</td><td>8mm</td><td><strong>6mm</strong></td></tr>
@@ -4463,9 +4463,9 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>쿠션 / 반발</td><td><strong>8</strong> / 9</td><td>7 / 9</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
     <tr><td>아웃솔</td><td>컨티넨탈 러버</td><td>컨티넨탈 러버</td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / 없음</td><td>표준(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td>좁은 편(71.6mm) / 없음</td><td>좁은 편(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
     <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 325원</strong></td></tr>
+    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 343원</strong></td></tr>
     <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:00–5:30 /km</td></tr>
   </tbody>
 </table>
@@ -4474,13 +4474,13 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>먼저 짚을 것 — 값과 성능이 비례하지 않습니다</h2>
 
-<p>보통 같은 브랜드 라인에서 3만원이 비싸면 "상위 모델"을 기대합니다. 그런데 이 둘은 그렇게 줄 세워지지 않습니다.</p>
+<p>보통 같은 브랜드 라인에서 2만원이 비싸면 "상위 모델"을 기대합니다. 그런데 이 둘은 그렇게 줄 세워지지 않습니다.</p>
 
 <p><strong>에보 SL이 비싼 이유는 미드솔 전체를 Lightstrike Pro로 채웠기 때문</strong>입니다. 아디다스가 레이싱화에 쓰는 최상위 폼을 부분이 아니라 100% 사용했고, 그러면서 223g을 만들었습니다. 대신 플레이트를 넣지 않았습니다.</p>
 
 <p><strong>보스턴 13은 같은 Lightstrike Pro를 쓰되 유리섬유 Energy Rods 2.0을 얹었습니다.</strong> 로드가 발을 앞으로 넘겨주는 굴림을 만들고 비틀림을 잡아주지만, 그만큼 무거워집니다. 31g 차이의 상당 부분이 여기서 옵니다.</p>
 
-<p>즉 <strong>3만원을 더 내면 31g이 가벼워지고 플레이트가 사라집니다.</strong> 이게 이 비교의 핵심이고, 어느 쪽이 우월한 게 아니라 취향과 용도의 문제입니다. 플레이트가 무엇을 하는지 더 알고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 해설</a>을 보세요.</p>
+<p>즉 <strong>2만원을 더 내면 31g이 가벼워지고 플레이트가 사라집니다.</strong> 이게 이 비교의 핵심이고, 어느 쪽이 우월한 게 아니라 취향과 용도의 문제입니다. 플레이트가 무엇을 하는지 더 알고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 해설</a>을 보세요.</p>
 
 <h2>아디제로 Evo SL — 가벼움으로 미는 쪽</h2>
 
@@ -4498,7 +4498,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>진짜 강점은 <strong>안정성 8/10</strong>입니다. 로드가 비틀림을 잡아주기 때문에 페이스가 흔들리는 후반부에도 형태가 유지됩니다. 평발 적합성도 good으로 에보 SL(fair)보다 낫습니다. 훈련 강도가 높고 하프 레이스까지 이 신발로 갈 생각이라면 이쪽이 안전합니다.</p>
 
-<p>그리고 <strong>km당 325원</strong>입니다. 3만원 싼 데다 내구가 50km 길어, 총비용에서 22% 유리합니다.</p>
+<p>그리고 <strong>km당 343원</strong>입니다. 2만원 싼 데다 내구가 50km 길어, 총비용에서 18% 유리합니다.</p>
 
 <p>약점은 두 가지입니다. <strong>와이드 옵션이 없고</strong>(에보 SL도 마찬가지), 적정 페이스가 4:00–5:30으로 느린 조깅에는 무겁게 느껴질 수 있습니다. 입문 단계에서 첫 신발로 고르기엔 성격이 뚜렷한 편입니다.</p>
 
@@ -4512,11 +4512,11 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>주 3~4회 조깅 + 가끔 템포</strong> → 에보 SL. 페이스 폭이 넓습니다</li>
   <li><strong>주 5회 이상 + 포인트 훈련이 고정</strong> → 보스턴 13. 굴림이 훈련에서 값을 합니다</li>
   <li><strong>하프 레이스를 이 신발로</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 보스턴 13(3만원 싸고 km당 325원)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 보스턴 13(2만원 싸고 km당 343원)</li>
   <li><strong>무게 1g이 아깝다</strong> → 에보 SL(223g). 더 가벼운 쪽을 원하면 <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>도 후보입니다</li>
   <li><strong>플레이트 없는 고성능이 좋다</strong> → 에보 SL, 혹은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></li>
   <li><strong>플레이트 굴림을 더 원한다</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>와도 비교해보세요</li>
-  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 같은 179,000원인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
+  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 정가 1만원 차인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>
@@ -4540,7 +4540,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(에보 SL 209,000원 · 보스턴 13 179,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다 — 단일 숫자로 교체 시점을 정하지 마세요. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(에보 SL 209,000원 · 보스턴 13 189,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다 — 단일 숫자로 교체 시점을 정하지 마세요. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {

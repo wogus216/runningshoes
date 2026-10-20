@@ -9442,10 +9442,10 @@ export const posts_2026_05: BlogPost[] = [
     <tr><th colspan="2">스펙 요약</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 가격</td><td>약 209,000원 (추정, 한국 정가 미확정 · 미국 $145)</td></tr>
+    <tr><td>한국 가격</td><td>169,000원 (아디다스 공식몰 · 미국 $145)</td></tr>
     <tr><td>무게 / 드롭</td><td>283g / 9mm (RunRepeat 실측)</td></tr>
     <tr><td>스택 (힐/포어풋)</td><td>33mm / 24mm</td></tr>
-    <tr><td>아웃솔</td><td>Continental Rubber (러그 4-5mm)</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 3.1mm, RunRepeat 측정)</td></tr>
     <tr><td>미드솔</td><td>Lightstrike 3 (단일 밀도, 소프트 튜닝)</td></tr>
     <tr><td>RunRepeat 점수</td><td>81/100</td></tr>
   </tbody>
@@ -9529,12 +9529,12 @@ export const posts_2026_05: BlogPost[] = [
 
 <table>
   <tbody>
-    <tr><td><strong>한국 가격</strong></td><td>약 279,000원 (추정, 2세대 정가 미확정)</td></tr>
-    <tr><td>무게 / 드롭</td><td>265g / 8mm (1세대 0.3mm에서 전환)</td></tr>
-    <tr><td>스택 (힐/포어풋)</td><td>44mm / 36mm (1세대 31/30에서 대폭 증가)</td></tr>
-    <tr><td>아웃솔</td><td>Continental Rubber (러그 3~4mm, 1세대 2.5mm에서 강화)</td></tr>
+    <tr><td><strong>한국 가격</strong></td><td>289,000원 (아디다스 공식몰)</td></tr>
+    <tr><td>무게 / 드롭</td><td>269g / 0.1mm (RunRepeat 랩 · 아디다스 표기 265g / 8mm)</td></tr>
+    <tr><td>스택 (힐/포어풋)</td><td>30.7mm / 30.6mm (RunRepeat 랩 · 아디다스 표기 43/35mm)</td></tr>
+    <tr><td>아웃솔</td><td>Continental Rubber (러그 2.9mm, RunRepeat 측정)</td></tr>
     <tr><td>미드솔</td><td>Lightstrike Pro 소프트 리튜닝 + Energy Rods (카본 아님)</td></tr>
-    <tr><td>랩 데이터</td><td>RunRepeat 미게시 (2025-12 출시, 공식 발표 기준)</td></tr>
+    <tr><td>랩 데이터</td><td>RunRepeat 랩 (에너지 리턴 힐 64.5%·전족 70.2%)</td></tr>
   </tbody>
 </table>
 
@@ -9587,7 +9587,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr>
       <td>Adidas Terrex Agravic 4</td>
       <td>종합 베스트</td>
-      <td>미확인</td>
+      <td>169,000원</td>
       <td>260g</td>
       <td>표준</td>
       <td>북한산 OK</td>
@@ -9627,8 +9627,8 @@ export const posts_2026_05: BlogPost[] = [
     <tr>
       <td>Adidas Speed Ultra 2</td>
       <td>속도형</td>
-      <td>279,000원</td>
-      <td>265g</td>
+      <td>289,000원</td>
+      <td>269g</td>
       <td>좁음 ⚠️</td>
       <td>스카이레이스 임도 한정</td>
     </tr>
@@ -9710,7 +9710,7 @@ export const posts_2026_05: BlogPost[] = [
     </tr>
     <tr>
       <td>완만 트레일 스피드 훈련 (좁은 발폭)</td>
-      <td>Adidas Speed Ultra 2 (279,000원)</td>
+      <td>Adidas Speed Ultra 2 (289,000원)</td>
       <td>0드롭 + 70.5% 에너지 리턴</td>
     </tr>
     <tr>

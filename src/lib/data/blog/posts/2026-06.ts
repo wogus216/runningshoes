@@ -3231,7 +3231,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>83% 에너지, 가성비 끝판왕</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-run"><strong>하이퍼부스트 런</strong></a></td><td>고반발 데일리</td><td>Hyperboost Pro</td><td>21.9만</td><td>247g</td><td>엣지의 폼을 힐 38.6mm 데일리 스택에, 전족 컨티넨탈 러버</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-edge"><strong>하이퍼부스트 엣지</strong></a></td><td>무플레이트 슈퍼트레이너</td><td>Hyperboost Pro</td><td>24.9만</td><td>247g</td><td>힐 44.6mm 고스택을 폼 하나로, 템포에 강함</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>265g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>269g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4"><strong>아디오스 프로 4</strong></a></td><td>카본 레이싱</td><td>Lightstrike Pro + 5 로드</td><td>29.9만</td><td>200g</td><td>알파플라이보다 안정적인 서브3</td></tr>
   </tbody>
 </table>
@@ -3279,8 +3279,8 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>와이드 옵션 (그나마 낫다)</strong></td><td>슈퍼노바 라이즈 3(공식몰 와이드 판매) · 아디제로 SL2 · 슈퍼노바 라이즈 2(전작)</td></tr>
-    <tr><td><strong>표준</strong></td><td>보스턴 13 · Evo SL · 아그라빅 4 · 하이퍼부스트 런(토박스 73.6mm, 와이드 없음) · 하이퍼부스트 엣지(와이드 없음)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>아디오스 프로 4 · 아그라빅 스피드 울트라</td></tr>
+    <tr><td><strong>표준</strong></td><td>아그라빅 4 · 하이퍼부스트 런(토박스 73.6mm, 와이드 없음)</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>아디오스 프로 4 · 아그라빅 스피드 울트라 · 보스턴 13(70.6mm) · Evo SL(71.6mm) · 하이퍼부스트 엣지(71.4mm, 와이드 없음)</td></tr>
   </tbody>
 </table>
 
@@ -6107,7 +6107,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'adidas-supernova-rise-2-vs-3-comparison',
     slug: 'adidas-supernova-rise-2-vs-3-comparison',
     title: '아디다스 슈퍼노바 라이즈 2 vs 슈퍼노바 라이즈 3 비교 | "입문화"가 "쿠션화"로 — 랩 실측 스택 +1.5mm·앞발 +3.2mm·토박스 3.2mm 좁아진 변화 총정리',
-    description: '슈퍼노바 라이즈 2(149,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
+    description: '슈퍼노바 라이즈 2(159,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
     thumbnail: '/images/shoes/adidas/supernovarise3/main.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6140,7 +6140,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>카테고리</strong></td><td>입문화</td><td><strong>쿠션화</strong></td><td>성격 변화 (입문 → 본격 쿠션)</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>149,000원</td><td><strong>159,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>159,000원</td><td>159,000원</td><td>동일</td></tr>
     <tr><td><strong>실구매가 (참고)</strong></td><td>약 135,000원</td><td>약 145,000원</td><td>세일 시 둘 다 더 내려감</td></tr>
     <tr><td><strong>무게 (랩 실측)</strong></td><td>257g</td><td>264g</td><td>+7g (라이즈 3가 약간 묵직)</td></tr>
     <tr><td><strong>힐 스택 (랩 실측)</strong></td><td>33.5mm</td><td><strong>35.0mm</strong></td><td>+1.5mm</td></tr>
@@ -6215,7 +6215,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>첫 하프 준비 입문자 (힐 착지)</td><td><strong>라이즈 2</strong></td><td>10mm 드롭·가벼운 257g·입문 친화</td></tr>
     <tr><td>무릎 통증·관절 보호 최우선</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·충격흡수 140 SA·excellent 등급</td></tr>
     <tr><td>가벼운 과내전 (약한 안정성 필요)</td><td><strong>라이즈 2</strong></td><td>안정성 8/10 (3은 7/10·완전 중립용)</td></tr>
-    <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 1만원 저렴</td></tr>
+    <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 동일(세일가로 판단)</td></tr>
     <tr><td>부드러운 "통통 튀는" 데일리 우선</td><td><strong>라이즈 3</strong></td><td>Dreamstrike+ 20% softer/bouncier</td></tr>
     <tr><td>라이즈 2 사용 중 + 500km 이내 멀쩡</td><td>라이즈 2 계속</td><td>업그레이드 가치는 후반 쿠션 차이 정도</td></tr>
     <tr><td>완전 중립발 + 장거리 1켤레</td><td><strong>라이즈 3</strong></td><td>650km 내구성·표준 핏 풋홀드 ↑</td></tr>
@@ -6229,10 +6229,10 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">라이즈 2/3 가격 판단 가이드</p>
     <ul>
-      <li><strong>MSRP 차이는 1만원(149,000 vs 159,000원).</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
+      <li><strong>MSRP는 159,000원으로 같습니다.</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
       <li><strong>라이즈 2는 후속작 출시로 세일 진입.</strong> 네이버·공식몰에서 13만원대, 시즌 오프엔 더 내려가는 경우가 많아 입문·표준 발볼이라면 가성비 메리트가 큽니다.</li>
       <li><strong>라이즈 3는 현행 모델.</strong> 정가~약 145,000원 실구매가 선에서 형성되며, 세일 폭은 라이즈 2보다 작습니다. 후반 쿠션·내구성을 산다는 관점이면 충분히 합리적.</li>
-      <li><strong>발볼이 넓다면 가격 차(1만원)보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
+      <li><strong>발볼이 넓다면 가격보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
     </ul>
   </div>
 </div>

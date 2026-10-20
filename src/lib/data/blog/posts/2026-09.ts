@@ -3728,7 +3728,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a></td><td>179,000원</td><td>303g</td><td>약 256원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/saucony-guide-19">사코니 가이드 19</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>298g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 V14</a> <span style="color:#0284c7;">안정화</span></td><td>179,000원</td><td>295g</td><td>약 298원</td><td>표준</td><td>있음</td></tr>
-    <tr><td><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></td><td>179,000원</td><td>254g</td><td>약 325원</td><td>표준</td><td>없음</td></tr>
+    <tr><td><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a></td><td>179,000원</td><td>254g</td><td>약 325원</td><td>좁은 편</td><td>없음</td></tr>
     <tr><td><a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a></td><td>179,000원</td><td>224g</td><td>약 358원</td><td>좁음</td><td>있음</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000원</td><td>232g</td><td><strong>약 411원</strong></td><td>좁음(70.1mm)</td><td>있음</td></tr>
   </tbody>
@@ -3749,8 +3749,8 @@ export const posts_2026_09: BlogPost[] = [
   <tbody>
     <tr><td><strong>기본 토박스가 넓음</strong><br>(와이드 없이도 여유)</td><td><a href="/shoes/adidas-supernova-rise-2">슈퍼노바 라이즈 2</a>, <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a></td></tr>
     <tr><td><strong>좁은 편 + 와이드 있음</strong><br>(와이드로 해결 가능)</td><td><a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a></td></tr>
-    <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a></td></tr>
-    <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
+    <tr><td><strong>좁은 편 + 와이드 없음</strong><br>(발볼 넓으면 후보에서 제외)</td><td><a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>, <a href="/shoes/li-ning-red-hare-9-pro">레드헤어 9 프로</a>, <a href="/shoes/li-ning-red-hare-9-ultra">레드헤어 9 울트라</a>, <a href="/shoes/adidas-boston-13">보스턴 13</a></td></tr>
+    <tr><td><strong>표준이지만 와이드 없음</strong><br>(매장 시착 권장)</td><td><a href="/shoes/saucony-kinvara-16">킨바라 16</a>, <a href="/shoes/li-ning-red-hare-9">레드헤어 9</a></td></tr>
   </tbody>
 </table>
 
