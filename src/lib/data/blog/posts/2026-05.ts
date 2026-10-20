@@ -2581,7 +2581,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong>가성비 + 통기성 (여름 한강 추천)</strong>: <a href="/shoes/saucony-ride-18">사우코니 라이드 18</a> (13~14만원 이월) · <a href="/shoes/nike-pegasus-41">페가수스 41</a> (13만원대 이월)</li>
-  <li><strong>발볼 넓은 한국 러너</strong>: <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (4E 와이드) · <a href="/shoes/saucony-ride-19">라이드 19</a> (전족부 +10mm 확장)</li>
+  <li><strong>발볼 넓은 한국 러너</strong>: <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (4E 와이드) · <a href="/shoes/saucony-ride-19">라이드 19</a> (한국 공식몰 와이드 판매)</li>
   <li><strong>맥스 쿠션 + 무릎 보호</strong>: <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> · <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></li>
   <li><strong>페이스 훈련 겸용 (4:30/km 이하)</strong>: <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> · <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></li>
 </ul>
@@ -2866,7 +2866,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'saucony-ride-18-vs-19-comparison',
     slug: 'saucony-ride-18-vs-19-comparison',
     title: '사우코니 라이드 18 vs 19 비교 | 부드러워진 신상 19 살까, 통기성 5/5 가성비 18 살까',
-    description: '라이드 18(255g/159,000원)과 19(255g/179,000원)을 풀데이터로 직접 비교. SCF PWRRUN+ 폼 개선 + 전족부 10mm 확장 + 내구성 600 → 700km. 사우코니 데일리 트레이너 입문에 18과 19 중 누가 답인지 상황별 매트릭스.',
+    description: '라이드 18(255g/159,000원)과 19(278g/179,000원)을 풀데이터로 직접 비교. SCF PWRRUN+ 폼 개선 + 전족부 플랫폼 확장 + 내구성 600 → 700km. 사우코니 데일리 트레이너 입문에 18과 19 중 누가 답인지 상황별 매트릭스.',
     thumbnail: '/images/blog/saucony-ride-18-vs-19-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
@@ -2877,8 +2877,8 @@ export const posts_2026_05: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>모든 면에서 점진적 개선의 신상 19</strong> (18 ₩159,000 / 19 ₩179,000) — 무게는 255g 동일하지만 폼·핏·내구성 3개 동시 보강</li>
-    <li>19의 진짜 변화 3가지: <strong>SCF PWRRUN+ 폼 (단단함 → 부드러움)</strong> + <strong>전족부 토박스 +10mm 확장 (한국 발볼 친절)</strong> + <strong>내구성 600 → 700km (km당 ₩265 → ₩256)</strong></li>
+    <li><strong>무게를 뺀 대부분에서 점진적 개선의 신상 19</strong> (18 ₩159,000 / 19 ₩179,000) — 무게는 278g으로 23g 늘었지만(RunRepeat 실측) 폼·플랫폼·내구성 3개 동시 보강</li>
+    <li>19의 진짜 변화 3가지: <strong>SCF PWRRUN+ 폼 (단단함 → 부드러움)</strong> + <strong>전족부 플랫폼 확장 (실측 122.1 → 127.1mm, 토박스는 72.8mm 평균 수준)</strong> + <strong>내구성 600 → 700km (km당 ₩265 → ₩256)</strong></li>
     <li>18 이월 13~14만원대 vs 19 정가 17만 9천원. <strong>가성비는 18 압승, 발볼 넓음 + 부드러움 우선이면 19</strong>가 답</li>
   </ul>
 </div>
@@ -2887,7 +2887,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📊</span>
   <div class="callout-body">
     <p class="callout-title">이 글의 데이터 소스</p>
-    <p>사우코니 한국 공식몰 가격(2026-05-25 기준) + 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / HA 26.1 등 Lab 측정치). 양 신발 단독 분석은 <a href="/shoes/saucony-ride-18">라이드 18 상세</a> · <a href="/shoes/saucony-ride-19">라이드 19 상세</a>에서 확인.</p>
+    <p>사우코니 한국 공식몰 가격(2026-05-25 기준) + 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / 경도 41.3 AC 등 Lab 측정치). 양 신발 단독 분석은 <a href="/shoes/saucony-ride-18">라이드 18 상세</a> · <a href="/shoes/saucony-ride-19">라이드 19 상세</a>에서 확인.</p>
   </div>
 </div>
 
@@ -2901,16 +2901,16 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
     <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>179,000원</strong></td><td>+20,000원</td></tr>
     <tr><td><strong>이월/세일가</strong></td><td><strong>130,000~145,000원</strong></td><td>165,000~175,000원</td><td>실제 차이 ~3~4만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>255g</td><td>255g</td><td><strong>동일</strong></td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>35mm</td><td>36mm</td><td>+1mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>26.6mm</td><td>28mm</td><td>+1.4mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8.4mm (실측)</td><td>8mm</td><td>거의 동일</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>255g</td><td>278g (실측)</td><td><strong>+23g (19가 무거움)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>35.0mm</td><td>38.7mm (실측)</td><td>+3.7mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>26.6mm</td><td>30.2mm (실측)</td><td>+3.6mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8.4mm (실측)</td><td>8.5mm (실측)</td><td>거의 동일</td></tr>
     <tr><td><strong>미드솔</strong></td><td>PWRRUN+</td><td><strong>SCF PWRRUN+ (개선 신소재)</strong></td><td>부드러움 ↑</td></tr>
-    <tr><td><strong>전족부 토박스</strong></td><td>표준</td><td><strong>+10mm 확장</strong></td><td>발볼 친절</td></tr>
-    <tr><td><strong>충격흡수 SA (힐)</strong></td><td>141</td><td>141급 (추정)</td><td>무릎 보호 우수 유지</td></tr>
-    <tr><td><strong>경도 HA</strong></td><td>26.1 (단단)</td><td>약간 낮아짐 추정</td><td>부드러움 ↑</td></tr>
-    <tr><td><strong>통기성</strong></td><td>5/5</td><td>5/5</td><td>최상위 유지</td></tr>
-    <tr><td><strong>한국 와이드 SKU</strong></td><td>2E 있음</td><td>2E 있음</td><td>양쪽 모두 ✅</td></tr>
+    <tr><td><strong>전족부 토박스</strong></td><td>73.0mm (평균 수준)</td><td>72.8mm (평균 수준)</td><td>거의 동일 (전족부 플랫폼은 +5mm)</td></tr>
+    <tr><td><strong>충격흡수 SA (힐)</strong></td><td>141</td><td>132 (실측)</td><td>19가 9 낮음</td></tr>
+    <tr><td><strong>경도 (AC)</strong></td><td>41.3 (단단)</td><td>37.1 (실측)</td><td>부드러움 ↑</td></tr>
+    <tr><td><strong>통기성</strong></td><td>5/5 (구식 측정)</td><td>74 BR (평균 75)</td><td>19는 평균 수준</td></tr>
+    <tr><td><strong>한국 와이드 SKU</strong></td><td>2E 출시 (공식몰 미등재)</td><td>와이드 있음 (공식몰 남녀)</td><td>양쪽 모두 출시 ✅</td></tr>
     <tr><td><strong>내구성</strong></td><td>600km</td><td><strong>700km</strong></td><td>+100km</td></tr>
     <tr><td><strong>km당 비용</strong></td><td>약 ₩265</td><td><strong>약 ₩256</strong></td><td>-₩9 개선</td></tr>
     <tr><td><strong>최적 페이스</strong></td><td>5:00~7:00/km</td><td>5:00~7:00/km</td><td>동일</td></tr>
@@ -2921,13 +2921,13 @@ export const posts_2026_05: BlogPost[] = [
 
 <h3>1. SCF PWRRUN+ 폼 — 단단함에서 부드러움으로</h3>
 
-<p>라이드 18의 PWRRUN+ 폼은 HA 26.1로 <strong>"단단하고 안정적"</strong>이 핵심 정체성이었습니다. 푹신함을 원하는 러너에겐 아쉬웠고, 일부는 "라이드는 가성비 좋은데 좀 더 부드러웠으면" 평가했습니다.</p>
+<p>라이드 18의 PWRRUN+ 폼은 경도 41.3 AC(RunRepeat 실측, 평균 35.4 AC)로 <strong>"단단하고 안정적"</strong>이 핵심 정체성이었습니다. 푹신함을 원하는 러너에겐 아쉬웠고, 일부는 "라이드는 가성비 좋은데 좀 더 부드러웠으면" 평가했습니다.</p>
 
 <p>19는 <strong>SCF PWRRUN+ (Super Critical Foam — 초임계 가스 주입 방식)</strong>으로 개선했습니다. 같은 PWRRUN+ 베이스지만 셀 구조가 더 미세하고 균일해져 <strong>착지 직후 부드러움 + 전환 시 반응성</strong>이 동시에 향상됐습니다. 18의 단단한 느낌이 부담스러웠다면 19가 답.</p>
 
-<h3>2. 전족부 토박스 +10mm 확장 — 한국 발볼에 결정적</h3>
+<h3>2. 전족부 플랫폼 확장 — 토박스 폭은 그대로</h3>
 
-<p>라이드 18의 토박스는 "표준~넓은 편"이라 평가됐지만 한국 발볼 4E급 러너에게는 와이드 옵션 필수였습니다. 19는 <strong>전족부를 10mm 확장</strong>해 표준(D) 사이즈도 발볼 standard~약간 넓음까지 커버 가능.</p>
+<p>라이드 18의 토박스는 RunRepeat 실측 73.0mm로 평균 수준이고, 랩은 발볼 넓은 러너에게 다소 제한적이라고 평가했습니다. 19는 <strong>전족부 미드솔 폭을 127.1mm(라이드 18 122.1mm)로 넓혀</strong> 착지 플랫폼이 커졌지만, 토박스는 72.8mm로 전작과 거의 같습니다. 발볼이 넓다면 표준(D)보다 한국 공식몰에서 파는 와이드를 고르는 편이 맞습니다.</p>
 
 <h3>3. 내구성 600 → 700km — km당 비용 개선</h3>
 
@@ -2959,11 +2959,11 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>첫 러닝화 + 가성비 우선</td><td><strong>18 이월 13~14만원</strong></td><td>15만원 이하 진입 + 통기성 5/5 + km당 ₩265</td></tr>
-    <tr><td>발볼 4E급 또는 18 토박스 압박 경험</td><td><strong>19 정가 17~18만원</strong></td><td>전족부 +10mm 확장이 결정적</td></tr>
-    <tr><td>단단한 라이드 + 페이스 감각 선호</td><td>18</td><td>HA 26.1의 직진성·반응성 우위</td></tr>
+    <tr><td>발볼 4E급 또는 18 토박스 압박 경험</td><td><strong>19 정가 17~18만원</strong></td><td>공식몰 와이드 선택 가능 (토박스 자체는 72.8mm로 18과 거의 같음)</td></tr>
+    <tr><td>단단한 라이드 + 페이스 감각 선호</td><td>18</td><td>경도 41.3 AC의 직진성·반응성 우위</td></tr>
     <tr><td>부드러운 쿠셔닝 + 장거리</td><td>19</td><td>SCF PWRRUN+ 의 부드러움이 후반부 결정적</td></tr>
     <tr><td>주 3~5회 데일리 훈련</td><td>19</td><td>700km 내구성 + km당 ₩256 가성비</td></tr>
-    <tr><td>한여름 한강·서울숲 러닝</td><td>둘 다 OK</td><td>통기성 5/5 양쪽 모두 최상위. 18이 약간 가성비 ↑</td></tr>
+    <tr><td>한여름 한강·서울숲 러닝</td><td>둘 다 OK</td><td>18은 통기성 5/5(구식 측정), 19는 74 BR(평균 75)로 평균 수준. 통기성·가성비는 18 우위</td></tr>
     <tr><td>과내전·심한 평발</td><td>둘 다 비추</td><td>중립화. <a href="/shoes/saucony-guide-18">사우코니 가이드 18</a>(같은 사우코니 안정화) 또는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a></td></tr>
   </tbody>
 </table>
@@ -2971,7 +2971,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>다른 데일리 트레이너와 비교</h2>
 
 <ul>
-  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 26g 무거움 + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
+  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 라이드 18보다 26g 무거움(라이드 19보다는 3g 가벼움) + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
   <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 라이드보다 20g 가벼움. 맥스 쿠션 + 강한 록커. 가격은 +4만원</li>
   <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 199,000원)</strong> — 라이드보다 50g 무거움. 4E 와이드 + 진정한 맥스 쿠션. 가격 +4만원</li>
   <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (272g, 179,000원)</strong> — 라이드와 동급 가격. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
@@ -2980,16 +2980,16 @@ export const posts_2026_05: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. 18 → 19 업그레이드 가치 있나요?</h3>
-<p>18이 500km 안 신었다면 그냥 굴리세요. 18에 큰 불만 없으면 굳이 19로 갈 필요 없음. 반대로 <strong>"18이 단단해서 무릎이 좀 아팠다"</strong>거나 <strong>"토박스가 좁게 느껴졌다"</strong>면 19가 명확히 답. 폼 부드러움 + 토박스 확장 둘 다 그 불만을 직접 해결.</p>
+<p>18이 500km 안 신었다면 그냥 굴리세요. 18에 큰 불만 없으면 굳이 19로 갈 필요 없음. 반대로 <strong>"18이 단단해서 무릎이 좀 아팠다"</strong>거나 <strong>"토박스가 좁게 느껴졌다"</strong>면 19가 답. 폼은 부드러워졌고(41.3 → 37.1 AC, RunRepeat 실측), 토박스는 72.8mm로 18과 거의 같아 발볼 불만은 19 와이드로 해결하는 편이 맞습니다.</p>
 
 <h3>Q. 라이드와 페가수스 41 중 어느 게 좋나요?</h3>
 <p>가성비는 페가수스 41 이월(12~13만원)이 살짝 우위. <strong>무게 + 통기성 + 가격이라면 라이드 18</strong>(255g, 5/5, 13~14만원)이 답. 페가수스 41은 281g + 통기성 4/5. 여름 한강 러너라면 라이드 추천. 사이즈 자주 빠지는 페가수스 41과 달리 라이드 18은 아직 이월 재고 풍부합니다.</p>
 
 <h3>Q. 라이드는 풀코스 가능한가요?</h3>
-<p><strong>Sub-4 ~ Sub-5 완주 페이스라면 가능</strong>. 단 35mm 힐 스택은 30km 이후 후반 보호로는 살짝 부족할 수 있습니다. Sub-3:30 이하 도전이라면 카본 슈즈(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>) 또는 슈퍼트레이너(<a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2/3</a>) 분리 권장. 라이드는 본질적으로 데일리 + 입문 풀코스용입니다.</p>
+<p><strong>Sub-4 ~ Sub-5 완주 페이스라면 가능</strong>. 단 라이드 18의 35mm 힐 스택(19는 실측 38.7mm)은 30km 이후 후반 보호로는 살짝 부족할 수 있습니다. Sub-3:30 이하 도전이라면 카본 슈즈(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>) 또는 슈퍼트레이너(<a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2/3</a>) 분리 권장. 라이드는 본질적으로 데일리 + 입문 풀코스용입니다.</p>
 
 <h3>Q. 발볼 4E급 한국 러너인데 라이드 살 수 있나요?</h3>
-<p><strong>둘 다 와이드(2E) 옵션 있음</strong>. 19의 표준(D)도 18 2E와 비슷한 토박스 공간이라 발볼 표준~약간 넓음까지는 표준 사이즈로 OK. 4E 정도면 19 와이드(2E) 권장. 진짜 4E+라면 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(와이드).</p>
+<p><strong>둘 다 와이드(2E)가 출시됐습니다</strong>(2026-10-20 한국 공식몰에는 19 와이드만 등재). 19의 표준(D) 토박스는 72.8mm로 18(73.0mm)과 거의 같은 평균 수준이라, 발볼이 넓다면 표준보다 와이드를 고르는 편이 맞습니다. 4E 정도면 19 와이드(2E) 권장. 진짜 4E+라면 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(와이드).</p>
 
 <h3>Q. 라이드 18이 이월 풀려서 사이즈 잘 잡힐까요?</h3>
 <p>현재(5월 말)는 인기 사이즈(260~275mm) <strong>이월 재고 풍부</strong>. 페가수스 41 이월처럼 빠르게 빠지는 모델 아니라 7~8월 시즌오프 12~13만원 시점까지 충분히 기다릴 수 있습니다. 블프(11월) 10~12만원까지 가능성 있지만 그땐 사이즈 빠짐 주의.</p>
@@ -3001,7 +3001,7 @@ export const posts_2026_05: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">가성비·통기성 vs 부드러움·확장된 핏 — 본인 발 조건이 결정</p>
     <p><strong>첫 사우코니 데일리 + 가성비 우선</strong>이라면 <a href="/shoes/saucony-ride-18">라이드 18</a> 이월 13~14만원이 거의 무조건 답. 페가수스 41보다 26g 가볍고, 통기성 5/5는 한국 여름 러닝에 결정적. 5만원대 절약은 가성비 카본 한 켤레 추가 가능한 차이.</p>
-    <p><strong>발볼 표준~넓음 + 부드러운 쿠셔닝 우선</strong>이라면 <a href="/shoes/saucony-ride-19">라이드 19</a> 정가 17~18만원. 전족부 +10mm + SCF PWRRUN+ 부드러움은 18의 단점을 정확히 해결. 700km 내구성으로 km당 ₩256 가성비도 우위.</p>
+    <p><strong>발볼 표준~넓음 + 부드러운 쿠셔닝 우선</strong>이라면 <a href="/shoes/saucony-ride-19">라이드 19</a> 정가 17~18만원. 넓어진 전족부 플랫폼(127.1mm) + SCF PWRRUN+ 부드러움이 18과의 차이이고, 토박스는 18과 거의 같아 발볼이 넓다면 와이드를 고르는 편이 맞습니다. 무게는 278g으로 23g 늘었습니다. 700km 내구성으로 km당 ₩256 가성비도 우위.</p>
     <p><strong>둘 다 처음이거나 결정 못 한다면</strong> 사우코니 오프라인 매장에서 양쪽 동시 시착이 가장 정확. 라이드 시리즈는 "부드러움 vs 단단함"의 미묘한 차이가 결정 포인트라 매장 비교가 답.</p>
   </div>
 </div>
@@ -3029,7 +3029,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
 </ul>
 
-<p><small>출처: 사우코니 한국 공식몰 가격(2026-05-25 기준) / 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / HA 26.1 등 Lab 측정치). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><small>출처: 사우코니 한국 공식몰 가격(2026-05-25 기준) / 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / 경도 41.3 AC 등 Lab 측정치). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
 `,
   },
   {
@@ -3537,7 +3537,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><strong><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> (238g, 21.9만원)</strong> — 5와 비슷한 무게대. 카본이 아닌 나일론 플레이트라 부담 적음. 카본 vs 나일론 차이가 결정 포인트</li>
   <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (250g, 21만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
   <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 33만원)</strong> — 진짜 엘리트 카본. 가격 +10만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
-  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (227g, 29만원)</strong> — 풀카본 + PWRTRAC. 평발 친절(토박스는 69.3mm로 좁은 편). 매직스피드보다 무게 ↑ 가격 ↑</li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (215g, 29만원)</strong> — 풀카본 + PWRTRAC. 평발 친절(토박스는 69.3mm로 좁은 편). 매직스피드보다 무게 ↑ 가격 ↑</li>
 </ul>
 
 <h2>FAQ</h2>
@@ -3730,7 +3730,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></td><td>26만</td><td>239g</td><td>46.5mm</td><td>없음</td><td>FF LEAP+BLAST PLUS, 롱런 강점</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-5">매직 스피드 5</a></td><td>20만</td><td>222g</td><td>40mm</td><td>풀렝스 카본</td><td>카본 + 데일리 가능 가성비</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td><td>22만</td><td>240g</td><td>36mm</td><td>나일론</td><td>나일론 플레이트, 페이스 트레이닝</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>19만</td><td>240g</td><td>40mm</td><td>없음</td><td>PWRRUN PB, 가성비 슈퍼폼</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a></td><td>19만</td><td>241g</td><td>40mm</td><td>없음</td><td>PWRRUN PB, 가성비 슈퍼폼</td></tr>
   </tbody>
 </table>
 
@@ -3913,7 +3913,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'saucony-endorphin-pro-4-vs-5-comparison',
     slug: 'saucony-endorphin-pro-4-vs-5-comparison',
     title: '사우코니 엔돌핀 프로 4 vs 5 비교 | 슬롯형 카본 + PWRTRAC 신규 + 토박스는 72.5→69.3mm로 오히려 좁아짐 — 첫 카본 슈즈 가성비 비교',
-    description: '엔돌핀 프로 4(220g/269,000원)와 프로 5(206g/299,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. -14g 경량화 + 슬롯형 카본 플레이트 + PWRTRAC 아웃솔 + 토박스는 랩 실측 72.5→69.3mm로 좁아짐. v4 이월 22~24만원 살까 v5 신상 30만원 살까 + Sub-3:30 풀코스 가성비 카본 답.',
+    description: '엔돌핀 프로 4(220g/269,000원)와 프로 5(215g/299,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. -5g 경량화 + 슬롯형 카본 플레이트 + PWRTRAC 아웃솔 + 토박스는 랩 실측 72.5→69.3mm로 좁아짐. v4 이월 22~24만원 살까 v5 신상 30만원 살까 + Sub-3:30 풀코스 가성비 카본 답.',
     thumbnail: '/images/blog/saucony-endorphin-pro-4-vs-5-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-17',
@@ -3925,7 +3925,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>가격 3만원 차이 (프로 4 269,000원 / 프로 5 299,000원) — 단 <strong>v4 이월 22~24만원 풀림</strong>, 실제 차이 5~7만원</li>
-    <li>v5의 핵심 변화 3가지: <strong>-14g 경량화(220→206g)</strong> + <strong>슬롯형 카본 플레이트(전환 효율 ↑)</strong> + <strong>토박스는 오히려 좁아짐(RunRepeat 실측 72.5→69.3mm, 발볼 넓으면 감점)</strong></li>
+    <li>v5의 핵심 변화 3가지: <strong>-5g 경량화(220→215g, RunRepeat 실측)</strong> + <strong>슬롯형 카본 플레이트(전환 효율 ↑)</strong> + <strong>토박스는 오히려 좁아짐(RunRepeat 실측 72.5→69.3mm, 발볼 넓으면 감점)</strong></li>
     <li>엔돌핀 프로는 <strong>"첫 카본 슈즈 1순위"</strong> 포지션. 베이퍼/알파 30~35만원보다 저렴 + 더 안정적. Sub-3:30 ~ Sub-4 풀코스 가성비 정답</li>
   </ul>
 </div>
@@ -3934,7 +3934,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📊</span>
   <div class="callout-body">
     <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 엔돌핀 프로 4 실측(SA 139, HA 13.6, 에너지 리턴 71.7%) + 프로 5 사양 + Believe in the Run / Road Trail Run 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4 상세</a> · <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5 상세</a>.</p>
+    <p>RunRepeat 엔돌핀 프로 4 실측(SA 139, 경도 35.1 AC, 에너지 리턴 71.7%) + 프로 5 실측(215g, 에너지 리턴 힐 72.8%·전족부 75.8%) + Believe in the Run / Road Trail Run 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4 상세</a> · <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5 상세</a>.</p>
   </div>
 </div>
 
@@ -3948,14 +3948,14 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>269,000원</td><td><strong>299,000원</strong></td><td>+30,000원</td></tr>
     <tr><td><strong>현재 시장가</strong></td><td><strong>220,000~240,000원</strong> (이월 할인)</td><td>299,000원 (출시 풀가)</td><td>실제 차이 5~7만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>220g</td><td><strong>206g</strong></td><td><strong>-14g</strong></td></tr>
-    <tr><td><strong>힐 스택 (실측)</strong></td><td>38.1mm</td><td>39.5mm</td><td>+1.4mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>28.6mm</td><td>31.5mm</td><td>+2.9mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm 공식 (9.5mm 실측)</td><td>8mm</td><td>동일 (실측 일관성 ↑)</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>220g (실측)</td><td><strong>215g (실측, 공식 206g)</strong></td><td><strong>-5g</strong></td></tr>
+    <tr><td><strong>힐 스택 (실측)</strong></td><td>38.1mm</td><td>36.5mm (공식 39.5mm)</td><td>-1.6mm</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>28.6mm</td><td>27.8mm (공식 31.5mm)</td><td>-0.8mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm 공식 (9.5mm 실측)</td><td>8mm 공식 (8.7mm 실측)</td><td>공식 동일 (실측 일관성 ↑)</td></tr>
     <tr><td><strong>미드솔</strong></td><td>PWRRUN PB+HG (혼합)</td><td><strong>PWRRUN HG (상층) + PWRRUN PB (하층) 듀얼</strong></td><td>명확한 듀얼 폼 구성</td></tr>
     <tr><td><strong>카본 플레이트</strong></td><td>풀렝스 curved</td><td><strong>풀렝스 슬롯형</strong></td><td>전환 효율 ↑</td></tr>
     <tr><td><strong>아웃솔</strong></td><td>경량 러버</td><td><strong>PWRTRAC (신규)</strong></td><td>그립력 ↑ (특히 젖은 노면)</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>71.7% (실측)</td><td>미게시</td><td>v4만 실측</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>힐 71.7%·전족부 71.5% (실측)</td><td>힐 72.8%·전족부 75.8% (실측)</td><td>v5가 높음 (전족부 +4.3%p)</td></tr>
     <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:00 min/km</td><td><strong>3:30~4:30 min/km</strong></td><td>v5 약간 더 빠른 페이스</td></tr>
     <tr><td><strong>토박스 (랩 실측)</strong></td><td><strong>72.5mm</strong></td><td>69.3mm</td><td>v5가 3.2mm 좁아짐 ⚠️</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
@@ -3968,8 +3968,8 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>5가지 핵심 변화 — 마케팅 vs 실제</h2>
 
-<h3>1. 무게 -14g 경량화 ✅ 실제 우위</h3>
-<p>220g → 206g. 베이퍼플라이 4(166g)·알파플라이 3(201g)과 비교하면 알파와 거의 동급 무게. <strong>풀코스 35km+ 후반 다리 피로도 감소에 직접적인 영향</strong>. 카본 슈즈 무게는 1g도 의미 있음.</p>
+<h3>1. 무게 -5g 경량화 — 소폭</h3>
+<p>RunRepeat 실측 220g → 215g(브랜드 공식 206g). 감량 폭은 약 2%로 크지 않고, 베이퍼플라이 4(166g)·알파플라이 3(201g)보다는 여전히 무겁습니다.</p>
 
 <h3>2. 슬롯형 카본 플레이트 ✅ 진짜 변화</h3>
 <p>v4의 단일 풀렝스 carved 플레이트 → v5의 <strong>슬롯형 풀렝스 카본 플레이트</strong>. 카본 플레이트 가운데에 슬릿(slot)을 넣어 <strong>전환 시 약간의 유연성 + 발 모양 적응</strong>. 결과는 ① 전족부 착지 → 발끝 이탈 전환이 더 자연스러움, ② 오르막·내리막에서 플레이트가 발 모양에 맞춰 굽혀짐, ③ 풀코스 30km+ 누적 피로 시 발 컨디션에 맞춰 적응.</p>
@@ -3989,7 +3989,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>RunRepeat 실측 토박스는 v4 <strong>72.5mm</strong>(평균 73.2mm), v5 <strong>69.3mm</strong>입니다. 랩은 v4를 "더 좁을 줄 알았는데 아니었다"고, v5를 두 번째 측정에서 "슈퍼슈즈다운 타이트한 핏(첫 측정은 더 여유로웠다고 서술)"이라고 평가했습니다. 즉 <strong>v5에서 토박스는 넓어진 것이 아니라 좁아졌습니다</strong>. 발볼이 표준을 넘으면 v5보다 v4가 편할 가능성이 크고, 발볼 4E급은 어느 쪽도 와이드 옵션이 없어 불가합니다.</p>
 
 <h3>5. 가격 +3만원 (269 → 299k) ⚠️ 실제 차이는 시장가 기준 5~7만원</h3>
-<p>v5 출시 직후 풀가 299,000원 vs v4 이월 22~24만원대 시장가 = 실제 차이 5~7만원. 슬롯 플레이트·PWRTRAC·-14g·토박스 standard의 가치가 5~7만원어치인지 본인 우선순위로 판단 필요.</p>
+<p>v5 출시 직후 풀가 299,000원 vs v4 이월 22~24만원대 시장가 = 실제 차이 5~7만원. 슬롯 플레이트·PWRTRAC·-5g의 가치가(토박스는 오히려 좁아짐) 5~7만원어치인지 본인 우선순위로 판단 필요.</p>
 
 <h2>다른 나이키 카본과 가격·성능 비교</h2>
 
@@ -3999,7 +3999,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>72.5mm (표준)</td><td>가성비 카본 최강</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>206g</td><td>70%+</td><td><strong>69.3mm (좁은 편)</strong></td><td>경량화 + 슬롯 카본</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>215g</td><td>72.8%</td><td><strong>69.3mm (좁은 편)</strong></td><td>경량화 + 슬롯 카본</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>78%</strong></td><td>좁음(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>33만 9천원</td><td>201g</td><td>74.9%</td><td>좁음</td><td>풀코스 후반 보호</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
@@ -4015,7 +4015,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>4:00~4:15/km (Sub-3)</td><td>2:50~3:00</td><td>알파플라이 3 또는 베이퍼 4</td><td>엔돌핀 프로는 Sub-3급에 약간 부족</td></tr>
-    <tr><td>4:15~4:30/km (Sub-3:10~3:15)</td><td>3:00~3:15</td><td><strong>엔돌핀 프로 5</strong></td><td>206g + 슬롯 카본, Sub-3:15에 가성비 최적</td></tr>
+    <tr><td>4:15~4:30/km (Sub-3:10~3:15)</td><td>3:00~3:15</td><td><strong>엔돌핀 프로 5</strong></td><td>215g + 슬롯 카본, Sub-3:15에 가성비 최적</td></tr>
     <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:15~3:20</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 + 후반 안정감</td></tr>
     <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>엔돌핀 프로 4 (이월) 또는 5</strong></td><td>v4 22~24만원 가성비 결정적</td></tr>
     <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>엔돌핀 프로 4 (이월) 또는 슈퍼블라스트 3</td><td>슈퍼 트레이너도 고민 가치</td></tr>
@@ -4038,7 +4038,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>젖은 노면 풀코스 대비 (춘마·서울 도심)</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력</td></tr>
     <tr><td>전족 착지 + 다양한 노면</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 전환 자연스러움</td></tr>
     <tr><td>일관된 도로 + 직진성 우선</td><td>프로 4 (단일 플레이트)</td><td>슬롯보다 일관된 추진</td></tr>
-    <tr><td>풀코스 PB 도전 + Sub-3:15 ~ 3:30</td><td><strong>엔돌핀 프로 5</strong></td><td>-14g + 슬롯 플레이트 결정적</td></tr>
+    <tr><td>풀코스 PB 도전 + Sub-3:15 ~ 3:30</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 + 전족부 에너지 리턴 75.8%(실측)</td></tr>
     <tr><td>풀코스 + 하프 둘 다 출전</td><td>둘 다 OK (취향)</td><td>v5는 풀코스 강점, v4는 하프 가성비</td></tr>
     <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의</td><td>안정성 5/10, 안정화 분리 검토</td></tr>
   </tbody>
@@ -4075,9 +4075,9 @@ export const posts_2026_05: BlogPost[] = [
     <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
   </thead>
   <tbody>
-    <tr><td>무릎 통증 이력</td><td><strong>엔돌핀 프로 5</strong></td><td>39.5mm 스택 + 듀얼 폼 충격 흡수</td></tr>
-    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (8mm 드롭)</td><td>9mm 드롭의 베이퍼·알파보다는 OK</td></tr>
-    <tr><td>족저근막염</td><td>v4 (good) > v5 (caution)</td><td>v4의 HA 13.6 소프트 폼이 발바닥 친화</td></tr>
+    <tr><td>무릎 통증 이력</td><td><strong>엔돌핀 프로 5</strong></td><td>브랜드 공식 39.5mm 스택(실측 힐 36.5mm) + 듀얼 폼 충격 흡수</td></tr>
+    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (공식 8mm 드롭, 실측 v4 9.5mm·v5 8.7mm)</td><td>9mm 드롭의 베이퍼·알파보다는 OK</td></tr>
+    <tr><td>족저근막염</td><td>v4 (good) > v5 (caution)</td><td>v4 경도 35.1 AC(RunRepeat 실측, 평균 수준) — v5(33.3 AC)와 경도 차이는 작음</td></tr>
     <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 5/10)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
     <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (76mm)</td></tr>
     <tr><td>슈퍼슈즈 첫 도전 + 부상 우려</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 안정감 (토박스는 좁은 편)</td></tr>
@@ -4101,7 +4101,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. v4 → v5 업그레이드 가치 있나요?</h3>
-<p>v4가 200km 이내 신었다면 그냥 v4 굴리세요. <strong>핵심 업그레이드 가치는 경량화 + 슬롯 플레이트</strong>이고 토박스는 오히려 좁아졌습니다(72.5→69.3mm). v4가 발에 맞았다면 v4 이월 가성비가 훨씬 합리적입니다.</p>
+<p>v4가 200km 이내 신었다면 그냥 v4 굴리세요. <strong>핵심 업그레이드 가치는 슬롯 플레이트 + 에너지 리턴 개선(전족부 71.5→75.8%, 실측)</strong>이고 무게는 5g 가벼워진 정도이며, 토박스는 오히려 좁아졌습니다(72.5→69.3mm). v4가 발에 맞았다면 v4 이월 가성비가 훨씬 합리적입니다.</p>
 
 <h3>Q. 첫 카본 슈즈인데 엔돌핀 프로가 베이퍼/알파보다 나은 이유?</h3>
 <p>세 가지: ① <strong>전족부 플랫폼이 넓어 안정성 우위</strong> (v4 118.9mm 광폭), ② <strong>가격이 5~10만원 저렴</strong>, ③ <strong>슬롯 플레이트로 전환이 안정적</strong>(단 v5 토박스는 69.3mm로 좁은 편이라 발볼이 넓다면 주의). 베이퍼·알파는 Sub-3급 엘리트 전용 색이 강해서 입문에 부담스러움.</p>
@@ -4155,7 +4155,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
 </ul>
 
-<p><small>출처: RunRepeat 엔돌핀 프로 4 랩 데이터(SA 139, HA 13.6, 에너지 리턴 71.7%) + Believe in the Run 양 신발 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). v5 RunRepeat 랩 데이터는 작성 시점 일부 미게시 상태라 v5 에너지 리턴은 표기하지 않았습니다. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><small>출처: RunRepeat 엔돌핀 프로 4 랩 데이터(SA 139, 경도 35.1 AC, 에너지 리턴 71.7%) + 프로 5 랩 데이터(215g, 에너지 리턴 힐 72.8%·전족부 75.8%) + Believe in the Run 양 신발 리뷰 + 한국 사우코니 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
 `,
   },
   {

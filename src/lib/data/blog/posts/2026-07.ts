@@ -3111,7 +3111,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'saucony-paramount-max-preview-2026',
     title: '써코니 파라마운트 맥스란 | 카본 없이 레이싱 폼만 넣은 신개념 슈퍼트레이너 (한국 미출시)',
     description:
-      '써코니가 7월 1일 미국에서 출시한 파라마운트 맥스는 엔돌핀 엘리트 3에 쓰이는 IncrediRUN 폼을 카본 플레이트 없이 데일리 트레이너에 그대로 넣은 신규 라인입니다. 43mm 힐 스택의 맥스쿠션에 레이싱급 반발력을 얹어 "이지런·회복런 전용 슈퍼트레이너"로 포지셔닝했습니다. 다만 한국 공식 사이트엔 아직 등재되지 않았습니다 — 확인된 스펙과 리뷰를 정리했습니다.',
+      '써코니가 7월 1일 미국에서 출시한 파라마운트 맥스는 엔돌핀 엘리트 3에 쓰이는 IncrediRUN 폼을 카본 플레이트 없이 데일리 트레이너에 그대로 넣은 신규 라인입니다. 브랜드 공식 43mm 힐 스택(RunRepeat 실측 42.1mm)의 맥스쿠션에 레이싱급 반발력을 얹어 "이지런·회복런 전용 슈퍼트레이너"로 포지셔닝했습니다. 한국 공식몰에는 259,000원으로 등재돼 있습니다(2026-10-20 확인) — 확인된 스펙과 리뷰를 정리했습니다.',
     thumbnail: '/images/blog/saucony-paramount-max-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-14',
@@ -3124,7 +3124,7 @@ export const posts_2026_07: BlogPost[] = [
   <ul>
     <li><strong>써코니가 7월 1일 미국에 새 라인 "파라마운트 맥스"를 출시</strong> — 가격 $199.95, 힐 43mm/전족 37mm의 맥스쿠션</li>
     <li><strong>엔돌핀 엘리트 3와 같은 IncrediRUN 폼을 풀렝스로 넣되 카본 플레이트는 없는 "논-플레이트 슈퍼트레이너"</strong>입니다 — 레이싱 폼을 매일 신는 트레이너에 옮긴 셈이죠</li>
-    <li><strong>한국 공식 사이트(saucony.co.kr)엔 아직 등재되지 않았습니다.</strong> 국내 정식 출시는 미확정입니다</li>
+    <li><strong>작성 당시엔 한국 공식 사이트(saucony.co.kr)에 없었지만, 현재는 259,000원으로 등재돼 있습니다</strong>(2026-10-20 확인)</li>
   </ul>
 </div>
 
@@ -3132,12 +3132,12 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">👀</span>
   <div class="callout-body">
     <p class="callout-title">확인된 사실 — 공식 스펙</p>
-    <p>파라마운트 맥스는 써코니 공식 사이트를 통해 <strong>2026년 7월 1일 미국에서 출시</strong>됐습니다. 가격은 <strong>$199.95</strong>, 무게는 남성 302g(US 9)·여성 250g(US 8), <strong>힐 스택 43mm·전족 37mm·드롭 6mm</strong>로 상당한 맥스쿠션입니다. 미드솔은 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>에 쓰이는 슈퍼크리티컬 TPEE 폼 IncrediRUN을 <strong>풀렝스로 채택하되, 일상 훈련 내구성을 위해 약 17% 더 단단하게(firmer) 튜닝</strong>했습니다. 카본 플레이트는 없습니다. 다만 <strong>RunRepeat 정량 랩 데이터는 아직 게시되지 않았고(페이지 자체가 존재하지 않음)</strong>, 한국 공식 사이트에도 등재되지 않아 국내 출시 여부·시기는 확인되지 않았습니다.</p>
+    <p>파라마운트 맥스는 써코니 공식 사이트를 통해 <strong>2026년 7월 1일 미국에서 출시</strong>됐습니다. 가격은 <strong>$199.95</strong>, 무게는 남성 302g(US 9)·여성 250g(US 8), <strong>힐 스택 43mm·전족 37mm·드롭 6mm</strong>로 상당한 맥스쿠션입니다. 미드솔은 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>에 쓰이는 슈퍼크리티컬 TPEE 폼 IncrediRUN을 <strong>풀렝스로 채택하되, 일상 훈련 내구성을 위해 약 17% 더 단단하게(firmer) 튜닝</strong>했습니다. 카본 플레이트는 없습니다. 이후 게시된 <strong>RunRepeat 랩 실측은 무게 272g(US 9)·힐 42.1mm/전족 36.4mm·드롭 5.7mm·토박스 70.4mm(평균 73.2mm, 좁음)</strong>이고, 한국 공식몰에는 259,000원으로 등재돼 있으며 국내 와이드 옵션은 없습니다(2026-10-20 확인).</p>
   </div>
 </div>
 
 <h2>파라마운트 맥스, 왜 주목할 만한가</h2>
-<p>이 사이트에서 이미 다룬 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전(슈퍼블라스트 3 vs 에보 SL vs 마하 6)</a>은 "카본 플레이트 없이 레이싱급 폼만 데일리 트레이너에 넣은" 카테고리를 다뤘습니다. 파라마운트 맥스는 여기에 합류하는 새 진입자인데, 성격이 좀 다릅니다. 기존 3파전이 반응성·균형 중심이었다면, <strong>파라마운트 맥스는 43mm 힐 스택의 "맥스쿠션 회복 전용"</strong>에 가깝습니다. Believe in the Run의 리뷰 제목부터가 <strong>"매일 IncrediRUN 폼을 신을 수 있을까? 파라마운트 맥스는 그렇다고 답한다"</strong>입니다 — 레이싱 전용 폼을 얼마나 순화해서 일상화에 옮겼는지가 핵심 메시지인 셈이죠.</p>
+<p>이 사이트에서 이미 다룬 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전(슈퍼블라스트 3 vs 에보 SL vs 마하 6)</a>은 "카본 플레이트 없이 레이싱급 폼만 데일리 트레이너에 넣은" 카테고리를 다뤘습니다. 파라마운트 맥스는 여기에 합류하는 새 진입자인데, 성격이 좀 다릅니다. 기존 3파전이 반응성·균형 중심이었다면, <strong>파라마운트 맥스는 힐 스택 43mm(브랜드 공식, RunRepeat 실측 42.1mm)의 "맥스쿠션 회복 전용"</strong>에 가깝습니다. Believe in the Run의 리뷰 제목부터가 <strong>"매일 IncrediRUN 폼을 신을 수 있을까? 파라마운트 맥스는 그렇다고 답한다"</strong>입니다 — 레이싱 전용 폼을 얼마나 순화해서 일상화에 옮겼는지가 핵심 메시지인 셈이죠.</p>
 
 <h2>엔돌핀 라인과는 다른, 완전히 새로운 라인</h2>
 <p>파라마운트 맥스는 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 스피드5·프로5·엘리트3</a>의 후속이나 파생 모델이 아닙니다. <strong>폼 소재만 엔돌핀 엘리트 3와 공유할 뿐, "파라마운트"라는 완전히 별도의 신규 라인</strong>으로 신설됐습니다. 엔돌핀 라인이 카본·너브 플레이트 기반의 레이싱-투-데일리 스펙트럼을 담당한다면, 파라마운트 맥스는 <strong>"레이싱 폼만 가져오고 플레이트는 뺀" 맥스쿠션 전용 라인</strong>으로 이해하면 됩니다.</p>
@@ -3155,6 +3155,7 @@ export const posts_2026_07: BlogPost[] = [
   </tbody>
 </table>
 </div>
+<p><small>※ 위 표는 Believe in the Run 리뷰어의 평가입니다. 핏은 RunRepeat 실측 토박스가 70.4mm(평균 73.2mm)로 좁은 편이고 국내 와이드 옵션도 없으니, 발볼이 넓다면 시착을 권합니다.</small></p>
 
 <h2>한국 출시는?</h2>
 <p>이 글 작성 시점 기준, <strong>saucony.co.kr에 파라마운트 맥스는 등재되지 않았습니다.</strong> 국내 러닝 커뮤니티·쇼핑몰 검색에서도 관련 언급을 찾지 못했습니다. 미국 출시 2주 남짓 시점이라 국내 출시 여부 자체가 아직 정해지지 않았을 가능성이 높습니다. 국내에서 비슷한 성격의 신발을 지금 당장 신어보고 싶다면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>에서 비교한 모델들이 현실적인 대안입니다.</p>
@@ -3162,15 +3163,15 @@ export const posts_2026_07: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">정보성 프리뷰 — 한국 미출시</p>
-    <p>파라마운트 맥스는 이 글 작성 시점 기준 <strong>한국 공식 출시가 확인되지 않은 모델</strong>입니다. 국내 판매처·정가가 정해지면 별도로 리뷰를 갱신하거나 신발 데이터베이스에 추가하겠습니다. RunRepeat 정량 랩 데이터(SA·경도·토박스mm)도 아직 게시되지 않았습니다.</p>
+    <p class="callout-title">정보성 프리뷰 — 작성 시점 기준 한국 미출시</p>
+    <p>파라마운트 맥스는 이 글 작성 시점 기준 <strong>한국 공식 출시가 확인되지 않은 모델</strong>입니다. 국내 판매처·정가가 정해지면 별도로 리뷰를 갱신하거나 신발 데이터베이스에 추가하겠습니다. RunRepeat 정량 랩 데이터는 이후 게시돼 충격흡수 힐 165 SA, 경도 28.3 AC, 토박스 70.4mm로 나왔습니다.</p>
   </div>
 </div>
 
 <h2>마무리</h2>
-<p>파라마운트 맥스는 "레이싱 폼을 일상화로"라는 최근 트렌드의 연장선에 있는 흥미로운 시도입니다. 다만 국내 출시가 아직 불확실하니, 당장 비슷한 슈퍼트레이너를 찾는다면 이미 국내에서 살 수 있는 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a> 쪽을 먼저 살펴보는 걸 권합니다.</p>
+<p>파라마운트 맥스는 "레이싱 폼을 일상화로"라는 최근 트렌드의 연장선에 있는 흥미로운 시도입니다. 작성 당시엔 국내 출시가 불확실했지만 지금은 한국 공식몰에 259,000원으로 등재돼 있으니(2026-10-20 확인), 구매를 고민한다면 같은 성격의 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a> 쪽과 함께 비교해 보는 걸 권합니다.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 써코니 공식 발표(2026-07-01)와 Believe in the Run 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 출시 여부·정가와 RunRepeat 정량 랩 데이터는 미확정 상태로, 확인되는 대로 업데이트합니다. (작성 2026-07-14)</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 써코니 공식 발표(2026-07-01)와 Believe in the Run 리뷰를 바탕으로 한 정보성 프리뷰입니다. 한국 정가(259,000원)와 RunRepeat 정량 랩 데이터는 2026-10-20 확인 기준으로 반영했습니다. (작성 2026-07-14)</p>
 `,
   },
   {
@@ -4533,7 +4534,7 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000</td><td>193g</td><td>입문 카본</td><td>첫 카본화, 훈련+레이스 겸용 가성비</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></td><td>299,000</td><td>200g</td><td>레이스(마라톤)</td><td>풀코스 기록 도전(발볼 좁음)</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>206g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>215g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000</td><td>166g</td><td>레이스(스피드)</td><td>166g 초경량, 5K~하프 스피드</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a></td><td>319,000</td><td>198g</td><td>레이스(넓은 발)</td><td>발볼 넓어도 신는 슈퍼슈즈(74.5mm)</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000</td><td>201g</td><td>레이스(풀 끝판)</td><td>풀코스 최대 추진, 상급자용</td></tr>
@@ -5515,7 +5516,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     title: '템포 트레이너 3파전 | 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5 — 훈련·레이스 겸용, 뭘 신지',
-    description: '"훈련도 하고 하프 레이스도 뛰고 싶은데 한 켤레로 안 될까?"에 답하는 20만원 안팎 템포 트레이너 세 켤레를 정면 비교했습니다. 아디다스 보스턴 13(유리섬유 Energy Rods·컨티넨탈 그립·550km 가성비), 나이키 줌 플라이 6(풀 카본·40mm 스택·베이퍼플라이 DNA), 써코니 엔돌핀 스피드 5(73.2% 반발·나일론 플레이트·부드러운 매일 훈련). 플레이트 종류부터 발볼·내구·가성비까지, 내 훈련에 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
+    description: '"훈련도 하고 하프 레이스도 뛰고 싶은데 한 켤레로 안 될까?"에 답하는 20만원 안팎 템포 트레이너 세 켤레를 정면 비교했습니다. 아디다스 보스턴 13(유리섬유 Energy Rods·컨티넨탈 그립·550km 가성비), 나이키 줌 플라이 6(풀 카본·40mm 스택·베이퍼플라이 DNA), 써코니 엔돌핀 스피드 5(힐 73.2% 반발·나일론 플레이트·부드러운 매일 훈련). 플레이트 종류부터 발볼·내구·가성비까지, 내 훈련에 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
     thumbnail: '/images/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-03',
@@ -5527,7 +5528,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>셋 다 "훈련+레이스 겸용" 템포 트레이너지만 플레이트 성격이 다릅니다</strong> — 보스턴 13은 유리섬유 Energy Rods, 줌 플라이 6은 풀 카본, 엔돌핀 스피드 5는 나일론(유연)</li>
-    <li><strong>가성비·내구·그립 → 보스턴 13</strong>(179k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(73.2% 리턴)</li>
+    <li><strong>가성비·내구·그립 → 보스턴 13</strong>(179k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(힐 73.2%·전족 78.2% 리턴)</li>
     <li>발볼 넓은 한국 러너는 <strong>줌 플라이 6(좁음) 주의</strong>, 보스턴·엔돌핀은 표준이라 무난합니다</li>
   </ul>
 </div>
@@ -5551,7 +5552,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>6mm</td><td>10mm</td><td>10.6mm</td></tr>
     <tr><td>미드솔</td><td>Lightstrike Pro</td><td>ZoomX+SR-02</td><td>PWRRUN PB(PEBA)</td></tr>
     <tr><td><strong>플레이트</strong></td><td>유리섬유 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td>높음</td><td>61%</td><td><strong>73.2%(최고)</strong></td></tr>
+    <tr><td>에너지 리턴</td><td>높음</td><td>61%</td><td><strong>힐 73.2%·전족 78.2%(최고)</strong></td></tr>
     <tr><td>아웃솔</td><td><strong>컨티넨탈(그립최강)</strong></td><td>러버</td><td>XT-900 러버</td></tr>
     <tr><td><strong>발볼</strong></td><td>표준</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
     <tr><td>안정성</td><td><strong>높음(8)</strong></td><td>중(7)</td><td>낮음(5)</td></tr>
@@ -5572,8 +5573,8 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 풀카본 추진력을 원하는 러너 / 빠른 템포·인터벌 / 발볼 표준~좁음 / 카본 플레이트 입문</p>
 
 <h2>엔돌핀 스피드 5 — 부드러운 반발, 매일 굴리는 갓성비</h2>
-<p><a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a>는 러닝 커뮤니티에서 "가성비 갓신발"로 불립니다. 21만9천원에 <strong>73.2% 에너지 리턴</strong>은 슈퍼슈즈급 수치인데, 핵심은 <strong>나일론 플레이트</strong>라는 점입니다. 카본보다 유연해 <strong>매일 훈련에 투입해도 발·아킬레스 부담이 적고</strong>, 241g 최경량에 통기성도 좋아 여름 템포런에 쾌적합니다.</p>
-<p>즉 줌 플라이 6이 "빳빳한 풀카본 스피드"라면, 엔돌핀 스피드 5는 "부드럽게 반발하는 매일 훈련화"입니다. 서브4 목표 러너가 슈퍼슈즈 사기 전 실력을 키우는 훈련화로 최적이고, 하프 레이스에도 그대로 투입할 수 있죠. 안정성은 5로 낮은 편이라 과내전이 심하면 주의하세요. 발볼은 표준입니다.</p>
+<p><a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a>는 21만9천원에 <strong>힐 73.2%·전족부 78.2% 에너지 리턴</strong>(RunRepeat 실측)을 내는데, 이는 슈퍼슈즈급 수치이고 핵심은 <strong>나일론 플레이트</strong>라는 점입니다. 카본보다 유연해 <strong>매일 훈련에 투입해도 발·아킬레스 부담이 적고</strong>, 241g 최경량에 통기성도 좋아 여름 템포런에 쾌적합니다.</p>
+<p>즉 줌 플라이 6이 "빳빳한 풀카본 스피드"라면, 엔돌핀 스피드 5는 "부드럽게 반발하는 매일 훈련화"입니다. 서브4 목표 러너가 슈퍼슈즈 사기 전 실력을 키우는 훈련화로 최적이고, 하프 레이스에도 그대로 투입할 수 있죠. 안정성은 5로 낮은 편이라 과내전이 심하면 주의하세요. 발볼은 표준이고, 한국 공식몰에 남녀 와이드도 있습니다(2026-10-20 확인).</p>
 <p><strong>✅ 이런 분께</strong> — 매일 템포·인터벌을 부드럽게 / 슈퍼슈즈 입문 전 훈련화 / 최경량·통기성 선호 / 나일론 플레이트의 유연함</p>
 
 <h2>내 훈련엔 뭘 신을까</h2>
@@ -5581,7 +5582,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>"한 켤레로 오래, 가성비 좋게, 비오는 날도"</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 179k·550km·컨티넨탈 그립으로 만능입니다.</li>
   <li><strong>"빠른 페이스에서 풀카본 추진력"</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 단 발볼이 좁으니 넓은 발은 피하세요.</li>
   <li><strong>"매일 부드럽게 굴리는 훈련화, 발·관절 부담 적게"</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 나일론 플레이트라 유연하고 73% 반발입니다.</li>
-  <li><strong>"발볼이 넓다"</strong> → 보스턴 13이나 엔돌핀 스피드 5(둘 다 표준). 줌 플라이 6(좁음)은 비추천.</li>
+  <li><strong>"발볼이 넓다"</strong> → 보스턴 13이나 엔돌핀 스피드 5(둘 다 표준, 엔돌핀은 와이드도 있음). 줌 플라이 6(좁음)은 비추천.</li>
   <li><strong>"이것보다 더 두껍고 부드러운 고스택 슈퍼트레이너"</strong> → <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을 보세요. 레이스 당일용 풀 카본 레이서는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 상위 모델입니다.</li>
 </ul>
 <p>카본·나일론 플레이트의 원리와 입문 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>에서 더 깊게 정리했습니다.</p>
@@ -5598,7 +5599,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 셋 다 괜찮나요?</p>
-    <p class="faq-a">A. <strong>줌 플라이 6은 발볼이 좁아(narrow) 비추천</strong>입니다. 보스턴 13·엔돌핀 스피드 5는 표준이라 보통 발볼은 무난하지만, 셋 다 와이드 옵션은 없어 매우 넓은 발은 시착을 권합니다.</p>
+    <p class="faq-a">A. <strong>줌 플라이 6은 발볼이 좁아(narrow) 비추천</strong>입니다. 보스턴 13·엔돌핀 스피드 5는 표준이라 보통 발볼은 무난합니다. 보스턴 13·줌 플라이 6은 와이드 옵션이 없지만 엔돌핀 스피드 5는 한국 공식몰에 남녀 와이드가 있으니(2026-10-20 확인), 매우 넓은 발이라면 엔돌핀 스피드 5 와이드를 시착해 보길 권합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 하프마라톤 레이스에 그대로 신어도 되나요?</p>
@@ -5987,7 +5988,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 날렵, 하프~풀 밸런스. 슈퍼슈즈 입문에 무난.</li>
   <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — EnergyRods(카본 막대)로 자연스러운 롤링, 장거리 안정.</li>
   <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 스트라이드(보폭)형 러너용, 토박스 넉넉해 한국 발볼 친화.</li>
-  <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a> — 최근 출시된 포크형 카본 레이서, 넓어진 직각 토박스.</li>
+  <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a> — 최근 출시된 포크형 카본 레이서, 토박스는 71.8mm로 좁은 편(RunRepeat "heavily tapered").</li>
 </ul>
 <p>On 라인업 전체에서 클라우드붐 스트라이크가 어디에 위치하는지는 <a href="/blog/on-running-shoes-lineup-tier-guide-2026">온 러닝화 계급도</a>에서 한눈에 볼 수 있고, 데일리 On 슈퍼폼이 궁금하다면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3</a>도 함께 참고하세요.</p>
 
