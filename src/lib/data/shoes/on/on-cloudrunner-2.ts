@@ -97,7 +97,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: 'CloudTec 러버',
     upper: '엔지니어드 메쉬',
-    width: '표준 (토박스 72.4mm · 한국 와이드 없음 / 미국 Wide SKU)',
+    width: '표준 — 토박스 72.4mm(RunRepeat 실측, 엄지 부위·US 9; 같은 랩 평균 73.2mm보다 0.8mm 좁음), 최대폭 94.6mm. 랩 본문 "not sharply tapered… more or less an average result". 한국 공식몰 2026-10-20 미등재 — 해외에는 Wide',
     durability: '500km',
     price: '₩189,000 (과거 MSRP · 한국 공식 단종)',
     costPerKm: '약 ₩378/km (500km 기준)',

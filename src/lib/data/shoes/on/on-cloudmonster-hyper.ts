@@ -96,7 +96,7 @@ export const shoe: Shoe = {
     plate: '없음 — 하이퍼 라인은 Speedboard 미탑재 (일반 클라우드몬스터에는 들어감)',
     outsole: 'CloudTec 러버 (경도 실측 86.0 HC, 두께 2.8mm, 마모 0.6mm)',
     upper: '엔지니어드 메쉬 (통기성 실측 3/5 — 상위 3 하이퍼보다 시원함. 단 힐 패딩 내구성 1/5)',
-    width: '표준 (RunRepeat 토박스 실측 최대 97.9mm / 엄지 73.3mm, 높이 26.6mm) / 와이드 옵션 없음',
+    width: '표준 — 토박스 73.3mm(RunRepeat 실측, 엄지 부위·US 9; 같은 랩 평균 73.2mm와 거의 같음), 최대폭 97.9mm(평균 95.2mm), 높이 26.6mm. 랩 본문 "an average taper that provides decent room for toe splay". 한국 공식몰(2026-10-20) 일반판 미등재 — 와이드 없음',
     durability: '약 450km (아웃솔 마모 실측 0.6mm 기준 — 다만 힐 패딩 내구성이 1/5로 낮아 뒤꿈치 형태 유지는 불리)',
     price: '₩259,000 (MSRP)',
     costPerKm: '약 ₩576/km (450km 기준)',
