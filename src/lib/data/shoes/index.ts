@@ -13,6 +13,7 @@ import { brooksShoes } from './brooks';
 import { mizunoShoes } from './mizuno';
 import { onShoes } from './on';
 import { liningShoes } from './lining';
+import { merrellShoes } from './merrell';
 import { salomonShoes } from './salomon';
 
 // Re-export from types/shoe.ts to keep a single source of truth
@@ -30,6 +31,7 @@ export const shoes: Shoe[] = [
   ...mizunoShoes,
   ...pumaShoes,
   ...liningShoes,
+  ...merrellShoes,
   ...salomonShoes,
 ];
 

@@ -268,3 +268,24 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: sharp 800px WebP q85 (--skip-bg)
 - Date: 2026-10-09
 - Images: 6 (side=_00 외측, outsole=_02, detail=_03 내측, top=_04, back=_05, angle=_11)
+
+## Merrell Agility Peak 6
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=2891, [남성] 어질리티 피크 6 BLACK, M26A1-MLC300)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680~1000px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)
+
+## Merrell Trail Glove 8
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=2904, [남성] 트레일 글러브 8 BLACK, M26A1-MBL330)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680~1000px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)
+
+## Merrell MTL SpeedArc Peak
+- Source: 머렐 한국 공식몰 상품 상세 (product_no=3071, [공용] MTL 스피드아크 피크 BLACK)
+- CDN: merrellkorea.co.kr/web/product/big·extra/big 공식 JPG (680px)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
+- Date: 2026-10-20
+- Images: 5 (side, angle, back, top, outsole)

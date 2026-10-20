@@ -33,6 +33,7 @@ const brandSlugMap: Record<string, string> = {
   Mizuno: 'mizuno',
   Puma: 'puma',
   'Li-Ning': 'li-ning',
+  Merrell: 'merrell',
   Salomon: 'salomon',
 };
 
