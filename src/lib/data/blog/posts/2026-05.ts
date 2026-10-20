@@ -3663,7 +3663,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>토박스</strong></td><td>standard (72.3mm)</td><td><strong>narrow (71.6mm)</strong></td><td>v3가 0.7mm 더 좁음 (RunRepeat 실측)</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td><strong>✅ 있음</strong></td><td><strong>❌ 없음</strong></td><td>v3에서 제거 (한국 러너 단점)</td></tr>
     <tr><td><strong>쿠셔닝</strong></td><td>9/10</td><td><strong>10/10</strong></td><td>+1 (최상위)</td></tr>
-    <tr><td><strong>반응성</strong></td><td>10/10</td><td>9/10</td><td>-1 (부드러워짐)</td></tr>
+    <tr><td><strong>반응성</strong></td><td>8/10</td><td>8/10</td><td>동일</td></tr>
     <tr><td><strong>안정성</strong></td><td>7/10</td><td>6/10</td><td>-1 (스택 ↑ 대가)</td></tr>
     <tr><td><strong>내구성</strong></td><td>500km</td><td>550km</td><td>+50km</td></tr>
     <tr><td><strong>Cost/km (정가)</strong></td><td>약 520원</td><td>약 471원</td><td>-49원</td></tr>
