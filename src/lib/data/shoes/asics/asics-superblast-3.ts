@@ -19,12 +19,12 @@ export const shoe: Shoe = {
   price: 259000,
   description:
     'FF LEAP와 FF BLAST PLUS를 조합한 아식스의 최신 슈퍼트레이너. 더 부드럽고 바운시해진 라이드로 롱런, 마라톤 훈련, 업템포까지 넓게 커버합니다.',
-  oneliner: '239g 슈퍼트레이너, 더 부드럽고 더 빠르게 돌아온 슈블',
+  oneliner: '실측 235g 슈퍼트레이너, 더 부드럽고 더 빠르게 돌아온 슈블',
   editorComment:
-    '슈퍼블라스트 3는 전작의 뻣뻣함과 좁은 핏을 손보면서 "슈퍼트레이너"라는 이름값을 다시 회복하려는 업데이트입니다. 46.5/38.5mm 스택에 239g이면 한국 시장 기준으로도 매우 강한 스펙이고, FF LEAP가 들어가면서 easy run보다 롱런과 업템포에서 진가가 크게 살아납니다. 공식 가격 25만 9천원은 여전히 높지만, 레이싱화와 훈련화 사이를 한 켤레로 메우고 싶은 러너라면 충분히 납득 가능한 가격대입니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 와이드 옵션이 없어, 발볼이 넓은 러너는 반드시 매장에서 신어보고 결정하세요. 정가 259,000원에 내구성 550km 기준 km당 약 471원으로, 슈퍼트레이너 카테고리에서 합리적인 편입니다. 같은 용도로 카본 없이 부드러운 롱런을 원하면 엔돌핀 트레이너, 가격 부담을 줄이려면 줌 플라이 6가 대안입니다.',
+    '슈퍼블라스트 3는 전작의 뻣뻣함과 좁은 핏을 손보면서 "슈퍼트레이너"라는 이름값을 다시 회복하려는 업데이트입니다. RunRepeat 실측 힐 45.8mm·전족 37.7mm 스택에 235g(남성 US 9)이면 매우 강한 스펙이고, FF LEAP가 들어가면서 easy run보다 롱런과 업템포에서 진가가 크게 살아납니다. 공식 가격 25만 9천원은 여전히 높지만, 레이싱화와 훈련화 사이를 한 켤레로 메우고 싶은 러너라면 충분히 납득 가능한 가격대입니다.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 71.6mm로 랩 평균(73.2mm)보다 좁고 와이드 옵션이 없어, 발볼이 넓은 러너는 반드시 매장에서 신어보고 결정하세요. 정가는 259,000원입니다. 같은 용도로 카본 없이 부드러운 롱런을 원하면 엔돌핀 트레이너, 가격 부담을 줄이려면 줌 플라이 6가 대안입니다.',
   tags: ['슈퍼트레이너', '고반발', '장거리', '업템포'],
   specs: {
-    weight: 239,
+    weight: 235,
     cushioning: 10,
     responsiveness: 9,
     stability: 6,
@@ -32,7 +32,7 @@ export const shoe: Shoe = {
     durability: 550,
   },
   biomechanics: {
-    stackHeight: { heel: 46.5, forefoot: 38.5 },
+    stackHeight: { heel: 45.8, forefoot: 37.7 },
     drop: 8,
     carbonPlate: false,
     plateType: null,
@@ -46,7 +46,7 @@ export const shoe: Shoe = {
     shinSplints: 'good',
   },
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'fair',
     wideOptions: false,
     winterCompatibility: 'good',
@@ -57,7 +57,7 @@ export const shoe: Shoe = {
     notRecommended: ['안정성이 최우선인 러너', '입문 단계의 첫 러닝화를 찾는 러너', '강한 교정이 필요한 러너'],
   },
   features: [
-    '46.5/38.5mm 스택, 8mm 드롭의 최신 슈퍼트레이너',
+    '공식 46.5/38.5mm 스택(RunRepeat 실측 45.8/37.7mm), 8mm 드롭의 최신 슈퍼트레이너',
     '아식스 코리아 기준 239g, 공식 가격 ₩259,000',
     'FF LEAP + FF BLAST PLUS 조합으로 부드럽고 바운시한 전환',
     '전작보다 넓어진 토박스와 더 매끈한 힐 전환',
@@ -72,14 +72,14 @@ export const shoe: Shoe = {
     alternatives: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
   },
   detailedSpecs: {
-    weight: '239g (공식 기준)',
-    stackHeight: '힐 46.5mm / 포어풋 38.5mm',
-    drop: '8mm',
+    weight: '235g (RunRepeat 랩 실측, 남성 US 9) · 기존 표기 239g(아식스 코리아 기준, 이번에 미확인)',
+    stackHeight: '힐 45.8mm / 포어풋 37.7mm (RunRepeat 랩 실측, 남성 US 9) · 공식 46.5/38.5mm(기존 표기)',
+    drop: '공식 8mm / RunRepeat 실측 8.1mm',
     midsole: 'FF LEAP + FF BLAST PLUS',
     plate: '없음',
     outsole: 'ASICSGRIP + AHAR Lo',
     upper: '엔지니어드 우븐',
-    width: '표준',
+    width: '좁음 — RunRepeat 토박스 71.6mm(랩 평균 73.2mm보다 1.6mm 좁음, 남성 US 9) · 최대폭 95.7mm(평균 95.2mm). RunRepeat: "ASICS continues to favor a toebox that does not open much, targeting runners who prefer a secure and snug fit. In fact, it falls below our lab average at 71.6 mm." → 랩 본문이 snug를 명시해 narrow · 와이드 없음(기존 표기 — 한국 공식몰 미확인)',
     durability: '500-600km',
     price: '₩259,000 (MSRP)',
     costPerKm: '약 ₩471/km (550km 기준)',
@@ -90,15 +90,15 @@ export const shoe: Shoe = {
     {
       userType: '에디터 분석',
       rating: 93,
-      text: '"레이싱화와 훈련화 사이를 한 켤레로 커버하고 싶다"는 러너에게 추천하는 아식스 최신 슈퍼트레이너입니다. FF LEAP + FF BLAST PLUS 듀얼 폼으로 239g에 46.5mm 힐 스택을 실현했고, 반응성이 확실히 개선됐습니다. 전작 대비 토박스가 넓어져 발볼 넓은 러너도 편해졌으며, 힐 전환도 훨씬 부드러워졌습니다. 8mm 드롭과 중립 설계로 과내전이 없는 한국 러너에게 적합합니다. 25만 9천원에 550km 내구성으로 km당 약 471원, 슈퍼슈즈(km당 약 471원 이상)보다 훈련 비용이 절반 이하입니다. 단, 와이드 옵션이 없고 안정성이 다소 부족해 발볼 매우 넓거나 평발인 러너는 주의가 필요합니다. 무릎 보호를 위해서라면 높은 스택이 도움이 되지만 안정화 수준은 아닙니다.',
+      text: '"레이싱화와 훈련화 사이를 한 켤레로 커버하고 싶다"는 러너에게 추천하는 아식스 최신 슈퍼트레이너입니다. FF LEAP + FF BLAST PLUS 듀얼 폼으로 RunRepeat 실측 235g(남성 US 9)에 힐 45.8mm 스택을 실현했고, 전족 에너지 리턴도 67.5%(실측)로 높습니다. 다만 토박스는 실측 71.6mm로 전작(72.3mm)보다 넓어지지 않았고, 힐 전환은 훨씬 부드러워졌습니다. 8mm 드롭과 중립 설계로 과내전이 없는 한국 러너에게 적합합니다. 단, 와이드 옵션이 없고 안정성이 다소 부족해 발볼 매우 넓거나 평발인 러너는 주의가 필요합니다. 무릎 보호를 위해서라면 높은 스택이 도움이 되지만 안정화 수준은 아닙니다.',
     },
     {
         userType: '예상 적합 — 마라톤 페이스런과 롱런을 겸하는 훈련화',
-        text: '마라톤 페이스런과 28km급 롱런을 한 켤레로 소화하려는 러너에게 활용 폭이 넓은 슈퍼트레이너입니다. 46.5mm의 높은 스택이라 20km 이후 다리에 쌓이는 피로를 줄이면서, 239g으로 고스택 치고 가벼워 페이스를 올릴 때도 둔하지 않습니다. FF LEAP과 FF BLAST PLUS 조합으로 전작보다 힐 착지 후 전환이 부드러워진 것이 세대 차이입니다. 레이서는 대회 전용으로 아끼고 훈련 부하를 이쪽으로 몰 수 있어, 신발 운용 전체의 비용을 낮추는 역할을 합니다. 259,000원·내구성 550km 기준 km당 약 471원이며, 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다.',
+        text: '마라톤 페이스런과 28km급 롱런을 한 켤레로 소화하려는 러너에게 활용 폭이 넓은 슈퍼트레이너입니다. 힐 45.8mm(실측)의 높은 스택이라 20km 이후 다리에 쌓이는 피로를 줄이면서, 실측 235g으로 고스택 치고 가벼워 페이스를 올릴 때도 둔하지 않습니다. FF LEAP과 FF BLAST PLUS 조합으로 전작보다 힐 착지 후 전환이 부드러워진 것이 세대 차이입니다. 레이서는 대회 전용으로 아끼고 훈련 부하를 이쪽으로 몰 수 있어, 신발 운용 전체의 비용을 낮추는 역할을 합니다. 정가 259,000원이며, 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다.',
       },
     {
-        userType: '세대 비교 — 전작의 좁은 토박스가 개선',
-        text: '전작에서 토박스가 답답해 오래 신지 못했다면 이 세대에서 해소됩니다. 토박스가 확실히 넓어져 발볼이 있는 경우에도 발가락 압박이 줄었습니다. 239g으로 46.5mm 고스택치고 가벼워 10km 템포부터 25km LSD까지 한 켤레로 커버되고, 스택이 높아 아스팔트 충격 흡수도 확보됩니다. 259,000원·내구성 550km 기준 km당 약 471원으로, 최상위 레이서 절반 수준 가격에 훈련 전반을 소화합니다. 다만 중립 발 기준 설계라 과내전이 뚜렷하면 안정성이 부족할 수 있습니다.',
+        userType: '세대 비교 — 무게는 줄고 토박스 폭은 그대로',
+        text: '전작에서 토박스가 답답했다면 이 세대에서도 크게 달라지지 않습니다. RunRepeat 토박스 실측은 71.6mm로 전작(72.3mm)보다 약간 좁고 랩 평균(73.2mm)보다도 좁으며, "a secure and snug fit"을 지향한다는 평입니다. 대신 실측 235g으로 전작(252g)보다 가벼워졌고, 힐 45.8mm(실측) 고스택이라 10km 템포부터 25km LSD까지 한 켤레로 커버되며 아스팔트 충격 흡수도 확보됩니다. 정가는 259,000원입니다. 다만 중립 발 기준 설계라 과내전이 뚜렷하면 안정성이 부족할 수 있습니다.',
       },
   ],
   similarShoes: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
