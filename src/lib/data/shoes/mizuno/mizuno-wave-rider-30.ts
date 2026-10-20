@@ -15,8 +15,8 @@ export const shoe: Shoe = {
   tags: ['데일리', '쿠셔닝', '신상'],
   specs: {
     weight: 266,
-    cushioning: 8,
-    responsiveness: 7,
+    cushioning: 10,
+    responsiveness: 6,
     stability: 7,
     drop: 9,
     durability: 700,

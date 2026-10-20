@@ -23,7 +23,7 @@ export const shoe: Shoe = {
   tags: ['레이싱', '템포', '마라톤'],
   specs: {
     weight: 244,
-    cushioning: 7,
+    cushioning: 10,
     responsiveness: 8,
     stability: 6,
     drop: 8,
@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     weight: '244g (RunRepeat 랩 실측, 남성 US 9)',
     stackHeight: '힐 40.0mm / 포어풋 32.5mm (RunRepeat 랩 실측, 남성 US 9)',
     drop: '7.5mm (RunRepeat 랩 실측)',
-    midsole: 'ENERZY XP (TPEE) + ENERZY NXT (EVA) 듀얼',
+    midsole: 'ENERZY XP (TPEE) + ENERZY NXT (EVA) 듀얼 · 반응성 점수는 힐 기준(에너지 리턴 힐 68.1%, 포어풋 값 없음)',
     plate: '유리섬유 강화 나일론 플레이트',
     outsole: '전체 러버',
     upper: '엔지니어드 메쉬 (90%+ 재활용)',
