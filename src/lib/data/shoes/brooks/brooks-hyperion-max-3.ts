@@ -95,7 +95,7 @@ export const shoe: Shoe = {
     plate: 'SpeedVault 나일론 플레이트',
     outsole: '4개 구역 그린 러버 + 노출 미드솔',
     upper: '프리미엄 니트 (양말형 칼라)',
-    width: '표준 (94.9mm)',
+    width: '표준 — RunRepeat 랩 토박스 72.6mm(평균 73.2mm), Width/Fit 94.9mm. 랩 본문 "placing it very close to the average"·"available only in a standard width"',
     durability: '700km',
     price: '₩219,000 ($200)',
     costPerKm: '약 ₩313/km (700km 기준)',
