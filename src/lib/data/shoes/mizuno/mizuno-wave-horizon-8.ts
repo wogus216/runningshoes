@@ -91,7 +91,7 @@ export const shoe: Shoe = {
     plate: 'Wave Plate',
     outsole: '두꺼운 러버 - 뛰어난 내구성',
     upper: '자카드 에어 메쉬',
-    width: '넓음 (2E Wide 옵션 있음)',
+    width: '넓음 — 한국 공식몰은 웨이브 호라이즌 8 SW(상세 이미지 발볼 표기 "넓음(4E)", 179,000원)만 판매하고 일반 폭은 미등재(2026-10-20 확인). RunRepeat 랩 미게시',
     durability: '900km',
     price: '₩179,000 ($170)',
     costPerKm: '약 ₩199/km (900km 기준)',
