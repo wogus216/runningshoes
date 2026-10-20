@@ -296,3 +296,59 @@ If you are a copyright holder and believe your content has been used inappropria
 - Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800×800 투명 WebP q85
 - Date: 2026-10-20
 - Images: 5 (side, angle, back, top, outsole)
+
+## Kiprun Kipstorm Elite
+- Source: 데카트론 한국 공식몰 상품 상세 (남성 카본 레이싱화 킵스톰 엘리트 8961380, 울트라 화이트/플루오 네온 핑크)
+- CDN: contents.mediadecathlon.com 공식 JPG 2048×2048 (연회색 스튜디오 배경)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 흰 배경 평탄화, 800px WebP q85
+- Date: 2026-10-20
+- Images: 4 (side=p3039107 외측, detail=p3039123 내측, top=p3039138, outsole=p3039109)
+
+## Kiprun Kipsummit Max
+- Source: 데카트론 한국 공식몰 상품 상세 (남성 트레일러닝화 킵서밋 맥스 8970093, 허니 옐로우)
+- CDN: contents.mediadecathlon.com 공식 JPG 2048×2048 (연회색 스튜디오 배경)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 흰 배경 평탄화, 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=p3024498 외측, angle=p3024485 앞 사선, detail=p3024560 내측, top=p3024510, outsole=p3024502)
+
+## Under Armour Velociti Elite 2
+- Source: 언더아머 공식 이미지 CDN (Scene7) — 3027205, 색상 102 (언더아머 한국 공식몰 판매 색상)
+- CDN: underarmour.scene7.com/is/image/Underarmour/3027205-102_{DEFAULT,A,PAIR,TOE,SOLE}?wid=1600&fmt=png-alpha 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-20
+- Images: 5 (side=DEFAULT, detail=A 반대 측면, angle=PAIR, top=TOE, outsole=SOLE)
+
+## Under Armour Infinite Elite 2
+- Source: 언더아머 공식 이미지 CDN (Scene7) — 3028169(남성), 색상 001 (언더아머 한국 공식몰 판매 색상)
+- CDN: underarmour.scene7.com/is/image/Underarmour/3028169-001_{DEFAULT,A,PAIR,TOE,SOLE}?wid=1600&fmt=png-alpha 투명 PNG
+- Processing: sharp 800px WebP q85 (--skip-bg)
+- Date: 2026-10-20
+- Images: 5 (side=DEFAULT, detail=A 반대 측면, angle=PAIR, top=TOE, outsole=SOLE)
+
+## Prospecs Speed Rush 3
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S111, BLACK)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S111/PR0UR26S111_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
+
+## Prospecs Hyper Rush 2 Tempo
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S801, BLACK)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S801/PR0UR26S801_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)
+
+## Prospecs Infinite Rush Rev.
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26F101, BLUE)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26F101/PR0UR26F101_{01,02,04,05,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_04, back=_05, outsole=_D02)
+
+## Prospecs Duplex GF
+- Source: 프로스펙스 공식몰 상품 상세 (PR0UR26S202 색상 — 흰색 PR0UR26S201은 배경과 구분이 어려워 제외)
+- CDN: img.prospecs.com/prod/PR0UR26/PR0UR26S202/PR0UR26S202_{01,02,05,06,D02}.jpg 공식 JPG (배경 #F7F7F7)
+- Processing: @imgly/background-removal-node(medium) 배경제거 + 여백 트림 후 800px WebP q85
+- Date: 2026-10-20
+- Images: 5 (side=_01 외측, angle=_02, top=_05, back=_06, outsole=_D02)

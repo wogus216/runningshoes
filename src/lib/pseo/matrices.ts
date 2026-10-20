@@ -32,10 +32,13 @@ const brandSlugMap: Record<string, string> = {
   Saucony: 'saucony',
   On: 'on',
   Mizuno: 'mizuno',
+  Prospecs: 'prospecs',
   Puma: 'puma',
+  Kiprun: 'kiprun',
   'Li-Ning': 'li-ning',
   Merrell: 'merrell',
   Salomon: 'salomon',
+  'Under Armour': 'under-armour',
 };
 
 const categorySlugMap: Record<string, string> = {

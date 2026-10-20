@@ -59,6 +59,9 @@ export async function generateMetadata({ params }: ShoeDetailPageProps): Promise
     'On': '온러닝', 'Puma': '푸마', 'Li-Ning': '라이닝', 'Salomon': '살로몬',
     'Diadora': '디아도라',
     'Merrell': '머렐',
+    'Kiprun': '킵런',
+    'Under Armour': '언더아머',
+    'Prospecs': '프로스펙스',
   };
   const brandLabel = brandLabelMap[shoe.brand] || shoe.brand;
   // 카테고리를 제목 앞쪽 끌개로 — "안정화/쿠션화 러닝화" 류 카테고리 검색 매칭 + SERP 볼드/차별화 (GSC 2026-06-22: 신발상세 CTR이 블로그 리뷰의 1/3이라 끌개 보강)

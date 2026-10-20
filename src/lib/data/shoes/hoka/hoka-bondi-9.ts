@@ -12,7 +12,7 @@ export const shoe: Shoe = {
   price: 229000,
   description: '호카의 최대 쿠셔닝 모델로, 극강의 푹신함과 안정감을 제공합니다. 관절 보호가 필요하거나 장시간 서있는 분들에게 최적입니다.',
   oneliner: '303g 최대 쿠션, 123.2mm 초광폭 플랫폼',
-  editorComment: '본디 9는 146 SA 충격흡수와 41mm 힐 스택으로 관절 보호가 최우선인 러너를 위한 신발입니다. 123.2mm 초광폭 플랫폼은 안정성(8/10)을 제공하지만, 303g 무게는 Glycerin 22(283g)보다 20g 무겁습니다. Supercritical EVA 폼은 클리프턴 10의 CMEVA보다 탄성이 좋지만, 72.5mm narrow 토박스로 발볼 넓은 한국 러너는 와이드 필수입니다. 22만 9천원 프리미엄 가격이지만 550km 내구성과 7분/km 이상 느린 페이스 전용입니다.\n\n사이즈·구매 가이드: 토박스가 narrow(72.5mm)이므로 발볼 넓은 러너는 반드시 와이드 옵션을 선택하세요. 정가 229,000원에 내구성 550km 기준 km당 약 416원이며, 맥시멀 쿠션이 필요하면서 예산이 부담된다면 젤 님버스 28나 1080 V14가 비슷한 성격의 대안입니다.',
+  editorComment: '본디 9는 146 SA 충격흡수와 41mm 힐 스택으로 관절 보호가 최우선인 러너를 위한 신발입니다. 123.2mm 초광폭 플랫폼은 안정성(8/10)을 제공하지만, 303g 무게는 글리세린 22(293g)보다 10g 무겁습니다. Supercritical EVA 폼은 클리프턴 10의 CMEVA보다 탄성이 좋지만, 72.5mm narrow 토박스로 발볼 넓은 한국 러너는 와이드 필수입니다. 22만 9천원 프리미엄 가격이고 7분/km 이상 느린 페이스 전용입니다.\n\n사이즈·구매 가이드: 토박스가 narrow(72.5mm)이므로 발볼 넓은 러너는 반드시 와이드 옵션을 선택하세요. 정가 229,000원에 내구성 550km 기준 km당 약 416원이며, 맥시멀 쿠션이 필요하면서 예산이 부담된다면 젤 님버스 28나 1080 V14가 비슷한 성격의 대안입니다.',
   tags: ['맥시멀 쿠셔닝', '관절 보호', '장거리용'],
 
   specs: {
@@ -44,7 +44,7 @@ export const shoe: Shoe = {
   },
 
   koreanFootFit: {
-    toBoxWidth: 'standard',
+    toBoxWidth: 'narrow',
     flatFootCompatibility: 'excellent',
     wideOptions: true,
     winterCompatibility: 'excellent',
@@ -71,7 +71,7 @@ export const shoe: Shoe = {
     {
       userType: '에디터 분석',
       rating: 90,
-      text: '무릎이나 발목 부상 이력이 있는 러너, 체중이 있는 러너에게 최적의 맥시멀 쿠션화입니다. SA 146 충격흡수와 41mm 힐 스택으로 관절 보호 최상위급이며, 123.2mm 초광폭 플랫폼으로 안정성도 뛰어납니다. 303g 무게에 Supercritical EVA 미드솔은 일반 EVA보다 탄성이 오래 유지되어 550km 내구성으로 km당 약 416원의 가성비를 제공합니다. 토박스가 72.5mm로 좁아 발볼 넓은 한국 러너는 반드시 와이드 옵션을 선택하세요. 22만 9천원은 프리미엄 가격이지만 관절 보호가 필요한 러너에게는 충분한 투자 가치가 있습니다. 평발 러너에게도 초광폭 베이스가 아치를 안정적으로 지지해주며, 무릎 통증 이력이 있는 러너도 7분/km 이상 편안한 조깅에서 안심하고 사용할 수 있는 맥시멀 쿠션의 정석입니다.',
+      text: '무릎이나 발목 부상 이력이 있는 러너, 체중이 있는 러너에게 최적의 맥시멀 쿠션화입니다. SA 146 충격흡수와 41mm 힐 스택으로 관절 보호 최상위급이며, 123.2mm 초광폭 플랫폼으로 안정성도 뛰어납니다. 303g 무게에 Supercritical EVA 미드솔은 RunRepeat 측정 에너지 리턴 60%대입니다. 토박스가 72.5mm로 좁아 발볼 넓은 한국 러너는 반드시 와이드 옵션을 선택하세요. 22만 9천원은 프리미엄 가격이지만 관절 보호가 필요한 러너에게는 충분한 투자 가치가 있습니다. 평발 러너에게도 초광폭 베이스가 아치를 안정적으로 지지해주며, 무릎 통증 이력이 있는 러너도 7분/km 이상 편안한 조깅에서 안심하고 사용할 수 있는 맥시멀 쿠션의 정석입니다.',
     },
     {
         userType: '예상 적합 — 체중 부담이 큰 러너의 충격 완화',
@@ -86,16 +86,16 @@ export const shoe: Shoe = {
   detailedSpecs: {
     weight: '303g (남성 US 9 기준)',
     stackHeight: '힐 41mm / 포어풋 32mm',
-    drop: '9mm (Lab 측정치)',
+    drop: '9.1mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
     midsole: 'Supercritical EVA (초경량 고탄성 폼)',
     plate: '없음',
     outsole: '듀라브레이드 러버',
     upper: '엔지니어드 메쉬',
-    width: '표준 / 와이드',
+    width: '좁은 편 / 와이드 · 토박스 72.5mm — RunRepeat 평균 73.2mm보다 0.7mm 좁고 랩 원문 "Its snug, locked-in toebox makes it an excellent choice for those with narrow feet."',
     durability: '550km',
     price: '₩229,000 (MSRP) / 세일 시 ₩195,000~',
     costPerKm: '약 ₩416/km (550km 기준)',
-    footType: '표준~넓은 발볼 / 평발 OK / 관절 보호 필요한 러너',
+    footType: '좁은~보통 발볼(넓으면 와이드) / 평발 OK / 관절 보호 필요한 러너',
     landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
   },
 

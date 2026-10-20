@@ -7,15 +7,18 @@ import { adidasShoes } from './adidas';
 import { asicsShoes } from './asics';
 import { newbalanceShoes } from './newbalance';
 import { sauconyShoes } from './saucony';
+import { prospecsShoes } from './prospecs';
 import { pumaShoes } from './puma';
 import { hokaShoes } from './hoka';
 import { brooksShoes } from './brooks';
 import { diadoraShoes } from './diadora';
 import { mizunoShoes } from './mizuno';
 import { onShoes } from './on';
+import { kiprunShoes } from './kiprun';
 import { liningShoes } from './lining';
 import { merrellShoes } from './merrell';
 import { salomonShoes } from './salomon';
+import { underArmourShoes } from './underarmour';
 
 // Re-export from types/shoe.ts to keep a single source of truth
 export const categoryOrder: readonly string[] = sharedCategoryOrder;
@@ -31,10 +34,13 @@ export const shoes: Shoe[] = [
   ...brooksShoes,
   ...diadoraShoes,
   ...mizunoShoes,
+  ...prospecsShoes,
   ...pumaShoes,
+  ...kiprunShoes,
   ...liningShoes,
   ...merrellShoes,
   ...salomonShoes,
+  ...underArmourShoes,
 ];
 
 // 유틸리티 함수들

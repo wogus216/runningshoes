@@ -8,11 +8,14 @@ import { diadoraBrand } from './diadora';
 import { sauconyBrand } from './saucony';
 import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
+import { prospecsBrand } from './prospecs';
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
+import { kiprunBrand } from './kiprun';
 import { liningBrand } from './lining';
 import { merrellBrand } from './merrell';
 import { salomonBrand } from './salomon';
+import { underArmourBrand } from './underarmour';
 
 // 모든 브랜드 데이터
 export const brands: Brand[] = [
@@ -25,11 +28,14 @@ export const brands: Brand[] = [
   sauconyBrand,
   onBrand,
   newBalanceBrand,
+  prospecsBrand,
   pumaBrand,
   mizunoBrand,
+  kiprunBrand,
   liningBrand,
   merrellBrand,
   salomonBrand,
+  underArmourBrand,
 ];
 
 // 브랜드 ID로 브랜드 데이터 가져오기
@@ -132,8 +138,11 @@ export {
   sauconyBrand,
   onBrand,
   newBalanceBrand,
+  prospecsBrand,
   pumaBrand,
   mizunoBrand,
+  kiprunBrand,
   liningBrand,
   merrellBrand,
+  underArmourBrand,
 };
