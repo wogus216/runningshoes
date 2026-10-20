@@ -24,7 +24,7 @@ export const shoe: Shoe = {
   tags: ['쿠션화', '슈퍼트레이너', '장거리'],
   specs: {
     weight: 264,
-    cushioning: 10,
+    cushioning: 8,
     responsiveness: 8,
     stability: 7,
     drop: 6,

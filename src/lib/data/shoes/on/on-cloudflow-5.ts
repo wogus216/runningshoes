@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['데일리', '템포런', '스피드'],
   specs: {
     weight: 271,
-    cushioning: 6,
-    responsiveness: 8,
+    cushioning: 8,
+    responsiveness: 6,
     stability: 6,
     drop: 4,
     durability: 450,

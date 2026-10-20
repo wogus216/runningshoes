@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['쿠션화', '템포런', '장거리'],
   specs: {
     weight: 258,
-    cushioning: 9,
-    responsiveness: 8,
+    cushioning: 8,
+    responsiveness: 7,
     stability: 6,
     drop: 6.7,
     durability: 450,
