@@ -3028,7 +3028,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>7세대는 미드솔을 CMEVA→슈퍼크리티컬 폼으로 교체</strong> — RunRepeat 실측 에너지 리턴이 힐 48%→54.4%로 뚜렷이 좋아졌습니다</li>
-    <li><strong>공식 발표는 6·7 모두 드롭 5mm라 밝혔지만, RunRepeat 실측은 6이 확인 안 됐고 7은 7.4mm</strong>로 나왔습니다 — 실제 착화감은 발표 수치보다 드롭감이 더 있을 가능성이 큽니다</li>
+    <li><strong>공식 발표는 6·7 모두 드롭 5mm라 밝혔지만, RunRepeat 실측은 6이 4.9mm, 7은 7.4mm</strong>로 나왔습니다 — 실제 착화감은 발표 수치보다 드롭감이 더 있을 가능성이 큽니다</li>
     <li><strong>토박스는 73.0mm→71.4mm로 살짝 좁아지고, 가격도 205,000원→219,000원으로 인상</strong> — 반발력을 원하면 7, 검증된 핏·가성비를 원하면 6도 여전히 유효합니다</li>
   </ul>
 </div>
@@ -3052,7 +3052,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>에너지 리턴(힐)</td><td>48.0%</td><td><strong>54.4%</strong></td><td>+6.4%p</td></tr>
     <tr><td>아웃솔 러그 깊이</td><td>4.0mm</td><td>4.5mm</td><td>+0.5mm</td></tr>
     <tr><td>게이터 부착</td><td>없음</td><td><strong>루프 신설(시리즈 최초)</strong></td><td>신규</td></tr>
-    <tr><td>드롭(RunRepeat 실측)</td><td>-</td><td>7.4mm</td><td>공식 발표는 양쪽 다 5mm</td></tr>
+    <tr><td>드롭(RunRepeat 실측)</td><td>4.9mm</td><td>7.4mm</td><td>공식 발표는 양쪽 다 5mm</td></tr>
     <tr><td>와이드 옵션</td><td>있음</td><td>있음(무신사 확인)</td><td>유지</td></tr>
     <tr><td>가격(한국)</td><td>205,000원</td><td><strong>219,000원</strong></td><td>+1만 4천원</td></tr>
   </tbody>
@@ -3067,7 +3067,7 @@ export const posts_2026_07: BlogPost[] = [
 <p>여기서 짚고 넘어갈 부분이 있습니다. 호카 공식 발표는 스피드고트 7의 스택을 <strong>힐 40mm·전족 35mm·드롭 5mm</strong>로 밝혔습니다. 그런데 RunRepeat이 실제로 측정한 수치는 <strong>힐 37.7mm·전족 30.3mm·드롭 7.4mm</strong>로, 드롭 차이가 2mm 넘게 납니다. RunRepeat은 "힐에서 발끝까지 실측 드롭이 7.4mm"라고 명시하고 있어 측정 오차 수준이 아닙니다. 나이키 페가수스 42 때도 공식 발표와 실측이 몇 mm씩 어긋난 적이 있었는데, 이번에도 비슷한 케이스입니다. <strong>실제로 신어보면 발표 수치(5mm)보다 드롭감이 더 있게 느껴질 가능성이 높다</strong>는 뜻이니, 낮은 드롭에 예민한 러너라면 참고하세요.</p>
 
 <h2>토박스 — 6보다 살짝 좁아졌다</h2>
-<p>한국 러너가 특히 주목할 부분입니다. 스피드고트 6의 토박스는 73.0mm로 "표준이지만 좁게 느껴진다"는 평이 있었는데, <strong>7은 71.4mm로 여기서 한 번 더 좁아졌습니다.</strong> Believe in the Run도 "포인티(pointy)한 디자인이 새끼발가락을 누른다"고 지적했습니다. 다행히 <strong>와이드 옵션은 7에도 이어집니다</strong>(무신사 기준 남녀 모두 확인). 발볼이 넓다면 반드시 와이드를 고려하거나, 매장에서 시착 후 결정하세요. 더 넓은 옵션이 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고할 만합니다.</p>
+<p>한국 러너가 특히 주목할 부분입니다. 스피드고트 6의 토박스는 73.0mm로 트레일 평균(74.3mm)보다 좁은 편이었는데, <strong>7은 71.4mm로 여기서 한 번 더 좁아졌습니다.</strong> Believe in the Run도 "포인티(pointy)한 디자인이 새끼발가락을 누른다"고 지적했습니다. 다행히 <strong>와이드 옵션은 7에도 이어집니다</strong>(무신사 기준 남녀 모두 확인). 발볼이 넓다면 반드시 와이드를 고려하거나, 매장에서 시착 후 결정하세요. 더 넓은 옵션이 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고할 만합니다.</p>
 
 <h2>신규 기능 — 게이터 부착 루프</h2>
 <p>7세대에 새로 생긴 기능은 <strong>인테그레이티드 게이터 부착 루프</strong>입니다. 시리즈 최초로, 각반(게이터)을 신발에 바로 고정할 수 있어 겨울철 눈이나 젖은 낙엽·자갈이 신발 안으로 들어오는 걸 줄여줍니다. 국내에서 겨울 트레일·설질 구간을 자주 달린다면 실용적인 추가입니다.</p>
@@ -3387,21 +3387,21 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td><strong>정가</strong></td><td>205,000원</td><td>210,000원</td><td>279,000원</td></tr>
     <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td><strong>258g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td><strong>40 / 35mm</strong></td><td>29 / 23mm</td><td>44.7 / 34.4mm</td></tr>
+    <tr><td>힐 / 전족 스택</td><td><strong>32 / 27mm</strong> (표기 40/35)</td><td>29 / 23mm</td><td>44.7 / 34.4mm</td></tr>
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>10mm</td></tr>
     <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>optiFOAM2(eTPU)</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td><td><strong>풀 카본 플레이트</strong></td></tr>
     <tr><td>쿠션 / 반응</td><td>8 / 5</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
     <tr><td>안정성</td><td><strong>8</strong></td><td>7</td><td>4</td></tr>
-    <tr><td>아웃솔·그립</td><td><strong>Vibram Megagrip(5mm 러그)</strong></td><td>Contagrip(4mm 러그)</td><td>ASICSGRIP(2.7mm 러그)</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준(체감 좁음) · <strong>와이드 O(동일가)</strong></td><td>좁음 · 없음</td><td>좁음(69.6mm) · 없음</td></tr>
+    <tr><td>아웃솔·그립</td><td><strong>Vibram Megagrip(4.0mm 러그)</strong></td><td>Contagrip(4mm 러그)</td><td>ASICSGRIP(2.7mm 러그)</td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편(73.0mm) · <strong>와이드 O(동일가)</strong></td><td>좁음 · 없음</td><td>좁음(69.6mm) · 없음</td></tr>
     <tr><td>내구성</td><td>400~500km</td><td>500km</td><td>550~600km</td></tr>
   </tbody>
 </table>
 <p class="caption">※ 스펙은 각 신발 상세 페이지 실측·공식 발표 기준. 메타후지 트레일은 힐·미드풋이 좁은데 스택이 높아(44.7mm) 안정성 점수(4/10)가 셋 중 가장 낮습니다 — 카본 반발과 안정성은 트레이드오프 관계입니다.</p>
 
 <h2>스피드고트 6 — 산에서 뭘 만나도 무난하다</h2>
-<p>"트레일 입문화 하나만 추천해달라"는 질문에 가장 먼저 나오는 이름입니다. <strong>Vibram Megagrip + 측면 마이크로 돌기(Traction Lug)</strong>로 건/습 노면·바위·급경사 어디서든 그립이 최상위권(Road Trail Run 10/10)이고, 힐 40mm 맥스쿠션인데도 내부 섀시(chassis) 구조 덕에 스택 대비 안정성이 뛰어납니다. 278g으로 맥스쿠션치고 가벼워 장거리·울트라에서 다리 피로도 덜합니다. 무엇보다 <strong>와이드 옵션이 공식 동일가로 나온다</strong>는 게 한국 러너에게 큰 장점 — 토박스가 표준 폭(73mm)이지만 실제로는 꽉 끼는 쪽이라, 발볼 넓다면 와이드를 고르면 됩니다.</p>
+<p>"트레일 입문화 하나만 추천해달라"는 질문에 가장 먼저 나오는 이름입니다. <strong>Vibram Megagrip + 측면 마이크로 돌기(Traction Lug)</strong>로 건/습 노면·바위·급경사 어디서든 그립이 최상위권(Road Trail Run 10/10)이고, 브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션인데도 내부 섀시(chassis) 구조 덕에 스택 대비 안정성이 뛰어납니다. 278g으로 맥스쿠션치고 가벼워 장거리·울트라에서 다리 피로도 덜합니다. 무엇보다 <strong>와이드 옵션이 공식 동일가로 나온다</strong>는 게 한국 러너에게 큰 장점 — 토박스가 73mm로 트레일 평균(74.3mm)보다 좁은 편이라, 발볼 넓다면 와이드를 고르면 됩니다.</p>
 <p>단점은 에너지 리턴이 48%로 낮아 <strong>빠른 페이스 레이싱용은 아니라는 점</strong>입니다. 텅 날개·힐 슬립 같은 핏 이슈, 노출 미드솔 구간 마모(200~300km 후 압축)도 감안하세요.</p>
 <p><strong>✅ 이런 분께</strong> — 트레일이 처음이거나, 여러 지형을 오가는 종주·울트라 위주거나, 발볼 넓어 와이드가 필요한 러너.</p>
 
@@ -4035,7 +4035,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'hierro-v9-vs-speedgoat-6-trail-2026',
     slug: 'hierro-v9-vs-speedgoat-6-trail-2026',
     title: '히에로 v9 vs 스피드고트 6 | 뉴발 vs 호카 쿠션 트레일 대결 — 로드투트레일 올라운더 vs 만능 그립',
-    description: '뉴발란스 히에로 v9와 호카 스피드고트 6, 둘 다 비브람 메가그립을 단 쿠션 트레일화지만 성격이 갈립니다. 스피드고트는 젖은 바위·급경사까지 커버하는 "만능 그립"의 베스트셀러(러그 5mm·맥스쿠션·와이드+GTX), 히에로 v9는 자갈길·로드투트레일에 강한 "쿠션 올라운더"(러그 3.3mm·내구성·에너지 리턴 우위·16,000원 저렴)입니다. 지형·발볼·가격 기준으로 한국 트레일 러너가 뭘 골라야 하는지 실측 스펙으로 정리했습니다.',
+    description: '뉴발란스 히에로 v9와 호카 스피드고트 6, 둘 다 비브람 메가그립을 단 쿠션 트레일화지만 성격이 갈립니다. 스피드고트는 젖은 바위·급경사까지 커버하는 "만능 그립"의 베스트셀러(러그 4.0mm·와이드+GTX), 히에로 v9는 자갈길·로드투트레일에 강한 "쿠션 올라운더"(러그 3.3mm·내구성·에너지 리턴 우위·16,000원 저렴)입니다. 지형·발볼·가격 기준으로 한국 트레일 러너가 뭘 골라야 하는지 실측 스펙으로 정리했습니다.',
     thumbnail: '/images/blog/hierro-v9-vs-speedgoat-6-trail-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-08',
@@ -4047,7 +4047,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>둘 다 비브람 메가그립을 단 쿠션 트레일화</strong>지만 무대가 다릅니다 — <strong>스피드고트 6은 "만능 그립"</strong>(젖은 바위·급경사·기술 지형까지), <strong>히에로 v9는 "로드투트레일 쿠션 올라운더"</strong>(자갈길·임도·완만한 지형)</li>
-    <li><strong>험한 산·기술 코스</strong>라면 러그 5mm에 그립 최상위인 <strong>스피드고트 6</strong>, <strong>둘레길·자갈·도로 섞인 코스를 오래</strong>라면 러그 3.3mm에 내구성·에너지 리턴이 앞서고 16,000원 저렴한 <strong>히에로 v9</strong></li>
+    <li><strong>험한 산·기술 코스</strong>라면 러그 4.0mm에 그립 최상위인 <strong>스피드고트 6</strong>, <strong>둘레길·자갈·도로 섞인 코스를 오래</strong>라면 러그 3.3mm에 내구성·에너지 리턴이 앞서고 16,000원 저렴한 <strong>히에로 v9</strong></li>
     <li><strong>발볼 넓은 한국 러너는 스피드고트가 유리</strong> — 와이드가 공식 동일가로 확실히 나옵니다(히에로는 미국만 와이드 확인, 한국 판매 미확인)</li>
   </ul>
 </div>
@@ -4067,13 +4067,13 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td>카테고리</td><td>쿠션 올라운드 트레일</td><td>만능 트레일(데일리·울트라)</td></tr>
     <tr><td>무게(US 9)</td><td><strong>309g</strong></td><td><strong>278g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>37.3 / 33.1mm</td><td>40 / 35mm</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>37.3 / 33.1mm</td><td>32 / 27mm (표기 40/35)</td></tr>
     <tr><td>드롭</td><td>4.2mm</td><td>5mm</td></tr>
     <tr><td>미드솔</td><td>Fresh Foam X 듀얼 밀도</td><td>CMEVA 맥스쿠션</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip · <strong>러그 3.3mm</strong></td><td>Vibram Megagrip + Traction Lug · <strong>러그 5mm</strong></td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip · <strong>러그 3.3mm</strong></td><td>Vibram Megagrip + Traction Lug · <strong>러그 4.0mm</strong></td></tr>
     <tr><td>에너지 리턴</td><td><strong>61.9%</strong></td><td>약 48%</td></tr>
     <tr><td>내구성</td><td><strong>~600km</strong>(마모 0.9mm 우수)</td><td>400~500km(노출 미드솔 마모)</td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(73.4mm) / 미국 2E, <strong>한국 미확인</strong></td><td>표준(73mm, 좁게 느껴짐) / <strong>와이드 공식 동일가</strong> + GTX</td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(73.4mm) / 미국 2E, <strong>한국 미확인</strong></td><td>좁은 편(73.0mm) / <strong>와이드 공식 동일가</strong> + GTX</td></tr>
     <tr><td>가격(한국)</td><td><strong>189,000원</strong></td><td>205,000원</td></tr>
   </tbody>
 </table>
@@ -4082,7 +4082,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>가장 큰 차이 — 지형(러그와 그립)</h2>
 <p>둘 다 <strong>Vibram Megagrip</strong>이라 그립의 "재질"은 같습니다. 갈리는 건 <strong>러그 깊이와 아웃솔 설계</strong>예요.</p>
-<p><strong>스피드고트 6</strong>은 러그가 <strong>5mm로 깊고</strong> 측면 마이크로 돌기(Traction Lug)까지 더해, 젖은 바위·급경사 오르막·진흙까지 물어냅니다. 트레일 전문 매체 Road Trail Run이 그립을 <strong>10/10</strong>으로 매길 만큼 "험지에서 안 미끄러지는" 게 핵심 강점이죠. 힐 40mm 맥스쿠션에도 내부 섀시(chassis)가 발을 잡아줘 고스택 특유의 흔들림이 적습니다.</p>
+<p><strong>스피드고트 6</strong>은 러그가 <strong>4.0mm로 깊고</strong> 측면 마이크로 돌기(Traction Lug)까지 더해, 젖은 바위·급경사 오르막·진흙까지 물어냅니다. 트레일 전문 매체 Road Trail Run이 그립을 <strong>10/10</strong>으로 매길 만큼 "험지에서 안 미끄러지는" 게 핵심 강점이죠. 브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션에도 내부 섀시(chassis)가 발을 잡아줘 고스택 특유의 흔들림이 적습니다.</p>
 <p><strong>히에로 v9</strong>은 러그가 <strong>3.3mm로 얕습니다.</strong> 이게 단점이 아니라 <strong>용도의 차이</strong>예요 — 깊은 러그는 딱딱한 도로에서 오히려 걸리적거리는데, 히에로의 얕은 러그는 <strong>자갈길·임도·둘레길처럼 완만한 지형 + 도로 접근 구간(로드투트레일)</strong>에서 훨씬 자연스럽습니다. 대신 RunRepeat Technical 점수가 58점으로, <strong>젖은 바위·급경사 기술 암반은 스피드고트에 밀립니다.</strong></p>
 <div class="callout info">
   <span class="callout-icon">📍</span>
@@ -4093,7 +4093,7 @@ export const posts_2026_07: BlogPost[] = [
 </div>
 
 <h2>발밑 느낌 — 쿠션·반발·무게</h2>
-<p>스택은 스피드고트(40mm)가 히에로(37mm)보다 약간 높아 <strong>더 푹신한 맥스쿠션</strong> 성향입니다. 무게도 스피드고트가 <strong>278g으로 31g 가볍죠</strong>(맥스쿠션치고 경량). 장시간 산행 겸 러닝, 울트라 거리에서 다리 피로를 덜어줍니다.</p>
+<p>스택은 브랜드 표기로는 스피드고트(40mm)가 히에로(37mm)보다 높지만, RunRepeat 측정 힐 스택은 스피드고트 32.1mm로 히에로(37.3mm)보다 <strong>오히려 낮습니다</strong>. 무게도 스피드고트가 <strong>278g으로 31g 가볍죠</strong>(맥스쿠션치고 경량). 장시간 산행 겸 러닝, 울트라 거리에서 다리 피로를 덜어줍니다.</p>
 <p>반면 <strong>에너지 리턴은 히에로(61.9%)가 스피드고트(약 48%)보다 확실히 높습니다.</strong> 트레일화 둘 다 "빠른 반발" 신발은 아니지만, 히에로가 조금 더 탄력 있게 굴러가는 편입니다. 또 <strong>내구성은 히에로가 우위</strong> — 아웃솔 마모가 0.9mm로 뛰어나고, 스피드고트는 노출 미드솔 구간이 200~300km 후 압축된다는 지적이 있어 히에로가 더 오래 갑니다(약 600km vs 400~500km).</p>
 
 <h2>발볼·가격 — 한국 러너의 결정 요소</h2>
@@ -4119,11 +4119,11 @@ export const posts_2026_07: BlogPost[] = [
       },
       {
         question: '도로에서도 뛰는데 둘 다 괜찮나요?',
-        answer: '히에로 v9가 도로 혼합에 더 유리합니다. 러그가 3.3mm로 얕아 아스팔트·포장 접근 구간에서 덜 걸리적거리고 마모도 느립니다. 스피드고트 6는 러그가 5mm로 깊어 그립은 좋지만 도로에서는 마모가 빠르고 발밑이 딱딱하게 느껴질 수 있습니다. 트레일과 도로가 섞인 로드투트레일 코스라면 히에로, 트레일 비중이 절대적이라면 스피드고트를 권합니다.',
+        answer: '히에로 v9가 도로 혼합에 더 유리합니다. 러그가 3.3mm로 얕아 아스팔트·포장 접근 구간에서 덜 걸리적거리고 마모도 느립니다. 스피드고트 6는 러그가 4.0mm로 깊어 그립은 좋지만 도로에서는 마모가 빠르고 발밑이 딱딱하게 느껴질 수 있습니다. 트레일과 도로가 섞인 로드투트레일 코스라면 히에로, 트레일 비중이 절대적이라면 스피드고트를 권합니다.',
       },
       {
         question: '둘 다 비브람인데 그립 차이가 실제로 있나요?',
-        answer: '재질(Vibram Megagrip)은 같지만 러그 깊이와 설계가 달라 험지에서 체감 차이가 있습니다. 스피드고트 6는 러그 5mm에 측면 트랙션 러그까지 더해 젖은 바위·급경사·진흙에서 그립이 최상위(Road Trail Run 10/10)입니다. 히에로 v9는 러그 3.3mm로 자갈·마른 흙길엔 충분하지만 젖은 암반·급경사 기술 코스에서는 스피드고트에 밀립니다. 마른 완만한 지형이면 차이가 작고, 험하고 젖은 지형일수록 스피드고트가 앞섭니다.',
+        answer: '재질(Vibram Megagrip)은 같지만 러그 깊이와 설계가 달라 험지에서 체감 차이가 있습니다. 스피드고트 6는 러그 4.0mm에 측면 트랙션 러그까지 더해 젖은 바위·급경사·진흙에서 그립이 최상위(Road Trail Run 10/10)입니다. 히에로 v9는 러그 3.3mm로 자갈·마른 흙길엔 충분하지만 젖은 암반·급경사 기술 코스에서는 스피드고트에 밀립니다. 마른 완만한 지형이면 차이가 작고, 험하고 젖은 지형일수록 스피드고트가 앞섭니다.',
       },
     ],
   },
@@ -4737,7 +4737,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
     <tr><td>쿠션 / 반발</td><td>10 / 5</td><td>10 / 4</td></tr>
     <tr><td>안정성</td><td><strong>8 (초광폭 123mm 베이스)</strong></td><td>7</td></tr>
-    <tr><td>발볼 / 평발 호환</td><td>표준(좁은 편)·<strong>평발 excellent</strong></td><td>표준(스너그)·평발 good</td></tr>
+    <tr><td>발볼 / 평발 호환</td><td>좁은 편·<strong>평발 excellent</strong></td><td>표준(스너그)·평발 good</td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 416원</td><td><strong>600km</strong> / 약 415원</td></tr>
     <tr><td>최적 페이스</td><td>6:00–8:00/km</td><td>5:30–7:00+/km</td></tr>
     <tr><td>대표 용도</td><td>평발·안정 리커버리·장시간 보행</td><td>최대 스택 로커 이지런</td></tr>
@@ -5652,7 +5652,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>에너지 리턴</td><td><strong>~70%(최고)</strong></td><td>중상</td><td>47~57%(낮음)</td></tr>
     <tr><td>아웃솔</td><td>Vibram Megagrip 4mm</td><td>Vibram Litebase 3mm</td><td>Contagrip 3mm</td></tr>
     <tr><td>안정성/제어</td><td>중(힐 고정 약함)</td><td><strong>낮음(완만 전용)</strong></td><td><strong>높음(기술 암반)</strong></td></tr>
-    <tr><td>토박스</td><td>73mm 표준</td><td><strong>76.7mm 넓음</strong></td><td>74mm 표준</td></tr>
+    <tr><td>토박스</td><td>73mm 좁은 편</td><td><strong>76.7mm 넓음</strong></td><td>74mm 표준</td></tr>
     <tr><td>내구성</td><td>500km</td><td>450km</td><td>350km(청킹 우려)</td></tr>
     <tr><td>대표 용도</td><td>울트라 장거리</td><td>완만 그래블 스피드</td><td>기술 암반·VK·스카이</td></tr>
   </tbody>
@@ -5661,7 +5661,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>테크톤 X 3 — 울트라 장거리 효율의 표준</h2>
 <p><a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>은 "울트라를 빠르게 완주"하려는 러너의 1순위 카본 트레일화입니다. 핵심은 <strong>100% PEBA 듀얼 폼 + 윙드 카본 플레이트(듀얼)</strong>로 만드는 <strong>~70% 에너지 리턴</strong>입니다. 50km·100km 같은 장거리에서 후반부 다리 피로를 확실히 덜어주죠. 여기에 <strong>Vibram Megagrip 4mm 러그</strong>로 그립도 상위권이라, 반발력과 접지력을 동시에 챙긴 드문 조합입니다. 니트 발목 게이터가 흙·잔돌 침입을 막아 장거리에서 신경 쓸 거리를 줄여줍니다.</p>
-<p>약점은 <strong>측면 힘이 실릴 때 어퍼가 늘어나 힐 고정력이 약한 것</strong>. 급경사 테크니컬 하산에서 발이 앞으로 밀릴 수 있어 끈을 단단히 조여야 합니다. 275g으로 카본 트레일화 중 무거운 축이고 339,000원의 가격도 부담이죠. 토박스는 73mm 표준이라 보통 발볼은 무난합니다.</p>
+<p>약점은 <strong>측면 힘이 실릴 때 어퍼가 늘어나 힐 고정력이 약한 것</strong>. 급경사 테크니컬 하산에서 발이 앞으로 밀릴 수 있어 끈을 단단히 조여야 합니다. 275g으로 카본 트레일화 중 무거운 축이고 339,000원의 가격도 부담이죠. 토박스는 73mm로 트레일 평균(74.3mm)보다 좁은 편이라 발볼이 넓다면 시착이 필요합니다.</p>
 <p><strong>✅ 이런 분께</strong> — 50km+ 울트라·장거리 트레일 레이스 / 반발·그립·내구의 균형을 원하는 러너 / 완만~중간 난이도 코스</p>
 
 <h2>울트라플라이 — 완만 코스 스피드 + 유일하게 넓은 토박스</h2>
@@ -5823,7 +5823,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>가격은 16.9~21만원대, 성격은 정반대</strong> — 스피드고트 6은 맥스쿠션 만능형, 펄사는 저스택 스피드형, 아그라빅 4는 테크니컬 그립형입니다</li>
-    <li><strong>장거리·발볼 넓음 → 스피드고트 6</strong>(힐 40mm 쿠션 + 유일한 와이드 옵션), <strong>근교 빠른 훈련 → 펄사</strong>(힐 29mm·경쾌), <strong>북한산 바위·진흙 → 아그라빅 4</strong>(Continental 러버)</li>
+    <li><strong>장거리·발볼 넓음 → 스피드고트 6</strong>(브랜드 표기 힐 40mm 쿠션 + 유일한 와이드 옵션), <strong>근교 빠른 훈련 → 펄사</strong>(힐 29mm·경쾌), <strong>북한산 바위·진흙 → 아그라빅 4</strong>(Continental 러버)</li>
     <li>한국 산은 화강암 바위·뿌리가 많은 테크니컬 지형이라 <strong>그립과 안정성</strong>이 핵심 — 발볼 넓은 러너는 와이드가 있는 스피드고트가 사실상 유일한 선택입니다</li>
   </ul>
 </div>
@@ -5843,10 +5843,10 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>브랜드</td><td>호카</td><td>살로몬</td><td>아디다스 테렉스</td></tr>
     <tr><td>한국 가격</td><td>205,000원</td><td>210,000원</td><td>169,000원</td></tr>
     <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td>283g</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td><strong>40mm(맥스)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
+    <tr><td><strong>힐 스택</strong></td><td><strong>32mm(표기 40)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>9mm</td></tr>
     <tr><td>미드솔</td><td>CMEVA 맥스쿠션</td><td>optiFOAM2 (eTPU)</td><td>Lightstrike EVA(단단)</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip 5mm</td><td>Contagrip 4mm</td><td>Continental 3mm대</td></tr>
+    <tr><td>아웃솔</td><td>Vibram Megagrip 4.0mm</td><td>Contagrip 4mm</td><td>Continental 3.1mm</td></tr>
     <tr><td>그립 강점</td><td>만능(젖은 바위 최상위)</td><td>건조 혼합 지형</td><td>테크니컬·진흙 최상위</td></tr>
     <tr><td>쿠션 / 반발</td><td>푹신 / 둔함</td><td>중간 / 경쾌</td><td>단단 / 또렷</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td><strong>○ (공식 동일가)</strong></td><td>✗ (발볼 좁음)</td><td>✗ (표준)</td></tr>
@@ -5857,8 +5857,8 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>※ 스택·무게는 전문 리뷰(Road Trail Run·DOR) 및 공식 기준. 펄사·아그라빅 4는 2025~26 신모델이라 RunRepeat 정량 랩 일부 미게시로, 수치는 공식·전문 리뷰 종합입니다. 아그라빅 4 한국가는 아디다스 공식몰 정가(169,000원)입니다.</small></p>
 
 <h2>스피드고트 6 — 트레일 첫 켤레의 표준</h2>
-<p><a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>은 트레일 데일리의 대명사입니다. "트레일화 하나만 추천"이라는 질문에 가장 먼저 나오는 이름이죠. 핵심은 <strong>힐 40mm 맥스쿠션 + Vibram Megagrip 최상위 그립</strong>입니다. 6세대는 측면 마이크로 돌기(Traction Lug)를 더해 젖은 바위·급경사·진흙 어디서든 그립이 흔들리지 않고(Road Trail Run 10/10), 높은 스택인데도 내부 섀시가 발을 잡아줘 안정성이 뛰어납니다(DOR A등급).</p>
-<p>한국 러너에게 결정적인 건 <strong>와이드 옵션이 공식가(205,000원) 그대로 나온다</strong>는 점입니다. 세 켤레 중 유일하죠. 토박스가 표준(73mm)인데도 "좁게 느껴진다"는 평이 많아, 발볼 넓은 분은 망설임 없이 와이드를 고르면 됩니다. GTX 방수 버전(229,000원)도 있어 장마·겨울 대응까지 넓습니다.</p>
+<p><a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>은 트레일 데일리의 대명사입니다. "트레일화 하나만 추천"이라는 질문에 가장 먼저 나오는 이름이죠. 핵심은 <strong>브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션 + Vibram Megagrip 최상위 그립</strong>입니다. 6세대는 측면 마이크로 돌기(Traction Lug)를 더해 젖은 바위·급경사·진흙 어디서든 그립이 흔들리지 않고(Road Trail Run 10/10), 높은 스택인데도 내부 섀시가 발을 잡아줘 안정성이 뛰어납니다(DOR A등급).</p>
+<p>한국 러너에게 결정적인 건 <strong>와이드 옵션이 공식가(205,000원) 그대로 나온다</strong>는 점입니다. 세 켤레 중 유일하죠. 토박스가 73mm로 트레일 평균(74.3mm)보다 좁은 편이라, 발볼 넓은 분은 망설임 없이 와이드를 고르면 됩니다. GTX 방수 버전(229,000원)도 있어 장마·겨울 대응까지 넓습니다.</p>
 <p>약점은 <strong>반발</strong>입니다. 에너지 리턴이 48%로 낮아 빠른 페이스에는 둔하고, 노출 미드솔 구간은 200~300km 후 압축이 옵니다. 텅 날개·힐 슬립 같은 소소한 핏 이슈도 있죠. 하지만 "빠르게 치고 나가기"보다 "모든 트레일을 무난히, 오래 즐기기"가 목적이라면 가장 안전한 선택입니다.</p>
 <p><strong>✅ 이런 분께</strong> — 트레일 입문 첫 켤레 / 50km+ 장거리·울트라 / 발볼 넓어 와이드가 필요한 러너 / 하이킹 겸용</p>
 
@@ -5898,7 +5898,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 무릎이 안 좋은데 어떤 게 좋을까요?</p>
-    <p class="faq-a">A. 다운힐 충격을 가장 잘 흡수하는 건 힐 40mm 맥스쿠션의 <strong>스피드고트 6</strong>입니다. 반대로 펄사·아그라빅은 스택이 낮고 단단해 지면 감각은 좋지만 장거리 하산 충격은 더 옵니다. 무릎 이력이 있다면 스피드고트 6이 무난합니다.</p>
+    <p class="faq-a">A. 스택 표기로는 힐 40mm인 <strong>스피드고트 6</strong>이 가장 두툼하지만, RunRepeat 측정 힐 스택은 스피드고트 6 32.1mm·아그라빅 4 32.6mm로 비슷하고 펄사(29mm)가 가장 낮습니다. 무릎 이력이 있다면 스택 수치만으로 고르지 말고 매장에서 직접 비교해 보세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 셋 다 방수(GTX)가 되나요?</p>

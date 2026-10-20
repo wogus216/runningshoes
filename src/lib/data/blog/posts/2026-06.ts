@@ -3480,8 +3480,8 @@ export const posts_2026_06: BlogPost[] = [
       { question: '호카는 왜 신발이 다 두꺼운가요?', answer: '호카는 "맥스 쿠션"의 원조 브랜드입니다. 두꺼운 스택(대부분 35~46mm)으로 무릎·관절 충격을 최대한 흡수하는 게 정체성이에요. 그런데 두꺼운데도 가벼운데, 비결이 두 가지입니다 — 가벼운 EVA 기반 폼과, 바닥을 둥글게 깎아 자연스럽게 굴러가게 하는 메타로커(MetaRocker) 지오메트리입니다.' },
       { question: '호카 모델명에 "X"가 붙으면 뭐가 다른가요?', answer: 'X는 퍼포먼스를 강화한 상위 시리즈입니다. 로켓 X·씨엘로 X·테크톤 X는 카본 플레이트가 들어간 레이싱화이고, 마하 X는 PEBA를 더한 슈퍼트레이너입니다. 일반 라인(클리프톤·본디·마하)이 데일리라면, X 시리즈는 대회·빠른 훈련용이라고 보면 됩니다.' },
       { question: '클리프톤이랑 본디는 뭐가 다른가요?', answer: '클리프톤은 가벼운 만능 데일리(275g), 본디는 최대 쿠션 끝판왕(303g)입니다. 매일 다양하게 쓸 거면 클리프톤, 무릎 보호와 푹신함이 최우선이면 본디입니다. 본디는 123mm 초광폭 플랫폼과 와이드 옵션으로 안정감도 더 좋습니다.' },
-      { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(299g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
-      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 본디·클리프톤·아라히는 표준 폭입니다. 반대로 마하 6(실측 70.1mm)·스피드고트 7(71.4mm)과 로켓 X 같은 레이싱은 좁은 편이니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
+      { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(283g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
+      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 클리프톤·아라히는 표준 폭, 본디 9는 좁은 편(실측 72.5mm)입니다. 반대로 마하 6(실측 70.1mm)·스피드고트 7(71.4mm)과 로켓 X 같은 레이싱은 좁은 편이니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
     ],
     content: `
 <div class="tldr">
@@ -3550,13 +3550,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/hoka-mach-6"><strong>마하 6</strong></a></td><td>경량 스피드 데일리</td><td>슈퍼크리티컬 EVA</td><td>18.5만</td><td>232g</td><td>36mm</td></tr>
     <tr><td><a href="/shoes/hoka-clifton-10"><strong>클리프톤 10</strong></a></td><td>입문·만능 데일리</td><td>CMEVA</td><td>19.9만</td><td>275g</td><td>44mm</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>CMEVA (소프트)</td><td>19.9만</td><td>259g</td><td>39mm</td></tr>
-    <tr><td><a href="/shoes/hoka-speedgoat-6"><strong>스피드고트 6</strong></a></td><td>만능 트레일 (전작)</td><td>CMEVA</td><td>20.5만</td><td>278g</td><td>40mm</td></tr>
+    <tr><td><a href="/shoes/hoka-speedgoat-6"><strong>스피드고트 6</strong></a></td><td>만능 트레일 (전작)</td><td>CMEVA</td><td>20.5만</td><td>278g</td><td>32mm</td></tr>
     <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>스피드고트 7</strong></a></td><td>만능 트레일 (현행)</td><td>슈퍼크리티컬 EVA</td><td>21.9만*</td><td>281g</td><td>38mm</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9"><strong>본디 9</strong></a></td><td>맥스 쿠션 끝판</td><td>슈퍼크리티컬 EVA</td><td>22.9만</td><td>303g</td><td>41mm</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>EVA 듀얼</td><td>23.9만</td><td>299g</td><td>35mm</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>EVA 듀얼</td><td>23.9만</td><td>283g</td><td>36mm</td></tr>
     <tr><td><a href="/shoes/hoka-mach-x-3"><strong>마하 X 3</strong></a></td><td>슈퍼트레이너</td><td>PEBA + 슈퍼크리티컬</td><td>24.9만</td><td>264g</td><td>43mm</td></tr>
     <tr><td><a href="/shoes/hoka-rocket-x-3"><strong>로켓 X 3</strong></a></td><td>카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>29.9만</td><td>220g</td><td>40mm</td></tr>
-    <tr><td><a href="/shoes/hoka-cielo-x1"><strong>씨엘로 X1</strong></a></td><td>최상위 카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>32.9만</td><td>208g</td><td>46mm</td></tr>
+    <tr><td><a href="/shoes/hoka-cielo-x1"><strong>씨엘로 X1</strong></a></td><td>최상위 카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>32.9만</td><td>208g</td><td>39mm</td></tr>
     <tr><td><a href="/shoes/hoka-tecton-x-3"><strong>테크톤 X 3</strong></a></td><td>카본 트레일 레이싱</td><td>듀얼 PEBA + 카본</td><td>33.9만</td><td>275g</td><td>38mm</td></tr>
   </tbody>
 </table>
@@ -3571,7 +3571,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>⚡ 가볍게·빠르게</strong> → <a href="/shoes/hoka-mach-6">마하 6</a>(232g). 통기성 최상, 데일리부터 템포까지.</li>
   <li><strong>🦶 평발·안정</strong> → 가벼운 <a href="/shoes/hoka-arahi-8">아라히 8</a> 또는 든든한 <a href="/shoes/hoka-gaviota-6">가비오타 6</a>(아래 5번 참고). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
   <li><strong>🏃 빠른 훈련(카본 없이)</strong> → <a href="/shoes/hoka-mach-x-3">마하 X 3</a>. PEBA 슈퍼트레이너로 템포·인터벌에.</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(220g) 또는 최상위 <a href="/shoes/hoka-cielo-x1">씨엘로 X1</a>(46mm 맥스 스택 카본).</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(220g) 또는 최상위 <a href="/shoes/hoka-cielo-x1">씨엘로 X1</a>(브랜드 표기 46mm 스택 카본).</li>
   <li><strong>⛰️ 트레일</strong> → 만능 <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>(CMEVA를 슈퍼크리티컬 폼으로 바꿔 반발 강화, 와이드 옵션 유지) 또는 1.4만원 싼 전작 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(20.5만). 둘의 차이는 <a href="/blog/hoka-speedgoat-6-vs-7-comparison-2026">스피드고트 6 vs 7</a>에. 레이스용 카본은 <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>, 브랜드를 가로지른 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에.</li>
 </ul>
 
@@ -3585,7 +3585,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>259g</td><td>가볍게 지지받고 싶은 러너, 데일리</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>299g</td><td>지지 + 푹신함 둘 다, 발볼 넓은 러너</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>283g</td><td>지지 + 푹신함 둘 다, 발볼 넓은 러너</td></tr>
   </tbody>
 </table>
 
@@ -3597,7 +3597,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>클리프톤 10</strong>: 44mm 맥스 스택인데 <strong>275g</strong> — 경쟁 맥스 쿠션화보다 가볍습니다.</li>
-  <li><strong>씨엘로 X1</strong>: 46mm 카본 레이싱인데 <strong>208g</strong> — 두툼한 레이서.</li>
+  <li><strong>씨엘로 X1</strong>: 브랜드 표기 46mm 카본 레이싱인데 <strong>208g</strong> — 두툼한 레이서.</li>
   <li><strong>본디 9</strong>: 303g으로 가장 무겁지만, 그만큼 123mm 초광폭에 가장 든든한 안정감.</li>
 </ul>
 
@@ -7409,7 +7409,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>199,000</td><td>지지력 최상위, 대신 반발은 평범</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>300g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>J-Frame</td><td>299g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>H-Frame</td><td>283g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 특화·4종 와이드</td></tr>
     <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a></td><td>광폭 플랫폼</td><td>278g</td><td><strong>159,000</strong></td><td>가성비·카야노 절반값</td></tr>
