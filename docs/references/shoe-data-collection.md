@@ -594,8 +594,10 @@ specs: {
 
 // ── 2026-10-20 운영자 결정 (클라우드 specs 감사 S1~S6 후속) ──
 // 확정: ① 쿠션·반응성 9~10점 구간 확장 ② 쿠션=힐 SA, 반응성=전족부 에너지 리턴 ③ 경계값은 상위 구간 포함
-// 미정(규칙 없음, 건드리지 말 것): stability·durability 수치화 / toBoxWidth 절대 vs 상대 판정 문서화 /
-//   weight·drop 의 공식값 vs 실측 우선순위 / 전작 수치 인용·출처 미표기 수치의 근거 인정 여부
+//       ④ toBoxWidth 는 상대·형태 기준(CLAUDE.md 2026-09-30 개정 그대로) — 같은 랩(RunRepeat) 평균 대비 ±3mm
+//          또는 본문 명시(인용 필수). 절대 68·75mm 는 참고선일 뿐 등급을 결정하지 않는다
+//       ⑤ weight·drop 은 랩 실측 우선, 공식값은 실측이 없을 때만. 둘 다 적을 땐 detailedSpecs 에 출처를 구분해 쓴다
+// 미정(규칙 없음, 건드리지 말 것): stability·durability 수치화 / 전작 수치 인용·출처 미표기 수치의 근거 인정 여부
 
 // labData → biomechanics
 biomechanics: {
