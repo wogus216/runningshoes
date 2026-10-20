@@ -4169,7 +4169,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '제가 안정화가 필요한지 어떻게 아나요?', answer: '세 가지를 보세요. ① 평소 신발 밑창이 안쪽(엄지쪽)부터 닳는다 ② 달리고 나면 무릎·정강이 안쪽이 아프다 ③ 맨발로 섰을 때 발 안쪽 아치가 바닥에 닿는다(평발). 두 개 이상 해당하면 과내전 가능성이 높아 안정화가 도움이 됩니다. 정확한 진단은 러닝 전문 매장의 보행 분석이나 정형외과가 확실합니다.' },
       { question: '중립인데 안정화를 신으면 안 되나요?', answer: '권장하지 않습니다. 과내전이 없는 발에 강한 지지가 들어가면 자연스러운 움직임을 방해해 오히려 발목·무릎에 부담이 될 수 있습니다(과교정). 본인이 중립이라면 중립 쿠션화가 맞습니다. 안정화는 "지지가 필요한 발"을 위한 신발입니다.' },
       { question: '안정화 지지 방식이 다 같은 거 아닌가요?', answer: '다릅니다. 크게 ① 단단한 판으로 받치는 방식(뉴발 860의 Stability Plane·메디얼 포스트) ② 적응형 가이드(아식스 카야노 FLUIDSUPPORT) ③ 양옆 가드레일(브룩스 GuideRails) ④ 경량 프레임(호카 아라히 J-Frame)으로 나뉩니다. 강한 교정을 원하면 ①, 부드럽고 자연스러운 지지를 원하면 ③④가 맞습니다.' },
-      { question: '발볼 넓은데 안정화 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스 860 V14가 Narrow/표준/2E/X-Wide 4가지로 가장 폭넓고, 아식스 카야노도 2E·4E를 제공합니다. 브룩스 글리세린 GTS는 토박스 자체가 넓은 편입니다. 발볼 넓은 한국 러너라면 안정화일수록 와이드를 우선 고려하세요.' },
+      { question: '발볼 넓은데 안정화 와이드 옵션이 있나요?', answer: '있습니다. 한국 공식몰 기준으로는 뉴발란스 860 V15가 남성 2E·4E, 여성 D로 판매되고(2026-10-20 확인), 아식스 카야노도 2E·4E를 제공합니다. 860 V14는 해외에 Narrow~X-Wide 4가지 폭이 있지만 한국 공식몰에서는 현재 검색되지 않습니다. 브룩스 글리세린 GTS는 토박스 자체가 넓은 편입니다. 발볼 넓은 한국 러너라면 안정화일수록 와이드를 우선 고려하세요.' },
       { question: '안정화는 무겁고 둔하지 않나요?', answer: '전통 안정화(860 330g, 카야노)는 무거운 편이 맞습니다. 하지만 호카 아라히(J-Frame)나 소커니 가이드처럼 300g 안팎의 가벼운 안정화도 늘고 있습니다. 무게가 신경 쓰이면 경량 안정화 쪽을 보세요. 다만 강한 과내전일수록 지지력이 우선입니다.' },
     ],
     content: `
@@ -4178,7 +4178,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong>순서가 중요합니다</strong> — "어떤 안정화가 좋아요?"보다 먼저 "내가 안정화가 필요한가?"를 확인하세요. 밑창 마모·무릎 안쪽 통증·평발 3가지로 자가진단합니다.</li>
     <li><strong>지지 방식이 4가지로 갈립니다</strong> — 단단한 판(뉴발 860)·적응형 가이드(카야노)·양옆 가드레일(브룩스)·경량 프레임(호카 아라히). 강도와 무게가 다릅니다.</li>
-    <li><strong>발볼 넓은 한국 러너는 와이드부터</strong> — 860 V14가 4옵션으로 최강, 카야노 2E·4E. 추천 순위보다 "내 발에 맞는 방식·폭"을 먼저 고르는 길잡이입니다.</li>
+    <li><strong>발볼 넓은 한국 러너는 와이드부터</strong> — 한국 공식몰 기준 860 V15 남성 2E·4E, 카야노 2E·4E. 추천 순위보다 "내 발에 맞는 방식·폭"을 먼저 고르는 길잡이입니다.</li>
   </ul>
 </div>
 
@@ -4246,8 +4246,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>지지 방식</th><th>발볼 옵션</th><th>무게</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td><strong>Narrow / 표준 / 2E / X-Wide</strong></td><td>295g</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td>표준 / 2E</td><td>330g</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td>해외 Narrow / 표준 / 2E / X-Wide (한국 공식몰 미등재, 2026-10-20)</td><td>295g</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>330g</td></tr>
     <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>FLUIDSUPPORT</td><td>표준 / 2E / 4E</td><td>중량급</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>표준 토박스가 넓음</td><td>쿠션급</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>J-Frame</td><td>표준 / 와이드</td><td>경량</td></tr>
@@ -4257,15 +4257,15 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout info">
   <span class="callout-icon">📏</span>
   <div class="callout-body">
-    <p class="callout-title">발볼 넓으면 860 V14의 4옵션이 압도적</p>
-    <p>발볼 폭이 고민이라면 <strong>뉴발란스 860 V14의 Narrow/표준/2E/X-Wide 4단계</strong>가 가장 정밀하게 맞출 수 있습니다. 발볼·평발 전반의 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 토박스 실측이 있으니 함께 보세요.</p>
+    <p class="callout-title">발볼 넓으면 한국 공식몰 와이드부터 확인</p>
+    <p>뉴발란스 860 V14는 해외에 Narrow/표준/2E/X-Wide 4가지 폭이 있지만, 2026-10-20 기준 한국 공식몰에서는 검색되지 않고 토박스도 RunRepeat 실측 73.0mm로 평균(73.2mm) 수준입니다. 국내에서 와이드를 공식몰로 사려면 <strong>860 V15(남성 2E·4E, 여성 D)</strong>를 먼저 보세요. 발볼·평발 전반의 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 토박스 실측이 있으니 함께 보세요.</p>
   </div>
 </div>
 
 <h2>그래서 뭘 사지? — 상황별 정리</h2>
 
 <ul>
-  <li><strong>처음 안정화 + 발볼 넓음 + 가성비</strong> → <a href="/shoes/new-balance-860-v14">뉴발 860 V14</a>(17.9만, 발볼 4옵션).</li>
+  <li><strong>처음 안정화 + 발볼 넓음 + 가성비</strong> → <a href="/shoes/new-balance-860-v14">뉴발 860 V14</a>(17.9만, 토박스 평균 수준). 공식몰 와이드가 필요하면 <a href="/shoes/new-balance-860-v15">860 V15</a>(남성 2E·4E).</li>
   <li><strong>강한 교정 + 프리미엄</strong> → <a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a>.</li>
   <li><strong>자연스러운 지지 + 두툼한 쿠션</strong> → <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>.</li>
   <li><strong>가벼운 안정화 + 데일리</strong> → <a href="/shoes/hoka-arahi-8">호카 아라히 8</a> · <a href="/shoes/saucony-guide-18">소커니 가이드 18</a>.</li>
