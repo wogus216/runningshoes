@@ -41,9 +41,19 @@ export const februaryEvents: MarathonEvent[] = [
     logistics: {
       bagStorage: true,
     },
+    raceKit: {
+      items: [
+        '참가상 타월(대회 당일 출전자 전원, 러너 접수처가 아니라 당일 지급)',
+        '완주 메달·메달 리본(완주자)',
+        '오리지널 후로시키(보자기) — 러너 접수를 마친 해외 러너 한정',
+      ],
+      pending:
+        '선택 구매 기념품(신청 때만 주문 가능)으로 오리지널 넥게이터 2,500엔·오리지널 마이컵 1,200엔이 있었습니다. 배번호 등은 대회 전 이틀(2027년 2월 19일 13:30~20:00, 20일 10:30~19:00, 일본시간=한국시간 동일) 교토 미야코메세에서 본인이 신분증 원본을 들고 직접 받아야 하며, 대회 당일 수령과 대리 수령은 안 됩니다.',
+      verifiedAt: '2026-10-20',
+    },
     registrationStart: '2026-07-16',
     registrationEnd: '2026-09-30',
-    lastVerified: '2026-10-01',
+    lastVerified: '2026-10-20',
   },
   {
     id: 'osaka-marathon-2027',
