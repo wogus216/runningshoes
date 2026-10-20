@@ -122,7 +122,7 @@ export const posts_2025_01: BlogPost[] = [
     <tr><td>Saucony Triumph 22</td><td>73.6mm</td><td>97.5mm</td><td>표준</td></tr>
     <tr><td>Asics GT-2000 13</td><td>73.3mm</td><td>96.0mm</td><td>표준 (평균)</td></tr>
     <tr><td>Hoka Clifton 10</td><td>73.1mm</td><td>-</td><td>표준</td></tr>
-    <tr><td>Nike Pegasus 41</td><td>72.9mm</td><td>94.6mm</td><td>표준 (좁은 편)</td></tr>
+    <tr><td>Nike Pegasus 41</td><td>72.9mm</td><td>94.6mm</td><td>좁음 (테이퍼형)</td></tr>
     <tr><td>Brooks Ghost 16</td><td>72.1mm</td><td>96.1mm</td><td>좁은 편</td></tr>
     <tr><td>New Balance 1080 v14</td><td>69.8mm</td><td>-</td><td>좁음 (주의!)</td></tr>
     <tr><td>Hoka Bondi 8</td><td>69.2mm</td><td>92.2mm</td><td>좁음 (주의!)</td></tr>

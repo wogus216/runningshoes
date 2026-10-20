@@ -445,7 +445,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>하이퍼부스트 엣지 — 45mm 감각이 목적일 때</h2>
 <p>엣지의 강점은 명확합니다. 힐 충격흡수 154는 최상위권이고, 폼 경도 32.5 AC로 무른 편이라 발이 푹 잠기는 감각이 강합니다. 44.6mm를 얹고도 247g에 머문 것도 인상적입니다. 플레이트가 없는데 종방향으로는 단단한 편이라, 곧게 뻗은 길을 일정한 페이스로 밀 때 특히 잘 맞습니다. <strong>아웃솔은 100km를 달려도 마모가 거의 보이지 않아</strong> 700km 이상을 기대할 수 있고, 그 덕에 km당 비용은 356원으로 런(438원)보다 오히려 저렴합니다.</p>
-<p>약점은 갑피 한 곳에 몰려 있습니다. 앞서 말한 힐 칼라 쓸림이 첫째고, 통기성 62는 러닝화 평균 이하라 한여름에 발열이 갇힙니다. 토박스 폭 71.4mm는 표준이지만 높이가 24.8mm로 낮아 발볼보다 발등에서 먼저 걸립니다. 안정성 평가도 낮은 편이라 발이 안쪽으로 무너지는 러너에게는 권하지 않습니다.</p>
+<p>약점은 갑피 한 곳에 몰려 있습니다. 앞서 말한 힐 칼라 쓸림이 첫째고, 통기성 62는 러닝화 평균 이하라 한여름에 발열이 갇힙니다. 토박스 폭 71.4mm는 평균(73.2mm)보다 좁은 편이고 높이도 24.8mm로 낮아 발볼과 발등 모두에서 걸릴 수 있습니다. 안정성 평가도 낮은 편이라 발이 안쪽으로 무너지는 러너에게는 권하지 않습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 45mm급 고스택의 푹신한 감각 자체를 원하는 분, 주간 거리가 많아 아웃솔 수명이 중요한 분, 뒤꿈치 복사뼈가 예민하지 않은 중립 발 러너.</p>
 
 <h2>하이퍼부스트 런 — 매일 신을 형태로 정리한 쪽</h2>
@@ -755,7 +755,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>경량화</strong> — 전작 대비 10% 가벼워졌다는 서술이 나왔습니다. 다만 절대 무게(g)는 공개되지 않았습니다</li>
 </ul>
 
-<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 표준 폭이었는데, 페가수스 42 계열 라스트로 옮겨오면서 앞쪽 여유가 어떻게 달라졌는지는 실물 측정이 나와야 판단할 수 있습니다. 다만 방향 자체는 넓어지는 쪽입니다.</p>
+<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 좁은 폭(실측 71.6mm)이었는데, 페가수스 42 계열 라스트로 옮겨오면서 앞쪽 여유가 어떻게 달라졌는지는 실물 측정이 나와야 판단할 수 있습니다. 다만 방향 자체는 넓어지는 쪽입니다.</p>
 
 <h2>우리 예상이 빗나간 지점 — 출시가 훨씬 빨랐다</h2>
 
@@ -1362,7 +1362,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026',
     title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 259,000원, 정반대 해법 | 플레이트로 밀 것인가, 폼으로 받칠 것인가',
     description:
-      '뉴발란스 SC 레벨(SC Rebel V1)이 8월 22일 한국에 풀리면서 아식스 슈퍼블라스트 3와 정가가 259,000원으로 똑같아졌습니다. 그런데 설계는 정반대입니다 — SC 레벨은 218g·스택 40mm·드롭 4mm에 Energy Arc 플레이트를 넣은 "플레이트 해법", 슈퍼블라스트 3는 239g·스택 46.5mm·드롭 8mm에 플레이트가 아예 없는 "폼 해법"입니다. 무게 21g, 스택 6.5mm, 드롭 4mm가 한꺼번에 갈립니다. 여기에 발볼이 결정타로 붙습니다 — 좁다는 평을 받은 SC 레벨엔 와이드 2E가 있고, 표준폭인 슈퍼블라스트 3엔 와이드가 없습니다. 두 신발의 실측값과 한국 러너 관점 선택 기준을 정리했습니다.',
+      '뉴발란스 SC 레벨(SC Rebel V1)이 8월 22일 한국에 풀리면서 아식스 슈퍼블라스트 3와 정가가 259,000원으로 똑같아졌습니다. 그런데 설계는 정반대입니다 — SC 레벨은 공식 218g·스택 40mm·드롭 4mm에 Energy Arc 플레이트를 넣은 "플레이트 해법", 슈퍼블라스트 3는 공식 239g·스택 46.5mm·드롭 8mm에 플레이트가 아예 없는 "폼 해법"입니다. 공식 수치로는 무게 21g, 스택 6.5mm, 드롭 4mm가 한꺼번에 갈리지만, RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라 드롭 차이는 표기만큼 크지 않습니다. 여기에 발볼이 결정타로 붙습니다 — 좁다는 평을 받은 SC 레벨엔 와이드 2E가 있고, 토박스가 랩 평균보다 좁게 측정된 슈퍼블라스트 3엔 와이드가 없습니다. 두 신발의 실측값과 한국 러너 관점 선택 기준을 정리했습니다.',
     thumbnail: '/images/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-22',
@@ -1373,9 +1373,9 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>정가가 259,000원으로 똑같습니다.</strong> 그런데 훈련과 레이스를 한 켤레로 묶는 "슈퍼 트레이너"라는 같은 목표를 <strong>정반대로 풀었습니다</strong> — <a href="/shoes/new-balance-sc-rebel">SC 레벨</a>은 플레이트를 넣어 <strong>가볍고 낮게</strong>(218g·40mm), <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>는 플레이트를 빼고 <strong>두껍고 무겁게</strong>(239g·46.5mm) 갔습니다</li>
-    <li><strong>드롭이 두 배 차이</strong>입니다(4mm vs 8mm). 저드롭은 착지 때 아킬레스·종아리가 받는 부하를 키우는 방향이라, 이 4mm가 두 신발의 체감을 가르는 가장 큰 변수입니다</li>
-    <li><strong>발볼에서 결론이 뒤집힙니다.</strong> 해외 리뷰가 "좁다"고 지적한 쪽은 SC 레벨인데, 정작 <strong>와이드(2E)가 있는 것도 SC 레벨</strong>입니다. 슈퍼블라스트 3는 표준폭이지만 와이드가 없습니다 — 발볼이 넓다면 선택지가 사실상 하나입니다</li>
+    <li><strong>정가가 259,000원으로 똑같습니다.</strong> 그런데 훈련과 레이스를 한 켤레로 묶는 "슈퍼 트레이너"라는 같은 목표를 <strong>정반대로 풀었습니다</strong> — <a href="/shoes/new-balance-sc-rebel">SC 레벨</a>은 플레이트를 넣어 <strong>가볍고 낮게</strong>(공식 218g·40mm), <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>는 플레이트를 빼고 <strong>두껍고 무겁게</strong>(239g·46.5mm) 갔습니다</li>
+    <li><strong>드롭은 표기상 두 배 차이</strong>입니다(공식 4mm vs 8mm). 그런데 RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라, 표기만 보고 저드롭 신발로 판단하면 어긋납니다</li>
+    <li><strong>발볼에서 결론이 뒤집힙니다.</strong> 해외 리뷰가 "좁다"고 지적한 쪽은 SC 레벨인데, 정작 <strong>와이드(2E)가 있는 것도 SC 레벨</strong>입니다. 슈퍼블라스트 3도 RunRepeat 실측 토박스 71.6mm로 좁은 편인데 와이드가 없습니다 — 발볼이 넓다면 선택지가 사실상 하나입니다</li>
   </ul>
 </div>
 
@@ -1383,7 +1383,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>대회에서도 신을 생각이면 SC 레벨</strong>, <strong>훈련량을 받아내는 게 우선이면 슈퍼블라스트 3</strong>입니다. 218g은 레이싱화 영역(<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>가 198g입니다)에 발을 걸치고 있고, 46.5mm 스택은 롱런 뒤 다리에 남는 걸 줄이는 쪽입니다. 다만 <strong>발볼이 넓으면 이 비교는 성립하지 않습니다</strong> — 와이드가 있는 SC 레벨 2E가 유일한 답입니다. SC 레벨 구매 경로는 <a href="/blog/new-balance-sc-rebel-korea-launch-2026">한국 출시 정리</a>, 해외 평가 배경은 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰</a>에 있습니다.</p>
+    <p><strong>대회에서도 신을 생각이면 SC 레벨</strong>, <strong>훈련량을 받아내는 게 우선이면 슈퍼블라스트 3</strong>입니다. 207g(실측)은 레이싱화 영역(<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>가 198g입니다)에 발을 걸치고 있고, 46.5mm 스택은 롱런 뒤 다리에 남는 걸 줄이는 쪽입니다. 다만 <strong>발볼이 넓으면 이 비교는 성립하지 않습니다</strong> — 와이드가 있는 SC 레벨 2E가 유일한 답입니다. SC 레벨 구매 경로는 <a href="/blog/new-balance-sc-rebel-korea-launch-2026">한국 출시 정리</a>, 해외 평가 배경은 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰</a>에 있습니다.</p>
   </div>
 </div>
 
@@ -1404,7 +1404,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>플레이트</td><td><strong>Energy Arc</strong> <small>(지면 쪽 배치)</small></td><td><strong>없음</strong></td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 9</td><td><strong>10</strong> / 9</td></tr>
     <tr><td>안정성</td><td>5</td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편 / <strong>2E 있음</strong></td><td>표준 / <strong>없음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편 / <strong>2E 있음</strong></td><td>좁은 편(71.6mm) / <strong>없음</strong></td></tr>
     <tr><td>내구 · km당</td><td>400~500km <small>(추정)</small> · 약 576원</td><td><strong>500~600km</strong> · 약 471원</td></tr>
     <tr><td>적정 페이스</td><td>3:50~5:00 /km</td><td>4:00~5:30 /km</td></tr>
   </tbody>
@@ -1416,31 +1416,31 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>이 신발에서 가장 특이한 선택은 플레이트의 <strong>위치</strong>입니다. 보통 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 Energy Arc를 <strong>지면 쪽</strong>에 깔았습니다. 뒤쪽은 미드풋을 잡아주고 앞쪽은 밀어주는 식으로 역할을 나눈 구조입니다. Road Trail Run 멀티 테스터가 9.99/10과 9.5/10을 매기고 Believe in the Run이 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 표현을 쓴 이유가 여기 있습니다 — 폼이 물러도 플랫폼이 무너지지 않는다는 평가입니다. 플레이트 자체가 어떻게 작동하는지는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>에 정리해뒀습니다.</p>
 
-<p>그 결과가 <strong>218g</strong>입니다. 스택 40mm를 얹고도 이 무게라, 훈련화보다는 레이싱화 쪽에 발을 걸칩니다. 같은 뉴발란스 카본 레이서 SC 엘리트 v5가 198g이니 차이가 20g에 불과합니다. 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(278g)와 비교하면 60g이 빠졌습니다.</p>
+<p>그 결과가 <strong>207g</strong>(RunRepeat 실측)입니다. 힐 스택 38.3mm(실측)를 얹고도 이 무게라, 훈련화보다는 레이싱화 쪽에 발을 걸칩니다. 같은 뉴발란스 카본 레이서 SC 엘리트 v5가 198g이니 차이가 9g에 불과합니다. 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(278g)와 비교하면 71g이 빠졌습니다.</p>
 
-<p>약점은 둘입니다. 첫째, <strong>드롭 4mm에 40mm 스택</strong>이라 종아리·아킬레스 부하가 실재합니다. 8mm대 데일리에서 곧바로 넘어오면 초반 몇 주가 뻐근할 수 있고, 아킬레스건염 이력이 있으면 주력으로 두기 어렵습니다. 둘째, <strong>내구가 아직 미지수</strong>입니다. 랩 마모 측정이 없어 400~500km로 추정할 뿐이고, 이 값이면 km당 약 576원으로 슈퍼블라스트 3보다 비쌉니다.</p>
+<p>약점은 둘입니다. 첫째, <strong>38mm대 스택에 플레이트</strong>가 더해진 구성이라 종아리·아킬레스 부하가 실재합니다(브랜드 표기 드롭은 4mm지만 RunRepeat 실측은 8.8mm라 저드롭 부담은 표기보다 작습니다). 플레이트 신발 경험 없이 곧바로 넘어오면 초반 몇 주가 뻐근할 수 있고, 아킬레스건염 이력이 있으면 주력으로 두기 어렵습니다. 둘째, <strong>내구가 아직 미지수</strong>입니다. 랩 마모 측정이 없어 400~500km로 추정할 뿐이고, 이 값이면 km당 약 576원으로 슈퍼블라스트 3보다 비쌉니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 훈련과 대회를 한 켤레로 묶고 싶은 러너, 슈퍼 트레이너의 240g대가 둔하게 느껴지던 러너, SC 트레이너 v3에서 갈아탈 뉴발란스 사용자, 그리고 <strong>발볼이 넓어 슈퍼 트레이너 선택지가 없던 러너(2E 한정)</strong>.</p>
 
 <h2>슈퍼블라스트 3 — 플레이트 없이 46.5mm로 받친다</h2>
 
-<p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 239g으로 21g 무겁습니다.</p>
+<p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 공식 기준 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 공식 239g으로 21g 무겁습니다.</p>
 
 <p>플레이트가 없다는 게 곧 "느리다"는 뜻은 아닙니다. 반발 점수는 9로 SC 레벨과 같고, 적정 페이스도 4:00~5:30으로 겹칩니다. 차이는 <strong>추진의 성격</strong>입니다 — 플레이트가 굴려주는 느낌이 아니라 폼이 눌렸다 튀어나오는 느낌에 가깝습니다. 같은 무플레이트 계열인 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>와의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">별도 글</a>에서 다뤘습니다.</p>
 
 <p>실용적인 강점은 <strong>내구</strong>입니다. 500~600km로 km당 약 471원이라, SC 레벨보다 100원 이상 쌉니다. 훈련 주력으로 쓸 신발에서 이 차이는 누적됩니다. 부상 관점에서도 8mm 드롭 덕에 아킬레스 부담이 낮은 쪽(우리 DB 평가 excellent)이라, 저드롭이 부담스러운 러너에게 안전한 선택입니다.</p>
 
-<p>약점은 <strong>와이드가 없다</strong>는 것입니다. 전작보다 토박스가 넓어져 표준폭 기준으로는 편해졌지만, 발볼이 확실히 넓으면 대안이 없습니다.</p>
+<p>약점은 <strong>와이드가 없다</strong>는 것입니다. 토박스도 RunRepeat 실측 71.6mm로 랩 평균(73.2mm)보다 좁아, 발볼이 확실히 넓으면 대안이 없습니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 주간 거리가 많아 훈련량을 받아낼 쿠션이 우선인 러너, 저드롭이 부담스러운 러너, 롱런과 마라톤 페이스런을 한 켤레로 소화하려는 러너, km당 비용을 따지는 러너.</p>
 
 <h2>내게 맞는 건?</h2>
 
 <ul>
-  <li><strong>발볼이 넓다</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 2E</a>. 역설적이지만 "좁다"고 평가받은 쪽에만 와이드가 있습니다. 슈퍼블라스트 3는 표준폭 단일이라 이 조건에서 후보가 못 됩니다</li>
-  <li><strong>이 신발로 대회도 뛴다</strong> → SC 레벨. 218g은 레이싱화 영역이고 플레이트가 후반 추진을 돕습니다</li>
+  <li><strong>발볼이 넓다</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 2E</a>. 둘 다 좁은 편이지만 와이드는 SC 레벨에만 있습니다. 슈퍼블라스트 3는 표준폭 단일이라 이 조건에서 후보가 못 됩니다</li>
+  <li><strong>이 신발로 대회도 뛴다</strong> → SC 레벨. 207g(실측)은 레이싱화 영역이고 플레이트가 후반 추진을 돕습니다</li>
   <li><strong>주간 거리가 많다 / 롱런 비중이 크다</strong> → 슈퍼블라스트 3. 46.5mm 스택과 500~600km 내구가 훈련 부하를 받아냅니다</li>
-  <li><strong>아킬레스·종아리가 약하거나 저드롭이 처음</strong> → 슈퍼블라스트 3. 4mm와 8mm의 차이는 생각보다 큽니다</li>
+  <li><strong>아킬레스·종아리가 약하거나 플레이트 신발이 처음</strong> → 슈퍼블라스트 3. SC 레벨은 드롭이 표기 4mm·실측 8.8mm라, 변수는 드롭보다 높은 스택과 플레이트 조합입니다</li>
   <li><strong>km당 비용을 따진다</strong> → 슈퍼블라스트 3(약 471원). SC 레벨은 약 576원이고 그마저 추정치입니다</li>
   <li><strong>데일리 조깅이 주 용도</strong> → 둘 다 과합니다. 플레이트도 46mm 스택도 조깅 페이스에서는 이점이 크지 않습니다. <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a> 같은 경량 데일리가 맞습니다</li>
 </ul>
@@ -1449,7 +1449,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">이름이 비슷해서 생기는 오해</p>
-    <p><strong>SC 레벨과 퓨얼셀 레벨 v5는 다른 계보입니다.</strong> 레벨 v5는 220g·33/27mm·<strong>무플레이트</strong>의 유연한 경량 데일리이고, SC 레벨은 218g·40/36mm·플레이트가 들어간 슈퍼 트레이너입니다. 무게는 거의 같지만 스택이 7mm 차이 나고 성격이 반대라, "레벨의 업그레이드"로 생각하고 사면 어긋납니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">계급도</a>에 있습니다.</p>
+    <p><strong>SC 레벨과 퓨얼셀 레벨 v5는 다른 계보입니다.</strong> 레벨 v5는 220g·33/27mm·<strong>무플레이트</strong>의 유연한 경량 데일리이고, SC 레벨은 207g·38.3/29.5mm(RunRepeat 실측)·플레이트가 들어간 슈퍼 트레이너입니다. 무게는 SC 레벨이 13g 가볍고 힐 스택이 5mm가량 높으며 성격이 반대라, "레벨의 업그레이드"로 생각하고 사면 어긋납니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">계급도</a>에 있습니다.</p>
   </div>
 </div>
 
@@ -1466,11 +1466,11 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 왜 쿠션 점수가 높나요?</p>
-    <p class="faq-a">A. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
+    <p class="faq-a">A. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 공식 수치 기준으로 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 첫 슈퍼 트레이너로는 어느 쪽이 낫나요?</p>
-    <p class="faq-a">A. 슈퍼블라스트 3입니다. 8mm 드롭이라 기존 데일리에서 넘어올 때 적응 부담이 적고, 플레이트가 없어 페이스를 강제하지 않습니다. SC 레벨의 4mm 드롭 + 플레이트 조합은 어느 정도 주력이 쌓인 뒤가 안전합니다. 참고로 둘 다 입문용 첫 러닝화로는 적합하지 않습니다 — 슈퍼 트레이너는 이미 훈련 루틴이 있는 러너를 전제로 한 카테고리입니다.</p>
+    <p class="faq-a">A. 슈퍼블라스트 3입니다. 8mm 드롭이라 기존 데일리에서 넘어올 때 적응 부담이 적고, 플레이트가 없어 페이스를 강제하지 않습니다. SC 레벨의 높은 스택 + 플레이트 조합(드롭은 표기 4mm·실측 8.8mm)은 어느 정도 주력이 쌓인 뒤가 안전합니다. 참고로 둘 다 입문용 첫 러닝화로는 적합하지 않습니다 — 슈퍼 트레이너는 이미 훈련 루틴이 있는 러너를 전제로 한 카테고리입니다.</p>
   </div>
 </div>
 
@@ -1914,20 +1914,20 @@ export const posts_2026_08: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td rowspan="3">근교·입문</td><td><a href="/shoes/asics-gel-venture-10"><strong>아식스 젤 벤처 10</strong></a></td><td>8.9만</td><td>322g</td><td>흙길·산책로 위주 첫 트레일화, 와이드·워터프루프 옵션</td></tr>
-    <tr><td><a href="/shoes/saucony-peregrine-16"><strong>써코니 페레그린 16</strong></a></td><td>17.9만</td><td>269g</td><td>록플레이트·Vibram Megagrip을 갖춘 써코니 트레일 표준, 와이드 옵션</td></tr>
+    <tr><td><a href="/shoes/saucony-peregrine-16"><strong>써코니 페레그린 16</strong></a></td><td>17.9만</td><td>278g</td><td>록플레이트·Vibram Megagrip을 갖춘 써코니 트레일 표준, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/salomon-pulsar"><strong>살로몬 펄사</strong></a></td><td>21만</td><td>290g</td><td>일상 훈련부터 업템포까지 커버하는 데일리 트레이너</td></tr>
     <tr><td rowspan="4">올라운드</td><td><a href="/shoes/hoka-speedgoat-6"><strong>호카 스피드고트 6</strong></a></td><td>20.5만</td><td>278g</td><td>젖은 바위부터 급경사까지, 와이드·GTX 방수까지 있는 만능형</td></tr>
     <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>호카 스피드고트 7</strong></a></td><td>21.9만</td><td>281g</td><td>스피드고트 6의 반발력 강화판, 게이터 부착 루프 추가</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>20.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>아디다스 테렉스 아그라빅 4</strong></a></td><td>16.9만</td><td>283g</td><td>진흙·테크니컬 지형 최상위권 그립, 트레이닝부터 울트라까지</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>아식스 메타후지 트레일</strong></a></td><td>27.9만</td><td>258g</td><td>카본 플레이트로 평탄·로드-트레일 혼합 구간 빠른 반발력</td></tr>
     <tr><td rowspan="4">쿠션·울트라</td><td><a href="/shoes/new-balance-hierro-v9"><strong>뉴발란스 히에로 v9</strong></a></td><td>18.9만</td><td>309g</td><td>자갈길·로드투트레일 완만한 지형의 장거리, 쿠션+안정</td></tr>
     <tr><td><a href="/shoes/salomon-ultra-glide-4"><strong>살로몬 울트라 글라이드 4</strong></a></td><td>23만</td><td>295g</td><td>50~100km 울트라 장거리 맥스 쿠션, 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>336g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 토박스</td></tr>
+    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>나이키 ACG 제가마 트레일</strong></a></td><td>21.9만</td><td>306g</td><td>맥시멀 쿠션 울트라 트레일, 넓은 중족부</td></tr>
     <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>써코니 엑소더스 울트라 4</strong></a></td><td>21.9만</td><td>309g</td><td>PWRRUN PB 슈퍼폼 맥스 쿠션, 울트라 거리용 상위 모델</td></tr>
     <tr><td rowspan="4">카본 레이싱</td><td><a href="/shoes/hoka-tecton-x-3"><strong>호카 테크톤 X 3</strong></a></td><td>33.9만</td><td>275g</td><td>듀얼 카본 플레이트 + PEBA, 울트라 트레일 레이스용</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>나이키 울트라플라이</strong></a></td><td>29.9만</td><td>299g</td><td>완만한 비포장·파이어로드에서 빠른 라이드, 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/salomon-s-lab-pulsar-4"><strong>살로몬 S/LAB 펄사 4</strong></a></td><td>34만</td><td>247g</td><td>20~80km 기술 트레일·VK·스카이러닝 엘리트 레이서</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>27.9만</td><td>265g</td><td>완만~중간 트레일 레이스, 8mm 드롭·44mm 고스택으로 안정적</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아디다스 아그라빅 스피드 울트라 2</strong></a></td><td>28.9만</td><td>269g</td><td>완만~중간 트레일 레이스, 측정 드롭 0.1mm(아디다스 표기 8mm)의 전족·미드풋 착지형</td></tr>
   </tbody>
 </table>
 
@@ -1936,20 +1936,20 @@ export const posts_2026_08: BlogPost[] = [
 <h2>4. 단별로 — 어떤 러너·어떤 산에 맞나</h2>
 
 <h3>근교·입문 (8.9만~21만원)</h3>
-<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 신형 optiFOAM2 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 269g으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
+<p>산에 처음 다니거나 근교 흙길·둘레길 위주로 달릴 계획이면 이 단으로 충분합니다. <a href="/shoes/asics-gel-venture-10">젤 벤처 10</a>은 8.9만원대 가격에 워터프루프·와이드(4E) 옵션까지 갖춰 부담 없는 첫 켤레이고, <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 Opti FOAM Evo 미드솔로 쿠션과 반응성의 균형이 좋아 일상 훈련부터 업템포까지 한 켤레로 쓸 수 있습니다. 그 사이를 메우는 <a href="/shoes/saucony-peregrine-16">써코니 페레그린 16</a>은 17.9만원에 록플레이트와 Vibram Megagrip을 함께 갖춰, 젤 벤처 10보다 험한 노면까지 감당하면서도 20만원 선을 넘지 않는 자리입니다. 278g(RunRepeat 실측)으로 이 단에서 가장 가볍고 와이드 옵션도 국내에 들어옵니다.</p>
 
-<h3>올라운드 (20.5만~27.9만원)</h3>
+<h3>올라운드 (16.9만~27.9만원)</h3>
 <p>산에 정기적으로 다니기 시작했다면 이 단이 기준점입니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>은 Vibram Megagrip 그립으로 젖은 바위부터 급경사까지 대응하는 베스트셀러이고, <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>은 반발력을 끌어올린 후속작입니다. <a href="/shoes/adidas-terrex-agravic-4">테렉스 아그라빅 4</a>는 진흙·테크니컬 지형에서 최상위권 그립을, <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 카본 플레이트로 평탄한 로드-트레일 혼합 구간에서 빠른 반발력을 냅니다. 이 넷을 정면으로 비교한 글이 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">스피드고트 6 vs 펄사 vs 메타후지</a>입니다.</p>
 
 <h3>쿠션·울트라 (18.9만~23만원)</h3>
-<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 넓은 토박스의 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
+<p>장거리·울트라 지향이면 이 단을 봅니다. <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>은 자갈길·로드투트레일처럼 완만한 지형의 장거리에 특화된 쿠션+안정 성격이고, <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 41mm 스택의 맥스 쿠션으로 50~100km 울트라 장거리를 겨냥합니다. <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>은 중족부가 넓은(실측 96.9mm) 맥시멀 쿠션 울트라 트레일화입니다. <a href="/shoes/saucony-xodus-ultra-4">써코니 엑소더스 울트라 4</a>는 PWRRUN PB 슈퍼폼을 전작보다 8% 늘리고 그 둘레를 단단한 PWRRUN 프레임으로 감싼 구조라, 맥스 쿠션이면서도 옆으로 흔들리는 느낌을 줄인 쪽입니다. 다만 309g으로 무겁고 국내 와이드 옵션은 없습니다. 살로몬 라인 안에서 펄사·울트라 글라이드·S/LAB 펄사가 어떻게 갈리는지는 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 3종 비교</a>에 정리돼 있습니다.</p>
 
-<h3>카본 레이싱 (27.9만~34만원)</h3>
-<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 8mm 드롭·44mm 고스택으로 완만~중간 트레일 레이스에서 안정적인 편입니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
+<h3>카본 레이싱 (28.9만~34만원)</h3>
+<p>이 단은 대회·기술 지형용입니다. <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>은 듀얼 카본 플레이트와 PEBA 폼으로 울트라 트레일 레이스에 특화됐고, <a href="/shoes/nike-ultrafly">울트라플라이</a>는 완만한 비포장·파이어로드에서 빠른 라이드를 냅니다. <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 247g 최경량으로 20~80km 기술 트레일·VK·스카이러닝처럼 빠르고 험한 코스를 겨냥한 엘리트 레이서이고, <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>는 아디다스 표기 8mm 드롭과 달리 RunRepeat 측정 드롭이 0.1mm(힐 30.7mm)인 전족·미드풋 착지형으로, 완만~중간 트레일 레이스에서 빠릅니다. 카본 트레일화 3종을 나란히 놓고 본 글은 <a href="/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026">테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사</a>입니다.</p>
 
 <h2>5. 처음 사는 사람에게</h2>
 
-<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(27.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
+<p>근교 산책로·둘레길 위주로 트레일을 시작한다면 <strong>근교·입문 단으로 충분</strong>합니다. 카본 레이싱 단(28.9만~34만원)은 울트라 대회나 기술적인 산악 코스를 상정한 신발이라, 주말에 근교 산을 달리는 단계에서는 성능을 쓸 일이 거의 없고 가격만 부담이 됩니다. 올라운드 단은 산에 다니는 빈도가 늘어난 뒤, 카본 레이싱 단은 실제로 울트라 대회나 기술 지형에 나설 계획이 생겼을 때 넘어가도 늦지 않습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -2521,12 +2521,12 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '왜 화제가 된 신발인가요?',
         answer:
-          '해외 첫 리뷰 점수가 이례적으로 높습니다. Road Trail Run 테스터가 9.99/10을 줬고, Believe in the Run은 "역대 최고의 뉴발란스 러닝화"라는 표현을 썼습니다. 218g에 스택 40/36mm, 새 Infinion 폼과 지면 쪽에 깔린 Energy Arc 플레이트로 훈련과 레이스를 한 켤레로 커버하는 슈퍼 트레이너 포지션이며, SC 트레이너 v3를 사실상 대체합니다.',
+          '해외 첫 리뷰 점수가 이례적으로 높습니다. Road Trail Run 테스터가 9.99/10을 줬고, Believe in the Run은 "역대 최고의 뉴발란스 러닝화"라는 표현을 썼습니다. 207g(RunRepeat 실측)에 힐 스택 38.3mm(실측, 브랜드 표기 40/36mm), 새 Infinion 폼과 지면 쪽에 깔린 Energy Arc 플레이트로 훈련과 레이스를 한 켤레로 커버하는 슈퍼 트레이너 포지션이며, SC 트레이너 v3를 사실상 대체합니다.',
       },
       {
         question: '발볼이 넓은데 온라인으로 바로 사도 될까요?',
         answer:
-          '표준폭(D)이라면 권하지 않습니다 — Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했습니다. 다만 8월 22일 출시와 함께 뉴발란스 코리아에 남성 2E 와이드가 함께 올라온 것을 확인했으므로, 발볼이 넓다면 2E를 고르면 됩니다. 그래도 저드롭·플레이트 조합이라 착화감 편차가 크니 런허브 여의도 체험을 거치는 편이 안전합니다. 발볼이 보통이거나 좁다면 D 표준폭의 딱 감기는 핏이 오히려 장점이 될 수 있습니다.',
+          '표준폭(D)이라면 권하지 않습니다 — Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했습니다. 다만 8월 22일 출시와 함께 뉴발란스 코리아에 남성 2E 와이드가 함께 올라온 것을 확인했으므로, 발볼이 넓다면 2E를 고르면 됩니다. 그래도 고스택·플레이트 조합이라 착화감 편차가 크니 런허브 여의도 체험을 거치는 편이 안전합니다. 발볼이 보통이거나 좁다면 D 표준폭의 딱 감기는 핏이 오히려 장점이 될 수 있습니다.',
       },
     ],
     content: `
@@ -2555,7 +2555,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>모델</td><td>뉴발란스 SC 레벨 (SuperComp Rebel) — 슈퍼 트레이너 라인 신규</td></tr>
     <tr><td>단독 발매</td><td><strong>2026년 8월 22일(토) 오전 11시</strong></td></tr>
     <tr><td>발매가</td><td><strong>259,000원</strong> (글로벌 $190~200)</td></tr>
-    <tr><td>핵심 스펙</td><td>218g · 스택 40/36mm · 드롭 4mm · Infinion 폼 + Energy Arc 플레이트</td></tr>
+    <tr><td>핵심 스펙</td><td>207g(실측) · 스택 38.3/29.5mm(실측) · 드롭 8.8mm(실측, 브랜드 4mm) · Infinion 폼 + Energy Arc 플레이트</td></tr>
     <tr><td>체험</td><td><strong>8월 13일(목)부터 런허브 여의도</strong></td></tr>
     <tr><td>선공개 경로</td><td>런유어웨이 패키지 — 8/20(목) 쉐이크아웃런 패키지 · 8/21(금) SC 레벨 패키지, 매장 선착순</td></tr>
   </tbody>
@@ -2595,7 +2595,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <ul>
   <li><strong>사야 할 사람</strong> — 템포·인터벌·롱런을 한 켤레로 해결하고 싶은 중급 이상 러너, <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>에서 넘어갈 타이밍인 사람, 카본 레이서까진 부담스러운 마라토너</li>
-    <li><strong>다시 생각할 사람</strong> — 발볼 넓거나 발등 높은 러너(체험 필수), <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>의 말랑한 감각이 좋아서 신는 사람(성격이 다른 신발입니다), 러닝 입문자(드롭 4mm + 플레이트 40mm 스택은 종아리 부담이 큽니다)</li>
+    <li><strong>다시 생각할 사람</strong> — 발볼 넓거나 발등 높은 러너(체험 필수), <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>의 말랑한 감각이 좋아서 신는 사람(성격이 다른 신발입니다), 러닝 입문자(플레이트가 들어간 38mm대 고스택은 종아리·발목 부담이 큽니다)</li>
   <li><strong>뉴발란스 라인에서의 위치</strong>가 궁금하면 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 전체 그림을 확인하세요</li>
 </ul>
 
@@ -3410,7 +3410,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>플레이트</td><td>없음</td><td>없음 <em>(동일)</em></td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / <strong>9</strong></td><td><strong>9</strong> / 7</td></tr>
     <tr><td>안정성</td><td>6/10</td><td>6/10 <em>(동일)</em></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / <strong>없음</strong> <em>(한국 공식몰, 2026-10)</em></td><td>표준(71.0mm) / <strong>있음</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / <strong>없음</strong> <em>(한국 공식몰, 2026-10)</em></td><td>좁은 편(71.0mm) / <strong>있음</strong></td></tr>
     <tr><td>평발 적합성</td><td>보통</td><td>보통 <em>(동일)</em></td></tr>
     <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>700km · 256원</strong></td></tr>
     <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:30–6:30 /km</td></tr>
@@ -4057,7 +4057,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
     title: '노바블라스트 6 vs 보스턴 13 차이 — 같은 17.9만원, 5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
     description:
-      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원으로 똑같고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 325원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
+      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원 대 189,000원으로 1만원 차이고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 343원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
     thumbnail: '/images/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4068,7 +4068,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '두 신발 가격이 같은데 뭘 기준으로 고르나요?',
         answer:
-          '용도입니다. 둘 다 179,000원이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 9/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
+          '용도입니다. 정가는 179,000원 대 189,000원으로 1만원 차이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 9/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
       },
       {
         question: '무게가 5g밖에 차이 안 나는데 왜 느낌이 다른가요?',
@@ -4078,7 +4078,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼이 넓으면 어느 쪽인가요?',
         answer:
-          '노바블라스트 6입니다. 두 켤레 모두 토박스는 표준 폭이지만 와이드 옵션은 노바 6에만 있습니다. 보스턴 13은 표준 폭 하나뿐이라 선택지가 없습니다.',
+          '노바블라스트 6입니다. 두 켤레 모두 토박스는 좁은 편이지만 와이드 옵션은 노바 6에만 있습니다. 보스턴 13은 표준 폭 하나뿐이라 선택지가 없습니다.',
       },
       {
         question: '노바블라스트 5를 할인가에 사는 건 어떤가요?',
@@ -4088,16 +4088,16 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '오래 신는 쪽은요?',
         answer:
-          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 325원으로 약 27% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
+          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 343원으로 약 34% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
       },
     ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격이 똑같고 무게도 5g 차입니다</strong> — 둘 다 179,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
+    <li><strong>가격은 1만원 차, 무게는 5g 차입니다</strong> — 179,000원 대 189,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
     <li><strong>그런데 성격이 정확히 반대입니다</strong> — 쿠션 9 대 7, 반발 7 대 9. 노바 6은 <strong>플레이트 없이 39.2mm 스택으로 푹신하게</strong>, 보스턴 13은 <strong>유리섬유 Energy Rods로 굴려서</strong> 갑니다</li>
-    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 325원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
+    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 343원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
   </ul>
 </div>
 
@@ -4116,7 +4116,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>노바블라스트 6</th><th>보스턴 13</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>179,000원</td><td>179,000원 <em>(동일)</em></td></tr>
+    <tr><td>한국 정가</td><td>179,000원</td><td>189,000원 <em>(1만원 차)</em></td></tr>
     <tr><td>무게</td><td>249g</td><td>254g <em>(5g 차)</em></td></tr>
     <tr><td>스택 (힐/전족)</td><td><strong>39.2 / 32.1mm</strong></td><td>36 / 30mm</td></tr>
     <tr><td>드롭</td><td>7mm</td><td>6mm</td></tr>
@@ -4124,9 +4124,9 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>7 / <strong>9</strong></td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준 / <strong>있음</strong></td><td>표준 / <strong>없음</strong></td></tr>
+    <tr><td>토박스 / 와이드</td><td>좁은 편 / <strong>있음</strong></td><td>좁은 편 / <strong>없음</strong></td></tr>
     <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 325원</td></tr>
+    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 343원</td></tr>
     <tr><td>적정 페이스</td><td>4:30–6:30 /km</td><td>4:00–5:30 /km</td></tr>
   </tbody>
 </table>
@@ -4135,7 +4135,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>스펙표가 비슷한데 왜 다른 신발인가</h2>
 
-<p>가격이 같고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
+<p>가격이 1만원 차이고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
 
 <p>이유는 <strong>힘이 어디서 나오느냐</strong>입니다.</p>
 
@@ -4157,7 +4157,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>쿠션 9/10은 데일리화 중에서도 상위입니다. 힐 39.2mm 스택에 플레이트가 없어서, 발이 방해받지 않고 폼을 그대로 씁니다. 이지런·회복런·장거리 훈련처럼 <strong>편한 페이스로 오래 달리는 날</strong>에 값을 합니다.</p>
 
-<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 27% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
+<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 34% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
 
 <p>약점은 <strong>안정성 6/10</strong>과 평발 적합성 fair입니다. 스택이 높고 플레이트가 없다 보니 지쳤을 때 발이 흔들릴 여지가 있습니다. 그리고 반발 7/10이라 페이스를 확 올리는 날에는 심심하게 느껴집니다.</p>
 
@@ -4169,7 +4169,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>드롭 6mm에 전족 스택 30mm라 미드풋으로 착지해 굴리는 주법과 잘 맞습니다. 하프 레이스를 이 신발로 뛰는 것도 무리가 없습니다.</p>
 
-<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 325원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
+<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 343원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 템포·인터벌이 주간 계획에 고정된 분, 하프 레이스를 겸할 분, 발이 안쪽으로 무너지는 편인 분, 굴려주는 감각을 좋아하는 분.</p>
 
@@ -4194,7 +4194,7 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>주력 페이스가 4분 초반</strong> → 보스턴 13</li>
   <li><strong>주 5회 이상, 대부분 조깅</strong> → 노바 6(700km·와이드·쿠션 9)</li>
   <li><strong>포인트 훈련이 고정, 하프 레이스 예정</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 27% 유리)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 34% 유리)</li>
   <li><strong>예산을 더 줄이고 싶다</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a> 할인 재고(169,000원·스택 41mm)</li>
   <li><strong>같은 값대 다른 후보도 보고 싶다</strong> → <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>도 함께 보세요</li>
 </ul>
@@ -4212,7 +4212,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
-    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 같은 값이라 예산 계산도 단순합니다.</p>
+    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 정가 차이가 1만원이라 예산 계산도 단순합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 겨울에는 어느 쪽이 나은가요?</p>
@@ -4220,7 +4220,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 179,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(노바블라스트 6 179,000원 · 보스턴 13 189,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {
@@ -4228,7 +4228,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
     title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 22.9만원, 55g이 갈린다 | 다치는 곳도 정반대',
     description:
-      '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 229,000원, km당 572원, 적정 페이스 3:30~5:00까지 전부 같습니다. 다른 건 무게 193g 대 248g(55g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
+      '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 209,000원, km당 약 522~523원, 적정 페이스 3:30~5:00까지 사실상 같습니다. 다른 건 무게 201g(실측) 대 248g(47g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
     thumbnail: '/images/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4239,12 +4239,12 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '두 신발 가격이 정말 같나요?',
         answer:
-          '네. 한국 공식 정가가 둘 다 229,000원입니다. 내구성도 400km로 같아 km당 비용도 약 572원으로 동일합니다. 적정 페이스도 3:30~5:00/km로 겹칩니다. 가격·수명·목표 페이스가 전부 같은 상태에서 설계만 다른, 보기 드문 비교입니다.',
+          '네. 한국 공식 정가가 둘 다 209,000원입니다. 내구성도 400km로 같아 km당 비용도 약 522~523원으로 사실상 같습니다. 적정 페이스도 3:30~5:00/km로 겹칩니다. 가격·수명·목표 페이스가 전부 같은 상태에서 설계만 다른, 보기 드문 비교입니다.',
       },
       {
-        question: '55g 차이가 그렇게 큰가요?',
+        question: '47g 차이가 그렇게 큰가요?',
         answer:
-          '193g과 248g은 카본화 기준으로 큰 격차입니다. 한 켤레로 110g이라, 인터벌처럼 다리를 빠르게 회전시키는 훈련에서는 분명히 드러납니다. 다만 줌 플라이 6이 무거운 대신 힐 스택이 40mm로 3mm 더 두껍고 안정성 점수가 7 대 5로 높습니다 — 무게를 내주고 받은 게 있습니다.',
+          '201g(실측)과 248g은 카본화 기준으로 큰 격차입니다. 한 켤레로 94g이라, 인터벌처럼 다리를 빠르게 회전시키는 훈련에서는 분명히 드러납니다. 다만 줌 플라이 6이 무거운 대신 힐 스택이 40mm로 4.7mm 더 두껍고 안정성 점수가 7 대 5로 높습니다 — 무게를 내주고 받은 게 있습니다.',
       },
       {
         question: '아킬레스건이 안 좋은데 어느 쪽인가요?',
@@ -4254,7 +4254,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼이 넓은데요?',
         answer:
-          '둘 다 와이드 옵션이 없고, 특히 줌 플라이 6은 토박스가 좁은 편(narrow)으로 분류됩니다. 매직스피드 5는 표준 폭입니다. 발볼이 넓다면 매직스피드 5가 그나마 낫지만, 어느 쪽이든 매장 착화를 강하게 권합니다.',
+          '줌 플라이 6은 와이드 옵션이 없고 토박스가 좁은 편(narrow)으로 분류됩니다. 매직스피드 5는 표준 폭이고 2E(와이드) 상품이 있습니다. 발볼이 넓다면 매직스피드 5가 낫지만, 어느 쪽이든 매장 착화를 강하게 권합니다.',
       },
       {
         question: '카본화가 처음인데 이 중에 골라도 되나요?',
@@ -4266,8 +4266,8 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격·수명·목표 페이스가 전부 같습니다</strong> — 둘 다 229,000원, 400km, km당 572원, 3:30~5:00/km. 이 조건에서 설계만 다릅니다</li>
-    <li><strong>갈리는 건 무게와 드롭</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 193g·드롭 7mm·포크형 카본 / <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 248g·드롭 10mm·풀렝스 곡선형 카본. <strong>55g 차이</strong>입니다</li>
+    <li><strong>가격·수명·목표 페이스가 전부 같습니다</strong> — 둘 다 209,000원, 400km, km당 약 522~523원, 3:30~5:00/km. 이 조건에서 설계만 다릅니다</li>
+    <li><strong>갈리는 건 무게와 드롭</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 201g(실측)·드롭 7mm·포크형 카본 / <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a> 248g·드롭 10mm·풀렝스 곡선형 카본. <strong>47g 차이</strong>입니다</li>
     <li><strong>다치는 곳이 정반대입니다</strong> — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의. 발볼도 줌 플라이가 좁은 편이라 한국 러너는 여기서 갈립니다</li>
   </ul>
 </div>
@@ -4287,18 +4287,18 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>매직스피드 5</th><th>줌 플라이 6</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>229,000원</td><td>229,000원 <em>(동일)</em></td></tr>
-    <tr><td>무게</td><td><strong>193g</strong></td><td>248g</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>37 / 30mm</td><td><strong>40</strong> / 30mm</td></tr>
+    <tr><td>한국 정가</td><td>209,000원</td><td>209,000원 <em>(동일)</em></td></tr>
+    <tr><td>무게</td><td><strong>201g</strong></td><td>248g</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>35.3 / 26.6mm</td><td><strong>40</strong> / 30mm</td></tr>
     <tr><td>드롭</td><td><strong>7mm</strong></td><td><strong>10mm</strong></td></tr>
     <tr><td>미드솔</td><td>FF Leap + FF Blast+</td><td>ZoomX + SR-02</td></tr>
     <tr><td>플레이트</td><td><strong>포크형</strong> 카본</td><td><strong>풀렝스 곡선형</strong> 카본 Flyplate</td></tr>
-    <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61%</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>64.6% / 62.6%</strong></td><td>61% / 67%</td></tr>
     <tr><td>쿠션 / 반발</td><td>6 / 8</td><td><strong>7 / 9</strong></td></tr>
     <tr><td>안정성</td><td>5/10</td><td><strong>7/10</strong></td></tr>
     <tr><td>토박스</td><td><strong>표준</strong></td><td><strong>좁은 편</strong></td></tr>
-    <tr><td>와이드 옵션</td><td>없음</td><td>없음</td></tr>
-    <tr><td>내구 · km당</td><td>400km · 572원</td><td>400km · 572원 <em>(동일)</em></td></tr>
+    <tr><td>와이드 옵션</td><td>2E 있음</td><td>없음</td></tr>
+    <tr><td>내구 · km당</td><td>400km · 522원</td><td>400km · 523원 <em>(사실상 동일)</em></td></tr>
     <tr><td>적정 페이스</td><td>3:30–5:00 /km</td><td>3:30–5:00 /km <em>(동일)</em></td></tr>
   </tbody>
 </table>
@@ -4335,9 +4335,9 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>매직스피드 5 — 가벼움으로 미는 쪽</h2>
 
-<p>193g은 카본화 중에서도 가벼운 축이고, 전작(242g)에서 <strong>50g을 덜어낸</strong> 결과입니다. 세대가 바뀌며 성격이 달라진 신발이에요.</p>
+<p>실측 201g은 카본화 중에서도 가벼운 축이고, 전작(실측 237g)에서 <strong>36g을 덜어낸</strong> 결과입니다. 세대가 바뀌며 성격이 달라진 신발이에요.</p>
 
-<p>플레이트가 <strong>포크형</strong>이라는 게 특징입니다. 풀렝스처럼 판 전체가 밀어주는 대신 갈라진 형태라 전환이 부드럽고, 카본이 처음인 러너가 느끼는 이질감이 덜합니다. 에너지 리턴은 힐 64.6% / 전족 62.6%로 줌 플라이(61%)보다 높게 측정됐습니다.</p>
+<p>플레이트가 <strong>포크형</strong>이라는 게 특징입니다. 풀렝스처럼 판 전체가 밀어주는 대신 갈라진 형태라 전환이 부드럽고, 카본이 처음인 러너가 느끼는 이질감이 덜합니다. 에너지 리턴은 힐 64.6% / 전족 62.6%로, 힐은 줌 플라이(61%)보다 높고 전족은 줌 플라이(67%)가 더 높게 측정됐습니다.</p>
 
 <p>약점은 <strong>안정성 5/10</strong>입니다. 이 수치는 카본화 중에서도 낮은 편이고, 위에서 본 부상 등급 세 개가 주의로 잡힌 배경이기도 합니다. 지치면 발이 흔들리는 러너가 장거리에 쓰기엔 부담이 있습니다.</p>
 
@@ -4358,8 +4358,8 @@ export const posts_2026_08: BlogPost[] = [
 <ul>
   <li><strong>아킬레스·종아리·정강이 이력</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>(드롭 10mm, 세 항목 모두 양호)</li>
   <li><strong>무릎 이력</strong> → <a href="/shoes/asics-magic-speed-5">매직스피드 5</a>(무릎만 양호로 갈립니다)</li>
-  <li><strong>발볼이 넓다</strong> → 매직스피드 5(표준 폭). 줌 플라이는 좁은 편입니다. 둘 다 와이드가 없으니 착화 필수</li>
-  <li><strong>인터벌·트랙 비중이 크다</strong> → 매직스피드 5(193g)</li>
+  <li><strong>발볼이 넓다</strong> → 매직스피드 5(표준 폭, 2E 와이드 있음). 줌 플라이는 좁은 편이고 와이드가 없습니다. 어느 쪽이든 착화 필수</li>
+  <li><strong>인터벌·트랙 비중이 크다</strong> → 매직스피드 5(201g)</li>
   <li><strong>템포런을 길게 끈다</strong> → 줌 플라이 6(안정성 7, 스택 40mm)</li>
   <li><strong>카본이 처음이라 이질감이 걱정</strong> → 매직스피드 5(포크형이 전환이 부드럽습니다)</li>
   <li><strong>훈련 거리를 더 소화하고 싶다</strong> → 플레이트 부담이 덜한 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(나일론)나 <a href="/shoes/adidas-boston-13">보스턴 13</a>(유리섬유)도 후보입니다</li>
@@ -4387,7 +4387,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 229,000원)이며 실판매가는 다를 수 있습니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다 — 통증이 있다면 전문의 진료를 받으세요. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(둘 다 209,000원)이며 실판매가는 다를 수 있습니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다 — 통증이 있다면 전문의 진료를 받으세요. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {
@@ -4395,7 +4395,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     title: '아디제로 Evo SL vs 보스턴 13 차이 — 3만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
     description:
-      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(179,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 325원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
+      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(189,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 343원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -4426,15 +4426,15 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '오래 신는 쪽은 어디인가요?',
         answer:
-          '보스턴 13이 550km, 에보 SL이 500km 기준입니다. 정가로 나누면 km당 325원 대 418원으로 보스턴 13이 약 22% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며 체중·노면·주법에 따라 크게 달라집니다 — 단일 숫자로 교체 시점을 정하지 마세요.',
+          '보스턴 13이 550km, 에보 SL이 500km 기준입니다. 정가로 나누면 km당 343원 대 418원으로 보스턴 13이 약 18% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며 체중·노면·주법에 따라 크게 달라집니다 — 단일 숫자로 교체 시점을 정하지 마세요.',
       },
     ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(179,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
-    <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 325원 대 418원으로 22% 유리합니다</li>
+    <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(189,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
+    <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 343원 대 418원으로 18% 유리합니다</li>
     <li><strong>발볼로는 갈리지 않습니다</strong> — 2026년 10월 한국 공식몰 기준 <strong>두 켤레 모두 와이드가 없고</strong>, 엄지 위치 토박스 실측도 에보 SL 71.6mm·보스턴 13 70.6mm로 1mm 차이입니다(RunRepeat, 평균 73.2mm)</li>
   </ul>
 </div>
@@ -4454,7 +4454,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><th>항목</th><th>아디제로 Evo SL</th><th>보스턴 13</th></tr>
   </thead>
   <tbody>
-    <tr><td>한국 정가</td><td>209,000원</td><td><strong>179,000원</strong></td></tr>
+    <tr><td>한국 정가</td><td>209,000원</td><td><strong>189,000원</strong></td></tr>
     <tr><td>무게</td><td><strong>223g</strong></td><td>254g</td></tr>
     <tr><td>스택 (힐/전족)</td><td>36 / 28mm</td><td>36 / <strong>30mm</strong></td></tr>
     <tr><td>드롭</td><td>8mm</td><td><strong>6mm</strong></td></tr>
@@ -4463,9 +4463,9 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>쿠션 / 반발</td><td><strong>8</strong> / 9</td><td>7 / 9</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
     <tr><td>아웃솔</td><td>컨티넨탈 러버</td><td>컨티넨탈 러버</td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / 없음</td><td>표준(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
+    <tr><td>토박스 / 와이드</td><td>좁은 편(71.6mm) / 없음</td><td>좁은 편(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
     <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 325원</strong></td></tr>
+    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 343원</strong></td></tr>
     <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:00–5:30 /km</td></tr>
   </tbody>
 </table>
@@ -4474,13 +4474,13 @@ export const posts_2026_08: BlogPost[] = [
 
 <h2>먼저 짚을 것 — 값과 성능이 비례하지 않습니다</h2>
 
-<p>보통 같은 브랜드 라인에서 3만원이 비싸면 "상위 모델"을 기대합니다. 그런데 이 둘은 그렇게 줄 세워지지 않습니다.</p>
+<p>보통 같은 브랜드 라인에서 2만원이 비싸면 "상위 모델"을 기대합니다. 그런데 이 둘은 그렇게 줄 세워지지 않습니다.</p>
 
 <p><strong>에보 SL이 비싼 이유는 미드솔 전체를 Lightstrike Pro로 채웠기 때문</strong>입니다. 아디다스가 레이싱화에 쓰는 최상위 폼을 부분이 아니라 100% 사용했고, 그러면서 223g을 만들었습니다. 대신 플레이트를 넣지 않았습니다.</p>
 
 <p><strong>보스턴 13은 같은 Lightstrike Pro를 쓰되 유리섬유 Energy Rods 2.0을 얹었습니다.</strong> 로드가 발을 앞으로 넘겨주는 굴림을 만들고 비틀림을 잡아주지만, 그만큼 무거워집니다. 31g 차이의 상당 부분이 여기서 옵니다.</p>
 
-<p>즉 <strong>3만원을 더 내면 31g이 가벼워지고 플레이트가 사라집니다.</strong> 이게 이 비교의 핵심이고, 어느 쪽이 우월한 게 아니라 취향과 용도의 문제입니다. 플레이트가 무엇을 하는지 더 알고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 해설</a>을 보세요.</p>
+<p>즉 <strong>2만원을 더 내면 31g이 가벼워지고 플레이트가 사라집니다.</strong> 이게 이 비교의 핵심이고, 어느 쪽이 우월한 게 아니라 취향과 용도의 문제입니다. 플레이트가 무엇을 하는지 더 알고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 해설</a>을 보세요.</p>
 
 <h2>아디제로 Evo SL — 가벼움으로 미는 쪽</h2>
 
@@ -4498,7 +4498,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>진짜 강점은 <strong>안정성 8/10</strong>입니다. 로드가 비틀림을 잡아주기 때문에 페이스가 흔들리는 후반부에도 형태가 유지됩니다. 평발 적합성도 good으로 에보 SL(fair)보다 낫습니다. 훈련 강도가 높고 하프 레이스까지 이 신발로 갈 생각이라면 이쪽이 안전합니다.</p>
 
-<p>그리고 <strong>km당 325원</strong>입니다. 3만원 싼 데다 내구가 50km 길어, 총비용에서 22% 유리합니다.</p>
+<p>그리고 <strong>km당 343원</strong>입니다. 2만원 싼 데다 내구가 50km 길어, 총비용에서 18% 유리합니다.</p>
 
 <p>약점은 두 가지입니다. <strong>와이드 옵션이 없고</strong>(에보 SL도 마찬가지), 적정 페이스가 4:00–5:30으로 느린 조깅에는 무겁게 느껴질 수 있습니다. 입문 단계에서 첫 신발로 고르기엔 성격이 뚜렷한 편입니다.</p>
 
@@ -4512,11 +4512,11 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>주 3~4회 조깅 + 가끔 템포</strong> → 에보 SL. 페이스 폭이 넓습니다</li>
   <li><strong>주 5회 이상 + 포인트 훈련이 고정</strong> → 보스턴 13. 굴림이 훈련에서 값을 합니다</li>
   <li><strong>하프 레이스를 이 신발로</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 보스턴 13(3만원 싸고 km당 325원)</li>
+  <li><strong>총비용을 아끼고 싶다</strong> → 보스턴 13(2만원 싸고 km당 343원)</li>
   <li><strong>무게 1g이 아깝다</strong> → 에보 SL(223g). 더 가벼운 쪽을 원하면 <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>도 후보입니다</li>
   <li><strong>플레이트 없는 고성능이 좋다</strong> → 에보 SL, 혹은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></li>
   <li><strong>플레이트 굴림을 더 원한다</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>와도 비교해보세요</li>
-  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 같은 179,000원인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
+  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 정가 1만원 차인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>
@@ -4540,7 +4540,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(에보 SL 209,000원 · 보스턴 13 179,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다 — 단일 숫자로 교체 시점을 정하지 마세요. · 작성 2026년 8월 10일.</small></p>
+<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(에보 SL 209,000원 · 보스턴 13 189,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다 — 단일 숫자로 교체 시점을 정하지 마세요. · 작성 2026년 8월 10일.</small></p>
 `,
   },
   {
@@ -4912,7 +4912,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '발볼 넓은데 괜찮을까요?',
         answer:
-          '두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않기 때문에 발볼이 넓은 편이라면 반드시 매장 착화를 권합니다. 토박스 수치는 RunRepeat이 세대별로 측정 방식을 바꿔서(구형은 최대폭·엄지폭 2개 지점, 신형은 단일 폭) 두 세대를 숫자로 직접 비교할 수 없습니다. 서로 다른 기준의 값을 나란히 놓고 "몇 mm 넓어졌다"고 말하는 건 정확하지 않습니다.',
+          '두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않기 때문에 발볼이 넓은 편이라면 반드시 매장 착화를 권합니다. RunRepeat 실측 토박스(엄지 부위·US 9)는 구형 73.3mm, 3 하이퍼 72.8mm로 둘 다 랩 평균(73.2mm) 수준의 표준 폭이고, 3 하이퍼가 0.5mm 좁습니다. 최대폭은 구형 97.9mm, 3 하이퍼 95.0mm입니다.',
       },
     ],
     content: `
@@ -4955,7 +4955,7 @@ export const posts_2026_08: BlogPost[] = [
   </tbody>
 </table>
 
-<p><small>수치 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준), Believe in the Run, Doctors of Running. 가격은 On 코리아 공식 기준. 토박스 너비는 RunRepeat이 세대별로 측정 방식을 바꿔(구형 2지점, 신형 단일 폭) 직접 비교가 불가능하므로 표에서 제외했습니다.</small></p>
+<p><small>수치 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준), Believe in the Run, Doctors of Running. 가격은 On 코리아 공식 기준. 토박스 너비(RunRepeat 실측, 엄지 부위·US 9)는 구형 73.3mm, 3 하이퍼 72.8mm입니다.</small></p>
 
 <h2>"하이퍼"는 경량화 라벨이 아니다</h2>
 
@@ -4992,7 +4992,7 @@ export const posts_2026_08: BlogPost[] = [
 <ul>
   <li><strong>겨울 훈련이 많다면 3 하이퍼</strong> — 저온 경화율 21%와 7%의 차이는 체감 영역입니다. 영하권에서 구형은 폼이 굳어 반발이 떨어지는 반면, 신형은 상온에 가까운 감각을 유지합니다. 12~2월에도 주행 거리를 유지하는 러너라면 이 항목 하나로 결론이 납니다.</li>
   <li><strong>한여름 위주라면 구형에 여지</strong> — 통기성 3/5와 2/5의 한 단계 차이는 7~8월 습한 날씨에서 드러납니다. 다만 힐 패딩 1/5를 감안하면 장기 사용에는 불리합니다.</li>
-  <li><strong>발볼이 넓다면 둘 다 신중히</strong> — 두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않으므로 반드시 매장 착화를 권합니다. 토박스 수치는 세대별 측정 방식이 달라 숫자로 비교할 수 없습니다.</li>
+  <li><strong>발볼이 넓다면 둘 다 신중히</strong> — 두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않으므로 반드시 매장 착화를 권합니다. 토박스는 RunRepeat 실측 구형 73.3mm, 3 하이퍼 72.8mm로 둘 다 표준 폭입니다.</li>
   <li><strong>평발이라면</strong> — 두 모델 다 스택이 높은 편(실측 39.7mm·43.4mm)이라 아치가 낮으면 불안정하게 느껴질 수 있습니다. 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 계열을 먼저 보는 편이 낫습니다.</li>
 </ul>
 
@@ -5465,8 +5465,8 @@ export const posts_2026_08: BlogPost[] = [
 
 <ul>
   <li><strong>10K 레이스 + 데일리 겸용</strong> — <a href="/shoes/asics-novablast-6">노바블라스트 6</a> (179,000원). 7월에 한국 출시된 최신 데일리로, 10K 정도 거리에서 쿠션과 반발을 모두 챙기는 무난한 선택입니다</li>
-  <li><strong>하프 기록 도전 (중간 가격대)</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> (229,000원). 풀 카본 플레이트를 넣고도 20만원대라 첫 플레이트 슈즈로 하프에 데뷔하기 좋은 포지션입니다</li>
-  <li><strong>하프 전력 승부</strong> — <a href="/shoes/asics-metaspeed-ray">메타스피드 레이</a> (399,000원). 아식스 슈퍼슈즈 중 최경량 계열로, 기록을 노리는 하프라면 고려 대상입니다</li>
+  <li><strong>하프 기록 도전 (중간 가격대)</strong> — <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> (209,000원). 포크형 카본 플레이트를 넣고도 20만원대라 첫 플레이트 슈즈로 하프에 데뷔하기 좋은 포지션입니다</li>
+  <li><strong>하프 전력 승부</strong> — <a href="/shoes/asics-metaspeed-ray">메타스피드 레이</a> (439,000원). 아식스 슈퍼슈즈 중 최경량 계열로, 기록을 노리는 하프라면 고려 대상입니다</li>
   </ul>
 
 <p>거리별·목적별 더 넓은 비교는 <a href="/best/racing">레이싱화 추천</a>과 <a href="/best/daily-trainer">데일리 러닝화 추천</a> 페이지에서 볼 수 있습니다.</p>

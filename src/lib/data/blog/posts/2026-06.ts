@@ -39,7 +39,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>무게(US 9)</td><td>290g</td><td>295g</td><td><strong>247g</strong></td></tr>
     <tr><td>힐 / 전족 스택</td><td>29 / 23mm</td><td><strong>39 / 31mm</strong></td><td>33 / 26mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>optiFOAM2 (eTPU)</td><td>OptiFoam + RelieveSphere</td><td>optiFOAM+ PEBA 듀얼</td></tr>
+    <tr><td>미드솔</td><td>Opti FOAM Evo</td><td>OptiFoam + RelieveSphere</td><td>Energy Foam+ 듀얼</td></tr>
     <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 5</td><td>7 / 7</td></tr>
     <tr><td>러그(아웃솔)</td><td>4mm</td><td>3.9mm</td><td>3mm</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁음 · <strong>없음</strong></td><td>좁음 · <strong>와이드 O</strong></td><td>표준(74mm) · 없음</td></tr>
@@ -54,7 +54,7 @@ export const posts_2026_06: BlogPost[] = [
 <p><strong>펄사</strong>는 단종된 센스 라이드의 후속으로, <strong>근교 트레일을 빠르게 즐기고 도로까지 겸용</strong>하는 만능 데일리입니다. 29mm 스택에 6mm 드롭으로 경쾌해 업템포 트레일 훈련에 맞죠. <strong>울트라 글라이드 4</strong>는 정반대로 <strong>50~100km 울트라를 푹신하게</strong> 가는 컴포트화고, <strong>S/LAB 펄사 4</strong>는 <strong>VK·스카이러닝처럼 빠르고 험한 기술 코스</strong>를 레이싱하는 엘리트용입니다. "어떤 트레일을, 얼마나 멀리"가 먼저 정해져야 답이 나옵니다.</p>
 
 <h3>② 쿠션 vs 스피드 — 정반대의 두 극단</h3>
-<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(47~51%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + optiFOAM+ PEBA</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
+<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(48~52%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + Energy Foam+ 듀얼 폼</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
 
 <h3>③ 발볼·가격 — 한국 러너에겐 발볼이 결정적</h3>
 <p>살로몬은 전통적으로 <strong>발볼이 좁기로</strong> 유명합니다. 펄사는 전족부가 좁고 낮은데 <strong>와이드 옵션이 없어</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고, S/LAB 펄사 4는 토박스가 74mm로 전작보다 넓어졌지만 역시 와이드는 없습니다. <strong>울트라 글라이드 4만 와이드 옵션(한국 공식몰)이 있어</strong>, 발볼이 넓다면 사실상 이 모델이 답입니다. 가격은 펄사(21만) → 울트라 글라이드(23만) → S/LAB(34만) 순으로, S/LAB은 350km 내구성에 km당 약 971원이라 <strong>레이스 전용 운용</strong>이 전제입니다.</p>
@@ -356,7 +356,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'saucony-endorphin-elite-3-preview-2026',
     slug: 'saucony-endorphin-elite-3-preview-2026',
     title: '써코니 엔돌핀 엘리트 3 출시 (7/1) | 엘리트 2 대비 뭐가 바뀌나 — 안정성·발볼 손본 신형 카본 레이서',
-    description: '써코니 최상위 카본 레이싱화 엔돌핀 엘리트 3가 2026년 7월 1일 한국 출시됩니다(정가 36.9만). RunRepeat 역대 최고 80%대 반발의 IncrediRUN 폼은 그대로 두고, 전작 엘리트 2의 약점이던 낮은 안정성과 좁은 토박스를 정조준해 손봤습니다. 측면 컷아웃 제거·포크형 카본 플레이트·직각형 와이드 토박스로 바뀐 변경점을 전작과 나란히 정리하고, 발볼 넓은 한국 러너가 살지 기다릴지 판단을 도와드립니다.',
+    description: '써코니 최상위 카본 레이싱화 엔돌핀 엘리트 3가 2026년 7월 1일 한국 출시됩니다(정가 36.9만). RunRepeat 역대 최고 80%대 반발의 IncrediRUN 폼은 그대로 두고, 전작 엘리트 2의 약점이던 낮은 안정성을 정조준해 손봤습니다(토박스는 RunRepeat 실측 71.8mm로 여전히 좁음). 측면 컷아웃 제거·포크형 카본 플레이트로 바뀐 변경점을 전작과 나란히 정리하고, 발볼 넓은 한국 러너가 살지 기다릴지 판단을 도와드립니다.',
     thumbnail: '/images/blog/saucony-endorphin-elite-3-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-30',
@@ -368,8 +368,8 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a>가 <strong>2026년 7월 1일 한국 출시</strong>(정가 36.9만). RunRepeat 역대 최고 <strong>80%대 반발의 IncrediRUN 폼은 계승</strong>하면서, 전작의 약점만 손봤습니다</li>
-    <li>핵심 변경 — ① <strong>측면 컷아웃 제거</strong>로 안정성 개선 ② <strong>카본 플레이트 포크형 재설계</strong>로 추진력↑ ③ <strong>토박스가 직각형으로 넓어져</strong> 발볼 넓은 한국 러너에게 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(narrow 71mm)보다 우호적. 대가는 <strong>무게 +10g(197→207g)</strong></li>
-    <li><strong>서브3 도전 + 발볼이 부담이던 러너에겐 반가운 업데이트</strong>입니다. 단 RunRepeat 랩 데이터는 아직 미게시라 충격흡수·에너지 리턴 수치는 엘리트 2 기준 추정입니다</li>
+    <li>핵심 변경 — ① <strong>측면 컷아웃 제거</strong>로 안정성 개선 ② <strong>카본 플레이트 포크형 재설계</strong>로 추진력↑ ③ <strong>토박스는 여전히 좁음</strong> — RunRepeat 실측 71.8mm로 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(narrow 71mm)와 비슷. 대가는 <strong>무게 +13g(197→210g, 실측)</strong></li>
+    <li><strong>서브3 도전 + 안정성이 부담이던 러너에겐 반가운 업데이트</strong>입니다(발볼 넓은 러너에겐 여전히 불리). RunRepeat 랩 실측 에너지 리턴은 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA입니다</li>
   </ul>
 </div>
 
@@ -386,34 +386,34 @@ export const posts_2026_06: BlogPost[] = [
   <thead><tr><th>항목</th><th>엘리트 2</th><th>엘리트 3</th></tr></thead>
   <tbody>
     <tr><td><strong>정가</strong></td><td>339,000원</td><td>369,000원</td></tr>
-    <tr><td>무게(US 9)</td><td><strong>197g</strong></td><td>207g (+10g)</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>39.9 / 32.4mm</td><td>39.5 / 31.5mm</td></tr>
-    <tr><td>드롭</td><td>7.5mm</td><td>8mm</td></tr>
+    <tr><td>무게(US 9)</td><td><strong>197g</strong></td><td>210g (+13g)</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>39.9 / 32.4mm</td><td>39.8 / 34.1mm</td></tr>
+    <tr><td>드롭</td><td>7.5mm</td><td>5.7mm <small>(브랜드 공식 8mm)</small></td></tr>
     <tr><td>미드솔 폼</td><td>IncrediRUN</td><td>IncrediRUN <small>(약간 더 부드럽게)</small></td></tr>
     <tr><td>카본 플레이트</td><td>평탄형</td><td><strong>리지드+포크형</strong> <small>(추진력↑)</small></td></tr>
     <tr><td>미드솔 측면</td><td>깊은 컷아웃</td><td><strong>컷아웃 제거</strong> <small>(안정성↑)</small></td></tr>
-    <tr><td>토박스</td><td>좁음(narrow 71mm)</td><td><strong>직각형·넓어짐</strong></td></tr>
+    <tr><td>토박스</td><td>좁음(narrow 71mm)</td><td><strong>좁음(narrow 71.8mm)</strong></td></tr>
     <tr><td>어퍼</td><td>거친 메시</td><td>부드러운 니트</td></tr>
     <tr><td>힐 카운터</td><td>있음</td><td><strong>없음</strong> <small>(아킬레스 친화)</small></td></tr>
   </tbody>
 </table>
-<p><small>※ 무게·스택은 전문 리뷰(BITR·DOR·RTR) 실측, 가격·출시일은 써코니 코리아 공식 기준. 충격흡수·에너지 리턴 등 RunRepeat 랩 수치는 엘리트 3 미게시 상태로, 본문은 엘리트 2 실측 기반 추정입니다.</small></p>
+<p><small>※ 무게·스택·드롭·토박스는 RunRepeat 랩 실측(남성 US 9), 가격·출시일은 써코니 코리아 공식 기준. 엘리트 3 랩 실측 에너지 리턴은 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA·전족부 131 SA, 경도 15.5 AC입니다.</small></p>
 
 <h2>한국 러너가 주목할 변화 3가지</h2>
-<h3>① 토박스가 넓어졌다 — 가장 반가운 소식</h3>
-<p>엘리트 2의 가장 큰 진입장벽은 <strong>좁은 토박스(narrow, 약 71mm)</strong>였습니다. 반발은 최상위권인데 앞볼 폭이 평균을 밑돌아, 발볼이 넓으면 반발을 살리기 전에 압박이 먼저 왔습니다. 엘리트 3는 <strong>토박스를 직각형(squared-off)으로 넓혀</strong> 표준~약간 넓은 발까지 수용합니다. 와이드 옵션 자체는 없지만 기본 핏이 넉넉해진 거라, 발볼 때문에 엘리트를 포기했던 한국 러너에게는 가장 중요한 변화입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 보세요.</p>
+<h3>① 토박스는 여전히 좁다 — 실측 71.8mm</h3>
+<p>엘리트 2의 가장 큰 진입장벽은 <strong>좁은 토박스(narrow, 약 71mm)</strong>였습니다. 반발은 최상위권인데 앞볼 폭이 평균을 밑돌아, 발볼이 넓으면 반발을 살리기 전에 압박이 먼저 왔습니다. 엘리트 3의 토박스는 <strong>RunRepeat 실측 71.8mm(평균 73.2mm)</strong>로 랩이 "heavily tapered"라고 평가해, 엘리트 2와 마찬가지로 좁습니다. 와이드 옵션도 없어, 발볼 때문에 엘리트를 포기했던 한국 러너라면 시착이 필수입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 보세요.</p>
 
 <h3>② 안정성을 손봤다 — 컷아웃 제거 + 포크형 플레이트</h3>
 <p>엘리트 2는 안정성이 4/10에 불과해 "완성된 러닝 폼이 없으면 착지가 불안하다"는 지적을 받았습니다. 엘리트 3는 <strong>미드솔 측면의 깊은 컷아웃을 메우고 힐·측면 폼 볼륨을 키워</strong> 미드풋을 채웠고, 카본 플레이트를 <strong>리지드+포크 형태로 재설계</strong>해 앞쪽 추진력과 강성을 높였습니다. 덕분에 중립 안정성이 한 단계 올라왔다는 평가(Doctors of Running B+)지만, 비틀림 강성은 여전히 낮아 <strong>코너나 요철보다는 평탄한 코스(하프~풀)</strong>에 어울립니다.</p>
 
-<h3>③ 무게는 10g 늘었다 — 유일한 대가</h3>
-<p>안정성과 폼 볼륨을 얻은 대가로 무게가 <strong>197g → 207g으로 약 10g 증가</strong>했습니다. 슈퍼슈즈 기준으론 여전히 가볍지만, "가장 가볍고 예리한 레이서"를 찾는 엘리트에겐 아쉬운 지점이죠. Road Trail Run 5인 테스터는 <strong>"엘리트 1의 반발 + 엘리트 2의 부드러움을 결합했다"</strong>고 평하며 평균 9.4/10을 줬는데, 무게 증가가 거의 유일한 약점으로 꼽혔습니다.</p>
+<h3>③ 무게는 13g 늘었다</h3>
+<p>안정성과 폼 볼륨을 얻은 대가로 무게가 <strong>197g → 210g(RunRepeat 실측)으로 약 13g 증가</strong>했습니다. 슈퍼슈즈 기준으론 여전히 가볍지만, "가장 가볍고 예리한 레이서"를 찾는 엘리트에겐 아쉬운 지점이죠. Road Trail Run 5인 테스터는 <strong>"엘리트 1의 반발 + 엘리트 2의 부드러움을 결합했다"</strong>고 평하며 평균 9.4/10을 줬는데, 무게 증가가 거의 유일한 약점으로 꼽혔습니다.</p>
 
 <div class="callout success">
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 정리</p>
-    <p><strong>엘리트 3 = "반발은 그대로, 약점만 손본" 신형</strong>입니다. 80%대 IncrediRUN 반발을 유지하면서 <strong>안정성·발볼·어퍼를 개선</strong>했고, 대가는 10g. 특히 <strong>발볼이 부담이던 한국 러너</strong>와 <strong>아킬레스 부착부 통증이 있는 러너</strong>(힐 카운터 없음)에게는 전작보다 확실히 친화적입니다. 단 부드러운 폼 특성상 <strong>평발·과내전 러너에겐 여전히 비추천</strong>입니다.</p>
+    <p><strong>엘리트 3 = "반발은 그대로, 약점만 손본" 신형</strong>입니다. 80%대 IncrediRUN 반발(실측 힐 80.6%·전족부 81.0%)을 유지하면서 <strong>안정성·어퍼를 개선</strong>했고, 대가는 13g. 특히 <strong>아킬레스 부착부 통증이 있는 러너</strong>(힐 카운터 없음)에게는 전작보다 확실히 친화적입니다. 다만 토박스는 실측 71.8mm로 여전히 좁습니다. 단 부드러운 폼 특성상 <strong>평발·과내전 러너에겐 여전히 비추천</strong>입니다.</p>
   </div>
 </div>
 
@@ -421,7 +421,7 @@ export const posts_2026_06: BlogPost[] = [
 <table>
   <thead><tr><th>이런 러너라면</th><th>선택</th></tr></thead>
   <tbody>
-    <tr><td>발볼이 넓어 엘리트 2를 포기했었다</td><td><strong>엘리트 3</strong> (토박스 개선)</td></tr>
+    <tr><td>발볼이 넓어 엘리트 2를 포기했었다</td><td>엘리트 3도 좁음 (토박스 실측 71.8mm) — 시착 필수</td></tr>
     <tr><td>안정성·포용력 있는 슈퍼슈즈를 원한다</td><td><strong>엘리트 3</strong></td></tr>
     <tr><td>아킬레스 부착부 통증이 있다</td><td><strong>엘리트 3</strong> (힐 카운터 없음)</td></tr>
     <tr><td>1g이라도 가벼운 게 최우선이다</td><td><a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> (197g) 또는 다른 경량 레이서</td></tr>
@@ -433,17 +433,17 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⏳</span>
   <div class="callout-body">
-    <p class="callout-title">아직 '미공개'인 수치들</p>
-    <p>엘리트 3는 출시 직후라 <strong>RunRepeat 랩 테스트(충격흡수 SA·경도 HA·정확한 에너지 리턴%)가 아직 게시되지 않았습니다.</strong> 본문의 반발·쿠션 관련 수치는 전작 엘리트 2 실측(에너지 리턴 80.6%)을 기준으로 한 추정이며, 무게·스택·플레이트 형상 등 확정된 항목과는 구분됩니다. 정확한 랩 데이터는 출시 후 RunRepeat 게시 시점에 <a href="/shoes/saucony-endorphin-elite-3">상세 페이지</a>를 업데이트하겠습니다.</p>
+    <p class="callout-title">RunRepeat 랩 실측 수치</p>
+    <p>엘리트 3의 <strong>RunRepeat 랩 테스트가 게시됐습니다</strong>(남성 US 9 기준). 무게 210g, 스택 힐 39.8mm·전족부 34.1mm, 드롭 5.7mm(브랜드 공식 8mm), 에너지 리턴 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA·전족부 131 SA, 경도 15.5 AC, 토박스 71.8mm(좁음)입니다. 전체 랩 데이터는 <a href="/shoes/saucony-endorphin-elite-3">상세 페이지</a>에서 확인하세요.</p>
   </div>
 </div>
 
 <h2>한국 러너 관점 FAQ</h2>
 <div class="faq">
   <p class="faq-q">Q. 발볼 넓은데 엘리트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 전작보다 한결 낫습니다. 엘리트 2는 narrow(71mm)라 발볼 넓으면 사실상 비추천이었지만, 엘리트 3는 토박스를 직각형으로 넓혀 표준~약간 넓은 발까지 수용합니다. 와이드 옵션은 없으니, 발볼이 매우 넓다면 출시 후 매장 착화를 권합니다.</p>
+  <p class="faq-a">A. 권하기 어렵습니다. 엘리트 2는 narrow(71mm)라 발볼 넓으면 사실상 비추천이었고, 엘리트 3도 RunRepeat 실측 토박스 71.8mm(평균 73.2mm)로 랩이 "heavily tapered"라고 평가해 여전히 좁습니다. 와이드 옵션도 없으니, 발볼이 넓다면 매장 착화를 권합니다.</p>
   <p class="faq-q">Q. 엘리트 2를 이미 가지고 있으면 굳이 바꿀 필요 있나요?</p>
-  <p class="faq-a">A. 순수 반발과 최저 무게가 목적이면 엘리트 2(197g)로 충분합니다. 다만 엘리트 2의 불안정함이나 좁은 발볼이 불편했다면, 엘리트 3의 안정성·토박스 개선이 체감될 겁니다. 반발 자체는 같은 IncrediRUN 폼이라 큰 차이가 없습니다.</p>
+  <p class="faq-a">A. 순수 반발과 최저 무게가 목적이면 엘리트 2(197g)로 충분합니다. 다만 엘리트 2의 불안정함이 불편했다면, 엘리트 3의 안정성 개선이 체감될 겁니다(토박스는 실측 71.8mm로 여전히 좁습니다). 반발 자체는 같은 IncrediRUN 폼이라 큰 차이가 없습니다.</p>
   <p class="faq-q">Q. 초보·서브4 러너가 사도 되나요?</p>
   <p class="faq-a">A. 권하지 않습니다. 엘리트 3는 빠른 페이스(km당 4:30 이내)와 완성된 폼을 전제로 한 레이스 전용 카본화이고, 200km 내구성에 km당 약 1,845원으로 운용 비용도 높습니다. 서브4 이하라면 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>나 <a href="/shoes/saucony-endorphin-pro-5">프로 5</a>가 현실적입니다. 카본화가 처음이면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 먼저 보세요.</p>
   <p class="faq-q">Q. 알파플라이·메타스피드랑 비교하면?</p>
@@ -454,11 +454,11 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🔗</span>
   <div class="callout-body">
     <p class="callout-title">한 걸음 더</p>
-    <p>전체 스펙·실측·구매 링크는 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3 상세</a>에서 확인하세요(랩 데이터 게시 시 갱신). 전작과 비교하려면 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2 상세</a>, 써코니 엔돌핀 4종 중 내게 맞는 걸 고르려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요. 여러 카본화를 나란히 보려면 <a href="/compare">비교 도구</a>, 내 발·목표 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
+    <p>전체 스펙·실측·구매 링크는 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3 상세</a>에서 확인하세요(RunRepeat 랩 실측 반영). 전작과 비교하려면 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2 상세</a>, 써코니 엔돌핀 4종 중 내게 맞는 걸 고르려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요. 여러 카본화를 나란히 보려면 <a href="/compare">비교 도구</a>, 내 발·목표 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
   </div>
 </div>
 
-<p class="post-disclaimer"><small>※ 가격·출시일은 써코니 코리아 공식 기준이며 시기·채널에 따라 달라질 수 있습니다. 무게·스택·변경점은 전문 리뷰(Believe in the Run·Doctors of Running·Road Trail Run) 교차 확인, 충격흡수·에너지 리턴 등은 전작 엘리트 2 실측 기반 추정으로 RunRepeat 랩 게시 후 갱신합니다.</small></p>
+<p class="post-disclaimer"><small>※ 가격·출시일은 써코니 코리아 공식 기준이며 시기·채널에 따라 달라질 수 있습니다. 무게·스택·드롭·토박스·충격흡수·에너지 리턴은 RunRepeat 랩 실측, 변경점은 전문 리뷰(Believe in the Run·Doctors of Running·Road Trail Run) 교차 확인입니다.</small></p>
 `,
   },
   {
@@ -589,13 +589,13 @@ export const posts_2026_06: BlogPost[] = [
   <thead><tr><th>항목</th><th>슈퍼블라스트 3</th><th>아디제로 에보 SL</th><th>마하 6</th></tr></thead>
   <tbody>
     <tr><td><strong>정가</strong></td><td>259,000원</td><td>209,000원<br><small>(세일 15만대)</small></td><td><strong>185,000원</strong></td></tr>
-    <tr><td>무게(US 9)</td><td>239g</td><td><strong>223g</strong></td><td>232g</td></tr>
+    <tr><td>무게(US 9)</td><td>235g</td><td><strong>223g</strong></td><td>232g</td></tr>
     <tr><td>힐 / 전족 스택</td><td><strong>46.5 / 38.5mm</strong></td><td>36 / 28mm</td><td>36 / 26mm</td></tr>
     <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>10mm</td></tr>
     <tr><td>미드솔 폼</td><td>FF LEAP + FF BLAST PLUS<br><small>(슈퍼폼)</small></td><td>100% Lightstrike Pro<br><small>(슈퍼폼)</small></td><td>Supercritical EVA<br><small>(일반 EVA)</small></td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>10 / 9</strong></td><td>8 / 9</td><td>7 / 8</td></tr>
     <tr><td>최적 페이스</td><td>4:00~5:30/km</td><td>4:00~6:00/km</td><td>4:30~6:00/km</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 없음</strong> (2026년 10월 한국 공식몰 기준)</td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편(71.6mm) · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 없음</strong> (2026년 10월 한국 공식몰 기준)</td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 471원</td><td>500km / 약 418원</td><td>450km / <strong>약 411원</strong></td></tr>
     <tr><td>한 줄 성격</td><td>고스택 슈퍼트레이너</td><td>슈퍼폼 가성비 데일리</td><td>여름·통기성 올라운더</td></tr>
   </tbody>
@@ -610,7 +610,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 83%의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
 
 <h3>③ 가격·발볼 — 와이드가 필요하면 답이 좁아진다</h3>
-<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 전작보다 토박스가 넓어졌지만 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 에보 SL도 사정이 비슷합니다. RunRepeat은 Normal·Wide 두 폭으로 표기하지만, <strong>2026년 10월 아디다스 한국 공식몰에서는 에보 SL 와이드가 검색되지 않습니다</strong>(미국 공식몰도 같습니다). 표준폭 실측은 앞발 가장 넓은 곳이 97.5mm(평균 95.2mm)로 넉넉한데 엄지 위치 토박스는 71.6mm(평균 73.2mm)로, RunRepeat 표현대로 앞쪽이 급하게 좁아집니다. 그래서 세 켤레 중 <strong>와이드 버전이 나온 건 마하 6뿐</strong>입니다(한국 판매 여부는 구매 전 확인하세요). 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
+<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 토박스 실측 71.6mm로 랩 평균(73.2mm)보다 좁은데 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 에보 SL도 사정이 비슷합니다. RunRepeat은 Normal·Wide 두 폭으로 표기하지만, <strong>2026년 10월 아디다스 한국 공식몰에서는 에보 SL 와이드가 검색되지 않습니다</strong>(미국 공식몰도 같습니다). 표준폭 실측은 앞발 가장 넓은 곳이 97.5mm(평균 95.2mm)로 넉넉한데 엄지 위치 토박스는 71.6mm(평균 73.2mm)로, RunRepeat 표현대로 앞쪽이 급하게 좁아집니다. 그래서 세 켤레 중 <strong>와이드 버전이 나온 건 마하 6뿐</strong>입니다(한국 판매 여부는 구매 전 확인하세요). 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
 
 <div class="callout success">
   <span class="callout-icon">💡</span>
@@ -640,7 +640,7 @@ export const posts_2026_06: BlogPost[] = [
   <p class="faq-q">Q. 첫 슈퍼트레이너로는 어느 걸 추천하나요?</p>
   <p class="faq-a">A. 예산이 허락하면 <strong>슈퍼블라스트 3</strong>입니다 — 46.5mm 고스택이 어떤 페이스에서도 실패가 없고, 한 켤레로 훈련 대부분을 커버합니다. 다만 26만원이 부담되면 <strong>에보 SL(세일 15만대)</strong>이 슈퍼폼 입문으로 가장 현실적입니다. 가볍고 가성비가 압도적이에요. 단 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 없어, 발볼이 넓어 와이드가 꼭 필요하다면 세 켤레 중 와이드 버전이 나온 <strong>마하 6</strong>를 보되, 한국 판매 여부를 먼저 확인하세요.</p>
   <p class="faq-q">Q. 발볼이 넓은데 슈퍼블라스트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 전작보다 토박스가 넓어졌다지만 표준은 표준이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 세 켤레 중 와이드가 있는 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요. 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 판매되지 않습니다.</p>
+  <p class="faq-a">A. 권하기 어렵습니다. 토박스가 실측 71.6mm로 랩 평균보다 좁은 편이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 세 켤레 중 와이드가 있는 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요. 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 판매되지 않습니다.</p>
   <p class="faq-q">Q. 이 신발들로 마라톤 대회에 나가도 되나요?</p>
   <p class="faq-a">A. 됩니다. 특히 슈퍼블라스트 3는 46.5mm 슈퍼폼으로 <strong>서브-4~서브-3.5 러너의 풀코스 레이스화로도 충분</strong>합니다. 다만 기록 단축이 목적인 빠른 러너라면 카본화가 한 수 위예요. "완주·꾸준한 페이스"가 목표면 이 세 켤레로도 대회를 잘 치를 수 있습니다. 카본화와의 차이가 궁금하면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 보세요.</p>
   <p class="faq-q">Q. 더 보고 싶은 대안이 있나요?</p>
@@ -662,7 +662,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'hoka-bondi-9-vs-asics-nimbus-28',
     slug: 'hoka-bondi-9-vs-asics-nimbus-28',
     title: '호카 본디 9 vs 아식스 님버스 28 비교 | 맥스쿠션 양대산맥 — 안정감이냐 가성비냐',
-    description: '무릎 보호 맥스쿠션의 양대산맥, 호카 본디 9(22.9만)와 아식스 젤 님버스 28(19.9만). 둘 다 부상 보호 최상위지만 성격이 갈립니다. 본디는 123mm 초광폭 플랫폼의 안정감, 님버스는 22g 가벼운 무게·발볼 여유·가성비. 체중·발볼·예산으로 내게 맞는 한 켤레를 골라드립니다.',
+    description: '무릎 보호 맥스쿠션의 양대산맥, 호카 본디 9(22.9만)와 아식스 젤 님버스 28(19.9만). 둘 다 부상 보호 최상위지만 성격이 갈립니다. 본디는 123mm 초광폭 플랫폼의 안정감, 님버스는 25g 가벼운 무게·발볼 여유·가성비. 체중·발볼·예산으로 내게 맞는 한 켤레를 골라드립니다.',
     thumbnail: '/images/blog/hoka-bondi-9-vs-asics-nimbus-28.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-26',
@@ -674,7 +674,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>둘 다 부상 보호(족저근막염·아킬레스·무릎·신스플린트) 전부 최상위</strong>인 맥스쿠션의 정점입니다. 무릎이 걱정되는 러너라면 어느 쪽을 골라도 실패는 없습니다</li>
-    <li><strong>본디 9</strong>는 <strong>123.2mm 초광폭 플랫폼의 안정감</strong>이 무기(체중 있는 러너·최대 지지력). <strong>님버스 28</strong>은 <strong>22g 가벼운 281g + 발볼 여유 + 3만원 저렴 + 긴 내구성(650km)</strong>으로 균형이 좋습니다</li>
+    <li><strong>본디 9</strong>는 <strong>123.2mm 초광폭 플랫폼의 안정감</strong>이 무기(체중 있는 러너·최대 지지력). <strong>님버스 28</strong>은 <strong>25g 가벼운 278g + 발볼 여유 + 3만원 저렴 + 긴 내구성(650km)</strong>으로 균형이 좋습니다</li>
     <li><strong>발볼이 넓거나 가성비·가벼움이 중요하면 님버스 28</strong>, <strong>체중이 있고 최대 안정감을 원하면 본디 9</strong>입니다. 대부분의 한국 러너에겐 무게·발볼·가격에서 님버스가 더 무난합니다</li>
   </ul>
 </div>
@@ -692,8 +692,8 @@ export const posts_2026_06: BlogPost[] = [
   <thead><tr><th>항목</th><th>본디 9</th><th>님버스 28</th></tr></thead>
   <tbody>
     <tr><td><strong>정가</strong></td><td>229,000원</td><td><strong>199,000원</strong></td></tr>
-    <tr><td>무게(US 9)</td><td>303g</td><td><strong>281g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>41 / 32mm</td><td><strong>43.5 / 35.5mm</strong></td></tr>
+    <tr><td>무게(US 9)</td><td>303g</td><td><strong>278g</strong></td></tr>
+    <tr><td>힐 / 전족 스택</td><td><strong>41</strong> / 32mm</td><td>39.5 / <strong>34.3mm</strong></td></tr>
     <tr><td>드롭</td><td>9mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Supercritical EVA</td><td>FF BLAST PLUS</td></tr>
     <tr><td>안정성</td><td>8 (123mm 초광폭)</td><td>8</td></tr>
@@ -706,7 +706,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>핵심 차이 3가지</h2>
 <h3>① 무게·가격 — 님버스가 더 가볍고 싸다</h3>
-<p>님버스 28은 전작 대비 20g 빠진 <strong>281g</strong>으로, 본디(303g)보다 22g 가볍습니다. 맥스쿠션화에서 22g은 장거리 후반에 체감되는 차이죠. 게다가 정가도 <strong>3만원 저렴(19.9만 vs 22.9만)</strong>하고 내구성은 100km 더 깁니다(650 vs 550km). 순수하게 "가성비 + 가벼움"만 보면 님버스가 앞섭니다.</p>
+<p>님버스 28은 전작 대비 20g 빠진 <strong>278g</strong>으로, 본디(303g)보다 25g 가볍습니다. 맥스쿠션화에서 25g은 장거리 후반에 체감되는 차이죠. 게다가 정가도 <strong>3만원 저렴(19.9만 vs 22.9만)</strong>하고 내구성은 100km 더 깁니다(650 vs 550km). 순수하게 "가성비 + 가벼움"만 보면 님버스가 앞섭니다.</p>
 
 <h3>② 안정감 — 본디의 초광폭 플랫폼</h3>
 <p>그렇다고 본디가 밀리는 건 아닙니다. 본디의 무기는 <strong>123.2mm 초광폭 플랫폼</strong>입니다. 바닥 면적이 넓어 "푹신한데 흔들리지 않는" 안정감이 맥스쿠션 중에서도 정점이라, <strong>체중이 있는 러너나 발이 안쪽으로 무너지는 느낌이 싫은 러너</strong>에게 본디의 받쳐주는 느낌이 더 안심됩니다. 무게(303g)는 그 안정감의 대가입니다.</p>
@@ -737,7 +737,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>한국 러너 FAQ</h2>
 <div class="faq">
   <p class="faq-q">Q. 무릎 보호만 보면 어느 쪽이 나은가요?</p>
-  <p class="faq-a">A. 둘 다 족저근막염·아킬레스·무릎·신스플린트 보호가 모두 최상위라 사실상 동급입니다. 굳이 나누면 본디는 초광폭 플랫폼의 안정감, 님버스는 43.5mm 더 높은 스택의 충격 흡수가 강점입니다. 맥스쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
+  <p class="faq-a">A. 둘 다 족저근막염·아킬레스·무릎·신스플린트 보호가 모두 최상위라 사실상 동급입니다. 굳이 나누면 본디는 초광폭 플랫폼의 안정감, 님버스는 더 두꺼운 전족 스택(34.3mm 대 32mm)의 충격 흡수가 강점입니다. 맥스쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
   <p class="faq-q">Q. 발볼 넓은데 본디 신으려면?</p>
   <p class="faq-a">A. 본디는 반드시 와이드 옵션을 선택하세요. 표준은 72.5mm로 좁아 장거리에서 눌릴 수 있습니다. 같은 값이면 기본 핏이 여유로운 님버스 28이 발볼 스트레스가 덜합니다.</p>
   <p class="faq-q">Q. 초보 첫 신발로는 어느 쪽?</p>
@@ -862,7 +862,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'new-balance-sc-elite-v5-review',
     slug: 'new-balance-sc-elite-v5-review',
     title: '뉴발란스 SC Elite V5 후기 | 발볼 넓어도 신는 카본 슈퍼슈즈 — 74.5mm 토박스·198g 솔직 리뷰',
-    description: '뉴발란스 SC Elite V5, 발볼 넓어서 베이퍼플라이를 포기했던 한국 러너에게 답이 되는 카본 슈퍼슈즈입니다. 74.5mm 토박스는 슈퍼슈즈 중 가장 넓고, v4 대비 30g 빠진 198g로 드디어 경쟁력에 도달했죠. 가을 레이싱을 앞두고 74.8% 에너지 리턴·가성비·약점까지 솔직하게 정리했습니다.',
+    description: '뉴발란스 SC Elite V5, 발볼 넓어서 베이퍼플라이를 포기했던 한국 러너에게 답이 되는 카본 슈퍼슈즈입니다. 74.5mm 토박스는 슈퍼슈즈 중 넓은 축이고, v4 대비 30g 빠진 198g로 드디어 경쟁력에 도달했죠. 가을 레이싱을 앞두고 74.8% 에너지 리턴·가성비·약점까지 솔직하게 정리했습니다.',
     thumbnail: '/images/blog/new-balance-sc-elite-v5-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-26',
@@ -873,7 +873,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 압도적으로 넓어, 레이스 후반 발가락 눌림이 고질병이던 한국 러너에게 사실상 유일한 선택지입니다</li>
+    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(73.2mm)보다 넓고 <a href="/shoes/nike-alphafly-3">알파플라이</a>(75.3mm)와는 비슷한 수준이라, 레이스 후반 발가락 눌림이 고민인 한국 러너에게 유력한 선택지입니다</li>
     <li><strong>v4 대비 30g 빠진 198g</strong>로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell 폼(HA 15.2 울트라소프트)이 74.8% 에너지 리턴을 내고, 0.61 그립으로 젖은 노면도 안정적입니다</li>
     <li><strong>29만원(할인가)으로 베이퍼플라이(31만원)보다 저렴</strong>합니다. 다만 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
   </ul>
@@ -883,7 +883,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">"발볼 넓은데 카본화 신을 게 없어요"의 답</p>
-    <p>카본 슈퍼슈즈는 대부분 발을 꽉 잡는 좁은 레이싱 핏입니다. 그래서 발볼 넓은 한국 러너는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>를 신고 30km 지나면 새끼발가락이 비명을 지르죠. <a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a>는 정확히 그 지점을 노린 신발입니다. 슈퍼슈즈의 추진력은 가져가되 <strong>토박스를 가장 넓게</strong> 풀어, "발볼 때문에 카본을 포기했던" 러너를 다시 레이스로 불러옵니다. 가을 마라톤 시즌을 앞두고 카본화를 고민한다면 후보에 꼭 넣어야 할 모델입니다.</p>
+    <p>카본 슈퍼슈즈는 대부분 발을 꽉 잡는 좁은 레이싱 핏입니다. 그래서 발볼 넓은 한국 러너는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>를 신고 30km 지나면 새끼발가락이 비명을 지르죠. <a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a>는 정확히 그 지점을 노린 신발입니다. 슈퍼슈즈의 추진력은 가져가되 <strong>토박스를 넓게</strong> 풀어, "발볼 때문에 카본을 포기했던" 러너를 다시 레이스로 불러옵니다. 가을 마라톤 시즌을 앞두고 카본화를 고민한다면 후보에 꼭 넣어야 할 모델입니다.</p>
   </div>
 </div>
 
@@ -897,7 +897,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>미드솔</td><td>FuelCell (100% PEBA)</td><td>HA 15.2 울트라소프트</td></tr>
     <tr><td>플레이트</td><td>풀렝스 카본</td><td>Energy Arc 곡률로 빠른 전환</td></tr>
     <tr><td>에너지 리턴</td><td>74.8%</td><td>상위권 (SA 144 충격흡수)</td></tr>
-    <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 가장 넓음 + 와이드 옵션</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 넓은 축 + 와이드 옵션</td></tr>
     <tr><td>최적 페이스</td><td>3:30~4:30/km</td><td>서브3~3:30 마라토너</td></tr>
     <tr><td>내구성 / 가격</td><td>300km / 319,000원</td><td>할인가 29만, km당 약 1,000원</td></tr>
   </tbody>
@@ -906,7 +906,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>실제로 어떤 느낌이냐</h2>
 <h3>넓은 토박스 — 이게 전부라고 해도 될 만큼</h3>
-<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이(67.8mm), 알파플라이(68.4mm)보다 6~7mm 넓습니다. 숫자로는 작아 보여도, 레이스 후반 발이 부으면 이 차이가 "완주 가능"과 "고통"을 가릅니다. 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림에서 자유로운</strong> 거의 유일한 슈퍼슈즈입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
+<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이 4(73.2mm)보다 1.3mm 넓고, 알파플라이 3(75.3mm)보다는 0.8mm 좁은 수준입니다(RunRepeat 실측). 슈퍼슈즈 중 넓은 축이라 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림 부담을 줄일 수 있는</strong> 선택지입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
 
 <h3>반발 — 부드럽게 굴러가되 폭발적이진 않다</h3>
 <p>100% PEBA FuelCell 폼은 HA 15.2로 매우 부드럽고, 74.8% 에너지 리턴은 분명 상위권입니다. 새 Energy Arc 플레이트 곡률이 중족부에서 전족부로의 전환을 매끄럽게 만들어, 3:30~4:30/km 페이스에서 자연스럽게 굴러갑니다. 다만 솔직히 말하면 <strong>알파플라이 같은 "튕겨내는" 폭발력은 아닙니다.</strong> 부드럽게 밀어주는 쪽이라, 순수 반발 최대치를 원하는 서브3 이하 엘리트에겐 다른 선택이 나을 수 있습니다.</p>
@@ -938,14 +938,14 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></strong> — 순수 반발·기록 최대치. 단 좁은 토박스. SC Elite는 "편한 발볼"로 차별화.</li>
   <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a></strong> — 스트라이드 주자용 폭발력. 토박스는 SC Elite가 더 여유.</li>
-  <li><strong><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></strong> — 29.9만으로 비슷한 가격대 + 넉넉한 핏. SC Elite와 직접 경쟁. <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a> 참고.</li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></strong> — 29.9만으로 비슷한 가격대. 토박스는 RunRepeat 실측 69.3mm로 좁은 편. SC Elite와 직접 경쟁. <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a> 참고.</li>
   <li><strong><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></strong> — EnergyRods의 통통 튀는 감각. 발볼은 좁은 편.</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq">
   <p class="faq-q">Q. 발볼이 넓은데 베이퍼플라이 대신 이거 신어도 되나요?</p>
-  <p class="faq-a">A. 바로 그 케이스를 위한 신발입니다. 토박스 74.5mm는 슈퍼슈즈 중 가장 넓고 와이드 옵션도 있어, 발볼 때문에 카본화를 포기했던 러너에게 1순위로 권합니다. 레이스 후반 발가락 눌림이 확연히 줄어듭니다.</p>
+  <p class="faq-a">A. 바로 그 케이스를 위한 신발입니다. 토박스 74.5mm는 슈퍼슈즈 중 넓은 축이고 와이드 옵션도 있어, 발볼 때문에 카본화를 포기했던 러너에게 1순위로 권합니다. 레이스 후반 발가락 눌림이 확연히 줄어듭니다.</p>
   <p class="faq-q">Q. 초보도 신을 수 있나요?</p>
   <p class="faq-a">A. 권하지 않습니다. 카본 슈퍼슈즈는 3:30~4:30/km 페이스 이상에서 진가가 나오고, 내구성도 300km로 짧아 레이스 전용입니다. 입문~중급이라면 훈련용 슈퍼폼화(예: <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>)부터 경험하는 게 순서입니다.</p>
   <p class="faq-q">Q. 무릎은 괜찮나요?</p>
@@ -1093,7 +1093,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong>써코니 엔돌핀이 2026년 4단 라인업으로 정비됐습니다</strong> — 한국 공식몰 7/1 기준 <a href="/shoes/saucony-endorphin-azura">아주라(18.9만)</a> → <a href="/shoes/saucony-endorphin-speed-5">스피드 5(21.9만)</a> → <a href="/shoes/saucony-endorphin-pro-5">프로 5(29.9만)</a> → 엘리트 3(36.9만, 신형). 폼·플레이트·가격이 한 칸씩 올라가는 '사다리' 구조입니다</li>
     <li><strong>고민은 딱 두 축</strong>입니다 — ① 카본 플레이트가 필요한가(레이스 위주) ② 예산이 어디까지인가. 데일리·입문이면 <strong>아주라</strong>, 훈련+하프 대회를 한 켤레로 잡고 싶으면 <strong>스피드 5(가성비 갓신발)</strong>, 본격 풀마라톤 카본이면 <strong>프로 5</strong>, 서브3 엘리트면 <strong>엘리트 3</strong></li>
-    <li><strong>4종 모두 와이드 옵션이 없습니다.</strong> 아주라·스피드·프로는 표준 토박스라 시착하면 대부분 괜찮지만, 엘리트는 좁은 편이라 발볼 넓은 한국 러너는 주의하세요</li>
+    <li><strong>와이드 옵션은 스피드 5에만 있습니다</strong>(한국 공식몰 남녀 와이드). 아주라·스피드는 표준 토박스라 시착하면 대부분 괜찮지만, 프로 5·엘리트는 좁은 편이라 발볼 넓은 한국 러너는 주의하세요</li>
   </ul>
 </div>
 
@@ -1101,7 +1101,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🪜</span>
   <div class="callout-body">
     <p class="callout-title">엔돌핀 = 써코니의 '스피드 사다리'</p>
-    <p>써코니의 스피드 라인은 전부 <strong>엔돌핀</strong>이라는 이름을 답니다. 2026년 들어 라인이 대거 갱신되면서 한국 공식몰 기준 <strong>아주라 → 스피드 5 → 프로 5 → 엘리트 3</strong> 4단으로 정리됐습니다. 핵심은 위로 갈수록 <strong>플레이트가 강해지고(없음 → 나일론 → 카본) 폼이 비싸지고(PWRRUN PB → IncrediRUN) 가격이 오른다</strong>는 것. 그래서 "엔돌핀 뭐 사지?"의 답은 모델 스펙 암기가 아니라 <strong>내가 사다리의 어느 칸에 서 있나</strong>를 정하는 데서 나옵니다. 엘리트 3는 7/1 출시됐지만 아직 RunRepeat 랩 데이터가 없어, 본문 수치는 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> 실측 + 공식 라인업 기준입니다. 확정 변경점은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a> 참고.</p>
+    <p>써코니의 스피드 라인은 전부 <strong>엔돌핀</strong>이라는 이름을 답니다. 2026년 들어 라인이 대거 갱신되면서 한국 공식몰 기준 <strong>아주라 → 스피드 5 → 프로 5 → 엘리트 3</strong> 4단으로 정리됐습니다. 핵심은 위로 갈수록 <strong>플레이트가 강해지고(없음 → 나일론 → 카본) 폼이 비싸지고(PWRRUN PB → IncrediRUN) 가격이 오른다</strong>는 것. 그래서 "엔돌핀 뭐 사지?"의 답은 모델 스펙 암기가 아니라 <strong>내가 사다리의 어느 칸에 서 있나</strong>를 정하는 데서 나옵니다. 엘리트 3는 7/1 출시 후 RunRepeat 랩 실측이 게시돼 본문 수치에 반영했고, 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> 실측은 비교용으로 함께 적었습니다. 변경점은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a> 참고.</p>
   </div>
 </div>
 
@@ -1112,18 +1112,18 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>포지션</strong></td><td>데일리 슈퍼폼</td><td>만능 템포</td><td>카본 레이서</td><td>엘리트 레이스</td></tr>
-    <tr><td><strong>정가</strong></td><td>189,000원</td><td>219,000원</td><td>299,000원</td><td>369,000원<br><small>(신형·잠정)</small></td></tr>
-    <tr><td>무게(US 9)</td><td>240g</td><td>241g</td><td><strong>206g</strong></td><td>~197g<br><small>(엘리트 2)</small></td></tr>
-    <tr><td>스택(힐/전족)</td><td>40 / 32mm</td><td>37 / 27mm</td><td>40 / 32mm</td><td>40 / 32mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>8mm</td><td>8mm</td></tr>
+    <tr><td><strong>정가</strong></td><td>189,000원</td><td>219,000원</td><td>299,000원</td><td>369,000원<br><small>(신형)</small></td></tr>
+    <tr><td>무게(US 9)</td><td>241g</td><td>241g</td><td>215g</td><td><strong>210g</strong></td></tr>
+    <tr><td>스택(힐/전족)</td><td>40.7 / 32.7mm</td><td>37 / 27mm</td><td>36.5 / 27.8mm</td><td>39.8 / 34.1mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>8.7mm</td><td>5.7mm</td></tr>
     <tr><td><strong>플레이트</strong></td><td>없음</td><td>나일론</td><td>슬롯 카본</td><td>풀 카본</td></tr>
     <tr><td>미드솔 폼</td><td>PWRRUN PB</td><td>PWRRUN PB</td><td>PWRRUN HG+PB</td><td><strong>IncrediRUN</strong></td></tr>
     <tr><td>주 용도</td><td>이지~템포</td><td>템포·하프</td><td>하프~풀 레이스</td><td>풀 레이스데이</td></tr>
     <tr><td>발볼(토박스)</td><td>표준</td><td>표준</td><td>표준</td><td><strong>좁음</strong></td></tr>
-    <tr><td>km당 비용</td><td><strong>315원</strong></td><td>438원</td><td>997원</td><td>1,695원</td></tr>
+    <tr><td>km당 비용</td><td><strong>315원</strong></td><td>438원</td><td>997원</td><td>1,845원</td></tr>
   </tbody>
 </table>
-<p><small>※ 무게·스택·km당 비용은 RunRepeat 실측 및 한국 공식 정가 기준. 엘리트 3는 한국 미입고로 엘리트 2 실측치를 참고로 표기했으며, 정가 369,000원은 잠정값입니다.</small></p>
+<p><small>※ 무게·스택·km당 비용은 RunRepeat 실측 및 한국 공식 정가 기준(브랜드 공식 무게는 아주라 240g·프로 5 206g). 드롭은 스피드 5만 브랜드 공식값이고 나머지는 RunRepeat 실측(브랜드 공식은 모두 8mm)입니다.</small></p>
 
 <h2>한 켤레씩 뜯어보기</h2>
 
@@ -1132,7 +1132,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>플레이트가 없다는 건 <strong>발목·아킬레스 부담이 적어 매일 신기 편하다</strong>는 뜻입니다. 600km 내구성에 km당 315원으로 엔돌핀 4종 중 <strong>가성비 1위</strong>. "써코니 슈퍼폼이 궁금한데 카본은 부담스럽다"는 입문~중급 러너의 첫 엔돌핀으로 가장 안전한 선택입니다. 경쟁작은 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>, <a href="/shoes/new-balance-rebel-v5">뉴발란스 레벨 v5</a>, <a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a>입니다.</p>
 
 <h3>2. 스피드 5 — 커뮤니티가 인정한 '가성비 갓신발' (21.9만)</h3>
-<p>러닝 커뮤니티에서 "<strong>갓신발</strong>"이라 불리는 데는 이유가 있습니다. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>는 21만 9천원에 <strong>73.2% 에너지 리턴(슈퍼슈즈급)</strong>을 제공하면서, 카본이 아닌 <strong>나일론 플레이트</strong>를 써서 매일 훈련에 투입해도 무리가 없습니다. v4 대비 폼이 소프트(HA 18.5)해지고 토박스가 넓어져 착화감도 개선됐죠.</p>
+<p>러닝 커뮤니티에서 "<strong>갓신발</strong>"이라 불리는 데는 이유가 있습니다. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>는 21만 9천원에 <strong>에너지 리턴 힐 73.2%·전족부 78.2%(슈퍼슈즈급)</strong>를 제공하면서, 카본이 아닌 <strong>나일론 플레이트</strong>를 써서 매일 훈련에 투입해도 무리가 없습니다. v4 대비 토박스가 넓어져(RunRepeat 실측 72.9mm, 표준) 착화감도 개선됐고, 폼 경도는 실측 44.5 AC로 단단한 편입니다.</p>
 <p>이 신발의 진짜 가치는 <strong>'한 켤레로 다 된다'</strong>는 만능성입니다. 평일 템포·인터벌 훈련은 물론, 하프마라톤 레이스에 그대로 신고 나가도 손색이 없습니다. 통기성도 5/5라 여름 템포런에 쾌적하고, 500km 내구성에 km당 438원. "슈퍼슈즈 사기 전에 실력부터 키우자"는 서브4~서브3:30 목표 러너에게 최적이고, 솔직히 많은 러너에게는 <strong>이 한 켤레면 충분</strong>합니다.</p>
 
 <div class="callout success">
@@ -1144,18 +1144,18 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h3>3. 프로 5 — 안정적인 '풀마라톤 카본' (29.9만)</h3>
-<p><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>는 본격 카본 레이서입니다. <strong>풀렝스 슬롯형 카본 플레이트</strong>와 PWRRUN HG(상층)+PB(하층) 듀얼 폼으로 206g 경량에 강한 추진력을 냅니다. 전작과 동일한 206g/39.5mm 스택을 유지하면서 카본을 슬롯 디자인으로 바꿔 <strong>전환 효율</strong>을 높였고, PWRTRAC 아웃솔이 새로 적용돼 젖은 노면 그립도 좋아졌습니다.</p>
+<p><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>는 본격 카본 레이서입니다. <strong>풀렝스 슬롯형 카본 플레이트</strong>와 PWRRUN HG(상층)+PB(하층) 듀얼 폼으로 215g(RunRepeat 실측, 브랜드 공식 206g) 경량에 강한 추진력을 냅니다. 카본을 슬롯 디자인으로 바꿔 <strong>전환 효율</strong>을 높였고, PWRTRAC 아웃솔이 새로 적용돼 젖은 노면 그립도 좋아졌습니다.</p>
 <p>한국 러너에게 프로 5의 강점은 <strong>안정적인 플랫폼과 가격</strong>입니다. <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(30.9만)보다 1만원 싸고 플랫폼이 안정적입니다. 다만 토박스는 RunRepeat 실측 69.3mm(평균 73.2mm)로 좁은 편이라, 발볼 때문에 나이키 레이서를 포기했던 러너의 대안은 아닙니다. 다만 300km 내구성에 km당 997원이라 <strong>대회·핵심 훈련 전용</strong>으로 운용하세요. 서브3:30~4 마라토너의 풀코스 카본으로 추천합니다. 둘을 더 깊게 비교한 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5 글</a>도 참고하세요.</p>
 
 <h3>4. 엘리트 3 — 순수 반발력 최강의 '레이스데이 무기' (36.9만, 신형)</h3>
-<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 78.2%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다. 197g대 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
-<p>냉정하게, 이건 <strong>월 200km 이상 훈련하는 서브3 러너의 레이스데이 전용 무기</strong>입니다. 200km 내구성에 km당 1,695원, 토박스도 좁아 발볼 넓은 한국 러너에겐 도전적이죠. 서브3:30 이상 페이스가 안 나오면 잠재력을 끌어내기 어려우니, 대부분의 러너에게는 프로 5나 스피드 5가 더 현명합니다.</p>
+<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 78.2%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다(실측 에너지 리턴 힐 80.6%·전족부 81.0%). 200g 안팎(실측 엘리트 2 197g·엘리트 3 210g) 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
+<p>냉정하게, 이건 <strong>월 200km 이상 훈련하는 서브3 러너의 레이스데이 전용 무기</strong>입니다. 200km 내구성에 km당 1,845원, 토박스도 좁아(실측 71.8mm) 발볼 넓은 한국 러너에겐 도전적이죠. 서브3:30 이상 페이스가 안 나오면 잠재력을 끌어내기 어려우니, 대부분의 러너에게는 프로 5나 스피드 5가 더 현명합니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">🆕</span>
   <div class="callout-body">
-    <p class="callout-title">엘리트 3는 아직 '미공개'가 많습니다</p>
-    <p>엘리트 3는 <strong>2026년 7월 1일 한국 출시됐습니다</strong>(정가 369,000원). 확정된 변경점 — 207g(전작 +10g)·포크형 카본 플레이트·넓어진 직각형 토박스·측면 컷아웃 제거로 개선된 안정성 — 은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 출시 프리뷰</a>에서 따로 정리했습니다. 다만 RunRepeat 랩 수치(에너지 리턴·충격흡수)는 아직 미게시라 그 부분만 엘리트 2 기준(80% 안팎 계승 추정)입니다. 검증된 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>도 현행 판매 중입니다.</p>
+    <p class="callout-title">엘리트 3 랩 실측이 나왔습니다</p>
+    <p>엘리트 3는 <strong>2026년 7월 1일 한국 출시됐습니다</strong>(정가 369,000원). RunRepeat 랩 실측은 210g(전작 +13g)·에너지 리턴 힐 80.6%·전족부 81.0%·충격흡수 힐 160 SA·토박스 71.8mm(여전히 좁음)이고, 포크형 카본 플레이트·측면 컷아웃 제거로 개선된 안정성 등 변경점은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 출시 프리뷰</a>에서 따로 정리했습니다. 검증된 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>도 현행 판매 중입니다.</p>
   </div>
 </div>
 
@@ -1174,9 +1174,9 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>한국 러너가 꼭 알아야 할 3가지</h2>
 <ul>
-  <li><strong>① 와이드 옵션이 4종 모두 없습니다.</strong> 아주라·스피드는 표준(D) 토박스라 발볼 넓어도 시착하면 대부분 맞지만, 정 불안하면 반 사이즈 업을 고려하세요. <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 먼저 보세요.</li>
+  <li><strong>① 와이드 옵션은 스피드 5에만 있습니다</strong>(한국 공식몰 남녀 와이드). 아주라·스피드는 표준(D) 토박스라 발볼 넓어도 시착하면 대부분 맞고, 정 불안하면 스피드 5 와이드를 고려하세요. <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 먼저 보세요.</li>
   <li><strong>② 카본은 '항상 빠른 신발'이 아닙니다.</strong> 프로·엘리트의 카본 플레이트는 일정 페이스(3:30~4:30/km) 이상에서 진가가 나옵니다. 그보다 느리면 딱딱하기만 하고 오히려 불편할 수 있어요. <a href="/blog/carbon-plate-shoes-guide-2026">카본화의 작동 원리</a>를 이해하고 사세요.</li>
-  <li><strong>③ 가성비는 아래 두 칸이 압도적입니다.</strong> 내구성까지 반영한 km당 비용은 아주라 315원 · 스피드 438원 vs 프로 997원 · 엘리트 1,695원. 위 두 칸은 대회 전용 무기라 '비싸게 사서 아껴 신는' 신발이라는 점을 감안하세요.</li>
+  <li><strong>③ 가성비는 아래 두 칸이 압도적입니다.</strong> 내구성까지 반영한 km당 비용은 아주라 315원 · 스피드 438원 vs 프로 997원 · 엘리트 1,845원. 위 두 칸은 대회 전용 무기라 '비싸게 사서 아껴 신는' 신발이라는 점을 감안하세요.</li>
 </ul>
 
 <h2>자주 묻는 질문</h2>
@@ -1184,9 +1184,9 @@ export const posts_2026_06: BlogPost[] = [
   <p class="faq-q">Q. 초보인데 엔돌핀 신어도 되나요?</p>
   <p class="faq-a">A. <strong>아주라와 스피드 5는 OK</strong>입니다. 둘 다 플레이트가 없거나(아주라) 부드러운 나일론(스피드)이라 부상 위험이 낮습니다. 반면 프로 5·엘리트 3는 빠른 페이스와 완성된 폼을 전제로 한 카본화라, 입문 단계에선 권하지 않습니다.</p>
   <p class="faq-q">Q. 스피드 5 하나로 훈련이랑 대회 둘 다 되나요?</p>
-  <p class="faq-a">A. 됩니다. 그게 스피드 5가 "갓신발"로 불리는 이유예요. 73.2% 에너지 리턴으로 하프 레이스에 직접 투입 가능하면서, 나일론 플레이트라 매일 템포·인터벌 훈련에도 부담이 없습니다. 풀마라톤에서 1초까지 짜내는 게 아니라면 이 한 켤레로 충분합니다.</p>
+  <p class="faq-a">A. 됩니다. 그게 스피드 5가 "갓신발"로 불리는 이유예요. 에너지 리턴 힐 73.2%·전족부 78.2%로 하프 레이스에 직접 투입 가능하면서, 나일론 플레이트라 매일 템포·인터벌 훈련에도 부담이 없습니다. 풀마라톤에서 1초까지 짜내는 게 아니라면 이 한 켤레로 충분합니다.</p>
   <p class="faq-q">Q. 발볼이 넓은데 어떤 게 맞나요?</p>
-  <p class="faq-a">A. 4종 다 와이드 옵션은 없습니다. 데일리인 아주라·스피드 5(표준)는 시착하면 대부분 괜찮고, <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천이에요.</p>
+  <p class="faq-a">A. 와이드 옵션은 스피드 5에만 있습니다(한국 공식몰 남녀). 데일리인 아주라·스피드 5(표준)는 시착하면 대부분 괜찮고, 발볼이 넓다면 스피드 5 와이드가 가장 무난합니다. <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천이에요.</p>
   <p class="faq-q">Q. 엘리트 3가 7/1에 나온다는데 기다릴까요?</p>
   <p class="faq-a">A. 서브3 도전급이 아니라면 굳이 기다릴 이유는 적습니다. 엘리트는 페이스가 받쳐줘야 진가가 나오는 극단적 레이서라, 대부분의 러너에겐 프로 5가 더 합리적입니다. 정말 엘리트급 반발이 지금 필요하면 검증된 엘리트 2가 현행 판매 중입니다.</p>
 </div>
@@ -1199,7 +1199,7 @@ export const posts_2026_06: BlogPost[] = [
   </div>
 </div>
 
-<p class="post-disclaimer"><small>※ 가격은 써코니 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 엘리트 3 정가·출시일은 잠정값으로, 한국 공식 입고 후 갱신합니다. 랩 수치는 RunRepeat 실측, 엘리트 3는 전작(엘리트 2) 기준 참고치입니다.</small></p>
+<p class="post-disclaimer"><small>※ 가격은 써코니 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 엘리트 3 정가는 한국 공식몰 7/1 출시 기준입니다. 랩 수치는 RunRepeat 실측입니다.</small></p>
 `,
   },
   {
@@ -1815,14 +1815,14 @@ export const posts_2026_06: BlogPost[] = [
 <p>한국에서 트라이엄프 24의 라이벌은 명확합니다. <a href="/shoes/hoka-bondi-9">호카 본디 9</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>죠.</p>
 <ul>
   <li><strong>vs 본디 9</strong> — 본디는 더 무겁고(약 298g) 구조화된 로커로 '완전 소파'. 트라이엄프 24는 약 48g 가볍고 에너지 리턴이 더 살아 '튕기는 소파'입니다</li>
-  <li><strong>vs 님버스 28</strong> — 스택은 비슷(43.5/35.5mm). 님버스는 FF BLAST+ + PureGEL로 플랫폼 안정감이 우위, 트라이엄프 24는 무게·반발과 가격(209K vs 약 23만)에서 우위</li>
+  <li><strong>vs 님버스 28</strong> — 스택은 님버스가 실측 39.5/34.3mm로 힐은 트라이엄프 쪽이 더 높습니다. 님버스는 FF BLAST+ + PureGEL로 플랫폼 안정감이 우위, 트라이엄프 24는 무게·반발과 가격(209K vs 약 23만)에서 우위</li>
   <li><strong>vs 1080 v15</strong> — 1080은 드롭이 6mm로 낮아(트라이엄프 24는 10mm) 더 자연스러운 발걸음. <strong>힐 착지가 많다면 드롭 10mm의 트라이엄프 24</strong>가 편합니다</li>
 </ul>
 <p>정리하면 <strong>'쿠션 + 반발 균형 + 가성비'가 트라이엄프 24의 자리</strong>입니다. 푹신함 끝판왕은 본디, 안정감은 님버스, 낮은 드롭은 1080. 세 신발을 한 번에 보려면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>을 참고하세요.</p>
 
 <h2>한국 러너 관점 — 발볼·평발·무릎</h2>
 <ul>
-  <li><strong>발볼 넓은 러너</strong> — <strong>와이드(2E) 옵션이 한국몰에 정식 판매</strong>됩니다. 표준형도 23(71.4mm)보다 소폭 넉넉해졌지만, 발볼이 넓다면 와이드를 권합니다(<a href="/best/wide-toebox">발볼 넓은 러너 추천</a> 참고)</li>
+  <li><strong>발볼 넓은 러너</strong> — <strong>와이드(2E) 옵션이 한국몰에 정식 판매</strong>됩니다. 표준형은 RunRepeat 실측 토박스 71.4mm로 23(71.4mm)과 같은 좁은 편이라, 발볼이 보통 이상이면 와이드를 권합니다(<a href="/best/wide-toebox">발볼 넓은 러너 추천</a> 참고)</li>
   <li><strong>평발·과내전</strong> — <strong>완전 중립화라 교정 기능이 없습니다.</strong> 경미한 평발 + 쿠션 우선이면 43mm 스택이 발바닥 부하를 줄여줘 허용 범위지만, 오버프로네이션이 뚜렷하면 안정화인 <a href="/shoes/saucony-hurricane-25">써코니 허리케인</a> 계열이 맞습니다</li>
   <li><strong>무릎</strong> — 43mm 힐 스택의 충격 흡수로 무릎 부하 분산에 유리합니다. 단 무릎 통증 원인이 과내전이라면 쿠션만으로는 부족하니 안정화를 고려하세요</li>
 </ul>
@@ -2493,10 +2493,10 @@ export const posts_2026_06: BlogPost[] = [
     tags: ['사코니 러닝화', '소커니 러닝화', '사코니 계급도', '러닝화 라인업', '러닝화 등급', '엔돌핀 스피드', '엔돌핀 프로', '라이드', '가이드', 'PWRRUN'],
     faqs: [
       { question: '사코니 "엔돌핀(Endorphin)"이 뭔가요?', answer: '사코니의 스피드·레이싱 서브브랜드입니다. 이름에 엔돌핀이 붙으면 빠르게 달리기 위한 신발이에요. SPEEDROLL이라는 록커 지오메트리로 자연스럽게 굴러가게 하고, PWRRUN PB(PEBA) 슈퍼폼을 씁니다. 스피드·프로·엘리트·트레이너·아주라까지 변형이 많아 사코니 라인업의 핵심을 이룹니다.' },
-      { question: '엔돌핀 스피드·프로·엘리트는 뭐가 다른가요?', answer: '플레이트와 등급으로 갈립니다. 스피드는 나일론 플레이트(카본 아님)로 카본값 없이 빠른 슈퍼트레이너, 프로는 카본 플레이트 레이싱화, 엘리트는 IncrediRUN 폼에 카본을 넣은 최상위입니다(전작 엘리트 2가 RunRepeat 실측 에너지 리턴 80.6%. 신형 엘리트 3는 같은 IncrediRUN 계열이지만 실측 수치는 아직 없습니다). 현행 세대는 스피드 5(21.9만)·프로 5(29.9만)·엘리트 3(36.9만)입니다. 가성비 훈련이면 스피드, 대회면 프로, 기록 끝장이면 엘리트입니다.' },
-      { question: '엔돌핀 스피드가 왜 "갓신발"이라고 불리나요?', answer: '카본 플레이트 대신 나일론 플레이트를 쓰면서도 에너지 리턴 73.2%(엔돌핀 스피드 5 기준)를 21.9만원에 내기 때문입니다. 카본만큼 빳빳하지 않아 데일리·템포·롱런까지 폭넓게 쓸 수 있어, 한 켤레로 여러 용도를 커버하려는 러너에게 가격 대비 선택지가 넓습니다. 6세대는 글로벌 출시(10/15) 예정이지만 한국 정가·출시일은 아직 발표되지 않았습니다.' },
+      { question: '엔돌핀 스피드·프로·엘리트는 뭐가 다른가요?', answer: '플레이트와 등급으로 갈립니다. 스피드는 나일론 플레이트(카본 아님)로 카본값 없이 빠른 슈퍼트레이너, 프로는 카본 플레이트 레이싱화, 엘리트는 IncrediRUN 폼에 카본을 넣은 최상위입니다(전작 엘리트 2가 RunRepeat 실측 에너지 리턴 80.6%. 신형 엘리트 3도 같은 IncrediRUN 계열로 실측 에너지 리턴 힐 80.6%·전족부 81.0%). 현행 세대는 스피드 5(21.9만)·프로 5(29.9만)·엘리트 3(36.9만)입니다. 가성비 훈련이면 스피드, 대회면 프로, 기록 끝장이면 엘리트입니다.' },
+      { question: '엔돌핀 스피드가 왜 "갓신발"이라고 불리나요?', answer: '카본 플레이트 대신 나일론 플레이트를 쓰면서도 에너지 리턴 힐 73.2%·전족부 78.2%(엔돌핀 스피드 5, RunRepeat 실측)를 21.9만원에 내기 때문입니다. 카본만큼 빳빳하지 않아 데일리·템포·롱런까지 폭넓게 쓸 수 있어, 한 켤레로 여러 용도를 커버하려는 러너에게 가격 대비 선택지가 넓습니다. 6세대는 글로벌 출시(10/15) 예정이지만 한국 정가·출시일은 아직 발표되지 않았습니다.' },
       { question: '사코니 안정화는 가이드·허리케인·옴니 중 뭘 사야 하나요?', answer: '가이드 19(17.9만)는 전족부 플랫폼 실측 120mm의 초광폭 코어 안정화로 카야노 33(19.9만)보다 2만원 낮습니다. 허리케인 26(20.9만)은 IncrediLux 폼을 PWRRUN 크래들에 얹은 맥스쿠션 안정화, 옴니 ST 23(19.9만)은 PWRRUN PB와 PWRRUN 사이에 TPU 스태빌리티 프레임을 끼운 써코니 최상급 안정화입니다. 가성비 지지면 가이드, 쿠션까지 챙기려면 허리케인, 미드풋을 단단히 받치는 구조를 원하면 옴니입니다.' },
-      { question: '사코니는 발볼 넓은 한국 러너에게 맞나요?', answer: '대체로 표준 토박스라 무난한 편이고, 라이드·가이드·트라이엄프·허리케인·옴니는 와이드 옵션까지 있습니다. 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감도 좋아요. 반면 전작 카본 레이서인 엔돌핀 프로 4·엘리트 2는 좁으니 발볼이 많이 넓으면 반 치수 크게 신으세요. 파라마운트 맥스·엑소더스 울트라 4는 국내 와이드 옵션이 없습니다.' },
+      { question: '사코니는 발볼 넓은 한국 러너에게 맞나요?', answer: '라이드·가이드·허리케인·옴니는 표준 토박스에 와이드 옵션까지 있어 무난하고, 엔돌핀 스피드 5도 와이드가 있습니다. 트라이엄프 23·24는 표준 폭이 실측 71.4mm로 좁은 편이지만 와이드가 있습니다. 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감도 좋아요. 반면 엔돌핀 프로 5·엘리트 2·엘리트 3·트레이너와 킨바라 16은 토박스가 좁고 와이드가 없으니 발볼이 많이 넓으면 반 치수 크게 신으세요. 파라마운트 맥스(실측 70.4mm)·엑소더스 울트라 4(실측 71.6mm)도 토박스가 좁고 국내 와이드 옵션이 없습니다.' },
     ],
     content: `
 <div class="tldr">
@@ -2563,19 +2563,19 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/saucony-kinvara-16"><strong>킨바라 16</strong></a></td><td>경량 미니멀</td><td>PWRRUN</td><td>15.9만</td><td>207g</td><td>207g·4mm, 지면 감각</td></tr>
-    <tr><td><a href="/shoes/saucony-ride-19"><strong>라이드 19</strong></a></td><td>입문 데일리</td><td>SCF PWRRUN+</td><td>17.9만</td><td>255g</td><td>더 부드럽고 넓어진 트레이너</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-19"><strong>라이드 19</strong></a></td><td>입문 데일리</td><td>SCF PWRRUN+</td><td>17.9만</td><td>278g</td><td>더 부드럽고 플랫폼이 넓어진 트레이너</td></tr>
     <tr><td><a href="/shoes/saucony-guide-19"><strong>가이드 19</strong></a></td><td>가성비 안정화</td><td>PWRRUN</td><td>17.9만</td><td>298g</td><td>전족부 플랫폼 실측 120mm 초광폭</td></tr>
     <tr><td><a href="/shoes/saucony-peregrine-16"><strong>페레그린 16</strong></a></td><td>트레일 표준</td><td>PWRRUN + 록플레이트</td><td>17.9만</td><td>278g</td><td>Vibram Megagrip, 드롭 4mm</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-azura"><strong>엔돌핀 아주라</strong></a></td><td>엔돌핀 데일리</td><td>PWRRUN PB</td><td>18.9만</td><td>240g</td><td>무플레이트 데일리 스피드</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-azura"><strong>엔돌핀 아주라</strong></a></td><td>엔돌핀 데일리</td><td>PWRRUN PB</td><td>18.9만</td><td>241g</td><td>무플레이트 데일리 스피드</td></tr>
     <tr><td><a href="/shoes/saucony-omni-st-23"><strong>옴니 ST 23</strong></a></td><td>최상급 안정화</td><td>PWRRUN PB + PWRRUN + TPU 프레임</td><td>19.9만</td><td>286g</td><td>TPU 스태빌리티 프레임으로 미드풋 지지</td></tr>
     <tr><td><a href="/shoes/saucony-triumph-24"><strong>트라이엄프 24</strong></a></td><td>맥스 쿠션</td><td>incrediLUX (A-TPU)</td><td>20.9만</td><td>258g</td><td>신폼으로 스택↑ 무게↓</td></tr>
     <tr><td><a href="/shoes/saucony-hurricane-26"><strong>허리케인 26</strong></a></td><td>맥스쿠션 안정화</td><td>IncrediLux + PWRRUN 크래들</td><td>20.9만</td><td>272g</td><td>높은 스택에 가벼워진 안정화</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5"><strong>엔돌핀 스피드 5</strong></a></td><td>무카본 슈퍼트레이너</td><td>PWRRUN PB + 나일론</td><td>21.9만</td><td>238g</td><td>73% 리턴 20만대, 갓신발</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-trainer"><strong>엔돌핀 트레이너</strong></a></td><td>카본 슈퍼트레이너</td><td>IncrediRUN + PWRRUN</td><td>21.9만</td><td>285g</td><td>IncrediRUN 매일 훈련에</td></tr>
     <tr><td><a href="/shoes/saucony-xodus-ultra-4"><strong>엑소더스 울트라 4</strong></a></td><td>울트라 트레일</td><td>PWRRUN PB + PWRRUN 프레임</td><td>21.9만</td><td>309g</td><td>장거리 맥스쿠션 트레일</td></tr>
-    <tr><td><a href="/shoes/saucony-paramount-max"><strong>파라마운트 맥스</strong></a></td><td>브랜드 최대 쿠션</td><td>incrediRUN 풀렝스</td><td>25.9만</td><td>302g</td><td>엘리트 계열 폼을 데일리용으로</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5"><strong>엔돌핀 프로 5</strong></a></td><td>카본 레이싱</td><td>PWRRUN HG + PB · 카본</td><td>29.9만</td><td>206g</td><td>슬롯 카본, 검증된 장거리</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-elite-3"><strong>엔돌핀 엘리트 3</strong></a></td><td>최상위 레이싱</td><td>IncrediRUN TPEE · 카본</td><td>36.9만</td><td>207g</td><td>안정성·토박스를 손본 엘리트 신형</td></tr>
+    <tr><td><a href="/shoes/saucony-paramount-max"><strong>파라마운트 맥스</strong></a></td><td>브랜드 최대 쿠션</td><td>incrediRUN 풀렝스</td><td>25.9만</td><td>272g</td><td>엘리트 계열 폼을 데일리용으로</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5"><strong>엔돌핀 프로 5</strong></a></td><td>카본 레이싱</td><td>PWRRUN HG + PB · 카본</td><td>29.9만</td><td>215g</td><td>슬롯 카본, 검증된 장거리</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-elite-3"><strong>엔돌핀 엘리트 3</strong></a></td><td>최상위 레이싱</td><td>IncrediRUN TPEE · 카본</td><td>36.9만</td><td>210g</td><td>안정성을 손본 엘리트 신형(토박스는 좁음)</td></tr>
   </tbody>
 </table>
 
@@ -2612,10 +2612,10 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>🟢 첫 사코니·만능 데일리</strong> → <a href="/shoes/saucony-ride-19">라이드 19</a>(17.9만). 재고가 있으면 전작 <a href="/shoes/saucony-ride-18">라이드 18</a>(15.9만)도 가성비. 둘의 차이는 <a href="/blog/saucony-ride-18-vs-19-comparison">라이드 18 vs 19</a>에.</li>
   <li><strong>🦶 평발·안정</strong> → 가성비 <a href="/shoes/saucony-guide-19">가이드 19</a>(17.9만, 카야노 33보다 2만원 낮음), 쿠션까지 챙기면 <a href="/shoes/saucony-hurricane-26">허리케인 26</a>(20.9만), 미드풋을 단단히 받치는 구조는 <a href="/shoes/saucony-omni-st-23">옴니 ST 23</a>(19.9만). 상세는 <a href="/blog/saucony-guide-19-review">가이드 19</a>·<a href="/blog/saucony-hurricane-26-review">허리케인 26</a>·<a href="/blog/saucony-omni-st-23-review">옴니 ST 23</a> 리뷰에, 다른 브랜드 안정화 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
-  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>(20.9만, 258g). 쿠션을 끝까지 올리려면 <a href="/shoes/saucony-paramount-max">파라마운트 맥스</a>(25.9만, 대신 302g). 공식몰에 남은 전작 <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>(19.9만)은 PEBA 계열 PWRRUN PB 쿠션. 상세는 <a href="/blog/saucony-triumph-24-review">트라이엄프 24 리뷰</a>·<a href="/blog/saucony-paramount-max-review">파라마운트 맥스 리뷰</a>에.</li>
+  <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>(20.9만, 258g). 쿠션을 끝까지 올리려면 <a href="/shoes/saucony-paramount-max">파라마운트 맥스</a>(25.9만, 대신 272g — RunRepeat 실측, 브랜드 공식 302g). 공식몰에 남은 전작 <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>(19.9만)은 PEBA 계열 PWRRUN PB 쿠션. 상세는 <a href="/blog/saucony-triumph-24-review">트라이엄프 24 리뷰</a>·<a href="/blog/saucony-paramount-max-review">파라마운트 맥스 리뷰</a>에.</li>
   <li><strong>⚡ 카본 없이 빠른 만능</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 데일리부터 템포·롱런까지 한 켤레로(아래 5번). 6세대는 한국 정가 미발표.</li>
   <li><strong>🏃 카본 훈련+대회</strong> → <a href="/shoes/saucony-endorphin-trainer">엔돌핀 트레이너</a>(IncrediRUN 슈퍼트레이너).</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(검증된 장거리). 전작과의 세대 차이는 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5</a>에. 기록 끝장이면 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>(36.9만) — 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(33.9만, RunRepeat 실측 에너지 리턴 80.6%)의 IncrediRUN을 잇고 안정성·토박스를 손봤습니다(<a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a>).</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(검증된 장거리). 전작과의 세대 차이는 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5</a>에. 기록 끝장이면 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>(36.9만) — 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(33.9만, RunRepeat 실측 에너지 리턴 80.6%)의 IncrediRUN을 잇고 안정성을 손봤습니다(토박스는 실측 71.8mm로 여전히 좁음, <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a>).</li>
   <li><strong>⛰️ 트레일</strong> → 근교 산길은 <a href="/shoes/saucony-peregrine-16">페레그린 16</a>(17.9만, Vibram Megagrip), 장거리·울트라는 <a href="/shoes/saucony-xodus-ultra-4">엑소더스 울트라 4</a>(21.9만). 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에.</li>
 </ul>
 
@@ -2636,24 +2636,24 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>정리하면 — <strong>데일리면 아주라, 카본 없이 만능이면 스피드, 훈련+대회 카본이면 트레이너, 대회 전용이면 프로, 기록 끝장이면 엘리트</strong>입니다. 특히 <strong>엔돌핀 스피드 5</strong>는 나일론 플레이트로 카본값 없이 에너지 리턴 73.2%를 21.9만원에 냅니다 — "갓신발"이라는 별명이 붙은 이유입니다. 엔돌핀만 더 깊게 보려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요.</p>
+<p>정리하면 — <strong>데일리면 아주라, 카본 없이 만능이면 스피드, 훈련+대회 카본이면 트레이너, 대회 전용이면 프로, 기록 끝장이면 엘리트</strong>입니다. 특히 <strong>엔돌핀 스피드 5</strong>는 나일론 플레이트로 카본값 없이 에너지 리턴 힐 73.2%·전족부 78.2%를 21.9만원에 냅니다 — "갓신발"이라는 별명이 붙은 이유입니다. 엔돌핀만 더 깊게 보려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요.</p>
 
 <h2>6. 발볼 — 사코니는 대체로 무난</h2>
 
-<p>사코니는 대부분 <strong>표준 토박스</strong>라 발볼 넓은 한국 러너에게도 무난한 편입니다. 특히 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감까지 좋아요.</p>
+<p>사코니는 데일리·안정화 라인 대부분이 <strong>표준 토박스에 와이드 옵션</strong>까지 있어 발볼 넓은 한국 러너에게도 무난한 편입니다. 다만 레이싱·경량·트레일 일부는 실측 토박스가 좁습니다. 특히 가이드 19는 전족부 플랫폼이 실측 120mm로 넓어 안정감까지 좋아요.</p>
 
 <table>
   <thead>
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>와이드 옵션 있음</strong></td><td>라이드 18·19 · 가이드 18·19 · 트라이엄프 23·24 · 허리케인 25·26 · 옴니 ST 23 · 페레그린 16</td></tr>
-    <tr><td><strong>표준 (무난)</strong></td><td>킨바라 16 · 엔돌핀 스피드 5·아주라 · 엔돌핀 프로 4(실측 72.5mm) · 파라마운트 맥스(넉넉한 편, 국내 와이드 없음) · 엑소더스 울트라 4(국내 와이드 없음) · 엔돌핀 엘리트 3(전작보다 넓힌 직각형 토박스 — 실측 전 추정)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 5(실측 69.3mm) · 엔돌핀 트레이너(실측 70.1mm) · 엔돌핀 엘리트 2(전작 레이싱)</td></tr>
+    <tr><td><strong>와이드 옵션 있음</strong></td><td>라이드 18·19 · 가이드 18·19 · 트라이엄프 23·24(표준 폭은 실측 71.4mm로 좁은 편) · 허리케인 25·26 · 옴니 ST 23 · 페레그린 16(표준 폭 실측 70.3mm) · 엔돌핀 스피드 5</td></tr>
+    <tr><td><strong>표준 (무난)</strong></td><td>엔돌핀 아주라(실측 72.2mm) · 엔돌핀 프로 4(실측 72.5mm)</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>엔돌핀 프로 5(실측 69.3mm) · 엔돌핀 트레이너(실측 70.1mm) · 엔돌핀 엘리트 2(전작 레이싱) · 엔돌핀 엘리트 3(실측 71.8mm) · 킨바라 16(실측 70.8mm) · 파라마운트 맥스(실측 70.4mm, 국내 와이드 없음) · 엑소더스 울트라 4(실측 71.6mm, 국내 와이드 없음)</td></tr>
   </tbody>
 </table>
 
-<p>데일리·안정화는 와이드까지 있어 발볼 걱정이 적고, 전작 카본 레이서(엔돌핀 프로 4·엘리트 2)만 좁으니 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+<p>데일리·안정화는 와이드까지 있어 발볼 걱정이 적고, 와이드 없이 좁은 모델(엔돌핀 프로 5·엘리트 2·엘리트 3·트레이너, 킨바라 16, 파라마운트 맥스, 엑소더스 울트라 4)은 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -2684,7 +2684,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '하이퍼워프는 웨이브랑 뭐가 다른가요?', answer: '하이퍼워프(HyperWarp)는 미즈노의 신세대 카본 슈퍼슈즈 라인입니다. 전통 Wave 플레이트 대신 카본 플레이트와 PEBA 폼을 넣어 슈퍼슈즈 경쟁에 본격 참전한 모델이에요. 즉 "웨이브"는 안정·데일리의 전통, "하이퍼워프"는 레이싱 최상위 신세대라고 보면 됩니다.' },
       { question: '하이퍼워프 퓨어·엘리트·프로는 뭐가 다른가요?', answer: '거리와 용도로 갈립니다. 퓨어는 139g 극한 경량으로 5K·10K 단거리 특화(최고가 30.9만), 엘리트는 170g으로 풀마라톤 레이스용, 프로는 201g 슈퍼트레이너로 훈련+대회 겸용입니다. 단거리 PB면 퓨어, 풀코스 레이스면 엘리트, 카본 훈련까지 겸하면 프로입니다.' },
       { question: '미즈노 안정화는 인스파이어랑 호라이즌 중 뭘 사야 하나요?', answer: '웨이브 인스파이어 21(15.9만)은 미즈노 안정화 중 가장 저렴한 가성비 모델, 웨이브 호라이즌 8(17.9만)은 미디얼 러버월과 Wave로 시장 최강 수준의 과내전 제어를 제공하는 프리미엄입니다. 가벼운 지지면 인스파이어, 심한 과내전·강한 교정이면 호라이즌입니다. 둘 다 와이드 옵션이 있습니다.' },
-      { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 후속 라이더 30은 아직 랩 실측이 없어 폭 평가가 갈립니다(Believe in the Run은 좁은 편, Road Trail Run은 볼륨이 큰 편으로 평가). 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
+      { question: '미즈노는 발볼 넓은 한국 러너에게 맞나요?', answer: '의외로 잘 맞습니다. 일본 브랜드라 좁을 것 같지만, 웨이브 라이더 29는 토박스가 76.7mm로 넓고 인스파이어·호라이즌은 와이드 옵션이 있어요. 후속 라이더 30은 랩 토박스가 73.3mm로 평균 수준이라 29보다 좁습니다(리뷰어 평가는 Believe in the Run 좁은 편, Road Trail Run 볼륨이 큰 편으로 갈림). 데일리·안정화 라인은 발볼 넓은 러너에게 좋은 선택입니다. 다만 하이퍼워프 같은 카본 레이싱은 좁으니 주의하세요.' },
     ],
     content: `
 <div class="tldr">
@@ -2754,9 +2754,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/mizuno-wave-inspire-21"><strong>웨이브 인스파이어 21</strong></a></td><td>전작 가성비 안정화</td><td>Enerzy + NXT · Wave</td><td>15.9만</td><td>286g</td><td>미즈노 최저가 안정화, 와이드 옵션</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rider-29"><strong>웨이브 라이더 29</strong></a></td><td>데일리 만능(전작)</td><td>Enerzy NXT · Wave</td><td>16.9만</td><td>258g</td><td>30의 전작, 76.7mm 넓은 토박스</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-horizon-8"><strong>웨이브 호라이즌 8</strong></a></td><td>프리미엄 안정화</td><td>Enerzy NXT + Enerzy · Wave</td><td>17.9만</td><td>323g</td><td>미디얼 러버월, 최강 과내전 제어</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-rider-30"><strong>웨이브 라이더 30</strong></a></td><td>데일리 만능</td><td>Enerzy NXT 듀얼레이어 · 풀렝스 Wave</td><td>17.9만</td><td>267g</td><td>30세대 대개편, 힐 42.5mm(공식)로 스택 상승</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-rider-30"><strong>웨이브 라이더 30</strong></a></td><td>데일리 만능</td><td>Enerzy NXT 듀얼레이어 · 풀렝스 Wave</td><td>17.9만</td><td>266g</td><td>30세대 대개편, 힐 42.5mm(공식)로 스택 상승</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-2"><strong>웨이브 리벨리온 플래시 2</strong></a></td><td>미드풋 템포(전작)</td><td>Enerzy Lite+ (PEBA)</td><td>18.9만</td><td>239g</td><td>극단적 힐 베벨 로커</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>290g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
+    <tr><td><a href="/shoes/mizuno-wave-sky-9"><strong>웨이브 스카이 9</strong></a></td><td>맥스 쿠션</td><td>Enerzy NXT (질소)</td><td>18.9만</td><td>295g</td><td>44mm 질소 폼, 구름 위 러닝</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-rebellion-flash-3"><strong>웨이브 리벨리온 플래시 3</strong></a></td><td>미드풋 템포</td><td>Enerzy XP (TPEE) + NXT</td><td>19.9만</td><td>244g</td><td>TPEE 듀얼폼, 플래시 2 진화형</td></tr>
     <tr><td><a href="/shoes/mizuno-neo-vista-3"><strong>네오 비스타 3</strong></a></td><td>플레이트 쿠션 트레이너</td><td>Enerzy NXT + 유리섬유 플레이트</td><td>21.9만</td><td>266g</td><td>고스택 극쿠션, 카본 없는 슈퍼트레이너</td></tr>
     <tr><td><a href="/shoes/mizuno-hyperwarp-pro"><strong>하이퍼워프 프로</strong></a></td><td>슈퍼트레이너</td><td>Enerzy XP + 카본</td><td>24.9만</td><td>201g</td><td>39mm, 훈련+대회 겸용</td></tr>
@@ -2770,7 +2770,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
 <ul>
-  <li><strong>🟢 첫 미즈노·만능 데일리</strong> → <a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a>. 30세대에서 스택·폼·플레이트가 모두 바뀌었고, 아직 랩 실측이 없어 일부 수치는 공식 스펙 기준입니다. 넓은 토박스(76.7mm)가 실측으로 확인된 쪽은 전작 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>이니 발볼이 가장 걱정이면 29 재고도 함께 보세요. 두 세대 차이는 <a href="/blog/mizuno-wave-rider-29-vs-30-comparison-2026">라이더 29 vs 30 비교</a>에 있습니다.</li>
+  <li><strong>🟢 첫 미즈노·만능 데일리</strong> → <a href="/shoes/mizuno-wave-rider-30">웨이브 라이더 30</a>. 30세대에서 스택·폼·플레이트가 모두 바뀌었고, 랩 토박스는 73.3mm로 평균 수준입니다. 넓은 토박스(76.7mm)가 실측으로 확인된 쪽은 전작 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더 29</a>이니 발볼이 가장 걱정이면 29 재고도 함께 보세요. 두 세대 차이는 <a href="/blog/mizuno-wave-rider-29-vs-30-comparison-2026">라이더 29 vs 30 비교</a>에 있습니다.</li>
   <li><strong>🦶 평발·안정(가성비)</strong> → <a href="/shoes/mizuno-wave-inspire-21">웨이브 인스파이어 21</a>(15.9만). 강한 과내전이면 <a href="/shoes/mizuno-wave-horizon-8">웨이브 호라이즌 8</a>(미디얼 러버월). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
   <li><strong>☁️ 푹신한 맥스 쿠션</strong> → <a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a>(44mm 질소 폼).</li>
   <li><strong>🛋️ 푹신한데 조금 더 굴러가게</strong> → <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>(유리섬유 플레이트 고스택, 21.9만). 상세 평가는 <a href="/blog/mizuno-neo-vista-3-review-2026">네오 비스타 3 리뷰</a>에 있습니다.</li>
@@ -2806,12 +2806,12 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>넓음·와이드 (한국 친화)</strong></td><td>웨이브 라이더 29(76.7mm) · 인스파이어(와이드 옵션, 표준폭 토박스는 73.5mm로 평균 수준) · 호라이즌(와이드)</td></tr>
-    <tr><td><strong>표준</strong></td><td>웨이브 라이더 30(랩 실측 전, 와이드 옵션 있음) · 웨이브 스카이 · 리벨리온 플래시 · 네오 비스타 3(71.7mm) · 하이퍼워프 프로</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
+    <tr><td><strong>표준</strong></td><td>웨이브 라이더 30(73.3mm, 와이드 옵션 있음) · 리벨리온 플래시 · 네오 비스타 3(71.7mm) · 하이퍼워프 프로</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>웨이브 스카이 9(70.4mm, 와이드 옵션 있음) · 하이퍼워프 퓨어 · 엘리트(레이싱)</td></tr>
   </tbody>
 </table>
 
-<p>데일리는 라이더(넓은 토박스 실측은 29 기준), 안정화는 인스파이어·호라이즌이 발볼 걱정 없이 무난합니다. 레이싱(하이퍼워프 퓨어·엘리트)만 좁으니 발볼 넓으면 반 치수 크게 신으세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+<p>데일리는 라이더(넓은 토박스 실측은 29 기준), 안정화는 인스파이어·호라이즌이 발볼 걱정 없이 무난합니다. 레이싱(하이퍼워프 퓨어·엘리트)은 좁으니 발볼 넓으면 반 치수 크게 신으세요. 맥스 쿠션 웨이브 스카이 9도 토박스가 좁은 편(70.4mm)이라 발볼이 넓다면 와이드 버전을 고르세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
 
 <h2>한 걸음 더</h2>
 
@@ -2842,7 +2842,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '"엘리트"랑 "퓨어"는 무슨 뜻인가요?', answer: '"엘리트(Elite)"가 붙으면 카본 플레이트 레이싱화입니다(디비에이트 엘리트, 패스트알 엘리트). "퓨어(Pure)"는 반대로 카본을 뺀 100% PEBA 슈퍼폼 버전이에요(디비에이트 퓨어). 대회용은 엘리트, 카본 없이 부드럽게 빠른 훈련은 퓨어로 기억하면 됩니다.' },
       { question: '디비에이트 나이트로 종류가 너무 많은데 차이가 뭔가요?', answer: '디비에이트는 푸마의 카본/슈퍼트레이너 핵심 라인이라 변형이 많습니다. 퓨어(무카본 100% PEBA)·3·4(카본 슈퍼트레이너)·엘리트 3·4(카본 레이싱)로 나뉘어요. 빠른 훈련이면 퓨어나 디비에이트 3·4, 대회면 엘리트, 둘 다 잡고 싶으면 와이드 옵션까지 생긴 디비에이트 4입니다.' },
       { question: '푸마 러닝화는 가성비가 좋나요?', answer: '네, 가성비가 푸마의 핵심 강점입니다. 후발 주자로서 비슷한 성능을 더 싸게 내놓는 전략이에요. 벨로시티 나이트로 4는 17.9만원 가성비 데일리, 디비에이트 엘리트는 28.9만원으로 베이퍼플라이(30.9만원)보다 저렴한 카본 레이싱입니다. 카본 슈퍼트레이너(디비에이트 3·4)도 경쟁작보다 쌉니다.' },
-      { question: '푸마는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 벨로시티 나이트로 4(와이드 옵션 있음)와 레이싱(엘리트 3·패스트알)은 좁은 편이라 주의가 필요하고, 디비에이트 나이트로 4·매그니파이·매그맥스는 표준입니다. 디비에이트는 3세대까지 앞볼이 좁은 편이었으나 4세대에서 와이드 옵션이 추가됐습니다. 발볼이 많이 넓으면 표준 모델 중에서도 반 치수 크게 신으세요.' },
+      { question: '푸마는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 벨로시티 나이트로 4(와이드 옵션 있음)와 레이싱(엘리트 3·패스트알)은 좁은 편이라 주의가 필요하고, 디비에이트 나이트로 4(와이드 상품 별도)·매그맥스 나이트로 2도 좁은 편입니다. 매그니파이는 표준입니다. 디비에이트는 3세대까지 앞볼이 좁은 편이었으나 4세대에서 와이드 옵션이 추가됐습니다. 발볼이 많이 넓으면 표준 모델 중에서도 반 치수 크게 신으세요.' },
     ],
     content: `
 <div class="tldr">
@@ -2915,7 +2915,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/puma-magnify-nitro-3"><strong>매그니파이 나이트로 3</strong></a></td><td>맥스 쿠션</td><td>Nitro Foam (PEBA)</td><td>19.9만</td><td>264g</td><td>PEBA 맥시멀, 20만↓ 관절 보호</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-3"><strong>디비에이트 나이트로 3</strong></a></td><td>카본 슈퍼트레이너</td><td>Nitro + Nitro Elite + 카본</td><td>21.9만</td><td>268g</td><td>21.9만 카본, 마하X보다 절약</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-4"><strong>디비에이트 나이트로 4</strong></a></td><td>카본 슈퍼트레이너 신상</td><td>Dual NITROFOAM + 카본</td><td>21.9만</td><td>250g</td><td>v3보다 넓어진 핏, 와이드 추가</td></tr>
-    <tr><td><a href="/shoes/puma-magmax-nitro-2"><strong>매그맥스 나이트로 2</strong></a></td><td>맥시멀 쿠션</td><td>Nitro Elite Foam</td><td>23.9만</td><td>268g</td><td>엘리트 폼 + 훈련용 내구성</td></tr>
+    <tr><td><a href="/shoes/puma-magmax-nitro-2"><strong>매그맥스 나이트로 2</strong></a></td><td>맥시멀 쿠션</td><td>NITROFOAM</td><td>23.9만</td><td>269g</td><td>플레이트 없는 고스택 쿠션 + 훈련용 내구성</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-elite-3"><strong>디비에이트 엘리트 3</strong></a></td><td>카본 레이싱</td><td>Nitro Elite (A-TPU) + 카본</td><td>28.9만</td><td>204g</td><td>77% 리턴, 베이퍼플라이 킬러</td></tr>
     <tr><td><a href="/shoes/puma-deviate-nitro-elite-4"><strong>디비에이트 엘리트 4</strong></a></td><td>카본 레이싱 신상</td><td>NITROFOAM Elite 듀얼 + 카본</td><td>28.9만</td><td>170g</td><td>170g 초경량, 부드러운 ATPU</td></tr>
     <tr><td><a href="/shoes/puma-fast-r-nitro-elite-3"><strong>패스트알 엘리트 3</strong></a></td><td>최상위 레이싱</td><td>Nitro Elite (A-TPU) + 카본</td><td>37.9만</td><td>173g</td><td>분리형, 알파플라이에 도전</td></tr>
@@ -2963,8 +2963,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>표준 (무난)</strong></td><td>디비에이트 나이트로 3·4 · 엘리트 4 · 매그니파이 · 매그맥스 · 디비에이트 퓨어</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>벨로시티 나이트로 4(와이드 옵션 있음) · 디비에이트 엘리트 3 · 패스트알 엘리트 3</td></tr>
+    <tr><td><strong>표준 (무난)</strong></td><td>엘리트 4 · 매그니파이 · 디비에이트 퓨어</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>벨로시티 나이트로 4(와이드 옵션 있음) · 디비에이트 나이트로 3 · 디비에이트 나이트로 4(와이드 상품 별도) · 매그맥스 나이트로 2 · 디비에이트 엘리트 3 · 패스트알 엘리트 3</td></tr>
   </tbody>
 </table>
 
@@ -2999,7 +2999,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: 'CloudTec(클라우드텍)이 뭔가요?', answer: '온의 정체성인 밑창 기술입니다. 바닥에 구멍 뚫린 "구름(Cloud)" 포드가 줄지어 있어, 착지할 때 눌리며 충격을 흡수하고 발을 굴려줍니다. 이 독특한 착지감이 온의 시그니처예요. 호불호가 갈리지만 한 번 적응하면 특유의 굴러가는 느낌을 좋아하는 러너가 많습니다.' },
       { question: '클라우드몬스터 하이퍼랑 라이트스프레이는 뭐가 다른가요?', answer: '둘 다 클라우드몬스터의 상위 버전입니다. 하이퍼는 Pebax(PEBA) 폼을 넣어 가볍고 반발이 좋은 무플레이트 슈퍼트레이너(RunRepeat US 9 실측 258~264g), 라이트스프레이는 거기에 로봇이 분사해 만든 초경량 어퍼를 더해 205g까지 줄인 최상위 버전입니다. 가격은 하이퍼 25.9만, 라이트스프레이 31.9만입니다.' },
       { question: '온에도 안정화 러닝화가 있나요?', answer: '클라우드러너 3(19.9만)와 여기에 Helion HF 폼을 더해 쿠션을 올린 클라우드러너 3 맥스(21.9만)가 안정화로 분류됩니다. 다만 아식스 카야노 같은 강한 교정 방식이 아니라, 힐 가이던스로 뒤꿈치를 안정적으로 잡아주는 가벼운 지지에 가깝습니다. 러닝과 워킹 겸용으로 좋지만, 심한 평발·과내전이라면 카야노·아드레날린 같은 전문 안정화를 함께 보세요.' },
-      { question: '온은 발볼 넓은 한국 러너에게 맞나요?', answer: '주의가 필요합니다. 온은 토박스가 좁은 편이고 와이드 옵션을 거의 제공하지 않습니다. 3세대(클라우드몬스터 3 등)에서 핏이 다소 넓어졌지만, 발볼이 많이 넓다면 반 치수 크게 신거나 토박스가 넉넉한 아식스·뉴발란스를 함께 고려하세요.' },
+      { question: '온은 발볼 넓은 한국 러너에게 맞나요?', answer: '주의가 필요합니다. 온은 토박스가 좁은 편이고 와이드 옵션을 거의 제공하지 않습니다. 3세대 클라우드몬스터 3는 RunRepeat 실측 토박스가 71.0mm로 전작(74.5mm)보다 오히려 좁아졌으니, 발볼이 많이 넓다면 반 치수 크게 신거나 토박스가 넉넉한 아식스·뉴발란스를 함께 고려하세요.' },
     ],
     content: `
 <div class="tldr">
@@ -3070,12 +3070,12 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/on-cloudrunner-2"><strong>클라우드러너 2</strong></a></td><td>입문 데일리</td><td>Helion + CloudTec</td><td>18.9만</td><td>275g</td><td>힐 카운터 최강 안정 (단종)</td></tr>
     <tr><td><a href="/shoes/on-cloudsurfer-2"><strong>클라우드서퍼 2</strong></a></td><td>입문 쿠션</td><td>Helion HF + CloudTec Phase</td><td>19.9만</td><td>254g</td><td>세련된 전환, On 입문 첫 선택</td></tr>
-    <tr><td><a href="/shoes/on-cloudrunner-3"><strong>클라우드러너 3</strong></a></td><td>안정화</td><td>Helion + CloudTec</td><td>19.9만</td><td>317g</td><td>힐 가이던스, 러닝+워킹 겸용</td></tr>
+    <tr><td><a href="/shoes/on-cloudrunner-3"><strong>클라우드러너 3</strong></a></td><td>안정화</td><td>Helion + CloudTec</td><td>19.9만</td><td>298g</td><td>힐 가이던스, 러닝+워킹 겸용</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-2"><strong>클라우드몬스터 2</strong></a></td><td>전작 맥시멀 쿠션</td><td>Helion HF + CloudTec</td><td>21.9만</td><td>292g</td><td>더블 CloudTec 독특한 착지감</td></tr>
     <tr><td><a href="/shoes/on-cloudsurfer-max"><strong>클라우드서퍼 맥스</strong></a></td><td>맥시멀 쿠션</td><td>Helion + CloudTec Phase</td><td>21.9만</td><td>292g</td><td>안정적 CloudTec, 미드풋 친화</td></tr>
-    <tr><td><a href="/shoes/on-cloudflow-5"><strong>클라우드플로우 5</strong></a></td><td>경량 스피드</td><td>Helion + Speedboard</td><td>21.9만</td><td>278g</td><td>Speedboard 스피드 훈련 전용</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5"><strong>클라우드플로우 5</strong></a></td><td>경량 스피드</td><td>Helion + Speedboard</td><td>21.9만</td><td>271g</td><td>Speedboard 스피드 훈련 전용</td></tr>
     <tr><td><a href="/shoes/on-cloudrunner-3-max"><strong>클라우드러너 3 맥스</strong></a></td><td>쿠션 안정화</td><td>Helion HF + Helion</td><td>21.9만</td><td>330g</td><td>러너 3의 지지 구조에 HF 폼으로 쿠션 강화</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3"><strong>클라우드몬스터 3</strong></a></td><td>맥시멀 쿠션 신상</td><td>Helion HF + CloudTec</td><td>22.9만</td><td>295g</td><td>넓어진 핏·강한 록커, easy run</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3"><strong>클라우드몬스터 3</strong></a></td><td>맥시멀 쿠션 신상</td><td>Helion HF + CloudTec</td><td>22.9만</td><td>295g</td><td>강한 록커, easy run (토박스 71.0mm로 좁아짐)</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-hyper"><strong>클라우드몬스터 하이퍼</strong></a></td><td>전작 슈퍼트레이너</td><td>Helion HF (Pebax)</td><td>25.9만</td><td>258g</td><td>몬스터 2에서 34g 뺀 경량판</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper"><strong>클라우드몬스터 3 하이퍼</strong></a></td><td>슈퍼트레이너 신상</td><td>Helion HF + Helion</td><td>25.9만</td><td>264g</td><td>무플레이트, 장거리·템포 균형</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray"><strong>몬스터 3 하이퍼 라이트스프레이</strong></a></td><td>초경량 슈퍼트레이너</td><td>Helion HF + Helion 이중밀도</td><td>31.9만</td><td>205g</td><td>로봇이 만든 어퍼, 205g 초경량</td></tr>
@@ -3090,7 +3090,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>🟢 첫 온·부드러운 쿠션</strong> → <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>. CloudTec Phase의 세련된 전환감, 입문 첫 선택. <a href="/blog/on-cloudsurfer-2-review-2026">클라우드서퍼 2 리뷰</a> 참고.</li>
-  <li><strong>☁️ 맥시멀 쿠션·회복런</strong> → <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>. 베스트셀러, 넓어진 핏. <a href="/blog/on-cloudmonster-3-review-2026">몬스터 3 리뷰</a>·<a href="/blog/on-cloudmonster-2-vs-3-comparison">몬스터 2 vs 3</a>에서 차이를 확인하세요.</li>
+  <li><strong>☁️ 맥시멀 쿠션·회복런</strong> → <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>. 베스트셀러, 강한 록커(토박스는 실측 71.0mm로 좁은 편). <a href="/blog/on-cloudmonster-3-review-2026">몬스터 3 리뷰</a>·<a href="/blog/on-cloudmonster-2-vs-3-comparison">몬스터 2 vs 3</a>에서 차이를 확인하세요.</li>
   <li><strong>🦶 안정·워킹 겸용</strong> → <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>. 힐 가이던스 안정화(강한 교정은 아님). <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3 리뷰</a>. 쿠션까지 원하면 <a href="/shoes/on-cloudrunner-3-max">클라우드러너 3 맥스</a>(21.9만) — <a href="/blog/on-cloudrunner-3-max-review">3 맥스 후기</a>에서 차이를 봅니다. 다른 브랜드 안정화는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단</a>에.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>. 무플레이트 슈퍼트레이너. <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼 리뷰</a> 참고.</li>
   <li><strong>🪶 가벼운 게 최우선</strong> → <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이</a>(205g). 로봇 어퍼의 최상위. <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 리뷰</a>에.</li>
@@ -3106,8 +3106,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>성격</th><th>무게</th><th>가격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a></td><td>전작 맥시멀(토박스 좁음)</td><td>292g</td><td>21.9만</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>신형, 넓어진 핏·강한 록커</td><td>295g</td><td>22.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-2">클라우드몬스터 2</a></td><td>전작 맥시멀(토박스 74.5mm 표준)</td><td>292g</td><td>21.9만</td></tr>
+    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>신형, 강한 록커(토박스 71.0mm로 좁아짐)</td><td>295g</td><td>22.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-hyper">클라우드몬스터 하이퍼</a></td><td>전작 PEBA 경량 슈퍼트레이너</td><td>258g</td><td>25.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>신형 무플레이트 슈퍼트레이너</td><td>264g</td><td>25.9만</td></tr>
     <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray">3 하이퍼 라이트스프레이</a></td><td>로봇 어퍼 초경량 최상위</td><td>205g</td><td>31.9만</td></tr>
@@ -3118,11 +3118,11 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>6. 발볼 — 온은 좁은 편, 한국 러너 주의</h2>
 
-<p>온의 약점은 <strong>좁은 토박스</strong>입니다. 와이드 옵션도 거의 없어 발볼 넓은 한국 러너는 주의해야 해요. 3세대에서 핏이 다소 넓어졌지만 여전히 넉넉하다고 보긴 어렵습니다.</p>
+<p>온의 약점은 <strong>좁은 토박스</strong>입니다. 와이드 옵션도 거의 없어 발볼 넓은 한국 러너는 주의해야 해요. 3세대 클라우드몬스터 3는 토박스가 오히려 좁아졌고(실측 74.5→71.0mm), 모델별 편차도 큽니다.</p>
 
 <ul>
-  <li><strong>그나마 넓어진 쪽</strong>: 클라우드몬스터 3(넓어진 핏), 클라우드서퍼 계열.</li>
-  <li><strong>좁은 편(주의)</strong>: 클라우드몬스터 2, 레이싱·하이퍼 라인. 특히 라이트스프레이 클라우드붐 스트라이크 2는 토박스 69.0mm에 끈이 없는 일체형 어퍼라 핏을 조절할 수 없습니다.</li>
+  <li><strong>그나마 넓은 쪽</strong>: 클라우드플로우 5(토박스 77.2mm 실측, 국내는 여성 모델만), 클라우드몬스터 2(74.5mm). 클라우드서퍼 2는 73.5mm로 평균 수준.</li>
+  <li><strong>좁은 편(주의)</strong>: 클라우드몬스터 3·클라우드러너 3(각 71.0mm), 클라우드서퍼 맥스(71.4mm). 특히 라이트스프레이 클라우드붐 스트라이크 2는 토박스 69.0mm에 끈이 없는 일체형 어퍼라 핏을 조절할 수 없습니다.</li>
   <li><strong>와이드 없음</strong>: 새로 나온 클라우드러너 3 맥스도 국내 와이드 옵션이 없습니다.</li>
 </ul>
 
@@ -3231,7 +3231,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>83% 에너지, 가성비 끝판왕</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-run"><strong>하이퍼부스트 런</strong></a></td><td>고반발 데일리</td><td>Hyperboost Pro</td><td>21.9만</td><td>247g</td><td>엣지의 폼을 힐 38.6mm 데일리 스택에, 전족 컨티넨탈 러버</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-edge"><strong>하이퍼부스트 엣지</strong></a></td><td>무플레이트 슈퍼트레이너</td><td>Hyperboost Pro</td><td>24.9만</td><td>247g</td><td>힐 44.6mm 고스택을 폼 하나로, 템포에 강함</td></tr>
-    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>265g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
+    <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>269g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4"><strong>아디오스 프로 4</strong></a></td><td>카본 레이싱</td><td>Lightstrike Pro + 5 로드</td><td>29.9만</td><td>200g</td><td>알파플라이보다 안정적인 서브3</td></tr>
   </tbody>
 </table>
@@ -3279,8 +3279,8 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>와이드 옵션 (그나마 낫다)</strong></td><td>슈퍼노바 라이즈 3(공식몰 와이드 판매) · 아디제로 SL2 · 슈퍼노바 라이즈 2(전작)</td></tr>
-    <tr><td><strong>표준</strong></td><td>보스턴 13 · Evo SL · 아그라빅 4 · 하이퍼부스트 런(토박스 73.6mm, 와이드 없음) · 하이퍼부스트 엣지(와이드 없음)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>아디오스 프로 4 · 아그라빅 스피드 울트라</td></tr>
+    <tr><td><strong>표준</strong></td><td>아그라빅 4 · 하이퍼부스트 런(토박스 73.6mm, 와이드 없음)</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>아디오스 프로 4 · 아그라빅 스피드 울트라 · 보스턴 13(70.6mm) · Evo SL(71.6mm) · 하이퍼부스트 엣지(71.4mm, 와이드 없음)</td></tr>
   </tbody>
 </table>
 
@@ -3393,15 +3393,15 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-ghost-17"><strong>고스트 17</strong></a></td><td>전작 데일리</td><td>DNA Loft v3</td><td>16.9만</td><td>289g</td><td>공식몰 아울렛 재고 — 할인 시 가성비</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3"><strong>고스트 맥스 3</strong></a></td><td>전작 맥스 쿠션</td><td>DNA Loft v3</td><td>17.9만</td><td>303g</td><td>119mm 광폭, 공식몰 아울렛 재고</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-4"><strong>고스트 맥스 4</strong></a></td><td>맥스 쿠션 데일리</td><td>DNA Loft v3</td><td>18.9만</td><td>286g</td><td>현행 고스트 맥스, 힐 충격흡수 145 SA의 단단한 보호</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>300g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25"><strong>아드레날린 GTS 25</strong></a></td><td>안정화</td><td>DNA Loft v3 + GuideRails</td><td>18.9만</td><td>295g</td><td>과내전 입문 정답, 카야노 절반가</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-22"><strong>글리세린 22</strong></a></td><td>프리미엄 쿠션</td><td>DNA Tuned</td><td>20.9만</td><td>293g</td><td>체중별 반응하는 고급 쿠션</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22"><strong>글리세린 GTS 22</strong></a></td><td>전작 프리미엄 안정화</td><td>DNA Tuned + GuideRails</td><td>20.9만</td><td>305g</td><td>글리세린 쿠션 + 안정화</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-23"><strong>글리세린 GTS 23</strong></a></td><td>프리미엄 안정화(신)</td><td>DNA Tuned(질소 주입) + GuideRails</td><td>20.9만</td><td>306g</td><td>22와 같은 값·비슷한 무게, 남녀 와이드·미디엄 판매(랩 미게시)</td></tr>
     <tr><td><a href="/shoes/brooks-hyperion-max-3"><strong>하이페리온 맥스 3</strong></a></td><td>슈퍼트레이너</td><td>DNA Gold (PEBA) + Flash</td><td>21.9만</td><td>283g</td><td>PEBA 첫 진성 슈퍼트레이너</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-max"><strong>글리세린 맥스</strong></a></td><td>맥시멀 쿠션</td><td>DNA Tuned</td><td>23.9만</td><td>305g</td><td>42mm·148 SA 역대 최강 충격흡수</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>312g</td><td>47mm 극강 맥시멀</td></tr>
+    <tr><td><a href="/shoes/brooks-glycerin-max-2"><strong>글리세린 맥스 2</strong></a></td><td>맥시멀 쿠션 신상</td><td>DNA Tuned</td><td>24.9만</td><td>318g</td><td>47mm 극강 맥시멀</td></tr>
     <tr><td><a href="/shoes/brooks-hyperion-elite-5"><strong>하이페리온 엘리트 5</strong></a></td><td>전작 카본 레이싱</td><td>DNA Gold (PEBA) + 카본</td><td>29.9만</td><td>204g</td><td>76.9% 에너지, 슈퍼슈즈</td></tr>
-    <tr><td><a href="/shoes/brooks-hyperion-elite-6"><strong>하이페리온 엘리트 6</strong></a></td><td>카본 레이싱(신)</td><td>DNA Gold (PEBA) + 카본</td><td>31.9만</td><td>198g</td><td>드롭 7mm로 낮춘 6세대, 5보다 2만원 비쌈(랩 미게시)</td></tr>
+    <tr><td><a href="/shoes/brooks-hyperion-elite-6"><strong>하이페리온 엘리트 6</strong></a></td><td>카본 레이싱(신)</td><td>DNA Gold (PEBA) + 카본</td><td>31.9만</td><td>193g</td><td>공식 드롭 7mm(랩 실측 10.6mm), 5보다 2만원 비쌈</td></tr>
   </tbody>
 </table>
 
@@ -3444,9 +3444,9 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>넓음 (와이드 친화)</strong></td><td>글리세린 맥스(랩 본문 "feels roomy")</td></tr>
-    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 18(국내 2E) · 고스트 17 · 고스트 맥스 3(전작, 73.4mm) · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 글리세린 맥스 2 · 아드레날린 GTS · 글리세린 GTS</td></tr>
-    <tr><td><strong>표준</strong></td><td>하이페리온 맥스 3</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>하이페리온 엘리트 5(레이싱)</td></tr>
+    <tr><td><strong>표준 (와이드 옵션 있음)</strong></td><td>고스트 17 · 고스트 맥스 3(전작, 73.4mm) · 고스트 맥스 4(71.3mm, 국내 와이드) · 글리세린 22 · 아드레날린 GTS · 글리세린 GTS</td></tr>
+    <tr><td><strong>표준</strong></td><td>글리세린 맥스 2(73.4mm, 한국 와이드 미판매) · 하이페리온 맥스 3</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>고스트 18(70.6mm, 국내 와이드 2E 있음) · 하이페리온 엘리트 6(70.3mm, 레이싱) · 하이페리온 엘리트 5(레이싱)</td></tr>
   </tbody>
 </table>
 
@@ -3480,8 +3480,8 @@ export const posts_2026_06: BlogPost[] = [
       { question: '호카는 왜 신발이 다 두꺼운가요?', answer: '호카는 "맥스 쿠션"의 원조 브랜드입니다. 두꺼운 스택(대부분 35~46mm)으로 무릎·관절 충격을 최대한 흡수하는 게 정체성이에요. 그런데 두꺼운데도 가벼운데, 비결이 두 가지입니다 — 가벼운 EVA 기반 폼과, 바닥을 둥글게 깎아 자연스럽게 굴러가게 하는 메타로커(MetaRocker) 지오메트리입니다.' },
       { question: '호카 모델명에 "X"가 붙으면 뭐가 다른가요?', answer: 'X는 퍼포먼스를 강화한 상위 시리즈입니다. 로켓 X·씨엘로 X·테크톤 X는 카본 플레이트가 들어간 레이싱화이고, 마하 X는 PEBA를 더한 슈퍼트레이너입니다. 일반 라인(클리프톤·본디·마하)이 데일리라면, X 시리즈는 대회·빠른 훈련용이라고 보면 됩니다.' },
       { question: '클리프톤이랑 본디는 뭐가 다른가요?', answer: '클리프톤은 가벼운 만능 데일리(275g), 본디는 최대 쿠션 끝판왕(303g)입니다. 매일 다양하게 쓸 거면 클리프톤, 무릎 보호와 푹신함이 최우선이면 본디입니다. 본디는 123mm 초광폭 플랫폼과 와이드 옵션으로 안정감도 더 좋습니다.' },
-      { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(299g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
-      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 본디·클리프톤·아라히는 표준 폭입니다. 반대로 마하 6(실측 70.1mm)·스피드고트 7(71.4mm)과 로켓 X 같은 레이싱은 좁은 편이니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
+      { question: '호카 안정화는 아라히랑 가비오타 중 뭘 사야 하나요?', answer: '아라히는 경량 안정화(259g, H-Frame)로 가볍게 지지받고 싶은 러너용, 가비오타는 맥스 쿠션 안정화(283g)로 든든한 지지와 두툼한 쿠션을 동시에 원하는 러너용입니다. 발볼이 넓다면 둘 다 와이드 옵션이 있는데, 가비오타가 기본 토박스도 더 넉넉합니다.' },
+      { question: '호카는 발볼 넓은 한국 러너에게 맞나요?', answer: '모델마다 다릅니다. 가비오타는 토박스가 넓은 편이라 발볼 넓은 러너에게 좋고, 클리프톤·아라히는 표준 폭, 본디 9는 좁은 편(실측 72.5mm)입니다. 반대로 마하 6(실측 70.1mm)·스피드고트 7(71.4mm)과 로켓 X 같은 레이싱은 좁은 편이니 주의하세요. 클리프톤·본디·마하 6·아라히·가비오타·스피드고트 같은 주력 데일리·트레일은 와이드 옵션이 있으니 발볼이 넓으면 와이드를 우선 확인하세요(마하 X·로켓 X·씨엘로 X·테크톤 X는 와이드 없음).' },
     ],
     content: `
 <div class="tldr">
@@ -3550,13 +3550,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/hoka-mach-6"><strong>마하 6</strong></a></td><td>경량 스피드 데일리</td><td>슈퍼크리티컬 EVA</td><td>18.5만</td><td>232g</td><td>36mm</td></tr>
     <tr><td><a href="/shoes/hoka-clifton-10"><strong>클리프톤 10</strong></a></td><td>입문·만능 데일리</td><td>CMEVA</td><td>19.9만</td><td>275g</td><td>44mm</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>CMEVA (소프트)</td><td>19.9만</td><td>259g</td><td>39mm</td></tr>
-    <tr><td><a href="/shoes/hoka-speedgoat-6"><strong>스피드고트 6</strong></a></td><td>만능 트레일 (전작)</td><td>CMEVA</td><td>20.5만</td><td>278g</td><td>40mm</td></tr>
+    <tr><td><a href="/shoes/hoka-speedgoat-6"><strong>스피드고트 6</strong></a></td><td>만능 트레일 (전작)</td><td>CMEVA</td><td>20.5만</td><td>278g</td><td>32mm</td></tr>
     <tr><td><a href="/shoes/hoka-speedgoat-7"><strong>스피드고트 7</strong></a></td><td>만능 트레일 (현행)</td><td>슈퍼크리티컬 EVA</td><td>21.9만*</td><td>281g</td><td>38mm</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9"><strong>본디 9</strong></a></td><td>맥스 쿠션 끝판</td><td>슈퍼크리티컬 EVA</td><td>22.9만</td><td>303g</td><td>41mm</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>EVA 듀얼</td><td>23.9만</td><td>299g</td><td>35mm</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>EVA 듀얼</td><td>23.9만</td><td>283g</td><td>36mm</td></tr>
     <tr><td><a href="/shoes/hoka-mach-x-3"><strong>마하 X 3</strong></a></td><td>슈퍼트레이너</td><td>PEBA + 슈퍼크리티컬</td><td>24.9만</td><td>264g</td><td>43mm</td></tr>
     <tr><td><a href="/shoes/hoka-rocket-x-3"><strong>로켓 X 3</strong></a></td><td>카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>29.9만</td><td>220g</td><td>40mm</td></tr>
-    <tr><td><a href="/shoes/hoka-cielo-x1"><strong>씨엘로 X1</strong></a></td><td>최상위 카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>32.9만</td><td>208g</td><td>46mm</td></tr>
+    <tr><td><a href="/shoes/hoka-cielo-x1"><strong>씨엘로 X1</strong></a></td><td>최상위 카본 레이싱</td><td>듀얼 PEBA + 카본</td><td>32.9만</td><td>208g</td><td>39mm</td></tr>
     <tr><td><a href="/shoes/hoka-tecton-x-3"><strong>테크톤 X 3</strong></a></td><td>카본 트레일 레이싱</td><td>듀얼 PEBA + 카본</td><td>33.9만</td><td>275g</td><td>38mm</td></tr>
   </tbody>
 </table>
@@ -3571,7 +3571,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>⚡ 가볍게·빠르게</strong> → <a href="/shoes/hoka-mach-6">마하 6</a>(232g). 통기성 최상, 데일리부터 템포까지.</li>
   <li><strong>🦶 평발·안정</strong> → 가벼운 <a href="/shoes/hoka-arahi-8">아라히 8</a> 또는 든든한 <a href="/shoes/hoka-gaviota-6">가비오타 6</a>(아래 5번 참고). 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에.</li>
   <li><strong>🏃 빠른 훈련(카본 없이)</strong> → <a href="/shoes/hoka-mach-x-3">마하 X 3</a>. PEBA 슈퍼트레이너로 템포·인터벌에.</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(220g) 또는 최상위 <a href="/shoes/hoka-cielo-x1">씨엘로 X1</a>(46mm 맥스 스택 카본).</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/hoka-rocket-x-3">로켓 X 3</a>(220g) 또는 최상위 <a href="/shoes/hoka-cielo-x1">씨엘로 X1</a>(브랜드 표기 46mm 스택 카본).</li>
   <li><strong>⛰️ 트레일</strong> → 만능 <a href="/shoes/hoka-speedgoat-7">스피드고트 7</a>(CMEVA를 슈퍼크리티컬 폼으로 바꿔 반발 강화, 와이드 옵션 유지) 또는 1.4만원 싼 전작 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(20.5만). 둘의 차이는 <a href="/blog/hoka-speedgoat-6-vs-7-comparison-2026">스피드고트 6 vs 7</a>에. 레이스용 카본은 <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>, 브랜드를 가로지른 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에.</li>
 </ul>
 
@@ -3585,7 +3585,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/hoka-arahi-8"><strong>아라히 8</strong></a></td><td>경량 안정화</td><td>259g</td><td>가볍게 지지받고 싶은 러너, 데일리</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>299g</td><td>지지 + 푹신함 둘 다, 발볼 넓은 러너</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6"><strong>가비오타 6</strong></a></td><td>맥스 쿠션 안정화</td><td>283g</td><td>지지 + 푹신함 둘 다, 발볼 넓은 러너</td></tr>
   </tbody>
 </table>
 
@@ -3597,7 +3597,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>클리프톤 10</strong>: 44mm 맥스 스택인데 <strong>275g</strong> — 경쟁 맥스 쿠션화보다 가볍습니다.</li>
-  <li><strong>씨엘로 X1</strong>: 46mm 카본 레이싱인데 <strong>208g</strong> — 두툼한 레이서.</li>
+  <li><strong>씨엘로 X1</strong>: 브랜드 표기 46mm 카본 레이싱인데 <strong>208g</strong> — 두툼한 레이서.</li>
   <li><strong>본디 9</strong>: 303g으로 가장 무겁지만, 그만큼 123mm 초광폭에 가장 든든한 안정감.</li>
 </ul>
 
@@ -3620,7 +3620,7 @@ export const posts_2026_06: BlogPost[] = [
     seoTitle: '아식스 러닝화 계급도 2026 — 입문·쿠션·안정화·카본 라인업',
     title: '아식스 러닝화 계급도 2026 — 카야노·님버스·노바블라스트·메타스피드, GEL부터 FF Blast까지 전체 라인업 | 입문부터 슈퍼슈즈까지 한 장 정리',
     description:
-      '아식스 러닝화 18종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 39.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',
+      '아식스 러닝화 18종을 라인(카야노 안정화·님버스 쿠션·노바블라스트 데일리·슈퍼블라스트 무카본슈퍼·메타스피드 레이싱)과 FF Blast 폼 등급으로 한 장에. 젤 벤처 8.9만부터 메타스피드 레이 43.9만까지 가격·무게·폼 비교표 + GEL에서 FF Blast로 바뀐 세대 전환 + 메타스피드 3형제 주법별 차이 + 발볼 넓은 한국 러너 친화도까지 정리했습니다.',
     thumbnail: '/images/blog/asics-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
@@ -3690,7 +3690,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>요약하면 <strong>FF Turbo+가 아식스 최상위 레이싱 폼(PEBA)</strong>입니다. 재밌는 건 슈퍼블라스트가 이 FF Turbo+로 <strong>카본 플레이트 없이</strong> 71% 에너지 리턴을 내는 "무카본 슈퍼슈즈"라는 점이에요.</p>
+<p>요약하면 <strong>FF Turbo+가 아식스 최상위 레이싱 폼(PEBA)</strong>입니다. 재밌는 건 슈퍼블라스트가 이 FF Turbo+로 <strong>카본 플레이트 없이</strong> 전족 에너지 리턴 65.5%(슈퍼블라스트 2, RunRepeat 실측)를 내는 "무카본 슈퍼슈즈"라는 점이에요.</p>
 
 <h2>3. 아식스 러닝화 계급도 — 18종 한눈에</h2>
 
@@ -3704,21 +3704,21 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/asics-gel-venture-10"><strong>젤 벤처 10</strong></a></td><td>트레일 입문</td><td>Amplifoam</td><td>8.9만</td><td>322g</td><td>최저가, 4E 와이드 진입 신발</td></tr>
     <tr><td><a href="/shoes/asics-novablast-5"><strong>노바블라스트 5</strong></a></td><td>바운시 데일리 (전작)</td><td>FF Blast Max</td><td>16.9만</td><td>255g</td><td>전작 — 할인 시 가성비 바운시 데일리</td></tr>
     <tr><td><a href="/shoes/asics-novablast-6"><strong>노바블라스트 6</strong></a></td><td>바운시 데일리 (현행)</td><td>FF Blast Max · 전족 FF Turbo²</td><td>17.9만</td><td>249g</td><td>전족에 FF Turbo²를 더해 전족 반발 보강</td></tr>
-    <tr><td><a href="/shoes/asics-gel-kayano-32"><strong>젤 카야노 32</strong></a></td><td>안정화</td><td>FF Blast+ · 4D Guidance</td><td>19.9만</td><td>300g</td><td>4D Guidance 단단한 평발 교정</td></tr>
-    <tr><td><a href="/shoes/asics-gel-nimbus-28"><strong>젤 님버스 28</strong></a></td><td>프리미엄 쿠션</td><td>FF Blast Plus</td><td>19.9만</td><td>281g</td><td>43.5mm 푹신, 중립 쿠션 대장</td></tr>
+    <tr><td><a href="/shoes/asics-gel-kayano-32"><strong>젤 카야노 32</strong></a></td><td>안정화</td><td>FF Blast+ · 4D Guidance</td><td>19.9만</td><td>295g</td><td>4D Guidance 단단한 평발 교정</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28"><strong>젤 님버스 28</strong></a></td><td>프리미엄 쿠션</td><td>FF Blast Plus</td><td>19.9만</td><td>278g</td><td>힐 39.5mm(실측) 푹신, 중립 쿠션 대장</td></tr>
     <tr><td><a href="/shoes/asics-magic-speed-4"><strong>매직스피드 4</strong></a></td><td>카본 입문</td><td>FF Blast+ · FF Turbo · 카본</td><td>19.9만</td><td>237g</td><td>풀렝스 카본, 메타스피드 입문</td></tr>
     <tr><td><a href="/shoes/asics-gel-kayano-33"><strong>젤 카야노 33</strong></a></td><td>안정화 신상</td><td>FF Blast 듀얼 · FLUIDSUPPORT</td><td>19.9만</td><td>298g</td><td>GEL 졸업, 부드러워진 카야노</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>20.9만</td><td>201g</td><td>201g(실측) 포크형 카본, 36g 감량</td></tr>
     <tr><td><a href="/shoes/asics-sonicblast"><strong>소닉블라스트</strong></a></td><td>플레이트 트레이너 (전작)</td><td>FF Turbo Squared · FF Blast Max · 3/4 ASTROPLATE(Pebax)</td><td>22.9만</td><td>255g</td><td>전작 — 3/4 Pebax 플레이트 쿠션 템포화</td></tr>
     <tr><td><a href="/shoes/asics-sonicblast-2"><strong>소닉블라스트 2</strong></a></td><td>플레이트 트레이너 (현행)</td><td>FF Turbo Squared · FF Blast Max · 포크형 ASTROPLATE(Pebax)</td><td>22.9만</td><td>242g</td><td>플레이트를 포크형으로 바꾼 2세대, 가격 동결</td></tr>
-    <tr><td><a href="/shoes/asics-magic-speed-5"><strong>매직스피드 5</strong></a></td><td>가성비 레이싱</td><td>FF Leap · FF Blast+ · 카본</td><td>22.9만</td><td>193g</td><td>193g 포크형 카본, 50g 감량</td></tr>
-    <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 71% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-2"><strong>슈퍼블라스트 2</strong></a></td><td>무카본 슈퍼</td><td>FF Turbo+</td><td>24.9만</td><td>252g</td><td>카본 없이 전족 에너지 리턴 65.5%</td></tr>
     <tr><td><a href="/shoes/asics-gel-slowcush"><strong>젤 슬로우쿠시</strong></a></td><td>회복런 전용 쿠션 (10월 신상)</td><td>FF LUXE PLUS · PureGEL PLUS</td><td>24.9만</td><td>298g</td><td>공식 스택 48mm, 느린 날 전용 맥스쿠션</td></tr>
-    <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>239g</td><td>239g, 더 부드러운 롱런</td></tr>
+    <tr><td><a href="/shoes/asics-superblast-3"><strong>슈퍼블라스트 3</strong></a></td><td>무카본 슈퍼 신상</td><td>FF Leap · FF Blast Plus</td><td>25.9만</td><td>235g</td><td>235g(실측), 더 부드러운 롱런</td></tr>
     <tr><td><a href="/shoes/asics-metafuji-trail"><strong>메타후지 트레일</strong></a></td><td>트레일 레이싱</td><td>FF Turbo · 카본</td><td>27.9만</td><td>258g</td><td>카본 트레일 레이서</td></tr>
     <tr><td><a href="/shoes/asics-megablast"><strong>메가블라스트</strong></a></td><td>맥시멀 바운시</td><td>FF Turbo²</td><td>29.9만</td><td>218g</td><td>힐 45.1mm에 218g, 구름 위 달리기</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-sky-plus"><strong>메타스피드 스카이+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>205g</td><td>스트라이드(보폭) 서브3</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-edge-plus"><strong>메타스피드 엣지+</strong></a></td><td>최상위 레이싱</td><td>FF Turbo+ · 카본</td><td>32.9만</td><td>208g</td><td>케이던스(피치) 슈퍼슈즈</td></tr>
-    <tr><td><a href="/shoes/asics-metaspeed-ray"><strong>메타스피드 레이</strong></a></td><td>초경량 레이싱</td><td>FF Leap (ATPU)</td><td>39.9만</td><td>129g</td><td>129g, 81% 에너지 전족 특화</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-ray"><strong>메타스피드 레이</strong></a></td><td>초경량 레이싱</td><td>FF Leap (ATPU)</td><td>43.9만</td><td>129g</td><td>129g, 81% 에너지 전족 특화</td></tr>
   </tbody>
 </table>
 
@@ -3729,7 +3729,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>🟢 통통 튀는 만능 데일리</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(17.9만). 아식스 입문의 정석으로, 6세대는 전족에 FF Turbo²를 더해 앞꿈치 반발을 보강했습니다. 1만원 싼 전작 <a href="/shoes/asics-novablast-5">노바블라스트 5</a>(16.9만)는 할인 재고가 있으면 가성비 대안입니다. 다른 브랜드 데일리와 비교는 <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>에.</li>
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/asics-gel-kayano-32">젤 카야노 32</a>(단단) 또는 <a href="/shoes/asics-gel-kayano-33">33</a>(부드러움). 둘의 차이는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33</a>에, 다른 브랜드 안정화와 비교는 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>에 있습니다.</li>
-  <li><strong>☁️ 푹신한 프리미엄 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(43.5mm). 더 가볍고 높은 스택을 원하면 힐 45.1mm에 218g인 <a href="/shoes/asics-megablast">메가블라스트</a>. 이지런·회복런만 맡길 신발을 따로 두려면 10월 출시된 <a href="/shoes/asics-gel-slowcush">젤 슬로우쿠시</a>(24.9만)가 있는데, 님버스 28보다 5만원 비싸고 빠른 페이스에는 둔하다는 랩 평가가 있어 차이는 <a href="/blog/asics-gel-slowcush-korea-launch-2026">젤 슬로우쿠시 출시 정리</a>에 따로 적었습니다.</li>
+  <li><strong>☁️ 푹신한 프리미엄 쿠션</strong> → <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(힐 39.5mm, 실측). 더 가볍고 높은 스택을 원하면 힐 45.1mm에 218g인 <a href="/shoes/asics-megablast">메가블라스트</a>. 이지런·회복런만 맡길 신발을 따로 두려면 10월 출시된 <a href="/shoes/asics-gel-slowcush">젤 슬로우쿠시</a>(24.9만)가 있는데, 님버스 28보다 5만원 비싸고 빠른 페이스에는 둔하다는 랩 평가가 있어 차이는 <a href="/blog/asics-gel-slowcush-korea-launch-2026">젤 슬로우쿠시 출시 정리</a>에 따로 적었습니다.</li>
   <li><strong>🎯 쿠션 있는 템포·롱런(플레이트)</strong> → <a href="/shoes/asics-sonicblast-2">소닉블라스트 2</a>(22.9만). 포크형 Pebax 플레이트가 들어간 2세대로, 1세대와 같은 가격입니다. 1세대 분석은 <a href="/blog/asics-sonicblast-review-2026">소닉블라스트 리뷰</a>에.</li>
   <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 또는 더 가벼운 <a href="/shoes/asics-magic-speed-5">5</a>. 둘의 차이는 <a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5</a>에.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련·롱런</strong> → <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(템포) 또는 <a href="/shoes/asics-superblast-3">3</a>(부드러운 롱런). 비교는 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3</a>에.</li>
@@ -3763,9 +3763,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>발볼</th><th>모델</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>와이드 옵션 있음 (한국 친화)</strong></td><td>젤 카야노 32(와이드·X-와이드) · 33(2E) · 젤 님버스 28(와이드·X-와이드) · 노바블라스트 5·6(와이드) · 슈퍼블라스트 2 · 메타스피드 스카이+·엣지+ · 젤 벤처 10(4E)</td></tr>
-    <tr><td><strong>표준 (와이드 없음)</strong></td><td>슈퍼블라스트 3 · 매직스피드 4·5 · 메가블라스트(토박스 74.3mm지만 내부 너비는 평균보다 좁은 편)</td></tr>
-    <tr><td><strong>좁음 (주의)</strong></td><td>소닉블라스트 1·2(와이드 없음, 1세대 토박스 70.1mm) · 메타스피드 레이 · 메타후지 트레일</td></tr>
+    <tr><td><strong>와이드 옵션 있음 (한국 친화)</strong></td><td>젤 카야노 32(와이드·X-와이드) · 33(2E) · 젤 님버스 28(와이드·X-와이드) · 노바블라스트 5·6(와이드) · 슈퍼블라스트 2 · 매직스피드 5(2E) · 메타스피드 스카이+·엣지+ · 젤 벤처 10(4E)</td></tr>
+    <tr><td><strong>표준 (와이드 없음)</strong></td><td>매직스피드 4 · 메가블라스트(토박스 74.3mm지만 내부 너비는 평균보다 좁은 편)</td></tr>
+    <tr><td><strong>좁음 (주의)</strong></td><td>소닉블라스트 1·2(와이드 없음, 1세대 토박스 70.1mm) · 슈퍼블라스트 3(와이드 없음, 토박스 71.6mm) · 메타스피드 레이 · 메타후지 트레일</td></tr>
   </tbody>
 </table>
 
@@ -3804,8 +3804,8 @@ export const posts_2026_06: BlogPost[] = [
     faqs: [
       { question: '나이키 러닝화 라인은 어떻게 구분하나요?', answer: '숫자가 아니라 라인 이름으로 구분합니다. 페가수스(만능 데일리)·보메로(맥스 쿠션)·스트럭처(안정화)가 3대 데일리 라인이고, 이름에 Fly가 붙으면(베이퍼플라이·알파플라이·줌 플라이·스트릭플라이) 카본 레이싱 라인입니다. 라이벌 플라이는 예외적으로 Fly가 붙지만 카본 없는 가성비 템포화입니다.' },
       { question: '페가수스 플러스, 프리미엄은 일반 페가수스와 뭐가 다른가요?', answer: '같은 라인의 상위 등급입니다. 기본(41·42)은 ReactX 폼, 플러스는 더 가벼운 ZoomX 폼(2세대 플러스 2는 전족부 에어 줌 추가), 프리미엄은 ZoomX+ReactX+에어를 겹친 맥시멀 버전입니다. 가격도 기본 16만원대 → 플러스 21만원대 → 프리미엄 28만원대로 올라갑니다. 보메로도 18 → 플러스 → 프리미엄(50mm) 순으로 같은 규칙입니다.' },
-      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-29)으로 와이드가 있는 모델은 페가수스 42·보메로 18(남녀)과 보메로 플러스(남성)이고, 스트럭처 26은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 기본 폭이 넉넉합니다.' },
-      { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(13.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
+      { question: '나이키는 발볼이 좁다는데 와이드 옵션이 있나요?', answer: '나이키는 전반적으로 토박스가 좁아 발볼 넓은 한국 러너는 주의해야 합니다. 한국 공식몰 기준(2026-09-29)으로 와이드가 있는 모델은 페가수스 42·보메로 18(남녀)과 보메로 플러스(남성)이고, 스트럭처 26은 여성 와이드만 있습니다. 페가수스 플러스 2는 표준 폭이지만 와이드가 없습니다. 반대로 페가수스 프리미엄·플러스(1세대), 보메로 프리미엄, 줌 플라이, 라이벌 플라이, 스트릭플라이는 좁은 편이라 발볼 넓으면 피하거나 한 치수 크게 신어야 합니다. 트레일화인 ACG 제가마 트레일은 중족부는 넓지만 토박스가 실측 72.8mm로 표준 수준이고 와이드가 없습니다.' },
+      { question: '첫 나이키 러닝화로 뭘 사야 하나요?', answer: '가장 무난한 건 페가수스 42(16.9만)입니다. 풀렝스 에어와 와이드 옵션까지 갖춘 검증된 만능 데일리예요. 예산을 아끼려면 41 할인분이나 라이벌 플라이 4(12.9만)가, 평발이라면 스트럭처 26이, 푹신함을 원하면 보메로 18이 답입니다.' },
       { question: 'ZoomX가 뭔가요? 다른 폼이랑 어떻게 다른가요?', answer: 'ZoomX는 나이키 최상위 PEBA 폼으로, 가볍고 반발력이 최고입니다. 원래 베이퍼플라이 같은 레이싱화에만 쓰다가 보메로·페가수스 플러스 같은 데일리로 내려왔습니다. 입문은 Cushlon, 데일리는 ReactX(안정적), 프리미엄·레이싱은 ZoomX(반발), 거기에 카본 플레이트가 더해지면 슈퍼슈즈입니다.' },
     ],
     content: `
@@ -3872,7 +3872,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>라인·용도</th><th>폼</th><th>가격</th><th>무게</th><th>한 줄 성격</th></tr>
   </thead>
   <tbody>
-    <tr><td><a href="/shoes/nike-rival-fly-4"><strong>라이벌 플라이 4</strong></a></td><td>가성비 템포</td><td>Cushlon</td><td>13.9만</td><td>236g</td><td>최저가 입문 템포 트레이너</td></tr>
+    <tr><td><a href="/shoes/nike-rival-fly-4"><strong>라이벌 플라이 4</strong></a></td><td>가성비 템포</td><td>Cushlon</td><td>12.9만</td><td>236g</td><td>최저가 입문 템포 트레이너</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-41"><strong>페가수스 41</strong></a></td><td>입문 데일리(전작)</td><td>ReactX</td><td>15.9만</td><td>281g</td><td>42의 전작, 재고·할인 시 가성비</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-42"><strong>페가수스 42</strong></a></td><td>입문 데일리</td><td>ReactX + 풀렝스 에어</td><td>16.9만</td><td>286g</td><td>첫 나이키 1순위, 와이드 정식 출시</td></tr>
     <tr><td><a href="/shoes/nike-structure-26"><strong>스트럭처 26</strong></a></td><td>안정화</td><td>ReactX + 미드풋 서포트</td><td>16.9만</td><td>296g</td><td>나이키 유일 안정화, 한국 와이드는 여성용만</td></tr>
@@ -3881,12 +3881,12 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/nike-pegasus-plus"><strong>페가수스 플러스</strong></a></td><td>스피드 데일리(전작)</td><td>풀렝스 ZoomX</td><td>21.9만</td><td>244g</td><td>1세대 — 경량 데일리+템포, 공식몰 할인 판매 중(9/28)</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-plus-2"><strong>페가수스 플러스 2</strong></a></td><td>스피드 데일리</td><td>ZoomX + 전족부 에어 줌</td><td>21.9만</td><td>258g</td><td>2세대 — 핏 개선, 성격은 데일리 쪽으로</td></tr>
     <tr><td><a href="/shoes/nike-streakfly-2"><strong>스트릭플라이 2</strong></a></td><td>단거리 레이싱</td><td>ZoomX + 카본</td><td>21.9만</td><td>128g</td><td>128g, 5K·10K 전용 초경량</td></tr>
-    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>ACG 제가마 트레일</strong></a></td><td>트레일 맥스 쿠션</td><td>ZoomX + Cushlon 3.0</td><td>21.9만</td><td>336g</td><td>ACG 이관 3세대, Vibram 메가그립·넓은 토박스</td></tr>
-    <tr><td><a href="/shoes/nike-zoom-fly-6"><strong>줌 플라이 6</strong></a></td><td>슈퍼트레이너</td><td>ZoomX + 카본</td><td>22.9만</td><td>248g</td><td>베이퍼 반값, 첫 카본 입문</td></tr>
+    <tr><td><a href="/shoes/nike-acg-zegama-trail"><strong>ACG 제가마 트레일</strong></a></td><td>트레일 맥스 쿠션</td><td>ZoomX + Cushlon 3.0</td><td>21.9만</td><td>306g</td><td>ACG 이관 3세대, Vibram 메가그립·넓은 중족부</td></tr>
+    <tr><td><a href="/shoes/nike-zoom-fly-6"><strong>줌 플라이 6</strong></a></td><td>슈퍼트레이너</td><td>ZoomX + 카본</td><td>20.9만</td><td>248g</td><td>베이퍼 반값, 첫 카본 입문</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-premium"><strong>페가수스 프리미엄</strong></a></td><td>맥시멀 데일리</td><td>ZoomX+ReactX+에어</td><td>28.9만</td><td>308g</td><td>43mm 3중 폼, 데일리 끝판</td></tr>
     <tr><td><a href="/shoes/nike-vomero-premium"><strong>보메로 프리미엄</strong></a></td><td>회복용 맥스</td><td>ZoomX + 에어팟 4개</td><td>29.9만</td><td>326g</td><td>역대 최고 50mm 스택</td></tr>
     <tr><td><a href="/shoes/nike-ultrafly"><strong>울트라플라이</strong></a></td><td>트레일 레이싱</td><td>ZoomX + 카본</td><td>29.9만</td><td>299g</td><td>트레일 최초 ZoomX+카본</td></tr>
-    <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 78% 에너지 리턴</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4"><strong>베이퍼플라이 4</strong></a></td><td>풀 레이싱</td><td>ZoomX + 카본</td><td>30.9만</td><td>166g</td><td>166g, 힐 78% 에너지 리턴</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3"><strong>알파플라이 3</strong></a></td><td>풀 레이싱(마라톤)</td><td>ZoomX+에어팟+카본</td><td>33.9만</td><td>201g</td><td>킵툼 세계기록 슈즈</td></tr>
   </tbody>
 </table>
@@ -3914,14 +3914,14 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>🟢 첫 러닝화·가장 무난</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 풀렝스 에어에 와이드까지, 나이키의 정석입니다. 41과의 차이는 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42</a>에, 42의 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 리뷰</a>에 정리했습니다.</li>
-  <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(13.9만) 또는 전작 할인분 — <a href="/shoes/nike-pegasus-41">페가수스 41</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스 1세대</a>. 할인가는 수시로 바뀌니 공식몰에서 확인하세요.</li>
+  <li><strong>💰 가성비 최저가</strong> → <a href="/shoes/nike-rival-fly-4">라이벌 플라이 4</a>(12.9만) 또는 전작 할인분 — <a href="/shoes/nike-pegasus-41">페가수스 41</a>, <a href="/shoes/nike-pegasus-plus">페가수스 플러스 1세대</a>. 할인가는 수시로 바뀌니 공식몰에서 확인하세요.</li>
   <li><strong>☁️ 푹신하게·무릎 보호</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(힐 46mm). 더 푹신하면 <a href="/shoes/nike-vomero-plus">보메로 플러스</a>, 극한 회복용은 50mm <a href="/shoes/nike-vomero-premium">보메로 프리미엄</a>.</li>
   <li><strong>🦶 평발·안정</strong> → <a href="/shoes/nike-structure-26">스트럭처 26</a>. 나이키 유일 안정화입니다. 다만 한국 공식몰 와이드는 여성용만 있습니다(2026-09-28 확인). 다른 브랜드 안정화와 비교하려면 <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 자가진단 가이드</a>를 보세요.</li>
   <li><strong>⚡ 가볍게·조금 빠르게</strong> → <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2</a>(ZoomX + 전족부 에어). 2세대는 핏이 좋아진 대신 성격이 데일리 쪽으로 옮겨 갔으니, 가벼움이 최우선이면 1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>(244g) 할인분도 선택지입니다. 세대 변화는 <a href="/blog/nike-pegasus-plus-2-release-2026">페가수스 플러스 2 출시 정리</a>에 있습니다.</li>
   <li><strong>🏃 첫 카본(가성비)</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 베이퍼 반값으로 카본을 경험합니다.</li>
   <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(166g) 또는 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> — 지금 한국에서 살 수 있는 둘입니다(9월 30일 발표된 새 레이싱 3종은 위 3-1 참고). 둘의 차이는 <a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼 vs 알파 비교</a>에 있습니다.</li>
   <li><strong>💨 5K·10K 단거리 PB</strong> → <a href="/shoes/nike-streakfly-2">스트릭플라이 2</a>(128g).</li>
-  <li><strong>⛰️ 트레일</strong> → <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>(맥스 쿠션·넓은 토박스), 트레일 레이스는 카본의 <a href="/shoes/nike-ultrafly">울트라플라이</a>. 제가마의 상세 평가는 <a href="/blog/nike-acg-zegama-trail-review-2026">ACG 제가마 트레일 리뷰</a>에, 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
+  <li><strong>⛰️ 트레일</strong> → <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일</a>(맥스 쿠션·넓은 중족부), 트레일 레이스는 카본의 <a href="/shoes/nike-ultrafly">울트라플라이</a>. 제가마의 상세 평가는 <a href="/blog/nike-acg-zegama-trail-review-2026">ACG 제가마 트레일 리뷰</a>에, 다른 브랜드 트레일화와의 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
 </ul>
 
 <h2>5. 발볼 — 나이키 토박스, 한국 러너는 꼭 확인</h2>
@@ -3935,9 +3935,9 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong>와이드 있음 (한국 공식몰)</strong></td><td>페가수스 42(남녀) · 보메로 18(남녀) · 보메로 플러스(남성)</td></tr>
     <tr><td><strong>와이드 여성만 (한국 공식몰)</strong></td><td>스트럭처 26</td></tr>
-    <tr><td><strong>표준 (보통)</strong></td><td>페가수스 42(72.3mm) · 페가수스 플러스 2 · 베이퍼플라이 4(73.2mm) · 알파플라이 3</td></tr>
-    <tr><td><strong>넓은 편 (트레일)</strong></td><td>ACG 제가마 트레일 · 울트라플라이 — 별도 와이드 없이 기본 폭이 넉넉</td></tr>
-    <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 프리미엄 · 페가수스 플러스(1세대) · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
+    <tr><td><strong>표준 (보통)</strong></td><td>페가수스 플러스 2 · 베이퍼플라이 4(73.2mm) · ACG 제가마 트레일(72.8mm)</td></tr>
+    <tr><td><strong>넓은 편</strong></td><td>알파플라이 3(75.3mm) · 울트라플라이(트레일) — 별도 와이드 없이 기본 폭이 넉넉</td></tr>
+    <tr><td><strong>좁음 (발볼 넓으면 주의)</strong></td><td>페가수스 42 표준 사이즈(72.3mm, 와이드 있음) · 보메로 플러스 표준 사이즈(71.1mm, 남성 와이드 있음) · 페가수스 프리미엄 · 페가수스 플러스(1세대) · 보메로 프리미엄 · 줌 플라이 6 · 라이벌 플라이 4 · 스트릭플라이 2</td></tr>
   </tbody>
 </table>
 
@@ -3956,7 +3956,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>페가수스</strong>: 42(16.9만) → 플러스 2(21.9만) → 프리미엄(28.9만)</li>
   <li><strong>보메로</strong>: 18(18.9만) → 플러스(21.9만) → 프리미엄(29.9만)</li>
-  <li><strong>레이싱</strong>: 줌 플라이(22.9만) → 베이퍼플라이(30.9만) → 알파플라이(33.9만)</li>
+  <li><strong>레이싱</strong>: 줌 플라이(20.9만) → 베이퍼플라이(30.9만) → 알파플라이(33.9만)</li>
 </ul>
 
 <p>중요한 건 <strong>"프리미엄"이 항상 더 좋은 건 아니라는 점</strong>입니다. 프리미엄은 폼을 겹쳐 무겁고(페가수스 프리미엄 308g, 보메로 프리미엄 326g) 토박스도 좁아집니다. 대부분의 러너에게는 <strong>기본 페가수스 42나 보메로 18이 가성비·실용성에서 더 낫습니다.</strong> 프리미엄은 "최대 쿠션·최대 회복"이라는 특정 목적이 분명할 때만 의미가 있습니다.</p>
@@ -3989,7 +3989,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '뉴발란스 러닝화 숫자는 무슨 뜻인가요?', answer: '모델 번호의 끝 두 자리가 기능을 나타냅니다. 6x(860)는 안정화, 8x(880)는 중립 데일리, 10xx(1080)는 프리미엄 쿠션입니다. 앞자리가 클수록 더 고급 폼·쿠션 기술이 들어갑니다. 단 스피드·레이싱 라인(레벨·SC 레벨·SC Trainer·SC Elite)은 번호 대신 이름으로 구분합니다.' },
       { question: '뉴발란스 안정화는 뭘 사야 하나요?', answer: '뉴발란스 현행 안정화는 사실상 860 한 줄(V14·V15)뿐입니다. 평발·과내전이라면 860으로 시작하고, 더 강한 교정이나 더 넓은 라인업이 필요하면 아식스 카야노·브룩스 아드레날린 GTS 같은 안정화 전문 라인을 함께 보세요.' },
       { question: '1080과 880은 뭐가 다른가요?', answer: '둘 다 중립 쿠션이지만 1080(10xx)이 상위 등급입니다. 1080 V15는 인피니온 폼으로 전작보다 가벼워진(공식 남성 261g) 프리미엄, 880 V15는 Fresh Foam X에 40mm 맥시멀 스택을 얹은 입문~데일리입니다. 가격은 1080이 2만원 비쌉니다.' },
-      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5는 와이드가 없지만 토박스 자체가 넓습니다. 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.' },
+      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5도 한국 공식몰 남성 2E가 있고 토박스 자체도 넓습니다(실측 75.0mm). 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.' },
       { question: 'Fresh Foam X와 FuelCell은 어떻게 다른가요?', answer: 'Fresh Foam X는 부드럽고 안정적인 EVA 기반 폼으로 데일리·쿠션·안정화 라인(880·1080·860)에 쓰입니다. FuelCell은 반발력 중심의 PEBA 기반 폼으로 스피드·레이싱 라인(레벨·SC Trainer·SC Elite V5)에 들어갑니다. 최신 SC 레벨·SC Elite V6는 인피니온 폼으로 옮겨 갔습니다. 푹신함을 원하면 Fresh Foam X, 튕기는 반발을 원하면 FuelCell·인피니온 계열입니다.' },
     ],
     content: `
@@ -4045,7 +4045,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>요약하면 <strong>푹신·안정을 원하면 Fresh Foam X 계열, 튕기는 반발·스피드를 원하면 FuelCell 계열</strong>입니다. 새 축은 <strong>인피니온</strong>입니다 — 1080 V15가 먼저 갈아타 전작보다 가벼워졌고(공개 수치 285g→261g), 이어서 슈퍼트레이너 SC 레벨과 레이싱화 SC Elite V6도 인피니온으로 옮겨 왔어요.</p>
+<p>요약하면 <strong>푹신·안정을 원하면 Fresh Foam X 계열, 튕기는 반발·스피드를 원하면 FuelCell 계열</strong>입니다. 새 축은 <strong>인피니온</strong>입니다 — 1080 V15가 먼저 갈아타 전작보다 가벼워졌고(RunRepeat 실측 285g→255g), 이어서 슈퍼트레이너 SC 레벨과 레이싱화 SC Elite V6도 인피니온으로 옮겨 왔어요.</p>
 
 <h2>3. 뉴발란스 러닝화 계급도 — 11종 한눈에</h2>
 
@@ -4058,13 +4058,13 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/new-balance-880-v15"><strong>880 V15</strong></a></td><td>입문·데일리</td><td>Fresh Foam X</td><td>18.9만</td><td>286g</td><td>40mm 맥시멀 스택, 첫 러닝화</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 가성비, 발볼 4옵션</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>330g</td><td>넓어진 힐, 장거리 안정</td></tr>
-    <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>18.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>332g</td><td>넓어진 힐, 장거리 안정</td></tr>
+    <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>21.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14"><strong>1080 V14</strong></a></td><td>프리미엄 쿠션</td><td>Fresh Foam X</td><td>19.9만</td><td>285g</td><td>구름 같은 클래식 부드러움</td></tr>
-    <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>261g</td><td>인피니온으로 경량화, 플래그십</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>255g</td><td>인피니온으로 경량화, 플래그십</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-trainer-v3"><strong>SC Trainer V3</strong></a></td><td>슈퍼트레이너 (전작)</td><td>FuelCell + 카본</td><td>24.9만</td><td>278g</td><td>전작 — SC 레벨이 후속, 할인 시 카본 훈련화</td></tr>
-    <tr><td><a href="/shoes/new-balance-sc-rebel"><strong>SC 레벨 V1</strong></a></td><td>슈퍼트레이너 (현행)</td><td>인피니온 + Energy Arc 플레이트</td><td>25.9만</td><td>218g</td><td>스택 40mm에 2E 와이드까지, 훈련·레이스 겸용</td></tr>
-    <tr><td><a href="/shoes/new-balance-balos-v1"><strong>발로스 V1</strong></a></td><td>바운시 데일리</td><td>PEBA 블렌드</td><td>25.9만</td><td>261g</td><td>레이싱 외 유일 PEBA, 통통</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-rebel"><strong>SC 레벨 V1</strong></a></td><td>슈퍼트레이너 (현행)</td><td>인피니온 + Energy Arc 플레이트</td><td>25.9만</td><td>207g</td><td>힐 스택 38mm(실측)에 2E 와이드까지, 훈련·레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/new-balance-balos-v1"><strong>발로스 V1</strong></a></td><td>바운시 데일리</td><td>PEBA 블렌드</td><td>25.9만</td><td>247g</td><td>레이싱 외 유일 PEBA, 통통</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5"><strong>SC Elite V5</strong></a></td><td>레이싱 (전작)</td><td>100% PEBA + 카본</td><td>31.9만</td><td>198g</td><td>전작 — 토박스 74.5mm, 발볼 넓은 러너용 슈퍼슈즈</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v6"><strong>SC Elite V6</strong></a></td><td>레이싱 (현행)</td><td>인피니온 + 카본 Energy Arc</td><td>38.9만</td><td>190g</td><td>전족 에너지 리턴↑, 대신 핏이 좁아짐</td></tr>
   </tbody>
@@ -4077,10 +4077,10 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>🟢 러닝 입문 첫 신발</strong> → <a href="/shoes/new-balance-880-v15">880 V15</a>. 40mm 스택으로 무릎 충격을 확실히 잡고, 2E 와이드까지 있어 발볼 걱정이 없습니다. km당 비용은 추정 수명 기준 약 315원입니다(자체 랩 없음·아웃솔 마모 기준 추정, 모델 간 상대 비교용 — 교체 시기 숫자의 근거는 <a href="/blog/running-shoe-500km-replacement-myth-2026">러닝화 교체 시기 검증 글</a>에).</li>
   <li><strong>🦶 평발·과내전이라 지지가 필요</strong> → <a href="/shoes/new-balance-860-v14">860 V14</a>(1만원 저렴한 가성비) 또는 <a href="/shoes/new-balance-860-v15">860 V15</a>(넓어진 힐·장거리, 한국 공식몰 4E까지). 뉴발 안정화는 이 860 한 줄이 전부입니다(아래 8번 참고).</li>
-  <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(공개 수치 285g→261g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
-  <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓어 와이드 없이도 발볼이 편합니다.</li>
-  <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 218g·스택 40mm에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
-  <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v6">SC Elite V6</a>(38.9만, 190g). 인피니온 폼과 재설계한 카본 Energy Arc로 전족 에너지 리턴을 끌어올린 최신 슈퍼슈즈지만, 핏이 좁아져(토박스 71.4mm) 발볼이 넓으면 꼭 신어 보고 사세요. 발볼 넓은 러너에게는 토박스 74.5mm로 베이퍼플라이·알파플라이보다 넓은 전작 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(31.9만)가 여전히 드문 선택지입니다. V6 변화는 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC Elite V6 프리뷰</a>에.</li>
+  <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(RunRepeat 실측 285g→255g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
+  <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓고(실측 75.0mm) 한국 공식몰 남성 2E 와이드도 있어 발볼이 편합니다.</li>
+  <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 207g(실측)·힐 스택 38.3mm(실측)에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
+  <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v6">SC Elite V6</a>(38.9만, 190g). 인피니온 폼과 재설계한 카본 Energy Arc로 전족 에너지 리턴을 끌어올린 최신 슈퍼슈즈지만, 핏이 좁아져(토박스 71.4mm) 발볼이 넓으면 꼭 신어 보고 사세요. 발볼 넓은 러너에게는 토박스 74.5mm로 베이퍼플라이 4(73.2mm)보다 넓은 전작 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(31.9만)가 여전히 드문 선택지입니다. V6 변화는 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC Elite V6 프리뷰</a>에.</li>
   <li><strong>🎈 바운시한 프리미엄 데일리</strong> → <a href="/shoes/new-balance-balos-v1">발로스 V1</a>. 레이싱 외 유일하게 PEBA를 담은 통통 튀는 데일리. 다만 25.9만원으로 가격이 부담입니다.</li>
   <li><strong>⛰️ 트레일·로드투트레일</strong> → <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>(18.9만). Fresh Foam X 듀얼 밀도에 비브람 메가그립을 붙인 쿠션 올라운드 트레일화입니다. 상세는 <a href="/blog/new-balance-hierro-v9-trail-review-2026">히에로 v9 리뷰</a>에, 브랜드를 가로지른 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
 </ul>
@@ -4101,8 +4101,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>1080 V14</td><td>표준(D) / 2E</td><td>D는 토박스 좁음 → 2E 권장</td></tr>
     <tr><td>발로스 V1</td><td>표준(D) / 2E</td><td>—</td></tr>
     <tr><td>SC 레벨 V1</td><td>표준(D) / 2E(남성)</td><td>슈퍼트레이너 중 드문 와이드</td></tr>
-    <tr><td>레벨 V5</td><td>표준(D)만</td><td>토박스 75mm로 넓어 D로도 여유</td></tr>
-    <tr><td>SC Elite V6</td><td>표준(D)만</td><td>토박스 71.4mm로 V5(74.5mm)보다 좁아짐 — 발볼 넓으면 주의</td></tr>
+    <tr><td>레벨 V5</td><td>표준(D) / 2E(남성)</td><td>토박스 75.0mm(실측)로 넓어 D로도 여유</td></tr>
+    <tr><td>SC Elite V6</td><td>표준(D) / 2E(남성)</td><td>토박스 71.4mm로 V5(74.5mm)보다 좁아짐 — 발볼 넓으면 주의</td></tr>
   </tbody>
 </table>
 
@@ -4110,7 +4110,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">📏</span>
   <div class="callout-body">
     <p class="callout-title">발볼 넓으면 무조건 2E부터</p>
-    <p>특히 <strong>1080 V14는 표준(D)의 토박스가 68mm 미만으로 좁습니다.</strong> 발볼 넓은 한국 러너는 2E 와이드를 선택하세요. 발볼·평발 전반은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a> 가이드에 11종 토박스 실측이 정리돼 있습니다.</p>
+    <p>특히 <strong>1080 V14는 표준(D)의 토박스가 69.8mm(실측)로 좁습니다.</strong> 발볼 넓은 한국 러너는 2E 와이드를 선택하세요. 발볼·평발 전반은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a> 가이드에 11종 토박스 실측이 정리돼 있습니다.</p>
   </div>
 </div>
 
@@ -4119,9 +4119,9 @@ export const posts_2026_06: BlogPost[] = [
 <p>같은 모델의 세대 차이가 의외로 큽니다. 주력 라인 모두 최근 세대에서 성격이 꽤 바뀌었어요.</p>
 
 <ul>
-  <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(261g, 인피니온)으로 <strong>가벼워졌습니다</strong>(측정 출처가 달라 차이는 대략값). 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
-  <li><strong>860</strong>: V14(295g, 메디얼 포스트) → V15(330g, 이중 밀도 + 넓어진 힐). 가격은 V14가 1만원 싸고, 장거리 힐 안정감과 4E 와이드는 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
-  <li><strong>SC 라인</strong>: 슈퍼트레이너는 SC Trainer V3(FuelCell·풀카본) → <strong>SC 레벨</strong>(인피니온·Energy Arc, 스택 40mm)로, 레이싱은 SC Elite V5(100% PEBA) → <strong>V6</strong>(인피니온)로 넘어갔습니다. V6는 더 빠른 대신 핏이 좁아져, 발볼 넓은 러너에게는 V5가 여전히 의미가 있습니다.</li>
+  <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(255g, 인피니온)으로 <strong>가벼워졌습니다</strong>(둘 다 RunRepeat 실측, 약 30g). 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
+  <li><strong>860</strong>: V14(295g, 메디얼 포스트) → V15(332g, 이중 밀도 + 넓어진 힐). 가격은 V14가 1만원 싸고, 장거리 힐 안정감과 4E 와이드는 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
+  <li><strong>SC 라인</strong>: 슈퍼트레이너는 SC Trainer V3(FuelCell·풀카본) → <strong>SC 레벨</strong>(인피니온·Energy Arc, 힐 스택 38.3mm 실측)로, 레이싱은 SC Elite V5(100% PEBA) → <strong>V6</strong>(인피니온)로 넘어갔습니다. V6는 더 빠른 대신 핏이 좁아져, 발볼 넓은 러너에게는 V5가 여전히 의미가 있습니다.</li>
 </ul>
 
 <h2>7. 정직하게 — 뉴발란스 안정화는 사실 860 하나뿐</h2>
@@ -4247,7 +4247,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td>해외 Narrow / 표준 / 2E / X-Wide (한국 공식몰 미등재, 2026-10-20)</td><td>295g</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>330g</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>332g</td></tr>
     <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>FLUIDSUPPORT</td><td>표준 / 2E / 4E</td><td>중량급</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>표준 토박스가 넓음</td><td>쿠션급</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>J-Frame</td><td>표준 / 와이드</td><td>경량</td></tr>
@@ -6107,7 +6107,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'adidas-supernova-rise-2-vs-3-comparison',
     slug: 'adidas-supernova-rise-2-vs-3-comparison',
     title: '아디다스 슈퍼노바 라이즈 2 vs 슈퍼노바 라이즈 3 비교 | "입문화"가 "쿠션화"로 — 랩 실측 스택 +1.5mm·앞발 +3.2mm·토박스 3.2mm 좁아진 변화 총정리',
-    description: '슈퍼노바 라이즈 2(149,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
+    description: '슈퍼노바 라이즈 2(159,000원·입문화)와 라이즈 3(159,000원·쿠션화)의 차이를 데이터로 비교. 랩 실측 힐 스택 33.5→35.0mm, 앞발 24.0→27.2mm, 드롭 10→8mm, Dreamstrike+ 20% 업그레이드, 토박스 77.7→74.5mm까지. 발볼·평발·무릎·세일 타이밍별 한국 러너 구매 매트릭스.',
     thumbnail: '/images/shoes/adidas/supernovarise3/main.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6140,7 +6140,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>카테고리</strong></td><td>입문화</td><td><strong>쿠션화</strong></td><td>성격 변화 (입문 → 본격 쿠션)</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>149,000원</td><td><strong>159,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>MSRP (한국)</strong></td><td>159,000원</td><td>159,000원</td><td>동일</td></tr>
     <tr><td><strong>실구매가 (참고)</strong></td><td>약 135,000원</td><td>약 145,000원</td><td>세일 시 둘 다 더 내려감</td></tr>
     <tr><td><strong>무게 (랩 실측)</strong></td><td>257g</td><td>264g</td><td>+7g (라이즈 3가 약간 묵직)</td></tr>
     <tr><td><strong>힐 스택 (랩 실측)</strong></td><td>33.5mm</td><td><strong>35.0mm</strong></td><td>+1.5mm</td></tr>
@@ -6215,7 +6215,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>첫 하프 준비 입문자 (힐 착지)</td><td><strong>라이즈 2</strong></td><td>10mm 드롭·가벼운 257g·입문 친화</td></tr>
     <tr><td>무릎 통증·관절 보호 최우선</td><td><strong>라이즈 3</strong></td><td>힐 35.0mm(랩)·충격흡수 140 SA·excellent 등급</td></tr>
     <tr><td>가벼운 과내전 (약한 안정성 필요)</td><td><strong>라이즈 2</strong></td><td>안정성 8/10 (3은 7/10·완전 중립용)</td></tr>
-    <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 1만원 저렴</td></tr>
+    <tr><td>가성비 + 표준 발볼</td><td>라이즈 2 (세일 13만원대)</td><td>km당 비용 비슷, MSRP 동일(세일가로 판단)</td></tr>
     <tr><td>부드러운 "통통 튀는" 데일리 우선</td><td><strong>라이즈 3</strong></td><td>Dreamstrike+ 20% softer/bouncier</td></tr>
     <tr><td>라이즈 2 사용 중 + 500km 이내 멀쩡</td><td>라이즈 2 계속</td><td>업그레이드 가치는 후반 쿠션 차이 정도</td></tr>
     <tr><td>완전 중립발 + 장거리 1켤레</td><td><strong>라이즈 3</strong></td><td>650km 내구성·표준 핏 풋홀드 ↑</td></tr>
@@ -6229,10 +6229,10 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">라이즈 2/3 가격 판단 가이드</p>
     <ul>
-      <li><strong>MSRP 차이는 1만원(149,000 vs 159,000원).</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
+      <li><strong>MSRP는 159,000원으로 같습니다.</strong> km당 비용도 265원 vs 260원으로 사실상 동일해, 가격만으로 한쪽이 압도적이지 않습니다.</li>
       <li><strong>라이즈 2는 후속작 출시로 세일 진입.</strong> 네이버·공식몰에서 13만원대, 시즌 오프엔 더 내려가는 경우가 많아 입문·표준 발볼이라면 가성비 메리트가 큽니다.</li>
       <li><strong>라이즈 3는 현행 모델.</strong> 정가~약 145,000원 실구매가 선에서 형성되며, 세일 폭은 라이즈 2보다 작습니다. 후반 쿠션·내구성을 산다는 관점이면 충분히 합리적.</li>
-      <li><strong>발볼이 넓다면 가격 차(1만원)보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
+      <li><strong>발볼이 넓다면 가격보다 착화가 우선입니다.</strong> 두 세대 모두 와이드가 있고, 후속작 출시로 라이즈 2 와이드 재고는 먼저 빠질 수 있으니 본인 사이즈를 먼저 확인하세요.</li>
     </ul>
   </div>
 </div>
@@ -6343,7 +6343,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'puma-deviate-nitro-3-vs-4-comparison',
     slug: 'puma-deviate-nitro-3-vs-4-comparison',
     title: '푸마 디비에이트 나이트로 3 vs 4 비교 | 좁은 핏·450km의 끝 — 와이드 옵션과 800km 내구성으로 갈아탄 가성비 카본 슈퍼트레이너',
-    description: '219,000원 동일 가격, 푸마 디비에이트 나이트로 3 vs 4 세대 비교. v4는 좁은 핏을 넓히고 와이드 옵션 추가, 무게 268→250g·드롭 10→8mm·내구성 450→800km로 개선. 발볼 넓은 한국 러너·업템포 훈련용 가성비 카본 슈퍼트레이너 구매 가이드.',
+    description: '219,000원 동일 가격, 푸마 디비에이트 나이트로 3 vs 4 세대 비교. v4는 와이드 상품을 따로 냈고, 무게 268→250g·드롭 10→8mm·내구성 450→800km로 개선. 발볼 넓은 한국 러너·업템포 훈련용 가성비 카본 슈퍼트레이너 구매 가이드.',
     thumbnail: '/images/shoes/puma/deviatenitro4/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6354,7 +6354,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>가격은 똑같이 219,000원인데 거의 다 좋아졌습니다</strong> — v4는 무게 268→250g, 드롭 10→8mm, 내구성 450→800km(약 2배), 그리고 v3의 고질병이던 좁은 핏을 넓히고 <strong>와이드 옵션</strong>까지 추가</li>
+    <li><strong>가격은 똑같이 219,000원인데 거의 다 좋아졌습니다</strong> — v4는 무게 268→250g, 드롭 10→8mm, 내구성 450→800km(약 2배), 그리고 v3의 고질병이던 좁은 핏에 <strong>와이드 상품</strong>을 따로 추가</li>
     <li>철학 변화: v3 = Nitro Foam + Nitro Elite 듀얼폼(단단하고 직접적), v4 = <strong>듀얼 레이어 NITROFOAM(상단 PEBAX 100% + 하단 PEBA 블렌드)</strong>로 착지는 더 부드럽고 추진은 더 강하게</li>
     <li>결론: <strong>발볼 표준~넓음·업템포 훈련용이라면 사실상 v4가 정답.</strong> v3는 세일 18만원대로 떨어졌을 때 발볼 좁은 러너의 가성비 카드로만 의미가 있습니다</li>
   </ul>
@@ -6391,12 +6391,12 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>km당 비용</strong></td><td>약 410원</td><td><strong>약 274원</strong></td><td>v4 압도적 가성비</td></tr>
     <tr><td><strong>아웃솔</strong></td><td>PumaGrip 러버</td><td>PUMAGRIP 러버</td><td>동일 (접지력 강점)</td></tr>
     <tr><td><strong>어퍼</strong></td><td>니트 어퍼</td><td>엔지니어드 메쉬 + PWRTAPE (20% 재활용)</td><td>재설계</td></tr>
-    <tr><td><strong>발볼 / 토박스</strong></td><td><strong>좁음 (랩 69.7mm)</strong></td><td>표준 (v3 대비 넓어짐)</td><td>핏 개선</td></tr>
+    <tr><td><strong>발볼 / 토박스</strong></td><td><strong>좁음 (랩 69.7mm)</strong></td><td>좁은 편 (랩 70.6mm, v3보다 0.9mm 넓음)</td><td>일반 폭은 여전히 좁음</td></tr>
     <tr><td><strong>와이드 옵션</strong></td><td><strong>없음</strong></td><td><strong>있음</strong></td><td>한국 러너에게 큰 차이</td></tr>
   </tbody>
 </table>
 
-<h2>핵심 변화 — "좁고 빡빡하던 v3"에서 "넓고 부드러운 v4"로</h2>
+<h2>핵심 변화 — "좁고 빡빡하던 v3"에서 "와이드가 생긴 v4"로</h2>
 
 <p>v3와 v4는 가격(둘 다 219,000원)도 같고 카본 PWRPLATE 슈퍼트레이너라는 정체성도 같습니다. 하지만 <strong>설계는 v3의 약점을 거의 그대로 뒤집는 방향</strong>으로 바뀌었습니다.</p>
 
@@ -6410,7 +6410,7 @@ export const posts_2026_06: BlogPost[] = [
       </thead>
       <tbody>
         <tr><td><strong>폼 구성</strong></td><td>Nitro Foam(하단) + Nitro Elite(상단) 듀얼폼. 단단하고 직접적인 착지감</td><td>상단 PEBAX 100% + 하단 PEBA 블렌드. 착지는 부드럽게 받고 추진은 강하게</td></tr>
-        <tr><td><strong>핏 철학</strong></td><td>좁고 감싸는 니트 어퍼 — 발이 빡빡하게 잡힘</td><td>넓어진 토박스 + 엔지니어드 메쉬 — 여유 있고 와이드 옵션까지</td></tr>
+        <tr><td><strong>핏 철학</strong></td><td>좁고 감싸는 니트 어퍼 — 발이 빡빡하게 잡힘</td><td>일반 폭 토박스는 여전히 좁은 편(70.6mm) + 엔지니어드 메쉬 — 대신 와이드 상품 별도</td></tr>
         <tr><td><strong>드롭/전환</strong></td><td>10mm — 힐스트라이크에 무난하나 높은 편</td><td>8mm — 미드풋 전환이 더 자연스러움</td></tr>
         <tr><td><strong>내구성 전략</strong></td><td>450km — 훈련화치고 아쉬움. 세일가로 상쇄</td><td>800km — 정가 사도 km당 274원, 가성비로 정면 승부</td></tr>
         <tr><td><strong>약점</strong></td><td>좁은 발볼·낮은 내구성·다소 무거움(268g)</td><td>신상이라 세일 메리트 적음 — 그게 거의 유일한 단점</td></tr>
@@ -6423,8 +6423,8 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>6가지 핵심 변화 점검</h2>
 
-<h3>1. 좁은 핏 → 넓어진 토박스 + 와이드 옵션 ✅ 가장 큰 변화</h3>
-<p>v3의 최대 약점은 누가 뭐래도 <strong>좁은 발볼</strong>이었습니다. RunRepeat 랩 토박스가 69.7mm(평균 73.2mm)로 70mm 미만의 좁은 편이고 본 사이트 신발 DB도 "좁음"으로 분류하며, 해외 리뷰에서도 반 사이즈 업 권장이 반복됐어요. v4는 토박스를 넓혔고 <strong>와이드 옵션까지 추가</strong>했습니다. 발볼 넓은 한국 러너에게는 이 한 줄이 구매 결정을 바꾸는 변화입니다.</p>
+<h3>1. 좁은 핏 → 와이드 상품 추가 ✅ 가장 큰 변화</h3>
+<p>v3의 최대 약점은 누가 뭐래도 <strong>좁은 발볼</strong>이었습니다. RunRepeat 랩 토박스가 69.7mm(평균 73.2mm)로 70mm 미만의 좁은 편이고 본 사이트 신발 DB도 "좁음"으로 분류하며, 해외 리뷰에서도 반 사이즈 업 권장이 반복됐어요. v4도 일반 폭 토박스는 RunRepeat 랩 70.6mm로 좁은 편이지만, <strong>와이드 상품이 따로 나왔습니다</strong>(kr.puma.com, 정가 219,000원). 발볼 넓은 한국 러너에게는 이 한 줄이 구매 결정을 바꾸는 변화입니다.</p>
 
 <h3>2. 무게 268g → 250g ✅ 체감되는 18g 다이어트</h3>
 <p>18g은 슈퍼트레이너 카테고리에서 무시 못 할 차이입니다. 업템포 훈련에서 발이 가볍게 떨어지는 감각이 좋아졌고, 그러면서 스택은 오히려 늘었으니(전족부 +2.7mm) "가벼운데 쿠션은 더"라는 좋은 방향입니다.</p>
@@ -6448,7 +6448,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
   </thead>
   <tbody>
-    <tr><td>발볼 표준~넓음 (한국 러너 평균)</td><td><strong>v4</strong></td><td>토박스 넓어짐 + 와이드 옵션, v3는 빡빡함</td></tr>
+    <tr><td>발볼 표준~넓음 (한국 러너 평균)</td><td><strong>v4</strong></td><td>와이드 상품 별도, v3는 와이드 없음</td></tr>
     <tr><td>발볼 좁음 + 세일 가성비 우선</td><td>v3 (세일 18만원대)</td><td>좁은 핏이 오히려 잘 맞고 가격 메리트 ↑</td></tr>
     <tr><td>업템포·템포런 주력 훈련화</td><td><strong>v4</strong></td><td>250g·반응성 9·800km 내구성으로 만능</td></tr>
     <tr><td>단단하고 직접적인 착지감 선호</td><td>v3</td><td>Nitro Foam 듀얼폼이 더 펌함</td></tr>
@@ -6489,7 +6489,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
   </thead>
   <tbody>
-    <tr><td>발볼 넓음 / 평발</td><td><strong>v4</strong></td><td>넓어진 토박스 + 와이드 옵션, 평발 적합성 good</td></tr>
+    <tr><td>발볼 넓음 / 평발</td><td><strong>v4</strong></td><td>와이드 상품 별도, 평발 적합성 good</td></tr>
     <tr><td>무릎 통증 (러너스 니)</td><td>v3 = v4</td><td>둘 다 kneeIssues good, 힐 스택 37~38mm 충격 흡수</td></tr>
     <tr><td>아킬레스건염</td><td><strong>v4</strong></td><td>드롭 10→8mm로 아킬레스 부담 약간 ↓</td></tr>
     <tr><td>족저근막염</td><td>v3 = v4</td><td>둘 다 plantarFasciitis good</td></tr>
@@ -6525,7 +6525,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>v3가 400km 이내로 멀쩡하고 발에 잘 맞으면 그냥 끝까지 신으세요. 다만 <strong>v3의 좁은 핏 때문에 불편했거나 내구성이 아쉬웠다면 v4는 명확한 업그레이드</strong>입니다. 같은 219,000원에 무게·내구성·핏·드롭이 다 좋아졌으니, 새로 사는 입장이면 v4가 정답에 가깝습니다.</p>
 
 <h3>Q. 발볼 넓은데 v3 사도 되나요?</h3>
-<p>권하지 않습니다. v3는 좁은 편(랩 69.7mm)에 와이드 옵션이 없어요. 반 사이즈 업을 권하는 리뷰도 많습니다. <strong>발볼 넓으면 v4(표준 토박스 넓어짐 + 와이드 옵션)</strong>가 맞습니다. 굳이 v3를 세일로 잡는다면 반드시 반사이즈 업으로 시착하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드 →</a></p>
+<p>권하지 않습니다. v3는 좁은 편(랩 69.7mm)에 와이드 옵션이 없어요. 반 사이즈 업을 권하는 리뷰도 많습니다. <strong>발볼 넓으면 v4 와이드</strong>가 맞습니다(v4 일반 폭도 토박스 70.6mm로 좁은 편). 굳이 v3를 세일로 잡는다면 반드시 반사이즈 업으로 시착하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드 →</a></p>
 
 <h3>Q. v4가 v3보다 부드러운가요, 단단한가요?</h3>
 <p>v4가 더 부드럽습니다. 상단 PEBAX 100% 폼이 착지 충격을 받아줘서 첫 접지가 말랑해졌어요. 반대로 <strong>v3의 단단하고 직접적인 펌한 감각</strong>을 좋아하는 러너도 있습니다. "통통 튀는 직결감"이 취향이면 v3, "부드럽게 받고 밀어주는 느낌"이면 v4입니다.</p>
@@ -6592,7 +6592,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'brooks-glycerin-max-1-vs-2-comparison',
     slug: 'brooks-glycerin-max-1-vs-2-comparison',
     title: '브룩스 글리세린 맥스 vs 글리세린 맥스 2 비교 | 42mm→47mm 스택 +1만원, "구름 푹신" vs "단단한 로커" — 무릎·평발 한국 러너는 어느 세대?',
-    description: '글리세린 맥스(239,000원·305g·42mm)와 맥스 2(249,000원·312g·47mm) 맥시멀 쿠션화 세대 비교. 스택 +5mm·로커 강화 대신 폼이 단단해지고 토박스가 좁아진 변화. 무릎 보호·평발·발볼·세일 타이밍까지 부상별 매트릭스로 정리.',
+    description: '글리세린 맥스(239,000원·305g·42mm)와 맥스 2(249,000원·318g·47mm) 맥시멀 쿠션화 세대 비교. 스택 +5mm·로커 강화 대신 폼이 단단해지고 토박스가 좁아진 변화. 무릎 보호·평발·발볼·세일 타이밍까지 부상별 매트릭스로 정리.',
     thumbnail: '/images/shoes/brooks/glycerinmax2/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6626,7 +6626,7 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong>카테고리</strong></td><td>쿠션화 (맥시멀)</td><td>쿠션화 (맥시멀)</td><td>동일</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>239,000원</td><td><strong>249,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>305g</td><td><strong>312g</strong></td><td>+7g (스택 증가분)</td></tr>
+    <tr><td><strong>무게 (US M9)</strong></td><td>305g</td><td><strong>318g</strong></td><td>+13g (스택 증가분)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>42mm (랩 42.3)</td><td><strong>47mm</strong></td><td>+5mm</td></tr>
     <tr><td><strong>전족부 스택</strong></td><td>36mm (랩 35.7)</td><td><strong>41mm</strong></td><td>+5mm</td></tr>
     <tr><td><strong>드롭</strong></td><td>7mm (랩 6.6)</td><td>6mm</td><td>-1mm (사실상 동일)</td></tr>
@@ -6640,7 +6640,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>아웃솔</strong></td><td>러버 아웃솔</td><td>러버 아웃솔</td><td>동일</td></tr>
     <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td><strong>트리플 자카드 메쉬</strong> (스너그)</td><td>피팅 타이트 ↑</td></tr>
     <tr><td><strong>토박스</strong></td><td><strong>와이드 (74.3mm)</strong></td><td>표준 (반 사이즈 업 권장)</td><td>좁아짐 ⚠️</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>있음</td><td>있음</td><td>동일</td></tr>
+    <tr><td><strong>와이드 옵션</strong></td><td>있음</td><td>없음 (한국 공식몰 미디엄만)</td><td>맥스 2는 와이드 없음</td></tr>
     <tr><td><strong>평발 호환</strong></td><td>excellent</td><td>good</td><td>v1 우위</td></tr>
   </tbody>
 </table>
@@ -6683,7 +6683,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>로커(밑창 앞쪽 곡선)가 강화돼 47mm 고스택에도 발이 앞으로 자연스럽게 굴러갑니다. 어퍼가 트리플 자카드 메쉬로 발을 더 단단히 감싸 좌우 흔들림이 줄었어요. 고스택 맥시멀화의 고질병인 "흔들거림"을 잡은 건 분명한 개선입니다.</p>
 
 <h3>4. 토박스 wide→standard ⚠️ 발볼 넓은 한국 러너 주의</h3>
-<p>이게 한국 러너에게 가장 체감되는 변화일 수 있습니다. v1은 토박스 74.3mm <strong>와이드</strong>라 별도 와이드 모델 없이도 발볼 넓은 발이 편했는데, 맥스 2는 스너그 피팅으로 바뀌어 <strong>표준(standard)</strong>이 됐습니다. 와이드 버전에서도 핏이 꽉 맞아 반 사이즈 업을 권한다는 리뷰가 반복돼요. 발볼 넓다면 맥스 2는 반드시 시착하거나 와이드 옵션 + 반 사이즈 업을 고려하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
+<p>이게 한국 러너에게 가장 체감되는 변화일 수 있습니다. v1은 토박스 74.3mm <strong>와이드</strong>라 별도 와이드 모델 없이도 발볼 넓은 발이 편했는데, 맥스 2는 스너그 피팅으로 바뀌어 <strong>표준(standard)</strong>이 됐습니다. 와이드 버전에서도 핏이 꽉 맞아 반 사이즈 업을 권한다는 리뷰가 반복돼요. 발볼 넓다면 맥스 2는 한국 공식몰에 와이드가 없으니 반드시 시착하고 반 사이즈 업을 고려하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
 
 <h3>5. 내구성 700→600km ⚠️ km당 비용 상승</h3>
 <p>내구성이 100km 줄고 가격은 1만원 올라, km당 비용이 341원→415원으로 꽤 뜁니다. 가성비만 보면 v1이 분명 위. 맥스 2의 +1만원은 "더 높은 스택 + 더 안정적인 라이드"에 지불하는 값이라고 보면 됩니다.</p>
@@ -6703,7 +6703,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>최대 스택 = 최대 충격흡수가 목표</td><td><strong>맥스 2</strong></td><td>힐 47mm로 +5mm 더 높음</td></tr>
     <tr><td>무릎 부상 복귀 / 퇴행성 관절 초기</td><td>둘 다 excellent</td><td>kneeIssues 둘 다 최상, 발볼로 선택</td></tr>
     <tr><td>v1 사용 중 + 500km 이내 멀쩡</td><td><strong>v1 계속</strong></td><td>맥스 2 업그레이드 가치 미미, 토박스만 손해</td></tr>
-    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>312g·반응성 4~5, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
+    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>305~318g·반응성 4~5, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
   </tbody>
 </table>
 
@@ -6769,10 +6769,10 @@ export const posts_2026_06: BlogPost[] = [
 <p>v1이 500km 이내 멀쩡하다면 그냥 굴리세요. <strong>특히 발볼 넓거나 v1의 푹신함을 좋아했다면 맥스 2로 갈 이유가 거의 없습니다</strong> — 토박스는 좁아지고 폼은 단단해졌으니까요. "v1이 너무 물렁해서 흔들렸다"고 느꼈던 러너만 맥스 2의 안정적인 로커가 답입니다.</p>
 
 <h3>Q. 발볼 넓은데 맥스 2 괜찮나요?</h3>
-<p>주의가 필요합니다. 맥스 2는 v1의 와이드 토박스(74.3mm)에서 standard로 좁아졌고 스너그 피팅이라 <strong>리뷰마다 "반 사이즈 업"이 반복 권장</strong>됩니다. 발볼 넓다면 ① v1 와이드 토박스를 노리거나 ② 맥스 2 와이드 옵션 + 반 사이즈 업을 시착 후 결정하세요.</p>
+<p>주의가 필요합니다. 맥스 2는 v1의 와이드 토박스(74.3mm)에서 standard로 좁아졌고 스너그 피팅이라 <strong>리뷰마다 "반 사이즈 업"이 반복 권장</strong>됩니다. 발볼 넓다면 ① v1 와이드 토박스를 노리거나 ② 맥스 2는 한국 공식몰에 와이드가 없으니 반 사이즈 업을 시착 후 결정하세요.</p>
 
 <h3>Q. 둘 다 빠르게 달릴 수 있나요?</h3>
-<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g·반응성 5, 맥스 2 312g·반응성 4로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
+<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g·반응성 5, 맥스 2 318g·반응성 4로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
 
 <h3>Q. 무릎이 안 좋은데 어느 쪽이 더 좋나요?</h3>
 <p>둘 다 무릎 보호 excellent 등급이라 우열을 가리기 어렵습니다. 순수 충격흡수만 보면 47mm 맥스 2가 한 칸 위지만, <strong>실제 차이는 발볼·푹신함 취향에서 갈립니다</strong>. 발볼 넓고 부드러운 게 좋으면 v1, 흔들림 없는 안정적 착지가 좋으면 맥스 2. 무릎 부상 복귀라면 매장 시착으로 본인 발에 맞는 쪽을 고르세요.</p>
@@ -6836,7 +6836,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     slug: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     title: '미즈노 웨이브 리벨리온 플래시 2 vs 플래시 3 비교 | PEBA→TPEE 듀얼폼 전환·드롭 그대로, 미드풋 템포 트레이너 세대 차이 총정리',
-    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 스택 35.2→37.5mm, 반응성 7→8 개선이 핵심. 3mm 저드롭 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
+    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 힐 스택 35.2→40.0mm, 반응성 7→8 개선이 핵심. 랩 드롭은 2.9→7.5mm로 높아진 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
     thumbnail: '/images/shoes/mizuno/waverebellionflash3/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6848,7 +6848,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>핵심 변화는 상단 폼</strong> — 2의 Enerzy Lite+(PEBA) 단일 감성에서, 3은 <strong>ENERZY XP(TPEE) 상단 + ENERZY NXT(EVA) 하단</strong> 듀얼 구조로 바뀌어 착지는 더 부드럽고 푸시오프는 더 탄력 있게 재설계됐습니다.</li>
-    <li>스택 35.2→37.5mm, 반응성 점수 7→8로 상승. 단 <strong>3mm 저드롭·미드풋 착지 전용</strong>이라는 정체성은 그대로 — 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
+    <li>힐 스택 35.2→40.0mm, 반응성 점수 7→8로 상승. 랩 드롭은 <strong>2.9→7.5mm로 높아져 3은 저드롭에서 벗어났지만</strong>, 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
     <li>MSRP는 189,000원 → 199,000원(+1만원). 두 신발 모두 와이드 옵션이 없어 발볼 넓은 한국 러너는 반 사이즈 업 또는 매장 시착이 필수입니다.</li>
   </ul>
 </div>
@@ -6872,9 +6872,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>상태</strong></td><td>이전 세대 (세일 진입권)</td><td><strong>신상</strong></td><td>세대 교체</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>189,000원</td><td><strong>199,000원</strong></td><td>+10,000원</td></tr>
     <tr><td><strong>무게 (Lab)</strong></td><td>239g</td><td>244g</td><td>+5g (사실상 동일)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>35.2mm</td><td><strong>37.5mm</strong></td><td>+2.3mm (쿠션 ↑)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>32.3mm</td><td><strong>34.5mm</strong></td><td>+2.2mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>3mm</td><td>사실상 동일 (저드롭 유지)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>35.2mm</td><td><strong>40.0mm</strong></td><td>+4.8mm (쿠션 ↑)</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>32.3mm</td><td><strong>32.5mm</strong></td><td>+0.2mm</td></tr>
+    <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>7.5mm (Lab)</td><td>+4.6mm (저드롭 → 중간 드롭)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>Enerzy Lite+ (PEBA) + Enerzy 듀얼</td><td><strong>ENERZY XP (TPEE) 상단 + ENERZY NXT (EVA) 하단</strong></td><td>상단 폼 소재 교체</td></tr>
     <tr><td><strong>플레이트</strong></td><td>Wave 플레이트 (유리섬유, 곡선형)</td><td>유리섬유 강화 나일론 플레이트 (평판형)</td><td>형상·구성 변경</td></tr>
     <tr><td><strong>반응성 점수</strong></td><td>7/10</td><td><strong>8/10</strong></td><td>+1 (TPEE 탄성)</td></tr>
@@ -6884,13 +6884,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>아웃솔</strong></td><td>G3 러버</td><td>전체 러버 (젖은 노면 그립 강조)</td><td>커버리지 확대</td></tr>
     <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>엔지니어드 메쉬 (90%+ 재활용)</td><td>지속가능 소재</td></tr>
     <tr><td><strong>최적 페이스</strong></td><td>4:00–5:30 /km</td><td>4:00–5:00 /km</td><td>3이 살짝 더 빠른 영역</td></tr>
-    <tr><td><strong>토박스 / 와이드</strong></td><td>표준 (94.8mm) / 와이드 없음</td><td>표준 / 와이드 없음</td><td>둘 다 와이드 미제공</td></tr>
+    <tr><td><strong>토박스 / 와이드</strong></td><td>표준 (토박스 73.3mm) / 와이드 없음</td><td>표준 / 와이드 없음</td><td>둘 다 와이드 미제공</td></tr>
   </tbody>
 </table>
 
 <h2>핵심 변화 — PEBA 단일 감성 vs TPEE 듀얼 폼</h2>
 
-<p>플래시 2와 3의 가장 본질적인 차이는 <strong>상단 폼 소재를 바꿔 라이드의 '캐릭터'를 다시 잡았다</strong>는 점입니다. 무게·드롭·로커 지오메트리 같은 골격은 거의 그대로 두고, 발이 닿는 첫 감촉과 튕겨나가는 마무리를 손봤습니다.</p>
+<p>플래시 2와 3의 가장 본질적인 차이는 <strong>상단 폼 소재를 바꿔 라이드의 '캐릭터'를 다시 잡았다</strong>는 점입니다. 무게·로커 지오메트리 같은 골격은 거의 그대로 두고, 발이 닿는 첫 감촉과 튕겨나가는 마무리를 손봤습니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">🔄</span>
@@ -6918,11 +6918,11 @@ export const posts_2026_06: BlogPost[] = [
 <h3>1. 상단 폼 PEBA → ENERZY XP(TPEE) ✅ 가장 큰 변화</h3>
 <p>플래시 2의 Enerzy Lite+(PEBA)가 직접적이고 탄탄한 반발이었다면, 3의 ENERZY XP는 <strong>착지 시 한 박자 부드럽게 받아준 뒤 튕겨내는 이중 구조</strong>입니다. "2는 딱딱하게 바닥을 친다"고 느꼈던 러너에게는 환영할 변화이고, 반대로 "PEBA의 즉각적인 반발이 좋았다"는 러너에게는 다소 무뎌졌다고 느껴질 수 있습니다. 취향이 갈리는 지점이니 가능하면 두 폼을 직접 밟아보고 결정하세요.</p>
 
-<h3>2. 스택 35.2→37.5mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
-<p>힐·전족부 모두 약 2mm씩 두꺼워졌습니다. 쿠션 점수 자체는 7/10로 동일하게 잡혀 있지만, 실제로는 <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
+<h3>2. 힐 스택 35.2→40.0mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
+<p>힐은 4.8mm 두꺼워졌고 전족부는 거의 같습니다(32.3→32.5mm). 쿠션 점수 자체는 7/10로 동일하게 잡혀 있지만, 실제로는 <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
 
-<h3>3. 드롭 3mm 유지 ⚠️ 여전히 미드풋 전용</h3>
-<p>2가 2.9mm, 3이 3mm로 <strong>저드롭 정체성은 그대로</strong>입니다. 이건 미즈노가 "힐로 착지하지 마세요"라는 메시지를 계속 유지한다는 뜻이죠. 힐스트라이커가 두 신발 중 무엇을 신어도 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
+<h3>3. 드롭 2.9→7.5mm ⚠️ 3은 저드롭에서 벗어남</h3>
+<p>RunRepeat 랩 실측 드롭은 2가 2.9mm, 3이 7.5mm로 <strong>3은 저드롭이 아닙니다</strong>. 극단적 저드롭은 2에만 해당해, 힐스트라이커가 2를 신으면 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
 
 <h3>4. 무게 +5g (239→244g) ↔ 사실상 동일</h3>
 <p>스택을 2mm 이상 올리고도 무게 증가가 5g에 그칩니다. 체감상 차이가 거의 없는 수준이고, 둘 다 240g 안팎의 경량 템포 영역에 머뭅니다.</p>
@@ -6941,9 +6941,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>PEBA의 즉각 반발·롤링 장난기가 좋다</td><td><strong>2 (세일)</strong></td><td>곡선형 Wave 플레이트 + PEBA 직접 반발</td></tr>
     <tr><td>서브 3:30 레이스데이 겸용</td><td><strong>3</strong></td><td>스택 ↑·4:00–5:00 최적 페이스로 레이스 영역</td></tr>
     <tr><td>가성비 + 템포런 위주</td><td><strong>2 (세일 13~15만원)</strong></td><td>3 출시로 2 가격 인하, 600km 내구성</td></tr>
-    <tr><td>하프 후반 다리 보호 여유 필요</td><td><strong>3</strong></td><td>힐 37.5mm 스택으로 후반 쿠션 여유</td></tr>
+    <tr><td>하프 후반 다리 보호 여유 필요</td><td><strong>3</strong></td><td>힐 40.0mm 스택으로 후반 쿠션 여유</td></tr>
     <tr><td>2 사용 중 + 400km 이내 멀쩡</td><td><strong>2 계속</strong></td><td>업그레이드 가치 제한적</td></tr>
-    <tr><td>힐스트라이커 / 과내전 입문</td><td>둘 다 비추</td><td>3mm 저드롭·낮은 안정성, 안정화로 분리</td></tr>
+    <tr><td>힐스트라이커 / 과내전 입문</td><td>둘 다 비추</td><td>2는 2.9mm 저드롭, 둘 다 낮은 안정성 — 안정화로 분리</td></tr>
     <tr><td>발볼 4E 이상 넓은 발</td><td>둘 다 시착 필수</td><td>와이드 옵션 미제공, 표준 토박스</td></tr>
     <tr><td>친환경 소재 선호</td><td><strong>3</strong></td><td>어퍼 90%+ 재활용 소재</td></tr>
   </tbody>
@@ -6979,11 +6979,11 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>아킬레스건염 이력</td><td><strong>3</strong></td><td>스택 ↑로 착지 충격 분산 여유 (achilles: 2=caution → 3=good)</td></tr>
-    <tr><td>족저근막염</td><td>2 = 3</td><td>둘 다 good — 단 저드롭이라 적응기 필요</td></tr>
+    <tr><td>족저근막염</td><td>2 = 3</td><td>둘 다 good — 단 2는 저드롭이라 적응기 필요</td></tr>
     <tr><td>무릎 통증 (러너스 니)</td><td><strong>2</strong></td><td>knee: 2=good vs 3=caution, 3이 더 공격적 세팅</td></tr>
     <tr><td>정강이 부목 (Shin Splints)</td><td>2 = 3</td><td>둘 다 good</td></tr>
     <tr><td>평발 + 과내전</td><td>둘 다 비추</td><td>flatFoot fair·안정성 5~6/10, 안정화로 분리 권장</td></tr>
-    <tr><td>힐스트라이크 습관</td><td>둘 다 주의</td><td>3mm 저드롭, 최소 2주 적응기 필수</td></tr>
+    <tr><td>힐스트라이크 습관</td><td>둘 다 주의</td><td>2는 2.9mm 저드롭, 최소 2주 적응기 필수</td></tr>
   </tbody>
 </table>
 
@@ -7011,10 +7011,10 @@ export const posts_2026_06: BlogPost[] = [
 <p>가능은 하지만 목적이 다릅니다. 두 신발 모두 카본 슈퍼슈즈가 아니라 <strong>유리섬유 계열 플레이트의 템포 트레이너</strong>입니다. 3이 스택과 TPEE 덕에 하프~풀 후반 버티기에 조금 더 유리하지만, 본격적인 PB 도전 풀코스라면 카본 레이서를 따로 두는 게 정석입니다. 플래시 라인은 '레이스데이 겸 템포런'의 중간 무기로 보세요.</p>
 
 <h3>Q. 발볼이 넓은데 둘 중 뭐가 나은가요?</h3>
-<p>아쉽게도 <strong>두 모델 다 와이드 옵션이 없습니다.</strong> 토박스는 표준(2 기준 94.8mm)이라 발볼 넓은 한국 러너에게는 약간 빡빡할 수 있어요. 반 사이즈 업 또는 매장 시착이 필수이고, 발볼 106mm 이상이라면 다른 모델을 검토하는 게 안전합니다. 발볼 이슈는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a>를 참고하세요.</p>
+<p>아쉽게도 <strong>두 모델 다 와이드 옵션이 없습니다.</strong> 토박스는 표준(2 기준 랩 73.3mm)이라 발볼 넓은 한국 러너에게는 약간 빡빡할 수 있어요. 반 사이즈 업 또는 매장 시착이 필수이고, 발볼 106mm 이상이라면 다른 모델을 검토하는 게 안전합니다. 발볼 이슈는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a>를 참고하세요.</p>
 
 <h3>Q. 힐로 착지하는데 신어도 되나요?</h3>
-<p>권하지 않습니다. 2(2.9mm)·3(3mm) 모두 <strong>극단적 저드롭 + 힐 베벨 로커</strong> 설계라 힐스트라이크 습관이 있으면 초반에 아킬레스건이 당깁니다. 굳이 미드풋 전환을 목표로 한다면 최소 2주 적응기를 두고 거리를 천천히 늘리세요. 착지 교정 의도 없이 그냥 편한 데일리를 찾는다면 이 라인은 맞지 않습니다.</p>
+<p>권하지 않습니다. 2(랩 드롭 2.9mm)는 <strong>극단적 저드롭 + 힐 베벨 로커</strong> 설계라 힐스트라이크 습관이 있으면 초반에 아킬레스건이 당깁니다. 3은 랩 드롭이 7.5mm로 높아졌지만 무릎 부담 등급이 caution이라 힐스트라이커에게는 여전히 권하지 않습니다. 굳이 미드풋 전환을 목표로 한다면 최소 2주 적응기를 두고 거리를 천천히 늘리세요. 착지 교정 의도 없이 그냥 편한 데일리를 찾는다면 이 라인은 맞지 않습니다.</p>
 
 <h3>Q. 미즈노 처음인데 입문용으로 괜찮나요?</h3>
 <p>입문용은 아닙니다. 두 신발 모두 <strong>미드풋/포어풋 착지가 어느 정도 잡힌 중급 이상</strong>을 전제로 합니다. 미즈노 첫 신발이라면 데일리 라인(웨이브 라이더)이나 안정화(웨이브 인스파이어)로 시작한 뒤, 템포런의 재미를 알게 됐을 때 플래시로 넘어오는 순서를 권합니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 →</a>도 함께 보세요.</p>
@@ -7233,7 +7233,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
-    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 261g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
+    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 255g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
     <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·와이드 옵션), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
   </ul>
 </div>
@@ -7252,8 +7252,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>쿠션</th><th>무게</th><th>드롭</th><th>발볼</th><th>가격</th><th>특징</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>261g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
-    <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>281g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
+    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>255g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>278g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
     <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
@@ -7262,7 +7262,7 @@ export const posts_2026_06: BlogPost[] = [
 </table>
 
 <h2>👑 종합 톱픽 — 뉴발란스 1080 v15</h2>
-<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 40mm 힐 스택의 푹신함을 갖추고도 <strong>261g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
+<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 37mm 힐 스택(실측)의 푹신함을 갖추고도 <strong>255g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
 
 <div class="callout tip">
   <span class="callout-icon">🖥️</span>
@@ -7274,7 +7274,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>목적별 베스트</h2>
 <ul>
-  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(261g)</li>
+  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
   <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
@@ -7307,7 +7307,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 실측 스택 36.8mm에 반발은 평범(에너지 리턴 힐 50%). 느린 페이스에서 부드럽고 안정적인 대신 속도를 올리면 단단해지는 "차분한 지지형"</li>
     <li><strong><a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a></strong> — 드롭 10mm·내구 800km로 가장 푹신하고 오래가는 프리미엄. 종아리·아킬레스 편한 쪽</li>
-    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 낮은 드롭(6mm)의 정공법 안정화. 묵직하지만 든든</li>
+    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 드롭 7.6mm(실측, 브랜드 표기 6mm)의 정공법 안정화. 묵직하지만 든든</li>
   </ul>
 </div>
 
@@ -7326,9 +7326,9 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>지지 방식</td><td>FLUIDSUPPORT</td><td>GuideRails</td><td>듀얼 폼+EVA 플레이트</td></tr>
-    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>32 / 26mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>6mm</td></tr>
-    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>330g</td></tr>
+    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>40 / 32mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>7.6mm</td></tr>
+    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>332g</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 6</td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
     <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
@@ -7339,7 +7339,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 30~32의 4D Guidance 대신 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
   <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
-  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 6mm로 낮고 330g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
+  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 7.6mm(실측, 브랜드 표기 6mm)에 332g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
 </ul>
 
 <div class="callout tip">
@@ -7408,8 +7408,8 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>199,000</td><td>지지력 최상위, 대신 반발은 평범</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>300g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>J-Frame</td><td>299g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
+    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>295g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
+    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>H-Frame</td><td>283g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 특화·4종 와이드</td></tr>
     <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a></td><td>광폭 플랫폼</td><td>278g</td><td><strong>159,000</strong></td><td>가성비·카야노 절반값</td></tr>
@@ -8341,7 +8341,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>구매</strong></td><td>중고·병행·재고만</td><td>한국 공식 판매 중</td></tr>
-    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>약 300g대</td></tr>
+    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>298g (실측)</td></tr>
     <tr><td><strong>토박스</strong></td><td>72.4mm (더 넓음)</td><td>71.0mm</td></tr>
     <tr><td><strong>스택·안정성</strong></td><td>기본</td><td>스택↑·힐 클립 개선</td></tr>
   </tbody>
@@ -8408,7 +8408,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드러너 3는 <strong>힐 가이던스(힐 클립)로 후족부를 잡아주는 "가벼운 안정화"</strong> — 카야노·아드레날린 같은 본격 교정형이 아니라 <strong>경미한 과내전</strong>용입니다</li>
-    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(약 300g대) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
+    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(실측 298g) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
     <li>한국 공식엔 <strong>와이드가 없고</strong>(미국엔 있음) 빠른 훈련엔 부적합 — <strong>편안한 이지런·워킹 겸용 안정화</strong>를 원하는 러너에게 맞습니다</li>
   </ul>
 </div>
@@ -8422,7 +8422,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>클라우드러너 3, 어떤 신발인가</h2>
-<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g대 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
+<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g(실측 298g) 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
 
 <h2>'안정화'의 진실 — 얼마나 잡아주나</h2>
 <p>가장 중요한 포인트입니다. 클라우드러너 3의 안정화는 <strong>"경미한 수준(mild-to-moderate)"</strong>입니다.</p>
@@ -8445,7 +8445,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>강점만큼 단점도 분명해 평가가 갈립니다.</p>
 <ul>
   <li><strong>반발이 약합니다</strong> — Helion 폼의 에너지 리턴이 53%로 낮아, Believe in the Run은 <strong>"벽돌 같은 느낌"</strong>이라며 D티어를 줬습니다. 톡 쏘는 추진력은 없습니다</li>
-  <li><strong>무겁습니다</strong> — 약 300g대로, 빠른 페이스·인터벌엔 둔합니다</li>
+  <li><strong>무겁습니다</strong> — 약 300g(실측 298g)으로, 빠른 페이스·인터벌엔 둔합니다</li>
   <li><strong>통기성 제한</strong> — 한여름엔 더울 수 있습니다</li>
 </ul>
 <p>즉 RunRepeat·BGL은 "편안하고 안정적"이라 호평(90점), BITR은 "반발 없고 애매하다"고 혹평 — <strong>무엇을 기대하느냐</strong>에 따라 갈리는 신발입니다.</p>
@@ -8457,7 +8457,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th></th><th>클라우드러너 2</th><th>클라우드러너 3 (이 글)</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>무게</strong></td><td>약 275g</td><td>약 300g대 (무거워짐)</td></tr>
+    <tr><td><strong>무게</strong></td><td>약 275g</td><td>298g (실측, 무거워짐)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>33.6mm</td><td>36.8mm (쿠션↑)</td></tr>
     <tr><td><strong>안정성·어퍼</strong></td><td>기본</td><td>힐 클립·어퍼 개선</td></tr>
     <tr><td><strong>반발</strong></td><td>57%</td><td>53% (소폭↓)</td></tr>
@@ -8470,7 +8470,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">한국 러너가 사기 전 체크</p>
     <ul>
-      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71mm 표준이고 어퍼 볼륨은 넉넉한 편이라 보통 발은 무난하나, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
+      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71.0mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁아지는 형태라, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
       <li><strong>빠른 훈련엔 부적합</strong> — 반발이 약하고 무거워 템포·인터벌용은 아닙니다</li>
       <li><strong>안정화 기대치</strong> — 심한 과내전·평발이면 지지가 부족할 수 있어 카야노 계열이 안전합니다</li>
     </ul>
@@ -8498,7 +8498,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>네, 그게 이 신발의 강점입니다. 안정적이고 어퍼가 편해 <strong>출퇴근 워킹 + 이지런</strong> 겸용에 잘 맞습니다. 다만 빠른 러닝엔 둔합니다.</p>
 
 <h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스는 71mm 표준이지만 어퍼 볼륨이 넉넉해 보통~약간 넓은 발은 무난합니다. 단 <strong>한국 공식 와이드가 없어</strong> 발볼이 많이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
+<p>전체 폭은 평균 수준이지만 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 앞쪽이 좁아지는 형태입니다. <strong>한국 공식 와이드도 없어</strong> 발볼이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
 
 <h3>Q. 입문용으로 사도 되나요?</h3>
 <p>안정적이고 내구성이 좋아 무난하지만, 반발이 약해 "달리는 재미"는 덜합니다. 안정감·편안함을 우선한다면 좋은 선택입니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고하세요.</p>
@@ -8621,7 +8621,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'on-cloudsurfer-max-review-2026',
     slug: 'on-cloudsurfer-max-review-2026',
     title: '이름만 \'Max\'? — On 클라우드서퍼 맥스 리뷰 | 단단한 안정형 데일리의 진실 + 클라우드서퍼 2와 2만원 차이',
-    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 3만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
+    description: '온(On)의 맥스쿠션 데일리화 클라우드서퍼 맥스. 그런데 해외 랩 테스트와 리뷰는 "이름만 Max"라고 입을 모읍니다 — 에너지 리턴은 역대 최저권이고, 일반 클라우드서퍼 2와 힐 스택·경도가 거의 같은데 2만 원 더 비싸죠. 단단한 안정형 데일리로서의 진짜 가치와 한계, 레이싱 루프 결함, 발볼·평발 적합성까지 솔직하게 정리했습니다.',
     thumbnail: '/images/blog/on-cloudsurfer-max-review-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
@@ -8633,7 +8633,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드서퍼 맥스는 이름과 달리 <strong>폭신한 맥스쿠션이 아니라 "단단하고 안정적인" 데일리화</strong> — 에너지 리턴이 48%로 역대 최저권이라 반발감을 기대하면 실망합니다</li>
-    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 3만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
+    <li>가장 큰 함정은 <strong>일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 힐 스택·경도가 거의 같은데 2만 원 비싸고 토박스는 오히려 더 좁다</strong>는 점 — "Max 프리미엄"의 근거가 약합니다</li>
     <li>그럼에도 <strong>넓은 플랫폼의 안정성·접지력·평발 지지력</strong>은 분명한 강점. "단단하고 안정적인 회복런·일상 겸용"을 원하는 러너에겐 맞습니다</li>
   </ul>
 </div>
@@ -8673,7 +8673,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>무게</strong></td><td>292g</td><td>254g (Max가 38g 무거움)</td></tr>
   </tbody>
 </table>
-<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 3만 원 비쌉니다.</strong> 전문 리뷰어들이 "가격 프리미엄을 정당화하기 어렵다"고 입을 모으는 이유죠. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
+<p>충격적이게도 <strong>"Max"가 힐 쿠션은 거의 같고, 에너지 리턴은 더 낮고, 토박스는 더 좁고, 38g 무거운데 2만 원 비쌉니다.</strong> 전문 리뷰어들이 "가격 프리미엄을 정당화하기 어렵다"고 입을 모으는 이유죠. 전족부 쿠션(+20 SA)과 약간의 안정감 정도가 Max의 차별점입니다.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
@@ -8682,7 +8682,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>레이싱 루프 결함</strong> — 끈을 잡아주는 패브릭 루프가 미끄러운 끈을 못 잡아 <strong>주행 중 풀린다</strong>는 지적이 많습니다. 끈도 과도하게 길어 걸릴 수 있습니다</li>
       <li><strong>통기성 부족</strong> — 어퍼가 좋아 보여도 실제 환기는 약해, 한여름 한강 러닝엔 더울 수 있습니다</li>
-      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm로 표준 하단. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
+      <li><strong>와이드 옵션 없음 + 좁은 토박스</strong> — 71.4mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁은 편. 발볼 넓은 한국 러너는 실착이 필수입니다</li>
       <li><strong>가격</strong> — 21만 9천원은 단단한 데일리화로는 프리미엄. 가성비는 약합니다</li>
     </ul>
   </div>
@@ -8704,7 +8704,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>맞는 사람</strong>: "단단하고 안정적인" 회복런·일상 겸용 데일리를 원하고, 온 디자인을 좋아하며, 평발 지지가 필요한 러너</li>
       <li><strong>맞지 않는 사람</strong>: 폭신한 맥스쿠션을 기대하는 러너, 빠른 반발을 원하는 러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
-      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(3만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
+      <li><strong>대안</strong>: 같은 돈이면 일반 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>(2만 원 싸고 토박스 넓음)가 더 합리적일 수 있고, <strong>진짜 폭신한 맥스쿠션</strong>은 <a href="/shoes/new-balance-1080-v15">뉴발란스 1080</a>·<a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>이, 가벼운 데일리는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>이 앞섭니다</li>
     </ul>
   </div>
 </div>
@@ -8714,16 +8714,16 @@ export const posts_2026_06: BlogPost[] = [
 <p>SA 141 충격흡수로 <strong>무릎 보호엔 충분</strong>합니다. 단 "폭신하게 꺼지는" 쿠션이 아니라 "단단하게 받쳐주는" 보호라는 점을 기대치에 반영하세요.</p>
 
 <h3>Q. 그냥 클라우드서퍼 2 사는 게 낫나요?</h3>
-<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 3만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
+<p>대부분의 경우 <strong>그렇습니다</strong>. 힐 쿠션이 거의 같고, 토박스가 넓고, 가볍고, 2만 원 싸거든요. Max는 전족부 쿠션과 약간의 안정감을 더 원할 때만 의미가 있습니다.</p>
 
 <h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스가 71.4mm로 <strong>표준 하단</strong>이라 좁은 편이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
+<p>토박스가 71.4mm로 <strong>랩 평균(73.2mm)보다 좁은 편</strong>이고 와이드도 없습니다. 발볼 넓은 러너는 비추천이며, 꼭 신으려면 매장 착화가 필수입니다.</p>
 
 <h3>Q. 러닝 입문용으로 사도 되나요?</h3>
 <p>안정적이라 회복·가벼운 조깅엔 무난하지만, 21만 9천원 가격과 "Max 기대치"를 생각하면 입문용으로 최선은 아닙니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 먼저 보고 결정하세요.</p>
 
 <h2>마무리</h2>
-<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>3만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
+<p>클라우드서퍼 맥스는 <strong>나쁜 신발은 아니지만, "Max"라는 이름이 만든 기대와 실제가 어긋나는</strong> 신발입니다. 폭신함 대신 단단함, 반발 대신 안정. 그 성격을 알고 "안정적인 회복런·일상화"로 받아들이면 만족스럽지만, 폭신한 맥스쿠션을 기대하고 사면 실망합니다. 그리고 무엇보다 <strong>2만 원 싼 <a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>와 진지하게 저울질</strong>해 볼 것을 권합니다. 이름값보다 내 발과 용도에 맞는지가 먼저니까요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
 `,
@@ -8732,7 +8732,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'on-cloudmonster-3-review-2026',
     slug: 'on-cloudmonster-3-review-2026',
     title: '회복런엔 이만한 게 없다 — On 클라우드몬스터 3 리뷰 | 넓어진 핏·강해진 록커의 데일리 쿠션화, 하이퍼와 뭐가 다른가',
-    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 3세대는 핏이 넓어져 한국 러너에게 한결 편해졌죠. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
+    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 다만 3세대 토박스는 71.0mm(RunRepeat 실측)로 전작(74.5mm)보다 좁아졌습니다. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
     thumbnail: '/images/blog/on-cloudmonster-3-review-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-08',
@@ -8744,7 +8744,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>클라우드몬스터 3는 푹신한 <strong>Helion 단일 폼 + 강한 록커</strong>로 "굴러가는 느낌"을 살린 <strong>데일리 쿠션화</strong> — 빠른 훈련보다 <strong>easy run·회복런·입문</strong>에 맞습니다</li>
-    <li>3세대의 핵심 변화는 <strong>넓어진 핏</strong> — 토박스가 여유로워져 발볼 있는 한국 러너에게 한결 편해졌습니다</li>
+    <li>3세대 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작 클라우드몬스터 2(74.5mm)보다 좁아져, 발볼 있는 한국 러너는 착화 확인이 필요합니다</li>
     <li>단, <strong>약 295g으로 무거운 편</strong>이고 어퍼 내구성·와이드 부재가 약점. 빠른 훈련을 원하면 슈퍼트레이너인 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>가 맞습니다</li>
   </ul>
 </div>
@@ -8753,7 +8753,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">☁️</span>
   <div class="callout-body">
     <p class="callout-title">'몬스터'라는 이름값</p>
-    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지하면서 <strong>핏을 넓혀</strong> 더 많은 발에 맞게 다듬었습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
+    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지했지만, 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작보다 좁아졌습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
   </div>
 </div>
 
@@ -8793,7 +8793,7 @@ export const posts_2026_06: BlogPost[] = [
     <ul>
       <li><strong>무겁습니다</strong> — 약 295g으로 동급 데일리화 중 무거운 편. 빠른 페이스엔 둔하게 느껴집니다</li>
       <li><strong>어퍼 내구성 주의</strong> — 랩 테스트에서 토박스 내구성이 낮게 평가됐습니다. 거친 사용엔 마모가 빠를 수 있어요</li>
-      <li><strong>와이드 옵션이 없습니다</strong> — 3세대로 핏이 넓어졌지만 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
+      <li><strong>와이드 옵션이 없습니다</strong> — 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 평균보다 좁고 한국 공식몰엔 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
       <li><strong>가격</strong> — 22만 9천원은 데일리화로는 프리미엄. 가성비 데일리라면 다른 선택지도 많습니다</li>
     </ul>
   </div>
@@ -8837,7 +8837,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>용도가 다릅니다. <strong>데일리·회복</strong>이 목적이면 일반 3, <strong>빠른 장거리 훈련</strong>까지 원하면 하이퍼입니다. 단순 상위호환이 아니라 성격이 다른 신발이에요.</p>
 
 <h2>마무리</h2>
-<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 3세대로 핏까지 넓어져 한국 러너에게 더 편해졌고요. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
+<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 다만 토박스는 71.0mm(RunRepeat 실측)로 전작보다 좁아져, 발볼 넓은 러너는 착화 확인이 필요합니다. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat 랩 데이터, 전문 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
 `,
@@ -9778,7 +9778,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <p><strong>이 코스의 매력</strong>: 신호 없는 호수 둘레 평지 + 춘천마라톤 코스 답사. 거리를 자유롭게 조절할 수 있고, 가을 단풍철 풍경이 특히 아름답습니다. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>을 준비한다면 실전 코스 적응에 최고입니다.</p>
 
-<p><strong>어울리는 러닝화</strong>: 평지 장거리 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 통기성 좋은 데일리화.</p>
+<p><strong>어울리는 러닝화</strong>: 평지 장거리 + 통기성. <a href="/shoes/saucony-ride-19">사우코니 라이드 19</a>·<a href="/shoes/nike-pegasus-41">페가수스 41</a> 같은 데일리화(라이드 19 통기성은 RunRepeat 실측 74 BR로 평균 수준).</p>
 
 <h2>2. 공지천 호수공원 — 강원 3대 러닝 코스</h2>
 
@@ -10350,7 +10350,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/saucony-ride-18">사우코니 라이드 18</a></td><td>5/5</td><td>255g</td><td>15.9만</td><td>여름 데일리 가성비 정답. 통기성·쿠션 균형 최고</td></tr>
-    <tr><td><a href="/shoes/saucony-ride-19">사우코니 라이드 19</a></td><td>5/5</td><td>255g</td><td>17.9만</td><td>18의 후속, 더 부드러워진 쿠션 + 통기성 유지</td></tr>
+    <tr><td><a href="/shoes/saucony-ride-19">사우코니 라이드 19</a></td><td>74 BR<br><small>(평균 수준)</small></td><td>278g</td><td>17.9만</td><td>18의 후속, 더 부드러워진 쿠션. 통기성은 RunRepeat 실측 74 BR(평균 75)로 평균 수준</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>우수</td><td>281g</td><td>15.9만</td><td>국민 데일리화. 엔지니어드 메쉬로 여름도 무난</td></tr>
     <tr><td><a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a></td><td>최상</td><td>224g</td><td>17.9만</td><td>224g 경량 + 통기성. 단 토박스 좁아 발볼 넓으면 주의</td></tr>
   </tbody>
@@ -10367,7 +10367,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-kinvara-16">사우코니 킨바라 16</a></td><td>5/5</td><td>207g</td><td>15.9만</td><td>207g 경량. 여름 스피드 훈련용 1순위</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>최상</td><td>232g</td><td>18.5만</td><td>경량 + 통기성 + 적당한 반발. 만능 여름 데일리</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a></td><td>5/5</td><td>241g</td><td>21.9만</td><td>나일론 플레이트 템포화. 여름 템포런도 쾌적</td></tr>
-    <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>4/5</td><td>278g</td><td>21.9만</td><td>탄탄한 반발 + 통기성. 도심 데일리·템포 겸용</td></tr>
+    <tr><td><a href="/shoes/on-cloudflow-5">온 클라우드플로우 5</a></td><td>2/5</td><td>271g</td><td>21.9만</td><td>탄탄한 반발. 통기성은 RunRepeat 2/5로 낮은 편 — 도심 데일리·템포 겸용</td></tr>
   </tbody>
 </table>
 
