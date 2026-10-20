@@ -862,7 +862,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'new-balance-sc-elite-v5-review',
     slug: 'new-balance-sc-elite-v5-review',
     title: '뉴발란스 SC Elite V5 후기 | 발볼 넓어도 신는 카본 슈퍼슈즈 — 74.5mm 토박스·198g 솔직 리뷰',
-    description: '뉴발란스 SC Elite V5, 발볼 넓어서 베이퍼플라이를 포기했던 한국 러너에게 답이 되는 카본 슈퍼슈즈입니다. 74.5mm 토박스는 슈퍼슈즈 중 가장 넓고, v4 대비 30g 빠진 198g로 드디어 경쟁력에 도달했죠. 가을 레이싱을 앞두고 74.8% 에너지 리턴·가성비·약점까지 솔직하게 정리했습니다.',
+    description: '뉴발란스 SC Elite V5, 발볼 넓어서 베이퍼플라이를 포기했던 한국 러너에게 답이 되는 카본 슈퍼슈즈입니다. 74.5mm 토박스는 슈퍼슈즈 중 넓은 축이고, v4 대비 30g 빠진 198g로 드디어 경쟁력에 도달했죠. 가을 레이싱을 앞두고 74.8% 에너지 리턴·가성비·약점까지 솔직하게 정리했습니다.',
     thumbnail: '/images/blog/new-balance-sc-elite-v5-review.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-26',
@@ -873,7 +873,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 압도적으로 넓어, 레이스 후반 발가락 눌림이 고질병이던 한국 러너에게 사실상 유일한 선택지입니다</li>
+    <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(67.8mm)·<a href="/shoes/nike-alphafly-3">알파플라이</a>(68.4mm)보다 넓어, 레이스 후반 발가락 눌림이 고질병이던 한국 러너에게 드문 선택지입니다</li>
     <li><strong>v4 대비 30g 빠진 198g</strong>로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell 폼(HA 15.2 울트라소프트)이 74.8% 에너지 리턴을 내고, 0.61 그립으로 젖은 노면도 안정적입니다</li>
     <li><strong>29만원(할인가)으로 베이퍼플라이(31만원)보다 저렴</strong>합니다. 다만 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
   </ul>
@@ -883,7 +883,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">"발볼 넓은데 카본화 신을 게 없어요"의 답</p>
-    <p>카본 슈퍼슈즈는 대부분 발을 꽉 잡는 좁은 레이싱 핏입니다. 그래서 발볼 넓은 한국 러너는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>를 신고 30km 지나면 새끼발가락이 비명을 지르죠. <a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a>는 정확히 그 지점을 노린 신발입니다. 슈퍼슈즈의 추진력은 가져가되 <strong>토박스를 가장 넓게</strong> 풀어, "발볼 때문에 카본을 포기했던" 러너를 다시 레이스로 불러옵니다. 가을 마라톤 시즌을 앞두고 카본화를 고민한다면 후보에 꼭 넣어야 할 모델입니다.</p>
+    <p>카본 슈퍼슈즈는 대부분 발을 꽉 잡는 좁은 레이싱 핏입니다. 그래서 발볼 넓은 한국 러너는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>를 신고 30km 지나면 새끼발가락이 비명을 지르죠. <a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a>는 정확히 그 지점을 노린 신발입니다. 슈퍼슈즈의 추진력은 가져가되 <strong>토박스를 넓게</strong> 풀어, "발볼 때문에 카본을 포기했던" 러너를 다시 레이스로 불러옵니다. 가을 마라톤 시즌을 앞두고 카본화를 고민한다면 후보에 꼭 넣어야 할 모델입니다.</p>
   </div>
 </div>
 
@@ -897,7 +897,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>미드솔</td><td>FuelCell (100% PEBA)</td><td>HA 15.2 울트라소프트</td></tr>
     <tr><td>플레이트</td><td>풀렝스 카본</td><td>Energy Arc 곡률로 빠른 전환</td></tr>
     <tr><td>에너지 리턴</td><td>74.8%</td><td>상위권 (SA 144 충격흡수)</td></tr>
-    <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 가장 넓음 + 와이드 옵션</td></tr>
+    <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 넓은 축 + 와이드 옵션</td></tr>
     <tr><td>최적 페이스</td><td>3:30~4:30/km</td><td>서브3~3:30 마라토너</td></tr>
     <tr><td>내구성 / 가격</td><td>300km / 319,000원</td><td>할인가 29만, km당 약 1,000원</td></tr>
   </tbody>
@@ -906,7 +906,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>실제로 어떤 느낌이냐</h2>
 <h3>넓은 토박스 — 이게 전부라고 해도 될 만큼</h3>
-<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이(67.8mm), 알파플라이(68.4mm)보다 6~7mm 넓습니다. 숫자로는 작아 보여도, 레이스 후반 발이 부으면 이 차이가 "완주 가능"과 "고통"을 가릅니다. 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림에서 자유로운</strong> 거의 유일한 슈퍼슈즈입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
+<p>SC Elite V5를 사는 이유의 8할은 여기 있습니다. <strong>74.5mm 토박스</strong>는 베이퍼플라이(67.8mm), 알파플라이(68.4mm)보다 6~7mm 넓습니다. 숫자로는 작아 보여도, 레이스 후반 발이 부으면 이 차이가 "완주 가능"과 "고통"을 가릅니다. 발볼 넓은 한국 러너가 <strong>카본의 추진력을 누리면서 발가락 눌림 걱정을 덜 수 있는</strong> 드문 슈퍼슈즈입니다. 와이드 옵션까지 있어 선택이 더 쉽습니다.</p>
 
 <h3>반발 — 부드럽게 굴러가되 폭발적이진 않다</h3>
 <p>100% PEBA FuelCell 폼은 HA 15.2로 매우 부드럽고, 74.8% 에너지 리턴은 분명 상위권입니다. 새 Energy Arc 플레이트 곡률이 중족부에서 전족부로의 전환을 매끄럽게 만들어, 3:30~4:30/km 페이스에서 자연스럽게 굴러갑니다. 다만 솔직히 말하면 <strong>알파플라이 같은 "튕겨내는" 폭발력은 아닙니다.</strong> 부드럽게 밀어주는 쪽이라, 순수 반발 최대치를 원하는 서브3 이하 엘리트에겐 다른 선택이 나을 수 있습니다.</p>
@@ -945,7 +945,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>자주 묻는 질문</h2>
 <div class="faq">
   <p class="faq-q">Q. 발볼이 넓은데 베이퍼플라이 대신 이거 신어도 되나요?</p>
-  <p class="faq-a">A. 바로 그 케이스를 위한 신발입니다. 토박스 74.5mm는 슈퍼슈즈 중 가장 넓고 와이드 옵션도 있어, 발볼 때문에 카본화를 포기했던 러너에게 1순위로 권합니다. 레이스 후반 발가락 눌림이 확연히 줄어듭니다.</p>
+  <p class="faq-a">A. 바로 그 케이스를 위한 신발입니다. 토박스 74.5mm는 슈퍼슈즈 중 넓은 축이고 와이드 옵션도 있어, 발볼 때문에 카본화를 포기했던 러너에게 1순위로 권합니다. 레이스 후반 발가락 눌림이 확연히 줄어듭니다.</p>
   <p class="faq-q">Q. 초보도 신을 수 있나요?</p>
   <p class="faq-a">A. 권하지 않습니다. 카본 슈퍼슈즈는 3:30~4:30/km 페이스 이상에서 진가가 나오고, 내구성도 300km로 짧아 레이스 전용입니다. 입문~중급이라면 훈련용 슈퍼폼화(예: <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>)부터 경험하는 게 순서입니다.</p>
   <p class="faq-q">Q. 무릎은 괜찮나요?</p>
@@ -3989,7 +3989,7 @@ export const posts_2026_06: BlogPost[] = [
       { question: '뉴발란스 러닝화 숫자는 무슨 뜻인가요?', answer: '모델 번호의 끝 두 자리가 기능을 나타냅니다. 6x(860)는 안정화, 8x(880)는 중립 데일리, 10xx(1080)는 프리미엄 쿠션입니다. 앞자리가 클수록 더 고급 폼·쿠션 기술이 들어갑니다. 단 스피드·레이싱 라인(레벨·SC 레벨·SC Trainer·SC Elite)은 번호 대신 이름으로 구분합니다.' },
       { question: '뉴발란스 안정화는 뭘 사야 하나요?', answer: '뉴발란스 현행 안정화는 사실상 860 한 줄(V14·V15)뿐입니다. 평발·과내전이라면 860으로 시작하고, 더 강한 교정이나 더 넓은 라인업이 필요하면 아식스 카야노·브룩스 아드레날린 GTS 같은 안정화 전문 라인을 함께 보세요.' },
       { question: '1080과 880은 뭐가 다른가요?', answer: '둘 다 중립 쿠션이지만 1080(10xx)이 상위 등급입니다. 1080 V15는 인피니온 폼으로 전작보다 가벼워진(공식 남성 261g) 프리미엄, 880 V15는 Fresh Foam X에 40mm 맥시멀 스택을 얹은 입문~데일리입니다. 가격은 1080이 2만원 비쌉니다.' },
-      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5는 와이드가 없지만 토박스 자체가 넓습니다. 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.' },
+      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5도 한국 공식몰 남성 2E가 있고 토박스 자체도 넓습니다(실측 75.0mm). 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.' },
       { question: 'Fresh Foam X와 FuelCell은 어떻게 다른가요?', answer: 'Fresh Foam X는 부드럽고 안정적인 EVA 기반 폼으로 데일리·쿠션·안정화 라인(880·1080·860)에 쓰입니다. FuelCell은 반발력 중심의 PEBA 기반 폼으로 스피드·레이싱 라인(레벨·SC Trainer·SC Elite V5)에 들어갑니다. 최신 SC 레벨·SC Elite V6는 인피니온 폼으로 옮겨 갔습니다. 푹신함을 원하면 Fresh Foam X, 튕기는 반발을 원하면 FuelCell·인피니온 계열입니다.' },
     ],
     content: `
@@ -4045,7 +4045,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>요약하면 <strong>푹신·안정을 원하면 Fresh Foam X 계열, 튕기는 반발·스피드를 원하면 FuelCell 계열</strong>입니다. 새 축은 <strong>인피니온</strong>입니다 — 1080 V15가 먼저 갈아타 전작보다 가벼워졌고(공개 수치 285g→261g), 이어서 슈퍼트레이너 SC 레벨과 레이싱화 SC Elite V6도 인피니온으로 옮겨 왔어요.</p>
+<p>요약하면 <strong>푹신·안정을 원하면 Fresh Foam X 계열, 튕기는 반발·스피드를 원하면 FuelCell 계열</strong>입니다. 새 축은 <strong>인피니온</strong>입니다 — 1080 V15가 먼저 갈아타 전작보다 가벼워졌고(RunRepeat 실측 285g→255g), 이어서 슈퍼트레이너 SC 레벨과 레이싱화 SC Elite V6도 인피니온으로 옮겨 왔어요.</p>
 
 <h2>3. 뉴발란스 러닝화 계급도 — 11종 한눈에</h2>
 
@@ -4058,13 +4058,13 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/new-balance-880-v15"><strong>880 V15</strong></a></td><td>입문·데일리</td><td>Fresh Foam X</td><td>18.9만</td><td>286g</td><td>40mm 맥시멀 스택, 첫 러닝화</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 가성비, 발볼 4옵션</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>330g</td><td>넓어진 힐, 장거리 안정</td></tr>
-    <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>18.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>332g</td><td>넓어진 힐, 장거리 안정</td></tr>
+    <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>21.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14"><strong>1080 V14</strong></a></td><td>프리미엄 쿠션</td><td>Fresh Foam X</td><td>19.9만</td><td>285g</td><td>구름 같은 클래식 부드러움</td></tr>
-    <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>261g</td><td>인피니온으로 경량화, 플래그십</td></tr>
+    <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>255g</td><td>인피니온으로 경량화, 플래그십</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-trainer-v3"><strong>SC Trainer V3</strong></a></td><td>슈퍼트레이너 (전작)</td><td>FuelCell + 카본</td><td>24.9만</td><td>278g</td><td>전작 — SC 레벨이 후속, 할인 시 카본 훈련화</td></tr>
-    <tr><td><a href="/shoes/new-balance-sc-rebel"><strong>SC 레벨 V1</strong></a></td><td>슈퍼트레이너 (현행)</td><td>인피니온 + Energy Arc 플레이트</td><td>25.9만</td><td>218g</td><td>스택 40mm에 2E 와이드까지, 훈련·레이스 겸용</td></tr>
-    <tr><td><a href="/shoes/new-balance-balos-v1"><strong>발로스 V1</strong></a></td><td>바운시 데일리</td><td>PEBA 블렌드</td><td>25.9만</td><td>261g</td><td>레이싱 외 유일 PEBA, 통통</td></tr>
+    <tr><td><a href="/shoes/new-balance-sc-rebel"><strong>SC 레벨 V1</strong></a></td><td>슈퍼트레이너 (현행)</td><td>인피니온 + Energy Arc 플레이트</td><td>25.9만</td><td>207g</td><td>힐 스택 38mm(실측)에 2E 와이드까지, 훈련·레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/new-balance-balos-v1"><strong>발로스 V1</strong></a></td><td>바운시 데일리</td><td>PEBA 블렌드</td><td>25.9만</td><td>247g</td><td>레이싱 외 유일 PEBA, 통통</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5"><strong>SC Elite V5</strong></a></td><td>레이싱 (전작)</td><td>100% PEBA + 카본</td><td>31.9만</td><td>198g</td><td>전작 — 토박스 74.5mm, 발볼 넓은 러너용 슈퍼슈즈</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v6"><strong>SC Elite V6</strong></a></td><td>레이싱 (현행)</td><td>인피니온 + 카본 Energy Arc</td><td>38.9만</td><td>190g</td><td>전족 에너지 리턴↑, 대신 핏이 좁아짐</td></tr>
   </tbody>
@@ -4077,9 +4077,9 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>🟢 러닝 입문 첫 신발</strong> → <a href="/shoes/new-balance-880-v15">880 V15</a>. 40mm 스택으로 무릎 충격을 확실히 잡고, 2E 와이드까지 있어 발볼 걱정이 없습니다. km당 비용은 추정 수명 기준 약 315원입니다(자체 랩 없음·아웃솔 마모 기준 추정, 모델 간 상대 비교용 — 교체 시기 숫자의 근거는 <a href="/blog/running-shoe-500km-replacement-myth-2026">러닝화 교체 시기 검증 글</a>에).</li>
   <li><strong>🦶 평발·과내전이라 지지가 필요</strong> → <a href="/shoes/new-balance-860-v14">860 V14</a>(1만원 저렴한 가성비) 또는 <a href="/shoes/new-balance-860-v15">860 V15</a>(넓어진 힐·장거리, 한국 공식몰 4E까지). 뉴발 안정화는 이 860 한 줄이 전부입니다(아래 8번 참고).</li>
-  <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(공개 수치 285g→261g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
-  <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓어 와이드 없이도 발볼이 편합니다.</li>
-  <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 218g·스택 40mm에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
+  <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(RunRepeat 실측 285g→255g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
+  <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓고(실측 75.0mm) 한국 공식몰 남성 2E 와이드도 있어 발볼이 편합니다.</li>
+  <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 207g(실측)·힐 스택 38.3mm(실측)에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
   <li><strong>🏅 대회 기록 단축</strong> → <a href="/shoes/new-balance-sc-elite-v6">SC Elite V6</a>(38.9만, 190g). 인피니온 폼과 재설계한 카본 Energy Arc로 전족 에너지 리턴을 끌어올린 최신 슈퍼슈즈지만, 핏이 좁아져(토박스 71.4mm) 발볼이 넓으면 꼭 신어 보고 사세요. 발볼 넓은 러너에게는 토박스 74.5mm로 베이퍼플라이·알파플라이보다 넓은 전작 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(31.9만)가 여전히 드문 선택지입니다. V6 변화는 <a href="/blog/new-balance-sc-elite-v6-preview-2026">SC Elite V6 프리뷰</a>에.</li>
   <li><strong>🎈 바운시한 프리미엄 데일리</strong> → <a href="/shoes/new-balance-balos-v1">발로스 V1</a>. 레이싱 외 유일하게 PEBA를 담은 통통 튀는 데일리. 다만 25.9만원으로 가격이 부담입니다.</li>
   <li><strong>⛰️ 트레일·로드투트레일</strong> → <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>(18.9만). Fresh Foam X 듀얼 밀도에 비브람 메가그립을 붙인 쿠션 올라운드 트레일화입니다. 상세는 <a href="/blog/new-balance-hierro-v9-trail-review-2026">히에로 v9 리뷰</a>에, 브랜드를 가로지른 비교는 <a href="/blog/trail-running-shoes-lineup-tier-guide-2026">트레일 러닝화 계급도</a>에 있습니다.</li>
@@ -4101,8 +4101,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>1080 V14</td><td>표준(D) / 2E</td><td>D는 토박스 좁음 → 2E 권장</td></tr>
     <tr><td>발로스 V1</td><td>표준(D) / 2E</td><td>—</td></tr>
     <tr><td>SC 레벨 V1</td><td>표준(D) / 2E(남성)</td><td>슈퍼트레이너 중 드문 와이드</td></tr>
-    <tr><td>레벨 V5</td><td>표준(D)만</td><td>토박스 75mm로 넓어 D로도 여유</td></tr>
-    <tr><td>SC Elite V6</td><td>표준(D)만</td><td>토박스 71.4mm로 V5(74.5mm)보다 좁아짐 — 발볼 넓으면 주의</td></tr>
+    <tr><td>레벨 V5</td><td>표준(D) / 2E(남성)</td><td>토박스 75.0mm(실측)로 넓어 D로도 여유</td></tr>
+    <tr><td>SC Elite V6</td><td>표준(D) / 2E(남성)</td><td>토박스 71.4mm로 V5(74.5mm)보다 좁아짐 — 발볼 넓으면 주의</td></tr>
   </tbody>
 </table>
 
@@ -4110,7 +4110,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">📏</span>
   <div class="callout-body">
     <p class="callout-title">발볼 넓으면 무조건 2E부터</p>
-    <p>특히 <strong>1080 V14는 표준(D)의 토박스가 68mm 미만으로 좁습니다.</strong> 발볼 넓은 한국 러너는 2E 와이드를 선택하세요. 발볼·평발 전반은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a> 가이드에 11종 토박스 실측이 정리돼 있습니다.</p>
+    <p>특히 <strong>1080 V14는 표준(D)의 토박스가 69.8mm(실측)로 좁습니다.</strong> 발볼 넓은 한국 러너는 2E 와이드를 선택하세요. 발볼·평발 전반은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a> 가이드에 11종 토박스 실측이 정리돼 있습니다.</p>
   </div>
 </div>
 
@@ -4119,9 +4119,9 @@ export const posts_2026_06: BlogPost[] = [
 <p>같은 모델의 세대 차이가 의외로 큽니다. 주력 라인 모두 최근 세대에서 성격이 꽤 바뀌었어요.</p>
 
 <ul>
-  <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(261g, 인피니온)으로 <strong>가벼워졌습니다</strong>(측정 출처가 달라 차이는 대략값). 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
-  <li><strong>860</strong>: V14(295g, 메디얼 포스트) → V15(330g, 이중 밀도 + 넓어진 힐). 가격은 V14가 1만원 싸고, 장거리 힐 안정감과 4E 와이드는 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
-  <li><strong>SC 라인</strong>: 슈퍼트레이너는 SC Trainer V3(FuelCell·풀카본) → <strong>SC 레벨</strong>(인피니온·Energy Arc, 스택 40mm)로, 레이싱은 SC Elite V5(100% PEBA) → <strong>V6</strong>(인피니온)로 넘어갔습니다. V6는 더 빠른 대신 핏이 좁아져, 발볼 넓은 러너에게는 V5가 여전히 의미가 있습니다.</li>
+  <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(255g, 인피니온)으로 <strong>가벼워졌습니다</strong>(둘 다 RunRepeat 실측, 약 30g). 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
+  <li><strong>860</strong>: V14(295g, 메디얼 포스트) → V15(332g, 이중 밀도 + 넓어진 힐). 가격은 V14가 1만원 싸고, 장거리 힐 안정감과 4E 와이드는 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
+  <li><strong>SC 라인</strong>: 슈퍼트레이너는 SC Trainer V3(FuelCell·풀카본) → <strong>SC 레벨</strong>(인피니온·Energy Arc, 힐 스택 38.3mm 실측)로, 레이싱은 SC Elite V5(100% PEBA) → <strong>V6</strong>(인피니온)로 넘어갔습니다. V6는 더 빠른 대신 핏이 좁아져, 발볼 넓은 러너에게는 V5가 여전히 의미가 있습니다.</li>
 </ul>
 
 <h2>7. 정직하게 — 뉴발란스 안정화는 사실 860 하나뿐</h2>
@@ -4247,7 +4247,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td>해외 Narrow / 표준 / 2E / X-Wide (한국 공식몰 미등재, 2026-10-20)</td><td>295g</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>330g</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>332g</td></tr>
     <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>FLUIDSUPPORT</td><td>표준 / 2E / 4E</td><td>중량급</td></tr>
     <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>표준 토박스가 넓음</td><td>쿠션급</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>J-Frame</td><td>표준 / 와이드</td><td>경량</td></tr>
@@ -7233,7 +7233,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
-    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 261g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
+    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 255g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
     <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·와이드 옵션), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
   </ul>
 </div>
@@ -7252,7 +7252,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>쿠션</th><th>무게</th><th>드롭</th><th>발볼</th><th>가격</th><th>특징</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>261g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
+    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>255g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>281g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
     <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
@@ -7262,7 +7262,7 @@ export const posts_2026_06: BlogPost[] = [
 </table>
 
 <h2>👑 종합 톱픽 — 뉴발란스 1080 v15</h2>
-<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 40mm 힐 스택의 푹신함을 갖추고도 <strong>261g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
+<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 37mm 힐 스택(실측)의 푹신함을 갖추고도 <strong>255g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
 
 <div class="callout tip">
   <span class="callout-icon">🖥️</span>
@@ -7274,7 +7274,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>목적별 베스트</h2>
 <ul>
-  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(261g)</li>
+  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
   <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
@@ -7307,7 +7307,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong><a href="/shoes/asics-gel-kayano-33">카야노 33</a></strong> — 실측 스택 36.8mm에 반발은 평범(에너지 리턴 힐 50%). 느린 페이스에서 부드럽고 안정적인 대신 속도를 올리면 단단해지는 "차분한 지지형"</li>
     <li><strong><a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a></strong> — 드롭 10mm·내구 800km로 가장 푹신하고 오래가는 프리미엄. 종아리·아킬레스 편한 쪽</li>
-    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 낮은 드롭(6mm)의 정공법 안정화. 묵직하지만 든든</li>
+    <li><strong><a href="/shoes/new-balance-860-v15">860 v15</a></strong> — 가장 저렴(18만원대)하고 드롭 7.6mm(실측, 브랜드 표기 6mm)의 정공법 안정화. 묵직하지만 든든</li>
   </ul>
 </div>
 
@@ -7326,9 +7326,9 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>지지 방식</td><td>FLUIDSUPPORT</td><td>GuideRails</td><td>듀얼 폼+EVA 플레이트</td></tr>
-    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>32 / 26mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>6mm</td></tr>
-    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>330g</td></tr>
+    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>40 / 32mm</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>7.6mm</td></tr>
+    <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>332g</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 6</td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
     <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
@@ -7339,7 +7339,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 30~32의 4D Guidance 대신 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
   <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
-  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 6mm로 낮고 330g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
+  <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 7.6mm(실측, 브랜드 표기 6mm)에 332g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
 </ul>
 
 <div class="callout tip">

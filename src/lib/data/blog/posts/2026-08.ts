@@ -1362,7 +1362,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026',
     title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 259,000원, 정반대 해법 | 플레이트로 밀 것인가, 폼으로 받칠 것인가',
     description:
-      '뉴발란스 SC 레벨(SC Rebel V1)이 8월 22일 한국에 풀리면서 아식스 슈퍼블라스트 3와 정가가 259,000원으로 똑같아졌습니다. 그런데 설계는 정반대입니다 — SC 레벨은 218g·스택 40mm·드롭 4mm에 Energy Arc 플레이트를 넣은 "플레이트 해법", 슈퍼블라스트 3는 239g·스택 46.5mm·드롭 8mm에 플레이트가 아예 없는 "폼 해법"입니다. 무게 21g, 스택 6.5mm, 드롭 4mm가 한꺼번에 갈립니다. 여기에 발볼이 결정타로 붙습니다 — 좁다는 평을 받은 SC 레벨엔 와이드 2E가 있고, 표준폭인 슈퍼블라스트 3엔 와이드가 없습니다. 두 신발의 실측값과 한국 러너 관점 선택 기준을 정리했습니다.',
+      '뉴발란스 SC 레벨(SC Rebel V1)이 8월 22일 한국에 풀리면서 아식스 슈퍼블라스트 3와 정가가 259,000원으로 똑같아졌습니다. 그런데 설계는 정반대입니다 — SC 레벨은 공식 218g·스택 40mm·드롭 4mm에 Energy Arc 플레이트를 넣은 "플레이트 해법", 슈퍼블라스트 3는 공식 239g·스택 46.5mm·드롭 8mm에 플레이트가 아예 없는 "폼 해법"입니다. 공식 수치로는 무게 21g, 스택 6.5mm, 드롭 4mm가 한꺼번에 갈리지만, RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라 드롭 차이는 표기만큼 크지 않습니다. 여기에 발볼이 결정타로 붙습니다 — 좁다는 평을 받은 SC 레벨엔 와이드 2E가 있고, 표준폭인 슈퍼블라스트 3엔 와이드가 없습니다. 두 신발의 실측값과 한국 러너 관점 선택 기준을 정리했습니다.',
     thumbnail: '/images/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-22',
@@ -1373,8 +1373,8 @@ export const posts_2026_08: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>정가가 259,000원으로 똑같습니다.</strong> 그런데 훈련과 레이스를 한 켤레로 묶는 "슈퍼 트레이너"라는 같은 목표를 <strong>정반대로 풀었습니다</strong> — <a href="/shoes/new-balance-sc-rebel">SC 레벨</a>은 플레이트를 넣어 <strong>가볍고 낮게</strong>(218g·40mm), <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>는 플레이트를 빼고 <strong>두껍고 무겁게</strong>(239g·46.5mm) 갔습니다</li>
-    <li><strong>드롭이 두 배 차이</strong>입니다(4mm vs 8mm). 저드롭은 착지 때 아킬레스·종아리가 받는 부하를 키우는 방향이라, 이 4mm가 두 신발의 체감을 가르는 가장 큰 변수입니다</li>
+    <li><strong>정가가 259,000원으로 똑같습니다.</strong> 그런데 훈련과 레이스를 한 켤레로 묶는 "슈퍼 트레이너"라는 같은 목표를 <strong>정반대로 풀었습니다</strong> — <a href="/shoes/new-balance-sc-rebel">SC 레벨</a>은 플레이트를 넣어 <strong>가볍고 낮게</strong>(공식 218g·40mm), <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>는 플레이트를 빼고 <strong>두껍고 무겁게</strong>(239g·46.5mm) 갔습니다</li>
+    <li><strong>드롭은 표기상 두 배 차이</strong>입니다(공식 4mm vs 8mm). 그런데 RunRepeat 실측으로는 SC 레벨 드롭이 8.8mm라, 표기만 보고 저드롭 신발로 판단하면 어긋납니다</li>
     <li><strong>발볼에서 결론이 뒤집힙니다.</strong> 해외 리뷰가 "좁다"고 지적한 쪽은 SC 레벨인데, 정작 <strong>와이드(2E)가 있는 것도 SC 레벨</strong>입니다. 슈퍼블라스트 3는 표준폭이지만 와이드가 없습니다 — 발볼이 넓다면 선택지가 사실상 하나입니다</li>
   </ul>
 </div>
@@ -1383,7 +1383,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>대회에서도 신을 생각이면 SC 레벨</strong>, <strong>훈련량을 받아내는 게 우선이면 슈퍼블라스트 3</strong>입니다. 218g은 레이싱화 영역(<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>가 198g입니다)에 발을 걸치고 있고, 46.5mm 스택은 롱런 뒤 다리에 남는 걸 줄이는 쪽입니다. 다만 <strong>발볼이 넓으면 이 비교는 성립하지 않습니다</strong> — 와이드가 있는 SC 레벨 2E가 유일한 답입니다. SC 레벨 구매 경로는 <a href="/blog/new-balance-sc-rebel-korea-launch-2026">한국 출시 정리</a>, 해외 평가 배경은 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰</a>에 있습니다.</p>
+    <p><strong>대회에서도 신을 생각이면 SC 레벨</strong>, <strong>훈련량을 받아내는 게 우선이면 슈퍼블라스트 3</strong>입니다. 207g(실측)은 레이싱화 영역(<a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>가 198g입니다)에 발을 걸치고 있고, 46.5mm 스택은 롱런 뒤 다리에 남는 걸 줄이는 쪽입니다. 다만 <strong>발볼이 넓으면 이 비교는 성립하지 않습니다</strong> — 와이드가 있는 SC 레벨 2E가 유일한 답입니다. SC 레벨 구매 경로는 <a href="/blog/new-balance-sc-rebel-korea-launch-2026">한국 출시 정리</a>, 해외 평가 배경은 <a href="/blog/new-balance-sc-rebel-preview-2026">프리뷰</a>에 있습니다.</p>
   </div>
 </div>
 
@@ -1416,15 +1416,15 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>이 신발에서 가장 특이한 선택은 플레이트의 <strong>위치</strong>입니다. 보통 플레이트는 폼 사이에 끼워 넣는데, SC 레벨은 Energy Arc를 <strong>지면 쪽</strong>에 깔았습니다. 뒤쪽은 미드풋을 잡아주고 앞쪽은 밀어주는 식으로 역할을 나눈 구조입니다. Road Trail Run 멀티 테스터가 9.99/10과 9.5/10을 매기고 Believe in the Run이 A Tier와 함께 "역대 최고의 뉴발란스 러닝화"라는 표현을 쓴 이유가 여기 있습니다 — 폼이 물러도 플랫폼이 무너지지 않는다는 평가입니다. 플레이트 자체가 어떻게 작동하는지는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>에 정리해뒀습니다.</p>
 
-<p>그 결과가 <strong>218g</strong>입니다. 스택 40mm를 얹고도 이 무게라, 훈련화보다는 레이싱화 쪽에 발을 걸칩니다. 같은 뉴발란스 카본 레이서 SC 엘리트 v5가 198g이니 차이가 20g에 불과합니다. 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(278g)와 비교하면 60g이 빠졌습니다.</p>
+<p>그 결과가 <strong>207g</strong>(RunRepeat 실측)입니다. 힐 스택 38.3mm(실측)를 얹고도 이 무게라, 훈련화보다는 레이싱화 쪽에 발을 걸칩니다. 같은 뉴발란스 카본 레이서 SC 엘리트 v5가 198g이니 차이가 9g에 불과합니다. 대체 대상인 <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>(278g)와 비교하면 71g이 빠졌습니다.</p>
 
-<p>약점은 둘입니다. 첫째, <strong>드롭 4mm에 40mm 스택</strong>이라 종아리·아킬레스 부하가 실재합니다. 8mm대 데일리에서 곧바로 넘어오면 초반 몇 주가 뻐근할 수 있고, 아킬레스건염 이력이 있으면 주력으로 두기 어렵습니다. 둘째, <strong>내구가 아직 미지수</strong>입니다. 랩 마모 측정이 없어 400~500km로 추정할 뿐이고, 이 값이면 km당 약 576원으로 슈퍼블라스트 3보다 비쌉니다.</p>
+<p>약점은 둘입니다. 첫째, <strong>38mm대 스택에 플레이트</strong>가 더해진 구성이라 종아리·아킬레스 부하가 실재합니다(브랜드 표기 드롭은 4mm지만 RunRepeat 실측은 8.8mm라 저드롭 부담은 표기보다 작습니다). 플레이트 신발 경험 없이 곧바로 넘어오면 초반 몇 주가 뻐근할 수 있고, 아킬레스건염 이력이 있으면 주력으로 두기 어렵습니다. 둘째, <strong>내구가 아직 미지수</strong>입니다. 랩 마모 측정이 없어 400~500km로 추정할 뿐이고, 이 값이면 km당 약 576원으로 슈퍼블라스트 3보다 비쌉니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 훈련과 대회를 한 켤레로 묶고 싶은 러너, 슈퍼 트레이너의 240g대가 둔하게 느껴지던 러너, SC 트레이너 v3에서 갈아탈 뉴발란스 사용자, 그리고 <strong>발볼이 넓어 슈퍼 트레이너 선택지가 없던 러너(2E 한정)</strong>.</p>
 
 <h2>슈퍼블라스트 3 — 플레이트 없이 46.5mm로 받친다</h2>
 
-<p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 239g으로 21g 무겁습니다.</p>
+<p>이쪽은 반대로 갔습니다. 플레이트를 아예 넣지 않고 <strong>FF LEAP + FF BLAST PLUS</strong> 두 겹의 폼으로 46.5mm를 쌓았습니다. 스택이 공식 기준 6.5mm 더 높으니 20km를 넘긴 뒤 다리에 쌓이는 피로가 확실히 덜하고, 우리 DB 기준 쿠션 점수도 만점(10)입니다. 대신 무게가 공식 239g으로 21g 무겁습니다.</p>
 
 <p>플레이트가 없다는 게 곧 "느리다"는 뜻은 아닙니다. 반발 점수는 9로 SC 레벨과 같고, 적정 페이스도 4:00~5:30으로 겹칩니다. 차이는 <strong>추진의 성격</strong>입니다 — 플레이트가 굴려주는 느낌이 아니라 폼이 눌렸다 튀어나오는 느낌에 가깝습니다. 같은 무플레이트 계열인 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>와의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">별도 글</a>에서 다뤘습니다.</p>
 
@@ -1438,9 +1438,9 @@ export const posts_2026_08: BlogPost[] = [
 
 <ul>
   <li><strong>발볼이 넓다</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 2E</a>. 역설적이지만 "좁다"고 평가받은 쪽에만 와이드가 있습니다. 슈퍼블라스트 3는 표준폭 단일이라 이 조건에서 후보가 못 됩니다</li>
-  <li><strong>이 신발로 대회도 뛴다</strong> → SC 레벨. 218g은 레이싱화 영역이고 플레이트가 후반 추진을 돕습니다</li>
+  <li><strong>이 신발로 대회도 뛴다</strong> → SC 레벨. 207g(실측)은 레이싱화 영역이고 플레이트가 후반 추진을 돕습니다</li>
   <li><strong>주간 거리가 많다 / 롱런 비중이 크다</strong> → 슈퍼블라스트 3. 46.5mm 스택과 500~600km 내구가 훈련 부하를 받아냅니다</li>
-  <li><strong>아킬레스·종아리가 약하거나 저드롭이 처음</strong> → 슈퍼블라스트 3. 4mm와 8mm의 차이는 생각보다 큽니다</li>
+  <li><strong>아킬레스·종아리가 약하거나 플레이트 신발이 처음</strong> → 슈퍼블라스트 3. SC 레벨은 드롭이 표기 4mm·실측 8.8mm라, 변수는 드롭보다 높은 스택과 플레이트 조합입니다</li>
   <li><strong>km당 비용을 따진다</strong> → 슈퍼블라스트 3(약 471원). SC 레벨은 약 576원이고 그마저 추정치입니다</li>
   <li><strong>데일리 조깅이 주 용도</strong> → 둘 다 과합니다. 플레이트도 46mm 스택도 조깅 페이스에서는 이점이 크지 않습니다. <a href="/shoes/new-balance-rebel-v5">퓨얼셀 레벨 v5</a> 같은 경량 데일리가 맞습니다</li>
 </ul>
@@ -1449,7 +1449,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">이름이 비슷해서 생기는 오해</p>
-    <p><strong>SC 레벨과 퓨얼셀 레벨 v5는 다른 계보입니다.</strong> 레벨 v5는 220g·33/27mm·<strong>무플레이트</strong>의 유연한 경량 데일리이고, SC 레벨은 218g·40/36mm·플레이트가 들어간 슈퍼 트레이너입니다. 무게는 거의 같지만 스택이 7mm 차이 나고 성격이 반대라, "레벨의 업그레이드"로 생각하고 사면 어긋납니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">계급도</a>에 있습니다.</p>
+    <p><strong>SC 레벨과 퓨얼셀 레벨 v5는 다른 계보입니다.</strong> 레벨 v5는 220g·33/27mm·<strong>무플레이트</strong>의 유연한 경량 데일리이고, SC 레벨은 207g·38.3/29.5mm(RunRepeat 실측)·플레이트가 들어간 슈퍼 트레이너입니다. 무게는 SC 레벨이 13g 가볍고 힐 스택이 5mm가량 높으며 성격이 반대라, "레벨의 업그레이드"로 생각하고 사면 어긋납니다. 뉴발란스 라인 전체 정리는 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">계급도</a>에 있습니다.</p>
   </div>
 </div>
 
@@ -1466,11 +1466,11 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 왜 쿠션 점수가 높나요?</p>
-    <p class="faq-a">A. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
+    <p class="faq-a">A. 무게와 쿠션은 대체로 같이 움직입니다. 폼을 더 쌓으면 충격을 더 흡수하지만 그만큼 무거워집니다. 슈퍼블라스트 3는 46.5mm를 쌓아 쿠션을 가져가고 239g을 받아들인 쪽이고, SC 레벨은 40mm로 낮추고 플레이트로 추진을 보태 218g을 지킨 쪽입니다. 공식 수치 기준으로 21g과 6.5mm를 맞바꾼 셈이라 어느 쪽이 우월한 게 아니라 용도의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 첫 슈퍼 트레이너로는 어느 쪽이 낫나요?</p>
-    <p class="faq-a">A. 슈퍼블라스트 3입니다. 8mm 드롭이라 기존 데일리에서 넘어올 때 적응 부담이 적고, 플레이트가 없어 페이스를 강제하지 않습니다. SC 레벨의 4mm 드롭 + 플레이트 조합은 어느 정도 주력이 쌓인 뒤가 안전합니다. 참고로 둘 다 입문용 첫 러닝화로는 적합하지 않습니다 — 슈퍼 트레이너는 이미 훈련 루틴이 있는 러너를 전제로 한 카테고리입니다.</p>
+    <p class="faq-a">A. 슈퍼블라스트 3입니다. 8mm 드롭이라 기존 데일리에서 넘어올 때 적응 부담이 적고, 플레이트가 없어 페이스를 강제하지 않습니다. SC 레벨의 높은 스택 + 플레이트 조합(드롭은 표기 4mm·실측 8.8mm)은 어느 정도 주력이 쌓인 뒤가 안전합니다. 참고로 둘 다 입문용 첫 러닝화로는 적합하지 않습니다 — 슈퍼 트레이너는 이미 훈련 루틴이 있는 러너를 전제로 한 카테고리입니다.</p>
   </div>
 </div>
 
@@ -2521,12 +2521,12 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '왜 화제가 된 신발인가요?',
         answer:
-          '해외 첫 리뷰 점수가 이례적으로 높습니다. Road Trail Run 테스터가 9.99/10을 줬고, Believe in the Run은 "역대 최고의 뉴발란스 러닝화"라는 표현을 썼습니다. 218g에 스택 40/36mm, 새 Infinion 폼과 지면 쪽에 깔린 Energy Arc 플레이트로 훈련과 레이스를 한 켤레로 커버하는 슈퍼 트레이너 포지션이며, SC 트레이너 v3를 사실상 대체합니다.',
+          '해외 첫 리뷰 점수가 이례적으로 높습니다. Road Trail Run 테스터가 9.99/10을 줬고, Believe in the Run은 "역대 최고의 뉴발란스 러닝화"라는 표현을 썼습니다. 207g(RunRepeat 실측)에 힐 스택 38.3mm(실측, 브랜드 표기 40/36mm), 새 Infinion 폼과 지면 쪽에 깔린 Energy Arc 플레이트로 훈련과 레이스를 한 켤레로 커버하는 슈퍼 트레이너 포지션이며, SC 트레이너 v3를 사실상 대체합니다.',
       },
       {
         question: '발볼이 넓은데 온라인으로 바로 사도 될까요?',
         answer:
-          '표준폭(D)이라면 권하지 않습니다 — Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했습니다. 다만 8월 22일 출시와 함께 뉴발란스 코리아에 남성 2E 와이드가 함께 올라온 것을 확인했으므로, 발볼이 넓다면 2E를 고르면 됩니다. 그래도 저드롭·플레이트 조합이라 착화감 편차가 크니 런허브 여의도 체험을 거치는 편이 안전합니다. 발볼이 보통이거나 좁다면 D 표준폭의 딱 감기는 핏이 오히려 장점이 될 수 있습니다.',
+          '표준폭(D)이라면 권하지 않습니다 — Road Trail Run과 Doctors of Running 두 곳이 독립적으로 갑피가 좁다고 지적했습니다. 다만 8월 22일 출시와 함께 뉴발란스 코리아에 남성 2E 와이드가 함께 올라온 것을 확인했으므로, 발볼이 넓다면 2E를 고르면 됩니다. 그래도 고스택·플레이트 조합이라 착화감 편차가 크니 런허브 여의도 체험을 거치는 편이 안전합니다. 발볼이 보통이거나 좁다면 D 표준폭의 딱 감기는 핏이 오히려 장점이 될 수 있습니다.',
       },
     ],
     content: `
@@ -2555,7 +2555,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>모델</td><td>뉴발란스 SC 레벨 (SuperComp Rebel) — 슈퍼 트레이너 라인 신규</td></tr>
     <tr><td>단독 발매</td><td><strong>2026년 8월 22일(토) 오전 11시</strong></td></tr>
     <tr><td>발매가</td><td><strong>259,000원</strong> (글로벌 $190~200)</td></tr>
-    <tr><td>핵심 스펙</td><td>218g · 스택 40/36mm · 드롭 4mm · Infinion 폼 + Energy Arc 플레이트</td></tr>
+    <tr><td>핵심 스펙</td><td>207g(실측) · 스택 38.3/29.5mm(실측) · 드롭 8.8mm(실측, 브랜드 4mm) · Infinion 폼 + Energy Arc 플레이트</td></tr>
     <tr><td>체험</td><td><strong>8월 13일(목)부터 런허브 여의도</strong></td></tr>
     <tr><td>선공개 경로</td><td>런유어웨이 패키지 — 8/20(목) 쉐이크아웃런 패키지 · 8/21(금) SC 레벨 패키지, 매장 선착순</td></tr>
   </tbody>
@@ -2595,7 +2595,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <ul>
   <li><strong>사야 할 사람</strong> — 템포·인터벌·롱런을 한 켤레로 해결하고 싶은 중급 이상 러너, <a href="/shoes/new-balance-sc-trainer-v3">SC 트레이너 v3</a>에서 넘어갈 타이밍인 사람, 카본 레이서까진 부담스러운 마라토너</li>
-    <li><strong>다시 생각할 사람</strong> — 발볼 넓거나 발등 높은 러너(체험 필수), <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>의 말랑한 감각이 좋아서 신는 사람(성격이 다른 신발입니다), 러닝 입문자(드롭 4mm + 플레이트 40mm 스택은 종아리 부담이 큽니다)</li>
+    <li><strong>다시 생각할 사람</strong> — 발볼 넓거나 발등 높은 러너(체험 필수), <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>의 말랑한 감각이 좋아서 신는 사람(성격이 다른 신발입니다), 러닝 입문자(플레이트가 들어간 38mm대 고스택은 종아리·발목 부담이 큽니다)</li>
   <li><strong>뉴발란스 라인에서의 위치</strong>가 궁금하면 <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 전체 그림을 확인하세요</li>
 </ul>
 
