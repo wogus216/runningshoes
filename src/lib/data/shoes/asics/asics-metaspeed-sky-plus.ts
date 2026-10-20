@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['레이싱', '마라톤', '카본플레이트', '슈퍼슈즈'],
   specs: {
     weight: 205,
-    cushioning: 7,
-    responsiveness: 10,
+    cushioning: 8,
+    responsiveness: 9,
     stability: 6,
     drop: 5,
     durability: 250,

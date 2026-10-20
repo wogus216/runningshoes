@@ -24,7 +24,7 @@ export const shoe: Shoe = {
   tags: ['레이싱', '카본 플레이트', 'LightSpray', '마라톤', '초경량'],
   specs: {
     weight: 167,
-    cushioning: 9,
+    cushioning: 10,
     responsiveness: 10,
     stability: 6,
     drop: 3,

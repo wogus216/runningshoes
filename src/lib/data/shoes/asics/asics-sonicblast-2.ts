@@ -26,8 +26,8 @@ export const shoe: Shoe = {
   tags: ['템포', '슈퍼트레이너', '고스택', 'ASTROPLATE', '신상'],
   specs: {
     weight: 242,
-    cushioning: 9,
-    responsiveness: 9,
+    cushioning: 10,
+    responsiveness: 8,
     stability: 6,
     drop: 8,
     durability: 500,

@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   editorComment: 'RunRepeat 실측 에너지 리턴이 힐 75.3%·전족 79.4%로, v5에서 아쉬웠던 반발력을 확실히 끌어올렸습니다. 190g의 가벼운 무게와 Infinion 폼, Energy Arc 카본 플레이트 조합은 5K부터 풀코스까지 기록을 노리는 러너에게 맞습니다. 다만 v5의 강점이던 넉넉한 발볼은 유지되지 않았습니다. 토박스는 71.4mm(랩 평균 73.2mm)로 RunRepeat가 "tapered"라고 표현했고 전체 핏도 좁고 반 치수 작게 나온다고 평가했습니다. 한국 공식몰에 남성 2E 와이드가 있으니 발볼이 넓은 한국 러너는 2E로 시착하고 국내 판매가 389,000원이라는 높은 가격도 함께 고려해야 합니다.',
   specs: {
     weight: 190,
-    cushioning: 8,
+    cushioning: 9,
     responsiveness: 10,
     stability: 5,
     drop: 14,

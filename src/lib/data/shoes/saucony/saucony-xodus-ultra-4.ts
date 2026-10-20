@@ -20,8 +20,8 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 309,
-    cushioning: 9,
-    responsiveness: 6,
+    cushioning: 8,
+    responsiveness: 9,
     stability: 7,
     drop: 6,
     durability: 700,

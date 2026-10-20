@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   tags: ['데일리', '템포', 'ZoomX', '에어 줌', '신상'],
   specs: {
     weight: 258,
-    cushioning: 8,
+    cushioning: 9,
     responsiveness: 8,
     stability: 5,
     drop: 10,

@@ -25,7 +25,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 292,
     cushioning: 9,
-    responsiveness: 5,
+    responsiveness: 6,
     stability: 7,
     drop: 7.9,
     durability: 500,
@@ -90,7 +90,7 @@ export const shoe: Shoe = {
     weight: '292g (RunRepeat 실측)',
     stackHeight: '힐 37.3mm / 포어풋 29.4mm',
     drop: '7.9mm 실측 / 6mm 브랜드 표기',
-    midsole: 'Helion + CloudTec Phase',
+    midsole: 'Helion + CloudTec Phase (에너지 리턴 힐 48.3% — 전족 값 미게시로 반응성 점수는 힐 기준)',
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 메쉬',
