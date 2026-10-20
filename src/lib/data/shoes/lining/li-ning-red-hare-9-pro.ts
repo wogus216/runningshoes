@@ -120,22 +120,6 @@ export const shoe: Shoe = {
       source: 'editor',
       sourceUrl: 'https://www.weeviews.com/reviews/4419/li-ning-red-hare-pro-9',
     },
-    {
-      userType: 'WeeViews (50마일 테스트)',
-      rating: 5,
-      text:
-        '아마존 99달러짜리인데 호카 마하·아식스 노바블라스트·브룩스 하이페리온과 충분히 경쟁하면서 40~50달러 더 싸다. 스텝인 핏이 좋고 50마일을 신어도 힐슬립이 없었으며, 트랙션과 내구성도 인상적이다. 다만 앞발 통기성이 아쉽고 라스트가 좁다.',
-      source: 'community',
-      sourceUrl: 'https://www.weeviews.com/reviews/4419/li-ning-red-hare-pro-9',
-    },
-    {
-      userType: '중국 사용자 후기 (Shihuo)',
-      rating: 4,
-      text:
-        '생각보다 가볍고 정사이즈로 맞다. 비교적 여유 있는 착화감이라 길들임 없이 신자마자 걷기·달리기 모두 무난하다. 일상 훈련용으로 만족스럽다.',
-      source: 'community',
-      sourceUrl: 'https://www.shihuo.cn/page/pcGoodsDetail?goodsId=8470464',
-    },
   ],
 
   editorComment:

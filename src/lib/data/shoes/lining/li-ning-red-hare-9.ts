@@ -118,14 +118,6 @@ export const shoe: Shoe = {
       sourceUrl: 'https://www.shopnings.com/li-ning-red-hare-9-men-s-running-shoes/',
     },
     {
-      userType: '중국 사용자 후기 (Shihuo)',
-      rating: 4,
-      text:
-        'LIGHT FOAM ULTRA가 두꺼운 마시멜로를 밟는 듯한 쿠션감이다. 학생 체력검정과 통근, 가벼운 훈련까지 한 켤레로 해결되는 가성비가 좋다. 500km를 신어도 전족부 외에는 마모가 거의 없었다.',
-      source: 'community',
-      sourceUrl: 'https://m.shihuo.cn/page/findCommunityDetail?id=5751423',
-    },
-    {
         userType: '구매 경로 주의 — 국내 정식 유통 없음',
         text: '가격 대비 사양은 좋지만 구매 경로를 먼저 고려해야 합니다. 국내 정식 유통이 없어 구매대행이나 직구로만 접근 가능하고, 하자가 있어도 AS를 받을 곳이 없습니다. 사이즈 교환도 어려우므로 발볼·사이즈에 확신이 없다면 위험이 큽니다. 성능 자체는 320g으로 무거운 편이지만 단층 폼의 쿠션이 부드럽고, 9mm의 높은 드롭이라 뒤꿈치 착지에 무리가 없습니다. 전족부가 넓게 나와 발볼 넓은 러너에게 여유가 있습니다.',
       },

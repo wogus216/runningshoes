@@ -119,22 +119,6 @@ export const shoe: Shoe = {
       source: 'editor',
       sourceUrl: 'https://www.roadtrailrun.com/2026/03/2026-chinese-super-trainers-reviewed.html',
     },
-    {
-      userType: 'Road Trail Run (해외 실측)',
-      rating: 4.5,
-      text:
-        '달리기 재미가 뛰어난 신발이다. 다만 로커형이 아니라 전통적인 전족부 플렉스 라이드에 가깝다. 고에너지 압축-복원 방식은 나이키 줌에어와 비슷하지만 공기가 아니라 고체 폼이라는 점이 다르다. 넓은 아웃솔과 높은 미드솔 사이드월로 높은 스택 대비 안정적이다.',
-      source: 'community',
-      sourceUrl: 'https://www.roadtrailrun.com/2026/03/2026-chinese-super-trainers-reviewed.html',
-    },
-    {
-      userType: 'WeeViews (약 100km 테스트)',
-      rating: 4,
-      text:
-        '포고스틱처럼 튀는 반발이 인상적이고, 100km를 신어도 아웃솔 마모가 거의 없을 만큼 내구성이 좋다. 다만 핏이 전반적으로 좁아 발볼 넓은 러너에게는 답답할 수 있다.',
-      source: 'community',
-      sourceUrl: 'https://www.weeviews.com/reviews/4404/li-ning-red-hare-ultra',
-    },
   ],
 
   editorComment:
