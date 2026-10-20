@@ -1273,7 +1273,7 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td>가격(한국)</td><td>339,000원</td><td>329,000원</td><td><strong>319,000원</strong></td></tr>
     <tr><td>무게</td><td>201g</td><td>205g</td><td><strong>198g</strong></td></tr>
-    <tr><td>스택(힐/전족)</td><td>38 / 30mm</td><td>39 / <strong>34mm</strong></td><td>39 / 29mm</td></tr>
+    <tr><td>스택(힐/전족)</td><td>38 / 30mm</td><td>33.5 / <strong>30.8mm</strong></td><td>39 / 29mm</td></tr>
     <tr><td>드롭</td><td>9mm</td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
     <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
     <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
@@ -1291,7 +1291,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
 
 <h2>아식스 메타스피드 스카이+ — 보폭을 늘리는 스트라이드형</h2>
-<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(10/10)을 내면서, 전족 스택이 34mm로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
+<p>메타스피드는 주법에 따라 라인이 갈리는데, <strong>스카이+</strong>는 <strong>보폭(스트라이드)을 늘려 뛰는 러너</strong>를 위한 모델입니다(피치를 올리는 러너용은 엣지). FF Turbo+ 폼과 카본 플레이트로 반발(10/10)을 내면서, 전족 스택이 30.8mm(실측)로 셋 중 가장 두꺼워 착지가 안정적입니다. 드롭도 5mm로 낮아 미드풋~포어풋 착지 러너에게 자연스럽습니다. <strong>와이드(2E)</strong>가 있어 발볼 대응도 됩니다.</p>
 <p>약점은 <strong>주법 의존성</strong>입니다. 보폭형이 아닌 피치형 러너에겐 스카이가 최적이 아닐 수 있어, 자신의 주법을 알고 골라야 합니다. 낮은 드롭이 힐 스트라이커에겐 이질적일 수도 있습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 보폭을 늘려 스피드를 내는 러너, 전족 쿠션과 안정을 원하는 분, 낮은 드롭(5mm)을 선호하는 미드풋 착지 러너.</p>
 
@@ -1422,7 +1422,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026',
     title: '아디다스 하이퍼부스트 엣지 vs 아식스 슈퍼블라스트 3 — 무플레이트 고스택 슈퍼트레이너 대결',
     description:
-      '카본 없이 45mm 고스택으로 승부하는 두 슈퍼 트레이너, 아디다스 하이퍼부스트 엣지와 아식스 슈퍼블라스트 3을 비교합니다. 스택·무게·반발은 쌍둥이처럼 닮았지만, 하이퍼부스트 엣지는 700km 내구의 훈련 특화, 슈퍼블라스트 3은 239g 경량의 레이스데이 지향입니다. 갑피 완성도·가성비·용도를 갈랐습니다.',
+      '카본 없이 45mm 고스택으로 승부하는 두 슈퍼 트레이너, 아디다스 하이퍼부스트 엣지와 아식스 슈퍼블라스트 3을 비교합니다. 스택·무게·반발은 쌍둥이처럼 닮았지만, 하이퍼부스트 엣지는 700km 내구의 훈련 특화, 슈퍼블라스트 3은 235g 경량의 레이스데이 지향입니다. 갑피 완성도·가성비·용도를 갈랐습니다.',
     thumbnail: '/images/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',
@@ -1433,9 +1433,9 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>스펙은 쌍둥이, 성격은 다르다</strong> — <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(45mm·247g)와 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(46.5mm·239g) 모두 카본 없는 초고스택 슈퍼 트레이너. 스택·무게·반발이 거의 같습니다</li>
-    <li><strong>가르는 건 내구와 용도</strong> — 엣지는 700km 내구·km당 356원의 <strong>훈련 특화</strong>, 슈퍼블라스트 3은 239g 경량·낮은 내구(550km)의 <strong>레이스데이·템포 지향</strong></li>
-    <li>둘 다 <strong>와이드 없음</strong>이고 발볼은 표준. 엣지는 <strong>뻣뻣한 힐 칼라</strong>가 복사뼈를 파고든다는 지적이, 슈퍼블라스트 3은 검증된 갑피 완성도가 특징입니다</li>
+    <li><strong>스펙은 쌍둥이, 성격은 다르다</strong> — <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(45mm·247g)와 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(46.5mm·235g) 모두 카본 없는 초고스택 슈퍼 트레이너. 스택·무게·반발이 거의 같습니다</li>
+    <li><strong>가르는 건 내구와 용도</strong> — 엣지는 700km 내구·km당 356원의 <strong>훈련 특화</strong>, 슈퍼블라스트 3은 235g 경량·낮은 내구(550km)의 <strong>레이스데이·템포 지향</strong></li>
+    <li>둘 다 <strong>와이드 없음</strong>이고 발볼은 좁은 편. 엣지는 <strong>뻣뻣한 힐 칼라</strong>가 복사뼈를 파고든다는 지적이, 슈퍼블라스트 3은 검증된 갑피 완성도가 특징입니다</li>
   </ul>
 </div>
 
@@ -1448,14 +1448,14 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>하이퍼부스트 엣지</th><th>슈퍼블라스트 3</th></tr></thead>
   <tbody>
     <tr><td>가격(한국)</td><td><strong>249,000원</strong></td><td>259,000원</td></tr>
-    <tr><td>무게</td><td>247g</td><td><strong>239g</strong></td></tr>
+    <tr><td>무게</td><td>247g</td><td><strong>235g</strong></td></tr>
     <tr><td>스택(힐/전족)</td><td>45 / 38mm</td><td><strong>46.5 / 38.5mm</strong></td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Hyperboost Pro 폼</td><td>FF LEAP + FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
     <tr><td>쿠션 / 반발</td><td>10 / 9</td><td>10 / 9</td></tr>
     <tr><td>안정성</td><td>5</td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / 없음</td><td>표준 / 없음</td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편 / 없음</td><td>좁은 편 / 없음</td></tr>
     <tr><td>내구 / km당</td><td><strong>700km / 약 356원</strong></td><td>550km / 약 471원</td></tr>
     <tr><td>대표 용도</td><td>고스택 훈련·데일리</td><td>템포·레이스데이</td></tr>
   </tbody>
@@ -1468,14 +1468,14 @@ export const posts_2026_07: BlogPost[] = [
 <p><strong>✅ 이런 분께</strong> — 고스택 슈퍼 트레이너를 오래 신고 싶은 분, 훈련량이 많아 내구·가성비가 중요한 분, 힐 핏이 예민하지 않은 중립 발 러너.</p>
 
 <h2>아식스 슈퍼블라스트 3 — 가볍고 완성된 레이스데이</h2>
-<p>슈퍼블라스트 3은 아식스 슈퍼 트레이너의 정점입니다. FF LEAP과 FF BLAST PLUS의 이중 폼으로 <strong>46.5mm 최고 스택을 239g</strong>이라는 놀라운 경량으로 구현했고, 카본 없이도 굴러가는 로커가 템포와 레이스데이를 아우릅니다. 무엇보다 아식스답게 <strong>갑피 완성도</strong>가 안정적이라, 엣지가 지적받는 힐 이슈 없이 발을 편안하게 감쌉니다.</p>
+<p>슈퍼블라스트 3은 아식스 슈퍼 트레이너의 정점입니다. FF LEAP과 FF BLAST PLUS의 이중 폼으로 <strong>46.5mm 최고 스택을 235g</strong>이라는 놀라운 경량으로 구현했고, 카본 없이도 굴러가는 로커가 템포와 레이스데이를 아우릅니다. 무엇보다 아식스답게 <strong>갑피 완성도</strong>가 안정적이라, 엣지가 지적받는 힐 이슈 없이 발을 편안하게 감쌉니다.</p>
 <p>약점은 <strong>내구성</strong>입니다. 550km 수준으로 엣지보다 짧고, 가격도 가장 비싼 259,000원이라 km당 비용(471원)이 높습니다. 레이스·포인트 훈련용으로 아껴 신는 성격입니다.</p>
 <p><strong>✅ 이런 분께</strong> — 가벼운 고스택으로 템포·레이스를 뛰고 싶은 분, 갑피 편안함을 중시하는 분, 훈련화와 레이싱화 사이 한 켤레를 원하는 분.</p>
 
 <h2>내게 맞는 건?</h2>
 <ul>
   <li><strong>오래 신을 훈련용 · 가성비 · 내구 우선</strong> → <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(700km)</li>
-  <li><strong>가볍게 · 템포/레이스데이 · 갑피 편안함</strong> → <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(239g)</li>
+  <li><strong>가볍게 · 템포/레이스데이 · 갑피 편안함</strong> → <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(235g)</li>
   <li><strong>힐 핏이 예민하다</strong> → 엣지의 뻣뻣한 힐 칼라는 Doctors of Running·Road Trail Run이 반복 지적한 부분이라 슈퍼블라스트 3이 안전. 반드시 시착 권장</li>
   <li><strong>가성비 슈퍼 트레이너를 원한다</strong> → 두 프리미엄 대신 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">에보 SL·마하 6</a>도 함께 보세요</li>
 </ul>
@@ -1492,7 +1492,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 괜찮을까요?</p>
-    <p class="faq-a">A. 둘 다 와이드 옵션이 없고 발볼은 표준입니다. 발볼이 아주 넓다면 두 신발 모두 시착이 필수이고, 고스택 슈퍼 트레이너 중 와이드가 필요하면 다른 카테고리(데일리 쿠션화의 와이드 모델)를 고려하는 편이 낫습니다.</p>
+    <p class="faq-a">A. 둘 다 와이드 옵션이 없고 발볼은 좁은 편입니다. 발볼이 아주 넓다면 두 신발 모두 시착이 필수이고, 고스택 슈퍼 트레이너 중 와이드가 필요하면 다른 카테고리(데일리 쿠션화의 와이드 모델)를 고려하는 편이 낫습니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 초보에게도 맞나요?</p>
@@ -1541,7 +1541,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF Blast Max + 전족 FF Turbo Squared</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / 7</td><td><strong>9</strong> / 7 <em>(실측 SA 143 · 리턴 55.4%)</em></td></tr>
     <tr><td>안정성</td><td><strong>7</strong></td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>표준 / <strong>2E 있음</strong></td><td>표준(71.0mm) / <strong>있음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>표준 / <strong>2E 있음</strong></td><td>좁은 편(71.0mm) / <strong>있음</strong></td></tr>
     <tr><td>평발 적합</td><td>보통</td><td>부적합(아치 지지 약)</td></tr>
     <tr><td>내구 / km당</td><td>600km / 약 282원</td><td>700km / 약 256원</td></tr>
     <tr><td>대표 용도</td><td>안정적 범용 데일리</td><td>경쾌한 고반발 데일리</td></tr>
@@ -1595,7 +1595,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
     title: '뉴발란스 1080 v15 vs 아식스 님버스 28 — 프리미엄 데일리 쿠션, 반발과 드롭이 가른다',
     description:
-      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 261g의 반응형, 님버스 28은 281g의 최대 쿠션입니다. 반발(7 vs 5/10)과 드롭(6 vs 8mm)이 만드는 주행감, 무게·스택·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
+      '프리미엄 데일리 쿠션화의 양대 산맥, 뉴발란스 1080 v15와 아식스 젤 님버스 28을 정면 비교합니다. 같은 20만원대 최상급 쿠션이지만 성격은 정반대 — 1080 v15는 261g의 반응형, 님버스 28은 278g의 최대 쿠션입니다. 반발(7 vs 5/10)과 드롭(6 vs 8mm)이 만드는 주행감, 무게·스택·발볼·무릎 보호·가성비를 한국 러너 관점에서 갈랐습니다.',
     thumbnail: '/images/blog/new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',
@@ -1606,8 +1606,8 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>같은 프리미엄 데일리 쿠션이지만 성격이 정반대</strong> — <a href="/shoes/new-balance-1080-v15">1080 v15</a>는 261g의 반응형, <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>은 281g의 최대 쿠션. 무게 차이는 <strong>20g</strong>으로 크지 않고, 갈리는 건 반발과 드롭입니다</li>
-    <li><strong>가볍고 경쾌하게, 롱런도 페이스를 살리고 싶다면 1080 v15</strong>(반발 7·드롭 6mm). <strong>최대한 푹신하게, 관절 보호와 회복주 위주라면 님버스 28</strong>(쿠션 10·스택 43.5mm)</li>
+    <li><strong>같은 프리미엄 데일리 쿠션이지만 성격이 정반대</strong> — <a href="/shoes/new-balance-1080-v15">1080 v15</a>는 261g의 반응형, <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>은 278g의 최대 쿠션. 무게 차이는 <strong>17g</strong>으로 크지 않고, 갈리는 건 반발과 드롭입니다</li>
+    <li><strong>가볍고 경쾌하게, 롱런도 페이스를 살리고 싶다면 1080 v15</strong>(반발 7·드롭 6mm). <strong>최대한 푹신하게, 관절 보호와 회복주 위주라면 님버스 28</strong>(쿠션 10·힐 스택 39.5mm)</li>
     <li>둘 다 <strong>와이드(2E) 옵션</strong>이 있어 발볼 넓은 한국 러너도 안심이고, 무릎 보호는 <strong>둘 다 최상(excellent)</strong>. 가격은 님버스가 1만원 저렴합니다</li>
   </ul>
 </div>
@@ -1621,8 +1621,8 @@ export const posts_2026_07: BlogPost[] = [
   <thead><tr><th>항목</th><th>뉴발란스 1080 v15</th><th>아식스 젤 님버스 28</th></tr></thead>
   <tbody>
     <tr><td>가격(한국)</td><td>209,000원</td><td><strong>199,000원</strong></td></tr>
-    <tr><td>무게</td><td><strong>261g</strong> (남성, 뉴발란스 공식)</td><td>281g</td></tr>
-    <tr><td>스택(힐/전족)</td><td>40 / 34mm</td><td><strong>43.5 / 35.5mm</strong></td></tr>
+    <tr><td>무게</td><td><strong>261g</strong> (남성, 뉴발란스 공식)</td><td>278g</td></tr>
+    <tr><td>스택(힐/전족)</td><td><strong>40</strong> / 34mm</td><td>39.5 / <strong>34.3mm</strong></td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>Infinion (질소 슈퍼크리티컬)</td><td>FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
@@ -1637,12 +1637,12 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준)입니다.</small></p>
 
 <h2>뉴발란스 1080 v15 — 프리미엄인데 가볍다</h2>
-<p>1080 v15의 정체성은 <strong>"프리미엄 쿠션인데 반응형"</strong>이라는 한 문장에 있습니다. 무게는 261g으로 님버스보다 20g 가벼운 정도라 결정적인 차이는 아닙니다. 새로 도입된 Infinion 질소 슈퍼크리티컬 폼이 부드러우면서도 반발(7/10)을 살려, 느린 조깅부터 페이스를 올린 롱런까지 한 켤레로 커버합니다. 드롭도 6mm로 낮아 발 앞쪽으로 자연스럽게 굴러가는 느낌이 좋습니다.</p>
+<p>1080 v15의 정체성은 <strong>"프리미엄 쿠션인데 반응형"</strong>이라는 한 문장에 있습니다. 무게는 261g으로 님버스보다 17g 가벼운 정도라 결정적인 차이는 아닙니다. 새로 도입된 Infinion 질소 슈퍼크리티컬 폼이 부드러우면서도 반발(7/10)을 살려, 느린 조깅부터 페이스를 올린 롱런까지 한 켤레로 커버합니다. 드롭도 6mm로 낮아 발 앞쪽으로 자연스럽게 굴러가는 느낌이 좋습니다.</p>
 <p>약점은 <strong>안정성(6/10)</strong>입니다. 스택이 높은 중립화 특성상 발이 심하게 안쪽으로 무너지는 과내전 러너에게는 지지가 부족할 수 있습니다. 님버스보다 km당 비용(348원)도 약간 높고요.</p>
 <p><strong>✅ 이런 분께</strong> — 프리미엄 쿠션의 보호는 원하지만 무거운 신발이 싫은 분, 데일리 한 켤레로 조깅과 롱런을 다 소화하고 싶은 분, 경쾌한 반발을 선호하는 중립 발 러너.</p>
 
 <h2>아식스 젤 님버스 28 — 구름 위의 최대 쿠션</h2>
-<p>님버스 28은 반대 방향으로 갑니다. <strong>스택 43.5mm, 쿠션 10/10</strong>의 아식스 최상급 쿠션화로, FF BLAST PLUS 폼이 착지 충격을 최대한 흡수합니다. 281g의 묵직함이 오히려 안정감(8/10)으로 작용해, 지친 다리로 뛰는 회복주나 장시간 서 있는 상황에서 발을 확실히 받쳐줍니다. km당 306원으로 가성비도 1080보다 낫고, 가격도 1만원 저렴합니다.</p>
+<p>님버스 28은 반대 방향으로 갑니다. <strong>힐 스택 39.5mm(실측), 쿠션 10/10</strong>의 아식스 최상급 쿠션화로, FF BLAST PLUS 폼이 착지 충격을 최대한 흡수합니다. 278g의 묵직함이 오히려 안정감(8/10)으로 작용해, 지친 다리로 뛰는 회복주나 장시간 서 있는 상황에서 발을 확실히 받쳐줍니다. km당 306원으로 가성비도 1080보다 낫고, 가격도 1만원 저렴합니다.</p>
 <p>약점은 <strong>반발(5/10)</strong>입니다. 푹신함을 극대화한 대신 페이스를 올리면 폼이 눌려 굼뜨게 느껴집니다. 무게도 있어 스피드 훈련용은 아닙니다.</p>
 <p><strong>✅ 이런 분께</strong> — 무릎·관절 보호가 최우선인 분, 체중이 있어 충격 흡수가 중요한 분, 빠르게 뛰기보다 편하고 푹신하게 오래 뛰고 싶은 분.</p>
 
@@ -1663,7 +1663,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 무게 차이가 실제로 체감되나요?</p>
-    <p class="faq-a">A. 크지 않습니다. 261g과 281g으로 한 발 20g 차이라, 체감은 무게보다 반발(7 vs 5/10)과 드롭(6 vs 8mm)에서 더 갈릴 가능성이 큽니다. 님버스는 그만큼 쿠션과 안정을 돌려주니, "반응성 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
+    <p class="faq-a">A. 크지 않습니다. 261g과 278g으로 한 발 17g 차이라, 체감은 무게보다 반발(7 vs 5/10)과 드롭(6 vs 8mm)에서 더 갈릴 가능성이 큽니다. 님버스는 그만큼 쿠션과 안정을 돌려주니, "반응성 vs 푹신함" 중 무엇을 우선하느냐의 문제입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 마라톤 풀코스에 신어도 되나요?</p>
@@ -1976,7 +1976,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>뭐랑 비교하면 되나</h2>
 <p>같은 <strong>플레이트 없는 슈퍼 트레이너</strong> 안에서 성격이 갈립니다. 참고로 아디다스는 이 신발을 "아디다스 최초의 무플레이트 슈퍼 트레이너"로 소개하는데, <strong>업계 최초는 아닙니다</strong> — 아식스 슈퍼블라스트가 먼저 이 자리를 열었습니다.</p>
 <ul>
-  <li><strong><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></strong>(25.9만·239g) — 가장 직접적인 경쟁작. 듀얼 폼이라 <strong>더 안정적이고 갑피 평가가 낫습니다.</strong> 대신 엣지가 단일 폼이라 라이드가 더 매끄럽습니다</li>
+  <li><strong><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></strong>(25.9만·235g) — 가장 직접적인 경쟁작. 듀얼 폼이라 <strong>더 안정적이고 갑피 평가가 낫습니다.</strong> 대신 엣지가 단일 폼이라 라이드가 더 매끄럽습니다</li>
   <li><strong><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></strong>(20.9만·223g) — 같은 아디다스지만 <strong>직접 경쟁이 아닙니다.</strong> Evo SL은 짧고 빠른 거리, 엣지는 길고 느린 거리 + 맥시멀 쿠션. <strong>더 싸고 가볍습니다</strong>(단 2026년 10월 한국 공식몰 기준 와이드는 없음, <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>)</li>
   <li><strong><a href="/shoes/asics-megablast">아식스 메가블라스트</a></strong> — 218g로 더 가볍고 빠르며 갑피가 낫지만, 덜 안정적이고 더 비쌉니다</li>
   <li><strong><a href="/shoes/nike-vomero-plus">나이키 보메로 플러스</a></strong>(272g) — 엣지가 25g 가볍고 전족부 반발이 강한 대신, 보메로가 더 안정적입니다</li>
@@ -2443,7 +2443,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>이 코스엔 어떤 신발이 맞을까</h2>
 <p>고저차 없는 평지 직선 아웃앤백은 <strong>카본 레이싱화의 장점이 가장 잘 나오는 조건</strong>입니다. 오르막에서 무게 부담이 생기거나 기술 구간에서 접지가 불안해질 일이 없으니까요.</p>
-<p><strong>하프 기록을 노린다면</strong> — 정점은 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>(30.9만)와 <a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a>(29.9만)입니다. 가격 부담이 크다면 <a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a>(22.9만)가 카본 플레이트를 갖추면서도 20만원대라 하프 입문 레이싱화로 현실적입니다. 카본화 자체가 처음이라면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 비교 가이드</a>에서 원리와 주의점을 먼저 확인하세요 — <strong>초보가 무작정 신으면 종아리 부담이 큽니다.</strong></p>
+<p><strong>하프 기록을 노린다면</strong> — 정점은 <a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a>(30.9만)와 <a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a>(29.9만)입니다. 가격 부담이 크다면 <a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a>(20.9만)가 카본 플레이트를 갖추면서도 20만원대라 하프 입문 레이싱화로 현실적입니다. 카본화 자체가 처음이라면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본화 비교 가이드</a>에서 원리와 주의점을 먼저 확인하세요 — <strong>초보가 무작정 신으면 종아리 부담이 큽니다.</strong></p>
 <p><strong>완주가 목표라면</strong> 레이싱화보다 쿠션 좋은 데일리화가 낫습니다. <a href="/shoes/nike-pegasus-42">페가수스 42</a>(16.9만)는 입문 올라운더로 무난하고, 무릎이 걱정된다면 맥스쿠션 <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>(19.9만)가 안전합니다. 21km를 얇고 딱딱한 레이싱화로 버티려다 발이 먼저 지치는 경우가 많습니다.</p>
 <p>발볼·체중·부상 이력까지 반영한 추천은 <a href="/recommend">1분 맞춤 추천</a>을 받아보세요.</p>
 
@@ -4490,7 +4490,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a></td><td>169,000</td><td>289g</td><td>무난 데일리</td><td>부드럽고 안정적, 실패 없는 무난함</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>159,000</td><td>281g</td><td>올라운더 스테디셀러</td><td>가성비·범용성 최강, 어디에나</td></tr>
     <tr><td><a href="/shoes/hoka-mach-6">호카 마하 6</a></td><td>185,000</td><td>232g</td><td>경량 데일리</td><td>232g 가벼운 몸놀림·템포까지</td></tr>
-    <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></td><td>199,000</td><td>281g</td><td>맥스쿠션 입구</td><td>무릎 보호·장거리, 푹신함 최상</td></tr>
+    <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></td><td>199,000</td><td>278g</td><td>맥스쿠션 입구</td><td>무릎 보호·장거리, 푹신함 최상</td></tr>
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>189,000</td><td>300g</td><td>안정화</td><td>평발·과회내 지지, 대표 안정화</td></tr>
   </tbody>
 </table>
@@ -4531,7 +4531,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>모델</th><th>가격</th><th>무게</th><th>성격</th><th>이런 러너에게</th></tr></thead>
   <tbody>
-    <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>229,000</td><td>193g</td><td>입문 카본</td><td>첫 카본화, 훈련+레이스 겸용 가성비</td></tr>
+    <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>209,000</td><td>201g</td><td>입문 카본</td><td>첫 카본화, 훈련+레이스 겸용 가성비</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></td><td>299,000</td><td>200g</td><td>레이스(마라톤)</td><td>풀코스 기록 도전(발볼 좁음)</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>206g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000</td><td>166g</td><td>레이스(스피드)</td><td>166g 초경량, 5K~하프 스피드</td></tr>
@@ -4544,7 +4544,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">카본화, 이것만은</p>
-    <p><strong>첫 카본이면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></strong>(22만원대·193g)로 시작하세요. 30만원대 엘리트 레이서는 반발이 강한 대신 <strong>발·종아리 부담이 커서 근력이 받쳐줘야</strong> 하고, 내구성도 데일리화보다 짧습니다(레이스·포인트 훈련 위주). <strong>발볼이 넓다면</strong> 좁은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>보다 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(<a href="/blog/new-balance-sc-elite-v5-review">후기</a>)가 훨씬 편합니다.</p>
+    <p><strong>첫 카본이면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a></strong>(20만원대·201g)로 시작하세요. 30만원대 엘리트 레이서는 반발이 강한 대신 <strong>발·종아리 부담이 커서 근력이 받쳐줘야</strong> 하고, 내구성도 데일리화보다 짧습니다(레이스·포인트 훈련 위주). <strong>발볼이 넓다면</strong> 좁은 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>보다 <a href="/shoes/new-balance-sc-elite-v5">SC Elite V5</a>(<a href="/blog/new-balance-sc-elite-v5-review">후기</a>)가 훨씬 편합니다.</p>
   </div>
 </div>
 
@@ -4558,7 +4558,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>무릎·관절이 걱정된다</td><td>20만~23만원</td><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a> / <a href="/shoes/hoka-bondi-9">본디 9</a></td></tr>
     <tr><td>평발·과회내(안쪽이 닳는다)</td><td>19만원</td><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a></td></tr>
     <tr><td>훈련·레이스 한 켤레로</td><td>21만원</td><td><a href="/shoes/adidas-adizero-evo-sl">Evo SL</a> / <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a></td></tr>
-    <tr><td>대회 기록 도전(첫 카본)</td><td>23만원</td><td><a href="/shoes/asics-magic-speed-5">매직스피드 5</a></td></tr>
+    <tr><td>대회 기록 도전(첫 카본)</td><td>21만원</td><td><a href="/shoes/asics-magic-speed-5">매직스피드 5</a></td></tr>
     <tr><td>풀코스 기록 경신(상급)</td><td>30만원+</td><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a> / <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td></tr>
   </tbody>
 </table>
@@ -5332,7 +5332,7 @@ export const posts_2026_07: BlogPost[] = [
     id: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
     slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
     title: '페가수스 42 vs 젤 님버스 28 | 16만 입문 가성비 vs 20만 맥스쿠션 — 데일리 뭘 살까',
-    description: '한국에서 가장 많이 찾는 데일리 러닝화 두 켤레를 정면 비교했습니다. 나이키 페가수스 42(16.9만·풀렝스 Air Zoom·입문 올라운더)와 아식스 젤 님버스 28(19.9만·43.5mm 맥시멀 쿠션·무릎 보호 최강). 3만원 차이지만 입문 가성비냐, 맥스쿠션·장거리·무릎 보호냐로 갈립니다. 무릎·발볼·거리·체중별로 내게 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
+    description: '한국에서 가장 많이 찾는 데일리 러닝화 두 켤레를 정면 비교했습니다. 나이키 페가수스 42(16.9만·풀렝스 Air Zoom·입문 올라운더)와 아식스 젤 님버스 28(19.9만·힐 39.5mm 맥시멀 쿠션·무릎 보호 최강). 3만원 차이지만 입문 가성비냐, 맥스쿠션·장거리·무릎 보호냐로 갈립니다. 무릎·발볼·거리·체중별로 내게 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
     thumbnail: '/images/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-03',
@@ -5343,9 +5343,9 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>3만원 차이지만 성격이 다릅니다</strong> — 페가수스 42는 16만원대 입문 올라운더, 젤 님버스 28은 20만원대 맥시멀 쿠션(43.5mm 고스택)입니다</li>
+    <li><strong>3만원 차이지만 성격이 다릅니다</strong> — 페가수스 42는 16만원대 입문 올라운더, 젤 님버스 28은 20만원대 맥시멀 쿠션(힐 39.5mm 고스택)입니다</li>
     <li><strong>가성비·입문 첫 데일리 → 페가수스 42</strong>(Air Zoom 반발·5~13km), <strong>무릎 보호·장거리·리커버리 → 님버스 28</strong>(맥스쿠션·부상예방 전 항목 최상)</li>
-    <li>발볼 매우 넓음이면 둘 다 와이드가 있지만 <strong>님버스는 X-와이드까지</strong>, 무릎이 약하거나 체중이 있으면 님버스의 43.5mm 쿠션이 유리합니다</li>
+    <li>발볼 매우 넓음이면 둘 다 와이드가 있지만 <strong>님버스는 X-와이드까지</strong>, 무릎이 약하거나 체중이 있으면 님버스의 힐 39.5mm 쿠션이 유리합니다</li>
   </ul>
 </div>
 
@@ -5353,7 +5353,7 @@ export const posts_2026_07: BlogPost[] = [
   <span class="callout-icon">👟</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·43.5mm 맥스쿠션)입니다. 페가42의 데이터 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
+    <p>"첫 데일리, 무난하고 가성비 좋게"면 <strong>페가수스 42</strong>(16.9만·입문 올라운더), "무릎이 걱정되거나 장거리·리커버리를 푹신하게"면 <strong>젤 님버스 28</strong>(19.9만·힐 39.5mm 맥스쿠션)입니다. 페가42의 데이터 상세 평가는 <a href="/blog/nike-pegasus-42-review">페가수스 42 심층 후기</a>에, 노바블라스트와의 비교는 <a href="/blog/novablast-5-vs-pegasus-41-daily-cushion-2026">노바블라스트 5 vs 페가수스 41</a>에 정리했습니다.</p>
   </div>
 </div>
 
@@ -5363,8 +5363,8 @@ export const posts_2026_07: BlogPost[] = [
   <tbody>
     <tr><td>브랜드 / 카테고리</td><td>나이키 / 입문</td><td>아식스 / 맥스쿠션</td></tr>
     <tr><td><strong>한국 가격</strong></td><td><strong>169,000원</strong></td><td>199,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>286g</td><td>281g</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td><strong>43.5mm(맥시멀)</strong></td></tr>
+    <tr><td>무게(US 9)</td><td>286g</td><td>278g</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td><strong>39.5mm(맥시멀)</strong></td></tr>
     <tr><td>드롭</td><td>10mm</td><td>8mm</td></tr>
     <tr><td>미드솔</td><td>ReactX + 풀렝스 Air Zoom</td><td>FF BLAST PLUS</td></tr>
     <tr><td>쿠션 / 반발</td><td>중상 / Air Zoom 반발</td><td><strong>최상(10) / 둔함</strong></td></tr>
@@ -5381,15 +5381,15 @@ export const posts_2026_07: BlogPost[] = [
 <p>단, BITR이 "6~13km 스윗스팟의 원 트릭 포니"로 평했듯 <strong>하프 이상 롱런·페이스 훈련엔 286g 무게가 부담</strong>입니다. 무릎 보호는 '양호'로, 님버스만큼 두꺼운 쿠션은 아닙니다. "가성비 좋은 만능 데일리 한 켤레"를 원할 때 가장 실패 없는 선택입니다.</p>
 <p><strong>✅ 이런 분께</strong> — 첫 데일리·가성비 우선 / 5~13km 조깅~템포 / 반발감 있는 라이드 / 예산 16만원대</p>
 
-<h2>젤 님버스 28 — 43.5mm 맥스쿠션, 무릎 보호 최강</h2>
-<p><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>은 "매주 많이 뛰는데 무릎이 아프다"는 러너에게 먼저 권하는 맥시멀 쿠션화입니다. <strong>43.5mm 고스택 + FF BLAST PLUS 폼</strong>이 아스팔트 충격을 강하게 흡수해, <strong>부상 예방 등급이 무릎 포함 전 항목 최상(excellent)</strong>입니다. 전작보다 20g 가벼워진 281g에 <strong>X-와이드까지</strong> 있어 발볼 넓은 러너 선택지도 가장 넓고, 650km 내구성으로 장거리·리커버리·워킹까지 폭넓게 씁니다.</p>
+<h2>젤 님버스 28 — 힐 39.5mm 맥스쿠션, 무릎 보호 최강</h2>
+<p><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>은 "매주 많이 뛰는데 무릎이 아프다"는 러너에게 먼저 권하는 맥시멀 쿠션화입니다. <strong>힐 39.5mm(실측) 고스택 + FF BLAST PLUS 폼</strong>이 아스팔트 충격을 강하게 흡수해, <strong>부상 예방 등급이 무릎 포함 전 항목 최상(excellent)</strong>입니다. 전작보다 가벼워진 278g(실측)에 <strong>X-와이드까지</strong> 있어 발볼 넓은 러너 선택지도 가장 넓고, 650km 내구성으로 장거리·리커버리·워킹까지 폭넓게 씁니다.</p>
 <p>대신 <strong>반응성이 낮아(5) 빠른 페이스엔 둔하고</strong>, 20만원으로 페가42보다 3만원 비쌉니다. 안정화는 아니라 과내전이 심하면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>이 낫습니다. "속도보다 푹신함·무릎 보호·장거리"가 목적일 때 빛납니다.</p>
 <p><strong>✅ 이런 분께</strong> — 무릎이 약하거나 체중이 있는 러너 / 장거리 LSD·리커버리 / 맥스쿠션 선호 / 발볼 매우 넓음(X-와이드)</p>
 
 <h2>내게 맞는 건?</h2>
 <ul>
   <li><strong>"첫 데일리, 가성비 좋게 한 켤레"</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>. 16.9만원에 만능, 반발감도 있습니다.</li>
-  <li><strong>"무릎이 약하다 / 체중이 있다"</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>. 43.5mm 맥스쿠션 + 무릎 보호 최상이 안심입니다. 무릎 통증 관리는 <a href="/blog/knee-pain-running-shoes">러너 무릎 통증 가이드</a>도 참고하세요.</li>
+  <li><strong>"무릎이 약하다 / 체중이 있다"</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>. 힐 39.5mm 맥스쿠션 + 무릎 보호 최상이 안심입니다. 무릎 통증 관리는 <a href="/blog/knee-pain-running-shoes">러너 무릎 통증 가이드</a>도 참고하세요.</li>
   <li><strong>"장거리 LSD·리커버리 위주"</strong> → 님버스 28. 페가42는 5~13km 스윗스팟이라 하프 이상엔 부담입니다.</li>
   <li><strong>"발볼이 매우 넓다"</strong> → 둘 다 와이드가 있지만 님버스가 X-와이드까지 있어 폭이 넓습니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 가이드</a> 참고.</li>
   <li><strong>"반발감 있게 경쾌하게"</strong> → 페가수스 42(Air Zoom). 님버스는 푹신하지만 둔한 편입니다.</li>
@@ -5400,7 +5400,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="faq">
   <div class="faq-item">
     <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. <strong>님버스 28</strong>입니다. 43.5mm 맥시멀 쿠션에 부상 예방 등급이 무릎 포함 전 항목 최상(excellent)이라 충격 흡수가 확실합니다. 페가42도 나쁘지 않지만(양호), 무릎이 걱정된다면 더 두꺼운 님버스가 안심입니다.</p>
+    <p class="faq-a">A. <strong>님버스 28</strong>입니다. 힐 39.5mm 맥시멀 쿠션에 부상 예방 등급이 무릎 포함 전 항목 최상(excellent)이라 충격 흡수가 확실합니다. 페가42도 나쁘지 않지만(양호), 무릎이 걱정된다면 더 두꺼운 님버스가 안심입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 3만원 더 주고 님버스를 살 가치가 있나요?</p>
