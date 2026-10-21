@@ -65,7 +65,6 @@ export const shoe: Shoe = {
   reviews: [
     {
       userType: 'RunRepeat 랩 분석',
-      rating: 87,
       text: '190g, 힐 148 SA, 에너지 리턴 힐 75.3%·전족 79.4%로 최상위 레이서다운 수치를 냈습니다. 다만 실측 드롭 13.9mm와 좁은 후족부 때문에 착지 패턴과 안정성 선호에 따라 호불호가 큽니다.',
       sourceUrl: 'https://runrepeat.com/new-balance-super-comp-elite-v-6',
     },

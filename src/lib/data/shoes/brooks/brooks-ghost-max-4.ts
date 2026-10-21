@@ -58,7 +58,6 @@ export const shoe: Shoe = {
   reviews: [
     {
       userType: 'RunRepeat 랩 분석',
-      rating: 83,
       text: '286g으로 전작보다 가벼워졌고 힐 145 SA의 높은 충격흡수와 0.54 마찰계수, 넓은 플랫폼이 편안하고 예측 가능한 주행을 만듭니다. 반면 에너지 리턴은 힐 51.9%·전족 55.5%라 빠른 페이스용은 아닙니다.',
       sourceUrl: 'https://runrepeat.com/brooks-ghost-max-4',
     },

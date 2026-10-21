@@ -67,7 +67,6 @@ export const shoe: Shoe = {
   reviews: [
     {
       userType: 'RunRepeat 랩 분석',
-      rating: 88,
       text: '167g의 낮은 무게에 힐 157 SA·전족 136 SA, 에너지 리턴 약 76%를 확보했습니다. 전족 마찰계수 0.76과 아웃솔 마모 0.5mm도 레이싱화 중 우수하지만, 힐 플랫폼이 76.4mm로 좁아 힐 착지 안정성은 제한적입니다.',
       sourceUrl: 'https://runrepeat.com/on-light-spray-cloudboom-strike-2',
     },

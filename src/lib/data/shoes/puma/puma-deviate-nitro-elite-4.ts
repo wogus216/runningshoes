@@ -91,14 +91,12 @@ export const shoe: Shoe = {
     },
     {
       userType: 'Believe in the Run',
-      rating: 92,
       text: 'Believe in the Run은 Elite 4를 전작보다 더 부드럽고 가벼운 업그레이드로 평가했습니다. 170g이라는 무게는 슈퍼슈즈 시장에서도 최상위 경량이고, 토박스는 RunRepeat 측정 74.8mm로 전작보다 넓어졌지만 전체 핏은 "snug-fitting"이라는 평가입니다. ATPU 폼의 에너지 리턴이 체감될 정도로 향상되었고, 카본 PWRPLATE의 추진감도 더 또렷해졌습니다. 40mm 힐 스택(공식)의 쿠셔닝을 갖췄고, Fast-R 3보다 훨씬 접근하기 쉬운 레이싱화라는 총평입니다. 289,000원에 이 퍼포먼스라면 가성비 측면에서도 충분히 경쟁력 있습니다.',
       source: 'editor',
       sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',
     },
     {
       userType: 'Believe in the Run',
-      rating: 88,
       text: '단점으로는 평소의 푸마그립만큼 끈끈한 접지감이 아니라는 점과, Fast-R 3 같은 더 공격적인 토스프링을 기대한 러너에겐 살짝 무난하게 느껴질 수 있다는 점이 언급됐습니다. 400km 내구성은 레이싱화 중 양호한 편이고, km당 약 722원의 가성비는 알파플라이 3 대비 합리적입니다. 토박스가 74.8mm(RunRepeat)로 개선됐지만 전체 핏은 좁은 편이라, 발볼이 넓다면 시착을 권합니다. 무릎이 약한 러너라면 8mm 드롭과 40mm 스택의 충격 흡수가 레이스 후반 보호에 도움이 됩니다. 최종 평가는 지금까지 나온 Deviate Elite 중 최고이자, 푸마의 가장 완성도 높은 마라톤 레이스화에 가깝다는 쪽입니다.',
       source: 'editor',
       sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',

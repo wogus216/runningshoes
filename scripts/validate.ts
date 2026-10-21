@@ -311,6 +311,9 @@ const BLOG_WEAR_CLAIM = [
 ];
 // 출처가 명시된 항목만 rating 을 허용한다. 새 외부 매체를 인용하면 여기 추가할 것(컴포넌트 isSourced 정규식과 동일 유지).
 const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Doctors|Road Trail/i;
+// 출처 표기(SOURCED)가 있어도 검사를 건너뛰지 않는다(2026-10-21). 종전엔 userType에 '리뷰어'·'Believe'만 넣으면
+// 1인칭·가짜 출처·별점 검사를 통째로 통과했다. rating 은 화면이 '에디터 평가 N/100'으로 보여 주는 '에디터' 항목만
+// 허용한다(reviews-section.tsx 와 같은 기준). 외부 리뷰 점수를 rating 으로 환산해 두는 것은 막는다.
 // 전환이 끝난 상태. 0 이상이면 새 허구 후기 = 커밋 차단.
 const FICTION_MIGRATION_REMAINING = 0;
 
@@ -329,14 +332,15 @@ const reviewSources: { label: string; reviews: { userType: string; rating?: numb
 for (const { label: src, reviews } of reviewSources) {
   for (const r of reviews) {
     scanned++;
-    if (SOURCED.test(r.userType)) continue;
+    const sourced = SOURCED.test(r.userType);
     const pr = REAL_PROPER.filter((k) => r.text.includes(k));
     const fs2 = fakeSourceHit(r.text);
     const fp = FIRST_PERSON.filter((k) => r.text.includes(k));
     if (pr.length) fictionHits.push(`[${src}] "${r.userType}" 실재 고유명사: ${pr.join(', ')}`);
     else if (fs2.length) fictionHits.push(`[${src}] "${r.userType}" 가짜 출처 인용: ${fs2.join(', ')}`);
     else if (fp.length >= 1) fictionHits.push(`[${src}] "${r.userType}" 1인칭 경험 서술: ${fp.slice(0, 2).join(', ')}`);
-    else if (r.rating !== undefined) fictionHits.push(`[${src}] "${r.userType}" 무출처 별점(rating: ${r.rating})`);
+    else if (r.rating !== undefined && !/에디터/.test(r.userType))
+      fictionHits.push(`[${src}] "${r.userType}" ${sourced ? '외부 리뷰 점수 환산' : '무출처 별점'}(rating: ${r.rating})`);
   }
 }
 
