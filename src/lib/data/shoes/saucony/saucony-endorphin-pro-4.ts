@@ -17,7 +17,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 220,
-    cushioning: 7,
+    cushioning: 8,
     responsiveness: 9,
     stability: 5,
     drop: 10,
@@ -71,7 +71,7 @@ export const shoe: Shoe = {
     weight: '220g (남성 US 9 기준, RunRepeat 실측)',
     stackHeight: '힐 38.1mm / 포어풋 28.6mm (실측)',
     drop: '9.5mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'PWRRUN PB+HG (PEBA + 경량 폼) · 경도 35.1 AC · 에너지 리턴 힐 71.7%·전족부 71.5% (RunRepeat 실측)',
+    midsole: 'PWRRUN PB+HG (PEBA + 경량 폼) · 경도 35.1 AC · 에너지 리턴 힐 71.7%·전족부 71.5% (RunRepeat 실측) · 충격흡수 139 SA는 RunRepeat 랩 힐 기준',
     plate: '풀렝스 카본 플레이트',
     outsole: '경량 러버',
     upper: '경량 메쉬',
