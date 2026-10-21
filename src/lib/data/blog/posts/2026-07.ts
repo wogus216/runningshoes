@@ -1422,7 +1422,7 @@ export const posts_2026_07: BlogPost[] = [
     slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026',
     title: '아디다스 하이퍼부스트 엣지 vs 아식스 슈퍼블라스트 3 — 무플레이트 고스택 슈퍼트레이너 대결',
     description:
-      '카본 없이 45mm 고스택으로 승부하는 두 슈퍼 트레이너, 아디다스 하이퍼부스트 엣지와 아식스 슈퍼블라스트 3을 비교합니다. 스택·무게·반발은 쌍둥이처럼 닮았지만, 하이퍼부스트 엣지는 700km 내구의 훈련 특화, 슈퍼블라스트 3은 235g 경량의 레이스데이 지향입니다. 갑피 완성도·가성비·용도를 갈랐습니다.',
+      '카본 없이 45mm 고스택으로 승부하는 두 슈퍼 트레이너, 아디다스 하이퍼부스트 엣지와 아식스 슈퍼블라스트 3을 비교합니다. 스택·무게는 쌍둥이처럼 닮았고 반발은 엣지가 한 칸 높지만, 하이퍼부스트 엣지는 700km 내구의 훈련 특화, 슈퍼블라스트 3은 235g 경량의 레이스데이 지향입니다. 갑피 완성도·가성비·용도를 갈랐습니다.',
     thumbnail: '/images/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-25',

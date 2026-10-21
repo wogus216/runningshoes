@@ -3636,7 +3636,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📊</span>
   <div class="callout-body">
     <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 슈퍼블라스트 2 실측(전족 에너지 리턴 65.5%) + Believe in the Run / Road Trail Run 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 상세</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3 상세</a>.</p>
+    <p>RunRepeat 슈퍼블라스트 2·3 실측(전족 에너지 리턴 65.5%·67.5%) + Believe in the Run / Road Trail Run 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 상세</a> · <a href="/shoes/asics-superblast-3">슈퍼블라스트 3 상세</a>.</p>
   </div>
 </div>
 
@@ -3656,7 +3656,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>8mm</td><td>8mm</td><td>동일</td></tr>
     <tr><td><strong>미드솔</strong></td><td><strong>FF Turbo+ (PEBA 단일)</strong></td><td><strong>FF LEAP + FF BLAST PLUS (듀얼)</strong></td><td>폼 카테고리 자체 교체</td></tr>
     <tr><td><strong>카본 플레이트</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 플레이트리스</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td><strong>전족 65.5% (실측)</strong></td><td>미게시</td><td>v2 검증 우위</td></tr>
+    <tr><td><strong>에너지 리턴</strong></td><td>전족 65.5% (실측)</td><td><strong>전족 67.5% (실측)</strong></td><td>v3가 2%p 높음</td></tr>
     <tr><td><strong>옵티멀 페이스</strong></td><td>3:30~5:30 min/km</td><td>4:00~5:30 min/km</td><td>v2 더 빠른 페이스, v3 롱런</td></tr>
     <tr><td><strong>아웃솔</strong></td><td>ASICSGRIP</td><td>ASICSGRIP + AHAR Lo</td><td>v3 듀얼 컴파운드</td></tr>
     <tr><td><strong>어퍼</strong></td><td>모노필라멘트 메쉬</td><td>엔지니어드 우븐</td><td>변경</td></tr>
@@ -3701,7 +3701,7 @@ export const posts_2026_05: BlogPost[] = [
         <tr><td><strong>구성</strong></td><td>PEBA 단일</td><td>FF LEAP(상층) + FF BLAST PLUS(하층) 듀얼</td></tr>
         <tr><td><strong>강점 페이스</strong></td><td>3:30~5:00 (템포·인터벌·하프)</td><td>4:00~5:30 (롱런·MP·풀코스)</td></tr>
         <tr><td><strong>전환</strong></td><td>강한 추진 (스냅)</td><td>부드러운 굴림 (롤링)</td></tr>
-        <tr><td><strong>에너지 리턴</strong></td><td>전족 65.5% (실측)</td><td>미게시</td></tr>
+        <tr><td><strong>에너지 리턴</strong></td><td>전족 65.5% (실측)</td><td>전족 67.5% (실측)</td></tr>
       </tbody>
     </table>
   </div>
@@ -3763,7 +3763,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr><td>발볼 4E급 (와이드 필수)</td><td><strong>슈퍼블라스트 2 와이드</strong></td><td>v3 와이드 옵션 없음 — v2 잡거나 다른 신발</td></tr>
     <tr><td>발볼 표준~약간 넓음</td><td>v2 standard 또는 v3 standard</td><td>실측상 v3 토박스가 0.7mm 더 좁음</td></tr>
-    <tr><td>가성비 최우선 + 인터벌·템포 위주</td><td><strong>슈퍼블라스트 2 이월 21~23만원</strong></td><td>전족 에너지 리턴 65.5%(실측) + 3~5만원 절약</td></tr>
+    <tr><td>가성비 최우선 + 인터벌·템포 위주</td><td><strong>슈퍼블라스트 2 이월 21~23만원</strong></td><td>3~5만원 절약 (전족 에너지 리턴은 65.5%로 v3 67.5%와 2%p 차)</td></tr>
     <tr><td>풀코스 빌드업 사이클 (롱런·MP)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP + 46.5mm 후반 보호</td></tr>
     <tr><td>하프마라톤 PB 도전</td><td><strong>슈퍼블라스트 2</strong></td><td>v2의 직진성·빠른 옵티멀 페이스 (반응성은 둘 다 8/10)</td></tr>
     <tr><td>첫 슈퍼트레이너 + 다양한 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>롱런·페이스 훈련 다재다능</td></tr>
@@ -3906,7 +3906,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a></li>
 </ul>
 
-<p><small>출처: RunRepeat 슈퍼블라스트 2 랩 데이터(전족 에너지 리턴 65.5%) + Believe in the Run / Road Trail Run 양 신발 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). v3 RunRepeat 랩 데이터는 작성 시점 일부 미게시 상태라 v3 에너지 리턴은 표기하지 않았습니다. 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><small>출처: RunRepeat 슈퍼블라스트 2·3 랩 데이터(전족 에너지 리턴 65.5%·67.5%, v3 값은 2026-10-21 확인) + Believe in the Run / Road Trail Run 양 신발 리뷰 + 한국 아식스 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
 `,
   },
   {

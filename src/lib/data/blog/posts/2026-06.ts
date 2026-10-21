@@ -7221,7 +7221,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'max-cushion-running-shoes-knee-protection-2026',
     slug: 'max-cushion-running-shoes-knee-protection-2026',
     title: '무릎 지키는 맥스쿠션 러닝화 추천 2026 | 1080 v15·님버스 28·고스트 맥스 3·본디 9 — 발볼·무게·관절 보호 비교',
-    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28·호카 본디 9(최고 쿠션), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
+    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28(쿠션 10)·호카 본디 9(쿠션 9·넓은 발볼), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
     thumbnail: '/images/blog/max-cushion-running-shoes-knee-protection-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
