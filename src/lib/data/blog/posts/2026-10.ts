@@ -2,6 +2,108 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'korea-running-expo-2026-guide',
+    slug: 'korea-running-expo-2026-guide',
+    title: '코리아러닝엑스포 2026 부스 배치도 | 제마 레이스팩 수령·운영시간·방문 동선',
+    description: '10월 29~31일 SETEC에서 열리는 코리아러닝엑스포 2026. JTBC 서울마라톤 배번호·레이스팩은 1관, 공식 스폰서는 2관, 나이키·미즈노·가민 등 참여 브랜드는 3관입니다. 토요일 부스는 20시, 레이스팩 수령은 23시까지라는 차이를 공식 안내로 정리했습니다.',
+    thumbnail: '/images/blog/korea-running-expo-2026-guide.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-21',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['코리아러닝엑스포', '코리아러닝엑스포 2026', 'JTBC 서울마라톤', '제마 배번호 수령', '제마 레이스팩', '러닝 엑스포', 'SETEC', '러닝화'],
+    event: {
+      name: '코리아러닝엑스포 2026',
+      startDate: '2026-10-29T12:00:00+09:00',
+      endDate: '2026-10-31T20:00:00+09:00',
+      location: { name: 'SETEC 1~3전시실', address: '서울 강남구 남부순환로 3104' },
+      organizer: '러너블',
+      url: 'https://korearunningexpo.co.kr/',
+    },
+    faqs: [
+      { question: '제마 배번호와 레이스팩은 어디서 받나요?', answer: '10월 29~31일 코리아러닝엑스포가 열리는 SETEC 1관에서 받습니다. 택배 발송은 없으며 목·금요일 12:00~20:00, 토요일 10:00~23:00에 수령할 수 있습니다.' },
+      { question: '토요일 밤 10시에 가면 브랜드 부스도 볼 수 있나요?', answer: '공식 계정의 10월 20일 안내 기준으로 전시 부스는 토요일 20:00에 끝납니다. 레이스팩 수령만 23:00까지이므로 브랜드 부스 관람을 원하면 더 일찍 방문하세요.' },
+      { question: '다른 사람이 제 레이스팩을 대신 받아도 되나요?', answer: '대회 공식 공지는 개인별 QR코드를 통한 대리 수령이 가능하다고 안내합니다. 자세한 방법은 추후 공지 예정이므로 QR 외에 필요한 준비물이 있는지 방문 전 최신 공지를 확인하세요.' },
+      { question: 'SETEC에 차를 가져가도 되나요?', answer: 'JTBC 서울마라톤의 레이스팩 수령 공지는 SETEC 주차장을 이용할 수 없다고 안내합니다. 3호선 학여울역 1번 출구로 오는 대중교통 동선을 권장합니다.' },
+    ],
+    content: `
+<div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
+<li><strong>10월 29~31일 SETEC 1~3관에서 열립니다.</strong> 제마 배번호·레이스팩은 택배 없이 1관에서 받습니다.</li>
+<li><strong>토요일 전시 부스는 20시, 레이스팩 수령은 23시까지입니다.</strong> 같은 건물 안에서도 마감 시간이 다릅니다.</li>
+<li><strong>1관 수령 → 2관 공식 스폰서 → 3관 참여 브랜드</strong> 순서로 동선을 잡아보세요. 공식 배치도에는 나이키·미즈노·가민 등의 부스 번호까지 나와 있습니다.</li>
+</ul></div>
+
+<p><strong>제마 배번호를 받으러 가는 날, 러닝 브랜드 부스도 함께 둘러볼 계획인가요?</strong> 10월 20일 코리아러닝엑스포 공식 계정이 전시실별 부스 배치도를 공개했습니다. 2026 JTBC 서울마라톤 참가자의 레이스팩 수령 구역과 브랜드 전시가 SETEC 1~3관에 나뉘어 들어갑니다.</p>
+<p>방문 전에는 <strong>전시 관람 시간과 레이스팩 수령 시간을 따로</strong> 확인하세요. 특히 토요일 늦게 배번호를 받으러 가면, 브랜드 부스는 이미 운영을 마쳤을 수 있습니다.</p>
+
+<h2>언제 가야 하나요? 토요일은 두 마감 시간을 기억하세요</h2>
+<table>
+<thead><tr><th>날짜</th><th>전시 부스 운영</th><th>레이스팩 수령 · 1관</th></tr></thead>
+<tbody>
+<tr><td>10월 29일(목)</td><td>12:00~20:00</td><td>12:00~20:00</td></tr>
+<tr><td>10월 30일(금)</td><td>12:00~20:00</td><td>12:00~20:00</td></tr>
+<tr><td>10월 31일(토)</td><td><strong>10:00~20:00</strong></td><td><strong>10:00~23:00</strong></td></tr>
+</tbody>
+</table>
+<p>전시 시간은 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">공식 계정의 10월 20일 안내</a>, 수령 시간은 <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">대회 공식 레이스팩 공지</a>와 대조했습니다. 일부 소개 글에는 토요일 전시 종료가 22시로 적혀 있지만, 공식 계정은 20시로 안내합니다. 부스 관람까지 하려면 20시 전에 둘러볼 시간을 확보하세요.</p>
+<p>장소는 <strong>SETEC, 서울 강남구 남부순환로 3104</strong>입니다. 3호선 학여울역 1번 출구와 연결되는 동선입니다. 대회 사무국은 <strong>SETEC 주차장 이용 불가</strong>를 공지했으니, 차로 짐을 싣고 갈 계획부터 세우지 않는 편이 좋습니다.</p>
+
+<h2>1관: 먼저 배번호와 레이스팩을 받으세요</h2>
+<p>1관은 <strong>RACE PACK &amp; DESCENTE ZONE</strong>입니다. 10월 20일 공개된 공식 지도에는 수령 창구 외에 키오스크와 별도 안내데스크가 표시돼 있습니다.</p>
+<table>
+<thead><tr><th>지도 표시</th><th>찾을 곳</th></tr></thead>
+<tbody>
+<tr><td>A</td><td>배번호·레이스팩 수령</td></tr>
+<tr><td>B</td><td>키오스크존</td></tr>
+<tr><td>F</td><td>외국인·QR 미소지자 안내데스크</td></tr>
+<tr><td>G</td><td>잠스트 픽업</td></tr>
+<tr><td>S101</td><td>데상트 부스</td></tr>
+</tbody>
+</table>
+<p>QR을 준비하지 못했다면 지도의 <strong>F 안내데스크</strong> 위치를 먼저 확인하세요. 지도에 창구가 표시돼 있다는 사실이 QR 없이 즉시 수령할 수 있다는 뜻은 아닙니다. 개인별 수령 안내와 필요한 준비물을 확인한 뒤 방문하세요.</p>
+<p><img src="/images/blog/korea-running-expo-2026/hall-1.webp" alt="코리아러닝엑스포 2026 공식 1관 배치도. 배번호와 레이스팩 수령 A, 키오스크 B, 외국인·QR 미소지자 안내 F, 잠스트 픽업 G, 데상트 S101" width="1440" height="1800" loading="lazy" /></p>
+<p><small>자료: 코리아러닝엑스포 공식 계정, 2026년 10월 20일 공개한 HALL 1 배치도. 현장 배치는 바뀔 수 있습니다.</small></p>
+<p><strong>대리 수령은 개인별 QR코드로 가능</strong>하다는 것이 현재 대회 공지입니다. 다만 세부 방법은 추후 안내로 남아 있습니다. 가족이나 지인에게 부탁할 때는 QR만 전달하고 끝내기보다, 최신 수령 공지에 추가 서류나 절차가 붙었는지 확인하세요.</p>
+
+<h2>2관: 공식 스폰서와 제마 굿즈를 한곳에서</h2>
+<p>2관은 <strong>JTBC SEOUL MARATHON OFFICIAL ZONE</strong>입니다. 지도에는 스폰서 11개와 공식 굿즈 구역 1개가 들어 있습니다. 1관의 데상트까지 포함한 전체 공식 안내는 스폰서 12개입니다.</p>
+<p>잠스트는 <strong>S204</strong>, 샥즈는 <strong>S209</strong>, 카스라이트는 <strong>S210</strong>입니다. 대회 공식 굿즈는 <strong>B207</strong>, 아치 포토월은 <strong>D</strong>로 표시돼 있습니다.</p>
+<p><img src="/images/blog/korea-running-expo-2026/hall-2.webp" alt="코리아러닝엑스포 2026 공식 2관 배치도. 스폰서 부스와 공식 굿즈 B207, 아치 포토월 D" width="1440" height="1800" loading="lazy" /></p>
+<p><small>자료: 코리아러닝엑스포 공식 계정, HALL 2 배치도.</small></p>
+<p>1관 지도에 있는 <strong>잠스트 픽업 G</strong>와 2관의 <strong>잠스트 부스 S204</strong>는 위치가 다릅니다. 증정 행사나 별도 신청 프로그램에 참여했다면, 해당 행사에서 지정한 수령 장소로 가세요.</p>
+
+<h2>3관: 나이키·미즈노·가민, 부스 번호로 찾아가세요</h2>
+<p>3관은 참여 브랜드 <strong>39개</strong>를 만나는 RUNNING EXPO ZONE입니다. 관심 브랜드를 몇 곳 골라 번호를 저장해 두면 현장에서 같은 구역을 반복해서 오가는 일을 줄일 수 있습니다.</p>
+<table>
+<thead><tr><th>브랜드</th><th>공식 배치도 부스 번호</th></tr></thead>
+<tbody>
+<tr><td>나이키</td><td>S337</td></tr>
+<tr><td>미즈노</td><td>S320</td></tr>
+<tr><td>가민</td><td>S338</td></tr>
+<tr><td>NESCL</td><td>S336</td></tr>
+<tr><td>보스</td><td>B305</td></tr>
+<tr><td>인바디</td><td>B304</td></tr>
+</tbody>
+</table>
+<p>코스 포토월은 <strong>C</strong>, 네임 포토월은 <strong>E</strong>입니다. 공식 스폰서를 찾는다면 2관, 위 브랜드들을 찾는다면 3관으로 구분하면 됩니다.</p>
+<p><img src="/images/blog/korea-running-expo-2026/hall-3.webp" alt="코리아러닝엑스포 2026 공식 3관 배치도. 참여 브랜드 39개와 나이키 S337, 미즈노 S320, 가민 S338 위치" width="1440" height="1800" loading="lazy" /></p>
+<p><small>자료: 코리아러닝엑스포 공식 계정, HALL 3 배치도.</small></p>
+<p>부스가 있다는 것만으로 <strong>특정 신제품의 판매·시착이나 무료 증정</strong>이 확정되는 것은 아닙니다. 구매하거나 체험하고 싶은 제품이 있다면 방문 전에 그 브랜드의 엑스포 공지를 따로 확인하세요.</p>
+
+<h2>배번호만 받을 날과 엑스포를 즐길 날을 나눠 잡으세요</h2>
+<p><strong>수령이 우선이라면 1관부터</strong> 가는 동선이 간단합니다. 필요한 레이스팩을 받은 뒤 남은 시간에 2관 공식 스폰서, 3관 관심 브랜드를 둘러보세요. 토요일 20시 이후에 도착할 예정이라면 이번 방문은 레이스팩 수령 중심으로 계획해야 합니다.</p>
+<p><strong>부스 체험과 사진이 목적이라면 더 이른 도착</strong>이 필요합니다. 3관에서 보고 싶은 브랜드 번호와 2관 굿즈·포토월 위치를 미리 정해 두세요. 대기 시간과 프로그램별 종료 시각은 배치도에서 알 수 없으므로, 일반 운영 종료 직전에 여러 체험을 몰아 잡지 않는 편이 좋습니다.</p>
+<p>배번호를 받은 뒤에는 출발 그룹과 레이스 계획도 다시 확인하세요. 풀코스·10K의 그룹별 목표 기록은 <a href="/blog/jtbc-seoul-marathon-pacemaker-2026">2026 제마 공식 페이스메이커 표</a>에, 종목별 출발 정보는 <a href="/marathon/jtbc-seoul-marathon-2026">JTBC 서울마라톤 대회 페이지</a>에 정리했습니다.</p>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq"><p class="faq-q">Q. 참가자가 아니어도 들어갈 수 있나요? 입장료가 있나요?</p><p class="faq-a">A. 이번 공식 운영 안내와 배치도에는 일반 관람객 입장 조건·입장료가 명시돼 있지 않습니다. 동행인과 방문한다면 <a href="https://korearunningexpo.co.kr/" target="_blank" rel="noopener noreferrer">엑스포 공식 홈페이지</a>의 관람 안내를 확인하세요.</p></div>
+<div class="faq"><p class="faq-q">Q. 레이스팩을 택배로 받을 수 있나요?</p><p class="faq-a">A. 대회 공식 공지는 별도 택배 발송 없이 SETEC 1관 현장 수령만 진행한다고 안내합니다. 수령 일정은 10월 29~31일입니다.</p></div>
+<div class="faq"><p class="faq-q">Q. 토요일 23시까지 모든 부스가 열려 있나요?</p><p class="faq-a">A. 23시는 레이스팩 수령 마감입니다. 공식 계정의 10월 20일 안내상 토요일 전시 부스는 20시에 운영을 마칩니다.</p></div>
+
+<p><small>출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
+`,
+  },
+  {
     id: 'busan-runfesta-postponed-bukangi-2026',
     slug: 'busan-runfesta-postponed-bukangi-2026',
     title: '부캉이 보러 몰린 인파에 부산 런페스타 연기 | 환불 방법·새 일정 안내',
@@ -171,7 +273,7 @@ export const posts_2026_10: BlogPost[] = [
     thumbnail: '/images/blog/kakaopay-long-run.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-17',
-    updatedAt: '2026-10-20',
+    updatedAt: '2026-10-21',
     category: 'news' as const,
     readingTime: 7,
     tags: ['카카오페이 롱런', '롱런 2026', '션 마라톤', '하남 미사경정공원 러닝', '기부 마라톤', '10km 마라톤 접수', '11월 마라톤', '카카오페이 만보기'],
@@ -183,7 +285,7 @@ export const posts_2026_10: BlogPost[] = [
       organizer: '카카오페이',
       url: 'https://fest.kakaopay.com/esg/longrun/offline',
       offers: [
-        { name: '10K 셀레브레이션 런', priceKrw: 60000, availabilityEnds: '2026-11-03', url: 'https://fest.kakaopay.com/esg/longrun/offline' },
+        { name: '10K 셀레브레이션 런', priceKrw: 60000, availabilityEnds: '2026-11-03', url: 'https://longrun.bstage.in/shop/products/2' },
       ],
     },
     raceMeta: {
@@ -194,8 +296,8 @@ export const posts_2026_10: BlogPost[] = [
       registrationEnd: '2026-11-03',
       registrationVia: '비마이프렌즈 b.stage 플랫폼(회원가입 후 신청) · 온라인 대회는 카카오페이 앱 만보기',
       action: {
-        what: '10월 20일(화) 오후 2시 전에 b.stage 계정을 만들어 두세요',
-        how: '티켓 판매처는 카카오페이 앱이 아니라 비마이프렌즈 b.stage입니다. 선착순 5,000명이라 회원가입을 미리 끝내고 들어가야 합니다. 1인 1회만 신청할 수 있고 단체 신청은 받지 않습니다.',
+        what: 'b.stage 오프라인 참가권에서 구매 가능 여부를 확인하세요',
+        how: '10월 21일 공식 상품 상세에 60,000원·구매하기가 표시돼 있습니다. 비마이프렌즈 b.stage 회원가입이 필요하며 1인 1회, 단체 신청은 불가입니다. 조기 마감될 수 있습니다.',
       },
       facts: [
         { label: '대회일', value: '11월 28일', sub: '토 · 09:00 출발 · 07:30 집결' },
@@ -220,9 +322,9 @@ export const posts_2026_10: BlogPost[] = [
       { question: '기념품은 무엇을 받나요?', answer: '롱런 롱슬리브 티셔츠, 러닝캡, 런 크루 삭스, 배번호, 기록칩 5종입니다. 이 5종은 대회 당일 반드시 지참해야 합니다. 사전 기념품은 11월 18일부터 순차 택배 발송되며 해외 발송은 하지 않습니다. 완주 메달(현장에서 기록 각인 가능)과 리유저블백은 현장 참가자에게 도착지에서 지급하며, 불참하면 받을 수 없습니다.' },
     ],
     content: `
-<p><strong>카카오페이 롱런 2026 오프라인 10K는 11월 28일(토) 하남 미사경정공원에서 열립니다.</strong> 참가비 6만원, 선착순 5,000명, 09:00 출발입니다. 티켓은 10월 20일(화) 오후 2시부터 <strong>비마이프렌즈 b.stage</strong>에서 팝니다 — 카카오페이 앱이 아니니 계정을 미리 만들어 두세요. 접수와 취소·환불은 모두 11월 3일(화) 23:59에 끝납니다.</p>
+<p><strong>카카오페이 롱런 2026 오프라인 10K는 11월 28일(토) 하남 미사경정공원에서 열립니다.</strong> 참가비 6만원, 선착순 5,000명, 09:00 출발입니다. 10월 21일 <a href="https://longrun.bstage.in/shop/products/2" target="_blank" rel="noopener noreferrer">공식 b.stage 참가권</a>에 60,000원·구매하기 표시를 확인했습니다. 접수와 취소·환불은 모두 11월 3일(화) 23:59에 끝납니다.</p>
 <p>오프라인 자리를 못 잡아도 길은 있습니다. <strong>온라인 대회는 무료</strong>이고, 카카오페이 앱 만보기로 모은 걸음이 500억에 이르면 카카오페이가 15억원을 기부합니다.</p>
-<div class="deadline-strip">⏰ <strong>티켓 판매 10월 20일(화) 14:00 시작 — 선착순 5,000명, 11월 3일(화) 23:59 종료.</strong> 판매처는 비마이프렌즈 b.stage(회원가입 필요)이고, 취소·환불도 같은 시각까지만 받습니다.</div>
+<div class="deadline-strip">⏰ <strong>공식 참가권 구매하기 표시 확인(10월 21일) — 선착순 5,000명, 11월 3일(화) 23:59 종료.</strong> 판매처는 비마이프렌즈 b.stage(회원가입 필요)이고, 취소·환불도 같은 시각까지만 받습니다.</div>
 
 <div class="callout info">
   <p><strong>롱런이 뭔가요?</strong> 카카오페이가 가수 션과 함께 여는 온·오프라인 <strong>기부 마라톤</strong>입니다. 참가자가 모은 걸음 수에 따라 카카오페이가 소상공인 지원 재단(함께일하는재단)에 기부하는 구조라, 참가비를 낸다고 내 이름으로 기부되는 행사는 아닙니다. <a href="https://fest.kakaopay.com/esg/longrun/about" target="_blank" rel="noopener noreferrer">공식 페이지</a>는 2025년 1회차에 26만 5,498명이 225억 걸음을 모아 20억원을 기부했다고 밝힙니다. 올해 목표는 500억 걸음·15억원입니다.</p>
@@ -241,8 +343,8 @@ export const posts_2026_10: BlogPost[] = [
 </tbody></table>
 <p>출처는 <a href="https://fest.kakaopay.com/esg/longrun/offline" target="_blank" rel="noopener noreferrer">공식 페이지 오프라인 대회 탭</a>입니다(10월 17일 확인). 외국인은 카카오페이 가입·결제가 가능해야 하고 외국인등록번호와 본인 명의 국내 휴대폰이 필요하다고 안내돼 있습니다.</p>
 
-<h2>신청 전에 할 일은 b.stage 회원가입입니다</h2>
-<p>이 대회의 함정은 판매처입니다. <strong>온라인 대회는 카카오페이 앱</strong>에서 신청하지만, <strong>오프라인 10K 티켓은 비마이프렌즈의 b.stage 플랫폼</strong>에서 팝니다. 공식 안내가 "b.stage 플랫폼 회원가입 후 신청 가능"이라고 못 박았으니, 10월 20일 오후 2시에 가입부터 시작하면 선착순에서 밀립니다. 공식 페이지가 고객센터로 연결하는 <a href="https://longrun.bstage.in" target="_blank" rel="noopener noreferrer">롱런 b.stage 스토어</a>에는 10월 20일 오전 10시 기준 "2026 LONG RUN Offline Race Registration(60,000원)" 상품이 "Coming soon"으로 올라와 있습니다.</p>
+<h2>오프라인 참가권은 b.stage에서 구매합니다</h2>
+<p><strong>온라인 대회는 카카오페이 앱</strong>에서 신청하고, <strong>오프라인 10K 티켓은 비마이프렌즈의 b.stage 플랫폼</strong>에서 구매합니다. 회원가입 후 <a href="https://longrun.bstage.in/shop/products/2" target="_blank" rel="noopener noreferrer">2026 LONG RUN 10KM 오프라인 대회 참가권</a>을 확인하세요. 10월 21일 공개 상품 상세에는 60,000원·구매하기가 표시돼 있으며, 잔여 수량은 공개돼 있지 않습니다.</p>
 <p>작년 1회차에 26만 명이 참여했다는 공식 수치를 고려하면 5,000장은 넉넉한 숫자가 아닙니다. 다만 작년 숫자는 무료 온라인 참가자까지 합친 것이라, 유료 오프라인 티켓이 몇 분 만에 끝날지는 알 수 없습니다. 판매 시작 시각에 맞춰 들어가되, 못 잡아도 온라인 대회라는 두 번째 길이 있습니다.</p>
 <p>환불 조건은 단순합니다. <strong>11월 3일 23:59 전에 취소 요청을 완료</strong>하면 되고, 그 뒤로는 어떤 사유로도 불가입니다. 일정이 불확실하면 일단 잡아 두고 11월 초에 결정해도 됩니다.</p>
 
@@ -275,10 +377,10 @@ export const posts_2026_10: BlogPost[] = [
 <p>셔틀은 하남풍산역 한 곳에서만 돕니다. 서울 쪽에서 오면 5호선·8호선 천호역에서 버스로 갈아타는 경로가 공식 안내입니다. 집결이 07:30이라 셔틀 첫차 06:30에 맞추려면 출발 시각을 역산해 두세요.</p>
 
 <h2>10K 입문자라면 확인할 것</h2>
-<p>기부 러닝이고 종목이 10K 하나라 첫 대회로 고르는 분이 많을 겁니다. 제한시간은 공식 페이지에 적혀 있지 않습니다(10월 20일 기준). 완주 자체보다는 아침 07:30 집결과 11월 말 기온이 변수입니다. 복장과 준비물은 <a href="/blog/fall-marathon-race-day-checklist-2026">가을 대회 준비물 체크리스트</a>, 양말 선택은 <a href="/blog/running-socks-guide-fiber-composition-2026">소재별 러닝 양말 가이드</a>를 참고하세요. 기념품 양말(런 크루 삭스)을 당일 처음 신는 건 권하지 않습니다.</p>
+<p>기부 러닝이고 종목이 10K 하나라 첫 대회로 고르는 분이 많을 겁니다. 제한시간은 10월 21일 확인한 공식 본문에 명시돼 있지 않습니다. 완주 자체보다는 아침 07:30 집결과 11월 말 기온이 변수입니다. 복장과 준비물은 <a href="/blog/fall-marathon-race-day-checklist-2026">가을 대회 준비물 체크리스트</a>, 양말 선택은 <a href="/blog/running-socks-guide-fiber-composition-2026">소재별 러닝 양말 가이드</a>를 참고하세요. 기념품 양말(런 크루 삭스)을 당일 처음 신는 건 권하지 않습니다.</p>
 <p>션이 왜 이 대회를 함께 여는지 궁금하다면, 10월 16일 개봉한 다큐멘터리 <a href="/blog/shall-we-run-movie-2026">쉘위런</a>이 그의 마라톤 도전을 다룹니다.</p>
 
-<div class="callout warning"><strong>아직 공식에 없는 것</strong><p>코스 지도와 기념품 구성·사전 배송 일정(11월 18일부터)은 10월 20일 공식 페이지에 공개됐습니다. <strong>10K 제한시간과 온라인 기념품의 서비스명</strong>은 10월 20일 오전 기준 여전히 없습니다. 티켓 판매는 같은 날 14시에 시작하며, 이 글은 판매 상황을 확인하는 대로 갱신합니다.</p></div>
+<div class="callout warning"><strong>구매 전에 확인할 것</strong><p><strong>10K 제한시간과 온라인 기념품의 서비스명</strong>은 10월 21일 확인한 공식 본문에 명시돼 있지 않습니다. 상품 상세는 구매 후 사이즈·참가자 정보 변경 불가, 행사 페이지는 11월 3일까지 고객센터를 통한 수정 가능으로 안내가 다릅니다. 정보를 정확히 입력하고, 변경이 필요하다면 <a href="https://longrun.bstage.in/cs" target="_blank" rel="noopener noreferrer">공식 고객센터</a>에 적용 조건부터 확인하세요.</p></div>
 
 <h2>자주 묻는 질문</h2>
 <div class="faq"><p class="faq-q">Q. 카카오페이 앱에서 오프라인 티켓도 살 수 있나요?</p><p class="faq-a">A. 아니요. 공식 안내상 오프라인 10K 티켓 판매처는 비마이프렌즈 b.stage입니다. 카카오페이 앱 만보기는 온라인 대회 신청 경로입니다.</p></div>
@@ -289,7 +391,7 @@ export const posts_2026_10: BlogPost[] = [
 <h2>확인한 출처</h2>
 <ul>
 <li><a href="https://fest.kakaopay.com/esg/longrun/offline" target="_blank" rel="noopener noreferrer">공식 오프라인 대회 안내</a>: 일시·정원·참가비·판매처·환불·교통·기념품·배송·코스 지도·시상·유의사항.</li>
-<li><a href="https://longrun.bstage.in" target="_blank" rel="noopener noreferrer">롱런 b.stage 스토어</a>: 오프라인 참가권 상품(60,000원)·고객센터.</li>
+<li><a href="https://longrun.bstage.in/shop/products/2" target="_blank" rel="noopener noreferrer">롱런 b.stage 공식 참가권</a>: 60,000원·구매하기 표시(2026년 10월 21일 확인).</li>
 <li><a href="https://fest.kakaopay.com/esg/longrun/online" target="_blank" rel="noopener noreferrer">공식 온라인 대회 안내</a>: 기간·신청 경로·기부 구조·새 기능·이벤트.</li>
 <li><a href="https://fest.kakaopay.com/esg/longrun/about" target="_blank" rel="noopener noreferrer">공식 대회 소개</a>: 2025년 참가자·걸음·기부 실적, 기부처.</li>
 </ul>
