@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   editorComment: '134 SA 충격흡수에 119.1mm 초광폭 플랫폼은 체중 80kg 이상 러너가 흔들림 없이 착지할 수 있는 구조입니다. Hoka Bondi 9(₩220,000)보다 4만 1천원 저렴한 17만 9천원이면서 토박스가 넓어 발볼 걱정 없이 신을 수 있습니다. 303g 무게와 51.3% 에너지 리턴은 6분/km 이상 느린 조깅에만 적합하다는 뜻이지만, 무릎 통증 때문에 러닝을 망설이는 분에게 "일단 이걸로 시작하세요"라고 말할 수 있는 신발입니다. 참고로 DNA Loft v3는 EVA 계열이라 수명이 미덕입니다 — 450km 실도로 마모 실험에서 EVA 폼은 러닝 이코노미 변화가 없었습니다. 체중이 있는 러너일수록 폼이 빨리 죽는 게 걱정인데, 이 신발은 그 걱정이 덜한 쪽입니다.\n\n사이즈·구매 가이드: 토박스가 넓은 와이드 폭이고 와이드 옵션도 있어 발볼 넓은 한국 러너는 표준 사이즈로도 편하게 신을 수 있습니다. 179,000원에 km당 약 256원은 맥시멀 쿠션화 중 가격 경쟁력이 있으며, 본디 9이나 젤 님버스 28과 비교해 가격 차이를 확인해보세요. 체중이 많이 나가거나 무릎이 걱정된다면 이 신발이 첫 선택으로 가장 안전합니다.',
   specs: {
     weight: 303,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 6,
     stability: 7,
     drop: 7,
@@ -83,7 +83,7 @@ export const shoe: Shoe = {
     weight: '303g (US 9 Lab 측정)',
     stackHeight: '힐 38.5mm / 포어풋 31.2mm (Lab)',
     drop: '7.3mm (Lab 측정)',
-    midsole: 'DNA Loft v3 (질소 주입 EVA)',
+    midsole: 'DNA Loft v3 (질소 주입 EVA) · 충격흡수 134 SA는 RunRepeat 랩 힐 기준',
     plate: '없음',
     outsole: '러버 아웃솔',
     upper: '엔지니어드 에어 메쉬',

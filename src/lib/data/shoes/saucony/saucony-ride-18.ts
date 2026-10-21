@@ -17,7 +17,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 255,
-    cushioning: 7,
+    cushioning: 9,
     responsiveness: 6,
     stability: 6,
     drop: 8,
@@ -71,7 +71,7 @@ export const shoe: Shoe = {
     weight: '255g (남성 US 9 기준, RunRepeat 실측)',
     stackHeight: '힐 35.0mm / 포어풋 26.6mm (실측)',
     drop: '8.4mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'PWRRUN+ (질소 주입 TPU)',
+    midsole: 'PWRRUN+ (질소 주입 TPU) · 충격흡수 141 SA는 RunRepeat 랩 힐 기준',
     plate: '없음',
     outsole: 'XT-900 러버',
     upper: '메쉬',

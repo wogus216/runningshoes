@@ -40,7 +40,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>힐 / 전족 스택</td><td>29 / 23mm</td><td><strong>39 / 31mm</strong></td><td>33 / 26mm</td></tr>
     <tr><td>드롭</td><td>6mm</td><td>8mm</td><td>7mm</td></tr>
     <tr><td>미드솔</td><td>Opti FOAM Evo</td><td>OptiFoam + RelieveSphere</td><td>Energy Foam+ 듀얼</td></tr>
-    <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 5</td><td>7 / 7</td></tr>
+    <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 6</td><td>7 / 7</td></tr>
     <tr><td>러그(아웃솔)</td><td>4mm</td><td>3.9mm</td><td>3mm</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁음 · <strong>없음</strong></td><td>좁음 · <strong>와이드 O</strong></td><td>표준(74mm) · 없음</td></tr>
     <tr><td>내구성 / km당</td><td>500km / 약 420원</td><td>450km / 약 511원</td><td>350km / 약 971원</td></tr>
@@ -593,7 +593,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>힐 / 전족 스택</td><td><strong>46.5 / 38.5mm</strong></td><td>36 / 28mm</td><td>36 / 26mm</td></tr>
     <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>10mm</td></tr>
     <tr><td>미드솔 폼</td><td>FF LEAP + FF BLAST PLUS<br><small>(슈퍼폼)</small></td><td>100% Lightstrike Pro<br><small>(슈퍼폼)</small></td><td>Supercritical EVA<br><small>(일반 EVA)</small></td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>10 / 9</strong></td><td>8 / 9</td><td>7 / 8</td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / 8</td><td>9 / <strong>9</strong></td><td>7 / 8</td></tr>
     <tr><td>최적 페이스</td><td>4:00~5:30/km</td><td>4:00~6:00/km</td><td>4:30~6:00/km</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁은 편(71.6mm) · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 없음</strong> (2026년 10월 한국 공식몰 기준)</td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 471원</td><td>500km / 약 418원</td><td>450km / <strong>약 411원</strong></td></tr>
@@ -6632,8 +6632,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>7mm (랩 6.6)</td><td>6mm</td><td>-1mm (사실상 동일)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>DNA Tuned</td><td>DNA Tuned (질소 주입, 단단해짐)</td><td>경도 ↑ ("재미" ↓)</td></tr>
     <tr><td><strong>지오메트리</strong></td><td>기본 로커</td><td><strong>강화된 로커</strong></td><td>전환 매끄러움 ↑</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td>10/10</td><td>10/10</td><td>동일 (둘 다 최상)</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>5/10</td><td><strong>4/10</strong></td><td>-1 (폼 경화)</td></tr>
+    <tr><td><strong>쿠션 점수</strong></td><td><strong>9/10</strong></td><td>8/10</td><td>-1 (폼 경화)</td></tr>
+    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>6/10</td><td>동일</td></tr>
     <tr><td><strong>안정성 점수</strong></td><td>6/10</td><td><strong>7/10</strong></td><td>+1 (로커+스너그 핏)</td></tr>
     <tr><td><strong>내구성</strong></td><td>700km</td><td><strong>600km</strong></td><td>-100km</td></tr>
     <tr><td><strong>km당 비용</strong></td><td>341원</td><td><strong>415원</strong></td><td>+74원/km</td></tr>
@@ -6677,7 +6677,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>전족부도 36→41mm로 같이 +5mm. 본디 9(약 40mm)보다도 높은 <strong>현존 최상위급 스택</strong>입니다. 체중 있는 러너, 퇴행성 관절 초기, 무릎 부상 복귀 러너에게 착지 충격 흡수는 v1보다 한 단계 더 위. 다만 스택이 높아질수록 빠른 페이스는 더 답답해지니 "오로지 보호 우선"일 때 의미 있는 변화예요.</p>
 
 <h3>2. DNA Tuned 폼 경화 ⚠️ "구름 푹신함" 후퇴</h3>
-<p>맥스 2의 가장 논쟁적인 변화. v1을 아꼈던 러너들이 "v2가 단단해져서 구름 위를 걷는 느낌이 사라졌다"고 입을 모읍니다. 반응성 점수도 5→4로 한 칸 내려갔죠. <strong>리커버리 슈즈의 핵심인 "푹신함"을 최우선으로 본다면 이건 다운그레이드</strong>로 느껴질 수 있습니다. 반대로 "v1은 너무 물렁해서 불안했다"면 환영할 변화.</p>
+<p>맥스 2의 가장 논쟁적인 변화. v1을 아꼈던 러너들이 "v2가 단단해져서 구름 위를 걷는 느낌이 사라졌다"고 입을 모읍니다. 쿠션 점수도 9→8로 한 칸 내려갔죠(반응성 점수는 6으로 동일). <strong>리커버리 슈즈의 핵심인 "푹신함"을 최우선으로 본다면 이건 다운그레이드</strong>로 느껴질 수 있습니다. 반대로 "v1은 너무 물렁해서 불안했다"면 환영할 변화.</p>
 
 <h3>3. 강화된 로커 + 스너그 피팅 ✅ 안정성 6→7</h3>
 <p>로커(밑창 앞쪽 곡선)가 강화돼 47mm 고스택에도 발이 앞으로 자연스럽게 굴러갑니다. 어퍼가 트리플 자카드 메쉬로 발을 더 단단히 감싸 좌우 흔들림이 줄었어요. 고스택 맥시멀화의 고질병인 "흔들거림"을 잡은 건 분명한 개선입니다.</p>
@@ -6703,7 +6703,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>최대 스택 = 최대 충격흡수가 목표</td><td><strong>맥스 2</strong></td><td>힐 47mm로 +5mm 더 높음</td></tr>
     <tr><td>무릎 부상 복귀 / 퇴행성 관절 초기</td><td>둘 다 excellent</td><td>kneeIssues 둘 다 최상, 발볼로 선택</td></tr>
     <tr><td>v1 사용 중 + 500km 이내 멀쩡</td><td><strong>v1 계속</strong></td><td>맥스 2 업그레이드 가치 미미, 토박스만 손해</td></tr>
-    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>305~318g·반응성 4~5, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
+    <tr><td>빠른 템포·인터벌 겸용</td><td>둘 다 비권장</td><td>305~318g·반응성 6, 리커버리 전용. 템포는 하이페리온 맥스</td></tr>
   </tbody>
 </table>
 
@@ -6772,7 +6772,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>주의가 필요합니다. 맥스 2는 v1의 와이드 토박스(74.3mm)에서 standard로 좁아졌고 스너그 피팅이라 <strong>리뷰마다 "반 사이즈 업"이 반복 권장</strong>됩니다. 발볼 넓다면 ① v1 와이드 토박스를 노리거나 ② 맥스 2는 한국 공식몰에 와이드가 없으니 반 사이즈 업을 시착 후 결정하세요.</p>
 
 <h3>Q. 둘 다 빠르게 달릴 수 있나요?</h3>
-<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g·반응성 5, 맥스 2 318g·반응성 4로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
+<p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. v1 305g, 맥스 2 318g, 반응성은 둘 다 6으로 6분/km 이상 느린 조깅에 최적화됐어요. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a> 같은 슈퍼트레이너를 따로 두는 게 맞습니다.</p>
 
 <h3>Q. 무릎이 안 좋은데 어느 쪽이 더 좋나요?</h3>
 <p>둘 다 무릎 보호 excellent 등급이라 우열을 가리기 어렵습니다. 순수 충격흡수만 보면 47mm 맥스 2가 한 칸 위지만, <strong>실제 차이는 발볼·푹신함 취향에서 갈립니다</strong>. 발볼 넓고 부드러운 게 좋으면 v1, 흔들림 없는 안정적 착지가 좋으면 맥스 2. 무릎 부상 복귀라면 매장 시착으로 본인 발에 맞는 쪽을 고르세요.</p>
@@ -6836,7 +6836,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     slug: 'mizuno-wave-rebellion-flash-2-vs-3-comparison',
     title: '미즈노 웨이브 리벨리온 플래시 2 vs 플래시 3 비교 | PEBA→TPEE 듀얼폼 전환·드롭 그대로, 미드풋 템포 트레이너 세대 차이 총정리',
-    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 힐 스택 35.2→40.0mm, 반응성 7→8 개선이 핵심. 랩 드롭은 2.9→7.5mm로 높아진 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
+    description: '미즈노 웨이브 리벨리온 플래시 2(189,000원)와 플래시 3(199,000원) 세대 비교. 상단 폼 PEBA→ENERZY XP(TPEE) 교체, 힐 스택 35.2→40.0mm, 반응성 6→8 개선이 핵심. 랩 드롭은 2.9→7.5mm로 높아진 미드풋 템포 트레이너, 부상별·세일별 구매 매트릭스.',
     thumbnail: '/images/shoes/mizuno/waverebellionflash3/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -6848,7 +6848,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>핵심 변화는 상단 폼</strong> — 2의 Enerzy Lite+(PEBA) 단일 감성에서, 3은 <strong>ENERZY XP(TPEE) 상단 + ENERZY NXT(EVA) 하단</strong> 듀얼 구조로 바뀌어 착지는 더 부드럽고 푸시오프는 더 탄력 있게 재설계됐습니다.</li>
-    <li>힐 스택 35.2→40.0mm, 반응성 점수 7→8로 상승. 랩 드롭은 <strong>2.9→7.5mm로 높아져 3은 저드롭에서 벗어났지만</strong>, 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
+    <li>힐 스택 35.2→40.0mm, 반응성 점수 6→8로 상승. 랩 드롭은 <strong>2.9→7.5mm로 높아져 3은 저드롭에서 벗어났지만</strong>, 둘 다 힐스트라이커·과내전 입문자에겐 비추입니다.</li>
     <li>MSRP는 189,000원 → 199,000원(+1만원). 두 신발 모두 와이드 옵션이 없어 발볼 넓은 한국 러너는 반 사이즈 업 또는 매장 시착이 필수입니다.</li>
   </ul>
 </div>
@@ -6877,8 +6877,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>드롭</strong></td><td>2.9mm (Lab)</td><td>7.5mm (Lab)</td><td>+4.6mm (저드롭 → 중간 드롭)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>Enerzy Lite+ (PEBA) + Enerzy 듀얼</td><td><strong>ENERZY XP (TPEE) 상단 + ENERZY NXT (EVA) 하단</strong></td><td>상단 폼 소재 교체</td></tr>
     <tr><td><strong>플레이트</strong></td><td>Wave 플레이트 (유리섬유, 곡선형)</td><td>유리섬유 강화 나일론 플레이트 (평판형)</td><td>형상·구성 변경</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>7/10</td><td><strong>8/10</strong></td><td>+1 (TPEE 탄성)</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td>7/10</td><td>7/10</td><td>동일 (스택은 ↑)</td></tr>
+    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td><strong>8/10</strong></td><td>+2 (TPEE 탄성)</td></tr>
+    <tr><td><strong>쿠션 점수</strong></td><td>7/10</td><td><strong>10/10</strong></td><td>+3 (스택 ↑)</td></tr>
     <tr><td><strong>안정성 점수</strong></td><td>5/10</td><td>6/10</td><td>+1</td></tr>
     <tr><td><strong>내구성</strong></td><td>600km</td><td>500km</td><td>-100km</td></tr>
     <tr><td><strong>아웃솔</strong></td><td>G3 러버</td><td>전체 러버 (젖은 노면 그립 강조)</td><td>커버리지 확대</td></tr>
@@ -6903,7 +6903,7 @@ export const posts_2026_06: BlogPost[] = [
       <tbody>
         <tr><td><strong>상단 폼</strong></td><td>Enerzy Lite+ (PEBA)</td><td>ENERZY XP (TPEE)</td></tr>
         <tr><td><strong>착지 첫 감촉</strong></td><td>탄탄하게 바닥을 치는 직접적 느낌</td><td>한 번 살짝 빠졌다가 받쳐주는 부드러운 터치</td></tr>
-        <tr><td><strong>푸시오프</strong></td><td>PEBA 특유의 빠른 반발</td><td>TPEE 탄성 + EVA 받침의 이중 푸시 (반응성 점수 +1)</td></tr>
+        <tr><td><strong>푸시오프</strong></td><td>PEBA 특유의 빠른 반발</td><td>TPEE 탄성 + EVA 받침의 이중 푸시 (반응성 점수 +2)</td></tr>
         <tr><td><strong>플레이트</strong></td><td>유리섬유 Wave(곡선형) — 롤링감 강조</td><td>유리섬유 강화 나일론(평판형) — 안정적 추진</td></tr>
         <tr><td><strong>성격</strong></td><td>장난기 있는 '재미형' 템포 트레이너</td><td>레이스데이까지 노린 '진중한' 템포 트레이너</td></tr>
       </tbody>
@@ -6919,7 +6919,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>플래시 2의 Enerzy Lite+(PEBA)가 직접적이고 탄탄한 반발이었다면, 3의 ENERZY XP는 <strong>착지 시 한 박자 부드럽게 받아준 뒤 튕겨내는 이중 구조</strong>입니다. "2는 딱딱하게 바닥을 친다"고 느꼈던 러너에게는 환영할 변화이고, 반대로 "PEBA의 즉각적인 반발이 좋았다"는 러너에게는 다소 무뎌졌다고 느껴질 수 있습니다. 취향이 갈리는 지점이니 가능하면 두 폼을 직접 밟아보고 결정하세요.</p>
 
 <h3>2. 힐 스택 35.2→40.0mm ✅ 쿠션 여유 ↑, 장거리 부담 ↓</h3>
-<p>힐은 4.8mm 두꺼워졌고 전족부는 거의 같습니다(32.3→32.5mm). 쿠션 점수 자체는 7/10로 동일하게 잡혀 있지만, 실제로는 <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
+<p>힐은 4.8mm 두꺼워졌고 전족부는 거의 같습니다(32.3→32.5mm). 쿠션 점수도 7/10에서 10/10으로 올라, <strong>하프~템포 후반부의 다리 보호 여유가 늘었습니다.</strong> 3의 최적 페이스가 4:00–5:00으로 2(4:00–5:30)보다 살짝 빠른 영역에 잡힌 것도, 늘어난 스택과 TPEE 탄성 덕에 레이스데이 쪽으로 성격이 이동했음을 보여줍니다.</p>
 
 <h3>3. 드롭 2.9→7.5mm ⚠️ 3은 저드롭에서 벗어남</h3>
 <p>RunRepeat 랩 실측 드롭은 2가 2.9mm, 3이 7.5mm로 <strong>3은 저드롭이 아닙니다</strong>. 극단적 저드롭은 2에만 해당해, 힐스트라이커가 2를 신으면 초반 2주는 아킬레스·종아리에 부담이 옵니다. 단, 3은 무릎 부담 등급이 <strong>caution</strong>으로 잡혀 있어(2는 knee good) 미드풋 착지 자체에 더 공격적인 세팅이라는 점은 유념하세요.</p>
@@ -7026,7 +7026,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">'직접 반발의 2' vs '진중해진 3' — 취향과 용도로 갈립니다</p>
     <p><strong>템포런 위주 + 가성비 우선 + PEBA의 직접적인 롤링이 좋다</strong>면 <a href="/shoes/mizuno-wave-rebellion-flash-2">플래시 2</a>를 세일 진입 시점(13~15만원대)에 본인 사이즈로 잡는 게 합리적입니다. 600km 내구성과 곡선형 Wave 플레이트의 장난기가 매력이죠. 단 와이드가 없으니 사이즈 품절 전에 움직이세요.</p>
-    <p><strong>레이스데이 겸용 + 착지 부드러움 + 하프 후반 다리 보호 여유</strong>가 우선이라면 <a href="/shoes/mizuno-wave-rebellion-flash-3">플래시 3</a> 정가(199,000원)를 감수할 가치가 있습니다. ENERZY XP(TPEE) 듀얼 폼과 +2mm 스택, 한 단계 오른 반응성 점수가 4:00–5:00 페이스 영역에서 값을 합니다.</p>
+    <p><strong>레이스데이 겸용 + 착지 부드러움 + 하프 후반 다리 보호 여유</strong>가 우선이라면 <a href="/shoes/mizuno-wave-rebellion-flash-3">플래시 3</a> 정가(199,000원)를 감수할 가치가 있습니다. ENERZY XP(TPEE) 듀얼 폼과 +2mm 스택, 두 단계 오른 반응성 점수가 4:00–5:00 페이스 영역에서 값을 합니다.</p>
     <p><strong>둘 다 처음이라 감을 못 잡겠다</strong>면 매장에서 2·3을 동시에 5분씩 밟아보세요. PEBA의 직접 반발과 TPEE의 부드러운 터치는 짧게 걸어봐도 명확히 갈립니다. 단, 어느 쪽이든 힐스트라이커·과내전 입문자에게는 권하지 않습니다.</p>
   </div>
 </div>
@@ -7254,8 +7254,8 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>255g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
     <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>278g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td><strong>10</strong></td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>9</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
+    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td>9</td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
+    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>8</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
     <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>10</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
   </tbody>
@@ -7275,7 +7275,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>목적별 베스트</h2>
 <ul>
   <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
-  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
+  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9)·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
   <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
@@ -7329,7 +7329,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>40 / 32mm</td></tr>
     <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>7.6mm</td></tr>
     <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>332g</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 6</td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
+    <tr><td>쿠션 / 반발</td><td>8 / <strong>7</strong></td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
     <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
   </tbody>
@@ -7359,7 +7359,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>셋 다 부담된다면 더 저렴한 대안(사코니 가이드 18·미즈노 인스파이어 21 등)까지 포함한 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화 추천 전체 가이드</a>나 <a href="/best/stability">안정화 베스트</a>를 함께 보세요.</p>
 
 <h2>마무리</h2>
-<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"탄탄한 지지(카야노) vs 푹신함·내구(글리세린) vs 가성비(860)"</strong>로 갈립니다. 셋 다 반발은 6/10 수준이라 속도 훈련용으로는 어느 쪽도 적합하지 않습니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
+<p>세 신발 모두 평발·과내전 러너에게 검증된 선택입니다. 차이는 결국 <strong>"탄탄한 지지(카야노) vs 푹신함·내구(글리세린) vs 가성비(860)"</strong>로 갈립니다. 셋 다 반발은 6~7/10 수준이라 속도 훈련용으로는 어느 쪽도 적합하지 않습니다. 발볼이 넓다면 셋 다 와이드 옵션이 있으니 매장에서 2E 이상을 함께 신어보고, 아킬레스가 약하다면 드롭이 높은 글리세린을 우선 고려하세요.</p>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 제조사·실측 자료 기준이며 가격은 변동될 수 있습니다. 과내전·평발이라고 모두 안정화가 정답은 아니므로(중립화가 맞는 경우도 있음), 통증이 있다면 보행 분석을 권합니다.</p>
 `,
