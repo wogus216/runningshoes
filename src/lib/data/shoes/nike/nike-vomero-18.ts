@@ -98,7 +98,7 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026', title: '보메로 18 vs 슈퍼노바 라이즈 3 — 3만원·34g 차이, 쿠션 실측은 147 대 140 SA' },
     { slug: 'nike-vomero-18-vs-vomero-plus-max-cushion-2026', title: '보메로 18 vs 보메로 플러스 — 뒤꿈치는 같고 앞발이 다르다' },
-    { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '보메로 18 vs 메가블라스트 — 둘 다 쿠션 10점, 80g 차' },
+    { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '보메로 18 vs 메가블라스트 — 쿠션 9 대 10, 80g 차' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xll2Pioq' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y0Rl9u68' }],
 };
