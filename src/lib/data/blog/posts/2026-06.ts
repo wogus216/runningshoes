@@ -7275,7 +7275,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>목적별 베스트</h2>
 <ul>
   <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
-  <li><strong>최고 푹신함</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9)·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)</li>
+  <li><strong>푹신함 우선</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)·<a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9, 넓은 발볼)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
   <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
@@ -7338,7 +7338,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>지지 방식이 다르다 — 핵심 차이</h2>
 <ul>
   <li><strong>카야노 33 · FLUIDSUPPORT</strong> — 30~32의 4D Guidance 대신 미드솔 형상으로 안정을 잡는 방식. FF BLAST MAX 듀얼 폼으로 착지는 부드러워졌지만, 랩 실측에서는 에너지 리턴이 힐 50.0%로 셋 중 특별히 앞서지 않았습니다. 비틀림 강성 20.1Nm으로 지지 하드웨어는 셋 중 가장 탄탄한 편. 자세한 변천은 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>·<a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a> 참고</li>
-  <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 가장 낮아 푹신함 위주</li>
+  <li><strong>글리세린 GTS 22 · GuideRails</strong> — 발이 과하게 꺾일 때만 양옆 레일이 막아주는 방식(평소엔 중립처럼 부드러움). 드롭 10mm로 가장 높아 아킬레스·종아리 부담이 적고, 800km 내구성으로 오래 갑니다. 대신 반발은 6/10으로 860 v15와 함께 셋 중 낮은 쪽이라 푹신함 위주</li>
   <li><strong>860 v15 · 듀얼 폼+플레이트</strong> — 이중 밀도 Fresh Foam X 안쪽을 단단하게 해 무너짐을 잡는 정공법. 드롭 7.6mm(실측, 브랜드 표기 6mm)에 332g으로 묵직하지만, 18만원대로 가장 저렴. <a href="/blog/new-balance-860-v14-vs-v15-comparison">v14와의 차이</a>(와이드 옵션)도 확인하세요</li>
 </ul>
 

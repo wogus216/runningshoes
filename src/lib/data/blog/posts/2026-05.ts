@@ -3687,7 +3687,7 @@ export const posts_2026_05: BlogPost[] = [
 <h2>5가지 핵심 변화 — 방향이 달라졌다</h2>
 
 <h3>1. 미드솔 폼 완전 교체 ✅ 가장 큰 변화</h3>
-<p>v2의 <strong>FF Turbo+ (PEBA 단일)</strong> → v3의 <strong>FF LEAP + FF BLAST PLUS (듀얼 폼)</strong>. 다른 신발 세대 변화 중 가장 큰 폼 카테고리 전환. v2는 PEBA 단일 폼이라 "직진성 + 강한 반발", v3는 듀얼 폼이라 "부드러운 라이드 + 자연스러운 전환".</p>
+<p>v2의 <strong>FF Turbo+ (PEBA 단일)</strong> → v3의 <strong>FF LEAP + FF BLAST PLUS (듀얼 폼)</strong>. 다른 신발 세대 변화 중 가장 큰 폼 카테고리 전환. v2는 PEBA 단일 폼이라 "직진성 + 강한 추진", v3는 듀얼 폼이라 "부드러운 라이드 + 자연스러운 전환".</p>
 
 <div class="callout warning">
   <span class="callout-icon">🔬</span>
@@ -3743,7 +3743,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr><td>인터벌 (400m × 12, 1km × 8)</td><td><strong>슈퍼블라스트 2</strong></td><td>FF Turbo+ 단일 PEBA 직진성</td></tr>
     <tr><td>템포런 (10km Sub-4:00 페이스)</td><td><strong>슈퍼블라스트 2</strong></td><td>3:30~5:30 옵티멀, 빠른 페이스</td></tr>
-    <tr><td>하프마라톤 레이스 (Sub-1:30 ~ Sub-1:45)</td><td><strong>슈퍼블라스트 2</strong></td><td>경량 + 강한 반발</td></tr>
+    <tr><td>하프마라톤 레이스 (Sub-1:30 ~ Sub-1:45)</td><td><strong>슈퍼블라스트 2</strong></td><td>3:30~5:30 옵티멀 + 안정성 7/10 (반응성은 v3와 같은 8/10)</td></tr>
     <tr><td>롱런 25~35km (Z2~Z3)</td><td><strong>슈퍼블라스트 3</strong></td><td>46.5mm 스택 후반 보호</td></tr>
     <tr><td>마라톤 페이스 훈련 (MP 30km)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP 부드러운 라이드 + 듀얼 폼</td></tr>
     <tr><td>풀코스 레이스 Sub-4 ~ Sub-3:30</td><td><strong>슈퍼블라스트 3</strong></td><td>경량 + 46.5mm 후반 보호 + 250km 이상 내구성</td></tr>
@@ -3765,7 +3765,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>발볼 표준~약간 넓음</td><td>v2 standard 또는 v3 standard</td><td>실측상 v3 토박스가 0.7mm 더 좁음</td></tr>
     <tr><td>가성비 최우선 + 인터벌·템포 위주</td><td><strong>슈퍼블라스트 2 이월 21~23만원</strong></td><td>전족 에너지 리턴 65.5%(실측) + 3~5만원 절약</td></tr>
     <tr><td>풀코스 빌드업 사이클 (롱런·MP)</td><td><strong>슈퍼블라스트 3</strong></td><td>FF LEAP + 46.5mm 후반 보호</td></tr>
-    <tr><td>하프마라톤 PB 도전</td><td><strong>슈퍼블라스트 2</strong></td><td>v2의 직진성·반발 강점</td></tr>
+    <tr><td>하프마라톤 PB 도전</td><td><strong>슈퍼블라스트 2</strong></td><td>v2의 직진성·빠른 옵티멀 페이스 (반응성은 둘 다 8/10)</td></tr>
     <tr><td>첫 슈퍼트레이너 + 다양한 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>롱런·페이스 훈련 다재다능</td></tr>
     <tr><td>카본 슈즈 들고 싶지만 부담</td><td>둘 다 OK</td><td>슈퍼블라스트가 카본 입문 전 단계 정답</td></tr>
     <tr><td>주 70~100km 고볼륨 훈련</td><td><strong>슈퍼블라스트 3</strong></td><td>550km 내구성 + 부드러운 라이드 누적 피로 ↓</td></tr>
@@ -3875,7 +3875,7 @@ export const posts_2026_05: BlogPost[] = [
     <p class="callout-title">발볼 + 훈련 패턴으로 명확히 갈리는 선택</p>
     <p><strong>발볼 4E급 + 와이드 필수</strong>라면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 와이드</a>가 사실상 유일한 답. v3는 와이드 없음. v2 와이드 + 이월 가격 21~23만원으로 본인 사이즈 지금 잡으세요. 가을~블프엔 와이드부터 사라짐.</p>
     <p><strong>풀코스 빌드업 + 롱런·MP 페이스 중심</strong>이면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 정가 26만원. FF LEAP + 46.5mm 스택의 부드러운 라이드가 30km+ 마라톤 페이스 훈련에서 가치를 발휘. Sub-3:30 ~ Sub-4 풀코스 가성비 정답.</p>
-    <p><strong>인터벌·템포·하프 레이스</strong>가 주 훈련이면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 이월 21~23만원</a>. FF Turbo+ 단일 PEBA의 직진성·반발이 빠른 페이스에서 v3보다 명확히 유리. 5만원 절약하고 페이스 훈련 + 하프 PB 도전.</p>
+    <p><strong>인터벌·템포·하프 레이스</strong>가 주 훈련이면 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2 이월 21~23만원</a>. 반응성 점수는 v3와 같은 8/10이지만, FF Turbo+ 단일 PEBA의 직진성과 3:30~5:30 옵티멀 페이스, 한 칸 높은 안정성(7/10)이 빠른 페이스 훈련에 맞음. 5만원 절약하고 페이스 훈련 + 하프 PB 도전.</p>
     <p><strong>첫 슈퍼트레이너 도전 + 풀코스 시즌</strong>이라면 v3 권장. 다재다능한 활용 + 부상 위험 ↓.</p>
   </div>
 </div>

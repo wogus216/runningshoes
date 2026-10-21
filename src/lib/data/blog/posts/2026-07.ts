@@ -1433,7 +1433,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>스펙은 쌍둥이, 성격은 다르다</strong> — <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(45mm·247g)와 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(46.5mm·235g) 모두 카본 없는 초고스택 슈퍼 트레이너. 스택·무게·반발이 거의 같습니다</li>
+    <li><strong>스펙은 쌍둥이, 성격은 다르다</strong> — <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(45mm·247g)와 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(46.5mm·235g) 모두 카본 없는 초고스택 슈퍼 트레이너. 스택·무게는 거의 같고, 반발은 엣지가 9/10으로 슈퍼블라스트 3(8/10)보다 한 칸 높습니다</li>
     <li><strong>가르는 건 내구와 용도</strong> — 엣지는 700km 내구·km당 356원의 <strong>훈련 특화</strong>, 슈퍼블라스트 3은 235g 경량·낮은 내구(550km)의 <strong>레이스데이·템포 지향</strong></li>
     <li>둘 다 <strong>와이드 없음</strong>이고 발볼은 좁은 편. 엣지는 <strong>뻣뻣한 힐 칼라</strong>가 복사뼈를 파고든다는 지적이, 슈퍼블라스트 3은 검증된 갑피 완성도가 특징입니다</li>
   </ul>
