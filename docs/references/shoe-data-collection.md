@@ -144,6 +144,10 @@ koreanFootFit: {
 
 ### Believe in the Run 리뷰 수집
 
+> ⚠️ 이 사이트는 **후기를 수집하지 않는다.** 외부 리뷰(Believe in the Run·Doctors of Running·Road Trail Run 등)에서 읽어 온 내용은
+> 본문(editorComment·detailedSpecs 등) 근거의 **실명 출처**로만 쓴다. 리뷰 텍스트를 `reviews`에 옮기거나, 리뷰 점수를 `rating`으로 환산하지 않는다.
+> `reviews` 작성 형식은 C절 「수집한 데이터 → reviews 작성」을 따른다.
+
 **1. 페이지 접속 및 스냅샷:**
 
 ```javascript
@@ -191,17 +195,18 @@ take_snapshot의 텍스트를 직접 읽거나, evaluate_script로 추출:
 }
 ```
 
-**4. 리뷰 텍스트 정리:**
+**4. 추출한 내용 정리:**
 
-스냅샷에서 직접 복사하거나 WebFetch 결과 활용:
+리뷰 텍스트는 복사해 오지 않는다. 장점·단점·평가는 본문에 **실명 출처를 붙여** 근거로만 쓰고(예: "Believe in the Run은 ~라고 평가했다"),
+점수(Form/Fit/Function, X/15, Tier)는 **표기 그대로 기록만** 한다 — `reviews.rating`으로 환산하지 않는다.
+`reviews`는 실측 수치를 러너 유형별로 해석한 적합성 분석이며, 형식은 아래와 같다(자세한 규칙은 C절):
 
 ```typescript
 reviews: [
   {
-    userType: 'Believe in the Run 리뷰어',
-    rating: 73,  // 11/15 점수를 5점 만점으로 환산: (11/15) * 100 = 73
-    text: '모든 것이 바뀌었지만 여전히 1080입니다. Infinion 폼은 Fresh Foam X보다 반발력이 오래 지속되고...'
-  }
+    userType: '예상 적합 — {러너 유형·조건}',   // rating 필드 없음
+    text: '{실측 수치}라 {조건}인 경우에 맞는 수치입니다. 다만 {약점 실측}이라 {상황}에서는 {한계}가 생길 수 있습니다.',
+  },
 ]
 ```
 
@@ -553,7 +558,7 @@ Agent({
 2. **Believe in the Run 리뷰** — https://believeintherun.com/shoe-reviews/{model}-review/
    - 장점 3-5개, 단점 2-4개, 추천/비추천 대상
    - 점수: **신 Tier 시스템**(A/B/C/D) 또는 구 숫자(X/15) 둘 중 실제 표기 그대로
-   - 핵심 인용 1-2개 (한국어 리뷰 작성 소스)
+   - 핵심 인용 1-2개 (본문 근거의 실명 출처용 — `reviews` 텍스트로 옮기지 않는다)
    - 이미지 URL 5-8개 (side/front/back/angle/outsole — 다운로드용)
 3. **Road Trail Run 리뷰** — roadtrailrun.com 검색 (신상 리뷰 빠름, 기술 비교 상세)
 4. **Doctors of Running 리뷰** (있으면) — 의학적 관점 (평발/무릎/아킬레스)
@@ -610,6 +615,31 @@ biomechanics: {
 koreanFootFit: { toBoxWidth: /* 위 기준 */ }
 ```
 
+### 수집한 데이터 → reviews 작성
+
+이 사이트는 **후기를 수집하지 않는다.** `reviews`는 실사용 후기가 아니라 **실측 수치를 러너 유형별로 해석한 적합성 분석**이다
+(`scripts/validate.ts` 7. 허구 후기 검증이 같은 원칙을 검사한다).
+
+```typescript
+reviews: [
+  {
+    userType: '예상 적합 — {러너 유형·조건}',
+    text: '{실측 수치}라 {조건}인 경우에 맞는 수치입니다. {실측 수치}라 {상황}에서 {특성}이 가장 크게 작동하는 구조입니다. 다만 {약점 실측}이라 {상황}에는 {한계}가 생길 수 있습니다.',
+  },
+  {
+    userType: '예상 적합 — {맞지 않는 조건의 러너}',
+    text: '이 조건에는 맞지 않을 가능성이 높습니다. {실명 출처}는 {평가}라고 평가했고, {실측 수치}는 {조건}의 러너에게 {이유}. {대안 방향}을 보는 편이 맞습니다.',
+  },
+]
+```
+
+- `userType`은 `'예상 적합 — {조건}'` 형식. **`rating`은 넣지 않는다**(외부 리뷰 점수 환산 포함).
+- `text`는 조건부 문장(`~할 가능성이 있습니다`, `~에 맞는 수치입니다`)으로 쓴다.
+- 근거 위계: ① 실측 수치 → ② 주관 영역이면 실명 출처(Believe in the Run·Doctors of Running·RunRepeat 등) → ③ 둘 다 없으면 뺀다.
+- 외부 리뷰는 **본문 근거의 실명 출처로만** 쓴다. 리뷰 텍스트 복사·번역, 리뷰어를 `userType`으로 세우는 것 금지.
+- 금지: 1인칭 경험·착용 서술, 실재 대회·코스명, 허구 기록, 출처 없는 수치·rating, "후기가 많다"·"실사용 후기에서" 류 표현.
+- 실제 예시는 `src/lib/data/shoes/diadora/diadora-frequenza-2.ts`의 `reviews`를 참고한다(형식만 따르고 문장은 신발마다 새로 쓴다).
+
 ### 신상 신발 대응 프로토콜 (RunRepeat/DOR 랩 미게시 시)
 
 출시 직후(<3개월) 신발은 RunRepeat 랩 테스트가 없고 DOR 리뷰도 없는 경우가 많다.
@@ -654,8 +684,8 @@ koreanFootFit: { toBoxWidth: /* 위 기준 */ }
 - [ ] 에너지 리턴 (%) — 힐/전족부
 - [ ] 토박스 너비 (mm)
 
-**리뷰 평가**
-- [ ] 종합 점수 (5점 만점)
+**외부 리뷰 평가** (본문 근거의 실명 출처용 — `reviews`·`rating`에 옮기지 않는다)
+- [ ] 종합 점수 (매체 표기 그대로 기록)
 - [ ] 주요 장점 (3-5개) / 단점 (2-4개)
 - [ ] 추천 대상 / 비추천 대상
 
