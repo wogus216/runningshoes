@@ -186,17 +186,28 @@ for (const s of shoes) {
 ok(`신발 쿠션 매핑표 점검 ${mappingChecked}/${shoes.length}종 (힐 SA가 본문에 있는 신발만)`);
 
 // 반응성 점수 vs 매핑표(2026-10-20 개정, 전족부 에너지 리턴 기준). 2026-10-22 추가 — 개정 전에 들어온
-// 신규 4종(킵서밋 맥스·UA 2종·어질리티 피크 6)이 이 검사가 없어 옛 점수로 남아 있었다.
-// 전작 수치(앞 80자에 "N세대"·"전작")는 근거 인정 여부가 미정이라 건너뛴다.
-const FF_ER = /에너지\s*리턴[^%]{0,20}?(?:\d{2}(?:\.\d+)?\s*%[^%]{0,6}?)?전족부?\s*(\d{2}(?:\.\d+)?)\s*%/g;
-const PRIOR_GEN = /\d세대|전작/;
+// 신규 5종(킵서밋 맥스·킵스톰 엘리트·UA 2종·어질리티 피크 6)과 마하 X 3이 이 검사가 없어 옛 점수로 남아 있었다.
+// 어순이 셋이다: "에너지 리턴 (힐 N%·)전족부 N%" / "전족부 에너지 리턴 N%" / "전족부 N% 에너지 리턴". 부위 표기 없는 값은 검사하지 않는다.
+const FF = '(?:전족부?|앞발|포어풋)';
+const PCT = '(\\d{2}(?:\\.\\d+)?)\\s*%';
+const FF_ER_PATTERNS = [
+  new RegExp(`에너지\\s*리턴[^%]{0,20}?(?:\\d{2}(?:\\.\\d+)?\\s*%[^%]{0,6}?)?${FF}\\s*${PCT}`, 'g'),
+  new RegExp(`${FF}\\s*(?:부\\s*)?에너지\\s*리턴[^%\\d]{0,6}${PCT}`, 'g'),
+  new RegExp(`${FF}\\s*${PCT}\\s*(?:의\\s*)?에너지\\s*리턴`, 'g'),
+];
+// 본문 수치가 전작 것인 신발 — 전작 수치의 근거 인정 여부가 미정(매핑표 문서 "미정" 항목)이라 건너뛴다
+const RESP_SKIP: Record<string, string> = {
+  'saucony-endorphin-speed-6': '본문 에너지 리턴은 5세대 기준선 수치',
+};
 const respRule = (er: number) => (er >= 75 ? 10 : er >= 70 ? 9 : er >= 65 ? 8 : er >= 55 ? 7 : er >= 45 ? 6 : null);
 let respChecked = 0;
+const respSkipped: string[] = [];
 for (const s of shoes) {
   if (s.specs?.responsiveness == null) continue;
   const text = JSON.stringify(s);
-  const m = Array.from(text.matchAll(FF_ER)).find((x) => !PRIOR_GEN.test(text.slice(Math.max(0, x.index! - 80), x.index!)));
+  const m = FF_ER_PATTERNS.flatMap((re) => Array.from(text.matchAll(re))).sort((a, b) => a.index! - b.index!)[0];
   if (!m) continue;
+  if (RESP_SKIP[s.slug]) { respSkipped.push(`${s.slug}(${RESP_SKIP[s.slug]})`); continue; }
   respChecked++;
   const expected = respRule(parseFloat(m[1]));
   if (expected !== null && expected !== s.specs.responsiveness) {
@@ -204,6 +215,7 @@ for (const s of shoes) {
   }
 }
 ok(`신발 반응성 매핑표 점검 ${respChecked}/${shoes.length}종 (전족부 에너지 리턴이 본문에 있는 신발만)`);
+if (respSkipped.length) console.log(`  ℹ️  반응성 점검 제외 ${respSkipped.length}종: ${respSkipped.join(' · ')}`);
 console.log('');
 
 // ===========================================
