@@ -69,7 +69,7 @@ export const shoe: Shoe = {
   features: [
     '3/4 길이 ASTROPLATE (Pebax) — Blast 계열 유일',
     'FF Turbo Squared + FF Blast Max 듀얼 폼',
-    '에너지 리턴 68.9% — 매우 높은 축 (RunRepeat 단일 측정·부위 미표기)',
+    '에너지 리턴 68.9% — 매우 높은 축 (RunRepeat 본문은 부위 미표기, 랩 데이터는 힐·전족부 모두 68.9%)',
     '전족 접지력 0.96 · 통기성 5/5',
     '46mm 고스택 (실측 45.4mm)',
   ],

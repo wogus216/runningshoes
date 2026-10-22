@@ -3392,7 +3392,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>10mm</td></tr>
     <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>Opti FOAM Evo</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td><td><strong>풀 카본 플레이트</strong></td></tr>
-    <tr><td>쿠션 / 반응</td><td>8 / 5</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
+    <tr><td>쿠션 / 반응</td><td>8 / 6</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
     <tr><td>안정성</td><td><strong>8</strong></td><td>7</td><td>4</td></tr>
     <tr><td>아웃솔·그립</td><td><strong>Vibram Megagrip(4.0mm 러그)</strong></td><td>Contagrip(4mm 러그)</td><td>ASICSGRIP(2.7mm 러그)</td></tr>
     <tr><td>발볼 / 와이드</td><td>좁은 편(73.0mm) · <strong>와이드 O(동일가)</strong></td><td>좁음 · 없음</td><td>좁음(69.6mm) · 없음</td></tr>
@@ -4072,7 +4072,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>4.2mm</td><td>5mm</td></tr>
     <tr><td>미드솔</td><td>Fresh Foam X 듀얼 밀도</td><td>CMEVA 맥스쿠션</td></tr>
     <tr><td>아웃솔</td><td>Vibram Megagrip · <strong>러그 3.3mm</strong></td><td>Vibram Megagrip + Traction Lug · <strong>러그 4.0mm</strong></td></tr>
-    <tr><td>에너지 리턴</td><td><strong>61.9%</strong></td><td>약 48%</td></tr>
+    <tr><td>에너지 리턴 (힐)</td><td><strong>61.9%</strong></td><td>48.0%</td></tr>
     <tr><td>내구성</td><td><strong>~600km</strong>(마모 0.9mm 우수)</td><td>400~500km(노출 미드솔 마모)</td></tr>
     <tr><td>토박스 / 와이드</td><td>표준(73.4mm) / 해외 2E·4E, <strong>한국 없음</strong></td><td>좁은 편(73.0mm) / <strong>와이드 공식 동일가</strong> + GTX</td></tr>
     <tr><td>가격(한국)</td><td><strong>189,000원</strong></td><td>205,000원</td></tr>

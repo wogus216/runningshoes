@@ -87,7 +87,7 @@ export const shoe: Shoe = {
     weight: '264g (남성 US 9 기준)',
     stackHeight: '힐 43mm / 포어풋 33mm',
     drop: '9.5mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
-    midsole: 'PEBA + Supercritical EVA (하이브리드) — RunRepeat 실측: 충격흡수 힐 151 SA·전족부 125 SA(평균 131 SA) · 에너지 리턴 전족부 69.3%·힐 58.9%(평균 61.5%)',
+    midsole: 'PEBA + Supercritical EVA (하이브리드) — RunRepeat 실측: 충격흡수 힐 151 SA(평균 131 SA)·전족부 125 SA · 에너지 리턴 전족부 69.3%(평균 61.5%)·힐 58.9%',
     plate: 'Pebax 플레이트 (탄소 아님)',
     outsole: '러버 커버리지',
     upper: '엔지니어드 메쉬',
