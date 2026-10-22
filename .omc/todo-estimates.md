@@ -18,6 +18,15 @@
 | **2026-10-23** | 10/20 카카오페이 릴스 | 게시 후 72h±6h 창에서 `npm run ig:insights` 1회 기록(창 표시 ●). 비팔로워 비율은 API 미제공 → Aside 웹 "인사이트 보기"로 보충, 대리 지표 표기 |
 | **2026-12-10** | `IG_ACCESS_TOKEN` | 만료(발급 10/18 + 60일 = 12/17경) 1주 전 — 개발자 대시보드에서 재발급하거나 refresh_access_token 으로 연장. 만료되면 `ig:insights` 가 인증 오류로 멈춘다 |
 
+## 🏃 10월 22일 밤 발행 — 2027 인천 K-마라톤 · 휠라×봉태규 상자
+
+블로그 `incheon-k-marathon` + DB `incheon-k-marathon-2027`(april.ts 2027 시즌). 1차 소스 k-player.or.kr/incheon2027 개요·참가신청·유의사항·환불·FAQ·시상·대회 안내·공지 2건(curl, 10/22). 코스·대회장·교통통제·기념품은 공식 "준비 중". 기록증 마감이 두 개(자격 3/31 공지 vs 그룹 배정은 "접수 마감 전 제출분만" 유의사항)라 글에 그대로 적음. 휠라 협업판은 `fila-running-club-seoul-forest-2026` 에 상자 추가(공식 상품 본문에 211g·3.3cm 텍스트 없음 → 기본 모델 195g 만 인용).
+
+| 확인일 | 대상 | 할 일 |
+|---|---|---|
+| **2026-11-13** | `incheon-k-marathon` + DB | 접수 마감(11/12) 다음날 — 선착순 조기 마감이었으면 `raceMeta.soldOut`·DB status 마감. 추가 접수 공지 여부. 기록증 두 마감(3/31 vs 접수 마감) 사무국 해석이 공지됐는지 |
+| **2026-12-15경** | 같은 대상 | 코스(청라 스카이라인)·대회장·교통통제·기념품 페이지 "준비 중" 해제 여부 → DB courseInfo·raceKit 백필, 글 warning 갱신. 영문 FAQ 의 서울 개최지 오기가 고쳐졌는지 |
+
 ## ⚾ 10월 22일 발행 — 굿바이 잠실런
 
 블로그 `lg-twins-goodbye-jamsil-last-run` + DB `goodbye-jamsil-last-run-2026`(11월). 1차 소스는 lgtwinslastrungoodbyejamsil.com(서버 렌더, curl 로 전문 확보)·코스도 이미지. MBN 10K 경유지 대조는 mbn-seoulmarathon.com 공식 GPX. 같은 커밋에서 MBN DB 의 "세부 경유지 추후 공개" 문구를 GPX 확인 사실로 교체.

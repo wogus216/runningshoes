@@ -2820,9 +2820,10 @@ export const posts_2026_09: BlogPost[] = [
     thumbnail: '/images/blog/fila-running-club-seoul-forest-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-09-14',
+    updatedAt: '2026-10-22',
     category: 'news' as const,
     readingTime: 6,
-    tags: ['휠라 러닝 클럽', 'FILA', '서울숲', '성수동', '스피드템포 플러스', '러닝 스테이션'],
+    tags: ['휠라 러닝 클럽', 'FILA', '서울숲', '성수동', '스피드템포 플러스', '러닝 스테이션', '휠라 봉태규'],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -2877,6 +2878,15 @@ export const posts_2026_09: BlogPost[] = [
 </div>
 <p><strong>195g은 가벼운 축입니다.</strong> 이 사이트가 다루는 데일리 트레이닝화 상당수가 250~290g대인 것과 비교하면 확실히 아래입니다. 미드솔에 쓰인 <strong>초임계 발포</strong>는 폼에 가스를 고압으로 주입해 부풀리는 방식으로, 같은 소재를 더 가볍고 탄력 있게 만드는 공정입니다. 최근 경량 레이싱화·템포화 대부분이 이 방식을 씁니다.</p>
 <p>다만 <strong>휠라 러닝화의 독립 랩 실측 데이터는 확인된 것이 없습니다.</strong> 위 수치는 전부 휠라 공식 제품 페이지가 표기한 값입니다. 이 사이트는 브랜드 표기와 랩 실측이 갈리는 사례(드롭·무게)를 여러 번 다뤘기 때문에, 공식 표기만 있는 단계에서는 그 사실을 함께 적어둡니다. 이 매장에서 직접 신고 달려볼 수 있다는 점이, 데이터가 아직 없는 브랜드에서는 오히려 더 실질적인 확인 수단일 수 있습니다.</p>
+
+<div class="callout info">
+  <span class="callout-icon">🆕</span>
+  <div class="callout-body">
+    <p class="callout-title">10월 21일 추가 — 봉태규와 만든 점자 협업판</p>
+    <p>휠라가 배우 봉태규와 두 번째로 협업한 <strong>[FILA X T] 스피드템포 플러스</strong>를 10월 21일(수) 11시에 내놨습니다. <a href="https://www.fila.co.kr/products/1100fs263ru04x003461" target="_blank" rel="noopener noreferrer">공식 상품 페이지</a> 기준 <strong>온라인 단독·회원 전용</strong>이고, 가격은 기본 모델과 같은 179,000원, 사이즈는 230~290mm, 색상은 461(블루·블랙·블랙) 한 가지입니다.</p>
+    <p>시각장애인을 위한 점자 디테일이 들어갔습니다. 왼발 앞코에는 '왼발', 오른발 앞코에는 '오른발'을 뜻하는 점자가 있어 좌우를 구분할 수 있고, 측면에는 'SPEEDTEMPO PLUS'가 점자로 새겨졌습니다. 휠라는 스피드템포 플러스를 베이스로 기획했다고 설명하지만 협업판의 무게·스택은 상품 본문에 따로 적지 않았습니다. 위 표의 195g(260mm)은 기본 모델 공식 표기입니다. 온라인 단독 상품이라 이 매장에서 사는 제품은 아니고, 발에 맞는지는 매장에서 기본 모델로 먼저 확인해 볼 수 있습니다(10월 22일 공식 페이지 확인).</p>
+  </div>
+</div>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>

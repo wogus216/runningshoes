@@ -38,6 +38,12 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: k-player.or.kr/incheon2027 공식 개요·참가신청·유의사항(2026-10-22 확인).
+  'incheon-k-marathon': {
+    title: '2027 인천 K-마라톤',
+    subtitle: '4월 11일 인천아시아드주경기장 · 풀·10K·5K',
+    data: '접수 11월 12일까지 선착순 · 풀코스는 기록증 필요',
+  },
   // 출처: lgtwinslastrungoodbyejamsil.com 공식 개요·접수 안내(2026-10-22 확인).
   'lg-twins-goodbye-jamsil-last-run': {
     title: '굿바이 잠실런 2026',
