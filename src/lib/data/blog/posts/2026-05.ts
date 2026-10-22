@@ -4001,7 +4001,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>72.5mm (표준)</td><td>가성비 카본 최강</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>215g</td><td>72.8%</td><td><strong>69.3mm (좁은 편)</strong></td><td>경량화 + 슬롯 카본</td></tr>
     <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>힐 78%·앞발 75%</strong></td><td>표준(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
-    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>33만 9천원</td><td>201g</td><td>74.9%</td><td>넓음(75.3mm)</td><td>풀코스 후반 보호</td></tr>
+    <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>33만 9천원</td><td>201g</td><td>힐 74.9%·앞발 73.9%</td><td>넓음(75.3mm)</td><td>풀코스 후반 보호</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
     <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만원</td><td>215g</td><td>72%+</td><td><strong>76mm (넓음)</strong></td><td>발볼 4E급 유일 선택</td></tr>
   </tbody>
@@ -4183,7 +4183,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">📊</span>
   <div class="callout-body">
     <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 베이퍼플라이 4 실측(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 실측(에너지 리턴 74.9%) + Believe in the Run / Road Trail Run 리뷰 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4 상세</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3 상세</a>.</p>
+    <p>RunRepeat 베이퍼플라이 4 실측(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 실측(에너지 리턴 힐 74.9%·앞발 73.9%) + Believe in the Run / Road Trail Run 리뷰 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4 상세</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3 상세</a>.</p>
   </div>
 </div>
 
@@ -4394,7 +4394,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
 </ul>
 
-<p><small>출처: RunRepeat 베이퍼플라이 4 랩 데이터(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 랩 데이터(에너지 리턴 74.9%) + Believe in the Run 양 신발 리뷰 + Road Trail Run / 한국 나이키 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일·알파플라이 4 출시(11월 시카고)에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><small>출처: RunRepeat 베이퍼플라이 4 랩 데이터(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 랩 데이터(에너지 리턴 힐 74.9%·앞발 73.9%) + Believe in the Run 양 신발 리뷰 + Road Trail Run / 한국 나이키 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일·알파플라이 4 출시(11월 시카고)에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
 `,
   },
   {

@@ -1257,7 +1257,7 @@ export const posts_2026_07: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>3대 브랜드 최상위 카본, 반발은 10·9·10으로 셋 다 최정상급</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
+    <li><strong>3대 브랜드 최상위 카본, 반발은 9·9·9로 셋 다 최정상급</strong> — <a href="/shoes/nike-alphafly-3">알파플라이 3</a>은 폭발적 에어포드, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 보폭을 늘리는 스트라이드형, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>는 부드러운 100% PEBA</li>
     <li><strong>가르는 건 발볼</strong> — 알파플라이 3은 토박스가 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드가 없습니다. 메타스피드와 SC 엘리트는 <strong>와이드(2E)</strong>가 있고, SC 엘리트 v5는 토박스 74.5mm에 와이드까지 갖췄습니다</li>
     <li>가격은 SC 엘리트 v5가 가장 저렴(319,000원)하고 내구도 가장 길어, <strong>발볼 넓은 한국 러너에겐 가성비까지 답</strong>이 됩니다</li>
   </ul>
@@ -1277,7 +1277,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>9mm</td><td><strong>5mm</strong></td><td>11mm <em>(실측·공식 8)</em></td></tr>
     <tr><td>미드솔</td><td>ZoomX + 에어 포드</td><td>FF Turbo+</td><td>FuelCell 100% PEBA</td></tr>
     <tr><td>플레이트</td><td>카본</td><td>카본</td><td>카본</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 10</td><td>8 / 9</td><td>9 / 10</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / 9</td><td>8 / 9</td><td>9 / 9</td></tr>
     <tr><td>발볼 / 와이드</td><td>넓은 편(75.3mm) / <strong>없음</strong></td><td>표준 / <strong>2E 有</strong></td><td>넓은 편(74.5mm) / <strong>2E 有</strong></td></tr>
     <tr><td>내구 / km당</td><td>약 200km</td><td>약 250km</td><td><strong>약 300km</strong></td></tr>
     <tr><td>대표 성격</td><td>폭발적 반발·풀코스</td><td>보폭형 스트라이드</td><td>부드러움·발볼·가성비</td></tr>
@@ -1286,7 +1286,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측 및 한국 공식가 기준). 셋 다 레이스 전용이라 내구는 짧습니다.</small></p>
 
 <h2>나이키 알파플라이 3 — 폭발적 반발의 풀코스 끝판왕</h2>
-<p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(10/10)이 셋 중 가장 폭발적입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
+<p>알파플라이 3은 나이키 슈퍼슈즈의 정점입니다. ZoomX 폼에 전족부 <strong>에어 포드</strong>를 얹어, 착지에서 튕겨 나가는 반발(9/10, RunRepeat 전족부 에너지 리턴 73.9%)이 최정상급입니다. 특히 풀코스 후반 지친 다리를 계속 밀어주는 힘이 강해 마라톤에 최적화돼 있습니다. 201g의 경량에 검증된 레이스 실적까지, "기록에 진심"인 러너의 1순위죠.</p>
 <p>약점은 <strong>사이즈와 가격</strong>입니다. 토박스는 실측 75.3mm로 레이싱화 중 넓은 편이지만 와이드 옵션이 없고 사이즈 판정이 "Slightly small"이라, 발볼이 아주 넓다면 시착이 필요합니다. 339,000원으로 가장 비싸고, 내구도 약 200km로 가장 짧습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 풀코스 기록을 노리는 분, 폭발적 반발을 선호하는 분, 발볼이 좁거나 표준인 러너.</p>
 
@@ -4095,7 +4095,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>발밑 느낌 — 쿠션·반발·무게</h2>
 <p>스택은 브랜드 표기로는 스피드고트(40mm)가 히에로(37mm)보다 높지만, RunRepeat 측정 힐 스택은 스피드고트 32.1mm로 히에로(37.3mm)보다 <strong>오히려 낮습니다</strong>. 무게도 스피드고트가 <strong>278g으로 31g 가볍죠</strong>(맥스쿠션치고 경량). 장시간 산행 겸 러닝, 울트라 거리에서 다리 피로를 덜어줍니다.</p>
-<p>반면 <strong>에너지 리턴은 히에로(61.9%)가 스피드고트(약 48%)보다 확실히 높습니다.</strong> 트레일화 둘 다 "빠른 반발" 신발은 아니지만, 히에로가 조금 더 탄력 있게 굴러가는 편입니다. 또 <strong>내구성은 히에로가 우위</strong> — 아웃솔 마모가 0.9mm로 뛰어나고, 스피드고트는 노출 미드솔 구간이 200~300km 후 압축된다는 지적이 있어 히에로가 더 오래 갑니다(약 600km vs 400~500km).</p>
+<p>반면 <strong>에너지 리턴은 히에로(힐 61.9%)가 스피드고트(힐 48.0%)보다 확실히 높습니다.</strong> 트레일화 둘 다 "빠른 반발" 신발은 아니지만, 히에로가 조금 더 탄력 있게 굴러가는 편입니다. 또 <strong>내구성은 히에로가 우위</strong> — 아웃솔 마모가 0.9mm로 뛰어나고, 스피드고트는 노출 미드솔 구간이 200~300km 후 압축된다는 지적이 있어 히에로가 더 오래 갑니다(약 600km vs 400~500km).</p>
 
 <h2>발볼·가격 — 한국 러너의 결정 요소</h2>
 <p>한국 러너에게 중요한 <strong>와이드</strong>는 <strong>스피드고트가 명확히 유리</strong>합니다. 토박스가 둘 다 표준(73mm대)인데 스피드고트는 수치보다 좁게 느껴지는 쪽이지만, <strong>와이드가 공식 동일가(205,000원)</strong>로 나오고 GTX 방수 버전(229,000원)까지 있어 선택지가 넓습니다. 히에로는 해외엔 2E·4E 와이드가 있으나 <strong>한국 공식몰은 남성 D·여성 B뿐이라</strong>, 발볼이 매우 넓다면 스피드고트가 안전합니다. 발볼 기준 더 넓은 후보가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 보세요.</p>
@@ -4736,7 +4736,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td>드롭</td><td>9mm</td><td><strong>6mm</strong></td></tr>
     <tr><td>미드솔</td><td>Supercritical EVA</td><td>DNA Tuned (질소 주입)</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>9 / 5</td><td>8 / 6</td></tr>
+    <tr><td>쿠션 / 반발</td><td>9 / 7</td><td>8 / 6</td></tr>
     <tr><td>안정성</td><td><strong>8 (초광폭 123mm 베이스)</strong></td><td>7</td></tr>
     <tr><td>발볼 / 평발 호환</td><td>좁은 편·<strong>평발 excellent</strong></td><td>표준(스너그)·평발 good</td></tr>
     <tr><td>내구성 / km당</td><td>550km / 약 416원</td><td><strong>600km</strong> / 약 415원</td></tr>
@@ -4748,7 +4748,7 @@ export const posts_2026_07: BlogPost[] = [
 <p><small>데이터 출처: 사이트 신발 DB(RunRepeat 랩 데이터·브랜드 공식 스펙 기반) · 한국 공식가 기준. 무게·스택은 US M9 기준.</small></p>
 
 <h2>호카 본디 9 — 넓게 받쳐주는 안정형 맥시멀</h2>
-<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 정체성은 <strong>123mm에 달하는 초광폭 플랫폼</strong>입니다. 발바닥이 닿는 면적이 넓으니 착지할 때 좌우로 덜 흔들리고, 이게 곧 안정성 8점과 <strong>평발 호환 excellent</strong>로 이어집니다. Supercritical EVA 폼의 반발(5)은 글리세린 맥스(6)보다 살짝 낮지만 완전히 죽은 느낌은 아니고, 41mm 힐 스택 + 9mm 드롭이라 <strong>힐로 착지하는 러너에게 편안</strong>합니다. 303g으로 이 체급에선 오히려 가벼운 축이고, 정가도 2만 원 쌉니다.</p>
+<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 정체성은 <strong>123mm에 달하는 초광폭 플랫폼</strong>입니다. 발바닥이 닿는 면적이 넓으니 착지할 때 좌우로 덜 흔들리고, 이게 곧 안정성 8점과 <strong>평발 호환 excellent</strong>로 이어집니다. Supercritical EVA 폼의 반발(7, RunRepeat 전족부 에너지 리턴 60.3%)은 글리세린 맥스(6)보다 한 칸 높고, 41mm 힐 스택 + 9mm 드롭이라 <strong>힐로 착지하는 러너에게 편안</strong>합니다. 303g으로 이 체급에선 오히려 가벼운 축이고, 정가도 2만 원 쌉니다.</p>
 <p>약점은 명확합니다. <strong>토박스가 72.5mm로 좁은 편</strong>이라 발볼 넓은 한국 러너는 와이드를 반드시 골라야 하고, 빠른 페이스로 밀어붙이는 신발은 아닙니다(6:00/km보다 느린 조깅·회복주 전용). 반발도 절대적으로 높진 않아 템포런엔 부적합해요.</p>
 <p><strong>✅ 이런 분께</strong> — 평발이거나 발 흔들림이 신경 쓰이는 러너, 무릎·발목 이력이 있어 안정적인 쿠션을 원하는 러너, 장시간 서서 일하거나 걷는 시간이 긴 분, 예산을 조금이라도 아끼고 싶은 분. 발볼이 넓다면 와이드 옵션은 필수입니다.</p>
 

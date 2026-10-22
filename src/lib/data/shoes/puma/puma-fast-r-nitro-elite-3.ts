@@ -24,7 +24,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 173,
     cushioning: 9,
-    responsiveness: 9,
+    responsiveness: 10,
     stability: 6,
     drop: 8,
     durability: 250,
@@ -93,7 +93,7 @@ export const shoe: Shoe = {
     weight: '173g (남성 US 9 기준, Lab 측정)',
     stackHeight: '힐 38.5mm / 포어풋 30.2mm (Lab 측정)',
     drop: '8.3mm (Lab 측정)',
-    midsole: 'Nitro Elite (A-TPU, 에너지 리턴 80%+)',
+    midsole: 'Nitro Elite (A-TPU, RunRepeat 실측 에너지 리턴 힐 80.4%·전족부 82.6%)',
     plate: 'PWRPLATE 카본 (익스텐디드 디자인)',
     outsole: 'PumaGrip 러버 (1.5mm)',
     upper: 'Ultraweave 메쉬 (4/5 통기성)',
