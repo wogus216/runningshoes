@@ -184,6 +184,26 @@ for (const s of shoes) {
   }
 }
 ok(`신발 쿠션 매핑표 점검 ${mappingChecked}/${shoes.length}종 (힐 SA가 본문에 있는 신발만)`);
+
+// 반응성 점수 vs 매핑표(2026-10-20 개정, 전족부 에너지 리턴 기준). 2026-10-22 추가 — 개정 전에 들어온
+// 신규 4종(킵서밋 맥스·UA 2종·어질리티 피크 6)이 이 검사가 없어 옛 점수로 남아 있었다.
+// 전작 수치(앞 80자에 "N세대"·"전작")는 근거 인정 여부가 미정이라 건너뛴다.
+const FF_ER = /에너지\s*리턴[^%]{0,20}?(?:\d{2}(?:\.\d+)?\s*%[^%]{0,6}?)?전족부?\s*(\d{2}(?:\.\d+)?)\s*%/g;
+const PRIOR_GEN = /\d세대|전작/;
+const respRule = (er: number) => (er >= 75 ? 10 : er >= 70 ? 9 : er >= 65 ? 8 : er >= 55 ? 7 : er >= 45 ? 6 : null);
+let respChecked = 0;
+for (const s of shoes) {
+  if (s.specs?.responsiveness == null) continue;
+  const text = JSON.stringify(s);
+  const m = [...text.matchAll(FF_ER)].find((x) => !PRIOR_GEN.test(text.slice(Math.max(0, x.index! - 80), x.index!)));
+  if (!m) continue;
+  respChecked++;
+  const expected = respRule(parseFloat(m[1]));
+  if (expected !== null && expected !== s.specs.responsiveness) {
+    warn(`${label(s)} ${s.slug}: 전족부 에너지 리턴 ${m[1]}% → 반응성 ${expected} 기대, 실제 ${s.specs.responsiveness} (매핑표 2026-10-20)`);
+  }
+}
+ok(`신발 반응성 매핑표 점검 ${respChecked}/${shoes.length}종 (전족부 에너지 리턴이 본문에 있는 신발만)`);
 console.log('');
 
 // ===========================================
