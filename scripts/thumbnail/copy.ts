@@ -38,6 +38,12 @@ export function deriveCopy(post: { title: string; category: string }): ThumbCopy
  * Task 3·4에서 육안 검수하며 채운다. 비어 있어도 파이프라인은 돈다.
  */
 export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
+  // 출처: lgtwinslastrungoodbyejamsil.com 공식 개요·접수 안내(2026-10-22 확인).
+  'lg-twins-goodbye-jamsil-last-run': {
+    title: '굿바이 잠실런 2026',
+    subtitle: '11월 22일 잠실종합운동장 10K · 일반 접수 10월 23일 14시',
+    data: '참가비 85,000원 · 티켓링크 선착순 · 가락시장역 반환 왕복',
+  },
   // 출처: Garmin·Apple 공식 매뉴얼 + INTERLIVE 연구(2026-10-14 확인).
   'garmin-vo2max-estimate-guide': {
     title: 'VO₂ Max가 내려갔다면',

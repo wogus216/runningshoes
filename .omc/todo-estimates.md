@@ -18,6 +18,15 @@
 | **2026-10-23** | 10/20 카카오페이 릴스 | 게시 후 72h±6h 창에서 `npm run ig:insights` 1회 기록(창 표시 ●). 비팔로워 비율은 API 미제공 → Aside 웹 "인사이트 보기"로 보충, 대리 지표 표기 |
 | **2026-12-10** | `IG_ACCESS_TOKEN` | 만료(발급 10/18 + 60일 = 12/17경) 1주 전 — 개발자 대시보드에서 재발급하거나 refresh_access_token 으로 연장. 만료되면 `ig:insights` 가 인증 오류로 멈춘다 |
 
+## ⚾ 10월 22일 발행 — 굿바이 잠실런
+
+블로그 `lg-twins-goodbye-jamsil-last-run` + DB `goodbye-jamsil-last-run-2026`(11월). 1차 소스는 lgtwinslastrungoodbyejamsil.com(서버 렌더, curl 로 전문 확보)·코스도 이미지. MBN 10K 경유지 대조는 mbn-seoulmarathon.com 공식 GPX. 같은 커밋에서 MBN DB 의 "세부 경유지 추후 공개" 문구를 GPX 확인 사실로 교체.
+
+| 확인일 | 대상 | 할 일 |
+|---|---|---|
+| **2026-10-24** | `lg-twins-goodbye-jamsil-last-run` + DB | 10/23 14시 일반 접수(티켓링크) 뒤 선착순 마감 여부. 마감이면 `raceMeta.soldOut` + DB status 마감 + registrationNote. 전체 정원이 공지되면 facts·DB 반영. DB 에 registrationEnd 가 없어 validate 가 마감을 못 잡는다 |
+| **2026-10-31** | 같은 대상 | 환불 마감(10/30 23:59) 다음날 — 사전·완주 기념품(공식 "COMING SOON")·급수대·09시 이후 행사장 프로그램 공개 여부 확인, DB raceKit·글 warning 상자 갱신 |
+
 ## 🏁 10월 21일 발행 — 코리아러닝엑스포 방문 가이드
 
 | 확인일 | 대상 | 할 일 |
