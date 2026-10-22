@@ -195,7 +195,7 @@ let respChecked = 0;
 for (const s of shoes) {
   if (s.specs?.responsiveness == null) continue;
   const text = JSON.stringify(s);
-  const m = [...text.matchAll(FF_ER)].find((x) => !PRIOR_GEN.test(text.slice(Math.max(0, x.index! - 80), x.index!)));
+  const m = Array.from(text.matchAll(FF_ER)).find((x) => !PRIOR_GEN.test(text.slice(Math.max(0, x.index! - 80), x.index!)));
   if (!m) continue;
   respChecked++;
   const expected = respRule(parseFloat(m[1]));
