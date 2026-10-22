@@ -169,6 +169,23 @@ for (const s of shoes) {
 if (consistOk) ok('price/costPerKm/drop 일관성 통과');
 console.log('');
 
+// 신발 쿠션 점수 vs 매핑표(2026-10-20 개정, 힐 SA 기준). 본문에 "힐 N SA" 형태로 적힌 신발만 검사한다.
+// 형식이 제각각이라 전체를 덮지 못하므로 경고로 두고, 검사한 신발 수를 함께 보여 준다.
+const HEEL_SA = /힐\s*(?:충격흡수\s*)?(\d{2,3})\s*SA/;
+const cushionRule = (sa: number) => (sa >= 150 ? 10 : sa >= 140 ? 9 : sa >= 120 ? 8 : sa >= 100 ? 7 : null);
+let mappingChecked = 0;
+for (const s of shoes) {
+  const m = JSON.stringify(s).match(HEEL_SA);
+  if (!m || s.specs?.cushioning == null) continue;
+  mappingChecked++;
+  const expected = cushionRule(parseInt(m[1], 10));
+  if (expected !== null && expected !== s.specs.cushioning) {
+    warn(`${label(s)} ${s.slug}: 힐 SA ${m[1]} → 쿠션 ${expected} 기대, 실제 ${s.specs.cushioning} (매핑표 2026-10-20)`);
+  }
+}
+ok(`신발 쿠션 매핑표 점검 ${mappingChecked}/${shoes.length}종 (힐 SA가 본문에 있는 신발만)`);
+console.log('');
+
 // ===========================================
 // 6. 마라톤 대회 데이터 검증
 // ===========================================
