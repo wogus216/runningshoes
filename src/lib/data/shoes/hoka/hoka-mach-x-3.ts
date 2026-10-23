@@ -21,7 +21,7 @@ export const shoe: Shoe = {
     responsiveness: 8,
     stability: 7,
     drop: 10,
-    durability: 500,
+    durability: 400, // 2026-10-23: detailedSpecs.durability 표기(400km)에 맞춤 — 종전 500
   },
 
   biomechanics: {
@@ -61,7 +61,7 @@ export const shoe: Shoe = {
   priceAnalysis: {
     msrp: 249000,
     streetPrice: 189200,
-    costPerKm: 498,
+    costPerKm: 623,
     valueRating: 8,
     priceTier: 'high',
     alternatives: ['nike-vomero-18', 'asics-superblast-2', 'new-balance-sc-trainer-v3'],
@@ -94,7 +94,7 @@ export const shoe: Shoe = {
     width: '좁은 편 (와이드 없음) · 토박스 70.8mm — RunRepeat 평균 73.2mm보다 2.4mm 좁고 랩 원문 "its overly snug, tapered toebox"',
     durability: '400km',
     price: '₩249,000 (MSRP) / 세일 시 ₩230,000~',
-    costPerKm: '약 ₩498/km (500km 기준)',
+    costPerKm: '약 ₩623/km (400km 기준)',
     footType: '좁은~보통 발볼 / 중상급 러너',
     landingPattern: '미드풋~전방 착지',
   },

@@ -21,7 +21,7 @@ export const shoe: Shoe = {
     responsiveness: 5,
     stability: 10,
     drop: 7,
-    durability: 500,
+    durability: 600, // 2026-10-23: detailedSpecs.durability 표기(600km)에 맞춤 — 종전 500
   },
 
   biomechanics: {
@@ -61,7 +61,7 @@ export const shoe: Shoe = {
   priceAnalysis: {
     msrp: 239000,
     streetPrice: 229000,
-    costPerKm: 478,
+    costPerKm: 398,
     valueRating: 7,
     priceTier: 'high',
     alternatives: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14'],
@@ -94,7 +94,7 @@ export const shoe: Shoe = {
     width: '넓은 편 / 와이드 · 토박스 76.7mm — RunRepeat 평균 73.2mm보다 3.5mm 넓음, 랩 원문 "the fit felt noticeably roomy"',
     durability: '600km',
     price: '₩239,000 (MSRP) / 세일 시 ₩170,000~',
-    costPerKm: '약 ₩478/km (500km 기준)',
+    costPerKm: '약 ₩398/km (600km 기준)',
     footType: '평발 / 과내전 러너 / 와이드 옵션 있음',
     landingPattern: '힐스트라이크~미드풋 (H-Frame 안정화)',
   },

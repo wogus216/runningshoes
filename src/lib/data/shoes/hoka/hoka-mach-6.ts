@@ -21,7 +21,7 @@ export const shoe: Shoe = {
     responsiveness: 8,
     stability: 7,
     drop: 10,
-    durability: 450,
+    durability: 500, // 2026-10-23: detailedSpecs.durability 표기(500km)에 맞춤 — 종전 450
   },
 
   biomechanics: {
@@ -61,7 +61,7 @@ export const shoe: Shoe = {
   priceAnalysis: {
     msrp: 185000,
     streetPrice: 156500,
-    costPerKm: 411,
+    costPerKm: 370,
     valueRating: 8,
     priceTier: 'mid',
     alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-1080-v14'],
@@ -94,7 +94,7 @@ export const shoe: Shoe = {
     width: '좁은 편 (와이드 2E 옵션 있음 — 한국 판매 확인: 롯데ON 「[호카]호카 마하 6 와이드 남성 러닝화 1147833-BNGH 2E」 2026-10-16. hoka.co.kr 은 접속 불가) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁고 엄지 부위에서 급격히 좁아지는 테이퍼형',
     durability: '500km',
     price: '₩185,000 (MSRP) / 세일 시 ₩160,000~',
-    costPerKm: '약 ₩411/km (450km 기준)',
+    costPerKm: '약 ₩370/km (500km 기준)',
     footType: '보통~좁은 발볼 / 발볼 넓으면 와이드 옵션',
     landingPattern: '힐스트라이크~미드풋',
   },
