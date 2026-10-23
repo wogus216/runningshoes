@@ -23,6 +23,7 @@ import { getAllPosts } from '../src/lib/data/blog';
 import { PINNED_PAIRS } from '../src/lib/pseo/pairs';
 import { checkRaceMeta, checkDeadlineStrips, STRIP_WITHOUT_ANCHOR_BASELINE } from '../src/lib/blog/race-meta-rules';
 import type { Shoe } from '../src/types/shoe';
+import { collectCrossrefHits } from './lib/crossref-collect';
 
 const ROOT = path.resolve(__dirname, '..');
 const SHOES_DIR = path.join(ROOT, 'src/lib/data/shoes');
@@ -335,6 +336,18 @@ const FAKE_SOURCE = [
   '후기가 많', '후기도 많', '후기를 보면', '후기의 공통', '후기에서도', '후기에서는',
   '실사용자들이', '착용자들이', '구매자들이',
 ];
+// 문자열 목록이 놓친 형태(2026-10-23 전체 점검 — 블로그 8건·젤 커뮤니티 상자 9건이 위 목록을 비껴가 통과했다).
+// "후기가 '딱 맞는다'로 일관", "후기 다수", "해외 후기에서", "입을 모읍니다"처럼 실명 없이 다수의 경험을 근거로 드는 서술이다.
+// 측정 당시 적중 26건 전부 실제 위반이었다(오탐 0). 실명 출처를 달면 이 패턴을 쓸 이유가 없다.
+const FAKE_SOURCE_RE: RegExp[] = [
+  /후기[가는도를의]?[^.<\n]{0,20}(일관|반복|많|대부분|공통|다수)/,
+  /후기\s*(다수|가\s*있|를\s*남길)/,
+  /(해외|국내|커뮤니티|네이버|카페|러닝갤|갤러리)\s*(러너들?의\s*)?후기/,
+  /입을\s*모/,
+  /(다|라)는\s*후기/,
+];
+// 사람이 판단할 영역 — 외부 리뷰 종합인지 근거 없는 통칭인지 문맥을 봐야 한다(CLAUDE.md 절대 규칙 2). 건수만 알린다.
+const HUMAN_JUDGE_RE = /평가가\s*(일반적|많|대부분|일관)|(라는|다는)\s*평이/;
 // "아직 후기가 부족하다"처럼 부재를 밝히는 서술은 정직한 표현이라 통과시킨다.
 const FAKE_SOURCE_NEGATION = /부족|없|아직|미흡|수집하지/;
 // 블로그 본문의 자전적 경험 주장(2026-08-27 감사). 넓게 잡으면 오탐이 쏟아져 **대체 가능한 정당한 용법이 없는 형태만** 넣는다.
@@ -363,15 +376,24 @@ const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Do
 // 출처 표기(SOURCED)가 있어도 검사를 건너뛰지 않는다(2026-10-21). 종전엔 userType에 '리뷰어'·'Believe'만 넣으면
 // 1인칭·가짜 출처·별점 검사를 통째로 통과했다. rating 은 화면이 '에디터 평가 N/100'으로 보여 주는 '에디터' 항목만
 // 허용한다(reviews-section.tsx 와 같은 기준). 외부 리뷰 점수를 rating 으로 환산해 두는 것은 막는다.
-// 전환이 끝난 상태. 0 이상이면 새 허구 후기 = 커밋 차단.
-const FICTION_MIGRATION_REMAINING = 0;
+// 2026-10-23 패턴·필드 확장으로 그동안 통과하던 24건이 드러났다(블로그 18·젤 커뮤니티 상자 6). 전체 점검 B·F·G 묶음에서
+// 고치며 이 수를 내린다. 기준선보다 늘면 새 허구 후기 = 커밋 차단.
+const FICTION_MIGRATION_REMAINING = 24;
 
 const fictionHits: string[] = [];
-const fakeSourceHit = (text: string) =>
-  FAKE_SOURCE.filter((k) => {
+const fakeSourceHit = (text: string) => [
+  ...FAKE_SOURCE.filter((k) => {
     const idx = text.indexOf(k);
     return idx !== -1 && !FAKE_SOURCE_NEGATION.test(text.slice(Math.max(0, idx - 25), idx + k.length + 25));
-  });
+  }),
+  ...FAKE_SOURCE_RE.flatMap((re) => {
+    const m = text.match(re);
+    if (!m) return [];
+    const idx = m.index ?? 0;
+    return FAKE_SOURCE_NEGATION.test(text.slice(Math.max(0, idx - 25), idx + m[0].length + 25)) ? [] : [m[0]];
+  }),
+];
+let humanJudge = 0;
 
 let scanned = 0;
 const reviewSources: { label: string; reviews: { userType: string; rating?: number; text: string }[] }[] = [
@@ -393,12 +415,43 @@ for (const { label: src, reviews } of reviewSources) {
   }
 }
 
+// reviews 밖의 서술 필드(2026-10-23) — 종전엔 reviews[].text 만 봤다. 젤의 giTolerance.communityFeedback 은
+// "커뮤니티 후기" 상자로 렌더되는데도 검사 대상이 아니어서 13종 중 9종이 "후기 다수"·"DC 러닝갤 정설"을 내보냈다.
+// 신발 editorComment·description·oneliner·detailedSpecs 도 같은 사각지대였다(당시 누출 0건이라도 다음 사고는 여기서 난다).
+// 실재 고유명사(REAL_PROPER)는 적용하지 않는다 — 서술 필드에선 "JTBC 같은 가을 대회 준비"처럼 맥락 언급이 정당하다.
+const proseOf = (src: string, v: unknown, out: { src: string; text: string }[]) => {
+  if (typeof v === 'string') out.push({ src, text: v });
+  else if (Array.isArray(v)) v.forEach((x) => proseOf(src, x, out));
+  else if (v && typeof v === 'object') for (const [k, x] of Object.entries(v)) proseOf(`${src}.${k}`, x, out);
+};
+const extendedProse: { src: string; text: string }[] = [];
+for (const s of shoes) {
+  const at = fileBySlug.get(s.slug) ?? s.slug;
+  for (const f of ['editorComment', 'description', 'oneliner'] as const) if (s[f]) extendedProse.push({ src: `${at} ${f}`, text: s[f] as string });
+  if (s.detailedSpecs) proseOf(`${at} detailedSpecs`, s.detailedSpecs, extendedProse);
+}
+for (const g of gels) {
+  for (const [k, v] of Object.entries(g)) {
+    if (['reviews', 'purchaseLinks', 'image', 'images', 'slug', 'id'].includes(k)) continue;
+    proseOf(`gels/${g.slug} ${k}`, v, extendedProse);
+  }
+}
+for (const { src, text } of extendedProse) {
+  scanned++;
+  if (HUMAN_JUDGE_RE.test(text)) humanJudge++;
+  const fs2 = fakeSourceHit(text);
+  const fp = FIRST_PERSON.filter((k) => text.includes(k));
+  if (fs2.length) fictionHits.push(`[${src}] 가짜 출처 인용: ${fs2.slice(0, 2).join(', ')}`);
+  else if (fp.length) fictionHits.push(`[${src}] 1인칭 경험 서술: ${fp.slice(0, 2).join(', ')}`);
+}
+
 // 블로그 본문 — 위반 위치를 줄 번호로 알려야 하므로 파일을 직접 읽는다
 let blogScanned = 0;
 const blogDir = path.join(ROOT, 'src/lib/data/blog/posts');
 for (const file of fs.readdirSync(blogDir).filter((f) => f.endsWith('.ts') && f !== 'index.ts')) {
   blogScanned++;
   fs.readFileSync(path.join(blogDir, file), 'utf8').split('\n').forEach((line, i) => {
+    if (HUMAN_JUDGE_RE.test(line)) humanJudge++;
     const fake = fakeSourceHit(line);
     if (fake.length) {
       const idx = line.indexOf(fake[0]);
@@ -429,11 +482,12 @@ if (fictionHits.length === 0) {
     `허구 후기 ${fictionHits.length}건 — 기준선 ${FICTION_MIGRATION_REMAINING}건보다 ${fictionHits.length - FICTION_MIGRATION_REMAINING}건 증가. ` +
       `새 리뷰는 "러너 유형별 적합성 분석" 형식으로 작성하세요(1인칭·실재 대회명·별점 금지).`,
   );
-  fictionHits.slice(0, 5).forEach((h) => console.error(`     ${h}`));
+  fictionHits.slice(0, process.env.VALIDATE_VERBOSE ? undefined : 5).forEach((h) => console.error(`     ${h}`));
 } else {
   warn(`허구 후기 전환 대기 ${fictionHits.length}건 (기준선 ${FICTION_MIGRATION_REMAINING}건 이하라 통과).`);
-  fictionHits.slice(0, 3).forEach((h) => console.warn(`     ${h}`));
+  fictionHits.slice(0, process.env.VALIDATE_VERBOSE ? undefined : 3).forEach((h) => console.warn(`     ${h}`));
 }
+if (humanJudge) console.log(`  ℹ️  사람 판단 대상 ${humanJudge}건 — "평가가 일반적/많"·"라는 평이"(외부 리뷰 종합인지 통칭인지 문맥 확인, 경고 아님)`);
 console.log('');
 
 // ===========================================
@@ -484,6 +538,29 @@ console.log('');
 // ===========================================
 // 결과 요약
 // ===========================================
+// ===========================================
+// 10. 다른 신발 수치 교차 검증 (2026-10-23)
+// ===========================================
+// 비교 대상 신발의 가격을 문자열로 옮겨 적으면 그 신발 파일이 갱신돼도 인용은 낡는다 — 전체 점검 차단 124건 중 약 80건.
+// 가격·차액은 기준선보다 늘면 에러(래칫), 무게는 측정 사이즈·공식/랩 기준이 섞여 자동 판정이 어려워 건수만 알린다.
+// 전체 목록은 `npm run check:crossref`. 판정 기준은 src/lib/validation/crossref.ts 머리 주석.
+console.log('\n━━━ 10. 다른 신발 수치 교차 검증 ━━━');
+{
+  const CROSSREF_PRICE_BASELINE = 36;
+  const hits = collectCrossrefHits();
+  const priceHits = hits.filter((h) => h.kind !== 'weight');
+  const weightHits = hits.filter((h) => h.kind === 'weight');
+  if (priceHits.length > CROSSREF_PRICE_BASELINE) {
+    error(`다른 신발 가격·차액이 DB 와 다른 서술 ${priceHits.length}건 — 기준선 ${CROSSREF_PRICE_BASELINE}건보다 ${priceHits.length - CROSSREF_PRICE_BASELINE}건 증가. 비교 신발 파일의 price 를 보고 쓰세요`);
+    priceHits.slice(0, 5).forEach((h) => console.error(`     ${h.file}:${h.line} ${h.alias} — 글 "${h.found}" · DB ${h.db}`));
+  } else if (priceHits.length) {
+    warn(`다른 신발 가격·차액 불일치 ${priceHits.length}건 (기준선 ${CROSSREF_PRICE_BASELINE}건 이하라 통과) — npm run check:crossref`);
+  } else {
+    ok('다른 신발 가격·차액 인용이 전부 DB 와 일치');
+  }
+  if (weightHits.length) console.log(`  ℹ️  다른 신발 무게 인용 불일치 후보 ${weightHits.length}건 — 측정 기준이 달라 자동 판정 안 함(npm run check:crossref -- --kind=weight)`);
+}
+
 console.log('━━━━━━━━━━━━━━━━━━━━━━━━━━━');
 console.log(`\n📋 검증 결과: 신발 ${shoes.length}개 · 마라톤 대회 ${marathonEvents.length}개`);
 console.log(`   ❌ 에러: ${errors}개`);
