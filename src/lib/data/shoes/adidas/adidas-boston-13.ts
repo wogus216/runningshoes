@@ -103,5 +103,6 @@ export const shoe: Shoe = {
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
   ],
   // 쿠팡 링크 제거(2026-10-23 점검) — 연결 상품이 해외 셀러 278,600~292,600원(정가의 147~155%)·반품비 60,000원
-  purchaseLinks: [],
+  // 2026-10-23 발급 — 네이버 아디다스공식온라인스토어(브랜드스토어) 189,000원(정가 100%) · 쿠팡 미조회(10/23 접속 차단으로 보류)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x6JSFDuz' }],
 };

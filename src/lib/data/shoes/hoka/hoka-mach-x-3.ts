@@ -100,5 +100,6 @@ export const shoe: Shoe = {
   },
 
   similarShoes: ['asics-superblast-2', 'nike-vomero-18', 'new-balance-sc-trainer-v3', 'puma-deviate-nitro-3'],
-  purchaseLinks: [],
+  // 2026-10-23 발급 — 네이버 하루네스트(구매대행 표기) 279,500원(정가 112%) · 쿠팡 미조회(10/23 접속 차단으로 보류)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GWWYDEQA' }],
 };

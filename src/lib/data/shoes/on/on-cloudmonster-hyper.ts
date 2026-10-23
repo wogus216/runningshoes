@@ -109,5 +109,6 @@ export const shoe: Shoe = {
     { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 같은 값, 갈리는 성능' },
   ],
   // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
-  purchaseLinks: [],
+  // 2026-10-23 발급 — 네이버 도쿄에이트재팬(구매대행 표기) 222,000원(정가 86%) · 쿠팡 미조회(10/23 접속 차단으로 보류)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/IIDykY3x' }],
 };

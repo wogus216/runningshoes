@@ -123,5 +123,6 @@ export const shoe: Shoe = {
     { slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026', title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결' },
   ],
   // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 연결 상품(1080 V15 2E WIDE)이 일시품절
-  purchaseLinks: [],
+  // 2026-10-23 발급 — 네이버 지셀렉도쿄 209,800원(정가 100%, TCS 런던 마라톤 컬러 M10802XQ) · 쿠팡 미조회(10/23 접속 차단으로 보류)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GB3rCpYe' }],
 };

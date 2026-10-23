@@ -115,4 +115,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'puma-running-shoes-lineup-tier-guide-2026', title: '푸마 러닝화 계급도' },
   ],
+  // 2026-10-23 발급 — 네이버 지셀렉도쿄(구매대행 표기) 136,300원(정가 76%, 품번 31294415) · 쿠팡 미조회(10/23 접속 차단으로 보류)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GahHG98i' }],
 };
