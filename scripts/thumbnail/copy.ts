@@ -204,7 +204,7 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   'asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026': {
     title: '매직스피드 5 vs 슈퍼블라스트 3',
     subtitle: '카본 든 쪽이 더 잘 휘고, 플레이트 없는 쪽이 더 돌려준다',
-    data: '193g vs 239g · 강성 13.1N vs 16.5N · 전족 충격흡수 112 vs 153',
+    data: '201g vs 235g · 강성 13.1N vs 16.5N · 전족 충격흡수 112 vs 153',
   },
   // 출처: 2026 하트런 공식 홈페이지(heartrun.co.kr, 2026-09-03 확인) — 행사개요(10/10 올림픽공원
   // 피크닉장, 10K·5K 각 1,000명, 5만원), 참가신청 상품 옵션("뛰어서/걸어서"), FAQ(코스 운영 12시까지),
@@ -375,22 +375,22 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   // 쿠션·반발 9/7 대 7/9. 전부 신발 DB 실측(asics-novablast-6.ts · adidas-boston-13.ts).
   'asics-novablast-6-vs-adidas-boston-13-daily-2026': {
     title: '노바블라스트 6 vs 보스턴 13',
-    subtitle: '같은 17.9만원, 5g 차이인데 성격이 반대',
+    subtitle: '1만원·5g 차이인데 성격이 반대',
     data: '쿠션 9 vs 7 · 반발 7 vs 9 · 플레이트 없음 vs 유리섬유 로드',
   },
   // 출처: posts/2026-08.ts 비교표 — 무게 193g/248g, 드롭 7/10mm, 한국 정가 둘 다 229,000원.
   // 전부 신발 DB 실측(asics-magic-speed-5.ts · nike-zoom-fly-6.ts).
   'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026': {
     title: '매직스피드 5 vs 줌 플라이 6',
-    subtitle: '같은 22.9만원, 55g이 갈린다 — 다치는 곳도 정반대',
-    data: '193g vs 248g · 드롭 7mm vs 10mm · 가격·수명·목표 페이스는 동일',
+    subtitle: '같은 20.9만원, 47g이 갈린다 — 다치는 곳도 정반대',
+    data: '201g vs 248g · 드롭 7mm vs 10mm · 가격·수명·목표 페이스는 동일',
   },
   // 출처: posts/2026-08.ts 비교표 — 무게 223g/254g, 한국 정가 209,000/179,000원,
   // 플레이트 유무(에보 SL 없음 / 보스턴 13 유리섬유 Energy Rods 2.0). 전부 신발 DB 실측.
   'adidas-adizero-evo-sl-vs-boston-13-daily-2026': {
     title: '에보 SL vs 보스턴 13',
-    subtitle: '3만원 더 주고 31g을 산다 — 비싼 쪽에 플레이트가 없다',
-    data: '223g vs 254g · 20.9만 vs 17.9만 · 플레이트 없음 vs 유리섬유',
+    subtitle: '2만원 더 주고 31g을 산다 — 비싼 쪽에 플레이트가 없다',
+    data: '223g vs 254g · 20.9만 vs 18.9만 · 플레이트 없음 vs 유리섬유',
   },
   // 출처: posts/2026-08.ts 본문 자가진단 1·2 — Knopp et al.(2023) 개인 반응 +11.4%~−11.3%,
   // Day & Hahn(2019) 시속 14km에서 9명 중 7명이 평범한 신발 우세.
