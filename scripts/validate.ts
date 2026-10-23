@@ -376,9 +376,9 @@ const SOURCED = /에디터|분석|리뷰어|Believe|Shihuo|WeeViews|RunRepeat|Do
 // 출처 표기(SOURCED)가 있어도 검사를 건너뛰지 않는다(2026-10-21). 종전엔 userType에 '리뷰어'·'Believe'만 넣으면
 // 1인칭·가짜 출처·별점 검사를 통째로 통과했다. rating 은 화면이 '에디터 평가 N/100'으로 보여 주는 '에디터' 항목만
 // 허용한다(reviews-section.tsx 와 같은 기준). 외부 리뷰 점수를 rating 으로 환산해 두는 것은 막는다.
-// 2026-10-23 패턴·필드 확장으로 그동안 통과하던 24건이 드러났다(블로그 18·젤 커뮤니티 상자 6). 전체 점검 B·F·G 묶음에서
-// 고치며 이 수를 내린다. 기준선보다 늘면 새 허구 후기 = 커밋 차단.
-const FICTION_MIGRATION_REMAINING = 24;
+// 2026-10-23 패턴·필드 확장으로 그동안 통과하던 24건이 드러났고(블로그 18·젤 커뮤니티 상자 6) 같은 날 전부 고쳤다.
+// 0 이상이면 새 허구 후기 = 커밋 차단.
+const FICTION_MIGRATION_REMAINING = 0;
 
 const fictionHits: string[] = [];
 const fakeSourceHit = (text: string) => [
@@ -546,7 +546,8 @@ console.log('');
 // 전체 목록은 `npm run check:crossref`. 판정 기준은 src/lib/validation/crossref.ts 머리 주석.
 console.log('\n━━━ 10. 다른 신발 수치 교차 검증 ━━━');
 {
-  const CROSSREF_PRICE_BASELINE = 36;
+  // 2026-10-23 첫 측정 36건 → 같은 날 전부 정정. 늘면 에러.
+  const CROSSREF_PRICE_BASELINE = 0;
   const hits = collectCrossrefHits();
   const priceHits = hits.filter((h) => h.kind !== 'weight');
   const weightHits = hits.filter((h) => h.kind === 'weight');

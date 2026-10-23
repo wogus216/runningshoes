@@ -235,7 +235,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
             <span className="text-lg">🧪</span>
             <div>
               <p className="font-medium text-sm mb-1 text-primary">데이터 출처</p>
-              <p className="text-xs text-secondary">Energy Gel Review Skill Framework · 제품 성분표 · 한국 러닝 커뮤니티 후기</p>
+              <p className="text-xs text-secondary">제조사 성분표 · 판매처 가격 표기(확인일 별도 표시) · 에디터 분석 — 후기는 수집하지 않습니다</p>
             </div>
           </div>
         </section>

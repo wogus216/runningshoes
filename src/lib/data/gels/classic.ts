@@ -28,7 +28,7 @@ export const classicGels: Gel[] = [
     carbScience: {
       dualSource: true,
       transporterProfile: 'SGLT1 + GLUT5',
-      estimatedOxidationRate: '~75g/hr (3개/hr)',
+      estimatedOxidationRate: '~66g/hr (3개/hr — 1개 탄수화물 22g 기준)',
       osmolalityType: 'standard',
       osmolalityEstimate: 500,
       osmolalityBasis: 'estimated',
@@ -40,7 +40,7 @@ export const classicGels: Gel[] = [
       overall: 'moderate',
       waterPairing: '필수 (150-200ml)',
       riskFactors: ['고삼투압 (~500 mOsm)', '카페인 35mg (일부 맛)', '물 없이 먹으면 GI 이슈'],
-      communityFeedback: '카페인 맛(블루베리석류, 체리라임, 바닐라오렌지)은 후반부용으로 전략적 사용. 스트로베리키위, 레모네이드는 무카페인.',
+      communityFeedback: '카페인 35mg 맛: 블루베리석류·체리라임·바닐라오렌지. 무카페인 맛: 스트로베리키위·레모네이드. 물 150-200ml와 함께 섭취 필요.',
       gutTrainingNeeded: false,
     },
 
@@ -152,7 +152,7 @@ export const classicGels: Gel[] = [
       overall: 'good',
       waterPairing: '권장 (물 150ml)',
       riskFactors: ['표준 삼투압'],
-      communityFeedback: '3,543개 리뷰 평점 4.82. "편리해요" 90%, "포장 꼼꼼해요" 79%. 재구매 25명/3개월로 충성도 높음.',
+      communityFeedback: '물 150ml와 함께 섭취 권장. 무카페인. 1포 40g에 마그네슘 15mg.',
       gutTrainingNeeded: false,
     },
 
@@ -207,7 +207,7 @@ export const classicGels: Gel[] = [
     reviews: [
       {
         userType: '비용 관점 — 양갱에서 젤로 넘어가는 첫 단계',
-        text: '양갱 같은 저가 보충식에서 젤로 넘어갈 때 부담이 가장 적은 가격대입니다. 12포 18,400원 기준 개당 약 1,533원으로 수입 젤(개당 3,000~5,000원)의 절반 이하이고, 풀코스 5개를 써도 8,000원 이하입니다. 100kcal·탄수화물 25g의 기본 스펙에 비타민B·C와 마그네슘이 더해진 구성입니다. 액상이라 씹지 않고 삼킬 수 있어 페이스를 유지한 채 보충할 수 있는 것이 양갱과의 실질적 차이입니다.',
+        text: '양갱 같은 저가 보충식에서 젤로 넘어갈 때 부담이 가장 적은 가격대입니다. 12포 18,400원 기준 개당 약 1,533원으로 수입 젤(개당 3,500~10,892원)의 절반 이하이고, 풀코스 5개를 써도 8,000원 이하입니다. 100kcal·탄수화물 25g의 기본 스펙에 비타민B·C와 마그네슘이 더해진 구성입니다. 액상이라 씹지 않고 삼킬 수 있어 페이스를 유지한 채 보충할 수 있는 것이 양갱과의 실질적 차이입니다.',
       },
       {
         userType: '예상 적합 — 등산·라이딩 겸용 보충',
@@ -261,7 +261,7 @@ export const classicGels: Gel[] = [
       overall: 'excellent',
       waterPairing: '불필요 (선택)',
       riskFactors: [],
-      communityFeedback: '"양갱이 진리" - DC 러닝갤. "외국인은 모르는 K-에너지젤" - 밈의 원조. 위장 탈 확률 거의 제로.',
+      communityFeedback: '고체라 씹어서 섭취. 물은 선택(불필요). 무카페인.',
       gutTrainingNeeded: false,
     },
 
@@ -297,7 +297,7 @@ export const classicGels: Gel[] = [
       msrp: 800,
       bulkPrice: 500,
       marathonCost: 4000,
-      yangGangComparison: '양갱이 기준점 자체. 풀마라톤 5개 = 4,000원. Maurten 5개(25,000원)의 1/6 가격.',
+      yangGangComparison: '양갱이 기준점 자체. 풀마라톤 5개 = 4,000원. Maurten 5개(32,085원)의 약 1/8 가격.',
       valueRating: 10,
       priceTier: 'budget',
       priceCheckedAt: '2026-02-01',
@@ -315,8 +315,8 @@ export const classicGels: Gel[] = [
 
     reviews: [
       {
-        userType: '비용 관점 — 프리미엄 젤의 6분의 1 가격',
-        text: '보충 비용을 최소화하는 선택지입니다. 편의점에서 800원 안팎으로 130kcal·탄수화물 35g을 확보할 수 있어, 풀코스 5개 기준 4,000원 수준입니다. 같은 개수의 프리미엄 젤(개당 6,400원대)과 비교하면 약 6분의 1입니다. 한천 기반이라 위장 부담이 적어 장 훈련(gut training) 없이도 바로 쓸 수 있다는 점이 입문 단계에서 특히 유리합니다. 다만 고체라 씹는 시간이 필요해 페이스를 유지한 채 삼키기는 어렵습니다.',
+        userType: '비용 관점 — Maurten의 약 8분의 1 가격',
+        text: '보충 비용을 최소화하는 선택지입니다. 편의점에서 800원 안팎으로 130kcal·탄수화물 35g을 확보할 수 있어, 풀코스 5개 기준 4,000원 수준입니다. 같은 개수의 Maurten Gel 100(개당 6,417원, 5개 32,085원)과 비교하면 약 8분의 1입니다. 한천 기반이라 위장 부담이 적어 장 훈련(gut training) 없이도 바로 쓸 수 있다는 점이 입문 단계에서 특히 유리합니다. 다만 고체라 씹는 시간이 필요해 페이스를 유지한 채 삼키기는 어렵습니다.',
       },
       {
         userType: '적합성 한계 — 기록 도전 레이스에는 부적합',
@@ -369,7 +369,7 @@ export const classicGels: Gel[] = [
       overall: 'good',
       waterPairing: '불필요 (묽은 제형)',
       riskFactors: [],
-      communityFeedback: '8,508개 리뷰 평점 4.91. "편리해요" 93%, "포장 꼼꼼해요" 83%. 유튜버 추천으로 대세 젤.',
+      communityFeedback: '묽은 제형이라 물 없이 섭취 가능. 무카페인. 1포 40g, 맛 1종(메이플+청사과향).',
       gutTrainingNeeded: false,
     },
 
@@ -432,7 +432,7 @@ export const classicGels: Gel[] = [
       },
       {
         userType: '비교 — 국산 젤 3종 중 제형이 가장 묽다',
-        text: '국산 젤 3종을 비교하면 가격은 중간, 제형은 가장 묽은 쪽입니다. 개당 약 1,950원으로 코오롱(1,533원)·스포식스(1,738원)보다 다소 높지만, 점도가 낮아 달리면서 삼키기 가장 편합니다. 수입 젤과 비교하면 절반 수준 가격입니다. 개봉 구조가 편해 페이스를 유지한 채 섭취할 수 있는 것도 실사용 장점입니다. 다만 절취한 꼭지 처리가 불편해, 레이스 중 쓰레기 관리를 고려해야 합니다.',
+        text: '국산 젤 3종을 비교하면 가격은 중간, 제형은 가장 묽은 쪽입니다. 개당 약 1,950원으로 코오롱(1,533원)·스포식스(1,619원)보다 다소 높지만, 점도가 낮아 달리면서 삼키기 가장 편합니다. 수입 젤과 비교하면 절반 수준 가격입니다. 개봉 구조가 편해 페이스를 유지한 채 섭취할 수 있는 것도 실사용 장점입니다. 다만 절취한 꼭지 처리가 불편해, 레이스 중 쓰레기 관리를 고려해야 합니다.',
       },
     ],
 
@@ -487,7 +487,7 @@ export const classicGels: Gel[] = [
       overall: 'good',
       waterPairing: '불필요 (부드러운 꿀 제형)',
       riskFactors: [],
-      communityFeedback: '공식몰 81개 리뷰 5.0만점, 네이버 68개 리뷰 4.87점. "목넘김 좋다", "너무 달지 않다" 평가 다수.',
+      communityFeedback: '공식몰 리뷰 81개 평점 5.0, 네이버 리뷰 68개 평점 4.87. 무카페인. 물 없이 섭취 가능.',
       gutTrainingNeeded: false,
     },
 
@@ -577,7 +577,7 @@ export const classicGels: Gel[] = [
     name: '에너지젤',
     category: '가성비',
     rating: 4,
-    price: 1738,
+    price: 1619,
     description: '소비자보호원 조사에서 알려진 성분 우수 에너지젤. 목넘김 부드럽고 가격 착한 신흥 브랜드. 복숭아·청포도·파인애플(프로) 3가지 맛.',
     tags: ['국산', '가성비', '소비자보호원', '부드러운제형', '신흥브랜드'],
     image: '/images/gels/sportsix/main.webp',
@@ -607,7 +607,7 @@ export const classicGels: Gel[] = [
       overall: 'good',
       waterPairing: '불필요 (부드러운 제형)',
       riskFactors: [],
-      communityFeedback: '115개 리뷰 평점 4.89. "성분 좋고 가격도 착하다", "목넘김 부드러워서 좋다" 후기 다수. 플라스크 증정 이벤트도 진행.',
+      communityFeedback: '물 없이 섭취 가능. 무카페인. 1포 35g, 맛 3종(복숭아·청포도·파인애플 프로).',
       gutTrainingNeeded: false,
     },
 
@@ -641,9 +641,9 @@ export const classicGels: Gel[] = [
 
     priceAnalysis: {
       msrp: 3000,
-      bulkPrice: 1738,
-      marathonCost: 8690,
-      yangGangComparison: '양갱(800원) 대비 2.2배. SET 구매 시 개당 1,738원으로 코오롱과 비슷한 가성비. 부드러운 목넘김은 양갱 대비 큰 장점.',
+      bulkPrice: 1619,
+      marathonCost: 8095,
+      yangGangComparison: '양갱(800원) 대비 2배. SET 구매 시 개당 1,619원으로 코오롱(1,533원)과 비슷한 가성비. 부드러운 목넘김은 양갱 대비 큰 장점.',
       valueRating: 8,
       priceTier: 'budget',
       priceCheckedAt: '2026-02-01',
@@ -655,18 +655,18 @@ export const classicGels: Gel[] = [
       '소비자보호원 성분 조사 양호 판정',
       '목넘김 부드러운 제형 (물 불필요)',
       '3가지 맛 (복숭아, 청포도, 파인애플 프로)',
-      'SET 구매 시 개당 1,738원 (최저가급)',
+      'SET 구매 시 개당 1,619원 (최저가급)',
       '플라스크 증정 이벤트 진행',
     ],
 
     reviews: [
       {
         userType: '비용 관점 — 국산 젤 중 중간 가격대',
-        text: '95kcal·탄수화물 24g·나트륨 35mg으로 성분 자체는 국산 젤의 표준 수준입니다. 세트 구매 시 개당 약 1,738원으로 같은 국산군(코오롱 1,533원)과 비슷한 구간입니다. 제형이 부드러워 달리면서 삼키기 편한 편입니다. 나트륨이 낮으므로 땀 손실이 큰 조건에서는 전해질을 따로 보충해야 합니다.',
+        text: '95kcal·탄수화물 24g·나트륨 35mg으로 성분 자체는 국산 젤의 표준 수준입니다. 세트 구매 시(16포 25,900원) 개당 약 1,619원으로 같은 국산군(코오롱 1,533원)과 비슷한 구간입니다. 제형이 부드러워 달리면서 삼키기 편한 편입니다. 나트륨이 낮으므로 땀 손실이 큰 조건에서는 전해질을 따로 보충해야 합니다.',
       },
       {
         userType: '비교 — 코오롱 대비 맛 다양성',
-        text: '국산 젤 중 맛 선택지가 넓은 쪽입니다. 복숭아·청포도·파인애플 등으로 로테이션이 가능해, 풀코스처럼 5개 이상 연속 섭취할 때 맛 피로를 관리하기 쉽습니다. 풀코스 5개 기준 약 8,690원으로 프리미엄 수입 젤(17,000~25,000원)의 절반 이하이고, 양갱(4,000원)보다는 비싸지만 액상이라 씹지 않고 흡수가 빠릅니다. 세트 구매 시 부속품 증정 같은 프로모션이 붙는 경우가 있어 실구매가가 더 내려갈 수 있습니다.',
+        text: '국산 젤 중 맛 선택지가 넓은 쪽입니다. 복숭아·청포도·파인애플 등으로 로테이션이 가능해, 풀코스처럼 5개 이상 연속 섭취할 때 맛 피로를 관리하기 쉽습니다. 풀코스 5개 기준 약 8,095원으로 같은 개수의 프리미엄 수입 젤(SiS 18,500원·Maurten 32,085원)의 절반 이하이고, 양갱(4,000원)보다는 비싸지만 액상이라 씹지 않고 흡수가 빠릅니다. 세트 구매 시 부속품 증정 같은 프로모션이 붙는 경우가 있어 실구매가가 더 내려갈 수 있습니다.',
       },
       {
         userType: '예상 적합 — 30km 이상 장거리 보충',

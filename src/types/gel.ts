@@ -40,7 +40,8 @@ export interface GITolerance {
   overall: GILevel;
   waterPairing: string;         // "필수", "불필요", "권장"
   riskFactors: string[];        // ["고삼투압", "카페인"] 등
-  communityFeedback: string;    // 커뮤니티 후기 요약
+  /** 섭취 메모 — 제품 표기 사실·실명 판매처 수치만. 후기·커뮤니티 평판 금지(validate 7번이 검사). 빈 문자열이면 상자를 숨긴다 */
+  communityFeedback: string;
   gutTrainingNeeded: boolean;
 }
 

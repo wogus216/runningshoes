@@ -121,16 +121,17 @@ export function GITolerance({ gel }: GIToleranceProps) {
         </div>
       )}
 
-      {/* 커뮤니티 피드백 */}
-      <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-4">
-        <div className="flex items-center gap-2 mb-2">
-          <Heart className="w-4 h-4 text-sky-700" />
-          <h3 className="text-sm font-bold text-primary">커뮤니티 후기</h3>
+      {/* 섭취 메모 — 제품 표기 사실과 실명 판매처 수치만 담는다. 2026-10-23 전까지 제목이 "커뮤니티 후기"에
+          따옴표·기울임이라 사용자 후기 인용처럼 읽혔다(우리는 후기를 수집하지 않는다 — CLAUDE.md 절대 규칙 1·2). */}
+      {gi.communityFeedback && (
+        <div className="rounded-[4px] border border-sky-100 bg-[linear-gradient(180deg,rgba(255,255,255,0.96),rgba(247,244,237,0.92))] p-4">
+          <div className="flex items-center gap-2 mb-2">
+            <Heart className="w-4 h-4 text-sky-700" />
+            <h3 className="text-sm font-bold text-primary">섭취 메모</h3>
+          </div>
+          <p className="text-sm text-secondary leading-relaxed">{gi.communityFeedback}</p>
         </div>
-        <p className="text-sm text-secondary leading-relaxed italic">
-          &ldquo;{gi.communityFeedback}&rdquo;
-        </p>
-      </div>
+      )}
     </div>
   );
 }
