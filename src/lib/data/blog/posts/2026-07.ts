@@ -4704,6 +4704,7 @@ export const posts_2026_07: BlogPost[] = [
     thumbnail: '/images/blog/bondi-9-vs-glycerin-max-2-cushion-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-06',
+    updatedAt: '2026-10-23',
     category: 'review' as const,
     readingTime: 9,
     tags: ['호카 본디 9', '브룩스 글리세린 맥스 2', '맥스쿠션', '쿠션화', '무릎 보호', '리커버리화', '신발 비교', '맥시멀 쿠셔닝'],
@@ -4713,7 +4714,7 @@ export const posts_2026_07: BlogPost[] = [
   <ul>
     <li><strong>둘 다 무릎·관절 보호는 최상급(injuryPrevention 전 항목 excellent)</strong>입니다. 갈리는 건 성격이에요 — 본디 9는 <strong>초광폭 123mm 베이스로 "안정감"</strong>, 글리세린 맥스 2는 <strong>47mm 초고 스택으로 "절대 쿠션량"</strong></li>
     <li><strong>평발·안정 우선이면 본디 9(229,000원)</strong>, <strong>최대 스택과 굴러가는 로커·낮은 드롭이면 글리세린 맥스 2(249,000원)</strong>. 본디가 2만 원 싸고 15g 가볍고 평발 호환이 한 등급 위입니다</li>
-    <li><strong>발볼 넓은 한국 러너는 사이즈 함정 주의</strong> — 본디 9는 토박스가 좁은 편(72.5mm)이라 <strong>와이드 필수</strong>, 글리세린 맥스 2는 스너그 피팅이라 <strong>반 사이즈 업</strong> 권장</li>
+    <li><strong>발볼 넓은 한국 러너는 사이즈 함정 주의</strong> — 본디 9는 토박스가 좁은 편(72.5mm)이라 <strong>와이드 필수</strong>, 글리세린 맥스 2는 랩 토박스 73.4mm·전체 폭 96.5mm로 평균 이상이라 <strong>정사이즈부터 시착</strong>(한국 공식몰 와이드 미판매)</li>
   </ul>
 </div>
 
@@ -4754,7 +4755,7 @@ export const posts_2026_07: BlogPost[] = [
 
 <h2>브룩스 글리세린 맥스 2 — 가장 높이 띄우는 로커형 맥시멀</h2>
 <p><a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>의 무기는 <strong>47mm 힐 / 41mm 포어풋이라는, 두 신발 중 가장 두꺼운 스택</strong>입니다. 발밑에 폼을 최대로 쌓아 충격흡수 절대량이 크고, v2에서 <strong>로커(굴림) 지오메트리가 강화</strong>돼 체중이 앞으로 매끄럽게 넘어갑니다. 드롭이 6mm로 낮아 미드풋 착지 성향 러너에게 자연스럽고, 내구성도 600km로 조금 더 깁니다.</p>
-<p>다만 정직하게 짚을 점이 있습니다. <strong>DNA Tuned 폼이 v1보다 단단해져 "구름 위" 같던 부드러움이 줄었다</strong>는 평가가 실사용 리뷰에서 나옵니다(쿠션 8/10·반발 6/10). 318g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. <strong>피팅이 스너그(꽉 끼는 편)</strong>라 발볼 넓은 러너는 반 사이즈 업을 고려해야 합니다(한국 공식몰은 와이드 미판매).</p>
+<p>다만 짚을 점이 있습니다. RunRepeat 랩 기준 글리세린 맥스 2는 v1보다 힐 스택이 3.1mm 높지만 <strong>힐 충격흡수는 137 SA로 v1(148 SA)·본디 9(146 SA)보다 낮습니다</strong>(폼 경도는 30.9 AC로 v1과 거의 같음, 쿠션 8/10·반발 6/10). 318g으로 가장 무겁고, 가격도 24만 9천 원으로 가장 비쌉니다. 랩 토박스 73.4mm·전체 폭 96.5mm로 평균 이상이라 정사이즈부터 시착하면 되지만, 한국 공식몰은 와이드를 팔지 않습니다.</p>
 <p><strong>✅ 이런 분께</strong> — 발밑을 최대한 높이 띄운 맥시멀 스택을 원하는 러너, 로커로 굴러가는 주행감과 낮은 드롭(6mm)을 선호하는 러너, 내구성을 조금 더 챙기고 싶은 러너. 단, "폭신 말랑"보다 "단단하고 안정적으로 굴러가는" 쪽에 가깝다는 걸 감안하세요.</p>
 
 <h2>내게 맞는 건? — 상황별 정리</h2>
@@ -4762,7 +4763,7 @@ export const posts_2026_07: BlogPost[] = [
   <li><strong>평발이다 / 발이 안쪽으로 무너진다</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>. 초광폭 베이스 + 평발 호환 excellent가 결정적입니다</li>
   <li><strong>발밑을 최대한 높이 띄우고 싶다 / 로커로 굴러가는 느낌 선호</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>. 47mm 스택과 강화 로커가 답입니다</li>
   <li><strong>낮은 드롭(6mm) 미드풋 착지가 편하다</strong> → 글리세린 맥스 2 / <strong>힐 착지가 편하고 드롭 여유(9mm)를 원한다</strong> → 본디 9</li>
-  <li><strong>발볼이 넓다</strong> → 본디는 와이드 필수, 글리맥스는 한국 공식몰에 와이드가 없어 반 사이즈 업까지 고려</li>
+  <li><strong>발볼이 넓다</strong> → 본디는 와이드 필수, 글리맥스는 한국 공식몰에 와이드가 없으니 정사이즈 시착 후 판단(랩 토박스 73.4mm로 평균 수준)</li>
   <li><strong>예산·무게를 아끼고 싶다</strong> → 본디 9(2만 원 싸고 9g 가벼움) / <strong>내구성을 조금 더 원한다</strong> → 글리세린 맥스 2(600km)</li>
   <li><strong>더 저렴한 맥스쿠션 대안</strong>이 궁금하면 <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>도 후보입니다. 본디와의 직접 비교는 <a href="/blog/hoka-bondi-9-vs-asics-nimbus-28">본디 9 vs 님버스 28</a>에서 다뤘어요</li>
 </ul>
@@ -4775,7 +4776,7 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 어느 쪽이 편한가요?</p>
-    <p class="faq-a">A. 기본 폭은 둘 다 넉넉하지 않습니다. 본디 9는 토박스가 72.5mm로 좁은 편이라 <strong>와이드 옵션이 사실상 필수</strong>이고, 글리세린 맥스 2는 v2에서 피팅이 스너그해져 <strong>반 사이즈 업</strong>을 권장합니다(한국 공식몰은 와이드 미판매). 발볼이 특히 넓다면 실측 후 매장 착용을 추천합니다.</p>
+    <p class="faq-a">A. 기본 폭은 둘 다 넉넉하지 않습니다. 본디 9는 토박스가 72.5mm로 좁은 편이라 <strong>와이드 옵션이 사실상 필수</strong>이고, 글리세린 맥스 2는 RunRepeat 랩 토박스 73.4mm(평균 73.2mm)·전체 폭 96.5mm로 평균 이상이라 <strong>정사이즈부터 시착</strong>해 보면 됩니다(한국 공식몰은 와이드 미판매). 발볼이 특히 넓다면 실측 후 매장 착용을 추천합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 이 신발들로 빠르게 달려도 되나요?</p>
@@ -4783,11 +4784,11 @@ export const posts_2026_07: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 글리세린 맥스는 v1과 v2 중 뭘 사야 하나요?</p>
-    <p class="faq-a">A. v2는 로커가 강해지고 피팅이 안정적으로 개선됐지만, DNA Tuned 폼이 단단해져 v1 특유의 "구름 위" 부드러움은 줄었다는 평이 많습니다. 부드러움을 최우선한다면 할인된 v1도 합리적입니다 — 자세한 차이는 <a href="/blog/brooks-glycerin-max-1-vs-2-comparison">글리세린 맥스 1 vs 2 비교</a>에서 정리했습니다.</p>
+    <p class="faq-a">A. RunRepeat 랩 기준 폼 경도는 v1 31.9 AC·v2 30.9 AC로 거의 같습니다. v2는 힐 스택이 3.1mm 높아지고 로커가 강해졌지만 힐 충격흡수는 148→137 SA로 낮아졌고 13g 무거워졌습니다. 힐 착지 충격흡수 수치와 가격(239,000원)을 우선한다면 v1이, 로커 형상을 원한다면 v2가 맞습니다 — 자세한 차이는 <a href="/blog/brooks-glycerin-max-1-vs-2-comparison">글리세린 맥스 1 vs 2 비교</a>에서 정리했습니다.</p>
   </div>
 </div>
 
-<p><small>출처: 사이트 신발 DB(RunRepeat 랩 데이터·브랜드 공식 스펙·실사용 리뷰 종합) · 한국 공식가 기준 · 작성 2026년 7월 6일.</small></p>
+<p><small>출처: 사이트 신발 DB(RunRepeat 랩 데이터·브랜드 공식 스펙) · 한국 공식가 기준 · 작성 2026년 7월 6일. 2026년 10월 23일 정정 — 초판의 글리세린 맥스 2 "폼이 단단해졌다"·"반 사이즈 업" 서술을 RunRepeat 랩 수치(경도 31.9→30.9 AC, 토박스 73.4mm)로 바로잡았습니다.</small></p>
 `,
   },
   {
