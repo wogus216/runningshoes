@@ -9483,7 +9483,7 @@ export const posts_2026_06: BlogPost[] = [
       startDate: '2026-10-24',
       location: { name: '인천', address: '인천광역시' },
       organizer: '디즈니런 코리아',
-      url: 'https://disneyrun.kr/',
+      url: 'https://disneyrunincheon2026.com/',
     },
     category: 'news' as const,
     readingTime: 6,

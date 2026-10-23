@@ -9,7 +9,7 @@ export const newBalanceBrand: Brand = {
     '1906년 보스턴에서 시작한 미국의 러닝 전통 브랜드. 기술의 화학적 조성보다 "러너가 느끼는 경험(Feel)"을 강조하며, Infinion·FuelCell·Fresh Foam X 등 용도별 폼 라인업과 2E/4E 와이드 옵션이 풍부한 것이 특징입니다.',
   founded: 1906,
   headquarters: '미국 보스턴',
-  website: 'https://www.newbalance.co.kr',
+  website: 'https://www.nbkorea.com',
   technologies: [
     // ─── 미드솔 (Midsole) ───
     {

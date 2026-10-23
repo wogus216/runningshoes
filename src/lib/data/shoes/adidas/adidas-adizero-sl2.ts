@@ -99,5 +99,6 @@ export const shoe: Shoe = {
       },
   ],
   similarShoes: ['nike-rival-fly-4', 'saucony-kinvara-16'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FE3AfoAm' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YmJGppgO' }],
+  // 쿠팡 링크 제거(2026-10-23 점검) — 연결 상품이 병행수입·일시품절, 표시가 27,500~41,500원(정가의 18~28%)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FE3AfoAm' }],
 };

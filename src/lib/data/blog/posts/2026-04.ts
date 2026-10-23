@@ -408,7 +408,7 @@ export const posts_2026_04: BlogPost[] = [
 
 <ul>
   <li><strong>훈련 계획:</strong> 대회 16~20주 전부터 본격 빌드업. 2026년 11~12월 시작이 표준</li>
-  <li><strong>러닝화 선택:</strong> 레이스용은 대회 6~8주 전 구입해 40~60km 길들이기 권장. <a href="/best/best-carbon-plate-2025">카본 플레이트 신발 비교</a>에서 종류별 특성을 확인하세요</li>
+  <li><strong>러닝화 선택:</strong> 레이스용은 대회 6~8주 전 구입해 40~60km 길들이기 권장. <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 신발 비교</a>에서 종류별 특성을 확인하세요</li>
   <li><strong>에너지 전략:</strong> 풀코스는 20km 이후 탄수화물 보충이 필수 — <a href="/gels">에너지젤 가이드</a></li>
   <li><strong>맞춤 추천:</strong> 본인의 발볼·체중·주간 거리에 맞는 러닝화가 궁금하다면 <a href="/recommend">1분 러닝화 추천</a>을 이용하세요</li>
 </ul>

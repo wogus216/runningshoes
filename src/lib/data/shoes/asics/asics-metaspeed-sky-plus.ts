@@ -101,5 +101,6 @@ export const shoe: Shoe = {
     { slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026', title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xMnfMR1O' }],
+  // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
+  purchaseLinks: [],
 };

@@ -102,5 +102,6 @@ export const shoe: Shoe = {
     { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너' },
     { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 계급도' },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5X9CBI4Ie' }],
+  // 쿠팡 링크 제거(2026-10-23 점검) — 연결 상품이 해외 셀러 278,600~292,600원(정가의 147~155%)·반품비 60,000원
+  purchaseLinks: [],
 };

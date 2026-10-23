@@ -173,7 +173,7 @@ export const aprilEvents: MarathonEvent[] = [
     distances: ['풀코스', '하프', '10K', '5K'],
     status: '대회종료',
     isMajor: true,
-    website: 'https://www.ggmarathon.com',
+    website: 'https://www.kgmarathon.co.kr/kgmarathon/',
     description: 'IAAF/AIMS 공인 코스. 수원 종합운동장 기점 평지 코스.',
     courseInfo: {
       terrain: '평지',

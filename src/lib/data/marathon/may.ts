@@ -22,7 +22,6 @@ export const mayEvents: MarathonEvent[] = [
     distances: ['풀코스', '하프', '10K', '5K'],
     status: '대회종료',
     isMajor: true,
-    website: 'https://www.boseongmarathon.com',
     description: '녹차밭을 달리는 풀코스 마라톤. 자연 속에서 달리는 힐링 코스.',
     courseInfo: {
       terrain: '언덕',

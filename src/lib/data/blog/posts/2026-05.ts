@@ -9311,7 +9311,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr>
       <td><strong>레이스 신발</strong></td>
-      <td>대회 6~8주 전 구입 → 40~60km 길들이기. <a href="/best/best-carbon-plate-2025">카본 플레이트 비교</a> 또는 <a href="/recommend">맞춤 추천</a></td>
+      <td>대회 6~8주 전 구입 → 40~60km 길들이기. <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 비교</a> 또는 <a href="/recommend">맞춤 추천</a></td>
     </tr>
     <tr>
       <td>훈련용 데일리화</td>

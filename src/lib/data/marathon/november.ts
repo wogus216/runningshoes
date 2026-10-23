@@ -782,7 +782,7 @@ export const novemberEvents: MarathonEvent[] = [
     location: '고양종합운동장 (경기 고양시)',
     region: '경기',
     distances: ['하프', '10K'],
-    status: '접수중',
+    status: '마감',
     isMajor: true,
     website: 'https://discover.garmin.com/ko-KR/event/2026/garmin-run/',
     description:
@@ -809,8 +809,8 @@ export const novemberEvents: MarathonEvent[] = [
     registrationStart: '2026-10-20',
     registrationEnd: '2026-10-22',
     registrationNote:
-      '**FINAL 추가접수가 10월 20일(화) 14시에 열려 22일(목) 17시까지 받습니다.** 공식 접수처 러너블(runable.me)의 "2026 GARMIN RUN KOREA FINAL 추가접수" 상품으로, 하프 80,000원·10K 60,000원(포러너 포함 패키지 별도)이며 정보수정·참가취소 기한도 10월 22일 17시입니다. 러너블은 "접수일정은 상황에 따라 조기 종료될 수 있습니다"라고 안내하고, 선착순 여부와 정원은 표기하지 않았습니다(2026-10-20 10시 확인 — 이때는 "14:00 접수 시작" 대기 상태). 앞선 9월 추가접수(9/3 14시~9/30)와 7월 본접수 추첨은 끝났습니다.',
-    lastVerified: '2026-10-20',
+      '**접수 마감 — FINAL 추가접수(10월 20일 14시~22일 17시)가 끝났습니다.** 2026-10-23 러너블 대회 페이지에 열린 접수 상품이 없고, 남은 추가접수 상품은 "접수 마감" 버튼이 비활성입니다. 당시 안내: 공식 접수처 러너블(runable.me)의 "2026 GARMIN RUN KOREA FINAL 추가접수" 상품으로, 하프 80,000원·10K 60,000원(포러너 포함 패키지 별도)이며 정보수정·참가취소 기한도 10월 22일 17시입니다. 러너블은 "접수일정은 상황에 따라 조기 종료될 수 있습니다"라고 안내하고, 선착순 여부와 정원은 표기하지 않았습니다(2026-10-20 10시 확인 — 이때는 "14:00 접수 시작" 대기 상태). 앞선 9월 추가접수(9/3 14시~9/30)와 7월 본접수 추첨은 끝났습니다.',
+    lastVerified: '2026-10-23',
   },
   {
     id: 'gochang-dolmen-marathon-2026',

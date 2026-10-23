@@ -834,7 +834,7 @@ export const posts_2026_09: BlogPost[] = [
   <span class="callout-icon">🔎</span>
   <div class="callout-body">
     <p class="callout-title">이 글이 근거로 삼은 것</p>
-    <p><strong>BMW 베를린마라톤 공식 9월 27일 경기 보도자료와 공식 결과 페이지</strong>를 2026년 9월 28일 대조했습니다. 엘리트 기록·중간 통과기록·참가 규모·아세파의 오른쪽 다리 이상은 주최 측 발표만 사용했습니다. 2027 일정은 공식 미게시 상태라 날짜를 추정하지 않았습니다.</p>
+    <p><strong>BMW 베를린마라톤 공식 9월 27일 경기 보도자료와 공식 결과 페이지</strong>를 2026년 9월 28일 대조했습니다. 엘리트 기록·중간 통과기록·참가 규모·아세파의 오른쪽 다리 이상은 주최 측 발표만 사용했습니다. 이 보도자료 페이지는 2026년 10월 23일 기준 공식 사이트에서 내려가 링크를 뺐고, 기록은 아래 공식 결과 페이지에서 확인할 수 있습니다. 2027 일정은 공식 미게시 상태라 날짜를 추정하지 않았습니다.</p>
   </div>
 </div>
 
@@ -866,8 +866,7 @@ export const posts_2026_09: BlogPost[] = [
 <h2>내 기록과 완주증은 공식 결과 페이지에서 찾습니다</h2>
 <p>베를린마라톤 공식 결과 페이지에는 2026 라이브 트래킹·결과 검색 링크가 열려 있습니다. 참가자는 이름이나 배번호로 기록을 검색하고 완주증을 확인할 수 있으며, 주최 측 촬영 사진과 영상도 같은 결과 동선에서 연결됩니다.</p>
 <ul>
-  <li><strong>공식 결과</strong> — <a href="https://www.bmw-berlin-marathon.com/en/the-race/results" target="_blank" rel="noopener noreferrer">BMW 베를린마라톤 결과·완주증 페이지</a></li>
-  <li><strong>엘리트 경기 공식 발표</strong> — <a href="https://www.bmw-berlin-marathon.com/en/news-media/news/detail/outstanding-performances-at-the-bmw-berlin-marathon-2026" target="_blank" rel="noopener noreferrer">2026 경기 보도자료</a></li>
+  <li><strong>공식 결과</strong> — <a href="https://www.bmw-berlin-marathon.com/en/your-race/results" target="_blank" rel="noopener noreferrer">BMW 베를린마라톤 결과·완주증 페이지</a></li>
 </ul>
 <p>검색 결과 전체를 다른 곳에 재배포하는 것은 공식 페이지의 이용 조건상 제한됩니다. 개인 기록 확인과 완주증 내려받기 용도로 이용하는 것이 맞습니다.</p>
 

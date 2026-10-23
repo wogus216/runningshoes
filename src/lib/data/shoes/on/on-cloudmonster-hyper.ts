@@ -108,5 +108,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 같은 값, 갈리는 성능' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G7CmL0U2' }],
+  // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
+  purchaseLinks: [],
 };
