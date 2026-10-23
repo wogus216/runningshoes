@@ -3629,7 +3629,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '가격 차이가 11만원인데 그만한가요?',
         answer:
-          'km당 비용으로 보면 격차가 더 큽니다 — 메가블라스트 598원, 보메로 18 291원으로 두 배입니다. 메가블라스트가 299,000원에 내구 500km, 보메로가 189,000원에 650km이기 때문입니다. 순수하게 경제성만 따지면 보메로가 압도적이고, 메가블라스트의 값은 218g이라는 무게와 48mm 스택의 조합에 붙습니다.',
+          'km당 비용으로 보면 격차가 더 큽니다 — 메가블라스트 598원, 보메로 18 291원으로 두 배입니다. 메가블라스트가 299,000원에 내구 500km, 보메로가 189,000원에 650km이기 때문입니다. 순수하게 경제성만 따지면 보메로가 압도적이고, 메가블라스트의 값은 218g이라는 무게와 힐 45mm 스택의 조합에 붙습니다.',
       },
       {
         question: '발볼이 넓으면 어느 쪽인가요?',
@@ -3669,7 +3669,7 @@ export const posts_2026_08: BlogPost[] = [
   <tbody>
     <tr><td>한국 정가</td><td>299,000원</td><td><strong>189,000원</strong></td></tr>
     <tr><td>무게</td><td><strong>218g</strong></td><td>298g (80g 무거움)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td><strong>48.1 / 38.5mm</strong></td><td>43 / 29mm</td></tr>
+    <tr><td>스택 (힐/전족)</td><td><strong>45.1 / 35.2mm</strong></td><td>43 / 29mm</td></tr>
     <tr><td>드롭</td><td>10mm</td><td><strong>14mm</strong></td></tr>
     <tr><td>미드솔</td><td>FF Turbo² (A-TPU)</td><td>ZoomX + ReactX</td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>10</strong> / <strong>9</strong></td><td>9 / 6</td></tr>
@@ -4055,7 +4055,7 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
     slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
-    title: '노바블라스트 6 vs 보스턴 13 차이 — 같은 17.9만원, 5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
+    title: '노바블라스트 6 vs 보스턴 13 차이 — 1만원·5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
     description:
       '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원 대 189,000원으로 1만원 차이고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 343원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
     thumbnail: '/images/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026.webp',
@@ -4226,7 +4226,7 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
     slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
-    title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 22.9만원, 55g이 갈린다 | 다치는 곳도 정반대',
+    title: '매직스피드 5 vs 줌 플라이 6 차이 — 같은 20.9만원, 47g이 갈린다 | 다치는 곳도 정반대',
     description:
       '아식스 매직스피드 5와 나이키 줌 플라이 6은 정가 209,000원, km당 약 522~523원, 적정 페이스 3:30~5:00까지 사실상 같습니다. 다른 건 무게 201g(실측) 대 248g(47g 차), 드롭 7mm 대 10mm, 플레이트 형태(포크형 대 풀렝스 곡선형)입니다. 그리고 부상 프로필이 거의 정반대예요 — 매직스피드는 아킬레스·족저근막·정강이가 주의, 줌 플라이는 무릎이 주의입니다. 발볼도 갈립니다(줌 플라이는 좁은 편). 한국 러너 기준으로 어느 쪽이 내 몸에 맞는지 정리했습니다.',
     thumbnail: '/images/blog/asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026.webp',
@@ -4393,7 +4393,7 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
-    title: '아디제로 Evo SL vs 보스턴 13 차이 — 3만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
+    title: '아디제로 Evo SL vs 보스턴 13 차이 — 2만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
     description:
       '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(189,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 343원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',

@@ -2971,10 +2971,10 @@ export const posts_2026_05: BlogPost[] = [
 <h2>다른 데일리 트레이너와 비교</h2>
 
 <ul>
-  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 라이드 18보다 26g 무거움(라이드 19보다는 3g 가벼움) + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
-  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 라이드보다 20g 가벼움. 맥스 쿠션 + 강한 록커. 가격은 +4만원</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 199,000원)</strong> — 라이드보다 50g 무거움. 4E 와이드 + 진정한 맥스 쿠션. 가격 +4만원</li>
-  <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (272g, 179,000원)</strong> — 라이드와 동급 가격. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
+  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 라이드 18보다 26g, 라이드 19보다도 3g 무거움(US M9 기준) + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
+  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (275g, 199,000원)</strong> — 라이드 18보다 20g 무거움(라이드 19보다는 3g 가벼움, US M9 기준). 맥스 쿠션 + 강한 록커. 가격은 18보다 +4만원, 19보다 +2만원</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (278g, 199,000원)</strong> — 라이드 18보다 23g 무거움(라이드 19와 같은 무게, RunRepeat 실측 US M9). 4E 와이드 + 진정한 맥스 쿠션. 가격은 18보다 +4만원, 19보다 +2만원</li>
+  <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (289g, 169,000원)</strong> — 가격은 라이드 18보다 1만원 비싸고 19보다 1만원 저렴. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
 </ul>
 
 <h2>FAQ</h2>
@@ -3036,7 +3036,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'new-balance-860-v14-vs-v15-comparison',
     slug: 'new-balance-860-v14-vs-v15-comparison',
     seoTitle: '뉴발란스 860 v14 vs v15 비교 — 평발·4E 와이드·가격 차이',
-    title: '뉴발란스 860 v14 vs v15 비교 | 4E 와이드 사라진 신상 v15 살까, 평발 4종 옵션 v14 살까',
+    title: '뉴발란스 860 v14 vs v15 비교 | 37g 무거워진 신상 v15 살까, 평발 4종 옵션 v14 살까',
     description: '860 v14(295g/179,000원)와 v15(332g/189,000원)을 풀데이터로 직접 비교. v15가 무거워진(+37g, 실측) 부분 + 이중 밀도 폼·넓어진 힐 플랫폼 등 보강, 와이드는 v15도 한국 공식몰 남성 2E·4E. 평발·과내전 한국 러너 안정화 가성비 매트릭스.',
     thumbnail: '/images/blog/new-balance-860-v14-vs-v15-comparison.webp',
     author: '산초 에디터',
@@ -3158,10 +3158,10 @@ export const posts_2026_05: BlogPost[] = [
 <h2>다른 안정화·평발 옵션과 비교</h2>
 
 <ul>
-  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (260g, 199,000원)</strong> — 안정화 프리미엄. 860 v14보다 2만원 비싸지만 35g 가벼움. 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
-  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (295g, 199,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
-  <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (270g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 25g 가벼움 + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
-  <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (310g, 259,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
+  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (295g, 199,000원)</strong> — 안정화 프리미엄. 860 v14보다 2만원 비싸고 무게는 같음(둘 다 295g, RunRepeat 실측 US M9). 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
+  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (295g, 189,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
+  <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (278g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 17g 가벼움(둘 다 RunRepeat 실측) + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
+  <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (283g, 239,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
 </ul>
 
 <h2>FAQ</h2>
@@ -3173,7 +3173,7 @@ export const posts_2026_05: BlogPost[] = [
 <p><strong>가능</strong>. v15는 한국 공식몰 기준 남성 2E·4E / 여성 D로 판매되고, 토박스도 실측 75.1mm로 v14(73.0mm)보다 넓습니다. 4E 평발 러너라면 <strong>v15 4E</strong>를 신어 보고, 가격이 우선이면 v14 X-Wide 이월도 선택지. 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>(2E 와이드)·<a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>(와이드 옵션) 대안.</p>
 
 <h3>Q. 카야노 32와 860 v14 중 어느 게 좋나요?</h3>
-<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 19만 9천원). 카야노 32가 35g 가볍고 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
+<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 19만 9천원). 무게는 둘 다 295g(RunRepeat 실측)으로 같고, 카야노 32는 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
 
 <h3>Q. 풀코스 가능한가요?</h3>
 <p><strong>Sub-4 ~ Sub-5 완주 + 평발·과내전 안전 우선</strong>이면 둘 다 적합. 295~332g 무게는 빠른 페이스에는 부담이지만 안정화 본질상 정상. Sub-3:30 이하 도전이면 안정화는 부담스럽고 카본 슈즈 분리 권장(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>, 평발 대응).</p>
@@ -3238,7 +3238,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'on-cloudmonster-2-vs-3-comparison',
     slug: 'on-cloudmonster-2-vs-3-comparison',
     title: 'On 클라우드몬스터 2 vs 3 비교 | "푹신함" vs "굴러가는 느낌" — 토박스 좁은 2 살까, 핏 넓어진 3 살까',
-    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 축소(RunRepeat 실측 74.5→71.0mm) + 힐 스택 -2.9mm 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
+    description: '클라우드몬스터 2(292g/219,000원)와 3(295g/229,000원)을 풀데이터로 직접 비교. 록커 강화 + 토박스 축소(RunRepeat 실측 74.5→71.0mm) + 힐 충격흡수(SA 137→123) 트레이드오프. On 맥스 쿠션 입문에 2와 3 중 누가 답인지 상황별 매트릭스로 정리.',
     thumbnail: '/images/blog/on-cloudmonster-2-vs-3-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
@@ -3250,7 +3250,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>핏 vs 쿠션감의 트레이드오프</strong> (2 ₩219,000 / 3 ₩229,000) — On 맥스 쿠션이 <strong>"표준 토박스(실측 74.5mm) + 푹신함"의 2</strong>에서 <strong>"더 좁아진 토박스(실측 71.0mm) + 강한 록커"의 3</strong>로 정체성 일부 전환</li>
-    <li>3의 진짜 변화 3가지: <strong>앞발 공간 축소 (토박스 실측 74.5→71.0mm)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 스택 -2.9mm 약간 단단해진 라이드</strong></li>
+    <li>3의 진짜 변화 3가지: <strong>앞발 공간 축소 (토박스 실측 74.5→71.0mm)</strong> + <strong>강한 록커 굴러가는 느낌</strong> + <strong>힐 충격흡수 SA 137→123 약간 단단해진 착지</strong>(스택은 실측 37.9→38.6mm로 비슷)</li>
     <li>가격 +10,000원에 km당 비용은 ₩438 → ₩458 살짝 악화. 무릎 보호·푹신함 우선이면 2 이월 매력적, 토박스 여유가 우선이면 실측상 더 넓은 2가 유리(3는 71.0mm로 평균 이하)</li>
   </ul>
 </div>
@@ -3274,9 +3274,9 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>MSRP</strong></td><td>219,000원</td><td><strong>229,000원</strong></td><td>+10,000원</td></tr>
     <tr><td><strong>이월/세일가</strong></td><td><strong>175,000~195,000원</strong></td><td>215,000~225,000원</td><td>실제 차이 ~3~4만원</td></tr>
     <tr><td><strong>무게 (US M9)</strong></td><td>292g</td><td>295g</td><td>+3g (거의 동일)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37.9mm</td><td>35mm</td><td>-2.9mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>31.3mm</td><td>29mm</td><td>-2.3mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>6.6mm</td><td>6mm</td><td>-0.6mm</td></tr>
+    <tr><td><strong>힐 스택 (RunRepeat 실측)</strong></td><td>37.9mm</td><td>38.6mm</td><td>+0.7mm (거의 동일)</td></tr>
+    <tr><td><strong>전족부 스택 (RunRepeat 실측)</strong></td><td>31.3mm</td><td>32.2mm</td><td>+0.9mm</td></tr>
+    <tr><td><strong>드롭 (RunRepeat 실측)</strong></td><td>6.6mm</td><td>6.4mm</td><td>-0.2mm (On 공식은 둘 다 6mm)</td></tr>
     <tr><td><strong>미드솔</strong></td><td>Helion HF + CloudTec 더블 레이어</td><td>Helion HF + CloudTec</td><td>포뮬레이션 미세 조정</td></tr>
     <tr><td><strong>록커</strong></td><td>보통</td><td><strong>강한 록커</strong></td><td>굴러가는 느낌 ↑</td></tr>
     <tr><td><strong>앞발 핏</strong></td><td>토박스 74.5mm (실측)</td><td><strong>토박스 71.0mm (실측)</strong></td><td>-3.5mm 좁아짐</td></tr>
@@ -3305,9 +3305,9 @@ export const posts_2026_05: BlogPost[] = [
 
 <p><strong>성격 차이</strong>: 2는 무릎 보호 + 푹신함이 결정적, 3는 자연스러운 페이스 유지가 강점.</p>
 
-<h3>3. 힐 스택 -2.9mm — 약간 단단해진 라이드</h3>
+<h3>3. 힐 충격흡수 SA 137→123 — 약간 단단해진 착지</h3>
 
-<p>37.9mm → 35mm로 힐 스택이 줄었습니다. 절대 수치로는 여전히 맥스 쿠션 영역(33mm 이상이 일반적 max cushion 기준)이지만, 2의 압도적 푹신함은 약간 누그러진 셈입니다.</p>
+<p>스택 높이는 거의 그대로입니다. RunRepeat 실측 힐 스택은 37.9mm → 38.6mm로 오히려 0.7mm 높아졌습니다(On 공식 35mm는 인솔 제외 기준이라 실측과 직접 비교하면 안 됩니다). 달라진 건 충격흡수입니다. 같은 랩의 힐 SA가 137 → 123으로 줄어, 2의 압도적 푹신함은 약간 누그러진 셈입니다. 절대 수치로는 여전히 맥스 쿠션 영역(33mm 이상이 일반적 max cushion 기준)입니다.</p>
 
 <p>대신 록커 강화와 결합돼 <strong>"부드럽지만 흐물거리지 않는"</strong> 라이드를 만듭니다. 빠른 페이스(5분/km 안팎)에서는 3가 약간 더 자연스럽고, 매우 느린 LSD 회복 페이스에서는 2의 푹신함이 그리울 수 있습니다.</p>
 
@@ -3336,7 +3336,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr><td>무릎 약함 + 푹신한 쿠션 우선</td><td><strong>2 이월 18~20만원</strong></td><td>137 SA 충격흡수 + 더블 CloudTec 푹신함</td></tr>
     <tr><td>2 쓰다가 토박스 압박 불만</td><td><strong>3 비추</strong></td><td>3 토박스는 실측 71.0mm로 2(74.5mm)보다 좁음 — 와이드 옵션 있는 대안 검토</td></tr>
-    <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>37.9mm 스택의 푹신함이 후반부 결정적</td></tr>
+    <tr><td>장거리 LSD (15~25km) 회복 페이스</td><td>2</td><td>힐 SA 137 충격흡수의 푹신함이 후반부 결정적</td></tr>
     <tr><td>데일리 easy run (5~10km)</td><td>3</td><td>강한 록커가 자연스러운 페이스 유지</td></tr>
     <tr><td>발볼 표준 + 가성비</td><td>2 블프 14~17만원</td><td>km당 ₩438 최저 가격대 진입</td></tr>
     <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>양쪽 모두 와이드 ❌ → <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td></tr>
@@ -3349,8 +3349,8 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> (255g, 209,000원)</strong> — 인피니온 폼 + 4E 와이드 옵션. 발볼 넓은 한국 러너 최우선 대안. 무게도 -40g 가벼움</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (305g, 199,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터와 비슷</li>
-  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (235g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
+  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (278g, 199,000원)</strong> — FF Blast+ 풀스택 + 와이드 옵션. 통기성 우위. 무게는 클라우드몬스터 2(292g)보다 14g 가벼움(RunRepeat 실측 US M9)</li>
+  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (275g, 199,000원)</strong> — 맥스 쿠션 가성비 1위. 강한 록커 사상 + 19만원대. 클라우드몬스터 3와 직접 경쟁</li>
   <li><strong><a href="/shoes/on-cloudmonster-hyper">On 클라우드몬스터 하이퍼</a> (258g, 259,000원)</strong> — 같은 라인업 Pebax 폼 + Speedboard. 템포런 겸용 슈퍼트레이너 사상. 4만원 추가 비용으로 페이스 욕심 가능</li>
 </ul>
 
@@ -3428,7 +3428,7 @@ export const posts_2026_05: BlogPost[] = [
     id: 'asics-magic-speed-4-vs-5-comparison',
     slug: 'asics-magic-speed-4-vs-5-comparison',
     title: '아식스 매직스피드 4 vs 5 비교 | 50g 차이의 의미 — 풀렝스 카본 4 살까, 193g 신상 5 살까',
-    description: '매직스피드 4(237g/199,000원)와 5(201g/229,000원)을 풀데이터로 직접 비교. 36g 경량화(실측) + 풀렝스 → 포크형 카본 전환 + FF Leap 듀얼 폼 + km당 비용 ₩628→₩573 개선. 가성비 카본 입문에 4와 5 중 누가 답인지 상황별 매트릭스로 정리.',
+    description: '매직스피드 4(237g/199,000원)와 5(201g/209,000원)을 풀데이터로 직접 비교. 36g 경량화(실측) + 풀렝스 → 포크형 카본 전환 + FF Leap 듀얼 폼 + km당 비용 ₩569→₩523 개선. 가성비 카본 입문에 4와 5 중 누가 답인지 상황별 매트릭스로 정리.',
     thumbnail: '/images/blog/asics-magic-speed-4-vs-5-comparison.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-25',
@@ -3440,8 +3440,8 @@ export const posts_2026_05: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>36g 차이의 무게</strong> (4 237g / 5 201g, RunRepeat 실측) — 한국 가성비 카본 시장에서 <strong>"풀렝스 카본의 4" vs "초경량 포크형 5"</strong>로 명확히 갈림</li>
-    <li>5의 진짜 변화 3가지: <strong>포크형 카본 → 힐스트라이커도 자연스러운 전환</strong> + <strong>FF Leap + FF Blast+ 듀얼 폼 (에너지 리턴 64.6%)</strong> + <strong>400km 내구성으로 km당 ₩573</strong></li>
-    <li>대신 5는 힐 스택 -7.2mm (42.5 → 35.3mm, 실측) — 풀코스 후반 쿠션 욕심나면 4 이월 가격 더 매력적. 22만원대 카본 입문에서 둘 다 합리적</li>
+    <li>5의 진짜 변화 3가지: <strong>포크형 카본 → 힐스트라이커도 자연스러운 전환</strong> + <strong>FF Leap + FF Blast+ 듀얼 폼 (에너지 리턴 64.6%)</strong> + <strong>400km 내구성으로 km당 ₩523</strong></li>
+    <li>대신 5는 힐 스택 -7.2mm (42.5 → 35.3mm, 실측) — 풀코스 후반 쿠션 욕심나면 4 이월 가격 더 매력적. 20만원 안팎 카본 입문에서 둘 다 합리적</li>
   </ul>
 </div>
 
@@ -3461,8 +3461,8 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>199,000원</td><td><strong>229,000원</strong></td><td>+30,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>165,000~185,000원</strong></td><td>210,000~220,000원</td><td>실제 차이 ~3~4만원</td></tr>
+    <tr><td><strong>MSRP</strong></td><td>199,000원</td><td><strong>209,000원</strong></td><td>+10,000원</td></tr>
+    <tr><td><strong>이월/세일가</strong></td><td><strong>165,000~185,000원</strong></td><td>정가 209,000원 (신상)</td><td>실제 차이 ~2~4만원</td></tr>
     <tr><td><strong>무게 (US M9)</strong></td><td>237g</td><td><strong>201g</strong></td><td><strong>-36g (-15%)</strong></td></tr>
     <tr><td><strong>힐 스택</strong></td><td>42.5mm</td><td>35.3mm</td><td>-7.2mm</td></tr>
     <tr><td><strong>전족부 스택</strong></td><td>32.9mm</td><td>26.6mm</td><td>-6.3mm</td></tr>
@@ -3473,7 +3473,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td><strong>토박스</strong></td><td>표준</td><td>표준</td><td>동일</td></tr>
     <tr><td><strong>한국 와이드 SKU</strong></td><td>없음</td><td>2E 있음</td><td>5만 ✅</td></tr>
     <tr><td><strong>내구성</strong></td><td>350km</td><td>400km</td><td>+50km</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 ₩628</td><td><strong>약 ₩573</strong></td><td><strong>-₩55 개선</strong></td></tr>
+    <tr><td><strong>km당 비용</strong></td><td>약 ₩569</td><td><strong>약 ₩523</strong></td><td><strong>-₩46 개선</strong></td></tr>
     <tr><td><strong>최적 페이스</strong></td><td>3:30~5:00/km</td><td>3:30~5:00/km</td><td>동일</td></tr>
   </tbody>
 </table>
@@ -3505,9 +3505,9 @@ export const posts_2026_05: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">2026 5~12월 매직스피드 가격 전망</p>
     <ul>
-      <li><strong>지금 (2026 5월):</strong> 4 17~19만원 (이월 풀림) / 5 22만원 정가 → 가성비는 4 압승, 신상은 5</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 4 16~17만원 / 5 21~22만원 일부 할인 시작 → 4 가성비 정점</li>
-      <li><strong>가을 시즌인 (9~10월):</strong> 4 17~18만원 (재고 빠지기 시작) / 5 22만원 안정 → 4 사이즈 빠짐 주의</li>
+      <li><strong>지금 (2026 5월):</strong> 4 17~19만원 (이월 풀림) / 5 20만 9천원 정가 → 가성비는 4 압승, 신상은 5</li>
+      <li><strong>여름 시즌오프 (7~8월):</strong> 4 16~17만원 / 5 정가 20만 9천원에서 일부 할인 시작 → 4 가성비 정점</li>
+      <li><strong>가을 시즌인 (9~10월):</strong> 4 17~18만원 (재고 빠지기 시작) / 5 정가 20만 9천원 안정 → 4 사이즈 빠짐 주의</li>
       <li><strong>블랙프라이데이 (11월):</strong> 4 13~15만원 (특가) / 5 18~20만원 → 양쪽 모두 매력적</li>
       <li><strong>12월~2027년 1월:</strong> 4 사실상 단종 임박 / 5 18~20만원 안정 → 5 위주로 흐름 전환</li>
     </ul>
@@ -3522,10 +3522,10 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>첫 카본 슈즈 + 힐스트라이커</td><td><strong>5 (정가 또는 세일)</strong></td><td>포크형 카본이 자연스러운 전환 도와줌</td></tr>
-    <tr><td>가성비 우선 + 풀렝스 카본 선호</td><td><strong>4 이월 17~19만원</strong></td><td>3~4만원 절약 + 풀렝스 추진력</td></tr>
+    <tr><td>가성비 우선 + 풀렝스 카본 선호</td><td><strong>4 이월 17~19만원</strong></td><td>2~4만원 절약 + 풀렝스 추진력</td></tr>
     <tr><td>인터벌·하프 PB 도전</td><td>5</td><td>-36g 경량이 후반부 결정적</td></tr>
     <tr><td>풀코스 30~35km까지 카본 사용</td><td>4</td><td>42.5mm 힐 스택(실측)이 후반 쿠션 우위</td></tr>
-    <tr><td>대회 + 템포 훈련 병용</td><td>5</td><td>400km 내구성 + km당 ₩573 가성비</td></tr>
+    <tr><td>대회 + 템포 훈련 병용</td><td>5</td><td>400km 내구성 + km당 ₩523 가성비</td></tr>
     <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>4는 와이드 ❌, 5는 2E까지 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a></td></tr>
     <tr><td>예산 18만원 이하</td><td>4 블프 세일</td><td>13~15만원대 진입 가능, 카본 입문 끝장 가성비</td></tr>
   </tbody>
@@ -3535,9 +3535,9 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> (238g, 21.9만원)</strong> — 5와 비슷한 무게대. 카본이 아닌 나일론 플레이트라 부담 적음. 카본 vs 나일론 차이가 결정 포인트</li>
-  <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (250g, 21만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
-  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 33만원)</strong> — 진짜 엘리트 카본. 가격 +10만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
-  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (215g, 29만원)</strong> — 풀카본 + PWRTRAC. 평발 친절(토박스는 69.3mm로 좁은 편). 매직스피드보다 무게 ↑ 가격 ↑</li>
+  <li><strong><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> (248g, 20.9만원)</strong> — 풀렝스 카본 + ZoomX 폼. 4의 직접 대안. 폼 차이로 더 부드러움</li>
+  <li><strong><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (205g, 32.9만원)</strong> — 진짜 엘리트 카본. 매직스피드 5보다 가격 +12만원 + 250km 짧은 내구성. <strong>레이스 전용 비싸짐</strong></li>
+  <li><strong><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (215g, 29.9만원)</strong> — 풀카본 + PWRTRAC. 평발 친절(토박스는 69.3mm로 좁은 편). 매직스피드보다 무게 ↑ 가격 ↑</li>
 </ul>
 
 <h2>FAQ</h2>
@@ -3563,8 +3563,8 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">무게·전환 부드러움 vs 풀렝스 추진력·가성비로 명확히 갈리는 선택</p>
-    <p><strong>첫 카본 슈즈 + 힐스트라이커</strong>라면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 정가 22만원 또는 7~8월 21만원대 진입 시. 포크형 카본 + 201g(실측) 경량 + FF Leap 듀얼 폼은 카본 입문에 가장 친절한 조합입니다.</p>
-    <p><strong>풀렝스 카본 추진력 + 가성비 우선</strong>이라면 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 이월 17~19만원. 5보다 3~4만원 절약 + 42.5mm(실측) 힐 스택의 풀코스 후반 쿠션 + 풀렝스 카본의 직진성. 블프 13~15만원까지 갈 가능성 있지만 사이즈 빠짐 주의.</p>
+    <p><strong>첫 카본 슈즈 + 힐스트라이커</strong>라면 <a href="/shoes/asics-magic-speed-5">매직스피드 5</a> 정가 20만 9천원 또는 7~8월 할인 시. 포크형 카본 + 201g(실측) 경량 + FF Leap 듀얼 폼은 카본 입문에 가장 친절한 조합입니다.</p>
+    <p><strong>풀렝스 카본 추진력 + 가성비 우선</strong>이라면 <a href="/shoes/asics-magic-speed-4">매직스피드 4</a> 이월 17~19만원. 5보다 2~4만원 절약 + 42.5mm(실측) 힐 스택의 풀코스 후반 쿠션 + 풀렝스 카본의 직진성. 블프 13~15만원까지 갈 가능성 있지만 사이즈 빠짐 주의.</p>
     <p><strong>발볼 4E급 한국 러너</strong>는 둘 다 적합하지 않습니다. 4는 와이드 옵션이 없고 5도 2E까지라 토박스 압박 가능. <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+ 와이드</a>도 선택지입니다.</p>
   </div>
 </div>
@@ -3850,7 +3850,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>OK. 특히 v3는 풀코스 페이스 훈련 + 레이스 둘 다 가능. <strong>Sub-3:30 ~ Sub-4 풀코스 완주 우선이면 슈퍼블라스트 3가 카본보다 안전</strong>. 단 Sub-3 도전이면 카본 슈즈(베이퍼/알파/엔돌핀 프로)가 유리.</p>
 
 <h3>Q. 매직 스피드 5와 비교하면?</h3>
-<p>매직 스피드 5는 <a href="/shoes/asics-magic-speed-5">카본 플레이트 + 데일리 가능 = 가성비 카본</a> 카테고리. 슈퍼블라스트는 <strong>카본 없는 슈퍼폼</strong>. <strong>카본 추진력 원하면 매직 스피드 5, 부드러운 라이드 + 내구성 원하면 슈퍼블라스트</strong>. 가격 매직 5(20만)이 슈블 3(26만)보다 6만원 저렴.</p>
+<p>매직 스피드 5는 <a href="/shoes/asics-magic-speed-5">카본 플레이트 + 데일리 가능 = 가성비 카본</a> 카테고리. 슈퍼블라스트는 <strong>카본 없는 슈퍼폼</strong>. <strong>카본 추진력 원하면 매직 스피드 5, 부드러운 라이드 + 내구성 원하면 슈퍼블라스트</strong>. 가격은 매직 5(20만 9천원)가 슈블 3(25만 9천원)보다 5만원 저렴.</p>
 
 <h3>Q. 데일리 5~10km에 슈퍼블라스트 오버스펙 아닌가요?</h3>
 <p>약간 오버스펙이지만 <strong>500~550km 내구성 + km당 470~520원 가성비</strong>로 합리적. 다만 회복 조깅·이지런만 한다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a> 같은 일반 데일리 트레이너가 더 적합. 슈블은 페이스 살짝 올리는 훈련에서 진가.</p>
@@ -3861,10 +3861,10 @@ export const posts_2026_05: BlogPost[] = [
 <h2>비슷한 가격대 슈퍼트레이너 대안</h2>
 
 <ul>
-  <li><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> — 22만원, 나일론 플레이트, 페이스 트레이닝 강점</li>
-  <li><a href="/shoes/saucony-endorphin-azura">사우코니 엔돌핀 아주라</a> — 19만원, PWRRUN PB, 플레이트 없는 가성비</li>
-  <li><a href="/shoes/asics-magic-speed-5">아식스 매직 스피드 5</a> — 20만원, 카본 + 데일리, 가성비 카본 트레이닝</li>
-  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — 22만원, ZoomX 풀렝스</li>
+  <li><a href="/shoes/saucony-endorphin-speed-5">사우코니 엔돌핀 스피드 5</a> — 21만 9천원, 나일론 플레이트, 페이스 트레이닝 강점</li>
+  <li><a href="/shoes/saucony-endorphin-azura">사우코니 엔돌핀 아주라</a> — 18만 9천원, PWRRUN PB, 플레이트 없는 가성비</li>
+  <li><a href="/shoes/asics-magic-speed-5">아식스 매직 스피드 5</a> — 20만 9천원, 카본 + 데일리, 가성비 카본 트레이닝</li>
+  <li><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a> — 21만 9천원, ZoomX 풀렝스</li>
 </ul>
 
 <h2>결론 — 내 추천</h2>
@@ -3999,11 +3999,11 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a></td><td>22~24만원 (이월)</td><td>220g</td><td>71.7%</td><td>72.5mm (표준)</td><td>가성비 카본 최강</td></tr>
-    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만원</td><td>215g</td><td>72.8%</td><td><strong>69.3mm (좁은 편)</strong></td><td>경량화 + 슬롯 카본</td></tr>
-    <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만원</td><td><strong>166g</strong></td><td><strong>힐 78%·앞발 75%</strong></td><td>표준(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
+    <tr><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a></td><td>29만 9천원</td><td>215g</td><td>72.8%</td><td><strong>69.3mm (좁은 편)</strong></td><td>경량화 + 슬롯 카본</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></td><td>30만 9천원</td><td><strong>166g</strong></td><td><strong>힐 78%·앞발 75%</strong></td><td>표준(73.2mm)</td><td>가벼움·반응성 최강</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3">알파플라이 3</a></td><td>33만 9천원</td><td>201g</td><td>힐 74.9%·앞발 73.9%</td><td>넓음(75.3mm)</td><td>풀코스 후반 보호</td></tr>
-    <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>32만원</td><td>205g</td><td>72%+</td><td>표준</td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
-    <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만원</td><td>215g</td><td>72%+</td><td><strong>76mm (넓음)</strong></td><td>발볼 4E급 유일 선택</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>29만 9천원</td><td>200g</td><td>72%+</td><td><strong>69.5mm (좁음)</strong></td><td>에너지로드 + 라이트스트라이크 프로</td></tr>
+    <tr><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td><td>32만 9천원</td><td>205g</td><td>72%+</td><td>실측 없음 (RunRepeat "pretty snug" 핏)</td><td>와이드 옵션 표기 (한국 공식몰 미확인)</td></tr>
   </tbody>
 </table>
 
@@ -4076,10 +4076,10 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>무릎 통증 이력</td><td><strong>엔돌핀 프로 5</strong></td><td>브랜드 공식 39.5mm 스택(실측 힐 36.5mm) + 듀얼 폼 충격 흡수</td></tr>
-    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (공식 8mm 드롭, 실측 v4 9.5mm·v5 8.7mm)</td><td>9mm 드롭의 베이퍼·알파보다는 OK</td></tr>
+    <tr><td>아킬레스건염 이력</td><td>둘 다 주의 (공식 8mm 드롭, 실측 v4 9.5mm·v5 8.7mm)</td><td>실측 드롭은 베이퍼플라이 4(8.6mm)·알파플라이 3(8.5mm)와 같거나 더 높음 — 드롭으로 얻는 이점 없음</td></tr>
     <tr><td>족저근막염</td><td>v4 (good) > v5 (caution)</td><td>v4 경도 35.1 AC(RunRepeat 실측, 평균 수준) — v5(33.3 AC)와 경도 차이는 작음</td></tr>
     <tr><td>평발 + 가벼운 과내전</td><td>둘 다 주의 (안정성 5/10)</td><td>심하면 안정화 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (76mm)</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (와이드 옵션 표기)</td></tr>
     <tr><td>슈퍼슈즈 첫 도전 + 부상 우려</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트 안정감 (토박스는 좁은 편)</td></tr>
     <tr><td>좌우 비대칭 (러닝 폼)</td><td><strong>엔돌핀 프로 5</strong></td><td>슬롯 플레이트가 발 모양 적응</td></tr>
     <tr><td>젖은 노면 풀코스</td><td><strong>엔돌핀 프로 5</strong></td><td>PWRTRAC 그립력 결정적</td></tr>
@@ -4091,11 +4091,11 @@ export const posts_2026_05: BlogPost[] = [
 <h2>비슷한 가격대 카본 슈즈 대안</h2>
 
 <ul>
-  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 30만원, 166g 압도적 가벼움 + 힐 78%·앞발 75% 에너지 리턴</li>
+  <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 30만 9천원, 166g 압도적 가벼움 + 힐 78%·앞발 75% 에너지 리턴</li>
   <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 33만 9천원, Air Pods + 38mm 스택 풀코스 후반 보호</li>
-  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 32만원, 라이트스트라이크 프로 + 에너지로드</li>
-  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 32만원, 토박스 76mm 발볼 친화</li>
-  <li><a href="/shoes/saucony-endorphin-elite-2">사우코니 엔돌핀 엘리트 2</a> — 33만원, IncrediRUN 폼 80.6% 에너지 리턴(최강)</li>
+  <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — 29만 9천원, 라이트스트라이크 프로 + 에너지로드</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 32만 9천원, 토박스 실측 없음(RunRepeat "pretty snug, one-to-one fit")</li>
+  <li><a href="/shoes/saucony-endorphin-elite-2">사우코니 엔돌핀 엘리트 2</a> — 33만 9천원, IncrediRUN 폼 80.6% 에너지 리턴(최강)</li>
 </ul>
 
 <h2>FAQ</h2>
@@ -4241,7 +4241,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>4:00~4:15/km (Sub-3 도전)</td><td>2:50~3:00</td><td><strong>알파플라이 3</strong></td><td>35km 이후 Air Pods + 38mm 스택 후반 보호 결정적</td></tr>
     <tr><td>4:15~4:30/km (Sub-3:10)</td><td>3:00~3:10</td><td>알파 ≈ 베이퍼 (취향)</td><td>알파의 안정감 vs 베이퍼의 가벼움 — 시착 결정</td></tr>
     <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:10~3:20</td><td><strong>베이퍼플라이 4</strong></td><td>알파의 후반 보호 효과 ↓, 베이퍼 가벼움이 더 유리</td></tr>
-    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 + 힐 78% 에너지 리턴, 5만원 절약 합리적</td></tr>
+    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 + 힐 78% 에너지 리턴, 3만원 절약 합리적</td></tr>
     <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>베이퍼 또는 슈퍼 트레이너</td><td>카본 슈즈 효과는 있으나 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>도 검토</td></tr>
     <tr><td>5:30/km 이상 (Sub-4 이상)</td><td>3:50~</td><td><strong>슈퍼 트레이너</strong></td><td>카본 슈즈 효과 ↓, 부상 위험만 ↑. 슈퍼블라스트·매직 스피드로</td></tr>
   </tbody>
@@ -4263,7 +4263,7 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>Sub-3 도전 + 풀코스 후반 다리 무거움 이력</td><td><strong>알파플라이 3</strong></td><td>Air Pods + 38mm 스택 결정적</td></tr>
-    <tr><td>Sub-3:10 ~ Sub-3:30 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 + 힐 78% 에너지 리턴 + 5만원 절약</td></tr>
+    <tr><td>Sub-3:10 ~ Sub-3:30 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 + 힐 78% 에너지 리턴 + 3만원 절약</td></tr>
     <tr><td>Sub-3:30 ~ Sub-4 도전</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 우위, 알파 효과 한계</td></tr>
     <tr><td>하프마라톤 PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>21km는 알파의 후반 보호 의미 적음</td></tr>
     <tr><td>10K PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 절대 우위, 알파는 과스펙</td></tr>
@@ -4312,7 +4312,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>아킬레스건염 이력</td><td><strong>베이퍼플라이 4</strong></td><td>166g 부담 ↓, 9mm 드롭 동일</td></tr>
     <tr><td>족저근막염</td><td>둘 다 주의 (caution)</td><td>훈련 누적 시 재발 위험, 대회 전용으로만</td></tr>
     <tr><td>평발 + 과내전</td><td>둘 다 비추 (poor)</td><td>안정성 6/10 — 안정화 분리 필수</td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> 76mm 토박스</td></tr>
+    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (와이드 옵션 표기, 토박스 실측 없음)</td></tr>
     <tr><td>좌우 비대칭 큼 (러닝 폼)</td><td>알파 단독 비추</td><td>Air Pods 좌우 흔들림 ↑</td></tr>
     <tr><td>풀코스 후반 다리 죽음 패턴</td><td><strong>알파플라이 3</strong></td><td>Air Pods 후반 보호 결정적</td></tr>
     <tr><td>레이스 페이스 유지 어려움</td><td><strong>베이퍼플라이 4</strong></td><td>힐 78% 에너지 리턴 가속·유지</td></tr>
@@ -4326,16 +4326,16 @@ export const posts_2026_05: BlogPost[] = [
 <p>나이키 외 카본 슈퍼슈즈도 풀코스 신발 결정 시 검토 가치:</p>
 
 <ul>
-  <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 35만원, 라이트스트라이크 프로 + 에너지로드. 베이퍼·알파의 핵심 대안</li>
-  <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a> — 32만원, PWRRUN HG 폼. 가성비 강함</li>
-  <li><a href="/shoes/asics-metaspeed-sky-plus">Asics Metaspeed Sky+</a> — 32만원, FF Blast Turbo. <strong>토박스 76mm로 발볼 넓은 한국 러너 유일 선택</strong></li>
-  <li><a href="/shoes/saucony-endorphin-elite-2">Saucony Endorphin Elite 2</a> — 38만원, 사우코니 최상위 라인</li>
+  <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 29만 9천원, 라이트스트라이크 프로 + 에너지로드. 베이퍼·알파의 핵심 대안</li>
+  <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a> — 29만 9천원, PWRRUN HG 폼. 가성비 강함</li>
+  <li><a href="/shoes/asics-metaspeed-sky-plus">Asics Metaspeed Sky+</a> — 32만 9천원, FF Blast Turbo. 토박스 실측은 없고 RunRepeat는 "pretty snug, one-to-one fit"으로 평가 — 와이드 옵션 표기는 있으나 한국 공식몰 미확인</li>
+  <li><a href="/shoes/saucony-endorphin-elite-2">Saucony Endorphin Elite 2</a> — 33만 9천원, 사우코니 최상위 라인</li>
 </ul>
 
 <h2>FAQ</h2>
 
-<h3>Q. 5만원 더 주고 알파플라이 가는 게 정답인가요?</h3>
-<p>Sub-3 도전이면 알파, 아니면 베이퍼가 합리적. 단순 가격이 아니라 <strong>"5만원 + 35g 무거움 + 50km 짧은 내구성"의 패키지 비용을 감수할 가치가 있는가</strong>의 질문. 풀코스 후반 다리 죽는 패턴이 있는 Sub-3 러너만 회수 가능.</p>
+<h3>Q. 3만원 더 주고 알파플라이 가는 게 정답인가요?</h3>
+<p>Sub-3 도전이면 알파, 아니면 베이퍼가 합리적. 단순 가격이 아니라 <strong>"3만원 + 35g 무거움 + 50km 짧은 내구성"의 패키지 비용을 감수할 가치가 있는가</strong>의 질문. 풀코스 후반 다리 죽는 패턴이 있는 Sub-3 러너만 회수 가능.</p>
 
 <h3>Q. 알파플라이 4 11월 출시인데 지금 알파 3 사도 되나요?</h3>
 <p>2027년 봄 마라톤(춘마·서마) 도전이 목표라면 OK. 단 <strong>11월 이후 알파 3 가격이 30~40% 폭락 가능성</strong>이 있으니 급하지 않다면 11월~12월 사냥이 가성비. 알파 4 정식 출시 풀가는 35~40만원 추정.</p>
@@ -4350,10 +4350,10 @@ export const posts_2026_05: BlogPost[] = [
 <p>카본 슈즈는 38mm/34mm 하이스택 + 가벼운 폼 + 좁은 베이스 조합이라 <strong>좌우 안정성을 희생하고 추진력을 극대화한 구조</strong>. 과내전 러너는 미드솔이 안쪽으로 무너지면서 발목·무릎 부상 위험 ↑. 평발이라도 가벼운 정도면 OK이지만 심한 과내전은 무조건 비추.</p>
 
 <h3>Q. 발볼 넓은 한국 러너는 어떻게 하나요?</h3>
-<p>나이키 카본은 와이드 옵션이 없어 발볼 4E급은 사실상 불가. 유일 대안은 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> (토박스 76mm). 사우코니 엔돌핀 프로 5는 토박스가 69.3mm로 좁아 발볼 대안이 아닙니다. 발볼 4E급이면 나이키 카본은 깨끗이 포기.</p>
+<p>나이키 카본은 와이드 옵션이 없어 발볼 4E급은 사실상 불가. 대안 후보는 와이드 옵션 표기가 있는 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a>지만, 토박스 실측은 없고 RunRepeat는 "pretty snug" 핏으로 평가했습니다(한국 공식몰 와이드 재고 미확인). 사우코니 엔돌핀 프로 5는 토박스가 69.3mm로 좁아 발볼 대안이 아닙니다. 발볼 4E급이면 나이키 카본은 깨끗이 포기.</p>
 
 <h3>Q. 카본 슈즈 처음이면 어디서 시작하나요?</h3>
-<p><strong>슈퍼 트레이너부터</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> (24만원, 카본 없는 슈퍼 트레이너) → <a href="/shoes/asics-magic-speed-5">매직 스피드 5</a> (20만원, 카본 + 데일리) → 베이퍼플라이 4 (30만원, 풀 카본). 갑자기 알파플라이로 시작하면 부상 직행.</p>
+<p><strong>슈퍼 트레이너부터</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> (25만 9천원, 카본 없는 슈퍼 트레이너) → <a href="/shoes/asics-magic-speed-5">매직 스피드 5</a> (20만 9천원, 카본 + 데일리) → 베이퍼플라이 4 (30만 9천원, 풀 카본). 갑자기 알파플라이로 시작하면 부상 직행.</p>
 
 <h2>결론 — 내 추천</h2>
 
@@ -4361,8 +4361,8 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">90% Sub-3:30 ~ Sub-4 한국 마라토너에게는 베이퍼 4</p>
-    <p><strong>Sub-3 도전 + 풀코스 후반 다리 죽는 패턴</strong>이라면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 정가 또는 11월 가격 폭락 사냥. Air Pods + 38mm 스택은 후반 보호의 결정적 차이를 만듦. 단 5만원 + 35g + 50km 짧은 내구성 비용 감수가 필수.</p>
-    <p><strong>Sub-3:10 ~ Sub-4 풀코스 + 하프·10K PB</strong> 도전이라면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 거의 무조건 합리적. 166g 가벼움 + 힐 78% 에너지 리턴 + 250km 내구성 + 5만원 절약 — 모든 면에서 우위. 한국 마라토너 대다수가 여기 해당.</p>
+    <p><strong>Sub-3 도전 + 풀코스 후반 다리 죽는 패턴</strong>이라면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 정가 또는 11월 가격 폭락 사냥. Air Pods + 38mm 스택은 후반 보호의 결정적 차이를 만듦. 단 3만원 + 35g + 50km 짧은 내구성 비용 감수가 필수.</p>
+    <p><strong>Sub-3:10 ~ Sub-4 풀코스 + 하프·10K PB</strong> 도전이라면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 거의 무조건 합리적. 166g 가벼움 + 힐 78% 에너지 리턴 + 250km 내구성 + 3만원 절약 — 모든 면에서 우위. 한국 마라토너 대다수가 여기 해당.</p>
     <p><strong>발볼 4E급·평발·심한 과내전</strong>이라면 둘 다 깨끗이 포기. 발볼이 넓다면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(발볼 넓음), 평발이 우선이라면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(평발 대응, 단 토박스는 좁은 편)가 답.</p>
     <p><strong>알파플라이 4 매니아라면</strong> 11월 시카고 마라톤 정식 출시 대기. 알파 3는 가격 폭락 사냥용으로만.</p>
   </div>
@@ -4547,8 +4547,8 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 19만 9천원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
-  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 18만원대, 더 가볍고 부드러움. 토박스는 1080 v15 우위</li>
-  <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 22만원대, 반발력 약간 더 강함</li>
+  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 19만 9천원, 부드러움. 무게는 275g(US 9)으로 1080 v15(실측 255g·브랜드 표기 261g)보다 무거움. 토박스는 1080 v15 우위</li>
+  <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 20만 9천원, 반발력 약간 더 강함</li>
   <li><a href="/shoes/new-balance-880-v15">NB 880 v15</a> — 18만 9천원, 1080보다 한 단계 아래. 가성비 우선이면 검토</li>
 </ul>
 
@@ -4629,7 +4629,7 @@ export const posts_2026_05: BlogPost[] = [
   <ul>
     <li><strong>안정 방식 교체</strong> — 33은 4D Guidance System(카야노 30~32) 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
     <li>안정 철학이 정반대: <strong>32 = 단단한 폼으로 발 무너짐 막기</strong>, <strong>33 = 부드러운 폼이 발 모양에 맞춰 변형되며 잡기</strong></li>
-    <li>가격 차이 ~1만원(MSRP)이지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 더 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 4D Guidance로 세 세대 검증된 32가 더 안전</strong>할 수 있음</li>
+    <li>MSRP는 199,000원으로 같지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 4D Guidance로 세 세대 검증된 32가 더 안전</strong>할 수 있음</li>
   </ul>
 </div>
 
@@ -4650,11 +4650,11 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-06-01 (출시 완료)</strong></td><td>2년차 / 신상</td></tr>
     <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>199,000원</strong></td><td>동일</td></tr>
-    <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>190,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
+    <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>199,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
     <tr><td><strong>무게 (US M9)</strong></td><td>295g</td><td>298g</td><td>+3g (사실상 동일)</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
     <tr><td><strong>전족부 스택</strong></td><td>32mm</td><td>32mm</td><td>동일</td></tr>
-    <tr><td><strong>드롭</strong></td><td>10mm (공식)</td><td><strong>8mm</strong></td><td>-2mm (아킬레스 부담 ↓)</td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm (공식) · 실측 9.3mm</td><td><strong>8mm (공식) · 실측 8.5mm</strong></td><td>공식 동일 · 실측 -0.8mm</td></tr>
     <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (카야노 30~32)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>FF Blast+ ECO 단일 폼</td><td><strong>FF BLAST MAX (탑) + FF BLAST PLUS (하단) 듀얼</strong></td><td>최초 듀얼 폼</td></tr>
     <tr><td><strong>안정성 점수</strong></td><td>10/10 (검증)</td><td>9/10 (검증 부족)</td><td>-1</td></tr>
@@ -4699,8 +4699,8 @@ export const posts_2026_05: BlogPost[] = [
 <h3>2. FF BLAST MAX 도입 ✅ 쿠션 부드러움 개선</h3>
 <p>슈퍼블라스트 3·노바블라스트 5 등에서 호평 받은 FF BLAST MAX가 카야노 시리즈에 처음 도입. 32의 FF Blast+ ECO 대비 <strong>더 부드럽고 반발력도 약간 개선</strong>. "안정화인데 가볍게 통통 튀는 느낌"이 카야노 33의 정체성이 될 가능성.</p>
 
-<h3>3. 드롭 10mm → 8mm ✅ 아킬레스 부담 ↓</h3>
-<p>드롭 2mm 감소. 아킬레스건염 이력이 있는 러너에게 유리. 다만 11mm/10mm 드롭에 익숙한 러너는 종아리 부담이 약간 늘 수 있어 적응 기간 필요.</p>
+<h3>3. 드롭 8mm ↔ 공식 동일 (실측 9.3 → 8.5mm)</h3>
+<p>공식 드롭은 32·33 모두 8mm로 같습니다. 10mm에서 8mm로 내려간 건 31 → 32 때입니다(RunRepeat). 실측으로는 32 9.3mm → 33 8.5mm로 0.8mm 낮아졌을 뿐이라, 드롭만 보고 세대를 고를 이유는 없습니다. 11mm/10mm 드롭에 익숙한 러너라면 32·33 모두 종아리 부담이 약간 늘 수 있어 적응 기간이 필요합니다.</p>
 
 <h3>4. 무게 +3g (295 → 298g) ↔ 사실상 동일</h3>
 <p>거의 의미 없는 수치 변화. 안정화 카테고리에서 300g대는 표준 — 둘 다 "묵직한 안정화" 영역.</p>
@@ -4719,7 +4719,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>발볼 4E+ (X-와이드 필수)</td><td><strong>32 X-와이드 (세일)</strong></td><td>33 X-와이드 출시 미확정</td></tr>
     <tr><td>가성비 우선 + 표준~와이드 발볼</td><td><strong>32 (세일 12~14만원)</strong></td><td>33 출시 후 30~40% 세일 시점</td></tr>
     <tr><td>"안정화는 단단하다"고 느꼈던 러너</td><td><strong>33</strong></td><td>FF BLAST MAX 도입으로 쿠션 부드러움 ↑</td></tr>
-    <tr><td>아킬레스건염 이력</td><td><strong>33</strong></td><td>드롭 10→8mm 감소로 부담 ↓</td></tr>
+    <tr><td>아킬레스건염 이력</td><td>32 = 33</td><td>공식 드롭 둘 다 8mm(실측 9.3 / 8.5mm) — 드롭 차이로 고를 근거 없음</td></tr>
     <tr><td>무릎 통증 + 평발</td><td>둘 다 OK</td><td>40mm 힐 스택 동일</td></tr>
     <tr><td>32 사용 중 + 600km 이내 멀쩡</td><td><strong>32 계속</strong></td><td>업그레이드 가치 미미</td></tr>
     <tr><td>안정화 첫 도전 (가벼운 과내전)</td><td>33 (시착 후) 또는 32 (검증)</td><td>매장 시착 후 결정 권장</td></tr>
@@ -4735,8 +4735,8 @@ export const posts_2026_05: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">2026 5~12월 카야노 가격 변동 예측</p>
     <ul>
-      <li><strong>출시 직후 (지금):</strong> 33 21만원대 풀가 / 32 정가~초기 인하(직영·공식몰 17만원대 시작 가능) → 32 세일 본격화 직전, 급하지 않으면 7~8월 대기가 유리</li>
-      <li><strong>7~8월 (시즌 오프):</strong> 32 14~15만원대 / 33 20만원대 → 32 가성비 본격 시작</li>
+      <li><strong>출시 직후 (지금):</strong> 33 19만 9천원 풀가 / 32 정가~초기 인하(직영·공식몰 17만원대 시작 가능) → 32 세일 본격화 직전, 급하지 않으면 7~8월 대기가 유리</li>
+      <li><strong>7~8월 (시즌 오프):</strong> 32 14~15만원대 / 33 19만원대 → 32 가성비 본격 시작</li>
       <li><strong>11월 (블프):</strong> 32 12~13만원대 가능 / 33 18~19만원대 → 32 가성비 최강, 단 사이즈·컬러 빠진 옵션 다수</li>
       <li><strong>12월~1월:</strong> 32 재고 소진. X-와이드는 더 빨리 사라짐. 33이 사실상 유일 옵션</li>
     </ul>
@@ -4760,7 +4760,7 @@ export const posts_2026_05: BlogPost[] = [
     <tr><td>평발 + 심한 과내전</td><td><strong>32</strong></td><td>4D Guidance 강한 교정력 검증</td></tr>
     <tr><td>평발 + 가벼운 과내전</td><td>33</td><td>FLUIDSUPPORT 자연스러운 안내 + 부드러움</td></tr>
     <tr><td>무릎 통증 (러너스 니, 장경인대염)</td><td>32 = 33</td><td>40mm 힐 스택 동일</td></tr>
-    <tr><td>아킬레스건염</td><td><strong>33</strong></td><td>드롭 10→8mm 부담 ↓</td></tr>
+    <tr><td>아킬레스건염</td><td>32 = 33</td><td>공식 드롭 둘 다 8mm(실측 9.3 / 8.5mm)</td></tr>
     <tr><td>족저근막염</td><td>32 = 33</td><td>둘 다 excellent (PureGEL 또는 FLUIDSUPPORT)</td></tr>
     <tr><td>정강이 부목 (Shin Splints)</td><td>32 = 33</td><td>40mm 스택 충격 흡수</td></tr>
     <tr><td>발목 부상 이력</td><td><strong>32</strong></td><td>강한 안정화 + 안정성 10/10</td></tr>
@@ -4776,8 +4776,8 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 세 세대 검증된 4D Guidance, 평발 1순위</li>
   <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
-  <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 19만원대</li>
-  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노보다 가벼운 안정화 (295g)</li>
+  <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 18만 9천원</li>
+  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노 32와 같은 295g(RunRepeat 실측)의 안정화 — 33(298g)보다는 3g 가벼움</li>
   <li><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> — 맥시멀 쿠션 + 안정화 결합</li>
 </ul>
 
@@ -4807,7 +4807,7 @@ export const posts_2026_05: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
     <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 6월 출시 직후~블프 세일 사이에 12~14만원대로 잡는 게 합리적. 검증된 4D Guidance·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
-    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 아킬레스 부담 줄이고 싶은 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 19만원대 정가는 32와 동일하니, 신상 특유의 랩 데이터 공백을 감수하더라도 새로운 부드러운 안정성을 시도해볼 가치 ↑.</p>
+    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 6/1 출시 첫 주 매장 시착 후 결정. 19만원대 정가는 32와 동일하니, 신상 특유의 랩 데이터 공백을 감수하더라도 새로운 부드러운 안정성을 시도해볼 가치 ↑.</p>
     <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
   </div>
 </div>
@@ -4849,7 +4849,7 @@ export const posts_2026_05: BlogPost[] = [
   <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
 </ul>
 
-<p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33은 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 본 글의 수치는 카야노 32 + 공식 변경점(드롭 10→8mm, FF BLAST MAX 도입, FLUIDSUPPORT) 기반 추정. 33 실측 데이터 게시 시 본 글 업데이트 예정.</small></p>
+<p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33은 출시 직후로 RunRepeat 랩 데이터 미게시 상태이며, 본 글의 수치는 카야노 32 + 공식 변경점(FF BLAST MAX 도입, FLUIDSUPPORT) 기반 추정. 공식 드롭은 32·33 모두 8mm. 33 실측 데이터 게시 시 본 글 업데이트 예정.</small></p>
 `,
   },
   {
@@ -7533,7 +7533,7 @@ export const posts_2026_05: BlogPost[] = [
   <tbody>
     <tr><td><strong>무게</strong></td><td>295g</td><td>298g</td><td>거의 동일</td></tr>
     <tr><td><strong>힐 스택</strong></td><td>40mm</td><td>40mm</td><td>동일</td></tr>
-    <tr><td><strong>드롭</strong></td><td>10mm</td><td>8mm</td><td><strong>-2mm (더 평탄)</strong></td></tr>
+    <tr><td><strong>드롭</strong></td><td>8mm (공식)</td><td>8mm (공식)</td><td>동일 (RunRepeat 실측 9.3 → 8.5mm)</td></tr>
     <tr><td><strong>안정성 시스템</strong></td><td>4D Guidance System</td><td><strong>FLUIDSUPPORT</strong></td><td>구조 완전 교체</td></tr>
     <tr><td><strong>미드솔</strong></td><td>FF Blast Plus Eco (싱글)</td><td><strong>FF BLAST MAX + PLUS (듀얼)</strong></td><td>최상위 폼 채택</td></tr>
     <tr><td><strong>한국 정가</strong></td><td>199,000원</td><td>199,000원</td><td>동일</td></tr>
@@ -7548,7 +7548,6 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong>카야노 32까지 "안정성은 좋은데 쿠션이 좀 단단했다"는 사람</strong> — FF BLAST MAX 도입으로 정확히 그 불만이 해소됩니다</li>
   <li><strong>처음 안정화를 사는 평발·과내전 러너</strong> — 어차피 처음이면 32의 단단한 느낌도 어색할 수 있으니, 더 부드러운 33으로 시작하는 게 적응 빠름</li>
-  <li><strong>아킬레스건염·종아리 부하 줄이고 싶은 러너</strong> — 드롭 10mm → 8mm로 낮아져 발목·종아리 부하 약간 줄어듬</li>
   <li><strong>주간 50km+ 장거리 러너</strong> — 듀얼 폼 + 새 메쉬 어퍼로 장시간 착용 편의성 향상 기대</li>
 </ul>
 
@@ -8235,7 +8234,7 @@ export const posts_2026_05: BlogPost[] = [
 <p>10종 다 보면 결정이 더 어렵죠. 산초 에디터 결론은 두 가지로 압축합니다.</p>
 
 <ol>
-  <li><strong>첫 신발이고 발볼 보통이면 → <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> 229,000원.</strong> 맥스 쿠션 카테고리의 정답이고 한국 러너 후기가 가장 많아 시행착오 적음.</li>
+  <li><strong>첫 신발이고 발볼 보통이면 → <a href="/shoes/hoka-bondi-9">Hoka Bondi 9</a> 229,000원.</strong> 맥스 쿠션 카테고리의 정답 — 힐 SA 146 충격흡수에 41mm 힐 스택, 123.2mm 광폭 플랫폼(RunRepeat 실측).</li>
   <li><strong>평발 + 발볼 넓은 한국 러너면 → <a href="/shoes/asics-gel-kayano-32">Asics Gel-Kayano 32 (와이드)</a> 199,000원.</strong> 평발·과내전 + 한국인 발 모두 잡는 거의 유일한 글로벌 안정화.</li>
 </ol>
 
@@ -8561,16 +8560,15 @@ export const posts_2026_05: BlogPost[] = [
   </div>
 </div>
 
-<h2>2025년 대회 후기</h2>
+<h2>2025년 대회 돌아보기</h2>
 
-<p>2025년 서울레이스는 <strong>참가자 12,800명, 하프 9,100명 역대 최다</strong>를 기록하며 가을 도심 마라톤의 대표 주자로 자리 잡았습니다. 후기 공통점:</p>
+<p>2025년 서울레이스는 <strong>참가자 12,800명, 하프 9,100명 역대 최다</strong>를 기록하며 가을 도심 마라톤의 대표 주자로 자리 잡았습니다(12,800명은 네이트 스포츠 보도 기준). 참가 전에 알아둘 점:</p>
 
 <ul>
-  <li>"서울 도심 평지 코스 + 가을 최적 기온 = 하프 PB 잘 나온다"</li>
-  <li>"평소 차량으로만 다니던 종로·을지로·세종대로를 달리는 경험 압권"</li>
-  <li>"PUMA 협찬 티셔츠 디자인 만족도 매우 높음"</li>
-  <li>"청계천 인근 구간 도시 풍경 사진 찍기 좋음"</li>
-  <li>"하프 5분 내 마감 — 미리 준비 안 하면 진짜 못 들어감"</li>
+  <li>10월에 열리는 서울 도심 평지 하프·10K 코스</li>
+  <li>평소 차량 도로인 종로·숭례문·시청·청계천·DDP를 통제하고 달리는 도심 순환형 코스</li>
+  <li>PUMA 협찬 공식 티셔츠 + 완주 메달 제공</li>
+  <li>작년 하프는 오픈 5분 내 마감 — 결제 수단 등록 등 접수 준비를 미리 해 둘 것</li>
 </ul>
 
 <h2>접수 체크리스트</h2>
@@ -10072,16 +10070,16 @@ export const posts_2026_05: BlogPost[] = [
   </div>
 </div>
 
-<h2>2025년 대회 후기</h2>
+<h2>2025년 대회 돌아보기</h2>
 
-<p>2025년 제23회 대청호마라톤은 <strong>역대 최대 6,500명</strong>이 참가하며 성황리에 마무리됐습니다. 후기 공통점:</p>
+<p>2025년 제23회 대청호마라톤은 <strong>역대 최대 6,500명</strong>이 참가하며 성황리에 마무리됐습니다(ngonews.kr 보도). 참가 전에 알아둘 점:</p>
 
 <ul>
-  <li>"호수 풍경 + 가을 단풍 풍경 = 사진 천국, 완주 만족도 매우 높음"</li>
-  <li>"풀코스 오르막 구간 난도 높지만 도전 욕구 자극"</li>
-  <li>"청원생명쌀 4kg + 비빔밥 + 떡 = 가성비 마라톤 최상위"</li>
-  <li>"10km라도 호반 짧은 오르막 있어 평지 10km보다 약간 어려움"</li>
-  <li>"기안84 효과로 가족 단위 참가자 다수, 분위기 친근"</li>
+  <li>대청호 호수 둘레 + 청남대 통과 코스, 10월 단풍 시즌 개최</li>
+  <li>풀코스는 누적 고도 485m로 평지 대회보다 난도가 높음</li>
+  <li>완주자에게 청원생명쌀 4kg(10km 이상) + 티셔츠 + 메달, 현장에서 비빔밥·떡 제공</li>
+  <li>10km도 호수 둘레 도로라 짧은 오르막이 포함돼 완전 평지 10km보다 어려움</li>
+  <li>2023년 MBC '나 혼자 산다'에서 기안84의 풀코스 완주가 방영된 뒤 전국 인지도가 올라감</li>
 </ul>
 
 <h2>접수 체크리스트</h2>
@@ -10378,7 +10376,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>2025년 대회로 본 분위기</h2>
 
-<p>2025년 안동마라톤은 <strong>참가자 1만 명, 풀코스 우승 이건희(2:44:37) / 김은아(3:08:03)</strong>를 기록하며 역대 최고 흥행을 기록했습니다. 비가 내리는 악조건에서도 시민 응원이 성황을 이뤘고, "지옥 코스인데 또 오고 싶다"는 후기가 다수였습니다.</p>
+<p>2025년 안동마라톤은 <strong>참가자 1만 명, 풀코스 우승 이건희(2:44:37) / 김은아(3:08:03)</strong>를 기록하며 역대 최고 흥행을 기록했습니다. 비가 내리는 악조건에서도 시민 응원이 성황을 이뤘습니다.</p>
 
 <div class="callout info">
   <span class="callout-icon">📊</span>
@@ -10673,13 +10671,12 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>2025년 대회로 본 분위기</h2>
 
-<p>2025년 공주백제마라톤은 <strong>참가자 약 1만 명</strong>이 모여 "공주의 가을을 달렸다"는 보도가 나왔습니다. 참가자 후기 공통점:</p>
+<p>2025년 공주백제마라톤에는 <strong>참가자 약 1만 명</strong>이 모였습니다. 참가 전에 알아둘 점:</p>
 
 <ul>
-  <li>"평지 코스라 PB 욕심 안 부리고 안전하게 풀 완주" — 입문자 다수</li>
-  <li>"백제 사적 코스 + 가을 단풍, 관광 겸 마라톤으로 최고" — 가족 단위</li>
-  <li>"교통통제 구간이 짧아 보급 포인트 사이 거리가 좀 멀게 느껴짐" — 경험자 의견</li>
-  <li>"대회 후 공주 한옥마을·공산성 관광 일정으로 잡으면 1박 2일 일정 완성" — 지역 추천</li>
+  <li>금강변 백제큰길 왕복 평지 코스에 풀코스 제한시간 5시간 — 첫 풀코스 완주를 노리기 좋은 조건</li>
+  <li>유네스코 세계문화유산 공산성·무령왕릉 인근을 지나 관광을 겸하기 좋음</li>
+  <li>대회 후 공주 한옥마을·공산성 관광 일정을 붙이면 1박 2일 일정 완성</li>
 </ul>
 
 <h2>접수 체크리스트</h2>
@@ -10723,8 +10720,8 @@ export const posts_2026_05: BlogPost[] = [
         answer: 'RunRepeat 실측 기준 토박스 너비는 72.3mm로 41(72.9mm)과 거의 동일합니다. 나이키의 "토박스 확대" 마케팅과 달리 실측은 미세하게 좁아졌습니다. 발볼 4E급이라면 한국 나이키 공식몰에 정식 출시된 와이드 SKU(남성·여성 동일 169,000원)를 선택하세요. 41까지는 와이드를 찾기 어려웠던 게 진짜 불편이었는데, 42부터는 표준 가격으로 풀린 게 가장 큰 한국 러너 친화 변화입니다.',
       },
       {
-        question: '169,000원에 같은 가격대 노바블라스트 5나 클리프턴 10 중 뭘 골라야 하나요?',
-        answer: '용도별로 갈립니다. ① 무릎 보호·아스팔트 충격 완화 → 페가수스 42 (36mm 하이스택 + Air Zoom 안정감), ② 가벼운 반발감·통통 튀는 라이드 → 노바블라스트 5 (FF Blast Max 폼), ③ 맥시멀 쿠션 + 모자이드 락커 → 클리프턴 10. 한국 발볼 친화도는 페가수스 42(와이드 정식)가 가장 좋고, 가성비는 셋 다 비슷합니다. 데일리 입문 1켤레면 페가수스 42가 무난합니다.',
+        question: '169,000원 페가수스 42와 노바블라스트 5(같은 가격)·클리프턴 10(199,000원) 중 뭘 골라야 하나요?',
+        answer: '용도별로 갈립니다. ① 무릎 보호·아스팔트 충격 완화 → 페가수스 42 (36mm 하이스택 + Air Zoom 안정감), ② 가벼운 반발감·통통 튀는 라이드 → 노바블라스트 5 (FF Blast Max 폼), ③ 맥시멀 쿠션 + 모자이드 락커 → 클리프턴 10. 한국 발볼 친화도는 페가수스 42(와이드 정식)가 가장 좋고, 가격은 페가수스 42·노바블라스트 5가 169,000원으로 같고 클리프턴 10이 3만원 비쌉니다. 데일리 입문 1켤레면 페가수스 42가 무난합니다.',
       },
       {
         question: '페가수스 42로 하프마라톤 뛸 수 있나요?',
@@ -10923,7 +10920,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>36mm 힐 스택 = 무릎 보호 효과 분석</h2>
 
-<p>실측 36mm 힐 스택은 <strong>모더레이트~맥시멀 사이</strong>의 쿠셔닝입니다. 클리프턴 10(40mm), 노바블라스트 5(41.5mm)보다는 낮지만, <a href="/shoes/new-balance-880-v15">880 v15</a>(35mm)와 비슷한 수준입니다.</p>
+<p>실측 36mm 힐 스택은 <strong>모더레이트~맥시멀 사이</strong>의 쿠셔닝입니다. 클리프턴 10(44mm), 노바블라스트 5(41.5mm)보다는 낮지만, <a href="/shoes/new-balance-880-v15">880 v15</a>(35mm)와 비슷한 수준입니다.</p>
 
 <p>한국 한강·남산·한적한 시내 러닝 코스의 특성을 고려하면:</p>
 
@@ -10943,7 +10940,7 @@ export const posts_2026_05: BlogPost[] = [
 
 <h2>169,000원 가성비 — 같은 가격대 비교</h2>
 
-<p>16만원대 한국 입문 데일리 트레이너 시장은 2026년 들어 가장 경쟁이 치열한 구간입니다. 페가수스 42, 노바블라스트 5, 클리프턴 10이 사실상 동일한 169,000원에 출시됐습니다.</p>
+<p>16만원대 한국 입문 데일리 트레이너 시장은 2026년 들어 가장 경쟁이 치열한 구간입니다. 페가수스 42와 노바블라스트 5가 같은 169,000원이고, 클리프턴 10은 3만원 비싼 199,000원입니다.</p>
 
 <table>
   <thead>
@@ -10961,16 +10958,16 @@ export const posts_2026_05: BlogPost[] = [
     <tr>
       <td><a href="/shoes/asics-novablast-5">노바블라스트 5</a></td>
       <td>169,000원</td>
-      <td>262g</td>
+      <td>254g</td>
       <td>41.5mm</td>
       <td>FF Blast Max, 통통 튀는 반발</td>
       <td>표준 ⚠️</td>
     </tr>
     <tr>
       <td><a href="/shoes/hoka-clifton-10">클리프턴 10</a></td>
-      <td>169,000원</td>
+      <td>199,000원</td>
       <td>275g</td>
-      <td>40mm</td>
+      <td>44mm</td>
       <td>맥시멀 쿠션, 모자이드 락커</td>
       <td>표준 ⚠️</td>
     </tr>
@@ -10981,11 +10978,11 @@ export const posts_2026_05: BlogPost[] = [
 
 <ul>
   <li><strong>발볼 넓고 안정감 우선</strong> → 페가수스 42 (와이드 정식 + 풀 렝스 Air Zoom)</li>
-  <li><strong>가벼운 반발감 + 통통 튀는 라이드</strong> → 노바블라스트 5 (24g 더 가볍고 41.5mm 맥시멀)</li>
+  <li><strong>가벼운 반발감 + 통통 튀는 라이드</strong> → 노바블라스트 5 (32g 더 가볍고 41.5mm 맥시멀, 무게는 둘 다 RunRepeat 실측)</li>
   <li><strong>맥시멀 쿠션 + 부드러운 전환</strong> → 클리프턴 10 (모자이드 락커 지오메트리)</li>
 </ul>
 
-<p>가성비 자체는 셋 다 비슷하지만, <strong>한국 러너 평균 발볼(D~2E)을 고려하면 페가수스 42의 와이드 SKU 정식 출시가 결정적인 가산점</strong>입니다.</p>
+<p>가격은 페가수스 42·노바블라스트 5가 같고 클리프턴 10이 3만원 비싸지만, <strong>한국 러너 평균 발볼(D~2E)을 고려하면 페가수스 42의 와이드 SKU 정식 출시가 결정적인 가산점</strong>입니다.</p>
 
 <p><strong>한 단계 위 — 20만원대 맥스쿠션과 비교</strong>하고 싶다면 <a href="/blog/pegasus-42-vs-nimbus-28-daily-cushion-2026">페가수스 42 vs 젤 님버스 28</a>을 참고하세요. 무릎 보호·장거리 리커버리에 힐 39.5mm(실측) 맥시멀 쿠션이 정말 필요한지 갈립니다. 참고로 페가 42는 어퍼 통기성이 표준 수준이라 한여름 무더위엔 다소 덥습니다 — 통기성을 우선한다면 <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>도 함께 검토하세요.</p>
 
