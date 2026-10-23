@@ -492,10 +492,10 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   'nike-pegasus-42-review': {
     data: '286g · 힐 스택 36mm · SA 131',
   },
-  // 출처: posts/2026-05.ts 본문 — 드롭 4-6mm(line 7003), 2026년 11월 시카고 마라톤 직전 예상(line 7009),
-  // 글로벌 정가 $285~330 예상(line 7010).
+  // 2026-10-23: 5월 예측값(드롭 4-6mm·$285~330)을 확정값으로 교체. 출처 nike-alphafly-4.ts —
+  // 188g·드롭 8mm(남성 US 8.5, 나이키 공식)·미국 $280·한국 349,000원(나이키 코리아 '출시 예정', 10/23 확인)
   '2026-nike-alphafly-4-prototype': {
-    data: '드롭 4-6mm · 11월 시카고 직전 · $285~330',
+    data: '188g(US 8.5) · 드롭 8mm · 미국 $280 — 나이키 공식',
   },
   // '2026-mudo-run-gyeongju' 는 의도적으로 미등록 — 본문이 "종목·참가비·접수 일정·접수처
   // 모두 미발표"라고 명시한다(posts/2026-07.ts line 2603). 검증 가능한 수치가 없어 data 를
