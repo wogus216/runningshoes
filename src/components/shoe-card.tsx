@@ -9,6 +9,7 @@ import type { GridShoe } from "@/lib/data/shoes";
 import { AddToCompareButton } from "@/components/compare/add-to-compare-button";
 import { SaveButton } from "@/components/saved/save-button";
 import { img } from "@/lib/image";
+import { formatWon } from '@/lib/format';
 
 type ShoeCardProps = {
   shoe: GridShoe;
@@ -253,7 +254,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
 
         <div className="mt-auto flex items-center justify-between border-t border-dashed border-border pt-3">
           <span className="font-mono text-base font-bold tabular-nums text-primary md:text-lg">
-            ₩{shoe.price?.toLocaleString()}
+            {formatWon(shoe.price)}
           </span>
           <span className="flex items-center gap-1 font-mono text-xs font-semibold tabular-nums text-secondary">
             <span aria-hidden="true" className="text-accent">★</span>

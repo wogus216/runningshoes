@@ -13,7 +13,8 @@ export const shoe: Shoe = {
   category: '입문화',
   rating: 4,
   status: 'new',
-  price: 95000,
+  // 국내 정가 없음(한국 미정식출시) — 병행가를 price·msrp 에 넣으면 '95,000원 러닝화'·구조화 데이터 가격으로 정가처럼 나간다.
+  // 실거래가는 priceAnalysis.streetPrice, 직구가 범위는 detailedSpecs.price 에 둔다(2026-10-23 점검).
   description:
     '흔히 "적토끼"로 불리는 적토마 9 라인 중 가장 저렴한 무플레이트 입문 트레이너입니다. 단층 폼의 소프트한 쿠션과 전족 와이드 설계가 강점입니다.',
   oneliner: '10만 원 미만 입문 적토마 — 발볼 넓은 한국 러너를 위한 가성비 베이스',
@@ -79,16 +80,14 @@ export const shoe: Shoe = {
   ],
 
   priceAnalysis: {
-    msrp: 95000,
     streetPrice: 75000,
-    costPerKm: 158,
     valueRating: 9,
     priceTier: 'budget',
     alternatives: ['hoka-clifton-10', 'brooks-ghost-17', 'saucony-ride-19'],
     valueAdvantages: [
       'CNY 399 정가 — 직구 시 10만 원 미만 (프로모션 시 더 저렴)',
       '입문 메이저 브랜드(15만~18만)의 절반 값',
-      'TUFF RB 아웃솔 내구성으로 km당 약 158원 수준',
+      'TUFF RB 아웃솔 내구성으로 직구 실거래가 기준 km당 약 125~158원 수준',
     ],
   },
 
@@ -103,7 +102,7 @@ export const shoe: Shoe = {
     width: '전족 와이드 설계 표기(mm 미확인) — 적토마 9 라인 중 발볼 여유 가장 큼',
     durability: '약 600km (TUFF RB 아웃솔)',
     price: '직구 7만~10만 원대 (CNY 399 정가, 프로모션 CNY 140~200) · 한국 미정식출시',
-    costPerKm: '약 ₩158/km (600km 기준)',
+    costPerKm: '국내 정가 없음 — 직구 실거래가 기준 약 ₩125~158/km(600km 가정)',
     footType: '중립~넓은 발. 입문·통근·체력검정 겸용',
     landingPattern: '힐~미드풋. 이지 페이스 입문',
   },
@@ -123,7 +122,7 @@ export const shoe: Shoe = {
   ],
 
   editorComment:
-    '2026년 1월 적토마 9 가족(Ultra·PRO·베이스) 동시 출시 중 베이스 모델입니다. 신상 + 비주류 브랜드라 RunRepeat 등 독립 랩 데이터가 없고, 무게(약 320g/CN40)·드롭(9mm)은 识货 커뮤니티 실측, 스택 수치는 공식 미공개라 드롭 기반 추정치입니다(detailedSpecs에 추정 표기). 9 Ultra(유리섬유 플레이트 맥스쿠션)·9 PRO(TPU 데일리)와 달리 베이스는 단층 폼 무플레이트 입문 트레이너이며, 전족 와이드 설계로 발볼 넓은 러너 적합성이 형제 모델보다 높습니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 전족 와이드 설계라 적토마 9 시리즈 중 발볼 넓은 러너에게 가장 잘 맞습니다. 병행가 95,000원에 내구성 600km 기준 km당 약 158원으로, 입문화 중 압도적 가성비입니다. 정식 유통·AS를 원하면 클리프턴 10이나 880 V15가 비슷한 입문 쿠션화 대안입니다.',
+    '2026년 1월 적토마 9 가족(Ultra·PRO·베이스) 동시 출시 중 베이스 모델입니다. 신상 + 비주류 브랜드라 RunRepeat 등 독립 랩 데이터가 없고, 무게(약 320g/CN40)·드롭(9mm)은 识货 커뮤니티 실측, 스택 수치는 공식 미공개라 드롭 기반 추정치입니다(detailedSpecs에 추정 표기). 9 Ultra(유리섬유 플레이트 맥스쿠션)·9 PRO(TPU 데일리)와 달리 베이스는 단층 폼 무플레이트 입문 트레이너이며, 전족 와이드 설계로 발볼 넓은 러너 적합성이 형제 모델보다 높습니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 전족 와이드 설계라 적토마 9 시리즈 중 발볼 넓은 러너에게 가장 잘 맞습니다. 병행가 95,000원에 예상 수명 500~700km(추정) 기준 km당 약 140~190원으로, 입문화 중 압도적 가성비입니다. 정식 유통·AS를 원하면 클리프턴 10이나 880 V15가 비슷한 입문 쿠션화 대안입니다.',
 
   similarShoes: ['li-ning-red-hare-9-pro', 'hoka-clifton-10', 'new-balance-880-v15'],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xQJkGrY4' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YHN5MIhg' }],

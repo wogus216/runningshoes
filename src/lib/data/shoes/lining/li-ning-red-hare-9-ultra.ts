@@ -16,7 +16,8 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 4.5,
   status: 'new',
-  price: 150000,
+  // 국내 정가 없음(한국 미정식출시) — 병행가를 price·msrp 에 넣으면 '95,000원 러닝화'·구조화 데이터 가격으로 정가처럼 나간다.
+  // 실거래가는 priceAnalysis.streetPrice, 직구가 범위는 detailedSpecs.price 에 둔다(2026-10-23 점검).
   description:
     '흔히 "적토끼 9 울트라"로 불리는 모델. 유리섬유 플레이트와 PEBA 3중 미드솔을 10만 원대에 담은 라이닝의 화제의 맥스쿠션 슈퍼트레이너입니다.',
   oneliner: '10만 원대 PEBA 맥스쿠션 — "카본"은 아니지만 가성비 슈퍼트레이너의 진짜 강자',
@@ -81,9 +82,7 @@ export const shoe: Shoe = {
   ],
 
   priceAnalysis: {
-    msrp: 150000,
     streetPrice: 130000,
-    costPerKm: 273,
     valueRating: 9,
     priceTier: 'mid',
     alternatives: ['asics-superblast-3', 'asics-megablast', 'nike-vomero-premium'],
@@ -105,7 +104,7 @@ export const shoe: Shoe = {
     width: '좁음(narrow) — 전 길이가 좁고 와이드 옵션 없음',
     durability: '500-600km (WeeViews 약 100km 테스트 후 아웃솔 무마모)',
     price: '13~17만 원 (병행·구매대행) · 한국 미정식출시',
-    costPerKm: '약 ₩273/km (550km 기준)',
+    costPerKm: '국내 정가 없음 — 직구 실거래가 기준 약 ₩236~273/km(550km 가정)',
     footType: '중립~좁은 발. 평발·오버프로네이션에는 비권장',
     landingPattern: '미드풋~힐. 데일리~마라톤 페이스',
   },
@@ -121,7 +120,7 @@ export const shoe: Shoe = {
   ],
 
   editorComment:
-    '2026년 1월 출시된 신상 + 비주류 브랜드라 RunRepeat 같은 독립 랩의 SA/HA/에너지 리턴 수치가 아직 없습니다. 스택·무게·드롭은 Road Trail Run의 직접 실측(EU43/US9.5)을 기준으로 했고, 제조사 공칭치(43/35mm, 드롭 8mm)와 차이가 있어 detailedSpecs에 함께 적어 두었습니다. "95% 에너지 리턴"은 제조사 자체 측정치이니 참고만 하세요. 한국 정식 유통이 없어 가격은 병행·구매대행가(13~17만 원) 기준입니다.\n\n사이즈·구매 가이드: 토박스가 좁고 와이드 옵션이 없어 발볼 넓은 러너에게는 맞지 않으며, 한 사이즈 업을 권장합니다. 병행가 150,000원에 내구성 550km 기준 km당 약 273원으로, 맥시멀 쿠션화 중 최고 가성비입니다. 비슷한 스펙을 정식 유통·AS 걱정 없이 원하면 슈퍼블라스트 3나 메가블라스트가 대안입니다.',
+    '2026년 1월 출시된 신상 + 비주류 브랜드라 RunRepeat 같은 독립 랩의 SA/HA/에너지 리턴 수치가 아직 없습니다. 스택·무게·드롭은 Road Trail Run의 직접 실측(EU43/US9.5)을 기준으로 했고, 제조사 공칭치(43/35mm, 드롭 8mm)와 차이가 있어 detailedSpecs에 함께 적어 두었습니다. "95% 에너지 리턴"은 제조사 자체 측정치이니 참고만 하세요. 한국 정식 유통이 없어 가격은 병행·구매대행가(13~17만 원) 기준입니다.\n\n사이즈·구매 가이드: 토박스가 좁고 와이드 옵션이 없어 발볼 넓은 러너에게는 맞지 않으며, 한 사이즈 업을 권장합니다. 병행가 150,000원에 예상 수명 500~600km(추정) 기준 km당 약 250~300원으로, 맥시멀 쿠션화 중 최고 가성비입니다. 비슷한 스펙을 정식 유통·AS 걱정 없이 원하면 슈퍼블라스트 3나 메가블라스트가 대안입니다.',
 
   similarShoes: ['asics-superblast-3', 'asics-megablast', 'nike-vomero-premium'],
 };

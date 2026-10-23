@@ -5,7 +5,7 @@ import { ChevronRight, Check } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import type { SimilarShoeInfo } from '@/lib/data/shoes';
-import { formatManwon } from '@/lib/format';
+import { formatManwon, formatWon } from '@/lib/format';
 import type { Shoe } from '@/types/shoe';
 import type { Route } from 'next';
 import { cn } from '@/lib/utils';
@@ -139,7 +139,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-primary">{currentShoe.name}</p>
-            <p className="text-xs text-tertiary">{currentShoe.brand} · ₩{currentShoe.price?.toLocaleString()}</p>
+            <p className="text-xs text-tertiary">{currentShoe.brand} · {formatWon(currentShoe.price)}</p>
           </div>
           <span className="flex-shrink-0 rounded-[3px] bg-[var(--navy)] px-2.5 py-1 text-xs font-medium text-white">기준</span>
         </div>
@@ -181,7 +181,7 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium text-primary">{shoe.name}</p>
-                <p className="text-xs text-tertiary">{shoe.brand} · ₩{shoe.price?.toLocaleString()}</p>
+                <p className="text-xs text-tertiary">{shoe.brand} · {formatWon(shoe.price)}</p>
                 <div className="flex gap-1 mt-1 flex-wrap">
                   <span className="rounded-[3px] bg-sky-50 px-2 py-0.5 text-xs text-sky-700">
                     {shoe.category || currentCategory}
@@ -240,14 +240,14 @@ export const SimilarShoes = memo(function SimilarShoes({ currentShoe, similarSho
                 <tr className="border-b border-[color:var(--border-soft)]">
                   <td className="py-2.5 pr-4 text-tertiary">가격</td>
                   <td className="text-center py-2.5 px-3 font-mono font-medium tabular-nums text-primary">
-                    ₩{currentShoe.price?.toLocaleString()}
+                    {formatWon(currentShoe.price)}
                   </td>
                   {selectedShoes.map((shoe) => (
                     <td key={shoe.slug} className={cn(
                       "text-center py-2.5 px-3 font-mono tabular-nums",
                       (shoe.price || 0) < (currentShoe.price || 0) && "font-medium text-sky-700"
                     )}>
-                      ₩{shoe.price?.toLocaleString()}
+                      {formatWon(shoe.price)}
                     </td>
                   ))}
                 </tr>

@@ -34,9 +34,15 @@ export interface KoreanFootFit {
 }
 
 export interface PriceAnalysis {
-  msrp: number;
+  /**
+   * 한국 공식 정가. 한국 미정식출시(병행·직구만 있는) 신발은 비운다 — 병행가를 정가 칸에 넣으면
+   * "95,000원 러닝화"·구조화 데이터 가격으로 정가처럼 나간다(2026-10-23 점검, 리닝 3종).
+   */
+  msrp?: number;
+  /** 실거래가(세일·병행·직구 포함). 정가가 없을 때 화면은 이 값을 "실거래가"로만 보여 준다 */
   streetPrice?: number;
-  costPerKm: number;      // ₩/km
+  /** ₩/km — 정가÷specs.durability. 정가가 없으면 비운다 */
+  costPerKm?: number;
   valueRating: number;    // 1-10
   priceTier: PriceTier;
   alternatives: string[]; // similar price alternatives

@@ -16,7 +16,8 @@ export const shoe: Shoe = {
   category: '데일리',
   rating: 4.5,
   status: 'new',
-  price: 140000,
+  // 국내 정가 없음(한국 미정식출시) — 병행가를 price·msrp 에 넣으면 '95,000원 러닝화'·구조화 데이터 가격으로 정가처럼 나간다.
+  // 실거래가는 priceAnalysis.streetPrice, 직구가 범위는 detailedSpecs.price 에 둔다(2026-10-23 점검).
   description:
     '흔히 "적토끼 9 프로"로 불리는 모델. 2레이어 Boom 폼과 TPU 지지편을 얹은 라이닝의 가성비 데일리 트레이너입니다. "카본 버전"으로 불리지만 실제론 카본이 아닙니다.',
   oneliner: '10만 원대 데일리 트레이너 — "9 Ultra의 카본 버전"이 아니라, 낮고 빠른 가성비 트레이너',
@@ -82,9 +83,7 @@ export const shoe: Shoe = {
   ],
 
   priceAnalysis: {
-    msrp: 140000,
     streetPrice: 120000,
-    costPerKm: 233,
     valueRating: 9,
     priceTier: 'mid',
     alternatives: ['hoka-mach-6', 'asics-novablast-5', 'nike-pegasus-42'],
@@ -106,7 +105,7 @@ export const shoe: Shoe = {
     width: '좁음(narrow) — 좁은 라스트, 와이드 옵션 없음',
     durability: '약 600km (GCR 아웃솔 내마모 강화, 독립 측정치 없음)',
     price: '직구 10만 원대 (CNY 659 정가 / 특가 339, 아마존 $99) · 한국 미정식출시',
-    costPerKm: '약 ₩233/km (600km 기준)',
+    costPerKm: '국내 정가 없음 — 직구 실거래가 기준 약 ₩200~233/km(600km 가정)',
     footType: '중립~좁은 발. 발볼 넓은 러너 비권장',
     landingPattern: '미드풋~힐. 이지~템포 데일리 페이스',
   },
@@ -122,7 +121,7 @@ export const shoe: Shoe = {
   ],
 
   editorComment:
-    '2025년 12월 출시된 신상이라 RunRepeat 등 독립 랩 데이터가 없고, 무게·스택은 해외 리테일러(Shopnings·VJsneaker)·사용자 실측 기준입니다. 흔히 "카본 버전"으로 알려졌지만 라이닝 공식 제품 설명은 카본이 아닌 "展翼식 TPU 지지편(아치 서포트)"으로 표기합니다 — T400 카본 주장은 일부 마케팅 페이지에서만 나오고 독립 분해 검증이 없어, 본 DB는 공식 근거대로 TPU(carbonPlate=false)로 기재합니다. 9 Ultra(맥스쿠션 슈퍼트레이너)와 달리 9 PRO는 낮은 스택의 데일리 트레이너입니다.\n\n사이즈·구매 가이드: 토박스가 좁고 와이드 옵션이 없어 발볼 넓은 러너에게는 맞지 않으며, 발볼이 넓다면 레드헤어 9 베이스(전족 와이드 설계)를 검토하세요. 병행가 140,000원에 내구성 600km 기준 km당 약 233원으로, 데일리 트레이너 중 최고 가성비 수준입니다. 비슷한 데일리 퍼포먼스를 정식 유통으로 원한다면 마하 6나 노바블라스트 5가 대안입니다.',
+    '2025년 12월 출시된 신상이라 RunRepeat 등 독립 랩 데이터가 없고, 무게·스택은 해외 리테일러(Shopnings·VJsneaker)·사용자 실측 기준입니다. 흔히 "카본 버전"으로 알려졌지만 라이닝 공식 제품 설명은 카본이 아닌 "展翼식 TPU 지지편(아치 서포트)"으로 표기합니다 — T400 카본 주장은 일부 마케팅 페이지에서만 나오고 독립 분해 검증이 없어, 본 DB는 공식 근거대로 TPU(carbonPlate=false)로 기재합니다. 9 Ultra(맥스쿠션 슈퍼트레이너)와 달리 9 PRO는 낮은 스택의 데일리 트레이너입니다.\n\n사이즈·구매 가이드: 토박스가 좁고 와이드 옵션이 없어 발볼 넓은 러너에게는 맞지 않으며, 발볼이 넓다면 레드헤어 9 베이스(전족 와이드 설계)를 검토하세요. 병행가 140,000원에 예상 수명 500~700km(추정) 기준 km당 약 200~280원으로, 데일리 트레이너 중 최고 가성비 수준입니다. 비슷한 데일리 퍼포먼스를 정식 유통으로 원한다면 마하 6나 노바블라스트 5가 대안입니다.',
 
   similarShoes: ['li-ning-red-hare-9-ultra', 'hoka-mach-6', 'asics-novablast-5'],
 };

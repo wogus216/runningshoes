@@ -1,6 +1,7 @@
 'use client';
 
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
+import { createContext, useContext, useState, useCallback, useEffect, type ReactNode } from 'react';
+import { COMPARE_STORAGE_KEY, MAX_COMPARE_ITEMS, parseStoredCompare } from '@/lib/compare-storage';
 /**
  * 비교함에 저장하는 최소 정보 — 실제 비교 데이터는 /compare 페이지가
  * URL 슬러그(?shoes=...)로 받아 자체 로드하므로 전체 객체가 필요 없다.
@@ -24,10 +25,21 @@ type CompareContextType = {
 
 const CompareContext = createContext<CompareContextType | null>(null);
 
-const MAX_COMPARE_ITEMS = 4;
-
 export function CompareProvider({ children }: { children: ReactNode }) {
   const [compareList, setCompareList] = useState<CompareItem[]>([]);
+  // 서버·하이드레이션 첫 렌더는 빈 목록으로 맞추고(불일치 방지) 마운트 후 복원한다.
+  // 복원이 끝나기 전에 빈 목록을 저장해 덮어쓰지 않도록 restored 로 막는다.
+  const [restored, setRestored] = useState(false);
+  useEffect(() => {
+    let stored: CompareItem[] = [];
+    try { stored = parseStoredCompare(window.sessionStorage.getItem(COMPARE_STORAGE_KEY)); } catch { /* 저장소 차단 */ }
+    if (stored.length) setCompareList(stored);
+    setRestored(true);
+  }, []);
+  useEffect(() => {
+    if (!restored) return;
+    try { window.sessionStorage.setItem(COMPARE_STORAGE_KEY, JSON.stringify(compareList)); } catch { /* 저장소 차단 */ }
+  }, [compareList, restored]);
 
   const addToCompare = useCallback((shoe: CompareItem) => {
     setCompareList(prev => {

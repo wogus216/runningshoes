@@ -47,6 +47,35 @@ export function isPast(event: Pick<MarathonListEvent, 'date' | 'postponed'>, tod
   return event.date < today && !event.postponed;
 }
 
+/**
+ * 화면에 보일 접수 상태 — **날짜가 수동 status 를 이긴다**(목록 행·대회 상세 배지 공통).
+ * 마감일이 지났는데 status 가 아직 접수중·접수예정이면 '마감'. 연기는 status 보다 먼저 알린다.
+ * 2026-10-23 전까지 목록 행은 status 원문을 그대로 찍어 "접수 마감" 밴드 안에 "접수중" 행이 생겼다(가민런).
+ */
+export function displayStatusOf(event: MarathonListEvent, today: string): string {
+  if (event.postponed) return '일정 연기';
+  if (bandOf(event, today) === 'closed' && (event.status === '접수중' || event.status === '접수예정')) return '마감';
+  return event.status;
+}
+
+/** 목록 행 상태 칸 — 마감 전이면 D-day, 아니면 displayStatusOf. */
+export function rowStateLabel(event: MarathonListEvent, today: string): { text: string; dday: boolean } {
+  if (event.postponed) return { text: '일정 연기', dday: false };
+  if (event.registrationEnd) {
+    const left = daysUntil(event.registrationEnd, today);
+    if (left >= 0) return { text: `D-${left} 마감`, dday: true };
+  }
+  return { text: displayStatusOf(event, today), dday: false };
+}
+
+/** 대회일 배지 — 'D-N' · '오늘 개최' · '대회 종료'. 연기면 표시하지 않는다(null). */
+export function raceDayBadge(event: Pick<MarathonListEvent, 'date' | 'postponed'>, today: string): { kind: 'dday' | 'today' | 'past'; text: string } | null {
+  const left = daysUntil(event.date, today);
+  if (left > 0) return { kind: 'dday', text: `D-${left}` };
+  if (left === 0) return { kind: 'today', text: '오늘 개최' };
+  return event.postponed ? null : { kind: 'past', text: '대회 종료' };
+}
+
 /** 판정 순서가 곧 우선순위다 — past를 먼저 걸러낸 뒤 접수 기간, 마지막이 수동 status. */
 export function bandOf(event: MarathonListEvent, today: string): BandId {
   // 1. 지난 대회 — 날짜만 본다. 유일하게 100% 자동 판정되는 밴드다.

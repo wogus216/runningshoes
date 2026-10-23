@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { bandOf, groupIntoBands, daysUntil, isPast } from '@/lib/marathon/bands';
+import { bandOf, groupIntoBands, daysUntil, isPast, displayStatusOf, rowStateLabel, raceDayBadge } from '@/lib/marathon/bands';
 import type { MarathonEvent } from '@/types/marathon';
 
 const TODAY = '2026-08-01';
@@ -85,5 +85,39 @@ describe('daysUntil', () => {
     expect(daysUntil('2026-08-13', TODAY)).toBe(12);
     expect(daysUntil(TODAY, TODAY)).toBe(0);
     expect(daysUntil('2026-07-31', TODAY)).toBe(-1);
+  });
+});
+
+describe('displayStatusOf · rowStateLabel — 날짜가 수동 status 를 이긴다(2026-10-23 가민런)', () => {
+  it('마감일이 지났는데 status 가 접수중이면 목록 행·상세 배지 모두 마감', () => {
+    const e = ev({ date: '2026-11-15', registrationEnd: '2026-07-22', status: '접수중' });
+    expect(displayStatusOf(e, TODAY)).toBe('마감');
+    expect(rowStateLabel(e, TODAY)).toEqual({ text: '마감', dday: false });
+  });
+  it('마감 전이면 행은 D-day', () => {
+    expect(rowStateLabel(ev({ registrationEnd: '2026-08-05', status: '접수중' }), TODAY)).toEqual({ text: 'D-4 마감', dday: true });
+  });
+  it('마감일 당일은 D-0', () => {
+    expect(rowStateLabel(ev({ registrationEnd: TODAY, status: '접수중' }), TODAY).text).toBe('D-0 마감');
+  });
+  it('연기는 status·D-day 보다 먼저', () => {
+    const e = ev({ postponed: true, registrationEnd: '2026-08-05', status: '접수중' } as Partial<MarathonEvent>);
+    expect(displayStatusOf(e, TODAY)).toBe('일정 연기');
+    expect(rowStateLabel(e, TODAY).text).toBe('일정 연기');
+  });
+  it('마감일이 없으면 수동 status 그대로', () => {
+    expect(rowStateLabel(ev({ status: '마감' }), TODAY).text).toBe('마감');
+    expect(displayStatusOf(ev({ status: '접수중' }), TODAY)).toBe('접수중');
+  });
+});
+
+describe('raceDayBadge', () => {
+  it('D-N · 오늘 개최 · 대회 종료', () => {
+    expect(raceDayBadge({ date: '2026-08-06' }, TODAY)).toEqual({ kind: 'dday', text: 'D-5' });
+    expect(raceDayBadge({ date: TODAY }, TODAY)).toEqual({ kind: 'today', text: '오늘 개최' });
+    expect(raceDayBadge({ date: '2026-07-30' }, TODAY)).toEqual({ kind: 'past', text: '대회 종료' });
+  });
+  it('연기된 대회는 원래 날짜가 지나도 종료로 표시하지 않는다', () => {
+    expect(raceDayBadge({ date: '2026-07-30', postponed: true }, TODAY)).toBeNull();
   });
 });

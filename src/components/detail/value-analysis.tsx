@@ -52,8 +52,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
   const altByKey = new Map((resolvedAlternatives ?? []).map(a => [a.key, a]));
   const findAlt = (key: string): ResolvedAlternative => altByKey.get(key) ?? { key };
   // 가격대별 설명 생성
-  const getPriceTierDescription = () => {
-    const price = priceAnalysis.msrp;
+  const getPriceTierDescription = (price: number) => {
     if (price < 130000) return "10만원대 초반";
     if (price < 160000) return "15만원대 중반";
     if (price < 200000) return "20만원 미만";
@@ -118,9 +117,18 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
           <BadgeDollarSign className="h-5 w-5" />
           가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})
         </h3>
+        {/* 국내 정가가 없는 신발(병행·직구만 유통)은 가격대 평가를 하지 않는다 — 병행가를 정가처럼 쓰지 않는다 */}
+        {!priceAnalysis.msrp ? (
+          <p className="mb-6 text-[15.5px] leading-relaxed text-slate-700">
+            한국 공식 정가가 없는 신발입니다(병행·직구로만 유통).{" "}
+            {priceAnalysis.streetPrice
+              ? <>실거래가는 약 <strong>{priceAnalysis.streetPrice.toLocaleString()}원</strong>이며, 판매처·환율에 따라 달라집니다.</>
+              : '판매처마다 가격이 달라 정가 기준 비교를 하지 않습니다.'}
+          </p>
+        ) : (
         <p className="mb-6 text-[15.5px] leading-relaxed text-slate-700">
           <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은{" "}
-          <strong>&ldquo;{getPriceTierDescription()}&rdquo;</strong> 가격대입니다.{" "}
+          <strong>&ldquo;{getPriceTierDescription(priceAnalysis.msrp)}&rdquo;</strong> 가격대입니다.{" "}
           {category === "레이싱"
             ? "레이싱화 중에서는 합리적인 가격으로 평가됩니다."
             : category === "쿠션화"
@@ -130,6 +138,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
             : "데일리 러닝화로서 적절한 가격대입니다."
           }
         </p>
+        )}
 
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
           <div className="rounded border border-border bg-white p-5">
@@ -175,7 +184,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
         <div className="rounded border border-border bg-white p-5">
           <strong className="flex items-center gap-2 text-lg text-sky-700">
             <Check className="h-5 w-5" />
-            현재 가격대 ({getPriceTierDescription()}): {brand} {shoeName}
+            {priceAnalysis.msrp ? `현재 가격대 (${getPriceTierDescription(priceAnalysis.msrp)})` : '비교 후보'}: {brand} {shoeName}
           </strong>
           <p className="mt-2 text-[15.5px] leading-relaxed text-slate-700">
             비슷한 가격대의 {priceAnalysis.alternatives.slice(0, 3).map(alt => {

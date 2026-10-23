@@ -9,6 +9,7 @@ import { AffiliateDisclosureInline } from "./affiliate-disclosure";
 import { FlaskConical, ArrowUpRight } from "lucide-react";
 import { getShoeDurability } from "@/lib/durability";
 import { cn } from "@/lib/utils";
+import { formatWon } from '@/lib/format';
 
 type HeroSectionProps = {
   shoe: Shoe;
@@ -123,8 +124,14 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
             <div>
               <div className="flex flex-wrap items-baseline gap-2">
                 <span className="font-mono text-3xl font-bold tabular-nums text-primary md:text-4xl">
-                  ₩{shoe.price?.toLocaleString()}
+                  {formatWon(shoe.price)}
                 </span>
+                {/* 국내 정가가 없는 신발(병행·직구만 유통)은 실거래가를 정가와 구분해 따로 적는다 */}
+                {!shoe.price && shoe.priceAnalysis?.streetPrice && (
+                  <span className="font-mono text-sm text-tertiary">
+                    실거래가 약 ₩{shoe.priceAnalysis.streetPrice.toLocaleString()}(병행·직구)
+                  </span>
+                )}
                 {shoe.priceAnalysis?.msrp && shoe.priceAnalysis.msrp > (shoe.price || 0) && (
                   <span className="font-mono text-sm text-tertiary line-through">
                     ₩{shoe.priceAnalysis.msrp.toLocaleString()}
@@ -133,7 +140,7 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
               </div>
               <div className="mt-2 flex flex-wrap gap-x-4 gap-y-1 font-mono text-xs text-tertiary">
                 {shoe.priceAnalysis && (
-                  <span>{durability?.rangeLabel ?? '-'} · 약 ₩{shoe.priceAnalysis.costPerKm}/km</span>
+                  <span>{durability?.rangeLabel ?? '-'}{shoe.priceAnalysis.costPerKm ? ` · 약 ₩${shoe.priceAnalysis.costPerKm}/km` : ''}</span>
                 )}
                 {shoe.priceAnalysis?.valueRating && (
                   <span className="text-signal-dark">가치 점수 {shoe.priceAnalysis.valueRating.toFixed(1)}</span>

@@ -1,23 +1,8 @@
 import Link from 'next/link';
 import type { MarathonListEvent } from '@/types/marathon';
-import { daysUntil } from '@/lib/marathon/bands';
+import { rowStateLabel } from '@/lib/marathon/bands';
 import { formatDateShortKo } from '@/lib/format';
 import styles from './marathon-list.module.css';
-
-/**
- * 상태 칸.
- * `registrationEnd`가 있으면 D-day를 계산하고, 없으면 수동 status를 그대로 보여준다.
- * 채워진 대회만 정확해지는 구조라 백필 없이도 점진적으로 좋아진다.
- * 연기(새 날짜 미정)면 D-day·status보다 그걸 먼저 보여준다.
- */
-function stateLabel(event: MarathonListEvent, today: string): { text: string; dday: boolean } {
-  if (event.postponed) return { text: '일정 연기', dday: false };
-  if (event.registrationEnd) {
-    const left = daysUntil(event.registrationEnd, today);
-    if (left >= 0) return { text: `D-${left} 마감`, dday: true };
-  }
-  return { text: event.status, dday: false };
-}
 
 export function MarathonRow({
   event,
@@ -32,7 +17,7 @@ export function MarathonRow({
    */
   folded?: boolean;
 }) {
-  const state = stateLabel(event, today);
+  const state = rowStateLabel(event, today);
   return (
     <Link className={styles.row} href={`/marathon/${event.id}`} hidden={folded}>
       <span className={styles.date}>{formatDateShortKo(event.date)}</span>

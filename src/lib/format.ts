@@ -17,6 +17,14 @@ export function formatManwon(won: number | null | undefined, empty = '-'): strin
 }
 
 /**
+ * 정가 "₩189,000". 국내 정가가 없으면(한국 미출시·미발표) `empty` 를 돌려준다.
+ * 종전 `₩{price?.toLocaleString()}` 는 값이 없을 때 "₩" 기호만 남겼다(2026-10-23 엔돌핀 스피드 6 상세 2곳).
+ */
+export function formatWon(won: number | null | undefined, empty = '국내 정가 없음'): string {
+  return typeof won === 'number' && won > 0 ? `₩${won.toLocaleString()}` : empty;
+}
+
+/**
  * 정확한 만원 — "2.5만원". 가격 *차이*나 참가비처럼 한 자리가 의미를 갖는 곳.
  * 만원 단위로 나눠떨어지면 소수를 붙이지 않는다("3만원").
  */

@@ -4,7 +4,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { getMarathonEventById, getMarathonEvents } from '@/lib/data/marathon';
 import { formatDateKo, localIsoDate } from '@/lib/format';
-import { META_DESC_MAX, truncateAtWord, formatFee, formatTimeLimit, feeSummary, splitSentences, getDaysUntil } from '@/lib/marathon/format';
+import { META_DESC_MAX, truncateAtWord, formatFee, formatTimeLimit, feeSummary, splitSentences } from '@/lib/marathon/format';
+import { RaceStatusBadge, RaceDayBadge } from '@/components/marathon/race-live-badges';
 import { bandOf } from '@/lib/marathon/bands';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE, ADSENSE_SLOTS } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
@@ -144,13 +145,6 @@ const distanceColors: Record<string, string> = {
   '트레일': 'bg-amber-100 text-amber-700 border-amber-200',
 };
 
-const statusStyles: Record<string, string> = {
-  '접수중': 'bg-[var(--navy)] text-white',
-  '마감': 'bg-slate-400 text-white',
-  '대회종료': 'bg-slate-200 text-slate-600',
-  '일정 연기': 'bg-amber-100 text-amber-700',
-};
-
 const distanceDescriptions: Record<string, string> = {
   '풀코스': '42.195km - 풀 마라톤',
   '하프': '21.0975km - 하프 마라톤',
@@ -174,20 +168,24 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
     notFound();
   }
 
-  const daysUntil = getDaysUntil(event.date);
+  // 클라이언트 배지에 넘길 최소 필드 — 대회 객체 전체를 넘기면 페이로드에 설명·코스가 통째로 실린다
+  const buildDate = localIsoDate();
+  const liveEvent = {
+    date: event.date,
+    status: event.status,
+    postponed: event.postponed,
+    registrationStart: event.registrationStart,
+    registrationEnd: event.registrationEnd,
+  };
   const feeText = feeSummary(event.raceInfo?.entryFees);
   const sentences = splitSentences(event.description);
 
   // 접수 마감 판정은 목록 밴드(bands.ts)와 같은 규칙 — **날짜가 수동 status를 이긴다.**
   // 2026-09-29 오사카(마감) 모바일 히어로에 마감일·registrationNote·확인일이 하나도 없이
   // "접수 7월 28일 시작"만 남아 접수 예정처럼 읽혔다. 아래 표시 조건이 접수중·접수예정만 봤다.
-  // 빌드 시점 날짜라 배포 사이에는 낡을 수 있다(getDaysUntil 과 같은 한계).
-  const registrationClosed = bandOf(event, localIsoDate()) === 'closed';
-  // 마감일이 지났는데 status 가 아직 접수중·접수예정이면 배지(히어로·대회 정보 두 곳)도 날짜를 따른다 — '접수 마감' 줄과 모순되지 않게
-  // 연기는 status 와 별개로 배지에서 먼저 알린다 — '마감'만 보이면 그날 열리는 대회처럼 읽힌다
-  const displayStatus = event.postponed
-    ? '일정 연기'
-    : registrationClosed && (event.status === '접수중' || event.status === '접수예정') ? '마감' : event.status;
+  // 빌드 시점 날짜라 배포 사이에는 낡을 수 있다. 상태·D-day 배지는 race-live-badges.tsx 가 마운트 후 다시 계산한다
+  // (배지의 상태 판정은 bands.ts displayStatusOf — 마감일이 지났는데 접수중·접수예정이면 '마감', 연기는 먼저 알린다).
+  const registrationClosed = bandOf(event, buildDate) === 'closed';
 
   // JSON-LD: SportsEvent (enriched)
   const eventStatusMap: Record<string, string> = {
@@ -330,24 +328,9 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
                 MAJOR
               </span>
             )}
-            <span className={`rounded-full px-3 py-1 text-sm font-medium ${statusStyles[displayStatus]}`}>
-              {displayStatus}
-            </span>
-            {daysUntil > 0 && (
-              <span className="rounded-full bg-surface px-3 py-1 text-sm text-secondary">
-                D-{daysUntil}
-              </span>
-            )}
-            {daysUntil === 0 && (
-              <span className="rounded-full bg-amber-100 px-3 py-1 text-sm font-medium text-amber-700">
-                오늘 개최
-              </span>
-            )}
-            {daysUntil < 0 && !event.postponed && (
-              <span className="rounded-full bg-gray-100 px-3 py-1 text-sm text-gray-500">
-                대회 종료
-              </span>
-            )}
+            {/* 상태·D-day 는 마운트 후 오늘 날짜로 다시 계산한다(빌드 시각에 굳지 않게) — race-live-badges.tsx */}
+            <RaceStatusBadge event={liveEvent} buildDate={buildDate} />
+            <RaceDayBadge event={liveEvent} buildDate={buildDate} />
           </div>
 
           <h1 className="text-2xl md:text-3xl font-bold text-primary mb-4">{event.name}</h1>
@@ -538,9 +521,7 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
             <div className="rounded-[4px] bg-surface p-3">
               <dt className="text-xs text-secondary mb-1">접수 상태</dt>
               <dd>
-                <span className={`inline-block rounded-full px-2 py-0.5 text-xs font-medium ${statusStyles[displayStatus]}`}>
-                  {displayStatus}
-                </span>
+                <RaceStatusBadge event={liveEvent} buildDate={buildDate} size="sm" />
               </dd>
               {event.lastVerified && (
                 <p className="mt-1.5 text-[11px] leading-snug text-secondary">

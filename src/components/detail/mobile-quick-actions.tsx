@@ -6,6 +6,7 @@ import { ExternalLink, ChevronDown } from 'lucide-react';
 import type { Shoe } from '@/types/shoe';
 import { getDisclosureText } from './affiliate-disclosure';
 import { useBottomAnchorAd } from '@/components/ads/use-bottom-anchor-ad';
+import { formatWon } from '@/lib/format';
 
 type MobileQuickActionsProps = {
   shoe: Shoe;
@@ -105,7 +106,7 @@ export function MobileQuickActions({ shoe }: MobileQuickActionsProps) {
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between border-2 border-primary bg-white px-4 py-3">
         <div className="min-w-0 pr-3">
-          <p className="font-mono font-bold tabular-nums text-primary">₩{shoe.price?.toLocaleString()}</p>
+          <p className="font-mono font-bold tabular-nums text-primary">{formatWon(shoe.price)}</p>
           <p className="truncate text-xs text-tertiary">{shoe.name}</p>
         </div>
         <div className="flex flex-shrink-0 items-center gap-2">
