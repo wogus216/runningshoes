@@ -562,7 +562,38 @@ export const OVERRIDES: Record<string, Partial<ThumbCopy>> = {
   'nsm-norwegian-singles-method-training': {
     data: '심박 80~88% · 주 2~3회',
   },
-  // 부제(30만원 vs 35만원)와 겹치지 않게 에너지 리턴·무게차로 구성.
+  // 2026-10-23 구형 썸네일에 구워진 옛 값('한국 미출시'·'48mm'·'75g'·'v5 와이드는 실재')을 걷어내며 재렌더. 데이터 줄은 신발 DB.
+  // saucony-paramount-max.ts — 272g(RunRepeat)·259,000원(10/20 공식몰)·toBoxWidth narrow·wideOptions false
+  'saucony-paramount-max-preview-2026': {
+    data: '272g(실측) · 25.9만 · 토박스 좁음 · 와이드 없음',
+  },
+  // asics-megablast.ts — 299,000원·토박스 74.3mm(toBoxWidth standard)·wideOptions false. 부제(힐 45.1mm에 218g)와 겹치지 않게
+  'asics-megablast-review-2026': {
+    data: '29.9만 · 토박스 74.3mm(표준) · 와이드 없음',
+  },
+  // new-balance-sc-elite-v6.ts — 190g(RunRepeat)·389,000원·toBoxWidth narrow, 한국 공식몰 남성 2E 판매(2026-10-23 확인)
+  'new-balance-sc-elite-v6-preview-2026': {
+    data: '190g(실측) · 38.9만 · 토박스 좁음 · 남성 2E 국내 판매',
+  },
+  // 2026-10-23 제목의 '83% 에너지 리턴'을 RunRepeat 실측(힐 74.3%·전족 73.5%)으로 정정하며 재렌더.
+  // adidas-adizero-evo-sl.ts — 223g(US 9)·209,000원·에너지 리턴 힐 74.3%
+  'adidas-adizero-evo-sl-value-supershoe-2026': {
+    data: '100% Lightstrike Pro · 223g · 에너지 리턴 74.3% · 20.9만',
+  },
+  // 2026-10-23 제목 정정과 함께 재렌더. 데이터 줄은 신발 DB(무게=RunRepeat 실측, 드롭=공식, 가격=정가).
+  // asics-magic-speed-4.ts 237g·199,000·8mm / asics-magic-speed-5.ts 201g·209,000·7mm
+  'asics-magic-speed-4-vs-5-comparison': {
+    data: '237g vs 201g(실측) · 19.9만 vs 20.9만 · 드롭 8 vs 7mm',
+  },
+  // asics-superblast-2.ts 252g·249,000·8mm / asics-superblast-3.ts 235g·259,000·8mm
+  'asics-superblast-2-vs-3-comparison': {
+    data: '252g vs 235g(실측) · 24.9만 vs 25.9만 · 드롭 8mm 동일',
+  },
+  // new-balance-1080-v14.ts 285g·199,000·6mm(공식) / new-balance-1080-v15.ts 255g·209,000·6mm(공식)
+  'new-balance-1080-v14-vs-v15-comparison': {
+    data: '285g vs 255g(실측) · 19.9만 vs 20.9만 · 드롭 6mm 동일',
+  },
+  // 부제(31만원 vs 34만원)와 겹치지 않게 에너지 리턴·무게차로 구성.
   // 출처: posts/2026-05.ts 본문 — 베이퍼 78% vs 알파 74.9% 에너지 리턴 + 무게차 -35g
   // (line 4166), 표에서 78%/74.9% 재확인(line 4195).
   'nike-vaporfly-4-vs-alphafly-3-comparison': {

@@ -356,7 +356,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'saucony-endorphin-elite-3-preview-2026',
     slug: 'saucony-endorphin-elite-3-preview-2026',
     title: '써코니 엔돌핀 엘리트 3 출시 (7/1) | 엘리트 2 대비 뭐가 바뀌나 — 안정성·발볼 손본 신형 카본 레이서',
-    description: '써코니 최상위 카본 레이싱화 엔돌핀 엘리트 3가 2026년 7월 1일 한국 출시됩니다(정가 36.9만). RunRepeat 역대 최고 80%대 반발의 IncrediRUN 폼은 그대로 두고, 전작 엘리트 2의 약점이던 낮은 안정성을 정조준해 손봤습니다(토박스는 RunRepeat 실측 71.8mm로 여전히 좁음). 측면 컷아웃 제거·포크형 카본 플레이트로 바뀐 변경점을 전작과 나란히 정리하고, 발볼 넓은 한국 러너가 살지 기다릴지 판단을 도와드립니다.',
+    description: '써코니 최상위 카본 레이싱화 엔돌핀 엘리트 3가 2026년 7월 1일 한국 출시됐습니다(정가 36.9만). RunRepeat 역대 최고 80%대 반발의 IncrediRUN 폼은 그대로 두고, 전작 엘리트 2의 약점이던 낮은 안정성을 정조준해 손봤습니다(토박스는 RunRepeat 실측 71.8mm로 여전히 좁음). 측면 컷아웃 제거·포크형 카본 플레이트로 바뀐 변경점을 전작과 나란히 정리하고, 발볼 넓은 한국 러너가 살지 기다릴지 판단을 도와드립니다.',
     thumbnail: '/images/blog/saucony-endorphin-elite-3-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-30',
@@ -377,7 +377,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🆕</span>
   <div class="callout-body">
     <p class="callout-title">엔돌핀 엘리트 3, 7월 1일 한국 상륙</p>
-    <p>써코니 라인업의 꼭대기 — 카본 마라톤 레이싱화 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>가 <strong>7월 1일 한국 공식몰에 론칭</strong>합니다(정가 369,000원, White/Multi). 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>는 RunRepeat 측정 <strong>역대 최고 에너지 리턴 80.6%</strong>로 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(78.2%)마저 능가했던 "반발 괴물"이었지만, 동시에 <strong>"너무 불안정하고 발볼이 좁다"</strong>는 평이 따라다녔죠. 엘리트 3는 바로 그 두 약점을 겨냥했습니다. 어떤 점이 바뀌었는지 전작과 나란히 보겠습니다.</p>
+    <p>써코니 라인업의 꼭대기 — 카본 마라톤 레이싱화 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>가 <strong>7월 1일 한국 공식몰에 론칭</strong>했습니다(정가 369,000원, White/Multi). 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>는 RunRepeat 측정 <strong>역대 최고 에너지 리턴 80.6%</strong>로 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(78.2%)마저 능가했던 "반발 괴물"이었지만, 동시에 <strong>"너무 불안정하고 발볼이 좁다"</strong>는 평이 따라다녔죠. 엘리트 3는 바로 그 두 약점을 겨냥했습니다. 어떤 점이 바뀌었는지 전작과 나란히 보겠습니다.</p>
   </div>
 </div>
 
@@ -607,7 +607,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>표에서 가장 눈에 띄는 줄입니다. 슈퍼블라스트 3는 <strong>힐 46.5mm</strong>로, 에보 SL·마하 6(둘 다 36mm)보다 <strong>1cm 이상 두껍습니다.</strong> 이 차이는 후반부에 그대로 나타나요. 25km가 넘어가는 롱런이나 마라톤 페이스 훈련에서 46.5mm 스택은 발·무릎이 받는 충격을 확실히 줄여줍니다. 쿠션 점수가 10/10인 이유죠. 반대로 에보 SL과 마하 6은 36mm로 <strong>"날렵하게 지면을 느끼는"</strong> 쪽이라, 10km 안팎 템포런이나 가벼운 일상 러닝에서 더 경쾌합니다. <strong>장거리 보호가 목적이면 슈퍼블라스트 3, 짧고 빠른 러닝이 주력이면 나머지 둘</strong>로 갈립니다.</p>
 
 <h3>② 폼 등급 — 슈퍼폼이냐 EVA냐</h3>
-<p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 83%의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
+<p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 힐 74.3%·전족 73.5%(랩 평균 61.5%)의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
 
 <h3>③ 가격·발볼 — 와이드가 필요하면 답이 좁아진다</h3>
 <p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 토박스 실측 71.6mm로 랩 평균(73.2mm)보다 좁은데 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 에보 SL도 사정이 비슷합니다. RunRepeat은 Normal·Wide 두 폭으로 표기하지만, <strong>2026년 10월 아디다스 한국 공식몰에서는 에보 SL 와이드가 검색되지 않습니다</strong>(미국 공식몰도 같습니다). 표준폭 실측은 앞발 가장 넓은 곳이 97.5mm(평균 95.2mm)로 넉넉한데 엄지 위치 토박스는 71.6mm(평균 73.2mm)로, RunRepeat 표현대로 앞쪽이 급하게 좁아집니다. 그래서 세 켤레 중 <strong>와이드 버전이 나온 건 마하 6뿐</strong>입니다(한국 판매 여부는 구매 전 확인하세요). 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
@@ -875,7 +875,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong>SC Elite V5의 정체성은 "발볼 넓어도 신을 수 있는 카본 슈퍼슈즈"</strong>입니다. 토박스 74.5mm로 <a href="/shoes/nike-vaporfly-4">베이퍼플라이</a>(73.2mm)보다 넓고 <a href="/shoes/nike-alphafly-3">알파플라이</a>(75.3mm)와는 비슷한 수준이라, 레이스 후반 발가락 눌림이 고민인 한국 러너에게 유력한 선택지입니다</li>
     <li><strong>v4 대비 30g 빠진 198g</strong>로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell 폼(HA 15.2 울트라소프트)이 74.8% 에너지 리턴을 내고, 0.61 그립으로 젖은 노면도 안정적입니다</li>
-    <li><strong>29만원(할인가)으로 베이퍼플라이(31만원)보다 저렴</strong>합니다. 다만 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
+    <li><strong>정가 319,000원으로 베이퍼플라이 4(309,000원)와 같은 가격대</strong>입니다(2026-10-23 기준 한국 공식몰엔 V5가 없고 후속 V6만 판매). 최상위 슈퍼슈즈만큼의 순수 반발력은 아니라, 서브3 이하 엘리트보다 <strong>서브3~3:30 + 넓은 발볼</strong> 러너에게 가장 잘 맞습니다</li>
   </ul>
 </div>
 
@@ -899,10 +899,10 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>에너지 리턴</td><td>74.8%</td><td>상위권 (SA 144 충격흡수)</td></tr>
     <tr><td><strong>토박스</strong></td><td><strong>74.5mm</strong></td><td>슈퍼슈즈 중 넓은 축 (와이드는 미국 등 일부 시장 한정)</td></tr>
     <tr><td>최적 페이스</td><td>3:30~4:30/km</td><td>서브3~3:30 마라토너</td></tr>
-    <tr><td>내구성 / 가격</td><td>300km / 319,000원</td><td>할인가 29만, km당 약 1,000원</td></tr>
+    <tr><td>내구성 / 가격</td><td>300km / 319,000원</td><td>정가 기준 km당 약 1,063원</td></tr>
   </tbody>
 </table>
-<p><small>※ 무게·스택·SA·에너지 리턴·토박스는 RunRepeat 실측 기준. 가격은 뉴발란스 코리아 공식 정가(할인 시 299,000원 안팎).</small></p>
+<p><small>※ 무게·스택·SA·에너지 리턴·토박스는 RunRepeat 실측 기준. 가격은 뉴발란스 코리아 공식 정가(2026-10-23 기준 공식몰엔 V5 미등재, 후속 V6만 판매).</small></p>
 
 <h2>실제로 어떤 느낌이냐</h2>
 <h3>넓은 토박스 — 이게 전부라고 해도 될 만큼</h3>
@@ -918,7 +918,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">💡</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 정리: "넓은 발 + 카본"의 교집합</p>
-    <p>SC Elite V5는 "가장 빠른 슈퍼슈즈"를 노리는 신발이 아닙니다. <strong>발볼이 넓어서 그동안 카본화를 못 신었던 서브3~3:30 마라토너</strong>에게 추진력과 편안함을 동시에 주는, 교집합을 정조준한 신발입니다. 거기에 베이퍼플라이보다 싼 가격은 덤입니다.</p>
+    <p>SC Elite V5는 "가장 빠른 슈퍼슈즈"를 노리는 신발이 아닙니다. <strong>발볼이 넓어서 그동안 카본화를 못 신었던 서브3~3:30 마라토너</strong>에게 추진력과 편안함을 동시에 주는, 교집합을 정조준한 신발입니다. 가격은 정가 기준 베이퍼플라이 4보다 1만 원 비싼 수준입니다.</p>
   </div>
 </div>
 
@@ -929,7 +929,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>발볼이 넓어 좁은 카본화가 불편했다</td><td>서브3 이하, 순수 반발 최대치가 목표</td></tr>
     <tr><td>서브3~3:30 마라톤 목표</td><td>안정성이 꼭 필요한 과내전 러너</td></tr>
     <tr><td>이전 SC Elite가 무거워 포기했다</td><td>최경량(180g대) 슈퍼슈즈를 원한다</td></tr>
-    <tr><td>베이퍼플라이보다 싼 카본을 찾는다</td><td>데일리·훈련용으로도 쓰려는 러너</td></tr>
+    <tr><td>베이퍼플라이와 같은 30만원대 카본을 찾는다</td><td>데일리·훈련용으로도 쓰려는 러너</td></tr>
   </tbody>
 </table>
 
@@ -951,7 +951,7 @@ export const posts_2026_06: BlogPost[] = [
   <p class="faq-q">Q. 무릎은 괜찮나요?</p>
   <p class="faq-a">A. 39mm 힐 스택과 부드러운 FuelCell 폼이 충격을 잘 흡수해 무릎 부담은 적은 편이고, 아킬레스 보호는 특히 우수합니다. 다만 카본 플레이트 특성상 종아리·발바닥에 평소와 다른 부하가 걸리니, 대회 전 몇 차례 적응 런으로 길들이세요.</p>
   <p class="faq-q">Q. 가격값을 하나요?</p>
-  <p class="faq-a">A. 할인가 29만원으로 베이퍼플라이(31만)보다 싸고, "넓은 발볼 + 카본"이라는 교집합에서는 대안이 거의 없어 그 가치가 분명합니다. 단 300km 내구성이라 풀마라톤 3~4회 분량, km당 약 1,000원의 레이스 전용 신발이라는 점은 감안하세요.</p>
+  <p class="faq-a">A. 정가 319,000원으로 베이퍼플라이 4(309,000원)보다 1만 원 비싸지만, "넓은 발볼 + 카본"이라는 교집합에서는 대안이 거의 없어 그 가치가 분명합니다. 단 300km 내구성이라 풀마라톤 3~4회 분량, km당 약 1,063원의 레이스 전용 신발이라는 점은 감안하세요. 2026-10-23 기준 한국 공식몰엔 V5가 없고 후속 V6만 판매합니다.</p>
 </div>
 
 <div class="callout info">
@@ -1611,7 +1611,7 @@ export const posts_2026_06: BlogPost[] = [
     slug: 'asics-novablast-6-vs-hoka-clifton-pro-2026',
     title: '아식스 노바블라스트 6 vs 호카 클리프톤 프로 | 7월 신상 데일리 정면승부 — 노바6 가벼운 반발 vs 클프로 넓은 토박스·롤링',
     description:
-      '7월에 데일리 트레이너 신상 둘이 동시에 나옵니다. 노바블라스트 6(7/1)와 호카 클리프톤 프로(7/9). 외신 T3가 "호카가 노바블라스트를 겨냥해 만든 신발"이라 콕 집을 만큼 정면승부 구도죠. 스택·드롭은 거의 같지만 폼 성격이 갈립니다 — 노바6는 전족 FF Turbo Squared(ATPU) 반발과 약 30g 가벼운 무게, 클프로는 클리프톤10 라스트의 넓은 토박스·와이드 옵션·MetaRocker 롤링. 한국 발볼·예산 기준으로 누가 뭘 골라야 하는지 정리했습니다.',
+      '7월 데일리 트레이너 신상 둘의 맞대결입니다. 노바블라스트 6(글로벌 7/1·한국 7/9 출시)와 호카 클리프톤 프로(7/9 출시 발표). 외신 T3가 "호카가 노바블라스트를 겨냥해 만든 신발"이라 콕 집을 만큼 정면승부 구도죠. 스택·드롭은 거의 같지만 폼 성격이 갈립니다 — 노바6는 전족 FF Turbo Squared(ATPU) 반발과 약 30g 가벼운 무게, 클프로는 클리프톤10 라스트의 넓은 토박스·와이드 옵션·MetaRocker 롤링. 한국 발볼·예산 기준으로 누가 뭘 골라야 하는지 정리했습니다.',
     thumbnail: '/images/blog/asics-novablast-6-vs-hoka-clifton-pro-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-23',
@@ -1622,8 +1622,8 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>7월 데일리 신상 맞대결</strong> — 노바블라스트 6(7/1)와 호카 클리프톤 프로(7/9)가 비슷한 시기에 출시됩니다. 외신은 "호카가 노바블라스트를 겨냥한 신발"로 봅니다</li>
-    <li>스택(41.5/33.5 vs 42/34mm)·드롭(8mm)은 사실상 동일 — <strong>차이는 폼</strong>입니다. 노바6는 전족 FF Turbo Squared(ATPU) 반발, 클프로는 ProGlide+(슈퍼크리티컬 EVA) 롤링</li>
+    <li><strong>7월 데일리 신상 맞대결</strong> — 노바블라스트 6(글로벌 7/1·한국 7/9 출시)와 호카 클리프톤 프로(7/9 출시 발표)가 비슷한 시기에 나온 맞수입니다. 외신은 "호카가 노바블라스트를 겨냥한 신발"로 봅니다</li>
+    <li>공식 스택(41.5/33.5 vs 42/34mm)·드롭(8mm)은 사실상 동일 — <strong>차이는 폼</strong>입니다. 노바6는 전족 FF Turbo Squared(ATPU) 반발, 클프로는 ProGlide+(슈퍼크리티컬 EVA) 롤링</li>
     <li><strong>가볍고 통통 튀는 반발이면 노바6, 넓은 발볼·와이드·부드러운 롤링이면 클프로</strong>. 노바6가 약 30g 가볍고 $10 저렴합니다</li>
   </ul>
 </div>
@@ -1632,7 +1632,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🥊</span>
   <div class="callout-body">
     <p class="callout-title">왜 이 둘을 나란히 놓나</p>
-    <p>호카가 클리프톤 라인을 둘로 쪼갰습니다. 기존 <a href="/shoes/hoka-clifton-10">클리프톤</a>(부드러운 데일리·CMEVA)은 그대로 두고, 반발 폼을 얹은 <strong>클리프톤 프로</strong>를 새로 냈죠. 외신 T3는 이를 두고 <strong>"호카가 아식스 노바블라스트를 겨냥해 만든 신발"</strong>이라고 못 박았습니다. 즉 둘은 같은 자리를 노리는 <strong>'반응형 고스택 데일리 트레이너'</strong> 경쟁작입니다. 아직 둘 다 출시 전이라(노바6 7/1·클프로 7/9) 아래 수치는 <strong>제조사 공식 발표 + 전작·리뷰 기준 추정</strong>입니다.</p>
+    <p>호카가 클리프톤 라인을 둘로 쪼갰습니다. 기존 <a href="/shoes/hoka-clifton-10">클리프톤</a>(부드러운 데일리·CMEVA)은 그대로 두고, 반발 폼을 얹은 <strong>클리프톤 프로</strong>를 새로 냈죠. 외신 T3는 이를 두고 <strong>"호카가 아식스 노바블라스트를 겨냥해 만든 신발"</strong>이라고 못 박았습니다. 즉 둘은 같은 자리를 노리는 <strong>'반응형 고스택 데일리 트레이너'</strong> 경쟁작입니다. 작성 시점(2026-06-23)엔 둘 다 출시 전이라 아래 수치는 <strong>제조사 공식 발표 + 전작·리뷰 기준 추정</strong>이었습니다. 노바블라스트 6은 이후 한국 출시(7/9)와 RunRepeat 랩 실측 게시로 정가·실측을 괄호에 반영했습니다(2026-10-23 기준). 클리프톤 프로 수치는 작성 당시 그대로입니다.</p>
   </div>
 </div>
 
@@ -1641,9 +1641,9 @@ export const posts_2026_06: BlogPost[] = [
   <thead><tr><th>항목</th><th>아식스 노바블라스트 6</th><th>호카 클리프톤 프로</th></tr></thead>
   <tbody>
     <tr><td>출시(글로벌)</td><td>2026-07-01</td><td>2026-07-09</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>41.5 / 33.5mm</td><td>42 / 34mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>8mm</td></tr>
-    <tr><td>무게(M9 추정)</td><td><strong>약 253g</strong></td><td>약 282g</td></tr>
+    <tr><td>힐 / 전족 스택</td><td>41.5 / 33.5mm (공식 · RunRepeat 실측 39.2 / 32.1mm)</td><td>42 / 34mm (공식)</td></tr>
+    <tr><td>드롭</td><td>8mm (공식 · 실측 7.1mm)</td><td>8mm (공식)</td></tr>
+    <tr><td>무게(M9)</td><td><strong>253g</strong> (공식 · 실측 249g)</td><td>약 282g (추정)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>FF Blast Max + <strong>FF Turbo Squared(전족, ATPU)</strong></td><td><strong>ProGlide+</strong>(슈퍼크리티컬 EVA)</td></tr>
     <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
     <tr><td>로커</td><td>완만한 가이던스</td><td><strong>공격적 MetaRocker</strong></td></tr>
@@ -1651,18 +1651,18 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>가격</td><td><strong>179,000원</strong> (한국 확정 · $155)</td><td>$165 (한국 21~22만 추정)</td></tr>
   </tbody>
 </table>
-<p class="caption">※ 두 신발 모두 출시 전이라 RunRepeat 정량 랩(SA·에너지 리턴·토박스 mm)은 미게시입니다. 무게는 사이즈 기준을 M9로 통일한 추정치(외신 실측은 노바6 269g·M10.5, 클프로 296g·M10)입니다. 출시 후 실측·한국 정가가 나오면 업데이트합니다.</p>
+<p class="caption">※ 작성 시점(2026-06-23)엔 두 신발 모두 출시 전이었습니다. 노바블라스트 6은 출시 후 게시된 RunRepeat 랩 실측(남성 US 9)을 괄호에 넣었고, 두 신발 비교는 같은 기준인 공식 표기끼리 했습니다(2026-10-23 기준). 클리프톤 프로 무게는 사이즈 기준을 M9로 환산한 추정치(외신 실측 296g·M10)입니다.</p>
 
 <h2>가장 큰 차이 — 폼</h2>
 <p>스택과 드롭이 같으니 <strong>발밑 느낌은 폼이 결정</strong>합니다. 노바블라스트 6은 힐에 FF Blast Max(폴리올레핀)를 두고 <strong>전족부에 FF Turbo Squared</strong>를 처음 넣었습니다. FF Turbo Squared는 아식스 상위 폼(<a href="/shoes/asics-megablast">메가블라스트</a> 계열)에 쓰인 ATPU 기반으로, PEBA에 가까운 <strong>통통 튀는 반발(pop)</strong>이 특징입니다. 전작 5의 약점이던 '힐-전족 전환 끊김'을 정조준한 설계죠. 더 자세한 변경점은 <a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6 미리보기</a>에 정리해 뒀습니다.</p>
 <p>클리프톤 프로는 <strong>ProGlide+</strong>라는 슈퍼크리티컬 EVA를 씁니다. 일반 클리프톤의 CMEVA보다 가볍고 탄성이 살아 있어 "클리프톤 이름값보다 훨씬 경쾌하다"(Believe in the Run)는 평을 받았습니다. 다만 <strong>EVA 계열이라 ATPU·PEBA급 에너지 리턴까지는 못 간다</strong>는 게 공통된 지적입니다. 대신 <strong>공격적인 MetaRocker</strong>로 발이 자연스럽게 굴러가는 부드러운 전환을 만듭니다. 정리하면 <strong>노바6는 '튕기는 반발', 클프로는 '굴러가는 롤링'</strong>입니다.</p>
 
 <h2>발볼·핏 — 한국 러너의 핵심</h2>
-<p>한국 러너에게 가장 갈리는 지점은 <strong>토박스</strong>입니다. 노바블라스트 6은 좁은 편입니다. 출시 후 RunRepeat 실측 토박스가 71.0mm로 랩 평균(73.2mm)보다 2.2mm 좁았고, 랩 본문도 앞코가 좁아지는 "tapered" 형태라고 적었습니다. 6세대에서 <strong>힐 폭도 90→85mm로 약간 좁아졌습니다</strong>(와이드 옵션 없음). 발볼이 넓다면 출시 후 시착이 필수입니다.</p>
+<p>한국 러너에게 가장 갈리는 지점은 <strong>토박스</strong>입니다. 노바블라스트 6은 좁은 편입니다. 출시 후 RunRepeat 실측 토박스가 71.0mm로 랩 평균(73.2mm)보다 2.2mm 좁았고, 랩 본문도 앞코가 좁아지는 "tapered" 형태라고 적었습니다. 6세대에서 <strong>힐 폭도 90→85mm로 약간 좁아졌습니다</strong>(와이드 옵션 없음). 발볼이 넓다면 시착이 필수입니다.</p>
 <p>반면 클리프톤 프로는 발볼 넓은 호카 유저에게 익숙한 <strong>클리프톤10 라스트를 그대로 쓰고 와이드(2E) 옵션도 제공</strong>합니다. 발볼이 넓거나 체중이 좀 나가는 러너, 장거리 이지런 위주라면 클프로 쪽이 편안합니다. 발볼 기준으로 더 넓은 선택지가 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
 
 <h2>무게·가격 — 노바6가 우위</h2>
-<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 253g vs 282g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. <strong>노바6 한국 정가는 179,000원으로 확정</strong>됐고(7/9 출시), 클프로는 한국가 미확정(클리프톤10 199,000원 기준 21~22만 원대 예상)입니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
+<p>무게는 <strong>노바6가 약 30g 가볍습니다</strong>(M9 공식 253g vs 추정 282g, 노바6 출시 후 RunRepeat 실측은 249g). 30g이면 가벼운 템포·업템포에서 체감되는 차이입니다. 가격도 노바6가 $155로 클프로($165)보다 $10 쌉니다. <strong>노바6 한국 정가는 179,000원으로 확정</strong>됐고(7/9 출시), 클프로는 작성 시점(2026-06-23) 한국가 미확정(클리프톤10 199,000원 기준 21~22만 원대 예상)이었습니다. <strong>가볍고 저렴한 쪽은 명확히 노바6</strong>입니다.</p>
 
 <h2>누가 뭘 골라야 하나</h2>
 <ul>
@@ -1675,8 +1675,8 @@ export const posts_2026_06: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">출시 전 비교 — 추정 주의</p>
-    <p>본 글은 <strong>두 신발 출시 전</strong>(노바6 7/1·클프로 7/9) 작성으로, RunRepeat 정량 랩과 한국 정가는 아직 확정되지 않았습니다. 스펙은 제조사 공식 발표 + 전작·해외 리뷰(Believe in the Run·The Running Channel) 기준 추정이며, 무게는 M9 기준으로 환산했습니다. 출시 후 실측·한국 정가가 나오면 업데이트하겠습니다.</p>
+    <p class="callout-title">출시 전 작성 — 클리프톤 프로는 추정 주의</p>
+    <p>본 글은 <strong>두 신발 출시 전</strong>(2026-06-23) 작성했습니다. 노바블라스트 6은 한국 정가(179,000원)와 RunRepeat 랩 실측을 반영했습니다(2026-10-23 기준). 클리프톤 프로의 스펙·한국가는 작성 당시 제조사 공식 발표 + 전작·해외 리뷰(Believe in the Run·The Running Channel) 기준 추정 그대로이며, 무게는 M9 기준으로 환산했습니다.</p>
   </div>
 </div>
 `,
@@ -1847,11 +1847,11 @@ export const posts_2026_06: BlogPost[] = [
     slug: 'asics-novablast-6-preview-2026',
     title: '아식스 노바블라스트 6 미리보기 | 7월 1일 출시 — 5와 무엇이 달라졌나 (FF Turbo Squared 전족부·AsicsGrip)',
     description:
-      '아식스 인기 데일리 쿠션화 노바블라스트의 6세대가 7월 1일 글로벌 출시됩니다. 핵심 변화는 전족부에 처음 적용된 FF Turbo Squared(ATPU 트램폴린 폼) — 전작 5의 약점이던 힐-전족 전환을 개선할 카드죠. 스택·무게는 5와 거의 같고, 어퍼는 슈퍼블라스트 3 위브로 리뉴얼, 전족 AsicsGrip으로 빗길 접지가 좋아졌습니다. 5 대비 변경점과 한국 출시·예상 가격을 출시 전 미리 정리했습니다.',
+      '아식스 인기 데일리 쿠션화 노바블라스트의 6세대가 7월 1일 글로벌 출시됐습니다(한국 7월 9일, 정가 179,000원). 핵심 변화는 전족부에 처음 적용된 FF Turbo Squared(ATPU 트램폴린 폼) — 전작 5의 약점이던 힐-전족 전환을 개선할 카드죠. 스택·무게는 5와 거의 같고, 어퍼는 슈퍼블라스트 3 위브로 리뉴얼, 전족 AsicsGrip으로 빗길 접지가 좋아졌습니다. 5 대비 변경점과 한국 출시일·정가, 출시 후 게시된 RunRepeat 실측까지 정리했습니다.',
     thumbnail: '/images/blog/asics-novablast-6-preview-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-23',
-    updatedAt: '2026-07-29',
+    updatedAt: '2026-10-23',
     category: 'review' as const,
     readingTime: 7,
     tags: ['아식스 노바블라스트 6', '노바블라스트', 'FF Turbo Squared', '쿠션화', '데일리 트레이너', '신상 러닝화'],
@@ -1859,7 +1859,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>노바블라스트 6이 7월 1일 글로벌 출시</strong> — 아식스의 인기 데일리 쿠션화 노바블라스트의 6세대입니다(한국 출시 임박)</li>
+    <li><strong>노바블라스트 6이 7월 1일 글로벌 출시</strong> — 아식스의 인기 데일리 쿠션화 노바블라스트의 6세대입니다(한국은 7월 9일 출시, 정가 179,000원)</li>
     <li>핵심 변화는 <strong>전족부에 처음 적용된 FF Turbo Squared</strong>(ATPU 트램폴린 폼) — 전작 5의 약점이던 힐-전족 전환·전족 반발을 개선할 카드</li>
     <li>스택·무게는 5와 거의 동일, <strong>어퍼는 슈퍼블라스트 3 위브로 리뉴얼, 전족 AsicsGrip으로 빗길 접지↑</strong></li>
   </ul>
@@ -1869,7 +1869,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">👀</span>
   <div class="callout-body">
     <p class="callout-title">7월 1일 출시 — 무엇을 미리 알아둘까</p>
-    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 2026년 7월 1일 글로벌 출시됐고, <strong>한국은 2026년 7월 9일(목) 오전 10시 출시 — 정가 179,000원 확정</strong>입니다(5의 169,000원 대비 +1만원). 상세 스펙은 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에 정리해 뒀습니다. RunRepeat 정량 랩도 2026년 7월 말 게시됐습니다 — <strong>종합 93/100(Superb)</strong>, SA 힐 143/전족 130, 실측 스택 39.2/32.1mm·249g. 실측 반영 상세는 <a href="/shoes/asics-novablast-6">상세 페이지</a>와 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">5 vs 6 비교</a>에서 확인하세요(본문 아래 수치는 출시 전 프리뷰 시점 기준입니다).</p>
+    <p>노바블라스트는 <a href="/shoes/asics-gel-nimbus-28">님버스</a>보다 가볍고 통통 튀는 "데일리 쿠션화"로, 한국에서도 가성비 만능화로 인기가 높습니다. 6세대는 2026년 7월 1일 글로벌 출시됐고, <strong>한국은 2026년 7월 9일(목) 오전 10시 출시 — 정가 179,000원 확정</strong>입니다(5의 169,000원 대비 +1만원). 상세 스펙은 <a href="/shoes/asics-novablast-6">노바블라스트 6 상세 페이지</a>에 정리해 뒀습니다. RunRepeat 정량 랩도 2026년 7월 말 게시됐습니다 — <strong>종합 93/100(Superb)</strong>, SA 힐 143/전족 130, 실측 스택 39.2/32.1mm·249g. 실측 반영 상세는 <a href="/shoes/asics-novablast-6">상세 페이지</a>와 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">5 vs 6 비교</a>에서 확인하세요(아래 5 → 6 비교표의 무게·스택·드롭은 실측으로 갱신했고, 나머지 서술은 출시 전 프리뷰 시점 기준입니다).</p>
   </div>
 </div>
 
@@ -1878,12 +1878,12 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>5 → 6, 무엇이 달라졌나</h2>
 <table>
-  <thead><tr><th>항목</th><th>노바블라스트 5 (실측)</th><th>노바블라스트 6 (공식)</th><th>변경</th></tr></thead>
+  <thead><tr><th>항목</th><th>노바블라스트 5 (실측)</th><th>노바블라스트 6 (실측, 괄호는 공식)</th><th>변경 (실측끼리)</th></tr></thead>
   <tbody>
-    <tr><td>무게</td><td>254g</td><td>253g</td><td>사실상 동일</td></tr>
-    <tr><td>힐 스택</td><td>40.9mm</td><td>41.5mm</td><td>+0.6mm</td></tr>
-    <tr><td>전족 스택</td><td>33.5mm</td><td>33.5mm</td><td>동일</td></tr>
-    <tr><td>드롭</td><td>7.4mm</td><td>8mm</td><td>+0.6mm</td></tr>
+    <tr><td>무게</td><td>254g</td><td>249g (253g)</td><td>-5g (사실상 동일)</td></tr>
+    <tr><td>힐 스택</td><td>40.9mm</td><td>39.2mm (41.5mm)</td><td>-1.7mm</td></tr>
+    <tr><td>전족 스택</td><td>33.5mm</td><td>32.1mm (33.5mm)</td><td>-1.4mm</td></tr>
+    <tr><td>드롭</td><td>7.4mm</td><td>7.1mm (8mm)</td><td>-0.3mm</td></tr>
     <tr><td><strong>미드솔</strong></td><td>FF Blast Max 단일</td><td><strong>FF Blast Max + FF Turbo Squared(전족)</strong></td><td>전족 듀얼 폼 신규</td></tr>
     <tr><td>아웃솔</td><td>AHAR LO</td><td>+ <strong>AsicsGrip 전족부</strong></td><td>빗길 접지↑</td></tr>
     <tr><td>어퍼</td><td>엔지니어드 메시</td><td>엔지니어드 위브(슈퍼블라스트 3 원단)</td><td>리뉴얼</td></tr>
@@ -1891,7 +1891,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>가격</td><td>169,000원</td><td><strong>179,000원</strong> (글로벌 $155)</td><td>+1만원 (7/9 한국 출시)</td></tr>
   </tbody>
 </table>
-<p class="caption">※ 6세대 수치는 아식스 공식 발표 + 노바블라스트 5 실측 기준 추정입니다. RunRepeat 정량 랩(SA·에너지 리턴·토박스)은 출시 후 게시되면 업데이트합니다.</p>
+<p class="caption">※ 무게·스택·드롭은 두 세대 모두 RunRepeat 랩 실측(남성 US 9)끼리 비교했고, 괄호는 아식스 공식 표기입니다(6세대 랩은 2026년 7월 말 게시, 2026-10-23 기준 반영). 그 밖의 항목은 작성 당시(2026-06-23) 아식스 공식 발표와 노바블라스트 5 자료를 바탕으로 정리했습니다.</p>
 
 <h2>핵심 변화 — 전족부 FF Turbo Squared</h2>
 <p>이번 세대의 가장 큰 변화는 <strong>전족부에 FF Turbo Squared를 처음 넣은 것</strong>입니다. FF Turbo Squared는 아식스 최상위 폼 계열(메가블라스트 등에 쓰인 ATPU 기반)로, <strong>전족부에서 트램폴린 같은 반발</strong>을 더해줍니다. 힐은 기존 FF Blast Max를 유지하고 전족만 고반발 폼을 얹은 <strong>듀얼 폼 구조</strong>죠.</p>
@@ -1905,22 +1905,22 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>5의 전환 끊김이 아쉬웠다면</strong> — 6의 전족 FF Turbo Squared가 핵심 개선이라 갈아탈 가치가 있습니다</li>
   <li><strong>빗길·여름 트레일 임도를 자주 달린다면</strong> — 전족 AsicsGrip 추가로 접지가 좋아져 장마철에 유리</li>
   <li><strong>5를 잘 쓰고 있고 600km 이내라면</strong> — 스택·무게가 거의 같아 급히 갈아탈 이유는 적습니다. 세일 들어간 5도 여전히 좋은 선택</li>
-  <li><strong>발볼 넓은 러너</strong> — 힐 폭이 90→85mm로 약간 좁아졌으니, 출시 후 시착으로 확인하세요</li>
+  <li><strong>발볼 넓은 러너</strong> — 힐 폭이 90→85mm로 약간 좁아졌으니, 시착으로 확인하세요</li>
 </ul>
 <p>전작과 세대별로 꼼꼼히 비교하려면 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">노바블라스트 5 vs 6 세대 비교</a>를, 같은 시기 데일리 신상과 겨루는 구도는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로</a>를 보세요. 데일리 쿠션화를 더 넓게 보려면 <a href="/best/daily-trainer">데일리 트레이너 추천</a>, 같은 아식스 FF Blast 계열(<a href="/shoes/asics-novablast-5">노바블라스트 5</a>·<a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>)과의 위치도 참고하세요.</p>
 
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">출시 전 미리보기 — 추정 주의</p>
-    <p>본 글은 <strong>2026년 7월 1일 출시 전</strong> 작성으로, RunRepeat 정량 랩(SA·에너지 리턴·토박스 너비)은 아직 없습니다. 위 수치는 <strong>아식스 공식 발표 변경점 + 노바블라스트 5 실측 기준 추정</strong>이며, 한국 정가도 미확정(5 기준 추정)입니다. 출시 후 실측·한국 정가가 나오면 업데이트하겠습니다.</p>
+    <p class="callout-title">출시 전 미리보기 — 갱신 범위 안내</p>
+    <p>본 글은 <strong>2026년 7월 1일 출시 전</strong>(2026-06-23) 작성했습니다. 이후 한국 정가 179,000원(7/9 출시)과 RunRepeat 랩 실측(2026년 7월 말 게시)을 위 표와 안내 상자에 반영했습니다(2026-10-23 기준). 핵심 변화 해석과 갈아탈지 판단은 작성 당시 <strong>아식스 공식 발표 변경점</strong>을 바탕으로 한 것입니다.</p>
   </div>
 </div>
 
 <h2>마무리</h2>
-<p>노바블라스트 6은 "스택은 그대로, 전족 반발을 키운" 세대 교체로 보입니다. 5의 부드러움에 <strong>전족 FF Turbo Squared의 경쾌함</strong>이 더해진다면, 데일리 만능화로서 매력이 한 단계 올라갈 가능성이 큽니다. 7월 1일 출시 후 실제 착화감·랩 데이터가 나오면 이 글을 업데이트할 예정이니, 구매를 고민 중이라면 출시 직후 시착 후 결정하세요. 🏃</p>
+<p>노바블라스트 6은 "스택은 비슷하게 두고, 전족 반발을 키운" 세대 교체로 보입니다. 5의 부드러움에 <strong>전족 FF Turbo Squared의 경쾌함</strong>이 더해진다면, 데일리 만능화로서 매력이 한 단계 올라갈 가능성이 큽니다. 출시 후 게시된 RunRepeat 랩 실측(종합 93/100, SA 힐 143/전족 130)은 <a href="/shoes/asics-novablast-6">상세 페이지</a>에 정리해 뒀으니, 구매를 고민 중이라면 시착 후 결정하세요. 🏃</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 아식스 공식 프레스릴리스(2026-05-29)와 노바블라스트 5 실측 데이터를 바탕으로 한 출시 전 미리보기입니다. 6세대 RunRepeat 정량 랩·한국 공식 가격은 미게시/미확정 상태로, 출시(7/1) 후 업데이트합니다. (작성 2026-06-23)</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 아식스 공식 프레스릴리스(2026-05-29)와 노바블라스트 5 실측 데이터를 바탕으로 한 출시 전 미리보기입니다. 한국 공식 가격(179,000원)과 6세대 RunRepeat 정량 랩은 출시 후 반영했습니다. (작성 2026-06-23 · 갱신 2026-10-23)</p>
 `,
   },
   {
@@ -3148,14 +3148,14 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/adidas-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-23',
     category: 'guide' as const,
     readingTime: 12,
     tags: ['아디다스 러닝화', '아디다스 계급도', '러닝화 라인업', '러닝화 등급', '아디제로', '아디오스 프로', '슈퍼노바', '보스턴', 'EnergyRods', 'Lightstrike'],
     faqs: [
       { question: '아디다스 "아디제로(Adizero)"는 무슨 뜻인가요?', answer: '아디제로는 아디다스의 스피드·레이싱 서브브랜드입니다. 이름에 아디제로가 붙으면 빠르게 달리기 위한 신발이에요. 입문 SL2부터 보스턴(슈퍼트레이너), Evo SL(카본 없는 슈퍼폼), 아디오스 프로(카본 레이싱), 그리고 97g 서브2 신발 아디오스 프로 에보까지 하나의 스피드 사다리를 이룹니다.' },
       { question: 'EnergyRods(에너지로드)가 뭔가요?', answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 막대를 넣은 구조입니다. 아디오스 프로는 카본 막대 5개, 보스턴은 유리섬유 재질의 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.' },
-      { question: '아디제로 Evo SL은 왜 카본도 없는데 빠른가요?', answer: '레이싱화 아디오스 프로에 쓰는 고급 폼(100% Lightstrike Pro)을 카본 플레이트·로드 없이 통째로 넣었기 때문입니다. 223g 경량에 83% 에너지 리턴으로, 20만원대에 슈퍼슈즈에 가까운 반발을 줍니다. 카본의 부담 없이 빠른 훈련을 원하는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
+      { question: '아디제로 Evo SL은 왜 카본도 없는데 빠른가요?', answer: '레이싱화 아디오스 프로에 쓰는 고급 폼(100% Lightstrike Pro)을 카본 플레이트·로드 없이 통째로 넣었기 때문입니다. 223g 경량에 RunRepeat 실측 에너지 리턴 힐 74.3%(랩 평균 61.5%)로, 20만원대에 슈퍼슈즈에 가까운 반발을 줍니다. 카본의 부담 없이 빠른 훈련을 원하는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
       { question: '아디다스 Boost(부스트)는 어디 갔나요?', answer: '러닝 퍼포먼스 라인에서는 세대교체됐습니다. 지금 아디다스 러닝화는 데일리에 Dreamstrike+, 레이싱에 Lightstrike Pro를 씁니다. 대신 2026년에 이름을 이어받은 새 폼 Hyperboost Pro가 하이퍼부스트 런(21.9만)·하이퍼부스트 엣지(24.9만)로 데일리에 들어왔습니다. 이름만 이어받았을 뿐 예전 Boost 알갱이 폼과는 다른 폼이고, 두 모델 모두 플레이트 없이 폼만으로 반발을 냅니다.' },
       { question: '아디다스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아디다스는 토박스가 좁은 편이라 발볼 넓으면 주의가 필요합니다. 2026-09-28 아디다스 공식몰 기준으로 와이드 버전이 판매 중인 건 슈퍼노바 라이즈 3와 아디제로 SL2입니다. 새로 나온 하이퍼부스트 런·엣지는 표준폭 단일입니다. 아디오스 프로·아그라빅 같은 레이싱·트레일은 좁으니 발볼 넓으면 반 치수 크게 신거나 다른 브랜드를 함께 보세요.' },
     ],
@@ -3228,7 +3228,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/adidas-supernova-rise-3"><strong>슈퍼노바 라이즈 3</strong></a></td><td>데일리 쿠션</td><td>Dreamstrike+ (20%↑)</td><td>15.9만</td><td>264g</td><td>현행 슈퍼노바, 쿠션 중심 데일리</td></tr>
     <tr><td><a href="/shoes/adidas-boston-13"><strong>보스턴 13</strong></a></td><td>슈퍼트레이너</td><td>Lightstrike Pro + 로드 2.0</td><td>17.9만</td><td>254g</td><td>Energy Rods, 훈련+레이스 겸용</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>테렉스 아그라빅 4</strong></a></td><td>올라운드 트레일</td><td>Lightstrike (EVA)</td><td>20.9만</td><td>283g</td><td>Continental 그립 1순위</td></tr>
-    <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>83% 에너지, 가성비 끝판왕</td></tr>
+    <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>에너지 리턴 힐 74.3%(실측), 가성비 끝판왕</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-run"><strong>하이퍼부스트 런</strong></a></td><td>고반발 데일리</td><td>Hyperboost Pro</td><td>21.9만</td><td>247g</td><td>엣지의 폼을 힐 38.6mm 데일리 스택에, 전족 컨티넨탈 러버</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-edge"><strong>하이퍼부스트 엣지</strong></a></td><td>무플레이트 슈퍼트레이너</td><td>Hyperboost Pro</td><td>24.9만</td><td>247g</td><td>힐 44.6mm 고스택을 폼 하나로, 템포에 강함</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>269g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
@@ -6336,7 +6336,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><a href="/compare">러닝화 비교하기 — 슈퍼노바 라이즈 2·3 스펙 나란히 보기</a></li>
 </ul>
 
-<p><small>출처: 아디다스 공식 제품 정보 / allrunabout.com 신발 데이터베이스(기준일 2026-06-10) / 슈퍼노바 라이즈 2·3 스펙(스택·드롭·무게·Dreamstrike+ 폼·MSRP·내구성). 본 비교는 SA/HA/에너지 리턴 같은 랩 수치가 데이터에 명시되지 않아 확정 수치(스택·드롭·무게·가격·specs 점수 1-10)와 카테고리 변화만으로 작성했으며, 실구매가·세일 폭 등 일부 수치는 공식 발표·전작 기준 추정입니다.</small></p>
+<p><small>출처: 아디다스 공식 제품 정보 / allrunabout.com 신발 데이터베이스(기준일 2026-06-10) / 슈퍼노바 라이즈 2·3 스펙(스택·드롭·무게·Dreamstrike+ 폼·MSRP·내구성). 스택·토박스·충격흡수(SA)·에너지 리턴은 작성 후 데이터베이스에 반영된 RunRepeat 랩 실측이고(2026-10-23 기준), 실구매가·세일 폭 등 일부 수치는 공식 발표·전작 기준 추정입니다.</small></p>
 `,
   },
   {
@@ -6379,9 +6379,9 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>MSRP (한국)</strong></td><td>219,000원</td><td>219,000원</td><td><strong>동일</strong></td></tr>
     <tr><td><strong>세일가 (실측 기준)</strong></td><td><strong>185,000원~</strong> (이전 세대라 더 내려감)</td><td>190,000원~</td><td>v3가 세일 메리트 ↑</td></tr>
     <tr><td><strong>무게</strong></td><td>268g</td><td><strong>250g</strong></td><td>-18g (체감되는 차이)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37.4mm</td><td>38mm</td><td>+0.6mm (사실상 동일)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>27.3mm</td><td>30mm</td><td>+2.7mm (전족 쿠션 ↑)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>10mm (Lab 10.1mm)</td><td><strong>8mm</strong></td><td>-2mm (자연스러운 전환)</td></tr>
+    <tr><td><strong>힐 스택</strong></td><td>37.4mm (Lab)</td><td>33.6mm (Lab) · 공식 38mm</td><td>Lab 기준 -3.8mm (낮아짐)</td></tr>
+    <tr><td><strong>전족부 스택</strong></td><td>27.3mm (Lab)</td><td>26.6mm (Lab) · 공식 30mm</td><td>Lab 기준 -0.7mm (사실상 동일)</td></tr>
+    <tr><td><strong>드롭</strong></td><td>10mm (Lab 10.1mm)</td><td><strong>8mm</strong> (Lab 7.0mm)</td><td>공식 -2mm · Lab -3.1mm (자연스러운 전환)</td></tr>
     <tr><td><strong>미드솔 폼</strong></td><td>Nitro Foam + Nitro Elite 듀얼폼</td><td><strong>듀얼 레이어 NITROFOAM (상단 PEBAX 100% + 하단 PEBA 블렌드)</strong></td><td>폼 구성 개편</td></tr>
     <tr><td><strong>플레이트</strong></td><td>카본 플레이트 (PWRPLATE, curved)</td><td>카본 합성 PWRPLATE (curved)</td><td>유지</td></tr>
     <tr><td><strong>반응성 점수</strong></td><td>8/10</td><td><strong>9/10</strong></td><td>+1</td></tr>
@@ -6427,7 +6427,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>v3의 최대 약점은 누가 뭐래도 <strong>좁은 발볼</strong>이었습니다. RunRepeat 랩 토박스가 69.7mm(평균 73.2mm)로 70mm 미만의 좁은 편이고 본 사이트 신발 DB도 "좁음"으로 분류하며, 해외 리뷰에서도 반 사이즈 업 권장이 반복됐어요. v4도 일반 폭 토박스는 RunRepeat 랩 70.6mm로 좁은 편이지만, <strong>와이드 상품이 따로 나왔습니다</strong>(kr.puma.com, 정가 219,000원). 발볼 넓은 한국 러너에게는 이 한 줄이 구매 결정을 바꾸는 변화입니다.</p>
 
 <h3>2. 무게 268g → 250g ✅ 체감되는 18g 다이어트</h3>
-<p>18g은 슈퍼트레이너 카테고리에서 무시 못 할 차이입니다. 업템포 훈련에서 발이 가볍게 떨어지는 감각이 좋아졌고, 그러면서 스택은 오히려 늘었으니(전족부 +2.7mm) "가벼운데 쿠션은 더"라는 좋은 방향입니다.</p>
+<p>18g은 슈퍼트레이너 카테고리에서 무시 못 할 차이입니다. 업템포 훈련에서 발이 가볍게 떨어지는 감각이 좋아졌습니다. 다만 스택은 늘지 않았습니다. RunRepeat 랩끼리 보면 힐 37.4→33.6mm(-3.8mm), 전족부 27.3→26.6mm(-0.7mm)로 오히려 낮아져, "쿠션을 더 얹었다"기보다 가볍고 낮아진 쪽입니다(v4 공식 표기는 38/30mm).</p>
 
 <h3>3. 폼 개편 — PEBAX 상단 도입 ✅ 착지가 부드러워짐</h3>
 <p>v3의 Nitro Foam + Nitro Elite는 "단단하고 직접적"이라는 평이었는데, v4는 <strong>상단을 PEBAX 100%로 깔아 착지 충격을 부드럽게 받고 하단 PEBA 블렌드가 밀어주는</strong> 구조입니다. 반응성 점수가 8→9로 오른 게 이 변화의 결과예요. 단단한 직결감을 좋아했다면 오히려 v3가 취향일 수도 있습니다.</p>
@@ -6490,10 +6490,10 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>발볼 넓음 / 평발</td><td><strong>v4</strong></td><td>와이드 상품 별도, 평발 적합성 good</td></tr>
-    <tr><td>무릎 통증 (러너스 니)</td><td>v3 = v4</td><td>둘 다 kneeIssues good, 힐 스택 37~38mm 충격 흡수</td></tr>
+    <tr><td>무릎 통증 (러너스 니)</td><td>v3 = v4</td><td>둘 다 kneeIssues good, 힐 스택 Lab 37.4mm(v3)·33.6mm(v4) 충격 흡수</td></tr>
     <tr><td>아킬레스건염</td><td><strong>v4</strong></td><td>드롭 10→8mm로 아킬레스 부담 약간 ↓</td></tr>
     <tr><td>족저근막염</td><td>v3 = v4</td><td>둘 다 plantarFasciitis good</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>v4 (소폭 우위)</td><td>둘 다 good, v4 전족 스택 +2.7mm</td></tr>
+    <tr><td>정강이 부목 (Shin Splints)</td><td>v3 = v4</td><td>둘 다 good, 전족 스택 Lab 27.3mm(v3)·26.6mm(v4)로 비슷</td></tr>
     <tr><td>과내전 (안정성 필요)</td><td>둘 다 한계 있음</td><td>안정성 7/10 — 심한 과내전은 안정화 별도 권장</td></tr>
   </tbody>
 </table>
@@ -6585,7 +6585,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><a href="/compare">신발 직접 비교하기 — 스펙 나란히 보기</a></li>
 </ul>
 
-<p><small>출처: 푸마 글로벌 공식 발표(디비에이트 나이트로 4 변경점) / RunRepeat·Believe in the Run 디비에이트 나이트로 3·4 리뷰 / allrunabout.com DB(2026-06-10 기준). 두 모델 모두 SA·HA·에너지 리턴 등 랩 수치는 DB에 미수록 상태로, 본 글은 스택·드롭·무게·가격·내구성·스펙 점수(1-10) 등 확정 수치로만 비교했습니다. 일부 수치는 공식 발표·전작 기준 추정이며, 추가 실측 데이터 게시 시 업데이트 예정.</small></p>
+<p><small>출처: 푸마 글로벌 공식 발표(디비에이트 나이트로 4 변경점) / RunRepeat·Believe in the Run 디비에이트 나이트로 3·4 리뷰 / allrunabout.com DB(2026-06-10 기준). 두 모델 모두 SA·HA·에너지 리턴 등 랩 수치는 DB에 미수록 상태로, 본 글은 스택·드롭·무게·가격·내구성·스펙 점수(1-10) 등 확정 수치로만 비교했습니다. 스택은 처음에 v4 공식값과 v3 랩값을 섞어 비교했던 것을 RunRepeat 랩끼리 다시 계산했습니다(2026-10-23 정정). 일부 수치는 공식 발표·전작 기준 추정이며, 추가 실측 데이터 게시 시 업데이트 예정.</small></p>
 `,
   },
   {
@@ -6967,7 +6967,7 @@ export const posts_2026_06: BlogPost[] = [
 <p><strong>가장 합리적 액션:</strong></p>
 <ul>
   <li><strong>템포런 위주 + 가성비:</strong> 3 출시로 가격이 빠진 2를 본인 사이즈로 빠르게 확보 (와이드가 없어 사이즈 품절이 곧 기회 종료)</li>
-  <li><strong>레이스데이 + 후반 쿠션 여유 우선:</strong> 3 정가를 감수. 스택 +2mm와 TPEE 부드러움이 하프 이상에서 값을 함</li>
+  <li><strong>레이스데이 + 후반 쿠션 여유 우선:</strong> 3 정가를 감수. 힐 스택 +4.8mm(랩 실측)와 TPEE 부드러움이 하프 이상에서 값을 함</li>
   <li><strong>"폼 감촉을 직접 비교하고 싶다":</strong> 매장에서 2·3 동시 시착. PEBA의 직접 반발과 TPEE의 부드러운 터치는 5분만 걸어봐도 갈림</li>
 </ul>
 
@@ -7005,7 +7005,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. 2 → 3 업그레이드 가치 있나요?</h3>
-<p>플래시 2가 400km 이내로 멀쩡하다면 그냥 굴리세요. <strong>2의 직접적인 PEBA 반발에 만족했다면 굳이 3으로 갈 이유는 약합니다.</strong> 반대로 "착지가 좀 딱딱했다", "하프 후반 다리가 빨리 갔다"면 3의 TPEE 부드러움과 +2mm 스택이 체감되는 업그레이드입니다.</p>
+<p>플래시 2가 400km 이내로 멀쩡하다면 그냥 굴리세요. <strong>2의 직접적인 PEBA 반발에 만족했다면 굳이 3으로 갈 이유는 약합니다.</strong> 반대로 "착지가 좀 딱딱했다", "하프 후반 다리가 빨리 갔다"면 3의 TPEE 부드러움과 힐 +4.8mm 스택(랩 실측 35.2→40.0mm)이 체감되는 업그레이드입니다.</p>
 
 <h3>Q. 둘 다 풀코스 레이스에 신을 수 있나요?</h3>
 <p>가능은 하지만 목적이 다릅니다. 두 신발 모두 카본 슈퍼슈즈가 아니라 <strong>유리섬유 계열 플레이트의 템포 트레이너</strong>입니다. 3이 스택과 TPEE 덕에 하프~풀 후반 버티기에 조금 더 유리하지만, 본격적인 PB 도전 풀코스라면 카본 레이서를 따로 두는 게 정석입니다. 플래시 라인은 '레이스데이 겸 템포런'의 중간 무기로 보세요.</p>
@@ -7026,7 +7026,7 @@ export const posts_2026_06: BlogPost[] = [
   <div class="callout-body">
     <p class="callout-title">'직접 반발의 2' vs '진중해진 3' — 취향과 용도로 갈립니다</p>
     <p><strong>템포런 위주 + 가성비 우선 + PEBA의 직접적인 롤링이 좋다</strong>면 <a href="/shoes/mizuno-wave-rebellion-flash-2">플래시 2</a>를 세일 진입 시점(13~15만원대)에 본인 사이즈로 잡는 게 합리적입니다. 600km 내구성과 곡선형 Wave 플레이트의 장난기가 매력이죠. 단 와이드가 없으니 사이즈 품절 전에 움직이세요.</p>
-    <p><strong>레이스데이 겸용 + 착지 부드러움 + 하프 후반 다리 보호 여유</strong>가 우선이라면 <a href="/shoes/mizuno-wave-rebellion-flash-3">플래시 3</a> 정가(199,000원)를 감수할 가치가 있습니다. ENERZY XP(TPEE) 듀얼 폼과 +2mm 스택, 두 단계 오른 반응성 점수가 4:00–5:00 페이스 영역에서 값을 합니다.</p>
+    <p><strong>레이스데이 겸용 + 착지 부드러움 + 하프 후반 다리 보호 여유</strong>가 우선이라면 <a href="/shoes/mizuno-wave-rebellion-flash-3">플래시 3</a> 정가(199,000원)를 감수할 가치가 있습니다. ENERZY XP(TPEE) 듀얼 폼과 힐 +4.8mm 스택(랩 실측), 두 단계 오른 반응성 점수가 4:00–5:00 페이스 영역에서 값을 합니다.</p>
     <p><strong>둘 다 처음이라 감을 못 잡겠다</strong>면 매장에서 2·3을 동시에 5분씩 밟아보세요. PEBA의 직접 반발과 TPEE의 부드러운 터치는 짧게 걸어봐도 명확히 갈립니다. 단, 어느 쪽이든 힐스트라이커·과내전 입문자에게는 권하지 않습니다.</p>
   </div>
 </div>
@@ -7145,8 +7145,8 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'adidas-adizero-evo-sl-value-supershoe-2026',
     slug: 'adidas-adizero-evo-sl-value-supershoe-2026',
-    title: '카본 없이 왜 빠를까 — 아디다스 아디제로 Evo SL | 아디오스 프로 폼·223g·83% 에너지 리턴의 가성비 슈퍼폼',
-    description: '아디제로 Evo SL은 카본 플레이트가 없는데도 "빠르다"는 평이 자자합니다. 비결은 레이싱화 아디오스 프로 3와 같은 100% Lightstrike Pro 슈퍼폼. 223g 초경량에 83% 에너지 리턴으로, 30만원대 카본 슈퍼슈즈의 폼을 20만원대에 담았죠. Evo SL의 정체와 누구에게 맞는지, 적토마·리벨 v5 등 가성비 경쟁 모델과의 비교까지 정리했습니다.',
+    title: '카본 없이 왜 빠를까 — 아디다스 아디제로 Evo SL | 아디오스 프로 폼·223g·에너지 리턴 74%의 가성비 슈퍼폼',
+    description: '아디제로 Evo SL은 카본 플레이트가 없는데도 "빠르다"는 평이 자자합니다. 비결은 레이싱화 아디오스 프로 3와 같은 100% Lightstrike Pro 슈퍼폼. 223g 초경량에 RunRepeat 실측 에너지 리턴 힐 74.3%로, 30만원대 카본 슈퍼슈즈의 폼을 20만원대에 담았죠. Evo SL의 정체와 누구에게 맞는지, 적토마·리벨 v5 등 가성비 경쟁 모델과의 비교까지 정리했습니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-value-supershoe-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -7158,7 +7158,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>은 <strong>카본 플레이트가 없습니다</strong> — 그런데도 빠른 이유는 레이싱화 <strong>아디오스 프로 3와 똑같은 100% Lightstrike Pro 슈퍼폼</strong> 덕분이죠</li>
-    <li>223g 초경량 + <strong>83% 에너지 리턴(동급 최고)</strong> — "폼 자체가 슈퍼폼"이라 플레이트 없이도 경쾌합니다</li>
+    <li>223g 초경량 + <strong>에너지 리턴 힐 74.3%(RunRepeat 실측, 랩 평균 61.5%)</strong> — "폼 자체가 슈퍼폼"이라 플레이트 없이도 경쾌합니다</li>
     <li>30만원대 카본 슈퍼슈즈의 폼을 <strong>20만원대</strong>에 — 데일리부터 템포까지 한 켤레로 빠르게 굴리고 싶은 러너의 가성비 정답</li>
   </ul>
 </div>
@@ -7172,7 +7172,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>정체 — 아디오스 프로의 폼을 그대로</h2>
-<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>83% 에너지 리턴은 동급 최고 수준</strong>이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋습니다.</p>
+<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>에너지 리턴 힐 74.3%·전족 73.5%는 플레이트 없는 데일리 중 높은 축</strong>(랩 평균 61.5%)이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋습니다.</p>
 
 <table>
   <thead><tr><th>항목</th><th>Evo SL</th></tr></thead>
@@ -7180,7 +7180,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>미드솔</td><td>100% Lightstrike Pro (아디오스 프로 3 동일 폼)</td></tr>
     <tr><td>플레이트</td><td><strong>없음</strong> (카본 아님)</td></tr>
     <tr><td>무게 / 스택 / 드롭</td><td>223g / 36·28mm / 8mm</td></tr>
-    <tr><td>에너지 리턴</td><td><strong>83%</strong> (동급 최고)</td></tr>
+    <tr><td>에너지 리턴</td><td><strong>힐 74.3% · 전족 73.5%</strong> (RunRepeat 실측, 랩 평균 61.5%)</td></tr>
     <tr><td>발볼</td><td>표준 — 엄지 위치 토박스 71.6mm(RunRepeat 평균 73.2mm) · 와이드는 한국 공식몰 미판매(2026년 10월 확인)</td></tr>
     <tr><td>가격</td><td>209,000원</td></tr>
   </tbody>
@@ -7326,14 +7326,15 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>지지 방식</td><td>FLUIDSUPPORT</td><td>GuideRails</td><td>듀얼 폼+EVA 플레이트</td></tr>
-    <tr><td>스택(힐/전족)</td><td><strong>40 / 32mm</strong></td><td>38 / 28mm</td><td>40 / 32mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>10mm</strong></td><td>7.6mm</td></tr>
+    <tr><td>스택(힐/전족)</td><td>36.8 / 28.3mm<br><small>(공식 40 / 32mm)</small></td><td>37.8 / 27.7mm</td><td><strong>39.7 / 32.1mm</strong><br><small>(공식 40 / 34mm)</small></td></tr>
+    <tr><td>드롭</td><td>8.5mm<br><small>(공식 8mm)</small></td><td><strong>10.1mm</strong></td><td>7.6mm<br><small>(공식 6mm)</small></td></tr>
     <tr><td>무게</td><td><strong>298g</strong></td><td>305g</td><td>332g</td></tr>
     <tr><td>쿠션 / 반발</td><td>8 / <strong>7</strong></td><td><strong>9</strong> / 6</td><td>8 / 6</td></tr>
     <tr><td>내구성</td><td>650km</td><td><strong>800km</strong></td><td>600km</td></tr>
     <tr><td>가격</td><td>199,000</td><td>209,000</td><td><strong>189,000</strong></td></tr>
   </tbody>
 </table>
+<p><small>※ 스택·드롭·무게는 세 신발 모두 RunRepeat 랩 실측(남성 US 9), 괄호는 브랜드 공식 표기입니다(2026-10-23 정정 — 처음엔 카야노 33만 공식값이었습니다).</small></p>
 
 <h2>지지 방식이 다르다 — 핵심 차이</h2>
 <ul>
@@ -8761,7 +8762,7 @@ export const posts_2026_06: BlogPost[] = [
 <ul>
   <li><strong>Helion 단일 폼</strong> — 부드럽고 푹신한 EVA·올레핀 블렌드. 하이퍼의 이중 밀도와 달리 단순하지만 데일리에 충분한 쿠션</li>
   <li><strong>강한 록커</strong> — 앞으로 굴러가는 전환이 매끄러워 일정 페이스 유지가 쉽습니다</li>
-  <li><strong>스택 힐 약 38mm / 전족 32mm, 드롭 6mm</strong> — 하이퍼(45/39)보다 낮아 데일리에 안정적</li>
+  <li><strong>스택 힐 약 38.6mm / 전족 32.2mm(RunRepeat 실측), 드롭 6mm(공식, 실측 6.4mm)</strong> — 하이퍼(실측 43.4/34.2mm)보다 낮아 데일리에 안정적</li>
 </ul>
 <p>쿠션감은 충분하지만 <strong>반발력은 평이</strong>합니다(에너지 리턴 약 57~59%). 빠르게 치고 나가는 신발이 아니라, <strong>충격을 흡수하며 편하게 굴러가는</strong> 성격이죠. 무릎이 약하거나 러닝을 막 시작한 러너에게 그 푹신함이 특히 반갑습니다.</p>
 
@@ -8877,7 +8878,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>상단 Helion™ HF (PEBA계 하이퍼폼)</strong> — 부드럽고 반발력 있는 슈퍼폼</li>
   <li><strong>하단 Helion + CloudTec 섀시</strong> — 단단하게 받쳐 높은 스택에서도 흔들림을 잡아줍니다</li>
 </ul>
-<p>그 결과가 <strong>힐 45mm / 전족 39mm 스택, 264g, 6mm 드롭</strong>의 무플레이트 슈퍼트레이너입니다. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급이고, RunRepeat은 89/100점을 주며 "On 역대 최고의 슈퍼트레이너"라 평했습니다. 카본의 톡 쏘는 추진력 대신 <strong>부드럽지만 무너지지 않는 반발</strong>이 핵심이죠.</p>
+<p>그 결과가 <strong>힐 45mm / 전족 39mm 스택(On 공식 · RunRepeat 실측 43.4/34.2mm), 264g(실측, 남성 US 9), 6mm 드롭(공식 · 실측 9.2mm)</strong>의 무플레이트 슈퍼트레이너입니다. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급이고, RunRepeat은 89/100점을 주며 "On 역대 최고의 슈퍼트레이너"라 평했습니다. 카본의 톡 쏘는 추진력 대신 <strong>부드럽지만 무너지지 않는 반발</strong>이 핵심이죠.</p>
 
 <h2>실제로 어떻게 달리나</h2>
 <ul>
@@ -9038,7 +9039,7 @@ export const posts_2026_06: BlogPost[] = [
 </div>
 
 <h2>한국 러너 — 살까, 말까</h2>
-<p>발볼은 토박스 72.8mm로 <strong>표준</strong>이라 보통 발에는 무난하지만, <strong>와이드 옵션이 없습니다</strong>(일체형 어퍼 특성상). 발볼이 매우 넓다면 망설여집니다. 그리고 가격 <strong>319,000원</strong>은 국내 슈퍼트레이너 중 최고가권 — "로봇 제조 어퍼"라는 기술 프리미엄이 분명히 얹혀 있습니다.</p>
+<p>발볼은 <strong>표준</strong>이라 보통 발에는 무난하지만(라이트스프레이 자체 토박스 실측은 없고, 72.8mm는 일반 하이퍼의 RunRepeat 실측값입니다), <strong>와이드 옵션이 없습니다</strong>(일체형 어퍼 특성상). 발볼이 매우 넓다면 망설여집니다. 그리고 가격 <strong>319,000원</strong>은 국내 슈퍼트레이너 중 최고가권 — "로봇 제조 어퍼"라는 기술 프리미엄이 분명히 얹혀 있습니다.</p>
 <div class="callout info">
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
@@ -9062,7 +9063,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>권장합니다. 어퍼에 패딩이 없어 <strong>뒤꿈치·아킬레스 보호</strong>를 위해 온이 전용 양말을 함께 줍니다. 특히 초기 적응 기간엔 신는 게 좋습니다.</p>
 
 <h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스는 표준(72.8mm)이라 보통 발은 무난하지만 <strong>와이드 옵션이 없습니다</strong>. 발볼이 매우 넓다면 신중하게, 가능하면 매장에서 신어보고 결정하세요.</p>
+<p>토박스는 표준이라 보통 발은 무난하지만(72.8mm는 일반 하이퍼 RunRepeat 실측값이고 라이트스프레이 자체 실측은 없습니다) <strong>와이드 옵션이 없습니다</strong>. 발볼이 매우 넓다면 신중하게, 가능하면 매장에서 신어보고 결정하세요.</p>
 
 <h2>마무리</h2>
 <p>라이트스프레이 클라우드몬스터 3 하이퍼는 "<strong>로봇이 만든 어퍼</strong>"라는 화제성과 205g 경량, 그리고 맥스쿠션치고 뛰어난 안정성으로 분명 매력적인 신발입니다. 다만 <strong>31만 9천원의 기술 프리미엄</strong>이 핵심 갈림길이죠. 그 무게와 신기술에 가치를 둔다면 만족스럽지만, "같은 성능을 더 싸게"라면 <a href="/shoes/on-cloudmonster-3-hyper">일반 하이퍼</a>가, "안정적인 데일리"라면 <a href="/shoes/on-cloudmonster-3">일반 클라우드몬스터 3</a>가 더 합리적입니다. 내 우선순위가 <strong>최신 기술·경량</strong>인지, <strong>가성비</strong>인지부터 정하면 답이 보입니다.</p>
@@ -9679,7 +9680,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🧪</span>
   <div class="callout-body">
     <p class="callout-title">신상 데이터 안내</p>
-    <p>2026년 6월 출시 직후라 <strong>RunRepeat 랩 테스트(SA·HA·에너지 리턴·토박스 너비)는 아직 미게시</strong>입니다. 본문의 일부 수치는 형제 모델 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 기준 추정치이며, 무게·스택·드롭·가격은 공식 확정값입니다. 랩 데이터가 공개되면 <a href="/shoes/puma-deviate-pure-nitro">상세 페이지</a>를 업데이트할 예정입니다.</p>
+    <p>작성 시점(2026-06-05)엔 <strong>RunRepeat 랩 테스트가 미게시</strong>라 일부 수치를 형제 모델 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a> 기준으로 추정했습니다. 이후 RunRepeat이 2026-09-21 랩 테스트를 게시해, <a href="/shoes/puma-deviate-pure-nitro">상세 페이지</a>의 추정치는 실측값(215g, 스택 37.2/27.6mm, 드롭 9.6mm, 토박스 74.0mm)으로 교체됐습니다. 아래 비교표의 무게·스택·드롭은 디비4와 같은 기준으로 비교하려고 브랜드 공식값을 썼습니다(2026-10-23 기준).</p>
   </div>
 </div>
 
@@ -9691,14 +9692,14 @@ export const posts_2026_06: BlogPost[] = [
   <tbody>
     <tr><td>플레이트</td><td>카본 합성 PWRPLATE</td><td><strong>없음</strong></td></tr>
     <tr><td>미드솔 폼</td><td>듀얼 레이어 (PEBAX + PEBA)</td><td><strong>100% PEBA 단일</strong></td></tr>
-    <tr><td>무게</td><td>250g</td><td><strong>220g (-30g)</strong></td></tr>
-    <tr><td>스택 / 드롭</td><td>38 / 30mm · 8mm</td><td>38 / 30mm · 8mm (동일)</td></tr>
+    <tr><td>무게 (공식, UK 8)</td><td>250g</td><td><strong>220g (-30g)</strong></td></tr>
+    <tr><td>스택 / 드롭 (공식)</td><td>38 / 30mm · 8mm</td><td>38 / 30mm · 8mm (동일)</td></tr>
     <tr><td>라이드</td><td>탄탄하고 추진력 있는</td><td><strong>유연하고 부드러운</strong></td></tr>
     <tr><td>가격</td><td>₩219,000</td><td><strong>₩189,000</strong></td></tr>
     <tr><td>성격</td><td>업템포·레이싱 지향</td><td><strong>데일리 + 스피드 만능</strong></td></tr>
   </tbody>
 </table>
-<p>스택·드롭은 같지만, <strong>플레이트 유무와 폼 구성</strong>에서 성격이 갈립니다. 퓨어는 더 가볍고 유연하며, 디비4는 더 단단하고 추진력이 있습니다.</p>
+<p>공식 스택·드롭은 같지만(RunRepeat 실측은 디비4 33.6/26.6mm·7.0mm, 퓨어 37.2/27.6mm·9.6mm로 다르게 나왔습니다), <strong>플레이트 유무와 폼 구성</strong>에서 성격이 갈립니다. 퓨어는 더 가볍고 유연하며, 디비4는 더 단단하고 추진력이 있습니다.</p>
 
 <h2>누구에게 맞을까</h2>
 <ul>
@@ -9709,15 +9710,15 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>한국 러너 관점</h2>
 <ul>
-  <li><strong>가격</strong>: 18만 9천원에 800km 설계라 km당 약 236원. 슈퍼폼 트레이너 중 가성비가 좋습니다.</li>
-  <li><strong>발볼</strong>: 토박스는 표준으로 추정되며, <strong>와이드 옵션은 출시 시점 미확인</strong>입니다. 발볼 넓은 러너는 매장 착화를 권합니다.</li>
+  <li><strong>가격</strong>: 18만 9천원에 내구 추정 650km(RunRepeat 아웃솔 마모 0.7mm 반영) 기준 km당 약 291원. 슈퍼폼 트레이너 중 가성비가 좋습니다.</li>
+  <li><strong>발볼</strong>: 토박스는 RunRepeat 실측 74.0mm로 <strong>표준</strong>(랩 평균 73.2mm)이고, <strong>와이드 옵션은 없습니다</strong>(푸마 코리아 공식몰은 일반 폭만 판매). 발볼 넓은 러너는 매장 착화를 권합니다.</li>
   <li><strong>여름</strong>: 통기성 좋은 경량 메쉬라 더운 날 데일리로 제격입니다 → <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화 TOP 10</a></li>
 </ul>
 
 <h2>한 줄 결론</h2>
 <p>디비에이트 나이트로 퓨어는 "카본이 답"이라는 흐름에 <strong>"좋은 폼이면 플레이트 없이도 충분하다"</strong>고 답하는 신발입니다. 가볍고 부드럽고 비싸지 않은, <strong>매일 신기 좋은 슈퍼폼 트레이너</strong>를 찾는다면 유력한 후보입니다. 자세한 스펙·추천 대상은 <a href="/shoes/puma-deviate-pure-nitro">디비에이트 나이트로 퓨어 상세 페이지</a>에서 확인하세요.</p>
 
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙·가격은 푸마 공식(kr.puma.com)과 Road Trail Run 등 해외 리뷰를 종합했으며, 랩 수치 일부는 형제 모델 기준 추정치입니다.</p>
+<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙·가격은 푸마 공식(kr.puma.com)과 Road Trail Run 등 해외 리뷰를 종합했고, 토박스·실측 스택·내구 추정은 RunRepeat 랩 테스트(2026-09-21 게시) 기준입니다. (작성 2026-06-05 · 갱신 2026-10-23)</p>
 `,
   },
   {
@@ -11119,8 +11120,8 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>무게</td><td>약 220~246g (US 9~9.5)</td><td>맥스 스택 치고 가벼운 편</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>47 / 42mm</td><td>맥스 쿠션 — 충격 흡수 우수</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>힐 착지에 무난</td></tr>
+    <tr><td>스택 (힐/전족)</td><td>47 / 42mm (RTR 실측 · 제조사 공칭 43 / 35mm)</td><td>맥스 쿠션 — 충격 흡수 우수</td></tr>
+    <tr><td>드롭</td><td>5mm (RTR 실측 · 제조사 공칭 8mm)</td><td>공칭보다 3mm 낮게 측정됨</td></tr>
     <tr><td>미드솔</td><td>PEBA 기반 3층 (캡슐 폼)</td><td>소프트 + 고반발 "트램펄린" 느낌</td></tr>
     <tr><td>플레이트</td><td>유리섬유 (카본 ❌)</td><td>지지·안정용, 추진용 아님</td></tr>
     <tr><td>미드풋 너비</td><td>약 78mm</td><td>좁은 편 — 발볼 넓으면 주의</td></tr>

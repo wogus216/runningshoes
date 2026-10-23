@@ -673,11 +673,11 @@ export const posts_2026_08: BlogPost[] = [
     title:
       '나이키 페가수스 플러스 2 공식 발표 — 갈렸던 미드솔 논쟁의 답은 ZoomX + 전족부 에어 | 8월 30일 글로벌 출시, 한국은 9월 초',
     description:
-      '7월에 리크 이미지만 돌던 나이키 페가수스 플러스 2가 공식 발표됐습니다. 소스마다 ZoomX냐 ReactX냐로 갈렸던 미드솔은 ZoomX로 확정됐고, 전족부에 곡선형 Air Zoom 유닛이 겉으로 드러나는 구조가 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 늘었다고 밝혔습니다. 글로벌 출시는 8월 30일, 한국은 9월 초입니다. 무엇이 확정됐고 무엇이 아직 공개되지 않았는지, 1세대·페가수스 42·프리미엄과 어떻게 갈리는지 정리했습니다.',
+      '7월에 리크 이미지만 돌던 나이키 페가수스 플러스 2가 공식 발표됐습니다. 소스마다 ZoomX냐 ReactX냐로 갈렸던 미드솔은 ZoomX로 확정됐고, 전족부에 곡선형 Air Zoom 유닛이 겉으로 드러나는 구조가 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 늘었다고 밝혔습니다. 글로벌 출시는 8월 30일, 한국은 9월 초입니다. 발표 이후 확인된 한국 정가(219,000원)와 RunRepeat 실측(247g·토박스 71.3mm)까지, 1세대·페가수스 42·프리미엄과 어떻게 갈리는지 정리했습니다.',
     thumbnail: '/images/blog/nike-pegasus-plus-2-release-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-25',
-    updatedAt: '2026-10-18',
+    updatedAt: '2026-10-23',
     category: 'review' as const,
     readingTime: 7,
     tags: [
@@ -735,7 +735,7 @@ export const posts_2026_08: BlogPost[] = [
   <tbody>
     <tr><td><a href="/shoes/nike-pegasus-42">페가수스 42</a></td><td>ReactX</td><td>286g</td><td>169,000원</td><td>매일 신는 기본</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-plus">페가수스 플러스</a> (1세대)</td><td>풀렝스 ZoomX</td><td>244g</td><td>219,000원</td><td>가볍고 반응 빠른 스피드 데일리</td></tr>
-    <tr><td><strong>페가수스 플러스 2</strong></td><td>ZoomX + 전족부 Air Zoom</td><td>약 265g (280mm, 공식)</td><td><strong>219,000원</strong></td><td>템포 트레이너</td></tr>
+    <tr><td><strong>페가수스 플러스 2</strong></td><td>ZoomX + 전족부 Air Zoom</td><td>247g (RunRepeat 실측, US M9) · 공식 258g (US M9)</td><td><strong>219,000원</strong></td><td>템포 트레이너</td></tr>
     <tr><td><a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a></td><td>ZoomX+ReactX+에어</td><td>308g</td><td>289,000원</td><td>맥시멀 쿠션 상위판</td></tr>
   </tbody>
 </table>
@@ -752,10 +752,10 @@ export const posts_2026_08: BlogPost[] = [
   <li><strong>앞볼 공간 확대</strong> — 발가락이 놓이는 부위가 넓어졌습니다</li>
   <li><strong>중족부 밴드 추가</strong> — 발등을 잡아주는 구조가 더해져 속도를 올릴 때 발이 신발 안에서 밀리는 것을 줄이는 방향입니다</li>
   <li><strong>어퍼 소재 변경</strong> — 1세대의 Flyknit 니트에서 엔지니어드 메시로 바뀌었습니다(7월 리크 단계에서 이미 여러 소스가 일치했던 부분)</li>
-  <li><strong>경량화</strong> — 전작 대비 10% 가벼워졌다는 서술이 나왔습니다. 다만 절대 무게(g)는 공개되지 않았습니다</li>
+  <li><strong>경량화</strong> — 전작 대비 10% 가벼워졌다는 서술이 나왔습니다. 발표에 절대 무게(g)는 없었고, 이후 확인된 값은 RunRepeat 실측 247g·나이키 공식 258g(둘 다 US M9)입니다(2026-10-23 기준)</li>
 </ul>
 
-<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 좁은 폭(실측 71.6mm)이었는데, 페가수스 42 계열 라스트로 옮겨오면서 앞쪽 여유가 어떻게 달라졌는지는 실물 측정이 나와야 판단할 수 있습니다. 다만 방향 자체는 넓어지는 쪽입니다.</p>
+<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 좁은 폭(실측 71.6mm)이었는데, 페가수스 42 계열 라스트로 옮겨온 2세대의 RunRepeat 실측 토박스는 <strong>71.3mm</strong>로 1세대와 사실상 같았습니다(평균 73.2mm, 2026-10-23 기준). 공식 설명의 "앞볼 확대"가 토박스 폭 수치로는 확인되지 않은 셈입니다.</p>
 
 <h2>우리 예상이 빗나간 지점 — 출시가 훨씬 빨랐다</h2>
 
@@ -774,14 +774,14 @@ export const posts_2026_08: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⏳</span>
   <div class="callout-body">
-    <p class="callout-title">아직 공개되지 않은 것 — 신발 데이터베이스 등록을 보류했습니다</p>
+    <p class="callout-title">발표에 없던 수치 — 이후 RunRepeat 실측으로 확인했습니다</p>
     <p>공식 발표에도 <strong>무게(g), 힐·전족부 스택 높이, 드롭</strong>은 포함되지 않았고 독립 랩 측정치도 당시에는 없었습니다. 한국 정가는 9월 3일 나이키 코리아 등록으로 확인됐고(219,000원), 그에 따라 <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a>를 연결했습니다. <strong>(10월 18일 갱신)</strong> 10월 12일 RunRepeat 랩이 게시돼 상세 페이지에 반영했습니다 — 무게 247g, 힐/전족부 스택 37.7/27.3mm, 드롭 10.4mm, 힐 충격흡수 147 SA(평균 131 SA, 1세대 125 SA), 토박스 71.3mm(평균 73.2mm)입니다.</p>
   </div>
 </div>
 
 <h2>지금 판단이 필요한 사람에게</h2>
 
-<p><strong>템포런·인터벌용 신발을 찾고 있다면</strong> 기다려볼 가치가 있습니다. 카본 플레이트 없이 반발력을 올린 신발은 플레이트 특유의 뻣뻣함이 부담스러운 러너에게 대안이 됩니다. 다만 정량 수치가 없는 상태라 첫 물량에 바로 들어가기보다 실측이 나온 뒤 판단해도 늦지 않습니다.</p>
+<p><strong>템포런·인터벌용 신발을 찾고 있다면</strong> 후보로 볼 가치가 있습니다. 카본 플레이트 없이 반발력을 올린 신발은 플레이트 특유의 뻣뻣함이 부담스러운 러너에게 대안이 됩니다. RunRepeat 실측(247g·힐 충격흡수 147 SA·토박스 71.3mm)이 나왔으니(2026-10-23 기준) <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a> 수치로 판단하면 됩니다.</p>
 
 <p><strong>매일 신을 한 켤레를 찾고 있다면</strong> 이 신발은 목적이 다릅니다. 템포 트레이너는 속도 구간에 맞춰 설계되므로 <a href="/shoes/nike-pegasus-42">페가수스 42</a>처럼 매일의 조깅을 받아내는 신발과는 역할이 갈립니다.</p>
 
@@ -803,15 +803,15 @@ export const posts_2026_08: BlogPost[] = [
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 무게가 얼마나 되나요?</p>
-    <p class="faq-a">A. 공식 발표에 절대 무게가 포함되지 않았습니다. "전작 대비 10% 경량화"라는 서술만 나와 있습니다. 1세대가 244g(US M9)이었으므로 산술적으로는 220g 안팎이 되지만, 이 계산은 10%의 기준 조건이 명시되지 않은 상태의 추정이라 실측으로 확인되기 전까지는 참고용으로만 보시기 바랍니다.</p>
+    <p class="faq-a">A. <strong>RunRepeat 실측 247g, 나이키 공식 스펙 258g</strong>입니다(둘 다 US M9, 2026-10-23 기준). 공식 발표에는 절대 무게 없이 "전작 대비 10% 경량화"라는 서술만 있었고, 이 글 초판에서 1세대 244g에 10%를 적용해 계산한 "220g 안팎"은 실측과 맞지 않았습니다. 측정 주체·사이즈에 따라 값이 달라지니 같은 기준끼리 비교하세요.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 발볼이 넓은데 괜찮을까요?</p>
-    <p class="faq-a">A. 방향은 유리해졌습니다. 페가수스 42의 MR10 2.0 라스트를 쓰면서 앞볼 공간이 넓어졌다는 것이 공식 설명입니다. 다만 실제 토박스 폭(mm) 측정치는 아직 없어 1세대와 얼마나 차이 나는지는 확정할 수 없습니다. 발볼이 넓은 편이라면 실물 착화 후 구매를 권합니다.</p>
+    <p class="faq-a">A. 공식 설명은 페가수스 42의 MR10 2.0 라스트를 쓰면서 앞볼 공간이 넓어졌다는 것입니다. 다만 이후 나온 RunRepeat 실측 토박스는 71.3mm(평균 73.2mm)로 1세대(71.6mm)와 사실상 같았고, 나이키 코리아에 와이드 옵션도 없습니다(2026-10-23 기준). 발볼이 넓은 편이라면 실물 착화 후 구매를 권합니다.</p>
   </div>
 </div>
 
-<p><small>출처: 나이키 공식 뉴스룸 발표(about.nike.com, 2026년 8월) · Gear Patrol · GQ 코리아(2026년 8월 21일, 한국 9월 초 출시) · SneakerNews(출시일) · 1세대·페가수스 42·프리미엄 수치는 본 사이트 신발 데이터베이스 기준. 무게·스택·드롭 등 정량 수치는 2026년 8월 25일 기준 미공개였으며, 독립 랩 측정치가 공개되면 갱신합니다. <strong>2026년 9월 3일 갱신</strong>: 한국 정가 219,000원·공식 무게 약 265g(280mm)·오프셋 10mm·와이드 옵션 없음은 나이키 코리아 온라인 스토어 제품 페이지(nike.com/kr, IM2541-600) 기준. <strong>2026년 10월 18일 갱신</strong>: RunRepeat 랩 실측(2026년 10월 12일 게시) 반영.</small></p>
+<p><small>출처: 나이키 공식 뉴스룸 발표(about.nike.com, 2026년 8월) · Gear Patrol · GQ 코리아(2026년 8월 21일, 한국 9월 초 출시) · SneakerNews(출시일) · 1세대·페가수스 42·프리미엄 수치는 본 사이트 신발 데이터베이스 기준. 무게·스택·드롭 등 정량 수치는 2026년 8월 25일 기준 미공개였습니다. <strong>2026년 9월 3일 갱신</strong>: 한국 정가 219,000원·공식 무게 약 265g(280mm)·오프셋 10mm·와이드 옵션 없음은 나이키 코리아 온라인 스토어 제품 페이지(nike.com/kr, IM2541-600) 기준. <strong>2026년 10월 18일 갱신</strong>: RunRepeat 랩 실측(2026년 10월 12일 게시) 반영. <strong>2026년 10월 23일 갱신</strong>: 본문·FAQ에 남아 있던 무게·토박스 "미공개" 서술을 실측 기준으로 정리.</small></p>
 `,
   },
   {
@@ -1397,20 +1397,20 @@ export const posts_2026_08: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td>가격</td><td>259,000원</td><td>259,000원</td></tr>
-    <tr><td>무게</td><td><strong>218g</strong> <small>(RTR 실측 212g)</small></td><td>239g</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>40 / 36mm</td><td><strong>46.5 / 38.5mm</strong></td></tr>
-    <tr><td>드롭</td><td><strong>4mm</strong></td><td>8mm</td></tr>
+    <tr><td>무게</td><td><strong>218g</strong> <small>(RunRepeat 실측 207g · RTR 실측 212g)</small></td><td>239g <small>(RunRepeat 실측 235g)</small></td></tr>
+    <tr><td>스택 (힐/전족)</td><td>40 / 36mm <small>(실측 38.3 / 29.5mm)</small></td><td><strong>46.5 / 38.5mm</strong> <small>(실측 45.8 / 37.7mm)</small></td></tr>
+    <tr><td>드롭</td><td><strong>4mm</strong> <small>(실측 8.8mm)</small></td><td>8mm <small>(실측 8.1mm)</small></td></tr>
     <tr><td>미드솔</td><td>Infinion</td><td>FF LEAP + FF BLAST PLUS</td></tr>
     <tr><td>플레이트</td><td><strong>Energy Arc</strong> <small>(지면 쪽 배치)</small></td><td><strong>없음</strong></td></tr>
     <tr><td>쿠션 / 반발</td><td>10 / <strong>10</strong></td><td>10 / 8</td></tr>
     <tr><td>안정성</td><td>5</td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편 / <strong>2E 있음</strong></td><td>좁은 편(71.6mm) / <strong>없음</strong></td></tr>
+    <tr><td>발볼 / 와이드</td><td>좁은 편(71.2mm) / <strong>2E 있음</strong></td><td>좁은 편(71.6mm) / <strong>없음</strong></td></tr>
     <tr><td>내구 · km당</td><td>400~500km <small>(추정)</small> · 약 576원</td><td><strong>500~600km</strong> · 약 471원</td></tr>
     <tr><td>적정 페이스</td><td>3:50~5:00 /km</td><td>4:00~5:30 /km</td></tr>
   </tbody>
 </table>
 
-<p><small>SC 레벨의 무게·스택·드롭·폼은 뉴발란스 공식 발표, 가격·와이드 구성은 뉴발란스 코리아 온라인스토어(2026-08-22 확인) 기준입니다. 슈퍼블라스트 3 수치는 아식스 공식 및 본 사이트 신발 DB 기준입니다. <strong>두 모델 모두 RunRepeat 랩 측정치(충격흡수·에너지 리턴·토박스 실측 mm)가 없습니다</strong> — 표의 쿠션·반발·안정성 점수는 본 사이트가 리뷰와 스펙을 종합해 매긴 상대 평가이지 계측값이 아닙니다. SC 레벨의 내구는 랩 마모 측정 전이라 추정입니다.</small></p>
+<p><small>무게·스택·드롭의 큰 숫자는 두 모델 모두 공식 표기(SC 레벨은 뉴발란스 공식 발표)이고, 괄호 안 "실측"은 RunRepeat 랩 실측(남성 US 9)입니다. 같은 기준끼리 비교하세요. 가격·와이드 구성은 뉴발란스 코리아 온라인스토어(2026-08-22 확인) 기준입니다. RunRepeat 랩 측정치는 이 글 작성 시점엔 두 모델 모두 없었고, 이후 게시된 값을 2026-10-23에 반영했습니다(신발 DB 기준). 표의 쿠션·반발·안정성 점수는 본 사이트 신발 DB의 1~10 평가이며, SC 레벨의 쿠션·반발은 2026-10-20 RunRepeat 실측 기준으로 재산정된 값입니다. SC 레벨의 내구는 랩 마모 측정 전이라 추정입니다.</small></p>
 
 <h2>SC 레벨 — 플레이트를 바닥에 깔아 무게를 벌었다</h2>
 
@@ -1457,12 +1457,12 @@ export const posts_2026_08: BlogPost[] = [
 
 <div class="faq">
   <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 랩 데이터가 없다는 게 무슨 뜻인가요?</p>
-    <p class="faq-a">A. RunRepeat이 신발을 반으로 잘라 측정하는 충격흡수(SA)·에너지 리턴(%)·경도(HA)·토박스 실측(mm) 같은 계측값이 두 모델 모두 아직 공개되지 않았다는 뜻입니다. 그래서 이 글의 비교는 공식 스펙(무게·스택·드롭·폼·가격)과 해외 매체의 주행 평가를 근거로 합니다. 표의 쿠션·반발 점수도 계측이 아니라 상대 평가입니다. SC 레벨은 출시 직후라 랩 게시까지 보통 수개월이 걸립니다.</p>
+    <p class="faq-q">Q. 두 모델의 랩 데이터는 나왔나요?</p>
+    <p class="faq-a">A. 나왔습니다. RunRepeat이 신발을 반으로 잘라 측정하는 계측값이 이 글 작성(8/22) 이후 두 모델 모두 게시됐습니다(2026-10-23 기준 신발 DB). SC 레벨은 207g·힐 충격흡수 168 SA·에너지 리턴 힐 72.7%·전족 78.4%·토박스 71.2mm, 슈퍼블라스트 3는 235g·전족 에너지 리턴 67.5%·토박스 71.6mm입니다. 무게는 실측끼리 28g 차이입니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. SC 레벨이 좁다는데 2E면 괜찮나요?</p>
-    <p class="faq-a">A. "좁다"는 평가는 Road Trail Run과 Doctors of Running이 <strong>표준폭(D)</strong>을 신고 남긴 주관적 소감이고, 토박스 실측 mm는 아직 없습니다. 2E는 그보다 한 단계 넓은 규격이므로 표준폭에서 느낀 압박은 상당 부분 해소될 가능성이 높습니다. 다만 실측이 없는 상태라 단정하기 어렵고, 저드롭·플레이트 조합은 착화감 편차도 크니 가능하면 신어보고 결정하는 편이 안전합니다.</p>
+    <p class="faq-a">A. "좁다"는 평가는 Road Trail Run과 Doctors of Running이 <strong>표준폭(D)</strong>을 신고 남긴 주관적 소감이고, 이후 나온 RunRepeat 실측 토박스도 71.2mm(랩 평균 73.2mm)로 랩 본문이 "very snug fit"이라고 적었습니다(2026-10-23 기준). 2E는 그보다 한 단계 넓은 규격이므로 표준폭에서 느낀 압박은 상당 부분 해소될 가능성이 높습니다. 다만 2E 실측은 없어 단정하기 어렵고, 높은 스택·플레이트 조합은 착화감 편차도 크니 가능하면 신어보고 결정하는 편이 안전합니다.</p>
   </div>
   <div class="faq-item">
     <p class="faq-q">Q. 슈퍼블라스트 3가 더 무거운데 쿠션 점수는 어떻게 되나요?</p>
@@ -1474,7 +1474,7 @@ export const posts_2026_08: BlogPost[] = [
   </div>
 </div>
 
-<p><small>출처: 뉴발란스 공식 발표(SC 레벨 스펙, 2026-07-21) · 뉴발란스 코리아 온라인스토어(SC Rebel V1 가격·8개 SKU·2E 구성, 2026-08-22 확인) · Road Trail Run 멀티 테스터 리뷰 · Doctors of Running 리뷰 · Believe in the Run 리뷰(이상 2026-07) · 아식스 공식 및 본 사이트 신발 DB(슈퍼블라스트 3). 한국 공식가 기준. 두 모델 모두 RunRepeat 랩 측정치는 미게시이며, 게시되면 이 글과 신발 상세를 갱신합니다. 작성 2026년 8월 22일.</small></p>
+<p><small>출처: 뉴발란스 공식 발표(SC 레벨 스펙, 2026-07-21) · 뉴발란스 코리아 온라인스토어(SC Rebel V1 가격·8개 SKU·2E 구성, 2026-08-22 확인) · Road Trail Run 멀티 테스터 리뷰 · Doctors of Running 리뷰 · Believe in the Run 리뷰(이상 2026-07) · 아식스 공식 및 본 사이트 신발 DB(슈퍼블라스트 3). 한국 공식가 기준. 두 모델의 RunRepeat 랩 측정치는 작성 시점엔 미게시였고, 이후 게시된 값을 2026-10-23에 반영했습니다(신발 DB 기준). 작성 2026년 8월 22일.</small></p>
 `,
   },
   {
@@ -3639,7 +3639,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '드롭 14mm는 높은 편 아닌가요?',
         answer:
-          '높습니다. 보메로 18의 14mm는 요즘 러닝화 중에서도 상당히 큰 편이고, 뒤꿈치가 그만큼 들려 아킬레스건 부담이 적습니다(등급도 excellent). 반대로 낮은 드롭에 익숙한 미드풋 러너에게는 어색할 수 있습니다. 메가블라스트는 10mm로 표준 범위입니다.',
+          '높습니다. 보메로 18의 14mm(랩 실측, 브랜드 표기 10mm)는 요즘 러닝화 중에서도 상당히 큰 편이고, 뒤꿈치가 그만큼 들려 아킬레스건 부담이 적습니다(등급도 excellent). 반대로 낮은 드롭에 익숙한 미드풋 러너에게는 어색할 수 있습니다. 메가블라스트는 RunRepeat 실측 9.9mm(브랜드 8mm)로 표준 범위입니다.',
       },
     ],
     content: `
@@ -3669,8 +3669,8 @@ export const posts_2026_08: BlogPost[] = [
   <tbody>
     <tr><td>한국 정가</td><td>299,000원</td><td><strong>189,000원</strong></td></tr>
     <tr><td>무게</td><td><strong>218g</strong></td><td>298g (80g 무거움)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td><strong>45.1 / 35.2mm</strong></td><td>43 / 29mm</td></tr>
-    <tr><td>드롭</td><td>10mm</td><td><strong>14mm</strong></td></tr>
+    <tr><td>스택 (힐/전족)</td><td><strong>45.1 / 35.2mm</strong></td><td>43 / 29mm <small>(브랜드 46 / 36mm)</small></td></tr>
+    <tr><td>드롭</td><td>9.9mm <small>(브랜드 8mm)</small></td><td><strong>14mm</strong> <small>(브랜드 10mm)</small></td></tr>
     <tr><td>미드솔</td><td>FF Turbo² (A-TPU)</td><td>ZoomX + ReactX</td></tr>
     <tr><td>쿠션 / 반발</td><td><strong>10</strong> / <strong>9</strong></td><td>9 / 6</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
@@ -3682,7 +3682,7 @@ export const posts_2026_08: BlogPost[] = [
   </tbody>
 </table>
 
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로, <a href="/blog/running-shoe-500km-replacement-myth-2026">숫자 하나로 교체 시점을 정하면 안 됩니다</a>.</small></p>
+<p><small>스택·드롭은 두 신발 모두 랩 실측끼리 비교했고(메가블라스트는 RunRepeat), 괄호는 브랜드 표기입니다. 무게는 신발 DB 값(남성 US 9)이며 한국 공식 정가를 씁니다(2026-10-23 기준). 내구 km는 아웃솔 마모 기준 추정치로, <a href="/blog/running-shoe-500km-replacement-myth-2026">숫자 하나로 교체 시점을 정하면 안 됩니다</a>.</small></p>
 
 <h2>쿠션 10 대 9 — 점수 한 칸보다 큰 차이</h2>
 
