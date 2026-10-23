@@ -70,7 +70,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: 'ASICSGRIP 러버',
     upper: '엔지니어드 니트 메쉬',
-    width: '표준 — RunRepeat 토박스 72.5mm(랩 평균 73.2mm, 남성 US 9) · 최대폭 97.6mm(평균 95.2mm). RunRepeat: "a standard taper… the Nimbus 28 delivers a fully standard fit up front" · 폭 옵션 표준/와이드/X-와이드(기존 표기 — 한국 공식몰 재고 미확인)',
+    width: '표준 — RunRepeat 토박스 72.5mm(랩 평균 73.2mm, 남성 US 9) · 최대폭 97.6mm(평균 95.2mm). RunRepeat: "a standard taper… the Nimbus 28 delivers a fully standard fit up front" · 폭 옵션 표준/와이드/X-와이드(한국 공식몰 2E·4E·우먼 D 판매 — 2026-10-23 확인)',
     durability: '600-700km',
     price: '₩199,000 (MSRP)',
     costPerKm: '약 ₩306/km (650km 기준)',

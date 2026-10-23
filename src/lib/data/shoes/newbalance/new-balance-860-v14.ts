@@ -50,7 +50,7 @@ export const shoe: Shoe = {
     plate: 'EVA Film Plate (안정성용)',
     outsole: '고무 아웃솔',
     upper: '엔지니어드 메쉬',
-    width: '토박스 73.0mm(RunRepeat 실측, 같은 랩 평균 73.2mm) → 표준. 최대폭 94.4mm(평균 95.2mm). 랩 본문 "neither too spacious nor too snug, just average", 880 v14 대비 "snugger fit". 폭 옵션: 해외 Narrow/Normal/Wide/X-Wide 4종(RunRepeat "available in all 4 widths, though not every market may carry the full range"). 한국 공식몰(nbkorea.com) 2026-10-20 검색 "860 V14"·"860v14" 0건, "860" 15건은 V15(남성 2E·4E, 여성 D)와 키즈뿐 → v14 국내 공식 판매 폭 확인 불가',
+    width: '토박스 73.0mm(RunRepeat 실측, 같은 랩 평균 73.2mm) → 표준. 최대폭 94.4mm(평균 95.2mm). 랩 본문 "neither too spacious nor too snug, just average", 880 v14 대비 "snugger fit". 폭 옵션: 해외 Narrow/Normal/Wide/X-Wide 4종(RunRepeat "available in all 4 widths, though not every market may carry the full range"). 한국 공식몰(nbkorea.com) 2026-10-20 검색 "860 V14"·"860v14" 0건, "860" 15건은 V15(남성 2E·4E, 여성 D)와 키즈뿐 → v14 국내 공식 판매 폭 확인 불가 (2026-10-23 한국 공식몰 재확인: 모델 미등재 — 해외 폭 옵션만 확인)',
     durability: '600km+',
     price: '179,000원',
     costPerKm: '약 ₩298/km (600km 기준)',

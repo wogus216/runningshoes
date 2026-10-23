@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   price: 249000,
   description: 'FuelCell 폼과 카본 플레이트가 결합된 슈퍼 트레이너로, 레이싱화의 성능을 훈련에서도 경험할 수 있습니다. 템포런과 장거리 훈련에 최적화되어 있습니다.',
   oneliner: '8.8 HA 소프트+카본, 마라톤 훈련 최적',
-  editorComment: 'SC Trainer v3는 8.8 HA 울트라소프트 FuelCell에 풀렝스 카본 플레이트를 탑재한 슈퍼트레이너입니다. 144 SA 충격흡수와 힐 66.1% 에너지 리턴은 Saucony Endorphin Speed 5(100% PEBA)보다 약하지만, 117.7mm 넓은 전족부로 안정성이 훨씬 높습니다. 24만 9천원으로 슈퍼트레이너 중 중간 가격대이며, 와이드 옵션으로 발볼 넓은 러너도 레이싱화 느낌을 훈련에서 경험할 수 있습니다. 278g은 약간 무겁지만 500km 내구성으로 장거리 훈련에 적합합니다. 이 신발의 폼이 PEBA 20% 블렌드인 건 단점이 아니라 설계입니다 — 2024년 발표된 연구의 450km 실도로 마모 실험에서 순수 PEBA는 성능을 크게 잃었고 EVA는 버텼습니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard)이며 와이드 옵션이 있어 발볼 넓은 러너도 안심하고 선택하세요. 249,000원 ÷ 500km = km당 약 498원입니다. 반발력을 더 중시한다면 엔돌핀 스피드 5, 카본 없이 가볍게 쓰고 싶다면 매직스피드 4와 비교해보세요.',
+  editorComment: 'SC Trainer v3는 8.8 HA 울트라소프트 FuelCell에 풀렝스 카본 플레이트를 탑재한 슈퍼트레이너입니다. 144 SA 충격흡수와 힐 66.1% 에너지 리턴은 Saucony Endorphin Speed 5(100% PEBA)보다 약하지만, 117.7mm 넓은 전족부로 안정성이 훨씬 높습니다. 24만 9천원으로 슈퍼트레이너 중 중간 가격대이며, 레이싱화 느낌을 훈련에서 경험할 수 있습니다. 278g은 약간 무겁지만 500km 내구성으로 장거리 훈련에 적합합니다. 이 신발의 폼이 PEBA 20% 블렌드인 건 단점이 아니라 설계입니다 — 2024년 발표된 연구의 450km 실도로 마모 실험에서 순수 PEBA는 성능을 크게 잃었고 EVA는 버텼습니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 실측 73.5mm)입니다. 해외에는 남성 Wide 폭이 있지만(RunRepeat 기준) 2026-10-23 확인 시 한국 공식몰에는 이 모델이 없어, 와이드 재고는 판매처마다 확인해야 합니다. 249,000원 ÷ 500km = km당 약 498원입니다. 반발력을 더 중시한다면 엔돌핀 스피드 5, 카본 없이 가볍게 쓰고 싶다면 매직스피드 4와 비교해보세요.',
   tags: ['슈퍼 트레이너', '카본 플레이트', '템포런'],
 
   specs: {
@@ -50,7 +50,7 @@ export const shoe: Shoe = {
     plate: '풀렝스 카본 플레이트 (Energy Arc)',
     outsole: '고무 아웃솔',
     upper: 'FANTOMFIT 메쉬',
-    width: '표준 — 토박스 73.5mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 0.3mm 넓음), 최대폭 95.9mm(평균 95.2mm). 랩 본문 "This provides a secure fit for most runners, though those with wider feet might feel restricted", "low-volume toebox". 폭 옵션: 기존 DB 표준(D)·와이드(RunRepeat 남성 Normal·Wide) — 한국 공식몰 2026-10-20 카테고리는 있으나 상품 0건으로 국내 폭 확인 불가',
+    width: '표준 — 토박스 73.5mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 0.3mm 넓음), 최대폭 95.9mm(평균 95.2mm). 랩 본문 "This provides a secure fit for most runners, though those with wider feet might feel restricted", "low-volume toebox". 폭 옵션: 기존 DB 표준(D)·와이드(RunRepeat 남성 Normal·Wide) (2026-10-23 한국 공식몰 재확인: 모델 미등재 — 해외 폭 옵션만 확인)',
     durability: '500km+',
     price: '249,000원',
     costPerKm: '약 ₩498/km (500km 기준)',
