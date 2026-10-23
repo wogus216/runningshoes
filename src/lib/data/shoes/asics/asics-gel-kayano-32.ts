@@ -100,5 +100,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'bio-based-running-shoe-foam-sugarcane-castor-2026', title: '사탕수수·피마자 폼 — 바이오 러닝화 추적' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F93JaTG9' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YqQiSGgS' }],
+  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 표시가 78,880~92,880원(정가의 40~47%)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F93JaTG9' }],
 };

@@ -90,5 +90,6 @@ export const shoe: Shoe = {
     { slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026', title: '트레일화 3파전 — 스피드고트 6 vs 펄사 vs 아그라빅 4' },
     { slug: '2026-best-trail-running-shoes', title: '2026 트레일 러닝화 TOP 7' },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YqaHMs9s' }],
+  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 표시가 83,000~97,000원(정가의 49~57%)·품번 없음
+  purchaseLinks: [],
 };

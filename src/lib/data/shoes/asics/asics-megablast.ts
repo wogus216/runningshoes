@@ -98,7 +98,8 @@ export const shoe: Shoe = {
   ],
   similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max', 'asics-sonicblast'],
   // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YuffW3mm' }],
+  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 표시가 397,000~444,000원(정가의 133~148% 리셀가)
+  purchaseLinks: [],
   relatedPosts: [
     { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '메가블라스트 vs 보메로 18 — 쿠션 10 대 9, 80g 차' },
     { slug: 'asics-megablast-review-2026', title: '아식스 메가블라스트 후기 — 힐 45.1mm에 218g' },

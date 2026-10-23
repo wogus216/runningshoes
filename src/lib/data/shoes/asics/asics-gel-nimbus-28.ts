@@ -102,5 +102,6 @@ export const shoe: Shoe = {
     { slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026', title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결' },
     { slug: 'asics-running-shoes-lineup-tier-guide-2026', title: '아식스 러닝화 계급도' },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/551GfvQ6' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YscnUTSe' }],
+  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 표시가 63,250~77,250원(정가의 32~39%, 원가를 245,000원으로 부풀린 할인 표기)
+  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/551GfvQ6' }],
 };

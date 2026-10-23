@@ -4591,10 +4591,6 @@ export const posts_2026_05: BlogPost[] = [
       <span class="affiliate-btn-store">쿠팡</span>
       <span class="affiliate-btn-product">1080 v14 보기 →</span>
     </a>
-    <a href="https://link.coupang.com/a/g5YOBYxbmm" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">1080 v15 보기 →</span>
-    </a>
   </div>
   <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
 </div>

@@ -122,5 +122,6 @@ export const shoe: Shoe = {
   relatedPosts: [
     { slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026', title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결' },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YOBYxbmm' }],
+  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 연결 상품(1080 V15 2E WIDE)이 일시품절
+  purchaseLinks: [],
 };
