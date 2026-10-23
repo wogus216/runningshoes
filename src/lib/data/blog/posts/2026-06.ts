@@ -6606,7 +6606,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li><strong>폼 경도는 거의 그대로입니다</strong> — RunRepeat 랩 경도가 v1 31.9 AC, 맥스 2 30.9 AC로 1.0 AC 차이. "맥스 2는 폼이 단단해졌다"는 말은 수치로 확인되지 않습니다</li>
     <li><strong>스택은 올랐는데 힐 충격흡수는 내려갔습니다</strong> — 랩 힐 스택 42.3→45.4mm(+3.1mm), 무게 305→318g(+13g), 힐 충격흡수 148→137 SA(−11). 높아졌다고 충격흡수 수치가 따라 오르지 않았습니다</li>
-    <li>가격 차 1만원(239,000 vs 249,000원). <strong>힐 충격흡수·가벼움·와이드·평발·가성비는 v1</strong>, <strong>강화된 로커 형상과 안정성 점수(7/10)를 원하면 맥스 2</strong>. 둘 다 리커버리·이지런 전용</li>
+    <li>가격 차 1만원(239,000 vs 249,000원). <strong>힐 충격흡수·가벼움·넓은 토박스·평발·가성비는 v1</strong>, <strong>강화된 로커 형상과 안정성 점수(7/10)를 원하면 맥스 2</strong>. 둘 다 리커버리·이지런 전용이고, 와이드(2E)는 두 세대 모두 한국 공식몰에서 살 수 없습니다</li>
   </ul>
 </div>
 
@@ -6646,14 +6646,14 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>트리플 자카드 메쉬</td><td>소재 변경</td></tr>
     <tr><td><strong>토박스 (랩, 평균 73.2mm)</strong></td><td>74.3mm (wide)</td><td>73.4mm (standard)</td><td>−0.9mm</td></tr>
     <tr><td><strong>전체 폭 Width/Fit (랩)</strong></td><td>94.5mm</td><td><strong>96.5mm</strong></td><td>+2.0mm</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td><strong>있음</strong></td><td>없음 (한국 공식몰 MEDIUM만, 2026-10-20 확인)</td><td>맥스 2는 와이드 없음</td></tr>
+    <tr><td><strong>와이드 옵션 (한국 공식몰)</strong></td><td>모델 미등재 (2026-10-23 확인)</td><td>없음 (MEDIUM만, 2026-10-20 확인)</td><td>둘 다 국내 공식 와이드 없음</td></tr>
     <tr><td><strong>평발 호환</strong></td><td><strong>excellent</strong></td><td>good</td><td>v1 우위</td></tr>
   </tbody>
 </table>
 
 <p><small>(랩) 표시는 RunRepeat 랩 실측(남성 US 9)입니다. 점수(1~10)·평발 호환·예상 수명은 allrunabout이 랩 수치와 구조를 바탕으로 매긴 값이고, 예상 수명은 랩 마모 측정이 아닌 추정입니다.</small></p>
 
-<p><strong>한 줄 정리:</strong> 맥스 2는 "더 높은 스택 + 강화된 로커"를 얻는 대신 "힐 충격흡수 11 SA + 무게 13g + 와이드 옵션"을 내줬습니다. 폼은 같은 경도라 단순 상위호환이 아니라 <strong>형상이 다른 형제</strong>예요.</p>
+<p><strong>한 줄 정리:</strong> 맥스 2는 "더 높은 스택 + 강화된 로커"를 얻는 대신 "힐 충격흡수 11 SA + 무게 13g + 토박스 0.9mm"를 내줬습니다. 폼은 같은 경도라 단순 상위호환이 아니라 <strong>형상이 다른 형제</strong>예요.</p>
 
 <h2>핵심 변화 — "같은 폼, 더 높은 스택" 그런데 힐 충격흡수는 v1이 위</h2>
 
@@ -6692,8 +6692,8 @@ export const posts_2026_06: BlogPost[] = [
 <h3>3. 강화된 로커 + 안정성 점수 6→7 ✅ 대신 무게 +13g</h3>
 <p>브룩스는 맥스 2에 <strong>강화된 로커 지오메트리</strong>를 적용했다고 밝혔고, 안정성 점수도 6→7로 한 칸 높습니다. 다만 이 점수 차를 직접 뒷받침하는 랩 수치는 이 글이 기준으로 삼는 데이터에 아직 없어, 흔들림이 얼마나 줄었는지를 숫자로 말할 수는 없습니다. 반대로 수치로 확인되는 비용은 무게(305→318g, +13g)와 전족부 에너지 리턴(52.0→49.6%)입니다. 로커 형상이 목적이라면 의미 있는 변화이고, 그 밖의 이유로는 업그레이드 근거가 약합니다.</p>
 
-<h3>4. 토박스 74.3→73.4mm, 전체 폭 94.5→96.5mm ⚠️ 와이드는 v1에만</h3>
-<p>토박스 등급은 v1 wide → 맥스 2 standard로 바뀌었지만 수치 차이는 작습니다. 랩 토박스는 0.9mm 줄었고(평균 73.2mm), 발 중간 쪽 전체 폭(Width/Fit)은 오히려 2.0mm 넓어졌습니다. v1이 wide로 분류된 건 RunRepeat가 "feels roomy thanks to the stretchy mesh and the broader midfoot area"라고 평가했기 때문이고, 맥스 2에는 "It’s not the roomiest design we’ve tested, but it should comfortably work for most runners"라고 적었습니다. 그래서 <strong>보통 발볼이라면 맥스 2도 정사이즈부터</strong> 보면 됩니다. 실질적인 차이는 와이드 옵션입니다. 맥스 2는 한국 공식몰에서 남녀 모두 MEDIUM만 판매해(2026-10-20 확인), 와이드가 꼭 필요한 발이라면 v1 와이드나 와이드 옵션이 있는 다른 모델을 보는 편이 안전합니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
+<h3>4. 토박스 74.3→73.4mm, 전체 폭 94.5→96.5mm ⚠️ 와이드는 두 세대 모두 국내 공식 경로 없음</h3>
+<p>토박스 등급은 v1 wide → 맥스 2 standard로 바뀌었지만 수치 차이는 작습니다. 랩 토박스는 0.9mm 줄었고(평균 73.2mm), 발 중간 쪽 전체 폭(Width/Fit)은 오히려 2.0mm 넓어졌습니다. v1이 wide로 분류된 건 RunRepeat가 "feels roomy thanks to the stretchy mesh and the broader midfoot area"라고 평가했기 때문이고, 맥스 2에는 "It’s not the roomiest design we’ve tested, but it should comfortably work for most runners"라고 적었습니다. 그래서 <strong>보통 발볼이라면 맥스 2도 정사이즈부터</strong> 보면 됩니다. 와이드 옵션은 두 세대 모두 한국 공식 경로가 없습니다. 맥스 2는 한국 공식몰에서 남녀 모두 MEDIUM만 판매하고(2026-10-20 확인), v1은 한국 공식몰에 모델 자체가 없습니다(2026-10-23 확인). 그래서 v1의 강점은 와이드 옵션이 아니라 <strong>넓은 토박스(랩 74.3mm)</strong>입니다. 와이드가 꼭 필요한 발이라면 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E, 209,000원)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE, 169,000원)을 보는 편이 안전합니다. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드 →</a></p>
 
 <h3>5. 예상 수명 600~800km → 500~700km(추정) ⚠️ km당 비용 상승</h3>
 <p>예상 수명 범위가 v1 600~800km, 맥스 2 500~700km로 100km 아래에 잡혀 있습니다. 둘 다 랩 마모 측정이 아닌 추정이라 범위로만 봐야 하고, 실제 교체 시점은 아웃솔 마모·미드솔 주름·새로 생긴 통증으로 판단합니다(<a href="/blog/running-shoe-500km-replacement-myth-2026">500km 교체설 검증 →</a>). 정가를 이 범위로 나누면 km당 비용은 v1 약 300~400원, 맥스 2 약 360~500원입니다. 정가가 1만원 낮고 수명 추정도 높아, 가성비는 v1이 위입니다.</p>
@@ -6705,7 +6705,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
   </thead>
   <tbody>
-    <tr><td>발볼이 아주 넓어 와이드가 필요</td><td><strong>v1</strong></td><td>v1은 와이드 옵션 있음, 맥스 2는 한국 공식몰 MEDIUM만</td></tr>
+    <tr><td>발볼이 넓은 편 (와이드까지는 아님)</td><td><strong>v1</strong></td><td>랩 토박스 74.3mm(wide 등급) vs 73.4mm</td></tr>
+    <tr><td>발볼이 아주 넓어 와이드가 필요</td><td>둘 다 국내 공식 경로 없음</td><td>v1은 한국 공식몰 미등재, 맥스 2는 MEDIUM만. 1080 v15(2E)·고스트 18(WIDE) 권장</td></tr>
     <tr><td>평발 + 맥시멀 쿠션</td><td><strong>v1</strong></td><td>평발 호환 excellent (맥스 2는 good)</td></tr>
     <tr><td>뒤꿈치 착지 충격흡수 수치 우선</td><td><strong>v1</strong></td><td>랩 힐 148 SA vs 137 SA</td></tr>
     <tr><td>가성비 우선 (km당 비용)</td><td><strong>v1</strong></td><td>정가 1만원 낮음, 약 300~400원/km vs 360~500원/km(추정)</td></tr>
@@ -6730,14 +6731,15 @@ export const posts_2026_06: BlogPost[] = [
       <li><strong>정가:</strong> v1 239,000원 / 맥스 2 249,000원 — 차이는 1만원뿐</li>
       <li><strong>km당 비용(추정):</strong> v1 약 300~400원(600~800km) / 맥스 2 약 360~500원(500~700km)</li>
       <li><strong>할인:</strong> 이 글 기준으로 확인한 할인가·할인 시점 정보는 없습니다. 정가 차가 작아서, v1이 할인 중이라면 가성비 격차는 더 벌어집니다</li>
-      <li><strong>재고:</strong> v1은 전 세대라 사이즈별 재고부터 확인하세요. 와이드가 필요하다면 특히 그렇습니다</li>
+      <li><strong>재고:</strong> v1은 한국 공식몰에 모델이 없습니다(2026-10-23 확인). 다른 판매처에서 사이즈별 재고부터 확인하고, 해외에 있을 수 있는 와이드 폭도 판매처에서 확인하세요</li>
     </ul>
   </div>
 </div>
 
 <p><strong>가장 합리적 액션:</strong></p>
 <ul>
-  <li><strong>힐 충격흡수·와이드·평발·가성비 우선:</strong> v1을 찾아보세요. 랩 힐 148 SA·와이드 옵션·평발 호환 excellent에 정가도 1만원 낮습니다. 원하는 사이즈가 없다면 아래 대안 목록에서 고르는 편이 낫습니다</li>
+  <li><strong>힐 충격흡수·넓은 토박스·평발·가성비 우선:</strong> v1을 찾아보세요. 랩 힐 148 SA·토박스 74.3mm·평발 호환 excellent에 정가도 1만원 낮습니다. 한국 공식몰에는 없으니 다른 판매처 재고를 확인하고, 원하는 사이즈가 없다면 아래 대안 목록에서 고르는 편이 낫습니다</li>
+  <li><strong>와이드(2E)가 꼭 필요:</strong> 두 세대 모두 한국 공식 경로가 없습니다. 1080 v15(남성 2E)나 고스트 18(WIDE)처럼 한국 공식몰에 와이드가 있는 모델로 가세요</li>
   <li><strong>강화된 로커 형상·안정성 점수 우선:</strong> 맥스 2. 정가 차가 1만원이라 부담은 작지만, 힐 충격흡수 수치가 v1보다 낮다는 점은 알고 고르세요</li>
   <li><strong>둘 다 처음 + 리커버리 1켤레:</strong> 같은 매장에서 두 세대를 함께 시착해 보세요. 폼 경도는 같으니, 비교할 것은 스택 3mm·무게 13g·드롭 1.5mm 차이와 로커 형상이 본인 발에 맞는지입니다</li>
 </ul>
@@ -6754,7 +6756,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>아킬레스건염</td><td>v1 = 맥스 2</td><td>둘 다 excellent. 랩 드롭 v1 6.6mm, 맥스 2 8.1mm(브랜드 표기 6mm)</td></tr>
     <tr><td>정강이 부목 (Shin Splints)</td><td>v1 = 맥스 2</td><td>둘 다 excellent. "스택이 높은 맥스 2가 충격을 더 흡수한다"는 랩 수치와 반대(148 vs 137 SA)</td></tr>
     <tr><td>평발 + 과내전 약함</td><td><strong>v1</strong></td><td>평발 호환 excellent (맥스 2는 good)</td></tr>
-    <tr><td>발볼 넓음 + 와이드 필요</td><td><strong>v1</strong></td><td>와이드 옵션 있음, 맥스 2는 한국 공식몰 MEDIUM만</td></tr>
+    <tr><td>발볼 넓음 + 압박 싫음</td><td><strong>v1</strong></td><td>랩 토박스 74.3mm(wide 등급), 맥스 2는 73.4mm</td></tr>
+    <tr><td>와이드(2E)가 꼭 필요</td><td>둘 다 국내 공식 경로 없음</td><td>NB 1080 v15(남성 2E)·고스트 18(WIDE)</td></tr>
     <tr><td>심한 과내전·발목 무너짐</td><td>둘 다 부적합</td><td>안정화 아님. <a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS 22</a> 같은 안정화 권장</td></tr>
   </tbody>
 </table>
@@ -6766,11 +6769,12 @@ export const posts_2026_06: BlogPost[] = [
 <p>글리세린 맥스 외 맥시멀 쿠션화 옵션도 비교 가치가 있습니다:</p>
 
 <ul>
-  <li><a href="/shoes/brooks-glycerin-max">브룩스 글리세린 맥스 (v1)</a> — 와이드 옵션 + 랩 힐 충격흡수 148 SA, 발볼 넓은 한국 러너의 1순위 세대</li>
+  <li><a href="/shoes/brooks-glycerin-max">브룩스 글리세린 맥스 (v1)</a> — 넓은 토박스(랩 74.3mm) + 랩 힐 충격흡수 148 SA. 한국 공식몰엔 모델이 없어 판매처 재고 확인 필요</li>
   <li><a href="/shoes/brooks-glycerin-max-2">브룩스 글리세린 맥스 2</a> — 랩 힐 스택 45.4mm(브랜드 47mm) + 강화 로커, 한국 공식몰은 와이드 없음</li>
   <li><a href="/shoes/hoka-bondi-9">호카 본디 9</a> — 랩 힐 충격흡수 146 SA로 두 세대 사이. 토박스 72.5mm로 좁은 편이라 발볼이 넓으면 와이드 옵션을 고르세요(229,000원). 맞대결은 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2 →</a></li>
   <li><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> — FF BLAST PLUS 미드솔, 랩 278g으로 글리세린 맥스보다 가벼운 쿠션화(199,000원)</li>
-  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Infinion 미드솔, 랩 255g으로 훨씬 가볍고 와이드 옵션이 있는 장거리 쿠션화(209,000원)</li>
+  <li><a href="/shoes/new-balance-1080-v15">NB 1080 v15</a> — Infinion 미드솔, 랩 255g으로 훨씬 가볍고 한국 공식몰에 남성 2E가 있는 장거리 쿠션화(209,000원)</li>
+  <li><a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a> — 맥시멀이 아닌 입문화지만 한국 공식몰에 WIDE가 있음(169,000원). 기본 폭 토박스는 랩 70.6mm로 좁은 편이라 발볼이 넓으면 WIDE를 고르세요</li>
   <li><a href="/shoes/brooks-ghost-max-3">브룩스 고스트 맥스 3</a> — DNA Loft v3 미드솔의 브룩스 맥스 쿠션화, 179,000원으로 글리세린 맥스 라인보다 저렴</li>
 </ul>
 
@@ -6779,10 +6783,10 @@ export const posts_2026_06: BlogPost[] = [
 <h2>FAQ</h2>
 
 <h3>Q. v1 → 맥스 2 업그레이드 가치 있나요?</h3>
-<p>v1의 아웃솔·미드솔 상태가 멀쩡하다면 그냥 굴리세요. 폼 경도가 같아서(31.9 vs 30.9 AC) "더 부드러운 신발"로 바뀌는 게 아닙니다. 맥스 2로 얻는 것은 스택 +3.1mm(랩)·강화된 로커·안정성 점수 +1·전체 폭 +2.0mm이고, 내주는 것은 힐 충격흡수 −11 SA·무게 +13g·와이드 옵션·1만원입니다. <strong>로커 형상이 꼭 필요한 경우가 아니라면 갈아탈 이유가 약합니다.</strong></p>
+<p>v1의 아웃솔·미드솔 상태가 멀쩡하다면 그냥 굴리세요. 폼 경도가 같아서(31.9 vs 30.9 AC) "더 부드러운 신발"로 바뀌는 게 아닙니다. 맥스 2로 얻는 것은 스택 +3.1mm(랩)·강화된 로커·안정성 점수 +1·전체 폭 +2.0mm이고, 내주는 것은 힐 충격흡수 −11 SA·무게 +13g·토박스 0.9mm·1만원입니다. <strong>로커 형상이 꼭 필요한 경우가 아니라면 갈아탈 이유가 약합니다.</strong></p>
 
 <h3>Q. 발볼 넓은데 맥스 2 괜찮나요?</h3>
-<p>보통 발볼이면 괜찮습니다. 랩 토박스 73.4mm는 평균(73.2mm) 수준이고 전체 폭 96.5mm는 v1(94.5mm)보다 넓으며, RunRepeat도 "it should comfortably work for most runners"라고 적었습니다. 정사이즈부터 시착하면 됩니다. 다만 <strong>와이드가 꼭 필요한 발이라면 맥스 2는 한국 공식몰에 MEDIUM만 있어</strong>(2026-10-20 확인), v1 와이드나 와이드 옵션이 있는 다른 모델을 보세요.</p>
+<p>보통 발볼이면 괜찮습니다. 랩 토박스 73.4mm는 평균(73.2mm) 수준이고 전체 폭 96.5mm는 v1(94.5mm)보다 넓으며, RunRepeat도 "it should comfortably work for most runners"라고 적었습니다. 정사이즈부터 시착하면 됩니다. 다만 <strong>와이드가 꼭 필요한 발이라면 맥스 2는 한국 공식몰에 MEDIUM만 있고</strong>(2026-10-20 확인), v1은 한국 공식몰에 모델 자체가 없습니다(2026-10-23 확인). 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE)을 보세요.</p>
 
 <h3>Q. 둘 다 빠르게 달릴 수 있나요?</h3>
 <p>아니요. 둘 다 <strong>리커버리·이지런 전용</strong>입니다. 랩 무게 v1 305g, 맥스 2 318g에 전족부 에너지 리턴이 52.0%·49.6%로 랩 평균(61.5%)보다 낮고, 반응성 점수도 둘 다 6입니다. 템포·인터벌을 겸하려면 <a href="/shoes/brooks-hyperion-max-3">하이페리온 맥스 3</a>처럼 PEBA 계열 DNA Gold 미드솔에 랩 283g으로 더 가벼운 신발을 따로 두는 게 맞습니다.</p>
@@ -6791,7 +6795,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>둘 다 무릎 보호 excellent 등급입니다. 다만 "스택이 높은 맥스 2가 충격을 더 흡수한다"는 생각은 랩 수치와 반대입니다 — 힐 충격흡수는 <strong>v1 148 SA, 맥스 2 137 SA</strong>로 v1이 높습니다. 뒤꿈치 착지 충격을 줄이는 게 최우선이라면 수치상 v1, 로커로 굴러가는 형상을 원하면 맥스 2입니다. 신발이 관절 질환을 치료하지는 않으니, 부상 복귀라면 전문의 판단과 매장 시착을 함께 거치세요.</p>
 
 <h3>Q. 본디 9 대신 글리세린 맥스를 사야 하나요?</h3>
-<p>같은 RunRepeat 힐 기준 충격흡수는 v1 148 SA, 본디 9 146 SA, 맥스 2 137 SA입니다. 토박스는 본디 9가 72.5mm로 가장 좁지만 와이드 옵션이 있습니다. 가격은 본디 9가 229,000원으로 v1보다 1만원, 맥스 2보다 2만원 낮습니다. <strong>충격흡수 수치와 와이드를 함께 보면 v1, 맥스 2를 고려 중이라면 같은 가격대에서 충격흡수 수치가 더 높은 본디 9</strong>도 함께 비교해 보세요. 자세한 맞대결은 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a>에 정리했습니다.</p>
+<p>같은 RunRepeat 힐 기준 충격흡수는 v1 148 SA, 본디 9 146 SA, 맥스 2 137 SA입니다. 토박스는 본디 9가 72.5mm로 가장 좁지만 와이드 옵션이 있습니다. 가격은 본디 9가 229,000원으로 v1보다 1만원, 맥스 2보다 2만원 낮습니다. <strong>충격흡수 수치와 넓은 토박스를 함께 보면 v1, 맥스 2를 고려 중이라면 같은 가격대에서 충격흡수 수치가 더 높은 본디 9</strong>도 함께 비교해 보세요. 자세한 맞대결은 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a>에 정리했습니다.</p>
 
 <h2>결론 — 내 추천</h2>
 
@@ -6799,8 +6803,9 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">같은 폼이라면, 수치로 앞서는 항목이 많은 쪽은 v1</p>
-    <p><strong>힐 충격흡수·와이드·평발·가성비 우선</strong>이라면 <a href="/shoes/brooks-glycerin-max">글리세린 맥스 v1</a>을 찾는 게 합리적입니다. 랩 힐 148 SA·와이드 옵션·평발 excellent·정가 239,000원에 예상 수명 600~800km(추정)까지, 폼 경도가 같은 두 세대 중 v1이 수치로 앞서는 항목이 더 많습니다.</p>
-    <p><strong>강화된 로커 형상과 안정성 점수(7/10)</strong>가 목적이라면 <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>. 랩 힐 스택 45.4mm·전체 폭 96.5mm로 더 높고 발 중간이 여유 있지만, 힐 충격흡수는 137 SA로 v1보다 낮고 무게는 318g으로 13g 무겁습니다. 와이드가 필요하다면 한국 공식몰에는 없습니다.</p>
+    <p><strong>힐 충격흡수·넓은 토박스·평발·가성비 우선</strong>이라면 <a href="/shoes/brooks-glycerin-max">글리세린 맥스 v1</a>을 찾는 게 합리적입니다. 랩 힐 148 SA·토박스 74.3mm·평발 excellent·정가 239,000원에 예상 수명 600~800km(추정)까지, 폼 경도가 같은 두 세대 중 v1이 수치로 앞서는 항목이 더 많습니다. 다만 한국 공식몰엔 v1이 없어 판매처 재고부터 확인해야 합니다.</p>
+    <p><strong>강화된 로커 형상과 안정성 점수(7/10)</strong>가 목적이라면 <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>. 랩 힐 스택 45.4mm·전체 폭 96.5mm로 더 높고 발 중간이 여유 있지만, 힐 충격흡수는 137 SA로 v1보다 낮고 무게는 318g으로 13g 무겁습니다.</p>
+    <p><strong>와이드(2E)가 꼭 필요</strong>하다면 두 세대 모두 한국 공식 경로가 없습니다. 한국 공식몰에 와이드가 있는 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(남성 2E)나 <a href="/shoes/brooks-ghost-18">브룩스 고스트 18</a>(WIDE)이 현실적인 선택입니다.</p>
     <p><strong>둘 다 처음 + 리커버리 1켤레</strong>라면 매장에서 동시 시착이 가장 정확합니다. 폼 경도가 같으니, 확인할 것은 높이·무게·로커 형상이 본인 발에 맞는지입니다.</p>
   </div>
 </div>
@@ -6842,7 +6847,7 @@ export const posts_2026_06: BlogPost[] = [
   <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 2026 — 레이스용 분리 가이드</a></li>
 </ul>
 
-<p><small>출처: RunRepeat 랩 테스트(글리세린 맥스 v1·v2, 남성 US 9 — 스택·드롭·무게·힐 충격흡수 SA·경도 AC·전족부 에너지 리턴·토박스·Width/Fit, 본문 인용 포함) / 브룩스 공식 표기(맥스 2 스택 47/41mm·드롭 6mm·강화된 로커 지오메트리) / 한국 공식몰 가격, 맥스 2 사이즈 폭(남녀 MEDIUM, 2026-10-20 확인) / allrunabout DB 기준일 2026-10-23. 예상 수명과 km당 비용은 랩 마모 측정이 아닌 추정입니다. 2026-10-23 정정: 초판(2026-06-10)의 "맥스 2는 폼이 단단해지고 충격흡수가 올라갔다", "스택 +5mm", "스너그 피팅으로 반 사이즈 업" 서술과 근거 없는 할인가 예측을 랩 수치와 확인된 정보에 맞춰 고쳤습니다.</small></p>
+<p><small>출처: RunRepeat 랩 테스트(글리세린 맥스 v1·v2, 남성 US 9 — 스택·드롭·무게·힐 충격흡수 SA·경도 AC·전족부 에너지 리턴·토박스·Width/Fit, 본문 인용 포함) / 브룩스 공식 표기(맥스 2 스택 47/41mm·드롭 6mm·강화된 로커 지오메트리) / 한국 공식몰 가격, 맥스 2 사이즈 폭(남녀 MEDIUM, 2026-10-20 확인), v1 한국 공식몰 미등재·고스트 18 WIDE(brooksrunning.co.kr)·1080 v15 남성 2E(nbkorea.com) 2026-10-23 확인 / allrunabout DB 기준일 2026-10-23. 예상 수명과 km당 비용은 랩 마모 측정이 아닌 추정입니다. 2026-10-23 정정: 초판(2026-06-10)의 "맥스 2는 폼이 단단해지고 충격흡수가 올라갔다", "스택 +5mm", "스너그 피팅으로 반 사이즈 업", "v1은 와이드 옵션 있음" 서술과 근거 없는 할인가 예측을 랩 수치와 확인된 정보에 맞춰 고쳤습니다.</small></p>
 `,
   },
   {
