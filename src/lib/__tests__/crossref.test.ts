@@ -76,6 +76,17 @@ describe('scanLine — 2026-10-23 실데이터 오탐 회귀', () => {
   });
 });
 
+describe('scanLine — 표 행', () => {
+  it('무게 칸 뒤에 오는 가격 칸도 읽는다(2026-10-23 베이퍼플라이 4 "약 35만원" 놓친 사례)', () => {
+    const hits = scan('<tr><td>본디 9</td><td>303g</td><td>2024.9</td><td>약 25만원</td></tr>');
+    expect(hits).toEqual([expect.objectContaining({ kind: 'price', slug: 'hoka-bondi-9' })]);
+  });
+  it('맞는 가격 칸·할인 칸은 통과', () => {
+    expect(scan('<tr><td>본디 9</td><td>303g</td><td>229,000원</td></tr>')).toEqual([]);
+    expect(scan('<tr><td>본디 9</td><td>303g</td><td>세일 179,000원</td></tr>')).toEqual([]);
+  });
+});
+
 describe('scanLine — 맞는 값·다른 모델은 통과', () => {
   it('맞는 가격·무게·차액은 통과', () => {
     expect(scan('본디 9(229,000원)')).toEqual([]);

@@ -106,7 +106,7 @@ export function buildAliasIndex(shoes: CrossrefShoe[]): AliasEntry[] {
 const NON_MSRP_CONTEXT = /할인|세일|특가|최저|아울렛|병행|직구|해외|미국|\$|USD|달러|이전|구형|당시|출시가|인상|인하|GTX|와이드|고어텍스|여성|우먼|키즈|쿠팡|네이버|중고|리셀|KREAM|크림|무신사|쿠폰|프로모션|엔화|위안|CNY|¥|추정|이월/i;
 
 /** 별칭과 숫자 사이에 허용하는 것 — 구두점·공백과 조사 하나뿐. "엘리트는 퓨어(139g)"처럼 다른 단어가 끼면 그 숫자는 이 신발 것이 아니다 */
-const LEAD = '[\\s(（:：=·,—\\-|]*(?:은|는|이|가|도|만|과|와)?[\\s(（:：=·|]*';
+const LEAD = '[\\s(（:：=·,—\\-|¦]*(?:은|는|이|가|도|만|과|와)?[\\s(（:：=·|¦]*(?:약\\s*)?';
 
 interface PriceRead { min: number; max: number; raw: string }
 
@@ -148,7 +148,9 @@ const weightCandidates = (s: CrossrefShoe) => {
 
 /** HTML 태그·마크다운 강조를 걷어 표 칸("<td>본디 9</td><td>229,000원</td>")을 한 줄 문장처럼 읽게 한다 */
 export function plainLine(line: string): string {
-  return line.replace(/<[^>]+>/g, ' ').replace(/\*\*/g, '').replace(/&nbsp;/g, ' ').replace(/\s{2,}/g, ' ');
+  return line
+    .replace(/<\/t[dh]>\s*<t[dh][^>]*>/g, ' ¦ ') // 표 칸 경계는 남긴다 — 가격 칸이 무게 칸 뒤에 와도 찾을 수 있게
+    .replace(/<[^>]+>/g, ' ').replace(/\*\*/g, '').replace(/&nbsp;/g, ' ').replace(/\s{2,}/g, ' ');
 }
 
 const won = (n: number) => `${n.toLocaleString('ko-KR')}원`;
@@ -191,6 +193,17 @@ export function scanLine(text: string, file: string, line: number, index: AliasE
     if (wt) {
       const cands = weightCandidates(shoe);
       if (cands.length && !cands.some((c) => Math.abs(c - wt.value) <= 5)) hits.push({ ...base, kind: 'weight', found: wt.raw.trim(), db: cands.map((c) => `${c}g`).join('/') });
+    }
+    // 표 행이면 별칭 칸 뒤 4칸 안에서 가격 칸을 찾는다("베이퍼플라이 4 ¦ 166g ¦ 2025.3 ¦ 약 35만원" — 2026-10-23 놓친 사례)
+    if (shoe.price && t.includes('¦')) {
+      const cells = t.slice(sp.end, nextStart).split('¦').slice(1, 5);
+      for (const cell of cells) {
+        if (NON_MSRP_CONTEXT.test(cell)) continue;
+        const pr = readPrice(cell);
+        if (!pr) continue;
+        if (shoe.price < pr.min || shoe.price > pr.max) hits.push({ ...base, kind: 'price', found: pr.raw.trim(), db: won(shoe.price) });
+        break;
+      }
     }
   });
   // 2) 차액 — 주어가 분명한 신발 파일에서만

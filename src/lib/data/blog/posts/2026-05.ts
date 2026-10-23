@@ -11661,7 +11661,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">서브3 미만이라면 Vaporfly 4가 정답</p>
-    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(약 35만원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(약 29만원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 이상이고 마일리지는 절반 이하예요.</p>
+    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(30만 9천원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(32만 9천원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 이상이고 마일리지는 절반 이하예요.</p>
   </div>
 </div>
 
