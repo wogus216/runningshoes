@@ -11346,7 +11346,7 @@ export const posts_2026_05: BlogPost[] = [
     thumbnail: '/images/blog/2026-seoul-open-marathon-registration.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-04',
-    updatedAt: '2026-09-21',
+    updatedAt: '2026-10-24',
     category: 'news' as const,
     readingTime: 5,
     tags: ['서울 오픈 마라톤', '광화문 마라톤', '서울 도심 마라톤', '하프마라톤', '가을 마라톤', '대회 일정'],
@@ -11394,8 +11394,8 @@ export const posts_2026_05: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">🚨</span>
   <div class="callout-body">
-    <p class="callout-title">[2026-09-21 업데이트] 대회 일정 연기 — 새 날짜 미정</p>
-    <p>10월 5일 개최 예정이던 2026 서울 오픈 마라톤이 <strong>일정 연기</strong>로 공지됐습니다. 공식 홈페이지 공지(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=48" rel="noopener noreferrer">seoulopen.or.kr</a>)에 새 일정은 아직 없고 "개별 안내 예정"으로만 적혀 있습니다. 연기 사유도 공식 공지에는 명시돼 있지 않아 불명입니다. 이미 접수한 러너는 <strong>2026년 9월 21일~10월 23일 환불 접수</strong>가 진행 중이며(카드 취소 승인 3~7일, 현금 환불 5일 이내), 확정된 새 대회로 등록을 유지하는 선등록 링크도 우선 제공된다고 안내되어 있습니다. 아래 본문은 연기 이전(5월 접수 시점) 기준 정보이며, 새 날짜가 확정되면 갱신하겠습니다.</p>
+    <p class="callout-title">[2026-10-24 확인] 대회 일정 연기 — 새 날짜 미정</p>
+    <p>10월 5일 개최 예정이던 2026 서울 오픈 마라톤이 <strong>일정 연기</strong>로 공지됐습니다. 공식 홈페이지 공지(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=48" rel="noopener noreferrer">seoulopen.or.kr</a>)에 새 일정은 10월 24일에도 없고 "개별 안내 예정"으로만 적혀 있습니다. 연기 사유도 공식 공지에는 명시돼 있지 않아 불명입니다. 이미 접수한 러너의 <strong>환불 접수(2026년 9월 21일~10월 23일)는 마감</strong>됐고, 마감 후 무통장 입금은 영업일 3~5일, 카드 취소는 약 7일 안에 처리된다고 안내합니다(<a href="https://seoulopen.or.kr/bbs/board.php?bo_table=id_noticeNew2026&wr_id=52" rel="noopener noreferrer">환불 진행 상황 공지</a>). 환불하지 않고 등록을 유지한 러너에게는 확정된 새 대회의 선등록 링크를 우선 제공한다고 밝혔습니다. 아래 본문은 연기 이전(5월 접수 시점) 기준 정보이며, 새 날짜가 확정되면 갱신하겠습니다.</p>
   </div>
 </div>
 
