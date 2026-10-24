@@ -123,6 +123,7 @@ export const shoe: Shoe = {
 
   similarShoes: ['saucony-triumph-23', 'saucony-hurricane-26', 'saucony-ride-19'],
   relatedPosts: [
+    { slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026', title: '본디 9 vs 트라이엄프 24 — 같은 41mm 맥스쿠션 대결' },
     { slug: 'saucony-triumph-24-review', title: '트라이엄프 24 리뷰 — 스택 +6mm인데 -22g' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+트라이엄프+24' }],

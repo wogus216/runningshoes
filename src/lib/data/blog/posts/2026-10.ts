@@ -2,6 +2,101 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
+    slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
+    title: '호카 본디 9 vs 써코니 트라이엄프 24 | 같은 41mm 맥스쿠션, 2만 원 싸고 가벼운 쪽은 — 평발·발볼·무릎별 선택',
+    description: '힐 스택이 41mm대로 거의 같은 두 맥스쿠션화를 가격·무게·충격흡수·에너지 리턴·발볼·안정성으로 비교했습니다. 본디 9(229,000원·303g·에너지 리턴 힐 60.2%)와 트라이엄프 24(209,000원·실측 258g·에너지 리턴 힐 72.0%) — 스택은 같고 폼이 다릅니다. 평발·안정 우선이면 본디 9, 가볍고 되돌려주는 맥스쿠션이면 트라이엄프 24. 한국 러너의 발볼·와이드 선택지까지 정리했습니다.',
+    thumbnail: '/images/blog/hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-24',
+    category: 'review' as const,
+    readingTime: 8,
+    tags: ['호카 본디 9', '써코니 트라이엄프 24', '맥스쿠션', '쿠션화', '신발 비교', '무릎 보호', '평발', 'incrediLUX'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>두 신발의 힐 스택은 41mm대로 거의 같습니다.</strong> 그런데 정가는 본디 9 229,000원 vs 트라이엄프 24 209,000원(2만 원 차이), 무게는 303g vs 실측 258g입니다. 같은 높이를 서로 다른 폼으로 쌓았다는 게 이 비교의 핵심이에요</li>
+    <li><strong>폼이 눌렸다 돌아오는 비율(에너지 리턴)은 본디 9 힐 60.2%, 트라이엄프 24 힐 72.0%.</strong> 충격을 흡수하는 정도(SA, 클수록 많이 흡수)는 146 vs 152로 둘 다 로드화 평균 131 위입니다</li>
+    <li><strong>평발이거나 발이 흔들리는 게 걱정이면 넓은 베이스의 본디 9, 아니면 더 싸고 가벼운 트라이엄프 24.</strong> 기본 폭은 둘 다 평균보다 좁아 발볼이 넓다면 와이드부터 확인하세요</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🥊</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄 결론 — 안정성을 사느냐, 가벼움을 사느냐</p>
+    <p><strong>발이 안쪽으로 무너지거나 평발이라 안정감이 우선이다 → 본디 9.</strong> <strong>정상 아치에 푹신하되 덜 무거운 맥스쿠션을 2만 원 싸게 원한다 → 트라이엄프 24.</strong> 둘 다 무릎·아킬레스 보호 평가는 최상급(excellent)이라, 갈림길은 보호 수준이 아니라 발 모양과 무게입니다. 단독 후기는 <a href="/blog/hoka-bondi-9-review">본디 9 후기</a>와 <a href="/blog/saucony-triumph-24-review">트라이엄프 24 리뷰</a>에 있고, 무릎 보호 관점의 종합 정리는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">무릎 보호 맥스쿠션 가이드</a>에 있습니다.</p>
+  </div>
+</div>
+
+<h2>두 켤레 한눈에 보기</h2>
+<p>먼저 짚을 점이 있습니다. 아래 표의 스택·충격흡수·에너지 리턴·발볼 폭은 RunRepeat 랩 실측이고, 무게와 가격은 출처가 다릅니다 — 트라이엄프 24의 258g은 랩 실측(브랜드 표기 250g)이고 본디 9의 303g은 사이트 DB 표기(남성 US 9)라, 무게 차이는 정확히 45g이 아니라 <strong>40g 안팎</strong>으로 읽는 게 안전합니다.</p>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>호카 본디 9</th><th>써코니 트라이엄프 24</th></tr></thead>
+  <tbody>
+    <tr><td>가격(정가)</td><td>229,000원</td><td><strong>209,000원</strong> (−2만)</td></tr>
+    <tr><td>무게</td><td>303g (DB 표기)</td><td><strong>258g</strong> (랩 실측)</td></tr>
+    <tr><td>힐 / 포어풋 스택</td><td>41 / 32mm</td><td>41.6 / 33.6mm (실측)</td></tr>
+    <tr><td>드롭</td><td>9mm (실측 9.1mm)</td><td>8.0mm (실측, 브랜드 표기 10mm)</td></tr>
+    <tr><td>미드솔</td><td>Supercritical EVA</td><td>incrediLUX (초임계 A-TPU)</td></tr>
+    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
+    <tr><td>충격흡수 SA (힐)</td><td>146</td><td><strong>152</strong> (로드화 평균 131)</td></tr>
+    <tr><td>에너지 리턴 (힐 / 전족부)</td><td>60.2% / 60.3%</td><td><strong>72.0% / 78.5%</strong> (전족부 평균 61.5%)</td></tr>
+    <tr><td>안정성</td><td><strong>8</strong> (플랫폼 123.2mm)</td><td>6 (중립, 지지 구조 없음)</td></tr>
+    <tr><td>토박스 폭</td><td>72.5mm</td><td>71.4mm (RunRepeat 평균 73.2mm)</td></tr>
+    <tr><td>평발 호환</td><td><strong>excellent</strong></td><td>fair</td></tr>
+    <tr><td>정강이 부담 완화</td><td>excellent</td><td>good</td></tr>
+  </tbody>
+</table>
+</div>
+<p><small>데이터 출처: 사이트 신발 DB(RunRepeat 랩 실측·브랜드 공식 스펙) · 트라이엄프 24 정가는 2026-10-20 써코니코리아 공식몰 확인, 본디 9 정가는 DB 기준(이번에 재확인하지 않음). 내구성은 두 신발 모두 추정치라 표에서 뺐습니다.</small></p>
+
+<h2>호카 본디 9 — 넓은 바닥으로 받치는 안정형</h2>
+<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 성격은 폼보다 <strong>바닥 면적</strong>에서 나옵니다. DB 기준 플랫폼이 123.2mm로 넓어 착지할 때 좌우 흔들림이 적고, 그래서 안정성 8·평발 호환 excellent 평가를 받습니다. Supercritical EVA는 SA 146으로 충격을 충분히 흡수하지만, 에너지 리턴은 힐 60.2%·전족부 60.3%로 전족부 평균(61.5%)과 비슷한 수준입니다. 푹신하게 받아주되 되돌려주는 힘은 평범하다는 뜻이에요. 6:00~8:00/km의 느린 페이스, 회복주와 장시간 서 있는 날에 어울립니다.</p>
+<p>약점은 무게와 폭입니다. 303g은 이 비교에서 무거운 쪽이고, 토박스 72.5mm는 평균 73.2mm보다 0.7mm 좁습니다. 와이드 모델이 있지만 국내 재고는 구매 전에 공식 스토어에서 확인해야 합니다(이번 조사에서 재고는 확인하지 못했습니다).</p>
+<p><strong>✅ 이런 분께</strong> — 평발이거나 착지 때 발이 안쪽으로 무너지는 러너, 안정감을 우선하는 러너, 느린 페이스로 거리를 쌓는 러너.</p>
+
+<h2>써코니 트라이엄프 24 — 폼을 바꿔 가볍게 만든 중립형</h2>
+<p><a href="/shoes/saucony-triumph-24">트라이엄프 24</a>의 핵심은 미드솔 교체입니다. 전작의 PWRRUN+ 대신 초임계 A-TPU 계열 incrediLUX를 써서 실측 힐 스택 41.6mm를 258g에 묶었습니다. 충격흡수는 SA 152로 본디 9보다 6 높고, 에너지 리턴은 힐 72.0%·전족부 78.5%로 본디 9보다 12~18%p 높습니다. 같은 높이의 맥스쿠션인데 <strong>푹신함은 같거나 더 크고, 되돌려주는 힘과 가벼움에서 앞선다</strong>는 게 숫자가 보여주는 그림입니다. 정가도 209,000원으로 2만 원 쌉니다.</p>
+<p>다만 되돌려주는 힘이 크다고 템포용이라는 뜻은 아닙니다. 플레이트 없는 258g 맥스쿠션이라 빠른 훈련에는 더 가벼운 트레이너가 맞고, 이 신발의 자리는 이지런·장거리·회복주입니다. 안정성은 6으로 지지 구조가 없는 순수 중립이라 평발 호환은 fair입니다. 토박스는 71.4mm로 랩이 "snug"(꽉 끼는 편)이라 평가했고, 국내 공식몰은 16개 컬러웨이 중 8개가 와이드입니다(2026-10-20 확인). 접지력(CoF 0.86)과 아웃솔 마모(0.6mm, 평균 1.1mm)도 실측에서 양호했습니다.</p>
+<p><strong>✅ 이런 분께</strong> — 정상 아치의 중립 러너, 뒤꿈치 착지가 강한 러너(실측 드롭 8.0mm), 더 가볍고 반응 좋은 맥스쿠션을 싸게 원하는 러너, 발볼이 넓어 와이드 선택지가 필요한 러너.</p>
+
+<h2>내게 맞는 건? — 상황별 정리</h2>
+<ul>
+  <li><strong>평발이다 / 발이 안쪽으로 무너진다</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>. 넓은 베이스와 평발 호환 excellent가 근거입니다. 과내전 지지가 확실히 필요하면 두 신발 모두 정답이 아니고, 같은 브랜드의 지지형인 <a href="/shoes/saucony-hurricane-26">허리케인 26</a>을 보세요</li>
+  <li><strong>정상 아치, 가벼운 맥스쿠션을 원한다</strong> → <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>. 무게와 가격 모두 앞섭니다</li>
+  <li><strong>발볼이 넓다</strong> → 국내 와이드 컬러웨이가 확인된(16개 중 8개) 트라이엄프 24가 선택지를 확인하기 쉽고, 본디 9는 와이드 재고를 먼저 확인하세요</li>
+  <li><strong>정강이 부담이 걱정이다</strong> → 본디 9(excellent)가 한 등급 위입니다. 무릎은 둘 다 excellent</li>
+  <li><strong>1만 원이라도 더 아끼고 싶다</strong> → 정가 199,000원인 <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>이 있습니다(2026-10-20 공식몰 기준). 비교는 <a href="/blog/saucony-triumph-23-review">트라이엄프 23 후기</a>에서 다뤘습니다</li>
+  <li><strong>본디 9를 다른 맥스쿠션과 견주고 싶다</strong> → <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a>, <a href="/blog/hoka-bondi-9-vs-asics-nimbus-28">본디 9 vs 님버스 28</a></li>
+</ul>
+
+<h2>자주 묻는 질문</h2>
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 어느 쪽이 낫나요?</p>
+    <p class="faq-a">A. 사이트 DB 평가로는 무릎 보호가 둘 다 excellent라 우열이 없습니다. 충격흡수 수치도 SA 146 vs 152로 둘 다 평균(131) 위입니다. 갈리는 건 발 모양이라, 발이 흔들려서 무릎이 불편한 경우라면 넓은 베이스의 본디 9가 유리할 수 있습니다. 신발은 충격의 크기를 줄일 뿐 통증을 없애주지는 않으니, 통증이 반복되면 전문의 진단이 먼저입니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 발볼이 넓은 편인데 사이즈는 어떻게 고르나요?</p>
+    <p class="faq-a">A. 토박스는 본디 9 72.5mm, 트라이엄프 24 71.4mm로 둘 다 RunRepeat 평균(73.2mm)보다 좁습니다. 차이는 1.1mm뿐이라 기본 폭은 비슷하다고 보고, 와이드 선택지로 판단하세요. 트라이엄프 24는 국내 공식몰에서 16개 컬러웨이 중 8개가 와이드로 확인됐고, 본디 9는 와이드 재고를 구매 전에 확인해야 합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 에너지 리턴이 높으면 빨리 달리기 좋은 신발인가요?</p>
+    <p class="faq-a">A. 아닙니다. 에너지 리턴은 폼이 눌렸다 돌아오는 비율이라 같은 높이의 신발끼리 푹신함의 성격을 비교할 때 쓰는 값입니다. 트라이엄프 24도 플레이트 없는 258g 맥스쿠션이라 템포·인터벌에는 더 가벼운 트레이너가 맞고, 두 신발 모두 이지런·장거리·회복주용으로 보는 게 맞습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 오래 신으면 어느 쪽이 더 버티나요?</p>
+    <p class="faq-a">A. 이 사이트는 자체 마모 테스트를 하지 않고, 두 신발의 수명도 추정치라 몇 km라고 단정하지 않겠습니다. 확인된 건 트라이엄프 24의 RunRepeat 아웃솔 마모 0.6mm(평균 1.1mm)뿐이고, 본디 9는 같은 기준의 마모 수치를 확보하지 못했습니다(불명).</p>
+  </div>
+</div>
+
+<p><small>출처: 사이트 신발 DB(RunRepeat 랩 실측·브랜드 공식 스펙) · 트라이엄프 24 가격·와이드 컬러웨이는 써코니코리아 공식몰 2026-10-20 확인 · 작성 2026년 10월 24일.</small></p>
+`,
+  },
+  {
     id: 'incheon-k-marathon',
     slug: 'incheon-k-marathon',
     title: '2027 인천 K-마라톤 접수·참가비·코스 | 4월 11일 아시아드주경기장 풀·10K·5K, 11월 12일 선착순 마감',

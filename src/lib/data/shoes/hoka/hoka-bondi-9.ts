@@ -101,6 +101,7 @@ export const shoe: Shoe = {
 
   similarShoes: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22', 'puma-magnify-nitro-3'],
   relatedPosts: [
+    { slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026', title: '본디 9 vs 트라이엄프 24 — 같은 41mm 맥스쿠션 대결' },
     { slug: 'bondi-9-vs-glycerin-max-2-cushion-2026', title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/551Gf7lV' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YCpGHGAC' }],
