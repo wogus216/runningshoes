@@ -513,7 +513,7 @@ export const octoberEvents: MarathonEvent[] = [
     location: '인천 상상플랫폼 (인천 중구 월미로)',
     region: '인천',
     distances: ['10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://disneyrunincheon2026.com',
     registrationStart: '2026-08-31',
