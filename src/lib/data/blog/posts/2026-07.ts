@@ -339,7 +339,7 @@ export const posts_2026_07: BlogPost[] = [
   <ul>
     <li><strong>러닝화 폼에 농작물이 들어오고 있습니다</strong> — 아식스 특허의 핵심 성분 "파르네센"은 <strong>사탕수수 발효</strong>로 만들고, On의 레이싱 폼 헬리온 HF는 <strong>46%가 피마자</strong> 유래입니다</li>
     <li><strong>"바이오 기반"과 "생분해"는 완전히 다른 말입니다</strong> — 원료의 출발점이 식물이라는 뜻이지, 흙에서 썩는다는 뜻이 아닙니다</li>
-    <li><strong>성능 희생도 아닙니다</strong> — 46% 피마자 폼을 쓴 <a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a>는 에너지 리턴 78.2%로 최상위권이고, 겨울 경화율 6%로 우리 DB 실측 1위입니다</li>
+    <li><strong>성능 희생도 아닙니다</strong> — 46% 피마자 폼을 쓴 <a href="/shoes/on-cloudboom-strike">클라우드붐 스트라이크</a>는 에너지 리턴 힐 72.1%로 상위권이고, 겨울 경화율 6%로 우리 DB 실측 1위입니다</li>
   </ul>
 </div>
 
@@ -377,7 +377,7 @@ export const posts_2026_07: BlogPost[] = [
 <table>
   <thead><tr><th>신발</th><th>바이오 관련</th><th>실측 성능</th></tr></thead>
   <tbody>
-    <tr><td><a href="/shoes/on-cloudboom-strike">On 클라우드붐 스트라이크</a></td><td>헬리온 HF — 피마자 46%</td><td>에너지 리턴 <strong>78.2%</strong>(최상위권) · 겨울 경화율 <strong>6%</strong>(DB 실측 1위)</td></tr>
+    <tr><td><a href="/shoes/on-cloudboom-strike">On 클라우드붐 스트라이크</a></td><td>헬리온 HF — 피마자 46%</td><td>에너지 리턴 <strong>힐 72.1%</strong>(상위권) · 겨울 경화율 <strong>6%</strong>(DB 실측 1위)</td></tr>
     <tr><td>미즈노 웨이브 라이더 24 (당시)</td><td>웨이브 플레이트 — Pebax Rnew</td><td>플레이트 기능 그대로, 소재만 피마자 기반으로 교체</td></tr>
     <tr><td>아식스 슈퍼블라스트 2 (발표 기준)</td><td>FF 블라스트+ ECO — 24% 바이오</td><td>플래그십 슈퍼트레이너 라인에 그대로 투입</td></tr>
   </tbody>
@@ -5985,7 +5985,7 @@ export const posts_2026_07: BlogPost[] = [
 <h2>카본 레이서, 뭐랑 비교하면 되나</h2>
 <p>같은 값대(30만원 초중반~30만원 후반)에서 겨루는 슈퍼슈즈들과 성격이 다릅니다. 내 주법·거리에 맞춰 고르세요.</p>
 <ul>
-  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 에너지 리턴 최상위(78%대), 힐~미드풋 착지 관용. 풀코스 PB 정면 승부.</li>
+  <li><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a> — 에너지 리턴 힐 74.9%, 힐~미드풋 착지 관용. 풀코스 PB 정면 승부.</li>
   <li><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a> — 가볍고 날렵, 하프~풀 밸런스. 슈퍼슈즈 입문에 무난.</li>
   <li><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a> — EnergyRods(카본 막대)로 자연스러운 롤링, 장거리 안정.</li>
   <li><a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a> — 스트라이드(보폭)형 러너용, 토박스 넉넉해 한국 발볼 친화.</li>

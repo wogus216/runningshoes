@@ -377,7 +377,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">🆕</span>
   <div class="callout-body">
     <p class="callout-title">엔돌핀 엘리트 3, 7월 1일 한국 상륙</p>
-    <p>써코니 라인업의 꼭대기 — 카본 마라톤 레이싱화 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>가 <strong>7월 1일 한국 공식몰에 론칭</strong>했습니다(정가 369,000원, White/Multi). 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>는 RunRepeat 측정 <strong>역대 최고 에너지 리턴 80.6%</strong>로 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(78.2%)마저 능가했던 "반발 괴물"이었지만, 동시에 <strong>"너무 불안정하고 발볼이 좁다"</strong>는 평이 따라다녔죠. 엘리트 3는 바로 그 두 약점을 겨냥했습니다. 어떤 점이 바뀌었는지 전작과 나란히 보겠습니다.</p>
+    <p>써코니 라인업의 꼭대기 — 카본 마라톤 레이싱화 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>가 <strong>7월 1일 한국 공식몰에 론칭</strong>했습니다(정가 369,000원, White/Multi). 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>는 RunRepeat 측정 <strong>역대 최고 에너지 리턴 80.6%</strong>로 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(힐 74.9%)마저 능가했던 "반발 괴물"이었지만, 동시에 <strong>"너무 불안정하고 발볼이 좁다"</strong>는 평이 따라다녔죠. 엘리트 3는 바로 그 두 약점을 겨냥했습니다. 어떤 점이 바뀌었는지 전작과 나란히 보겠습니다.</p>
   </div>
 </div>
 
@@ -797,7 +797,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>드롭</td><td>12mm</td><td>14mm</td></tr>
     <tr><td>미드솔</td><td>ZoomX+ReactX+<strong>Air Zoom Unit</strong></td><td>ZoomX+ReactX</td></tr>
     <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>6 / 10</td></tr>
-    <tr><td>쿠션</td><td>10 / 10</td><td>10 / 10</td></tr>
+    <tr><td>쿠션</td><td>10 / 10</td><td>9 / 10</td></tr>
     <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드 O (남녀)</strong></td></tr>
     <tr><td>최적 페이스</td><td>5:00~6:30/km</td><td>5:30~7:00/km</td></tr>
     <tr><td>내구성 / km당</td><td>600km / 약 482원</td><td>650km / 약 291원</td></tr>
@@ -1148,7 +1148,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>한국 러너에게 프로 5의 강점은 <strong>안정적인 플랫폼과 가격</strong>입니다. <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(30.9만)보다 1만원 싸고 플랫폼이 안정적입니다. 다만 토박스는 RunRepeat 실측 69.3mm(평균 73.2mm)로 좁은 편이라, 발볼 때문에 나이키 레이서를 포기했던 러너의 대안은 아닙니다. 다만 300km 내구성에 km당 997원이라 <strong>대회·핵심 훈련 전용</strong>으로 운용하세요. 서브3:30~4 마라토너의 풀코스 카본으로 추천합니다. 둘을 더 깊게 비교한 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5 글</a>도 참고하세요.</p>
 
 <h3>4. 엘리트 3 — 순수 반발력 최강의 '레이스데이 무기' (36.9만, 신형)</h3>
-<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 78.2%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다(실측 에너지 리턴 힐 80.6%·전족부 81.0%). 200g 안팎(실측 엘리트 2 197g·엘리트 3 210g) 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
+<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 힐 74.9%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다(실측 에너지 리턴 힐 80.6%·전족부 81.0%). 200g 안팎(실측 엘리트 2 197g·엘리트 3 210g) 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
 <p>냉정하게, 이건 <strong>월 200km 이상 훈련하는 서브3 러너의 레이스데이 전용 무기</strong>입니다. 200km 내구성에 km당 1,845원, 토박스도 좁아(실측 71.8mm) 발볼 넓은 한국 러너에겐 도전적이죠. 서브3:30 이상 페이스가 안 나오면 잠재력을 끌어내기 어려우니, 대부분의 러너에게는 프로 5나 스피드 5가 더 현명합니다.</p>
 
 <div class="callout warning">

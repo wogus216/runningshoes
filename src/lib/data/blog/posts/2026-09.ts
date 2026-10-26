@@ -7763,7 +7763,7 @@ export const posts_2026_09: BlogPost[] = [
     <tr><td>미드솔 경도 실측</td><td>30.5 AC (부드러움)</td><td>32.5 AC (부드러움)</td></tr>
     <tr><td>강성 실측</td><td>16.0N</td><td><strong>19.8N</strong> (더 뻣뻣)</td></tr>
     <tr><td>토박스 실측 (최광부)</td><td>69.6mm</td><td>71.1mm</td></tr>
-    <tr><td>쿠션 / 반발 (DB 점수)</td><td>10 / 6</td><td>10 / <strong>7</strong></td></tr>
+    <tr><td>쿠션 / 반발 (DB 점수)</td><td>9 / 6</td><td>10 / <strong>7</strong></td></tr>
     <tr><td>내구 · km당</td><td>650km · <strong>291원</strong></td><td>650km · 337원</td></tr>
     <tr><td>적정 페이스</td><td>5:30–7:00 /km</td><td>5:30–7:00 /km <em>(동일)</em></td></tr>
   </tbody>
