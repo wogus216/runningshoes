@@ -15,7 +15,7 @@ export const shoe: Shoe = {
   tags: ['트레일', '올라운드', '그립', 'Continental'],
   specs: {
     weight: 283,
-    cushioning: 7,
+    cushioning: 8,
     responsiveness: 7,
     stability: 7,
     drop: 9,
@@ -46,7 +46,7 @@ export const shoe: Shoe = {
     recommended: ['임도·그래블 트레일 러너', '진흙·자갈 혼합 코스', '울트라 트레일 완주', '트레일 입문~중급', '그립 중시'],
     notRecommended: ['푹신한 반발력 선호', '발볼 넓은 러너', '로드 위주 러너'],
   },
-  features: ['Continental 러버 아웃솔', '3.1mm 러그 (RunRepeat, 비기술 지형용)', 'Lightstrike EVA 미드솔 (부드러운 편)', '283g (트레일 평균 수준)', '록 플레이트 없음'],
+  features: ['Continental 러버 아웃솔', '3.1mm 러그 (RunRepeat, 비기술 지형용)', 'Lightstrike EVA 미드솔 (부드러운 편)', '283g (트레일 평균 수준)', '록 플레이트 없음', '충격흡수 힐 122 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 169000,
     streetPrice: 169000,

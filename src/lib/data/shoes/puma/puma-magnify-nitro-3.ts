@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 페이스 훈련', '경량화 선호', '미니멀리스트'],
   },
 
-  features: ['PEBA 기반 Nitro Foam', '40mm 맥시멀 스택', '부드러운 착지감'],
+  features: ['PEBA 기반 Nitro Foam', '40mm 맥시멀 스택', '부드러운 착지감', '충격흡수 힐 136 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 199000,

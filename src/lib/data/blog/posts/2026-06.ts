@@ -7239,7 +7239,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'max-cushion-running-shoes-knee-protection-2026',
     slug: 'max-cushion-running-shoes-knee-protection-2026',
     title: '무릎 지키는 맥스쿠션 러닝화 추천 2026 | 1080 v15·님버스 28·고스트 맥스 3·본디 9 — 발볼·무게·관절 보호 비교',
-    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28(쿠션 10)·호카 본디 9(쿠션 9·넓은 발볼), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
+    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28(쿠션 8)·호카 본디 9(쿠션 9·넓은 발볼), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
     thumbnail: '/images/blog/max-cushion-running-shoes-knee-protection-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
@@ -7293,7 +7293,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>목적별 베스트</h2>
 <ul>
   <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
-  <li><strong>푹신함 우선</strong> → <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 10)·<a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9, 넓은 발볼)</li>
+  <li><strong>푹신함 우선</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9, 넓은 발볼)·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 8)</li>
   <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
   <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
   <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>

@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['첫 마라톤 준비 입문자', '쿠션 우선 러너', '무릎 보호를 원하는 데일리 러너', '발볼이 좁은 러너'],
     notRecommended: ['기록 단축 레이싱 목적', '초경량화만 찾는 러너', '발볼이 넓은 러너'],
   },
-  features: ['ZoomX + ReactX 듀얼 폼', 'Full-length Air Zoom Unit', '프리미엄 니트 어퍼', '360도 반사 소재'],
+  features: ['ZoomX + ReactX 듀얼 폼', 'Full-length Air Zoom Unit', '프리미엄 니트 어퍼', '360도 반사 소재', '충격흡수 힐 155 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 289000,
     streetPrice: 249000,

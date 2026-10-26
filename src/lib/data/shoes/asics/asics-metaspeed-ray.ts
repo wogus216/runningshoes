@@ -24,7 +24,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 129,
-    cushioning: 6,
+    cushioning: 10,
     responsiveness: 10,
     stability: 3,
     drop: 5,
@@ -60,7 +60,7 @@ export const shoe: Shoe = {
     notRecommended: ['힐스트라이커', '입문 러너', '데일리 훈련용', '과내전/안정화 필요', '발볼 넓은 러너'],
   },
 
-  features: ['129g 시장 최경량', 'FF Leap ATPU 미드솔', '3/4 카본 플레이트', '81% 전족부 에너지 리턴', '전족부 착지 최적화'],
+  features: ['129g 시장 최경량', 'FF Leap ATPU 미드솔', '3/4 카본 플레이트', '81% 전족부 에너지 리턴', '전족부 착지 최적화', '충격흡수 힐 170 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 439000,

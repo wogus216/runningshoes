@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   tags: ['데일리', '바운시', '반발력', '올라운더'],
   specs: {
     weight: 255,
-    cushioning: 8,
+    cushioning: 9,
     responsiveness: 8,
     stability: 6,
     drop: 8,
@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['데일리 러너', '바운시한 느낌 선호', '다양한 페이스', '입문-중급 러너'],
     notRecommended: ['안정성 필요', '평발/과내전', '미니멀 신발 선호'],
   },
-  features: ['FF Blast+ 폼', '41mm 스택하이트', '바운시 라이드', '와이드 폭(기존 표기·국내 미확인)'],
+  features: ['FF Blast+ 폼', '41mm 스택하이트', '바운시 라이드', '와이드 폭(기존 표기·국내 미확인)', '충격흡수 힐 141 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 169000,
     streetPrice: 155000,

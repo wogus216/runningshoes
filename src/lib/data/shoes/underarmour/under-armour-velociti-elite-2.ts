@@ -77,6 +77,7 @@ export const shoe: Shoe = {
     '토박스 74.0mm — 랩 평균 73.2mm보다 넓음 (RunRepeat 실측)',
     '에너지 리턴 힐 72.3%·전족부 73.3% (RunRepeat 실측)',
     '워프 2.0 어퍼 · TPE 깔창 · 정가 299,000원',
+    '충격흡수 힐 133 SA (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

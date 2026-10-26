@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '데일리 트레이닝', '과내전 러너'],
   },
 
-  features: ['PWRRUN PB+HG 미드솔', '풀렝스 카본 플레이트', '9.5mm 드롭', '레이싱 전용'],
+  features: ['PWRRUN PB+HG 미드솔', '풀렝스 카본 플레이트', '9.5mm 드롭', '레이싱 전용', '충격흡수 힐 139 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 269000,

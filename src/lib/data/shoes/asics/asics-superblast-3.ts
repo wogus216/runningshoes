@@ -62,6 +62,7 @@ export const shoe: Shoe = {
     'FF LEAP + FF BLAST PLUS 조합으로 부드럽고 바운시한 전환',
     '전작 수준의 토박스 폭에 더 매끈해진 힐 전환',
     '롱런, 업템포, 마라톤 훈련까지 넓은 활용 범위',
+    '충격흡수 힐 154 SA (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 259000,

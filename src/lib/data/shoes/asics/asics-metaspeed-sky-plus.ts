@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['서브-3:30 마라토너', '스트라이드 러너', '상급 러너', '마라톤 레이스'],
     notRecommended: ['입문 러너', '평발/과내전', '훈련용', '케이던스 러너'],
   },
-  features: ['FF Turbo+ 폼', '풀렝스 카본 플레이트', '스트라이드 최적화', '와이드 폭(기존 표기·국내 미확인)'],
+  features: ['FF Turbo+ 폼', '풀렝스 카본 플레이트', '스트라이드 최적화', '와이드 폭(기존 표기·국내 미확인)', '충격흡수 힐 130 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 329000,
     streetPrice: 280000,

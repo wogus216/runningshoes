@@ -94,6 +94,7 @@ export const shoe: Shoe = {
     '넓은 힐 베이스 93.6mm로 뒤꿈치 안정성 강화',
     '힐 60.8%, 전족부 66.3% 에너지 리턴 (RunRepeat Lab Test)',
     '해외 Narrow/Standard/Wide/X-Wide 4가지 폭 (한국 공식몰 판매 폭은 확인 불가)',
+    '충격흡수 힐 126 SA (RunRepeat 실측)',
   ],
 
   reviews: [

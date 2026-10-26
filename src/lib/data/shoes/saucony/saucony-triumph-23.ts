@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 템포 러닝', '레이싱', '경량화 선호'],
   },
 
-  features: ['PWRRUN PB (Pebax)', '맥시멀 스택', '10mm 드롭', '풀 PEBA 미드솔'],
+  features: ['PWRRUN PB (Pebax)', '맥시멀 스택', '10mm 드롭', '풀 PEBA 미드솔', '충격흡수 힐 149 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 199000,

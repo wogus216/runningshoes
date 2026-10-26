@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 페이스 훈련', '경량화 선호', '민첩한 움직임 필요'],
   },
 
-  features: ['최대 쿠셔닝', '넓은 베이스', '로커 기술', 'Supercritical EVA'],
+  features: ['최대 쿠셔닝', '넓은 베이스', '로커 기술', 'Supercritical EVA', '충격흡수 힐 146 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 229000,

@@ -67,6 +67,7 @@ export const shoe: Shoe = {
     'PUMAGRIP 아웃솔 — 접지력 CoF 0.71, 마모 0.7mm(RunRepeat 실측)',
     'RunRepeat 실측 215g 경량 (브랜드 공식 220g)',
     '통기성 엔지니어드 메쉬 (재활용 소재)',
+    '충격흡수 힐 141 SA (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

@@ -51,7 +51,7 @@ export const shoe: Shoe = {
     recommended: ['자갈길·로드투트레일 장거리', '하이볼륨 트레일 데일리', '쿠션 우선 트레일 러너', '트레일 하이킹 겸용', '미드풋·포어풋 착지 러너'],
     notRecommended: ['기술 암반·급경사 산악(Technical 약)', '힐 스트라이커(4mm 저드롭)', '발볼 매우 넓은 러너(토룸 제한)', '빠른 스피드 트레일 레이싱'],
   },
-  features: ['Fresh Foam X 듀얼 밀도(v8 대비 힐 +5mm)', 'Vibram Megagrip 아웃솔(3.3mm 러그)', '비틀림 강성 5/5 안정 플랫폼', '뛰어난 아웃솔 내구성(마모 0.9mm)', '로드투트레일 쿠션 올라운더'],
+  features: ['Fresh Foam X 듀얼 밀도(v8 대비 힐 +5mm)', 'Vibram Megagrip 아웃솔(3.3mm 러그)', '비틀림 강성 5/5 안정 플랫폼', '뛰어난 아웃솔 내구성(마모 0.9mm)', '로드투트레일 쿠션 올라운더', '충격흡수 힐 131 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 189000,
     streetPrice: 175000,

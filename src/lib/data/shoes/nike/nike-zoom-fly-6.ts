@@ -23,7 +23,7 @@ export const shoe: Shoe = {
   tags: ['레이싱', '템포', '카본플레이트', '훈련용'],
   specs: {
     weight: 248,
-    cushioning: 7,
+    cushioning: 9,
     responsiveness: 8,
     stability: 7,
     drop: 10,
@@ -54,7 +54,7 @@ export const shoe: Shoe = {
     recommended: ['템포런/인터벌 훈련', '가성비 레이싱화', '중급 러너', '하프마라톤'],
     notRecommended: ['입문 러너', '평발/심한 과내전', '발볼 넓은 러너'],
   },
-  features: ['ZoomX + SR-02 듀얼 폼', '풀렝스 카본 Flyplate', '40mm 스택하이트', '에너지 리턴 힐 61%·앞발 67% (RunRepeat 실측)'],
+  features: ['ZoomX + SR-02 듀얼 폼', '풀렝스 카본 Flyplate', '40mm 스택하이트', '에너지 리턴 힐 61%·앞발 67% (RunRepeat 실측)', '충격흡수 힐 144 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 209000,
     streetPrice: 209000,

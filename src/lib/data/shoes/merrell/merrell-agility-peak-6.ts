@@ -78,6 +78,7 @@ export const shoe: Shoe = {
     '아웃솔 마모 0.6mm — 트레일 평균(0.9mm)보다 덜 닳음',
     '실측 드롭 11.5mm(브랜드 표기 8mm) — 뒤꿈치 착지형',
     '국내 공식몰 와이드 버전 판매',
+    '충격흡수 힐 116 SA (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

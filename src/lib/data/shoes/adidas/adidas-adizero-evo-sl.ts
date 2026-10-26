@@ -54,7 +54,7 @@ export const shoe: Shoe = {
     recommended: ['다목적 러너', '가성비 중시', '데일리~템포런', '장거리 러닝', '충격흡수 우선'],
     notRecommended: ['안정성 필요', '과내전 러너'],
   },
-  features: ['100% Lightstrike Pro', '초경량 223g', '컨티넨탈 러버', '에너지 리턴 74%대 (RunRepeat)'],
+  features: ['100% Lightstrike Pro', '초경량 223g', '컨티넨탈 러버', '에너지 리턴 74%대 (RunRepeat)', '충격흡수 힐 147 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 209000,
     streetPrice: 150000,

@@ -46,7 +46,7 @@ export const shoe: Shoe = {
     recommended: ['트레일 레이싱(50K 이하)', '전족·미드풋 스트라이커', '완만~중간 난이도 코스', '빠른 페이스 러너'],
     notRecommended: ['힐 스트라이커', '제로드롭 선호 러너', '극테크니컬 암릉', '하이킹 많은 울트라', '발볼 넓은 러너'],
   },
-  features: ['측정 드롭 0.1mm (아디다스 표기 8mm)', '힐 슬링샷 구조 (아디다스 표기)', 'Lightstrike Pro 미드솔', 'TPE Energy Rods 추진', 'Continental 러버 2.9mm 러그 (RunRepeat)', '엔지니어드 모노메시 어퍼'],
+  features: ['측정 드롭 0.1mm (아디다스 표기 8mm)', '힐 슬링샷 구조 (아디다스 표기)', 'Lightstrike Pro 미드솔', 'TPE Energy Rods 추진', 'Continental 러버 2.9mm 러그 (RunRepeat)', '엔지니어드 모노메시 어퍼', '충격흡수 힐 123 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 289000,
     streetPrice: 230000,

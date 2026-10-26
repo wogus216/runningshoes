@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   tags: ['슈퍼트레이너', '고반발', '데일리레이서', '훈련용'],
   specs: {
     weight: 252,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 8,
     stability: 7,
     drop: 8,
@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['템포런/인터벌', '하프마라톤', '슈퍼트레이너 원하는 러너', '중급-상급 러너'],
     notRecommended: ['입문 러너', '안정성 필요', '심한 과내전'],
   },
-  features: ['FF Turbo+ 폼 (전족 에너지 리턴 65.5% 실측)', '힐 42.8mm 스택하이트(실측)', '카본 없이 평균 이상 반발력', '와이드 폭(기존 표기·국내 미확인)'],
+  features: ['FF Turbo+ 폼 (전족 에너지 리턴 65.5% 실측)', '힐 42.8mm 스택하이트(실측)', '카본 없이 평균 이상 반발력', '와이드 폭(기존 표기·국내 미확인)', '충격흡수 힐 130 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 249000,
     streetPrice: 225000,

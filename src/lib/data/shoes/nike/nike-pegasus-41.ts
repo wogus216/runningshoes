@@ -17,7 +17,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 281,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 7,
     stability: 8,
     drop: 11,
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['마라톤 기록 단축 목표', '초경량 레이싱화 찾는 분', '강한 반발력 원하는 상급자', '대회용 전문 러닝화 필요'],
   },
 
-  features: ['최상급 착화감', '충분한 쿠셔닝 (초보자 최우선)', '적정 무게 (280g)', '뛰어난 가성비 (15만원대)'],
+  features: ['최상급 착화감', '충분한 쿠셔닝 (초보자 최우선)', '적정 무게 (280g)', '뛰어난 가성비 (15만원대)', '충격흡수 힐 125 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 159000,

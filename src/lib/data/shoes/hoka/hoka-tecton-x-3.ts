@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['울트라 트레일 레이스', '장거리 트레일 훈련', '로드-트레일 혼용', '반발력 중시', '완만~중간 난이도'],
     notRecommended: ['급경사 테크니컬 하산 전문', '단거리 스피드 레이스', '어퍼 안정성 최우선'],
   },
-  features: ['윙드 카본 플레이트(듀얼)', '100% PEBA 듀얼 폼', 'Vibram Megagrip 4mm 러그', '니트 발목 게이터', '에너지 리턴 전족부 70.2%·힐 69.9% (RunRepeat 실측)'],
+  features: ['윙드 카본 플레이트(듀얼)', '100% PEBA 듀얼 폼', 'Vibram Megagrip 4mm 러그', '니트 발목 게이터', '에너지 리턴 전족부 70.2%·힐 69.9% (RunRepeat 실측)', '충격흡수 힐 139 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 339000,
     streetPrice: 310000,

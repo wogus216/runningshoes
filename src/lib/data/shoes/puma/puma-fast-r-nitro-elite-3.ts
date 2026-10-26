@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '짧은 거리', '일상 훈련', '넓은 발볼'],
   },
 
-  features: ['Nitro Elite 폼', '카본 플레이트', '40mm 맥시멀 스택', '마라톤 특화'],
+  features: ['Nitro Elite 폼', '카본 플레이트', '40mm 맥시멀 스택', '마라톤 특화', '충격흡수 힐 148 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 379000,

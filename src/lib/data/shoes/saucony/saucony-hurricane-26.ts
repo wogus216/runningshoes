@@ -92,6 +92,7 @@ export const shoe: Shoe = {
     'RunRepeat 실측 스택 힐 38.3mm·전족 32.4mm, 무게 272g(브랜드 공식 262g)',
     '단단한 PWRRUN 크래들 구조는 유지 — 지지 프레임 보존',
     'RunRepeat 실측 드롭 5.9mm(브랜드 공식 6mm) · 와이드 별도 품번 한국 공식몰 판매(남성 S101102·여성 S101110)',
+    '충격흡수 힐 145 SA (RunRepeat 실측)',
   ],
 
   reviews: [

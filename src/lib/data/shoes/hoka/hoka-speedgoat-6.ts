@@ -50,7 +50,7 @@ export const shoe: Shoe = {
     recommended: ['장거리·울트라 트레일', '기술적 지형(급경사·바위·젖은 노면)', '로드→트레일 입문', '하이킹 겸용', '안정감·그립 중시'],
     notRecommended: ['빠른 페이스·트레일 레이스', '발볼 매우 넓음(와이드 권장)', '힐 통증 이력자'],
   },
-  features: ['Vibram Megagrip + Traction Lug 4.0mm 러그(RunRepeat)', 'CMEVA 쿠션(브랜드 표기 힐 40mm)', '내부 섀시 안정 구조', '와이드 옵션(공식 동일가)', 'GTX 방수 버전(229,000원)'],
+  features: ['Vibram Megagrip + Traction Lug 4.0mm 러그(RunRepeat)', 'CMEVA 쿠션(브랜드 표기 힐 40mm)', '내부 섀시 안정 구조', '와이드 옵션(공식 동일가)', 'GTX 방수 버전(229,000원)', '충격흡수 힐 124 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 205000,
     streetPrice: 190000,

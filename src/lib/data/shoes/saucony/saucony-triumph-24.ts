@@ -87,6 +87,7 @@ export const shoe: Shoe = {
     'RunRepeat 실측 무게 258g으로 허리케인 26(실측 272g)보다 가벼움',
     'RunRepeat 실측 드롭 8.0mm — 브랜드 공식 표기(10mm)보다 2mm 낮게 측정',
     '국내 16개 컬러웨이 중 8개가 와이드 · 2026-10-20 기준 할인 없음',
+    '충격흡수 힐 152 SA (RunRepeat 실측)',
   ],
 
   reviews: [
