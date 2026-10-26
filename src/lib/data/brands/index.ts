@@ -8,7 +8,7 @@ import { diadoraBrand } from './diadora';
 import { sauconyBrand } from './saucony';
 import { onBrand } from './on';
 import { newBalanceBrand } from './newbalance';
-import { prospecsBrand } from './prospecs';
+// 프로스펙스: 2026-10-26 RunRepeat 랩 리뷰 미게시(확인 범위)라 노출 중단(brands/prospecs.ts 는 그대로, 신발 파일은 shoes-archive/prospecs 로 보관). 복구: 신발 복구와 함께 import { prospecsBrand } from './prospecs'; 와 목록·export 의 prospecsBrand, 되살리기 — .omc/todo-estimates.md 프로스펙스 행 참조
 import { pumaBrand } from './puma';
 import { mizunoBrand } from './mizuno';
 import { kiprunBrand } from './kiprun';
@@ -28,7 +28,6 @@ export const brands: Brand[] = [
   sauconyBrand,
   onBrand,
   newBalanceBrand,
-  prospecsBrand,
   pumaBrand,
   mizunoBrand,
   kiprunBrand,
@@ -138,7 +137,6 @@ export {
   sauconyBrand,
   onBrand,
   newBalanceBrand,
-  prospecsBrand,
   pumaBrand,
   mizunoBrand,
   kiprunBrand,

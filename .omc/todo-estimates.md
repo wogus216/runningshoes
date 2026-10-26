@@ -232,7 +232,7 @@ USD 환산을 금지하므로 **규칙을 지키면 페이지가 비고, 페이�
 
 | 처리일 | 대상 | 할 일 |
 |---|---|---|
-| **2026-11-20** | 프로스펙스 4종 | RunRepeat 랩 게시 확인(`runrepeat.com/prospecs-speed-rush-3`·`prospecs-hyper-rush-2-tempo`·`prospecs-infinite-rush-rev`·`prospecs-duplex-gf`, 대조군 `nike-pegasus-41`) → 게시되면 specs·toBoxWidth·detailedSpecs '(추정)' 걷기. 미게시면 한 달 이월 — **10/26 조기 확인(이월 유지)**: 4개 slug 모두 404(대조군 `nike-pegasus-41` 랩 리뷰 정상)·`/catalog/prospecs-running-shoes`·`prospecs-shoes`·`pro-specs-running-shoes` 404(대조군 `catalog/brooks-running-shoes` 정상)·RunRepeat 검색 `prospecs` 리뷰 링크 0 → 미게시. 11/20 재확인 |
+| **2026-11-20** | 프로스펙스 4종 | RunRepeat 랩 게시 확인(`runrepeat.com/prospecs-speed-rush-3`·`prospecs-hyper-rush-2-tempo`·`prospecs-infinite-rush-rev`·`prospecs-duplex-gf`, 대조군 `nike-pegasus-41`) → 게시되면 specs·toBoxWidth·detailedSpecs '(추정)' 걷기. 미게시면 한 달 이월 — **10/26 조기 확인(이월 유지)**: 4개 slug 모두 404(대조군 `nike-pegasus-41` 랩 리뷰 정상)·`/catalog/prospecs-running-shoes`·`prospecs-shoes`·`pro-specs-running-shoes` 404(대조군 `catalog/brooks-running-shoes` 정상)·RunRepeat 검색 `prospecs` 리뷰 링크 0 → 미게시. 11/20 재확인 — **10/26 운영자 결정: 랩 리뷰가 없으면 일단 내린다.** 신발 4종·브랜드 `/shoes/prospecs-*`·`/brands/prospecs` 노출 중단(`shoes/index.ts`·`brands/index.ts` 등록 해제 + 신발 4종 파일을 `src/lib/data/shoes-archive/prospecs/` 로 이동 — validate 가 "파일은 있는데 미등록"을 에러로 막기 때문. 브랜드 파일·이미지·pSEO 매핑은 그대로). **복구 조건**: 랩 게시 확인 시 `git mv src/lib/data/shoes-archive/prospecs src/lib/data/shoes/prospecs` 후 두 index 의 등록 줄을 되살리고 specs·toBoxWidth·detailedSpecs `(추정)` 걷기. 이 시점부터 대상은 노출 중인 신발이 아니라 대기 중인 파일이다 |
 | **2026-11-20** | `prospecs-infinite-rush-rev` | 공식 사이즈 가이드 뒤꿈치 굽높이(240mm 35·270mm 33, 다른 모델과 반대) 정정 여부 재확인. 지금은 앞꿈치 30 + 오프셋 5에 맞춰 270mm 35mm로 읽고 detailedSpecs 에 추정 표기 |
 | **2026-11-20** | 프로스펙스 4종 — 링크 | 공식몰 링크만 있음. 쿠팡·네이버 제휴 링크 발급 시도(이번 세션 미시도) |
 

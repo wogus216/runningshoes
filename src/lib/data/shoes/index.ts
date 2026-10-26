@@ -7,7 +7,7 @@ import { adidasShoes } from './adidas';
 import { asicsShoes } from './asics';
 import { newbalanceShoes } from './newbalance';
 import { sauconyShoes } from './saucony';
-import { prospecsShoes } from './prospecs';
+// 프로스펙스: 2026-10-26 RunRepeat 랩 리뷰 미게시(확인 범위)라 노출 중단(파일은 shoes-archive/prospecs 로 보관, 이미지는 그대로). 복구: git mv shoes-archive/prospecs shoes/prospecs 후 import { prospecsShoes } from './prospecs'; 와 ...prospecsShoes, 되살리기 — .omc/todo-estimates.md 프로스펙스 행 참조
 import { pumaShoes } from './puma';
 import { hokaShoes } from './hoka';
 import { brooksShoes } from './brooks';
@@ -34,7 +34,6 @@ export const shoes: Shoe[] = [
   ...brooksShoes,
   ...diadoraShoes,
   ...mizunoShoes,
-  ...prospecsShoes,
   ...pumaShoes,
   ...kiprunShoes,
   ...liningShoes,
