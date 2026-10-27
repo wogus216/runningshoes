@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '느린 회복 러닝', '최대 쿠셔닝 필요'],
   },
 
-  features: ['듀얼 레이어 NITROFOAM (PEBAX/PEBA)', '카본 합성 PWRPLATE', 'PUMAGRIP 아웃솔', '와이드 상품 별도 판매', '8mm 드롭 (v3 대비 2mm 감소)'],
+  features: ['듀얼 레이어 NITROFOAM (PEBAX/PEBA)', '카본 합성 PWRPLATE', 'PUMAGRIP 아웃솔', '와이드 상품 별도 판매', '8mm 드롭 (v3 대비 2mm 감소)', '충격흡수 힐 130 SA (RunRepeat 실측)', '에너지 리턴 전족부 70.0% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 219000,

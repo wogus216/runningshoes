@@ -69,6 +69,7 @@ export const shoe: Shoe = {
     'PUMAGRIP 아웃솔',
     '170g 초경량 (UK 8 기준)',
     '공식 권장 수명 400km',
+    '에너지 리턴 전족부 77.2% (RunRepeat 실측)',
   ],
 
   priceAnalysis: {
