@@ -112,7 +112,7 @@ export function getTopShoesForInjury(shoes: Shoe[], injuryType: string): Shoe[] 
 
 /**
  * 느린 페이스·회복 러닝에는 맞지 않는다고 데이터에 적힌 신발인가.
- * 규칙 22·25 의 쿠션 가점은 이 신발에 주지 않는다 — 가점이 용도를 보지 않아
+ * 규칙 9·22·25 의 쿠션 가점은 이 신발에 주지 않는다 — 가점이 용도를 보지 않아
  * 레이싱화(쿠션 10)와 "느린 회복 러닝 비추천"인 신발이 느린 페이스·회복 프로필에 올라왔다.
  */
 const SLOW_RUN_UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
@@ -381,7 +381,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     }
 
     // 9. 회복 목적이면 쿠셔닝 가점
-    if (profile.purpose === 'recovery' && shoe.specs.cushioning >= 8) {
+    if (profile.purpose === 'recovery' && shoe.specs.cushioning >= 8 && !unsuitedForSlowRuns(shoe)) {
       score += 10;
       reasons.push('높은 쿠셔닝');
     }
