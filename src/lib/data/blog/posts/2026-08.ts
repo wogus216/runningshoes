@@ -3624,7 +3624,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '쿠션 점수가 한 칸 차이인데 뭐가 다른가요?',
         answer:
-          '쿠션 점수는 10 대 9로 한 칸 차이지만, 더 큰 차이는 성격입니다. 메가블라스트는 힐 45.1mm·전족 35.2mm 스택(RunRepeat 실측)을 218g에 담아 가볍게 튀는 쪽이고(반발 9/10), 보메로 18은 힐 43mm에 298g으로 무겁고 부드럽게 가라앉는 쪽입니다(반발 6/10). 같은 "푹신함"이라도 하나는 통통 튀고 하나는 푹 잠깁니다.',
+          '쿠션 점수는 10 대 9로 한 칸 차이지만, 더 큰 차이는 성격입니다. 메가블라스트는 힐 45.1mm·전족 35.2mm 스택(RunRepeat 실측)을 218g에 담아 가볍게 튀는 쪽이고(반발 9/10), 보메로 18은 힐 43mm에 298g으로 무겁고 부드럽게 가라앉는 쪽입니다(반발 7/10). 같은 "푹신함"이라도 하나는 통통 튀고 하나는 푹 잠깁니다.',
       },
       {
         question: '가격 차이가 11만원인데 그만한가요?',
@@ -3647,7 +3647,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>쿠션 10/10 대 9/10 맥스쿠션, 무게는 80g이 갈립니다</strong> — <a href="/shoes/asics-megablast">메가블라스트</a> 218g / <a href="/shoes/nike-vomero-18">보메로 18</a> 298g</li>
-    <li><strong>성격이 반대입니다</strong> — 메가블라스트는 힐 45.1mm 스택을 가볍게 담아 튀는 쪽(반발 9), 보메로는 무겁고 부드럽게 가라앉는 쪽(반발 6, 드롭 14mm)</li>
+    <li><strong>성격이 반대입니다</strong> — 메가블라스트는 힐 45.1mm 스택을 가볍게 담아 튀는 쪽(반발 9), 보메로는 무겁고 부드럽게 가라앉는 쪽(반발 7, 드롭 14mm)</li>
     <li><strong>돈 차이가 큽니다</strong> — 299,000원 대 189,000원, km당 598원 대 <strong>291원</strong>으로 두 배</li>
   </ul>
 </div>
@@ -3672,7 +3672,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>스택 (힐/전족)</td><td><strong>45.1 / 35.2mm</strong></td><td>43 / 29mm <small>(브랜드 46 / 36mm)</small></td></tr>
     <tr><td>드롭</td><td>9.9mm <small>(브랜드 8mm)</small></td><td><strong>14mm</strong> <small>(브랜드 10mm)</small></td></tr>
     <tr><td>미드솔</td><td>FF Turbo² (A-TPU)</td><td>ZoomX + ReactX</td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / <strong>9</strong></td><td>9 / 6</td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / <strong>9</strong></td><td>9 / 7</td></tr>
     <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
     <tr><td>토박스</td><td><strong>넓은 편</strong></td><td>좁은 편</td></tr>
     <tr><td>와이드 옵션</td><td>없음</td><td><strong>있음</strong></td></tr>
@@ -3690,7 +3690,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p><strong>메가블라스트는 힐 45.1mm 스택을 218g에 담았습니다.</strong> FF Turbo² 폼 하나로 채워 무게를 극단적으로 줄였고, 그래서 반발이 9/10입니다. 높이 올라간 만큼 튕겨 나오는 감각이 살아 있어 적정 페이스가 <strong>4:00~6:30</strong>으로 빠른 쪽까지 열려 있습니다.</p>
 
-<p><strong>보메로 18은 43mm 스택에 298g입니다.</strong> ZoomX와 ReactX를 겹쳐 부드러움을 우선했고 반발은 6/10. 드롭 14mm로 뒤꿈치가 확 들려 있어 힐 착지에서 굴러가듯 넘어갑니다. 적정 페이스는 <strong>5:30~7:00</strong>으로 느린 쪽 전용에 가깝습니다.</p>
+<p><strong>보메로 18은 43mm 스택에 298g입니다.</strong> ZoomX와 ReactX를 겹쳐 부드러움을 우선했고 반발은 7/10. 드롭 14mm로 뒤꿈치가 확 들려 있어 힐 착지에서 굴러가듯 넘어갑니다. 적정 페이스는 <strong>5:30~7:00</strong>으로 느린 쪽 전용에 가깝습니다.</p>
 
 <p>정리하면 <strong>메가블라스트는 "가벼운 맥스쿠션", 보메로 18은 "푹 잠기는 회복화"</strong>입니다. 겹치는 페이스대가 5:30~6:30 한 시간대뿐이라, 주력 페이스만 정해도 답이 나옵니다.</p>
 
@@ -3706,7 +3706,7 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>189,000원에 650km, <strong>km당 291원</strong>. 맥스쿠션 중에서 경제성이 뛰어난 편입니다. 드롭 14mm 덕에 아킬레스건과 족저근막 등급이 excellent이고, 평발 적합성도 양호입니다.</p>
 
-<p>약점은 298g의 무게와 반발 6/10입니다. 페이스를 올리려 하면 무겁고 둔하게 느껴집니다. 토박스도 좁은 편이라 발볼이 넓다면 <strong>반드시 와이드 옵션</strong>을 봐야 합니다.</p>
+<p>약점은 298g의 무게와 반발 7/10입니다. 페이스를 올리려 하면 무겁고 둔하게 느껴집니다. 토박스도 좁은 편이라 발볼이 넓다면 <strong>반드시 와이드 옵션</strong>을 봐야 합니다.</p>
 
 <p><strong>✅ 이런 분께</strong> — 회복런·이지런 전용 한 켤레가 필요한 분, 아킬레스가 약한 분, 총비용을 아끼려는 분, 평발인 분.</p>
 

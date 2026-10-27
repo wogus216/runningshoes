@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 272,
     cushioning: 8,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 8,
     drop: 6,
     durability: 600,
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['중립 발', '레이싱', '경량화 선호'],
   },
 
-  features: ['PWRRUN 미드솔', 'Guidance Frame', '공식 6mm 드롭 (RunRepeat 실측 8.3mm)', '과내전 지원'],
+  features: ['PWRRUN 미드솔', 'Guidance Frame', '공식 6mm 드롭 (RunRepeat 실측 8.3mm)', '과내전 지원', '에너지 리턴 전족부 62.0% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 159000,

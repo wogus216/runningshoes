@@ -27,7 +27,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 298,
     cushioning: 9,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 8,
     drop: 6,
     durability: 600,
@@ -92,6 +92,7 @@ export const shoe: Shoe = {
     '전족부 실측 120mm의 초광폭 플랫폼 (랩 최상위권)',
     '아웃솔 러버 커버리지 보강으로 내구성 향상',
     '공식 6mm 드롭 · 와이드(2E) 옵션 유통',
+    '에너지 리턴 전족부 61.4% (RunRepeat 실측)',
   ],
 
   reviews: [

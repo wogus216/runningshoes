@@ -28,7 +28,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 268,
     cushioning: 9,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 7,
     drop: 8,
     durability: 650,
@@ -77,6 +77,7 @@ export const shoe: Shoe = {
     'Duratech 5000 아웃솔 — 마모 0.4mm, 고무 두께 3.5mm',
     'DDATTIVO 인솔(힐 7.5mm) · 혀 패딩 11.0mm',
     '이탈리아 생산 (RunRepeat "Made in Italy")',
+    '에너지 리턴 전족부 57.4% (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

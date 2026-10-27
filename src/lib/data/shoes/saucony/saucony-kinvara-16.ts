@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 207,
     cushioning: 7,
-    responsiveness: 8,
+    responsiveness: 6,
     stability: 5,
     drop: 4,
     durability: 500,
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '과내전 러너', '맥시멀 쿠셔닝 필요'],
   },
 
-  features: ['PWRRUN 미드솔', '경량 207g', '공식 4mm 로우드롭', '내추럴 러닝'],
+  features: ['PWRRUN 미드솔', '경량 207g', '공식 4mm 로우드롭', '내추럴 러닝', '에너지 리턴 전족부 53.6% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 159000,

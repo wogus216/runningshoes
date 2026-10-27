@@ -773,7 +773,7 @@ export const posts_2026_06: BlogPost[] = [
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>둘 다 ZoomX+ReactX 듀얼 폼 + 43mm 힐 스택</strong>이지만, <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>에는 <strong>Full-length Air Zoom Unit</strong>이 추가돼 반발력(8/10)이 살아있고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그게 없는 대신 <strong>순수 맥스 쿠션</strong>(반발 6/10)에 집중합니다</li>
+    <li><strong>둘 다 ZoomX+ReactX 듀얼 폼 + 43mm 힐 스택</strong>이지만, <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>에는 <strong>Full-length Air Zoom Unit</strong>이 추가돼 반발력(8/10)이 살아있고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그게 없는 대신 <strong>순수 맥스 쿠션</strong>(반발 7/10)에 집중합니다</li>
     <li><strong>가격이 10만원 차이</strong>(프리미엄 28.9만 vs 보메로 18.9만). 그리고 결정적으로 <strong>보메로만 와이드 옵션이 있고(한국 공식몰 남녀, 2026-09-29 확인), 프리미엄은 와이드가 없습니다</strong>. 발볼 넓은 한국 러너에겐 이게 사실상 결론을 정합니다</li>
     <li><strong>통통 튀는 데일리 + 발볼 좁음 + 예산 여유 → 페가수스 프리미엄</strong>, <strong>순수 쿠션·무릎 보호 + 발볼 넓음 + 가성비 → 보메로 18</strong>입니다</li>
   </ul>
@@ -796,7 +796,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>힐 / 전족 스택</td><td>43 / 31mm</td><td>43 / 29mm</td></tr>
     <tr><td>드롭</td><td>12mm</td><td>14mm</td></tr>
     <tr><td>미드솔</td><td>ZoomX+ReactX+<strong>Air Zoom Unit</strong></td><td>ZoomX+ReactX</td></tr>
-    <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>6 / 10</td></tr>
+    <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>7 / 10</td></tr>
     <tr><td>쿠션</td><td>10 / 10</td><td>9 / 10</td></tr>
     <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드 O (남녀)</strong></td></tr>
     <tr><td>최적 페이스</td><td>5:00~6:30/km</td><td>5:30~7:00/km</td></tr>
@@ -807,7 +807,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>핵심 차이 3가지</h2>
 <h3>① Air Zoom Unit — "반발이 필요한가"</h3>
-<p>가장 큰 구조적 차이입니다. 페가수스 프리미엄에는 발 전체에 걸친 <strong>Air Zoom Unit</strong>이 들어가 발을 앞으로 밀어주는 <strong>반발(8/10)</strong>을 만듭니다. 덕분에 같은 쿠션이라도 "통통 튀는" 느낌이고, 가끔 페이스를 올리는 날에도 대응이 됩니다. 보메로 18은 이 부품이 없어 <strong>순수하게 푹신한(반발 6/10)</strong> 쪽입니다. 회복런·LSD처럼 "편하게 오래"가 목적이면 보메로가, "쿠션은 두껍되 굴러가는 맛도 원한다"면 프리미엄이 맞습니다.</p>
+<p>가장 큰 구조적 차이입니다. 페가수스 프리미엄에는 발 전체에 걸친 <strong>Air Zoom Unit</strong>이 들어가 발을 앞으로 밀어주는 <strong>반발(8/10)</strong>을 만듭니다. 덕분에 같은 쿠션이라도 "통통 튀는" 느낌이고, 가끔 페이스를 올리는 날에도 대응이 됩니다. 보메로 18은 이 부품이 없어 <strong>순수하게 푹신한(반발 7/10)</strong> 쪽입니다. 회복런·LSD처럼 "편하게 오래"가 목적이면 보메로가, "쿠션은 두껍되 굴러가는 맛도 원한다"면 프리미엄이 맞습니다.</p>
 
 <h3>② 와이드 옵션 — 발볼 넓으면 사실상 결론</h3>
 <p>둘 다 표준은 좁은 편(narrow)입니다. 그런데 <strong>보메로 18은 와이드 옵션이 있고(한국 공식몰 남녀), 페가수스 프리미엄은 와이드가 없습니다.</strong> 발볼 넓은 한국 러너라면 이 한 줄로 답이 정해집니다 — 프리미엄은 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없습니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>

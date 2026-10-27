@@ -29,7 +29,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 281,
     cushioning: 8,
-    responsiveness: 5,
+    responsiveness: 6,
     stability: 8,
     drop: 11,
     durability: 600,
@@ -78,6 +78,7 @@ export const shoe: Shoe = {
     '힐 40.0mm / 전족부 28.8mm, 실측 드롭 11.2mm',
     'Duratech 5000 아웃솔 — 고무 두께 3.8mm, 마모 0.8mm',
     'DDATTIVO 인솔 — 힐 쪽 두꺼운 쿠션 블록(최대 7.9mm)',
+    '에너지 리턴 전족부 47.4% (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

@@ -23,7 +23,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 295,
     cushioning: 8,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 9,
     drop: 10,
     durability: 800,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['과내전(오버프로네이션) 러너', '안정성이 필요한 러너', '평발 러너', '무릎 보호가 필요한 러너', '장거리 러너'],
     notRecommended: ['빠른 페이스 선호 러너', '중립 착지 러너', '초경량화 원하는 러너'],
   },
-  features: ['GuideRails 안정화 시스템', 'DNA Loft v3 질소 주입 쿠셔닝', '포어풋 +3mm 업데이트 (전작 대비)', '플랫 니트 어퍼로 편안한 착화감'],
+  features: ['GuideRails 안정화 시스템', 'DNA Loft v3 질소 주입 쿠셔닝', '포어풋 +3mm 업데이트 (전작 대비)', '플랫 니트 어퍼로 편안한 착화감', '에너지 리턴 전족부 59.2% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 189000,
     costPerKm: 236,

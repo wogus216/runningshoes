@@ -17,7 +17,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 298,
     cushioning: 9,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 7,
     drop: 10,
     durability: 650,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['장거리 러너 (하프/풀 마라톤)', '쿠션 최우선 러너', '무릎/발바닥 보호 필요', '회복 러닝용', '뒤꿈치 착지 러너'],
     notRecommended: ['빠른 페이스 레이싱', '가벼운 신발 선호', '낮은 드롭 선호', '발볼이 넓은 러너 (표준 사이즈 기준)'],
   },
-  features: ['ZoomX + ReactX 듀얼 폼', '맥시멀 쿠션 (힐 46mm)', '와이드 옵션 (남녀 모두)', '로커 디자인'],
+  features: ['ZoomX + ReactX 듀얼 폼', '맥시멀 쿠션 (힐 46mm)', '와이드 옵션 (남녀 모두)', '로커 디자인', '에너지 리턴 전족부 58.9% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 189000,
     streetPrice: 175000,
