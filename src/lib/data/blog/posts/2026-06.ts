@@ -3981,7 +3981,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/new-balance-lineup-tier-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-09-28',
+    updatedAt: '2026-10-27',
     category: 'guide' as const,
     readingTime: 12,
     tags: ['뉴발란스 러닝화', '뉴발란스 계급도', '러닝화 라인업', '러닝화 등급', '뉴발란스 번호 체계', '1080', '860', '880', 'FuelCell', 'Fresh Foam X'],
@@ -4049,7 +4049,7 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>3. 뉴발란스 러닝화 계급도 — 11종 한눈에</h2>
 
-<p>위 두 축(번호 × 폼)으로 현재 한국에서 살 수 있는 뉴발란스 로드 러닝화 11종을 줄 세우면 이렇게 됩니다. 후속작 <strong>SC 레벨</strong>(SC Trainer V3 후속)·<strong>SC Elite V6</strong>가 들어오면서 이전 모델은 "전작"으로 표기했습니다 — 할인 재고가 있으면 여전히 좋은 선택지입니다. 트레일화 히에로 v9는 아래 4번에 따로 정리했습니다.</p>
+<p>위 두 축(번호 × 폼)으로 한국 출시 정가가 확인된 뉴발란스 로드 러닝화 11종을 줄 세우면 이렇게 됩니다. 후속작 <strong>SC 레벨</strong>(SC Trainer V3 후속)·<strong>SC Elite V6</strong>가 들어오면서 이전 모델은 "전작"으로 표기했습니다 — 할인 재고가 있으면 여전히 좋은 선택지입니다. 트레일화 히에로 v9는 아래 4번에 따로 정리했습니다.</p>
 
 <table>
   <thead>
@@ -4057,7 +4057,7 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/new-balance-880-v15"><strong>880 V15</strong></a></td><td>입문·데일리</td><td>Fresh Foam X</td><td>18.9만</td><td>286g</td><td>40mm 맥시멀 스택, 첫 러닝화</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 가성비, 발볼 4옵션</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 지지, 해외 4폭·국내 확인 필요</td></tr>
     <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>332g</td><td>넓어진 힐, 장거리 안정</td></tr>
     <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>21.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14"><strong>1080 V14</strong></a></td><td>프리미엄 쿠션</td><td>Fresh Foam X</td><td>19.9만</td><td>285g</td><td>구름 같은 클래식 부드러움</td></tr>
@@ -4070,7 +4070,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>※ 가격은 한국 공식가(2026-09-28 확인 기준), 무게는 신발 DB의 공개 수치입니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+<p>※ 가격은 한국 공식 출시 정가(모델별 확인 시점 상이), 무게는 신발 DB의 공개 수치입니다. 860 V14는 2026-10-20 기준 한국 공식몰에 미등재되어 구매 가능 여부와 국내 판매 폭을 판매처에서 확인해야 합니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
 
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
@@ -7391,6 +7391,7 @@ export const posts_2026_06: BlogPost[] = [
     thumbnail: '/images/blog/stability-running-shoes-overpronation-flat-feet-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
+    updatedAt: '2026-10-27',
     category: 'guide' as const,
     readingTime: 9,
     tags: ['안정화 러닝화', '평발', '과내전', '오버프로네이션', '카야노 33', '러닝화 추천', '안정화'],
@@ -7400,7 +7401,7 @@ export const posts_2026_06: BlogPost[] = [
   <ul>
     <li>발이 안쪽으로 무너지는 <strong>과내전(오버프로네이션)·평발</strong>이라면, 안쪽을 받쳐주는 <strong>안정화 러닝화</strong>가 무릎·발목 부상을 줄여줍니다</li>
     <li>종합 톱픽은 <strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> — FLUIDSUPPORT로 바뀌며 "지지하되 딱딱하지 않은" 균형이 좋습니다(우리 사이트에서도 가장 많이 보는 안정화)</li>
-    <li>가성비라면 <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>·<a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>(15만원대), 평발 특화는 <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>가 답입니다</li>
+    <li>가성비라면 <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>·<a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>(15만원대). 뉴발 860 v14는 평발 지지 구조를 갖췄지만 한국 공식몰에는 미등재(2026-10-20)여서 국내 판매 폭은 확인이 필요합니다</li>
   </ul>
 </div>
 
@@ -7430,7 +7431,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>295g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
     <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>H-Frame</td><td>283g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
     <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 특화·4종 와이드</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 지지·해외 4폭(국내 미확인)</td></tr>
     <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a></td><td>광폭 플랫폼</td><td>278g</td><td><strong>159,000</strong></td><td>가성비·카야노 절반값</td></tr>
     <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a></td><td>웨이브 플레이트</td><td>286g</td><td><strong>159,000</strong></td><td>900km 내구·가성비 끝판</td></tr>
     <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a></td><td>와이드 베이스</td><td>296g</td><td>169,000</td><td>14만원대 가성비</td></tr>
@@ -7451,7 +7452,7 @@ export const posts_2026_06: BlogPost[] = [
 <h2>목적별 베스트</h2>
 <ul>
   <li><strong>가성비 (15만원대)</strong> — <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>, <a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>. 카야노 절반 값에 충분한 안정성</li>
-  <li><strong>평발 특화·와이드</strong> — <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>(4종 와이드, 17만원대). 신상 <a href="/blog/new-balance-860-v14-vs-v15-comparison">v15와의 차이</a>도 확인하세요</li>
+  <li><strong>평발 지지·발볼 선택</strong> — <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>는 해외 4폭 출시 모델이지만 한국 공식몰에는 미등재(2026-10-20)입니다. 17.9만원은 출시 정가이며, 국내 판매 폭은 판매처에서 확인하세요. 공식몰에서 와이드를 찾는다면 <a href="/shoes/new-balance-860-v15">860 v15</a> 남성 2E·4E를 살펴보세요</li>
   <li><strong>맥스쿠션 안정</strong> — <a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>. 무릎 부담 큰 러너의 든든한 선택</li>
   <li><strong>가벼운 안정화</strong> — <a href="/shoes/hoka-arahi-8">호카 아라히 8</a>(259g). 안정화답지 않게 경쾌</li>
   <li><strong>과내전 입문</strong> — <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>. 부드러운 GuideRails로 첫 안정화에 무난</li>
