@@ -266,7 +266,7 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
   const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
   const rawScoreOf = (shoe: (typeof shoes)[number], profile: UserProfile) => recommendShoes([shoe], profile)[0]?.rawScore;
 
-  it("회복 목적: 쿠션 8↑ 신발에 '느린 회복 러닝 비추천'이 적히면 규칙 9 가점 10이 빠진다", () => {
+  it("회복 목적: 쿠션 8↑ 신발에 '느린 회복 러닝 비추천'이 적히면 30점 차이가 난다(규칙 9 가점 10 + 규칙 14-1 감점 20)", () => {
     const profile: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "recovery", budget: "high", targetPace: "medium" };
     const base = shoes.find(
       (s) => s.specs.cushioning === 8 && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
@@ -277,7 +277,7 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
     const withoutBonus = rawScoreOf(flagged, profile);
     expect(withBonus).toBeDefined();
     expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(10);
+    expect(withBonus! - withoutBonus!).toBe(30);
   });
 });
 
@@ -299,6 +299,19 @@ describe("느린 페이스에서 느린·회복 러닝 비추천 신발은 감�
     expect(base).toBeDefined();
     const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
     expect(rawScoreOf(base!, slowTraining)! - rawScoreOf(flagged, slowTraining)!).toBe(20);
+  });
+
+  it("회복 목적이면 빠른 페이스를 골라도 같은 감점이 적용된다", () => {
+    const base = pick();
+    expect(base).toBeDefined();
+    const recoveryFast: UserProfile = { ...slowTraining, purpose: "recovery", targetPace: "fast" };
+    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
+    const withBonus = rawScoreOf(base!, recoveryFast);
+    const withoutBonus = rawScoreOf(flagged, recoveryFast);
+    expect(withBonus).toBeDefined();
+    expect(withoutBonus).toBeDefined();
+    // 규칙 9 가점(+10)과 규칙 14-1 감점(-20)이 함께 빠지고 더해진다
+    expect(withBonus! - withoutBonus!).toBe(30);
   });
 
   it("레이싱 목적이면 감점하지 않는다", () => {

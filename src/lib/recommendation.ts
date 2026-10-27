@@ -479,10 +479,10 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
       }
     }
 
-    // 14-1. 느린 페이스를 골랐는데 느린·회복 러닝에 맞지 않는다고 적힌 신발은 감점한다.
+    // 14-1. 느린 페이스를 골랐거나 회복 목적인데 느린·회복 러닝에 맞지 않는다고 적힌 신발은 감점한다.
     // 가점 규칙들은 막았지만 예산·경험·카테고리 같은 일반 적합 점수로 상위 10에 남는 경로가 있었다
-    // (디비에이트 나이트로 4: 느린 페이스 프로필 405개 중 69개). 레이싱 목적은 대상이 아니다.
-    if (profile.targetPace === 'slow' && profile.purpose !== 'racing' && unsuitedForSlowRuns(shoe)) {
+    // (디비에이트 나이트로 4: 느린 페이스 프로필 405개 중 69개, 회복 목적+빠른 페이스 13개). 레이싱 목적은 대상이 아니다.
+    if ((profile.targetPace === 'slow' || profile.purpose === 'recovery') && profile.purpose !== 'racing' && unsuitedForSlowRuns(shoe)) {
       score -= 20;
     }
 
