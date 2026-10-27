@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   editorComment: '16만 9천원에 800km 내구성이라는 숫자가 고스트 17의 핵심입니다. km당 약 211원은 페가수스 41(₩159,000/550km=289원/km)보다 경제적이고, DNA Loft v3의 RunRepeat 랩 경도는 36.2 AC로 랩 평균(35.4 AC) 수준이고, 고스트 18(40.5 AC)보다는 부드럽습니다. 와이드 옵션이 있지만 기본 토박스가 69.6mm로 좁은 편이라 발볼 넓은 한국 러너는 반드시 와이드를 선택하세요. 겨울 경화율 39%가 약점이지만, 입문자가 1년간 데일리로 소화하기엔 가장 실패 확률 낮은 선택입니다.\n\n사이즈·구매 가이드: 기본 토박스가 좁은 편(RunRepeat 실측 69.6mm)이라 발볼 넓은 한국 러너는 반드시 와이드 옵션을 선택하세요. 169,000원에 km당 약 211원은 입문화 중 가성비 최상위이며, 비슷한 가격대의 젤 님버스 28이나 페가수스 41과 비교해 착화감 차이를 확인해보세요. 와이드 선택 시 한 사이즈 올리지 않아도 되는 경우가 많으니 매장 시착을 권장합니다.',
   specs: {
     weight: 289,
-    cushioning: 8,
-    responsiveness: 6,
+    cushioning: 9,
+    responsiveness: 7,
     stability: 7,
     drop: 10,
     durability: 800,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['입문 러너', '데일리 러너', '안정적인 주행 원하는 러너'],
     notRecommended: ['빠른 페이스 선호 러너', '초경량화 원하는 러너'],
   },
-  features: ['DNA Loft v3 쿠셔닝', '53.8% 에너지 리턴', '와이드 옵션 제공', '안정적인 주행감'],
+  features: ['DNA Loft v3 쿠셔닝', '53.8% 에너지 리턴', '와이드 옵션 제공', '안정적인 주행감', '충격흡수 힐 140 SA (RunRepeat 실측)', '에너지 리턴 전족부 56.5% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 169000,
     costPerKm: 211,

@@ -3483,7 +3483,7 @@ export const posts_2026_08: BlogPost[] = [
     slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
     title: '고스트 17 vs 페가수스 42 차이 — 스펙이 거의 같다, 그래서 수명이 가른다 | 800km vs 600km',
     description:
-      '브룩스 고스트 17과 나이키 페가수스 42는 스펙표가 놀랍도록 비슷합니다. 정가 둘 다 169,000원, 무게 289g 대 286g로 3g 차, 드롭 둘 다 10mm, 스택도 1mm 차이. 둘 다 무플레이트에 와이드 옵션까지 있습니다. 그래서 진짜 갈림길은 다른 데 있어요 — 내구가 800km 대 600km(km당 211원 대 282원)로 34% 벌어지고, 반발은 6 대 7, 부상 등급은 페가수스가 세 항목 excellent로 앞섭니다. 국내 최다 판매 데일리 두 라인을 실측으로 갈랐습니다.',
+      '브룩스 고스트 17과 나이키 페가수스 42는 스펙표가 놀랍도록 비슷합니다. 정가 둘 다 169,000원, 무게 289g 대 286g로 3g 차, 드롭 둘 다 10mm, 스택도 1mm 차이. 둘 다 무플레이트에 와이드 옵션까지 있습니다. 그래서 진짜 갈림길은 다른 데 있어요 — 내구가 800km 대 600km(km당 211원 대 282원)로 34% 벌어지고, 반발은 7 대 7로 같고 쿠션은 고스트가 한 점 높으며, 부상 등급은 페가수스가 세 항목 excellent로 앞섭니다. 국내 최다 판매 데일리 두 라인을 실측으로 갈랐습니다.',
     thumbnail: '/images/blog/brooks-ghost-17-vs-nike-pegasus-42-daily-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
@@ -3494,7 +3494,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '스펙이 거의 같은데 어떻게 고르나요?',
         answer:
-          '수명과 반발로 갈립니다. 고스트 17은 내구 800km로 km당 211원, 페가수스 42는 600km로 282원 — 34% 차이입니다. 반대로 반발은 페가수스가 7/10으로 고스트(6/10)보다 높고, 부상 예방 등급도 족저근막·아킬레스·정강이 세 항목에서 excellent로 앞섭니다. 오래 쓰려면 고스트, 조금이라도 탄력을 원하면 페가수스입니다.',
+          '수명과 부상 예방 등급으로 갈립니다. 고스트 17은 내구 800km로 km당 211원, 페가수스 42는 600km로 282원 — 34% 차이입니다. 반대로 부상 예방 등급은 족저근막·아킬레스·정강이 세 항목에서 excellent로 앞섭니다. 오래 쓰려면 고스트, 부상 예방 항목을 따진다면 페가수스입니다.',
       },
       {
         question: '3g 차이는 무시해도 되나요?',
@@ -3518,7 +3518,7 @@ export const posts_2026_08: BlogPost[] = [
   <ul>
     <li><strong>스펙표로는 거의 같은 신발입니다</strong> — 둘 다 169,000원, 289g 대 286g(3g), 드롭 둘 다 10mm, 스택 1mm 차, 둘 다 무플레이트에 와이드 옵션 있음</li>
     <li><strong>그래서 수명이 가릅니다</strong> — <a href="/shoes/brooks-ghost-17">고스트 17</a> 800km·km당 <strong>211원</strong> / <a href="/shoes/nike-pegasus-42">페가수스 42</a> 600km·282원. 34% 차이</li>
-    <li><strong>반대쪽 강점은 페가수스</strong> — 반발 7 대 6, 부상 예방은 족저근막·아킬레스·정강이 <strong>세 항목 excellent</strong></li>
+    <li><strong>반대쪽 강점은 페가수스</strong> — 부상 예방은 족저근막·아킬레스·정강이 <strong>세 항목 excellent</strong></li>
   </ul>
 </div>
 
@@ -3526,7 +3526,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="callout-icon">🎯</span>
   <div class="callout-body">
     <p class="callout-title">한 줄 결론</p>
-    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>조금이라도 탄력 있고 부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭으로는 갈리지 않고 발볼은 페가수스 42가 조금 더 넉넉하니(표준 토박스 69.6 대 72.3mm) 이 점을 함께 보세요.</p>
+    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭으로는 갈리지 않고 발볼은 페가수스 42가 조금 더 넉넉하니(표준 토박스 69.6 대 72.3mm) 이 점을 함께 보세요.</p>
   </div>
 </div>
 
@@ -3542,7 +3542,7 @@ export const posts_2026_08: BlogPost[] = [
     <tr><td>스택 (힐/전족)</td><td>36 / 26mm</td><td>37 / 27mm <em>(1mm 차)</em></td></tr>
     <tr><td>드롭</td><td>10mm</td><td>10mm <em>(동일)</em></td></tr>
     <tr><td>미드솔</td><td>DNA Loft v3</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
-    <tr><td>쿠션 / 반발</td><td>8 / 6</td><td>8 / <strong>7</strong></td></tr>
+    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>8 / 7</td></tr>
     <tr><td>안정성</td><td>7/10</td><td>7/10 <em>(동일)</em></td></tr>
     <tr><td>토박스 / 와이드</td><td><strong>좁은 편 (랩 69.6mm)</strong> / 있음</td><td>표준 (랩 72.3mm) / 있음</td></tr>
     <tr><td>부상 예방</td><td>네 항목 모두 양호</td><td><strong>족저·아킬레스·정강이 excellent</strong>, 무릎 양호</td></tr>
@@ -3574,20 +3574,20 @@ export const posts_2026_08: BlogPost[] = [
 
 <p>다만 이 수치는 아웃솔 마모 기준 추정치입니다. 체중·노면·주법에 따라 크게 달라지니, 단일 숫자로 교체 시점을 정하지는 마세요 — <a href="/blog/running-shoe-500km-replacement-myth-2026">500~800km 교체설이 어디서 왔는지</a>를 함께 보시면 판단이 쉬워집니다.</p>
 
-<h2>차이 ② 부상 프로필과 반발 — 페가수스가 앞선다</h2>
+<h2>차이 ② 부상 프로필 — 페가수스가 앞선다</h2>
 
 <p>페가수스 42는 족저근막·아킬레스건·정강이 <strong>세 항목이 excellent</strong>이고 무릎만 양호입니다. 고스트 17은 네 항목 모두 양호로, 나쁘진 않지만 최상위는 아닙니다.</p>
 
-<p>반발도 7 대 6으로 페가수스가 높습니다. <strong>풀렝스 Air Zoom 유닛</strong>이 들어가 발 아래에서 튕겨주는 감각이 있기 때문이고, 그래서 적정 페이스도 5:00부터로 고스트(5:30)보다 조금 빠른 쪽까지 열려 있습니다.</p>
+<p>반발 점수는 7 대 7로 같지만 페가수스에는 <strong>풀렝스 Air Zoom 유닛</strong>이 들어가 있고, 적정 페이스도 5:00부터로 고스트(5:30)보다 조금 빠른 쪽까지 열려 있습니다.</p>
 
-<p>반대로 고스트 17의 <strong>DNA Loft v3</strong>는 튕기기보다 부드럽게 받쳐주는 성격입니다. 쿠션 점수는 둘 다 8/10로 같지만 결이 다릅니다.</p>
+<p>반대로 고스트 17의 <strong>DNA Loft v3</strong>는 튕기기보다 부드럽게 받쳐주는 성격입니다. 쿠션 점수는 고스트 17이 9/10, 페가수스 42가 8/10으로 한 점 차이이고 결도 다릅니다.</p>
 
 <h2>내게 맞는 건?</h2>
 
 <ul>
   <li><strong>한 켤레를 최대한 오래</strong> → <a href="/shoes/brooks-ghost-17">고스트 17</a>(800km·km당 211원)</li>
   <li><strong>족저근막염·아킬레스·정강이 이력</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>(세 항목 excellent)</li>
-  <li><strong>가끔 페이스를 올린다</strong> → 페가수스 42(반발 7, 5:00부터)</li>
+  <li><strong>가끔 페이스를 올린다</strong> → 페가수스 42(5:00부터)</li>
   <li><strong>부드럽게 받쳐주는 느낌이 좋다</strong> → 고스트 17(DNA Loft v3)</li>
   <li><strong>발볼이 넓다</strong> → 둘 다 와이드 옵션이 있지만, 표준 폭이 더 넉넉한 페가수스 42가 유리합니다</li>
   <li><strong>더 푹신한 쪽을 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a> 같은 맥스쿠션으로</li>
@@ -3753,7 +3753,7 @@ export const posts_2026_08: BlogPost[] = [
       {
         question: '11만원 차이가 날 만한가요?',
         answer:
-          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 11만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 7/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(482원)보다 26% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
+          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 11만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 8/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(482원)보다 26% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
       },
       {
         question: '발볼이 넓은데 어느 쪽인가요?',
@@ -3776,7 +3776,7 @@ export const posts_2026_08: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>값과 무게가 정반대로 붙습니다</strong> — <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 289,000원·308g / <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 179,000원·224g. <strong>11만원 더 비싼 쪽이 84g 무겁습니다</strong></li>
-    <li><strong>프리미엄이 파는 건 푹신함</strong> — 쿠션 10/10, 힐 스택 43mm, 풀렝스 Air Zoom. 벨로시티는 스택 34mm에 쿠션 7/10</li>
+    <li><strong>프리미엄이 파는 건 푹신함</strong> — 쿠션 10/10, 힐 스택 43mm, 풀렝스 Air Zoom. 벨로시티는 스택 34mm에 쿠션 8/10</li>
     <li><strong>갈림길 셋</strong> — km당 482원 vs 358원, 와이드 옵션(벨로시티만 있음), 무릎 등급(프리미엄이 주의)</li>
   </ul>
 </div>

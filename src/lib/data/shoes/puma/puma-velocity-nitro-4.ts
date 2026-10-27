@@ -23,8 +23,8 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 224,
-    cushioning: 7,
-    responsiveness: 8,
+    cushioning: 8,
+    responsiveness: 9,
     stability: 7,
     drop: 10,
     durability: 500,
@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['넓은 발볼', '맥시멀 쿠셔닝 필요', '안정화 필요'],
   },
 
-  features: ['풀 Nitro Foam', 'PumaGrip 아웃솔', '경량 224g', '67.5% 에너지 리턴'],
+  features: ['풀 Nitro Foam', 'PumaGrip 아웃솔', '경량 224g', '67.5% 에너지 리턴', '충격흡수 힐 136 SA (RunRepeat 실측)', '에너지 리턴 전족부 74.2% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 179000,

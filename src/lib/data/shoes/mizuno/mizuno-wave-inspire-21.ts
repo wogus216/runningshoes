@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   tags: ['안정화', '과내전', '평발'],
   specs: {
     weight: 286,
-    cushioning: 7,
+    cushioning: 8,
     responsiveness: 6,
     stability: 8,
     drop: 12,
@@ -59,6 +59,7 @@ export const shoe: Shoe = {
     '넓은 미드솔 플랫폼 (힐 94mm, 포어풋 118.1mm)',
     'X10 전체 아웃솔로 뛰어난 내구성',
     '에너지 리턴 전족부 51.5% (RunRepeat 실측)',
+    '충격흡수 힐 126 SA (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 159000,

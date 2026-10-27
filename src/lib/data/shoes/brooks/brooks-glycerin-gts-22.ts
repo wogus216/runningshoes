@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   editorComment: 'GuideRails 기술은 발목 관절의 과도한 내전을 물리적으로 차단하는 방식이라, 카야노 32의 4D Guidance System과는 접근이 다릅니다. 20만 9천원으로 카야노(₩199,000)보다 1만원 비싸지만 97.1mm 넓은 힐 폭이 착지 순간의 좌우 흔들림을 억제합니다. 평발 비율이 높은 한국 러너 특성상 이 가격대 안정화 중 실패 확률이 가장 낮고, 800km 내구성으로 km당 약 261원이라는 경제성까지 갖췄습니다. 305g 무게가 부담이라면 아드레날린 GTS 25(300g, ₩189,000)가 더 가벼운 대안입니다. EVA 계열의 미덕은 수명입니다 — 450km를 실제 달린 실험에서 EVA는 러닝 이코노미가 그대로였습니다(PEBA는 −2.3%). 800km 표기가 과장이 아닌 이유입니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 와이드 옵션도 있어 발볼 넓은 러너는 와이드를 선택하세요. 209,000원에 km당 약 261원은 안정화 중 가성비가 좋으며, 무게가 부담이라면 젤 카야노 32나 스트럭처 26을 함께 비교해보세요. 과내전 초보 러너라면 먼저 매장에서 걸어보고 GuideRails의 물리적 지지감을 직접 확인하는 것을 권장합니다.',
   specs: {
     weight: 305,
-    cushioning: 9,
-    responsiveness: 6,
+    cushioning: 8,
+    responsiveness: 7,
     stability: 9,
     drop: 10,
     durability: 800,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['오버프로네이션 러너', '평발 러너', '안정성 필요 러너'],
     notRecommended: ['중립 보행 러너', '가벼운 신발 선호 러너'],
   },
-  features: ['GuideRails 안정화 시스템', 'DNA Tuned 쿠셔닝', '53.1% 에너지 리턴', '과도한 움직임 제어'],
+  features: ['GuideRails 안정화 시스템', 'DNA Tuned 쿠셔닝', '53.1% 에너지 리턴', '과도한 움직임 제어', '충격흡수 힐 122 SA (RunRepeat 실측)', '에너지 리턴 전족부 57.8% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 209000,
     costPerKm: 261,

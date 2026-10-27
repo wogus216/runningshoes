@@ -24,7 +24,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 268,
     cushioning: 8,
-    responsiveness: 8,
+    responsiveness: 7,
     stability: 7,
     drop: 10,
     durability: 450,
@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '느린 회복 러닝', '최대 쿠셔닝 필요'],
   },
 
-  features: ['Nitro Foam + Nitro Elite 듀얼폼', '카본 플레이트 (PWRPLATE)', '훈련용 내구성', '충격흡수 힐 132 SA (RunRepeat 실측)'],
+  features: ['Nitro Foam + Nitro Elite 듀얼폼', '카본 플레이트 (PWRPLATE)', '훈련용 내구성', '충격흡수 힐 132 SA (RunRepeat 실측)', '에너지 리턴 전족부 63.4% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 219000,

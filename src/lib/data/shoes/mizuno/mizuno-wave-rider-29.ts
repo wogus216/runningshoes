@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['데일리', '쿠셔닝', '입문화'],
   specs: {
     weight: 258,
-    cushioning: 7,
-    responsiveness: 6,
+    cushioning: 9,
+    responsiveness: 7,
     stability: 7,
     drop: 8,
     durability: 800,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['입문 러너', '중급 러너', '매일 달리는 러너', '편안한 쿠셔닝을 원하는 러너'],
     notRecommended: ['빠른 페이스를 원하는 러너', '가벼운 신발을 선호하는 러너'],
   },
-  features: ['Enerzy NXT 미드솔로 53.3% 에너지 리턴', 'Wave 플레이트로 안정적인 착지', '전체 아웃솔 커버리지로 내구성 우수', '평균보다 넓은 토박스 (랩 76.7mm)', '힐스트라이커에게 최적화'],
+  features: ['Enerzy NXT 미드솔로 53.3% 에너지 리턴', 'Wave 플레이트로 안정적인 착지', '전체 아웃솔 커버리지로 내구성 우수', '평균보다 넓은 토박스 (랩 76.7mm)', '힐스트라이커에게 최적화', '충격흡수 힐 142 SA (RunRepeat 실측)', '에너지 리턴 전족부 55.8% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 169000,
     costPerKm: 211,

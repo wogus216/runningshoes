@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 283,
     cushioning: 8,
-    responsiveness: 5,
+    responsiveness: 6,
     stability: 10,
     drop: 7,
     durability: 600, // 2026-10-23: detailedSpecs.durability 표기(600km)에 맞춤 — 종전 500
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 페이스 훈련', '가벼운 신발 선호', '정상 발 러너'],
   },
 
-  features: ['H-Frame 안정화 구조', '넓은 토박스 (76.7mm)', '듀얼 폼 시스템', '넓은 베이스', '충격흡수 힐 122 SA (RunRepeat 실측)'],
+  features: ['H-Frame 안정화 구조', '넓은 토박스 (76.7mm)', '듀얼 폼 시스템', '넓은 베이스', '충격흡수 힐 122 SA (RunRepeat 실측)', '에너지 리턴 전족부 52.4% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 239000,

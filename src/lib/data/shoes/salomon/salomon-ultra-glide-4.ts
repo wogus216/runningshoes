@@ -22,7 +22,7 @@ export const shoe: Shoe = {
   tags: ['트레일', '울트라', '맥스쿠션', '와이드', '장거리'],
   specs: {
     weight: 295,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 6,
     stability: 7,
     drop: 8,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['50~100km 울트라마라톤', '하이볼륨 데일리 트레일', '올데이 컴포트 우선 러너', '트레일 하이킹 겸용', '발볼 넓은 러너(와이드 선택)'],
     notRecommended: ['스피드 레이싱', '좁은 발 표준 버전(뾰족함)', '가파른 수직 하강 산악 코스', '더운 날씨(축열·수분 잔류)'],
   },
-  features: ['OptiFoam 맥스쿠션(41mm 스택)', 'RelieveSphere 암반 충격분산', 'Contagrip(3.9mm 러그)', '와이드 옵션', '295g 경량 맥스쿠션', '에너지 리턴 전족부 51.6% (RunRepeat 실측)'],
+  features: ['OptiFoam 맥스쿠션(41mm 스택)', 'RelieveSphere 암반 충격분산', 'Contagrip(3.9mm 러그)', '와이드 옵션', '295g 경량 맥스쿠션', '에너지 리턴 전족부 51.6% (RunRepeat 실측)', '충격흡수 힐 122 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 230000,
     streetPrice: 210000,

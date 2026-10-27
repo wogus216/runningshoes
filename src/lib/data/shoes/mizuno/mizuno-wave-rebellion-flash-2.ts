@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['레이싱', '템포', '중족부 착지'],
   specs: {
     weight: 239,
-    cushioning: 7,
-    responsiveness: 6,
+    cushioning: 9,
+    responsiveness: 7,
     stability: 5,
     drop: 3,
     durability: 600,
@@ -59,6 +59,8 @@ export const shoe: Shoe = {
     '유리섬유 Wave 플레이트로 추진력 제공',
     '극단적인 힐 베벨로 중족부 착지에 최적화',
     'G3 러버 아웃솔로 우수한 그립',
+    '충격흡수 힐 148 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 59.6% (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 189000,

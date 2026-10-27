@@ -24,8 +24,8 @@ export const shoe: Shoe = {
   tags: ['안정화', '데일리', '워킹'],
   specs: {
     weight: 298,
-    cushioning: 7,
-    responsiveness: 5,
+    cushioning: 8,
+    responsiveness: 7,
     stability: 7,
     drop: 8,
     durability: 600,
@@ -70,6 +70,8 @@ export const shoe: Shoe = {
     '뒤꿈치 중심 가이던스와 측면 벽체로 mild-to-moderate stability 제공',
     'On 특유의 탄탄한 Helion + CloudTec 조합',
     '전체 폭은 평균 수준(최대폭 95.5mm 실측), 토박스는 71.0mm로 좁아지는 형태',
+    '충격흡수 힐 130 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 57.0% (RunRepeat 실측)',
   ],
   reviews: [
     {
