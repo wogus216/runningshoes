@@ -77,6 +77,7 @@ export const shoe: Shoe = {
     '227g (남성 US 9 실측)',
     '힐 36.5mm / 전족부 24.7mm, 실측 드롭 11.8mm',
     'Duratech 5000 부분 고무 아웃솔 — 마모 0.7mm, 두께 2.8mm',
+    '에너지 리턴 전족부 62.7% (RunRepeat 실측)',
   ],
 
   priceAnalysis: {

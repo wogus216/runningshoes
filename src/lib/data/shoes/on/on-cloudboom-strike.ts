@@ -70,6 +70,7 @@ export const shoe: Shoe = {
     '풀렝스 카본 플레이트 + Pebax Helion HF 폼',
     '트랙션 0.62 - 슈퍼슈즈 중 최상위 그립력',
     '겨울 성능 6% 변화 - Pebax 폼 특유의 온도 안정성',
+    '에너지 리턴 전족부 73.4% (RunRepeat 실측)',
   ],
   reviews: [
     {

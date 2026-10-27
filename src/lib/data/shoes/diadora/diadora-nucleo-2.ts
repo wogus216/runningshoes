@@ -77,6 +77,7 @@ export const shoe: Shoe = {
     '힐 38.7mm / 전족부 30.7mm, 실측 드롭 8.0mm',
     'Duratech 5000 아웃솔 — 마모 0.7mm',
     '세미 거싯 텅·혀 패딩 9.9mm, 아킬레스 부담을 줄이는 연장 힐 칼라',
+    '에너지 리턴 전족부 52.2% (RunRepeat 실측)',
   ],
 
   priceAnalysis: {
