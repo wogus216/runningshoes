@@ -238,7 +238,7 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
     return found?.rawScore;
   };
 
-  it("쿠션 10 신발에 '느린 회복 러닝 비추천'이 적히면 가점 28(규칙 22·25의 +8, +10, 규칙 9의 +10)이 빠진다", () => {
+  it("쿠션 10 신발에 '느린 회복 러닝 비추천'이 적히면 48점 차이가 난다(가점 28: 규칙 22·25의 +8, +10, 규칙 9의 +10 + 감점 20: 규칙 14-1)", () => {
     const base = shoes.find(
       (s) => s.specs.cushioning === 10 && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
     );
@@ -248,7 +248,7 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
     const withoutBonus = rawScoreOf(flagged);
     expect(withBonus).toBeDefined();
     expect(withoutBonus).toBeDefined();
-    expect(withBonus! - withoutBonus!).toBe(28);
+    expect(withBonus! - withoutBonus!).toBe(48);
   });
 
   it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
@@ -280,3 +280,33 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
     expect(withBonus! - withoutBonus!).toBe(10);
   });
 });
+
+describe("느린 페이스에서 느린·회복 러닝 비추천 신발은 감점한다 (규칙 14-1)", () => {
+  const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
+  const slowTraining: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "training", budget: "high", targetPace: "slow" };
+  const rawScoreOf = (shoe: (typeof shoes)[number], profile: UserProfile) => recommendShoes([shoe], profile)[0]?.rawScore;
+  const pick = () =>
+    shoes.find(
+      (s) =>
+        s.category !== "레이싱" &&
+        s.category !== "트레일" &&
+        !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)) &&
+        rawScoreOf(s, slowTraining) !== undefined,
+    );
+
+  it("훈련 목적·느린 페이스: '느린 회복 러닝 비추천'이 적히면 20점이 빠진다", () => {
+    const base = pick();
+    expect(base).toBeDefined();
+    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
+    expect(rawScoreOf(base!, slowTraining)! - rawScoreOf(flagged, slowTraining)!).toBe(20);
+  });
+
+  it("레이싱 목적이면 감점하지 않는다", () => {
+    const base = pick();
+    expect(base).toBeDefined();
+    const racing: UserProfile = { ...slowTraining, purpose: "racing" };
+    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
+    expect(rawScoreOf(base!, racing)! - rawScoreOf(flagged, racing)!).toBeLessThan(20);
+  });
+});
+
