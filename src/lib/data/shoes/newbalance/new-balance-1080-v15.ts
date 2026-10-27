@@ -96,6 +96,7 @@ export const shoe: Shoe = {
     '남성 2E(약간 넓음)·4E(넓음) 발볼 옵션으로 한국인 발에 적합 (여성은 D)',
     'Breathable Mesh 갑피 + 리플렉티브 디테일',
     '힐 안정성 보강된 아웃솔 설계',
+    '충격흡수 힐 147 SA (RunRepeat 실측)',
   ],
 
   reviews: [

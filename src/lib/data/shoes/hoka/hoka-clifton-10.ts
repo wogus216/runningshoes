@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 레이스 페이스', '강한 반발력 선호', '미니멀리스트 러너'],
   },
 
-  features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감'],
+  features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감', '충격흡수 힐 147 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 199000,

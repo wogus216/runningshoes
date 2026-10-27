@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['평탄·로드-트레일 혼합 레이스', '전족부 스트라이커', '그래블·자갈 트레일', '빠른 페이스 트레일 러너'],
     notRecommended: ['테크니컬·암반·진흙 지형', '발목 부상 이력', '발볼 넓은 러너', '장거리 울트라'],
   },
-  features: ['풀 카본 플레이트', 'FF Turbo + FF Blast+ 듀얼 폼', 'ASICSGRIP 아웃솔', '258g 경량', '힐 44.7mm 고스택'],
+  features: ['풀 카본 플레이트', 'FF Turbo + FF Blast+ 듀얼 폼', 'ASICSGRIP 아웃솔', '258g 경량', '힐 44.7mm 고스택', '에너지 리턴 전족부 65.4% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 279000,
     streetPrice: 250000,

@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['회복 러닝 전용', '최대 쿠션 추구', '무릎/관절 보호 최우선', '체중이 많이 나가는 러너'],
     notRecommended: ['스피드 러닝', '가벼운 신발 선호', '넓은 발볼', '빠른 페이스'],
   },
-  features: ['50mm 역대 최고 스택하이트', 'ZoomX + 4개 Air Zoom Units', '로커 디자인', '무중력 쿠션'],
+  features: ['50mm 역대 최고 스택하이트', 'ZoomX + 4개 Air Zoom Units', '로커 디자인', '무중력 쿠션', '충격흡수 힐 173 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 299000,
     streetPrice: 240000,

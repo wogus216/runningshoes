@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['과내전 러너', '평발', '장거리 러너', '안정성 중시'],
     notRecommended: ['중립 발', '가벼운 신발 선호', '스피드 훈련'],
   },
-  features: ['4D Guidance System', 'FF Blast+ ECO 폼', 'PureGEL 충격흡수', '와이드/X-와이드 폭(기존 표기·국내 미확인)'],
+  features: ['4D Guidance System', 'FF Blast+ ECO 폼', 'PureGEL 충격흡수', '와이드/X-와이드 폭(기존 표기·국내 미확인)', '에너지 리턴 전족부 49.3% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 199000,
     streetPrice: 180000,

@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['미드풋/포어풋 착지', '롱런·템포런', '뉴트럴 러너', '겨울 러닝', '발 볼륨이 낮은 러너'],
     notRecommended: ['힐 스트라이커', '평발·과내전', '발등이 높은 발', '복사뼈가 튀어나온 발', '한여름 러닝', '인터벌·레이스'],
   },
-  features: ['Hyperboost Pro 폼', '45mm 고스택 무플레이트', '247g 경량', 'LIGHTTRAXION 풀커버 아웃솔', '저온 경화율 9%'],
+  features: ['Hyperboost Pro 폼', '45mm 고스택 무플레이트', '247g 경량', 'LIGHTTRAXION 풀커버 아웃솔', '저온 경화율 9%', '충격흡수 힐 154 SA (RunRepeat 실측)', '에너지 리턴 전족부 72.8% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 249000,
     costPerKm: 356,

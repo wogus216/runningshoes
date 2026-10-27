@@ -54,7 +54,7 @@ export const shoe: Shoe = {
     recommended: ['데일리 러너', '전족 반발·바운시 선호', '다양한 페이스(조깅~템포)', '입문-중급 러너', '노바5의 전환 끊김이 아쉬웠던 러너'],
     notRecommended: ['안정성 필요', '평발/과내전', '미니멀 신발 선호', '강한 힐 스트라이커(힐 바운스 감소 지적)'],
   },
-  features: ['FF Blast Max + FF Turbo Squared 전족 듀얼 폼(신규)', '전족 AsicsGrip — 내구 마모 실측 0.5mm 최상급', '엔지니어드 위브 어퍼(통기 실측 80점)', '249g 실측 경량 바운시', '저온 경화 +9% — 겨울에 강한 데일리'],
+  features: ['FF Blast Max + FF Turbo Squared 전족 듀얼 폼(신규)', '전족 AsicsGrip — 내구 마모 실측 0.5mm 최상급', '엔지니어드 위브 어퍼(통기 실측 80점)', '249g 실측 경량 바운시', '저온 경화 +9% — 겨울에 강한 데일리', '충격흡수 힐 143 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 179000,
     streetPrice: 169000,

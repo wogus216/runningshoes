@@ -88,6 +88,7 @@ export const shoe: Shoe = {
     '상단은 부드럽고 하단은 단단한 이중 밀도 Fresh Foam X',
     '3/4 New EVA 필름 플레이트 삽입으로 중족부 안정감 강화',
     '아치를 받치는 러버 배치와 넓어진 힐 면적으로 안정성 향상',
+    '충격흡수 힐 134 SA (RunRepeat 실측)',
   ],
   reviews: [
     {

@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['과내전 러너', '평발 러너', '무릎 내측 통증 경험자', '안정성 필요한 입문자'],
     notRecommended: ['정상/높은 아치', '중립 착지 러너', '레이싱용'],
   },
-  features: ['ReactX 폼 업그레이드', '미드풋 서포트 시스템', '여성 와이드 옵션(국내 공식몰)', '뛰어난 내구성'],
+  features: ['ReactX 폼 업그레이드', '미드풋 서포트 시스템', '여성 와이드 옵션(국내 공식몰)', '뛰어난 내구성', '충격흡수 힐 132 SA (RunRepeat 실측)', '에너지 리턴 전족부 59.4% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 169000,
     streetPrice: 164000,

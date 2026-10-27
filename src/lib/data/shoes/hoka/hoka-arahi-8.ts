@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['평발 러너', '과내전 러너', '라이트 안정화 필요', '힐 스트라이커', '장거리 러너', '무릎 보호'],
     notRecommended: ['스피드 러닝', '통기성 중시', '젖은 노면 위주'],
   },
-  features: ['H-Frame 안정화', '39.4mm 힐 스택', 'Early-Stage Meta Rocker', '11.3mm 하이드롭', '와이드 옵션'],
+  features: ['H-Frame 안정화', '39.4mm 힐 스택', 'Early-Stage Meta Rocker', '11.3mm 하이드롭', '와이드 옵션', '충격흡수 힐 138 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 199000,
     streetPrice: 160000,

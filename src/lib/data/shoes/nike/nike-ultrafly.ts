@@ -46,7 +46,7 @@ export const shoe: Shoe = {
     recommended: ['완만한 그래블·파이어로드 레이스', '비테크니컬 울트라', '발볼 넓은 트레일 러너', '빠른 페이스 러너'],
     notRecommended: ['바위·뿌리 테크니컬 코스', '한국 산악 가파른 경사', '다목적 트레일 1켤레', '가성비 중시'],
   },
-  features: ['트레일 최초 ZoomX + 카본', 'Vibram Megagrip Litebase', 'Vaporweave 경량 어퍼', '넓은 토박스(76.7mm)', '완만 코스 추진력'],
+  features: ['트레일 최초 ZoomX + 카본', 'Vibram Megagrip Litebase', 'Vaporweave 경량 어퍼', '넓은 토박스(76.7mm)', '완만 코스 추진력', '충격흡수 힐 134 SA (RunRepeat 실측)', '에너지 리턴 전족부 68.5% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 299000,
     streetPrice: 270000,

@@ -93,6 +93,7 @@ export const shoe: Shoe = {
     '로커 지오메트리로 부드러운 착지-이탈 전환',
     'Torsional rigidity 5/5로 높은 스택에도 안정성 유지',
     '두꺼운 텅 패딩과 힐 슬립 방지 설계',
+    '충격흡수 힐 128 SA (RunRepeat 실측)',
   ],
 
   reviews: [

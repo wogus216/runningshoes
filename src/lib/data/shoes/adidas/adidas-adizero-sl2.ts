@@ -51,7 +51,7 @@ export const shoe: Shoe = {
     recommended: ['데일리 러닝', '템포런', '중급 러너', '다목적 훈련'],
     notRecommended: ['맥스 쿠션 필요', '평발/과내전', '레이싱 전용'],
   },
-  features: ['Lightstrike Pro + Lightstrike 2.0', '경량 245g', '다목적 설계', 'Adiwear 러버'],
+  features: ['Lightstrike Pro + Lightstrike 2.0', '경량 245g', '다목적 설계', 'Adiwear 러버', '충격흡수 힐 136 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 149000,
     streetPrice: 125000,

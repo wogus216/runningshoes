@@ -72,6 +72,8 @@ export const shoe: Shoe = {
     '에너지 리턴 68.9% — 매우 높은 축 (RunRepeat 본문은 부위 미표기, 랩 데이터는 힐·전족부 모두 68.9%)',
     '전족 접지력 0.96 · 통기성 5/5',
     '46mm 고스택 (실측 45.4mm)',
+    '충격흡수 힐 149 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 68.9% (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 229000,
