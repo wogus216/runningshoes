@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '회복 러닝', '일상 훈련', '넓은 발볼'],
   },
 
-  features: ['Nitro Elite 폼 (A-TPU)', '카본 플레이트', '204g 초경량', '77% 에너지 리턴'],
+  features: ['Nitro Elite 폼 (A-TPU)', '카본 플레이트', '204g 초경량', '77% 에너지 리턴', '에너지 리턴 전족부 76.3% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 289000,

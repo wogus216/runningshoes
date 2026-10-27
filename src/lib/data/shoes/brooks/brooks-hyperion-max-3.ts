@@ -60,6 +60,7 @@ export const shoe: Shoe = {
     'RapidRoll 로커 지오메트리',
     '46mm 맥시멀 힐 스택',
     '프리미엄 니트 어퍼',
+    '에너지 리턴 전족부 66.2% (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 219000,

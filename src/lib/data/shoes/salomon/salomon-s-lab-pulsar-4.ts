@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['20~80km 기술 트레일 레이싱', 'VK·스카이러닝·급경사 산악', '경량 레이서를 원하는 엘리트 러너', '카본 없이 폼 추진을 선호하는 러너'],
     notRecommended: ['최고 에너지 리턴 기대 러너', '50마일+ 울트라 거리', '발볼 매우 넓은 러너', '진흙·루즈 소일 코스', '가성비 우선 러너(고가)'],
   },
-  features: ['Energy Foam+ 듀얼레이어', 'Matryx 아라미드 어퍼', 'Active Chassis 안정 구조', '247g 초경량', 'quickLACE + Contagrip(3mm 러그)'],
+  features: ['Energy Foam+ 듀얼레이어', 'Matryx 아라미드 어퍼', 'Active Chassis 안정 구조', '247g 초경량', 'quickLACE + Contagrip(3mm 러그)', '에너지 리턴 전족부 57.6% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 340000,
     streetPrice: 320000,

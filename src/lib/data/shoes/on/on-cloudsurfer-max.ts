@@ -70,6 +70,8 @@ export const shoe: Shoe = {
     '48.3% 힐 에너지 리턴으로 반발감보다 안정적인 전환에 초점',
     '292g 무게와 95mm 힐 베이스로 안정성 확보',
     'CloudTec Phase + 넓은 플랫폼 조합으로 장거리 easy run에 적합',
+    '충격흡수 힐 141 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 49.4% (RunRepeat 실측)',
   ],
   reviews: [
     {

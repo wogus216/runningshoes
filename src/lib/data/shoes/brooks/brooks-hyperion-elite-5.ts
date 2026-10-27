@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['엘리트 러너', '서브3 목표 러너', '대회용 레이싱화 필요 러너'],
     notRecommended: ['입문 러너', '훈련용으로 사용', '평발/오버프로네이션 러너'],
   },
-  features: ['DNA Gold (PEBA) 최고급 폼', 'SpeedVault+ 카본 플레이트', '76.9% 에너지 리턴 (업계 최고 수준)', '204g 초경량'],
+  features: ['DNA Gold (PEBA) 최고급 폼', 'SpeedVault+ 카본 플레이트', '76.9% 에너지 리턴 (업계 최고 수준)', '204g 초경량', '에너지 리턴 전족부 77.7% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 299000,
     costPerKm: 997,

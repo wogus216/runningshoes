@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '회복 러닝', '일상 훈련', '넓은 발볼', '과내전 러너'],
   },
 
-  features: ['듀얼 레이어 PEBA', '카본 플레이트', '초경량 220g', '극강 반응성'],
+  features: ['듀얼 레이어 PEBA', '카본 플레이트', '초경량 220g', '극강 반응성', '에너지 리턴 전족부 78.0% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 299000,

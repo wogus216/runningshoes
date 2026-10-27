@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['최대 쿠셔닝 원하는 러너', '무릎/관절 보호 필요', '체중 있는 러너'],
     notRecommended: ['빠른 템포 러너', '경량화 선호 러너'],
   },
-  features: ['맥시멀 DNA Tuned 쿠셔닝', '52.0% 에너지 리턴', '42mm 힐 스택', '극대화된 충격 흡수'],
+  features: ['맥시멀 DNA Tuned 쿠셔닝', '52.0% 에너지 리턴', '42mm 힐 스택', '극대화된 충격 흡수', '충격흡수 힐 148 SA (RunRepeat 실측)', '에너지 리턴 전족부 52.0% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 239000,
     costPerKm: 341,

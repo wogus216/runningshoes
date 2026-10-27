@@ -62,7 +62,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '느린 회복 러닝', '최대 쿠셔닝 필요'],
   },
 
-  features: ['Nitro Foam + Nitro Elite 듀얼폼', '카본 플레이트 (PWRPLATE)', '훈련용 내구성'],
+  features: ['Nitro Foam + Nitro Elite 듀얼폼', '카본 플레이트 (PWRPLATE)', '훈련용 내구성', '충격흡수 힐 132 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 219000,

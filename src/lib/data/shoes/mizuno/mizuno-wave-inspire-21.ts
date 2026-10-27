@@ -58,6 +58,7 @@ export const shoe: Shoe = {
     '하이 드롭(12.9mm)으로 힐스트라이커에 최적',
     '넓은 미드솔 플랫폼 (힐 94mm, 포어풋 118.1mm)',
     'X10 전체 아웃솔로 뛰어난 내구성',
+    '에너지 리턴 전족부 51.5% (RunRepeat 실측)',
   ],
   priceAnalysis: {
     msrp: 159000,

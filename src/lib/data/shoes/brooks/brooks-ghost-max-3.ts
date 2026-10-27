@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['무릎/관절 보호 필요 러너', '장거리 러너', '체중 있는 러너'],
     notRecommended: ['빠른 템포 선호 러너', '가벼운 신발 선호 러너'],
   },
-  features: ['맥시멀 DNA Loft v3 쿠셔닝', '51.3% 에너지 리턴', '로우 드롭 (7mm)', '관절 보호에 최적화'],
+  features: ['맥시멀 DNA Loft v3 쿠셔닝', '51.3% 에너지 리턴', '로우 드롭 (7mm)', '관절 보호에 최적화', '충격흡수 힐 134 SA (RunRepeat 실측)', '에너지 리턴 전족부 50.5% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 179000,
     costPerKm: 256,

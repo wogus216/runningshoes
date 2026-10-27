@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['레이싱', '빠른 템포 러닝', '과내전 러너'],
   },
 
-  features: ['PWRRUN+ 미드솔', 'FORMFIT 기술', '8.4mm 드롭', '편안한 착화감'],
+  features: ['PWRRUN+ 미드솔', 'FORMFIT 기술', '8.4mm 드롭', '편안한 착화감', '충격흡수 힐 141 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 159000,

@@ -87,6 +87,8 @@ export const shoe: Shoe = {
     'RunRepeat 실측 스택 힐 31.7mm·전족 26.9mm(브랜드 공식 32/28mm), 미드솔 경도 31.3 AC로 전작과 거의 동일',
     '드롭 4.8mm(RunRepeat 실측, 브랜드 표기 4mm) — 써코니 라인 중 가장 낮은 축',
     '국내 179,000원 · 와이드 옵션 유통(2026-10-20 공식몰 확인)',
+    '충격흡수 힐 124 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 64.5% (RunRepeat 실측)',
   ],
 
   reviews: [
