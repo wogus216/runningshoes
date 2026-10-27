@@ -343,7 +343,7 @@ export const posts_2026_10: BlogPost[] = [
     id: 'korea-running-expo-2026-guide',
     slug: 'korea-running-expo-2026-guide',
     title: '코리아러닝엑스포 2026 부스 배치도 | 제마 레이스팩 수령·운영시간·방문 동선',
-    description: '10월 29~31일 SETEC에서 열리는 코리아러닝엑스포 2026. JTBC 서울마라톤 배번호·레이스팩은 1관, 공식 스폰서는 2관, 나이키·미즈노·가민 등 참여 브랜드는 3관입니다. 토요일 부스는 20시, 레이스팩 수령은 23시까지라는 차이를 공식 안내로 정리했습니다.',
+    description: '10월 29~31일 SETEC에서 열리는 코리아러닝엑스포 2026은 일반 관람객도 무료 입장할 수 있습니다. 제마 배번호·레이스팩은 1관에서 받고, 토요일 전시 부스는 20시, 수령은 23시까지 운영됩니다. 1~3관 부스 배치와 방문 동선을 공식 안내로 정리했습니다.',
     thumbnail: '/images/blog/korea-running-expo-2026-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-21',
@@ -367,12 +367,13 @@ export const posts_2026_10: BlogPost[] = [
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>10월 29~31일 SETEC 1~3관에서 열립니다.</strong> 제마 배번호·레이스팩은 택배 없이 1관에서 받습니다.</li>
+<li><strong>10월 29~31일 SETEC 1~3관에서 열리며 일반 관람객도 무료입니다.</strong> 제마 배번호·레이스팩은 택배 없이 1관에서 받습니다. 수령 구역 입장에는 참가자 QR코드가 필요합니다.</li>
 <li><strong>토요일 전시 부스는 20시, 레이스팩 수령은 23시까지입니다.</strong> 같은 건물 안에서도 마감 시간이 다릅니다.</li>
 <li><strong>1관 수령 → 2관 공식 스폰서 → 3관 참여 브랜드</strong> 순서로 동선을 잡아보세요. 공식 배치도에는 나이키·미즈노·가민 등의 부스 번호까지 나와 있습니다.</li>
 </ul></div>
 
 <p><strong>제마 배번호를 받으러 가는 날, 러닝 브랜드 부스도 함께 둘러볼 계획인가요?</strong> 10월 20일 코리아러닝엑스포 공식 계정이 전시실별 부스 배치도를 공개했습니다. 2026 JTBC 서울마라톤 참가자의 레이스팩 수령 구역과 브랜드 전시가 SETEC 1~3관에 나뉘어 들어갑니다.</p>
+<p><strong>대회에 참가하지 않아도 엑스포는 무료로 관람할 수 있습니다.</strong> 다만 1관의 레이스팩 수령 구역은 참가자 QR코드로 입장합니다. 일반 관람과 레이스팩 수령을 구분해 동선을 잡으세요. <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>과 <a href="https://www.instagram.com/korearunningexpo/p/Deyxz-OCVHY/" target="_blank" rel="noopener noreferrer">엑스포 공식 안내</a>를 10월 27일 확인했습니다.</p>
 <p>방문 전에는 <strong>전시 관람 시간과 레이스팩 수령 시간을 따로</strong> 확인하세요. 특히 토요일 늦게 배번호를 받으러 가면, 브랜드 부스는 이미 운영을 마쳤을 수 있습니다.</p>
 
 <h2>언제 가야 하나요? 토요일은 두 마감 시간을 기억하세요</h2>
