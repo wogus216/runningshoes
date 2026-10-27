@@ -110,6 +110,16 @@ export function getTopShoesForInjury(shoes: Shoe[], injuryType: string): Shoe[] 
     .slice(0, 3);
 }
 
+/**
+ * 느린 페이스·회복 러닝에는 맞지 않는다고 데이터에 적힌 신발인가.
+ * 규칙 22·25 의 쿠션 가점은 이 신발에 주지 않는다 — 가점이 용도를 보지 않아
+ * 레이싱화(쿠션 10)와 "느린 회복 러닝 비추천"인 신발이 느린 페이스·회복 프로필에 올라왔다.
+ */
+const SLOW_RUN_UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
+function unsuitedForSlowRuns(shoe: CardShoe): boolean {
+  return shoe.category === '레이싱' || (shoe.targetUsers?.notRecommended ?? []).some((text) => SLOW_RUN_UNSUITED.test(text));
+}
+
 // 페이스 범위 매핑
 const paceRanges = {
   slow: { label: '6분대 이상', categories: ['쿠션화', '입문화'] },
@@ -547,7 +557,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     }
 
     // 22. 맥스 쿠셔닝 보너스 (회복/느린 페이스 + 높은 쿠셔닝)
-    if ((profile.purpose === 'recovery' || profile.targetPace === 'slow') && shoe.specs.cushioning >= 9) {
+    if ((profile.purpose === 'recovery' || profile.targetPace === 'slow') && shoe.specs.cushioning >= 9 && !unsuitedForSlowRuns(shoe)) {
       score += 8;
       reasons.push('최상급 쿠셔닝');
     }
@@ -576,7 +586,7 @@ export function recommendShoes(shoes: CardShoe[], profile: UserProfile): Recomme
     }
 
     // 25. 최고 쿠셔닝(10) 특별 보너스
-    if (shoe.specs.cushioning === 10 && (profile.purpose === 'recovery' || profile.targetPace === 'slow' || (profile.experience === 'beginner' && profile.weeklyDistance === 'low'))) {
+    if (shoe.specs.cushioning === 10 && !unsuitedForSlowRuns(shoe) && (profile.purpose === 'recovery' || profile.targetPace === 'slow' || (profile.experience === 'beginner' && profile.weeklyDistance === 'low'))) {
       score += 10;
       reasons.push('최상급 쿠셔닝');
     }

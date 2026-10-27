@@ -222,3 +222,42 @@ describe("추천 결과의 부상 후보와 세션 복원", () => {
     }
   });
 });
+
+describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주지 않는다 (규칙 22·25)", () => {
+  const recoverySlow: UserProfile = {
+    ...baseProfile,
+    experience: "intermediate",
+    weeklyDistance: "medium",
+    purpose: "recovery",
+    budget: "high",
+    targetPace: "slow",
+  };
+  const UNSUITED = /느린|천천|회복|조깅|이지|리커버리|LSD/;
+  const rawScoreOf = (shoe: (typeof shoes)[number]) => {
+    const found = recommendShoes([shoe], recoverySlow)[0];
+    return found?.rawScore;
+  };
+
+  it("쿠션 10 신발에 '느린 회복 러닝 비추천'이 적히면 가점 18(+8, +10)이 빠진다", () => {
+    const base = shoes.find(
+      (s) => s.specs.cushioning === 10 && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
+    );
+    expect(base).toBeDefined();
+    const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
+    const withBonus = rawScoreOf(base!);
+    const withoutBonus = rawScoreOf(flagged);
+    expect(withBonus).toBeDefined();
+    expect(withoutBonus).toBeDefined();
+    expect(withBonus! - withoutBonus!).toBe(18);
+  });
+
+  it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
+    const racer = shoes.find((s) => s.category === "레이싱" && s.specs.cushioning >= 9);
+    expect(racer).toBeDefined();
+    const profile: UserProfile = { ...recoverySlow, purpose: "racing" };
+    const slow = recommendShoes([racer!], profile)[0];
+    const medium = recommendShoes([racer!], { ...profile, targetPace: "medium" })[0];
+    // 느린 페이스에서만 붙던 +8(쿠션 9↑)·+10(쿠션 10)이 없으므로 느린 페이스 점수가 중간 페이스보다 8 이상 높지 않다
+    expect(slow.rawScore - medium.rawScore).toBeLessThan(8);
+  });
+});
