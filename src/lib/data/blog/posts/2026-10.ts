@@ -347,6 +347,7 @@ export const posts_2026_10: BlogPost[] = [
     thumbnail: '/images/blog/korea-running-expo-2026-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-21',
+    updatedAt: '2026-10-27',
     category: 'news' as const,
     readingTime: 5,
     tags: ['코리아러닝엑스포', '코리아러닝엑스포 2026', 'JTBC 서울마라톤', '제마 배번호 수령', '제마 레이스팩', '러닝 엑스포', 'SETEC', '러닝화'],
@@ -434,11 +435,11 @@ export const posts_2026_10: BlogPost[] = [
 <p>배번호를 받은 뒤에는 출발 그룹과 레이스 계획도 다시 확인하세요. 풀코스·10K의 그룹별 목표 기록은 <a href="/blog/jtbc-seoul-marathon-pacemaker-2026">2026 제마 공식 페이스메이커 표</a>에, 종목별 출발 정보는 <a href="/marathon/jtbc-seoul-marathon-2026">JTBC 서울마라톤 대회 페이지</a>에 정리했습니다.</p>
 
 <h2>자주 묻는 질문</h2>
-<div class="faq"><p class="faq-q">Q. 참가자가 아니어도 들어갈 수 있나요? 입장료가 있나요?</p><p class="faq-a">A. 이번 공식 운영 안내와 배치도에는 일반 관람객 입장 조건·입장료가 명시돼 있지 않습니다. 동행인과 방문한다면 <a href="https://korearunningexpo.co.kr/" target="_blank" rel="noopener noreferrer">엑스포 공식 홈페이지</a>의 관람 안내를 확인하세요.</p></div>
+<div class="faq"><p class="faq-q">Q. 참가자가 아니어도 들어갈 수 있나요? 입장료가 있나요?</p><p class="faq-a">A. 일반 관람객도 무료로 입장할 수 있습니다. 다만 1관의 레이스팩 수령 구역은 참가자 QR코드가 있어야 들어갈 수 있습니다. <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 행사 일정</a>과 엑스포 공식 안내를 10월 27일 대조했습니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 레이스팩을 택배로 받을 수 있나요?</p><p class="faq-a">A. 대회 공식 공지는 별도 택배 발송 없이 SETEC 1관 현장 수령만 진행한다고 안내합니다. 수령 일정은 10월 29~31일입니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 토요일 23시까지 모든 부스가 열려 있나요?</p><p class="faq-a">A. 23시는 레이스팩 수령 마감입니다. 공식 계정의 10월 20일 안내상 토요일 전시 부스는 20시에 운영을 마칩니다.</p></div>
 
-<p><small>출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
+<p><small>일반 관람 무료 입장은 <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>에서 2026년 10월 27일 확인했습니다. 출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
 `,
   },
   {
