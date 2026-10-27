@@ -24,8 +24,8 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 208,
-    cushioning: 8,
-    responsiveness: 9,
+    cushioning: 10,
+    responsiveness: 10,
     stability: 5,
     drop: 11,
     durability: 300,
@@ -60,7 +60,7 @@ export const shoe: Shoe = {
     notRecommended: ['입문 러너', '데일리 훈련용', '발볼 넓은 러너', '과내전 러너'],
   },
 
-  features: ['듀얼 덴시티 PEBA 미드솔', '카본 파이버 플레이트', '맥시멀 스택 (브랜드 표기 힐 46mm)', '공격적 전족부 로커', '208g 경량 (2.0 기준)'],
+  features: ['듀얼 덴시티 PEBA 미드솔', '카본 파이버 플레이트', '맥시멀 스택 (브랜드 표기 힐 46mm)', '공격적 전족부 로커', '208g 경량 (2.0 기준)', '충격흡수 힐 160 SA (RunRepeat 실측, 2.0)', '에너지 리턴 전족부 78.4% (RunRepeat 실측, 2.0)'],
 
   priceAnalysis: {
     msrp: 329000,

@@ -24,7 +24,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 170,
-    cushioning: 8,
+    cushioning: 9,
     responsiveness: 10,
     stability: 6,
     drop: 8,
@@ -70,6 +70,7 @@ export const shoe: Shoe = {
     '170g 초경량 (UK 8 기준)',
     '공식 권장 수명 400km',
     '에너지 리턴 전족부 77.2% (RunRepeat 실측)',
+    '충격흡수 힐 148 SA (RunRepeat 실측)',
   ],
 
   priceAnalysis: {
