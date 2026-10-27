@@ -72,6 +72,7 @@ export const shoe: Shoe = {
     '아웃솔 마모 실측 0.7mm·접지 0.51로 내구성과 젖은 노면 접지가 양호',
     'RunRepeat 종합 82점 · Believe in the Run B Tier · Road Trail Run 8.7',
     '통기성 2/5로 한여름에는 더운 편, 와이드 옵션 없음',
+    '에너지 리턴 전족부 56.8% (RunRepeat 실측)',
   ],
   reviews: [
     {

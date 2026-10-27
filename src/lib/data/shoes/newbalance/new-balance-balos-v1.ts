@@ -59,7 +59,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 레이싱', '안정화 필요 러너', '미니멀 선호'],
   },
 
-  features: ['PEBA 20% + EVA 80% 블렌드 폼', '힐 베벨 + 전족부 로커 + 토 스프링', '247g 경량 (RunRepeat 실측)', '6mm 드롭', '해외 와이드 폭(국내 미확인)'],
+  features: ['PEBA 20% + EVA 80% 블렌드 폼', '힐 베벨 + 전족부 로커 + 토 스프링', '247g 경량 (RunRepeat 실측)', '6mm 드롭', '해외 와이드 폭(국내 미확인)', '에너지 리턴 전족부 55.2% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 259000,
