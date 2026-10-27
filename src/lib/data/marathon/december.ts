@@ -9,7 +9,7 @@ export const decemberEvents: MarathonEvent[] = [
     location: '벡스코 제1전시장 (부산 해운대구)',
     region: '부산',
     distances: ['풀코스', '10K'],
-    status: '접수예정',
+    status: '접수중',
     isMajor: true,
     website: 'https://busanmarathon.com/',
     registrationNote:
