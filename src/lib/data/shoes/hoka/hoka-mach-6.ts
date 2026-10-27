@@ -17,7 +17,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 232,
-    cushioning: 7,
+    cushioning: 8,
     responsiveness: 8,
     stability: 7,
     drop: 10,
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['최대 쿠셔닝 필요', '마라톤 레이싱 전용', '안정화 필요'],
   },
 
-  features: ['경량 디자인', 'Supercritical EVA', '메타 로커', '다용도 활용', '에너지 리턴 전족부 67.0% (RunRepeat 실측)'],
+  features: ['경량 디자인', 'Supercritical EVA', '메타 로커', '다용도 활용', '에너지 리턴 전족부 67.0% (RunRepeat 실측)', '충격흡수 힐 135 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 185000,

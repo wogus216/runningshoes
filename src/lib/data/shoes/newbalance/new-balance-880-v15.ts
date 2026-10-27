@@ -24,7 +24,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 286,
     cushioning: 8,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 8,
     drop: 4,
     durability: 600,
@@ -94,6 +94,7 @@ export const shoe: Shoe = {
     'Torsional rigidity 5/5로 높은 스택에도 안정성 유지',
     '두꺼운 텅 패딩과 힐 슬립 방지 설계',
     '충격흡수 힐 128 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 60.1% (RunRepeat 실측)',
   ],
 
   reviews: [

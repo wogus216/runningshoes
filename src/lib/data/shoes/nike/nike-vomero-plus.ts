@@ -16,8 +16,8 @@ export const shoe: Shoe = {
   tags: ['쿠션화', '맥스쿠션', '장거리'],
   specs: {
     weight: 289,
-    cushioning: 10,
-    responsiveness: 7,
+    cushioning: 9,
+    responsiveness: 8,
     stability: 7,
     drop: 10,
     durability: 650,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['풀마라톤 준비 러너', '최대 쿠션 추구', '무릎/관절 보호 최우선', '회복 러닝'],
     notRecommended: ['스피드 러닝', '가벼운 신발 선호', '민첩성 중시'],
   },
-  features: ['Full-length ZoomX 폼', '42mm 맥스 스택하이트', '남성 와이드 옵션', '로커 디자인'],
+  features: ['Full-length ZoomX 폼', '42mm 맥스 스택하이트', '남성 와이드 옵션', '로커 디자인', '충격흡수 힐 147 SA (RunRepeat 실측)', '에너지 리턴 전족부 68.8% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 219000,
     streetPrice: 185000,

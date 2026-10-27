@@ -16,7 +16,7 @@ export const shoe: Shoe = {
   tags: ['레이싱', '단거리', '초경량', '5K/10K', '카본플레이트'],
   specs: {
     weight: 128,
-    cushioning: 4,
+    cushioning: 7,
     responsiveness: 10,
     stability: 5,
     drop: 4,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['5K/10K 레이스', '트랙 훈련', '전족부 착지 러너', '상급 러너'],
     notRecommended: ['마라톤', '입문 러너', '평발', '뒤꿈치 착지 러너'],
   },
-  features: ['128g 초경량 (트랙 스파이크급)', 'ZoomX + 카본 Flyplate', '에너지 리턴 76~78% (RunRepeat 실측)', '4mm 로우드롭', '에너지 리턴 전족부 77.9% (RunRepeat 실측)'],
+  features: ['128g 초경량 (트랙 스파이크급)', 'ZoomX + 카본 Flyplate', '에너지 리턴 76~78% (RunRepeat 실측)', '4mm 로우드롭', '에너지 리턴 전족부 77.9% (RunRepeat 실측)', '충격흡수 힐 106 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 219000,
     streetPrice: 155000,

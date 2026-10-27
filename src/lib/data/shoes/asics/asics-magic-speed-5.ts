@@ -24,7 +24,7 @@ export const shoe: Shoe = {
 
   specs: {
     weight: 201,
-    cushioning: 6,
+    cushioning: 9,
     responsiveness: 7,
     stability: 5,
     drop: 7,
@@ -60,7 +60,7 @@ export const shoe: Shoe = {
     notRecommended: ['데일리 이지런', '과내전 러너', '발볼 넓은 러너'],
   },
 
-  features: ['FF Leap + FF Blast+ 듀얼 폼', '포크형 카본 파이버 플레이트', '실측 201g 초경량 (공식 196g, 전작 대비 -46g)', '에너지 리턴 64.6%/62.6%', 'ASICSGRIP 아웃솔', '에너지 리턴 전족부 62.6% (RunRepeat 실측)'],
+  features: ['FF Leap + FF Blast+ 듀얼 폼', '포크형 카본 파이버 플레이트', '실측 201g 초경량 (공식 196g, 전작 대비 -46g)', '에너지 리턴 64.6%/62.6%', 'ASICSGRIP 아웃솔', '에너지 리턴 전족부 62.6% (RunRepeat 실측)', '충격흡수 힐 149 SA (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 209000,

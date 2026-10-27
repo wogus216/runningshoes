@@ -16,8 +16,8 @@ export const shoe: Shoe = {
   tags: ['데일리', '템포', '다목적'],
   specs: {
     weight: 254,
-    cushioning: 7,
-    responsiveness: 9,
+    cushioning: 8,
+    responsiveness: 8,
     stability: 8,
     drop: 6,
     durability: 550,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['템포런/인터벌', '중급+ 러너', '훈련+레이스 겸용', '하프마라톤'],
     notRecommended: ['입문 러너', '맥스 쿠션 필요', '느린 페이스'],
   },
-  features: ['Lightstrike Pro', '유리섬유 Energy Rods 2.0', '254g', '훈련/레이스 겸용'],
+  features: ['Lightstrike Pro', '유리섬유 Energy Rods 2.0', '254g', '훈련/레이스 겸용', '충격흡수 힐 127 SA (RunRepeat 실측)', '에너지 리턴 전족부 69.7% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 189000,
     streetPrice: 165000,

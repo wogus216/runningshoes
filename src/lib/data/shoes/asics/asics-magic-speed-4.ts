@@ -22,8 +22,8 @@ export const shoe: Shoe = {
   tags: ['레이싱', '카본플레이트', '템포', '가성비'],
   specs: {
     weight: 237,
-    cushioning: 8,
-    responsiveness: 9,
+    cushioning: 9,
+    responsiveness: 7,
     stability: 6,
     drop: 8,
     durability: 350,
@@ -53,7 +53,7 @@ export const shoe: Shoe = {
     recommended: ['템포런/인터벌', '하프마라톤 레이스', '카본화 입문', '중급 러너'],
     notRecommended: ['풀마라톤', '입문 러너', '평발/과내전'],
   },
-  features: ['FF Blast+ + FF Turbo 폼', '풀렝스 카본 플레이트', '메타스피드 대비 가성비', '힐 42.5mm 스택하이트(실측)'],
+  features: ['FF Blast+ + FF Turbo 폼', '풀렝스 카본 플레이트', '메타스피드 대비 가성비', '힐 42.5mm 스택하이트(실측)', '충격흡수 힐 144 SA (RunRepeat 실측)', '에너지 리턴 전족부 61.8% (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 199000,
     streetPrice: 185000,

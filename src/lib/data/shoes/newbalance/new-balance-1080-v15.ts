@@ -26,7 +26,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 255,
     cushioning: 9,
-    responsiveness: 7,
+    responsiveness: 8,
     stability: 6,
     drop: 6,
     durability: 600,
@@ -97,6 +97,7 @@ export const shoe: Shoe = {
     'Breathable Mesh 갑피 + 리플렉티브 디테일',
     '힐 안정성 보강된 아웃솔 설계',
     '충격흡수 힐 147 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 69.1% (RunRepeat 실측)',
   ],
 
   reviews: [

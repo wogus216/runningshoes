@@ -16,7 +16,7 @@ export const shoe: Shoe = {
   tags: ['데일리', '템포', '경량'],
   specs: {
     weight: 244,
-    cushioning: 7,
+    cushioning: 8,
     responsiveness: 9,
     stability: 6,
     drop: 9,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['템포런 좋아하는 중급 러너', '가벼운 신발 선호', '발볼 좁은 러너'],
     notRecommended: ['맥시멀 쿠션 원하는 러너', '발볼이 넓은 러너', '안정화가 필요한 러너'],
   },
-  features: ['Full-length ZoomX 폼', '244g 경량화', 'Flyknit 어퍼', '반사 소재', '에너지 리턴 전족부 70.8% (RunRepeat 실측)'],
+  features: ['Full-length ZoomX 폼', '244g 경량화', 'Flyknit 어퍼', '반사 소재', '에너지 리턴 전족부 70.8% (RunRepeat 실측)', '충격흡수 힐 125 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 219000,
     streetPrice: 189000,

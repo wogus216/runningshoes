@@ -25,7 +25,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 332,
     cushioning: 8,
-    responsiveness: 6,
+    responsiveness: 8,
     stability: 9,
     drop: 8,
     durability: 600,
@@ -89,6 +89,7 @@ export const shoe: Shoe = {
     '3/4 New EVA 필름 플레이트 삽입으로 중족부 안정감 강화',
     '아치를 받치는 러버 배치와 넓어진 힐 면적으로 안정성 향상',
     '충격흡수 힐 134 SA (RunRepeat 실측)',
+    '에너지 리턴 전족부 65.2% (RunRepeat 실측)',
   ],
   reviews: [
     {

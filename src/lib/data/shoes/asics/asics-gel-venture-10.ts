@@ -21,7 +21,7 @@ export const shoe: Shoe = {
   tags: ['트레일', '입문', '가성비', '해외 와이드'],
   specs: {
     weight: 322,
-    cushioning: 6,
+    cushioning: 7,
     responsiveness: 6,
     stability: 6,
     drop: 12,
@@ -52,7 +52,7 @@ export const shoe: Shoe = {
     recommended: ['트레일 입문자', '흙길·산책로 조깅', '예산 10만원 이하', '발볼 넓은 러너(와이드 재고 확인 시)', '워터프루프 필요'],
     notRecommended: ['테크니컬 암반 트레일', '레이스·스피드 훈련', '장거리 울트라', '경량 선호'],
   },
-  features: ['89,000원대 가성비', 'Gel 쿠셔닝', '워터프루프 버전 별도', '해외 와이드 폭(국내 미확인)', 'AHAR 내마모 아웃솔', '에너지 리턴 전족부 52.7% (RunRepeat 실측)'],
+  features: ['89,000원대 가성비', 'Gel 쿠셔닝', '워터프루프 버전 별도', '해외 와이드 폭(국내 미확인)', 'AHAR 내마모 아웃솔', '에너지 리턴 전족부 52.7% (RunRepeat 실측)', '충격흡수 힐 105 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 89000,
     streetPrice: 79000,

@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   specs: {
     weight: 275,
     cushioning: 9,
-    responsiveness: 6,
+    responsiveness: 7,
     stability: 7,
     drop: 12,
     durability: 500,
@@ -56,7 +56,7 @@ export const shoe: Shoe = {
     notRecommended: ['빠른 레이스 페이스', '강한 반발력 선호', '미니멀리스트 러너'],
   },
 
-  features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감', '충격흡수 힐 147 SA (RunRepeat 실측)'],
+  features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감', '충격흡수 힐 147 SA (RunRepeat 실측)', '에너지 리턴 전족부 57.2% (RunRepeat 실측)'],
 
   priceAnalysis: {
     msrp: 199000,

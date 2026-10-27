@@ -18,7 +18,7 @@ export const shoe: Shoe = {
   tags: ['트레일', '울트라', 'ACG', 'ZoomX', '맥시멀쿠션'],
   specs: {
     weight: 306,
-    cushioning: 9,
+    cushioning: 8,
     responsiveness: 7,
     stability: 6,
     drop: 4,
@@ -49,7 +49,7 @@ export const shoe: Shoe = {
     recommended: ['울트라마라톤·장거리 트레일', '중족부 여유를 원하는 트레일 러너', '기술+완만 혼합 지형', '맥시멀 쿠션 선호 러너'],
     notRecommended: ['가벼운 반응형 선호(실측 306g)', '빠른 페이스 트레일 레이싱', '아킬레스건 이력자(4mm 저드롭)'],
   },
-  features: ['ZoomX + Cushlon 3.0 듀얼 폼', 'Vibram Megagrip 아웃솔', '트레일 평균보다 넓은 중족부(실측 96.9mm)', '전족부 록 플레이트', 'BITR 퍼포먼스 S티어', '에너지 리턴 전족부 63.5% (RunRepeat 실측)'],
+  features: ['ZoomX + Cushlon 3.0 듀얼 폼', 'Vibram Megagrip 아웃솔', '트레일 평균보다 넓은 중족부(실측 96.9mm)', '전족부 록 플레이트', 'BITR 퍼포먼스 S티어', '에너지 리턴 전족부 63.5% (RunRepeat 실측)', '충격흡수 힐 130 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 219000,
     streetPrice: 205000,

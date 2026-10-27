@@ -16,7 +16,7 @@ export const shoe: Shoe = {
   tags: ['레이싱', '마라톤', '카본', '프리미엄'],
   specs: {
     weight: 200,
-    cushioning: 8,
+    cushioning: 9,
     responsiveness: 10,
     stability: 6,
     drop: 8,
@@ -47,7 +47,7 @@ export const shoe: Shoe = {
     recommended: ['서브-3 마라토너', '엘리트 러너', '기록 단축 목표', '하프/풀 마라톤'],
     notRecommended: ['입문 러너', '평발/과내전', '훈련용', '느린 페이스'],
   },
-  features: ['5개 카본 Energy Rods 2.0', 'Lightstrike Pro (소재 비공개 — 업계 추정 TPEE)', '200g 초경량', 'LIGHTTRAXION 아웃솔', '에너지 리턴 전족부 80.3% (RunRepeat 실측)'],
+  features: ['5개 카본 Energy Rods 2.0', 'Lightstrike Pro (소재 비공개 — 업계 추정 TPEE)', '200g 초경량', 'LIGHTTRAXION 아웃솔', '에너지 리턴 전족부 80.3% (RunRepeat 실측)', '충격흡수 힐 142 SA (RunRepeat 실측)'],
   priceAnalysis: {
     msrp: 299000,
     streetPrice: 260000,
