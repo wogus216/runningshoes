@@ -2,6 +2,107 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'asics-michigan-amsi-lab-opening-2026',
+    slug: 'asics-michigan-amsi-lab-opening-2026',
+    title: '아식스, 미시간대와 2,500만 달러 연구소 AMSI 개소 | 이 연구가 신발에 들어오는 건 2028년부터',
+    description: '아식스가 10월 26일 미국 미시간대 앤아버 캠퍼스에 산학 연구소 AMSI Lab을 열었습니다. 아식스가 약정한 2,500만 달러, 교수 6명이 맡은 연구 6개 분야, 신제품 반영은 2028년까지라는 공식 일정을 보도자료 원문으로 정리했습니다. 지금 매장에 있는 신발과는 관계가 없다는 점, 공개되지 않은 것도 함께 적었습니다.',
+    thumbnail: '/images/blog/asics-michigan-amsi-lab-opening-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-29',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['아식스', 'ASICS', 'AMSI', '미시간대', '러닝화 연구', '아식스 연구소', '스포츠과학'],
+    faqs: [
+      { question: '아식스 AMSI Lab은 무엇인가요?', answer: '아식스가 미국 미시간대학교 앤아버 캠퍼스에 연 산학 연구소입니다. 아식스 공식 보도자료(2026-10-26)는 이를 아식스 최초의 산학 R&D 연구소라고 소개하며, 아식스가 2,500만 달러를 약정했다고 밝혔습니다. 정식 센터 이름은 ASICS Michigan Sport Innovation Center이고 AMSI Lab이 그 연구 공간입니다.' },
+      { question: '이 연구소에서 나온 신발을 지금 살 수 있나요?', answer: '아닙니다. 아식스는 이 연구가 2028년까지 신규 러닝·퍼포먼스 제품에 반영되기 시작할 것으로 본다고 밝혔습니다. 따라서 지금 매장에서 파는 신발에 AMSI 연구 결과가 들어갔다는 근거는 없습니다.' },
+      { question: '지금 아식스 신발을 사려는데 기다려야 하나요?', answer: '기다릴 이유가 없습니다. 반영 시점이 2028년이고 어떤 제품에 적용될지는 공개되지 않았습니다. 현재 라인업은 아식스 러닝화 계급도와 신발 상세 페이지의 실측 수치로 비교하는 편이 정확합니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>아식스가 10월 26일 미국 미시간대 앤아버 캠퍼스에 연구소 AMSI Lab을 열었습니다.</strong> 아식스는 이 협력에 2,500만 달러를 약정했다고 밝혔고, 교수 6명이 각자 연구실에서 참여합니다</li>
+    <li><strong>연구 주제는 영상으로 달리기 부하 추정, 동물 움직임에서 따온 험지용 신발, 칼집 패턴(키리가미) 구조, 센서가 든 3D 니트 등입니다.</strong> 개별 신발이 아니라 앞으로의 설계 방법을 다루는 연구입니다</li>
+    <li><strong>신제품 반영은 아식스 공식 표현으로 "2028년까지"입니다.</strong> 지금 사서 신는 신발에 이 연구가 들어갔다는 근거는 없으니, 이번 소식은 신발 선택에 바로 쓰는 정보가 아니라 방향을 보는 정보입니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🔬</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄로 — 신발이 아니라 신발을 만드는 방법에 대한 소식</p>
+    <p>이번 발표에는 새 모델도 가격도 없습니다. 아식스가 대학 연구진과 함께 쓸 공간을 열었다는 소식이고, 결과물은 몇 년 뒤에 나옵니다. 그래서 이 글은 무엇이 확정이고 무엇이 아직 비어 있는지를 나눠 적었습니다.</p>
+  </div>
+</div>
+
+<h2>공식 발표에서 확인되는 것</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>내용</th></tr></thead>
+  <tbody>
+    <tr><td><strong>개소일</strong></td><td>2026년 10월 26일</td></tr>
+    <tr><td><strong>위치</strong></td><td>미국 미시간대학교 앤아버 캠퍼스</td></tr>
+    <tr><td><strong>이름</strong></td><td>ASICS Michigan Sport Innovation Center(센터), AMSI Lab(연구 공간)</td></tr>
+    <tr><td><strong>아식스 약정액</strong></td><td>2,500만 달러</td></tr>
+    <tr><td><strong>참여 교수</strong></td><td>6명</td></tr>
+    <tr><td><strong>공동 소장</strong></td><td>Ken Kozloff, Norihiko Taniguchi(아식스 스포츠과학연구소 미국법인 CEO)</td></tr>
+    <tr><td><strong>제품 반영 시점</strong></td><td>2028년까지 신규 러닝·퍼포먼스 제품에 반영되기 시작할 것으로 예상</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>아식스는 이 연구소를 자사 최초의 산학 R&amp;D 연구소라고 소개했습니다. 보도자료에 따르면 더 넓은 범위의 협력은 이미 지난 12월에 발표된 바 있고(연도는 보도자료에 적혀 있지 않습니다), 이번에 실제 연구 공간이 문을 연 것입니다.</p>
+
+<h2>교수 6명이 맡은 연구 분야</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>교수 · 연구실</th><th>보도자료가 설명한 연구 분야</th></tr></thead>
+  <tbody>
+    <tr><td>Ram Vasudevan · ROAHM Lab</td><td>영상만으로 러너의 움직임과 신체 부하를 추정(기존 실험실 밖으로 확장)</td></tr>
+    <tr><td>Talia Moore · EMBiR Lab</td><td>동물의 움직임에서 착안한, 느슨하거나 울퉁불퉁한 지형용 신발 개념</td></tr>
+    <tr><td>Max Shtein · Smart Materials Lab</td><td>키리가미(자르고 접는 패턴) 기반의 가볍고 적응하는 신발 구조</td></tr>
+    <tr><td>Sean Ahlquist · Lab for Socio-Material Architectures</td><td>핏·피드백·지지를 위한 센싱 기능의 3D 니트 소재</td></tr>
+    <tr><td>Elliott Rouse · Neurobionics Lab</td><td>탄성 에너지를 저장했다 내보내 피로를 줄이는 착용형 구조</td></tr>
+    <tr><td>Richard Gonzalez · BioSocial Methods Lab</td><td>러너의 선호·성능을 신발 특성과 연결하는 제품 매핑</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>Believe in the Run은 개소식을 직접 취재한 기사에서 몇 가지를 더 전했습니다. 포드 로보틱스 연구동에서는 스마트폰 영상 한 편으로 움직임을 읽어 외골격을 제어하는 시연이 있었고, 곤잘레스 교수 쪽은 신발의 부드러움·에너지 리턴·갑피 구조 같은 요소를 함께 놓고 판단하는 알고리즘을 설명했다고 합니다. 이 두 가지는 해당 매체의 현장 서술이며 아식스 보도자료에는 같은 표현이 없습니다.</p>
+
+<h2>러너에게 달라지는 것</h2>
+
+<p>지금 달라지는 것은 없습니다. 아식스는 연구 결과가 2028년까지 신규 제품에 반영되기 시작할 것으로 본다고 했고, Believe in the Run도 AMSI에서 나온 제품은 아직 출시되지 않았고 가장 이른 시점을 2028년 초로 추정했습니다. 어떤 제품에 어떤 기술이 들어갈지는 어디에도 나와 있지 않습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">아직 공개되지 않은 것</p>
+    <ul>
+      <li>연구소의 면적과 보유 장비(보도자료에 없음)</li>
+      <li>2,500만 달러가 몇 년에 걸쳐 어떻게 쓰이는지</li>
+      <li>어느 제품 라인에 어떤 연구가 먼저 적용되는지</li>
+      <li>"2028년까지"가 정확히 몇 월을 뜻하는지</li>
+    </ul>
+    <p>이 글의 수치는 아식스 보도자료 기준입니다. 위 항목은 공개되는 대로 갱신합니다.</p>
+  </div>
+</div>
+
+<p>지금 아식스 신발을 고르는 단계라면 이번 소식보다 현재 라인업의 실측 수치가 판단 근거입니다. 데일리 쿠션화는 <a href="/shoes/asics-gel-nimbus-28">젤 님버스 28</a>, 반발을 앞세운 트레이너는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>처럼 모델별 수치는 상세 페이지에 있고, 전체 구도는 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스 러닝화 계급도</a>에서 볼 수 있습니다.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <details><summary>아식스 AMSI Lab은 무엇인가요?</summary><p>아식스가 미국 미시간대학교 앤아버 캠퍼스에 연 산학 연구소입니다. 아식스 공식 보도자료(2026-10-26)는 최초의 산학 R&amp;D 연구소라고 소개하며 2,500만 달러를 약정했다고 밝혔습니다.</p></details>
+  <details><summary>이 연구소에서 나온 신발을 지금 살 수 있나요?</summary><p>아닙니다. 아식스는 2028년까지 신규 제품에 반영되기 시작할 것으로 본다고 밝혔습니다. 지금 파는 신발에 AMSI 연구 결과가 들어갔다는 근거는 없습니다.</p></details>
+  <details><summary>지금 아식스 신발을 사려는데 기다려야 하나요?</summary><p>기다릴 이유가 없습니다. 반영 시점이 2028년이고 적용 제품도 공개되지 않았습니다.</p></details>
+</div>
+
+<p><small>출처: 아식스 코퍼레이트 보도자료 "ASICS Opens Its First Industry-Academia R&amp;D Lab for Running Innovation with the University of Michigan"(2026-10-26, corp.asics.com), Believe in the Run "The future of sports science runs through Asics and Ann Arbor". 2026-10-29 확인.</small></p>
+`,
+  },
+  {
     id: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
     slug: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
     title: '푸마 FAST-RB NITRO Elite 2 | 대회에서 못 뛰는 레이싱화를 왜 만들까 — 이중 카본 플레이트·250g, 한국 공식몰엔 아직 없다',
