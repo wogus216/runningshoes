@@ -34,6 +34,10 @@ function ReviewCard({ review }: { review: Review }) {
   const shouldFold = review.text.length > FOLD_OVER_CHARS && sentences.length > PREVIEW_SENTENCES + 1;
   const preview = shouldFold ? sentences.slice(0, PREVIEW_SENTENCES).join(' ') : review.text;
   const rest = shouldFold ? sentences.slice(PREVIEW_SENTENCES).join(' ') : '';
+  // 외부 인용·공식 출처 링크. http(s)만 허용하고 도메인을 라벨로 보여 준다.
+  const sourceHost = /^https?:\/\//.test(review.sourceUrl ?? '')
+    ? new URL(review.sourceUrl as string).hostname.replace(/^www\./, '')
+    : null;
 
   return (
     <div className="rounded border border-border bg-white p-5">
@@ -58,6 +62,19 @@ function ReviewCard({ review }: { review: Review }) {
           </summary>
           <p className="mt-2 text-[15.5px] leading-relaxed text-slate-700">{rest}</p>
         </details>
+      )}
+      {sourceHost && (
+        <p className="mt-3 text-xs text-slate-500">
+          출처:{' '}
+          <a
+            href={review.sourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-signal-dark underline underline-offset-2"
+          >
+            {sourceHost}
+          </a>
+        </p>
       )}
     </div>
   );
