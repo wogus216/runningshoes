@@ -3895,14 +3895,14 @@ export const posts_2026_06: BlogPost[] = [
 
 <h2>3-1. 9월 30일, 나이키가 레이싱화를 다시 짰다 — "위계"가 아니라 "선택지"</h2>
 
-<p>나이키는 2026년 9월 30일 레이싱화 세 켤레를 한 번에 발표하면서 <strong>"레이싱화를 위계로 정리하는 대신 선택지로 설계했다"</strong>고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 비싼 쪽이 위가 아니라, <strong>어떤 레이스를 뛰는 러너인지에 따라 고르라</strong>는 뜻입니다. 알파플라이 4는 2026년 10월 23일 나이키 코리아에 정가 349,000원 "출시 예정"으로 올라왔고(10월 29일 확인한 남성용 페이지는 "품절" 표기, 판매 시작 여부 미확인), 에이펙스·스우시플라이는 글로벌 출시 전입니다.</p>
+<p>나이키는 2026년 9월 30일 레이싱화 세 켤레를 한 번에 발표하면서 <strong>"레이싱화를 위계로 정리하는 대신 선택지로 설계했다"</strong>고 밝혔습니다(보도자료 원문 "Rather than organizing racing footwear as a hierarchy, Nike designed its race-day lineup as a choice"). 비싼 쪽이 위가 아니라, <strong>어떤 레이스를 뛰는 러너인지에 따라 고르라</strong>는 뜻입니다. 알파플라이 4는 2026년 10월 23일 나이키 코리아에 정가 349,000원 "출시 예정"으로 올라왔고(10월 29일 확인한 남·여 상품 페이지는 "품절" 표기, 판매 시작 여부 미확인), 에이펙스·스우시플라이는 글로벌 출시 전입니다.</p>
 
 <div class="table-wrap">
 <table>
   <thead><tr><th>신발</th><th>나이키가 밝힌 대상</th><th>공식 구성</th><th>출시</th></tr></thead>
   <tbody>
     <tr><td><strong>스우시플라이</strong></td><td>첫 레이스를 준비하거나 새 목표에 도전하는 러너</td><td>SkyX 초임계 폼 + 카본 Flyplate. 가격은 "레이싱 라인보다 접근하기 쉬운 가격"이라고만 밝힘</td><td>2027년 2월 중국 → 봄 글로벌</td></tr>
-    <tr><td><a href="/blog/nike-alphafly-4-official-specs-2026"><strong>알파플라이 4</strong></a></td><td>거리 내내 반응성·편안함·안정성·효율의 균형을 원하는 러너</td><td>한국 정가 349,000원(10/23 출시 예정 → 10/29 남성용 "품절" 표기)·글로벌 $280. 무게·스택을 읽는 법은 공식 스펙 글 참고</td><td>9월 17일 한정 선행, 10월 29일 확대(나이키 발표상 "10월")</td></tr>
+    <tr><td><a href="/blog/nike-alphafly-4-official-specs-2026"><strong>알파플라이 4</strong></a></td><td>거리 내내 반응성·편안함·안정성·효율의 균형을 원하는 러너</td><td>한국 정가 349,000원(10/23 출시 예정 → 10/29 남·여 "품절" 표기)·글로벌 $280. 무게·스택을 읽는 법은 공식 스펙 글 참고</td><td>9월 17일 한정 선행, 10월 29일 확대(나이키 발표상 "10월")</td></tr>
     <tr><td><a href="/blog/nike-apex-announcement-super-shoe-baseline-2026"><strong>에이펙스</strong></a></td><td>마라톤 성능의 끝을 쫓는 러너</td><td>에어 줌 유닛 4개를 2개씩 겹쳐 쌓은 구조, 힐·전족부 40mm·드롭 0mm. 가격·무게 미공개</td><td>2027년 1월</td></tr>
   </tbody>
 </table>
