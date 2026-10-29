@@ -8096,7 +8096,7 @@ export const posts_2026_06: BlogPost[] = [
     },
     tags: ['인천마라톤', '인천 마라톤', '풀코스 마라톤', '청라하늘대교', '11월 마라톤', '러닝 대회', '인천 러닝', '가을 마라톤', '마라톤 접수'],
     content: `
-<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작돼 9월 27일 확인 시 품절로 끝났고</strong>, <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
+<div class="deadline-strip">🔁 <strong>이 글은 6월에 쓴 개요입니다.</strong> 접수는 <strong>9월 7일(월) 14시에 시작돼 9월 27일 확인 시 품절로 끝났고</strong>, <strong>추가접수는 10월 27일(화) 14시에 시작됐습니다</strong>(공식 공지, 10월 29일 확인) — 공식 홈페이지에서 로그인 후 온라인으로 접수하고 <strong>추가 접수 후에는 취소·환불과 부문·티셔츠 사이즈·배송지 변경이 모두 불가</strong>합니다. 풀코스 추가 참가자의 기록증 제출은 10월 30일(금) 16시까지입니다. 지금 남은 정원과 마감 시점은 확인하지 못했습니다. <strong>풀코스는 기록증 제출자만 신청할 수 있습니다</strong>(풀 4:59:59 또는 하프 2:09:59). 9월 3일 공개된 공식 코스도로 청라하늘대교 통과와 <strong>운서역 출발</strong>이 확정됐습니다 — 아래 6월 시점의 "유력안"과 방향이 반대입니다. 확정된 코스·제한시간·급수는 <a href="/blog/incheon-marathon-2026-site-open">인천마라톤 코스도 공개 — 청라하늘대교 확정, 풀코스는 기록증 제출자만</a> 글과 <a href="/marathon/incheon-marathon-2026">마라톤 캘린더</a>에서 확인하세요.</div>
 
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
