@@ -2,6 +2,101 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
+    slug: 'puma-fast-rb-nitro-elite-2-not-race-legal-2026',
+    title: '푸마 FAST-RB NITRO Elite 2 | 대회에서 못 뛰는 레이싱화를 왜 만들까 — 이중 카본 플레이트·250g, 한국 공식몰엔 아직 없다',
+    description: '푸마가 10월 28일 한정 출시한 FAST-RB NITRO Elite 2는 푸마 스스로 세계육상연맹 규정에 맞지 않는다고 밝힌 신발입니다. 두 장을 붙인 카본 플레이트, 250g(UK 8), 드롭 8mm, 권장 수명 320km, 해외 정가 $350 — 1세대 스택 58mm와 무엇이 같고 다른지, 한국에서 살 수 있는지(2026-10-29 kr.puma.com 검색 결과 없음)를 공식 자료로 정리했습니다.',
+    thumbnail: '/images/blog/puma-fast-rb-nitro-elite-2-not-race-legal-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-29',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['푸마 FAST-RB', '푸마 나이트로 엘리트', '카본화', '레이싱화', '세계육상연맹 규정', '신상 러닝화', '이중 카본 플레이트'],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>FAST-RB 2는 푸마가 "세계육상연맹 기준으로는 규정에 맞지 않는다"고 직접 밝힌 신발입니다.</strong> 이름의 RB는 규칙을 깬다(rule-breaking)는 뜻이고, 공인 대회에서는 신을 수 없습니다</li>
+    <li><strong>두 장의 카본 플레이트를 붙인 스프링보드 구조, 250g(UK 8 기준), 드롭 8mm, 권장 수명 약 320km.</strong> 해외 정가는 미국 $350이고 10월 28일 푸마닷컴과 일부 매장에서 한정 수량으로 풀렸습니다</li>
+    <li><strong>한국에서는 확인되지 않습니다.</strong> 10월 29일 푸마 코리아 공식몰에서 FAST-RB를 검색하면 결과가 없고, 국내 판매가·출시일을 알리는 푸마 코리아 공식 자료도 찾지 못했습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🧪</span>
+  <div class="callout-body">
+    <p class="callout-title">한 줄로 — 레이스용이 아니라 "규정 밖 신발"</p>
+    <p>이 글에서 <strong>규정 밖 신발</strong>은 성능은 겨루되 공인 대회 기록으로는 인정받지 못하는 신발을 뜻합니다. 기록을 노리는 대회 신발을 찾는다면 규정 안에서 만든 <a href="/shoes/puma-fast-r-nitro-elite-3">FAST-R NITRO Elite 3</a>나 <a href="/blog/carbon-plate-shoes-guide-2026">카본화 가이드</a>의 후보를 보는 편이 맞습니다.</p>
+  </div>
+</div>
+
+<h2>무엇이 규정을 벗어났나</h2>
+<p>세계육상연맹은 로드 레이싱화의 미드솔 두께를 40mm 이하로 제한합니다(규정 해설은 <a href="/blog/running-shoe-trends-2026-eva-replacement">슈퍼폼 트렌드 글</a> 참고). 푸마가 2024년 8월 1세대를 공개한 보도자료는 이렇게 적었습니다 — 58mm의 NITROFOAM Elite를 쓰고, 이는 규정보다 18mm 높으며, 폼 사이에 카본 플레이트(PWRPLATE) 세 장을 끼웠고, 1,000켤레만 팔았다는 것입니다.</p>
+<p>2세대는 구조를 단순하게 바꿨다고 푸마가 설명합니다. 이번에도 브랜드가 "세계육상연맹 기준으로 합법이 아니다"라고 인정했다고 영국 육상 전문지 Athletics Weekly가 전했습니다. <strong>2세대의 스택 높이는 내가 확인한 공식 자료·기사에 나와 있지 않아 불명입니다</strong> — 1세대의 58mm를 2세대에 그대로 적용할 수 없습니다.</p>
+
+<h2>스펙 — 확인된 것과 아닌 것</h2>
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>FAST-RB NITRO Elite 2</th><th>출처</th></tr></thead>
+  <tbody>
+    <tr><td>출시</td><td>2026-10-28, 한정 수량(푸마닷컴·일부 매장)</td><td>Athletics Weekly</td></tr>
+    <tr><td>가격</td><td>미국 $350 · 유럽 €350</td><td>us.puma.com(10/29 확인) · Athletics Weekly</td></tr>
+    <tr><td>무게</td><td>250g(UK 8) / 206g(UK 4.5)</td><td>Athletics Weekly</td></tr>
+    <tr><td>드롭</td><td>8mm</td><td>Athletics Weekly</td></tr>
+    <tr><td>권장 수명</td><td>약 320km(200마일)</td><td>Athletics Weekly</td></tr>
+    <tr><td>미드솔·플레이트</td><td>NITROFOAM ELITE + 융합된 이중 카본 PWRPLATE</td><td>us.puma.com · Athletics Weekly</td></tr>
+    <tr><td>어퍼·아웃솔</td><td>ULTRAWEAVE · PUMAGRIP</td><td>Athletics Weekly</td></tr>
+    <tr><td>스택 높이</td><td><strong>불명</strong></td><td>—</td></tr>
+    <tr><td>한국 판매가·출시일</td><td><strong>불명</strong></td><td>kr.puma.com 검색 결과 없음(10/29)</td></tr>
+  </tbody>
+</table>
+</div>
+<p>무게는 사이즈 기준이 둘 적혀 있어 같은 신발의 숫자입니다. UK 8은 250g, UK 4.5는 206g으로 사이즈가 작아질수록 가벼워집니다. 다른 신발의 무게와 견줄 때는 어느 사이즈 기준인지부터 맞춰야 합니다.</p>
+
+<h2>이중 플레이트가 하는 일 — 푸마의 주장</h2>
+<p>푸마는 두 장의 카본 플레이트가 붙어 <strong>스프링보드 같은 구조</strong>를 만들고, 업데이트한 NITROFOAM ELITE가 푸마 테스트 기준 가장 높은 에너지 리턴을 냈다고 설명합니다. 푸마 혁신 담당 부사장 로맹 지라르는 "푸마 시험에서 기록한 가장 높은 에너지 리턴"이라고 말했습니다. 이 수치는 <strong>푸마 자체 시험이고 독립 랩 측정이 아닙니다.</strong> RunRepeat 같은 독립 측정이 올라오기 전에는 에너지 리턴을 다른 신발과 숫자로 견줄 수 없습니다.</p>
+<p>Athletics Weekly는 첫 달리기에서 "스프링 같은 느낌이 아주 뚜렷하고, 생김새에 비해 달리기 쉬웠다"고 적었습니다. 이 글의 근거는 그 한 줄뿐이고, 같은 기사는 제휴 링크가 포함된 글이라고 밝히고 있습니다.</p>
+
+<h2>일반 러너가 알아둘 점</h2>
+<ul>
+  <li><strong>공인 대회 기록용으로 쓸 수 없습니다.</strong> 푸마도 인정한 부분입니다. 대회 참가 규정에서 신발 제한을 두는 곳이라면 신기 전에 주최 측 규정을 확인해야 합니다</li>
+  <li><strong>수명이 짧게 잡혀 있습니다.</strong> 권장 320km는 한 시즌 내내 신는 신발보다 집중해서 쓰는 단기 신발에 가까운 길이입니다. 이 수치도 브랜드 안내를 전한 기사 기준입니다</li>
+  <li><strong>한국에서는 정식 구매 경로가 확인되지 않습니다.</strong> 1세대 때 푸마가 밝힌 판매 지역은 미국·영국·중부 유럽·북유럽·태국·일본·중국·호주였고 한국은 없었습니다. 2세대도 이번에 한국 공식 판매 발표를 찾지 못했습니다. 해외 직구나 리셀로 사면 사이즈 교환과 보증이 어렵다는 점은 일반적인 위험입니다</li>
+</ul>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">확인하지 못한 것</p>
+    <p>2세대 스택 높이와 독립 랩 수치, 한국 판매 여부·가격은 확인하지 못했습니다. 푸마 코리아가 국내 판매를 발표하면 이 글을 갱신합니다.</p>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="faq-item">
+    <p class="faq-q">Q. 대회에서 신어도 되나요?</p>
+    <p class="faq-a">A. 푸마가 세계육상연맹 기준으로 합법이 아니라고 밝힌 신발입니다. 공인 기록을 노리는 대회에서는 쓰지 마세요. 일반 참가 대회라도 주최 측 규정은 따로 확인해야 합니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 초보가 신어도 되나요?</p>
+    <p class="faq-a">A. 권장 수명 320km, 정가 $350, 한정 수량이라는 점에서 입문용으로는 맞지 않습니다. 이 신발에 대한 독립 측정이 아직 없어 안정성·발볼 적합성도 판단할 근거가 없습니다.</p>
+  </div>
+  <div class="faq-item">
+    <p class="faq-q">Q. 1세대와 같은 신발인가요?</p>
+    <p class="faq-a">A. 같은 계보지만 다른 신발입니다. 1세대는 58mm 스택에 플레이트 세 장, 레이스 없는 어퍼였고 2세대는 이중 플레이트에 ULTRAWEAVE 어퍼로 바뀌었습니다. 2세대 스택은 불명이라 높이를 견줄 수 없습니다.</p>
+  </div>
+</div>
+
+<h2>확인한 출처</h2>
+<ul>
+<li><a href="https://us.puma.com/us/en/pd/fast-rb-nitro-elite-2-mens-laced-running-shoes/314984" target="_blank" rel="noopener noreferrer">PUMA US 상품 페이지</a>: 정가 $350, NITROFOAM ELITE·이중 PWRPLATE 설명(2026-10-29 확인).</li>
+<li><a href="https://athleticsweekly.com/performance/products/puma-fast-rb-nitro-elite-2-pushing-the-boundaries-of-speed-1040013786/" target="_blank" rel="noopener noreferrer">Athletics Weekly(2026-10-23)</a>: 출시일·무게·드롭·수명·"규정 밖" 인정. 제휴 링크가 포함된 기사.</li>
+<li><a href="https://about.puma.com/en/newsroom/product-and-brand-news/2024/27-08-2024-puma-unveils-rb-nitrotm-elite" target="_blank" rel="noopener noreferrer">PUMA 뉴스룸 2024-08-27</a>: 1세대 58mm·플레이트 세 장·1,000켤레·판매 지역.</li>
+<li>푸마 코리아 공식몰(kr.puma.com) 검색 "FAST-RB": 2026-10-29 결과 없음.</li>
+</ul>
+`,
+  },
+  {
     id: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
     slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
     title: '호카 본디 9 vs 써코니 트라이엄프 24 | 같은 41mm 맥스쿠션, 2만 원 싸고 가벼운 쪽은 — 평발·발볼·무릎별 선택',
