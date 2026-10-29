@@ -96,6 +96,8 @@ export const shoe: Shoe = {
     {
       userType: 'Believe in the Run 리뷰 종합 — 부드럽지만 과하지 않은 안정화',
       text: 'Believe in the Run은 B 티어(디자인 C·가치 B·퍼포먼스 A)를 줬습니다. 미드솔은 "스펀지처럼 탄력 있고" 부드럽지만 과하지 않은 승차감으로 평가했고, 아웃솔은 30마일 정도 사용한 시점에 눈에 띄는 마모가 없었으며 젖거나 얼어붙은 노면에서도 접지가 좋았다고 적었습니다. 이지 런과 장거리에 쓰기 좋은 유연한 데일리 트레이너라는 평입니다. 유보는 끈 고정이 일정하지 않아 핏 균형을 맞추기 어렵다는 점, 발목 둘레 쿠션이 두꺼워 모든 발에 맞지는 않는다는 점, 가격이 기대보다 높다는 점이었습니다. GuideRails는 특별하진 않지만 기능적이라고 봤습니다.',
+      source: 'editor',
+      sourceUrl: 'https://believeintherun.com/shoe-reviews/brooks-glycerin-gts-23-review/',
     },
     {
       userType: '예상 적합 — 평발 성향이고 발볼이 넓은 입문~중급 러너',

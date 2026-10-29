@@ -101,6 +101,8 @@ export const shoe: Shoe = {
     {
       userType: 'Doctors of Running 관점 — 40mm급 쿠션감의 클래식 데일리',
       text: 'Doctors of Running은 디자인 A-·퍼포먼스 A·가치 A·핏 B+·안정성 B를 매겼고, 33mm 스택인데도 40mm 스택 신발 대부분과 비슷한 쿠션감이라고 평가했습니다. 로커가 거의 없는 전통적인 승차감에 "매우 부드러운" ATPU NITROFOAM이 충격을 흡수하고 약한 반발을 준다는 설명입니다. 핏은 사이즈 정사이즈이고 전반적으로 약간 좁은 편 — 뒤꿈치와 미드풋이 좁고 앞볼은 보통이라, 리뷰어는 폭이 조금 더 넓었으면 한다고 적었습니다. 중립 발에 맞는 이지런용 데일리라는 결론입니다.',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-velocity-nitro-5-review/',
     },
     {
       userType: '예상 적합 — 발볼이 넓은 데일리 입문 러너',
