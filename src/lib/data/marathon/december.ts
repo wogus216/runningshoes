@@ -2,6 +2,36 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const decemberEvents: MarathonEvent[] = [
   {
+    id: 'hwangyoungjo-road-race-2026',
+    name: '2026 황영조 로드레이스',
+    date: '2026-12-06',
+    month: '12월',
+    location: '경인아라뱃길 여객터미널 아라타워 일원 (인천)',
+    region: '인천',
+    distances: ['하프', '10K', '5K'],
+    status: '접수중',
+    isMajor: false,
+    website: 'https://roadracing.co.kr',
+    registrationEnd: '2026-11-20',
+    registrationNote:
+      '접수 11월 20일(금) 17:00까지, 정원 5,000명 선착순입니다. 환불과 참가자 정보 변경도 같은 시각에 끝나고, 조기 마감하면 환불 마감이 앞당겨질 수 있다고 공식 요강에 적혀 있습니다. 개인 신청서가 열려 있으며 현재 접수 인원·마감 여부는 공식에서 확인되지 않습니다.',
+    lastVerified: '2026-10-30',
+    description:
+      '인천광역시 육상연맹이 주최하는 12월 6일 경인아라뱃길 대회로 하프·10km·5km를 오전 9시에 출발합니다. 참가비는 하프·10km 5만원, 5km 4만 5천원이고, 하프와 10km는 PB 기준 A·B 그룹으로 나뉘며 앞 그룹에서 출발하면 실격 처리됩니다. 제한시간은 하프 3시간·10km 2시간이고 셔틀버스를 탄 뒤 완주하면 실격입니다. 코스 지도와 거리 구성은 공식 페이지에 아직 공개되지 않았습니다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 50000 },
+        { distance: '10K', fee: 50000 },
+        { distance: '5K', fee: 45000 },
+      ],
+      timeLimits: [
+        { distance: '하프', hours: 3, minutes: 0 },
+        { distance: '10K', hours: 2, minutes: 0 },
+      ],
+      startTime: '09:00',
+    },
+  },
+  {
     id: 'busan-international-marathon-2026',
     name: '부산브릿지마라톤 2026',
     date: '2026-12-06',
