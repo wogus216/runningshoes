@@ -81,7 +81,7 @@ export const MAJOR_DEADLINES = {
   chicago2026: {
     name: '시카고마라톤 2026',
     raceDate: '2026-10-11',
-    statusLabel: '2026 대회 종료(10/11) · 2027 지원 접수 중 10/8~10/29(미국 중부 14시 = 한국 10/30 04시) · 추첨 결과 12/8 · 참가비 $260(해외)',
+    statusLabel: '2026 대회 종료(10/11) · 2027 지원 마감(한국 10/30 04시) · 추첨 결과 12/8 · 자선·투어 경로 별도 · 참가비 $260(해외)',
     charity: { close: '2026-09-15', minFundUsd: 2200 },
     tourClose: '2026-08-16',
     intlEligible: true,

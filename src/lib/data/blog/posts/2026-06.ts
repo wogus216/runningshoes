@@ -3263,7 +3263,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td>② 슈퍼트레이너</td><td><a href="/shoes/adidas-boston-13">보스턴 13</a></td><td>Energy Rods 2.0, 훈련+레이스</td></tr>
     <tr><td>③ 카본 없는 슈퍼폼</td><td><a href="/shoes/adidas-adizero-evo-sl">Evo SL</a></td><td>100% Lightstrike Pro, 가성비</td></tr>
     <tr><td>④ 카본 레이싱</td><td><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a></td><td>5개 Energy Rods, 서브3</td></tr>
-    <tr><td>⑤ 서브2 (한정)</td><td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td><td>97g, 래플 한정</td></tr>
+    <tr><td>⑤ 서브2 (한정)</td><td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td><td>97g, 59만 9,000원 · 아디다스 앱(11/2 발매)</td></tr>
   </tbody>
 </table>
 
@@ -5384,7 +5384,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'chicago-marathon-2026-registration-guide',
     slug: 'chicago-marathon-2026-registration-guide',
     title: '시카고마라톤 2026 가이드 | 대회 종료·결과 확인·2027 접수 안내',
-    description: '2026 시카고마라톤은 10월 11일 종료됐습니다. 공식 결과와 접수 중인 2027 대회 안내로 연결하고, 2026년 참가 경로·비용과 원정 준비 정보를 기록으로 보존했습니다. 아래 2026년 접수 일정은 현재 신청 조건이 아닙니다.',
+    description: '2026 시카고마라톤은 10월 11일 종료됐습니다. 공식 결과와 지원이 마감된 2027 대회 안내로 연결하고, 2026년 참가 경로·비용과 원정 준비 정보를 기록으로 보존했습니다. 아래 2026년 접수 일정은 현재 신청 조건이 아닙니다.',
     thumbnail: '/images/blog/chicago-marathon-2026-registration-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
@@ -5400,7 +5400,7 @@ export const posts_2026_06: BlogPost[] = [
     readingTime: 8,
     tags: ['시카고마라톤', '시카고마라톤 2026', '세계 6대 마라톤', '메이저 마라톤', 'PB 마라톤', '마라톤 해외원정', '자선 마라톤', '식스스타', '마라톤 세계기록', '해외 마라톤 신청'],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 2027 접수중</span><span class="dl-text">2026 대회(10월 11일)는 종료됐습니다. <strong>2027 대회(2027년 10월 10일) 지원은 한국시간 10월 30일(금) 새벽 4시까지 열려 있습니다</strong> — 일정·기록 기준표·신청 순서는 <a href="/blog/chicago-marathon-2027-application-guide">시카고마라톤 2027 접수 가이드</a>에 정리했습니다.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 2027 지원 마감</span><span class="dl-text">2026 대회(10월 11일)는 종료됐습니다. <strong>2027 대회(2027년 10월 10일) 일반 지원은 한국시간 10월 30일(금) 새벽 4시에 마감됐고 추첨 결과는 12월 8일입니다</strong> — 남은 자선·투어 경로와 기록 기준표는 <a href="/blog/chicago-marathon-2027-application-guide">시카고마라톤 2027 접수 가이드</a>에 정리했습니다.</span></div>
 
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
 <li><strong>2026 대회는 종료됐습니다.</strong> 우승 기록과 개인 결과 조회는 <a href="/blog/chicago-marathon-2026-results">2026 결과 정리</a>에서 확인하세요.</li>

@@ -7049,8 +7049,8 @@ export const posts_2026_05: BlogPost[] = [
     <tr>
       <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디다스 아디오스 프로 에보 3</a></td>
       <td><strong>97g</strong></td>
-      <td>2026.4 (래플)</td>
-      <td>74만원~</td>
+      <td>2026.11.2 한국 앱 발매</td>
+      <td>59만 9,000원</td>
       <td>업계 최경량, 1~2회 레이스 전용</td>
     </tr>
     <tr>
@@ -7907,8 +7907,8 @@ export const posts_2026_05: BlogPost[] = [
     </tr>
     <tr>
       <td><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">아디오스 프로 에보 3</a></td>
-      <td>2026.5.4 래플 / 가을 확대</td>
-      <td>74만원~</td>
+      <td>2026.11.2 한국 앱 발매</td>
+      <td>59만 9,000원</td>
       <td>서브2 슈퍼슈즈, 100km 소모품</td>
     </tr>
     <tr>
@@ -11554,28 +11554,35 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: '2026-adidas-adios-pro-evo-3-korea-release',
     slug: '2026-adidas-adios-pro-evo-3-korea-release',
-    title: '아디다스 아디오스 프로 에보 3 한국 래플 D-2 | 97g 서브2 신발의 정체',
-    description: '런던 마라톤에서 공인 첫 서브2(1:59:30)와 세계신기록을 함께 깬 그 신발. 5월 4일 아디다스 앱 래플 응모 시작, 5월 7일 당첨자 구매. 97g 무게·EnergyRim 신구조·74만원 추정가까지 — 한국 러너가 알아야 할 모든 것.',
+    title: '아디다스 아디오스 프로 에보 3 한국 발매 11월 2일 | 599,000원·앱 전용, 97g 서브2 신발',
+    description: '런던 마라톤에서 공인 첫 서브2(1:59:30)를 만든 신발이 11월 2일(월) 오전 11시 한국 아디다스 앱에서 나옵니다. 공식몰 표기 599,000원, 미국 $500입니다. 97g 구조와 사도 되는 사람, 구매 전 확인할 점을 정리했습니다.',
     thumbnail: '/images/blog/2026-adidas-adios-pro-evo-3-korea-release.webp',
     author: '산초 에디터',
     publishedAt: '2026-05-02',
+    updatedAt: '2026-10-30',
     category: 'news' as const,
     readingTime: 8,
-    tags: ['아디다스', '아디오스 프로 에보 3', '카본화', '슈퍼슈즈', '서브2', '런던마라톤', '세계신기록'],
+    tags: ['아디다스', '아디오스 프로 에보 3', '에보 3 발매', '카본화', '슈퍼슈즈', '서브2', '런던마라톤', '세계신기록'],
     content: `
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">한국 래플 응모 D-2 — 5월 4일(월) 시작</p>
-    <p>아디다스 공식 앱에서 <strong>5월 4일(월) 응모 → 5월 7일(목) 당첨자 발표 및 구매</strong>로 진행됩니다. 소량 한정 발매로 알려져 있고, 본격 확대 출시는 가을(9월) 마라톤 시즌으로 예정. 응모 의향이 있다면 지금 바로 아디다스 앱 회원가입과 결제 수단 등록을 마쳐두세요.</p>
+    <p class="callout-title">한국 발매 11월 2일(월) 오전 11시 — 아디다스 앱 전용</p>
+    <p>아디다스 코리아 공식몰 상품 페이지와 발매 달력에 <strong>599,000원, 11월 2일 오전 11시 출시 예정</strong>으로 올라 있습니다(품번 KH7678, 2026-10-30 확인). 아디다스 앱에서만 살 수 있고 할인 쿠폰·바우처는 적용되지 않습니다. 선착순인지 드로우인지는 상품 페이지에 적혀 있지 않습니다.</p>
   </div>
 </div>
 
-<h2>일단 무슨 일이 있었나 — 4월 27일 런던</h2>
+<h2>일단 무슨 일이 있었나 — 4월 26일 런던</h2>
 
-<p>2026년 4월 27일 런던 마라톤. 케냐의 사바스티안 사웨가 <strong>1시간 59분 30초</strong>로 결승선을 끊었습니다. 인류 사상 <strong>공인 레이스 첫 서브2</strong>이자 마라톤 세계신기록. 2위 요미프 케젤차(에티오피아)도 1:59:41로 서브2를 달성했습니다. 두 명이 같은 레이스에서 2시간 벽을 깬 첫 사례입니다.</p>
+<p>2026년 4월 26일 런던 마라톤. 케냐의 사바스티안 사웨가 <strong>1시간 59분 30초</strong>로 결승선을 끊었습니다. 인류 사상 <strong>공인 레이스 첫 서브2</strong>이자 마라톤 세계신기록. 2위 요미프 케젤차(에티오피아)도 1:59:41로 서브2를 달성했습니다. 두 명이 같은 레이스에서 2시간 벽을 깬 첫 사례입니다.</p>
 
 <p>그리고 둘 다 같은 신발을 신었습니다. <strong>아디다스 아디제로 아디오스 프로 에보 3 (Adizero Adios Pro Evo 3)</strong>. 이 글에서는 그 신발이 정확히 무엇인지, 한국에서 어떻게 살 수 있는지, 그리고 정말 살 만한 신발인지 정리합니다.</p>
+
+<h2>599,000원을 어떻게 읽을까</h2>
+
+<p>이 글은 5월에 한국 정가를 74만원 이상으로 추정했습니다. 틀린 추정이었습니다. 공식몰 표기는 <strong>599,000원</strong>으로, 일반판 에보 2의 한국가 599,000원과 같습니다.</p>
+
+<p>구매 직전에 한 번 더 확인하세요. 미국 공식몰 가격 $500으로 나누면 달러당 약 1,198원인데, 이틀 먼저 나오는 <a href="/blog/adidas-satisfy-adios-pro-evo-2-korea-2026">에보 2 새티스파이</a>는 $600에 799,000원으로 약 1,332원입니다(환율이 아니라 단순 나눗셈입니다). 신모델 가격이 구모델과 같아서, 발매 전에 표기가 바뀔 가능성을 배제하지 못합니다. <strong>결제 화면의 최종 금액</strong>을 기준으로 판단하세요. 5월 래플의 실제 판매가는 확인하지 못했습니다.</p>
 
 <h2>한 눈에 보는 에보 3</h2>
 
@@ -11585,10 +11592,11 @@ export const posts_2026_05: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><strong>공식명</strong></td><td>Adidas Adizero Adios Pro Evo 3</td></tr>
-    <tr><td><strong>글로벌 출시</strong></td><td>2026년 4월 25일 (런던 마라톤 2일 전 한정 출시)</td></tr>
-    <tr><td><strong>한국 출시</strong></td><td>5월 4일 앱 래플 응모 → 5월 7일 당첨자 구매 / 가을 확대 출시</td></tr>
+    <tr><td><strong>글로벌 출시</strong></td><td>2026년 4월 25일 (런던 마라톤 전날 한정 출시)</td></tr>
+    <tr><td><strong>한국 출시</strong></td><td>5월 앱 래플(5/4 응모·5/7 발표) → <strong>11월 2일(월) 오전 11시 아디다스 앱 발매</strong></td></tr>
     <tr><td><strong>글로벌 정가</strong></td><td>$500 / €500</td></tr>
-    <tr><td><strong>한국 정가 (예상)</strong></td><td>74만원 이상 추정 (전작 에보 2 국내가 59만 9,000원)</td></tr>
+    <tr><td><strong>한국 정가</strong></td><td><strong>599,000원</strong> (2026-10-30 공식몰 표기, 일반판 에보 2와 같은 가격)</td></tr>
+    <tr><td><strong>품번·컬러</strong></td><td>KH7678 · White</td></tr>
     <tr><td><strong>무게</strong></td><td><strong>97g (US M9)</strong> — 업계 최초 서브-100g 마라톤 레이서</td></tr>
     <tr><td><strong>스택</strong></td><td>힐 39mm / 전족부 36mm (World Athletics 40mm 규제 이내)</td></tr>
     <tr><td><strong>드롭</strong></td><td>3mm (실측 5.9mm)</td></tr>
@@ -11611,25 +11619,24 @@ export const posts_2026_05: BlogPost[] = [
 
 <p>결과는 97g + 에너지 리턴 80.2%(전족부, RunRepeat 실측). 무게는 절반인데 에너지 리턴은 오히려 상위권입니다.</p>
 
-<h2>한국에서 어떻게 사나 — 5월 4일 래플이 거의 유일한 정공법</h2>
+<h2>한국에서 어떻게 사나 — 11월 2일 아디다스 앱</h2>
 
 <table>
   <thead>
     <tr><th>경로</th><th>현실성</th></tr>
   </thead>
   <tbody>
-    <tr><td><strong>① 아디다스 앱 래플 (5/4 응모, 5/7 발표)</strong></td><td>가장 합리적. 단 소량 한정 — 당첨 확률 낮음</td></tr>
-    <tr><td><strong>② 가을 확대 출시 (2026년 9월~)</strong></td><td>한국 가을 마라톤 시즌(춘천·서울·JTBC) 직전 추가 물량 예정</td></tr>
-    <tr><td><strong>③ 해외 직구 (adidas.com, Running Warehouse)</strong></td><td>해외도 즉시 품절. 재입고 알림 등록 후 대기</td></tr>
-    <tr><td><strong>④ 리셀 (KREAM, StockX)</strong></td><td>해외 리셀가 4,000달러+ 보고됨. <strong>현실적으로 비추</strong></td></tr>
+    <tr><td><strong>① 아디다스 앱 (11/2 오전 11시)</strong></td><td>공식 경로, 599,000원. 쿠폰·바우처 제외. 판매 방식과 수량은 미공개</td></tr>
+    <tr><td><strong>② 해외 직구 (adidas.com)</strong></td><td>미국 공식몰에 $500 표기(10/30 확인). 재고와 한국 배송 여부는 확인하지 못했고 관세·배송비가 더해집니다</td></tr>
+    <tr><td><strong>③ 리셀 (KREAM, StockX)</strong></td><td>출시 초 해외 리셀가 4,000달러+ 보고됨. 공식 발매 전에 웃돈을 주고 살 이유가 적습니다</td></tr>
   </tbody>
 </table>
 
 <div class="callout info">
   <span class="callout-icon">ℹ️</span>
   <div class="callout-body">
-    <p class="callout-title">래플 응모 전 체크</p>
-    <p>① 아디다스 공식 앱 회원가입 + 본인인증 완료 ② 결제 수단(카드) 등록 ③ 배송 주소 확인 ④ 응모 시간(공식 공지 확인) 알람 설정. 당첨되면 보통 24~48시간 내 결제해야 자격 유지됩니다.</p>
+    <p class="callout-title">발매 전 체크</p>
+    <p>① 아디다스 앱 설치·로그인 ② 결제 수단(카드)과 배송 주소 등록 ③ 사이즈 결정 — 토박스가 65.9mm로 좁은 편이고 와이드 옵션이 없습니다 ④ 오전 11시 전에 앱에서 상품 페이지를 열어 두기.</p>
   </div>
 </div>
 
@@ -11640,7 +11647,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong>서브2:30~서브3:00 페이스 마라토너</strong> — 한 번의 레이스에 모든 걸 거는 경우</li>
   <li><strong>이미 훈련용 신발 따로 보유한 러너</strong> (예: <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>를 일상으로 신고 에보 3를 레이스 전용으로)</li>
-  <li><strong>주요 목표 대회를 위해 74만원 투자가 부담스럽지 않은 러너</strong> — 춘천·서울·JTBC 같은 1년 한 번의 메이저 PB 도전</li>
+  <li><strong>주요 목표 대회를 위해 59만 9,000원 투자가 부담스럽지 않은 러너</strong> — 춘천·서울·JTBC 같은 1년 한 번의 메이저 PB 도전</li>
   <li><strong>"세계신기록 신발"의 상징성을 원하는 컬렉터</strong></li>
 </ul>
 
@@ -11649,7 +11656,7 @@ export const posts_2026_05: BlogPost[] = [
 <ul>
   <li><strong>서브4 이상 페이스 러너</strong> — 4시간 넘게 신발이 버텨주지 않을 가능성. 마지막 10km 발 통증 위험</li>
   <li><strong>발볼 넓은 한국 러너</strong> — 토박스 폭이 <strong>65.9mm</strong>로 좁음(narrow) 분류. 와이드 옵션 없음. 풀코스 후반 새끼발가락 통증 거의 확실</li>
-  <li><strong>훈련화 겸용을 원하는 러너</strong> — 마일리지 100km면 한 달이면 끝. km당 7,400원 이상의 소모품</li>
+  <li><strong>훈련화 겸용을 원하는 러너</strong> — 마일리지 100km면 한 달이면 끝. km당 약 6,000원의 소모품</li>
   <li><strong>처음 카본화를 경험하는 러너</strong> — 드롭 3mm + 극강 로커가 아킬레스/종아리 부하 증가시킴. <a href="/shoes/saucony-endorphin-pro-4">엔돌핀 프로 4</a>나 <a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>로 카본 적응 후 도전 권장</li>
 </ul>
 
@@ -11657,7 +11664,7 @@ export const posts_2026_05: BlogPost[] = [
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
     <p class="callout-title">서브3 미만이라면 Vaporfly 4가 정답</p>
-    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(30만 9천원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(32만 9천원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 이상이고 마일리지는 절반 이하예요.</p>
+    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(30만 9천원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(32만 9천원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 가까이고 마일리지는 절반 이하예요.</p>
   </div>
 </div>
 
@@ -11671,35 +11678,35 @@ export const posts_2026_05: BlogPost[] = [
     <tr>
       <td><strong>에보 3</strong></td>
       <td>97g</td>
-      <td>74만원~</td>
+      <td>599,000원</td>
       <td>~100km</td>
       <td>업계 최경량, 1~2회 레이스용</td>
     </tr>
     <tr>
       <td><a href="/shoes/nike-vaporfly-4">Vaporfly 4</a></td>
       <td>166g</td>
-      <td>약 35만원</td>
+      <td>309,000원</td>
       <td>~400km</td>
       <td>대중적 PB 도전 표준</td>
     </tr>
     <tr>
       <td><a href="/shoes/nike-alphafly-3">Alphafly 3</a></td>
-      <td>220g</td>
-      <td>약 36만원</td>
+      <td>201g</td>
+      <td>339,000원</td>
       <td>~500km</td>
       <td>쿠션·안정성 우위, 풀코스 후반 강함</td>
     </tr>
     <tr>
       <td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td>
-      <td>159g</td>
-      <td>약 29만원</td>
+      <td>205g</td>
+      <td>329,000원</td>
       <td>~400km</td>
       <td>가성비 슈퍼슈즈, 한국 인기 모델</td>
     </tr>
     <tr>
       <td><a href="/shoes/saucony-endorphin-elite-2">엔돌핀 엘리트 2</a></td>
-      <td>195g</td>
-      <td>약 32만원</td>
+      <td>197g</td>
+      <td>339,000원</td>
       <td>~500km</td>
       <td>토박스 넓음, 한국 발에 유리</td>
     </tr>
@@ -11721,8 +11728,8 @@ export const posts_2026_05: BlogPost[] = [
 <p>저는 산초 에디터로서 두 가지 결론으로 정리합니다.</p>
 
 <ol>
-  <li><strong>응모는 해라.</strong> 어차피 무료입니다. 당첨되면 그때 진짜 살지 결정해도 됩니다. 5월 4일 아디다스 앱.</li>
-  <li><strong>가을 마라톤이 중요한 PB 도전 + 서브3:30 페이스 + 발볼 표준</strong>이면 진지하게 고려할 가치가 있습니다. 그 외에는 <a href="/best/racing">기존 카본화</a>로 충분합니다.</li>
+  <li><strong>살 생각이면 11월 2일 오전 11시 전에 앱을 준비하세요.</strong> 판매 방식이 공개되지 않았으니 시각에 맞춰 상품 페이지를 먼저 확인하는 편이 안전합니다.</li>
+  <li><strong>다음 목표 대회가 중요한 PB 도전 + 서브3:30 페이스 + 발볼 표준</strong>이면 진지하게 고려할 가치가 있습니다. 그 외에는 <a href="/best/racing">기존 카본화</a>로 충분합니다.</li>
 </ol>
 
 <p>본인의 발볼·체중·페이스에 맞는 카본화 선택이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>을 활용해 후보를 좁혀보세요.</p>
@@ -11730,12 +11737,12 @@ export const posts_2026_05: BlogPost[] = [
 <div class="callout success">
   <span class="callout-icon">🏃</span>
   <div class="callout-body">
-    <p class="callout-title">가을 PB 도전이 목표라면</p>
-    <p>춘천마라톤 풀코스 접수가 6월 24일로 예상됩니다. 신발보다 먼저 잡아야 할 게 자리예요. <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 풀코스 접수 가이드</a>에서 광클 전략을 확인하세요.</p>
+    <p class="callout-title">같은 주에 나오는 다른 아디다스 레이서</p>
+    <p>10월 31일에는 에보 2 새티스파이가 799,000원에 나옵니다. 에보 3와 놓고 무엇이 다른지는 <a href="/blog/adidas-satisfy-adios-pro-evo-2-korea-2026">새티스파이 협업 정리 글</a>에서 비교했습니다.</p>
   </div>
 </div>
 
-<p><small>출처: 아디다스 공식 보도자료 / Road Trail Run / RunRepeat / The Run Testers / GQ Korea / 한국경제 / WWD / 작성일 2026년 5월 2일 기준 / 한국 정가·출시 일정·래플 방식은 아디다스 코리아 공식 발표에 따라 변동될 수 있습니다.</small></p>
+<p><small>출처: 아디다스 코리아 공식몰 상품 페이지·발매 달력, 아디다스 미국 공식몰(2026-10-30 확인) / 아디다스 공식 보도자료 / World Athletics / Road Trail Run / RunRepeat / The Run Testers / GQ Korea / 한국경제 / WWD / 최초 작성 2026년 5월 2일, 2026년 10월 30일 갱신 / 다른 신발의 무게·가격은 이 사이트 신발 DB 기준입니다. 한국 가격과 발매 시각은 아디다스 코리아 표기에 따라 바뀔 수 있습니다.</small></p>
 `,
   },
   {

@@ -223,7 +223,7 @@ export const novemberEvents: MarathonEvent[] = [
       terrain: '평지',
       difficulty: '중급',
       courseDescription:
-        '10월 12일 공식 코스 안내 기준 풀코스 광화문광장 → 올림픽공원, 10K 상암월드컵공원 → 여의도공원입니다. 종목별 집결 장소가 다르고 두 코스 모두 편도이므로 귀가 동선을 따로 준비하세요. 공식 코스 안내: https://marathon.jtbc.com/17/?bmode=view&idx=175063425 (2026-10-16 본문 확인).',
+        '10월 12일 공식 코스 안내 기준 풀코스 광화문광장 → 올림픽공원, 10K 상암월드컵공원 → 여의도공원입니다. 종목별 집결 장소가 다르고 두 코스 모두 편도이므로 귀가 동선을 따로 준비하세요. 공식 코스 안내: https://marathon.jtbc.com/17/?bmode=view&idx=175063425 (2026-10-16 본문 확인). 대회 직전 공식 공지로 청계천 반환 지점(고산자교 → 비우당교)과 피니시 직전 둔촌사거리 반환 왕복 구간이 추가 변경됐습니다. 출발·도착 지점과 42.195km는 같고, 인쇄 책자의 코스·도착지 동선은 변경 전 기준이니 공지의 PDF·GPX로 확인하세요: https://marathon.jtbc.com/17/?bmode=view&idx=175312670 (2026-10-30 확인).',
     },
     raceInfo: {
       entryFees: [
@@ -251,7 +251,7 @@ export const novemberEvents: MarathonEvent[] = [
         '공식 레이스팩 공지는 "6월 26일 기준 레이스팩 구성"이라고 밝혀 바뀔 수 있습니다. 10K 완주 메달 지급 여부는 확인한 공식 공지에 없습니다. 레이스팩은 택배 없이 SETEC 1관 현장(10/29~31)에서만 배부합니다(2026-10-20 공식 레이스팩·메달·수령 공지 확인).',
       verifiedAt: '2026-10-20',
     },
-    lastVerified: '2026-10-20',
+    lastVerified: '2026-10-30',
   },
   {
     id: 'ulsan-human-rights-marathon-2026',

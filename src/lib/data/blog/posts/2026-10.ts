@@ -2,6 +2,182 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'adidas-satisfy-adios-pro-evo-2-korea-2026',
+    slug: 'adidas-satisfy-adios-pro-evo-2-korea-2026',
+    title: '아디다스 새티스파이 에보 2·아디오스 한국 발매 | 799,000원 드로우 10/31 10:30 마감, 일반판보다 20만원',
+    description: '아디다스×새티스파이 2차 협업이 10월 31일 한국에 나옵니다. 아디오스 프로 에보 2는 799,000원으로 CONFIRMED 앱 드로우가 오전 10시 30분에 끝나고, 아디오스는 369,000원입니다. 일반판과의 20만원 차이로 달라지는 점과 에보 3 비교를 정리했습니다.',
+    thumbnail: '/images/blog/adidas-satisfy-adios-pro-evo-2-korea-2026.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-30',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['아디다스 새티스파이', '아디오스 프로 에보 2', '아디오스 9', 'CONFIRMED 드로우', '아디오스 프로 에보 3', '레이싱화', '러닝화 콜라보'],
+    faqs: [
+      { question: '에보 2 새티스파이 드로우는 언제까지인가요?', answer: '아디다스 코리아 공식 인스타그램 기준 CONFIRMED 앱에서 10월 31일(토) 오전 10시 30분까지 참여할 수 있습니다. 발매 달력에는 같은 날 오전 11시로 올라 있습니다. 당첨 발표 시각과 결제 기한은 확인하지 못했습니다.' },
+      { question: '일반판 에보 2와 무엇이 다른가요?', answer: '밑창입니다. SideRun에 따르면 일반판은 전족부와 힐 옆면에 얇은 고무만 있는데 새티스파이판은 밑창 전체가 컨티넨탈 고무입니다. 폼과 탄소 로드, 스택은 같다고 적었습니다. 한국가는 일반판 599,000원보다 20만원 높은 799,000원입니다.' },
+      { question: '아디오스 새티스파이는 어떤 신발인가요?', answer: '새티스파이 공식 설명으로 Adios 9을 고쳐 트랙 훈련과 10K까지 쓰도록 만든 신발입니다. 탄소 로드 없이 Lightstrike Pro 미드솔과 나일론 섕크를 쓰고 무게는 172g(US 9)입니다. 한국가는 369,000원으로 아디오스 9 일반판 169,000원보다 20만원 높습니다.' },
+      { question: '에보 3와 고민된다면요?', answer: '기록이 목적이면 에보 3를 먼저 보는 편이 맞습니다. 11월 2일 아디다스 앱 발매로 공식몰 표기 599,000원이고 무게는 97g(US M9)입니다. 다만 토박스가 65.9mm로 좁은 편이고 밑창 고무를 크게 줄인 신발이라, 밑창 전체에 고무를 두른 새티스파이 에보 2와 성격이 다릅니다.' },
+    ],
+    content: `
+<div class="callout warning">
+  <span class="callout-icon">⏰</span>
+  <div class="callout-body">
+    <p class="callout-title">에보 2 새티스파이 드로우는 10월 31일(토) 오전 10시 30분에 끝납니다</p>
+    <p>아디다스 CONFIRMED 앱 전용이고, 발매 달력에는 같은 날 오전 11시로 올라 있습니다(2026-10-30 확인).</p>
+  </div>
+</div>
+
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>아디다스와 러닝 브랜드 새티스파이의 2차 협업화 2종이 10월 31일 한국에 나옵니다.</strong> 마라톤용 아디오스 프로 에보 2는 799,000원, 트랙·10K용 아디오스는 369,000원입니다</li>
+    <li><strong>두 켤레 모두 일반판보다 20만원 비쌉니다.</strong> 에보 2에서 그 돈으로 달라지는 기능은 밑창 전체를 덮은 컨티넨탈 고무이고, 폼과 미드솔 속 탄소 막대는 그대로입니다</li>
+    <li><strong>기록이 목적이면 이틀 뒤를 먼저 보세요.</strong> 서브2를 만든 에보 3가 11월 2일 599,000원으로 한국 아디다스 앱에 올라 있습니다</li>
+  </ul>
+</div>
+
+<h2>가격과 구매 경로</h2>
+<table>
+  <thead><tr><th>모델</th><th>한국가</th><th>일반판</th><th>미국가</th></tr></thead>
+  <tbody>
+    <tr><td><strong>에보 2 새티스파이</strong></td><td>799,000원</td><td>599,000원</td><td>$600</td></tr>
+    <tr><td><strong>아디오스 새티스파이</strong></td><td>369,000원</td><td>169,000원</td><td>$160</td></tr>
+  </tbody>
+</table>
+<ul>
+  <li><strong>에보 2 새티스파이(KH6636):</strong> 아디오스 프로 에보 2의 협업판입니다. CONFIRMED 앱 드로우가 10월 31일 오전 10시 30분까지이고, 발매 달력의 일정은 같은 날 오전 11시입니다.</li>
+  <li><strong>아디오스 새티스파이(KH6679, 남·여):</strong> 일반판 비교 대상은 아디오스 9입니다. 아디다스에서는 CONFIRMED 앱 전용이고, 카시나에 10월 30일 기준 D-1로 등재돼 있으며, Kith Seoul은 10월 31일부터 판매한다고 안내합니다.</li>
+</ul>
+<p>일반판과의 차이, 곧 <strong>콜라보 값은 두 모델 모두 정확히 20만원</strong>입니다.</p>
+<p>한국가를 미국가로 나누면 에보 2는 달러당 약 1,332원, 아디오스는 약 2,306원입니다(환율이 아니라 단순 나눗셈입니다). 해외 판매처를 살펴볼 생각이라면 아디오스 쪽 격차가 더 큽니다. 배송비와 관세는 별도입니다.</p>
+<p>아디다스 코리아 에보 2 상품 페이지에는 "10월 23일 출시 예정"이 남아 있지만, 발매 달력과 공식 인스타그램은 10월 31일입니다. 이 글은 10월 31일을 기준으로 씁니다.</p>
+
+<h2>에보 2 새티스파이 — 콜라보 값으로 바뀌는 건 밑창입니다</h2>
+<p>SideRun에 따르면 일반판 에보 2는 전족부와 힐 옆면에 얇은 고무만 있습니다. 새티스파이판은 <strong>에보 2 최초로 밑창 전체가 컨티넨탈 고무</strong>입니다. 새티스파이 공식 페이지도 같은 내용을 적었습니다.</p>
+<p>나머지는 그대로라는 것이 SideRun의 정리입니다. 풀렝스 Lightstrike Pro Evo 폼, 힐 39mm·전족부 36mm, 드롭 3mm, 탄소를 넣은 Energy Rods 2.0, 신발 길이 60% 지점에서 올라가는 로커입니다. 새티스파이 공식 무게는 148g(US 9)이고 색상은 Silver Met 하나입니다.</p>
+<p>고무가 늘면 접지와 마모에는 유리할 가능성이 있고 무게에는 불리합니다. 일반판과의 무게 차이는 같은 기준의 측정값을 찾지 못했습니다.</p>
+
+<h2>아디오스 새티스파이 — 트랙과 10K 이하를 위한 신발</h2>
+<p>새티스파이는 이 신발을 Adios 9을 고쳐 트랙 훈련과 10K까지 쓰도록 만들었다고 설명합니다. 탄소 로드 없이 Lightstrike Pro 미드솔과 미드풋 나일론 섕크를 쓰고, 밑창은 Continental Lighttraxion GCPU입니다. 프로 라인 밖 로드화로는 처음 <a href="/shoes/adidas-adios-pro-5">아디오스 프로 5</a>의 Lightlock 2.0 어퍼와 톱니 신발끈을 달았습니다.</p>
+<p>공식 무게는 172g(US 9), 색상은 Tech Earth와 Easy Blue입니다. 두꺼운 폼과 로드가 없는 쪽이라 풀코스 쿠션을 기대하고 고를 신발은 아닙니다. 힐 플랩 아래에 STAY POSSESSED 문구가 들어갑니다.</p>
+
+<h2>이틀 뒤 에보 3까지 놓고 고르면</h2>
+<table>
+  <thead><tr><th>항목</th><th>에보 2 새티스파이</th><th><a href="/blog/2026-adidas-adios-pro-evo-3-korea-release">에보 3</a></th></tr></thead>
+  <tbody>
+    <tr><td>한국가</td><td>799,000원</td><td>599,000원 (10/30 공식몰 표기)</td></tr>
+    <tr><td>무게</td><td>148g (US 9)</td><td>97g (US M9)</td></tr>
+    <tr><td>구조</td><td>Energy Rods 2.0</td><td>EnergyRim</td></tr>
+    <tr><td>밑창</td><td>전체 컨티넨탈</td><td>전족부만 컨티넨탈, 힐 아웃솔 없음</td></tr>
+    <tr><td>판매</td><td>CONFIRMED 앱 드로우, 10/31</td><td>아디다스 앱, 11/2 오전 11시</td></tr>
+  </tbody>
+</table>
+<p>기록 장비로만 보면 더 가볍고 20만원 싼 에보 3가 먼저입니다. 다만 에보 3는 토박스가 65.9mm로 좁은 편이고 와이드가 없습니다. 새티스파이 에보 2를 고를 이유는 디자인과 밑창 전체 고무입니다. 판단 기준은 콜라보 값 20만원을 디자인에 낼지입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">확인하지 못한 것 (2026-10-30 기준)</p>
+    <ul>
+      <li>CONFIRMED 앱 안의 드로우 규칙, 당첨 발표 시각, 결제 기한</li>
+      <li>아디오스 새티스파이의 판매 시작 시각, 한국 사이즈 구간과 수량</li>
+      <li>두 모델의 토박스 등 랩 실측 — 이 글의 스펙은 새티스파이 공식과 SideRun 표기입니다</li>
+    </ul>
+  </div>
+</div>
+
+<p><small>출처: 아디다스 코리아 <a href="https://www.adidas.co.kr/adizero-adios-pro-evo2-satisfy/KH6636.html" target="_blank" rel="noopener noreferrer">에보 2 새티스파이</a>·<a href="https://www.adidas.co.kr/adizero-adios-satisfy-m/KH6679.html" target="_blank" rel="noopener noreferrer">아디오스 새티스파이</a>·<a href="https://www.adidas.co.kr/adizero-adios-pro-evo-2/JR7259.html" target="_blank" rel="noopener noreferrer">일반판 에보 2</a> 상품 페이지와 <a href="https://www.adidas.co.kr/release-dates" target="_blank" rel="noopener noreferrer">발매 달력</a>, <a href="https://www.instagram.com/adidaskr/p/DfB89uQkUwx/" target="_blank" rel="noopener noreferrer">@adidaskr 드로우 안내</a>, <a href="https://satisfyrunning.com/pages/adidas-satisfy" target="_blank" rel="noopener noreferrer">새티스파이 공식 협업 페이지</a>, 아디다스 미국 공식몰, <a href="https://www.kasina.co.kr/discover/82071" target="_blank" rel="noopener noreferrer">카시나</a>, <a href="https://kr.kith.com/blogs/kith-footwear-news/adizero-adios-adizero-adios-pro-evo-2-satisfy" target="_blank" rel="noopener noreferrer">Kith</a>, <a href="https://www.siderun.com/blog/adidas-satisfy-collaboration" target="_blank" rel="noopener noreferrer">SideRun</a>(모두 2026-10-30 확인).</small></p>
+`,
+  },
+  {
+    id: 'jeju-10km-marathon',
+    slug: 'jeju-10km-marathon',
+    title: '2027 전마협 제주 10km 마라톤 접수·참가비·기념품 | 1월 24일 서귀포, 선착순 400명',
+    description: '2027년 1월 24일(일) 오전 9시 서귀포에서 출발하는 10km 단일 종목 대회입니다. 참가비 5만원에 폴라폴리스 자켓·비니·완주메달이 포함되고, 400명이 차면 접수와 환불이 함께 끝납니다. 입금 순서와 배번 규정을 공식 공지로 정리했습니다.',
+    thumbnail: '/images/blog/jeju-10km-marathon.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-30',
+    category: 'news' as const,
+    readingTime: 3,
+    tags: ['전마협 제주 10km', '제주 마라톤', '2027 마라톤', '1월 마라톤', '서귀포 마라톤', '겨울 마라톤', '마라톤 접수'],
+    raceMeta: {
+      displayTitle: '겨울 제주 10km, 400명만 — 전마협 제주 마라톤',
+      displaySubtitle: '1월 24일 서귀포 — 마감일 없이 400명이 차면 접수와 환불이 같이 끝난다',
+      raceDate: '2027-01-24',
+      registrationOpen: { verifiedAt: '2026-10-30' },
+      registrationVia: '전국마라톤협회 대회 페이지(mara1080.com) 온라인 신청 후 계좌 입금',
+      action: {
+        what: '신청서를 먼저 내고 그다음 입금하세요',
+        how: '신청 없이 참가비만 입금하면 자동 취소되고 접수 마감 뒤에 환불됩니다. 400명이 차는 순간 신규 신청과 입금이 모두 막히고, 변경·취소·환불도 그 마감일까지만 됩니다.',
+      },
+      facts: [
+        { label: '대회일', value: '1월 24일', sub: '일 · 오전 9시 출발' },
+        { label: '장소', value: '서귀포 축구 공원', sub: '공식 표기 "(예정)"' },
+        { label: '종목', value: '10km', sub: '왕복 코스 · 칩 계측' },
+        { label: '참가비', value: '5만원', sub: '자켓·비니·메달 포함' },
+        { label: '정원', value: '400명', sub: '선착순 · 달성 즉시 마감' },
+        { label: '접수', value: '온라인만', sub: '마감일 미고지' },
+      ],
+      highlights: [
+        { badge: '400', title: '마감 날짜가 없습니다', desc: '공지는 선착순 400명 달성 즉시 마감하고 추가 접수는 없다고 밝힙니다. 사무국은 근래 참가자가 늘어 조기 마감이 잦다며 신청과 입금을 빨리 끝내라고 안내합니다.' },
+        { badge: '자켓', title: '기념품이 겨울 장비입니다', desc: '참가비에 폴라폴리스 자켓과 비니 모자, 완주 메달, (웹)모바일 기록증이 포함됩니다. 1월 제주 대회에 맞춘 구성입니다.' },
+        { badge: '택배', title: '배번은 미리 오고, 잃어버리면 끝입니다', desc: '배번호와 기념품은 통상 대회 3~7일 전 집으로 발송됩니다. 분실하거나 현장에 가져오지 않으면 배번호도 기록칩도 재발급되지 않습니다.' },
+      ],
+      marathonId: 'jeju-10km-marathon-2027',
+    },
+    faqs: [
+      { question: '2027 전마협 제주 10km 마라톤은 언제 어디서 열리나요?', answer: '2027년 1월 24일(일) 오전 9시에 출발합니다. 공식 표기 장소는 "서귀포 축구 공원 (예정)"으로, 아직 예정 표시가 붙어 있습니다. 종목은 10km 하나이고 왕복 코스입니다.' },
+      { question: '참가비와 기념품은요?', answer: '참가비는 50,000원입니다. 폴라폴리스 자켓, 비니 모자, 완주 메달, (웹)모바일 기록증이 포함되고 칩으로 계측합니다. 기념품과 배번호는 택배로 발송됩니다.' },
+      { question: '접수는 언제까지인가요?', answer: '마감일이 따로 고지되지 않았습니다. 선착순 400명을 달성하면 즉시 마감되고 추가 접수는 없습니다. 2026년 10월 30일 기준 대회 페이지에 접수 중으로 표시돼 있습니다.' },
+      { question: '환불은 언제까지 되나요?', answer: '공지에 따르면 변경·취소·환불은 선착순 마감일까지만 가능합니다. 마감 후에는 배번호 제작이 시작돼 종목·이름 변경도 되지 않습니다. 400명이 일찍 차면 환불 기한도 함께 앞당겨지는 셈입니다.' },
+    ],
+    content: `
+<p><strong>2027 전마협 제주 10km 마라톤은 2027년 1월 24일(일) 오전 9시 서귀포에서 출발하는 10km 단일 종목 대회입니다.</strong> 전국마라톤협회가 주최하고 참가비는 50,000원입니다. 2026년 10월 30일 기준 접수 중입니다.</p>
+<p>먼저 볼 것은 <strong>400명 마감</strong>입니다. 날짜를 정해 두지 않았고, 정원이 차는 순간 신규 신청과 입금이 막힙니다. 변경·취소·환불도 그때 함께 끝납니다.</p>
+<div class="deadline-strip">⏰ <strong>2026-10-30 기준 접수 중 · 마감일 미고지.</strong> 400명 달성 즉시 마감되고 마감 뒤 추가 접수는 없다고 공지돼 있습니다.</div>
+
+<h2>신청 순서 — 신청서 먼저, 입금은 그다음</h2>
+<ol>
+  <li><strong>대회 페이지에서 참가 신청</strong> — 홈페이지 온라인 접수만 받습니다.</li>
+  <li><strong>전용 계좌로 참가비 입금</strong> — 신청 없이 입금만 하면 자동 취소되고, 접수 마감 뒤에 환불됩니다.</li>
+  <li><strong>마감 전에 입금까지 끝내기</strong> — 400명 달성 뒤에는 신규 신청과 입금 모두 받지 않습니다.</li>
+</ol>
+<p>개인 신청을 단체로 바꿀 수 없다는 공지도 있습니다. 일행과 함께 나갈 계획이면 신청하기 전에 방식을 정하세요.</p>
+
+<h2>제주 여행과 묶는다면 — 배번이 먼저 집으로 옵니다</h2>
+<p>공지는 통상 대회 3~7일 전 배번호·기념품·책자를 발송한다고 적었습니다. 이 일정대로면 1월 17~21일쯤입니다. 제주로 떠나기 전에 도착했는지 확인하고 짐에 넣으세요. 배번호와 기록칩은 잃어버리거나 현장에 가져오지 않으면 재발급되지 않습니다.</p>
+<p>일요일 오전 9시 출발이라 당일 아침 항공편보다 전날 들어가는 일정이 무난합니다. 같은 협회의 <a href="https://mara1080.com/event/f3c362bc-532f-4f3c-bc21-76d3023bfb3a" target="_blank" rel="noopener noreferrer">제주 4Full 마라톤</a>도 1월 22일자로 접수 중인데, 이 글은 10km만 다룹니다.</p>
+<p>장소는 숙소를 잡기 전에 다시 확인하세요. 공식 표기는 "서귀포 축구 공원 (예정)"입니다. 일부 소개 글의 "효돈 축구공원"이 같은 곳인지는 공식에서 확인하지 못했습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">공식에서 확인되지 않은 것 (2026-10-30 기준)</p>
+    <ul>
+      <li>장소 확정 여부와 상세 주소, 왕복 코스의 세부 경로·고도·급수 위치</li>
+      <li>제한시간, 주차·셔틀, 현재 접수 인원</li>
+    </ul>
+  </div>
+</div>
+
+<h2>대회 요강 한눈에</h2>
+<table><thead><tr><th>항목</th><th>내용</th></tr></thead><tbody>
+<tr><td>대회일·출발</td><td>2027년 1월 24일(일) · 오전 9시 출발</td></tr>
+<tr><td>장소</td><td>서귀포 축구 공원 (예정)</td></tr>
+<tr><td>종목·코스</td><td>10km 왕복 코스 · 칩 사용</td></tr>
+<tr><td>참가비</td><td>50,000원</td></tr>
+<tr><td>포함 내용</td><td>폴라폴리스 자켓, 비니 모자, 완주 메달, (웹)모바일 기록증</td></tr>
+<tr><td>정원·접수</td><td>선착순 400명, 온라인 접수만. 달성 즉시 마감, 추가 접수 없음</td></tr>
+<tr><td>변경·취소·환불</td><td>선착순 마감일까지. 마감 후 종목·이름 변경 불가</td></tr>
+<tr><td>배번</td><td>대회 전 택배 발송. 양도·판매 금지, 재발급 불가(기록칩 동일)</td></tr>
+<tr><td>주최·협력</td><td>전국마라톤협회 · 월드런, 전사모, 제주마라닉클럽</td></tr>
+<tr><td>문의</td><td>042-638-1080 · jeonmahyeop@naver.com</td></tr>
+</tbody></table>
+
+<p><small>출처: 전국마라톤협회 <a href="https://mara1080.com/event/15658a1d-d102-42e7-8123-9e20c73aa767" target="_blank" rel="noopener noreferrer">2027 제주 10km 마라톤 대회 페이지</a>의 대회요강 이미지, 2026년 10월 27일 게시 공지 4건(선착순 마감·입금 계좌·배번·단체 전환), 전국마라톤협회 대회 목록(2026-10-30 확인). 이 소식의 최초 트리거는 인스타그램 @runner_iffu 게시물이었습니다.</small></p>
+`,
+  },
+  {
     id: 'saucony-endorphin-speed-6-first-review',
     slug: 'saucony-endorphin-speed-6-first-review',
     title: '사코니 엔돌핀 스피드 6 첫 리뷰 | 232g·38/30mm, 5세대보다 단단하고 빠르다 — 한국 출시는 아직',
@@ -800,7 +976,7 @@ export const posts_2026_10: BlogPost[] = [
     thumbnail: '/images/blog/korea-running-expo-2026-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-21',
-    updatedAt: '2026-10-27',
+    updatedAt: '2026-10-30',
     category: 'news' as const,
     readingTime: 5,
     tags: ['코리아러닝엑스포', '코리아러닝엑스포 2026', 'JTBC 서울마라톤', '제마 배번호 수령', '제마 레이스팩', '러닝 엑스포', 'SETEC', '러닝화'],
@@ -815,7 +991,7 @@ export const posts_2026_10: BlogPost[] = [
     faqs: [
       { question: '제마 배번호와 레이스팩은 어디서 받나요?', answer: '10월 29~31일 코리아러닝엑스포가 열리는 SETEC 1관에서 받습니다. 택배 발송은 없으며 목·금요일 12:00~20:00, 토요일 10:00~23:00에 수령할 수 있습니다.' },
       { question: '토요일 밤 10시에 가면 브랜드 부스도 볼 수 있나요?', answer: '공식 계정의 10월 20일 안내 기준으로 전시 부스는 토요일 20:00에 끝납니다. 레이스팩 수령만 23:00까지이므로 브랜드 부스 관람을 원하면 더 일찍 방문하세요.' },
-      { question: '다른 사람이 제 레이스팩을 대신 받아도 되나요?', answer: '대회 공식 공지는 개인별 QR코드를 통한 대리 수령이 가능하다고 안내합니다. 자세한 방법은 추후 공지 예정이므로 QR 외에 필요한 준비물이 있는지 방문 전 최신 공지를 확인하세요.' },
+      { question: '다른 사람이 제 레이스팩을 대신 받아도 되나요?', answer: '대회 공식 공지는 개인별 QR코드를 통한 대리 수령이 가능하다고 안내합니다. 자세한 방법은 추후 공지 예정이라고만 적혀 있고, 10월 30일까지 세부 공지는 찾지 못했습니다. QR 외에 필요한 준비물이 있는지 사무국에 먼저 확인하세요.' },
       { question: 'SETEC에 차를 가져가도 되나요?', answer: 'JTBC 서울마라톤의 레이스팩 수령 공지는 SETEC 주차장을 이용할 수 없다고 안내합니다. 3호선 학여울역 1번 출구로 오는 대중교통 동선을 권장합니다.' },
     ],
     content: `
@@ -856,7 +1032,7 @@ export const posts_2026_10: BlogPost[] = [
 <p>QR을 준비하지 못했다면 지도의 <strong>F 안내데스크</strong> 위치를 먼저 확인하세요. 지도에 창구가 표시돼 있다는 사실이 QR 없이 즉시 수령할 수 있다는 뜻은 아닙니다. 개인별 수령 안내와 필요한 준비물을 확인한 뒤 방문하세요.</p>
 <p><img src="/images/blog/korea-running-expo-2026/hall-1.webp" alt="코리아러닝엑스포 2026 공식 1관 배치도. 배번호와 레이스팩 수령 A, 키오스크 B, 외국인·QR 미소지자 안내 F, 잠스트 픽업 G, 데상트 S101" width="1440" height="1800" loading="lazy" /></p>
 <p><small>자료: 코리아러닝엑스포 공식 계정, 2026년 10월 20일 공개한 HALL 1 배치도. 현장 배치는 바뀔 수 있습니다.</small></p>
-<p><strong>대리 수령은 개인별 QR코드로 가능</strong>하다는 것이 현재 대회 공지입니다. 다만 세부 방법은 추후 안내로 남아 있습니다. 가족이나 지인에게 부탁할 때는 QR만 전달하고 끝내기보다, 최신 수령 공지에 추가 서류나 절차가 붙었는지 확인하세요.</p>
+<p><strong>대리 수령은 개인별 QR코드로 가능</strong>하다는 것이 현재 대회 공지입니다. 다만 세부 방법은 10월 30일까지도 추후 안내로 남아 있습니다. 가족이나 지인에게 부탁할 때는 QR만 전달하고 끝내기보다, 최신 수령 공지에 추가 서류나 절차가 붙었는지 확인하세요.</p>
 
 <h2>2관: 공식 스폰서와 제마 굿즈를 한곳에서</h2>
 <p>2관은 <strong>JTBC SEOUL MARATHON OFFICIAL ZONE</strong>입니다. 지도에는 스폰서 11개와 공식 굿즈 구역 1개가 들어 있습니다. 1관의 데상트까지 포함한 전체 공식 안내는 스폰서 12개입니다.</p>
@@ -881,6 +1057,7 @@ export const posts_2026_10: BlogPost[] = [
 <p>코스 포토월은 <strong>C</strong>, 네임 포토월은 <strong>E</strong>입니다. 공식 스폰서를 찾는다면 2관, 위 브랜드들을 찾는다면 3관으로 구분하면 됩니다.</p>
 <p><img src="/images/blog/korea-running-expo-2026/hall-3.webp" alt="코리아러닝엑스포 2026 공식 3관 배치도. 참여 브랜드 39개와 나이키 S337, 미즈노 S320, 가민 S338 위치" width="1440" height="1800" loading="lazy" /></p>
 <p><small>자료: 코리아러닝엑스포 공식 계정, HALL 3 배치도.</small></p>
+<p>공식 계정이 확인해 준 판매 혜택은 데상트 이벤트 부스의 <strong>전 제품 30% 할인</strong>입니다. 10월 29~31일 코리아러닝엑스포 방문객이면 누구나 대상입니다. <a href="https://www.instagram.com/korearunningexpo/p/DfD75tFCRUz/" target="_blank" rel="noopener noreferrer">공식 안내</a></p>
 <p>부스가 있다는 것만으로 <strong>특정 신제품의 판매·시착이나 무료 증정</strong>이 확정되는 것은 아닙니다. 구매하거나 체험하고 싶은 제품이 있다면 방문 전에 그 브랜드의 엑스포 공지를 따로 확인하세요.</p>
 
 <h2>배번호만 받을 날과 엑스포를 즐길 날을 나눠 잡으세요</h2>
@@ -893,7 +1070,7 @@ export const posts_2026_10: BlogPost[] = [
 <div class="faq"><p class="faq-q">Q. 레이스팩을 택배로 받을 수 있나요?</p><p class="faq-a">A. 대회 공식 공지는 별도 택배 발송 없이 SETEC 1관 현장 수령만 진행한다고 안내합니다. 수령 일정은 10월 29~31일입니다.</p></div>
 <div class="faq"><p class="faq-q">Q. 토요일 23시까지 모든 부스가 열려 있나요?</p><p class="faq-a">A. 23시는 레이스팩 수령 마감입니다. 공식 계정의 10월 20일 안내상 토요일 전시 부스는 20시에 운영을 마칩니다.</p></div>
 
-<p><small>일반 관람 무료 입장은 <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>에서 2026년 10월 27일 확인했습니다. 출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
+<p><small>운영 시간은 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DfD4ggztofe/" target="_blank" rel="noopener noreferrer">10월 28일 레이스 팩 현장 수령 안내</a>에서 변경이 없음을 2026년 10월 30일 다시 확인했습니다. 일반 관람 무료 입장은 <a href="https://www.setec.or.kr/front/schedule/view.do?sIdx=2259" target="_blank" rel="noopener noreferrer">SETEC 공식 행사 일정</a>에서 2026년 10월 27일 확인했습니다. 출처: 코리아러닝엑스포 공식 계정의 <a href="https://www.instagram.com/korearunningexpo/p/DetaGKjCRu3/" target="_blank" rel="noopener noreferrer">10월 20일 운영·레이스팩 안내</a>, 같은 날 공개된 <a href="https://www.instagram.com/korearunningexpo/p/DetPpZDCSbB/" target="_blank" rel="noopener noreferrer">1관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPoVIibsX/" target="_blank" rel="noopener noreferrer">2관</a>·<a href="https://www.instagram.com/korearunningexpo/p/DetPnW_CfgV/" target="_blank" rel="noopener noreferrer">3관 부스 배치도</a>, <a href="https://marathon.jtbc.com/17/?bmode=view&amp;idx=173732896" target="_blank" rel="noopener noreferrer">JTBC 서울마라톤 공식 레이스팩 수령 공지</a>. 2026년 10월 21일 본문과 배치도 이미지를 확인했습니다. 운영·부스 배치는 주최 측 사정에 따라 바뀔 수 있습니다.</small></p>
 `,
   },
   {
@@ -1270,6 +1447,7 @@ export const posts_2026_10: BlogPost[] = [
     thumbnail: '/images/blog/new-york-marathon-water-refill-stations-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-16',
+    updatedAt: '2026-10-30',
     category: 'news' as const,
     readingTime: 4,
     tags: ['뉴욕마라톤', '리필 급수대', '러닝 물병', '소프트플라스크', '마라톤 급수', '해외 러닝 소식'],
@@ -1299,11 +1477,11 @@ export const posts_2026_10: BlogPost[] = [
 <tr><td>23마일</td><td>약 37.0km</td></tr>
 </tbody></table>
 <p><small>환산: 1마일=1.609344km, 소수 첫째 자리 반올림. km 값은 계산값이며 현장 표지 위치를 새로 측정한 값은 아닙니다.</small></p>
-<p>기존 <strong>일반 급수대 25곳</strong>도 함께 안내돼 있습니다. 개인 용기를 들고 갈지는 본인의 장비와 급수 방식에 맞춰 정하면 됩니다. 리필 지점만으로 코스 전체 급수 간격을 판단할 필요는 없습니다. <a href="https://testcache.nyrr.org/media-center/press-release/2026_0916_2026tcsnycmsustainabilityinitiatives" target="_blank" rel="noopener noreferrer">NYRR 공식 발표</a></p>
+<p>기존 <strong>일반 급수대 25곳</strong>도 함께 안내돼 있습니다. 개인 용기를 들고 갈지는 본인의 장비와 급수 방식에 맞춰 정하면 됩니다. 리필 지점만으로 코스 전체 급수 간격을 판단할 필요는 없습니다. <a href="https://www.nyrr.org/media-center/news/2026/09/16/2026_0916_2026tcsnycmsustainabilityinitiatives" target="_blank" rel="noopener noreferrer">NYRR 공식 발표</a></p>
 
 <h2>물병을 챙긴다면 용량과 베스트부터</h2>
 <p>NYRR의 반입 규정은 급수 용기를 <strong>1L 이하</strong>로 제한하며 유리 용기는 금지합니다. 베스트는 앞주머니의 물병을 사용할 수 있고, 배번호를 가리지 않아야 합니다. 등쪽 물주머니가 함께 달린 제품이라면 그 물주머니에 대회 전이나 도중 물을 채우면 안 됩니다.</p>
-<p>규정에는 허용되는 허리 벨트·가방 등의 유형도 따로 나옵니다. 한국에서 평소 사용하는 장비라고 해서 그대로 허용될 것이라 생각하지 말고, 출국 전에 자신의 물병 용량과 휴대 방식이 맞는지 확인하세요. 보안 구역 반입품은 현장 검사를 받습니다. <a href="https://testcache.nyrr.org/run/guidelines-and-procedures/policies-rules-and-regulations/prohibited-items" target="_blank" rel="noopener noreferrer">NYRR 허용·금지 품목</a></p>
+<p>규정에는 허용되는 허리 벨트·가방 등의 유형도 따로 나옵니다. 한국에서 평소 사용하는 장비라고 해서 그대로 허용될 것이라 생각하지 말고, 출국 전에 자신의 물병 용량과 휴대 방식이 맞는지 확인하세요. 보안 구역 반입품은 현장 검사를 받습니다. <a href="https://www.nyrr.org/prohibited-items" target="_blank" rel="noopener noreferrer">NYRR 허용·금지 품목</a></p>
 
 <h2>파리에서 직접 채워본 러너는 어땠을까</h2>
 <p>Believe in the Run의 Ryan Haines는 파리마라톤에서 개인 플라스크를 채운 경험을 썼습니다. 손으로 잡는 호스는 수압이 강하게 느껴졌고, 직접 조절하는 수도꼭지가 채우기 편했다고 설명합니다. 당시에는 개인 최고기록을 노리는 레이스가 아니었다는 조건도 함께 밝혔습니다.</p>
@@ -1313,7 +1491,7 @@ export const posts_2026_10: BlogPost[] = [
 <h2>컵을 얼마나 줄였는지는 대회 뒤의 질문</h2>
 <p>리필 설비가 생긴다는 사실과 실제로 줄어든 일회용품의 양은 별도로 확인할 정보입니다. 이번 공식 발표만으로 뉴욕 대회의 컵 감축 실적을 계산할 수는 없습니다. 참가자에게 지금 필요한 것은 사용할 급수 지점과 반입 가능한 장비입니다.</p>
 <p>한국 대회를 준비한다면 <a href="/blog/fall-marathon-race-day-checklist-2026">대회 당일 준비물 체크리스트</a>와 해당 대회의 급수·장비 규정을 함께 확인하세요.</p>
-<p><small>2026년 10월 16일 NYRR 공식 발표·반입 규정과 실명 체험 기사를 대조했습니다. 설비 참고 사진 출처: <a href="https://www.hydrapak.com/fr/blogs/beyond-adventure/bank-of-america-chicago-marathon" target="_blank" rel="noopener noreferrer">HydraPak의 시카고 디스턴스 시리즈 소개</a>. 실제 운영은 최종 참가자 안내를 따르세요.</small></p>
+<p><small>2026년 10월 16일 NYRR 공식 발표·반입 규정과 실명 체험 기사를 대조했고, 10월 30일 같은 공식 페이지에서 리필 위치와 1L 용기 규정이 그대로인지 다시 확인했습니다. 설비 참고 사진 출처: <a href="https://www.hydrapak.com/fr/blogs/beyond-adventure/bank-of-america-chicago-marathon" target="_blank" rel="noopener noreferrer">HydraPak의 시카고 디스턴스 시리즈 소개</a>. 실제 운영은 최종 참가자 안내를 따르세요.</small></p>
 `,
   },
   {
@@ -1429,10 +1607,11 @@ export const posts_2026_10: BlogPost[] = [
     id: 'jtbc-seoul-marathon-pacemaker-2026',
     slug: 'jtbc-seoul-marathon-pacemaker-2026',
     title: '2026 JTBC 서울마라톤 페이스메이커 | 풀코스 65명·10K 7명, 그룹별 목표 기록표',
-    description: '2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다. 풀코스 A~H 8개 그룹의 목표 완주 기록과 배치 인원, 10K 35·40·50·60분 페이서를 정리했습니다. 풀코스 광화문·10K 상암 분리 출발과 엑스포 안내도 함께 확인하세요.',
+    description: '2026 JTBC 서울마라톤 공식 페이스메이커가 공개됐습니다. 풀코스 A~H 8개 그룹의 목표 완주 기록과 배치 인원, 10K 35·40·50·60분 페이서를 정리했습니다. 풀코스 광화문·10K 상암 분리 출발과 대회 직전 바뀐 최종 코스 구간도 함께 확인하세요.',
     thumbnail: '/images/blog/jtbc-seoul-marathon-pacemaker-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-16',
+    updatedAt: '2026-10-30',
     category: 'news' as const,
     readingTime: 5,
     tags: ['JTBC 서울마라톤', '제마 페이스메이커', '페이스메이커', '출발그룹', '10K 페이서', '코리아러닝엑스포'],
@@ -1440,6 +1619,7 @@ export const posts_2026_10: BlogPost[] = [
       { question: '2026 JTBC 서울마라톤 페이스메이커는 몇 명인가요?', answer: '공식 공개 기준 풀코스 A~H 8개 출발그룹에 총 65명, 10K에 7명입니다.' },
       { question: 'JTBC 서브4 페이서는 어느 그룹에 있나요?', answer: '목표 완주 기록 4시간 페이서는 D그룹 5명과 E그룹 2명으로 안내됐습니다. D그룹 스페셜 페이서는 디어입니다. 페이서 배치표는 본인의 출발그룹을 바꾸는 안내가 아니므로 배정된 그룹 안에서 확인하세요.' },
       { question: '10K 50분 페이스메이커는 어느 그룹에 있나요?', answer: 'B그룹 허인화, C그룹 홍성훈이 50분 목표 페이서로 공개됐습니다. 본인의 배정 그룹과 목표 시간을 함께 확인하세요.' },
+      { question: '풀코스 코스가 또 바뀌었나요?', answer: '네. 사무국이 대회 직전 공지로 청계천 반환 지점(고산자교 → 비우당교)과 피니시 직전 둔촌사거리 반환 왕복 구간을 변경했습니다. 출발·도착 지점과 총 거리 42.195km는 같습니다. 엑스포에서 받는 인쇄 책자의 코스·도착지 동선은 변경 전 기준이므로 공식 공지의 PDF와 GPX로 확인해야 합니다.' },
       { question: '풀코스와 10K의 출발 장소가 같은가요?', answer: '다릅니다. 10월 12일 공식 코스 안내 기준 풀코스는 광화문광장 출발·올림픽공원 도착, 10K는 상암월드컵공원 출발·여의도공원 도착입니다. 두 종목 모두 집결 06:30, 출발 07:30으로 안내됐습니다.' },
     ],
     content: `
@@ -1482,6 +1662,7 @@ export const posts_2026_10: BlogPost[] = [
 
 <h2>페이서를 찾기 전에 집결 장소부터</h2>
 <p>올해는 풀코스 출발지가 바뀌어 두 종목을 분리 운영합니다. 예전의 ‘전 종목 상암 출발’ 안내를 저장해 두었다면 이동 계획을 고쳐야 합니다.</p>
+<div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">풀코스 최종 코스가 다시 바뀌었습니다</p><p>사무국이 대회 직전 공지로 <strong>청계천 반환 지점(고산자교 → 비우당교)</strong>과 <strong>피니시 직전 둔촌사거리 반환 왕복 구간</strong>을 변경했습니다. 출발·도착 지점과 총 거리 42.195km는 같습니다. <strong>엑스포에서 받는 인쇄 책자의 코스·도착지 동선은 변경 전 기준</strong>이니 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175312670" target="_blank" rel="noopener noreferrer">최종 코스 공지의 PDF</a>와 <a href="https://marathon.jtbc.com/17/?bmode=view&idx=175326651" target="_blank" rel="noopener noreferrer">공식 GPX</a>로 확인하세요. 같은 공지는 기록 측정 매트를 5km마다와 하프 지점에 두고, 풀코스 간식을 25K·30K·35K에 준다고 안내합니다.</p></div></div>
 <table><thead><tr><th>종목</th><th>출발·집결</th><th>도착</th></tr></thead><tbody>
 <tr><td>풀코스</td><td>광화문광장</td><td>올림픽공원</td></tr>
 <tr><td>10K</td><td>상암월드컵공원</td><td>여의도공원</td></tr>
@@ -1491,8 +1672,8 @@ export const posts_2026_10: BlogPost[] = [
 
 <h2>레이스팩 수령 때 함께 확인할 엑스포 소식</h2>
 <p>레이스팩은 택배 없이 <strong>SETEC 1관 현장</strong>에서 받습니다. 공식 수령 공지는 <strong>10월 29~30일 12:00~20:00, 31일 10:00~23:00</strong>으로 안내합니다. SETEC 주차장은 이용할 수 없으며, 개인 QR코드를 통한 대리 수령이 가능합니다. <a href="https://marathon.jtbc.com/17/?bmode=view&idx=173732896" target="_blank" rel="noopener noreferrer">공식 레이스팩 수령 공지</a></p>
-<p>공식 계정은 코리아러닝엑스포에서 잠스트 무릎보호대를 <strong>10월 29일·30일 각각 선착순 5,000개씩</strong> 증정한다고 안내했습니다. 장소는 <strong>SETEC 1관 레이스팩 수령 현장</strong>, 운영 시간은 <strong>12:00~20:00</strong>입니다. 1인 1개이며 수량이 소진되면 일찍 끝날 수 있습니다.</p>
-<p>이 일정은 보호대 증정 행사에 해당합니다. 레이스팩 수령 전체 일정이나 모든 참가자에게 지급되는 기본 구성으로 읽지 마세요. 방문 날짜와 수령 조건은 별도로 확인하는 편이 좋습니다. <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiSER4H_iK/" target="_blank" rel="noopener noreferrer">공식 증정 행사 안내</a></p>
+<p>잠스트 무릎보호대 증정은 <strong>10월 29일·30일 각각 선착순 5,000개</strong>로 안내된 행사였고, 10월 30일 20시로 기간이 끝났습니다.</p>
+<p>레이스팩 기본 구성품이 아니므로, 10월 31일에 레이스팩을 받으러 간다면 보호대는 기대하지 마세요. <a href="https://www.instagram.com/jtbc_seoul_marathon/p/DeiSER4H_iK/" target="_blank" rel="noopener noreferrer">공식 증정 행사 안내</a></p>
 
 <h2>대회 전 저장할 세 가지</h2>
 <ul>
@@ -1674,11 +1855,11 @@ export const posts_2026_10: BlogPost[] = [
     id: 'jebudo-sea-road-festival',
     slug: 'jebudo-sea-road-festival',
     title: '제부도 씨로드 페스티벌 2026 접수·참가비 | 11월 14일 바닷길 5·10km, 셔틀은 별도 3만원',
-    description: '2026 제부도 씨로드 페스티벌은 11월 14일 개최, 5K·10K 모두 참가비 6만원입니다. 왕복 셔틀을 쓰면 1인 9만원. 10월 25일 접수 마감, 같은 날 21시 환불 마감과 코스·셔틀·케이블카 이동 조건을 확인하세요.',
+    description: '2026 제부도 씨로드 페스티벌은 11월 14일 개최, 5K·10K 모두 참가비 6만원입니다. 왕복 셔틀을 쓰면 1인 9만원. 취소분 선착순 추가 접수가 11월 13일까지 열려 있고 충원되면 먼저 닫힙니다. 추가 신청자 현장 수령과 코스·셔틀·케이블카 이동 조건을 확인하세요.',
     thumbnail: '/images/blog/jebudo-sea-road-festival.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-14',
-    updatedAt: '2026-10-20',
+    updatedAt: '2026-10-30',
     category: 'news' as const,
     readingTime: 6,
     tags: ['제부도 씨로드 페스티벌', '제부도 마라톤', '제부도 바다런', '제부도 러닝', '화성 러닝 대회', '바닷길 러닝', '5km 마라톤', '10km 마라톤'],
@@ -1690,28 +1871,28 @@ export const posts_2026_10: BlogPost[] = [
       organizer: '제부도주민회·콜스에듀케이션',
       url: 'https://www.jebudorun.com/',
       offers: [
-        { name: '5K 섬내 일주', priceKrw: 60000, availabilityEnds: '2026-10-25', url: 'https://www.jebudorun.com/apply' },
-        { name: '10K 바닷길 왕복·섬 일주', priceKrw: 60000, availabilityEnds: '2026-10-25', url: 'https://www.jebudorun.com/apply' },
+        { name: '5K 섬내 일주', priceKrw: 60000, availabilityEnds: '2026-11-13', url: 'https://www.jebudorun.com/apply' },
+        { name: '10K 바닷길 왕복·섬 일주', priceKrw: 60000, availabilityEnds: '2026-11-13', url: 'https://www.jebudorun.com/apply' },
       ],
     },
     raceMeta: {
       displayTitle: '바닷길을 달리는 제부도 씨로드 페스티벌',
       displaySubtitle: '5K는 섬 한 바퀴, 10K는 바닷길 왕복까지. 이동비도 함께 계산하세요',
       raceDate: '2026-11-14',
-      registrationEnd: '2026-10-25',
+      registrationEnd: '2026-11-13',
       registrationOpen: { verifiedAt: '2026-10-14T12:58:02+09:00' },
       registrationVia: '공식 홈페이지 · 계좌이체 입금 확인 후 참가 확정',
       action: {
         what: '종목과 이동 방법을 정한 뒤 신청하세요',
-        how: '공식 신청 폼에서 코스·티셔츠·배송 정보를 입력하고 입금 안내를 확인하세요. 왕복 셔틀을 선택하면 참가비에 1인 3만원이 추가됩니다. 정원에 따라 조기 마감될 수 있습니다.',
+        how: '지금은 취소분 한정 추가 접수입니다. 공식 신청 폼에서 코스와 티셔츠 사이즈를 입력하고 입금 안내를 확인하세요. 왕복 셔틀을 선택하면 참가비에 1인 3만원이 추가됩니다. 취소 인원이 충원되면 11월 13일 전에도 마감되고, 배번표와 티셔츠는 현장에서 받습니다.',
       },
       facts: [
         { label: '대회일', value: '11월 14일', sub: '토 · 러닝 08:30~10:30' },
         { label: '장소', value: '제부도 바닷길', sub: '화성 황금해안길 일원' },
         { label: '종목', value: '5K · 10K', sub: '섬내 일주 / 바닷길 왕복·섬 일주' },
         { label: '참가비', value: '60,000원', sub: '두 종목 동일 · 셔틀 별도' },
-        { label: '접수 마감', value: '10월 25일', sub: '정원에 따라 조기 마감 가능' },
-        { label: '환불 마감', value: '10월 25일 21시', sub: '사무국 이메일 신청' },
+        { label: '추가 접수', value: '11월 13일까지', sub: '취소분 선착순 · 충원 시 먼저 마감' },
+        { label: '환불', value: '10월 25일 21시 종료', sub: '이후 개인 사정 환불 제한' },
       ],
       highlights: [
         { badge: '바닷길', title: '10K는 섬 밖 연결도로까지', desc: '섬내 일주에 모세길 왕복이 더해집니다. 5K는 섬내 일주 코스입니다.' },
@@ -1722,7 +1903,7 @@ export const posts_2026_10: BlogPost[] = [
     faqs: [
       { question: '제부도 씨로드 페스티벌은 언제 열리나요?', answer: '2026년 11월 14일(토) 제부도 바닷길·화성 황금해안길 일원에서 열립니다. 공식 러닝 시간은 08:30~10:30이며 참가자는 07:30까지 도착하도록 안내됩니다. 기존 10월 4일 일정에서 변경됐습니다.' },
       { question: '참가비와 셔틀 요금은 얼마인가요?', answer: '5K·10K 모두 1인 60,000원입니다. 왕복 셔틀은 별도 30,000원이므로 선택하면 합계 90,000원입니다. 식비 등 개인 지출은 별도입니다.' },
-      { question: '접수와 환불은 언제까지인가요?', answer: '접수 마감일은 10월 25일이며 정원에 따라 조기 마감될 수 있습니다. 환불 요청은 10월 25일 21시까지 신청번호·참가자 성명을 사무국 이메일로 보내야 합니다. 접수 마감 시각은 별도로 확인되지 않았습니다.' },
+      { question: '접수와 환불은 언제까지인가요?', answer: '일반 접수는 10월 25일에 끝났고, 지금은 취소분 한정 선착순 추가 접수가 열려 있습니다. 공식 안내의 신청 마감일은 11월 13일(금)이지만 취소 인원이 충원되면 먼저 마감됩니다. 환불 기한은 10월 25일 21시로 지났고, 추가 신청자에게 별도 환불 규정이 있는지는 공식에 적혀 있지 않습니다.' },
       { question: '티셔츠는 택배로 오나요, 현장에서 받나요?', answer: '공식 배송 공지는 사전 배송, 공식 FAQ는 현장 지급으로 안내가 다릅니다. 최종 참가자 안내나 사무국에 수령 방식을 확인하세요.' },
     ],
     content: `
@@ -1760,13 +1941,14 @@ export const posts_2026_10: BlogPost[] = [
 <p>공식은 <strong>전곡항 입구 대송지구 임시주차장에 주차한 뒤, 전곡항에서 케이블카로 제부도에 이동</strong>하는 경로를 안내합니다. 대회 도로 통제는 08:00~10:30입니다. 제부도 집결지 바로 옆까지 차로 들어갈 수 있다고 가정하면 이동 계획이 어긋날 수 있습니다.</p>
 <p>배번호표가 케이블카 탑승 티켓을 대신한다는 안내는 있지만, 참가자 이용권의 <strong>사용 방법·탑승 시간은 최종 공지를 확인</strong>해야 합니다. 주차장에서 출발선까지 이동할 시간을 남기세요. 상세 집결지 주소도 확인일 기준 추가 안내 대상입니다.</p>
 
-<h2>신청은 입금 확인까지, 접수 마감은 10월 25일</h2>
+<h2>취소분 추가 접수는 11월 13일까지, 충원되면 먼저 닫힙니다</h2>
 <p>10월 14일 확인 시 <a href="https://www.jebudorun.com/apply" target="_blank" rel="noopener noreferrer">공식 참가 신청 폼</a>이 열려 있습니다. 코스·티셔츠 사이즈·배송 주소를 입력한 뒤 안내에 따라 <strong>계좌이체</strong>하세요. 참가 확정은 신청서 제출 후 입금 확인까지 마쳐야 합니다.</p>
-<p><strong>접수 마감일은 10월 25일</strong>이며 정원에 따라 조기 마감될 수 있습니다. 정확한 접수 마감 시각은 확인되지 않았습니다. 아래 환불 기한인 21시를 접수 마감 시각으로 생각하지 마세요.</p>
+<p>일반 접수가 끝난 뒤 공식 홈페이지가 <strong>취소분 한정 선착순 추가 접수</strong>를 열었습니다(2026-10-30 확인). 신청 마감일은 <strong>11월 13일(금)</strong>로 적혀 있지만, "별도 마감일 없이 취소 인원 충원 시 선착순 마감"이라는 문구가 함께 있어 그 전에 닫힐 수 있습니다. 잔여 인원은 공개되지 않았습니다.</p>
+<p>추가 신청자는 배번표와 기념 티셔츠 등 사전 배송 물품을 <strong>대회 현장에서</strong> 받습니다. 집으로 먼저 오지 않으니 집결 시간에 여유를 두세요.</p>
 <p>연령은 실제 신청 폼(10월 20일 확인)에서 <strong>5K 연령 제한 없음(유아·어린이는 보호자와 함께, 유모차 가능), 10K 중학생 이상</strong>으로 안내합니다. 10K는 2026학년도 중학교 1학년에 해당하는 2013년생도 생일과 관계없이 참가할 수 있습니다. 신청 폼 문구는 바뀔 수 있으니 어린 자녀와 참가하려면 신청 직전에 다시 확인하세요.</p>
 
-<h2>환불은 10월 25일 21시까지 이메일로 요청</h2>
-<p><a href="https://www.jebudorun.com/notice" target="_blank" rel="noopener noreferrer">공식 환불 공지</a>에 따르면 <strong>10월 25일 오후 9시까지</strong> 신청번호와 참가자 성명을 적어 <strong>jebudorun@awesomecomm.co.kr</strong>로 요청해야 합니다. 처리는 10월 26일 오전 9시 이후 순차 진행한다고 안내합니다.</p>
+<h2>일반 환불은 10월 25일 21시에 끝났습니다</h2>
+<p><a href="https://www.jebudorun.com/notice" target="_blank" rel="noopener noreferrer">공식 환불 공지</a>의 개인 사정 환불 기한은 <strong>10월 25일 오후 9시</strong>였습니다. 추가 신청자에게 별도 환불 규정이 있는지는 공식에 적혀 있지 않으니, 필요하면 신청 전에 <strong>jebudorun@awesomecomm.co.kr</strong>로 물어보세요.</p>
 <p>기한 이후 개인 사정에 따른 환불은 제한되지만 행사 취소·연기와 법령에 따른 권리는 예외로 안내돼 있습니다. 참가권 양도·판매와 대리 참가는 금지입니다.</p>
 
 <h2>기념품 안내에서 아직 확인할 부분</h2>
@@ -1869,7 +2051,7 @@ export const posts_2026_10: BlogPost[] = [
     id: 'chicago-marathon-2026-results',
     slug: 'chicago-marathon-2026-results',
     title: '시카고마라톤 2026 결과 | 여자 3명 2시간 15분 이내, 키프루토 2:01:09 우승',
-    description: '10월 11일 시카고마라톤에서 하위 페이사가 2:13:33으로 2연패, 아모스 키프루토가 2:01:09로 우승했습니다. 여자 상위 3명 모두 2시간 15분 이내 완주한 첫 마라톤입니다. 남녀 결과와 개인 기록 조회, 신청 중인 2027 대회 안내를 공식 자료로 정리했습니다.',
+    description: '10월 11일 시카고마라톤에서 하위 페이사가 2:13:33으로 2연패, 아모스 키프루토가 2:01:09로 우승했습니다. 여자 상위 3명 모두 2시간 15분 이내 완주한 첫 마라톤입니다. 남녀 결과와 개인 기록 조회, 지원이 마감된 2027 대회 안내를 공식 자료로 정리했습니다.',
     thumbnail: '/images/blog/chicago-marathon-2026-results.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-12',
@@ -1879,7 +2061,7 @@ export const posts_2026_10: BlogPost[] = [
     faqs: [
       { question: '2026 시카고마라톤 우승자는 누구인가요?', answer: '남자는 케냐의 아모스 키프루토(2:01:09), 여자는 에티오피아의 하위 페이사(2:13:33)입니다. World Athletics의 10월 11일 공식 보고 기준입니다.' },
       { question: '내 완주 기록은 어디서 확인하나요?', answer: '대회 공식 홈페이지의 Results에서 2026 RESULTS를 선택하면 개인 기록 조회 페이지로 연결됩니다. 공식 완주증은 참가자 계정에서 제공될 예정이라고 안내돼 있습니다.' },
-      { question: '2027 시카고마라톤은 지금 신청할 수 있나요?', answer: '네. 추첨 및 기록 보장 신청은 한국시간 2026년 10월 30일 새벽 4시까지이며 추첨 결과는 12월 8일 이메일로 안내됩니다. 대회일은 2027년 10월 10일입니다.' },
+      { question: '2027 시카고마라톤은 지금 신청할 수 있나요?', answer: '추첨과 기록 보장 신청은 한국시간 2026년 10월 30일 새벽 4시에 마감됐고, 추첨 결과는 12월 8일 이메일로 안내됩니다. 지금은 공식 자선과 투어 경로만 남아 있습니다. 대회일은 2027년 10월 10일입니다.' },
     ],
     content: `
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
@@ -1909,8 +2091,8 @@ export const posts_2026_10: BlogPost[] = [
 <p><a href="https://www.chicagomarathon.com/results/" target="_blank" rel="noopener noreferrer">대회 공식 결과 페이지</a>에서 <strong>2026 RESULTS</strong>를 선택해 개인 기록을 확인할 수 있습니다. 같은 페이지에 사진을 제공하는 MarathonFoto 링크도 있습니다.</p>
 <p>공식 안내는 완주증을 <strong>참가자 계정에서 출력하거나 PDF로 저장할 수 있도록 제공할 예정</strong>이라고 설명합니다. 지금 모두 발급됐다는 뜻은 아니므로 계정의 제공 상태를 확인하세요. 기록집은 12월 발송 예정이며 완주자에게 디지털판도 제공한다고 안내합니다.</p>
 
-<h2>다음 출발선 — 2027 신청은 열려 있습니다</h2>
-<p><strong>2027년 대회일은 10월 10일</strong>입니다. <a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">공식 Apply 페이지</a> 기준 추첨·기록 보장 신청 마감은 미국 중부시간 10월 29일 오후 2시, <strong>한국시간 10월 30일(금) 새벽 4시</strong>입니다.</p>
+<h2>다음 출발선 — 2027 일반 지원은 마감, 추첨 결과는 12월 8일</h2>
+<p><strong>2027년 대회일은 10월 10일</strong>입니다. <a href="https://www.chicagomarathon.com/apply/" target="_blank" rel="noopener noreferrer">공식 Apply 페이지</a> 기준 추첨·기록 보장 신청은 미국 중부시간 10월 29일 오후 2시, <strong>한국시간 10월 30일(금) 새벽 4시에 마감</strong>됐습니다. 지금 남은 길은 공식 자선과 투어입니다.</p>
 <p>추첨은 마감 후 전체 지원자 중에서 뽑으며 선착순이 아닙니다. 결과는 12월 8일 이메일로 통보됩니다. 한국 거주자의 일반 참가비는 <strong>260달러에 처리 수수료가 추가</strong>됩니다. 연령별 기록 보장 기준과 당첨 후 납부 순서는 <a href="/blog/chicago-marathon-2027-application-guide">2027 접수 가이드</a>에서 확인하세요.</p>
 
 <h2>확인한 출처</h2>
@@ -2033,11 +2215,12 @@ export const posts_2026_10: BlogPost[] = [
   {
     id: 'chicago-marathon-2027-application-guide',
     slug: 'chicago-marathon-2027-application-guide',
-    title: '시카고마라톤 2027 접수 시작 | 한국시간 10/30 새벽 4시 마감·12/8 추첨 발표 — 기록 기준표·자선 $2,500·참가비 $260',
-    description: '2027 시카고마라톤(10월 10일, 49회) 지원이 한국시간 10월 8일 22시에 열려 10월 30일 새벽 4시에 닫힙니다. 추첨은 선착순이 아니고 결과는 12월 8일 이메일, 당첨자는 한국시간 12월 16일 14시 59분까지 참가비 $260을 냅니다. 추첨 없이 확정되는 기록 보장 기준표(16~34세 남 2:50·여 3:20 등)와 자선·투어 경로, 신청 순서를 공식 페이지 원문으로 정리했습니다.',
+    title: '시카고마라톤 2027 지원 마감 | 12/8 추첨 발표, 남은 길은 자선·투어 — 기록 기준표·자선 $2,500·참가비 $260',
+    description: '2027 시카고마라톤(10월 10일, 49회) 일반 지원이 한국시간 10월 30일 새벽 4시에 마감됐습니다. 추첨 결과는 12월 8일 이메일, 당첨자는 한국시간 12월 16일 14시 59분까지 참가비 $260을 냅니다. 남은 자선·투어 경로와 기록 보장 기준표(16~34세 남 2:50·여 3:20 등)를 공식 페이지 원문으로 정리했습니다.',
     thumbnail: '/images/blog/chicago-marathon-2027-application-guide.webp',
     author: '산초 에디터',
     publishedAt: '2026-10-10',
+    updatedAt: '2026-10-30',
     event: {
       name: '시카고마라톤 2027',
       startDate: '2027-10-10',
@@ -2049,21 +2232,21 @@ export const posts_2026_10: BlogPost[] = [
     readingTime: 7,
     tags: ['시카고마라톤', '시카고마라톤 2027', '시카고마라톤 신청', '월드 메이저 마라톤', '마라톤 추첨', '해외 마라톤 신청', '기록 보장', 'PB 마라톤'],
     faqs: [
-      { question: '시카고마라톤 2027은 언제까지 신청하나요?', answer: '한국시간 10월 30일(금) 새벽 4시(미국 중부 10월 29일 오후 2시)까지입니다. 추첨과 기록·레거시 보장 신청이 모두 이 기간에만 열립니다. 자선은 2027년 9월 10일, 투어는 2027년 8월 10일까지 따로 받습니다.' },
-      { question: '빨리 신청하면 당첨 확률이 올라가나요?', answer: '아니요. 마감 뒤 전체 지원자 중에서 뽑고, 여러 번 지원해도 확률은 오르지 않으며 중복 지원은 추첨 전에 지워집니다(공식). 다만 기록 보장 신청은 검토에 최대 10영업일이 걸려, 승인되지 않았을 때 추첨으로 다시 지원하려면 일찍 내는 편이 좋습니다.' },
+      { question: '시카고마라톤 2027은 아직 신청할 수 있나요?', answer: '추첨과 기록·레거시 보장 신청은 한국시간 10월 30일(금) 새벽 4시(미국 중부 10월 29일 오후 2시)에 마감됐습니다. 지금 남은 길은 공식 자선(2027년 9월 10일 또는 정원까지)과 투어(2027년 8월 10일까지)입니다.' },
+      { question: '일찍 신청한 사람이 당첨에 유리한가요?', answer: '아니요. 마감 뒤 전체 지원자 중에서 뽑고, 여러 번 지원해도 확률은 오르지 않으며 중복 지원은 추첨 전에 지워집니다(공식). 결과는 12월 8일 이메일로 옵니다.' },
       { question: '참가비는 얼마이고 언제 내나요?', answer: '해외 거주자 $260(자선 경로 $335)에 처리 수수료가 붙습니다. 지원할 때가 아니라 당첨되거나 보장 신청이 승인된 뒤에 냅니다. 납부 기한은 보장 경로 승인자가 미국 중부 11월 10일, 추첨 당첨자가 12월 15일 밤 11시 59분이고, 모든 비용은 환불되지 않습니다.' },
       { question: '기록으로 확정 출전하려면 몇 분이 필요한가요?', answer: '대회일(2027년 10월 10일) 나이 기준으로 16~34세 남자 2시간 50분·여자 3시간 20분, 40~44세 남자 3시간·여자 3시간 30분 등입니다. 2025년 1월 1일~2026년 10월 29일에 공인 코스에서 낸 풀코스 기록만 인정하고, 하프 등 다른 거리 기록은 받지 않습니다.' },
     ],
     content: `
-<div class="deadline-strip"><span class="dl-badge">📢 접수중</span><span class="dl-text">2027 시카고마라톤(2027년 10월 10일) 지원이 <strong>한국시간 10월 8일 22시에 열렸고 10월 30일(금) 새벽 4시에 닫힙니다.</strong> 추첨과 기록·레거시 보장 신청은 이 기간에만 받습니다. 자선(2027년 9월 10일까지)과 투어(2027년 8월 10일까지)는 따로 더 길게 열립니다.</span></div>
+<div class="deadline-strip"><span class="dl-badge">📢 지원 마감</span><span class="dl-text">2027 시카고마라톤(2027년 10월 10일) 추첨·기록 보장 신청은 <strong>한국시간 10월 30일(금) 새벽 4시에 마감됐습니다.</strong> 추첨 결과는 12월 8일 이메일로 옵니다. 자선(2027년 9월 10일 또는 정원까지)과 투어(2027년 8월 10일까지)는 아직 열려 있습니다.</span></div>
 
 <div class="tldr"><span class="tldr-label">3줄 요약</span><ul>
-<li><strong>2027 시카고마라톤(10월 10일, 49회) 지원이 열렸습니다.</strong> 한국시간 10월 8일 22시~10월 30일 새벽 4시입니다. 추첨 결과는 12월 8일(미국 시간) 이메일로 오고, 당첨되면 한국시간 12월 16일 14시 59분까지 참가비를 내야 합니다.</li>
+<li><strong>2027 시카고마라톤(10월 10일, 49회) 일반 지원이 끝났습니다.</strong> 한국시간 10월 30일 새벽 4시에 마감됐습니다. 추첨 결과는 12월 8일(미국 시간) 이메일로 오고, 당첨되면 한국시간 12월 16일 14시 59분까지 참가비를 내야 합니다.</li>
 <li><strong>추첨은 선착순이 아닙니다.</strong> 마감 뒤 전체 지원자 중에서 뽑고, 여러 번 지원해도 확률이 오르지 않습니다. 참가비는 해외 거주자 $260(처리 수수료 별도)이고 당첨·승인된 뒤에 냅니다.</li>
 <li><strong>추첨 없이 확정되는 "보장 경로"도 있습니다.</strong> 연령별 기록 기준(16~34세 남 2:50·여 3:20 등)을 넘은 풀코스 기록, 최소 $2,500 모금의 공식 자선, 공식 투어 여행사 패키지 등입니다.</li>
 </ul></div>
 
-<div class="callout info"><span class="callout-icon">🏁</span><div class="callout-body"><p class="callout-title">한 줄 결론</p><p><strong>기록 기준 안에 들면 보장 경로로, 아니면 추첨으로 — 둘 다 한국시간 10월 30일 새벽 4시 전에 신청해야 합니다.</strong> 보장 신청이 승인되지 않으면 추첨으로 다시 지원할 수 있고, 추첨에서 떨어져도 자선·투어로 등록할 길이 남습니다(공식 안내). 다만 보장 신청 검토에 최대 10영업일이 걸리고 추첨 지원도 같은 기간에만 받으므로, <strong>보장 신청은 마감 직전이 아니라 10월 중순 전에 내야</strong> 떨어졌을 때 추첨으로 갈아탈 시간이 남습니다.</p></div></div>
+<div class="callout info"><span class="callout-icon">🏁</span><div class="callout-body"><p class="callout-title">한 줄 결론</p><p><strong>지원했다면 12월 8일 이메일을 기다리고, 지원하지 못했다면 남은 길은 자선과 투어입니다.</strong> 공식 안내는 추첨에서 떨어져도 자선·투어로 등록할 수 있다고 적었습니다. 기록 보장 경로도 지원 기간에만 받았기 때문에 지금은 새로 신청할 수 없습니다.</p></div></div>
 
 <h2>2027 일정 — 한국 시간으로 옮기면</h2>
 <p>공식 일정은 모두 미국 중부 시간입니다. 아래는 10월 일정은 서머타임(UTC−5), 11월 1일 이후 일정은 표준시(UTC−6)로 계산해 한국 시간으로 옮긴 값입니다.</p>
@@ -2078,7 +2261,7 @@ export const posts_2026_10: BlogPost[] = [
     <tr><td><strong>대회</strong></td><td colspan="2">2027년 10월 10일(일) · 49회</td></tr>
   </tbody>
 </table>
-<p class="caption">참가비를 기한 안에 내지 않으면 등록되지 않고 배번도 받지 못합니다(공식). 보장 경로 신청은 검토에 최대 10영업일이 걸린다고 안내돼 있어, 마감 직전보다는 일찍 내는 편이 안전합니다.</p>
+<p class="caption">참가비를 기한 안에 내지 않으면 등록되지 않고 배번도 받지 못합니다(공식). 보장 경로 신청은 검토에 최대 10영업일이 걸린다고 안내돼 있습니다.</p>
 
 <h2>추첨 — 선착순이 아니다</h2>
 <p>보장 경로에 해당하지 않는 사람은 <strong>비보장 추첨(non-guaranteed entry drawing)</strong>으로 지원합니다. 공식 안내의 핵심은 세 가지입니다.</p>
@@ -2136,17 +2319,17 @@ export const posts_2026_10: BlogPost[] = [
   <li><strong>나이·수령</strong> — 대회일 기준 만 16세 이상이어야 하고, 배번과 계측 칩은 엑스포에서 본인이 사진이 있는 신분증을 보여 주고 직접 받아야 합니다.</li>
 </ul>
 
-<h2>한국 러너가 정할 순서</h2>
+<h2>마감 뒤 한국 러너의 다음 순서</h2>
 <ol>
-  <li><strong>내 기록이 기준표 안인가?</strong> 안이면 기록 보장으로 <strong>일찍</strong> 신청합니다. 검토에 최대 10영업일이 걸리고, 승인되지 않았을 때 추첨으로 다시 지원하려면 그때가 아직 지원 기간 안이어야 합니다.</li>
-  <li><strong>기준 밖이면 추첨에 지원합니다.</strong> 마감 전 언제 내도 같으니 서두를 필요는 없지만, 한국시간 10월 30일 새벽 4시는 넘기지 마세요.</li>
-  <li><strong>추첨에서 떨어지면</strong> 자선(최소 모금 $2,500, 참가비와 별도)이나 투어 패키지를 봅니다. 자선은 선착순이라 단체 정원이 먼저 찰 수 있습니다.</li>
+  <li><strong>기록 보장을 신청했다면</strong> 승인 메일을 확인합니다. 승인자의 참가비 납부 기한은 미국 중부 11월 10일입니다.</li>
+  <li><strong>추첨에 지원했다면</strong> 12월 8일 이메일을 기다립니다. 당첨되면 한국시간 12월 16일 14시 59분까지 참가비를 냅니다.</li>
+  <li><strong>떨어졌거나 지원하지 못했다면</strong> 자선(최소 모금 $2,500, 참가비와 별도)이나 투어 패키지를 봅니다. 자선은 선착순이라 단체 정원이 먼저 찰 수 있습니다.</li>
 </ol>
 <p>항공편·시차·ESTA 같은 원정 준비와 코스 특징은 <a href="/blog/chicago-marathon-2026-registration-guide">시카고마라톤 2026 가이드</a>에 정리했습니다. 다른 메이저 2027 일정은 <a href="/blog/london-marathon-2027-registration-guide">런던 2027</a>·<a href="/blog/tokyo-marathon-2027-registration-guide">도쿄 2027</a>·<a href="/blog/sydney-marathon-2027-registration-guide">시드니 2027</a> 가이드에서 볼 수 있습니다.</p>
 
 <div class="callout warning"><span class="callout-icon">⚠️</span><div class="callout-body"><p class="callout-title">아직 확인되지 않은 것</p><p>① 지원자 수와 당첨률은 공식 지원 페이지에 없습니다. ② 한국에 공식 투어 여행사가 있는지는 확인하지 못했습니다 — 투어 페이지가 10월 9일 기준 아직 2026 내용이고, 2027 안내는 12월 8일 공개 예정입니다. ③ 처리 수수료 금액은 공식 페이지에 적혀 있지 않습니다. ④ 국내 대회 기록의 공인 코스 인정 여부는 대회별로 확인해야 합니다.</p></div></div>
 
-<p><small>출처: Bank of America Chicago Marathon 공식 지원 페이지(chicagomarathon.com/apply) — 지원 기간·추첨 방식·보장 경로·기록 기준표·참가비·취소 규정·FAQ, 공식 투어 프로그램 페이지(chicagomarathon.com/apply/tour-program). 2026년 10월 9일 원문 확인. 한국 시간은 미국 중부 시간 기준으로 계산한 값입니다. 이 소식의 최초 트리거는 인스타그램 @runner_iffu 게시물이었고, 사실 관계는 공식 페이지를 근거로 했습니다.</small></p>
+<p><small>출처: Bank of America Chicago Marathon 공식 지원 페이지(chicagomarathon.com/apply) — 지원 기간·추첨 방식·보장 경로·기록 기준표·참가비·취소 규정·FAQ, 공식 투어 프로그램 페이지(chicagomarathon.com/apply/tour-program). 2026년 10월 9일 원문 확인. 지원 마감 문구는 2026년 10월 30일 같은 페이지에서 다시 확인했습니다. 한국 시간은 미국 중부 시간 기준으로 계산한 값입니다. 이 소식의 최초 트리거는 인스타그램 @runner_iffu 게시물이었고, 사실 관계는 공식 페이지를 근거로 했습니다.</small></p>
 `,
   },
   {
