@@ -2,6 +2,172 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_10: BlogPost[] = [
   {
+    id: 'saucony-endorphin-speed-6-first-review',
+    slug: 'saucony-endorphin-speed-6-first-review',
+    title: '사코니 엔돌핀 스피드 6 첫 리뷰 | 232g·38/30mm, 5세대보다 단단하고 빠르다 — 한국 출시는 아직',
+    description: '엔돌핀 스피드 6의 첫 독립 리뷰(Doctors of Running, 9월 25일)를 정리했습니다. 폼은 PWRRUN PBX, 스택 38/30mm·드롭 8mm·232g(남성 US 9), 미국 $179.95. 물렁했던 5세대보다 단단하고 반응이 빠르다는 평가와 아웃솔 내구성 우려, 한국 정가·출시일 미발표 상태를 근거와 함께 적었습니다.',
+    thumbnail: '/images/blog/saucony-endorphin-speed-6-first-review.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-30',
+    category: 'news' as const,
+    readingTime: 5,
+    tags: ['엔돌핀 스피드 6', '사코니 신상', 'PWRRUN PBX', '나일론 플레이트', '템포 러닝화', '엔돌핀 스피드 5', '러닝화 신상'],
+    faqs: [
+      { question: '엔돌핀 스피드 6은 한국에서 살 수 있나요?', answer: '확인되지 않습니다. 2026년 10월 20일과 26일 사코니코리아 공식몰 엔돌핀 목록과 검색에는 스피드 5만 있었고 6은 없었습니다. 한국 정가와 출시일은 공식 발표가 없습니다. 참고로 5세대 한국 정가는 219,000원입니다.' },
+      { question: '5세대와 무엇이 달라졌나요?', answer: '글로벌 출시는 10월 15일이고 폼이 PWRRUN PB에서 PWRRUN PBX(비즈 PEBA)로 바뀌었습니다. Doctors of Running은 미드솔 스택이 2mm 높아졌고 폼이 더 단단해졌으며 플레이트와 SpeedRoll이 재설계됐다고 적었습니다. 리뷰어는 5세대의 물렁한 느낌에서 더 단단하고 빠른 쪽으로 바뀐 큰 변화라고 평가했습니다.' },
+      { question: '5K 이하 전력 질주용인가요?', answer: '아닙니다. 리뷰어 Matt Klein은 업템포와 빠른 러닝에 가장 잘 맞지만 5K 이하의 전력 질주에는 다소 뻣뻣하다고 했습니다. 공동 리뷰어 Bach Pham은 장거리 훈련과 마라톤까지의 레이스용으로 꼽았습니다.' },
+      { question: '지금 5세대를 사도 되나요?', answer: '한국에서 지금 살 수 있는 것은 5세대이고, 6세대는 한국 판매와 랩 실측이 모두 없어 비교가 불가능합니다. 5세대는 RunRepeat 랩 검증이 끝나 있습니다. 6세대는 한국 정가와 랩 수치가 공개된 뒤 비교하는 쪽이 순서에 맞습니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>첫 독립 리뷰가 나왔습니다.</strong> Doctors of Running이 9월 25일 게시한 평가에서 6세대는 5세대의 "물렁한" 느낌보다 단단하고 반응이 빠른 신발로 정리됩니다. 폼은 PWRRUN PBX, 스펙표 기준 232g(남성 US 9)·스택 38/30mm·드롭 8mm입니다</li>
+    <li><strong>우려는 아웃솔입니다.</strong> 리뷰어 한 명은 35마일에서 마모가 보이고 뒤꿈치 고무가 떨어질까 걱정된다고 했고, 다른 한 명은 20마일에 큰 마모가 없었지만 뒤꿈치가 얇다고 적었습니다</li>
+    <li><strong>한국 출시는 아직 확인되지 않습니다.</strong> 미국 가격은 $179.95이고, 사코니코리아 공식몰에서는 10월 26일까지 6세대가 보이지 않았습니다</li>
+  </ul>
+</div>
+
+<div class="callout info">
+  <span class="callout-icon">🧪</span>
+  <div class="callout-body">
+    <p class="callout-title">아직 "측정값"은 아닙니다</p>
+    <p>이 리뷰의 232g·38/30mm가 직접 측정한 수치인지 브랜드 표기인지는 리뷰에 밝혀져 있지 않습니다. RunRepeat 랩 페이지와 Believe in the Run 리뷰는 10월 30일 기준 열리지 않았습니다. 이 글의 수치는 리뷰 1건의 스펙표라는 점을 먼저 전제합니다.</p>
+  </div>
+</div>
+
+<h2>스펙표에 적힌 것</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>엔돌핀 스피드 6</th><th>출처</th></tr></thead>
+  <tbody>
+    <tr><td>무게</td><td>232g(남성 US 9) · 203g(여성 US 8)</td><td>Doctors of Running 스펙표</td></tr>
+    <tr><td>스택·드롭</td><td>힐 38mm / 포어풋 30mm · 드롭 8mm</td><td>같은 스펙표</td></tr>
+    <tr><td>폼</td><td>PWRRUN PBX (비즈 PEBA)</td><td>같은 리뷰</td></tr>
+    <tr><td>플레이트</td><td>재설계된 나일론 플레이트 + 새 SpeedRoll</td><td>같은 리뷰</td></tr>
+    <tr><td>가격·출시</td><td>미국 $179.95 · 2026-10-15</td><td>Running Warehouse 표기(같은 리뷰)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>사이트 DB는 이 모델을 한동안 독립 검증이 없는 잠정치로 다뤘고, 무게는 소매점에 따라 195g·222g으로 엇갈렸습니다. 이번 스펙표의 232g은 그 두 값보다 무겁습니다. 5세대는 브랜드 표기 237g, 랩 실측 241g이었으므로 6세대는 5세대보다 5~9g 가벼운 정도로 읽을 수 있습니다. 다만 6세대 수치가 측정값인지가 불명이라 이 비교는 잠정입니다.</p>
+
+<h2>리뷰어가 말한 것 — 단단하고 빠르다</h2>
+<p>두 리뷰어의 평가는 같은 방향입니다. 폼은 5세대보다 "약간 단단하지만 반응이 아주 좋다"고 했고, Matt Klein은 속도를 올릴수록 반발이 더 느껴진다며 5세대의 물렁한 느낌에서 단단하고 빠른 6세대로의 변화를 "엄청난 업데이트"라고 불렀습니다. Bach Pham은 처음엔 단단하지만 몇 분 달리면 풀리고, 무디거나 처지지 않는다고 적었습니다.</p>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>용도</th><th>Matt Klein</th><th>Bach Pham</th></tr></thead>
+  <tbody>
+    <tr><td>가장 잘 맞는 페이스</td><td>업템포와 빠른 러닝, 5K 이하 전력질주는 다소 뻣뻣</td><td>장거리 훈련, 마라톤까지의 레이스, 약간 빠른 훈련</td></tr>
+    <tr><td>안정성</td><td>중족부 유도가 있는 안정적인 중립</td><td>SpeedRoll이 몸을 중심에 놓고 앞으로 유도</td></tr>
+    <tr><td>핏</td><td>토박스 테이퍼와 토 가드로 처음엔 짧게 느껴졌다가 약 10마일 뒤 풀림</td><td>표준 사이즈에서 여유 있는 트레이너 핏</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>어퍼는 앞발이 비칠 만큼 가벼운 메시라 통기성이 좋지만, 안쪽이 약간 거칠어 맨발 착용은 권하지 않았습니다. 이전 모델과의 비교로 Matt는 카본 플레이트의 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>보다 이 신발을 고르겠다고 했고, Bach는 6세대가 스피드 3에 더 가깝다고 했습니다.</p>
+
+<h2>우려 — 아웃솔과 플레이트 서술의 충돌</h2>
+<p>내구성은 체크리스트에서 "보통"입니다. Matt는 35마일 시점에 아웃솔에 마모가 시작됐고 뒤꿈치 고무가 떨어질까 걱정된다고 했고, Bach는 20마일에는 큰 마모가 없었지만 이번 판은 뒤꿈치가 얇다고 적었습니다. 두 사람 모두 짧은 거리의 인상이라 수명으로 읽을 수는 없습니다.</p>
+<p>플레이트도 정리가 안 됩니다. 브랜드와 소매점 설명은 "바깥쪽 날개를 없앴다"고 하지만 Matt는 리뷰에서 플레이트에 안쪽과 바깥쪽 날개가 여전히 있어 좌우 강성을 더한다고 적었습니다. 어느 쪽이 맞는지는 분해·실측 자료가 나와야 가려지고, 이 사이트 DB는 이 충돌을 그대로 기록했습니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">한국 구매는 아직 기다려야 합니다</p>
+    <p>사코니코리아 공식몰 엔돌핀 목록과 검색에서 6세대는 10월 20일과 26일 모두 보이지 않았고(대조군으로 스피드 5와 엘리트 3은 노출), 한국 정가·출시일 공식 발표도 찾지 못했습니다. 지금 한국에서 살 수 있는 쪽은 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(219,000원)입니다. 6세대 DB 페이지는 <a href="/shoes/saucony-endorphin-speed-6">여기</a>입니다.</p>
+  </div>
+</div>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <details><summary>엔돌핀 스피드 6은 한국에서 살 수 있나요?</summary><p>확인되지 않습니다. 10월 20일과 26일 사코니코리아 공식몰에서 6세대는 보이지 않았고 한국 정가·출시일 공식 발표도 없습니다. 5세대 한국 정가는 219,000원입니다.</p></details>
+  <details><summary>5세대와 무엇이 달라졌나요?</summary><p>폼이 PWRRUN PB에서 PBX로 바뀌었고 미드솔 스택이 2mm 높아졌으며, 리뷰어는 물렁한 5세대에서 더 단단하고 빠른 쪽으로 바뀐 큰 변화라고 평가했습니다.</p></details>
+  <details><summary>5K 이하 전력 질주용인가요?</summary><p>아닙니다. Matt Klein은 업템포와 빠른 러닝에 가장 잘 맞고 5K 이하 전력 질주에는 다소 뻣뻣하다고 했습니다.</p></details>
+  <details><summary>지금 5세대를 사도 되나요?</summary><p>한국에서 살 수 있는 것은 5세대뿐이고 랩 검증도 끝나 있습니다. 6세대는 한국 판매와 랩 실측이 모두 없어 지금은 비교가 불가능합니다.</p></details>
+</div>
+
+<p><small>출처: Doctors of Running "Saucony Endorphin Speed 6 Review (2026)"(Matt Klein·Bach Pham, 2026-09-25, 2026-10-30 확인), 사코니코리아 공식몰 엔돌핀 목록(2026-10-20·26 확인). RunRepeat·Believe in the Run 해당 페이지는 2026-10-30 기준 404.</small></p>
+`,
+  },
+  {
+    id: 'puma-foreverrun-nitro-3-review-korea-price',
+    slug: 'puma-foreverrun-nitro-3-review-korea-price',
+    title: '푸마 포에버런 나이트로 3 한국 가격 199,000원 | 와이드 따로 있는 안정 데일리 — 첫 리뷰 정리',
+    description: '푸마 포에버런 나이트로 3는 한국 공식몰에서 199,000원에 판매 중이고 남녀 와이드가 별도 상품으로 올라 있습니다(2026-10-30 확인). Doctors of Running 첫 리뷰(10월 26일)의 스택 40/32mm·드롭 8mm·약 238~280g 기준 무게, 가이드 구조와 "전작보다 무겁다"는 단점을 정리했습니다.',
+    thumbnail: '/images/blog/puma-foreverrun-nitro-3-review-korea-price.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-10-30',
+    category: 'news' as const,
+    readingTime: 4,
+    tags: ['포에버런 나이트로 3', '푸마 포에버런', '푸마 신상', '안정화 러닝화', '와이드 러닝화', '가벼운 안정화', '푸마 코리아'],
+    faqs: [
+      { question: '포에버런 나이트로 3 한국 가격은 얼마인가요?', answer: '푸마 코리아 공식몰에서 남녀 모두 199,000원이고 와이드 상품도 같은 199,000원입니다(2026-10-30 검색 결과 확인). 일부 색상은 온라인 단독으로 표기돼 있습니다. 출시일은 공식몰에서 확인하지 못했습니다.' },
+      { question: '와이드 버전이 있나요?', answer: '있습니다. 푸마 코리아 공식몰 검색 결과에 "포에버런 나이트로 3 와이드"가 남성·여성 각각 별도 상품으로 올라 있습니다. 와이드의 실제 폭 수치는 확인하지 못했습니다.' },
+      { question: '어떤 러너에게 맞나요?', answer: 'Doctors of Running은 가이던스형 마일드 안정 데일리 트레이닝화로 분류했습니다. 신발 전체에 중심을 잡아 주는 유도가 있지만 강하지 않고, 앞발이 넓고 볼륨이 낮은 어퍼라 보통~약간 넓은 발에 맞는다고 했습니다. 단점은 안쪽 엄지발가락 쪽 약한 쓸림과 이전 모델보다 무거워진 점입니다.' },
+      { question: '발볼 넓은 러너는 와이드를 사야 하나요?', answer: '리뷰어는 표준 폭이 보통~약간 넓은 발에 맞는다고 했습니다. 발볼이 확실히 넓다면 와이드가 별도로 있으니 매장에서 두 폭을 비교하는 편이 안전합니다. 한국 러너의 발볼에 대한 리뷰어 평가는 없습니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>한국 공식몰에서 199,000원에 판매 중입니다.</strong> 푸마 코리아 검색에서 남성·여성 표준 폭과 와이드가 따로 올라 있고(10월 30일 확인), 출시일은 확인되지 않습니다</li>
+    <li><strong>"가이던스형 마일드 안정 데일리"입니다.</strong> Doctors of Running(10월 26일)은 스택 40/32mm·드롭 8mm, 2겹 나이트로 폼과 넓은 바닥·힐 클립으로 중심을 잡아 주되 강하게 밀지 않는 구조로 봤습니다</li>
+    <li><strong>단점은 무게와 쓸림입니다.</strong> 이전 모델보다 무거워졌고 안쪽 엄지발가락 쪽에서 약한 쓸림이 있었으며, 폼의 반발은 푸마 다른 트레이너만큼 통통하지 않다고 적었습니다</li>
+  </ul>
+</div>
+
+<h2>한국 판매 — 확인한 것과 못 한 것</h2>
+<p>2026년 10월 30일 푸마 코리아 공식몰에서 "포에버런"을 검색하면 포에버런 나이트로 3가 남성·여성 표준 폭과 와이드로 나뉘어 나옵니다. 가격은 전부 199,000원이고, 남성 일부 색상은 온라인 단독으로 표기돼 있습니다. 같은 검색에서 포에버런 나이트로 2 와이드는 139,300원(30% 할인)으로 올라 있어 이전 세대가 정리되는 중으로 보입니다(추정).</p>
+<p>출시일과 와이드의 폭 수치는 공식몰 검색 결과에서 확인하지 못했습니다.</p>
+
+<h2>리뷰에서 확인되는 것</h2>
+
+<div class="table-wrap">
+<table>
+  <thead><tr><th>항목</th><th>포에버런 나이트로 3 (Doctors of Running)</th></tr></thead>
+  <tbody>
+    <tr><td>분류</td><td>가이던스형 마일드 안정 데일리 트레이닝화</td></tr>
+    <tr><td>무게</td><td>남성 US 9 9.9oz(약 281g, 비교란에는 9.7oz) · 여성 US 8 8.4oz(238g)</td></tr>
+    <tr><td>스택·드롭</td><td>힐 40mm / 포어풋 32mm · 드롭 8mm</td></tr>
+    <tr><td>미드솔</td><td>전 구간 나이트로 폼, 2겹(안쪽은 부드럽고 바깥쪽은 단단) · 넓은 바닥과 힐 클립으로 구성된 런 가이드 시스템</td></tr>
+    <tr><td>핏</td><td>정사이즈, 앞발은 넓고 볼륨이 낮음, 힐은 보통 폭. 보통~약간 넓은 발에 맞음</td></tr>
+    <tr><td>미국 가격</td><td>$149.95 (Running Warehouse)</td></tr>
+  </tbody>
+</table>
+</div>
+
+<p>안정성은 신발 전체에 걸친 "중심은 잡되 강하지 않은" 유도입니다. 힐은 중간 정도의 안정 요구에도 맞을 수 있지만 미드풋과 포어풋은 약한 안정 요구에 맞는다고 했습니다. 등급은 핏 A-, 퍼포먼스 B+, 안정성 A-, 가치 A-, 본인 적합도 A-, 디자인 A-입니다.</p>
+
+<div class="callout warning">
+  <span class="callout-icon">⚠️</span>
+  <div class="callout-body">
+    <p class="callout-title">리뷰 안에서도 엇갈리는 것</p>
+    <ul>
+      <li>리뷰는 장점으로 "통통한 미드솔"을 꼽지만 본문에서는 폼이 다른 푸마 트레이너의 나이트로 폼만큼 통통하지는 않다고 적습니다</li>
+      <li>무게는 9.9oz와 9.7oz가 한 페이지에 함께 있고, 자체 측정인지 표기인지는 밝혀져 있지 않습니다</li>
+      <li>RunRepeat 랩 실측은 확인하지 못했습니다</li>
+    </ul>
+  </div>
+</div>
+
+<h2>누구에게 어울리나</h2>
+<p>중심을 잡아 주는 유도를 원하지만 단단한 안정화는 부담스러운 러너가 대상입니다. 이 사이트에 등록된 같은 푸마의 <a href="/shoes/puma-velocity-nitro-5">벨로시티 나이트로 5</a>는 중립 데일리이고, 안정 데일리 쪽은 <a href="/shoes/brooks-glycerin-gts-23">브룩스 글리세린 GTS 23</a>이 있습니다(306g으로 더 무겁습니다). 포에버런 나이트로 3는 아직 사이트 DB에 없어 랩 수치로 나란히 비교할 수는 없습니다.</p>
+
+<div class="faq">
+  <h2>자주 묻는 질문</h2>
+  <details><summary>포에버런 나이트로 3 한국 가격은 얼마인가요?</summary><p>푸마 코리아 공식몰에서 남녀 모두 199,000원, 와이드도 199,000원입니다(2026-10-30 검색 결과). 출시일은 확인하지 못했습니다.</p></details>
+  <details><summary>와이드 버전이 있나요?</summary><p>있습니다. 공식몰 검색에 남성·여성 와이드가 별도 상품으로 올라 있습니다. 폭 수치는 확인하지 못했습니다.</p></details>
+  <details><summary>어떤 러너에게 맞나요?</summary><p>가이던스형 마일드 안정 데일리로, 보통~약간 넓은 발에 맞는다고 리뷰어가 평가했습니다. 단점은 이전 모델보다 무겁고 안쪽 엄지발가락 쪽이 약간 쓸린다는 점입니다.</p></details>
+  <details><summary>발볼 넓은 러너는 와이드를 사야 하나요?</summary><p>표준 폭은 보통~약간 넓은 발에 맞는다고 했습니다. 확실히 넓다면 매장에서 두 폭을 비교하세요.</p></details>
+</div>
+
+<p><small>출처: Doctors of Running "Puma ForeverRun Nitro 3 Review (2026)"(Matt Klein, 2026-10-26, 2026-10-30 확인), 푸마 코리아 공식몰 검색 "foreverrun"(kr.puma.com, 2026-10-30 확인).</small></p>
+`,
+  },
+  {
     id: 'hwangyoungjo-road-race',
     slug: 'hwangyoungjo-road-race',
     title: '2026 황영조 로드레이스 접수·참가비·셔틀 규정 | 12월 6일 경인아라뱃길 하프·10K·5K',
