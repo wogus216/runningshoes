@@ -83,7 +83,9 @@ function Profile({ data, progress, onSeek }: {
   );
 }
 
-export function CoursePlayer() {
+export function CoursePlayer({ seekRequest = null }: {
+  seekRequest?: { progress: number; id: number } | null;
+}) {
   const [data, setData] = useState<CourseData | null>(null),
     [error, setError] = useState(false);
   const [contextLost, setContextLost] = useState(false);
@@ -95,6 +97,11 @@ export function CoursePlayer() {
   useEffect(() => {
     playhead.current = time;
   }, [time]);
+  useEffect(() => {
+    if (!seekRequest || !data) return;
+    setTime(0.085 + clamp(seekRequest.progress) * 0.82);
+    setPlaying(false);
+  }, [seekRequest, data]);
   useEffect(() => {
     reduced.current = window.matchMedia(
       "(prefers-reduced-motion: reduce)",

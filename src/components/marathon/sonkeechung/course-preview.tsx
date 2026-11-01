@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import Link from "next/link";
+import { RacePreparation } from "./race-preparation";
 import styles from "./course-preview.module.css";
 
 const Player = dynamic(
@@ -17,6 +18,7 @@ const Player = dynamic(
 
 export function SonkeechungPreview() {
   const [started, setStarted] = useState(false);
+  const [seekRequest, setSeekRequest] = useState<{ progress: number; id: number } | null>(null);
   return (
     <article className={styles.experience}>
       <header className={styles.header}>
@@ -29,12 +31,12 @@ export function SonkeechungPreview() {
         <div>
           <p className={styles.eyebrow}>SON KEE CHUNG PEACE MARATHON</p>
           <h1>
-            그날의 길을,
+            11월 15일,
             <br />
-            먼저 달리다.
+            내가 뛸 42.195km.
           </h1>
           <p className={styles.subhead}>
-            임진각에서 시작해, 두 번의 반환을 지나 다시 임진각으로.
+            두 번의 반환과 돌아오는 길. 출발 전에 거리·고도 흐름을 확인하세요.
           </p>
         </div>
         <div className={styles.raceNumber}>
@@ -43,9 +45,14 @@ export function SonkeechungPreview() {
           <p>2026.11.15 SUN · 10:00</p>
         </div>
       </div>
-      <section className={styles.stage} aria-label="손기정 풀코스 3D 미리보기">
+      <ol className={styles.quickNotes} aria-label="출발 전 확인할 세 가지">
+        <li><strong>반환은 두 번</strong><span>도라산역 방면 → 리비삼거리 방면</span></li>
+        <li><strong>돌아오는 길도 확인</strong><span>여우고개·마정교차로를 지나 임진각으로</span></li>
+        <li><strong>내 위치의 고도 보기</strong><span>아래 그래프를 움직여 구간별 참고 고도 확인</span></li>
+      </ol>
+      <section id="course-stage" className={styles.stage} aria-label="손기정 풀코스 3D 미리보기">
         {started ? (
-          <Player />
+          <Player seekRequest={seekRequest} />
         ) : (
           <button className={styles.launch} onClick={() => setStarted(true)}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -63,6 +70,11 @@ export function SonkeechungPreview() {
           </button>
         )}
       </section>
+      <RacePreparation onSeek={(progress) => {
+        setStarted(true);
+        setSeekRequest((previous) => ({ progress, id: (previous?.id ?? 0) + 1 }));
+        document.getElementById("course-stage")?.scrollIntoView({ block: "start" });
+      }} />
       <footer className={styles.sources}>
         <div>
           <span>ABOUT THIS PREVIEW</span>
