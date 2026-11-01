@@ -69,7 +69,8 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
   texture.anisotropy = 8;
   const geometry = useMemo(() => {
     const t = data.terrain;
-    const renderSize = Math.min(t.size, 257);
+    // Keep the web mesh below 65,536 vertices; sample the full DEM for heights.
+    const renderSize = Math.min(t.size, 255);
     const g = new THREE.PlaneGeometry(
       t.x1 - t.x0,
       t.z1 - t.z0,
