@@ -16,6 +16,10 @@ import {
 
 const GROUND = "#ffffff";
 const GOLD = "#f6cd8b";
+// NOAA approximate solar geometry, 2026-11-15 10:00 KST at 37.906N, 126.773E.
+// World axes: +X east, +Y up, +Z south. Weather and foliage are art direction.
+// https://gml.noaa.gov/grad/solcalc/solareqns.PDF
+const MORNING_SUN: [number, number, number] = [53.697, 42.517, 72.862];
 const HEIGHT = (data: CourseData, x: number, z: number) =>
   (terrainHeight(data, x, z) / 100) * data.verticalScale;
 
@@ -72,9 +76,9 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
     g.translate((t.x0 + t.x1) / 2, 0, (t.z0 + t.z1) / 2);
     const p = g.getAttribute("position"),
       colors = new Float32Array(p.count * 3);
-    const low = new THREE.Color("#858064"),
-      high = new THREE.Color("#5b6550"),
-      forest = new THREE.Color("#303d2d");
+    const low = new THREE.Color("#797a64"),
+      high = new THREE.Color("#52634f"),
+      forest = new THREE.Color("#354b37");
     const forestBounds = data.forest.map((poly) => ({
       poly,
       minX: Math.min(...poly.map((p) => p[0])),
@@ -274,13 +278,18 @@ const Forest = memo(function Forest({ data }: { data: CourseData }) {
       args={[undefined, undefined, objects.length]}
       ref={(mesh) => {
         if (mesh) {
-          objects.forEach((m, i) => mesh.setMatrixAt(i, m));
+          const colors = [new THREE.Color("#3c5140"), new THREE.Color("#746343"), new THREE.Color("#5b4d3c")];
+          objects.forEach((m, i) => {
+            mesh.setMatrixAt(i, m);
+            mesh.setColorAt(i, colors[i % 10 < 5 ? 0 : i % 10 < 8 ? 1 : 2]);
+          });
+          if (mesh.instanceColor) mesh.instanceColor.needsUpdate = true;
           mesh.instanceMatrix.needsUpdate = true;
         }
       }}
     >
       <icosahedronGeometry args={[1, 1]} />
-      <meshStandardMaterial color="#3b4631" roughness={1} />
+      <meshStandardMaterial color="#ffffff" roughness={1} />
     </instancedMesh>
   );
 });
@@ -401,11 +410,11 @@ export function CourseScene({
 }) {
   return (
     <>
-      <color attach="background" args={["#c2b8a3"]} />
-      <Sky distance={1000} sunPosition={[-80, 9, -45]} turbidity={7} rayleigh={1.8} mieCoefficient={0.009} mieDirectionalG={0.86} />
-      <fog attach="fog" args={["#c2b8a3", 65, 235]} />
+      <color attach="background" args={["#b6c2c7"]} />
+      <Sky distance={1000} sunPosition={MORNING_SUN} turbidity={3} rayleigh={2.5} mieCoefficient={0.006} mieDirectionalG={0.86} />
+      <fog attach="fog" args={["#b6c2c7", 95, 310]} />
       <hemisphereLight args={["#b7c6cf", "#454333", 0.65]} />
-      <directionalLight castShadow position={[-65, 14, -45]} color="#ffd099" intensity={3.2}
+      <directionalLight castShadow position={MORNING_SUN} color="#fff0dc" intensity={2.8}
         shadow-mapSize={[2048, 2048]} shadow-camera-left={-100} shadow-camera-right={100}
         shadow-camera-top={100} shadow-camera-bottom={-100} shadow-camera-far={260}
         shadow-bias={-0.0002} shadow-normalBias={0.035} />
@@ -419,7 +428,7 @@ export function CourseScene({
       <Route data={data} progress={routeProgress(time)} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.18, 0]}>
         <planeGeometry args={[1200, 1200]} />
-        <meshStandardMaterial color="#77745d" roughness={1} />
+        <meshStandardMaterial color="#71765f" roughness={1} />
       </mesh>
     </>
   );

@@ -8,6 +8,7 @@ import math
 import pathlib
 import random
 import sys
+from datetime import date
 from mathutils import Vector
 from mathutils.geometry import tessellate_polygon
 
@@ -23,6 +24,26 @@ scene.unit_settings.system = 'METRIC'
 scene.unit_settings.scale_length = 100
 scene['Data caveat'] = 'Reference GPX, not official survey. Terrain displayed at 1.8x. Bridge illustrative.'
 scene['Sources'] = json.dumps(data['sources'])
+
+
+# NOAA approximate solar geometry. Scene axes: +X east, +Y north, +Z up.
+# https://gml.noaa.gov/grad/solcalc/solareqns.PDF
+local_hour = 10
+latitude = math.radians(data['origin'][1])
+longitude = data['origin'][0]
+day = date(2026, 11, 15).timetuple().tm_yday
+gamma = 2 * math.pi / 365 * (day - 1 + (local_hour - 12) / 24)
+eqtime = 229.18 * (.000075 + .001868 * math.cos(gamma) - .032077 * math.sin(gamma) - .014615 * math.cos(2 * gamma) - .040849 * math.sin(2 * gamma))
+decl = .006918 - .399912 * math.cos(gamma) + .070257 * math.sin(gamma) - .006758 * math.cos(2 * gamma) + .000907 * math.sin(2 * gamma) - .002697 * math.cos(3 * gamma) + .00148 * math.sin(3 * gamma)
+ha = math.radians((local_hour * 60 + eqtime + 4 * longitude - 60 * 9) / 4 - 180)
+sun_elevation = math.asin(math.sin(latitude) * math.sin(decl) + math.cos(latitude) * math.cos(decl) * math.cos(ha))
+sun_azimuth = (math.atan2(math.sin(ha), math.cos(ha) * math.sin(latitude) - math.tan(decl) * math.cos(latitude)) + math.pi) % (2 * math.pi)
+sun_vector = Vector((math.cos(sun_elevation) * math.sin(sun_azimuth), math.cos(sun_elevation) * math.cos(sun_azimuth), math.sin(sun_elevation)))
+scene['Lighting date local'] = '2026-11-15 10:00 Asia/Seoul'
+scene['Approximate solar elevation degrees'] = math.degrees(sun_elevation)
+scene['Approximate solar azimuth degrees clockwise from north'] = math.degrees(sun_azimuth)
+scene['Season caveat'] = 'Late autumn art direction; foliage and atmospheric clarity are illustrative, not a race-day weather forecast.'
+print('SOLAR_GEOMETRY', math.degrees(sun_elevation), math.degrees(sun_azimuth), flush=True)
 
 
 def collection(name):
@@ -74,12 +95,12 @@ def surface(name, color, roughness=.8, noise=False):
         links.new(bump.outputs['Normal'], p.inputs['Normal'])
     return mat
 
-soil = surface('Earth | muted olive, fine soil', (.19, .225, .12), noise=True)
-field = surface('Fields | November stubble', (.28, .235, .12), noise=True)
+soil = surface('Earth | muted olive, fine soil', (.14, .19, .12), noise=True)
+field = surface('Fields | November stubble', (.24, .205, .13), noise=True)
 forest_ground = surface('Woodland floor', (.055, .105, .065), noise=True)
 leaf_mats = [surface('Canopy %s' % i, c) for i, c in enumerate([
-    (.065, .105, .055), (.11, .14, .06), (.18, .155, .065), (.115, .095, .045)])]
-water_mat = surface('River | soft sky reflections', (.055, .12, .125), .19)
+    (.04, .105, .07), (.065, .12, .065), (.24, .16, .07), (.12, .08, .045)])]
+water_mat = surface('River | soft sky reflections', (.04, .105, .14), .23)
 p = water_mat.node_tree.nodes.get('Principled BSDF')
 p.inputs['Metallic'].default_value = .32
 tex = water_mat.node_tree.nodes.new('ShaderNodeTexNoise')
@@ -200,7 +221,7 @@ for poly in data['forest']:
                 count+=1
             z+=.42
         x+=.42
-canopy=mesh('Autumn canopy | %s crowns'%count,vs,fs,leaf_mats[0],forest_collection)
+canopy=mesh('Late autumn canopy | %s crowns'%count,vs,fs,leaf_mats[0],forest_collection)
 for mat in leaf_mats[1:]: canopy.data.materials.append(mat)
 for p,c in zip(canopy.data.polygons,colors):
     p.material_index=c
@@ -249,27 +270,30 @@ continuation=move(bpy.context.object,terrain_collection)
 continuation.name='Distant ground continuation — visual only'
 continuation.data.materials.append(soil)
 
-world=bpy.data.worlds.new('Dawn | cool sky')
+world=bpy.data.worlds.new('November 15 | cold morning sky')
 scene.world=world;world.use_nodes=True
 sky = world.node_tree.nodes.new('ShaderNodeTexSky')
 sky.sky_type = 'MULTIPLE_SCATTERING'
-sky.sun_elevation = math.radians(5)
-sky.sun_rotation = .412
+sky.sun_elevation = sun_elevation
+sky.sun_rotation = sun_azimuth
 sky.altitude = 100
-sky.air_density = 1.1
+sky.air_density = 1.0
+sky.aerosol_density = .45
+sky.ozone_density = 1.15
+sky.sun_disc = False
 if hasattr(sky, 'dust_density'):
     sky.dust_density = 2.5
 world.node_tree.links.new(sky.outputs['Color'],world.node_tree.nodes.get('Background').inputs[0])
-world.node_tree.nodes.get('Background').inputs[1].default_value=.025
-sun_data=bpy.data.lights.new('Low November sun','SUN');sun_data.energy=2.4
-sun_data.color=(1,.85,.65);sun_data.angle=math.radians(3)
+world.node_tree.nodes.get('Background').inputs[1].default_value=.035
+sun_data=bpy.data.lights.new('Low November sun','SUN');sun_data.energy=2.7
+sun_data.color=(1,.94,.83);sun_data.angle=math.radians(.8)
 sun=bpy.data.objects.new('Low November sun',sun_data);light_collection.objects.link(sun)
-sun.rotation_euler=Vector((-.8,-.35,-.14)).to_track_quat('-Z','Y').to_euler()
+sun.rotation_euler=(-sun_vector).to_track_quat('-Z','Y').to_euler()
 # A shallow volume gives distant slopes softer contrast while retaining foreground detail.
 fog=bpy.data.materials.new('River valley haze');fog.use_nodes=True
 nodes=fog.node_tree.nodes;nodes.clear()
 out=nodes.new('ShaderNodeOutputMaterial');volume=nodes.new('ShaderNodeVolumePrincipled')
-volume.inputs['Density'].default_value=.0018
+volume.inputs['Density'].default_value=.0007
 volume.inputs['Color'].default_value=(.63,.70,.73,1)
 volume.inputs['Anisotropy'].default_value=.25
 fog.node_tree.links.new(volume.outputs['Volume'],out.inputs['Volume'])
@@ -277,8 +301,8 @@ bpy.ops.mesh.primitive_cube_add(size=1,location=(0,0,6))
 haze=move(bpy.context.object,light_collection);haze.name='Atmospheric perspective';haze.dimensions=(190,170,14);haze.data.materials.append(fog)
 haze.display_type='WIRE'
 
-camera_data=bpy.data.cameras.new('Dawn crossing | 48mm')
-camera=bpy.data.objects.new('Dawn crossing | 48mm',camera_data);scene.collection.objects.link(camera)
+camera_data=bpy.data.cameras.new('November morning crossing | 40mm')
+camera=bpy.data.objects.new('November morning crossing | 40mm',camera_data);scene.collection.objects.link(camera)
 camera.location=(-49,-37,12)
 target=Vector((-21,-1,2.5))
 camera.rotation_euler=(target-Vector(camera.location)).to_track_quat('-Z','Y').to_euler()
@@ -288,10 +312,10 @@ scene.render.engine='CYCLES';scene.cycles.samples=40
 scene.cycles.use_denoising=True
 scene.render.resolution_x=1440;scene.render.resolution_y=810;scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG'
-scene.render.filepath=str(output/'dawn-crossing.png')
+scene.render.filepath=str(output/'november-15-morning.png')
 scene.view_settings.view_transform='AgX'
 scene.view_settings.look='AgX - Medium High Contrast'
-scene.view_settings.exposure=0
+scene.view_settings.exposure=-.3
 # No animation or timeline export; open directly in the camera view.
 for screen in bpy.data.screens:
     for area in screen.areas:
@@ -299,10 +323,10 @@ for screen in bpy.data.screens:
             area.spaces.active.region_3d.view_perspective='CAMERA'
             area.spaces.active.shading.type='MATERIAL'
             area.spaces.active.clip_end=1000
-notes=bpy.data.texts.new('READ ME — sources and elevation')
-notes.write('Editable landscape lighting study. No animation render.\\nReference GPX is not an official survey.\\nTerrain exaggerated 1.8x; numeric marker elevations remain unscaled GPX values.\\nBridge architecture is illustrative.\\n'+json.dumps(data['sources'],indent=2))
-bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-dawn.blend'))
-print('SCENE_SAVED',output/'sonkeechung-dawn.blend',flush=True)
+notes=bpy.data.texts.new('READ ME — November 15, sources and elevation')
+notes.write('Late autumn morning study — November 15, 2026 at 10:00 KST. NOAA approximate solar geometry; foliage and haze are art direction. No animation render.\\nReference GPX is not an official survey.\\nTerrain exaggerated 1.8x; numeric marker elevations remain unscaled GPX values.\\nBridge architecture is illustrative.\\n'+json.dumps(data['sources'],indent=2))
+bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-november-15.blend'))
+print('SCENE_SAVED',output/'sonkeechung-november-15.blend',flush=True)
 bpy.ops.render.render(write_still=True)
 print('STILL_SAVED',scene.render.filepath,flush=True)
 
@@ -317,5 +341,5 @@ for workspace in bpy.data.workspaces:
                 area = max(areas, key=lambda area: area.width * area.height)
                 area.type = 'IMAGE_EDITOR'
                 area.spaces.active.image = preview
-        workspace.name = 'Dawn preview'
-bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-dawn.blend'))
+        workspace.name = 'November 15 preview'
+bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-november-15.blend'))
