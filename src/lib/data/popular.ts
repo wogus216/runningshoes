@@ -21,7 +21,7 @@ export interface PopularData {
 }
 
 export const popular: PopularData = {
-  generatedAt: '2026-10-15',
+  generatedAt: '2026-11-01',
   windowDays: 28,
   shoesByCategory: {
       "입문화": [
@@ -31,7 +31,7 @@ export const popular: PopularData = {
           "adidas-adizero-evo-sl"
       ],
       "쿠션화": [
-          "new-balance-1080-v15"
+          "nike-vomero-18"
       ],
       "레이싱": [
           "new-balance-sc-rebel"
@@ -45,14 +45,14 @@ export const popular: PopularData = {
   },
   trendingShoes: [
       "puma-velocity-nitro-5",
-      "on-cloudmonster-2",
-      "on-cloudmonster-3-hyper"
+      "brooks-hyperion-max-3",
+      "asics-gel-slowcush"
   ],
   posts: [
       "new-balance-running-shoes-lineup-tier-guide-2026",
-      "running-shoes-recommend-by-price-2026",
       "asics-gel-kayano-33-review",
       "li-ning-red-hare-9-lineup-2026",
-      "stability-shoes-self-diagnosis-fit-guide-2026"
+      "asics-running-shoes-lineup-tier-guide-2026",
+      "running-shoes-tier-chart-2026"
   ],
 };
