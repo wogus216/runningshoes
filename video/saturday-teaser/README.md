@@ -37,6 +37,19 @@ npm run build
 
 참고: [Remotion 3D 연동](https://www.remotion.dev/docs/three), [CesiumJS npm 설정](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/).
 
+## 손기정평화마라톤 코스 필름
+
+- 웹: `/marathon/sonkeechung-peace-marathon-2026/preview`.
+- Studio: `npm run dev` 실행 후 `Sonkeechung-Reel` 선택. 검수용 여백 가이드는 `Sonkeechung-Reel-SafeZones`에서 확인한다.
+- 출력: `npm run render:sonkeechung` → `output/sonkeechung-2026-reel.mp4` (1080×1920, 30fps, 42초, H.264/AAC).
+- 표지: `npm run still:sonkeechung`. 첫 10초만 확인할 때는 `Sonkeechung-First10Seconds` 컴포지션을 사용한다.
+- 웹·영상은 `src/components/marathon/sonkeechung/course-scene.tsx`를 공유한다. 영상 렌더 시 R3F 컨텍스트가 중복되지 않도록 번들 설정에서 React·Three.js·R3F를 영상 프로젝트의 설치 경로로 고정한다.
+- 데이터: RUNRUUN의 개인 제작 GPX, OSM 하천·산림·도로, Mapzen/USGS 지형 타일을 사용한다. 공식 측량 경로가 아니며, 거리·표고·반환점은 참고용이다. 누적 상승고도를 확정 수치로 제공하지 않는다.
+- 지형은 3×3 중앙값 필터로 이상치를 보정하고 음수 격자를 0으로 처리하며, 시각화 높이는 1.8배다. 교량은 Blender로 만든 단순화 모델로, 실제 구조·높이를 보증하지 않는다.
+- 재생성: 저장소 루트에서 `blender --background --factory-startup --python scripts/course-map/bridge-model.py -- "$PWD"`, 이어서 `node scripts/course-map/sonkeechung.mjs`. 후자는 GPX·지형·OSM을 로컬 `.omc/research/sonkeechung-course`에 캐시하고 웹·영상용 데이터 사본을 함께 갱신한다.
+- 음악은 `scripts/course-score.py`로 생성한 자체 앰비언트 음원이다. `python3 scripts/course-score.py` 후 `ffmpeg -y -i /tmp/sonkeechung-course-score.wav -c:a aac -b:a 96k public/sonkeechung/course-score.m4a`로 재생성한다.
+- MP4는 Git에 넣지 않는다. 인스타그램 게시 권한은 제작·렌더 요청과 별개다.
+
 ## 자산 교체
 
 - `public/images/laces.webp`

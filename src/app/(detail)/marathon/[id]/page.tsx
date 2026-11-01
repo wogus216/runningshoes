@@ -532,6 +532,14 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
           </dl>
         </div>
 
+        {event.id === 'sonkeechung-peace-marathon-2026' && (
+          <Link href="/marathon/sonkeechung-peace-marathon-2026/preview" className="block rounded-[4px] border border-[#b9b7a1] bg-[#1b2a22] px-6 py-6 text-[#eee8da] transition hover:bg-[#26392d]">
+            <span className="text-[10px] tracking-[.18em] text-[#e2c18e]">COURSE FILM / 42.195 KM</span>
+            <h2 className="mt-2 text-xl font-semibold">손기정 풀코스, 3D로 먼저 달려보기 ↗</h2>
+            <p className="mt-2 text-xs leading-relaxed text-[#b9c2b2]">임진각에서 두 반환점을 지나 다시 임진각으로 · 공개 GPX 기반 참고 경로</p>
+          </Link>
+        )}
+
         {/* 코스 정보 */}
         {event.courseInfo && (
           <div className="section-card border border-[var(--accent-line)] bg-white/84 p-6">
