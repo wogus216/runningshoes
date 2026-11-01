@@ -19,6 +19,24 @@ npm run build
 npm run render:reel
 ```
 
+## 3D 코스 제작 도구
+
+- Blender는 Mac 공용 앱으로 설치한다. 지형·건물 모델과 재질을 제작하고, 완성 장면을 영상으로 렌더링할 때 사용한다.
+- 이 영상 프로젝트에는 Three.js, React Three Fiber, `@remotion/three`를 설치했다. Remotion 패키지는 기존 버전 `4.0.509`로 맞춘다.
+- CesiumJS도 이 프로젝트의 의존성으로 설치했다. 실제 지형·도시 데이터가 필요한 장면에서 사용하며, Cesium ion 데이터 연결에는 본인 계정의 토큰이 필요하다.
+- Cesium Viewer를 추가할 때는 공식 npm 설정에 따라 `CESIUM_BASE_URL`과 Workers·Assets·Widgets 등 정적 자산 제공 경로도 구성해야 한다. 현재는 패키지 설치까지이며, 지형 데이터 연결과 코스 장면은 아직 만들지 않았다.
+- Unreal Engine은 현재 제작 범위에서 제외한다.
+
+패키지 설치·확인:
+
+```bash
+npm ci
+npm ls remotion @remotion/three @react-three/fiber three cesium --depth=0
+npm run build
+```
+
+참고: [Remotion 3D 연동](https://www.remotion.dev/docs/three), [CesiumJS npm 설정](https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/).
+
 ## 자산 교체
 
 - `public/images/laces.webp`
