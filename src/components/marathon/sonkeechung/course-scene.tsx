@@ -69,11 +69,12 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
   texture.anisotropy = 8;
   const geometry = useMemo(() => {
     const t = data.terrain;
+    const renderSize = Math.min(t.size, 257);
     const g = new THREE.PlaneGeometry(
       t.x1 - t.x0,
       t.z1 - t.z0,
-      t.size - 1,
-      t.size - 1,
+      renderSize - 1,
+      renderSize - 1,
     );
     g.rotateX(-Math.PI / 2);
     g.translate((t.x0 + t.x1) / 2, 0, (t.z0 + t.z1) / 2);
@@ -411,7 +412,7 @@ function Camera({
   time: number;
   overview: boolean;
 }) {
-  const { camera, size } = useThree();
+  const { camera, size, invalidate } = useThree();
   useLayoutEffect(() => {
     const progress = routeProgress(time),
       p = pointAt(data, progress),
@@ -438,7 +439,8 @@ function Camera({
     camera.position.copy(follow.lerp(far, blend));
     camera.lookAt(target.lerp(center, blend));
     camera.updateProjectionMatrix();
-  }, [camera, data, time, overview, size.width, size.height]);
+    invalidate();
+  }, [camera, data, time, overview, size.width, size.height, invalidate]);
   return null;
 }
 
@@ -460,7 +462,7 @@ export function CourseScene({
       <directionalLight castShadow position={MORNING_SUN} color="#fff0dc" intensity={2.8}
         shadow-mapSize={[2048, 2048]} shadow-camera-left={-100} shadow-camera-right={100}
         shadow-camera-top={100} shadow-camera-bottom={-100} shadow-camera-far={260}
-        shadow-bias={-0.0002} shadow-normalBias={0.035} />
+        shadow-bias={-0.0002} shadow-normalBias={0.035} shadow-autoUpdate={false} shadow-needsUpdate />
       <directionalLight position={[25, 35, 70]} color="#adc7dc" intensity={0.2} />
       <Camera data={data} time={time} overview={overview} />
       <Landscape data={data} />

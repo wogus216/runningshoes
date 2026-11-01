@@ -86,6 +86,7 @@ function Profile({ data, progress, onSeek }: {
 export function CoursePlayer() {
   const [data, setData] = useState<CourseData | null>(null),
     [error, setError] = useState(false);
+  const [contextLost, setContextLost] = useState(false);
   const [time, setTime] = useState(0),
     [playing, setPlaying] = useState(false),
     [overview, setOverview] = useState(false);
@@ -162,8 +163,21 @@ export function CoursePlayer() {
   return (
     <>
       <div className={styles.viewport}>
-        <SceneBoundary>
+        {contextLost ? (
+          <div className={styles.fallback} style={{ position: "absolute", inset: 0, zIndex: 4, background: "#1b241e" }} role="status">
+            <p>3D 화면 연결이 일시적으로 끊겼습니다.</p>
+            <button onClick={() => setContextLost(false)}>3D 화면 다시 열기</button>
+          </div>
+        ) : <SceneBoundary>
           <Canvas
+            frameloop="demand"
+            onCreated={({ gl }) => {
+              gl.domElement.addEventListener("webglcontextlost", (event) => {
+                event.preventDefault();
+                setPlaying(false);
+                setContextLost(true);
+              }, { once: true });
+            }}
             shadows="soft"
             dpr={[1, 1.5]}
             camera={{ fov: 43, near: 0.05, far: 1000 }}
@@ -176,7 +190,7 @@ export function CoursePlayer() {
           >
             <CourseScene data={data} time={time} overview={overview} />
           </Canvas>
-        </SceneBoundary>
+        </SceneBoundary>}
         <div className={styles.shade} />
         <div className={styles.sceneHeading}>
           <span>{chapter.label}</span>
