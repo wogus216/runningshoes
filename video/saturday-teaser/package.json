@@ -1,7 +1,7 @@
 {
   "name": "saturday-teaser",
   "version": "1.0.0",
-  "description": "쎄러데이 MISSION 00 — 15초 Instagram teaser",
+  "description": "\uc384\ub7ec\ub370\uc774 MISSION 00 \u2014 15\ucd08 Instagram teaser",
   "repository": {},
   "license": "UNLICENSED",
   "private": true,
@@ -38,7 +38,11 @@
     "upgrade": "remotion upgrade",
     "lint": "eslint src && tsc",
     "render:s1": "remotion render SaturdayReel-S1 output/saturday-reel-s1.mp4 --crf=26",
-    "still:story": "remotion still SaturdayStory-EndCard output/saturday-story-endcard.png"
+    "still:story": "remotion still SaturdayStory-EndCard output/saturday-story-endcard.png",
+    "sync:course": "node scripts/sync-course-assets.mjs",
+    "dev:course": "npm run sync:course && remotion studio --no-open --port=3127",
+    "render:course": "npm run sync:course && remotion render Sonkeechung-Reel output/sonkeechung-2026-reel-v2.mp4 --codec=h264 --crf=20 --pixel-format=yuv420p --gl=angle --concurrency=1 --timeout=120000 && node scripts/finalize-course.mjs",
+    "still:course": "npm run sync:course && remotion still Sonkeechung-Cover output/sonkeechung-2026-cover-v2.png --gl=angle"
   },
   "sideEffects": [
     "*.css"
