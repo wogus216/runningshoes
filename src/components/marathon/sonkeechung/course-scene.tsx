@@ -1,7 +1,7 @@
 "use client";
 
 import { memo, useLayoutEffect, useMemo } from "react";
-import { useThree } from "@react-three/fiber";
+import { useLoader, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 import { Sky } from "@react-three/drei";
 import type { CourseData } from "./course-model";
@@ -64,6 +64,9 @@ function clipPolygon(points: number[][], data: CourseData) {
 }
 
 const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
+  const texture = useLoader(THREE.TextureLoader, data.imagery?.url ?? "/images/marathon/sonkeechung-peace-marathon-2026/course-preview.webp");
+  texture.colorSpace = THREE.SRGBColorSpace;
+  texture.anisotropy = 8;
   const geometry = useMemo(() => {
     const t = data.terrain;
     const g = new THREE.PlaneGeometry(
@@ -90,8 +93,9 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
       const x = p.getX(i),
         z = p.getZ(i),
         e = terrainHeight(data, x, z);
-      const isWater = data.water.some((poly) => inside(x, z, poly));
+      const isWater = !data.imagery && data.water.some((poly) => inside(x, z, poly));
       p.setY(i, isWater ? -0.025 : (e / 100) * data.verticalScale);
+      if (data.imagery) continue;
       const noise =
         (Math.sin(x * 5.1 + z * 3.7) * Math.sin(x * 0.93 - z * 2.2) + 1) / 2;
       const c = low.clone().lerp(high, clamp(e / 190) * 0.7 + noise * 0.13);
@@ -115,10 +119,12 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
     <mesh geometry={geometry} receiveShadow>
       <meshStandardMaterial
         color={GROUND}
-        vertexColors
+        vertexColors={!data.imagery}
+        map={data.imagery ? texture : null}
         roughness={0.95}
         metalness={0.03}
         onBeforeCompile={(shader) => {
+          if (data.imagery) return;
           shader.vertexShader = "varying vec3 vLandscapePosition;\n" + shader.vertexShader;
           shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvLandscapePosition = (modelMatrix * vec4(transformed, 1.0)).xyz;");
           shader.fragmentShader = "varying vec3 vLandscapePosition;\n" + shader.fragmentShader;
@@ -186,11 +192,13 @@ const Bridge = memo(function Bridge({ data }: { data: CourseData }) {
   // OSM bridge endpoints, in the same local coordinate system as the GPX.
   const a = [-28.499, 0.284],
     b = [-23.057, 7.468];
+  const bridgePoint = data.points[data.markers.find((m) => m.id === "bridge")!.index];
+  const deckHeight = pointHeight(data, bridgePoint) - 0.07;
   const angle = -Math.atan2(b[1] - a[1], b[0] - a[0]),
     length = Math.hypot(b[0] - a[0], b[1] - a[1]);
   return (
     <group
-      position={[(a[0] + b[0]) / 2, 0.27, (a[1] + b[1]) / 2]}
+      position={[(a[0] + b[0]) / 2, deckHeight, (a[1] + b[1]) / 2]}
       rotation={[0, angle, 0]}
       scale={[length, 1, 1]}
     >
@@ -294,6 +302,41 @@ const Forest = memo(function Forest({ data }: { data: CourseData }) {
   );
 });
 
+const Buildings = memo(function Buildings({ data }: { data: CourseData }) {
+  const geometry = useMemo(() => {
+    const positions: number[] = [], colors: number[] = [], indices: number[] = [];
+    const facade = new THREE.Color("#babbb2");
+    const roofs = [new THREE.Color("#697774"), new THREE.Color("#5a7683"), new THREE.Color("#866c58")];
+    for (const building of data.buildings ?? []) {
+      let ring = building.points;
+      if (ring.length < 4) continue;
+      if (ring[0][0] === ring.at(-1)![0] && ring[0][1] === ring.at(-1)![1]) ring = ring.slice(0, -1);
+      const base = Math.min(...ring.map(([x, z]) => HEIGHT(data, x, z)));
+      const top = base + building.heightM / data.unitsMetres;
+      const triangles = THREE.ShapeUtils.triangulateShape(ring.map(([x, z]) => new THREE.Vector2(x, -z)), []);
+      const roof = roofs[building.id % roofs.length];
+      const add = (point: number[], y: number, color: THREE.Color) => {
+        positions.push(point[0], y, point[1]);
+        colors.push(color.r, color.g, color.b);
+        return positions.length / 3 - 1;
+      };
+      for (const triangle of triangles) indices.push(...triangle.map((i) => add(ring[i], top, roof)));
+      for (let i = 0; i < ring.length; i++) {
+        const a = ring[i], b = ring[(i + 1) % ring.length];
+        const offset = positions.length / 3;
+        add(a, base, facade); add(b, base, facade); add(b, top, facade); add(a, top, facade);
+        indices.push(offset, offset + 1, offset + 2, offset, offset + 2, offset + 3);
+      }
+    }
+    const g = new THREE.BufferGeometry();
+    g.setAttribute("position", new THREE.Float32BufferAttribute(positions, 3));
+    g.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
+    g.setIndex(indices); g.computeVertexNormals();
+    return g;
+  }, [data]);
+  return <mesh geometry={geometry} castShadow receiveShadow><meshStandardMaterial vertexColors roughness={0.9} side={THREE.DoubleSide} /></mesh>;
+});
+
 function Route({ data, progress }: { data: CourseData; progress: number }) {
   const geometry = useMemo(() => {
     const curve = new THREE.CatmullRomCurve3(
@@ -377,7 +420,7 @@ function Camera({
     const height = pointHeight(data, p);
     const follow = new THREE.Vector3(
       p[0] - Math.cos(rotation) * 18,
-      height + 10,
+      height + 24,
       p[1] + Math.sin(rotation) * 12 + 23,
     );
     const target = new THREE.Vector3(next[0], height + 0.1, next[1]);
@@ -421,10 +464,11 @@ export function CourseScene({
       <directionalLight position={[25, 35, 70]} color="#adc7dc" intensity={0.2} />
       <Camera data={data} time={time} overview={overview} />
       <Landscape data={data} />
-      <Water data={data} />
+      {!data.imagery && <Water data={data} />}
       <Roads data={data} />
-      <Forest data={data} />
+      {!data.imagery && <Forest data={data} />}
       <Bridge data={data} />
+      <Buildings data={data} />
       <Route data={data} progress={routeProgress(time)} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.18, 0]}>
         <planeGeometry args={[1200, 1200]} />

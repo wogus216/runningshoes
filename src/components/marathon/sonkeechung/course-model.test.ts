@@ -55,4 +55,33 @@ describe("Son Kee Chung source data and playback", () => {
     expect(routeProgress(1)).toBe(1);
     expect(chapterAt(42).label).toBe("SEE YOU AT THE START");
   });
+  it("registers real imagery to the same geographic rectangle as the terrain", () => {
+    expect(course.imagery?.date).toBe("2025-11-12");
+    expect(course.imagery?.resolutionM).toBe(10);
+    expect(course.imagery?.bbox).toEqual(course.bbox);
+    expect(course.verticalScale).toBe(1);
+    expect(course.terrain.size).toBe(513);
+    const texture = readFileSync(path.resolve("public", course.imagery!.url.slice(1)));
+    expect([...texture.subarray(0, 2)]).toEqual([0xff, 0xd8]);
+    const [lon, lat] = course.origin;
+    const west = (course.bbox[0] - lon) * 111195 * Math.cos(lat * Math.PI / 180) / 100;
+    const north = (lat - course.bbox[3]) * 111195 / 100;
+    expect(course.terrain.x0).toBeCloseTo(west, 2);
+    expect(course.terrain.z0).toBeCloseTo(north, 2);
+  });
+  it("covers the whole reference route with the building extract and marks estimated heights", () => {
+    const bounds = course.structureCoverage!;
+    expect(course.buildings!.length).toBeGreaterThan(900);
+    for (const [x, z] of course.points) {
+      const lon = course.origin[0] + x * 100 / (111195 * Math.cos(course.origin[1] * Math.PI / 180));
+      const lat = course.origin[1] - z * 100 / 111195;
+      expect(lon).toBeGreaterThan(bounds.minlon);
+      expect(lon).toBeLessThan(bounds.maxlon);
+      expect(lat).toBeGreaterThan(bounds.minlat);
+      expect(lat).toBeLessThan(bounds.maxlat);
+    }
+    expect(course.buildings!.every((b) => b.heightM >= 2 && b.heightM <= 100 && typeof b.heightEstimated === "boolean" && b.points.every((p) => p.every(Number.isFinite)))).toBe(true);
+    expect(course.buildings!.some((b) => b.heightEstimated)).toBe(true);
+  });
+
 });

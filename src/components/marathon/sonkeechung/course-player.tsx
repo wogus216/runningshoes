@@ -192,7 +192,7 @@ export function CoursePlayer() {
         </div>
         <div className={styles.sceneMeta}>
           <span>2026.11.15 · 파주</span>
-          <span>지형 높이 1.8× · 복원 경로</span>
+          <span>높이 {data.verticalScale}× · 위성영상 2025.11</span>
         </div>
         <div className={styles.distance}>
           <strong>{(progress * data.routeDistanceKm).toFixed(1)}</strong>
@@ -266,7 +266,7 @@ export function CoursePlayer() {
           setPlaying(false);
         }} />
         <p className={styles.profileNote}>
-          그래프를 드래그하면 해당 위치로 이동합니다. 고도는 공개 GPX 참고값이며 화면의 지형 높이 1.8배 효과와 별개입니다. 교량 노면 및 반환 위치 미확정.
+          그래프를 드래그하면 해당 위치로 이동합니다. 고도는 공개 GPX 참고값이며 주변 지형의 표고와는 별도 자료입니다. 교량 노면 및 반환 위치 미확정.
         </p>
       </div>
     </>

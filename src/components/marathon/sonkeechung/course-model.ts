@@ -13,6 +13,9 @@ export type CourseData = {
   date: string;
   officialDistanceKm: number;
   routeDistanceKm: number;
+  origin: [number, number];
+  bbox: [number, number, number, number];
+  structureCoverage?: { minlat: number; minlon: number; maxlat: number; maxlon: number };
   verticalScale: number;
   unitsMetres: number;
   terrain: {
@@ -29,6 +32,15 @@ export type CourseData = {
   forest: number[][][];
   fields: number[][][];
   roads: { kind: string; bridge?: boolean; points: number[][] }[];
+  imagery?: {
+    url: string;
+    date: string;
+    resolutionM: number;
+    bbox: number[];
+    attribution: string;
+  };
+  buildings?: { id: number; points: number[][]; heightM: number; heightEstimated: boolean; kind: string }[];
+  railways?: { points: number[][] }[];
   bridgeModel?: {
     meshes: { positions: number[]; indices: number[]; color: number[] }[];
   };

@@ -76,13 +76,10 @@ export function SonkeechungPreview() {
           <p>
             주최 측 코스 안내와 개인 제작 GPX를 대조해 만든 3D 미리보기입니다.
             공식 측량·인증 경로가 아니며, 반환점·통제 차로와 교량의 노면 높이는
-            확정되지 않았습니다. 거리·고도 흐름은 참고용이고 지형 높이는 1.8배로
-            표현했습니다.
+            확정되지 않았습니다. 거리·고도 흐름은 참고용이며 주변 지형은 높이 과장 없이 표현했습니다.
           </p>
           <p>
-            지형은 Mapzen / USGS SRTM 자료를 사용하고, 비정상적인 격자값을 주변
-            값으로 보정했습니다. 주변 모델과 색감은 시각화 표현이며 실제 현장의
-            모습과 다를 수 있습니다.
+            주변 배치는 2025년 11월 12일 촬영 Sentinel-2 위성영상(약 10m 해상도), Copernicus DEM GLO-30 지형과 OpenStreetMap 건물·도로 자료를 사용했습니다. 건물 높이는 대부분 추정값이며 외벽·교량은 단순화했습니다. 대회 당일 현장을 촬영한 자료는 아닙니다.
           </p>
           <div className={styles.sourceLinks}>
             <a
@@ -100,11 +97,14 @@ export function SonkeechungPreview() {
               GPX 제작·분석: RUNRUUN ↗
             </a>
             <a
-              href="https://registry.opendata.aws/terrain-tiles/"
+              href="https://registry.opendata.aws/copernicus-dem/"
               target="_blank"
               rel="noopener noreferrer"
             >
               지형 데이터 ↗
+            </a>
+            <a href="https://registry.opendata.aws/sentinel-2-l2a-cogs/" target="_blank" rel="noopener noreferrer">
+              위성영상 · Copernicus Sentinel (2025) ↗
             </a>
             <a
               href="https://www.openstreetmap.org/copyright"

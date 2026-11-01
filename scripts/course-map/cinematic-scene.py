@@ -1,6 +1,6 @@
 """Build an editable landscape study and one still. Never renders an animation.
 Usage: blender --background --factory-startup --python cinematic-scene.py -- ROOT
-GPX elevations remain reference values; landscape height is exaggerated 1.8x.
+GPX elevations remain reference values; imagery and DEM carry their own dates and resolution.
 """
 import bpy
 import json
@@ -14,6 +14,7 @@ from mathutils.geometry import tessellate_polygon
 
 root = pathlib.Path(sys.argv[sys.argv.index('--') + 1]).resolve()
 data = json.loads((root / 'public/data/sonkeechung/course.json').read_text())
+vertical_scale = data['verticalScale']
 output = root / '.omc/blender/sonkeechung'
 output.mkdir(parents=True, exist_ok=True)
 random.seed(42)
@@ -22,7 +23,7 @@ bpy.ops.object.delete(use_global=False)
 scene = bpy.context.scene
 scene.unit_settings.system = 'METRIC'
 scene.unit_settings.scale_length = 100
-scene['Data caveat'] = 'Reference GPX, not official survey. Terrain displayed at 1.8x. Bridge illustrative.'
+scene['Data caveat'] = f'Reference GPX, not official survey. Terrain displayed at {vertical_scale}x. Bridge illustrative.'
 scene['Sources'] = json.dumps(data['sources'])
 
 
@@ -51,7 +52,7 @@ def collection(name):
     scene.collection.children.link(c)
     return c
 
-terrain_collection = collection('01 | DEM landscape 1.8x')
+terrain_collection = collection(f'01 | DEM landscape {vertical_scale}x')
 water_collection = collection('02 | Imjin River — OSM')
 forest_collection = collection('03 | Woodland')
 route_collection = collection('04 | Reference GPX — elevations in metres')
@@ -135,7 +136,7 @@ def height(x, z):
     ix, iz = int(fx), int(fz)
     a, b = fx - ix, fz - iz
     h = T['heights']
-    return (h[iz*N+ix]*(1-a)*(1-b)+h[iz*N+ix+1]*a*(1-b)+h[(iz+1)*N+ix]*(1-a)*b+h[(iz+1)*N+ix+1]*a*b) / 100 * 1.8
+    return (h[iz*N+ix]*(1-a)*(1-b)+h[iz*N+ix+1]*a*(1-b)+h[(iz+1)*N+ix]*(1-a)*b+h[(iz+1)*N+ix+1]*a*b) / 100 * vertical_scale
 
 
 def in_bounds(x, z):
@@ -150,15 +151,16 @@ def mesh(name, vertices, faces, mat, group):
     group.objects.link(obj)
     return obj
 
+water_bounds = [(poly, min(p[0] for p in poly), max(p[0] for p in poly), min(p[1] for p in poly), max(p[1] for p in poly)) for poly in data['water']]
 vertices = []
 for iz in range(N):
     for ix in range(N):
         x = T['x0'] + ix / (N-1) * (T['x1']-T['x0'])
         z = T['z0'] + iz / (N-1) * (T['z1']-T['z0'])
-        wet = any(inside(x, z, poly) for poly in data['water'])
+        wet = any(x0 <= x <= x1 and z0 <= z <= z1 and inside(x,z,poly) for poly,x0,x1,z0,z1 in water_bounds)
         vertices.append((x, -z, -.06 if wet else height(x, z)))
 faces = [(i, i+1, i+N+1, i+N) for iz in range(N-1) for ix in range(N-1) for i in [iz*N+ix]]
-land = mesh('Terrarium DEM | 181 × 181', vertices, faces, soil, terrain_collection)
+land = mesh(f'DEM | {N} × {N}', vertices, faces, soil, terrain_collection)
 for p in land.data.polygons:
     p.use_smooth = True
 sub = land.modifiers.new('Smooth terrain sampling', 'SUBSURF')
@@ -188,14 +190,35 @@ for i, poly in enumerate(data['water']):
     lookup={tuple(v):j for j,v in enumerate(vs)}
     mesh('River %03d'%i,vs,[[v if isinstance(v, int) else lookup[tuple(v)] for v in tri] for tri in tris],water_mat,water_collection)
 
-# Material regions follow the sampled terrain instead of floating square overlays.
-land.data.materials.append(field)
-land.data.materials.append(forest_ground)
-for face in land.data.polygons:
-    center = sum((land.data.vertices[i].co for i in face.vertices), Vector()) / len(face.vertices)
-    x, z = center.x, -center.y
-    if any(inside(x, z, poly) for poly in data['forest']): face.material_index = 2
-    elif any(inside(x, z, poly) for poly in data['fields']): face.material_index = 1
+# Use real georeferenced land texture; retain procedural fallback for older data.
+if data.get('imagery'):
+    ground = bpy.data.materials.new('Sentinel-2 | 2025-11-12 | 10m')
+    ground.use_nodes = True
+    shader = ground.node_tree.nodes.get('Principled BSDF')
+    shader.inputs['Roughness'].default_value = .95
+    texture = ground.node_tree.nodes.new('ShaderNodeTexImage')
+    texture.image = bpy.data.images.load(str(root / 'public' / data['imagery']['url'].lstrip('/')))
+    texture.image.pack()
+    ground.node_tree.links.new(texture.outputs['Color'], shader.inputs['Base Color'])
+    ground.node_tree.links.new(texture.outputs['Color'], shader.inputs['Emission Color'])
+    shader.inputs['Emission Strength'].default_value = .12
+    land.data.materials.clear()
+    land.data.materials.append(ground)
+    uv = land.data.uv_layers.new(name='Geographic imagery')
+    for face in land.data.polygons:
+        for loop in face.loop_indices:
+            v = land.data.vertices[land.data.loops[loop].vertex_index].co
+            uv.data[loop].uv = ((v.x - T['x0']) / (T['x1'] - T['x0']), (v.y + T['z1']) / (T['z1'] - T['z0']))
+    scene['Imagery date'] = data['imagery']['date']
+    scene['Imagery attribution'] = data['imagery']['attribution']
+else:
+    land.data.materials.append(field)
+    land.data.materials.append(forest_ground)
+    for face in land.data.polygons:
+        center = sum((land.data.vertices[i].co for i in face.vertices), Vector()) / len(face.vertices)
+        x, z = center.x, -center.y
+        if any(inside(x, z, poly) for poly in data['forest']): face.material_index = 2
+        elif any(inside(x, z, poly) for poly in data['fields']): face.material_index = 1
 
 # Linked crowns aggregated into one mesh: bounded memory, many irregular silhouettes.
 bpy.ops.mesh.primitive_ico_sphere_add(subdivisions=1)
@@ -205,7 +228,7 @@ base_fs=[tuple(p.vertices) for p in template.data.polygons]
 bpy.data.objects.remove(template,do_unlink=True)
 vs,fs,colors=[],[],[]
 count=0
-for poly in data['forest']:
+for poly in ([] if data.get('imagery') else data['forest']):
     loX=max(T['x0'],min(p[0] for p in poly)); hiX=min(T['x1'],max(p[0] for p in poly))
     loZ=max(T['z0'],min(p[1] for p in poly)); hiZ=min(T['z1'],max(p[1] for p in poly))
     x=loX
@@ -242,11 +265,43 @@ for i,road in enumerate(data['roads']):
     for x,z in road['points']:
         if in_bounds(x,z): parts.append((x,-z,height(x,z)+.025))
         elif len(parts)>1:
-            curve('Road %03d'%i,parts,.025,asphalt,terrain_collection);parts=[]
-    if len(parts)>1: curve('Road %03d'%i,parts,.025,asphalt,terrain_collection)
+            curve('Road %03d'%i,parts,.009 if data.get('imagery') else .025,asphalt,terrain_collection);parts=[]
+    if len(parts)>1: curve('Road %03d'%i,parts,.009 if data.get('imagery') else .025,asphalt,terrain_collection)
 
-coords=[(p[0],-p[1],max(p[2]/100*1.8,height(p[0],p[1])+.045)+.035) for p in data['points']]
-route=curve('42.261 km reference course',coords,.025,gold,route_collection)
+facade = surface('Buildings | pale plaster, simplified', (.42, .43, .40), .9)
+roof_materials = [surface('Roof ' + str(i), c) for i, c in enumerate([(.25,.27,.27),(.22,.29,.32),(.32,.20,.15)])]
+building_vertices, building_faces, building_materials = [], [], []
+for building in data.get('buildings', []):
+    ring = building['points']
+    if ring[0] == ring[-1]: ring = ring[:-1]
+    if len(ring) < 3: continue
+    ground_height = min(height(x,z) for x,z in ring)
+    top = ground_height + building['heightM']/100
+    offset, count = len(building_vertices), len(ring)
+    building_vertices.extend((x,-z,ground_height) for x,z in ring)
+    building_vertices.extend((x,-z,top) for x,z in ring)
+    for i in range(count):
+        j = (i+1)%count
+        building_faces.append((offset+i,offset+j,offset+count+j,offset+count+i))
+        building_materials.append(0)
+    vectors=[Vector((x,-z,top)) for x,z in ring]
+    triangles=tessellate_polygon([vectors])
+    lookup={tuple(v):i for i,v in enumerate(vectors)}
+    for tri in triangles:
+        building_faces.append(tuple(offset+count+(v if isinstance(v,int) else lookup[tuple(v)]) for v in tri))
+        building_materials.append(1+building['id']%len(roof_materials))
+if building_faces:
+    buildings = mesh('OSM building footprints | heights mostly estimated', building_vertices, building_faces, facade, terrain_collection)
+    for mat in roof_materials: buildings.data.materials.append(mat)
+    for face, index in zip(buildings.data.polygons,building_materials): face.material_index=index
+    buildings['Count'] = len(data.get('buildings', []))
+    buildings['Height caveat'] = 'Actual OSM outlines. Heights mostly estimated; facades simplified.'
+for i,rail in enumerate(data.get('railways', [])):
+    pts=[(x,-z,height(x,z)+.035) for x,z in rail['points'] if in_bounds(x,z)]
+    if len(pts)>1: curve('Rail corridor %03d'%i,pts,.012,asphalt,terrain_collection)
+
+coords=[(p[0],-p[1],max(p[2]/100*vertical_scale,height(p[0],p[1])+.045)+.035) for p in data['points']]
+route=curve('42.261 km reference course',coords,.018,gold,route_collection)
 route['Official distance km']=42.195
 route['Reference distance km']=data['routeDistanceKm']
 for m in data['markers']:
@@ -256,7 +311,9 @@ for m in data['markers']:
     obj['Reference distance km']=p[3];obj['GPX elevation metres']=p[2]
 
 # Same OSM endpoints and illustrative deck as the live scene.
-a=Vector((-28.499,-.284,.27));b=Vector((-23.057,-7.468,.27))
+bridge_index=next(m['index'] for m in data['markers'] if m['id']=='bridge')
+bridge_height=coords[bridge_index][2]-.04
+a=Vector((-28.499,-.284,bridge_height));b=Vector((-23.057,-7.468,bridge_height))
 for i,m in enumerate(data.get('bridgeModel',{}).get('meshes',[])):
     verts=[]
     angle=math.atan2((b-a).y,(b-a).x); length=(b-a).length; mid=(a+b)/2
@@ -303,16 +360,16 @@ haze.display_type='WIRE'
 
 camera_data=bpy.data.cameras.new('November morning crossing | 40mm')
 camera=bpy.data.objects.new('November morning crossing | 40mm',camera_data);scene.collection.objects.link(camera)
-camera.location=(-49,-37,12)
-target=Vector((-21,-1,2.5))
+camera.location=(-47,-34,24)
+target=Vector((-24,-2,.5))
 camera.rotation_euler=(target-Vector(camera.location)).to_track_quat('-Z','Y').to_euler()
-camera_data.lens=40;camera_data.clip_end=1000
+camera_data.lens=46;camera_data.clip_end=1000
 scene.camera=camera
 scene.render.engine='CYCLES';scene.cycles.samples=40
 scene.cycles.use_denoising=True
 scene.render.resolution_x=1440;scene.render.resolution_y=810;scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG'
-scene.render.filepath=str(output/'november-15-morning.png')
+scene.render.filepath=str(output/'real-environment-november-15.png')
 scene.view_settings.view_transform='AgX'
 scene.view_settings.look='AgX - Medium High Contrast'
 scene.view_settings.exposure=-.3
@@ -324,9 +381,9 @@ for screen in bpy.data.screens:
             area.spaces.active.shading.type='MATERIAL'
             area.spaces.active.clip_end=1000
 notes=bpy.data.texts.new('READ ME — November 15, sources and elevation')
-notes.write('Late autumn morning study — November 15, 2026 at 10:00 KST. NOAA approximate solar geometry; foliage and haze are art direction. No animation render.\\nReference GPX is not an official survey.\\nTerrain exaggerated 1.8x; numeric marker elevations remain unscaled GPX values.\\nBridge architecture is illustrative.\\n'+json.dumps(data['sources'],indent=2))
-bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-november-15.blend'))
-print('SCENE_SAVED',output/'sonkeechung-november-15.blend',flush=True)
+notes.write('Late autumn morning study — November 15, 2026 at 10:00 KST. NOAA approximate solar geometry; foliage and haze are art direction. No animation render.\\nReference GPX is not an official survey.\\nTerrain scale follows source data; numeric marker elevations remain unscaled GPX values. Buildings have real outlines and mostly estimated heights. Sentinel imagery captured 2025-11-12.\\nBridge architecture is illustrative.\\n'+json.dumps(data['sources'],indent=2))
+bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-real-environment.blend'))
+print('SCENE_SAVED',output/'sonkeechung-real-environment.blend',flush=True)
 bpy.ops.render.render(write_still=True)
 print('STILL_SAVED',scene.render.filepath,flush=True)
 
@@ -342,4 +399,4 @@ for workspace in bpy.data.workspaces:
                 area.type = 'IMAGE_EDITOR'
                 area.spaces.active.image = preview
         workspace.name = 'November 15 preview'
-bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-november-15.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-real-environment.blend'))
