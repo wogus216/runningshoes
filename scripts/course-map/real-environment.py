@@ -152,6 +152,7 @@ course['sources']['terrain']='https://registry.opendata.aws/copernicus-dem/'
 course['sources']['imagery']='https://registry.opendata.aws/sentinel-2-l2a-cogs/'
 course['caveats']=[s for s in course['caveats'] if '1.8' not in s]
 course['caveats'].extend(['주변 위성영상은 2025-11-12 촬영본이며 2026년 대회 당일의 모습이 아닙니다.','건물 배치는 OpenStreetMap 기준이며 높이는 대부분 추정값이고 외벽은 단순화했습니다.','지형은 약 30m 간격 DSM이며 도로 노면의 실측 고도가 아닙니다. 높이 과장 없이 표현합니다.'])
+course['terrain']['attribution']='produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved'
 course['attribution']='Route: RUNRUUN · © OpenStreetMap contributors · Contains modified Copernicus Sentinel data (2025) · Copernicus DEM GLO-30'
 (folder/'course.json').write_text(json.dumps(course,separators=(',',':'),ensure_ascii=False))
 (cache/'environment-audit.json').write_text(json.dumps({'buildings':len(buildings),'knownBuildingHeights':sum(not b['heightEstimated'] for b in buildings),'roads':len(roads),'railways':len(railways),'imageryDate':'2025-11-12','terrainSize':terrain['size'],'verticalScale':1},indent=2))

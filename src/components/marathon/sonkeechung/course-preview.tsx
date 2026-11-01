@@ -81,6 +81,7 @@ export function SonkeechungPreview() {
           <p>
             주변 배치는 2025년 11월 12일 촬영 Sentinel-2 위성영상(약 10m 해상도), Copernicus DEM GLO-30 지형과 OpenStreetMap 건물·도로 자료를 사용했습니다. 건물 높이는 대부분 추정값이며 외벽·교량은 단순화했습니다. 대회 당일 현장을 촬영한 자료는 아닙니다.
           </p>
+          <p>produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved</p>
           <div className={styles.sourceLinks}>
             <a
               href="https://son.wizrun.com/full"

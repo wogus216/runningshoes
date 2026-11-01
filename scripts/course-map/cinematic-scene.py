@@ -25,6 +25,9 @@ scene.unit_settings.system = 'METRIC'
 scene.unit_settings.scale_length = 100
 scene['Data caveat'] = f'Reference GPX, not official survey. Terrain displayed at {vertical_scale}x. Bridge illustrative.'
 scene['Sources'] = json.dumps(data['sources'])
+scene['Data attribution'] = data.get('attribution', '') + ' · ' + data['terrain'].get('attribution', '')
+scene.render.use_stamp_note = True
+scene.render.stamp_note_text = scene['Data attribution']
 
 
 # NOAA approximate solar geometry. Scene axes: +X east, +Y north, +Z up.
