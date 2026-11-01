@@ -13,7 +13,6 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
-import { Audio } from "@remotion/media";
 import { ThreeCanvas } from "@remotion/three";
 import { PCFShadowMap } from "three";
 import { CourseScene } from "../../../src/components/marathon/sonkeechung/course-scene";
@@ -27,7 +26,6 @@ import { REEL_SECONDS, reelProgress, fuelStopAt } from "./sonkeechung-reel-plan"
 const font = '"Pretendard Saturday", sans-serif';
 const ivory = "#fff5df";
 const gold = "#ecc589";
-const clamp = (x: number) => Math.max(0, Math.min(1, x));
 
 function useCourse() {
   const [handle] = useState(() => delayRender("Load verified course assets"));
@@ -333,13 +331,6 @@ export const SonkeechungReel: React.FC = () => {
         overflow: "hidden",
       }}
     >
-      <Audio
-        src={staticFile("sonkeechung/course-score.m4a")}
-        volume={(f) =>
-          0.8 *
-          Math.min(clamp(f / (1.1 * fps)), clamp((REEL_SECONDS * fps - f) / (1.8 * fps)))
-        }
-      />
       <ThreeCanvas
         width={width}
         height={height}

@@ -11,6 +11,6 @@ execFileSync('ffmpeg', [
   '-vf', 'scale=in_range=full:out_range=limited:in_color_matrix=bt601:out_color_matrix=bt709,format=yuv420p',
   '-c:v', 'libx264', '-preset', 'medium', '-crf', '18',
   '-color_range', 'tv', '-colorspace', 'bt709', '-color_primaries', 'bt709', '-color_trc', 'bt709',
-  '-c:a', 'aac', '-b:a', '192k', '-t', '52', '-movflags', '+faststart',
+  '-an', '-t', '52', '-movflags', '+faststart',
   path.join(project, 'output/sonkeechung-2026-reel-v2-instagram.mp4'),
 ], { stdio: 'inherit' });
