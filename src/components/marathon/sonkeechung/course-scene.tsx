@@ -3,6 +3,7 @@
 import { memo, useLayoutEffect, useMemo } from "react";
 import { useThree } from "@react-three/fiber";
 import * as THREE from "three";
+import { Sky } from "@react-three/drei";
 import type { CourseData } from "./course-model";
 import {
   clamp,
@@ -71,9 +72,9 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
     g.translate((t.x0 + t.x1) / 2, 0, (t.z0 + t.z1) / 2);
     const p = g.getAttribute("position"),
       colors = new Float32Array(p.count * 3);
-    const low = new THREE.Color("#788a70"),
-      high = new THREE.Color("#506c53"),
-      forest = new THREE.Color("#294b37");
+    const low = new THREE.Color("#858064"),
+      high = new THREE.Color("#5b6550"),
+      forest = new THREE.Color("#303d2d");
     const forestBounds = data.forest.map((poly) => ({
       poly,
       minX: Math.min(...poly.map((p) => p[0])),
@@ -113,6 +114,16 @@ const Landscape = memo(function Landscape({ data }: { data: CourseData }) {
         vertexColors
         roughness={0.95}
         metalness={0.03}
+        onBeforeCompile={(shader) => {
+          shader.vertexShader = "varying vec3 vLandscapePosition;\n" + shader.vertexShader;
+          shader.vertexShader = shader.vertexShader.replace("#include <begin_vertex>", "#include <begin_vertex>\nvLandscapePosition = (modelMatrix * vec4(transformed, 1.0)).xyz;");
+          shader.fragmentShader = "varying vec3 vLandscapePosition;\n" + shader.fragmentShader;
+          shader.fragmentShader = shader.fragmentShader.replace("#include <color_fragment>", `#include <color_fragment>
+            float grain = sin(vLandscapePosition.x * 71.0 + sin(vLandscapePosition.z * 37.0)) * sin(vLandscapePosition.z * 53.0 + vLandscapePosition.x * 19.0);
+            float patch = sin(vLandscapePosition.x * 2.3) * sin(vLandscapePosition.z * 3.7);
+            diffuseColor.rgb *= 0.92 + grain * 0.075 + patch * 0.07;
+          `);
+        }}
       />
     </mesh>
   );
@@ -139,8 +150,8 @@ const Water = memo(function Water({ data }: { data: CourseData }) {
       {shapes.map((g, i) => (
         <mesh key={i} geometry={g}>
           <meshStandardMaterial
-            color="#51747a"
-            roughness={0.22}
+            color="#4a656b"
+            roughness={0.18}
             metalness={0.36}
             side={THREE.DoubleSide}
           />
@@ -258,6 +269,8 @@ const Forest = memo(function Forest({ data }: { data: CourseData }) {
   }, [data]);
   return (
     <instancedMesh
+      castShadow
+      receiveShadow
       args={[undefined, undefined, objects.length]}
       ref={(mesh) => {
         if (mesh) {
@@ -267,7 +280,7 @@ const Forest = memo(function Forest({ data }: { data: CourseData }) {
       }}
     >
       <icosahedronGeometry args={[1, 1]} />
-      <meshStandardMaterial color="#405648" roughness={1} />
+      <meshStandardMaterial color="#3b4631" roughness={1} />
     </instancedMesh>
   );
 });
@@ -282,8 +295,8 @@ function Route({ data, progress }: { data: CourseData; progress: number }) {
       "centripetal",
     );
     return {
-      base: new THREE.TubeGeometry(curve, 2200, 0.12, 5, false),
-      active: new THREE.TubeGeometry(curve, 2200, 0.145, 6, false),
+      base: new THREE.TubeGeometry(curve, 2200, 0.055, 5, false),
+      active: new THREE.TubeGeometry(curve, 2200, 0.07, 6, false),
     };
   }, [data]);
   useLayoutEffect(() => {
@@ -354,17 +367,17 @@ function Camera({
     const rotation = 0.4 + progress * 0.75;
     const height = pointHeight(data, p);
     const follow = new THREE.Vector3(
-      p[0] - Math.cos(rotation) * 22,
-      height + 23,
-      p[1] + Math.sin(rotation) * 18 + 23,
+      p[0] - Math.cos(rotation) * 18,
+      height + 10,
+      p[1] + Math.sin(rotation) * 12 + 23,
     );
     const target = new THREE.Vector3(next[0], height + 0.1, next[1]);
     const portrait = size.width / size.height < 0.8;
     const orbit = time * 0.16;
     const far = new THREE.Vector3(
       -72 + orbit * 8,
-      portrait ? 170 : 100,
-      portrait ? 194 : 132,
+      portrait ? 150 : 67,
+      portrait ? 180 : 125,
     );
     const center = new THREE.Vector3(0, 2, 1);
     const intro = 1 - smooth((time - 0.025) / 0.105),
@@ -388,19 +401,15 @@ export function CourseScene({
 }) {
   return (
     <>
-      <color attach="background" args={["#b9c0b5"]} />
-      <fog attach="fog" args={["#b9c0b5", 145, 450]} />
-      <hemisphereLight args={["#e5e7da", "#344c3a", 0.95]} />
-      <directionalLight
-        position={[-65, 55, -45]}
-        color="#ffe5bc"
-        intensity={2.15}
-      />
-      <directionalLight
-        position={[25, 35, 70]}
-        color="#c2d9dc"
-        intensity={0.3}
-      />
+      <color attach="background" args={["#c2b8a3"]} />
+      <Sky distance={1000} sunPosition={[-80, 9, -45]} turbidity={7} rayleigh={1.8} mieCoefficient={0.009} mieDirectionalG={0.86} />
+      <fog attach="fog" args={["#c2b8a3", 65, 235]} />
+      <hemisphereLight args={["#b7c6cf", "#454333", 0.65]} />
+      <directionalLight castShadow position={[-65, 14, -45]} color="#ffd099" intensity={3.2}
+        shadow-mapSize={[2048, 2048]} shadow-camera-left={-100} shadow-camera-right={100}
+        shadow-camera-top={100} shadow-camera-bottom={-100} shadow-camera-far={260}
+        shadow-bias={-0.0002} shadow-normalBias={0.035} />
+      <directionalLight position={[25, 35, 70]} color="#adc7dc" intensity={0.2} />
       <Camera data={data} time={time} overview={overview} />
       <Landscape data={data} />
       <Water data={data} />
@@ -410,7 +419,7 @@ export function CourseScene({
       <Route data={data} progress={routeProgress(time)} />
       <mesh rotation={[-Math.PI / 2, 0, 0]} position={[0, -0.18, 0]}>
         <planeGeometry args={[1200, 1200]} />
-        <meshStandardMaterial color="#788a70" roughness={1} />
+        <meshStandardMaterial color="#77745d" roughness={1} />
       </mesh>
     </>
   );

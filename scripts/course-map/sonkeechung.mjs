@@ -10,11 +10,9 @@ const root = path.resolve(
 );
 const cache = path.join(root, ".omc/research/sonkeechung-course");
 const output = path.join(root, "public/data/sonkeechung");
-const video = path.join(root, "video/saturday-teaser/public/sonkeechung");
 await Promise.all([
   fs.mkdir(cache, { recursive: true }),
   fs.mkdir(output, { recursive: true }),
-  fs.mkdir(video, { recursive: true }),
 ]);
 const gpxUrl =
   "https://raw.githubusercontent.com/zohoda-ui/gpx-road/refs/heads/main/SohnKeeChung_Peace_Marathon_full.gpx";
@@ -301,10 +299,7 @@ try {
     await fs.readFile(path.join(output, "bridge.json"), "utf8"),
   );
 } catch {}
-await Promise.all([
-  fs.writeFile(path.join(output, "course.json"), JSON.stringify(result)),
-  fs.writeFile(path.join(video, "course.json"), JSON.stringify(result)),
-]);
+await fs.writeFile(path.join(output, "course.json"), JSON.stringify(result));
 await fs.writeFile(
   path.join(cache, "audit.json"),
   JSON.stringify(

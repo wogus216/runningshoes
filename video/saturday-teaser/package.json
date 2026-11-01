@@ -27,8 +27,6 @@
     "typescript": "5.9.3"
   },
   "scripts": {
-    "render:sonkeechung": "remotion render Sonkeechung-Reel output/sonkeechung-2026-reel.mp4 --codec=h264 --crf=18 --pixel-format=yuv420p --gl=angle --concurrency=2 --timeout=120000",
-    "still:sonkeechung": "remotion still Sonkeechung-Reel output/sonkeechung-2026-cover.png --frame=30 --gl=angle",
     "dev": "remotion studio --no-open",
     "build": "remotion bundle",
     "render:reel": "remotion render SaturdayMission00-Reel output/saturday-mission-00-reel.mp4 --crf=26",

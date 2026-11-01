@@ -7,6 +7,8 @@ import {
   COURSE_SECONDS,
   chapterAt,
   currentMarker,
+  clamp,
+  pointAt,
   routeProgress,
   type CourseData,
 } from "./course-model";
@@ -39,39 +41,45 @@ class SceneBoundary extends Component<
   }
 }
 
-function Profile({ data, progress }: { data: CourseData; progress: number }) {
-  const width = 800,
-    height = 62,
-    pad = 5;
-  const values = data.points.filter((_, i) => i % 4 === 0);
-  const top = Math.max(80, ...values.map((p) => p[2]));
-  const line = values
-    .map(
-      (p, i) =>
-        `${i ? "L" : "M"}${((p[3] / data.routeDistanceKm) * width).toFixed(1)},${(height - pad - (p[2] / top) * (height - pad * 2)).toFixed(1)}`,
-    )
-    .join(" ");
+function Profile({ data, progress, onSeek }: {
+  data: CourseData;
+  progress: number;
+  onSeek: (progress: number) => void;
+}) {
+  const width = 800, height = 90, left = 0, right = 0, bottom = 20;
+  const plotWidth = width - left - right, plotHeight = height - bottom - 8;
+  const values = data.points.filter((_, i) => i % 4 === 0 || i === data.points.length - 1);
+  const top = Math.ceil(Math.max(60, ...values.map((p) => p[2])) / 20) * 20;
+  const x = (km: number) => left + km / data.routeDistanceKm * plotWidth;
+  const y = (m: number) => height - bottom - m / top * plotHeight;
+  const line = values.map((p, i) => `${i ? "L" : "M"}${x(p[3]).toFixed(1)},${y(p[2]).toFixed(1)}`).join(" ");
+  const current = pointAt(data, progress);
   return (
-    <svg
-      viewBox={`0 0 ${width} ${height}`}
-      className={styles.profile}
-      role="img"
-      aria-label="공개 GPX 기준 참고용 고도 흐름"
-    >
-      <path
-        d={`${line} L${width},${height} L0,${height}Z`}
-        fill="rgba(230,197,148,.09)"
-      />
-      <path d={line} stroke="#c8ae85" strokeWidth="1.4" fill="none" />
-      <line
-        x1={progress * width}
-        y1="0"
-        x2={progress * width}
-        y2={height}
-        stroke="#f5e6cc"
-        strokeWidth="1.5"
-      />
-    </svg>
+    <div className={styles.profileControl}>
+      <div className={styles.profileHeading}>
+        <span>거리별 고도</span>
+        <span>약 {current[3].toFixed(1)}km · 고도 약 {Math.round(current[2])}m</span>
+      </div>
+      <div className={styles.profilePlot}>
+      <div className={styles.elevationAxis} aria-hidden="true"><span>{top}m</span><span>{top / 2}m</span><span>0m</span></div>
+      <svg viewBox={`0 0 ${width} ${height - bottom}`} preserveAspectRatio="none" className={styles.profile} aria-hidden="true">
+        {[0, top / 2, top].map((m) => <g key={m}>
+          <line x1={left} x2={width - right} y1={y(m)} y2={y(m)} stroke="#ffffff18" />
+
+        </g>)}
+
+        <path d={`${line} L${x(data.routeDistanceKm)},${height - bottom} L${left},${height - bottom}Z`} fill="rgba(230,197,148,.12)" />
+        <path d={line} stroke="#c8ae85" strokeWidth="1.6" fill="none" />
+        <line x1={x(current[3])} y1="3" x2={x(current[3])} y2={height - bottom} stroke="#f5e6cc" strokeWidth="1.5" />
+        <circle cx={x(current[3])} cy={y(current[2])} r="3.5" fill="#fff0cd" />
+      </svg>
+      <div className={styles.distanceAxis} aria-hidden="true">{[0, 10, 20, 30, 42.2].map((km) => <span key={km}>{km}km</span>)}</div>
+      <input className={styles.profileSeek} type="range" min="0" max="1000" value={Math.round(progress * 1000)}
+        aria-label="고도 그래프에서 코스 위치 선택"
+        aria-valuetext={`약 ${current[3].toFixed(1)}km, 참고 고도 약 ${Math.round(current[2])}m`}
+        onChange={(e) => onSeek(clamp(Number(e.target.value) / 1000))} />
+      </div>
+    </div>
   );
 }
 
@@ -149,12 +157,14 @@ export function CoursePlayer() {
     );
   const progress = routeProgress(time),
     chapter = chapterAt(time * COURSE_SECONDS),
-    marker = currentMarker(data, progress);
+    marker = currentMarker(data, progress),
+    current = pointAt(data, progress);
   return (
     <>
       <div className={styles.viewport}>
         <SceneBoundary>
           <Canvas
+            shadows="soft"
             dpr={[1, 1.5]}
             camera={{ fov: 43, near: 0.05, far: 1000 }}
             gl={{ antialias: true, alpha: false }}
@@ -187,6 +197,8 @@ export function CoursePlayer() {
         <div className={styles.distance}>
           <strong>{(progress * data.routeDistanceKm).toFixed(1)}</strong>
           <span>km / 참고 경로</span>
+          <p className={styles.elevation}>고도 약 <b>{Math.round(current[2])}</b> m</p>
+          <span>공개 GPX 참고값</span>
         </div>
       </div>
       <div className={styles.transport}>
@@ -249,10 +261,12 @@ export function CoursePlayer() {
             </button>
           ))}
         </div>
-        <Profile data={data} progress={progress} />
+        <Profile data={data} progress={progress} onSeek={(p) => {
+          setTime(0.085 + p * 0.82);
+          setPlaying(false);
+        }} />
         <p className={styles.profileNote}>
-          공개 GPX의 고도 흐름 · 교량 노면 및 반환 위치 미확정 · 실제 레이스
-          안내 우선
+          그래프를 드래그하면 해당 위치로 이동합니다. 고도는 공개 GPX 참고값이며 화면의 지형 높이 1.8배 효과와 별개입니다. 교량 노면 및 반환 위치 미확정.
         </p>
       </div>
     </>
