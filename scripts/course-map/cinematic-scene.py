@@ -244,6 +244,11 @@ for i,m in enumerate(data.get('bridgeModel',{}).get('meshes',[])):
         verts.append((mid.x+x*math.cos(angle)-yy*math.sin(angle),mid.y+x*math.sin(angle)+yy*math.cos(angle),mid.z+h))
     mesh('Bridge proxy %02d'%i,verts,[m['indices'][j:j+3] for j in range(0,len(m['indices']),3)],concrete,terrain_collection)
 
+bpy.ops.mesh.primitive_plane_add(size=1200,location=(0,0,-.15))
+continuation=move(bpy.context.object,terrain_collection)
+continuation.name='Distant ground continuation — visual only'
+continuation.data.materials.append(soil)
+
 world=bpy.data.worlds.new('Dawn | cool sky')
 scene.world=world;world.use_nodes=True
 sky = world.node_tree.nodes.new('ShaderNodeTexSky')
@@ -255,16 +260,16 @@ sky.air_density = 1.1
 if hasattr(sky, 'dust_density'):
     sky.dust_density = 2.5
 world.node_tree.links.new(sky.outputs['Color'],world.node_tree.nodes.get('Background').inputs[0])
-world.node_tree.nodes.get('Background').inputs[1].default_value=.18
-sun_data=bpy.data.lights.new('Low November sun','SUN');sun_data.energy=3.0
-sun_data.color=(1,.73,.43);sun_data.angle=math.radians(3)
+world.node_tree.nodes.get('Background').inputs[1].default_value=.025
+sun_data=bpy.data.lights.new('Low November sun','SUN');sun_data.energy=2.4
+sun_data.color=(1,.85,.65);sun_data.angle=math.radians(3)
 sun=bpy.data.objects.new('Low November sun',sun_data);light_collection.objects.link(sun)
 sun.rotation_euler=Vector((-.8,-.35,-.14)).to_track_quat('-Z','Y').to_euler()
 # A shallow volume gives distant slopes softer contrast while retaining foreground detail.
 fog=bpy.data.materials.new('River valley haze');fog.use_nodes=True
 nodes=fog.node_tree.nodes;nodes.clear()
 out=nodes.new('ShaderNodeOutputMaterial');volume=nodes.new('ShaderNodeVolumePrincipled')
-volume.inputs['Density'].default_value=.004
+volume.inputs['Density'].default_value=.0018
 volume.inputs['Color'].default_value=(.63,.70,.73,1)
 volume.inputs['Anisotropy'].default_value=.25
 fog.node_tree.links.new(volume.outputs['Volume'],out.inputs['Volume'])
@@ -279,14 +284,14 @@ target=Vector((-21,-1,2.5))
 camera.rotation_euler=(target-Vector(camera.location)).to_track_quat('-Z','Y').to_euler()
 camera_data.lens=40;camera_data.clip_end=1000
 scene.camera=camera
-scene.render.engine='CYCLES';scene.cycles.samples=48
+scene.render.engine='CYCLES';scene.cycles.samples=40
 scene.cycles.use_denoising=True
 scene.render.resolution_x=1440;scene.render.resolution_y=810;scene.render.resolution_percentage=100
 scene.render.image_settings.file_format='PNG'
 scene.render.filepath=str(output/'dawn-crossing.png')
 scene.view_settings.view_transform='AgX'
 scene.view_settings.look='AgX - Medium High Contrast'
-scene.view_settings.exposure=.7
+scene.view_settings.exposure=0
 # No animation or timeline export; open directly in the camera view.
 for screen in bpy.data.screens:
     for area in screen.areas:
@@ -300,3 +305,17 @@ bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-dawn.blend'))
 print('SCENE_SAVED',output/'sonkeechung-dawn.blend',flush=True)
 bpy.ops.render.render(write_still=True)
 print('STILL_SAVED',scene.render.filepath,flush=True)
+
+# The default workspace opens the still; Modeling retains the editable 3D scene.
+preview = bpy.data.images.load(scene.render.filepath, check_existing=True)
+preview.pack()
+for workspace in bpy.data.workspaces:
+    if workspace.name == 'Layout':
+        for screen in workspace.screens:
+            areas = [area for area in screen.areas if area.type == 'VIEW_3D']
+            if areas:
+                area = max(areas, key=lambda area: area.width * area.height)
+                area.type = 'IMAGE_EDITOR'
+                area.spaces.active.image = preview
+        workspace.name = 'Dawn preview'
+bpy.ops.wm.save_as_mainfile(filepath=str(output/'sonkeechung-dawn.blend'))
