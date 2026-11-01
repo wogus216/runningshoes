@@ -118,8 +118,8 @@ export const CHAPTERS = [
     start: 0,
     end: 4,
     eyebrow: "2026 손기정평화마라톤",
-    title: "반환점은 두 번.\n42.195km를 미리 보다.",
-    body: "임진각에서 출발해 다시 임진각으로",
+    title: "손기정의 이름을,\n우리의 발걸음으로.",
+    body: "11월 15일, 임진각에서 시작하는 42.195km",
     label: "COURSE PREVIEW",
   },
   {
@@ -166,8 +166,8 @@ export const CHAPTERS = [
     start: 38,
     end: 42,
     eyebrow: "2026.11.15 / 파주 임진각",
-    title: "그날, 이 길에서\n만나요.",
-    body: "출발 전에 저장하고 코스를 다시 확인하세요.",
+    title: "손기정을 기억하며,\n임진각에서 만나요.",
+    body: "2026.11.15 · 손기정평화마라톤",
     label: "SEE YOU AT THE START",
   },
 ] as const;
