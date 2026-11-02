@@ -550,6 +550,34 @@
 .fuelStops strong { color: #f0e8d5; font-family: Georgia, serif; font-size: 32px; font-weight: 400; font-variant-numeric: tabular-nums; line-height: 1.1; }
 .fuelStops small { margin-left: 5px; font-family: inherit; font-size: 14px; }
 .fuelMapLink { font-size: 11px; text-decoration: underline; text-underline-offset: 4px; }
+.paceBrief { grid-column: 1 / -1; min-width: 0; padding-bottom: 32px; border-bottom: 1px solid #ffffff20; scroll-margin-top: 90px; }
+.fuelBrief > .fuelInputs { grid-template-columns: 1fr; }
+.paceBrief > .fuelInputs { max-width: 680px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.paceSummary { display: flex; align-items: center; gap: 24px 40px; margin: 26px 0; }
+.paceSummary > div { flex-shrink: 0; }
+.paceSummary span { display: block; font-size: 12px; color: #bcc3b6; }
+.paceSummary strong { display: block; font-size: 44px; font-family: Georgia, serif; font-weight: 400; font-variant-numeric: tabular-nums; line-height: 1.3; color: #f6edda; margin-top: 8px; }
+.paceSummary small { font-family: inherit; font-size: 16px; }
+.paceSummary > p { font-size: 13px; line-height: 1.9; color: #c4cbbb; word-break: keep-all; }
+.paceStages { list-style: none; padding: 0; margin: 0; }
+.paceStages li { display: grid; grid-template-columns: minmax(0, 1fr) minmax(240px, .8fr); gap: 14px 32px; padding: 22px 16px; border-top: 1px solid #ffffff30; }
+.paceStageHeading { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.paceStageHeading > span { color: var(--gold); font-size: 12px; font-variant-numeric: tabular-nums; }
+.paceStageHeading h4 { color: var(--sand); font-size: 17px; font-weight: 550; }
+.paceStageHeading button { padding: 6px 0; min-height: 36px; color: #d6d9ca; font-size: 12px; text-decoration: underline; text-underline-offset: 4px; }
+.paceStageNumbers { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-content: center; gap: 16px; margin: 0; }
+.paceStageNumbers dt { font-size: 12px; color: #bcc3b6; line-height: 1.6; }
+.paceStageNumbers dd { margin: 8px 0 0; font-family: Georgia, serif; font-size: 28px; font-variant-numeric: tabular-nums; line-height: 1.2; color: #f6edda; }
+.paceStages li > p { grid-column: 1 / -1; font-size: 13px; line-height: 1.8; color: #bcc3b6; word-break: keep-all; }
+@media (max-width: 640px) {
+  .paceSummary { align-items: flex-start; flex-direction: column; gap: 14px; }
+  .paceStages li { grid-template-columns: 1fr; padding: 22px 12px; gap: 16px; }
+  .paceStageHeading { display: grid; grid-template-columns: 1fr auto; align-items: center; }
+  .paceStageHeading > span { grid-column: 1; }
+  .paceStageHeading h4 { grid-column: 1; }
+  .paceStageHeading button { grid-column: 2; grid-row: 1 / 3; min-height: 44px; }
+  .paceStageNumbers { max-width: 360px; }
+}
 @media (max-width: 820px) {
   .preparation { grid-template-columns: 1fr; gap: 32px; margin-top: 36px; padding: 30px 0; }
   .weatherNumbers { max-width: 360px; }
@@ -557,6 +585,7 @@
 }
 @media (max-width: 480px) {
   .fuelInputs { grid-template-columns: 1fr; }
+  .paceBrief > .fuelInputs { grid-template-columns: 1fr; }
   .fuelStops { gap: 0 12px; }
   .fuelStops button { padding: 16px 8px; }
 }
