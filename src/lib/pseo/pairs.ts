@@ -1,6 +1,7 @@
 import type { Shoe } from '@/types/shoe';
 import { shoes as allShoes } from '@/lib/data/shoes';
 import { isCompleteShoe } from '@/types/shoe';
+import { assessPairWorth, type PairWorth } from '@/lib/pseo/pair-copy';
 
 export type ShoePair = {
   slug: string; // 'nike-pegasus-41-vs-asics-gt-2000-14'
@@ -186,12 +187,38 @@ export function getPairBySlug(slug: string): ShoePair | undefined {
   return getAllPairs().find((p) => p.slug === slug);
 }
 
+const PINNED_SET = new Set(PINNED_PAIRS);
+const worthCache = new Map<string, PairWorth>();
+
+/**
+ * 이 페어 페이지를 색인할 이유가 있는가 — 판정 기준은 `assessPairWorth`(pair-copy.ts).
+ *
+ * 2026-11-02 도입. 10/19 구글 검색 절벽 진단에서 `/vs` 가 "사이트맵의 상당 부분인데 노출은 거의 없는"
+ * 기계적 조합 묶음으로 잡혔다. 페이지를 **지우지 않고**(404 사고 재발 방지) 독자의 선택을 바꿀 근거가
+ * 없는 페어만 noindex 로 돌린다. sitemap 제외는 next-sitemap.config.js 가 빌드 HTML 의 robots 로 처리한다.
+ */
+export function getPairWorth(pair: ShoePair): PairWorth {
+  const hit = worthCache.get(pair.slug);
+  if (hit) return hit;
+  const worth = assessPairWorth(pair.a, pair.b, pair.category, { pinned: PINNED_SET.has(pair.slug) });
+  worthCache.set(pair.slug, worth);
+  return worth;
+}
+
+/** 색인 대상 페어만 — 허브·내부 링크용 */
+export function getIndexablePairs(): ShoePair[] {
+  return getAllPairs().filter((p) => getPairWorth(p).index);
+}
+
+/** 색인 대상 페어를 앞에 둔다(안정 정렬). 내부 링크가 noindex 페이지로 먼저 새지 않게 */
+function indexableFirst(list: ShoePair[]): ShoePair[] {
+  return [...list.filter((p) => getPairWorth(p).index), ...list.filter((p) => !getPairWorth(p).index)];
+}
+
 export function getPairsForShoe(shoeSlug: string): ShoePair[] {
-  return getAllPairs().filter((p) => p.a.slug === shoeSlug || p.b.slug === shoeSlug);
+  return indexableFirst(getAllPairs().filter((p) => p.a.slug === shoeSlug || p.b.slug === shoeSlug));
 }
 
 export function getPairsForCategory(category: string, limit = 5): ShoePair[] {
-  return getAllPairs()
-    .filter((p) => p.category === category)
-    .slice(0, limit);
+  return indexableFirst(getAllPairs().filter((p) => p.category === category)).slice(0, limit);
 }

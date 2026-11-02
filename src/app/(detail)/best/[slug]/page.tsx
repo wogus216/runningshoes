@@ -9,7 +9,7 @@ import {
   getMatrixShoes,
   BEST_PAGE_SHOE_LIMIT,
 } from '@/lib/pseo/matrices';
-import { getAllPairs } from '@/lib/pseo/pairs';
+import { getIndexablePairs } from '@/lib/pseo/pairs';
 import { formatManwon } from '@/lib/format';
 import { getShoes } from '@/lib/data/shoes';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
@@ -76,7 +76,7 @@ export default async function BestPage({ params }: PageProps) {
 
   const shoes = getMatrixShoes(entry).slice(0, BEST_PAGE_SHOE_LIMIT);
   const shoeSlugSet = new Set(shoes.map((s) => s.slug));
-  const relatedPairs = getAllPairs()
+  const relatedPairs = getIndexablePairs()
     .filter((p) => shoeSlugSet.has(p.a.slug) && shoeSlugSet.has(p.b.slug))
     .slice(0, 6);
 

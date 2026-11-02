@@ -3,14 +3,14 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
 import { ChevronRight } from 'lucide-react';
-import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe } from '@/lib/pseo/pairs';
+import { getAllPairs, getPairBySlug, getPairsForCategory, getPairsForShoe, getPairWorth } from '@/lib/pseo/pairs';
 import { formatManwon, formatManwonExact } from '@/lib/format';
 import { SITE_URL, SITE_NAME, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 import { img } from '@/lib/image';
 import type { Shoe } from '@/types/shoe';
 import { withJosa } from '@/lib/korean';
-import { buildVerdicts, buildNarrative, buildFaqs, specRows } from '@/lib/pseo/pair-copy';
+import { analyzePair, buildFaqs, specRows, type PickReason } from '@/lib/pseo/pair-copy';
 
 type PageProps = { params: Promise<{ pair: string }> };
 
@@ -22,7 +22,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { pair } = await params;
   const found = getPairBySlug(pair);
   if (!found) return { title: '비교 페이지를 찾을 수 없습니다' };
-  const { a, b } = found;
+  const { a, b, category } = found;
+  const analysis = analyzePair(a, b, category);
+  // 독자의 선택을 바꿀 근거가 없는 페어는 색인하지 않는다(페이지는 유지) — 기준은 pair-copy.ts assessPairWorth
+  const worth = getPairWorth(found);
 
   // 페어별 실측 차이 — description 과 title 접미사가 같은 값을 쓴다
   const priceGap = a.price && b.price ? Math.abs(a.price - b.price) : null;
@@ -61,13 +64,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const titleSuffix = titleFacts.length ? titleFacts.join('·') : '무게·스택·가격 비교';
   const title = `${a.brand} ${a.name} vs ${b.brand} ${b.name} 차이 — ${titleSuffix}`;
   // 모델명이 숫자로 끝나면 과/와·은/는이 갈린다(33→과, 32→와). 조사를 쓰지 않고 vs 로 잇는다
+  // 뒷부분은 "그래서 누구에게 무엇"을 쓴다 — 종전 꼬리말("스택·드롭·토박스 …정리했습니다")은 359개 페이지 공통이었다
   const description = facts.length
-    ? `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무엇이 다른가. ${facts.join(', ')}. 스택·드롭·토박스 너비·내구성까지 항목별로 나란히 놓고 한국 러너 기준으로 정리했습니다.`
-    : `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 무게, 스택, 드롭, 가격, 한국 러너 적합성을 데이터로 비교합니다.`;
+    ? `${a.brand} ${a.name} vs ${b.brand} ${b.name} — ${facts.join(', ')}. 선택 기준: ${analysis.decisionSummary}.`
+    : `${a.brand} ${a.name} vs ${b.brand} ${b.name} — 선택 기준: ${analysis.decisionSummary}.`;
   return {
     title,
     description,
     alternates: { canonical: `/vs/${pair}` },
+    ...(!worth.index && { robots: { index: false, follow: true } }),
     openGraph: {
       // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
       images: [DEFAULT_OG_IMAGE],
@@ -101,16 +106,38 @@ function ShoeColumn({ shoe, label }: { shoe: Shoe; label: string }) {
   );
 }
 
+/** "이 신발을 고를 러너" — 누구에게(runner)·왜(evidence)를 한 줄씩 */
+function PickCard({ shoe, reasons }: { shoe: Shoe; reasons: PickReason[] }) {
+  return (
+    <div className="p-4 bg-white border border-border rounded-[4px] space-y-3">
+      <h3 className="font-semibold text-primary">
+        {withJosa(`${shoe.brand} ${shoe.name}`, '을/를')} 고를 러너
+      </h3>
+      {reasons.length > 0 ? (
+        <ul className="space-y-2.5">
+          {reasons.map((r) => (
+            <li key={`${r.axis}-${r.runner}`} className="text-sm">
+              <div className="text-primary">{r.runner}</div>
+              <div className="text-xs text-tertiary mt-0.5">근거: {r.evidence}</div>
+            </li>
+          ))}
+        </ul>
+      ) : (
+        <p className="text-sm text-secondary">이 신발이 분명하게 앞서는 항목은 없습니다.</p>
+      )}
+    </div>
+  );
+}
+
 export default async function ComparePairPage({ params }: PageProps) {
   const { pair } = await params;
   const found = getPairBySlug(pair);
   if (!found) notFound();
   const { a, b, category } = found;
 
-  const verdicts = buildVerdicts(a, b);
+  const analysis = analyzePair(a, b, category);
   const rows = specRows(a, b);
-  const narrative = buildNarrative(a, b, category);
-  const faqs = buildFaqs(a, b);
+  const faqs = buildFaqs(a, b, category, analysis);
   const relatedPairs = getPairsForCategory(category, 8).filter((p) => p.slug !== pair).slice(0, 4);
   const otherForA = getPairsForShoe(a.slug).filter((p) => p.slug !== pair).slice(0, 3);
   const otherForB = getPairsForShoe(b.slug).filter((p) => p.slug !== pair).slice(0, 3);
@@ -120,7 +147,7 @@ export default async function ComparePairPage({ params }: PageProps) {
       '@context': 'https://schema.org',
       '@type': 'Article',
       headline: `${a.brand} ${a.name} vs ${b.brand} ${b.name}`,
-      description: `${a.brand} ${withJosa(a.name, '과/와')} ${b.brand} ${b.name}의 무게·스택·드롭·가격·한국 러너 적합성을 데이터로 비교합니다.`,
+      description: `${a.brand} ${withJosa(a.name, '과/와')} ${b.brand} ${b.name} 선택 기준 — ${analysis.decisionSummary}.`,
       url: `${SITE_URL}/vs/${pair}`,
       about: [
         { '@type': 'Thing', name: `${a.brand} ${a.name}`, url: `${SITE_URL}/shoes/${a.slug}` },
@@ -159,8 +186,8 @@ export default async function ComparePairPage({ params }: PageProps) {
           {a.brand} {a.name} vs {b.brand} {b.name}
         </h1>
         <p className="text-secondary leading-relaxed">
-          같은 {category} 카테고리의 두 모델을 RunRepeat 랩 데이터와 한국 러너 적합성 기준으로 직접 비교했습니다.
-          무게, 스택, 드롭, 토박스, 가성비까지 상황별 승자를 한눈에 확인하세요.
+          같은 {category} 카테고리의 두 모델을 스펙만 나란히 놓지 않고, <strong className="text-primary">어떤 러너에게 어느 쪽이 맞는지</strong>를
+          근거와 함께 정리했습니다. 무게·스택·드롭은 랩 실측값, 쿠셔닝·안정성은 10점 만점 편집 점수이며 1점 차이는 체감 차이로 보지 않았습니다.
         </p>
       </header>
 
@@ -170,39 +197,42 @@ export default async function ComparePairPage({ params }: PageProps) {
         <ShoeColumn shoe={b} label="B" />
       </section>
 
-      <section className="space-y-3">
-        <h2 className="text-xl font-semibold text-primary">한눈에 비교 요약</h2>
-        <div className="space-y-3 text-secondary leading-relaxed">
-          {narrative.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
-        </div>
-        <p className="text-sm text-tertiary">
-          더 깊은 분석이 필요하면 <Link href={`/shoes/${a.slug}`} className="text-signal-dark hover:underline">{a.name}</Link>·
-          <Link href={`/shoes/${b.slug}`} className="text-signal-dark hover:underline">{b.name}</Link> 상세 페이지와{' '}
-          <Link href="/recommend" className="text-signal-dark hover:underline">1분 러닝화 추천</Link>을 활용하세요.
-        </p>
-      </section>
+      <section className="space-y-4">
+        <h2 className="text-xl font-semibold text-primary">결론: 누구에게 어떤 신발?</h2>
+        <p className="text-primary leading-relaxed">{analysis.bottomLine}</p>
 
-      <section className="space-y-3">
-        <h2 className="text-xl font-semibold text-primary">상황별 승자</h2>
-        <ul className="space-y-2">
-          {verdicts.map((v, i) => {
-            const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';
-            const winnerColor = v.winnerSlug === 'tie' ? 'text-tertiary' : 'text-signal-dark';
-            return (
-              <li key={i} className="flex items-start justify-between gap-4 p-3 bg-white border border-border rounded-[4px]">
-                <div>
-                  <div className="font-semibold text-primary">{v.label}</div>
-                  <div className="text-xs text-tertiary mt-0.5">{v.reason}</div>
-                </div>
-                <div className={`text-sm font-bold whitespace-nowrap ${winnerColor}`}>
-                  {v.winnerSlug === 'tie' ? '무승부' : `→ ${winnerName}`}
-                </div>
-              </li>
-            );
-          })}
-        </ul>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <PickCard shoe={a} reasons={analysis.forA} />
+          <PickCard shoe={b} reasons={analysis.forB} />
+        </div>
+
+        {analysis.similar.length > 0 && (
+          <div className="p-4 bg-surface border border-border rounded-[4px] space-y-2">
+            <h3 className="text-sm font-semibold text-primary">비슷한 점 — 이걸로는 고르지 않아도 됩니다</h3>
+            <ul className="space-y-1 text-sm text-secondary list-disc pl-5">
+              {analysis.similar.map((s) => (
+                <li key={s.axis}>{s.text}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        {analysis.caveats.length > 0 && (
+          <div className="p-4 bg-white border border-border rounded-[4px] space-y-2">
+            <h3 className="text-sm font-semibold text-primary">데이터만으로 단정하지 않은 부분</h3>
+            <ul className="space-y-1 text-sm text-secondary list-disc pl-5">
+              {analysis.caveats.map((c, i) => (
+                <li key={i}>{c}</li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <p className="text-sm text-tertiary">
+          본인 발 특성·목적이 애매하면 <Link href="/recommend" className="text-signal-dark hover:underline">1분 러닝화 추천</Link>으로
+          후보를 좁혀 보세요. 각 신발의 자세한 분석은 <Link href={`/shoes/${a.slug}`} className="text-signal-dark hover:underline">{a.name}</Link>·
+          <Link href={`/shoes/${b.slug}`} className="text-signal-dark hover:underline">{b.name}</Link> 상세 페이지에 있습니다.
+        </p>
       </section>
 
       <section className="space-y-3">
