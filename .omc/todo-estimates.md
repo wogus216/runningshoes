@@ -571,3 +571,4 @@ AI 콘텐츠팜 블로그가 마라톤 접수일을 틀리게 퍼뜨린다(안�
 | **2026-11-03** | `asics-tenka-pack-korea-release-2026` | 온유어마크 온라인 11/2 10시·매장 11/3 12시 발매 후 시제 갱신. 무신사 노바블라스트 6·소닉블라스트 2 상품의 판매 여부·가격 재확인. 품절은 옵션별 화면을 보고 판단하고 수량·재입고 추측 금지 |
 | ✅ **2026-11-01** | DB `busan-international-marathon-2026` | 공식 10/16 추가접수 공지의 종료 시각 10/30 18시 재확인. status 마감·접수 안내 지난 시제·lastVerified 갱신 |
 | ✅ **2026-11-01** | DB `marvel-run-korea-2026` | 공식 홈페이지 대회일 10/31 재확인. 날짜 경과에 따라 status 대회종료·lastVerified 갱신. 개최 결과나 기록을 확인했다는 뜻은 아님 |
+| ✅ **2026-11-02** | DB `jtbc-seoul-marathon-2026`·`ulsan-human-rights-marathon-2026` | 등록된 대회일 11/1 경과에 따라 status 마감 → 대회종료. 배포 전 validate의 날짜 불일치 2건 해소. 개최 결과·기록을 확인했다는 뜻은 아니며 lastVerified는 유지 |

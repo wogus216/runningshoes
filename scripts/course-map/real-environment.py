@@ -63,7 +63,11 @@ if not texture.exists():
         image[:,valid]=im[:,valid];covered|=valid
     coverage=float(covered.mean())
     if coverage < .999: raise RuntimeError(f'Incomplete satellite coverage: {coverage}')
-    Image.fromarray(image.transpose(1,2,0)).save(texture,quality=92,subsampling=0)
+    texture_image=Image.fromarray(image.transpose(1,2,0))
+    for quality in (80,75,70,65,60,55,50,45,40):
+        texture_image.save(texture,quality=quality,subsampling=2,optimize=True)
+        if texture.stat().st_size <= 500*1024: break
+    if texture.stat().st_size > 500*1024: raise RuntimeError('Satellite texture exceeds web image budget')
     print('SATELLITE_COVERAGE',coverage,'SIZE',width,height,flush=True)
 
 # One public 1-degree COG contains this whole course, sampled at ~30m spacing.

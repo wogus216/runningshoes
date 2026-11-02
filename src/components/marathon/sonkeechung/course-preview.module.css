@@ -134,7 +134,7 @@
   text-shadow: 0 2px 30px #18271c77;
 }
 .sceneHeading > span {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 0.22em;
   color: #f1d1a0;
 }
@@ -156,7 +156,7 @@
   bottom: 17px;
   display: flex;
   justify-content: space-between;
-  font-size: 9px;
+  font-size: 11px;
   color: #eee8d9;
   letter-spacing: 0.04em;
   pointer-events: none;
@@ -177,8 +177,8 @@
 }
 .distance span {
   display: block;
-  font-size: 8px;
-  letter-spacing: 0.1em;
+  font-size: 11px;
+  letter-spacing: 0.02em;
 }
 .transport {
   display: flex;
@@ -216,7 +216,7 @@
   cursor: pointer;
 }
 .scrub > span:last-child {
-  font-size: 10px;
+  font-size: 11px;
   white-space: nowrap;
   color: #b3b6a9;
   font-variant-numeric: tabular-nums;
@@ -241,7 +241,7 @@
   margin-bottom: 20px;
 }
 .notesHeading span {
-  font-size: 9px;
+  font-size: 11px;
   color: #b9b4a4;
   letter-spacing: 0.18em;
 }
@@ -259,14 +259,14 @@
   padding-top: 11px;
   text-align: left;
   white-space: pre-line;
-  font-size: 10px;
+  font-size: 11px;
   line-height: 1.7;
   color: #9ea497;
   transition: color 0.2s;
 }
 .stops button > span {
   display: block;
-  font-size: 9px;
+  font-size: 11px;
   color: #748175;
   margin-bottom: 7px;
 }
@@ -301,7 +301,7 @@
   padding-top: 45px;
 }
 .sources > div > span {
-  font-size: 9px;
+  font-size: 11px;
   color: var(--gold);
   letter-spacing: 0.17em;
 }
@@ -327,7 +327,7 @@
   margin-top: 17px;
 }
 .sourceLinks a {
-  font-size: 10px;
+  font-size: 11px;
   color: #cec9b6;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -420,7 +420,7 @@
     font-size: 19px;
   }
   .launchCopy small {
-    font-size: 9px;
+    font-size: 11px;
   }
   .viewport {
     height: 530px;
@@ -434,13 +434,13 @@
     font-size: 27px;
   }
   .sceneHeading p {
-    font-size: 10px;
+    font-size: 11px;
     line-height: 1.7;
   }
   .sceneMeta {
     left: 15px;
     right: 15px;
-    font-size: 8px;
+    font-size: 11px;
   }
   .distance {
     right: 20px;
@@ -463,10 +463,10 @@
     gap: 8px;
   }
   .scrub > span:last-child {
-    font-size: 9px;
+    font-size: 11px;
   }
   .mode {
-    font-size: 10px;
+    font-size: 11px;
     margin-left: auto;
   }
   .routeNotes {
@@ -477,11 +477,11 @@
     gap: 16px 8px;
   }
   .stops button {
-    font-size: 10px;
+    font-size: 11px;
   }
   .profileNote {
     text-align: left;
-    font-size: 8px;
+    font-size: 11px;
   }
   .sources {
     grid-template-columns: 1fr;
