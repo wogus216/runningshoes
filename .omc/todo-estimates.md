@@ -572,3 +572,10 @@ AI 콘텐츠팜 블로그가 마라톤 접수일을 틀리게 퍼뜨린다(안�
 | ✅ **2026-11-01** | DB `busan-international-marathon-2026` | 공식 10/16 추가접수 공지의 종료 시각 10/30 18시 재확인. status 마감·접수 안내 지난 시제·lastVerified 갱신 |
 | ✅ **2026-11-01** | DB `marvel-run-korea-2026` | 공식 홈페이지 대회일 10/31 재확인. 날짜 경과에 따라 status 대회종료·lastVerified 갱신. 개최 결과나 기록을 확인했다는 뜻은 아님 |
 | ✅ **2026-11-02** | DB `jtbc-seoul-marathon-2026`·`ulsan-human-rights-marathon-2026` | 등록된 대회일 11/1 경과에 따라 status 마감 → 대회종료. 배포 전 validate의 날짜 불일치 2건 해소. 개최 결과·기록을 확인했다는 뜻은 아니며 lastVerified는 유지 |
+
+## 2026-11-02 마라톤 글 발행 후속
+
+| 날짜 | 대상 | 확인 내용 |
+|---|---|---|
+| **2026-11-03** | `sonkeechung-peace-marathon-2026` 글·대회 DB | 공식 2차 접수 11/2 17시 종료 여부와 3차 접수 공지 확인. 종료됐으면 DB status 마감, 글·기존 일정 글의 접수 문장을 지난 시제로 갱신 |
+| **2026-12-09** | `daegu-new-year-naked-marathon-2027` 글·대회 DB | 공식 잔여 정원과 12/10 예정 마감·복장 관련 추가 공지 확인. 조기 마감 시 status·글 접수 문구 갱신 |

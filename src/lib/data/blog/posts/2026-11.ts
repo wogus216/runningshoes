@@ -2,6 +2,76 @@ import type { BlogPost } from '@/types/blog';
 
 export const posts_2026_11: BlogPost[] = [
   {
+    id: 'daegu-new-year-naked-marathon-2027',
+    slug: 'daegu-new-year-naked-marathon-2027',
+    title: '2027 대구 전국새해 알몸마라톤 접수 | 1월 3일 5km·10km, 복장 규정과 참가비',
+    description: '제19회 전국새해 알몸마라톤이 2027년 1월 3일 대구육상진흥센터 앞에서 열립니다. 10km 5만원, 5km 일반 4만원·학생 2만원. 12월 10일까지 입금 순 선착순 2,000명 접수이며 시상 대상 복장 규정과 현장 수령 일정을 확인하세요.',
+    thumbnail: '/images/blog/daegu-new-year-naked-marathon-2027.webp',
+    author: '산초 에디터',
+    publishedAt: '2026-11-02',
+    category: 'news',
+    readingTime: 4,
+    tags: ['전국새해 알몸마라톤', '대구 알몸마라톤', '2027 마라톤', '새해 마라톤', '대구 러닝 대회', '10km 대회', '5km 대회'],
+    event: {
+      name: '제19회 전국새해 알몸마라톤대회',
+      startDate: '2027-01-03T10:00:00+09:00',
+      location: { name: '대구육상진흥센터 앞', address: '대구광역시 수성구 미술관로 88' },
+      organizer: '대구광역시육상연맹',
+      url: 'https://r.dgrunner.co.kr:9023/',
+      offers: [
+        { name: '10km', priceKrw: 50000, url: 'https://r.dgrunner.co.kr:9023/' },
+        { name: '5km 일반', priceKrw: 40000, url: 'https://r.dgrunner.co.kr:9023/' },
+        { name: '5km 학생', priceKrw: 20000, url: 'https://r.dgrunner.co.kr:9023/' },
+      ],
+    },
+    faqs: [
+      { question: '2027 전국새해 알몸마라톤은 언제 열리나요?', answer: '2027년 1월 3일(일) 대구육상진흥센터 앞에서 열립니다. 10km는 오전 10시, 5km 학생부는 10시 5분, 5km 일반부는 10시 10분 출발입니다.' },
+      { question: '접수 마감일과 참가비는 얼마인가요?', answer: '공식 요강에는 2026년 10월 28일부터 12월 10일까지 선착순 2,000명으로 안내돼 있습니다. 종목별 입금 순서이며, 10km 50,000원·5km 일반 40,000원·5km 학생 20,000원입니다. 정원이 차면 접수 기간 중에도 끝날 수 있습니다.' },
+      { question: '정말 알몸으로 달려야 하나요?', answer: '공식 요강의 경기 복장 규정은 남성 상의 탈의, 여성 탑 복장, 남녀 모두 반바지입니다. 복장 위반 시 입상에서 제외된다고 적혀 있습니다. 시상에 참가하지 않는 러너에게도 같은 규정을 적용하는지는 2027년 요강에 명시돼 있지 않아 주최 측에 확인해야 합니다.' },
+      { question: '배번호와 기념품은 어디서 받나요?', answer: '대회 당일 오전 7시 30분부터 9시 20분까지 현장에서 배번호와 기념품을 배부한다고 공식 일정표에 적혀 있습니다.' },
+    ],
+    content: `
+<div class="tldr">
+  <span class="tldr-label">3줄 요약</span>
+  <ul>
+    <li><strong>2027년 1월 3일(일) 대구에서 5km·10km를 달립니다.</strong> 출발 장소는 대구육상진흥센터 앞입니다.</li>
+    <li><strong>접수는 12월 10일까지, 입금 순 선착순 2,000명입니다.</strong> 10km 5만원, 5km 일반 4만원·학생 2만원입니다.</li>
+    <li><strong>시상 대상 복장 규정을 확인하세요.</strong> 남성 상의 탈의·여성 탑·남녀 반바지이며, 위반하면 입상에서 제외됩니다.</li>
+  </ul>
+</div>
+
+<p>새해 첫 대회를 찾는다면 날짜부터 눈에 들어옵니다. <strong>제19회 전국새해 알몸마라톤</strong>은 2027년 1월 3일 일요일, 대구육상진흥센터 앞에서 열립니다. 이름 때문에 망설여질 수 있지만, 공식 요강의 복장 규정은 말 그대로 옷을 전부 벗는 방식이 아닙니다.</p>
+
+<h2>종목·참가비·출발 시각</h2>
+<table>
+  <thead><tr><th>종목</th><th>참가비</th><th>정원</th><th>출발</th></tr></thead>
+  <tbody>
+    <tr><td>10km</td><td>50,000원</td><td>1,200명</td><td>10:00</td></tr>
+    <tr><td>5km 일반</td><td>40,000원</td><td>700명</td><td>10:10</td></tr>
+    <tr><td>5km 학생</td><td>20,000원</td><td>100명</td><td>10:05</td></tr>
+  </tbody>
+</table>
+<p>제한시간은 10km 1시간 30분, 5km 1시간입니다. 세 종목 모두 기록칩과 모바일 기록증이 안내돼 있습니다. 배번호와 기념티는 <strong>대회 당일 07:30~09:20 현장 배부</strong>이므로 출발 직전에 도착하면 수령이 빠듯할 수 있습니다.</p>
+
+<h2>접수는 입금 순 선착순</h2>
+<p><a href="https://r.dgrunner.co.kr:9023/run/9000.asp?T=1" target="_blank" rel="noopener noreferrer">공식 대회요강</a>의 접수 기간은 <strong>2026년 10월 28일~12월 10일</strong>입니다. 전체 2,000명을 종목별 입금 순서로 받습니다. 신청만 하고 결제를 미루면 자리가 확정되지 않으니, 신청 뒤 입금·신청 확인까지 살펴보세요. 현재 남은 자리는 공식 페이지에서 확인해야 합니다.</p>
+<p>환불은 접수 마감 전 신청하면 참가비의 10%를 공제하고, 마감 뒤에는 불가하다고 요강에 적혀 있습니다. 날씨나 재해 때문에 행사가 연기·취소될 때의 규정도 있으니 신청 전 원문을 읽어보는 편이 좋습니다.</p>
+
+<h2>‘알몸’ 복장은 어디까지인가</h2>
+<p>공식 경기 규정에는 <strong>남성 상의 탈의, 여성 탑 복장, 남녀 모두 반바지</strong>라고 쓰여 있습니다. 복장을 지키지 않으면 <strong>입상에서 제외</strong>한다는 조건입니다. 이 문구만으로 시상에 도전하지 않는 참가자의 자유복장 가능 여부까지 단정할 수는 없습니다. 자신의 복장에 맞춰 참가하려면 신청 전에 주최 측에 확인하세요.</p>
+<p>1월 초 야외 대회인 만큼 출발 전 대기 시간과 완주 직후 갈아입을 옷도 고려해야 합니다. 특히 배번호를 현장에서 받아야 하므로 이동 계획에 수령 시간을 넣어두세요.</p>
+
+<h2>신청 전 확인할 두 가지</h2>
+<ul>
+  <li><strong>정원:</strong> 공식 요강의 마감일은 12월 10일이지만, 입금 순 2,000명을 채우면 먼저 끝날 수 있습니다.</li>
+  <li><strong>코스:</strong> 공식 홈페이지의 <a href="https://r.dgrunner.co.kr:9023/run/9002.asp?T=1" target="_blank" rel="noopener noreferrer">10km 코스도</a>는 확인할 수 있습니다. 5km 세부 경로와 실제 고도는 이 글에서 확인하지 못했으므로 코스도만 보고 경사를 추정하지 마세요.</li>
+</ul>
+<p>다른 겨울 대회와 날짜를 비교하려면 <a href="/marathon">마라톤 캘린더</a>를 함께 보세요.</p>
+
+<p><small>출처: <a href="https://r.dgrunner.co.kr:9023/run/9000.asp?T=1" target="_blank" rel="noopener noreferrer">대구광역시육상연맹 제19회 전국새해 알몸마라톤 공식 대회요강</a>(일정·비용·정원·복장·환불·현장 배부), <a href="https://r.dgrunner.co.kr:9023/run/9002.asp?T=1" target="_blank" rel="noopener noreferrer">공식 10km 코스도</a>. 2026년 11월 2일 확인. 잔여 정원과 시상 비대상자의 복장 적용 여부는 확인되지 않았습니다.</small></p>
+`,
+  },
+  {
     id: 'asics-tenka-pack-korea-release-2026',
     slug: 'asics-tenka-pack-korea-release-2026',
     title: '아식스 텐카 팩 11월 2일 발매 | 슈퍼블라스트 3·메가블라스트 가격과 구매처',
