@@ -1,0 +1,16 @@
+자료 출처·이용 표기
+
+공식 코스: son.wizrun.com/full
+GPX 제작·분석: runruun.com/posts/108/
+페이스 운영 참고: World Athletics, Marathon Mathematics (2016.11.01)
+보급 참고: 한국아지노모도 아미노샷 제품 안내 / AIS Sports Gels 가이드
+역사 자료: 1936 올림픽 공식 보고서(LA84), 국사편찬위원회 대한민국사연표(2002.11.15)
+
+사진: Wikimedia Commons, Sohn Kee-chung (Kitei Son) Medal Ceremony 1936 Summer Olympics. 1936년 현장 언론 촬영, 공개 도메인 표기. WebP 변환. 일제강점기 당시 인물·복장을 수정하지 않았습니다. 소개 문구는 편집 문구이며 손기정 선생의 발언을 인용한 것이 아닙니다.
+
+공식 거리 42.195km와 참고 GPX 길이 약 42.26km는 구분했습니다. 거리·고도는 개인 제작 공개 GPX 참고값으로 공식 측량·인증 경로가 아닙니다. 실제 반환 위치·차로·교량 노면 높이는 미확정이며 대회 당일 안내를 우선하세요. 위성영상은 2025.11.12 자료이고 건물 높이·교량은 일부 단순화했습니다.
+
+사이트의 보급 예시는 아미노샷 퍼펙트에너지 45g(탄수화물 24.4g) 기준이며 제조사 복용 지침이 아닙니다. 출발 전 보급과 스포츠음료는 합계에서 제외합니다. 훈련에서 확인한 섭취량으로 조절하고 제품 포장 안내를 우선하세요. 표시 위치는 공식 급수대나 젤 제공 장소가 아닙니다.
+
+© OpenStreetMap contributors. Contains modified Copernicus Sentinel data (2025).
+produced using Copernicus WorldDEM-30 © DLR e.V. 2010-2014 and © Airbus Defence and Space GmbH 2014-2018 provided under COPERNICUS by the European Union and ESA; all rights reserved

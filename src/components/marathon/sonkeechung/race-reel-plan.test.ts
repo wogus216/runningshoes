@@ -1,28 +1,40 @@
 import { describe, expect, it } from "vitest";
-import { REEL_FUEL_STOPS, MAP_START, MAP_END, reelProgress, fuelStopAt } from "../../../../video/saturday-teaser/src/sonkeechung-reel-plan";
+import { readFileSync } from "node:fs";
+import { REEL_SECONDS, REEL_INTRO_SECONDS, ROUTE_ANCHORS, REFERENCE_ROUTE_KM, MAP_START, MAP_END, PACE_START, CTA_START, reelProgress } from "../../../../video/saturday-teaser/src/sonkeechung-reel-plan";
+import { pointAt, type CourseData } from "./course-model";
 
-describe("course reel map and fueling sync", () => {
-  it("holds the map exactly at every gel example while the corresponding cue is visible", () => {
-    expect(REEL_FUEL_STOPS).toHaveLength(8);
-    for (const stop of REEL_FUEL_STOPS) {
-      for (const offset of [0.01, 0.9, 1.79]) {
-        expect(reelProgress(stop.start + offset)).toBeCloseTo(stop.minutes / 240, 8);
-        expect(fuelStopAt(stop.start + offset)?.minutes).toBe(stop.minutes);
-      }
+const course = JSON.parse(readFileSync("public/data/sonkeechung/course.json", "utf8")) as CourseData;
+
+describe("course reel terrain and strategy timeline", () => {
+  it("moves into the course after two seconds and reserves time for pacing and the website", () => {
+    expect(REEL_INTRO_SECONDS).toBe(2);
+    expect(MAP_START).toBe(REEL_INTRO_SECONDS);
+    expect(PACE_START).toBe(MAP_END);
+    expect(CTA_START - PACE_START).toBeGreaterThanOrEqual(6);
+    expect(REEL_SECONDS - CTA_START).toBeGreaterThanOrEqual(8);
+  });
+  it("holds at upcoming terrain or the turnaround rather than eight gel stops", () => {
+    expect(REFERENCE_ROUTE_KM).toBe(course.routeDistanceKm);
+    const holds = ROUTE_ANCHORS.filter((anchor, index) => index && anchor[1] === ROUTE_ANCHORS[index - 1][1]);
+    expect(holds).toHaveLength(3);
+    expect(reelProgress(17) * course.routeDistanceKm).toBeCloseTo(17.2, 8);
+    expect(reelProgress(25)).toBeCloseTo(course.markers.find((marker) => marker.id === "turn2")!.at, 5);
+    expect(reelProgress(31) * course.routeDistanceKm).toBeCloseTo(34, 8);
+    for (const [from, to] of [[17, 20], [34, 37]]) {
+      expect(pointAt(course, to / course.routeDistanceKm)[2]).toBeGreaterThan(pointAt(course, from / course.routeDistanceKm)[2] + 20);
     }
   });
-  it("moves monotonically between the actual endpoints and never overlaps gel cues", () => {
+  it("moves monotonically through the actual endpoints and keeps every frame in bounds", () => {
     expect(reelProgress(0)).toBe(0);
     expect(reelProgress(MAP_START)).toBe(0);
     expect(reelProgress(MAP_END)).toBe(1);
-    expect(reelProgress(52)).toBe(1);
+    expect(reelProgress(REEL_SECONDS)).toBe(1);
     let last = 0;
-    for (let frame = 0; frame < 1560; frame++) {
+    for (let frame = 0; frame < REEL_SECONDS * 30; frame++) {
       const current = reelProgress(frame / 30);
       expect(current).toBeGreaterThanOrEqual(last - 1e-9);
       expect(current).toBeLessThanOrEqual(1);
       last = current;
     }
-    expect(REEL_FUEL_STOPS.every((stop, i) => stop.end < (REEL_FUEL_STOPS[i + 1]?.start ?? MAP_END))).toBe(true);
   });
 });

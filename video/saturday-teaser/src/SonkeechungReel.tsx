@@ -20,8 +20,8 @@ import {
   pointAt,
   type CourseData,
 } from "../../../src/components/marathon/sonkeechung/course-model";
-import { SonkeechungHeritage, SonkeechungFuelCue, SonkeechungFuelRecap } from "./SonkeechungFuel";
-import { REEL_SECONDS, reelProgress, fuelStopAt } from "./sonkeechung-reel-plan";
+import { SonkeechungHeritage, SonkeechungPaceBrief } from "./SonkeechungStrategy";
+import { REEL_SECONDS, REEL_INTRO_SECONDS, MAP_START, MAP_END, PACE_START, CTA_START, reelProgress } from "./sonkeechung-reel-plan";
 
 const font = '"Pretendard Saturday", sans-serif';
 const ivory = "#fff5df";
@@ -196,10 +196,9 @@ const Profile: React.FC<{ data: CourseData; progress: number }> = ({
   );
 };
 
-const RouteReadout: React.FC<{ data: CourseData; progress: number; hideNumbers: boolean }> = ({
+const RouteReadout: React.FC<{ data: CourseData; progress: number }> = ({
   data,
   progress,
-  hideNumbers,
 }) => {
   const p = pointAt(data, progress);
   return (
@@ -209,7 +208,6 @@ const RouteReadout: React.FC<{ data: CourseData; progress: number; hideNumbers: 
           position: "absolute",
           left: 88,
           top: 808,
-          opacity: hideNumbers ? 0 : 1,
           width: 810,
           fontFamily: font,
           color: ivory,
@@ -260,7 +258,7 @@ const RouteReadout: React.FC<{ data: CourseData; progress: number; hideNumbers: 
         }}
       >
         거리·고도는 공개 GPX 참고값<br />
-        4시간 완주 · 아미노샷 45g 보급 예시
+        젤은 계획한 간격대로 · 전체 보급표는 사이트에서
       </div>
     </>
   );
@@ -283,22 +281,17 @@ export const CourseReelRecap: React.FC = () => {
           margin: 0,
         }}
       >
-        손기정,
-        <br />그 이름을 기억하며.
+        내 목표에 맞는
+        <br />코스 전략은?
       </h1>
       <div style={{ marginTop: 48, fontSize: 44, lineHeight: 1.7 }}>
-        <div>임진각 출발</div>
-        <div>
-          <span style={{ color: gold }}>1차 반환</span> · 도라산역 방면
-        </div>
-        <div>
-          <span style={{ color: gold }}>2차 반환</span> · 리비삼거리 방면
-        </div>
-        <div>다시 임진각</div>
+        <div>전체 코스와 구간별 고도</div>
+        <div>목표별 페이스 · 젤 타이밍</div>
       </div>
       <p style={{ fontSize: 42, lineHeight: 1.4, marginTop: 36 }}>
-        손기정평화마라톤 · 풀코스
+        <span style={{ color: gold }}>프로필 링크에서 보기 ↗</span>
       </p>
+      <p style={{ fontSize: 36, color: "#e3ddcd", marginTop: 28 }}>@allrunabout · 러닝의 모든것<br />allrunabout.com</p>
       <div
         style={{
           fontSize: 30,
@@ -321,7 +314,6 @@ export const SonkeechungReel: React.FC = () => {
   const data = useCourse();
   const seconds = frame / fps;
   const progress = reelProgress(seconds);
-  const fuelStop = fuelStopAt(seconds);
   if (!data) return null;
   return (
     <AbsoluteFill
@@ -341,10 +333,10 @@ export const SonkeechungReel: React.FC = () => {
         <CourseScene
           data={data}
           time={0.085 + progress * 0.82}
-          overview={seconds >= 38}
+          overview={seconds >= MAP_END}
         />
       </ThreeCanvas>
-      <Sequence from={4 * fps} durationInFrames={3 * fps} name="임진각 · Blender 도입">
+      <Sequence from={2 * fps} durationInFrames={3 * fps} name="임진각 · 코스 바로 진입">
       <AbsoluteFill style={{ overflow: "hidden" }}>
         <Img
           src={staticFile("sonkeechung/hero.webp")}
@@ -352,7 +344,7 @@ export const SonkeechungReel: React.FC = () => {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            scale: interpolate(frame, [4 * fps, 7 * fps], [1.035, 1], {
+            scale: interpolate(frame, [2 * fps, 5 * fps], [1.035, 1], {
               extrapolateLeft: "clamp",
               extrapolateRight: "clamp",
             }),
@@ -384,26 +376,26 @@ export const SonkeechungReel: React.FC = () => {
           }}
         />
       </div>
-      <Sequence durationInFrames={4 * fps} name="손기정 · 1936에서 2026으로">
+      <Sequence durationInFrames={REEL_INTRO_SECONDS * fps} name="손기정 · 2초 도입">
         <SonkeechungHeritage />
       </Sequence>
-      <Sequence from={4 * fps} durationInFrames={3 * fps} name="11월 15일 임진각 출발">
+      <Sequence from={2 * fps} durationInFrames={4 * fps} name="11월 15일 임진각 출발">
         <CourseReelTitle
           label="손기정평화마라톤 · 풀코스"
-          title={"11월 15일,\n임진각에서 출발."}
-          detail={"그 이름을 기억하며 달릴\n42.195km를 미리 봅니다."}
+          title={"두 번의 반환,\n어디서 힘을 아낄까?"}
+          detail={"11월 15일 · 임진각 출발\n42.195km 코스를 먼저 봅니다."}
         />
       </Sequence>
-      <Sequence from={7 * fps} durationInFrames={5 * fps} name="01 · 통일대교">
+      <Sequence from={6 * fps} durationInFrames={4 * fps} name="01 · 통일대교 · 초반 과속 주의">
         <CourseReelTitle
           label="01 / 임진강을 건너"
           title={"통일대교를 지나\n도라산역 방면으로."}
-          detail={"임진각 → 마정교차로 → 통일대교"}
+          detail={"임진각 → 마정교차로 → 통일대교\n초반에는 추월보다 내 리듬부터."}
         />
       </Sequence>
       <Sequence
-        from={12 * fps}
-        durationInFrames={4 * fps}
+        from={10 * fps}
+        durationInFrames={3 * fps}
         name="02 · 첫 번째 반환"
       >
         <CourseReelTitle
@@ -413,36 +405,36 @@ export const SonkeechungReel: React.FC = () => {
         />
       </Sequence>
       <Sequence
-        from={16 * fps}
-        durationInFrames={7 * fps}
-        name="03 · 여우고개와 37번국도"
+        from={13 * fps}
+        durationInFrames={8 * fps}
+        name="03 · 17–20km 참고 고도 상승 · 힘과 보급 체크"
       >
         <CourseReelTitle
-          label="03 / 아직 끝이 아닙니다"
-          title={"여우고개를 지나\n37번국도로."}
-          detail={"마정교차로 → 여우고개사거리"}
+          label="03 / 17–20km 근처 · GPX 참고"
+          title={"여우고개 너머,\n고도 상승 구간."}
+          detail={"오르막은 속도보다 일정한 힘으로.\n보급 시간을 놓치지 마세요."}
         />
       </Sequence>
       <Sequence
-        from={23 * fps}
-        durationInFrames={6 * fps}
+        from={21 * fps}
+        durationInFrames={7 * fps}
         name="04 · 두 번째 반환"
       >
         <CourseReelTitle
-          label="04 / 두 번째 반환"
-          title={"리비삼거리 방면,\n한 번 더 돌아서."}
-          detail={"반환 후 37번국도 맞은편 도로로 복귀"}
+          label="04 / 리비삼거리 방면 · 두 번째 반환"
+          title={"반환 후에도,\n아직 남은 거리."}
+          detail={"37번국도 맞은편 도로로 복귀.\n다음 보급 시간을 확인하세요."}
         />
       </Sequence>
       <Sequence
-        from={29 * fps}
-        durationInFrames={6 * fps}
-        name="05 · 후반 고도 흐름"
+        from={28 * fps}
+        durationInFrames={7 * fps}
+        name="05 · 34–37km 참고 고도 상승 · 후반 컨디션"
       >
         <CourseReelTitle
-          label="05 / 돌아오는 길"
-          title={"35km 근처,\n고도 흐름 한 번 더."}
-          detail={"GPX 그래프로 후반 구간을 확인하세요."}
+          label="05 / 34–37km 근처 · GPX 참고"
+          title={"돌아오는 길,\n고도 상승 한 번 더."}
+          detail={"피로와 남은 보급을 함께 확인.\n지연된 시간, 무리해서 만회하지 않기."}
         />
       </Sequence>
       <Sequence
@@ -453,29 +445,28 @@ export const SonkeechungReel: React.FC = () => {
         <CourseReelTitle
           label="06 / 다시 임진각"
           title={"여우고개를 지나,\n다시 임진각으로."}
-          detail={"왔던 순서를 기억하며 돌아옵니다."}
+          detail={"남은 거리를 확인하며 피니시까지."}
         />
       </Sequence>
       <Sequence
-        from={7 * fps}
-        durationInFrames={31 * fps}
+        from={MAP_START * fps}
+        durationInFrames={(MAP_END - MAP_START) * fps}
         name="거리·고도 · GPX 참고"
       >
-        <RouteReadout data={data} progress={progress} hideNumbers={Boolean(fuelStop)} />
-        {fuelStop && <SonkeechungFuelCue stop={fuelStop} elevationM={pointAt(data, progress)[2]} />}
+        <RouteReadout data={data} progress={progress} />
       </Sequence>
       <Sequence
-        from={38 * fps}
-        durationInFrames={7 * fps}
-        name="저장용 · 아미노바이탈 8회 보급 예시"
+        from={PACE_START * fps}
+        durationInFrames={(CTA_START - PACE_START) * fps}
+        name="4시간 페이스 예시 · 목표별 전략은 사이트에서"
       >
-        <SonkeechungFuelRecap />
+        <SonkeechungPaceBrief />
       </Sequence>
-      <Sequence from={45 * fps} durationInFrames={7 * fps} name="손기정평화마라톤 · 코스 요약">
+      <Sequence from={CTA_START * fps} durationInFrames={(REEL_SECONDS - CTA_START) * fps} name="프로필 링크 · 코스·고도·페이스·보급">
         <AbsoluteFill style={{ backgroundColor: "#102016b8" }} />
         <CourseReelRecap />
       </Sequence>
-      {seconds >= 4 && <div
+      {seconds >= REEL_INTRO_SECONDS && <div
         style={{
           position: "absolute",
           left: 88,
