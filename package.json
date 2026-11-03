@@ -13,6 +13,7 @@
     "test:coverage": "vitest run --coverage",
     "validate": "tsx scripts/validate.ts",
     "check:crossref": "tsx scripts/crossref-report.ts",
+    "check:vs": "tsx scripts/vs-worth-report.ts",
     "check:payload": "node scripts/check-payload.js",
     "check:ads": "node scripts/check-ads.js",
     "images": "node scripts/process-images.js",

@@ -6931,7 +6931,7 @@ export const posts_2026_09: BlogPost[] = [
   <li><a href="/marathon/gangnam-peace-marathon-2026">2026 강남국제평화마라톤</a> — 10/5(월) 대체공휴일 개최로 <strong>대회일이 지났습니다</strong>(참가비 3만원). 참가비 전액을 전쟁고아 지원에 기부하는 대회입니다</li>
   <li><a href="/marathon/buyeo-goodtrae-marathon-2026">부여 굿뜨래 마라톤</a> — 11/7(토), <strong>접수가 끝났습니다</strong>(10/1 마감 뒤 10/15 선착순 200명 추가 접수가 열렸다가 다시 마감, 공식 공지). 풀코스 신청에는 최근 1년 하프 2시간·풀 5시간 이내 기록증이 필요했습니다</li>
   <li><a href="/marathon/jeju-mandarin-marathon-2026">제주감귤마라톤</a> — 11/15(일), 접수는 <strong>7/20 선착순으로 이미 마감</strong>됐습니다(공식 공지, 요강상 기간은 9/11까지)</li>
-  <li><a href="/marathon/sonkeechung-peace-marathon-2026">손기정평화마라톤</a> — 11/15(일), 파주 임진각. 2차 접수는 11/2(월) 17시까지이며 결제 완료 순서로 선착순입니다(조기 마감 가능). 공식 풀코스 경로도 공개됐습니다</li>
+  <li><a href="/marathon/sonkeechung-peace-marathon-2026">손기정평화마라톤</a> — 11/15(일), 파주 임진각. 2차 접수는 11/4(수) 17시까지이며 결제 완료 순서로 선착순입니다(조기 마감 가능). 공식 풀코스 경로도 공개됐습니다</li>
 </ul>
 
 <p>대회 규모가 작으면 급수 간격·제한시간·기념품 구성이 대형 대회와 다릅니다. 전체 일정과 조건은 <a href="/marathon">마라톤 캘린더</a>에서 확인할 수 있습니다.</p>

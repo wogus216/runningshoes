@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { getAllPairs } from '@/lib/pseo/pairs';
+import { getIndexablePairs } from '@/lib/pseo/pairs';
 import { categoryOrder } from '@/types/shoe';
 import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
@@ -21,7 +21,9 @@ export const metadata: Metadata = {
 };
 
 export default function VsHubPage() {
-  const pairs = getAllPairs();
+  // 색인 대상 페어만 싣는다 — 선택을 바꿀 근거가 없는 기계적 조합(noindex)은 허브에서 빼서
+  // 크롤러·독자가 쓸모 있는 비교부터 보게 한다. 기준은 pair-copy.ts assessPairWorth
+  const pairs = getIndexablePairs();
   const grouped = pairs.reduce<Record<string, typeof pairs>>((acc, p) => {
     if (!acc[p.category]) acc[p.category] = [];
     acc[p.category].push(p);
@@ -64,7 +66,7 @@ export default function VsHubPage() {
       <header className="space-y-3">
         <h1 className="text-3xl md:text-4xl font-bold text-primary">러닝화 1:1 비교</h1>
         <p className="text-secondary leading-relaxed max-w-3xl">
-          같은 카테고리에서 자주 비교되는 인기 모델 페어를 모았습니다. 각 페어는 무게, 스택, 드롭, 가성비, 발볼 적합성, 부상 예방까지 데이터로 직접 비교합니다.
+          같은 카테고리에서 자주 비교되는 인기 모델 페어를 모았습니다. 스펙을 나열하는 데서 그치지 않고, 발볼·안정성·쿠셔닝·무게·가격 차이를 근거로 어떤 러너에게 어느 쪽이 맞는지 정리했습니다.
         </p>
       </header>
 

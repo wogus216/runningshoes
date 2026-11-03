@@ -29,6 +29,8 @@ export interface KoreanFootFit {
   toBoxWidth: ToBoxWidth;
   flatFootCompatibility: CompatibilityLevel;
   wideOptions: boolean;
+  /** 와이드가 일부 조건에서만 판매될 때의 제한(예: '여성만 판매'). 비교 페이지 문구가 "와이드 버전 있음"을 그대로 말하지 않게 한다 */
+  wideOptionsNote?: string;
   winterCompatibility: CompatibilityLevel;
   summerCompatibility?: CompatibilityLevel;
 }
