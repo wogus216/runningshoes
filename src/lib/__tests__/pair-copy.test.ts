@@ -4,12 +4,14 @@ import {
   assessPairWorth,
   buildFaqs,
   generationOf,
+  toeBoxMm,
   specRows,
   WIDTH_RANK,
   KNEE_RANK,
   THRESHOLDS,
 } from '@/lib/pseo/pair-copy';
 import { getAllPairs, getIndexablePairs, getPairWorth, PINNED_PAIRS } from '@/lib/pseo/pairs';
+import { shoes } from '@/lib/data/shoes';
 import type { Shoe } from '@/types/shoe';
 
 /**
@@ -227,5 +229,63 @@ describe('rank tables', () => {
     expect(WIDTH_RANK.standard).toBeLessThan(WIDTH_RANK.wide);
     expect(KNEE_RANK.warning).toBeLessThan(KNEE_RANK.caution);
     expect(KNEE_RANK.good).toBeLessThan(KNEE_RANK.excellent);
+  });
+});
+
+describe('토박스 판정 (2026-11-03 데이터 검증)', () => {
+  const bySlug = (slug: string) => shoes.find((x) => x.slug === slug)!;
+
+  it('실측(mm)을 문구에서 읽는다 — 실측이 없다고 적힌 신발은 null', () => {
+    expect(toeBoxMm(bySlug('adidas-supernova-rise-2'))).toBe(77.7);
+    expect(toeBoxMm(bySlug('puma-velocity-nitro-4'))).toBe(71.6);
+    expect(toeBoxMm(bySlug('salomon-pulsar'))).toBeNull();
+  });
+
+  it('등급이 실측과 모순되면 근거 문구가 있어야 한다 — 좁음 ≤73.2mm, 넓음 ≥75.0mm, 보통 71.0~75.5mm', () => {
+    for (const s of shoes) {
+      const mm = toeBoxMm(s);
+      const tier = s.koreanFootFit?.toBoxWidth;
+      if (mm === null || !tier) continue;
+      // 경계선 사례는 랩 본문 평가로 등급을 정한다고 파일에 적어 둔다(예: 글리세린 맥스 74.3mm 넓음). 근거 없는 모순만 잡는다
+      if (/랩 본문|랩 원문|경계선/.test(s.detailedSpecs?.width ?? '')) continue;
+      if (tier === 'narrow') expect(mm, s.slug).toBeLessThanOrEqual(73.2);
+      if (tier === 'wide') expect(mm, s.slug).toBeGreaterThanOrEqual(75.0);
+      if (tier === 'standard') {
+        expect(mm, s.slug).toBeGreaterThanOrEqual(71.0);
+        expect(mm, s.slug).toBeLessThanOrEqual(75.5);
+      }
+    }
+  });
+
+  it('등급이 갈려도 실측 차이가 1.5mm 미만이면 발볼로 고르라고 하지 않는다', () => {
+    for (const { a, b, category, slug } of pairs) {
+      const ma = toeBoxMm(a);
+      const mb = toeBoxMm(b);
+      if (ma === null || mb === null || Math.abs(ma - mb) >= THRESHOLDS.toeBoxMm) continue;
+      const an = analyzePair(a, b, category);
+      const sameTierGap = a.koreanFootFit?.toBoxWidth === b.koreanFootFit?.toBoxWidth;
+      const picked = [...an.forA, ...an.forB].some((r) => r.axis === 'fit' && !/와이드 버전은/.test(r.evidence));
+      expect(picked && !sameTierGap, slug).toBe(false);
+    }
+  });
+
+  it('발볼 근거에는 실측이 있으면 mm 가 함께 나온다', () => {
+    const p = pairs.find((x) => x.slug === 'adidas-supernova-rise-2-vs-puma-velocity-nitro-4')!;
+    const fit = [...analyzePair(p.a, p.b, p.category).forA, ...analyzePair(p.a, p.b, p.category).forB].find((r) => r.axis === 'fit')!;
+    expect(fit.evidence).toContain('77.7mm');
+    expect(fit.evidence).toContain('71.6mm');
+  });
+
+  it('와이드가 일부 조건에서만 팔리면 "와이드 있음"으로 뭉개지 않는다(스트럭처 26: 여성만)', () => {
+    const involved = pairs.filter((x) => x.a.slug === 'nike-structure-26' || x.b.slug === 'nike-structure-26');
+    expect(involved.length).toBeGreaterThan(0);
+    for (const { a, b, category, slug } of involved) {
+      const text = allText(a, b, category).join(' ');
+      // 제한 표기 없이 "스트럭처 26에는 와이드 버전도 있음"이라고 말하면 안 된다(남성 와이드는 없다)
+      expect(text, slug).not.toMatch(/스트럭처 26에는 와이드 버전도 있음/);
+      if (/스트럭처 26 와이드는/.test(text)) expect(text, slug).toMatch(/여성만/);
+      const fitFaq = buildFaqs(a, b, category).find((f) => f.question.includes('발볼'));
+      expect(fitFaq?.answer ?? '', slug).not.toMatch(/어느 쪽이든 와이드/);
+    }
   });
 });

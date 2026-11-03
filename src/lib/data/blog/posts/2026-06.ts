@@ -2197,7 +2197,7 @@ export const posts_2026_06: BlogPost[] = [
     id: 'sonkeechung-peace-marathon-2026',
     slug: 'sonkeechung-peace-marathon-2026',
     title: '2026 손기정평화마라톤 11월 15일 임진각 출발 | 풀코스 경로·참가비·2차 접수 마감',
-    description: '2026 손기정평화마라톤은 11월 15일 임진각에서 출발합니다. 2차 접수는 11월 2일 오후 5시까지이며 조기 마감될 수 있습니다. 풀코스의 도라산역·리비삼거리 방면 두 반환 구간, 참가비, 제한시간과 3D 코스 미리보기를 정리했습니다.',
+    description: '2026 손기정평화마라톤은 11월 15일 임진각에서 출발합니다. 2차 접수는 11월 4일 오후 5시까지이며 조기 마감될 수 있습니다. 풀코스의 도라산역·리비삼거리 방면 두 반환 구간, 참가비, 제한시간과 3D 코스 미리보기를 정리했습니다.',
     thumbnail: '/images/blog/sonkeechung-peace-marathon-2026.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
@@ -2220,7 +2220,7 @@ export const posts_2026_06: BlogPost[] = [
     },
     faqs: [
       { question: '2026 손기정평화마라톤은 언제 어디서 열리나요?', answer: '11월 15일(일) 임진각 평화누리공원 민통선 일대에서 열립니다. 오전 9시 집결, 10시 출발입니다.' },
-      { question: '2차 접수는 언제까지인가요?', answer: '공식 요강의 2차 접수 기간은 10월 28일 오전 9시부터 11월 2일 오후 5시까지입니다. 접수와 결제를 완료한 사람을 선착순으로 정하고, 정원 도달 시 일찍 끝날 수 있습니다. 이후 추가 접수 여부는 공식 홈페이지에서 확인하세요.' },
+      { question: '2차 접수는 언제까지인가요?', answer: '공식 요강의 2차 접수 기간은 10월 28일 오전 9시부터 11월 4일 오후 5시까지입니다. 접수와 결제를 완료한 사람을 선착순으로 정하고, 정원 도달 시 일찍 끝날 수 있습니다. 이후 추가 접수 여부는 공식 홈페이지에서 확인하세요.' },
       { question: '풀코스 경로가 공개됐나요?', answer: '네. 공식 풀코스 안내는 임진각에서 출발해 마정교차로·통일대교를 지나 도라산역 방면에서 1차 반환하고, 리비삼거리 방면에서 2차 반환한 뒤 임진각으로 돌아오는 경로를 제시합니다. 당일 코스는 바뀔 수 있습니다.' },
       { question: '참가비와 제한시간은 얼마인가요?', answer: '풀코스 70,000원·5시간, 하프 65,000원·3시간, 10km 60,000원·1시간 30분, 6km 슬로우런 50,000원·1시간입니다.' },
     ],
@@ -2229,7 +2229,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="tldr-label">3줄 요약</span>
   <ul>
     <li><strong>11월 15일(일) 오전 10시, 임진각 출발.</strong> 풀·하프·10km·6km 슬로우런 네 종목입니다.</li>
-    <li><strong>2차 접수는 11월 2일 오후 5시까지.</strong> 결제 완료 순서로 선착순이며 정원이 차면 일찍 마감될 수 있습니다.</li>
+    <li><strong>2차 접수는 11월 4일 오후 5시까지.</strong> 결제 완료 순서로 선착순이며 정원이 차면 일찍 마감될 수 있습니다.</li>
     <li><strong>풀코스 경로가 공개됐습니다.</strong> 도라산역 방면과 리비삼거리 방면에서 두 번 반환합니다. <a href="/marathon/sonkeechung-peace-marathon-2026/preview">3D 코스 미리보기</a>에서 구간 흐름을 살펴볼 수 있습니다.</li>
   </ul>
 </div>
@@ -2237,7 +2237,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>올해 손기정평화마라톤을 준비한다면 출발 장소와 코스를 다시 봐야 합니다. 2025년까지 달렸던 고양 제2자유로에서 <strong>파주 임진각</strong>으로 대회장이 바뀌었고, 공식 풀코스 경로도 10월에 공개됐습니다.</p>
 
 <h2>접수와 참가비</h2>
-<p>공식 대회요강에 따르면 1차 접수는 10월 27일 끝났고, <strong>2차 접수는 10월 28일 오전 9시부터 11월 2일 오후 5시까지</strong>입니다. 접수와 결제를 모두 마친 사람을 선착순으로 세며, 정원이 차면 예정 시각보다 빨리 끝날 수 있습니다. 접수 여부와 이후 추가 모집은 <a href="https://www.sonkeechungrun.com/info1" target="_blank" rel="noopener noreferrer">공식 대회요강</a>에서 확인하세요.</p>
+<p>공식 대회요강에 따르면 1차 접수는 10월 27일 끝났고, <strong>2차 접수는 10월 28일 오전 9시부터 11월 4일 오후 5시까지</strong>입니다. 접수와 결제를 모두 마친 사람을 선착순으로 세며, 정원이 차면 예정 시각보다 빨리 끝날 수 있습니다. 접수 여부와 이후 추가 모집은 <a href="https://www.sonkeechungrun.com/info1" target="_blank" rel="noopener noreferrer">공식 대회요강</a>에서 확인하세요.</p>
 <table>
   <thead><tr><th>종목</th><th>참가비</th><th>제한시간</th></tr></thead>
   <tbody>
@@ -2263,7 +2263,7 @@ export const posts_2026_06: BlogPost[] = [
 <p>1936년 베를린올림픽 마라톤 우승자 손기정 선생의 이름을 기억하며 달리는 대회입니다. 올해 대회일인 <strong>11월 15일은 선생의 기일</strong>이기도 합니다. 임진각과 민통선 일대를 달리는 새 코스는 대회의 평화 메시지를 러너가 직접 체감할 장소입니다.</p>
 <p>올해 처음 추가된 6km 슬로우런을 포함해 네 종목이 열립니다. 레이스 전에는 <a href="/marathon/sonkeechung-peace-marathon-2026">대회 캘린더 안내</a>와 공식 교통·참가자 공지를 다시 확인하세요.</p>
 
-<p><small>출처: <a href="https://www.sonkeechungrun.com/info1" target="_blank" rel="noopener noreferrer">손기정평화마라톤 공식 대회요강</a>(일시·접수·참가비·제한시간), <a href="https://www.sonkeechungrun.com/full" target="_blank" rel="noopener noreferrer">공식 풀코스</a>(경유지·변경 가능성). 2026년 11월 2일 확인. 원문 2026년 6월 13일 발행.</small></p>
+<p><small>출처: <a href="https://www.sonkeechungrun.com/info1" target="_blank" rel="noopener noreferrer">손기정평화마라톤 공식 대회요강</a>(일시·접수·참가비·제한시간), <a href="https://www.sonkeechungrun.com/full" target="_blank" rel="noopener noreferrer">공식 풀코스</a>(경유지·변경 가능성). 2026년 11월 3일 확인. 원문 2026년 6월 13일 발행.</small></p>
 `,
   },
   {

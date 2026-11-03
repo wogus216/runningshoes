@@ -49,6 +49,10 @@ export const THRESHOLDS = {
   stackMm: 4,
   dropMm: 4,
   priceWon: 20000,
+  /** 토박스 실측 차이: 등급이 갈려도 이보다 작으면 같은 수준으로 본다(RunRepeat 평균 73.2mm 대비 한 칸 미만) */
+  toeBoxMm: 1.5,
+  /** 등급이 같아도 실측이 이만큼 벌어지면 발볼 차이로 본다 */
+  toeBoxSameTierMm: 3,
 } as const;
 
 export type Side = 'a' | 'b';
@@ -139,6 +143,30 @@ const shoeOf = (ctx: Ctx, side: Side) => (side === 'a' ? ctx.a : ctx.b);
 
 // ── 축별 판정 ────────────────────────────────────────────────────────────────
 
+/**
+ * 토박스 실측(mm) — `detailedSpecs.width` 문구의 첫 숫자. RunRepeat 랩 값이 문구에 적혀 있다.
+ *
+ * 등급(`toBoxWidth`)은 실측에 랩 본문 평가를 더해 사람이 정한 값이라, 같은 72.3mm 인데 페가수스 42 는
+ * 좁음·슈퍼블라스트 2 는 표준인 경우가 있다(2026-11-03 점검). 등급만 비교하면 "발볼이 넓은 러너는 B"라는
+ * 근거 없는 추천이 나가므로, 실측이 있으면 실측 차이를 함께 본다. 실측이 없다고 적힌 신발은 null.
+ */
+export function toeBoxMm(shoe: Shoe): number | null {
+  const text = shoe.detailedSpecs?.width;
+  if (!text || /실측은 없|측정 없|측정 안|mm 미확인/.test(text)) return null;
+  const m = text.match(/(\d{2}(?:\.\d)?)\s*mm/);
+  if (!m) return null;
+  const mm = Number(m[1]);
+  return mm >= 60 && mm <= 85 ? mm : null;
+}
+
+const mmStr = (mm: number) => `${mm.toFixed(1)}mm`;
+
+/** 와이드 버전 표기 — 성별 등 제한이 있으면 그대로 적는다("와이드 있음"으로 뭉개지 않는다) */
+function wideLabel(shoe: Shoe): string {
+  const note = shoe.koreanFootFit?.wideOptionsNote;
+  return note ? `${shoe.name} 와이드는 ${note}` : `${shoe.name}에는 와이드 버전도 있음`;
+}
+
 function fitAxis(ctx: Ctx) {
   const { a, b } = ctx;
   const ta = a.koreanFootFit?.toBoxWidth;
@@ -149,14 +177,30 @@ function fitAxis(ctx: Ctx) {
   const wa = a.koreanFootFit?.wideOptions ?? false;
   const wb = b.koreanFootFit?.wideOptions ?? false;
 
-  if (ra !== rb) {
-    const wider: Side = ra > rb ? 'a' : 'b';
+  const ma = toeBoxMm(a);
+  const mb = toeBoxMm(b);
+  const hasMm = ma !== null && mb !== null;
+  const mmGap = hasMm ? Math.round(Math.abs(ma - mb) * 10) / 10 : null;
+  const tierDiffers = ra !== rb;
+  // 등급이 갈려도 실측이 거의 같으면 차이로 보지 않고, 등급이 같아도 실측이 크게 벌어지면 차이로 본다
+  const meaningful = tierDiffers
+    ? mmGap === null || mmGap >= THRESHOLDS.toeBoxMm
+    : mmGap !== null && mmGap >= THRESHOLDS.toeBoxSameTierMm;
+
+  if (meaningful) {
+    // 실측이 있으면 실측 방향, 없으면 등급 방향
+    const wider: Side = hasMm ? (ma! > mb! ? 'a' : 'b') : ra > rb ? 'a' : 'b';
+    const widerShoe = shoeOf(ctx, wider);
     const narrower = shoeOf(ctx, other(wider));
     const narrowerHasWide = narrower.koreanFootFit?.wideOptions ?? false;
-    const widerHasWide = shoeOf(ctx, wider).koreanFootFit?.wideOptions ?? false;
-    let evidence = `토박스 ${WIDTH_KO[wider === 'a' ? ta! : tb!]} vs ${WIDTH_KO[wider === 'a' ? tb! : ta!]}`;
-    if (narrowerHasWide && !widerHasWide) evidence += ` — 다만 ${narrower.name}에는 와이드 버전이 있어 대안이 됩니다`;
-    else if (widerHasWide) evidence += ', 와이드 버전도 있음';
+    const widerHasWide = widerShoe.koreanFootFit?.wideOptions ?? false;
+    const tierWide = widerShoe.koreanFootFit!.toBoxWidth;
+    const tierNarrow = narrower.koreanFootFit!.toBoxWidth;
+    const mmPart = hasMm ? `실측 ${mmStr(wider === 'a' ? ma! : mb!)} vs ${mmStr(wider === 'a' ? mb! : ma!)}` : '';
+    const tierPart = tierDiffers ? `${WIDTH_KO[tierWide]} vs ${WIDTH_KO[tierNarrow]}` : `둘 다 ${WIDTH_KO[tierWide]} 등급`;
+    let evidence = `토박스 ${hasMm ? `${mmPart}(${tierPart})` : tierPart}`;
+    if (narrowerHasWide && !widerHasWide) evidence += ` — 다만 ${wideLabel(narrower).replace('에는 와이드 버전도 있음', '에는 와이드 버전이 있어 대안이 됩니다')}`;
+    else if (widerHasWide) evidence += `, ${wideLabel(widerShoe)}`;
     pick(ctx, wider, {
       axis: 'fit',
       runner: '발볼이 넓거나 앞꿈치가 자주 끼는 러너',
@@ -167,25 +211,37 @@ function fitAxis(ctx: Ctx) {
     return;
   }
 
-  const width = WIDTH_KO[ta!];
+  // 토박스는 같은 수준. 등급이 다른데 실측이 거의 같은 경우는 실측으로 설명한다
+  const width = tierDiffers
+    ? `실측 ${mmStr(ma!)}·${mmStr(mb!)}로 거의 같고(등급은 ${WIDTH_KO[ta!]}·${WIDTH_KO[tb!]}의 경계 부근)`
+    : `둘 다 ${WIDTH_KO[ta!]}${hasMm ? `(실측 ${mmStr(ma!)}·${mmStr(mb!)})` : ''}`;
   if (wa !== wb) {
     const withWide: Side = wa ? 'a' : 'b';
+    const wideShoe = shoeOf(ctx, withWide);
+    const limited = !!wideShoe.koreanFootFit?.wideOptionsNote;
     pick(ctx, withWide, {
       axis: 'fit',
       runner: '발볼이 넓어 와이드(2E) 버전이 필요한 러너',
       tag: '발볼이 넓은 러너',
-      evidence: `토박스는 둘 다 ${width}이지만 와이드 버전은 ${shoeOf(ctx, withWide).name}에만 있음`,
-      weight: 3,
+      evidence: `토박스는 ${width}, 와이드 버전은 ${wideShoe.name}에만 있음${limited ? `(${wideShoe.koreanFootFit!.wideOptionsNote})` : ''}`,
+      // 성별 등 제한이 붙으면 모든 독자의 선택을 바꾸지 못하므로 가중치를 낮춘다
+      weight: limited ? 2 : 3,
     });
     return;
   }
 
   if (wa && wb) {
-    ctx.similar.push({ axis: 'fit', text: `발볼: 토박스 둘 다 ${width}, 둘 다 와이드 버전이 있어 발볼로는 갈리지 않습니다` });
-  } else if (ta === 'narrow') {
+    const notes = [a, b].filter((x) => x.koreanFootFit?.wideOptionsNote).map((x) => `${x.name} 와이드는 ${x.koreanFootFit!.wideOptionsNote}`);
+    ctx.similar.push({
+      axis: 'fit',
+      text: notes.length
+        ? `발볼: 토박스 ${width}, 둘 다 와이드 버전이 있지만 ${notes.join(', ')}`
+        : `발볼: 토박스 ${width}, 둘 다 와이드 버전이 있어 발볼로는 갈리지 않습니다`,
+    });
+  } else if (ta === 'narrow' && tb === 'narrow') {
     ctx.caveats.push('둘 다 토박스가 좁은 편이고 와이드 버전도 없어, 발볼이 넓다면 둘 다 맞지 않을 수 있습니다');
   } else {
-    ctx.similar.push({ axis: 'fit', text: `발볼: 토박스 둘 다 ${width}, 둘 다 와이드 버전이 없습니다` });
+    ctx.similar.push({ axis: 'fit', text: `발볼: 토박스 ${width}, 둘 다 와이드 버전이 없습니다` });
   }
 }
 
@@ -651,7 +707,8 @@ export function buildFaqs(a: Shoe, b: Shoe, category: string, analysis = analyze
     } else if (narrowBoth) {
       answer = `${narrowBoth}. 발볼이 넓다면 토박스가 넉넉한 다른 모델도 함께 보세요.`;
     } else if (sim && a.koreanFootFit?.wideOptions && b.koreanFootFit?.wideOptions) {
-      answer = `${sim.text.replace(/^발볼: /, '')}. 발볼이 넓다면 어느 쪽이든 와이드 버전으로 신어 보세요.`;
+      const limited = !!(a.koreanFootFit.wideOptionsNote || b.koreanFootFit.wideOptionsNote);
+      answer = `${sim.text.replace(/^발볼: /, '')}. ${limited ? '발볼이 넓다면 와이드 판매 조건을 먼저 확인하세요.' : '발볼이 넓다면 어느 쪽이든 와이드 버전으로 신어 보세요.'}`;
     } else {
       answer = `${sim ? sim.text.replace(/^발볼: /, '') : '발볼로는 차이가 없습니다'}.`;
     }

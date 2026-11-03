@@ -40,6 +40,7 @@ export const shoe: Shoe = {
     toBoxWidth: 'standard',
     flatFootCompatibility: 'excellent',
     wideOptions: true,
+    wideOptionsNote: '여성만 판매(남성 와이드 없음, 2026-09-27 확인)',
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },

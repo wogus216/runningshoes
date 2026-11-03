@@ -67,7 +67,7 @@ export const shoe: Shoe = {
     plate: '없음',
     outsole: 'Adiwear 러버',
     upper: '메쉬',
-    width: '표준 / 와이드',
+    width: '넓음 — RunRepeat 랩 토박스 77.7mm(평균 73.2mm보다 4.5mm 넓음), 최대폭 98.7mm(평균 95.2mm). 랩 본문 "definitely offers a wide-foot-friendly fit". RunRepeat Widths 표기는 Normal·Wide(해외 기준, 한국 판매는 이번에 재확인하지 않음) — 토박스 실측은 2026-11-03 확인',
     durability: '550-600km',
     price: '₩159,000 (MSRP)',
     costPerKm: '약 ₩265/km (600km 기준)',

@@ -50,7 +50,7 @@ export const shoe: Shoe = {
     stackHeight: '힐 38.3mm / 포어풋 29.5mm (RunRepeat 실측) / 브랜드 표기 40/36mm',
     drop: '8.8mm (RunRepeat 실측) / 4mm (브랜드 공식) — Doctors of Running도 "체감은 5~6mm에 가깝다"고 평가',
     midsole: 'Infinion 폼 (반응성 강화 버전)',
-    plate: 'Energy Arc — 폼 사이가 아니라 지면 쪽에 배치',
+    plate: 'Energy Arc — 폼 사이가 아니라 지면 쪽에 배치. 소재는 카본 파이버로 표기됨(소매점·리뷰 표기, 2026-11-03 웹 검색 확인 — 브랜드 공식 문서는 미확인)',
     outsole: '고무 아웃솔 (마모 실측 미게시)',
     upper: '경량 엔지니어드 메쉬',
     width: '남성 D / 남성 2E(와이드) / 여성 D — 뉴발란스 코리아 2026-08-22 확인. 토박스 71.2mm(RunRepeat 평균 73.2mm보다 2.0mm 좁음)로 수치 차이는 작으나 랩 본문이 "tapered shape (71.2 mm) that creates a very snug fit"이라고 평가',
