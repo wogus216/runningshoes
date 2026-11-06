@@ -1,0 +1,5 @@
+텍스처 출처 (2026-11-06 내려받음)
+- paper-crumple.webp ← ambientCG Paper003 (https://ambientcg.com/a/Paper003)
+- paper-fiber.webp ← ambientCG Paper001 (https://ambientcg.com/a/Paper001)
+- wood.webp ← ambientCG Wood049 (https://ambientcg.com/a/Wood049)
+라이선스: Creative Commons CC0 1.0 Universal (https://ambientcg.com/license 원문 확인)
