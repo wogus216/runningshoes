@@ -2,6 +2,29 @@ import type { MarathonEvent } from '@/types/marathon';
 
 export const marchEvents: MarathonEvent[] = [
   {
+    id: 'bucheon-international-10km-road-race-2027',
+    name: '2027 부천국제 10km 로드레이스',
+    date: '2027-03-07',
+    month: '3월',
+    location: '부천시청 집결 · 부천중앙공원~심곡천 일원',
+    region: '경기',
+    distances: ['10K'],
+    status: '접수예정',
+    isMajor: false,
+    website: 'https://bskrun.co.kr/',
+    registrationStart: '2026-11-10',
+    registrationEnd: '2027-01-06',
+    registrationNote:
+      '공식 홈은 2026년 11월 10일(화) 오후 2시 오픈을 안내합니다. 10km와 3.5km 건강달리기를 운영하며 전체 선착순 10,000명입니다. 참가비 금액은 11월 8일 공식 요강에서 확인되지 않았습니다. 접수 표는 2027년 1월 6일 16시 마감이지만 환불 상세에는 1월 8일 16시, 하단 환불 문단에는 1월 6일 16시, 기록증 문단에는 1월 23일이 적혀 있어 최종 기한은 사무국에 확인해야 합니다. 10km 출발 그룹 배정은 대회일 기준 3년 이내 공식 기록증으로 하며, JPG·PNG 500KB 이하 파일을 신청 후 업로드합니다. 기록증이 없으면 하위 그룹 자동 배정입니다.',
+    lastVerified: '2026-11-08',
+    description:
+      '부천시육상연맹·한국실업육상연맹·경기일보가 주최하는 10km·3.5km 건강달리기 대회입니다. 부천시청 집결, 부천중앙공원~심곡천 일원에서 2027년 3월 7일 08시 출발 예정입니다. 10km는 공식 기록에 따라 S~E 그룹을 배정하며 상위 그룹으로 임의 이동해 출발할 수 없습니다. 참가비 금액과 일부 최종 제출·환불 기한은 공식 안내 확인이 필요합니다.',
+    raceInfo: {
+      expectedParticipants: 10000,
+      startTime: '08:00',
+    },
+  },
+  {
     id: 'gumi-marathon-2026',
     name: '2026 구미 박정희 마라톤',
     date: '2026-03-01',
