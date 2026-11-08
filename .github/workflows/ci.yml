@@ -24,6 +24,9 @@ jobs:
           cache: 'npm'
 
       - name: 의존성 설치
+        # 검증 러너는 CPU만 사용한다. 선택적 CUDA 바이너리의 외부 다운로드는 불필요하다.
+        env:
+          npm_config_onnxruntime_node_install_cuda: skip
         run: npm ci
 
       - name: 데이터 검증 (validate)
