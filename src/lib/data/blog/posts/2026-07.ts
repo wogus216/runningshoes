@@ -992,100 +992,44 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'mizuno-neo-vista-3-review-2026',
-    slug: 'mizuno-neo-vista-3-review-2026',
-    title: '미즈노 네오 비스타 3 후기 | SA 167 극쿠션 슈퍼트레이너, 그런데 반발이 아쉽다',
-    description:
-      '미즈노 첫 슈퍼 트레이너 라인의 3세대 네오 비스타 3을 RunRepeat 랩 실측 기준으로 리뷰합니다. 충격 흡수 SA 167의 최상급 쿠션과 통기성 83의 여름 강점, 3D 유리섬유 플레이트로 개선된 안정성이 강점이지만, 219,000원 가격대에 에너지 리턴 57%는 아쉽습니다. 한국 러너 발볼·여름·가성비 관점에서 정리했습니다.',
-    thumbnail: '/images/blog/mizuno-neo-vista-3-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-26',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['미즈노 네오 비스타 3', 'Neo Vista 3', '슈퍼트레이너', 'Enerzy NXT', '신상 러닝화', '고쿠션'],
+    id: "mizuno-neo-vista-3-review-2026",
+    slug: "mizuno-neo-vista-3-review-2026",
+    title: "미즈노 네오 비스타 3 리뷰 — 높은 쿠션보다 힐 패딩·코너 고정을 먼저 확인",
+    description: "266g·SA167 검체와 유리섬유 보강 Wave Plate를 정리합니다. 한국 2E 상품과 별도 와이드 미확인을 나누고, 출처별 스택·개인별 아킬레스 압박 경험을 보존했습니다.",
+    thumbnail: "/images/blog/mizuno-neo-vista-3-review-2026.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-26",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "네오 비스타 3",
+      "미즈노",
+      "힐 패딩",
+      "Wave Plate"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>미즈노 첫 슈퍼 트레이너의 3세대</strong>, RunRepeat 랩 실측 종합 83점(Great). 정체성은 <strong>"극쿠션"</strong> — 충격 흡수 SA 힐 167로 프리미엄 쿠션화 중에서도 최상급</li>
-    <li><strong>3D 유리섬유 플레이트</strong>를 새로 넣어 2세대의 안정성 약점을 개선했고, 통기성 83 BR 니트 어퍼로 <strong>여름 러닝에 강합니다</strong></li>
-    <li>단점은 <strong>가격 대비 반발</strong> — 에너지 리턴 57%로 219,000원 슈퍼 트레이너치고 아쉽습니다. "튀기보다 푹신하게 오래" 뛰는 성격이라 용도를 알고 사야 합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 평.</strong> 빠른 반발이 아니라 <strong>푹신함·안정·여름 통기</strong>를 원하는 데일리·장거리 러너를 위한 <a href="/shoes/mizuno-neo-vista-3">네오 비스타 3</a>입니다. 더 튀는 슈퍼 트레이너를 원하면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을, 미즈노 라인 전체는 <a href="/blog/mizuno-running-shoes-lineup-tier-guide-2026">미즈노 계급도</a>를 참고하세요.</p>
-</div>
-
-<h2>스펙 한눈에</h2>
-<table>
-  <thead><tr><th>항목</th><th>네오 비스타 3</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td>219,000원</td></tr>
-    <tr><td>무게</td><td>266g (실측)</td></tr>
-    <tr><td>스택(힐/전족)</td><td>43.5 / 35.0mm <em>(실측)</em> · 공식 44.5/36.5</td></tr>
-    <tr><td>드롭</td><td>8.5mm 실측 (공식 8)</td></tr>
-    <tr><td>미드솔</td><td>Enerzy NXT + 3D 유리섬유 플레이트</td></tr>
-    <tr><td>충격 흡수(SA)</td><td><strong>힐 167 / 전족 133 (최상급)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td>힐 57.7% / 전족 57.1% <em>(아쉬움)</em></td></tr>
-    <tr><td>토박스</td><td>71.7mm (표준·약간 좁아짐)</td></tr>
-    <tr><td>통기성</td><td><strong>83 BR (우수)</strong></td></tr>
-    <tr><td>내구</td><td>아웃솔 우수(0.7mm) / 힐 패딩 약함</td></tr>
-    <tr><td>종합</td><td>83 / 100 (Great)</td></tr>
-  </tbody>
-</table>
-<p><small>수치는 RunRepeat 랩 실측 및 미즈노 코리아 공식가 기준입니다.</small></p>
-
-<h2>강점 — 극쿠션 + 여름 통기 + 개선된 안정</h2>
-<p>네오 비스타 3의 핵심은 <strong>쿠션</strong>입니다. 충격 흡수 SA가 힐 167로 측정됐는데, 이는 프리미엄 쿠션화 중에서도 최상위권입니다. 미드솔이 19.8 AC로 매우 부드러워 착지가 말 그대로 구름 위 같고, 20km를 넘겨도 다리 피로가 덜합니다. 여기에 힐 44.5/전족 36.5mm의 고스택이 장거리 훈련의 충격을 확실히 받아줍니다.</p>
-<p>2세대에서 가장 아쉬웠던 <strong>안정성</strong>도 개선됐습니다. 새로 들어간 3D 스플릿 형태의 유리섬유 플레이트(중앙은 위로, 양옆은 아래로 커브)가 고스택의 흔들림을 잡아주고, 힐 락다운도 좋아졌습니다. 통기성은 83 BR로 우수하고 니트 어퍼가 빠르게 건조돼 <strong>땀 많은 한국 여름 러닝에 특히 유리</strong>합니다.</p>
-
-<h2>약점 — 가격 대비 반발, 그리고 과내전</h2>
-<p>슈퍼 트레이너를 표방하기엔 <strong>반발이 아쉽습니다</strong>. 에너지 리턴이 힐 57.7%/전족 57.1%로, 219,000원 프리미엄 가격대에서 기대하는 수준에 못 미칩니다. RunRepeat도 이 점을 최대 단점으로 꼽았습니다. 페이스를 올리면 폼이 눌리기만 하고 튀어주진 않아, "빠르게 치고 나가는" 트레이너를 기대하면 실망할 수 있습니다.</p>
-<p>또 힐 카운터가 2/5로 유연하고 미드솔이 물러 <strong>과내전 러너에겐 지지가 부족</strong>합니다. 중립 발 러너에게 맞는 신발이고, 평발·과내전이라면 안정화(웨이브 인스파이어 등)가 낫습니다. 힐 쪽 패딩 내구가 약한 것(1/5)도 참고하세요.</p>
-
-<h2>한국 러너 관점</h2>
-<ul>
-  <li><strong>발볼</strong> — 토박스 71.7mm 표준에 약간 좁아지는 형태라, 발볼이 아주 넓다면 시착이 필요합니다. 같은 미즈노 중에선 <a href="/shoes/mizuno-wave-rider-29">웨이브 라이더</a>가 더 넓습니다</li>
-  <li><strong>여름</strong> — 통기성 83에 빠른 건조로 한여름 데일리·장거리에 유리</li>
-  <li><strong>무릎·관절</strong> — SA 167의 두꺼운 쿠션이 착지 충격을 잘 흡수. 단 안정 지지는 약함</li>
-  <li><strong>가격</strong> — 219,000원은 슈퍼 트레이너 프리미엄. 반발보다 쿠션·안정·통기를 원할 때 값어치가 있습니다</li>
-</ul>
-
-<h2>이런 분께 / 대안</h2>
-<ul>
-  <li><strong>✅ 잘 맞는 분</strong> — 푹신한 고쿠션 트레이너를 원하는 분, 데일리·장거리 훈련용, 네오 비스타 1·2 팬, 여름 통기 중시, 중립 발</li>
-  <li><strong>❌ 안 맞는 분</strong> — 과내전·평발, 가격 대비 폭발적 반발 기대, 빠른 레이스용, 발볼이 아주 넓은 러너</li>
-  <li><strong>더 튀는 슈퍼 트레이너</strong> → <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a></li>
-  <li><strong>미즈노 고쿠션 데일리</strong> → <a href="/shoes/mizuno-wave-sky-9">웨이브 스카이 9</a></li>
-</ul>
-
-<div class="callout warning">
-  <p>본 리뷰는 <strong>RunRepeat 랩 실측</strong>과 미즈노 코리아 공식 정보 기준입니다(추정 아님). 와이드(2E/SW) 옵션은 현재 확인되지 않아, 발볼이 넓다면 매장 시착을 권합니다. 힐 패딩 내구는 약한 편으로 측정됐으니 장기 사용 시 참고하세요.</p>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 슈퍼 트레이너인데 카본 플레이트가 있나요?</p>
-    <p class="faq-a">A. 카본이 아니라 <strong>유리섬유 나일론 플레이트</strong>입니다. 카본처럼 폭발적으로 튕기기보다 고스택의 안정을 잡아주는 역할이라, 레이싱화 같은 반발을 기대하면 안 됩니다. 3세대는 이 플레이트를 3D 스플릿 형태로 바꿔 안정성을 개선했습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 네오 비스타 2에서 3으로 갈 만한가요?</p>
-    <p class="faq-a">A. 2의 안정성·힐 핏이 아쉬웠다면 갈 만합니다. 3D 플레이트로 착지가 안정적으로 바뀌고 힐 락다운이 좋아졌습니다. 다만 쿠션 성격 자체는 비슷하니, 2에 큰 불만이 없었다면 굳이 교체할 필요는 없습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 레이스에 신어도 되나요?</p>
-    <p class="faq-a">A. 권하지 않습니다. 에너지 리턴 57%로 반발이 약해 기록용은 아닙니다. 훈련·조깅·장거리 지구력 러닝에 어울리고, 레이스는 카본 레이싱화나 반발 좋은 슈퍼 트레이너(슈퍼블라스트 3)를 따로 쓰는 게 낫습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 여름 러닝에 정말 시원한가요?</p>
-    <p class="faq-a">A. 랩 통기성이 83 BR로 우수하고 니트 어퍼가 빠르게 건조돼, 고스택 트레이너치고는 시원한 편입니다. 땀이 많거나 장마철 젖은 뒤 빨리 마르는 신발을 찾는다면 이 점이 강점입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: RunRepeat 랩 실측(mizuno-neo-vista-3), Believe in the Run·Road Trail Run 리뷰 종합, 미즈노 코리아 공식가 · 한국 공식가 기준 · 작성 2026년 7월 26일.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>RR 실측은 266g·43.5/35.0mm입니다. 공식 44.5/36.5mm·DOR 50/42mm를 섞지 않습니다.</li><li>DOR Matt은 힐 패딩의 압박·코너 슬립을 느꼈지만 다른 팀원은 문제없었다는 편집자 주석도 있습니다.</li><li>한국 확인 남녀 기본은 보통(2E)·정가 219,000원입니다. 별도 와이드 SKU는 미확인입니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<h2>Wave Plate와 이중폼을 함께 보기</h2><p>네오 비스타 3는 ENERZY NXT 이중폼과 Wave Plate를 결합합니다. RR은 fiberglass Wave Plate, DOR는 전장 glass-fiber-infused nylon 분기형 판재로 설명합니다. DOR의 위 TPU·아래 EVA 설명은 확인한 리뷰의 기술 설명이며 화학 분석 결과는 아닙니다. RR이 더 높은 리턴을 위해 A-TPU를 제안했다는 문장을 ‘일반 TPU가 없다’는 증거로 해석하지 않습니다.</p><div class="table-wrap"><table><thead><tr><th>RunRepeat 항목</th><th>확인 값</th></tr></thead><tbody><tr><td>무게</td><td>266g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>43.5/35.0mm·8.5mm</td></tr><tr><td>힐/전족부 SA</td><td>167/133</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>57.7/57.1%</td></tr><tr><td>주폼/보조 경도</td><td>19.8/30.1AC — 층 위치 미확인</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>95.2/71.7/29.4mm</td></tr><tr><td>통기·건조 시험</td><td>BR83·건조율62%</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p>
+<h2>스택은 출처별로 큰 차이가 있습니다</h2><p>한국 공식 상세 이미지는 44.5/36.5mm·8mm를 안내합니다. 한쪽 무게는 남성 27cm 약265g·여성 24.5cm 약220g입니다. DOR 소개는 50/42mm·8mm, 남성 US9 272g·여성 US8 224g입니다. RunRepeat 실측은 표와 같습니다. DOR 수치를 실측이라고 적거나 세 스택을 평균내지 않았습니다. 상세 이미지의 제조년월도 출시일로 바꾸지 않았습니다.</p>
+<h2>시착에서는 힐 패딩과 옆 움직임을 확인</h2><p>DOR Matt은 남성 US10/JP28.0에서 길이는 맞았지만 발등이 눌리고 코너에서 발이 옆으로 움직였다고 적었습니다. 힐 위쪽 패딩은 자신의 아킬레스 부위를 계속 눌렀고 끈 조절로 해결하지 못했습니다. 편집자 주석은 해당 부위가 민감하지 않은 팀원들은 문제없이 신었다고 설명합니다. 한 사람의 불편을 모든 러너의 질환 위험으로 확대하지 않습니다.</p><p>양말·인솔을 넣고 발목 위쪽 패딩이 닿는 위치를 확인하세요. 평지에서 길이가 맞더라도 방향을 바꿀 때 발이 어퍼 안에서 움직이는지 보는 것이 유용합니다. 폭이나 높은 앞코 숫자만으로 이 문제를 판단할 수 없습니다.</p>
+<h2>기본 2E와 별도 와이드를 혼동하지 마세요</h2><p><a href="https://kor.mizuno.com/product/detail.html?product_no=12063&amp;cate_no=803&amp;display_group=1" target="_blank" rel="noopener noreferrer">남성 J1GM261051</a>과 <a href="https://kor.mizuno.com/product/detail.html?product_no=12068&amp;cate_no=821&amp;display_group=1" target="_blank" rel="noopener noreferrer">여성 J1GW261071</a>은 보통(2E)·219,000원입니다. 확인 당시 남성은 255~285mm·295mm, 여성은 230~250mm가 선택 가능했습니다. 이 기본 2E를 SW로 부르지 않습니다. 다른 한국 와이드 SKU와 나머지 색상 재고는 미확인입니다.</p>
+<h2>SA167을 후반 피로·관절 보호로 바꾸지 않습니다</h2><p>SA·폼 경도·리턴은 서로 다른 시험입니다. 높은 SA가 모든 러너의 20km 이후 피로를 줄이거나 무릎을 보호한다는 뜻은 아닙니다. BR83·건조율62%도 한국 장마철 내내 쾌적하다는 보장이 아닙니다. 국소 마모0.7mm·힐 패딩1/5를 500km 수명으로 환산한 설명과 질환별 추천표는 철회했습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/mizuno-neo-vista-3" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/mizuno-neo-vista-3-review/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p>
 `,
+    faqs: [
+      {
+        "question": "한국 제품은 와이드인가요?",
+        "answer": "확인한 남녀 기본형은 미즈노 공식 보통(2E)입니다. 별도 한국 와이드 SKU는 미확인이고 SW 상품으로 바꾸어 부르지 않습니다."
+      },
+      {
+        "question": "아킬레스가 민감하면 모두 피해야 하나요?",
+        "answer": "Matt의 압박 경험과 다른 팀원의 문제없는 경험을 구분합니다. 실제 패딩 접촉 위치와 증상을 확인해야 하며 공통 질환 등급을 제시하지 않습니다."
+      },
+      {
+        "question": "SA가 높으면 풀코스 후반이 편한가요?",
+        "answer": "해당 검체의 실험실 충격흡수만으로 개인의 후반 피로나 완주 결과를 보장하지 않습니다."
+      }
+    ],
+    updatedAt: "2026-11-09",
   },
   {
     id: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
@@ -2573,116 +2517,43 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'asics-sonicblast-review-2026',
-    slug: 'asics-sonicblast-review-2026',
-    title: '아식스 소닉블라스트 후기 | Blast 계열 유일의 플레이트 — 페이스를 올려야 살아난다',
-    description:
-      '소닉블라스트는 아식스 Blast 계열에서 유일하게 플레이트가 들어간 모델입니다. 카본이 아니라 Pebax 소재의 3/4 길이 ASTROPLATE이고, FF Turbo Squared와 FF Blast Max를 겹친 46mm 듀얼 폼 위에 얹혔습니다. 랩 실측 기준 에너지 리턴 68.9%에 통기성은 만점이지만, 토박스가 70.1mm로 좁아 발볼 넓은 러너에게는 맞지 않습니다. 이지 페이스에서는 뻣뻣하고 템포로 올라가야 진가가 나오는 신발입니다.',
-    thumbnail: '/images/blog/asics-sonicblast-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-14',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['아식스 소닉블라스트', 'ASTROPLATE', '슈퍼트레이너', '템포 러닝화', '플레이트 러닝화'],
+    id: "asics-sonicblast-review-2026",
+    slug: "asics-sonicblast-review-2026",
+    title: "아식스 소닉블라스트 리뷰 — Pebax·이중폼, 실제로 확인할 중족 전환",
+    description: "초대 소닉블라스트의 한국 확인 가격·SKU와 RR 실측, DOR David·Nathan의 전환 차이를 정리합니다. 공식 폼·아웃솔 필드 오류를 대조하고 넓은 발 일괄 금지·500km 수명은 철회했습니다.",
+    thumbnail: "/images/blog/asics-sonicblast-review-2026.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-14",
+    updatedAt: "2026-11-09",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "소닉블라스트",
+      "아식스",
+      "Pebax",
+      "중족 전환"
+    ],
     content: `
-<div class="callout info">
-  <span class="callout-icon">✏️</span>
-  <div class="callout-body">
-    <p class="callout-title">2026년 8월 27일 전면 정정</p>
-    <p>이 글의 초판은 <strong>메가블라스트의 스펙이 소닉블라스트 것으로 잘못 들어간 상태</strong>로 작성됐습니다. 스택 48mm, 토박스 82.6mm, 에너지 리턴 83%, 그리고 "카본 플레이트"라는 서술이 모두 사실과 달랐습니다. 랩 실측을 다시 대조해 본문 전체를 고쳐 씁니다. 잘못된 정보로 구매를 판단하셨다면 사과드립니다.</p>
-  </div>
-</div>
-
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>Blast 계열에서 유일하게 플레이트가 들어간 모델</strong>입니다. 다만 카본이 아니라 <strong>Pebax 소재</strong>의 3/4 길이 ASTROPLATE입니다</li>
-    <li><strong>페이스를 올려야 살아나는 신발</strong>입니다. 이지 페이스에서는 뒤꿈치가 둔하고 미드풋이 뻣뻣하다는 평가가 반복됐고, 템포·인터벌에서 평가가 확 좋아집니다</li>
-    <li><strong>발볼 넓으면 피하세요.</strong> 토박스 실측 70.1mm로 평균보다 확실히 좁고 와이드 옵션도 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>주 1~2회 템포나 인터벌을 하는 <strong>중립 발·표준 발볼</strong> 러너에게 맞는 신발입니다. 반대로 대부분을 이지런으로 채우거나 발볼이 넓다면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>이나 <a href="/shoes/asics-megablast">메가블라스트</a> 같은 무플레이트 고스택이 더 잘 맞습니다. 플레이트 소재별 차이가 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>을 참고하세요.</p>
-  </div>
-</div>
-
-<h2>소닉블라스트, 어떤 신발인가</h2>
-<p>소닉블라스트는 아식스 Blast 계열에서 <strong>유일하게 플레이트가 들어간 모델</strong>입니다. 상단에 FF Turbo Squared, 하단에 FF Blast Max를 겹친 듀얼 폼 위에 <strong>3/4 길이 ASTROPLATE</strong>를 얹었습니다.</p>
-<p>여기서 짚고 넘어갈 것이 있습니다. 일부 매체가 이 플레이트를 카본으로 소개하지만 <strong>실제 소재는 Pebax</strong>입니다. 신발을 반으로 잘라 확인한 RunRepeat을 비롯해 Believe in the Run과 Doctors of Running이 모두 Pebax로 명시했습니다. 카본만큼 단단하지 않고 좀 더 유연하게 휘는 소재라, 같은 "플레이트 러닝화"라도 카본 레이서와는 성격이 다릅니다.</p>
-<p>스택은 브랜드 표기가 힐 46mm·전족 38mm인데, RunRepeat이 신발을 잘라 잰 값은 <strong>45.4mm·36.4mm</strong>였습니다. 드롭도 표기 8mm와 달리 실측 9.0mm로 나왔습니다. 무게는 남성 US9 기준 255g입니다.</p>
-
-<h2>메가블라스트와 뭐가 다른가</h2>
-<p>두 신발은 "같은 성능을 싸게"의 관계가 아닙니다. <strong>용도가 다른 신발</strong>입니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>소닉블라스트</th><th>메가블라스트</th></tr></thead>
-  <tbody>
-    <tr><td>가격</td><td><strong>229,000원</strong></td><td>299,000원</td></tr>
-    <tr><td>무게</td><td>255g</td><td><strong>218g</strong></td></tr>
-    <tr><td>스택(힐/전족, 실측)</td><td>45.4 / 36.4mm</td><td>45.1 / 35.2mm</td></tr>
-    <tr><td>플레이트</td><td><strong>3/4 ASTROPLATE (Pebax)</strong></td><td>없음</td></tr>
-    <tr><td>미드솔</td><td>FF Turbo Squared + FF Blast Max</td><td>FF Turbo² (A-TPU)</td></tr>
-    <tr><td>토박스</td><td>70.1mm (좁음)</td><td><strong>74.3mm</strong> (평균 73.2)</td></tr>
-    <tr><td>성격</td><td>템포·인터벌</td><td>이지런·장거리</td></tr>
-  </tbody>
-</table>
-</div>
-<p>정리하면 소닉블라스트는 메가블라스트보다 <strong>7만원 싸지만 37g 무겁고, 발볼도 좁습니다.</strong> 스택은 RunRepeat 실측으로 사실상 같습니다(45.4/36.4mm 대 45.1/35.2mm). 대신 플레이트가 있어 페이스를 올릴 때의 감각이 다릅니다. 편하게 오래 달릴 신발을 찾는다면 메가블라스트가, 훈련에서 속도를 내는 날이 있다면 소닉블라스트가 맞습니다.</p>
-
-<h2>랩 수치로 본 강점</h2>
-<p>반발과 접지가 이 신발의 강점입니다. 에너지 리턴 <strong>68.9%</strong>는 매우 높은 축이고, 충격흡수는 힐 149·전족 133으로 고스택다운 수치입니다. 전족 접지력 0.96은 최상위권이라 젖은 노면에서도 안심할 만합니다.</p>
-<p>통기성은 <strong>5점 만점</strong>을 받았습니다. 한국 여름처럼 습하고 더운 환경에서는 이게 생각보다 큰 장점입니다. RunRepeat 종합 점수는 83점이고, Believe in the Run은 A 티어(퍼포먼스 A·디자인 B·가치 B)를 줬습니다.</p>
-
-<h2>페이스에 따라 평가가 갈린다</h2>
-<p>이 신발의 성격을 가장 정확히 짚은 것은 Doctors of Running입니다. 전족부는 매우 반응적이고 로커도 날카롭지만, <strong>이지 페이스에서는 뒤꿈치가 둔하고 미드풋이 과하게 뻣뻣하다</strong>는 것이 핵심 지적이었습니다. 템포나 레이스 페이스로 올라갈수록 성능이 뚜렷하게 좋아지는 신발이라, 전 페이스를 커버하는 범용 트레이너가 아니라 특정 훈련에 쓰는 도구에 가깝다는 결론이었습니다.</p>
-<p>수치로도 뒷받침됩니다. 종방향 강성 24.4N에 비틀림 강성 21.5Nm로 상당히 단단해, RunRepeat도 이 뻣뻣함을 범용성을 제한하는 단점으로 꼽았습니다.</p>
-<p>구조적으로는 <strong>힐 베벨이 46mm 스택에 비해 부족하다</strong>는 지적이 있었습니다. 스택이 높아질수록 그에 비례하는 로커가 필요한데 그 균형이 어긋나면 접지 전환에서 비효율이 생긴다는 설명입니다. 이 때문에 초기 접지가 거칠어져 <strong>아킬레스건 문제 이력이 있다면 부담이 될 수 있고</strong>, 뻣뻣한 미드풋과 3/4 플레이트가 아치의 자연스러운 움직임을 제한할 수 있다고 봤습니다.</p>
-
-<h2>한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 권하지 않습니다. 토박스 실측 70.1mm에 최대폭 92.8mm로 평균보다 확실히 좁고, RunRepeat 총평도 발볼 넓은 발에는 부적합이었습니다. 와이드 옵션도 없습니다. 발볼이 넓다면 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a> 쪽이 여유가 있습니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 46mm 스택에 충격흡수 149라 무릎으로 오는 충격 자체는 잘 걸러집니다. 다만 이지 페이스에서 힐 전환이 매끄럽지 않아 느리게 달릴 때는 오히려 부담이 될 수 있습니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 중립 발 전용 구조입니다. 아치 지지가 없으니 평발이 뚜렷하거나 발이 안쪽으로 무너진다면 안정화 계열을 보세요</li>
-  <li><strong>"초보도 신을 수 있나요?"</strong> — 첫 신발로는 권하지 않습니다. 이지런에서 뻣뻣함이 먼저 느껴지는 신발이라, 아직 템포 훈련을 하지 않는 단계라면 값어치를 못 뽑습니다</li>
-  <li><strong>"여름에 어떤가요?"</strong> — 통기성 5점 만점으로 이 신발의 확실한 장점입니다</li>
-</ul>
-
-<h2>가격 대비 가치와 수명</h2>
-<p>정가 229,000원에 500km 기준 <strong>km당 약 458원</strong>입니다. 아웃솔은 두께 2.0mm에 마모 실측 1.0mm로 양호한 편입니다.</p>
-<p>다만 수명을 갉아먹는 쪽은 아웃솔이 아니라 <strong>갑피</strong>입니다. 토박스 내구성이 5점 만점에 1점으로 평가돼, 밑창이 남아 있어도 앞볼이 먼저 헐 가능성이 큽니다. 훈련량이 많다면 이 점을 감안하고 사는 편이 좋습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>템포·인터벌을 주 1~2회 하는 러너</strong> — 페이스가 올라갈수록 평가가 좋아지는 신발입니다</li>
-  <li><strong>카본까지는 부담스러운 러너</strong> — Pebax 플레이트라 카본 레이서보다 관대합니다</li>
-  <li><strong>여름 러닝 비중이 큰 러너</strong> — 통기성 만점</li>
-  <li>반대로 <strong>이지런 위주거나, 발볼이 넓거나, 아킬레스가 약하다면</strong> 맞지 않습니다. 무플레이트 고스택인 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>이나 <a href="/shoes/asics-megablast">메가블라스트</a>를 먼저 보세요</li>
-</ul>
-<p>더 넓게 비교하고 싶다면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>을, 플레이트 소재별 차이는 <a href="/blog/running-shoe-plate-guide-2026">플레이트 완전 해설</a>을, 카본이 모두에게 답은 아닌 이유는 <a href="/blog/carbon-shoes-not-for-everyone-2026">카본화가 나한테도 맞을까</a>에서 확인할 수 있습니다.</p>
-
-<h2>마무리</h2>
-<p>소닉블라스트는 "메가블라스트 가성비 대안"이 아닙니다. 더 싸지만 더 무겁고 발볼도 좁은(실측 스택은 사실상 같은), <strong>성격이 다른 신발</strong>입니다. 대신 Blast 계열 중 유일하게 플레이트를 갖고 있어 훈련에서 속도를 내는 날의 감각이 확실히 다릅니다. 그 용도가 분명하고 발볼이 표준이라면 좋은 선택이고, 그렇지 않다면 같은 값으로 더 잘 맞는 신발이 많습니다.</p>
-
-<p><small>출처: RunRepeat 랩 실측(절단 계측), Doctors of Running·Believe in the Run 리뷰 · 가격은 한국 공식가 기준 · 2026년 8월 27일 전면 정정.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>초대 소닉블라스트는 FF TURBO SQUARED 상층·FF BLAST MAX 하층과 Pebax ASTROPLATE입니다.</li><li>RR255g·45.4/36.4mm·9mm이며 공시 스택과 구분합니다.</li><li>한국 남녀 확인 상품은 229,000원이고 현재 한국 와이드 SKU는 미확인입니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<p>이 글 초판에서 메가블라스트 수치가 섞였던 정정 이력은 유지합니다. 2026-11-09 재확인에서는 남은 질환별 단정·와이드 없음 확정·수명 환산도 걷었습니다. 초대 모델을 소닉블라스트2와 구분해 읽어주세요.</p>
+<h2>폼과 아웃솔 필드가 뒤바뀐 원문도 대조했습니다</h2><p>확인한 한국 공식 페이지는 아웃솔 칸에 FF Turbo2·FF Blast Max, 미드솔 칸에 ASICS Grip을 적었습니다. 일본 제조사 발표와 캐나다 공식 설명을 대조하면 위층 FF TURBO SQUARED·아래층 FF BLAST MAX, ASICSGRIP 아웃솔과 Pebax ASTROPLATE 구조입니다. 원문의 필드 위치를 그대로 옮겨 폼을 고무로 소개하지 않았습니다.</p><p>플레이트는 약 3/4 길이의 Pebax이며 카본으로 표시하지 않습니다. 다만 소재 이름만으로 모든 카본화보다 관대하거나 유연하다는 공통 착화 결론을 만들지 않습니다.</p><div class="table-wrap"><table><thead><tr><th>RunRepeat 항목</th><th>확인 값</th></tr></thead><tbody><tr><td>무게</td><td>255g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>45.4/36.4mm·9.0mm</td></tr><tr><td>힐/전족부 SA</td><td>149/133</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>68.9/68.9%</td></tr><tr><td>주폼/보조 경도</td><td>37.5/39.9AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>92.8/70.1/25.4mm</td></tr><tr><td>30도 굽힘·비틀림</td><td>24.4N·21.5Nm</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p>
+<h2>같은 전환도 리뷰어가 다르게 느꼈습니다</h2><p>DOR David(남성 US9.5)는 앞발에 약간 여유를 느꼈고 얇은 메시·거싯 혀의 고정을 좋아했습니다. 느슨한 노력에서는 힐 충격과 중족의 단단함이 어색했으며 빠르게 움직일 때 나아졌다고 적었습니다. Nathan은 어퍼가 편했지만 일상 노력에서 힐 베벨·강한 중족·토스프링 전환이 잘 맞지 않았다고 느꼈습니다. Nathan의 본문 실착 US9.5와 평소 US9 표기도 구분합니다.</p><p>따라서 ‘주1~2회 템포 러너라면 정답’이라는 조건 대신, 자신이 많이 할 주행에서 힐에서 앞쪽으로 넘어가는 순간이 자연스러운지 확인할 수 있습니다. 높은 스택·강한 로커가 누구나 편한 것은 아닙니다.</p>
+<h2>한국 상품과 공시 무게 조건</h2><p><a href="https://asics.co.kr/p/20665" target="_blank" rel="noopener noreferrer">남성 1011C083.750</a>과 <a href="https://www.asics.co.kr/p/21004" target="_blank" rel="noopener noreferrer">여성 1012B862.020</a>은 229,000원입니다. 확인 당시 남성255~280mm·290mm, 여성230~255mm가 선택 가능했고 남성250/285mm·여성260mm는 품절 표시였습니다. 남녀 공시256/223g은 한국 페이지에서 기준 사이즈가 명시되지 않았습니다. 일본 제조사의256g은27cm 한쪽이며 DOR 여성 무게 칸의 오타는 임의 보정하지 않았습니다.</p>
+<h2>접지0.96도 모든 젖은 노면의 안전 보장은 아닙니다</h2><p>RR의 접지 계수0.96은 정해진 젖은 콘크리트 시험 조건입니다. 도색·맨홀·진흙·급한 코너까지 안전하다고 확대하지 않습니다. 구방식 통기5/5와 토박스 마모1/5도 별도 시험입니다. 이를 여름 내내 편안함, 앞볼이 몇 km에서 먼저 찢어짐, 500km 수명으로 바꾸지 않았습니다.</p><p>한국 현재 와이드는 미확인이므로 ‘발볼 넓으면 무조건 피하라’와 ‘와이드가 없다’는 확정 문구를 철회했습니다. 실제 앞코 높이·발등·고정을 먼저 비교하고 현재 판매 규격을 확인하세요.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/asics-sonicblast" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/asics-sonicblast-review-2025/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p><p><a href="https://corp.asics.com/jp/press/article/2025-08-13_tokyo-collection" target="_blank" rel="noopener noreferrer">ASICS 동세대 공식 구조 발표</a> · <a href="https://www.asics.com/ca/en-ca/sonicblast-1011c083-100" target="_blank" rel="noopener noreferrer">캐나다 공식 Pebax·이중폼 설명</a></p>
 `,
     faqs: [
       {
-        question: '소닉블라스트와 메가블라스트, 뭘 사야 하나요?',
-        answer: '용도로 가르세요. 메가블라스트는 플레이트가 없고 스택은 45.1/35.2mm로 소닉블라스트(45.4/36.4mm)와 사실상 같은데 218g으로 37g 가볍습니다. 편하게 오래 달리는 이지런·장거리용입니다. 소닉블라스트는 45.4/36.4mm에 3/4 ASTROPLATE가 들어가 템포·인터벌에서 진가가 나옵니다. 가격은 소닉블라스트가 229,000원으로 7만원 저렴하지만, 같은 성능을 싸게 주는 관계가 아니라 성격이 다른 신발입니다. 발볼이 넓다면 토박스가 74.3mm(RunRepeat 평균 73.2mm)로 소닉블라스트(70.1mm)보다 4.2mm 넓은 메가블라스트 쪽이 여유가 있습니다.',
+        "question": "카본 플레이트인가요?",
+        "answer": "초대 소닉블라스트는 약3/4 길이 Pebax ASTROPLATE입니다. 카본이나 후속 소닉블라스트2의 자료와 섞지 않습니다."
       },
       {
-        question: '소닉블라스트, 발볼 넓은데 괜찮을까요?',
-        answer: '권하지 않습니다. 토박스가 랩 실측 70.1mm, 최대폭 92.8mm로 평균보다 확실히 좁아 RunRepeat 총평도 발볼 넓은 발에는 부적합이었습니다. 와이드 옵션도 제공되지 않아 사이즈로 해결할 방법도 없습니다. 발볼이 넓다면 엔돌핀 스피드 계열이나 메가블라스트를 검토하세요.',
+        "question": "느리게 달리면 아킬레스가 다치나요?",
+        "answer": "그런 개인 부상 예측을 할 근거는 확인하지 못했습니다. 리뷰어의 전환 불편과 임상 위험을 구분합니다."
       },
       {
-        question: '소닉블라스트의 플레이트는 카본인가요?',
-        answer: '아닙니다. 3/4 길이 ASTROPLATE이고 소재는 Pebax입니다. 일부 매체가 카본으로 소개했지만, 신발을 절단해 확인한 RunRepeat과 Believe in the Run·Doctors of Running이 모두 Pebax로 명시했습니다. 카본보다 유연하게 휘는 소재라 카본 레이서만큼 공격적이지 않고, 그만큼 착지에 관대한 편입니다.',
-      },
+        "question": "젖은 노면에서 안심해도 되나요?",
+        "answer": "실험실 계수0.96을 모든 젖은 노면의 미끄럼 방지 보장으로 쓰지 않습니다. 실제 코스와 노면 상태를 함께 확인하세요."
+      }
     ],
   },
   {

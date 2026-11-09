@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'asics-magic-speed-5',
   slug: 'asics-magic-speed-5',
@@ -15,99 +16,162 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 4.5,
-  status: 'new',
   price: 209000,
-  description: '아식스의 가성비 카본 레이싱화. FF Leap + FF Blast+ 듀얼 폼과 포크형 카본 플레이트를 쓰고 전작보다 공식 무게 기준 약 46g 가벼워져 템포런부터 대회까지 폭넓게 활용 가능합니다.',
-  oneliner: '실측 201g에 포크형 카본, 크게 가벼워진 가성비 레이서',
-  editorComment: '매직스피드 5는 공식 무게가 196g으로 전작(242g)보다 약 46g 줄었고, RunRepeat 실측도 201g(남성 US 9)으로 전작 실측 237g보다 36g 가벼워 완전히 다른 신발이 되었습니다. FF Leap 상층+FF Blast+ 하층의 듀얼 폼 구성으로 에너지 리턴이 64.6%/62.6%(힐/전족부)에 달합니다. 포크형 카본 플레이트는 풀렝스보다 유연해 전환이 자연스럽고, 초보자도 부담 없이 접근할 수 있습니다. 20만 9천원으로 메타스피드 레이(43만 9천원)의 절반 이하 가격에 카본 레이싱을 경험할 수 있어 가성비가 뛰어납니다. 카본 효과는 그룹 평균이 아니라 개인 반응으로 판단해야 합니다. 보급형 카본의 장점은 부담 없이 그 검증을 해볼 수 있다는 것 — 포인트 훈련에서 기록 변화를 직접 재보세요.\n\n사이즈·구매 가이드: 토박스가 표준 폭(RunRepeat 실측 71.9mm, 완만한 테이퍼)이고 아식스 공식몰에 2E(와이드) 상품이 따로 있어(2026-10-20 확인) 발볼이 넓다면 2E를 먼저 보세요. 정가는 209,000원입니다(2026-10-20 아식스 공식몰 확인). 전작 매직스피드 4 대비 경량화가 핵심이며, 더 많은 훈련 거리를 소화하고 싶다면 엔돌핀 스피드 5가 대안입니다.',
-  tags: ['레이싱', '카본', '템포', '가성비'],
-
+  description: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강 구조의 매직스피드 5. RunRepeat 실험실 검체 201g·35.3/26.6mm. 한국 확인 가격 209,000원.',
+  oneliner: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강 · 201g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-09 원문 재확인. 한국 남녀공용 기본 1013A183.101·2E 1013A184.400은 확인 표시 가격 209,000원입니다. 기본은 240/245/250/260~290mm, 확인 2E는 230~290mm가 선택 가능이었습니다. 기본의 정확한 문자 폭은 미확인입니다. 사이즈 UI는 결제 재고 보장이 아닙니다. 한국 기본 상품 공시 196g은 측정 사이즈 미표기입니다. 뉴질랜드 제조사 기고는 남성 US9 193g·37.5/30.5mm·7mm, 싱가포르 공식은 드롭 7mm입니다. RR 201g·35.3/26.6mm·8.7mm와 구분합니다. 27.0AC·보조 37.0AC와 13.1N 굽힘은 서로 다른 시험입니다. BR79·건조율57%를 구방식 통기 1~5와 직접 비교하지 않습니다. 다른 카본화 대비 개인 기록 향상률·후반 탄성·400km 수명은 미확인으로 제거했습니다. 정확한 매직스피드5의 DOR 개별 착화 리뷰는 확인하지 못했습니다. 1~4세대 리뷰를 5의 후기처럼 옮기지 않았습니다. RR의 내부 치수·굽힘 13.1N과 전족 분기 형상을 확인했지만 입문자 누구나 적응하기 쉽거나 힐 착지에서 발목 부담이 적다는 보장은 아닙니다. RR 내부 최광폭 95.1mm·엄지 71.9mm·높이 25.7mm는 한국 2E 검체라고 확인된 값이 아닙니다. 기본과 2E를 비교하되 모든 발에 반업을 처방하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본',
+    '템포',
+  ],
   specs: {
     weight: 201,
     cushioning: 9,
     responsiveness: 7,
     stability: 5,
-    drop: 7,
-    durability: 400,
+    drop: 8.7,
   },
-
   biomechanics: {
-    stackHeight: { heel: 35.3, forefoot: 26.6 },
-    drop: 7,
+    stackHeight: {
+      heel: 35.3,
+      forefoot: 26.6,
+    },
+    drop: 8.7,
     carbonPlate: true,
-    plateType: 'forked carbon fiber',
-    midsoleType: 'FF Leap + FF Blast+',
-    optimalPace: '3:30-5:00 min/km',
+    plateType: 'full-length carbon structure with forked forefoot; exact composition disputed',
+    midsoleType: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'caution',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: true,
     winterCompatibility: 'fair',
     summerCompatibility: 'good',
+    wideOptions: true,
   },
-
   targetUsers: {
-    recommended: ['템포런/인터벌 훈련', '대회 입문 러너', '카본화 첫 경험', '가성비 레이싱'],
-    notRecommended: ['데일리 이지런', '과내전 러너', '발볼 넓은 러너'],
+    recommended: [
+      '기본과 한국 2E 상품의 고정·앞코를 시착 비교하려는 러너',
+      'FF LEAP·분기형 카본 전환이 자신의 주행에 맞는지 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 앞코·발등 압박이나 전환 불편이 생기는 경우',
+      '개인 기록 개선을 보장하는 설명만 보고 구매하려는 경우',
+    ],
   },
-
-  features: ['FF Leap + FF Blast+ 듀얼 폼', '포크형 카본 파이버 플레이트', '실측 201g 초경량 (공식 196g, 전작 대비 -46g)', '에너지 리턴 64.6%/62.6%', 'ASICSGRIP 아웃솔', '에너지 리턴 전족부 62.6% (RunRepeat 실측)', '충격흡수 힐 149 SA (RunRepeat 실측)'],
-
+  features: [
+    'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강',
+    '201g · 35.3/26.6mm · 드롭 8.7mm (RunRepeat 실험실 검체)',
+    '싱가포르 공식은 full-length carbon plate, 제조사 뉴질랜드 기고는 carbon-infused TPU, RR은 전족 분기형 카본으로 적었습니다. 첫 절단면의 70%처럼 보인다는 설명만으로 단판 길이를 확정하거나 100% 카본 섬유 조성을 보장하지 않습니다.',
+    'RR 내부 최광폭 95.1mm·엄지 71.9mm·높이 25.7mm는 한국 2E 검체라고 확인된 값이 아닙니다. 기본과 2E를 비교하되 모든 발에 반업을 처방하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 209000,
-    costPerKm: 522,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['nike-zoom-fly-6', 'adidas-boston-13', 'saucony-endorphin-speed-5'],
+    alternatives: [
+      'nike-zoom-fly-6',
+      'adidas-boston-13',
+      'saucony-endorphin-speed-5',
+    ],
   },
-
   detailedSpecs: {
-    weight: '201g (RunRepeat 랩 실측, 남성 US 9) · 공식 196g',
-    stackHeight: '힐 35.3mm / 포어풋 26.6mm (RunRepeat 랩 실측, 남성 US 9)',
-    drop: '공식 7mm / RunRepeat 실측 8.7mm',
-    midsole: 'FF Leap (상층) + FF Blast+ (하층)',
-    plate: '포크형 카본 파이버 플레이트',
-    outsole: 'ASICSGRIP 러버',
-    upper: '경량 엔지니어드 메쉬',
-    width: '표준 — RunRepeat 토박스 71.9mm(랩 평균 73.2mm, 남성 US 9) · 최대폭 95.1mm(평균 95.2mm). RunRepeat: "The toebox shows a mild taper at 71.9 mm, which should work for most runners" · 2E(와이드) 상품 있음(아식스 공식몰 2026-10-20 확인)',
-    durability: '400km',
-    price: '₩209,000',
-    costPerKm: '약 ₩522/km (400km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '201g (RunRepeat 실험실 검체). 한국 기본 상품 공시 196g은 측정 사이즈 미표기입니다. 뉴질랜드 제조사 기고는 남성 US9 193g·37.5/30.5mm·7mm, 싱가포르 공식은 드롭 7mm입니다. RR 201g·35.3/26.6mm·8.7mm와 구분합니다.',
+    stackHeight: '35.3/26.6mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.7mm (RunRepeat 실험실 검체). 한국 기본 상품 공시 196g은 측정 사이즈 미표기입니다. 뉴질랜드 제조사 기고는 남성 US9 193g·37.5/30.5mm·7mm, 싱가포르 공식은 드롭 7mm입니다. RR 201g·35.3/26.6mm·8.7mm와 구분합니다.',
+    midsole: 'FF LEAP 상층 + FF BLAST PLUS 하층 · 분기형 카본 보강. 주폼 27AC·보조 37AC, 힐/전족부 SA 149/112·에너지 리턴 64.6/62.6%. 27.0AC·보조 37.0AC와 13.1N 굽힘은 서로 다른 시험입니다. BR79·건조율57%를 구방식 통기 1~5와 직접 비교하지 않습니다. 다른 카본화 대비 개인 기록 향상률·후반 탄성·400km 수명은 미확인으로 제거했습니다.',
+    plate: '싱가포르 공식은 full-length carbon plate, 제조사 뉴질랜드 기고는 carbon-infused TPU, RR은 전족 분기형 카본으로 적었습니다. 첫 절단면의 70%처럼 보인다는 설명만으로 단판 길이를 확정하거나 100% 카본 섬유 조성을 보장하지 않습니다.',
+    width: 'RR 내부 최광폭 95.1mm·엄지 부위 71.9mm·높이 25.7mm. RR 내부 최광폭 95.1mm·엄지 71.9mm·높이 25.7mm는 한국 2E 검체라고 확인된 값이 아닙니다. 기본과 2E를 비교하되 모든 발에 반업을 처방하지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 남녀공용 기본 1013A183.101·2E 1013A184.400은 확인 표시 가격 209,000원입니다. 기본은 240/245/250/260~290mm, 확인 2E는 230~290mm가 선택 가능이었습니다. 기본의 정확한 문자 폭은 미확인입니다. 사이즈 UI는 결제 재고 보장이 아닙니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 87,
-      text: '"카본화를 처음 사봐도 될까요?"라는 질문에 가장 먼저 권하는 아식스 가성비 레이싱화입니다. RunRepeat 실측 201g(남성 US 9, 공식 196g)으로 전작보다 크게 가벼워져 완전히 새로운 신발이 되었으며, FF Leap 상층+FF Blast+ 하층 듀얼 폼으로 에너지 리턴이 64.6%/62.6%(힐/전족부)에 달합니다. 포크형 카본 플레이트는 풀렝스보다 유연해 힐스트라이커도 자연스럽게 전환할 수 있습니다. 힐 35.3mm(실측) 스택에 공식 7mm 드롭(실측 8.7mm)으로 카본화 입문자도 부담 없이 적응할 수 있는 구조입니다. 20만 9천원으로 메타스피드 레이(43만 9천원)의 48% 가격에 카본 레이싱을 경험할 수 있어 가성비가 탁월합니다. 단, 표준 폭 기준이라 발볼이 넓은 한국 러너는 2E를 함께 비교해 보세요. 발볼 넓으면 반드시 매장 착화 후 구매하거나 한 사이즈 업을 고려하세요. 대회와 템포 훈련 모두에 활용할 수 있는 선택입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/asics-magic-speed-5',
+      text: '한국 기본 상품 공시 196g은 측정 사이즈 미표기입니다. 뉴질랜드 제조사 기고는 남성 US9 193g·37.5/30.5mm·7mm, 싱가포르 공식은 드롭 7mm입니다. RR 201g·35.3/26.6mm·8.7mm와 구분합니다. 27.0AC·보조 37.0AC와 13.1N 굽힘은 서로 다른 시험입니다. BR79·건조율57%를 구방식 통기 1~5와 직접 비교하지 않습니다. 다른 카본화 대비 개인 기록 향상률·후반 탄성·400km 수명은 미확인으로 제거했습니다.',
     },
     {
-        userType: '세대 비교 — 매직 스피드 4에서 넘어오는 경우',
-        text: '전작 대비 무게가 크게 줄어든 것이 체감 차이의 핵심입니다. RunRepeat 실측 201g으로 전작(237g)보다 36g 가벼워져, 전작의 무겁고 단단하던 성격이 상당히 정리됐습니다. 플레이트가 포크형이라 풀렝스 카본보다 전환이 부드러워 발목에 걸리는 부담이 적고, 공식 7mm 드롭(실측 8.7mm)이라 힐 착지 성향에서도 적응이 수월합니다. 힐 에너지 리턴 64.6%(실측)로 인터벌 후반까지 탄성이 남습니다.',
-      },
-    {
-        userType: '예상 적합 — 힐 착지 성향의 카본 입문',
-        text: '카본화는 전족부 착지가 전제라는 통념 때문에 망설이는 경우, 이 모델은 예외에 가깝습니다. 플레이트가 포크형이라 강성이 한 번에 걸리지 않아 전환이 완만하고, 힐 착지 성향에서도 부담이 적습니다. 5분/km 안팎에서도 추진이 느껴지는 수준이라 훈련 중 레이스 감각을 익히는 용도에 맞습니다. 실측 201g으로 가볍고 힐 35.3mm 스택이라 충격 흡수도 확보했습니다. 다만 발볼이 넓다면 2E를 함께 시착해 보세요.',
-      },
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/asics-magic-speed-5',
+      text: '정확한 매직스피드5의 DOR 개별 착화 리뷰는 확인하지 못했습니다. 1~4세대 리뷰를 5의 후기처럼 옮기지 않았습니다. RR의 내부 치수·굽힘 13.1N과 전족 분기 형상을 확인했지만 입문자 누구나 적응하기 쉽거나 힐 착지에서 발목 부담이 적다는 보장은 아닙니다.',
+    },
   ],
-
-  similarShoes: ['nike-zoom-fly-6', 'adidas-boston-13', 'saucony-endorphin-speed-5', 'asics-magic-speed-4'],
+  similarShoes: [
+    'nike-zoom-fly-6',
+    'adidas-boston-13',
+    'saucony-endorphin-speed-5',
+    'asics-magic-speed-4',
+  ],
   relatedPosts: [
-    { slug: 'asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026', title: '매직스피드 5 vs 슈퍼블라스트 3 — 카본 든 쪽이 더 잘 휜다' },
-    { slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026', title: '매직스피드 5 vs 줌 플라이 6 — 같은 20.9만원, 47g이 갈린다' },
-    { slug: 'carbon-shoes-not-for-everyone-2026', title: '카본화가 나한테도 맞을까 — 사기 전 자가진단' },
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026',
+      title: '매직스피드 5 vs 슈퍼블라스트 3 — 카본 든 쪽이 더 잘 휜다',
+    },
+    {
+      slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',
+      title: '매직스피드 5 vs 줌 플라이 6 — 같은 20.9만원, 47g이 갈린다',
+    },
+    {
+      slug: 'carbon-shoes-not-for-everyone-2026',
+      title: '카본화가 나한테도 맞을까 — 사기 전 자가진단',
+    },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F05U5V3H' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YtyQvkm4' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/F05U5V3H',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YtyQvkm4',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 1013A183.101 · 문자 폭 미확인',
+        url: 'https://www.asics.co.kr/p/AKR_112631103-101',
+        note: '표시 가격 209,000원. 확인 사이즈 조건은 본문 참조.',
+      },
+      {
+        label: '한국 1013A184.400 · 2E',
+        url: 'https://m.asics.co.kr/p/AKR_112611104-400',
+        note: '표시 가격 209,000원. 확인 사이즈 조건은 본문 참조.',
+      },
+      {
+        label: 'ASICS 동세대 구조 원문 · 출처별 차이 보존',
+        url: 'https://www.asics.com/sg/en-sg/magic-speed-5/p/1013A183-400.html',
+        note: 'ExactMagic Speed5 official: FF LEAP +FF BLAST PLUS,7mm, full-length carbon plate,ASICSGRIP; no KR price/stock inference.',
+      },
+      {
+        label: 'ASICS 동세대 구조 원문 · 출처별 차이 보존',
+        url: 'https://www.asics.com/nz/en-nz/medical/review/magic-speed-5-review',
+        note: 'Technical wording only: Aaron Jackson calls plate full-length carbon-infused TPU;193g menUS9,37.5/30.5mm,7mm. No clinical/pace conclusion adopted.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/asics-magic-speed-5',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 201g·35.3/26.6mm·8.7mm. 27.0AC·보조 37.0AC와 13.1N 굽힘은 서로 다른 시험입니다. BR79·건조율57%를 구방식 통기 1~5와 직접 비교하지 않습니다. 다른 카본화 대비 개인 기록 향상률·후반 탄성·400km 수명은 미확인으로 제거했습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };

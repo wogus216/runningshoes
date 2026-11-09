@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'brooks-ghost-18',
   slug: 'brooks-ghost-18',
@@ -15,122 +16,135 @@ export const shoe: Shoe = {
   ],
   category: '입문화',
   rating: 4.5,
-  status: 'new',
-  price: 169000,
-  description:
-    '브룩스 대표 입문화 고스트의 18세대. DNA Loft v3 미드솔과 테이퍼드 토박스 등 정체성은 그대로 유지하면서 힐 스택을 소폭 높이고 혀 소재를 니트로 바꿨습니다. 무게는 17세대와 동일한 289g입니다.',
-  oneliner: '17세대와 무게(289g)까지 같은, 검증된 것을 다듬은 업데이트',
-  editorComment:
-    'RunRepeat 랩 실측 기준(2026-06-07 게시, 종합 86점 Great)으로 정리하면, 고스트 18은 17세대의 정체성을 그대로 지키면서 세부만 다듬은 모델입니다. 무게가 289g으로 17세대와 완전히 같고, 힐 스택은 37.3mm로 17세대(36mm)보다 1.3mm 높아졌습니다. 반대로 전족부는 25.1mm로 17세대(26mm)보다 살짝 낮아져, 앞뒤 균형이 미세하게 재조정됐습니다.\n\n눈에 띄는 발견 하나 — RunRepeat이 실측한 드롭은 12.2mm인데, 브랜드 공식 표기는 10mm입니다. 이 사이트는 다른 모델(예: 아식스 소닉블라스트 2)에서도 브랜드 공식 수치와 랩 실측치가 갈리는 경우를 그대로 병기해왔습니다 — 여기서도 실측치를 기준으로 specs를 채웠습니다.\n\n에너지 리턴은 힐 52.4%·전족 58.1%로 카테고리 평균(58.7%)보다 다소 낮아, RunRepeat은 이 부분을 단점으로 꼽았습니다. 대신 유연성(12.3N, 평균 15.5N보다 유연)과 아웃솔 내구성(마모 0.8mm, 평균 1.1mm보다 우수)에서 강점을 보였습니다. 힐 카운터 경직도가 5/5로 뒤꿈치 착지가 강한 러너에게 안정된 잠김감을 주지만, 중등도 이상 과내전이 있다면 브룩스 자체적으로도 안정화 라인인 어드레날린 GTS 25를 권합니다.\n\n토박스는 RunRepeat 랩 70.6mm로 평균(73.2mm)보다 2.6mm 좁고, 랩은 "The Ghost has long featured a somewhat tapered toebox"라고 적었습니다. 17세대와 마찬가지로 발볼이 넓다면 와이드 옵션을 선택하는 편이 안전합니다.\n\n한국 정가는 169,000원으로 17세대와 동일하고, 남녀 화이트 색상과 와이드(코코넛) 옵션이 brooksrunning.co.kr에 등재돼 있습니다(2026-09-10 확인).',
-  tags: ['입문화', '데일리 러닝화', 'DNA Loft v3', '힐스트라이커'],
-
+  description: 'DNA Loft v3 · 비플레이트 중립형 구조의 고스트 18. RunRepeat 실험실 검체 289g·37.3/25.1mm. 한국 현재 정가 미확인.',
+  oneliner: 'DNA Loft v3 · 비플레이트 중립형 · 289g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식몰의 www·비www 모두 실시간 연결에 실패해 현재 정가·판매 SKU·폭·재고는 미확인입니다. 공식 원본의 과거 캐시에는 169,000원과 남성 D·2E·4E, 여성 B·D 상품이 남아 있지만 이를 현재 판매 확정으로 쓰지 않습니다. DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다. 40.5AC 경도와 12.3N 굽힘은 다른 시험입니다. Dremel 마모 0.8mm를 800km 수명으로 옮기지 않습니다. 17과의 수치·가격 비교와 한국 현재 판매 조건을 이번 원문으로 모두 확정하지 않았습니다. DOR David(남성 US9.5)는 정사이즈이나 민감한 사람에게 길이가 약간 짧을 수 있고 앞발·중족 볼륨이 낮다고 느꼈습니다. 앞발 폭은 약간 넓게 느꼈으며 두꺼운 니트 혀의 조임은 사용 후 완화됐다고 적었습니다. 단단한 쿠션·유연한 앞발은 편했지만 빠른 동작의 활용성은 제한적으로 봤습니다. 본인에게 힐 마찰이 없었다는 경험을 아킬레스 보호 효과로 확대하지 않습니다. RR 내부 최광폭 96.0mm·엄지 부위 70.6mm·높이 25.8mm는 서로 다른 위치입니다. 현재 한국 와이드 SKU는 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '데일리 러닝화',
+    'DNA Loft v3',
+  ],
   specs: {
     weight: 289,
     cushioning: 8,
     responsiveness: 7,
     stability: 7,
-    drop: 12,
-    durability: 800,
+    drop: 12.2,
   },
-
   biomechanics: {
-    stackHeight: { heel: 37, forefoot: 25 },
-    drop: 12,
+    stackHeight: {
+      heel: 37.3,
+      forefoot: 25.1,
+    },
+    drop: 12.2,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'DNA Loft v3',
-    optimalPace: '5:30-7:00 min/km',
+    midsoleType: 'DNA Loft v3 · 비플레이트 중립형',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: true,
     winterCompatibility: 'fair',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 169000,
-    streetPrice: 169000,
-    costPerKm: 211,
     valueRating: 8,
     priceTier: 'budget',
-    alternatives: ['brooks-ghost-17', 'nike-pegasus-41', 'asics-gel-nimbus-28'],
-    valueAdvantages: [
-      '17세대와 동일한 가격(169,000원)으로 세대교체',
-      '아웃솔 내구성이 카테고리 평균보다 우수(랩 실측 마모율 기준)',
-      '남녀 + 와이드(2E) 옵션까지 한국 공식몰에 등재',
-      '유연성이 카테고리 평균보다 좋아 자연스러운 주행감',
+    alternatives: [
+      'brooks-ghost-17',
+      'nike-pegasus-41',
+      'asics-gel-nimbus-28',
     ],
   },
-
   targetUsers: {
     recommended: [
-      '뒤꿈치 착지가 강한 힐 스트라이커',
-      '검증된 데일리화를 그대로 이어가려는 기존 고스트 사용자',
-      '입문자 — 착지 충격에 관대하고 실패 확률이 낮은 선택',
-      '런/워크 겸용으로 편하게 신을 신발을 찾는 러너',
+      '유연한 앞발과 전통적인 힐 전환을 비교하려는 러너',
+      '실제 규격에서 낮은 볼륨·두꺼운 혀·힐 고정을 확인하려는 러너',
     ],
     notRecommended: [
-      '반발력(에너지 리턴)을 중시하는 러너 — 카테고리 평균보다 낮음',
-      '중등도 이상 과내전이 있는 러너 — 브룩스 자체가 어드레날린 GTS 25를 권장',
-      '발볼이 아주 넓은 러너 — 와이드를 선택해도 기본 토박스 자체는 표준~좁은 편',
-      '더 가벼운 신발을 원하는 러너 — 289g은 입문화 중 가벼운 축은 아님',
+      '직접 착화에서 발등·앞코 압박이 해결되지 않는 경우',
+      '과거 캐시만으로 현재 가격·재고를 확정한 매물',
     ],
   },
-
   features: [
-    'DNA Loft v3 미드솔 — 17세대와 동일 폼, 힐 스택만 소폭 상향(36→37.3mm)',
-    '아웃솔 마모율 0.8mm로 카테고리 평균(1.1mm)보다 우수한 내구성(RunRepeat 실측)',
-    '혀(tongue) 소재를 니트로 교체, 패딩 9.0mm로 두꺼워져 착화감 개선',
-    '힐 카운터 경직도 5/5 — 뒤꿈치 착지 시 안정된 잠김감',
-    '289g · 한국 정가 169,000원(17세대와 동일) · 와이드 옵션 있음',
-    '충격흡수 힐 135 SA (RunRepeat 실측)',
+    'DNA Loft v3 · 비플레이트 중립형',
+    '289g · 37.3/25.1mm · 드롭 12.2mm (RunRepeat 실험실 검체)',
+    '플레이트 없음. 힐 카운터·바닥 플레어와 카본 구조를 구분합니다.',
+    'RR 내부 최광폭 96.0mm·엄지 부위 70.6mm·높이 25.8mm는 서로 다른 위치입니다. 현재 한국 와이드 SKU는 미확인입니다.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석 (RunRepeat 랩 실측 기반)',
-      rating: 86,
-      text: '고스트 18은 17세대를 갈아엎기보다 다듬은 업데이트입니다. 무게는 289g으로 완전히 같고, 힐 스택만 1.3mm 높아졌습니다(36→37.3mm). DNA Loft v3 폼을 그대로 쓰면서 혀 소재를 니트로 바꿔 착화감을 개선했습니다. 에너지 리턴이 카테고리 평균보다 낮다는 점은 아쉽지만, 애초에 고스트가 반발력보다 안정된 데일리 주행을 목표로 하는 신발이라는 걸 감안하면 성격에 맞는 트레이드오프입니다. 아웃솔 마모율이 평균보다 우수하게 나온 점은 장거리 데일리화로서 확실한 강점입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/brooks-ghost-18',
+      text: 'DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다. 40.5AC 경도와 12.3N 굽힘은 다른 시험입니다. Dremel 마모 0.8mm를 800km 수명으로 옮기지 않습니다. 17과의 수치·가격 비교와 한국 현재 판매 조건을 이번 원문으로 모두 확정하지 않았습니다.',
     },
     {
-      userType: '17세대와 비교 — 바꿀 이유가 크지 않다',
-      text: '17세대를 잘 신고 있다면 18세대로 급히 갈아탈 이유는 크지 않습니다. 무게가 같고 폼도 같은 DNA Loft v3이며, 스택 변화도 힐 +1.3mm·전족 -0.9mm로 체감이 크지 않은 수준입니다. 가격도 169,000원으로 동일합니다. 바뀐 건 혀 소재(니트)와 힐탭 길이 정도라, 새 신발이 필요한 시점에 자연스럽게 세대교체하면 되는 성격입니다.',
-    },
-    {
-      userType: '드롭 표기 차이 — 브랜드 공식 10mm, 랩 실측 12.2mm',
-      text: 'RunRepeat이 신발을 절단해 실측한 드롭은 12.2mm인데, 브랜드가 공식적으로 표기하는 수치는 10mm입니다. 이런 차이는 미드솔 형상이나 측정 지점에 따라 종종 발생하며, 이 사이트는 랩 실측치를 기준으로 specs를 채웁니다. 드롭에 민감하거나 아킬레스·종아리 부담을 줄이려는 러너라면 랩 실측치 쪽을 기준으로 보는 편이 안전합니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/brooks-ghost-18-review-2026/',
+      text: 'DOR David(남성 US9.5)는 정사이즈이나 민감한 사람에게 길이가 약간 짧을 수 있고 앞발·중족 볼륨이 낮다고 느꼈습니다. 앞발 폭은 약간 넓게 느꼈으며 두꺼운 니트 혀의 조임은 사용 후 완화됐다고 적었습니다. 단단한 쿠션·유연한 앞발은 편했지만 빠른 동작의 활용성은 제한적으로 봤습니다. 본인에게 힐 마찰이 없었다는 경험을 아킬레스 보호 효과로 확대하지 않습니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '289g (남성 US 9, RunRepeat 실측) — 17세대와 동일',
-    stackHeight: '힐 37.3mm / 포어풋 25.1mm (RunRepeat 실측)',
-    drop: '12.2mm (RunRepeat 실측) — 브랜드 공식 표기는 10mm',
-    midsole: 'DNA Loft v3 — 경도 40.5 AC(RunRepeat 랩 평균 35.4 AC보다 단단함), 유연성 12.3N(평균 15.5N보다 유연)',
-    plate: '없음',
-    outsole: '러버 — 습식 그립 0.57(평균 0.52보다 우수), 마모율 0.8mm(평균 1.1mm보다 우수)',
-    upper: '엔지니어드 메시 + 니트 혀(신규) + 힐카운터 경직도 5/5',
-    width: '좁은 편 — RunRepeat 랩 토박스 70.6mm(평균 73.2mm보다 2.6mm 좁음, 남성 US 9). 랩 본문: "The Ghost has long featured a somewhat tapered toebox, and Brooks has once again stayed faithful to that design" · 국내 와이드(2E) 옵션 있음',
-    durability: '800km (추정 — 17세대와 동일 카테고리 기준, 랩 실측 아웃솔 마모율은 평균보다 우수)',
-    price: '169,000원 (2026-09-10 brooksrunning.co.kr 확인, 남녀+와이드 등재, 17세대와 동일가)',
-    costPerKm: '약 ₩211/km (800km 기준)',
-    footType: '중립 · 뒤꿈치 착지에 최적화',
-    landingPattern: '힐스트라이크',
+    weight: '289g (RunRepeat 실험실 검체). DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다.',
+    stackHeight: '37.3/25.1mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '12.2mm (RunRepeat 실험실 검체). DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다.',
+    midsole: 'DNA Loft v3 · 비플레이트 중립형. 주폼 40.5AC, 힐/전족부 SA 135/101·에너지 리턴 52.4/58.1%. 40.5AC 경도와 12.3N 굽힘은 다른 시험입니다. Dremel 마모 0.8mm를 800km 수명으로 옮기지 않습니다. 17과의 수치·가격 비교와 한국 현재 판매 조건을 이번 원문으로 모두 확정하지 않았습니다.',
+    plate: '플레이트 없음. 힐 카운터·바닥 플레어와 카본 구조를 구분합니다.',
+    width: 'RR 내부 최광폭 96mm·엄지 부위 70.6mm·높이 25.8mm. RR 내부 최광폭 96.0mm·엄지 부위 70.6mm·높이 25.8mm는 서로 다른 위치입니다. 현재 한국 와이드 SKU는 미확인입니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식몰의 www·비www 모두 실시간 연결에 실패해 현재 정가·판매 SKU·폭·재고는 미확인입니다. 공식 원본의 과거 캐시에는 169,000원과 남성 D·2E·4E, 여성 B·D 상품이 남아 있지만 이를 현재 판매 확정으로 쓰지 않습니다.',
   },
-
-  similarShoes: ['brooks-ghost-17', 'nike-pegasus-41', 'asics-gel-nimbus-28'],
-  relatedPosts: [
-    { slug: 'brooks-ghost-18-review', title: '고스트 18 후기 — 17세대와 무엇이 달라졌나' },
+  similarShoes: [
+    'brooks-ghost-17',
+    'nike-pegasus-41',
+    'asics-gel-nimbus-28',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=브룩스+고스트18' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YzGqWYVx' }],
+  relatedPosts: [
+    {
+      slug: 'brooks-ghost-18-review',
+      title: '고스트 18 후기 — 17세대와 무엇이 달라졌나',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://search.shopping.naver.com/search/all?query=브룩스+고스트18',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YzGqWYVx',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 Ghost18 과거 캐시 확인 범위',
+        url: 'https://brooksrunning.co.kr/category/collection/154',
+        note: '169,000원 및 폭별 상품은 과거 캐시 관찰. 현재 접속 실패로 현행 가격·재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/brooks-ghost-18',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 289g·37.3/25.1mm·12.2mm. 40.5AC 경도와 12.3N 굽힘은 다른 시험입니다. Dremel 마모 0.8mm를 800km 수명으로 옮기지 않습니다. 17과의 수치·가격 비교와 한국 현재 판매 조건을 이번 원문으로 모두 확정하지 않았습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/brooks-ghost-18-review-2026/',
+        note: 'DOR 소개는 남성 US9 289g·여성 US8 260g, 36/26mm·10mm입니다. RunRepeat 실측 37.3/25.1mm·12.2mm와 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };
