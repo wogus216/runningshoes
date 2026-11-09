@@ -1208,90 +1208,41 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026',
-    slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026',
-    title: '아디다스 하이퍼부스트 엣지 vs 아식스 슈퍼블라스트 3 — 무플레이트 고스택 슈퍼트레이너 대결',
-    description:
-      '카본 없이 45mm 고스택으로 승부하는 두 슈퍼 트레이너, 아디다스 하이퍼부스트 엣지와 아식스 슈퍼블라스트 3을 비교합니다. 스택·무게는 쌍둥이처럼 닮았고 반발은 엣지가 한 칸 높지만, 하이퍼부스트 엣지는 700km 내구의 훈련 특화, 슈퍼블라스트 3은 235g 경량의 레이스데이 지향입니다. 갑피 완성도·가성비·용도를 갈랐습니다.',
-    thumbnail: '/images/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-25',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['아디다스 하이퍼부스트 엣지', '아식스 슈퍼블라스트 3', '슈퍼트레이너', '무플레이트', '고스택 러닝화', '러닝화 비교'],
+    id: "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
+    slug: "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
+    title: "하이퍼부스트 엣지 vs 슈퍼블라스트3 — 수명 경쟁 대신, 앞발 스택·핏·전환 비교",
+    description: "247/235g 검체와 전족 스택38.1/37.7mm, 실측 드롭6.5/8.1mm를 비교합니다.700/550km·입문자 금지·어느 쪽 갑피가 안전하다는 기존 단정을 철회했습니다.",
+    thumbnail: "/images/shoes/adidas/hyperboost-edge/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-25",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "슈퍼블라스트3",
+      "하이퍼부스트 엣지",
+      "러닝화 비교"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>스펙은 쌍둥이, 성격은 다르다</strong> — <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(힐 44.6mm·247g)와 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(힐 45.8mm·235g, 둘 다 실측) 모두 카본 없는 초고스택 슈퍼 트레이너. 스택·무게는 거의 같고, 반발은 엣지가 9/10으로 슈퍼블라스트 3(8/10)보다 한 칸 높습니다</li>
-    <li><strong>가르는 건 내구와 용도</strong> — 엣지는 700km 내구·km당 356원의 <strong>훈련 특화</strong>, 슈퍼블라스트 3은 235g 경량·낮은 내구(550km)의 <strong>레이스데이·템포 지향</strong></li>
-    <li>둘 다 <strong>와이드 없음</strong>이고 발볼은 좁은 편. 엣지는 <strong>뻣뻣한 힐 칼라</strong>가 복사뼈를 파고든다는 지적이, 슈퍼블라스트 3은 검증된 갑피 완성도가 특징입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론.</strong> "오래 신는 훈련용 고스택 한 켤레"면 <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>, "가볍게 템포·레이스에 신는 슈퍼 트레이너"면 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>입니다. 엣지의 폼·갑피 상세는 <a href="/blog/adidas-hyperboost-edge-review-2026">하이퍼부스트 엣지 후기</a>, 슈퍼블라스트 세대 변화는 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3</a>, 가성비 대안까지 보려면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>을 참고하세요.</p>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>하이퍼부스트 엣지</th><th>슈퍼블라스트 3</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td><strong>249,000원</strong></td><td>259,000원</td></tr>
-    <tr><td>무게</td><td>247g</td><td><strong>235g</strong></td></tr>
-    <tr><td>스택(힐/전족)</td><td>44.6 / 38.1mm</td><td><strong>45.8 / 37.7mm</strong> <small>(공식 46.5 / 38.5mm)</small></td></tr>
-    <tr><td>드롭</td><td>6mm</td><td>8mm</td></tr>
-    <tr><td>미드솔</td><td>Hyperboost Pro 폼</td><td>FF LEAP + FF BLAST PLUS</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>쿠션 / 반발</td><td>10 / 9</td><td>10 / 8</td></tr>
-    <tr><td>안정성</td><td>5</td><td>6</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편 / 없음</td><td>좁은 편 / 없음</td></tr>
-    <tr><td>내구 / km당</td><td><strong>700km / 약 356원</strong></td><td>550km / 약 471원</td></tr>
-    <tr><td>대표 용도</td><td>고스택 훈련·데일리</td><td>템포·레이스데이</td></tr>
-  </tbody>
-</table>
-<p><small>수치는 본 사이트 신발 DB(무게·스택은 실측끼리, 괄호는 공식 표기 · 한국 공식가 기준, 2026-10-23 확인)입니다.</small></p>
-
-<h2>아디다스 하이퍼부스트 엣지 — 오래가는 고스택 훈련화</h2>
-<p>엣지는 카본 없이 45mm 스택을 얹고도 247g에 머문 슈퍼 트레이너로, Hyperboost Pro 폼의 반발(9/10)이 만장일치 극찬을 받았습니다. 진짜 강점은 <strong>내구성</strong>입니다 — 100km 주행 후에도 아웃솔 마모가 거의 없어 700km 이상을 기대할 수 있고, 그 덕에 km당 비용이 356원으로 슈퍼블라스트보다 훨씬 경제적입니다. "고스택의 재미를 오래 즐기는 훈련용"으로 최적입니다.</p>
-<p>약점은 <strong>갑피</strong>입니다. 거의 모든 해외 리뷰에서 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 반복됐습니다. 통기성도 평균 이하라 한여름엔 덥고, 안정성(5/10)도 낮아 과내전 러너에겐 맞지 않습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 고스택 슈퍼 트레이너를 오래 신고 싶은 분, 훈련량이 많아 내구·가성비가 중요한 분, 힐 핏이 예민하지 않은 중립 발 러너.</p>
-
-<h2>아식스 슈퍼블라스트 3 — 가볍고 완성된 레이스데이</h2>
-<p>슈퍼블라스트 3은 아식스 슈퍼 트레이너의 정점입니다. FF LEAP과 FF BLAST PLUS의 이중 폼으로 <strong>힐 45.8mm(실측, 공식 46.5mm) 스택을 235g</strong>이라는 놀라운 경량으로 구현했고, 카본 없이도 굴러가는 로커가 템포와 레이스데이를 아우릅니다. 무엇보다 아식스답게 <strong>갑피 완성도</strong>가 안정적이라, 엣지가 지적받는 힐 이슈 없이 발을 편안하게 감쌉니다.</p>
-<p>약점은 <strong>내구성</strong>입니다. 550km 수준으로 엣지보다 짧고, 가격도 가장 비싼 259,000원이라 km당 비용(471원)이 높습니다. 레이스·포인트 훈련용으로 아껴 신는 성격입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 가벼운 고스택으로 템포·레이스를 뛰고 싶은 분, 갑피 편안함을 중시하는 분, 훈련화와 레이싱화 사이 한 켤레를 원하는 분.</p>
-
-<h2>내게 맞는 건?</h2>
-<ul>
-  <li><strong>오래 신을 훈련용 · 가성비 · 내구 우선</strong> → <a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>(700km)</li>
-  <li><strong>가볍게 · 템포/레이스데이 · 갑피 편안함</strong> → <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>(235g)</li>
-  <li><strong>힐 핏이 예민하다</strong> → 엣지의 뻣뻣한 힐 칼라는 Doctors of Running·Road Trail Run이 반복 지적한 부분이라 슈퍼블라스트 3이 안전. 반드시 시착 권장</li>
-  <li><strong>가성비 슈퍼 트레이너를 원한다</strong> → 두 프리미엄 대신 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">에보 SL·마하 6</a>도 함께 보세요</li>
-</ul>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 카본이 없는데 레이스에 신어도 되나요?</p>
-    <p class="faq-a">A. 네. 카본 플레이트는 없지만 고스택 폼과 로커 지오메트리로 굴러가는 힘이 좋아, 서브3~서브4 구간의 논엘리트 러너에게는 충분히 빠른 신발입니다. 다만 기록을 극한으로 노린다면 카본 레이싱화가 여전히 우위입니다. 둘 중에선 더 가벼운 슈퍼블라스트 3이 레이스에 유리합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 스펙이 이렇게 비슷한데 실제로 뭐가 다른가요?</p>
-    <p class="faq-a">A. 주행 감각은 닮았지만 세 가지가 다릅니다 — ① 내구(엣지 700km vs 슈블 550km), ② 갑피(엣지는 힐 칼라 이슈, 슈블은 편안), ③ 성격(엣지는 훈련·데일리, 슈블은 템포·레이스). 매일 신을 거면 엣지, 아껴 신는 스피드용이면 슈퍼블라스트 3입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 괜찮을까요?</p>
-    <p class="faq-a">A. 둘 다 와이드 옵션이 없고 발볼은 좁은 편입니다. 발볼이 아주 넓다면 두 신발 모두 시착이 필수이고, 고스택 슈퍼 트레이너 중 와이드가 필요하면 다른 카테고리(데일리 쿠션화의 와이드 모델)를 고려하는 편이 낫습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 초보에게도 맞나요?</p>
-    <p class="faq-a">A. 권하지 않습니다. 45mm대 초고스택은 무게중심이 높아 안정성이 낮고(엣지 5·슈블 6), 발목·아킬레스에 부담이 될 수 있습니다. 입문이라면 안정적인 데일리 트레이너(페가수스 42 등)로 시작한 뒤, 러닝이 익숙해지면 슈퍼 트레이너로 넘어오는 편이 안전합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 본 사이트 신발 DB(RunRepeat 랩 실측·해외 전문 리뷰 종합·한국 공식가) 및 각 모델 상세 페이지 · 한국 공식가 기준 · 작성 2026년 7월 25일.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>둘 다 전장 카본 플레이트 없이 높은 스택을 제공합니다.</li><li>랩 무게는247/235g이지만 모든 개인 사이즈의12g 차이를 보장하는 것은 아닙니다.</li><li>700/550km 수명과 비용 우열, 갑피 안전·입문자 일괄금지는 확인한 자료로 입증하지 못했습니다.</li></ul></div><p><strong>2026-11-09 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/adidas/hyperboost-edge/side.webp" alt="하이퍼부스트 엣지 — 칼라·발등 볼륨을 확인할 비교 대상" loading="lazy"/><figcaption>하이퍼부스트 엣지 — 칼라·발등 볼륨을 확인할 비교 대상</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>엣지</th><th>슈퍼블라스트3</th></tr></thead><tbody><tr><td>무게</td><td>247g</td><td>235g</td></tr><tr><td>힐/전족부 스택</td><td>44.6/38.1mm</td><td>45.8/37.7mm</td></tr><tr><td>실측 드롭</td><td>6.5mm</td><td>8.1mm</td></tr><tr><td>힐/전족부 SA</td><td>154/145</td><td>154/153</td></tr><tr><td>힐/전족부 리턴</td><td>73.6/72.8%</td><td>67.8/67.5%</td></tr><tr><td>폼 경도</td><td>32.5AC</td><td>22.8AC</td></tr><tr><td>내부 최광폭/엄지 너비</td><td>97.4/71.4mm</td><td>95.7/71.6mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>앞발 높이는 가깝지만 전환이 같다는 뜻은 아닙니다</h2><p>전족 스택은38.1/37.7mm로 가깝고 실측 드롭은6.5/8.1mm로 다릅니다. 힐 SA가154로 같아도 폼·로커·어퍼 고정과 개인 체감이 같지는 않습니다. 엣지는 Hyperboost Pro·Primeweave·LIGHTTRAXION, 슈퍼블라스트3는 FF LEAP+FF BLAST PLUS 구조입니다. 리턴 숫자가 높은 쪽이 모든 러너에게 더 빠르다고 판정하지 않습니다.</p><p>공시는 엣지 힐45mm·드롭6mm(글로벌 발표), 슈퍼블라스트3 46.5/38.5mm·8mm(ASICS 글로벌 발표)입니다. DOR 소개239g(남성US9)도 슈퍼블라스트의 RR235g과 분리합니다.</p>
+<h2>엣지의 칼라 이슈가 다른 쪽의 안전 보장은 아닙니다</h2><p>DOR 엣지 리뷰에서 Matt(남성US10)은 뒤쪽 갑피를 편하게, David(남성US9.5)는 발목 쓸림을 경험했습니다. 로커 시점·주행 선호도 달랐습니다. 이 경험을 바탕으로 ‘슈퍼블라스트는 무조건 편하고 더 안전’이라고 결론내릴 수 없습니다. 각각의 실제 규격에서 발등·엄지 위·칼라를 확인하세요. 슈퍼블라스트3 DOR 리뷰에서도 Matt은 주행 활용 폭을 넓게 봤지만 Andrea는 주행에서 처지는 느낌과 본인의 불편을 적었습니다. 이는 개인 경험이며 집단 부상률이 아닙니다.</p><p>엄지 부위는71.4/71.6mm로 비슷하지만 최광부는97.4/95.7mm로 다릅니다. 두 수치만으로 넓은 한국 발에 맞는 쪽을 정하지 않습니다. 한국 현재 와이드 여부도 모델별 미확인입니다.</p>
+<h2>가격과 교체 거리를 함께 확정하지 않기</h2><p>슈퍼블라스트3 한국 유니섹스1013A177.101에서 정가259,000원을 확인했으며 로그인 전 폭·사이즈별 실시간 재고는 미확인입니다. 엣지는 한국 공식 캐시에 SKU별249,000/259,000원이 표시됐지만 현행 가격은 확인하지 못했습니다. 모든 상품의1만원 차이로 고정하지 않습니다.</p><p>엣지700km·슈퍼블라스트550km와 그 값으로 만든km당비용 우열은 철회했습니다. 국소 마모 시험이 교체 거리를 뜻하지 않기 때문입니다. ‘엣지는 데일리, 슈퍼블라스트는 레이스’라는 공통 용도·Sub3~4 추천도 개인 기록을 근거로 검증된 구분이 아닙니다. 참가 대회의 신발 규정과 자신의 사용 조건을 별도로 확인하세요.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>비교 원문</h2><p><a href="https://runrepeat.com/adidas-hyperboost-edge" target="_blank" rel="noopener noreferrer">엣지 랩</a> · <a href="https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/" target="_blank" rel="noopener noreferrer">엣지 DOR</a> · <a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 랩</a> · <a href="https://www.doctorsofrunning.com/asics-superblast-3-review-2026/" target="_blank" rel="noopener noreferrer">슈퍼블라스트3 DOR</a> · <a href="https://assets.asics.com/system/media_libraries/25473/file.pdf" target="_blank" rel="noopener noreferrer">ASICS 글로벌 공시</a> · <a href="https://m.asics.co.kr/p/AKR_112630203-101" target="_blank" rel="noopener noreferrer">한국 슈퍼블라스트3 확인SKU</a></p><h2>확인한 원문</h2><ul><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-%EB%9F%AC%EB%8B%9D%ED%99%94/KI1913.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KI1913 · 남성</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-w/LA2185.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 LA2185 · Women</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 2 weeks; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5376.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5376 · 남성</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5379.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5379 · Women</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3" target="_blank" rel="noopener noreferrer">adidas 글로벌 공식 발표</a> — 255g 남성8.5·45mm·6mm·플레이트 없음·선호 조사.</li><li><a href="https://news.adidas.com/global/hyperboost-edge-unlocked--10-things-you-need-to-know-from-vp-of-design-for-adidas-running/s/5c39a6df-59d2-415b-81e0-fe8671de5399" target="_blank" rel="noopener noreferrer">adidas 폼 설계 Q&A</a> — 정확 고분자 미공개. Boost 이름만으로 eTPU 단정 금지.</li><li><a href="https://runrepeat.com/adidas-hyperboost-edge" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "엣지가150km 더 오래가나요?",
+        "answer": "700/550km 차이를 확인하지 못해 철회했습니다. 각 검체의 국소 마모로 공통 교체 거리를 계산할 수 없습니다."
+      },
+      {
+        "question": "입문자는 두 신발 모두 금지인가요?",
+        "answer": "스택·평점만으로 공통 금지를 정할 근거가 없습니다. 실제 고정·전환과 자신의 주행 조건을 확인하세요."
+      },
+      {
+        "question": "앞발 공간은 어느 쪽이 넓나요?",
+        "answer": "최광부는 엣지97.4mm·슈퍼블라스트95.7mm, 엄지는71.4/71.6mm입니다. 한 위치의 너비가 전체 적합성을 결정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026',
@@ -1652,134 +1603,44 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'adidas-hyperboost-edge-review-2026',
-    slug: 'adidas-hyperboost-edge-review-2026',
-    title: '아디다스 하이퍼부스트 엣지 후기 | 45mm 무플레이트 슈퍼트레이너 — 폼은 극찬, 갑피는 혹평으로 갈린 이유',
-    description:
-      '아디다스 하이퍼부스트 엣지는 플레이트 없이 45mm 스택을 얹고 247g에 머문 슈퍼 트레이너입니다. 힐 에너지 리턴 73.6%로 폼은 만장일치 극찬을 받았지만, 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 거의 모든 매체에서 반복됐습니다. 통기성 62(평균 이하)라 한국 여름에 불리하고 와이드 옵션도 없습니다. 랩 실측과 해외 리뷰 8곳을 종합해 249,000원의 값어치를 따졌습니다.',
-    thumbnail: '/images/blog/adidas-hyperboost-edge-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-22',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['아디다스 하이퍼부스트 엣지', '하이퍼부스트', '슈퍼트레이너', '무플레이트', '고스택 러닝화', '데일리 러닝화'],
+    id: "adidas-hyperboost-edge-review-2026",
+    slug: "adidas-hyperboost-edge-review-2026",
+    title: "하이퍼부스트 엣지 리뷰 —73.6% 리턴보다 함께 봐야 할 칼라·볼륨·전환",
+    description: "공식 선호 조사73%와 실측 리턴73.6%는 다른 통계입니다. 플레이트 없는 구조,247g 검체, 리뷰어별 칼라·힐 전환 차이와 한국 SKU별 캐시 가격을 정리합니다.",
+    thumbnail: "/images/shoes/adidas/hyperboost-edge/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-22",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "하이퍼부스트 엣지",
+      "아디다스",
+      "무플레이트",
+      "칼라 핏"
+    ],
     faqs: [
       {
-        question: '하이퍼부스트 엣지, 발볼 넓은 사람도 신을 수 있나요?',
-        answer:
-          '권하기 어렵습니다. 토박스 폭이 71.4mm로 평균(73.2mm)보다 좁은 편이고 높이도 24.8mm로 낮아 발등 볼륨에서 먼저 걸리고, 와이드 옵션이 아예 없습니다(D 표준폭 단일). 발볼이나 발등이 넉넉한 편이라면 아디다스 안에서는 토박스 74.5mm(RunRepeat 평균 73.2mm)에 한국 공식몰 와이드 버전도 있는 슈퍼노바 라이즈 3 쪽이 현실적입니다(2026년 10월 확인). 아디제로 Evo SL은 같은 시점 한국 공식몰에 와이드가 없습니다.',
+        "question": "칼라가 누구에게나 쓸리나요?",
+        "answer": "DOR David는 쓸림을, Matt은 편한 뒤쪽 갑피를 경험했습니다. 자신의 양말·실제 규격에서 칼라 접촉을 확인할 항목입니다."
       },
       {
-        question: '힐 칼라가 쓸린다는 게 무슨 말인가요?',
-        answer:
-          '뒤꿈치를 감싸는 갑피 테두리가 뻣뻣해서 발목 바깥 복사뼈를 파고든다는 지적입니다. Doctors of Running 리뷰어는 트랙 훈련 중 피부가 까졌다고 했고, Road Trail Run에서는 체중이 가벼운 테스터 두 명이 "면도날 같다"고 표현했습니다. 복사뼈가 튀어나온 편이라면 매장 착화가 필수입니다.',
+        "question": "공식73%와 RR73.6%가 같은 값인가요?",
+        "answer": "공식은 선호한 응답자 비율, RR은 검체의 반환 에너지 비율입니다. 같은 시험으로 볼 수 없습니다."
       },
       {
-        question: '여름에 신어도 되나요?',
-        answer:
-          '한여름에는 추천하지 않습니다. 통기성 점수가 62로 러닝화 평균 이하이고 갑피가 촘촘한 우븐 소재라 발에 열이 갇힙니다. 반대로 저온에서 폼이 굳는 비율이 9%에 그쳐 겨울 러닝에는 강점이 뚜렷합니다.',
-      },
-      {
-        question: '카본화 대신 레이스에 신어도 될까요?',
-        answer:
-          '맞지 않습니다. km당 3분45초보다 빨라지면 부피감이 느껴지고 급격한 코너링에 약합니다. RunRepeat 세부 점수도 템포 87점·레이스 78점으로 갈립니다. 이지런부터 템포·롱런까지가 이 신발의 자리입니다.',
-      },
+        "question": "700km를 쓸 수 있나요?",
+        "answer": "모든 러너에 적용할 수명을 입증하지 못했습니다. 국소 마모를 주행 수명으로 환산한 설명을 철회했습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>폼은 만장일치 극찬입니다.</strong> 힐 충격흡수 154·에너지 리턴 73.6%로, 44.6mm 스택을 얹고도 <strong>247g</strong>에 그칩니다. 플레이트가 없는데 강성 19.8N으로 단단해 템포 구간에서 특히 강합니다</li>
-    <li><strong>갑피는 만장일치 혹평입니다.</strong> 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 거의 모든 매체에서 반복됐고, Tom's Guide가 헤드라인에 쓴 <strong>"deal breaker"</strong>가 바로 이것입니다</li>
-    <li>한국 러너에게는 <strong>계절이 승부처</strong>입니다 — 통기성 62(평균 이하)로 한여름엔 불리하지만, 저온 경화율 9%로 <strong>겨울엔 손에 꼽습니다.</strong> 와이드 옵션은 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔍</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 4개월차, 이제 검증이 끝난 신발입니다</p>
-    <p><a href="/shoes/adidas-hyperboost-edge">하이퍼부스트 엣지</a>는 2026년 3월 23일 한국에 출시됐습니다(글로벌 3월 17일). 넉 달이 지나 <strong>RunRepeat 랩 실측과 전문 매체 리뷰가 모두 나온 상태</strong>라, 이 글의 수치는 추정이 아니라 확정 데이터입니다. 출시 직후 리뷰와 달리 <strong>100km 이상 주행 후 내구성 평가</strong>까지 반영했습니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 보는 스펙</h2>
-<table>
-  <thead><tr><th>항목</th><th>실측</th><th>의미</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td><strong>247g</strong></td><td>공식 발표 255g보다 8g 가벼움</td></tr>
-    <tr><td>스택</td><td>힐 44.6 / 전족 38.1mm</td><td>맥시멀 구간</td></tr>
-    <tr><td>드롭</td><td>6.5mm (공식 6mm)</td><td>낮은 편</td></tr>
-    <tr><td>충격흡수(SA)</td><td>힐 <strong>154</strong> / 전족 145</td><td>최상위권</td></tr>
-    <tr><td>에너지 리턴</td><td>힐 <strong>73.6%</strong></td><td>카본 레이싱화에 근접</td></tr>
-    <tr><td>미드솔 경도</td><td>32.5 AC</td><td>매우 부드러움</td></tr>
-    <tr><td>강성(30° 굽힘)</td><td>19.8N</td><td>플레이트 없이 단단함</td></tr>
-    <tr><td>토박스</td><td>폭 71.4mm / <strong>높이 24.8mm</strong></td><td>폭은 좁은 편, 높이도 낮음</td></tr>
-    <tr><td>통기성</td><td><strong>62 BR</strong></td><td>평균 이하</td></tr>
-    <tr><td>아웃솔 마모</td><td>0.6mm</td><td>매우 우수</td></tr>
-    <tr><td>가격</td><td><strong>249,000원</strong></td><td>km당 약 356원(700km 기준)</td></tr>
-  </tbody>
-</table>
-<p>RunRepeat 종합은 <strong>83/100</strong>인데, 세부 점수가 성격을 그대로 보여줍니다 — <strong>템포 87 · 데일리 82 · 레이스 78 · 안정성 75</strong>. 곧게 뻗은 길을 일정한 페이스로 밀 때 가장 좋고, 흔들리는 발이나 방향 전환에는 약하다는 뜻입니다.</p>
-
-<h2>폼 — 여기는 이견이 없습니다</h2>
-<p>이 신발의 존재 이유는 <strong>하이퍼부스트 프로</strong>라는 새 폼입니다. 아디다스는 조성을 공개하지 않았지만(Road Trail Run 테스터는 초임계 PEBA 비드로 추정하는데, <strong>브랜드가 확인해준 사실은 아닙니다</strong>), 결과물의 수치는 분명합니다. 경도 32.5 AC로 매우 부드러운데 에너지 리턴이 73.6%로 높고, 그러면서 44.6mm 스택에 247g입니다.</p>
-<p>더 흥미로운 건 <strong>플레이트가 없는데도 단단하다</strong>는 점입니다. 종방향 강성 19.8N은 RunRepeat 기준 "Stiff"로 분류되는 값인데, 이걸 카본이나 나일론 판 없이 폼 구조와 지오메트리만으로 만들어냈습니다. Believe in the Run은 A 티어를 주면서 "튀어오르는 느낌이 명확하고 놀랍도록 가볍다"고 했고, 한 리뷰어는 <strong>평소 이지 페이스보다 마일당 1분 가까이 빨라졌다</strong>고 보고했습니다.</p>
-<p>아웃솔도 평가가 일치합니다. 2mm 두께의 LIGHTTRAXION이 풀커버로 깔렸는데 <strong>100km 주행 후에도 눈에 띄는 마모가 없었고</strong>, 랩 마모 테스트에서도 0.6mm에 그쳤습니다. 249,000원이라는 가격을 내구성으로 방어하는 구조입니다. 다만 도로·트랙 전용이고 흙이나 진흙에서는 접지력이 떨어집니다.</p>
-
-<h2>갑피 — 여기서 모든 게 갈립니다</h2>
-<p>아디다스는 PRIMEWEAVE 갑피를 <strong>"매우 부드럽고 초경량인 우븐 소재"</strong>로 홍보합니다. 실사용 평가는 정반대입니다. 이 신발에서 <strong>공식 문구와 현실이 가장 크게 어긋나는 지점</strong>이 여기입니다.</p>
-<p>문제는 <strong>뒤꿈치를 감싸는 칼라가 뻣뻣하다</strong>는 것입니다. 지적이 한 곳에 집중돼 있습니다.</p>
-<ul>
-  <li><strong>Tom's Guide</strong> — 헤드라인이 "재미있고 튀는데 이게 deal breaker일 수 있다"인데, 그 정체가 칼라입니다. "뻣뻣해서 살짝만 쓸려도 피부를 파고든다"고 썼습니다</li>
-  <li><strong>Doctors of Running</strong> — 트랙 훈련 중 바깥 복사뼈 <strong>피부가 까졌고</strong>, 얇은 양말이 필수라고 했습니다</li>
-  <li><strong>Road Trail Run</strong> — <strong>체중이 가벼운 테스터 두 명</strong>이 복사뼈에 "면도날" 같은 느낌을 호소했고, 아킬레스 물집도 보고됐습니다</li>
-  <li><strong>Believe in the Run</strong> — 끈을 다 풀어도 신기 어려운 "발에 넣기 힘든 신발"이라는 평이 있었습니다</li>
-</ul>
-<p>정리하면 <strong>발이 신발 안에서 조금이라도 움직이는 사람일수록 위험</strong>합니다. 체중이 가벼워 발이 덜 눌리는 러너, 복사뼈가 튀어나온 러너에게 특히 그렇습니다. 온라인 구매를 권하지 않는 이유가 이것입니다.</p>
-
-<h2>한국 러너 관점 — 계절이 승부처입니다</h2>
-<p>한국에서 이 신발을 살지 말지는 <strong>언제 신을 것인가</strong>로 갈립니다.</p>
-
-<h3>여름에는 불리합니다</h3>
-<p>통기성 점수가 <strong>62로 러닝화 평균 이하</strong>입니다. 갑피가 촘촘하게 짜인 우븐이라 Road Trail Run은 "얇고 막혀 있고 매우 조밀하다"고 표현했습니다. 지금 같은 7~8월 한강에서 신으면 발에 열이 갇힙니다. 여름용을 찾는다면 <a href="/blog/summer-breathable-running-shoes-2026">통기성 좋은 여름 러닝화 정리</a>를 먼저 보세요.</p>
-
-<h3>겨울에는 강점이 뚜렷합니다</h3>
-<p>반대로 <strong>저온에서 폼이 굳는 비율이 9%</strong>에 그칩니다. 대부분의 러닝화가 영하에서 딱딱해져 쿠션이 사라지는 걸 감안하면 이건 실질적인 장점입니다. 한겨울 새벽에 자주 뛴다면 오히려 이 신발의 계절이 그때입니다.</p>
-
-<h3>발 — 폭보다 볼륨이 문제입니다</h3>
-<p>토박스 폭은 71.4mm로 평균(73.2mm)보다 <strong>좁은 편</strong>(앞쪽이 좁아지는 테이퍼형)입니다. 게다가 <strong>높이가 24.8mm로 낮아</strong> 발볼뿐 아니라 <strong>발등이 높은 발</strong>에서도 압박이 옵니다. 게다가 <strong>와이드 옵션이 아예 없습니다</strong>(D 표준폭 단일). 발볼 기준으로 신발을 고르는 방법은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>에 정리해뒀습니다.</p>
-
-<h3>착지 유형 — 힐 스트라이커는 주의</h3>
-<p>Doctors of Running이 짚은 구조 문제입니다. 45mm급 맥시멀 신발은 뒤꿈치가 부드럽게 굴러가도록 <strong>힐 베벨(뒤꿈치 깎기)</strong>이 필요한데, 이 신발은 후방 플레어가 넓어 뒤꿈치가 예상보다 <strong>일찍 지면에 닿습니다</strong>. 리뷰어는 이 때문에 힐 착지 러너에게 <strong>정강이 부담이 늘 수 있다</strong>고 봤습니다. 인구의 75~85%가 힐 착지라는 점을 감안하면 가볍게 넘길 얘기가 아닙니다. 정강이 통증 이력이 있다면 <a href="/blog/shin-splints-running-shoes-2026">신 스플린트 가이드</a>를 함께 보세요.</p>
-
-<h2>뭐랑 비교하면 되나</h2>
-<p>같은 <strong>플레이트 없는 슈퍼 트레이너</strong> 안에서 성격이 갈립니다. 참고로 아디다스는 이 신발을 "아디다스 최초의 무플레이트 슈퍼 트레이너"로 소개하는데, <strong>업계 최초는 아닙니다</strong> — 아식스 슈퍼블라스트가 먼저 이 자리를 열었습니다.</p>
-<ul>
-  <li><strong><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></strong>(25.9만·235g) — 가장 직접적인 경쟁작. 듀얼 폼이라 <strong>더 안정적이고 갑피 평가가 낫습니다.</strong> 대신 엣지가 단일 폼이라 라이드가 더 매끄럽습니다</li>
-  <li><strong><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a></strong>(20.9만·223g) — 같은 아디다스지만 <strong>직접 경쟁이 아닙니다.</strong> Evo SL은 짧고 빠른 거리, 엣지는 길고 느린 거리 + 맥시멀 쿠션. <strong>더 싸고 가볍습니다</strong>(단 2026년 10월 한국 공식몰 기준 와이드는 없음, <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>)</li>
-  <li><strong><a href="/shoes/asics-megablast">아식스 메가블라스트</a></strong> — 218g로 더 가볍고 빠르며 갑피가 낫지만, 덜 안정적이고 더 비쌉니다</li>
-  <li><strong><a href="/shoes/nike-vomero-plus">나이키 보메로 플러스</a></strong>(RunRepeat 실측 289g, US 9) — 실측 기준 엣지(247g)가 42g 가볍고 전족부 반발이 강한 대신, 보메로가 더 안정적입니다</li>
-  <li><strong><a href="/shoes/hoka-mach-6">호카 마하 6</a></strong>(18.5만) — 예산을 줄이면서 가벼운 템포화를 원할 때. 스택은 훨씬 낮습니다</li>
-</ul>
-<p>세 모델을 정면으로 비교한 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>과 <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 계급도</a>에서 라인업 전체 위치를 볼 수 있습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔀</span>
-  <div class="callout-body">
-    <p class="callout-title">'하이퍼부스트 런'과 헷갈리지 마세요</p>
-    <p>하이퍼부스트는 <strong>라인 이름</strong>이라 형제 모델이 있습니다. <strong>하이퍼부스트 런</strong>은 같은 폼을 쓰지만 스택이 <strong>38.6/31.8mm로 훨씬 낮고</strong>(엣지는 44.6/38.1mm) 컨티넨탈 러버 팟이 붙습니다. RunRepeat는 런을 <strong>"엣지의 덜 극단적인 대안"</strong>으로 소개하며, 접지감과 제어가 좋아 <strong>초보자·가벼운 체중</strong>에 적합하다고 봤습니다. "하늘 높은 쿠션"을 원하면 엣지, <strong>균형과 안정을 원하면 런</strong>입니다. 단 통기성은 런이 54로 <strong>더 나쁩니다.</strong></p>
-  </div>
-</div>
-
-<h2>그래서 사도 되나</h2>
-<p>249,000원의 값어치는 <strong>누가 신느냐</strong>에 따라 완전히 갈립니다.</p>
-<p><strong>이런 분께는 좋은 신발입니다</strong> — 미드풋·포어풋 착지, 이지런부터 템포·롱런까지 한 켤레로 굴리려는 뉴트럴 러너, 발 볼륨이 낮은 편, 그리고 <strong>겨울에 많이 뛰는 러너</strong>. 폼의 반발과 아웃솔 내구성만 놓고 보면 이 가격대에서 경쟁력이 분명합니다.</p>
-<p><strong>이런 분께는 권하지 않습니다</strong> — 힐 착지가 강한 러너, 평발·과내전으로 안정성이 필요한 러너, 발등이 높거나 복사뼈가 튀어나온 발, 한여름에 주로 뛰는 러너, 인터벌·레이스용을 찾는 경우.</p>
-<p>정리하면 <strong>폼은 이 가격에 살 만하고, 갑피는 이 가격에 아쉽습니다.</strong> 그래서 결론은 단순합니다 — <strong>반드시 신어보고 사세요.</strong> 특히 뒤꿈치를 좌우로 살짝 비틀어보고 복사뼈에 닿는 느낌을 확인하세요. 발볼·체중·부상 이력까지 반영한 대안이 궁금하다면 <a href="/recommend">1분 맞춤 추천</a>을 받아보시면 됩니다.</p>
-
-<p><small>출처: RunRepeat "Cut in half" 랩 실측(종합 83/100) · Believe in the Run(A Tier) · Road Trail Run 멀티테스터 및 100km 내구 리뷰 · Doctors of Running · The Run Testers · Tom's Guide · 아디다스코리아 2026-03-23 보도자료. 한국 정가 249,000원은 KREAM 발매가와 러닝 전문 리테일러 판매가로 교차 확인했습니다(adidas.co.kr은 봇 차단으로 직접 확인 불가). 하이퍼부스트 프로의 소재 조성은 아디다스 미공개이며 본문의 PEBA 언급은 리뷰어 추정입니다. (작성 2026-07-22)</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>RunRepeat는247g·44.6/38.1mm·리턴73.6/72.8%를 측정했습니다.</li><li>DOR Matt은 뒤쪽 갑피를 편하게, David는 칼라 쓸림을 경험했습니다. ‘모두 혹평’은 정정합니다.</li><li>한국 공식 캐시 가격은 SKU별249,000/259,000원이며 현재 선택 재고·와이드는 미확인입니다.</li></ul></div><p><strong>2026-11-09 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/adidas/hyperboost-edge/side.webp" alt="하이퍼부스트 엣지 — Hyperboost Pro·Primeweave·LIGHTTRAXION" loading="lazy"/><figcaption>하이퍼부스트 엣지 — Hyperboost Pro·Primeweave·LIGHTTRAXION</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>값</th></tr></thead><tbody><tr><td>무게·힐/전족부 스택</td><td>247g·44.6/38.1mm</td></tr><tr><td>실측 드롭</td><td>6.5mm</td></tr><tr><td>힐/전족부 SA</td><td>154/145</td></tr><tr><td>힐/전족부 리턴</td><td>73.6/72.8%</td></tr><tr><td>폼 경도</td><td>32.5AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>97.4/71.4/24.8mm</td></tr><tr><td>통기·건조</td><td>BR62·건조율47%</td></tr><tr><td>아웃솔 국소마모</td><td>0.6mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>73% 선호 조사와73.6% 실측은 다릅니다</h2><p>adidas 공식 발표는60명의 러너 중73%가 에너지 리턴을 선호했고77%가 더 부드럽다고 느꼈다고 설명합니다. 이는 응답자 비율입니다. 기계 시험으로 반환 에너지를 잰 RR의73.6%와 연결해서 ‘공식 수치가 랩에서 검증됐다’고 할 수 없습니다. 개인 기록 향상률도 아닙니다.</p><p>글로벌 발표는2026-03-05, 글로벌 출시는03-17입니다. 남성8.5 기준255g이지만 사이즈 체계는 미명시입니다. DOR 소개268g은 남성10 실측이며, RR247g과 단순 감량 차이로 계산하지 않습니다. 기존 한국03-23 출시 확정은 이번 원문 범위에서 재확인하지 못했습니다.</p>
+<h2>폼 이름만으로 고분자를 정하지 않기</h2><p>공식 Q&A는 LightstrikePro 배합과 Boost 공정을 결합한 펠릿형 슈퍼폼을 설명하지만 정확한 고분자는 공개하지 않습니다. RR은 PEBA계로 설명합니다. 이를 출처별로 나누고 Boost라는 이름만으로 기존 eTPU라고 단정하지 않습니다. 공식은 플레이트와 보강 부품을 사용하지 않는다고 명시합니다. 아웃솔은 LIGHTTRAXION이며 Continental로 바꾸지 않습니다.</p>
+<h2>칼라·로커는 리뷰어마다 달랐습니다</h2><p>DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼에도 뒤쪽 갑피를 편하게 느꼈습니다. 반면 거친 힐 전환과 본인의 정강이 불편, 늦은 전족 로커를 적으며 업템포를 선호했습니다. David(남성US9.5)는 낮고 타이트한 중족, 여유 있는 전족과 높은 칼라의 발목 쓸림을 경험했습니다. 그는 이른 전족 로커로 느끼며 일상·롱런을 선호했습니다.</p><p>같은 모델에서도 칼라 접촉과 주행 선호가 달라집니다. ‘모두 혹평’, ‘힐 착지 러너는 피하라’, ‘3:45/km가 상한’이라는 결론으로 합칠 수 없습니다. Matt 개인의 불편을 집단 부상률이나 질환 예방 등급으로 확대하지 않습니다.</p><figure><img src="/images/shoes/adidas/hyperboost-edge/back.webp" alt="뒤쪽 칼라 — 자신의 발목과 접촉하는 위치를 확인할 부위" loading="lazy"/><figcaption>뒤쪽 칼라 — 자신의 발목과 접촉하는 위치를 확인할 부위</figcaption></figure>
+<h2>폭 하나보다 발등·칼라를 함께 보기</h2><p>최광부97.4mm에 비해 엄지 쪽71.4mm·높이24.8mm라는 모양을 봅니다. 실제 규격에서 엄지 위·발등이 눌리는지, 고정한 뒤 칼라가 쓸리는지 확인하세요. RR의BR62·건조47%는 시험 조건의 값이며 David의 좋은 통기 체감과는 종류가 다릅니다. 특정 한국 여름에는 금지, 겨울에는 최고라는 단정도 제거했습니다.</p>
+<h2>한국 캐시 가격을 현재가로 쓰지 않습니다</h2><p>남성KI1913·여성LA2185에는249,000원, 남성KH5376·여성KH5379에는259,000원이 표시됐습니다. 도구 캐시 시점은당일~2주이며 현재 정가·선택 사이즈·폭·결제 재고는 미확인입니다. D표준 단일·와이드 없음도 이번 근거로 확정하지 않았습니다.</p><p>국소마모0.6mm나 짧은 주행 경험으로700km 수명·km당356원을 계산했던 설명은 철회했습니다. 기존 ‘검증이 끝난 확정 데이터’도 제품·개인 적합성 전체를 인증하는 표현이어서 제거했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-%EB%9F%AC%EB%8B%9D%ED%99%94/KI1913.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KI1913 · 남성</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-w/LA2185.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 LA2185 · Women</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 2 weeks; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5376.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5376 · 남성</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5379.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5379 · Women</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3" target="_blank" rel="noopener noreferrer">adidas 글로벌 공식 발표</a> — 255g 남성8.5·45mm·6mm·플레이트 없음·선호 조사.</li><li><a href="https://news.adidas.com/global/hyperboost-edge-unlocked--10-things-you-need-to-know-from-vp-of-design-for-adidas-running/s/5c39a6df-59d2-415b-81e0-fe8671de5399" target="_blank" rel="noopener noreferrer">adidas 폼 설계 Q&A</a> — 정확 고분자 미공개. Boost 이름만으로 eTPU 단정 금지.</li><li><a href="https://runrepeat.com/adidas-hyperboost-edge" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'nb-run-your-way-seoul-10k-2026',

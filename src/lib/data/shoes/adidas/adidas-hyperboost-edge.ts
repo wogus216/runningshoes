@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'adidas-hyperboost-edge',
   slug: 'adidas-hyperboost-edge',
@@ -13,95 +14,179 @@ export const shoe: Shoe = {
   ],
   category: '데일리',
   rating: 4,
-  price: 249000,
-  description:
-    '아디다스가 플레이트 없이 만든 45mm 고스택 슈퍼 트레이너. 신규 Hyperboost Pro 폼으로 힐 에너지 리턴 73.6%를 내면서 247g에 머뭅니다.',
-  oneliner: '플레이트 없이 45mm, 폼 하나로 밀어붙인 슈퍼 트레이너',
-  editorComment:
-    '이 신발은 평가가 깔끔하게 두 쪽으로 갈립니다. 폼은 만장일치 극찬입니다 — 힐 충격흡수 154에 에너지 리턴 73.6%로, 44.6mm 스택을 얹고도 247g에 그쳐 "45mm인데 왜 이렇게 튀어오르나" 소리가 나옵니다. 플레이트가 없는데도 종방향 강성 19.8N으로 단단한 편이라 템포 구간에서 특히 강하고(RunRepeat 템포 87점, 종합 83점), 아웃솔은 100km를 뛰어도 마모가 거의 보이지 않을 만큼 내구성이 좋습니다.\n\n문제는 갑피에 몰려 있습니다. 아디다스는 PRIMEWEAVE를 "매우 부드럽다"고 홍보하지만 해외 리뷰 매체의 평가는 정반대입니다. 뻣뻣한 힐 칼라가 복사뼈를 파고든다는 지적이 Doctors of Running·Road Trail Run·Tom\'s Guide 등 거의 모든 매체에서 반복됐고, 체중이 가벼운 테스터일수록 심하게 호소했습니다. 통기성도 62(평균 이하)라 한국 7~8월에는 특히 불리합니다. 반대로 저온에서 폼이 굳는 비율이 9%에 그쳐 한국 겨울에는 손에 꼽을 만큼 좋습니다 — 여름에 사서 실망하고 겨울에 재발견하기 쉬운 신발입니다.\n\n사이즈·구매 가이드: 토박스 폭은 71.4mm(평균 73.2mm)로 앞쪽이 좁아지는 테이퍼형이고 높이도 24.8mm로 낮아 발등 볼륨에서도 걸립니다. 와이드 옵션이 아예 없으니(D 표준폭 단일) 발볼이 넓거나 발등이 높다면 반드시 신어보고 사세요. 복사뼈가 튀어나온 편이라면 특히 매장 착화가 필수입니다. 정가 249,000원에 예상 수명 600~800km(추정) 기준 km당 약 310~420원이며, 같은 무플레이트 슈퍼 트레이너로 슈퍼블라스트 3(25.9만)이나 더 저렴하고 가벼운 아디제로 Evo SL(20.9만)이 대안입니다.',
-  tags: ['데일리', '슈퍼트레이너', '고스택', '무플레이트', 'Hyperboost Pro'],
+  description: 'Hyperboost Pro · Primeweave · LIGHTTRAXION 구조의 하이퍼부스트 엣지. RunRepeat 실험실 검체 247g·44.6/38.1mm. 한국 현재 정가 미확인.',
+  oneliner: 'Hyperboost Pro · Primeweave · LIGHTTRAXION · 247g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다. 글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다. DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼, 편한 뒤쪽 갑피에도 거친 힐 전환·개인 정강이 불편과 늦은 전족 로커를 느끼며 업템포를 선호했습니다. David(남성US9.5)는 타이트한 중족·여유 있는 전족과 높은 칼라의 발목 쓸림, 이른 전족 로커를 느끼며 일상·롱런을 선호했습니다. 모두 같은 불편을 겪었다고 합치지 않습니다. RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '데일리',
+    '슈퍼트레이너',
+    '고스택',
+    '무플레이트',
+    'Hyperboost Pro',
+  ],
   specs: {
     weight: 247,
     cushioning: 10,
     responsiveness: 9,
     stability: 5,
-    drop: 6,
-    durability: 700,
+    drop: 6.5,
   },
   biomechanics: {
-    stackHeight: { heel: 45, forefoot: 38 },
-    drop: 6,
+    stackHeight: {
+      heel: 44.6,
+      forefoot: 38.1,
+    },
+    drop: 6.5,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Hyperboost Pro 폼 (플레이트·보강재 없음)',
-    optimalPace: '4:30-6:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'caution',
+    midsoleType: 'Hyperboost Pro · Primeweave · LIGHTTRAXION',
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'excellent',
     summerCompatibility: 'poor',
   },
   targetUsers: {
-    recommended: ['미드풋/포어풋 착지', '롱런·템포런', '뉴트럴 러너', '겨울 러닝', '발 볼륨이 낮은 러너'],
-    notRecommended: ['힐 스트라이커', '평발·과내전', '발등이 높은 발', '복사뼈가 튀어나온 발', '한여름 러닝', '인터벌·레이스'],
+    recommended: [
+      '플레이트 없는 고스택 전환을 비교하려는 러너',
+      '실제 규격에서 발등·칼라 접촉을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 발목 쓸림이나 전환 불편이 남는 경우',
+      '선호 조사 비율을 실험실 리턴으로 소개하는 매물',
+    ],
   },
-  features: ['Hyperboost Pro 폼', '45mm 고스택 무플레이트', '247g 경량', 'LIGHTTRAXION 풀커버 아웃솔', '저온 경화율 9%', '충격흡수 힐 154 SA (RunRepeat 실측)', '에너지 리턴 전족부 72.8% (RunRepeat 실측)'],
+  features: [
+    'Hyperboost Pro · Primeweave · LIGHTTRAXION',
+    '247g · 44.6/38.1mm · 드롭 6.5mm (RunRepeat 실험실 검체)',
+    '공식 발표는 플레이트와 보강 부품을 사용하지 않는다고 명시합니다. LIGHTTRAXION을 Continental로 바꾸지 않습니다.',
+    'RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다.',
+  ],
   priceAnalysis: {
-    msrp: 249000,
-    costPerKm: 356,
     valueRating: 6,
     priceTier: 'premium',
-    alternatives: ['asics-superblast-3', 'adidas-adizero-evo-sl', 'asics-megablast'],
+    alternatives: [
+      'asics-superblast-3',
+      'adidas-adizero-evo-sl',
+      'asics-megablast',
+    ],
   },
   detailedSpecs: {
-    weight: '247g (실측, 아디다스 공식 발표는 255g)',
-    stackHeight: '힐 44.6mm / 포어풋 38.1mm (실측)',
-    drop: '6.5mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'Hyperboost Pro (조성 비공개, 경도 32.5 AC)',
-    plate: '없음 — 플레이트·보강재 미사용 (종방향 강성 19.8N)',
-    outsole: 'LIGHTTRAXION 풀렝스 (두께 2mm, 마모 0.6mm)',
-    upper: 'PRIMEWEAVE 우븐 (통기성 62 — 평균 이하)',
-    width: '좁은 편 · D 표준폭 단일 (와이드 옵션 없음) · 토박스 71.4mm — RunRepeat 평균 73.2mm보다 1.8mm 좁고 랩 원문 "its tapered toebox creates a race-snug fit that won\'t suit wider feet"',
-    durability: '700km+ (100km 주행 후 아웃솔 마모 거의 없음)',
-    price: '₩249,000 (한국 정가)',
-    costPerKm: '약 ₩356/km (700km 기준)',
-    footType: '중립 발',
-    landingPattern: 'MFS/FFS',
+    weight: '247g (RunRepeat 실험실 검체). 글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다.',
+    stackHeight: '44.6/38.1mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '6.5mm (RunRepeat 실험실 검체). 글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다.',
+    midsole: 'Hyperboost Pro · Primeweave · LIGHTTRAXION. 주폼 32.5AC, 힐/전족부 SA 154/145·에너지 리턴 73.6/72.8%. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다.',
+    plate: '공식 발표는 플레이트와 보강 부품을 사용하지 않는다고 명시합니다. LIGHTTRAXION을 Continental로 바꾸지 않습니다.',
+    width: 'RR 내부 최광폭 97.4mm·엄지 부위 71.4mm·높이 24.8mm. RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석 (랩 데이터 기반)',
-      rating: 83,
-      text: '수치로 보면 폼이 이 신발의 전부입니다. 힐 충격흡수 154·전족 145는 최상위권이고, 힐 에너지 리턴 73.6%는 카본 레이싱화에 근접합니다. 미드솔 경도 32.5 AC로 매우 부드러운데도 종방향 강성이 19.8N으로 단단한 축이라, 플레이트 없이 "부드러우면서 밀어주는" 조합을 만들어냈습니다. RunRepeat 종합 83점 중 템포가 87점으로 가장 높고 안정성이 75점으로 가장 낮은데, 이 격차가 신발의 성격을 그대로 보여줍니다 — 곧게 뻗은 길을 일정한 페이스로 밀 때 가장 좋고, 방향 전환이나 흔들리는 발에는 약합니다. 사이드월이 없고 뉴트럴 전용이라 과내전 러너에게는 권하지 않습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/adidas-hyperboost-edge',
+      text: '글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다.',
     },
     {
-        userType: '한국 러너 관점 — 계절과 발등 높이가 승부처',
-        text: '한국에서 이 신발의 승부처는 계절입니다. 통기성 62는 러닝화 평균 이하이고 갑피가 촘촘한 우븐이라, 7~8월에 신으면 발에 열이 갇힙니다. 반대로 저온 경도 변화가 9%에 그쳐 겨울에 폼이 거의 굳지 않는데, 이건 한겨울 새벽 러닝이 잦은 러너에게 실질적인 장점입니다. 발 문제도 짚어야 합니다. 토박스 폭이 71.4mm 테이퍼형인 데다 높이가 24.8mm로 낮아, 발볼이 넓거나 발등이 높은 발에서 압박이 옵니다. 와이드 옵션이 없다는 점까지 감안하면 발볼 넓은 러너에게는 선택지가 좁습니다. 249,000원이라는 가격에 이런 제약이 붙으니, 매장 착화 없이 온라인으로 사는 것은 권하지 않습니다.',
-      },
-    {
-        userType: '해외 전문 리뷰 종합 — 단점이 갑피 한 곳에 집중',
-        text: 'Believe in the Run은 A 티어(퍼포먼스 A·디자인 B·가치 B)를 줬고 Road Trail Run 테스터들도 9.4~9.6점의 높은 점수를 매겼지만, 단점 지적이 한 곳에 집중된 것이 특징입니다. 뻣뻣한 힐 칼라가 복사뼈를 쓸어 Doctors of Running 리뷰어는 트랙 훈련 중 피부가 까졌다고 했고, Road Trail Run에서는 체중이 가벼운 테스터 두 명이 "면도날 같다"고 표현했습니다. Tom\'s Guide가 헤드라인에 쓴 "deal breaker"도 바로 이 갑피입니다. 아디다스 공식 홍보 문구("매우 부드러운 갑피")와 해외 리뷰 매체의 평가가 가장 크게 어긋나는 지점이라, 구매 전 반드시 확인해야 할 부분입니다. 반면 아웃솔은 평가가 일치합니다 — 100km 주행 후에도 눈에 띄는 마모가 없었습니다.',
-      },
-    {
-        userType: '착지 유형별 주의 — 힐 스트라이커는 정강이 부담',
-        text: 'Doctors of Running이 짚은 구조적 문제가 하나 있습니다. 45mm급 맥시멀 신발은 뒤꿈치가 부드럽게 굴러가도록 힐 베벨이 필요한데, 이 신발은 후방 힐 플레어가 넓어 뒤꿈치가 예상보다 일찍 지면에 닿습니다. 리뷰어는 이 때문에 힐 스트라이커에게 정강이 부담이 늘 수 있다고 봤고, 힐 착지 러너라면 감안해야 합니다. 반대로 미드풋·포어풋 착지 러너에게는 폼의 반발이 그대로 전달돼 평가가 좋습니다. 속도 면에서도 성격이 분명한데, km당 약 3분45초보다 빨라지면 부피감이 느껴지고 급격한 코너링을 싫어합니다. 이지런부터 템포까지가 이 신발의 자리이고, 인터벌이나 레이스용으로는 맞지 않습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/',
+      text: 'DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼, 편한 뒤쪽 갑피에도 거친 힐 전환·개인 정강이 불편과 늦은 전족 로커를 느끼며 업템포를 선호했습니다. David(남성US9.5)는 타이트한 중족·여유 있는 전족과 높은 칼라의 발목 쓸림, 이른 전족 로커를 느끼며 일상·롱런을 선호했습니다. 모두 같은 불편을 겪었다고 합치지 않습니다.',
+    },
   ],
-  similarShoes: ['asics-superblast-3', 'adidas-adizero-evo-sl', 'asics-megablast', 'nike-vomero-plus'],
+  similarShoes: [
+    'asics-superblast-3',
+    'adidas-adizero-evo-sl',
+    'asics-megablast',
+    'nike-vomero-plus',
+  ],
   relatedPosts: [
-    { slug: 'adidas-hyperboost-edge-vs-run-comparison-2026', title: '하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이' },
-    { slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026', title: '하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너' },
-    { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교' },
-    { slug: 'adidas-running-shoes-lineup-tier-guide-2026', title: '아디다스 러닝화 라인업 — 용도와 구조 비교' },
-    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+    {
+      slug: 'adidas-hyperboost-edge-vs-run-comparison-2026',
+      title: '하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이',
+    },
+    {
+      slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026',
+      title: '하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너',
+    },
+    {
+      slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
+      title: '슈퍼블라스트3 vs 에보SL vs 마하6 — 슈퍼트레이너 비교',
+    },
+    {
+      slug: 'adidas-running-shoes-lineup-tier-guide-2026',
+      title: '아디다스 러닝화 라인업 — 용도와 구조 비교',
+    },
+    {
+      slug: 'running-shoe-midsole-foam-guide-2026',
+      title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5T0hdO6i' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Ynp9YSOa' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/5T0hdO6i',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Ynp9YSOa',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 KI1913 · 남성',
+        url: 'https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-%EB%9F%AC%EB%8B%9D%ED%99%94/KI1913.html',
+        note: '표시 정가 249000원·표시 판매가 249000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 LA2185 · Women',
+        url: 'https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-w/LA2185.html',
+        note: '표시 정가 249000원·표시 판매가 249000원. 도구 캐시 2 weeks; 현재 가격·폭·선택 재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 KH5376 · 남성',
+        url: 'https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5376.html',
+        note: '표시 정가 259000원·표시 판매가 259000원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 KH5379 · Women',
+        url: 'https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5379.html',
+        note: '표시 정가 259000원·표시 판매가 259000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.',
+      },
+      {
+        label: 'adidas 글로벌 공식 발표',
+        url: 'https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3',
+        note: '255g 남성8.5·45mm·6mm·플레이트 없음·선호 조사.',
+      },
+      {
+        label: 'adidas 폼 설계 Q&A',
+        url: 'https://news.adidas.com/global/hyperboost-edge-unlocked--10-things-you-need-to-know-from-vp-of-design-for-adidas-running/s/5c39a6df-59d2-415b-81e0-fe8671de5399',
+        note: '정확 고분자 미공개. Boost 이름만으로 eTPU 단정 금지.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/adidas-hyperboost-edge',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 247g·44.6/38.1mm·6.5mm. 공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/',
+        note: '글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

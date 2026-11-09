@@ -126,133 +126,42 @@ export const posts_2026_09: BlogPost[] = [
 `,
   },
   {
-    id: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026',
-    slug: 'adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026',
-    title:
-      '슈퍼노바 라이즈 3 vs 보메로 18 | 3만원·34g 차이 — 쿠션 실측은 140 대 147 SA, 진짜 차이는 뒤꿈치와 드롭',
-    description:
-      '아디다스 슈퍼노바 라이즈 3(159,000원)와 나이키 보메로 18(189,000원)을 같은 랩(RunRepeat) 실측으로 나란히 놓았습니다. 뒤꿈치 충격흡수는 140 대 147 SA로 가깝고, 갈리는 건 뒤꿈치 스택(35.0 대 42.5mm)과 드롭(7.8 대 13.9mm), 그리고 토박스(74.5 대 69.6mm)입니다.',
-    thumbnail: '/images/blog/adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-29',
-    updatedAt: '2026-09-29',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['슈퍼노바 라이즈 3', '보메로 18', '아디다스 쿠션화', '나이키 쿠션화', '러닝화 비교', '슈퍼노바 라이즈 3 vs 보메로 18', '무릎 보호 러닝화', '발볼 넓은 러닝화'],
+    id: "adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026",
+    slug: "adidas-supernova-rise-3-vs-nike-vomero-18-cushion-2026",
+    title: "슈퍼노바 라이즈3 vs 보메로18 — 앞코 너비와 힐 높이, 공시·실측 나눠 비교",
+    description: "35/27.2mm 대42.5/28.6mm 실측을 비교합니다. 한국 라이즈3 성별 캐시 가격, 보메로 확인 와이드SKU를 나누고3만원 차이·양쪽 와이드 판매 확정을 정정했습니다.",
+    thumbnail: "/images/shoes/adidas/supernovarise3/main.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-29",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "슈퍼노바 라이즈3",
+      "보메로18",
+      "쿠션화 비교",
+      "와이드 확인"
+    ],
     faqs: [
       {
-        question: '슈퍼노바 라이즈 3와 보메로 18 중 더 푹신한 건 어느 쪽인가요?',
-        answer:
-          '같은 랩(RunRepeat) 실측으로는 보메로 18이 조금 앞섭니다. 뒤꿈치 충격흡수(SA, 높을수록 많이 흡수)는 보메로 147, 라이즈 3 140이고 앞발은 116 대 112입니다. 두 신발 모두 같은 랩의 평균(뒤꿈치 131 SA)을 웃돌고, 폼의 부드러움(낮을수록 부드러움)은 오히려 라이즈 3가 28.6 AC로 보메로 18의 30.5 AC보다 낮게 나왔습니다. 체감 차이는 폼의 부드러움보다 뒤꿈치 스택 높이(35.0 대 42.5mm)에서 옵니다.',
+        "question": "라이즈3가3만원 더 싼가요?",
+        "answer": "한국 공식 캐시는 남성169,000원·여성159,000원이고 현재 가격은 미확인입니다. 보메로 확인SKU189,000원과 모든 상품 차액을 고정하지 않습니다."
       },
       {
-        question: '발볼이 넓으면 어느 쪽을 골라야 하나요?',
-        answer:
-          '표준 사이즈 토박스 실측은 라이즈 3가 74.5mm(같은 랩 평균 73.2mm), 보메로 18이 69.6mm입니다. 앞발 공간은 라이즈 3가 5mm 더 넉넉합니다. 두 신발 모두 한국 공식몰에서 와이드가 판매되어(2026-09-29 확인) 표준이 맞지 않아도 대응할 수 있습니다. 와이드 가격은 라이즈 3가 표준과 같은 159,000원, 보메로 18이 189,000원입니다.',
+        "question": "둘 다 와이드가 있나요?",
+        "answer": "보메로18 한국 남녀 와이드SKU는 확인했습니다. 라이즈3 현재 한국 와이드는 이번에 재확인하지 못해 판매 보장을 철회했습니다."
       },
       {
-        question: '뒤꿈치로 착지하는데 어느 쪽이 맞나요?',
-        answer:
-          '같은 랩의 착지 유형 분류로는 보메로 18이 뒤꿈치 착지, 라이즈 3가 미드풋·포어풋 착지 신발입니다. 뒤꿈치 스택과 드롭이 높은 보메로 18은 뒤꿈치 착지에서 쿠션량을 더 쓰는 구조이고, 드롭이 7.8mm로 낮은 라이즈 3는 미드풋 착지에 어울립니다.',
-      },
-      {
-        question: '가격 차이 3만원은 값어치가 있나요?',
-        answer:
-          '3만원(159,000원 대 189,000원)이 사는 것은 뒤꿈치 스택 7.5mm와 높은 드롭입니다. 반대로 라이즈 3는 34g 가볍고 폼이 더 부드러우며 에너지 리턴이 앞발 62.8%로 보메로(58.9%)보다 높게 나왔습니다. 내구성은 갈립니다. 아웃솔 마모는 라이즈 3가 0.8mm로 적지만 뒤꿈치 패딩 내구성은 1/5로 약하고, 보메로 18은 5/5입니다.',
-      },
+        "question": "어느 쪽이 더 푹신한가요?",
+        "answer": "보메로의 힐 SA·스택은 높고 폼 경도는 라이즈3가 낮습니다. 서로 다른 지표이며 개인 쿠션감을 하나로 판정할 수 없습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>159,000원 대 189,000원, 실측 무게 264g 대 298g</strong> — <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>가 3만원 싸고 34g 가볍습니다(같은 랩 RunRepeat 실측). 둘 다 카본 플레이트 없는 쿠션 중심 신발입니다</li>
-    <li><strong>쿠션 실측은 생각보다 가깝습니다</strong> — 충격흡수(SA, 높을수록 많이 흡수)가 뒤꿈치 140 대 147, 앞발 112 대 116입니다. 갈리는 건 <a href="/shoes/nike-vomero-18">보메로 18</a>의 뒤꿈치 스택 42.5mm(라이즈 3 35.0mm)와 드롭 13.9mm(라이즈 3 7.8mm)입니다</li>
-    <li><strong>앞발 공간은 라이즈 3가 5mm 넓고, 와이드는 둘 다 팝니다</strong> — 표준 토박스가 74.5mm 대 69.6mm이고, 한국 공식몰에서 두 신발 모두 와이드 버전이 판매됩니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>가격·무게·앞발 공간, 그리고 미드풋 착지라면 슈퍼노바 라이즈 3</strong>, <strong>뒤꿈치 착지에 뒤꿈치 쿠션량이 목적이면 보메로 18</strong>입니다. 보메로 18을 다른 맥스쿠션과 비교한 글은 <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">보메로 18 vs 메가블라스트</a>, 라이즈 3의 전작과 비교한 글은 <a href="/blog/adidas-supernova-rise-2-vs-3-comparison">슈퍼노바 라이즈 2 vs 3</a>에 있습니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<p>아래 표의 무게·스택·드롭·충격흡수·에너지 리턴·토박스는 <strong>두 신발 모두 같은 랩(RunRepeat)이 같은 방법으로 잰 실측값</strong>이라 나란히 읽어도 됩니다. 브랜드 표기값과는 다를 수 있습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>슈퍼노바 라이즈 3</th><th>보메로 18</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td><strong>159,000원</strong></td><td>189,000원</td></tr>
-    <tr><td>무게 (랩 실측)</td><td><strong>264g</strong></td><td>298g</td></tr>
-    <tr><td>스택 실측 (힐/앞발)</td><td>35.0 / 27.2mm</td><td><strong>42.5</strong> / 28.6mm</td></tr>
-    <tr><td>드롭 실측</td><td>7.8mm</td><td><strong>13.9mm</strong></td></tr>
-    <tr><td>충격흡수 (힐/앞발, SA)</td><td>140 / 112</td><td><strong>147 / 116</strong></td></tr>
-    <tr><td>에너지 리턴 (힐/앞발)</td><td>58.8% / <strong>62.8%</strong></td><td>56.9% / 58.9%</td></tr>
-    <tr><td>폼 부드러움 (AC, 낮을수록 부드러움)</td><td><strong>28.6</strong></td><td>30.5</td></tr>
-    <tr><td>토박스 너비 (표준 사이즈)</td><td><strong>74.5mm</strong></td><td>69.6mm</td></tr>
-    <tr><td>와이드 옵션 (한국 공식몰)</td><td>판매 (159,000원)</td><td>남녀 모두 판매 (189,000원)</td></tr>
-    <tr><td>아웃솔 마모 / 뒤꿈치 패딩 내구성</td><td><strong>0.8mm</strong> / 1점 (5점 만점)</td><td>1.1mm / <strong>5점</strong></td></tr>
-    <tr><td>착지 유형 (랩 분류)</td><td>미드·포어풋</td><td>뒤꿈치</td></tr>
-  </tbody>
-</table>
-
-<p><small>데이터: RunRepeat 랩 실측(라이즈 3 페이지 2026-08-06 갱신 · 보메로 18 랩 페이지), 한국 정가는 사이트 신발 DB, 와이드는 아디다스·나이키 코리아 공식몰(2026-09-29 확인). 무게는 브랜드 표기로는 남성 기준 라이즈 3 264g, 보메로 18 325g으로 더 벌어지지만, 랩 실측은 두 신발의 시험 사이즈가 공개되지 않아 표기와 직접 대조하지 않았습니다.</small></p>
-
-<h2>슈퍼노바 라이즈 3 — 3만원 싸고 가볍고 앞발이 넓은 쿠션 데일리</h2>
-
-<p>라이즈 3는 전작 대비 랩 실측 스택이 힐 33.5에서 35.0mm(+1.5mm), 앞발 24.0에서 27.2mm(+3.2mm)로 늘었고, 충격흡수는 힐 127에서 140 SA, 앞발 96에서 112 SA로 올랐습니다. 반대로 뒤꿈치 에너지 리턴은 전작 69.5%에서 58.8%로 떨어졌습니다(RunRepeat). 토박스는 74.5mm로 같은 랩 평균(73.2mm)보다 넓고, RunRepeat는 이 신발의 장점으로 부피가 큰 발에도 여유 있는 핏을 꼽았습니다.</p>
-
-<p>약점은 두 가지입니다. 사이즈가 RunRepeat 집계에서 <strong>"약간 작게 나옴"</strong>(82표)이라 길이가 애매하면 반 사이즈 크게 시착해야 하고(아디다스 한국 안내는 "정사이즈"), 뒤꿈치 패딩 내구성이 5점 만점에 1점으로 약합니다. 한국 공식몰에서는 표준과 같은 159,000원에 와이드 버전도 팝니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 미드풋·포어풋 착지로 편한 페이스의 장거리를 달리는 러너, 예산과 무게를 줄이고 싶은 분, 앞발 공간이 넉넉한 신발을 찾는 분.</p>
-
-<h2>보메로 18 — 뒤꿈치 쿠션량과 와이드 선택지가 넓은 맥스 쿠션</h2>
-
-<p>보메로 18은 랩 실측 뒤꿈치 스택이 42.5mm로 라이즈 3보다 7.5mm 높고, 드롭이 13.9mm로 6.1mm 더 큽니다. 충격흡수는 뒤꿈치 147 SA로 같은 랩 평균(131 SA)을 크게 웃돕니다. RunRepeat는 이 신발을 뒤꿈치 착지 신발로 분류합니다. 뒤꿈치 패딩 내구성이 5점 만점에 5점인 것도 라이즈 3와 갈리는 지점입니다.</p>
-
-<p>약점은 무게와 앞발 공간입니다. 298g으로 라이즈 3보다 34g 무겁고 토박스는 69.6mm로 같은 랩 평균(73.2mm)보다 좁습니다. 대신 한국 공식몰에서 남성(IF0514)·여성(IF0515) 와이드가 판매되고 있어 표준 토박스가 좁은 러너는 와이드로 대응할 수 있습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 뒤꿈치로 착지하며 뒤꿈치 쿠션량이 최우선인 러너, 발이 보통~좁은 편이거나 와이드가 필요한 분.</p>
-
-<h2>표기 점수와 실측이 말하는 것</h2>
-
-<p>사이트 DB의 쿠셔닝 점수는 보메로 18과 라이즈 3가 둘 다 9점으로 같고, 실측에서도 뒤꿈치 충격흡수는 147 대 140 SA로 약 5%, 앞발은 116 대 112 SA로 약 4% 차이입니다. 폼 자체는 라이즈 3가 오히려 더 부드럽고(28.6 대 30.5 AC) 에너지 리턴도 높습니다. 결국 두 신발의 쿠션 성격은 <strong>폼의 질이 아니라 뒤꿈치 스택 높이와 드롭</strong>에서 갈립니다. 앞발 스택은 27.2mm 대 28.6mm로 1.4mm 차이뿐입니다.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>예산이 우선이고 무게도 신경 쓰인다</strong> → 슈퍼노바 라이즈 3 (3만원·34g 차이)</li>
-  <li><strong>뒤꿈치 착지에 쿠션량 최우선</strong> → 보메로 18 (뒤꿈치 스택 42.5mm)</li>
-  <li><strong>미드풋·포어풋 착지, 낮은 드롭</strong> → 슈퍼노바 라이즈 3 (드롭 7.8mm)</li>
-  <li><strong>앞발 공간이 넉넉해야 한다</strong> → 슈퍼노바 라이즈 3 (토박스 74.5mm)</li>
-  <li><strong>표준이 좁아 와이드가 필요하다</strong> → 두 신발 모두 와이드 판매 (라이즈 3 159,000원 · 보메로 18 189,000원)</li>
-  <li><strong>다른 대안도 보고 싶다</strong> → <a href="/shoes/hoka-clifton-10">호카 클리프톤 10</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a></li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글이 확인하지 못한 것</p>
-    <p>두 신발의 랩 시험 사이즈는 확인하지 못했습니다. 내구성은 랩의 아웃솔 마모·패딩 측정치이고, 실제 교체 시점(km)을 뜻하지 않습니다.</p>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item"><p class="faq-q">슈퍼노바 라이즈 3와 보메로 18 중 더 푹신한 건 어느 쪽인가요?</p><p class="faq-a">같은 랩 실측으로는 보메로 18이 조금 앞섭니다. 뒤꿈치 충격흡수가 147 대 140 SA, 앞발이 116 대 112 SA입니다. 폼의 부드러움은 오히려 라이즈 3(28.6 AC)가 보메로 18(30.5 AC)보다 낮게 나왔고, 체감 차이는 뒤꿈치 스택 높이(35.0 대 42.5mm)에서 옵니다.</p></div>
-  <div class="faq-item"><p class="faq-q">발볼이 넓으면 어느 쪽을 골라야 하나요?</p><p class="faq-a">표준 토박스 실측은 라이즈 3가 74.5mm, 보메로 18이 69.6mm로 라이즈 3가 5mm 넉넉합니다. 두 신발 모두 한국 공식몰에서 와이드가 판매됩니다(2026-09-29 확인).</p></div>
-  <div class="faq-item"><p class="faq-q">뒤꿈치로 착지하는데 어느 쪽이 맞나요?</p><p class="faq-a">같은 랩의 분류로 보메로 18이 뒤꿈치 착지, 라이즈 3가 미드·포어풋 착지 신발입니다. 뒤꿈치 스택과 드롭이 높은 보메로 18이 뒤꿈치 착지에서 쿠션량을 더 씁니다.</p></div>
-  <div class="faq-item"><p class="faq-q">가격 차이 3만원은 값어치가 있나요?</p><p class="faq-a">3만원은 뒤꿈치 스택 7.5mm와 높은 드롭, 5점 만점의 뒤꿈치 패딩 내구성을 사는 값입니다. 라이즈 3는 34g 가볍고 에너지 리턴이 앞발 62.8%로 더 높지만 뒤꿈치 패딩 내구성은 1점으로 약합니다.</p></div>
-</div>
-
-<p><small>출처: RunRepeat 랩 데이터(라이즈 3 · 보메로 18, 무게·스택·드롭·충격흡수·에너지 리턴·폼 부드러움·토박스·내구성·착지 유형) · 사이즈 평가는 RunRepeat 집계(82표) · 사이트 신발 DB(한국 정가) · 나이키 코리아 공식몰(보메로 18 와이드, 2026-09-29 확인). 작성 2026년 9월 29일 · 랩 실측 반영 개정 2026년 9월 29일.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>랩 무게264/298g, 힐/전족 스택35/27.2mm 대42.5/28.6mm입니다.</li><li>SA·폼 경도·스택은 다른 정보이며 하나의 ‘더 푹신함’ 순위로 합치지 않습니다.</li><li>라이즈3 한국 현재 와이드는 미확인입니다. 보메로 확인SKU와 같은 판매 상태로 묶지 않습니다.</li></ul></div><p><strong>2026-11-09 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/adidas/supernovarise3/main.webp" alt="슈퍼노바 라이즈3 — Dreamstrike+와 Primeweave" loading="lazy"/><figcaption>슈퍼노바 라이즈3 — Dreamstrike+와 Primeweave</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>라이즈3</th><th>보메로18</th></tr></thead><tbody><tr><td>무게</td><td>264g</td><td>298g</td></tr><tr><td>힐/전족 스택</td><td>35/27.2mm</td><td>42.5/28.6mm</td></tr><tr><td>실측 드롭</td><td>7.8mm</td><td>13.9mm</td></tr><tr><td>힐/전족 SA</td><td>140/112</td><td>147/116</td></tr><tr><td>힐/전족 리턴</td><td>58.8/62.8%</td><td>56.9/58.9%</td></tr><tr><td>폼 경도</td><td>28.6AC</td><td>30.5AC</td></tr><tr><td>내부 최광폭/엄지 너비</td><td>97.6/74.5mm</td><td>95.6/69.6mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>‘34g 가벼움’보다 자신이 불편한 부위를 먼저 보기</h2><p>랩 검체는 라이즈3가34g 낮지만 다른 규격에서도 같은 차이라고 보장하지 않습니다. 엄지 부위74.5/69.6mm는 약4.9mm 차이지만 최광부97.6/95.6mm와는 다른 위치입니다. 기존 ‘앞발이5mm 더 넓어 넓은 발에 맞는다’는 일반화 대신 실제 상품의 앞코 높이·중족 압박·뒤꿈치 들림을 확인하세요.</p><p>DOR Matt(남성US10)은 라이즈3의 전족이 넓은 듯해도 토가드와 낮은 볼륨·짧은 끈을 지적했습니다. 정사이즈를 선호했고 이지·롱런을 편하게 느꼈지만 젖은 도로 일부에서 미끄러졌다고 적었습니다. RR의 약간 작게라는 투표·젖은 콘크리트0.94와는 조건이 다른 자료입니다. 반업을 일괄 처방하지 않습니다.</p>
+<h2>SA와 경도로 개인 쿠션감을 확정하지 않기</h2><p>보메로18의 힐 높이는 더 높고 SA도147 대140입니다. 폼 경도는 라이즈3의28.6AC가 더 낮습니다. SA는 충격흡수이며 경도는 폼 압입 시험입니다. 어느 지표도 개인의 편안함·무릎 보호를 혼자 설명하지 못합니다. 라이즈3는 Dreamstrike+·LIGHTTRAXION, 보메로18은 ZoomX 위층+ReactX 아래층을 사용합니다.</p><p>라이즈3 DOR 소개36/28mm·8mm와 RR35/27.2mm·7.8mm를 분리합니다. 보메로18 한국 드롭10mm·여성 와이드 소개46/36mm, DOR44/34mm·10mm와 RR42.5/28.6mm·13.9mm도 다릅니다. 공시와 실측을 같은 시험이라고 쓰지 않습니다. 드롭 하나로 뒤꿈치·미드풋 전용을 정하지 않습니다.</p>
+<h2>3만원 차이·양쪽 와이드라는 기존 결론을 정정</h2><p>라이즈3 공식 캐시는 남성KI3616 169,000원, 여성KK1203 159,000원·할인111,300원입니다. 현재 가격·와이드·선택 재고는 미확인입니다. 기존JQ5953 와이드와 모든 상품159,000원을 이번 확인 사실로 쓰지 않습니다.</p><p>보메로18은 한국 남성 일반HM6803-005·남성 와이드IF0514-002·여성 와이드IF0515-002에서 정가189,000원을 확인했으며 사이즈별 실시간 재고는 미확인입니다. 와이드 둘레 증가 설명은 내부 직선 너비 증가가 아니므로 한국 와이드 검체의 공간을 계산할 수 없습니다. 현재 차액을 무조건3만원으로 고정하지 않습니다.</p>
+<h2>패딩 시험과 전체 수명은 다른 문제</h2><p>라이즈3의 힐 패딩1/5와 국소 아웃솔마모0.8mm는 부위별 시험입니다.650km 수명·km당245원·부상 복귀용 보호를 입증하지 않습니다. 두 모델 중 오래가는 쪽을 해당 숫자로 정하지 않고 마모·압박·고정 변화를 실제로 살피는 것이 낫습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-3/KI3616.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KI3616 · 남성</a> — 표시 정가 169000원·표시 판매가 169000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%EC%8A%88%ED%8D%BC%EB%85%B8%EB%B0%94-%EB%9D%BC%EC%9D%B4%EC%A6%88-3-w/KK1203.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KK1203 · Women</a> — 표시 정가 159000원·표시 판매가 111300원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://runrepeat.com/adidas-supernova-rise-3" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/adidas-supernova-rise-3-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul><h2>보메로18 원문</h2><p><a href="https://runrepeat.com/nike-vomero-18" target="_blank" rel="noopener noreferrer">보메로18 랩</a> · <a href="https://www.doctorsofrunning.com/nike-vomero-18-review-2025/" target="_blank" rel="noopener noreferrer">보메로18 DOR</a> · <a href="https://www.nike.com/kr/t/나이키-보메로-18-남성-로드-러닝화와이드-sUlilE2b/IF0514-002" target="_blank" rel="noopener noreferrer">한국 남성 와이드 확인SKU</a></p>
 `,
   },
   {
@@ -4411,70 +4320,44 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'on-cloudflow-5-review',
-    slug: 'on-cloudflow-5-review',
-    title: '온 클라우드플로우 5 후기 | Speedboard가 만드는 날카로운 전환, 페이스가 답을 가른다',
-    description:
-      '클라우드플로우 5는 템포런·인터벌 훈련에 최적화된 On의 스피드 트레이너입니다. Helion HF 초임계 폼과 Speedboard 플레이트가 4분대 페이스에서 날카로운 추진력을 냅니다. 219,000원. 다만 48.3 AC(RunRepeat 실측)의 단단한 미드솔은 느린 조깅에서는 불편하고, 와이드 옵션도 없습니다.',
-    thumbnail: '/images/blog/on-cloudflow-5-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
+    id: "on-cloudflow-5-review",
+    slug: "on-cloudflow-5-review",
+    title: "온 클라우드플로우5 리뷰 — 빠를수록 좋다는 단정 대신, 발볼과 Speedboard 확인",
+    description: "271g·드롭4.1mm 실측과 공식8mm를 나눕니다. 여성 단일SKU 표시가219,000원, 부위별 앞코 치수, RTR 리뷰어의 서로 다른 경험을 정리합니다.",
+    thumbnail: "/images/shoes/on/cloudflow5/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
     readingTime: 7,
-    tags: ['온 클라우드플로우5', '스피드 트레이너', 'Speedboard', '템포런'],
+    tags: [
+      "클라우드플로우5",
+      "온",
+      "Speedboard",
+      "핏 비교"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>48.3 AC(실측)의 단단한 미드솔</strong> — 느린 조깅에선 불편하지만 4분대 페이스로 치고 나갈 때 Speedboard와 함께 날카로운 추진력으로 바뀝니다</li>
-    <li><strong>219,000원 — <a href="/shoes/saucony-kinvara-16">킨바라 16</a>(159,000원)보다 6만원 비싸지만</strong> 유리섬유-나일론 플레이트가 더 직접적인 추진력을 제공합니다</li>
-    <li><strong>와이드 옵션이 없습니다.</strong> 발볼 넓은 러너는 반드시 매장에서 착화하세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>템포런·인터벌 중심의 빠른 페이스 훈련용</strong>입니다. 페이스에 따라 평가가 극단적으로 갈리니 용도를 명확히 좁혀서 접근해야 합니다.</p>
-  </div>
-</div>
-
-<h2>페이스가 답을 가른다</h2>
-<p>48.3 AC(실측)로 미드솔이 단단한 편이라 6분/km 이상의 느린 페이스에서는 노면이 그대로 올라오고, <strong>4분대 후반으로 내려가야 Speedboard의 전환이 살아납니다.</strong> 즉 템포런 이상 전용으로 보고, 평소 조깅은 쿠션이 있는 다른 신발과 나누는 운용이 필요합니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스는 RunRepeat 실측 77.2mm(랩 평균 73.2mm)로 넓은 편이지만 On은 와이드 옵션이 없습니다. 반드시 매장에서 착화하세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·신 스플린트 good이지만 무릎은 caution(주의)입니다. 쿠션이 적어 관절 부담이 우려된다면 <a href="/shoes/on-cloudmonster-3">클라우드몬스터</a> 쪽을 선택하세요</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — Speedboard의 안정성이 도움이 되지만 충격흡수를 우선한다면 다른 모델이 낫습니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>219,000원은 <a href="/shoes/saucony-kinvara-16">킨바라 16</a>보다 6만원 비싸지만 Speedboard의 안정성에서 앞섭니다. 1km 반복 같은 인터벌에서 턴오버 시 발을 잡아주는 감각이 있어 고강도 반복에서 흔들림이 덜합니다. 450km 기준 km당 약 487원입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>템포런·인터벌 중심 러너</strong></li>
-  <li><strong>하프마라톤 페이스 훈련용을 찾는 러너</strong></li>
-  <li>반대로 <strong>느린 페이스 조깅이나 장거리 편안함이 우선</strong>이라면 맞지 않습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>클라우드플로우 5는 용도가 명확한 신발입니다. 빠른 페이스에서만 진가가 나오는 만큼, 데일리 겸용을 기대하고 사면 실망하고 정확히 그 목적으로 사면 만족도가 높습니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>나일론·유리섬유 Speedboard가 있으며 카본 플레이트가 아닙니다.</li><li>엄지 부위77.2mm만 보면 넓어 보이지만 내부 최광폭92.7mm·높이24.5mm도 함께 봐야 합니다.</li><li>빠른 주행에서도 체감이 갈렸습니다. 특정4분대에서만 작동한다는 공통 규칙은 확인되지 않았습니다.</li></ul></div><p><strong>2026-11-09 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/on/cloudflow5/side.webp" alt="클라우드플로우5 — Helion HF와 Helion, Speedboard의 조합" loading="lazy"/><figcaption>클라우드플로우5 — Helion HF와 Helion, Speedboard의 조합</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>값</th></tr></thead><tbody><tr><td>무게·힐/전족부 스택</td><td>271g·32.8/28.7mm</td></tr><tr><td>실측 드롭</td><td>4.1mm</td></tr><tr><td>힐/전족부 SA</td><td>123/122</td></tr><tr><td>힐/전족부 리턴</td><td>46.9/46.8%</td></tr><tr><td>폼 경도 표</td><td>주폼48.3AC·보조51.5AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>92.7/77.2/24.5mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>77.2mm는 ‘발볼 전체가 넓다’는 뜻이 아닙니다</h2><p>엄지 부위가 여유 있어도 중족이나 최광부가 밀착될 수 있습니다. 기존 글은77.2mm를 넓은 발 전체의 여유처럼 설명했지만, 랩의 최광부는92.7mm입니다. 실제 구매할 규격에서 앞코 높이와 중족 압박·힐 슬립을 함께 확인하는 편이 도움이 됩니다. 해외 여성 Wide 메타가 있어도 한국 현재 판매의 근거는 아닙니다.</p>
+<h2>드롭4.1mm와 공식8mm를 구분하기</h2><p>한국 여성 현행 페이지와 미국 남성 공식은8mm를 적습니다. RR 브랜드 메타는34/28mm·6mm, 실제 절단 측정은32.8/28.7mm·4.1mm입니다. RTR 소개는36/28mm·8mm로 또 다릅니다. 이 차이를 단순 오차라고 지우거나, 드롭 하나로 종아리 부상 위험을 계산하지 않습니다.</p><p>한국 여성은231g(사이즈 미확인), 과거 캐시에는278g이 남아 있습니다. 미국 남성278g, RTR 남성US9 약278g, RR271g도 검체 조건을 확인한 뒤 읽어야 합니다.</p>
+<h2>빠른 주행 의견도 하나로 같지 않았습니다</h2><p>정확5의 DOR 개별 리뷰는 이번에 찾지 못해 Road Trail Run 원문으로 보완했습니다. Peter Stuart(남성US11·299.8g)는 길이·편안함은 맞고 통기가 좋았지만 느릴 때 단단하고 무거웠으며, 빠른 주행에서 탄성을 느꼈습니다. Courtney Kelly(여성US9·248g)는 중족 밀착·앞코 신축, 끈으로 개선된 힐 슬립을 적었고 빠르게 달려도 반응성이 아쉬웠습니다.</p><p>두 사람의 경험과 RR 리턴46.9/46.8%는 다른 종류의 자료입니다. ‘4분대 후반부터 작동’, ‘6분 조깅은 금지’처럼 숫자로 공통 경계를 만들 수 없습니다. RR 구방식 통기2/5와 RTR의 좋은 통기 체감도 그대로 나눠 둡니다.</p>
+<h2>한국에서 확인한219,000원의 범위</h2><p>2026-11-09 한국 공식 여성 White/Lime 3WF10092929 Regular의 실시간 표시 판매가는219,000원이었습니다. 정가라는 명칭은 확인하지 못해 MSRP로 단정하지 않습니다. 당시 JP22/22.5/23/24/24.5/25/25.5/26은 잔여 수량이 표시됐고23.5/26.5/27/27.5/28은 알림 대상이었습니다. 남성 현재 상품·와이드와 결제 재고는 미확인입니다. 이 날짜의 목록이 지금도 구매 가능하다는 보장은 아닙니다.</p>
+<h2>기존 추천에서 정정한 부분</h2><p>450km 수명·km당487원, 무릎 주의 등급과 평발 교정 효과, 킨바라보다 안정성이 반드시 낫다는 설명은 확인한 원문으로 입증하지 못해 제거했습니다. 경도도 RR 본문은HA/ShoreA, 현행 표는AC로 단위가 상충합니다. 표의48.3AC·보조51.5AC를 사용하되 HA로 환산하지 않으며 보조폼 위치는 미확인으로 남깁니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudflow-5-w-3wf1009/womens/white-lime-shoes-3WF10092929" target="_blank" rel="noopener noreferrer">한국 공식 여성 White/Lime</a> — 2026-11-09 실시간 표시 판매가219,000원·Regular·여성231g·8mm. 정가 명칭 미확인. 당시 사이즈 표시만 확인.</li><li><a href="https://www.on.com/en-us/products/cloudflow-5-m-3mf1011" target="_blank" rel="noopener noreferrer">미국 공식 남성 구조·공시</a> — 278g·8mm·유리섬유/나일론 Speedboard. 한국 남성 판매 근거 아님.</li><li><a href="https://www.roadtrailrun.com/2025/07/on-cloudflow-5-multi-tester-review.html" target="_blank" rel="noopener noreferrer">Road Trail Run 실제 착화 보완</a> — Peter US11·Courtney 여성US9의 서로 다른 체감. DOR 리뷰로 표시하지 않음.</li><li><a href="https://runrepeat.com/on-cloudflow-5" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li></ul>
 `,
     faqs: [
       {
-        question: '이 신발로 조깅도 할 수 있나요?',
-        answer:
-          '가능하지만 최적은 아닙니다. 미드솔이 단단해(48.3 AC 실측) 6분/km 이상 느린 페이스에서는 노면이 그대로 느껴집니다. 4분대 이상 템포런·인터벌 전용으로 쓰는 것이 맞습니다.',
+        "question": "조깅에는 쓸 수 없나요?",
+        "answer": "그런 공통 금지나 특정 페이스 경계를 확인하지 못했습니다. 리뷰어의 빠른 주행 체감도 달라 자신의 주행에서 전환·압박을 확인하세요."
       },
       {
-        question: '킨바라 16 대신 이걸 사야 할 이유가 있나요?',
-        answer:
-          'Speedboard의 안정성이 필요하다면 값을 합니다. 고강도 인터벌에서 발을 잡아주는 감각이 있어 흔들림이 덜합니다. 순수 경량과 가격을 우선한다면 킨바라 16이 저렴합니다.',
+        "question": "219,000원이 한국 정가인가요?",
+        "answer": "확인한 여성 White/Lime 단일SKU의11-09 표시 판매가입니다. 정가 명칭·남성 현재 가격·다른 규격은 미확인입니다."
       },
+      {
+        "question": "발볼이77.2mm로 넓은가요?",
+        "answer": "그 값은 엄지 부위입니다. 내부 최광폭92.7mm·높이24.5mm와 다른 위치이므로 발 전체의 여유를 보장하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'on-cloudrunner-3-max-review',
