@@ -2750,96 +2750,40 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
-    slug: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',
-    title: '트레일화 3파전 | 스피드고트 6 vs 펄사 vs 메타후지 트레일 — 만능 그립 · 가벼운 올라운드 · 평탄 카본레이스',
-    description:
-      '트레일화를 고를 때 흔히 하는 실수가 "다 비슷한 트레일화"라고 생각하는 겁니다. 스피드고트 6(20.5만)는 어떤 지형에서도 무난한 만능 그립 베스트셀러, 살로몬 펄사(21만)는 근교 트레일을 가볍게 즐기는 올라운드 데일리, 아식스 메타후지 트레일(27.9만)은 카본 플레이트로 평탄한 그래블·로드-트레일 구간을 빠르게 달리는 레이서입니다. 세 신발의 용도가 완전히 다르기 때문에, 어떤 코스를 뛰느냐에 따라 답이 갈립니다.',
-    thumbnail: '/images/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-10',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['스피드고트 6', '살로몬 펄사', '메타후지 트레일', '트레일 러닝화', '트레일화 비교'],
+    id: "speedgoat-6-vs-pulsar-vs-metafuji-trail-2026",
+    slug: "speedgoat-6-vs-pulsar-vs-metafuji-trail-2026",
+    title: "스피드고트6 vs 펄사 vs 메타후지 — 카본 강성·앞코·험로 전환 비교",
+    description: "메타후지 초대의 혼합 폼·강성과 Matt의 착화 의견을 확인했습니다. 일반 펄사는 미확인, 스피드고트의 만능 그립·와이드 유일 보장은 정정했습니다.",
+    thumbnail: "/images/shoes/asics/metafujitrail/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-10",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "스피드고트6",
+      "일반 펄사",
+      "메타후지 트레일",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>같은 트레일화지만 셋의 성격은 완전히 다릅니다 — <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>는 어떤 지형에서도 무난한 <strong>만능 그립 베스트셀러</strong>(20.5만), <a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 근교 트레일을 가볍게 즐기는 <strong>올라운드 데일리</strong>(21만), <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>은 <strong>카본 플레이트 평탄레이스</strong> 전용(27.9만)입니다</li>
-    <li>핵심 갈림 — <strong>어떤 지형이냐</strong>가 전부입니다. 바위·진흙·급경사 산악이면 스피드고트 6, 근교 흙길 위주 가벼운 훈련이면 펄사, 그래블·임도·로드-트레일 혼합 레이스에서 빠른 페이스를 원하면 메타후지</li>
-    <li><strong>발볼 넓은 한국 러너는 사실상 스피드고트 6가 유일한 선택</strong>입니다(와이드 옵션 공식 동일가). 펄사·메타후지는 둘 다 좁고 와이드 옵션이 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">"트레일화는 다 비슷하다"는 착각</p>
-    <p>트레일 러닝을 시작하면 "그냥 아무 트레일화나 신으면 되지 않나" 싶지만, 실제로는 <strong>지형에 따라 신발 성격이 완전히 갈립니다.</strong> 이 셋은 가격대(20~28만원)는 비슷해도 설계 목적이 다릅니다 — 하나는 그립·안정성에 올인한 만능형, 하나는 가벼움과 반응성의 균형을 잡은 올라운더, 하나는 평탄 구간 스피드에 특화된 카본 레이서입니다. 한국 산악(북한산·관악산처럼 암반·급경사가 많은) 기준으로 어떤 게 내게 맞는지 정리합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>스피드고트 6</th><th>펄사</th><th>메타후지 트레일</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td>205,000원</td><td>210,000원</td><td>279,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td><strong>258g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td><strong>32 / 27mm</strong> (표기 40/35)</td><td>29 / 23mm</td><td>44.7 / 34.4mm</td></tr>
-    <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>10mm</td></tr>
-    <tr><td>미드솔</td><td>CMEVA(압축성형 EVA)</td><td>Opti FOAM Evo</td><td>FF Turbo + FF Blast+ 듀얼</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td><td><strong>풀 카본 플레이트</strong></td></tr>
-    <tr><td>쿠션 / 반응</td><td>8 / 6</td><td>6 / 7</td><td>9 / <strong>8</strong></td></tr>
-    <tr><td>안정성</td><td><strong>8</strong></td><td>7</td><td>4</td></tr>
-    <tr><td>아웃솔·그립</td><td><strong>Vibram Megagrip(4.0mm 러그)</strong></td><td>Contagrip(4mm 러그)</td><td>ASICSGRIP(2.7mm 러그)</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편(73.0mm) · <strong>와이드 O(동일가)</strong></td><td>좁음 · 없음</td><td>좁음(69.6mm) · 없음</td></tr>
-    <tr><td>내구성</td><td>400~500km</td><td>500km</td><td>550~600km</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 스펙은 각 신발 상세 페이지 실측·공식 발표 기준. 메타후지 트레일은 힐·미드풋이 좁은데 스택이 높아(44.7mm) 안정성 점수(4/10)가 셋 중 가장 낮습니다 — 카본 반발과 안정성은 트레이드오프 관계입니다.</p>
-
-<h2>스피드고트 6 — 산에서 뭘 만나도 무난하다</h2>
-<p>"트레일 입문화 하나만 추천해달라"는 질문에 가장 먼저 나오는 이름입니다. <strong>Vibram Megagrip + 측면 마이크로 돌기(Traction Lug)</strong>로 건/습 노면·바위·급경사 어디서든 그립이 최상위권(Road Trail Run 10/10)이고, 브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션인데도 내부 섀시(chassis) 구조 덕에 스택 대비 안정성이 뛰어납니다. 278g으로 맥스쿠션치고 가벼워 장거리·울트라에서 다리 피로도 덜합니다. 무엇보다 <strong>와이드 옵션이 공식 동일가로 나온다</strong>는 게 한국 러너에게 큰 장점 — 토박스가 73mm로 트레일 평균(74.3mm)보다 좁은 편이라, 발볼 넓다면 와이드를 고르면 됩니다.</p>
-<p>단점은 에너지 리턴이 48%로 낮아 <strong>빠른 페이스 레이싱용은 아니라는 점</strong>입니다. 텅 날개·힐 슬립 같은 핏 이슈, 노출 미드솔 구간 마모(200~300km 후 압축)도 감안하세요.</p>
-<p><strong>✅ 이런 분께</strong> — 트레일이 처음이거나, 여러 지형을 오가는 종주·울트라 위주거나, 발볼 넓어 와이드가 필요한 러너.</p>
-
-<h2>펄사 — 근교 트레일을 가볍게, 도로도 겸용</h2>
-<p>단종된 센스 라이드의 빈자리를 메우는 <strong>올라운드 데일리 트레이너</strong>입니다. <strong>Opti FOAM Evo</strong> 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 하프~40km 정도의 일상 훈련부터 업템포까지 한 켤레로 소화합니다. 290g으로 맥스쿠션 트레일화보다는 무겁지만 quickLACE + SensiFit 잠금이 안정적이라 도로-트레일 겸용 데일리로 편합니다.</p>
-<p>다만 <strong>전족부가 좁고 낮아</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고 와이드 옵션이 없습니다. 4mm Contagrip 러그는 건조한 혼합 지형엔 무난하지만, 젖은 바위·진흙과 록플레이트 없는 기술 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일을 빠르게 즐기는" 용도에 맞습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 도로와 근교 트레일을 한 켤레로 겸용하고 싶거나, 트레일 하프~40km 데일리 훈련 위주거나, 좀 더 가벼운 감각을 원하는 발볼 표준~좁은 러너.</p>
-
-<h2>메타후지 트레일 — 평탄 구간을 빠르게, 카본의 힘</h2>
-<p>아식스가 트레일 레이싱에 <strong>카본 플레이트</strong>를 얹은 모델입니다. FF Turbo + FF Blast+ 듀얼 폼과 풀 카본 플레이트로 <strong>평탄한 싱글트랙·자갈·로드-트레일 혼합 구간</strong>에서 로드 카본화 못지않은 추진력을 냅니다. 258g으로 셋 중 가장 가볍고, 힐 44.7mm 고스택에 ASICSGRIP 아웃솔이 평탄면에서 접지력을 확실히 잡아줘 그래블 레이스나 로드-트레일 혼합 대회(10K~하프)에 강합니다.</p>
-<p>하지만 한계도 뚜렷합니다. <strong>힐·미드풋이 좁은데 스택이 높아 측면 안정성이 부족</strong>(안정성 4/10)해서, 한국 산악 트레일의 주력인 바위·뿌리·진흙 구간에서는 발목이 흔들릴 수 있습니다(염좌 주의). 토박스도 69.6mm로 좁고 와이드 옵션이 없습니다. <strong>"산악 만능형"이 아니라 "평탄 트레일 레이스 스페셜리스트"</strong>로 이해해야 합니다.</p>
-<p><strong>✅ 이런 분께</strong> — 그래블·임도·로드-트레일 혼합 레이스에서 빠른 기록을 노리는 전족부 스트라이커. 반대로 테크니컬 암반·진흙 위주 코스나 발목 부상 이력이 있다면 피하세요.</p>
-
-<h2>내 트레일엔 뭘 신을까</h2>
-<ul>
-  <li><strong>산악 종주·울트라·여러 지형 혼합</strong> → <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 그립·안정성·와이드 옵션까지 가장 무난한 선택</li>
-  <li><strong>근교 트레일 + 도로 겸용, 가벼운 감각</strong> → <a href="/shoes/salomon-pulsar">펄사</a>. 대신 발볼 표준~좁은 러너에 한정</li>
-  <li><strong>그래블·임도·로드-트레일 혼합 레이스, 빠른 기록 목표</strong> → <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>. 단 테크니컬 지형·발목 이력자는 비추천</li>
-  <li><strong>발볼이 넓다면</strong> — 사실상 스피드고트 6만 와이드를 제공합니다. 더 넓은 발볼 옵션이 필요하면 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(맥스쿠션 울트라, 와이드 O)도 함께 보세요</li>
-</ul>
-<p>더 다양한 트레일화 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">스피드고트 6 vs 펄사 vs 아그라빅 4</a>, <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종 비교</a>에서도 확인할 수 있고, 트레일화 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>을 참고하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 트레일화 하나만 산다면 뭐가 제일 무난한가요?</p>
-    <p class="faq-a">A. 스피드고트 6입니다. 그립·안정성·와이드 옵션까지 갖춰 어떤 지형·코스에서도 큰 약점이 없습니다. 대신 빠른 페이스 레이싱에는 셋 중 가장 둔한 편입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 메타후지 트레일은 산악 코스에서도 쓸 수 있나요?</p>
-    <p class="faq-a">A. 쓸 수는 있지만 권장하지 않습니다. 힐·미드풋이 좁고 스택이 높아 안정성 점수가 4/10로 낮고, 테크니컬 암반·진흙 구간에서 발목이 흔들릴 위험이 있습니다. 평탄·완만한 그래블·로드-트레일 혼합 코스에서 진가를 발휘합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 셋 중에 고를 수 있는 게 있나요?</p>
-    <p class="faq-a">A. 스피드고트 6가 유일합니다(와이드 옵션 공식 동일가). 펄사와 메타후지 트레일은 둘 다 좁은 편이고 와이드 옵션이 없습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 각 신발 상세 페이지(RunRepeat·Road Trail Run·Believe in the Run 종합 리뷰 기준) · 한국 공식가 · 작성 2026년 7월 10일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>메타후지는 높은 스택과 전장 분기 카본을 사용하지만 그것이 모든 러너의 장거리 편안함을 뜻하지 않습니다. Matt는 정비된 빠른 길에서 스냅을 좋아했으나 느린 긴 주행과 오르막에서는 덜 편했습니다.</p><p>스피드고트6의 Vibram, 메타후지의 ASICSGRIP이라는 이름만으로 한국 모든 산의 접지를 순위 매기지 않습니다. 일반 펄사는 정확 사양이 미확인이라 가벼운 데일리라는 기존 역할 배정을 보류했습니다.</p><figure><img src="/images/shoes/asics/metafujitrail/side.webp" alt="초대 메타후지 트레일 — 혼합 폼·카본 강성과 앞코를 확인" loading="lazy"/><figcaption>초대 메타후지 트레일 — 혼합 폼·카본 강성과 앞코를 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>hoka-speedgoat-6</td><td>278g</td><td>32.1/27.2mm · 4.9mm</td><td>124/107</td><td>48/53.5%</td></tr><tr><td>salomon-pulsar</td><td>미확인</td><td>미확인</td><td>미확인</td><td>미확인</td></tr><tr><td>asics-metafuji-trail</td><td>258g</td><td>44.7/34.4mm · 10.3mm</td><td>153/122</td><td>59.7/65.4%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>평탄 레이스 추천도 개인의 편안함 확인이 필요</h2><p>RR은 메타후지를 평탄한 울트라에 제안하지만 DOR Matt는 긴 주행에서 너무 단단하다고 느꼈습니다. 둘은 다른 근거이며 어느 한쪽을 지워 통일된 정답을 만들지 않습니다. 실제 러너에게는 앞코 보강재·힐 카운터 접촉, 오르막에서 앞발 전환이 편한지가 더 구체적인 질문입니다.</p><p>메타후지의 주층은 FF Blast+이며 위층 FF Turbo와 혼합됩니다. 100% FF Turbo·평탄 전용·2시간 제한·발목 염좌 위험 등급, 스피드고트6의 어떤 지형에서도 무난한 최안전·유일 와이드라는 설명을 제거했습니다.</p><h2>스피드고트6 — 핏과 주행에서 갈리는 지점</h2><p>전장 카본 플레이트 없음. 단단한 폼·내부 섀시의 고정력을 임상 교정 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭95.6mm·엄지73mm·높이26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다.</p><p>DOR David(남성US9.5)는 정사이즈·보통 힐과 중족, 약간 여유 있는 전족을 느꼈습니다. 낮아진 볼륨과 내부 섀시의 고정, 완만한 로커·기술 지형에서 접지를 선호했지만 짧고 얕은 혀 때문에 끈 조절이 필요했습니다. RR 약간 작게라는 투표와 개인 정사이즈 경험은 구분합니다.</p><h2>스피드고트6 — 공시·한국 판매 확인 범위</h2><p>HOKA 뉴질랜드 남성278g(사이즈 미확인)·5mm, DOR 소개283g(남성US9)/244g(여성US8)·37/32mm·5mm, RR 브랜드남성40/35mm·여성38/33mm·5mm·277/232g(사이즈 미확인)과 실제278g·32.1/27.2mm·4.9mm를 구분합니다.</p><p>한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존205,000원·GTX229,000원·와이드 동일가 확정을 철회합니다. 일반 비방수6의 값을 GTX에 대입하지 않습니다.</p><p>RR 주폼40.6AC·구방식 비틀림5/5·통기2/5는 다른 시험 단위입니다. 러그4mm·국소마모1.4mm를 모든 젖은 바위·진흙·급경사의 안전이나500km 수명으로 환산하지 않습니다. DOR 개인 고정력 평가는 임상A등급이 아닙니다. 무릎 보호·평발 부하 분산·장거리 피로 감소 보장을 철회했습니다.</p><h2>일반 펄사 — 핏과 주행에서 갈리는 지점</h2><p>정확 일반 Pulsar의 폼·플레이트·공시 사양은 미확인입니다. Pulsar Trail·Trail Pro2·S/LAB Pulsar4의 구조를 대입하지 않습니다.</p><p>정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다.</p><p>정확 일반 Pulsar의 DOR 리뷰를 찾지 못했습니다. Trail Pro2·S/LAB Pulsar4의 개인 착화 의견을 가져오지 않습니다.</p><h2>일반 펄사 — 공시·한국 판매 확인 범위</h2><p>정확 일반 Pulsar의 무게·전체 스택·드롭·내부 폭·독립 랩 자료는 미확인입니다. 기존 290g·29/23mm·6mm를 검증된 값으로 반복하지 않습니다.</p><p>한국 L47887800·L49230100 검색 후보는 있었지만 상품 원문이 404여서 가격·상품코드·폭·재고를 확정하지 않았습니다. 검색 후보 210,000원을 확인된 한국 정가로 사용하지 않습니다.</p><p>500km 수명·40km 한계·Sense Ride의 단종 후계라는 기존 설명을 입증하지 못해 제거했습니다. 원문 미확인을 단종·미출시·전국 재고 없음으로 해석하지 않습니다.</p><h2>메타후지 트레일 — 핏과 주행에서 갈리는 지점</h2><p>분기형 전장 카본과 ASICSGRIP을 사용합니다. 폼 전체가 FF Turbo인 것은 아니며 주층 FF Blast+의 RR 경도는 30.2AC입니다.</p><p>RR 내부 최광폭 94mm·엄지 69.6mm·높이 24.5mm입니다. 낮은 볼륨·앞코 보강재와 힐 카운터의 접촉을 실제 규격·양말에서 확인하세요.</p><p>DOR Matt(남성 US10)는 앞코가 낮고 좁아 짧게 느껴지고 힐 카운터·맨발 내피 마찰이 불편했습니다. 정비된 빠른 트레일에서 강성과 스냅은 좋았지만 오르막 앞발 불편·느리거나 긴 주행의 불편, 기술 구간에서 좁은 힐/중족의 불안정을 적었습니다. 개인 경험을 임상 위험이나 모두의 거리 제한으로 확대하지 않습니다.</p><h2>메타후지 트레일 — 공시·한국 판매 확인 범위</h2><p>RR 실측 258g·44.7/34.4mm·10.3mm와 DOR 소개 261g(유니섹스 남성 US9/여성 US10.5)·44/39mm·5mm를 구분합니다. 실제 DOR 테스터 Matt는 남성 US10입니다.</p><p>정확 초대 한국 상품은 검색 후보만 있고 본문 추출이 되지 않아 현재 한국 가격·SKU·폭·재고는 미확인입니다. Metafuji Trail2의 319,000원을 초대에 대입하지 않습니다.</p><p>RR의 평탄한 울트라 제안과 Matt의 긴 주행 불편을 나란히 둡니다. 리턴 59.7/65.4%·젖은 콘크리트 0.80은 개인 편안함이나 진흙 접지 보장이 아닙니다. 아웃솔 마모 1.2mm·두께 1.1mm는 원문대로 보존하며 수명으로 환산하지 않습니다. 10km·하프·2시간 한계나 발목 염좌 위험 등급은 철회합니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://nz.hoka.com/products/m-speedgoat-6-1147791-bblc-bblc" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">스피드고트6 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/hoka-speedgoat-6-review-2024/" target="_blank" rel="noopener noreferrer">스피드고트6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/collections/sal_men_ftw_trailrunning" target="_blank" rel="noopener noreferrer">한국 남성 트레일 목록</a> — 목록 원문 확인. 정확 일반 Pulsar 상품 두 후보는 404로 미확인. 현행 전체 판매 부재를 뜻하지 않음.</li><li><a href="https://www.asics.co.kr/c/sports_trail_running" target="_blank" rel="noopener noreferrer">한국 공식 트레일 목록</a> — 정확 초대 상품 검색 후보만 확인, 열린 페이지는 추적 iframe 한 줄로 제품 원문 미확보. 2세대 대입 안 함.</li><li><a href="https://runrepeat.com/asics-metafuji-trail" target="_blank" rel="noopener noreferrer">메타후지 트레일 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/asics-metafuji-trail-review-2025/" target="_blank" rel="noopener noreferrer">메타후지 트레일 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "카본이면 울트라에서 더 편한가요?",
+        "answer": "확인한 개인 경험이 갈립니다. Matt는 느리고 긴 주행에서 덜 편했으며 모든 러너의 우열로 정하지 않습니다."
+      },
+      {
+        "question": "메타후지는 FF Turbo 100%인가요?",
+        "answer": "아닙니다. 위층 FF Turbo와 주층 FF Blast+ 혼합이며 RR30.2AC는 주층 값입니다."
+      },
+      {
+        "question": "첫 트레일화로 펄사가 확실한가요?",
+        "answer": "정확 일반 Pulsar 원문이 미확인이라 해당 일괄 추천을 보류했습니다."
+      }
+    ],
   },
   {
     id: 'nike-pegasus-plus-2-leak-2026',
@@ -4302,102 +4246,40 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026',
-    slug: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026',
-    title: '카본 트레일 레이서 3파전 | 테크톤 X 3 vs 울트라플라이 vs S/LAB 펄사 4 — 울트라·그래블·기술 산악 뭘 신지',
-    description: '30만원대 카본급 트레일 레이서 세 켤레를 정면 비교했습니다. 호카 테크톤 X 3(듀얼 카본·PEBA·울트라 효율), 나이키 울트라플라이(ZoomX·풀카본·넓은 토박스·완만 코스), 살로몬 S/LAB 펄사 4(카본 없이 247g 최경량·기술 암반 제어). 같은 "빠른 트레일"을 노리지만 울트라 장거리냐, 완만한 그래블 스피드냐, VK·스카이러닝 기술 코스냐에 따라 답이 완전히 갈립니다. 한국 산악 기준으로 내 레이스에 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-03',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['카본 트레일화', '테크톤 X 3', '나이키 울트라플라이', 'S/LAB 펄사 4', '트레일 레이싱', '트레일 러닝'],
+    id: "tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026",
+    slug: "tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026",
+    title: "테크톤X3 vs 초대 울트라플라이 vs S/LAB 펄사4 — 카본 구조·앞코 높이·고정 비교",
+    description: "세 모델이 모두 카본이라는 제목을 정정했습니다. 테크톤의 병렬 카본, 울트라플라이의 중족 분기 카본, 카본 없는 S/LAB4와 실제 핏을 비교합니다.",
+    thumbnail: "/images/shoes/salomon/slab-pulsar-4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-03",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "테크톤X3",
+      "초대 울트라플라이",
+      "S/LAB 펄사4",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>같은 "빠른 트레일 레이서"지만 노리는 지형이 정반대</strong> — 테크톤 X 3은 울트라 장거리 효율, 울트라플라이는 완만한 그래블 스피드, S/LAB 펄사 4는 기술 암반·VK 제어형입니다</li>
-    <li><strong>울트라 완주 → 테크톤 X 3</strong>(듀얼 카본+PEBA·70% 리턴·그립), <strong>완만 코스·발볼 넓음 → 울트라플라이</strong>(넓은 토박스 76.7mm), <strong>급경사 기술 산악 → S/LAB 펄사 4</strong>(247g·Active Chassis 제어)</li>
-    <li>한국 산은 바위·급경사가 많아 <strong>기술 제어와 안정성</strong>이 핵심 — 완만 코스 전용인 울트라플라이는 한국 산악엔 신중, S/LAB이 기술 코스에 가장 강합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>셋 다 30만원대 프리미엄 트레일 레이서지만 용도가 완전히 다릅니다. <strong>"50km+ 울트라를 빠르게 완주"면 테크톤 X 3</strong>(반발·그립·내구 균형), <strong>"완만한 임도·그래블을 빠르게, 발볼도 넓다"면 울트라플라이</strong>, <strong>"북한산·설악 같은 급경사 기술 코스·VK·스카이러닝"이면 S/LAB 펄사 4</strong>입니다. 데일리 트레일 3종은 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">스피드고트 6 vs 펄사 vs 아그라빅 4</a>에서 다뤘고, 전체 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>을 참고하세요.</p>
-  </div>
-</div>
-
-<h2>세 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>테크톤 X 3</th><th>울트라플라이</th><th>S/LAB 펄사 4</th></tr></thead>
-  <tbody>
-    <tr><td>브랜드</td><td>호카</td><td>나이키</td><td>살로몬</td></tr>
-    <tr><td>한국 가격</td><td>339,000원</td><td>299,000원</td><td>340,000원</td></tr>
-    <tr><td><strong>무게(US 9)</strong></td><td>275g</td><td>299g</td><td><strong>247g(최경량)</strong></td></tr>
-    <tr><td>힐 스택</td><td>38mm</td><td>37mm</td><td>33mm</td></tr>
-    <tr><td>드롭</td><td>7mm</td><td><strong>12mm</strong></td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>PEBA 듀얼</td><td>ZoomX(Pebax)</td><td>Energy Foam+ 듀얼</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>윙드 카본(듀얼)</td><td>풀 카본</td><td><strong>없음(폼+Active Chassis)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td><strong>~70%(최고)</strong></td><td>중상</td><td>48~58%(낮음)</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip 4mm</td><td>Vibram Litebase 3mm</td><td>Contagrip 3mm</td></tr>
-    <tr><td>안정성/제어</td><td>중(힐 고정 약함)</td><td><strong>낮음(완만 전용)</strong></td><td><strong>높음(기술 암반)</strong></td></tr>
-    <tr><td>토박스</td><td>73mm 좁은 편</td><td><strong>76.7mm 넓음</strong></td><td>74mm 표준</td></tr>
-    <tr><td>내구성</td><td>500km</td><td>450km</td><td>350km(청킹 우려)</td></tr>
-    <tr><td>대표 용도</td><td>울트라 장거리</td><td>완만 그래블 스피드</td><td>기술 암반·VK·스카이</td></tr>
-  </tbody>
-</table>
-<p><small>※ 스택·무게·에너지 리턴은 RunRepeat·Road Trail Run 등 전문 리뷰 및 공식 기준. 카본 트레일화는 랩 편차가 있어 실주행 감각과 함께 판단하세요.</small></p>
-
-<h2>테크톤 X 3 — 울트라 장거리 효율의 표준</h2>
-<p><a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>은 "울트라를 빠르게 완주"하려는 러너의 1순위 카본 트레일화입니다. 핵심은 <strong>100% PEBA 듀얼 폼 + 윙드 카본 플레이트(듀얼)</strong>로 만드는 <strong>~70% 에너지 리턴</strong>입니다. 50km·100km 같은 장거리에서 후반부 다리 피로를 확실히 덜어주죠. 여기에 <strong>Vibram Megagrip 4mm 러그</strong>로 그립도 상위권이라, 반발력과 접지력을 동시에 챙긴 드문 조합입니다. 니트 발목 게이터가 흙·잔돌 침입을 막아 장거리에서 신경 쓸 거리를 줄여줍니다.</p>
-<p>약점은 <strong>측면 힘이 실릴 때 어퍼가 늘어나 힐 고정력이 약한 것</strong>. 급경사 테크니컬 하산에서 발이 앞으로 밀릴 수 있어 끈을 단단히 조여야 합니다. 275g으로 카본 트레일화 중 무거운 축이고 339,000원의 가격도 부담이죠. 토박스는 73mm로 트레일 평균(74.3mm)보다 좁은 편이라 발볼이 넓다면 시착이 필요합니다.</p>
-<p><strong>✅ 이런 분께</strong> — 50km+ 울트라·장거리 트레일 레이스 / 반발·그립·내구의 균형을 원하는 러너 / 완만~중간 난이도 코스</p>
-
-<h2>울트라플라이 — 완만 코스 스피드 + 유일하게 넓은 토박스</h2>
-<p><a href="/shoes/nike-ultrafly">나이키 울트라플라이</a>는 나이키가 트레일에 <strong>ZoomX와 풀 카본 플레이트</strong>를 처음 얹은 레이서입니다. 로드의 베이퍼플라이 DNA를 트레일로 옮겨, <strong>완만한 비포장·파이어로드·그래블에서 로드 카본화 같은 추진력</strong>을 냅니다. 12mm 드롭이라 힐 착지 러너에게 편하고, 무엇보다 <strong>토박스가 76.7mm로 세 켤레 중 유일하게 넓어</strong> 발볼 넓은 한국 러너에게 드물게 우호적입니다.</p>
-<p>단, 이 신발의 전제는 <strong>"완만한 코스"</strong>입니다. 테크니컬 지형에서 어퍼 안정성이 부족하고, 토 범퍼가 약해 발가락 보호가 미흡하며, 급경사 하산·오프캠버에서 불안정합니다. 전족부 쿠션이 힐보다 현저히 낮아 전족 착지 시 보호가 적고요. <strong>Western States식 완만 그래블 울트라엔 강력하지만, 북한산·설악의 가파른 암반 코스엔 권하지 않습니다.</strong></p>
-<p><strong>✅ 이런 분께</strong> — 완만한 임도·그래블·파이어로드 레이스 / 발볼이 넓어 트레일화 선택이 어려웠던 러너 / 빠른 페이스·비테크니컬 울트라</p>
-
-<h2>S/LAB 펄사 4 — 급경사 기술 산악의 제어형 레이서</h2>
-<p><a href="/shoes/salomon-s-lab-pulsar-4">살로몬 S/LAB 펄사 4</a>는 살로몬 최상위 S/LAB 라인의 <strong>엘리트 기술 트레일 레이서</strong>입니다. 셋 중 유일하게 <strong>카본 플레이트가 없고</strong>, 대신 <strong>Energy Foam+ 듀얼 폼 + Matryx(아라미드) 어퍼 + Active Chassis</strong>로 승부합니다. <strong>247g 최경량</strong>에 급경사 암반에서도 발을 단단히 제어해(Road Trail Run 호평), <strong>20~80km 기술 트레일·VK(버티컬 킬로미터)·스카이러닝</strong>처럼 빠르고 험한 코스에 특화됐죠. 안정성·제어가 세 켤레 중 가장 뛰어나 <strong>한국 산악의 바위·급경사 코스에 가장 잘 맞습니다.</strong></p>
-<p>약점은 <strong>34만원 레이싱화치고 에너지 리턴이 48~58%로 낮고</strong>(카본이 없으니 직선 추진은 약함), 초기 런에서 <strong>폼 청킹(내구성) 우려</strong>가 보고됐으며 내구성이 350km로 짧습니다. 미드풋-토박스 경계 핀칭도 지적됩니다. "직선 속도"보다 "험지 제어와 경량"을 사는 신발입니다.</p>
-<p><strong>✅ 이런 분께</strong> — VK·스카이러닝·급경사 암반 기술 레이스 / 20~80km 기술 트레일 / 카본 없이 폼+경량 제어를 원하는 엘리트 러너</p>
-
-<h2>내 레이스엔 뭘 신을까</h2>
-<ul>
-  <li><strong>"50km+ 울트라를 빠르게 완주하고 싶다"</strong> → <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>. 70% 반발 + 그립 + 500km 내구의 균형이 장거리에 가장 안전합니다.</li>
-  <li><strong>"완만한 임도·그래블 위주 + 발볼이 넓다"</strong> → <a href="/shoes/nike-ultrafly">울트라플라이</a>. 넓은 토박스(76.7mm)와 ZoomX 추진력이 빛나지만, 코스가 험하면 피하세요.</li>
-  <li><strong>"북한산·설악 같은 급경사 기술 코스, VK·스카이러닝"</strong> → <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>. Active Chassis 제어와 247g 경량이 한국 산악 기술 코스에 최적입니다.</li>
-  <li><strong>"레이스보다 데일리 트레일 훈련용"</strong> → 카본 레이서는 과합니다. <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">데일리 트레일 3종(스피드고트·펄사·아그라빅)</a>을 보세요.</li>
-  <li><strong>"그립·안정이 최우선, 반발은 덜 중요"</strong> → 카본 없이도 충분합니다. <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>나 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>가 더 안전하고 저렴합니다.</li>
-</ul>
-<p>기술 트레일·스카이레이스 입문이라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를, 카본 플레이트의 원리와 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>를 함께 보면 좋습니다.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 카본 트레일화가 로드 카본화만큼 빠른가요?</p>
-    <p class="faq-a">A. 노면이 다릅니다. 로드 카본화는 평탄한 노면에서 직선 추진을 극대화하지만, 트레일은 노면이 불규칙해 <strong>카본의 이점이 완만한 코스에서만 크게 나타납니다</strong>. 울트라플라이·테크톤은 완만할수록 유리하고, 급경사 기술 코스에선 오히려 <strong>제어·그립(S/LAB)</strong>이 더 중요합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 산(북한산·관악산)에서 셋 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. 한국 산은 화강암 바위·급경사가 많은 기술 지형이라 <strong>S/LAB 펄사 4</strong>가 제어·안정성에서 가장 잘 맞습니다. 울트라플라이는 완만 코스 전용이라 가파른 암반엔 부적합하고, 테크톤은 장거리엔 좋지만 급경사 하산에서 힐 고정이 약합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. S/LAB 펄사 4는 카본이 없는데 왜 이렇게 비싼가요?</p>
-    <p class="faq-a">A. 카본 대신 <strong>Matryx 아라미드 어퍼·Active Chassis·247g 경량화·Energy Foam+ 폼</strong> 같은 엘리트 소재와 구조에 값이 매겨진 S/LAB 프리미엄입니다. 직선 반발(에너지 리턴)은 카본 모델보다 낮지만, <strong>험지 제어와 경량</strong>이 강점이라 용도가 다릅니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 셋 다 괜찮나요?</p>
-    <p class="faq-a">A. 셋 다 와이드 옵션은 없지만, <strong>울트라플라이가 토박스 76.7mm로 유일하게 넓어</strong> 발볼 넓은 러너에게 가장 무난합니다. 테크톤(73mm)·S/LAB(74mm)은 표준이라, 발볼이 매우 넓다면 시착이 필수입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 각 모델 상세 페이지(테크톤 X 3·울트라플라이·S/LAB 펄사 4) 스펙 및 Road Trail Run·RunRepeat 리뷰 종합 · 한국 공식/발매가 기준 · 작성 2026년 7월 3일. 카본 트레일화는 랩 편차가 있어 실주행 감각과 함께 판단하세요.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>세 켤레를 모두 카본 트레일화로 묶었던 제목을 바로잡았습니다. 테크톤X3는 병렬 카본, 초대 울트라플라이는 전장이 아닌 중족 분기 카본이고 S/LAB 펄사4에는 카본이 없습니다.</p><p>실제 선택에서는 카본 유무와 함께 앞코 높이, 힐 고정, 주로의 굴곡에서 전환을 확인해야 합니다. 특정 한국 산이나 거리만으로 어느 모델이 가장 안전하다고 정하지 않습니다.</p><figure><img src="/images/shoes/salomon/slab-pulsar-4/side.webp" alt="S/LAB 펄사4 — 카본 없는 구조, 밀착되는 입구와 Quicklace" loading="lazy"/><figcaption>S/LAB 펄사4 — 카본 없는 구조, 밀착되는 입구와 Quicklace</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>hoka-tecton-x-3</td><td>275g</td><td>37.8/30.9mm · 6.9mm</td><td>139/120</td><td>69.9/70.2%</td></tr><tr><td>nike-ultrafly</td><td>299g</td><td>36.6/24.8mm · 11.8mm</td><td>134/91</td><td>66.2/68.5%</td></tr><tr><td>salomon-s-lab-pulsar-4</td><td>247g</td><td>32.6/25.5mm · 7.1mm</td><td>133/112</td><td>47.7/57.6%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>판단 가능한 차이와 아직 모르는 점</h2><p>울트라플라이의 엄지 부위 76.7mm는 폭 여유를 생각해 볼 수 있는 수치지만 높이는 24.5mm입니다. 넓은 발이면 무조건 맞는다는 결론은 낼 수 없습니다. S/LAB4는 높이 31mm지만 DOR은 입구와 전체 핏을 밀착되게 느꼈습니다. 치수와 개인 체감을 함께 읽어야 하는 이유입니다.</p><p>테크톤X3 DOR 자료는 정확 모델을 비교한 짧은 단락이며 단독 전체 리뷰가 아닙니다. 세 모델 모두의 실제 한국 현재가·공통 수명은 확인하지 못해 50km 이상 가장 안전·350/450/500km·km당 비용으로 고르던 표는 제거했습니다.</p><h2>테크톤X3 — 핏과 주행에서 갈리는 지점</h2><p>윙렛이 달린 병렬 카본 섬유 플레이트입니다. HOKA 호주 공식의 이중 PEBA·MATRYX·Vibram Megagrip Litebase와 구분해 읽습니다. 니트 게이터는 방수 인증이 아닙니다.</p><p>RR 내부 최광폭92.2mm·엄지73.1mm·높이26.4mm와 외부 플랫폼117mm는 다른 위치입니다. 한국 현재 와이드·개인 사이즈는 미확인입니다.</p><p>DOR 텍톤X3 독립 리뷰는 미확인입니다. Rocket X Trail 원문의 명시적 비교 문장에서 Matt은 텍톤X3 어퍼가 짧고 표기보다 무겁게 느껴져 자신에게 맞지 않았다고 적었습니다. 이 비교의 텍톤 검체 사이즈는 미확인이고 Rocket의 수치·주행을 옮기지 않았습니다.</p><h2>테크톤X3 — 공시·한국 판매 확인 범위</h2><p>호주 공식 남성283g(사이즈 미확인)·5mm, RR 브랜드40/35mm·5mm·292/244g(사이즈 미확인), 실제275g·37.8/30.9mm·6.9mm를 구분합니다.</p><p>한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존339,000원 리셀러값을 한국 공식 정가로 쓰지 않습니다.</p><p>현행 RR 원문 경도는16.0HA(구방식 ShoreA)이며 AC는 미확인입니다. 아웃솔88HC와 다르며 변환하지 않습니다.4mm 러그·국소마모0.5mm·리턴69.9/70.2%를450~550km 수명·50/100km 피로 감소·만능 접지로 바꾸지 않습니다. 어퍼 밀림 일괄 보장·급경사 금지·폴 필수는 확인한 범위에서 입증하지 못했습니다.</p><h2>초대 울트라플라이 — 핏과 주행에서 갈리는 지점</h2><p>RR은 중족의분기형카본이며 전장이아니라고명시합니다. 전장ZoomX폼이 전장카본을뜻하지않습니다. DOR카본Flyplate명칭과구분합니다.</p><p>RR 내부최광폭95.8mm·엄지76.7mm·높이24.5mm입니다. 넓은엄지부위와낮은볼륨을함께확인하세요. RR글로벌여성Wide메타와비교표Normal표기가달라한국와이드보장으로쓰지않습니다.</p><p>DOR Matt(남성US10)은정사이즈·넓지만낮은전족,보통~밀착중족·힐과끈으로해결된초기힐슬립을적었습니다. 도로·정비된길·중간난도트레일의전환은좋았지만빠른지속주에서무게와느슨한연한노면의러그한계를느꼈습니다. 현지건조조건으로진흙은시험하지않았습니다.</p><h2>초대 울트라플라이 — 공시·한국 판매 확인 범위</h2><p>DOR소개300g(남성US10)/249g(여성US8)·38.5/30mm·8.5mm, RR브랜드286/249g(사이즈미확인)·38/29.5mm·8.5mm, 실제299g·36.6/24.8mm·11.8mm입니다.</p><p>초대DX1978계열의한국현행상품을확보하지못해현재가격·SKU·폭·재고는미확인입니다. 후속ACG Ultrafly HF5668은다른모델이어서대입하지않습니다. 기존299,000원발매가를현재공식가로쓰지않습니다.</p><p>현행RR9.8HA는구방식이며AC미확인입니다.3mm러그·국소마모0.7mm·45마일개인경험을450km수명으로환산하지않습니다.20km이후앞발피로·한국산악일괄금지·넓은발적합·첫ZoomX트레일이라는단정을철회합니다. 접지계수는미확인입니다.</p><h2>S/LAB 펄사4 — 핏과 주행에서 갈리는 지점</h2><p>RR은 카본과 록플레이트가 없다고 명시합니다. DOR의 얇은 보호 필름 설명을 카본으로 바꾸지 않습니다.</p><p>RR 내부 최광폭 94.9mm·엄지 74mm·높이 31mm입니다. DOR의 밀착 체감과 합쳐 모든 넓은 발에 적합하다고 판정하지 않습니다.</p><p>DOR 2025 여름 다모델 정리에서 David는 아주 밀착되는 입구와 착화 후 보통~좁은 핏, 단단하지만 반응성 있고 민첩한 주행을 적었습니다. 긴 주행에서는 본인에게 덜 편했습니다. 실제 착화 사이즈는 미확인이며 개별 전체 리뷰가 아닌 요약 글입니다.</p><h2>S/LAB 펄사4 — 공시·한국 판매 확인 범위</h2><p>RR 247g·32.6/25.5mm·7.1mm, DOR 소개 252g(남성 US9)·35/29mm·6mm, RR 재전재 브랜드 31/25mm·6mm는 서로 다른 자료입니다.</p><p>한국 L47770300 캐시는 단일 가격 340,000원·Standard·250g(기준 사이즈 미공시)·6mm를 표시했습니다. 명시적 MSRP·현재 가격·와이드는 미확인입니다. 225~295mm 목록은 재입고 알림창에 있어 현재 구매 가능 재고가 아닙니다. 뒷굽 높이 원문의 cm:34 단위 이상을 임의로 34mm나 340mm로 고치지 않습니다.</p><p>17.5HA는 구방식으로 AC는 미확인입니다. DOR의 반응성 체감과 RR 리턴 47.7/57.6%는 다른 종류의 근거입니다. DOR 4mm 러그와 RR 3mm도 구분합니다. 20~80km 처방·350km 수명·카본 트레일이라는 기존 설명을 철회합니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://au.hoka.com/products/m-tecton-x-3-1155112-bhkb-bhkb" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://www.doctorsofrunning.com/hoka-rocket-x-trail-review-2025/" target="_blank" rel="noopener noreferrer">DOR 비교 문장 한정</a> — Rocket X Trail 리뷰 중 Matt의 명시적 텍톤X3 비교만. 독립 리뷰·검체 사이즈 미확인.</li><li><a href="https://runrepeat.com/hoka-tecton-x-3" target="_blank" rel="noopener noreferrer">테크톤X3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.nike.com/kr/" target="_blank" rel="noopener noreferrer">한국초대상품검색범위</a> — 정확DX1978상품미확인. ACG후속값대입안함.</li><li><a href="https://runrepeat.com/nike-ultrafly" target="_blank" rel="noopener noreferrer">초대 울트라플라이 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/nike-ultrafly-review-2023/" target="_blank" rel="noopener noreferrer">초대 울트라플라이 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/products/l47770300" target="_blank" rel="noopener noreferrer">한국 공식 L47770300</a> — 캐시 today; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://runrepeat.com/salomon-s-lab-pulsar-4" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-summer-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "셋 다 카본 레이서인가요?",
+        "answer": "아닙니다. S/LAB4는 카본이 없습니다. 초대 Ultrafly도 전장이 아닌 중족 분기 카본이라는 RR 설명을 구분합니다."
+      },
+      {
+        "question": "한국 기술 산악이면 S/LAB이 정답인가요?",
+        "answer": "그런 일괄 우위를 확인하지 못했습니다. 실제 고정·노면·방향 전환과 리뷰어의 개인 경험을 함께 보세요."
+      },
+      {
+        "question": "내구성이 350km인가요?",
+        "answer": "국소 마모 시험·단기 착화 경험으로 전체 주행 수명을 정할 수 없습니다."
+      }
+    ],
   },
   {
     id: 'running-foot-care-blisters-toenails-2026',
@@ -4500,106 +4382,40 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
-    slug: 'speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026',
-    title: '20만원대 트레일화 3파전 | 스피드고트 6 vs 펄사 vs 테렉스 아그라빅 4 — 쿠션·스피드·그립, 내 산엔 뭘?',
-    description: '한국에서 가장 많이 팔리는 20만원대 트레일화 세 켤레를 정면 비교했습니다. 호카 스피드고트 6(맥스쿠션·만능 그립·와이드), 살로몬 펄사(저스택·경쾌한 스피드), 아디다스 테렉스 아그라빅 4(Continental 러버·테크니컬 그립). 가격은 16.9~21만원대지만 쿠션·무게·드롭·그립 성격이 완전히 다릅니다. 장거리 울트라냐, 근교 스피드 훈련이냐, 북한산 바위 테크니컬이냐 — 내 산과 용도에 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-02',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['트레일 러닝화', '스피드고트 6', '살로몬 펄사', '테렉스 아그라빅 4', '트레일화 비교', '트레일 러닝'],
+    id: "speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026",
+    slug: "speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026",
+    title: "스피드고트6 vs 펄사 vs 아그라빅4 — 만능 접지 대신 노면·앞코·고정으로 고르기",
+    description: "일반 펄사 스펙은 미확인으로 비웠습니다. 스피드고트6·아그라빅4의 정확 실측, 내부 공간과 보호층을 비교하고 바위·진흙 무조건 추천을 정정했습니다.",
+    thumbnail: "/images/shoes/adidas/agravic4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-02",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "스피드고트6",
+      "일반 펄사",
+      "아그라빅4",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가격은 16.9~21만원대, 성격은 정반대</strong> — 스피드고트 6은 맥스쿠션 만능형, 펄사는 저스택 스피드형, 아그라빅 4는 테크니컬 그립형입니다</li>
-    <li><strong>장거리·발볼 넓음 → 스피드고트 6</strong>(브랜드 표기 힐 40mm 쿠션 + 유일한 와이드 옵션), <strong>근교 빠른 훈련 → 펄사</strong>(힐 29mm·경쾌), <strong>북한산 바위·진흙 → 아그라빅 4</strong>(Continental 러버)</li>
-    <li>한국 산은 화강암 바위·뿌리가 많은 테크니컬 지형이라 <strong>그립과 안정성</strong>이 핵심 — 발볼 넓은 러너는 와이드가 있는 스피드고트가 사실상 유일한 선택입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏔️</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>세 켤레 다 좋은 트레일화지만 노리는 지점이 다릅니다. <strong>"트레일 첫 켤레로 하나만"이면 스피드고트 6</strong>(쿠션·그립·와이드 다 무난), <strong>"가볍게 근교를 빠르게"면 펄사</strong>, <strong>"북한산·관악산 바위 구간 그립 최우선"이면 아그라빅 4</strong>입니다. 전체 트레일화 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 정리했습니다.</p>
-  </div>
-</div>
-
-<h2>세 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>스피드고트 6</th><th>펄사</th><th>아그라빅 4</th></tr></thead>
-  <tbody>
-    <tr><td>브랜드</td><td>호카</td><td>살로몬</td><td>아디다스 테렉스</td></tr>
-    <tr><td>한국 가격</td><td>205,000원</td><td>210,000원</td><td>169,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>278g</td><td>290g</td><td>283g</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td><strong>32mm(표기 40)</strong></td><td><strong>29mm(저)</strong></td><td><strong>33mm(중)</strong></td></tr>
-    <tr><td>드롭</td><td>5mm</td><td>6mm</td><td>9mm</td></tr>
-    <tr><td>미드솔</td><td>CMEVA 맥스쿠션</td><td>Opti FOAM Evo</td><td>Lightstrike EVA(단단)</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip 4.0mm</td><td>Contagrip 4mm</td><td>Continental 3.1mm</td></tr>
-    <tr><td>그립 강점</td><td>만능(젖은 바위 최상위)</td><td>건조 혼합 지형</td><td>테크니컬·진흙 최상위</td></tr>
-    <tr><td>쿠션 / 반발</td><td>푹신 / 둔함</td><td>중간 / 경쾌</td><td>단단 / 또렷</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td><strong>○ (공식 동일가)</strong></td><td>✗ (발볼 좁음)</td><td>✗ (표준)</td></tr>
-    <tr><td>내구성</td><td>400~500km</td><td>500km</td><td>500~600km</td></tr>
-    <tr><td>대표 용도</td><td>장거리·울트라·만능</td><td>근교 스피드 훈련</td><td>바위·진흙 테크니컬</td></tr>
-  </tbody>
-</table>
-<p><small>※ 스피드고트 6·아그라빅 4의 힐 스택·드롭·러그는 RunRepeat 실측입니다(스피드고트 6 힐 스택 브랜드 표기는 40mm, 아그라빅 4 실측은 2026-10-23 반영). 펄사는 신발 DB에 RunRepeat 랩이 없어 전문 리뷰 실측·공식 기준입니다. 아그라빅 4 한국가는 아디다스 공식몰 정가(169,000원, 2026-10-20 확인)입니다.</small></p>
-
-<h2>스피드고트 6 — 트레일 첫 켤레의 표준</h2>
-<p><a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>은 트레일 데일리의 대명사입니다. "트레일화 하나만 추천"이라는 질문에 가장 먼저 나오는 이름이죠. 핵심은 <strong>브랜드 표기 힐 40mm(RunRepeat 측정 32.1mm) 쿠션 + Vibram Megagrip 최상위 그립</strong>입니다. 6세대는 측면 마이크로 돌기(Traction Lug)를 더해 젖은 바위·급경사·진흙 어디서든 그립이 흔들리지 않고(Road Trail Run 10/10), 높은 스택인데도 내부 섀시가 발을 잡아줘 안정성이 뛰어납니다(DOR A등급).</p>
-<p>한국 러너에게 결정적인 건 <strong>와이드 옵션이 공식가(205,000원) 그대로 나온다</strong>는 점입니다. 세 켤레 중 유일하죠. 토박스가 73mm로 트레일 평균(74.3mm)보다 좁은 편이라, 발볼 넓은 분은 망설임 없이 와이드를 고르면 됩니다. GTX 방수 버전(229,000원)도 있어 장마·겨울 대응까지 넓습니다.</p>
-<p>약점은 <strong>반발</strong>입니다. 에너지 리턴이 48%로 낮아 빠른 페이스에는 둔하고, 노출 미드솔 구간은 200~300km 후 압축이 옵니다. 텅 날개·힐 슬립 같은 소소한 핏 이슈도 있죠. 하지만 "빠르게 치고 나가기"보다 "모든 트레일을 무난히, 오래 즐기기"가 목적이라면 가장 안전한 선택입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 트레일 입문 첫 켤레 / 50km+ 장거리·울트라 / 발볼 넓어 와이드가 필요한 러너 / 하이킹 겸용</p>
-
-<h2>펄사 — 가볍고 경쾌한 근교 스피드형</h2>
-<p><a href="/shoes/salomon-pulsar">살로몬 펄사</a>는 단종된 센스 라이드의 자리를 잇는 올라운드 데일리 트레이너입니다. 스피드고트가 "푹신한 만능형"이라면, 펄사는 정반대인 <strong>저스택(힐 29mm)·경쾌한 스피드형</strong>입니다. Opti FOAM Evo 미드솔이 쿠션과 반응성의 균형을 잘 잡아, 트레일 하프~40km 훈련부터 업템포까지 한 켤레로 소화합니다.</p>
-<p>quickLACE + SensiFit의 발 잠금이 살로몬답게 정확하고, 낮은 스택 덕에 지면 감각이 또렷해 <strong>근교 트레일을 빠르게 달리는 훈련</strong>에 특히 잘 맞습니다. 발밑이 낮으니 발목이 꺾일 위험도 덜하죠.</p>
-<p>단점은 두 가지입니다. 첫째, <strong>전족부가 좁고 낮아(narrow) 발볼 넓은 한국 러너에겐 불편</strong>하고 와이드 옵션이 없습니다. 사이즈가 길게 나와 반 사이즈 다운 평이 많고요. 둘째, 4mm Contagrip 러그와 <strong>록플레이트 부재</strong>로 젖은 바위·진흙·날카로운 암반에는 한계가 있습니다. "험지 전문"이 아니라 "근교 트레일 스피드"에 특화된 신발입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 근교 산·둘레길을 빠르게 / 도로-트레일 겸용 원슈즈 / 저스택·경쾌한 반응 선호 / 발볼 표준~좁은 러너</p>
-
-<h2>테렉스 아그라빅 4 — 한국 산 테크니컬 그립 특화</h2>
-<p><a href="/shoes/adidas-terrex-agravic-4">아디다스 테렉스 아그라빅 4</a>는 "북한산 바위나 도봉산 테크니컬 구간에서 안 미끄러지는 신발"을 찾을 때 답이 되는 트레일화입니다. <strong>Continental 러버 아웃솔 + 약 3mm대 러그</strong>로 국내 출시 트레일화 중 그립이 최상위권이고, 습한 노면·진흙에서도 접지력이 안정적입니다.</p>
-<p>Lightstrike EVA 폼은 다소 단단해 반발은 아쉽지만(에너지 리턴 55%), 오히려 <strong>테크니컬 지형에서 발밑이 또렷해 착지가 안정적</strong>입니다. 셋 중 드롭이 가장 높은 9mm이라 힐 착지 러너에게 편하고, 다운힐에서 발이 흔들리지 않죠. 283g 경량이라 업힐·다운힐 모두 민첩합니다. 한국 산악 지형(화강암 바위 + 흙길 + 뿌리)에 가장 궁합이 좋은 세팅입니다.</p>
-<p>약점은 <strong>록 플레이트가 없어</strong> 날카로운 암반이 많은 코스에선 발바닥 피로가 누적된다는 것. 토박스 73mm 표준에 와이드 옵션이 없어 발볼 넓은 러너는 매장 착화가 필수입니다. 록플레이트가 꼭 필요한 장거리 암반 코스라면 <a href="/shoes/asics-metafuji-trail">아식스 메타후지 트레일</a>이 대안입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 북한산·관악산 등 바위·진흙 테크니컬 코스 / 그립·안정 착지 최우선 / 높은 드롭(9mm) 선호 / 로드화에서 넘어온 입문~중급</p>
-
-<h2>내 산·용도엔 뭘 신을까</h2>
-<ul>
-  <li><strong>"트레일 첫 켤레, 하나만 사서 다 하고 싶다"</strong> → <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 쿠션·그립·안정성이 고루 높고, 와이드까지 있어 실패 확률이 가장 낮습니다.</li>
-  <li><strong>"발볼이 넓다"</strong> → 사실상 <a href="/shoes/hoka-speedgoat-6">스피드고트 6 와이드</a>가 유일한 답입니다. 펄사·아그라빅은 와이드가 없습니다.</li>
-  <li><strong>"근교 산·둘레길을 가볍고 빠르게"</strong> → <a href="/shoes/salomon-pulsar">펄사</a>. 저스택·경쾌한 반응이 스피드 훈련에 맞습니다.</li>
-  <li><strong>"북한산·관악산 바위·진흙에서 안 미끄러지는 게 1순위"</strong> → <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>. Continental 그립과 안정 착지가 한국 산에 최적입니다.</li>
-  <li><strong>"50km+ 울트라, 오래 푹신하게"</strong> → 맥스쿠션 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>. 더 푹신한 대안은 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 울트라 글라이드 4</a>도 검토하세요.</li>
-  <li><strong>"빠른 트레일 레이스·카본 반발"</strong> → 세 켤레 모두 레이서는 아닙니다. 카본 트레일화 <a href="/shoes/hoka-tecton-x-3">테크톤 X 3</a>가 대안입니다.</li>
-</ul>
-
-<p>트레일 러닝이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>부터, 스카이레이스·기술 코스가 목표라면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를 함께 보면 좋습니다. 발볼이 넓어 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 참고하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 로드 러닝화로 트레일 뛰면 안 되나요?</p>
-    <p class="faq-a">A. 가벼운 흙길·둘레길이면 가능하지만, 바위·급경사·젖은 노면이 나오면 로드화 아웃솔은 미끄러워 위험합니다. 한국 산은 화강암 바위가 많아 <strong>트레일 전용 러그·러버</strong>가 안전에 직결됩니다. 위 세 켤레는 모두 트레일 전용 그립을 갖췄습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 세 켤레 다 괜찮나요?</p>
-    <p class="faq-a">A. 아닙니다. 펄사는 전족부가 좁고(narrow) 와이드가 없어 발볼 넓은 분께 비추천, 아그라빅 4도 표준이지만 와이드가 없습니다. <strong>와이드 옵션이 있는 건 스피드고트 6뿐</strong>이라, 발볼이 넓다면 스피드고트 와이드가 사실상 유일한 선택입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 안 좋은데 어떤 게 좋을까요?</p>
-    <p class="faq-a">A. 스택 표기로는 힐 40mm인 <strong>스피드고트 6</strong>이 가장 두툼하지만, RunRepeat 측정 힐 스택은 스피드고트 6 32.1mm·아그라빅 4 32.6mm로 비슷하고 펄사(29mm)가 가장 낮습니다. 무릎 이력이 있다면 스택 수치만으로 고르지 말고 매장에서 직접 비교해 보세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 셋 다 방수(GTX)가 되나요?</p>
-    <p class="faq-a">A. 스피드고트 6은 GTX 방수 버전(229,000원)이 따로 있습니다. 장마·겨울 우중 트레일이 잦다면 GTX를 고려하세요. 펄사·아그라빅 4는 기본 통기 버전 위주라 방수는 별도 확인이 필요합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 각 모델 상세 페이지(스피드고트 6·펄사·아그라빅 4) 스펙 및 Road Trail Run·Doctors of Running 리뷰 종합 · 한국 공식 가격 기준 · 작성 2026년 7월 2일. 아그라빅 4의 RunRepeat 실측은 2026-10-23에 반영했고(신발 DB 기준), 펄사는 RunRepeat 랩이 없어 미반영입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>같은 트레일화라도 밑창 재료 이름만으로 북한산 바위·젖은 뿌리·진흙 전체에서 우열을 정할 수 없습니다. 정확한 노면과 실제 고정이 먼저입니다.</p><p>확인한 두 모델의 RR 내부 치수와 공시·실측을 비교하되, 일반 펄사의 스펙과 착화는 미확인으로 분리했습니다. 가격대부터 16.9~21만원으로 고정하던 안내도 현재 한국 가격이 확인되지 않아 수정했습니다.</p><figure><img src="/images/shoes/adidas/agravic4/side.webp" alt="아그라빅4 — 보호 메시층과 강성 록플레이트를 구분" loading="lazy"/><figcaption>아그라빅4 — 보호 메시층과 강성 록플레이트를 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>hoka-speedgoat-6</td><td>278g</td><td>32.1/27.2mm · 4.9mm</td><td>124/107</td><td>48/53.5%</td></tr><tr><td>salomon-pulsar</td><td>미확인</td><td>미확인</td><td>미확인</td><td>미확인</td></tr><tr><td>adidas-terrex-agravic-4</td><td>283g</td><td>32.6/23.5mm · 9.1mm</td><td>122/102</td><td>50.3/55.2%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>아그라빅4 보호층을 강성 록플레이트와 구분</h2><p>아그라빅4 공식 보호용 메시층은 강성 록플레이트를 뜻하지 않습니다. 그렇다고 판이 없다는 이유만으로 특정 바위 코스에서 반드시 통증이 온다고 단정할 수도 없습니다. 실제 노면에서 압박과 유연성, 방향 전환을 확인할 부분입니다.</p><p>스피드고트6만 와이드가 유일하게 있고 같은 가격이라는 안내는 한국 현재 SKU를 확인하지 못해 철회했습니다. 아그라빅4의 젖은 콘크리트 계수로 진흙 최상위·화강암에서 안 미끄러짐을 보장하던 설명도 제거했습니다.</p><h2>스피드고트6 — 핏과 주행에서 갈리는 지점</h2><p>전장 카본 플레이트 없음. 단단한 폼·내부 섀시의 고정력을 임상 교정 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭95.6mm·엄지73mm·높이26.1mm입니다. 해외Normal/Wide/X-Wide 메타가 한국 현재 옵션을 보장하지 않습니다.</p><p>DOR David(남성US9.5)는 정사이즈·보통 힐과 중족, 약간 여유 있는 전족을 느꼈습니다. 낮아진 볼륨과 내부 섀시의 고정, 완만한 로커·기술 지형에서 접지를 선호했지만 짧고 얕은 혀 때문에 끈 조절이 필요했습니다. RR 약간 작게라는 투표와 개인 정사이즈 경험은 구분합니다.</p><h2>스피드고트6 — 공시·한국 판매 확인 범위</h2><p>HOKA 뉴질랜드 남성278g(사이즈 미확인)·5mm, DOR 소개283g(남성US9)/244g(여성US8)·37/32mm·5mm, RR 브랜드남성40/35mm·여성38/33mm·5mm·277/232g(사이즈 미확인)과 실제278g·32.1/27.2mm·4.9mm를 구분합니다.</p><p>한국 공식 연결 스토어에서 정확 상품 본문을 확보하지 못해 현행 정가·SKU·성별·폭·선택 재고는 미확인입니다. 해외 와이드나 유통가를 한국 공식 정보로 대입하지 않으며 검색 실패를 단종·전국 품절로 해석하지 않습니다. 기존205,000원·GTX229,000원·와이드 동일가 확정을 철회합니다. 일반 비방수6의 값을 GTX에 대입하지 않습니다.</p><p>RR 주폼40.6AC·구방식 비틀림5/5·통기2/5는 다른 시험 단위입니다. 러그4mm·국소마모1.4mm를 모든 젖은 바위·진흙·급경사의 안전이나500km 수명으로 환산하지 않습니다. DOR 개인 고정력 평가는 임상A등급이 아닙니다. 무릎 보호·평발 부하 분산·장거리 피로 감소 보장을 철회했습니다.</p><h2>일반 펄사 — 핏과 주행에서 갈리는 지점</h2><p>정확 일반 Pulsar의 폼·플레이트·공시 사양은 미확인입니다. Pulsar Trail·Trail Pro2·S/LAB Pulsar4의 구조를 대입하지 않습니다.</p><p>정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다.</p><p>정확 일반 Pulsar의 DOR 리뷰를 찾지 못했습니다. Trail Pro2·S/LAB Pulsar4의 개인 착화 의견을 가져오지 않습니다.</p><h2>일반 펄사 — 공시·한국 판매 확인 범위</h2><p>정확 일반 Pulsar의 무게·전체 스택·드롭·내부 폭·독립 랩 자료는 미확인입니다. 기존 290g·29/23mm·6mm를 검증된 값으로 반복하지 않습니다.</p><p>한국 L47887800·L49230100 검색 후보는 있었지만 상품 원문이 404여서 가격·상품코드·폭·재고를 확정하지 않았습니다. 검색 후보 210,000원을 확인된 한국 정가로 사용하지 않습니다.</p><p>500km 수명·40km 한계·Sense Ride의 단종 후계라는 기존 설명을 입증하지 못해 제거했습니다. 원문 미확인을 단종·미출시·전국 재고 없음으로 해석하지 않습니다.</p><h2>아그라빅4 — 핏과 주행에서 갈리는 지점</h2><p>한국 공식 정확4 문단은 돌·암석 대응 메시 층을 명시합니다. RR의 단단한 록 플레이트 없음 표와 구분하며 메시를 카본·경질 록 플레이트로 부르지 않습니다.</p><p>RR 내부 최광폭97.9mm·엄지73mm·높이25.9mm입니다. 테이퍼·고정과 내려갈 때 앞코 접촉을 실제 규격에서 확인하세요. 한국 현재 와이드·전체 발볼 적합은 미확인입니다.</p><p>정확한 아그라빅4 DOR 개별 리뷰를 이번 범위에서 확보하지 못했습니다. 다른 Speed·Ultra·Flow의 체감을 채우지 않았습니다. RR은3.1mm 러그를 덜 기술적인 지형 중심으로 설명하지만 젖은 콘크리트 계수0.70을 바위·진흙 접지 보장으로 확대하지 않습니다.</p><h2>아그라빅4 — 공시·한국 판매 확인 범위</h2><p>RR 브랜드35/27mm·8mm·남성277g/여성231g(사이즈 미확인), 실제 RR283g·32.6/23.5mm·9.1mm를 구분합니다. 한국공식 검체 무게·사이즈 조건은 미확인입니다.</p><p>한국 공식 캐시는 남성KJ8870 169,000원, KJ3786 169,000원·할인118,300원, 여성KJ1292 169,000원·할인135,200원입니다. 여성은2개월전·9월종료 프로모션이어서 현재혜택으로 쓰지 않습니다. 현재 가격·폭·선택 재고는 미확인입니다.</p><p>LIGHTSTRIKE를 LightstrikePro로 바꾸지 않습니다. 국소 아웃솔마모0.5mm·갑피1/5·힐패딩2/5는 서로 다른 부위 시험이며550km 수명은 아닙니다. 구방식 통기1/5를 한국 특정 계절의 금지 규칙으로 만들지 않습니다. 기존 젖은 흙·진흙 안전 보장과 임상등급·고정페이스를 철회했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://nz.hoka.com/products/m-speedgoat-6-1147791-bblc-bblc" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">스피드고트6 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/hoka-speedgoat-6-review-2024/" target="_blank" rel="noopener noreferrer">스피드고트6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/collections/sal_men_ftw_trailrunning" target="_blank" rel="noopener noreferrer">한국 남성 트레일 목록</a> — 목록 원문 확인. 정확 일반 Pulsar 상품 두 후보는 404로 미확인. 현행 전체 판매 부재를 뜻하지 않음.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/KJ8870.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ8870 · 남성</a> — 표시 정가 169000원·표시 판매가 169000원. 도구 캐시 2 days; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94/KJ3786.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ3786 · 남성</a> — 표시 정가 169000원·표시 판매가 118300원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%85%8C%EB%A0%89%EC%8A%A4-%EC%95%84%EA%B7%B8%EB%9D%BC%EB%B9%85-4-%ED%8A%B8%EB%A0%88%EC%9D%BC%EB%9F%AC%EB%8B%9D%ED%99%94/KJ1292.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KJ1292 · Women</a> — 표시 정가 169000원·표시 판매가 135200원. 도구 캐시 2 months; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/agravic" target="_blank" rel="noopener noreferrer">adidas 한국 아그라빅4 정확 문단</a> — 돌·암석 대응 메시 층. 경질 록 플레이트와 구분.</li><li><a href="https://runrepeat.com/adidas-terrex-agravic-4" target="_blank" rel="noopener noreferrer">아그라빅4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "젖은 바위에서 아그라빅4가 가장 좋나요?",
+        "answer": "젖은 콘크리트 시험으로 바위·뿌리·진흙 순위를 확정할 수 없습니다. 기존 만능 추천을 정정했습니다."
+      },
+      {
+        "question": "펄사는 반 사이즈 다운인가요?",
+        "answer": "정확 일반 모델 착화 원문을 확보하지 못했습니다. 전체 모델에 적용하는 다운 권장은 철회했습니다."
+      },
+      {
+        "question": "넓은 발이면 스피드고트6만 답인가요?",
+        "answer": "한국 현재 와이드 판매·폭 규격을 확정하지 못해 유일한 선택이라고 단정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'on-cloudboom-strike-2-preview-2026',

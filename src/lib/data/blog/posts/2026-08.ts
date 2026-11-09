@@ -389,103 +389,39 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'adidas-hyperboost-edge-vs-run-comparison-2026',
-    slug: 'adidas-hyperboost-edge-vs-run-comparison-2026',
-    title:
-      '하이퍼부스트 엣지 vs 런 — 같은 폼, 3만원 차이 | 아디다스가 상위로 세운 쪽이 랩 점수에선 뒤집힌다',
-    description:
-      '아디다스가 하이퍼부스트를 둘로 나눴습니다. 중장거리용 엣지(249,000원)와 데일리용 런(219,000원). 공식 설명은 엣지를 위에 두지만, 랩 실측을 펼치면 무게가 247g으로 같고 에너지 리턴도 거의 같으며 종합 점수는 오히려 런이 높습니다. 그렇다면 3만원을 더 낼 이유는 어디에 남는지, 스택 6mm와 폼 경도·내구성·힐 핏을 실측으로 갈랐습니다.',
-    thumbnail: '/images/blog/adidas-hyperboost-edge-vs-run-comparison-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-27',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['아디다스 하이퍼부스트 엣지', '아디다스 하이퍼부스트 런', '슈퍼트레이너', '데일리 러닝화', '무플레이트', '러닝화 비교'],
+    id: "adidas-hyperboost-edge-vs-run-comparison-2026",
+    slug: "adidas-hyperboost-edge-vs-run-comparison-2026",
+    title: "하이퍼부스트 엣지 vs 런 — 같은 247g, 다른 앞코·스택·힐 고정",
+    description: "두 플레이트 없는 모델의 RR 스택·리턴과 착화 확인점을 비교합니다. 200km 수명 차이·무조건 런 승리·힐 쓸림 해결 보장을 정정했습니다.",
+    thumbnail: "/images/shoes/adidas/hyperboost-run/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-27",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "하이퍼부스트 엣지",
+      "하이퍼부스트 런",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>미드솔이 같습니다</strong> — <a href="/shoes/adidas-hyperboost-edge">엣지</a>와 <a href="/shoes/adidas-hyperboost-run">런</a>은 둘 다 Hyperboost Pro 폼에 플레이트가 없고, 무게도 <strong>247g으로 동일</strong>합니다. 반발력 차이도 오차 범위입니다</li>
-    <li><strong>갈리는 건 스택과 단단함</strong> — 엣지는 힐 44.6mm에 폼이 무르고, 런은 38.6mm에 더 단단합니다. 푹 감싸는 롱런이면 엣지, 또렷한 지면 감각과 템포 겸용이면 런입니다</li>
-    <li><strong>3만원 싼 런이 랩 종합 점수는 더 높습니다</strong>(84 대 83). 대신 아웃솔 수명은 엣지가 약 200km 더 깁니다 — 3만원의 값어치는 여기에 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론.</strong> 대부분의 러너에게는 <a href="/shoes/adidas-hyperboost-run">하이퍼부스트 런</a>이 합리적입니다 — 3만원 싸고, 발볼 여유가 더 있고, 엣지에서 가장 많이 지적된 힐 쓸림이 없습니다. <a href="/shoes/adidas-hyperboost-edge">엣지</a>는 <strong>45mm급 고스택 감각이 목적 그 자체</strong>이거나 훈련량이 많아 아웃솔 수명이 중요한 경우에 답이 됩니다. 엣지 단독 분석은 <a href="/blog/adidas-hyperboost-edge-review-2026">하이퍼부스트 엣지 후기</a>, 타사 고스택과의 대결은 <a href="/blog/adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026">엣지 vs 슈퍼블라스트 3</a>, 라인업 전체 위치는 <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 러닝화 계급도</a>에서 볼 수 있습니다.</p>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<p>아래 수치는 브랜드 발표가 아니라 <strong>랩에서 실제로 잰 값</strong>입니다. 아디다스 공식 스펙은 엣지 45/39mm·런 38/32mm에 드롭 6mm로 표기하는데, 실측과 0.5mm 안팎에서 맞아떨어졌습니다.</p>
-<table>
-  <thead><tr><th>항목</th><th>하이퍼부스트 엣지</th><th>하이퍼부스트 런</th></tr></thead>
-  <tbody>
-    <tr><td>가격(한국)</td><td>249,000원</td><td><strong>219,000원</strong></td></tr>
-    <tr><td>무게</td><td>247g</td><td>247g</td></tr>
-    <tr><td>스택(힐/전족)</td><td><strong>44.6 / 38.1mm</strong></td><td>38.6 / 31.8mm</td></tr>
-    <tr><td>드롭(실측)</td><td>6.5mm</td><td>6.8mm</td></tr>
-    <tr><td>미드솔</td><td>Hyperboost Pro</td><td>Hyperboost Pro</td></tr>
-    <tr><td>폼 경도</td><td><strong>32.5 AC (무름)</strong></td><td>38.7 AC (단단함)</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>충격흡수(힐)</td><td><strong>154</strong></td><td>147</td></tr>
-    <tr><td>에너지 리턴(힐)</td><td>73.6%</td><td>71.6%</td></tr>
-    <tr><td>아웃솔</td><td>LIGHTTRAXION 풀렝스</td><td><strong>+ 전족 컨티넨탈 러버</strong></td></tr>
-    <tr><td>통기성</td><td>62 (낮음)</td><td>54 (더 낮음)</td></tr>
-    <tr><td>토박스 폭 / 와이드</td><td>71.4mm / 없음</td><td><strong>73.6mm</strong> / 없음</td></tr>
-    <tr><td>내구 / km당</td><td><strong>700km / 약 356원</strong></td><td>500km / 약 438원</td></tr>
-    <tr><td>랩 종합 점수</td><td>83점</td><td><strong>84점</strong></td></tr>
-    <tr><td>대표 용도</td><td>고스택 롱런</td><td>이지런~템포 겸용</td></tr>
-  </tbody>
-</table>
-<p><small>수치는 본 사이트 신발 DB(RunRepeat 랩 실측·한국 공식가 기준)입니다. 충격흡수와 폼 경도는 서로 다른 것을 재는 값으로, 충격흡수는 높을수록 부드럽게 받아주고 경도는 낮을수록 무릅니다.</small></p>
-
-<h2>공식 설명과 랩 수치가 어긋나는 지점</h2>
-<p>아디다스는 이 둘을 "중장거리용 엣지 / 데일리용 런"으로 나눠 소개합니다. 자연스럽게 엣지가 상위 모델처럼 읽히지만, 실측을 펼치면 위계가 흐려집니다. <strong>무게가 247g으로 같고</strong>, 에너지 리턴은 73.6% 대 71.6%로 사실상 오차 범위이며, 랩 종합 점수는 런이 84점으로 엣지(83점)를 근소하게 앞섭니다. 게다가 런에는 상위 모델인 엣지에 없는 <strong>전족 컨티넨탈 러버</strong>가 들어갑니다. 젖은 노면 그립과 마모에서 유리한 구성이 3만원 싼 쪽에 붙은 셈입니다.</p>
-<p>힐 구조 설명에서도 온도차가 드러납니다. 아디다스는 엣지 뒤꿈치에 "컴포트 팟"을 적용해 쿠셔닝과 안정적인 핏을 강화했다고 설명하는데, 외부 리뷰 매체의 평가는 정반대에 가깝습니다. 뻣뻣한 힐 칼라가 복사뼈를 쓸린다는 지적이 Doctors of Running·Road Trail Run을 비롯한 여러 매체에서 반복됐고, 체중이 가벼운 테스터일수록 강하게 호소했습니다. <strong>같은 지적이 런 리뷰에서는 재현되지 않았습니다.</strong> 브랜드 자료만 보고는 알 수 없는 차이라, 이 글에서 가장 실질적인 정보는 여기입니다.</p>
-
-<h2>하이퍼부스트 엣지 — 45mm 감각이 목적일 때</h2>
-<p>엣지의 강점은 명확합니다. 힐 충격흡수 154는 최상위권이고, 폼 경도 32.5 AC로 무른 편이라 발이 푹 잠기는 감각이 강합니다. 44.6mm를 얹고도 247g에 머문 것도 인상적입니다. 플레이트가 없는데 종방향으로는 단단한 편이라, 곧게 뻗은 길을 일정한 페이스로 밀 때 특히 잘 맞습니다. <strong>아웃솔은 100km를 달려도 마모가 거의 보이지 않아</strong> 700km 이상을 기대할 수 있고, 그 덕에 km당 비용은 356원으로 런(438원)보다 오히려 저렴합니다.</p>
-<p>약점은 갑피 한 곳에 몰려 있습니다. 앞서 말한 힐 칼라 쓸림이 첫째고, 통기성 62는 러닝화 평균 이하라 한여름에 발열이 갇힙니다. 토박스 폭 71.4mm는 평균(73.2mm)보다 좁은 편이고 높이도 24.8mm로 낮아 발볼과 발등 모두에서 걸릴 수 있습니다. 안정성 평가도 낮은 편이라 발이 안쪽으로 무너지는 러너에게는 권하지 않습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 45mm급 고스택의 푹신한 감각 자체를 원하는 분, 주간 거리가 많아 아웃솔 수명이 중요한 분, 뒤꿈치 복사뼈가 예민하지 않은 중립 발 러너.</p>
-
-<h2>하이퍼부스트 런 — 매일 신을 형태로 정리한 쪽</h2>
-<p>런은 같은 폼을 데일리 스택에 담았습니다. 힐을 38.6mm로 6mm 낮추고 폼을 38.7 AC로 단단하게 조정한 결과, 지면 감각이 또렷해지고 방향 전환에서 덜 흔들립니다. 충격흡수 147은 데일리 트레이너 기준으로 최상위권이라 매일 아스팔트를 달려도 부담이 과하게 쌓이지 않고, 반발이 살아 있어 페이스를 올려도 폼이 죽지 않습니다. <strong>이지런과 주 1회 템포를 한 켤레로 커버하려는 경우</strong>에 가장 잘 맞는 구성입니다.</p>
-<p>양보한 것은 수명입니다. 아웃솔이 1.8mm로 얇고 테스트 마모가 0.8mm라 500km 안팎으로 보는 것이 현실적입니다. 통기성 54는 엣지보다도 낮아 이 계열의 공통 약점이 오히려 심해졌습니다. 다만 발 관점에서는 개선이 있습니다 — 토박스 폭 73.6mm는 표준 중에서도 여유 있는 축이라 엣지보다 2.2mm 넓습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 신발 한 켤레로 이지런과 템포를 겸하려는 분, 3만원을 아끼면서 같은 폼을 쓰고 싶은 분, 발볼이 표준보다 조금 넓은 분, 젖은 노면을 자주 달리는 분.</p>
-
-<h2>내게 맞는 건 어느 쪽일까</h2>
-<ul>
-  <li><strong>둘 중 하나만 고른다면</strong> → <a href="/shoes/adidas-hyperboost-run">런</a>. 3만원 싸고 랩 종합 점수도 높으며 힐 쓸림 위험이 없습니다. 45mm가 꼭 필요한 이유가 없다면 굳이 엣지로 올라갈 근거가 약합니다</li>
-  <li><strong>주간 60km 이상 달린다면</strong> → <a href="/shoes/adidas-hyperboost-edge">엣지</a>. km당 356원으로 런(438원)보다 경제적이라, 거리가 쌓일수록 3만원 차이를 되돌려받습니다</li>
-  <li><strong>발볼이 넓은 편이라면</strong> → 런이 2.2mm 여유 있지만, <strong>둘 다 와이드 옵션이 없습니다</strong>. 4E급이라면 두 모델 모두 피하고 <a href="/shoes/asics-novablast-6">노바블라스트 6</a>이나 와이드가 나오는 모델을 보세요</li>
-  <li><strong>발등이 높다면</strong> → 토박스 높이가 엣지 24.8mm·런 23.7mm로 둘 다 낮습니다. 온라인 구매보다 매장 착화를 권합니다</li>
-  <li><strong>평발이거나 발이 안쪽으로 무너진다면</strong> → 둘 다 중립 발 전용입니다. <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 같은 안정화 계열이 맞습니다</li>
-  <li><strong>한여름에 주로 달린다면</strong> → 통기성이 각각 62·54로 낮아 두 모델 모두 불리합니다. 가을까지 기다리거나 통풍이 나은 모델을 고르세요</li>
-  <li><strong>레이스용을 찾는다면</strong> → 플레이트가 없어 둘 다 레이서가 아닙니다. <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼트레이너 3파전</a>에서 더 빠른 선택지를 볼 수 있습니다</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 미드솔이 같으면 신는 느낌도 같나요?</p>
-    <p class="faq-a">A. 폼 소재는 같지만 경도가 다릅니다. 엣지는 32.5 AC로 무르고 런은 38.7 AC로 단단해, 같은 재료라도 발밑 느낌은 뚜렷하게 갈립니다. 여기에 스택 6mm 차이가 더해져 엣지는 푹 잠기는 쪽, 런은 지면이 또렷하게 읽히는 쪽입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 3만원 더 주고 엣지를 살 이유가 있나요?</p>
-    <p class="faq-a">A. 두 가지 경우에 있습니다. 첫째는 45mm급 고스택의 감각 자체를 원할 때, 둘째는 훈련량이 많을 때입니다. 아웃솔 수명이 700km 대 500km라 km당 비용은 엣지가 오히려 저렴해, 거리가 쌓이면 가격차가 상쇄됩니다. 반대로 주 30km 안팎이라면 그 차이를 체감하기 전에 다른 신발로 넘어갈 가능성이 큽니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 엣지의 뒤꿈치 쓸림, 런에서도 생기나요?</p>
-    <p class="faq-a">A. 런 리뷰에서는 같은 지적이 반복되지 않았습니다. 아디다스 설명 기준으로도 뒤꿈치 설계가 달라, 엣지는 컴포트 팟, 런은 3D 프린티드 힐 엘리먼트를 씁니다. 다만 발 모양은 개인차가 커서, 복사뼈가 튀어나온 편이라면 어느 쪽이든 매장에서 신어보는 편이 안전합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 겨울 러닝에는 어떤가요?</p>
-    <p class="faq-a">A. 두 모델의 공통 강점입니다. 낮은 기온에서 폼이 굳는 비율이 9%에 그쳐, 한겨울 새벽에도 쿠션이 딱딱하게 변하지 않습니다. 통기성이 낮다는 약점이 겨울에는 오히려 보온으로 작동해, 여름에 사면 실망하고 겨울에 다시 보게 되는 계열입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: RunRepeat 랩 실측, Doctors of Running·Road Trail Run 리뷰, 아디다스 공식 제품 설명 · 가격은 한국 공식가 기준 · 작성 2026년 8월 27일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>두 RR 검체의 무게는 247g으로 같지만 엣지의 힐 스택은 44.6mm, 런은 38.6mm입니다. 앞코 높이·폼 경도·로커와 힐 고정도 달라 무게 하나로 같은 신발이라고 볼 수 없습니다.</p><p>엣지의 힐 리턴 73.6%와 런의 71.6%를 오차 범위라고 단정할 반복시험 자료는 확보하지 못했습니다. 랩 종합 점수 하나로 개인 착화의 승자를 정하지 않습니다.</p><figure><img src="/images/shoes/adidas/hyperboost-run/side.webp" alt="하이퍼부스트 런 — 엣지와 힐 높이·앞코·고정을 비교" loading="lazy"/><figcaption>하이퍼부스트 런 — 엣지와 힐 높이·앞코·고정을 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>adidas-hyperboost-edge</td><td>247g</td><td>44.6/38.1mm · 6.5mm</td><td>154/145</td><td>73.6/72.8%</td></tr><tr><td>adidas-hyperboost-run</td><td>247g</td><td>38.6/31.8mm · 6.8mm</td><td>147/133</td><td>71.6/72.8%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>고를 기준은 쓸림 보장보다 실제 높이와 고정</h2><p>엣지 DOR 리뷰어의 칼라 의견은 서로 달랐습니다. 런의 정확 DOR 착화 리뷰는 이번에 찾지 못했으므로 ‘런은 쓸림이 없다’거나 ‘엣지 문제를 해결했다’고 비교할 수 없습니다. 두 모델 모두 평소 양말에서 칼라 접촉과 발등·발가락 위 압박을 확인하세요.</p><p>엣지 한국 캐시는 SKU별 249,000원과 259,000원이 달랐고 런은 219,000원 단일 가격 캐시입니다. 현재 같은 조건의 3만원 차이로 고정하지 않습니다. 700/500km·200km 차이와 km당 비용, 주간 60km면 엣지가 경제적이라는 선택표는 입증되지 않아 제거했습니다.</p><h2>하이퍼부스트 엣지 — 핏과 주행에서 갈리는 지점</h2><p>공식 발표는 플레이트와 보강 부품을 사용하지 않는다고 명시합니다. LIGHTTRAXION을 Continental로 바꾸지 않습니다.</p><p>RR 내부 최광폭97.4mm·엄지71.4mm·높이24.8mm입니다. 앞쪽 테이퍼와 낮은 볼륨, 실제 칼라 접촉을 따로 확인하세요. 한국 현재 와이드·D 단일 확정은 미확인입니다.</p><p>DOR Matt(남성US10)은 낮은 볼륨·단단한 어퍼, 편한 뒤쪽 갑피에도 거친 힐 전환·개인 정강이 불편과 늦은 전족 로커를 느끼며 업템포를 선호했습니다. David(남성US9.5)는 타이트한 중족·여유 있는 전족과 높은 칼라의 발목 쓸림, 이른 전족 로커를 느끼며 일상·롱런을 선호했습니다. 모두 같은 불편을 겪었다고 합치지 않습니다.</p><h2>하이퍼부스트 엣지 — 공시·한국 판매 확인 범위</h2><p>글로벌 공식255g은 남성8.5(사이즈 체계 미명시), 힐45mm·드롭6mm입니다. DOR255g(남성8.5체계미명시)/268g(남성10실측)·45/39mm·6mm, RR247g·44.6/38.1mm·6.5mm는 다른 조건입니다. 2026-03-05 발표·글로벌03-17 출시이며 한국03-23 출시는 이번 범위에서 미확인입니다.</p><p>한국 공식 캐시에서 남성KI1913·여성LA2185 249,000원, 남성KH5376·여성KH5379 259,000원이 표시됐습니다. 캐시시점은당일~2주이며 현재 정가·선택 규격·폭·재고는 미확인입니다. 단일249,000원과 와이드 없음으로 일반화하지 않습니다.</p><p>공식73%는60명 선호 조사 중 리턴을 선호한 비율,77%는 더 부드럽다고 느낀 비율이며 RR힐73.6% 리턴과 다른 통계입니다. 제조사 Q&A는 LightstrikePro 배합·Boost 공정을 언급하지만 정확 고분자는 미공개이고 RR의 PEBA계 설명과 구분합니다. RR BR62·건조47%와 David의 통기 체감, 반거싯 표와 Matt의 전장 거싯 설명도 다릅니다. 700km·겨울최고·힐착지 일괄금지·검증완료 확정은 철회합니다.</p><h2>하이퍼부스트 런 — 핏과 주행에서 갈리는 지점</h2><p>RR은 플레이트가 없다고 명시합니다. 폼의 ePEBA 표기는 RR의 소재 설명이며 독립 화학 분석 결과가 아닙니다.</p><p>RR 내부 최광폭 96.9mm·엄지 부위 73.6mm·높이 23.7mm입니다. 발볼 수치만 보지 말고 발가락 위 높이와 중족 고정을 함께 확인하세요. 한국 현재 와이드는 미확인입니다.</p><p>정확한 Hyperboost Run의 DOR 착화 리뷰를 이번 범위에서 찾지 못했습니다. Hyperboost Edge의 착화 의견을 대입하지 않습니다.</p><h2>하이퍼부스트 런 — 공시·한국 판매 확인 범위</h2><p>RR 실측 247g·38.6/31.8mm·6.8mm, RR에 재전재된 브랜드 공시 248/222g(기준 사이즈 미확인)·38/32mm·6mm를 구분합니다.</p><p>한국 남성 IH9467·여성 HQ7711 공식 캐시는 219,000원을 표시했습니다. 별도 MSRP 레이블과 현재 가격·폭·선택 재고는 미확인입니다. 사이즈 AAA 표시나 장바구니 버튼을 재고 증거로 쓰지 않습니다.</p><p>힐/전족 SA 147/133과 리턴 71.6/72.8%는 검체 시험입니다. BR54·건조38%는 겨울 전천후 보장이 아니며, 젖은 콘크리트 접지계수 0.68은 젖은 바위 시험이 아닙니다. 전족 Continental 패치와 LIGHTTRAXION GCPU를 전체 고무 밑창으로 뭉뚱그리지 않습니다. 500km 수명·평발 금지·Edge의 어퍼 문제를 해결했다는 단정을 철회합니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-%EB%9F%AC%EB%8B%9D%ED%99%94/KI1913.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KI1913 · 남성</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80-w/LA2185.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 LA2185 · Women</a> — 표시 정가 249000원·표시 판매가 249000원. 도구 캐시 2 weeks; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5376.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5376 · 남성</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 today; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EC%97%A3%EC%A7%80/KH5379.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 KH5379 · Women</a> — 표시 정가 259000원·표시 판매가 259000원. 도구 캐시 last week; 현재 가격·폭·선택 재고 미확인.</li><li><a href="https://news.adidas.com/hyperboost-edge/adidas-reveal-the-hyperboost-edge--beginning-a-new-era-of-road-running/s/74c11526-ce60-405c-8c47-c1edae16c9e3" target="_blank" rel="noopener noreferrer">adidas 글로벌 공식 발표</a> — 255g 남성8.5·45mm·6mm·플레이트 없음·선호 조사.</li><li><a href="https://news.adidas.com/global/hyperboost-edge-unlocked--10-things-you-need-to-know-from-vp-of-design-for-adidas-running/s/5c39a6df-59d2-415b-81e0-fe8671de5399" target="_blank" rel="noopener noreferrer">adidas 폼 설계 Q&A</a> — 정확 고분자 미공개. Boost 이름만으로 eTPU 단정 금지.</li><li><a href="https://runrepeat.com/adidas-hyperboost-edge" target="_blank" rel="noopener noreferrer">하이퍼부스트 엣지 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/adidas-hyperboost-edge-review-2026/" target="_blank" rel="noopener noreferrer">하이퍼부스트 엣지 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EB%9F%B0/IH9467.html" target="_blank" rel="noopener noreferrer">kr_hyper_m</a> — web official original cache opened; 정확SKU별성별·표시가격·쿠폰조건.사이즈AAA로재고미확인.</li><li><a href="https://www.adidas.co.kr/%ED%95%98%EC%9D%B4%ED%8D%BC%EB%B6%80%EC%8A%A4%ED%8A%B8-%EB%9F%B0-%EB%9F%AC%EB%8B%9D%ED%99%94/HQ7711.html" target="_blank" rel="noopener noreferrer">kr_hyper_w</a> — web official original cache opened; 정확SKU별성별·표시가격·쿠폰조건.사이즈AAA로재고미확인.</li><li><a href="https://runrepeat.com/adidas-hyperboost-run" target="_blank" rel="noopener noreferrer">하이퍼부스트 런 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "리턴 차이가 오차 범위인가요?",
+        "answer": "검체 수치 차이는 있지만 반복시험의 분산·오차 자료를 확보하지 못해 오차 범위라고 확정하지 않습니다."
+      },
+      {
+        "question": "런은 힐 쓸림이 없나요?",
+        "answer": "정확 Run의 DOR 착화 리뷰를 확보하지 못했습니다. Edge의 의견을 Run의 개선 증거로 쓰지 않습니다."
+      },
+      {
+        "question": "런이 무조건 가성비가 좋나요?",
+        "answer": "현재 동시점 한국 가격과 공통 수명이 미확인입니다. 수명·가격만으로 승자를 정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'prospecs-chuncheon-marathon-race-package',

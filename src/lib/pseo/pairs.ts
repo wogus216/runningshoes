@@ -142,11 +142,11 @@ function makePair(x: Shoe, y: Shoe, category: string): ShoePair {
   return { slug: `${first.slug}-vs-${second.slug}`, a: first, b: second, category };
 }
 
-/** 고정 목록을 실제 신발로 되살린다. 신발이 사라졌거나 카테고리가 갈리면 조용히 건너뛴다. */
+/** 고정 URL은 일부 사양을 비워도 유지한다. 미확인 셀은 비교 표에서 비운다. */
 function restorePinnedPairs(): ShoePair[] {
   const bySlug = new Map<string, Shoe>();
   for (const s of allShoes) {
-    if (hasComparisonData(s)) bySlug.set(s.slug, s);
+    bySlug.set(s.slug, s);
   }
 
   const out: ShoePair[] = [];

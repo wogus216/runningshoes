@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-balos-v1',
   slug: 'new-balance-balos-v1',
@@ -14,93 +15,127 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4,
-  status: 'new',
-  price: 259000,
-  description: '뉴발란스의 프리미엄 PEBA 데일리 쿠션화. 20% PEBA + 80% EVA 블렌드 폼으로 경량이면서 바운시한 라이드를 제공하며, 로커 지오메트리로 빠른 전환을 돕습니다.',
-  oneliner: '247g(실측)에 PEBA 블렌드 폼, 바운시한 프리미엄 데일리',
-  editorComment: '발로스 V1은 PEBA 20%·EVA 80% 블렌드 폼을 쓴 뉴발란스의 데일리 트레이너입니다(같은 브랜드 레벨 v5·SC 트레이너 v3도 PEBA 블렌드 FuelCell을 씁니다). RunRepeat 실측 247g으로 1080 v15(실측 255g)보다 조금 가볍고, 37.8mm 힐 스택(실측)에서 나오는 쿠셔닝이 충분합니다. 힐 베벨+전족부 로커+토 스프링이 만드는 롤링감이 핵심이며, 이지런부터 템포런까지 자연스럽게 커버합니다. 25만 9천원으로 프리미엄 가격대이지만, PEBA 폼의 바운시한 느낌은 Fresh Foam X와 확실히 차별됩니다. 다만 빠른 페이스에서는 폼이 너무 부드러워 안정감이 부족합니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 72.8mm·랩 평균 73.2mm)입니다. RunRepeat는 일부 시장에 와이드 폭이 있다고 적었지만, 2026-10-23 확인 시 한국 공식몰에는 이 모델이 없어 와이드 재고는 판매처마다 확인해야 합니다. 259,000원 ÷ 500km = km당 약 518원입니다. 5만원 저렴한 대안으로 1080 V15(바운시함은 덜하지만 쿠션 동급), 비슷한 바운시 성격으로는 노바블라스트 5와 비교해보세요.',
-  tags: ['쿠션화', 'PEBA', '프리미엄', '바운시'],
-
+  description: 'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창 구조의 발로스 V1. RunRepeat 실험실 검체 247g·37.8/31.9mm. 한국 현재 정가 미확인.',
+  oneliner: 'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창 · 247g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 홈은 403, 정확 Balos 상품 원문도 확보하지 못해 현재 한국 가격·SKU·폭·선택 재고는 미확인입니다. 검색 미발견을 미출시·단종으로 단정하지 않습니다. RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다. 현행 RR 11.6HA는 구방식이며 AC는 미확인입니다. 고무 패치 국소 마모 0.5mm와 노출된 rubberized EVA 부위 6mm 초과 마모는 다른 위치 시험입니다. 이를 전체 밑창 내구 우수·500km 수명으로 묶지 않습니다. DOR 직접 403 이후 원문 캐시를 확인했습니다. Matt(남성 US10)은 큰 로커를 좋아했지만 혀의 맨살 마찰을 적었습니다. David(남성 US9.5)는 혀는 편했으나 내측으로 기우는 전환이 맞지 않았습니다. Andrea(여성 US9.5)는 길이·폭은 괜찮아도 낮은 앞코와 토스프링으로 발톱 불편·멍을 겪고 빠른 로커가 어색했습니다. 개인 무릎 불편을 모델의 일반 임상 위험으로 확대하지 않습니다. RR 내부 최광폭 95.3mm·엄지 72.8mm·높이 24.5mm입니다. 폭 여유와 낮은 발가락 위 공간을 함께 확인하세요. 글로벌 여성 Wide 메타는 한국 현재 와이드 검증이 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    'PEBA',
+    '프리미엄',
+    '바운시',
+  ],
   specs: {
     weight: 247,
     cushioning: 10,
     responsiveness: 7,
     stability: 5,
-    drop: 6,
-    durability: 500,
+    drop: 5.9,
   },
-
   biomechanics: {
-    stackHeight: { heel: 37.8, forefoot: 31.9 },
-    drop: 6,
+    stackHeight: {
+      heel: 37.8,
+      forefoot: 31.9,
+    },
+    drop: 5.9,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PEBA + EVA Blend (20/80)',
-    optimalPace: '4:30-6:30 min/km',
+    midsoleType: 'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['데일리 퍼포먼스 러너', '바운시한 쿠셔닝 선호', 'PEBA 폼 경험', '이지런~템포런 겸용'],
-    notRecommended: ['빠른 레이싱', '안정화 필요 러너', '미니멀 선호'],
+    recommended: [
+      '큰 로커의 전환이 본인 동작에 맞는지 확인하려는 러너',
+      '실제 규격·양말에서 혀 마찰과 발톱 위 공간을 살피려는 러너',
+    ],
+    notRecommended: [
+      '발가락 위가 닿거나 로커 전환이 불편한 경우',
+      '고무 패치 마모만으로 전체 밑창 수명을 판단하는 설명',
+    ],
   },
-
-  features: ['PEBA 20% + EVA 80% 블렌드 폼', '힐 베벨 + 전족부 로커 + 토 스프링', '247g 경량 (RunRepeat 실측)', '6mm 드롭', '해외 와이드 폭(국내 미확인)', '에너지 리턴 전족부 55.2% (RunRepeat 실측)', '충격흡수 힐 158 SA (RunRepeat 실측)'],
-
+  features: [
+    'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창',
+    '247g · 37.8/31.9mm · 드롭 5.9mm (RunRepeat 실험실 검체)',
+    '플레이트가 없는 구조입니다. RR의 PEBA/EVA 20/80 혼합 설명은 출처의 조성 주장이며 독립 화학 분석으로 검증된 비율은 아닙니다.',
+    'RR 내부 최광폭 95.3mm·엄지 72.8mm·높이 24.5mm입니다. 폭 여유와 낮은 발가락 위 공간을 함께 확인하세요. 글로벌 여성 Wide 메타는 한국 현재 와이드 검증이 아닙니다.',
+  ],
   priceAnalysis: {
-    msrp: 259000,
-    costPerKm: 518,
     valueRating: 6,
     priceTier: 'premium',
-    alternatives: ['new-balance-1080-v15', 'asics-novablast-5', 'hoka-mach-6'],
+    alternatives: [
+      'new-balance-1080-v15',
+      'asics-novablast-5',
+      'hoka-mach-6',
+    ],
   },
-
   detailedSpecs: {
-    weight: '247g (RunRepeat 실측, US 9) / 브랜드 표기 남성 261g·여성 207g',
-    stackHeight: '힐 37.8mm / 포어풋 31.9mm (RunRepeat 실측) / 브랜드 표기 38.5/32.5mm',
-    drop: '5.9mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'PEBA 20% + EVA 80% 블렌드',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '엔지니어드 메쉬',
-    width: '표준 — 토박스 72.8mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 0.4mm 좁음), 최대폭 95.3mm(평균 95.2mm). 랩 본문 "The big toe area feels slightly restrictive on paper, measuring just 72.8 mm", "New Balance provides a Wide size option in select markets". 폭 옵션: 기존 DB 표준(D)·와이드(2E) (2026-10-23 한국 공식몰 재확인: 모델 미등재 — 해외 폭 옵션만 확인)',
-    durability: '500km',
-    price: '₩259,000',
-    costPerKm: '약 ₩518/km (500km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '247g (RunRepeat 실험실 검체). RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다.',
+    stackHeight: '37.8/31.9mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '5.9mm (RunRepeat 실험실 검체). RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다.',
+    midsole: 'Fresh Foam X 혼합 폼 · 큰 로커 · 부분 고무 밑창. 폼 경도 11.6 HA (구방식), AC 미확인. 힐/전족부 SA 158/129·에너지 리턴 55.1/55.2%. 현행 RR 11.6HA는 구방식이며 AC는 미확인입니다. 고무 패치 국소 마모 0.5mm와 노출된 rubberized EVA 부위 6mm 초과 마모는 다른 위치 시험입니다. 이를 전체 밑창 내구 우수·500km 수명으로 묶지 않습니다.',
+    plate: '플레이트가 없는 구조입니다. RR의 PEBA/EVA 20/80 혼합 설명은 출처의 조성 주장이며 독립 화학 분석으로 검증된 비율은 아닙니다.',
+    width: 'RR 내부 최광폭 95.3mm·엄지 부위 72.8mm·높이 24.5mm. RR 내부 최광폭 95.3mm·엄지 72.8mm·높이 24.5mm입니다. 폭 여유와 낮은 발가락 위 공간을 함께 확인하세요. 글로벌 여성 Wide 메타는 한국 현재 와이드 검증이 아닙니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 홈은 403, 정확 Balos 상품 원문도 확보하지 못해 현재 한국 가격·SKU·폭·선택 재고는 미확인입니다. 검색 미발견을 미출시·단종으로 단정하지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 82,
-      text: 'PEBA 폼을 데일리 트레이너에 담은 뉴발란스의 프리미엄 신발입니다. 247g(실측)으로 가볍고 바운시한 느낌이 Fresh Foam X와 확실히 다릅니다. 힐 37.8mm 스택(실측)에서 나오는 쿠셔닝이 충분하면서도, 힐 베벨과 로커가 만드는 롤링 전환이 매끄럽고 이지런부터 템포런까지 폭넓게 쓸 수 있습니다. 해외 일부 시장에 와이드 폭이 있으나 국내 재고는 판매처 확인이 필요합니다. 다만 25만 9천원이라는 가격이 부담이고, 빠른 페이스(4:00/km 이하)에서는 폼이 너무 말랑해 안정감이 떨어집니다. 1080 v15(20만 9천원)보다 5만원 비싸므로, 500km 내구성 기준 km당 약 518원으로 가성비가 뛰어나다고 보기는 어렵습니다. 무릎 보호 측면에서는 쿠셔닝이 충분하지만 안정성이 5/10으로 낮아 과내전 러너는 주의가 필요합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fresh-foam-x-balos',
+      text: 'RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다. 현행 RR 11.6HA는 구방식이며 AC는 미확인입니다. 고무 패치 국소 마모 0.5mm와 노출된 rubberized EVA 부위 6mm 초과 마모는 다른 위치 시험입니다. 이를 전체 밑창 내구 우수·500km 수명으로 묶지 않습니다.',
     },
     {
-        userType: '모델 선택 — 1080 계열 대비 바운스를 원할 때',
-        text: '같은 브랜드 1080 계열과 비교하면 성격이 바운스 쪽으로 확실히 기울어 있습니다. PEBA 폼이라 착지마다 튀어오르는 감각이 뚜렷하고, 247g(실측)으로 1080 v14(실측 285g)보다 40g가량 가볍습니다. 6mm 드롭에 로커를 얹어 전환도 매끄럽습니다. 다만 4:30/km 수준으로 페이스를 올리면 폼이 눌리며 물러지는 구간이 있어, 속도 훈련보다 편안한 페이스의 10km대 데일리에 맞습니다. PEBA 특성상 폼 꺼짐이 느려 주행거리를 쌓아도 쿠션 저하가 완만한 편입니다. 259,000원으로 데일리치고는 진입 가격이 높습니다.',
-      },
-    {
-        userType: '비용 관점 — 1080 v15와의 5만원 차이',
-        text: '입문 단계에서 이 모델을 고를지는 5만원 차이를 어떻게 보느냐에 달렸습니다. 259,000원·예상 수명 400~600km(추정) 기준 km당 약 430~650원으로 데일리치고 운용 비용이 높은 편이고, 같은 브랜드 1080 v15가 5만원 낮으면서 쿠션량은 비슷합니다. 이 모델의 차별점은 PEBA 블렌드 폼 특유의 탄력으로, 부드러우면서 튀어오르는 감각을 원한다면 값을 하는 쪽입니다. 힐 37.8mm 스택(실측)에 6mm 드롭, 247g(실측)으로 조깅에서 가볍게 느껴집니다. 예산이 빠듯하다면 1080 쪽이 합리적입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-balos-v1/',
+      text: 'DOR 직접 403 이후 원문 캐시를 확인했습니다. Matt(남성 US10)은 큰 로커를 좋아했지만 혀의 맨살 마찰을 적었습니다. David(남성 US9.5)는 혀는 편했으나 내측으로 기우는 전환이 맞지 않았습니다. Andrea(여성 US9.5)는 길이·폭은 괜찮아도 낮은 앞코와 토스프링으로 발톱 불편·멍을 겪고 빠른 로커가 어색했습니다. 개인 무릎 불편을 모델의 일반 임상 위험으로 확대하지 않습니다.',
+    },
   ],
-
-  similarShoes: ['new-balance-1080-v15', 'asics-novablast-5', 'hoka-mach-6', 'saucony-endorphin-azura'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YRknuuPs' }],
+  similarShoes: [
+    'new-balance-1080-v15',
+    'asics-novablast-5',
+    'hoka-mach-6',
+    'saucony-endorphin-azura',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YRknuuPs',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr_nb_home_failed',
+        url: 'https://www.nbkorea.com/',
+        note: 'web403; Balos한국상품/가격/폭확인불가.발로스/BALOS/MBALCB1/MBALCE1/WBALCB1/MBAL검색결과없음은미출시/단종증거아님.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/new-balance-fresh-foam-x-balos',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 247g·37.8/31.9mm·5.9mm. 현행 RR 11.6HA는 구방식이며 AC는 미확인입니다. 고무 패치 국소 마모 0.5mm와 노출된 rubberized EVA 부위 6mm 초과 마모는 다른 위치 시험입니다. 이를 전체 밑창 내구 우수·500km 수명으로 묶지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-balos-v1/',
+        note: 'RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

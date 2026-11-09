@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import { getAllPairs, getPairBySlug, getPairsForShoe, getPairsForCategory, hasComparisonData, PINNED_PAIRS, PINNED_SHOES } from '@/lib/pseo/pairs';
 import { shoes } from '@/lib/data/shoes';
+import { specRows } from '@/lib/pseo/pair-copy';
 
 /**
  * /vs 페어는 두 번(2026-08-10 39개, 08-21 9개) 조용히 404 가 됐다 — 신발을 추가하기만 해도
@@ -29,12 +30,14 @@ describe('pseo pairs', () => {
     }
   });
 
-  it('페어는 같은 카테고리의 비교 데이터가 있는 신발끼리만 묶인다', () => {
+  it('같은 카테고리끼리 묶고 신규 조합은 비교 데이터를 요구한다', () => {
     for (const p of pairs) {
       expect(p.a.category).toBe(p.category);
       expect(p.b.category).toBe(p.category);
-      expect(hasComparisonData(p.a)).toBe(true);
-      expect(hasComparisonData(p.b)).toBe(true);
+      if (!PINNED_PAIRS.includes(p.slug)) {
+        expect(hasComparisonData(p.a)).toBe(true);
+        expect(hasComparisonData(p.b)).toBe(true);
+      }
     }
   });
 
@@ -43,6 +46,18 @@ describe('pseo pairs', () => {
     expect(hasComparisonData({ ...shoe, biomechanics: undefined })).toBe(true);
     expect(hasComparisonData({ ...shoe, specs: undefined })).toBe(false);
     expect(getPairBySlug('nike-pegasus-plus-vs-nike-rival-fly-4')).toBeDefined();
+  });
+
+  it('사양 근거를 비운 일반 Pulsar의 고정 URL은 유지하고 수치는 미확인으로 표시한다', () => {
+    const pair = getPairBySlug('salomon-pulsar-vs-salomon-ultra-glide-4')!;
+    expect(pair).toBeDefined();
+    expect(pair.a.slug).toBe('salomon-pulsar');
+    expect(pair.a.specs).toBeUndefined();
+    expect(pair.a.biomechanics).toBeUndefined();
+    const rows = specRows(pair.a, pair.b);
+    for (const label of ['무게', '드롭', '힐 스택', '전족부 스택']) {
+      expect(rows.find((r) => r.label === label)?.a, label).toBe('-');
+    }
   });
 
   it('getPairBySlug 는 목록과 같은 객체를 돌려준다', () => {

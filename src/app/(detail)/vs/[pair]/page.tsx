@@ -159,7 +159,7 @@ export default async function ComparePairPage({ params }: PageProps) {
           {a.brand} {a.name} vs {b.brand} {b.name}
         </h1>
         <p className="text-secondary leading-relaxed">
-          같은 {category} 카테고리의 두 모델을 RunRepeat 랩 데이터와 한국 러너 적합성 기준으로 직접 비교했습니다.
+          같은 {category} 카테고리의 두 모델에서 확인한 공시·실험실 수치와 외부 착화 의견을 비교합니다. 미확인 항목은 비워 두었습니다.
           무게, 스택, 드롭, 토박스, 가성비까지 항목별 비교 (에디터 평가 포함)를 한눈에 확인하세요.
         </p>
       </header>

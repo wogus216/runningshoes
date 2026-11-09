@@ -3,104 +3,40 @@ import { MAJOR_DEADLINES, md } from '../major-deadlines';
 
 export const posts_2026_06: BlogPost[] = [
   {
-    id: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
-    slug: 'salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026',
-    title: '살로몬 트레일 3종 비교 | 펄사 vs 울트라 글라이드 4 vs S/LAB 펄사 4 — 근교·울트라·레이싱 뭘 신지',
-    description: '한국 트레일 1위 브랜드 살로몬의 핵심 3종 — 펄사(21만, 올라운드 데일리), 울트라 글라이드 4(23만, 맥스쿠션 울트라), S/LAB 펄사 4(34만, 엘리트 기술 레이서). 같은 살로몬이지만 용도·쿠션·발볼·가격이 완전히 갈립니다. 근교 트레일을 빠르게 즐길지, 50km+ 울트라를 푹신하게 갈지, VK·스카이러닝을 레이싱할지 — 내 트레일에 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-30',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['살로몬', '살로몬 펄사', '울트라 글라이드 4', 'S/LAB 펄사', '트레일 러닝화', '트레일화 비교'],
+    id: "salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026",
+    slug: "salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026",
+    title: "살로몬 트레일 3종 비교 — 펄사 확인 공백, 울트라 글라이드4·S/LAB4의 실제 선택점",
+    description: "일반 펄사의 미확인 스펙을 비웠습니다. UG4의 Quicklace·Wide 표기 상충, S/LAB4의 카본 없는 구조와 밀착 핏을 확인한 원문 범위에서 비교합니다.",
+    thumbnail: "/images/shoes/salomon/ultraglide4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-30",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "일반 펄사",
+      "울트라 글라이드4",
+      "S/LAB 펄사4",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>같은 살로몬 트레일이지만 셋은 <strong>용도가 완전히 다릅니다</strong> — <a href="/shoes/salomon-pulsar">펄사</a>는 근교 트레일·도로 겸용 <strong>올라운드 데일리</strong>(21만), <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>는 50~100km <strong>맥스쿠션 울트라</strong>(23만), <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a>는 VK·스카이러닝용 <strong>엘리트 기술 레이서</strong>(34만)</li>
-    <li>핵심 갈림 — <strong>쿠션</strong>은 울트라 글라이드 4(9/10), <strong>경량</strong>은 S/LAB 펄사 4(247g), <strong>가성비·만능</strong>은 펄사. <strong>발볼 넓은 한국 러너는 와이드 옵션이 있는 울트라 글라이드 4</strong>가 사실상 유일한 선택입니다(펄사·S/LAB은 와이드 없음)</li>
-    <li><strong>근교 트레일·입문~중급 → 펄사</strong>, <strong>울트라 장거리·발 편함 → 울트라 글라이드 4</strong>, <strong>빠르고 험한 기술 레이스 → S/LAB 펄사 4</strong>입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">살로몬은 한국 트레일 1위 브랜드</p>
-    <p>트레일 러닝을 시작하면 가장 먼저 듣는 이름이 <strong>살로몬</strong>입니다. Contagrip 아웃솔의 그립과 quickLACE·SensiFit의 발 잠금이 험지에서 검증됐죠. 다만 라인업이 헷갈립니다 — "펄사? 울트라 글라이드? S/LAB?" 이름만 봐선 뭐가 뭔지 모르겠죠. 결론부터 말하면 이 셋은 <strong>"근교 데일리 / 울트라 컴포트 / 기술 레이싱"</strong>으로 역할이 명확히 나뉩니다. 한국 산악 트레일(북한산·관악산처럼 암반·급경사가 많은) 기준으로 어떤 게 내게 맞는지 정리합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>펄사</th><th>울트라 글라이드 4</th><th>S/LAB 펄사 4</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td><strong>210,000원</strong></td><td>230,000원</td><td>340,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>290g</td><td>295g</td><td><strong>247g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td>29 / 23mm</td><td><strong>39 / 31mm</strong></td><td>33 / 26mm</td></tr>
-    <tr><td>드롭</td><td>6mm</td><td>8mm</td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>Opti FOAM Evo</td><td>OptiFoam + RelieveSphere</td><td>Energy Foam+ 듀얼</td></tr>
-    <tr><td>쿠션 / 반응</td><td>6 / 7</td><td><strong>9</strong> / 6</td><td>7 / 7</td></tr>
-    <tr><td>러그(아웃솔)</td><td>4mm</td><td>3.9mm</td><td>3mm</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁음 · <strong>없음</strong></td><td>좁음 · <strong>와이드 O</strong></td><td>표준(74mm) · 없음</td></tr>
-    <tr><td>내구성 / km당</td><td>500km / 약 420원</td><td>450km / 약 511원</td><td>350km / 약 971원</td></tr>
-    <tr><td>주력 거리</td><td>하프~40km</td><td>50~100km</td><td>20~80km 기술</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택은 전문 리뷰(BITR·RTR) 실측, 가격은 살로몬 코리아 공식 정가. 세 모델 모두 카본 플레이트는 없습니다(폼·구조 추진).</small></p>
-
-<h2>핵심 차이 3가지</h2>
-<h3>① 용도 — 거리와 지형이 다르다</h3>
-<p><strong>펄사</strong>는 단종된 센스 라이드의 후속으로, <strong>근교 트레일을 빠르게 즐기고 도로까지 겸용</strong>하는 만능 데일리입니다. 29mm 스택에 6mm 드롭으로 경쾌해 업템포 트레일 훈련에 맞죠. <strong>울트라 글라이드 4</strong>는 정반대로 <strong>50~100km 울트라를 푹신하게</strong> 가는 컴포트화고, <strong>S/LAB 펄사 4</strong>는 <strong>VK·스카이러닝처럼 빠르고 험한 기술 코스</strong>를 레이싱하는 엘리트용입니다. "어떤 트레일을, 얼마나 멀리"가 먼저 정해져야 답이 나옵니다.</p>
-
-<h3>② 쿠션 vs 스피드 — 정반대의 두 극단</h3>
-<p>울트라 글라이드 4는 <strong>41mm 스택 + RelieveSphere 충격분산</strong>으로 "바위 위가 평지보다 편하다"는 평이 나올 만큼 쿠션이 강합니다(쿠션 9/10). 대신 에너지 리턴이 낮아(48~52%) 빠른 페이스엔 둔하죠. 반대로 S/LAB 펄사 4는 <strong>247g 초경량 + Energy Foam+ 듀얼 폼</strong>로 발놀림이 빠르고 급경사 제어가 정밀합니다. 펄사는 그 중간에서 쿠션과 반응의 균형을 잡습니다. <strong>"편하게 오래"면 울트라 글라이드, "빠르고 가볍게"면 S/LAB</strong>입니다.</p>
-
-<h3>③ 발볼·가격 — 한국 러너에겐 발볼이 결정적</h3>
-<p>살로몬은 전통적으로 <strong>발볼이 좁기로</strong> 유명합니다. 펄사는 전족부가 좁고 낮은데 <strong>와이드 옵션이 없어</strong> 발볼 넓은 한국 러너에겐 불편할 수 있고, S/LAB 펄사 4는 토박스가 74mm로 전작보다 넓어졌지만 역시 와이드는 없습니다. <strong>울트라 글라이드 4만 와이드 옵션(한국 공식몰)이 있어</strong>, 발볼이 넓다면 사실상 이 모델이 답입니다. 가격은 펄사(21만) → 울트라 글라이드(23만) → S/LAB(34만) 순으로, S/LAB은 350km 내구성에 km당 약 971원이라 <strong>레이스 전용 운용</strong>이 전제입니다.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 정리</p>
-    <p><strong>펄사 = 근교 트레일·도로 겸용 가성비 올라운더</strong>(트레일 입문~중급의 첫 한 켤레). <strong>울트라 글라이드 4 = 맥스쿠션 울트라 컴포트</strong>(50km+ 장거리, 발볼 넓어도 와이드로 OK). <strong>S/LAB 펄사 4 = 빠르고 험한 기술 레이스용 엘리트 경량</strong>(VK·스카이러닝, 고가). 세 모델 모두 카본은 없지만 살로몬 특유의 그립·발 잠금은 공통입니다.</p>
-  </div>
-</div>
-
-<h2>누가 어느 쪽?</h2>
-<table>
-  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
-  <tbody>
-    <tr><td>트레일 입문~중급 · 근교 위주 · 도로도 함께 뛴다</td><td><strong>펄사</strong></td></tr>
-    <tr><td>50~100km 울트라 · 발 편함이 최우선</td><td><strong>울트라 글라이드 4</strong></td></tr>
-    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>울트라 글라이드 4</strong> (펄사·S/LAB은 와이드 없음)</td></tr>
-    <tr><td>VK·스카이러닝·기술 코스 레이싱 · 경량 우선</td><td><strong>S/LAB 펄사 4</strong></td></tr>
-    <tr><td>가성비 · 한 켤레로 두루</td><td><strong>펄사</strong> (21만, 500km)</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 관점 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 트레일 입문인데 셋 중 뭘 사야 하나요?</p>
-  <p class="faq-a">A. <strong>펄사</strong>입니다. 근교 트레일과 도로를 겸할 수 있고, 21만원으로 가장 합리적이며, 290g 경량이라 부담이 적습니다. 울트라 글라이드는 입문자에게 과한 쿠션·거리용이고, S/LAB은 엘리트 레이스 전용이라 입문용이 아닙니다. 트레일이 처음이라면 <a href="/blog/trail-running-appeal-beginner-guide-2026">트레일 러닝 입문 가이드</a>도 함께 보세요.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 살로몬 신어도 되나요?</p>
-  <p class="faq-a">A. 살로몬은 전반적으로 좁습니다. 발볼이 넓다면 <strong>와이드 옵션이 있는 울트라 글라이드 4</strong>가 사실상 유일한 선택입니다. 펄사와 S/LAB은 와이드가 없어, 발볼 넓은 러너는 장거리에서 새끼발가락 눌림이 올 수 있습니다.</p>
-  <p class="faq-q">Q. 북한산·관악산 같은 암반 코스엔 어떤 게 좋나요?</p>
-  <p class="faq-a">A. 펄사는 록플레이트가 없어 날카로운 암반에서 발바닥 보호가 약합니다. <strong>암반 충격이 걱정되면 RelieveSphere로 충격을 분산하는 울트라 글라이드 4</strong>, 빠른 기술 주행이면 Active Chassis로 제어가 좋은 <strong>S/LAB 펄사 4</strong>가 낫습니다. 단 셋 다 젖은 바위·진흙에서는 그립에 한계가 있으니 우천 시 주의하세요.</p>
-  <p class="faq-q">Q. 살로몬 말고 다른 트레일화 대안은?</p>
-  <p class="faq-a">A. 만능 그립이면 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>, 카본 트레일 레이서면 <a href="/shoes/hoka-tecton-x-3">호카 테크톤 X 3</a>, 빠른 울트라면 <a href="/shoes/adidas-terrex-agravic-speed-ultra">아디다스 테렉스 아그라빅 스피드 울트라</a>가 대표 대안입니다. 한국 산악 기준 트레일화 전체 순위는 <a href="/blog/2026-best-trail-running-shoes">2026 트레일 러닝화 TOP 7</a>에서 정리했습니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>각 모델 전체 스펙·구매 링크는 <a href="/shoes/salomon-pulsar">펄사</a> · <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a> · <a href="/shoes/salomon-s-lab-pulsar-4">S/LAB 펄사 4</a> 상세에서 확인하세요. 트레일화를 더 넓게 비교하려면 <a href="/best/trail">트레일 베스트</a>와 <a href="/blog/2026-best-trail-running-shoes">트레일 러닝화 TOP 7</a>, 대회를 찾는다면 <a href="/blog/korea-trail-skyrace-guide-2026">한국 트레일·스카이레이스 가이드</a>를 보세요. 내 발·목적 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 살로몬 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 무게·스택 등은 전문 리뷰(Believe in the Run·Road Trail Run) 실측 기준이며, 일부 모델은 RunRepeat 정량 랩이 미게시된 신모델로 공식·전문 리뷰를 종합했습니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>일반 펄사와 S/LAB 펄사4는 별개 제품입니다. 정확 일반 펄사의 한국 원문과 랩을 확보하지 못해 기존 290g·29/23mm·6mm를 비웠습니다. 이를 S/LAB 값으로 채우지 않습니다.</p><p>비교할 수 있는 차이는 UG4의 Quicklace 고정·로커와 S/LAB4의 밀착 입구·지면 감각입니다. 50~100km 대 20~80km 같은 고정 거리표나 ‘초보는 펄사’라는 결론은 근거를 확인하지 못했습니다.</p><figure><img src="/images/shoes/salomon/ultraglide4/side.webp" alt="울트라 글라이드4 — Quicklace 고정과 실제 폭 규격을 확인" loading="lazy"/><figcaption>울트라 글라이드4 — Quicklace 고정과 실제 폭 규격을 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>salomon-pulsar</td><td>미확인</td><td>미확인</td><td>미확인</td><td>미확인</td></tr><tr><td>salomon-ultra-glide-4</td><td>295g</td><td>38.6/31.1mm · 7.5mm</td><td>122/121</td><td>47.6/51.6%</td></tr><tr><td>salomon-s-lab-pulsar-4</td><td>247g</td><td>32.6/25.5mm · 7.1mm</td><td>133/112</td><td>47.7/57.6%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>와이드가 필요하면 상품 제목 다음을 확인</h2><p>UG4 Wide 상품은 한국 캐시에 존재하지만 제목의 Wide와 사양 행 Standard가 상충합니다. 실제 구매 규격·폭을 판매처에 대조해야 하며 표준형 내부 치수로 와이드의 너비를 계산할 수 없습니다.</p><p>S/LAB4의 글로벌 Wide 메타와 한국 Standard 캐시로 국내 와이드가 없다고 단정하지 않습니다. UG4가 넓은 발의 유일한 답이라는 설명, 한국 트레일 1위 브랜드·모두의 바위 접지 우위·거리별 편안함 보장은 제거했습니다.</p><h2>일반 펄사 — 핏과 주행에서 갈리는 지점</h2><p>정확 일반 Pulsar의 폼·플레이트·공시 사양은 미확인입니다. Pulsar Trail·Trail Pro2·S/LAB Pulsar4의 구조를 대입하지 않습니다.</p><p>정확 모델의 내부 치수·한국 폭 옵션은 미확인입니다. 실제 상품명·코드와 앞코 높이·길이·중족 고정을 확인하세요. 반 사이즈 다운을 일괄 권하지 않습니다.</p><p>정확 일반 Pulsar의 DOR 리뷰를 찾지 못했습니다. Trail Pro2·S/LAB Pulsar4의 개인 착화 의견을 가져오지 않습니다.</p><h2>일반 펄사 — 공시·한국 판매 확인 범위</h2><p>정확 일반 Pulsar의 무게·전체 스택·드롭·내부 폭·독립 랩 자료는 미확인입니다. 기존 290g·29/23mm·6mm를 검증된 값으로 반복하지 않습니다.</p><p>한국 L47887800·L49230100 검색 후보는 있었지만 상품 원문이 404여서 가격·상품코드·폭·재고를 확정하지 않았습니다. 검색 후보 210,000원을 확인된 한국 정가로 사용하지 않습니다.</p><p>500km 수명·40km 한계·Sense Ride의 단종 후계라는 기존 설명을 입증하지 못해 제거했습니다. 원문 미확인을 단종·미출시·전국 재고 없음으로 해석하지 않습니다.</p><h2>울트라 글라이드4 — 핏과 주행에서 갈리는 지점</h2><p>정확 4세대 RR 비교표는 플레이트가 없다고 명시합니다. relieveSPHERE 형상과 높은 사이드월이 임상 보호 효과를 증명하지 않습니다.</p><p>RR 내부 최광폭 94mm·엄지 71.4mm·높이 28.8mm입니다. Wide 상품 제목을 확인했지만 표준형 검체 치수로 와이드의 실제 너비를 계산하지 않습니다.</p><p>DOR David(남성 US9.5)는 낮은 볼륨의 밀착 중족과 좀 더 여유 있는 전족, 편한 Quicklace 고정을 적었습니다. 자신의 주행에서 과열은 없고 긴 주행 로커는 좋았으나 가파른 오르막의 뻣뻣한 전족과 미끄러운 바위의 작은 슬립을 느꼈습니다.</p><h2>울트라 글라이드4 — 공시·한국 판매 확인 범위</h2><p>RR 295g·38.6/31.1mm·7.5mm, DOR 소개 280g(남성 US9)/252g(여성 US7)·41/35mm·6mm와 실제 테스터 남성 US9.5를 구분합니다.</p><p>한국 남성 L49141200·여성 L49149200·Wide L49216200 캐시는 단일 가격 230,000원을 표시했습니다. 남성/와이드 285g·여성 255g은 기준 사이즈 미공시이며 41/35mm·6mm 공시입니다. Wide 제목과 Standard 사양 행이 상충해 실제 폭 규격은 미확인입니다. 가격의 MSRP 레이블·현재 가격·선택 재고도 미확인이고 재입고 알림창 목록을 재고로 쓰지 않습니다.</p><p>젖은 콘크리트 0.68과 미끄러운 바위 체감은 다른 표면입니다. DOR 러그 4.5mm와 RR 3.9mm, 개인 통기 체감과 BR53·건조47%도 나눕니다. 50~100km 적합 보장·통증 보호·450km 수명을 철회합니다.</p><h2>S/LAB 펄사4 — 핏과 주행에서 갈리는 지점</h2><p>RR은 카본과 록플레이트가 없다고 명시합니다. DOR의 얇은 보호 필름 설명을 카본으로 바꾸지 않습니다.</p><p>RR 내부 최광폭 94.9mm·엄지 74mm·높이 31mm입니다. DOR의 밀착 체감과 합쳐 모든 넓은 발에 적합하다고 판정하지 않습니다.</p><p>DOR 2025 여름 다모델 정리에서 David는 아주 밀착되는 입구와 착화 후 보통~좁은 핏, 단단하지만 반응성 있고 민첩한 주행을 적었습니다. 긴 주행에서는 본인에게 덜 편했습니다. 실제 착화 사이즈는 미확인이며 개별 전체 리뷰가 아닌 요약 글입니다.</p><h2>S/LAB 펄사4 — 공시·한국 판매 확인 범위</h2><p>RR 247g·32.6/25.5mm·7.1mm, DOR 소개 252g(남성 US9)·35/29mm·6mm, RR 재전재 브랜드 31/25mm·6mm는 서로 다른 자료입니다.</p><p>한국 L47770300 캐시는 단일 가격 340,000원·Standard·250g(기준 사이즈 미공시)·6mm를 표시했습니다. 명시적 MSRP·현재 가격·와이드는 미확인입니다. 225~295mm 목록은 재입고 알림창에 있어 현재 구매 가능 재고가 아닙니다. 뒷굽 높이 원문의 cm:34 단위 이상을 임의로 34mm나 340mm로 고치지 않습니다.</p><p>17.5HA는 구방식으로 AC는 미확인입니다. DOR의 반응성 체감과 RR 리턴 47.7/57.6%는 다른 종류의 근거입니다. DOR 4mm 러그와 RR 3mm도 구분합니다. 20~80km 처방·350km 수명·카본 트레일이라는 기존 설명을 철회합니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://salomon.co.kr/collections/sal_men_ftw_trailrunning" target="_blank" rel="noopener noreferrer">한국 남성 트레일 목록</a> — 목록 원문 확인. 정확 일반 Pulsar 상품 두 후보는 404로 미확인. 현행 전체 판매 부재를 뜻하지 않음.</li><li><a href="https://salomon.co.kr/products/l49141200" target="_blank" rel="noopener noreferrer">한국 공식 L49141200</a> — 캐시 last week; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://salomon.co.kr/products/l49149200" target="_blank" rel="noopener noreferrer">한국 공식 L49149200</a> — 캐시 2 weeks ago; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://salomon.co.kr/products/l49216200" target="_blank" rel="noopener noreferrer">한국 공식 L49216200</a> — 캐시 yesterday; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://runrepeat.com/salomon-ultra-glide-4" target="_blank" rel="noopener noreferrer">울트라 글라이드4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/salomon-ultra-glide-4-review-2026/" target="_blank" rel="noopener noreferrer">울트라 글라이드4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://salomon.co.kr/products/l47770300" target="_blank" rel="noopener noreferrer">한국 공식 L47770300</a> — 캐시 today; 단일 표시 가격은 명시적 MSRP 확인과 다름. 현재 선택 재고·가격 미확인.</li><li><a href="https://runrepeat.com/salomon-s-lab-pulsar-4" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-summer-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">S/LAB 펄사4 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "펄사 290g은 왜 없어졌나요?",
+        "answer": "정확 일반 Pulsar 원문을 확보하지 못했습니다. 다른 계열 수치를 대입하지 않고 미확인으로 비웠습니다."
+      },
+      {
+        "question": "UG4 와이드면 넓은 발에 맞나요?",
+        "answer": "Wide 제목은 확인했지만 사양 표기는 Standard로 상충합니다. 실제 규격의 폭·높이·고정을 확인해야 합니다."
+      },
+      {
+        "question": "S/LAB4가 카본인가요?",
+        "answer": "정확 RR 원문은 카본과 록플레이트가 없다고 명시합니다. 얇은 보호 필름 설명과 구분합니다."
+      }
+    ],
   },
   {
     id: 'running-shoe-size-conversion-chart-korea-2026',

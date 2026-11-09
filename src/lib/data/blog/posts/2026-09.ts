@@ -981,99 +981,38 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'adidas-adizero-adios-pro-5-release-2026',
-    slug: 'adidas-adizero-adios-pro-5-release-2026',
-    title:
-      '아디제로 아디오스 프로 5 공개 — "프로 5"가 아니라 "아디오스 프로 5"였다 | 공식 확인, 한국 출시는 아직',
-    description:
-      '아디다스가 아디제로 아디오스 프로 5를 공식 공개했습니다. 인스타에 돈 "아디제로 프로 5"라는 이름 때문에 별도 라인처럼 보였지만, 공식 페이지를 직접 열어보니 정체는 국내에도 이미 있는 아디오스 프로 4의 다음 세대였습니다. 호주 공식몰 기준 가격 $380, 카본이 들어간 신형 ENERGYRIM 구조까지 공식 소스로 확인했고, 무게·드롭 수치와 한국 출시는 아직 확인하지 못했습니다.',
-    thumbnail: '/images/blog/adidas-adizero-adios-pro-5-release-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-22',
-    category: 'news' as const,
-    readingTime: 4,
-    tags: ['아디다스', '아디제로', '아디오스 프로 5', '카본화', '슈퍼슈즈', '러닝화 출시'],
+    id: "adidas-adizero-adios-pro-5-release-2026",
+    slug: "adidas-adizero-adios-pro-5-release-2026",
+    title: "아디오스 프로5 업데이트 — ENERGYRIM·낮은 볼륨, 175g 공시와 190g 실측 구분",
+    description: "둘레형 카본 ENERGYRIM과 RR176g·드롭5.6mm를 확인했습니다. DOR 소개175g/US9과 Matt190g/US10, 한국 SKU 캐시·현재 판매 미확인을 나눕니다.",
+    thumbnail: "/images/shoes/adidas/adiospro5/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-22",
+    category: "news",
+    readingTime: 8,
+    tags: [
+      "아디오스 프로5",
+      "원문 대조",
+      "핏"
+    ],
     faqs: [
       {
-        question: '"아디제로 프로 5"와 "아디오스 프로 5"는 다른 신발인가요?',
-        answer:
-          '같은 신발입니다. 정식 제품명은 "ADIZERO ADIOS PRO 5"이고, 아디다스 공식 호주 온라인몰(adidas.com.au)에서 2026년 9월 22일에 직접 확인했습니다. 국내에 이미 출시된 아디제로 아디오스 프로 4의 다음 세대이며, 별도의 하위 라인이 아닙니다.',
+        "question": "전장 카본 플레이트인가요?",
+        "answer": "일반적인 전장 플레이트 대신 둘레형 카본 주입 ENERGYRIM입니다. 중앙 폼이 상당 부분 노출됩니다."
       },
       {
-        question: '한국에는 언제, 얼마에 나오나요?',
-        answer:
-          '2026년 9월 22일 기준 아디다스 코리아 공식몰(adidas.co.kr)과 미국몰(adidas.com) 모두 검색 결과가 없어, 한국 출시일과 국내 가격은 아직 확인되지 않습니다. 호주 공식몰 가격은 380호주달러이며, 프로모션 할인 대상에서 제외된다고 명시돼 있습니다.',
+        "question": "175g이 직접 잰 무게인가요?",
+        "answer": "DOR의 US9 소개값입니다. Matt의 실제 US10 검체는 190g이며 RR 검체는 176g입니다."
       },
       {
-        question: '아디오스 프로 4와 무엇이 달라졌나요?',
-        answer:
-          '공식 제품 페이지가 밝힌 변화는 두 가지입니다. 첫째, 카본이 함유된 <strong>ENERGYRIM</strong> 구조를 신설했다고 소개하며 "이 구조를 적용한 첫 슈퍼슈즈"라고 설명합니다 — 프로 4가 쓰던 5개의 개별 카본 Energy Rods 구조와는 다른 설계로 보입니다. 둘째, LIGHTSTRIKE PRO 미드솔을 "튜닝"했고 LIGHTTRAXION+Continental 아웃솔을 적용했다고 밝힙니다. 다만 무게·드롭·스택 높이의 정확한 수치는 공식 페이지에서 직접 확인하지 못했습니다.',
-      },
-      {
-        question: '기록 경신용 신발인가요?',
-        answer:
-          '공식 페이지는 "레이스 데이를 위한 최선의 선택"이라 소개하며, "서브2 공식 신발인 아디오스 프로 에보 3와 같은 기록 경신 기술로 제작됐다"고 밝히고 있습니다. 즉 에보 3보다 한 단계 아래지만 같은 계보의 레이스 전용 슈퍼슈즈입니다.',
-      },
+        "question": "한국 출시는 아직인가요?",
+        "answer": "정확 남녀 한국 상품 캐시는 확인했습니다. 현재 선택 재고·가격은 별도로 미확인입니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>정식 명칭은 <strong>"아디제로 아디오스 프로 5"</strong> — 인스타에 돌던 "아디제로 프로 5"는 별도 라인이 아니라 이 신발의 축약 표기였습니다</li>
-    <li>국내에도 이미 있는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>의 다음 세대이고, 카본이 들어간 신형 <strong>ENERGYRIM</strong> 구조를 처음 적용했다고 공식이 밝혔습니다</li>
-    <li>호주 공식몰 가격은 <strong>$380 AUD</strong>. 한국·미국 공식몰에는 2026년 9월 22일 기준 검색 결과가 없어 한국 출시일·가격은 아직 불명입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글이 근거로 삼은 것</p>
-    <p>아디다스 호주 공식 온라인몰(adidas.com.au)의 제품 페이지를 2026년 9월 22일 직접 열어 확인했습니다. 같은 시각 아디다스 코리아(adidas.co.kr)·미국몰(adidas.com)에서 "adizero pro 5"를 검색했으나 결과가 없었습니다. 무게·드롭·스택 높이의 정확한 수치는 확인 과정에서 페이지가 반복적으로 응답하지 않아 대조하지 못했고, 이 글에는 넣지 않았습니다.</p>
-  </div>
-</div>
-
-<h2>이름부터 정리 — "프로 5"가 아니라 "아디오스 프로 5"</h2>
-
-<p>인스타그램에 "아디다스 아디제로 프로5 모델이 오피셜 공개되었다"는 소식이 돌았습니다. 이 이름만 보면 국내에 이미 있는 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(29만 9천원, 카본 Energy Rods 5개)와는 다른 별도의 레이싱화 라인처럼 읽힙니다.</p>
-
-<p>공식 몰을 직접 열어 확인한 결과는 달랐습니다. 아디다스 호주 공식몰에서 판매 중인 제품의 정식 명칭은 <strong>"ADIZERO ADIOS PRO 5 RUNNING SHOES"</strong>입니다. 즉 이번 신발은 새 라인이 아니라, 국내에도 이미 출시돼 있는 <strong>아디오스 프로 4의 다음 세대</strong>입니다. "아디제로 프로 5"는 정식 명칭 중 "아디오스"를 뺀 축약 표기였던 셈입니다.</p>
-
-<h2>공식이 밝힌 것</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>공식 표기(adidas.com.au)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>가격</strong></td><td>$380 AUD (프로모션 할인 제외)</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>LIGHTSTRIKE PRO — "에너지 리턴과 경량 성능을 위해 튜닝"</td></tr>
-    <tr><td><strong>신설 구조</strong></td><td>카본 함유 ENERGYRIM — 공식이 "이 구조를 쓴 첫 슈퍼슈즈"라고 소개</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>LIGHTTRAXION + Continental™ 고무</td></tr>
-    <tr><td><strong>계보</strong></td><td>"서브2 공식 신발인 아디오스 프로 에보 3와 같은 기록 경신 기술로 제작"</td></tr>
-  </tbody>
-</table>
-
-<p>제품 소개 문구는 "디스트랙션 프리 어퍼, 폭발적인 언더풋 감각, 한층 가벼워진 패키지에 담긴 최신 ENERGYRIM 기술로 레이스 데이 최선의 선택"이라고 돼 있습니다. 페이지에는 "*아디오스 프로 4 대비, UK 사이즈 8.5 기준"이라는 각주가 붙어 있어 프로 4와의 정량 비교 수치가 존재하는 것은 분명하지만, 그 각주가 정확히 어떤 수치(무게인지 에너지 리턴인지)에 달려 있는지는 페이지 접속이 반복적으로 끊겨 확인하지 못했습니다.</p>
-
-<h2>프로 4와 무엇이 달라졌나 — 구조가 바뀌었습니다</h2>
-
-<p><a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>는 카본 <strong>Energy Rods 2.0</strong> 5개를 미드솔에 개별적으로 박아 넣는 구조였습니다(무게 200g, 힐 스택 37mm, 드롭 8mm, 반발력 10/10). 이번 프로 5는 이 개별 로드 구조 대신 <strong>ENERGYRIM</strong>이라는 카본 함유 단일 테두리 구조로 바뀌었다고 공식이 소개합니다. 로드 여러 개를 박는 방식에서 테두리 하나로 감싸는 방식으로, 설계 철학 자체가 달라진 것으로 보입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">아직 확인 못한 것</p>
-    <p>무게·드롭·스택 높이의 정확한 수치, 그리고 국내 발매 일정·가격은 2026년 9월 22일 기준 공식 소스로 확인하지 못했습니다. 인스타그램에 돌던 "175g", "에너지 리턴 +9%", "전작 대비 -25g" 같은 수치는 공식 페이지에서 직접 대조하지 못했으므로 이 글에는 신지 않았습니다. 확인되는 대로 갱신하겠습니다.</p>
-  </div>
-</div>
-
-<h2>지금 한국 러너에게 의미 있는 것</h2>
-
-<p>국내에서 지금 살 수 있는 것은 여전히 <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(29만 9천원)입니다. 프로 4는 토박스가 좁은 편(narrow)이라 발볼 넓은 러너에게는 선택이 어려웠는데, 프로 5의 핏이 이 부분을 개선했는지는 공식 소스로 아직 확인되지 않았습니다. 프로 5의 한국 출시일·가격이 나오기 전까지는, 가을 대회를 앞둔 러너라면 이미 검증된 프로 4나 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 같은 대안을 그대로 검토하는 편이 현실적입니다.</p>
-
-<p><small>출처: 아디다스 공식 호주 온라인몰(adidas.com.au) 아디제로 아디오스 프로 5 제품 페이지, 2026년 9월 22일 확인. 같은 날 아디다스 코리아(adidas.co.kr)·미국몰(adidas.com) 검색 결과 없음도 함께 확인했습니다. 인스타그램 계정 @runner_iffu의 게시물이 이 소식의 최초 트리거였으나, 본문의 사실 관계는 전부 공식 몰 대조를 거쳤습니다. 무게·드롭 등 실측 수치와 한국 출시 정보는 확인되는 대로 갱신할 예정입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>이전 ENERGYRODS 대신 바닥 둘레를 보강하는 카본 주입 ENERGYRIM을 씁니다. 중앙 폼은 상당 부분 열려 있어 일반적인 전장 카본 플레이트라고 부르면 구조를 잘못 전달할 수 있습니다.</p><p>빠르게 좁아지는 낮은 볼륨의 어퍼와 내피 마찰은 구매 전 확인할 부분입니다. 가벼운 검체와 높은 리턴만 보고 누구에게나 장거리 편안함을 보장하지 않습니다.</p><figure><img src="/images/shoes/adidas/adiospro5/side.webp" alt="아디오스 프로5 — 둘레 ENERGYRIM과 낮은 볼륨 어퍼" loading="lazy"/><figcaption>아디오스 프로5 — 둘레 ENERGYRIM과 낮은 볼륨 어퍼</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>adidas-adios-pro-5</td><td>176g</td><td>35.6/30mm · 5.6mm</td><td>149/126</td><td>75.1/80.4%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>공개 예고를 현재 확인 범위로 바꿉니다</h2><p>한국 남성 KI8294·여성 KI8293 상품 캐시를 확인했으므로 한국 상품이 전혀 없다는 과거 안내는 갱신했습니다. 다만 가격 레이블·실제 선택 재고와 현재 구매 가능 여부는 별개로 미확인입니다.</p><p>DOR 소개의 남성 US9 175g은 Matt가 US10으로 직접 잰 190g과 다릅니다. 기존 소개값을 ‘리뷰 실측’으로 부르던 설명을 바로잡았습니다. RR176g 역시 정책상 검체 정보와 개별 실제 라벨의 확인 수준을 구분합니다.</p><h2>아디오스 프로5 — 핏과 주행에서 갈리는 지점</h2><p>카본 주입 ENERGYRIM은 바닥 둘레를 보강합니다. ENERGYRODS나 일반적인 전장 플레이트가 아니며 중앙 폼이 상당 부분 노출됩니다.</p><p>RR 내부 최광폭 93.4mm·엄지 69.1mm·높이 24.9mm입니다. 낮은 볼륨과 빠르게 좁아지는 앞코를 실제 규격·양말에서 확인하세요.</p><p>DOR 원문은 직접 403 이후 검색에 노출된 원문 캐시로 확인했습니다. David(남성 US9.5)는 낮은 볼륨과 삭라이너 마찰·물집, 긴 리듬에 좋은 전환과 짧은 가속에서 덜한 스냅을 적었습니다. Matt(남성 US10)은 약간 늘어나는 낮은 어퍼와 좋은 구름을 느꼈지만 힐 내피 마찰, 낮은 드롭·내측 중족 편향은 불편했습니다. 개인 의견을 고정 페이스 처방으로 바꾸지 않습니다.</p><h2>아디오스 프로5 — 공시·한국 판매 확인 범위</h2><p>RR 176g·35.6/30mm·5.6mm와 브랜드 재전재 177/150g(기준 사이즈 미확인)·39/35mm·4mm를 나눕니다. DOR 소개 175g은 남성 US9 기준이며, Matt의 실제 남성 US10(UK9.5/JP28) 검체는 190g입니다. 소개값을 실측으로 잘못 부르지 않습니다.</p><p>한국 남성 KI8294·여성 KI8293 공식 캐시는 339,000원을 표시했습니다. 별도 MSRP 레이블·현재 가격·폭·선택 재고는 미확인입니다. 캐시의 할인쿠폰 제외 문구와 현재 결제 조건은 구분합니다.</p><p>RR 주층 A-TPU 30.3AC와 위층 PEBA 18.2AC는 다른 층입니다. 저온 경도 변화 22%를 한국 겨울 기록·부상 효과로 바꾸지 않습니다. 9% 광고 개선율·모든 사이즈 2g 감량·공통 수명을 이번 확인으로 입증하지 못했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.adidas.co.kr/%EC%95%84%EB%94%94%EC%A0%9C%EB%A1%9C-%EC%95%84%EB%94%94%EC%98%A4%EC%8A%A4-%ED%94%84%EB%A1%9C-5-%EB%9F%AC%EB%8B%9D%ED%99%94/KI8294.html" target="_blank" rel="noopener noreferrer">kr_pro5_m</a> — web official original cache opened; 정확SKU별성별·표시가격·쿠폰조건.사이즈AAA로재고미확인.</li><li><a href="https://www.adidas.co.kr/%EC%95%84%EB%94%94%EC%A0%9C%EB%A1%9C-%EC%95%84%EB%94%94%EC%98%A4%EC%8A%A4-%ED%94%84%EB%A1%9C-5-%EB%9F%AC%EB%8B%9D%ED%99%94/KI8293.html" target="_blank" rel="noopener noreferrer">kr_pro5_w</a> — web official original cache opened; 정확SKU별성별·표시가격·쿠폰조건.사이즈AAA로재고미확인.</li><li><a href="https://runrepeat.com/adidas-adizero-adios-pro-5" target="_blank" rel="noopener noreferrer">아디오스 프로5 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/adidas-adizero-adios-pro-5-review/" target="_blank" rel="noopener noreferrer">아디오스 프로5 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'nike-structure-26-review',
@@ -4342,73 +4281,38 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'new-balance-balos-v1-review',
-    slug: 'new-balance-balos-v1-review',
-    title: '뉴발란스 발로스 V1 후기 | 뉴발란스 데일리 중 유일한 PEBA — 247g(실측) 바운시 쿠션',
-    description:
-      '발로스 V1은 뉴발란스에서 레이싱화 외 유일하게 PEBA 폼(20%)을 사용한 데일리 트레이너입니다. 247g(실측)으로 1080 v15(255g)보다 가볍고, 힐 베벨+로커+토 스프링이 만드는 롤링감이 이지런부터 템포런까지 커버합니다. 259,000원 프리미엄 가격대지만, 2E 와이드 옵션이 있어 발볼 넓은 한국 러너도 편합니다.',
-    thumbnail: '/images/blog/new-balance-balos-v1-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['뉴발란스 발로스V1', 'PEBA 폼', '프리미엄 데일리', '바운시 러닝화'],
+    id: "new-balance-balos-v1-review",
+    slug: "new-balance-balos-v1-review",
+    title: "발로스 V1 리뷰 — 큰 로커가 내 발에도 편할까? 앞코 높이·혀 마찰부터 확인",
+    description: "247g 검체와 큰 로커의 장단점을 리뷰어별로 비교합니다. 11.6HA 구방식·부위별 마모를 구분하고 한국 가격·2E·500km 보장을 정정했습니다.",
+    thumbnail: "/images/shoes/newbalance/balosv1/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "발로스 V1",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>뉴발란스에서 레이싱화 외 유일하게 PEBA 폼(20%)을 쓴 데일리</strong>입니다 — Fresh Foam X와 확실히 다른 바운시한 감각</li>
-    <li><strong>247g(실측) — <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g, 실측)보다 가볍습니다.</strong> 37.8mm(실측) 힐 스택의 쿠셔닝도 충분합니다</li>
-    <li><strong>259,000원 — 1080 v15보다 5만원 비쌉니다.</strong> 빠른 페이스(4:00/km 이하)에서는 폼이 물러지는 느낌이 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>PEBA 특유의 바운시한 감각을 원하는 데일리 퍼포먼스 러너</strong>에게 맞습니다. 가성비만 본다면 5만원 저렴한 <a href="/shoes/new-balance-1080-v15">1080 v15</a>가 합리적입니다.</p>
-  </div>
-</div>
-
-<h2>뉴발란스 데일리 중 유일한 PEBA</h2>
-<p>발로스 V1은 뉴발란스에서 레이싱화 외 유일하게 PEBA 폼(20%)을 사용한 데일리 트레이너입니다. 247g(실측)으로 가볍고 바운시한 느낌이 Fresh Foam X와 확실히 다릅니다. 힐 베벨+전족부 로커+토 스프링이 만드는 롤링감이 핵심이며, 이지런부터 템포런까지 자연스럽게 커버합니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준이지만 <strong>2E 와이드 옵션이 있어</strong> 발볼 넓은 러너도 편하게 착용할 수 있습니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 good입니다</li>
-  <li><strong>"과내전이 있는데 괜찮을까요?"</strong> — 안정성이 5/10으로 낮은 편이니 주의가 필요합니다</li>
-</ul>
-
-<h2>1080 계열과 비교 — 바운스를 원할 때</h2>
-<p>같은 브랜드 1080 계열과 비교하면 성격이 바운스 쪽으로 확실히 기울어 있습니다. PEBA 폼이라 착지마다 튀어오르는 감각이 뚜렷하고, 247g(실측)으로 <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)보다 가볍습니다. 다만 4:30/km 수준으로 페이스를 올리면 폼이 눌리며 물러지는 구간이 있어, 속도 훈련보다 편안한 페이스의 10km대 데일리에 맞습니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>259,000원, 500km 기준 km당 약 518원입니다. 1080 v15가 5만원 낮으면서 쿠션량은 비슷하니, 예산이 빠듯하다면 그쪽이 합리적입니다. 이 모델의 차별점은 PEBA 블렌드 폼 특유의 탄력이라, 부드러우면서 튀어오르는 감각을 원한다면 값을 하는 쪽입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>바운시한 쿠셔닝을 선호하는 데일리 퍼포먼스 러너</strong></li>
-  <li><strong>이지런~템포런을 겸용하려는 러너</strong></li>
-  <li>반대로 <strong>빠른 레이싱이나 안정화가 필요한 러너</strong>는 다른 모델이 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>발로스 V1은 뉴발란스가 PEBA로 무엇을 할 수 있는지 보여주는 신발입니다. 1080과의 5만원 차이를 감수할 만큼 바운시한 감각 자체가 목적이라면 만족스럽고, 순수 가성비를 우선한다면 1080 v15로도 충분합니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>발로스의 핵심은 플레이트 없이 큰 로커와 부드러운 혼합 폼으로 만드는 전환입니다. 이 전환을 좋아한 리뷰어와 동작이 맞지 않았던 리뷰어가 함께 있어, ‘바운스가 좋다’만으로 고를 신발은 아닙니다.</p><p>앞코의 폭은 여유 있게 느껴져도 높이가 낮아 발톱 위가 닿을 수 있습니다. 구매 전에는 쿠션 점수보다 발가락 위 공간과 로커가 발을 넘겨 주는 시점이 맞는지 먼저 확인할 만합니다.</p><figure><img src="/images/shoes/newbalance/balosv1/side.webp" alt="발로스 V1 — 큰 로커와 낮은 앞코를 함께 확인" loading="lazy"/><figcaption>발로스 V1 — 큰 로커와 낮은 앞코를 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>RR 무게</th><th>RR 힐/전족 스택 · 드롭</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>new-balance-balos-v1</td><td>247g</td><td>37.8/31.9mm · 5.9mm</td><td>158/129</td><td>55.1/55.2%</td></tr></tbody></table></div><p>무게·스택·드롭은 RunRepeat 검체의 값입니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>같은 로커에 의견이 나뉘는 이유</h2><p>Matt는 부드럽게 넘어가는 큰 로커를 좋아했지만 Andrea는 미드풋 착지에서 너무 이르게 밀어내는 느낌을 적었습니다. David 역시 내측으로 기우는 전환이 자신에게 맞지 않았습니다. 본인의 동작에 맞는지 확인할 필요가 있다는 근거이지 어느 착지법의 일괄 금지는 아닙니다.</p><p>뉴발란스 데일리 중 유일한 PEBA라는 범위 넓은 단정, 4:00/km 또는 4:30/km 한계, 1080보다 무조건 편하다는 주장은 이번 정확 원문으로 입증하지 못했습니다. 한국 259,000원·2E 판매·500km 수명에 기대어 계산한 가성비도 제거했습니다.</p><h2>발로스 V1 — 핏과 주행에서 갈리는 지점</h2><p>플레이트가 없는 구조입니다. RR의 PEBA/EVA 20/80 혼합 설명은 출처의 조성 주장이며 독립 화학 분석으로 검증된 비율은 아닙니다.</p><p>RR 내부 최광폭 95.3mm·엄지 72.8mm·높이 24.5mm입니다. 폭 여유와 낮은 발가락 위 공간을 함께 확인하세요. 글로벌 여성 Wide 메타는 한국 현재 와이드 검증이 아닙니다.</p><p>DOR 직접 403 이후 원문 캐시를 확인했습니다. Matt(남성 US10)은 큰 로커를 좋아했지만 혀의 맨살 마찰을 적었습니다. David(남성 US9.5)는 혀는 편했으나 내측으로 기우는 전환이 맞지 않았습니다. Andrea(여성 US9.5)는 길이·폭은 괜찮아도 낮은 앞코와 토스프링으로 발톱 불편·멍을 겪고 빠른 로커가 어색했습니다. 개인 무릎 불편을 모델의 일반 임상 위험으로 확대하지 않습니다.</p><h2>발로스 V1 — 공시·한국 판매 확인 범위</h2><p>RR 실측 247g·37.8/31.9mm·5.9mm와 DOR 소개 261g(남성 US9)/207g(여성 US8)·38.5/32.5mm·6mm를 구분합니다.</p><p>한국 공식 홈은 403, 정확 Balos 상품 원문도 확보하지 못해 현재 한국 가격·SKU·폭·선택 재고는 미확인입니다. 검색 미발견을 미출시·단종으로 단정하지 않습니다.</p><p>현행 RR 11.6HA는 구방식이며 AC는 미확인입니다. 고무 패치 국소 마모 0.5mm와 노출된 rubberized EVA 부위 6mm 초과 마모는 다른 위치 시험입니다. 이를 전체 밑창 내구 우수·500km 수명으로 묶지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">kr_nb_home_failed</a> — web403; Balos한국상품/가격/폭확인불가.발로스/BALOS/MBALCB1/MBALCE1/WBALCB1/MBAL검색결과없음은미출시/단종증거아님.</li><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-balos" target="_blank" rel="noopener noreferrer">발로스 V1 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-balos-v1/" target="_blank" rel="noopener noreferrer">발로스 V1 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '1080 v15 대신 이걸 사야 할 이유가 있나요?',
-        answer:
-          'PEBA 폼 특유의 바운시한 착지감을 원한다면 값을 합니다. 247g(실측)으로 1080 v15(255g)보다 가볍기도 합니다. 순수 가성비와 쿠션량만 본다면 1080 v15가 5만원 저렴합니다.',
+        "question": "넓은 발이면 2E를 사면 되나요?",
+        "answer": "현재 한국 정확 상품과 와이드 SKU를 확인하지 못했습니다. 기존 2E 보장은 철회하고 실제 규격의 높이·길이·고정을 확인하도록 수정했습니다."
       },
       {
-        question: '빠르게 뛰어도 되나요?',
-        answer:
-          '4:00/km 이하로 페이스를 올리면 폼이 너무 부드러워 안정감이 부족할 수 있습니다. 이지런부터 템포런까지가 적정 범위입니다.',
+        "question": "11.6은 AC인가요?",
+        "answer": "아닙니다. 정확 원문은 구방식 11.6HA이며 AC로 환산하지 않습니다."
       },
+      {
+        "question": "밑창 내구성이 좋은가요?",
+        "answer": "고무 패치 마모와 노출된 rubberized EVA 마모가 다릅니다. 국소 시험으로 전체 주행 수명을 보장하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "hoka-arahi-8-review",
