@@ -650,101 +650,76 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'hoka-bondi-9-vs-asics-nimbus-28',
     slug: 'hoka-bondi-9-vs-asics-nimbus-28',
-    title: '호카 본디 9 vs 아식스 님버스 28 비교 | 맥스쿠션 양대산맥 — 안정감이냐 가성비냐',
-    description: '무릎 보호 맥스쿠션의 양대산맥, 호카 본디 9(22.9만)와 아식스 젤 님버스 28(19.9만). 둘 다 부상 보호 최상위지만 성격이 갈립니다. 본디는 123mm 초광폭 플랫폼의 안정감, 님버스는 25g 가벼운 무게·발볼 여유·가성비. 체중·발볼·예산으로 내게 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/hoka-bondi-9-vs-asics-nimbus-28.webp',
+    title: '본디9 vs 님버스28 — 무게·앞쪽 공간·드롭과 구매 조건',
+    description: '본디9와 님버스28의 실험실 수치·착화 의견·한국 구매 조건을 다시 대조했습니다. 본디 현재 정가·폭 미확인과 님버스 원문 충돌을 밝히고 임상 보호·수명 순위를 제거했습니다.',
+    thumbnail: '/images/shoes/hoka/bondi9/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-26',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['본디 9', '님버스 28', '맥스 쿠션', '무릎 보호 러닝화', '쿠션화 비교', '러닝화 비교'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 부상 보호(족저근막염·아킬레스·무릎·신스플린트) 전부 최상위</strong>인 맥스쿠션의 정점입니다. 무릎이 걱정되는 러너라면 어느 쪽을 골라도 실패는 없습니다</li>
-    <li><strong>본디 9</strong>는 <strong>123.2mm 초광폭 플랫폼의 안정감</strong>이 무기(체중 있는 러너·최대 지지력). <strong>님버스 28</strong>은 <strong>25g 가벼운 278g + 발볼 여유 + 3만원 저렴 + 긴 내구성(650km)</strong>으로 균형이 좋습니다</li>
-    <li><strong>발볼이 넓거나 가성비·가벼움이 중요하면 님버스 28</strong>, <strong>체중이 있고 최대 안정감을 원하면 본디 9</strong>입니다. 대부분의 한국 러너에겐 무게·발볼·가격에서 님버스가 더 무난합니다</li>
-  </ul>
-</div>
+    category: 'review',
+    readingTime: 6,
+    tags: [
+      '본디 9',
+      '님버스 28',
+      '맥스 쿠션',
+      '무릎 보호 러닝화',
+      '쿠션화 비교',
+      '러닝화 비교',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">고르기 전에 확인할 차이</span><ul>
+<li><strong>실험실 무게는 본디303g,님버스278g입니다.</strong>25g 차이가 모든 러너에게 같은 체감이나 결과를 주지는 않습니다.</li>
+<li><strong>엄지 부위 너비는 두 검체 모두72.5mm입니다.</strong> 최광폭과 높이는 달라 ‘외부 바닥이 넓으면 내부도 넓다’고 보지 않습니다.</li>
+<li><strong>본디 한국 현재 정가·폭은 미확인입니다.</strong>229,000원·와이드 판매를 새로 확인한 사실처럼 쓰거나 님버스와 가격 순위를 정하지 않습니다.</li></ul></div>
+<table><thead><tr><th>항목</th><th>본디9</th><th>님버스28 기본형</th></tr></thead><tbody>
+<tr><th>한국 확인 정가</th><td>현재 공식 신발 상품 미확인</td><td>199,000원</td></tr>
+<tr><th>실험실 무게</th><td>303g</td><td>278g</td></tr>
+<tr><th>힐/전족부 스택</th><td>41.3/32.2mm</td><td>43.0/34.9mm (결과표)</td></tr>
+<tr><th>실험실 드롭</th><td>9.1mm</td><td>8.1mm</td></tr>
+<tr><th>폼</th><td>Supercritical EVA</td><td>FF BLAST PLUS + 힐PureGEL</td></tr>
+<tr><th>힐/전족부 SA</th><td>146/133</td><td>137/133</td></tr>
+<tr><th>힐/전족부 에너지 리턴</th><td>60.2/60.3%</td><td>44.2/45.9%</td></tr>
+<tr><th>내부 최광폭 / 엄지 너비 / 높이</th><td>94.1 /72.5 /29.6mm</td><td>97.6 /72.5 /22.7mm</td></tr>
+</tbody></table>
+<p>표의 무게·스택·드롭·SA·에너지 리턴·내부 공간은11/9 확인한RunRepeat 남성US9 공시 기준입니다. 한국 와이드·여성 상품의 검체라는 뜻은 아닙니다. 공시와 실측, 내부 최광폭·엄지 너비·높이·외부 바닥 폭을 구분했습니다. 수명km·최적 페이스·모델별 임상 효과는 확인하지 못해 비용·치료 순위를 만들지 않았습니다.</p>
 
-<div class="callout info">
-  <span class="callout-icon">🛡️</span>
-  <div class="callout-body">
-    <p class="callout-title">"무릎 보호 쿠션화" 검색의 끝판왕 둘</p>
-    <p>"무릎이 걱정되는데 푹신한 신발"을 찾으면 결국 만나는 두 이름이 <a href="/shoes/hoka-bondi-9">호카 본디 9</a>와 <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>입니다. 둘 다 40mm대 두꺼운 스택에 부상 보호가 전부 최상위라, <strong>"어느 게 더 좋냐"가 아니라 "내 몸·발에 어느 게 맞냐"가 진짜 질문</strong>입니다. 본디 단독 후기는 <a href="/blog/hoka-bondi-9-review">여기</a>서 더 깊게 다뤘으니, 이 글은 둘을 나란히 놓고 갈림길을 정리합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>본디 9</th><th>님버스 28</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td>229,000원</td><td><strong>199,000원</strong></td></tr>
-    <tr><td>무게(US 9)</td><td>303g</td><td><strong>278g</strong></td></tr>
-    <tr><td>힐 / 전족 스택</td><td><strong>41</strong> / 32mm</td><td>39.5 / <strong>34.3mm</strong></td></tr>
-    <tr><td>드롭</td><td>9mm</td><td>8mm</td></tr>
-    <tr><td>미드솔</td><td>Supercritical EVA</td><td>FF BLAST PLUS</td></tr>
-    <tr><td>안정성</td><td>8 (123mm 초광폭)</td><td>8</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편 · 와이드 O</td><td>표준 · <strong>와이드·X-와이드 O</strong></td></tr>
-    <tr><td>내구성</td><td>550km</td><td><strong>650km</strong></td></tr>
-    <tr><td>부상 보호</td><td>4종 excellent</td><td>4종 excellent</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택은 RunRepeat 실측 기준, 가격은 각 브랜드 코리아 공식 정가.</small></p>
-
-<h2>핵심 차이 3가지</h2>
-<h3>① 무게·가격 — 님버스가 더 가볍고 싸다</h3>
-<p>님버스 28은 전작 대비 20g 빠진 <strong>278g</strong>으로, 본디(303g)보다 25g 가볍습니다. 맥스쿠션화에서 25g은 장거리 후반에 체감되는 차이죠. 게다가 정가도 <strong>3만원 저렴(19.9만 vs 22.9만)</strong>하고 내구성은 100km 더 깁니다(650 vs 550km). 순수하게 "가성비 + 가벼움"만 보면 님버스가 앞섭니다.</p>
-
-<h3>② 안정감 — 본디의 초광폭 플랫폼</h3>
-<p>그렇다고 본디가 밀리는 건 아닙니다. 본디의 무기는 <strong>123.2mm 초광폭 플랫폼</strong>입니다. 바닥 면적이 넓어 "푹신한데 흔들리지 않는" 안정감이 맥스쿠션 중에서도 정점이라, <strong>체중이 있는 러너나 발이 안쪽으로 무너지는 느낌이 싫은 러너</strong>에게 본디의 받쳐주는 느낌이 더 안심됩니다. 무게(303g)는 그 안정감의 대가입니다.</p>
-
-<h3>③ 발볼 — 둘 다 와이드 있지만 기본 핏이 다르다</h3>
-<p>본디는 전통적으로 <strong>토박스가 좁은 편</strong>(실측 72.5mm)이라 표준으로 사면 발볼 넓은 러너는 와이드가 사실상 필수입니다. 반면 님버스 28은 기본 핏이 좀 더 여유롭고 <strong>와이드·X-와이드 옵션도 풍부</strong>합니다. 발볼이 고민이라면 님버스가 선택이 더 편합니다. 자세한 건 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 정리</p>
-    <p><strong>님버스 28 = 가볍고·저렴하고·발볼 여유 있는 균형형 맥스쿠션</strong>(대부분의 러너에게 무난). <strong>본디 9 = 초광폭 플랫폼으로 안정감을 극한까지 끌어올린 특화형</strong>(체중 있거나 최대 지지력을 원하는 러너). 둘 다 무릎 보호는 동급 최상위입니다.</p>
-  </div>
-</div>
-
-<h2>누가 어느 쪽?</h2>
-<table>
-  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
-  <tbody>
-    <tr><td>가볍고 경쾌한 맥스쿠션 · 가성비 · 긴 내구성</td><td><strong>님버스 28</strong></td></tr>
-    <tr><td>발볼이 넓다 (기본 핏 여유 + 와이드 풍부)</td><td><strong>님버스 28</strong></td></tr>
-    <tr><td>체중이 있어 최대 지지력·안정감이 필요</td><td><strong>본디 9</strong></td></tr>
-    <tr><td>"흔들림 없이 받쳐주는" 느낌을 가장 중시</td><td><strong>본디 9</strong></td></tr>
-    <tr><td>리커버리런·LSD 데일리 올라운더</td><td>둘 다 (취향)</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 무릎 보호만 보면 어느 쪽이 나은가요?</p>
-  <p class="faq-a">A. 둘 다 족저근막염·아킬레스·무릎·신스플린트 보호가 모두 최상위라 사실상 동급입니다. 굳이 나누면 본디는 초광폭 플랫폼의 안정감, 님버스는 더 두꺼운 전족 스택(34.3mm 대 32mm)의 충격 흡수가 강점입니다. 맥스쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
-  <p class="faq-q">Q. 발볼 넓은데 본디 신으려면?</p>
-  <p class="faq-a">A. 본디는 반드시 와이드 옵션을 선택하세요. 표준은 72.5mm로 좁아 장거리에서 눌릴 수 있습니다. 같은 값이면 기본 핏이 여유로운 님버스 28이 발볼 스트레스가 덜합니다.</p>
-  <p class="faq-q">Q. 초보 첫 신발로는 어느 쪽?</p>
-  <p class="faq-a">A. 둘 다 느린 페이스(5~7분/km)에서 편한 입문~데일리 쿠션화입니다. 예산·가벼움을 보면 님버스 28(19.9만)이, 최대 안정감을 보면 본디 9가 맞습니다. 단 둘 다 무거운 편이라 빠른 훈련용은 아닙니다.</p>
-  <p class="faq-q">Q. 다른 맥스쿠션 대안은?</p>
-  <p class="faq-a">A. <a href="/shoes/new-balance-1080-v14">뉴발란스 1080 V14</a>(더 경쾌한 롤링), <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a>(부드러운 쿠션)도 같은 카테고리 대안입니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>각 신발 전체 스펙·구매 링크는 <a href="/shoes/hoka-bondi-9">본디 9 상세</a> · <a href="/shoes/asics-gel-nimbus-28">님버스 28 상세</a>에서 확인하세요. 본디를 더 깊게 보려면 <a href="/blog/hoka-bondi-9-review">본디 9 단독 후기</a>, 두 신발을 항목별로 나란히 보려면 <a href="/compare">비교 도구</a>를 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 각 브랜드 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 스펙은 RunRepeat 실측 및 브랜드 공식 기준입니다.</small></p>
+<p>두 실험실 페이지의 측정법 버전은 본디2.2·님버스2.5로 다릅니다. 같은 기관의 수치라는 이유만으로 모든 시험 조건이 완전히 같다고 가정하지 않습니다.</p>
+<h2>본디9: 로커와 힐 카운터를 직접 확인</h2>
+<p>DOR은 쉬운 러닝·걷기·서 있기에서의 구조적인 쿠션감과 넓은 베이스를 평가했지만, 부피와 빠른 러닝에서의 한계를 언급했습니다. Matt은 힐 카운터 자극에 민감했고 David은 같은 문제를 느끼지 않았습니다. 넓은 바닥에서의 지지 느낌과 뒤꿈치의 실제 편안함을 함께 확인하세요.</p>
+<p>DOR 소개는43/38mm·5mm, RR 실측은41.3/32.2mm·9.1mm로 차이가 있습니다. 이 값을 평균내거나 ‘공식9mm’로 통일하지 않았습니다. 한국 공시를 직접 확인한 사양으로도 바꾸지 않습니다.</p>
+<h2>님버스28: 최광폭과 발가락 위 공간은 다릅니다</h2>
+<p>실험실 최광폭은 본디보다3.5mm 넓지만 엄지 부위 너비는 같습니다. 엄지 높이는22.7mm로 본디29.6mm와 차이가 큽니다. 이 검체 수치는 발 모양에 따라 어떤 압박을 확인해야 하는지 알려주는 참고이지 한국 와이드와 자신의 발이 맞는다는 증명은 아닙니다.</p>
+<p>DOR은 끈 압박과 전작보다 단단하고 뻣뻣한 전환을 주의점으로 들었습니다. ‘님버스는 최대한 푹신하고 발볼 걱정이 없다’고 일괄 추천하지 않았습니다. RR 전족 스택도 결과표34.9mm와 본문34.3mm가 달라 표 기준을 구분했습니다.</p>
+<h2>한국 구매 조건을 비교할 때</h2>
+<p>님버스 기본형은199,000원이며 남성 일반·2E,여성 일반·D 상품을 확인했습니다.4E는 현재SKU·재고를 확정하지 못했습니다. 본디9는 한국 공식 연결 스토어에서 현재 신발 상품의 정가·폭을 확인하지 못해 미확인으로 남겼습니다. 이것을 한국 미출시·단종·모델 전체 품절로 해석하지 않습니다.</p>
+<p>본디 구매를 검토한다면 판매처의 정품·성별·사이즈·폭·반품 조건과 실제 가격부터 확인하세요. 서로 같은 조건의 구매가를 확보하기 전에는 ‘3만원 차이’나 ‘님버스가 가성비1위’라고 계산하지 않았습니다.</p>
+<h2>통증과 체중으로 제품을 자동 배정하지 않습니다</h2>
+<p>체중이 있으면 본디, 무릎 통증이면 둘 다 실패 없다는 기존 추천은 제거했습니다. 확인한 자료는 실험실 검체와 개별 착화 의견이며, 모델별 임상 효과나 모든 체중에서의 보호를 입증하지 않습니다. 공통 수명km도 확인하지 못해 더 오래 가는 제품 순위를 만들지 않았습니다.</p>
+<p><a href="/shoes/hoka-bondi-9">본디9의 확인 범위</a> · <a href="/shoes/asics-gel-nimbus-28">님버스28의 확인 범위</a> · <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스쿠션을 비교할 때 볼 조건</a></p>
+<h2>확인한 원문과 적용 범위</h2>
+<ul>
+<li><a href="https://runrepeat.com/hoka-bondi-9" target="_blank" rel="noopener noreferrer">RunRepeat 본디9</a> — 측정법2.2·실험실 수치와 검체 조건.</li>
+<li><a href="https://www.doctorsofrunning.com/hoka-bondi-9-review-2025/" target="_blank" rel="noopener noreferrer">Doctors of Running 본디9</a> — 다수 리뷰어 착화 차이. 소개43/38mm·드롭5mm는 한국 공식 실측이 아님.</li>
+<li><a href="https://www.asics.co.kr/p/AKR_112630225-102" target="_blank" rel="noopener noreferrer">아식스 한국 님버스28</a> — 기본형 남성1011C127.102 정가199,000원·281g(측정 사이즈 미공시). 한국2E·여성D 확인 상품은 상세 페이지 출처에 구분.</li>
+<li><a href="https://runrepeat.com/asics-gel-nimbus-28" target="_blank" rel="noopener noreferrer">RunRepeat 님버스28</a> — 11/2 갱신·측정법2.5. 결과표43/34.9mm·8.1mm; 전족 본문34.3mm와 충돌을 공개.</li>
+<li><a href="https://www.doctorsofrunning.com/asics-gel-nimbus-28-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 님버스28</a> — Matt US10의 개별 착화 의견. 공시 소개 남성280g(US9)·43.5/35.5mm·8mm.</li>
+<li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 스토어 연결</a> — 연결 네이버 스토어에서 본디9 신발의 현재 상품 조건은 미확인</li>
+</ul>
+<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
+    faqs: [
+      {
+        question: '본디9는 한국 정가229,000원인가요?',
+        answer: '이번 한국 공식 연결 스토어 조사에서 현재 신발 상품의 정가·SKU를 확인하지 못했습니다. 기존 숫자를 새로 확인한 가격으로 쓰지 않습니다.',
+      },
+      {
+        question: '발볼이 넓으면 님버스28이 무조건 낫나요?',
+        answer: '해외 실험실 검체의 최광폭·엄지 너비·높이는 서로 다른 정보입니다. 한국 판매 폭과 실제 양발의 압박을 확인해야 합니다.',
+      },
+      {
+        question: '어느 쪽이 부상을 덜 일으키나요?',
+        answer: '확인한 자료에서 모델별 임상 예방 효과를 비교할 수 없었습니다. 실험실SA나 플랫폼 폭에서 부상률 순위를 만들지 않습니다.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'nike-pegasus-premium-vs-vomero-18',
@@ -2000,89 +1975,69 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'plantar-fasciitis-running-shoes-2026',
     slug: 'plantar-fasciitis-running-shoes-2026',
-    title: '러너의 족저근막염 — 아침 첫발이 아프다면 | 아치 서포트·안정화 러닝화로 줄이는 법 (카야노 33·본디 9·아드레날린 GTS)',
-    description:
-      '족저근막염은 러너가 가장 많이 호소하는 만성 통증입니다. 아침에 일어나 첫발을 디딜 때 뒤꿈치~아치가 찌릿하다면 의심해야 하죠. 평발·과회내가 가장 큰 원인이라, 러닝화에서는 강한 아치 서포트와 안정화, 단단한 힐 카운터, 드롭 8mm 이상이 핵심입니다. 카야노 33·본디 9·아드레날린 GTS 25 등 족저근막염 등급이 좋은 모델과, 발바닥 스트레칭 같은 예방법까지 정리했습니다.',
-    thumbnail: '/images/blog/plantar-fasciitis-running-shoes-2026.webp',
+    title: '러닝 후 뒤꿈치·아치 통증 — 족저근막염 증상 기록과 착화 기준',
+    description: '아침 첫발 통증의 패턴, 진료가 필요한 상황과 신발·인솔의 확인 항목을 정리합니다. 족저근막염 제품 순위와 드롭8mm 일괄 처방을 제거하고2023년 진료지침의 범위를 밝힙니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
     author: '산초 에디터',
     publishedAt: '2026-06-22',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['족저근막염', '부상 예방', '아치 서포트', '평발', '안정화 러닝화', '러닝 부상'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>족저근막염은 <strong>발바닥 아치를 받치는 근막에 생기는 염증</strong> — 아침 첫발의 찌릿한 통증이 대표 신호입니다</li>
-    <li>러닝화 핵심은 <strong>강한 아치 서포트 + 단단한 힐 카운터 + 드롭 8mm 이상</strong>. 평발·과회내라면 안정화가 1순위입니다</li>
-    <li>신발만으론 부족 — <strong>발바닥·종아리 스트레칭과 점진적 거리 증가</strong>가 근본 예방이고, <a href="/blog/plantar-fasciitis-insoles-guide-2026">아치 서포트 인솔</a>로 보완할 수 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">족저근막염이란</p>
-    <p>족저근막은 발뒤꿈치뼈에서 발가락까지 <strong>발바닥 아치를 받치는 두꺼운 섬유띠</strong>입니다. 여기에 미세 손상과 염증이 쌓이면 통증이 생기죠. 가장 특징적인 신호는 <strong>아침에 일어나 첫발을 디딜 때, 또는 오래 앉았다 일어설 때 뒤꿈치~아치가 찌릿한 것</strong>입니다. 러너에게 흔하지만 <strong>한번 오면 오래 가는</strong> 부상이라, 예방과 초기 관리가 중요합니다.</p>
-  </div>
-</div>
-
-<h2>왜 생길까 — 주요 원인</h2>
+    category: 'guide',
+    readingTime: 6,
+    tags: [
+      '족저근막염',
+      '부상 예방',
+      '아치 서포트',
+      '평발',
+      '안정화 러닝화',
+      '러닝 부상',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">아침 첫발이 아플 때</span><ul>
+<li><strong>뒤꿈치·아치 통증과 쉬었다 걷기 시작할 때의 변화를 기록하세요.</strong> 이 패턴만으로 족저근막염을 확진하지 않습니다.</li>
+<li><strong>인솔과 신발은 치료 계획의 일부로 비교합니다.</strong> 강한 아치 지지·안정화·드롭8mm 이상을 모든 러너의 정답으로 정하지 않습니다.</li>
+<li><strong>반복되거나 생활을 막는 통증은 상담하세요.</strong> 저림·감각 저하가 있거나 당뇨와 발 통증이 함께 있으면 별도의 평가가 필요합니다.</li></ul></div>
+<h2>어떤 증상을 기록하면 좋을까</h2>
+<p>NHS는 족저근막염에서 뒤꿈치·아치 주변 발바닥 통증, 자거나 쉰 뒤 첫걸음에서 심해지는 통증, 오래 서거나 걷고 달린 뒤 악화되는 패턴을 안내합니다. 하지만 발바닥 통증의 원인이 모두 같은 것은 아닙니다.2023년 진료지침도 병력과 신체검사를 함께 사용하고, 양상이 맞지 않거나 호전되지 않으면 다른 원인을 평가하도록 합니다.</p>
+<table><thead><tr><th>적어둘 항목</th><th>예시</th></tr></thead><tbody>
+<tr><td>아픈 위치</td><td>뒤꿈치 안쪽·가운데·아치, 한쪽인지 양쪽인지</td></tr>
+<tr><td>시간·활동</td><td>아침 첫발, 오래 앉았다 일어날 때, 오래 서 있거나 달린 뒤</td></tr>
+<tr><td>최근 변화</td><td>달리기 외에 출퇴근 걷기·서 있는 시간·새 운동·신발 변화도 포함</td></tr>
+<tr><td>동반 증상</td><td>저림·감각 변화·붓기, 일상 보행을 막는 정도</td></tr>
+</tbody></table>
+<h2>아치 서포트와 인솔을 어디까지 믿을까</h2>
+<p>NHS의 일반 자기관리 안내에는 뒤꿈치 쿠션과 아치 지지가 있는 신발, 인솔·힐패드 등이 포함됩니다. 이것이 ‘가장 강한 아치 지지가 최선’이나 ‘평발이면 특정 안정화1순위’라는 의미는 아닙니다. 아치 모양만으로 통증 원인과 적합 모델을 정하지 않습니다.</p>
+<p>JOSPT2023 지침은 인솔을 단독 단기 치료로 사용하지 않도록 권고하고, 다른 치료와 함께 사용할 수 있다고 구분합니다. 기존 인솔을 사용 중이라면 신발 안에서 발등·뒤꿈치 공간이 남는지, 특정 부위를 과하게 누르지 않는지 함께 확인할 항목입니다. 이 글에서는 기성·맞춤 인솔 중 하나가 모두에게 우월하다고 순위를 정하지 않았습니다.</p>
+<h2>진료지침이 다루는 관리</h2>
+<p>지침은 족저근막과 종아리 스트레칭, 발·발목 근육의 저항운동 등을 다룹니다. 개인의 상태에 따라 운동 선택과 부하가 달라지므로 횟수·강도를 일괄 처방하지 않았습니다. 아침 첫발 통증이 꾸준한 경우의 야간 보조기 역시 전문가가 상태에 맞게 검토할 중재이지, 이 글을 보고 모두가 바로 구매할 제품으로 제시하지 않습니다.</p>
+<h2>매장에서 확인할 네 가지</h2>
+<ul><li>평소 양말·사용 중인 인솔을 포함해 양발을 신어보고 앞발·아치·뒤꿈치의 압박을 확인합니다.</li>
+<li>아치가 세게 받쳐진다는 느낌을 치료 효과로 해석하지 않습니다.</li>
+<li>드롭8mm나 특정 힐 카운터 강도를 합격선으로 정하지 않습니다. 익숙한 신발과의 차이와 개인 반응을 함께 봅니다.</li>
+<li>판매 성별·길이·폭을 확인합니다. 다른 사이즈의 실험실 너비는 자신의 발과 맞는지 보장하지 않습니다.</li></ul>
+<h2>언제 상담해야 하나요?</h2>
+<p>NHS는 통증이 심해 일상을 막거나 악화·재발하는 경우, 자기관리 후2주가 지나도 나아지지 않는 경우, 저림·감각 저하, 당뇨와 발 통증이 함께 있는 경우의 진료를 안내합니다. ‘무조건2주 기다리라’는 뜻이 아닙니다. 증상이 심하거나 걱정된다면 더 일찍 평가받으세요.</p>
+<p>기존 글의 제품별 족저근막염 추천표, 보편적인500~700km 교체 기준,10% 훈련 증가 처방은 제거했습니다. 신발 교체만으로 예방·치료 결과를 보장하지 않습니다. <a href="/best/plantar-fasciitis">족저근막 통증과 신발 선택의 근거 안내</a>도 함께 볼 수 있습니다.</p>
+<h2>확인한 원문과 적용 범위</h2>
 <ul>
-  <li><strong>평발·과회내(오버프로네이션)</strong> — 가장 큰 위험 요인. 착지할 때 아치가 안쪽으로 무너지면서 근막이 과도하게 늘어납니다</li>
-  <li><strong>갑작스러운 거리·강도 증가</strong> — 근막이 적응할 시간 없이 부하가 몰림</li>
-  <li><strong>종아리·아킬레스 긴장</strong> — 종아리가 뻣뻣하면 발바닥 근막까지 당겨져 부담이 커집니다(<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>과 자주 같이 옵니다)</li>
-  <li><strong>쿠션·지지력이 죽은 낡은 신발</strong> — 미드솔이 주저앉으면 충격이 그대로 발바닥으로</li>
-  <li><strong>딱딱한 바닥 + 미니멀·플랫 신발</strong> — 아치를 받쳐주지 못해 근막 부하가 큼</li>
+<li><a href="https://www.orthopt.org/uploads/content_files/files/koc_et_al_2023_heel_pain_plantar_fasciitis_revision_2023.pdf" target="_blank" rel="noopener noreferrer">JOSPT 족저근막염 진료지침2023</a> — CPG2 권고 요약·CPG7 진단/위험요인. 스트레칭·저항운동·인솔의 적용 범위를 구분했습니다.</li>
+<li><a href="https://www.nhs.uk/conditions/plantar-fasciitis/" target="_blank" rel="noopener noreferrer">NHS 족저근막염</a> — 증상·자기관리·진료가 필요한 상황.2025년2월 검토 자료.</li>
+<li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
 </ul>
-
-<h2>러닝화로 줄이기 — '아치 서포트'가 핵심</h2>
-<p>아킬레스건염이 <strong>드롭</strong>이 핵심이라면, 족저근막염은 <strong>아치를 받쳐 근막이 과도하게 늘어나는 걸 막는 것</strong>이 핵심입니다. 세 가지를 보세요.</p>
-<ol>
-  <li><strong>아치 서포트·안정화</strong> — 평발·과회내라면 가이드레일·3D 가이던스 같은 안정 시스템이 아치 무너짐을 잡아줍니다</li>
-  <li><strong>단단한 힐 카운터 + 비틀림 강성</strong> — 뒤꿈치와 중족부가 안정되어야 근막이 덜 휩니다</li>
-  <li><strong>드롭 8mm 이상</strong> — 종아리·근막의 긴장을 덜어줍니다(낮은 드롭은 부담이 큼)</li>
-</ol>
-<table>
-  <thead><tr><th>모델</th><th>유형</th><th>족저근막염에 좋은 이유</th></tr></thead>
-  <tbody>
-    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>안정화</td><td>평발+족저근막 1순위. FF Blast 쿠션 + 안정 시스템으로 아치 무너짐 억제</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>안정화</td><td>가이드레일이 발·무릎 정렬을 잡아주는 대표 안정화</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 웨이브 인스파이어 21</a></td><td>안정화</td><td>Wave 플레이트의 단단한 지지 + 와이드 옵션</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>맥스쿠션</td><td>중립발용. 넓고 단단한 베이스 + 맥스쿠션으로 충격 분산</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td>쿠션(드롭 14mm)</td><td>높은 드롭 + 맥스쿠션이라 종아리·근막에 너그러움</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">족저근막염일 때 피해야 할 신발</p>
-    <ul>
-      <li><strong>드롭 0~4mm 미니멀·플랫화</strong> — 아치 지지가 약하고 근막 신장이 큽니다</li>
-      <li><strong>비틀면 쉽게 휘는 너무 유연한 신발</strong> — 중족부를 못 잡아줍니다</li>
-      <li><strong>쿠션이 죽은 낡은 신발</strong> — 보통 500~700km면 미드솔 반발이 떨어지니 교체하세요</li>
-    </ul>
-  </div>
-</div>
-
-<h2>평발이면 더 주의 — 안정화 우선</h2>
-<p>평발·과회내는 족저근막염의 <strong>가장 큰 위험 인자</strong>입니다. 아치가 받쳐지지 않으면 근막이 매 착지마다 과하게 늘어나기 때문이죠. 본인이 과회내인지 모르겠다면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">과회내·평발 자가진단</a>으로 먼저 확인하고, 안정화 위주로 고르세요. 평발 전용 추천은 <a href="/best/flat-feet">평발 러닝화</a>에서 비교할 수 있습니다.</p>
-
-<h2>신발보다 중요한 예방 — 스트레칭과 점진성</h2>
-<ul>
-  <li><strong>발바닥 마사지·스트레칭</strong> — 마사지볼이나 얼린 물병을 발바닥 아래 굴려 근막을 풀어줍니다. 아침 첫발을 딛기 전이 특히 효과적</li>
-  <li><strong>종아리 스트레칭</strong> — 종아리가 부드러워야 근막 당김이 줄어듭니다(벽 밀기 스트레칭 하루 2~3회)</li>
-  <li><strong>발 내재근 강화</strong> — 타월 컬(수건 발가락으로 끌어당기기), 발가락 집기로 아치 근육을 키우기</li>
-  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
-  <li><strong>워밍업</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 발·종아리를 데우기</li>
-</ul>
-
-<h2>마무리</h2>
-<p>족저근막염은 "신발 하나"로 막을 순 없지만, <strong>아치를 받쳐주는 안정화·쿠션 신발 + 발바닥·종아리 스트레칭 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 평발이라면 안정화가 우선이고, 이미 아침 첫발 통증이 있다면 무리하지 말고 스트레칭·휴식으로 관리하세요. 더 많은 모델은 <a href="/best/plantar-fasciitis">족저근막염 러닝화 추천</a>에서 비교할 수 있습니다. 무릎이 함께 아프다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화</a>, 정강이가 욱신거리면 <a href="/blog/shin-splints-running-shoes-2026">정강이 통증(신 스플린트) 가이드</a>도 참고하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
+<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
+    faqs: [
+      {
+        question: '족저근막염이면 안정화가 1순위인가요?',
+        answer: '아치 모양이나 쿠션 점수만으로 특정 안정화의 치료 효과를 순위로 정할 근거는 확인하지 못했습니다. 통증의 진단과 실제 착화 반응을 함께 평가하세요.',
+      },
+      {
+        question: '인솔만 바꾸면 되나요?',
+        answer: '2023년 진료지침은 인솔을 단독 단기 치료로 사용하지 않도록 권고하며, 다른 중재와 함께 고려할 수 있다고 설명합니다.',
+      },
+      {
+        question: '아침 첫발이 아프면 확실히 족저근막염인가요?',
+        answer: '흔히 안내되는 증상 패턴이지만 그것만으로 확진하지 않습니다. 증상 위치·생활 영향·감각 변화 등을 기록해 평가받으세요.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'ytn-seoul-tour-marathon-2026',
@@ -4084,132 +4039,80 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'stability-shoes-self-diagnosis-fit-guide-2026',
     slug: 'stability-shoes-self-diagnosis-fit-guide-2026',
-    title: '평발인데 안정화 뭐 신지? — 한국 러너 과내전 자가진단 + 안정화 4대 지지 방식 + 와이드 옵션 총정리 2026',
-    description:
-      '"내가 안정화가 필요한가?"부터. 신발 밑창 마모·무릎 안쪽 통증으로 하는 과내전 자가진단, 뉴발 860·아식스 카야노·브룩스 아드레날린의 지지 방식(Stability Plane·FLUIDSUPPORT·GuideRails)이 어떻게 다른지, 발볼 넓은 한국 러너를 위한 D/2E/4E 와이드 옵션 매트릭스까지. 추천 리스트를 보기 전에 읽는 안정화 길잡이입니다.',
-    thumbnail: '/images/blog/stability-shoes-self-diagnosis-2026.webp',
+    title: '안정화 러닝화 선택 — 자가진단의 한계·지지 구조·판매 폭',
+    description: '밑창·통증·아치로 안정화 필요성을 판정하던 표를 제거했습니다. 확인한860 두 세대의 구조·한국 판매 조건과 시착 질문을 구분해 안정화 선택을 준비합니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['안정화 러닝화', '평발 러닝화', '과내전', '오버프로네이션', '와이드 러닝화', '발볼 넓은 발', '카야노', '뉴발란스 860', '아드레날린 GTS', '러닝 부상 예방'],
-    faqs: [
-      { question: '제가 안정화가 필요한지 어떻게 아나요?', answer: '세 가지를 보세요. ① 평소 신발 밑창이 안쪽(엄지쪽)부터 닳는다 ② 달리고 나면 무릎·정강이 안쪽이 아프다 ③ 맨발로 섰을 때 발 안쪽 아치가 바닥에 닿는다(평발). 두 개 이상 해당하면 과내전 가능성이 높아 안정화가 도움이 됩니다. 정확한 진단은 러닝 전문 매장의 보행 분석이나 정형외과가 확실합니다.' },
-      { question: '중립인데 안정화를 신으면 안 되나요?', answer: '권장하지 않습니다. 과내전이 없는 발에 강한 지지가 들어가면 자연스러운 움직임을 방해해 오히려 발목·무릎에 부담이 될 수 있습니다(과교정). 본인이 중립이라면 중립 쿠션화가 맞습니다. 안정화는 "지지가 필요한 발"을 위한 신발입니다.' },
-      { question: '안정화 지지 방식이 다 같은 거 아닌가요?', answer: '다릅니다. 크게 ① 단단한 판으로 받치는 방식(뉴발 860의 Stability Plane·메디얼 포스트) ② 적응형 가이드(아식스 카야노 FLUIDSUPPORT) ③ 양옆 가드레일(브룩스 GuideRails) ④ 경량 프레임(호카 아라히 J-Frame)으로 나뉩니다. 강한 교정을 원하면 ①, 부드럽고 자연스러운 지지를 원하면 ③④가 맞습니다.' },
-      { question: '발볼 넓은데 안정화 와이드 옵션이 있나요?', answer: '있습니다. 한국 공식몰 기준으로는 뉴발란스 860 V15가 남성 2E·4E, 여성 D로 판매되고(2026-10-20 확인), 아식스 카야노도 2E·4E를 제공합니다. 860 V14는 해외에 Narrow~X-Wide 4가지 폭이 있지만 한국 공식몰에서는 현재 검색되지 않습니다. 브룩스 글리세린 GTS는 토박스 자체가 넓은 편입니다. 발볼 넓은 한국 러너라면 안정화일수록 와이드를 우선 고려하세요.' },
-      { question: '안정화는 무겁고 둔하지 않나요?', answer: '전통 안정화(860 330g, 카야노)는 무거운 편이 맞습니다. 하지만 호카 아라히(J-Frame)나 소커니 가이드처럼 300g 안팎의 가벼운 안정화도 늘고 있습니다. 무게가 신경 쓰이면 경량 안정화 쪽을 보세요. 다만 강한 과내전일수록 지지력이 우선입니다.' },
+    category: 'guide',
+    readingTime: 6,
+    tags: [
+      '안정화 러닝화',
+      '평발 러닝화',
+      '과내전',
+      '오버프로네이션',
+      '와이드 러닝화',
+      '발볼 넓은 발',
+      '카야노',
+      '뉴발란스 860',
+      '아드레날린 GTS',
+      '러닝 부상 예방',
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>순서가 중요합니다</strong> — "어떤 안정화가 좋아요?"보다 먼저 "내가 안정화가 필요한가?"를 확인하세요. 밑창 마모·무릎 안쪽 통증·평발 3가지로 자가진단합니다.</li>
-    <li><strong>지지 방식이 4가지로 갈립니다</strong> — 단단한 판(뉴발 860)·적응형 가이드(카야노)·양옆 가드레일(브룩스)·경량 프레임(호카 아라히). 강도와 무게가 다릅니다.</li>
-    <li><strong>발볼 넓은 한국 러너는 와이드부터</strong> — 한국 공식몰 기준 860 V15 남성 2E·4E, 카야노 2E·4E. 추천 순위보다 "내 발에 맞는 방식·폭"을 먼저 고르는 길잡이입니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🧭</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 역할 — 추천 리스트 전에 읽는 길잡이</p>
-    <p>안정화 추천 순위는 이미 많습니다. 이 글은 그 전에 필요한 <strong>"진단 → 지지 방식 이해 → 발볼 매칭"</strong> 3단계를 다룹니다. 구체적인 추천 순위가 필요하면 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">평발·과내전 안정화 추천 2026</a>으로, 최상위 3종 직접 비교는 <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">안정화 3강 비교</a>로 이어집니다.</p>
-  </div>
-</div>
-
-<h2>1단계. 나는 안정화가 필요한가? — 과내전 자가진단</h2>
-
-<p>안정화(stability) 러닝화는 <strong>과내전(overpronation)</strong>, 즉 착지할 때 발이 안쪽으로 과하게 무너지는 발을 잡아주는 신발입니다. 모두에게 좋은 게 아니라, <strong>지지가 필요한 발</strong>을 위한 신발이에요. 먼저 세 가지를 체크하세요.</p>
-
-<table>
-  <thead>
-    <tr><th>체크 항목</th><th>과내전 신호</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>신발 밑창 마모</strong></td><td>안쪽(엄지발가락 쪽)부터 닳는다</td></tr>
-    <tr><td><strong>달린 뒤 통증</strong></td><td>무릎 안쪽·정강이 안쪽이 아프다</td></tr>
-    <tr><td><strong>발 아치</strong></td><td>맨발로 서면 안쪽 아치가 바닥에 닿는다(평발 경향)</td></tr>
-  </tbody>
-</table>
-
-<p>두 개 이상 해당하면 과내전일 가능성이 높고, 안정화가 도움이 됩니다. 한국 러너는 평발 비율이 높은 편이라 안정화 수요가 특히 큽니다. 내전 유형의 원리와 분류는 <a href="/blog/pronation-type-running-shoe-guide-2026">내전(프로네이션) 유형별 가이드</a>에 자세히 정리했습니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">중립이라면 안정화는 오히려 독</p>
-    <p>위 항목에 거의 해당하지 않는다면 당신은 <strong>중립(neutral)</strong>일 가능성이 큽니다. 중립 발에 강한 안정화 지지가 들어가면 자연스러운 움직임을 방해해 발목·무릎에 부담이 될 수 있어요(과교정). 무릎이 아프다고 무조건 안정화가 답은 아닙니다 — 무릎 통증의 원인별 신발 선택은 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>를 참고하세요.</p>
-  </div>
-</div>
-
-<h2>2단계. 안정화 4대 지지 방식 — 같은 안정화가 아니다</h2>
-
-<p>"안정화"라고 다 같지 않습니다. <strong>발을 어떻게 잡아주느냐</strong>가 브랜드마다 다르고, 이게 착화감과 교정 강도를 좌우합니다. 크게 네 갈래예요.</p>
-
-<table>
-  <thead>
-    <tr><th>지지 방식</th><th>원리</th><th>대표 신발</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>단단한 판·포스트</strong></td><td>Stability Plane / 메디얼 포스트로 안쪽을 물리적으로 받침</td><td><a href="/shoes/new-balance-860-v15">뉴발 860</a></td><td>교정 강도 높음, 묵직</td></tr>
-    <tr><td><strong>적응형 가이드</strong></td><td>FLUIDSUPPORT — 필요할 때만 단단해지는 적응형 미드솔</td><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노</a></td><td>프리미엄, 부드러운 교정</td></tr>
-    <tr><td><strong>양옆 가드레일</strong></td><td>GuideRails — 무릎 과도한 움직임을 양옆에서 제한</td><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS</a></td><td>자연스러움, 비-과교정</td></tr>
-    <tr><td><strong>경량 프레임</strong></td><td>J-Frame / Center Path — 가벼운 구조적 지지</td><td><a href="/shoes/hoka-arahi-8">호카 아라히</a> · <a href="/shoes/saucony-guide-18">소커니 가이드</a></td><td>가벼움, 데일리</td></tr>
-  </tbody>
-</table>
-
+    faqs: [
+      {
+        question: '밑창 안쪽 마모와 평발이면 안정화가 필요한가요?',
+        answer: '관찰만으로 과내전과 안정화 필요성을 확진할 수 있는 진단 기준을 이번에 확인하지 못했습니다. 통증·활동 반응·현재 착화를 함께 평가하세요.',
+      },
+      {
+        question: '860 V14는 메디얼 포스트 안정화인가요?',
+        answer: '이번에 대조한 원문은 이중Fresh Foam X·내측 웨지·EVA 필름 구조를 설명합니다. 전통 메디얼 포스트로 단순화한 설명을 정정했습니다.',
+      },
+      {
+        question: '860 V15 한국 와이드는 확인됐나요?',
+        answer: '11/9 한국 공식 남성2E·4E, 여성D 상품을 확인했습니다. 사이즈·색상별 재고와 개인 착화는 별도로 확인해야 합니다.',
+      },
+    ],
+    content: `<div class="tldr"><span class="tldr-label">안정화 선택의 출발점</span><ul>
+<li><strong>밑창 마모·무릎 통증·아치 모양으로 과내전을 확진하지 않습니다.</strong> 기존의 ‘두 개 이상이면 안정화’ 판정표를 제거했습니다.</li>
+<li><strong>지지 구조와 치료 효과는 구분합니다.</strong> 같은 시리즈도 세대에 따라 구조가 달라 모델·버전을 확인해야 합니다.</li>
+<li><strong>폭은 한국 판매 상품으로 확인합니다.</strong> 해외 폭 목록과 실험실 검체를 국내 와이드 재고·개인 핏으로 대입하지 않습니다.</li></ul></div>
+<h2>자가진단표 대신 기록할 것</h2>
+<p>밑창 안쪽이 닳거나 아치가 낮아 보인다는 관찰 자체와, 달리는 동안의 움직임·통증 진단·안정화 필요성 판정은 다른 단계입니다. 기존의 세 항목 중 두 개면 과내전 가능성이 높다는 기준은 검증된 진단 도구를 연결하지 못해 삭제했습니다. 반대 결과라면 중립발이며 안정화가 ‘독’이라는 설명도 삭제했습니다.</p>
+<table><thead><tr><th>가져갈 기록</th><th>사용 목적</th></tr></thead><tbody>
+<tr><td>기존 신발의 마모 사진</td><td>사용 기간·거리·노면과 함께 변화 설명. 진단 점수로 사용하지 않음</td></tr>
+<tr><td>통증 위치·시작·활동 반응</td><td>평가가 필요한 증상과 훈련 변화를 상담</td></tr>
+<tr><td>현재 신발·인솔·양말</td><td>실제 착화 조건과 압박·고정 차이 비교</td></tr>
+<tr><td>원하는 용도와 예산</td><td>치료 등급 순위가 아닌 구체적인 구매 조건 확인</td></tr>
+</tbody></table>
+<h2>발 모양에 맞춰 고르면 부상이 줄어들까?</h2>
+<p>2022년 Cochrane 검토는 정적인 발 형태로 신발을 지정하는 방식의 부상 감소를 뒷받침하지 못했습니다. 해당 비교의 연구는 군인 대상이므로 일반 러너에게 그대로 적용하는 데도 한계가 있습니다. 이것을 ‘모든 안정화가 불필요하다’고 확대하지 않고, 발 형태만으로 누구에게나 예방 모델을 처방할 수 없다는 범위로 읽습니다.</p>
+<h2>같은860도 전통 메디얼 포스트로 묶지 마세요</h2>
+<p>11/9 새로 대조한 뉴발란스860 V14는 이중Fresh Foam X, 내측 웨지와EVA 필름을 쓰며, V15 한국 설명은 이중폼과3/4 New EVA 필름을 다룹니다. 기존 표의 V14=전통 메디얼 포스트, V15=강한 교정1순위라는 단순화를 제거했습니다. 재료와 지오메트리를 설명하는 정보에서 교정 강도·치료 효과 순위를 만들지 않습니다.</p>
+<table><thead><tr><th>확인 범위</th><th>860 V14</th><th>860 V15</th></tr></thead><tbody>
+<tr><td>한국 가격</td><td>남성 미확인. 여성D 연관상품179,000원만 확인</td><td>189,000원, 확인한 남성2E·4E/여성D 상품</td></tr>
+<tr><td>실험실 무게</td><td>295g</td><td>332g</td></tr>
+<tr><td>실험실 내부 최광폭 / 엄지 부위</td><td>94.4/73.0mm</td><td>93.6/75.1mm</td></tr>
+</tbody></table>
+<p>실험실 수치는RunRepeat 남성US9 공시 기준이며 한국2E·4E의 치수가 아닙니다. V14 여성 연관상품의 가격을 한국 남성 정가로 쓰지 않고, 접근 실패를 모델 전체의 판매 종료로 해석하지 않았습니다. 다른 안정화 모델의 모든 구조·가격을 이번에 새로 확인한 것은 아니어서 기존 브랜드별 교정 강도·폭 매트릭스는 제거했습니다.</p>
+<h2>시착 때 확인할 다섯 가지</h2>
+<ol><li>양발 아치·앞쪽·발등에 압박이 생기는지.</li>
+<li>뒤꿈치가 들리거나 카운터가 마찰을 만드는지.</li>
+<li>지지 구조가 실제 걷기·달리기에서 자신에게 편한지.</li>
+<li>평소 인솔을 사용한다면 내부 공간과 고정이 유지되는지.</li>
+<li>구매할 성별·사이즈·폭·색상SKU와 실제 재고가 맞는지.</li></ol>
+<p>강한 지지가 항상 더 좋다거나 부드러운 지지는 과교정이 없다고 보장하지 않습니다. 통증이 있다면 매장의 신발 추천과 의료적 평가를 같은 진단으로 다루지 마세요.</p>
+<p><a href="/blog/new-balance-860-v14-vs-v15-comparison">860 두 세대의 원문 조건 비교</a> · <a href="/best/flat-feet">평발과 신발 선택의 근거 안내</a> · <a href="/blog/knee-pain-running-shoes">무릎 통증 기록과 진료 신호</a></p>
+<h2>확인한 원문과 적용 범위</h2>
 <ul>
-  <li><strong>강한 교정이 필요하다(심한 평발·과내전)</strong> → 단단한 판 방식의 <a href="/shoes/new-balance-860-v15">860</a>이나, 프리미엄 적응형 <a href="/shoes/asics-gel-kayano-33">카야노 33</a>. 카야노 세대 차이는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33</a>에 정리돼 있습니다.</li>
-  <li><strong>부드럽고 자연스러운 지지를 원한다</strong> → 가드레일 방식의 <a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS</a>, 또는 쿠션이 더 두툼한 <a href="/shoes/brooks-glycerin-gts-22">글리세린 GTS</a>.</li>
-  <li><strong>가볍게 데일리로</strong> → 경량 프레임의 <a href="/shoes/hoka-arahi-8">아라히</a>·<a href="/shoes/saucony-guide-18">가이드</a>. "안정화는 무겁다"는 편견을 깨는 300g 안팎 라인입니다.</li>
+<li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
+<li><a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-860-v14-review/" target="_blank" rel="noopener noreferrer">Doctors of Running860 V14</a> — V14 폼·필름·지지 구조</li>
+<li><a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703L&colCode=16&cIdx=" target="_blank" rel="noopener noreferrer">한국860 V15 남성2E</a> — 한국 확인 상품. 다른 성별·폭 조건은 연결된 세대 비교 참조</li>
+<li><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v14" target="_blank" rel="noopener noreferrer">RunRepeat860 V14</a> — 해외 실험실 검체</li>
+<li><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">RunRepeat860 V15</a> — 해외 실험실 검체</li>
 </ul>
-
-<h2>3단계. 발볼 — 한국 러너 와이드 옵션 매트릭스</h2>
-
-<p>지지 방식을 골랐으면 마지막은 <strong>발볼</strong>입니다. 발볼 넓은 한국 러너에게 안정화는 특히 중요한데, 지지 구조가 들어가면서 토박스가 조여질 수 있기 때문이에요. 다행히 안정화 라인은 와이드 옵션이 풍부합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>지지 방식</th><th>발볼 옵션</th><th>무게</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/new-balance-860-v14">뉴발 860 V14</a></td><td>메디얼 포스트</td><td>해외 Narrow / 표준 / 2E / X-Wide (한국 공식몰 미등재, 2026-10-20)</td><td>295g</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15">뉴발 860 V15</a></td><td>Stability Plane</td><td><strong>남성 2E / 4E, 여성 D</strong> (한국 공식몰)</td><td>332g</td></tr>
-    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>FLUIDSUPPORT</td><td>표준 / 2E / 4E</td><td>중량급</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>표준 토박스가 넓음</td><td>쿠션급</td></tr>
-    <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>J-Frame</td><td>표준 / 와이드</td><td>경량</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">📏</span>
-  <div class="callout-body">
-    <p class="callout-title">발볼 넓으면 한국 공식몰 와이드부터 확인</p>
-    <p>뉴발란스 860 V14는 해외에 Narrow/표준/2E/X-Wide 4가지 폭이 있지만, 2026-10-20 기준 한국 공식몰에서는 검색되지 않고 토박스도 RunRepeat 실측 73.0mm로 평균(73.2mm) 수준입니다. 국내에서 와이드를 공식몰로 사려면 <strong>860 V15(남성 2E·4E, 여성 D)</strong>를 먼저 보세요. 발볼·평발 전반의 신발 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 11종 토박스 실측이 있으니 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>그래서 뭘 사지? — 상황별 정리</h2>
-
-<ul>
-  <li><strong>처음 안정화 + 발볼 넓음 + 가성비</strong> → <a href="/shoes/new-balance-860-v14">뉴발 860 V14</a>(17.9만, 토박스 평균 수준). 공식몰 와이드가 필요하면 <a href="/shoes/new-balance-860-v15">860 V15</a>(남성 2E·4E).</li>
-  <li><strong>강한 교정 + 프리미엄</strong> → <a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a>.</li>
-  <li><strong>자연스러운 지지 + 두툼한 쿠션</strong> → <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>.</li>
-  <li><strong>가벼운 안정화 + 데일리</strong> → <a href="/shoes/hoka-arahi-8">호카 아라히 8</a> · <a href="/shoes/saucony-guide-18">소커니 가이드 18</a>.</li>
-  <li><strong>뉴발란스 라인업 전체가 궁금</strong> → <a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스 러닝화 계급도</a>에서 안정화 외 라인까지 한 장에.</li>
-</ul>
-
-<h2>한 걸음 더</h2>
-
-<ul>
-  <li>🏆 안정화 추천 순위가 필요하면 → <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">평발·과내전 안정화 추천 2026</a></li>
-  <li>⚔️ 최상위 3종 직접 비교 → <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">카야노 33 vs 글리세린 GTS vs 860</a></li>
-  <li>🦶 평발·과내전 베스트 → <a href="/best/flat-feet">평발 러닝화 추천</a> · <a href="/best/stability">안정화 러닝화 추천</a></li>
-</ul>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 기준 정보로, 자가진단은 참고용입니다. 통증이 지속되거나 심한 평발·부상 이력이 있다면 러닝 전문 매장의 보행 분석이나 정형외과 상담을 받으세요. 가격·발볼 옵션은 시즌마다 바뀔 수 있어 구매 전 각 모델 상세 페이지에서 확인하시기 바랍니다.</p>
+<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
+    updatedAt: '2026-11-09',
   },
   {
     id: 'world-marathon-majors-guide-2026',
@@ -6992,73 +6895,70 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'achilles-tendon-running-shoes-prevention-2026',
     slug: 'achilles-tendon-running-shoes-prevention-2026',
-    title: '러너의 아킬레스건염 — 왜 생기고 러닝화로 어떻게 줄일까 | 드롭·쿠션·예방 운동 완벽 가이드',
-    description: '아킬레스건염은 러너가 가장 흔히 겪는 부상 중 하나입니다. 갑작스러운 거리 증가, 약한 종아리, 그리고 \'낮은 드롭\' 신발이 주요 원인이죠. 아킬레스건염이 왜 생기는지, 드롭이 높은 러닝화가 어떻게 부담을 줄여주는지(보메로 18·클리프턴 10 등), 그리고 종아리 강화·워밍업 같은 예방법까지 정리했습니다.',
-    thumbnail: '/images/blog/achilles-tendon-running-shoes-prevention-2026.webp',
+    title: '러너의 아킬레스 통증 — 중간부 지침과 드롭·운동의 적용 범위',
+    description: '아킬레스 중간부 건병증2024 지침을 바탕으로 증상 기록, 부하 운동·활동과 힐리프트의 범위를 구분합니다. 제품별 치료 순위와 드롭8~12mm·계단 운동 일괄 처방을 제거했습니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['아킬레스건염', '부상 예방', '러닝화 드롭', '종아리', '러닝 부상', '러닝 팁'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>아킬레스건염은 <strong>갑작스러운 거리·강도 증가, 약한 종아리, 낮은 드롭 신발</strong>이 겹칠 때 잘 생깁니다</li>
-    <li>러닝화에서 핵심은 <strong>드롭(힐-전족 높이차)</strong> — 드롭이 높을수록 아킬레스가 덜 늘어나 부담이 줄어듭니다(8~12mm 권장)</li>
-    <li>신발만으로는 부족 — <strong>종아리 강화(카프 레이즈)와 점진적 거리 증가</strong>가 근본 예방입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">아킬레스건염이란</p>
-    <p>아킬레스건(발뒤꿈치와 종아리를 잇는 힘줄)에 미세 손상이 누적돼 생기는 염증·통증입니다. 아침 첫발이 뻣뻣하거나, 달리기 시작·끝에 뒤꿈치 위쪽이 아프면 의심해야 하죠. 러너에게 흔하지만 <strong>한번 오면 오래 가는</strong> 부상이라, 예방이 무엇보다 중요합니다.</p>
-  </div>
-</div>
-
-<h2>왜 생길까 — 주요 원인</h2>
+    category: 'guide',
+    readingTime: 6,
+    tags: [
+      '아킬레스건염',
+      '부상 예방',
+      '러닝화 드롭',
+      '종아리',
+      '러닝 부상',
+      '러닝 팁',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">아킬레스 주변이 아플 때</span><ul>
+<li><strong>뒤꿈치뼈에 붙는 부위와 힘줄 중간부를 구분해 기록하세요.</strong> 급성 손상까지 모두 같은 건염으로 다루지 않습니다.</li>
+<li><strong>중간부 건병증 지침의 중심은 평가에 맞춘 힘줄 부하 운동과 교육입니다.</strong> 높은 드롭 신발 구매를 치료의 중심으로 바꾸지 않습니다.</li>
+<li><strong>드롭8~12mm·계단 힐드롭·정해진 휴식 기간을 모두에게 처방하지 않습니다.</strong> 적용 부위와 개인 상태를 먼저 확인하세요.</li></ul></div>
+<h2>어디가 아픈지부터 구분하세요</h2>
+<p>2024년 JOSPT 지침은 주로 아킬레스 힘줄의 중간부 건병증을 다룹니다. 진단은 중간부 통증, 힘줄에 부하가 걸리는 활동에서의 반응과 압통 등 임상 평가를 바탕으로 합니다. 뒤꿈치뼈 부착부 통증이나 급성 파열·부분 손상 등 다른 문제에 같은 운동을 적용하라는 지침이 아닙니다.</p>
+<p>이 글은 자가검사로 파열을 배제하거나 진단하는 방법을 제공하지 않습니다. 갑작스러운 손상이나 기능 저하가 생겼다면 새 신발과 카프 레이즈로 시험하기보다 의료기관에서 평가받으세요.</p>
+<h2>상담에 가져갈 러닝 기록</h2>
+<table><thead><tr><th>항목</th><th>확인할 내용</th></tr></thead><tbody>
+<tr><td>위치·시작</td><td>뼈에 붙는 부위인지 그 위 힘줄인지, 갑자기 시작했는지 서서히 생겼는지</td></tr>
+<tr><td>활동 반응</td><td>걷기·달리기·언덕·계단에서 어떤 반응이 있는지, 다음 날 상태는 어떤지</td></tr>
+<tr><td>훈련 변화</td><td>거리·강도·언덕·연속 훈련일·근력운동·대회 일정</td></tr>
+<tr><td>신발과 생활</td><td>최근 신발·드롭·인솔 변화, 뒤꿈치 마찰, 일상 보행 영향</td></tr>
+</tbody></table>
+<p>기록표는 상담을 돕는 편집 도구이며 운동 허용 여부를 자동 판정하지 않습니다.</p>
+<h2>2024년 지침의 운동·활동 권고</h2>
+<p>지침은 중간부 건병증에서, 힘줄 구조의 취약성이 의심되는 상태가 아니라면 견딜 수 있는 범위의 힘줄 부하 운동을 일차 치료로 권고합니다. 교육을 함께 제공하고, 이 대상에서 완전한 휴식을 일괄 권하지 않습니다. 이는 통증을 무시하며 원래 훈련을 계속하라는 뜻이 아닙니다. 평가한 상태와 허용 반응에 맞게 활동과 재활 부하를 정해야 합니다.</p>
+<p>기존 글의 ‘계단 끝에서 매일2~3세트’는 제거했습니다. 운동 형태·가동범위·부하는 진단 부위와 증상에 따라 달라지며, 건병증 치료 권고를 건강한 러너 전체의 예방 효과로 바꾸지 않습니다.</p>
+<h2>높은 드롭과 힐리프트는 같은 처방이 아닙니다</h2>
+<p>지침은 중간부 건병증에서 활동 중 발목 배측굴곡을 일시적으로 줄이기 위한 힐리프트를 고려할 수 있다고 설명합니다. 이 제한된 권고에서 ‘드롭8~12mm 신발이면 안전’이나 ‘가장 높은 드롭 모델이 아킬레스에 가장 좋다’는 결론은 나오지 않습니다. 신발의 드롭, 힐리프트 높이, 실제 움직임과 통증 결과를 같은 수치로 다루지 않았습니다.</p>
+<p>인솔은 근거가 상충해 해당 지침에서 사용 권고를 내리지 못한 항목입니다. 따라서 평발이면 교정 인솔을 더하라는 일괄 안내도 하지 않습니다.</p>
+<h2>구매 전에 확인할 항목</h2>
+<ul><li>뒤꿈치 카운터가 아픈 부위를 누르거나 마찰을 만드는지.</li>
+<li>지금 쓰는 인솔·힐리프트가 있다면 신발 내부 공간과 뒤꿈치 고정이 맞는지.</li>
+<li>제조사 공시 드롭과 실험실 드롭의 출처·검체 조건이 같은지.</li>
+<li>신발과 훈련을 동시에 크게 바꿔 증상 변화를 해석하기 어렵게 만들고 있지 않은지.</li></ul>
+<p>통증을 줄일 모델TOP3, 일괄 주간10% 증가 기준, 신발에 따른 예방률은 제공하지 않습니다. <a href="/best/achilles">아킬레스 통증과 신발 선택의 근거 안내</a>에서 구매 전 질문을 함께 정리할 수 있습니다.</p>
+<h2>확인한 원문과 적용 범위</h2>
 <ul>
-  <li><strong>갑작스러운 거리·강도 증가</strong> — 가장 흔한 원인. 주간 거리를 한 번에 늘리면 힘줄이 적응 못 함</li>
-  <li><strong>약한 종아리·발목</strong> — 충격을 근육이 못 받으면 힘줄로 부담이 몰림</li>
-  <li><strong>낮은 드롭 신발로 급전환</strong> — 드롭이 낮으면 아킬레스가 더 늘어나는데, 익숙지 않은 발이 갑자기 신으면 무리</li>
-  <li><strong>워밍업 부족·오버페이스</strong> — 차가운 힘줄에 갑작스러운 부하</li>
+<li><a href="https://orthopt.org/uploads/content_files/files/chimenti_et_al_2024_achilles_pain_stiffness_and_muscle_power_deficits_midportion_achilles_tendinopathy_revision_2024.pdf" target="_blank" rel="noopener noreferrer">JOSPT 아킬레스 중간부 건병증 진료지침2024</a> — CPG2 권고 요약·CPG8 진단/감별. 부착부 통증·급성 파열에 같은 운동을 적용하는 지침이 아닙니다.</li>
+<li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
 </ul>
-
-<h2>러닝화로 줄이기 — '드롭'이 핵심</h2>
-<p>드롭(힐과 전족의 높이 차)이 <strong>높을수록 발목이 덜 꺾여 아킬레스 신장이 줄어듭니다</strong>. 아킬레스가 약하거나 통증 이력이 있다면 <strong>드롭 8~12mm</strong>의 쿠션 좋은 신발이 안전합니다(낮은 드롭 4mm 이하는 아킬레스 부담이 큼).</p>
-<table>
-  <thead><tr><th>모델</th><th>드롭</th><th>특징</th></tr></thead>
-  <tbody>
-    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td><strong>14mm</strong></td><td>높은 드롭+맥스쿠션, 아킬레스에 가장 너그러움</td></tr>
-    <tr><td><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></td><td>12mm</td><td>가벼운 쿠션화, 높은 드롭</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>10mm</td><td>푹신함+안정, 종아리 편함</td></tr>
-  </tbody>
-</table>
-<p>반대로 드롭 4~6mm의 낮은 신발(예: 일부 레이싱·내추럴 슈즈)은 아킬레스가 약한 러너에겐 통증을 악화시킬 수 있으니, 전환은 아주 천천히 해야 합니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">낮은 드롭으로 '갑자기' 바꾸지 마세요</p>
-    <p>맨발 트렌드·미니멀 슈즈로 급전환하다 아킬레스건염을 얻는 경우가 많습니다. 드롭을 낮추려면 <strong>몇 주에 걸쳐 점진적으로</strong>, 짧은 거리부터 적응시키세요.</p>
-  </div>
-</div>
-
-<h2>신발보다 중요한 예방 — 종아리와 점진성</h2>
-<ul>
-  <li><strong>카프 레이즈(종아리 들기)</strong> — 아킬레스 부하 운동(에센트릭)이 예방·재활에 가장 효과적. 계단 끝에서 뒤꿈치 내렸다 올리기 하루 2~3세트</li>
-  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
-  <li><strong>워밍업 필수</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 힘줄을 데우기</li>
-  <li><strong>케이던스 점검</strong> — <a href="/blog/running-cadence-guide-2026">보속</a>을 높여 오버스트라이드를 줄이면 착지 충격이 분산됩니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>아킬레스건염은 "신발 하나"로 막을 순 없지만, <strong>드롭이 높은 쿠션 신발 + 종아리 강화 + 점진적 거리 증가</strong>의 조합으로 위험을 크게 줄일 수 있습니다. 이미 통증이 있다면 무리하지 말고 휴식과 함께 카프 레이즈로 재활하세요. 더 많은 모델은 <a href="/best/achilles">아킬레스 친화 러닝화</a>에서 비교할 수 있습니다. 아침 첫발에 발바닥이 찌릿하다면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 러닝화 가이드</a>도 함께 보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 심하면 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
+<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
+    faqs: [
+      {
+        question: '아킬레스 통증에는 드롭8~12mm가 안전한가요?',
+        answer: '모든 아킬레스 통증에 같은 신발 드롭을 처방할 근거는 확인하지 못했습니다. 중간부 지침의 힐리프트 권고와 완성 신발의 치료 효과는 같은 내용이 아닙니다.',
+      },
+      {
+        question: '계단에서 뒤꿈치를 내리는 운동을 바로 해도 되나요?',
+        answer: '통증 부위와 진단에 따라 운동 범위·부하가 달라집니다. 중간부 지침을 부착부 통증이나 급성 손상까지 적용하지 않습니다.',
+      },
+      {
+        question: '아프면 완전히 쉬어야 하나요?',
+        answer: '중간부 건병증 지침은 평가에 맞춘 부하 운동·교육과 허용 범위의 활동을 다룹니다. 이 권고는 급성 손상이나 모든 뒤꿈치 통증에서 원래 훈련을 계속하라는 뜻이 아닙니다.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'adidas-adizero-evo-sl-value-supershoe-2026',
@@ -7122,75 +7022,79 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'max-cushion-running-shoes-knee-protection-2026',
     slug: 'max-cushion-running-shoes-knee-protection-2026',
-    title: '무릎 지키는 맥스쿠션 러닝화 추천 2026 | 1080 v15·님버스 28·고스트 맥스 3·본디 9 — 발볼·무게·관절 보호 비교',
-    description: '무릎·관절이 약하거나 장거리·회복런 위주라면 두꺼운 폼의 맥스쿠션 러닝화가 충격을 흡수해줍니다. 뉴발란스 1080 v15(경량), 아식스 님버스 28(쿠션 8)·호카 본디 9(쿠션 9·넓은 발볼), 브룩스 고스트 맥스 3(와이드 옵션 있는 가성비)까지 주요 맥스쿠션을 무게·드롭·발볼·가격으로 비교하고, 무릎 보호 관점에서 어떤 걸 골라야 하는지 정리했습니다.',
-    thumbnail: '/images/blog/max-cushion-running-shoes-knee-protection-2026.webp',
+    title: '맥스쿠션 러닝화 선택 — 충격흡수·스택·핏·가격 확인법',
+    description: '스택mm·충격흡수SA·경도와 실제 착화를 구분해 맥스쿠션을 고르는 기준을 정리합니다. 근거 없는 무릎 보호TOP과 검증되지 않은 수명에 따른 비용 순위를 제거했습니다.',
+    thumbnail: 'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['맥스쿠션', '쿠션화', '무릎 보호', '1080 v15', '님버스 28', '고스트 맥스 3', '러닝화 추천'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>무릎·관절이 약하거나 LSD·회복런 위주라면, 두꺼운 폼이 충격을 흡수하는 <strong>맥스쿠션 러닝화</strong>가 관절 부담을 줄여줍니다</li>
-    <li>종합 추천은 <strong><a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a></strong> — 맥스쿠션인데 255g으로 가볍고, 우리 사이트에서 가장 많이 추천되는 모델입니다</li>
-    <li>발볼 넓으면 <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(17만원대·와이드 옵션), 푹신함 최우선이면 <a href="/shoes/hoka-bondi-9">본디 9</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦵</span>
-  <div class="callout-body">
-    <p class="callout-title">맥스쿠션은 누구에게?</p>
-    <p>스택(폼 두께)이 두꺼운 맥스쿠션은 착지 충격을 분산해 <strong>무릎·발목 관절 부담을 덜어줍니다</strong>. ① 무릎이 약하거나 통증 이력이 있는 러너 ② 장거리·회복런 위주 ③ 체중이 있는 러너에게 특히 유리하죠. 다만 폼이 두꺼운 만큼 무겁고 반응성은 떨어져, 빠른 인터벌엔 부적합합니다.</p>
-  </div>
-</div>
-
-<h2>맥스쿠션 비교 — 주요 6종</h2>
-<table>
-  <thead>
-    <tr><th>모델</th><th>쿠션</th><th>무게</th><th>드롭</th><th>발볼</th><th>가격</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong><a href="/shoes/new-balance-1080-v15">1080 v15</a></strong> 👑</td><td>9</td><td><strong>255g</strong></td><td>6mm</td><td>표준</td><td>209,000</td><td>맥스쿠션인데 경량</td></tr>
-    <tr><td><a href="/shoes/asics-gel-nimbus-28">님버스 28</a></td><td><strong>10</strong></td><td>278g</td><td>8mm</td><td>표준</td><td>199,000</td><td>아식스 최고 쿠션</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">본디 9</a></td><td>9</td><td>303g</td><td>9mm</td><td><strong>넓음</strong></td><td>229,000</td><td>호카 대표 맥스</td></tr>
-    <tr><td><a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a></td><td>8</td><td>303g</td><td>7mm</td><td><strong>표준(73.4mm)·와이드 옵션</strong></td><td><strong>179,000</strong></td><td>와이드 옵션 있는 가성비</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-18">보메로 18</a></td><td>9</td><td>298g</td><td><strong>14mm</strong></td><td>표준</td><td>189,000</td><td>높은 드롭(아킬레스 편함)</td></tr>
-    <tr><td><a href="/shoes/new-balance-1080-v14">1080 v14</a></td><td>9</td><td>285g</td><td>4mm</td><td>좁음</td><td>199,000</td><td>낮은 드롭·전작</td></tr>
-  </tbody>
-</table>
-
-<h2>👑 종합 톱픽 — 뉴발란스 1080 v15</h2>
-<p><a href="/shoes/new-balance-1080-v15">1080 v15</a>는 37mm 힐 스택(실측)의 푹신함을 갖추고도 <strong>255g으로 이 표에서 가장 가볍습니다</strong>. 맥스쿠션의 단점인 둔함을 줄여, 회복런부터 데일리까지 폭넓게 소화하죠. 전작과의 차이(낮은 드롭·발볼)는 따로 비교할 가치가 있는데, 신상 v15는 표준 발볼로 넓어졌습니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">🖥️</span>
-  <div class="callout-body">
-    <p class="callout-title">대표 맥스쿠션 4종 비교</p>
-    <p><strong><a href="/compare?shoes=new-balance-1080-v15,asics-gel-nimbus-28,brooks-ghost-max-3,hoka-bondi-9">→ 1080 v15 · 님버스 28 · 고스트 맥스 3 · 본디 9 비교하기</a></strong> — 쿠셔닝·무게·가성비 점수를 한 화면에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>목적별 베스트</h2>
+    category: 'guide',
+    readingTime: 6,
+    tags: [
+      '맥스쿠션',
+      '쿠션화',
+      '무릎 보호',
+      '1080 v15',
+      '님버스 28',
+      '고스트 맥스 3',
+      '러닝화 추천',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">맥스쿠션 구매 기준</span><ul>
+<li><strong>두꺼움·부드러움·충격흡수는 서로 다른 정보입니다.</strong> 스택mm, 폼 경도, SA를 하나의 ‘무릎 보호 점수’로 합치지 않습니다.</li>
+<li><strong>편안한 착화와 필요한 판매 폭을 확인하세요.</strong> 높은 스택이나 넓은 바닥이 발 내부 공간까지 보장하지 않습니다.</li>
+<li><strong>통증이 있다면 제품 순위로 치료를 대신하지 않습니다.</strong> 이 글은 맥스쿠션을 비교할 때의 조건을 정리합니다.</li></ul></div>
+<h2>숫자를 읽는 순서</h2>
+<table><thead><tr><th>정보</th><th>알 수 있는 것</th><th>바로 결론낼 수 없는 것</th></tr></thead><tbody>
+<tr><td>스택·드롭(mm)</td><td>측정 위치에서의 높이와 높이 차이</td><td>개인의 무릎·아킬레스 치료 효과</td></tr>
+<tr><td>충격흡수(SA)</td><td>실험실의 정해진 충격 조건에서 측정한 값</td><td>부상 예방률·장거리 통증 감소율</td></tr>
+<tr><td>경도(AC/HA)</td><td>해당 척도의 폼 경도</td><td>다른 척도의 수치와 직접 비교한 순위</td></tr>
+<tr><td>내부 너비</td><td>해당 검체의 측정 위치별 공간</td><td>맨발 너비와 맞는 사이즈·와이드의 치수</td></tr>
+</tbody></table>
+<h2>원문을 다시 대조한 다섯 후보</h2>
+<table><thead><tr><th>항목</th><th>한국 정가·확인 폭</th><th>실험실 무게</th><th>힐/전족부 스택·드롭</th><th>힐/전족부SA</th><th>내부 최광폭/엄지너비/높이</th></tr></thead><tbody>
+<tr><th><a href="/shoes/new-balance-1080-v15">1080 V15</a></th><td>209,000원 · 남성2E·4E/여성D</td><td>255g</td><td>37.0/30.6mm ·6.4mm</td><td>147/126</td><td>94.8/73.2/27.1mm</td></tr>
+<tr><th><a href="/shoes/asics-gel-nimbus-28">님버스28</a></th><td>199,000원 · 남성 일반·2E/여성 일반·D</td><td>278g</td><td>43.0/34.9mm ·8.1mm</td><td>137/133</td><td>97.6/72.5/22.7mm</td></tr>
+<tr><th><a href="/shoes/hoka-bondi-9">본디9</a></th><td>한국 현재 정가·폭 미확인</td><td>303g</td><td>41.3/32.2mm ·9.1mm</td><td>146/133</td><td>94.1/72.5/29.6mm</td></tr>
+<tr><th><a href="/shoes/brooks-ghost-max-3">고스트맥스3</a></th><td>공식 원문179,000원 · 남성Medium/Wide,실시간재고미확인</td><td>303g</td><td>38.5/31.2mm ·7.3mm</td><td>134/116</td><td>95.3/73.4/28.1mm</td></tr>
+<tr><th><a href="/shoes/nike-vomero-18">보메로18</a></th><td>189,000원 · 남성 일반·와이드/여성 와이드</td><td>298g</td><td>42.5/28.6mm ·13.9mm</td><td>147/116</td><td>95.6/69.6/26.2mm</td></tr>
+</tbody></table>
+<p>표의 무게·스택·드롭·SA·에너지 리턴·내부 공간은11/9 확인한RunRepeat 남성US9 공시 기준입니다. 한국 와이드·여성 상품의 검체라는 뜻은 아닙니다. 공시와 실측, 내부 최광폭·엄지 너비·높이·외부 바닥 폭을 구분했습니다. 수명km·최적 페이스·모델별 임상 효과는 확인하지 못해 비용·치료 순위를 만들지 않았습니다.</p>
+<p>11/9 확인 범위입니다. RR 측정법 버전은 모델마다2.2~2.5로 달라 수치 차이를 임상 순위로 읽지 않습니다. 님버스 전족 본문34.3mm와 결과표34.9mm의 충돌은 결과표 기준을 구분했습니다. 브룩스 공식 원문은 캐시 응답이라 구매 가능한 사이즈를 확정하지 않았습니다. 각 상세 페이지에 공식·실험실·착화 원문을 연결했습니다.</p>
+<h2>두꺼운 쿠션이면 누구에게나 무릎에 좋을까요?</h2>
+<p>러닝화 유형에 따른 부상 예방을 검토한2022년 Cochrane 자료는 근거의 불확실성을 설명합니다. 이 자료를 제품별 치료 비교로 확대할 수 없고, 높은SA나 스택에서 ‘관절 수호자’ 순위를 만들 근거도 확인하지 못했습니다. 반대로 연구의 불확실성을 모든 신발이 같은 체감이라는 뜻으로 받아들일 필요도 없습니다.</p>
+<h2>착화에서 확인할 다섯 가지</h2>
+<ol><li><strong>발의 압박:</strong> 양발의 엄지·새끼발가락·발등·아치가 눌리는지.</li>
+<li><strong>뒤꿈치 고정:</strong> 끈을 조였을 때 들리거나 힐 카운터가 마찰을 만드는지.</li>
+<li><strong>바닥 전환:</strong> 평소 걷기·쉬운 러닝에서 로커의 굴림이 자연스러운지.</li>
+<li><strong>균형감:</strong> 부드럽고 높은 발밑이 자신에게 편한지. 지지 구조나 넓은 베이스만으로 개인 안정감을 보장하지 않습니다.</li>
+<li><strong>판매 조건:</strong> 동일 이름의 성별·일반/와이드·색상SKU·가격과 실제 사이즈 재고.</li></ol>
+<h2>공시와 실측을 섞지 않는 방법</h2>
+<p>제조사 무게는270mm·280mm 등 특정 사이즈 조건일 수 있고, 실험실은 다른 검체를 사용합니다. 공시 스택과 실측 스택 역시 방법에 따라 달라집니다. 한 모델의 공식 힐 높이와 다른 모델의 실측을 같은 줄에서 비교하거나, 다른 폭의 실측을 한국 와이드의 치수로 쓰지 마세요.</p>
+<h2>예산 비교는 확인한 가격부터</h2>
+<p>국내 정가와 실제 할인가는 구분하고, 동일 상품·사이즈의 구매가를 확인하세요. 수명km를 검증하지 못한 상태에서는 정가를 임의의500km·700km로 나눠 ‘가성비 승자’를 만들지 않았습니다. 에디터 쿠션 점수와 실험실 측정 단위도 구분합니다.</p>
+<h2>통증이 있는 러너의 다음 단계</h2>
+<p>특정 신발이 자신의 통증에 맞는지 판단하려면 증상과 활동 반응을 함께 평가해야 합니다. <a href="/blog/knee-pain-running-shoes">무릎 통증 기록과 진료 신호</a>를 확인하고, 구매 시에는 <a href="/compare">비교 도구</a>에서 수치의 출처·확인 범위와 실제 착화를 함께 보세요. 맥스쿠션이라는 이름만으로 재활·복귀용 합격 모델을 정하지 않습니다.</p>
+<h2>확인한 원문과 적용 범위</h2>
 <ul>
-  <li><strong>경량·만능</strong> → <a href="/shoes/new-balance-1080-v15">1080 v15</a>(255g)</li>
-  <li><strong>푹신함 우선</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>(쿠션 9, 넓은 발볼)·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(쿠션 8)</li>
-  <li><strong>발볼 넓은 러너·가성비</strong> → <a href="/shoes/brooks-ghost-max-3">고스트 맥스 3</a>(와이드 옵션·17만원대, 119mm 광폭 플랫폼, 표준폭 토박스는 RunRepeat 실측 73.4mm로 평균 수준)</li>
-  <li><strong>아킬레스·종아리가 약한 러너</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a>(드롭 14mm로 종아리 부담 적음)</li>
-  <li><strong>구름처럼 푹신한 로커 라이드</strong> → <a href="/shoes/brooks-glycerin-max-2">글리세린 맥스 2</a>(47mm 초고스택, 부드러운 로커형 — 푹신함 최우선 러너용)</li>
+<li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022: 러닝화와 하지 부상 예방</a> — 연구 검색2021년6월, 성인 러너·군인 대상. 제품별 치료 효과를 시험한 자료가 아닙니다.</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a> — 검체·위치·측정 단위. 임상 예방률이나 한국 와이드 치수로 환산하지 않습니다.</li>
 </ul>
-
-<h2>무릎이 아프다면 — 쿠션만으론 부족합니다</h2>
-<p>맥스쿠션이 충격을 줄여주지만, 무릎 통증의 근본 원인은 신발만으로 해결되지 않습니다. <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>로 원인을 짚고, <a href="/blog/running-cadence-guide-2026">케이던스(보속)</a>를 높여 착지 충격 자체를 줄이는 것도 병행하세요. 발이 안쪽으로 무너지는 과내전이라면 쿠션화보다 <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화 러닝화</a>가 더 맞을 수 있습니다. 더 많은 모델은 <a href="/best/max-cushion">쿠션화 베스트</a>에서 비교하세요.</p>
-
-<h2>마무리</h2>
-<p>맥스쿠션의 핵심은 "두껍다"가 아니라 <strong>"내 무게·발볼·관절 상태에 맞는 두께"</strong>입니다. 가볍게 두루 쓰려면 1080 v15, 최대한 푹신하게는 본디·님버스, 발볼 넓고 예산을 아끼려면 고스트 맥스 3 — 본인 우선순위 하나만 정하면 선택이 쉬워집니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝화 정보로, 무릎 통증이 지속되면 전문가의 진료를 받으세요. 가격은 변동될 수 있습니다.</p>
+<p><small>2026-11-09 원문 재확인. 이 글은 증상 기록·상담·착화 준비를 위한 정보이며 개인 진단이나 복귀 처방을 제공하지 않습니다.</small></p>
 `,
+    faqs: [
+      {
+        question: '맥스쿠션이면 무릎을 보호하나요?',
+        answer: '스택과 실험실 충격흡수에서 개인의 부상 예방·치료 효과를 바로 판단할 수 없습니다. 통증의 원인과 실제 착화 반응을 별도로 평가해야 합니다.',
+      },
+      {
+        question: '스택이 높을수록 더 부드러운가요?',
+        answer: '두께·폼 경도·충격흡수는 서로 다른 값입니다. 측정 방법과 위치를 확인하고 하나의 보호 점수로 합치지 않습니다.',
+      },
+      {
+        question: '발볼이 넓으면 넓은 바닥 모델을 고르면 되나요?',
+        answer: '외부 플랫폼 폭과 신발 내부 공간은 다릅니다. 한국 판매 성별·사이즈·폭과 양발의 실제 압박을 확인하세요.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'kayano-33-vs-glycerin-gts-22-vs-860-v15-2026',

@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-1080-v15',
   slug: 'new-balance-1080-v15',
@@ -17,114 +18,145 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 4.9,
   price: 209000,
-  description:
-    '질소 주입 인피니온(슈퍼크리티컬) 폼으로 향상된 쿠셔닝과 에너지 반환을 제공하는 뉴발란스 플래그십 쿠션화. RunRepeat 실측 기준 v14보다 30g 가벼워졌으며(285g→255g), 남성 2E/4E 와이드 옵션으로 발볼 넓은 러너도 편안하게 착용 가능합니다.',
-  oneliner: '255g(실측) 경량화, 인피니온 초임계 폼으로 전환',
-  editorComment: 'RunRepeat 실측 기준 전작 대비 30g 감량(285g→255g)과 함께 미드솔 폼을 통째로 바꾼 1080 v15. 인피니온 폼은 Fresh Foam X보다 에너지 리턴과 통기성이 향상되었으며, 쿠셔닝(9/10)은 Asics Nimbus 28과 동급입니다. 20만 9천원으로 1만원 올랐지만 경량화로 5:00-6:30/km 빠른 페이스에도 대응 가능해졌습니다. 남성 2E/4E 발볼 옵션은 한국 러너에게 큰 장점이며, 토박스도 73.2mm로 v14(69.8mm)보다 넓어져 v14의 좁은 토박스를 피했던 러너도 다시 고려할 만합니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 73.2mm = 랩 평균)이며 한국 공식몰은 남성 2E·4E, 여성 D로 판매해 발볼 넓은 한국 러너도 안심하고 착용할 수 있습니다. 209,000원 ÷ 600km = km당 약 348원입니다. 한 단계 저렴한 대안으로 880 V15(18만 9천원, 더 두꺼운 스택), 비슷한 가격대에서는 글리세린 22와 비교해보세요.',
-  tags: ['쿠션화', '장거리', '데일리', '경량'],
-
+  description: 'Infinion 슈퍼크리티컬 폼 구조의 1080 V15. 한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+  oneliner: '255g 실험실 무게 · Infinion 슈퍼크리티컬 폼',
+  editorComment: '2026-11-09 원문 재확인. 한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준. 한국 공식 남성261g·여성208g(각 측정 사이즈 미공시), 드롭6mm. 실험실255g·6.4mm와 조건을 구분. RunRepeat 실측 255g,힐/전족부 37/30.6mm·드롭6.4mm입니다.  RunRepeat는 부드럽고 작은 플랫폼의 흔들림을 주의점으로 들었고, DOR의 Matt은 US10에서 매끄러운 힐 전환과 약한 지오메트리 지지를 느꼈습니다. 두 의견을 하나의 임상 안정성 등급으로 합치지 않습니다. 한국 남성2E·4E, 여성D 상품 확인. 해외 RR 검체의 최광폭94.8mm와 엄지 부위73.2mm는 한국 와이드 치수가 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '장거리',
+    '데일리',
+    '경량',
+  ],
   specs: {
     weight: 255,
     cushioning: 9,
     responsiveness: 8,
     stability: 6,
-    drop: 6,
-    durability: 600,
+    drop: 6.4,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 37,
-      forefoot: 31,
+      forefoot: 30.6,
     },
-    drop: 6,
+    drop: 6.4,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Infinion (질소 주입 슈퍼크리티컬 폼)',
-    optimalPace: '5:00-6:30 min/km',
+    midsoleType: 'Infinion 슈퍼크리티컬 폼',
   },
-
   detailedSpecs: {
-    weight: '255g (RunRepeat 실측, US 9) / 브랜드 표기 남성 261g·여성 208g',
-    stackHeight: '힐 37.0mm / 포어풋 30.6mm (RunRepeat 실측) / 브랜드 표기 40/34mm',
-    drop: '6.4mm (실측) / 6mm (브랜드 공식)',
-    midsole: '인피니온 (질소 주입 슈퍼크리티컬 폼) - 향상된 쿠셔닝, 에너지 반환, 반응성, 경량화',
-    plate: '없음',
-    outsole: '고무 아웃솔 (전족부 접지 면적 효율 개선, 힐 안정성 보강)',
-    upper: 'Breathable Mesh + 리플렉티브 디테일',
-    width: '표준 — 토박스 73.2mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm와 동일), 최대폭 94.8mm(평균 95.2mm). 랩 본문 "we again measured an average result". 한국 공식몰(nbkorea.com, 2026-10-20) 남성 2E·4E / 여성 D',
-    durability: '600km+',
-    price: '209,000원',
-    costPerKm: '약 ₩348/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '뒤꿈치/중족부 착지',
+    weight: '255g (RunRepeat 남성US9 공시 기준). 한국 공식 남성261g·여성208g(각 측정 사이즈 미공시), 드롭6mm. 실험실255g·6.4mm와 조건을 구분.',
+    stackHeight: '37/30.6mm (RunRepeat 힐/전족부). ',
+    drop: '6.4mm (RunRepeat 실측). 공시 조건은 무게 항목에 구분.',
+    midsole: 'Infinion 슈퍼크리티컬 폼 · 21.5 AC · 힐/전족부 SA 147/126 · 에너지 리턴 65.9/69.1% (RunRepeat)',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 94.8mm / 엄지 부위 73.2mm / 엄지 높이 27.1mm. 한국 남성2E·4E, 여성D 상품 확인. 해외 RR 검체의 최광폭94.8mm와 엄지 부위73.2mm는 한국 와이드 치수가 아닙니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
+    wideOptions: true,
   },
-
   priceAnalysis: {
     msrp: 209000,
-    streetPrice: 209000,
-    costPerKm: 348,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['asics-gel-nimbus-28', 'brooks-glycerin-22', 'new-balance-880-v15'],
-    valueAdvantages: ['v14 대비 30g 경량화 (실측 285g → 255g)', '향상된 쿠셔닝과 에너지 반환', '2E/4E 발볼 옵션'],
+    alternatives: [
+      'asics-gel-nimbus-28',
+      'brooks-glycerin-22',
+      'new-balance-880-v15',
+    ],
   },
-
   targetUsers: {
-    recommended: ['편안함을 최우선으로 하는 러너', '장거리 러너', '무릎 보호가 필요한 러너', '1080 시리즈 팬', '가벼운 쿠션화를 원하는 러너'],
-    notRecommended: ['안정성이 필요한 러너', '최대 반발력을 원하는 러너'],
+    recommended: [
+      'Infinion의 부드러운 발밑을 시착해 보려는 러너',
+      '한국 남성2E·4E·여성D 옵션을 비교하는 러너',
+    ],
+    notRecommended: [
+      '부드러운 플랫폼에서 흔들림이 느껴지는 경우',
+      '더 강한 앞쪽 로커 보조를 선호하는데 실제 전환감이 맞지 않는 경우',
+    ],
   },
-
   features: [
-    '질소 주입 인피니온 슈퍼크리티컬 폼 - 향상된 쿠셔닝, 에너지 반환, 통기성',
-    'v14 대비 30g 경량화 (RunRepeat 실측 285g → 255g)',
-    '남성 2E(약간 넓음)·4E(넓음) 발볼 옵션으로 한국인 발에 적합 (여성은 D)',
-    'Breathable Mesh 갑피 + 리플렉티브 디테일',
-    '힐 안정성 보강된 아웃솔 설계',
-    '충격흡수 힐 147 SA (RunRepeat 실측)',
-    '에너지 리턴 전족부 69.1% (RunRepeat 실측)',
+    'Infinion 슈퍼크리티컬 폼',
+    '255g (RunRepeat 남성US9 공시 기준)',
+    '힐/전족부 SA 147/126 · 에너지 리턴 65.9/69.1% (RunRepeat)',
+    '한국 남성2E·4E, 여성D 상품 확인. 해외 RR 검체의 최광폭94.8mm와 엄지 부위73.2mm는 한국 와이드 치수가 아닙니다.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 92,
-      text: 'v14 대비 30g 감량(RunRepeat 실측 285g→255g)과 폼 전환이 이 세대의 핵심입니다. 인피니온 폼은 Fresh Foam X 대비 에너지 리턴과 통기성이 확실히 개선되어 쿠셔닝(9/10)은 Nimbus 28과 동급이면서 무게는 약 26g 가볍습니다. 37mm 힐 스택(실측)에서 무릎 보호도 우수하며, 6mm 드롭의 부드러운 전환이 장거리에서 빛납니다. 20만 9천원으로 v14보다 1만원 올랐지만 600km 내구성으로 km당 약 348원의 가성비를 제공하고, 경량화 덕에 5:00-6:30/km 템포런까지 소화 가능한 범용성이 생겼습니다. 남성 2E/4E 발볼 옵션은 발볼 넓은 한국 러너에게 큰 장점이며, 토박스도 73.2mm로 넓어져 v14의 좁은 토박스(69.8mm)를 피했던 분도 편하게 신을 수 있습니다. 다만 안정성(6/10)은 평범한 편이라 평발이나 과내전 러너는 860 v15가 더 적합합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-1080-v-15',
+      text: '255g과 SA 147/126·에너지 리턴 65.9/69.1%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다.  한국 남성2E·4E, 여성D 상품 확인. 해외 RR 검체의 최광폭94.8mm와 엄지 부위73.2mm는 한국 와이드 치수가 아닙니다.',
     },
     {
-        userType: '예상 적합 — 쿠션은 유지하되 무게를 줄이려는 러너',
-        text: '쿠션량을 포기하지 않으면서 무게를 줄이고 싶은 러너에게 세대 교체 효과가 큰 모델입니다. RunRepeat 실측 기준 전작 v14의 285g에서 255g으로 약 30g 가벼워졌고, 폼이 Fresh Foam X에서 인피니온으로 바뀌며 성격 자체가 달라졌습니다. 힐 37mm 스택(실측)으로 v14와 같은 수준의 쿠션 두께를 유지하면서 무게를 줄인 구성입니다. 255g이면 프리미엄 쿠션화로는 가벼운 축이라 템포런까지 겸할 수 있어, 쿠션화를 느린 페이스 전용으로만 쓰던 경우 활용 범위가 넓어집니다. 남성 2E·4E 와이드가 있어 발볼 넓은 러너도 대응되고, 209,000원·예상 수명 500~700km(추정) 기준 km당 약 300~420원입니다.',
-      },
-    {
-        userType: '모델 선택 — 님버스 28 대비 무게와 폭 옵션',
-        text: '프리미엄 쿠션화 두 모델을 비교하면 무게와 폭 옵션에서 갈립니다. 255g(실측)으로 님버스 28(281g)보다 약 26g 가볍고, 남성은 2E·4E까지 폭 옵션이 넓어 발볼이 넓은 경우 선택지가 많습니다. 가격은 209,000원으로 님버스 28(199,000원)보다 1만원 높습니다. 힐 37mm 스택(실측)의 인피니온 폼에 6mm 드롭이라 뒤꿈치 착지에서 전족부로의 전환이 매끄럽고, 폼 꺼짐이 완만해 예상 수명 500~700km(추정) 기준 km당 약 300~420원입니다. 반대로 더 부드러운 착지감을 원하면 님버스 쪽이 맞습니다.',
-      },
-    {
-        userType: '로테이션 — 레이서와 짝을 이루는 훈련 축',
-        text: '레이스용을 따로 두고 일상 훈련 전반을 담당하기에 맞습니다. 255g(실측)으로 가벼우면서 힐 37mm 스택이라, 25~30km급 LSD에서 충격 흡수를 유지하면서도 4:40/km 수준의 빠른 구간까지 대응합니다. 전작 v14(285g)에서 약 30g 가벼워지며 쿠션화의 활용 범위가 넓어진 것이 세대 변화의 핵심입니다. 주간 60~70km를 소화하는 운용에서 한 켤레로 이지런과 장거리를 모두 커버할 수 있습니다. 남성 2E·4E 와이드가 있고, 예상 수명 500~700km(추정) 기준 km당 약 300~420원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-1080-v15-review-2026/',
+      text: 'RunRepeat는 부드럽고 작은 플랫폼의 흔들림을 주의점으로 들었고, DOR의 Matt은 US10에서 매끄러운 힐 전환과 약한 지오메트리 지지를 느꼈습니다. 두 의견을 하나의 임상 안정성 등급으로 합치지 않습니다.',
+    },
   ],
-
-  similarShoes: ['new-balance-1080-v14', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
+  similarShoes: [
+    'new-balance-1080-v14',
+    'new-balance-880-v15',
+    'brooks-glycerin-22',
+    'asics-gel-nimbus-28',
+  ],
   relatedPosts: [
-    { slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026', title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결' },
+    {
+      slug: 'new-balance-1080-v15-vs-asics-nimbus-28-premium-cushion-2026',
+      title: '1080 v15 vs 님버스 28 — 프리미엄 쿠션 대결',
+    },
   ],
-  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 연결 상품(1080 V15 2E WIDE)이 일시품절
-  // 2026-10-23 발급 — 네이버 지셀렉도쿄 209,800원(정가 100%, TCS 런던 마라톤 컬러 M10802XQ) · 쿠팡 미조회(10/23 접속 차단으로 보류)
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GB3rCpYe' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/GB3rCpYe',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 남성 · 2E · NBPFGF701Y',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701Y&colCode=30&cIdx=',
+        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+      },
+      {
+        label: '한국 공식 남성 · 4E · NBPFGF701J',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF701J&colCode=19&cIdx=',
+        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+      },
+      {
+        label: '한국 공식 여성 · D · NBPFGF702O',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF702O&colCode=80&cIdx=',
+        note: '한국 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원. 확인한 대표SKU 기준.',
+      },
+      {
+        label: 'RunRepeat 1080 V15',
+        url: 'https://runrepeat.com/new-balance-1080-v-15',
+        note: '남성US9 공시 기준. 255g · 37/30.6mm · 드롭6.4mm. 힐/전족부 SA 147/126 · ER 65.9/69.1%. ',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-1080-v15-review-2026/',
+        note: '한국 공식 남성261g·여성208g(각 측정 사이즈 미공시), 드롭6mm. 실험실255g·6.4mm와 조건을 구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '검체·측정 위치·버전에 따라 조건이 다릅니다. 내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값이고, AC와HA는 직접 비교하지 않습니다.',
+      },
+    ],
+    limitations: [
+      '모델별 질환 예방·치료 효과, 공통 최적 페이스와 수명km를 확인하지 못했습니다. 해당 등급·수명값·km당 비용은 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '확인한 상품·성별·폭·시점의 조건만 적용합니다. 재고·구매가는 판매처에서 다시 확인하세요.',
+    ],
+  },
 };

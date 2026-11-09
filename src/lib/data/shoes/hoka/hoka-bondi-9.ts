@@ -1,108 +1,158 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'hoka-bondi-9',
   slug: 'hoka-bondi-9',
   brand: 'Hoka',
   name: '본디 9',
   image: '/images/shoes/hoka/bondi9/side.webp',
-  images: ['/images/shoes/hoka/bondi9/side.webp', '/images/shoes/hoka/bondi9/front.webp', '/images/shoes/hoka/bondi9/back.webp', '/images/shoes/hoka/bondi9/outsole.webp'],
+  images: [
+    '/images/shoes/hoka/bondi9/side.webp',
+    '/images/shoes/hoka/bondi9/front.webp',
+    '/images/shoes/hoka/bondi9/back.webp',
+    '/images/shoes/hoka/bondi9/outsole.webp',
+  ],
   category: '쿠션화',
   rating: 5,
-  price: 229000,
-  description: '호카의 최대 쿠셔닝 모델로, 극강의 푹신함과 안정감을 제공합니다. 관절 보호가 필요하거나 장시간 서있는 분들에게 최적입니다.',
-  oneliner: '303g 최대 쿠션, 123.2mm 초광폭 플랫폼',
-  editorComment: '본디 9는 146 SA 충격흡수와 41mm 힐 스택으로 관절 보호가 최우선인 러너를 위한 신발입니다. 123.2mm 초광폭 플랫폼은 안정성(8/10)을 제공하지만, 303g 무게는 글리세린 22(293g)보다 10g 무겁습니다. Supercritical EVA 폼은 클리프턴 10의 CMEVA보다 탄성이 좋지만, 72.5mm narrow 토박스로 발볼 넓은 한국 러너는 와이드 필수입니다. 22만 9천원 프리미엄 가격이고 7분/km 이상 느린 페이스 전용입니다.\n\n사이즈·구매 가이드: 토박스가 narrow(72.5mm)이므로 발볼 넓은 러너는 반드시 와이드 옵션을 선택하세요. 정가 229,000원에 예상 수명 450~650km(추정) 기준 km당 약 350~510원이며, 맥시멀 쿠션이 필요하면서 예산이 부담된다면 젤 님버스 28나 1080 V14가 비슷한 성격의 대안입니다.',
-  tags: ['맥시멀 쿠셔닝', '관절 보호', '장거리용'],
-
+  description: 'Supercritical EVA 구조의 본디 9. 한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다.',
+  oneliner: '303g 실험실 무게 · Supercritical EVA',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다. DOR 소개 남성297g(US9)·여성263g(US8),43/38mm·드롭5mm. 한국 공시 사양으로 바꾸지 않습니다. RunRepeat 실측 303g,힐/전족부 41.3/32.2mm·드롭9.1mm입니다.  DOR은 쉬운 러닝·걷기·서 있기에서의 구조적인 쿠션감을 평가하면서 부피와 빠른 러닝에서의 한계를 언급했습니다. Matt은 힐 카운터에 민감했으나 David은 자극을 느끼지 않아 착화 반응은 갈립니다. 한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '맥시멀 쿠셔닝',
+    '장거리용',
+  ],
   specs: {
     weight: 303,
     cushioning: 9,
     responsiveness: 7,
     stability: 8,
-    drop: 9,
-    durability: 550,
+    drop: 9.1,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 41,
-      forefoot: 32,
+      heel: 41.3,
+      forefoot: 32.2,
     },
-    drop: 9,
+    drop: 9.1,
     carbonPlate: false,
     plateType: null,
     midsoleType: 'Supercritical EVA',
-    optimalPace: '6:00-8:00 min/km',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'excellent',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['관절 보호 최우선', '장시간 서있는 직업', '체중이 있는 러너', '회복 러닝 전용', '느린 페이스 러너'],
-    notRecommended: ['빠른 페이스 훈련', '경량화 선호', '민첩한 움직임 필요'],
+    recommended: [
+      '비플레이트 EVA 쿠션화의 착화를 비교하는 러너',
+      '넓은 바닥과 로커의 체감을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '힐 카운터 마찰에 민감한 경우',
+      '가벼운 무게·민첩한 전환을 우선하는 경우',
+    ],
   },
-
-  features: ['최대 쿠셔닝', '넓은 베이스', '로커 기술', 'Supercritical EVA', '충격흡수 힐 146 SA (RunRepeat 실측)'],
-
+  features: [
+    'Supercritical EVA',
+    '303g (RunRepeat 남성US9 공시 기준)',
+    '힐/전족부 SA 146/133 · 에너지 리턴 60.2/60.3% (RunRepeat)',
+    '한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요.',
+  ],
   priceAnalysis: {
-    msrp: 229000,
-    streetPrice: 195000,
-    costPerKm: 416,
     valueRating: 7,
     priceTier: 'high',
-    alternatives: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22'],
+    alternatives: [
+      'asics-gel-nimbus-28',
+      'new-balance-1080-v14',
+      'brooks-glycerin-22',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 90,
-      text: '무릎이나 발목 부상 이력이 있는 러너, 체중이 있는 러너에게 최적의 맥시멀 쿠션화입니다. SA 146 충격흡수와 41mm 힐 스택으로 관절 보호 최상위급이며, 123.2mm 초광폭 플랫폼으로 안정성도 뛰어납니다. 303g 무게에 Supercritical EVA 미드솔은 RunRepeat 측정 에너지 리턴 힐 60.2%·전족부 60.3%입니다. 토박스가 72.5mm로 좁아 발볼 넓은 한국 러너는 반드시 와이드 옵션을 선택하세요. 22만 9천원은 프리미엄 가격이지만 관절 보호가 필요한 러너에게는 충분한 투자 가치가 있습니다. 평발 러너에게도 초광폭 베이스가 아치를 안정적으로 지지해주며, 무릎 통증 이력이 있는 러너도 7분/km 이상 편안한 조깅에서 안심하고 사용할 수 있는 맥시멀 쿠션의 정석입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/hoka-bondi-9',
+      text: '303g과 SA 146/133·에너지 리턴 60.2/60.3%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다.  한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요.',
     },
     {
-        userType: '예상 적합 — 체중 부담이 큰 러너의 충격 완화',
-        text: '체중이 있는 편이거나 착지 충격을 줄이는 것이 최우선인 러너를 겨냥한 맥시멀 쿠션화입니다. 41mm 스택이라 체중이 실려도 폼이 끝까지 눌리지 않는 쪽으로 설계돼, 느린 페이스의 장거리에서 안정적입니다. 기본 토박스가 72.5mm로 이 등급치고 넉넉하지 않아 발볼이 넓다면 와이드 선택이 사실상 필요합니다. 예상 수명 450~650km(추정) 기준 km당 약 350~510원으로 22만원대 가격 대비 운용 비용은 무난합니다. 다만 신발이 무릎 통증을 없애주지는 않습니다 — 쿠션은 충격의 크기를 줄일 뿐이고, 통증이 반복된다면 전문의 진단과 훈련량 조정이 먼저입니다.',
-      },
-    {
-        userType: '예상 적합 — 7분대 페이스의 25km급 롱런',
-        text: '7분/km 전후의 느린 페이스로 25km급 롱런을 소화하는 용도에 맞습니다. SA 146의 충격흡수와 힐 41mm 스택이라 20km를 넘겨도 발바닥에 피로가 쌓이지 않는 쪽이고, 플랫폼이 123.2mm로 넓어 평발 성향에서도 접지가 안정적입니다. 다만 303g으로 무거워 페이스가 올라가면 부담이 그대로 느껴지므로, 그룹런처럼 페이스가 변동하는 상황에는 맞지 않습니다. 기본 토박스가 72.5mm로 좁아 발볼이 넓다면 와이드가 사실상 필요하고, 예상 수명 450~650km(추정) 기준 km당 약 350~510원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/hoka-bondi-9-review-2025/',
+      text: 'DOR은 쉬운 러닝·걷기·서 있기에서의 구조적인 쿠션감을 평가하면서 부피와 빠른 러닝에서의 한계를 언급했습니다. Matt은 힐 카운터에 민감했으나 David은 자극을 느끼지 않아 착화 반응은 갈립니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '303g (남성 US 9 기준)',
-    stackHeight: '힐 41mm / 포어풋 32mm',
-    drop: '9.1mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
-    midsole: 'Supercritical EVA (초경량 고탄성 폼) · 충격흡수 146 SA는 RunRepeat 랩 힐 기준',
-    plate: '없음',
-    outsole: '듀라브레이드 러버',
-    upper: '엔지니어드 메쉬',
-    width: '좁은 편 / 와이드 · 토박스 72.5mm — RunRepeat 평균 73.2mm보다 0.7mm 좁고 랩 원문 "Its snug, locked-in toebox makes it an excellent choice for those with narrow feet."',
-    durability: '550km',
-    price: '₩229,000 (MSRP) / 세일 시 ₩195,000~',
-    costPerKm: '약 ₩416/km (550km 기준)',
-    footType: '좁은~보통 발볼(넓으면 와이드) / 평발 OK / 관절 보호 필요한 러너',
-    landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
+    weight: '303g (RunRepeat 남성US9 공시 기준). DOR 소개 남성297g(US9)·여성263g(US8),43/38mm·드롭5mm. 한국 공시 사양으로 바꾸지 않습니다.',
+    stackHeight: '41.3/32.2mm (RunRepeat 힐/전족부). ',
+    drop: '9.1mm (RunRepeat 실측). 공시 조건은 무게 항목에 구분.',
+    midsole: 'Supercritical EVA · 43 AC · 힐/전족부 SA 146/133 · 에너지 리턴 60.2/60.3% (RunRepeat)',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 94.1mm / 엄지 부위 72.5mm / 엄지 높이 29.6mm. 한국 판매 폭은 이번에 확인하지 못했습니다. RR 내부 최광폭94.1mm와 엄지 부위72.5mm를 외부 플랫폼 폭과 구분하세요.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다.',
   },
-
-  similarShoes: ['asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22', 'puma-magnify-nitro-3'],
-  relatedPosts: [
-    { slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026', title: '본디 9 vs 트라이엄프 24 — 같은 41mm 맥스쿠션 대결' },
-    { slug: 'bondi-9-vs-glycerin-max-2-cushion-2026', title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결' },
+  similarShoes: [
+    'asics-gel-nimbus-28',
+    'new-balance-1080-v14',
+    'brooks-glycerin-22',
+    'puma-magnify-nitro-3',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/551Gf7lV' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YCpGHGAC' }],
+  relatedPosts: [
+    {
+      slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
+      title: '본디 9 vs 트라이엄프 24 — 같은 41mm 맥스쿠션 대결',
+    },
+    {
+      slug: 'bondi-9-vs-glycerin-max-2-cushion-2026',
+      title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/551Gf7lV',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YCpGHGAC',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 연결 스토어 확인 범위',
+        url: 'https://linktr.ee/hoka_korea',
+        note: '한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다.',
+      },
+      {
+        label: '한국 공식 연결 스토어 확인 범위',
+        url: 'https://brand.naver.com/hoka/search?q=%EB%B3%B8%EB%94%94%209',
+        note: '한국 공식 연결 스토어에서 본디9 신발 상품의 현재 정가·성별·폭·재고를 확인하지 못했습니다. 검색 부재를 단종·미출시로 해석하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 본디 9',
+        url: 'https://runrepeat.com/hoka-bondi-9',
+        note: '남성US9 공시 기준. 303g · 41.3/32.2mm · 드롭9.1mm. 힐/전족부 SA 146/133 · ER 60.2/60.3%. ',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/hoka-bondi-9-review-2025/',
+        note: 'DOR 소개 남성297g(US9)·여성263g(US8),43/38mm·드롭5mm. 한국 공시 사양으로 바꾸지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '검체·측정 위치·버전에 따라 조건이 다릅니다. 내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값이고, AC와HA는 직접 비교하지 않습니다.',
+      },
+    ],
+    limitations: [
+      '모델별 질환 예방·치료 효과, 공통 최적 페이스와 수명km를 확인하지 못했습니다. 해당 등급·수명값·km당 비용은 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '확인한 상품·성별·폭·시점의 조건만 적용합니다. 재고·구매가는 판매처에서 다시 확인하세요.',
+    ],
+  },
 };
