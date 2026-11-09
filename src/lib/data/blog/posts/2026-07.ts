@@ -5516,100 +5516,93 @@ export const posts_2026_07: BlogPost[] = [
   {
     id: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
     slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
-    title: '템포 트레이너 3파전 | 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5 — 훈련·레이스 겸용, 뭘 신지',
-    description: '"훈련도 하고 하프 레이스도 뛰고 싶은데 한 켤레로 안 될까?"에 답하는 20만원 안팎 템포 트레이너 세 켤레를 정면 비교했습니다. 아디다스 보스턴 13(유리섬유 Energy Rods·컨티넨탈 그립·550km 가성비), 나이키 줌 플라이 6(풀 카본·40mm 스택·베이퍼플라이 DNA), 써코니 엔돌핀 스피드 5(힐 73.2% 반발·나일론 플레이트·부드러운 매일 훈련). 플레이트 종류부터 발볼·내구·가성비까지, 내 훈련에 맞는 한 켤레를 한국 러너 기준으로 골라드립니다.',
-    thumbnail: '/images/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026.webp',
+    title: '보스턴13 vs 줌플라이6 vs 스피드5 — 로드·카본·나일론과 한국 와이드',
+    description: '세 템포 훈련화의 한국 정가·플레이트 재료·실험실 수치·착화 주의점을 원문으로 비교합니다. 미확인 수명·km당 비용과 재료만으로 부상 위험을 정하던 설명을 제거했습니다.',
+    thumbnail: '/images/shoes/adidas/boston13/boston1.webp',
     author: '산초 에디터',
     publishedAt: '2026-07-03',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['템포 트레이너', '아디다스 보스턴 13', '나이키 줌 플라이 6', '써코니 엔돌핀 스피드 5', '카본 트레이너', '슈퍼트레이너'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>셋 다 "훈련+레이스 겸용" 템포 트레이너지만 플레이트 성격이 다릅니다</strong> — 보스턴 13은 유리섬유 Energy Rods, 줌 플라이 6은 풀 카본, 엔돌핀 스피드 5는 나일론(유연)</li>
-    <li><strong>가성비·내구·그립 → 보스턴 13</strong>(189k·550km·컨티넨탈), <strong>풀카본 스피드 → 줌 플라이 6</strong>(단 발볼 좁음), <strong>부드러운 반발·매일 훈련 → 엔돌핀 스피드 5</strong>(힐 73.2%·전족 78.2% 리턴)</li>
-    <li>발볼 넓은 한국 러너는 <strong>줌 플라이 6(좁음) 주의</strong>, 보스턴 13도 토박스가 좁은 편(70.6mm)이라 시착 권장, 엔돌핀은 표준입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>"훈련도 하고 하프 레이스도 뛰는 한 켤레"를 찾는다면 셋 다 정답이지만 결이 다릅니다. <strong>가성비·내구·비오는 날까지 만능이면 보스턴 13</strong>, <strong>빠른 페이스에서 풀카본 추진력이면 줌 플라이 6</strong>(발볼 좁음 주의), <strong>매일 부드럽게 굴리는 갓성비면 엔돌핀 스피드 5</strong>입니다. 한 단계 위 고스택 슈퍼트레이너가 궁금하면 <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3 vs 에보 SL vs 마하 6</a>도 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>세 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>보스턴 13</th><th>줌 플라이 6</th><th>엔돌핀 스피드 5</th></tr></thead>
-  <tbody>
-    <tr><td>브랜드</td><td>아디다스</td><td>나이키</td><td>써코니</td></tr>
-    <tr><td><strong>한국 가격</strong></td><td><strong>189,000원(최저)</strong></td><td>209,000원</td><td>219,000원</td></tr>
-    <tr><td>무게(US 9)</td><td>254g</td><td>248g</td><td><strong>241g(최경량)</strong> <small>· 공식 238g</small></td></tr>
-    <tr><td>힐 스택</td><td>36mm</td><td><strong>40mm(최고)</strong></td><td>37.4mm <small>· 공식 36mm</small></td></tr>
-    <tr><td>드롭</td><td>6mm</td><td>10mm</td><td>10.6mm <small>· 공식 8mm</small></td></tr>
-    <tr><td>미드솔</td><td>Lightstrike Pro</td><td>ZoomX+SR-02</td><td>PWRRUN PB(PEBA)</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>유리섬유 Energy Rods</td><td>풀 카본</td><td><strong>나일론(유연)</strong></td></tr>
-    <tr><td>에너지 리턴</td><td>높음</td><td>힐 61% / 앞발 67%</td><td><strong>힐 73.2%·전족 78.2%(최고)</strong></td></tr>
-    <tr><td>아웃솔</td><td><strong>컨티넨탈(그립최강)</strong></td><td>러버</td><td>XT-900 러버</td></tr>
-    <tr><td><strong>발볼</strong></td><td>좁은 편</td><td><strong>좁음(narrow)</strong></td><td>표준</td></tr>
-    <tr><td>안정성</td><td><strong>높음(8)</strong></td><td>중(7)</td><td>낮음(5)</td></tr>
-    <tr><td>내구성 / km당</td><td><strong>550km / 343원</strong></td><td>400km / 523원</td><td>500km / 438원</td></tr>
-    <tr><td>대표 성격</td><td>가성비 만능 내구</td><td>풀카본 스피드</td><td>부드러운 매일 훈련</td></tr>
-  </tbody>
-</table>
-<p><small>※ 엔돌핀 스피드 5의 무게·스택·드롭은 RunRepeat 실측이고 옆은 써코니 공식 표기입니다. 보스턴 13·줌 플라이 6의 무게·스택·드롭은 신발 DB 표기값으로 측정 기준(공식·실측)이 적혀 있지 않아, 세 신발의 1~2mm·몇 g 차이는 참고로만 보세요(2026-10-23 기준). 에너지 리턴은 RunRepeat 실측, 가격은 한국 MSRP입니다.</small></p>
-
-<h2>보스턴 13 — 가성비·내구·그립의 만능 트레이너</h2>
-<p><a href="/shoes/adidas-boston-13">아디다스 보스턴 13</a>은 "훈련도 하고 레이스도 뛰고 싶은데 하나로 안 되나요?"에 가장 먼저 추천하는 만능 템포 트레이너입니다. <strong>Lightstrike Pro + 유리섬유 Energy Rods 2.0</strong>(통짜 플레이트 대신 유리섬유 막대)로 254g에 뛰어난 반응성을 내면서, 셋 중 <strong>가장 저렴하고(189,000원) 가장 오래 갑니다(550km)</strong>. km당 약 343원으로 플레이트 트레이너 중 가성비 최상위죠.</p>
-<p>결정적 강점은 <strong>컨티넨탈 러버 아웃솔</strong>입니다. 비 온 뒤 젖은 한강·아스팔트에서도 그립이 확실해 사계절 훈련에 안심이 됩니다. 안정성도 8로 셋 중 가장 높아 25km LSD에서도 무릎 부담이 적고요. 발볼은 좁은 편(RunRepeat 토박스 70.6mm, 평균 73.2mm)이고 와이드 옵션도 없어 발볼이 넓다면 시착이 필요합니다.</p>
-<p><strong>✅ 이런 분께</strong> — 훈련+하프 레이스 겸용 한 켤레 / 가성비·내구를 중시 / 비 오는 날도 자주 뛰는 러너 / 안정감을 원하는 중급+</p>
-
-<h2>줌 플라이 6 — 풀 카본 + 최고 스택의 스피드형</h2>
-<p><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a>은 <strong>베이퍼플라이의 기술을 훈련용으로 옮긴</strong> 슈퍼트레이너입니다. <strong>ZoomX + SR-02 듀얼 폼 + 풀렝스 카본 Flyplate</strong>로, 셋 중 유일하게 통짜 카본 플레이트를 넣어 빠른 페이스(3분30초~5분/km)에서 추진력이 가장 또렷합니다. 힐 스택 40mm로 셋 중 가장 두꺼워 충격 흡수도 좋고, 베이퍼플라이(30만 9천원)의 약 68% 값이라 카본 입문용으로 인기죠.</p>
-<p>단점은 두 가지입니다. 첫째, <strong>발볼이 좁아(narrow) 발볼 넓은 한국 러너에게 부담</strong>이고 와이드 옵션도 없습니다. 둘째, 내구성이 400km로 셋 중 가장 짧아 km당 523원으로 비용이 높습니다. "빠른 페이스에서 풀카본 손맛"을 원하는 <strong>발볼 표준~좁은 중급 이상</strong>에게 맞습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 풀카본 추진력을 원하는 러너 / 빠른 템포·인터벌 / 발볼 표준~좁음 / 카본 플레이트 입문</p>
-
-<h2>엔돌핀 스피드 5 — 부드러운 반발, 매일 굴리는 갓성비</h2>
-<p><a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a>는 21만9천원에 <strong>힐 73.2%·전족부 78.2% 에너지 리턴</strong>(RunRepeat 실측)을 내는데, 이는 슈퍼슈즈급 수치이고 핵심은 <strong>나일론 플레이트</strong>라는 점입니다. 카본보다 유연해 <strong>매일 훈련에 투입해도 발·아킬레스 부담이 적고</strong>, 241g 최경량에 통기성도 좋아 여름 템포런에 쾌적합니다.</p>
-<p>즉 줌 플라이 6이 "빳빳한 풀카본 스피드"라면, 엔돌핀 스피드 5는 "부드럽게 반발하는 매일 훈련화"입니다. 서브4 목표 러너가 슈퍼슈즈 사기 전 실력을 키우는 훈련화로 최적이고, 하프 레이스에도 그대로 투입할 수 있죠. 안정성은 5로 낮은 편이라 과내전이 심하면 주의하세요. 발볼은 표준이고, 한국 공식몰에 남녀 와이드도 있습니다(2026-10-20 확인).</p>
-<p><strong>✅ 이런 분께</strong> — 매일 템포·인터벌을 부드럽게 / 슈퍼슈즈 입문 전 훈련화 / 최경량·통기성 선호 / 나일론 플레이트의 유연함</p>
-
-<h2>내 훈련엔 뭘 신을까</h2>
-<ul>
-  <li><strong>"한 켤레로 오래, 가성비 좋게, 비오는 날도"</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 189k·550km·컨티넨탈 그립으로 만능입니다.</li>
-  <li><strong>"빠른 페이스에서 풀카본 추진력"</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>. 단 발볼이 좁으니 넓은 발은 피하세요.</li>
-  <li><strong>"매일 부드럽게 굴리는 훈련화, 발·관절 부담 적게"</strong> → <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>. 나일론 플레이트라 유연하고 73% 반발입니다.</li>
-  <li><strong>"발볼이 넓다"</strong> → 엔돌핀 스피드 5(표준, 엔돌핀은 와이드도 있음). 보스턴 13은 좁은 편이라 시착 필수, 줌 플라이 6(좁음)은 비추천.</li>
-  <li><strong>"이것보다 더 두껍고 부드러운 고스택 슈퍼트레이너"</strong> → <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">슈퍼블라스트 3·에보 SL·마하 6</a>을 보세요. 레이스 당일용 풀 카본 레이서는 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 상위 모델입니다.</li>
+    category: 'review',
+    readingTime: 6,
+    tags: [
+      '템포 트레이너',
+      '아디다스 보스턴 13',
+      '나이키 줌 플라이 6',
+      '써코니 엔돌핀 스피드 5',
+      '카본 트레이너',
+      '슈퍼트레이너',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">템포 훈련화 선택</span><ul><li><strong>보스턴13은 유리섬유 로드, 줌플라이6는 카본, 스피드5는 나일론입니다.</strong> 재료별 승차감과 실제 발 고정을 비교하세요.</li>
+<li><strong>확인한 정가는18.9만·20.9만·21.9만원입니다.</strong> 할인가는 색상·사이즈마다 달라 정가 순서와 다를 수 있습니다.</li>
+<li><strong>한국 남녀 와이드는 스피드5에서 확인했습니다.</strong> 줌플라이6의 중족부 폭·낮은 토박스도 별도로 확인할 부분입니다.</li>
 </ul>
-<p>카본·나일론 플레이트의 원리와 입문 주의점은 <a href="/blog/carbon-plate-shoes-guide-2026">카본 플레이트 러닝화 가이드</a>에서 더 깊게 정리했습니다.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 카본 플레이트와 나일론 플레이트, 뭐가 다른가요?</p>
-    <p class="faq-a">A. 빳빳한 로드·플레이트 계열(보스턴의 유리섬유 로드·줌플라이의 카본)은 <strong>추진력이 또렷</strong>하지만 발·아킬레스 부담이 큽니다. 나일론(엔돌핀)은 <strong>더 유연해 매일 훈련에 부담이 적고</strong> 부드럽게 반발합니다. 레이스 손맛은 카본, 매일 훈련의 편안함은 나일론이 유리합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 입문자가 첫 신발로 이 중 하나를 골라도 되나요?</p>
-    <p class="faq-a">A. 셋 다 <strong>중급 이상 템포 트레이너</strong>라 완전 입문용으로는 과합니다. 조깅 위주 입문이라면 쿠션 데일리(페가수스·노바블라스트 등)가 낫고, 이 세 켤레는 <strong>빠른 훈련을 시작하는 중급자</strong>에게 맞습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 셋 다 괜찮나요?</p>
-    <p class="faq-a">A. <strong>줌 플라이 6은 발볼이 좁아(narrow) 비추천</strong>입니다. 보스턴 13·엔돌핀 스피드 5는 표준이라 보통 발볼은 무난합니다. 보스턴 13·줌 플라이 6은 와이드 옵션이 없지만 엔돌핀 스피드 5는 한국 공식몰에 남녀 와이드가 있으니(2026-10-20 확인), 매우 넓은 발이라면 엔돌핀 스피드 5 와이드를 시착해 보길 권합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 하프마라톤 레이스에 그대로 신어도 되나요?</p>
-    <p class="faq-a">A. 네, 셋 다 <strong>하프 레이스에 직접 투입 가능</strong>한 템포 트레이너입니다. 다만 풀코스 PB가 목표라면 더 반발 높은 풀 카본 레이서(베이퍼플라이·알파플라이 등)가 유리합니다. 이 셋은 "훈련 겸 하프 레이스"의 가성비 지점입니다.</p>
-  </div>
 </div>
-
-<p><small>출처: 각 모델 상세 페이지(보스턴 13·줌 플라이 6·엔돌핀 스피드 5) 스펙 및 RunRepeat 실측·에디터 분석 종합 · 한국 공식가 기준 · 작성 2026년 7월 3일.</small></p>
-`,
+<table><thead><tr><th>항목</th><th>보스턴13</th><th>줌플라이6</th><th>엔돌핀 스피드5</th></tr>
+</thead>
+<tbody><tr><th>한국 정가·조건</th><td>189,000원 KH9563</td><td>209,000원 FN8454-006</td><td>219,000원 한국 일반·와이드</td></tr>
+<tr><th>실험실 무게</th><td>254g</td><td>248g</td><td>241g</td></tr>
+<tr><th>실험실 힐/전족부 스택</th><td>34.3/28.3mm</td><td>39.7/30.1mm</td><td>37.4/26.8mm</td></tr>
+<tr><th>실험실 드롭</th><td>6mm</td><td>9.6mm</td><td>10.6mm</td></tr>
+<tr><th>폼</th><td>Lightstrike Pro + Lightstrike2.0</td><td>ZoomX + SR-02 (DOR 명칭)</td><td>PWRRUN PB</td></tr>
+<tr><th>로드·플레이트</th><td>유리섬유 ENERGYRODS2.0</td><td>전장 카본 Flyplate</td><td>윙 형태 나일론</td></tr>
+<tr><th>힐/전족부 SA</th><td>127/108</td><td>144/111</td><td>132/108</td></tr>
+<tr><th>힐/전족부 에너지 리턴</th><td>63.4/69.7%</td><td>61/67%</td><td>73.2/78.2%</td></tr>
+<tr><th>내부 최광폭 / 엄지 부위</th><td>97.3/70.6mm</td><td>90.9/72.6mm</td><td>93.8/72.9mm</td></tr>
+</tbody>
+</table>
+<p>위 표의 무게·스택·드롭·SA·에너지 리턴은 RunRepeat의 남성 US9 공시 기준입니다. 한국 판매 SKU와 실험실 검체의 동일성, 와이드의 치수는 확인하지 못했습니다. 내부 최광폭과 엄지 부위 너비는 서로 다른 위치입니다. SA는 실험실 충격흡수, 에너지 리턴은 에너지 회수 값이며 부상 예방률·기록 향상률을 뜻하지 않습니다.</p>
+<h2>보스턴13: 확인 정가가 낮은 로드형 후보</h2>
+<p>189,000원인 KH9563는 Lightstrike Pro와 Lightstrike2.0, 유리섬유 ENERGYRODS2.0을 씁니다. ‘전장 Lightstrike Pro’나 ‘카본 로드’로 적지 않았습니다. Continental과 LIGHTTRAXION 아웃솔 구성은 확인했지만, 그 상표에서 비 오는 날의 안전이나 공통550km 수명을 도출하지 않았습니다. 엄지 부위70.6mm로 앞쪽이 맞는지 시착이 필요합니다.</p>
+<h2>줌플라이6: 카본 유무보다 볼륨과 고정을 함께</h2>
+<p>한국 제조사는 전장 카본 파이버 Flyplate와 ZoomX를 명시합니다. 하부 폼은 DOR의 SR-02 명칭을 사용했습니다. RunRepeat 본문에 ReactX와 SR-02 표기가 충돌해 정확한 배합은 미확인으로 남겼습니다.</p>
+<p>한국 공식265g은280mm 조건이고 표의248g은 다른 실험실 공시 조건입니다. 둘을 같은 사이즈에서의 오차로 설명하지 않았습니다. DOR은 낮은 토박스 용적과 높은 플랫폼의 흔들림, 젖은 노면 접지를 주의점으로 들었습니다. 좁은 내부 최광폭90.9mm와 높이24.5mm를 참고하되 ‘모든 넓은 발에게 불가능’하다고 확정하지 않습니다.</p>
+<h2>스피드5: 나일론 전환감과 한국 와이드</h2>
+<p>PWRRUN PB와 나일론 플레이트·SPEEDROLL을 사용합니다. 실험실 에너지 리턴은 이 셋에서 높지만 이를 실제 러닝 효율의 동일한 순위로 바꾸지 않습니다. DOR은 전작보다 부드러운 뒤꿈치 전환을 평가했고, 낮은 중족부·전족부 용적과 단단한 힐 카운터는 주의점으로 남겼습니다.</p>
+<p>한국 공식 남녀 일반M·와이드W 상품이 확인됐습니다. 폭 선택이 필요한 러너에게 구체적인 후보가 됩니다. 다만 나일론이므로 매일 뛰어도 발목·아킬레스 부하가 누적되지 않는다는 기존 설명은 근거가 없어 제거했습니다.</p>
+<h2>공시 드롭과 실측 드롭을 구분하세요</h2>
+<p>보스턴13 한국 공식은36/30mm·6mm, 줌플라이6 한국 공식 드롭은8mm, 스피드5의 DOR 소개 사양은36/28mm·8mm입니다. 특히 스피드5는 실험실10.6mm와 차이가 있어 표에 공시8mm를 섞지 않았습니다. 평소 익숙한 드롭과 비교할 때 어느 출처의 값인지 함께 보세요.</p>
+<h2>훈련용 후보를 좁히려면</h2>
+<ul><li>로드형 구조와 확인 정가를 우선하면 보스턴13을 시착 후보로.</li>
+<li>전장 카본 훈련화를 원하면 줌플라이6의 발등·중족부 고정과 코너 감각을 확인.</li>
+<li>한국 남녀 와이드가 필요하면 스피드5의 해당SKU와 사이즈를 확인.</li>
+<li>한 켤레로 조깅도 한다면 템포 체감뿐 아니라 평소 쉬운 속도의 전환을 비교.</li>
+</ul>
+<h2>수명과 페이스로 승자를 정하지 않은 이유</h2>
+<p>공통 수명 km, 질환별 예방·치료 효과, 누구에게나 맞는 최적 페이스를 뒷받침하는 자료는 확인하지 못했습니다. 아웃솔 내마모 시험의 깊이(mm)를 수명(km)으로 바꾸지 않았고, 기존의 수명·km당 비용·부상 등급·페이스 범위에 따른 추천을 제거했습니다. 매일 신을 수 있는지는 소재 하나보다 실제 착화와 훈련 후 반응을 함께 봐야 합니다.</p>
+<h2>구매 전 자주 묻는 질문</h2>
+<h3>나일론이면 카본보다 부상 위험이 낮나요?</h3>
+<p>재료 이름만으로 모델별 임상 위험을 정할 근거는 확인하지 못했습니다. 나일론 플레이트인 스피드5도 힐 카운터와 낮은 중족부 용적을 주의점으로 언급한 착화 리뷰가 있습니다.</p>
+<h3>발볼이 넓을 때 확인된 한국 선택지는요?</h3>
+<p>스피드5의 남녀 일반M·와이드W 상품을 한국 공식몰에서 확인했습니다. W를 별도 근거 없이2E/D로 바꾸지 않습니다. 보스턴13은 확인SKU가 레귤러, 줌플라이6는 확인SKU에 폭 선택 UI가 없었으며 모델 전체 와이드 부재의 증거는 아닙니다.</p>
+<h3>가장 저렴하고 오래 가는 모델은요?</h3>
+<p>확인한 정가는 보스턴13이189,000원으로 셋 중 낮습니다. 할인·사이즈 조건은 구매 시점별로 다르고, 비교 가능한 수명km는 확인하지 못해 오래 가는 순위를 매기지 않았습니다.</p>
+<h2>다시 확인한 원문</h2>
+<ul><li><a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">아디다스 한국 보스턴13 KH9563</a>: 정가189,000원,260g(사이즈 조건 미표기),36/30mm·6mm, 이중폼과 유리섬유 로드</li>
+<li><a href="https://www.nike.com/kr/t/줌-플라이-6-남성-로드-레이싱화-r5abpTB8/FN8454-006" target="_blank" rel="noopener noreferrer">나이키 한국 FN8454-006</a>: 정가209,000원,265g(280mm),드롭8mm·카본Flyplate</li>
+<li><a href="https://saucony.co.kr/product/남성-엔돌핀-스피드-5-와이드-blackwhite/216/category/42/display/1/" target="_blank" rel="noopener noreferrer">써코니 한국 남성 와이드</a>: S21008-01,정가219,000원,W표기</li>
+<li><a href="https://www.saucony.co.kr/product/detail.html?cate_no=45&display_group=1&product_no=215" target="_blank" rel="noopener noreferrer">써코니 한국 여성 와이드</a>: S11008-140,정가219,000원,W표기</li>
+<li><a href="https://runrepeat.com/adidas-adizero-boston-13" target="_blank" rel="noopener noreferrer">RunRepeat adidas-adizero-boston-13</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/nike-zoom-fly-6" target="_blank" rel="noopener noreferrer">RunRepeat nike-zoom-fly-6</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/saucony-endorphin-speed-5" target="_blank" rel="noopener noreferrer">RunRepeat saucony-endorphin-speed-5</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://www.doctorsofrunning.com/nike-zoom-fly-6-review-2024-release/" target="_blank" rel="noopener noreferrer">Doctors of Running 줌플라이6</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://www.doctorsofrunning.com/saucony-endorphin-speed-5-review-2025/" target="_blank" rel="noopener noreferrer">Doctors of Running 스피드5</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a>: 측정 위치·표본·시험 조건</li>
+</ul>
+<p><small>확인일 2026-11-09. 제조사 상품 조건·실험실 검체·리뷰어 착화 의견을 구분했습니다. 자체 실주행 후기는 아닙니다.</small></p>`,
+    faqs: [
+      {
+        question: '나일론이면 카본보다 부상 위험이 낮나요?',
+        answer: '재료 이름만으로 모델별 임상 위험을 정할 근거는 확인하지 못했습니다. 나일론 플레이트인 스피드5도 힐 카운터와 낮은 중족부 용적을 주의점으로 언급한 착화 리뷰가 있습니다.',
+      },
+      {
+        question: '발볼이 넓을 때 확인된 한국 선택지는요?',
+        answer: '스피드5의 남녀 일반M·와이드W 상품을 한국 공식몰에서 확인했습니다. W를 별도 근거 없이2E/D로 바꾸지 않습니다. 보스턴13은 확인SKU가 레귤러, 줌플라이6는 확인SKU에 폭 선택 UI가 없었으며 모델 전체 와이드 부재의 증거는 아닙니다.',
+      },
+      {
+        question: '가장 저렴하고 오래 가는 모델은요?',
+        answer: '확인한 정가는 보스턴13이189,000원으로 셋 중 낮습니다. 할인·사이즈 조건은 구매 시점별로 다르고, 비교 가능한 수명km는 확인하지 못해 오래 가는 순위를 매기지 않았습니다.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'tecton-x-3-vs-ultrafly-vs-s-lab-pulsar-carbon-trail-2026',

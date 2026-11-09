@@ -109,11 +109,11 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
-      title: '에보 SL vs 노바블라스트 6 — 반발이냐 수명이냐',
+      title: 'Evo SL vs 노바블라스트6 — 무게·가격·한국 와이드',
     },
     {
       slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
-      title: '에보 SL vs 보스턴 13 — 2만원 더 주고 31g을 산다',
+      title: 'Evo SL vs 보스턴13 — 가격·구조·실측 조건',
     },
     {
       slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
@@ -121,7 +121,7 @@ export const shoe: Shoe = {
     },
     {
       slug: 'adidas-running-shoes-lineup-tier-guide-2026',
-      title: '아디다스 러닝화 계급도',
+      title: '아디다스 러닝화 라인업 — 용도와 구조 비교',
     },
     {
       slug: 'running-shoe-midsole-foam-guide-2026',

@@ -17,10 +17,10 @@ export function formatManwon(won: number | null | undefined, empty = '-'): strin
 }
 
 /**
- * 정가 "₩189,000". 국내 정가가 없으면(한국 미출시·미발표) `empty` 를 돌려준다.
+ * 정가 "₩189,000". 국내 정가를 확인하지 못했으면 `empty` 를 돌려준다.
  * 종전 `₩{price?.toLocaleString()}` 는 값이 없을 때 "₩" 기호만 남겼다(2026-10-23 엔돌핀 스피드 6 상세 2곳).
  */
-export function formatWon(won: number | null | undefined, empty = '국내 정가 없음'): string {
+export function formatWon(won: number | null | undefined, empty = '국내 정가 미확인'): string {
   return typeof won === 'number' && won > 0 ? `₩${won.toLocaleString()}` : empty;
 }
 

@@ -122,7 +122,7 @@ export const shoe: Shoe = {
     { slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026', title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5' },
     { slug: 'new-balance-sc-elite-v5-review', title: 'SC Elite V5 심층 후기' },
     { slug: 'nike-vaporfly-4-vs-alphafly-3-comparison', title: '베이퍼플라이4 vs 알파플라이3 — 카본 레이서' },
-    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 계급도' },
+    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 라인업 — 모델·세대·폭' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
   purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5EC4W6S9' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YSGPBv9U' }],

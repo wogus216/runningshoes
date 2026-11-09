@@ -1,115 +1,179 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인: 2026-11-09. 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
-  id: 'asics-superblast-3',
-  slug: 'asics-superblast-3',
-  brand: 'Asics',
-  name: '슈퍼블라스트 3',
-  image: '/images/shoes/asics/superblast3/side.webp',
-  images: [
-    '/images/shoes/asics/superblast3/side.webp',
-    '/images/shoes/asics/superblast3/front.webp',
-    '/images/shoes/asics/superblast3/back.webp',
-    '/images/shoes/asics/superblast3/angle.webp',
-    '/images/shoes/asics/superblast3/outsole.webp',
-    '/images/shoes/asics/superblast3/top.webp',
+  "id": "asics-superblast-3",
+  "slug": "asics-superblast-3",
+  "brand": "Asics",
+  "name": "슈퍼블라스트 3",
+  "image": "/images/shoes/asics/superblast3/side.webp",
+  "images": [
+    "/images/shoes/asics/superblast3/side.webp",
+    "/images/shoes/asics/superblast3/front.webp",
+    "/images/shoes/asics/superblast3/back.webp",
+    "/images/shoes/asics/superblast3/angle.webp",
+    "/images/shoes/asics/superblast3/outsole.webp",
+    "/images/shoes/asics/superblast3/top.webp"
   ],
-  category: '레이싱',
-  rating: 5,
-  price: 259000,
-  description:
-    'FF LEAP와 FF BLAST PLUS를 조합한 아식스의 최신 슈퍼트레이너. 더 부드럽고 바운시해진 라이드로 롱런, 마라톤 훈련, 업템포까지 넓게 커버합니다.',
-  oneliner: '실측 235g 슈퍼트레이너, 더 부드럽고 더 빠르게 돌아온 슈블',
-  editorComment:
-    '슈퍼블라스트 3는 전작의 뻣뻣함과 좁은 핏을 손보면서 "슈퍼트레이너"라는 이름값을 다시 회복하려는 업데이트입니다. RunRepeat 실측 힐 45.8mm·전족 37.7mm 스택에 235g(남성 US 9)이면 매우 강한 스펙이고, FF LEAP가 들어가면서 easy run보다 롱런과 업템포에서 진가가 크게 살아납니다. 공식 가격 25만 9천원은 여전히 높지만, 레이싱화와 훈련화 사이를 한 켤레로 메우고 싶은 러너라면 충분히 납득 가능한 가격대입니다.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 71.6mm로 랩 평균(73.2mm)보다 좁고 와이드 옵션이 없어, 발볼이 넓은 러너는 반드시 매장에서 신어보고 결정하세요. 정가는 259,000원입니다. 같은 용도로 카본 없이 부드러운 롱런을 원하면 엔돌핀 트레이너, 가격 부담을 줄이려면 줌 플라이 6가 대안입니다.',
-  tags: ['슈퍼트레이너', '고반발', '장거리', '업템포'],
-  specs: {
-    weight: 235,
-    cushioning: 10,
-    responsiveness: 8,
-    stability: 6,
-    drop: 8,
-    durability: 550,
-  },
-  biomechanics: {
-    stackHeight: { heel: 45.8, forefoot: 37.7 },
-    drop: 8,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'FF LEAP + FF BLAST PLUS',
-    optimalPace: '4:00-5:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-  koreanFootFit: {
-    toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
-  },
-  targetUsers: {
-    recommended: ['슈퍼트레이너 한 켤레로 훈련을 해결하고 싶은 러너', '롱런과 마라톤 페이스 훈련 비중이 큰 러너', '가볍고 반응성 있는 고스택화를 찾는 러너'],
-    notRecommended: ['안정성이 최우선인 러너', '입문 단계의 첫 러닝화를 찾는 러너', '강한 교정이 필요한 러너'],
-  },
-  features: [
-    '공식 46.5/38.5mm 스택(RunRepeat 실측 45.8/37.7mm), 8mm 드롭의 최신 슈퍼트레이너',
-    '아식스 코리아 기준 239g, 공식 가격 ₩259,000',
-    'FF LEAP + FF BLAST PLUS 조합으로 부드럽고 바운시한 전환',
-    '전작 수준의 토박스 폭에 더 매끈해진 힐 전환',
-    '롱런, 업템포, 마라톤 훈련까지 넓은 활용 범위',
-    '충격흡수 힐 154 SA (RunRepeat 실측)',
+  "category": "레이싱",
+  "rating": 5,
+  "price": 259000,
+  "description": "FF LEAP + FF BLAST PLUS 미드솔을 쓰는 슈퍼블라스트 3. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함.",
+  "oneliner": "235g 실험실 무게 · FF LEAP + FF BLAST PLUS",
+  "editorComment": "2026-11-09 원문 재확인. 한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함. 46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님. RunRepeat 실측은 235g, 힐/전족부 45.8/37.7mm, 드롭 8.1mm입니다. RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했지만, DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했습니다. DOR 리뷰어끼리도 활용성 평가가 갈려 보편적인 안정성·보호 효과로 합치지 않습니다. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  "tags": [
+    "슈퍼트레이너",
+    "고반발",
+    "장거리",
+    "업템포"
   ],
-  priceAnalysis: {
-    msrp: 259000,
-    streetPrice: 259000,
-    costPerKm: 471,
-    valueRating: 8,
-    priceTier: 'premium',
-    alternatives: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
+  "specs": {
+    "weight": 235,
+    "cushioning": 10,
+    "responsiveness": 8,
+    "stability": 6,
+    "drop": 8.1
   },
-  detailedSpecs: {
-    weight: '235g (RunRepeat 랩 실측, 남성 US 9) · 기존 표기 239g(아식스 코리아 기준, 이번에 미확인)',
-    stackHeight: '힐 45.8mm / 포어풋 37.7mm (RunRepeat 랩 실측, 남성 US 9) · 공식 46.5/38.5mm(기존 표기)',
-    drop: '공식 8mm / RunRepeat 실측 8.1mm',
-    midsole: 'FF LEAP + FF BLAST PLUS',
-    plate: '없음',
-    outsole: 'ASICSGRIP + AHAR Lo',
-    upper: '엔지니어드 우븐',
-    width: '좁음 — RunRepeat 토박스 71.6mm(랩 평균 73.2mm보다 1.6mm 좁음, 남성 US 9) · 최대폭 95.7mm(평균 95.2mm). RunRepeat: "ASICS continues to favor a toebox that does not open much, targeting runners who prefer a secure and snug fit. In fact, it falls below our lab average at 71.6 mm." → 랩 본문이 snug를 명시해 narrow · 와이드 없음(기존 표기 — 한국 공식몰 미확인)',
-    durability: '500-600km',
-    price: '₩259,000 (MSRP)',
-    costPerKm: '약 ₩471/km (550km 기준)',
-    footType: '중립',
-    landingPattern: '힐스트라이크~미드풋',
+  "biomechanics": {
+    "stackHeight": {
+      "heel": 45.8,
+      "forefoot": 37.7
+    },
+    "drop": 8.1,
+    "carbonPlate": false,
+    "plateType": null,
+    "midsoleType": "FF LEAP + FF BLAST PLUS"
   },
-  reviews: [
+  "koreanFootFit": {
+    "toBoxWidth": "narrow",
+    "winterCompatibility": "good",
+    "summerCompatibility": "good"
+  },
+  "targetUsers": {
+    "recommended": [
+      "높은 스택의 비플레이트 트레이너를 시착해 보려는 러너",
+      "부드러운 발밑 감각을 선호하는 러너"
+    ],
+    "notRecommended": [
+      "부드럽고 높은 플랫폼에서 흔들림을 느끼는 경우",
+      "확인되지 않은 폭·재고를 전제로 구매하는 경우"
+    ]
+  },
+  "features": [
+    "FF LEAP + FF BLAST PLUS",
+    "전장 카본 플레이트 없음",
+    "235g (RunRepeat 남성 US9 공시 기준)",
+    "힐/전족부 에너지 리턴 67.8/67.5% (RunRepeat)"
+  ],
+  "priceAnalysis": {
+    "msrp": 259000,
+    "valueRating": 8,
+    "priceTier": "premium",
+    "alternatives": [
+      "new-balance-sc-trainer-v3",
+      "saucony-endorphin-trainer",
+      "nike-zoom-fly-6"
+    ]
+  },
+  "detailedSpecs": {
+    "weight": "235g (RunRepeat 남성 US9 공시 기준). 46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님.",
+    "stackHeight": "45.8/37.7mm (RunRepeat 힐/전족부)",
+    "drop": "8.1mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
+    "midsole": "FF LEAP + FF BLAST PLUS · 경도 22.8 AC · SA 154/153 · 에너지 리턴 67.8/67.5% (힐/전족부, RunRepeat)",
+    "plate": "전장 카본 플레이트 없음",
+    "width": "RunRepeat 내부 최광폭 95.7mm / 엄지 부위 71.6mm. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다.",
+    "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
+    "price": "한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함."
+  },
+  "reviews": [
     {
-      userType: '에디터 분석',
-      rating: 93,
-      text: '"레이싱화와 훈련화 사이를 한 켤레로 커버하고 싶다"는 러너에게 추천하는 아식스 최신 슈퍼트레이너입니다. FF LEAP + FF BLAST PLUS 듀얼 폼으로 RunRepeat 실측 235g(남성 US 9)에 힐 45.8mm 스택을 실현했고, 전족 에너지 리턴도 67.5%(실측)로 높습니다. 다만 토박스는 실측 71.6mm로 전작(72.3mm)보다 넓어지지 않았고, 힐 전환은 훨씬 부드러워졌습니다. 8mm 드롭과 중립 설계로 과내전이 없는 한국 러너에게 적합합니다. 단, 와이드 옵션이 없고 안정성이 다소 부족해 발볼 매우 넓거나 평발인 러너는 주의가 필요합니다. 무릎 보호를 위해서라면 높은 스택이 도움이 되지만 안정화 수준은 아닙니다.',
+      "userType": "원문 기반 에디터 분석",
+      "source": "editor",
+      "sourceUrl": "https://runrepeat.com/asics-superblast-3",
+      "text": "235g과 SA 154/153·에너지 리턴 67.8/67.5%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 한국 공식 폭·와이드 여부와 실시간 재고는 미확인입니다. 일반 사이즈 안내표를 구매 가능한 재고로 해석하지 않습니다."
     },
     {
-        userType: '예상 적합 — 마라톤 페이스런과 롱런을 겸하는 훈련화',
-        text: '마라톤 페이스런과 28km급 롱런을 한 켤레로 소화하려는 러너에게 활용 폭이 넓은 슈퍼트레이너입니다. 힐 45.8mm(실측)의 높은 스택이라 20km 이후 다리에 쌓이는 피로를 줄이면서, 실측 235g으로 고스택 치고 가벼워 페이스를 올릴 때도 둔하지 않습니다. FF LEAP과 FF BLAST PLUS 조합으로 전작보다 힐 착지 후 전환이 부드러워진 것이 세대 차이입니다. 레이서는 대회 전용으로 아끼고 훈련 부하를 이쪽으로 몰 수 있어, 신발 운용 전체의 비용을 낮추는 역할을 합니다. 정가 259,000원이며, 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다.',
-      },
+      "userType": "외부 착화 의견 요약 · Doctors of Running",
+      "source": "editor",
+      "sourceUrl": "https://www.doctorsofrunning.com/asics-superblast-3-review-2026/",
+      "text": "RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했지만, DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했습니다. DOR 리뷰어끼리도 활용성 평가가 갈려 보편적인 안정성·보호 효과로 합치지 않습니다."
+    }
+  ],
+  "similarShoes": [
+    "new-balance-sc-trainer-v3",
+    "saucony-endorphin-trainer",
+    "nike-zoom-fly-6"
+  ],
+  "relatedPosts": [
     {
-        userType: '세대 비교 — 무게는 줄고 토박스 폭은 그대로',
-        text: '전작에서 토박스가 답답했다면 이 세대에서도 크게 달라지지 않습니다. RunRepeat 토박스 실측은 71.6mm로 전작(72.3mm)보다 약간 좁고 랩 평균(73.2mm)보다도 좁으며, "a secure and snug fit"을 지향한다는 평입니다. 대신 실측 235g으로 전작(252g)보다 가벼워졌고, 힐 45.8mm(실측) 고스택이라 10km 템포부터 25km LSD까지 한 켤레로 커버되며 아스팔트 충격 흡수도 확보됩니다. 정가는 259,000원입니다. 다만 중립 발 기준 설계라 과내전이 뚜렷하면 안정성이 부족할 수 있습니다.',
+      "slug": "asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026",
+      "title": "매직스피드 5 vs 슈퍼블라스트 3 — 플레이트 없는 쪽이 더 돌려준다"
+    },
+    {
+      "slug": "new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026",
+      "title": "SC 레벨 vs 슈퍼블라스트 3 — 같은 값, 정반대 해법"
+    },
+    {
+      "slug": "adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026",
+      "title": "하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너"
+    },
+    {
+      "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
+      "title": "슈퍼블라스트 3 vs 에보 SL vs 마하 6 — 슈퍼트레이너 3파전"
+    },
+    {
+      "slug": "asics-superblast-2-vs-3-comparison",
+      "title": "슈퍼블라스트 2 vs 3 — 세대 비교"
+    },
+    {
+      "slug": "running-shoe-midsole-foam-guide-2026",
+      "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+    }
+  ],
+  "purchaseLinks": [
+    {
+      "store": "네이버",
+      "url": "https://naver.me/5PWBjalA"
+    },
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/g5Yyku9ido"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-09",
+    "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
+    "sources": [
+      {
+        "label": "한국 공식 상품 (확인 SKU 한정)",
+        "url": "https://m.asics.co.kr/p/AKR_112630203-101",
+        "note": "한국 유니섹스 1013A177.101 정가 259,000원. 로그인 전 폭·사이즈별 재고는 확인 못함."
       },
-  ],
-  similarShoes: ['new-balance-sc-trainer-v3', 'saucony-endorphin-trainer', 'nike-zoom-fly-6'],
-  relatedPosts: [
-    { slug: 'asics-magic-speed-5-vs-superblast-3-carbon-vs-plateless-2026', title: '매직스피드 5 vs 슈퍼블라스트 3 — 플레이트 없는 쪽이 더 돌려준다' },
-    { slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026', title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 값, 정반대 해법' },
-    { slug: 'adidas-hyperboost-edge-vs-asics-superblast-3-super-trainer-2026', title: '하이퍼부스트 엣지 vs 슈퍼블라스트 3 — 슈퍼트레이너' },
-    { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼블라스트 3 vs 에보 SL vs 마하 6 — 슈퍼트레이너 3파전' },
-    { slug: 'asics-superblast-2-vs-3-comparison', title: '슈퍼블라스트 2 vs 3 — 세대 비교' },
-    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
-  ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5PWBjalA' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Yyku9ido' }],
+      {
+        "label": "RunRepeat 슈퍼블라스트 3",
+        "url": "https://runrepeat.com/asics-superblast-3",
+        "note": "남성 US9 공시 기준. 235g · 45.8/37.7mm · 드롭 8.1mm. SA 154/153 · ER 67.8/67.5% · 22.8 AC."
+      },
+      {
+        "label": "Doctors of Running 착화 리뷰",
+        "url": "https://www.doctorsofrunning.com/asics-superblast-3-review-2026/",
+        "note": "46.5/38.5mm · 8mm (ASICS 글로벌 발표). DOR 소개 239g(남성 US9)은 한국 공식 무게가 아님."
+      },
+      {
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "내부 최광폭과 엄지 부위 너비는 다른 위치입니다. 해외 검체 치수를 한국 와이드에 그대로 적용하지 않으며 AC와 HA는 직접 비교하지 않습니다."
+      },
+      {
+        "label": "ASICS 글로벌 발표 (2026-02-13)",
+        "url": "https://assets.asics.com/system/media_libraries/25473/file.pdf",
+        "note": "FF LEAP + FF BLAST PLUS, 공시 46.5/38.5mm · 드롭8mm. 한국 재고·폭·절대 무게 증거는 아님."
+      }
+    ],
+    "limitations": [
+      "모델별 부상 예방·치료 효과, 공통 최적 페이스, 검증된 수명 km는 미확인입니다. 해당 등급·수명값·km당 비용을 비웁니다.",
+      "종합 평점·1~10점·발볼 및 계절 적합성 구분은 에디터 평가이며 임상 효과나 외부 리뷰어 점수를 뜻하지 않습니다.",
+      "재고·할인가는 상품과 시점에 따라 바뀝니다. 구매 전에 해당 SKU와 사이즈를 다시 확인하세요."
+    ]
+  }
 };

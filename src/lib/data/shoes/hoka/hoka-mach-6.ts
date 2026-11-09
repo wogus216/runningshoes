@@ -1,107 +1,151 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인: 2026-11-09. 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
-  id: 'hoka-mach-6',
-  slug: 'hoka-mach-6',
-  brand: 'Hoka',
-  name: '마하 6',
-  image: '/images/shoes/hoka/mach6/side.webp',
-  images: ['/images/shoes/hoka/mach6/side.webp', '/images/shoes/hoka/mach6/front.webp', '/images/shoes/hoka/mach6/top.webp', '/images/shoes/hoka/mach6/outsole.webp'],
-  category: '데일리',
-  rating: 4,
-  price: 185000,
-  description: '가볍고 반응성 좋은 데일리 트레이너입니다. 템포 러닝부터 일상 훈련까지 다양하게 활용 가능한 올라운더입니다.',
-  oneliner: '232g+65.4% 에너지, 5/5 통기성 최상',
-  editorComment: '마하 6는 232g 경량에 65.4% 에너지 리턴으로 호카 라인업 중 가장 빠른 페이스에 대응 가능한 데일리화입니다. Supercritical EVA는 클리프턴/본디보다 반응성(8/10)이 높고, 통기성 5/5 최상위급으로 여름 러닝에 쾌적합니다. 18만 5천원으로 페가수스 41(15만 9천원)보다 2만 6천원 비싸지만 템포런부터 장거리까지 다용도 활용이 가능합니다. 단, 70.1mm narrow 토박스로 발볼 넓은 러너는 와이드 선택이 필수이고, RunRepeat 저온 테스트에서 미드솔이 약 42% 더 단단해진 점은 주의해야 합니다.\n\n사이즈·구매 가이드: RunRepeat 측정 토박스가 70.1mm(평균 73.2mm)로 엄지 쪽에서 좁아지는 테이퍼형이라 발볼 넓은 러너는 와이드 옵션을 권장합니다. 정가 185,000원에 예상 수명 400~600km(추정) 기준 km당 약 310~460원이며, 반발력과 통기성이 비슷한 대안으로는 페가수스 41이나 노바블라스트 5가 있습니다.',
-  tags: ['데일리 트레이너', '경량', '반응성'],
-
-  specs: {
-    weight: 232,
-    cushioning: 8,
-    responsiveness: 8,
-    stability: 7,
-    drop: 10,
-    durability: 500, // 2026-10-23: detailedSpecs.durability 표기(500km)에 맞춤 — 종전 450
-  },
-
-  biomechanics: {
-    stackHeight: {
-      heel: 36,
-      forefoot: 26,
-    },
-    drop: 10,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'Supercritical EVA',
-    optimalPace: '4:30-6:00 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
-  koreanFootFit: {
-    toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
-    winterCompatibility: 'poor',
-    summerCompatibility: 'fair',
-  },
-
-  targetUsers: {
-    recommended: ['데일리 트레이닝', '템포 러닝', '올라운드 러너', '경량화 선호', '다양한 페이스 훈련'],
-    notRecommended: ['최대 쿠셔닝 필요', '마라톤 레이싱 전용', '안정화 필요'],
-  },
-
-  features: ['경량 디자인', 'Supercritical EVA', '메타 로커', '다용도 활용', '에너지 리턴 전족부 67.0% (RunRepeat 실측)', '충격흡수 힐 135 SA (RunRepeat 실측)'],
-
-  priceAnalysis: {
-    msrp: 185000,
-    streetPrice: 156500,
-    costPerKm: 370,
-    valueRating: 8,
-    priceTier: 'mid',
-    alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-1080-v14'],
-  },
-
-  reviews: [
-    {
-      userType: '에디터 분석',
-      rating: 87,
-      text: '호카의 가벼움과 반응성을 원하는 중급 러너에게 최적의 데일리 트레이너입니다. 232g 경량에 65.4% 에너지 리턴으로 클리프톤/본디보다 빠른 페이스에 적합하며, 36mm 힐 스택과 10mm 드롭으로 힐스트라이커에게 편안합니다. 18만 5천원으로 페가수스 41(15만 9천원)보다 2만 6천원 비쌉니다. 토박스가 70.1mm로 좁아 발볼 넓은 한국 러너는 와이드 옵션을 반드시 선택하세요. 통기성 5/5 최상위급으로 여름 러닝에 쾌적하지만, 겨울에는 Supercritical EVA 폼이 RunRepeat 저온 테스트에서 약 42% 더 단단해져 무릎 보호를 위해 클리프톤으로 교체하는 것을 권장합니다. 평발 러너도 무난하게 착용 가능하며 템포런부터 롱런까지 다용도 활용이 가능한 올라운더입니다.',
-    },
-    {
-        userType: '예상 적합 — 훈련 전반을 한 켤레로 커버',
-        text: '인터벌·템포런·롱런을 한 켤레로 소화하려는 러너에게 맞는 만능형 데일리입니다. 232g의 무게라 빠른 구간에서도 둔하지 않고, 에너지 리턴 65.4%로 템포 페이스에서 반발이 살아 있는 편입니다. 신발을 용도별로 나누기 전 단계에서 활용도가 높은 성격입니다. 토박스 70.1mm로 좁은 편이라 발볼이 넓다면 와이드를 권합니다.',
-      },
-    {
-        userType: '계절 적합성 — 여름 강점, 겨울 경화 주의',
-        text: '계절에 따라 평가가 갈리는 모델입니다. 어퍼 통기성이 좋아 한여름에도 열감이 적은 반면, EVA 계열 폼이라 RunRepeat 저온 테스트에서 경도가 약 42% 상승해 겨울에는 충격이 그대로 올라옵니다. 겨울 러닝 비중이 크다면 저온 경화가 적은 모델과 나눠 쓰는 운용이 필요합니다. 성능 자체는 232g의 무게에 힐 36mm 스택, 에너지 리턴 65.4%로 데일리 전반을 소화하는 수준입니다. 와이드 옵션이 있어 발볼 넓은 경우에도 대응되고, 예상 수명 400~600km(추정) 기준 km당 약 310~460원입니다.',
-      },
+  "id": "hoka-mach-6",
+  "slug": "hoka-mach-6",
+  "brand": "Hoka",
+  "name": "마하 6",
+  "image": "/images/shoes/hoka/mach6/side.webp",
+  "images": [
+    "/images/shoes/hoka/mach6/side.webp",
+    "/images/shoes/hoka/mach6/front.webp",
+    "/images/shoes/hoka/mach6/top.webp",
+    "/images/shoes/hoka/mach6/outsole.webp"
   ],
-
-  detailedSpecs: {
-    weight: '232g (남성 US 9 기준)',
-    stackHeight: '힐 36mm / 포어풋 26mm',
-    drop: '9.6mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
-    midsole: 'Supercritical EVA',
-    plate: '없음',
-    outsole: '러버 커버리지',
-    upper: '엔지니어드 메쉬',
-    width: '좁은 편 (와이드 2E 옵션 있음 — 한국 판매 확인: 롯데ON 「[호카]호카 마하 6 와이드 남성 러닝화 1147833-BNGH 2E」 2026-10-16. hoka.co.kr 은 접속 불가) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁고 엄지 부위에서 급격히 좁아지는 테이퍼형',
-    durability: '500km',
-    price: '₩185,000 (MSRP) / 세일 시 ₩160,000~',
-    costPerKm: '약 ₩370/km (500km 기준)',
-    footType: '보통~좁은 발볼 / 발볼 넓으면 와이드 옵션',
-    landingPattern: '힐스트라이크~미드풋',
-  },
-
-  similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'puma-velocity-nitro-4', 'saucony-kinvara-16'],
-  relatedPosts: [
-    { slug: 'running-shoe-midsole-foam-guide-2026', title: '미드솔 폼 완전 해설 — EVA·TPU·PEBA' },
+  "category": "데일리",
+  "rating": 4,
+  "description": "Supercritical EVA 미드솔을 쓰는 마하 6. 한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인.",
+  "oneliner": "232g 실험실 무게 · Supercritical EVA",
+  "editorComment": "2026-11-09 원문 재확인. 한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인. DOR 소개 37/32mm · 5mm, RR이 인용한 제조사 드롭 5mm. 한국 공식 남성 사양 직접 확인은 못함. RunRepeat 실측은 232g, 힐/전족부 36/26.4mm, 드롭 9.6mm입니다. DOR은 쉬운 러닝부터 템포까지 활용한 가벼운 트레이너로 평가했지만, 리뷰어들은 전체적으로 꼭 맞고 앞쪽이 좁아지는 착화감을 지적했습니다. 한 리뷰어의 마모 경험을 공통 수명 km로 환산하지 않습니다. 한국 공식 연결 스토어의 여성 와이드 상품만 확인했습니다. 해외 남성 표준 검체의 치수를 여성 와이드에 적용할 수 없고, 한국 남성 폭은 미확인입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  "tags": [
+    "데일리 트레이너",
+    "경량",
+    "반응성"
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/h6Y5LNya4G' }],
+  "specs": {
+    "weight": 232,
+    "cushioning": 8,
+    "responsiveness": 8,
+    "stability": 7,
+    "drop": 9.6
+  },
+  "biomechanics": {
+    "stackHeight": {
+      "heel": 36,
+      "forefoot": 26.4
+    },
+    "drop": 9.6,
+    "carbonPlate": false,
+    "plateType": null,
+    "midsoleType": "Supercritical EVA"
+  },
+  "koreanFootFit": {
+    "toBoxWidth": "narrow",
+    "winterCompatibility": "poor",
+    "summerCompatibility": "fair"
+  },
+  "targetUsers": {
+    "recommended": [
+      "가벼운 비플레이트 훈련화를 찾는 러너",
+      "데일리와 템포 활용에 관심 있는 러너"
+    ],
+    "notRecommended": [
+      "앞쪽이 좁아지는 착화감에 민감한 경우",
+      "한국 남성 폭·가격 확인 없이 구매하려는 경우"
+    ]
+  },
+  "features": [
+    "Supercritical EVA",
+    "전장 플레이트 없음",
+    "232g (RunRepeat 남성 US9 공시 기준)",
+    "힐/전족부 에너지 리턴 65.4/67% (RunRepeat)"
+  ],
+  "priceAnalysis": {
+    "valueRating": 8,
+    "priceTier": "mid",
+    "alternatives": [
+      "nike-pegasus-41",
+      "asics-novablast-5",
+      "new-balance-1080-v14"
+    ]
+  },
+  "reviews": [
+    {
+      "userType": "원문 기반 에디터 분석",
+      "source": "editor",
+      "sourceUrl": "https://runrepeat.com/hoka-mach-6",
+      "text": "232g과 SA 135/114·에너지 리턴 65.4/67%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 한국 공식 연결 스토어의 여성 와이드 상품만 확인했습니다. 해외 남성 표준 검체의 치수를 여성 와이드에 적용할 수 없고, 한국 남성 폭은 미확인입니다."
+    },
+    {
+      "userType": "외부 착화 의견 요약 · Doctors of Running",
+      "source": "editor",
+      "sourceUrl": "https://www.doctorsofrunning.com/hoka-mach-6-review-2024/",
+      "text": "DOR은 쉬운 러닝부터 템포까지 활용한 가벼운 트레이너로 평가했지만, 리뷰어들은 전체적으로 꼭 맞고 앞쪽이 좁아지는 착화감을 지적했습니다. 한 리뷰어의 마모 경험을 공통 수명 km로 환산하지 않습니다."
+    }
+  ],
+  "detailedSpecs": {
+    "weight": "232g (RunRepeat 남성 US9 공시 기준). DOR 소개 37/32mm · 5mm, RR이 인용한 제조사 드롭 5mm. 한국 공식 남성 사양 직접 확인은 못함.",
+    "stackHeight": "36/26.4mm (RunRepeat 힐/전족부)",
+    "drop": "9.6mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
+    "midsole": "Supercritical EVA · 경도 39.5 AC · SA 135/114 · 에너지 리턴 65.4/67% (힐/전족부, RunRepeat)",
+    "plate": "전장 플레이트 없음",
+    "width": "RunRepeat 내부 최광폭 95.5mm / 엄지 부위 70.1mm. 한국 공식 연결 스토어의 여성 와이드 상품만 확인했습니다. 해외 남성 표준 검체의 치수를 여성 와이드에 적용할 수 없고, 한국 남성 폭은 미확인입니다.",
+    "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
+    "price": "한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인."
+  },
+  "similarShoes": [
+    "nike-pegasus-41",
+    "asics-novablast-5",
+    "puma-velocity-nitro-4",
+    "saucony-kinvara-16"
+  ],
+  "relatedPosts": [
+    {
+      "slug": "running-shoe-midsole-foam-guide-2026",
+      "title": "미드솔 폼 완전 해설 — EVA·TPU·PEBA"
+    }
+  ],
+  "purchaseLinks": [
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/h6Y5LNya4G"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-09",
+    "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
+    "sources": [
+      {
+        "label": "한국 공식 상품 (확인 SKU 한정)",
+        "url": "https://brand.naver.com/hoka/products/11356777947",
+        "note": "한국 공식 연결 스토어에서 여성 와이드 1147834-PLDS 정가 185,000원 확인. 남성 정가·폭·재고는 미확인."
+      },
+      {
+        "label": "RunRepeat 마하 6",
+        "url": "https://runrepeat.com/hoka-mach-6",
+        "note": "남성 US9 공시 기준. 232g · 36/26.4mm · 드롭 9.6mm. SA 135/114 · ER 65.4/67% · 39.5 AC."
+      },
+      {
+        "label": "Doctors of Running 착화 리뷰",
+        "url": "https://www.doctorsofrunning.com/hoka-mach-6-review-2024/",
+        "note": "DOR 소개 37/32mm · 5mm, RR이 인용한 제조사 드롭 5mm. 한국 공식 남성 사양 직접 확인은 못함."
+      },
+      {
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "내부 최광폭과 엄지 부위 너비는 다른 위치입니다. 해외 검체 치수를 한국 와이드에 그대로 적용하지 않으며 AC와 HA는 직접 비교하지 않습니다."
+      },
+      {
+        "label": "HOKA KR 공식 스토어 연결",
+        "url": "https://linktr.ee/hoka_korea",
+        "note": "한국 공식 브랜드 계정의 스토어 링크에서 네이버 호카 브랜드스토어로 이동해 여성 와이드 상품을 확인했습니다."
+      }
+    ],
+    "limitations": [
+      "모델별 부상 예방·치료 효과, 공통 최적 페이스, 검증된 수명 km는 미확인입니다. 해당 등급·수명값·km당 비용을 비웁니다.",
+      "종합 평점·1~10점·발볼 및 계절 적합성 구분은 에디터 평가이며 임상 효과나 외부 리뷰어 점수를 뜻하지 않습니다.",
+      "재고·할인가는 상품과 시점에 따라 바뀝니다. 구매 전에 해당 SKU와 사이즈를 다시 확인하세요."
+    ]
+  }
 };

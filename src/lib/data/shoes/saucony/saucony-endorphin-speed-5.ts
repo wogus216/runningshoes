@@ -1,112 +1,152 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인: 2026-11-09. 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
-  id: 'saucony-endorphin-speed-5',
-  slug: 'saucony-endorphin-speed-5',
-  brand: 'Saucony',
-  name: '엔돌핀 스피드 5',
-  image: '/images/shoes/saucony/endorphin_speed5.webp',
-  images: ['/images/shoes/saucony/endorphinspeed5/side.webp', '/images/shoes/saucony/endorphinspeed5/top.webp'],
-  category: '데일리',
-  rating: 5,
-  price: 219000,
-  description: 'Saucony의 인기 템포 러닝화로, PWRRUN PB 미드솔과 나일론 플레이트로 레이싱과 트레이닝 모두에 적합한 버사타일한 신발입니다.',
-  oneliner: '전족부 78.2% 에너지 리턴을 21만원대에, 나일론 플레이트 만능 템포화',
-  editorComment: '21만 9천원에 에너지 리턴 힐 73.2%·전족부 78.2%(RunRepeat 실측)는 슈퍼슈즈급 수치이고, 나일론 플레이트라 카본보다 유연해 매일 훈련에 투입해도 부담이 없습니다. 미드솔 경도는 44.5 AC(RunRepeat 실측, 평균 35.4 AC)로 단단한 편이라 푹신함보다 안정적인 발밑을 원하는 러너에게 맞고, 통기성 5/5로 여름 템포런에서도 쾌적합니다. 서브4 목표 러너가 슈퍼슈즈 구매 전 실력을 키우는 훈련화로 최적이며, 하프마라톤 레이스에도 직접 투입할 수 있는 만능 활용성이 핵심 가치입니다.\n\n사이즈·구매 가이드: 토박스는 RunRepeat 실측 72.9mm로 표준 폭이고, 한국 공식몰에 남녀 와이드 버전이 함께 판매되니(2026-10-20 확인) 발볼이 넓다면 와이드를 고르세요. 정가 219,000원에 예상 수명 400~600km(추정) 기준 km당 약 370~550원입니다. 같은 데일리·템포 겸용으로는 슈퍼블라스트 2·마하 X 3이 대안입니다.',
-  tags: ['템포', '데일리', '나일론 플레이트', '버사타일'],
-
-  specs: {
-    weight: 238,
-    cushioning: 8,
-    responsiveness: 10,
-    stability: 5,
-    drop: 8,
-    durability: 500,
-  },
-
-  biomechanics: {
-    stackHeight: {
-      heel: 36,
-      forefoot: 28,
-    },
-    drop: 8,
-    carbonPlate: false,
-    plateType: 'curved',
-    midsoleType: 'PWRRUN PB + Nylon Plate',
-    optimalPace: '4:00-5:30 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
-  koreanFootFit: {
-    toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
-    winterCompatibility: 'good',
-    summerCompatibility: 'good',
-  },
-
-  targetUsers: {
-    recommended: ['템포 러닝', '인터벌', '하프마라톤', '데일리+레이싱 겸용'],
-    notRecommended: ['입문 러너', '맥시멀 쿠셔닝 선호', '과내전 러너'],
-  },
-
-  features: ['PWRRUN PB 미드솔', '나일론 플레이트', '공식 8mm 드롭 (RunRepeat 실측 10.6mm)', '버사타일'],
-
-  priceAnalysis: {
-    msrp: 219000,
-    streetPrice: 179000,
-    costPerKm: 438,
-    valueRating: 8,
-    priceTier: 'premium',
-    alternatives: ['nike-pegasus-plus', 'asics-novablast-5', 'new-balance-sc-trainer-v3'],
-  },
-
-  detailedSpecs: {
-    weight: '238g (남성 US 9 기준, 브랜드 공식) — RunRepeat 실측 241g',
-    stackHeight: '힐 36mm / 포어풋 28mm (브랜드 공식) — RunRepeat 실측 37.4/26.8mm',
-    drop: '8mm (브랜드 공식) — RunRepeat 실측 10.6mm',
-    midsole: 'PWRRUN PB (PEBA) · 경도 44.5 AC · 에너지 리턴 힐 73.2%·전족부 78.2% (RunRepeat 실측)',
-    plate: '나일론 플레이트',
-    outsole: 'XT-900 러버',
-    upper: '메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 72.9mm(평균 73.2mm), 랩: "now fits more like a standard running shoe" · 와이드 — 한국 공식몰 남성(S21008)·여성(S11008) 와이드 판매(2026-10-20 확인)',
-    durability: '500km+',
-    price: '219,000원',
-    costPerKm: '약 ₩438/km (500km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
-  },
-
-  reviews: [
-    {
-      userType: '에디터 분석',
-      rating: 82,
-      text: '가성비 최강의 템포/레이싱 겸용 러닝화입니다. 21만 9천원에 에너지 리턴 힐 73.2%·전족부 78.2%와 힐 132 SA 충격흡수(RunRepeat 실측)를 제공합니다. 238g에 36mm 힐 스택, 8mm 드롭 구성이고, 나일론 플레이트로 카본보다 유연해 데일리 훈련에도 부담없습니다. 미드솔은 44.5 AC(RunRepeat 실측)로 단단한 편이고, 토박스가 72.9mm로 넓어져 발볼 걱정도 줄었습니다. 통기성 5/5로 여름에도 쾌적하고, 500km 내구성에 km당 약 438원으로 가성비 우수합니다. 무릎 보호와 추진력 모두 잡은 올라운더로, 서브4~서브3:30 목표 러너가 슈퍼슈즈 전에 먼저 경험해볼 추천 모델입니다. 와이드 버전도 한국 공식몰에서 판매되고, 평발이 아닌 중립 러너에게 특히 적합합니다.',
-    },
-    {
-        userType: '예상 적합 — 매일 신을 수 있는 플레이트 트레이너',
-        text: '플레이트가 들어갔지만 매일 신을 수 있는 성격입니다. 나일론 플레이트라 카본만큼 강성이 높지 않아 발목·종아리에 걸리는 부하가 적고, 반복 착용에서 부담이 누적되지 않습니다. 에너지 리턴 힐 73.2%·전족부 78.2%에 힐 132 SA의 충격흡수(RunRepeat 실측)라 반발과 보호를 함께 가져갑니다. 다만 폼은 44.5 AC로 단단한 편입니다. 219,000원·예상 수명 400~600km(추정) 기준 km당 약 370~550원으로 플레이트 모델 중 운용 비용이 낮은 편이고, 주행거리를 쌓아도 성능 저하가 완만합니다. 토박스가 이전 세대보다 넓어졌고 와이드 버전도 있습니다.',
-      },
-    {
-        userType: '비용 관점 — 슈퍼슈즈 없이 서브4를 노릴 때',
-        text: '30만원대 슈퍼슈즈 없이 풀코스를 준비할 때 현실적인 대안입니다. 219,000원으로 최상위 레이서의 3분의 2 수준 가격이면서, 나일론 플레이트 특유의 부드러운 추진이 30km 이후에도 유지됩니다. 카본만큼 강한 반발은 아니지만, 서브4 전후 페이스에서는 그 차이보다 후반 충격 흡수(힐 132 SA)와 착화 편의가 더 크게 작용합니다. 무게는 브랜드 공식 238g(RunRepeat 실측 241g)입니다. 토박스가 이전 세대보다 넓어졌고(72.9mm) 와이드 버전도 있어 발볼 선택지가 있습니다.',
-      },
-    {
-        userType: '모델 선택 — 킨바라 16 대비 쿠션',
-        text: '같은 경량 스피드 트레이너군에서 킨바라 계열과 비교하면 쿠션에서 크게 앞섭니다. 힐 132 SA로 킨바라 16(109 SA, RunRepeat 실측)보다 충격흡수가 높아, 쿠션이 얇은 경량 모델보다 장거리 여유가 있습니다. 238g으로 약간 무겁지만 그 차이로 소화 가능한 거리가 늘어납니다. 전족부 에너지 리턴 78.2%로 추진도 확보돼 있습니다. 토박스가 이전 세대보다 넓어졌고 와이드 버전도 있어, 발볼이 넓다면 와이드를 시착해 보세요. 예상 수명 400~600km(추정) 기준 km당 약 370~550원입니다.',
-      },
+  "id": "saucony-endorphin-speed-5",
+  "slug": "saucony-endorphin-speed-5",
+  "brand": "Saucony",
+  "name": "엔돌핀 스피드 5",
+  "image": "/images/shoes/saucony/endorphin_speed5.webp",
+  "images": [
+    "/images/shoes/saucony/endorphinspeed5/side.webp",
+    "/images/shoes/saucony/endorphinspeed5/top.webp"
   ],
-
-  similarShoes: ['asics-superblast-2', 'hoka-mach-x-3', 'puma-deviate-nitro-3', 'nike-vomero-18'],
-  relatedPosts: [
-    { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
-    { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6' },
+  "category": "데일리",
+  "rating": 5,
+  "price": 219000,
+  "description": "PWRRUN PB 미드솔을 쓰는 엔돌핀 스피드 5. 한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다.",
+  "oneliner": "241g 실험실 무게 · PWRRUN PB",
+  "editorComment": "2026-11-09 원문 재확인. 한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다. DOR 소개 스택 36/28mm · 드롭 8mm. DOR 남성 US9 무게는 8.4oz 표기이며 g 값은 해당 원문에서 비어 있어 변환하지 않음. RunRepeat 실측은 241g, 힐/전족부 37.4/26.8mm, 드롭 10.6mm입니다. DOR은 전작보다 부드러운 뒤꿈치 전환을 평가하면서, 낮은 중족부·전족부 용적과 단단한 힐 카운터를 주의점으로 들었습니다. 나일론 플레이트라는 사실만으로 발목 부하나 부상 위험이 줄어든다고 말할 근거는 확인하지 못했습니다. 한국 공식 남녀 M(일반)·W(와이드) 판매 확인. 색상·사이즈별 재고가 달라 모델 전체 구매 가능 여부로 일반화하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  "tags": [
+    "템포",
+    "데일리",
+    "나일론 플레이트",
+    "버사타일"
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZgBi24J2' }],
+  "specs": {
+    "weight": 241,
+    "cushioning": 8,
+    "responsiveness": 10,
+    "stability": 5,
+    "drop": 10.6
+  },
+  "biomechanics": {
+    "stackHeight": {
+      "heel": 37.4,
+      "forefoot": 26.8
+    },
+    "drop": 10.6,
+    "carbonPlate": false,
+    "plateType": "curved",
+    "midsoleType": "PWRRUN PB"
+  },
+  "koreanFootFit": {
+    "toBoxWidth": "standard",
+    "winterCompatibility": "good",
+    "summerCompatibility": "good",
+    "wideOptions": true
+  },
+  "targetUsers": {
+    "recommended": [
+      "나일론 플레이트 템포 트레이너를 찾는 러너",
+      "한국 남녀 와이드 선택지를 비교하는 러너"
+    ],
+    "notRecommended": [
+      "힐 카운터 압박에 민감한 경우",
+      "낮은 중족부·전족부 용적이 맞지 않는 경우"
+    ]
+  },
+  "features": [
+    "PWRRUN PB",
+    "윙 형태 나일론 플레이트 · SPEEDROLL",
+    "241g (RunRepeat 남성 US9 공시 기준)",
+    "힐/전족부 에너지 리턴 73.2/78.2% (RunRepeat)"
+  ],
+  "priceAnalysis": {
+    "msrp": 219000,
+    "valueRating": 8,
+    "priceTier": "premium",
+    "alternatives": [
+      "nike-pegasus-plus",
+      "asics-novablast-5",
+      "new-balance-sc-trainer-v3"
+    ]
+  },
+  "detailedSpecs": {
+    "weight": "241g (RunRepeat 남성 US9 공시 기준). DOR 소개 스택 36/28mm · 드롭 8mm. DOR 남성 US9 무게는 8.4oz 표기이며 g 값은 해당 원문에서 비어 있어 변환하지 않음.",
+    "stackHeight": "37.4/26.8mm (RunRepeat 힐/전족부)",
+    "drop": "10.6mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
+    "midsole": "PWRRUN PB · 경도 44.5 AC · SA 132/108 · 에너지 리턴 73.2/78.2% (힐/전족부, RunRepeat)",
+    "plate": "윙 형태 나일론 플레이트 · SPEEDROLL",
+    "width": "RunRepeat 내부 최광폭 93.8mm / 엄지 부위 72.9mm. 한국 공식 남녀 M(일반)·W(와이드) 판매 확인. 색상·사이즈별 재고가 달라 모델 전체 구매 가능 여부로 일반화하지 않습니다.",
+    "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
+    "price": "한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다."
+  },
+  "reviews": [
+    {
+      "userType": "원문 기반 에디터 분석",
+      "source": "editor",
+      "sourceUrl": "https://runrepeat.com/saucony-endorphin-speed-5",
+      "text": "241g과 SA 132/108·에너지 리턴 73.2/78.2%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 한국 공식 남녀 M(일반)·W(와이드) 판매 확인. 색상·사이즈별 재고가 달라 모델 전체 구매 가능 여부로 일반화하지 않습니다."
+    },
+    {
+      "userType": "외부 착화 의견 요약 · Doctors of Running",
+      "source": "editor",
+      "sourceUrl": "https://www.doctorsofrunning.com/saucony-endorphin-speed-5-review-2025/",
+      "text": "DOR은 전작보다 부드러운 뒤꿈치 전환을 평가하면서, 낮은 중족부·전족부 용적과 단단한 힐 카운터를 주의점으로 들었습니다. 나일론 플레이트라는 사실만으로 발목 부하나 부상 위험이 줄어든다고 말할 근거는 확인하지 못했습니다."
+    }
+  ],
+  "similarShoes": [
+    "asics-superblast-2",
+    "hoka-mach-x-3",
+    "puma-deviate-nitro-3",
+    "nike-vomero-18"
+  ],
+  "relatedPosts": [
+    {
+      "slug": "boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026",
+      "title": "템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5"
+    },
+    {
+      "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
+      "title": "슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6"
+    }
+  ],
+  "purchaseLinks": [
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/g5ZgBi24J2"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-09",
+    "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
+    "sources": [
+      {
+        "label": "한국 공식 상품 (확인 SKU 한정)",
+        "url": "https://saucony.co.kr/product/남성-엔돌핀-스피드-5-와이드-blackwhite/216/category/42/display/1/",
+        "note": "한국 공식 정가 219,000원. 남녀 M(일반)·W(와이드) 상품을 확인했습니다. W를 근거 없이 2E/D로 바꾸지 않습니다."
+      },
+      {
+        "label": "RunRepeat 엔돌핀 스피드 5",
+        "url": "https://runrepeat.com/saucony-endorphin-speed-5",
+        "note": "남성 US9 공시 기준. 241g · 37.4/26.8mm · 드롭 10.6mm. SA 132/108 · ER 73.2/78.2% · 44.5 AC."
+      },
+      {
+        "label": "Doctors of Running 착화 리뷰",
+        "url": "https://www.doctorsofrunning.com/saucony-endorphin-speed-5-review-2025/",
+        "note": "DOR 소개 스택 36/28mm · 드롭 8mm. DOR 남성 US9 무게는 8.4oz 표기이며 g 값은 해당 원문에서 비어 있어 변환하지 않음."
+      },
+      {
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "내부 최광폭과 엄지 부위 너비는 다른 위치입니다. 해외 검체 치수를 한국 와이드에 그대로 적용하지 않으며 AC와 HA는 직접 비교하지 않습니다."
+      }
+    ],
+    "limitations": [
+      "모델별 부상 예방·치료 효과, 공통 최적 페이스, 검증된 수명 km는 미확인입니다. 해당 등급·수명값·km당 비용을 비웁니다.",
+      "종합 평점·1~10점·발볼 및 계절 적합성 구분은 에디터 평가이며 임상 효과나 외부 리뷰어 점수를 뜻하지 않습니다.",
+      "재고·할인가는 상품과 시점에 따라 바뀝니다. 구매 전에 해당 SKU와 사이즈를 다시 확인하세요."
+    ]
+  }
 };

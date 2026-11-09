@@ -1,112 +1,166 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인: 2026-11-09. 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
-  id: 'nike-zoom-fly-6',
-  slug: 'nike-zoom-fly-6',
-  brand: 'Nike',
-  name: '줌 플라이 6',
-  image: '/images/shoes/nike/zoomfly6/1.webp',
-  images: [
-    '/images/shoes/nike/zoomfly6/1.webp',
-    '/images/shoes/nike/zoomfly6/2.webp',
-    '/images/shoes/nike/zoomfly6/3.webp',
-    '/images/shoes/nike/zoomfly6/4.webp',
-    '/images/shoes/nike/zoomfly6/5.webp',
+  "id": "nike-zoom-fly-6",
+  "slug": "nike-zoom-fly-6",
+  "brand": "Nike",
+  "name": "줌 플라이 6",
+  "image": "/images/shoes/nike/zoomfly6/1.webp",
+  "images": [
+    "/images/shoes/nike/zoomfly6/1.webp",
+    "/images/shoes/nike/zoomfly6/2.webp",
+    "/images/shoes/nike/zoomfly6/3.webp",
+    "/images/shoes/nike/zoomfly6/4.webp",
+    "/images/shoes/nike/zoomfly6/5.webp"
   ],
-  category: '레이싱',
-  rating: 4,
-  price: 209000,
-  description:
-    '베이퍼플라이의 기술을 훈련용으로 옮긴 슈퍼트레이너. ZoomX + SR-02 폼과 카본 Flyplate로 빠른 페이스 훈련과 레이스 모두 가능. 에너지 리턴 힐 61%·앞발 67%(RunRepeat 실측)로 내구성과 성능 모두 잡은 가성비 우수 모델.',
-  oneliner: '베이퍼플라이 반값, 카본 플레이트 입문용 슈퍼트레이너',
-  editorComment: 'ZoomX+SR-02 듀얼 폼과 카본 Flyplate로 베이퍼플라이의 기술을 훈련용으로 옮긴 가성비 슈퍼트레이너입니다. 20만 9천원으로 베이퍼플라이 4(30만 9천원)의 68% 가격이면서 에너지 리턴 힐 61%·앞발 67%(RunRepeat 실측)와 반발력(8/10 점수)으로 템포런과 인터벌 훈련에 충분합니다. 400km 내구성으로 km당 약 523원, 3분30초~5분/km 페이스에서 아식스 매직스피드 4(19만 9천원)보다 1만원 비싸지만 카본 플레이트 탑재로 성능이 한 단계 위입니다. 단, 발볼이 좁고(Narrow) 와이드 옵션이 없어 발볼 넓은 한국 러너는 주의가 필요하며, 입문 러너보다는 빠른 훈련을 시작하는 중급 이상에게 적합합니다. 카본화의 이점은 빠른 페이스에서 검증된 것이라, 느린 페이스에서는 오히려 사라질 수 있다는 실험 보고가 있습니다. 줌 플라이의 가치는 절대 속도 보정보다, 부담 없는 가격으로 카본 감각을 훈련에서 익히는 데 있습니다.\n\n사이즈·구매 가이드: 토박스가 좁은 편(Narrow)이고 와이드 옵션이 없으므로 발볼이 넓은 러너는 반드시 매장에서 착화 후 구매하세요. 정가 209,000원에 예상 수명 350~400km(추정) 기준 km당 약 520~600원입니다. 같은 레이싱 카테고리로는 매직스피드 4·엔돌핀 스피드 5가 대안입니다.',
-  tags: ['레이싱', '템포', '카본플레이트', '훈련용'],
-  specs: {
-    weight: 248,
-    cushioning: 9,
-    responsiveness: 8,
-    stability: 7,
-    drop: 10,
-    durability: 400,
+  "category": "레이싱",
+  "rating": 4,
+  "price": 209000,
+  "description": "ZoomX + SR-02 (하부 명칭 DOR 기준) 미드솔을 쓰는 줌 플라이 6. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다.",
+  "oneliner": "248g 실험실 무게 · ZoomX + SR-02 (하부 명칭 DOR 기준)",
+  "editorComment": "2026-11-09 원문 재확인. 한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다. 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름. RunRepeat 실측은 248g, 힐/전족부 39.7/30.1mm, 드롭 9.6mm입니다. DOR은 낮은 토박스 용적과 부드럽고 높은 플랫폼의 흔들림, 젖은 노면의 접지를 주의점으로 들었습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  "tags": [
+    "레이싱",
+    "템포",
+    "카본플레이트",
+    "훈련용"
+  ],
+  "specs": {
+    "weight": 248,
+    "cushioning": 9,
+    "responsiveness": 8,
+    "stability": 7,
+    "drop": 9.6
   },
-  biomechanics: {
-    stackHeight: { heel: 40, forefoot: 30 },
-    drop: 10,
-    carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'ZoomX + SR-02 + Carbon Flyplate',
-    optimalPace: '3:30-5:00 min/km',
+  "biomechanics": {
+    "stackHeight": {
+      "heel": 39.7,
+      "forefoot": 30.1
+    },
+    "drop": 9.6,
+    "carbonPlate": true,
+    "plateType": "curved",
+    "midsoleType": "ZoomX + SR-02 (하부 명칭 DOR 기준)"
   },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
+  "koreanFootFit": {
+    "toBoxWidth": "narrow",
+    "winterCompatibility": "good",
+    "summerCompatibility": "fair"
   },
-  koreanFootFit: {
-    toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
-    winterCompatibility: 'good',
-    summerCompatibility: 'fair',
+  "targetUsers": {
+    "recommended": [
+      "카본 플레이트 훈련화를 시착 비교하려는 러너",
+      "ZoomX 기반의 높은 플랫폼을 선호하는 러너"
+    ],
+    "notRecommended": [
+      "높은 발등·넓은 중족부에 압박이 있는 경우",
+      "젖은 노면 접지와 높은 플랫폼의 안정감이 우선인 경우"
+    ]
   },
-  targetUsers: {
-    recommended: ['템포런/인터벌 훈련', '가성비 레이싱화', '중급 러너', '하프마라톤'],
-    notRecommended: ['입문 러너', '평발/심한 과내전', '발볼 넓은 러너'],
+  "features": [
+    "ZoomX + SR-02 (하부 명칭 DOR 기준)",
+    "전장 카본 파이버 Flyplate (한국 공식)",
+    "248g (RunRepeat 남성 US9 공시 기준)",
+    "힐/전족부 에너지 리턴 61/67% (RunRepeat)"
+  ],
+  "priceAnalysis": {
+    "msrp": 209000,
+    "valueRating": 9,
+    "priceTier": "premium",
+    "alternatives": [
+      "asics-magic-speed-4",
+      "saucony-endorphin-speed-5",
+      "new-balance-rebel-v5"
+    ]
   },
-  features: ['ZoomX + SR-02 듀얼 폼', '풀렝스 카본 Flyplate', '40mm 스택하이트', '에너지 리턴 힐 61%·앞발 67% (RunRepeat 실측)', '충격흡수 힐 144 SA (RunRepeat 실측)'],
-  priceAnalysis: {
-    msrp: 209000,
-    streetPrice: 209000,
-    costPerKm: 523,
-    valueRating: 9,
-    priceTier: 'premium',
-    alternatives: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5'],
+  "detailedSpecs": {
+    "weight": "248g (RunRepeat 남성 US9 공시 기준). 한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름.",
+    "stackHeight": "39.7/30.1mm (RunRepeat 힐/전족부)",
+    "drop": "9.6mm (RunRepeat 실측). 공시 사양과 측정법·검체 조건이 다릅니다.",
+    "midsole": "ZoomX + SR-02 (하부 명칭 DOR 기준) · 경도 36.5 AC · SA 144/111 · 에너지 리턴 61/67% (힐/전족부, RunRepeat)",
+    "plate": "전장 카본 파이버 Flyplate (한국 공식)",
+    "width": "RunRepeat 내부 최광폭 90.9mm / 엄지 부위 72.6mm. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다.",
+    "durability": "검증된 수명 km 미확인. 실험실 마모 깊이를 수명 km로 환산하지 않습니다.",
+    "price": "한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다."
   },
-  detailedSpecs: {
-    weight: '248g (US 9 기준)',
-    stackHeight: '힐 40mm / 포어풋 30mm',
-    drop: '10mm',
-    midsole: 'ZoomX + SR-02',
-    plate: '풀렝스 카본 Flyplate (curved)',
-    outsole: '러버 아웃솔',
-    upper: '엔지니어드 메쉬 (더블 레이어)',
-    width: '좁음 — RunRepeat 랩 토박스 72.6mm(평균 73.2mm)로 수치 차이는 0.6mm뿐이나, 랩 본문이 "This narrow design reinforces Nike\'s intention"·"the snug toebox could be a major drawback for many"라고 평가. 발가락 공간·높이가 모두 제한적',
-    durability: '350-400km',
-    price: '₩209,000 (MSRP — nike.com/kr 2026-10-20 확인, 기본 컬러 FN8454·FN8455 기준. 2026 신규 컬러 일부는 219,000~229,000원)',
-    costPerKm: '약 ₩523/km (400km 기준)',
-    footType: '중립 발',
-    landingPattern: 'MFS/FFS',
-  },
-  reviews: [
+  "reviews": [
     {
-      userType: '에디터 분석',
-      rating: 90,
-      text: '"카본 플레이트 신발 입문하고 싶은데 뭐가 좋나요?"에 가장 추천하는 슈퍼트레이너입니다. ZoomX + SR-02 듀얼 폼과 카본 Flyplate로 베이퍼플라이의 기술을 훈련용으로 옮겼습니다. 20만 9천원으로 베이퍼플라이(30만 9천원)의 68% 가격이면서 에너지 리턴 힐 61%·앞발 67%로 템포런과 인터벌 훈련에 충분합니다. 248g에 400km 내구성으로 km당 약 523원, 훈련용으로 부담 없이 사용 가능합니다. 40mm 힐 스택이 무릎 충격을 잡아주면서 3분30초~5분/km 빠른 페이스에서 잘 굴러갑니다. 다만 발볼이 좁고 와이드 옵션이 없어 발볼 넓은 한국 러너는 토박스 압박에 주의가 필요합니다. 평발 러너에게는 비추이며, 카본 입문하려는 중급 이상 한국 러너에게 가성비 최고의 선택입니다.',
+      "userType": "원문 기반 에디터 분석",
+      "source": "editor",
+      "sourceUrl": "https://runrepeat.com/nike-zoom-fly-6",
+      "text": "248g과 SA 144/111·에너지 리턴 61/67%는 해외 실험실 검체의 값입니다. 착지 방식별 실제 체감이나 기록 향상률·임상 효과를 뜻하지 않습니다. 확인한 한국 SKU에 폭 선택 UI는 없었습니다. 이것만으로 한국 전체 와이드 미출시라고 단정하지 않습니다."
     },
     {
-        userType: '예상 적합 — 카본 입문, 템포런과 하프 겸용',
-        text: '카본 플레이트를 처음 경험하면서 훈련과 하프까지 겸하려는 경우에 맞습니다. ZoomX와 카본 Flyplate 조합이라 착지에서 앞으로 굴려주는 감각이 뚜렷하고, 40mm 스택이라 쿠션도 확보돼 템포런 반복에 무리가 없습니다. 248g으로 레이서만큼 가볍지는 않지만, 예상 수명 350~400km(추정) 기준 km당 약 520~600원이라 최상위 레이서(km당 1,200원대)와 비교하면 운용 비용이 크게 낮습니다. 최상위 레이서를 사기 전 단계에서 카본 감각을 확인하고 훈련량을 소화하는 역할에 적합합니다. 와이드 옵션이 없어 발볼이 넓다면 시착이 필요하고, 아치 지지는 강하지 않습니다.',
-      },
-    {
-        userType: '로테이션 — 레이서를 아끼는 카본 훈련용',
-        text: '최상위 레이서를 대회 전용으로 두고 스피드 세션을 담당하기에 맞습니다. 에너지 리턴 힐 61%·앞발 67%로 레이서급은 아니지만 1000m 반복 같은 인터벌에서 충분히 체감되는 수준이고, 248g에 힐 40mm 스택이라 반복 착지에서도 충격이 누적되지 않습니다. 10mm 드롭이라 힐 착지 성향에서도 무리가 없습니다. 예상 수명 350~400km(추정) 기준 km당 약 520~600원으로, 레이서(km당 1,200~1,700원대)와 비교하면 훈련 투입 부담이 크게 낮습니다. 와이드 옵션이 없고 아치 지지가 약합니다.',
-      },
-    {
-        userType: '비용 관점 — 훈련용 카본화 3종 비교',
-        text: '훈련용 카본화군에서 가격은 중간이지만 미드솔 구성이 앞섭니다. 20만 9천원으로 매직 스피드 계열(19만 9천원)·엔돌핀 스피드 계열(21만 9천원)과 비슷한 구간인데, ZoomX 폼까지 들어가 있습니다. 248g에 힐 40mm 스택, 에너지 리턴 힐 61%·앞발 67%로 템포런에서 추진이 느껴지는 수준입니다. 예상 수명 350~400km(추정) 기준 km당 약 520~600원으로, 레이스용 카본화(km당 1,200원대 이상)와 비교하면 훈련 투입 부담이 크게 낮습니다. 와이드 옵션이 없고 아치 지지는 약합니다.',
-      },
-    {
-        userType: '비적합 — 5분대 후반 페이스',
-        text: '카본 플레이트는 페이스가 받쳐줘야 작동합니다. 5분40초/km 안팎에서는 체중이 앞으로 실리는 힘이 부족해 플레이트가 충분히 휘지 않고, 결과적으로 추진 효과를 거의 느끼지 못합니다. 이 구간에서는 쿠션이 두꺼운 데일리(페가수스 계열)가 더 편하고 안정적입니다. 대략 4분30초/km 이하로 들어갈 수 있게 된 뒤 넘어오는 순서가 맞습니다. 토박스가 타이트하고 와이드 옵션이 없어 발볼이 넓으면 제약이 더해지고, 아치 지지도 약합니다.',
-      },
+      "userType": "외부 착화 의견 요약 · Doctors of Running",
+      "source": "editor",
+      "sourceUrl": "https://www.doctorsofrunning.com/nike-zoom-fly-6-review-2024-release/",
+      "text": "DOR은 낮은 토박스 용적과 부드럽고 높은 플랫폼의 흔들림, 젖은 노면의 접지를 주의점으로 들었습니다. 하부 폼은 DOR의 SR-02 명칭을 사용하며 RR 본문의 ReactX 표기와 충돌해 정확한 배합은 단정하지 않습니다."
+    }
   ],
-  similarShoes: ['asics-magic-speed-4', 'saucony-endorphin-speed-5', 'new-balance-rebel-v5', 'asics-superblast-3'],
-  relatedPosts: [
-    { slug: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026', title: '매직스피드 5 vs 줌 플라이 6 — 같은 20.9만원, 47g이 갈린다' },
-    { slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026', title: '템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5' },
-    { slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026', title: '슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6' },
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  "similarShoes": [
+    "asics-magic-speed-4",
+    "saucony-endorphin-speed-5",
+    "new-balance-rebel-v5",
+    "asics-superblast-3"
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/IgM5xo0f' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y2f94yc0' }],
+  "relatedPosts": [
+    {
+      "slug": "asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026",
+      "title": "매직스피드 5 vs 줌 플라이 6 — 같은 20.9만원, 47g이 갈린다"
+    },
+    {
+      "slug": "boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026",
+      "title": "템포 트레이너 3파전 — 보스턴 13 vs 줌 플라이 6 vs 엔돌핀 스피드 5"
+    },
+    {
+      "slug": "superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026",
+      "title": "슈퍼트레이너 3파전 — 슈퍼블라스트 3 vs 에보 SL vs 마하 6"
+    },
+    {
+      "slug": "running-shoe-plate-guide-2026",
+      "title": "플레이트 완전 해설 — 카본·유리섬유·나일론"
+    }
+  ],
+  "purchaseLinks": [
+    {
+      "store": "네이버",
+      "url": "https://naver.me/IgM5xo0f"
+    },
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/g5Y2f94yc0"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-09",
+    "scope": "한국 확인 SKU의 정가·폭과 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다.",
+    "sources": [
+      {
+        "label": "한국 공식 상품 (확인 SKU 한정)",
+        "url": "https://www.nike.com/kr/t/줌-플라이-6-남성-로드-레이싱화-r5abpTB8/FN8454-006",
+        "note": "한국 남성 FN8454-006 정가 209,000원. 다른 SKU의 정가는 다를 수 있습니다."
+      },
+      {
+        "label": "RunRepeat 줌 플라이 6",
+        "url": "https://runrepeat.com/nike-zoom-fly-6",
+        "note": "남성 US9 공시 기준. 248g · 39.7/30.1mm · 드롭 9.6mm. SA 144/111 · ER 61/67% · 36.5 AC."
+      },
+      {
+        "label": "Doctors of Running 착화 리뷰",
+        "url": "https://www.doctorsofrunning.com/nike-zoom-fly-6-review-2024-release/",
+        "note": "한국 공식 265g (280mm) · 드롭 8mm. DOR 소개 40/32mm · 8mm. RR 248g과 사이즈 조건이 다름."
+      },
+      {
+        "label": "RunRepeat 측정법",
+        "url": "https://runrepeat.com/testing-methodology",
+        "note": "내부 최광폭과 엄지 부위 너비는 다른 위치입니다. 해외 검체 치수를 한국 와이드에 그대로 적용하지 않으며 AC와 HA는 직접 비교하지 않습니다."
+      }
+    ],
+    "limitations": [
+      "모델별 부상 예방·치료 효과, 공통 최적 페이스, 검증된 수명 km는 미확인입니다. 해당 등급·수명값·km당 비용을 비웁니다.",
+      "종합 평점·1~10점·발볼 및 계절 적합성 구분은 에디터 평가이며 임상 효과나 외부 리뷰어 점수를 뜻하지 않습니다.",
+      "재고·할인가는 상품과 시점에 따라 바뀝니다. 구매 전에 해당 SKU와 사이즈를 다시 확인하세요."
+    ]
+  }
 };

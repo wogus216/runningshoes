@@ -105,11 +105,11 @@ export const shoe: Shoe = {
   relatedPosts: [
     {
       slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
-      title: '노바블라스트 6 vs 보스턴 13 — 1만원·5g 차이, 성격은 반대',
+      title: '노바블라스트6 vs 보스턴13 — 구조와 핏',
     },
     {
       slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
-      title: '에보 SL vs 보스턴 13 — 2만원 더 주고 31g을 산다',
+      title: 'Evo SL vs 보스턴13 — 가격·구조·실측 조건',
     },
     {
       slug: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',
@@ -121,7 +121,7 @@ export const shoe: Shoe = {
     },
     {
       slug: 'adidas-running-shoes-lineup-tier-guide-2026',
-      title: '아디다스 러닝화 계급도',
+      title: '아디다스 러닝화 라인업 — 용도와 구조 비교',
     },
   ],
   purchaseLinks: [

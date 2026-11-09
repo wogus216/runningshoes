@@ -3346,137 +3346,91 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
     slug: 'adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026',
-    title: '에보 SL vs 노바블라스트 6 차이 — 3만원 아끼면 km당 비용이 63% 싸진다 | 반발이냐 수명이냐',
-    description:
-      '아디제로 Evo SL(209,000원·223g)과 아식스 노바블라스트 6(179,000원·249g)은 둘 다 플레이트 없는 고성능 데일리입니다. 에보 SL은 100% Lightstrike Pro로 반발 9/10을 내고 26g 가볍지만 내구가 500km라 km당 418원. 노바 6은 반발 7에 쿠션은 9로 같지만 700km, km당 256원으로 63% 경제적입니다. 평발 적합성은 같지만 와이드는 노바 6에만 있어(에보 SL은 2026년 10월 한국 공식몰 기준 없음), 발볼이 넓지 않다면 갈림길은 반발과 총비용입니다.',
-    thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-asics-novablast-6-daily-2026.webp',
+    title: 'Evo SL vs 노바블라스트6 — 26g·3만원 차이와 남성 와이드 선택',
+    description: '기본 메쉬Evo SL과 노바블라스트6의 한국 상품·실험실 무게·폼·발 고정·남성2E를 원문으로 비교합니다. 미확인 수명과 km당 비용에 따른 순위를 제거했습니다.',
+    thumbnail: '/images/shoes/adidas/evosl/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['아디제로 Evo SL', '에보슬', '노바블라스트 6', '아식스 노바블라스트', '데일리 러닝화', 'Lightstrike Pro', 'FF Blast Max', '무플레이트', '러닝화 비교', '가성비 러닝화'],
+    category: 'review',
+    readingTime: 6,
+    tags: [
+      '아디제로 Evo SL',
+      '에보슬',
+      '노바블라스트 6',
+      '아식스 노바블라스트',
+      '데일리 러닝화',
+      'Lightstrike Pro',
+      'FF Blast Max',
+      '무플레이트',
+      '러닝화 비교',
+      '가성비 러닝화',
+    ],
     faqs: [
       {
-        question: '3만원 차이가 실제로는 얼마나 벌어지나요?',
-        answer:
-          '정가는 3만원 차이지만 km당 비용은 418원 대 256원으로 63% 벌어집니다. 에보 SL이 209,000원에 내구 500km, 노바블라스트 6이 179,000원에 700km이기 때문입니다. 500km를 달린다고 가정하면 에보 SL은 한 켤레를 다 쓰지만 노바 6은 200km가 남습니다.',
+        question: '둘의 정가 차이는 얼마인가요?',
+        answer: '확인한 한국 상품은 Evo SL 기본 메쉬 JP7149 209,000원, 노바블라스트6 남성 일반·2E 및 여성 일반179,000원으로 30,000원 차이입니다. 실제 할인가는 SKU·구매 시점별로 확인하세요.',
       },
       {
-        question: '둘 다 플레이트가 없는데 뭐가 다른가요?',
-        answer:
-          '폼의 성격이 다릅니다. 에보 SL은 아디다스 최상위 폼인 Lightstrike Pro를 미드솔 100%에 써서 반발 9/10을 냈고, 노바블라스트 6은 FF Blast Max에 전족부만 FF Turbo Squared를 얹어 쿠션 9/10 쪽으로 갔습니다(쿠션 점수는 에보 SL도 9/10으로 같습니다). 에보 SL은 튕기고 노바 6은 푹신합니다.',
+        question: '발볼이 넓으면 어떤 선택지가 있나요?',
+        answer: '노바블라스트6 남성2E 상품을 한국 공식몰에서 확인했습니다. Evo SL은 확인한 JP7149가 레귤러 핏이며, 모든 한국SKU의 와이드 부재를 확인한 것은 아닙니다. 앞쪽 압박과 발등·중족부 고정도 함께 시착하세요.',
       },
       {
-        question: '발볼이 넓으면 어느 쪽인가요?',
-        answer:
-          '노바 6입니다. 표준폭 토박스 실측은 에보 SL 71.6mm·노바 6 71.0mm(RunRepeat, 평균 73.2mm)로 비슷하지만, 와이드 버전은 노바 6에만 있습니다. 에보 SL은 2026년 10월 아디다스 한국 공식몰 기준 와이드가 판매되지 않습니다. 평발 적합성은 둘 다 보통(fair)으로 같습니다.',
-      },
-      {
-        question: '한 켤레만 산다면요?',
-        answer:
-          '노바블라스트 6이 범용적입니다. 적정 페이스가 4:30~6:30으로 느린 쪽까지 열려 있고, 700km에 km당 256원으로 오래 씁니다. 에보 SL은 4:00~6:00으로 조금 더 빠른 쪽에 맞춰져 있어, 템포런 비중이 크거나 두 켤레 로테이션의 "빠른 날" 담당으로 둘 때 값을 합니다.',
+        question: '노바블라스트6가 더 오래 가나요?',
+        answer: '비교 가능한 수명 시험을 확인하지 못했습니다. 기존500km 대700km와 km당 비용 차이는 근거가 부족해 삭제했습니다.',
       },
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 플레이트 없는 고성능 데일리</strong> — <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a> 209,000원·223g·반발 9 / <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 179,000원·249g·쿠션 9</li>
-    <li><strong>정가는 3만원 차인데 km당은 63% 벌어집니다</strong> — 418원 대 <strong>256원</strong>(내구 500km 대 700km)</li>
-    <li><strong>발볼이 넓어 와이드가 필요하면 노바 6</strong> — 표준폭 토박스는 비슷하지만(에보 SL 71.6mm·노바 6 71.0mm) 와이드는 노바 6에만 있습니다(에보 SL은 2026년 10월 한국 공식몰 기준 없음). 그 밖에는 판단이 반발이냐 수명이냐로 좁혀집니다</li>
-  </ul>
+    content: `<div class="tldr"><span class="tldr-label">선택을 가르는 차이</span><ul><li><strong>기본 메쉬 Evo SL은26g 가볍고 정가는3만원 높습니다.</strong> 해외 실험실223g 대249g이며 한국 정가와 조건을 나눠 봅니다.</li>
+<li><strong>노바블라스트6는 남성2E가 확인된 선택지입니다.</strong> 일반 검체의 엄지 폭은 두 모델 모두 앞쪽 핏을 주의해서 볼 이유입니다.</li>
+<li><strong>뒤꿈치와 앞쪽의 반응 차이를 확인하세요.</strong> 노바6는 전족부 FF TURBO²를 쓰며, 뒤꿈치의 전환감에 외부 리뷰의 지적이 있습니다.</li>
+</ul>
 </div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>템포 비중이 크고 가벼운 반발을 원하면 에보 SL</strong>, <strong>한 켤레로 오래 편하게 굴리려면 노바블라스트 6</strong>입니다. 각각 보스턴 13과 붙인 글도 있습니다 — <a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">에보 SL vs 보스턴 13</a>, <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바 6 vs 보스턴 13</a>.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>아디제로 Evo SL</th><th>노바블라스트 6</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>209,000원</td><td><strong>179,000원</strong></td></tr>
-    <tr><td>무게</td><td><strong>223g</strong></td><td>249g (26g 무거움)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>36 / 28mm</td><td><strong>39.2 / 32.1mm</strong></td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>7mm</td></tr>
-    <tr><td>미드솔</td><td>100% Lightstrike Pro</td><td>FF Blast Max + FF Turbo Squared(전족)</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음 <em>(동일)</em></td></tr>
-    <tr><td>쿠션 / 반발</td><td>9 / <strong>9</strong></td><td>9 / 7</td></tr>
-    <tr><td>안정성</td><td>6/10</td><td>6/10 <em>(동일)</em></td></tr>
-    <tr><td>토박스 / 와이드</td><td>표준(71.6mm) / <strong>없음</strong> <em>(한국 공식몰, 2026-10)</em></td><td>좁은 편(71.0mm) / <strong>있음</strong></td></tr>
-    <tr><td>평발 적합성</td><td>보통</td><td>보통 <em>(동일)</em></td></tr>
-    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>700km · 256원</strong></td></tr>
-    <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:30–6:30 /km</td></tr>
-  </tbody>
+<p>한 켤레로 조깅과 템포를 겸하려면 ‘더 오래 간다’는 추정값보다 가벼움·발 고정·쉬운 페이스의 전환감을 먼저 비교하는 편이 유용합니다. 이 글은11/9 원문을 다시 대조해 그 선택 조건을 정리했습니다.</p>
+<table><thead><tr><th>항목</th><th>Evo SL 기본 메쉬</th><th>노바블라스트6</th></tr>
+</thead>
+<tbody><tr><th>한국 정가·상품</th><td>209,000원 · JP7149</td><td>179,000원 · 남성 일반/2E·여성 일반</td></tr>
+<tr><th>실험실 무게</th><td>223g</td><td>249g</td></tr>
+<tr><th>실험실 힐/전족부 스택</th><td>36.1/28.1mm</td><td>39.2/32.1mm</td></tr>
+<tr><th>실험실 드롭</th><td>8mm</td><td>7.1mm</td></tr>
+<tr><th>구조</th><td>전장 Lightstrike Pro + 중족부 플라스틱 생크</td><td>FF BLAST MAX + 전족부 FF TURBO²</td></tr>
+<tr><th>전장 카본 플레이트</th><td>없음</td><td>없음</td></tr>
+<tr><th>힐/전족부 SA</th><td>147/126</td><td>143/130</td></tr>
+<tr><th>힐/전족부 에너지 리턴</th><td>74.3/73.5%</td><td>55.4/69.1%</td></tr>
+<tr><th>내부 최광폭 / 엄지 부위</th><td>97.5/71.6mm</td><td>94.8/71.0mm</td></tr>
+</tbody>
 </table>
-
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
-
-<h2>3만원이 아니라 63%입니다</h2>
-
-<p>정가만 보면 3만원 차이라 큰 격차가 아닌 것처럼 보입니다. 그런데 <strong>내구를 넣으면 그림이 달라집니다.</strong></p>
-
-<ul>
-  <li>에보 SL — 209,000원 ÷ 500km = <strong>km당 418원</strong></li>
-  <li>노바블라스트 6 — 179,000원 ÷ 700km = <strong>km당 256원</strong></li>
+<p>위 표의 무게·스택·드롭·SA·에너지 리턴은 RunRepeat의 남성 US9 공시 기준입니다. 한국 판매 SKU와 실험실 검체의 동일성, 와이드의 치수는 확인하지 못했습니다. 내부 최광폭과 엄지 부위 너비는 서로 다른 위치입니다. SA는 실험실 충격흡수, 에너지 리턴은 에너지 회수 값이며 부상 예방률·기록 향상률을 뜻하지 않습니다.</p>
+<h2>가벼움이 우선이면 Evo SL을 시착 후보로</h2>
+<p>Evo SL의 실험실 무게는26g 낮습니다. 전장 Lightstrike Pro를 쓰지만 중족부 플라스틱 생크도 있어 ‘지지 부품이 전혀 없는 신발’은 아닙니다. Doctors of Running은 쉬운 러닝과 템포 등으로 활용하면서 중족부 지지와 어퍼 고정을 주의점으로 들었습니다. 매장에서 끈을 조인 뒤 발이 옆으로 밀리는지, 쉬운 속도에서도 전환이 편한지 확인하세요.</p>
+<p>기본형의 한국 공식은224g(270mm)·38/32mm·드롭6mm입니다. 같은 이름의 SFTM 우븐 KJ0774는219,000원과 다른 사양을 표시하므로 기본 메쉬의223g 실측과 섞지 않았습니다.</p>
+<h2>남성 와이드와 앞쪽 반응을 보려면 노바블라스트6</h2>
+<p>남성2E1011C242.002는 한국 공식179,000원입니다. 넓은 폭을 찾는 남성 러너에게 실제로 확인한 구매 후보가 있다는 점이 의미 있습니다. 다만 표의94.8/71.0mm는 해외 실험실 검체이며 한국2E 치수가 아닙니다. 여성 와이드는 이번에 확인하지 못했습니다.</p>
+<p>폼 전체가 FF TURBO²인 것은 아닙니다. FF BLAST MAX 본체에 전족부 인서트를 더한 구조로, 실험실 뒤꿈치와 앞쪽 에너지 리턴도 차이가 큽니다. DOR은 뒤꿈치 전환과 반응을 아쉬워했지만 RTR의 전체 승차감 의견은 리뷰어별로 갈렸습니다. 뒤꿈치 착지 비중이 크다면 앞쪽의 높은 수치만 보고 결정하지 마세요.</p>
+<h2>시착 때 비교할 세 장면</h2>
+<ul><li>평소 조깅 속도에서 뒤꿈치부터 발끝까지 넘어가는 느낌.</li>
+<li>템포로 짧게 속도를 바꿀 때의 어퍼 고정과 발의 밀림.</li>
+<li>양발 엄지 옆·중족부·발등의 압박과 필요한 폭 재고.</li>
 </ul>
-
-<p>63% 차이입니다. 주 40km를 달리는 러너라면 에보 SL은 약 3개월, 노바 6은 약 4개월 반을 씁니다. 1년으로 늘리면 구매 횟수가 달라집니다.</p>
-
-<p>이 격차를 알고도 에보 SL을 고를 이유가 반발입니다.</p>
-
-<h2>에보 SL — 100% 슈퍼폼으로 미는 쪽</h2>
-
-<p>미드솔 전체를 <strong>Lightstrike Pro</strong>로 채웠습니다. 아디다스가 레이싱화에 쓰는 최상위 폼을 부분이 아니라 전면에 쓴 구성이고, 그 결과가 <strong>반발 9/10에 223g</strong>입니다.</p>
-
-<p>적정 페이스가 4:00~6:00으로 빠른 쪽에 맞춰져 있어, 템포런이나 페이스 주행에서 값을 합니다. 족저근막염 예방 등급도 excellent입니다.</p>
-
-<p>약점은 <strong>내구 500km</strong>입니다. 슈퍼폼을 전면에 쓴 대가로 수명이 짧고, 그래서 km당 비용이 올라갑니다. 스택도 36mm로 노바 6(39.2mm)보다 낮아 푹신함 자체는 덜합니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 템포·페이스 주행 비중이 큰 분, 가벼운 반발을 좋아하는 분, 로테이션에서 "빠른 날"을 담당할 신발을 찾는 분.</p>
-
-<h2>노바블라스트 6 — 오래 푹신하게 가는 쪽</h2>
-
-<p>힐 39.2mm·전족 32.1mm로 스택이 더 높고 쿠션 9/10입니다. 전족부에만 FF Turbo Squared를 얹어 밀어내는 힘을 보강했지만, 전체 성격은 <strong>편한 페이스로 오래 달리는 쪽</strong>입니다.</p>
-
-<p>결정적인 건 <strong>700km에 km당 256원</strong>입니다. 이 비교에서 가장 큰 실질 차이이고, 데일리 주력으로 쓸수록 격차가 누적됩니다.</p>
-
-<p>약점은 반발 7/10입니다. 페이스를 확 올리는 날에는 에보 SL만큼 튕겨주지 않습니다. 26g 더 무거운 것도 빠른 구간에서는 체감됩니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 주간 러닝의 대부분이 조깅인 분, 한 켤레를 오래 쓰려는 분, 장거리 훈련이 많은 분.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>총비용이 기준</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>(km당 256원, 63% 유리)</li>
-  <li><strong>반발·가벼움이 기준</strong> → <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(223g, 반발 9)</li>
-  <li><strong>주력 페이스 4분대</strong> → 에보 SL</li>
-  <li><strong>주력 페이스 6분대</strong> → 노바 6</li>
-  <li><strong>한 켤레만 산다</strong> → 노바 6(페이스 폭이 넓고 오래 감)</li>
-  <li><strong>로테이션 구성 중</strong> → 둘을 같이 쓰면 역할이 갈립니다(빠른 날 에보 SL / 이지런 노바 6)</li>
-  <li><strong>플레이트가 있는 쪽도 보고 싶다</strong> → <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바 6 vs 보스턴 13</a>에서 유리섬유 로드와 비교했습니다</li>
+<h2>수명과 페이스로 승자를 정하지 않은 이유</h2>
+<p>공통 수명 km, 질환별 예방·치료 효과, 누구에게나 맞는 최적 페이스를 뒷받침하는 자료는 확인하지 못했습니다. 아웃솔 내마모 시험의 깊이(mm)를 수명(km)으로 바꾸지 않았고, 기존의 수명·km당 비용·부상 등급·페이스 범위에 따른 추천을 제거했습니다. 매일 신을 수 있는지는 소재 하나보다 실제 착화와 훈련 후 반응을 함께 봐야 합니다.</p>
+<h2>구매 전 자주 묻는 질문</h2>
+<h3>둘의 정가 차이는 얼마인가요?</h3>
+<p>확인한 한국 상품은 Evo SL 기본 메쉬 JP7149 209,000원, 노바블라스트6 남성 일반·2E 및 여성 일반179,000원으로 30,000원 차이입니다. 실제 할인가는 SKU·구매 시점별로 확인하세요.</p>
+<h3>발볼이 넓으면 어떤 선택지가 있나요?</h3>
+<p>노바블라스트6 남성2E 상품을 한국 공식몰에서 확인했습니다. Evo SL은 확인한 JP7149가 레귤러 핏이며, 모든 한국SKU의 와이드 부재를 확인한 것은 아닙니다. 앞쪽 압박과 발등·중족부 고정도 함께 시착하세요.</p>
+<h3>노바블라스트6가 더 오래 가나요?</h3>
+<p>비교 가능한 수명 시험을 확인하지 못했습니다. 기존500km 대700km와 km당 비용 차이는 근거가 부족해 삭제했습니다.</p>
+<h2>다시 확인한 원문</h2>
+<ul><li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디다스 한국 Evo SL JP7149</a>: 기본 메쉬 정가209,000원,224g(270mm),38/32mm·6mm</li>
+<li><a href="https://www.asics.co.kr/p/AKR_112630211-002" target="_blank" rel="noopener noreferrer">아식스 한국 노바블라스트6 남성2E</a>: 1011C242.002 정가179,000원·2E</li>
+<li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">RunRepeat adidas-adizero-evo-sl</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">RunRepeat asics-novablast-6</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://www.doctorsofrunning.com/adidas-adizero-evo-sl-review-2024/" target="_blank" rel="noopener noreferrer">Doctors of Running Evo SL</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://www.doctorsofrunning.com/asics-novablast-6-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 노바블라스트6</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://www.roadtrailrun.com/2026/05/asics-novablast-6-multi-tester-review.html?m=1" target="_blank" rel="noopener noreferrer">RoadTrailRun 노바블라스트6</a>: 리뷰어별 착화 차이와 공시 사양</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a>: 측정 위치·표본·시험 조건</li>
 </ul>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 안정성 6인데 과내전이 있으면요?</p>
-    <p class="faq-a">A. 둘 다 권하지 않습니다. 안정성 6/10에 평발 적합성도 보통이라 발이 안쪽으로 무너지는 러너에게는 장거리에서 불리합니다. 이 경우 안정화 카테고리에서 고르는 편이 맞습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 내구 km 차이를 얼마나 믿어야 하나요?</p>
-    <p class="faq-a">A. 방향은 믿되 숫자는 참고로 보세요. 500km·700km는 아웃솔 마모 기준 추정치라 체중·노면·주법에 따라 크게 달라집니다. 다만 슈퍼폼을 전면에 쓴 신발이 상대적으로 수명이 짧다는 경향 자체는 일관되게 관찰됩니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
-`,
+<p><small>확인일 2026-11-09. 제조사 상품 조건·실험실 검체·리뷰어 착화 의견을 구분했습니다. 자체 실주행 후기는 아닙니다.</small></p>`,
+    updatedAt: '2026-11-09',
   },
   {
     id: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
@@ -4055,173 +4009,91 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
     slug: 'asics-novablast-6-vs-adidas-boston-13-daily-2026',
-    title: '노바블라스트 6 vs 보스턴 13 차이 — 1만원·5g 차이인데 성격이 반대 | 푹신함이냐 굴림이냐',
-    description:
-      '아식스 노바블라스트 6과 아디다스 보스턴 13은 정가가 179,000원 대 189,000원으로 1만원 차이고 무게도 249g 대 254g로 5g밖에 차이 나지 않습니다. 그런데 쿠션 9 대 7, 반발 7 대 9로 성격이 정확히 반대예요. 노바 6은 플레이트 없이 39.2mm 스택으로 푹신하게 밀고, 보스턴 13은 유리섬유 Energy Rods로 굴려줍니다. 내구는 700km 대 550km(km당 256원 대 343원), 와이드 옵션은 노바 6에만. 어느 쪽이 내 훈련에 맞는지 실측으로 갈라드립니다.',
-    thumbnail: '/images/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026.webp',
+    title: '노바블라스트6 vs 보스턴13 — 1만원·5g보다 먼저 볼 구조와 핏',
+    description: '노바6의 전족부 인서트와 보스턴13의 유리섬유 로드·이중폼을 비교합니다. 실험실과 공시 스택을 분리하고 한국 남성2E·레귤러 핏의 확인 범위를 밝힙니다.',
+    thumbnail: '/images/shoes/asics/novablast6/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-08-10',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['노바블라스트 6', '아식스 노바블라스트', '보스턴 13', '아디다스 보스턴13', '데일리 러닝화', 'FF Blast Max', 'Energy Rods', '러닝화 비교', '가을 마라톤', '17만원대 러닝화'],
+    category: 'review',
+    readingTime: 6,
+    tags: [
+      '노바블라스트 6',
+      '아식스 노바블라스트',
+      '보스턴 13',
+      '아디다스 보스턴13',
+      '데일리 러닝화',
+      'FF Blast Max',
+      'Energy Rods',
+      '러닝화 비교',
+      '가을 마라톤',
+      '17만원대 러닝화',
+    ],
     faqs: [
       {
-        question: '두 신발 가격이 같은데 뭘 기준으로 고르나요?',
-        answer:
-          '용도입니다. 정가는 179,000원 대 189,000원으로 1만원 차이지만 노바블라스트 6은 쿠션 9/10에 적정 페이스 4:30~6:30으로 이지런·장거리 쪽이고, 보스턴 13은 반발 8/10에 4:00~5:30으로 템포·인터벌 쪽입니다. 주간 러닝의 대부분이 편한 조깅이면 노바 6, 포인트 훈련 비중이 크면 보스턴 13입니다.',
+        question: '두 모델의 가격과 무게 차이는요?',
+        answer: '확인한 한국 정가는 노바블라스트6 179,000원, 보스턴13 KH9563 189,000원입니다. RunRepeat 공시 무게는249g 대254g입니다. 한국 공시 무게나 다른 사이즈의 실물과 같다는 뜻은 아닙니다.',
       },
       {
-        question: '무게가 5g밖에 차이 안 나는데 왜 느낌이 다른가요?',
-        answer:
-          '무게가 아니라 구조 때문입니다. 노바블라스트 6은 플레이트가 없고 스택이 39.2mm로 높아 발이 폼 속으로 가라앉았다 올라오는 감각이고, 보스턴 13은 유리섬유 Energy Rods 2.0이 발을 앞으로 넘겨주는 감각입니다. 같은 무게라도 힘이 어디서 나오는지가 다릅니다.',
+        question: '보스턴13은 카본 로드인가요?',
+        answer: '이번에 확인한 제조사 설명은 유리섬유 ENERGYRODS2.0입니다. Lightstrike Pro와 Lightstrike2.0 이중폼을 쓰며 단일 Lightstrike Pro나 카본 로드로 적지 않았습니다.',
       },
       {
-        question: '발볼이 넓으면 어느 쪽인가요?',
-        answer:
-          '노바블라스트 6입니다. 두 켤레 모두 토박스는 좁은 편이지만 와이드 옵션은 노바 6에만 있습니다. 보스턴 13은 표준 폭 하나뿐이라 선택지가 없습니다.',
-      },
-      {
-        question: '노바블라스트 5를 할인가에 사는 건 어떤가요?',
-        answer:
-          '합리적인 선택입니다. 5는 정가 169,000원에 스택이 41mm로 6(39.2mm)보다 오히려 높고 내구도 600km입니다. 6에서 달라진 건 전족부에 FF Turbo Squared를 넣고 드롭을 8mm에서 7mm로 낮춘 것으로, 세대 차이가 극적이진 않습니다. 재고 할인 폭이 크면 5도 충분히 좋은 선택입니다.',
-      },
-      {
-        question: '오래 신는 쪽은요?',
-        answer:
-          '노바블라스트 6이 700km 기준으로 보스턴 13(550km)보다 깁니다. 정가로 나누면 km당 256원 대 343원으로 약 34% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며, 단일 숫자로 교체 시점을 정하지는 마세요.',
+        question: '6분대 조깅은 보스턴13의 설계 범위 밖인가요?',
+        answer: '그런 수치형 페이스 제한의 근거를 확인하지 못했습니다. 특정 페이스만으로 배제하지 않고 쉬운 속도에서의 전환감과 로드 강성이 자신에게 편한지 확인하세요.',
       },
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가격은 1만원 차, 무게는 5g 차입니다</strong> — 179,000원 대 189,000원, <a href="/shoes/asics-novablast-6">노바블라스트 6</a> 249g / <a href="/shoes/adidas-boston-13">보스턴 13</a> 254g. 스펙표만 보면 거의 같은 신발처럼 보입니다</li>
-    <li><strong>그런데 성격이 정확히 반대입니다</strong> — 쿠션 9 대 7, 반발 7 대 9. 노바 6은 <strong>플레이트 없이 39.2mm 스택으로 푹신하게</strong>, 보스턴 13은 <strong>유리섬유 Energy Rods로 굴려서</strong> 갑니다</li>
-    <li><strong>갈림길 셋</strong> — 적정 페이스(4:30~6:30 vs 4:00~5:30), km당 비용(256원 vs 343원), <strong>와이드 옵션(노바 6에만 있음)</strong></li>
-  </ul>
+    content: `<div class="tldr"><span class="tldr-label">고르기 전에</span><ul><li><strong>정가1만원·실험실 무게5g 차이입니다.</strong> 가격과 무게만으로 승자를 정하기보다 구조와 착화를 비교하세요.</li>
+<li><strong>가장 명확한 구조 차이는 유리섬유 로드입니다.</strong> 보스턴13은 이중폼과 ENERGYRODS2.0, 노바6는 전족부 FF TURBO² 인서트를 씁니다.</li>
+<li><strong>한국 남성2E는 노바6에서 확인했습니다.</strong> 보스턴은 확인한 KH9563가 레귤러 핏입니다.</li>
+</ul>
 </div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>주간 러닝의 대부분이 편한 조깅이면 노바블라스트 6</strong>, <strong>포인트 훈련 비중이 크고 하프까지 겸할 생각이면 보스턴 13</strong>입니다. 발볼이 넓으면 와이드가 있는 노바 6이 사실상 유일한 답입니다. 보스턴 13을 다른 상대와 붙인 글도 있습니다 — <a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">에보 SL과의 대결</a>, <a href="/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026">템포 트레이너 3파전</a>.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>노바블라스트 6</th><th>보스턴 13</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>179,000원</td><td>189,000원 <em>(1만원 차)</em></td></tr>
-    <tr><td>무게</td><td>249g</td><td>254g <em>(5g 차)</em></td></tr>
-    <tr><td>스택 (힐/전족)</td><td><strong>39.2 / 32.1mm</strong></td><td>36 / 30mm</td></tr>
-    <tr><td>드롭</td><td>7mm</td><td>6mm</td></tr>
-    <tr><td>미드솔</td><td>FF Blast Max + FF Turbo Squared(전족)</td><td>Lightstrike Pro + Energy Rods 2.0</td></tr>
-    <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>7 / <strong>9</strong></td></tr>
-    <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
-    <tr><td>토박스 / 와이드</td><td>좁은 편 / <strong>있음</strong></td><td>좁은 편 / <strong>없음</strong></td></tr>
-    <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td><strong>700km · 256원</strong></td><td>550km · 343원</td></tr>
-    <tr><td>적정 페이스</td><td>4:30–6:30 /km</td><td>4:00–5:30 /km</td></tr>
-  </tbody>
+<table><thead><tr><th>항목</th><th>노바블라스트6</th><th>보스턴13 KH9563</th></tr>
+</thead>
+<tbody><tr><th>한국 정가</th><td>179,000원</td><td>189,000원</td></tr>
+<tr><th>실험실 무게</th><td>249g</td><td>254g</td></tr>
+<tr><th>실험실 힐/전족부 스택</th><td>39.2/32.1mm</td><td>34.3/28.3mm</td></tr>
+<tr><th>실험실 드롭</th><td>7.1mm</td><td>6mm</td></tr>
+<tr><th>폼</th><td>FF BLAST MAX + 전족부 FF TURBO²</td><td>Lightstrike Pro + Lightstrike2.0</td></tr>
+<tr><th>지지 부품</th><td>전장 카본 플레이트 없음</td><td>유리섬유 ENERGYRODS2.0</td></tr>
+<tr><th>힐/전족부 SA</th><td>143/130</td><td>127/108</td></tr>
+<tr><th>힐/전족부 에너지 리턴</th><td>55.4/69.1%</td><td>63.4/69.7%</td></tr>
+<tr><th>내부 최광폭 / 엄지 부위</th><td>94.8/71.0mm</td><td>97.3/70.6mm</td></tr>
+</tbody>
 </table>
-
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로 체중·노면·주법에 따라 달라집니다 — <a href="/blog/running-shoe-500km-replacement-myth-2026">교체 시점을 숫자 하나로 정하면 안 되는 이유</a>.</small></p>
-
-<h2>스펙표가 비슷한데 왜 다른 신발인가</h2>
-
-<p>가격이 1만원 차이고 무게가 5g 차이면 보통 "비슷한 신발 둘"로 읽힙니다. 그런데 <strong>쿠션과 반발 점수가 정확히 뒤집혀 있습니다</strong> — 노바 6이 9/7, 보스턴 13이 7/9.</p>
-
-<p>이유는 <strong>힘이 어디서 나오느냐</strong>입니다.</p>
-
-<p><strong>노바블라스트 6은 플레이트가 없습니다.</strong> 대신 힐 39.2mm·전족 32.1mm의 높은 스택을 FF Blast Max로 채우고, 전족부에만 FF Turbo Squared라는 더 반발 좋은 폼을 얹었습니다. 발이 폼 속으로 가라앉았다가 밀려 올라오는 감각이고, 그래서 편한 페이스에서 오래 달릴 때 편합니다.</p>
-
-<p><strong>보스턴 13은 유리섬유 Energy Rods 2.0을 넣었습니다.</strong> 로드가 발을 앞으로 넘겨주기 때문에 페이스를 올릴수록 값을 하고, 비틀림도 잡아줍니다(안정성 8/10 대 6/10). 대신 스택이 36mm로 낮아 푹신함 자체는 덜합니다.</p>
-
-<p>그래서 <strong>같은 값으로 정반대의 것을 삽니다</strong> — 푹신함이냐 굴림이냐. 플레이트가 실제로 하는 일이 궁금하다면 <a href="/blog/running-shoe-plate-guide-2026">플레이트 해설</a>을 보세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⏱️</span>
-  <div class="callout-body">
-    <p class="callout-title">적정 페이스가 겹치지 않습니다</p>
-    <p>노바 6은 <strong>4:30~6:30/km</strong>, 보스턴 13은 <strong>4:00~5:30/km</strong>입니다. 겹치는 구간이 4:30~5:30 한 시간대뿐이에요. 본인 주력 페이스가 6분대라면 보스턴 13은 설계 범위 밖이고, 4분 초반이라면 노바 6이 무겁게 느껴질 겁니다. <strong>이 항목이 가격보다 먼저입니다.</strong></p>
-  </div>
-</div>
-
-<h2>노바블라스트 6 — 푹신함으로 미는 쪽</h2>
-
-<p>쿠션 9/10은 데일리화 중에서도 상위입니다. 힐 39.2mm 스택에 플레이트가 없어서, 발이 방해받지 않고 폼을 그대로 씁니다. 이지런·회복런·장거리 훈련처럼 <strong>편한 페이스로 오래 달리는 날</strong>에 값을 합니다.</p>
-
-<p>실용적으로 큰 건 두 가지입니다. <strong>내구 700km에 km당 256원</strong>으로 이 비교에서 34% 경제적이고, <strong>와이드 옵션이 있습니다.</strong> 발볼 넓은 러너에게 와이드 유무는 다른 모든 항목을 이기는 조건입니다.</p>
-
-<p>약점은 <strong>안정성 6/10</strong>과 평발 적합성 fair입니다. 스택이 높고 플레이트가 없다 보니 지쳤을 때 발이 흔들릴 여지가 있습니다. 그리고 반발 7/10이라 페이스를 확 올리는 날에는 심심하게 느껴집니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 주간 러닝의 대부분이 조깅인 분, 장거리 훈련이 많은 분, <strong>발볼이 넓어 와이드가 필요한 분</strong>, 한 켤레를 오래 쓰고 싶은 분.</p>
-
-<h2>보스턴 13 — 굴림으로 미는 쪽</h2>
-
-<p>반발 8/10에 안정성 8/10입니다. 유리섬유 로드가 앞으로 넘겨주는 힘과 비틀림 억제를 동시에 주기 때문에, <strong>페이스를 올리는 날과 후반부가 흔들리는 러너</strong>에게 강합니다. 평발 적합성도 good으로 노바 6(fair)보다 낫습니다.</p>
-
-<p>드롭 6mm에 전족 스택 30mm라 미드풋으로 착지해 굴리는 주법과 잘 맞습니다. 하프 레이스를 이 신발로 뛰는 것도 무리가 없습니다.</p>
-
-<p>약점은 <strong>와이드 옵션이 없다</strong>는 것과, 내구 550km로 km당 343원이라는 점입니다. 그리고 적정 페이스가 4:00~5:30이라 느린 조깅 위주라면 이 신발의 장점이 발휘되지 않습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 템포·인터벌이 주간 계획에 고정된 분, 하프 레이스를 겸할 분, 발이 안쪽으로 무너지는 편인 분, 굴려주는 감각을 좋아하는 분.</p>
-
-<h2>그럼 노바블라스트 5는요?</h2>
-
-<p>6이 나왔다고 5가 나쁜 신발이 된 건 아닙니다. 오히려 숫자만 보면 흥미롭습니다.</p>
-
-<ul>
-  <li><a href="/shoes/asics-novablast-5">노바블라스트 5</a>는 <strong>정가 169,000원</strong>으로 1만원 저렴하고, <strong>스택이 41mm로 6(39.2mm)보다 오히려 높습니다</strong></li>
-  <li>내구는 600km(km당 282원)로 6(700km·256원)보다 짧지만 보스턴 13보다는 깁니다</li>
-  <li>6에서 달라진 핵심은 <strong>전족부 FF Turbo Squared 추가</strong>와 드롭 8mm → 7mm입니다. 세대 차이가 극적이진 않습니다</li>
+<p>위 표의 무게·스택·드롭·SA·에너지 리턴은 RunRepeat의 남성 US9 공시 기준입니다. 한국 판매 SKU와 실험실 검체의 동일성, 와이드의 치수는 확인하지 못했습니다. 내부 최광폭과 엄지 부위 너비는 서로 다른 위치입니다. SA는 실험실 충격흡수, 에너지 리턴은 에너지 회수 값이며 부상 예방률·기록 향상률을 뜻하지 않습니다.</p>
+<h2>로드의 전환감을 원하는지부터 확인하세요</h2>
+<p>보스턴13은 유리섬유 로드와 두 종류 폼을 씁니다. 노바블라스트6는 전장 카본 플레이트 없이 FF BLAST MAX 본체와 전족부 FF TURBO²를 사용합니다. 이 차이는 실제로 발을 굽히고 앞으로 넘길 때의 감각을 비교할 이유지만, 재료 이름만으로 한쪽이 모든 러너에게 더 빠르거나 안전하다고 단정할 수는 없습니다.</p>
+<p>노바6가 무조건 느린 조깅용, 보스턴13이 무조건4분대용이라는 선은 지웠습니다. 평소 조깅과 짧은 템포 두 상황에서 전환이 자연스러운지 확인하고, 평발 여부만으로 보스턴의 우위를 정하지 않습니다.</p>
+<h2>스택과 실험실 반응을 따로 읽으세요</h2>
+<p>실험실 스택은 노바6가 힐4.9mm·앞쪽3.8mm 높습니다. 하지만 앞쪽 에너지 리턴은69.1%와69.7%로 근접하고, 뒤꿈치는55.4%와63.4%입니다. ‘쿠션과 반발이 정확히 정반대’라는 에디터 점수 설명보다 측정 위치에 따라 차이가 달라진다는 사실이 더 구체적입니다. 이 수치에서 개인의 피로도나 기록 향상률을 계산하지 않습니다.</p>
+<p>제조사 공시와 실측을 섞지 않았습니다. 보스턴 한국 공시는36/30mm·6mm이고, 노바6의 DOR·RTR 소개 남성 공시 사양은41.5/33.5mm·8mm입니다. 표는 두 모델 모두 RunRepeat 실측을 사용했습니다.</p>
+<h2>와이드가 필요하면 실제 상품 옵션으로 비교</h2>
+<p>노바6 남성2E의 한국 상품을 확인했습니다. 보스턴 KH9563는 레귤러 핏이며 모든 한국SKU의 와이드 판매 여부까지 조사한 것은 아닙니다. 내부 최광폭은 보스턴이 더 크지만 엄지 부위는 더 좁습니다. ‘와이드’라는 표기와 한 위치의 폭 수치는 다른 정보라, 발등·엄지·중족부 압박을 함께 확인해야 합니다.</p>
+<h2>최종 후보를 좁히는 방법</h2>
+<ul><li>남성2E가 꼭 필요하다면 노바6의 해당 상품·사이즈 재고를 먼저 확인하세요.</li>
+<li>유리섬유 로드가 있는 전환감을 원한다면 보스턴13을 쉬운 속도와 템포에서 모두 시착하세요.</li>
+<li>뒤꿈치 착지라면 노바6의 전환에 대한 DOR 지적을 참고해 자신의 체감과 대조하세요.</li>
+<li>젖은 노면의 안전을 아웃솔 브랜드명만으로 보장하지 마세요.</li>
 </ul>
-
-<p><strong>재고 할인 폭이 크면 5도 충분히 합리적인 선택</strong>입니다. 두 세대의 차이는 <a href="/blog/asics-novablast-5-vs-6-comparison-2026">노바블라스트 5 vs 6 비교</a>에 따로 정리해뒀습니다.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>발볼이 넓다</strong> → <a href="/shoes/asics-novablast-6">노바블라스트 6</a>. 와이드가 있는 쪽이 여기뿐입니다</li>
-  <li><strong>평발이거나 후반에 발이 무너진다</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>(안정성 8, 평발 good)</li>
-  <li><strong>주력 페이스가 6분대</strong> → 노바 6(보스턴 13은 설계 범위 밖)</li>
-  <li><strong>주력 페이스가 4분 초반</strong> → 보스턴 13</li>
-  <li><strong>주 5회 이상, 대부분 조깅</strong> → 노바 6(700km·와이드·쿠션 9)</li>
-  <li><strong>포인트 훈련이 고정, 하프 레이스 예정</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 노바 6(km당 256원, 34% 유리)</li>
-  <li><strong>예산을 더 줄이고 싶다</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a> 할인 재고(169,000원·스택 41mm)</li>
-  <li><strong>같은 값대 다른 후보도 보고 싶다</strong> → <a href="/blog/nike-pegasus-42-vs-asics-novablast-6-daily-2026">페가수스 42 vs 노바블라스트 6</a>도 함께 보세요</li>
+<h2>수명과 페이스로 승자를 정하지 않은 이유</h2>
+<p>공통 수명 km, 질환별 예방·치료 효과, 누구에게나 맞는 최적 페이스를 뒷받침하는 자료는 확인하지 못했습니다. 아웃솔 내마모 시험의 깊이(mm)를 수명(km)으로 바꾸지 않았고, 기존의 수명·km당 비용·부상 등급·페이스 범위에 따른 추천을 제거했습니다. 매일 신을 수 있는지는 소재 하나보다 실제 착화와 훈련 후 반응을 함께 봐야 합니다.</p>
+<h2>구매 전 자주 묻는 질문</h2>
+<h3>두 모델의 가격과 무게 차이는요?</h3>
+<p>확인한 한국 정가는 노바블라스트6 179,000원, 보스턴13 KH9563 189,000원입니다. RunRepeat 공시 무게는249g 대254g입니다. 한국 공시 무게나 다른 사이즈의 실물과 같다는 뜻은 아닙니다.</p>
+<h3>보스턴13은 카본 로드인가요?</h3>
+<p>이번에 확인한 제조사 설명은 유리섬유 ENERGYRODS2.0입니다. Lightstrike Pro와 Lightstrike2.0 이중폼을 쓰며 단일 Lightstrike Pro나 카본 로드로 적지 않았습니다.</p>
+<h3>6분대 조깅은 보스턴13의 설계 범위 밖인가요?</h3>
+<p>그런 수치형 페이스 제한의 근거를 확인하지 못했습니다. 특정 페이스만으로 배제하지 않고 쉬운 속도에서의 전환감과 로드 강성이 자신에게 편한지 확인하세요.</p>
+<h2>다시 확인한 원문</h2>
+<ul><li><a href="https://www.asics.co.kr/p/AKR_112630211-002" target="_blank" rel="noopener noreferrer">아식스 한국 노바블라스트6 남성2E</a>: 1011C242.002 정가179,000원·2E</li>
+<li><a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">아디다스 한국 보스턴13 KH9563</a>: 정가189,000원,260g(사이즈 조건 미표기),36/30mm·6mm, 이중폼과 유리섬유 로드</li>
+<li><a href="https://runrepeat.com/asics-novablast-6" target="_blank" rel="noopener noreferrer">RunRepeat asics-novablast-6</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/adidas-adizero-boston-13" target="_blank" rel="noopener noreferrer">RunRepeat adidas-adizero-boston-13</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://www.doctorsofrunning.com/asics-novablast-6-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 노바블라스트6</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a>: 측정 위치·표본·시험 조건</li>
 </ul>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 부상 예방 등급이 같던데, 부상 이력으로는 안 갈리나요?</p>
-    <p class="faq-a">A. 네. 족저근막·아킬레스·무릎·정강이 네 항목 모두 두 켤레가 동일하게 양호로 평가됩니다. 이 비교에서는 부상 이력이 결정 요인이 아니고, <strong>페이스·발볼·안정성</strong>이 갈림길입니다. 다만 발이 안쪽으로 무너지는 편이라면 안정성 8인 보스턴 13이 안전합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 하나만 산다면 어느 쪽이 범용적인가요?</p>
-    <p class="faq-a">A. 노바블라스트 6입니다. 적정 페이스 범위가 4:30~6:30으로 더 넓고, 와이드가 있어 실패 확률이 낮으며, 700km로 오래 씁니다. 보스턴 13은 성격이 뚜렷한 대신 쓰임이 좁습니다 — 두 켤레 로테이션의 "빠른 날" 담당에 가깝습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
-    <p class="faq-a">A. 궁합이 좋은 조합입니다. 성격이 정반대라 역할이 겹치지 않아요 — 조깅·장거리는 노바 6, 템포·인터벌은 보스턴 13으로 나누면 됩니다. 정가 차이가 1만원이라 예산 계산도 단순합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 겨울에는 어느 쪽이 나은가요?</p>
-    <p class="faq-a">A. 큰 차이는 없습니다. 다만 보스턴 13은 컨티넨탈 러버 아웃솔이라 젖은 노면 그립에서 안정적입니다. 노면 상태가 나쁜 겨울 훈련이 많다면 이 점은 보스턴 13 쪽 장점입니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(노바블라스트 6 179,000원 · 보스턴 13 189,000원, 노바블라스트 5는 169,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다. · 작성 2026년 8월 10일.</small></p>
-`,
+<p><small>확인일 2026-11-09. 제조사 상품 조건·실험실 검체·리뷰어 착화 의견을 구분했습니다. 자체 실주행 후기는 아닙니다.</small></p>`,
+    updatedAt: '2026-11-09',
   },
   {
     id: 'asics-magic-speed-5-vs-nike-zoom-fly-6-carbon-trainer-2026',

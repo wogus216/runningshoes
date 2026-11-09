@@ -140,7 +140,7 @@ export const shoe: Shoe = {
     { slug: 'new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026', title: 'SC 레벨 vs 슈퍼블라스트 3 — 같은 값 슈퍼 트레이너' },
     { slug: 'new-balance-sc-rebel-korea-launch-2026', title: 'SC 레벨 한국 출시 — 구매 경로 정리' },
     { slug: 'new-balance-sc-rebel-preview-2026', title: 'SC 레벨 프리뷰 — 해외 리뷰가 이례적으로 높은 이유' },
-    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 계급도' },
+    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 라인업 — 모델·세대·폭' },
     { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
   ],
 };

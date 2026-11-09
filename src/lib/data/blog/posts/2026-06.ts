@@ -558,105 +558,94 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
     slug: 'superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026',
-    title: '슈퍼블라스트 3 vs 에보 SL vs 마하 6 비교 | 카본 없는 슈퍼트레이너 3파전 — 한 켤레로 훈련 끝내기',
-    description: '카본 없이 한 켤레로 데일리부터 업템포까지 책임지는 경량 트레이너 3종 — 아식스 슈퍼블라스트 3(25.9만), 아디다스 아디제로 에보 SL(20.9만), 호카 마하 6(18.5만). "슈퍼트레이너"로 묶이지만 실은 고스택 슈퍼트레이너·슈퍼폼 가성비 데일리·전통 EVA 올라운더로 결이 다릅니다. 스택·폼 등급·발볼·예산으로 내게 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026.webp',
+    title: '슈퍼블라스트3 vs Evo SL vs 마하6 — 스택·가벼움·핏을 조건별로',
+    description: '카본 없는 세 훈련화의 원문을 다시 대조했습니다. 실험실·공시 스택과 드롭을 구분하고 슈퍼블라스트3 안정감의 리뷰 차이, 마하6 여성 와이드와 남성 미확인을 밝힙니다.',
+    thumbnail: '/images/shoes/asics/superblast3/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-29',
-    category: 'review' as const,
-    readingTime: 10,
-    tags: ['슈퍼블라스트 3', '아디제로 에보 SL', '마하 6', '슈퍼트레이너', '데일리 트레이너', '러닝화 비교'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>셋 다 카본 없는 200g대 경량 트레이너</strong>지만 급이 다릅니다. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>만 <strong>46.5mm 고스택 + 슈퍼폼</strong>의 진짜 "슈퍼트레이너"이고, <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>은 <strong>슈퍼폼을 가장 싸고 가볍게</strong>(36mm·223g·세일 15만대), <a href="/shoes/hoka-mach-6">마하 6</a>은 <strong>EVA 기반 통기성 올라운더</strong>(36mm·최저가 18.5만)입니다</li>
-    <li><strong>한 켤레로 롱런·마라톤 페이스 훈련·업템포를 다 → 슈퍼블라스트 3</strong>. <strong>슈퍼폼 반발을 최저가·최경량으로 → 에보 SL</strong>. <strong>예산 최소 + 여름 통기성 + 전통적 데일리감 → 마하 6</strong>입니다</li>
-    <li><strong>발볼 넓으면 슈퍼블라스트 3는 탈락</strong>(와이드 없음) — 에보 SL도 2026년 10월 한국 공식몰 기준 와이드가 없습니다. 세 켤레 중 와이드 버전이 나온 건 마하 6인데, 한국 판매 여부는 구매 전에 확인하세요. 무릎 보호·고스택 안정감을 최우선으로 보면 46.5mm 슈퍼블라스트 3가 한 수 위입니다</li>
-  </ul>
+    category: 'review',
+    readingTime: 6,
+    tags: [
+      '슈퍼블라스트 3',
+      '아디제로 에보 SL',
+      '마하 6',
+      '슈퍼트레이너',
+      '데일리 트레이너',
+      '러닝화 비교',
+    ],
+    content: `<div class="tldr"><span class="tldr-label">카본 없는 훈련화 세 후보</span><ul><li><strong>고스택을 찾는다면 슈퍼블라스트3를 시착 후보로.</strong> 실험실 힐45.8mm이며 부드러움과 안정감에 대한 리뷰어 의견은 갈립니다.</li>
+<li><strong>가벼운 기본형은 Evo SL.</strong>223g은 해외 실험실 기본 메쉬 조건이며 우븐 변형과 구분합니다.</li>
+<li><strong>마하6는232g이지만 핏과 드롭 차이를 확인하세요.</strong> 한국 여성 와이드는 확인했고 남성 정가·폭은 미확인입니다.</li>
+</ul>
 </div>
-
-<div class="callout info">
-  <span class="callout-icon">⚙️</span>
-  <div class="callout-body">
-    <p class="callout-title">"슈퍼트레이너"는 하나의 신발이 아니라 한 카테고리입니다</p>
-    <p>요즘 "카본 레이싱화는 부담되고, 그렇다고 평범한 데일리화는 심심한" 러너들이 찾는 게 <strong>슈퍼트레이너</strong>입니다. 카본 플레이트 없이 <strong>슈퍼폼(PEBA 계열) + 높은 스택</strong>으로 레이싱화와 훈련화 사이를 한 켤레로 메우는 신발이죠. 그런데 검색하면 가격이 18만~26만으로 천차만별이고, 같은 "슈퍼트레이너"인데 스펙이 제각각입니다. 이 글은 한국에서 가장 많이 비교되는 세 켤레 — <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·<a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>·<a href="/shoes/hoka-mach-6">마하 6</a>을 나란히 놓고, <strong>"어느 게 더 좋냐"가 아니라 "내 훈련·발·예산에 어느 게 맞냐"</strong>를 정리합니다.</p>
-  </div>
-</div>
-
-<h2>스펙 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>슈퍼블라스트 3</th><th>아디제로 에보 SL</th><th>마하 6</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td>259,000원</td><td>209,000원<br><small>(세일 15만대)</small></td><td><strong>185,000원</strong></td></tr>
-    <tr><td>무게(US 9)</td><td>235g</td><td><strong>223g</strong></td><td>232g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td><strong>46.5 / 38.5mm</strong></td><td>36 / 28mm</td><td>36 / 26mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>10mm</td></tr>
-    <tr><td>미드솔 폼</td><td>FF LEAP + FF BLAST PLUS<br><small>(슈퍼폼)</small></td><td>100% Lightstrike Pro<br><small>(슈퍼폼)</small></td><td>Supercritical EVA<br><small>(일반 EVA)</small></td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / 8</td><td>9 / <strong>9</strong></td><td>7 / 8</td></tr>
-    <tr><td>최적 페이스</td><td>4:00~5:30/km</td><td>4:00~6:00/km</td><td>4:30~6:00/km</td></tr>
-    <tr><td>발볼 / 와이드</td><td>좁은 편(71.6mm) · <strong>와이드 없음</strong></td><td>표준 · <strong>와이드 없음</strong> (2026년 10월 한국 공식몰 기준)</td><td>표준(체감 좁음) · <strong>와이드 O</strong></td></tr>
-    <tr><td>내구성 / km당</td><td>550km / 약 471원</td><td>500km / 약 418원</td><td>450km / <strong>약 411원</strong></td></tr>
-    <tr><td>한 줄 성격</td><td>고스택 슈퍼트레이너</td><td>슈퍼폼 가성비 데일리</td><td>여름·통기성 올라운더</td></tr>
-  </tbody>
+<p>‘슈퍼트레이너’는 이 글에서 비교를 묶는 편집상 표현입니다. 셋 모두가 동일한 스택·소재·용도 기준을 충족하는 공인 등급이라고 보지 않습니다. 더 비싼 모델이나 더 두꺼운 모델이 모든 훈련에서 우위라는 순서도 매기지 않았습니다.</p>
+<table><thead><tr><th>항목</th><th>슈퍼블라스트3</th><th>Evo SL 기본 메쉬</th><th>마하6</th></tr>
+</thead>
+<tbody><tr><th>한국 가격·확인 상품</th><td>259,000원 유니섹스1013A177.101</td><td>209,000원 JP7149</td><td>여성 와이드1147834-PLDS 정가185,000원; 남성 미확인</td></tr>
+<tr><th>실험실 무게</th><td>235g</td><td>223g</td><td>232g</td></tr>
+<tr><th>실험실 힐/전족부 스택</th><td>45.8/37.7mm</td><td>36.1/28.1mm</td><td>36.0/26.4mm</td></tr>
+<tr><th>실험실 드롭</th><td>8.1mm</td><td>8mm</td><td>9.6mm</td></tr>
+<tr><th>폼</th><td>FF LEAP + FF BLAST PLUS</td><td>전장 Lightstrike Pro</td><td>Supercritical EVA</td></tr>
+<tr><th>지지 부품</th><td>전장 카본 플레이트 없음</td><td>중족부 플라스틱 생크; 전장 카본 없음</td><td>전장 플레이트 없음</td></tr>
+<tr><th>힐/전족부 SA</th><td>154/153</td><td>147/126</td><td>135/114</td></tr>
+<tr><th>힐/전족부 에너지 리턴</th><td>67.8/67.5%</td><td>74.3/73.5%</td><td>65.4/67.0%</td></tr>
+<tr><th>내부 최광폭 / 엄지 부위</th><td>95.7/71.6mm</td><td>97.5/71.6mm</td><td>95.5/70.1mm</td></tr>
+</tbody>
 </table>
-<p><small>※ 무게·스택은 RunRepeat 실측 및 브랜드 공식 기준, 가격은 각 브랜드 코리아 공식 정가. 에보 SL은 정가 20.9만이나 공홈/세일 시 15만대 형성.</small></p>
-
-<h2>핵심 차이 3가지</h2>
-<h3>① 스택·쿠션 — 슈퍼블라스트 3만 "급"이 다르다</h3>
-<p>표에서 가장 눈에 띄는 줄입니다. 슈퍼블라스트 3는 <strong>힐 46.5mm</strong>로, 에보 SL·마하 6(둘 다 36mm)보다 <strong>1cm 이상 두껍습니다.</strong> 이 차이는 후반부에 그대로 나타나요. 25km가 넘어가는 롱런이나 마라톤 페이스 훈련에서 46.5mm 스택은 발·무릎이 받는 충격을 확실히 줄여줍니다. 쿠션 점수가 10/10인 이유죠. 반대로 에보 SL과 마하 6은 36mm로 <strong>"날렵하게 지면을 느끼는"</strong> 쪽이라, 10km 안팎 템포런이나 가벼운 일상 러닝에서 더 경쾌합니다. <strong>장거리 보호가 목적이면 슈퍼블라스트 3, 짧고 빠른 러닝이 주력이면 나머지 둘</strong>로 갈립니다.</p>
-
-<h3>② 폼 등급 — 슈퍼폼이냐 EVA냐</h3>
-<p>이름은 다 비슷해 보여도 미드솔 폼의 "급"이 다릅니다. 슈퍼블라스트 3(FF LEAP)와 에보 SL(100% Lightstrike Pro)은 <strong>레이싱화에 쓰이는 슈퍼폼</strong>입니다 — 특히 에보 SL의 Lightstrike Pro는 아디다스 최상위 레이싱화 <a href="/shoes/adidas-adios-pro-4">아디오스 프로</a>와 같은 폼으로, RunRepeat 실측 에너지 리턴 힐 74.3%·전족 73.5%(랩 평균 61.5%)의 톡톡 튀는 반발이 무기입니다. 반면 마하 6는 <strong>Supercritical EVA</strong>로, 슈퍼폼은 아니지만 65.4% 에너지 리턴에 호카 특유의 메타 로커로 부드럽게 굴러갑니다. 대신 마하 6의 EVA는 <strong>겨울에 폼이 약 42% 단단해지는</strong> 약점이 있어, 한겨울 새벽 러닝이 잦다면 감안해야 합니다.</p>
-
-<h3>③ 가격·발볼 — 와이드가 필요하면 답이 좁아진다</h3>
-<p>가격은 마하 6(18.5만) → 에보 SL(20.9만, 세일 15만대) → 슈퍼블라스트 3(25.9만) 순입니다. 단순 가성비로는 마하 6와 세일가의 에보 SL이 앞서죠. 그런데 <strong>발볼이 변수입니다.</strong> 슈퍼블라스트 3는 토박스 실측 71.6mm로 랩 평균(73.2mm)보다 좁은데 <strong>와이드 옵션 자체가 없습니다.</strong> 발볼 넓은 한국 러너라면 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없어요. 에보 SL도 사정이 비슷합니다. RunRepeat은 Normal·Wide 두 폭으로 표기하지만, <strong>2026년 10월 아디다스 한국 공식몰에서는 에보 SL 와이드가 검색되지 않습니다</strong>(미국 공식몰도 같습니다). 표준폭 실측은 앞발 가장 넓은 곳이 97.5mm(평균 95.2mm)로 넉넉한데 엄지 위치 토박스는 71.6mm(평균 73.2mm)로, RunRepeat 표현대로 앞쪽이 급하게 좁아집니다. 그래서 세 켤레 중 <strong>와이드 버전이 나온 건 마하 6뿐</strong>입니다(한국 판매 여부는 구매 전 확인하세요). 다만 마하 6의 표준폭은 RunRepeat 실측 토박스 70.1mm로 평균(73.2mm)보다 3.1mm 좁아, 발볼이 넓다면 와이드를 사실상 전제로 보셔야 합니다. 발볼이 신경 쓰인다면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 정리</p>
-    <p><strong>슈퍼블라스트 3 = 46.5mm 고스택 + 슈퍼폼의 진짜 슈퍼트레이너</strong>(한 켤레로 롱런·마라톤 훈련까지, 단 비싸고 와이드 없음). <strong>에보 SL = 슈퍼폼 반발을 가장 싸고 가볍게</strong>(최경량 223g·세일 15만대, 단 스택 낮고 한국 공식몰 와이드 없음). <strong>마하 6 = 통기성 최강 가성비 올라운더</strong>(최저가 18.5만·여름 쾌적, 단 EVA라 겨울에 단단). 세 켤레 모두 카본 없는 경량 트레이너라는 큰 틀은 같습니다.</p>
-  </div>
-</div>
-
-<h2>누가 어느 쪽?</h2>
-<table>
-  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
-  <tbody>
-    <tr><td>한 켤레로 롱런·마라톤 페이스 훈련·업템포를 다 소화</td><td><strong>슈퍼블라스트 3</strong></td></tr>
-    <tr><td>25km+ 장거리에서 무릎·발 보호(고스택)가 최우선</td><td><strong>슈퍼블라스트 3</strong></td></tr>
-    <tr><td>슈퍼폼 반발을 최저가·최경량으로</td><td><strong>에보 SL</strong> (세일 15만대·223g)</td></tr>
-    <tr><td>인터벌·짧은 템포처럼 가볍고 날렵한 느낌</td><td><strong>에보 SL</strong> 또는 <strong>마하 6</strong></td></tr>
-    <tr><td>예산이 가장 빠듯하다 / 한여름 통기성 중시</td><td><strong>마하 6</strong> (18.5만·통기성 5/5)</td></tr>
-    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>마하 6</strong> 와이드 (슈블 3·에보 SL은 2026년 10월 한국 공식몰 기준 와이드 없음)</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 관점 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 슈퍼트레이너가 정확히 뭔가요? 카본화랑 뭐가 다른가요?</p>
-  <p class="faq-a">A. 슈퍼트레이너는 <strong>카본 플레이트 없이 슈퍼폼 + 높은 스택</strong>으로 만든 다목적 훈련화입니다. 카본화처럼 강하게 튕겨주진 않지만, 플레이트 특유의 불안정함·딱딱함이 없어 <strong>매일 훈련해도 발·종아리 부담이 적습니다.</strong> 그래서 카본화는 대회·포인트 훈련 전용으로 아끼고, 평소 롱런·템포는 슈퍼트레이너로 굴리는 조합이 요즘 정석이에요. 셋 중 슈퍼블라스트 3가 가장 슈퍼트레이너 정의에 부합하고, 마하 6는 EVA 기반이라 엄밀히는 "경량 데일리"에 가깝습니다.</p>
-  <p class="faq-q">Q. 첫 슈퍼트레이너로는 어느 걸 추천하나요?</p>
-  <p class="faq-a">A. 예산이 허락하면 <strong>슈퍼블라스트 3</strong>입니다 — 46.5mm 고스택이 어떤 페이스에서도 실패가 없고, 한 켤레로 훈련 대부분을 커버합니다. 다만 26만원이 부담되면 <strong>에보 SL(세일 15만대)</strong>이 슈퍼폼 입문으로 가장 현실적입니다. 가볍고 가성비가 압도적이에요. 단 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 없어, 발볼이 넓어 와이드가 꼭 필요하다면 세 켤레 중 와이드 버전이 나온 <strong>마하 6</strong>를 보되, 한국 판매 여부를 먼저 확인하세요.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 슈퍼블라스트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 토박스가 실측 71.6mm로 랩 평균보다 좁은 편이고, <strong>와이드 옵션이 아예 없습니다.</strong> 발볼 넓은 한국 러너는 장거리에서 눌릴 수 있어요. 같은 용도라면 세 켤레 중 와이드가 있는 <strong>마하 6</strong>이 안전합니다. 단 마하 6은 표준폭 토박스가 70.1mm로 좁은 편이라 반드시 와이드로 고르세요. 에보 SL은 2026년 10월 한국 공식몰 기준 와이드가 판매되지 않습니다.</p>
-  <p class="faq-q">Q. 이 신발들로 마라톤 대회에 나가도 되나요?</p>
-  <p class="faq-a">A. 됩니다. 특히 슈퍼블라스트 3는 46.5mm 슈퍼폼으로 <strong>서브-4~서브-3.5 러너의 풀코스 레이스화로도 충분</strong>합니다. 다만 기록 단축이 목적인 빠른 러너라면 카본화가 한 수 위예요. "완주·꾸준한 페이스"가 목표면 이 세 켤레로도 대회를 잘 치를 수 있습니다. 카본화와의 차이가 궁금하면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 보세요.</p>
-  <p class="faq-q">Q. 더 보고 싶은 대안이 있나요?</p>
-  <p class="faq-a">A. 같은 슈퍼트레이너 계열로 <a href="/shoes/new-balance-sc-trainer-v3">뉴발란스 SC 트레이너 v3</a>, <a href="/shoes/saucony-endorphin-speed-5">써코니 엔돌핀 스피드 5</a>(나일론 플레이트로 더 탄력적), <a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a>도 검토 후보입니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>각 신발 전체 스펙·실측·구매 링크는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3 상세</a> · <a href="/shoes/adidas-adizero-evo-sl">에보 SL 상세</a> · <a href="/shoes/hoka-mach-6">마하 6 상세</a>에서 확인하세요. 슈퍼블라스트를 더 깊게 보려면 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 세대 비교</a>, 에보 SL의 가성비를 더 파고들려면 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">에보 SL 가치 분석</a>을 보세요. 세 켤레를 항목별로 나란히 놓으려면 <a href="/compare">비교 도구</a>, 내 발·목표 기반 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 각 브랜드 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 스펙은 RunRepeat 실측 및 브랜드 공식 기준입니다.</small></p>
-`,
+<p>위 표의 무게·스택·드롭·SA·에너지 리턴은 RunRepeat의 남성 US9 공시 기준입니다. 한국 판매 SKU와 실험실 검체의 동일성, 와이드의 치수는 확인하지 못했습니다. 내부 최광폭과 엄지 부위 너비는 서로 다른 위치입니다. SA는 실험실 충격흡수, 에너지 리턴은 에너지 회수 값이며 부상 예방률·기록 향상률을 뜻하지 않습니다.</p>
+<h2>슈퍼블라스트3: 두께만 보고 안정감을 보장하지 않기</h2>
+<p>ASICS 글로벌 발표는 FF LEAP와 FF BLAST PLUS 이중폼,46.5/38.5mm·드롭8mm를 설명합니다. 표는 RunRepeat의45.8/37.7mm·8.1mm 실측입니다. 기존의 ‘한국 공식239g’은 출처가 달랐습니다.239g은 DOR의 남성US9 소개 값이고, 실험실은235g이며 한국 공식 무게는 이번에 확인하지 못했습니다.</p>
+<p>RunRepeat는 넓은 바닥의 안정적인 느낌을 평가했습니다. 반면 DOR은 이전 세대보다 중립적이고 안쪽으로 기우는 느낌을 지적했고 리뷰어끼리도 활용성이 갈렸습니다. 부드럽고 높은 발밑이 자신의 움직임에 맞는지 시착해야 합니다.25km 이후 무릎 보호를 확실히 보장한다는 설명은 지웠습니다.</p>
+<h2>Evo SL: 기본 메쉬223g과 발 고정을 함께 보기</h2>
+<p>JP7149는 전장 Lightstrike Pro와 중족부 플라스틱 생크를 씁니다. 한국 공식은224g(270mm)·38/32mm·6mm, 표는223g·36.1/28.1mm·8mm로 측정 조건을 분리했습니다. 한국 기본형 정가209,000원은 확인했지만 동일 이름의 우븐 변형에 이 무게를 적용하지 않습니다.</p>
+<p>가벼운 비플레이트 훈련화를 찾는다면 후보입니다. 다만 최광폭97.5mm만으로 앞발이 모두 넉넉하다고 보지 마세요. 엄지 부위는71.6mm이며, DOR도 중족부 지지와 어퍼 고정을 주의점으로 들었습니다.</p>
+<h2>마하6: 5mm 공시와9.6mm 실측의 차이</h2>
+<p>마하6는 Supercritical EVA 기반의 비플레이트 트레이너입니다. DOR은 쉬운 러닝·템포 등 폭넓게 활용했지만, 꼭 맞고 앞쪽이 좁아지는 핏을 공통으로 언급했습니다. 실험실 엄지 부위70.1mm는 이번 세 후보에서 가장 좁습니다.</p>
+<p>RR이 인용한 제조사 드롭은5mm, DOR 소개 스택은37/32mm입니다. RR 실측은36.0/26.4mm·9.6mm여서 ‘마하6는 항상5mm’나 ‘공식10mm’로 통일하지 않았습니다. 한국 공식 연결 스토어에서 여성 와이드는 확인했지만, 그 상품의 치수·무게가 해외 남성 표준 검체와 같다고 보지 않습니다.</p>
+<h2>내 조건으로 좁히기</h2>
+<ul><li>높은 스택의 부드러운 발밑이 목적이면 슈퍼블라스트3의 흔들림과 전환을 먼저 확인.</li>
+<li>가벼운 기본 메쉬와 높은 실험실 에너지 리턴이 관심이면 Evo SL의 어퍼 고정을 확인.</li>
+<li>비플레이트EVA 트레이너를 찾으면 마하6의 엄지·길이 핏과 공시/실측 드롭 차이를 확인.</li>
+<li>와이드가 필수라면 성별·폭·사이즈가 명시된 한국 상품을 확인. 마하 여성 와이드 확인만으로 남성까지 추천하지 않음.</li>
+</ul>
+<h2>수명과 페이스로 승자를 정하지 않은 이유</h2>
+<p>공통 수명 km, 질환별 예방·치료 효과, 누구에게나 맞는 최적 페이스를 뒷받침하는 자료는 확인하지 못했습니다. 아웃솔 내마모 시험의 깊이(mm)를 수명(km)으로 바꾸지 않았고, 기존의 수명·km당 비용·부상 등급·페이스 범위에 따른 추천을 제거했습니다. 매일 신을 수 있는지는 소재 하나보다 실제 착화와 훈련 후 반응을 함께 봐야 합니다.</p>
+<h2>구매 전 자주 묻는 질문</h2>
+<h3>마하6가 셋 중 가장 저렴한가요?</h3>
+<p>이번에 확인한 한국 공식 연결 스토어 상품은 여성 와이드1147834-PLDS이며 정가185,000원입니다. 남성 정가는 미확인이라 다른 두 모델과 동일 조건의 최저가 순위를 정하지 않았습니다.</p>
+<h3>슈퍼블라스트3는 와이드가 없나요?</h3>
+<p>한국 공식 상품은 확인했지만 로그인 전 폭·재고를 확인하지 못했습니다. 미확인을 와이드 미출시나 품절로 바꾸지 않습니다.</p>
+<h3>높은 스택이 무릎을 더 보호하나요?</h3>
+<p>모델별 예방·치료 효과를 입증하는 임상 자료는 이번에 확인하지 못했습니다. 높은 스택과 SA 측정값에서 개인의 통증·부상 결과를 직접 예측하지 않습니다.</p>
+<h2>다시 확인한 원문</h2>
+<ul><li><a href="https://m.asics.co.kr/p/AKR_112630203-101" target="_blank" rel="noopener noreferrer">아식스 한국 슈퍼블라스트3</a>: 정가259,000원; 폭·재고는 로그인 전 미확인</li>
+<li><a href="https://assets.asics.com/system/media_libraries/25473/file.pdf" target="_blank" rel="noopener noreferrer">ASICS 글로벌 발표</a>: 폼과 공시 스택·드롭</li>
+<li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디다스 한국 Evo SL JP7149</a>: 기본 메쉬 정가209,000원,224g(270mm),38/32mm·6mm</li>
+<li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">호카 한국 공식 스토어 연결</a>: 공식 연결 네이버 브랜드스토어 확인</li>
+<li><a href="https://brand.naver.com/hoka/products/11356777947" target="_blank" rel="noopener noreferrer">호카 한국 여성 마하6 와이드</a>: 1147834-PLDS,정가185,000원; 남성 조건으로 일반화하지 않음</li>
+<li><a href="https://runrepeat.com/asics-superblast-3" target="_blank" rel="noopener noreferrer">RunRepeat asics-superblast-3</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">RunRepeat adidas-adizero-evo-sl</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://runrepeat.com/hoka-mach-6" target="_blank" rel="noopener noreferrer">RunRepeat hoka-mach-6</a>: 실험실 수치와 검체 조건</li>
+<li><a href="https://www.doctorsofrunning.com/asics-superblast-3-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 슈퍼블라스트3</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://www.doctorsofrunning.com/hoka-mach-6-review-2024/" target="_blank" rel="noopener noreferrer">Doctors of Running 마하6</a>: 개별 리뷰어의 착화 의견</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a>: 측정 위치·표본·시험 조건</li>
+</ul>
+<p><small>확인일 2026-11-09. 제조사 상품 조건·실험실 검체·리뷰어 착화 의견을 구분했습니다. 자체 실주행 후기는 아닙니다.</small></p>`,
+    faqs: [
+      {
+        question: '마하6가 셋 중 가장 저렴한가요?',
+        answer: '이번에 확인한 한국 공식 연결 스토어 상품은 여성 와이드1147834-PLDS이며 정가185,000원입니다. 남성 정가는 미확인이라 다른 두 모델과 동일 조건의 최저가 순위를 정하지 않았습니다.',
+      },
+      {
+        question: '슈퍼블라스트3는 와이드가 없나요?',
+        answer: '한국 공식 상품은 확인했지만 로그인 전 폭·재고를 확인하지 못했습니다. 미확인을 와이드 미출시나 품절로 바꾸지 않습니다.',
+      },
+      {
+        question: '높은 스택이 무릎을 더 보호하나요?',
+        answer: '모델별 예방·치료 효과를 입증하는 임상 자료는 이번에 확인하지 못했습니다. 높은 스택과 SA 측정값에서 개인의 통증·부상 결과를 직접 예측하지 않습니다.',
+      },
+    ],
+    updatedAt: '2026-11-09',
   },
   {
     id: 'hoka-bondi-9-vs-asics-nimbus-28',
@@ -3055,23 +3044,49 @@ export const posts_2026_06: BlogPost[] = [
     id: 'adidas-running-shoes-lineup-tier-guide-2026',
     slug: 'adidas-running-shoes-lineup-tier-guide-2026',
     title: '아디다스 러닝화 계급도 2026 — 아디제로·슈퍼노바·보스턴, 스피드 사다리와 EnergyRods로 읽는 전체 라인업 | 입문부터 카본 레이싱까지 한 장 정리',
-    description:
-      '아디다스 러닝화 10종을 아디제로 스피드 사다리(SL2→보스턴→Evo SL→아디오스 프로)와 데일리(슈퍼노바·하이퍼부스트)·트레일(테렉스)로 한 장에. 14.9만부터 아디오스 프로 29.9만까지 가격·무게·폼 비교표 + EnergyRods(카본 막대)가 뭔지 + Evo SL이 카본 없이 빠른 이유 + Boost 자리에 들어온 새 Hyperboost Pro 폼까지 정리했습니다.',
-    thumbnail: '/images/blog/adidas-lineup-tier-2026.webp',
+    description: '아디제로·슈퍼노바 등 라인별 모델을 비교합니다.11/9 Evo SL 기본형과 보스턴13의 가격·구조·실측을 다시 대조했으며, 단순한 성능 사다리나 폼 이름으로 기록 향상을 보장하지 않습니다.',
+    thumbnail: '/images/shoes/adidas/evosl/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-10-23',
-    category: 'guide' as const,
+    updatedAt: '2026-11-09',
+    category: 'guide',
     readingTime: 12,
-    tags: ['아디다스 러닝화', '아디다스 계급도', '러닝화 라인업', '러닝화 등급', '아디제로', '아디오스 프로', '슈퍼노바', '보스턴', 'EnergyRods', 'Lightstrike'],
-    faqs: [
-      { question: '아디다스 "아디제로(Adizero)"는 무슨 뜻인가요?', answer: '아디제로는 아디다스의 스피드·레이싱 서브브랜드입니다. 이름에 아디제로가 붙으면 빠르게 달리기 위한 신발이에요. 입문 SL2부터 보스턴(슈퍼트레이너), Evo SL(카본 없는 슈퍼폼), 아디오스 프로(카본 레이싱), 그리고 97g 서브2 신발 아디오스 프로 에보까지 하나의 스피드 사다리를 이룹니다.' },
-      { question: 'EnergyRods(에너지로드)가 뭔가요?', answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 막대를 넣은 구조입니다. 아디오스 프로는 카본 막대 5개, 보스턴은 유리섬유 재질의 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.' },
-      { question: '아디제로 Evo SL은 왜 카본도 없는데 빠른가요?', answer: '레이싱화 아디오스 프로에 쓰는 고급 폼(100% Lightstrike Pro)을 카본 플레이트·로드 없이 통째로 넣었기 때문입니다. 223g 경량에 RunRepeat 실측 에너지 리턴 힐 74.3%(랩 평균 61.5%)로, 20만원대에 슈퍼슈즈에 가까운 반발을 줍니다. 카본의 부담 없이 빠른 훈련을 원하는 러너에게 가성비 끝판왕으로 꼽힙니다.' },
-      { question: '아디다스 Boost(부스트)는 어디 갔나요?', answer: '러닝 퍼포먼스 라인에서는 세대교체됐습니다. 지금 아디다스 러닝화는 데일리에 Dreamstrike+, 레이싱에 Lightstrike Pro를 씁니다. 대신 2026년에 이름을 이어받은 새 폼 Hyperboost Pro가 하이퍼부스트 런(21.9만)·하이퍼부스트 엣지(24.9만)로 데일리에 들어왔습니다. 이름만 이어받았을 뿐 예전 Boost 알갱이 폼과는 다른 폼이고, 두 모델 모두 플레이트 없이 폼만으로 반발을 냅니다.' },
-      { question: '아디다스는 발볼 넓은 한국 러너에게 맞나요?', answer: '아디다스는 토박스가 좁은 편이라 발볼 넓으면 주의가 필요합니다. 2026-09-28 아디다스 공식몰 기준으로 와이드 버전이 판매 중인 건 슈퍼노바 라이즈 3와 아디제로 SL2입니다. 새로 나온 하이퍼부스트 런·엣지는 표준폭 단일입니다. 아디오스 프로·아그라빅 같은 레이싱·트레일은 좁으니 발볼 넓으면 반 치수 크게 신거나 다른 브랜드를 함께 보세요.' },
+    tags: [
+      '아디다스 러닝화',
+      '아디다스 계급도',
+      '러닝화 라인업',
+      '러닝화 등급',
+      '아디제로',
+      '아디오스 프로',
+      '슈퍼노바',
+      '보스턴',
+      'EnergyRods',
+      'Lightstrike',
     ],
-    content: `
+    faqs: [
+      {
+        question: '아디다스 "아디제로(Adizero)"는 무슨 뜻인가요?',
+        answer: '아디제로는 아디다스의 스피드·레이싱 서브브랜드입니다. 이름에 아디제로가 붙으면 빠르게 달리기 위한 신발이에요. 입문 SL2부터 보스턴(슈퍼트레이너), Evo SL(카본 없는 슈퍼폼), 아디오스 프로(카본 레이싱), 그리고 97g 서브2 신발 아디오스 프로 에보까지 하나의 스피드 사다리를 이룹니다.',
+      },
+      {
+        question: 'EnergyRods(에너지로드)가 뭔가요?',
+        answer: '아디다스만의 추진 기술로, 통짜 카본 플레이트 대신 발가락뼈를 본뜬 막대를 넣은 구조입니다. 아디오스 프로는 카본 막대 5개, 보스턴은 유리섬유 재질의 2.0 버전을 씁니다. 통판 플레이트보다 발의 자연스러운 굽힘을 살리면서 추진력을 더하는 게 특징입니다.',
+      },
+      {
+        question: 'Evo SL의 에너지 리턴이 높으면 더 빨라지나요?',
+        answer: 'RunRepeat 힐74.3/전족부73.5%는 실험실 에너지 회수 값이며 개인의 기록 향상률이 아닙니다. 기본형은 전장Lightstrike Pro와 중족부 플라스틱 생크를 사용하며, 모든 페이스에서의 우위는 확인하지 못했습니다.',
+      },
+      {
+        question: '아디다스 Boost(부스트)는 어디 갔나요?',
+        answer: '러닝 퍼포먼스 라인에서는 세대교체됐습니다. 지금 아디다스 러닝화는 데일리에 Dreamstrike+, 레이싱에 Lightstrike Pro를 씁니다. 대신 2026년에 이름을 이어받은 새 폼 Hyperboost Pro가 하이퍼부스트 런(21.9만)·하이퍼부스트 엣지(24.9만)로 데일리에 들어왔습니다. 이름만 이어받았을 뿐 예전 Boost 알갱이 폼과는 다른 폼이고, 두 모델 모두 플레이트 없이 폼만으로 반발을 냅니다.',
+      },
+      {
+        question: '아디다스는 발볼 넓은 한국 러너에게 맞나요?',
+        answer: '브랜드명만으로 개인 핏을 보장하지 않습니다. 구매할 모델의 성별·사이즈·폭과 실제 착화를 확인하세요.11/9 확인한 Evo SL JP7149와 보스턴13 KH9563는 레귤러 핏이었으며, 다른 한국SKU의 와이드 판매 여부는 별도로 확인해야 합니다. 반 치수 업을 일괄 권장하지 않습니다.',
+      },
+    ],
+    content: `<p><strong>11/9 확인 범위:</strong>Evo SL 기본 메쉬JP7149와 보스턴13 KH9563의 한국 정가·구조·실측을 다시 대조했습니다. 다른 수록 모델의 모든 항목을 이번에 새로 확인한 것은 아닙니다.</p>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
@@ -3119,16 +3134,16 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong>Lightstrike (EVA)</strong></td><td>기본 트레일·쿠션</td><td>테렉스 아그라빅</td></tr>
     <tr><td><strong>Dreamstrike+</strong></td><td>데일리 슈퍼크리티컬</td><td>슈퍼노바 라이즈</td></tr>
     <tr><td><strong>Hyperboost Pro</strong></td><td>플레이트 없는 고반발 데일리 폼</td><td>하이퍼부스트 런 · 하이퍼부스트 엣지</td></tr>
-    <tr><td><strong>Lightstrike Pro (PEBA급)</strong></td><td>레이싱 최상위 반발</td><td>SL2 · 보스턴 · Evo SL · 아디오스 프로</td></tr>
+    <tr><td><strong>Lightstrike Pro (상표명)</strong></td><td>레이싱 최상위 반발</td><td>SL2 · 보스턴 · Evo SL · 아디오스 프로</td></tr>
     <tr><td><strong>+ EnergyRods (추진 막대: 카본/유리섬유)</strong></td><td>추진력 강화</td><td>보스턴(2.0) · 아디오스 프로(5개)</td></tr>
   </tbody>
 </table>
 
-<p>핵심은 <strong>Lightstrike Pro가 아디다스 최상위 레이싱 폼</strong>이라는 점입니다. 재밌는 건 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>이 이 Lightstrike Pro를 <strong>카본·로드 없이 100%</strong> 넣어 20만원대에 슈퍼슈즈급 반발을 낸다는 거예요(아래 5번).</p>
+<p>핵심은 <strong>Lightstrike Pro가 아디다스 최상위 레이싱 폼</strong>이라는 점입니다. 재밌는 건 <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a>이 <strong>전장Lightstrike Pro와 중족부 플라스틱 생크를 전장 카본 플레이트 없이</strong> 사용한다는 점입니다(아래 5번).</p>
 
-<h2>3. 아디다스 러닝화 계급도 — 10종 한눈에</h2>
+<h2>3. 아디다스 러닝화 라인업 — 10종 한눈에</h2>
 
-<p>라인 × 폼으로 아디다스 러닝화 10종을 줄 세우면 이렇게 됩니다. 2026년 하반기 변화는 둘입니다 — 슈퍼노바는 라이즈 3가 현행이 됐고(라이즈 2는 전작), 하이퍼부스트 런·엣지가 새 데일리 축으로 들어왔습니다.</p>
+<p>라인과 폼으로 아디다스 러닝화10종을 나누면 다음과 같습니다. 2026년 하반기 변화는 둘입니다 — 슈퍼노바는 라이즈 3가 현행이 됐고(라이즈 2는 전작), 하이퍼부스트 런·엣지가 새 데일리 축으로 들어왔습니다.</p>
 
 <table>
   <thead>
@@ -3138,13 +3153,13 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><a href="/shoes/adidas-supernova-rise-2"><strong>슈퍼노바 라이즈 2</strong></a></td><td>전작 데일리</td><td>Dreamstrike+</td><td>14.9만</td><td>257g</td><td>라이즈 3 이전 세대, 힐스트라이커 친화</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-sl2"><strong>아디제로 SL2</strong></a></td><td>가성비 트레이닝</td><td>Lightstrike Pro + 2.0</td><td>14.9만</td><td>245g</td><td>경량 멀티 트레이너, 아디제로 입문</td></tr>
     <tr><td><a href="/shoes/adidas-supernova-rise-3"><strong>슈퍼노바 라이즈 3</strong></a></td><td>데일리 쿠션</td><td>Dreamstrike+ (20%↑)</td><td>15.9만</td><td>264g</td><td>현행 슈퍼노바, 쿠션 중심 데일리</td></tr>
-    <tr><td><a href="/shoes/adidas-boston-13"><strong>보스턴 13</strong></a></td><td>슈퍼트레이너</td><td>Lightstrike Pro + 로드 2.0</td><td>17.9만</td><td>254g</td><td>Energy Rods, 훈련+레이스 겸용</td></tr>
+    <tr><td><a href="/shoes/adidas-boston-13"><strong>보스턴 13</strong></a></td><td>슈퍼트레이너</td><td>Lightstrike Pro + Lightstrike2.0 · 유리섬유 로드</td><td>18.9만(KH9563,11/9)</td><td>254g</td><td>Energy Rods, 훈련+레이스 겸용</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-4"><strong>테렉스 아그라빅 4</strong></a></td><td>올라운드 트레일</td><td>Lightstrike (EVA)</td><td>20.9만</td><td>283g</td><td>Continental 그립 1순위</td></tr>
     <tr><td><a href="/shoes/adidas-adizero-evo-sl"><strong>아디제로 Evo SL</strong></a></td><td>카본 없는 슈퍼폼</td><td>100% Lightstrike Pro</td><td>20.9만</td><td>223g</td><td>에너지 리턴 힐 74.3%(실측), 가성비 끝판왕</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-run"><strong>하이퍼부스트 런</strong></a></td><td>고반발 데일리</td><td>Hyperboost Pro</td><td>21.9만</td><td>247g</td><td>엣지의 폼을 힐 38.6mm 데일리 스택에, 전족 컨티넨탈 러버</td></tr>
     <tr><td><a href="/shoes/adidas-hyperboost-edge"><strong>하이퍼부스트 엣지</strong></a></td><td>무플레이트 슈퍼트레이너</td><td>Hyperboost Pro</td><td>24.9만</td><td>247g</td><td>힐 44.6mm 고스택을 폼 하나로, 템포에 강함</td></tr>
     <tr><td><a href="/shoes/adidas-terrex-agravic-speed-ultra"><strong>아그라빅 스피드 울트라 2</strong></a></td><td>트레일 레이싱</td><td>Lightstrike Pro</td><td>27.9만</td><td>269g</td><td>2세대 트레일 슈퍼슈즈</td></tr>
-    <tr><td><a href="/shoes/adidas-adios-pro-4"><strong>아디오스 프로 4</strong></a></td><td>카본 레이싱</td><td>Lightstrike Pro + 5 로드</td><td>29.9만</td><td>200g</td><td>알파플라이보다 안정적인 서브3</td></tr>
+    <tr><td><a href="/shoes/adidas-adios-pro-4"><strong>아디오스 프로 4</strong></a></td><td>카본 레이싱</td><td>Lightstrike Pro + 5 로드</td><td>29.9만</td><td>200g</td><td>카본 로드 레이스용 후보</td></tr>
   </tbody>
 </table>
 
@@ -3158,17 +3173,17 @@ export const posts_2026_06: BlogPost[] = [
   <li><strong>💰 가성비 멀티 트레이너</strong> → <a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>(14.9만). 데일리부터 가벼운 템포까지.</li>
   <li><strong>⚡ 카본 없이 빠른 훈련</strong> → <a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>. 223g에 슈퍼폼, 가성비 슈퍼슈즈로 화제작입니다. 자세한 분석은 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">Evo SL 리뷰</a>에.</li>
   <li><strong>🏃 훈련+레이스 겸용 플레이트</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>. 유리섬유 Energy Rods 2.0으로 템포·하프에.</li>
-  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(200g). 5개 Energy Rods로 알파플라이보다 안정적인 서브3 무기.</li>
+  <li><strong>🏅 풀마라톤 레이스</strong> → <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>(200g). 5개 Energy Rods로 카본 로드 구조의 레이스용 후보입니다. 모델 간 임상 안정성이나 서브3 기록을 보장하지 않습니다.</li>
   <li><strong>⛰️ 트레일</strong> → 올라운드 <a href="/shoes/adidas-terrex-agravic-4">아그라빅 4</a>(Continental 그립) 또는 레이싱 <a href="/shoes/adidas-terrex-agravic-speed-ultra">아그라빅 스피드 울트라 2</a>.</li>
 </ul>
 
-<h2>5. 아디제로 스피드 사다리 — SL2에서 아디오스 프로까지</h2>
+<h2>5. 아디제로 구조 비교 — SL2에서 아디오스 프로까지</h2>
 
-<p>아디다스 라인업의 진짜 핵심은 <strong>아디제로 안에서의 단계</strong>입니다. 같은 아디제로라도 폼·플레이트·가격이 사다리처럼 올라가요.</p>
+<p>아디제로 모델은 <strong>용도와 구조를 함께 비교</strong>하세요. 같은 아디제로라도 폼·로드·어퍼·가격이 다릅니다. 표의 순서는 성능 등급이나 개인 기록 향상 순위를 뜻하지 않습니다.</p>
 
 <table>
   <thead>
-    <tr><th>단계</th><th>모델</th><th>핵심</th></tr>
+    <tr><th>편집상 용도 구분</th><th>모델</th><th>핵심</th></tr>
   </thead>
   <tbody>
     <tr><td>① 입문 트레이닝</td><td><a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a></td><td>Lightstrike 듀얼폼, 데일리+템포</td></tr>
@@ -3179,7 +3194,7 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>즉 <strong>데일리는 슈퍼노바, 빠르게는 아디제로 사다리를 올라가면</strong> 됩니다. 입문은 SL2, 대회는 아디오스 프로, 그 사이를 보스턴·Evo SL이 채웁니다.</p>
+<p>즉 <strong>데일리는 슈퍼노바, 훈련·레이스 겸용은 아디제로의 구조를 비교하면</strong> 됩니다. 입문은 SL2, 대회는 아디오스 프로, 그 사이를 보스턴·Evo SL이 채웁니다.</p>
 
 <h2>6. 발볼 — 아디다스는 좁은 편, 한국 러너 주의</h2>
 
@@ -3200,7 +3215,7 @@ export const posts_2026_06: BlogPost[] = [
   <span class="callout-icon">📏</span>
   <div class="callout-body">
     <p class="callout-title">발볼 넓으면 슈퍼노바 라이즈 3·SL2 와이드부터</p>
-    <p>아디다스에서 발볼이 걱정이라면 공식몰에 와이드 버전이 있는 <strong>슈퍼노바 라이즈 3·아디제로 SL2</strong>가 무난합니다. 레이싱(아디오스 프로)은 좁으니 발볼 넓으면 토박스 넉넉한 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>를 함께 보세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
+    <p>아디다스에서 발볼이 걱정이라면 공식몰에 와이드 버전이 있는 <strong>슈퍼노바 라이즈 3·아디제로 SL2</strong>가 무난합니다. 브랜드 전체를 한 너비로 판단하지 말고 구매할 모델·성별·사이즈·폭을 확인하세요. 다른 비교 후보는 <a href="/blog/asics-running-shoes-lineup-tier-guide-2026">아식스</a>·<a href="/blog/new-balance-running-shoes-lineup-tier-guide-2026">뉴발란스</a>를 함께 보세요. 발볼별 선택은 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너를 위한 러닝화</a>에 정리돼 있습니다.</p>
   </div>
 </div>
 
@@ -3213,7 +3228,9 @@ export const posts_2026_06: BlogPost[] = [
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 발행, 2026-09-28 라인업·가격 갱신 기준 한국 공식 판매 모델과 RunRepeat 실측·아디다스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
-`,
+<h2>Evo SL·보스턴13의 확인 조건</h2>
+<p>Evo SL 기본형은209,000원·RunRepeat223g, 보스턴13은189,000원·254g입니다. 전자는 전장Lightstrike Pro와 중족부 플라스틱 생크, 후자는Lightstrike Pro/Lightstrike2.0 이중폼과 유리섬유ENERGYRODS2.0을 씁니다. 확인한 한국SKU는 레귤러 핏이며, 모든 한국SKU의 와이드 부재를 확인한 것은 아닙니다. 두 모델의 수명km·질환별 예방 효과·최적 페이스는 확인하지 못했습니다.</p>
+<p><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">한국 Evo SL JP7149</a> · <a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">보스턴13 KH9563</a> · <a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">조건을 구분한 두 모델 비교</a>.</p>`,
   },
   {
     id: 'brooks-running-shoes-lineup-tier-guide-2026',
@@ -3887,30 +3904,56 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'new-balance-running-shoes-lineup-tier-guide-2026',
     slug: 'new-balance-running-shoes-lineup-tier-guide-2026',
-    title: '뉴발란스 러닝화 계급도 2026 — 숫자가 알려주는 전체 라인업 | 6x=안정·8x=중립·10xx=프리미엄, Fresh Foam X vs FuelCell 한 장 정리',
-    description:
-      '뉴발란스 로드 러닝화 11종(+트레일 히에로)을 번호 체계(6x 안정·8x 중립·10xx 프리미엄)와 폼 기술(Fresh Foam X·인피니온·FuelCell·PEBA) 2축으로 한 장에. 880 입문부터 SC Elite 레이싱까지 가격·무게·스택·와이드 옵션 비교표 + 발볼 넓은 한국 러너를 위한 선택 로드맵. 뉴발 안정화가 860뿐인 이유와 대안까지 정직하게 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-lineup-tier-2026.webp',
+    title: '뉴발란스 러닝화 라인업 — 모델·세대·폭으로 비교하기',
+    description: '860·880·1080과 레이싱 라인을 용도별로 살펴봅니다.11/9에는860 두 세대의 구조·실측·한국 폭을 재확인했고, 숫자만으로 등급을 정하거나860만이 유일한 안정화라고 단정하던 설명을 제거했습니다.',
+    thumbnail: '/images/shoes/newbalance/860v15/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-13',
-    updatedAt: '2026-10-27',
-    category: 'guide' as const,
+    updatedAt: '2026-11-09',
+    category: 'guide',
     readingTime: 12,
-    tags: ['뉴발란스 러닝화', '뉴발란스 계급도', '러닝화 라인업', '러닝화 등급', '뉴발란스 번호 체계', '1080', '860', '880', 'FuelCell', 'Fresh Foam X'],
-    faqs: [
-      { question: '뉴발란스 러닝화 숫자는 무슨 뜻인가요?', answer: '모델 번호의 끝 두 자리가 기능을 나타냅니다. 6x(860)는 안정화, 8x(880)는 중립 데일리, 10xx(1080)는 프리미엄 쿠션입니다. 앞자리가 클수록 더 고급 폼·쿠션 기술이 들어갑니다. 단 스피드·레이싱 라인(레벨·SC 레벨·SC Trainer·SC Elite)은 번호 대신 이름으로 구분합니다.' },
-      { question: '뉴발란스 안정화는 뭘 사야 하나요?', answer: '뉴발란스 현행 안정화는 사실상 860 한 줄(V14·V15)뿐입니다. 평발·과내전이라면 860으로 시작하고, 더 강한 교정이나 더 넓은 라인업이 필요하면 아식스 카야노·브룩스 아드레날린 GTS 같은 안정화 전문 라인을 함께 보세요.' },
-      { question: '1080과 880은 뭐가 다른가요?', answer: '둘 다 중립 쿠션이지만 1080(10xx)이 상위 등급입니다. 1080 V15는 인피니온 폼으로 전작보다 가벼워진(공식 남성 261g) 프리미엄, 880 V15는 Fresh Foam X에 40mm 맥시멀 스택을 얹은 입문~데일리입니다. 가격은 1080이 2만원 비쌉니다.' },
-      { question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?', answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5도 한국 공식몰 남성 2E가 있고 토박스 자체도 넓습니다(실측 75.0mm). 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.' },
-      { question: 'Fresh Foam X와 FuelCell은 어떻게 다른가요?', answer: 'Fresh Foam X는 부드럽고 안정적인 EVA 기반 폼으로 데일리·쿠션·안정화 라인(880·1080·860)에 쓰입니다. FuelCell은 반발력 중심의 PEBA 기반 폼으로 스피드·레이싱 라인(레벨·SC Trainer·SC Elite V5)에 들어갑니다. 최신 SC 레벨·SC Elite V6는 인피니온 폼으로 옮겨 갔습니다. 푹신함을 원하면 Fresh Foam X, 튕기는 반발을 원하면 FuelCell·인피니온 계열입니다.' },
+    tags: [
+      '뉴발란스 러닝화',
+      '뉴발란스 계급도',
+      '러닝화 라인업',
+      '러닝화 등급',
+      '뉴발란스 번호 체계',
+      '1080',
+      '860',
+      '880',
+      'FuelCell',
+      'Fresh Foam X',
     ],
-    content: `
+    faqs: [
+      {
+        question: '뉴발란스 번호가 크면 더 상위 제품인가요?',
+        answer: '번호만으로 모든 제품의 용도·성능 순서를 판정할 수 있는 원문 근거는 확인하지 못했습니다. 모델명·세대·구조와 판매 조건을 개별적으로 비교하세요.',
+      },
+      {
+        question: '뉴발란스 안정화는860 하나뿐인가요?',
+        answer: '전체 현행 라인업이860뿐이라는 근거는 확인하지 못해 단정하지 않습니다. 이 글에서11/9 새로 대조한 것은860 V14·V15의 명시한 항목입니다.',
+      },
+      {
+        question: '1080과 880은 뭐가 다른가요?',
+        answer: '둘 다 중립 쿠션이지만 1080(10xx)이 상위 등급입니다. 1080 V15는 인피니온 폼으로 전작보다 가벼워진(공식 남성 261g) 프리미엄, 880 V15는 Fresh Foam X에 40mm 맥시멀 스택을 얹은 입문~데일리입니다. 가격은 1080이 2만원 비쌉니다.',
+      },
+      {
+        question: '발볼 넓은데 뉴발란스 와이드 옵션이 있나요?',
+        answer: '있습니다. 뉴발란스는 한국 러너에게 유리한 브랜드로, 880·1080·860·발로스·SC 레벨에 2E(약간 넓음) 옵션이 있고, 1080 V15·860 V15는 한국 공식몰에서 4E(넓음)까지 판매합니다. 레벨 V5도 한국 공식몰 남성 2E가 있고 토박스 자체도 넓습니다(실측 75.0mm). 반대로 최신 레이싱화 SC Elite V6는 핏이 좁아졌으니 주의하세요.',
+      },
+      {
+        question: 'Fresh Foam X와 FuelCell은 어떻게 다른가요?',
+        answer: 'Fresh Foam X는 부드럽고 안정적인 EVA 기반 폼으로 데일리·쿠션·안정화 라인(880·1080·860)에 쓰입니다. FuelCell은 반발력 중심의 PEBA 기반 폼으로 스피드·레이싱 라인(레벨·SC Trainer·SC Elite V5)에 들어갑니다. 최신 SC 레벨·SC Elite V6는 인피니온 폼으로 옮겨 갔습니다. 푹신함을 원하면 Fresh Foam X, 튕기는 반발을 원하면 FuelCell·인피니온 계열입니다.',
+      },
+    ],
+    content: `<p><strong>11/9 확인 범위:</strong>860 V14·V15의 구조·실측·한국 가격/폭을 다시 확인했습니다. 다른 모델의 모든 수치를 이번에 새로 검증한 것은 아닙니다.</p>
+
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
   <ul>
-    <li><strong>뉴발란스는 숫자만 읽으면 끝</strong> — 끝 두 자리가 6x=안정화(860)·8x=중립(880)·10xx=프리미엄(1080), 앞자리가 클수록 상위 등급입니다. 레이싱은 번호 대신 이름(레벨·SC).</li>
+    <li><strong>번호만으로 용도·성능을 판정하지 않습니다.</strong>860·880·1080과 각 세대를 구분해 실제 구조와 판매 조건을 확인하세요.</li>
     <li><strong>축은 두 개</strong> — 번호(용도) × 폼 기술(Fresh Foam X는 푹신·안정 / FuelCell·인피니온은 반발·스피드). 이 표 하나로 11종이 정리됩니다.</li>
-    <li><strong>발볼 넓은 한국 러너에게 유리</strong> — 2E·4E 와이드 옵션이 풍부합니다. 단 뉴발 안정화는 사실상 860 하나뿐이라, 강한 교정이 필요하면 카야노·아드레날린도 함께 보세요.</li>
+    <li><strong>860 V15는 한국 남성2E·4E, 여성D를 확인했습니다.</strong>V14 남성 정가·판매 폭은 미확인입니다. 폭 정보와 개인 착화는 별도로 확인하세요.</li>
   </ul>
 </div>
 
@@ -3924,23 +3967,9 @@ export const posts_2026_06: BlogPost[] = [
   </div>
 </div>
 
-<h2>1. 뉴발란스 숫자 읽는 법 — 끝 두 자리가 용도다</h2>
-
-<p>뉴발란스가 헷갈리는 이유는 모델명이 죄다 숫자라서입니다. 그런데 규칙은 단순합니다. <strong>끝 두 자리가 신발의 용도</strong>, <strong>앞자리가 등급(쿠션 레벨)</strong>이에요.</p>
-
-<table>
-  <thead>
-    <tr><th>끝 두 자리</th><th>용도</th><th>대표 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>6x</strong></td><td>안정화 (과내전 지지)</td><td>860</td></tr>
-    <tr><td><strong>8x</strong></td><td>중립 데일리</td><td>880</td></tr>
-    <tr><td><strong>10xx</strong></td><td>프리미엄 중립 쿠션</td><td>1080</td></tr>
-  </tbody>
-</table>
-
-<p>그리고 앞자리가 클수록 위 등급입니다. 같은 중립이라도 <strong>880(8백번대)보다 1080(천번대)</strong>이 더 두껍고 고급 폼을 씁니다. 여기까지가 'Fresh Foam X 라인'의 번호 규칙이고, <strong>스피드·레이싱은 번호를 버리고 이름으로 갑니다</strong> — 레벨(Rebel), SC 레벨(SC Rebel), SC Trainer, SC Elite. 이름이 붙으면 "반발력 중심 스피드 라인"이라고 보면 됩니다(폼은 FuelCell에서 인피니온으로 넘어가는 중).</p>
-
+<h2>1. 모델 번호와 세대를 함께 읽으세요</h2>
+<p>860·880·1080은 서로 다른 제품군입니다. 숫자 크기나 끝자리만으로 모든 현행 모델의 용도와 성능 순서를 설명하는 규칙은 이번 원문 대조에서 확인하지 못했습니다. 기존의 ‘6x=안정·8x=중립·앞자리가 클수록 상위’라는 공식을 제거했습니다.</p>
+<p>구매할 때는 이름 뒤의V14·V15 같은 세대, 폼과 지지 구조, 한국 판매 성별·폭·SKU를 함께 확인하세요. 같은860도 세대별 무게와 내부 형상이 달라집니다.</p>
 <h2>2. 폼이 두 갈래다 — Fresh Foam X vs FuelCell</h2>
 
 <p>번호만큼 중요한 두 번째 축이 미드솔 폼입니다. 뉴발란스 러닝화는 크게 네 종류 폼을 쓰는데, 성격이 확실히 갈립니다.</p>
@@ -3969,8 +3998,8 @@ export const posts_2026_06: BlogPost[] = [
   </thead>
   <tbody>
     <tr><td><a href="/shoes/new-balance-880-v15"><strong>880 V15</strong></a></td><td>입문·데일리</td><td>Fresh Foam X</td><td>18.9만</td><td>286g</td><td>40mm 맥시멀 스택, 첫 러닝화</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>Fresh Foam X</td><td>17.9만</td><td>295g</td><td>평발 지지, 해외 4폭·국내 확인 필요</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>332g</td><td>넓어진 힐, 장거리 안정</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v14"><strong>860 V14</strong></a></td><td>안정화</td><td>이중Fresh Foam X·내측 웨지·EVA 필름</td><td>남성 한국 정가 미확인</td><td>295g(RunRepeat)</td><td>한국 남성 판매 폭 미확인</td></tr>
+    <tr><td><a href="/shoes/new-balance-860-v15"><strong>860 V15</strong></a></td><td>안정화</td><td>Fresh Foam X 듀얼</td><td>18.9만</td><td>332g</td><td>한국 남성2E·4E, 여성D 확인(11/9)</td></tr>
     <tr><td><a href="/shoes/new-balance-rebel-v5"><strong>레벨 V5</strong></a></td><td>스피드 데일리</td><td>FuelCell</td><td>21.9만</td><td>220g</td><td>경량 만능, 데일리+템포</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v14"><strong>1080 V14</strong></a></td><td>프리미엄 쿠션</td><td>Fresh Foam X</td><td>19.9만</td><td>285g</td><td>구름 같은 클래식 부드러움</td></tr>
     <tr><td><a href="/shoes/new-balance-1080-v15"><strong>1080 V15</strong></a></td><td>프리미엄 쿠션</td><td>인피니온</td><td>20.9만</td><td>255g</td><td>인피니온으로 경량화, 플래그십</td></tr>
@@ -3982,13 +4011,13 @@ export const posts_2026_06: BlogPost[] = [
   </tbody>
 </table>
 
-<p>※ 가격은 한국 공식 출시 정가(모델별 확인 시점 상이), 무게는 신발 DB의 공개 수치입니다. 860 V14는 2026-10-20 기준 한국 공식몰에 미등재되어 구매 가능 여부와 국내 판매 폭을 판매처에서 확인해야 합니다. 무게는 모델마다 측정 사이즈(US 9·US 10·280mm 등)가 달라 10g 안팎 차이는 비교 근거로 삼지 마세요. 기준 사이즈·스택·발볼 상세는 각 모델 상세 페이지에 있습니다.</p>
+<p>※11/9 원문 재확인 범위는860 V14·V15입니다. V14는 여성D 연관상품 정가179,000원만 확인했으며 해당 상품 링크는 판매 준비/오픈예정 응답이었습니다. 남성 정가와 모델 전체 판매 종료 여부는 미확인입니다. 다른 모델의 가격·스펙은 각 표기 시점 자료로 현재 공식 상품 조건을 다시 확인하세요. 서로 다른 사이즈·측정법의 무게를 같은 조건으로 비교하지 않습니다.</p>
 
 <h2>4. 목적별로 — 나는 뭘 사야 할까</h2>
 
 <ul>
-  <li><strong>🟢 러닝 입문 첫 신발</strong> → <a href="/shoes/new-balance-880-v15">880 V15</a>. 40mm 스택으로 무릎 충격을 확실히 잡고, 2E 와이드까지 있어 발볼 걱정이 없습니다. km당 비용은 추정 수명 기준 약 315원입니다(자체 랩 없음·아웃솔 마모 기준 추정, 모델 간 상대 비교용 — 교체 시기 숫자의 근거는 <a href="/blog/running-shoe-500km-replacement-myth-2026">러닝화 교체 시기 검증 글</a>에).</li>
-  <li><strong>🦶 평발·과내전이라 지지가 필요</strong> → <a href="/shoes/new-balance-860-v14">860 V14</a>(1만원 저렴한 가성비) 또는 <a href="/shoes/new-balance-860-v15">860 V15</a>(넓어진 힐·장거리, 한국 공식몰 4E까지). 뉴발 안정화는 이 860 한 줄이 전부입니다(아래 8번 참고).</li>
+  <li><strong>🟢 러닝 입문 첫 신발</strong> → 일상 훈련용으로 분류한<a href="/shoes/new-balance-880-v15">880 V15</a> 등을 착화 후보로 비교하세요. 스택 높이만으로 무릎 보호나 개인 핏을 보장하지 않습니다.</li>
+  <li><strong>🦶 내측 지지 구조를 비교한다면</strong> → <a href="/shoes/new-balance-860-v14">860 V14</a>와<a href="/shoes/new-balance-860-v15">V15</a>의 구조·착화를 확인하세요. 아치 모양만으로 모델별 치료·예방 효과를 순위로 매기지 않습니다.</li>
   <li><strong>☁️ 매일 푹신하게 장거리</strong> → <a href="/shoes/new-balance-1080-v15">1080 V15</a>. 인피니온 폼으로 전작보다 가벼워져(RunRepeat 실측 285g→255g) 템포런까지 소화합니다. 더 부드러운 클래식 감을 원하면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>.</li>
   <li><strong>⚡ 가볍게, 조금 빠르게</strong> → <a href="/shoes/new-balance-rebel-v5">레벨 V5</a>. 220g에 부드러운 FuelCell, 데일리부터 인터벌까지 한 켤레로. 토박스가 넓고(실측 75.0mm) 한국 공식몰 남성 2E 와이드도 있어 발볼이 편합니다.</li>
   <li><strong>🏃 마라톤 훈련(슈퍼트레이너)</strong> → <a href="/shoes/new-balance-sc-rebel">SC 레벨 V1</a>(25.9만). SC Trainer V3를 대체한 후속으로, 207g(실측)·힐 스택 38.3mm(실측)에 남성 2E 와이드까지 나옵니다. 전작 <a href="/shoes/new-balance-sc-trainer-v3">SC Trainer V3</a>(24.9만)는 할인 재고가 있으면 풀카본 훈련화 대안입니다. 다른 브랜드와의 비교는 <a href="/blog/new-balance-sc-rebel-vs-asics-superblast-3-super-trainer-2026">SC 레벨 vs 슈퍼블라스트 3</a>에.</li>
@@ -4006,8 +4035,8 @@ export const posts_2026_06: BlogPost[] = [
     <tr><th>모델</th><th>발볼 옵션</th><th>비고</th></tr>
   </thead>
   <tbody>
-    <tr><td>860 V15</td><td>2E / 4E</td><td>한국 공식몰 남성 4E 판매 확인, 안정화 와이드 최강</td></tr>
-    <tr><td>860 V14</td><td>표준(D) / 2E</td><td>해외엔 더 많은 폭이 있으나 한국 판매 폭은 구매 전 확인</td></tr>
+    <tr><td>860 V15</td><td>남성2E·4E / 여성D</td><td>11/9 한국 공식 상품 확인. 사이즈·색상별 재고 변동</td></tr>
+    <tr><td>860 V14</td><td>남성 미확인 · 여성D 연관상품명만 확인</td><td>해외 폭 목록을 한국 재고로 대입하지 않음</td></tr>
     <tr><td>880 V15</td><td>표준(D) / 2E</td><td>입문 와이드</td></tr>
     <tr><td>1080 V15</td><td>표준(D) / 2E / 4E</td><td>플래그십 와이드</td></tr>
     <tr><td>1080 V14</td><td>표준(D) / 2E</td><td>D는 토박스 좁음 → 2E 권장</td></tr>
@@ -4032,27 +4061,13 @@ export const posts_2026_06: BlogPost[] = [
 
 <ul>
   <li><strong>1080</strong>: V14(285g, Fresh Foam X) → V15(255g, 인피니온)으로 <strong>가벼워졌습니다</strong>(둘 다 RunRepeat 실측, 약 30g). 가벼움을 원하면 V15, 더 묵직하고 부드러운 클래식을 원하면 V14. 자세한 비교는 <a href="/blog/new-balance-1080-v14-vs-v15-comparison">1080 V14 vs V15</a>.</li>
-  <li><strong>860</strong>: V14(295g, 메디얼 포스트) → V15(332g, 이중 밀도 + 넓어진 힐). 가격은 V14가 1만원 싸고, 장거리 힐 안정감과 4E 와이드는 V15가 낫습니다. 자세한 비교는 <a href="/blog/new-balance-860-v14-vs-v15-comparison">860 V14 vs V15</a>.</li>
+  <li><strong>860</strong>: V14도 이중Fresh Foam X·내측 웨지·EVA 필름을 씁니다. V15 한국 공식은 이중폼과3/4 New EVA 필름을 설명합니다. RunRepeat 무게295→332g, 힐 스택36.8→39.7mm이며, 한국 남성 가격 차이는V14 정가 미확인으로 확정하지 않습니다. <a href="/blog/new-balance-860-v14-vs-v15-comparison">원문을 다시 대조한 세대 비교</a>를 확인하세요.</li>
   <li><strong>SC 라인</strong>: 슈퍼트레이너는 SC Trainer V3(FuelCell·풀카본) → <strong>SC 레벨</strong>(인피니온·Energy Arc, 힐 스택 38.3mm 실측)로, 레이싱은 SC Elite V5(100% PEBA) → <strong>V6</strong>(인피니온)로 넘어갔습니다. V6는 더 빠른 대신 핏이 좁아져, 발볼 넓은 러너에게는 V5가 여전히 의미가 있습니다.</li>
 </ul>
 
-<h2>7. 정직하게 — 뉴발란스 안정화는 사실 860 하나뿐</h2>
-
-<p>"안정화 하면 뉴발란스"라는 인식이 있지만, 데이터로 보면 <strong>뉴발란스의 진짜 강점은 안정화가 아니라 중립 쿠션(1080)과 레이싱(SC) 라인</strong>입니다. 현행 안정화는 860 한 줄(V14·V15)이 전부예요. 비교해 보면 차이가 뚜렷합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>브랜드</th><th>현행 안정화 라인</th><th>층위</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>아식스</td><td>GT-1000 · GT-2000 · 카야노</td><td>입문~프리미엄 3단계</td></tr>
-    <tr><td>브룩스</td><td>아드레날린 GTS · 글리세린 GTS</td><td>경량~맥스쿠션</td></tr>
-    <tr><td><strong>뉴발란스</strong></td><td><strong>860 (V14·V15)</strong></td><td><strong>사실상 1줄</strong></td></tr>
-  </tbody>
-</table>
-
-<p>그러니 평발·과내전이 확실하고 <strong>강한 교정이나 여러 선택지</strong>가 필요하다면, 860만 보지 말고 안정화 전문 라인을 함께 비교하세요. 어떤 지지 방식이 내게 맞는지부터 정하는 게 순서입니다 — <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">평발·과내전 안정화 자가진단 가이드</a>에서 4대 지지 방식과 와이드 옵션을 정리했고, 860·카야노·글리세린 GTS를 직접 맞붙인 <a href="/blog/kayano-33-vs-glycerin-gts-22-vs-860-v15-2026">안정화 3강 비교</a>도 참고가 됩니다.</p>
-
+<h2>7. 안정화는 구조와 착화로 비교하세요</h2>
+<p>이 글에860을 수록했다는 이유만으로 뉴발란스의 모든 시장·현행 세대에서 안정화가860 하나뿐이라고 단정하지 않습니다. 전체 라인업의 부재를 확인한 근거가 없어 기존의 ‘유일한 안정화’ 주장을 제거했습니다.</p>
+<p>860 V15는 한국 남성2E·4E와 여성D, 정가189,000원을 확인했습니다. 실험실 엄지 부위75.1mm와 내부 최광폭93.6mm는 다른 위치이며 한국2E·4E의 치수로 대입할 수 없습니다. 통증이나 보조기 사용이 있다면 신발의 지지 구조와 별개로 상담이 필요합니다.</p>
 <h2>한 걸음 더</h2>
 
 <ul>
@@ -4063,7 +4078,8 @@ export const posts_2026_06: BlogPost[] = [
 </ul>
 
 <p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-13 발행, 2026-09-28 라인업·가격 갱신 기준 한국 공식 판매 모델과 RunRepeat 실측·뉴발란스 공식 자료를 토대로 작성했습니다. 라인업·가격·발볼 옵션은 시즌마다 바뀔 수 있으니 구매 전 각 모델 상세 페이지와 공식몰에서 최신 정보를 확인하세요.</p>
-`,
+<h2>860 항목 재확인 원문</h2>
+<p><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v14" target="_blank" rel="noopener noreferrer">RunRepeat V14</a> · <a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">V15</a> · <a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-860-v14-review/" target="_blank" rel="noopener noreferrer">V14 구조 리뷰</a> · <a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703L&amp;colCode=16&amp;cIdx=" target="_blank" rel="noopener noreferrer">한국 V15 남성2E</a>. 다른 성별·폭의 확인 조건은 연결된 세대 비교글에 구분했습니다.</p>`,
   },
   {
     id: 'stability-shoes-self-diagnosis-fit-guide-2026',
@@ -7047,77 +7063,61 @@ export const posts_2026_06: BlogPost[] = [
   {
     id: 'adidas-adizero-evo-sl-value-supershoe-2026',
     slug: 'adidas-adizero-evo-sl-value-supershoe-2026',
-    title: '카본 없이 왜 빠를까 — 아디다스 아디제로 Evo SL | 아디오스 프로 폼·223g·에너지 리턴 74%의 가성비 슈퍼폼',
-    description: '아디제로 Evo SL은 카본 플레이트가 없는데도 "빠르다"는 평이 자자합니다. 비결은 레이싱화 아디오스 프로 3와 같은 100% Lightstrike Pro 슈퍼폼. 223g 초경량에 RunRepeat 실측 에너지 리턴 힐 74.3%로, 30만원대 카본 슈퍼슈즈의 폼을 20만원대에 담았죠. Evo SL의 정체와 누구에게 맞는지, 적토마·리벨 v5 등 가성비 경쟁 모델과의 비교까지 정리했습니다.',
-    thumbnail: '/images/blog/adidas-adizero-evo-sl-value-supershoe-2026.webp',
+    title: '아디제로 Evo SL 구매 전 확인 — 기본 메쉬·우븐·가격·실측 구분',
+    description: '기본 메쉬JP7149와 우븐 사양을 구분하고 공식 정가·실험실223g·폼과 생크·발볼 조건을 원문으로 다시 확인했습니다. 에너지 리턴을 기록 향상률이나 수명으로 해석하지 않습니다.',
+    thumbnail: '/images/shoes/adidas/evosl/side.webp',
     author: '산초 에디터',
     publishedAt: '2026-06-10',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['아디제로 Evo SL', '가성비 러닝화', '슈퍼폼', 'Lightstrike Pro', '카본 대안', '템포'],
+    category: 'review',
+    readingTime: 5,
+    tags: [
+      '아디제로 Evo SL',
+      '가성비 러닝화',
+      '슈퍼폼',
+      'Lightstrike Pro',
+      '카본 대안',
+      '템포',
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><a href="/shoes/adidas-adizero-evo-sl">아디제로 Evo SL</a>은 <strong>카본 플레이트가 없습니다</strong> — 그런데도 빠른 이유는 레이싱화 <strong>아디오스 프로 3와 똑같은 100% Lightstrike Pro 슈퍼폼</strong> 덕분이죠</li>
-    <li>223g 초경량 + <strong>에너지 리턴 힐 74.3%(RunRepeat 실측, 랩 평균 61.5%)</strong> — "폼 자체가 슈퍼폼"이라 플레이트 없이도 경쾌합니다</li>
-    <li>30만원대 카본 슈퍼슈즈의 폼을 <strong>20만원대</strong>에 — 데일리부터 템포까지 한 켤레로 빠르게 굴리고 싶은 러너의 가성비 정답</li>
-  </ul>
+<div class="tldr"><span class="tldr-label">구매 전 세 가지</span><ul>
+<li><strong>기본 메쉬 JP7149는 한국 공식 정가209,000원.</strong> 같은 Evo SL 이름의 우븐 상품과 가격·사양을 섞지 마세요.</li>
+<li><strong>전장 Lightstrike Pro와 중족부 플라스틱 생크를 씁니다.</strong> 전장 카본 플레이트가 없다는 뜻이며 지지 부품이 전혀 없지는 않습니다.</li>
+<li><strong>223g과 에너지 리턴74.3/73.5%는 실험실 값입니다.</strong> 개인의 기록 향상률이나 누구에게나 맞는 최적 페이스를 뜻하지 않습니다.</li>
+</ul>
 </div>
-
-<div class="callout info">
-  <span class="callout-icon">⚡</span>
-  <div class="callout-body">
-    <p class="callout-title">"카본 아니라며? 근데 왜 빨라?"</p>
-    <p>요즘 러닝화는 "카본 플레이트 = 빠름"으로 알려져 있지만, 사실 속도의 절반은 <strong>폼(미드솔 소재)</strong>이 만듭니다. Evo SL은 플레이트를 뺀 대신 <strong>최상급 슈퍼폼을 통째로</strong> 넣었어요. 플레이트의 톡톡 튀는 반발 대신, 폼의 부드럽고 탄력 있는 반발로 빠르게 나가는 신발입니다.</p>
-  </div>
-</div>
-
-<h2>정체 — 아디오스 프로의 폼을 그대로</h2>
-<p>Evo SL의 핵심은 미드솔이 <strong>100% Lightstrike Pro</strong>라는 점입니다. 이건 아디다스의 풀카본 레이서 <strong>아디오스 프로 3에 쓰인 바로 그 폼</strong>이에요. RunRepeat 랩에서 측정한 <strong>에너지 리턴 힐 74.3%·전족 73.5%는 플레이트 없는 데일리 중 높은 축</strong>(랩 평균 61.5%)이고, 223g 초경량에 36mm 힐 스택으로 쿠션도 충분합니다. 컨티넨탈 러버 아웃솔이라 그립도 좋습니다.</p>
-
-<table>
-  <thead><tr><th>항목</th><th>Evo SL</th></tr></thead>
-  <tbody>
-    <tr><td>미드솔</td><td>100% Lightstrike Pro (아디오스 프로 3 동일 폼)</td></tr>
-    <tr><td>플레이트</td><td><strong>없음</strong> (카본 아님)</td></tr>
-    <tr><td>무게 / 스택 / 드롭</td><td>223g / 36·28mm / 8mm</td></tr>
-    <tr><td>에너지 리턴</td><td><strong>힐 74.3% · 전족 73.5%</strong> (RunRepeat 실측, 랩 평균 61.5%)</td></tr>
-    <tr><td>발볼</td><td>표준 — 엄지 위치 토박스 71.6mm(RunRepeat 평균 73.2mm) · 와이드는 한국 공식몰 미판매(2026년 10월 확인)</td></tr>
-    <tr><td>가격</td><td>209,000원</td></tr>
-  </tbody>
+<p>2026-11-09 원문을 다시 대조했습니다. 자체 착화 후기가 아닌 제조사·실험실·외부 착화 리뷰 기반 에디터 분석입니다.</p>
+<h2>이름보다 SKU부터 확인하세요</h2>
+<p>기본 메쉬 JP7149는209,000원이며 한국 공식 표기는224g(270mm), 스택38/32mm, 드롭6mm입니다. 같은 이름으로 노출되는 KJ0774는219,000원이지만 상세에는 SFTM 우븐 어퍼·236g·37/29mm·드롭8mm가 적혀 있습니다. 이름만 같다고 기본형의 가격이나 실측을 우븐형에 대입하지 않았습니다.</p>
+<h2>223g과 높은 에너지 리턴을 읽는 방법</h2>
+<table><thead><tr><th>RunRepeat 기본형 측정</th><th>값</th><th>확인할 조건</th></tr>
+</thead>
+<tbody>
+<tr><td>무게</td><td>223g</td><td>남성US9 공시 기준</td></tr>
+<tr><td>힐/전족부 스택·드롭</td><td>36.1/28.1mm ·8mm</td><td>한국 공식38/32mm·6mm와 분리</td></tr>
+<tr><td>힐/전족부 충격흡수</td><td>147/126 SA</td><td>부상 예방률이나 폼 경도가 아님</td></tr>
+<tr><td>힐/전족부 에너지 리턴</td><td>74.3/73.5%</td><td>실험실 에너지 회수 측정, 기록 향상률이 아님</td></tr>
+<tr><td>내부 최광폭 / 엄지 부위</td><td>97.5/71.6mm</td><td>서로 다른 위치, 맨발 너비와 직접 환산 불가</td></tr>
+</tbody>
 </table>
-
-<h2>누구에게 맞나</h2>
-<ul>
-  <li><strong>데일리~템포를 한 켤레로</strong> — 가볍고 반발 좋아 조깅부터 빠른 훈련까지 소화</li>
-  <li><strong>카본 입문 전 단계</strong> — 카본의 강한 추진이 부담스럽거나, 발목·종아리 근력을 먼저 다지려는 러너</li>
-  <li><strong>가성비 슈퍼폼을 원하는 러너</strong> — 30만원대 카본 대신 20만원대로 슈퍼폼 경험</li>
+<p>전장 Lightstrike Pro는 이 모델의 확인된 구조입니다. 그 사실에서 속도를 폼과 플레이트가 각각 몇 퍼센트 만든다는 결론은 나오지 않습니다. 기존 글의 ‘속도의 절반은 폼’이라는 설명은 근거가 확인되지 않아 삭제했습니다.</p>
+<h2>조깅과 템포를 겸할 때 무엇을 볼까</h2>
+<p>Doctors of Running과 RoadTrailRun은 쉬운 러닝부터 템포까지 사용한 착화 경험을 다룹니다. 리뷰어마다 느린 뒤꿈치 착지에서의 느낌과 어퍼 고정에 대한 의견은 갈립니다. 따라서 ‘몇 분/km 이상이어야 효과가 난다’고 선을 긋지 않았습니다.</p>
+<ul><li><strong>가벼운 데일리·템포 겸용 후보를 찾는다면:</strong> 실제 쉬운 페이스에서의 느낌과 코너에서 발 고정을 확인하세요.</li>
+<li><strong>앞발이 넓거나 엄지 압박에 민감하다면:</strong> 최광폭97.5mm만 보지 말고 앞쪽으로 좁아지는 모양과 양발의 착화를 확인하세요.</li>
+<li><strong>다른 지지 구조가 필요하다면:</strong> 카본 유무보다 중족부 고정, 어퍼, 베이스 등 구체적인 구조를 비교하세요.</li>
 </ul>
-<p>반대로 <strong>레이스 기록 단축에 카본의 롤링 추진이 꼭 필요하다면</strong> Evo SL로는 아쉬울 수 있습니다 — 그땐 진짜 카본 레이서(<a href="/best/racing">레이싱화</a>)를 보세요.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">🖥️</span>
-  <div class="callout-body">
-    <p class="callout-title">가성비 슈퍼폼 4종 비교</p>
-    <p><strong><a href="/compare?shoes=adidas-adizero-evo-sl,new-balance-rebel-v5,li-ning-red-hare-9-ultra,nike-zoom-fly-6">→ Evo SL · 리벨 v5 · 적토마 9 울트라 · 줌플라이 6 비교하기</a></strong></p>
-  </div>
-</div>
-
-<h2>가성비 슈퍼폼 경쟁 — 카본 없이 빠른 신발들</h2>
-<p>Evo SL처럼 "카본 없이 폼으로 승부하는" 가성비 슈퍼폼이 요즘 대세입니다.</p>
+<p>확인한 한국JP7149는 레귤러 핏이고 별도 폭 선택을 관찰하지 못했습니다. 모든 한국SKU에서 와이드를 판매하지 않는다는 근거로 확대하지 않습니다. 반 사이즈 업을 일괄 권장하지도 않습니다.</p>
+<h2>가격 비교에 수명 가정을 더하지 않았습니다</h2>
+<p>확인한 정가209,000원과 실제 판매가를 구매 시점에 비교할 수 있습니다. 반면500km 수명이나 정확한 km당 비용을 뒷받침하는 실주행 수명 시험은 확인하지 못했습니다. 내마모 시험의 깊이(mm)를 수명(km)으로 바꾸거나 질환별 적합 등급으로 추천하지 않습니다.</p>
+<p><a href="/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026">보스턴13과 정가·무게·구조를 나란히 비교하기</a> · <a href="/shoes/adidas-adizero-evo-sl">Evo SL 상세 조건과 구매처</a></p>
+<h2>원문 출처</h2>
 <ul>
-  <li><a href="/shoes/new-balance-rebel-v5">뉴발란스 리벨 v5</a> — 228g, 발랄한 FuelCell. Evo SL의 직접 경쟁</li>
-  <li><a href="/shoes/li-ning-red-hare-9-ultra">라이닝 적토마 9 울트라</a> — 유리섬유 플레이트 맥스쿠션, 10만원대(<a href="/blog/li-ning-red-hare-9-ultra-truth-2026">"중국 카본화"의 진실</a> 참고)</li>
-  <li><a href="/shoes/nike-zoom-fly-6">나이키 줌플라이 6</a> — 카본 들어간 템포 트레이너(이쪽은 플레이트 있음)</li>
+<li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">한국 공식JP7149</a> · <a href="https://www.adidas.co.kr/아디제로-evo-sl/KJ0774.html" target="_blank" rel="noopener noreferrer">별도 우븐 사양KJ0774</a>: 가격과 제조사 조건.</li>
+<li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">RunRepeat 원문</a> · <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법</a>: 표본과 측정 위치.</li>
+<li><a href="https://www.doctorsofrunning.com/adidas-adizero-evo-sl-review-2024/" target="_blank" rel="noopener noreferrer">Doctors of Running</a> · <a href="https://www.roadtrailrun.com/2024/12/review-adidas-adizero-evo-sl-lot-of.html?m=1" target="_blank" rel="noopener noreferrer">RoadTrailRun</a>: 개인별 착화 의견. 임상 효과와 구분했습니다.</li>
 </ul>
-<p>"플레이트가 있어야 진짜 빠르다"는 통념과 달리, Evo SL은 <strong>폼만으로도 충분히 빠를 수 있다</strong>는 걸 보여주는 신발입니다.</p>
-
-<h2>마무리</h2>
-<p>Evo SL은 "카본은 없지만 카본값도 안 내는" 똑똑한 선택입니다. 레이스 기록이 목표가 아니라면, 대부분의 러너에게 <strong>슈퍼폼의 재미와 가성비</strong>를 가장 쉽게 주는 신발 중 하나죠. 데일리와 템포를 오가는 한 켤레를 찾는다면 우선순위에 올릴 만합니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 스펙은 RunRepeat 랩·제조사 자료 기준이며 가격은 변동될 수 있습니다.</p>
 `,
+    updatedAt: '2026-11-09',
   },
   {
     id: 'max-cushion-running-shoes-knee-protection-2026',
