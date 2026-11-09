@@ -4009,17 +4009,26 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'running-shoes-recommend-by-price-2026',
-    slug: 'running-shoes-recommend-by-price-2026',
-    seoTitle: '러닝화 추천 2026 — 10·15·20만원대 가성비부터 카본까지',
-    title: '러닝화 추천 2026 가격대별 정리 | 10만원대 가성비부터 15·20만원대, 카본까지 — 예산별 베스트',
-    description: '러닝화 가격과 가성비를 예산 구간별로 정리한 추천입니다. 10만원대 가성비 입문화, 완성도 높은 모델이 몰린 15만~20만원대 데일리, 20만원대 프리미엄 쿠션, 25만원 이상 카본 레이싱화까지 — 실측 가격·무게·발볼을 기준으로 예산마다 목적별(입문·데일리·쿠션·안정·레이싱) 베스트를 골랐습니다. 비싼 신발이 항상 정답은 아닙니다.',
-    thumbnail: '/images/blog/running-shoes-recommend-by-price-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-08',
-    category: 'guide' as const,
+    id: "running-shoes-recommend-by-price-2026",
+    slug: "running-shoes-recommend-by-price-2026",
+    seoTitle: "러닝화 추천 2026 — 10·15·20만원대 가성비부터 카본까지",
+    title: "러닝화 추천 2026 가격대별 정리 | 10만원대 가성비부터 15·20만원대, 카본까지 — 예산별 베스트",
+    description: "러닝화 가격과 가성비를 예산 구간별로 정리한 추천입니다. 10만원대 가성비 입문화, 완성도 높은 모델이 몰린 15만~20만원대 데일리, 20만원대 프리미엄 쿠션, 25만원 이상 카본 레이싱화까지 — 실측 가격·무게·발볼을 기준으로 예산마다 목적별(입문·데일리·쿠션·안정·레이싱) 베스트를 골랐습니다. 비싼 신발이 항상 정답은 아닙니다.",
+    thumbnail: "/images/blog/running-shoes-recommend-by-price-2026.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-08",
+    category: "guide",
     readingTime: 12,
-    tags: ['가격대별 러닝화', '러닝화 추천', '10만원대 러닝화', '20만원대 러닝화', '입문 러닝화', '카본화 추천', '가성비 러닝화', '예산별 러닝화'],
+    tags: [
+      "가격대별 러닝화",
+      "러닝화 추천",
+      "10만원대 러닝화",
+      "20만원대 러닝화",
+      "입문 러닝화",
+      "카본화 추천",
+      "가성비 러닝화",
+      "예산별 러닝화"
+    ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -4128,7 +4137,7 @@ export const posts_2026_07: BlogPost[] = [
     <tr><td><a href="/shoes/asics-magic-speed-5">아식스 매직스피드 5</a></td><td>209,000</td><td>201g</td><td>입문 카본</td><td>첫 카본화, 훈련+레이스 겸용 가성비</td></tr>
     <tr><td><a href="/shoes/adidas-adios-pro-4">아디다스 아디오스 프로 4</a></td><td>299,000</td><td>200g</td><td>레이스(마라톤)</td><td>풀코스 기록 도전(발볼 좁음)</td></tr>
     <tr><td><a href="/shoes/saucony-endorphin-pro-5">써코니 엔돌핀 프로 5</a></td><td>299,000</td><td>215g</td><td>레이스 올라운드</td><td>안정적인 카본, 하프~풀</td></tr>
-    <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>309,000</td><td>166g</td><td>레이스(스피드)</td><td>166g 초경량, 5K~하프 스피드</td></tr>
+    <tr><td><a href="/shoes/nike-vaporfly-4">나이키 베이퍼플라이 4</a></td><td>남성 IM8203-001 정가 319,000원·여성 HF6412-102 정가 309,000원 (2026-11-09 확인 SKU)</td><td>166g 검체</td><td>레이싱</td><td>개인 착화·전환 확인, 특정 거리만으로 제한하지 않음</td></tr>
     <tr><td><a href="/shoes/new-balance-sc-elite-v5">뉴발란스 SC Elite V5</a></td><td>319,000</td><td>198g</td><td>레이스(넓은 발)</td><td>발볼 넓어도 신는 슈퍼슈즈(74.5mm)</td></tr>
     <tr><td><a href="/shoes/nike-alphafly-3">나이키 알파플라이 3</a></td><td>339,000</td><td>201g</td><td>레이스(풀 끝판)</td><td>풀코스 최대 추진, 상급자용</td></tr>
   </tbody>

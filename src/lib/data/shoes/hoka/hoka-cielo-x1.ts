@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'hoka-cielo-x1',
   slug: 'hoka-cielo-x1',
@@ -15,96 +16,143 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  status: 'new',
-  price: 329000,
-  description: '호카의 엘리트 카본 레이싱화. 듀얼 덴시티 PEBA 미드솔과 카본 파이버 플레이트, 46mm 슈퍼맥스 스택으로 풀마라톤에서 최고의 쿠셔닝과 추진력을 제공합니다.',
-  oneliner: '208g 듀얼 PEBA+카본, 호카 최고의 레이서',
-  editorComment: '씨엘로 X1은 호카의 아이코닉한 맥시멀 쿠셔닝을 레이싱화에 담은 모델입니다. 208g(2.0 기준)으로 전작(249g) 대비 41g 감량했고, 브랜드 표기 46mm 힐/39mm 전족부(RunRepeat 측정 38.8/28.1mm) 스택에 듀얼 덴시티 PEBA 폼과 카본 플레이트를 결합했습니다. 공격적인 전족부 로커와 울트라 반응성 미드솔이 빠른 전환을 돕고, 풀마라톤 후반부에서도 쿠셔닝이 유지됩니다. 32만 9천원으로 로켓 X3(29만 9천원)보다 3만원 비싸지만, 호카 레이싱 라인업의 정점입니다. Rodrigo-Carranza et al.(2024)의 450km 실도로 마모 연구에서 PEBA 계열 폼은 굽힘 에너지 리턴을 4분의 1 가까이(−24.6%) 잃었습니다(EVA는 −10.5%). 시엘로의 수명 표기가 짧은 건 소재의 숙명이니 레이스·자극 훈련 전용으로 아끼세요.\n\n사이즈·구매 가이드: RunRepeat 측정 토박스가 71.3mm로 좁은 편이고 와이드 옵션이 없어, 발볼 넓은 러너는 반드시 시착 후 구매하세요. 정가 329,000원에 예상 수명 250~350km(추정) 기준 km당 약 940~1,320원이며, 예산을 줄이고 싶다면 로켓 X 3, 더 높은 안정성을 원하면 메타스피드 스카이+가 대안입니다.',
-  tags: ['레이싱', '카본', 'PEBA', '맥시멀', '풀마라톤'],
-
+  description: "초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커 구조의 씨엘로 X1. 실험실 249g·힐/전족부 39.8/30.3mm. 한국 현재 정가 미확인.",
+  oneliner: "249g 실험실 무게 · 초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커",
+  editorComment: "2026-11-09 원문 재확인. 호카 코리아 공식 연결스토어의 현재 씨엘로 X1검색은 후속 2.0 두 상품만 확인돼 초대 2024 X1의현재 정가·성별·폭·SKU·재고는미확인입니다. 2.0의 329,000원·할인가를원형에 대입하지 않고,미노출을 단종 확정으로 해석하지 않습니다. 원형 RR 실측 249g·39.8/30.3mm·9.5mm 입니다. DOR 소개 264g(남성 US10)·39/32mm 와 210g(여성 US8)·37/30mm,드롭 7mm 는조건을 구분합니다. 기존 2.0의 208g·38.8/28.1mm·10.7mm 를원형 상세에 썼던 오류를 정정합니다. 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다. DOR Matt(남성 US10)은 길이가 맞지만 낮은 볼륨과 엄지·다섯째발가락 윗면 압박을느꼈습니다. David(남성 US9.5)는앞쪽에 약간 여유와 좋은 고정을 느꼈으나 경사진 길·가쪽 회전에서 컷아웃 방향으로 기우는 순간을 보고했습니다. Andrea(여성 US9.5)는앞쪽이 편했고 David와같은 불안정을 겪지 않았다고 적었습니다. 개인의 핏·굴림 차이를 모든 러너에게 일반화하지 않습니다. 한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '레이싱',
+    '카본',
+    'PEBA',
+    '맥시멀',
+    '풀마라톤',
+  ],
   specs: {
-    weight: 208,
+    weight: 249,
     cushioning: 10,
     responsiveness: 10,
     stability: 5,
-    drop: 11,
-    durability: 300,
+    drop: 9.5,
   },
-
   biomechanics: {
-    stackHeight: { heel: 39, forefoot: 28 },
-    drop: 11,
+    stackHeight: {
+      heel: 39.8,
+      forefoot: 30.3,
+    },
+    drop: 9.5,
     carbonPlate: true,
-    plateType: 'full-length carbon fiber',
-    midsoleType: 'Dual-Density PEBA',
-    optimalPace: '3:30-4:30 min/km',
+    plateType: 'original 2024 winged carbon plate',
+    midsoleType: "초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커",
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'caution',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['풀마라톤 대회용', '서브3:30 마라토너', '호카 로커 선호', '맥시멀 쿠셔닝+레이싱 겸용'],
-    notRecommended: ['입문 러너', '데일리 훈련용', '발볼 넓은 러너', '과내전 러너'],
+    recommended: [
+      "초대 X1의날개형카본·강한로커를비교하려는 러너",
+      "매물의초대/2.0세대와 정확한 규격을 확인할 수 있는 구매자",
+    ],
+    notRecommended: [
+      "정확한 세대와 품번이 혼용된 매물",
+      "실제 착화에서앞코 윗면압박이나 경사로 전환이 불편한 경우",
+    ],
   },
-
-  features: ['듀얼 덴시티 PEBA 미드솔', '카본 파이버 플레이트', '맥시멀 스택 (브랜드 표기 힐 46mm)', '공격적 전족부 로커', '208g 경량 (2.0 기준)', '충격흡수 힐 160 SA (RunRepeat 실측, 2.0)', '에너지 리턴 전족부 78.4% (RunRepeat 실측, 2.0)'],
-
+  features: [
+    "초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커",
+    '249g · 힐/전족부 39.8/30.3mm (RunRepeat)',
+    "힐/전족부 SA 147/119 · 에너지 리턴 74.4/75.3% (RunRepeat). 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다.",
+    "한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다.",
+  ],
   priceAnalysis: {
-    msrp: 329000,
-    costPerKm: 1097,
     valueRating: 6,
     priceTier: 'super-premium',
-    alternatives: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3'],
+    alternatives: [
+      'nike-vaporfly-4',
+      'asics-metaspeed-sky-plus',
+      'hoka-rocket-x-3',
+    ],
   },
-
   detailedSpecs: {
-    weight: '208g (US M9, 2.0 기준)',
-    stackHeight: '힐 38.8mm / 포어풋 28.1mm (RunRepeat 랩, 2.0 US 9 기준 / 브랜드 표기 46/39mm)',
-    drop: '10.7mm (RunRepeat 랩, 2.0 US 9 기준 / 브랜드 표기 7mm)',
-    midsole: '듀얼 덴시티 PEBA 폼',
-    plate: '풀렝스 카본 파이버 플레이트',
-    outsole: '러버 아웃솔',
-    upper: '경량 엔지니어드 메쉬',
-    width: '좁은 편 (와이드 없음) · 토박스 71.3mm(2.0) — RunRepeat 평균 73.2mm보다 1.9mm 좁고 랩 원문 "the narrow-fit upper limits this shoe\'s versatility."',
-    durability: '300km',
-    price: '₩329,000',
-    costPerKm: '약 ₩1,097/km (300km 기준)',
-    footType: '중립 (레이싱)',
-    landingPattern: '중족부/전족부 착지',
+    weight: "249g (RunRepeat 공시 검체 정책:남성 US9). 원형 RR 실측 249g·39.8/30.3mm·9.5mm 입니다. DOR 소개 264g(남성 US10)·39/32mm 와 210g(여성 US8)·37/30mm,드롭 7mm 는조건을 구분합니다. 기존 2.0의 208g·38.8/28.1mm·10.7mm 를원형 상세에 썼던 오류를 정정합니다.",
+    stackHeight: '39.8/30.3mm (RunRepeat 힐/전족부 실측)',
+    drop: '9.5mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "초대 2024 X1 이중 밀도 PEBA · 날개형 카본 · 강한 로커 · 15.5 HA (구방식) · 힐/전족부 SA 147/119 · 에너지 리턴 74.4/75.3%. 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다.",
+    plate: "원형 2024 X1의 날개형 카본.2.0·3.0의무게·폼·스택을대입하지않습니다.",
+    width: "RunRepeat 내부 최광폭 93mm / 엄지 부위 70.9mm / 엄지 높이 27.9mm. 한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "호카 코리아 공식 연결스토어의 현재 씨엘로 X1검색은 후속 2.0 두 상품만 확인돼 초대 2024 X1의현재 정가·성별·폭·SKU·재고는미확인입니다. 2.0의 329,000원·할인가를원형에 대입하지 않고,미노출을 단종 확정으로 해석하지 않습니다.",
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 89,
-      text: '씨엘로 X1은 호카의 맥시멀 DNA를 레이싱에 녹인 결과물입니다. 208g 초경량에 브랜드 표기 46mm 힐/39mm 전족부 스택(RunRepeat 측정 38.8/28.1mm, 드롭 10.7mm)이며, 듀얼 덴시티 PEBA+카본 플레이트 조합은 장거리 후반까지 쿠션과 반발을 유지하도록 설계된 구성입니다. 베이퍼플라이의 불안정함이 싫은 러너에게 강력 추천하며, 높은 스택이 무릎 충격을 효과적으로 분산시켜 후반부 페이스 드롭을 줄여줍니다. 32만 9천원은 슈퍼슈즈 중 중간 가격대이고, 300km 내구성으로 km당 약 1,097원은 대회 전용에 적합합니다. 다만 와이드 옵션이 없어 발볼 넓은 한국 러너는 토박스 사이즈를 반드시 확인하고 시착해야 하며, 평발 러너에게는 안정성이 다소 부족할 수 있습니다. 로켓 X 3(29만 9천원)보다 3만원 비싸지만 맥시멀 쿠셔닝은 장거리에서 확실한 차별점이 있는 가성비 좋은 카본 레이서입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/hoka-cielo-x1',
+      text: "249g 과 SA 147/119·에너지 리턴 74.4/75.3% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다. 한국 현재 와이드 SKU 는미확인입니다. 초대 RR 내부 최광폭 93.0mm·엄지 70.9mm·높이 27.9mm 를 2.0의 71.3mm 로 대체하지 않습니다.",
     },
     {
-        userType: '예상 적합 — 풀코스 후반 페이스 유지가 과제인 러너',
-        text: '풀코스에서 30km 이후 페이스 드롭이 과제인 러너를 겨냥한 맥시멀 레이서입니다. 브랜드 표기 힐 46mm·전족부 39mm(RunRepeat 측정 38.8/28.1mm)의 높은 스택에 PEBA와 카본을 조합해, 다리가 지친 상태에서도 로커가 전환을 이어주고 반발이 남는 구조입니다. 208g으로 이 스택에서는 가벼운 축입니다. 같은 급의 베이퍼플라이 계열과 비교하면 접지 안정성과 전족부 쿠션량에서 앞서, 속도보다 완주 후반의 안정에 무게를 둔 선택입니다. 토박스가 71.3mm(RunRepeat)로 좁은 편이고 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다. 329,000원·예상 수명 250~350km(추정) 기준 km당 약 940~1,320원입니다.',
-      },
-    {
-        userType: '예상 적합 — 하프~풀코스 맥시멀 레이서',
-        text: '하프에서 풀코스까지, 거리가 긴 레이스를 겨냥한 맥시멀 스택 레이서입니다. 브랜드 표기 힐 46mm·전족부 39mm(RunRepeat 측정 38.8/28.1mm)의 높은 스택에 PEBA와 카본을 얹어 쿠션과 반발을 동시에 가져가는 구성이고, 로커 지오메트리가 후반 전환을 돕습니다. 드롭은 RunRepeat 측정 10.7mm(브랜드 표기 7mm)입니다. 반대로 10K 이하 짧은 거리에서는 스택이 낮고 가벼운 레이서가 더 유리해, 거리 선택이 분명한 신발입니다. 토박스가 빡빡하고 와이드 옵션이 없어 발볼이 넓다면 얇은 레이싱 양말로도 여유가 부족할 수 있습니다. 329,000원·예상 수명 250~350km(추정) 기준 km당 약 940~1,320원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/hoka-cielo-x1-review/',
+      text: "DOR Matt(남성 US10)은 길이가 맞지만 낮은 볼륨과 엄지·다섯째발가락 윗면 압박을느꼈습니다. David(남성 US9.5)는앞쪽에 약간 여유와 좋은 고정을 느꼈으나 경사진 길·가쪽 회전에서 컷아웃 방향으로 기우는 순간을 보고했습니다. Andrea(여성 US9.5)는앞쪽이 편했고 David와같은 불안정을 겪지 않았다고 적었습니다. 개인의 핏·굴림 차이를 모든 러너에게 일반화하지 않습니다.",
+    },
   ],
-
-  similarShoes: ['nike-vaporfly-4', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-5'],
+  similarShoes: [
+    'nike-vaporfly-4',
+    'asics-metaspeed-sky-plus',
+    'hoka-rocket-x-3',
+    'saucony-endorphin-pro-5',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/51u1uP82' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YC50ZG1I' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/51u1uP82',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YC50ZG1I',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '호카 코리아 공식 스토어 연결',
+        url: 'https://linktr.ee/hoka_korea',
+        note: "이번 live에서 brand.naver.com/hoka연결을재확인했습니다.",
+      },
+      {
+        label: '한국 공식 null · undefined · undefined',
+        url: 'https://brand.naver.com/hoka/search?q=%EC%94%A8%EC%97%98%EB%A1%9C%20X1',
+        note: "호카 코리아 공식 연결스토어의 현재 씨엘로 X1검색은 후속 2.0 두 상품만 확인돼 초대 2024 X1의현재 정가·성별·폭·SKU·재고는미확인입니다. 2.0의 329,000원·할인가를원형에 대입하지 않고,미노출을 단종 확정으로 해석하지 않습니다.",
+      },
+      {
+        label: 'RunRepeat 씨엘로 X1',
+        url: 'https://runrepeat.com/hoka-cielo-x1',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 249g · 39.8/30.3mm · 드롭 9.5mm. SA 147/119 · ER 74.4/75.3%. 초대 RR 경도 15.5는 HA 구방식이며 AC 는미확인입니다. HA 를다른 두 모델의 AC 와비교·환산하지 않습니다. 원문 갱신일 2025-01-02이지만후속 추가 시험의 항목별 날짜는 미공시입니다. 기존 2.0수치 혼용·수명 300km·무릎보호·후반 페이스 보장을 제거했습니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/hoka-cielo-x1-review/',
+        note: "원형 RR 실측 249g·39.8/30.3mm·9.5mm 입니다. DOR 소개 264g(남성 US10)·39/32mm 와 210g(여성 US8)·37/30mm,드롭 7mm 는조건을 구분합니다. 기존 2.0의 208g·38.8/28.1mm·10.7mm 를원형 상세에 썼던 오류를 정정합니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };

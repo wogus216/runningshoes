@@ -3808,243 +3808,45 @@ export const posts_2026_05: BlogPost[] = [
     ],
   },
   {
-    id: 'nike-vaporfly-4-vs-alphafly-3-comparison',
-    slug: 'nike-vaporfly-4-vs-alphafly-3-comparison',
-    title: '나이키 베이퍼플라이 4 vs 알파플라이 3 비교 | 31만원 베이퍼 vs 34만원 알파 — 3만원 차이로 갈리는 Sub-3 vs Sub-3:30 선택',
-    description: '베이퍼플라이 4(166g/309,000원)와 알파플라이 3(201g/339,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. -35g 가벼움 vs 풀코스 후반 Air Pods 보호 — Sub-3 vs Sub-3:30 페이스별 최적 선택, 알파플라이 4 공식 발표 뒤(한국 정가 미확인) 알파 3를 사도 되나 답까지.',
-    thumbnail: '/images/blog/nike-vaporfly-4-vs-alphafly-3-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-17',
-    category: 'review' as const,
-    readingTime: 13,
-    tags: ['나이키 베이퍼플라이', '베이퍼플라이 4', '알파플라이 3', '나이키 카본 슈즈', '슈퍼슈즈', 'ZoomX', 'Air Pods', '카본 플레이트', 'Sub-3', '마라톤 레이싱화'],
+    id: "nike-vaporfly-4-vs-alphafly-3-comparison",
+    slug: "nike-vaporfly-4-vs-alphafly-3-comparison",
+    title: "베이퍼플라이 4 vs 알파플라이 3 — 기록표 대신 무게·앞코·전환을 비교",
+    description: "같은 실험실의 무게·스택·에너지 리턴과 리뷰어별 착화를 비교합니다. 기록별 추천표와 임의 수명을 제거하고 나이키 한국 상품별 가격 확인 범위를 표시했습니다.",
+    thumbnail: "/images/blog/nike-vaporfly-4-vs-alphafly-3-comparison.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-17",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "베이퍼플라이 4",
+      "알파플라이 3",
+      "나이키",
+      "러닝화 비교"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>가격 3만원 차이 (베이퍼 309,000원 / 알파 339,000원). 본질 차이는 <strong>"가벼움·반응성(베이퍼)" vs "풀코스 후반 보호(알파)"</strong></li>
-    <li>무게 차이 <strong>-35g (베이퍼 166g vs 알파 201g)</strong> + 베이퍼 힐 78%·앞발 75% vs 알파 74.9% 에너지 리턴 — 베이퍼가 가성비·반응성 모두 우위</li>
-    <li>알파플라이의 차별 무기는 <strong>Air Pods + 38mm 힐 스택</strong>. <strong>Sub-3 풀코스 35km 이후 다리 보호</strong>가 결정적. <strong>Sub-3:30 이하면 베이퍼 4가 더 합리적</strong></li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 베이퍼플라이 4 실측(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 실측(에너지 리턴 힐 74.9%·앞발 73.9%) + Believe in the Run / Road Trail Run 리뷰 + 한국 나이키 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4 상세</a> · <a href="/shoes/nike-alphafly-3">알파플라이 3 상세</a>.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>베이퍼플라이 4</th><th>알파플라이 3</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2025년</td><td>2024년</td><td>베이퍼 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td><strong>309,000원</strong></td><td>339,000원</td><td>+30,000원 (알파 비쌈)</td></tr>
-    <tr><td><strong>스트릿 가격</strong></td><td>280,000원</td><td>310,000원</td><td>+30,000원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td><strong>166g</strong></td><td>201g</td><td><strong>+35g (알파 무거움)</strong></td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>34mm (실측 34.1mm)</td><td><strong>38mm (실측 38.1mm, 공식 40mm)</strong></td><td>+4mm (실측 기준, 알파 우위)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>26mm (실측 25.5mm)</td><td>30mm (실측 29.6mm, 공식 32mm)</td><td>+4mm (실측 기준)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>6mm 공식 (실측 8.6mm)</td><td>8mm 공식 (실측 8.5mm)</td><td>공식 +2mm · 실측 사실상 동일</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>ZoomX (Pebax) 단일</td><td><strong>ZoomX + Air Pods</strong></td><td>알파에 Air Pods 추가</td></tr>
-    <tr><td><strong>카본 플레이트</strong></td><td><strong>스푼형</strong> Flyplate</td><td>풀렝스 curved Flyplate</td><td>형상 다름</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td><strong>힐 78% / 앞발 75%</strong></td><td>74.9%</td><td>힐 +3.1%p (베이퍼 우위)</td></tr>
-    <tr><td><strong>내구성</strong></td><td><strong>250km</strong></td><td>200km</td><td>+50km (베이퍼 우위)</td></tr>
-    <tr><td><strong>옵티멀 페이스</strong></td><td>3:00~4:30 min/km</td><td>3:00~4:30 min/km</td><td>동일 (둘 다 빠른 페이스 전용)</td></tr>
-    <tr><td><strong>토박스</strong></td><td>73.2mm (표준)</td><td>75.3mm (넓음)</td><td>알파가 2.1mm 넓음 — 둘 다 와이드 없음</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>❌ 없음</td><td>❌ 없음</td><td>둘 다 발볼 4E급 비추</td></tr>
-    <tr><td><strong>안정성</strong></td><td>6/10</td><td>6/10</td><td>둘 다 평발·과내전 비추</td></tr>
-    <tr><td><strong>Cost/km</strong></td><td>약 1,236원</td><td>약 1,695원</td><td>베이퍼 가성비 압승</td></tr>
-    <tr><td><strong>대표 기록</strong></td><td>춘마·뉴욕 등 Sub-3:30 PB 신발</td><td>킵툼 세계신기록 신발</td><td>알파 = 엘리트 상징성</td></tr>
-  </tbody>
-</table>
-
-<h2>5가지 핵심 차이 — 마케팅 vs 실제</h2>
-
-<h3>1. 무게 -35g ✅ 베이퍼 결정적 우위</h3>
-<p>166g vs 201g. 단순한 35g이 아니라 <strong>풀코스 42.195km에서 양발 합산 9,820회 들었다 놓는 데 누적되는 70g</strong>입니다. 마라톤 후반 다리 피로도와 직결되는 수치. <strong>같은 페이스를 더 적은 에너지로 유지할 수 있는 것이 베이퍼 4의 진짜 무기</strong>.</p>
-
-<h3>2. Air Pods (알파 단독 무기) ✅ 풀코스 후반 보호</h3>
-<p>알파플라이의 시그니처. 전족부 두 개의 압축 공기 챔버가 <strong>35km 이후 다리가 무거워질 때 추가 반발력을 제공</strong>. 베이퍼는 평평한 ZoomX 폼 단일 구성이라 후반 반발 손실이 상대적으로 큼. 단 Air Pods는 안정성을 희생함(좌우 흔들림 ↑) — 그래서 입문 러너에게 부적합.</p>
-
-<h3>3. 에너지 리턴 힐 78% vs 74.9% ✅ 베이퍼 우위 (의외)</h3>
-<p>알파플라이가 "더 비싸고 무거운데 에너지 리턴은 낮다"는 게 직관과 어긋남. 이유는 <strong>Air Pods 자체가 폼보다 에너지 효율은 낮기 때문</strong>. ZoomX 풀렝스 단일 구성인 베이퍼 4가 순수 반발률은 더 높음. 알파는 "반발력 총량"보다 "후반 반발 유지"가 강점.</p>
-
-<h3>4. 힐 스택 +4mm (38mm vs 34mm) ✅ 알파 후반 보호</h3>
-<p>알파의 38mm 힐 스택은 World Athletics 마라톤 슈즈 규정(40mm)의 상한 근처. <strong>풀코스 후반 뒤꿈치 착지 시 충격 흡수가 베이퍼보다 우수</strong>. Sub-3 풀코스 35km 이후 다리가 죽었을 때 알파가 잡아주는 것이 결정적.</p>
-
-<h3>5. 내구성 250km vs 200km ✅ 베이퍼 가성비 우위</h3>
-<p>250km = 풀코스 5~6회 / 200km = 4~5회 분량. <strong>대회당 비용으로 환산하면 베이퍼 56k / 알파 70k</strong>. 1년 풀코스 2~3회 + 하프 2~3회 출전 패턴이라면 베이퍼 1켤레가 거의 1년 끝. 알파는 더 자주 갈아치워야 함.</p>
-
-<h2>풀코스 페이스별 최적 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>목표 페이스</th><th>풀코스 기록</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>4:00~4:15/km (Sub-3 도전)</td><td>2:50~3:00</td><td><strong>알파플라이 3</strong></td><td>35km 이후 Air Pods + 38mm 스택 후반 보호 결정적</td></tr>
-    <tr><td>4:15~4:30/km (Sub-3:10)</td><td>3:00~3:10</td><td>알파 ≈ 베이퍼 (취향)</td><td>알파의 안정감 vs 베이퍼의 가벼움 — 시착 결정</td></tr>
-    <tr><td>4:30~4:45/km (Sub-3:20)</td><td>3:10~3:20</td><td><strong>베이퍼플라이 4</strong></td><td>알파의 후반 보호 효과 ↓, 베이퍼 가벼움이 더 유리</td></tr>
-    <tr><td>4:45~5:00/km (Sub-3:30)</td><td>3:20~3:30</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 + 힐 78% 에너지 리턴, 3만원 절약 합리적</td></tr>
-    <tr><td>5:00~5:15/km (Sub-3:40)</td><td>3:30~3:40</td><td>베이퍼 또는 슈퍼 트레이너</td><td>카본 슈즈 효과는 있으나 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>도 검토</td></tr>
-    <tr><td>5:30/km 이상 (Sub-4 이상)</td><td>3:50~</td><td><strong>슈퍼 트레이너</strong></td><td>카본 슈즈 효과 ↓, 부상 위험만 ↑. 슈퍼블라스트·매직 스피드로</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">5분/km 이상 페이스에서 카본 슈즈는 오히려 역효과</p>
-    <p>알파플라이 3·베이퍼플라이 4 모두 <strong>3:00~4:30 min/km 페이스 전용</strong>. 5분/km 이상 느린 페이스에서는 ① 카본 플레이트가 종아리·아킬레스를 잡아당겨 부상 위험 ↑, ② 38mm/34mm 하이스택이 좌우로 불안정해져서 발목 부담 ↑, ③ 34만원 신발 효과 거의 없음. <strong>Sub-4 이상 풀코스 목표라면 슈퍼 트레이너(슈퍼블라스트 3, 매직 스피드 5)가 정답</strong>.</p>
-  </div>
-</div>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>Sub-3 도전 + 풀코스 후반 다리 무거움 이력</td><td><strong>알파플라이 3</strong></td><td>Air Pods + 38mm 스택 결정적</td></tr>
-    <tr><td>Sub-3:10 ~ Sub-3:30 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 + 힐 78% 에너지 리턴 + 3만원 절약</td></tr>
-    <tr><td>Sub-3:30 ~ Sub-4 도전</td><td><strong>베이퍼플라이 4</strong></td><td>166g 가벼움 우위, 알파 효과 한계</td></tr>
-    <tr><td>하프마라톤 PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>21km는 알파의 후반 보호 의미 적음</td></tr>
-    <tr><td>10K PB 도전</td><td><strong>베이퍼플라이 4</strong></td><td>가벼움 절대 우위, 알파는 과스펙</td></tr>
-    <tr><td>풀코스 첫 도전 + 완주 우선</td><td>둘 다 비추 → 슈퍼블라스트 3</td><td>카본은 부상 위험만 ↑</td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추</td><td>와이드 없음 → <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a></td></tr>
-    <tr><td>평발 + 과내전</td><td>둘 다 비추</td><td>안정성 6/10, 카본 부담 ↑</td></tr>
-    <tr><td>대회 1년 1회 + 가성비 최우선</td><td><strong>베이퍼플라이 4</strong></td><td>250km / 1,236원/km</td></tr>
-    <tr><td>대회 1년 3회+ + 알파 매니아</td><td>알파 + 베이퍼 분리</td><td>훈련·하프=베이퍼, 풀코스=알파</td></tr>
-    <tr><td>킵툼 세계신기록 신발 소유 욕구</td><td><strong>알파플라이 3</strong></td><td>상징성 — 합리성과 별개의 가치</td></tr>
-    <tr><td>알파플라이 4 한국 출시 대기 (2026-09-28 기준 한국 정가·출시 미확인)</td><td>대기 또는 베이퍼 4</td><td>알파 4 출시 후 알파 3 가격 30~40% 인하 (작성 시점 2026-05 예상)</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — 알파플라이 4 출시 변수</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 카본 슈즈 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> 베이퍼 4 28~30만원 / 알파 3 30만~33만 9천원 → 가성비 차이 명확</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 베이퍼 4 25~27만원 / 알파 3 27~30만원 → 양쪽 모두 할인</li>
-      <li><strong>가을 마라톤 시즌 (9~10월):</strong> 가격 반등. <strong>대회 임박 = 풀가 환원</strong>. 9월 전 구매 권장</li>
-      <li><strong>알파플라이 4 출시 (11월 시카고 마라톤):</strong> <strong>알파 3 가격 폭락 가능성</strong> (24~28만원). 단 사이즈·컬러 제한적</li>
-      <li><strong>12월~2027년 1월:</strong> 알파 3 22~26만원 / 베이퍼 4 24~27만원 → 알파의 가격 메리트 ↑. 단 알파 4가 본격 출시되면 알파 3는 "구형" 인식</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>Sub-3 풀코스 2027년 봄 (춘마·서마) 도전:</strong> 알파 3 — 알파 4 한국 출시 후 가격 인하 시 사냥(작성 시점 예상 22~26만원) 또는 베이퍼 4 정가</li>
-  <li><strong>Sub-3:30 ~ 4 풀코스 도전:</strong> 베이퍼 4 — 지금~여름 시즌오프 25~28만원 사냥</li>
-  <li><strong>알파플라이 4 매니아 — 신상 우선:</strong> 알파 4는 나이키가 공식 발표했지만 한국 정가·출시 상태는 2026-09-28 기준 미확인. 국내 정가가 나온 뒤 결정. 작성 시점에 추정한 한국 풀가 35~40만원은 확인된 값이 아님</li>
-  <li><strong>가성비 최우선:</strong> 알파 4 한국 출시 후 알파 3 가격 인하 사냥 또는 베이퍼 4 시즌오프</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎 통증 이력 + Sub-3</td><td><strong>알파플라이 3</strong></td><td>38mm 스택 + Air Pods 후반 충격 흡수</td></tr>
-    <tr><td>아킬레스건염 이력</td><td><strong>베이퍼플라이 4</strong></td><td>166g 부담 ↓, 실측 드롭은 8.6mm vs 8.5mm로 사실상 동일(공식 6mm vs 8mm)</td></tr>
-    <tr><td>족저근막염</td><td>둘 다 주의 (caution)</td><td>훈련 누적 시 재발 위험, 대회 전용으로만</td></tr>
-    <tr><td>평발 + 과내전</td><td>둘 다 비추 (poor)</td><td>안정성 6/10 — 안정화 분리 필수</td></tr>
-    <tr><td>발볼 4E급</td><td>둘 다 비추 (와이드 없음)</td><td><a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a> (와이드 옵션 표기, 토박스 실측 없음)</td></tr>
-    <tr><td>좌우 비대칭 큼 (러닝 폼)</td><td>알파 단독 비추</td><td>Air Pods 좌우 흔들림 ↑</td></tr>
-    <tr><td>풀코스 후반 다리 죽음 패턴</td><td><strong>알파플라이 3</strong></td><td>Air Pods 후반 보호 결정적</td></tr>
-    <tr><td>레이스 페이스 유지 어려움</td><td><strong>베이퍼플라이 4</strong></td><td>힐 78% 에너지 리턴 가속·유지</td></tr>
-  </tbody>
-</table>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>같은 가격대 카본 슈즈 대안</h2>
-
-<p>나이키 외 카본 슈퍼슈즈도 풀코스 신발 결정 시 검토 가치:</p>
-
-<ul>
-  <li><a href="/shoes/adidas-adios-pro-4">Adidas Adios Pro 4</a> — 29만 9천원, 라이트스트라이크 프로 + 에너지로드. 베이퍼·알파의 핵심 대안</li>
-  <li><a href="/shoes/saucony-endorphin-pro-5">Saucony Endorphin Pro 5</a> — 29만 9천원, PWRRUN HG 폼. 가성비 강함</li>
-  <li><a href="/shoes/asics-metaspeed-sky-plus">Asics Metaspeed Sky+</a> — 32만 9천원, FF Blast Turbo. 토박스 실측은 없고 RunRepeat는 "pretty snug, one-to-one fit"으로 평가 — 와이드 옵션 표기는 있으나 한국 공식몰 미확인</li>
-  <li><a href="/shoes/saucony-endorphin-elite-2">Saucony Endorphin Elite 2</a> — 33만 9천원, 사우코니 최상위 라인</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 3만원 더 주고 알파플라이 가는 게 정답인가요?</h3>
-<p>Sub-3 도전이면 알파, 아니면 베이퍼가 합리적. 단순 가격이 아니라 <strong>"3만원 + 35g 무거움 + 50km 짧은 내구성"의 패키지 비용을 감수할 가치가 있는가</strong>의 질문. 풀코스 후반 다리 죽는 패턴이 있는 Sub-3 러너만 회수 가능.</p>
-
-<h3>Q. 알파플라이 4가 발표됐는데 지금 알파 3 사도 되나요?</h3>
-<p>2027년 봄 마라톤(춘마·서마) 도전이 목표라면 OK. 알파플라이 4는 나이키가 공식 발표했지만 <strong>한국 정가·출시 상태는 2026-09-28 기준 확인되지 않았습니다</strong>. 작성 시점(2026년 5월)에는 알파 4 출시 후 알파 3 가격이 30~40% 내려갈 가능성과 알파 4 한국 풀가 35~40만원을 예상했지만, 둘 다 확인된 값이 아닙니다. 급하지 않다면 알파 4 국내 정가가 나온 뒤 알파 3 가격을 비교해 보세요.</p>
-
-<h3>Q. 하프마라톤에는 알파가 좀 아깝지 않나요?</h3>
-<p>맞음. <strong>하프 21km는 알파의 후반 보호 효과가 아직 본격화되기 전</strong>이라 베이퍼의 가벼움이 훨씬 유리. 알파는 풀코스 35km+ 시점부터 가치가 폭증. Sub-3:30 하프 PB는 베이퍼가 정답.</p>
-
-<h3>Q. 200~250km 수명이 너무 짧지 않나요?</h3>
-<p>카본 슈즈의 본질적 한계. <strong>대회 + 페이스 훈련 전용</strong>으로 쓰면 250km는 풀코스 5~6회 + 페이스 훈련 분량 — 1~2년 충분. 데일리 훈련까지 카본으로 쓰면 1~2개월에 수명 다 함. 데일리는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>·페가수스로 반드시 분리.</p>
-
-<h3>Q. 둘 다 평발·과내전 비추인 이유?</h3>
-<p>카본 슈즈는 38mm/34mm 하이스택 + 가벼운 폼 + 좁은 베이스 조합이라 <strong>좌우 안정성을 희생하고 추진력을 극대화한 구조</strong>. 과내전 러너는 미드솔이 안쪽으로 무너지면서 발목·무릎 부상 위험 ↑. 평발이라도 가벼운 정도면 OK이지만 심한 과내전은 무조건 비추.</p>
-
-<h3>Q. 발볼 넓은 한국 러너는 어떻게 하나요?</h3>
-<p>나이키 카본은 와이드 옵션이 없어 발볼 4E급은 사실상 불가. 대안 후보는 와이드 옵션 표기가 있는 <a href="/shoes/asics-metaspeed-sky-plus">아식스 메타스피드 스카이+</a>지만, 토박스 실측은 없고 RunRepeat는 "pretty snug" 핏으로 평가했습니다(한국 공식몰 와이드 재고 미확인). 사우코니 엔돌핀 프로 5는 토박스가 69.3mm로 좁아 발볼 대안이 아닙니다. 발볼 4E급이면 나이키 카본은 깨끗이 포기.</p>
-
-<h3>Q. 카본 슈즈 처음이면 어디서 시작하나요?</h3>
-<p><strong>슈퍼 트레이너부터</strong>. <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> (25만 9천원, 카본 없는 슈퍼 트레이너) → <a href="/shoes/asics-magic-speed-5">매직 스피드 5</a> (20만 9천원, 카본 + 데일리) → 베이퍼플라이 4 (30만 9천원, 풀 카본). 갑자기 알파플라이로 시작하면 부상 직행.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">90% Sub-3:30 ~ Sub-4 한국 마라토너에게는 베이퍼 4</p>
-    <p><strong>Sub-3 도전 + 풀코스 후반 다리 죽는 패턴</strong>이라면 <a href="/shoes/nike-alphafly-3">알파플라이 3</a> 정가 또는 알파 4 한국 출시 후 가격 인하 사냥. Air Pods + 38mm 스택은 후반 보호의 결정적 차이를 만듦. 단 3만원 + 35g + 50km 짧은 내구성 비용 감수가 필수.</p>
-    <p><strong>Sub-3:10 ~ Sub-4 풀코스 + 하프·10K PB</strong> 도전이라면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>가 거의 무조건 합리적. 166g 가벼움 + 힐 78% 에너지 리턴 + 250km 내구성 + 3만원 절약 — 모든 면에서 우위. 한국 마라토너 대다수가 여기 해당.</p>
-    <p><strong>발볼 4E급·평발·심한 과내전</strong>이라면 둘 다 깨끗이 포기. 발볼이 넓다면 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(발볼 넓음), 평발이 우선이라면 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>(평발 대응, 단 토박스는 좁은 편)가 답.</p>
-    <p><strong>알파플라이 4 매니아라면</strong> 한국 정가·출시 확인(2026-09-28 기준 미확인)을 기다리세요. 알파 3는 그 뒤 가격 인하 사냥용으로만.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/5KqWcsAl" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">베이퍼플라이 4 최저가 →</span>
-    </a>
-    <a href="https://naver.me/xG0ghXsY" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">알파플라이 3 최저가 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 슈즈 비교 — 한국 시장 전반</a></li>
-  <li><a href="/blog/2026-nike-alphafly-4-prototype">알파플라이 4 출시일·가격 — 프로토타입 예측과의 대조</a></li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 비교 — 쿠션화 세대 비교</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발</a></li>
-</ul>
-
-<p><small>출처: RunRepeat 베이퍼플라이 4 랩 데이터(SA 137, 경도 34.7 AC, 에너지 리턴 힐 78%·앞발 75%) + 알파플라이 3 랩 데이터(에너지 리턴 힐 74.9%·앞발 73.9%) + Believe in the Run 양 신발 리뷰 + Road Trail Run / 한국 나이키 공식몰 가격(2026-05-17 기준). 가격은 시즌·세일·알파플라이 4 출시(11월 시카고)에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>RunRepeat 검체는 베이퍼플라이 4 166g, 알파플라이 3 201g입니다.</li><li>낮은 앞코의 베이퍼플라이와 더 높은 앞코의 알파플라이도 개인별 압박 경험은 달랐습니다.</li><li>베이퍼플라이는 확인한 남녀 SKU 정가가 다르고 알파플라이 3의 현재 한국 판매 가격은 미확인입니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p><div class="table-wrap"><table><thead><tr><th>RunRepeat 항목</th><th>베이퍼플라이 4</th><th>알파플라이 3</th></tr></thead><tbody><tr><td>무게</td><td>166g</td><td>201g — Proto 검체</td></tr><tr><td>힐/전족부 스택</td><td>34.1/25.5mm</td><td>38.1/29.6mm</td></tr><tr><td>실측 드롭</td><td>8.6mm</td><td>8.5mm</td></tr><tr><td>힐/전족부 SA</td><td>137/94</td><td>144/113</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>78.1/74.5%</td><td>74.9/73.9%</td></tr><tr><td>폼 경도</td><td>34.7/37.8AC — 층 위치 미확인</td><td>하층 34.5AC·상층 47.2AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>91.7/73.2/27.3mm</td><td>93.3/75.3/33.7mm</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p>
+<h2>35g 차이로 개인 기록을 계산하지 않습니다</h2><p>같은 실험실 검체의 차이는 35g입니다. 그러나 개인 사이즈 한 켤레의 차이나 마라톤 기록 단축분으로 자동 환산할 수 없습니다. 알파플라이 3는 ZoomX·카본과 전족 Air Zoom 유닛을 결합하고, 베이퍼플라이 4는 ZoomX·카본의 더 가벼운 구성을 사용합니다. 무게·구조와 개인이 느끼는 전환은 함께 봐야 합니다.</p><p>DOR 공시 소개는 베이퍼플라이 남성 US9 167g·여성 US8 139g, 36/30mm·6mm이며 알파플라이는 남성 US9 198g·여성 US8 174g, 40/32mm·8mm입니다. 공시와 실측을 나누어 표기했습니다.</p>
+<h2>더 높은 앞코도 모든 발의 압박을 해결하지는 않습니다</h2><p>베이퍼플라이에서 Matt은 남성 US10의 낮은 앞쪽 볼륨·힐 고정·혀 이동을 언급했습니다. Andrea는 평소 여성 US9.5에서 US10으로 올렸지만 네 번째 발가락 위쪽 자극이 남았다고 적었습니다. 알파플라이에서는 Matt의 US10이 짧고 압박이 있었고, Andrea의 여성 US9.5도 짧아 발톱 멍이 생겼습니다. David는 남성 US9.5가 약간 길다고 느꼈습니다. 숫자만으로 정사이즈나 반업을 처방하지 않습니다.</p>
+<h2>마라톤 후반 보호를 보장할 근거는 없습니다</h2><p>알파플라이의 더 큰 SA·스택이 개인의 무릎 보호, 35km 이후 자세 유지, Sub3:30 성공을 보장하지 않습니다. 베이퍼플라이의 더 높은 실험실 에너지 리턴도 누구나 더 빠르게 달린다는 뜻은 아닙니다. 두 모델을 기록 구간이나 착지 형태 하나로 배정한 기존 표와 200/250km 수명 기준은 철회했습니다.</p>
+<h2>한국 가격은 같은 조건으로 확인해야 합니다</h2><p><a href="https://www.nike.com/kr/t/나이키-베이퍼플라이-4-남성-로드-레이싱화-q7ZtUIuq/IM8203-001" target="_blank" rel="noopener noreferrer">베이퍼플라이 남성 IM8203-001</a>은 정가 319,000원·확인시 판매가 255,200원, <a href="https://www.nike.com/kr/t/나이키-베이퍼플라이-4-여성-로드-레이싱화-0oXAqkyJ/HF6412-102" target="_blank" rel="noopener noreferrer">여성 HF6412-102</a>는 정가 309,000원이었습니다. 알파플라이 3의 확인 후보 한국 상품은 현재 상세에 접근하지 못해 현행 가격·재고를 확정하지 않았습니다. 해외 가격을 환산하거나 출시 당시 가격을 현재 가격으로 대신하지 않았습니다. 따라서 두 모델의 공통 가격 차액도 제시하지 않습니다.</p>
+<h2>내가 비교해야 할 세 가지</h2><ol><li>같은 양말·인솔에서 발가락 위쪽과 안쪽 압박이 어디에 생기는지 확인합니다.</li><li>끈을 조였을 때 뒤꿈치가 고정되는지, 혀가 움직여 압박점이 생기는지 봅니다.</li><li>자신이 사용할 주행과 코스에서 전환·코너·노면을 비교합니다. 젖은 노면에 대한 리뷰어 의견이 갈린 부분은 안전 보장으로 확대하지 않습니다.</li></ol><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p>
+<h2>카본 절단 연구를 이 비교의 결론으로 쓰지 않는 이유</h2><p>기존 Vaporfly 4% 연구는 전족부 카본에 여섯 곳을 절단한 특정 실험이며 베이퍼플라이 4와 알파플라이 3의 직접 비교가 아닙니다. 이 결과를 ‘반발력은 전부 폼 덕분’이나 두 모델의 개인 기록 우열로 옮기지 않습니다. 구조와 연구 범위는 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 가이드</a>에서 따로 확인할 수 있습니다.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/nike-vaporfly-4" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/nike-vaporfly-4-review-2025-midfoot-and/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p><p><a href="https://runrepeat.com/nike-alphafly-3" target="_blank" rel="noopener noreferrer">RunRepeat 알파플라이 3</a> · <a href="https://www.doctorsofrunning.com/nike-alphafly-3-review-2024/" target="_blank" rel="noopener noreferrer">DOR 알파플라이 3</a></p>
 `,
+    faqs: [
+      {
+        "question": "서브3는 베이퍼플라이, 서브3:30은 알파플라이인가요?",
+        "answer": "그런 공통 기록 기준은 확인하지 못했습니다. 개인의 압박·고정·전환과 실제 사용 조건을 먼저 비교하세요."
+      },
+      {
+        "question": "알파플라이가 무릎을 더 잘 보호하나요?",
+        "answer": "이번 실측과 소수 리뷰어의 경험으로 질환 예방이나 보호 우위를 확정할 수 없습니다."
+      },
+      {
+        "question": "현재 한국 가격 차이는 얼마인가요?",
+        "answer": "베이퍼플라이 확인 SKU는 남성 319,000원·여성 309,000원이며 알파플라이 3의 현행 한국 가격은 미확인이라 공통 차액을 계산하지 않습니다."
+      }
+    ],
+    updatedAt: "2026-11-09",
   },
   {
     id: "new-balance-1080-v14-vs-v15-comparison",
@@ -10827,17 +10629,26 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-adidas-adios-pro-evo-3-korea-release',
-    slug: '2026-adidas-adios-pro-evo-3-korea-release',
-    title: '아디다스 아디오스 프로 에보 3 한국 발매 11월 2일 | 599,000원·앱 전용, 97g 서브2 신발',
-    description: '런던 마라톤에서 공인 첫 서브2(1:59:30)를 만든 신발이 11월 2일(월) 오전 11시 한국 아디다스 앱에서 나옵니다. 공식몰 표기 599,000원, 미국 $500입니다. 97g 구조와 사도 되는 사람, 구매 전 확인할 점을 정리했습니다.',
-    thumbnail: '/images/blog/2026-adidas-adios-pro-evo-3-korea-release.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-02',
-    updatedAt: '2026-10-30',
-    category: 'news' as const,
+    id: "2026-adidas-adios-pro-evo-3-korea-release",
+    slug: "2026-adidas-adios-pro-evo-3-korea-release",
+    title: "아디다스 아디오스 프로 에보 3 한국 발매 11월 2일 | 599,000원·앱 전용, 97g 서브2 신발",
+    description: "런던 마라톤에서 공인 첫 서브2(1:59:30)를 만든 신발이 11월 2일(월) 오전 11시 한국 아디다스 앱에서 나옵니다. 공식몰 표기 599,000원, 미국 $500입니다. 97g 구조와 사도 되는 사람, 구매 전 확인할 점을 정리했습니다.",
+    thumbnail: "/images/blog/2026-adidas-adios-pro-evo-3-korea-release.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-02",
+    updatedAt: "2026-10-30",
+    category: "news",
     readingTime: 8,
-    tags: ['아디다스', '아디오스 프로 에보 3', '에보 3 발매', '카본화', '슈퍼슈즈', '서브2', '런던마라톤', '세계신기록'],
+    tags: [
+      "아디다스",
+      "아디오스 프로 에보 3",
+      "에보 3 발매",
+      "카본화",
+      "슈퍼슈즈",
+      "서브2",
+      "런던마라톤",
+      "세계신기록"
+    ],
     content: `
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
@@ -10938,8 +10749,8 @@ export const posts_2026_05: BlogPost[] = [
 <div class="callout warning">
   <span class="callout-icon">⚠️</span>
   <div class="callout-body">
-    <p class="callout-title">서브3 미만이라면 Vaporfly 4가 정답</p>
-    <p>냉정하게 말해서, 일반 러너 기준 에보 3가 Vaporfly 4(30만 9천원)나 <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(32만 9천원)보다 90% 이상 빠르게 해주지는 않습니다. 차이는 분당 1~2초 수준. 가격은 2배 가까이고 마일리지는 절반 이하예요.</p>
+    <p class="callout-title">비교 가격·개인 기록 단정 부분 정정</p>
+    <p>2026-11-09 확인한 베이퍼플라이 4 한국 상품은 남성 IM8203-001 정가 319,000원·여성 HF6412-102 정가 309,000원입니다. 서로 다른 상품의 가격을 하나로 묶은 비교와 개인의 분당 기록 차이·보편 수명 비율은 철회했습니다. 에보 3를 포함한 이 글 나머지 내용은 별도 재검증이 남아 있습니다.</p>
   </div>
 </div>
 

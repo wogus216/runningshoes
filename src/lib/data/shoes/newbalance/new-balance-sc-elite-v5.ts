@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-sc-elite-v5',
   slug: 'new-balance-sc-elite-v5',
@@ -15,115 +16,151 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  price: 319000,
-  description: '뉴발란스 최고의 레이싱화로, 100% PEBA FuelCell 폼과 카본 플레이트가 최상의 에너지 리턴을 제공합니다. 마라톤 기록 단축을 목표로 하는 러너에게 추천합니다.',
-  oneliner: '198g+74.8% 에너지, 74.5mm 넓은 토박스',
-  editorComment: 'v4 대비 30g 이상 경량화(198g)로 드디어 경쟁 슈퍼슈즈 수준에 도달했습니다. 100% PEBA FuelCell은 15.2 HA로 매우 부드러우며 힐 74.8% 에너지 리턴은 상위권입니다. 특히 74.5mm 토박스는 Vaporfly 3(67.8mm)보다 훨씬 넓고 Alphafly 3(75.3mm, RunRepeat 실측)에는 0.8mm 못 미치지만 슈퍼슈즈 중 넓은 편이라 발볼 넓은 한국 러너가 레이스 중 발가락 눌림 걱정을 덜 수 있는 드문 슈퍼슈즈입니다(RunRepeat "more room in the toebox than most rivals"). 29만원(할인가)으로 Vaporfly(31만원)보다 저렴하고, 0.61 뛰어난 그립력으로 젖은 노면에서도 안정적입니다. 100% PEBA 폼은 2024년 발표된 연구의 450km 실도로 마모 실험에서 에너지 리턴을 24.6% 잃었습니다(같은 실험에서 EVA는 −10.5%) — 수명 표기가 짧아 보여도 소재의 물리학입니다. 훈련은 데일리에 맡기고 이 신발은 대회와 마지막 자극 훈련에만 쓰세요.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 실측 74.5mm)으로 슈퍼슈즈 중 넓은 축입니다. RunRepeat는 미국 등 일부 시장에만 와이드가 있다고 적었고, 2026-10-23 확인 시 한국 공식몰에는 후속 V6만 있어 V5 와이드 재고는 판매처마다 확인해야 합니다. 319,000원 ÷ 300km = km당 약 1,063원이므로 레이스 전용으로 운용하세요. 비슷한 가격대 카본 슈퍼슈즈로는 메타스피드 스카이+와 아디오스 프로 4를 비교해보세요.',
-  tags: ['레이싱', '카본 플레이트', '엘리트'],
-
+  description: 'PEBA 기반 FuelCell 이중층 · Energy Arc 카본 구조의 SC Elite V5. 실험실 198g·힐/전족부 39.3/28.6mm. 한국 현재 정가 미확인.',
+  oneliner: '198g 실험실 무게 · PEBA 기반 FuelCell 이중층 · Energy Arc 카본',
+  editorComment: "2026-11-09 원문 재확인. 뉴발란스 실운영 한국 공식 검색에서 현재 V6만 9개 확인돼 V5의 현행정가·판매 SKU·성별·폭·재고는 미확인입니다. V6가격과 QA·개발호스트 캐시를 V5현재 상품 증거로 사용하지 않습니다. 미노출을 단종 확정으로 해석하지 않습니다. DOR 소개 남성 213g(US9.5)·여성 165g(US7),40/32mm·8mm. RR198g·39.3/28.6mm·10.7mm 와 성별·사이즈·공시조건을 구분합니다. RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다. DOR Matt(남성 US10)은 길이가 맞고 낮은 볼륨이지만 앞쪽은 넓으며 힐·중족 고정이 좋았다고 느꼈습니다. 긴 템포·크루즈에 선호했지만 좁은 뒤쪽과 뻣뻣한 앞쪽을 한계로 봤습니다. Andrea(여성 US9.5)는 앞쪽과 고정이 편했지만 완만한 로커·안쪽 전족 플레어 때문에 추진감이 적다고 느꼈습니다. 개인별 기록 비교를 통제된 성능 개선율로 인용하지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 74.5mm·높이 26.4mm 를 근거로 레이스 후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '레이싱',
+    '카본 플레이트',
+    '엘리트',
+  ],
   specs: {
     weight: 198,
     cushioning: 9,
     responsiveness: 9,
     stability: 6,
-    drop: 11,
-    durability: 300,
+    drop: 10.7,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 39,
-      forefoot: 29,
+      heel: 39.3,
+      forefoot: 28.6,
     },
-    drop: 11,
+    drop: 10.7,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'FuelCell (100% PEBA)',
-    optimalPace: '3:30-4:30 min/km',
+    plateType: 'Energy Arc full-length carbon plate',
+    midsoleType: 'PEBA 기반 FuelCell 이중층 · Energy Arc 카본',
   },
-
   detailedSpecs: {
-    weight: '198g (RunRepeat 실측, 남성 US 9 기준)',
-    stackHeight: '힐 39.3mm / 포어풋 28.6mm (실측)',
-    drop: '10.7mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'FuelCell (100% PEBA) + 풀렝스 카본 플레이트',
-    plate: '풀렝스 카본 플레이트',
-    outsole: '경량 고무 아웃솔',
-    upper: '울트라 라이트 메쉬',
-    width: '표준 — 토박스 74.5mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 1.3mm 넓음), 최대폭 93.8mm(평균 95.2mm). 랩 본문 "still wider than the average running shoe", "more room in the toebox than most rivals", 와이드는 "only in select markets like the US". (2026-10-23 한국 공식몰 재확인: 모델 미등재, 후속 V6만 판매 — 해외 폭 옵션만 확인)',
-    durability: '300km+',
-    price: '319,000원',
-    costPerKm: '약 ₩1,063/km (300km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: "198g (RunRepeat 공시 검체 정책:남성 US9). DOR 소개 남성 213g(US9.5)·여성 165g(US7),40/32mm·8mm. RR198g·39.3/28.6mm·10.7mm 와 성별·사이즈·공시조건을 구분합니다.",
+    stackHeight: '39.3/28.6mm (RunRepeat 힐/전족부 실측)',
+    drop: '10.7mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "PEBA 기반 FuelCell 이중층 · Energy Arc 카본 · 33.8 AC(Asker C) · 힐/전족부 SA 144/112 · 에너지 리턴 74.8/74.9%. RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다.",
+    plate: '두 폼층 사이의 Energy Arc 카본 플레이트. FuelCell이라는 이름만으로 Rebel·Trainer와 같은 배합이라고 보지 않습니다.',
+    width: "RunRepeat 내부 최광폭 93.8mm / 엄지 부위 74.5mm / 엄지 높이 26.4mm. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 74.5mm·높이 26.4mm 를 근거로 레이스 후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "뉴발란스 실운영 한국 공식 검색에서 현재 V6만 9개 확인돼 V5의 현행정가·판매 SKU·성별·폭·재고는 미확인입니다. V6가격과 QA·개발호스트 캐시를 V5현재 상품 증거로 사용하지 않습니다. 미노출을 단종 확정으로 해석하지 않습니다.",
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 319000,
-    streetPrice: 299000,
-    costPerKm: 1063,
     valueRating: 7,
     priceTier: 'super-premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
-    valueAdvantages: ['v4 대비 30g 이상 경량화', '개선된 플레이트 곡률', '뛰어난 그립력', '경쟁작 대비 넓은 토박스'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'adidas-adios-pro-4',
+    ],
   },
-
   targetUsers: {
-    recommended: ['뉴발란스 팬 러너', '올드스쿨 레이싱 플랫 느낌을 원하는 러너', '슈퍼슈즈 중 넓은 토박스를 원하는 러너', '이전 버전이 무거웠던 마라토너'],
-    notRecommended: ['안정성이 필요한 러너', '최경량을 원하는 러너', '과내전 러너'],
+    recommended: [
+      'Energy Arc카본과 낮은로커 전환을 비교하려는 러너',
+      "실제 매물의 세대·앞쪽 볼륨·힐 고정을 확인하려는 러너",
+    ],
+    notRecommended: [
+      '직접 착화에서 뒤쪽고정·앞쪽굽힘이 맞지 않는 경우',
+      "V5와 V6상품 정보가 혼용된 매물",
+    ],
   },
-
   features: [
-    '힐 144 SA 충격흡수 + 에너지 리턴 힐 74.8%·전족부 74.9% (RunRepeat Lab Test)',
-    '15.2 HA 울트라소프트 100% PEBA FuelCell 폼',
-    '198g 경량 설계 - v4 대비 30g+ 감량',
-    '새로운 Energy Arc 플레이트 곡률로 빠른 전환',
-    '0.61 뛰어난 그립력 - 젖은 노면에서도 안정적',
-    '토박스 74.5mm(RunRepeat 실측, 랩 평균 73.2mm) - 슈퍼슈즈 중 여유로운 핏',
+    'PEBA 기반 FuelCell 이중층 · Energy Arc 카본',
+    '198g · 힐/전족부 39.3/28.6mm (RunRepeat)',
+    "힐/전족부 SA 144/112 · 에너지 리턴 74.8/74.9% (RunRepeat). RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다.",
+    "한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 74.5mm·높이 26.4mm 를 근거로 레이스 후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다.",
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 92,
-      text: '서브3 목표 마라토너를 위한 뉴발란스 최고의 레이싱화입니다. v4 대비 30g 이상 경량화된 198g에 100% PEBA FuelCell(HA 15.2) 폼과 카본 플레이트로 SA 144 충격흡수와 힐 74.8% 에너지 리턴을 달성했습니다. 특히 74.5mm 토박스는 슈퍼슈즈 중 넓은 축이라, 발볼 넓은 한국 러너도 레이스 중 발가락 눌림 없이 뛸 수 있습니다. 39mm 힐 스택이 무릎 충격을 잡아주며, 0.61 그립력으로 젖은 노면에서도 안정적입니다. 29만원(할인가)으로 베이퍼플라이(31만원)보다 가성비가 좋고, 300km 내구성으로 풀마라톤 3~4회 사용 가능합니다. 단, 최상위 슈퍼슈즈와 비교하면 반발력이 약간 부족하므로 서브3 이하 엘리트에게는 다른 선택이 나을 수 있습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5',
+      text: "198g 과 SA 144/112·에너지 리턴 74.8/74.9% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 74.5mm·높이 26.4mm 를 근거로 레이스 후반 모든 넓은 발에 압박이 없다고 보장하지 않습니다.",
     },
     {
-        userType: '세대 비교 — v4에서 넘어오는 경우',
-        text: '전작 v4에서 가장 크게 바뀐 지점은 무게입니다. 230g에서 198g으로 약 30g 줄어 후반 구간 부담이 눈에 띄게 달라지는 폭이고, 에너지 리턴 힐 74.8%로 30km 이후 페이스 유지에 유리합니다. 힐 39mm 스택의 100% PEBA라 반발과 충격 흡수를 함께 가져갑니다. 다만 이 모델의 진짜 차별점은 토박스 74.5mm입니다 — 베이퍼플라이 3(67.8mm)과 비교하면 7mm 가까이 넓어, 레이스 후반 발이 부었을 때 새끼발가락 압박이 생기는 문제에서 자유롭습니다. 발볼이 넓어 슈퍼슈즈 선택지가 좁았다면 우선 후보입니다. 내구성 300km 기준 풀코스 3회 정도가 현실적 사용 범위입니다.',
-      },
-    {
-        userType: '예상 적합 — 발볼이 넓은 첫 슈퍼슈즈 선택',
-        text: '첫 카본 레이서를 고르면서 발볼이 걸림돌이던 러너에게 특히 맞는 모델입니다. 토박스 74.5mm로 최상위 레이서 중에서는 넓은 축이라, 좁은 라스트 때문에 슈퍼슈즈를 포기했던 경우의 실질적 대안이 됩니다. 198g의 무게에 100% PEBA 폼(HA 15.2), 에너지 리턴 힐 74.8%로 전족부 전환에서 반발이 뚜렷하고, 힐 39mm 스택이라 충격 흡수도 확보한 구성입니다. 다만 내구성 300km 수준이라 일상 훈련까지 겸하기는 어렵고, 레이스와 포인트 훈련으로 용도를 한정하는 운용이 전제입니다.',
-      },
-    {
-        userType: '비용 관점 — 최상위 레이서 중 진입 가격 비교',
-        text: '최상위 레이서군에서 가격만 놓고 보면 상대적으로 낮은 축입니다. 할인가 29만원 초반대 기준으로 베이퍼플라이 3(31만원)·알파플라이 3(33만 9천원)보다 낮고, 예상 수명 250~350km(추정) 기준 km당 약 910~1,280원입니다. 절대 금액은 크지만 대회 전용으로 한정하면 풀코스 3~4회가 사용 범위라 레이스당 비용으로 환산해 판단하는 편이 현실적입니다. 성능은 198g의 무게에 힐 39mm 스택의 100% PEBA, 에너지 리턴 힐 74.8%로 이 등급에 부족함이 없습니다. 여기에 토박스 74.5mm로 슈퍼슈즈 중 넓은 축이라, 발볼 때문에 선택지가 없던 경우에는 가격 이전에 이 점이 결정적입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fuelcell-supercomp-elite-v5/',
+      text: "DOR Matt(남성 US10)은 길이가 맞고 낮은 볼륨이지만 앞쪽은 넓으며 힐·중족 고정이 좋았다고 느꼈습니다. 긴 템포·크루즈에 선호했지만 좁은 뒤쪽과 뻣뻣한 앞쪽을 한계로 봤습니다. Andrea(여성 US9.5)는 앞쪽과 고정이 편했지만 완만한 로커·안쪽 전족 플레어 때문에 추진감이 적다고 느꼈습니다. 개인별 기록 비교를 통제된 성능 개선율로 인용하지 않습니다.",
+    },
   ],
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'adidas-adios-pro-4',
+  ],
   relatedPosts: [
-    { slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026', title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5' },
-    { slug: 'new-balance-sc-elite-v5-review', title: 'SC Elite V5 심층 후기' },
-    { slug: 'nike-vaporfly-4-vs-alphafly-3-comparison', title: '베이퍼플라이4 vs 알파플라이3 — 카본 레이서' },
-    { slug: 'new-balance-running-shoes-lineup-tier-guide-2026', title: '뉴발란스 러닝화 라인업 — 모델·세대·폭' },
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'nike-alphafly-3-vs-asics-metaspeed-sky-vs-nb-sc-elite-v5-carbon-racer-2026',
+      title: '카본 3파전 — 알파플라이 3 vs 메타스카이+ vs SC 엘리트 v5',
+    },
+    {
+      slug: 'new-balance-sc-elite-v5-review',
+      title: 'SC Elite V5 심층 후기',
+    },
+    {
+      slug: 'nike-vaporfly-4-vs-alphafly-3-comparison',
+      title: "베이퍼플라이 4 vs 알파플라이 3 — 카본 레이서",
+    },
+    {
+      slug: 'new-balance-running-shoes-lineup-tier-guide-2026',
+      title: '뉴발란스 러닝화 라인업 — 모델·세대·폭',
+    },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5EC4W6S9' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YSGPBv9U' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/5EC4W6S9',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YSGPBv9U',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '뉴발란스 한국 실운영 검색 범위',
+        url: 'https://www.nbkorea.com/product/searchResult.action?schWord=SC%20Elite%20V5',
+        note: "V5검색에 V6만 9개. V5의 현재한국상품조건 미확인.",
+      },
+      {
+        label: 'RunRepeat SC Elite V5',
+        url: 'https://runrepeat.com/new-balance-fuel-cell-super-comp-elite-v-5',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 198g · 39.3/28.6mm · 드롭 10.7mm. SA 144/112 · ER 74.8/74.9%. RR 주폼 33.8AC·보조 31.7AC 와 DOR 의 단단한 전체 주행감은 다른 지표입니다. RR16.2N굽힘과 리뷰어의 무유연성 체감도 다릅니다. 제조사의 100%PEBA주장은 DOR 에 인용된 설명이며 다른 폼 450km연구를 이 모델 300km수명으로 옮기지 않습니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-fuelcell-supercomp-elite-v5/',
+        note: "DOR 소개 남성 213g(US9.5)·여성 165g(US7),40/32mm·8mm. RR198g·39.3/28.6mm·10.7mm 와 성별·사이즈·공시조건을 구분합니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };

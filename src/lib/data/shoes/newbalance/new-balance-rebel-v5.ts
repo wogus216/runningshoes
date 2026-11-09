@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-rebel-v5',
   slug: 'new-balance-rebel-v5',
@@ -16,107 +17,136 @@ export const shoe: Shoe = {
   category: '데일리',
   rating: 4,
   price: 219000,
-  description: 'FuelCell 폼을 사용한 경량 데일리 트레이너로, PEBA+EVA 블렌드가 반발력과 쿠셔닝의 균형을 제공합니다. 빠른 페이스의 훈련에 적합합니다.',
-  oneliner: '220g에 11.5 HA 소프트, v4 단점 완전 개선',
-  editorComment: 'v4에서 지적됐던 짧은 혀, 힐 칼라 자극 문제를 완벽히 해결한 레벨 v5. 220g 경량에 11.5 HA 울트라소프트 FuelCell이 Saucony Kinvara 16(27.5 HA)보다 훨씬 부드러운 착화감을 제공합니다. 145 SA 힐 충격흡수는 전작 대비 크게 향상되었고, 토박스도 75.0mm로 넓은 편입니다(RunRepeat 실측, 같은 랩 평균 73.2mm). 21만 9천원으로 입문자부터 서브4 러너까지 활용 가능한 만능 데일리화입니다.\n\n사이즈·구매 가이드: 토박스가 75.0mm로 랩 평균보다 넓고(RunRepeat "roomy toebox"), 한국 공식몰에 남성 2E 와이드가 있어 발볼이 아주 넓은 러너는 2E를 고르면 됩니다(여성은 D만). 정가는 219,000원입니다. 비슷한 성격의 대안으로는 마하 6(더 높은 스택)과 킨바라 16(더 탄탄한 반발)을 비교해보세요.',
-  tags: ['데일리', '경량', '반발력'],
-
+  description: "PEBA·EVA FuelCell 블렌드 · 비플레이트 구조의 레벨 V5. 실험실 220g·힐/전족부 33/26.7mm. 한국 확인 정가 219,000원.",
+  oneliner: '220g 실험실 무게 · PEBA·EVA FuelCell 블렌드 · 비플레이트',
+  editorComment: "2026-11-09 원문 재확인. 한국 실운영 공식 여성 D NBPFGF723K Black·남성 2E NBPFGF722L Black 정가 219,000원. 여성 230/235/240/250mm 선택 가능,225/245/255mm 품절이었고 확인한남성색 250~290mm 는 모두품절이었습니다. 남성 D·여성 B의 현재 상품은 미확인입니다. SCRebelV1과 섞지 않습니다. 한국공시 남성 225g·여성 180g 은 측정 사이즈 미공시입니다. DOR 소개 같은 무게는 남성 US9.5·여성 US7,35/29mm·6mm 이며 RR220g·33.0/26.7mm·6.3mm 와 구분합니다. RR25.9AC 는 현재경도이며 기존 11.5HA 와 직접비교하지 않습니다. 한국공식 스택증가 2.5mm 와 DOR Matt의 5mm 문구가 충돌합니다. RR 동일리뷰의 젖은길부정서술과 접지절 0.53의긍정설명도 보존하며 모든노면 안전을 보장하지 않습니다. DOR Matt(남성 US10)은 앞쪽은 여유있지만 낮은발등 중족부의 안쪽압박·거싯마찰을 느꼈습니다. Andrea(여성 US9.5)는 앞쪽이 편했지만 중족이 넓어 코너에서 발이 움직였다고 적었습니다. Nathan은 길이·앞발·힐 고정과 여러훈련 활용을 긍정적으로 평가했고 Matt·Andrea는 빠르거나 피로한긴주행에서 한계를 느꼈습니다. 개인별 용도를 하나의 최적 페이스로 합치지 않습니다. 한국남성 2E·여성 D 상품을 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭 96.1mm·엄지 75.0mm·높이 27.9mm 와 개인의 발등·힐 고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '데일리',
+    '경량',
+    '반발력',
+  ],
   specs: {
     weight: 220,
     cushioning: 9,
     responsiveness: 8,
     stability: 6,
-    drop: 6,
-    durability: 500,
+    drop: 6.3,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 33,
-      forefoot: 27,
+      forefoot: 26.7,
     },
-    drop: 6,
+    drop: 6.3,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'FuelCell (PEBA + EVA)',
-    optimalPace: '4:30-6:00 min/km',
+    midsoleType: 'PEBA·EVA FuelCell 블렌드 · 비플레이트',
   },
-
   detailedSpecs: {
-    weight: '220g (RunRepeat 실측, 남성 US 9 기준)',
-    stackHeight: '힐 33.0mm / 포어풋 26.7mm (실측)',
-    drop: '6.3mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'FuelCell (PEBA + EVA 블렌드)',
-    plate: '없음',
-    outsole: '고무 아웃솔',
-    upper: '엔지니어드 메쉬',
-    width: '넓은 편 — 토박스 75.0mm(RunRepeat 실측, 엄지 부위 기준; 같은 랩 평균 73.2mm보다 1.8mm 넓음). 랩 본문 "At 75.0 mm, there\'s generous space up front", 요약 "roomy toebox". 한국 공식몰(nbkorea.com, 2026-10-20) 남성 D·2E / 여성 D',
-    durability: '500km+',
-    price: '219,000원 (뉴발란스 코리아 공식몰 정가, 2026-10-20 확인)',
-    costPerKm: '약 ₩438/km (500km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: "220g (RunRepeat 공시 검체 정책:남성 US9). 한국공시 남성 225g·여성 180g 은 측정 사이즈 미공시입니다. DOR 소개 같은 무게는 남성 US9.5·여성 US7,35/29mm·6mm 이며 RR220g·33.0/26.7mm·6.3mm 와 구분합니다.",
+    stackHeight: '33/26.7mm (RunRepeat 힐/전족부 실측)',
+    drop: '6.3mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "PEBA·EVA FuelCell 블렌드 · 비플레이트 · 25.9 AC(Asker C) · 힐/전족부 SA 145/105 · 에너지 리턴 59.8/67.3%. RR25.9AC 는 현재경도이며 기존 11.5HA 와 직접비교하지 않습니다. 한국공식 스택증가 2.5mm 와 DOR Matt의 5mm 문구가 충돌합니다. RR 동일리뷰의 젖은길부정서술과 접지절 0.53의긍정설명도 보존하며 모든노면 안전을 보장하지 않습니다.",
+    plate: "RR·DOR 은 비플레이트 유연한 중립형으로 설명합니다. 다른 FuelCell모델의 카본을 전용하지 않습니다.",
+    width: "RunRepeat 내부 최광폭 96.1mm / 엄지 부위 75mm / 엄지 높이 27.9mm. 한국남성 2E·여성 D 상품을 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭 96.1mm·엄지 75.0mm·높이 27.9mm 와 개인의 발등·힐 고정을 함께 확인하세요.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "한국 실운영 공식 여성 D NBPFGF723K Black·남성 2E NBPFGF722L Black 정가 219,000원. 여성 230/235/240/250mm 선택 가능,225/245/255mm 품절이었고 확인한남성색 250~290mm 는 모두품절이었습니다. 남성 D·여성 B의 현재 상품은 미확인입니다. SCRebelV1과 섞지 않습니다.",
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'wide',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
+    wideOptions: true,
   },
-
   priceAnalysis: {
     msrp: 219000,
-    streetPrice: 219000,
-    costPerKm: 438,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['saucony-kinvara-16', 'hoka-mach-6', 'asics-novablast-5'],
-    valueAdvantages: ['v4 대비 모든 단점 개선', '경량 + 소프트 폼의 조화'],
+    alternatives: [
+      'saucony-kinvara-16',
+      'hoka-mach-6',
+      'asics-novablast-5',
+    ],
   },
-
   targetUsers: {
-    recommended: ['중족부/전족부 착지 러너', '빠르고 가벼운 러닝을 원하는 러너', '데일리+템포 겸용 신발을 찾는 러너', 'v4의 힐 칼라 문제로 고생한 러너'],
-    notRecommended: ['최대 반발력을 원하는 러너', '젖은 노면/비포장에서 달리는 러너', '맥시멀 쿠셔닝을 원하는 러너'],
+    recommended: [
+      "비플레이트 FuelCell블렌드의 유연한 전환을 비교하려는 러너",
+      "한국 2E·D실물의 발등 압박·코너 고정을 확인하려는 러너",
+    ],
+    notRecommended: [
+      "직접 착화에서 중족 압박·발 움직임이 해결되지 않는 경우",
+      "판매규격과 실제 색상 재고를 확인하지 못한 경우",
+    ],
   },
-
   features: [
-    '힐 145 SA 충격흡수 - 전작 대비 크게 개선 (RunRepeat Lab Test)',
-    '11.5 HA 울트라소프트 FuelCell 폼 - 구름 같은 착화감',
-    '220g 경량 설계로 데일리+템포 겸용 가능',
-    'v4의 짧은 혀/힐 칼라 자극 문제 완전 해결',
-    '토박스 75.0mm(랩 평균 73.2mm)로 발가락 여유 공간 확보, 한국 공식몰 남성 2E 와이드',
-    '에너지 리턴 전족부 67.3% (RunRepeat 실측)',
+    'PEBA·EVA FuelCell 블렌드 · 비플레이트',
+    '220g · 힐/전족부 33/26.7mm (RunRepeat)',
+    "힐/전족부 SA 145/105 · 에너지 리턴 59.8/67.3% (RunRepeat). RR25.9AC 는 현재경도이며 기존 11.5HA 와 직접비교하지 않습니다. 한국공식 스택증가 2.5mm 와 DOR Matt의 5mm 문구가 충돌합니다. RR 동일리뷰의 젖은길부정서술과 접지절 0.53의긍정설명도 보존하며 모든노면 안전을 보장하지 않습니다.",
+    "한국남성 2E·여성 D 상품을 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭 96.1mm·엄지 75.0mm·높이 27.9mm 와 개인의 발등·힐 고정을 함께 확인하세요.",
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 91,
-      text: '가성비 최강 데일리/템포 겸용 러닝화입니다. 21만 9천원에 220g 경량, HA 11.5 울트라소프트 FuelCell 폼, SA 145 충격흡수를 모두 갖췄습니다. "초보도 신을 수 있나요?" 물론입니다! 33mm 힐 스택과 6mm 드롭이 무릎 충격을 잡아주면서도 반발력이 좋아 실력이 늘어도 계속 활용할 수 있습니다. 토박스가 75.0mm로 랩 평균(73.2mm)보다 넓어 발볼 넓은 한국 러너에게 유리하고, 한국 공식몰에 남성 2E 와이드도 있습니다. v4의 힐 자극 문제도 개선되었습니다. 정가 219,000원으로 경량 데일리 중 저렴한 편은 아니지만, 평발 러너에게도 쿠셔닝이 충분해 입문자부터 서브4 목표 러너까지 폭넓게 추천합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fuel-cell-rebel-v-5',
+      text: "220g 과 SA 145/105·에너지 리턴 59.8/67.3% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR25.9AC 는 현재경도이며 기존 11.5HA 와 직접비교하지 않습니다. 한국공식 스택증가 2.5mm 와 DOR Matt의 5mm 문구가 충돌합니다. RR 동일리뷰의 젖은길부정서술과 접지절 0.53의긍정설명도 보존하며 모든노면 안전을 보장하지 않습니다. 한국남성 2E·여성 D 상품을 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭 96.1mm·엄지 75.0mm·높이 27.9mm 와 개인의 발등·힐 고정을 함께 확인하세요.",
     },
     {
-        userType: '세대 비교 — v4의 힐 까짐이 해소된 세대',
-        text: '전작 v4에서 지적되던 힐 칼라 쓸림이 개선된 세대입니다. 칼라 마감이 부드러워져 초기 착용에서 뒤꿈치가 까지는 문제가 줄었습니다. 220g으로 가볍고 토박스가 75.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 넓고 남성 2E 와이드도 있어 발볼 넓은 러너에게 유리합니다. HA 11.5의 울트라소프트 FuelCell 폼에 힐 33mm 스택이라, 6분30초/km 수준의 느린 페이스에서도 쿠션이 충분합니다. 스피드 트레이너 성격이지만 폼이 부드러워 입문 단계에서도 무리가 없고, 정가는 219,000원입니다.',
-      },
-    {
-        userType: '모델 선택 — 레벨 v5 vs 킨바라 16',
-        text: '경량 스피드 트레이너 두 모델은 폼 경도에서 갈립니다. 레벨 v5는 HA 11.5로 부드럽고, 킨바라 16은 HA 27.5로 더 탄탄합니다. 반발이 즉각적인 쪽을 원하면 킨바라, 착지 충격을 덜 받고 싶으면 레벨입니다. 한국 러너 기준으로는 토박스 75.0mm의 레벨 쪽이 발볼 여유가 크다는 점이 실질적인 차이입니다. 220g에 힐 33mm 스택으로 인터벌과 가벼운 템포런을 겸하기에 맞고, SA 145로 반복 착지에서도 충격이 과하지 않습니다. 레벨 v5 정가는 219,000원(뉴발란스 코리아 공식몰)입니다.',
-      },
-    {
-        userType: '비용 관점 — 경량 데일리 3종 가격 비교',
-        text: '정가 219,000원(2026-10-20 뉴발란스 코리아 공식몰)으로 경량 데일리군에서 저렴한 축은 아닙니다. 대신 220g의 무게에 토박스 75.0mm(랩 평균 73.2mm)로 넓고, 남성은 2E 와이드까지 있어 발볼 대응 폭이 넓은 점이 실질적인 이점입니다. 힐 33mm 스택의 HA 11.5 FuelCell 폼이라 6분/km 데일리부터 4분40초 템포까지 한 켤레로 커버합니다. km당 약 438원(500km 기준)입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fuelcell-rebel-v5-review/',
+      text: "DOR Matt(남성 US10)은 앞쪽은 여유있지만 낮은발등 중족부의 안쪽압박·거싯마찰을 느꼈습니다. Andrea(여성 US9.5)는 앞쪽이 편했지만 중족이 넓어 코너에서 발이 움직였다고 적었습니다. Nathan은 길이·앞발·힐 고정과 여러훈련 활용을 긍정적으로 평가했고 Matt·Andrea는 빠르거나 피로한긴주행에서 한계를 느꼈습니다. 개인별 용도를 하나의 최적 페이스로 합치지 않습니다.",
+    },
   ],
-
-  similarShoes: ['hoka-mach-6', 'saucony-kinvara-16', 'asics-novablast-5'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5dA8aEyH' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5YR0Aqh3Y' }],
+  similarShoes: [
+    'hoka-mach-6',
+    'saucony-kinvara-16',
+    'asics-novablast-5',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/5dA8aEyH',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YR0Aqh3Y',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '뉴발란스 한국 women · NBPFGF723K · D(약간넓음)',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF723K&colCode=19&cIdx=',
+        note: "확인 SKU 정가 219000원. 색상·규격·사이즈별상태는 본문조건 참조.",
+      },
+      {
+        label: '뉴발란스 한국 men · NBPFGF722L · 2E(약간넓음)',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF722L&colCode=19&cIdx=',
+        note: "확인 SKU 정가 219000원. 색상·규격·사이즈별상태는 본문조건 참조.",
+      },
+      {
+        label: 'RunRepeat 레벨 V5',
+        url: 'https://runrepeat.com/new-balance-fuel-cell-rebel-v-5',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 220g · 33/26.7mm · 드롭 6.3mm. SA 145/105 · ER 59.8/67.3%. RR25.9AC 는 현재경도이며 기존 11.5HA 와 직접비교하지 않습니다. 한국공식 스택증가 2.5mm 와 DOR Matt의 5mm 문구가 충돌합니다. RR 동일리뷰의 젖은길부정서술과 접지절 0.53의긍정설명도 보존하며 모든노면 안전을 보장하지 않습니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-fuelcell-rebel-v5-review/',
+        note: "한국공시 남성 225g·여성 180g 은 측정 사이즈 미공시입니다. DOR 소개 같은 무게는 남성 US9.5·여성 US7,35/29mm·6mm 이며 RR220g·33.0/26.7mm·6.3mm 와 구분합니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };

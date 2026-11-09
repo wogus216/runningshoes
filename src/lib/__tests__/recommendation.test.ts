@@ -236,11 +236,15 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
   });
 
   it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
-    const racer = shoes.find((s) => s.category === "레이싱" && (s.specs?.cushioning ?? 0) >= 9);
-    expect(racer).toBeDefined();
+    const source = shoes.find((s) => s.category === "레이싱" && (s.specs?.cushioning ?? 0) >= 9);
+    expect(source).toBeDefined();
+    // 가격 필터와 독립적으로 쿠션 가점을 검사하는 테스트 입력값이다.
+    const racer = { ...source!, price: 300000 };
     const profile: UserProfile = { ...recoverySlow, purpose: "racing" };
-    const slow = recommendShoes([racer!], profile)[0];
-    const medium = recommendShoes([racer!], { ...profile, targetPace: "medium" })[0];
+    const slow = recommendShoes([racer], profile)[0];
+    const medium = recommendShoes([racer], { ...profile, targetPace: "medium" })[0];
+    expect(slow).toBeDefined();
+    expect(medium).toBeDefined();
     // 느린 페이스에서만 붙던 +8(쿠션 9↑)·+10(쿠션 10)이 없으므로 느린 페이스 점수가 중간 페이스보다 8 이상 높지 않다
     expect(slow.rawScore - medium.rawScore).toBeLessThan(8);
   });
@@ -306,4 +310,3 @@ describe("느린 페이스에서 느린·회복 러닝 비추천 신발은 감�
     expect(rawScoreOf(base!, racing)! - rawScoreOf(flagged, racing)!).toBeLessThan(20);
   });
 });
-

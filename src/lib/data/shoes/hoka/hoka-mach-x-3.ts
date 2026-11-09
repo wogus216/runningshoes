@@ -1,105 +1,145 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'hoka-mach-x-3',
   slug: 'hoka-mach-x-3',
   brand: 'Hoka',
   name: '마하 X 3',
   image: '/images/shoes/hoka/machX3/side.webp',
-  images: ['/images/shoes/hoka/machX3/side.webp', '/images/shoes/hoka/machX3/front.webp', '/images/shoes/hoka/machX3/top.webp', '/images/shoes/hoka/machX3/outsole.webp'],
+  images: [
+    '/images/shoes/hoka/machX3/side.webp',
+    '/images/shoes/hoka/machX3/front.webp',
+    '/images/shoes/hoka/machX3/top.webp',
+    '/images/shoes/hoka/machX3/outsole.webp',
+  ],
   category: '쿠션화',
   rating: 5,
-  price: 249000,
-  description: '레이싱과 훈련의 경계를 넘나드는 슈퍼트레이너입니다. PEBA 폼과 Pebax 플레이트로 레이싱화 수준의 반응성을 제공하면서도 내구성이 뛰어납니다.',
-  oneliner: 'PEBA+Pebax, 69.3% 전족부 에너지',
-  editorComment: '마하 X 3는 264g에 PEBA+Supercritical EVA 하이브리드 폼과 Pebax 플레이트를 탑재한 슈퍼트레이너입니다. RunRepeat 실측 전족부 69.3% 에너지 리턴은 SC Trainer v3(전족부 64.5%)보다 높고, 43mm 맥시멀 스택으로 템포런/하프마라톤에 적합합니다. 24만 9천원은 로켓 X 3(29만 9천원)보다 5만원 저렴하며 훈련 겸용이 가능합니다. v2의 힐 물집 문제가 대부분 개선되어 힐스트라이커도 편하지만, 70.8mm narrow 토박스와 와이드 옵션 부재는 발볼 넓은 러너에게 큰 단점입니다.\n\n사이즈·구매 가이드: RunRepeat 측정 토박스가 70.8mm(평균 73.2mm)로 좁은 테이퍼형이고 와이드 옵션이 없어, 발볼 넓은 러너는 반드시 매장에서 시착 후 구매하세요. 정가 249,000원에 예상 수명 300~500km(추정) 기준 km당 약 500~830원이며, 비슷한 슈퍼트레이너 용도로 슈퍼블라스트 2나 SC Trainer V3가 대안입니다.',
-  tags: ['슈퍼트레이너', 'PEBA 폼', 'Pebax 플레이트'],
-
+  description: 'PEBA 상층 · EVA 하층 · Pebax 플레이트 구조의 마하 X 3. 실험실 264g·힐/전족부 42.9/33.4mm. 한국 현재 정가 미확인.',
+  oneliner: '264g 실험실 무게 · PEBA 상층 · EVA 하층 · Pebax 플레이트',
+  editorComment: "2026-11-09 원문 재확인. 호카 코리아 공식 링크트리 연결스토어의 여성마하 X3와이드 제목 1168872-NNRS 상품은 할인전 249,000원·표시판매 99,600원·품절이었습니다. 같은상세의상품정보에는 1162410-BCQ로 적혀 정확 SKU 일치가 미해결입니다. 따라서 일반모델정가·확정와이드 필드는 비워두고, 남성현재 상품·전색상재고도 미확인입니다. DOR 소개 남성 289g(US9)·여성 244g(US8),46/41mm·드롭 5mm. RR 브랜드메타는남 252g·여 215g 과 44/39·42/37mm 로 적고, RR 실측 264g·42.9/33.4mm·9.5mm 와 차이가 있어 출처조건을 구분합니다. RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다. DOR David(남성 US9.5)는 길이가 맞고 힐이 약간 좁으며 발등 볼륨이 밀착됐다고 느꼈습니다. Bach은 길이·앞쪽 공간이 맞고 중족 밀착이 주행 후 완화됐다고 평가했습니다. David는 부드러운 느낌, Bach은 단단한 느낌을 적었고 급한 내리막의 높은 중립 플랫폼과 전방 전환을 한계로 지적했습니다. 한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '슈퍼트레이너',
+    'PEBA 폼',
+    'Pebax 플레이트',
+  ],
   specs: {
     weight: 264,
     cushioning: 10,
     responsiveness: 8,
     stability: 7,
-    drop: 10,
-    durability: 400, // 2026-10-23: detailedSpecs.durability 표기(400km)에 맞춤 — 종전 500
+    drop: 9.5,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 43,
-      forefoot: 33,
+      heel: 42.9,
+      forefoot: 33.4,
     },
-    drop: 10,
+    drop: 9.5,
     carbonPlate: false,
-    plateType: 'Pebax',
-    midsoleType: 'PEBA + Supercritical EVA',
-    optimalPace: '4:00-5:30 min/km',
+    plateType: 'Pebax plate (non-carbon)',
+    midsoleType: 'PEBA 상층 · EVA 하층 · Pebax 플레이트',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['템포 훈련', '하프 마라톤', '빠른 롱런', '레이싱화 내구성 필요', '중상급 러너'],
-    notRecommended: ['입문 러너', '느린 회복 러닝', '최대 안정성 필요'],
+    recommended: [
+      'Pebax판재와 이중폼의 전환을 시착 비교하려는 러너',
+      '정확한 상품코드와 폭을 판매자에게 확인할 수 있는 구매자',
+    ],
+    notRecommended: [
+      '상품제목·모델코드 충돌이 해결되지 않은 매물',
+      '실제 착화에서 앞코·발등·내리막 전환이 불편한 경우',
+    ],
   },
-
-  features: ['PEBA 폼', 'Pebax 플레이트', '레이싱급 반응성', '훈련용 내구성'],
-
+  features: [
+    'PEBA 상층 · EVA 하층 · Pebax 플레이트',
+    '264g · 힐/전족부 42.9/33.4mm (RunRepeat)',
+    "힐/전족부 SA 151/125 · 에너지 리턴 58.9/69.3% (RunRepeat). RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다.",
+    "한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다.",
+  ],
   priceAnalysis: {
-    msrp: 249000,
-    streetPrice: 189200,
-    costPerKm: 623,
     valueRating: 8,
     priceTier: 'high',
-    alternatives: ['nike-vomero-18', 'asics-superblast-2', 'new-balance-sc-trainer-v3'],
+    alternatives: [
+      'nike-vomero-18',
+      'asics-superblast-2',
+      'new-balance-sc-trainer-v3',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 74,
-      text: '레이싱화 느낌을 훈련에서 경험하고 싶은 중상급 러너를 위한 슈퍼트레이너입니다. 264g 경량에 PEBA 폼과 Pebax 플레이트 조합으로 전족부 에너지 리턴 69.3%가 뛰어나 템포런/하프마라톤에 최적입니다. 43mm 맥시멀 힐 스택과 10mm 드롭으로 무릎 보호와 힐 안정성도 확보했고, v2의 힐 물집 문제도 대부분 개선됐습니다. 24만 9천원으로 로켓 X 3(29만 9천원)보다 5만원 저렴합니다. 다만 토박스가 70.8mm로 좁아 발볼 넓은 한국 러너에게는 불편할 수 있고, 와이드 옵션도 없어 평발이나 넓은 발볼 러너는 신중하게 시착해야 합니다. SC Trainer v3(전족부 64.5%)보다 높은 전족부 에너지 리턴으로 훈련 겸용 슈퍼트레이너 중 최상급입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/hoka-mach-x-3',
+      text: "264g 과 SA 151/125·에너지 리턴 58.9/69.3% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다. 한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다.",
     },
     {
-        userType: '로테이션 — 레이서와 쿠션화 사이의 템포 담당',
-        text: '레이서(인터벌)와 맥시멀 쿠션화(롱런) 사이의 템포 구간을 담당하기에 맞습니다. 264g에 Pebax 플레이트로 전족부 에너지 리턴 69.3%라 4분10초~4분40초/km 구간에서 추진이 뚜렷하고, 힐 43mm 스택이라 충격 흡수도 확보됩니다. 토박스가 70.8mm로 좁고 와이드 옵션이 없어, 발볼이 넓거나 평발 성향이면 시착이 필요합니다.',
-      },
-    {
-        userType: '예상 적합 — 하프까지 한 켤레로 겸용할 러너',
-        text: '훈련과 하프 레이스를 한 켤레로 겸하려는 러너에게 맞을 가능성이 있습니다. 264g에 PEBA 폼의 전족부 에너지 리턴 69.3%로 반발을 확보하면서, 힐 43mm 스택이라 거리가 늘어도 충격이 누적되지 않는 쪽입니다. 10mm 드롭이라 힐 착지 성향에서도 부담이 적습니다. 같은 브랜드 최상위 레이서인 로켓 X 3(299,000원)과 비교하면, 249,000원·예상 수명 300~500km(추정) 기준 km당 약 500~830원으로 운용 비용 차이가 큽니다 — 레이스 전용이 아니라 훈련까지 소화해야 한다면 이쪽이 합리적입니다. 다만 토박스 70.8mm에 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/hoka-mach-x-3-review-2025/',
+      text: "DOR David(남성 US9.5)는 길이가 맞고 힐이 약간 좁으며 발등 볼륨이 밀착됐다고 느꼈습니다. Bach은 길이·앞쪽 공간이 맞고 중족 밀착이 주행 후 완화됐다고 평가했습니다. David는 부드러운 느낌, Bach은 단단한 느낌을 적었고 급한 내리막의 높은 중립 플랫폼과 전방 전환을 한계로 지적했습니다.",
+    },
   ],
-
   detailedSpecs: {
-    weight: '264g (남성 US 9 기준)',
-    stackHeight: '힐 43mm / 포어풋 33mm',
-    drop: '9.5mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 5mm)',
-    midsole: 'PEBA + Supercritical EVA (하이브리드) — RunRepeat 실측: 충격흡수 힐 151 SA(평균 131 SA)·전족부 125 SA · 에너지 리턴 전족부 69.3%(평균 61.5%)·힐 58.9%',
-    plate: 'Pebax 플레이트 (탄소 아님)',
-    outsole: '러버 커버리지',
-    upper: '엔지니어드 메쉬',
-    width: '좁은 편 (와이드 없음) · 토박스 70.8mm — RunRepeat 평균 73.2mm보다 2.4mm 좁고 랩 원문 "its overly snug, tapered toebox"',
-    durability: '400km',
-    price: '₩249,000 (MSRP) / 세일 시 ₩230,000~',
-    costPerKm: '약 ₩623/km (400km 기준)',
-    footType: '좁은~보통 발볼 / 중상급 러너',
-    landingPattern: '미드풋~전방 착지',
+    weight: "264g (RunRepeat 공시 검체 정책:남성 US9). DOR 소개 남성 289g(US9)·여성 244g(US8),46/41mm·드롭 5mm. RR 브랜드메타는남 252g·여 215g 과 44/39·42/37mm 로 적고, RR 실측 264g·42.9/33.4mm·9.5mm 와 차이가 있어 출처조건을 구분합니다.",
+    stackHeight: '42.9/33.4mm (RunRepeat 힐/전족부 실측)',
+    drop: '9.5mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "PEBA 상층 · EVA 하층 · Pebax 플레이트 · 32.5 AC(Asker C) · 힐/전족부 SA 151/125 · 에너지 리턴 58.9/69.3%. RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다.",
+    plate: '두 폼 사이의 Pebax 플레이트. 카본으로 분류하지 않습니다.',
+    width: "RunRepeat 내부 최광폭 91.6mm / 엄지 부위 70.8mm / 엄지 높이 28.5mm. 한국상품제목은여성와이드지만같은페이지의모델코드가 달라 정확한 변형 일치를 확인하지 못했습니다. RR 내부 최광폭 91.6mm·엄지 70.8mm·높이 28.5mm 를 한국 와이드 치수로 쓰지 않습니다.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "호카 코리아 공식 링크트리 연결스토어의 여성마하 X3와이드 제목 1168872-NNRS 상품은 할인전 249,000원·표시판매 99,600원·품절이었습니다. 같은상세의상품정보에는 1162410-BCQ로 적혀 정확 SKU 일치가 미해결입니다. 따라서 일반모델정가·확정와이드 필드는 비워두고, 남성현재 상품·전색상재고도 미확인입니다.",
   },
-
-  similarShoes: ['asics-superblast-2', 'nike-vomero-18', 'new-balance-sc-trainer-v3', 'puma-deviate-nitro-3'],
-  // 2026-10-23 발급 — 네이버 하루네스트(구매대행 표기) 279,500원(정가 112%) · 쿠팡 미조회(10/23 접속 차단으로 보류)
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GWWYDEQA' }],
+  similarShoes: [
+    'asics-superblast-2',
+    'nike-vomero-18',
+    'new-balance-sc-trainer-v3',
+    'puma-deviate-nitro-3',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/GWWYDEQA',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '호카 코리아 공식 스토어 연결',
+        url: 'https://linktr.ee/hoka_korea',
+        note: "이번 live에서 brand.naver.com/hoka연결을재확인했습니다.",
+      },
+      {
+        label: '한국 공식 women · 와이드 · 1168872-NNRS',
+        url: 'https://brand.naver.com/hoka/products/12300727666',
+        note: "호카 코리아 공식 링크트리 연결스토어의 여성마하 X3와이드 제목 1168872-NNRS 상품은 할인전 249,000원·표시판매 99,600원·품절이었습니다. 같은상세의상품정보에는 1162410-BCQ로 적혀 정확 SKU 일치가 미해결입니다. 따라서 일반모델정가·확정와이드 필드는 비워두고, 남성현재 상품·전색상재고도 미확인입니다.",
+      },
+      {
+        label: 'RunRepeat 마하 X 3',
+        url: 'https://runrepeat.com/hoka-mach-x-3',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 264g · 42.9/33.4mm · 드롭 9.5mm. SA 151/125 · ER 58.9/69.3%. RR 주폼 32.5AC·보조폼 41.6AC 는 다른 층입니다. 한국제목 SKU 와상품정보코드의충돌을 조용히 덮지 않으며, 표본의마모 0.8mm 를 400km수명으로 바꾸지 않습니다. 힐물집이모두해결됐다는보장·공통최적 페이스·질환보호 등급은 철회합니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/hoka-mach-x-3-review-2025/',
+        note: "DOR 소개 남성 289g(US9)·여성 244g(US8),46/41mm·드롭 5mm. RR 브랜드메타는남 252g·여 215g 과 44/39·42/37mm 로 적고, RR 실측 264g·42.9/33.4mm·9.5mm 와 차이가 있어 출처조건을 구분합니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };

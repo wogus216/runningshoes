@@ -53,8 +53,8 @@ describe('신발 데이터 전수', () => {
   });
 
   it('수명 추정의 한계를 표시하며 플레이트로 연구 결과를 일반화하지 않는다', () => {
-    const carbon = shoes.find((s) => s.biomechanics?.carbonPlate);
-    expect(carbon).toBeDefined();
-    expect(getShoeDurability(carbon!)?.caveat).toContain('재검증 전');
+    const legacyEstimate = { specs: { durability: 300 }, biomechanics: { carbonPlate: true } };
+    expect(getShoeDurability(legacyEstimate)?.caveat).toContain('재검증 전');
+    expect(getShoeDurability({ biomechanics: { carbonPlate: true } })).toBeNull();
   });
 });

@@ -1,107 +1,153 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'hoka-rocket-x-3',
   slug: 'hoka-rocket-x-3',
   brand: 'Hoka',
   name: '로켓 X 3',
   image: '/images/shoes/hoka/rocketX3/side.webp',
-  images: ['/images/shoes/hoka/rocketX3/side.webp', '/images/shoes/hoka/rocketX3/front.webp', '/images/shoes/hoka/rocketX3/top.webp', '/images/shoes/hoka/rocketX3/outsole.webp'],
+  images: [
+    '/images/shoes/hoka/rocketX3/side.webp',
+    '/images/shoes/hoka/rocketX3/front.webp',
+    '/images/shoes/hoka/rocketX3/top.webp',
+    '/images/shoes/hoka/rocketX3/outsole.webp',
+  ],
   category: '레이싱',
   rating: 5,
   price: 299000,
-  description: '호카의 플래그십 레이싱화로, 듀얼 레이어 PEBA 폼과 카본 플레이트로 극강의 반응성과 추진력을 제공합니다. 마라톤 기록 단축을 위한 최고의 선택입니다.',
-  oneliner: '220g 듀얼 PEBA, 78% 에너지 최상위',
-  editorComment: '로켓 X 3는 220g 경량에 78% 에너지 리턴으로 호카의 플래그십 레이싱화입니다. 듀얼 레이어 PEBA는 RunRepeat 저온 테스트에서 3%만 단단해져 겨울 마라톤에도 적합합니다. 29만 9천원으로 Alphafly 3(33만 9천원)보다 4만원 저렴하지만, 70.0mm 매우 좁은 토박스는 발볼 넓은 한국 러너에게 최대 단점입니다. 공격적인 로커 지오메트리로 적응 기간이 필요하며, 서브3:30~서브3 목표 엘리트 러너 전용입니다. 참고로 PEBA 계열은 마모가 빠른 편입니다 — Rodrigo-Carranza et al.(2024)의 450km 실도로 마모 연구에서 PEBA 폼은 러닝 이코노미가 2.28% 나빠졌으니(EVA는 변화 없음), 데일리 겸용 유혹을 참고 결전용으로 운용하는 게 이 가격의 본전을 뽑는 법입니다.\n\n사이즈·구매 가이드: 토박스가 narrow(70.0mm)로 매우 좁고 와이드 옵션이 없으므로, 발볼 넓은 러너는 사실상 선택이 어렵습니다. 반드시 레이싱 전용 얇은 양말을 착용하고 충분히 시착하세요. 정가 299,000원에 예상 수명 250~350km(추정) 기준 km당 약 850~1,200원이며, 안정성이 필요하다면 알파플라이 3, 더 높은 스택을 원하면 씨엘로 X1이 대안입니다.',
-  tags: ['레이싱', '카본 플레이트', 'PEBA 폼'],
-
+  description: "이중 PEBA · 날개형 전장 카본 구조의 로켓 X 3. 실험실 220g·힐/전족부 39.6/29.6mm. 한국 확인 정가 299,000원.",
+  oneliner: '220g 실험실 무게 · 이중 PEBA · 날개형 전장 카본',
+  editorComment: "2026-11-09 원문 재확인. 호카 코리아 공식 연결스토어 남녀공용 1168724-SNLG 할인전 299,000원·확인 당시 판매가 164,450원.250~290mm(5mm 간격)·300mm 선택 가능,230~245mm·295mm 는품절 표시였습니다. 한국 현재 와이드·문자폭코드는미확인이며 실결제 재고를 보장하지 않습니다. DOR 소개 210g(남성 US9/여성 US10.5)·40/33mm·드롭 7mm. RR220g·39.6/29.6mm·10.0mm 와구분하고 공시와실측을 평균내지 않습니다. RR 주폼 34.3AC·보조 35.0AC 를구분합니다. 국소 Dremel0.9mm 와 DOR 노출폼초기마모는부위·조건이 다릅니다. 저온변화 3% 를한국 겨울 내내 동일한 착화 보장으로,다른 폼 450km연구를 이 모델 300km수명으로 전용하지 않습니다. DOR Matt(남성 US10)은 길이가 맞고 밀착되는중간볼륨,비거싯 혀 정리와 양말 필요성을 언급했습니다. Andrea(본문여성 US9.5/남성 8.5표기)는 앞쪽과 고정은 만족했으나 본인의 안쪽 전족 이동이 방해되고 발목·건 통증이 반복돼 사용을 중단했습니다. Matt이선호한 유도와 Andrea불편을 한 문장으로 합치거나 모든 러너의 질환 위험으로 일반화하지 않습니다. 한국 현재 와이드 SKU 는미확인입니다. RR 내부 최광폭 92.0mm·엄지 70.0mm·높이 26.9mm 와리뷰어의발가락공간체감은 다른측정·개인조건입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '레이싱',
+    '카본 플레이트',
+    'PEBA 폼',
+  ],
   specs: {
     weight: 220,
     cushioning: 10,
     responsiveness: 10,
     stability: 6,
     drop: 10,
-    durability: 300,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 40,
-      forefoot: 30,
+      heel: 39.6,
+      forefoot: 29.6,
     },
     drop: 10,
     carbonPlate: true,
-    plateType: 'Carbon',
-    midsoleType: 'PEBA (Dual Layer)',
-    optimalPace: '3:30-5:00 min/km',
+    plateType: 'full-length winged carbon plate',
+    midsoleType: '이중 PEBA · 날개형 전장 카본',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'excellent',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['마라톤 기록 단축', '엘리트 러너', '하프/풀 마라톤 레이스', '빠른 페이스 전용', '전방 착지 러너'],
-    notRecommended: ['입문 러너', '회복 러닝', '일상 훈련', '넓은 발볼', '과내전 러너'],
+    recommended: [
+      "날개형카본과 로커전환을 시착 비교하려는 러너",
+      '앞쪽고정·혀·안쪽전환이자신에게맞는지확인하려는러너',
+    ],
+    notRecommended: [
+      "직접 착화에서발목·건통증이나반복불편이생기는경우",
+      '혀고정·안쪽전환이자신에게맞지않는경우',
+    ],
   },
-
-  features: ['듀얼 레이어 PEBA', '카본 플레이트', '초경량 220g', '극강 반응성', '에너지 리턴 전족부 78.0% (RunRepeat 실측)', '충격흡수 힐 155 SA (RunRepeat 실측)'],
-
+  features: [
+    '이중 PEBA · 날개형 전장 카본',
+    '220g · 힐/전족부 39.6/29.6mm (RunRepeat)',
+    "힐/전족부 SA 155/112 · 에너지 리턴 73.9/78% (RunRepeat). RR 주폼 34.3AC·보조 35.0AC 를구분합니다. 국소 Dremel0.9mm 와 DOR 노출폼초기마모는부위·조건이 다릅니다. 저온변화 3% 를한국 겨울 내내 동일한 착화 보장으로,다른 폼 450km연구를 이 모델 300km수명으로 전용하지 않습니다.",
+    "한국 현재 와이드 SKU 는미확인입니다. RR 내부 최광폭 92.0mm·엄지 70.0mm·높이 26.9mm 와리뷰어의발가락공간체감은 다른측정·개인조건입니다.",
+  ],
   priceAnalysis: {
     msrp: 299000,
-    streetPrice: 289000,
-    costPerKm: 997,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'new-balance-sc-elite-v5',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 89,
-      text: '서브3:30~서브3 목표 마라토너를 위한 호카 최고의 레이싱화입니다. 220g 초경량에 78% 에너지 리턴과 카본 플레이트로 기록 단축에 최적화되어 있고, 40mm 힐/30mm 전족부 스택으로 10mm 드롭을 제공합니다. 29만 9천원으로 알파플라이 3(33만 9천원)보다 4만원 저렴합니다. RunRepeat 저온 테스트에서 3%만 단단해져 겨울 마라톤에도 적합하지만, 토박스가 70.0mm로 매우 좁아 발볼 넓은 한국 러너에게는 불편합니다. 와이드 옵션이 없어 평발이나 넓은 발볼 러너는 사실상 선택이 어렵고, 공격적인 로커 지오메트리로 적응 기간이 필요합니다. 무릎 보호보다 기록 단축이 우선인 레이싱 전용이므로, 훈련에는 마하 X 3를 추천합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/hoka-rocket-x-3',
+      text: "220g 과 SA 155/112·에너지 리턴 73.9/78% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 주폼 34.3AC·보조 35.0AC 를구분합니다. 국소 Dremel0.9mm 와 DOR 노출폼초기마모는부위·조건이 다릅니다. 저온변화 3% 를한국 겨울 내내 동일한 착화 보장으로,다른 폼 450km연구를 이 모델 300km수명으로 전용하지 않습니다. 한국 현재 와이드 SKU 는미확인입니다. RR 내부 최광폭 92.0mm·엄지 70.0mm·높이 26.9mm 와리뷰어의발가락공간체감은 다른측정·개인조건입니다.",
     },
     {
-        userType: '모델 선택 — 알파플라이 대비 힐 안정성',
-        text: '최상위 레이서군에서 알파플라이 계열과 비교하면 힐 안정성이 뚜렷한 차이입니다. 알파플라이는 포드 구조라 접지면이 분절되는 반면, 로켓 X 3은 힐이 통으로 받쳐 좌우 흔들림이 적습니다. 바람이 강한 날이나 노면이 고르지 않은 구간에서 이 차이가 드러납니다. 220g의 무게에 듀얼 PEBA로 에너지 리턴 78%, 힐 40mm 스택이라 30km 이후 오르막에서도 페이스 유지에 유리합니다. 다만 토박스가 70.0mm로 좁아 발볼이 넓으면 맞지 않고, 표준 발볼도 얇은 레이싱 양말이 필요한 수준입니다. 내구성 300km 기준입니다.',
-      },
-    {
-        userType: '예상 적합 — 적응 기간을 감수할 서브3 도전 러너',
-        text: '서브3 전후를 노리는 러너를 겨냥한 레이서지만, 적응이 필요한 신발입니다. 로커 지오메트리가 공격적이라 초기에는 종아리에 당김이 오기 쉽고, 대체로 2~3주 정도 짧은 거리부터 늘려가며 익숙해지는 과정이 필요합니다. 그 구간을 넘기면 220g의 무게와 듀얼 PEBA의 에너지 리턴 78%가 후반 스퍼트에서 작동하고, 힐 40mm 스택이라 충격 흡수도 함께 확보됩니다. 레이스 직전에 구매하면 적응 기간이 부족해 오히려 손해입니다. 토박스가 70.0mm로 좁고 와이드 옵션이 없어, 발볼이 넓다면 이 모델은 후보에서 빼는 편이 낫습니다. 299,000원·내구성 300km 기준입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/hoka-rocket-x-3-review-2025/',
+      text: "DOR Matt(남성 US10)은 길이가 맞고 밀착되는중간볼륨,비거싯 혀 정리와 양말 필요성을 언급했습니다. Andrea(본문여성 US9.5/남성 8.5표기)는 앞쪽과 고정은 만족했으나 본인의 안쪽 전족 이동이 방해되고 발목·건 통증이 반복돼 사용을 중단했습니다. Matt이선호한 유도와 Andrea불편을 한 문장으로 합치거나 모든 러너의 질환 위험으로 일반화하지 않습니다.",
+    },
   ],
-
   detailedSpecs: {
-    weight: '220g (남성 US 9 기준)',
-    stackHeight: '힐 40mm / 포어풋 30mm',
-    drop: '10.0mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 7mm)',
-    midsole: 'PEBA 듀얼 레이어 (최고급 폼)',
-    plate: '카본 플레이트 (풀 렝스)',
-    outsole: '미니멀 러버 (경량화)',
-    upper: '초경량 메쉬',
-    width: '좁음 (와이드 없음) · 토박스 70.0mm — RunRepeat 평균 73.2mm보다 3.2mm 좁고 랩 원문 "The taper is clear, with our measurements showing just 70.0 mm in the toebox."',
-    durability: '300km (레이싱 전용)',
-    price: '₩299,000 (MSRP) / 세일 시 ₩270,000~',
-    costPerKm: '약 ₩997/km (300km 기준)',
-    footType: '발볼 좁은~표준 / 엘리트 러너',
-    landingPattern: '전방 착지 (레이싱)',
+    weight: "220g (RunRepeat 공시 검체 정책:남성 US9). DOR 소개 210g(남성 US9/여성 US10.5)·40/33mm·드롭 7mm. RR220g·39.6/29.6mm·10.0mm 와구분하고 공시와실측을 평균내지 않습니다.",
+    stackHeight: '39.6/29.6mm (RunRepeat 힐/전족부 실측)',
+    drop: '10mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "이중 PEBA · 날개형 전장 카본 · 34.3 AC(Asker C) · 힐/전족부 SA 155/112 · 에너지 리턴 73.9/78%. RR 주폼 34.3AC·보조 35.0AC 를구분합니다. 국소 Dremel0.9mm 와 DOR 노출폼초기마모는부위·조건이 다릅니다. 저온변화 3% 를한국 겨울 내내 동일한 착화 보장으로,다른 폼 450km연구를 이 모델 300km수명으로 전용하지 않습니다.",
+    plate: "2층 PEBA 사이의 날개형 전장 카본. 포크형 판재와 구분하며 지지구조를 임상등급으로 쓰지 않습니다.",
+    width: "RunRepeat 내부 최광폭 92mm / 엄지 부위 70mm / 엄지 높이 26.9mm. 한국 현재 와이드 SKU 는미확인입니다. RR 내부 최광폭 92.0mm·엄지 70.0mm·높이 26.9mm 와리뷰어의발가락공간체감은 다른측정·개인조건입니다.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "호카 코리아 공식 연결스토어 남녀공용 1168724-SNLG 할인전 299,000원·확인 당시 판매가 164,450원.250~290mm(5mm 간격)·300mm 선택 가능,230~245mm·295mm 는품절 표시였습니다. 한국 현재 와이드·문자폭코드는미확인이며 실결제 재고를 보장하지 않습니다.",
   },
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'saucony-endorphin-pro-4'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'new-balance-sc-elite-v5',
+    'saucony-endorphin-pro-4',
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/h6ZefnQHq8' }],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/h6ZefnQHq8',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '호카 코리아 공식 스토어 연결',
+        url: 'https://linktr.ee/hoka_korea',
+        note: "이번 live에서 brand.naver.com/hoka연결을재확인했습니다.",
+      },
+      {
+        label: '한국 공식 unisex · null · 1168724-SNLG',
+        url: 'https://brand.naver.com/hoka/products/12280100916',
+        note: "호카 코리아 공식 연결스토어 남녀공용 1168724-SNLG 할인전 299,000원·확인 당시 판매가 164,450원.250~290mm(5mm 간격)·300mm 선택 가능,230~245mm·295mm 는품절 표시였습니다. 한국 현재 와이드·문자폭코드는미확인이며 실결제 재고를 보장하지 않습니다.",
+      },
+      {
+        label: 'RunRepeat 로켓 X 3',
+        url: 'https://runrepeat.com/hoka-rocket-x-3',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 220g · 39.6/29.6mm · 드롭 10mm. SA 155/112 · ER 73.9/78%. RR 주폼 34.3AC·보조 35.0AC 를구분합니다. 국소 Dremel0.9mm 와 DOR 노출폼초기마모는부위·조건이 다릅니다. 저온변화 3% 를한국 겨울 내내 동일한 착화 보장으로,다른 폼 450km연구를 이 모델 300km수명으로 전용하지 않습니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/hoka-rocket-x-3-review-2025/',
+        note: "DOR 소개 210g(남성 US9/여성 US10.5)·40/33mm·드롭 7mm. RR220g·39.6/29.6mm·10.0mm 와구분하고 공시와실측을 평균내지 않습니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };

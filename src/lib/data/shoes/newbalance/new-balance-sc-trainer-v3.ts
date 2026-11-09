@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-sc-trainer-v3',
   slug: 'new-balance-sc-trainer-v3',
@@ -15,110 +16,141 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 5,
-  price: 249000,
-  description: 'FuelCell 폼과 카본 플레이트가 결합된 슈퍼 트레이너로, 레이싱화의 성능을 훈련에서도 경험할 수 있습니다. 템포런과 장거리 훈련에 최적화되어 있습니다.',
-  oneliner: '8.8 HA 소프트+카본, 마라톤 훈련 최적',
-  editorComment: 'SC Trainer v3는 8.8 HA 울트라소프트 FuelCell에 풀렝스 카본 플레이트를 탑재한 슈퍼트레이너입니다. 144 SA 충격흡수와 힐 66.1% 에너지 리턴은 Saucony Endorphin Speed 5(100% PEBA)보다 약하지만, 117.7mm 넓은 전족부로 안정성이 훨씬 높습니다. 24만 9천원으로 슈퍼트레이너 중 중간 가격대이며, 레이싱화 느낌을 훈련에서 경험할 수 있습니다. 278g은 약간 무겁지만 500km 내구성으로 장거리 훈련에 적합합니다. 이 신발의 폼이 PEBA 20% 블렌드인 건 단점이 아니라 설계입니다 — 2024년 발표된 연구의 450km 실도로 마모 실험에서 순수 PEBA는 성능을 크게 잃었고 EVA는 버텼습니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 실측 73.5mm)입니다. 해외에는 남성 Wide 폭이 있지만(RunRepeat 기준) 2026-10-23 확인 시 한국 공식몰에는 이 모델이 없어, 와이드 재고는 판매처마다 확인해야 합니다. 249,000원 ÷ 500km = km당 약 498원입니다. 반발력을 더 중시한다면 엔돌핀 스피드 5, 카본 없이 가볍게 쓰고 싶다면 매직스피드 4와 비교해보세요.',
-  tags: ['슈퍼 트레이너', '카본 플레이트', '템포런'],
-
+  description: 'PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void 구조의 SC Trainer V3. 실험실 278g·힐/전족부 36.8/29.5mm. 한국 현재 정가 미확인.',
+  oneliner: '278g 실험실 무게 · PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void',
+  editorComment: "2026-11-09 원문 재확인. 한국 실운영 검색 0건·남녀카테고리미노출이지만 관련카드에는 여성 B NBPFGS162B 정가 249,000원·할인 174,300원이 표시됐습니다. 대상상품상세는 빈화면이어서 현재 판매·확정 SKU·폭·재고·정가 필드는 미확인으로 둡니다. QA·pay캐시 가격과사이즈를 현재확인값으로 쓰지 않으며 검색 0건을 전체 미판매로 단정하지 않습니다. DOR 소개 261g(남성 US9.5)·209g(여성 US7),40/34mm·6mm. RR278g·36.8/29.5mm·7.3mm 와 RR 브랜드메타 41/35mm·6mm·278/232g 도 각각구분합니다. RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다. DOR Nathan(남성 US9.5,평소 9)은 반업 후 공간은 편했지만 길이가 약간 길다고 느꼈습니다. Andrea(여성 US9.5)는 정사이즈에서도 낮은 앞코로 엄지발톱 통증·중족의 느슨함을 느꼈고, David(남성 US9.5)는 충분한 볼륨·고정과 긴 주행을 선호했습니다. byline은 Matt이지만 실제 본문의 Nathan·Andrea·David 의견을 Matt의 착화 경험으로 만들지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 95.9mm·엄지 73.5mm·높이 25.9mm 는 한국 와이드의 치수가 아니며 인솔·양말 포함 고정을 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '슈퍼 트레이너',
+    '카본 플레이트',
+    '템포런',
+  ],
   specs: {
     weight: 278,
     cushioning: 9,
     responsiveness: 7,
     stability: 7,
-    drop: 7,
-    durability: 500,
+    drop: 7.3,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 37,
-      forefoot: 30,
+      heel: 36.8,
+      forefoot: 29.5,
     },
-    drop: 7,
+    drop: 7.3,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'FuelCell (20% PEBA + 80% EVA)',
-    optimalPace: '4:00-5:30 min/km',
+    plateType: 'Energy Arc full-length carbon plate',
+    midsoleType: 'PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void',
   },
-
   detailedSpecs: {
-    weight: '278g (RunRepeat 실측, 남성 US 9 기준)',
-    stackHeight: '힐 36.8mm / 포어풋 29.5mm (실측)',
-    drop: '7.3mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'FuelCell (20% PEBA + 80% EVA) + 풀렝스 카본 플레이트',
-    plate: '풀렝스 카본 플레이트 (Energy Arc)',
-    outsole: '고무 아웃솔',
-    upper: 'FANTOMFIT 메쉬',
-    width: '표준 — 토박스 73.5mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 0.3mm 넓음), 최대폭 95.9mm(평균 95.2mm). 랩 본문 "This provides a secure fit for most runners, though those with wider feet might feel restricted", "low-volume toebox". 폭 옵션: 기존 DB 표준(D)·와이드(RunRepeat 남성 Normal·Wide) (2026-10-23 한국 공식몰 재확인: 모델 미등재 — 해외 폭 옵션만 확인)',
-    durability: '500km+',
-    price: '249,000원',
-    costPerKm: '약 ₩498/km (500km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: "278g (RunRepeat 공시 검체 정책:남성 US9). DOR 소개 261g(남성 US9.5)·209g(여성 US7),40/34mm·6mm. RR278g·36.8/29.5mm·7.3mm 와 RR 브랜드메타 41/35mm·6mm·278/232g 도 각각구분합니다.",
+    stackHeight: '36.8/29.5mm (RunRepeat 힐/전족부 실측)',
+    drop: '7.3mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: "PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void · 21.8 AC(Asker C) · 힐/전족부 SA 144/118 · 에너지 리턴 66.1/64.5%. RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다.",
+    plate: "Energy Arc 전장 카본과 중앙홈. 기존 매직스피드 4를 비카본대안으로 소개한 문구는 잘못이어서 제거합니다.",
+    width: "RunRepeat 내부 최광폭 95.9mm / 엄지 부위 73.5mm / 엄지 높이 25.9mm. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 95.9mm·엄지 73.5mm·높이 25.9mm 는 한국 와이드의 치수가 아니며 인솔·양말 포함 고정을 확인하세요.",
+    durability: "검증된 공통 수명 km 미확인. 짧은 착화·마모 깊이를 수명 km로 환산하지 않습니다.",
+    price: "한국 실운영 검색 0건·남녀카테고리미노출이지만 관련카드에는 여성 B NBPFGS162B 정가 249,000원·할인 174,300원이 표시됐습니다. 대상상품상세는 빈화면이어서 현재 판매·확정 SKU·폭·재고·정가 필드는 미확인으로 둡니다. QA·pay캐시 가격과사이즈를 현재확인값으로 쓰지 않으며 검색 0건을 전체 미판매로 단정하지 않습니다.",
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 249000,
-    streetPrice: 249000,
-    costPerKm: 498,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['saucony-endorphin-speed-5', 'asics-magic-speed-4', 'hoka-mach-x-3'],
-    valueAdvantages: ['카본 플레이트 슈퍼트레이너 중 합리적 가격', '뛰어난 안정성', '마라톤 훈련 최적화'],
+    alternatives: [
+      'saucony-endorphin-speed-5',
+      'asics-magic-speed-4',
+      'hoka-mach-x-3',
+    ],
   },
-
   targetUsers: {
-    recommended: ['마라톤 훈련 중인 러너', 'SC Elite v4 팬의 훈련용', '카본 플레이트 장거리 훈련화를 원하는 러너', '중족부 착지 러너'],
-    notRecommended: ['가벼운 신발을 원하는 러너', '최대 반발력을 원하는 러너', '자갈길에서 뛰는 러너'],
+    recommended: [
+      "Energy Arc·중앙홈·블렌드폼의 전환을 비교하려는 러너",
+      "앞코 높이·길이·힐 고정을 실물로 확인하려는 러너",
+    ],
+    notRecommended: [
+      "실제 착화에서 엄지발톱 압박·중족의 느슨함이 생기는 경우",
+      "대상상세·현재 판매 조건을 확인하지 못한 매물",
+    ],
   },
-
   features: [
-    '힐 144 SA 충격흡수 + 에너지 리턴 힐 66.1%·전족부 64.5% (RunRepeat Lab Test)',
-    '8.8 HA 울트라소프트 FuelCell 폼 - 구름 같은 착화감',
-    'Energy Arc 카본 플레이트 + 로커로 추진력 강화',
-    '넓은 전족부 미드솔 117.7mm로 뛰어난 안정성',
-    'FANTOMFIT 어퍼로 프리미엄 핏 제공',
+    'PEBA·EVA FuelCell 블렌드 · Energy Arc 카본 · 중앙 void',
+    '278g · 힐/전족부 36.8/29.5mm (RunRepeat)',
+    "힐/전족부 SA 144/118 · 에너지 리턴 66.1/64.5% (RunRepeat). RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다.",
+    "한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 95.9mm·엄지 73.5mm·높이 25.9mm 는 한국 와이드의 치수가 아니며 인솔·양말 포함 고정을 확인하세요.",
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 85,
-      text: '마라톤 훈련용 카본 플레이트 신발을 찾는 시리어스 러너에게 추천합니다. 24만 9천원으로 슈퍼트레이너 중 가성비가 좋고, HA 8.8 울트라소프트 폼과 풀렝스 카본 플레이트로 레이싱화 느낌을 훈련에서 미리 경험할 수 있습니다. SA 144 충격흡수에 에너지 리턴 힐 66.1%로 37mm 힐 스택에서 무릎 보호와 추진력을 동시에 제공합니다. 전족부 미드솔은 117.7mm로 넓지만 토박스는 73.5mm(RunRepeat 실측, 랩 평균 73.2mm)로 평균 수준이고 랩은 "low-volume toebox"라고 평가했으므로, 발볼이 넓다면 와이드 폭을 우선 확인하세요. 단, 100% PEBA 경쟁작(엔돌핀 스피드)보다 반발력이 약간 부족하고 278g으로 약간 무겁습니다. 500km 내구성으로 km당 약 498원이며, 서브4~서브3:30 목표 러너의 템포런/장거리 훈련에 최적입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fuel-cell-super-comp-trainer-v-3',
+      text: "278g 과 SA 144/118·에너지 리턴 66.1/64.5% 는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다. 한국 현재 와이드 SKU 는 미확인입니다. RR 내부 최광폭 95.9mm·엄지 73.5mm·높이 25.9mm 는 한국 와이드의 치수가 아니며 인솔·양말 포함 고정을 확인하세요.",
     },
     {
-        userType: '모델 선택 — 엔돌핀 스피드 5 대비 발볼',
-        text: '같은 급 슈퍼트레이너인 엔돌핀 스피드 계열과 비교하면 반발과 플랫폼에서 갈립니다. 반발력 자체는 엔돌핀 스피드가 앞서지만, 전족부 미드솔이 117.7mm로 넓어 착지 플랫폼이 안정적인 점이 이쪽의 강점입니다. 토박스는 73.5mm(RunRepeat 실측)로 평균 수준입니다. 카본 플레이트가 들어가 레이스 감각을 훈련에서 익힐 수 있고, HA 8.8의 울트라소프트 폼에 힐 37mm 스택이라 인터벌과 장거리를 모두 소화합니다. 에너지 리턴 힐 66.1%, 249,000원·내구성 500km 기준입니다.',
-      },
-    {
-        userType: '예상 적합 — 첫 풀코스 준비 중급 러너',
-        text: '주간 40~50km를 소화하며 첫 풀코스를 준비하는 러너에게 맞을 가능성이 있습니다. 힐 37mm 스택에 HA 8.8 울트라소프트 폼, SA 144 충격흡수를 갖춰 장거리 훈련에서 다리에 남는 부담을 줄이는 쪽으로 설계됐습니다. 에너지 리턴 힐 66.1%와 풀렝스 카본 플레이트 조합이라 레이스 감각을 훈련에서 미리 익히려는 목적에도 맞습니다. 다만 278g으로 슈퍼트레이너 중에서는 무거운 편이라, 속도 훈련 전용을 찾는다면 다른 선택지가 낫습니다. 카본 플레이트가 처음이라면 종아리·아킬레스에 적응 기간이 필요할 수 있어 주행거리를 서서히 늘리는 편이 안전합니다. 토박스는 73.5mm(실측)로 평균 수준이고 해외에는 와이드 폭이 있으며, 249,000원·예상 수명 400~600km(추정) 기준 km당 약 420~620원입니다.',
-      },
-    {
-        userType: '비용 관점 — 카본 훈련화 3종 가격 비교',
-        text: '카본 훈련화군에서 가격은 높은 쪽입니다. 249,000원으로 마하 X 3(249,000원)과 같고 매직 스피드 계열(4 199,000원·5 209,000원)보다 4만~5만원 높은데, 차별점은 넓은 플랫폼입니다. 전족부 미드솔이 117.7mm로 넓어 착지가 안정적입니다. 다만 토박스는 73.5mm(RunRepeat 실측)로 평균 수준이라 RunRepeat는 "those with wider feet might feel restricted"라고 적었습니다. 278g으로 무거운 편이지만 SA 144의 충격흡수와 힐 37mm 스택으로 착지 부담을 낮췄고, 에너지 리턴 힐 66.1%로 카본의 추진도 확보했습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fuelcell-sc-trainer-v3/',
+      text: "DOR Nathan(남성 US9.5,평소 9)은 반업 후 공간은 편했지만 길이가 약간 길다고 느꼈습니다. Andrea(여성 US9.5)는 정사이즈에서도 낮은 앞코로 엄지발톱 통증·중족의 느슨함을 느꼈고, David(남성 US9.5)는 충분한 볼륨·고정과 긴 주행을 선호했습니다. byline은 Matt이지만 실제 본문의 Nathan·Andrea·David 의견을 Matt의 착화 경험으로 만들지 않습니다.",
+    },
   ],
-
-  similarShoes: ['saucony-endorphin-speed-5', 'asics-magic-speed-4', 'hoka-mach-x-3'],
+  similarShoes: [
+    'saucony-endorphin-speed-5',
+    'asics-magic-speed-4',
+    'hoka-mach-x-3',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GiahurkU' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/GiahurkU',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: "한국 확인 SKU 의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.",
+    sources: [
+      {
+        label: '뉴발란스 한국 실운영 검색 범위',
+        url: 'https://www.nbkorea.com/product/searchResult.action?schWord=SC%20Trainer%20V3',
+        note: "검색 0건은 전체 미판매확정 아님.",
+      },
+      {
+        label: '실운영 관련카드가 나온 원문',
+        url: 'https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF723K&colCode=19&cIdx=',
+        note: "관련카드 249000/174300원표시. 대상상세빈화면으로현재 판매 확정못함.",
+      },
+      {
+        label: '관련카드 대상상세 접근범위',
+        url: 'https://www.nbkorea.com/product/productDetail.action?rccode=pc_detail_a2&styleCode=NBPFGS162B&colCode=19',
+        note: '빈화면·옵션미확인.',
+      },
+      {
+        label: 'RunRepeat SC Trainer V3',
+        url: 'https://runrepeat.com/new-balance-fuel-cell-super-comp-trainer-v-3',
+        note: "공시 검체 정책:남성 US9. 개별 검체 SKU·폭은 미확인. 278g · 36.8/29.5mm · 드롭 7.3mm. SA 144/118 · ER 66.1/64.5%. RR 은 폼을 20%PEBA·80%EVA로 설명하며 제조사의 새 배합 확인과 구분합니다. 주폼 21.8AC·보조 27.5AC 와리뷰어의단단한 주행감은다릅니다. 다른 폼 450km실험을 이 모델 500km수명이나 EVA블렌드 우위 증명으로 쓰지 않습니다.",
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-fuelcell-sc-trainer-v3/',
+        note: "DOR 소개 261g(남성 US9.5)·209g(여성 US7),40/34mm·6mm. RR278g·36.8/29.5mm·7.3mm 와 RR 브랜드메타 41/35mm·6mm·278/232g 도 각각구분합니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC 와 HA 는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.",
+      },
+    ],
+    limitations: [
+      "질환 예방·치료 효과, 공통 최적 페이스와 수명 km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.",
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      "판매·재고는 확인한 SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.",
+    ],
+  },
 };
