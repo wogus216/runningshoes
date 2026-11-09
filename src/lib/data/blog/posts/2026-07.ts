@@ -2523,99 +2523,44 @@ export const posts_2026_07: BlogPost[] = [
     ],
   },
   {
-    id: 'hoka-speedgoat-6-vs-7-comparison-2026',
-    slug: 'hoka-speedgoat-6-vs-7-comparison-2026',
-    title: '스피드고트 6 vs 7 | 세대 비교 — 슈퍼크리티컬 폼으로 반발력 잡고, 공식 드롭 5mm는 실측과 다르다',
-    description:
-      '트레일 데일리 베스트셀러 호카 스피드고트의 7세대는 미드솔을 CMEVA에서 슈퍼크리티컬 폼으로 바꿔 에너지 리턴을 힐 48%→54.4%로 끌어올렸습니다. 그립은 Vibram Megagrip을 유지하고 게이터 부착 루프가 새로 생겼지만, 토박스는 6보다 살짝 좁아졌고 가격도 219,000원으로 올랐습니다. 무엇보다 공식 발표(드롭 5mm)와 RunRepeat 실측(7.4mm)의 차이가 커, 실측 기준으로 6과 7을 꼼꼼히 비교했습니다.',
-    thumbnail: '/images/blog/hoka-speedgoat-6-vs-7-comparison-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-14',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['스피드고트 7', '스피드고트 6', '트레일 러닝화', '호카', '세대비교', '슈퍼크리티컬 폼'],
+    id: "hoka-speedgoat-6-vs-7-comparison-2026",
+    slug: "hoka-speedgoat-6-vs-7-comparison-2026",
+    title: "스피드고트6 vs7 — EVA 변화·앞코·실측 드롭, 한국 가격은 재확인 필요",
+    description: "278/281g과4.9/7.4mm 실측을 비교합니다. 공식5mm·RR브랜드4mm를 나누고, 만능 접지·가격 인상·국내 와이드·반업 필수라는 단정을 정정했습니다.",
+    thumbnail: "/images/shoes/hoka/speedgoat7/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-14",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "스피드고트6",
+      "스피드고트7",
+      "트레일화 비교",
+      "앞코 핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>7세대는 미드솔을 CMEVA→슈퍼크리티컬 폼으로 교체</strong> — RunRepeat 실측 에너지 리턴이 힐 48%→54.4%로 뚜렷이 좋아졌습니다</li>
-    <li><strong>공식 발표는 6·7 모두 드롭 5mm라 밝혔지만, RunRepeat 실측은 6이 4.9mm, 7은 7.4mm</strong>로 나왔습니다 — 실제 착화감은 발표 수치보다 드롭감이 더 있을 가능성이 큽니다</li>
-    <li><strong>토박스는 73.0mm→71.4mm로 살짝 좁아지고, 가격도 205,000원→219,000원으로 인상</strong> — 반발력을 원하면 7, 검증된 핏·가성비를 원하면 6도 여전히 유효합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏔️</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>오르막에서 치고 나가는 반발력이 아쉬웠다면 <strong><a href="/shoes/hoka-speedgoat-7">스피드고트 7</a></strong>이 답입니다. 하지만 <strong><a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>을 잘 쓰고 있고 발볼이 넓다면</strong> 급히 갈아탈 이유는 적습니다 — 토박스가 6보다 좁아졌고 가격도 올랐기 때문입니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈 비교</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>스피드고트 6</th><th>스피드고트 7</th><th>변화</th></tr></thead>
-  <tbody>
-    <tr><td>무게(US 9)</td><td>278g</td><td>281g</td><td>거의 동일</td></tr>
-    <tr><td>토박스 너비</td><td>73.0mm</td><td>71.4mm</td><td>좁아짐</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>CMEVA(압축성형 EVA)</td><td><strong>슈퍼크리티컬 폼 EVA</strong></td><td>소재 교체</td></tr>
-    <tr><td>에너지 리턴(힐)</td><td>48.0%</td><td><strong>54.4%</strong></td><td>+6.4%p</td></tr>
-    <tr><td>아웃솔 러그 깊이</td><td>4.0mm</td><td>4.5mm</td><td>+0.5mm</td></tr>
-    <tr><td>게이터 부착</td><td>없음</td><td><strong>루프 신설(시리즈 최초)</strong></td><td>신규</td></tr>
-    <tr><td>드롭(RunRepeat 실측)</td><td>4.9mm</td><td>7.4mm</td><td>공식 발표는 양쪽 다 5mm</td></tr>
-    <tr><td>와이드 옵션</td><td>있음</td><td>있음(무신사 확인)</td><td>유지</td></tr>
-    <tr><td>가격(한국)</td><td>205,000원</td><td><strong>219,000원</strong></td><td>+1만 4천원</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ RunRepeat 실측(SA·에너지 리턴·토박스·드롭) 기준. 한국 가격은 무신사 확인가이며, 두 모델 모두 공식 한국 사이트 등재는 별도 확인이 필요합니다.</p>
-</div>
-
-<h2>가장 큰 차이 — 슈퍼크리티컬 폼으로 반발력 개선</h2>
-<p>스피드고트 6의 가장 흔한 아쉬움은 <strong>"그립·안정성은 최고인데 반발력이 둔하다"</strong>는 것이었습니다(RunRepeat 실측 에너지 리턴 힐 48.0%). 7세대는 여기에 정면으로 답합니다. 미드솔을 <strong>압축성형 EVA(CMEVA)에서 슈퍼크리티컬 폼</strong>으로 바꾸면서 RunRepeat 실측 에너지 리턴이 <strong>힐 54.4%·전족 60.4%</strong>로 올라갔습니다. Believe in the Run도 새 미드솔을 "Pop! Pop! Pop!"이라 표현하며 반응성 개선을 콕 집어 호평했죠. 그립을 담당하는 <a href="/shoes/adidas-terrex-agravic-4">Vibram Megagrip 아웃솔</a>은 그대로 유지하면서 러그 패턴만 다듬어, "그립은 유지하고 반발력만 끌어올린" 업그레이드로 보면 됩니다.</p>
-
-<h2>공식 드롭 5mm, 그런데 실측은 다르다</h2>
-<p>여기서 짚고 넘어갈 부분이 있습니다. 호카 공식 발표는 스피드고트 7의 스택을 <strong>힐 40mm·전족 35mm·드롭 5mm</strong>로 밝혔습니다. 그런데 RunRepeat이 실제로 측정한 수치는 <strong>힐 37.7mm·전족 30.3mm·드롭 7.4mm</strong>로, 드롭 차이가 2mm 넘게 납니다. RunRepeat은 "힐에서 발끝까지 실측 드롭이 7.4mm"라고 명시하고 있어 측정 오차 수준이 아닙니다. 나이키 페가수스 42 때도 공식 발표와 실측이 몇 mm씩 어긋난 적이 있었는데, 이번에도 비슷한 케이스입니다. <strong>실제로 신어보면 발표 수치(5mm)보다 드롭감이 더 있게 느껴질 가능성이 높다</strong>는 뜻이니, 낮은 드롭에 예민한 러너라면 참고하세요.</p>
-
-<h2>토박스 — 6보다 살짝 좁아졌다</h2>
-<p>한국 러너가 특히 주목할 부분입니다. 스피드고트 6의 토박스는 73.0mm로 트레일 평균(74.3mm)보다 좁은 편이었는데, <strong>7은 71.4mm로 여기서 한 번 더 좁아졌습니다.</strong> Believe in the Run도 "포인티(pointy)한 디자인이 새끼발가락을 누른다"고 지적했습니다. 다행히 <strong>와이드 옵션은 7에도 이어집니다</strong>(무신사 기준 남녀 모두 확인). 발볼이 넓다면 반드시 와이드를 고려하거나, 매장에서 시착 후 결정하세요. 더 넓은 옵션이 필요하면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고할 만합니다.</p>
-
-<h2>신규 기능 — 게이터 부착 루프</h2>
-<p>7세대에 새로 생긴 기능은 <strong>인테그레이티드 게이터 부착 루프</strong>입니다. 시리즈 최초로, 각반(게이터)을 신발에 바로 고정할 수 있어 겨울철 눈이나 젖은 낙엽·자갈이 신발 안으로 들어오는 걸 줄여줍니다. 국내에서 겨울 트레일·설질 구간을 자주 달린다면 실용적인 추가입니다.</p>
-
-<h2>가격 — 219,000원, 무신사 확인가</h2>
-<p>7세대 가격은 <strong>219,000원</strong>으로 6(205,000원)보다 <strong>1만 4천원 올랐습니다.</strong> 이 가격은 무신사에서 브랜드 공식 스타일코드와 일치하는 상품으로 확인한 수치이며, <strong>호카코리아 공식 사이트 등재 여부는 별도로 확인되지 않았습니다.</strong> 반발력 개선을 감안하면 인상폭 자체는 납득할 만하지만, 순수 가성비를 원한다면 검증된 실측 데이터가 쌓인 6도 여전히 합리적인 선택입니다.</p>
-
-<h2>누가 6, 누가 7</h2>
-<ul>
-  <li><strong>스피드고트 7로 가야 할 사람</strong> — 6의 반발력 부족이 아쉬웠던 러너, 겨울철 게이터를 자주 쓰는 러너, 최신 개선판을 원하는 러너</li>
-  <li><strong>스피드고트 6로 충분한 사람</strong> — 발볼이 넓어 토박스가 더 넓은 신발이 필요한 러너, 낮은 드롭(발표 기준)을 원하는 러너, 검증된 실측 데이터·조금 더 저렴한 가격을 선호하는 러너</li>
-  <li><strong>공통점은 그대로</strong> — Vibram Megagrip 그립, 내부 섀시 기반 안정성, 와이드 옵션은 두 세대 모두 유지됩니다</li>
-</ul>
-<p>다른 트레일화와의 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">트레일화 3파전(스피드고트 6 vs 펄사 vs 메타후지)</a>에서, 트레일 러닝화 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>에서 확인할 수 있습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">데이터 출처 안내</p>
-    <p>이 글의 실측 수치(무게·스택·드롭·에너지 리턴·토박스)는 RunRepeat 랩 테스트 기준이며, 한국 가격(219,000원)은 브랜드 공식 스타일코드와 일치하는 무신사 판매가로 확인했습니다. 호카코리아 자체 공식 사이트 등재 여부는 이 글 작성 시점 기준 확인되지 않았습니다.</p>
-  </div>
-</div>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>6은CMEVA,7은초임계EVA입니다. 랩 리턴이 달라져도 개인 오르막 속도 향상률은 아닙니다.</li><li>7의 드롭은 호주 공식5mm·RR브랜드4mm·실측7.4mm로 출처가 다릅니다.</li><li>한국 공식 현재 가격·와이드·사이즈 재고는 두 모델 모두 미확인입니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/hoka/speedgoat7/side.webp" alt="스피드고트7 — 초임계 EVA와 게이터 연결 구조" loading="lazy"/><figcaption>스피드고트7 — 초임계 EVA와 게이터 연결 구조</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>6</th><th>7</th></tr></thead><tbody><tr><td>무게</td><td>278g</td><td>281g</td></tr><tr><td>힐/전족 스택</td><td>32.1/27.2mm</td><td>37.7/30.3mm</td></tr><tr><td>실측 드롭</td><td>4.9mm</td><td>7.4mm</td></tr><tr><td>힐/전족 SA</td><td>124/107</td><td>131/116</td></tr><tr><td>힐/전족 리턴</td><td>48.0/53.5%</td><td>54.4/60.4%</td></tr><tr><td>폼 경도</td><td>40.6AC</td><td>38.5AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>95.6/73.0/26.1mm</td><td>94.8/71.4/28.2mm</td></tr><tr><td>러그 실측</td><td>4.0mm</td><td>4.5mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>리턴 개선과 자신의 업그레이드 이유를 나누기</h2><p>7의 초임계EVA 검체는 힐·전족 리턴이6보다 높게 나왔습니다. 이것이 모든 러너의 오르막 속도·장거리 피로를 같은 폭으로 개선한다는 뜻은 아닙니다. 기존6에서 쿠션이나 전환이 아쉬웠다면7의 실제 규격을 비교할 이유가 되지만, 잘 맞는6를 숫자 하나 때문에 바꿀 필요가 있다는 결론은 아닙니다.</p>
+<h2>앞코는 한 방향으로 모두 좁아진 것이 아닙니다</h2><p>7의 내부 최광부와 엄지 너비는 작지만 높이는 더 큽니다. 길이·발등·테이퍼·힐 고정을 나눠 볼 필요가 있습니다. 호주 공식7은 반업을 안내하고 RR 투표도 반사이즈 작게로 모였지만, 개인의 폭 문제를 길이 증가만으로 해결할 수 있다는 보장은 아닙니다.6의 DOR David(남성US9.5)는 정사이즈·약간 여유 있는 전족을 느꼈고 짧고 얕은 혀의 끈 조절을 언급했습니다.7의 정확 DOR 개별 리뷰는 미확인이어서6의 경험을 옮기지 않습니다.</p>
+<h2>공시와 절단 실측 차이를 체감으로 예측하지 않기</h2><p>6의 DOR 소개는37/32mm·5mm, RR 브랜드남성40/35mm·5mm, RR실측32.1/27.2mm·4.9mm입니다.7의 호주 공식은5mm와 러그5mm를 적지만 무게는N/A, 스택은 이번 범위에서 미확인입니다. RR 브랜드남성37/33mm·4mm와 실측37.7/30.3mm·7.4mm를 나눕니다. 기존 ‘공식40/35mm’ 확정과 ‘실제로도 더 높은 드롭처럼 느껴질 것’이라는 예측은 철회했습니다.</p>
+<h2>Vibram과 게이터가 모든 지형의 안전 보장은 아닙니다</h2><p>둘 다Vibram Megagrip을 사용합니다.7의 젖은 콘크리트 계수0.77을 젖은 화강암·진흙·눈의 접지로 일반화하지 않습니다.6의 기술 지형 접지는 David의 개인 경험입니다.7의 게이터 연결은 부착 구조이며 방수·설상 미끄럼 방지 인증이 아닙니다.</p>
+<h2>한국 판매 조건과 교체 거리는 미확인</h2><p>한국 공식 링크트리에서 트레일 스토어 연결을 확인했지만 상품 본문 접근이 막혔습니다. 따라서 기존205,000→219,000원 인상·국내 와이드 동일가·GTX가격을 현재 공식 사실로 쓰지 않습니다. 유통가와 해외 폭은 따로 확인해야 합니다.500km 수명·km당비용도 국소 마모에서 환산할 수 없어 제거했습니다.6·7은 구방식 통기2/5와BR69처럼 시험 세대도 달라 점수만으로 여름 성능 우열을 정하지 않습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://nz.hoka.com/products/m-speedgoat-6-1147791-bblc-bblc" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-6" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/hoka-speedgoat-6-review-2024/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul><h2>확인한 원문</h2><ul><li><a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">HOKA 한국 공식 연결 범위</a> — 공식 트레일 스토어로 연결됐으나 상품은 robots 차단. 한국 가격·폭 미확인.</li><li><a href="https://au.hoka.com/products/speedgoat-7-1171928-alvb-alvb" target="_blank" rel="noopener noreferrer">HOKA 해외 공식 동세대</a> — 해외 공시이며 한국 가격·재고 근거 아님.</li><li><a href="https://runrepeat.com/hoka-speedgoat-7" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li></ul>
 `,
     faqs: [
       {
-        question: '스피드고트 6을 쓰고 있는데 7로 갈아탈 가치가 있나요?',
-        answer: '6의 그립·안정성에 만족하지만 "반발력이 둔하다"고 느꼈다면 7이 정조준한 업그레이드입니다. 슈퍼크리티컬 폼으로 미드솔을 바꿔 RunRepeat 실측 에너지 리턴이 힐 48%→54.4%로 뚜렷이 좋아졌습니다. 다만 발볼이 넓은 편이라면 토박스가 73.0mm→71.4mm로 좁아진 점을 감안해야 하고, 가격도 1만 4천원 올랐습니다. 급히 갈아탈 필요는 없지만 반발력 부족이 아쉬웠던 러너에게는 가치가 있습니다.',
+        "question": "7로 바꾸면 오르막이 빨라지나요?",
+        "answer": "랩 리턴은 높지만 개인의 오르막 속도·피로 개선율은 입증하지 못했습니다. 기존 불편과 실제 전환·핏을 비교하세요."
       },
       {
-        question: '스피드고트 7 드롭이 정말 5mm인가요?',
-        answer: '호카 공식 발표는 5mm지만, RunRepeat 실측 결과는 7.4mm로 나왔습니다(힐 37.7mm-전족 30.3mm). RunRepeat은 이를 "실측 드롭"이라고 명시하고 있어 측정 오차 수준을 넘어서는 차이입니다. 낮은 드롭에 민감한 러너라면 발표 수치만 믿지 말고 실측 기준으로 판단하는 게 안전합니다.',
+        "question": "7은 드롭5mm인가요?",
+        "answer": "호주 공식5mm, RR브랜드4mm, RR실측7.4mm로 출처와 조건이 다릅니다. 하나로 합치거나 체감을 예측하지 않습니다."
       },
       {
-        question: '스피드고트 7 와이드 옵션이 한국에도 있나요?',
-        answer: '네, 무신사 기준으로 남녀 와이드 모델이 모두 확인됩니다. 다만 토박스 자체가 6보다 71.4mm로 살짝 좁아졌기 때문에, 발볼이 매우 넓다면 와이드를 선택하더라도 시착을 권장합니다.',
-      },
+        "question": "한국 와이드가 있나요?",
+        "answer": "이번 정확 공식 상품 본문을 확보하지 못해 현재 한국 와이드·재고는 미확인입니다. 해외 폭으로 국내 판매를 보장하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'saucony-paramount-max-preview-2026',
@@ -3609,136 +3554,43 @@ export const posts_2026_07: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'new-balance-hierro-v9-trail-review-2026',
-    slug: 'new-balance-hierro-v9-trail-review-2026',
-    title: '뉴발란스 히에로 v9 리뷰 | 7월 신컬러 출시 — 비브람 메가그립 쿠션 트레일화, v8 대비 뭐가 달라졌나',
-    description: '이번 주(7/9) 신규 컬러웨이가 풀리는 뉴발란스 히에로 v9를 정밀 리뷰합니다. RunRepeat 랩 85점(Great)을 받은 쿠션 올라운드 트레일화로, v8 대비 힐 스택이 5mm 높아지고 플랫폼이 단단해졌습니다. Vibram Megagrip 아웃솔·SA 131 쿠션·600km 내구성으로 자갈길·로드투트레일 장거리에 강하지만, 기술 암반이나 힐 스트라이커에겐 맞지 않습니다. 토박스 73.4mm·4mm 저드롭·189,000원 가성비까지 한국 트레일 러너 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/new-balance-hierro-v9-trail-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-08',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['히에로 v9', '뉴발란스 트레일화', '트레일 러닝화', '쿠션 트레일화', '비브람 메가그립', '신상 러닝화', '트레일화 추천'],
+    id: "new-balance-hierro-v9-trail-review-2026",
+    slug: "new-balance-hierro-v9-trail-review-2026",
+    title: "뉴발란스 히에로v9 리뷰 — 이중 밀도 쿠션·3.3mm 실측 러그, 한국 판매 미확인",
+    description: "309g·37.3/33.1mm·4.2mm 실측과 미국 공식 공시를 구분합니다. 러그6mm 주장과3.3mm 실측, 한국 가격·와이드 미확인,600km·착지별 위험 단정을 정정했습니다.",
+    thumbnail: "/images/shoes/newbalance/hierrov9/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-08",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "히에로v9",
+      "뉴발란스",
+      "트레일화",
+      "러그 비교"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>이번 주 한국 트레일 신상의 주인공은 히에로 v9입니다</strong> — 7/9 신규 컬러웨이가 풀립니다. 모델 자체는 이미 판매 중이지만 RunRepeat 랩 <strong>85점(Great)</strong>을 받은 완성도 높은 쿠션 올라운드 트레일화예요</li>
-    <li><strong>v9의 핵심은 "더 푹신하고 더 단단해졌다"</strong> — v8 대비 힐 스택 +5mm, 비틀림 강성 5/5로 상향. 유연한 접지감에서 "높은 쿠션 + 안정 플랫폼"으로 성격이 바뀌었습니다</li>
-    <li><strong>자갈길·로드투트레일 장거리엔 강하지만, 젖은 바위·급경사 기술 암반엔 약합니다</strong>(Technical 58점). 4mm 저드롭이라 힐 스트라이커보다 미드풋·포어풋 착지 러너에게 맞아요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🥾</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>자갈길·둘레길·로드투트레일을 푹신하게 오래 달리고 싶은 러너</strong>에게 <a href="/shoes/new-balance-hierro-v9">히에로 v9</a>는 189,000원에 비브람 그립·뛰어난 내구성을 주는 좋은 선택입니다. 다만 <strong>험한 기술 트레일러</strong>라면 <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>, <strong>더 푹신한 울트라 컴포트</strong>라면 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>가 낫습니다.</p>
-  </div>
-</div>
-
-<h2>이번 주(7/7~7/13) 러닝화 신상 브리핑</h2>
-<p>7월 둘째 주 한국 러닝화 신상은 생각보다 조용합니다. 그중 <strong>실제로 지금 한국에서 살 수 있고, 데이터도 탄탄한 신상은 뉴발란스 히에로 v9의 신규 컬러웨이(7/9)</strong>가 사실상 유일합니다. 나머지 화제작들은 아직 "글로벌 소식"이거나 러닝화가 아니에요.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>모델</th><th>이번 주 상황</th><th>정리</th></tr></thead>
-  <tbody>
-    <tr><td><strong>뉴발 히에로 v9</strong></td><td>7/9 한국 신컬러 드롭 · 189,000원</td><td>✅ 지금 구매 가능한 쿠션 트레일화 (이 글의 주인공)</td></tr>
-    <tr><td>호카 클리프톤 프로</td><td>글로벌 7/9 출시($165) · <strong>한국 출시일·정가 미정</strong></td><td>데일리 화제작이나 한국 발매는 대기 (<a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a> 참고)</td></tr>
-    <tr><td>뉴발 AC Runner v1</td><td>7/10 출시</td><td>러닝화 이름이지만 실질은 <strong>라이프스타일 하이프 스니커</strong> (러닝 스펙 미공개)</td></tr>
-  </tbody>
-</table>
-</div>
-<p>그래서 이 글은 <strong>지금 바로 신을 수 있는 히에로 v9</strong>에 집중합니다. 클리프톤 프로는 한국 정가가 확정되면 별도로 다루겠습니다.</p>
-
-<h2>히에로 v9는 어떤 신발인가</h2>
-<p>뉴발란스 <strong>Fresh Foam X 히에로(Hierro)</strong>는 브랜드의 대표 <strong>쿠션 올라운드 트레일화</strong>입니다. "험한 산악 기술 코스"용이 아니라, <strong>자갈길·임도·둘레길·로드투트레일(도로+트레일 혼합)</strong>처럼 비교적 완만한 지형을 <strong>푹신하게 오래</strong> 달리는 데 특화됐죠. 도로 데일리로 치면 맥스쿠션 계열(<a href="/shoes/new-balance-1080-v15">1080</a> 같은)의 트레일 버전이라고 보면 됩니다.</p>
-<p>이번 v9는 RunRepeat 랩 테스트에서 <strong>100점 만점에 85점(Great)</strong>을 받았습니다. 세부 점수를 보면 성격이 분명하게 드러납니다 — <strong>Gravel(자갈길) 78 · Versatile(범용) 86 · Technical(기술 지형) 58</strong>. 범용성과 자갈길에서 강하고, 험지 기술성에선 약하다는 뜻입니다.</p>
-
-<h2>v8 → v9, 뭐가 달라졌나</h2>
-<p>히에로 v9의 변화는 한 문장으로 <strong>"쿠션을 키우고, 플랫폼을 단단하게 잡았다"</strong>입니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>v8</th><th>v9</th><th>변화</th></tr></thead>
-  <tbody>
-    <tr><td>힐 스택(실측)</td><td>32.2mm</td><td><strong>37.3mm</strong></td><td>+5.1mm (쿠션↑)</td></tr>
-    <tr><td>전족부 폼</td><td>24.1mm</td><td><strong>33.1mm</strong></td><td>+37% (앞발 쿠션↑)</td></tr>
-    <tr><td>무게(실측)</td><td>297g</td><td>309g</td><td>+12g</td></tr>
-    <tr><td>종방향 강성</td><td>11.0N</td><td><strong>18.2N</strong></td><td>+65% (단단·롤링↑)</td></tr>
-    <tr><td>비틀림 강성</td><td>—</td><td><strong>5/5</strong></td><td>최고 등급(안정↑)</td></tr>
-    <tr><td>지오메트리</td><td>플랫</td><td><strong>락커 도입</strong></td><td>구름 전환</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 수치는 RunRepeat 캘리퍼 실측 기준. 뉴발란스 공식 발표 스펙은 힐 42mm/전족 38mm/드롭 4mm로, 랩 실측과는 차이가 있습니다(브랜드 공식 스펙 vs 실측 괴리는 흔합니다).</p>
-</div>
-<p>정리하면 v8이 "유연하고 낮은 트레일화"였다면, v9는 <strong>"쿠션 두껍고 단단한 플랫폼"</strong>으로 성격이 이동했습니다. 발밑이 더 든든하고 안정적으로 굴러가는 대신, 예전의 지면 감각·유연함은 줄었어요. 장거리 컴포트를 원하면 반가운 변화이고, 민첩한 접지감을 좋아했다면 아쉬운 변화입니다.</p>
-
-<h2>랩 데이터로 본 실력</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>측정 항목</th><th>수치</th><th>의미</th></tr></thead>
-  <tbody>
-    <tr><td>충격 흡수(SA)</td><td>힐 131 / 전족 124</td><td>쿠션 넉넉 — "발밑에 폼이 많다"는 평</td></tr>
-    <tr><td>에너지 리턴</td><td>61.9%</td><td>중간 — 빠른 반발용은 아님</td></tr>
-    <tr><td>미드솔 경도(HA)</td><td>14.6</td><td>중간(약간 단단한 쪽) 안정형</td></tr>
-    <tr><td>토박스(엄지)</td><td>73.4mm</td><td>표준 — 다만 "토룸 좁다" 지적</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip · 러그 3.3mm</td><td>마른 흙·자갈 그립 신뢰</td></tr>
-    <tr><td>내구성</td><td>마모 0.9mm · 힐 패딩 5/5</td><td><strong>매우 우수</strong> — 오래 신는다</td></tr>
-    <tr><td>통기성</td><td>3/5</td><td>중간 — 한여름엔 다소 더움</td></tr>
-  </tbody>
-</table>
-</div>
-<p>가장 돋보이는 건 <strong>내구성</strong>입니다. 아웃솔 마모가 0.9mm에 그칠 만큼 단단하고(Vibram Megagrip), 힐 패딩 내구도 5/5 만점이라 <strong>오래 신어도 무너지지 않습니다</strong>. 189,000원에 600km를 기준 잡으면 <strong>km당 약 315원</strong>으로, 트레일 쿠션화 중 가성비가 좋은 편이에요.</p>
-
-<h2>발볼·핏 — 한국 러너가 볼 것</h2>
-<p>토박스는 엄지 기준 <strong>73.4mm로 "표준"</strong> 범위지만, RunRepeat이 단점으로 <strong>"토룸(발가락 공간)이 좁다"</strong>고 콕 집었습니다. 발볼이 넓은 한국 러너라면 <strong>반 사이즈 여유를 두거나 시착</strong>을 권합니다. 해외 시장엔 <strong>2E·4E 와이드</strong>가 있지만, <strong>한국 공식몰은 남성 D·여성 B로 국내 와이드가 없습니다</strong>. 발볼이 정말 넓다면 <a href="/best/wide-toebox">발볼 넓은 러너 추천</a>도 참고하세요.</p>
-<p>드롭이 <strong>4mm로 낮은 편</strong>입니다. 저드롭은 미드풋·포어풋으로 착지하는 러너에겐 자연스럽지만, <strong>뒤꿈치부터 강하게 딛는 힐 스트라이커에겐 아킬레스·종아리 부담</strong>이 될 수 있습니다. RunRepeat도 "낮은 드롭이 일부 힐 스트라이커에겐 안 맞는다"를 단점으로 꼽았어요. 본인이 힐 착지 성향이라면 이 점을 감안하세요.</p>
-
-<h2>어떤 지형에 맞나 — 자갈은 O, 암반은 △</h2>
-<p>히에로 v9의 정체성은 <strong>"완만한 지형용 쿠션 트레일화"</strong>입니다. Vibram Megagrip 3.3mm 러그는 <strong>마른 흙길·자갈·임도·둘레길</strong>에서 신뢰할 만하고, 두툼한 쿠션이 <strong>로드투트레일(도로 접근 구간이 섞인 코스)</strong>에서 특히 편합니다.</p>
-<p>반대로 <strong>젖은 바위·진흙·급경사 암반</strong> 같은 진짜 기술 코스에선 한계가 있습니다(Technical 58점). 두껍고 단단한 플랫폼은 험지에서 오히려 둔하게 느껴질 수 있고, 록플레이트가 없어 날카로운 돌 자극도 그대로 올라옵니다. <strong>"험한 산"보다 "긴 둘레길·자갈 트레일"</strong>이 이 신발의 무대예요. 여러 지형을 아우르는 만능 그립이 필요하면 <a href="/blog/speedgoat-6-vs-pulsar-vs-terrex-agravic-trail-2026">트레일화 3파전(스피드고트 6 vs 펄사 vs 아그라빅)</a>을 함께 보세요.</p>
-
-<h2>누가 사야 하나</h2>
-<ul>
-  <li><strong>히에로 v9가 맞는 러너</strong> — 자갈길·둘레길·임도·로드투트레일을 <strong>푹신하게 오래</strong> 달리는 러너, 쿠션과 안정성을 우선하는 트레일 러너, 하이킹 겸용을 찾는 러너, 미드풋·포어풋 착지 러너, 내구성·가성비를 중시하는 러너</li>
-  <li><strong>다른 걸 보는 게 나은 러너</strong> — 젖은 바위·급경사 기술 코스 위주(→ <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>), 더 푹신한 울트라 컴포트(→ <a href="/shoes/salomon-ultra-glide-4">울트라 글라이드 4</a>), 빠른 트레일 레이싱, 발볼이 매우 넓은데 와이드가 꼭 필요한 러너</li>
-</ul>
-<p>같은 쿠션 트레일 계열 대안으로는 <a href="/shoes/hoka-speedgoat-6">호카 스피드고트 6</a>(더 만능 그립·기술 지형 강함)와 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(더 푹신·울트라 특화, 와이드 있음)가 있습니다. 세 켤레를 성격별로 비교한 <a href="/blog/salomon-pulsar-vs-ultra-glide-vs-s-lab-trail-2026">살로몬 트레일 3종 비교</a>와 <a href="/best/trail">트레일화 추천 순위</a>도 참고하세요.</p>
-
-<h2>이번 주 다른 신상 — 짧게</h2>
-<p><strong>호카 클리프톤 프로</strong>는 글로벌 7/9 출시($165)로 이번 주 최대 화제작이지만, <strong>한국 출시일과 정가가 아직 확정되지 않았습니다.</strong> 클리프톤 라인에 반발형 ProGlide+ 폼을 얹은 데일리 트레이너로, 클리프톤 11과 뭐가 다른지·해외 리뷰 평가는 <a href="/blog/hoka-clifton-pro-preview-2026">클리프톤 프로 미리보기</a>에 정리했습니다. 노바블라스트 6와의 정면비교는 <a href="/blog/asics-novablast-6-vs-hoka-clifton-pro-2026">노바블라스트 6 vs 클리프톤 프로 비교</a>를 참고하세요.</p>
-<p><strong>뉴발 AC Runner v1</strong>은 7/10 출시로 이름은 "러너"지만, 러닝 전문 리뷰도 스택·드롭 스펙도 공개되지 않은 <strong>라이프스타일 하이프 스니커</strong>에 가깝습니다(Klutch Athletics 콜라보). 진지한 트레이닝화로 기대하고 사면 실망할 수 있으니 참고하세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">데이터 출처</p>
-    <p>스펙·랩 수치는 <strong>RunRepeat 실측</strong>(85/100 Great)과 뉴발란스 공식 발표 기준입니다. 한국 정가는 기존 컬러웨이 판매가(189,000원)를 따랐으며, 신규 컬러웨이도 동일 가격대로 예상됩니다. 클리프톤 프로의 한국 출시·정가는 미확정(글로벌 정보만 확인)이며, 확정되면 업데이트하겠습니다.</p>
-  </div>
-</div>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>Fresh Foam X 이중 밀도·Vibram Megagrip·Toe Protect 구조입니다.</li><li>미국 공식 러그6mm 주장과 RR3.3mm 실측이 달라 하나로 합치지 않습니다.</li><li>한국 현재 정가·와이드·재고는 미확인입니다. 기존189,000원·7/9 신컬러를 현재 정보로 반복하지 않습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/newbalance/hierrov9/side.webp" alt="히에로v9 기본 비방수 모델 — GTX 규격과 분리해 확인" loading="lazy"/><figcaption>히에로v9 기본 비방수 모델 — GTX 규격과 분리해 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>309g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>37.3/33.1mm·4.2mm</td></tr><tr><td>힐/전족부 SA</td><td>131/124</td></tr><tr><td>힐/전족부 리턴</td><td>61.9/61.4%</td></tr><tr><td>폼 경도</td><td>29.7AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>94.7/73.4/26.7mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>로드 접근 구간이 섞인 트레일을 고려한다면</h2><p>DOR 봄 트레일 roundup의 정확v9 문단에서 David는 여유 있는 전족·볼륨과 니트 고정, 부드러운 로커·이중 밀도 쿠션을 긍정적으로 평가했습니다. 도로 접근 혼합·하이킹 활용을 언급하면서 무게와 평범한 반발은 아쉬워했습니다. 검체 사이즈는 미공시이며 독립 전체 리뷰나 모든 러너의 사용 결론으로 표시하지 않습니다.</p><p>미국 공식은 위쪽이 더 부드럽고 아래가 더 단단한 이중 밀도Fresh Foam X를 설명합니다. RR주폼29.7AC와 기존14.6HA는 시험 단위가 달라 직접 비교하지 않습니다. 스택이 높다고 무릎·발목 보호가 입증된 것은 아닙니다.</p>
+<h2>러그6mm와3.3mm, 출처를 먼저 읽기</h2><p>미국 남성 공식은6mm 러그를 주장하고 RR은3.3mm를 측정했습니다. DOR은 제조사6mm와 유통사4.5mm 차이를 재인용했지만,4.5mm를 이번에 직접 측정·재확인한 값으로 쓸 수 없습니다. 위치·검체가 같은 시험인지 확인되지 않아 평균이나 오타 교정으로 해결하지 않습니다.</p><p>Vibram 이름·러그 깊이만으로 젖은 바위·진흙 안전을 판정하지 않습니다. 이번 정확 랩의 접지 계수는 미확인입니다. 록 플레이트가 없다는 DOR 설명도 모든 날카로운 돌 자극이 그대로 전달된다는 보장은 아닙니다.</p>
+<h2>저드롭과 시착: 반업보다 길이·고정 확인</h2><p>미국 공시는 약4mm, RR실측은4.2mm입니다. 제조사는 개발·제조 차이에 따른 근삿값임을 밝힙니다. 낮은 드롭 하나만으로 힐 착지 러너의 아킬레스 위험을 확정하거나 미드풋 전용을 정하지 않습니다.</p><p>최광폭94.7mm·엄지73.4mm·높이26.7mm와 David의 여유 체감은 다른 종류의 자료입니다. RR반사이즈 작게 투표와 미국 정사이즈 안내도 개인에게 똑같이 적용되지 않습니다. 반업 후 앞코는 남지만 내리막에서 발이 밀리는지도 확인하세요.</p>
+<h2>한국 판매·출시 소식은 확인한 것만 남깁니다</h2><p>한국 실운영www/pay 페이지가403·캐시 미스로 열리지 않아 검색 후보SKU·QA서버값을 채택하지 않았습니다. 현재 가격·성별 폭·선택재고는 미확인입니다. 미국 남성D/2E/4E·여성B/D/2E가 한국 와이드 판매를 뜻하지 않습니다.</p><p>기존7/9 신규 컬러 출시·189,000원 정가, 공식42/38mm와 모든 신컬러 동일 스펙 확정은 이번 원문에서 재확인하지 못해 제거했습니다. 미국 공시 무게310/253g(사이즈 미확인), RR브랜드297/234g(사이즈 미확인)·33/29mm와 RR실측을 나눠 봅니다.0.9mm국소마모·힐패딩5/5로600km 수명·km당315원을 만들었던 설명도 철회했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nbkorea.com/" target="_blank" rel="noopener noreferrer">뉴발란스 한국 공식 접근 범위</a> — 실운영 www/pay 원문 접근 실패. 검색 후보SKU·QA서버값 미채택.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/MTHIERV9-50176.html?dwvar_MTHIERV9-50176_style=MHIER51M" target="_blank" rel="noopener noreferrer">미국 공식 남성</a> — 310g·약4mm·러그6mm 주장·해외 폭. 한국 가격 근거 아님.</li><li><a href="https://www.newbalance.com/pd/fresh-foam-x-hierro-v9/WTHIERV9-50177.html?dwvar_WTHIERV9-50177_style=WHIER2RF" target="_blank" rel="noopener noreferrer">미국 공식 여성</a> — 253g·약4mm·해외 폭. 한국 판매 미확인.</li><li><a href="https://runrepeat.com/new-balance-fresh-foam-x-hierro-v9" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/monday-shakeout-spring-2025-trail-shoe/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
     faqs: [
       {
-        question: '히에로 v9, 초보 트레일 러너도 신을 수 있나요?',
-        answer: '네, 오히려 입문에 좋은 편입니다. 쿠션이 두툼하고(SA 힐 131) 비틀림 강성 5/5로 플랫폼이 안정적이라, 발목·무릎 부담이 적고 자갈길·둘레길에서 편안합니다. 다만 4mm 저드롭이라 뒤꿈치로 강하게 착지하는 힐 스트라이커라면 아킬레스에 약간 부담이 될 수 있으니, 처음엔 짧은 거리부터 적응하는 것을 권합니다. 험한 기술 코스가 아닌 완만한 트레일부터 시작한다면 좋은 입문 트레일화입니다.',
+        "question": "러그가6mm인가요3.3mm인가요?",
+        "answer": "미국 공식 주장은6mm이고 RR해당 검체 실측은3.3mm입니다. DOR의4.5mm 유통사 재인용은 직접 재확인한 실측이 아닙니다."
       },
       {
-        question: '발볼이 넓은데 히에로 v9 신어도 되나요?',
-        answer: '토박스가 엄지 기준 73.4mm로 표준 범위지만, RunRepeat이 "토룸(발가락 공간)이 좁다"고 지적했습니다. 발볼이 넓다면 반 사이즈 여유를 두거나 시착 후 구매를 권합니다. 해외 시장엔 2E·4E 와이드가 있으나 한국 공식몰은 남성 D·여성 B뿐이니, 와이드가 꼭 필요하다면 와이드 옵션이 확실한 살로몬 울트라 글라이드 4 와이드를 고려하세요.',
+        "question": "한국 와이드와 정가는요?",
+        "answer": "한국 정확 실운영 상품 본문을 확보하지 못해 현재 정가·와이드·재고는 미확인입니다. 해외 폭을 국내 판매로 옮기지 않습니다."
       },
       {
-        question: '히에로 v9 vs 스피드고트 6, 뭐가 다른가요?',
-        answer: '둘 다 쿠션 트레일화지만 무대가 다릅니다. 히에로 v9는 자갈길·임도·로드투트레일 같은 완만한 지형에 최적화된 "쿠션 올라운더"이고, 호카 스피드고트 6는 젖은 바위·진흙·급경사까지 아우르는 "만능 그립" 성격이 강합니다. 험한 기술 코스를 자주 간다면 스피드고트, 둘레길·자갈 트레일을 푹신하게 오래 달린다면 히에로가 맞습니다.',
-      },
-      {
-        question: '히에로 v9로 도로(로드)도 뛸 수 있나요?',
-        answer: '가능하지만 도로 전용은 아닙니다. 두툼한 쿠션 덕에 트레일 접근용 도로 구간(로드투트레일)은 편안하게 소화하지만, Vibram Megagrip 러그(3.3mm)가 아스팔트에서는 마모가 빨라지고 발밑이 다소 딱딱하게 느껴질 수 있습니다. 도로 위주라면 같은 뉴발의 1080 v15 같은 로드 쿠션화가, 트레일 위주에 가끔 도로가 섞인다면 히에로가 낫습니다.',
-      },
-      {
-        question: '이번 주 나오는 신컬러와 기존 컬러, 성능 차이가 있나요?',
-        answer: '없습니다. 7/9 한국에 풀리는 것은 히에로 v9의 신규 컬러웨이일 뿐, 미드솔·아웃솔·핏 등 성능 사양은 기존 v9와 동일합니다. 즉 이 리뷰의 모든 수치와 평가는 신컬러에도 그대로 적용됩니다. 컬러 취향에 따라 고르면 되고, 기존 컬러가 세일 중이라면 그쪽이 가성비가 더 좋을 수 있습니다.',
-      },
+        "question": "힐 착지면 피해야 하나요?",
+        "answer": "드롭 하나로 특정 착지 러너의 부상 위험·금지를 정할 근거는 부족합니다. 자신의 실제 고정·전환·증상을 별도로 확인하세요."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "running-shoes-recommend-by-price-2026",

@@ -5837,253 +5837,43 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'puma-deviate-nitro-3-vs-4-comparison',
-    slug: 'puma-deviate-nitro-3-vs-4-comparison',
-    title: '푸마 디비에이트 나이트로 3 vs 4 비교 | 좁은 핏·450km의 끝 — 와이드 옵션과 800km 내구성으로 갈아탄 가성비 카본 슈퍼트레이너',
-    description: '219,000원 동일 가격, 푸마 디비에이트 나이트로 3 vs 4 세대 비교. v4는 와이드 상품을 따로 냈고, 무게 268→250g·드롭 10→8mm·내구성 450→800km로 개선. 발볼 넓은 한국 러너·업템포 훈련용 가성비 카본 슈퍼트레이너 구매 가이드.',
-    thumbnail: '/images/shoes/puma/deviatenitro4/side.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['푸마 디비에이트 나이트로', '디비에이트 나이트로 3', '디비에이트 나이트로 4', '슈퍼트레이너 비교', '카본 슈퍼트레이너', 'PWRPLATE', 'NITROFOAM', '업템포 트레이닝', '가성비 카본화', '쿠션화', '와이드 옵션'],
+    id: "puma-deviate-nitro-3-vs-4-comparison",
+    slug: "puma-deviate-nitro-3-vs-4-comparison",
+    title: "디비에이트 나이트로3 vs4 —800km·와이드 보장 대신, 전족 전환·핏 비교",
+    description: "RR268/247g·드롭10.1/7mm와 카본PWRPLATE를 비교합니다.800/450km·질환별 추천·반업 필수·국내 와이드 단정을 철회하고 SKU별 한국 가격 확인 범위를 정리했습니다.",
+    thumbnail: "/images/shoes/puma/deviatenitro4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "디비에이트 나이트로3",
+      "디비에이트 나이트로4",
+      "푸마",
+      "전족 전환"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가격은 똑같이 219,000원인데 거의 다 좋아졌습니다</strong> — v4는 무게 268→250g, 드롭 10→8mm, 내구성 450→800km(약 2배), 그리고 v3의 고질병이던 좁은 핏에 <strong>와이드 상품</strong>을 따로 추가</li>
-    <li>철학 변화: v3 = Nitro Foam + Nitro Elite 듀얼폼(단단하고 직접적), v4 = <strong>듀얼 레이어 NITROFOAM(상단 PEBAX 100% + 하단 PEBA 블렌드)</strong>로 착지는 더 부드럽고 추진은 더 강하게</li>
-    <li>결론: <strong>발볼 표준~넓음·업템포 훈련용이라면 사실상 v4가 정답.</strong> v3는 세일 18만원대로 떨어졌을 때 발볼 좁은 러너의 가성비 카드로만 의미가 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">왜 이 비교를 쓰나 — "디비에이트 나이트로 4 디시" 검색이 많아서</p>
-    <p>푸마 디비에이트 나이트로는 <strong>219,000원에 카본(합성) 플레이트를 박은 가성비 슈퍼트레이너</strong>로 한국 러너 사이에서 조용히 인기가 올라온 모델입니다. 마하 X 3(₩249,000)·슈퍼블라스트 3(₩259,000)보다 3~4만원 싸면서 카본 추진력을 주거든요. 그런데 v3가 "발볼이 너무 좁다"는 평이 많았고, v4가 그 약점을 정조준해 나왔습니다. 이 글은 <strong>지금 v4를 살지, 세일 들어간 v3를 주울지</strong> 발볼·내구성·가격 관점에서 정리한 비교입니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>디비에이트 나이트로 3 (v3)</th><th>디비에이트 나이트로 4 (v4)</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>카테고리</strong></td><td>쿠션화 (슈퍼트레이너)</td><td>쿠션화 (슈퍼트레이너)</td><td>동일</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>219,000원</td><td>219,000원</td><td><strong>동일</strong></td></tr>
-    <tr><td><strong>세일가 (실측 기준)</strong></td><td><strong>185,000원~</strong> (이전 세대라 더 내려감)</td><td>190,000원~</td><td>v3가 세일 메리트 ↑</td></tr>
-    <tr><td><strong>무게</strong></td><td>268g</td><td><strong>250g</strong></td><td>-18g (체감되는 차이)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37.4mm (Lab)</td><td>33.6mm (Lab) · 공식 38mm</td><td>Lab 기준 -3.8mm (낮아짐)</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>27.3mm (Lab)</td><td>26.6mm (Lab) · 공식 30mm</td><td>Lab 기준 -0.7mm (사실상 동일)</td></tr>
-    <tr><td><strong>드롭</strong></td><td>10mm (Lab 10.1mm)</td><td><strong>8mm</strong> (Lab 7.0mm)</td><td>공식 -2mm · Lab -3.1mm (자연스러운 전환)</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>Nitro Foam + Nitro Elite 듀얼폼</td><td><strong>듀얼 레이어 NITROFOAM (상단 PEBAX 100% + 하단 PEBA 블렌드)</strong></td><td>폼 구성 개편</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>카본 플레이트 (PWRPLATE, curved)</td><td>카본 합성 PWRPLATE (curved)</td><td>유지</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>8/10</td><td><strong>9/10</strong></td><td>+1</td></tr>
-    <tr><td><strong>쿠션 점수</strong></td><td>8/10</td><td>8/10</td><td>동일</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>7/10</td><td>7/10</td><td>동일</td></tr>
-    <tr><td><strong>내구성</strong></td><td>450km</td><td><strong>800km</strong></td><td>+350km (약 1.8배)</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 410원</td><td><strong>약 274원</strong></td><td>v4 압도적 가성비</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>PumaGrip 러버</td><td>PUMAGRIP 러버</td><td>동일 (접지력 강점)</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>니트 어퍼</td><td>엔지니어드 메쉬 + PWRTAPE (20% 재활용)</td><td>재설계</td></tr>
-    <tr><td><strong>발볼 / 토박스</strong></td><td><strong>좁음 (랩 69.7mm)</strong></td><td>좁은 편 (랩 70.6mm, v3보다 0.9mm 넓음)</td><td>일반 폭은 여전히 좁음</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td><strong>없음</strong></td><td><strong>있음</strong></td><td>한국 러너에게 큰 차이</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 — "좁고 빡빡하던 v3"에서 "와이드가 생긴 v4"로</h2>
-
-<p>v3와 v4는 가격(둘 다 219,000원)도 같고 카본 PWRPLATE 슈퍼트레이너라는 정체성도 같습니다. 하지만 <strong>설계는 v3의 약점을 거의 그대로 뒤집는 방향</strong>으로 바뀌었습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">구(v3) ↔ 신(v4) 설계 철학 비교</p>
-    <table>
-      <thead>
-        <tr><th></th><th>v3 — Nitro Foam + Nitro Elite (구)</th><th>v4 — 듀얼 레이어 NITROFOAM (신)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>폼 구성</strong></td><td>Nitro Foam(하단) + Nitro Elite(상단) 듀얼폼. 단단하고 직접적인 착지감</td><td>상단 PEBAX 100% + 하단 PEBA 블렌드. 착지는 부드럽게 받고 추진은 강하게</td></tr>
-        <tr><td><strong>핏 철학</strong></td><td>좁고 감싸는 니트 어퍼 — 발이 빡빡하게 잡힘</td><td>일반 폭 토박스는 여전히 좁은 편(70.6mm) + 엔지니어드 메쉬 — 대신 와이드 상품 별도</td></tr>
-        <tr><td><strong>드롭/전환</strong></td><td>10mm — 힐스트라이크에 무난하나 높은 편</td><td>8mm — 미드풋 전환이 더 자연스러움</td></tr>
-        <tr><td><strong>내구성 전략</strong></td><td>450km — 훈련화치고 아쉬움. 세일가로 상쇄</td><td>800km — 정가 사도 km당 274원, 가성비로 정면 승부</td></tr>
-        <tr><td><strong>약점</strong></td><td>좁은 발볼·낮은 내구성·다소 무거움(268g)</td><td>신상이라 세일 메리트 적음 — 그게 거의 유일한 단점</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<p>핵심은 <strong>"카본 추진력은 유지하면서, 한국 러너가 불편해하던 부분을 다 손봤다"</strong>는 점입니다. 발볼, 무게, 내구성, 드롭 — v3 리뷰에서 반복되던 불만 4가지를 v4가 정조준했어요.</p>
-
-<h2>6가지 핵심 변화 점검</h2>
-
-<h3>1. 좁은 핏 → 와이드 상품 추가 ✅ 가장 큰 변화</h3>
-<p>v3의 최대 약점은 누가 뭐래도 <strong>좁은 발볼</strong>이었습니다. RunRepeat 랩 토박스가 69.7mm(평균 73.2mm)로 70mm 미만의 좁은 편이고 본 사이트 신발 DB도 "좁음"으로 분류하며, 해외 리뷰에서도 반 사이즈 업 권장이 반복됐어요. v4도 일반 폭 토박스는 RunRepeat 랩 70.6mm로 좁은 편이지만, <strong>와이드 상품이 따로 나왔습니다</strong>(kr.puma.com, 정가 219,000원). 발볼 넓은 한국 러너에게는 이 한 줄이 구매 결정을 바꾸는 변화입니다.</p>
-
-<h3>2. 무게 268g → 250g ✅ 체감되는 18g 다이어트</h3>
-<p>18g은 슈퍼트레이너 카테고리에서 무시 못 할 차이입니다. 업템포 훈련에서 발이 가볍게 떨어지는 감각이 좋아졌습니다. 다만 스택은 늘지 않았습니다. RunRepeat 랩끼리 보면 힐 37.4→33.6mm(-3.8mm), 전족부 27.3→26.6mm(-0.7mm)로 오히려 낮아져, "쿠션을 더 얹었다"기보다 가볍고 낮아진 쪽입니다(v4 공식 표기는 38/30mm).</p>
-
-<h3>3. 폼 개편 — PEBAX 상단 도입 ✅ 착지가 부드러워짐</h3>
-<p>v3의 Nitro Foam + Nitro Elite는 "단단하고 직접적"이라는 평이었는데, v4는 <strong>상단을 PEBAX 100%로 깔아 착지 충격을 부드럽게 받고 하단 PEBA 블렌드가 밀어주는</strong> 구조입니다. 반응성 점수가 8→9로 오른 게 이 변화의 결과예요. 단단한 직결감을 좋아했다면 오히려 v3가 취향일 수도 있습니다.</p>
-
-<h3>4. 드롭 10mm → 8mm ✅ 미드풋 전환 자연스러움</h3>
-<p>드롭 2mm 감소. 미드풋~전방 착지 러너에게 더 자연스러운 전환을 줍니다. 다만 10mm 드롭에 익숙한 힐스트라이크 러너라면 종아리·아킬레스 부담이 살짝 늘 수 있어 초반 적응 기간이 필요합니다.</p>
-
-<h3>5. 내구성 450km → 800km ✅ 가성비의 핵심</h3>
-<p>이게 v4의 진짜 한 방입니다. v3의 450km는 카본 슈퍼트레이너치고도 아쉬운 수치였는데, v4는 <strong>800km로 거의 2배</strong>. 같은 정가 219,000원에서 km당 비용이 410원 → <strong>274원</strong>으로 떨어집니다. 엔돌핀 스피드 5(500km, 동일 가격)와 비교해도 300km를 더 굴릴 수 있다는 뜻이라 가성비 우위가 분명합니다.</p>
-
-<h3>6. 어퍼 니트 → 엔지니어드 메쉬 ⚠️ 취향 갈림</h3>
-<p>v3의 부드러운 니트 어퍼를 좋아했다면 v4의 엔지니어드 메쉬 + PWRTAPE는 약간 더 구조적이고 단단한 감각으로 느껴질 수 있습니다. 대신 지지력과 통기성은 v4가 낫고, 20% 재활용 소재가 들어가 여름 러닝에도 쾌적합니다(둘 다 여름 적합성 excellent).</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>발볼 표준~넓음 (한국 러너 평균)</td><td><strong>v4</strong></td><td>와이드 상품 별도, v3는 와이드 없음</td></tr>
-    <tr><td>발볼 좁음 + 세일 가성비 우선</td><td>v3 (세일 18만원대)</td><td>좁은 핏이 오히려 잘 맞고 가격 메리트 ↑</td></tr>
-    <tr><td>업템포·템포런 주력 훈련화</td><td><strong>v4</strong></td><td>250g·반응성 9·800km 내구성으로 만능</td></tr>
-    <tr><td>단단하고 직접적인 착지감 선호</td><td>v3</td><td>Nitro Foam 듀얼폼이 더 펌함</td></tr>
-    <tr><td>오래 신고 가성비 극대화</td><td><strong>v4</strong></td><td>800km, km당 274원으로 카본 트레이너 최고 수준</td></tr>
-    <tr><td>v3를 잘 쓰는 중 + 400km 이내</td><td>v3 계속</td><td>멀쩡하면 굳이 교체 불필요</td></tr>
-    <tr><td>미드풋 착지 + 낮은 드롭 선호</td><td><strong>v4</strong></td><td>8mm 드롭이 더 자연스러움</td></tr>
-    <tr><td>힐스트라이크 + 높은 드롭 익숙</td><td>v3 (또는 v4 적응 기간)</td><td>v3 10mm가 익숙한 전환감</td></tr>
-    <tr><td>여러 켤레 운영 — 단단한 1켤레 추가</td><td>v3 (세일)</td><td>로테이션에 펌한 카본 트레이너 한 자리</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — v3 세일이 유일한 반전 카드</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">219,000원 동일가 — 그래서 세일 타이밍이 전부</p>
-    <ul>
-      <li><strong>정가 기준:</strong> 둘 다 219,000원. 같은 값이면 무게·내구성·핏 모두 앞선 <strong>v4가 무조건 유리</strong></li>
-      <li><strong>v3 세일가 (실측):</strong> 185,000원선까지 내려옴. 이전 세대라 시즌 오프·재고 정리에 더 떨어질 여지가 있어 <strong>16만원대까지 노려볼 만함</strong></li>
-      <li><strong>v4 세일가:</strong> 190,000원선. 신상이라 아직 큰 폭 할인은 드뭄</li>
-      <li><strong>분기점:</strong> v3가 v4보다 <strong>4~5만원 이상 싸지고, 본인 발볼이 표준~좁음</strong>이면 그때 v3가 합리적. 그 격차가 안 나면 v4를 사세요</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적인 액션:</strong></p>
-<ul>
-  <li><strong>발볼 넓음 / 와이드 필요:</strong> 고민 없이 v4. v3는 와이드 옵션이 없어 대안이 안 됨</li>
-  <li><strong>발볼 좁음 + 예산 타이트:</strong> v3 세일 16~18만원대를 노리되, 270 신으면 반사이즈 업(275) 시착 필수</li>
-  <li><strong>오래 굴릴 메인 훈련화 1켤레:</strong> 800km·km당 274원의 v4. 정가 주고 사도 결국 가장 쌉니다</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>발볼 넓음 / 평발</td><td><strong>v4</strong></td><td>와이드 상품 별도, 평발 적합성 good</td></tr>
-    <tr><td>무릎 통증 (러너스 니)</td><td>v3 = v4</td><td>둘 다 kneeIssues good, 힐 스택 Lab 37.4mm(v3)·33.6mm(v4) 충격 흡수</td></tr>
-    <tr><td>아킬레스건염</td><td><strong>v4</strong></td><td>드롭 10→8mm로 아킬레스 부담 약간 ↓</td></tr>
-    <tr><td>족저근막염</td><td>v3 = v4</td><td>둘 다 plantarFasciitis good</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>v3 = v4</td><td>둘 다 good, 전족 스택 Lab 27.3mm(v3)·26.6mm(v4)로 비슷</td></tr>
-    <tr><td>과내전 (안정성 필요)</td><td>둘 다 한계 있음</td><td>안정성 7/10 — 심한 과내전은 안정화 별도 권장</td></tr>
-  </tbody>
-</table>
-
-<p>두 신발 모두 안정성 점수는 7/10로 <strong>중립~약한 안정 영역</strong>입니다. 과내전이 심한 평발이라면 슈퍼트레이너보다 전용 안정화가 안전해요. 본인 발 특성에 맞는 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있고, 발볼·무릎 관련 종합 가이드는 아래를 참고하세요.</p>
-<ul>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-</ul>
-
-<h2>비슷한 대안 — 같은 가격대 카본 슈퍼트레이너</h2>
-
-<p>디비에이트 외에 검토할 만한 22만원대 슈퍼트레이너·템포화:</p>
-
-<ul>
-  <li><a href="/shoes/puma-deviate-nitro-4">푸마 디비에이트 나이트로 4</a> — 이 글의 주인공. 250g·800km·와이드 옵션 슈퍼트레이너</li>
-  <li><a href="/shoes/puma-deviate-nitro-3">푸마 디비에이트 나이트로 3</a> — 세일 18만원대, 발볼 좁은 러너의 가성비 카드</li>
-  <li><a href="/shoes/saucony-endorphin-speed-5">사코니 엔돌핀 스피드 5</a> — 동일 219,000원, 나일론 플레이트의 부드러운 추진(내구성 500km)</li>
-  <li><a href="/shoes/asics-superblast-2">아식스 슈퍼블라스트 2</a> — 무플레이트 맥시멀 슈퍼트레이너, 장거리 쿠션 최강</li>
-  <li><a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a> — PEBA + 플레이트, 249,000원 업템포 트레이너</li>
-  <li><a href="/shoes/nike-zoom-fly-6">나이키 줌 플라이 6</a> — ZoomX + 풀카본, 레이스 연습용 트레이너</li>
-  <li><a href="/shoes/nike-vomero-18">나이키 보메로 18</a> — 무플레이트 맥시멀 쿠션(데일리 회복런 분리용)</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. v3 → v4 업그레이드, 돈 값 하나요?</h3>
-<p>v3가 400km 이내로 멀쩡하고 발에 잘 맞으면 그냥 끝까지 신으세요. 다만 <strong>v3의 좁은 핏 때문에 불편했거나 내구성이 아쉬웠다면 v4는 명확한 업그레이드</strong>입니다. 같은 219,000원에 무게·내구성·핏·드롭이 다 좋아졌으니, 새로 사는 입장이면 v4가 정답에 가깝습니다.</p>
-
-<h3>Q. 발볼 넓은데 v3 사도 되나요?</h3>
-<p>권하지 않습니다. v3는 좁은 편(랩 69.7mm)에 와이드 옵션이 없어요. 반 사이즈 업을 권하는 리뷰도 많습니다. <strong>발볼 넓으면 v4 와이드</strong>가 맞습니다(v4 일반 폭도 토박스 70.6mm로 좁은 편). 굳이 v3를 세일로 잡는다면 반드시 반사이즈 업으로 시착하세요. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드 →</a></p>
-
-<h3>Q. v4가 v3보다 부드러운가요, 단단한가요?</h3>
-<p>v4가 더 부드럽습니다. 상단 PEBAX 100% 폼이 착지 충격을 받아줘서 첫 접지가 말랑해졌어요. 반대로 <strong>v3의 단단하고 직접적인 펌한 감각</strong>을 좋아하는 러너도 있습니다. "통통 튀는 직결감"이 취향이면 v3, "부드럽게 받고 밀어주는 느낌"이면 v4입니다.</p>
-
-<h3>Q. 둘 다 풀코스 레이스에 쓸 수 있나요?</h3>
-<p>가능은 하지만, 둘 다 <strong>레이스 본선용 카본 레이서가 아니라 슈퍼트레이너</strong>입니다. 최적 페이스가 4:00~5:30/km로 동일하고, 업템포·템포·하프 페이스 훈련에 최적화돼 있어요. Sub-3:30 이하 풀코스 PR 도전이라면 디비에이트 나이트로 엘리트나 전용 카본 레이서를 따로 두는 게 맞습니다. <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 →</a></p>
-
-<h3>Q. 입문 러너가 첫 신발로 사도 되나요?</h3>
-<p>비추천입니다. 카본(합성) 플레이트 슈퍼트레이너는 종아리·발목 근육에 부하가 큽니다. 두 신발 모두 targetUsers에서 입문 러너는 비추천으로 분류돼 있어요. <strong>입문이라면 중립 데일리 트레이너로 기초 체력을 쌓은 뒤</strong> 슈퍼트레이너로 넘어오세요. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 →</a></p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 값이면 v4, v3는 "발볼 좁음 + 세일"일 때만</p>
-    <p><strong>발볼 표준~넓음·업템포 훈련용·오래 굴릴 메인 1켤레</strong>라면 <a href="/shoes/puma-deviate-nitro-4">디비에이트 나이트로 4</a>입니다. 같은 219,000원에 무게 250g·드롭 8mm·내구성 800km·와이드 옵션까지, v3의 약점을 거의 다 메웠습니다. km당 274원이면 카본 슈퍼트레이너 가성비 최상위권이에요.</p>
-    <p><strong>발볼이 좁은 편 + 단단한 직결감 선호 + 세일 16~18만원대로 잡을 수 있다면</strong> <a href="/shoes/puma-deviate-nitro-3">디비에이트 나이트로 3</a>도 여전히 합리적입니다. 단 발볼 넓으면 절대 무리하지 말고 반사이즈 업 시착부터 하세요.</p>
-    <p><strong>둘 다 처음이고 발볼이 애매하다면</strong> 매장에서 v4 표준 + 와이드를 동시 시착해 토박스 여유를 직접 확인하는 게 가장 정확합니다. v3는 세일가가 충분히 안 떨어졌다면 굳이 고를 이유가 없어요.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 확인</p>
-  <div class="affiliate-cta-buttons">
-    <a href="/shoes/puma-deviate-nitro-4" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">디비에이트 나이트로 4 상세 →</span>
-    </a>
-    <a href="/shoes/puma-deviate-nitro-3" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">디비에이트 나이트로 3 상세 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 일부 링크는 제휴 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>다른 세대 비교</h2>
-
-<p>디비에이트가 "가성비 카본 슈퍼트레이너"라면, 데일리·쿠션·안정 카테고리는 또 다른 신발이 답입니다. 함께 발행된 최신 세대 비교 + 슈퍼트레이너 라인업 비교를 함께 보세요.</p>
-
-<ul>
-  <li><a href="/blog/adidas-supernova-rise-2-vs-3-comparison">아디다스 슈퍼노바 라이즈 2 vs 3 — 가성비 데일리 쿠션화 세대 비교</a></li>
-  <li><a href="/blog/brooks-glycerin-max-1-vs-2-comparison">브룩스 글리세린 맥스 vs 맥스 2 — 맥시멀 쿠션화 세대 비교</a></li>
-  <li><a href="/blog/mizuno-wave-rebellion-flash-2-vs-3-comparison">미즈노 웨이브 리벨리온 플래시 2 vs 3 — 가성비 레이서 세대 비교</a></li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 무플레이트 슈퍼트레이너 세대 비교</a></li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 레이서 세대 비교</a></li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트 러닝화 비교 2026 — 에너지 리턴과 입문자 주의</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-  <li><a href="/compare">신발 직접 비교하기 — 스펙 나란히 보기</a></li>
-</ul>
-
-<p><small>출처: 푸마 글로벌 공식 발표(디비에이트 나이트로 4 변경점) / RunRepeat·Believe in the Run 디비에이트 나이트로 3·4 리뷰 / allrunabout.com DB(2026-06-10 기준). 두 모델 모두 SA·HA·에너지 리턴 등 랩 수치는 DB에 미수록 상태로, 본 글은 스택·드롭·무게·가격·내구성·스펙 점수(1-10) 등 확정 수치로만 비교했습니다. 스택은 처음에 v4 공식값과 v3 랩값을 섞어 비교했던 것을 RunRepeat 랩끼리 다시 계산했습니다(2026-10-23 정정). 일부 수치는 공식 발표·전작 기준 추정이며, 추가 실측 데이터 게시 시 업데이트 예정.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>RR3·4검체는268/247g, 힐/전족스택37.4/27.3mm 대33.6/26.6mm입니다.</li><li>4의 전족PWRPLATE 전환은 리뷰어에게 다르게 맞았습니다.</li><li>800km수명·한국와이드·같은값이면무조건4라는 결론은 원문 근거가 부족해 철회했습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/puma/deviatenitro4/side.webp" alt="디비에이트 나이트로4 — 카본 합성PWRPLATE와 두NITRO층" loading="lazy"/><figcaption>디비에이트 나이트로4 — 카본 합성PWRPLATE와 두NITRO층</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체</th><th>3</th><th>4</th></tr></thead><tbody><tr><td>무게</td><td>268g</td><td>247g</td></tr><tr><td>힐/전족 스택</td><td>37.4/27.3mm</td><td>33.6/26.6mm</td></tr><tr><td>실측 드롭</td><td>10.1mm</td><td>7.0mm</td></tr><tr><td>힐/전족 SA</td><td>132/100</td><td>130/102</td></tr><tr><td>힐/전족 리턴</td><td>60.7/63.4%</td><td>58.1/70.0%</td></tr><tr><td>주폼/보조 경도</td><td>37.7/37.1AC</td><td>33.2/19.9AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>91.5/69.7/24.6mm</td><td>93.8/70.6/26.1mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>4의 전족 전환이 자신에게 맞는지가 핵심</h2><p>두 모델은 카본PWRPLATE를 사용합니다.4는 RR이 상부 순수PEBA·하부PEBA/EVA 혼합으로 설명하고 한국 공식은 서로 다른 두NITRO폼으로 공시합니다. 주폼33.2AC는 아래쪽이며 보조19.9AC의 정확 위치는 미확인입니다.3의 상층을NITROElite로 명명한RR과 정확명칭 미확인이라고 적은DOR도 구분합니다.</p><p>DOR4 리뷰에서 David(남성US9.5)는 낮은 볼륨·외측 로고 압박에도 전족 공간·고정이 괜찮고 단단한 전족 전환을 선호했습니다. Andrea(여성US9.5)는 앞코와 혀 압박은 없었지만 유연한 중족에서 매우 단단한 전족으로 넘어갈 때 저항을 느꼈고 강도를 높일수록 불편했습니다. ‘같은값이면4가무조건유리’라는 결론은 이런 개인차를 놓칩니다.</p>
+<h2>더 큰 앞코 수치가 한국 와이드 판매를 뜻하지 않습니다</h2><p>4검체의 최광폭·엄지너비·높이는 모두3보다 크지만 한국 와이드SKU·폭코드는 이번 원문에서 확인하지 못했습니다. AP를 와이드로 해석하지 않습니다.3를 반업하면 모두 해결되거나 넓은 발은 무조건4와이드라는 기존 지시를 철회했습니다. 실제 규격에서 앞코 길이·높이·발등 압박과 힐 고정을 함께 확인하세요.</p>
+<h2>공시와 실측 드롭·가격 조건을 나눕니다</h2><p>3의 한국 에키덴 공시는265g(UK8)·39/29mm·10mm이고4공시는250g(UK8)·38/30mm·8mm입니다. 위 표의 랩 검체와 섞어 감량·스택 차이를 계산하지 않습니다. 드롭 감소가 아킬레스 부담 감소나 특정 착지 러너에게 더 자연스럽다는 임상 결론도 아닙니다.</p><p>11-09 확인3남성에키덴313422_01은 정가229,000원·판매114,500원·265~290mm선택가능이었고 일반309707_22의219,000원은 캐시입니다.11-10확인4남성312123_27은 정가219,000원·표시122,640원이며250~290은재고없음문구가없고295~325는재고없음이표시됐습니다.4의실제사이즈선택·결제는미시험입니다. 서로 다른상품·시점의조건이며 지금도 같은 할인·재고라는 보장은 아닙니다.</p>
+<h2>수명·비용·질환별 승자는 제거했습니다</h2><p>3의450km와4의800km, km당487/274원, 다른신발640km연구의전용과400km미만이면계속신으라는 기준은 확인한원문으로 입증하지 못했습니다.4의갑피·힐패딩각1/5와아웃솔0.6mm마모도부위별결과이며800km수명이아닙니다. 질환별good등급·평발추천·입문자일괄금지·Sub3:30이하전용레이서필수 같은 처방도 철회했습니다. 새 신발의 필요성은 현재 압박·고정·마모 변화와 실제 주행 조건에서 판단할 수 있습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=27&amp;dwvar_312123_size=0240" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312123_27 · men: KR male running category plus non-Wns product</a> — 219000원 정가·219000원 캐시 판매가. 3 weeks ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=30&amp;dwvar_312123_size=0220" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312123_30 · men</a> — 219000원 정가·122640원 캐시 판매가. 3 days ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Edeviate-nitro-4-wns/312124.html?dwvar_312124_color=30" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312124_30 · women</a> — 219000원 정가·175200원 캐시 판매가. 2 months ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=27" target="_blank" rel="noopener noreferrer">한국 공식 남성 실시간 확인</a> — 312123_27 정가219,000·표시122,640원. 사이즈별 문구만 관찰, 선택·결제 미시험.</li><li><a href="https://runrepeat.com/puma-deviate-nitro-4" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/puma-deviate-nitro-4-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul><h2>3세대 확인 원문</h2><p><a href="https://runrepeat.com/puma-deviate-nitro-3" target="_blank" rel="noopener noreferrer">3세대 RR</a> · <a href="https://www.doctorsofrunning.com/puma-deviate-nitro-3-review-2024/" target="_blank" rel="noopener noreferrer">3세대 DOR</a> · <a href="https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-3-에키덴-%3Cbr%3Edeviate-nitro-3-ekiden/313422.html?dwvar_313422_color=01" target="_blank" rel="noopener noreferrer">한국3에키덴 확인SKU</a></p>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "4는800km로 두배 가까이 오래가나요?",
+        "answer": "그런 공통 수명 차이를 입증하지 못해450/800km와km당비용 우열을 철회했습니다."
+      },
+      {
+        "question": "발볼이 넓으면4와이드인가요?",
+        "answer": "이번 한국 정확 원문에서 와이드SKU·문자폭을 재확인하지 못했습니다. 랩치수 차이가 국내와이드 판매를 뜻하지 않습니다."
+      },
+      {
+        "question": "4의낮은드롭이아킬레스에더좋나요?",
+        "answer": "드롭 감소만으로 질환 부담 감소를 입증할 수 없습니다. 기존 질환별등급·승자표를 철회했습니다."
+      }
+    ],
   },
   {
     id: 'brooks-glycerin-max-1-vs-2-comparison',

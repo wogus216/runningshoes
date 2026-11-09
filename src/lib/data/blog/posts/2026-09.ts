@@ -4070,153 +4070,82 @@ export const posts_2026_09: BlogPost[] = [
 `,
   },
   {
-    id: 'puma-magnify-nitro-3-review',
-    slug: 'puma-magnify-nitro-3-review',
-    title: '푸마 매그니파이 나이트로 3 후기 | PEBA 맥시멀 쿠션을 20만원 이하에 — 부상 예방 전 항목 최상위',
-    description:
-      '매그니파이 나이트로 3는 199,000원에 40mm PEBA 맥시멀 쿠션을 제공합니다. 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent(최상위)입니다. RunRepeat 실측 종합 91점(Superb)으로 이 사이트가 다룬 맥시멀 쿠션화 중 최고 점수입니다. 264g으로 맥시멀치고 가벼운 편이지만, 빠른 페이스에는 맞지 않습니다.',
-    thumbnail: '/images/blog/puma-magnify-nitro-3-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['푸마 매그니파이 나이트로3', 'PEBA 폼', '맥시멀 쿠션', '무릎 보호 러닝화'],
+    id: "puma-magnify-nitro-3-review",
+    slug: "puma-magnify-nitro-3-review",
+    title: "매그니파이 나이트로3 리뷰 — 부상 예방 등급 철회, 전환·발등·핏으로 보기",
+    description: "261g·37.4/25.9mm·11.5mm 실측과 공식10mm를 나눕니다. PEBA계 NITROFOAM, DOR의 서로 다른 니트·전환 경험, 한국 성별 캐시 가격과 미확인을 정리합니다.",
+    thumbnail: "/images/shoes/puma/magnifynitro3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "매그니파이 나이트로3",
+      "푸마",
+      "스펙 검증",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>199,000원에 40mm PEBA 맥시멀 쿠션</strong> — RunRepeat 실측 종합 <strong>91점(Superb)</strong>을 받았습니다</li>
-    <li><strong>부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent(최상위)</strong>입니다</li>
-    <li><strong>드롭 표기가 갈립니다.</strong> 브랜드 공식은 10mm인데 RunRepeat 실측은 11.5mm였습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>무릎·관절 보호가 필요한 장거리·회복주 러너</strong>에게 가성비 좋은 선택입니다. 빠른 페이스 훈련까지 겸하려 한다면 맞지 않는, 용도가 명확한 신발입니다.</p>
-  </div>
-</div>
-
-<h2>20만원 이하 PEBA 맥시멀 쿠션</h2>
-<p>199,000원으로 <a href="/shoes/hoka-bondi-9">본디 9</a>(229,000원 안팎)보다 저렴하면서 40mm 맥시멀 스택과 PEBA 기반 Nitro Foam을 제공합니다. RunRepeat 실측 종합 점수는 <strong>91점(Superb)</strong>으로, 이 사이트가 다룬 맥시멀 쿠션화 중 최고 점수입니다. 264g은 같은 스택의 다른 맥시멀 쿠션화보다 가벼운 축에 속하고, 통기성도 우수해 한국 여름철 장거리에도 무난합니다.</p>
-
-<h2>부상 예방 등급이 전부 최상위인 이유</h2>
-<p>족저근막염·아킬레스건염·무릎·신 스플린트 <strong>네 항목 모두 excellent(최상위) 등급</strong>입니다. 40mm 힐 스택이 충격을 최대한 흡수하는 쪽으로 설계됐고, 안정성 점수도 7/10으로 맥시멀 쿠션화치고 흔들림이 적습니다. 무릎이나 정강이 통증이 걱정되는 러너에게는 이 등급 자체가 구매 이유가 될 수 있습니다.</p>
-
-<h2>드롭 10mm vs 11.5mm — 왜 다른가</h2>
-<p>브랜드 공식 드롭 표기는 10mm인데, RunRepeat 실측은 11.5mm였습니다. 이런 괴리는 <a href="/shoes/puma-magmax-nitro-2">같은 브랜드의 다른 모델</a>에서도 나타난 패턴입니다 — 미드솔 형상이나 측정 지점 차이로 종종 발생하며, 체감상 큰 차이는 아니라는 평가가 일반적입니다.</p>
-
-<h2>발볼 — 한국 러너가 궁금해할 것</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준(standard)이라 대부분 무난하지만, 와이드 옵션은 없어 발볼이 아주 넓다면 매장 착화를 권합니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 good이고 부상 예방 등급도 전부 최상위라, 아치 지지보다 충격 흡수로 접근하는 러너에게 맞습니다</li>
-  <li><strong>"빠르게 뛸 수 있나요?"</strong> — 반응성 점수는 9/10으로 높은 편입니다(RunRepeat 측정 에너지 리턴 힐 65.2%·전족 73.6%). 다만 플레이트가 없고 로커가 강하지 않은 10mm 드롭의 클래식한 맥시멀 형태라, 템포·인터벌 전용화로 쓰기보다는 회복·이지 페이스 중심으로 쓰는 편이 맞습니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>500km 기준 km당 약 398원으로 맥시멀 쿠션화 카테고리에서 가성비가 뛰어난 축입니다. 같은 가격대에서 드롭이 낮은(4mm) 쪽을 원한다면 <a href="/shoes/new-balance-1080-v14">1080 V14</a>를, 예산을 높여 최고 쿠션을 원한다면 <a href="/shoes/hoka-bondi-9">본디 9</a>를 비교해볼 수 있습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>무릎·정강이 부담이 커 최대 쿠션이 필요한 러너</strong> — 부상 예방 등급 전부 최상위</li>
-  <li><strong>회복주·장거리 위주로 뛰는 러너</strong></li>
-  <li><strong>가성비 있는 맥시멀 쿠션화를 찾는 러너</strong> — km당 약 398원</li>
-  <li>반대로 <strong>빠른 페이스 훈련이나 경량화를 원하는 러너</strong>라면 반발은 높아도 플레이트·로커가 없는 맥시멀 쿠션화인 이 신발보다 다른 카테고리가 맞습니다</li>
-</ul>
-<p>비슷한 맥시멀 쿠션화를 더 비교하고 싶다면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>에서 확인할 수 있습니다.</p>
-
-<h2>마무리</h2>
-<p>매그니파이 나이트로 3는 "무릎 보호가 필요한데 예산은 제한적"이라는 질문에 정확히 답하는 신발입니다. RunRepeat의 91점(Superb)과 전 항목 최상위 부상 예방 등급이 이를 뒷받침합니다. 다만 반응성 점수(9/10)와 달리 플레이트·강한 로커가 없는 맥시멀 쿠션화라는 성격을 알고, 용도를 회복주·장거리로 좁혀서 쓰는 게 만족도를 높이는 길입니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>기존 ‘부상 예방 전 항목 최상위’는 모델별 임상 근거를 확인하지 못해 철회했습니다.</li><li>랩 SA136/99와 리턴65.2/73.6%는 다른 시험입니다.</li><li>한국 캐시 정가는199,000원이지만 현재 가격·와이드·재고는 미확인입니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/puma/magnifynitro3/side.webp" alt="매그니파이 나이트로3 — 전장 NITROFOAM과 니트 어퍼" loading="lazy"/><figcaption>매그니파이 나이트로3 — 전장 NITROFOAM과 니트 어퍼</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>261g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>37.4/25.9mm·11.5mm</td></tr><tr><td>힐/전족부 SA</td><td>136/99</td></tr><tr><td>힐/전족부 리턴</td><td>65.2/73.6%</td></tr><tr><td>폼 경도</td><td>32.3AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>96/72.3/26mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>신발 구조가 질환 예방 등급을 입증하지 않습니다</h2><p>기존 글은 족저근막·아킬레스·무릎·정강이 네 항목에 최상위 예방 등급을 붙이고 그것을 구매 이유로 제시했습니다. 확인한 모델별 임상자료가 없어 해당 등급과 평발 회복 보장·관절 보호 추천을 제거했습니다. 높은 스택·SA·에디터 안정성 점수는 질환별 예방 효과가 아닙니다.</p><p>RR과 DOR은 PEBA계 전장NITROFOAM으로 설명합니다. 다만 이번 원문에서 플레이트 유무의 명시적 근거를 재확인하지 못해 미확인으로 남겼습니다. 데일리 분류만으로 보강 구조 유무를 확정하지 않습니다.</p>
+<h2>착화에서는 낮은 볼륨과 니트 체감이 달랐습니다</h2><p>DOR 직접 원문은403으로 열리지 않아 검색엔진에 보존된 정확 원문 본문 확인 범위입니다. Matt(남성US10)은 정사이즈지만 전체 밀착·빠른 측면 테이퍼·거친 내피, 둔한 힐 전환을 적었습니다. David(남성US9.5)는 처음의 밀착이 완화되고 약간 여유 있는 전족·편한 니트·자연스러운 전환을 느꼈지만 통기는 더 원했습니다. RR구방식 통기5/5와 개인의 더운 니트 체감을 한여름 쾌적 보장으로 합치지 않습니다.</p><p>실제 규격에서 니트가 발등을 누르는지, 끈을 조여야 힐이 고정되는지 확인할 수 있습니다. 내부 최광폭96mm·엄지72.3mm·높이26mm가 모든 한국 발에 맞는다는 뜻은 아닙니다.</p>
+<h2>10mm공시와11.5mm실측을 체감상 같다고 지우지 않기</h2><p>한국 공시는260g(UK8)·40/30mm·10mm, DOR 소개는264g(남성US9)/227g(여성US8)·40/30mm·10mm입니다. 한국 남녀 페이지의 동일260g UK8문구를 여성US8 검체값으로 바꾸지 않습니다. RR261g·37.4/25.9mm·11.5mm와 분리합니다. 차이 원인과 개인 체감은 이번 자료로 확정하지 않았습니다.</p><p>RR 본문에SA136/99를 에너지 리턴이라고 부른 문장이 있어도 실제 리턴65.2/73.6%와 혼용하지 않습니다. 갑피 국소시험5/5·아웃솔마모1.3mm는500km 수명·km당398원의 근거가 아닙니다.</p>
+<h2>한국 캐시 가격의 범위</h2><p>남성311046_01은 정가199,000원·캐시표시127,360원, 여성311047_01은 정가199,000원·캐시159,200원이었습니다. 현재 선택 가격·폭·재고는 미확인입니다. 캐시 장바구니 버튼이나 해외Wide 메타로 현재 한국 구매 가능성을 보장하지 않습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%8B%88%ED%8C%8C%EC%9D%B4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-3-%3Cbr%3Emagnify-nitro-3/311046.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 311046_01 · men/non-Wns</a> — 199000원 정가·127360원 캐시 판매가. today relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%8B%88%ED%8C%8C%EC%9D%B4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-3-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Emagnify-nitro-3-wns/311047.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 311047_01 · women</a> — 199000원 정가·159200원 캐시 판매가. 2 weeks ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://runrepeat.com/puma-magnify-nitro-3" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/puma-magnify-nitro-3-review-2025/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
     faqs: [
       {
-        question: '이 신발로 템포런이나 인터벌을 할 수 있나요?',
-        answer:
-          '주력 템포·인터벌화로는 권장하지 않습니다. 반응성 점수는 9/10(RunRepeat 측정 에너지 리턴 힐 65.2%·전족 73.6%)으로 반발 자체는 높지만, 플레이트가 없고 로커가 강하지 않은 10mm 드롭의 클래식한 맥시멀 형태입니다. 회복주·장거리 중심으로 쓰는 것이 맞습니다.',
+        "question": "무릎 보호 최상위인가요?",
+        "answer": "모델별 임상 근거를 확보하지 못해 기존 질환별 예방 등급을 철회했습니다. SA·스택으로 예방·치료 효과를 보장하지 않습니다."
       },
       {
-        question: '드롭이 10mm인가요 11.5mm인가요?',
-        answer:
-          '브랜드 공식 표기는 10mm입니다. RunRepeat이 신발을 실측한 값은 11.5mm였습니다. 같은 브랜드의 매그맥스 나이트로 2에서도 비슷한 괴리가 나타났습니다.',
+        "question": "평발 회복주에 안전한가요?",
+        "answer": "그런 보편적 효과를 검증하지 못했습니다. 실제 압박·고정·전환과 자신의 증상을 별도로 확인하세요."
       },
       {
-        question: '평발인데 이 신발이 맞을까요?',
-        answer:
-          '평발 호환성이 good으로 평가돼 있고, 부상 예방 등급도 족저근막염·아킬레스건·무릎·신 스플린트 전부 excellent입니다. 아치를 강하게 지지하는 안정화 방식이 불편했다면 이런 충격 흡수 중심 설계가 대안이 될 수 있습니다.',
-      },
+        "question": "현재199,000원인가요?",
+        "answer": "정가는 공식 캐시에서 확인한 값입니다. 남녀 할인표시가 달랐고 현재 가격·폭·재고는 미확인입니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
-    id: 'puma-magmax-nitro-2-review',
-    slug: 'puma-magmax-nitro-2-review',
-    title: '푸마 매그맥스 나이트로 2 후기 | 레이서와 같은 폼을 500km 내구성으로 — 슈퍼트레이너의 정공법',
-    description:
-      '매그맥스 나이트로 2는 NITROFOAM을 힐 45.5mm 고스택(RunRepeat 측정)에 담고 500km 내구성을 갖춘 모델입니다. RunRepeat 실측 종합 83점(Great), 239,000원으로 슈퍼블라스트 2보다 1만원 저렴합니다. 플레이트가 없어 반발력은 카본 슈퍼트레이너보다 한 수 아래지만, 대회 신발과 감각 차이를 줄이려는 로테이션 운용에 맞는 신발입니다.',
-    thumbnail: '/images/blog/puma-magmax-nitro-2-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
+    id: "puma-magmax-nitro-2-review",
+    slug: "puma-magmax-nitro-2-review",
+    title: "매그맥스 나이트로2 리뷰 —45.5mm 스택·로커, ‘레이서와 같은 폼’ 단정 정정",
+    description: "269g·드롭10.5mm 실측과 공식8mm, NITROFOAM의 조성 미확인, DOR Andrea의 쉬운 주행 선호·핏 경험을 나눕니다.500km와 한국 현재 와이드 확정을 철회했습니다.",
+    thumbnail: "/images/shoes/puma/magmaxnitro2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
     readingTime: 7,
-    tags: ['푸마 매그맥스 나이트로2', '슈퍼트레이너', 'PWRPLATE', '장거리 훈련화'],
+    tags: [
+      "매그맥스 나이트로2",
+      "푸마",
+      "로커",
+      "앞코 핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>NITROFOAM(푸마 코리아 공식)을 힐 45.5mm 고스택(RunRepeat 측정)에 담고 훈련용 내구성(500km)을 갖춘 모델</strong>입니다. RunRepeat 실측 종합 83점(Great)</li>
-    <li><strong>플레이트가 없습니다</strong>(공식 페이지에 플레이트 언급 없음, RunRepeat "even without a carbon plate") — 반발력은 카본 슈퍼트레이너보다 완만합니다</li>
-    <li><strong>드롭 표기가 갈립니다.</strong> 브랜드 공식은 8mm인데 RunRepeat 실측은 10.5mm였습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>대회 신발과 같은 착지감을 훈련에서 미리 경험하려는 러너</strong>에게 맞습니다. 플레이트의 반발력 자체를 원한다면 Pebax 플레이트를 넣은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a> 같은 슈퍼트레이너를 먼저 보세요.</p>
-  </div>
-</div>
-
-<h2>레이서와 같은 폼, 다른 목적</h2>
-<p>매그맥스 나이트로 2의 정체성은 <strong>같은 브랜드 최상위 레이서와 짝을 이루는 훈련용 파트너</strong>입니다. 미드솔은 NITROFOAM(푸마 코리아 공식)이고 플레이트는 없으며, 내구성은 500km 기준입니다. 대회 신발과 훈련 신발의 착지 감각 차이를 줄이려는 러너에게 의미 있는 설계입니다. RunRepeat 실측 기준 종합 <strong>83점(Great)</strong>으로, 일상 주행 89점·안정성 88점을 특히 높게 평가했습니다(반대로 템포 38점·레이스 27점으로 용도가 명확히 갈립니다).</p>
-
-<h2>드롭 8mm vs 10.5mm — 왜 다른가</h2>
-<p>RunRepeat이 실측한 드롭은 10.5mm인데, 브랜드 공식 표기는 8mm입니다. 이런 차이는 미드솔 형상이나 측정 지점에 따라 종종 발생하며, 이 사이트는 <a href="/shoes/brooks-ghost-18">다른 모델</a>에서도 이런 괴리를 그대로 병기해왔습니다. 체감상 드롭 차이가 크게 느껴지지 않는다는 평가가 일반적이지만, 드롭에 민감한 러너라면 참고할 만한 수치입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁은 편(RunRepeat 70.4mm, 평균 73.2mm)이고 와이드 옵션이 없어, 발볼이 넓다면 매장 착화를 먼저 하세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 good입니다. 훈련용 신발답게 관절 부담을 줄이는 방향으로 설계됐습니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 good입니다. 안정성 점수도 7/10으로 슈퍼트레이너 중 무난한 편입니다</li>
-</ul>
-
-<h2>가격 대비 가치 — 슈퍼트레이너 3파전 중 가격 우위</h2>
-<p>239,000원은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(249,000원)보다 1만원 저렴합니다. 500km 기준 km당 약 478원으로 훈련용 가성비가 뛰어난 축입니다. 다만 에너지 리턴이 전족 54.6%(RunRepeat 실측, 평균 61.5%)라 Pebax 플레이트를 넣은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(전족 69.3%)나 플레이트 없이 PEBA 폼을 쓴 슈퍼블라스트 2(전족 65.5%)보다는 반발력이 완만합니다 — 반발의 절대치를 우선한다면 이 두 상위 모델이 맞고, 훈련 전반의 비용을 낮추는 게 목적이라면 매그맥스 쪽입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>장거리 템포 훈련이 잦은 중상급 러너</strong> — 레이서와 유사한 착지감을 훈련에서 확보</li>
-  <li><strong>대회 신발과 훈련 신발의 감각 차이를 줄이고 싶은 러너</strong></li>
-  <li><strong>슈퍼트레이너를 가성비 있게 시작하려는 러너</strong></li>
-  <li>반대로 <strong>순수 반발력을 최우선으로 한다면</strong> 에너지 리턴이 더 높은 마하 X 3(Pebax 플레이트)나 슈퍼블라스트 2(플레이트 없는 PEBA 폼)를 먼저 보세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>매그맥스 나이트로 2는 "레이서의 감각을 훈련에서도"라는 컨셉을 정직하게 구현한 슈퍼트레이너입니다. 플레이트가 없다는 한계가 명확하지만, 그만큼 내구성과 가격에서 이득을 봅니다. 카본의 반발력보다 대회 신발과의 일관성을 중시한다면 합리적인 선택입니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>NITROFOAM이라는 이름만으로 레이서와 같은 배합이라고 확인할 수 없습니다.</li><li>RR은45.5/35mm·드롭10.5mm, 공식은46/38mm·8mm입니다.</li><li>여성US9.5 리뷰어의 넉넉한 앞코 체감과 랩93.4/70.4mm 치수는 조건이 다릅니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/puma/magmaxnitro2/side.webp" alt="매그맥스 나이트로2 — 높은 중창과 로커, PUMAGRIP" loading="lazy"/><figcaption>매그맥스 나이트로2 — 높은 중창과 로커, PUMAGRIP</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>269g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>45.5/35mm·10.5mm</td></tr><tr><td>힐/전족부 SA</td><td>141/137</td></tr><tr><td>힐/전족부 리턴</td><td>50.1/54.6%</td></tr><tr><td>폼 경도</td><td>38.1AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>93.4/70.4/29.3mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>‘레이서의 감각을 훈련에서도’라는 결론을 수정했습니다</h2><p>정확 고분자·배합은 이번 원문에서 확인하지 못했습니다. NITROFOAM과 NITROFOAM ELITE의 이름이 비슷하다고 동일 조성·동일 착지감을 뜻하지 않습니다. RR은 카본 플레이트 없는 구조로 설명합니다. 플레이트 유무로 혼자 훈련용 수명이나 개인 반발을 정하지 않습니다.</p>
+<h2>낮은 랩 리턴과 개인의 탄성 선호가 함께 있을 수 있습니다</h2><p>DOR 직접 원문403 이후 검색엔진 원문 캐시에서 확인한 범위입니다. Andrea(여성US9.5)는 다른Puma보다 여유 있는 앞코·볼륨, 좁은 중족과 좋은 힐 고정·두꺼운 혀를 편하게 느꼈습니다. 본인은 부드럽게 구르는 전환과 중앙 고정을 선호해 쉬운 주행에 사용했습니다. 리턴50.1/54.6%와 개인 체감은 시험·조건이 달라 서로를 무효화하지 않습니다.</p><p>공시8mm보다 낮게 느꼈다는 표현도 실측10.5mm를 대체하지 않습니다. 한국275g(UK8), DOR266g(남성US9)/232g(여성US8), RR269g을 같은 검체처럼 계산하지 않습니다.</p>
+<h2>넓은 바닥은 넓은 내부 발볼이 아닙니다</h2><p>RR외부 플랫폼122.9/96.7mm는 지면에 닿는 바닥 폭입니다. 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm와 측정 위치가 다릅니다. Andrea의 여유 체감도 여성US9.5·다른Puma와의 비교 조건이므로 남성 기본 검체나 모든 넓은 발에 일반화하지 않습니다.</p>
+<h2>한국 할인표시·SKU 응답을 구분합니다</h2><p>남성312125_01 캐시는 정가239,000원·표시152,960원, 여성 응답312126_01은239,000원·표시191,200원이었습니다. 여성 요청URL은color02였으나 실제 본문SKU는01이어서 응답대로 기록합니다. 검색에서 보인 다른 색상의 할인값을 현재가로 승격하지 않았습니다. 현재 폭·선택재고·가격은 미확인입니다.</p><p>0.9mm 국소마모를500km로 환산한 비용·수명 설명, 특정질환 good등급과 평발 회복 보장을 철회했습니다. 높은 중창이 개인에게 맞는지는 실제 고정·전환을 확인할 문제입니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%A7%A5%EC%8A%A4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-2-%3Cbr%3Emagmax-nitro-2/312125.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312125_01 · men/non-Wns</a> — 239000원 정가·152960원 캐시 판매가. today relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%A7%A5%EC%8A%A4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-2-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Emagmax-nitro-2-wns/312126.html?dwvar_312126_color=02" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312126_01 · women response page</a> — 239000원 정가·191200원 캐시 판매가. last week relative label; 현재 폭·재고 미확인.</li><li><a href="https://runrepeat.com/puma-mag-max-nitro-2" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/puma-magmax-nitro-2-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
     faqs: [
       {
-        question: '카본 플레이트가 아닌데 슈퍼트레이너라고 할 수 있나요?',
-        answer:
-          '슈퍼트레이너는 반드시 카본이 들어가야 하는 카테고리가 아니라, "레이서급 폼 + 훈련용 내구성"을 결합한 신발군을 말합니다. 다만 매그맥스는 플레이트가 없고 미드솔도 레이서용이 아닌 NITROFOAM(푸마 코리아 공식)이라, 이 정의로 보면 슈퍼트레이너보다 고스택 쿠션화에 가깝습니다. 다만 순수 반발력은 카본이 들어간 모델보다 낮습니다.',
+        "question": "레이싱화와 폼이 같은가요?",
+        "answer": "정확 배합·고분자를 확인하지 못했습니다. NITROFOAM이라는 이름만으로 레이서와 동일하다고 단정하지 않습니다."
       },
       {
-        question: '드롭이 8mm인가요 10.5mm인가요?',
-        answer:
-          '브랜드 공식 표기는 8mm입니다. RunRepeat이 신발을 실측한 값은 10.5mm였습니다. 체감 차이는 크지 않다는 평가가 일반적입니다.',
+        "question": "드롭8mm인데 실측10.5mm인가요?",
+        "answer": "공시는46/38mm·8mm, RR검체는45.5/35mm·10.5mm입니다. 개인의 낮게 느껴졌다는 경험도 다른 자료입니다."
       },
+      {
+        "question": "와이드가 한국에 없나요?",
+        "answer": "이번 원문에서 한국 현재 문자 폭·와이드 판매를 확정하지 못했습니다. 없음으로 단정했던 설명을 철회했습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'puma-fast-r-nitro-elite-3-review',
@@ -5604,89 +5533,42 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'puma-deviate-nitro-elite-4-review',
-    slug: 'puma-deviate-nitro-elite-4-review',
-    title: '푸마 디비에이트 나이트로 엘리트 4 후기 | 170g, 3세대보다 34g 가벼워졌는데 가격은 그대로',
-    description:
-      '엘리트 4는 170g으로 3세대(204g)보다 34g 가벼워졌습니다. 가격은 289,000원으로 동일합니다. RunRepeat 실측 기준 종합 89점(Superb)을 받았고, 토박스도 표준으로 넓어져 발볼 호환성이 개선됐습니다. 3세대를 갈아탈 이유가 뚜렷한 드문 세대교체를 정리했습니다.',
-    thumbnail: '/images/blog/puma-deviate-nitro-elite-4-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
+    id: "puma-deviate-nitro-elite-4-review",
+    slug: "puma-deviate-nitro-elite-4-review",
+    title: "디비에이트 나이트로 엘리트4 리뷰 —173g 실측·A-TPU·PWRPLATE,170g 공시와 구분",
+    description: "RR173g·37.2/28.3mm와 한국170g UK8·40/32mm를 나눕니다. 인솔 분리 상충·리뷰어별 힐 착화와 한국 캐시 가격,400km 수명·34g 감량 단정을 정정했습니다.",
+    thumbnail: "/images/shoes/puma/deviatenitroelite4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
     readingTime: 7,
-    tags: ['푸마 디비에이트 나이트로 엘리트4', 'NITROFOAM ELITE', '카본 레이싱화', '마라톤 슈퍼슈즈'],
+    tags: [
+      "디비에이트 엘리트4",
+      "푸마",
+      "카본",
+      "검체 비교"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>170g — 3세대(204g)보다 34g 가벼워졌습니다.</strong> 가격은 289,000원으로 동일합니다</li>
-    <li><strong>RunRepeat 실측 종합 89점(Superb)</strong>을 받았습니다. 스택은 힐 37.2mm·전족 28.3mm, 드롭 8.9mm입니다</li>
-    <li><strong>토박스가 표준으로 넓어져</strong> 3세대의 좁은 발볼 문제가 개선됐습니다. 다만 와이드 옵션은 여전히 없습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>5K부터 풀 마라톤까지 PR을 노리는 레이스데이 전용 신발</strong>입니다. <a href="/shoes/puma-deviate-nitro-elite-3">3세대</a>를 갖고 있다면 34g 경량화만으로도 갈아탈 이유가 충분하고, 처음 카본 레이싱화를 산다면 알파플라이 3·메타스피드 스카이+보다 저렴한 입문 옵션입니다.</p>
-  </div>
-</div>
-
-<h2>34g — 흔치 않은 확실한 세대교체 이유</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>엘리트 3</th><th>엘리트 4</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>204g</td><td><strong>170g (−34g)</strong></td></tr>
-    <tr><td>스택(힐/전족)</td><td>39.2/28.6mm</td><td>37.2/28.3mm</td></tr>
-    <tr><td>드롭</td><td>10.6mm</td><td>8.9mm</td></tr>
-    <tr><td>토박스</td><td>좁음(narrow)</td><td><strong>표준(standard)</strong></td></tr>
-    <tr><td>가격</td><td>289,000원</td><td>289,000원 (동일)</td></tr>
-  </tbody>
-</table>
-</div>
-<p>같은 가격에 34g이 가벼워졌다는 건 레이싱화 세대교체에서 흔치 않은 확실한 명분입니다. 무게뿐 아니라 <strong>토박스도 좁음(narrow)에서 표준(standard)으로 넓어졌는데</strong>, 3세대의 가장 큰 약점이 발볼 좁음이었던 걸 감안하면 한국 러너에게 실질적인 개선입니다. RunRepeat이 신발을 직접 실측·평가해 <strong>종합 89점(Superb)</strong>을 매겼습니다 — 이 사이트가 자체 확보한 다른 리뷰들과 별개의, 제3자 랩의 독립적인 평가입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 3세대의 좁음(narrow)에서 표준(standard)으로 개선됐습니다. 다만 와이드 옵션은 여전히 없어, 발볼이 아주 넓다면 매장 착화를 권합니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎 전부 caution(주의)입니다. 카본 레이싱화 공통의 한계로, 레이스 전용 운용을 전제로 설계된 신발입니다</li>
-  <li><strong>"초보도 신을 수 있나요?"</strong> — 권장하지 않습니다. 공격적인 카본 플레이트와 낮은 안정성 점수(6/10)는 레이스 경험이 있는 중상급 러너를 겨냥합니다</li>
-</ul>
-
-<h2>가격 대비 가치 — 알파플라이 3보다 5만원 저렴</h2>
-<p>289,000원은 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(339,000원)보다 5만원, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 4만원 저렴합니다. 400km 기준 km당 약 722원으로 레이싱화 카테고리에서는 합리적인 축입니다. 다만 이 단가는 레이스 전용 운용을 전제로 한 것이라, 훈련까지 이 신발로 소화하면 실제 마모는 더 빠릅니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>5K~마라톤 PR을 노리는 러너</strong> — 170g 초경량과 커브드 카본 플레이트의 조합</li>
-  <li><strong>3세대를 신고 있고 발볼 불편을 겪었던 러너</strong> — 토박스 개선이 체감될 가능성이 큽니다</li>
-  <li><strong>처음 카본 레이싱화를 사는 중상급 러너</strong> — 최상위 플래그십인 <a href="/shoes/puma-fast-r-nitro-elite-3">패스트알 나이트로 엘리트 3</a>보다 접근하기 쉬운 입문 옵션</li>
-  <li>반대로 <strong>일상 훈련·회복주까지 겸하려 하거나 평발이 심한 러너</strong>라면 맞지 않습니다</li>
-</ul>
-<p>다른 카본 레이싱화와 비교하고 싶다면 <a href="/best/racing">레이싱화 추천</a>에서 확인할 수 있습니다.</p>
-
-<h2>마무리</h2>
-<p>엘리트 4는 "다음 세대를 사야 할 이유"가 명확한 드문 업데이트입니다. 같은 가격에 34g 경량화와 발볼 개선을 동시에 이뤘고, RunRepeat의 독립 평가(89점 Superb)도 이를 뒷받침합니다. 카본 레이싱화 입문 옵션으로도, 3세대의 후속 선택으로도 설득력 있는 신발입니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>한국남성170g은UK8공시, RR실측은173g입니다.</li><li>A-TPU 기반 NITROFOAM ELITE는 RR 설명으로 귀속하고 전장 카본PWRPLATE와 구분합니다.</li><li>이전 글의34g감량은 서로 다른 공시·검체를 섞은 계산이어서 제거했습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/puma/deviatenitroelite4/side.webp" alt="디비에이트 나이트로 엘리트4 — ULTRAWEAVE·PWRTAPE와 카본PWRPLATE" loading="lazy"/><figcaption>디비에이트 나이트로 엘리트4 — ULTRAWEAVE·PWRTAPE와 카본PWRPLATE</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>173g</td></tr><tr><td>힐/전족부 스택·드롭</td><td>37.2/28.3mm·8.9mm</td></tr><tr><td>힐/전족부 SA</td><td>148/118</td></tr><tr><td>힐/전족부 리턴</td><td>77.4/77.2%</td></tr><tr><td>폼 경도</td><td>37AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>93.6/74.8/26.5mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p>
+<h2>170g과173g, 스택도 세 출처가 다릅니다</h2><p>한국 남성공시는170g(UK8)·40/32mm·8mm입니다. DOR 소개는170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈미확인)·40/32mm·8mm입니다. 실제 RR은173g·37.2/28.3mm·8.9mm입니다. 같은170g이라도 같은 검체라고 확인한 것이 아닙니다.</p><p>이전 글은3세대204g과4세대170g을 섞어34g감량만으로 교체 이유가 충분하다고 했습니다. 공시와 실측 조건이 달라 해당 차이·자동 업그레이드 결론을 철회했습니다. 한국170g을 여성 규격에도 그대로 적용하지 않습니다.</p>
+<h2>얇은 힐 카운터의 체감은 갈렸습니다</h2><p>DOR 직접 원문은403이고 검색엔진에 보존된 정확 원문 본문 확인 범위입니다. Matt(남성US10)은 정사이즈·전족 여유에도 얇은 힐 카운터 자극과 낮은 강도에서 좁은 중족의 흔들림을 느꼈습니다. Andrea(여성US9.5)는 앞코·힐 고정을 편하게 느꼈지만 본인의 중족 착지와 전족 형상이 맞지 않았습니다. 개인의 착지 선호를 모든 미드풋·전족 러너 금지로 바꾸지 않습니다.</p><p>인솔도DOR은 비분리, RR표는 분리 가능으로 상충합니다. 교체 인솔을 쓸 예정이라면 실제 상품의 분리·깊이·고정을 확인해야 합니다. 서로 다른 자료를 평균내어 한쪽으로 확정하지 않습니다.</p>
+<h2>400km 권장과 검증된 수명은 다릅니다</h2><p>제조사 권장 문구가 있더라도 모든 러너의 수명·대회 횟수 상한은 아닙니다. 국소마모0.8mm·갑피1/5·힐패딩4/5도 서로 다른 부위 시험입니다.400km로 계산한km당722원과 레이스 전용 운용 의무를 철회했습니다.</p><p>한국 공식 남성312127_05 캐시는 정가289,000원·표시260,100원, 여성312128_03은289,000원이었으며 캐시의 품절 문구를 현재 전국 재고로 해석하지 않습니다. 현재 가격·폭·사이즈재고는 미확인입니다. 다른 모델보다 무조건 저렴하다는 차액도 이번 확인 조건 없이 반복하지 않습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%97%98%EB%A6%AC%ED%8A%B8-4-%3Cbr%3Edeviate-nitro-elite-4/312127.html" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312127_05 · men/non-Wns category</a> — 289000원 정가·260100원 캐시 판매가. 3 days ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%97%98%EB%A6%AC%ED%8A%B8-4-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Edeviate-nitro-elite-4-wns/312128.html?dwvar_312128_color=03&amp;dwvar_312128_size=0190" target="_blank" rel="noopener noreferrer">한국 공식 캐시 312128_03 · women</a> — 289000원 정가·289000원 캐시 판매가. 5 months ago relative label; 현재 폭·재고 미확인.</li><li><a href="https://runrepeat.com/puma-deviate-nitro-elite-4" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/puma-deviate-nitro-elite-4-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
     faqs: [
       {
-        question: '엘리트 4와 3, 뭐가 다른가요?',
-        answer:
-          '무게가 204g에서 170g으로 34g 가벼워졌고, 토박스가 좁음(narrow)에서 표준(standard)으로 넓어졌습니다. 드롭도 10.6mm에서 8.9mm로 낮아졌습니다. 가격은 289,000원으로 동일합니다.',
+        "question": "170g인가요173g인가요?",
+        "answer": "170g은 한국남성UK8공시,173g은 RR검체입니다. DOR소개170g남성US9도 같은 검체로 확인된 것은 아닙니다."
       },
       {
-        question: 'RunRepeat 평점이 자체 에디터 평점과 다른데 왜 그런가요?',
-        answer:
-          'RunRepeat은 신발을 직접 실측·테스트하는 제3자 랩입니다(종합 89점 Superb). 이 사이트의 에디터 분석은 국내 공식몰 스펙과 Believe in the Run 등 다른 소스를 종합한 별개의 평가라 수치가 다를 수 있습니다. 두 출처 모두 참고용으로 병기합니다.',
+        "question": "인솔을 바꿀 수 있나요?",
+        "answer": "DOR비분리와RR분리가능 표가 상충합니다. 실제 구매할 상품의 분리·깊이·고정을 확인하세요."
       },
       {
-        question: '알파플라이 3 대신 이걸 사도 될까요?',
-        answer:
-          '용도가 맞다면 충분히 대안이 됩니다. 170g(푸마 공식, UK 8)으로 알파플라이 3(나이키 공식 280mm 기준 218g, 랩 실측 남성 US 9 기준 201g)보다 가볍고 가격은 5만원 저렴합니다. 다만 카본화 효과는 러너마다 차이가 크다는 연구가 있어, 가능하다면 매장에서 먼저 착화해보는 것을 권합니다.',
-      },
+        "question": "400km에서 꼭 교체해야 하나요?",
+        "answer": "권장 문구를 검증된 개인 수명으로 바꿀 수 없습니다. 공통400km수명·km당비용 설명을 철회했습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "brooks-ghost-18-review",

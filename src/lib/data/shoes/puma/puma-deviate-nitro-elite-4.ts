@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-deviate-nitro-elite-4',
   slug: 'puma-deviate-nitro-elite-4',
@@ -13,117 +14,144 @@ export const shoe: Shoe = {
     '/images/shoes/puma/deviatenitroelite4/angle.webp',
     '/images/shoes/puma/deviatenitroelite4/detail.webp',
   ],
-  status: 'new',
   category: '레이싱',
   rating: 5,
-  price: 289000,
-  description: '푸마의 최신 카본 레이싱화로, ATPU 기반 NITROFOAM ELITE와 PWRPLATE를 결합해 5K부터 마라톤까지 빠른 전개를 노리는 PR 체이서용 모델입니다.',
-  oneliner: '170g 초경량과 더 부드러워진 ATPU 폼, 푸마의 가장 현실적인 마라톤 슈퍼슈즈',
-  editorComment: '푸마 코리아 공식 스펙 기준 Deviate NITRO Elite 4는 170g(UK 8), 40/32mm 스택, 8mm 드롭, 권장 수명 400km의 최신 레이스데이 모델입니다. Believe in the Run 리뷰에서도 전작보다 확실히 더 가볍고 부드러워졌으며, Fast-R 3보다 덜 공격적이지만 훨씬 접근하기 쉬운 마라톤 슈퍼슈즈로 평가했습니다. 한국 러너 기준으로는 카본화 입문까지 노려볼 수 있는 타입이지만, 안정화 대체재로 보기엔 여전히 레이스 중심 플랫폼입니다. 카본화의 효과는 러너마다 갈립니다 — Knopp et al.(2023) 연구에서 같은 카본화로도 러닝 이코노미가 +11%p부터 −11%p까지 벌어졌으니, 엘리트 4의 공격적 록커가 본인 주법에 맞는지 템포런으로 먼저 확인하세요.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard)으로 전작보다 발볼 호환성이 개선되었으며, 와이드 옵션은 없으나 표준 발볼이면 정사이즈 착용이 가능합니다. 289,000원 ÷ 400km = km당 약 722원이므로 레이스 전용으로 운용하세요. 접근성이 더 좋은 대안으로는 SC Elite V5, 더 공격적인 레이싱을 원하면 패스트알 나이트로 엘리트 3를 비교해보세요.',
-  tags: ['레이싱', '카본 플레이트', 'NITROFOAM ELITE', '신규'],
-
+  description: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE 구조의 디비에이트 나이트로 엘리트 4. RunRepeat 실험실 검체 173g·37.2/28.3mm. 한국 현재 정가 미확인.',
+  oneliner: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE · 173g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 312127_05 정가289,000원·표시260,100원, 312128_03 정가289,000원·표시289,000원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다. DOR 인솔 비분리와 RR 분리 가능 표가 충돌합니다. 힐 카운터 자극도 개인별로 달랐습니다.400km 공식 권장 문구가 있어도 검증된 개인 수명이 아니며 km당722원·착지 전용·정사이즈 보장은 철회합니다. DOR 정확 리뷰는 직접403이어서 검색엔진에 보존된 원문 본문 확인 범위입니다. Matt(남성US10)은 정사이즈·전족 여유에도 얇은 힐 카운터 자극과 낮은 강도에서 좁은 중족의 흔들림을 느꼈습니다. Andrea(여성US9.5)는 앞코·힐 고정이 편했지만 본인의 중족 착지와 전족 형상이 맞지 않았습니다. 두 경험을 모든 착지 유형의 금지로 바꾸지 않습니다. RR 내부 최광폭93.6mm·엄지74.8mm·높이26.5mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본 플레이트',
+    'NITROFOAM ELITE',
+  ],
   specs: {
-    weight: 170,
+    weight: 173,
     cushioning: 9,
     responsiveness: 10,
     stability: 6,
-    drop: 8,
-    durability: 400,
+    drop: 8.9,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 40,
-      forefoot: 32,
+      heel: 37.2,
+      forefoot: 28.3,
     },
-    drop: 8,
+    drop: 8.9,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'NITROFOAM ELITE (듀얼 레이어)',
-    optimalPace: '3:00-4:30 min/km',
+    plateType: 'Full-length carbon PWRPLATE',
+    midsoleType: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['5K~마라톤 레이스', 'PB 경신 목표 러너', '첫 카본 레이싱화 후보', '중족부 스트라이드 러너'],
-    notRecommended: ['일상 조깅', '회복 러닝', '강한 안정성 필요', '극단적으로 공격적인 토스프링 선호'],
+    recommended: [
+      '실제 규격에서 어퍼 압박·로커 전환을 비교하려는 러너',
+      '공시와 실측의 검체 조건을 나누어 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 발등 압박·힐 슬립·전환 불편이 지속되는 경우',
+      '광고 수명이나 한 위치 너비로 개인 적합을 보장받으려는 경우',
+    ],
   },
-
   features: [
-    'NITROFOAM ELITE 듀얼 레이어 미드솔',
-    'PWRPLATE 카본 플레이트',
-    'PUMAGRIP 아웃솔',
-    '170g 초경량 (UK 8 기준)',
-    '공식 권장 수명 400km',
-    '에너지 리턴 전족부 77.2% (RunRepeat 실측)',
-    '충격흡수 힐 148 SA (RunRepeat 실측)',
+    'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE',
+    '173g · 37.2/28.3mm · 드롭 8.9mm (RunRepeat 실험실 검체)',
+    '전장 카본 PWRPLATE. A-TPU 기반 폼을 PEBA로 바꾸거나 확인하지 않은 이중 레이어로 확정하지 않습니다.',
+    'RR 내부 최광폭93.6mm·엄지74.8mm·높이26.5mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
   ],
-
   priceAnalysis: {
-    msrp: 289000,
-    streetPrice: 289000,
-    costPerKm: 722,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
-    valueAdvantages: ['최신 푸마 레이싱 플랫폼', '공식 170g 초경량', '풀마라톤 대응 스택', '공식몰 판매 확인'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'new-balance-sc-elite-v5',
+      'puma-fast-r-nitro-elite-3',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 93,
-      text: '푸마 코리아 공식 정보 기준으로 Elite 4는 170g 초경량에 40mm/32mm 스택, 8mm 드롭, 400km 수명을 제시하는 최신 레이스데이 모델입니다. 289,000원 가격은 알파플라이 3(339,000원)보다 확실히 저렴하고, 메타스피드 스카이+(329,000원) 대비로도 가성비가 뛰어납니다. 한국 러너 관점에서 토박스가 표준~약간 여유로 전작 Elite 3보다 발볼 호환성이 개선되었고, 와이드 옵션은 없지만 표준 발볼이면 정사이즈 착용이 가능합니다. 5K부터 풀 마라톤까지 명확히 레이스 전용으로 포지셔닝되어 있으며, 평발이나 무릎 보호가 필요한 입문 러너보다는 기록 지향 중상급 이상 러너에게 적합합니다.',
+      userType: '원문 기반 에디터 분석',
       source: 'editor',
-      sourceUrl: 'https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06',
+      sourceUrl: 'https://runrepeat.com/puma-deviate-nitro-elite-4',
+      text: '한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다. DOR 인솔 비분리와 RR 분리 가능 표가 충돌합니다. 힐 카운터 자극도 개인별로 달랐습니다.400km 공식 권장 문구가 있어도 검증된 개인 수명이 아니며 km당722원·착지 전용·정사이즈 보장은 철회합니다.',
     },
     {
-      userType: 'Believe in the Run',
-      text: 'Believe in the Run은 Elite 4를 전작보다 더 부드럽고 가벼운 업그레이드로 평가했습니다. 170g이라는 무게는 슈퍼슈즈 시장에서도 최상위 경량이고, 토박스는 RunRepeat 측정 74.8mm로 전작보다 넓어졌지만 전체 핏은 "snug-fitting"이라는 평가입니다. ATPU 폼의 에너지 리턴이 체감될 정도로 향상되었고, 카본 PWRPLATE의 추진감도 더 또렷해졌습니다. 40mm 힐 스택(공식)의 쿠셔닝을 갖췄고, Fast-R 3보다 훨씬 접근하기 쉬운 레이싱화라는 총평입니다. 289,000원에 이 퍼포먼스라면 가성비 측면에서도 충분히 경쟁력 있습니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
       source: 'editor',
-      sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',
-    },
-    {
-      userType: 'Believe in the Run',
-      text: '단점으로는 평소의 푸마그립만큼 끈끈한 접지감이 아니라는 점과, Fast-R 3 같은 더 공격적인 토스프링을 기대한 러너에겐 살짝 무난하게 느껴질 수 있다는 점이 언급됐습니다. 400km 내구성은 레이싱화 중 양호한 편이고, km당 약 722원의 가성비는 알파플라이 3 대비 합리적입니다. 토박스가 74.8mm(RunRepeat)로 개선됐지만 전체 핏은 좁은 편이라, 발볼이 넓다면 시착을 권합니다. 무릎이 약한 러너라면 8mm 드롭과 40mm 스택의 충격 흡수가 레이스 후반 보호에 도움이 됩니다. 최종 평가는 지금까지 나온 Deviate Elite 중 최고이자, 푸마의 가장 완성도 높은 마라톤 레이스화에 가깝다는 쪽입니다.',
-      source: 'editor',
-      sourceUrl: 'https://believeintherun.com/shoe-reviews/puma-deviate-nitro-elite-4-review/',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-deviate-nitro-elite-4-review-2026/',
+      text: 'DOR 정확 리뷰는 직접403이어서 검색엔진에 보존된 원문 본문 확인 범위입니다. Matt(남성US10)은 정사이즈·전족 여유에도 얇은 힐 카운터 자극과 낮은 강도에서 좁은 중족의 흔들림을 느꼈습니다. Andrea(여성US9.5)는 앞코·힐 고정이 편했지만 본인의 중족 착지와 전족 형상이 맞지 않았습니다. 두 경험을 모든 착지 유형의 금지로 바꾸지 않습니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '170g (UK 8 기준, 공식)',
-    stackHeight: '힐 40mm / 포어풋 32mm (공식)',
-    drop: '8mm (공식)',
-    midsole: 'ATPU 기반 NITROFOAM ELITE 쿠셔닝 (질소 주입 듀얼 레이어)',
-    plate: 'PWRPLATE 카본 플레이트',
-    outsole: 'PUMAGRIP 퍼포먼스 러버',
-    upper: 'ULTRAWEAVE + PWRTAPE',
-    width: '표준~약간 여유 (와이드 옵션 없음)',
-    durability: '400km (공식 권장 수명)',
-    price: '₩289,000 (공식몰)',
-    costPerKm: '약 ₩722/km (400km 기준)',
-    footType: '기록 지향 러너 / 중립 발 / 중족부 스트라이드 선호',
-    landingPattern: '중족부~전족부 착지',
+    weight: '173g (RunRepeat 실험실 검체). 한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다.',
+    stackHeight: '37.2/28.3mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.9mm (RunRepeat 실험실 검체). 한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다.',
+    midsole: 'NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE. 주폼 37AC, 힐/전족부 SA 148/118·에너지 리턴 77.4/77.2%. DOR 인솔 비분리와 RR 분리 가능 표가 충돌합니다. 힐 카운터 자극도 개인별로 달랐습니다.400km 공식 권장 문구가 있어도 검증된 개인 수명이 아니며 km당722원·착지 전용·정사이즈 보장은 철회합니다.',
+    plate: '전장 카본 PWRPLATE. A-TPU 기반 폼을 PEBA로 바꾸거나 확인하지 않은 이중 레이어로 확정하지 않습니다.',
+    width: 'RR 내부 최광폭 93.6mm·엄지 부위 74.8mm·높이 26.5mm. RR 내부 최광폭93.6mm·엄지74.8mm·높이26.5mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시는 312127_05 정가289,000원·표시260,100원, 312128_03 정가289,000원·표시289,000원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다.',
   },
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'new-balance-sc-elite-v5',
+    'puma-fast-r-nitro-elite-3',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/FYrNb0VX' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y9LMXOdU' }],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/FYrNb0VX',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Y9LMXOdU',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 312127_05 · men/non-Wns category',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%97%98%EB%A6%AC%ED%8A%B8-4-%3Cbr%3Edeviate-nitro-elite-4/312127.html',
+        note: '289000원 정가·260100원 캐시 판매가. 3 days ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 312128_03 · women',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-%EC%97%98%EB%A6%AC%ED%8A%B8-4-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Edeviate-nitro-elite-4-wns/312128.html?dwvar_312128_color=03&dwvar_312128_size=0190',
+        note: '289000원 정가·289000원 캐시 판매가. 5 months ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/puma-deviate-nitro-elite-4',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 173g·37.2/28.3mm·8.9mm. DOR 인솔 비분리와 RR 분리 가능 표가 충돌합니다. 힐 카운터 자극도 개인별로 달랐습니다.400km 공식 권장 문구가 있어도 검증된 개인 수명이 아니며 km당722원·착지 전용·정사이즈 보장은 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/puma-deviate-nitro-elite-4-review-2026/',
+        note: '한국남성170g(UK8)·40/32mm·8mm, DOR170g(남성US9)/147g(여성US8)·38/30mm·8mm, RR브랜드177/154g(사이즈 미확인)·40/32mm·8mm, RR173g·37.2/28.3mm·8.9mm를 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

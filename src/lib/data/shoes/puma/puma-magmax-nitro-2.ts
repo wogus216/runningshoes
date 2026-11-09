@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-magmax-nitro-2',
   slug: 'puma-magmax-nitro-2',
@@ -15,21 +16,21 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4,
-  price: 239000,
-  description: 'NITRO 러닝 시리즈 중 가장 높은 스택(푸마 공식 46/38mm)을 쓴 푸마의 맥시멀 쿠션화입니다. 플레이트 없이 NITROFOAM 쿠션으로 느린 장거리와 회복 러닝에 맞춥니다.',
-  oneliner: '공식 46mm 스택 NITROFOAM 맥시멀 쿠션, 플레이트 없음',
-  editorComment: '매그맥스 나이트로 2는 푸마 코리아 공식 설명대로 NITRO 러닝 시리즈에서 가장 높은 스택(공식 46/38mm, RunRepeat 측정 45.5/35.0mm)을 쓴 맥시멀 쿠션화입니다. 미드솔은 NITROFOAM이고 공식 페이지에 플레이트 언급이 없으며, RunRepeat도 "even without a carbon plate"라고 적었습니다. 충격흡수는 SA 힐 141·전족 137(평균 131)로 높지만, 에너지 리턴은 힐 50.1%·전족 54.6%(평균 61.5%)로 낮아 반발로 밀어주기보다 충격을 받아내는 쪽입니다. 정가 23만 9천원에 무게는 RunRepeat 측정 269g입니다. 가장 큰 주의점은 발볼로, 토박스가 70.4mm(평균 73.2mm)이고 RunRepeat가 "aggressive taper"라며 "won\'t work well for runners with wide feet"라고 평가했습니다. 푸마 코리아 공식몰에는 와이드 상품도 없습니다.\n\n사이즈·구매 가이드: 토박스가 좁게 테이퍼진 편이고 와이드 옵션이 없어, 발볼이 넓다면 반드시 시착하세요. 정가는 239,000원이며, 반발까지 원하면 카본 PWRPLATE의 디비에이트 나이트로 4, 더 가볍고 반발 있는 맥시멀 쿠션을 원하면 슈퍼블라스트 2를 비교해보세요.',
-  tags: ['맥시멀 쿠션', 'NITROFOAM', '장거리 훈련'],
-
+  description: 'NITROFOAM · 높은 로커 · PUMAGRIP 구조의 매그맥스 나이트로 2. RunRepeat 실험실 검체 269g·45.5/35mm. 한국 현재 정가 미확인.',
+  oneliner: 'NITROFOAM · 높은 로커 · PUMAGRIP · 269g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 312125_01 정가239,000원·표시152,960원, 312126_01 정가239,000원·표시191,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다. RR리턴50.1/54.6%와 Andrea의 탄성 선호는 다른 정보입니다. 넓은 외부 바닥122.9/96.7mm를 내부93.4/70.4mm나 중족여유로 바꾸지 않습니다. 여성 요청color02와 응답312126_01이 달라 캐시응답SKU대로 남겼습니다.500km·레이서와동일폼·한국와이드 없음 확정·회복 효과 보장은 철회합니다. DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Andrea(여성US9.5)는 다른Puma보다 여유 있는 앞코·볼륨, 좁은 중족과 좋은 힐 고정·두꺼운 혀를 편하게 느꼈습니다. 부드럽게 구르는 반응과 중앙 고정을 선호해 쉬운 주행에 사용했습니다. 공시8mm보다 낮게 느꼈다는 경험은 실측10.5mm를 대체하지 않습니다. RR 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '맥시멀 쿠션',
+    'NITROFOAM',
+    '장거리 훈련',
+  ],
   specs: {
     weight: 269,
     cushioning: 9,
     responsiveness: 6,
     stability: 7,
     drop: 10.5,
-    durability: 500,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 45.5,
@@ -38,73 +39,112 @@ export const shoe: Shoe = {
     drop: 10.5,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'NITROFOAM',
-    optimalPace: '4:00-5:30 min/km',
+    midsoleType: 'NITROFOAM · 높은 로커 · PUMAGRIP',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['맥시멀 쿠셔닝 선호', '느린 장거리 훈련', '회복 러닝', '착지 충격 완화 우선'],
-    notRecommended: ['빠른 템포 훈련', '발볼 넓은 러너', '레이싱 전용'],
+    recommended: [
+      '실제 규격에서 어퍼 압박·로커 전환을 비교하려는 러너',
+      '공시와 실측의 검체 조건을 나누어 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 발등 압박·힐 슬립·전환 불편이 지속되는 경우',
+      '광고 수명이나 한 위치 너비로 개인 적합을 보장받으려는 경우',
+    ],
   },
-
-  features: ['NITROFOAM 미드솔', 'NITRO 러닝 시리즈 최고 스택 (공식 46/38mm)', '플레이트 없음', '높은 충격흡수 (RunRepeat SA 힐 141)'],
-
+  features: [
+    'NITROFOAM · 높은 로커 · PUMAGRIP',
+    '269g · 45.5/35mm · 드롭 10.5mm (RunRepeat 실험실 검체)',
+    'RR은 카본 플레이트가 없는 구조로 설명합니다. NITROFOAM의 정확 고분자 조성은 이번 범위에서 미확인입니다.',
+    'RR 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+  ],
   priceAnalysis: {
-    msrp: 239000,
-    streetPrice: 200000,
-    costPerKm: 478,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3'],
+    alternatives: [
+      'nike-vomero-18',
+      'asics-superblast-2',
+      'hoka-mach-x-3',
+    ],
   },
-
   reviews: [
     {
-        userType: '예상 적합 — 느린 장거리·회복 러닝용 쿠션화',
-        text: '20km 이상 느린 장거리나 고강도 훈련 다음 날 회복 러닝처럼 착지 충격을 줄이는 것이 우선인 경우에 맞는 성격입니다. RunRepeat 측정 힐 45.5mm 스택에 충격흡수 SA 141(평균 131)이라 충격을 크게 받아냅니다. 반대로 에너지 리턴은 50%대로 평균보다 낮아 템포런처럼 페이스를 올리는 용도에는 맞지 않습니다. 토박스가 70.4mm로 좁게 테이퍼져 발볼이 넓다면 시착이 필요합니다.',
-      },
-    {
-      userType: '에디터 분석',
-      rating: 86,
-      text: '플레이트 없는 맥시멀 쿠션을 찾는 러너에게 맞는 모델입니다. 푸마 공식 스택 46/38mm(RunRepeat 측정 45.5/35.0mm)로 NITRO 러닝 시리즈 중 가장 높고, SA 힐 141·전족 137의 충격흡수는 평균(131)을 웃돕니다. 다만 에너지 리턴이 힐 50.1%·전족 54.6%로 평균(61.5%)보다 낮아, 반발을 기대하는 슈퍼트레이너와는 성격이 다릅니다. 무게는 RunRepeat 측정 269g으로 가볍지 않고, 토박스가 70.4mm로 좁게 테이퍼져 발볼 넓은 한국 러너는 반드시 시착하세요. 안정화 기능이 있는 모델은 아닙니다. 정가는 239,000원입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-mag-max-nitro-2',
+      text: '한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다. RR리턴50.1/54.6%와 Andrea의 탄성 선호는 다른 정보입니다. 넓은 외부 바닥122.9/96.7mm를 내부93.4/70.4mm나 중족여유로 바꾸지 않습니다. 여성 요청color02와 응답312126_01이 달라 캐시응답SKU대로 남겼습니다.500km·레이서와동일폼·한국와이드 없음 확정·회복 효과 보장은 철회합니다.',
     },
     {
-        userType: '예상 적합 — 정가 24만원 이하 맥시멀 쿠션을 찾는 경우',
-        text: '맥시멀 쿠션화 가운데 정가 239,000원으로 고려할 수 있는 선택지입니다. 플레이트가 없고 에너지 리턴이 50%대라, 템포 훈련보다는 느린 장거리에 쓰는 신발로 예산을 잡는 경우에 맞습니다. 충격흡수는 SA 힐 141로 평균보다 높습니다. 반발을 원한다면 플레이트가 들어간 모델이, 발볼 여유를 원한다면 토박스가 넓은 모델이 맞습니다(이 모델 토박스 70.4mm).',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-magmax-nitro-2-review-2026/',
+      text: 'DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Andrea(여성US9.5)는 다른Puma보다 여유 있는 앞코·볼륨, 좁은 중족과 좋은 힐 고정·두꺼운 혀를 편하게 느꼈습니다. 부드럽게 구르는 반응과 중앙 고정을 선호해 쉬운 주행에 사용했습니다. 공시8mm보다 낮게 느꼈다는 경험은 실측10.5mm를 대체하지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '269g (RunRepeat 랩, 측정 사이즈 미표기) · 푸마 코리아 공식 275g(UK 8)',
-    stackHeight: '힐 45.5mm / 포어풋 35.0mm (RunRepeat 랩) · 푸마 코리아 공식 46/38mm',
-    drop: '10.5mm (RunRepeat 랩) · 푸마 코리아 공식 8mm',
-    midsole: 'NITROFOAM (푸마 코리아 공식)',
-    plate: '없음 (공식 페이지에 플레이트 언급 없음 · RunRepeat "even without a carbon plate")',
-    outsole: 'PumaGrip 러버',
-    upper: '엔지니어드 메쉬',
-    width: '좁은 편 (와이드 없음) · 토박스 70.4mm — RunRepeat 평균 73.2mm보다 2.8mm 좁고 랩 원문 "The MagMax Nitro 2 features an aggressive taper (70.4 mm)"',
-    durability: '500km',
-    price: '₩239,000 (MSRP) / 세일 시 ₩200,000~',
-    costPerKm: '약 ₩478/km (500km 기준)',
-    footType: '좁은~보통 발볼 / 평발 OK',
-    landingPattern: '미드풋~전방 착지',
+    weight: '269g (RunRepeat 실험실 검체). 한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다.',
+    stackHeight: '45.5/35mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '10.5mm (RunRepeat 실험실 검체). 한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다.',
+    midsole: 'NITROFOAM · 높은 로커 · PUMAGRIP. 주폼 38.1AC, 힐/전족부 SA 141/137·에너지 리턴 50.1/54.6%. RR리턴50.1/54.6%와 Andrea의 탄성 선호는 다른 정보입니다. 넓은 외부 바닥122.9/96.7mm를 내부93.4/70.4mm나 중족여유로 바꾸지 않습니다. 여성 요청color02와 응답312126_01이 달라 캐시응답SKU대로 남겼습니다.500km·레이서와동일폼·한국와이드 없음 확정·회복 효과 보장은 철회합니다.',
+    plate: 'RR은 카본 플레이트가 없는 구조로 설명합니다. NITROFOAM의 정확 고분자 조성은 이번 범위에서 미확인입니다.',
+    width: 'RR 내부 최광폭 93.4mm·엄지 부위 70.4mm·높이 29.3mm. RR 내부 최광폭93.4mm·엄지70.4mm·높이29.3mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시는 312125_01 정가239,000원·표시152,960원, 312126_01 정가239,000원·표시191,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다.',
   },
-
-  similarShoes: ['nike-vomero-18', 'asics-superblast-2', 'hoka-mach-x-3', 'saucony-endorphin-speed-5'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5OldpCvg' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Za8o8aei' }],
+  similarShoes: [
+    'nike-vomero-18',
+    'asics-superblast-2',
+    'hoka-mach-x-3',
+    'saucony-endorphin-speed-5',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/5OldpCvg',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Za8o8aei',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 312125_01 · men/non-Wns',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%A7%A5%EC%8A%A4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-2-%3Cbr%3Emagmax-nitro-2/312125.html',
+        note: '239000원 정가·152960원 캐시 판매가. today relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 312126_01 · women response page',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%A7%A5%EC%8A%A4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-2-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Emagmax-nitro-2-wns/312126.html?dwvar_312126_color=02',
+        note: '239000원 정가·191200원 캐시 판매가. last week relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/puma-mag-max-nitro-2',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 269g·45.5/35mm·10.5mm. RR리턴50.1/54.6%와 Andrea의 탄성 선호는 다른 정보입니다. 넓은 외부 바닥122.9/96.7mm를 내부93.4/70.4mm나 중족여유로 바꾸지 않습니다. 여성 요청color02와 응답312126_01이 달라 캐시응답SKU대로 남겼습니다.500km·레이서와동일폼·한국와이드 없음 확정·회복 효과 보장은 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/puma-magmax-nitro-2-review-2026/',
+        note: '한국275g(UK8)·46/38mm·8mm, DOR266g(남성US9)/232g(여성US8)·46/38mm·8mm, RR269g·45.5/35mm·10.5mm입니다. 여성 한국 페이지의 동일275g 문구를 여성US8 실측으로 바꾸지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

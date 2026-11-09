@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-deviate-nitro-4',
   slug: 'puma-deviate-nitro-4',
@@ -16,97 +17,153 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 4.5,
   price: 219000,
-  description: '푸마의 슈퍼트레이너로, 듀얼 레이어 NITROFOAM과 카본 합성 PWRPLATE로 업템포 트레이닝에 최적화된 반응성과 쿠셔닝을 제공합니다. 부드러워진 착화감이 특징이고, 와이드 상품이 별도로 나옵니다.',
-  oneliner: 'PEBAX 듀얼폼 + 카본 PWRPLATE 슈퍼트레이너, 와이드 별도',
-  editorComment: '일반 폭은 여전히 좁은 편(RunRepeat 토박스 70.6mm)이지만 와이드 상품을 따로 낸 것이 한국 러너에게는 v4의 가장 큰 변화입니다. 상단 PEBAX 100% 폼이 착지를 부드럽게 받아주고 하단 PEBA 블렌드가 추진력을 더하는 구조가 합리적입니다. 21만 9천원은 엔돌핀 스피드 5(₩219,000)와 동일 가격이지만, 카본 합성 PWRPLATE와 800km 내구성(스피드5는 500km)에서 차별화됩니다. 드롭이 v3의 10mm에서 8mm로 줄어 더 자연스러운 전환감을 주고, 와이드 옵션까지 있어 한국 러너 발볼 걱정을 덜었습니다. 카본화인데 800km 내구 표기가 가능한 건 PEBAX 블렌드와 아웃솔 조합 덕입니다 — 다만 폼의 반발은 조용히 줄어듭니다. Cornwall & McPoil(2017)의 640km 연구에서 객관 지표가 20~28% 떨어져도 체감은 2.7%뿐이었다는 점을 기억하고, 킬로미터 기록으로 관리하세요.\n\n사이즈·구매 가이드: 일반 폭 토박스가 좁은 편(RunRepeat 70.6mm, 평균 73.2mm)이라 발볼 넓은 러너는 푸마 코리아 공식몰의 와이드 상품을 고르세요. 219,000원 ÷ 800km = km당 약 274원으로 카본 슈퍼트레이너 중 최고 가성비입니다. 카본 없이 더 가볍게 쓰고 싶다면 디비에이트 나이트로 퓨어, 같은 가격대에서 반발력을 극대화하려면 엔돌핀 스피드 5를 비교해보세요.',
-  tags: ['슈퍼트레이너', 'PWRPLATE', '업템포 러닝', '듀얼폼'],
-
+  description: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP 구조의 디비에이트 나이트로 4. RunRepeat 실험실 검체 247g·33.6/26.6mm. 한국 확인 가격 219,000원.',
+  oneliner: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP · 247g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 2026-11-10 남성312123_27 실시간 정가219,000원·표시판매가122,640원을 확인했습니다.250~290은 재고없음 문구가 없고295~325는 재고없음이 표시됐으나 실제 사이즈 선택·결제는 시험하지 않았습니다. 여성312124_30의175,200원 등은 캐시이며 와이드·실시간 전체 재고는 미확인입니다. 한국250g(UK8)·38/30mm·8mm, DOR250g(남성US9)/205g(여성US8)·38/30mm·8mm, RR247g·33.6/26.6mm·7mm입니다. 한국 여성 페이지도 같은250g UK8 문구를 반복해 여성US8검체로 읽지 않습니다. 주폼33.2AC는 아래쪽이며 보조19.9AC의 정확 위치는 미확인입니다. 갑피·힐패딩 각1/5와 아웃솔마모0.6mm는 부위별 시험입니다.800km·km당274원·다른신발640km연구 전용·한국와이드 보장을 철회합니다. DOR David(남성US9.5)는 정사이즈·낮은 볼륨, 약간 여유 있는 전족과 로고의 외측 압박을 적었지만 힐 슬립은 없었습니다. Andrea(여성US9.5)는 전족 공간은 좋고 좁은 중족의 걸침도 불편하지 않았으나 유연한 중족에서 매우 단단한 전족으로 넘어가는 전환이 맞지 않았고 강도를 높일수록 불편했습니다. David가 선호한 반응을 모두의 경험으로 합치지 않습니다. RR 내부 최광폭93.8mm·엄지70.6mm·높이26.1mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '슈퍼트레이너',
+    'PWRPLATE',
+    '업템포 러닝',
+    '듀얼폼',
+  ],
   specs: {
-    weight: 250,
+    weight: 247,
     cushioning: 8,
     responsiveness: 9,
     stability: 7,
-    drop: 8,
-    durability: 800,
+    drop: 7,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 38,
-      forefoot: 30,
+      heel: 33.6,
+      forefoot: 26.6,
     },
-    drop: 8,
+    drop: 7,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Dual-Layer NITROFOAM (PEBAX + PEBA)',
-    optimalPace: '4:00-5:30 min/km',
+    plateType: 'Carbon composite PWRPLATE',
+    midsoleType: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['업템포 트레이닝', '템포 러닝', '하프 마라톤', '중상급 러너', 'PR 추구 러너'],
-    notRecommended: ['입문 러너', '느린 회복 러닝', '최대 쿠셔닝 필요'],
+    recommended: [
+      '실제 규격에서 어퍼 압박·로커 전환을 비교하려는 러너',
+      '공시와 실측의 검체 조건을 나누어 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 발등 압박·힐 슬립·전환 불편이 지속되는 경우',
+      '광고 수명이나 한 위치 너비로 개인 적합을 보장받으려는 경우',
+    ],
   },
-
-  features: ['듀얼 레이어 NITROFOAM (PEBAX/PEBA)', '카본 합성 PWRPLATE', 'PUMAGRIP 아웃솔', '와이드 상품 별도 판매', '8mm 드롭 (v3 대비 2mm 감소)', '충격흡수 힐 130 SA (RunRepeat 실측)', '에너지 리턴 전족부 70.0% (RunRepeat 실측)'],
-
+  features: [
+    '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP',
+    '247g · 33.6/26.6mm · 드롭 7mm (RunRepeat 실험실 검체)',
+    '카본 합성 PWRPLATE. RR의 상부 순수PEBA·하부PEBA/EVA 설명과 공식의 두 NITRO 폼을 구분합니다.',
+    'RR 내부 최광폭93.8mm·엄지70.6mm·높이26.1mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+  ],
   priceAnalysis: {
     msrp: 219000,
-    streetPrice: 190000,
-    costPerKm: 274,
     valueRating: 8,
     priceTier: 'high',
-    alternatives: ['saucony-endorphin-speed-5', 'asics-sonicblast', 'nike-zoom-fly-6'],
+    alternatives: [
+      'saucony-endorphin-speed-5',
+      'asics-sonicblast',
+      'nike-zoom-fly-6',
+    ],
   },
-
   reviews: [
     {
-        userType: '세대 비교 — 와이드 상품이 추가된 세대',
-        text: '일반 폭 토박스는 전작 v3(69.7mm)와 비슷하게 좁은 편(70.6mm, RunRepeat)이지만 와이드 상품이 따로 나와, 핏 때문에 이 라인을 포기했다면 다시 볼 이유가 됩니다. 미드솔은 상단 PEBAX가 착지를 받고 하단 PEBA가 밀어주는 이중 구조이며, 드롭이 v3의 10mm에서 8mm로 낮아져 전환이 자연스러워졌습니다. 250g에 힐 38mm 스택입니다. 내구성 800km로 경쟁 모델(엔돌핀 스피드 계열 500km)보다 300km 길어, 219,000원 기준 km당 약 274원으로 카본 슈퍼트레이너 중 운용 비용이 가장 낮은 축입니다.',
-      },
-    {
-      userType: 'Believe in the Run',
-      text: '역대 최고의 Deviate Nitro입니다. 전작의 좁은 핏 문제를 해결했고, 상단에 PEBAX 기반 폼을 배치해 착지감이 부드러워졌습니다. 8mm 드롭으로 v3의 10mm에서 줄어 더 자연스러운 전환감을 제공합니다. 219,000원 가격대에서 엔돌핀 스피드 5, 소닉블라스트와 경쟁해야 하지만, PumaGrip 아웃솔의 뛰어난 접지력과 800km 내구성은 km당 약 274원의 가성비를 만들어냅니다. 한국 러너 관점에서 와이드 옵션이 있다는 점이 큰 장점이고, 일반 폭은 토박스가 좁은 편이라 발볼이 넓다면 와이드 상품을 고르세요. 38mm 힐 스택의 쿠셔닝이 무릎 관절 보호에 효과적이고, 250g 무게로 데일리 트레이너와 업템포 러닝을 겸하는 만능 슈퍼트레이너입니다. 평발 러너에게도 안정성이 무난하며, 반응성을 동시에 원하는 중상급 러너에게 추천합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-deviate-nitro-4',
+      text: '한국250g(UK8)·38/30mm·8mm, DOR250g(남성US9)/205g(여성US8)·38/30mm·8mm, RR247g·33.6/26.6mm·7mm입니다. 한국 여성 페이지도 같은250g UK8 문구를 반복해 여성US8검체로 읽지 않습니다. 주폼33.2AC는 아래쪽이며 보조19.9AC의 정확 위치는 미확인입니다. 갑피·힐패딩 각1/5와 아웃솔마모0.6mm는 부위별 시험입니다.800km·km당274원·다른신발640km연구 전용·한국와이드 보장을 철회합니다.',
     },
     {
-        userType: '예상 적합 — 와이드가 필요한 카본 훈련화',
-        text: '카본화 중 와이드 옵션이 있는 드문 모델입니다. 카본 훈련화 상당수가 좁은 라스트에 와이드를 제공하지 않아 반 치수 업으로 대응해야 하는데, 이 모델은 정사이즈에서 발볼 대응이 됩니다. 250g에 힐 38mm 스택으로 하프 페이스 수준의 인터벌을 소화하면서 착지 부담도 줄입니다. 반대로 반발이 뚜렷해 느린 회복 러닝에는 과하게 느껴질 수 있어, 용도를 나눠 쓰는 편이 맞습니다. 219,000원에 내구성 800km로 카본이 들어간 모델 중 운용 비용이 가장 낮은 축입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-deviate-nitro-4-review-2026/',
+      text: 'DOR David(남성US9.5)는 정사이즈·낮은 볼륨, 약간 여유 있는 전족과 로고의 외측 압박을 적었지만 힐 슬립은 없었습니다. Andrea(여성US9.5)는 전족 공간은 좋고 좁은 중족의 걸침도 불편하지 않았으나 유연한 중족에서 매우 단단한 전족으로 넘어가는 전환이 맞지 않았고 강도를 높일수록 불편했습니다. David가 선호한 반응을 모두의 경험으로 합치지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '250g (UK 8 기준, 한국 공식) · RunRepeat 랩 247g(측정 사이즈 미표기)',
-    stackHeight: '힐 38mm / 포어풋 30mm (한국 공식) · RunRepeat 랩 33.6/26.6mm',
-    drop: '8mm (한국 공식, v3 대비 2mm 감소) · RunRepeat 랩 7.0mm',
-    midsole: '듀얼 레이어 NITROFOAM (상단 PEBAX 100%, 하단 PEBA 블렌드)',
-    plate: '카본 합성 PWRPLATE',
-    outsole: 'PUMAGRIP 러버',
-    upper: '엔지니어드 메쉬 + PWRTAPE (20% 재활용 소재)',
-    width: '좁은 편 (와이드 상품 별도: kr.puma.com 312901, 정가 219,000원) · 토박스 70.6mm — RunRepeat 평균 73.2mm보다 2.6mm 좁고 랩 원문 "it\'s definitely not a good match for wide feet"',
-    durability: '800km',
-    price: '₩219,000 (MSRP) / 세일 시 ₩190,000~',
-    costPerKm: '약 ₩274/km (800km 기준)',
-    footType: '일반 폭은 좁은~보통 발볼 / 넓은 발볼은 와이드 상품',
-    landingPattern: '힐스트라이크~미드풋',
+    weight: '247g (RunRepeat 실험실 검체). 한국250g(UK8)·38/30mm·8mm, DOR250g(남성US9)/205g(여성US8)·38/30mm·8mm, RR247g·33.6/26.6mm·7mm입니다. 한국 여성 페이지도 같은250g UK8 문구를 반복해 여성US8검체로 읽지 않습니다.',
+    stackHeight: '33.6/26.6mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '7mm (RunRepeat 실험실 검체). 한국250g(UK8)·38/30mm·8mm, DOR250g(남성US9)/205g(여성US8)·38/30mm·8mm, RR247g·33.6/26.6mm·7mm입니다. 한국 여성 페이지도 같은250g UK8 문구를 반복해 여성US8검체로 읽지 않습니다.',
+    midsole: '두 NITRO 층 · 카본 합성 PWRPLATE · PUMAGRIP. 주폼 33.2AC·보조 19.9AC, 힐/전족부 SA 130/102·에너지 리턴 58.1/70%. 주폼33.2AC는 아래쪽이며 보조19.9AC의 정확 위치는 미확인입니다. 갑피·힐패딩 각1/5와 아웃솔마모0.6mm는 부위별 시험입니다.800km·km당274원·다른신발640km연구 전용·한국와이드 보장을 철회합니다.',
+    plate: '카본 합성 PWRPLATE. RR의 상부 순수PEBA·하부PEBA/EVA 설명과 공식의 두 NITRO 폼을 구분합니다.',
+    width: 'RR 내부 최광폭 93.8mm·엄지 부위 70.6mm·높이 26.1mm. RR 내부 최광폭93.8mm·엄지70.6mm·높이26.1mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '2026-11-10 남성312123_27 실시간 정가219,000원·표시판매가122,640원을 확인했습니다.250~290은 재고없음 문구가 없고295~325는 재고없음이 표시됐으나 실제 사이즈 선택·결제는 시험하지 않았습니다. 여성312124_30의175,200원 등은 캐시이며 와이드·실시간 전체 재고는 미확인입니다.',
   },
-
-  similarShoes: ['saucony-endorphin-speed-5', 'asics-sonicblast', 'nike-zoom-fly-6', 'hoka-mach-x-3'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  similarShoes: [
+    'saucony-endorphin-speed-5',
+    'asics-sonicblast',
+    'nike-zoom-fly-6',
+    'hoka-mach-x-3',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/F93JaTgb' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Y85HRpvw' }],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/F93JaTgb',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Y85HRpvw',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 312123_27 · men: KR male running category plus non-Wns product',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=27&dwvar_312123_size=0240',
+        note: '219000원 정가·219000원 캐시 판매가. 3 weeks ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 312123_30 · men',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=30&dwvar_312123_size=0220',
+        note: '219000원 정가·122640원 캐시 판매가. 3 days ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 312124_30 · women',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Edeviate-nitro-4-wns/312124.html?dwvar_312124_color=30',
+        note: '219000원 정가·175200원 캐시 판매가. 2 months ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 남성 실시간 확인',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%94%94%EB%B9%84%EC%97%90%EC%9D%B4%ED%8A%B8-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-4-%3Cbr%3Edeviate-nitro-4/312123.html?dwvar_312123_color=27',
+        note: '312123_27 정가219,000·표시122,640원. 사이즈별 문구만 관찰, 선택·결제 미시험.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/puma-deviate-nitro-4',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 247g·33.6/26.6mm·7mm. 주폼33.2AC는 아래쪽이며 보조19.9AC의 정확 위치는 미확인입니다. 갑피·힐패딩 각1/5와 아웃솔마모0.6mm는 부위별 시험입니다.800km·km당274원·다른신발640km연구 전용·한국와이드 보장을 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/puma-deviate-nitro-4-review-2026/',
+        note: '한국250g(UK8)·38/30mm·8mm, DOR250g(남성US9)/205g(여성US8)·38/30mm·8mm, RR247g·33.6/26.6mm·7mm입니다. 한국 여성 페이지도 같은250g UK8 문구를 반복해 여성US8검체로 읽지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

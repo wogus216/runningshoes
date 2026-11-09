@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-magnify-nitro-3',
   slug: 'puma-magnify-nitro-3',
@@ -15,96 +16,121 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4,
-  price: 199000,
-  description: '푸마의 맥시멀 쿠셔닝 모델로, PEBA 기반 Nitro Foam과 높은 스택으로 장거리와 회복 러닝에 최적화되어 있습니다.',
-  oneliner: 'PEBA 맥시멀 쿠션을 20만원 이하에, 관절 보호의 가성비파',
-  editorComment: '40mm 맥시멀 스택에 PEBA 기반 Nitro Foam을 19만 9천원에 제공하는 건 Bondi 9(₩229,000)이나 님버스 28(₩199,000)과 비교할 때 확실한 가격 우위입니다.  264g은 맥시멀 쿠션화 중 가벼운 축에 속하고, RunRepeat 통기성 5/5로 한국 여름에도 쾌적합니다. 와이드 옵션이 없는 점이 아쉽지만 표준 발볼 기준으로는 편안하며, 빠른 페이스에는 부적합한 순수 쿠셔닝 신발이라는 포지션이 명확합니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard)이며 와이드 옵션은 없습니다. 발볼이 넓은 편이라면 매장 착화 후 결정하세요. 199,000원 ÷ 500km = km당 약 398원으로 맥시멀 쿠션화 중 가성비가 뛰어납니다. 같은 가격대에서 더 강한 반발감을 원하면 1080 V14, 예산을 높여 최고 쿠션을 원하면 본디 9을 비교해보세요.',
-  tags: ['맥시멀 쿠셔닝', '장거리용', 'PEBA 폼'],
-
+  description: '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE 구조의 매그니파이 나이트로 3. RunRepeat 실험실 검체 261g·37.4/25.9mm. 한국 현재 정가 미확인.',
+  oneliner: '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE · 261g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시는 311046_01 정가199,000원·표시127,360원, 311047_01 정가199,000원·표시159,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다. 한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다. RR본문이SA136/99를energy return이라 부른 문장과 실제ER65.2/73.6%를 구분합니다. SA와 리턴은 다른 시험입니다. 구방식 통기5/5와 David의 더운 니트 체감, 갑피5/5·아웃솔1.3mm마모도 다른 정보입니다. 부상예방 전항목최상위·평발 회복·500km·모든 한국 발 적합 보장은 철회합니다. DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Matt(남성US10)은 정사이즈지만 전체 밀착·빠른 측면 테이퍼·거친 내피와 둔한 힐을 적었습니다. David(남성US9.5)는 처음 밀착이 완화됐고 여유 있는 전족·편한 니트·자연스러운 전환을 느꼈지만 통기는 더 원했습니다. 서로의 볼륨·전환 체감을 하나로 합치지 않습니다. RR 내부 최광폭96mm·엄지72.3mm·높이26mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '맥시멀 쿠셔닝',
+    '장거리용',
+    'PEBA 폼',
+  ],
   specs: {
-    weight: 264,
+    weight: 261,
     cushioning: 8,
     responsiveness: 9,
     stability: 7,
-    drop: 10,
-    durability: 500,
+    drop: 11.5,
   },
-
-  biomechanics: {
-    stackHeight: {
-      heel: 40,
-      forefoot: 30,
-    },
-    drop: 10,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'Nitro Foam (PEBA)',
-    optimalPace: '5:30-7:00 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['장거리 러너', '회복 러닝', '맥시멀 쿠셔닝 선호', '무릎/관절 보호 필요'],
-    notRecommended: ['빠른 페이스 훈련', '경량화 선호', '미니멀리스트'],
+    recommended: [
+      '실제 규격에서 어퍼 압박·로커 전환을 비교하려는 러너',
+      '공시와 실측의 검체 조건을 나누어 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 발등 압박·힐 슬립·전환 불편이 지속되는 경우',
+      '광고 수명이나 한 위치 너비로 개인 적합을 보장받으려는 경우',
+    ],
   },
-
-  features: ['PEBA 기반 Nitro Foam', '40mm 맥시멀 스택', '부드러운 착지감', '충격흡수 힐 136 SA (RunRepeat 실측)'],
-
+  features: [
+    '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE',
+    '261g · 37.4/25.9mm · 드롭 11.5mm (RunRepeat 실험실 검체)',
+    '검토한 정확 원문에서 플레이트 유무를 명시적으로 재확인하지 못해 미확인으로 남깁니다.',
+    'RR 내부 최광폭96mm·엄지72.3mm·높이26mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+  ],
   priceAnalysis: {
-    msrp: 199000,
-    streetPrice: 170000,
-    costPerKm: 398,
     valueRating: 7,
     priceTier: 'mid',
-    alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14'],
+    alternatives: [
+      'hoka-bondi-9',
+      'asics-gel-nimbus-28',
+      'new-balance-1080-v14',
+    ],
   },
-
   reviews: [
     {
-        userType: '비용 관점 — 맥시멀 쿠션화 중 진입 가격',
-        text: '맥시멀 쿠션화군에서 진입 가격이 낮은 축입니다. 199,000원으로 본디 9(229,000원)·님버스 28(199,000원)보다 낮고, 세일가 17만원대까지 내려오면 격차가 더 벌어집니다. 성능 면에서도 힐 SA 136(RunRepeat)으로 충격흡수가 평균 이상이고, 264g으로 맥시멀치고 가벼운 편입니다. 10mm 드롭이라 힐 착지에서 안정적이고, 통기성이 좋아 여름 장거리에도 부담이 적습니다. 토박스도 압박이 적어 표준 발볼이면 무리가 없습니다.',
-      },
-    {
-      userType: '에디터 분석',
-      rating: 84,
-      text: '"무릎 아픈데 푹신한 신발 추천해주세요" 질문에 가성비 좋은 선택입니다. 199,000원으로 40mm 맥시멀 스택과 PEBA 기반 쿠셔닝을 제공합니다. 본디 9(229,000원)보다 3만원 저렴하고 님버스 28(199,000원)과는 같은 가격에 비슷한 수준의 보호력을 제공합니다. 264g으로 약간 무거운 편이지만, 장거리나 회복 러닝에 초점을 맞춘 신발입니다. 500km 내구성으로 km당 약 398원이면 맥시멀 쿠션화 카테고리에서 합리적인 가격입니다. 발볼은 표준 수준이라 한국 러너 대부분 무난하게 착용 가능하고, 토박스 여유도 적절합니다. 평발 러너에게도 호환성이 좋고 무릎 보호가 절실한 러너에게 특히 추천합니다. 빠른 페이스에는 부적합하므로, 관절 보호가 필요한 장거리 러너나 회복 러닝용으로 추천합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-magnify-nitro-3',
+      text: '한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다. RR본문이SA136/99를energy return이라 부른 문장과 실제ER65.2/73.6%를 구분합니다. SA와 리턴은 다른 시험입니다. 구방식 통기5/5와 David의 더운 니트 체감, 갑피5/5·아웃솔1.3mm마모도 다른 정보입니다. 부상예방 전항목최상위·평발 회복·500km·모든 한국 발 적합 보장은 철회합니다.',
     },
     {
-        userType: '예상 적합 — 평발의 회복 러닝',
-        text: '평발 성향에서 인솔 없이 회복 러닝을 소화하려는 경우의 선택지입니다. 지지로 아치를 받치는 대신 40mm 힐 스택의 부드러운 착지로 충격을 흡수하는 방식이라, 아치를 강하게 밀어올리는 안정화가 불편했다면 대안이 됩니다. RunRepeat 측정 에너지 리턴은 힐 65.2%·전족 73.6%로 평균 이상이지만 로커가 강하지 않은 클래식한 형태라, 회복·이지 페이스 중심으로 쓰는 편이 맞습니다. 264g으로 맥시멀 쿠션화치고 가벼운 축입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-magnify-nitro-3-review-2025/',
+      text: 'DOR 직접 원문403 후 검색엔진 원문 캐시 확인 범위입니다. Matt(남성US10)은 정사이즈지만 전체 밀착·빠른 측면 테이퍼·거친 내피와 둔한 힐을 적었습니다. David(남성US9.5)는 처음 밀착이 완화됐고 여유 있는 전족·편한 니트·자연스러운 전환을 느꼈지만 통기는 더 원했습니다. 서로의 볼륨·전환 체감을 하나로 합치지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '264g (남성 US 9 기준)',
-    stackHeight: '힐 40mm / 포어풋 30mm',
-    drop: '10mm',
-    midsole: 'Nitro Foam (PEBA 기반)',
-    plate: '없음',
-    outsole: 'PumaGrip 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준',
-    durability: '500km',
-    price: '₩199,000 (MSRP) / 세일 시 ₩170,000~',
-    costPerKm: '약 ₩398/km (500km 기준)',
-    footType: '표준 발볼 / 평발 OK / 관절 보호 필요한 러너',
-    landingPattern: '힐스트라이크 (맥시멀 쿠셔닝)',
+    weight: '261g (RunRepeat 실험실 검체). 한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다.',
+    stackHeight: '37.4/25.9mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '11.5mm (RunRepeat 실험실 검체). 한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다.',
+    midsole: '전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE. 주폼 32.3AC, 힐/전족부 SA 136/99·에너지 리턴 65.2/73.6%. RR본문이SA136/99를energy return이라 부른 문장과 실제ER65.2/73.6%를 구분합니다. SA와 리턴은 다른 시험입니다. 구방식 통기5/5와 David의 더운 니트 체감, 갑피5/5·아웃솔1.3mm마모도 다른 정보입니다. 부상예방 전항목최상위·평발 회복·500km·모든 한국 발 적합 보장은 철회합니다.',
+    plate: '검토한 정확 원문에서 플레이트 유무를 명시적으로 재확인하지 못해 미확인으로 남깁니다.',
+    width: 'RR 내부 최광폭 96mm·엄지 부위 72.3mm·높이 26mm. RR 내부 최광폭96mm·엄지72.3mm·높이26mm입니다. 한국 현재 와이드·문자 폭은 미확인이고 개인의 길이·발등·힐 고정을 별도로 확인합니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시는 311046_01 정가199,000원·표시127,360원, 311047_01 정가199,000원·표시159,200원입니다. 현재 가격·선택재고·폭은 미확인입니다. AP를 와이드로 해석하지 않으며 캐시 품절을 현재 전국 품절로 쓰지 않습니다.',
   },
-
-  similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14', 'saucony-triumph-23'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZbPGoiOa' }],
+  similarShoes: [
+    'hoka-bondi-9',
+    'asics-gel-nimbus-28',
+    'new-balance-1080-v14',
+    'saucony-triumph-23',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZbPGoiOa',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 311046_01 · men/non-Wns',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%8B%88%ED%8C%8C%EC%9D%B4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-3-%3Cbr%3Emagnify-nitro-3/311046.html',
+        note: '199000원 정가·127360원 캐시 판매가. today relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: '한국 공식 캐시 311047_01 · women',
+        url: 'https://kr.puma.com/kr/ko/pd/%EB%A7%A4%EA%B7%B8%EB%8B%88%ED%8C%8C%EC%9D%B4-%EB%82%98%EC%9D%B4%ED%8A%B8%EB%A1%9C-3-%EC%9A%B0%EB%A8%BC%EC%8A%A4-%3Cbr%3Emagnify-nitro-3-wns/311047.html',
+        note: '199000원 정가·159200원 캐시 판매가. 2 weeks ago relative label; 현재 폭·재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/puma-magnify-nitro-3',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 261g·37.4/25.9mm·11.5mm. RR본문이SA136/99를energy return이라 부른 문장과 실제ER65.2/73.6%를 구분합니다. SA와 리턴은 다른 시험입니다. 구방식 통기5/5와 David의 더운 니트 체감, 갑피5/5·아웃솔1.3mm마모도 다른 정보입니다. 부상예방 전항목최상위·평발 회복·500km·모든 한국 발 적합 보장은 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/puma-magnify-nitro-3-review-2025/',
+        note: '한국260g(UK8)·40/30mm·10mm, DOR264g(남성US9)/227g(여성US8)·40/30mm·10mm, RR261g·37.4/25.9mm·11.5mm입니다. 남녀 한국 페이지의 동일UK8 문구를 여성검체라고 해석하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };
