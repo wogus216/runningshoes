@@ -31,7 +31,7 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
 
   return (
     <tr className="border-b border-sky-100">
-      <td className="whitespace-nowrap bg-sky-50 py-3 px-4 text-sm font-medium text-slate-600">
+      <td className="whitespace-nowrap bg-sky-50 py-3 px-4 text-sm font-medium text-sky-800">
         {label}
       </td>
       {values.map((value, idx) => {
@@ -77,7 +77,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           {onRemove && (
             <button
               onClick={() => onRemove(shoe.id || shoe.slug || '')}
-              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-sky-50 p-2 text-slate-400 hover:bg-red-100 hover:text-red-500"
+              className="flex min-h-[44px] min-w-[44px] items-center justify-center rounded-full bg-sky-50 p-2 text-sky-800 hover:bg-red-100 hover:text-red-500"
               aria-label={`${shoe.name} 비교에서 제거`}
             >
               <X className="h-5 w-5" />
@@ -206,7 +206,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
         <table className="w-full min-w-[600px]">
           <thead>
             <tr className="border-b-2 border-sky-100">
-              <th className="w-40 bg-sky-50 py-4 px-4 text-left text-sm font-semibold text-slate-900">
+              <th className="w-40 bg-sky-50 py-4 px-4 text-left text-sm font-semibold text-sky-950">
                 항목
               </th>
               {shoes.map(shoe => (
@@ -218,7 +218,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                     {onRemove && (
                       <button
                         onClick={() => onRemove(shoe.id || shoe.slug || '')}
-                        className="absolute -top-1 -right-1 p-2 min-w-[32px] min-h-[32px] flex items-center justify-center rounded-full bg-slate-100 text-slate-400 hover:bg-red-100 hover:text-red-500"
+                        className="absolute -top-1 -right-1 p-2 min-w-[32px] min-h-[32px] flex items-center justify-center rounded-full bg-sky-50 text-sky-800 hover:bg-red-100 hover:text-red-500"
                       >
                         <X className="h-4 w-4" />
                       </button>
@@ -315,7 +315,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               format={v => (typeof v === 'number' ? `${v}mm` : v)}
             />
             <CompareRow
-              label="카본 플레이트"
+              label="카본 보강 구조"
               values={shoes.map(s =>
                 s.biomechanics?.carbonPlate === undefined
                   ? '-'

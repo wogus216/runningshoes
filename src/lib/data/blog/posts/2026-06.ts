@@ -656,105 +656,39 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'nike-pegasus-premium-vs-vomero-18',
-    slug: 'nike-pegasus-premium-vs-vomero-18',
-    title: '나이키 페가수스 프리미엄 vs 보메로 18 비교 | 같은 ZoomX, 10만원 차이 — 뭘 사야 하나',
-    description: '나이키 페가수스 프리미엄(28.9만)과 보메로 18(18.9만), 둘 다 ZoomX+ReactX 듀얼 폼에 43mm 힐 스택입니다. 그런데 가격은 10만원이나 차이 나죠. 핵심은 Full-length Air Zoom Unit(반발력)과 와이드 옵션 유무입니다. 반발이냐 순수 쿠션이냐, 발볼·예산까지 따져 한국 러너에게 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/nike-pegasus-premium-vs-vomero-18.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-26',
-    updatedAt: '2026-09-28',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['페가수스 프리미엄', '보메로 18', '나이키 데일리', 'ZoomX', '맥스 쿠션', '러닝화 비교'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 ZoomX+ReactX 듀얼 폼 + 43mm 힐 스택</strong>이지만, <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>에는 <strong>Full-length Air Zoom Unit</strong>이 추가돼 반발력(8/10)이 살아있고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그게 없는 대신 <strong>순수 맥스 쿠션</strong>(반발 7/10)에 집중합니다</li>
-    <li><strong>가격이 10만원 차이</strong>(프리미엄 28.9만 vs 보메로 18.9만). 그리고 결정적으로 <strong>보메로만 와이드 옵션이 있고(한국 공식몰 남녀, 2026-09-29 확인), 프리미엄은 와이드가 없습니다</strong>. 발볼 넓은 한국 러너에겐 이게 사실상 결론을 정합니다</li>
-    <li><strong>통통 튀는 데일리 + 발볼 좁음 + 예산 여유 → 페가수스 프리미엄</strong>, <strong>순수 쿠션·무릎 보호 + 발볼 넓음 + 가성비 → 보메로 18</strong>입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 ZoomX인데 왜 10만원이나 차이 날까</p>
-    <p>두 신발은 미드솔 폼(ZoomX+ReactX)도, 힐 스택(43mm)도 같습니다. 그래서 "어차피 같은 거 아냐?"라고 생각하기 쉽죠. 하지만 <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>은 발 전체 길이의 <strong>Air Zoom Unit</strong>을 더 넣어 <strong>반발과 추진</strong>을 만들고, <a href="/shoes/nike-vomero-18">보메로 18</a>은 그 부품 없이 <strong>푹신함과 관절 보호</strong>에 올인합니다. 10만원의 차이는 곧 "통통 튀는 다재다능함이냐, 순수한 쿠션 가성비냐"의 차이입니다. 여기에 발볼 옵션까지 더하면 답이 꽤 명확해집니다.</p>
-  </div>
-</div>
-
-<h2>스펙 비교</h2>
-<table>
-  <thead><tr><th>항목</th><th>페가수스 프리미엄</th><th>보메로 18</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td>289,000원</td><td><strong>189,000원</strong></td></tr>
-    <tr><td>무게(US 9)</td><td>308g</td><td>298g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>43 / 31mm</td><td>43 / 29mm</td></tr>
-    <tr><td>드롭</td><td>12mm</td><td>14mm</td></tr>
-    <tr><td>미드솔</td><td>ZoomX+ReactX+<strong>Air Zoom Unit</strong></td><td>ZoomX+ReactX</td></tr>
-    <tr><td>반발력</td><td><strong>8 / 10</strong></td><td>7 / 10</td></tr>
-    <tr><td>쿠션</td><td>10 / 10</td><td>9 / 10</td></tr>
-    <tr><td><strong>발볼 / 와이드</strong></td><td>좁음 · <strong>와이드 없음</strong></td><td>좁음 · <strong>와이드 O (남녀)</strong></td></tr>
-    <tr><td>최적 페이스</td><td>5:00~6:30/km</td><td>5:30~7:00/km</td></tr>
-    <tr><td>내구성 / km당</td><td>600km / 약 482원</td><td>650km / 약 291원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택·드롭은 실측/공식 기준, 가격은 나이키 코리아 공식 정가.</small></p>
-
-<h2>핵심 차이 3가지</h2>
-<h3>① Air Zoom Unit — "반발이 필요한가"</h3>
-<p>가장 큰 구조적 차이입니다. 페가수스 프리미엄에는 발 전체에 걸친 <strong>Air Zoom Unit</strong>이 들어가 발을 앞으로 밀어주는 <strong>반발(8/10)</strong>을 만듭니다. 덕분에 같은 쿠션이라도 "통통 튀는" 느낌이고, 가끔 페이스를 올리는 날에도 대응이 됩니다. 보메로 18은 이 부품이 없어 <strong>순수하게 푹신한(반발 7/10)</strong> 쪽입니다. 회복런·LSD처럼 "편하게 오래"가 목적이면 보메로가, "쿠션은 두껍되 굴러가는 맛도 원한다"면 프리미엄이 맞습니다.</p>
-
-<h3>② 와이드 옵션 — 발볼 넓으면 사실상 결론</h3>
-<p>둘 다 표준은 좁은 편(narrow)입니다. 그런데 <strong>보메로 18은 와이드 옵션이 있고(한국 공식몰 남녀), 페가수스 프리미엄은 와이드가 없습니다.</strong> 발볼 넓은 한국 러너라면 이 한 줄로 답이 정해집니다 — 프리미엄은 매장에서 신어보고 맞아야만 선택지가 되고, 안 맞으면 대안이 없습니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</p>
-
-<h3>③ 가격 — 10만원으로 뭘 사는가</h3>
-<p>프리미엄이 10만원 비쌉니다. 그 돈으로 사는 건 <strong>Air Zoom Unit의 반발 + 프리미엄 니트 어퍼</strong>입니다. 반대로 보메로는 10만원 아끼면서 와이드 선택지와 더 긴 내구성(650km)을 얻죠. 순수 쿠션 데일리로만 쓸 거라면 <strong>보메로 18의 가성비가 분명히 앞섭니다.</strong></p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 정리</p>
-    <p><strong>페가수스 프리미엄 = 반발 있는 다재다능 프리미엄 데일리</strong>(발볼 좁고 예산 여유 있는 러너). <strong>보메로 18 = 순수 맥스 쿠션의 가성비 정석</strong>(발볼 넓거나 무릎 보호·회복런 우선 러너). 대부분의 한국 러너에게는 와이드 옵션과 10만원 절약 때문에 <strong>보메로 18이 더 현실적인 선택</strong>입니다.</p>
-  </div>
-</div>
-
-<h2>누가 어느 쪽?</h2>
-<table>
-  <thead><tr><th>이런 러너라면</th><th>추천</th></tr></thead>
-  <tbody>
-    <tr><td>쿠션은 두껍되 반발·페이스 변화도 원한다 · 발볼 좁음 · 예산 여유</td><td><strong>페가수스 프리미엄</strong></td></tr>
-    <tr><td>순수 푹신함·무릎 보호·회복런/LSD 위주</td><td><strong>보메로 18</strong></td></tr>
-    <tr><td>발볼이 넓다 (와이드 필요)</td><td><strong>보메로 18</strong> (프리미엄은 와이드 없음)</td></tr>
-    <tr><td>가성비·내구성 우선</td><td><strong>보메로 18</strong> (10만원 저렴, 650km)</td></tr>
-    <tr><td>나이키 니트 어퍼 프리미엄 감성</td><td><strong>페가수스 프리미엄</strong></td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너 관점 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 발볼 넓은데 페가수스 프리미엄 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 표준이 좁은 편인데 와이드 옵션이 없어, 발볼 넓은 한국 러너는 장거리에서 눌림이 올 수 있습니다. 같은 ZoomX 쿠션을 원하면 와이드가 있는 보메로 18이 안전합니다.</p>
-  <p class="faq-q">Q. 무릎이 걱정인데 어느 쪽이 낫나요?</p>
-  <p class="faq-a">A. 둘 다 43mm 힐 스택으로 충격 흡수가 우수하지만, 보메로 18은 족저근막염·아킬레스·신스플린트 보호가 모두 최상위라 관절 보호 종합력이 살짝 앞섭니다. 맥스 쿠션을 더 넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 보세요.</p>
-  <p class="faq-q">Q. 초보 첫 신발로는?</p>
-  <p class="faq-a">A. 둘 다 입문~데일리로 무난합니다. 예산이 빠듯하면 보메로 18(18.9만)이, 반발 있는 다재다능함을 원하면 페가수스 프리미엄이 맞습니다. 단 둘 다 308·298g으로 무거운 편이라, 빠른 훈련용으로는 별도의 가벼운 신발을 두는 걸 권합니다.</p>
-  <p class="faq-q">Q. 보메로 18 대신 볼 만한 맥스 쿠션은?</p>
-  <p class="faq-a">A. <a href="/shoes/hoka-bondi-9">호카 본디 9</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a>이 같은 맥스 쿠션 카테고리의 대표 대안입니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>각 신발의 전체 스펙·실측·구매 링크는 <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄 상세</a> · <a href="/shoes/nike-vomero-18">보메로 18 상세</a>에서 확인하세요. 두 신발을 항목별로 나란히 보려면 <a href="/compare">비교 도구</a>를, 내 발·목표에 맞는 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 나이키 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 스펙은 RunRepeat 실측 및 브랜드 공식 기준입니다.</small></p>
-`,
+    id: "nike-pegasus-premium-vs-vomero-18",
+    slug: "nike-pegasus-premium-vs-vomero-18",
+    title: "페가수스 프리미엄 vs 보메로 18 — Air Zoom·실측·한국 폭 비교",
+    description: "같은ZoomX·ReactX 이름을 쓰는 두 모델의Air Zoom유무,실측308/298g과 한국SKU별 가격·폭을 비교합니다. 무릎보호와 공통수명 순위 대신 실제 고정·전환을 확인하세요.",
+    thumbnail: "/images/shoes/nike/pegasus-premium/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-26",
+    updatedAt: "2026-11-09",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "페가수스 프리미엄",
+      "보메로18",
+      "Air Zoom",
+      "한국 판매조건"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>페가수스 프리미엄은 성형 전장 Air Zoom이 추가됩니다.</li><li>실측 힐42.8/42.5mm와 무게 308/298g은 비슷해도 앞쪽·드롭·피팅은 다릅니다.</li><li>보메로 18 한국 남녀 와이드 SKU는 확인,프리미엄의 현재 한국 와이드는 미확인입니다.</li></ul></div>
+<h2>두 구조를 구분하는 부품</h2><p>페가수스 프리미엄은 상부 ZoomX·하부 ReactX에 성형 전장 Air Zoom을 결합합니다. 보메로18은ZoomX·ReactX이중 폼입니다. Air Zoom을 카본 플레이트로 동일시하지 않으며 같은 폼 이름만으로 배합·느낌·효능이 같다고 단정하지 않습니다.</p><table><thead><tr><th>RunRepeat 항목</th><th>페가수스 프리미엄</th><th>보메로18</th></tr></thead><tbody><tr><td>무게</td><td>308g</td><td>298g</td></tr><tr><td>힐/전족부</td><td>42.8/31.0mm</td><td>42.5/28.6mm</td></tr><tr><td>드롭</td><td>11.8mm</td><td>13.9mm</td></tr><tr><td>힐/전족부SA</td><td>155/136</td><td>147/116</td></tr><tr><td>힐/전족부에너지리턴</td><td>67.3/68.3%</td><td>56.9/58.9%</td></tr><tr><td>주폼 경도</td><td>36.9AC·보조39.9AC</td><td>30.5AC</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>91.3/70.3/29.1mm</td><td>95.6/69.6/26.2mm</td></tr></tbody></table>
+<p>표는 출처별 해외검체 실측입니다. SA·경도·에너지리턴을 합산해 무릎 보호 종합 순위나 회복 효과를 만들지 않습니다. 내부 최광폭은 18이 더 크지만 엄지 너비는 프리미엄이 더 커, 한 치수로 전체 핏의 승자를 정하기도 어렵습니다.</p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p>
+<h2>한국 가격은 실제 살 SKU로 비교</h2><p>페가수스 프리미엄은 남성 IM8342-200 정가289,000원·여성 IO9918-100 정가279,000원입니다. 보메로 18의 확인 남성 레귤러·남녀 와이드 정가는 189,000원입니다. 따라서 확인 남성 SKU 정가끼리는 100,000원 차이, 확인 여성 SKU끼리는 90,000원 차이입니다. 할인·재고·폭을 고른 뒤 실제 지출을 비교하세요. 프리미엄은 RR 본문의 와이드 없음과 메타의 Wide가 충돌하며 현재 한국 와이드 SKU는 미확인입니다.</p>
+<h2>원문 리뷰가 알려주는 구체적 시착 위치</h2><p>DOR Matt(남성 US10)은 프리미엄의 앞코 테이퍼·혀 이동·단단한 카운터와 힐 전환을 지적했습니다. Andrea(여성 US9.5)는 압박 때문에 편하게 걷거나 달릴 수 없어 주행 성능 테스트를 수행하지 못했습니다. 이를 여성의 주행감 평가로 인용하지 않습니다. 18에서는 Matt이 약간 여유 있는 앞발과 초기 힐 슬립을 언급했습니다.</p><p>구매할 때는 프리미엄의 엄지 옆·발등·힐 카운터, 18의 힐 들림을 따로 살펴보세요. 프리미엄의 앞쪽 높이가 더 높아도 엄지 옆 압박이 해결된다는 뜻은 아닙니다. 양발과 평소 양말·인솔을 포함해 확인하세요.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>프리미엄이라는 이름만으로 교체할 필요는 없습니다</h2><p>더 비싼 모델이 모든 사람에게 더 편하거나 빠르다는 근거는 없습니다. 기존 신발에서 해결하려는 문제를 먼저 적고, 추가 부품이 만드는 전환과 고정이 실제로 편한지 비교하세요. 수명 600/650km와 km당 비용·질환 등급·모든 한국 러너 추천 순위는 검증하지 못해 제거했습니다.</p>
+<h2>원문과 확인 범위</h2><p><a href="https://runrepeat.com/nike-pegasus-premium" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/nike-pegasus-premium-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/nike-pegasus-premium">한국 확인SKU별 공식 원문·확인 한계</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><h2>원문과 확인 범위</h2><p><a href="https://runrepeat.com/nike-vomero-18" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/nike-vomero-18-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/nike-vomero-18">한국 확인SKU별 공식 원문·확인 한계</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    faqs: [
+      {
+        "question": "프리미엄이 무릎 보호에 더 좋나요?",
+        "answer": "실험실 수치와 개별 리뷰로 질환별 보호 우위를 정하지 않습니다. 통증·저림이 있으면 신발 선택과 별도로 평가받으세요."
+      },
+      {
+        "question": "프리미엄에는 한국 와이드가 없나요?",
+        "answer": "이번 확인 범위에서는 미확인입니다. 해외 리뷰 안에서도 본문과 폭 메타가 달라 한국 옵션 부재로 확정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'new-balance-sc-elite-v5-review',
@@ -7857,120 +7791,39 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'on-cloudrunner-2-review-2026',
-    slug: 'on-cloudrunner-2-review-2026',
-    title: '단종됐지만 알아둘 가치 — On 클라우드러너 2 리뷰 | 가벼운 입문 안정화, 중고로 살까 vs 클라우드러너 3로 갈까',
-    description: '온(On)의 입문 안정화 클라우드러너 2. 5/5 힐 카운터로 과내전을 잡아주면서도 가볍고 통기성 좋은 데일리·워킹 겸용화입니다. 다만 한국 공식몰에서는 단종돼 후속작 클라우드러너 3로 대체됐죠. 단단한 승차감과 마일드한 안정성의 실체, 단종 상황에서 중고로 살지 CR3로 갈지, 카야노 대비 가성비까지 솔직하게 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudrunner-2-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['온', 'On', '클라우드러너 2', '안정화', '힐 카운터', '과내전', '입문 러닝화', '워킹 겸용', '단종', 'On 안정화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드러너 2는 <strong>5/5 힐 카운터로 과내전을 잡아주는 가벼운 입문 안정화</strong> — 275g 경량에 통기성·워킹 겸용이 강점입니다</li>
-    <li>단, <strong>한국 공식몰에서는 단종</strong>돼 후속작 <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>로 대체됐습니다(중고·병행·재고로만 구매 가능)</li>
-    <li>안정성은 "거의 중립에 가까운 마일드" 수준이고 반발은 약해, <strong>심한 과내전엔 부족</strong>합니다. 지금 새로 산다면 가벼운 CR2 중고 vs 안정성 보강된 신품 CR3를 저울질하세요</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">📦</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저 — 한국 공식 단종 상태입니다</p>
-    <p><a href="/shoes/on-cloudrunner-2">클라우드러너 2</a>는 2023년 출시된 On의 입문 안정화로, 현재 <strong>한국 공식몰에서는 판매가 종료</strong>됐습니다(후속작 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3</a>로 세대교체, 방수 버전만 잔존). 즉 신품 정가 구매는 어렵고 <strong>중고·병행수입·재고</strong>로만 접할 수 있죠. 그럼에도 여전히 신는 분이 많고 중고 매물도 흔해, "지금 사도 될지"를 판단할 수 있게 정리합니다.</p>
-  </div>
-</div>
-
-<h2>클라우드러너 2, 어떤 신발인가</h2>
-<p>핵심은 <strong>힐 카운터 안정화</strong>입니다. 외부 레일형 카운터 + 내부 스티프 카운터(강성 5/5)로 발뒤꿈치를 단단히 잡아, 발이 안쪽으로 무너지는 <strong>과내전</strong>을 완화합니다. 힐 33.6mm / 전족 25.1mm 스택, <strong>275g 경량</strong>, 8.5mm 드롭으로 안정화치고 가볍고, Helion 폼은 겨울에도 17%만 경화돼 사계절 안정적입니다.</p>
-
-<h2>'안정화'의 실체 — 생각보다 마일드</h2>
-<p>이름은 안정화지만, 실제 지지는 <strong>"거의 중립에 가까운 마일드 수준"</strong>입니다(Run to the Finish는 "거의 중립화로 분류할 뻔했다"고 표현).</p>
-<ul>
-  <li><strong>힐 카운터는 강합니다</strong>(5/5) — 뒤꿈치 고정력은 확실합니다</li>
-  <li>하지만 <strong>미드풋·전족부는 중립</strong>에 가깝고, 비틀림 강성도 중간(3/5)이라 <strong>심한 과내전 교정엔 부족</strong>합니다</li>
-  <li>"불안정한 중립화는 싫지만 카야노처럼 과한 교정도 싫다"는 <strong>경미한 과내전</strong> 러너에게 맞습니다</li>
-</ul>
-
-<h2>강점 — 가볍고, 통기성 좋고, 워킹 겸용</h2>
-<ul>
-  <li><strong>275g 경량</strong> — 안정화 중 가벼운 편이라 데일리·이지런에 부담이 적습니다</li>
-  <li><strong>통기성 우수</strong> — 거의 만점급 메쉬 어퍼. 여름에도 쾌적합니다</li>
-  <li><strong>겨울 안정성</strong> — Helion 폼이 영하에서도 17%만 경화돼 사계절 착화감이 일정합니다</li>
-  <li><strong>워킹 겸용</strong> — 안정적이라 출퇴근·일상 착화에도 좋습니다</li>
-  <li><strong>가성비</strong> — 과거 정가 18만 9천원으로 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(₩199,000)보다 1만 원 저렴했습니다</li>
-</ul>
-
-<h2>약점 — 반발과 단단함</h2>
-<ul>
-  <li><strong>반발이 약합니다</strong> — 에너지 리턴 57%로, 톡 쏘는 추진력은 없습니다</li>
-  <li><strong>단단한 승차감</strong> — 27.3 HA로 "푹신한 구름"을 기대하면 의외로 딱딱합니다</li>
-  <li><strong>빠른 페이스에 둔함</strong> — 템포·인터벌용은 아닙니다</li>
-  <li><strong>사이즈 주의</strong> — 한국 공식몰에서 단종돼 매장 시착이 어려우니, 중고·병행 구매 시 실측 길이 확인이 필요합니다</li>
-</ul>
-
-<h2>핵심 — 중고 CR2 vs 신품 CR3</h2>
-<p>지금 클라우드러너를 고민한다면 가장 현실적인 질문입니다.</p>
-<table>
-  <thead>
-    <tr><th></th><th>클라우드러너 2 (이 글·단종)</th><th><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a> (신품)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>구매</strong></td><td>중고·병행·재고만</td><td>한국 공식 판매 중</td></tr>
-    <tr><td><strong>무게</strong></td><td>275g (가벼움)</td><td>298g (실측)</td></tr>
-    <tr><td><strong>토박스</strong></td><td>72.4mm (더 넓음)</td><td>71.0mm</td></tr>
-    <tr><td><strong>스택·안정성</strong></td><td>기본</td><td>스택↑·힐 클립 개선</td></tr>
-  </tbody>
-</table>
-<p><strong>가볍고 토박스 넓은 걸 원하고 중고 매물이 상태 좋다면 CR2</strong>, <strong>신품 보증과 보강된 안정성·쿠션을 원하면 CR3</strong>입니다. 흥미롭게도 CR2가 더 가볍고 발볼 여유가 있어, "단순 상위호환"은 아닙니다. CR3의 상세는 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3 리뷰</a>에서 다뤘습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">중고로 산다면 체크</p>
-    <ul>
-      <li><strong>한국 공식 와이드는 없습니다</strong> — 미국 On엔 Wide SKU가 있지만 한국 공식엔 없으니, 발볼 넓은 러너는 직구나 실착을 확인하세요</li>
-      <li><strong>아웃솔 내구성</strong> — On의 고질적 약점. 중고는 밑창 마모 상태를 꼭 확인(권장 교체 500km)</li>
-      <li><strong>사이즈</strong> — 한국 공식 단종이라 시착이 어려우니 실측 길이를 확인하세요</li>
-    </ul>
-  </div>
-</div>
-
-<h2>살까, 말까</h2>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">이렇게 정리됩니다</p>
-    <ul>
-      <li><strong>중고 CR2가 맞는 사람</strong>: 경미한 과내전 + 가벼운 데일리·워킹 겸용을 원하고, 상태 좋은 중고를 저렴하게 구할 수 있는 러너</li>
-      <li><strong>신품 CR3가 나은 사람</strong>: 보증·신품을 원하거나, 더 두툼한 쿠션·보강된 안정성을 원하는 러너 → <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a></li>
-      <li><strong>본격 안정화가 필요하면</strong>: <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>가 지지력에서 앞섭니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 지금 새로 살 수 있나요?</h3>
-<p>한국 공식몰에서는 <strong>단종</strong>됐습니다. 중고·병행수입·재고로만 구할 수 있고, 신품 보증을 원하면 후속작 <a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>가 현실적입니다.</p>
-
-<h3>Q. 심한 평발·과내전인데 충분한가요?</h3>
-<p>힐 카운터는 강하지만 전체 지지는 마일드해서, <strong>심한 과내전엔 부족</strong>할 수 있습니다. 그럴 땐 <a href="/shoes/asics-gel-kayano-32">카야노</a> 같은 본격 안정화가 안전합니다.</p>
-
-<h3>Q. CR3로 그냥 가는 게 낫나요?</h3>
-<p>신품·보증·보강된 안정성을 원하면 CR3가 낫습니다. 다만 CR2가 <strong>더 가볍고 토박스가 넓어</strong>, 가벼움·발볼 여유를 우선하고 좋은 중고를 구할 수 있다면 CR2도 합리적입니다.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스 72.4mm로 표준이라 보통 발은 무난하지만, <strong>한국 공식 와이드가 없습니다</strong>. 발볼이 넓다면 직구 와이드나 매장 착화를 확인하세요.</p>
-
-<h2>마무리</h2>
-<p>클라우드러너 2는 <strong>"가볍고 통기성 좋은 입문 안정화"</strong>로 분명한 강점이 있었지만, 한국에서는 이미 세대교체로 단종됐습니다. 지금 새로 만난다면 핵심은 둘입니다 — <strong>좋은 중고를 저렴하게 구할 수 있는가</strong>, 그리고 <strong>심한 과내전이 아닌가</strong>. 두 조건에 맞으면 여전히 좋은 데일리·워킹화지만, 신품 보증이나 더 강한 안정성을 원하면 <a href="/blog/on-cloudrunner-3-review-2026">클라우드러너 3</a>가, 본격 교정이 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노</a>가 답입니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Doctors of Running·Run to the Finish 리뷰를 종합한 내용입니다. 무게·스택은 측정 기준에 따라 차이가 있을 수 있습니다. 클라우드러너 2는 2026-06 기준 한국 공식몰에서 단종 상태이며, 가격(₩189,000)은 과거 정가입니다.</p>
-`,
+    id: "on-cloudrunner-2-review-2026",
+    slug: "on-cloudrunner-2-review-2026",
+    title: "클라우드러너 2 분석 — 단종 단정 정정·힐 고정·실측 조건",
+    description: "클라우드러너2의 한국 현재 판매는 미확인으로 정정합니다.275g 실측·힐클립·Speedboard 없는 구조와 개별 착화 의견을 구분하고 구매 전 확인할 조건을 정리합니다.",
+    thumbnail: "/images/shoes/on/cloudrunner2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "클라우드러너2",
+      "판매조건 정정",
+      "힐 고정",
+      "러닝화 분석"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>한국 기본형 상품URL이shop으로 이동했습니다. 이것을 단종 확정으로 쓰지 않습니다.</li><li>RR 실측275g·33.6/25.1mm·8.5mm와 DOR 공시39/29mm·10mm를 구분합니다.</li><li>힐클립·사이드월·CloudTec 구조의 체감을 임상 교정 등급으로 바꾸지 않습니다.</li></ul></div>
+<h2>먼저 정정합니다: 한국 단종을 확정하지 못했습니다</h2><p>기존 글은 공식 검색 부재와 세대교체를 근거로 ‘단종·중고만 가능’이라고 단정했습니다. 이번 확인에서 기본형2 후보URL이 한국shop으로 이동했으나 그것만으로 판매 종료를 확정할 수 없습니다. 현재 정가·성별·폭·SKU·재고는 미확인으로 둡니다. 후속3와2 Waterproof의 가격을 기본형2에 넣지 않습니다. <a href="https://www.on.com/ko-kr/products/cloudrunner-2-m-3me1014" target="_blank" rel="noopener noreferrer">확인한 공식 후보URL</a></p>
+<h2>구조와 출처별 수치</h2><p>원문은 Helion·CloudTec과 힐클립·사이드월을 설명하고 RR은 Speedboard 없음으로 명시합니다. 전작의TPU구조가2세대에도 들어 있다고 가정하지 않습니다.</p><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>275g</td><td>남성277g·US9 / 여성240g·US8</td></tr><tr><td>힐/전족부</td><td>33.6/25.1mm</td><td>39/29mm</td></tr><tr><td>드롭</td><td>8.5mm</td><td>10mm</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>94.6/72.4/27.5mm</td><td>개인 착화와 별도</td></tr></tbody></table>
+<p>RR 현재 경도48.6AC, 에너지 리턴 힐57.1/전족59.4%입니다. SA 본문은 힐·전족 숫자를 뒤집어 적었지만 요약표·실제 선택기는 힐126/전족98로 일치해 그 조건을 채택했습니다. 힐카운터 시험5/5를 최강 교정·발목 고정 보장으로 바꾸지 않습니다.</p>
+<h2>리뷰어가 말한 지지와 고정의 범위</h2><p>DOR의 Matt(남성US10)은 길들임 후 길이가 맞았고 앞발·힐은 넓지만 중족부는 낮다고 느꼈습니다. 힐 고정에 조임이 필요했고 단단한 일상 주행·보행 성격으로 봤습니다. DOR는 가벼운 뒤꿈치 안정성, RR은 중립~가벼운 안정성으로 표현하지만 평발 증상이나 과내전의 치료 강도를 정한 것은 아닙니다.</p><p>DOR David의FIT 첫 문장에는 다른 모델명Cloudmonster2가 적혀 있어 해당 착화감의 귀속이 모호합니다. 이 부분을 조용히 고쳐 확정된Cloudrunner2 경험으로 싣지 않습니다.</p>
+<h2>지금 구매를 고려한다면</h2><p>새 상품·재고·중고 여부를 먼저 확인하고 정확한 규격·반품·교환·보증 조건을 판매자에게 확인하세요. 짧은 마모 시험이나 판매자의 사용거리만으로 남은 수명을 계산하지 않습니다. 한국 와이드 현재SKU도 미확인이므로 해외 폭 목록을 국내 판매 보장으로 읽지 마세요.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>원문과 확인 범위</h2><p><a href="https://runrepeat.com/on-cloudrunner-2" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/on-cloudrunner-2-review-2024/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/on-cloudrunner-2">한국 확인SKU별 공식 원문·확인 한계</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "한국에서 단종됐나요?",
+        "answer": "이번 확인은 공식 후보URL의shop이동까지입니다. 단종이나 중고만 구매 가능하다고 확정할 근거는 확보하지 못했습니다."
+      },
+      {
+        "question": "심한 과내전이면 어느 신발이 안전한가요?",
+        "answer": "힐카운터 강도나 리뷰어 지지감으로 개인 질환의 안전 순위를 정하지 않습니다. 증상이 있으면 별도로 평가받고 실제 착화를 확인하세요."
+      }
+    ],
   },
   {
     id: 'on-cloudrunner-3-review-2026',
@@ -8090,112 +7943,39 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'on-cloudsurfer-2-review-2026',
-    slug: 'on-cloudsurfer-2-review-2026',
-    title: 'On 입문 데일리, \'구름 착지감\'의 진실 — 클라우드서퍼 2 리뷰 | 내구성·디자인은 합격, 반발은 글쎄 + 맥스와 차이',
-    description: '온(On)의 입문용 데일리 트레이너 클라우드서퍼 2. CloudTec Phase의 매끄러운 전환과 최상급 내구성, SNS에 통하는 디자인이 강점이지만, "구름 같은 착지감"이라는 이미지와 달리 실제론 단단하고 반발이 약합니다. 해외 평가가 갈리는 이 신발의 진짜 가치, 와이드 없는 발볼 이슈, 그리고 클라우드서퍼 맥스와의 차이를 솔직하게 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudsurfer-2-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['온', 'On', '클라우드서퍼 2', '입문 러닝화', '데일리 쿠션화', 'CloudTec Phase', 'easy run', '러닝 입문', '온 클라우드서퍼', 'On 러닝화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드서퍼 2는 온(On)의 <strong>입문용 데일리 트레이너</strong> — CloudTec Phase의 매끄러운 전환, <strong>최상급 내구성</strong>(아웃솔 마모 0.6mm), SNS에 통하는 디자인이 강점입니다</li>
-    <li>단, <strong>"구름 같은 착지감" 이미지와 달리 실제론 단단하고 반발이 약합니다</strong> — 에너지 리턴 52%로 해외 평가가 갈립니다(BITR 혹평 vs RTR 호평)</li>
-    <li><strong>와이드 옵션이 없고</strong> 10km 이상 장거리엔 단조로워, <strong>단거리 데일리·출퇴근 겸용</strong>에 맞습니다. 더 무겁고 쿠션 보강된 <a href="/blog/on-cloudsurfer-max-review-2026">맥스</a>와는 성격이 다릅니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">☁️</span>
-  <div class="callout-body">
-    <p class="callout-title">On 입문, 디자인으로 사고 후회는 없을까</p>
-    <p><a href="/shoes/on-cloudsurfer-2">클라우드서퍼 2</a>는 "온(On) 한번 신어보고 싶다"는 러너의 첫 선택으로 자주 꼽히는 데일리 트레이너입니다. 특유의 CloudTec 디자인과 일상 겸용 스타일이 매력이죠. 그런데 막상 달려보면 <strong>"구름 같은 착지감"이라는 브랜드 이미지와 실제 감각 사이에 괴리</strong>가 있습니다. 해외 리뷰 점수도 크게 갈리고요. 19만 9천원의 값을 하는지 솔직하게 짚어보겠습니다.</p>
-  </div>
-</div>
-
-<h2>클라우드서퍼 2, 어떤 신발인가</h2>
-<p>온의 <strong>CloudTec Phase</strong>(파드가 순차 압축되며 굴러가는 구조)에 Helion 폼을 얹은 입문~데일리 트레이너입니다. 힐 37.5mm / 전족 27.1mm 스택, <strong>254g 경량</strong>, 드롭은 실측 약 10mm로 높은 편이라 힐 스트라이커에게 자연스럽습니다. 빠른 레이스보다 <strong>편안한 데일리 조깅과 일상 착화</strong>를 노린 포지션이죠.</p>
-
-<h2>강점 — 내구성·디자인·개선점</h2>
-<ul>
-  <li><strong>내구성 최상급</strong> — 아웃솔 마모가 0.6mm로 업계 평균(1.1mm)의 절반 수준. 오래 신어도 밑창이 잘 안 닳습니다</li>
-  <li><strong>1세대 대비 확실한 개선</strong> — 통기성이 크게 좋아졌고, 구형의 고질병이던 <strong>"끽끽" 소음이 완전히 사라졌습니다</strong>. 폼 밀도를 높여 내구성도 개선됐죠</li>
-  <li><strong>매끄러운 록커 전환</strong> — 힐-투-토 굴림이 자연스러워 일정 페이스 유지가 편합니다</li>
-  <li><strong>디자인·일상 겸용</strong> — 러닝 후 카페에 들러도 튀지 않는 스타일. "운동화 겸 러닝화"로 매력적입니다</li>
-</ul>
-
-<h2>약점 — '구름 착지감'의 진실</h2>
-<p>가장 솔직하게 짚어야 할 부분입니다. 클라우드서퍼 2는 이름·이미지와 달리 <strong>폭신하지 않고 단단합니다.</strong></p>
-<ul>
-  <li><strong>에너지 리턴 52%</strong> — 데일리 트레이너 평균 이하. 톡톡 튀는 반발과는 거리가 멉니다</li>
-  <li><strong>단단한 승차감</strong> — Believe in the Run은 "<strong>식탁에 놔둔 김빠진 콜라 같다</strong>"는 표현까지 썼습니다(D티어 혹평). 반면 Road Trail Run은 8.2/10으로 후하게 평가해, <strong>평가가 크게 갈립니다</strong></li>
-  <li><strong>장거리 단조로움</strong> — 5~10km까진 괜찮지만 그 이상에선 승차감이 밋밋해집니다</li>
-</ul>
-<p>즉 "구름처럼 푹신"을 기대하면 실망합니다. <strong>"단단하고 안정적인 데일리"</strong>로 받아들여야 맞습니다.</p>
-
-<h2>맥스와 뭐가 다른가</h2>
-<p>같은 클라우드서퍼 라인의 <a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a>와 헷갈리기 쉬우니 정리합니다.</p>
-<table>
-  <thead>
-    <tr><th></th><th>클라우드서퍼 2 (이 글)</th><th><a href="/shoes/on-cloudsurfer-max">클라우드서퍼 맥스</a></th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>가격</strong></td><td>199,000원</td><td>219,000원</td></tr>
-    <tr><td><strong>무게</strong></td><td>254g (가벼움)</td><td>292g</td></tr>
-    <tr><td><strong>토박스</strong></td><td>73.5mm</td><td>71.4mm (더 좁음)</td></tr>
-    <tr><td><strong>성격</strong></td><td>가벼운 단거리 데일리</td><td>묵직한 안정형 장거리</td></tr>
-  </tbody>
-</table>
-<p>흥미롭게도 <strong>힐 쿠션·경도는 둘이 거의 같습니다.</strong> 클라우드서퍼 2가 더 가볍고 싸고 토박스도 넓어, "가벼운 데일리"라면 오히려 2가 낫습니다. 맥스는 전족부 쿠션과 약간의 안정감을 더할 때만 의미가 있죠 — 자세한 건 <a href="/blog/on-cloudsurfer-max-review-2026">클라우드서퍼 맥스 리뷰</a>에서 다뤘습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 러너가 사기 전 체크</p>
-    <ul>
-      <li><strong>와이드 옵션이 없습니다</strong> — 토박스 73.5mm로 표준이지만, 발볼 넓은 러너는 미드풋이 타이트할 수 있어 실착이 필수입니다</li>
-      <li><strong>장거리엔 비추천</strong> — 10km 이상 단조로워, 장거리 LSD용으론 다른 신발이 낫습니다</li>
-      <li><strong>가격 대비 성능</strong> — 19만 9천원에 반발·쿠션 성능을 기대하면 아쉽습니다. <strong>"디자인 8할, 성능 2할"</strong>로 보는 게 맞습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>살까, 말까 — 경쟁자와 함께</h2>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">이렇게 정리됩니다</p>
-    <ul>
-      <li><strong>맞는 사람</strong>: On 디자인을 좋아하고, 단거리 데일리·출퇴근 겸용 + 내구성을 원하는 러너. 단단한 안정감을 선호하는 입문자</li>
-      <li><strong>맞지 않는 사람</strong>: 폭신한 쿠션·반발을 원하는 러너, 10km 이상 장거리러너, 발볼 넓은 러너, 가성비 최우선 러너</li>
-      <li><strong>대안</strong>: 반발·범용성을 원하면 <a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a>, 통통 튀는 데일리는 <a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a>가 가성비·성능에서 앞섭니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 입문용 첫 러닝화로 괜찮나요?</h3>
-<p>안정적이고 내구성이 좋아 무난하지만, 19만 9천원 가격과 "구름 착지감 기대"를 생각하면 최선은 아닐 수 있습니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>로 다른 입문화와 비교해 보세요.</p>
-
-<h3>Q. 정말 '구름처럼' 푹신한가요?</h3>
-<p>아닙니다. 마케팅 이미지와 달리 <strong>단단한 편</strong>입니다. 푹신함을 원하면 호카 클리프턴이나 뉴발 1080 쪽이 맞습니다.</p>
-
-<h3>Q. 맥스랑 뭘 살까요?</h3>
-<p><strong>가볍고 저렴한 단거리 데일리</strong>면 클라우드서퍼 2, <strong>묵직한 안정형 장거리</strong>면 맥스입니다. 힐 쿠션은 비슷하니 무게·가격·용도로 고르세요.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스가 73.5mm로 표준이라 보통 발은 무난하지만 <strong>와이드가 없습니다</strong>. 발볼이 넓다면 매장 착화가 필수입니다.</p>
-
-<h2>마무리</h2>
-<p>클라우드서퍼 2는 <strong>"성능보다 경험"으로 사는 신발</strong>입니다. 반발·쿠션 수치는 평범하지만, 최상급 내구성과 일상 겸용 디자인, On만의 록커감은 분명한 가치죠. 핵심은 기대치 조정입니다 — "구름처럼 푹신"이 아니라 "<strong>단단하고 오래 가는 데일리</strong>"로 보면 만족스럽습니다. 더 묵직한 쿠션을 원하면 <a href="/shoes/on-cloudsurfer-max">맥스</a>로, 반발·가성비를 원하면 <a href="/shoes/nike-pegasus-41">페가수스</a>·<a href="/shoes/asics-novablast-5">노바블라스트</a>로 눈을 돌려보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
-`,
+    id: "on-cloudsurfer-2-review-2026",
+    slug: "on-cloudsurfer-2-review-2026",
+    title: "클라우드서퍼 2 분석 — CloudTec Phase·반복 핫스팟·한국 판매 조건",
+    description: "Cloudsurfer2의 한국 정가199,000원·실측254g과 Helion·CloudTec Phase 구조를 확인합니다. 리뷰어별 압박·전환 차이를 구분해 발가락 위 어퍼와 고정을 살펴보세요.",
+    thumbnail: "/images/shoes/on/cloudsurfer2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "클라우드서퍼2",
+      "CloudTec Phase",
+      "피팅",
+      "러닝화 분석"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>한국 확인 남녀 레귤러 정가199,000원이며 일부 사이즈가 선택 가능했습니다.</li><li>Helion·CloudTec Phase 구조. DOR은 기존 방식의Speedboard가 없다고 설명합니다.</li><li>리뷰어 한 명은 초기 발가락 통증이 호전됐고 다른 한 명은 반복 핫스팟을 겪었습니다.</li></ul></div>
+<h2>현재 한국 상품에서 확인한 범위</h2><p>남성Black/Black3MF10121043·여성제품군3WF1010의 확인색Ivory/Ivory 정가199,000원을 확인했습니다. 여성 전체 색상SKU와 한국 와이드는 미확인입니다. 확인한 색상별 일부 사이즈는 선택 가능했지만 최종 주문 재고를 보장하지 않습니다. 남녀 페이지 모두261g·드롭9mm를 표시하지만 무게 사이즈 조건이 없어 실제 여성 검체 무게로 단정하지 않습니다.</p>
+<h2>해외 실측과 공시의 차이</h2><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>254g</td><td>남성255g·US9 / 여성221g·US8</td></tr><tr><td>힐/전족부</td><td>37.5/27.1mm</td><td>37/28mm</td></tr><tr><td>드롭</td><td>10.4mm</td><td>9mm</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>93.6/73.5/28.0mm</td><td>개인 착화와 별도</td></tr></tbody></table>
+<p>RR 힐/전족부 SA137/100·에너지 리턴52.6/54.1%와 현재 경도43.8AC를 확인했습니다. 기존25.5HA를 같은 척도의 최신값으로 유지하지 않습니다. Helion과CloudTec Phase를 상위Helion HF로 혼동하지 마세요.</p>
+<h2>숫자보다 시착에서 찾아볼 위치</h2><p>DOR의 David(남성US9.5)은 길이가 맞고 전작보다 공간이 늘었다고 느꼈으며 초반 발가락 통증이 호전됐다고 적었습니다. Andrea(여성US9.5)는 길이가 맞아도 마지막 아일렛의 뻣뻣한 부분이 넷째·다섯째 발가락 위를 눌러 반복 핫스팟을 겪었습니다. 발가락을 움직였을 때 어퍼가 누르는 위치와 로커가 꺾이는 위치를 확인할 이유입니다.</p>
+<h2>마모 시험과 거리 제한을 구분</h2><p>RR 아웃솔Dremel 마모0.6mm는 정해진 시험에서의 마모 깊이입니다. ‘500km를 넘어도 접지 유지’, ‘최상급 수명’으로 환산하지 않습니다. 또한 특정 리뷰어의 주행 길이 제한을 모든 러너의10km 상한이나2주 적응기간으로 바꾸지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면·조건입니다.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>원문과 확인 범위</h2><p><a href="https://runrepeat.com/on-cloudsurfer-2" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/on-cloudsurfer-2-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/on-cloudsurfer-2">한국 확인SKU별 공식 원문·확인 한계</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "10km 이상에는 신으면 안 되나요?",
+        "answer": "공통 거리 상한은 확인하지 못했습니다. 리뷰어의 핫스팟 경험은 개인 조건이며 본인 착화와 불편 여부를 확인해야 합니다."
+      },
+      {
+        "question": "와이드가 없나요?",
+        "answer": "현재 한국 와이드SKU를 확인하지 못했습니다. 미확인을 전체 옵션 부재로 단정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'on-cloudsurfer-max-review-2026',
@@ -8309,118 +8089,40 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'on-cloudmonster-3-review-2026',
-    slug: 'on-cloudmonster-3-review-2026',
-    title: '회복런엔 이만한 게 없다 — On 클라우드몬스터 3 리뷰 | 넓어진 핏·강해진 록커의 데일리 쿠션화, 하이퍼와 뭐가 다른가',
-    description: '온(On)의 클라우드몬스터 3는 푹신한 Helion 폼과 강한 록커로 굴러가는 느낌을 살린 데일리 쿠션화입니다. 다만 3세대 토박스는 71.0mm(RunRepeat 실측)로 전작(74.5mm)보다 좁아졌습니다. easy run·회복런·입문용으로 어떤지, 슈퍼트레이너인 하이퍼와 무엇이 다른지, 약 295g 무게와 어퍼 내구성·와이드 부재 같은 단점까지 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudmonster-3-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['온', 'On', '클라우드몬스터 3', '데일리 쿠션화', '회복런', 'easy run', 'Helion', '쿠션화', '입문 러닝화', 'CloudTec'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드몬스터 3는 푹신한 <strong>Helion 단일 폼 + 강한 록커</strong>로 "굴러가는 느낌"을 살린 <strong>데일리 쿠션화</strong> — 빠른 훈련보다 <strong>easy run·회복런·입문</strong>에 맞습니다</li>
-    <li>3세대 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작 클라우드몬스터 2(74.5mm)보다 좁아져, 발볼 있는 한국 러너는 착화 확인이 필요합니다</li>
-    <li>단, <strong>약 295g으로 무거운 편</strong>이고 어퍼 내구성·와이드 부재가 약점. 빠른 훈련을 원하면 슈퍼트레이너인 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>가 맞습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">☁️</span>
-  <div class="callout-body">
-    <p class="callout-title">'몬스터'라는 이름값</p>
-    <p>클라우드몬스터는 온(On)의 <strong>맥스 쿠션 데일리화</strong> 라인입니다. 큼직한 CloudTec 구조와 두툼한 폼으로 발밑이 푹신하고, 특유의 <strong>강한 록커(앞으로 굴러가는 설계)</strong>가 "발이 알아서 굴러가는" 감각을 줍니다. 3세대(<a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>)는 그 성격을 유지했지만, 토박스는 <strong>71.0mm(RunRepeat 실측)</strong>로 전작보다 좁아졌습니다. 기록을 위한 신발이 아니라, <strong>편하게 오래 달리는</strong> 신발입니다.</p>
-  </div>
-</div>
-
-<h2>클라우드몬스터 3, 어떤 신발인가</h2>
-<ul>
-  <li><strong>Helion 단일 폼</strong> — 부드럽고 푹신한 EVA·올레핀 블렌드. 하이퍼의 이중 밀도와 달리 단순하지만 데일리에 충분한 쿠션</li>
-  <li><strong>강한 록커</strong> — 앞으로 굴러가는 전환이 매끄러워 일정 페이스 유지가 쉽습니다</li>
-  <li><strong>스택 힐 약 38.6mm / 전족 32.2mm(RunRepeat 실측), 드롭 6mm(공식, 실측 6.4mm)</strong> — 하이퍼(실측 43.4/34.2mm)보다 낮아 데일리에 안정적</li>
-</ul>
-<p>쿠션감은 충분하지만 <strong>반발력은 평이</strong>합니다(에너지 리턴 약 57~59%). 빠르게 치고 나가는 신발이 아니라, <strong>충격을 흡수하며 편하게 굴러가는</strong> 성격이죠. 무릎이 약하거나 러닝을 막 시작한 러너에게 그 푹신함이 특히 반갑습니다.</p>
-
-<h2>어떤 러닝에 맞나</h2>
-<ul>
-  <li><strong>회복런·easy run</strong> — 힘든 훈련 다음 날, 다리를 풀어주는 느린 러닝에 최적</li>
-  <li><strong>러닝 입문</strong> — 푹신한 쿠션이 초반 충격 부담을 줄여 입문자 친화적입니다 (첫 신발 고민이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고)</li>
-  <li><strong>장시간 가벼운 조깅</strong> — 편안함 위주의 데일리 마일리지 쌓기</li>
-</ul>
-
-<h2>하이퍼·라이트스프레이와 뭐가 다른가</h2>
-<p>이름이 비슷한 형제 모델과 헷갈리기 쉬우니 정리합니다. 핵심은 <strong>"데일리냐, 슈퍼트레이너냐"</strong>입니다.</p>
-<table>
-  <thead>
-    <tr><th>모델</th><th>가격</th><th>폼</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>클라우드몬스터 3 (이 글)</strong></td><td>229,000원</td><td>Helion 단일</td><td>데일리·회복런</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a></td><td>259,000원</td><td>Helion HF 이중</td><td>장거리·템포 슈퍼트레이너</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></td><td>319,000원</td><td>Helion HF 이중</td><td>초경량 슈퍼트레이너</td></tr>
-  </tbody>
-</table>
-<p>일반 3는 <strong>단일 폼·낮은 스택의 데일리화</strong>, 하이퍼 두 모델은 <strong>이중 밀도·높은 스택의 슈퍼트레이너</strong>입니다. "빠른 훈련도 하고 싶다"면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로 올라가는 게 맞고, "편하게 데일리만"이면 일반 3로 충분합니다. 전작과의 차이가 궁금하면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>를 보세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">사기 전 체크 — 단점도 분명합니다</p>
-    <ul>
-      <li><strong>무겁습니다</strong> — 약 295g으로 동급 데일리화 중 무거운 편. 빠른 페이스엔 둔하게 느껴집니다</li>
-      <li><strong>어퍼 내구성 주의</strong> — 랩 테스트에서 토박스 내구성이 낮게 평가됐습니다. 거친 사용엔 마모가 빠를 수 있어요</li>
-      <li><strong>와이드 옵션이 없습니다</strong> — 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 평균보다 좁고 한국 공식몰엔 표준 폭 한 가지뿐이라, 발볼이 매우 넓다면 착화 확인이 필요합니다</li>
-      <li><strong>가격</strong> — 22만 9천원은 데일리화로는 프리미엄. 가성비 데일리라면 다른 선택지도 많습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>경쟁자 — 데일리 쿠션화 비교</h2>
-<p>같은 "푹신한 데일리" 자리에는 <a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a>, <a href="/shoes/nike-vomero-18">나이키 보메로 18</a> 등 강력한 경쟁자가 많습니다. 클라우드몬스터 3의 차별점은 <strong>온 특유의 강한 록커와 디자인</strong>이고, 클리프턴은 가벼움, 보메로는 부드러운 쿠션이 강점입니다. 푹신함과 굴러가는 감각, 브랜드 선호로 갈리는 선택이죠.</p>
-
-<h2>살까, 말까</h2>
-<div class="callout info">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">잘 맞는 사람</p>
-    <ul>
-      <li><strong>회복런·easy run용</strong> 푹신한 데일리화를 찾는 러너</li>
-      <li>러닝을 막 시작해 <strong>충격 부담이 적은</strong> 신발이 필요한 입문자</li>
-      <li>온의 <strong>록커감과 디자인</strong>을 좋아하는 러너</li>
-    </ul>
-  </div>
-</div>
-<div class="callout warning">
-  <span class="callout-icon">🚫</span>
-  <div class="callout-body">
-    <p class="callout-title">맞지 않는 사람</p>
-    <ul>
-      <li><strong>빠른 훈련·템포</strong>를 원하는 러너 → <a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a>로</li>
-      <li><strong>가벼운 신발</strong>을 원하는 러너 (약 295g은 무거운 편)</li>
-      <li><strong>발볼 매우 넓은</strong> 러너 (와이드 없음)</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 클라우드몬스터 3로 마라톤 뛰어도 되나요?</h3>
-<p>완주 목표의 편한 신발로는 가능합니다. 다만 무게가 있어 <strong>기록</strong>을 노린다면 슈퍼트레이너(<a href="/shoes/on-cloudmonster-3-hyper">하이퍼</a>)나 카본화가 낫습니다. 일반 3는 <strong>훈련·회복</strong>에 더 어울립니다.</p>
-
-<h3>Q. 입문자가 첫 신발로 사도 되나요?</h3>
-<p>푹신한 쿠션이라 입문에 무난합니다. 다만 22만 9천원이 부담이라면 더 합리적인 입문화도 많으니 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>를 함께 보세요.</p>
-
-<h3>Q. 하이퍼랑 가격 차이가 3만 원인데, 그냥 하이퍼 살까요?</h3>
-<p>용도가 다릅니다. <strong>데일리·회복</strong>이 목적이면 일반 3, <strong>빠른 장거리 훈련</strong>까지 원하면 하이퍼입니다. 단순 상위호환이 아니라 성격이 다른 신발이에요.</p>
-
-<h2>마무리</h2>
-<p>클라우드몬스터 3는 화려한 신발은 아닙니다. 빠르지도, 가볍지도 않죠. 하지만 <strong>푹신하게 굴러가며 다리를 편하게 풀어주는</strong> 데일리·회복런용으로는 분명한 매력이 있습니다. 다만 토박스는 71.0mm(RunRepeat 실측)로 전작보다 좁아져, 발볼 넓은 러너는 착화 확인이 필요합니다. "기록은 다른 신발로, <strong>편한 러닝은 이걸로</strong>"라는 역할 분담에 잘 맞습니다. 더 빠른 훈련을 원하면 <a href="/blog/on-cloudmonster-3-hyper-review-2026">하이퍼</a>로, 데일리 쿠션화를 더 비교하고 싶으면 <a href="/shoes/hoka-clifton-10">클리프턴 10</a>·<a href="/shoes/nike-vomero-18">보메로 18</a>도 후보에 넣어보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat 랩 데이터, 전문 리뷰를 종합한 내용입니다. 무게·스택·내구성 수치는 측정 기준에 따라 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
-`,
+    id: "on-cloudmonster-3-review-2026",
+    slug: "on-cloudmonster-3-review-2026",
+    title: "클라우드몬스터 3 분석 — Helion 이중 밀도·Speedboard 소재 충돌",
+    description: "Cloudmonster3 기본형의 Helion·3층 CloudTec·나일론 혼합 Speedboard를 공식 원문으로 확인합니다.301g 실측과 인솔 제외 공시, 한국 정가229,000원·피팅 조건을 구분합니다.",
+    thumbnail: "/images/shoes/on/cloudmonster3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "클라우드몬스터3",
+      "Helion",
+      "Speedboard",
+      "원문 분석"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>기본형 공식 설명은 이중 밀도Helion과3층CloudTec입니다. 기존 단일폼 설명을 정정합니다.</li><li>Speedboard는 제조사나일론 혼합과RR TPU 표기가 충돌합니다.</li><li>회복 촉진·무릎 보호·모든 입문자 적합성을 구조만으로 보장하지 않습니다.</li></ul></div>
+<h2>기본형과Hyper 이름부터 구분</h2><p>On의2026-02-26 보도자료는 기본형을 dual-density Helion·3층CloudTec·Nylon blend Speedboard로 설명합니다. 기존 글의Helion단일폼, 제품 상세의Helion HF 표기는 바로잡았습니다. Hyper·Lightspray의 구조·무게·가격을 기본형에 섞지 않습니다. <a href="https://press.on-running.com/on-unveils-the-next-generation-of-the-cloudmonster-collection-with-the-cloudmonster-3-cloudmonster-3-hyper-and-lightspray-cloudmonster-3-hyper" target="_blank" rel="noopener noreferrer">On 공식 기본형 발표</a></p>
+<h2>Speedboard 소재는 원문끼리도 다릅니다</h2><p>제조사 설명은 나일론 혼합이고 RunRepeat는TPU라고 적습니다. 소재명은 제조사 원문을 우선하면서 리뷰와의 충돌도 남깁니다. ‘TPU/나일론’처럼 두 소재가 모두 확인된 혼합물인 것처럼 합치거나 카본으로 바꾸지 않습니다.</p>
+<h2>무게·스택 조건을 나눠 보세요</h2><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>제조사·DOR 공시</th></tr></thead><tbody><tr><td>무게</td><td>301g</td><td>공식295g·남성US8.5 /240g·여성US7; DOR는US9/US8</td></tr><tr><td>힐/전족부</td><td>38.6/32.2mm</td><td>35/29mm·DOR는 인솔 제외 명시</td></tr><tr><td>드롭</td><td>6.4mm</td><td>6mm</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>94.3/71.0/25.4mm</td><td>실제 한국 판매 폭과 별도</td></tr></tbody></table>
+<p>RR SA힐123/전족119·에너지 리턴58.7/56.8%·경도49.9AC는 서로 다른 물성입니다. 인솔 포함 조건·사이즈가 다른 무게를 단순히6g 증가로 읽지 않습니다. 한국 확인 남성3MG10051430·여성3WG10036028 레귤러 정가229,000원이며 한국 와이드SKU는 미확인입니다.</p>
+<h2>로커를 좋아해도 카운터와 발등은 다시 확인</h2><p>DOR 본문 Matt(남성US10)은 앞발·힐에 약간 여유가 있지만 중족부·발등이 낮게 밀착됐고 단단한 카운터가 자극됐다고 적었습니다. 편한 속도 전환은 매끄럽지만 빠른 스트라이드는 어색하게 느꼈습니다. 자신의 아킬레스 자극과 낮은 드롭 체감은 실제 음의 정적 드롭이나 모든 러너의 질환 위험을 입증하지 않습니다. byline과 본문 리뷰어가 달라 별도의David착화 경험을 만들지 않습니다.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>기존 회복·입문 추천의 한계</h2><p>스택·로커·폼만으로 다음날 회복이 빨라진다거나 입문자의 무릎을 보호한다고 결론내리지 않습니다. 저온 시험 하나를 겨울 내내 동일한 착화 보장으로,0.7mm마모를500km수명으로 바꾸지 않습니다.</p>
+<h2>원문과 확인 범위</h2><p><a href="https://runrepeat.com/on-cloudmonster-3" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/on-cloudmonster-3-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/on-cloudmonster-3">한국 확인SKU별 공식 원문·확인 한계</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "기본형도Helion HF인가요?",
+        "answer": "이번 공식 원문은 기본형을Helion으로 설명합니다. 기존HF표기를 정정하고Hyper와 구분했습니다."
+      },
+      {
+        "question": "Speedboard는TPU인가요,나일론인가요?",
+        "answer": "제조사 공식은나일론 혼합,RR은TPU로 적습니다. 공식설명을 우선하되 충돌을 숨기지 않습니다."
+      }
+    ],
   },
   {
     id: 'on-cloudmonster-3-hyper-review-2026',
@@ -8934,16 +8636,31 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'li-ning-red-hare-9-ultra-truth-2026',
-    slug: 'li-ning-red-hare-9-ultra-truth-2026',
-    title: '적토끼 9 울트라는 카본이 아닙니다 — 화제의 "중국 카본화" 정체 | 리닝 적토마(레드헤어 9) 슈퍼트레이너의 진실',
-    description: '러닝 커뮤니티가 "이 가격에 카본?"으로 들썩이는 라이닝(Li-Ning) 레드헤어 9 울트라. 하지만 해외 실측 리뷰를 종합하면 이 신발은 카본 레이싱화가 아니라 유리섬유 플레이트를 단 맥스쿠션 슈퍼트레이너입니다. 슈퍼블라스트·메가블라스트 절반 가격이라는 가성비의 실체, "적토끼"가 아닌 "적토마"인 이유, 발볼 좁은 한국 러너가 사기 전 꼭 알아야 할 3가지를 데이터로 정리했습니다.',
-    thumbnail: '/images/blog/li-ning-red-hare-9-ultra-truth-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-06',
-    category: 'review' as const,
+    id: "li-ning-red-hare-9-ultra-truth-2026",
+    slug: "li-ning-red-hare-9-ultra-truth-2026",
+    title: "적토끼 9 울트라는 카본이 아닙니다 — 화제의 \"중국 카본화\" 정체 | 리닝 적토마(레드헤어 9) 슈퍼트레이너의 진실",
+    description: "러닝 커뮤니티가 \"이 가격에 카본?\"으로 들썩이는 라이닝(Li-Ning) 레드헤어 9 울트라. 하지만 해외 실측 리뷰를 종합하면 이 신발은 카본 레이싱화가 아니라 유리섬유 플레이트를 단 맥스쿠션 슈퍼트레이너입니다. 슈퍼블라스트·메가블라스트 절반 가격이라는 가성비의 실체, \"적토끼\"가 아닌 \"적토마\"인 이유, 발볼 좁은 한국 러너가 사기 전 꼭 알아야 할 3가지를 데이터로 정리했습니다.",
+    thumbnail: "/images/blog/li-ning-red-hare-9-ultra-truth-2026.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-06",
+    category: "review",
     readingTime: 9,
-    tags: ['적토끼', '적토끼 9 울트라', '적토끼9 울트라', '리닝 적토끼', '라이닝', '레드헤어 9 울트라', '적토마', 'Li-Ning', '중국 러닝화', '슈퍼트레이너', '가성비 러닝화', 'PEBA', '카본화', '슈퍼블라스트'],
+    tags: [
+      "적토끼",
+      "적토끼 9 울트라",
+      "적토끼9 울트라",
+      "리닝 적토끼",
+      "라이닝",
+      "레드헤어 9 울트라",
+      "적토마",
+      "Li-Ning",
+      "중국 러닝화",
+      "슈퍼트레이너",
+      "가성비 러닝화",
+      "PEBA",
+      "카본화",
+      "슈퍼블라스트"
+    ],
     content: `
 <div class="tldr">
   <span class="tldr-label">3줄 요약</span>
@@ -8992,7 +8709,7 @@ export const posts_2026_06: BlogPost[] = [
     <tr><td><strong><a href="/shoes/li-ning-red-hare-9-ultra">라이닝 레드헤어 9 울트라</a></strong></td><td>맥스쿠션 슈퍼트레이너</td><td>유리섬유(토션)</td><td><strong>13~17만 원대</strong> (병행·구매대행)</td></tr>
     <tr><td><a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a></td><td>슈퍼트레이너/레이싱</td><td>없음(트윈 폼)</td><td>259,000원</td></tr>
     <tr><td><a href="/shoes/asics-megablast">아식스 메가블라스트</a></td><td>맥스쿠션 트레이너</td><td>없음</td><td>299,000원</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-premium">나이키 보메로 프리미엄</a></td><td>맥스쿠션 데일리</td><td>없음</td><td>299,000원</td></tr>
+    <tr><td><a href="/shoes/nike-vomero-premium">나이키 보메로 프리미엄</a></td><td>맥스쿠션 데일리</td><td>없음</td><td>남성 II5258-100 정가309,000원 / 여성 HM5973-606·IQ8102-101 정가299,000원 (2026-11-09 확인SKU)</td></tr>
   </tbody>
 </table>
 <p>같은 "푹신한 PEBA 맥스쿠션" 카테고리에서 <strong>국내 메이저 브랜드가 26~30만 원</strong>을 받는 자리에, 라이닝이 <strong>그 절반 값</strong>으로 비슷한 스펙표를 들고 들어온 게 화제의 본질입니다. 알리익스프레스 직구로는 10~13만 원까지도 내려갑니다.</p>

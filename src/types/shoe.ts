@@ -12,6 +12,7 @@ export interface BiomechanicsData {
     forefoot: number;   // mm
   };
   drop: number;         // mm
+  /** 기존 필드명. 판형 플레이트와 카본 로드를 포함하므로 형태는 plateType·상세 스펙으로 구분한다. */
   carbonPlate: boolean;
   plateType?: PlateType;
   midsoleType: string;  // ReactX, ZoomX, Boost, etc.

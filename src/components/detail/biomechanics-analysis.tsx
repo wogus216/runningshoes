@@ -81,19 +81,19 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
         </h2>
         <p className="text-[15.5px] leading-relaxed text-slate-600">
           {biomechanics.carbonPlate
-            ? '카본 플레이트와 폼 조합이 이 신발의 추진 성향을 만듭니다.'
-            : '카본 플레이트 탑재 여부와 별개로 폼·로드·지지 구조를 상세 스펙에서 확인하세요.'}
+            ? '카본 보강은 로드와 판형 플레이트 등 형태가 다릅니다. 이 모델의 구성은 상세 스펙에서 확인하세요.'
+            : '카본 외 소재의 로드·플레이트나 폼 지지 구조는 상세 스펙에서 확인하세요.'}
         </p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <BiomechCard
-          title="카본 플레이트"
+          title="카본 보강 구조"
           value={biomechanics.carbonPlate ? "있음" : "없음"}
           description={
             biomechanics.carbonPlate
-              ? "카본 플레이트 탑재 여부입니다. 이 항목만으로 에너지 리턴이나 기록 향상을 판정하지 않습니다."
-              : "카본 플레이트 없음은 다른 소재의 로드·플레이트나 생크도 없다는 뜻은 아닙니다."
+              ? "이 항목은 로드와 판형 플레이트를 구분하지 않습니다. 형태·소재는 상세 스펙을 확인하고, 이 값만으로 에너지 리턴이나 기록 향상을 판정하지 마세요."
+              : "다른 소재의 로드·플레이트나 생크도 없다는 뜻은 아닙니다. 확인한 구성과 출처는 상세 스펙을 확인하세요."
           }
         />
 

@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'on-cloudsurfer-2',
   slug: 'on-cloudsurfer-2',
@@ -16,95 +17,131 @@ export const shoe: Shoe = {
   category: '입문화',
   rating: 4,
   price: 199000,
-  description: 'On의 데일리 트레이너로, CloudTec Phase 기술과 Helion 슈퍼폼으로 부드러운 쿠셔닝과 자연스러운 구름 착지감을 제공합니다.',
-  oneliner: 'CloudTec Phase의 세련된 전환감, On 입문자의 첫 선택',
-  editorComment: '19만 9천원은 페가수스 41(₩159,000)보다 4만원 비싸지만, On이 제공하는 건 단순 성능이 아니라 브랜드 경험입니다. 힐 52.6% 에너지 리턴은 가격 대비 솔직히 부족한 수치이고, "구름 같은 착화감"이라는 마케팅과 실제 단단한 경도 사이엔 괴리가 있어 해외 리뷰에선 "평평한 콜라처럼 생기가 없다"는 혹평(BITR D티어)과 8.2/10(RTR)이 엇갈립니다. 하지만 0.6mm 아웃솔 마모율은 내구성 최상위급이고, 254g 경량에 SNS에서 통하는 디자인은 러닝과 일상 겸용을 원하는 러너에게 매력적입니다. 단, 토박스 73.5mm 표준에 와이드 옵션이 없어 발볼 넓은 한국 러너는 실착이 필수이고, 단단한 승차감이라 10km 이상 장거리보다 단거리 데일리·출퇴근 겸용에 더 맞습니다.\n\n사이즈·구매 가이드: 토박스가 표준(73.5mm)이나 On은 와이드 옵션이 없으니 발볼이 넓다면 반드시 매장에서 착화하세요. 500km 기준 km당 약 398원으로 내구성 대비 비용은 수용 가능한 수준입니다. 비슷한 성격의 대안으로는 페가수스 41(좀 더 부드럽고 저렴)이나 슈퍼노바 라이즈 2를 비교해 보세요.',
-  tags: ['입문화', '쿠셔닝', '데일리'],
+  description: 'Helion · CloudTec Phase · Speedboard 없음 구조의 클라우드서퍼 2. 실험실 254g·힐/전족부 37.5/27.1mm. 한국 확인 정가199,000원.',
+  oneliner: '254g 실험실 무게 · Helion · CloudTec Phase · Speedboard 없음',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 남성3MF10121043·여성제품군3WF1010 레귤러 정가199,000원. 여성 선택색 전체SKU는 미확인입니다. 확인한 색상별 남녀 일부 사이즈 선택 가능, 한국 와이드 SKU는 미확인입니다. 한국 남녀 페이지261g·드롭9mm 표기는 사이즈 조건이 없으며 여성 실제 검체 무게라고 단정하지 않습니다. DOR 소개 남성255g(US9)·여성221g(US8),37/28mm·드롭9mm. RR254g·37.5/27.1mm·10.4mm와 한국 조건 미명시261g을 구분합니다. 기본 Helion과 CloudTec Phase 구조입니다. RR43.8AC와 리뷰어의 부드러운 체감은 압축 형상 등 조건이 달라 같은 값으로 해석하지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면 조건입니다. DOR의 David(남성US9.5)은 길이가 맞고 전작보다 공간이 늘었다고 느꼈으며 초기 발가락 통증이 호전됐다고 적었습니다. Andrea(여성US9.5)는 길이가 맞지만 마지막 아일렛의 뻣뻣한 부분이 넷째·다섯째 발가락 위를 눌렀고 반복 핫스팟으로 주행 길이를 제한했습니다. 폼과 전환에 대한 개인 의견을 모든 사람의10km 제한으로 만들지 않습니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지73.5mm·높이28.0mm는 길이·볼륨·발등 고정을 모두 설명하지 못합니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '쿠셔닝',
+    '데일리',
+  ],
   specs: {
     weight: 254,
     cushioning: 8,
     responsiveness: 6,
     stability: 6,
     drop: 10.4,
-    durability: 500,
   },
   biomechanics: {
-    stackHeight: { heel: 37.5, forefoot: 27.1 },
+    stackHeight: {
+      heel: 37.5,
+      forefoot: 27.1,
+    },
     drop: 10.4,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Helion HF + CloudTec Phase',
-    optimalPace: '5:00-6:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
+    midsoleType: 'Helion · CloudTec Phase · Speedboard 없음',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   priceAnalysis: {
     msrp: 199000,
-    streetPrice: 199000,
-    costPerKm: 398,
     valueRating: 6,
     priceTier: 'premium',
-    alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'adidas-adizero-evo-sl'],
-    valueAdvantages: ['프리미엄 소재 품질', '뛰어난 내구성', '일상용으로도 활용 가능', '반사 로고'],
+    alternatives: [
+      'nike-pegasus-41',
+      'asics-novablast-5',
+      'adidas-adizero-evo-sl',
+    ],
   },
-
   targetUsers: {
-    recommended: ['프리미엄 디자인을 원하는 캐주얼 러너', '편안함과 내구성을 중시하는 러너', '러닝과 일상 겸용을 원하는 러너'],
-    notRecommended: ['빠른 페이스를 원하는 러너', '반발력이 중요한 러너', '가성비를 중시하는 러너'],
+    recommended: [
+      '비Speedboard CloudTec Phase의 전환을 비교하려는 러너',
+      '발가락 위 어퍼와 로커 위치를 직접 확인하려는 러너',
+    ],
+    notRecommended: [
+      '아일렛 부위 압박이나 반복 핫스팟이 생기는 경우',
+      '직접 착화에서 앞쪽 전환이 불편한 경우',
+    ],
   },
-
   features: [
-    '힐 137 SA 충격흡수 + 에너지 리턴 힐 52.6%·전족부 54.1% (RunRepeat Lab Test)',
-    '25.5 HA 균형 잡힌 Helion 폼 - 단단하지만 CloudTec Phase로 압축감 제공',
-    '254g 경량 설계로 데일리 트레이너로 적합',
-    '0.6mm 아웃솔 마모 - 뛰어난 내구성',
-    'CloudTec Phase 기술로 자연스러운 전방 전환',
+    'Helion · CloudTec Phase · Speedboard 없음',
+    '254g · 힐/전족부 37.5/27.1mm (RunRepeat)',
+    '힐/전족부 SA 137/100 · 에너지 리턴 52.6/54.1% (RunRepeat). 기본 Helion과 CloudTec Phase 구조입니다. RR43.8AC와 리뷰어의 부드러운 체감은 압축 형상 등 조건이 달라 같은 값으로 해석하지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면 조건입니다.',
+    '한국 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지73.5mm·높이28.0mm는 길이·볼륨·발등 고정을 모두 설명하지 못합니다.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 90,
-      text: 'On 데일리 트레이너 입문으로 가장 합리적인 선택입니다. 힐 137 SA 충격흡수와 힐 52.6% 에너지 리턴은 가격(₩199,000) 대비 솔직히 평범한 수준이고, 25.5 HA 경도는 "구름 같은 착화감"이라는 마케팅과 괴리가 있습니다. 하지만 0.6mm 아웃솔 마모율로 내구성이 입증됐고, 254g으로 가볍습니다. 토박스 너비가 73.5mm 표준 수준이지만 와이드 옵션이 없어, 발볼 넓은 한국 러너는 실착이 필수입니다. 평발 러너는 표준 어퍼라 커스텀 인솔 교체 시 내부 공간을 미리 확인하세요. 반발력보다 내구성·디자인·브랜드 경험을 중시하는 러너에게 추천하며, 단단한 승차감이라 10km 이상 장거리보다 단거리 데일리 조깅에 더 무난합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/on-cloudsurfer-2',
+      text: '254g과 SA 137/100·에너지 리턴 52.6/54.1%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. 기본 Helion과 CloudTec Phase 구조입니다. RR43.8AC와 리뷰어의 부드러운 체감은 압축 형상 등 조건이 달라 같은 값으로 해석하지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면 조건입니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지73.5mm·높이28.0mm는 길이·볼륨·발등 고정을 모두 설명하지 못합니다.',
     },
     {
-        userType: '예상 적합 — CloudTec 착지감을 감수할 입문자',
-        text: '입문용 데일리로 무난하지만 착지감에 적응 기간이 필요한 모델입니다. CloudTec 구조라 착지 감각이 일반 미드솔과 달라 익숙해지는 데 2주 안팎이 걸리는 경우가 많고, 브랜드 이름에서 연상되는 푹신함보다 단단한 편이라는 점도 미리 알고 있어야 합니다. 그 구간을 넘기면 5km 안팎의 주 3회 러닝에서 부담 없이 쓸 수 있는 수준입니다. 와이드 옵션이 없어 발볼이 넓다면 시착이 필요하고, 예상 수명 400~600km(추정) 기준 km당 약 330~500원입니다. 일상복에 어울리는 디자인이라 러닝 외 착용까지 고려하는 경우에도 선택지가 됩니다.',
-      },
-    {
-        userType: '모델 선택 — 페가수스 대비 반발은 아래, 내구성은 위',
-        text: '같은 데일리군에서 페가수스 계열과 비교하면 방향이 반대입니다. 에너지 리턴 힐 52.6%로 반발은 뚜렷하게 아래라 5분30초 안팎에서 추진력이 약하게 느껴지고, 대신 아웃솔 마모가 느려 500km를 넘겨도 접지가 유지됩니다. 즉 달리는 재미보다 오래 신는 것을 우선할 때 맞는 선택입니다. HA 25.5로 느린 조깅에서는 충격을 무리 없이 받아냅니다. km당 약 398원이며, 성능보다 디자인·내구성 비중이 큰 신발이라는 점을 감안해야 합니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/on-cloudsurfer-2-review-2025/',
+      text: 'DOR의 David(남성US9.5)은 길이가 맞고 전작보다 공간이 늘었다고 느꼈으며 초기 발가락 통증이 호전됐다고 적었습니다. Andrea(여성US9.5)는 길이가 맞지만 마지막 아일렛의 뻣뻣한 부분이 넷째·다섯째 발가락 위를 눌렀고 반복 핫스팟으로 주행 길이를 제한했습니다. 폼과 전환에 대한 개인 의견을 모든 사람의10km 제한으로 만들지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '261g (On 한국 공식몰 표기, 남성) / 254g (남성 US 9 실측) · 여성 225g',
-    stackHeight: '힐 37.5mm / 포어풋 27.1mm',
-    drop: '10.4mm (RunRepeat 실측) / 9mm (On 한국 공식몰 표기)',
-    midsole: 'Helion HF + CloudTec Phase',
-    plate: '없음',
-    outsole: 'CloudTec 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준 — 토박스 73.5mm(RunRepeat 실측, 엄지 부위·US 9; 같은 랩 평균 73.2mm보다 0.3mm 넓음), 최대폭 93.6mm(평균 95.2mm). 랩 본문 "an average fit"(토박스), 최대폭은 "a touch narrower than the average". On 한국 공식몰(2026-10-20) 레귤러만 — 해외 Wide 모델은 국내 미판매',
-    durability: '500km',
-    price: '₩199,000 (MSRP)',
-    costPerKm: '약 ₩398/km (500km 기준)',
-    footType: '표준 발볼 (와이드 옵션 없음 · 발볼 넓으면 실착 권장)',
-    landingPattern: '힐스트라이크~미드풋 (CloudTec Phase)',
+    weight: '254g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성255g(US9)·여성221g(US8),37/28mm·드롭9mm. RR254g·37.5/27.1mm·10.4mm와 한국 조건 미명시261g을 구분합니다.',
+    stackHeight: '37.5/27.1mm (RunRepeat 힐/전족부 실측)',
+    drop: '10.4mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'Helion · CloudTec Phase · Speedboard 없음 · 43.8 AC(Asker C) · 힐/전족부 SA 137/100 · 에너지 리턴 52.6/54.1%. 기본 Helion과 CloudTec Phase 구조입니다. RR43.8AC와 리뷰어의 부드러운 체감은 압축 형상 등 조건이 달라 같은 값으로 해석하지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면 조건입니다.',
+    plate: 'DOR 원문은 기존 방식의 Speedboard가 없다고 명시합니다. Helion HF나 카본 플레이트로 바꾸지 않습니다.',
+    width: 'RunRepeat 내부 최광폭 93.6mm / 엄지 부위 73.5mm / 엄지 높이 28mm. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭93.6mm·엄지73.5mm·높이28.0mm는 길이·볼륨·발등 고정을 모두 설명하지 못합니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 남성3MF10121043·여성제품군3WF1010 레귤러 정가199,000원. 여성 선택색 전체SKU는 미확인입니다. 확인한 색상별 남녀 일부 사이즈 선택 가능, 한국 와이드 SKU는 미확인입니다. 한국 남녀 페이지261g·드롭9mm 표기는 사이즈 조건이 없으며 여성 실제 검체 무게라고 단정하지 않습니다.',
   },
-
-  similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-novablast-5'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5Y62oSWHc' }],
+  similarShoes: [
+    'nike-pegasus-41',
+    'adidas-supernova-rise-2',
+    'asics-novablast-5',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Y62oSWHc',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · 레귤러/정사이즈 · 3MF10121043',
+        url: 'https://www.on.com/ko-kr/products/cloudsurfer-2-3mf1012/mens/black-black-shoes-3MF10121043',
+        note: '한국 공식 남성3MF10121043·여성제품군3WF1010 레귤러 정가199,000원. 여성 선택색 전체SKU는 미확인입니다. 확인한 색상별 남녀 일부 사이즈 선택 가능, 한국 와이드 SKU는 미확인입니다. 한국 남녀 페이지261g·드롭9mm 표기는 사이즈 조건이 없으며 여성 실제 검체 무게라고 단정하지 않습니다.',
+      },
+      {
+        label: '한국 공식 women · 레귤러/정사이즈 · null',
+        url: 'https://www.on.com/ko-kr/products/cloudsurfer-2-3wf1010',
+        note: '한국 공식 남성3MF10121043·여성제품군3WF1010 레귤러 정가199,000원. 여성 선택색 전체SKU는 미확인입니다. 확인한 색상별 남녀 일부 사이즈 선택 가능, 한국 와이드 SKU는 미확인입니다. 한국 남녀 페이지261g·드롭9mm 표기는 사이즈 조건이 없으며 여성 실제 검체 무게라고 단정하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 클라우드서퍼 2',
+        url: 'https://runrepeat.com/on-cloudsurfer-2',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 254g · 37.5/27.1mm · 드롭10.4mm. SA 137/100 · ER 52.6/54.1%. 기본 Helion과 CloudTec Phase 구조입니다. RR43.8AC와 리뷰어의 부드러운 체감은 압축 형상 등 조건이 달라 같은 값으로 해석하지 않습니다. RR 젖은 콘크리트CoF0.39와 Andrea의 야외 접지 호평은 다른 노면 조건입니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/on-cloudsurfer-2-review-2025/',
+        note: 'DOR 소개 남성255g(US9)·여성221g(US8),37/28mm·드롭9mm. RR254g·37.5/27.1mm·10.4mm와 한국 조건 미명시261g을 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

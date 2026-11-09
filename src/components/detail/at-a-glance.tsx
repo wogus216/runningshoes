@@ -37,7 +37,7 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
   if (drop !== undefined && drop !== null) specParts.push(`${drop}mm 드롭`);
   if (specParts.length > 0) {
     const techPart = midsole
-      ? ` ${midsole} 미드솔${carbon ? '에 카본 플레이트를 결합한 구조입니다.' : '을 사용합니다.'}`
+      ? ` ${midsole} 미드솔${carbon ? '과 카본 보강 구조를 사용합니다. 로드·플레이트의 형태는 상세 스펙을 확인하세요.' : '을 사용합니다.'}`
       : '';
     sentences.push(`${specParts.join(', ')}입니다.${techPart}`);
   }

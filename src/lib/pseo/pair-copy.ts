@@ -204,7 +204,7 @@ export function specRows(a: Shoe, b: Shoe) {
       b: b.biomechanics?.midsoleType ?? '-',
     },
     {
-      label: '카본 플레이트',
+      label: '카본 보강 구조',
       a: a.biomechanics?.carbonPlate ? '있음' : '없음',
       b: b.biomechanics?.carbonPlate ? '있음' : '없음',
     },

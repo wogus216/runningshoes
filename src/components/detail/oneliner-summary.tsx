@@ -12,7 +12,7 @@ export function OnelinerSummary({ shoe }: OnelinerSummaryProps) {
       return shoe.oneliner;
     }
     if (shoe.category === '안정화') return '지지 구조와 착화감을 함께 확인할 안정화';
-    if (shoe.category === '레이싱' && shoe.biomechanics?.carbonPlate) return '카본 플레이트를 탑재한 레이싱화';
+    if (shoe.category === '레이싱' && shoe.biomechanics?.carbonPlate) return '카본 보강 구조를 사용하는 레이싱화';
     // 입문자용
     if (shoe.category === '입문화' || shoe.targetUsers?.recommended?.some(t => t.includes('초보'))) {
       return `"러닝 처음 시작한다면 이것부터"`;
