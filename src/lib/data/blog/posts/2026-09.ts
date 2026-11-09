@@ -4384,80 +4384,39 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'puma-deviate-nitro-elite-3-review',
-    slug: 'puma-deviate-nitro-elite-3-review',
-    title: '푸마 디비에이트 나이트로 엘리트 3 후기 | 베이퍼플라이보다 2만원 싼 77% 에너지 리턴',
-    description:
-      '엘리트 3는 289,000원에 77% 에너지 리턴을 내는 가성비 슈퍼슈즈입니다. 베이퍼플라이 3(310,000원)보다 2만원 저렴하면서 204g으로 무게 차이도 크지 않습니다. 다만 토박스가 좁아 한국 러너에게는 반사이즈 업이 사실상 필요합니다. 4세대가 나온 지금 3세대를 볼 이유가 있는지 정리했습니다.',
-    thumbnail: '/images/blog/puma-deviate-nitro-elite-3-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['푸마 디비에이트 나이트로 엘리트3', 'A-TPU 폼', '카본 레이싱화', '가성비 슈퍼슈즈'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>289,000원에 77% 에너지 리턴</strong> — 베이퍼플라이 3(310,000원)보다 2만원 저렴합니다</li>
-    <li><strong>토박스가 좁습니다(narrow).</strong> 한국 러너 발볼 기준으로는 반사이즈 업이 사실상 필요합니다</li>
-    <li><strong>후속작 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>가 같은 가격에 34g 더 가볍고 토박스도 넓어졌습니다</strong> — 신규 구매라면 4세대 쪽이 유리합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>가성비 슈퍼슈즈를 찾는 <strong>표준~좁은 발볼 러너</strong>에게 맞습니다. 다만 지금 신규로 산다면 같은 가격에 더 가볍고 발볼도 넉넉한 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>를 먼저 보는 게 합리적입니다.</p>
-  </div>
-</div>
-
-<h2>가성비 슈퍼슈즈의 정석</h2>
-<p>289,000원으로 베이퍼플라이 3(310,000원), <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>(329,000원)보다 저렴하면서 <strong>77% 에너지 리턴</strong>은 슈퍼슈즈 시장에서도 상위권입니다. A-TPU 기반 Nitro Elite 폼이 204g에서 탄탄하고 직접적인 반발력을 냅니다. A-TPU 계열은 PEBA보다 마모에 강하다는 소재 업계 평가가 있어, 레이스 후에도 반발 저하가 완만한 편입니다 — 순수 PEBA 레이서보다 아껴 신는 부담이 덜한 게 숨은 장점입니다.</p>
-
-<h2>발볼·계절 — 한국 러너가 주의할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 좁은 편(narrow)이고 와이드 옵션이 없습니다. 발볼이 넓다면 반드시 반사이즈 업을 하거나 매장 착화를 먼저 하세요</li>
-  <li><strong>"겨울에도 신을 수 있나요?"</strong> — 겨울 호환성이 poor로 낮습니다. 저온에서 폼 경화가 뚜렷해 반발이 떨어지므로, 영하권 레이스가 주력이라면 다른 모델을 함께 고려하세요</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 poor입니다. 아치 지지가 약해 평발 성향이면 인솔 교체를 검토하는 편이 좋습니다</li>
-</ul>
-
-<h2>지금 사도 될까 — 4세대와 비교</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>엘리트 3</th><th>엘리트 4</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>204g</td><td><strong>170g</strong></td></tr>
-    <tr><td>토박스</td><td>좁음</td><td><strong>표준</strong></td></tr>
-    <tr><td>가격</td><td>289,000원</td><td>289,000원 (동일)</td></tr>
-  </tbody>
-</table>
-</div>
-<p>같은 가격에 <a href="/shoes/puma-deviate-nitro-elite-4">엘리트 4</a>가 34g 가볍고 토박스도 넓어, <strong>신규 구매라면 4세대 쪽이 명확히 유리합니다.</strong> 다만 3세대가 이미 세일가 25만원대까지 내려온 상태라면, 그 가격 차이가 34g의 가치를 상쇄할 수도 있습니다 — 재고 할인가를 확인해보고 판단하세요.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>가성비를 최우선으로 하는 레이서</strong> — 저렴한 재고가 있다면 여전히 매력적입니다</li>
-  <li><strong>표준~좁은 발볼의 전방 착지 러너</strong></li>
-  <li>반대로 <strong>발볼이 넓거나 겨울 레이스가 주력</strong>이라면 다른 모델을 우선 고려하세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>엘리트 3는 등장 당시 "가성비 슈퍼슈즈"라는 포지션이 정확했던 신발입니다. 다만 후속작이 같은 가격에 확실히 개선된 지금은, 재고 할인이 크지 않은 이상 신규 구매 우선순위에서는 4세대에 밀립니다.</p>
-`,
+    id: "puma-deviate-nitro-elite-3-review",
+    slug: "puma-deviate-nitro-elite-3-review",
+    title: "디비에이트 나이트로 엘리트 3 분석 — 일반형·에디션 가격과 강한 카본 굽힘",
+    description: "엘리트3의 실측204g·드롭10.6mm, 카본PWRPLATE와 리뷰어 압박·고정을 확인합니다. 한국 일반형 가격은 미확인으로 두고 에키덴·디지도쿄 에디션 가격을 구분합니다.",
+    thumbnail: "/images/shoes/puma/deviatenitroelite3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "디비에이트 엘리트3",
+      "PWRPLATE",
+      "피팅",
+      "한국 에디션"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>RR 실측204g·39.2/28.6mm·10.6mm와 공시40/32mm·8mm를 구분합니다.</li><li>한국 일반형 현재 정가는 미확인입니다. 특별 에디션 가격을 일반형에 넣지 않습니다.</li><li>모든 한국 러너에게 반 사이즈 업을 처방하던 내용을 제거했습니다.</li></ul></div>
+<h2>가격표에서 일반형과 에디션부터 구분</h2><p>일반309809 후보 상품은 웹404·현재페이지 이용 불가로 정가·폭·재고를 확보하지 못했습니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·확인시 판매279,200원은 읽었지만 모두 품절이었습니다. 이 값을 일반형의 현행 정가로 옮기지 않습니다. ‘후속4와 같은 가격이니 무조건 유리’라는 결론도 현재의 동일조건 가격 비교로 확인한 것이 아닙니다.</p>
+<h2>스펙은 어느 검체의 값일까?</h2><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>공시 조건</th></tr></thead><tbody><tr><td>무게</td><td>204g</td><td>한국 특별판194g·UK8 / DOR195g·남성US9·여성US10.5표기</td></tr><tr><td>힐/전족부</td><td>39.2/28.6mm</td><td>한국·DOR40/32mm</td></tr><tr><td>드롭</td><td>10.6mm</td><td>한국·DOR8mm</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>94.4/69.5/26.5mm</td><td>개인 피팅과 별도</td></tr></tbody></table>
+<p>RR 힐/전족부 SA147/127·에너지 리턴77.1/76.3%, 주폼35.5AC·보조31.8AC입니다. 보조폼의 층 위치는 이번 확인에서 미확인입니다. RR은 NITROElite를A-TPU로 설명하지만 한국 제조사 본문의 화학배합 확인과 구분합니다. 소재명만으로 다른 폼보다 수명이 길고 후반 반발이 유지된다고 보장하지 않습니다.</p>
+<h2>리뷰어가 실제로 확인한 불편</h2><p>DOR Matt(남성US10)은 길이가 맞고 앞쪽 부피는 약간 여유 있었지만 테이퍼 앞코·거친 안감·거싯 없는 혀와 급회전의 발 움직임을 언급했습니다. 플레이트가 매우 뻣뻣하고 긴 착화에서 중족부 압박을 느꼈습니다. 이 위치를 시착에서 따로 확인해야 합니다.</p><p>그의 검체에서는 초기에 뒤쪽 고무가 떨어져 접착 수리한 경험도 있었습니다. 개인 검체의 고장을 모든 제품의 불량률·수명으로 확대하지 않습니다. 한국 현재 와이드SKU도 미확인이므로 ‘무조건 반 치수 업’이나 ‘와이드가 전혀 없다’로 답을 정하지 않습니다.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>수명·계절·부상 등급은 따로 입증해야 합니다</h2><p>300km 교체·겨울금기·평발 인솔 처방·마라톤 후반 무릎 보호를 제거했습니다. 실험실 에너지 리턴은 개인의 기록 개선률·부상 예방률과 다른 수치입니다. 직접 착화에서 필요한 고정과 전환이 확보되는지부터 확인하세요.</p>
+<h2>확인한 원문</h2><p><a href="https://runrepeat.com/puma-deviate-nitro-elite-3" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/puma-deviate-nitro-elite-3-review-2024/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/puma-deviate-nitro-elite-3">한국 공식 상품 원문·조건</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
     faqs: [
       {
-        question: '엘리트 3와 4, 지금 사면 뭐가 나은가요?',
-        answer:
-          '같은 가격(289,000원)이라면 엘리트 4가 명확히 유리합니다 — 34g 더 가볍고 토박스도 좁음에서 표준으로 넓어졌습니다. 3세대가 할인 중이라면 가격 차이와 34g의 체감 가치를 비교해 판단하세요.',
+        "question": "발볼이 넓으면 반 사이즈 업하면 되나요?",
+        "answer": "길이를 늘리는 것만으로 폭·볼륨·힐 고정이 해결된다고 보장할 수 없습니다. 실제 성별·규격을 신어 보고 압박과 고정을 확인하세요."
       },
       {
-        question: '발볼이 넓은데 신어도 되나요?',
-        answer:
-          '토박스가 좁은 편(narrow)이고 와이드 옵션이 없어 발볼이 넓다면 불편할 수 있습니다. 반사이즈 업을 하거나 매장에서 먼저 착화해보는 것을 권합니다.',
-      },
+        "question": "정가가289,000원인가요?",
+        "answer": "이번에 일반형 현재 정가는 확인하지 못했습니다. 에키덴·디지도쿄 확인가격은 별도 에디션 조건입니다."
+      }
     ],
+    updatedAt: "2026-11-09",
   },
   {
     id: 'on-cloudflow-5-review',
@@ -5318,74 +5277,40 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'saucony-triumph-23-review',
-    slug: 'saucony-triumph-23-review',
-    title: '써코니 트라이엄프 23 후기 | 풀 PEBA 폼을 19만원대에 — 본디9보다 저렴한 맥시멀 쿠션',
-    description:
-      '트라이엄프 23은 42.3mm 힐 스택에 풀 PEBA(PWRRUN PB) 미드솔을 199,000원에 제공합니다. 호카 본디 9보다 3만원 싸면서 충격흡수와 에너지 리턴은 오히려 앞섭니다. 272g으로 맥시멀 쿠션화 중 가벼운 축이고, 와이드 옵션도 있습니다. 신형 24가 나온 뒤에도 공식몰에서 정가 199,000원에 계속 판매되며, 24(209,000원)보다 1만 원 저렴합니다.',
-    thumbnail: '/images/blog/saucony-triumph-23-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 트라이엄프23', '쿠션화', 'PEBA', '맥시멀 쿠션'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>42.3mm 힐 스택에 풀 PEBA 미드솔을 199,000원에</strong> — <a href="/shoes/hoka-bondi-9">본디 9</a>(229,000원)보다 저렴합니다</li>
-    <li><strong>272g으로 맥시멀 쿠션화 중 가벼운 축</strong>이고 에너지 리턴 67.6%로 반발도 있습니다</li>
-    <li><strong>신형 <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>가 나온 뒤에도 공식몰에서 정가 199,000원에 계속 판매 중입니다.</strong> 24(209,000원)보다 1만 원 저렴합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>장거리 러닝에서 무릎·발목 보호가 필요한 러너</strong>에게 가성비 좋은 프리미엄 쿠션화입니다. 신형보다 저렴하면서 성능 차이는 크지 않습니다.</p>
-  </div>
-</div>
-
-<h2>본디 9보다 싸면서 수치는 앞선다</h2>
-<p>42.3mm 힐 스택과 SA 149 충격흡수로 "무릎 괜찮나요?" 질문에 자신 있게 추천할 수 있습니다. 272g으로 맥시멀 쿠션화 중 가벼운 편이고, PEBA 폼의 67.6% 에너지 리턴으로 반발력도 좋습니다. <a href="/shoes/hoka-bondi-9">본디 9</a>보다 저렴하면서 124mm 넓은 플랫폼으로 안정적입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스는 RunRepeat 실측 71.4mm(평균 73.2mm)로 좁은 편이지만 와이드(2E) 옵션이 있어, 발볼이 넓다면 와이드를 고르는 편이 좋습니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·신 스플린트 전부 excellent(최상위)입니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 good입니다</li>
-</ul>
-
-<h2>본디 9·님버스 28과 비교</h2>
-<p>본디가 푹 가라앉는 감각이라면 트라이엄프 23은 에너지 리턴 힐 67.6%·전족부 71.2%로 푹신하면서 튕겨주는 반발이 있습니다. <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>과 비교하면 반응성에서 앞서고, 정가는 둘 다 199,000원으로 같습니다. 내구성도 이 사이트 표시 기준 트라이엄프 23 500~700km, 님버스 28 600~700km(둘 다 랩 실측이 아닌 추정)라 큰 차이로 보기 어렵습니다. 비용보다 반발과 쿠션 중 무엇을 우선하는지로 고르는 편이 맞습니다.</p>
-
-<h2>가격 대비 가치 — 신형보다 유리한 시점</h2>
-<p>199,000원 정가에 실거래가는 더 낮게 형성돼 있습니다. 600km 기준 km당 약 332원입니다. <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>가 신형 프리미엄 가격(209,000원, 할인 없음)인 지금, 23은 오히려 가성비 면에서 유리한 위치에 있습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>장거리 러너·리커버리 런 위주 러너</strong></li>
-  <li><strong>맥시멀 쿠셔닝을 가성비 있게 원하는 러너</strong></li>
-  <li><strong>발볼이 넓어 와이드가 필요한 중립 러너</strong></li>
-  <li>반대로 <strong>빠른 템포 러닝이나 레이싱을 원한다면</strong> 맞지 않습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>트라이엄프 23은 신형이 나온 지금이 오히려 매력적인 타이밍입니다. 풀 PEBA 폼과 넓은 플랫폼이라는 핵심 가치는 그대로이면서 가격 부담이 줄었으니, 최신 스펙에 집착하지 않는다면 확실한 가성비 선택입니다.</p>
-`,
+    id: "saucony-triumph-23-review",
+    slug: "saucony-triumph-23-review",
+    title: "트라이엄프 23 분석 — 한국 남녀 와이드·스택 공시 차이·카운터",
+    description: "트라이엄프23의 한국 정가199,000원·남녀W와이드와 실측272g·42.3/32.3mm를 확인합니다. 내부와 외부 폭을 구분하고 카운터·앞코 압박을 시착에서 살펴보세요.",
+    thumbnail: "/images/shoes/saucony/triumph23/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "트라이엄프23",
+      "한국 와이드",
+      "PWRRUN PB",
+      "러닝화 분석"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>한국 남녀 일반M·W와이드 정가199,000원을 확인했습니다.</li><li>RR42.3/32.3mm와 DOR공시37/27mm는 큰 차이가 있어 출처를 구분합니다.</li><li>외부 플랫폼124mm가 내부 발가락 공간124mm라는 뜻은 아닙니다.</li></ul></div>
+<h2>한국 와이드에서 실제 살 수 있는 규격</h2><p>남성 일반S21023-130·여성 일반S11023-148·남성 와이드S21024-203·여성 와이드S11024-201 정가199,000원입니다. 확인 시 남성 와이드는250/255/260mm, 여성 와이드는230/235mm가 선택 가능했고 다른 사이즈는 품절 표시였습니다. 현재 선택 가능 상태는 바뀔 수 있으며 W를2E·D로 임의 매핑하지 않습니다.</p>
+<h2>높이와 무게는 실측·공시를 나눠 보세요</h2><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>272g</td><td>남성263g·US9 / 여성239g·US8</td></tr><tr><td>힐/전족부</td><td>42.3/32.3mm</td><td>37/27mm</td></tr><tr><td>드롭</td><td>10.0mm</td><td>10mm</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>93.8/71.4/26.8mm</td><td>외부 플랫폼124.0/98.9mm와 별도</td></tr></tbody></table>
+<p>전장 PWRRUN PB와 두꺼운Super Responsive Sockliner, 비플레이트 구조입니다. RR 힐/전족부 SA149/136·에너지 리턴67.6/71.2%와 경도42.8AC를 확인했습니다. 이 지표를 평발 적합성·무릎 보호 보장으로 바꾸지 않습니다.</p>
+<h2>시착에서 확인할 곳은 카운터와 앞코 윗면</h2><p>DOR Matt(남성US10)은 보통 폭·낮은 볼륨과 앞코 윗가드 압박을 느꼈습니다. 거싯·힐패딩의 고정은 좋았지만 단단한 카운터가 자신의 뒤꿈치 돌출 부위를 자극했습니다. 와이드가 있어도 윗면과 뒤꿈치가 편하다는 보장은 아니므로 양말·인솔을 포함해 확인하세요.</p>
+<h2>서로 다른 마모 관찰을 숨기지 않습니다</h2><p>RR Dremel시험의 국소 마모0.7mm와 DOR의 노출폼·뒤가쪽 고무 초기 실도로 마모는 다른 조건입니다. 한쪽을 근거로 다른 쪽을 틀렸다고 하거나600km수명을 보장하지 않습니다. 굽힘도 RR본문17.4N·최신표17.5N, 혀도 본문semi·표full이 달라 확정적 한 문장으로 합치지 않습니다. 통기80BR·건조59%는 신방식이라 예전 연기1~5점과 직접 비교하지 않습니다.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>23과24·다른 브랜드의 선택</h2><p>23에서 편한 위치와 불편한 위치, 실제 구매 가능한 규격·가격을 먼저 적으세요. 다른 모델의 정가·수명·임상등급을 가정해 본디9킬러·24보다 무조건 경제적이라고 정하지 않습니다. 신형으로 바뀐 것이 자신의 문제를 해결하는지도 별도로 확인해야 합니다.</p>
+<h2>확인한 원문</h2><p><a href="https://runrepeat.com/saucony-triumph-23" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/saucony-triumph-23-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/saucony-triumph-23">한국 공식 상품 원문·조건</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
     faqs: [
       {
-        question: '트라이엄프 23과 24 중 뭘 사야 하나요?',
-        answer:
-          '예산이 우선이면 23, 최신 폼(incrediLUX)과 14g 가벼운 무게(RunRepeat 실측 남성 US 9 기준 272g vs 258g)를 원하면 24입니다. 23은 PEBA 폼이고 24는 A-TPU 폼으로 성격 자체가 다릅니다.',
+        "question": "한국 남녀 와이드가 있나요?",
+        "answer": "이번에 남성S21024-203·여성S11024-201 W와이드 상품을 확인했습니다. 원하는 색상·사이즈의 현재 재고는 다시 확인하세요."
       },
       {
-        question: '본디 9 대신 이걸 사도 될까요?',
-        answer:
-          '용도가 비슷하다면 충분한 대안입니다. 272g으로 본디 9보다 가볍고 전환이 앞으로 굴러가는 성격이라 발을 끌고 가는 느낌이 덜합니다. 순수 쿠션량과 접지 안정감을 최우선으로 둔다면 본디 쪽이 두껍습니다.',
-      },
+        "question": "124mm면 발가락 공간도 넓나요?",
+        "answer": "124mm는 외부 전족 플랫폼입니다. RR 내부 최광폭93.8mm·엄지71.4mm·높이26.8mm와 다른 치수이고 개인 착화도 별도로 확인해야 합니다."
+      }
     ],
+    updatedAt: "2026-11-09",
   },
   {
     id: 'saucony-endorphin-trainer-review',

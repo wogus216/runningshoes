@@ -1,29 +1,36 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-endorphin-pro-4',
   slug: 'saucony-endorphin-pro-4',
   brand: 'Saucony',
   name: '엔돌핀 프로 4',
   image: '/images/shoes/saucony/endorphin_Pro4.webp',
-  images: ['/images/shoes/saucony/endorphinpro4/side.webp', '/images/shoes/saucony/endorphinpro4/top.webp', '/images/shoes/saucony/endorphinpro4/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/endorphinpro4/side.webp',
+    '/images/shoes/saucony/endorphinpro4/top.webp',
+    '/images/shoes/saucony/endorphinpro4/outsole.webp',
+  ],
   category: '레이싱',
   rating: 5,
   price: 269000,
-  description: 'Saucony의 카본 레이싱화로, PWRRUN PB+HG 미드솔과 풀렝스 카본 플레이트로 강력한 추진력을 제공합니다. 하프~풀 마라톤에 적합합니다.',
-  oneliner: '118.9mm 광폭 전족부, 슈퍼슈즈 초심자도 안정적으로',
-  editorComment: '슈퍼슈즈를 처음 신는 러너가 가장 걱정하는 건 불안정한 착지인데, 엔돌핀 프로 4의 118.9mm 넓은 전족부 플랫폼이 그 불안을 줄여줍니다. 71.7% 에너지 리턴은 베이퍼플라이 3(75.4%)에 못 미치지만, 26만 9천원으로 5만원 이상 저렴하고 안정성에서 앞섭니다. 220g은 v3보다 무거워졌지만 내구성 개선으로 훈련 겸용이 가능해진 트레이드오프입니다. 서브4 목표 러너가 첫 슈퍼슈즈로 고르기에 가장 안전한 선택이며, 토박스는 RunRepeat 실측 72.5mm로 표준 폭이지만 와이드 옵션이 없어 시착은 필수입니다. PWRRUN PB(PEBA) 폼은 450km 실도로 마모 실험 기준으로 에너지 리턴 손실이 큰 계열입니다 — 수명 표기를 감안해 레이스·포인트 훈련 전용으로 아껴 신으세요.\n\n사이즈·구매 가이드: 토박스는 RunRepeat 실측 72.5mm로 표준 폭이지만 와이드 옵션이 없어, 발볼이 넓다면 반드시 시착하세요. 정가 269,000원에 예상 수명 250~350km(추정) 기준 km당 약 770~1,080원으로 대회 전용 운용을 권장합니다. 같은 레이싱화로는 알파플라이 3·로켓 X 3이 대안입니다.',
-  tags: ['레이싱', '카본', '마라톤', '슈퍼화'],
-
+  description: 'PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트 구조의 엔돌핀 프로 4. 실험실 220g·힐/전족부 38.1/28.6mm. 한국 확인 정가269,000원.',
+  oneliner: '220g 실험실 무게 · PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식에서 확인한 여성 WHITE/CROCUS 일반M 상품 정가269,000원·확인 시 할인가188,300원. 표시상250mm만 선택 가능이었으며 판매SKU 텍스트·남성 현재 정가·한국 와이드 SKU는 미확인입니다. 대표 가격은 확인한 여성 상품의 현재 정가 범위입니다. DOR 소개 남성218g(US9)·여성184g(US8),40/32mm·드롭8mm. RR220g·38.1/28.6mm·9.5mm와 구분합니다. 개별 RR 검체 라벨은 독립 확인하지 못했습니다. RR 주폼PWRRUN PB35.1AC·상층PWRRUN HG33.5AC를 구분합니다. 짧은 마모 시험과 다른 신발의450/640km 연구를 이 모델의300km수명·후반 무릎 보호로 옮기지 않습니다. DOR의 Matt(남성US10)은 길이가 맞고 레이서치고 넓고 높은 부피, 설포 주름과 거친 안감을 언급하며 자신의 긴 주행에 잘 맞았다고 평가했습니다. Andrea(여성US10,평소9.5)는 개인적으로0.5업을 유지했으며 단단한 체감 때문에 짧고 빠른 대회를 선호했습니다. 두 사람의 용도 의견이 갈려 공통 최적 거리·페이스나 사이즈 업 처방을 정하지 않습니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭96.5mm·엄지72.5mm·높이27.7mm를 외부 플랫폼118.9mm와 혼용하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본',
+    '마라톤',
+    '슈퍼화',
+  ],
   specs: {
     weight: 220,
     cushioning: 8,
     responsiveness: 9,
     stability: 5,
-    drop: 10,
-    durability: 300,
+    drop: 9.5,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 38.1,
@@ -31,81 +38,115 @@ export const shoe: Shoe = {
     },
     drop: 9.5,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'PWRRUN PB+HG',
-    optimalPace: '3:30-5:00 min/km',
+    plateType: 'S-shaped carbon plate',
+    midsoleType: 'PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['하프마라톤', '풀마라톤', '서브-4 목표', '상급 러너'],
-    notRecommended: ['입문 러너', '데일리 트레이닝', '과내전 러너'],
+    recommended: [
+      '이중폼과 S자 카본의 전환을 시착 비교하려는 러너',
+      '설포 주름·앞쪽 볼륨·고정을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 설포 압박·안감 마찰이 생기는 경우',
+      '앞쪽 공간과 카본 굽힘이 맞지 않는 경우',
+    ],
   },
-
-  features: ['PWRRUN PB+HG 미드솔', '풀렝스 카본 플레이트', '9.5mm 드롭', '레이싱 전용', '충격흡수 힐 139 SA (RunRepeat 실측)'],
-
+  features: [
+    'PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트',
+    '220g · 힐/전족부 38.1/28.6mm (RunRepeat)',
+    '힐/전족부 SA 139/103 · 에너지 리턴 71.7/71.5% (RunRepeat). RR 주폼PWRRUN PB35.1AC·상층PWRRUN HG33.5AC를 구분합니다. 짧은 마모 시험과 다른 신발의450/640km 연구를 이 모델의300km수명·후반 무릎 보호로 옮기지 않습니다.',
+    '한국 와이드 SKU는 미확인입니다. RR 내부 최광폭96.5mm·엄지72.5mm·높이27.7mm를 외부 플랫폼118.9mm와 혼용하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 269000,
-    streetPrice: 239000,
-    costPerKm: 897,
     valueRating: 6,
     priceTier: 'premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'adidas-adios-pro-4',
+    ],
   },
-
   detailedSpecs: {
-    weight: '220g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 38.1mm / 포어풋 28.6mm (실측)',
-    drop: '9.5mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'PWRRUN PB+HG (PEBA + 경량 폼) · 경도 35.1 AC · 에너지 리턴 힐 71.7%·전족부 71.5% (RunRepeat 실측) · 충격흡수 139 SA는 RunRepeat 랩 힐 기준',
-    plate: '풀렝스 카본 플레이트',
-    outsole: '경량 러버',
-    upper: '경량 메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 72.5mm(평균 73.2mm), 랩: "it has a standard taper for a running shoe yet feels impressively roomy for a competition-focused design" · 와이드 없음',
-    durability: '300km+',
-    price: '269,000원',
-    costPerKm: '약 ₩897/km (300km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '220g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성218g(US9)·여성184g(US8),40/32mm·드롭8mm. RR220g·38.1/28.6mm·9.5mm와 구분합니다. 개별 RR 검체 라벨은 독립 확인하지 못했습니다.',
+    stackHeight: '38.1/28.6mm (RunRepeat 힐/전족부 실측)',
+    drop: '9.5mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'PWRRUN HG 상층 · PWRRUN PB 하층 · S자 카본 플레이트 · 35.1 AC(Asker C) · 힐/전족부 SA 139/103 · 에너지 리턴 71.7/71.5%. RR 주폼PWRRUN PB35.1AC·상층PWRRUN HG33.5AC를 구분합니다. 짧은 마모 시험과 다른 신발의450/640km 연구를 이 모델의300km수명·후반 무릎 보호로 옮기지 않습니다.',
+    plate: '두 폼 사이의 S자 카본 플레이트. 곡률과 개인 착화감으로 임상 보호를 판정하지 않습니다.',
+    width: 'RunRepeat 내부 최광폭 96.5mm / 엄지 부위 72.5mm / 엄지 높이 27.7mm. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭96.5mm·엄지72.5mm·높이27.7mm를 외부 플랫폼118.9mm와 혼용하지 않습니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식에서 확인한 여성 WHITE/CROCUS 일반M 상품 정가269,000원·확인 시 할인가188,300원. 표시상250mm만 선택 가능이었으며 판매SKU 텍스트·남성 현재 정가·한국 와이드 SKU는 미확인입니다. 대표 가격은 확인한 여성 상품의 현재 정가 범위입니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 87,
-      text: '서브4~서브3:30 목표 러너를 위한 가성비 슈퍼슈즈입니다. 26만원대로 베이퍼플라이(31만원)보다 저렴하면서, 71.7% 에너지 리턴과 SA 139 충격흡수로 하프~풀마라톤에 최적화되어 있습니다. 220g 경량에 38.1mm 힐 스택, 9.5mm 드롭(RunRepeat 실측, 브랜드 공식 8mm) 구성이고, 118.9mm 넓은 전족부 플랫폼으로 슈퍼슈즈 중 안정성이 높아 첫 슈퍼슈즈 러너에게 추천합니다. 미드솔 경도 35.1 AC(RunRepeat 실측, 평균 35.4 AC)로 쿠셔닝이 무난하고, 토박스는 RunRepeat 실측 72.5mm로 표준 폭이지만 와이드 옵션이 없어 발볼 넓은 한국 러너는 반드시 시착하세요. 300km 내구성에 km당 약 897원이라 대회 전용이 적합하며, 무릎 보호와 추진력의 균형이 뛰어납니다. 평발 러너에게는 안정성이 부족할 수 있으니 프로 5를 추천하고, 가성비와 안정성을 모두 잡은 입문 레이싱화입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-endorphin-pro-4',
+      text: '220g과 SA 139/103·에너지 리턴 71.7/71.5%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 주폼PWRRUN PB35.1AC·상층PWRRUN HG33.5AC를 구분합니다. 짧은 마모 시험과 다른 신발의450/640km 연구를 이 모델의300km수명·후반 무릎 보호로 옮기지 않습니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭96.5mm·엄지72.5mm·높이27.7mm를 외부 플랫폼118.9mm와 혼용하지 않습니다.',
     },
     {
-        userType: '예상 적합 — 첫 슈퍼슈즈를 찾는 서브3:40 전후 러너',
-        text: '첫 카본 레이서를 고르는 서브3:40 전후 러너에게 맞을 가능성이 있습니다. 220g의 무게에 에너지 리턴 71.7%로 후반 추진력을 유지하는 쪽이고, SA 139의 충격흡수가 30km 이후 다리에 쌓이는 부담을 덜어주는 구성입니다. 베이퍼플라이 3과 비교하면 에너지 리턴은 다소 낮지만, 전족부 118.9mm의 넓은 접지면 덕에 후반 착지 안정성에서 유리합니다. 언덕 구간이 섞인 코스에서도 추진력이 급격히 죽지 않는 성격입니다. 다만 와이드 옵션이 없어 발볼이 넓다면 시착이 필요합니다. 26만원대로 최상위 레이서군에서는 접근성이 좋은 가격대입니다.',
-      },
-    {
-        userType: '예상 적합 — 서브4 벽을 넘으려는 단계',
-        text: '서브4 전후에서 기록을 밀어올리려는 단계에 맞습니다. 220g의 무게에 카본 플레이트로 전환에서 굴러가는 추진이 만들어지고, SA 139의 충격흡수와 에너지 리턴 71.7% 조합이라 후반 페이스 유지에 유리합니다. 26만원대로 베이퍼플라이 계열(31만원)보다 5만원 낮아 첫 슈퍼슈즈의 진입 부담도 상대적으로 작습니다. 다만 발볼이 넓으면 와이드 옵션이 없어 10km를 넘길 때 압박이 생길 수 있으므로, 이 부분은 시착으로 확인해야 합니다.',
-      },
-    {
-        userType: '비용 관점 — 첫 슈퍼슈즈의 진입 부담',
-        text: '첫 슈퍼슈즈를 고를 때 가격 부담을 낮추는 선택지입니다. 26만원대로 최상단 모델(알파플라이 3 33만 9천원) 대비 7만원 낮고, 내구성 300km 기준 대회 3회면 회당 약 8만원 수준입니다. 성능은 220g의 무게에 에너지 리턴 71.7%, SA 139의 충격흡수로 서브4~서브3:30 구간에 부족함이 없습니다. 즉 기록 목표가 아직 확정적이지 않은 단계에서 슈퍼슈즈 감각을 확인하기에 위험이 적은 가격대입니다. 와이드 옵션이 없어 발볼이 넓다면 불편할 수 있습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-endorphin-pro-4-review-2024/',
+      text: 'DOR의 Matt(남성US10)은 길이가 맞고 레이서치고 넓고 높은 부피, 설포 주름과 거친 안감을 언급하며 자신의 긴 주행에 잘 맞았다고 평가했습니다. Andrea(여성US10,평소9.5)는 개인적으로0.5업을 유지했으며 단단한 체감 때문에 짧고 빠른 대회를 선호했습니다. 두 사람의 용도 의견이 갈려 공통 최적 거리·페이스나 사이즈 업 처방을 정하지 않습니다.',
+    },
   ],
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'puma-deviate-nitro-elite-3'],
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'hoka-rocket-x-3',
+    'puma-deviate-nitro-elite-3',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/x0OoxmwE' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZfeMbi68' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/x0OoxmwE',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZfeMbi68',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 women · M(일반) · null',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=95',
+        note: '한국 공식에서 확인한 여성 WHITE/CROCUS 일반M 상품 정가269,000원·확인 시 할인가188,300원. 표시상250mm만 선택 가능이었으며 판매SKU 텍스트·남성 현재 정가·한국 와이드 SKU는 미확인입니다. 대표 가격은 확인한 여성 상품의 현재 정가 범위입니다.',
+      },
+      {
+        label: 'RunRepeat 엔돌핀 프로 4',
+        url: 'https://runrepeat.com/saucony-endorphin-pro-4',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 220g · 38.1/28.6mm · 드롭9.5mm. SA 139/103 · ER 71.7/71.5%. RR 주폼PWRRUN PB35.1AC·상층PWRRUN HG33.5AC를 구분합니다. 짧은 마모 시험과 다른 신발의450/640km 연구를 이 모델의300km수명·후반 무릎 보호로 옮기지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/saucony-endorphin-pro-4-review-2024/',
+        note: 'DOR 소개 남성218g(US9)·여성184g(US8),40/32mm·드롭8mm. RR220g·38.1/28.6mm·9.5mm와 구분합니다. 개별 RR 검체 라벨은 독립 확인하지 못했습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

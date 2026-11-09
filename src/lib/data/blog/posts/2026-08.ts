@@ -3606,131 +3606,40 @@ export const posts_2026_08: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
-    slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
-    title: '페가수스 프리미엄 vs 벨로시티 나이트로 4 차이 — 11만원 더 비싼데 84g 무겁다',
-    description:
-      '나이키 페가수스 프리미엄(289,000원·308g)과 푸마 벨로시티 나이트로 4(179,000원·224g)는 값과 무게가 정반대로 붙습니다. 비싼 쪽이 84g 무겁고, 대신 쿠션 10/10에 힐 스택 43mm를 줍니다. 벨로시티는 11만원 싸고 84g 가볍고 km당 358원으로 경제적이며 와이드 옵션까지 있습니다. 다만 프리미엄은 무릎이 주의 등급이고 와이드가 없습니다. 어느 쪽이 내 러닝에 맞는지 실측으로 갈라드립니다.',
-    thumbnail: '/images/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-10',
-    updatedAt: '2026-09-28',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['페가수스 프리미엄', '나이키 페가수스 프리미엄', '벨로시티 나이트로 4', '푸마 벨로시티', '데일리 러닝화', '맥스쿠션', 'ZoomX', 'Nitro Foam', '러닝화 비교', '입문 러닝화'],
+    id: "nike-pegasus-premium-vs-puma-velocity-nitro-4-2026",
+    slug: "nike-pegasus-premium-vs-puma-velocity-nitro-4-2026",
+    title: "페가수스 프리미엄 vs 벨로시티 4 — 실측84g·앞코 높이·SKU별 가격",
+    description: "실측308g·224g과 앞쪽 높이29.1/25.9mm를 비교합니다. Nike와Puma의 한국 확인SKU·가격조건을 나누고 와이드·질환등급으로 승자를 정하던 주장을 바로잡았습니다.",
+    thumbnail: "/images/shoes/puma/velocitynitro4/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-10",
+    updatedAt: "2026-11-09",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "페가수스 프리미엄",
+      "벨로시티4",
+      "AP",
+      "신발 비교"
+    ],
     faqs: [
       {
-        question: '11만원 차이가 날 만한가요?',
-        answer:
-          '무엇을 사느냐에 달렸습니다. 페가수스 프리미엄의 11만원은 쿠션 10/10과 힐 스택 43mm, 그리고 풀렝스 Air Zoom 유닛에 붙는 값입니다. 벨로시티 나이트로 4는 스택 34mm에 쿠션 8/10이라 푹신함 자체는 확실히 덜합니다. 다만 84g 가볍고 km당 358원으로 프리미엄(482원)보다 26% 경제적이며, 가성비 점수는 10/10 대 8/10으로 벨로시티가 앞섭니다.',
+        "question": "발볼이 넓으면 Puma 와이드를 고르면 되나요?",
+        "answer": "이번에 한국 와이드 SKU를 확인하지 못했습니다. AP 명칭을 와이드로 번역하지 말고 실제 판매 규격과 착화를 확인하세요."
       },
       {
-        question: '발볼이 넓은데 어느 쪽인가요?',
-        answer:
-          '벨로시티 나이트로 4입니다. 두 켤레 모두 토박스가 좁은 편(narrow)으로 분류되지만, 와이드 옵션은 벨로시티에만 있습니다. 페가수스 프리미엄은 와이드가 없어 발볼 넓은 러너에게는 선택지가 없습니다.',
-      },
-      {
-        question: '무릎이 안 좋으면요?',
-        answer:
-          '벨로시티 나이트로 4가 안전합니다. 우리 DB 기준 페가수스 프리미엄은 무릎이 주의 등급인데, 힐 스택 43mm에 드롭 12mm라는 높은 플랫폼 특성에서 옵니다. 벨로시티는 네 부위 모두 양호입니다. 다만 족저근막염 이력이라면 반대로 프리미엄이 excellent 등급입니다.',
-      },
-      {
-        question: '둘 다 입문자용인가요?',
-        answer:
-          '적정 페이스는 프리미엄 5:00~6:30, 벨로시티 4:30~6:30으로 둘 다 편한 페이스대를 커버합니다. 다만 프리미엄은 308g으로 무거워 이지런·회복런 성격이 강하고, 벨로시티는 224g이라 조깅부터 가벼운 템포까지 폭이 넓습니다. 한 켤레로 다 하려면 벨로시티 쪽이 범용적입니다.',
-      },
+        "question": "84g 차이가 기록을 얼마나 바꾸나요?",
+        "answer": "이 실험실 무게 차이만으로 개인 기록이나 후반 피로 변화를 계산하지 않습니다. 실제 사이즈·핏·전환과 사용 조건을 함께 봐야 합니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>값과 무게가 정반대로 붙습니다</strong> — <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a> 289,000원·308g / <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a> 179,000원·224g. <strong>11만원 더 비싼 쪽이 84g 무겁습니다</strong></li>
-    <li><strong>프리미엄이 파는 건 푹신함</strong> — 쿠션 10/10, 힐 스택 43mm, 풀렝스 Air Zoom. 벨로시티는 스택 34mm에 쿠션 8/10</li>
-    <li><strong>갈림길 셋</strong> — km당 482원 vs 358원, 와이드 옵션(벨로시티만 있음), 무릎 등급(프리미엄이 주의)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>느린 페이스로 푹신하게 오래 걷듯 달리고 싶다면 페가수스 프리미엄</strong>, <strong>가볍게 여러 용도로 굴리고 싶다면 벨로시티 나이트로 4</strong>입니다. 발볼이 넓거나 무릎 이력이 있으면 벨로시티가 사실상 정답입니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>페가수스 프리미엄</th><th>벨로시티 나이트로 4</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>289,000원</td><td><strong>179,000원</strong></td></tr>
-    <tr><td>무게</td><td>308g</td><td><strong>224g</strong> (84g 가벼움)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td><strong>43 / 31mm</strong></td><td>34 / 24mm</td></tr>
-    <tr><td>드롭</td><td>12mm</td><td>10mm</td></tr>
-    <tr><td>미드솔</td><td>ZoomX + ReactX + 풀렝스 Air Zoom</td><td>Nitro Foam</td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / 8</td><td>7 / 8</td></tr>
-    <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
-    <tr><td>토박스 / 와이드</td><td>좁은 편 / <strong>없음</strong></td><td>좁은 편 / <strong>있음</strong></td></tr>
-    <tr><td>무릎 등급</td><td><strong>주의</strong></td><td>양호</td></tr>
-    <tr><td>내구 · km당</td><td>600km · 482원</td><td>500km · <strong>358원</strong></td></tr>
-    <tr><td>가성비 점수</td><td>8/10</td><td><strong>10/10</strong></td></tr>
-    <tr><td>적정 페이스</td><td>5:00–6:30 /km</td><td>4:30–6:30 /km</td></tr>
-  </tbody>
-</table>
-
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
-
-<h2>11만원으로 사는 것 — 스택 9mm와 쿠션 3점</h2>
-
-<p>가격 차이가 어디로 갔는지는 명확합니다. <strong>힐 스택 43mm 대 34mm, 무려 9mm 차이</strong>입니다. 여기에 ZoomX와 ReactX를 겹치고 풀렝스 Air Zoom 유닛까지 넣은 게 페가수스 프리미엄이고, 그 결과가 쿠션 10/10입니다.</p>
-
-<p>대신 <strong>308g</strong>이 됐습니다. 벨로시티 나이트로 4는 Nitro Foam 단일 구성에 스택 34mm로 단순하게 가고 224g을 만들었습니다.</p>
-
-<p>그래서 이 비교는 <strong>"푹신함을 위해 84g을 감수할 것인가"</strong>로 요약됩니다. 발이 푹 잠기는 감각을 좋아하고 페이스를 올릴 일이 거의 없다면 프리미엄이 값을 하고, 가볍게 여러 페이스를 오가고 싶다면 벨로시티입니다.</p>
-
-<h2>페가수스 프리미엄 — 나이키 데일리의 최상단</h2>
-
-<p>쿠션 10/10은 우리 DB에서 최고 등급입니다. 힐 43mm에 드롭 12mm라 뒤꿈치가 확실히 높고, 힐 착지로 편하게 굴러가는 러너에게 잘 맞습니다. 족저근막염 예방 등급도 excellent입니다.</p>
-
-<p>약점이 두 가지 뚜렷합니다. <strong>무릎이 주의 등급</strong>이고 — 높은 플랫폼과 12mm 드롭 조합에서 옵니다 — <strong>와이드 옵션이 없습니다.</strong> 토박스가 좁은 편으로 분류되는데 와이드까지 없으니 발볼 넓은 러너는 접근이 어렵습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 회복런·이지런 위주로 푹신함을 최우선하는 분, 힐 착지가 편한 분, 족저근막염 이력이 있는 분.</p>
-
-<h2>벨로시티 나이트로 4 — 가성비 10점의 이유</h2>
-
-<p>우리 DB에서 <strong>가성비 10/10</strong>을 받은 몇 안 되는 신발입니다. 179,000원에 224g, km당 358원. 네 부위 부상 등급이 모두 양호로 균형도 좋습니다.</p>
-
-<p>스택 34mm는 요즘 기준 낮은 편이라 맥스쿠션을 기대하면 실망할 수 있습니다. 대신 지면 감각이 살아 있고, 적정 페이스가 4:30~6:30으로 프리미엄보다 빠른 쪽까지 열려 있습니다. <strong>와이드 옵션이 있다는 것도 실질적 강점</strong>입니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 한 켤레로 조깅부터 가벼운 템포까지 해결하려는 분, 발볼이 넓은 분, 무릎 이력이 있는 분, 총비용을 아끼려는 분.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>발볼이 넓다</strong> → <a href="/shoes/puma-velocity-nitro-4">벨로시티 나이트로 4</a>(와이드 있는 쪽이 여기뿐)</li>
-  <li><strong>무릎 이력이 있다</strong> → 벨로시티(프리미엄은 주의 등급)</li>
-  <li><strong>족저근막염 이력</strong> → <a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a>(excellent)</li>
-  <li><strong>푹신함이 최우선</strong> → 프리미엄(쿠션 10, 스택 43mm)</li>
-  <li><strong>가벼움이 최우선</strong> → 벨로시티(224g)</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 벨로시티(11만원 싸고 km당 358원)</li>
-  <li><strong>더 푹신한 쿠션화를 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a>도 보세요</li>
-</ul>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 84g 차이가 실제로 느껴지나요?</p>
-    <p class="faq-a">A. 한 켤레로 168g이라 확실히 느껴집니다. 특히 후반부에 다리가 무거워질 때 체감이 커집니다. 다만 프리미엄의 무게는 쿠션의 대가라, 느린 페이스로 오래 달릴 때는 그 쿠션이 되돌려주는 부분이 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 토박스가 좁은데 발볼 넓으면 어떡하죠?</p>
-    <p class="faq-a">A. 벨로시티 나이트로 4의 와이드 버전을 보세요. 그것도 맞지 않는다면 두 켤레 다 후보에서 빼는 게 맞습니다. 표준 폭 이상이 필요하면 다른 모델로 눈을 돌리는 편이 낫습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 부상 예방 등급은 스택·드롭·안정성 등 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
-`,
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>RR 무게는308g 대224g으로84g 차이지만 한국AP검체와 동일 조건인 것은 아닙니다.</li><li>프리미엄은이중폼·전장Air Zoom, 벨로시티4는단일전장NITROFOAM입니다.</li><li>한국 와이드 현재SKU는 둘 다 이번 확인 범위에서 미확인입니다.</li></ul></div>
+<h2>비교할 수 있는 실측부터 정렬</h2><table><thead><tr><th>RunRepeat 항목</th><th>페가수스 프리미엄</th><th>벨로시티 나이트로4</th></tr></thead><tbody><tr><td>무게</td><td>308g</td><td>224g</td></tr><tr><td>힐/전족부</td><td>42.8/31.0mm</td><td>33.7/24.0mm</td></tr><tr><td>드롭</td><td>11.8mm</td><td>9.7mm</td></tr><tr><td>힐/전족부SA</td><td>155/136</td><td>136/100</td></tr><tr><td>힐/전족부에너지리턴</td><td>67.3/68.3%</td><td>67.5/74.2%</td></tr><tr><td>주폼 경도</td><td>36.9AC·보조39.9AC</td><td>41.8AC</td></tr><tr><td>내부 최광폭/엄지/높이</td><td>91.3/70.3/29.1mm</td><td>93.0/71.6/25.9mm</td></tr></tbody></table>
+<p>프리미엄은 실측 스택·높이가 더 크고 무게도 더 큽니다. 하지만 같은 실험실 검체의84g차이를 모든 개인 사이즈의 한 켤레168g차이로 보장하지 않습니다. SA·에너지리턴·경도도 다른 시험이므로 ‘11만원을 주면 무조건 더 푹신하다’거나 무릎·족저근막 질환별 안전 순위를 만들지 않습니다.</p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p>
+<h2>한국에서 확인한 가격은SKU 조건입니다</h2><p>Nike 남성IM8342-200 정가289,000원·확인시판매260,100원, 여성IO9918-100 정가279,000원입니다. Puma는 남성카테고리AP312635_12 정가179,000원·확인시판매85,920원입니다. 따라서 확인 남성 대표 SKU 정가 차는110,000원이지만 성별·에디션·할인을 바꾸면 실제 지출도 달라집니다. AP를 와이드로 번역하지 않습니다. <a href="https://kr.puma.com/kr/ko/pd/벨로시티-나이트로-4-ap-%3Cbr%3Evelocity-nitro-4-ap/312635.html?dwvar_312635_color=12" target="_blank" rel="noopener noreferrer">Puma 한국AP 원문</a></p>
+<h2>높이 여유와 발등·엄지 압박은 별개</h2><p>DOR Matt(남성US10)은 프리미엄의 테이퍼 앞코·단단한 카운터·혀 이동을 언급했습니다. Andrea(여성US9.5)는 압박으로 주행 테스트를 수행하지 못했습니다. 벨로시티4에서는 Andrea가 앞쪽 여유를 느낀 반면 Matt은 초기 낮은 볼륨·힐 패딩에 의한 앞쪽 밀림·카운터 압박을 느꼈습니다. 숫자나 성별 하나로 모두의 핏을 정하지 않습니다.</p>
+<h2>지금 신발에서 무엇을 바꾸고 싶은가?</h2><p>무게·앞쪽높이·힐고정·전환 중 해결할 문제를 먼저 적으세요. 한 모델이 가볍다는 이유로 모든 러너의 여러 페이스에 맞고 다른 모델은 회복런 전용이라고 정하지 않습니다. 현재 와이드 SKU·반품 조건을 확인하고 시착에서 문제 위치가 실제로 달라지는지 비교하세요.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<h2>기존 질환별 결론은 철회했습니다</h2><p>‘무릎 이력은Puma가 안전·족저근막 이력은Nike가 최상’,500/600km수명과km당비용은 확인한 원문으로 입증하지 못해 제거했습니다. 현재 통증이나 저림이 있다면 구매 조건과 별도로 평가받으세요.</p>
+<h2>확인한 원문</h2><p><a href="https://runrepeat.com/nike-pegasus-premium" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/nike-pegasus-premium-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/nike-pegasus-premium">한국 공식 상품 원문·조건</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><h2>확인한 원문</h2><p><a href="https://runrepeat.com/puma-velocity-nitro-4" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/puma-velocity-nitro-4-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/puma-velocity-nitro-4">한국 공식 상품 원문·조건</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
   },
   {
     id: 'nike-swoosh-runners-2026-recruitment',

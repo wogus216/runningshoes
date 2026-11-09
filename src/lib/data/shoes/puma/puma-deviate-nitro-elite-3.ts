@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-deviate-nitro-elite-3',
   slug: 'puma-deviate-nitro-elite-3',
@@ -15,21 +16,21 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  price: 289000,
-  description: '푸마의 프리미엄 레이싱화로, A-TPU 기반 Nitro Elite 폼과 카본 플레이트로 77%의 놀라운 에너지 리턴을 제공합니다.',
-  oneliner: '77% 에너지 리턴을 29만원에, 베이퍼플라이 킬러',
-  editorComment: '베이퍼플라이 3(₩310,000)보다 2만원 저렴한 28만 9천원에 77% 에너지 리턴은 가성비 슈퍼슈즈의 정석입니다. A-TPU 기반 Nitro Elite 폼이 204g 경량에서 탄탄하고 직접적인 반발력을 제공하며, 이 느낌은 ZoomX의 부드러운 반발과는 성격이 다릅니다. 세일가 25만원대까지 내려가면 슈퍼슈즈 시장에서 가성비 1위라 해도 과언이 아닙니다. 토박스가 좁아 한국 러너 발볼에는 반사이즈 업이 필수이고, 겨울 경화에 약한 점은 한국 11월~3월 레이스에서 감안해야 합니다. \n\n사이즈·구매 가이드: 토박스가 좁은 편(narrow)이며 와이드 옵션이 없으므로 반드시 반사이즈 업을 선택하세요. 발볼이 넓으면 착화 테스트를 먼저 권합니다. 289,000원 ÷ 300km = km당 약 963원이므로 레이스 전용으로만 활용하세요. 발볼 넓은 레이싱화를 원하면 SC Elite V5, 더 높은 스택을 원하면 메타스피드 스카이+를 비교해보세요.',
-  tags: ['레이싱', '카본 플레이트', 'Nitro Elite'],
-
+  description: 'NITRO Elite 이중 밀도 · 카본 PWRPLATE 구조의 디비에이트 나이트로 엘리트 3. 실험실 204g·힐/전족부 39.2/28.6mm. 한국 현재 정가 미확인.',
+  oneliner: '204g 실험실 무게 · NITRO Elite 이중 밀도 · 카본 PWRPLATE',
+  editorComment: '2026-11-09 원문 재확인. 한국 일반형309809 후보 원문은web404·live이용 불가여서 현재 일반형 정가·폭·재고는 미확인입니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·판매279,200원은 확인했지만 모두 품절이었으며 일반형 정가로 대체하지 않습니다. 한국 와이드·문자 폭코드는 미확인입니다. 한국 특별 에디션 공시194g(UK8)·40/32mm·8mm를 여성US8이나250mm로 환산하지 않습니다. DOR소개195g(남성US9/여성US10.5 표기)·40/32mm·8mm와 RR204g·39.2/28.6mm·10.6mm는 조건이 다릅니다. RR은 NITROElite를A-TPU라고 설명하지만 제조사 한국본문의 세부 화학조성 확인과 구분합니다. 주폼35.5AC·보조31.8AC의 층 위치는 별도 미확인입니다. 공시·개인 체감8mm와 RR실측10.6mm를 서로 치환하지 않습니다. 겨울금기·300km교체·기록개선 보장은 철회합니다. DOR의 Matt(남성US10)은 길이가 맞고 앞쪽 부피에 약간 여유가 있었지만 테이퍼 앞코·거친 안감·급회전의 발 움직임을 언급했습니다. 강한 카본 굽힘과 긴 착화에서 중족 플레이트 압박을 느꼈습니다. 초기에 뒤 고무가 떨어져 접착 수리한 개인 검체 경험도 기록했지만 모든 제품의 불량률이나 수명으로 일반화하지 않습니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭94.4mm·엄지69.5mm·높이26.5mm를 근거로 모든 넓은 발에 반 사이즈 업을 처방하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본 플레이트',
+    'Nitro Elite',
+  ],
   specs: {
     weight: 204,
     cushioning: 9,
     responsiveness: 10,
     stability: 6,
-    drop: 11,
-    durability: 300,
+    drop: 10.6,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 39.2,
@@ -37,77 +38,120 @@ export const shoe: Shoe = {
     },
     drop: 10.6,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'Nitro Elite (A-TPU)',
-    optimalPace: '3:30-4:30 min/km',
+    plateType: 'curved carbon PWRPLATE',
+    midsoleType: 'NITRO Elite 이중 밀도 · 카본 PWRPLATE',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'caution',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'poor',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['마라톤 기록 단축', '하프/풀 마라톤 레이스', '엘리트 러너', '전방 착지 러너'],
-    notRecommended: ['입문 러너', '회복 러닝', '일상 훈련', '넓은 발볼'],
+    recommended: [
+      '이중 밀도 NITROElite와 카본 굽힘을 비교하려는 러너',
+      '중족 압박·앞코·급회전 고정을 직접 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 중족 압박·안감 마찰이 생기는 경우',
+      '고정과 플레이트 굽힘이 맞지 않는 경우',
+    ],
   },
-
-  features: ['Nitro Elite 폼 (A-TPU)', '카본 플레이트', '204g 초경량', '77% 에너지 리턴', '에너지 리턴 전족부 76.3% (RunRepeat 실측)', '충격흡수 힐 147 SA (RunRepeat 실측)'],
-
+  features: [
+    'NITRO Elite 이중 밀도 · 카본 PWRPLATE',
+    '204g · 힐/전족부 39.2/28.6mm (RunRepeat)',
+    '힐/전족부 SA 147/127 · 에너지 리턴 77.1/76.3% (RunRepeat). RR은 NITROElite를A-TPU라고 설명하지만 제조사 한국본문의 세부 화학조성 확인과 구분합니다. 주폼35.5AC·보조31.8AC의 층 위치는 별도 미확인입니다. 공시·개인 체감8mm와 RR실측10.6mm를 서로 치환하지 않습니다. 겨울금기·300km교체·기록개선 보장은 철회합니다.',
+    '한국 와이드 SKU는 미확인입니다. RR 내부 최광폭94.4mm·엄지69.5mm·높이26.5mm를 근거로 모든 넓은 발에 반 사이즈 업을 처방하지 않습니다.',
+  ],
   priceAnalysis: {
-    msrp: 289000,
-    streetPrice: 250000,
-    costPerKm: 963,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'hoka-rocket-x-3',
+    ],
   },
-
   reviews: [
     {
-        userType: '비용 관점 — 최상위 레이서 중 가격 경쟁력',
-        text: '최상위 레이서군에서 성능 대비 가격이 유리한 구간입니다. 204g으로 베이퍼플라이 계열(194g)과 무게 차이가 크지 않으면서 정가 289,000원 대 310,000원으로 낮고, 세일가 25만원대까지 내려오면 격차가 더 벌어집니다. RunRepeat 측정 에너지 리턴이 77%대이고, 힐 39.2mm 스택으로 후반 충격 흡수도 확보했습니다. 토박스가 좁아 한국 러너 평균 발볼에서는 반 치수 업이 사실상 필요하며, 내구성 300km라 레이스 전용 운용이 전제입니다. 아치 지지가 약해 평발 성향이면 인솔 교체를 검토하세요.',
-      },
-    {
-      userType: '에디터 분석',
-      rating: 92,
-      text: '"가성비 좋은 슈퍼슈즈 뭐가 좋아요?" 질문에 최고의 답변입니다. 289,000원으로 베이퍼플라이 3(310,000원), 메타스피드 스카이+(329,000원)보다 저렴하면서 RunRepeat 측정 에너지 리턴 77%대로 상위권입니다. 204g으로 베이퍼플라이(194g)와 비슷한 경량성, A-TPU 기반 Nitro Elite 폼으로 탄탄한 반발력을 제공합니다. 39.2mm 힐 스택이 마라톤 후반 무릎과 관절을 보호해주고, 10.6mm 드롭이 힐스트라이크 러너에게도 자연스러운 전환을 유도합니다. 발볼이 좁아 한국인 발에는 반사이즈 업 필수이며, 토박스 폭이 좁은 편이라 와이드 발볼 러너는 주의하세요. 300km 내구성으로 km당 약 963원의 가성비는 레이싱화 카테고리에서 합리적입니다. 서브4:00 목표의 하프/풀 마라톤 레이스에 강력 추천하는 가성비 슈퍼슈즈입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-deviate-nitro-elite-3',
+      text: '204g과 SA 147/127·에너지 리턴 77.1/76.3%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR은 NITROElite를A-TPU라고 설명하지만 제조사 한국본문의 세부 화학조성 확인과 구분합니다. 주폼35.5AC·보조31.8AC의 층 위치는 별도 미확인입니다. 공시·개인 체감8mm와 RR실측10.6mm를 서로 치환하지 않습니다. 겨울금기·300km교체·기록개선 보장은 철회합니다. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭94.4mm·엄지69.5mm·높이26.5mm를 근거로 모든 넓은 발에 반 사이즈 업을 처방하지 않습니다.',
     },
     {
-        userType: '예상 적합 — 봄가을 레이스 전용',
-        text: '204g의 무게에 에너지 리턴 77%로, 30km 이후 페이스 유지가 과제인 러너를 겨냥한 레이서입니다. 힐 39.2mm 스택이라 장거리에서 충격 흡수도 확보한 구성입니다. 계절 면에서는 RunRepeat 저온 테스트 경도 변화가 25.8%로 평균 수준입니다. 겨울 대회가 주력이라면 저온 경화율이 낮은 모델을 함께 검토하세요. 토박스가 좁아 평소보다 반 치수 올려야 할 수 있고, 내구성 300km 수준이라 레이스 전용 운용이 전제입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-deviate-nitro-elite-3-review-2024/',
+      text: 'DOR의 Matt(남성US10)은 길이가 맞고 앞쪽 부피에 약간 여유가 있었지만 테이퍼 앞코·거친 안감·급회전의 발 움직임을 언급했습니다. 강한 카본 굽힘과 긴 착화에서 중족 플레이트 압박을 느꼈습니다. 초기에 뒤 고무가 떨어져 접착 수리한 개인 검체 경험도 기록했지만 모든 제품의 불량률이나 수명으로 일반화하지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '204g (남성 US 9 기준)',
-    stackHeight: '힐 39.2mm / 포어풋 28.6mm',
-    drop: '10.6mm (Lab 측정치)',
-    midsole: 'Nitro Elite 폼 (A-TPU 기반)',
-    plate: '카본 플레이트 (풀 렝스)',
-    outsole: 'PumaGrip 미니멀',
-    upper: 'Ultraweave 경량 메쉬',
-    width: '좁음 · 토박스 69.5mm — RunRepeat 평균 73.2mm보다 3.7mm 좁고 랩 원문 "Yes, the toebox features an ultra-tapered design!"',
-    durability: '300km (레이싱 전용)',
-    price: '₩289,000 (MSRP) / 세일 시 ₩250,000~',
-    costPerKm: '약 ₩963/km (300km 기준)',
-    footType: '발볼 좁은 러너 / 반사이즈 업 권장',
-    landingPattern: '전방 착지 (레이싱)',
+    weight: '204g (RunRepeat 공시 검체 정책:남성US9). 한국 특별 에디션 공시194g(UK8)·40/32mm·8mm를 여성US8이나250mm로 환산하지 않습니다. DOR소개195g(남성US9/여성US10.5 표기)·40/32mm·8mm와 RR204g·39.2/28.6mm·10.6mm는 조건이 다릅니다.',
+    stackHeight: '39.2/28.6mm (RunRepeat 힐/전족부 실측)',
+    drop: '10.6mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'NITRO Elite 이중 밀도 · 카본 PWRPLATE · 35.5 AC(Asker C) · 힐/전족부 SA 147/127 · 에너지 리턴 77.1/76.3%. RR은 NITROElite를A-TPU라고 설명하지만 제조사 한국본문의 세부 화학조성 확인과 구분합니다. 주폼35.5AC·보조31.8AC의 층 위치는 별도 미확인입니다. 공시·개인 체감8mm와 RR실측10.6mm를 서로 치환하지 않습니다. 겨울금기·300km교체·기록개선 보장은 철회합니다.',
+    plate: '곡선형 카본 PWRPLATE. 전용 안정 장치나 질환별 보호 등급으로 해석하지 않습니다.',
+    width: 'RunRepeat 내부 최광폭 94.4mm / 엄지 부위 69.5mm / 엄지 높이 26.5mm. 한국 와이드 SKU는 미확인입니다. RR 내부 최광폭94.4mm·엄지69.5mm·높이26.5mm를 근거로 모든 넓은 발에 반 사이즈 업을 처방하지 않습니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 일반형309809 후보 원문은web404·live이용 불가여서 현재 일반형 정가·폭·재고는 미확인입니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·판매279,200원은 확인했지만 모두 품절이었으며 일반형 정가로 대체하지 않습니다. 한국 와이드·문자 폭코드는 미확인입니다.',
   },
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'hoka-rocket-x-3', 'saucony-endorphin-pro-4'],
-  relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'hoka-rocket-x-3',
+    'saucony-endorphin-pro-4',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xk9resjA' }],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/xk9resjA',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 women · null · 313421_01',
+        url: 'https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-엘리트-3-에키덴-우먼스-%3Cbr%3Edeviate-nitro-elite-3-ekiden-wns/313421.html?dwvar_313421_color=01&dwvar_313421_size=0190',
+        note: '한국 일반형309809 후보 원문은web404·live이용 불가여서 현재 일반형 정가·폭·재고는 미확인입니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·판매279,200원은 확인했지만 모두 품절이었으며 일반형 정가로 대체하지 않습니다. 한국 와이드·문자 폭코드는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 null · null · 311917_01',
+        url: 'https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-엘리트-3-디지도쿄-%3Cbr%3Edeviate-nitro%E2%84%A2elite-3-dt/311917.html',
+        note: '한국 일반형309809 후보 원문은web404·live이용 불가여서 현재 일반형 정가·폭·재고는 미확인입니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·판매279,200원은 확인했지만 모두 품절이었으며 일반형 정가로 대체하지 않습니다. 한국 와이드·문자 폭코드는 미확인입니다.',
+      },
+      {
+        label: '한국 일반형 접근 확인 범위',
+        url: 'https://kr.puma.com/kr/ko/pd/디비에이트-나이트로-엘리트-3-%3Cbr%3Edeviate-nitro-elite-3/309809.html',
+        note: '한국 일반형309809 후보 원문은web404·live이용 불가여서 현재 일반형 정가·폭·재고는 미확인입니다. 여성 에키덴313421_01 정가299,000원, DIGITOKYO311917_01 정가349,000원·판매279,200원은 확인했지만 모두 품절이었으며 일반형 정가로 대체하지 않습니다. 한국 와이드·문자 폭코드는 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 디비에이트 나이트로 엘리트 3',
+        url: 'https://runrepeat.com/puma-deviate-nitro-elite-3',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 204g · 39.2/28.6mm · 드롭10.6mm. SA 147/127 · ER 77.1/76.3%. RR은 NITROElite를A-TPU라고 설명하지만 제조사 한국본문의 세부 화학조성 확인과 구분합니다. 주폼35.5AC·보조31.8AC의 층 위치는 별도 미확인입니다. 공시·개인 체감8mm와 RR실측10.6mm를 서로 치환하지 않습니다. 겨울금기·300km교체·기록개선 보장은 철회합니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/puma-deviate-nitro-elite-3-review-2024/',
+        note: '한국 특별 에디션 공시194g(UK8)·40/32mm·8mm를 여성US8이나250mm로 환산하지 않습니다. DOR소개195g(남성US9/여성US10.5 표기)·40/32mm·8mm와 RR204g·39.2/28.6mm·10.6mm는 조건이 다릅니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

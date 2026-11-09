@@ -1,29 +1,36 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-triumph-23',
   slug: 'saucony-triumph-23',
   brand: 'Saucony',
   name: '트라이엄프 23',
   image: '/images/shoes/saucony/triumph23.webp',
-  images: ['/images/shoes/saucony/triumph23/side.webp', '/images/shoes/saucony/triumph23/top.webp', '/images/shoes/saucony/triumph23/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/triumph23/side.webp',
+    '/images/shoes/saucony/triumph23/top.webp',
+    '/images/shoes/saucony/triumph23/outsole.webp',
+  ],
   category: '쿠션화',
   rating: 4,
   price: 199000,
-  description: 'Saucony의 프리미엄 쿠션화로, PWRRUN PB (Pebax) 미드솔로 맥시멀 쿠셔닝과 부드러운 반응성을 제공합니다. 장거리 편안함을 추구하는 러너에게 적합합니다.',
-  oneliner: '풀 PEBA 폼을 19만원대에, 본디9 킬러 맥시멀 쿠션화',
-  editorComment: '42.3mm 힐 스택에 풀 PEBA(PWRRUN PB) 미드솔을 19만 9천원에 제공하는 건 트라이엄프 23만의 강점입니다. Bondi 9(₩229,000)보다 3만원 싸면서 149 SA 충격흡수와 힐 67.6%·전족부 71.2% 에너지 리턴(RunRepeat 실측)은 오히려 앞섭니다. 272g은 맥시멀 쿠션화 중 가벼운 축에 속하고, 124mm 넓은 플랫폼이 장거리에서 안정성을 보장합니다. 토박스는 RunRepeat 실측 71.4mm로 좁은 편이지만 와이드 옵션이 있어 발볼 넓은 한국 러너도 선택지가 있으며, 조깅부터 5분대 페이스까지 활용 범위가 넓은 점이 순수 리커버리화와 차별됩니다.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 71.4mm(평균 73.2mm)로 좁은 편이고 랩도 "made it narrower than last year"라고 평가해, 발볼이 보통 이상이라면 와이드(2E) 옵션을 선택하세요. 정가 199,000원에 예상 수명 500~700km(추정) 기준 km당 약 280~400원입니다. 같은 쿠션화로는 본디 9·젤 님버스 28이 대안입니다.',
-  tags: ['쿠션화', '맥시멀', '장거리', 'PEBA'],
-
+  description: '전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트 구조의 트라이엄프 23. 실험실 272g·힐/전족부 42.3/32.3mm. 한국 확인 정가199,000원.',
+  oneliner: '272g 실험실 무게 · 전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다. DOR 소개263g(남성US9)·239g(여성US8),37/27mm·10mm. RR272g·42.3/32.3mm·10.0mm와 스택 차이가 커 동일 공시·실측으로 합치지 않습니다. RR 경도42.8AC와 리뷰어의 부드러운 전체 착화감은 다른 지표입니다. RR Dremel마모0.7mm와 DOR초기 실도로 마모는 조건이 달라 수명km로 환산하지 않습니다. RR 굽힘 본문17.4N·최신표17.5N,혀 본문semi·표full 충돌을 보존합니다. 신방식80BR·건조59%를 구연기1~5점과 직접 비교하지 않습니다. DOR의 Matt(남성US10)은 대체로 길이가 맞고 보통 폭·낮은 볼륨, 앞코 테이퍼와 윗면 가드 압박을 느꼈습니다. 거싯·힐패딩 고정은 좋았지만 단단한 카운터가 자신의 뒤꿈치 돌출 부위를 자극했습니다. 부드럽고 반응성 있는 폼 체감과 초기 힐 전환, 노출폼·뒤가쪽 고무의 초기 마모를 기록했습니다. 한국 남녀W와이드 SKU를 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭93.8mm·엄지71.4mm·높이26.8mm와 외부 전족 플랫폼124.0mm는 다른 치수입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '맥시멀',
+    '장거리',
+    'PEBA',
+  ],
   specs: {
     weight: 272,
     cushioning: 9,
     responsiveness: 9,
     stability: 6,
     drop: 10,
-    durability: 600,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 42.3,
@@ -32,76 +39,124 @@ export const shoe: Shoe = {
     drop: 10,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PWRRUN PB (Pebax)',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: '전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'good',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
+    wideOptions: true,
   },
-
   targetUsers: {
-    recommended: ['장거리 러너', '맥시멀 쿠셔닝 선호', '리커버리 런', '중급 러너'],
-    notRecommended: ['빠른 템포 러닝', '레이싱', '경량화 선호'],
+    recommended: [
+      '전장 PWRRUN PB의 전환과 한국W와이드 고정을 비교하려는 러너',
+      '앞코 윗면·카운터 압박을 직접 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 카운터·앞코 가드 압박이 생기는 경우',
+      '로커 위치와 힐 고정이 맞지 않는 경우',
+    ],
   },
-
-  features: ['PWRRUN PB (Pebax)', '맥시멀 스택', '10mm 드롭', '풀 PEBA 미드솔', '충격흡수 힐 149 SA (RunRepeat 실측)'],
-
+  features: [
+    '전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트',
+    '272g · 힐/전족부 42.3/32.3mm (RunRepeat)',
+    '힐/전족부 SA 149/136 · 에너지 리턴 67.6/71.2% (RunRepeat). RR 경도42.8AC와 리뷰어의 부드러운 전체 착화감은 다른 지표입니다. RR Dremel마모0.7mm와 DOR초기 실도로 마모는 조건이 달라 수명km로 환산하지 않습니다. RR 굽힘 본문17.4N·최신표17.5N,혀 본문semi·표full 충돌을 보존합니다. 신방식80BR·건조59%를 구연기1~5점과 직접 비교하지 않습니다.',
+    '한국 남녀W와이드 SKU를 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭93.8mm·엄지71.4mm·높이26.8mm와 외부 전족 플랫폼124.0mm는 다른 치수입니다.',
+  ],
   priceAnalysis: {
     msrp: 199000,
-    streetPrice: 169000,
-    costPerKm: 332,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14'],
+    alternatives: [
+      'hoka-bondi-9',
+      'asics-gel-nimbus-28',
+      'new-balance-1080-v14',
+    ],
   },
-
   detailedSpecs: {
-    weight: '272g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 42.3mm / 포어풋 32.3mm (실측)',
-    drop: '10.0mm (실측) / 10mm (브랜드 공식)',
-    midsole: 'PWRRUN PB (Pebax 기반 PEBA)',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '메쉬',
-    width: '좁음 (D) — RunRepeat 실측 토박스 71.4mm(평균 73.2mm), 랩: "Saucony pulled things back and made it narrower than last year… especially good for those with low-volume feet or who enjoy a snug fit" · 와이드 — 한국 공식몰 남녀 와이드 판매(2026-10-20 확인)',
-    durability: '600km+',
-    price: '199,000원',
-    costPerKm: '약 ₩332/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '후족부/중족부 착지',
+    weight: '272g (RunRepeat 공시 검체 정책:남성US9). DOR 소개263g(남성US9)·239g(여성US8),37/27mm·10mm. RR272g·42.3/32.3mm·10.0mm와 스택 차이가 커 동일 공시·실측으로 합치지 않습니다.',
+    stackHeight: '42.3/32.3mm (RunRepeat 힐/전족부 실측)',
+    drop: '10mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: '전장 PWRRUN PB · Super Responsive Sockliner · 비플레이트 · 42.8 AC(Asker C) · 힐/전족부 SA 149/136 · 에너지 리턴 67.6/71.2%. RR 경도42.8AC와 리뷰어의 부드러운 전체 착화감은 다른 지표입니다. RR Dremel마모0.7mm와 DOR초기 실도로 마모는 조건이 달라 수명km로 환산하지 않습니다. RR 굽힘 본문17.4N·최신표17.5N,혀 본문semi·표full 충돌을 보존합니다. 신방식80BR·건조59%를 구연기1~5점과 직접 비교하지 않습니다.',
+    plate: 'DOR 원문은 플레이트 없음으로 명시합니다.',
+    width: 'RunRepeat 내부 최광폭 93.8mm / 엄지 부위 71.4mm / 엄지 높이 26.8mm. 한국 남녀W와이드 SKU를 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭93.8mm·엄지71.4mm·높이26.8mm와 외부 전족 플랫폼124.0mm는 다른 치수입니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 90,
-      text: '장거리 러닝에서 무릎과 발목 보호가 필요한 러너에게 최적의 프리미엄 쿠션화입니다. 42.3mm 힐 스택과 SA 149 충격흡수로 "무릎 괜찮나요?" 질문에 자신있게 추천할 수 있습니다. 272g으로 맥시멀 쿠션화 중 가벼운 편이고, PEBA 폼의 힐 67.6% 에너지 리턴으로 반발력도 좋습니다. 미드솔 경도 42.8 AC(RunRepeat 실측, 평균 35.4 AC)로 단단한 편이고 10mm 드롭 구성이라 후족부 착지 러너에게 자연스럽고, 19만 9천원으로 본디9(22만 9천원)보다 3만원 낮으면서 124mm 넓은 플랫폼으로 안정적입니다. 토박스는 71.4mm로 좁은 편이라 발볼이 넓다면 와이드 옵션을 고르는 편이 좋고, 평발 러너에게도 적합한 쿠셔닝을 제공합니다. 600km 내구성에 km당 약 332원으로 가성비 우수하며, 느린 조깅부터 5분대 페이스까지 활용 범위가 넓습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-triumph-23',
+      text: '272g과 SA 149/136·에너지 리턴 67.6/71.2%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 경도42.8AC와 리뷰어의 부드러운 전체 착화감은 다른 지표입니다. RR Dremel마모0.7mm와 DOR초기 실도로 마모는 조건이 달라 수명km로 환산하지 않습니다. RR 굽힘 본문17.4N·최신표17.5N,혀 본문semi·표full 충돌을 보존합니다. 신방식80BR·건조59%를 구연기1~5점과 직접 비교하지 않습니다. 한국 남녀W와이드 SKU를 확인했지만 모든 넓은 발의 적합 보장은 아닙니다. RR 내부 최광폭93.8mm·엄지71.4mm·높이26.8mm와 외부 전족 플랫폼124.0mm는 다른 치수입니다.',
     },
     {
-        userType: '모델 선택 — 본디 9 대비 반발',
-        text: '맥시멀 쿠션화에서 본디 계열과 비교하면 성격이 갈립니다. 본디가 푹 가라앉는 감각이라면 이쪽은 에너지 리턴 힐 67.6%로 푹신하면서 튕겨주는 반발이 있습니다. 272g으로 맥시멀치고 가볍고 가격도 3만원가량 낮습니다. 20km급 LSD에서 관절 부담을 줄이면서도 리듬이 죽지 않는 쪽을 원한다면 이 모델이 맞고, 순수한 충격 흡수를 우선하면 본디입니다. 토박스는 좁은 편(71.4mm)이지만 와이드 옵션이 있어 발볼 대응이 됩니다.',
-      },
-    {
-        userType: '모델 선택 — 님버스 28 대비 반응성과 내구성',
-        text: '님버스 계열과 비교하면 반응성에서 앞서고 내구성에서 밀립니다. PEBA 폼이라 SA 149의 충격흡수에 에너지 리턴 전족부 71.2%를 더해, 회복 조깅에서도 다리가 죽지 않는 감각이 있습니다. 가격도 6만원가량 낮습니다. 반면 아웃솔 내구성이 600km로 님버스(1,000km)보다 짧아, 주행거리가 많으면 교체 주기가 빨라집니다. 총비용으로 보면 격차가 좁혀지므로 월 주행거리를 기준으로 판단하는 편이 맞습니다. 토박스는 71.4mm로 좁은 편이라 발볼이 넓다면 와이드가 필요합니다.',
-      },
-    {
-        userType: '모델 선택 — 트라이엄프 23 vs 본디 9',
-        text: '충격 완화를 우선하며 러닝을 시작하는 단계에서 자주 맞붙는 두 모델입니다. 트라이엄프 23은 272g으로 본디 9보다 가볍고 전환이 앞으로 굴러가는 성격이라, 같은 맥시멀 쿠션이라도 발을 끌고 가는 느낌이 덜합니다. SA 149의 충격흡수로 착지 부담을 줄이면서 무게 페널티는 상대적으로 작은 조합입니다. 토박스는 좁은 편(71.4mm)이지만 와이드 옵션이 있습니다. 반대로 순수 쿠션량과 접지 안정감을 최우선으로 둔다면 본디 쪽이 두껍습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-triumph-23-review-2025/',
+      text: 'DOR의 Matt(남성US10)은 대체로 길이가 맞고 보통 폭·낮은 볼륨, 앞코 테이퍼와 윗면 가드 압박을 느꼈습니다. 거싯·힐패딩 고정은 좋았지만 단단한 카운터가 자신의 뒤꿈치 돌출 부위를 자극했습니다. 부드럽고 반응성 있는 폼 체감과 초기 힐 전환, 노출폼·뒤가쪽 고무의 초기 마모를 기록했습니다.',
+    },
   ],
-
-  similarShoes: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v14', 'brooks-glycerin-22'],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xqb7bLT9' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Zlv5t1JA' }],
+  similarShoes: [
+    'hoka-bondi-9',
+    'asics-gel-nimbus-28',
+    'new-balance-1080-v14',
+    'brooks-glycerin-22',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/xqb7bLT9',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Zlv5t1JA',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · M(일반) · S21023-130',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=182',
+        note: '한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다.',
+      },
+      {
+        label: '한국 공식 women · M(일반) · S11023-148',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=200',
+        note: '한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다.',
+      },
+      {
+        label: '한국 공식 men · W(와이드) · S21024-203',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=325',
+        note: '한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다.',
+      },
+      {
+        label: '한국 공식 women · W(와이드) · S11024-201',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=198',
+        note: '한국 공식 남성 일반M S21023-130·여성 일반M S11023-148·남성 W와이드 S21024-203·여성 W와이드 S11024-201 정가199,000원. 확인 시 남성 와이드250/255/260mm·여성 와이드230/235mm 선택 가능이었습니다. W를2E/D로 임의 매핑하지 않으며 색상·사이즈별 현재 재고와 할인은 별도입니다.',
+      },
+      {
+        label: 'RunRepeat 트라이엄프 23',
+        url: 'https://runrepeat.com/saucony-triumph-23',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 272g · 42.3/32.3mm · 드롭10mm. SA 149/136 · ER 67.6/71.2%. RR 경도42.8AC와 리뷰어의 부드러운 전체 착화감은 다른 지표입니다. RR Dremel마모0.7mm와 DOR초기 실도로 마모는 조건이 달라 수명km로 환산하지 않습니다. RR 굽힘 본문17.4N·최신표17.5N,혀 본문semi·표full 충돌을 보존합니다. 신방식80BR·건조59%를 구연기1~5점과 직접 비교하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/saucony-triumph-23-review-2025/',
+        note: 'DOR 소개263g(남성US9)·239g(여성US8),37/27mm·10mm. RR272g·42.3/32.3mm·10.0mm와 스택 차이가 커 동일 공시·실측으로 합치지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

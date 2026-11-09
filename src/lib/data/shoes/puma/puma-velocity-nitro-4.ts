@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'puma-velocity-nitro-4',
   slug: 'puma-velocity-nitro-4',
@@ -16,100 +17,150 @@ export const shoe: Shoe = {
   category: '입문화',
   rating: 5,
   price: 179000,
-  description: '푸마의 대표 데일리 트레이너로, 풀 Nitro Foam 미드솔로 가볍고 반응성이 뛰어납니다. RunRepeat 랩 종합 93점(Superb)을 받은 데일리 트레이너입니다.',
-  oneliner: '224g에 67.5% 리턴, 14만원대 가성비 최강 데일리 트레이너',
-  editorComment: '페가수스 41(281g)보다 57g 가볍고, 67.5% 에너지 리턴은 입문화 카테고리에서 독보적인 수치입니다. 세일가 14만원대면 페가수스(₩159,000), 노바블라스트(₩169,000)보다 저렴하면서 성능은 동급 이상입니다. 풀 Nitro Foam으로 전작의 듀얼 폼 구조에서 단일 폼으로 바뀌면서 반응성이 한층 직관적이 됐습니다. 치명적 약점은 좁은 토박스로, 발볼 넓은 한국 러너는 와이드 모델을 반드시 선택해야 합니다.\n\n사이즈·구매 가이드: 토박스가 좁은 편(narrow)이므로 발볼 넓은 러너는 와이드 모델을 반드시 선택하세요. 와이드 옵션이 있으니 매장 착화 후 결정을 권합니다. 179,000원 ÷ 500km = km당 약 358원입니다. 비슷한 경량 데일리 대안으로는 노바블라스트 5와 마하 6을 비교해보세요.',
-  tags: ['데일리 트레이너', '경량', '가성비'],
-
+  description: '전장 단일 NITROFOAM · PUMAGRIP 구조의 벨로시티 나이트로 4. 실험실 224g·힐/전족부 33.7/24mm. 한국 확인 정가179,000원.',
+  oneliner: '224g 실험실 무게 · 전장 단일 NITROFOAM · PUMAGRIP',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식에서 확인한 남성카테고리 AP312635_12 정가179,000원·확인 시 판매가85,920원,260~290mm 선택 가능이었습니다. 대표 가격은 확인한 AP SKU 기준입니다. AP를 와이드나 특정 한국 발형으로 번역하지 않으며 한국 폭코드·여성 HYROX현재 가격·재고는 미확인입니다. 한국 AP공시250g(UK8)·36/26mm·10mm와 RR224g·33.7/24.0mm·9.7mm는 에디션·검체 조건이 다릅니다. DOR소개 남성8oz(US9)는g수가 원문에 없어 환산하지 않고 여성193g(US8)·34/24mm·10mm로 구분합니다. RR 경도41.8AC·SA힐136/전족100과 에너지 리턴67.5/74.2%는 별개 지표입니다. 공식의 장거리용도 홍보를 회복·무릎 보호나 모든 착지에 적합하다는 임상 보장으로 쓰지 않습니다. DOR의 Andrea(여성US9.5)는 길이가 맞고 앞발은 여유 있지만 중족·힐이 좁게 고정된다고 느꼈습니다. Matt(남성US10)은 처음 낮고 테이퍼진 앞쪽과 힐패딩 때문에 발이 앞으로 밀리며 카운터 압박을 느꼈습니다. 두 사람 모두 힐 전환이 투박하다고 평가했지만 개인 조건을 모든 러너의 페이스·거리 제한으로 바꾸지 않습니다. 한국 와이드 SKU·정확한 문자 폭코드는 미확인입니다. RR 내부 최광폭93.0mm·엄지71.6mm·높이25.9mm를 외부 바닥 폭·개인 핏과 혼용하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '데일리 트레이너',
+    '경량',
+    '가성비',
+  ],
   specs: {
     weight: 224,
     cushioning: 8,
     responsiveness: 9,
     stability: 7,
-    drop: 10,
-    durability: 500,
+    drop: 9.7,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 34,
+      heel: 33.7,
       forefoot: 24,
     },
-    drop: 10,
+    drop: 9.7,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Nitro Foam',
-    optimalPace: '4:30-6:30 min/km',
+    midsoleType: '전장 단일 NITROFOAM · PUMAGRIP',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['데일리 트레이닝', '템포 러닝', '가성비 중시', '경량화 선호', '중급 러너'],
-    notRecommended: ['넓은 발볼', '맥시멀 쿠셔닝 필요', '안정화 필요'],
+    recommended: [
+      '단일 NITROFOAM과 유연한 앞쪽 전환을 비교하려는 러너',
+      '현재 AP SKU의 실제 앞쪽·힐 고정을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 앞코 압박·카운터 자극이 생기는 경우',
+      '힐 전환과 중족부 고정이 맞지 않는 경우',
+    ],
   },
-
-  features: ['풀 Nitro Foam', 'PumaGrip 아웃솔', '경량 224g', '67.5% 에너지 리턴', '충격흡수 힐 136 SA (RunRepeat 실측)', '에너지 리턴 전족부 74.2% (RunRepeat 실측)'],
-
+  features: [
+    '전장 단일 NITROFOAM · PUMAGRIP',
+    '224g · 힐/전족부 33.7/24mm (RunRepeat)',
+    '힐/전족부 SA 136/100 · 에너지 리턴 67.5/74.2% (RunRepeat). RR 경도41.8AC·SA힐136/전족100과 에너지 리턴67.5/74.2%는 별개 지표입니다. 공식의 장거리용도 홍보를 회복·무릎 보호나 모든 착지에 적합하다는 임상 보장으로 쓰지 않습니다.',
+    '한국 와이드 SKU·정확한 문자 폭코드는 미확인입니다. RR 내부 최광폭93.0mm·엄지71.6mm·높이25.9mm를 외부 바닥 폭·개인 핏과 혼용하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 179000,
-    streetPrice: 140000,
-    costPerKm: 358,
     valueRating: 10,
     priceTier: 'mid',
-    alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-rebel-v5'],
+    alternatives: [
+      'nike-pegasus-41',
+      'asics-novablast-5',
+      'new-balance-rebel-v5',
+    ],
   },
-
   reviews: [
     {
-        userType: '모델 선택 — 페가수스 대비 60g 가벼운 데일리',
-        text: '같은 가격대 데일리 중 무게 차이가 뚜렷한 선택지입니다. 224g으로 페가수스 계열(280g대)보다 약 60g 가벼워, 5분/km 안팎의 페이스에서 발 회전이 확연히 달라집니다. 전작의 듀얼 폼에서 풀 Nitro Foam으로 바뀌며 반응이 더 직접적으로 전달되는 것이 세대 차이입니다. 힐 34mm 스택에 에너지 리턴 67.5%로 쿠션과 반발의 균형을 잡았고, 아웃솔 마모는 RunRepeat 측정 1.1mm로 평균 수준입니다. 세일가 14만원대면 페가수스(159,000원)보다 낮습니다. 다만 기본 토박스가 좁으므로 발볼이 넓다면 처음부터 와이드를 선택해야 합니다.',
-      },
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/puma-velocity-nitro-4',
+      text: '224g과 SA 136/100·에너지 리턴 67.5/74.2%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 경도41.8AC·SA힐136/전족100과 에너지 리턴67.5/74.2%는 별개 지표입니다. 공식의 장거리용도 홍보를 회복·무릎 보호나 모든 착지에 적합하다는 임상 보장으로 쓰지 않습니다. 한국 와이드 SKU·정확한 문자 폭코드는 미확인입니다. RR 내부 최광폭93.0mm·엄지71.6mm·높이25.9mm를 외부 바닥 폭·개인 핏과 혼용하지 않습니다.',
+    },
     {
-        userType: '예상 적합 — 장마·야간 러닝의 접지와 통기성',
-        text: '젖은 노면과 고습 환경에서 강점이 뚜렷한 데일리입니다. PumaGrip 아웃솔이라 비 온 뒤 보도블록에서도 접지가 안정적이고, 어퍼 통기성은 RunRepeat 3/5로 보통 수준입니다. 장마와 열대야가 반복되는 국내 여름 조건에 맞는 조합입니다. 224g에 10mm 드롭이라 힐부터 미드풋까지 착지 성향을 가리지 않고, 10km 템포런까지 커버합니다. 토박스가 좁아 발볼이 넓다면 와이드가 필요하고, 179,000원 정가 기준에서도 운용 비용이 낮습니다.',
-      },
-    {
-      userType: '에디터 분석',
-      rating: 90,
-      text: 'RunRepeat 랩 종합 93점(Superb)을 받은 가성비 데일리 트레이너입니다. "15만원대 가볍고 반응 좋은 신발 없나요?" 질문에 정답입니다. 224g으로 페가수스(281g)보다 57g 가볍고, 67.5%의 뛰어난 에너지 리턴을 제공합니다. 발볼이 좁은 편이라 한국인 발에는 와이드 모델 권장합니다. 토박스 폭이 좁아 한국 러너 평균 발볼에 맞지 않을 수 있으니 매장 착화 필수입니다. 140,000원대(세일가)로 페가수스(159,000원), 노바블라스트(169,000원)보다 저렴하면서 성능은 동급이상. 500km 내구성으로 km당 약 358원의 가성비는 입문화~중급 카테고리 최상위입니다. 평발 러너에게도 무난하고, 무릎 부담이 적은 34mm 힐 스택이 장거리 훈련까지 소화합니다. 템포 러닝까지 커버하는 만능 트레이너로, 가성비 중시 중급 러너에게 최적입니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/puma-velocity-nitro-4-review-2025/',
+      text: 'DOR의 Andrea(여성US9.5)는 길이가 맞고 앞발은 여유 있지만 중족·힐이 좁게 고정된다고 느꼈습니다. Matt(남성US10)은 처음 낮고 테이퍼진 앞쪽과 힐패딩 때문에 발이 앞으로 밀리며 카운터 압박을 느꼈습니다. 두 사람 모두 힐 전환이 투박하다고 평가했지만 개인 조건을 모든 러너의 페이스·거리 제한으로 바꾸지 않습니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '224g (남성 US 9 기준)',
-    stackHeight: '힐 34mm / 포어풋 24mm',
-    drop: '10mm (Lab 측정치)',
-    midsole: 'Nitro Foam (풀 렝스, Supercritical 폼)',
-    plate: '없음',
-    outsole: 'PumaGrip 러버',
-    upper: '엔지니어드 메쉬',
-    width: '좁은 편 (와이드 옵션 있음) — RunRepeat 랩 토박스 71.6mm(평균 73.2mm)로 수치 차이는 1.6mm이나, 랩 본문이 "Velocity Nitro series has never been about a roomy fit, and version 4 keeps that same tight feel"이라고 평가',
-    durability: '500km',
-    price: '₩179,000 (MSRP) / 세일 시 ₩140,000~',
-    costPerKm: '약 ₩358/km (500km 기준)',
-    footType: '발볼 좁은 러너 / 와이드 옵션 있음',
-    landingPattern: '힐스트라이크~미드풋',
+    weight: '224g (RunRepeat 공시 검체 정책:남성US9). 한국 AP공시250g(UK8)·36/26mm·10mm와 RR224g·33.7/24.0mm·9.7mm는 에디션·검체 조건이 다릅니다. DOR소개 남성8oz(US9)는g수가 원문에 없어 환산하지 않고 여성193g(US8)·34/24mm·10mm로 구분합니다.',
+    stackHeight: '33.7/24mm (RunRepeat 힐/전족부 실측)',
+    drop: '9.7mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: '전장 단일 NITROFOAM · PUMAGRIP · 41.8 AC(Asker C) · 힐/전족부 SA 136/100 · 에너지 리턴 67.5/74.2%. RR 경도41.8AC·SA힐136/전족100과 에너지 리턴67.5/74.2%는 별개 지표입니다. 공식의 장거리용도 홍보를 회복·무릎 보호나 모든 착지에 적합하다는 임상 보장으로 쓰지 않습니다.',
+    plate: '공식·전문가 원문은 폼 구조를 설명하며 별도 플레이트의 근거는 확보하지 못했습니다. 미기재를 절개상 부재 확정으로 바꾸지 않습니다.',
+    width: 'RunRepeat 내부 최광폭 93mm / 엄지 부위 71.6mm / 엄지 높이 25.9mm. 한국 와이드 SKU·정확한 문자 폭코드는 미확인입니다. RR 내부 최광폭93.0mm·엄지71.6mm·높이25.9mm를 외부 바닥 폭·개인 핏과 혼용하지 않습니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식에서 확인한 남성카테고리 AP312635_12 정가179,000원·확인 시 판매가85,920원,260~290mm 선택 가능이었습니다. 대표 가격은 확인한 AP SKU 기준입니다. AP를 와이드나 특정 한국 발형으로 번역하지 않으며 한국 폭코드·여성 HYROX현재 가격·재고는 미확인입니다.',
   },
-
-  similarShoes: ['nike-pegasus-41', 'asics-novablast-5', 'hoka-mach-6', 'saucony-ride-18'],
-  relatedPosts: [
-    { slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026', title: '벨로시티 4 vs 페가수스 프리미엄 — 10만원 비싼데 84g 무겁다' },
-    { slug: 'puma-deviate-nitro-3-vs-4-comparison', title: '디비에이트 나이트로 3 vs 4' },
-    { slug: 'puma-running-shoes-lineup-tier-guide-2026', title: '푸마 러닝화 계급도' },
+  similarShoes: [
+    'nike-pegasus-41',
+    'asics-novablast-5',
+    'hoka-mach-6',
+    'saucony-ride-18',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/G6R1Anvw' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZcvtSdhs' }],
+  relatedPosts: [
+    {
+      slug: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',
+      title: '벨로시티 4 vs 페가수스 프리미엄',
+    },
+    {
+      slug: 'puma-deviate-nitro-3-vs-4-comparison',
+      title: '디비에이트 나이트로 3 vs 4',
+    },
+    {
+      slug: 'puma-running-shoes-lineup-tier-guide-2026',
+      title: '푸마 러닝화 계급도',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/G6R1Anvw',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZcvtSdhs',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men category · null · 312635_12',
+        url: 'https://kr.puma.com/kr/ko/pd/벨로시티-나이트로-4-ap-%3Cbr%3Evelocity-nitro-4-ap/312635.html?dwvar_312635_color=12',
+        note: '한국 공식에서 확인한 남성카테고리 AP312635_12 정가179,000원·확인 시 판매가85,920원,260~290mm 선택 가능이었습니다. 대표 가격은 확인한 AP SKU 기준입니다. AP를 와이드나 특정 한국 발형으로 번역하지 않으며 한국 폭코드·여성 HYROX현재 가격·재고는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 women · null · 311912_01',
+        url: 'https://kr.puma.com/kr/ko/pd/벨로시티-나이트로-4-하이록스-우먼스-%3Cbr%3Evelocity-nitro-4-hyrox-wns/311912.html?dwvar_311912_color=01&dwvar_311912_size=0160',
+        note: '한국 공식에서 확인한 남성카테고리 AP312635_12 정가179,000원·확인 시 판매가85,920원,260~290mm 선택 가능이었습니다. 대표 가격은 확인한 AP SKU 기준입니다. AP를 와이드나 특정 한국 발형으로 번역하지 않으며 한국 폭코드·여성 HYROX현재 가격·재고는 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 벨로시티 나이트로 4',
+        url: 'https://runrepeat.com/puma-velocity-nitro-4',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 224g · 33.7/24mm · 드롭9.7mm. SA 136/100 · ER 67.5/74.2%. RR 경도41.8AC·SA힐136/전족100과 에너지 리턴67.5/74.2%는 별개 지표입니다. 공식의 장거리용도 홍보를 회복·무릎 보호나 모든 착지에 적합하다는 임상 보장으로 쓰지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/puma-velocity-nitro-4-review-2025/',
+        note: '한국 AP공시250g(UK8)·36/26mm·10mm와 RR224g·33.7/24.0mm·9.7mm는 에디션·검체 조건이 다릅니다. DOR소개 남성8oz(US9)는g수가 원문에 없어 환산하지 않고 여성193g(US8)·34/24mm·10mm로 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };
