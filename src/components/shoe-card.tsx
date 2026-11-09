@@ -45,18 +45,6 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
   const recommendTags = useMemo(() => {
     const tags: { text: string; type: 'positive' | 'warning' }[] = [];
 
-    // 평발 적합성
-    if (shoe.koreanFootFit?.flatFootCompatibility === 'excellent' ||
-        shoe.koreanFootFit?.flatFootCompatibility === 'good') {
-      tags.push({ text: '평발OK', type: 'positive' });
-    }
-
-    // 무릎 보호
-    if (shoe.injuryPrevention?.kneeIssues === 'excellent' ||
-        shoe.injuryPrevention?.kneeIssues === 'good') {
-      tags.push({ text: '무릎보호', type: 'positive' });
-    }
-
     // 발볼 넓음
     if (shoe.koreanFootFit?.toBoxWidth === 'wide') {
       tags.push({ text: '발볼넓음', type: 'positive' });
@@ -73,7 +61,7 @@ export const ShoeCard = memo(function ShoeCard({ shoe, index = 0, onTagClick }: 
     }
 
     return tags.slice(0, 2); // 최대 2개
-  }, [shoe.koreanFootFit, shoe.injuryPrevention, shoe.beginnerFriendly]);
+  }, [shoe.koreanFootFit, shoe.beginnerFriendly]);
 
   const statChips = useMemo(() => {
     const chips: string[] = [];

@@ -62,7 +62,7 @@ describe("Son Kee Chung source data and playback", () => {
     expect(course.verticalScale).toBe(1);
     expect(course.terrain.size).toBe(513);
     const texture = readFileSync(path.resolve("public", course.imagery!.url.slice(1)));
-    expect([...texture.subarray(0, 2)]).toEqual([0xff, 0xd8]);
+    expect(Array.from(texture.subarray(0, 2))).toEqual([0xff, 0xd8]);
     const [lon, lat] = course.origin;
     const west = (course.bbox[0] - lon) * 111195 * Math.cos(lat * Math.PI / 180) / 100;
     const north = (lat - course.bbox[3]) * 111195 / 100;

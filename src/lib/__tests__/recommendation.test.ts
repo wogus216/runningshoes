@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { recommendShoes, getTopShoesForInjury, isUserProfile, type UserProfile } from "@/lib/recommendation";
+import { recommendShoes, isUserProfile, type UserProfile } from "@/lib/recommendation";
 import { shoes } from "@/lib/data/shoes";
 
 const baseProfile: UserProfile = {
@@ -89,26 +89,16 @@ describe("추천 결함 회귀 방지", () => {
     expect(low.filter((id) => !medium.includes(id)).length).toBeGreaterThan(0);
   });
 
-  // ②-b 안정화 18종이 목적·거리·경험 맵 어디에도 없어 평발 러너에게도 밀리던 문제.
-  //      트레일과 같은 뿌리다 — 카테고리가 맵에 없으면 다른 카테고리에 22점을 지고 시작한다
-  it("평발이면 안정화가 후보에 오른다", () => {
-    const result = recommendShoes(shoes, {
-      ...baseProfile,
-      footArch: "flat",
-      purpose: "all",
-      budget: "mid",
-    });
-    expect(result.filter((s) => s.category === "안정화").length).toBeGreaterThan(0);
-  });
-
-  it("정상 아치에는 안정화가 밀려 올라오지 않는다", () => {
-    const result = recommendShoes(shoes, {
-      ...baseProfile,
-      footArch: "normal",
-      purpose: "all",
-      budget: "mid",
-    });
-    expect(result.filter((s) => s.category === "안정화")).toHaveLength(0);
+  it("기존 세션의 아치·부상 선택이 추천 순위를 바꾸지 않는다", () => {
+    const snapshot = (profile: UserProfile) => recommendShoes(shoes, profile).map(s => ({ slug: s.slug, score: s.rawScore, reasons: s.matchReasons }));
+    for (const purpose of ['all', 'training', 'trail', 'recovery', 'racing'] as const) {
+      const profile = { ...baseProfile, purpose, budget: 'high' as const };
+      const expected = snapshot(profile);
+      expect(expected.length).toBeGreaterThan(0);
+      for (const footArch of ['flat', 'high'] as const) {
+        expect(snapshot({ ...profile, footArch, injuries: ['kneeIssues', 'plantarFasciitis', 'achillesTendinopathy', 'shinSplints'] })).toEqual(expected);
+      }
+    }
   });
 
   // ③ 예산 구간이 서로 겹치고 하한 때문에 값싼 좋은 신발이 빠지던 문제.
@@ -175,13 +165,19 @@ describe("추천 조건과 결과의 일관성", () => {
     expect(recommendShoes([shoe], baseProfile)).toHaveLength(0);
   });
 
-  it("선택한 부상 중 warning인 신발은 제외하고 caution은 결과에 표시한다", () => {
+  it("미검증 부상 등급을 바꾸거나 삭제해도 가감점·제외가 일어나지 않는다", () => {
     const source = shoes.find(s => s.specs && s.price && s.injuryPrevention)!;
-    const caution = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: "caution" as const } };
-    const warning = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: "warning" as const } };
-    const profile: UserProfile = { ...baseProfile, injuries: ["kneeIssues"], budget: "high" };
-    expect(recommendShoes([warning], profile)).toHaveLength(0);
-    expect(recommendShoes([caution], profile)[0]?.matchWarnings).toContain("무릎 관련 평가: 주의 필요");
+    const profile: UserProfile = { ...baseProfile, injuries: ['kneeIssues'], budget: 'high' };
+    const withoutGrade = { ...source, injuryPrevention: undefined };
+    const expected = recommendShoes([withoutGrade], profile)[0];
+    expect(expected).toBeDefined();
+    for (const level of ['excellent', 'good', 'caution', 'warning'] as const) {
+      const withGrade = { ...source, injuryPrevention: { ...source.injuryPrevention!, kneeIssues: level } };
+      const result = recommendShoes([withGrade], profile)[0];
+      expect(result.rawScore).toBe(expected.rawScore);
+      expect(result.matchWarnings).toEqual([]);
+      expect(result.detailedReason).not.toMatch(/무릎.*평가|보호|치료/);
+    }
   });
 
   it("한 후보이거나 동점인 후보도 상대 점수와 표시 범위를 지킨다", () => {
@@ -202,18 +198,6 @@ describe("추천 조건과 결과의 일관성", () => {
 
 
 describe("추천 결과의 부상 후보와 세션 복원", () => {
-  it("부상별 후보는 본 추천의 예산·용도·복수 부상 조건을 유지한다", () => {
-    const profile: UserProfile = { ...baseProfile, purpose: "trail", injuries: ["kneeIssues", "achillesTendinopathy"] };
-    const results = recommendShoes(shoes, profile);
-    const top = getTopShoesForInjury(results, "kneeIssues");
-    for (const shoe of top) {
-      expect(results.some(s => s.id === shoe.id)).toBe(true);
-      expect(shoe.category).toBe("트레일");
-      expect(shoe.price ?? shoe.priceAnalysis?.msrp ?? Infinity).toBeLessThanOrEqual(200000);
-      expect(shoe.injuryPrevention?.achillesTendinopathy).not.toBe("warning");
-    }
-  });
-
   it("유효한 기존 설문은 복원하고 손상된 선택지는 거절한다", () => {
     expect(isUserProfile(baseProfile)).toBe(true);
     expect(isUserProfile({ ...baseProfile, targetPace: "fast", season: "winter" })).toBe(true);
@@ -240,7 +224,7 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
 
   it("쿠션 10 신발에 '느린 회복 러닝 비추천'이 적히면 48점 차이가 난다(가점 28: 규칙 22·25의 +8, +10, 규칙 9의 +10 + 감점 20: 규칙 14-1)", () => {
     const base = shoes.find(
-      (s) => s.specs.cushioning === 10 && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
+      (s) => s.specs?.cushioning === 10 && s.category === "쿠션화" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
     );
     expect(base).toBeDefined();
     const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };
@@ -252,7 +236,7 @@ describe("쿠션 가점은 느린·회복 용도에 비추천인 신발에 주�
   });
 
   it("레이싱 카테고리 신발은 느린 페이스여도 쿠션 가점을 받지 않는다", () => {
-    const racer = shoes.find((s) => s.category === "레이싱" && s.specs.cushioning >= 9);
+    const racer = shoes.find((s) => s.category === "레이싱" && (s.specs?.cushioning ?? 0) >= 9);
     expect(racer).toBeDefined();
     const profile: UserProfile = { ...recoverySlow, purpose: "racing" };
     const slow = recommendShoes([racer!], profile)[0];
@@ -269,7 +253,7 @@ describe("회복 쿠션 가점은 느린·회복 용도에 비추천인 신발�
   it("회복 목적: 쿠션 8↑ 신발에 '느린 회복 러닝 비추천'이 적히면 30점 차이가 난다(규칙 9 가점 10 + 규칙 14-1 감점 20)", () => {
     const profile: UserProfile = { ...baseProfile, experience: "intermediate", weeklyDistance: "medium", purpose: "recovery", budget: "high", targetPace: "medium" };
     const base = shoes.find(
-      (s) => s.specs.cushioning === 8 && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
+      (s) => s.specs?.cushioning === 8 && s.category !== "레이싱" && !s.targetUsers?.notRecommended.some((t) => UNSUITED.test(t)),
     );
     expect(base).toBeDefined();
     const flagged = { ...base!, targetUsers: { ...base!.targetUsers!, notRecommended: ["느린 회복 러닝"] } };

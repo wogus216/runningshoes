@@ -151,7 +151,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 나한테 맞는 러닝화만 남기기.
               </h1>
               <p className="max-w-2xl break-keep text-sm leading-7 text-slate-600 md:text-base">
-                경험, 주간 거리, 발형, 부상 이력, 예산까지 묻고 결과를 바로 조합합니다. 검색보다 빠르게 시작점을 찾는 용도에 맞게 정리했습니다.
+                경험, 주간 거리, 용도, 발볼과 예산을 묻고 결과를 바로 조합합니다. 검색보다 빠르게 시작점을 찾는 용도에 맞게 정리했습니다.
               </p>
             </div>
 
@@ -176,7 +176,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Sparkles className="h-5 w-5 text-sky-700" />
               <p className="mt-4 text-sm font-semibold text-slate-950">발형 반영</p>
-              <p className="mt-1 text-xs leading-6 text-slate-600">발볼, 평발, 계절감, 부상 이력까지 함께 반영합니다.</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">러닝 용도, 발볼, 계절과 예산을 함께 비교합니다.</p>
             </div>
             <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowUpRight className="h-5 w-5 text-white" />
@@ -214,7 +214,6 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 {profile.season && (
                   <ProfileBadge label="계절" value={profileLabels.season[profile.season]} />
                 )}
-                <ProfileBadge label="발 아치" value={profileLabels.footArch[profile.footArch]} />
                 <ProfileBadge label="발볼" value={profileLabels.footWidth[profile.footWidth]} />
                 <ProfileBadge label="예산" value={profileLabels.budget[profile.budget]} />
                 {profile.injuries.length > 0 && (
@@ -225,7 +224,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
 
             {/* 부상별 분석 */}
             {profile.injuries.length > 0 && (
-              <InjuryAnalysis injuries={profile.injuries} allShoes={recommendations} />
+              <InjuryAnalysis injuries={profile.injuries} />
             )}
 
 
@@ -235,7 +234,7 @@ export function RecommendContent({ totalCount }: RecommendContentProps) {
                 <div>
                   <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-sky-700">Recommendation Board</p>
                   <h2 className="mt-2 text-2xl font-black tracking-tight text-slate-950">추천 신발</h2>
-                  <p className="mt-2 text-sm text-secondary">매칭 점수는 선택 조건 안의 후보를 비교한 상대 점수예요. 예산 내 후보가 적으면 가능한 신발만 보여드려요.</p>
+                  <p className="mt-2 text-sm text-secondary">매칭 점수는 선택 조건 안의 후보를 비교한 상대 점수예요. 부상·아치별 치료나 예방 효과는 점수에 반영하지 않아요. 예산 내 후보가 적으면 가능한 신발만 보여드려요.</p>
                 </div>
                 <div className="grid gap-4 md:grid-cols-2">
                   {recommendations.map((shoe, idx) => (

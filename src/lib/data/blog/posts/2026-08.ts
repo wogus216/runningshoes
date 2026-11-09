@@ -4393,154 +4393,62 @@ export const posts_2026_08: BlogPost[] = [
   {
     id: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
     slug: 'adidas-adizero-evo-sl-vs-boston-13-daily-2026',
-    title: '아디제로 Evo SL vs 보스턴 13 차이 — 2만원 더 주고 31g을 산다 | 비싼 쪽이 플레이트가 없다',
-    description:
-      '같은 아디다스 데일리인데 구도가 뒤집혀 있습니다. 비싼 에보 SL(209,000원)이 31g 더 가볍고 플레이트가 없으며, 싼 보스턴 13(189,000원)이 유리섬유 Energy Rods 2.0을 달고 안정성 8/10에 km당 343원으로 더 경제적입니다. 무게 223g 대 254g, 드롭 8mm 대 6mm, 전족 스택 28mm 대 30mm. 와이드는 2026년 10월 한국 공식몰 기준 두 켤레 모두 없고 토박스 실측도 1mm 차이라, 발볼로는 갈리지 않습니다. 두 켤레의 실측을 한국 러너 기준으로 나란히 놓고 정리했습니다.',
+    title: '아디제로 Evo SL vs 보스턴13 — 2만원·31g 차이와 폼·로드 구조',
+    description: '한국 공식SKU 정가와 RunRepeat 실측을2026-11-09 다시 대조했습니다. Evo SL 기본형과 우븐을 구분하고, 보스턴13 이중폼·유리섬유 로드, 미확인 수명·최적 페이스의 한계를 정리합니다.',
     thumbnail: '/images/blog/adidas-adizero-evo-sl-vs-boston-13-daily-2026.webp',
     author: '산초 에디터',
+    updatedAt: '2026-11-09',
     publishedAt: '2026-08-10',
     category: 'review' as const,
-    readingTime: 9,
+    readingTime: 8,
     tags: ['아디제로 Evo SL', '에보슬', '보스턴 13', '아디다스 보스턴13', '아디다스 러닝화', '데일리 러닝화', 'Lightstrike Pro', 'Energy Rods', '러닝화 비교', '템포 트레이너'],
     faqs: [
-      {
-        question: '에보 SL과 보스턴 13, 무게 차이가 얼마나 나나요?',
-        answer:
-          '에보 SL 223g, 보스턴 13 254g으로 31g 차이입니다(둘 다 US 9 기준). 31g은 한 켤레에 62g이라 체감이 되는 폭이고, 특히 페이스를 올리는 구간에서 드러납니다. 다만 보스턴 13이 무거운 이유가 유리섬유 Energy Rods 2.0 플레이트라, 무게를 손해 보고 굴림과 안정성을 얻는 교환입니다.',
-      },
-      {
-        question: '왜 더 비싼 에보 SL에 플레이트가 없나요?',
-        answer:
-          '두 신발이 노리는 지점이 다르기 때문입니다. 에보 SL은 미드솔 전체를 Lightstrike Pro(아디다스 최상위 폼)로 채워 폼만으로 반발을 내는 설계이고, 보스턴 13은 Lightstrike Pro에 유리섬유 로드를 넣어 굴림을 만듭니다. 플레이트 유무가 가격을 결정하지 않습니다 — 미드솔 전체를 슈퍼폼으로 채우는 쪽이 더 비쌉니다.',
-      },
-      {
-        question: '발볼이 넓은데 어느 쪽인가요?',
-        answer:
-          '둘 중에선 차이가 크지 않습니다. 2026년 10월 아디다스 한국 공식몰 기준 두 켤레 모두 와이드 버전이 없고, RunRepeat 실측 엄지 위치 토박스도 에보 SL 71.6mm·보스턴 13 70.6mm로 둘 다 평균(73.2mm)보다 조금 좁습니다. 발볼이 넓다면 두 켤레 모두 매장에서 먼저 신어 보고, 와이드가 꼭 필요하면 아디다스에서는 한국 공식몰에 와이드 버전이 있는 슈퍼노바 라이즈 3·아디제로 SL2를 보세요.',
-      },
-      {
-        question: '평발이거나 발이 안쪽으로 무너지는 편이면요?',
-        answer:
-          '보스턴 13입니다. 안정성 점수가 8/10 대 6/10이고 평발 적합성도 good 대 fair로 갈립니다. 에보 SL은 안정 장치가 거의 없는 중립화라 과내전이 있는 러너에게는 권하지 않습니다. 다만 둘 다 안정화가 아니므로, 통증이 있다면 안정화 카테고리에서 고르는 편이 맞습니다.',
-      },
-      {
-        question: '오래 신는 쪽은 어디인가요?',
-        answer:
-          '보스턴 13이 550km, 에보 SL이 500km 기준입니다. 정가로 나누면 km당 343원 대 418원으로 보스턴 13이 약 18% 경제적입니다. 다만 이 수치는 아웃솔 마모 기준 추정이며 체중·노면·주법에 따라 크게 달라집니다 — 단일 숫자로 교체 시점을 정하지 마세요.',
-      },
+      { question: '에보 SL은 플레이트가 아예 없나요?', answer: '전장 카본 플레이트는 없지만 중족부 플라스틱 생크가 있습니다. 카본 플레이트 없음과 아무 지지 부품도 없음은 다릅니다.' },
+      { question: '에보 SL 가격은209,000원인가요,219,000원인가요?', answer: '이 비교의 기본 메쉬 JP7149 한국 정가는209,000원입니다.219,000원으로 노출되는 KJ0774는 SFTM 우븐 어퍼 등 상세가 달라 기본형과 섞지 않았습니다.' },
+      { question: '보스턴13이 더 오래 가고 무릎에도 좋은가요?', answer: '확인한 원문으로500/550km 수명이나 모델별 무릎 예방 효과를 확정할 수 없습니다. 마모 시험값이나 로드 재질로 임상 효과와 교체거리를 계산하지 않습니다.' },
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>구도가 뒤집혀 있습니다</strong> — 비싼 <a href="/shoes/adidas-adizero-evo-sl">에보 SL</a>(209,000원)이 <strong>31g 더 가볍고 플레이트가 없고</strong>, 싼 <a href="/shoes/adidas-boston-13">보스턴 13</a>(189,000원)이 <strong>유리섬유 플레이트를 달고 더 안정적</strong>입니다</li>
-    <li><strong>가벼움과 자유로운 발놀림이면 에보 SL</strong>(223g·드롭 8mm·안정성 6), <strong>굴려주는 힘과 안정성이면 보스턴 13</strong>(254g·드롭 6mm·안정성 8). km당 비용은 보스턴 13이 343원 대 418원으로 18% 유리합니다</li>
-    <li><strong>발볼로는 갈리지 않습니다</strong> — 2026년 10월 한국 공식몰 기준 <strong>두 켤레 모두 와이드가 없고</strong>, 엄지 위치 토박스 실측도 에보 SL 71.6mm·보스턴 13 70.6mm로 1mm 차이입니다(RunRepeat, 평균 73.2mm)</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>데일리부터 템포까지 한 켤레로 가볍게 굴리고 싶다면 에보 SL</strong>, <strong>훈련 강도가 높고 하프 레이스까지 겸할 생각이면 보스턴 13</strong>입니다. 발이 안쪽으로 무너지는 편이면 보스턴 13 쪽이고, 발볼은 둘 다 한국 공식몰 와이드가 없어 갈림길이 되지 않습니다. 각각을 다른 상대와 붙인 글도 있습니다 — <a href="/blog/superblast-3-vs-evo-sl-vs-mach-6-super-trainer-2026">에보 SL이 낀 슈퍼트레이너 3파전</a>, <a href="/blog/boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026">보스턴 13이 낀 템포 트레이너 3파전</a>.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>아디제로 Evo SL</th><th>보스턴 13</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>209,000원</td><td><strong>189,000원</strong></td></tr>
-    <tr><td>무게</td><td><strong>223g</strong></td><td>254g</td></tr>
-    <tr><td>스택 (힐/전족)</td><td>36 / 28mm</td><td>36 / <strong>30mm</strong></td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>6mm</strong></td></tr>
-    <tr><td>미드솔</td><td><strong>100% Lightstrike Pro</strong></td><td>Lightstrike Pro + Energy Rods 2.0</td></tr>
-    <tr><td>플레이트</td><td><strong>없음</strong></td><td><strong>유리섬유 Energy Rods 2.0</strong></td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 9</td><td>7 / 9</td></tr>
-    <tr><td>안정성</td><td>6/10</td><td><strong>8/10</strong></td></tr>
-    <tr><td>아웃솔</td><td>컨티넨탈 러버</td><td>컨티넨탈 러버</td></tr>
-    <tr><td>토박스 / 와이드</td><td>좁은 편(71.6mm) / 없음</td><td>좁은 편(70.6mm) / 없음 <em>(둘 다 한국 공식몰 기준, 2026-10)</em></td></tr>
-    <tr><td>평발 적합성</td><td>fair</td><td><strong>good</strong></td></tr>
-    <tr><td>내구 · km당</td><td>500km · 418원</td><td><strong>550km · 343원</strong></td></tr>
-    <tr><td>적정 페이스</td><td>4:00–6:00 /km</td><td>4:00–5:30 /km</td></tr>
-  </tbody>
-</table>
-
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치로, 체중·노면·주법에 따라 크게 달라집니다.</small></p>
-
-<h2>먼저 짚을 것 — 값과 성능이 비례하지 않습니다</h2>
-
-<p>보통 같은 브랜드 라인에서 2만원이 비싸면 "상위 모델"을 기대합니다. 그런데 이 둘은 그렇게 줄 세워지지 않습니다.</p>
-
-<p><strong>에보 SL이 비싼 이유는 미드솔 전체를 Lightstrike Pro로 채웠기 때문</strong>입니다. 아디다스가 레이싱화에 쓰는 최상위 폼을 부분이 아니라 100% 사용했고, 그러면서 223g을 만들었습니다. 대신 플레이트를 넣지 않았습니다.</p>
-
-<p><strong>보스턴 13은 같은 Lightstrike Pro를 쓰되 유리섬유 Energy Rods 2.0을 얹었습니다.</strong> 로드가 발을 앞으로 넘겨주는 굴림을 만들고 비틀림을 잡아주지만, 그만큼 무거워집니다. 31g 차이의 상당 부분이 여기서 옵니다.</p>
-
-<p>즉 <strong>2만원을 더 내면 31g이 가벼워지고 플레이트가 사라집니다.</strong> 이게 이 비교의 핵심이고, 어느 쪽이 우월한 게 아니라 취향과 용도의 문제입니다. 플레이트가 무엇을 하는지 더 알고 싶다면 <a href="/blog/running-shoe-plate-guide-2026">러닝화 플레이트 해설</a>을 보세요.</p>
-
-<h2>아디제로 Evo SL — 가벼움으로 미는 쪽</h2>
-
-<p>223g은 데일리화 기준으로 확실히 가벼운 축입니다. 여기에 힐 36mm 스택이 붙어 있어서, 가벼운데 쿠션이 얇지 않습니다. 쿠션 점수가 9/10으로 보스턴 13(8)보다 오히려 높습니다.</p>
-
-<p>플레이트가 없다는 건 <strong>발이 자기 리듬대로 구를 수 있다</strong>는 뜻이기도 합니다. 로드가 밀어주는 감각이 부담스러운 러너, 조깅부터 템포까지 페이스 폭을 넓게 쓰는 러너에게 맞습니다. 적정 페이스가 4:00–6:00으로 보스턴 13보다 느린 쪽까지 열려 있는 것도 같은 이유입니다.</p>
-
-<p>약점은 <strong>안정성 6/10</strong>입니다. 안정 장치가 사실상 없는 중립화라, 지치면 발이 안쪽으로 무너지는 러너에게는 장거리에서 불리합니다. 내구도 500km로 보스턴 13보다 짧아 km당 418원이 됩니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 가벼운 발놀림을 우선하는 분, 조깅과 템포를 한 켤레로 해결하려는 분, 족저근막염 이력이 있는 분(예방 등급 excellent).</p>
-
-<h2>보스턴 13 — 굴려주고 잡아주는 쪽</h2>
-
-<p>254g은 요즘 기준으로 가볍진 않지만, 유리섬유 로드를 달고 이 무게면 잘 눌러 담은 편입니다. <strong>전족 스택이 30mm로 에보 SL(28mm)보다 두껍고 드롭은 6mm로 낮아</strong>, 미드풋으로 착지해 앞으로 굴리는 주법에 잘 맞습니다.</p>
-
-<p>진짜 강점은 <strong>안정성 8/10</strong>입니다. 로드가 비틀림을 잡아주기 때문에 페이스가 흔들리는 후반부에도 형태가 유지됩니다. 평발 적합성도 good으로 에보 SL(fair)보다 낫습니다. 훈련 강도가 높고 하프 레이스까지 이 신발로 갈 생각이라면 이쪽이 안전합니다.</p>
-
-<p>그리고 <strong>km당 343원</strong>입니다. 2만원 싼 데다 내구가 50km 길어, 총비용에서 18% 유리합니다.</p>
-
-<p>약점은 두 가지입니다. <strong>와이드 옵션이 없고</strong>(에보 SL도 마찬가지), 적정 페이스가 4:00–5:30으로 느린 조깅에는 무겁게 느껴질 수 있습니다. 입문 단계에서 첫 신발로 고르기엔 성격이 뚜렷한 편입니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 템포·인터벌 비중이 큰 중급 이상 러너, 하프 레이스를 같은 신발로 뛸 분, 발이 안쪽으로 무너지는 편인 분, 총비용을 중시하는 분.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>발볼이 넓어 와이드가 꼭 필요하다</strong> → 둘 다 아닙니다. 2026년 10월 한국 공식몰 기준 두 켤레 모두 와이드가 없습니다. 아디다스에서는 와이드 버전이 있는 <a href="/shoes/adidas-supernova-rise-3">슈퍼노바 라이즈 3</a>·<a href="/shoes/adidas-adizero-sl2">아디제로 SL2</a>를 보세요</li>
-  <li><strong>평발이거나 후반에 발이 무너진다</strong> → <a href="/shoes/adidas-boston-13">보스턴 13</a>(안정성 8, 평발 good)</li>
-  <li><strong>주 3~4회 조깅 + 가끔 템포</strong> → 에보 SL. 페이스 폭이 넓습니다</li>
-  <li><strong>주 5회 이상 + 포인트 훈련이 고정</strong> → 보스턴 13. 굴림이 훈련에서 값을 합니다</li>
-  <li><strong>하프 레이스를 이 신발로</strong> → 보스턴 13</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 보스턴 13(2만원 싸고 km당 343원)</li>
-  <li><strong>무게 1g이 아깝다</strong> → 에보 SL(223g). 더 가벼운 쪽을 원하면 <a href="/shoes/new-balance-rebel-v5">레벨 v5</a>도 후보입니다</li>
-  <li><strong>플레이트 없는 고성능이 좋다</strong> → 에보 SL, 혹은 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a></li>
-  <li><strong>플레이트 굴림을 더 원한다</strong> → <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>·<a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>와도 비교해보세요</li>
-  <li><strong>보스턴 13을 다른 상대와도 재보고 싶다</strong> → 정가 1만원 차인 <a href="/blog/asics-novablast-6-vs-adidas-boston-13-daily-2026">노바블라스트 6과의 대결</a>. 무게는 5g 차인데 쿠션과 반발이 정반대입니다</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 31g 차이가 정말 체감되나요?</p>
-    <p class="faq-a">A. 한 켤레로 62g이라 조깅 페이스에서는 크지 않지만, 페이스를 올릴수록 드러납니다. 다만 무게만 보고 고르진 마세요 — 보스턴 13이 무거운 대가로 얻은 굴림과 안정성이 후반에 되돌려주는 부분이 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 초보인데 둘 중 하나를 첫 신발로 사도 되나요?</p>
-    <p class="faq-a">A. 굳이 고르면 에보 SL입니다. 적정 페이스 폭이 4:00–6:00으로 넓어 실패 확률이 낮습니다. 보스턴 13은 템포·인터벌을 전제로 설계돼 있어 첫 신발로는 성격이 뚜렷한 편입니다. 다만 둘 다 20만원 안팎이라, 입문이라면 더 무난한 가격대부터 보는 것도 방법입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 아디다스 라인에서 이 둘의 위치는 어디쯤인가요?</p>
-    <p class="faq-a">A. 둘 다 레이싱화(아디오스 프로 계열) 아래, 일반 데일리 위에 있는 구간입니다. 라인 전체의 계급을 한 번에 보고 싶다면 <a href="/blog/adidas-running-shoes-lineup-tier-guide-2026">아디다스 러닝화 계급도</a>를 참고하세요. 에보 SL 단독 분석은 <a href="/blog/adidas-adizero-evo-sl-value-supershoe-2026">여기</a>에 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 겨울에는 어느 쪽이 나은가요?</p>
-    <p class="faq-a">A. 두 켤레 모두 저온 대응은 fair 수준으로 비슷합니다. 아웃솔이 둘 다 컨티넨탈 러버라 젖은 노면 그립은 동급으로 좋은 편입니다. 겨울 성능만으로는 갈리지 않습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준(에보 SL 209,000원 · 보스턴 13 189,000원)이며 실판매가는 다를 수 있습니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치입니다 — 단일 숫자로 교체 시점을 정하지 마세요. · 작성 2026년 8월 10일.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 3가지</span><ul>
+<li><strong>기본 메쉬 Evo SL은209,000원, 보스턴13은189,000원.</strong> 확인한 한국 공식SKU끼리2만원 차이입니다.</li>
+<li><strong>Evo SL은 전장 Lightstrike Pro와 플라스틱 생크, 보스턴13은 이중폼과 유리섬유 로드.</strong> 카본 플레이트 유무만으로 설명하면 구조를 놓칩니다.</li>
+<li><strong>RunRepeat 공시 무게는223g vs254g.</strong>31g 차이는 측정값이며 개인의 기록·착화 차이를 보장하지 않습니다.</li></ul></div>
+<p><strong>원문 재확인2026-11-09.</strong> 기본 메쉬 JP7149와 보스턴13 KH9563를 대상으로 한국 공식·제조사 자료·실험실·외부 착화 리뷰를 대조했습니다. 자체 착화 후기와 외부 리뷰의 경험을 혼동하지 않도록 구분했습니다.</p>
+<h2>같은 기준끼리 비교하기</h2>
+<table><thead><tr><th>항목과 출처</th><th>Evo SL 기본 메쉬</th><th>보스턴13</th></tr></thead><tbody>
+<tr><td>한국 공식 정가·SKU</td><td>209,000원 · JP7149</td><td>189,000원 · KH9563</td></tr>
+<tr><td>RunRepeat 공시 무게 (남성US9 기준)</td><td>223g</td><td>254g</td></tr>
+<tr><td>RunRepeat 힐 / 전족부 스택</td><td>36.1 / 28.1mm</td><td>34.3 / 28.3mm</td></tr>
+<tr><td>RunRepeat 드롭</td><td>8mm</td><td>6mm</td></tr>
+<tr><td>한국 공식 스택 / 드롭</td><td>38/32mm · 6mm</td><td>36/30mm · 6mm</td></tr>
+<tr><td>미드솔 구조</td><td>전장 Lightstrike Pro · 중족부 플라스틱 생크</td><td>Lightstrike Pro + Lightstrike 2.0 · 유리섬유 ENERGYRODS 2.0</td></tr>
+<tr><td>RunRepeat 힐 / 전족부 SA</td><td>147 / 126</td><td>127 / 108</td></tr>
+<tr><td>RunRepeat 힐 / 전족부 에너지 리턴</td><td>74.3 / 73.5%</td><td>63.4 / 69.7%</td></tr>
+<tr><td>RunRepeat 내부 최광폭 / 엄지 부위</td><td>97.5 / 71.6mm</td><td>97.3 / 70.6mm</td></tr>
+<tr><td>아웃솔</td><td>전족부 Continental · 후족부 클리어 러버</td><td>Continental + LIGHTTRAXION</td></tr></tbody></table>
+<p>공식과 실측의 숫자를 섞으면 전족부 스택 차이의 해석도 달라집니다. 한국 공식 무게는 Evo SL224g(270mm), 보스턴260g(사이즈 조건 미표기)여서 이를 같은 사이즈의 비교라고 쓰지 않았습니다. 표의223/254g은 RunRepeat 공통 US9 공시 정책 기준이며, 두 리뷰의 전체 측정법 버전이 완전히 같다는 뜻은 아닙니다.</p>
+<h2>Evo SL: 기본형을 먼저 구분하세요</h2>
+<p>기본 메쉬 Evo SL은 전장 Lightstrike Pro를 사용합니다. 전장 카본 플레이트는 없지만 중족부 플라스틱 생크가 있으므로, 아무 지지 부품도 없는 신발로 표현하지 않습니다.</p>
+<p><strong>이름만 보고 가격과 스펙을 바꾸면 안 됩니다.</strong> 한국 공식 KJ0774는 같은 Evo SL 이름으로219,000원에 노출되지만 상세에는 SFTM 우븐 어퍼·236g·37/29mm·드롭8mm가 적혀 있었습니다. 이 글의JP7149와 별도 사양으로 취급했습니다.</p>
+<p>Doctors of Running과 다른 외부 리뷰는 쉬운 러닝부터 템포까지 활용한 경험을 다룹니다. 다만 혀 고정, 어퍼 고정감, 좁은 중족부에 대한 의견도 있습니다. 조깅과 템포를 겸할 후보로 신어볼 수 있지만, 특정 페이스에서 모두에게 더 빠르다는 결론은 아닙니다.</p>
+<h2>보스턴13: 이중폼과 유리섬유 로드</h2>
+<p>한국 공식 설명은 Lightstrike Pro와 Lightstrike를 결합한 미드솔, 전족부 유리섬유 로드를 명시합니다. Lightstrike2.0 명칭과 ENERGYRODS2.0은 해외 제조사·구조 리뷰로 교차 확인했습니다. 외부 리뷰 일부는 카본이라고 쓰지만 한국 공식과 아디다스 일본 보도자료의 <strong>유리섬유</strong>를 채택했습니다.</p>
+<p>외부 착화 리뷰는 탄탄한 템포·빠른 훈련 감각을 장점으로 보는 한편, 뒤꿈치 고정과 단단한 감각에 대한 호불호도 설명합니다.5분/km 이내여야 효과가 난다는 보편적 기준이나 입문자는 효과가 없다는 근거는 확인하지 못했습니다. 강도 높은 훈련용을 찾는다면 자신의 쉬운 페이스에서도 불편하지 않은지 함께 확인하세요.</p>
+<h2>발볼은1mm 차이로 결론 낼 수 없습니다</h2>
+<p>두 신발의 실험실 엄지 부위 너비는1mm 차이지만, 내부 최광폭·중족부·어퍼와 뒤꿈치 고정은 다른 문제입니다. 엄지 부위71.6/70.6mm를 맨발의 볼 너비나 한국 판매 폭의 치수로 환산할 수 없습니다.</p>
+<p>확인한 한국JP7149와KH9563는 레귤러 핏이며 별도의 폭 선택을 관찰하지 못했습니다. 이것만으로 모든 한국 색상·SKU에 와이드가 없다고 단정하지 않습니다. 넓은 폭이 필요하면 구매하려는 상품의 폭 옵션부터 확인하세요.</p>
+<h2>구매 판단에 쓸 수 있는 것과 없는 것</h2>
+<ul><li><strong>정가와 무게가 우선:</strong> 기본 Evo SL은2만원 비싸고 RunRepeat 공시 무게는31g 가볍습니다. 실제 할인가는 구매 시점에 비교하세요.</li>
+<li><strong>폼 위주의 경량 트레이너를 찾는다:</strong> Evo SL의 기본 메쉬와 어퍼 고정감을 착화로 확인하세요.</li>
+<li><strong>이중폼·로드가 있는 탄탄한 훈련화를 찾는다:</strong> 보스턴13을 후보로 보되, 쉬운 러닝에서의 느낌과 뒤꿈치 고정도 확인하세요.</li>
+<li><strong>통증 개선이나 총 운용비가 우선:</strong> 이 원문만으로 승자를 정할 수 없습니다.500/550km 수명, 정확한 km당 비용, 무릎·족저근막 예방 등급은 근거를 확인하지 못해 비교에서 제외했습니다.</li></ul>
+<p>RunRepeat 젖은 콘크리트 마찰계수는 Evo SL0.40, 보스턴0.47입니다. 두 값으로 빙판·낙엽·금속판을 포함한 겨울 노면 안전이나 모든 빗길 성능을 보장하지 않습니다. SA 역시 부상 예방률이 아닙니다.</p>
+<h2>자주 묻는 질문</h2><h3>에보 SL은 플레이트가 아예 없나요?</h3><p>전장 카본 플레이트는 없지만 중족부 플라스틱 생크가 있습니다. 카본 플레이트 없음과 아무 지지 부품도 없음은 다릅니다.</p><h3>에보 SL 가격은209,000원인가요,219,000원인가요?</h3><p>이 비교의 기본 메쉬 JP7149 한국 정가는209,000원입니다.219,000원으로 노출되는 KJ0774는 SFTM 우븐 어퍼 등 상세가 달라 기본형과 섞지 않았습니다.</p><h3>보스턴13이 더 오래 가고 무릎에도 좋은가요?</h3><p>확인한 원문으로500/550km 수명이나 모델별 무릎 예방 효과를 확정할 수 없습니다. 마모 시험값이나 로드 재질로 임상 효과와 교체거리를 계산하지 않습니다.</p>
+<h2>원문 출처와 한계</h2><ul>
+<li><a href="https://www.adidas.co.kr/아디제로-evo-sl/JP7149.html" target="_blank" rel="noopener noreferrer">아디다스 한국 Evo SL JP7149</a> · <a href="https://www.adidas.co.kr/아디제로-보스턴-13/KH9563.html" target="_blank" rel="noopener noreferrer">보스턴13 KH9563</a>: 가격·공식 구조·공식 치수.</li>
+<li><a href="https://runrepeat.com/adidas-adizero-evo-sl" target="_blank" rel="noopener noreferrer">RunRepeat Evo SL</a> · <a href="https://runrepeat.com/adidas-adizero-boston-13" target="_blank" rel="noopener noreferrer">Boston13</a> · <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법</a>: 표의 실험실 값. 보스턴 본문SA126과 결과표127이 충돌해 결과표127을 채택했습니다.</li>
+<li><a href="https://prtimes.jp/a/?c=3301&amp;f=d3301-1001-7198ff2cae6e052883550009eb3f9086.pdf&amp;r=1001" target="_blank" rel="noopener noreferrer">아디다스 일본 제조사 보도자료</a>: 유리섬유 ENERGYRODS2.0. 일본 가격·발매일은 한국 정보로 대입하지 않았습니다.</li>
+<li><a href="https://www.doctorsofrunning.com/adidas-adizero-evo-sl-review-2024/" target="_blank" rel="noopener noreferrer">Doctors of Running Evo SL</a> · <a href="https://www.doctorsofrunning.com/adidas-adizero-boston-13-quick/" target="_blank" rel="noopener noreferrer">Boston13</a>: 리뷰어의 착화 경험. 개인별 임상 결과나 수명 실험이 아닙니다.</li></ul>
+<p>상세 출처와 확인 범위: <a href="/shoes/adidas-adizero-evo-sl">Evo SL</a> · <a href="/shoes/adidas-boston-13">보스턴13</a>. 이 글의 확인은 해당 두 모델의 명시한 항목에 한정되며 사이트 전체 검증 완료를 뜻하지 않습니다.</p>
 `,
   },
   {

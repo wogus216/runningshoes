@@ -11,14 +11,8 @@ export function OnelinerSummary({ shoe }: OnelinerSummaryProps) {
     if (shoe.oneliner) {
       return shoe.oneliner;
     }
-    // 평발 + 안정화
-    if (shoe.koreanFootFit?.flatFootCompatibility === 'excellent' && shoe.category === '안정화') {
-      return `"평발인데 무겁지 않은 안정화 찾는다면 이거"`;
-    }
-    // 레이싱/카본
-    if (shoe.category === '레이싱' && shoe.biomechanics?.carbonPlate) {
-      return `"기록 단축을 원한다면 최고의 선택"`;
-    }
+    if (shoe.category === '안정화') return '지지 구조와 착화감을 함께 확인할 안정화';
+    if (shoe.category === '레이싱' && shoe.biomechanics?.carbonPlate) return '카본 플레이트를 탑재한 레이싱화';
     // 입문자용
     if (shoe.category === '입문화' || shoe.targetUsers?.recommended?.some(t => t.includes('초보'))) {
       return `"러닝 처음 시작한다면 이것부터"`;

@@ -77,7 +77,7 @@ export function FinalCTA({
             <span className={styles.frT}>맞춤 추천</span>
             <span className={styles.frA} aria-hidden="true">→</span>
             <span className={styles.frD}>
-              {questionCount}문항으로 역할이 다른 3켤레를 받습니다
+              {questionCount}문항으로 조건에 맞는 후보를 비교합니다
             </span>
           </Link>
           <a className={styles.fr} href="#shoe-index">

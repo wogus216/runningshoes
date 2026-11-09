@@ -211,7 +211,7 @@ function ComparePageContent() {
             <div className="rounded-[4px] border border-sky-100 bg-white/86 p-4">
               <Scale className="h-5 w-5 text-sky-700" />
               <p className="mt-4 text-sm font-semibold text-slate-950">빠른 판단</p>
-              <p className="mt-1 text-xs leading-6 text-slate-600">모바일에서도 핵심 스펙과 부상/핏 정보를 바로 비교합니다.</p>
+              <p className="mt-1 text-xs leading-6 text-slate-600">모바일에서도 핵심 스펙과 구조/핏 정보를 바로 비교합니다.</p>
             </div>
             <div className="rounded-[4px] border border-sky-950/20 bg-[linear-gradient(160deg,rgba(8,18,38,0.98)_0%,rgba(12,74,110,0.96)_100%)] p-4 text-white">
               <ArrowRightLeft className="h-5 w-5 text-white" />

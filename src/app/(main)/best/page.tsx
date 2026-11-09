@@ -11,7 +11,7 @@ const SHOE_COUNT = getShoes().length;
 export const metadata: Metadata = {
   title: '러닝화 베스트 가이드 — 카테고리/발특성/예산별 추천',
   description:
-    `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
+    `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
   alternates: { canonical: '/best' },
   openGraph: {
       // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: '러닝화 베스트 가이드',
     description:
-      `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
+      `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
   },
 };
 
@@ -36,7 +36,7 @@ const groupIcons: Record<string, typeof Footprints> = {
 const groupLabels: Record<string, string> = {
   category: '러닝 목적별',
   distance: '대회 거리별',
-  attribute: '발 특성 · 부상 예방',
+  attribute: '발볼 비교 · 건강 근거',
   price: '예산별',
   'brand-category': '브랜드 × 카테고리',
 };
@@ -44,7 +44,7 @@ const groupLabels: Record<string, string> = {
 const groupDescriptions: Record<string, string> = {
   category: '입문부터 레이싱까지, 목적에 맞는 러닝화를 찾으세요.',
   distance: '10K부터 풀마라톤까지, 거리에 맞는 추천.',
-  attribute: '평발, 발볼, 무릎 통증 등 본인 발 특성에 맞는 추천.',
+  attribute: '발볼 비교와 통증이 있을 때 확인할 근거 안내.',
   price: '한국 공식 사이트 정가 기준, 예산 내 가성비 TOP.',
   'brand-category': '브랜드와 카테고리를 교차해 더 세밀하게.',
 };
@@ -61,7 +61,7 @@ export default function BestHubPage() {
     '@id': `${SITE_URL}/best#collection`,
     url: `${SITE_URL}/best`,
     name: '러닝화 베스트 가이드',
-    description: `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 부상 예방, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
+    description: `${SHOE_COUNT}개 러닝화를 카테고리, 발 특성, 가격대, 브랜드별로 분석한 추천 가이드 모음.`,
     inLanguage: 'ko-KR',
     isPartOf: { '@id': `${SITE_URL}/#website` },
     mainEntity: {
@@ -97,7 +97,7 @@ export default function BestHubPage() {
           러닝화 베스트 가이드
         </h1>
         <p className="max-w-2xl text-secondary leading-relaxed">
-          RunRepeat 랩 테스트 데이터, 한국 러너 발 특성, 부상 예방 등급, 가성비를 종합한 추천 가이드입니다. 아래에서 본인 상황에 맞는 가이드를 선택하세요.
+          RunRepeat 랩 테스트 데이터, 한국 러너 발 특성, 가성비를 종합한 추천 가이드입니다. 아래에서 본인 상황에 맞는 가이드를 선택하세요.
         </p>
       </header>
 
@@ -133,7 +133,7 @@ export default function BestHubPage() {
                       </div>
                       <div className="mt-4 flex items-center justify-between">
                         <span className="text-xs font-semibold text-tertiary">
-                          {count}개 모델
+                          {m.evidenceGuide ? '근거 안내' : `${count}개 모델`}
                         </span>
                         <ArrowRight className="h-4 w-4 text-tertiary group-hover:text-accent group-hover:translate-x-0.5 transition" aria-hidden="true" />
                       </div>

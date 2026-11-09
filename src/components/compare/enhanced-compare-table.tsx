@@ -57,34 +57,6 @@ function CompareRow({ label, values, highlight = 'none', format }: CompareRowPro
   );
 }
 
-function LevelBadge({ level }: { level: string | undefined }) {
-  if (!level) return <span className="text-slate-300">-</span>;
-
-  const colors: Record<string, string> = {
-    excellent: 'bg-sky-100 text-sky-700',
-    good: 'bg-slate-100 text-slate-700',
-    fair: 'bg-amber-100 text-amber-700',
-    poor: 'bg-red-100 text-red-700',
-    caution: 'bg-amber-100 text-amber-700',
-    warning: 'bg-red-100 text-red-700',
-  };
-
-  const labels: Record<string, string> = {
-    excellent: '매우 좋음',
-    good: '좋음',
-    fair: '보통',
-    poor: '나쁨',
-    caution: '주의',
-    warning: '경고',
-  };
-
-  return (
-    <span className={cn("px-2 py-1 rounded-full text-xs font-medium", colors[level] || 'bg-slate-100')}>
-      {labels[level] || level}
-    </span>
-  );
-}
-
 // 모바일용 아코디언 카드 컴포넌트
 function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: string) => void }) {
   const [isExpanded, setIsExpanded] = useState(false);
@@ -168,7 +140,7 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">드롭</p>
-                <p className="font-semibold text-sm">{shoe.biomechanics?.drop ? `${shoe.biomechanics.drop}mm` : '-'}</p>
+                <p className="font-semibold text-sm">{shoe.biomechanics?.drop !== undefined ? `${shoe.biomechanics.drop}mm` : '-'}</p>
               </div>
               <div className="rounded-[4px] border border-sky-100 bg-white p-2 text-center">
                 <p className="text-xs text-slate-500">카본</p>
@@ -182,28 +154,6 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
           </div>
 
           <div>
-            <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">부상 예방</p>
-            <div className="grid grid-cols-2 gap-2">
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">족저근막염</span>
-                <LevelBadge level={shoe.injuryPrevention?.plantarFasciitis} />
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">아킬레스</span>
-                <LevelBadge level={shoe.injuryPrevention?.achillesTendinopathy} />
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">무릎</span>
-                <LevelBadge level={shoe.injuryPrevention?.kneeIssues} />
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">정강이</span>
-                <LevelBadge level={shoe.injuryPrevention?.shinSplints} />
-              </div>
-            </div>
-          </div>
-
-          <div>
             <p className="mb-2 text-xs font-semibold uppercase tracking-[0.22em] text-sky-700">한국인 발 적합도</p>
             <div className="grid grid-cols-2 gap-2">
               <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
@@ -211,12 +161,8 @@ function MobileCompareCard({ shoe, onRemove }: { shoe: Shoe; onRemove?: (id: str
                 <span className="text-sm font-medium">{shoe.koreanFootFit?.toBoxWidth ? widthLabels[shoe.koreanFootFit.toBoxWidth] : '-'}</span>
               </div>
               <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
-                <span className="text-xs text-slate-500">평발</span>
-                <LevelBadge level={shoe.koreanFootFit?.flatFootCompatibility} />
-              </div>
-              <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">와이드 옵션</span>
-                <span className="text-sm font-medium">{shoe.koreanFootFit?.wideOptions ? '있음' : '없음'}</span>
+                <span className="text-sm font-medium">{shoe.koreanFootFit?.wideOptions ? '있음' : '확인 필요'}</span>
               </div>
               <div className="flex items-center justify-between rounded-[4px] border border-sky-100 bg-white p-2">
                 <span className="text-xs text-slate-500">km당 비용</span>
@@ -365,7 +311,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
             />
             <CompareRow
               label="드롭"
-              values={shoes.map(s => s.biomechanics?.drop || s.specs?.drop || '-')}
+              values={shoes.map(s => s.biomechanics?.drop ?? s.specs?.drop ?? '-')}
               format={v => (typeof v === 'number' ? `${v}mm` : v)}
             />
             <CompareRow
@@ -383,45 +329,6 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
               values={shoes.map(s => s.biomechanics?.midsoleType || '-')}
             />
 
-            {/* 부상 예방 */}
-            <tr className="bg-slate-800">
-              <td colSpan={shoes.length + 1} className="py-2 px-4 text-xs font-bold text-white uppercase tracking-wider">
-                부상 예방
-              </td>
-            </tr>
-            <tr className="border-b border-slate-100">
-              <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50">족저근막염</td>
-              {shoes.map((s, idx) => (
-                <td key={idx} className="py-3 px-4 text-center">
-                  <LevelBadge level={s.injuryPrevention?.plantarFasciitis} />
-                </td>
-              ))}
-            </tr>
-            <tr className="border-b border-slate-100">
-              <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50">아킬레스</td>
-              {shoes.map((s, idx) => (
-                <td key={idx} className="py-3 px-4 text-center">
-                  <LevelBadge level={s.injuryPrevention?.achillesTendinopathy} />
-                </td>
-              ))}
-            </tr>
-            <tr className="border-b border-slate-100">
-              <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50">무릎</td>
-              {shoes.map((s, idx) => (
-                <td key={idx} className="py-3 px-4 text-center">
-                  <LevelBadge level={s.injuryPrevention?.kneeIssues} />
-                </td>
-              ))}
-            </tr>
-            <tr className="border-b border-slate-100">
-              <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50">정강이</td>
-              {shoes.map((s, idx) => (
-                <td key={idx} className="py-3 px-4 text-center">
-                  <LevelBadge level={s.injuryPrevention?.shinSplints} />
-                </td>
-              ))}
-            </tr>
-
             {/* 한국인 발 적합도 */}
             <tr className="bg-slate-800">
               <td colSpan={shoes.length + 1} className="py-2 px-4 text-xs font-bold text-white uppercase tracking-wider">
@@ -436,14 +343,6 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                 return width ? labels[width] || width : '-';
               })}
             />
-            <tr className="border-b border-slate-100">
-              <td className="py-3 px-4 text-sm font-medium text-slate-600 bg-slate-50">평발 호환</td>
-              {shoes.map((s, idx) => (
-                <td key={idx} className="py-3 px-4 text-center">
-                  <LevelBadge level={s.koreanFootFit?.flatFootCompatibility} />
-                </td>
-              ))}
-            </tr>
             <CompareRow
               label="와이드 옵션"
               values={shoes.map(s =>
@@ -451,7 +350,7 @@ export function EnhancedCompareTable({ shoes, onRemove }: EnhancedCompareTablePr
                   ? '-'
                   : s.koreanFootFit.wideOptions
                   ? '있음'
-                  : '없음'
+                  : '확인 필요'
               )}
             />
 

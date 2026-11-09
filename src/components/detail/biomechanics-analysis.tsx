@@ -35,7 +35,7 @@ function getMidsoleDescription(midsoleType: string): string | null {
     'ZoomX': 'ZoomX(PEBA)는 나이키의 최상급 폼으로 뛰어난 에너지 리턴과 경량성을 제공합니다.',
     'ReactX': 'ReactX는 에너지 리턴과 내구성의 균형이 좋은 폼입니다. 가격 대비 우수한 성능을 제공합니다.',
     'React': 'React 폼은 부드러운 쿠셔닝과 적절한 반발력을 제공합니다.',
-    'Lightstrike Pro': 'Lightstrike Pro(PEBA)는 아디다스의 최상급 레이싱 폼으로 높은 에너지 리턴을 제공합니다.',
+    'Lightstrike Pro': 'Lightstrike Pro는 아디다스의 최상급 레이싱 폼으로 높은 에너지 리턴을 제공합니다.',
     'Lightstrike': 'Lightstrike는 가볍고 반응성이 좋은 EVA 기반 폼입니다.',
     'FF Blast+': 'FF Blast+는 아식스의 고성능 폼으로 부드러운 쿠셔닝과 반발력을 제공합니다.',
     'FF Turbo+': 'FF Turbo+(PEBA)는 아식스의 최상급 레이싱 폼으로 뛰어난 에너지 리턴을 제공합니다.',
@@ -82,7 +82,7 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
         <p className="text-[15.5px] leading-relaxed text-slate-600">
           {biomechanics.carbonPlate
             ? '카본 플레이트와 폼 조합이 이 신발의 추진 성향을 만듭니다.'
-            : '플레이트 없이 폼과 지오메트리로 성향을 만드는 구조입니다.'}
+            : '카본 플레이트 탑재 여부와 별개로 폼·로드·지지 구조를 상세 스펙에서 확인하세요.'}
         </p>
       </div>
 
@@ -92,8 +92,8 @@ export function BiomechanicsAnalysis({ biomechanics }: BiomechanicsAnalysisProps
           value={biomechanics.carbonPlate ? "있음" : "없음"}
           description={
             biomechanics.carbonPlate
-              ? "추진력이 향상되며 에너지 리턴이 우수합니다. 레이싱이나 빠른 페이스 훈련에 효과적입니다."
-              : "중족부 유연성이 좋아 발 움직임이 자연스럽고 다양한 훈련에 무난합니다."
+              ? "카본 플레이트 탑재 여부입니다. 이 항목만으로 에너지 리턴이나 기록 향상을 판정하지 않습니다."
+              : "카본 플레이트 없음은 다른 소재의 로드·플레이트나 생크도 없다는 뜻은 아닙니다."
           }
         />
 

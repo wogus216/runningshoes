@@ -183,17 +183,7 @@ export const ResultCard = memo(function ResultCard({ shoe, rank }: ResultCardPro
                         {getComparisonText(shoe.comparisonToAvg.weight, 'g')}
                       </span>
                     </div>
-                    <div className="flex items-center gap-1 text-xs">
-                      {getComparisonIcon(shoe.comparisonToAvg.durability)}
-                      <span className="text-secondary">내구성</span>
-                      <span className={cn(
-                        "font-medium",
-                        shoe.comparisonToAvg.durability > 0 ? "text-sky-700" :
-                        shoe.comparisonToAvg.durability < 0 ? "text-negative" : "text-tertiary"
-                      )}>
-                        {getComparisonText(shoe.comparisonToAvg.durability, 'km')}
-                      </span>
-                    </div>
+
                   </div>
                 </div>
               )}

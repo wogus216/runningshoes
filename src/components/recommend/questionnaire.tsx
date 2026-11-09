@@ -73,16 +73,6 @@ const questions: Question[] = [
     ],
   },
   {
-    id: 'footArch',
-    title: '발 아치(족궁) 유형이 어떤가요?',
-    description: '발바닥 아치 높이를 선택해주세요',
-    options: [
-      { value: 'flat', label: '평발', description: '아치가 낮거나 없음' },
-      { value: 'normal', label: '정상', description: '보통 아치 높이' },
-      { value: 'high', label: '높은 아치', description: '아치가 높은 편' },
-    ],
-  },
-  {
     id: 'footWidth',
     title: '발볼 너비는 어떤가요?',
     description: '발볼 너비를 선택해주세요',
@@ -90,19 +80,6 @@ const questions: Question[] = [
       { value: 'narrow', label: '좁음', description: '발볼이 좁은 편' },
       { value: 'standard', label: '표준', description: '보통 너비' },
       { value: 'wide', label: '넓음', description: '발볼이 넓은 편' },
-    ],
-  },
-  {
-    id: 'injuries',
-    title: '과거 또는 현재 부상이 있나요?',
-    description: '해당하는 부상을 모두 선택해주세요',
-    multiple: true,
-    options: [
-      { value: 'none', label: '없음', description: '부상 이력 없음' },
-      { value: 'plantarFasciitis', label: '족저근막염', description: '발바닥 통증' },
-      { value: 'achillesTendinopathy', label: '아킬레스 건염', description: '아킬레스 건 통증' },
-      { value: 'kneeIssues', label: '무릎 통증', description: '러너스 니, 슬개골 문제' },
-      { value: 'shinSplints', label: '정강이 통증', description: '신 스플린트' },
     ],
   },
   {
@@ -127,7 +104,7 @@ export function Questionnaire({ onComplete, isLoading = false }: QuestionnairePr
     purpose: '',
     targetPace: '',
     season: '',
-    footArch: '',
+    footArch: 'normal',
     footWidth: '',
     injuries: [],
     budget: '',

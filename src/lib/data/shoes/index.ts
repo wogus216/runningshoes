@@ -160,7 +160,7 @@ export function getSimilarShoesData(slugs: string[]): SimilarShoeInfo[] {
 export type CardShoe = Pick<Shoe,
   | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
   | 'image' | 'price' | 'tags' | 'oneliner'
-  | 'specs' | 'biomechanics' | 'injuryPrevention' | 'koreanFootFit'
+  | 'specs' | 'biomechanics' | 'koreanFootFit'
   | 'targetUsers' | 'priceAnalysis' | 'features'
 > & {
   /**
@@ -190,7 +190,6 @@ export function toCardShoe(shoe: Shoe): CardShoe {
     features: shoe.features,
     specs: shoe.specs,
     biomechanics: shoe.biomechanics,
-    injuryPrevention: shoe.injuryPrevention,
     koreanFootFit: shoe.koreanFootFit,
     targetUsers: shoe.targetUsers,
     priceAnalysis: shoe.priceAnalysis,
@@ -209,11 +208,11 @@ export function getCardShoes(): CardShoe[] {
  */
 export type GridShoe = Pick<Shoe,
   | 'id' | 'slug' | 'brand' | 'name' | 'category' | 'rating'
-  | 'image' | 'price' | 'tags' | 'oneliner' | 'injuryPrevention'
+  | 'image' | 'price' | 'tags' | 'oneliner'
 > & {
   specs?: { weight?: number };
   biomechanics?: { drop?: number; carbonPlate?: boolean };
-  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'flatFootCompatibility' | 'winterCompatibility' | 'wideOptions'>;
+  koreanFootFit?: Pick<KoreanFootFit, 'toBoxWidth' | 'winterCompatibility' | 'wideOptions'>;
   priceAnalysis?: { valueRating?: number; msrp?: number };
   /** targetUsers.recommended에 초보/입문 포함 여부 사전계산 (카드 뱃지용) */
   beginnerFriendly?: boolean;
@@ -231,7 +230,6 @@ export function toGridShoe(shoe: Shoe): GridShoe {
     price: shoe.price,
     tags: shoe.tags,
     oneliner: shoe.oneliner,
-    injuryPrevention: shoe.injuryPrevention,
     specs: shoe.specs ? { weight: shoe.specs.weight } : undefined,
     biomechanics: shoe.biomechanics
       ? { drop: shoe.biomechanics.drop, carbonPlate: shoe.biomechanics.carbonPlate }
@@ -239,7 +237,6 @@ export function toGridShoe(shoe: Shoe): GridShoe {
     koreanFootFit: shoe.koreanFootFit
       ? {
           toBoxWidth: shoe.koreanFootFit.toBoxWidth,
-          flatFootCompatibility: shoe.koreanFootFit.flatFootCompatibility,
           winterCompatibility: shoe.koreanFootFit.winterCompatibility,
           // 홈 인덱스의 "와이드 출시" 필터가 쓴다. boolean 하나라 페이로드 영향은 없다
           wideOptions: shoe.koreanFootFit.wideOptions,

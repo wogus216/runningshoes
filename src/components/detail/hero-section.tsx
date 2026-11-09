@@ -54,11 +54,11 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
     },
     {
       label: '드롭',
-      value: specs ? `${specs.drop || 10}` : '-',
+      value: specs ? `${specs.drop}` : '-',
       unit: specs ? 'mm' : '',
     },
     {
-      label: '수명',
+      label: '수명 (기존 추정)',
       value: durability?.rangeLabel ?? '-',
       unit: '',
     },
@@ -206,7 +206,7 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   globals.css 의 사전 계산 토큰(--dim-on-dark-*)을 쓴다 — 오파시티 유틸은
                   CSS 로 생성되지 않아 h 태그가 base 레이어 색으로 떨어지는 사고가 있었다(be6663e). */}
               <h2 className="relative mt-3 font-mono text-[11px] uppercase tracking-[0.22em] text-background">
-                RunRepeat Lab — Measured
+                제품 스펙 · 에디터 평가
               </h2>
               <div className="relative mt-6 grid grid-cols-2 gap-x-5 gap-y-6">
                 {summaryCards.map((item) => (
@@ -229,7 +229,7 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
           {shoe.rating ? (
             <div className="relative mt-7 flex items-baseline gap-3 border-t border-[color:var(--line-on-dark-15)] pt-6">
               <span className="font-mono text-[40px] font-bold leading-none tabular-nums text-accent">{shoe.rating}</span>
-              <span className="text-[13px] text-[color:var(--dim-on-dark-55)]">/ 5 · 종합 평점</span>
+              <span className="text-[13px] text-[color:var(--dim-on-dark-55)]">/ 5 · 에디터 평점</span>
             </div>
           ) : null}
 
@@ -237,19 +237,9 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
             <p className="font-mono text-[11px] uppercase tracking-[0.22em] text-[color:var(--dim-on-dark-55)]">Fit Signal</p>
             <p className="mt-2 text-2xl font-bold tracking-tight text-background">{fitTone.value}</p>
             <p className="mt-1 text-[13px] leading-relaxed text-[color:var(--dim-on-dark-60)]">
-              {fitTone.label} · 평발 적합성 {koreanFootFit?.flatFootCompatibility === 'excellent' ? '매우 좋음' : koreanFootFit?.flatFootCompatibility === 'good' ? '좋음' : koreanFootFit?.flatFootCompatibility === 'fair' ? '보통' : koreanFootFit?.flatFootCompatibility === 'poor' ? '낮음' : '정보 없음'}
+              {fitTone.label} · 개인 착화 확인 필요
             </p>
-            {/*
-              와이드 여부를 첫 화면에 세운다 — 2026-08-25 모바일 페르소나 평가 결과.
-              발볼이 넓어 와이드를 찾는 러너에게 이건 '있으면 좋은 정보'가 아니라
-              페이지를 계속 볼지 말지를 가르는 첫 관문인데, 그동안 6.9화면 깊이의
-              '발볼' 탭 안에만 있었다. wideOptions 는 130종 전부 채워져 있어
-              (true 58 / false 72, 누락 0) 데이터를 새로 만들 필요가 없었다.
-
-              '없음'도 반드시 적는다. 빈 값으로 두면 '안 준다'가 아니라 '모른다'로
-              읽히고, 발볼 넓은 러너는 확인하러 6.9화면을 더 내려가야 한다.
-              빠르게 포기시키는 것도 이 자리의 역할이다.
-            */}
+            {/* true는 폭 옵션 정보가 있다는 뜻이다. false/누락을 모든 한국SKU의 미판매로 해석하지 않는다. */}
             {koreanFootFit ? (
               <p className={cn(
                 'mt-2 inline-block border px-2 py-1 font-mono text-[11px] tracking-wide',
@@ -257,7 +247,7 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
                   ? 'border-[color:var(--accent-line-strong)] text-accent'
                   : 'border-[color:var(--line-on-dark-25)] text-[color:var(--dim-on-dark-50)]'
               )}>
-                {koreanFootFit.wideOptions ? '와이드(2E) 있음' : '와이드 없음'}
+                {koreanFootFit.wideOptions ? '와이드 옵션 있음' : '와이드 정보 확인 필요'}
               </p>
             ) : null}
           </div>

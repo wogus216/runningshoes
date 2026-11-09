@@ -115,7 +115,7 @@ export function ProblemExplorer({ counts, leadThumbs = [] }: ProblemExplorerProp
               </p>
               <p className={styles.f}>
                 <span>
-                  <b>{counts[p.slug] ?? 0}</b>켤레
+                  {p.slug === 'knee-protection' ? '근거 안내' : <><b>{counts[p.slug] ?? 0}</b>켤레</>}
                 </span>
                 <span aria-hidden="true">→</span>
               </p>

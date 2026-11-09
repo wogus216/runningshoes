@@ -160,7 +160,7 @@ export default async function ComparePairPage({ params }: PageProps) {
         </h1>
         <p className="text-secondary leading-relaxed">
           같은 {category} 카테고리의 두 모델을 RunRepeat 랩 데이터와 한국 러너 적합성 기준으로 직접 비교했습니다.
-          무게, 스택, 드롭, 토박스, 가성비까지 상황별 승자를 한눈에 확인하세요.
+          무게, 스택, 드롭, 토박스, 가성비까지 항목별 비교 (에디터 평가 포함)를 한눈에 확인하세요.
         </p>
       </header>
 
@@ -185,7 +185,7 @@ export default async function ComparePairPage({ params }: PageProps) {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold text-primary">상황별 승자</h2>
+        <h2 className="text-xl font-semibold text-primary">항목별 비교 (에디터 평가 포함)</h2>
         <ul className="space-y-2">
           {verdicts.map((v, i) => {
             const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';

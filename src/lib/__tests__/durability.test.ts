@@ -8,22 +8,21 @@ describe('resolveDurabilityRange', () => {
     expect(resolveDurabilityRange(500, '400-500km (노출 미드솔 마모 주의)')).toEqual({ min: 400, max: 500 });
   });
 
-  it('단일 숫자는 밴드를 씌워 범위로 바꾼다', () => {
-    expect(resolveDurabilityRange(600, '600km')).toEqual({ min: 500, max: 700 });
-    // 400km 미만(레이스화)은 밴드가 좁다
-    expect(resolveDurabilityRange(200, '200km (레이스 전용)')).toEqual({ min: 150, max: 250 });
+  it('단일 숫자에 임의 범위를 만들지 않는다', () => {
+    expect(resolveDurabilityRange(600, '600km')).toEqual({ min: 600, max: 600 });
+    expect(resolveDurabilityRange(200, '200km (레이스 전용)')).toEqual({ min: 200, max: 200 });
   });
 
   it('문자열이 없으면 숫자만으로 계산한다', () => {
-    expect(resolveDurabilityRange(500, undefined)).toEqual({ min: 400, max: 600 });
+    expect(resolveDurabilityRange(500, undefined)).toEqual({ min: 500, max: 500 });
     expect(resolveDurabilityRange(undefined, undefined)).toBeNull();
   });
 });
 
 describe('resolveDurabilityConfidence', () => {
-  it('외부 랩 측정치가 적힌 경우만 실측으로 본다', () => {
-    expect(resolveDurabilityConfidence('약 650km (아웃솔 마모 실측 1.1mm, 토박스 내구 3/5)')).toBe('measured');
-    expect(resolveDurabilityConfidence('600km (아웃솔 마모 0.9mm 우수, 힐 패딩 5/5)')).toBe('measured');
+  it('마모 mm나 토박스 등급을 주행 수명 실측으로 승격하지 않는다', () => {
+    expect(resolveDurabilityConfidence('약 650km (아웃솔 마모 실측 1.1mm, 토박스 내구 3/5)')).toBe('estimated');
+    expect(resolveDurabilityConfidence('600km (아웃솔 마모 0.9mm 우수, 힐 패딩 5/5)')).toBe('estimated');
   });
 
   it('스스로 추정이라고 밝힌 표기는 실측이 아니다', () => {
@@ -53,9 +52,9 @@ describe('신발 데이터 전수', () => {
     }
   });
 
-  it('카본 플레이트 신발에는 미드솔 우선 사망 경고가 붙는다', () => {
+  it('수명 추정의 한계를 표시하며 플레이트로 연구 결과를 일반화하지 않는다', () => {
     const carbon = shoes.find((s) => s.biomechanics?.carbonPlate);
     expect(carbon).toBeDefined();
-    expect(getShoeDurability(carbon!)?.caveat).toContain('미드솔');
+    expect(getShoeDurability(carbon!)?.caveat).toContain('재검증 전');
   });
 });

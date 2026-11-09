@@ -27,8 +27,9 @@ export interface InjuryPreventionData {
 
 export interface KoreanFootFit {
   toBoxWidth: ToBoxWidth;
-  flatFootCompatibility: CompatibilityLevel;
-  wideOptions: boolean;
+  /** @deprecated 모델별 임상 근거 없음. 표시·추천 점수에 사용하지 않는다. */
+  flatFootCompatibility?: CompatibilityLevel;
+  wideOptions?: boolean;
   winterCompatibility: CompatibilityLevel;
   summerCompatibility?: CompatibilityLevel;
 }
@@ -80,7 +81,7 @@ export interface ShoeSpecs {
   responsiveness: number; // 1-10
   stability: number;    // 1-10
   drop: number;         // mm
-  durability: number;   // expected km
+  durability?: number;  // 출처 있는 예상 km만; 미확인은 비운다
 }
 
 export interface TargetUsers {
@@ -142,6 +143,13 @@ export interface Shoe {
 
   // 리뷰
   reviews?: Review[];
+  /** 재확인한 범위만 기록한다. 제품 전체 검증 완료 표지가 아니다. */
+  verification?: {
+    checkedAt: string;
+    scope: string;
+    sources: { label: string; url: string; note: string }[];
+    limitations: string[];
+  };
 
   // 상세 스펙
   detailedSpecs?: DetailedSpecs;
@@ -189,7 +197,6 @@ export type Category = typeof categoryOrder[number];
 export type CompleteShoe = Shoe & Required<Pick<Shoe,
   | 'specs'
   | 'biomechanics'
-  | 'injuryPrevention'
   | 'koreanFootFit'
   | 'targetUsers'
   | 'priceAnalysis'
@@ -208,7 +215,6 @@ export function isCompleteShoe(shoe: Shoe): shoe is CompleteShoe {
   return !!(
     shoe.specs &&
     shoe.biomechanics &&
-    shoe.injuryPrevention &&
     shoe.koreanFootFit &&
     shoe.targetUsers &&
     shoe.priceAnalysis &&

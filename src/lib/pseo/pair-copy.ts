@@ -11,7 +11,6 @@ import { getShoeDurability } from '@/lib/durability';
 import { formatManwon } from '@/lib/format';
 
 export const WIDTH_RANK: Record<string, number> = { narrow: 0, standard: 1, wide: 2 };
-export const KNEE_RANK: Record<string, number> = { warning: 0, caution: 1, good: 2, excellent: 3 };
 
 export type Verdict = { label: string; winnerSlug: 'a' | 'b' | 'tie'; reason: string };
 
@@ -19,54 +18,54 @@ export function buildVerdicts(a: Shoe, b: Shoe): Verdict[] {
   const out: Verdict[] = [];
 
   // 가벼움
-  const wa = a.specs?.weight ?? 999;
-  const wb = b.specs?.weight ?? 999;
-  if (Math.abs(wa - wb) >= 10) {
+  const wa = a.specs?.weight;
+  const wb = b.specs?.weight;
+  if (wa !== undefined && wb !== undefined && Math.abs(wa - wb) >= 10) {
     out.push({
-      label: '가벼움 (속도/대회용)',
+      label: '가벼움',
       winnerSlug: wa < wb ? 'a' : 'b',
       reason: `${wa}g vs ${wb}g — ${Math.abs(wa - wb)}g 차이`,
     });
-  } else {
+  } else if (wa !== undefined && wb !== undefined) {
     out.push({
-      label: '가벼움 (속도/대회용)',
+      label: '가벼움',
       winnerSlug: 'tie',
       reason: `${wa}g vs ${wb}g — 거의 동일`,
     });
   }
 
   // 쿠셔닝
-  const ca = a.specs?.cushioning ?? 0;
-  const cb = b.specs?.cushioning ?? 0;
-  if (Math.abs(ca - cb) >= 1) {
+  const ca = a.specs?.cushioning;
+  const cb = b.specs?.cushioning;
+  if (ca !== undefined && cb !== undefined && Math.abs(ca - cb) >= 1) {
     out.push({
-      label: '쿠셔닝 (장거리/회복런)',
+      label: '쿠셔닝 (에디터 평가)',
       winnerSlug: ca > cb ? 'a' : 'b',
       reason: `${ca}/10 vs ${cb}/10`,
     });
   }
 
-  // 안정성 (평발/오버프로네이션)
-  const sa = a.specs?.stability ?? 0;
-  const sb = b.specs?.stability ?? 0;
-  if (Math.abs(sa - sb) >= 1) {
+  // 안정성: 에디터 비교 평가
+  const sa = a.specs?.stability;
+  const sb = b.specs?.stability;
+  if (sa !== undefined && sb !== undefined && Math.abs(sa - sb) >= 1) {
     out.push({
-      label: '안정성 (평발·오버프로네이션)',
+      label: '안정성 (에디터 평가)',
       winnerSlug: sa > sb ? 'a' : 'b',
       reason: `${sa}/10 vs ${sb}/10`,
     });
   }
 
   // 가성비
-  const va = a.priceAnalysis?.valueRating ?? 0;
-  const vb = b.priceAnalysis?.valueRating ?? 0;
-  if (Math.abs(va - vb) >= 1) {
+  const va = a.priceAnalysis?.valueRating;
+  const vb = b.priceAnalysis?.valueRating;
+  if (a.price !== undefined && b.price !== undefined && va !== undefined && vb !== undefined && Math.abs(va - vb) >= 1) {
     out.push({
       label: '가성비',
       winnerSlug: va > vb ? 'a' : 'b',
       reason: `${va}/10 vs ${vb}/10 (가격 ${formatManwon(a.price)} vs ${formatManwon(b.price)})`,
     });
-  } else {
+  } else if (a.price !== undefined && b.price !== undefined && va !== undefined && vb !== undefined) {
     out.push({
       label: '가성비',
       winnerSlug: 'tie',
@@ -87,17 +86,6 @@ export function buildVerdicts(a: Shoe, b: Shoe): Verdict[] {
     });
   }
 
-  // 무릎 보호
-  const ka = KNEE_RANK[a.injuryPrevention?.kneeIssues ?? ''] ?? -1;
-  const kb = KNEE_RANK[b.injuryPrevention?.kneeIssues ?? ''] ?? -1;
-  if (ka >= 0 && kb >= 0 && ka !== kb) {
-    out.push({
-      label: '무릎 통증 예방',
-      winnerSlug: ka > kb ? 'a' : 'b',
-      reason: `${a.injuryPrevention?.kneeIssues} vs ${b.injuryPrevention?.kneeIssues}`,
-    });
-  }
-
   return out;
 }
 
@@ -112,7 +100,7 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const bn = `${b.brand} ${b.name}`;
   const paras: string[] = [];
 
-  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리지만, 무게·쿠셔닝·발 적합성에서 분명한 차이가 있습니다.`;
+  let intro = `${withJosa(an, '과/와')} ${withJosa(bn, '은/는')} 모두 ${category} 카테고리로, 아래에서 입력된 무게·쿠셔닝·핏 정보를 비교합니다.`;
   if (a.description) intro += ` ${withJosa(an, '은/는')} ${a.description}`;
   if (b.description) intro += ` 반면 ${withJosa(bn, '은/는')} ${b.description}`;
   paras.push(intro);
@@ -120,11 +108,11 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const diffs: string[] = [];
   const wa = a.specs?.weight, wb = b.specs?.weight;
   if (wa && wb) {
-    if (Math.abs(wa - wb) >= 10) diffs.push(`무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 더 가벼워 빠른 페이스·대회에 유리합니다`);
+    if (Math.abs(wa - wb) >= 10) diffs.push(`무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 더 가볍게 측정됐습니다`);
     else diffs.push(`무게는 ${wa}g 대 ${wb}g로 거의 같습니다`);
   }
   const ca = a.specs?.cushioning, cb = b.specs?.cushioning;
-  if (ca && cb && Math.abs(ca - cb) >= 1) diffs.push(`쿠셔닝은 ${withJosa(ca > cb ? an : bn, '이/가')} 더 두툼해 장거리·회복런에서 편안합니다`);
+  if (ca && cb && Math.abs(ca - cb) >= 1) diffs.push(`쿠셔닝은 ${withJosa(ca > cb ? an : bn, '이/가')} 에디터 평가가 더 높습니다`);
   const pa = a.price, pb = b.price;
   if (pa && pb && Math.abs(pa - pb) >= 10000) diffs.push(`가격은 ${withJosa(pa < pb ? an : bn, '이/가')} 약 ${formatManwon(Math.abs(pa - pb))} 저렴합니다`);
   if (diffs.length) paras.push(diffs.join('. ') + '.');
@@ -132,9 +120,9 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const fit: string[] = [];
   const wra = WIDTH_RANK[a.koreanFootFit?.toBoxWidth ?? ''] ?? -1;
   const wrb = WIDTH_RANK[b.koreanFootFit?.toBoxWidth ?? ''] ?? -1;
-  if (wra >= 0 && wrb >= 0 && wra !== wrb) fit.push(`발볼은 ${withJosa(wra > wrb ? an : bn, '이/가')} 더 넓어 발볼 넓은 한국 러너에게 잘 맞습니다`);
+  if (wra >= 0 && wrb >= 0 && wra !== wrb) fit.push(`발볼은 ${withJosa(wra > wrb ? an : bn, '이/가')} 너비 등급이 더 넓게 분류돼 있습니다. 개인 착화는 별도로 확인해야 합니다`);
   if ((a.koreanFootFit?.wideOptions ?? false) !== (b.koreanFootFit?.wideOptions ?? false)) {
-    fit.push(`와이드(2E) 옵션은 ${a.koreanFootFit?.wideOptions ? an : bn}만 제공합니다`);
+    fit.push(`${a.koreanFootFit?.wideOptions ? an : bn}에 와이드 옵션 정보가 있습니다. 구매할 성별·사이즈·폭을 확인하세요`);
   }
   if (fit.length) paras.push(fit.join('. ') + '.');
 
@@ -161,34 +149,26 @@ export function buildFaqs(a: Shoe, b: Shoe): { question: string; answer: string 
     if (wra !== wrb) {
       const wide = wra > wrb ? an : bn;
       const wideFit = wra > wrb ? a.koreanFootFit : b.koreanFootFit;
-      ans = `토박스 기준 ${withJosa(wide, '이/가')} 더 넓습니다(${wideFit?.toBoxWidth}). 발볼이 넓은 편이라면 ${withJosa(wide, '이/가')} 유리하고, 와이드(2E) 옵션 제공 여부도 함께 확인하세요.`;
+      ans = `토박스 기준 ${withJosa(wide, '이/가')} 더 넓습니다(${wideFit?.toBoxWidth}). 발볼이 넓은 편이라면 ${withJosa(wide, '이/가')} 유리하고, 와이드 옵션 제공 여부도 함께 확인하세요.`;
     } else {
-      ans = `두 모델 모두 토박스 너비가 ${a.koreanFootFit?.toBoxWidth} 수준으로 비슷합니다. 발볼이 넓다면 와이드(2E) 옵션 제공 여부로 골라보세요.`;
+      ans = `두 모델 모두 토박스 너비가 ${a.koreanFootFit?.toBoxWidth} 수준으로 비슷합니다. 발볼이 넓다면 와이드 옵션 제공 여부로 골라보세요.`;
     }
     faqs.push({ question: `${withJosa(a.name, '과/와')} ${b.name} 중 발볼 넓은 한국 러너에게 맞는 건?`, answer: ans });
   }
 
-  const sa = a.specs?.stability ?? 0, sb = b.specs?.stability ?? 0;
+  const sa = a.specs?.stability, sb = b.specs?.stability;
   if (sa && sb && Math.abs(sa - sb) >= 1) {
     const stable = sa > sb ? an : bn;
-    faqs.push({ question: `평발이라 안정성이 중요한데 어느 쪽이 좋나요?`, answer: `안정성 점수는 ${withJosa(stable, '이/가')} 더 높습니다(${Math.max(sa, sb)}/10). 평발·오버프로네이션이 있다면 ${withJosa(stable, '을/를')} 우선 고려하세요. 발 상태가 애매하면 1분 러닝화 추천으로 확인해볼 수 있습니다.` });
+    faqs.push({ question: `안정성 점수는 어떻게 비교하나요?`, answer: `안정성 점수는 ${withJosa(stable, '이/가')} 더 높습니다(${Math.max(sa, sb)}/10). 에디터의 비교 평가이며, 평발의 치료나 부상 예방 효과를 뜻하지 않습니다.` });
   }
 
-  const va = a.priceAnalysis?.valueRating ?? 0, vb = b.priceAnalysis?.valueRating ?? 0;
-  if (va && vb) {
+  const va = a.priceAnalysis?.valueRating, vb = b.priceAnalysis?.valueRating;
+  if (a.price !== undefined && b.price !== undefined && va && vb) {
     const value = va >= vb ? an : bn;
-    faqs.push({ question: `가성비는 어느 쪽이 더 좋나요?`, answer: `가성비 점수는 ${withJosa(value, '이/가')} 우위입니다(${Math.max(va, vb)}/10, 가격 ${formatManwon(a.price)} vs ${formatManwon(b.price)}). 다만 가성비가 곧 본인에게 맞는 신발을 뜻하진 않으니 무게·쿠셔닝·발볼도 함께 보세요.` });
+    faqs.push({ question: `가성비는 어느 쪽이 더 좋나요?`, answer: `에디터 가성비 점수는 ${withJosa(value, '이/가')} 우위입니다(${Math.max(va, vb)}/10, 가격 ${formatManwon(a.price)} vs ${formatManwon(b.price)}). 다만 가성비가 곧 본인에게 맞는 신발을 뜻하진 않으니 무게·쿠셔닝·발볼도 함께 보세요.` });
   }
 
-  const ka = KNEE_RANK[a.injuryPrevention?.kneeIssues ?? ''] ?? -1;
-  const kb = KNEE_RANK[b.injuryPrevention?.kneeIssues ?? ''] ?? -1;
-  if (ka >= 0 && kb >= 0 && ka !== kb) {
-    const knee = ka > kb ? an : bn;
-    faqs.push({ question: `무릎이 안 좋은데 어떤 걸 신는 게 나을까요?`, answer: `무릎 통증 예방 측면에서는 ${withJosa(knee, '이/가')} 더 낫게 평가됩니다. 쿠셔닝과 안정성이 무릎 부담을 줄이는 핵심이며, 통증이 지속되면 러닝화 교체와 별개로 전문가 상담을 권합니다.` });
-  }
-
-  const cushWinner = (a.specs?.cushioning ?? 0) >= (b.specs?.cushioning ?? 0) ? an : bn;
-  faqs.push({ question: `러닝 입문자에게는 둘 중 무엇을 추천하나요?`, answer: `입문자라면 무게보다 쿠셔닝·안정성이 우선입니다. ${cushWinner} 쪽이 쿠셔닝이 좋아 입문·회복런에 무난합니다. 본인 발 특성·목적에 맞는 후보는 1분 러닝화 추천에서 좁힐 수 있습니다.` });
+  faqs.push({ question: `러닝 입문자에게는 둘 중 무엇을 추천하나요?`, answer: '먼저 주로 뛸 노면과 용도, 예산으로 후보를 좁히고 양발의 착화감을 확인하세요. 에디터의 쿠셔닝·안정성 점수만으로 개인에게 맞는 신발이나 부상 예방 효과를 판정할 수 없습니다.' });
 
   return faqs;
 }
@@ -250,13 +230,8 @@ export function specRows(a: Shoe, b: Shoe) {
     },
     {
       label: '와이드 옵션',
-      a: a.koreanFootFit?.wideOptions ? '있음' : '없음',
-      b: b.koreanFootFit?.wideOptions ? '있음' : '없음',
-    },
-    {
-      label: '평발 적합성',
-      a: a.koreanFootFit?.flatFootCompatibility ?? '-',
-      b: b.koreanFootFit?.flatFootCompatibility ?? '-',
+      a: a.koreanFootFit?.wideOptions ? '있음' : '확인 필요',
+      b: b.koreanFootFit?.wideOptions ? '있음' : '확인 필요',
     },
     {
       label: '내구성 (아웃솔 기준 범위)',

@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "effectiveDate": "2026-11-09",
+  "appliesTo": [
+    "shoe records",
+    "blog prose and metadata/FAQ",
+    "generated compare/best/recommend pages",
+    "race records",
+    "future social derivatives"
+  ],
+  "rules": [
+    "DB와 기존 게시글은 검증 대상이며 독립 출처로 삼지 않는다.",
+    "주장마다 이를 직접 뒷받침하는 원문 위치·URL·확인일·버전·지역·성별·폭·사이즈·단위·측정법을 기록한다.",
+    "공식/실험실/리뷰어 경험/에디터 해석을 분리한다. 제조사 주장은 독립 실험 결과로 바꾸지 않는다.",
+    "접근 실패·검색 부재·원문 충돌을 기록한다. 접근 실패를 미출시/단종/새 소식 없음으로 해석하지 않는다.",
+    "미확인은 비운다. 0점/평균값/500km 등의 기본값으로 채우지 않는다.",
+    "발 내부 최광폭과 엄지 부위, 맨발 너비를 구분한다. AC와 HA 척도를 혼용하거나 임의 환산하지 않는다.",
+    "충격흡수SA·에너지리턴·드롭·지지 구조에서 질환별 효과나 예방 등급·최적 페이스를 만들어내지 않는다.",
+    "Dremel 마모mm/짧은 착화 리뷰에서 보장 수명km를 만들지 않는다. 임의 오차 밴드나 kg/페이스별 처방을 생성하지 않는다.",
+    "미래 할인·품절·단종 시점을 예측해 확정 정보처럼 게시하지 않는다.",
+    "실제로 하지 않은 착화·주행 경험을 1인칭으로 쓰지 않는다. 외부 리뷰어 경험은 출처와 개인 조건을 붙여 요약한다.",
+    "수정한 사실은 원본과 블로그/메타/FAQ/구조화데이터/추천가중치/카드 등 파생 경로를 함께 확인한다.",
+    "자동패턴검사·숫자 일치·테스트·빌드는 원문 사실검증 완료를 뜻하지 않는다.",
+    "Shoe.verification은 명시한 항목의 재확인 범위이다. 전체 모델·전체 사이트 검증 완료 표지가 아니다.",
+    "이번 공통 로직 수정은 기존 원본의 미검증 prose/점수/젤/브랜드/소재/모든 대회까지 확인한 것이 아니다."
+  ],
+  "releaseChecks": [
+    "shoe data: npm run validate",
+    "tests changed: npm test",
+    "npm run build",
+    "built public page assertions",
+    "production response after deployment"
+  ],
+  "ledgerStatuses": [
+    "verified_with_conditions",
+    "corrected_contradiction",
+    "unknown_removed",
+    "source_conflict",
+    "pending"
+  ],
+  "inventoryNote": "기존 전면 검증 인벤토리는 검토 단위이며 실제 모든 URL과 동일하지 않다. 전수 완료율을 임의 계산하지 않는다."
+}

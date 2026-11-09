@@ -3,9 +3,10 @@ import type { DetailedSpecs as DetailedSpecsType } from "@/types/shoe";
 
 type DetailedSpecsProps = {
   specs: DetailedSpecsType;
+  showVerifiedConditions?: boolean;
 };
 
-export function DetailedSpecs({ specs }: DetailedSpecsProps) {
+export function DetailedSpecs({ specs, showVerifiedConditions = false }: DetailedSpecsProps) {
   /*
     이 표는 **다른 데서 볼 수 없는 것만** 담는다 (2026-08-26).
 
@@ -21,6 +22,11 @@ export function DetailedSpecs({ specs }: DetailedSpecsProps) {
     { label: "플레이트", value: specs.plate },
     { label: "아웃솔", value: specs.outsole },
     { label: "어퍼", value: specs.upper },
+    ...(showVerifiedConditions ? [
+      { label: '측정 위치·판매 폭', value: specs.width },
+      { label: '수명 확인 범위', value: specs.durability },
+      { label: '가격 확인 조건', value: specs.price },
+    ] : []),
     { label: "발 형태 적합성", value: specs.footType },
     { label: "착지 패턴", value: specs.landingPattern },
   ].filter((r) => r.value && String(r.value).trim().length > 0);

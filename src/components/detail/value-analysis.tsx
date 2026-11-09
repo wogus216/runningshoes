@@ -19,36 +19,7 @@ type ValueAnalysisProps = {
   resolvedAlternatives?: ResolvedAlternative[];
 };
 
-// 브랜드별 기본 장점 생성
-function getBrandAdvantages(brand: string): string[] {
-  const brandMap: Record<string, string[]> = {
-    'Nike': ['나이키 브랜드 신뢰도', '글로벌 검증된 기술력', '다양한 사이즈 옵션'],
-    'Adidas': ['아디다스 브랜드 파워', 'Boost/Lightstrike 기술력', '세련된 디자인'],
-    'ASICS': ['아식스 러닝 전문 기술', '일본 품질 신뢰도', '발 보호 최적화'],
-    'Brooks': ['브룩스 러닝 전문성', 'DNA 쿠셔닝 기술', '편안한 핏'],
-    'Saucony': ['써코니 가성비', 'PWRRUN 기술', '균형 잡힌 성능'],
-    'HOKA': ['호카 맥시멀 쿠션', '독보적 충격흡수', '장거리 특화'],
-    'New Balance': ['뉴발란스 안정성', 'Fresh Foam 기술', '폭넓은 사이즈'],
-    'On': ['온러닝 CloudTec 기술', '스위스 디자인', '가벼운 착화감'],
-    'Mizuno': ['미즈노 안정성', 'Wave 플레이트 기술', '내구성'],
-    'Puma': ['푸마 가성비', 'NITRO 폼 기술', '트렌디한 디자인'],
-  };
-  return brandMap[brand] || [`${brand} 브랜드 신뢰도`, '검증된 성능', '합리적 가격'];
-}
-
-// 카테고리별 장점 생성
-function getCategoryAdvantages(category: string): string[] {
-  const categoryMap: Record<string, string[]> = {
-    '레이싱': ['레이스 최적화 설계', '경량 구조', '높은 에너지 리턴'],
-    '쿠션화': ['뛰어난 충격흡수', '장거리 편안함', '관절 보호'],
-    '안정화': ['과내전 교정', '안정적인 지지력', '부상 예방'],
-    '데일리': ['다목적 활용', '균형잡힌 성능', '일상 착용 가능'],
-    '입문화': ['초보자 친화적', '편안한 착화감', '합리적 가격'],
-  };
-  return categoryMap[category] || ['다목적 활용 가능'];
-}
-
-export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durability, resolvedAlternatives }: ValueAnalysisProps) {
+export function ValueAnalysis({ priceAnalysis, shoeName, brand, resolvedAlternatives }: ValueAnalysisProps) {
   const altByKey = new Map((resolvedAlternatives ?? []).map(a => [a.key, a]));
   const findAlt = (key: string): ResolvedAlternative => altByKey.get(key) ?? { key };
   // 가격대별 설명 생성
@@ -76,31 +47,7 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
       return priceAnalysis.valueAdvantages;
     }
 
-    const advantages: string[] = [];
-    const brandAdvs = getBrandAdvantages(brand);
-    const catAdvs = getCategoryAdvantages(category);
-
-    // 브랜드 장점 1개
-    if (brandAdvs[0]) advantages.push(brandAdvs[0]);
-
-    // 카테고리 장점 1개
-    if (catAdvs[0]) advantages.push(catAdvs[0]);
-
-    // 스펙 기반 장점 — 내구성은 단일 숫자가 아니라 범위로 말한다
-    if (durability) {
-      if (durability.mid >= 600) {
-        advantages.push(`${durability.rangeLabel} 높은 내구성(${durability.confidenceLabel})`);
-      } else if (durability.mid >= 400) {
-        advantages.push(`${durability.rangeLabel} 적정 내구성(${durability.confidenceLabel})`);
-      }
-    }
-
-    // 가성비 기반 장점
-    if (priceAnalysis.valueRating >= 8) {
-      advantages.push('가격 대비 뛰어난 성능');
-    }
-
-    return advantages.length > 0 ? advantages : ['균형잡힌 성능', '다용도 활용'];
+    return ['정가와 구매 조건 확인', '용도에 맞는 구조·착화 비교'];
   };
   return (
     <section className="space-y-6">
@@ -115,28 +62,21 @@ export function ValueAnalysis({ priceAnalysis, shoeName, brand, category, durabi
       <div className="rounded border border-border bg-white p-6 lg:p-8">
         <h3 className="mb-4 flex items-center gap-2 text-xl font-black text-sky-700">
           <BadgeDollarSign className="h-5 w-5" />
-          가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})
+          {priceAnalysis.msrp ? <>에디터 가성비 평가: <span className="font-mono tabular-nums">{priceAnalysis.valueRating}/10</span> ({getValueDescription()})</> : '가격 확인 필요'}
         </h3>
         {/* 국내 정가가 없는 신발(병행·직구만 유통)은 가격대 평가를 하지 않는다 — 병행가를 정가처럼 쓰지 않는다 */}
         {!priceAnalysis.msrp ? (
           <p className="mb-6 text-[15.5px] leading-relaxed text-slate-700">
-            한국 공식 정가가 없는 신발입니다(병행·직구로만 유통).{" "}
+            한국 공식 정가를 확인하지 못한 항목입니다.{" "}
             {priceAnalysis.streetPrice
-              ? <>실거래가는 약 <strong>{priceAnalysis.streetPrice.toLocaleString()}원</strong>이며, 판매처·환율에 따라 달라집니다.</>
+              ? <>기존 입력 가격은 약 <strong>{priceAnalysis.streetPrice.toLocaleString()}원</strong>이며, 현재 판매 여부와 가격은 판매처에서 다시 확인하세요.</>
               : '판매처마다 가격이 달라 정가 기준 비교를 하지 않습니다.'}
           </p>
         ) : (
         <p className="mb-6 text-[15.5px] leading-relaxed text-slate-700">
           <strong>{priceAnalysis.msrp.toLocaleString()}원</strong>은{" "}
           <strong>&ldquo;{getPriceTierDescription(priceAnalysis.msrp)}&rdquo;</strong> 가격대입니다.{" "}
-          {category === "레이싱"
-            ? "레이싱화 중에서는 합리적인 가격으로 평가됩니다."
-            : category === "쿠션화"
-            ? "쿠셔닝화 중에서 가격 대비 성능이 뛰어납니다."
-            : category === "안정화"
-            ? "안정화 카테고리에서 가격 대비 좋은 선택입니다."
-            : "데일리 러닝화로서 적절한 가격대입니다."
-          }
+          가격대와 적합성은 다른 판단입니다. 구조와 착화감, 실제 구매 조건도 확인하세요.
         </p>
         )}
 

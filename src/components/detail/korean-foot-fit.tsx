@@ -57,34 +57,21 @@ function getCompatibilityStatus(level: CompatibilityLevel): { text: string; colo
 
 export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitProps) {
   const toebox = getToeboxStatus(koreanFootFit.toBoxWidth);
-  const flatFoot = getCompatibilityStatus(koreanFootFit.flatFootCompatibility);
   const winter = getCompatibilityStatus(koreanFootFit.winterCompatibility);
 
   // 와이드 옵션 상태
   const wideOptions = koreanFootFit.wideOptions
     ? { text: '있음', color: 'positive' as const }
-    : { text: '없음', color: 'primary' as const };
+    : { text: '확인 필요', color: 'primary' as const };
 
-  // 참고사항 생성
-  const getNote = (): string => {
-    if (koreanFootFit.toBoxWidth === 'narrow') {
-      return `토박스가 좁은 편이라 발볼 넓은 한국 러너는 와이드(2E) 버전을 권장합니다.`;
-    }
-    if (koreanFootFit.toBoxWidth === 'standard' && !koreanFootFit.wideOptions) {
-      return `표준 폭으로 발볼이 넓은 한국인에게는 약간 좁을 수 있습니다.`;
-    }
-    if (koreanFootFit.flatFootCompatibility === 'excellent') {
-      return `평발 적합성이 우수하며, 아치 서포트가 과내전을 효과적으로 제어합니다.`;
-    }
-    return `한국인 발형에 적합한 편이며, 매장 착화 후 구매를 권장합니다.`;
-  };
+  const getNote = (): string => '너비 등급은 개인 착화나 사이즈를 보장하지 않습니다. 판매 성별·사이즈·폭 옵션을 확인하고 직접 신어보세요.';
 
   return (
     <section className="space-y-6">
       <div className="space-y-2 border-b-2 border-primary pb-4">
         <p className="text-[11px] font-semibold uppercase tracking-[0.3em] text-slate-500">Korean Fit</p>
         <h2 className="text-3xl font-black tracking-tight text-slate-950">한국 러너 기준 핏</h2>
-        <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}가 발볼, 평발, 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
+        <p className="text-[15.5px] leading-relaxed text-slate-600">{brand} {shoeName}가 발볼과 계절감에서 어떻게 느껴질지 중심만 남겼습니다.</p>
       </div>
 
       <div className="grid md:grid-cols-2 gap-4">
@@ -96,12 +83,6 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
             statusColor={toebox.color}
           />
           <FitItem
-            title="평발 적합성"
-            subtitle="아치 서포트"
-            status={flatFoot.text}
-            statusColor={flatFoot.color}
-          />
-          <FitItem
             title="와이드 옵션"
             subtitle="넓은 발볼용"
             status={wideOptions.text}
@@ -109,7 +90,7 @@ export function KoreanFootFit({ koreanFootFit, shoeName, brand }: KoreanFootFitP
           />
           <FitItem
             title="겨울 적합성"
-            subtitle="보온/방수"
+            subtitle="에디터 평가 · 방수 여부 별도 확인"
             status={winter.text}
             statusColor={winter.color}
           />

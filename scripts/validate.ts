@@ -478,7 +478,7 @@ for (const file of fs.readdirSync(blogDir).filter((f) => f.endsWith('.ts') && f 
 }
 
 if (fictionHits.length === 0) {
-  ok(`리뷰 ${scanned}건 · 블로그 ${blogScanned}개 파일 — 1인칭 허구 경험·착용 서술·가짜 출처·무출처 별점 없음`);
+  ok(`리뷰 ${scanned}건 · 블로그 ${blogScanned}개 파일 — 자동 패턴 검사에서 1인칭·착용 서술·가짜 출처·무출처 별점 미검출 (원문 사실검증 아님)`);
 } else if (fictionHits.length > FICTION_MIGRATION_REMAINING) {
   error(
     `허구 후기 ${fictionHits.length}건 — 기준선 ${FICTION_MIGRATION_REMAINING}건보다 ${fictionHits.length - FICTION_MIGRATION_REMAINING}건 증가. ` +

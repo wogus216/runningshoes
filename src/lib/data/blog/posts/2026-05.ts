@@ -3035,203 +3035,60 @@ export const posts_2026_05: BlogPost[] = [
   {
     id: 'new-balance-860-v14-vs-v15-comparison',
     slug: 'new-balance-860-v14-vs-v15-comparison',
-    seoTitle: '뉴발란스 860 v14 vs v15 비교 — 평발·4E 와이드·가격 차이',
-    title: '뉴발란스 860 v14 vs v15 비교 | 37g 무거워진 신상 v15 살까, 평발 4종 옵션 v14 살까',
-    description: '860 v14(295g/179,000원)와 v15(332g/189,000원)을 풀데이터로 직접 비교. v15가 무거워진(+37g, 실측) 부분 + 이중 밀도 폼·넓어진 힐 플랫폼 등 보강, 와이드는 v15도 한국 공식몰 남성 2E·4E. 평발·과내전 한국 러너 안정화 가성비 매트릭스.',
+    title: '뉴발란스 860 v14 vs v15 — 37g 증가와 국내 폭 옵션, 원문으로 다시 비교',
+    description: '860v14·v15의 구조와 실측, 한국 판매 폭을2026-11-09 원문으로 재확인. v14 메디얼 포스트 설명을 바로잡고, 미확인 남성 가격·수명·미래 할인 전망을 걷어냈습니다.',
     thumbnail: '/images/blog/new-balance-860-v14-vs-v15-comparison.webp',
     author: '산초 에디터',
+    updatedAt: '2026-11-09',
     publishedAt: '2026-05-25',
     category: 'review' as const,
-    readingTime: 10,
+    readingTime: 8,
     tags: ['뉴발란스 860', '860 v14', '860 v15', '러닝화 비교', '뉴발란스', '안정화', '평발', '과내전', '와이드'],
+    faqs: [
+      { question: '860 v15는 v14보다 무조건 넓나요?', answer: '아닙니다. RunRepeat 엄지 부위는 73.0→75.1mm이지만 내부 최광폭은94.4→93.6mm입니다. 서로 다른 위치이며 실험실 표본 폭도 한국2E·4E와 같다고 확인되지 않았습니다.' },
+      { question: 'v14 한국 정가는 179,000원이 맞나요?', answer: '여성D 연관상품 정가179,000원은 확인했습니다. 남성 한국 정가 원문은 확인하지 못했고, 확인한 여성 상품 링크는 판매 준비/오픈예정 응답입니다. 모델 전체의 단종 여부나 현재 할인가는 확정하지 않습니다.' },
+      { question: '평발이나 무릎 통증에는 어느 모델이 더 안전한가요?', answer: '확인한 원문은 구조·실험실 측정·리뷰어 착화 의견입니다. 두 모델의 임상적 예방·치료 효과를 비교한 근거는 확인하지 못해 안전 순위를 매기지 않습니다.' },
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>"신상 = 좋다" 공식 깨지는 케이스</strong> (v14 ₩179,000 / v15 ₩189,000) — v15가 +37g(실측) 무거워짐 — 와이드는 v15도 한국 공식몰 기준 남성 2E·4E(여성 D)</li>
-    <li>v15의 진짜 변화 3가지: <strong>이중 밀도 Fresh Foam X (메디얼 포스트 → 듀얼 밀도 일체화)</strong> + <strong>3/4 EVA 필름 플레이트 (안정성 명시)</strong> + <strong>넓어진 힐 플랫폼 (장거리 안정성 ↑)</strong></li>
-    <li>발볼 4E급 평발 러너는 <strong>v14 X-Wide 이월 또는 v15 4E(한국 공식몰 남성)</strong> 중 선택. 발볼 표준~2E + 듀얼 폼 신소재 선호는 v15</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">v14는 한국 공식몰 미등재 — 평발 4E급 러너는 v15 4E부터 확인</p>
-    <p>v14는 해외 기준 <strong>4가지 발볼 옵션(N/D/2E/4E)</strong>이 있지만, 2026-10-20 확인 기준 한국 공식몰에는 v14가 등재돼 있지 않아 국내에서 고를 수 있는 폭은 판매처별로 확인해야 합니다. v15는 한국 공식몰에서 남성 2E·4E / 여성 D로 판매됩니다(2026-10-20 확인). 발볼 4E급 평발 러너는 v14 이월 X-Wide 재고를 찾거나 v15 4E를 고르면 됩니다.</p>
-  </div>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>NB 한국 공식몰 가격(2026-05-25 기준) + 860 v14·v15 신발 DB 풀데이터(RunRepeat HA 10.9/23.8 듀얼 밀도 / 60.8% 에너지 리턴 / 93.6mm 광폭 힐 등 Lab 측정치) + Believe in the Run 리뷰. 양 신발 단독 분석은 <a href="/shoes/new-balance-860-v14">860 v14 상세</a> · <a href="/shoes/new-balance-860-v15">860 v15 상세</a>에서 확인.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>860 v14</th><th>860 v15</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>179,000원</td><td><strong>189,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>145,000~159,000원</strong></td><td>175,000~185,000원</td><td>실제 차이 ~3만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>295g</td><td>332g (실측)</td><td><strong>+37g (무거워짐!)</strong></td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>37mm</td><td>40mm (실측 39.7)</td><td>+3mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>28mm</td><td>32mm (실측 32.1)</td><td>+4mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>9mm (실측 9.3)</td><td>8mm (실측 7.6 / 브랜드 6)</td><td><strong>약 -1.7mm (실측 기준)</strong></td></tr>
-    <tr><td><strong>미드솔</strong></td><td>Fresh Foam X + 메디얼 포스트</td><td><strong>Fresh Foam X 듀얼 밀도</strong></td><td>메디얼 포스트 제거, 듀얼 밀도 일체화</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>EVA Film Plate</td><td><strong>3/4 New EVA Film Plate</strong></td><td>3/4 명시</td></tr>
-    <tr><td><strong>한국 발볼 옵션</strong></td><td>해외 N / D / 2E / 4E (한국 공식몰 미등재, 2026-10-20)</td><td>남성 2E / 4E · 여성 D (한국 공식몰, 2026-10-20)</td><td><strong>4E는 v15에서 국내 확인</strong></td></tr>
-    <tr><td><strong>힐 베이스</strong></td><td>93.6mm 광폭</td><td><strong>더 넓어짐 (Lab 미공개)</strong></td><td>장거리 안정성 ↑</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>힐 60.8% / 전족 66.3%</td><td>비슷 (Lab 미공개)</td><td>안정화 상위권 유지</td></tr>
-    <tr><td><strong>안정성</strong></td><td>9/10</td><td>9/10</td><td>동일</td></tr>
-    <tr><td><strong>평발 적합성</strong></td><td>excellent</td><td>excellent</td><td>동일</td></tr>
-    <tr><td><strong>내구성</strong></td><td>600km+</td><td>600km+</td><td>동일</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 ₩300</td><td>약 ₩315</td><td>+₩15 살짝 악화</td></tr>
-    <tr><td><strong>최적 페이스</strong></td><td>5:30~7:00/km</td><td>5:20~7:00/km</td><td>거의 동일</td></tr>
-  </tbody>
-</table>
-
-<h2>v15의 진짜 변화 3가지</h2>
-
-<h3>1. 미드솔 일체화 — 메디얼 포스트에서 듀얼 밀도로</h3>
-
-<p>v14는 <strong>Fresh Foam X + 별도 메디얼 포스트</strong> 구조로 과내전을 교정했습니다. 메디얼 포스트(발 안쪽에 단단한 폼 삽입)는 전통적 안정화 방식.</p>
-
-<p>v15는 메디얼 포스트를 제거하고 <strong>이중 밀도 Fresh Foam X (상단 부드러움 + 하단 단단함)</strong>으로 일체화했습니다. 카야노 32 → 33의 4D Guidance System 도입과 비슷한 흐름 — 안정화 트렌드가 "별도 포스트"에서 "스마트 폼 구조"로 이동하는 신호.</p>
-
-<p><strong>실제 차이</strong>: v14의 메디얼 포스트는 과내전을 강하게 교정하는 대신, 지지 쪽 폼이 HA 23.8로 쿠션 쪽(10.9)의 두 배 넘게 단단하게 측정돼 딱딱하게 느껴질 수 있습니다. v15는 더 자연스러운 전환을 제공하지만 강한 과내전 교정은 약간 약해졌을 가능성.</p>
-
-<h3>2. 와이드 옵션 — v15도 한국 공식몰 남성 2E·4E</h3>
-
-<p>v14는 해외 기준 <strong>4가지 발볼 옵션(Narrow / Standard / Wide / X-Wide)</strong>이 있고, v15는 한국 공식몰 기준 남성 2E·4E / 여성 D로 판매됩니다(2026-10-20 확인).</p>
-
-<p><strong>발볼 4E급 평발 한국 러너도 v15 4E로 대응 가능</strong>합니다. 1080 v15도 남성 4E가 있지만 중립화라, 안정화에서 4E가 필요하면 860 v15가 선택지입니다.</p>
-
-<p>또 v15는 <strong>힐 플랫폼을 더 넓혔고</strong>, 토박스도 실측 75.1mm로 v14(73.0mm)보다 넓어(랩 평균 73.2mm) 표준 폭에서도 발가락 공간이 여유 있는 편입니다.</p>
-
-<h3>3. 드롭 9.3mm → 7.6mm(실측) — 뒤꿈치 착지 러너에게 영향</h3>
-
-<p>v14의 9mm 드롭은 뒤꿈치 착지 러너에게 자연스러운 적응을 만들었습니다. <strong>v15는 실측 7.6mm로 약 -1.7mm</strong>(브랜드 표기 8→6mm) — 미드풋 착지에 조금 더 가까운 사상.</p>
-
-<p><strong>전환 시 주의</strong>: v14에서 v15로 가면 종아리·아킬레스 부담이 일시적으로 증가할 수 있습니다. 1~2주 적응 기간 필요. 평발 + 뒤꿈치 착지 + 종아리 약한 러너라면 v14의 9mm 드롭이 더 안전.</p>
-
-<h2>가격 시나리오 — v14 X-Wide 사이즈 빠짐 주의</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 860 가격 전망 + X-Wide 단종 타임라인</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> v14 14~15만원 (이월 풀림) / v15 18만 9천원 정가 → X-Wide 사이즈 풀 라인업 마지막 기회</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> v14 13~14만원 / v15 17~18만원 일부 할인 → <strong>X-Wide 인기 사이즈(260~280mm) 빠짐 시작</strong></li>
-      <li><strong>가을 시즌인 (9~10월):</strong> v14 14만원 (D/2E 위주, X-Wide 거의 소진) / v15 18만원 → 4E급 러너는 이 시점 전에 결정</li>
-      <li><strong>블랙프라이데이 (11월):</strong> v14 10~12만원 (특가) / v15 14~15만원 → 양쪽 매력적, X-Wide는 사실상 단종</li>
-      <li><strong>12월~2027년 1월:</strong> v14 단종 임박 / v15 14~15만원 안정 → v15만 남음 (v15도 남성 4E 있음)</li>
-    </ul>
-  </div>
-</div>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>발볼 4E급 평발 러너</strong></td><td><strong>v14 X-Wide 이월 또는 v15 4E</strong></td><td>v15도 한국 공식몰 남성 4E. 가격은 v14, 신소재는 v15</td></tr>
-    <tr><td>발볼 표준~2E + 가성비 우선</td><td>v14 이월 14~15만원</td><td>295g + 9mm 드롭 + km당 ₩300</td></tr>
-    <tr><td>발볼 표준~2E + 신소재 듀얼 폼 선호</td><td>v15 정가 18~19만원</td><td>이중 밀도 Fresh Foam X + 3/4 EVA 플레이트</td></tr>
-    <tr><td>뒤꿈치 착지 + 종아리 약함</td><td>v14</td><td>9mm 드롭이 자연스러운 적응</td></tr>
-    <tr><td>미드풋 착지 + 자연스러운 전환 선호</td><td>v15</td><td>v14보다 낮은 드롭(실측 7.6mm)</td></tr>
-    <tr><td>장거리 LSD (15~25km)</td><td>v15</td><td>넓어진 힐 플랫폼이 후반부 안정성 ↑</td></tr>
-    <tr><td>워킹 + 가벼운 조깅 겸용</td><td>v14</td><td>295g + 9mm 드롭이 일상 보행에 자연스러움</td></tr>
-    <tr><td>심한 과내전 (강한 교정 필요)</td><td>v14</td><td>메디얼 포스트의 직접적 교정 효과</td></tr>
-  </tbody>
-</table>
-
-<h2>다른 안정화·평발 옵션과 비교</h2>
-
-<ul>
-  <li><strong><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> (295g, 199,000원)</strong> — 안정화 프리미엄. 860 v14보다 2만원 비싸고 무게는 같음(둘 다 295g, RunRepeat 실측 US M9). 4D Guidance + 카야노 신뢰도. <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 →</a></li>
-  <li><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> (295g, 189,000원)</strong> — Guide Rails 안정화 시스템. 860과 동급 무게. 한국 정식 출시 + 2E 와이드</li>
-  <li><strong><a href="/shoes/saucony-guide-18">사우코니 가이드 18</a> (278g, 159,000원)</strong> — 가성비 안정화. 860 v14보다 17g 가벼움(둘 다 RunRepeat 실측) + 2만원 저렴. 121.9mm 광폭 플랫폼</li>
-  <li><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> (283g, 239,000원)</strong> — 맥시멀 쿠션 + 안정화. 무릎 + 평발 동시 보호 우선이면 최강</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. v14에서 v15로 업그레이드 가치 있나요?</h3>
-<p>v14가 500km 안 신었다면 그냥 굴리세요. v14의 9mm 드롭과 메디얼 포스트에 만족했다면 v15는 오히려 어색할 수 있습니다. 반대로 <strong>"v14의 메디얼 포스트가 딱딱하게 느껴졌다"</strong>거나 <strong>"드롭이 너무 높다"</strong>면 v15가 답. 듀얼 밀도 폼 + 더 낮은 드롭(실측 7.6mm)으로 자연스러운 전환.</p>
-
-<h3>Q. 발볼 4E급인데 v15 사도 되나요?</h3>
-<p><strong>가능</strong>. v15는 한국 공식몰 기준 남성 2E·4E / 여성 D로 판매되고, 토박스도 실측 75.1mm로 v14(73.0mm)보다 넓습니다. 4E 평발 러너라면 <strong>v15 4E</strong>를 신어 보고, 가격이 우선이면 v14 X-Wide 이월도 선택지. 또는 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>(2E 와이드)·<a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>(와이드 옵션) 대안.</p>
-
-<h3>Q. 카야노 32와 860 v14 중 어느 게 좋나요?</h3>
-<p>가성비는 <strong>860 v14 압승</strong>(14~15만원 vs 카야노 19만 9천원). 무게는 둘 다 295g(RunRepeat 실측)으로 같고, 카야노 32는 4D Guidance System으로 자연스러운 교정 + 카야노 30년 신뢰도가 강점. 860 v14는 4가지 발볼 옵션 + 9mm 드롭 자연스러움 + 가격 메리트. 발볼 4E급이면 무조건 860 v14, 발볼 표준~2E + 카야노 디자인 선호면 카야노.</p>
-
-<h3>Q. 풀코스 가능한가요?</h3>
-<p><strong>Sub-4 ~ Sub-5 완주 + 평발·과내전 안전 우선</strong>이면 둘 다 적합. 295~332g 무게는 빠른 페이스에는 부담이지만 안정화 본질상 정상. Sub-3:30 이하 도전이면 안정화는 부담스럽고 카본 슈즈 분리 권장(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>, 평발 대응).</p>
-
-<h3>Q. v14 X-Wide(4E) 사이즈는 언제까지 잡힐까요?</h3>
-<p>작성 시점(2026년 5월 말)에는 인기 사이즈(260~280mm 4E)가 풀 라인업으로 남아 있었고, 7~8월 시즌오프부터 빠질 것으로 봤습니다. <strong>2026-10-20 확인 기준 한국 공식몰에는 v14가 등재돼 있지 않아</strong> v14 4E는 판매처별 재고를 직접 확인해야 합니다. 4E가 꼭 필요하면 한국 공식몰 남성 4E가 확인된 v15가 확실한 선택지입니다.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">발볼 옵션 — 4E 평발은 v14 이월 또는 v15 4E, 표준~2E는 v15</p>
-    <p><strong>발볼 4E급 평발 한국 러너</strong>라면 <a href="/shoes/new-balance-860-v14">860 v14 X-Wide</a> 이월 14~15만원이 가격 면에서 유리하지만, 2026-10-20 확인 기준 한국 공식몰에는 v14가 없어 판매처 재고를 먼저 확인해야 합니다. v15는 한국 공식몰 남성 4E가 있어 신소재를 원하면 v15 4E가 대안.</p>
-    <p><strong>발볼 표준~2E + 신소재 폼 선호</strong>라면 <a href="/shoes/new-balance-860-v15">860 v15</a> 정가 18~19만원. 이중 밀도 Fresh Foam X + 3/4 EVA 필름 플레이트 + 넓어진 힐 플랫폼이 안정화 본질에 충실. 블프(11월) 14~15만원 가능성 ↑.</p>
-    <p><strong>안정화 첫 도전이고 둘 다 처음</strong>이라면 NB 직영매장 또는 ON YOUR MARK에서 양쪽 동시 시착이 가장 정확. 9mm 드롭 vs 7.6mm(실측) 드롭, 메디얼 포스트 vs 듀얼 밀도 — 본인 발이 어느 메커니즘에 편한지 직접 비교가 답.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="/shoes/new-balance-860-v14" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">860 v14 정보 (4E 옵션) →</span>
-    </a>
-    <a href="https://naver.me/GowyA70j" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">860 v15 최저가 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>860이 "가성비 안정화"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요.</p>
-
-<ul>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 — 프리미엄 안정화</a> (예산 26만원 가능 + 카야노 신뢰도)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 4E 와이드 중립 쿠션화</a> (가벼운 평발 + 중립화 선택지)</li>
-  <li><a href="/blog/saucony-ride-18-vs-19-comparison">사우코니 라이드 18 vs 19 — 중립 데일리</a> (과내전 없는 평발이면 중립 선택지)</li>
-  <li><a href="/blog/on-cloudmonster-2-vs-3-comparison">On 클라우드몬스터 2 vs 3 — 맥스 쿠션</a> (무릎 보호 우선 중립화)</li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 가벼운 데일리</a> (과내전 없으면)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리 (4E 옵션 정리)</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
-</ul>
-
-<p><small>출처: NB 한국 공식몰 가격(2026-05-25 기준) / 860 v14·v15 신발 DB 풀데이터(RunRepeat HA 10.9/23.8 듀얼 밀도 / 60.8% 에너지 리턴 / 93.6mm 광폭 힐 등 Lab 측정치). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 3가지</span><ul>
+<li><strong>v15는 실험실 무게가 37g 늘고 힐 스택은 2.9mm 높아졌습니다.</strong> 무게 증가를 감수할 만큼 착화가 맞는지 확인할 비교입니다.</li>
+<li><strong>v14도 이중폼·내측 웨지·EVA 필름 구조입니다.</strong> v15에서 처음 메디얼 포스트를 없앴다는 기존 설명을 바로잡았습니다.</li>
+<li><strong>한국에서 폭을 확인해 구매하려면 v15 남성2E·4E, 여성D가 확인된 후보입니다.</strong> v14의 남성 한국 정가·판매 폭은 미확인입니다.</li></ul></div>
+<p><strong>원문 재확인: 2026-11-09.</strong> 아래 수치는 자체 측정이 아닌 RunRepeat 실험실 값이며, 제조사 표기는 따로 적었습니다. 자체 착화 후기가 아닌 출처 기반 에디터 비교입니다.</p>
+<h2>무게와 쿠션량의 변화부터 보기</h2>
+<table><thead><tr><th>RunRepeat 측정 항목</th><th>860 v14</th><th>860 v15</th></tr></thead><tbody>
+<tr><td>공시 무게 (남성US9 기준)</td><td>295g</td><td>332g</td></tr>
+<tr><td>힐 / 전족부 스택</td><td>36.8 / 27.5mm</td><td>39.7 / 32.1mm</td></tr>
+<tr><td>실측 드롭</td><td>9.3mm</td><td>7.6mm</td></tr>
+<tr><td>힐 / 전족부 충격흡수</td><td>126 / 113 SA</td><td>134 / 127 SA</td></tr>
+<tr><td>힐 / 전족부 에너지 리턴</td><td>60.8 / 66.3%</td><td>57.5 / 65.2%</td></tr>
+<tr><td>현재 원문 경도</td><td>26.5 AC</td><td>25.8 AC</td></tr>
+<tr><td>내부 최광폭 / 엄지 부위</td><td>94.4 / 73.0mm</td><td>93.6 / 75.1mm</td></tr>
+</tbody></table>
+<p>스택 차이는 힐 +2.9mm, 전족부 +4.6mm입니다. v15는 충격흡수 시험값이 커졌지만 에너지 리턴이 함께 올라간 것은 아닙니다. SA는 폼 경도나 통증 감소율이 아니고, 에너지 리턴은 러닝 기록 향상률이 아닙니다. 실험실 표본의 성별·사이즈 기준이며 실제 한국 판매2E·4E의 같은 치수를 뜻하지 않습니다.</p>
+<h2>이중폼은 v15만의 새 구조가 아닙니다</h2>
+<p>Doctors of Running은 v14부터 전통적 메디얼 포스트 대신 내측으로 더 높게 올라온 단단한 하부폼의 웨지, 부드러운 상부폼과 EVA 필름을 사용하는 것으로 설명합니다. 따라서 <strong>v14 메디얼 포스트 → v15 이중 밀도</strong>라는 이전 비교는 맞지 않습니다.</p>
+<p>v15 한국 공식은 이중경도 Fresh Foam X와 <strong>3/4 New EVA 필름</strong>을 설명합니다. 해외 리뷰의 Stability Plane 명칭과 함께 볼 수 있지만, 구조 이름만으로 교정력이나 무릎 보호 효과가 더 크다고 단정하지 않습니다.</p>
+<p>현재 RunRepeat 경도는 AC(Asker C)입니다. 기존 글의10.9/23.8 HA는 현재 원문에서 재확인하지 못해 표에서 제외했습니다. 척도가 다른 숫자를 직접 비교하거나 비율로 바꾸지 않습니다.</p>
+<h2>국내 구매는 폭과 상품 상태를 먼저</h2>
+<table><thead><tr><th>확인 범위</th><th>860 v14</th><th>860 v15</th></tr></thead><tbody>
+<tr><td>한국 정가</td><td>남성 미확인. 여성D 연관상품 정가179,000원만 확인</td><td>남성2E·4E, 여성D 189,000원</td></tr>
+<tr><td>폭과 현재 상품</td><td>여성D 연관상품 링크는 판매 준비/오픈예정 응답. 남성 폭 미확인</td><td>남성2E NBPFGF703L · 4E NBPFGF703Q · 여성D NBPFGF704W 주문 옵션 확인</td></tr>
+<tr><td>공식 드롭</td><td>해외 리뷰의 브랜드 인용8mm</td><td>한국 공식6mm</td></tr></tbody></table>
+<p>검색에 v14가 안 나온다는 이유만으로 단종이나 한국 미판매라고 결론 내릴 수 없습니다. 연관상품에는 남아 있었기 때문입니다. 반대로 연관상품 가격이 보인다고 현재 그 가격에 주문할 수 있다고 말할 수도 없습니다. v15도 확인한 색상·폭의 관찰 시점 정보이며 결제 완료로 재고를 보증한 것은 아닙니다.</p>
+<h2>실제로 고를 때의 기준</h2>
+<ul><li><strong>현재 v14가 편하게 맞는다:</strong> 새 세대라는 이유만으로 바꿀 필요를 판단하지 말고, 새 신발의 무게와 착화 차이를 비교하세요.</li>
+<li><strong>남성4E가 필요하다:</strong> 한국 공식에서 확인된 v15 4E를 착화 후보로 잡을 수 있습니다. 실험실75.1mm를4E의 내부 치수로 읽지는 마세요.</li>
+<li><strong>가벼운 템포화가 우선이다:</strong> 두 모델의295/332g 실험실 무게를 먼저 확인하세요. 리뷰어들은 쉬운 일상 러닝·걷기 중심으로 평가했습니다.</li>
+<li><strong>뒤꿈치 압박이나 전족부 용적에 민감하다:</strong> v15의 단단한 힐카운터·전족부 용적에 대한 리뷰 의견도 확인하고 양발로 신어보세요.</li></ul>
+<p>수명600km, 특정 최적 페이스, 블랙프라이데이 예상가와 향후4E 소진 시점은 원문 근거를 확인하지 못해 삭제했습니다. 아직 확인되지 않은 가격과 수명으로 km당 비용의 승자를 만들지 않습니다.</p>
+<h2>자주 묻는 질문</h2><h3>860 v15는 v14보다 무조건 넓나요?</h3><p>아닙니다. RunRepeat 엄지 부위는 73.0→75.1mm이지만 내부 최광폭은94.4→93.6mm입니다. 서로 다른 위치이며 실험실 표본 폭도 한국2E·4E와 같다고 확인되지 않았습니다.</p><h3>v14 한국 정가는 179,000원이 맞나요?</h3><p>여성D 연관상품 정가179,000원은 확인했습니다. 남성 한국 정가 원문은 확인하지 못했고, 확인한 여성 상품 링크는 판매 준비/오픈예정 응답입니다. 모델 전체의 단종 여부나 현재 할인가는 확정하지 않습니다.</p><h3>평발이나 무릎 통증에는 어느 모델이 더 안전한가요?</h3><p>확인한 원문은 구조·실험실 측정·리뷰어 착화 의견입니다. 두 모델의 임상적 예방·치료 효과를 비교한 근거는 확인하지 못해 안전 순위를 매기지 않습니다.</p>
+<h2>출처와 확인 범위</h2><ul>
+<li><a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v14" target="_blank" rel="noopener noreferrer">RunRepeat 860v14</a> · <a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">860v15</a>: 실측과 실험실 방법. 서로 다른 생산 표본의 비교입니다.</li>
+<li><a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-860-v14-review/" target="_blank" rel="noopener noreferrer">Doctors of Running v14</a> · <a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-860-v15-review/" target="_blank" rel="noopener noreferrer">v15</a>: 구조와 리뷰어 착화 의견.</li>
+<li><a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703L&amp;colCode=16&amp;cIdx=" target="_blank" rel="noopener noreferrer">뉴발란스 한국 남성v15 2E</a> · <a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF703Q&amp;colCode=16&amp;cIdx=" target="_blank" rel="noopener noreferrer">남성4E</a> · <a href="https://www.nbkorea.com/product/productDetail.action?styleCode=NBPFGF704W&amp;colCode=10&amp;cIdx=" target="_blank" rel="noopener noreferrer">여성D·v14 연관상품</a>: 한국 정가·상품 옵션.</li>
+<li><a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a>: US9 공시 기준, 측정 위치, AC/HA 척도 변화.</li></ul>
+<p>원문끼리도 v15 스택·드롭·보조기 적합 의견이 갈립니다. 표는 RunRepeat 실측을 일관되게 사용하고 한국 공식 드롭6mm를 별도 표시했습니다. 상세: <a href="/shoes/new-balance-860-v14">860v14</a> · <a href="/shoes/new-balance-860-v15">860v15</a>.</p>
 `,
   },
   {

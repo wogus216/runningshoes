@@ -55,7 +55,7 @@ describe('toGridShoe', () => {
       if (s.priceAnalysis) expect(Object.keys(g.priceAnalysis ?? {}).sort()).toEqual(['msrp', 'valueRating']);
       if (s.koreanFootFit) {
         expect(Object.keys(g.koreanFootFit ?? {}).sort()).toEqual(
-          ['flatFootCompatibility', 'toBoxWidth', 'wideOptions', 'winterCompatibility'],
+          ['toBoxWidth', 'wideOptions', 'winterCompatibility'],
         );
       }
     });

@@ -56,17 +56,18 @@ export function QuickSpecs({ specs, koreanFootFit, durability }: QuickSpecsProps
   return (
     <div>
       <h2 className="font-bold mb-4 md:mb-5 text-primary">빠른 스펙</h2>
+      <p className="mb-3 text-xs text-tertiary">1~10점은 에디터 비교 평가입니다. 실험실 측정 단위나 임상 등급이 아닙니다.</p>
 
       {/* 스펙 바 */}
       <div className="space-y-3 md:space-y-4 mb-4 md:mb-6">
         <SpecBar label="쿠셔닝" value={`${specs.cushioning}/10`} percentage={specs.cushioning * 10} />
         <SpecBar label="반발력" value={`${specs.responsiveness}/10`} percentage={specs.responsiveness * 10} />
         <SpecBar label="안정성" value={`${specs.stability}/10`} percentage={specs.stability * 10} color="positive" />
-        <SpecBar
-          label="내구성"
-          value={durability?.rangeLabel ?? `${specs.durability || 500}km`}
-          percentage={Math.min((durability?.mid ?? specs.durability ?? 500) / 8, 100)}
-        />
+        {durability ? <SpecBar
+          label="수명 (기존 추정 · 미검증)"
+          value={durability.rangeLabel}
+          percentage={Math.min(durability.mid / 8, 100)}
+        /> : <p className="text-sm text-tertiary">주행 수명: 미확인</p>}
         {durability && (
           <p className="-mt-2 text-[11px] text-tertiary">
             내구성은 {durability.basisLabel} {durability.confidenceLabel} 범위입니다.

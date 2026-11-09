@@ -107,10 +107,10 @@ export default async function BestPage({ params }: PageProps) {
 
   return (
     <article className="space-y-8">
-      <script
+      {!entry.evidenceGuide && <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListJsonLd) }}
-      />
+      />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
@@ -130,10 +130,22 @@ export default async function BestPage({ params }: PageProps) {
         </h1>
         <p className="text-secondary leading-relaxed">{entry.intro}</p>
         <div className="text-xs text-tertiary">
-          분석 모델 {shoes.length}개 · 데이터 기준일 {new Date().toISOString().slice(0, 10)}
+          {entry.evidenceGuide ? '제품별 임상 순위 제공 안 함' : `비교 후보 ${shoes.length}개 · 개별 출처·측정 조건은 상세 페이지 참조`}
         </div>
       </header>
 
+      {entry.evidenceGuide ? (
+        <section className="rounded-[4px] border border-border bg-white p-6 space-y-3">
+          <h2 className="text-xl font-semibold text-primary">구매 전에 정리할 것</h2>
+          <ul className="list-disc pl-5 space-y-2 text-secondary">
+            <li>통증이 시작된 시점과 위치, 러닝 중·후 어느 때 나타나는지</li>
+            <li>최근 거리·강도·노면·신발의 변화</li>
+            <li>현재 신발의 사이즈·폭과 눌리거나 쓸리는 위치</li>
+          </ul>
+          <p className="text-sm text-secondary">이 정보는 진료와 착화 상담을 위한 기록입니다. 특정 신발 구매로 통증이 해결된다고 가정하지 마세요.</p>
+          <a className="text-sm underline" href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">근거 범위 확인: Cochrane 2022 문헌고찰</a>
+        </section>
+      ) : (<>
       <section>
         <h2 className="text-xl font-semibold text-primary mb-4">추천 TOP {shoes.length}</h2>
         <ol className="space-y-4">
@@ -256,6 +268,8 @@ export default async function BestPage({ params }: PageProps) {
         </p>
       </section>
 
+      </>)}
+
       {entry.faq.length > 0 && (
         <section className="space-y-4">
           <h2 className="text-xl font-semibold text-primary">자주 묻는 질문</h2>
@@ -300,7 +314,7 @@ export default async function BestPage({ params }: PageProps) {
       <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">더 정확한 추천을 받고 싶다면</h2>
         <p className="text-sm text-secondary mb-3">
-          본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
+          러닝 용도, 발볼, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
         </p>
         <Link
           href="/recommend"

@@ -37,19 +37,19 @@ export function AtAGlance({ shoe }: AtAGlanceProps) {
   if (drop !== undefined && drop !== null) specParts.push(`${drop}mm 드롭`);
   if (specParts.length > 0) {
     const techPart = midsole
-      ? ` ${midsole} 미드솔${carbon ? '에 카본 플레이트를 결합' : ''}했습니다.`
+      ? ` ${midsole} 미드솔${carbon ? '에 카본 플레이트를 결합한 구조입니다.' : '을 사용합니다.'}`
       : '';
-    sentences.push(`${specParts.join(', ')}이며,${techPart || ' 검증된 폼 구조를 채택했습니다.'}`);
+    sentences.push(`${specParts.join(', ')}입니다.${techPart}`);
   }
 
   if (recommended) {
     const widthPart =
       width && width !== 'standard'
-        ? ` 토박스는 ${widthLabel[width]} 등급으로, 발볼 넓은 러너는 ${wideOpt ? '와이드 옵션을 권장' : '사이즈 +0.5 또는 다른 와이드 모델을 검토'}하세요.`
+        ? ` 토박스는 ${widthLabel[width]} 등급으로, 발볼 넓은 러너는 판매 폭과 실제 착화를 함께 확인하세요. 반 사이즈 업으로 해결된다고 가정하지 마세요.`
         : wideOpt
-          ? ' 와이드 옵션이 정식 출시되어 발볼 넓은 한국 러너도 선택폭이 있습니다.'
+          ? ' 와이드 옵션 정보가 있으니 구매하려는 성별·사이즈·폭을 확인하세요.'
           : '';
-    sentences.push(`주로 ${recommended}에게 적합합니다.${widthPart}`);
+    sentences.push(`편집상 비교 후보: ${recommended}.${widthPart}`);
   }
 
   if (sentences.length === 0) return null;

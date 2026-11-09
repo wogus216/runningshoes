@@ -60,7 +60,7 @@ type ShoeDetailTabsProps = {
 const tabs = [
   { id: 'specs', label: '스펙', mobileLabel: '스펙' },
   { id: 'biomechanics', label: '생체역학', mobileLabel: '주행감' },
-  { id: 'injury', label: '부상 예방', mobileLabel: '부상' },
+  { id: 'injury', label: '건강 정보', mobileLabel: '건강' },
   { id: 'koreanfoot', label: '한국인 발', mobileLabel: '발볼' },
   { id: 'price', label: '가격', mobileLabel: '가격' },
   { id: 'reviews', label: '분석', mobileLabel: '유형별' },
@@ -142,7 +142,7 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
           )}
           {shoe.detailedSpecs && (
             <div className="border border-border bg-white p-5 md:p-6">
-              <DetailedSpecs specs={shoe.detailedSpecs} />
+              <DetailedSpecs specs={shoe.detailedSpecs} showVerifiedConditions={Boolean(shoe.verification)} />
             </div>
           )}
         </div>
@@ -156,11 +156,9 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
         </div>
 
         <div className={activeTab === 'injury' ? '' : 'hidden'}>
-          {shoe.injuryPrevention && (
-            <div className="border border-border bg-white p-5 md:p-6">
-              <InjuryPrevention injuryPrevention={shoe.injuryPrevention} />
-            </div>
-          )}
+          <div className="border border-border bg-white p-5 md:p-6">
+            <InjuryPrevention />
+          </div>
         </div>
 
         <div className={activeTab === 'koreanfoot' ? '' : 'hidden'}>
@@ -222,6 +220,18 @@ export function ShoeDetailTabs({ shoe, similarShoesData, resolvedAlternatives }:
 
         <div className={activeTab === 'reviews' ? '' : 'hidden'}>
           <div className="border border-border bg-white p-5 md:p-6">
+            {shoe.verification && (
+                <aside className="mb-6 space-y-3 border-b border-border pb-6 text-sm text-secondary">
+                  <h3 className="font-bold text-primary">출처 재확인 · {shoe.verification.checkedAt}</h3>
+                  <p>{shoe.verification.scope}</p>
+                  <ul className="list-disc pl-5 space-y-2">
+                    {shoe.verification.sources.map((source) => (
+                      <li key={source.url}><a className="underline" href={source.url} target="_blank" rel="noopener noreferrer">{source.label}</a> — {source.note}</li>
+                    ))}
+                  </ul>
+                  {shoe.verification.limitations.map((note) => <p key={note}>{note}</p>)}
+                </aside>
+              )}
             {shoe.reviews && shoe.reviews.length > 0 ? (
               <ReviewsSection reviews={shoe.reviews} />
             ) : (

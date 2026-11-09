@@ -83,13 +83,13 @@ export const novemberEvents: MarathonEvent[] = [
     location: '여의도공원 문화의 마당 (서울 영등포구)',
     region: '서울',
     distances: ['10K', '5K'],
-    status: '접수중',
+    status: '마감',
     isMajor: false,
     website: 'https://zeiss-smilerace.kr/marathon/code/8050/',
     registrationEnd: '2026-11-08',
     registrationNote:
-      '공식 홈페이지에서 개인·단체 참가 신청 버튼이 활성 상태임을 2026년 10월 20일 확인했습니다. 공식 공지(10/14)에 따라 11월 8일(일) 밤 12시에 접수가 마감되며, 그 전에 입금 기준 선착순 5,000명이 차면 조기 마감됩니다. 접수 마감과 함께 환불·참가정보 변경도 종료됩니다.',
-    lastVerified: '2026-10-20',
+      '2026-11-09 공식11/4 공지(wr_id=10)의11/8 접수·환불·참가정보 변경 종료 안내와 공지 목록에 연장 공지가 없음을 재확인했습니다. 공지된 기한 경과에 따라 마감으로 표시합니다. 실제 신청·결제는 진행하지 않았습니다.',
+    lastVerified: '2026-11-09',
     description:
       '칼자이스·TV CHOSUN·한국실명예방재단이 주최하고 런코리아가 주관하는 눈 건강 테마 러닝 대회입니다. 11월 22일 오전 7시 30분 여의도공원 문화의 마당에서 출발하며 10K·5K 두 종목 모두 기록칩을 제공합니다. 참가비는 10K 65,000원, 5K 55,000원이고 정원은 결제 완료 기준 선착순 5,000명입니다. 제한시간은 10K 1시간 30분·5K 1시간이며 이후 교통 통제가 해제됩니다. 참가 자격 제한은 없지만 참가권 양도와 대리 참가는 실격 사유입니다. 사전 택배 발송 기념품은 프로스펙스 티셔츠·프로스펙스 경량 15L 백팩·배번호와 기록칩·웰컴 키트이며 대회 1주 전 배송됩니다. 프로스펙스 하네스는 ‘하네스 포함’ 종목으로 신청할 때 35,000원을 더 내고 받는 선택 옵션입니다. 완주메달과 완주 패키지는 현장에서 지급됩니다.',
     courseInfo: {
@@ -305,7 +305,7 @@ export const novemberEvents: MarathonEvent[] = [
     location: '춘천 송암스포츠타운 종합경기장 (강원 춘천시)',
     region: '강원',
     distances: ['하프', '10K', '5K'],
-    status: '접수중',
+    status: '대회종료',
     isMajor: false,
     website: 'https://www.kw-marathon.com/index_roundlab.php',
     description:
@@ -338,7 +338,7 @@ export const novemberEvents: MarathonEvent[] = [
       images: [{ src: '/images/marathon/round-lab-run-2026/kit-1.webp', alt: '2026 라운드랩 RUN 공식 기념품 안내 — 라운드랩 제품 4종' }],
       verifiedAt: '2026-10-20',
     },
-    lastVerified: '2026-10-20',
+    lastVerified: '2026-11-09',
   },
   {
     id: 'seoul-bbangbbang-run-2026',
@@ -707,7 +707,7 @@ export const novemberEvents: MarathonEvent[] = [
     location: '관문체육공원 (경기 과천시)',
     region: '경기',
     distances: ['하프', '10K', '5K'],
-    status: '마감',
+    status: '대회종료',
     isMajor: false,
     website: 'https://gcrun.co.kr/gcrun/',
     registrationStart: '2026-07-20',
@@ -726,7 +726,7 @@ export const novemberEvents: MarathonEvent[] = [
       ],
       verifiedAt: '2026-10-20',
     },
-    lastVerified: '2026-10-20',
+    lastVerified: '2026-11-09',
     description:
       '과천시체육회 주최로 관문체육공원에서 출발하는 하프·10K·5K 대회(40주년). 7월 20일 14시 시작한 1차 선착순 접수(총 3,000명)는 정원이 차서 마감됐고, 미결제분 결제 마감(7/26 자정) 뒤 7월 27일 14시 취소분 추가접수까지 열린 끝에 8월 18일 공식 공지로 전 코스 종목 신청이 마감됐습니다(입금·환불 기한 8/17 자정). 07:00 집결·08:00 출발이며 제한시간은 하프 2시간 30분·10km 1시간 30분·5km 1시간입니다(5km는 기록칩이 없어 기록 측정 불가). 참가 자격은 하프 19세 이상·10km 14세 이상이며 5km는 제한이 없습니다. 과천시민 5km는 25,000원(한정 수량).',
     raceInfo: {
