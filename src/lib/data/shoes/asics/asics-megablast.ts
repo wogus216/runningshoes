@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'asics-megablast',
   slug: 'asics-megablast',
@@ -16,92 +17,134 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 5,
   price: 299000,
-  description: '아식스 맥시멀 쿠션 라인의 최상위. FF Turbo² 폼으로 힐 45.1mm 스택에서 에너지 리턴 힐 73.0%·전족 73.8%(RunRepeat 실측). 218g 초경량으로 맥시멀 쿠션과 경쾌함을 동시에.',
-  oneliner: '45mm 맥시멀인데 218g, 무게를 잊은 구름 위 달리기',
-  editorComment: '메가블라스트의 진짜 매력은 "이렇게 큰 신발이 이렇게 가볍다니?"입니다. 힐 45.1mm 스택에서 218g은 본디 9(303g) 대비 85g 경량화, 거의 다른 신발 한 켤레 차이입니다. FF Turbo² 폼의 에너지 리턴이 힐 73.0%·전족 73.8%(RunRepeat 실측)로 맥시멀치고 반응성이 뛰어나 리커버리런부터 페이스런까지 소화합니다. 드롭은 브랜드 표기 8mm인데 실측은 9.9mm로, 뒤꿈치 착지에 조금 더 유리한 쪽입니다.\n\n사이즈·구매 가이드: 토박스 실측 74.3mm로 RunRepeat 평균(73.2mm)보다 약간 넓은 정도이며, 내부 너비는 93.7mm로 평균(95.2mm)보다 오히려 좁은 편입니다. 와이드 옵션이 없으므로 발볼이 많이 넓다면 신어보고 결정하는 편이 안전합니다. 정가는 299,000원입니다. 같은 쿠션화 계열로 더 부드러운 선택을 원하면 본디 9, 가격을 낮추고 싶다면 소닉블라스트가 대안입니다.',
-  tags: ['맥시멀', '초경량', '고반발', '쿠션화', '장거리'],
+  description: 'FF Turbo² · 비플레이트 로커 구조의 메가블라스트. 실험실 218g·힐/전족부 45.1/35.2mm. 한국 확인 정가299,000원.',
+  oneliner: '218g 실험실 무게 · FF Turbo² · 비플레이트 로커',
+  editorComment: '2026-11-09 원문 재확인. 한국 남녀공용1013A170.001 정가299,000원·230g(측정 사이즈 미공시) 확인. 확인한 BLACK/WHITE 색상의230~295mm는 품절이었으며 다른 색상·와이드SKU는 미확인입니다. DOR 소개 남성224g(US9),45/37mm·드롭8mm. 한국230g(사이즈 미공시),RR218g·9.9mm와 조건을 구분.  DOR의 Nathan은 US9에서 조금 짧고 타이트하다고 느꼈지만 본인은 사이즈를 올리지 않겠다고 했고, Matt은 US10에서 길이가 맞고 앞쪽 볼륨이 조금 있다고 봤습니다. Nathan은 폼의 흔들림을, Matt은 지오메트리의 지지를 느꼈습니다. A-TPU 재료 설명은 RR·DOR의 설명이며 한국 제조사 화학성분 확인으로 바꾸지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭93.7mm·엄지 부위74.3mm·높이24.2mm는 각각 다른 위치의 치수이며 개인 핏을 보장하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '맥시멀',
+    '고반발',
+    '쿠션화',
+    '장거리',
+  ],
   specs: {
     weight: 218,
     cushioning: 10,
     responsiveness: 9,
     stability: 6,
-    drop: 10,
-    durability: 500,
+    drop: 9.9,
   },
   biomechanics: {
-    stackHeight: { heel: 45.1, forefoot: 35.2 },
-    drop: 10,
+    stackHeight: {
+      heel: 45.1,
+      forefoot: 35.2,
+    },
+    drop: 9.9,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'FF Turbo² (A-TPU)',
-    optimalPace: '4:00-6:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
+    midsoleType: 'FF Turbo² · 비플레이트 로커',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
   targetUsers: {
-    recommended: ['장거리 러너', '쿠션 중시', '가벼운 맥시멀 원하는 러너', '중급-상급 러너', '리커버리 런'],
-    notRecommended: ['안정성 필요', '평발/과내전', '스피드 훈련 전용'],
+    recommended: [
+      '높은 스택의 비플레이트 폼을 시착 비교하려는 러너',
+      '실험실218g의 무게 조건을 다른 모델과 구분해 보는 러너',
+    ],
+    notRecommended: [
+      '얇은 혀·앞쪽 낮은 높이에서 압박이 생기는 경우',
+      '직접 착화에서 폼 흔들림이나 고정이 맞지 않는 경우',
+    ],
   },
-  features: ['힐 45.1mm 맥시멀 스택(실측)', 'FF Turbo² 폼 — 에너지 리턴 73.0/73.8%', '218g 초경량 (맥시멀 기준)', '로커 지오메트리', '토박스 74.3mm (평균 73.2)', '충격흡수 힐 160 SA (RunRepeat 실측)'],
+  features: [
+    'FF Turbo² · 비플레이트 로커',
+    '218g · 힐/전족부 45.1/35.2mm (RunRepeat)',
+    '힐/전족부 SA 160/144 · 에너지 리턴 73/73.8% (RunRepeat). ',
+    '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭93.7mm·엄지 부위74.3mm·높이24.2mm는 각각 다른 위치의 치수이며 개인 핏을 보장하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 299000,
-    streetPrice: 250000,
-    costPerKm: 598,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max'],
+    alternatives: [
+      'hoka-bondi-9',
+      'new-balance-1080-v14',
+      'brooks-glycerin-max',
+    ],
   },
   detailedSpecs: {
-    weight: '218g (RunRepeat 랩 실측, 남성 US 9) · 공식 224g',
-    stackHeight: '힐 45.1mm / 포어풋 35.2mm (RunRepeat 실측)',
-    drop: '8mm (브랜드) / 9.9mm (RunRepeat 실측)',
-    midsole: 'FF Turbo² (A-TPU)',
-    plate: '없음',
-    outsole: 'ASICSGRIP 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준 (토박스 74.3mm · RunRepeat 평균 73.2mm / 내부 너비 93.7mm로 평균보다 좁은 편)',
-    durability: '450-550km',
-    price: '₩299,000 (MSRP)',
-    costPerKm: '약 ₩598/km (500km 기준)',
-    footType: '중립 발',
-    landingPattern: 'RFS/MFS',
+    weight: '218g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성224g(US9),45/37mm·드롭8mm. 한국230g(사이즈 미공시),RR218g·9.9mm와 조건을 구분.',
+    stackHeight: '45.1/35.2mm (RunRepeat 힐/전족부 실측)',
+    drop: '9.9mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'FF Turbo² · 비플레이트 로커 · 30.8 AC(Asker C) · 힐/전족부 SA 160/144 · 에너지 리턴 73/73.8%. ',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 93.7mm / 엄지 부위 74.3mm / 엄지 높이 24.2mm. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭93.7mm·엄지 부위74.3mm·높이24.2mm는 각각 다른 위치의 치수이며 개인 핏을 보장하지 않습니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 남녀공용1013A170.001 정가299,000원·230g(측정 사이즈 미공시) 확인. 확인한 BLACK/WHITE 색상의230~295mm는 품절이었으며 다른 색상·와이드SKU는 미확인입니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 92,
-      text: '"맥시멀 쿠션인데 가볍고 반발력도 있는 거 없나요?"에 답하는 아식스 최상위 맥시멀 쿠션화입니다. 힐 45.1mm 스택(RunRepeat 실측)에서 218g을 실현한 건 이 체급에서 드문 조합입니다 — 본디 9(303g)보다 85g 가볍습니다. FF Turbo² 폼의 에너지 리턴이 힐 73.0%·전족 73.8%로 측정돼 맥시멀이면서도 반발이 살아 있습니다. 드롭은 브랜드 8mm 표기에 실측 9.9mm로 뒤꿈치 착지 쪽에 조금 더 유리합니다. 토박스는 74.3mm로 RunRepeat 평균(73.2mm)보다 약간 넓은 수준이고 와이드 옵션은 없습니다 — 발볼이 많이 넓다면 신어보고 판단하세요. 평발이라면 아치 지지가 부족하니 본디 9이나 카야노가 낫습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/asics-megablast',
+      text: '218g과 SA 160/144·에너지 리턴 73/73.8%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다.  한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭93.7mm·엄지 부위74.3mm·높이24.2mm는 각각 다른 위치의 치수이며 개인 핏을 보장하지 않습니다.',
     },
     {
-        userType: '모델 선택 — 본디 9 대비 85g 경량',
-        text: '맥시멀 쿠션화로 30km 이상을 소화할 때, 무게가 후반 피로를 좌우합니다. 218g으로 본디 9 계열보다 약 85g 가벼운데, 힐 45.1mm 스택을 유지하면서 이 무게라는 점이 이 모델의 핵심입니다. 쿠션량이 같아도 25km 이후 다리가 무거워지는 정도에서 차이가 벌어질 가능성이 있습니다. 다만 토박스 높이가 24.2mm로 RunRepeat 평균(27.1mm)보다 낮게 측정돼, 장거리에서 발이 부으면 발등 쪽 여유가 넉넉하지는 않습니다. 정가 299,000원으로 절대 가격은 높은 편이라, 장거리 비중이 큰 경우에 값이 정당화됩니다.',
-      },
-    {
-        userType: '예상 적합 — 리커버리와 템포를 한 켤레로',
-        text: '맥시멀 쿠션화는 보통 느린 페이스 전용이 되는데, 이 모델은 템포까지 커버하는 범위가 특징입니다. 힐 45.1mm 스택으로 관절 충격을 줄이면서 에너지 리턴이 힐 73.0%·전족 73.8%(실측)로 나와 4분대 후반 페이스에서도 반발이 살아 있고, 218g이라 맥시멀치고 무게 페널티가 작습니다. 백팩을 메는 출퇴근 러닝처럼 하중이 더해지는 상황에서도 충격 흡수 여유가 있습니다. 높은 스택을 굴리기 위한 로커 지오메트리가 들어가 전환은 매끄러운 편입니다.',
-      },
-    {
-        userType: '예상 적합 — 무릎 부담을 줄이면서 페이스도 내고 싶은 경우',
-        text: '무릎이나 정강이 부담 때문에 쿠션을 키우고 싶은데, 그렇다고 300g대 맥시멀화의 둔함은 피하고 싶은 경우에 맞는 구성입니다. 힐 45.1mm 스택이 착지 충격을 받아내는 동시에 218g이라 다리를 끌고 가는 느낌이 덜하고, 에너지 리턴이 힐 73.0%·전족 73.8%로 측정돼 페이스를 올려도 반발이 죽지 않습니다. 부상 예방 항목은 족저근막염·아킬레스건·무릎·신 스플린트 전반에서 높게 평가됩니다. 다만 안정성은 6/10이고 평발 적합성도 보통 수준이라, 과내전이 있다면 카야노 같은 안정화 쪽이 맞습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/asics-megablast-review-2025/',
+      text: 'DOR의 Nathan은 US9에서 조금 짧고 타이트하다고 느꼈지만 본인은 사이즈를 올리지 않겠다고 했고, Matt은 US10에서 길이가 맞고 앞쪽 볼륨이 조금 있다고 봤습니다. Nathan은 폼의 흔들림을, Matt은 지오메트리의 지지를 느꼈습니다. A-TPU 재료 설명은 RR·DOR의 설명이며 한국 제조사 화학성분 확인으로 바꾸지 않습니다.',
+    },
   ],
-  similarShoes: ['hoka-bondi-9', 'new-balance-1080-v14', 'brooks-glycerin-max', 'asics-sonicblast'],
-  // 네이버 링크 제거(2026-10-23 점검) — 커넥트 발급 내역에서 링크 비활성(SALE/disabled)
-  // 쿠팡 링크 제거(2026-10-23 상품 페이지 확인) — 표시가 397,000~444,000원(정가의 133~148% 리셀가)
-  purchaseLinks: [],
+  similarShoes: [
+    'hoka-bondi-9',
+    'new-balance-1080-v14',
+    'brooks-glycerin-max',
+    'asics-sonicblast',
+  ],
+  purchaseLinks: [
+  ],
   relatedPosts: [
-    { slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026', title: '메가블라스트 vs 보메로 18 — 쿠션 10 대 9, 80g 차' },
-    { slug: 'asics-megablast-review-2026', title: '아식스 메가블라스트 후기 — 힐 45.1mm에 218g' },
+    {
+      slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026',
+      title: '메가블라스트 vs 보메로 18 — 실측80g 차이·가격·한국 와이드',
+    },
+    {
+      slug: 'asics-megablast-review-2026',
+      title: '아식스 메가블라스트 후기 — 힐 45.1mm에 218g',
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 unisex · 1013A170.001',
+        url: 'https://www.asics.co.kr/p/AKR_112630201-001',
+        note: '한국 남녀공용1013A170.001 정가299,000원·230g(측정 사이즈 미공시) 확인. 확인한 BLACK/WHITE 색상의230~295mm는 품절이었으며 다른 색상·와이드SKU는 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 메가블라스트',
+        url: 'https://runrepeat.com/asics-megablast',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 218g · 45.1/35.2mm · 드롭9.9mm. SA 160/144 · ER 73/73.8%. ',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/asics-megablast-review-2025/',
+        note: 'DOR 소개 남성224g(US9),45/37mm·드롭8mm. 한국230g(사이즈 미공시),RR218g·9.9mm와 조건을 구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

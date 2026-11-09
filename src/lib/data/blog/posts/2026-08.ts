@@ -3563,132 +3563,47 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026',
-    slug: 'asics-megablast-vs-nike-vomero-18-max-cushion-2026',
-    title: '메가블라스트 vs 보메로 18 차이 — 쿠션 10점 대 9점, 80g이 갈린다 | 맥스쿠션 두 갈래',
-    description:
-      '아식스 메가블라스트와 나이키 보메로 18은 우리 DB에서 쿠션 10/10과 9/10을 받은 맥스쿠션입니다. 그런데 218g 대 298g로 80g이 차이 나고, 가격은 299,000원 대 189,000원으로 11만원, km당 비용은 598원 대 291원으로 두 배가 벌어집니다. 드롭도 10mm 대 14mm. 메가블라스트는 드물게 토박스가 넓고, 보메로는 좁은 대신 와이드 옵션이 있습니다. 어느 쪽이 내 발과 지갑에 맞는지 정리했습니다.',
-    thumbnail: '/images/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-10',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['메가블라스트', '아식스 메가블라스트', '보메로 18', '나이키 보메로', '맥스쿠션', '쿠션화', 'FF Turbo²', 'ZoomX', '러닝화 비교', '장거리 러닝화'],
+    id: "asics-megablast-vs-nike-vomero-18-max-cushion-2026",
+    slug: "asics-megablast-vs-nike-vomero-18-max-cushion-2026",
+    title: "메가블라스트 vs 보메로 18 — 실측80g 차이·가격·한국 와이드",
+    description: "메가블라스트218g과 보메로18 298g의 실측 조건, 한국 정가299,000원·189,000원, 내부 치수와 판매 폭을 비교합니다. 에너지 리턴을 임상 보호 등급과 구분합니다.",
+    thumbnail: "/images/shoes/asics/megablast/1.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-10",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "메가블라스트",
+      "보메로18",
+      "신발 비교",
+      "와이드"
+    ],
     faqs: [
       {
-        question: '쿠션 점수가 한 칸 차이인데 뭐가 다른가요?',
-        answer:
-          '쿠션 점수는 10 대 9로 한 칸 차이지만, 더 큰 차이는 성격입니다. 메가블라스트는 힐 45.1mm·전족 35.2mm 스택(RunRepeat 실측)을 218g에 담아 가볍게 튀는 쪽이고(반발 9/10), 보메로 18은 힐 43mm에 298g으로 무겁고 부드럽게 가라앉는 쪽입니다(반발 7/10). 같은 "푹신함"이라도 하나는 통통 튀고 하나는 푹 잠깁니다.',
+        "question": "메가블라스트가 더 넓으니 발볼 넓으면 그쪽인가요?",
+        "answer": "엄지 부위는 더 넓지만 최광폭과 높이는 다른 값입니다. 개인 핏을 한 가지 수치로 판정하지 않습니다."
       },
       {
-        question: '가격 차이가 11만원인데 그만한가요?',
-        answer:
-          'km당 비용으로 보면 격차가 더 큽니다 — 메가블라스트 598원, 보메로 18 291원으로 두 배입니다. 메가블라스트가 299,000원에 내구 500km, 보메로가 189,000원에 650km이기 때문입니다. 순수하게 경제성만 따지면 보메로가 압도적이고, 메가블라스트의 값은 218g이라는 무게와 힐 45mm 스택의 조합에 붙습니다.',
+        "question": "보메로18 드롭13.9mm면 아킬레스에 더 좋은가요?",
+        "answer": "실험실 드롭만으로 질환별 치료 우위를 정하지 않습니다. 한국 공시10mm와 실측13.9mm도 구분하세요."
       },
       {
-        question: '발볼이 넓으면 어느 쪽인가요?',
-        answer:
-          '메가블라스트입니다. 우리 DB에서 토박스가 넓은 편(wide)으로 분류된 드문 신발이라 와이드 옵션 없이도 발볼 넓은 러너가 신을 수 있습니다. 보메로 18은 토박스가 좁은 편이지만 와이드 옵션이 따로 있으니, 그쪽을 선택하면 됩니다.',
-      },
-      {
-        question: '드롭 14mm는 높은 편 아닌가요?',
-        answer:
-          '높습니다. 보메로 18의 14mm(랩 실측, 브랜드 표기 10mm)는 요즘 러닝화 중에서도 상당히 큰 편이고, 뒤꿈치가 그만큼 들려 아킬레스건 부담이 적습니다(등급도 excellent). 반대로 낮은 드롭에 익숙한 미드풋 러너에게는 어색할 수 있습니다. 메가블라스트는 RunRepeat 실측 9.9mm(브랜드 8mm)로 표준 범위입니다.',
-      },
+        "question": "가격 차이가 수명으로 상쇄되나요?",
+        "answer": "공통 수명km를 확인하지 못해km당 비용이나 교체 주기 우위를 계산하지 않습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>쿠션 10/10 대 9/10 맥스쿠션, 무게는 80g이 갈립니다</strong> — <a href="/shoes/asics-megablast">메가블라스트</a> 218g / <a href="/shoes/nike-vomero-18">보메로 18</a> 298g</li>
-    <li><strong>성격이 반대입니다</strong> — 메가블라스트는 힐 45.1mm 스택을 가볍게 담아 튀는 쪽(반발 9), 보메로는 무겁고 부드럽게 가라앉는 쪽(반발 7, 드롭 14mm)</li>
-    <li><strong>돈 차이가 큽니다</strong> — 299,000원 대 189,000원, km당 598원 대 <strong>291원</strong>으로 두 배</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>가벼운 맥스쿠션으로 페이스까지 내고 싶다면 메가블라스트</strong>, <strong>느리게 오래 밟는 회복런 전용이면 보메로 18</strong>입니다. 예산이 기준이면 보메로가 km당 절반이고, 발볼이 넓으면 메가블라스트가 와이드 없이도 들어갑니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>메가블라스트</th><th>보메로 18</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>299,000원</td><td><strong>189,000원</strong></td></tr>
-    <tr><td>무게</td><td><strong>218g</strong></td><td>298g (80g 무거움)</td></tr>
-    <tr><td>스택 (힐/전족)</td><td><strong>45.1 / 35.2mm</strong></td><td>43 / 29mm <small>(브랜드 46 / 36mm)</small></td></tr>
-    <tr><td>드롭</td><td>9.9mm <small>(브랜드 8mm)</small></td><td><strong>14mm</strong> <small>(브랜드 10mm)</small></td></tr>
-    <tr><td>미드솔</td><td>FF Turbo² (A-TPU)</td><td>ZoomX + ReactX</td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>10</strong> / <strong>9</strong></td><td>9 / 7</td></tr>
-    <tr><td>안정성</td><td>6/10</td><td><strong>7/10</strong></td></tr>
-    <tr><td>토박스</td><td><strong>넓은 편</strong></td><td>좁은 편</td></tr>
-    <tr><td>와이드 옵션</td><td>없음</td><td><strong>있음</strong></td></tr>
-    <tr><td>평발 적합성</td><td>보통</td><td><strong>양호</strong></td></tr>
-    <tr><td>내구 · km당</td><td>500km · 598원</td><td><strong>650km · 291원</strong></td></tr>
-    <tr><td>적정 페이스</td><td>4:00–6:30 /km</td><td>5:30–7:00 /km</td></tr>
-  </tbody>
-</table>
-
-<p><small>스택·드롭은 두 신발 모두 랩 실측끼리 비교했고(메가블라스트는 RunRepeat), 괄호는 브랜드 표기입니다. 무게는 신발 DB 값(남성 US 9)이며 한국 공식 정가를 씁니다(2026-10-23 기준). 내구 km는 아웃솔 마모 기준 추정치로, <a href="/blog/running-shoe-500km-replacement-myth-2026">숫자 하나로 교체 시점을 정하면 안 됩니다</a>.</small></p>
-
-<h2>쿠션 10 대 9 — 점수 한 칸보다 큰 차이</h2>
-
-<p>쿠션 점수는 메가블라스트 10, 보메로 18이 9로 한 칸 차이입니다. 그런데 스택·무게·반발 수치를 나란히 놓으면 성격이 완전히 다른 신발입니다.</p>
-
-<p><strong>메가블라스트는 힐 45.1mm 스택을 218g에 담았습니다.</strong> FF Turbo² 폼 하나로 채워 무게를 극단적으로 줄였고, 그래서 반발이 9/10입니다. 높이 올라간 만큼 튕겨 나오는 감각이 살아 있어 적정 페이스가 <strong>4:00~6:30</strong>으로 빠른 쪽까지 열려 있습니다.</p>
-
-<p><strong>보메로 18은 43mm 스택에 298g입니다.</strong> ZoomX와 ReactX를 겹쳐 부드러움을 우선했고 반발은 7/10. 드롭 14mm로 뒤꿈치가 확 들려 있어 힐 착지에서 굴러가듯 넘어갑니다. 적정 페이스는 <strong>5:30~7:00</strong>으로 느린 쪽 전용에 가깝습니다.</p>
-
-<p>정리하면 <strong>메가블라스트는 "가벼운 맥스쿠션", 보메로 18은 "푹 잠기는 회복화"</strong>입니다. 겹치는 페이스대가 5:30~6:30 한 시간대뿐이라, 주력 페이스만 정해도 답이 나옵니다.</p>
-
-<h2>메가블라스트 — 218g에 45mm를 담은 쪽</h2>
-
-<p>이 무게에 이 스택은 흔치 않습니다. 부상 예방 등급이 <strong>네 부위 모두 excellent</strong>로, 우리 DB에서도 드문 성적입니다. 게다가 <strong>토박스가 넓은 편</strong>이라 와이드 옵션 없이도 발볼 넓은 러너가 들어갑니다 — 한국 러너에게 실질적인 장점입니다.</p>
-
-<p>약점은 돈입니다. <strong>299,000원에 내구 500km, km당 598원</strong>으로 이 비교에서 두 배 비쌉니다. 안정성 6/10이라 지쳤을 때 높은 스택이 흔들릴 여지도 있습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 장거리를 빠르게 소화하려는 분, 발볼이 넓은 분, 무게에 민감한 분, 부상 이력이 여럿인 분.</p>
-
-<h2>보메로 18 — 느리게 오래 밟는 쪽</h2>
-
-<p>189,000원에 650km, <strong>km당 291원</strong>. 맥스쿠션 중에서 경제성이 뛰어난 편입니다. 드롭 14mm 덕에 아킬레스건과 족저근막 등급이 excellent이고, 평발 적합성도 양호입니다.</p>
-
-<p>약점은 298g의 무게와 반발 7/10입니다. 페이스를 올리려 하면 무겁고 둔하게 느껴집니다. 토박스도 좁은 편이라 발볼이 넓다면 <strong>반드시 와이드 옵션</strong>을 봐야 합니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 회복런·이지런 전용 한 켤레가 필요한 분, 아킬레스가 약한 분, 총비용을 아끼려는 분, 평발인 분.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>주력 페이스가 4~5분대</strong> → <a href="/shoes/asics-megablast">메가블라스트</a>(보메로는 설계 범위 밖)</li>
-  <li><strong>주력 페이스가 6~7분대</strong> → <a href="/shoes/nike-vomero-18">보메로 18</a></li>
-  <li><strong>발볼이 넓다</strong> → 메가블라스트(토박스 자체가 넓음) 또는 보메로 와이드</li>
-  <li><strong>아킬레스가 약하다</strong> → 보메로 18(드롭 14mm)</li>
-  <li><strong>총비용을 아끼고 싶다</strong> → 보메로 18(km당 291원, 절반)</li>
-  <li><strong>무게가 중요하다</strong> → 메가블라스트(218g)</li>
-  <li><strong>같은 값대 다른 쿠션화</strong> → <a href="/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026">페가수스 프리미엄 vs 벨로시티 4</a>도 함께 보세요</li>
-</ul>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 로테이션으로 둘 다 쓰면 어떤가요?</p>
-    <p class="faq-a">A. 역할이 겹치지 않아 궁합은 좋습니다 — 빠른 장거리는 메가블라스트, 회복런은 보메로. 다만 둘 다 맥스쿠션이라 총 49만원을 쿠션화에만 쓰는 셈입니다. 예산이 한정적이라면 성격이 다른 데일리화를 하나 더 두는 편이 실용적입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 메가블라스트가 부상 등급 전부 excellent면 최고 아닌가요?</p>
-    <p class="faq-a">A. 부상 항목만 보면 그렇습니다. 다만 등급은 설계 특성에서 도출한 적합성 평가이지 보장이 아니고, 안정성 6/10이라 과내전이 심한 러너에게는 별개 문제가 남습니다. 그리고 km당 598원이라는 비용은 부상 등급이 상쇄해주지 않습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 부상 예방 등급은 설계 특성에서 도출한 적합성 평가이며 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
-`,
+<div class="tldr"><span class="tldr-label">비교의 출발점</span><ul><li>RunRepeat 무게는218g 대298g으로80g 차이. 한국 공시 무게와는 조건이 다릅니다.</li><li>확인한 한국 정가 차이는110,000원입니다. 공통 수명km가 없어km당 비용은 계산하지 않습니다.</li><li>보메로18은 한국 남녀와이드SKU 확인, 메가블라스트의 한국와이드SKU는 미확인입니다. 표준 검체 너비를 개인 핏으로 단정하지 않습니다.</li></ul></div>
+<h2>실측을 나란히 비교</h2>
+<table><thead><tr><th>RunRepeat 항목</th><th>메가블라스트</th><th>보메로18</th></tr></thead><tbody><tr><td>무게</td><td>218g</td><td>298g</td></tr><tr><td>힐/전족부 스택</td><td>45.1/35.2mm</td><td>42.5/28.6mm</td></tr><tr><td>드롭</td><td>9.9mm</td><td>13.9mm</td></tr><tr><td>힐/전족부 SA</td><td>160/144</td><td>147/116</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>73.0/73.8%</td><td>56.9/58.9%</td></tr><tr><td>내부 최광폭</td><td>93.7mm</td><td>95.6mm</td></tr><tr><td>엄지 부위 너비/높이</td><td>74.3/24.2mm</td><td>69.6/26.2mm</td></tr></tbody></table>
+<p><a href="https://runrepeat.com/asics-megablast" target="_blank" rel="noopener noreferrer">메가블라스트 원문</a> · <a href="https://runrepeat.com/nike-vomero-18" target="_blank" rel="noopener noreferrer">보메로18 원문</a>. SA·에너지 리턴은 실험실 지표이며 개인 기록 향상률이나 질환 예방·치료 효과가 아닙니다.</p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p>
+<h2>한국 공시와 판매 규격</h2><p>메가블라스트는 남녀공용1013A170.001 정가299,000원·230g(사이즈 미공시)을 확인했습니다. 보메로18은 남성일반HM6803-005·남성와이드IF0514-002·여성와이드IF0515-002 정가189,000원, 한국 공시 남성325g(280mm)·여성263g(250mm),드롭10mm입니다. 확인한 메가블라스트 색상은 품절이었으며 다른 색상과 보메로의 실시간 재고는 구매 전에 확인하세요. <a href="https://www.asics.co.kr/p/AKR_112630201-001" target="_blank" rel="noopener noreferrer">메가블라스트 한국 공식</a> · <a href="/shoes/nike-vomero-18">보메로18의 한국SKU별 원문</a></p>
+<h2>실제 시착 의견은 누구의 조건인지 확인</h2><p>메가블라스트는 FF Turbo² 비플레이트 구조입니다. DOR의 Nathan은 타이트한 착화와 폼의 흔들림을 느꼈고 Matt은 길이가 맞고 바닥 형태의 지지를 느꼈습니다. 보메로18은 ZoomX 상부·ReactX 하부이며, Matt은 쉬운 러닝·롱런·걷기에 활용했지만 빠른 훈련의 무게와 초기 힐 들림을 지적했습니다. <a href="https://www.doctorsofrunning.com/asics-megablast-review-2025/" target="_blank" rel="noopener noreferrer">메가블라스트 DOR</a> · <a href="https://www.doctorsofrunning.com/nike-vomero-18-review-2025/" target="_blank" rel="noopener noreferrer">보메로18 DOR</a></p>
+<h2>어떤 차이를 먼저 시착할까?</h2>
+<table><thead><tr><th>궁금한 점</th><th>확인 방법</th></tr></thead><tbody><tr><td>무게와 전환감</td><td>익숙한 모델과 비교하되 특정 페이스를 제품의 허용선으로 정하지 않기</td></tr><tr><td>앞쪽 공간</td><td>엄지 옆·윗면 압박과 끈을 조였을 때의 변화를 각각 기록</td></tr><tr><td>한국 와이드</td><td>보메로의 확인SKU와 사이즈·색상별 재고 대조. 둘레 증가를 직선 폭 증가로 대입하지 않기</td></tr><tr><td>가격</td><td>확인 정가 차이110,000원과 실제 구매가·교환 조건을 분리</td></tr><tr><td>불편 이력</td><td>기존 신발·양말·인솔을 가지고 고정·압박 차이 확인</td></tr></tbody></table>
+<p>높은 드롭을 아킬레스 통증 치료의 합격선으로 삼거나, 넓은 엄지 부위 하나로 발볼 넓은 모든 러너에게 맞는다고 정하지 않습니다. 통증이 있다면 <a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스 통증과 지침의 적용 범위</a>를 확인하세요.</p>
+<p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
   },
   {
     id: 'nike-pegasus-premium-vs-puma-velocity-nitro-4-2026',

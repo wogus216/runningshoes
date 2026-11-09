@@ -4958,74 +4958,42 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'hoka-arahi-8-review',
-    slug: 'hoka-arahi-8-review',
-    title: '호카 아라히 8 후기 | 가비오타의 H-Frame을 얹었다 — 259g 라이트 안정화',
-    description:
-      '아라히 8은 가비오타의 H-Frame 안정화 시스템을 채택해 39.4mm 높은 스택에도 안정성을 유지합니다. 16.4 HA 소프트 폼은 전작 대비 크게 부드러워졌고, 259g은 카야노 32(295g)보다 36g 가볍습니다. 199,000원, 와이드·X-Wide 옵션까지 제공. 다만 통기성이 매우 약해 여름엔 불편합니다.',
-    thumbnail: '/images/blog/hoka-arahi-8-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['호카 아라히8', '안정화', 'H-Frame', '평발'],
+    id: "hoka-arahi-8-review",
+    slug: "hoka-arahi-8-review",
+    title: "호카 아라히 8 분석 — H-Frame·실측 드롭·피팅 확인",
+    description: "아라히 8의 H-Frame 구조, RunRepeat 259g·실측 드롭11.3mm와 DOR 공시8mm를 구분합니다. 한국 정가·판매 폭의 미확인 범위와 착화 시 확인할 점을 정리합니다.",
+    thumbnail: "/images/shoes/hoka/arahi8/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "호카 아라히8",
+      "H-Frame",
+      "러닝화 분석",
+      "피팅"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>가비오타의 H-Frame 안정화 시스템을 채택</strong>해 39.4mm 높은 스택에도 안정성(9/10)을 유지합니다</li>
-    <li><strong>259g — <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(295g)보다 36g 가볍습니다.</strong> 안정화 중 가벼운 축입니다</li>
-    <li><strong>통기성이 매우 약합니다.</strong> 여름엔 불편하니 계절을 나눠 운용하는 편이 좋습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>평발·과내전이 있으면서 단단한 안정화가 부담스러웠던 러너</strong>에게 맞습니다. 199,000원으로 안정화 카테고리 최고 가성비입니다.</p>
-  </div>
-</div>
-
-<h2>가비오타의 H-Frame, 라이트 안정화에 이식</h2>
-<p>아라히 8은 가비오타의 <strong>H-Frame</strong>을 채택해 39.4mm 높은 스택에도 안정성을 유지합니다. 16.4 HA 소프트 CMEVA는 전작(v7) 대비 크게 개선됐고, 138 SA 충격흡수는 <a href="/shoes/asics-gel-nimbus-28">GT-2000 14</a>(132 SA)보다 높습니다. H-Frame이 아치를 받치는 방식인데 부드러운 폼과 결합돼, 지지를 유지하면서도 딱딱하게 눌리는 감각이 적습니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준이지만 <strong>와이드·X-Wide 옵션까지 제공</strong>돼 발볼 걱정 없이 선택할 수 있습니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 excellent(최상위)입니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. 전작 7의 단단함이 부담스러웠다면 특히 체감이 큽니다</li>
-</ul>
-
-<h2>통기성 — 계절을 나눠 쓸 것</h2>
-<p>어퍼 통기성이 뚜렷한 약점이라 한여름에는 발이 젖을 정도로 열이 찹니다. 가을~봄 시즌용으로 두고 여름은 <a href="/shoes/hoka-mach-6">마하 6</a> 같은 통기성 좋은 모델로 나누는 운용이 현실적입니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>199,000원, 550km 기준 km당 약 362원으로 안정화 중 최고 가성비입니다. 더 강한 안정성이 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>, 보다 유연한 안정화를 원하면 <a href="/shoes/brooks-adrenaline-gts-25">어드레날린 GTS 25</a>가 대안입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>평발·과내전 러너</strong> — 라이트 안정화가 필요한 정도</li>
-  <li><strong>단단한 안정화가 부담스러웠던 러너</strong> — H-Frame + 소프트 폼의 조합</li>
-  <li><strong>가벼운 안정화를 원하는 러너</strong> — 259g</li>
-  <li>반대로 <strong>스피드 러닝이나 젖은 노면 위주</strong>라면 맞지 않습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>아라히 8은 오랫동안 기다려온 업데이트입니다. 가비오타의 검증된 안정화 기술을 라이트급에 이식하면서 무게 부담 없이 지지력을 챙겼고, 가격까지 최고 가성비 구간입니다. 통기성이라는 명확한 약점만 감안하면 실패 확률이 낮은 선택입니다.</p>
-`,
+<div class="tldr"><span class="tldr-label">아라히 8 구매 전</span><ul><li>아라히 8은 전작 J-Frame에서 H-Frame으로 바뀐 CMEVA 안정화입니다.</li><li>RunRepeat 실측 드롭11.3mm와 DOR 공시8mm는 다른 출처·조건의 값입니다.</li><li>한국 현재 정가·와이드SKU는 확인하지 못했습니다. 해외 폭 옵션을 한국 판매로 옮기지 않습니다.</li></ul></div>
+<h2>구조에서 달라진 점</h2><p>확인한 원문은 CMEVA와 H-Frame 구조를 설명합니다. 슈퍼크리티컬 폼이라고 확정하지 않습니다. DOR의 Matt은 이전 J-Frame보다 지지의 개입이 덜 강하게 느껴졌다고 평가했지만, 개인 의견을 교정 강도나 평발 치료 등급으로 바꾸지 않습니다. <a href="https://www.doctorsofrunning.com/hoka-arahi-8-review-2025/" target="_blank" rel="noopener noreferrer">DOR 원문</a></p>
+<h2>수치의 조건을 나눠 보세요</h2>
+<table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>259g</td><td>남성264g(US9)·여성218g(US8)</td></tr><tr><td>힐/전족부 스택</td><td>39.4/28.1mm</td><td>41/33mm</td></tr><tr><td>드롭</td><td>11.3mm</td><td>8mm</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>95.3/73.6/27.6mm</td><td>개인 착화와 별도</td></tr></tbody></table>
+<p>RR 경도는 현재35.8 AC입니다. 기존16.4 HA 표기를 같은 척도의 최신 값으로 사용하지 않습니다. 힐/전족부 SA138/113과 에너지 리턴54.4/60.9%는 실험실 지표이며, 통증 감소율이나 허용 페이스가 아닙니다. <a href="https://runrepeat.com/hoka-arahi-8" target="_blank" rel="noopener noreferrer">RunRepeat 원문</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p>
+<h2>리뷰어가 실제로 불편했던 부분</h2><p>DOR의 Matt은 US10에서 길이가 맞고 전작보다 여유 있는 어퍼라고 느꼈지만, 앞코 테이퍼·어퍼 열감·혀 움직임·카운터 자극과 힐 전환을 지적했습니다. RR의 카운터 편안함·마모 시험 평가는 개인 착화와 다른 결과입니다. 여름 내내 못 신는다거나 특정 월부터 다른 신발로 바꿔야 한다는 뜻으로 확대하지 않습니다.</p>
+<h2>한국 판매 조건</h2><p>호카 코리아가 연결한 공식 스토어에서 정확 모델명으로 검색했지만 해당 상품을 찾지 못했습니다. 현재 정가·성별·폭·SKU·재고는 미확인으로 두며, 국내 미출시·단종으로 판단하지 않습니다. 기존199,000원·한국X-Wide 판매 단정은 유지하지 않았습니다. <a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">호카 코리아 공식 스토어 연결</a> · <a href="https://brand.naver.com/hoka/search?q=%EC%95%84%EB%9D%BC%ED%9E%88%208" target="_blank" rel="noopener noreferrer">확인한 검색 범위</a></p>
+<h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p><p><a href="/shoes/hoka-arahi-8">아라히 8 출처·조건 상세</a> · <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택 질문</a></p>
+<p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
     faqs: [
       {
-        question: '카야노 32 대신 이걸 사도 될까요?',
-        answer:
-          '가벼운 안정화를 원한다면 좋은 대안입니다. 259g으로 카야노 32(295g)보다 36g 가볍고 가격도 같은 199,000원입니다. 다만 더 강한 교정이 필요하다면 카야노 쪽이 검증된 선택입니다.',
+        "question": "아라히 8은 드롭8mm인가요,11.3mm인가요?",
+        "answer": "DOR 공시8mm와 RR 실측11.3mm를 구분합니다. 제조사 소개와 실험실 결과를 하나로 합치지 않습니다."
       },
       {
-        question: '여름에도 신을 수 있나요?',
-        answer:
-          '가능하지만 최적은 아닙니다. 통기성이 약해 한여름엔 발이 뜨거워질 수 있습니다. 여름철엔 마하 6 같은 통기성 좋은 모델을 병행하는 것을 권합니다.',
-      },
+        "question": "한국 와이드·X-Wide가 있나요?",
+        "answer": "이번 공식 스토어 검색에서는 현재SKU를 확인하지 못했습니다. 미확인을 전체 미판매로 해석하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-09",
   },
   {
     id: 'hoka-cielo-x1-review',

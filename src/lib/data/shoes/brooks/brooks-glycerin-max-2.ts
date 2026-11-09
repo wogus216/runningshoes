@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'brooks-glycerin-max-2',
   slug: 'brooks-glycerin-max-2',
@@ -12,96 +13,140 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4,
-  status: 'new',
   price: 249000,
-  description: '브룩스의 맥시멀 쿠션화. DNA Tuned 미드솔과 47mm 힐 스택으로 극강의 쿠셔닝과 로커 기반 스무스 라이드를 제공합니다.',
-  oneliner: '318g(랩)에 47mm 스택(브랜드), 극강의 맥시멀 쿠셔닝',
-  editorComment: '글리세린 맥스 2는 47mm 힐/41mm 전족부라는 맥시멀 스택으로 극강의 충격흡수를 제공합니다. RunRepeat 랩(남성 US 9 기준)으로는 힐 45.4mm·포어풋 37.3mm, 드롭 8.1mm, 무게 318g, 힐 충격흡수 137 SA이고, 경도는 30.9 AC로 v1(31.9 AC)과 거의 같습니다. 에너지 리턴은 포어풋 49.6%로 랩 평균(61.5%)보다 낮아 반발보다 쿠션 위주입니다. 무거운 편이지만, 리커버리런과 이지데이에 최적화된 신발입니다. 24만 9천원으로 글리세린 맥스 v1(23만 9천원)보다 1만원 올랐고, 본디 9(22만 9천원)보다 2만원 비싸지만 스택이 7mm 더 높습니다.\n\n사이즈·구매 가이드: RunRepeat 랩 토박스는 73.4mm로 평균(73.2mm) 수준이고, 전체 폭 96.5mm는 랩이 "slightly roomier than the average running shoe"라고 적은 수치라 보통 발볼이면 정사이즈부터 보면 됩니다. 정가 249,000원에 예상 수명 500~700km(추정) 기준 km당 약 360~500원으로, 맥시멀 쿠션화 중 관절 보호 성능 대비 납득 가능한 수준입니다. 더 부드러운 맥시멀을 원하면 본디 9, 가격을 낮추고 싶다면 글리세린 맥스 v1이나 님버스 28이 대안입니다.',
-  tags: ['쿠션화', '맥시멀', '리커버리', '장거리'],
-
+  description: '질소 주입 DNA Tuned · 로커 구조의 글리세린 맥스 2. 실험실 318g·힐/전족부 45.4/37.3mm. 한국 확인 정가249,000원.',
+  oneliner: '318g 실험실 무게 · 질소 주입 DNA Tuned · 로커',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 원문 남성 MEDIUM 1104791D131, 여성 MEDIUM 1204681B131 정가249,000원 확인. 현재 할인·재고·한국 와이드SKU는 미확인입니다. DOR 소개 남성312g(US9)·여성283g(US8),47/41mm·드롭6mm. RR 브랜드칸45/39mm·6mm, 실측45.4/37.3mm·8.1mm와 분리. RR 전족부 에너지 리턴은 본문51.3%·결과표49.6%가 충돌해 확정값을 비웁니다. 힐49.1%는 본문 값입니다. DOR의 Matt과 David은 전작보다 단단한 주행감을 느꼈습니다. RR의 폼 경도·부드러움 설명과 전체 신발의 착화감은 같은 측정이 아닙니다. Matt은 US10에서 앞코 테이퍼와 낮은 볼륨·어퍼 열감·혀 움직임을 지적했습니다. 한국 남녀 MEDIUM 상품을 확인했지만 와이드 전체 미판매 여부는 미확인입니다. RR 엄지 높이24.0mm와 DOR의 앞쪽 윗면 압박 의견을 시착 때 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '맥시멀',
+    '리커버리',
+    '장거리',
+  ],
   specs: {
     weight: 318,
     cushioning: 8,
     responsiveness: 6,
     stability: 7,
-    drop: 6,
-    durability: 600,
+    drop: 8.1,
   },
-
   biomechanics: {
-    stackHeight: { heel: 47, forefoot: 41 },
-    drop: 6,
+    stackHeight: {
+      heel: 45.4,
+      forefoot: 37.3,
+    },
+    drop: 8.1,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'DNA Tuned',
-    optimalPace: '5:30-7:00+ min/km',
+    midsoleType: '질소 주입 DNA Tuned · 로커',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['리커버리 러닝', '장거리 이지런', '맥시멀 쿠셔닝 선호', '무릎/관절 보호 필요', '체중 있는 러너'],
-    notRecommended: ['빠른 페이스 러닝', '경량화 선호', '템포런/인터벌'],
+    recommended: [
+      'DNA Tuned와 로커의 쉬운 러닝 착화를 비교하려는 러너',
+      '높은 스택의 전환감과 실제 내부 공간을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '발가락 위 압박·열감이 생기는 경우',
+      '가벼운 무게와 지속적인 빠른 러닝이 우선인 경우',
+    ],
   },
-
-  features: ['47mm 맥시멀 힐 스택', 'DNA Tuned 미드솔', '강화된 로커 지오메트리', '트리플 자카드 메쉬 어퍼', '랩 토박스 73.4mm (평균 수준)'],
-
+  features: [
+    '질소 주입 DNA Tuned · 로커',
+    '318g · 힐/전족부 45.4/37.3mm (RunRepeat)',
+    '힐/전족부 SA 137/128 · 에너지 리턴 49.1/미확정% (RunRepeat). RR 전족부 에너지 리턴은 본문51.3%·결과표49.6%가 충돌해 확정값을 비웁니다. 힐49.1%는 본문 값입니다.',
+    '한국 남녀 MEDIUM 상품을 확인했지만 와이드 전체 미판매 여부는 미확인입니다. RR 엄지 높이24.0mm와 DOR의 앞쪽 윗면 압박 의견을 시착 때 확인하세요.',
+  ],
   priceAnalysis: {
     msrp: 249000,
-    costPerKm: 415,
     valueRating: 6,
     priceTier: 'premium',
-    alternatives: ['hoka-bondi-9', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+    alternatives: [
+      'hoka-bondi-9',
+      'asics-gel-nimbus-28',
+      'new-balance-1080-v15',
+    ],
   },
-
   detailedSpecs: {
-    weight: '318g (RunRepeat 랩 실측, 남성 US 9) · 기존 표기 312g(US M9)',
-    stackHeight: '힐 45.4mm / 포어풋 37.3mm (RunRepeat 랩 실측, 남성 US 9) · 브랜드 47/41mm',
-    drop: '8.1mm (RunRepeat 랩 실측) · 브랜드 6mm',
-    midsole: 'DNA Tuned (질소 주입 폼)',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '트리플 자카드 메쉬',
-    width: '표준 — RunRepeat 랩 토박스 73.4mm(평균 73.2mm, 남성 US 9), Width/Fit 96.5mm. 랩 본문 "It’s not the roomiest design we’ve tested, but it should comfortably work for most runners". 한국 공식몰은 남 MEDIUM(D)·여 MEDIUM(B)만 판매, 와이드 없음(2026-10-20 확인)',
-    durability: '600km',
-    price: '₩249,000',
-    costPerKm: '약 ₩415/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '힐스트라이크~미드풋',
+    weight: '318g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성312g(US9)·여성283g(US8),47/41mm·드롭6mm. RR 브랜드칸45/39mm·6mm, 실측45.4/37.3mm·8.1mm와 분리.',
+    stackHeight: '45.4/37.3mm (RunRepeat 힐/전족부 실측)',
+    drop: '8.1mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: '질소 주입 DNA Tuned · 로커 · 30.9 AC(Asker C) · 힐/전족부 SA 137/128 · 에너지 리턴 49.1/미확정%. RR 전족부 에너지 리턴은 본문51.3%·결과표49.6%가 충돌해 확정값을 비웁니다. 힐49.1%는 본문 값입니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 96.5mm / 엄지 부위 73.4mm / 엄지 높이 24mm. 한국 남녀 MEDIUM 상품을 확인했지만 와이드 전체 미판매 여부는 미확인입니다. RR 엄지 높이24.0mm와 DOR의 앞쪽 윗면 압박 의견을 시착 때 확인하세요.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 원문 남성 MEDIUM 1104791D131, 여성 MEDIUM 1204681B131 정가249,000원 확인. 현재 할인·재고·한국 와이드SKU는 미확인입니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 78,
-      text: '47mm 힐 스택이 주는 맥시멀 쿠셔닝은 리커버리와 이지데이에 최적입니다. 249,000원에 318g(랩) 무게로 본디 9(229,000원)보다 2만원 비싸지만, 스택이 7mm 더 높아 SA 충격흡수가 탁월하고 무릎 보호 성능은 excellent 등급입니다. 랩 경도는 30.9 AC로 v1(31.9 AC)과 거의 같은 부드러운 쪽입니다. 600km 내구성이면 km당 약 415원으로 가성비는 높지 않지만, 관절 보호가 절실한 러너에게 투자 가치가 있습니다. 한국 공식몰에는 와이드 없이 MEDIUM만 있어 발볼이 아주 넓다면 시착이 먼저이고, 평발 호환성은 good 등급입니다. 토박스는 랩 73.4mm로 평균 수준이며, 6분/km 이상 느린 이지런 전용으로 적합합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/brooks-glycerin-max-2',
+      text: '318g과 SA 137/128·에너지 리턴 49.1/미확정%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 전족부 에너지 리턴은 본문51.3%·결과표49.6%가 충돌해 확정값을 비웁니다. 힐49.1%는 본문 값입니다. 한국 남녀 MEDIUM 상품을 확인했지만 와이드 전체 미판매 여부는 미확인입니다. RR 엄지 높이24.0mm와 DOR의 앞쪽 윗면 압박 의견을 시착 때 확인하세요.',
     },
     {
-        userType: '예상 적합 — 충격 완화 최우선의 저강도 러닝',
-        text: '착지 충격을 줄이는 것이 최우선인 저강도 러닝·걷기 병행 용도에 맞는 맥시멀 쿠션화입니다. 스택이 두꺼워 아스팔트나 완만한 산길에서 관절로 올라오는 충격을 크게 줄이는 구조입니다. 다만 318g(랩)으로 이 등급에서도 무거운 축이라 페이스를 올리는 용도에는 맞지 않습니다. 랩 토박스 73.4mm·전체 폭 96.5mm로 평균 이상이라 보통 발볼이면 정사이즈부터 시착해 보면 됩니다. 무릎 통증이 반복된다면 신발 이전에 훈련량과 전문의 판단이 먼저입니다.',
-      },
-    {
-        userType: '세대 비교 — v1과 같은 경도, 스택은 높고 충격흡수는 낮아진 방향',
-        text: 'v1과 같은 기준(RunRepeat 랩, 남성 US 9)으로 보면 폼 경도는 30.9 AC로 v1(31.9 AC)과 거의 같아 "단단해졌다"는 근거는 없습니다. 힐 스택은 45.4mm로 v1(42.3mm)보다 3.1mm 높아졌지만 힐 충격흡수는 137 SA로 v1(148 SA)보다 낮고, 무게는 318g으로 13g 늘었습니다. 브랜드가 밝힌 변화는 로커 형상 강화입니다. 부드러운 폼이 목적이라면 두 세대가 같고, 힐 착지 충격흡수 수치를 우선한다면 v1 쪽이 앞섭니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/brooks-glycerin-max-2-review-2025/',
+      text: 'DOR의 Matt과 David은 전작보다 단단한 주행감을 느꼈습니다. RR의 폼 경도·부드러움 설명과 전체 신발의 착화감은 같은 측정이 아닙니다. Matt은 US10에서 앞코 테이퍼와 낮은 볼륨·어퍼 열감·혀 움직임을 지적했습니다.',
+    },
   ],
-
-  similarShoes: ['hoka-bondi-9', 'brooks-glycerin-max', 'asics-gel-nimbus-28', 'new-balance-1080-v15'],
+  similarShoes: [
+    'hoka-bondi-9',
+    'brooks-glycerin-max',
+    'asics-gel-nimbus-28',
+    'new-balance-1080-v15',
+  ],
   relatedPosts: [
-    { slug: 'bondi-9-vs-glycerin-max-2-cushion-2026', title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결' },
+    {
+      slug: 'bondi-9-vs-glycerin-max-2-cushion-2026',
+      title: '본디 9 vs 글리세린 맥스 2 — 맥스쿠션 대결',
+    },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YA29QMeW' }],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YA29QMeW',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · 1104791D131',
+        url: 'https://brooksrunning.co.kr/product/남성-글리세린-맥스-2화이트-medium/696/',
+        note: '한국 공식 원문 남성 MEDIUM 1104791D131, 여성 MEDIUM 1204681B131 정가249,000원 확인. 현재 할인·재고·한국 와이드SKU는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 women · 1204681B131',
+        url: 'https://brooksrunning.co.kr/product/여성-글리세린-맥스-2화이트-medium/702/',
+        note: '한국 공식 원문 남성 MEDIUM 1104791D131, 여성 MEDIUM 1204681B131 정가249,000원 확인. 현재 할인·재고·한국 와이드SKU는 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 글리세린 맥스 2',
+        url: 'https://runrepeat.com/brooks-glycerin-max-2',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 318g · 45.4/37.3mm · 드롭8.1mm. SA 137/128 · ER 49.1/미확정%. RR 전족부 에너지 리턴은 본문51.3%·결과표49.6%가 충돌해 확정값을 비웁니다. 힐49.1%는 본문 값입니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/brooks-glycerin-max-2-review-2025/',
+        note: 'DOR 소개 남성312g(US9)·여성283g(US8),47/41mm·드롭6mm. RR 브랜드칸45/39mm·6mm, 실측45.4/37.3mm·8.1mm와 분리.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

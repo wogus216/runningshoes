@@ -237,120 +237,54 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'it-band-syndrome-running-shoes-2026',
-    slug: 'it-band-syndrome-running-shoes-2026',
-    title: 'IT밴드 증후군(장경인대) 완전 가이드 | 무릎 바깥쪽이 콕콕 — 원인·자가진단·회복과 신발의 진짜 역할',
-    description: '러너의 무릎 바깥쪽 통증 1위 원인, IT밴드 증후군(장경인대 증후군). "늘 3~4km쯤 되면 무릎 옆이 아프고 내리막에서 심해진다"면 의심해야 합니다. 둔근 약화·거리 급증·낮은 케이던스가 진짜 원인이고, 신발은 보조일 뿐입니다. 자가진단 체크리스트부터 둔근 강화·케이던스 교정·회복 루틴, 그리고 신발이 도울 수 있는 부분과 없는 부분까지 솔직하게 정리합니다.',
-    thumbnail: '/images/blog/it-band-syndrome-running-shoes-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-30',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['IT밴드', '장경인대', '무릎 바깥쪽 통증', '러닝 부상', '러닝 무릎', '부상 예방'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>IT밴드 증후군은 러너의 무릎 "바깥쪽" 통증 1위 원인</strong>입니다. 장경인대가 무릎 외측에서 반복 마찰되며 염증이 생기는 과사용 부상으로, <strong>늘 비슷한 거리(예: 3~4km)에서 시작되고 내리막·계단에서 심해지는 게 특징</strong>입니다</li>
-    <li>진짜 원인은 신발이 아니라 <strong>둔근(엉덩이 근육) 약화 · 주행거리 갑작스런 증가 · 낮은 케이던스(보폭 과대)</strong>입니다. 그래서 해결도 <strong>둔근 강화 + 케이던스 교정 + 점진적 복귀</strong>가 핵심입니다</li>
-    <li><strong>신발은 보조 역할</strong>입니다 — 과내전이 심하면 안정화화가, 닳은 신발이면 교체가 도움이 되지만, "신발만 바꾸면 낫는다"는 기대는 금물입니다</li>
-  </ul>
-</div>
+    id: "it-band-syndrome-running-shoes-2026",
+    slug: "it-band-syndrome-running-shoes-2026",
+    title: "러닝 중 무릎 바깥쪽 통증 — IT밴드 증후군 상담과 복귀 준비",
+    description: "장경인대 증후군이 의심될 때 기록할 통증·훈련 조건과 진료 신호를 정리합니다. 둔근 약화·케이던스를 단일 원인으로 단정하지 않고 활동 조절과 상담 질문을 안내합니다.",
+    thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    author: "산초 에디터",
+    publishedAt: "2026-06-30",
+    category: "guide",
+    readingTime: 5,
+    tags: [
+      "장경인대",
+      "IT밴드",
+      "무릎 바깥쪽 통증",
+      "러닝 기록"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">먼저 확인할 것</span><ul><li>무릎 바깥쪽 통증은 IT밴드 증후군에서 나타날 수 있지만 위치만으로 진단하지 않습니다.</li><li>아픈 활동을 줄여도 계속 아프다면 중단하고 평가받으세요.</li><li>둔근 운동으로 80% 해결, 정해진 케이던스 교정률 같은 공통 처방을 적용하지 않습니다.</li></ul></div>
 
-<div class="callout warning">
-  <span class="callout-icon">⚕️</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저 — 이 글은 일반 정보입니다</p>
-    <p>아래 내용은 러너를 위한 일반적인 정보로, 의학적 진단을 대체하지 않습니다. <strong>통증이 2주 이상 지속되거나, 부었거나, 일상생활에서도 아프다면</strong> 정형외과·스포츠의학과 전문의 진료를 받으세요. 특히 무릎 안쪽이나 관절 깊은 곳 통증은 IT밴드가 아닌 다른 문제일 수 있습니다.</p>
-  </div>
-</div>
-
-<h2>IT밴드 증후군이 뭔가요</h2>
-<p><strong>IT밴드(장경인대, Iliotibial Band)</strong>는 골반 바깥쪽에서 무릎 바깥쪽까지 허벅지 옆면을 따라 길게 이어지는 두꺼운 결합조직 띠입니다. 달릴 때 무릎을 굽혔다 펴는 동작이 반복되면, 이 띠가 <strong>무릎 외측의 뼈 돌출부(대퇴골 외측상과)와 계속 마찰</strong>합니다. 평소엔 문제없지만, 마찰이 과해지면 그 부위에 염증과 통증이 생기죠. 이게 <strong>IT밴드 증후군(ITBS)</strong>이고, 러너의 무릎 바깥쪽 통증에서 가장 흔한 원인입니다.</p>
-
-<h2>자가진단 — 이런 통증이라면 의심</h2>
-<table>
-  <thead><tr><th>체크 항목</th><th>IT밴드 증후군 가능성</th></tr></thead>
-  <tbody>
-    <tr><td>통증 위치가 <strong>무릎 "바깥쪽"</strong>(새끼발가락 방향)</td><td>높음 ✓</td></tr>
-    <tr><td>늘 <strong>비슷한 거리·시간</strong>에서 통증이 시작된다</td><td>높음 ✓</td></tr>
-    <tr><td><strong>내리막·계단 내려갈 때</strong> 더 아프다</td><td>높음 ✓</td></tr>
-    <tr><td>달릴 땐 아픈데 <strong>쉬면 금방 가라앉는다</strong></td><td>높음 ✓</td></tr>
-    <tr><td>무릎 <strong>안쪽</strong>이나 관절 <strong>깊은 곳</strong>이 아프다</td><td>낮음 — 다른 원인 의심</td></tr>
-    <tr><td>붓거나, 가만히 있어도 욱신거린다</td><td>낮음 — 전문의 진료 권장</td></tr>
-  </tbody>
-</table>
-<p>위쪽 4가지에 해당한다면 IT밴드 증후군일 가능성이 큽니다. 무릎 <strong>앞쪽</strong> 통증(슬개골 주변)이라면 다른 문제(러너스 니 등)일 수 있으니 구분이 필요합니다.</p>
-
-<h2>진짜 원인 3가지 — 신발이 아닙니다</h2>
-<h3>① 둔근(엉덩이 근육) 약화 — 가장 흔한 원인</h3>
-<p>중둔근이 약하면 착지할 때 <strong>골반이 무너지고 무릎이 안쪽으로 쏠립니다.</strong> 그러면 IT밴드의 마찰이 커지죠. 사실상 IT밴드 증후군의 가장 흔한 뿌리입니다. 책상에 오래 앉아 둔근이 "잠든" 한국 직장인 러너에게 특히 많습니다. <strong>해결의 80%는 둔근 강화</strong>라고 봐도 됩니다.</p>
-
-<h3>② 주행거리 갑작스런 증가</h3>
-<p>"이번 주부터 열심히 해야지" 하고 거리를 확 늘리면 IT밴드가 적응할 시간이 없습니다. <strong>주간 거리는 한 번에 10% 이상 늘리지 않는 게 원칙</strong>입니다. 대회를 앞두고 무리하게 거리를 쌓다가 터지는 경우가 정말 많습니다.</p>
-
-<h3>③ 낮은 케이던스(보폭 과대)</h3>
-<p>분당 발걸음 수(케이던스)가 낮으면 보폭이 커지고, 발이 몸보다 앞에 착지(오버스트라이드)하면서 무릎 충격과 IT밴드 마찰이 커집니다. <strong>케이던스를 5~10% 높이면(보폭을 줄이면) IT밴드 부담이 눈에 띄게 줄어듭니다.</strong> 구체적인 방법은 <a href="/blog/running-cadence-guide-2026">러닝 케이던스 가이드</a>에서 다뤘습니다.</p>
-
-<h2>회복·예방 루틴</h2>
-<div class="callout success">
-  <span class="callout-icon">🦵</span>
-  <div class="callout-body">
-    <p class="callout-title">통증이 있을 때 (급성기)</p>
-    <p><strong>1) 달리기를 줄이거나 멈춥니다</strong> — 참고 뛰면 만성화됩니다. 통증 없이 걷는 수준까지 회복 후 복귀하세요. <strong>2) 둔근·대퇴 외측을 폼롤러로 이완</strong>합니다(IT밴드 띠 자체를 세게 미는 것보다 둔근·허벅지 옆 근육을 푸는 게 효과적 — IT밴드는 거의 늘어나지 않습니다). <strong>3) 내리막·계단을 피합니다</strong>(마찰 최대 구간).</p>
-  </div>
-</div>
-<p><strong>근본 해결 — 둔근 강화 3종</strong>(통증이 가라앉으면 시작):</p>
-<ul>
-  <li><strong>클램셸</strong>: 옆으로 누워 무릎 굽힌 채 위쪽 무릎만 조개처럼 벌리기 (중둔근)</li>
-  <li><strong>사이드 레그 레이즈</strong>: 옆으로 누워 다리를 곧게 들어올리기</li>
-  <li><strong>힙 힌지·싱글레그 데드리프트</strong>: 한 발로 균형 잡으며 둔근·고관절 안정성</li>
-</ul>
-<p>주 3회, 한 달만 꾸준히 해도 재발률이 크게 떨어집니다. 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 둔근을 "깨우는" 것도 예방에 좋습니다.</p>
-
-<h2>신발의 진짜 역할 — 보조, 그 이상도 이하도 아닙니다</h2>
-<p>"IT밴드 아픈데 무슨 신발 신어요?"라는 질문을 많이 받습니다. 솔직히 말하면 <strong>신발은 IT밴드 증후군을 "고치는" 도구가 아닙니다.</strong> 근력과 폼이 핵심이죠. 다만 신발이 <strong>악화 요인을 줄여줄</strong> 수는 있습니다.</p>
-<table>
-  <thead><tr><th>상황</th><th>신발 선택</th></tr></thead>
-  <tbody>
-    <tr><td>발이 안쪽으로 무너지는 과내전이 있다</td><td>가벼운 <strong>안정화화</strong> — <a href="/shoes/hoka-arahi-8">호카 아라히 8</a>, <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td></tr>
-    <tr><td>충격이 부담된다 / 회복기 조깅</td><td>충분한 <strong>쿠션화</strong> — <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>, <a href="/shoes/hoka-bondi-9">호카 본디 9</a></td></tr>
-    <tr><td>신발 밑창이 한쪽만 닳았다</td><td>마모된 신발은 <strong>교체</strong> (틀어진 정렬이 마찰을 키움)</td></tr>
-    <tr><td>특별한 발 문제가 없다</td><td>신발보다 <strong>둔근 강화·케이던스</strong>에 집중</td></tr>
-  </tbody>
-</table>
-<p>과내전 여부가 헷갈린다면 <a href="/recommend">맞춤 추천</a>에서 발 유형을 입력해 후보를 받아보세요. 단, 다시 강조하면 <strong>신발은 보조</strong>입니다 — 둔근 운동을 건너뛰고 신발만 바꾸면 재발합니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">다른 러닝 부상도 함께 보기</p>
-    <p>무릎·다리 통증은 부위별로 원인이 다릅니다 — 정강이 안쪽이면 <a href="/blog/shin-splints-running-shoes-2026">신스플린트</a>, 발뒤꿈치·발바닥이면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>, 아킬레스건이면 <a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>, 무릎 충격 전반이면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 참고하세요.</p>
-  </div>
-</div>
-
-<h2>한국 러너 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 신발만 바꾸면 IT밴드 통증이 나을까요?</p>
-  <p class="faq-a">A. 아닙니다. 신발은 과내전·충격 같은 악화 요인을 줄여주는 보조일 뿐, 근본 원인(둔근 약화·낮은 케이던스)을 해결하진 못합니다. 둔근 강화 운동을 병행하지 않으면 어떤 신발을 신어도 재발하기 쉽습니다.</p>
-  <p class="faq-q">Q. 폼롤러로 IT밴드를 세게 밀면 되나요?</p>
-  <p class="faq-a">A. IT밴드 띠 자체는 매우 단단해 거의 늘어나지 않습니다. 세게 밀면 아프기만 하고 효과는 제한적이에요. 그보다 <strong>둔근(엉덩이)·대퇴근막장근·허벅지 옆 근육</strong>을 풀어주는 게 마찰을 줄이는 데 더 효과적입니다.</p>
-  <p class="faq-q">Q. 얼마나 쉬어야 하나요?</p>
-  <p class="faq-a">A. 정해진 기간은 없지만, <strong>통증 없이 걸을 수 있을 때까지</strong> 달리기를 줄이는 게 기본입니다. 보통 가벼우면 1~2주, 만성화됐으면 더 걸립니다. 쉬는 동안 둔근 운동·수영·자전거(통증 없는 범위)로 체력을 유지하세요. 아픈 걸 참고 뛰면 회복이 훨씬 길어집니다.</p>
-  <p class="faq-q">Q. 다 나으면 바로 예전 거리로 돌아가도 되나요?</p>
-  <p class="faq-a">A. 안 됩니다. 통증이 사라져도 한 번에 거리를 늘리면 재발합니다. 짧은 거리부터 시작해 <strong>주간 10% 룰</strong>로 천천히 늘리고, 내리막·한 방향 트랙 반복은 당분간 피하세요.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">핵심 정리</p>
-    <p>IT밴드 증후군은 <strong>"무릎 바깥쪽 + 일정 거리에서 시작 + 내리막 악화"</strong>가 신호입니다. 해결의 순서는 <strong>① 통증 시 휴식 → ② 둔근 강화 → ③ 케이던스 교정 → ④ 점진적 복귀</strong>이고, 신발은 그다음입니다. 케이던스 교정은 <a href="/blog/running-cadence-guide-2026">케이던스 가이드</a>, 발 유형별 신발은 <a href="/recommend">맞춤 추천</a>에서 이어 보세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 본 글은 일반적인 정보 제공 목적이며 의학적 진단·치료를 대체하지 않습니다. 통증이 지속·악화되면 반드시 전문의와 상담하세요.</small></p>
-`,
+<h2>어떤 양상을 설명하면 도움이 될까요?</h2>
+<p>IT밴드 증후군은 달리기·자전거 같은 반복 활동에서 무릎 또는 엉덩이 바깥쪽 통증으로 나타날 수 있습니다. 내리막이나 무릎을 굽히고 오래 앉아 있을 때 악화되기도 합니다. 진단에는 증상 설명과 진찰이 쓰입니다. ‘늘 같은 거리에서 아프다’는 기록은 도움이 되지만 특정 거리나 체크 항목 개수가 확진 기준은 아닙니다. <a href="https://medlineplus.gov/ency/patientinstructions/000683.htm" target="_blank" rel="noopener noreferrer">MedlinePlus 환자 안내</a></p>
+<h2>빠른 평가가 필요한 무릎 통증</h2>
+<p>무릎을 움직이거나 체중을 싣기 어렵고, 심하게 붓거나 모양이 변했거나, 잠김·힘 빠짐이 있다면 신속히 의료기관에 문의하세요. 발열과 붉어짐·열감이 함께 나타나는 경우도 해당합니다. 바깥쪽이 아프다는 이유로 IT밴드 문제라 여기며 기다리지 마세요. <a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS 무릎 통증 안내</a></p>
+<h2>러닝 기록에서 가져갈 여섯 항목</h2>
+<p>아래 질문은 진료·재활 상담을 준비하기 위한 편집부 정리입니다.</p>
+<table><thead><tr><th>질문</th><th>준비할 기록</th></tr></thead><tbody>
+<tr><td>언제 처음 생겼나?</td><td>시작 날짜와 직전 대회·언덕·장거리·근력운동</td></tr>
+<tr><td>어느 지점인가?</td><td>무릎 바깥쪽의 위치와 주변으로 퍼지는지 여부</td></tr>
+<tr><td>어떤 조건에서 아픈가?</td><td>평지·내리막·계단·오래 앉기에서의 차이</td></tr>
+<tr><td>중단 후에는 어떤가?</td><td>걷기·당일 저녁·다음 날의 반응</td></tr>
+<tr><td>무엇이 바뀌었나?</td><td>거리·속도·주당 횟수·노면·신발 변경을 각각 표시</td></tr>
+<tr><td>어떤 관리가 있었나?</td><td>휴식·운동·피팅 변경과 이후 증상 변화</td></tr>
+</tbody></table>
+<h2>운동과 달리기 조절을 어떻게 상의할까</h2>
+<p>MedlinePlus는 달리기·자전거 거리를 줄여보고, 그래도 아프면 해당 활동을 피하도록 안내합니다. 재활에서는 코어·고관절 근력과 스트레칭 등을 개인 상태에 맞게 다룰 수 있습니다. 통증 없이 운동할 수 있게 된 뒤 거리와 속도를 점진적으로 늘리는 방향입니다. 특정 근육 하나를 원인으로 확정하거나 모든 사람에게 같은 운동 세트·복귀 날짜를 제시하는 내용은 아닙니다.</p>
+<p>상담 때는 ‘지금 가능한 활동’, ‘운동 중·이후 어떤 반응을 기준으로 조절할지’, ‘다음 평가 시점’을 적어두세요. 기존 케이던스 기록이 있다면 보여주되, 숫자를 맞추는 것을 자가 치료의 합격 조건으로 삼지 마세요. 통증이 악화되거나 수주 동안 좋아지지 않으면 다시 평가받으세요.</p>
+<h2>신발을 확인할 때 빠뜨리지 말 것</h2>
+<p>기존 신발과 양말·인솔을 가져가서 압박·마모·뒤꿈치 고정의 변화를 설명하세요. 시착에서는 편안함과 판매 성별·폭·사이즈를 확인할 수 있지만, 그 결과로 IT밴드 통증의 원인을 확진하거나 특정 안정화의 치료 효과를 정하지 않습니다. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 자가진단의 한계</a>를 함께 볼 수 있습니다.</p>
+<h2>원문과 확인 범위</h2><ul><li><a href="https://medlineplus.gov/ency/patientinstructions/000683.htm" target="_blank" rel="noopener noreferrer">MedlinePlus: IT band syndrome aftercare</a> — 증상·활동 조절·재활 상담</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS: Knee pain</a> — 빠른 평가가 필요한 증상</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "무릎 바깥쪽이 아프면 장경인대 증후군인가요?",
+        "answer": "가능한 원인 중 하나지만 위치·발생 거리만으로 진단하지 않습니다. 증상 경과와 진찰을 통해 평가받으세요."
+      },
+      {
+        "question": "케이던스를 5~10% 올리면 해결되나요?",
+        "answer": "개인의 상태를 확인하지 않은 채 공통 교정률을 처방하지 않습니다. 훈련 기록과 통증 반응을 가지고 재활 계획을 상담하세요."
+      }
+    ],
   },
   {
     id: 'saucony-endorphin-elite-3-preview-2026',
@@ -930,115 +864,42 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'hoka-bondi-9-review',
-    slug: 'hoka-bondi-9-review',
-    title: '호카 본디 9 후기 | 무릎·관절 보호 최강 맥시멀 쿠션 — 발볼·무게·가성비 솔직 리뷰',
-    description: '호카 본디 9, 무릎이 걱정되는 러너에게 가장 먼저 추천되는 맥시멀 쿠션화입니다. 41mm 스택과 SA 146 충격흡수로 관절 보호는 최상위급이지만, 303g 무게와 좁은 토박스(72.5mm)는 분명한 약점이죠. 부상 이력·체중·회복런 러너에게 맞는지, 발볼 넓은 한국 러너의 와이드 선택까지 솔직하게 정리했습니다.',
-    thumbnail: '/images/blog/hoka-bondi-9-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-26',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['호카 본디 9', '본디 9 후기', '맥시멀 쿠션', '무릎 보호 러닝화', '관절 보호', '쿠션화'],
+    id: "hoka-bondi-9-review",
+    slug: "hoka-bondi-9-review",
+    title: "호카 본디 9 분석 — 실측303g·공시와 다른 드롭·카운터 피팅",
+    description: "본디 9의 슈퍼크리티컬EVA와 RunRepeat 실측303g·41.3/32.2mm를 확인합니다. 무릎 보호 등급 대신 실제 피팅과 한국 판매 조건의 확인 범위를 정리합니다.",
+    thumbnail: "/images/shoes/hoka/bondi9/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-26",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "호카 본디9",
+      "쿠션화",
+      "러닝화 분석",
+      "신발 피팅"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>본디 9는 "무릎이 걱정될 때 가장 먼저 떠오르는" 맥시멀 쿠션의 정석</strong>입니다. 41mm 힐 스택과 SA 146 충격흡수, 123.2mm 초광폭 플랫폼으로 무릎·발목·족저근막 보호가 전부 최상위급(excellent). 부상 이력·체중 있는 러너·회복런 러너의 '관절 보험'입니다</li>
-    <li><strong>대가는 무게(303g)</strong>입니다. 반응성은 7/10(RunRepeat 전족부 에너지 리턴 60.3%, 평균 61.5%)으로 평균 수준이지만 무게 때문에 빠른 템포·인터벌엔 안 맞고, 6~8분/km의 편안한 페이스에서 진가가 나옵니다. 스피드를 원하면 본디가 아니라 <a href="/shoes/hoka-clifton-10">클리프톤</a>이나 다른 신발을 보세요</li>
-    <li><strong>토박스가 72.5mm로 좁은 편</strong>이라 발볼 넓은 한국 러너는 <strong>와이드 옵션이 사실상 필수</strong>입니다. 정가 22.9만(세일 19.5만~), 550km 내구성에 km당 약 400원으로 가성비도 합리적입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦵</span>
-  <div class="callout-body">
-    <p class="callout-title">"무릎 괜찮은 쿠션화 추천해주세요"의 단골 정답</p>
-    <p>러닝 커뮤니티에서 무릎·발목 걱정이 나올 때마다 빠지지 않고 등장하는 이름이 <a href="/shoes/hoka-bondi-9">호카 본디 9</a>입니다. 호카 라인업에서 <strong>가장 두껍게 쿠션을 깐 맥시멀 쿠션화</strong>이고, 그게 정확히 이 신발의 존재 이유죠. 다만 "푹신하다=좋다"로 끝나는 신발이 아닙니다. 무게·발볼·페이스라는 분명한 트레이드오프가 있어서, <strong>내가 본디를 신어야 할 사람인지부터 가려야</strong> 후회가 없습니다. 이 글은 그 판단을 도와드립니다.</p>
-  </div>
-</div>
-
-<h2>스펙 한눈에</h2>
-<table>
-  <thead><tr><th>항목</th><th>본디 9</th><th>의미</th></tr></thead>
-  <tbody>
-    <tr><td>카테고리</td><td>맥시멀 쿠션화</td><td>호카 최대 쿠션 라인</td></tr>
-    <tr><td>무게(US 9)</td><td><strong>303g</strong></td><td>무거운 편 (글리세린 22보다 +20g)</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>41 / 32mm</td><td>드롭 9mm, 두툼한 힐</td></tr>
-    <tr><td>미드솔</td><td>Supercritical EVA</td><td>일반 EVA보다 탄성 오래 유지</td></tr>
-    <tr><td>충격흡수(SA)</td><td>146</td><td>관절 보호 최상위급</td></tr>
-    <tr><td>플랫폼 폭</td><td>123.2mm</td><td>초광폭 → 안정성 8/10</td></tr>
-    <tr><td>토박스</td><td>72.5mm (좁은 편)</td><td><strong>발볼 넓으면 와이드 필수</strong></td></tr>
-    <tr><td>최적 페이스</td><td>6:00~8:00/km</td><td>느린 조깅·회복런 전용</td></tr>
-    <tr><td>내구성 / 가격</td><td>550km / 229,000원</td><td>km당 약 400원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택·SA·토박스는 RunRepeat 실측 기준. 가격은 호카 코리아 공식 정가(세일 시 195,000원 안팎).</small></p>
-
-<h2>실제로 어떤 느낌이냐</h2>
-<h3>쿠션 — "바닥이 안 꺼진다"는 안정감</h3>
-<p>본디 9의 핵심은 <strong>41mm 힐 스택 + SA 146</strong> 조합이 만드는 두툼하면서도 무너지지 않는 발밑입니다. Supercritical EVA 폼이 일반 EVA보다 탄성을 오래 유지해서, 25km 롱런 후반에도 발바닥 피로가 확연히 적습니다. 무엇보다 <strong>123.2mm 초광폭 플랫폼</strong>이 받쳐줘서 "푹신한데 흔들리지 않는다"는 게 본디의 진짜 장점입니다. 맥시멀 쿠션화는 자칫 물렁해서 불안정하기 쉬운데, 본디는 안정성을 8/10까지 끌어올렸습니다.</p>
-
-<h3>무게·반응성 — 빠르게 달릴 신발은 아니다</h3>
-<p>솔직하게, <strong>303g은 무겁습니다.</strong> 반응성은 7/10으로, RunRepeat 전족부 에너지 리턴 60.3%가 평균(61.5%) 수준이라 발을 차고 나가는 탄발력이 두드러지지는 않습니다. 그룹런에서 페이스가 4~5분대로 올라가면 발이 무겁게 느껴지고, 인터벌·템포 훈련엔 전혀 맞지 않습니다. 본디는 <strong>6~8분/km의 편안한 페이스에서 가장 행복한 신발</strong>입니다. 회복런, 장거리 LSD, 출퇴근·산책 겸용으로 쓸 때 무게는 거의 문제가 되지 않습니다.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 요약: 본디는 '속도'가 아니라 '보호'를 사는 신발</p>
-    <p>본디 9를 사면서 빠른 기록을 기대하면 실망합니다. 반대로 <strong>"오래, 다치지 않고, 편하게 달리고 싶다"</strong>가 목표라면 이만한 신발이 드뭅니다. 무릎·발목·족저근막 보호가 모두 최상위(excellent)라, 부상 이력이 있거나 관절이 걱정되는 러너에게는 사실상 '러닝 보험'에 가깝습니다.</p>
-  </div>
-</div>
-
-<h2>이런 러너에게 추천 / 이런 러너는 다시 생각</h2>
-<table>
-  <thead><tr><th>✅ 잘 맞는 러너</th><th>❌ 안 맞는 러너</th></tr></thead>
-  <tbody>
-    <tr><td>무릎·발목 부상 이력이 있다</td><td>인터벌·템포 등 빠른 훈련 위주</td></tr>
-    <tr><td>체중이 있는 편이라 충격이 걱정</td><td>가벼운 신발을 선호한다</td></tr>
-    <tr><td>회복런·LSD 장거리용을 찾는다</td><td>민첩한 방향 전환이 필요하다</td></tr>
-    <tr><td>장시간 서있는 직업 + 러닝 겸용</td><td>대회 기록 단축이 1순위</td></tr>
-    <tr><td>평발이라 안정적 베이스가 필요</td><td>발볼이 아주 넓은데 와이드가 싫다</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너가 꼭 체크할 것</h2>
-<ul>
-  <li><strong>① 발볼 — 본디는 전통적으로 토박스가 좁습니다.</strong> 9에서도 실측 72.5mm로 좁은 편이라, 발볼 넓은 한국 러너 평균 기준으로는 <strong>표준(D)보다 와이드 옵션을 강력 권장</strong>합니다. 다행히 본디는 와이드가 정식 발매돼 선택이 쉽습니다. 발볼이 늘 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 함께 보세요.</li>
-  <li><strong>② 무릎·관절 — 본디의 최대 강점입니다.</strong> SA 146 충격흡수 + 41mm 스택은 무릎 통증 이력 러너에게 체감이 확실합니다. 다만 신발이 만능은 아니니, 통증 관리 전반은 <a href="/blog/knee-pain-running-shoes">무릎 통증 러너를 위한 신발 가이드</a>와 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염 러닝화 가이드</a>를 참고하세요.</li>
-  <li><strong>③ 여름 통기성은 '보통'입니다.</strong> 두툼한 구조 특성상 한여름 고온다습 환경에선 발이 더울 수 있습니다(통기성 fair). 장마·폭염철 데일리로 쓴다면 양말·통풍을 신경 쓰세요.</li>
-</ul>
-
-<h2>비슷한 맥시멀 쿠션화와 비교</h2>
-<p>"본디가 답인가, 다른 게 나은가"를 고민한다면 같은 맥시멀 쿠션 3종을 함께 보세요. 무릎 보호용 맥스 쿠션을 폭넓게 비교한 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 러닝화 가이드</a>도 도움이 됩니다.</p>
-<ul>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></strong> — 본디만큼 푹신하면서 토박스가 더 넉넉한 편. 발볼 때문에 본디가 부담되면 1순위 대안.</li>
-  <li><strong><a href="/shoes/new-balance-1080-v14">뉴발란스 1080 V14</a></strong> — 부드러운 착화감과 데일리 활용도. 쿠션+가벼운 만능형을 원할 때.</li>
-  <li><strong><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></strong> — 본디보다 20g 가벼우면서 부드러운 쿠션. 무게가 거슬리면 검토.</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <p class="faq-q">Q. 무릎이 안 좋은데 본디 9 신어도 되나요?</p>
-  <p class="faq-a">A. 본디가 빛나는 지점이 바로 그것입니다. SA 146 충격흡수와 41mm 스택으로 무릎·발목 보호가 최상위급이라, 통증 이력이 있는 러너에게 가장 자주 추천됩니다. 단 신발이 치료는 아니니, 통증이 지속되면 페이스·거리 조절과 함께 전문의 상담을 병행하세요.</p>
-  <p class="faq-q">Q. 러닝 초보인데 본디 9 괜찮을까요?</p>
-  <p class="faq-a">A. 좋습니다. 느린 페이스에서 가장 편한 신발이라 입문자의 천천히 달리기·걷뛰기에 잘 맞습니다. 다만 본격적으로 속도를 올리는 단계가 오면 무게(303g)가 걸림돌이 될 수 있어, 그때는 가벼운 데일리화를 한 켤레 더 두는 걸 권합니다.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 표준으로 살까요, 와이드로 살까요?</p>
-  <p class="faq-a">A. 발볼이 넓다면 <strong>와이드</strong>입니다. 본디는 토박스가 72.5mm로 좁은 편이라, 표준(D)으로 사면 장거리에서 발가락이 눌릴 수 있습니다. RunRepeat도 표준 토박스를 "snug, locked-in"으로 평가하며 좁은 발에 맞는 쪽이라고 봤습니다.</p>
-  <p class="faq-q">Q. 체중이 좀 나가는 편인데 쿠션이 꺼지지 않을까요?</p>
-  <p class="faq-a">A. 본디의 123.2mm 초광폭 플랫폼과 Supercritical EVA가 체중 있는 러너에게 특히 유리합니다. 힐 스택 41mm에 SA 146 충격흡수(RunRepeat 랩 힐 기준)라 완충 여유도 큰 편입니다. 맥시멀 쿠션 중에서도 안정성(8/10)이 높은 편이라 안심하고 신을 수 있습니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>본디 9의 전체 스펙·실측 데이터·구매 링크는 <a href="/shoes/hoka-bondi-9">본디 9 상세 페이지</a>에서 확인하세요. 호카 안에서 더 가볍고 빠른 데일리를 찾는다면 <a href="/shoes/hoka-clifton-10">클리프톤 10</a>, 무릎 보호 맥스 쿠션을 폭넓게 비교하려면 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">맥스 쿠션 가이드</a>를 추천합니다.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 호카 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 랩 수치(무게·스택·SA·토박스)는 RunRepeat 실측 기준입니다. 부상 관련 내용은 일반적 정보이며, 통증이 지속되면 전문의 상담을 권합니다.</small></p>
-`,
+<div class="tldr"><span class="tldr-label">본디 9 구매 전</span><ul><li>슈퍼크리티컬EVA를 쓰는 쿠션화. RR 실측303g·41.3/32.2mm·드롭9.1mm입니다.</li><li>DOR 공시43/38mm·5mm와 조건을 구분해야 합니다.</li><li>한국 현재 정가·판매 폭·SKU는 미확인입니다. 무릎 보호나 긴 수명 보증으로 구매하지 마세요.</li></ul></div>
+<h2>수치부터 같은 조건으로 보세요</h2>
+<table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>303g</td><td>남성297g(US9)·여성263g(US8)</td></tr><tr><td>힐/전족부 스택</td><td>41.3/32.2mm</td><td>43/38mm</td></tr><tr><td>드롭</td><td>9.1mm</td><td>5mm</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>94.1/72.5/29.6mm</td><td>개인 착화와 별도</td></tr></tbody></table>
+<p>RR 힐/전족부 SA146/133·에너지 리턴60.2/60.3%, 경도43 AC는 실험실 값입니다. 내부 엄지 부위72.5mm를 외부 플랫폼 폭과 혼동하거나, 특정 발볼의 와이드 필수 판정으로 사용하지 않습니다. <a href="https://runrepeat.com/hoka-bondi-9" target="_blank" rel="noopener noreferrer">RunRepeat 원문</a></p><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p>
+<h2>쿠션 구조에서 기대할 것과 시착할 것</h2><p>DOR은 쉬운 러닝·걷기·서 있기에서 구조적인 쿠션감과 로커를 평가하면서 부피와 빠른 러닝의 한계를 언급합니다. Matt은 힐 카운터 자극을 느꼈지만 David은 같은 문제를 느끼지 않았습니다. 여러 사람에게 같은 압박·편안함을 보장하는 결과는 아닙니다. <a href="https://www.doctorsofrunning.com/hoka-bondi-9-review-2025/" target="_blank" rel="noopener noreferrer">DOR 원문</a></p>
+<h2>‘무릎 보호 최강’과 수명km를 제거한 이유</h2><p>외부의 실험실 지표와 리뷰어 착화 의견에서 모델별 임상 보호 등급이나 공통 수명을 확인할 수는 없습니다. 기존 글의 부상 예방excellent,6~8분/km 전용,550km 수명·km당 비용은 구매 판단의 확정값으로 유지하지 않았습니다. 통증이 있다면 <a href="/blog/knee-pain-running-shoes">무릎 증상 기록과 진료 신호</a>를 먼저 확인하세요.</p>
+<h2>한국 판매 조건을 먼저 확인하세요</h2><p>호카 코리아의 공식 연결 스토어에서 현재 본디 9 신발 상품의 정가·성별·폭·SKU를 확인하지 못했습니다. 기존229,000원을 현재 확정 정가로 쓰지 않으며 검색 결과 부재를 단종으로 해석하지 않습니다. 해외 와이드 목록이 한국 재고를 입증하지도 않습니다. <a href="https://linktr.ee/hoka_korea" target="_blank" rel="noopener noreferrer">호카 코리아 공식 연결</a></p>
+<h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p><p>두꺼운 발밑을 비교하고 싶다면 <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9와 글리세린 맥스 2의 실측·피팅 비교</a>에서 조건을 나란히 볼 수 있습니다.</p>
+<p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "본디 9는 드롭5mm인가요,9.1mm인가요?",
+        "answer": "DOR 소개 공시5mm와 RR 실측9.1mm를 각각 구분합니다. 서로 다른 조건을 합쳐 단일 제조사 사양처럼 표시하지 않습니다."
+      },
+      {
+        "question": "발볼이 넓으면 무조건 와이드인가요?",
+        "answer": "내부 치수 한 가지로 개인 핏을 보장하지 않습니다. 구매할 상품의 실제 폭·사이즈와 압박·고정을 함께 확인하세요."
+      }
+    ],
   },
   {
     id: 'saucony-endorphin-lineup-2026-guide',
@@ -1888,89 +1749,54 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'shin-splints-running-shoes-2026',
-    slug: 'shin-splints-running-shoes-2026',
-    title: '러너의 정강이 통증(신 스플린트) — 왜 생기고 러닝화로 어떻게 줄일까 | 충격흡수·점진적 거리·추천화 (님버스 28·본디 9·페가수스 41)',
-    description:
-      '정강이 통증(신 스플린트)은 초보 러너와 훈련량을 갑자기 늘린 러너가 가장 많이 겪는 부상입니다. 정강이 안쪽이 욱신거리면 의심해야 하죠. 러닝화에서는 충격을 잘 흡수하는 쿠션과 적절한 드롭이 핵심이지만, 사실 가장 큰 원인은 갑작스러운 거리 증가입니다. 신 스플린트가 왜 생기는지, 충격흡수 좋은 러닝화(님버스 28·본디 9·페가수스 41)와 10% 룰 같은 예방법까지 정리했습니다.',
-    thumbnail: '/images/blog/shin-splints-running-shoes-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-23',
-    category: 'guide' as const,
-    readingTime: 8,
-    tags: ['신 스플린트', '정강이 통증', '부상 예방', '충격흡수', '초보 러너', '러닝 부상'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>신 스플린트(정강이 통증)는 <strong>갑작스러운 거리·강도 증가</strong>가 가장 큰 원인 — 초보 러너와 훈련량을 급히 늘린 러너에게 흔합니다</li>
-    <li>러닝화 핵심은 <strong>충격을 잘 흡수하는 쿠션 + 적절한 드롭(8mm 이상)</strong>. 얇은 미니멀화·다 닳은 신발은 정강이 부담을 키웁니다</li>
-    <li>신발만으론 부족 — <strong>10% 룰(주간 거리 점진 증가)과 정강이·종아리 강화</strong>가 근본 예방입니다</li>
-  </ul>
-</div>
+    id: "shin-splints-running-shoes-2026",
+    slug: "shin-splints-running-shoes-2026",
+    title: "러닝 중 정강이 통증 — 신 스플린트와 진료 전 확인할 것",
+    description: "정강이 통증을 신 스플린트로 단정하지 않고 통증 위치·활동 반응·훈련 변화를 기록하는 방법을 안내합니다. 피로골절 감별과 신발 쿠션 수치의 해석 범위도 확인하세요.",
+    thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    author: "산초 에디터",
+    publishedAt: "2026-06-23",
+    category: "guide",
+    readingTime: 5,
+    tags: [
+      "신 스플린트",
+      "정강이 통증",
+      "러닝 부상",
+      "훈련 기록"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">먼저 확인할 것</span><ul><li>정강이가 아프다고 모두 신 스플린트는 아닙니다. 통증이 반복되거나 심해지면 다른 원인도 평가해야 합니다.</li><li>한 지점의 통증·걷기 불편·야간 통증이 있다면 달리기를 멈추고 진료받으세요.</li><li>드롭 8mm 이상이나 쿠션 점수를 정강이 통증의 치료 기준으로 사용하지 않습니다.</li></ul></div>
 
-<div class="callout info">
-  <span class="callout-icon">🦵</span>
-  <div class="callout-body">
-    <p class="callout-title">신 스플린트란</p>
-    <p>신 스플린트(정강이 통증, 정강이 부목)는 정강이뼈(경골)를 따라 붙은 근육·골막에 반복 충격이 쌓여 생기는 통증입니다. <strong>정강이 안쪽 아래쪽이 욱신거리거나, 달리기 시작·끝에 뻐근</strong>하면 의심해야 하죠. 러닝을 막 시작했거나 거리를 갑자기 늘렸을 때 가장 흔하고, 방치하면 피로골절로 이어질 수 있어 초기 관리가 중요합니다.</p>
-  </div>
-</div>
-
-<h2>왜 생길까 — 주요 원인</h2>
-<ul>
-  <li><strong>갑작스러운 거리·강도 증가</strong> — 가장 큰 원인. 정강이 근육·뼈가 적응할 시간 없이 충격이 누적됩니다</li>
-  <li><strong>충격 흡수가 부족한 신발</strong> — 쿠션이 얇거나 다 닳은 신발은 착지 충격을 정강이로 그대로 전달합니다</li>
-  <li><strong>과회내(오버프로네이션)</strong> — 발이 안쪽으로 무너지면 정강이 안쪽 근육에 비틀림 부담이 몰립니다</li>
-  <li><strong>딱딱한 노면 + 낮은 드롭으로 급전환</strong> — 아스팔트 과다, 미니멀화 급전환은 정강이 부담을 키웁니다</li>
-  <li><strong>약한 정강이·종아리 근육</strong> — 근력이 부족하면 충격을 뼈·골막이 받습니다</li>
-</ul>
-
-<h2>러닝화로 줄이기 — '충격 흡수'가 핵심</h2>
-<p>아킬레스건염이 <strong>드롭</strong>, 족저근막염이 <strong>아치 서포트</strong>가 핵심이라면, 신 스플린트는 <strong>착지 충격을 얼마나 흡수하느냐</strong>가 핵심입니다. 세 가지를 보세요.</p>
-<ol>
-  <li><strong>충분한 쿠션</strong> — 부드럽고 두툼한 미드솔이 정강이로 가는 충격을 줄입니다</li>
-  <li><strong>드롭 8mm 이상</strong> — 낮은 드롭(0~4mm)은 전경골근 부담이 커 회복기엔 불리합니다</li>
-  <li><strong>과회내라면 안정화</strong> — 발 무너짐이 정강이 비틀림으로 이어지므로 가이드 기능이 도움됩니다</li>
-</ol>
-<table>
-  <thead><tr><th>모델</th><th>유형</th><th>신 스플린트에 좋은 이유</th></tr></thead>
-  <tbody>
-    <tr><td><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a></td><td>쿠션화</td><td>맥스쿠션 + FF Blast 폼으로 충격 흡수 최상위</td></tr>
-    <tr><td><a href="/shoes/hoka-bondi-9">호카 본디 9</a></td><td>맥스쿠션</td><td>두꺼운 스택 + 넓은 베이스로 충격 분산</td></tr>
-    <tr><td><a href="/shoes/nike-vomero-18">나이키 보메로 18</a></td><td>쿠션(드롭 14mm)</td><td>높은 드롭 + 맥스쿠션, 정강이·종아리에 너그러움</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a></td><td>데일리</td><td>균형잡힌 쿠션, 초보 입문에 무난</td></tr>
-    <tr><td><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></td><td>안정화</td><td>과회내 동반 시 — 발 무너짐 억제로 정강이 비틀림 완화</td></tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">신 스플린트일 때 피해야 할 것</p>
-    <ul>
-      <li><strong>얇은 미니멀·레이싱화</strong> — 충격 흡수가 적어 정강이 부담이 큽니다(회복기 비추천)</li>
-      <li><strong>쿠션이 죽은 낡은 신발</strong> — 500~700km 넘으면 미드솔 반발이 떨어지니 교체하세요</li>
-      <li><strong>통증 참고 거리 늘리기</strong> — 신 스플린트를 방치하면 피로골절로 악화될 수 있습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>신발보다 중요한 예방 — 점진성과 근력</h2>
-<p>신 스플린트는 다른 부상보다 특히 <strong>"얼마나 갑자기 달렸나"</strong>가 결정적입니다. 신발은 보조일 뿐, 훈련 관리가 근본입니다.</p>
-<ul>
-  <li><strong>10% 룰</strong> — 주간 거리를 한 번에 10% 이상 늘리지 않기. 초보일수록 보수적으로(<a href="/blog/race-distance-difficulty-guide-2026">거리·강도 관리</a> 참고)</li>
-  <li><strong>정강이·종아리 강화</strong> — 발끝 들기(토 레이즈), 카프 레이즈로 충격을 근육이 받게 합니다</li>
-  <li><strong>부드러운 노면 병행</strong> — 아스팔트만 달리지 말고 트랙·흙길을 섞으면 부담이 줄어듭니다</li>
-  <li><strong>워밍업</strong> — 달리기 전 <a href="/blog/running-warmup-cooldown-guide-2026">동적 워밍업</a>으로 정강이·발목을 풀기</li>
-  <li><strong>통증 시 휴식</strong> — 욱신거리면 며칠 쉬고 얼음찜질. 2주 이상 지속되면 피로골절 감별을 위해 병원에서 확인하세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>신 스플린트는 "신발 하나"로 막기보다, <strong>충격 흡수 좋은 쿠션화 + 점진적 거리 증가 + 정강이 근력</strong>의 조합으로 예방하는 부상입니다. 특히 막 달리기를 시작했거나 거리를 늘리는 중이라면 욕심내지 말고 천천히 쌓으세요. 더 많은 모델은 <a href="/best/shin-splints">정강이 통증 러닝화 추천</a>에서 비교할 수 있고, 다른 부위가 함께 아프다면 <a href="/blog/plantar-fasciitis-running-shoes-2026">족저근막염</a>·<a href="/blog/achilles-tendon-running-shoes-prevention-2026">아킬레스건염</a>·<a href="/blog/knee-pain-running-shoes">무릎 통증</a> 가이드도 참고하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 부상 예방 정보로, 개인의 의학적 진단을 대체하지 않습니다. 통증이 2주 이상 지속되거나 특정 지점을 누를 때 날카롭게 아프면(피로골절 의심) 정형외과·스포츠의학 전문의의 진료를 받으세요.</p>
-`,
+<h2>신 스플린트는 어떤 통증인가요?</h2>
+<p>신 스플린트는 보통 정강이뼈 안쪽 가장자리를 따라 나타나는 운동 관련 통증을 말합니다. 달리기 빈도·시간·강도의 갑작스러운 변화와 관련될 수 있습니다. 다만 정강이 통증에는 피로골절·힘줄 문제·운동성 구획증후군 등 다른 원인도 있어, 위치만 보고 확진할 수 없습니다. <a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS 신 스플린트 안내</a></p>
+<h2>신발을 바꾸며 기다리지 말아야 할 때</h2>
+<p>뼈의 특정 지점이 계속 아프거나 걷기에도 통증이 생기고, 쉬거나 밤에 누워 있을 때까지 아프다면 골 스트레스 손상 평가가 필요할 수 있습니다. 초기에는 휴식으로 통증이 줄어드는 경우도 있어 ‘쉬면 괜찮다’는 이유로 배제하지 마세요. 의심되는 통증을 유발하는 활동은 중단하고 의료기관에 문의하세요. <a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS 골 스트레스 손상 안내</a></p>
+<h2>진료에 가져갈 정강이 통증 기록</h2>
+<p>아래는 상담 내용을 구체화하기 위한 편집부 기록표입니다. 항목 개수로 질환을 판정하는 자가진단표는 아닙니다.</p>
+<table><thead><tr><th>기록</th><th>적는 방법</th></tr></thead><tbody>
+<tr><td>위치와 범위</td><td>안쪽·앞쪽·바깥쪽, 한 점인지 길게 이어지는지 그림이나 사진에 표시</td></tr>
+<tr><td>시작과 경과</td><td>처음 불편했던 날짜, 달리는 도중과 직후·다음 날의 차이</td></tr>
+<tr><td>일상 영향</td><td>걷기·계단·출퇴근·수면에도 영향을 주는지</td></tr>
+<tr><td>최근 훈련</td><td>거리뿐 아니라 속도·언덕·연속 훈련일·대회·새 운동의 변화</td></tr>
+<tr><td>착화 조건</td><td>신발 모델·폭·사용 기간, 양말·인솔·최근 교체 여부</td></tr>
+</tbody></table>
+<h2>쿠션과 드롭을 어떻게 읽어야 하나요?</h2>
+<p>2022년 Cochrane 검토는 2021년 6월까지의 성인 러너·군인 연구를 다뤘으며, 신발 유형에 따른 부상 예방 효과의 확실성은 대체로 낮거나 매우 낮았습니다. 이 자료는 특정 모델의 신 스플린트 치료 효과나 드롭 8mm 합격선을 입증한 시험이 아닙니다. 실험실 충격흡수 값도 개인의 정강이에 실제로 걸리는 부하와 같은 수치로 해석하지 마세요. <a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 원문</a></p>
+<p>시착 메모에는 앞발·발등 압박, 뒤꿈치 들림, 인솔을 넣은 상태의 공간, 익숙한 신발과의 차이를 적어두세요. ‘몇 mm면 안전’, ‘몇 km가 지나면 위험’ 같은 공통 숫자로 구매를 결정하기보다 판매 규격과 실제 착화 조건을 확인하는 용도입니다.</p>
+<h2>다시 달리기 전에 물어볼 질문</h2>
+<p>AAOS는 증상이 가라앉은 뒤 이전보다 낮은 빈도·시간·강도로 돌아가고 천천히 늘리도록 안내합니다. 정강이 통증의 원인과 회복 상태를 먼저 확인한 뒤, 어떤 활동을 허용하고 어떤 변화가 생기면 중단할지 상담하세요. 특정 주간 증가율이 모든 러너의 부상 방지를 보장하지는 않습니다.</p>
+<p>한 점에 집중되는 통증이 걱정된다면 <a href="/blog/stress-fracture-running-shoes-2026">피로골절 의심 시 상담 준비</a>도 확인하세요.</p>
+<h2>원문과 확인 범위</h2><ul><li><a href="https://www.orthoinfo.org/diseases--conditions/shin-splints/" target="_blank" rel="noopener noreferrer">AAOS: Shin Splints</a> — 증상·감별·운동 조절</li><li><a href="https://www.orthoinfo.org/diseases--conditions/sports-injuries/stress-fractures/" target="_blank" rel="noopener noreferrer">AAOS: Stress Fractures</a> — 골 스트레스 손상의 증상과 진료</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 2022</a> — 신발 유형과 부상 예방. 특정 질환 치료·개별 모델 시험 아님</li></ul><p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·달리기 복귀 허가를 대신하지 않습니다.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "정강이 통증에는 드롭 8mm 이상이 필요한가요?",
+        "answer": "이 글에서 확인한 자료로 모든 러너에게 적용할 치료용 드롭 기준을 정할 수 없습니다. 통증 평가와 실제 착화 조건을 함께 확인하세요."
+      },
+      {
+        "question": "쉬면 나아지는데 피로골절은 아닌가요?",
+        "answer": "골 스트레스 손상도 초기에는 휴식으로 통증이 줄 수 있어 그것만으로 배제하지 않습니다. 반복되거나 특정 부위에 집중되는 통증은 진료받으세요."
+      }
+    ],
   },
   {
     id: 'plantar-fasciitis-running-shoes-2026',
