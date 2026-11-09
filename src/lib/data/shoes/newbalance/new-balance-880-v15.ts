@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-880-v15',
   slug: 'new-balance-880-v15',
@@ -15,108 +16,135 @@ export const shoe: Shoe = {
   ],
   category: '입문화',
   rating: 4,
-  price: 189000,
-  description: '뉴발란스의 대표적인 입문용 러닝화로, Fresh Foam X 미드솔이 편안한 쿠셔닝을 제공합니다. 안정성과 쿠셔닝의 균형이 좋아 첫 러닝화로 적합합니다.',
-  oneliner: '40mm 맥시멀 스택, 입문자 무릎 보호 특화',
-  editorComment: '880 v15는 286g으로 경량 입문화는 아니지만, 40mm 힐 스택과 8/10 쿠셔닝으로 무릎 부담이 적습니다. Brooks Ghost 17(289g·16만 9천원, 무게는 둘 다 US 9 랩 실측)과 무게는 비슷하고 가격은 2만원 높지만, Fresh Foam X가 더 부드러운 착화감을 제공합니다. 4mm 로우드롭은 자연스러운 전환을 돕습니다. 600km 내구성으로 km당 약 315원, 장기적으로 가성비가 뛰어납니다.\n\n사이즈·구매 가이드: 토박스 너비가 표준(standard, RunRepeat 실측 74.6mm) 수준입니다. 해외에는 Wide·X-Wide 폭이 있지만(RunRepeat 기준) 2026-10-23 확인 시 한국 공식몰에는 러닝화 880 V15가 없어(검색 시 라이프스타일 880만 나옴), 와이드 재고는 판매처마다 확인해야 합니다. 189,000원 ÷ 600km = km당 약 315원으로 입문 쿠션화 중 가성비가 뛰어납니다. 비슷한 쿠션 성격의 대안으로는 1080 V15(더 경량·반응성)와 글리세린 22(더 부드러운 전환)를 비교해보세요.',
-  tags: ['입문화', '데일리 러닝', '안정적'],
-
+  description: 'Fresh Foam X · 비플레이트 로커 구조의 880 V15. 실험실 286g·힐/전족부 39.7/35.4mm. 한국 현재 정가 미확인.',
+  oneliner: '286g 실험실 무게 · Fresh Foam X · 비플레이트 로커',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다. DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.  DOR의 Matt은 US10에서 대체로 길이가 맞고 약간 넓은보통볼륨이지만 앞코가 좁아지며, 초기 힐 들림·회전 시 옆 움직임을 느꼈습니다. 약간 단단하고 느린 반응의 쿠션·뻣뻣한 로커·안정적인 중립형으로 평가했으나 전통 안정화나 평발 치료 등급으로 바꾸지 않습니다. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '데일리 러닝',
+    '안정적',
+  ],
   specs: {
     weight: 286,
     cushioning: 8,
     responsiveness: 7,
     stability: 8,
-    drop: 4,
-    durability: 600,
+    drop: 4.3,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 40,
-      forefoot: 35,
+      heel: 39.7,
+      forefoot: 35.4,
     },
-    drop: 4,
+    drop: 4.3,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Fresh Foam X',
-    optimalPace: '5:30-7:00 min/km',
+    midsoleType: 'Fresh Foam X · 비플레이트 로커',
   },
-
   detailedSpecs: {
-    weight: '286g (RunRepeat 실측, 남성 US 9 기준)',
-    stackHeight: '힐 39.7mm / 포어풋 35.4mm (실측)',
-    drop: '4.3mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'Fresh Foam X (EVA 기반 고밀도 폼)',
-    plate: '없음',
-    outsole: '고무 아웃솔',
-    upper: '엔지니어드 메쉬',
-    width: '표준 — 토박스 74.6mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 1.4mm 넓음), 최대폭 95.0mm(평균 95.2mm). 랩 본문 "just a fraction above our current average… we don\'t have aggressive tapering in the toebox". 폭 옵션: 기존 DB 표준(D)·와이드(2E), RunRepeat 기준 해외 Narrow·Normal·Wide·X-Wide (2026-10-23 한국 공식몰 재확인: 모델 미등재, "880" 검색은 라이프스타일 880만 — 해외 폭 옵션만 확인)',
-    durability: '600km+',
-    price: '189,000원',
-    costPerKm: '약 ₩315/km (600km 기준)',
-    footType: '중립, 약간의 과내전',
-    landingPattern: '뒤꿈치/중족부 착지',
+    weight: '286g (RunRepeat 공시 검체 정책: 남성US9). DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.',
+    stackHeight: '39.7/35.4mm (RunRepeat 힐/전족부 실측)',
+    drop: '4.3mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'Fresh Foam X · 비플레이트 로커 · 35.5 AC(Asker C) · 힐/전족부 SA 128/114 · 에너지 리턴 56.4/60.1%. ',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 95mm / 엄지 부위 74.6mm / 엄지 높이 28.5mm. 한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 검색에서880V15를 찾지 못했고 기존 후보 상품경로는 판매준비/오픈예정 안내로 돌아옵니다. 현재 한국 정가·성별·폭·재고는 미확인입니다. 검색캐시189,000원을 현재 정가로 채택하지 않습니다.',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 189000,
-    streetPrice: 189000,
-    costPerKm: 315,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['brooks-ghost-17', 'asics-gel-nimbus-28'],
-    valueAdvantages: ['맥스 쿠션 중 합리적 가격', '해외 다양한 폭 옵션(국내 미확인)', '무릎 보호에 탁월'],
+    alternatives: [
+      'brooks-ghost-17',
+      'asics-gel-nimbus-28',
+    ],
   },
-
   targetUsers: {
-    recommended: ['입문 러너', '무릎 부담을 줄이고 싶은 러너', '장거리 편안함을 원하는 러너', '넓은 발볼 옵션이 필요한 러너(국내 재고 확인)'],
-    notRecommended: ['가벼운 신발을 원하는 러너', '빠른 페이스 훈련용', '워킹/캐주얼 용도'],
+    recommended: [
+      'Fresh Foam X 로커의 착화를 비교하려는 러너',
+      '높은 앞쪽 스택과 낮은 실측드롭의 차이를 확인하려는 러너',
+    ],
+    notRecommended: [
+      '앞코 테이퍼·힐 들림이 생기는 경우',
+      '매우 가벼운 무게·빠른반응이 우선인 경우',
+    ],
   },
-
   features: [
-    '힐 39.7mm, 전족부 35.4mm의 맥시멀 쿠셔닝 (RunRepeat Lab Test)',
-    '로커 지오메트리로 부드러운 착지-이탈 전환',
-    'Torsional rigidity 5/5로 높은 스택에도 안정성 유지',
-    '두꺼운 텅 패딩과 힐 슬립 방지 설계',
-    '충격흡수 힐 128 SA (RunRepeat 실측)',
-    '에너지 리턴 전족부 60.1% (RunRepeat 실측)',
+    'Fresh Foam X · 비플레이트 로커',
+    '286g · 힐/전족부 39.7/35.4mm (RunRepeat)',
+    '힐/전족부 SA 128/114 · 에너지 리턴 56.4/60.1% (RunRepeat). ',
+    '한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 85,
-      text: '입문~중급 러너에게 최적의 가성비 맥시멀 쿠션화입니다. 18만 9천원에 1080급 39.7mm 힐 스택을 제공하며, 무릎 부담이 걱정되는 초보 러너에게 추천합니다. 286g으로 무거운 편이라 5분/km 이하 빠른 페이스에는 부적합하지만, Fresh Foam X 미드솔이 8/10 쿠셔닝으로 장거리에서 무릎과 발바닥 충격을 확실히 흡수합니다. 4mm 로우드롭이 자연스러운 착지-이탈 전환을 돕고, 안정성 8/10으로 뒤꿈치 착지 러너에게도 안정적입니다. 해외에는 와이드 폭이 있으나 국내 재고는 판매처 확인이 필요하고, 토박스 여유가 충분해 장거리 부종에도 대응됩니다. 600km 내구성으로 km당 약 315원의 가성비를 제공하며, 평발 러너도 편안합니다. "무릎 괜찮나요?" 질문에 자신있게 추천할 수 있는 신발입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fresh-foam-x-880-v-15',
+      text: '286g과 SA 128/114·에너지 리턴 56.4/60.1%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다.  한국 2E·여성D 후보는 원문 상품 확인에 실패해 현재 판매 폭으로 채택하지 않습니다. RR내부95.0/74.6/28.5mm를 개인핏과 구분하세요.',
     },
     {
-        userType: '예상 적합 — 2.5km부터 5km로 늘려가는 단계',
-        text: '짧은 거리부터 시작해 5km로 늘려가는 입문 단계에 맞습니다. 힐 39.7mm 스택의 Fresh Foam X라 착지 충격이 관절로 전달되는 정도가 적고, 안정성 8/10 수준이라 가벼운 평발 성향까지 대응됩니다. 286g으로 무겁지만 이 단계의 페이스에서는 접지 안정감으로 작용합니다. 토박스가 넉넉해 발볼이 넓은 경우 새끼발가락 압박이 적습니다. 189,000원·내구성 600km 기준으로 첫 신발의 비용 부담이 낮은 편입니다.',
-      },
-    {
-        userType: '로테이션 — 6분대 이상의 회복 담당',
-        text: '메인 쿠션화와 짝을 이뤄 회복일을 담당하기에 맞습니다. 286g으로 무거워 빠른 페이스에는 부담이지만, 6분/km 이상에서는 40mm 힐 스택의 Fresh Foam X가 묵직하게 받쳐줍니다. 4mm의 낮은 드롭이라 뒤꿈치에서 전족부로의 전환이 부드럽습니다. 아웃솔 마모가 느려 내구성 600km에 근접하게 쓸 수 있고 km당 약 315원입니다.',
-      },
-    {
-        userType: '예상 적합 — 아치를 세게 잡지 않는 평발 대응',
-        text: '평발 성향이지만 안정화의 강한 아치 지지가 불편했던 경우에 맞습니다. 안정성 8/10 수준으로 과내전을 완만하게 잡으면서 아치를 세게 밀어올리지 않아, 지지가 과할 때 생기는 불편이 적습니다. 토박스 여유가 넉넉해 장거리에서 발이 부어도 압박이 덜하고, 길들이는 기간 없이 바로 신을 수 있는 편입니다. 힐 39.7mm 스택에 4mm 드롭이라 전환도 자연스럽습니다. 189,000원·예상 수명 500~700km(추정) 기준 km당 약 270~380원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-880-v15-review/',
+      text: 'DOR의 Matt은 US10에서 대체로 길이가 맞고 약간 넓은보통볼륨이지만 앞코가 좁아지며, 초기 힐 들림·회전 시 옆 움직임을 느꼈습니다. 약간 단단하고 느린 반응의 쿠션·뻣뻣한 로커·안정적인 중립형으로 평가했으나 전통 안정화나 평발 치료 등급으로 바꾸지 않습니다.',
+    },
   ],
-
-  similarShoes: ['new-balance-1080-v15', 'new-balance-1080-v14', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YQEe4HD2' }],
+  similarShoes: [
+    'new-balance-1080-v15',
+    'new-balance-1080-v14',
+    'brooks-glycerin-22',
+    'asics-gel-nimbus-28',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YQEe4HD2',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '뉴발란스 한국 공식 접근 확인 범위',
+        url: 'https://www.nbkorea.com/product/searchResult.action?schWord=880',
+        note: '10 results contained lifestyle/walking880 variants; no880V15 entry. This search result alone does not prove discontinuation/non-release.',
+      },
+      {
+        label: '뉴발란스 한국 공식 접근 확인 범위',
+        url: 'https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS107T',
+        note: 'Alert: 해당 상품은 현재 판매 준비중이거나 오픈예정인 상품입니다; history.back(). Intended product details and prices not available.',
+      },
+      {
+        label: '뉴발란스 한국 공식 접근 확인 범위',
+        url: 'https://www.nbkorea.com/product/productDetail.action?colCode=19&styleCode=NBPFGS108T',
+        note: 'Same 판매 준비중/오픈예정 alert and history.back(); no current product price/stock verified.',
+      },
+      {
+        label: 'RunRepeat 880 V15',
+        url: 'https://runrepeat.com/new-balance-fresh-foam-x-880-v-15',
+        note: '공시 검체 정책: 남성US9. 개별 검체SKU·폭은 미확인. 286g · 39.7/35.4mm · 드롭4.3mm. SA 128/114 · ER 56.4/60.1%. ',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-880-v15-review/',
+        note: 'DOR 소개 남성300g(US9)·40.5/34.5mm·드롭6mm. RR286g·39.7/35.4mm·4.3mm와 구분. RR 브랜드칸281g도 별도 조건입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

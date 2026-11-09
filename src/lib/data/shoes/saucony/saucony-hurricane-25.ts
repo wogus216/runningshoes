@@ -1,29 +1,36 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-hurricane-25',
   slug: 'saucony-hurricane-25',
   brand: 'Saucony',
   name: '허리케인 25',
   image: '/images/shoes/saucony/hurricane25.webp',
-  images: ['/images/shoes/saucony/hurricane25/side.webp', '/images/shoes/saucony/hurricane25/top.webp', '/images/shoes/saucony/hurricane25/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/hurricane25/side.webp',
+    '/images/shoes/saucony/hurricane25/top.webp',
+    '/images/shoes/saucony/hurricane25/outsole.webp',
+  ],
   category: '안정화',
   rating: 4,
   price: 199000,
-  description: 'Saucony의 프리미엄 안정화로, PWRRUN PB + PWRRUN 크래들 조합으로 맥시멀 쿠셔닝과 강력한 안정성을 동시에 제공합니다.',
-  oneliner: 'PEBA + 크래들 듀얼 구조, 심한 과내전도 잡는 151 SA',
-  editorComment: '124.4mm 초광폭 플랫폼과 PWRRUN 크래들이 심한 과내전을 물리적으로 제어하는 구조는 가이드 18의 한 단계 위입니다. 힐 151 SA 충격흡수에 미드솔 경도 33.6 AC(RunRepeat 실측, 평균 35.4 AC)라는 조합은 안정화임에도 발밑이 딱딱하지 않다는 뜻입니다. 19만 9천원으로 카야노 32(₩199,000)와 같은 가격이면서, 와이드 옵션까지 있어 발볼 넓은 평발 러너에게 실용적입니다. 통기성 2/5가 유일한 약점이라 한국 여름에는 발이 더울 수 있고, 286g 무게는 느린 페이스 전용임을 감안하세요.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 72.9mm로 표준 폭이라 발볼이 보통인 러너에게 맞으며, 넓은 발볼이라면 와이드(2E) 옵션을 선택하세요. 정가 199,000원에 예상 수명 500~700km(추정) 기준 km당 약 280~400원입니다. 같은 안정화로는 젤 카야노 32·가비오타 6이 대안입니다.',
-  tags: ['안정화', '맥시멀', '과내전 지원', '프리미엄'],
-
+  description: 'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath 구조의 허리케인 25. 실험실 286g·힐/전족부 40.2/33.1mm. 한국 확인 정가199,000원.',
+  oneliner: '286g 실험실 무게 · PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath',
+  editorComment: '2026-11-09 원문 재확인. 한국 남성일반S21026-202·W와이드S21027-286,여성일반S11026-226 정가199,000원 확인. 확인한 남성 색상은 품절,여성 230mm는 선택 가능 표시였으며 다른 색상·사이즈는 별도 확인합니다. W를2E직선 폭으로 환산하지않습니다. DOR 소개 남성283g(US9)·여성249g(US8),38/32mm·드롭6mm. RR286g·40.2/33.1mm·7.1mm와구분. 보조폼44.9AC는주폼33.6AC와구분합니다. RR 반사 요소 본문과 결과표가 충돌해반사 기능은 확정하지않습니다. DOR의 Matt(US10)과 Bach(US9.5)은 길이는맞지만낮은 중족부 볼륨·앞코 테이퍼를언급했습니다. Matt은 초기단단함이빨리풀려느린 러닝에서무르게느껴졌고젖은 보도에서미끄러짐을 경험했습니다. 내측 지지는 언급했지만심한 과내전 교정이나질환 효과로 결론내리지않습니다. 한국 남성일반·W와이드·여성일반 상품 확인. 여성와이드 현재 SKU와W의2E매핑은미확인입니다. RR내부95.1/72.9/28.1mm는해외 검체 치수입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '안정화',
+    '맥시멀',
+    '과내전 지원',
+    '프리미엄',
+  ],
   specs: {
     weight: 286,
     cushioning: 10,
     responsiveness: 9,
     stability: 9,
-    drop: 7,
-    durability: 600,
+    drop: 7.1,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 40.2,
@@ -32,76 +39,115 @@ export const shoe: Shoe = {
     drop: 7.1,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PWRRUN PB + PWRRUN Cradle',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: 'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
+    wideOptions: true,
   },
-
   targetUsers: {
-    recommended: ['과내전 러너', '평발', '장거리', '안정성 + 쿠셔닝 모두 필요'],
-    notRecommended: ['중립 발', '레이싱', '경량화 선호'],
+    recommended: [
+      'PWRRUN PB와프레임의 착화를 비교하려는 러너',
+      '한국 남성W와이드판매규격을확인하려는 러너',
+    ],
+    notRecommended: [
+      '낮은 발등 공간·단단한 카운터가맞지 않는 경우',
+      '실제 젖은 노면 접지에 대한 추가 확인이 필요한 경우',
+    ],
   },
-
-  features: ['PWRRUN PB + PWRRUN Cradle', '프리미엄 안정화', '7.1mm 드롭', '맥시멀 쿠셔닝'],
-
+  features: [
+    'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath',
+    '286g · 힐/전족부 40.2/33.1mm (RunRepeat)',
+    '힐/전족부 SA 151/140 · 에너지 리턴 68.4/74% (RunRepeat). 보조폼44.9AC는주폼33.6AC와구분합니다. RR 반사 요소 본문과 결과표가 충돌해반사 기능은 확정하지않습니다.',
+    '한국 남성일반·W와이드·여성일반 상품 확인. 여성와이드 현재 SKU와W의2E매핑은미확인입니다. RR내부95.1/72.9/28.1mm는해외 검체 치수입니다.',
+  ],
   priceAnalysis: {
     msrp: 199000,
-    streetPrice: 169000,
-    costPerKm: 332,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['asics-gel-kayano-32', 'brooks-glycerin-gts-22', 'new-balance-860-v14'],
+    alternatives: [
+      'asics-gel-kayano-32',
+      'brooks-glycerin-gts-22',
+      'new-balance-860-v14',
+    ],
   },
-
   detailedSpecs: {
-    weight: '286g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 40.2mm / 포어풋 33.1mm (실측)',
-    drop: '7.1mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'PWRRUN PB + PWRRUN Cradle (듀얼 밀도)',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 72.9mm(평균 73.2mm), 랩: "right around the average" · 와이드 — 한국 공식몰 남성 와이드 판매(2026-10-20 확인)',
-    durability: '600km+',
-    price: '199,000원',
-    costPerKm: '약 ₩332/km (600km 기준)',
-    footType: '안정화 (과내전 지원)',
-    landingPattern: '후족부/중족부 착지',
+    weight: '286g (RunRepeat 공시 검체 정책: 남성US9). DOR 소개 남성283g(US9)·여성249g(US8),38/32mm·드롭6mm. RR286g·40.2/33.1mm·7.1mm와구분.',
+    stackHeight: '40.2/33.1mm (RunRepeat 힐/전족부 실측)',
+    drop: '7.1mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'PWRRUN PB 코어 · PWRRUN 프레임 · CenterPath · 33.6 AC(Asker C) · 힐/전족부 SA 151/140 · 에너지 리턴 68.4/74%. 보조폼44.9AC는주폼33.6AC와구분합니다. RR 반사 요소 본문과 결과표가 충돌해반사 기능은 확정하지않습니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 95.1mm / 엄지 부위 72.9mm / 엄지 높이 28.1mm. 한국 남성일반·W와이드·여성일반 상품 확인. 여성와이드 현재 SKU와W의2E매핑은미확인입니다. RR내부95.1/72.9/28.1mm는해외 검체 치수입니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 남성일반S21026-202·W와이드S21027-286,여성일반S11026-226 정가199,000원 확인. 확인한 남성 색상은 품절,여성 230mm는 선택 가능 표시였으며 다른 색상·사이즈는 별도 확인합니다. W를2E직선 폭으로 환산하지않습니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 77,
-      text: '심한 과내전이나 평발로 기존 안정화가 부족했던 러너를 위한 프리미엄 안정화입니다. 286g에 40.2mm 힐 스택, 7.1mm 드롭(RunRepeat 실측) 구성이고, 124.4mm 초광폭 플랫폼과 PWRRUN Cradle이 강력한 안정성을 제공하면서도 33.6 AC로 평균보다 살짝 부드러운 폼이라 착화감이 편안합니다. 힐 151 SA 충격흡수로 무릎 보호도 최상위급이고, 에너지 리턴 힐 68.4%·전족부 74.0%(RunRepeat 실측)로 반발력도 좋습니다. 19만 9천원으로 카야노(19만 9천원)와 같은 가격이면서, 토박스는 평균 수준(72.9mm)이지만 와이드 옵션이 있어 발볼 넓은 한국 러너에게 안성맞춤입니다. 다만 통기성 2/5로 여름에는 더울 수 있으니 겨울용으로 추천합니다. 600km 내구성에 km당 약 332원으로 가성비 합리적이고, 체중이 많이 나가는 러너에게도 안정적인 지지력을 제공합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-hurricane-25',
+      text: '286g과 SA 151/140·에너지 리턴 68.4/74%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. 보조폼44.9AC는주폼33.6AC와구분합니다. RR 반사 요소 본문과 결과표가 충돌해반사 기능은 확정하지않습니다. 한국 남성일반·W와이드·여성일반 상품 확인. 여성와이드 현재 SKU와W의2E매핑은미확인입니다. RR내부95.1/72.9/28.1mm는해외 검체 치수입니다.',
     },
     {
-        userType: '모델 선택 — 가이드로 부족할 때의 상위 안정화',
-        text: '같은 브랜드 안정화 라인에서 가이드 계열의 지지가 부족한 경우 올라가는 상위 모델입니다. 크래들 구조가 뒤꿈치를 감싸는 방식이라, 미드솔에 포스트를 넣어 안쪽을 받치는 방식과는 지지 감각이 다릅니다. 과내전이 강하게 나오는 경우 이 구조가 더 확실하게 잡아줍니다. 힐 151 SA로 충격흡수도 최상위권이고, 와이드 폭 옵션이 있어 넓은 발도 선택지가 있습니다. 카야노 32와 같은 가격대에서 유사한 수준의 지지를 제공하는 구성입니다.',
-      },
-    {
-        userType: '계절 적합성 — 겨울 강점, 장마철 약점',
-        text: '안정화 중 드물게 PEBA 폼을 쓴 모델로 경도 33.6 AC(RunRepeat 실측)라 발밑이 평균보다 살짝 부드럽고, SA 151의 충격흡수는 이 카테고리 최상단입니다. 15km급 장거리에서 지지와 쿠션을 함께 가져갑니다. 다만 통기성이 2/5로 낮아 장마철에는 젖은 상태가 오래 유지되므로 여름 주력으로는 맞지 않습니다. 286g으로 무겁지만 지지 성격의 신발에서는 단점이 덜하고, 토박스는 평균 수준(72.9mm)이지만 와이드 옵션이 있어 발볼 대응이 됩니다.',
-      },
-    {
-        userType: '예상 적합 — 체중이 실린 과내전, 쿠션 우선',
-        text: '과내전이 있으면서 체중까지 실린 조건에서 쿠션량을 우선할 때 맞습니다. 바닥 폭이 124mm로 넓어 하중이 실려도 착지가 흔들리지 않고, 힐 151 SA의 충격흡수와 33.6 AC의 폼이라 안정화 중에서는 착화감이 편한 축입니다. 286g으로 무겁지만 6분30초 안팎의 페이스에서는 체감이 작습니다. 카야노 계열(19만 9천원)과 같은 가격대이고, 와이드 옵션이 있어 발볼 대응도 됩니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-hurricane-25-review-2025/',
+      text: 'DOR의 Matt(US10)과 Bach(US9.5)은 길이는맞지만낮은 중족부 볼륨·앞코 테이퍼를언급했습니다. Matt은 초기단단함이빨리풀려느린 러닝에서무르게느껴졌고젖은 보도에서미끄러짐을 경험했습니다. 내측 지지는 언급했지만심한 과내전 교정이나질환 효과로 결론내리지않습니다.',
+    },
   ],
-
-  similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'hoka-gaviota-6', 'new-balance-860-v14'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZiId0Ddc' }],
+  similarShoes: [
+    'asics-gel-kayano-32',
+    'brooks-adrenaline-gts-25',
+    'hoka-gaviota-6',
+    'new-balance-860-v14',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZiId0Ddc',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · S21027-286',
+        url: 'https://www.saucony.co.kr/product/detail.html?cate_no=208&display_group=1&product_no=138',
+        note: '한국 남성일반S21026-202·W와이드S21027-286,여성일반S11026-226 정가199,000원 확인. 확인한 남성 색상은 품절,여성 230mm는 선택 가능 표시였으며 다른 색상·사이즈는 별도 확인합니다. W를2E직선 폭으로 환산하지않습니다.',
+      },
+      {
+        label: '한국 공식 men · S21026-202',
+        url: 'https://www.saucony.co.kr/product/남성-허리케인-25-white/129/category/152/display/1/',
+        note: '한국 남성일반S21026-202·W와이드S21027-286,여성일반S11026-226 정가199,000원 확인. 확인한 남성 색상은 품절,여성 230mm는 선택 가능 표시였으며 다른 색상·사이즈는 별도 확인합니다. W를2E직선 폭으로 환산하지않습니다.',
+      },
+      {
+        label: '한국 공식 women · S11026-226',
+        url: 'https://www.saucony.co.kr/product/detail.html?cate_no=190&display_group=1&product_no=127',
+        note: '한국 남성일반S21026-202·W와이드S21027-286,여성일반S11026-226 정가199,000원 확인. 확인한 남성 색상은 품절,여성 230mm는 선택 가능 표시였으며 다른 색상·사이즈는 별도 확인합니다. W를2E직선 폭으로 환산하지않습니다.',
+      },
+      {
+        label: 'RunRepeat 허리케인 25',
+        url: 'https://runrepeat.com/saucony-hurricane-25',
+        note: '공시 검체 정책: 남성US9. 개별 검체SKU·폭은 미확인. 286g · 40.2/33.1mm · 드롭7.1mm. SA 151/140 · ER 68.4/74%. 보조폼44.9AC는주폼33.6AC와구분합니다. RR 반사 요소 본문과 결과표가 충돌해반사 기능은 확정하지않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/saucony-hurricane-25-review-2025/',
+        note: 'DOR 소개 남성283g(US9)·여성249g(US8),38/32mm·드롭6mm. RR286g·40.2/33.1mm·7.1mm와구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

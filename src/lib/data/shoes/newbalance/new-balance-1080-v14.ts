@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'new-balance-1080-v14',
   slug: 'new-balance-1080-v14',
@@ -15,108 +16,125 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 5,
-  price: 199000,
-  description: '뉴발란스 최고급 쿠션화로, Fresh Foam X 미드솔이 풍부한 쿠셔닝과 부드러운 착지감을 제공합니다. 장거리 러닝에 최적화되어 있습니다.',
-  oneliner: '142 SA 충격흡수, 11.9 HA 클라우드 소프트',
-  editorComment: '1080 v14는 RunRepeat 142 SA 충격흡수를 기록한 최상위 쿠션화입니다. 11.9 HA 초소프트 폼은 RunRepeat가 "단단한 쪽(leans toward a firmer feel)"이라고 평가한 Hoka Bondi 9보다 부드럽고, 힐 37mm 스택이 받쳐 장거리에서도 바닥감이 적습니다. 285g(RunRepeat 실측)은 v15(255g, 같은 랩 실측)보다 30g 무겁지만 안정성(7/10)이 더 높아 뒤꿈치 착지 러너에게 유리합니다. 19만 9천원으로 v15보다 1만원 저렴하며, 토박스가 narrow(RunRepeat 실측 69.8mm, 랩 평균 73.2mm)로 좁아 발볼 넓은 러너에게는 기본 폭이 맞지 않을 가능성이 큽니다.\n\n사이즈·구매 가이드: 토박스가 좁은 편(narrow)입니다. 해외에는 Wide·X-Wide 폭이 있지만(RunRepeat 기준) 2026-10-23 확인 시 한국 공식몰에는 이 모델이 없어, 와이드 재고는 판매처마다 확인해야 합니다. 199,000원 ÷ 550km = km당 약 362원입니다. 최신 버전을 원하면 1080 V15(20만 9천원, 24g 경량), 가격 부담을 줄이려면 글리세린 22와 비교해보세요.',
-  tags: ['쿠션화', '장거리', '프리미엄'],
-
+  description: 'Fresh Foam X · 비플레이트 로커 구조의 1080 V14. 실험실 285g·힐/전족부 37/32.8mm. 한국 현재 정가 미확인.',
+  oneliner: '285g 실험실 무게 · Fresh Foam X · 비플레이트 로커',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식1080 V14 검색에서 상품을 확인하지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 과거 QA 호스트의199,000원·남성2E 자료를 현재 운영 상품 증거로 사용하지 않습니다. DOR 소개 남성300g(US9.5)·여성235g(US8),38/32mm·드롭6mm. RR285g·37.0/32.8mm·4.2mm와 성별·사이즈 조건을 구분합니다.  DOR의 David(남성US9.5)은 길이가 맞고 여유 있는 고정과 패딩된 카운터를 느꼈으며, Andrea(여성US9.5)는 길이가 맞지만 낮고 조이는 중족부 볼륨을 느꼈습니다. 두 리뷰어의 따뜻한 어퍼 의견과 RR의 통기 시험은 다른 조건입니다. 기본 Fresh Foam X 모델이며 V15 Infinion으로 혼동하지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭95.4mm·엄지69.8mm·높이27.0mm가 같은 폭이라는 뜻은 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '장거리',
+    '프리미엄',
+  ],
   specs: {
     weight: 285,
     cushioning: 9,
     responsiveness: 7,
     stability: 7,
-    drop: 4,
-    durability: 550,
+    drop: 4.2,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 37,
-      forefoot: 33,
+      forefoot: 32.8,
     },
-    drop: 4,
+    drop: 4.2,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'Fresh Foam X',
-    optimalPace: '5:00-6:30 min/km',
+    midsoleType: 'Fresh Foam X · 비플레이트 로커',
   },
-
   detailedSpecs: {
-    weight: '285g (RunRepeat 랩 실측, 남성 — 측정 사이즈 미표기) / 298g (브랜드 스펙 10.5oz)',
-    stackHeight: '힐 37.0mm / 포어풋 32.8mm (실측)',
-    drop: '4.2mm (실측) / 6mm (브랜드 공식)',
-    midsole: 'Fresh Foam X (프리미엄 EVA 기반 폼)',
-    plate: '없음',
-    outsole: '고무 아웃솔',
-    upper: '하이포닛 메쉬',
-    width: '좁음 — 토박스 69.8mm(RunRepeat 실측, 엄지 부위; 같은 랩 평균 73.2mm보다 3.4mm 좁음), 최대폭 95.4mm(평균 95.2mm). 랩 본문 "felt noticeably tight in the toe area… just 69.8 mm in the big toe region", "tapered toebox". 폭 옵션: 기존 DB 표준(D)·와이드(2E), RunRepeat 기준 해외 Narrow·Normal·Wide·X-Wide (2026-10-23 한국 공식몰 재확인: 모델 미등재 — 해외 폭 옵션만 확인)',
-    durability: '550km+',
-    price: '199,000원',
-    costPerKm: '약 ₩362/km (550km 기준)',
-    footType: '중립',
-    landingPattern: '뒤꿈치/중족부 착지',
+    weight: '285g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성300g(US9.5)·여성235g(US8),38/32mm·드롭6mm. RR285g·37.0/32.8mm·4.2mm와 성별·사이즈 조건을 구분합니다.',
+    stackHeight: '37/32.8mm (RunRepeat 힐/전족부 실측)',
+    drop: '4.2mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'Fresh Foam X · 비플레이트 로커 · 28.5 AC(Asker C) · 힐/전족부 SA 142/128 · 에너지 리턴 58/59.4%. ',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 95.4mm / 엄지 부위 69.8mm / 엄지 높이 27mm. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭95.4mm·엄지69.8mm·높이27.0mm가 같은 폭이라는 뜻은 아닙니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식1080 V14 검색에서 상품을 확인하지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 과거 QA 호스트의199,000원·남성2E 자료를 현재 운영 상품 증거로 사용하지 않습니다.',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   priceAnalysis: {
-    msrp: 199000,
-    streetPrice: 199000,
-    costPerKm: 362,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['asics-gel-nimbus-28', 'brooks-glycerin-22'],
-    valueAdvantages: ['클라우드 소프트 쿠셔닝', '뛰어난 내구성', '프리미엄 어퍼'],
+    alternatives: [
+      'asics-gel-nimbus-28',
+      'brooks-glycerin-22',
+    ],
   },
-
   targetUsers: {
-    recommended: ['편안함을 최우선으로 하는 러너', '리커버리 러닝용', '장거리 러너', '무릎 보호가 필요한 러너'],
-    notRecommended: ['가벼운 신발을 원하는 러너', '빠른 페이스 훈련용', '넓은 토박스가 필요한 러너'],
+    recommended: [
+      'Fresh Foam X의 부드러운 착화를 비교하려는 러너',
+      '앞코 테이퍼와 중족부 볼륨을 직접 확인하려는 러너',
+    ],
+    notRecommended: [
+      '앞쪽·중족부 압박이나 어퍼 열감이 불편한 경우',
+      '가벼운 무게·지속적인 빠른 반응이 우선인 경우',
+    ],
   },
-
   features: [
-    '142 SA 충격 흡수력 (RunRepeat Lab Test) - 최상위 수준',
-    '11.9 HA 초소프트 미드솔로 구름 같은 착화감',
-    '4/5 통기성 - 트리플 레이어 메쉬로도 우수한 환기',
-    '프리미엄 재킷 메쉬 어퍼로 최고급 착화감',
-    '충격흡수 힐 142 SA (RunRepeat 실측)',
-    '에너지 리턴 전족부 59.4% (RunRepeat 실측)',
+    'Fresh Foam X · 비플레이트 로커',
+    '285g · 힐/전족부 37/32.8mm (RunRepeat)',
+    '힐/전족부 SA 142/128 · 에너지 리턴 58/59.4% (RunRepeat). ',
+    '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭95.4mm·엄지69.8mm·높이27.0mm가 같은 폭이라는 뜻은 아닙니다.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 86,
-      text: '프리미엄 쿠션화를 찾는 중급 이상 러너에게 추천합니다. HA 11.9 초소프트 미드솔로 착화감이 매우 편안하고, SA 142 충격흡수로 37mm 힐 스택에서 장거리에서도 무릎 부담이 적습니다. 4mm 드롭의 자연스러운 전환이 뒤꿈치 착지부터 이탈까지 매끄럽습니다. 단, 토박스가 69.8mm(실측)로 좁아 발볼이 넓다면 와이드가 필요한데, 국내 재고는 판매처에서 확인해야 합니다. 285g으로 가벼운 편은 아니지만, 550km 내구성으로 km당 약 362원의 가성비를 제공하며 리커버리 러닝에 최적화되어 있습니다. 에너지 리턴 60.8%(힐)로 쿠션화치고 반발력도 괜찮고, 평발 러너에게도 안정성 7/10으로 충분합니다. 19만 9천원 투자 가치가 있는 고급 데일리 트레이너입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/new-balance-fresh-foam-x-1080-v14',
+      text: '285g과 SA 142/128·에너지 리턴 58/59.4%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다.  한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭95.4mm·엄지69.8mm·높이27.0mm가 같은 폭이라는 뜻은 아닙니다.',
     },
     {
-        userType: '사이즈 주의 — 표준(D)은 토박스가 좁다',
-        text: '이 모델은 표준 폭(D)의 토박스가 69.8mm(실측)로 좁아, 발볼이 넓으면 새끼발가락 압박이 생기기 쉽습니다. 쿠션 성능은 HA 11.9의 초소프트 Fresh Foam X에 힐 37mm 스택으로, 트레드밀과 로드 모두에서 무릎·발바닥 충격을 크게 줄이는 수준입니다. 285g으로 무거운 편이지만 느린 페이스에서는 접지 안정감으로 작용합니다. 아웃솔 마모가 느려 내구성 550km는 무난히 도달하는 편입니다.',
-      },
-    {
-        userType: '예상 적합 — 하프 2시간대 러너의 LSD·리커버리',
-        text: '하프 2시간 전후 러너의 LSD·리커버리 용도로 맞을 가능성이 있습니다. Fresh Foam X가 SA 142로 아스팔트 충격을 받아내고, 힐 37mm 스택이 무릎에 오는 부담을 줄이는 구성입니다. 에너지 리턴 60.8%로 느린 페이스에서도 반발이 죽지 않는 편입니다. 같은 프리미엄 쿠션화인 글리세린 22와 비교하면 1080이 HA 11.9로 더 부드럽고, 글리세린 쪽이 반발력에서 조금 앞섭니다. 토박스가 69.8mm(실측)로 좁은 편입니다. 안정성 7/10이라 가벼운 평발 성향까지는 대응되며, 예상 수명 450~650km(추정) 기준 km당 약 310~440원으로 프리미엄 쿠션화 중에서는 비용 효율이 좋은 편입니다.',
-      },
-    {
-        userType: '비용 관점 — 세대 교체 후 구형의 가치',
-        text: '후속 모델 출시로 할인이 들어간 시점에서 판단이 갈립니다. 15만원대까지 내려오면 SA 142의 충격흡수와 HA 11.9의 초소프트 폼은 그대로이므로, 회복 조깅 위주라면 신형과의 실질 차이가 크지 않습니다. 신형이 약 30g(RunRepeat 실측 기준) 가볍지만 느린 페이스에서는 체감이 제한적입니다. 즉 페이스를 올릴 계획이 없다면 구형 할인가가 합리적인 선택입니다. 다만 표준 폭 토박스가 69.8mm(실측)로 좁은 편이고, 내구성 550km 기준 할인가로 km당 약 362원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-1080-v14/',
+      text: 'DOR의 David(남성US9.5)은 길이가 맞고 여유 있는 고정과 패딩된 카운터를 느꼈으며, Andrea(여성US9.5)는 길이가 맞지만 낮고 조이는 중족부 볼륨을 느꼈습니다. 두 리뷰어의 따뜻한 어퍼 의견과 RR의 통기 시험은 다른 조건입니다. 기본 Fresh Foam X 모델이며 V15 Infinion으로 혼동하지 않습니다.',
+    },
   ],
-
-  similarShoes: ['new-balance-1080-v15', 'new-balance-880-v15', 'brooks-glycerin-22', 'asics-gel-nimbus-28'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YNVlXtts' }],
+  similarShoes: [
+    'new-balance-1080-v15',
+    'new-balance-880-v15',
+    'brooks-glycerin-22',
+    'asics-gel-nimbus-28',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YNVlXtts',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '뉴발란스 한국 공식 검색 범위',
+        url: 'https://www.nbkorea.com/product/searchResult.action?schWord=1080%2520V14',
+        note: '현재 검색0건. 품절상품 제외 설정은 별도 확인하지 못해 전체 미판매로 해석하지 않습니다.',
+      },
+      {
+        label: 'RunRepeat 1080 V14',
+        url: 'https://runrepeat.com/new-balance-fresh-foam-x-1080-v14',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 285g · 37/32.8mm · 드롭4.2mm. SA 142/128 · ER 58/59.4%. ',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/new-balance-fresh-foam-x-1080-v14/',
+        note: 'DOR 소개 남성300g(US9.5)·여성235g(US8),38/32mm·드롭6mm. RR285g·37.0/32.8mm·4.2mm와 성별·사이즈 조건을 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

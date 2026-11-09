@@ -6998,88 +6998,34 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'stability-running-shoes-overpronation-flat-feet-2026',
-    slug: 'stability-running-shoes-overpronation-flat-feet-2026',
-    title: '평발·과내전 안정화 러닝화 추천 2026 | 카야노 33부터 14만원대 가성비까지 — 발볼·무게·지지 방식별 비교',
-    description: '발이 안쪽으로 무너지는 과내전(오버프로네이션)·평발 러너에게 안정화 러닝화는 부상 예방의 핵심입니다. 아식스 카야노 33을 비롯해 브룩스 글리세린·뉴발란스 860·사코니 가이드 등 주요 안정화 11종을 지지 방식(가이드레일·프레임)·무게·발볼·가격으로 비교하고, 과내전 자가진단과 평발 한국 러너를 위한 선택법까지 정리했습니다.',
-    thumbnail: '/images/blog/stability-running-shoes-overpronation-flat-feet-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-10',
-    updatedAt: '2026-10-27',
-    category: 'guide' as const,
-    readingTime: 9,
-    tags: ['안정화 러닝화', '평발', '과내전', '오버프로네이션', '카야노 33', '러닝화 추천', '안정화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>발이 안쪽으로 무너지는 <strong>과내전(오버프로네이션)·평발</strong>이라면, 안쪽을 받쳐주는 <strong>안정화 러닝화</strong>가 무릎·발목 부상을 줄여줍니다</li>
-    <li>종합 톱픽은 <strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> — FLUIDSUPPORT로 바뀌며 "지지하되 딱딱하지 않은" 균형이 좋습니다(우리 사이트에서도 가장 많이 보는 안정화)</li>
-    <li>가성비라면 <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>·<a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>(15만원대). 뉴발 860 v14는 평발 지지 구조를 갖췄지만 한국 공식몰에는 미등재(2026-10-20)여서 국내 판매 폭은 확인이 필요합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">나는 안정화가 필요할까? — 30초 자가진단</p>
-    <p>① 신던 운동화 <strong>밑창 안쪽</strong>이 유독 닳았다 ② 맨발로 서면 발 안쪽 <strong>아치가 거의 바닥에 닿는다</strong>(평발) ③ 달리면 무릎이 안쪽으로 모인다 ④ 정강이·무릎 안쪽 통증이 잦다 — 2개 이상이면 <strong>과내전</strong> 경향일 수 있어 안정화가 도움이 됩니다. 정확한 유형은 <a href="/blog/pronation-type-running-shoe-guide-2026">내전(프로네이션) 유형 가이드</a>에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>안정화 신발, 어떻게 고를까 — 3가지 기준</h2>
-<ul>
-  <li><strong>지지 방식</strong> — 요즘 안정화는 딱딱한 기둥(미디엄 포스트) 대신, 양옆에서 부드럽게 감싸는 방식이 대세입니다. 아식스 <strong>FLUIDSUPPORT</strong>, 브룩스 <strong>GuideRails</strong>, 호카 <strong>J-Frame/H-Frame</strong>이 대표적이죠. 자연스러운 착화감을 원하면 이런 "가이드형"이 좋습니다</li>
-  <li><strong>발볼·와이드</strong> — 평발은 발볼도 넓은 경우가 많습니다. 다행히 아래 모델 대부분 <strong>와이드(2E/4E) 옵션</strong>이 있어요</li>
-  <li><strong>무게·가격</strong> — 안정화는 보통 290~330g으로 무거운 편. 가벼움을 원하면 호카 아라히, 가성비는 15만원대 사코니·미즈노가 강합니다</li>
-</ul>
-
-<h2>안정화 러닝화 비교 — 주요 11종</h2>
-<table>
-  <thead>
-    <tr><th>모델</th><th>지지 방식</th><th>무게</th><th>가격</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a></strong> 👑</td><td>FLUIDSUPPORT</td><td>298g</td><td>199,000</td><td>지지력 최상위, 대신 반발은 평범</td></tr>
-    <tr><td><a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a></td><td>GuideRails</td><td>305g</td><td>209,000</td><td>프리미엄 푹신 안정화</td></tr>
-    <tr><td><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></td><td>GuideRails</td><td>295g</td><td>189,000</td><td>과내전 입문의 정답</td></tr>
-    <tr><td><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></td><td>H-Frame</td><td>283g</td><td>239,000</td><td>최강 안정·맥스쿠션</td></tr>
-    <tr><td><a href="/shoes/hoka-arahi-8">호카 아라히 8</a></td><td>H-Frame</td><td><strong>259g</strong></td><td>199,000</td><td>가장 가벼운 안정화</td></tr>
-    <tr><td><a href="/shoes/new-balance-860-v14">뉴발란스 860 v14</a></td><td>듀얼 폼</td><td>295g</td><td>179,000</td><td>평발 지지·해외 4폭(국내 미확인)</td></tr>
-    <tr><td><a href="/shoes/saucony-guide-18">사코니 가이드 18</a></td><td>광폭 플랫폼</td><td>278g</td><td><strong>159,000</strong></td><td>가성비·카야노 절반값</td></tr>
-    <tr><td><a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a></td><td>웨이브 플레이트</td><td>286g</td><td><strong>159,000</strong></td><td>900km 내구·가성비 끝판</td></tr>
-    <tr><td><a href="/shoes/nike-structure-26">나이키 스트럭처 26</a></td><td>와이드 베이스</td><td>296g</td><td>169,000</td><td>14만원대 가성비</td></tr>
-  </tbody>
-</table>
-
-<h2>👑 종합 톱픽 — 아식스 카야노 33</h2>
-<p><a href="/shoes/asics-gel-kayano-33">카야노 33</a>은 32까지 쓰던 4D Guidance를 버리고 <strong>FLUIDSUPPORT + 듀얼 폼</strong>으로 "지지는 하되 부드러운" 방향으로 바뀌었습니다. 그만큼 호불호도 갈리는데, 자세한 변화는 <a href="/blog/asics-gel-kayano-33-review">카야노 33 리뷰</a>와 <a href="/blog/asics-kayano-32-vs-33-comparison">32 vs 33 비교</a>에서 정리했어요. 단단한 클래식 안정감을 원하면 32가, 부드러운 신형을 원하면 33이 맞습니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">⚖️</span>
-  <div class="callout-body">
-    <p class="callout-title">대표 안정화 4종 나란히 비교</p>
-    <p>카야노 33과 가성비·평발 대안을 한 화면에서 견줘보세요 — 쿠셔닝·무게·안정성·가성비 점수가 한눈에 들어옵니다.<br><strong><a href="/compare?shoes=asics-gel-kayano-33,brooks-glycerin-gts-22,new-balance-860-v15,saucony-guide-18">→ 카야노 33 · 글리세린 · 860 · 가이드 18 비교하기</a></strong></p>
-  </div>
-</div>
-
-<h2>목적별 베스트</h2>
-<ul>
-  <li><strong>가성비 (15만원대)</strong> — <a href="/shoes/saucony-guide-18">사코니 가이드 18</a>, <a href="/shoes/mizuno-wave-inspire-21">미즈노 인스파이어 21</a>. 카야노 절반 값에 충분한 안정성</li>
-  <li><strong>평발 지지·발볼 선택</strong> — <a href="/shoes/new-balance-860-v14">뉴발 860 v14</a>는 해외 4폭 출시 모델이지만 한국 공식몰에는 미등재(2026-10-20)입니다. 17.9만원은 출시 정가이며, 국내 판매 폭은 판매처에서 확인하세요. 공식몰에서 와이드를 찾는다면 <a href="/shoes/new-balance-860-v15">860 v15</a> 남성 2E·4E를 살펴보세요</li>
-  <li><strong>맥스쿠션 안정</strong> — <a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a>. 무릎 부담 큰 러너의 든든한 선택</li>
-  <li><strong>가벼운 안정화</strong> — <a href="/shoes/hoka-arahi-8">호카 아라히 8</a>(259g). 안정화답지 않게 경쾌</li>
-  <li><strong>과내전 입문</strong> — <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>. 부드러운 GuideRails로 첫 안정화에 무난</li>
-</ul>
-
-<h2>평발 한국 러너가 꼭 챙길 것</h2>
-<p>평발은 아치뿐 아니라 <strong>발볼도 넓은</strong> 경우가 많습니다. 위 모델 대부분 와이드 옵션이 있으니, 매장 착화 시 <strong>2E 이상</strong>을 함께 신어보세요. 또 안정화에 의존하기보다 <a href="/blog/running-cadence-guide-2026">케이던스(보속)</a>를 점검하고, 무릎 통증이 있다면 <a href="/blog/knee-pain-running-shoes">무릎 통증 러닝화 가이드</a>로 신발·착지를 함께 보는 게 근본 해결에 가깝습니다. 더 많은 안정화 모델은 <a href="/best/stability">안정화 추천 페이지</a>에서 비교할 수 있습니다.</p>
-
-<h2>마무리</h2>
-<p>안정화 러닝화의 핵심은 "내 발이 얼마나 무너지느냐"에 맞는 지지를 고르는 것입니다. 잘 모르겠다면 <strong>부드러운 가이드형(카야노 33·아드레날린·가이드 18)</strong>부터 시작해 보세요 — 과하지 않게 받쳐주면서 자연스러운 착화감을 줍니다. 평발·과내전이라고 무거운 신발만 신을 필요는 없습니다. 본인 발볼과 예산에 맞춰, 위 비교표에서 한 켤레를 골라보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 일반적인 러닝화 정보로, 과내전·평발이 모두 안정화를 필요로 하는 것은 아닙니다(중립화가 더 맞는 경우도 있습니다). 통증이 지속되면 전문가의 보행 분석·진료를 받으세요. 가격은 변동될 수 있습니다.</p>
-`,
+    id: "stability-running-shoes-overpronation-flat-feet-2026",
+    slug: "stability-running-shoes-overpronation-flat-feet-2026",
+    title: "안정화 러닝화6종 비교 — 지지 구조·한국 와이드·실측 조건",
+    description: "카야노33·860 V15·아드레날린25·아라히8·가비오타6·허리케인25의 구조·한국 판매 폭·실측 무게와 드롭을 비교합니다. 자가진단과 부상 예방 순위 대신 실제 시착 질문을 준비하세요.",
+    thumbnail: "/images/shoes/brooks/adrenalinegts25/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-10",
+    updatedAt: "2026-11-09",
+    category: "guide",
+    readingTime: 6,
+    tags: [
+      "안정화 러닝화",
+      "지지 구조",
+      "와이드",
+      "신발 비교"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">안정화6종을 비교할 때</span><ul><li>지지 구조·실측 무게·한국 판매 폭을 나눠 비교하세요. 평발 사진이나 마모로 모델을 처방하지 않습니다.</li><li>한국 와이드SKU를 확인한 모델과 현재 판매 조건을 확인하지 못한 모델을 표에서 구분했습니다.</li><li>제품별 교정 강도·부상 예방 순위 대신, 실제 착화에서 확인할 질문을 준비하세요.</li></ul></div>
+<h2>구조·무게·한국 판매 조건</h2><table><thead><tr><th>모델</th><th>구조</th><th>RR 실측 무게·드롭</th><th>한국 확인 정가</th><th>확인한 폭 범위</th></tr></thead><tbody><tr><td><a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a></td><td>FluidSupport · FF BLAST MAX/PLUS 프레임</td><td>298g·8.5mm</td><td>199,000원</td><td>남성 일반·2E·4E, 여성D 확인</td></tr><tr><td><a href="/shoes/new-balance-860-v15">860 V15</a></td><td>이중 Fresh Foam X · 3/4 New EVA 필름</td><td>332g·7.6mm</td><td>189,000원</td><td>남성2E·4E, 여성D 확인</td></tr><tr><td><a href="/shoes/brooks-adrenaline-gts-25">아드레날린 GTS 25</a></td><td>DNA LOFT v3 · GuideRails</td><td>295g·10.2mm</td><td>189,000원</td><td>남성MEDIUM·2E·4E, 여성MEDIUM 확인</td></tr><tr><td><a href="/shoes/hoka-arahi-8">아라히 8</a></td><td>CMEVA · H-Frame</td><td>259g·11.3mm</td><td>미확인</td><td>현재 한국SKU·판매 폭 미확인</td></tr><tr><td><a href="/shoes/hoka-gaviota-6">가비오타 6</a></td><td>CMEVA · H-Frame</td><td>283g·7.3mm</td><td>미확인</td><td>현재 한국SKU·판매 폭 미확인</td></tr><tr><td><a href="/shoes/saucony-hurricane-25">허리케인 25</a></td><td>PWRRUN PB 코어 · PWRRUN 프레임</td><td>286g·7.1mm</td><td>199,000원</td><td>남성일반·W와이드, 여성일반 확인</td></tr></tbody></table><p>이번에 원문 조건을 대조한6종의 비교이며 시장 전체 순위는 아닙니다. 무게·드롭은 RunRepeat 실측, 가격은 확인한 한국SKU 원문 정가입니다. RR 공시 검체 정책은 남성US9이며 개별 검체의 폭·SKU를 한국 와이드와 같다고 확인한 것은 아닙니다. 할인·재고는 구분해 재확인하세요.</p><h2>같은 안정화 안에서도 구조가 다릅니다</h2><p>카야노33은 이전4D Guidance와 구분되는 FluidSupport·이중폼 프레임,860 V15는 이중폼과3/4 EVA 필름, 아드레날린25는 GuideRails를 사용합니다. 아라히8·가비오타6의 H-Frame과 허리케인25의 PWRRUN 프레임도 이름과 세대를 확인할 구조입니다. 이름이나 실측 무게로 어느 제품이 모든 러너에게 더 강하게 교정한다고 정하지 않습니다.</p><h2>시착 순서를 좁히는 질문</h2><table><thead><tr><th>우선 확인할 조건</th><th>어떻게 비교할까</th></tr></thead><tbody><tr><td>한국 남성 와이드SKU</td><td>카야노33·860 V15·아드레날린25의 확인 규격, 허리케인25의W표기를 실제 구매SKU와 대조. W를 임의로2E치수로 변환하지 않기</td></tr><tr><td>무게 차이</td><td>표의259~332g 범위를 출발점으로 삼고 실제 양발 시착의 고정·전환감을 기록. 무게 차이를 후반 피로 감소율로 바꾸지 않기</td></tr><tr><td>아치·힐 압박</td><td>기존 신발·양말·인솔을 가져가 어디가 눌리는지 비교. 강한 지지감이 치료 효과라고 해석하지 않기</td></tr><tr><td>확인되지 않은 한국 판매 조건</td><td>아라히8·가비오타6은 판매처에서 정가·성별·폭·재고를 먼저 확인. 해외 목록을 국내 판매로 옮기지 않기</td></tr></tbody></table><h2>리뷰어 의견도 하나로 합치지 마세요</h2><p>가비오타6에서 DOR의 Matt과 Bach은 지지감·반응성·가치를 다르게 평가했습니다. 카야노33에서도 Matt과 Bach의 지지 체감이 갈렸습니다. 아라히8의 카운터는 RR과 Matt의 착화 반응이 달랐고, 허리케인25도 젖은 노면의 실험실 결과와 리뷰어 경험은 다른 조건입니다. 자신에게 중요한 앞쪽 압박·힐 고정·발밑 전환감을 직접 확인할 질문으로 읽으세요.</p><h2>평발과 통증은 어떻게 다루나요?</h2><p>NHS는 증상 없는 평발은 보통 조치가 필요하지 않으며, 새 통증·약화·감각 저하·보행 문제나 최근 발 모양 변화가 있으면 평가받도록 안내합니다. <a href="https://www.nhs.uk/conditions/flat-feet/" target="_blank" rel="noopener noreferrer">NHS 원문</a>. 발 모양만으로 안정화의 예방 효과를 처방하지 않는 이유는 <a href="/blog/pronation-type-running-shoe-guide-2026">내전·평발과 신발 선택의 근거</a>에서 확인할 수 있습니다.</p><h2>모델별 원문과 확인 범위</h2><ul><li>젤 카야노 33: <a href="https://runrepeat.com/asics-gel-kayano-33" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/asics-gel-kayano-33-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/asics-gel-kayano-33">한국SKU·정가 원문과 한계</a></li><li>860 V15: <a href="https://runrepeat.com/new-balance-fresh-foam-x-860-v-15" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="/shoes/new-balance-860-v15">한국SKU·정가 원문과 한계</a></li><li>아드레날린 GTS 25: <a href="https://runrepeat.com/brooks-adrenaline-gts-25" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/brooks-adrenaline-gts-25-review-2025/?m=0" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/brooks-adrenaline-gts-25">한국SKU·정가 원문과 한계</a></li><li>아라히 8: <a href="https://runrepeat.com/hoka-arahi-8" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/hoka-arahi-8-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/hoka-arahi-8">한국SKU·정가 원문과 한계</a></li><li>가비오타 6: <a href="https://runrepeat.com/hoka-gaviota-6" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/hoka-gaviota-6-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/hoka-gaviota-6">한국SKU·정가 원문과 한계</a></li><li>허리케인 25: <a href="https://runrepeat.com/saucony-hurricane-25" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/saucony-hurricane-25-review-2025/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a> · <a href="/shoes/saucony-hurricane-25">한국SKU·정가 원문과 한계</a></li></ul><p><small>2026-11-09 원문 대조. 자체 착화시험·질환별 임상시험을 하지 않았으며, 특정 질환의 예방·치료 순위로 제시하지 않습니다.</small></p>`,
+    faqs: [
+      {
+        "question": "평발이면 카야노가1순위인가요?",
+        "answer": "발 모양만으로 모델별 임상 적합성을 순위로 정하지 않습니다. 증상 평가와 실제 착화 조건을 구분해 확인하세요."
+      },
+      {
+        "question": "가벼운 안정화는 어느 모델인가요?",
+        "answer": "이6종의 RR 실측 표에서는 아라히8이259g입니다. 한국 판매 조건과 실제 피팅은 별도로 확인해야 하며 전체 시장의 최경량이라고 주장하지 않습니다."
+      }
+    ],
   },
   {
     id: 'running-cadence-guide-2026',
@@ -9191,94 +9137,40 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'asics-gel-kayano-33-review',
-    slug: 'asics-gel-kayano-33-review',
-    title: '아식스 젤 카야노 33 리뷰 | 32와 차이·호불호 갈리는 이유 — 평발·발볼 넓은 러너 선택법',
-    description: '카야노 33은 32의 4D Guidance 대신 FLUIDSUPPORT와 FF BLAST MAX·PLUS 2층 폼으로 안정성을 만드는 방식을 바꿨습니다. 부드러워진 대신 반발이 줄었다는 평가까지 근거와 함께 정리하고, 평발·과내전·발볼 넓은 러너가 32와 33 중 무엇을 고를지 답합니다.',
-    thumbnail: '/images/blog/asics-gel-kayano-33-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-05',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['카야노 33', '젤 카야노 33', 'FLUIDSUPPORT', '안정화 러닝화', '평발 러닝화', '과내전', '아식스 리뷰', '카야노 32 비교'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>카야노 33은 <strong>카야노 30~32에 쓰인 4D Guidance System을 폐지</strong>하고 <strong>FLUIDSUPPORT + FF Blast Max·Plus 듀얼폼</strong>으로 — 안정성을 "교정"이 아닌 "부드러운 가이드"로 바꾼 대변혁작입니다</li>
-    <li>평가가 <strong>극명히 갈립니다</strong>: "역대 가장 부드럽고 일관된 카야노"(호평) vs "전작의 통통 튀는 반발이 사라져 단단하고 밋밋하다"(혹평, Doctors of Running은 C+ 등급)</li>
-    <li>결론은 명확합니다 — <strong>반발·경쾌함을 원하면 전작 32, 차분하고 부드러운 안정·장거리·워킹용이면 33</strong>. 발 성향에 따라 선택이 갈립니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔧</span>
-  <div class="callout-body">
-    <p class="callout-title">"안정성을 만드는 방식"이 바뀌었다</p>
-    <p>카야노는 오랫동안 <strong>딱딱한 의료 포스트·가이드 시스템</strong>으로 발이 안쪽으로 무너지는 걸 막아주는 정통 안정화였습니다. 33은 이 공식을 버렸습니다. 발 아치를 밀어내는 장치 없이, <strong>넓어진 바닥 + 폼 밀도 차이 + 미드솔 지오메트리(직선 라스트·미디얼 플레어)</strong>로 자연스럽게 발을 잡아주는 "지오메트릭 안정성"으로 전환했죠. ASICS의 표현으로는 <strong>"움직임을 교정하기보다 보행 단계마다 안내한다"</strong>는 철학입니다.</p>
-  </div>
-</div>
-
-<h2>무엇이 바뀌었나 — 32 → 33</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>안정성 방식</td><td>4D Guidance System (가이드레일)</td><td><strong>FLUIDSUPPORT</strong> (지오메트리·폼밀도)</td></tr>
-    <tr><td>미드솔 폼</td><td>FF Blast+ ECO 단일</td><td><strong>FF Blast Max(상) + FF Blast Plus(하)</strong> 듀얼</td></tr>
-    <tr><td>젤</td><td>후방 PureGel</td><td>후방 PureGel 유지</td></tr>
-    <tr><td>라이드 성격</td><td>통통 튀는 반발감</td><td><strong>부드럽고 차분, 더 단단·압축적</strong></td></tr>
-  </tbody>
-</table>
-<p>상단의 <strong>FF Blast Max</strong>는 아식스의 통통 튀는 쿠션화 노바블라스트 계열에서 온 폼으로, 처음 신었을 때 <strong>구름 같은 부드러움</strong>을 줍니다. 그 아래 더 단단한 FF Blast Plus가 받쳐 안정성을 만드는 구조죠. 자세한 항목별 비교는 → <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교</a>에서 다룹니다.</p>
-
-<h2>스펙 — 공식 발표값과 RunRepeat 실측값</h2>
-<div class="callout warning">
-  <span class="callout-icon">🧪</span>
-  <div class="callout-body">
-    <p class="callout-title">랩 데이터 출처</p>
-    <p>출시 직후엔 독립 랩 수치가 없었지만, <strong>RunRepeat이 2026년 7월 3일 카야노 33 랩 테스트를 게시</strong>했습니다. 아래 스택·충격흡수·에너지 리턴·토박스·무게는 그 실측값이고, 공식 발표값과 다른 항목(스택)은 둘 다 적었습니다.</p>
-  </div>
-</div>
-<ul>
-  <li><strong>무게</strong>: 약 <strong>298g</strong> (남성 US 9 기준). 전작 32(스펙 304g·랩 실측 295g)와 <strong>사실상 동일</strong> 수준 — 소스별 편차가 있어 정확한 증감은 단정하기 어렵습니다.</li>
-  <li><strong>스택 / 드롭</strong>: 공식 발표는 힐 40mm / 전족 31mm였지만 <strong>RunRepeat 실측은 힐 36.8mm / 전족 28.3mm</strong>로 3mm 이상 낮았습니다. 드롭은 실측 <strong>8.5mm</strong>(공식 8mm, 카야노 라인 중 낮은 편)</li>
-  <li><strong>충격흡수·경도·토박스</strong>: 실측 충격흡수 힐 <strong>132 SA</strong>·전족 112 SA, 에너지 리턴 힐 <strong>50.0%</strong>/전족 56.6%, 토박스 <strong>72.4mm</strong>(표준). 미드솔 자체는 부드럽게(32.8 AC) 측정되지만 반발 수치가 낮아 <strong>"부드러운데 튀지는 않는다"</strong>는 체감 평가와 일치합니다. 종합 86/100</li>
-  <li><strong>내구성</strong>: 카야노 전통대로 아웃솔이 튼튼해 <strong>장거리 데일리 600km+</strong>를 기대할 수 있습니다.</li>
-</ul>
-
-<h2>평가가 갈린다 — 양쪽 다 들어보자</h2>
-<p>카야노 33만큼 전문가 평이 엇갈린 신상도 드뭅니다.</p>
-<h3>👎 혹평 — "전작이 더 좋았다"</h3>
-<p>의학 관점 리뷰로 권위 있는 <strong>Doctors of Running</strong>의 Matt Klein(물리치료 박사)은 <strong>32를 "2025 올해의 안정화"로 꼽았지만, 33은 2026 top-3에도 못 든다</strong>며 성능 <strong>C+ 등급</strong>을 줬습니다. 근거는:</p>
-<ul>
-  <li><strong>"비반응성 미드솔"</strong> — 전작 4D Guidance의 통통 튀는 반발이 사라짐</li>
-  <li><strong>과도하게 압축적이고 단단한 라이드</strong>, 어색한 힐 전환</li>
-  <li>"빠르게 달리기보다 <strong>걷거나 느린 페이스</strong>에 가장 잘 맞는다"</li>
-</ul>
-<h3>👍 호평 — "역대 가장 부드럽고 일관됐다"</h3>
-<p>반면 일부 매체·리테일러는 <strong>"달려보니 가장 부드럽고 일관된 카야노"</strong>, 안정성이 거슬리지 않고 자연스럽다고 평합니다. 가이드레일이 아치를 밀어내던 이질감이 사라져 <strong>더 편안하다</strong>는 거죠. 다만 이쪽은 전문 랩·의료 리뷰보다 소스 강도가 낮은 편입니다.</p>
-<p>두 평가는 사실 <strong>같은 변화를 다르게 본 것</strong>입니다 — "반발이 사라졌다"(혹평)와 "이질감이 사라졌다"(호평)는 동전의 양면이죠.</p>
-
-<h2>그래서 누구에게 맞나</h2>
-<ul>
-  <li><strong>✅ 잘 맞는 사람</strong>: <a href="/blog/pronation-type-running-shoe-guide-2026">과내전·평발</a>이면서 <strong>부드럽고 차분한 안정</strong>을 원하는 러너, <strong>장거리 LSD·회복 러닝·오래 서있는 직업</strong>, 가이드레일의 밀어내는 느낌이 불편했던 사람</li>
-  <li><strong>❌ 안 맞는 사람</strong>: <strong>반발·경쾌함</strong>을 중시하거나 <strong>빠른 템포</strong>를 자주 뛰는 러너 → 전작 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>(할인 시)나 다른 안정화가 낫습니다</li>
-</ul>
-
-<h2>한국 러너 관점</h2>
-<ul>
-  <li><strong>가격</strong>: 한국 공식가 <strong>199,000원</strong>. 프리미엄 안정화 정가대이며, 32가 할인에 들어가면 가성비는 32가 앞섭니다.</li>
-  <li><strong>발볼</strong>: 토박스 표준 + <strong>와이드 옵션 제공</strong>(카야노 전통)이라 발볼 넓은 한국 러너도 대응 가능. 평발 적합성은 최상위급입니다.</li>
-  <li><strong>경쟁 안정화</strong>: 부드러운 안정 + 통기성을 원하면 <a href="/shoes/brooks-glycerin-gts-22">브룩스 글리세린 GTS 22</a>, 가벼운 안정화는 <a href="/shoes/new-balance-860-v15">뉴발란스 860 v15</a>도 함께 비교해 보세요.</li>
-</ul>
-
-<h2>한 줄 결론</h2>
-<p>카야노 33은 "더 좋아진 카야노"가 아니라 <strong>"방향이 달라진 카야노"</strong>입니다. 통통 튀는 안정 쿠션을 사랑했다면 33의 변화가 아쉬울 수 있고, 가이드레일의 이질감이 싫었다면 33이 더 편할 수 있습니다. <strong>가능하면 매장에서 32와 33을 번갈아 신어보고</strong> 본인 발에 맞는 쪽을 고르세요. 스펙·추천 대상 요약은 <a href="/shoes/asics-gel-kayano-33">카야노 33 상세 페이지</a>, 출시 정보는 <a href="/blog/2026-asics-kayano-33-launch">출시 안내글</a>에서 확인할 수 있습니다. 무릎·관절이 걱정이라면 → <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 러닝화 선택법</a>도 참고하세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 리뷰는 Doctors of Running, Canadian Running, ASICS 공식 등 다중 소스를 교차 검증해 작성했으며, RunRepeat 랩 미게시 항목은 추정·미확정으로 구분했습니다. 개인 발 특성에 따라 체감은 다를 수 있습니다.</p>
-`,
+    id: "asics-gel-kayano-33-review",
+    slug: "asics-gel-kayano-33-review",
+    title: "아식스 카야노 33 분석 — FluidSupport·한국4E·리뷰어 지지감 차이",
+    description: "카야노33의 FluidSupport·이중폼, 한국 확인SKU와 실측298g·드롭8.5mm를 정리합니다. 지지감에 대한 리뷰어 의견과 실제 시착에서 확인할 부분을 구분합니다.",
+    thumbnail: "/images/shoes/asics/kayano33/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-05",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "카야노33",
+      "FluidSupport",
+      "한국4E",
+      "러닝화 분석"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>FluidSupport와 FF BLAST MAX·PLUS 프레임을 쓰는33세대입니다.</li><li>한국 남성 일반·2E·4E, 여성D 상품 정가199,000원을 확인했습니다.</li><li>DOR 리뷰어의 지지감 평가는 갈립니다. 공통 평발·질환 적합성 순위로 합치지 않습니다.</li></ul></div>
+<h2>구조와 확인한 한국 상품</h2><p>카야노33은 이전4D Guidance와 구분되는 FluidSupport, FF BLAST MAX와 FF BLAST PLUS 프레임·힐 PureGEL을 사용합니다. 한국 남성 일반1011C167.100·2E1011C227.001·4E1011C229.100, 여성D1012B992.001 정가199,000원을 확인했습니다. 색상·사이즈별 재고와 개인 착화는 별도로 확인하세요. <a href="https://asics.co.kr/p/AKR_112630103-100" target="_blank" rel="noopener noreferrer">한국 남성4E 공식 상품</a> · <a href="/shoes/asics-gel-kayano-33">다른 확인SKU 원문</a></p>
+<h2>실측과 공시를 구분</h2><table><thead><tr><th>항목</th><th>RunRepeat 실측</th><th>DOR 소개 공시</th></tr></thead><tbody><tr><td>무게</td><td>298g</td><td>남성298g(US9)</td></tr><tr><td>힐/전족부 스택</td><td>36.8/28.3mm</td><td>39/31mm</td></tr><tr><td>드롭</td><td>8.5mm</td><td>8mm</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>95.9/72.4/28.6mm</td><td>개인 착화와 별도</td></tr></tbody></table>
+<p>RR 힐/전족부 SA132/112·에너지 리턴50.0/56.6%, 경도32.8AC는 실험실 지표입니다. 이를 무릎 보호 등급·부상 예방률·공통 수명으로 바꾸지 않습니다.</p>
+<h2>같은 구조에서도 체감이 다릅니다</h2><p>DOR의 Matt은 US10에서 길이는 맞았지만 장거리 아치 피로와 이전보다 적은 내측 중족부 지지를 지적했습니다. Bach은 새 프레임의 안정감을 더 높게 평가했습니다. 어느 쪽이 모든 러너에게 맞는지 단정하기보다 기존 신발과 번갈아 신었을 때 본인이 느끼는 아치 압박·뒤꿈치 고정·전환감을 기록하세요.</p>
+<h2>한국 와이드를 찾는다면</h2><p>남성4E와 여성D를 포함한 확인 상품이 있다는 것과 원하는 사이즈가 지금 주문 가능하다는 것은 다릅니다. 해외 실험실 엄지 부위 너비72.4mm도 한국4E의 치수가 아닙니다. 시착할 실제 규격과 재고·교환 조건부터 확인하면 후보를 좁히기 쉽습니다.</p><h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p>
+<p><a href="/blog/asics-kayano-32-vs-33-comparison">카야노32와 구조·조건 비교</a> · <a href="/blog/stability-running-shoes-overpronation-flat-feet-2026">안정화6종의 한국 판매 폭</a></p>
+<h2>모델별 원문</h2><ul><li>카야노33: <a href="https://runrepeat.com/asics-gel-kayano-33" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/asics-gel-kayano-33-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li></ul><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "카야노33의 한국4E는 미출시인가요?",
+        "answer": "이번에 한국 남성4E1011C229.100 상품을 확인했습니다. 개인 사이즈·색상별 현재 재고는 다시 확인해야 합니다."
+      },
+      {
+        "question": "모든 평발 러너에게32보다 편한가요?",
+        "answer": "리뷰어 지지감과 착화 의견도 갈립니다. 구조 변화만으로 모든 평발 러너의 우열을 정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'puma-deviate-pure-nitro-review',

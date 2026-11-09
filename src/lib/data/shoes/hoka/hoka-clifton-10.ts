@@ -1,104 +1,145 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'hoka-clifton-10',
   slug: 'hoka-clifton-10',
   brand: 'Hoka',
   name: '클리프톤 10',
   image: '/images/shoes/hoka/clifton10/side.webp',
-  images: ['/images/shoes/hoka/clifton10/side.webp', '/images/shoes/hoka/clifton10/front.webp', '/images/shoes/hoka/clifton10/back.webp', '/images/shoes/hoka/clifton10/outsole.webp'],
+  images: [
+    '/images/shoes/hoka/clifton10/side.webp',
+    '/images/shoes/hoka/clifton10/front.webp',
+    '/images/shoes/hoka/clifton10/back.webp',
+    '/images/shoes/hoka/clifton10/outsole.webp',
+  ],
   category: '입문화',
   rating: 5,
-  price: 199000,
-  description: '호카의 대표 입문화로, 가볍고 푹신한 쿠셔닝과 로커 기술로 편안한 러닝을 제공합니다. 초보 러너부터 회복 러닝까지 폭넓게 활용 가능합니다.',
-  oneliner: '275g에 44mm 스택, 메타로커 입문화',
-  editorComment: '클리프턴 10은 275g 경량에 44mm 맥시멀 힐 스택을 결합한 호카의 대표작입니다. RunRepeat 측정 147 SA 충격흡수는 브룩스 고스트 17(약 140 SA)보다 높아 무릎 보호에 뛰어나며, 메타로커 지오메트리가 자연스러운 착지-이탈 전환을 돕습니다. 발 최대 폭 97.2mm로 여유가 있고 토박스(73.1mm)는 평균 수준이라 발볼 넓은 한국 러너도 무난하며 와이드 옵션도 제공됩니다. 19만 9천원으로 본디(22만 9천원)보다 3만원 저렴하며, 52.3% 에너지 리턴으로 반발력은 약하지만 6분/km 이상 편안한 조깅에 최적입니다.\n\n사이즈·구매 가이드: 토박스가 standard 폭에 와이드 옵션도 제공되므로 발볼이 넓은 러너도 부담 없이 선택할 수 있습니다. 정가 199,000원에 예상 수명 400~600km(추정) 기준 km당 약 330~500원으로 입문 쿠션화 중 합리적인 가성비입니다. 더 가볍고 반응성 있는 데일리화를 원한다면 페가수스 41, 높은 반발력을 원한다면 노바블라스트 5가 대안입니다.',
-  tags: ['입문화', '맥시멀 쿠셔닝', '로커 기술'],
-
+  description: 'CMEVA · 로커 구조의 클리프톤 10. 실험실 275g·힐/전족부 44.4/32mm. 한국 현재 정가 미확인.',
+  oneliner: '275g 실험실 무게 · CMEVA · 로커',
+  editorComment: '2026-11-09 원문 재확인. 호카 코리아 공식 연결 스토어의 정확검색에서 현재 클리프톤10 상품을 찾지 못했습니다. 현재 한국 정가·성별·폭·SKU·재고는 미확인이며 단종·국내 미출시로 해석하지 않습니다. DOR 표제 남성278g(US10으로표기)·여성227g(US8),드롭8mm·스택미공시. RR275g·44.4/32.0mm·드롭12.4mm와 구분. RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다. DOR의 Matt(US10)과 David(US9.5)은 길이는 맞지만 타이트하고 낮은볼륨이라 느꼈습니다. Matt은 패딩이 눌린 뒤 카운터를 더 의식했고 David은 힐 고정을 좋게 봤습니다. 약간 단단한 데일리 주행감·로커·사이드월을 설명하며, Matt의 초기 발목자극이나30마일 마모를 모델전체 부상효과·수명으로 바꾸지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '맥시멀 쿠셔닝',
+    '로커 기술',
+  ],
   specs: {
     weight: 275,
     cushioning: 9,
     responsiveness: 7,
     stability: 7,
-    drop: 12,
-    durability: 500,
+    drop: 12.4,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 44,
+      heel: 44.4,
       forefoot: 32,
     },
-    drop: 12,
+    drop: 12.4,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'CMEVA Foam',
-    optimalPace: '5:30-7:00 min/km',
+    midsoleType: 'CMEVA · 로커',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['러닝 입문자', '맥시멀 쿠셔닝 선호', '회복 러닝용', '무릎/관절 보호 필요', '장거리 편안함 추구'],
-    notRecommended: ['빠른 레이스 페이스', '강한 반발력 선호', '미니멀리스트 러너'],
+    recommended: [
+      'CMEVA와 높은 실측스택의 전환감을 시착 비교하려는 러너',
+      '기존 신발과 내부볼륨·힐 고정을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '낮은볼륨·카운터 압박이 생기는 경우',
+      '가벼운 무게·높은 에너지리턴이 우선인 경우',
+    ],
   },
-
-  features: ['맥시멀 쿠셔닝', '메타 로커 기술', '경량 CMEVA 폼', '부드러운 착지감', '충격흡수 힐 147 SA (RunRepeat 실측)', '에너지 리턴 전족부 57.2% (RunRepeat 실측)'],
-
+  features: [
+    'CMEVA · 로커',
+    '275g · 힐/전족부 44.4/32mm (RunRepeat)',
+    '힐/전족부 SA 147/122 · 에너지 리턴 52.3/57.2% (RunRepeat). RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다.',
+    '한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다.',
+  ],
   priceAnalysis: {
-    msrp: 199000,
-    streetPrice: 189000,
-    costPerKm: 398,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['nike-pegasus-41', 'asics-novablast-5', 'new-balance-880-v15'],
+    alternatives: [
+      'nike-pegasus-41',
+      'asics-novablast-5',
+      'new-balance-880-v15',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 88,
-      text: '입문 러너의 첫 러닝화로 가장 추천하는 모델입니다. SA 147 충격흡수와 44mm 힐 스택으로 무릎 부담을 줄이려는 입문자에게 맞는 구성입니다. 발 최대 폭 97.2mm·토박스 73.1mm(RunRepeat)로 발볼 넓은 한국 러너에게도 무난하고, 와이드 옵션까지 있어 발볼 걱정 없이 선택 가능합니다. 275g 무게에 52.3% 에너지 리턴으로 반발력은 약하지만, 가격 부담이 적은 입문 쿠션화입니다. 19만 9천원으로 본디(22만 9천원)보다 3만원 저렴하면서 입문자에게 충분한 쿠셔닝을 제공하며, 평발 러너도 안심하고 착용할 수 있는 넉넉한 핏이 장점입니다. 12mm 하이드롭으로 힐스트라이커에게 최적화되어 있고, 6분/km 이상 편안한 조깅에 최적입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/hoka-clifton-10',
+      text: '275g과 SA 147/122·에너지 리턴 52.3/57.2%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다.',
     },
     {
-        userType: '예상 적합 — 러닝화 없이 시작했다가 부담을 느낀 단계',
-        text: '일반 운동화로 시작했다가 무릎·발바닥 부담을 느낀 단계에서 체감 차이가 큰 모델입니다. 힐 44mm 스택에 로커 구조라 아스팔트 내리막처럼 충격이 집중되는 구간에서 부담을 크게 줄입니다. 275g으로 가볍지는 않지만, 입문 단계에서는 무게보다 접지 안정감이 유리하게 작용합니다. 발 최대 폭 97.2mm(RunRepeat)로 여유가 있어 발볼이 넓은 경우에도 압박이 적습니다. 199,000원 가격대입니다.',
-      },
-    {
-        userType: '예상 적합 — 회복 조깅 전용',
-        text: '고강도 훈련 다음 날의 회복 조깅에 초점이 맞는 쿠션화입니다. 힐 44mm 스택의 로커가 전환을 대신 만들어줘 지친 종아리에 걸리는 부담이 적고, SA 147의 충격흡수로 관절에 오는 자극도 낮습니다. 에너지 리턴은 52.3%로 낮은 편이지만, 느린 페이스에서는 반발보다 부드러움이 유리해 단점이 되지 않습니다. 반대로 5분/km 이하로 올리면 폼이 눌리며 힘이 빠지는 감각이 생기므로, 속도 훈련용은 따로 두는 운용이 전제입니다. 발 최대 폭이 97.2mm로 넉넉하고 와이드 옵션도 있습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/hoka-clifton-10-review-2025/',
+      text: 'DOR의 Matt(US10)과 David(US9.5)은 길이는 맞지만 타이트하고 낮은볼륨이라 느꼈습니다. Matt은 패딩이 눌린 뒤 카운터를 더 의식했고 David은 힐 고정을 좋게 봤습니다. 약간 단단한 데일리 주행감·로커·사이드월을 설명하며, Matt의 초기 발목자극이나30마일 마모를 모델전체 부상효과·수명으로 바꾸지 않습니다.',
+    },
   ],
-
   detailedSpecs: {
-    weight: '275g (남성 US 9 기준)',
-    stackHeight: '힐 44mm / 포어풋 32mm',
-    drop: '12.4mm (RunRepeat 랩, US 9 기준 / 브랜드 표기 8mm)',
-    midsole: 'CMEVA 폼 (경량 압축 EVA)',
-    plate: '없음',
-    outsole: '듀라브레이드 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준 (와이드 옵션 있음) · 토박스 73.1mm — RunRepeat 평균 73.2mm와 같은 수준, 발 최대 폭 97.2mm',
-    durability: '500km',
-    price: '₩199,000 (MSRP) / 세일 시 ₩160,000~',
-    costPerKm: '약 ₩398/km (500km 기준)',
-    footType: '표준~넓은 발볼 / 평발 OK / 와이드 옵션 있음',
-    landingPattern: '힐스트라이크 (로커 기술로 자연스러운 전환)',
+    weight: '275g (RunRepeat 공시 검체 정책:남성US9). DOR 표제 남성278g(US10으로표기)·여성227g(US8),드롭8mm·스택미공시. RR275g·44.4/32.0mm·드롭12.4mm와 구분.',
+    stackHeight: '44.4/32mm (RunRepeat 힐/전족부 실측)',
+    drop: '12.4mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'CMEVA · 로커 · 34.2 AC(Asker C) · 힐/전족부 SA 147/122 · 에너지 리턴 52.3/57.2%. RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 97.2mm / 엄지 부위 73.1mm / 엄지 높이 27.3mm. 한국 와이드 현재SKU는 미확인입니다. RR 내부최광폭97.2mm·엄지73.1mm·높이27.3mm는 DOR의 낮은볼륨 체감과 다른 종류의 정보입니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '호카 코리아 공식 연결 스토어의 정확검색에서 현재 클리프톤10 상품을 찾지 못했습니다. 현재 한국 정가·성별·폭·SKU·재고는 미확인이며 단종·국내 미출시로 해석하지 않습니다.',
   },
-
-  similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'brooks-ghost-max-3'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/h6Zc0Chwk0' }],
+  similarShoes: [
+    'nike-pegasus-41',
+    'asics-gel-nimbus-28',
+    'new-balance-880-v15',
+    'brooks-ghost-max-3',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/h6Zc0Chwk0',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '호카 코리아 공식 연결',
+        url: 'https://linktr.ee/hoka_korea',
+        note: '공식연결스토어 확인',
+      },
+      {
+        label: '한국 공식 스토어 검색 범위',
+        url: 'https://brand.naver.com/hoka/search?q=%ED%81%B4%EB%A6%AC%ED%94%84%ED%86%A4%2010',
+        note: '현재정가·SKU미확인. 전체미판매와 구분.',
+      },
+      {
+        label: 'RunRepeat 클리프톤 10',
+        url: 'https://runrepeat.com/hoka-clifton-10',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 275g · 44.4/32mm · 드롭12.4mm. SA 147/122 · ER 52.3/57.2%. RR 힐 외부플랫폼 폭은 본문97.8mm·표94.5mm로 충돌해 해당 수치는 채택하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/hoka-clifton-10-review-2025/',
+        note: 'DOR 표제 남성278g(US10으로표기)·여성227g(US8),드롭8mm·스택미공시. RR275g·44.4/32.0mm·드롭12.4mm와 구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

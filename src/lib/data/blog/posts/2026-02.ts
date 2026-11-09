@@ -247,225 +247,48 @@ export const posts_2026_02: BlogPost[] = [
     featured: true,
   },
   {
-    id: 'pronation-guide',
-    slug: 'pronation-type-running-shoe-guide-2026',
-    title: '내 무릎 통증의 원인, 발 안에 있다? 내전(Pronation) 유형별 완벽 가이드',
-    description: '러닝 중 무릎이나 정강이가 아프다면, 신발 브랜드보다 먼저 확인해야 할 것은 바로 자신의 내전 유형입니다. 2026년 최신 안정화 기술과 함께 나에게 딱 맞는 러닝화를 찾는 과학적 방법을 공개합니다.',
-    thumbnail: '/images/blog/pronation-type-running-shoe-guide-2026.webp',
+    id: "pronation-guide",
+    slug: "pronation-type-running-shoe-guide-2026",
+    title: "내전·평발과 러닝화 선택 — 발 모양·움직임·통증을 구분하기",
+    description: "젖은 발자국과 밑창 마모로 부상 원인·필요 러닝화를 확진하지 않습니다. 내전 용어의 의미, 평발에서 상담할 증상, 보행 분석과 시착 때 물어볼 질문을 정리합니다.",
+    thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
     content: `
-<figure class="my-10">
-  <img
-    src="/images/blog/pronation-guide/hero.webp"
-    alt="내전 유형에 따른 러닝화 선택 가이드"
-    class="w-full rounded-xl border border-border"
-    loading="eager"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    내전 유형별 러닝화 선택이 부상 예방의 핵심입니다
-  </figcaption>
-</figure>
-
-<p>
-  러닝을 시작하고 무릎이나 정강이가 아프다면, 신발 브랜드를 탓하기 전에 가장 먼저 확인해야 할 것은 바로
-  <strong>자신의 '내전(Pronation)' 유형</strong>입니다.
-</p>
-<p>
-  초보 러너가 부상 없이 오래 달리기 위해 필수적인 생체역학적 지식과, 2026년 최신 기술이 적용된
-  나에게 딱 맞는 '인생 러닝화'를 찾는 과학적 방법을 공개합니다.
-</p>
-
-<h2>1. 내전(Pronation) 메커니즘의 완벽한 이해</h2>
-
-<p>
-  내전은 발이 지면에 착지할 때 충격을 흡수하기 위해 <strong>안쪽으로 자연스럽게 회전하는 인체의 충격 완화 메커니즘</strong>입니다.
-  이 회전의 각도와 속도에 따라 우리는 세 가지 유형으로 나뉩니다.
-</p>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/pronation-guide/stability-tech.webp"
-    alt="2026년 안정화 기술의 진화"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    최신 안정화 기술은 자연스러운 움직임을 유도합니다
-  </figcaption>
-</figure>
-
-<h3>📊 내전 유형별 특징 및 추천 전략</h3>
-
-<div class="overflow-x-auto my-6">
-  <table class="w-full border-collapse">
-    <thead>
-      <tr class="bg-stone-100 dark:bg-stone-800">
-        <th class="border border-border p-3 text-left font-bold">유형</th>
-        <th class="border border-border p-3 text-left font-bold">특징 (메커니즘)</th>
-        <th class="border border-border p-3 text-left font-bold">발생 가능한 부상</th>
-        <th class="border border-border p-3 text-left font-bold">추천 신발 카테고리</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td class="border border-border p-3 font-semibold text-emerald-600">중립 (Neutral)</td>
-        <td class="border border-border p-3">착지 후 약 15° 이상적 안쪽 회전. 효율적 충격 분산.</td>
-        <td class="border border-border p-3">비교적 낮음</td>
-        <td class="border border-border p-3">충격 흡수와 에너지 리턴에 집중한 <strong>뉴트럴화, 맥스 쿠션화</strong></td>
-      </tr>
-      <tr class="bg-stone-50 dark:bg-stone-900">
-        <td class="border border-border p-3 font-semibold text-amber-600">과내전 (Over)</td>
-        <td class="border border-border p-3">안쪽으로 과도하게 무너짐. 발목이 안으로 꺾이며 체중 쏠림.</td>
-        <td class="border border-border p-3">정강이 통증, 족저근막염, 런너스 니(무릎 내측)</td>
-        <td class="border border-border p-3">무너짐을 구조적으로 막는 <strong>안정화(Stability)</strong></td>
-      </tr>
-      <tr>
-        <td class="border border-border p-3 font-semibold text-rose-600">과소내전 (Under)</td>
-        <td class="border border-border p-3">바깥쪽으로 기울거나 회전이 부족함. 충격이 뼈로 직접 전달됨.</td>
-        <td class="border border-border p-3">피로 골절, 발목 염좌</td>
-        <td class="border border-border p-3">쿠셔닝이 매우 풍부하고 유연한 <strong>뉴트럴화</strong></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<h2>2. 2026 안정화 기술의 진화: "강제적 제어에서 기하학적 유도로"</h2>
-
-<p>
-  과거에는 딱딱한 '내측 기둥(Medial Post)'으로 발을 강제로 막았다면,
-  <strong>2026년의 기술 트렌드</strong>는 인위적인 개입을 최소화하고 자연스러운 움직임을 유도하는 방식으로 진화했습니다.
-</p>
-
-<h3>👟 브랜드별 최신 핵심 기술 (2026 Tech Stack)</h3>
-
-<div class="space-y-4 my-6">
-  <div class="p-4 bg-stone-50 dark:bg-stone-900 rounded-xl border-l-4 border-stone-500">
-    <h4 class="font-bold text-lg mb-2">ASICS 4D 가이던스 시스템</h4>
-    <p class="text-secondary">
-      (젤-카야노 32 적용) 딱딱한 기둥 대신 탄성 폼을 사용해 아치가 제자리로 돌아오는 시간을 단축합니다.
-      <strong>이질감 없는 안정성</strong>이 특징입니다.
-    </p>
-  </div>
-
-  <div class="p-4 bg-stone-50 dark:bg-stone-900 rounded-xl border-l-4 border-stone-600">
-    <h4 class="font-bold text-lg mb-2">Brooks 가이드레일 (GuideRails)</h4>
-    <p class="text-secondary">
-      볼링장의 가이드처럼 무릎과 발목이 경로를 이탈할 때만 개입하는 스마트 시스템입니다.
-      <strong>중립 러너가 지쳤을 때도 효과적</strong>입니다.
-    </p>
-  </div>
-
-  <div class="p-4 bg-stone-50 dark:bg-stone-900 rounded-xl border-l-4 border-stone-700">
-    <h4 class="font-bold text-lg mb-2">HOKA H-프레임 (H-Frame)</h4>
-    <p class="text-secondary">
-      (아라히 8 적용) 서로 다른 밀도의 폼을 결합하여 발을 신발 중앙으로 자연스럽게 유도하는 최신 설계입니다.
-      <strong>무게는 줄고 지지력은 강화</strong>되었습니다.
-    </p>
-  </div>
-
-  <div class="p-4 bg-stone-50 dark:bg-stone-900 rounded-xl border-l-4 border-stone-800">
-    <h4 class="font-bold text-lg mb-2">New Balance 스태빌리티 플레인</h4>
-    <p class="text-secondary">
-      (860v14 적용) 얇은 EVA 필름을 활용해 <strong>투박함 없이 부드럽게 과내전을 제어</strong>하는 기술입니다.
-    </p>
-  </div>
-</div>
-
-<h2>3. 자가 진단과 전문 분석의 중요성</h2>
-
-<figure class="my-10">
-  <img
-    src="/images/blog/pronation-guide/wet-test.webp"
-    alt="웨트 테스트로 발 유형 확인하기"
-    class="w-full rounded-xl border border-border"
-    loading="lazy"
-    decoding="async"
-  />
-  <figcaption class="text-sm text-secondary mt-2">
-    젖은 발로 종이에 발자국을 찍어 아치 유형을 확인할 수 있습니다
-  </figcaption>
-</figure>
-
-<h3>💧 집에서 하는 가장 쉬운 방법: "웨트 테스트(Wet Test)"</h3>
-
-<p>지금 바로 확인해 보세요! 젖은 발로 종이나 마른 바닥에 발자국을 찍어보는 것입니다.</p>
-
-<ul>
-  <li><strong>발자국 전체가 찍힘:</strong> 평발 성향 (과내전 가능성 높음)</li>
-  <li><strong>중간 부분이 끊겨 보임:</strong> 요족 성향 (과소내전 가능성 높음)</li>
-  <li><strong>적당히 아치가 보임:</strong> 중립 발 (뉴트럴화 적합)</li>
-</ul>
-
-<div class="p-4 bg-amber-50 dark:bg-amber-900/30 rounded-xl border border-amber-200 dark:border-amber-800 my-6">
-  <p class="font-semibold text-amber-800 dark:text-amber-200 mb-2">💡 전문가의 팁</p>
-  <p class="text-amber-700 dark:text-amber-300">
-    기존에 신던 신발의 밑창 마모 패턴을 확인하세요.
-    <strong>안쪽이 많이 닳았다면 과내전</strong>, <strong>바깥쪽이 닳았다면 과소내전</strong>을 의심해볼 수 있습니다.
-  </p>
-</div>
-
-<h3>🔬 가장 정확한 방법: 3D 동적 보행 분석</h3>
-
-<p>
-  자가 진단은 참고용일 뿐입니다.
-  <strong>플릿 러너, 레이스먼트, 또는 아식스/뉴발란스 플래그십 스토어</strong>와 같이
-  전문 장비를 갖춘 곳에서 분석을 받는 것이 가장 확실합니다.
-</p>
-<p>
-  이는 정적인 발 모양뿐만 아니라 <strong>달릴 때의 관절 각도와 압력 분포</strong>까지 분석하여
-  최적의 솔루션을 제공합니다.
-</p>
-
-<h2>4. 내전 유형별 추천 러닝화 (2026)</h2>
-
-<h3>✅ 중립 러너 추천</h3>
-<ul>
-  <li><strong>일상 러닝:</strong> Nike Pegasus 42, Asics Gel-Nimbus 27, Hoka Clifton 10</li>
-  <li><strong>맥스 쿠션:</strong> Hoka Bondi 9, New Balance 1080 v15, Nike Invincible 4</li>
-  <li><strong>가성비:</strong> Saucony Ride 18, Mizuno Wave Rider 29</li>
-</ul>
-
-<h3>✅ 과내전 러너 추천</h3>
-<ul>
-  <li><strong>라이트 안정화:</strong> Asics GT-2000 14, Brooks Adrenaline GTS 25, Saucony Guide 18</li>
-  <li><strong>프리미엄 안정화:</strong> Asics Gel-Kayano 32, New Balance 860 v14</li>
-  <li><strong>맥스 안정화:</strong> Hoka Arahi 8, Brooks Glycerin GTS 22</li>
-</ul>
-
-<h3>✅ 과소내전 러너 추천</h3>
-<ul>
-  <li><strong>쿠셔닝 최우선:</strong> Hoka Bondi 9, New Balance Fresh Foam More v5</li>
-  <li><strong>유연한 뉴트럴:</strong> Saucony Triumph 23, Nike Vomero 19</li>
-</ul>
-
-<h2>🏁 마무리: 내 몸에 맞는 도구가 가장 좋은 도구입니다</h2>
-
-<p>
-  아무리 비싸고 유명한 슈퍼슈즈라도 내 생체역학적 특성과 맞지 않으면 부상을 유발하는 '독'이 될 수 있습니다.
-</p>
-<p>
-  자신의 내전 유형을 정확히 파악하고, 최신 가이드 기술이 적용된 신발과 함께
-  <strong>통증 없는 즐거운 러닝 라이프</strong>를 시작하세요!
-</p>
-
-<div class="p-6 bg-stone-100 dark:bg-stone-800 rounded-2xl my-8">
-  <h4 class="font-bold text-lg mb-4">📋 핵심 체크리스트</h4>
-  <ul class="space-y-2">
-    <li>☑️ 웨트 테스트로 발 아치 유형 확인하기</li>
-    <li>☑️ 기존 신발 밑창 마모 패턴 분석하기</li>
-    <li>☑️ 가능하다면 전문 매장에서 보행 분석 받기</li>
-    <li>☑️ 내전 유형에 맞는 카테고리에서 신발 선택하기</li>
-    <li>☑️ 새 신발은 짧은 거리부터 적응 기간 갖기</li>
-  </ul>
-</div>
-    `,
-    author: '산초 에디터',
-    publishedAt: '2026-02-04',
-    category: 'guide',
-    tags: ['내전', 'Pronation', '과내전', '안정화', '러닝화선택', '부상예방', '평발', '발분석', '생체역학'],
-    readingTime: 8,
+<div class="tldr"><span class="tldr-label">내전 유형을 보기 전에</span><ul><li>서 있을 때의 발 모양, 걷고 달릴 때의 움직임, 통증의 진단은 서로 다른 정보입니다.</li><li>평발이 모두 치료나 안정화 구매를 필요로 하는 것은 아닙니다. 새 통증·기능 변화는 따로 평가하세요.</li><li>발자국·밑창·영상 하나를 ‘이 부상은 이 신발’이라는 구매 공식으로 사용하지 않습니다.</li></ul></div>
+<h2>내전이라는 말은 무엇을 뜻하나요?</h2><p>Pronation은 걸을 때 발이 움직이며 체중을 옮기는 과정에서 쓰이는 용어입니다. 과내전은 발이 안쪽으로 평소보다 더 기우는 움직임을 설명합니다. Cleveland Clinic은 진찰과 보행 평가로 상태를 확인하며, 관련 증상이 언제나 과내전 때문에 생기는 것은 아니라고 설명합니다. 모든 사람에게15°를 이상적인 자가 측정값으로 제시하지 않습니다. <a href="https://my.clevelandclinic.org/health/diseases/22474-overpronation" target="_blank" rel="noopener noreferrer">Cleveland Clinic 원문</a></p>
+<h2>평발이면 문제가 있다는 뜻일까?</h2><p>NHS는 평발이 흔하고 보통 문제를 일으키지 않으며, 증상이 없으면 조치가 필요하지 않다고 안내합니다. 통증·뻣뻣함·약화·감각 저하, 반복 손상·보행이나 균형 문제, 이전과 달리 생긴 평발 또는 한쪽 발의 변화가 있다면 진료를 권합니다. <a href="https://www.nhs.uk/conditions/flat-feet/" target="_blank" rel="noopener noreferrer">NHS 평발 안내</a></p>
+<h2>발 모양으로 신발을 지정하면 부상이 줄어들까?</h2><p>2022년 Cochrane 검토는 정적인 발 형태에 맞춰 신발을 지정하는 방식의 부상 감소를 뒷받침하지 못했습니다. 이 비교의 연구는 군인 대상이어서 일반 러너에게 그대로 적용하는 데도 한계가 있습니다. 이것을 ‘모든 지지 신발이 무의미하다’고 확대할 수는 없으며, 개인 증상 관리와 예방 효과 연구는 구분해야 합니다. 검색 범위는2021년6월까지입니다. <a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane 원문</a></p>
+<h2>관찰한 것을 어떻게 가져가면 좋을까</h2><p>아래는 매장·진료 상담을 준비하기 위한 편집부 구분표입니다. 발 유형을 판정하는 자가검사표는 아닙니다.</p>
+<table><thead><tr><th>자료</th><th>함께 설명할 조건</th><th>그 자료만으로 정하지 않을 것</th></tr></thead><tbody><tr><td>발 사진·발자국</td><td>서 있는 조건, 최근 모양 변화, 한쪽·양쪽 여부</td><td>달리기 중 움직임·질환 진단·필요 신발</td></tr><tr><td>밑창 마모</td><td>신발 모델·사용 기간·거리·노면</td><td>무릎 통증의 원인이나 안정화 필요성</td></tr><tr><td>러닝 영상</td><td>속도·신발·노면·촬영 조건과 증상</td><td>모든 상황에서의 움직임과 치료 계획</td></tr><tr><td>통증 기록</td><td>위치·시작·활동·생활 영향</td><td>발 모양과의 인과관계 확정</td></tr></tbody></table>
+<h2>보행 분석을 받는다면 물어볼 질문</h2><ol><li>서 있는 발 모양과 실제 움직임 중 무엇을 측정했나요?</li><li>어떤 속도·노면·신발 조건에서 관찰했나요?</li><li>측정 결과가 내 증상과 관련된다는 판단의 근거는 무엇인가요?</li><li>이 결과로 알 수 없는 부분과 진료가 필요한 부분은 무엇인가요?</li><li>신발·인솔을 바꾼다면 목적과 재평가 방법은 무엇인가요?</li></ol>
+<h2>신발의 구조 이름을 치료 등급으로 바꾸지 마세요</h2><p>GuideRails·H-Frame·Stability Plane처럼 이름이 다른 구조는 모델과 세대를 확인해 비교할 내용입니다. 이름만 보고 교정 강도·부상 예방 순위를 정하지 않습니다. 실제 양말·인솔을 포함한 시착에서는 앞발·아치 압박과 뒤꿈치 고정을 기록하고, 정확한 판매 폭·사이즈와 교환 조건을 확인하세요. <a href="/blog/stability-shoes-self-diagnosis-fit-guide-2026">안정화 선택과 세대별 확인 질문</a>에서 이어 볼 수 있습니다.</p>
+<h2>확인한 원문</h2><ul><li><a href="https://my.clevelandclinic.org/health/diseases/22474-overpronation" target="_blank" rel="noopener noreferrer">Cleveland Clinic Overpronation</a> — 용어·진찰·보행 평가·증상 상담</li><li><a href="https://www.nhs.uk/conditions/flat-feet/" target="_blank" rel="noopener noreferrer">NHS Flat feet</a> — 무증상과 평가가 필요한 증상의 구분</li><li><a href="https://www.cochrane.org/evidence/CD013368_running-shoes-preventing-lower-limb-running-injuries-adults" target="_blank" rel="noopener noreferrer">Cochrane2022</a> — 신발 지정과 부상 예방 연구의 범위</li></ul>
+<p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
+    author: "산초 에디터",
+    publishedAt: "2026-02-04",
+    category: "guide",
+    tags: [
+      "내전",
+      "평발",
+      "러닝화 선택",
+      "보행 분석"
+    ],
+    readingTime: 5,
     featured: true,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "젖은 발자국으로 안정화가 필요한지 알 수 있나요?",
+        "answer": "발 모양 관찰과 달리는 움직임·통증 진단은 다른 정보입니다. 발자국만으로 필요한 모델을 확정하지 않습니다."
+      },
+      {
+        "question": "평발이면 무조건 교정해야 하나요?",
+        "answer": "NHS는 증상 없는 평발은 보통 조치가 필요하지 않다고 안내합니다. 새 통증·기능 저하나 최근 변화가 있다면 평가받으세요."
+      },
+      {
+        "question": "밑창 안쪽이 닳으면 무릎 통증도 과내전 때문인가요?",
+        "answer": "마모는 사용 조건과 함께 설명할 자료이며 그것만으로 통증 원인을 확정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'first-running-shoe-2026',

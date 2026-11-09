@@ -4326,122 +4326,48 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'runners-knee-patellofemoral-pain-2026',
-    slug: 'runners-knee-patellofemoral-pain-2026',
-    title: '러너스 니(무릎 앞 통증·슬개대퇴 통증 증후군) 완전 가이드 | 계단 내려갈 때 시큰하다면 — 원인·자가진단·둔근 강화·신발의 진짜 역할',
-    description: '계단을 내려갈 때, 쪼그려 앉을 때, 오래 앉았다 일어설 때 무릎 "앞쪽·슬개골 주변"이 뭉근하게 시큰하다면 러너스 니(슬개대퇴 통증 증후군, PFPS)를 의심하세요. 러너에게 가장 흔한 과사용 부상으로 여성 러너의 19~30%가 겪고, 여성이 남성보다 약 2배 많습니다. 무릎 "바깥쪽"이 아픈 IT밴드 증후군과의 구별, 스쿼트·무비사인 자가진단, 그리고 진짜 해결책 — 신발이 아니라 둔근·대퇴사두 강화(JOSPT 최고 등급 근거)와 케이던스 10% 증가(슬개대퇴 부하 14% 감소)까지 러너 관점에서 정직하게 정리했습니다.',
-    thumbnail: '/images/blog/runners-knee-patellofemoral-pain-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-06',
-    category: 'guide' as const,
-    readingTime: 11,
-    tags: ['러너스 니', '슬개대퇴 통증 증후군', '무릎 앞 통증', '무릎 통증', '러닝 부상', '둔근 강화', '케이던스', '슬개골 통증'],
+    id: "runners-knee-patellofemoral-pain-2026",
+    slug: "runners-knee-patellofemoral-pain-2026",
+    title: "러너스 니·무릎 앞 통증 — 증상 기록과 운동·복귀 상담",
+    description: "계단·쪼그려 앉기·오래 앉기에서의 앞무릎 통증을 기록하고 진료·운동 계획을 준비하는 방법입니다. 자가 스쿼트 검사나 케이던스 증가율로 진단·복귀를 판정하지 않습니다.",
+    thumbnail: "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?auto=format&fit=crop&w=1600&q=80",
+    author: "산초 에디터",
+    publishedAt: "2026-07-06",
+    category: "guide",
+    readingTime: 5,
+    tags: [
+      "러너스 니",
+      "슬개대퇴통증",
+      "무릎 앞 통증",
+      "러닝 복귀"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>러너스 니(슬개대퇴 통증 증후군, PFPS)는 무릎 "앞쪽·슬개골 주변"이 아픈 러너 최다 과사용 부상</strong>입니다 — 여성 러너의 19~30%가 겪고 여성이 남성보다 약 2배 많아요. 무릎 "바깥쪽"이 아픈 <a href="/blog/it-band-syndrome-running-shoes-2026">IT밴드 증후군</a>(러너의 5~12%)과는 다른 병입니다</li>
-    <li><strong>진짜 처방은 신발이 아니라 "운동"입니다</strong> — 둔근(엉덩이)·대퇴사두 강화가 통증·기능 개선에 가장 근거가 강한 1차 치료(JOSPT 최고 등급)이고, <strong>케이던스를 10% 올리면 슬개대퇴 관절 부하가 14% 줄어듭니다</strong></li>
-    <li><strong>계단 내려갈 때·쪼그려 앉을 때·오래 앉았다 일어설 때(무비 사인) 아프면 신호</strong>. 대부분 4~6주 운동치료로 좋아지지만, <strong>무릎이 붓거나·잠기거나·휙 꺾이면</strong> 다른 손상일 수 있어 병원이 먼저예요</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🦵</span>
-  <div class="callout-body">
-    <p class="callout-title">먼저 — 이런 무릎은 러너스 니가 아니라 "병원 먼저"</p>
-    <p>러너스 니는 <strong>서서히 시작되는 뭉근한 앞무릎 통증</strong>이 특징입니다. 반대로 <strong>무릎이 확 붓거나(관절 부종)·열이 나거나·특정 각도에서 물리적으로 안 펴지고 잠기거나(locking)·힘줄 없이 휙 꺾이는 불안정감(giving way)</strong>이 있다면 반월판·인대 손상이나 다른 관절 질환일 수 있어 정형외과·스포츠의학과 진료가 먼저입니다. 넘어진 뒤 몇 시간 안에 심하게 부었다면 특히 그렇고요. 이 글은 일반 정보로 의학적 진단·치료를 대체하지 않습니다.</p>
-  </div>
-</div>
-
-<h2>러너스 니가 뭔가 — 슬개골과 허벅지뼈 사이의 문제</h2>
-<p>러너스 니의 정식 이름은 <strong>슬개대퇴 통증 증후군(Patellofemoral Pain Syndrome, PFPS)</strong>입니다. 슬개골(무릎뼈)이 허벅지뼈(대퇴골) 위를 미끄러지며 움직이는데, 이 접촉면에 반복적으로 스트레스가 쌓이면서 무릎 앞쪽이 아파지는 상태예요. 특정 조직 하나가 "찢어진" 게 아니라 <strong>관절에 실리는 부하와 그걸 감당하는 능력의 불균형</strong>에서 오는, 전형적인 과사용 문제입니다.</p>
-<p>그래서 러너에게 가장 흔합니다. 연구에 따라 <strong>여성 러너의 19~30%, 남성 러너의 13~25%</strong>가 겪고, 러닝 부상 통계에서 유병률 1위(약 16.7%)로 자주 꼽힙니다. 일반 인구에서도 <strong>여성이 남성보다 약 2배</strong> 많고, 특히 활동량이 급증하는 초보·젊은 여성 러너에게 집중돼요.</p>
-
-<div class="callout">
-  <span class="callout-icon">🔍</span>
-  <div class="callout-body">
-    <p class="callout-title">자가 확인 — 이 세 가지에서 앞무릎이 아픈가</p>
-    <p><strong>① 무비 사인(극장 신호):</strong> 영화관·차 안처럼 <strong>무릎을 굽힌 채 오래 앉아 있다 일어설 때</strong> 앞무릎이 뻐근하고, 무릎을 펴면 풀리나요? PFPS의 대표 신호입니다.<br>
-    <strong>② 계단 내려갈 때:</strong> 계단을 <strong>내려갈 때(오를 때보다)</strong> 앞무릎이 더 시큰한가요? 내리막에서 슬개대퇴 부하가 커지기 때문이에요.<br>
-    <strong>③ 스쿼트:</strong> 쪼그려 앉으면 통증이 재현되나요?(이 검사는 민감도가 91%로 높습니다) — 세 가지 중 여럿에 해당하면 러너스 니 가능성이 높습니다.</p>
-  </div>
-</div>
-
-<h2>IT밴드 증후군과 어떻게 다른가 — 위치가 갈라준다</h2>
-<p>러너들이 "무릎 아프다"를 뭉뚱그리지만, 러너스 니와 <a href="/blog/it-band-syndrome-running-shoes-2026">IT밴드 증후군</a>은 다른 병이고 대응도 다릅니다. 핵심은 <strong>아픈 위치</strong>예요.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>구분</th><th>러너스 니(PFPS)</th><th>IT밴드 증후군</th></tr></thead>
-  <tbody>
-    <tr><td>아픈 위치</td><td><strong>무릎 앞·슬개골 주변</strong></td><td><strong>무릎 바깥쪽</strong>(대퇴 외측상과)</td></tr>
-    <tr><td>악화 동작</td><td>계단 내려가기·쪼그려앉기·오래 앉기</td><td>반복 굽힘폄(특히 내리막 러닝)</td></tr>
-    <tr><td>통증 양상</td><td>뭉근하게 시큰, 서서히</td><td>바깥쪽 한 지점이 콕·타는 듯</td></tr>
-    <tr><td>러너 빈도</td><td>19~30%(최다)</td><td>5~12%</td></tr>
-    <tr><td>공통 해법</td><td colspan="2">둔근·고관절 강화 + 케이던스 조정 + 훈련량 관리</td></tr>
-  </tbody>
-</table>
-</div>
-<p>둘 다 흔하고 함께 오기도 하지만, <strong>앞이면 러너스 니, 바깥쪽이면 IT밴드</strong>로 기억하면 방향이 잡힙니다.</p>
-
-<h2>왜 생기나 — "무릎"이 아니라 위아래가 문제</h2>
-<p>흥미롭게도 러너스 니의 해법은 대부분 무릎이 아니라 <strong>고관절(엉덩이)과 훈련 방식</strong>에 있습니다. 다만 여기엔 정직하게 짚어야 할 근거의 결이 있어요.</p>
-<ul>
-  <li><strong>대퇴사두근 약화</strong> — 앞허벅지 근력이 약하면 위험이 높아진다는 전향적 근거가 있습니다(근거 강함)</li>
-  <li><strong>둔근(엉덩이) 약화 — ⚠️ 원인인지 결과인지 논쟁적</strong>: PFPS 환자는 둔근이 약한 경향이 있지만, 잘 설계된 추적 연구에서는 둔근 약화가 발병을 <strong>예측하지는 못했습니다</strong>(약화가 원인이 아니라 결과일 수 있음). <strong>그럼에도 "이미 아픈 사람"에게 둔근 강화는 가장 근거 강한 치료</strong>라는 게 핵심입니다 — 위험요인과 치료법은 별개예요</li>
-  <li><strong>착지 시 무릎이 안쪽으로 무너짐(동적 외반)</strong> — 확립된 위험요인입니다(근거 강함)</li>
-  <li><strong>훈련 과부하</strong> — 급격한 거리·강도·언덕 증가(근거 강함). 초보가 의욕에 몰아칠 때 잘 옵니다</li>
-  <li><strong>발 과회내 / Q각</strong> — 과거엔 주범으로 지목됐지만 <strong>최근 근거는 약하거나 논쟁적</strong>입니다(효과크기 작음). "발 때문"이라고 단정하기 어려워요</li>
-  <li><strong>타이트한 햄스트링</strong> — 뒤허벅지가 뻣뻣하면 슬개대퇴 부하가 늘 수 있습니다(근거 중간)</li>
-</ul>
-
-<h2>치료 — 무릎에 바르는 약보다 "운동"이 약이다</h2>
-<p>PFPS의 1차 치료는 명확합니다. <strong>고관절(둔근)과 대퇴사두 강화에 초점을 둔 운동치료</strong>로, 국제 물리치료 가이드라인(JOSPT)에서 최고 등급(Grade A)으로 권고합니다. 7개 임상시험을 모은 분석에서 둔근 강화는 통증과 계단 오르내리기 기능을 개선했고, 일부 효과는 1년 뒤까지 유지됐습니다.</p>
-<ul>
-  <li><strong>둔근 + 대퇴사두 강화</strong> — 주 3회, 최소 6주. 옆으로 누워 다리 벌리기(클램셸)·힙 쓰러스트·스텝다운·월싯 등 고관절 외전·신전 위주</li>
-  <li><strong>상대적 휴식과 활동 수정</strong> — 통증을 유발하는 내리막·과한 거리를 줄이되, 통증 없는 범위에선 계속 움직입니다</li>
-  <li><strong>케이던스 조정</strong>(아래 예방 참고) — 달리는 방식을 바꾸는 게 강력한 치료이자 예방입니다</li>
-  <li><strong>보조 수단은 어디까지나 보조</strong> — 슬개골 테이핑은 단기 통증 완화에 도움될 수 있으나 반드시 운동과 병행할 때만 의미가 있고, 무릎 보조기는 운동치료 대비 추가 이득이 입증되지 않았습니다</li>
-</ul>
-<p><strong>회복 기간</strong>은 경증이면 2~3주, 보통 4~6주, 만성·중증은 수개월이 걸리기도 합니다. 참고로 <strong>MRI는 대개 필요 없습니다</strong> — PFPS 통증은 영상에 보이는 구조 이상과 연관이 낮아, 가이드라인도 6~8주 보수치료가 실패한 뒤에야 X선을 권합니다. 또 한때 유행한 <strong>"내측광근(VMO)만 콕 집어 강화"는 현재 근거 없음</strong>으로 정리됐습니다(VMO는 다른 대퇴사두와 따로 수축하지 않음).</p>
-
-<h2>러닝화의 진짜 역할 — 근본 해결은 아닙니다</h2>
-<p>정직하게 말하면, <strong>"회내 잡아주는 신발이나 인솔로 러너스 니가 낫는다"는 강한 근거는 없습니다.</strong> 발 회내가 위험요인이라는 근거 자체가 약하고(효과크기 0.28~0.33), 신발만 바꿔서 근본 원인(근력·부하 패턴)이 해결되진 않아요. 실제로 기성 풋오소틱(인솔)은 <strong>단기(6주) 통증 완화</strong>엔 근거가 있지만 운동치료의 대체재가 아니라 보조일 뿐입니다.</p>
-<p>그래도 신발이 할 수 있는 역할은 있습니다 — 회복기 부담을 줄이고, 과회내가 뚜렷한 사람에게 안정감을 더하는 정도예요. 훈련량이 많거나 통증이 있는 러너가 <strong>부담을 덜 신발</strong>을 고른다면 아래가 무난합니다. 다시 강조하지만 이건 "치료약"이 아니라 운동치료와 <strong>병행</strong>하는 보조입니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>신발</th><th>왜 이 상황에</th></tr></thead>
-  <tbody>
-    <tr><td><strong><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a></strong></td><td>가이드레일이 무릎 정렬 흔들림을 부드럽게 잡아주는 안정화 — 과회내·동적 외반이 있는 러너에</td></tr>
-    <tr><td><strong><a href="/shoes/asics-gel-kayano-33">아식스 젤 카야노 33</a></strong></td><td>대표 안정화 맥스쿠션, 회내 제어 + 부드러운 충격 흡수</td></tr>
-    <tr><td><strong><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a></strong></td><td>안정화 + 맥시멀 쿠션 조합 — 무릎 부담을 넓게 분산</td></tr>
-    <tr><td><strong><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a></strong></td><td>회내가 심하지 않은 중립 발 — 푹신한 쿠션으로 회복주에</td></tr>
-    <tr><td><strong><a href="/shoes/hoka-bondi-9">호카 본디 9</a></strong></td><td>맥시멀 쿠션의 대명사 — 무릎 이력이 있는 러너의 이지런에(<a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a> 참고)</td></tr>
-  </tbody>
-</table>
-</div>
-
-<h2>예방·복귀 — 케이던스가 열쇠다</h2>
-<p>러너스 니 예방에서 가장 근거가 강한 개입은 의외로 신발이 아니라 <strong>케이던스(분당 스텝 수)</strong>입니다.</p>
-<ul>
-  <li><strong>케이던스 10% 올리기</strong> — 보폭을 줄이고 <a href="/blog/running-cadence-guide-2026">케이던스를 약 10% 높이면</a> 슬개대퇴 관절 최대 부하가 <strong>14% 감소</strong>한다는 연구가 있고(Lenhart 2013), 실제 PFPS 러너의 증상이 개선됐다는 임상 결과도 있습니다. 무릎 부담을 줄이는 가장 확실한 러닝 습관이에요</li>
-  <li><strong>둔근·대퇴사두 근력 유지</strong> — 통증이 없어도 주 2~3회 하체·엉덩이 근력은 러너의 무릎 보험입니다</li>
-  <li><strong>훈련량은 점진적으로</strong> — 거리·강도·언덕을 한꺼번에 올리지 말고, 회복주를 넣으세요</li>
-  <li><strong>복귀는 통증을 기준으로</strong> — 통증 없는 범위에서 서서히 거리를 늘립니다. "무엇이 무릎을 자극했는지" 파악하고 그걸 조절하는 게 회복 속도를 좌우합니다</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 러너스 니인지 IT밴드인지 어떻게 구별하나요?</h3>
-<p>아픈 <strong>위치</strong>가 가장 확실한 단서입니다. 무릎 <strong>앞쪽·슬개골 주변</strong>이 계단 내려갈 때·쪼그려 앉을 때 시큰하면 러너스 니(PFPS), 무릎 <strong>바깥쪽</strong> 한 지점이 러닝 중(특히 내리막)에 콕콕 아프면 <a href="/blog/it-band-syndrome-running-shoes-2026">IT밴드 증후군</a>입니다. 러너에겐 러너스 니가 훨씬 흔해요(19~30% vs 5~12%).</p>
-<h3>Q. 쿠션 좋은 신발이나 인솔을 사면 낫나요?</h3>
-<p>그것만으로는 부족합니다. 신발·인솔은 <strong>보조</strong>이고, 근거 기반 1차 치료는 <strong>둔근·대퇴사두 강화 운동</strong>입니다. 인솔은 단기 통증 완화엔 도움될 수 있지만 운동치료를 대체하지 못해요. 무릎 부담을 실제로 줄이려면 신발보다 <strong>케이던스 10% 올리기</strong>가 근거가 더 강합니다.</p>
-<h3>Q. 아프면 무조건 쉬어야 하나요?</h3>
-<p>완전히 멈출 필요는 없습니다. <strong>통증을 유발하지 않는 범위</strong>에서 계속 움직이되, 통증을 키우는 내리막·과한 거리를 줄이고 근력 운동을 병행하세요. 대부분 4~6주면 좋아지지만, 붓기·잠김·불안정감이 있으면 자가치료 대신 병원 진료를 받아야 합니다.</p>
-<h3>Q. 엉덩이 근육이 약하면 무릎이 아프다는 게 사실인가요?</h3>
-<p>절반만 사실입니다. 둔근 약화가 러너스 니를 <strong>"일으키는 원인"인지는 논쟁적</strong>이에요(추적 연구에선 발병을 예측하지 못했습니다). 하지만 <strong>이미 통증이 있는 사람에게 둔근 강화는 가장 근거 강한 치료</strong>입니다. 즉 "원인 규명"보다 "지금 아프면 엉덩이를 강화하라"가 실용적인 결론입니다.</p>
-<h3>Q. 초보인데 러너스 니가 잘 생기나요?</h3>
-<p>네, 특히 조심해야 합니다. 활동량이 급증하는 <strong>초보·젊은 여성 러너</strong>에게 발생률이 가장 높습니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화</a>를 무리 없이 고르고, 거리를 서서히 쌓으며, 계단 내려갈 때 앞무릎이 시큰해지면 초기에 케이던스·근력부터 점검하세요.</p>
-`,
+<div class="tldr"><span class="tldr-label">무릎 앞쪽이 아프다면</span><ul><li>슬개대퇴통증은 앞무릎·무릎뼈 주변 통증을 설명하는 용어입니다. 앞쪽 통증을 모두 같은 질환으로 진단하지 않습니다.</li><li>심한 붓기·변형·잠김·힘 빠짐이나 체중부하 어려움은 빠른 평가가 필요한 신호입니다.</li><li>개인의 평가에 맞춰 활동과 운동 계획을 정하세요. 케이던스10% 증가·4~6주 복귀를 공통 처방으로 적용하지 않습니다.</li></ul></div>
+<h2>어떤 활동에서 아픈지 설명하세요</h2><p>AAOS는 슬개대퇴통증에서 앞무릎의 뻐근한 통증, 달리기·계단·쪼그려 앉기나 무릎을 굽히고 오래 앉은 뒤의 통증을 설명합니다. 발생에는 여러 요소가 관여할 수 있고 진단은 병력·진찰 등을 통해 이뤄집니다. 아픈 위치나 집에서 스쿼트를 했을 때의 반응만으로 확진하거나 다른 손상을 배제하지 마세요. <a href="https://www.orthoinfo.org/bodypart/kneelower-leg/patellofemoral-pain-syndrome/" target="_blank" rel="noopener noreferrer">AAOS 슬개대퇴통증 원문</a></p>
+<h2>진료를 미루지 말아야 할 상황</h2><p>무릎이 매우 아프거나 체중을 싣고 움직이기 어렵고, 심하게 붓거나 모양이 바뀌거나, 잠김·힘 빠짐이 있으면 의료기관에 신속히 문의하세요. 발열과 붉어짐·열감이 함께 나타나는 경우도 해당합니다. <a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS 진료 신호</a></p>
+<h2>다섯 가지 기록을 가져가세요</h2><p>아래는 상담을 구체화하기 위한 편집부 기록표입니다. 항목 개수로 진단하는 점수표가 아닙니다.</p>
+<table><thead><tr><th>기록</th><th>구체적으로 적는 방법</th></tr></thead><tbody><tr><td>위치·시작</td><td>무릎뼈 주변 위치, 한쪽·양쪽, 갑작스러운 부상인지 점차 생긴 통증인지</td></tr><tr><td>활동 조건</td><td>계단·내리막·러닝·오래 앉기 등 불편했던 상황</td></tr><tr><td>생활 영향</td><td>보행·출퇴근·수면, 붓기·잠김 여부</td></tr><tr><td>훈련 변화</td><td>거리·속도·빈도·언덕·대회·근력운동·신발 변경</td></tr><tr><td>관리 반응</td><td>어떤 활동을 줄였고 당일·다음 날 어떻게 변했는지</td></tr></tbody></table>
+<h2>운동은 종류와 부하를 함께 상담하세요</h2><p>AAOS는 통증을 유발하는 활동의 조절과 상태에 맞춘 운동치료를 설명합니다. 무릎·고관절 근력, 가동범위·지구력 등을 다룰 수 있지만, 모든 사람에게 같은 동작·주당 횟수·기간을 지정하지 않습니다. 인솔도 개인에게 고려할 수 있는 중재이지 특정 안정화 구매만으로 치료가 끝난다는 뜻은 아닙니다.</p>
+<p>운동 계획에는 지금 허용되는 동작, 운동 중·이후의 어떤 반응에 조절할지, 재평가 시점과 러닝 복귀 조건을 함께 적어두세요. 케이던스 기록은 보여줄 자료가 될 수 있지만, 일괄10% 증가를 통증 해결의 합격선으로 삼지 않습니다.</p>
+<h2>신발과 진료에서 확인할 질문을 구분하세요</h2><p>매장에서는 실제 양말·인솔을 포함한 압박·뒤꿈치 고정과 판매 규격을 확인하세요. ‘이 신발의 SA가 높다’는 정보로 앞무릎 통증의 원인을 확진하거나 모델별 보호 효과를 순위로 정하지 않습니다. 특정 모델명보다 현재의 불편과 활동 목표를 먼저 설명하는 편이 상담에 도움이 됩니다.</p>
+<p><a href="/blog/it-band-syndrome-running-shoes-2026">무릎 바깥쪽 통증 기록</a> · <a href="/blog/knee-pain-running-shoes">무릎 통증 진료 신호</a>. 통증 부위가 다르다는 관찰만으로 두 질환을 자가 감별하는 용도로 쓰지 마세요.</p>
+<h2>확인한 원문</h2><ul><li><a href="https://www.orthoinfo.org/bodypart/kneelower-leg/patellofemoral-pain-syndrome/" target="_blank" rel="noopener noreferrer">AAOS Patellofemoral Pain Syndrome</a> — 증상·임상 평가·활동 조절·개별 운동치료</li><li><a href="https://www.nhs.uk/symptoms/knee-pain/" target="_blank" rel="noopener noreferrer">NHS Knee pain</a> — 신속한 평가가 필요한 증상</li></ul>
+<p><small>2026-11-09 원문 대조. 일반 정보와 상담 준비용 기록이며 개인의 진단·치료·러닝 복귀 허가를 대신하지 않습니다.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "계단에서 앞무릎이 아프면 러너스 니인가요?",
+        "answer": "슬개대퇴통증에서 나타날 수 있는 양상이지만 그 정보만으로 진단하지 않습니다. 증상과 기능·진찰을 함께 평가하세요."
+      },
+      {
+        "question": "케이던스를10% 올리면 낫나요?",
+        "answer": "숫자를 공통 처방이나 복귀 조건으로 제시하지 않습니다. 훈련 기록과 개인의 통증 반응을 가지고 상담하세요."
+      },
+      {
+        "question": "4~6주 지나면 다시 뛰어도 되나요?",
+        "answer": "정해진 기간만으로 복귀를 허가하지 않습니다. 개인의 상태와 관리 반응에 맞춰 계획을 정하세요."
+      }
+    ],
   },
   {
     id: "bondi-9-vs-glycerin-max-2-cushion-2026",
@@ -4870,96 +4796,39 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
-    slug: 'novablast-5-vs-pegasus-41-daily-cushion-2026',
-    title: '노바블라스트 5 vs 페가수스 41 | 데일리 쿠션 양대 스테디셀러 — 재미냐 안정이냐, 첫 러닝화 뭘 살까',
-    description: '한국에서 가장 많이 팔리는 15~17만원대 데일리 쿠션화 두 켤레를 정면 비교했습니다. 아식스 노바블라스트 5(FF Blast MAX·41mm 고스택·바운시한 재미)와 나이키 페가수스 41(ReactX·11mm 하이드롭·검증된 안정). 같은 "가성비 데일리"지만 통통 튀는 반발이냐, 부드럽고 안정적인 무난함이냐로 갈립니다. 첫 러닝화·힐착지·평발·발볼까지 한국 러너 기준으로 내게 맞는 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/novablast-5-vs-pegasus-41-daily-cushion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-03',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['노바블라스트 5', '페가수스 41', '데일리 러닝화', '입문 러닝화', '가성비 러닝화', '첫 러닝화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘 다 15~17만원 검증된 데일리 스테디셀러지만 성격이 정반대</strong> — 노바블라스트 5는 통통 튀는 바운시 재미, 페가수스 41은 부드럽고 안정적인 무난함입니다</li>
-    <li><strong>달리는 재미·반발·경량 → 노바블라스트 5</strong>(41mm 고스택·255g), <strong>안정·검증·첫 러닝화 → 페가수스 41</strong>(11mm 하이드롭·안정성 우위·부상예방 최상)</li>
-    <li>평발·뒤꿈치 착지·발볼 매우 넓음이면 <strong>페가수스 41</strong>(X-와이드까지·평발 good), 미드풋 성향·통기 여름은 취향에 따라 갈립니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p>"첫 러닝화, 무난하고 안전하게"면 <strong>페가수스 41</strong>(입문 부동의 1위·안정·부상예방 최상), "이왕이면 달리는 재미와 반발"이면 <strong>노바블라스트 5</strong>입니다. 둘 다 후속(페가수스 42·노바블라스트 6)이 나와 <strong>할인가로 노리기 좋은 시점</strong>이죠. 러닝이 처음이라면 <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>부터 보면 선택이 쉬워집니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<table>
-  <thead><tr><th>항목</th><th>노바블라스트 5</th><th>페가수스 41</th></tr></thead>
-  <tbody>
-    <tr><td>브랜드 / 카테고리</td><td>아식스 / 데일리</td><td>나이키 / 입문</td></tr>
-    <tr><td>한국 가격</td><td>169,000원</td><td>159,000원</td></tr>
-    <tr><td><strong>무게(US 9)</strong></td><td><strong>255g(경량)</strong></td><td>281g</td></tr>
-    <tr><td>힐 스택</td><td><strong>41mm(고스택)</strong></td><td>34mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td><strong>11mm(하이드롭)</strong></td></tr>
-    <tr><td>미드솔</td><td>FF Blast MAX</td><td>ReactX</td></tr>
-    <tr><td>쿠션 / 반발</td><td>바운시·통통 튐</td><td>부드럽고 묵직</td></tr>
-    <tr><td>안정성</td><td>중(6)</td><td><strong>높음(8)</strong></td></tr>
-    <tr><td>착지 성향</td><td>미드풋~힐</td><td><strong>뒤꿈치(11mm)</strong></td></tr>
-    <tr><td>평발 적합</td><td>보통</td><td><strong>양호(부상예방 최상)</strong></td></tr>
-    <tr><td>발볼 옵션</td><td>표준 + 와이드</td><td><strong>표준 + 와이드 + X-와이드</strong></td></tr>
-    <tr><td>내구성 / km당</td><td>600km / 282원</td><td>550km / 289원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택은 RunRepeat 실측 및 공식 기준. 두 모델 모두 후속(노바블라스트 6·페가수스 42)이 출시돼 현재는 할인 재고를 노리기 좋습니다.</small></p>
-
-<h2>노바블라스트 5 — 통통 튀는 "달리는 재미"</h2>
-<p><a href="/shoes/asics-novablast-5">아식스 노바블라스트 5</a>는 "러닝이 재밌어지는 신발"로 통합니다. <strong>FF Blast MAX 폼 + 41mm 고스택</strong>이 만드는 통통 튀는 바운시 라이드가 핵심이죠. 255g으로 페가수스 41보다 <strong>16g 가볍고</strong>, 조깅(6분/km)부터 템포런(4분30초/km)까지 폭넓게 즐겁게 굴러갑니다. 600km 내구성에 km당 282원으로 가성비도 훌륭하고, 와이드 옵션도 있습니다.</p>
-<p>약점은 <strong>안정성(6)</strong>과 <strong>여름 통기성</strong>입니다. 고스택 바운시라 과내전·평발 러너는 15km 이상에서 아치가 무너지는 느낌을 받을 수 있고(평발은 GT-2000·카야노 권장), 어퍼 통기성이 좋지 않아 한여름엔 덥습니다. "안정보다 반발과 재미"를 원하는 중립 발 러너에게 빛납니다.</p>
-<p><strong>✅ 이런 분께</strong> — 달리는 재미·반발을 원하는 러너 / 가벼운 데일리 / 미드풋~힐 착지 / 중립 발</p>
-
-<h2>페가수스 41 — 부드럽고 안정적인 "검증된 입문 1위"</h2>
-<p><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a>은 "초보도 신을 수 있나요?"에 가장 자신 있게 추천되는 입문 부동의 1위입니다. <strong>ReactX 폼 + 11mm 하이드롭</strong>으로 부드럽고 안정적인 라이드를 내며, 안정성(8)이 높아 입문자가 쉽게 적응합니다. 특히 <strong>부상 예방 등급이 최상위</strong>(족저근막염·아킬레스·신스플린트 excellent)이고, <strong>X-와이드까지</strong> 있어 발볼 매우 넓은 한국 러너도 대응됩니다. 평발 적합성도 노바5보다 낫습니다.</p>
-<p>대신 <strong>281g으로 더 무겁고</strong>, 반발·재미는 노바5만큼 통통 튀지 않습니다. 11mm 하이드롭이라 <strong>뒤꿈치 착지 러너에게 최적</strong>이고, 미드풋 착지 성향이면 다소 어색할 수 있습니다. "무난하고 안전하게, 오래 신는 데일리"를 원할 때 가장 실패 없는 선택입니다.</p>
-<p><strong>✅ 이런 분께</strong> — 첫 러닝화·안정 우선 / 평발·부상 이력 / 뒤꿈치 착지 / 발볼 매우 넓음(X-와이드)</p>
-
-<h2>내게 맞는 건?</h2>
-<ul>
-  <li><strong>"러닝이 처음, 무난하고 안전하게"</strong> → <a href="/shoes/nike-pegasus-41">페가수스 41</a>. 안정·부상예방·검증에서 가장 실패 없습니다.</li>
-  <li><strong>"이왕이면 달리는 재미와 반발"</strong> → <a href="/shoes/asics-novablast-5">노바블라스트 5</a>. 바운시함과 경량이 즐겁습니다.</li>
-  <li><strong>"평발이거나 발볼이 매우 넓다"</strong> → 페가수스 41(평발 양호·X-와이드). 노바5는 중립 발에 맞습니다.</li>
-  <li><strong>"뒤꿈치로 착지한다"</strong> → 페가수스 41(11mm 하이드롭). 미드풋 성향이면 노바5(8mm).</li>
-  <li><strong>"최신 버전이 낫지 않나?"</strong> → 후속인 <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 42</a>·<a href="/blog/asics-novablast-6-preview-2026">노바블라스트 6</a>도 있지만, 41·5는 검증된 스테디셀러라 <strong>할인가면 가성비가 더 좋습니다</strong>.</li>
-</ul>
-<p>사이즈가 헷갈리면 <a href="/blog/running-shoe-size-conversion-chart-korea-2026">사이즈 변환표</a>를, 발볼이 넓어 고민이면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>를 참고하세요.</p>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 첫 러닝화로 둘 중 뭐가 나을까요?</p>
-    <p class="faq-a">A. 안정과 검증을 우선하면 <strong>페가수스 41</strong>이 무난합니다(입문 1위·부상예방 최상). 다만 "달리는 재미"가 초반 동기부여에 크다면 <strong>노바블라스트 5</strong>도 좋은 첫 신발입니다. 평발·부상 이력이 있으면 페가수스 쪽이 안전합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 걱정되는데 어떤 게 좋나요?</p>
-    <p class="faq-a">A. 둘 다 충격 흡수가 좋지만, <strong>부상 예방 등급과 안정성은 페가수스 41이 우위</strong>입니다. 다만 페가수스는 무릎 항목이 '주의'로 분류되니, 무릎 통증 이력이 심하면 더 부드러운 맥스쿠션(본디·님버스)도 함께 검토하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 둘 다 괜찮나요?</p>
-    <p class="faq-a">A. 둘 다 와이드 옵션이 있어 대응됩니다. 특히 <strong>페가수스 41은 X-와이드까지</strong> 있어 발볼이 매우 넓은 러너에게 유리합니다. 노바블라스트 5도 와이드가 있어 보통~넓은 발은 무난합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 여름에 신기 좋은 건?</p>
-    <p class="faq-a">A. 노바블라스트 5는 어퍼 통기성이 아쉬워 한여름엔 다소 덥습니다. 통기성을 중시한다면 두 모델 모두 최적은 아니며, <a href="/blog/summer-breathable-running-shoes-2026">여름 통기성 러닝화</a>를 따로 보는 걸 권합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 노바블라스트 5·페가수스 41 상세 페이지 스펙 및 RunRepeat 실측·에디터 분석 종합 · 한국 공식가 기준 · 작성 2026년 7월 3일.</small></p>
-`,
+    id: "novablast-5-vs-pegasus-41-daily-cushion-2026",
+    slug: "novablast-5-vs-pegasus-41-daily-cushion-2026",
+    title: "노바블라스트 5 vs 페가수스 41 — 실측 스택·앞쪽 공간·판매 조건",
+    description: "노바블라스트5와 페가수스41의 실측254g·281g, 폼·Air Zoom 구조와 내부 공간을 비교합니다. 현재 한국 가격·폭의 확인 범위와 시착 질문을 정리합니다.",
+    thumbnail: "/images/shoes/asics/novablast5/1.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-03",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "노바블라스트5",
+      "페가수스41",
+      "데일리 러닝화",
+      "피팅"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>실측 무게는254g 대281g으로27g 차이입니다.</li><li>노바5는FF BLAST MAX, 페가수스41은ReactX와 힐·전족부 Air Zoom을 사용합니다.</li><li>한국 현재 노바5 정가·폭은 미확인, 페가수스41은 확인SKU 원문 정가159,000원입니다.</li></ul></div>
+<h2>같은 출처의 실측 비교</h2><table><thead><tr><th>RunRepeat 항목</th><th>노바블라스트5</th><th>페가수스41</th></tr></thead><tbody><tr><td>무게</td><td>254g</td><td>281g</td></tr><tr><td>힐/전족부 스택</td><td>40.9/33.5mm</td><td>33.6/22.2mm</td></tr><tr><td>드롭</td><td>7.4mm</td><td>11.4mm</td></tr><tr><td>힐/전족부 SA</td><td>141/134</td><td>125/92</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>63.6/66.5%</td><td>55.5/61.4%</td></tr><tr><td>경도</td><td>30.3AC</td><td>35.2AC</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>97.5/74.4/27.2mm</td><td>94.6/72.9/26.4mm</td></tr></tbody></table>
+<p>표에서는 노바5의 앞쪽 스택과 내부 치수가 더 크게 측정됐습니다. 이 관찰을 ‘모든 넓은 발에 적합’, ‘평발에는 페가수스가 안전’이라는 결론으로 바꾸지 않습니다. 판매 성별·폭·사이즈와 실제 양발 피팅을 확인하세요.</p>
+<h2>폼 이름과 개인 주행감</h2><p>노바5는FF BLAST MAX를 사용합니다. DOR의 Matt은 전작보다 부드럽다고 느꼈고 Andrea는 더 단단하고 바운시하다고 느꼈습니다. 페가수스41은ReactX와 두Air Zoom 유닛을 사용하며 Matt은 부드러운 힐·단단한 앞쪽과 속도를 올릴 때의 힐 전환을 지적했습니다. 리뷰어의 개인 착화 의견이며 실제로 뛰어본 편집부 후기나 모든 러너의 체감으로 서술하지 않습니다.</p>
+<h2>한국 판매 가격·폭은 어느 범위까지 확인됐나?</h2><p>노바5는 한국 브랜드 검색과 기존SSF 본사 상품에서 현행 가격을 확인하지 못했습니다. 과거169,000원 검색캐시를 현재 정가로 쓰지 않습니다. 페가수스41은 남성FD2722-120·여성 그래픽에디션IQ1153-109 원문 정가159,000원을 확인했지만 해당 색상은 품절이었습니다. 두 모델 모두 한국 와이드·X-Wide 현재SKU는 이번에 확인하지 못했습니다. <a href="/shoes/asics-novablast-5">노바5의 확인 범위</a> · <a href="/shoes/nike-pegasus-41">페가수스41의 한국 상품 원문</a></p>
+<h2>처음 사는 러너의 비교 순서</h2><ol><li>실제로 구매 가능한 성별·사이즈·폭과 반품·교환 조건부터 확인하세요.</li><li>양말·인솔을 포함해 앞쪽의 옆면과 윗면, 힐 들림을 따로 메모하세요.</li><li>익숙한 신발과 발밑 전환·고정이 어떻게 다른지 비교하세요.</li><li>지금 통증이나 저림이 있다면 신발의 예방 등급으로 해결하려 하지 말고 별도로 평가받으세요.</li></ol><p>입문1위·판매1위·정해진5분대 페이스처럼 이번에 검증하지 않은 순위를 선택 근거로 제시하지 않습니다. <a href="/blog/pronation-type-running-shoe-guide-2026">내전·평발과 신발 선택의 구분</a>도 참고하세요.</p>
+<h2>모델별 원문</h2><ul><li>노바블라스트5: <a href="https://runrepeat.com/asics-novablast-5" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/asics-novablast-5-review-2024/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li><li>페가수스41: <a href="https://runrepeat.com/nike-pegasus-41" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/nike-pegasus-41-review-2024/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li></ul><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "첫 러닝화면 페가수스41이 더 안전한가요?",
+        "answer": "실측·리뷰어 의견만으로 모든 입문자의 부상 위험을 순위로 정하지 않습니다. 실제 판매 조건과 피팅을 확인하세요."
+      },
+      {
+        "question": "둘 다 한국 와이드가 있나요?",
+        "answer": "현재 한국 와이드SKU는 이번 확인 범위에서 미확인입니다. 해외 폭 목록을 국내 재고로 대입하지 않습니다."
+      }
+    ],
   },
   {
     id: 'boston-13-vs-zoom-fly-6-vs-endorphin-speed-5-tempo-trainer-2026',

@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'brooks-glycerin-22',
   slug: 'brooks-glycerin-22',
@@ -17,87 +18,147 @@ export const shoe: Shoe = {
   rating: 5,
   status: 'featured',
   price: 209000,
-  description: '브룩스 최고급 쿠션화. DNA Tuned 듀얼 밀도 폼으로 체중과 보폭에 맞게 반응합니다.',
-  oneliner: 'DNA Tuned가 체중별로 다르게 반응하는 프리미엄 쿠션화',
-  editorComment: '글리세린 22는 미드솔 셀 크기를 부위별로 달리해 힐과 전족부 반응을 나눈 DNA Tuned 폼을 씁니다. DNA Tuned 계열 폼은 글리세린 GTS 22·23과 글리세린 맥스·맥스 2에도 들어갑니다. 20만 9천원은 님버스 28(₩199,000)보다 1만원 비싸지만, 800km 내구성 덕에 km당 약 261원으로 프리미엄 쿠션화 중 합리적인 편입니다. 통기성 5/5 최상위급이라 여름 장거리 LSD에서 발이 쾌적하고, 10.3mm 하이드롭은 힐스트라이커에게 자연스러운 전환을 유도합니다. 단, 토박스 높이 23.6mm가 낮아 발등이 높은 러너는 압박감을 느낄 수 있습니다. 두 켤레 로테이션은 이 신발과 잘 맞습니다 — 로테이션 러너의 부상 위험이 39% 낮았다는 연구가 있는데, 이유는 폼 회복(실측 1~10%뿐)보다 신발마다 다른 부하 분산 덕이라는 설명이 유력합니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 와이드 옵션도 있어 발볼 넓은 러너는 와이드 모델을 선택하세요. 209,000원에 km당 약 261원은 프리미엄 쿠션화 중 내구성 대비 합리적인 수준입니다. 발등이 높은 러너는 토박스 높이 23.6mm로 압박감이 생길 수 있으니 젤 님버스 28이나 보메로 18을 대안으로 함께 고려해보세요.',
+  description: '질소 주입 DNA Tuned 구조의 글리세린 22. 실험실 293g·힐/전족부 38.5/28.2mm. 한국 확인 정가209,000원.',
+  oneliner: '293g 실험실 무게 · 질소 주입 DNA Tuned',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다. DOR 소개 남성289g(US9)·여성258g(US8),39/29mm·드롭10mm. David실제US9.5, RR293g·38.5/28.2mm·10.3mm를 구분. RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다. DOR의 David은 US9.5에서 길이가 맞고 힐·중족부가 고정되며 앞쪽에 여유가 있다고 느꼈습니다. Bach은 GTS보다 유연하고 부드럽다고 봤습니다. 기본형에 GuideRails가 있다고 설명하지 않으며 개인의 평발착화 선호를 임상등급으로 바꾸지 않습니다. 한국 남성MEDIUM·WIDE 원문을 확인했지만 여성현재상품은 미확인입니다. RR 엄지높이23.6mm와 DOR의 넓게느껴진 앞쪽 의견은 다른조건입니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 293,
     cushioning: 8,
     responsiveness: 7,
     stability: 7,
-    drop: 10,
-    durability: 800,
+    drop: 10.3,
   },
   biomechanics: {
-    stackHeight: { heel: 39, forefoot: 28 },
-    drop: 10,
+    stackHeight: {
+      heel: 38.5,
+      forefoot: 28.2,
+    },
+    drop: 10.3,
     carbonPlate: false,
-    midsoleType: 'DNA Tuned',
-    optimalPace: '5:30-7:00 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
+    midsoleType: '질소 주입 DNA Tuned',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
+    wideOptions: true,
   },
   targetUsers: {
-    recommended: ['프리미엄 쿠셔닝 원하는 러너', '장거리 러너', '데일리 러너'],
-    notRecommended: ['가성비 중시 러너', '빠른 템포 선호 러너'],
+    recommended: [
+      'DNA Tuned 기본형의 착화를 비교하려는 러너',
+      '한국 남성WIDE 상품을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '낮은 앞쪽 높이에서 압박이 생기는 경우',
+      '매우 가벼운 모델이 필요한 경우',
+    ],
   },
-  features: ['DNA Tuned 듀얼 밀도 폼', '54.8% 에너지 리턴', '체중/보폭 반응형 쿠셔닝', '프리미엄 편안함', '충격흡수 힐 133 SA (RunRepeat 실측)', '에너지 리턴 전족부 58.4% (RunRepeat 실측)'],
+  features: [
+    '질소 주입 DNA Tuned',
+    '293g · 힐/전족부 38.5/28.2mm (RunRepeat)',
+    '힐/전족부 SA 133/109 · 에너지 리턴 54.8/58.4% (RunRepeat). RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다.',
+    '한국 남성MEDIUM·WIDE 원문을 확인했지만 여성현재상품은 미확인입니다. RR 엄지높이23.6mm와 DOR의 넓게느껴진 앞쪽 의견은 다른조건입니다.',
+  ],
   priceAnalysis: {
     msrp: 209000,
-    costPerKm: 261,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['asics-gel-nimbus-28', 'nike-vomero-18'],
+    alternatives: [
+      'asics-gel-nimbus-28',
+      'nike-vomero-18',
+    ],
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 86,
-      text: '프리미엄 쿠셔닝을 원하는 중급 이상 러너를 위한 고급 데일리 트레이너입니다. 209,000원 프리미엄 가격이지만 DNA Tuned 듀얼 밀도 폼이 체중과 보폭에 맞게 반응하며, 293g 무게에 800km 최상위 내구성으로 km당 약 261원의 합리적인 가성비를 제공합니다. 통기성 5/5 최상위급으로 여름 러닝에 쾌적하고, 10.3mm 드롭으로 힐스트라이커에게 최적화되어 있습니다. 와이드 옵션이 있어 발볼 넓은 한국 러너도 편하게 착용 가능하며 토박스 여유도 표준 수준입니다. 평발 러너에게도 호환성이 좋고, 무릎 보호 측면에서 excellent 등급이라 관절 걱정 러너에게 추천합니다. 다만 54.8% 에너지 리턴으로 반발력은 부족하고, 토박스 높이 23.6mm가 낮아 발등이 높은 러너는 압박감을 느낄 수 있습니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/brooks-glycerin-22',
+      text: '293g과 SA 133/109·에너지 리턴 54.8/58.4%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다. 한국 남성MEDIUM·WIDE 원문을 확인했지만 여성현재상품은 미확인입니다. RR 엄지높이23.6mm와 DOR의 넓게느껴진 앞쪽 의견은 다른조건입니다.',
     },
     {
-        userType: '모델 선택 — 님버스 28 대비 통기성',
-        text: '같은 프리미엄 쿠션화군에서 님버스 계열과 비교하면 어퍼 통기성에서 앞섭니다. 여름철 장시간 러닝 비중이 크다면 실사용 차이가 큰 부분입니다. DNA Tuned는 미드솔 셀 크기를 부위별로 달리해 힐과 전족부의 반응을 나눈 구조로, 25km를 넘겨도 쿠션이 균일하게 유지되는 성격입니다. 30km급 LSD를 정기적으로 소화하는 운용에 맞고, 월간 주행거리가 많은 경우 쿠션 저하가 완만하다는 점이 유리합니다.',
-      },
-    {
-        userType: '비용 관점 — 5만원 차이를 내구성으로 상쇄',
-        text: '페가수스 계열보다 5만원가량 비싸지만 내구성 800km로 길어, 총 사용 거리로 환산하면 오히려 단가가 낮아집니다. 쿠션 품질에서도 차이가 있어 같은 데일리라도 착화감이 부드러운 쪽입니다. 10mm 드롭이라 힐 착지 성향에 무리가 없습니다. 초기 지출을 낮추는 것이 우선이면 페가수스, 오래 신으며 총비용을 낮추려면 이쪽입니다.',
-      },
-    {
-        userType: '비용 관점 — 고스트 17과의 4만원 차이',
-        text: '같은 브랜드 고스트 계열(15만원대)과 비교하면 쿠션 품질 차이는 있지만, 정가 기준 4만원을 더 낼 만큼인지는 용도에 따라 갈립니다. 일반적인 데일리 용도라면 고스트로도 충분하고, 쿠션의 부드러움을 우선하거나 주행거리가 많아 내구성까지 따진다면 이쪽입니다. 세일가 17만원대까지 내려오면 격차가 좁혀져 선택이 쉬워집니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/brooks-glycerin-22-review-2025/',
+      text: 'DOR의 David은 US9.5에서 길이가 맞고 힐·중족부가 고정되며 앞쪽에 여유가 있다고 느꼈습니다. Bach은 GTS보다 유연하고 부드럽다고 봤습니다. 기본형에 GuideRails가 있다고 설명하지 않으며 개인의 평발착화 선호를 임상등급으로 바꾸지 않습니다.',
+    },
   ],
   detailedSpecs: {
-    weight: '293g (US 9 Lab 측정)',
-    stackHeight: '힐 38.5mm / 포어풋 28.2mm (Lab)',
-    drop: '10.3mm (Lab 측정)',
-    midsole: 'DNA Tuned (듀얼 밀도 EVA)',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '3D Fit Print 상단',
-    width: '표준 (와이드 옵션 있음) — RunRepeat 랩 토박스 73.7mm(평균 73.2mm), 랩 본문 "a more accommodating 73.7 mm—right in the average range". 토박스 높이 23.6mm는 낮은 편("one of the most compact toeboxes")',
-    durability: '800km',
-    price: '₩209,000',
-    costPerKm: '약 ₩261/km (800km 기준)',
-    footType: '중립',
-    landingPattern: '힐스트라이크~미드풋',
+    weight: '293g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성289g(US9)·여성258g(US8),39/29mm·드롭10mm. David실제US9.5, RR293g·38.5/28.2mm·10.3mm를 구분.',
+    stackHeight: '38.5/28.2mm (RunRepeat 힐/전족부 실측)',
+    drop: '10.3mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: '질소 주입 DNA Tuned · 30 AC(Asker C) · 힐/전족부 SA 133/109 · 에너지 리턴 54.8/58.4%. RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 96.3mm / 엄지 부위 73.7mm / 엄지 높이 23.6mm. 한국 남성MEDIUM·WIDE 원문을 확인했지만 여성현재상품은 미확인입니다. RR 엄지높이23.6mm와 DOR의 넓게느껴진 앞쪽 의견은 다른조건입니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다.',
   },
-  similarShoes: ['asics-gel-nimbus-28', 'nike-vomero-18', 'new-balance-1080-v14'],
-  relatedPosts: [
-    { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
+  similarShoes: [
+    'asics-gel-nimbus-28',
+    'nike-vomero-18',
+    'new-balance-1080-v14',
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5YAmJn1Q4' }],
-  tags: ['쿠션화', '프리미엄', '장거리', '데일리'],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-500km-replacement-myth-2026',
+      title: '"500km 교체설"의 진실 — 소재별 수명',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5YAmJn1Q4',
+    },
+  ],
+  tags: [
+    '쿠션화',
+    '프리미엄',
+    '장거리',
+    '데일리',
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · WIDE · 1104452E020',
+        url: 'https://www.brooksrunning.co.kr/product/black-friday-%EB%82%A8%EC%84%B1-%EA%B8%80%EB%A6%AC%EC%84%B8%EB%A6%B0-22%EB%B8%94%EB%9E%99-wide/471/',
+        note: '한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 men · MEDIUM · 1104451D097',
+        url: 'https://brooksrunning.co.kr/product/detail.html?product_no=547',
+        note: '한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 men · MEDIUM · 1104451D175',
+        url: 'https://brooksrunning.co.kr/product/%EB%82%A8%EC%84%B1-%EA%B8%80%EB%A6%AC%EC%84%B8%EB%A6%B0-22%ED%99%94%EC%9D%B4%ED%8A%B8-medium/478/',
+        note: '한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다.',
+      },
+      {
+        label: '한국 공식 women · WIDE · 1204341D151',
+        url: 'https://brooksrunning.co.kr/product/%EC%97%AC%EC%84%B1-%EA%B8%80%EB%A6%AC%EC%84%B8%EB%A6%B0-22%ED%99%94%EC%9D%B4%ED%8A%B8-wide/480/',
+        note: '한국 공식 원문 남성MEDIUM1104451D097/1104451D175·WIDE1104452E020 정가209,000원 확인. 여성WIDE1204341D151은 약1년 전 원문이어서 현재판매·재고와 구분합니다. 현재 할인·재고는 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 글리세린 22',
+        url: 'https://runrepeat.com/brooks-glycerin-22',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 293g · 38.5/28.2mm · 드롭10.3mm. SA 133/109 · ER 54.8/58.4%. RR과 DOR은 DNA Tuned의 큰셀·작은셀 위치를 다르게 설명합니다.30.0AC·보조37.6AC의 측정값만으로 밀도배치를 확정하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/brooks-glycerin-22-review-2025/',
+        note: 'DOR 소개 남성289g(US9)·여성258g(US8),39/29mm·드롭10mm. David실제US9.5, RR293g·38.5/28.2mm·10.3mm를 구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

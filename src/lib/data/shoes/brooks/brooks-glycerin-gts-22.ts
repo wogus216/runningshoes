@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'brooks-glycerin-gts-22',
   slug: 'brooks-glycerin-gts-22',
@@ -17,87 +18,126 @@ export const shoe: Shoe = {
   rating: 5,
   status: 'featured',
   price: 209000,
-  description: '글리세린 22에 GuideRails 안정화 시스템을 더한 모델. 과도한 움직임을 제어합니다.',
-  oneliner: '글리세린 쿠셔닝에 GuideRails를 얹은 프리미엄 안정화',
-  editorComment: 'GuideRails 기술은 발목 관절의 과도한 내전을 물리적으로 차단하는 방식이라, 카야노 32의 4D Guidance System과는 접근이 다릅니다. 20만 9천원으로 카야노(₩199,000)보다 1만원 비싸지만 97.1mm 넓은 힐 폭이 착지 순간의 좌우 흔들림을 억제합니다. 평발 비율이 높은 한국 러너 특성상 이 가격대 안정화 중 실패 확률이 가장 낮고, 800km 내구성으로 km당 약 261원이라는 경제성까지 갖췄습니다. 305g 무게가 부담이라면 아드레날린 GTS 25(300g, ₩189,000)가 더 가벼운 대안입니다. EVA 계열의 미덕은 수명입니다 — 450km를 실제 달린 실험에서 EVA는 러닝 이코노미가 그대로였습니다(PEBA는 −2.3%). 800km 표기가 과장이 아닌 이유입니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이고 와이드 옵션도 있어 발볼 넓은 러너는 와이드를 선택하세요. 209,000원에 km당 약 261원은 안정화 중 가성비가 좋으며, 무게가 부담이라면 젤 카야노 32나 스트럭처 26을 함께 비교해보세요. 과내전 초보 러너라면 먼저 매장에서 걸어보고 GuideRails의 물리적 지지감을 직접 확인하는 것을 권장합니다.',
+  description: '질소 주입 DNA Tuned · GuideRails 구조의 글리세린 GTS 22. 실험실 305g·힐/전족부 37.8/27.7mm. 한국 확인 정가209,000원.',
+  oneliner: '305g 실험실 무게 · 질소 주입 DNA Tuned · GuideRails',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 원문 남성MEDIUM1104461D090 정가209,000원 확인. 남성WIDE·여성 상품은 원문 접근 실패로현재 SKU·가격·재고 미확인입니다. 확인 문서의 현재 할인·사이즈별 재고도 미확인입니다. DOR 소개 남성303g(US9)·여성266g(US8),39/29mm·드롭10mm. RR305g·37.8/27.7mm·10.1mm와 구분. RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다. DOR의 Matt과 Bach은 US10에서 낮은 앞쪽 볼륨과 초기 압박을 느꼈습니다. Matt은 내측 힐·중족부지지를 강하게, Bach은 중심으로 모이는 균형감으로 느껴 의견이 갈립니다. RR의 미묘한안정장치라는 설명과 같은 임상 등급으로 합치지 않습니다. 미디얼 포스트 같다는 체감을 전통포스트 재료 구조로 확정하지않습니다. 한국 남성MEDIUM 원문만 확인했으며 와이드현재 판매를확정하지않습니다. RR내부95.6/73.2/26.4mm는 실제 한국 와이드 치수가 아닙니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
   specs: {
     weight: 305,
     cushioning: 8,
     responsiveness: 7,
     stability: 9,
-    drop: 10,
-    durability: 800,
+    drop: 10.1,
   },
   biomechanics: {
-    stackHeight: { heel: 38, forefoot: 28 },
-    drop: 10,
+    stackHeight: {
+      heel: 37.8,
+      forefoot: 27.7,
+    },
+    drop: 10.1,
     carbonPlate: false,
-    midsoleType: 'DNA Tuned + GuideRails',
-    optimalPace: '5:30-7:00 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'excellent',
-    shinSplints: 'excellent',
+    midsoleType: '질소 주입 DNA Tuned · GuideRails',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
   targetUsers: {
-    recommended: ['오버프로네이션 러너', '평발 러너', '안정성 필요 러너'],
-    notRecommended: ['중립 보행 러너', '가벼운 신발 선호 러너'],
+    recommended: [
+      'DNA Tuned와 GuideRails의 착화를 비교하려는 러너',
+      '기본글리세린22와 지지 느낌을 직접 비교하려는 러너',
+    ],
+    notRecommended: [
+      '내측지지 압박·낮은 앞쪽 볼륨이불편한경우',
+      '매우 가벼운 무게·높은반응이우선인 경우',
+    ],
   },
-  features: ['GuideRails 안정화 시스템', 'DNA Tuned 쿠셔닝', '53.1% 에너지 리턴', '과도한 움직임 제어', '충격흡수 힐 122 SA (RunRepeat 실측)', '에너지 리턴 전족부 57.8% (RunRepeat 실측)'],
+  features: [
+    '질소 주입 DNA Tuned · GuideRails',
+    '305g · 힐/전족부 37.8/27.7mm (RunRepeat)',
+    '힐/전족부 SA 122/109 · 에너지 리턴 53.1/57.8% (RunRepeat). RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다.',
+    '한국 남성MEDIUM 원문만 확인했으며 와이드현재 판매를확정하지않습니다. RR내부95.6/73.2/26.4mm는 실제 한국 와이드 치수가 아닙니다.',
+  ],
   priceAnalysis: {
     msrp: 209000,
-    costPerKm: 261,
     valueRating: 8,
     priceTier: 'premium',
-    alternatives: ['asics-gel-kayano-32', 'nike-structure-26'],
+    alternatives: [
+      'asics-gel-kayano-32',
+      'nike-structure-26',
+    ],
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 78,
-      text: '과내전이나 평발로 고민하는 러너를 위한 프리미엄 안정화입니다. GuideRails 기술이 과도한 발 움직임을 자연스럽게 제어하여, 한국인에게 흔한 평발 특성에 최적화되어 있습니다. 209,000원으로 카야노(199,000원)보다 1만원 비싸지만 800km 뛰어난 내구성으로 km당 약 261원의 가성비를 제공합니다. 305g 무게에 97.1mm 넓은 힐 폭과 38mm 힐 스택으로 착지 안정성이 높고, 와이드 옵션도 있어 발볼 넓은 한국 러너도 편합니다. 무릎 보호 성능이 excellent 등급이며, SA 충격흡수도 안정적이고 토박스 여유도 적당합니다. 통기성 5/5로 여름에도 쾌적합니다. 다만 53.1% 에너지 리턴으로 반발력이 부족해 5:30분/km 이상 느린 페이스에 적합합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/brooks-glycerin-gts-22',
+      text: '305g과 SA 122/109·에너지 리턴 53.1/57.8%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다. 한국 남성MEDIUM 원문만 확인했으며 와이드현재 판매를확정하지않습니다. RR내부95.6/73.2/26.4mm는 실제 한국 와이드 치수가 아닙니다.',
     },
     {
-        userType: '예상 적합 — 평발·과내전에 노면이 고르지 않은 환경',
-        text: '평발과 과내전이 겹친 경우를 겨냥한 쿠션형 안정화입니다. GuideRails가 발목이 안쪽으로 꺾이는 움직임에 개입하는 방식이라, 미드솔로 안쪽을 받치는 구조와는 지지 감각이 다릅니다. 힐 폭이 97mm로 넓어 접지 면적이 크기 때문에, 노면이 불규칙한 코스에서도 착지 초기의 흔들림이 적은 편입니다. 쿠션량과 지지를 함께 가져가는 구성이라 무게는 무거운 축이며, 속도보다 안정을 우선하는 용도에 맞습니다.',
-      },
-    {
-        userType: '모델 선택 — 카야노 계열과 저울질하는 경우',
-        text: '카야노 계열과 저울질하는 경우의 비교입니다. 카야노 32(199,000원)보다 1만원 비싸지만 GuideRails 방식의 지지를 제공해, 오르막이나 지친 구간에서 발목이 안쪽으로 무너지는 움직임을 잡습니다. 다만 305g으로 무거워 레이스에서는 무게가 그대로 체감되므로, 훈련 전용으로 두고 대회는 가벼운 모델을 따로 준비하는 운용이 맞습니다. 지지 방식이 발밑을 단단히 받치는 쪽이 아니라 궤도 이탈 시 개입하는 쪽이라, 카야노의 단단한 지지감을 기준으로 삼는다면 감각 차이는 있습니다.',
-      },
-    {
-        userType: '예상 적합 — 과내전 입문, 2주 적응 전제',
-        text: '과내전 성향을 확인한 입문 단계에 맞지만 적응 기간을 감안해야 합니다. GuideRails가 착지 궤도를 잡는 과정에서 초기 2주 정도는 이질감이 느껴질 수 있고, 미드솔도 단단한 편이라 첫인상이 하드하게 다가옵니다. 그 구간을 지나면 5km급 거리에서 발바닥 부담이 줄어드는 방향입니다. 쿠션의 부드러움을 우선한다면 중립 쿠션화가 맞고, 이 모델은 지지를 먼저 두는 선택입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/brooks-glycerin-gts-22-review-2025/',
+      text: 'DOR의 Matt과 Bach은 US10에서 낮은 앞쪽 볼륨과 초기 압박을 느꼈습니다. Matt은 내측 힐·중족부지지를 강하게, Bach은 중심으로 모이는 균형감으로 느껴 의견이 갈립니다. RR의 미묘한안정장치라는 설명과 같은 임상 등급으로 합치지 않습니다. 미디얼 포스트 같다는 체감을 전통포스트 재료 구조로 확정하지않습니다.',
+    },
   ],
   detailedSpecs: {
-    weight: '305g (US 9 Lab 측정)',
-    stackHeight: '힐 37.8mm / 포어풋 27.7mm (Lab)',
-    drop: '10.1mm (Lab 측정)',
-    midsole: 'DNA Tuned + GuideRails',
-    plate: '없음',
-    outsole: '러버 아웃솔',
-    upper: '3D Fit Print 상단',
-    width: '표준 (와이드 옵션 있음) — RunRepeat 랩 토박스 73.2mm(평균 73.2mm), 랩 본문 "lands right in the average range"',
-    durability: '800km',
-    price: '₩209,000',
-    costPerKm: '약 ₩261/km (800km 기준)',
-    footType: '오버프로네이션~평발',
-    landingPattern: '힐스트라이크',
+    weight: '305g (RunRepeat 공시 검체 정책: 남성US9). DOR 소개 남성303g(US9)·여성266g(US8),39/29mm·드롭10mm. RR305g·37.8/27.7mm·10.1mm와 구분.',
+    stackHeight: '37.8/27.7mm (RunRepeat 힐/전족부 실측)',
+    drop: '10.1mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: '질소 주입 DNA Tuned · GuideRails · 33.7 AC(Asker C) · 힐/전족부 SA 122/109 · 에너지 리턴 53.1/57.8%. RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 95.6mm / 엄지 부위 73.2mm / 엄지 높이 26.4mm. 한국 남성MEDIUM 원문만 확인했으며 와이드현재 판매를확정하지않습니다. RR내부95.6/73.2/26.4mm는 실제 한국 와이드 치수가 아닙니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 원문 남성MEDIUM1104461D090 정가209,000원 확인. 남성WIDE·여성 상품은 원문 접근 실패로현재 SKU·가격·재고 미확인입니다. 확인 문서의 현재 할인·사이즈별 재고도 미확인입니다.',
   },
-  similarShoes: ['asics-gel-kayano-33', 'asics-gel-kayano-32', 'nike-structure-26'],
-  relatedPosts: [
-    { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
+  similarShoes: [
+    'asics-gel-kayano-33',
+    'asics-gel-kayano-32',
+    'nike-structure-26',
   ],
-  purchaseLinks: [],
-  tags: ['안정화', 'GuideRails', '오버프로네이션', '평발'],
+  relatedPosts: [
+    {
+      slug: 'running-shoe-500km-replacement-myth-2026',
+      title: '"500km 교체설"의 진실 — 소재별 수명',
+    },
+  ],
+  purchaseLinks: [
+  ],
+  tags: [
+    '안정화',
+    'GuideRails',
+    '오버프로네이션',
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 men · 1104461D090',
+        url: 'https://brooksrunning.co.kr/product/black-friday-남성-글리세린-gts-22제로그레이-medium/493/category/86/display/1/',
+        note: '한국 공식 원문 남성MEDIUM1104461D090 정가209,000원 확인. 남성WIDE·여성 상품은 원문 접근 실패로현재 SKU·가격·재고 미확인입니다. 확인 문서의 현재 할인·사이즈별 재고도 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 글리세린 GTS 22',
+        url: 'https://runrepeat.com/brooks-glycerin-gts-22',
+        note: '공시 검체 정책: 남성US9. 개별 검체SKU·폭은 미확인. 305g · 37.8/27.7mm · 드롭10.1mm. SA 122/109 · ER 53.1/57.8%. RR33.7AC와 보조폼40.3AC는 다른 측정입니다. 정확한 해부학적 폼 경계는 미확인이며 무게·주행감·보호 효과로 환산하지않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/brooks-glycerin-gts-22-review-2025/',
+        note: 'DOR 소개 남성303g(US9)·여성266g(US8),39/29mm·드롭10mm. RR305g·37.8/27.7mm·10.1mm와 구분.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

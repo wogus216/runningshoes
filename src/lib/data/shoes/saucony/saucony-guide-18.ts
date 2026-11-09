@@ -1,107 +1,135 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 명시한 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-guide-18',
   slug: 'saucony-guide-18',
   brand: 'Saucony',
   name: '가이드 18',
   image: '/images/shoes/saucony/guide18.webp',
-  images: ['/images/shoes/saucony/guide18/side.webp', '/images/shoes/saucony/guide18/top.webp', '/images/shoes/saucony/guide18/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/guide18/side.webp',
+    '/images/shoes/saucony/guide18/top.webp',
+    '/images/shoes/saucony/guide18/outsole.webp',
+  ],
   category: '안정화',
   rating: 4,
-  price: 159000,
-  description: 'Saucony의 대표 안정화로, PWRRUN 미드솔과 Guidance Frame으로 과내전 러너에게 적합한 안정성을 제공합니다.',
-  oneliner: '카야노보다 4만원 낮은 121.9mm 광폭 플랫폼 안정화',
-  editorComment: '15만 9천원이라는 가격은 카야노 32(₩199,000)의 61%에 불과하지만, 121.9mm 넓은 플랫폼이 착지 시 좌우 흔들림을 효과적으로 억제합니다. 61.3% 에너지 리턴은 안정화 카테고리 평균 이상이고, 통기성 5/5로 여름에도 쾌적하게 달릴 수 있습니다. 과내전이 심하지 않은 경도~중등도 수준이라면 이 가격대에서 가이드 18만큼 합리적인 선택은 드뭅니다. 다만 노출 폼 비율이 높아 아웃솔 내구성이 약한 편이라 아스팔트 위주 러너는 주의하세요.\n\n사이즈·구매 가이드: 토박스가 표준 폭이라 발볼이 보통인 러너에게 맞으며, 넓은 발볼이라면 와이드(2E) 옵션을 선택하세요. 정가 159,000원에 예상 수명 500~700km(추정) 기준 km당 약 230~320원으로 안정화 중 가성비가 뛰어납니다. 같은 안정화로는 젤 카야노 32·아드레날린 GTS 25가 대안입니다.',
-  tags: ['안정화', '입문', '과내전 지원'],
-
+  description: 'PWRRUN · CenterPath 구조의 가이드 18. 실험실 278g·힐/전족부 36/27.7mm. 한국 현재 정가 미확인.',
+  oneliner: '278g 실험실 무게 · PWRRUN · CenterPath',
+  editorComment: '2026-11-09 원문 재확인. 한국 공식 가이드18 검색에서 정확한18세대 상품을 찾지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색된19세대의 가격·폭을18에 적용하지 않으며 단종·미출시로 판단하지 않습니다. DOR 소개 남성272g(US9)·여성245g(US8),35/29mm·드롭6mm. RR278g·36.0/27.7mm·8.3mm와 조건을 구분합니다. RR 원문은 인솔 인쇄8mm와 제조사 확인6mm도 함께 기록합니다. RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다. DOR의 Matt(US10)은 대체로 길이가 맞지만 앞쪽 테이퍼·낮은 전방 볼륨으로 새끼발가락 압박과 토가드 마찰을 느꼈고 Bach(US9.5)은 보통 폭과 좋은 중족 고정을 느꼈습니다. 넓은 바닥·측벽의 CenterPath이며 전통 미디얼 포스트로 설명하지 않습니다. Matt의 젖은 노면 미끄러짐과 RR 접지시험은 다른 조건입니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '안정화',
+    '입문',
+    '과내전 지원',
+  ],
   specs: {
-    weight: 272,
+    weight: 278,
     cushioning: 8,
     responsiveness: 7,
     stability: 8,
-    drop: 6,
-    durability: 600,
+    drop: 8.3,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 35,
-      forefoot: 29,
+      heel: 36,
+      forefoot: 27.7,
     },
-    drop: 6,
+    drop: 8.3,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PWRRUN',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: 'PWRRUN · CenterPath',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'excellent',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['과내전 러너', '평발', '입문 러너', '안정성 필요'],
-    notRecommended: ['중립 발', '레이싱', '경량화 선호'],
+    recommended: [
+      'PWRRUN과 CenterPath의 롤링을 시착 비교하려는 러너',
+      '앞쪽 형태·중족부 고정을 직접 확인하려는 러너',
+    ],
+    notRecommended: [
+      '앞쪽 테이퍼·토가드 마찰이 불편한 경우',
+      '매우 높은 반응성이 우선인 경우',
+    ],
   },
-
-  features: ['PWRRUN 미드솔', 'Guidance Frame', '공식 6mm 드롭 (RunRepeat 실측 8.3mm)', '과내전 지원', '에너지 리턴 전족부 62.0% (RunRepeat 실측)'],
-
+  features: [
+    'PWRRUN · CenterPath',
+    '278g · 힐/전족부 36/27.7mm (RunRepeat)',
+    '힐/전족부 SA 124/119 · 에너지 리턴 61.3/62% (RunRepeat). RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다.',
+    '한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다.',
+  ],
   priceAnalysis: {
-    msrp: 159000,
-    streetPrice: 139000,
-    costPerKm: 265,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14'],
+    alternatives: [
+      'asics-gel-kayano-32',
+      'brooks-adrenaline-gts-25',
+      'new-balance-860-v14',
+    ],
   },
-
   detailedSpecs: {
-    weight: '272g (남성 US 9 기준, 브랜드 공식) / 245g (여성 US 8) — RunRepeat 실측 278g',
-    stackHeight: '힐 35mm / 포어풋 29mm (브랜드 공식) — RunRepeat 실측 36.0/27.7mm',
-    drop: '6mm (브랜드 공식) — RunRepeat 실측 8.3mm. 깔창에는 8mm로 인쇄돼 있으나 써코니 공식 표기는 6mm',
-    midsole: 'PWRRUN',
-    plate: '없음',
-    outsole: 'XT-900 러버',
-    upper: '메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 73.6mm(평균 73.2mm), 랩: "right in the average range" · 와이드·엑스트라 와이드 출시(랩 기준). 2026-10-20 한국 공식몰에서는 가이드 18 미등재',
-    durability: '600km+',
-    price: '159,000원',
-    costPerKm: '약 ₩265/km (600km 기준)',
-    footType: '안정화 (과내전 지원)',
-    landingPattern: '후족부/중족부 착지',
+    weight: '278g (RunRepeat 공시 검체 정책:남성US9). DOR 소개 남성272g(US9)·여성245g(US8),35/29mm·드롭6mm. RR278g·36.0/27.7mm·8.3mm와 조건을 구분합니다. RR 원문은 인솔 인쇄8mm와 제조사 확인6mm도 함께 기록합니다.',
+    stackHeight: '36/27.7mm (RunRepeat 힐/전족부 실측)',
+    drop: '8.3mm (RunRepeat 실측). 출처별 공시 조건은 무게 항목에 구분.',
+    midsole: 'PWRRUN · CenterPath · 38.3 AC(Asker C) · 힐/전족부 SA 124/119 · 에너지 리턴 61.3/62%. RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다.',
+    plate: '확인한 원문 설명에 전장 카본 플레이트는 보고되지 않음',
+    width: 'RunRepeat 내부 최광폭 96.3mm / 엄지 부위 73.6mm / 엄지 높이 34.3mm. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다.',
+    durability: '검증된 공통 수명km 미확인. 짧은 착화·마모 깊이를 수명km로 환산하지 않습니다.',
+    price: '한국 공식 가이드18 검색에서 정확한18세대 상품을 찾지 못해 현재 정가·성별·폭·SKU·재고는 미확인입니다. 검색된19세대의 가격·폭을18에 적용하지 않으며 단종·미출시로 판단하지 않습니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 80,
-      text: '평발이나 과내전으로 고민하는 입문 러너를 위한 가성비 안정화입니다. 15만 9천원으로 카야노(19만 9천원)보다 4만원 낮으면서, 공식 272g·35/29mm(RunRepeat 실측 278g·36/27.7mm)에 공식 드롭 6mm 구성이고, 121.9mm 넓은 플랫폼으로 착지 안정성이 뛰어납니다. 힐 124 SA 충격흡수와 미드솔 경도 38.3 AC(RunRepeat 실측)로 쿠셔닝은 단단한 쪽이고, 61.3% 에너지 리턴으로 반발력은 평균 수준입니다. 통기성 5/5 최상위급으로 여름철 러닝에도 쾌적하고, 토박스 폭이 표준이라 발볼 넓은 한국 러너는 와이드 옵션을 선택하세요. 평발 특성에 적합하며, "무릎 괜찮나요?" 질문하는 과내전 입문 러너에게 부담 없이 추천합니다. 500km 내구성에 km당 약 265원으로 가성비 좋고, Guidance Frame이 과내전을 효과적으로 제어합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-guide-18',
+      text: '278g과 SA 124/119·에너지 리턴 61.3/62%는 해외 실험실 검체의 값이며 기록 향상률·임상 효과가 아닙니다. RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다. 한국 와이드 현재SKU는 미확인입니다. RR 내부 최광폭96.3mm·엄지73.6mm·높이34.3mm를 개인 발등 압박 부재로 해석하지 않습니다.',
     },
     {
-        userType: '비용 관점 — 최상위 안정화보다 4만원 낮은 가격',
-        text: '안정화가 필요하지만 최상위 모델의 가격이 부담스러운 경우의 대안입니다. 15만 9천원으로 카야노 계열(19만 9천원)보다 4만원 낮으면서, Guidance Frame이 과내전 움직임을 잡습니다. 지지 강도 자체는 최상위 안정화보다 약하므로 과내전이 심하면 부족할 수 있지만, 경증~중등도라면 충분한 수준입니다. 278g으로 데일리에 적당한 무게이고, 와이드 옵션이 있어 발볼 넓은 경우에도 토박스 여유가 있습니다.',
-      },
-    {
-        userType: '내구성 주의 — 아스팔트에서는 공칭보다 짧다',
-        text: '예산 20만원 이하에서 경증 평발·과내전에 대응하는 안정화입니다. 278g에 힐 124 SA(RunRepeat 실측)의 충격흡수로 걷기와 조깅을 병행하는 단계에 무리가 없고, 발목이 안쪽으로 무너지는 움직임을 잡습니다. 다만 앞쪽에 아웃솔 러버가 덮이지 않은 노출 폼 구간이 있어 아스팔트에서는 마모가 빠를 수 있습니다. 공칭 내구성 500km는 노면이 부드러운 조건 기준이므로, 아스팔트 위주라면 더 짧게 잡는 편이 안전합니다. 토박스는 표준 폭이라 발볼이 넓으면 와이드를 권합니다.',
-      },
-    {
-        userType: '모델 선택 — 아드레날린 대비 가볍고 통기성 우위',
-        text: '같은 안정화군에서 아드레날린 GTS 계열과 비교하면 무게와 통기성에서 앞섭니다. 278g으로 가볍고 통기성 5/5라 한여름 착용에서 차이가 큽니다. 플랫폼이 121.9mm로 넓어 착지 안정감도 확보돼 있고, 미드솔 경도는 38.3 AC(RunRepeat 실측, 평균 35.4 AC)로 약간 단단한 편입니다. 반면 쿠션량은 아드레날린보다 얇게 느껴지므로, 20km 이상 장거리에서 충격 흡수를 우선한다면 상위 모델인 허리케인 계열이 맞습니다. 와이드 옵션이 있습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-guide-18-review-2025/',
+      text: 'DOR의 Matt(US10)은 대체로 길이가 맞지만 앞쪽 테이퍼·낮은 전방 볼륨으로 새끼발가락 압박과 토가드 마찰을 느꼈고 Bach(US9.5)은 보통 폭과 좋은 중족 고정을 느꼈습니다. 넓은 바닥·측벽의 CenterPath이며 전통 미디얼 포스트로 설명하지 않습니다. Matt의 젖은 노면 미끄러짐과 RR 접지시험은 다른 조건입니다.',
+    },
   ],
-
-  similarShoes: ['asics-gel-kayano-32', 'brooks-adrenaline-gts-25', 'new-balance-860-v14', 'hoka-gaviota-6'],
-  purchaseLinks: [],
+  similarShoes: [
+    'asics-gel-kayano-32',
+    'brooks-adrenaline-gts-25',
+    'new-balance-860-v14',
+    'hoka-gaviota-6',
+  ],
+  purchaseLinks: [
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 확인SKU의 정가·폭, 해외 실험실 수치·구조·외부 착화 의견을 재확인했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '써코니 한국 공식 검색 확인 범위',
+        url: 'https://www.saucony.co.kr/product/search.html?banner_action=&order_by=recent&category_no=42&keyword=%EA%B0%80%EC%9D%B4%EB%93%9C+18',
+        note: '정확한Guide18 상품 미확인. Guide19의 가격·판매 폭을 옮기지 않음.',
+      },
+      {
+        label: 'RunRepeat 가이드 18',
+        url: 'https://runrepeat.com/saucony-guide-18',
+        note: '공시 검체 정책:남성US9. 개별 검체SKU·폭은 미확인. 278g · 36/27.7mm · 드롭8.3mm. SA 124/119 · ER 61.3/62%. RR의 인솔 PWRRUN PB/Pebax 재료 설명은 한국 제조사 원문 사양으로 재확인하지 못했습니다. 메인폼 PWRRUN과 인솔 재료를 혼동하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 착화 리뷰',
+        url: 'https://www.doctorsofrunning.com/saucony-guide-18-review-2025/',
+        note: 'DOR 소개 남성272g(US9)·여성245g(US8),35/29mm·드롭6mm. RR278g·36.0/27.7mm·8.3mm와 조건을 구분합니다. RR 원문은 인솔 인쇄8mm와 제조사 확인6mm도 함께 기록합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: '내부 최광폭·엄지 너비·외부 플랫폼 폭은 다른 값입니다. AC와HA는 직접 비교하지 않습니다. 시점·측정법 버전의 차이를 구분하세요.',
+      },
+    ],
+    limitations: [
+      '질환 예방·치료 효과, 공통 최적 페이스와 수명km는 확인하지 못해 관련 등급·수명·km당 비용을 비웁니다.',
+      '에디터 평점·1~10점·발볼 및 계절 적합성 분류는 실험실 단위나 임상 효과가 아닙니다.',
+      '판매·재고는 확인한SKU·성별·폭·시점에만 적용합니다. 미확인을 미판매·단종·미출시로 해석하지 않습니다.',
+    ],
+  },
 };

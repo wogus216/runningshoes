@@ -4255,455 +4255,81 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'new-balance-1080-v14-vs-v15-comparison',
-    slug: 'new-balance-1080-v14-vs-v15-comparison',
-    title: '뉴발란스 1080 v14 vs v15 비교 | Fresh Foam X→인피니온 폼 교체 + 약 30g 감량 + 토박스 narrow→standard — 사실상 다른 신발',
-    description: '1080 v14(285g/199,000원)와 v15(255g/209,000원)을 RunRepeat 실측 + 외부 리뷰로 비교. 약 30g 감량(RunRepeat 실측 285→255g) + 폼 자체 교체 + 토박스 narrow→standard + 4E 와이드 추가 — 같은 라인 세대 변화 중 역대급. v14 할인 13만원대 살까, v15 신상 20만 9천원 살까 매트릭스.',
-    thumbnail: '/images/blog/new-balance-1080-v14-vs-v15-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-17',
-    category: 'review' as const,
-    readingTime: 11,
-    tags: ['뉴발란스 1080', '1080 v14', '1080 v15', 'New Balance', '쿠션화 비교', '인피니온 폼', 'Fresh Foam X', '맥시멀 쿠션', '4E 와이드', '발볼 넓은 러닝화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>같은 라인 세대 변화 중 역대급</strong> — v15는 v14 대비 약 30g 감량(RunRepeat 실측 285→255g) + Fresh Foam X → 인피니온(질소 주입 슈퍼크리티컬) 폼 교체</li>
-    <li>한국 러너 핵심 변화 3가지: <strong>토박스 narrow → standard(실측 69.8→73.2mm)</strong> + <strong>4E 와이드 옵션 추가</strong> + <strong>힐 스택 실측 37mm 유지(브랜드 표기 40mm)</strong></li>
-    <li>가격 차이 1만원(MSRP). 단 <strong>v14 할인 13~15만원대</strong>로 풀려 실제 차이 5~7만원. "별개의 신발"이라 본인 우선순위(가벼움 vs 가성비)로 갈림</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>RunRepeat 1080 v14 랩 실측(SA 142, HA 11.9, 에너지 리턴 60.8%) + 1080 v15 한국 출시 사양 + 한국 NB 공식몰 가격(2026-05-17 기준). 양 신발 단독: <a href="/shoes/new-balance-1080-v14">1080 v14 상세</a> · <a href="/shoes/new-balance-1080-v15">1080 v15 상세</a>.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>1080 v14</th><th>1080 v15</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 / 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>209,000원</strong></td><td>+10,000원</td></tr>
-    <tr><td><strong>현재 시장가</strong></td><td><strong>130,000~150,000원</strong> (이월 할인)</td><td>209,000원 (출시 풀가)</td><td>실제 차이 ~7만원</td></tr>
-    <tr><td><strong>무게 (남성)</strong></td><td>285g</td><td><strong>255g</strong> (RunRepeat 실측)</td><td><strong>약 -30g</strong></td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>Fresh Foam X (EVA 기반)</td><td><strong>인피니온 (질소 주입 슈퍼크리티컬)</strong></td><td>폼 카테고리 자체 교체</td></tr>
-    <tr><td><strong>힐 스택 (실측)</strong></td><td>37mm</td><td>37mm (브랜드 표기 40mm)</td><td>동일</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>33mm</td><td>31mm</td><td>-2mm</td></tr>
-    <tr><td><strong>드롭 (실측 / 공식)</strong></td><td>4.2mm / 6mm</td><td>6.4mm / 6mm</td><td>+2.2mm (실측 기준)</td></tr>
-    <tr><td><strong>충격 흡수 (SA)</strong></td><td>142 (RunRepeat 실측, 최상위)</td><td>미반영 (RunRepeat 랩은 게시됐으나 이 수치는 신발 DB에 없음, 2026-10-23 기준)</td><td>둘 다 9/10 쿠셔닝</td></tr>
-    <tr><td><strong>경도 (HA)</strong></td><td>11.9 (초소프트)</td><td>미반영 (위와 같음)</td><td>v14만 수치 확인</td></tr>
-    <tr><td><strong>에너지 리턴</strong></td><td>60.8% (힐)</td><td>v14 대비 ↑ (인피니온 폼)</td><td>v15 약간 우위 추정</td></tr>
-    <tr><td><strong>토박스</strong></td><td><strong>narrow (실측 69.8mm)</strong></td><td><strong>standard (실측 73.2mm)</strong></td><td>한국 발 친화 ↑</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>표준(D), 2E</td><td><strong>2E, 4E</strong></td><td>4E 신규 추가</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>7/10</td><td>6/10</td><td>-1 (경량화 대가)</td></tr>
-    <tr><td><strong>내구성</strong></td><td>550km</td><td>600km</td><td>+50km</td></tr>
-    <tr><td><strong>Cost/km (정가)</strong></td><td>약 362원/km</td><td>약 348원/km</td><td>-14원/km</td></tr>
-    <tr><td><strong>Cost/km (할인가)</strong></td><td><strong>약 245~270원/km</strong></td><td>약 348원/km</td><td>v14 압승</td></tr>
-  </tbody>
-</table>
-
-<h2>5가지 핵심 변화 — "사실상 다른 신발"</h2>
-
-<h3>1. 무게 약 30g 감량 ✅ 폼 교체와 함께 온 경량화</h3>
-<p>285g → 255g(RunRepeat 실측, 브랜드 표기는 남성 261g). 페가수스(+5g)·카야노(+3g, 실측 295→298g)보다는 큰 폭입니다. 브랜드 표기끼리 비교하면 v14 298g(10.5oz) → v15 261g으로 감량 폭은 약 37g입니다.</p>
-
-<h3>2. Fresh Foam X → 인피니온 폼 교체 ✅ 폼 카테고리 자체 교체</h3>
-<p>v14의 Fresh Foam X는 EVA 기반 폼. v15의 <strong>인피니온은 질소 주입 슈퍼크리티컬 폼</strong>(아디다스 Lightstrike Pro·나이키 ZoomX 계열). 같은 두께에서 더 가볍고, 에너지 리턴이 향상되고, 통기성도 개선. <strong>이 폼 교체가 감량의 핵심</strong>.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔬</span>
-  <div class="callout-body">
-    <p class="callout-title">슈퍼크리티컬 폼이 뭐가 다른가</p>
-    <p>일반 EVA 폼: 고체 폼 발포 (셀 크기 불균일, 무겁고 반발 손실 큼).<br/>슈퍼크리티컬(SC) 폼: 질소 등 가스를 초임계 상태로 폼에 주입 → <strong>균일한 미세 셀 구조</strong>. 결과는 ① 같은 부피 -20~30% 무게, ② 에너지 리턴 +5~10%, ③ 장기 폼 꺼짐 ↓. 아디다스 아디오스 프로의 라이트스트라이크 프로, 나이키 ZoomX, 호카 PEBA 폼 등 최신 카본 슈즈가 모두 SC 폼 계열.</p>
-  </div>
-</div>
-
-<h3>3. 토박스 narrow → standard ✅ 한국 러너 핵심 개선</h3>
-<p>v14의 토박스는 narrow(실측 69.8mm, 랩 평균 73.2mm)라 발볼이 표준이어도 새끼발가락 압박이 생길 수 있어, 사실상 2E가 필요한 폭이었음. <strong>v15는 standard 토박스 + 4E 옵션까지 신설</strong>로 발볼 4E급도 표준 SKU로 안전하게 접근 가능. 한국 NB 1080 라인 역사상 가장 큰 개선.</p>
-
-<h3>4. 힐 스택 유지(실측 37mm) + 드롭 +2mm</h3>
-<p>힐 스택은 실측 37.0mm로 v14와 같습니다(브랜드 표기 40mm). 드롭은 4.2mm(실측)에서 6.4mm(실측)로 약 +2mm. <strong>드롭이 높아져</strong> 종아리·아킬레스 부담은 약간 줄어듦. 스택 두께 자체는 그대로라 무릎 보호 측면의 차이는 크지 않음.</p>
-
-<h3>5. 안정성 -1 ⚠️ 경량화의 대가</h3>
-<p>v14 안정성 7 → v15 6. 가벼워지면서 미드솔 두께 분포·소재가 바뀌어 좌우 흔들림이 약간 늘었을 가능성. <strong>평발·과내전 러너는 v15 단독보다 안정화 분리 검토 필요</strong>(카야노 32/33, 860 v15 등).</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>가성비 최우선 + 표준 발볼</td><td><strong>v14 이월 할인 (13~15만원)</strong></td><td>SA 142 검증 + 쿠셔닝 9/10 동급 + 5~7만원 절약</td></tr>
-    <tr><td>발볼 4E급 (4E 와이드 필수)</td><td><strong>v15 4E</strong></td><td>v14 4E 옵션 없음, v15 신규 추가</td></tr>
-    <tr><td>발볼 2E (와이드 정도)</td><td>v14 또는 v15</td><td>둘 다 2E 옵션 있음. 가격으로 선택</td></tr>
-    <tr><td>가벼운 쿠션화 우선 (255g)</td><td><strong>v15</strong></td><td>약 30g 가벼움(실측)</td></tr>
-    <tr><td>빠른 페이스(5:00/km 이하) 가능 쿠션화</td><td><strong>v15</strong></td><td>255g(실측) + 인피니온 폼 반발</td></tr>
-    <tr><td>리커버리·LSD 위주 (페이스 무관)</td><td><strong>v14 (가성비)</strong></td><td>HA 11.9 초소프트, 푹 쉬는 느낌</td></tr>
-    <tr><td>평발·과내전</td><td>둘 다 비추 (안정화로)</td><td>1080은 중립화. 카야노 32/33이 답</td></tr>
-    <tr><td>무릎 약한 뒤꿈치 착지</td><td><strong>v15</strong></td><td>6mm 드롭 개선(힐 스택은 실측 37mm로 v14와 동일)</td></tr>
-    <tr><td>v14 600km 이내 멀쩡</td><td><strong>v14 계속</strong></td><td>v15 갈아탈 가치 미미</td></tr>
-    <tr><td>v14 수명 다 됨 + 무게 부담 컸음</td><td><strong>v15</strong></td><td>약 -30g(실측) + standard 토박스</td></tr>
-    <tr><td>주 100km+ 고볼륨</td><td>v14 (내구성 검증) 또는 v15 (가벼움)</td><td>본인 우선순위로 갈림</td></tr>
-    <tr><td>1080 첫 도전 + 발볼 표준</td><td><strong>v14 이월</strong></td><td>13~15만원에 쿠셔닝 검증된 입문</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — v14 할인이 결정적</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 1080 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> v14 13~15만원 이월 풀림 / v15 20만 9천원 정가 → 가성비는 v14 압승, "역대급 변화" 매력은 v15</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> v14 12~13만원대 진입 / v15 18~19만원대 일부 할인 시작 → v14 가성비 정점</li>
-      <li><strong>블프 (11월):</strong> v14 10~11만원대 가능 / v15 16~17만원대 → v14 사이즈·컬러 빠른 품절. 2E·표준만 남는 패턴</li>
-      <li><strong>12월~1월:</strong> v14 재고 소진 가속. <strong>2E 와이드는 빠르게 사라짐</strong> (한국 발볼 수요)</li>
-      <li><strong>2027년 1월~ (v15 이월 시작):</strong> v15 14~16만원대로 떨어지며 v16(추정) 출시 사이클</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>발볼 4E급:</strong> v15 4E 정가로 가야 함. v14는 4E 없음, 2E로는 부족할 가능성</li>
-  <li><strong>발볼 표준~2E + 가성비:</strong> v14 이월 13~15만원이 지금 가장 합리적. 여름~블프 더 떨어질 가능성 vs 사이즈 빠질 위험 트레이드오프</li>
-  <li><strong>경량 쿠션화 우선:</strong> v15 정가 20만 9천원 감수. 약 30g(실측) 감량 폭은 크지 않아 매장 시착으로 체감을 확인하는 편이 안전</li>
-  <li><strong>둘 다 처음:</strong> NB 매장 또는 ON YOUR MARK 트라이얼에서 양쪽 동시 신어보고 결정</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>무릎 통증 + 뒤꿈치 착지</td><td><strong>v15</strong></td><td>인피니온 폼 + 6mm 드롭(힐 스택은 실측 37mm로 v14와 동일)</td></tr>
-    <tr><td>무릎 통증 + 가성비 우선</td><td>v14 (이월)</td><td>SA 142 + 37mm 스택도 충분</td></tr>
-    <tr><td>아킬레스건염</td><td>v15</td><td>드롭 6mm(공식) — v14 4.2mm 실측보다 낮은 부담</td></tr>
-    <tr><td>족저근막염</td><td>v14 = v15</td><td>둘 다 excellent (인피니온 / Fresh Foam X)</td></tr>
-    <tr><td>평발 + 가벼운 과내전</td><td>v14 (안정성 7) > v15 (6)</td><td>v15는 안정성 약간 떨어짐. 심하면 안정화로</td></tr>
-    <tr><td>평발 + 심한 과내전</td><td>둘 다 비추 → <a href="/shoes/asics-gel-kayano-32">카야노 32</a></td><td>1080은 중립화</td></tr>
-    <tr><td>발볼 4E급 + 토박스 압박</td><td><strong>v15 4E</strong></td><td>v14는 4E 없음, v15 신규 옵션</td></tr>
-  </tbody>
-</table>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>비슷한 가격대 쿠션화 대안</h2>
-
-<ul>
-  <li><a href="/shoes/asics-gel-nimbus-28">아식스 젤 님버스 28</a> — 19만 9천원, 쿠셔닝 동급, 가성비는 1080 v15가 우위</li>
-  <li><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> — 19만 9천원, 부드러움. 무게는 275g(US 9)으로 1080 v15(실측 255g·브랜드 표기 261g)보다 무거움. 토박스는 73.1mm로 1080 v15(73.2mm)와 사실상 같음(둘 다 RunRepeat 실측)</li>
-  <li><a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a> — 20만 9천원, 반발력 약간 더 강함</li>
-  <li><a href="/shoes/new-balance-880-v15">NB 880 v15</a> — 18만 9천원, 1080보다 한 단계 아래. 가성비 우선이면 검토</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. v14 → v15 업그레이드 가치 있나요?</h3>
-<p>가치 큼. <strong>약 30g 감량(RunRepeat 실측 285→255g) + 폼 자체 교체 + 토박스 standard + 4E 옵션</strong> — 같은 라인 세대 변화 중 거의 가장 큰 폭. v14를 300km 이내 신었다면 그냥 v14 굴리고, v14가 수명 다 됐거나 발볼 4E급이라면 무조건 v15.</p>
-
-<h3>Q. v15가 정말 v14보다 부드러운가요?</h3>
-<p>"부드러움 절대치"는 v14의 HA 11.9 초소프트가 살짝 더 부드러울 수 있음 (검증 데이터 기준). 다만 v15의 인피니온 폼은 NB가 에너지 리턴 향상을 내세운 폼이라, 반발감은 v15 쪽일 가능성이 있음(v15는 RunRepeat 랩이 이후 게시됐지만 반발·경도 수치는 2026-10-23 기준 이 글과 신발 DB에 반영되지 않음). <strong>리커버리 위주 = v14, 데일리 + 페이스 가끔 올리기 = v15</strong>가 정답.</p>
-
-<h3>Q. 인피니온 폼은 PEBA인가요?</h3>
-<p>PEBA는 아니지만 같은 슈퍼크리티컬 폼 계열. 정확한 화학 성분은 NB가 공개하지 않았으나 <strong>질소 주입 + 슈퍼크리티컬 공정</strong>은 PEBA(나이키 ZoomX)·라이트스트라이크 프로(아디다스)와 같은 카테고리. 카본 슈즈에 쓰는 폼이 데일리 트레이너에 적용된 흐름.</p>
-
-<h3>Q. 안정성 6/10이면 평발은 v15 못 신나요?</h3>
-<p>가벼운 평발이라면 OK. <strong>안정성 6/10은 "중립화 평균"</strong>이고, 페가수스(8/10)·님버스(7/10)보다는 약하지만 1080도 충분한 베이스 폼 안정성은 있음. 다만 <strong>심한 과내전이면 무조건 카야노 32/33이나 860 v15</strong>로.</p>
-
-<h3>Q. v15로 풀코스 가능한가요?</h3>
-<p>가능. 255g(실측) + 6mm 드롭 + 인피니온 폼 조합은 Sub-4 ~ Sub-5 풀코스 완주에 적합. <strong>Sub-3:30 이하 도전은 카본 슈즈로 분리 권장</strong>. v15는 데일리 + LSD + 풀코스 완주(페이스 부담 없는 경우) 전용.</p>
-
-<h3>Q. v14 narrow 토박스 발볼 표준이면 신을 만 한가요?</h3>
-<p>발볼 정확히 표준(EE 이하)이라면 D 사이즈 OK. <strong>발볼 약간 넓다 싶으면 무조건 2E</strong>. RunRepeat 실측 토박스 69.8mm narrow는 같은 랩 평균(73.2mm)보다 3.4mm 좁음.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">90% 한국 러너에게는 두 갈래</p>
-    <p><strong>① 발볼 4E급 또는 가벼운 쿠션화 매니아:</strong> <a href="/shoes/new-balance-1080-v15">1080 v15</a> 정가 20만 9천원 감수해서라도 4E 신규 옵션 + 폼 교체 가치 회수.</p>
-    <p><strong>② 발볼 표준~2E + 가성비:</strong> <a href="/shoes/new-balance-1080-v14">1080 v14</a> 이월 13~15만원 잡고 5~7만원 절약. SA 142 + HA 11.9 초소프트 쿠셔닝은 여전히 최상위. 페이스 욕심 없는 리커버리·LSD 위주라면 무게 차이 체감 적음.</p>
-    <p><strong>둘 다 처음이거나 결정 못 한다면:</strong> ON YOUR MARK 경복궁점·부산점 또는 NB 직영매장에서 양쪽 동시 시착이 가장 정확.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://link.coupang.com/a/g5YNVlXtts" class="affiliate-btn coupang" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">쿠팡</span>
-      <span class="affiliate-btn-product">1080 v14 보기 →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
-</div>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/2026-nb-1080v15-tryout-popup-d3">NB 1080 v15 무료 트라이얼 팝업 (5/14 종료)</a></li>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 — 데일리 트레이너 세대 비교</a></li>
-  <li><a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32 vs 33 비교 — 안정화 세대 비교</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-</ul>
-
-<p><small>출처: RunRepeat 1080 v14 랩 데이터(SA 142, HA 11.9, 에너지 리턴 60.8%) / Believe in the Run 1080 v15 리뷰 / 한국 NB 공식몰 + 네이버 쇼핑 가격(2026-05-17 기준). v15 RunRepeat 랩 데이터는 작성 시점 일부 미게시 상태였고, 이후 게시된 무게·스택·드롭·토박스(255g·힐 37.0/전족 30.6mm·6.4mm·73.2mm)는 본문에 반영했습니다. 충격흡수·경도·에너지 리턴은 2026-10-23 기준 미반영이라 인피니온 폼 우위는 NB 공식 발표 기반 추정입니다.</small></p>
-`,
+    id: "new-balance-1080-v14-vs-v15-comparison",
+    slug: "new-balance-1080-v14-vs-v15-comparison",
+    title: "1080 V14 vs V15 — 폼 교체·실측30g 차이·한국 판매 폭",
+    description: "Fresh Foam X와Infinion, 실측285g·255g, 너비·높이·드롭을 비교합니다. 한국V15 확인SKU와V14 현재 미확인 조건을 구분해 시착을 준비하세요.",
+    thumbnail: "/images/shoes/newbalance/1080v15/side2.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-17",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "1080 V14",
+      "1080 V15",
+      "Infinion",
+      "세대 비교"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>V14 Fresh Foam X에서 V15 Infinion으로 폼이 바뀌었습니다.</li><li>RR 실측은285g 대255g. 한국 공식·DOR 공시 무게와는 조건을 구분합니다.</li><li>V15 한국 남성2E·4E와 여성D 상품은 확인했지만 V14의 현재 한국 정가·판매 폭은 미확인입니다.</li></ul></div>
+<h2>수치로 볼 수 있는 변화</h2><table><thead><tr><th>RunRepeat 항목</th><th>1080 V14</th><th>1080 V15</th></tr></thead><tbody><tr><td>무게</td><td>285g</td><td>255g</td></tr><tr><td>힐/전족부 스택</td><td>37.0/32.8mm</td><td>37.0/30.6mm</td></tr><tr><td>드롭</td><td>4.2mm</td><td>6.4mm</td></tr><tr><td>힐/전족부 SA</td><td>142/128</td><td>147/126</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>58.0/59.4%</td><td>65.9/69.1%</td></tr><tr><td>경도</td><td>28.5AC</td><td>21.5AC</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>95.4/69.8/27.0mm</td><td>94.8/73.2/27.1mm</td></tr></tbody></table>
+<p>같은 공시 검체 정책의 해외 실험실 값으로 맞춰 비교했습니다. V14의 과거11.9HA와 현재V15의AC를 직접 비교하지 않으며, 폼 경도·에너지 리턴의 차이를 질환별 효과로 환산하지 않습니다. V15가 엄지 부위에서 더 넓게 측정됐어도 전체 최광폭은 더 작으므로 ‘한국 발에 무조건 더 잘 맞는다’는 결론은 피하세요.</p>
+<h2>공시 무게와 실측 무게의 차이</h2><p>DOR의 V14 소개는 남성300g(US9.5)·여성235g(US8),38/32mm·6mm입니다. V15 한국 공시는 남성261g·여성208g이지만 측정 사이즈가 공시되지 않았습니다. 이를 실측285→255g과 혼합해 세대 감량률을 만들지 않습니다.</p>
+<h2>리뷰어가 느낀 핏과 전환</h2><p>V14에서 David은 여유 있는 고정을, Andrea는 낮고 조이는 중족부를 느꼈습니다. V15에서 Matt은 US10에서 넓이·볼륨 여유와 매끄러운 힐 전환을 느꼈지만 앞쪽 롤링 보조는 덜하다고 봤습니다. RR의 V15 흔들림 주의와 DOR의 약한 지오메트리 지지 체감은 다른 종류의 평가입니다. 전작을 편하게 신었다면 새 폼의 느낌과 실제 압박·고정을 다시 확인하세요.</p>
+<h2>한국 가격과 폭을 확인할 때</h2><p>V15는 남성2E NBPFGF701Y·4E NBPFGF701J, 여성D NBPFGF702O 정가209,000원을 확인했습니다. V14는 현재 운영 공식몰 검색에서 상품을 확인하지 못했으며 QA 호스트의 과거199,000원 payload를 현행 정가로 사용하지 않습니다. V14의4E 전체 미판매나 V15에서4E가 처음 생겼다는 이력도 이번 확인으로 확정하지 않습니다. <a href="/shoes/new-balance-1080-v15">V15 한국SKU 원문</a> · <a href="/shoes/new-balance-1080-v14">V14 확인 범위</a></p>
+<h2>시착할 때 적어둘 질문</h2><ol><li>양발의 앞쪽·발등·아치에 압박이 생기는가?</li><li>걷거나 허용된 시착 동작에서 뒤꿈치가 들리거나 카운터가 닿는가?</li><li>평소 양말·인솔을 넣은 상태에서도 공간과 고정이 유지되는가?</li><li>구매할 성별·사이즈·폭·SKU와 교환 조건이 확인되는가?</li></ol><p>이 질문은 실제 구매 조건을 확인하기 위한 편집부 정리입니다. 신발의 치료 효과를 판정하거나 사이즈를 일괄 올려주는 처방은 아닙니다.</p><p>가격 차액·수명km·다음 블프 할인폭을 가정해 승자를 정하지 않습니다. 실제 판매 조건과 사용 목적을 적어 비교하세요.</p>
+<h2>모델별 원문</h2><ul><li>1080 V14: <a href="https://runrepeat.com/new-balance-fresh-foam-x-1080-v14" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/new-balance-fresh-foam-x-1080-v14/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li><li>1080 V15: <a href="https://runrepeat.com/new-balance-1080-v-15" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/new-balance-1080-v15-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li></ul><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "V15는 V14보다30g 가벼운가요?",
+        "answer": "RR 실측285g과255g의 차이는30g입니다. 실제 개인 사이즈·폭별 무게 차이와 동일하다고 보장하지 않습니다."
+      },
+      {
+        "question": "V15는4E가 새로 추가됐나요?",
+        "answer": "V15 한국4E 상품은 확인했지만 V14의 전체 과거 폭 이력과 신규 여부를 이번 확인으로 확정하지 않습니다."
+      },
+      {
+        "question": "V15 드롭이 높아져 아킬레스에 더 좋은가요?",
+        "answer": "드롭 차이를 질환별 치료 효과로 바꾸지 않습니다. 증상과 실제 착화 조건을 함께 평가하세요."
+      }
+    ],
   },
   {
-    id: 'asics-kayano-32-vs-33-comparison',
-    slug: 'asics-kayano-32-vs-33-comparison',
-    title: '아식스 카야노 33 vs 32 비교 | 4D Guidance "단단한 안정" vs FLUIDSUPPORT "부드러운 안정" — 출시 후 평발 한국 러너는 어느 세대?',
-    description: '6월 1일 출시된 카야노 33(199,000원)과 검증된 32(같은 정가 199,000원, 세일 진입). 안정 방식 교체 — 카야노 30~32의 4D Guidance System 대신 FLUIDSUPPORT 신기술·FF BLAST MAX 듀얼 폼. 단 출시 후 전문가 초기 리뷰(DOR)는 33의 미드풋 지지 약화를 지적했죠. 평발·과내전 한국 러너가 어느 세대로 가야 하는지 부상별·세일 시나리오별 매트릭스.',
-    thumbnail: '/images/blog/asics-kayano-32-vs-33-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-17',
-    category: 'review' as const,
-    readingTime: 12,
-    tags: ['아식스 카야노', '카야노 32', '카야노 33', '안정화 비교', 'FLUIDSUPPORT', 'FF BLAST MAX', '4D Guidance', '평발 러닝화', '과내전', '안정화'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>안정 방식 교체</strong> — 33은 4D Guidance System(카야노 30~32) 폐지 + FLUIDSUPPORT 신기술 + 카야노 시리즈 최초 FF BLAST MAX(탑) + FF BLAST PLUS(하단) 듀얼 폼</li>
-    <li>안정 철학이 정반대: <strong>32 = 단단한 폼으로 발 무너짐 막기</strong>, <strong>33 = 부드러운 폼이 발 모양에 맞춰 변형되며 잡기</strong></li>
-    <li>MSRP는 199,000원으로 같지만 <strong>32 세일 진입(30~40%)</strong>으로 실차는 벌어집니다. 출시 후 전문가 초기 평가(DOR)도 33의 미드풋 지지 약화를 지적 — <strong>심한 과내전 평발이라면 4D Guidance로 세 세대 검증된 32가 더 안전</strong>할 수 있음</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">출시 완료 — 카야노 33은 6월 1일 출시됐습니다</p>
-    <p>ASICS GEL-KAYANO 33은 <strong>2026년 6월 1일 글로벌 출시</strong>됐고, 한국 정가는 <strong>199,000원</strong>으로, 전작 32와 같은 가격에 나왔습니다(아식스 코리아 공식몰 기준). 출시 후 <strong>전문가 초기 리뷰</strong>도 나왔는데, Doctors of Running의 Matt Klein은 "32는 올해의 안정화였지만 33은 탑3에도 못 든다"며 <strong>FLUIDSUPPORT가 기존 4D Guidance보다 미드풋 지지가 약하고 반발이 둔하다</strong>고 평했습니다. "더 부드러워졌지만 교정력은 32가 위"라는 게 초기 중평이죠. 이후 게시된 RunRepeat 랩도 같은 방향이었습니다 — 에너지 리턴 힐 50.0%로 반발은 평범했고, 실측 스택은 힐 36.8mm로 공식 발표(40mm)보다 낮았습니다. 본 글은 신상 33을 살지, 검증된 32를 세일로 살지 결정하기 위한 비교입니다.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>카야노 32</th><th>카야노 33</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026-06-01 (출시 완료)</strong></td><td>2년차 / 신상</td></tr>
-    <tr><td><strong>MSRP (한국)</strong></td><td>199,000원</td><td><strong>199,000원</strong></td><td>동일</td></tr>
-    <tr><td><strong>세일가 (전망)</strong></td><td><strong>120,000~140,000원</strong> (33 출시 후 30~40% 세일)</td><td>199,000원 (출시 직후 풀가)</td><td>실제 차이 ~7만원까지 벌어질 가능성</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>295g</td><td>298g</td><td>+3g (사실상 동일)</td></tr>
-    <tr><td><strong>힐 스택 (RunRepeat 실측)</strong></td><td>39.9mm</td><td>36.8mm (공식 40mm)</td><td>-3.1mm</td></tr>
-    <tr><td><strong>전족부 스택 (RunRepeat 실측)</strong></td><td>30.6mm</td><td>28.3mm (공식 32mm)</td><td>-2.3mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8mm (공식) · 실측 9.3mm</td><td><strong>8mm (공식) · 실측 8.5mm</strong></td><td>공식 동일 · 실측 -0.8mm</td></tr>
-    <tr><td><strong>안정 메커니즘</strong></td><td>4D Guidance System (카야노 30~32)</td><td><strong>FLUIDSUPPORT 지오메트리</strong></td><td>철학 정반대</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>FF Blast+ ECO 단일 폼</td><td><strong>FF BLAST MAX (탑) + FF BLAST PLUS (하단) 듀얼</strong></td><td>최초 듀얼 폼</td></tr>
-    <tr><td><strong>안정성 점수</strong></td><td>10/10 (검증)</td><td>9/10 (검증 부족)</td><td>-1</td></tr>
-    <tr><td><strong>반응성 점수</strong></td><td>6/10</td><td>7/10</td><td>+1 (FF BLAST MAX)</td></tr>
-    <tr><td><strong>내구성</strong></td><td>700km</td><td>약 650km (아웃솔 마모 실측 1.1mm 기준)</td><td>-50km</td></tr>
-    <tr><td><strong>아웃솔</strong></td><td>AHAR+</td><td>AHARPLUS</td><td>업데이트</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메쉬</td><td>재설계 엔지니어드 메쉬</td><td>리뉴얼</td></tr>
-    <tr><td><strong>와이드 옵션</strong></td><td>표준/와이드/X-와이드</td><td>표준/와이드(2E) 발매</td><td>X-와이드는 미확정</td></tr>
-    <tr><td><strong>RunRepeat 랩 데이터</strong></td><td>게시됨</td><td>게시됨 (출시 후, 2026-07 반영)</td><td>둘 다 실측 비교 가능</td></tr>
-  </tbody>
-</table>
-
-<h2>핵심 변화 — 4D Guidance vs FLUIDSUPPORT</h2>
-
-<p>32와 33의 가장 중요한 차이는 <strong>안정성을 구현하는 방식의 철학</strong> 자체가 정반대로 바뀌었다는 점입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🔄</span>
-  <div class="callout-body">
-    <p class="callout-title">단단한 안정 vs 부드러운 안정 — 안정화 패러다임 전환</p>
-    <table>
-      <thead>
-        <tr><th></th><th>32 — 4D Guidance System (구)</th><th>33 — FLUIDSUPPORT (신)</th></tr>
-      </thead>
-      <tbody>
-        <tr><td><strong>발상</strong></td><td>단단한 폼으로 발이 안쪽으로 무너지는 걸 막는다</td><td>부드러운 폼이 발 모양에 맞춰 변형되며 자연스럽게 잡는다</td></tr>
-        <tr><td><strong>구조</strong></td><td>중창 안쪽에 단단한 EVA 인서트 (직접 교정력)</td><td>지오메트리(밑창 형상) + 듀얼 폼 (간접 안내)</td></tr>
-        <tr><td><strong>장점</strong></td><td>심한 과내전에도 확실한 교정. 세 세대(30~32) 검증</td><td>발이 자연스럽게 움직이면서 안정성 확보. 단단함이 사라져 편안함 ↑</td></tr>
-        <tr><td><strong>단점</strong></td><td>"안정화는 딱딱하다"는 평가의 원인</td><td>심한 과내전에는 교정력 부족 가능성 (검증 부족)</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<p>이건 단순한 미드솔 폼 변경이 아니라 <strong>안정화 카테고리 전체의 방향 전환</strong>입니다. 호카 ARAHI, 브룩스 글리세린 GTS, NB 1080 안정화 버전 등 최근 안정화 트렌드와 같은 흐름 — 단단한 인서트 대신 폼 형상·구성으로 안정성을 만드는 방향.</p>
-
-<h2>5가지 핵심 변화 점검</h2>
-
-<h3>1. 4D Guidance System 폐지 ⚠️ 가장 큰 변화</h3>
-<p>32까지 쓰인 4D Guidance의 안쪽 지지 구조가 사라졌습니다. <strong>32까지의 "단단한 안정감"에 익숙했던 평발 러너에게는 33이 낯설게 느껴질 가능성</strong>이 큽니다. 반대로 "안정화라 그런가 쿠션이 좀 단단했다"고 느꼈던 러너에게는 환영할 변화.</p>
-
-<h3>2. FF BLAST MAX 도입 ✅ 쿠션 부드러움 개선</h3>
-<p>슈퍼블라스트 3·노바블라스트 5 등에서 호평 받은 FF BLAST MAX가 카야노 시리즈에 처음 도입. 32의 FF Blast+ ECO 대비 <strong>더 부드럽고 반발력도 약간 개선</strong>. "안정화인데 가볍게 통통 튀는 느낌"이 카야노 33의 정체성이 될 가능성.</p>
-
-<h3>3. 드롭 8mm ↔ 공식 동일 (실측 9.3 → 8.5mm)</h3>
-<p>공식 드롭은 32·33 모두 8mm로 같습니다. 10mm에서 8mm로 내려간 건 31 → 32 때입니다(RunRepeat). 실측으로는 32 9.3mm → 33 8.5mm로 0.8mm 낮아졌을 뿐이라, 드롭만 보고 세대를 고를 이유는 없습니다. 11mm/10mm 드롭에 익숙한 러너라면 32·33 모두 종아리 부담이 약간 늘 수 있어 적응 기간이 필요합니다.</p>
-
-<h3>4. 무게 +3g (295 → 298g) ↔ 사실상 동일</h3>
-<p>거의 의미 없는 수치 변화. 안정화 카테고리에서 300g대는 표준 — 둘 다 "묵직한 안정화" 영역.</p>
-
-<h3>5. 발볼 — 33이 32보다 여유, 단 X-와이드는 미확정</h3>
-<p>출시 후 리뷰(DOR)는 33의 토박스가 덜 좁아졌다고 봤지만, <strong>RunRepeat 실측 토박스는 33이 72.4mm로 32(73.9mm)보다 1.5mm 좁습니다</strong>(랩 평균 73.2mm). 표준 발볼이라도 33이 32보다 여유 있다고 보기는 어렵습니다. 옵션은 32가 표준·와이드·X-와이드 3종인 반면 <strong>33은 표준·와이드(2E) 2종</strong>으로, X-와이드 출시는 미확정. 발볼 4E 초과(EE 이상)라면 32 X-와이드를 세일 시점에 잡는 게 안전합니다.</p>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>본인 상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>심한 과내전 + 검증된 방식 우선</td><td><strong>32 (세일 대기)</strong></td><td>4D Guidance 강한 교정력, FLUIDSUPPORT 검증 부족</td></tr>
-    <tr><td>발볼 4E+ (X-와이드 필수)</td><td><strong>32 X-와이드 (세일)</strong></td><td>33 X-와이드 출시 미확정</td></tr>
-    <tr><td>가성비 우선 + 표준~와이드 발볼</td><td><strong>32 (세일 12~14만원)</strong></td><td>33 출시 후 30~40% 세일 시점</td></tr>
-    <tr><td>"안정화는 단단하다"고 느꼈던 러너</td><td><strong>33</strong></td><td>FF BLAST MAX 도입으로 쿠션 부드러움 ↑</td></tr>
-    <tr><td>아킬레스건염 이력</td><td>32 = 33</td><td>공식 드롭 둘 다 8mm(실측 9.3 / 8.5mm) — 드롭 차이로 고를 근거 없음</td></tr>
-    <tr><td>무릎 통증 + 평발</td><td>둘 다 OK</td><td>실측 힐 스택 32 39.9mm / 33 36.8mm (33이 3.1mm 낮음)</td></tr>
-    <tr><td>32 사용 중 + 600km 이내 멀쩡</td><td><strong>32 계속</strong></td><td>업그레이드 가치 미미</td></tr>
-    <tr><td>안정화 첫 도전 (가벼운 과내전)</td><td>33 (시착 후) 또는 32 (검증)</td><td>매장 시착 후 결정 권장</td></tr>
-    <tr><td>풀코스/하프 안정화 1켤레</td><td><strong>32 검증된 700km 내구성</strong></td><td>33 내구성 미검증</td></tr>
-    <tr><td>주 100km+ 고볼륨 안정화</td><td><strong>32</strong></td><td>장기 검증, 33은 신뢰 데이터 부족</td></tr>
-  </tbody>
-</table>
-
-<h2>가격 시나리오 — 32 세일 타이밍이 결정적</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 카야노 가격 변동 예측</p>
-    <ul>
-      <li><strong>출시 직후 (지금):</strong> 33 19만 9천원 풀가 / 32 정가~초기 인하(직영·공식몰 17만원대 시작 가능) → 32 세일 본격화 직전, 급하지 않으면 7~8월 대기가 유리</li>
-      <li><strong>7~8월 (시즌 오프):</strong> 32 14~15만원대 / 33 19만원대 → 32 가성비 본격 시작</li>
-      <li><strong>11월 (블프):</strong> 32 12~13만원대 가능 / 33 18~19만원대 → 32 가성비 최강, 단 사이즈·컬러 빠진 옵션 다수</li>
-      <li><strong>12월~1월:</strong> 32 재고 소진. X-와이드는 더 빨리 사라짐. 33이 사실상 유일 옵션</li>
-    </ul>
-  </div>
-</div>
-
-<p><strong>가장 합리적 액션:</strong></p>
-<ul>
-  <li><strong>심한 과내전·발볼 4E+:</strong> 32 X-와이드 본인 사이즈 확보가 우선. 단 2026-10-23 확인 기준 한국 공식몰에는 카야노 32 모델이 없어 판매처 재고를 먼저 확인해야 함</li>
-  <li><strong>표준~와이드 + 가성비:</strong> 7~8월 시즌 오프 또는 11월 블프까지 기다려 32 세일가 12~14만원대 사냥</li>
-  <li><strong>33의 새로운 부드러움 우선:</strong> 매장 시착 후 결정. 신상 풀가 부담스러우면 9~10월까지 기다려 33 가격 안정화 노림</li>
-</ul>
-
-<h2>한국 러너 부상별 권장</h2>
-
-<table>
-  <thead>
-    <tr><th>부상·체형</th><th>추천</th><th>근거</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>평발 + 심한 과내전</td><td><strong>32</strong></td><td>4D Guidance 강한 교정력 검증</td></tr>
-    <tr><td>평발 + 가벼운 과내전</td><td>33</td><td>FLUIDSUPPORT 자연스러운 안내 + 부드러움</td></tr>
-    <tr><td>무릎 통증 (러너스 니, 장경인대염)</td><td>32 = 33</td><td>실측 힐 스택 32 39.9mm / 33 36.8mm (33이 3.1mm 낮음)</td></tr>
-    <tr><td>아킬레스건염</td><td>32 = 33</td><td>공식 드롭 둘 다 8mm(실측 9.3 / 8.5mm)</td></tr>
-    <tr><td>족저근막염</td><td>32 = 33</td><td>둘 다 excellent (PureGEL 또는 FLUIDSUPPORT)</td></tr>
-    <tr><td>정강이 부목 (Shin Splints)</td><td>32 = 33</td><td>실측 힐 스택 39.9mm / 36.8mm 충격 흡수</td></tr>
-    <tr><td>발목 부상 이력</td><td><strong>32</strong></td><td>강한 안정화 + 안정성 10/10</td></tr>
-  </tbody>
-</table>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다. 평발·무릎 통증 종합 가이드: <a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드 →</a></p>
-
-<h2>비슷한 가격대 안정화 대안</h2>
-
-<p>카야노 외 안정화 옵션도 검토할 가치:</p>
-
-<ul>
-  <li><a href="/shoes/asics-gel-kayano-32">아식스 카야노 32</a> — 세 세대 검증된 4D Guidance, 평발 1순위</li>
-  <li><a href="/shoes/asics-gel-kayano-33">아식스 카야노 33</a> — FLUIDSUPPORT 신기술, 부드러운 안정성</li>
-  <li><a href="/shoes/new-balance-860-v15">NB 860 v15</a> — 가성비 안정화. 발볼 넓고 가격 18만 9천원</li>
-  <li><a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a> — GuideRails 시스템, 카야노 32와 같은 295g(RunRepeat 실측)의 안정화 — 33(298g)보다는 3g 가벼움</li>
-  <li><a href="/shoes/hoka-gaviota-6">호카 가비오타 6</a> — 맥시멀 쿠션 + 안정화 결합</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 32 → 33 업그레이드 가치 있나요?</h3>
-<p>32가 500km 이내 멀쩡하다면 그냥 굴리세요. <strong>32의 단단한 안정성에 만족하는 평발 러너라면 33으로 갈 이유 없음</strong>. 반대로 "단단함이 좀 거슬렸다"면 33이 답.</p>
-
-<h3>Q. 신상 33을 사면 검증 부족 리스크가 큰가요?</h3>
-<p>RunRepeat 정량 랩도 출시 후 게시됐고(에너지 리턴 힐 50.0%, 실측 힐 스택 36.8mm), 전문가 리뷰(Doctors of Running)도 나왔습니다 — "더 부드럽지만 <strong>FLUIDSUPPORT의 미드풋 지지·반발이 4D Guidance보다 약하다</strong>"는 평. 카야노 시리즈 자체는 30년 역사로 큰 결함 가능성은 낮지만, <strong>심한 과내전 교정이 목적이라면 33의 교정력이 32보다 약할 수 있다</strong>는 점을 감안하세요.</p>
-
-<h3>Q. 매장 시착 시 어떤 점 체크해야 하나요?</h3>
-<p>3가지: ① 본인 발 안쪽이 안으로 무너지는지(과내전 교정 체감), ② 5분 정도 걸어보면서 미드솔 단단함 정도(32 사용자라면 비교 즉시 가능), ③ 토박스 너비 — 33은 X-와이드 미확정이라 발볼 4E+면 표준 토박스가 부족할 수 있음.</p>
-
-<h3>Q. 평발인데 안정화가 꼭 필요한가요?</h3>
-<p>평발이 자동으로 안정화를 의미하지는 않습니다. <strong>본인이 과내전이 심한지가 핵심</strong>. 가벼운 평발이라면 페가수스 41/42·1080 v15 같은 중립화로도 충분. 정형외과 또는 러닝 전문점에서 보행 분석 1회 받아보면 명확해짐. <a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 →</a></p>
-
-<h3>Q. 둘 다 풀코스 가능한가요?</h3>
-<p>OK. 다만 안정화 특성상 무게 300g대로 빠른 페이스는 부담. <strong>Sub-4 ~ Sub-5 풀코스 완주 목표 + 무릎/평발 안전 우선이라면 두 모델 모두 적합</strong>. Sub-3:30 이하 도전이라면 안정화는 부담스럽고 카본 슈즈 분리 권장.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 카야노 33 출시(2026-06-01) 후 갱신했습니다(2026-06-22). 출시 후 전문가 초기 평가(Doctors of Running)를 반영했고, 이후 게시된 RunRepeat 정량 랩의 무게·스택·드롭·토박스 실측도 반영했습니다(2026-10-23). 한국 정가·세일가는 시점에 따라 변동되니 공식몰에서 확인하세요.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">대다수 평발 한국 러너에게는 32 세일이 답</p>
-    <p><strong>심한 과내전·발볼 4E+·검증된 안정성 우선</strong>이라면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>를 블프 세일까지 12~14만원대로 잡는 게 합리적(2026-10-23 확인 기준 한국 공식몰에는 32가 없어 판매처 재고 확인 필요). 검증된 4D Guidance·X-와이드 옵션·30~40% 가격 메리트가 결정적.</p>
-    <p><strong>"안정화의 단단함이 거슬렸던" 러너 + 신기술 얼리어답터</strong>라면 <a href="/shoes/asics-gel-kayano-33">카야노 33</a> 매장 시착 후 결정. 정가 19만 9천원은 32와 동일하니, 새로운 부드러운 안정성을 시도해볼 가치 ↑. 단 실측 힐 스택(36.8mm)과 토박스(72.4mm)는 32보다 낮고 좁습니다.</p>
-    <p><strong>안정화 첫 도전이라 둘 다 처음</strong>이라면 6/1 이후 매장에서 32·33 동시 시착이 가장 정확. 본인 발이 어느 안정 메커니즘에 맞는지 체감 비교 가능.</p>
-  </div>
-</div>
-
-<div class="affiliate-cta">
-  <p class="affiliate-cta-label">바로 구매</p>
-  <div class="affiliate-cta-buttons">
-    <a href="https://naver.me/F93JaTG9" class="affiliate-btn naver" target="_blank" rel="nofollow sponsored noopener">
-      <span class="affiliate-btn-store">네이버</span>
-      <span class="affiliate-btn-product">카야노 32 최저가 →</span>
-    </a>
-    <a href="/shoes/asics-gel-kayano-33" class="affiliate-btn pending">
-      <span class="affiliate-btn-store">상세</span>
-      <span class="affiliate-btn-product">카야노 33 정보 (6/1 출시) →</span>
-    </a>
-  </div>
-  <p class="affiliate-disclosure">광고 표기: 위 링크는 네이버 브랜드 커넥트 추적 코드가 포함되며, 일정 수수료를 받을 수 있습니다.</p>
-</div>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>카야노가 "안정화"라면, 데일리·장거리·레이스 카테고리는 다른 신발이 답입니다. 안정화 유저라도 Sub-3:30 이하 도전이나 빠른 페이스 훈련엔 카본/슈퍼트레이너 분리가 권장돼요.</p>
-
-<ul>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 데일리 트레이너 세대 비교</a> (5~10km 데일리 훈련용)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 쿠션화 세대 비교</a> (장거리 + 부드러움 우선 중립화)</li>
-  <li><a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 — 슈퍼트레이너 세대 비교</a> (10km+ 페이스 훈련 분리용)</li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 가성비 카본 슈즈</a> (Sub-3:30 ~ Sub-4 레이스)</li>
-  <li><a href="/blog/nike-vaporfly-4-vs-alphafly-3-comparison">베이퍼플라이 4 vs 알파플라이 3 — 카본 슈퍼슈즈</a> (Sub-3 도전·풀코스 레이스)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/2026-asics-kayano-33-launch">ASICS GEL-KAYANO 33 — 6/1 출시 상세 안내</a></li>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/pronation-type-running-shoe-guide-2026">프로네이션 타입별 러닝화 가이드 2026</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026 — 안정화 vs 중립화 선택</a></li>
-</ul>
-
-<p><small>출처: 아식스 글로벌 공식 발표(2026-05 GEL-KAYANO 33) / RunRepeat 카야노 32 랩 데이터 / Believe in the Run 카야노 32 리뷰 / 한국 ASICS 공식몰 가격(2026-05-17 기준). 33 RunRepeat 랩 데이터는 작성 시점에는 미게시였고, 이후 게시된 실측(무게 298g·힐 36.8/전족 28.3mm·드롭 8.5mm·토박스 72.4mm·에너지 리턴 힐 50.0%)을 2026-10-23에 반영했습니다. 공식 드롭은 32·33 모두 8mm.</small></p>
-`,
+    id: "asics-kayano-32-vs-33-comparison",
+    slug: "asics-kayano-32-vs-33-comparison",
+    title: "카야노 32 vs 33 — 지지 구조·실측·한국 판매 폭 비교",
+    description: "32의4D Guidance와33의FluidSupport를 구분하고 실측295g·298g, 한국 판매 조건을 비교합니다. 교정 강도 순위와 세일 전망 대신 실제 시착 질문을 정리합니다.",
+    thumbnail: "/images/shoes/asics/kayano33/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-17",
+    category: "review",
+    readingTime: 5,
+    tags: [
+      "카야노32",
+      "카야노33",
+      "지지 구조",
+      "세대 비교"
+    ],
+    content: `<div class="tldr"><span class="tldr-label">구매 전 확인</span><ul><li>32는4D Guidance,33은FluidSupport·이중폼 프레임으로 구조가 다릅니다.</li><li>실측295g 대298g이며, 이것을 통제된 동일 검체의 세대 증감 시험으로 해석하지 않습니다.</li><li>33 한국4E 상품은 확인했습니다.32의 현재 공식 정가·폭은 미확인이어서 동일 정가·세일 차액을 확정하지 않습니다.</li></ul></div>
+<h2>같은 출처의 실측 조건</h2><table><thead><tr><th>RunRepeat 항목</th><th>카야노32</th><th>카야노33</th></tr></thead><tbody><tr><td>무게</td><td>295g</td><td>298g</td></tr><tr><td>힐/전족부 스택</td><td>39.9/30.6mm</td><td>36.8/28.3mm</td></tr><tr><td>드롭</td><td>9.3mm</td><td>8.5mm</td></tr><tr><td>힐/전족부 SA</td><td>133/116</td><td>132/112</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>47.8/49.3%</td><td>50.0/56.6%</td></tr><tr><td>경도</td><td>41.3AC</td><td>32.8AC</td></tr><tr><td>내부 최광폭/엄지 부위/높이</td><td>96.6/73.9/27.5mm</td><td>95.9/72.4/28.6mm</td></tr></tbody></table>
+<p>실측과 별도로 DOR 공시는32가40/32mm·8mm,33이39/31mm·8mm입니다. 표의 경도는 폼 측정이고, 주행감·교정 강도·임상 효과의 순위가 아닙니다. 이전 글의 ‘32가 더 통통 튄다’는 단정을 실측 에너지 리턴의 결론으로 유지하지 않습니다.</p>
+<h2>4D Guidance와 FluidSupport</h2><p>32 원문은 넓은 바닥·사이드월·내부 형태와 부드러운 내측4D Guidance 폼 등을 설명하며 전통 미디얼 포스트로 묶지 않습니다.33은 FluidSupport와 FF BLAST MAX·PLUS 프레임 구조입니다. ‘단단한 직접 교정 대 부드러운 간접 안내’로 모든 부하와 발에 적용되는 우열을 정하지 않습니다.</p>
+<h2>리뷰어 의견은 누구의 조건인가?</h2><p>32에서 Matt은 US10의 니트가 전작보다 타이트하고 주행감이 단단하며 힐 전환이 매끄럽다고 봤습니다.33에서는 Matt이 내측 지지와 아치 피로를 지적한 반면 Bach은 새 프레임의 안정감을 높게 평가했습니다. 폼 경도 차이를 모든 사람의 편안함이나 특정 부상에 더 안전하다는 결론으로 옮기지 마세요.</p>
+<h2>한국 가격·폭은 같은 조건으로 확인됐을까?</h2><p>33은 한국 남성 일반·2E·4E, 여성D 정가199,000원을 확인했습니다.32는 현재 브랜드 사이트 상품을 확인하지 못했으며 아식스코리아 본사 판매자 SSG·SSF 원문에199,000원 판매가가 있지만 명시 MSRP·실시간 재고는 미확인입니다. 따라서 ‘정가가 같다’, ‘블프12~14만원 확정’, ‘32 X-Wide를 사는 것이 안전’이라는 구매 결론을 제시하지 않습니다. <a href="/shoes/asics-gel-kayano-32">32 공식 판매자 원문과 확인 한계</a> · <a href="/shoes/asics-gel-kayano-33">33의 한국SKU별 원문</a></p>
+<h2>이전 세대를 신던 러너의 시착 질문</h2><ol><li>기존32의 어느 위치가 편하거나 불편했는지 먼저 메모하세요.</li><li>33의 같은 이름 사이즈·폭이 실제로 같은 핏인지 앞쪽·발등·힐 고정을 확인하세요.</li><li>인솔과 양말을 포함한 상태에서 아치 압박·전환감을 비교하세요.</li><li>기존 신발 교체는 공통500·600·700km 하나로 정하지 말고 상태와 제조사 안내를 확인하세요.</li></ol>
+<p>현재 통증이나 기능 저하가 있다면 <a href="/blog/pronation-type-running-shoe-guide-2026">내전·평발과 증상의 구분</a>을 참고하고 별도로 평가받으세요.</p>
+<h2>모델별 원문</h2><ul><li>카야노32: <a href="https://runrepeat.com/asics-gel-kayano-32" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/asics-gel-kayano-32-review-2025-8mm-drop/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li><li>카야노33: <a href="https://runrepeat.com/asics-gel-kayano-33" target="_blank" rel="noopener noreferrer">RunRepeat 실측</a> · <a href="https://www.doctorsofrunning.com/asics-gel-kayano-33-review-2026/" target="_blank" rel="noopener noreferrer">DOR 개별 착화</a></li></ul><p>RunRepeat의 공시 검체 정책은 남성 US9입니다. 개별 검체의 SKU·폭을 한국 판매 상품과 같다고 확인한 것은 아닙니다. 내부 최광폭·엄지 부위 너비·높이는 서로 다른 측정 위치입니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">측정법 원문</a></p><p><small>2026-11-09 원문 재확인. 자체 착화·랩 테스트를 하지 않았으며, 위 자료는 표시한 원문과 조건의 범위입니다. 가격·재고·개인 피팅은 구매 시 다시 확인하세요.</small></p>`,
+    updatedAt: "2026-11-09",
+    faqs: [
+      {
+        "question": "평발이면32가 더 안전한가요?",
+        "answer": "구조·리뷰어 체감으로 개인의 부상 위험과 치료 효과를 순위로 정하지 않습니다."
+      },
+      {
+        "question": "33은 X-Wide가 아직 없나요?",
+        "answer": "한국 남성4E 상품을 확인했습니다.32의 현재 한국 폭·재고는 이번에 확인하지 못했습니다."
+      }
+    ],
   },
   {
     id: 'nike-pegasus-41-vs-42-comparison',
