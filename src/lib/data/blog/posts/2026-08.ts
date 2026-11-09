@@ -3433,134 +3433,43 @@ export const posts_2026_08: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
-    slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
-    title: '고스트 17 vs 페가수스 42 차이 — 스펙이 거의 같다, 그래서 수명이 가른다 | 800km vs 600km',
-    description:
-      '브룩스 고스트 17과 나이키 페가수스 42는 스펙표가 놀랍도록 비슷합니다. 정가 둘 다 169,000원, 무게 289g 대 286g로 3g 차, 드롭 둘 다 10mm, 스택도 1mm 차이. 둘 다 무플레이트에 와이드 옵션까지 있습니다. 그래서 진짜 갈림길은 다른 데 있어요 — 내구가 800km 대 600km(km당 211원 대 282원)로 34% 벌어지고, 반발은 7 대 7로 같고 쿠션은 고스트가 한 점 높으며, 부상 등급은 페가수스가 세 항목 excellent로 앞섭니다. 국내 최다 판매 데일리 두 라인을 실측으로 갈랐습니다.',
-    thumbnail: '/images/blog/brooks-ghost-17-vs-nike-pegasus-42-daily-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-10',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['고스트 17', '브룩스 고스트', '페가수스 42', '나이키 페가수스', '데일리 러닝화', '입문 러닝화', 'DNA Loft', 'Air Zoom', '러닝화 비교', '169000원'],
+    id: "brooks-ghost-17-vs-nike-pegasus-42-daily-2026",
+    slug: "brooks-ghost-17-vs-nike-pegasus-42-daily-2026",
+    title: "고스트17 vs 페가수스42 — 무게보다 다른 전족 스택·앞코 높이를 비교",
+    description: "같은 랩의289/286g·드롭10.4/14mm를 나란히 봅니다. 기존800/600km 수명·34%비용 차이·페가수스 질환 예방 우위를 철회하고 한국 캐시·현재 미확인을 구분했습니다.",
+    thumbnail: "/images/shoes/brooks/ghost17/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-10",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "고스트17",
+      "페가수스42",
+      "러닝화 비교",
+      "앞코 높이"
+    ],
     faqs: [
       {
-        question: '스펙이 거의 같은데 어떻게 고르나요?',
-        answer:
-          '수명과 부상 예방 등급으로 갈립니다. 고스트 17은 내구 800km로 km당 211원, 페가수스 42는 600km로 282원 — 34% 차이입니다. 반대로 부상 예방 등급은 족저근막·아킬레스·정강이 세 항목에서 excellent로 앞섭니다. 오래 쓰려면 고스트, 부상 예방 항목을 따진다면 페가수스입니다.',
+        "question": "둘 중 어느 쪽이200km 더 오래가나요?",
+        "answer": "그런 공통 수명 차이를 입증하지 못했습니다.800/600km와 이를 사용한비용·7주 차이 계산을 철회했습니다."
       },
       {
-        question: '3g 차이는 무시해도 되나요?',
-        answer:
-          '네. 289g과 286g은 사실상 같은 무게이고, 드롭도 둘 다 10mm, 스택도 36/26mm 대 37/27mm로 1mm 차이입니다. 이 비교에서 무게·드롭·스택은 판단 기준이 되지 못합니다. 다른 항목을 보셔야 합니다.',
+        "question": "아킬레스가 안 좋으면 페가수스가 답인가요?",
+        "answer": "모델별 임상 예방·치료 우위를 확인하지 못해 기존 질환별 등급 비교를 철회했습니다."
       },
       {
-        question: '발볼이 넓은데 어느 쪽인가요?',
-        answer:
-          '둘 다 와이드 옵션이 있지만 표준 폭은 페가수스 42가 더 넉넉합니다. RunRepeat 실측 토박스는 고스트 17이 69.6mm(평균 73.2mm)로 좁은 편이고 페가수스 42는 72.3mm로 표준입니다. 발볼이 넓다면 고스트 17은 와이드를 전제로 보는 편이 안전합니다.',
-      },
-      {
-        question: '입문자에게는 어느 쪽인가요?',
-        answer:
-          '둘 다 입문화로 분류되고 적정 페이스도 거의 같습니다(고스트 5:30~7:00, 페가수스 5:00~7:00). 굳이 고르면 오래 쓰는 고스트 17이 첫 신발로 부담이 적고, 나중에 페이스를 올릴 생각이 있다면 페가수스 42가 조금 더 여지가 있습니다.',
-      },
+        "question": "드롭이 둘 다10mm 아닌가요?",
+        "answer": "공시10mm와 RR실측을 나눠야 합니다. 이번 실측은고스트10.4mm·페가수스14.0mm이며 개인의 동적 체감과도 다릅니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>스펙표로는 거의 같은 신발입니다</strong> — 둘 다 169,000원, 289g 대 286g(3g), 드롭 둘 다 10mm, 스택 1mm 차, 둘 다 무플레이트에 와이드 옵션 있음</li>
-    <li><strong>그래서 수명이 가릅니다</strong> — <a href="/shoes/brooks-ghost-17">고스트 17</a> 800km·km당 <strong>211원</strong> / <a href="/shoes/nike-pegasus-42">페가수스 42</a> 600km·282원. 34% 차이</li>
-    <li><strong>반대쪽 강점은 페가수스</strong> — 부상 예방은 족저근막·아킬레스·정강이 <strong>세 항목 excellent</strong></li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>한 켤레를 오래 쓰고 싶으면 고스트 17</strong>(800km·km당 211원), <strong>부상 프로필이 좋은 쪽을 원하면 페가수스 42</strong>입니다. 무게·드롭으로는 갈리지 않고 발볼은 페가수스 42가 조금 더 넉넉하니(표준 토박스 69.6 대 72.3mm) 이 점을 함께 보세요.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>고스트 17</th><th>페가수스 42</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td>169,000원</td><td>169,000원 <em>(동일)</em></td></tr>
-    <tr><td>무게</td><td>289g</td><td>286g <em>(3g 차)</em></td></tr>
-    <tr><td>스택 (힐/전족)</td><td>36 / 26mm</td><td>37 / 27mm <em>(1mm 차)</em></td></tr>
-    <tr><td>드롭</td><td>10mm</td><td>10mm <em>(동일)</em></td></tr>
-    <tr><td>미드솔</td><td>DNA Loft v3</td><td>ReactX + 풀렝스 Air Zoom</td></tr>
-    <tr><td>쿠션 / 반발</td><td><strong>9</strong> / 7</td><td>8 / 7</td></tr>
-    <tr><td>안정성</td><td>7/10</td><td>7/10 <em>(동일)</em></td></tr>
-    <tr><td>토박스 / 와이드</td><td><strong>좁은 편 (랩 69.6mm)</strong> / 있음</td><td>표준 (랩 72.3mm) / 있음</td></tr>
-    <tr><td>부상 예방</td><td>네 항목 모두 양호</td><td><strong>족저·아킬레스·정강이 excellent</strong>, 무릎 양호</td></tr>
-    <tr><td>내구 · km당</td><td><strong>800km · 211원</strong></td><td>600km · 282원</td></tr>
-    <tr><td>적정 페이스</td><td>5:30–7:00 /km</td><td>5:00–7:00 /km</td></tr>
-  </tbody>
-</table>
-
-<p><small>수치는 우리 신발 DB의 실측·공식 스펙 기준이며 한국 공식 정가를 씁니다. 내구 km는 아웃솔 마모 기준 추정치입니다.</small></p>
-
-<h2>먼저 인정할 것 — 이 비교는 대부분 무승부입니다</h2>
-
-<p>고스트와 페가수스는 국내에서 가장 많이 팔리는 데일리 두 라인입니다. 그만큼 "뭐가 다르냐"는 질문이 많은데, 솔직하게 답하면 <strong>숫자로는 거의 안 다릅니다.</strong></p>
-
-<p>가격 같고, 무게 3g 차, 드롭 같고, 스택 1mm 차, 안정성 같고, 발볼은 토박스 실측이 다릅니다(고스트 17 69.6mm, 페가수스 42 72.3mm). 스펙표를 나란히 놓고 "이게 더 좋다"고 말할 근거가 대부분 없습니다.</p>
-
-<p>그래서 차이가 나는 <strong>두 항목</strong>에 집중하는 게 맞습니다.</p>
-
-<h2>차이 ① 수명 — 200km, 34%</h2>
-
-<p>가장 실질적인 격차입니다.</p>
-
-<ul>
-  <li><strong>고스트 17: 800km · km당 211원</strong></li>
-  <li>페가수스 42: 600km · km당 282원</li>
-</ul>
-
-<p>같은 169,000원인데 200km를 더 씁니다. 주 30km를 달리는 러너라면 <strong>약 7주치</strong> 차이입니다. 브룩스가 고스트 라인에서 전통적으로 아웃솔 내구를 강하게 잡아온 결과입니다.</p>
-
-<p>다만 이 수치는 아웃솔 마모 기준 추정치입니다. 체중·노면·주법에 따라 크게 달라지니, 단일 숫자로 교체 시점을 정하지는 마세요 — <a href="/blog/running-shoe-500km-replacement-myth-2026">500~800km 교체설이 어디서 왔는지</a>를 함께 보시면 판단이 쉬워집니다.</p>
-
-<h2>차이 ② 부상 프로필 — 페가수스가 앞선다</h2>
-
-<p>페가수스 42는 족저근막·아킬레스건·정강이 <strong>세 항목이 excellent</strong>이고 무릎만 양호입니다. 고스트 17은 네 항목 모두 양호로, 나쁘진 않지만 최상위는 아닙니다.</p>
-
-<p>반발 점수는 7 대 7로 같지만 페가수스에는 <strong>풀렝스 Air Zoom 유닛</strong>이 들어가 있고, 적정 페이스도 5:00부터로 고스트(5:30)보다 조금 빠른 쪽까지 열려 있습니다.</p>
-
-<p>반대로 고스트 17의 <strong>DNA Loft v3</strong>는 튕기기보다 부드럽게 받쳐주는 성격입니다. 쿠션 점수는 고스트 17이 9/10, 페가수스 42가 8/10으로 한 점 차이이고 결도 다릅니다.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>한 켤레를 최대한 오래</strong> → <a href="/shoes/brooks-ghost-17">고스트 17</a>(800km·km당 211원)</li>
-  <li><strong>족저근막염·아킬레스·정강이 이력</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a>(세 항목 excellent)</li>
-  <li><strong>가끔 페이스를 올린다</strong> → 페가수스 42(5:00부터)</li>
-  <li><strong>부드럽게 받쳐주는 느낌이 좋다</strong> → 고스트 17(DNA Loft v3)</li>
-  <li><strong>발볼이 넓다</strong> → 둘 다 와이드 옵션이 있지만, 표준 폭이 더 넉넉한 페가수스 42가 유리합니다</li>
-  <li><strong>더 푹신한 쪽을 원한다</strong> → <a href="/blog/asics-megablast-vs-nike-vomero-18-max-cushion-2026">메가블라스트 vs 보메로 18</a> 같은 맥스쿠션으로</li>
-  <li><strong>더 가벼운 쪽을 원한다</strong> → <a href="/blog/nike-pegasus-premium-vs-puma-velocity-nitro-4-2026">벨로시티 나이트로 4</a>(224g)도 후보</li>
-</ul>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 브랜드 성향으로 갈리진 않나요?</p>
-    <p class="faq-a">A. 갈리긴 하는데 수치로 증명하기 어려운 영역입니다. 통상 브룩스는 발을 감싸는 안정적인 핏, 나이키는 조금 더 조이는 핏으로 이야기되지만, 발 모양에 따라 정반대 평이 나옵니다. 우리 DB 기준으로는 둘 다 표준 폭에 와이드 옵션이 있어 조건이 같습니다. 이 부분만큼은 <strong>매장 착화가 데이터보다 정확</strong>합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 둘 다 무플레이트인데 요즘 트렌드에 뒤처진 건 아닌가요?</p>
-    <p class="faq-a">A. 아닙니다. 플레이트는 빠른 페이스에서 값을 하는 장치이고, 두 켤레의 적정 페이스대(5~7분)에서는 오히려 부담이 될 수 있습니다. 데일리 이지런용으로는 무플레이트가 정석에 가깝습니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 우리 신발 DB의 실측·공식 스펙(RunRepeat 랩 데이터 및 제조사 공식 발표 기반). 가격은 한국 공식 정가 기준입니다. 내구 km와 km당 비용은 아웃솔 마모 기준 추정치이며, 부상 예방 등급은 설계 특성에서 도출한 적합성 평가로 의학적 진단이 아닙니다. · 작성 2026년 8월 10일.</small></p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>무게는289g 대286g이지만 전족 스택은25.8mm 대22.0mm, 실측 드롭은10.4mm 대14mm입니다.</li><li>같은10mm공시를 실측처럼 써서 거의 같은 신발이라고 한 기존 설명을 정정했습니다.</li><li>800/600km 수명과34%비용 차이, 질환 예방 등급 우열은 근거를 확보하지 못해 철회했습니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p><figure><img src="/images/shoes/brooks/ghost17/side.webp" alt="고스트17 — 유연한 앞발·전통적 로커의 비플레이트 구조" loading="lazy"/><figcaption>고스트17 — 유연한 앞발·전통적 로커의 비플레이트 구조</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 항목</th><th>고스트17</th><th>페가수스42</th></tr></thead><tbody><tr><td>무게</td><td>289g</td><td>286g</td></tr><tr><td>힐/전족부 스택</td><td>36.2/25.8mm</td><td>36.0/22.0mm</td></tr><tr><td>실측 드롭</td><td>10.4mm</td><td>14.0mm</td></tr><tr><td>힐/전족부 SA</td><td>140/100</td><td>131/91</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>53.8/56.5%</td><td>57.1/61.2%</td></tr><tr><td>주폼 경도</td><td>36.2AC</td><td>37.6AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>95.2/69.6/24.8mm</td><td>96.5/72.3/27.0mm</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p><p>RunRepeat 무게의 일반 공시 기준은 남성US9이며 드물게 US8/8.5 검체를 자체식으로 US9에 맞추는 예외가 있습니다. 이번 검체의 실제 라벨·폭·보정 적용 여부는 미확인입니다. 한국280mm 공시와 자동으로 같은 조건이라고 보지 않습니다.</p>
+<h2>3g으로 같다고 하기 전에 앞코·전환을 보기</h2><p>위 수치는 같은 실험실의 각각 검체입니다.3g 차이는 모든 개인 사이즈에서 보장되는 차이가 아닙니다. 힐 높이는 비슷해도 전족 스택·드롭과 내부 앞코 높이는 다릅니다. 단일 무게와 공시10mm만으로 ‘거의 같은 신발’이라고 정리하면 이 차이를 놓칩니다.</p><p>고스트17은 DNA LOFT v3·유연한 전족·전통적 로커, 페가수스42는 ReactX·전장 곡선Air Zoom의 비플레이트입니다. 구조가 개인에게 얼마나 편한지, 어느 질환에 안전한지는 별도로 확인해야 합니다.</p>
+<h2>고스트도 리뷰어별 압박·접지 경험이 달랐습니다</h2><p>DOR Matt(남성US10)은 낮은 볼륨·테이퍼·힐 패딩 압박을 느꼈고 Bach는 regular size·프로필남성US9.5 조건에서 앞쪽을 편하게 느꼈습니다. Matt은 젖은 도로에서 약간 미끄러졌고 Bach는 신중히 달렸지만 대체로 무난했다고 적었습니다. 이 의견을 평균내어 모든 입문자의 안전한 선택으로 만들지 않습니다. 페가수스42의 정확 DOR 개별 리뷰는 이번 범위에서 미확인입니다.</p>
+<h2>와이드와 현재 한국 가격은 별도 확인</h2><p>고스트 공식 과거 캐시에는 남성WIDE2E·여성WIDED와 정가169,000원, 페가수스42 공식 캐시에는 남녀 일반·와이드와169,000원이 표시됐습니다. 그러나 현재 실시간 가격·선택 사이즈·결제 재고는 미확인입니다. 나이키 와이드를4E와 동일시하거나 어느 쪽이 지금 더 싼지 확정하지 않습니다.</p><p>같은 양말·인솔로 실제 구매할 규격을 비교하세요. 고스트의 더 낮은 앞코가 눌리는지, 페가수스의 다른 전환이 자연스러운지 확인할 수 있습니다. 기존 브랜드 전체의 ‘감싸는핏 대 조이는핏’이라는 통칭도 이 두 모델의 모든 사이즈에 적용하지 않습니다.</p>
+<h2>수명200km·7주·34%차이는 철회</h2><p>각각의 국소 아웃솔 마모0.8mm가 같아도 실제 주행 수명이 같거나800/600km라는 뜻은 아닙니다. 그 수명으로 계산한km당211/282원,주30km일때7주 더 쓴다는 결론은 근거가 없어 제거했습니다. 페가수스의족저근막·아킬레스·정강이excellent 우위도 확인한 모델별 임상자료가 없어 철회했습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문</h2><p><a href="https://runrepeat.com/brooks-ghost-17" target="_blank" rel="noopener noreferrer">고스트17 실험실 원문</a> · <a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">페가수스42 실험실 원문</a> · <a href="https://www.doctorsofrunning.com/brooks-ghost-17-review-2025/" target="_blank" rel="noopener noreferrer">DOR 고스트17</a> · <a href="https://brooksrunning.co.kr/product/detail.html?product_no=526" target="_blank" rel="noopener noreferrer">한국 고스트 과거 캐시 범위</a> · <a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83" target="_blank" rel="noopener noreferrer">한국 페가수스 과거 캐시 범위</a></p>
 `,
+    updatedAt: "2026-11-09",
   },
   {
     id: "asics-megablast-vs-nike-vomero-18-max-cushion-2026",

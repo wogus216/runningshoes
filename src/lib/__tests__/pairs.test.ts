@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { getAllPairs, getPairBySlug, getPairsForShoe, getPairsForCategory, PINNED_PAIRS, PINNED_SHOES } from '@/lib/pseo/pairs';
+import { getAllPairs, getPairBySlug, getPairsForShoe, getPairsForCategory, hasComparisonData, PINNED_PAIRS, PINNED_SHOES } from '@/lib/pseo/pairs';
 import { shoes } from '@/lib/data/shoes';
-import { isCompleteShoe } from '@/types/shoe';
 
 /**
  * /vs 페어는 두 번(2026-08-10 39개, 08-21 9개) 조용히 404 가 됐다 — 신발을 추가하기만 해도
@@ -30,13 +29,20 @@ describe('pseo pairs', () => {
     }
   });
 
-  it('페어는 같은 카테고리의 완성 신발끼리만 묶인다', () => {
+  it('페어는 같은 카테고리의 비교 데이터가 있는 신발끼리만 묶인다', () => {
     for (const p of pairs) {
       expect(p.a.category).toBe(p.category);
       expect(p.b.category).toBe(p.category);
-      expect(isCompleteShoe(p.a)).toBe(true);
-      expect(isCompleteShoe(p.b)).toBe(true);
+      expect(hasComparisonData(p.a)).toBe(true);
+      expect(hasComparisonData(p.b)).toBe(true);
     }
+  });
+
+  it('미확인 스택을 비운 신발도 비교에서 제외하지 않는다', () => {
+    const shoe = shoes.find((s) => hasComparisonData(s))!;
+    expect(hasComparisonData({ ...shoe, biomechanics: undefined })).toBe(true);
+    expect(hasComparisonData({ ...shoe, specs: undefined })).toBe(false);
+    expect(getPairBySlug('nike-pegasus-plus-vs-nike-rival-fly-4')).toBeDefined();
   });
 
   it('getPairBySlug 는 목록과 같은 객체를 돌려준다', () => {
@@ -46,7 +52,7 @@ describe('pseo pairs', () => {
   });
 
   it('카테고리별 조회는 limit 을 지킨다', () => {
-    const cat = shoes.find((s) => isCompleteShoe(s))!.category;
+    const cat = shoes.find((s) => hasComparisonData(s))!.category;
     expect(getPairsForCategory(cat, 3).length).toBeLessThanOrEqual(3);
     expect(getPairsForCategory(cat, 3).every((p) => p.category === cat)).toBe(true);
   });

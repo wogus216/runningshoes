@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'nike-pegasus-42',
   slug: 'nike-pegasus-42',
@@ -15,111 +16,193 @@ export const shoe: Shoe = {
   ],
   category: '입문화',
   rating: 4,
-  price: 169000,
-  description: '페가수스 시리즈의 42번째 버전. 풀 렝스 Air Zoom 유닛과 힐 스택 +2.4mm(실측) 증가로 힐 쿠셔닝이 개선됐고, 169,000원에 한국 와이드 옵션까지 정식 출시된 데일리 입문화입니다.',
-  oneliner: '16만원대 풀 렝스 Air Zoom + 와이드 옵션, 한국 입문화 가성비 최상위',
-  editorComment: '2026-04-25 RunRepeat 랩 데이터 게시로 추정에서 실측 기반으로 업데이트했습니다. 핵심 사실: ① 힐 스택 33.6→36mm(실측, +2.4mm)와 힐 SA 125→131(+6)로 힐 착지 부드러움은 확실히 개선됐고, ② 그러나 나이키 공식 "에너지 리턴 +15%"는 실측 힐 55.5%→57.1%(+1.6%p) / 전족부 61.4%→61.2%(±0)로 사실상 마케팅 수준이며, ③ 공식 스펙 전족부 27mm/드롭 10mm vs RunRepeat 실측 22mm/14mm로 5mm 불일치가 확인됐습니다. ④ 토박스도 "확대" 주장과 달리 41(72.9mm) 대비 72.3mm로 실측은 비슷하지만, 한국 와이드 옵션이 정식 출시(남성·여성 모두 169,000원)되어 발볼 4E급도 기본 SKU로 안전하게 갈 수 있게 된 게 한국 러너 관점의 진짜 개선입니다. BITR은 B티어(Design A / Value A / Performance C, "6-13km 스윗스팟의 원 트릭 포니"), RTR은 8.79/10("더 부드럽지만 286g 무게 열세")으로 평가했습니다. 169,000원 + 와이드 + 풀 렝스 Air Zoom 조합은 동급(노바블라스트 5, 클리프턴 10) 대비 가성비 우위지만, 페이스 훈련이나 하프 이상 롱런에는 보메로 18이나 줌 플라이 6을 분리하세요.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 72.3mm로 평균(73.2mm)보다 약간 좁고 랩이 "it tapers notably"라 평가해 발볼이 좁거나 보통인 러너에게 맞고, 광폭이면 한국 공식 출시된 와이드 옵션(동일 169,000원)을 선택하세요. 정가 169,000원에 예상 수명 500~700km(추정) 기준 km당 약 240~340원입니다. 같은 입문화 카테고리로는 페가수스 41·클리프톤 10이 대안입니다.',
-  tags: ['입문화', '데일리 러닝', 'Air Zoom', '2026 신상', '와이드 옵션'],
-
+  description: 'ReactX · 전장 곡선 Air Zoom · 비플레이트 구조의 페가수스 42. RunRepeat 실험실 검체 286g·36/22mm. 한국 현재 정가 미확인.',
+  oneliner: 'ReactX · 전장 곡선 Air Zoom · 비플레이트 · 286g (RunRepeat 실험실 검체)',
+  editorComment: "2026-11-09 원문 재확인. 한국 공식 캐시에는 남성 IB1873-003·IM8332-100,여성 IB1881-007,남성와이드 IR1228-001·여성와이드 IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재 가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm 설명을 내부너비 증가로 옮기지 않습니다. 한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm 입니다. RR 브랜드 37/27mm·10mm·297/243g(기준 사이즈미확인),RR286g·36/22mm·14mm 를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다. 제조사의 41대비 에너지리턴최소 15% 개선 주장은 비교시험조건 미확인입니다. RR 힐 57.1/전족 61.2% 와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를 부드러움·무릎보호로,국소마모 0.8mm 를 600km수명으로 바꾸지 않습니다. 일반 US9무게정책에는 드문 US8/8.5의 US9환산예외가 있어 실제라벨 미확인을 남깁니다. 정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호 등급은 확인한 원문에서 공통 기준으로 입증되지 않아 철회했습니다. RR 내부 최광폭 96.5mm·엄지 72.3mm·높이 27.0mm 는 한국 와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '입문화',
+    '데일리 러닝',
+    'Air Zoom',
+    '2026 신상',
+    '와이드 옵션',
+  ],
   specs: {
     weight: 286,
     cushioning: 8,
     responsiveness: 7,
     stability: 7,
-    drop: 10,
-    durability: 600,
+    drop: 14,
   },
-
   biomechanics: {
     stackHeight: {
-      heel: 37,
-      forefoot: 27,
+      heel: 36,
+      forefoot: 22,
     },
-    drop: 10,
+    drop: 14,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'ReactX Foam + 풀 렝스 Air Zoom',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: 'ReactX · 전장 곡선 Air Zoom · 비플레이트',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'excellent',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'good',
-    shinSplints: 'excellent',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'fair',
   },
-
   targetUsers: {
-    recommended: ['러닝 입문자 (쿠셔닝 + 안정성 균형)', '일상 5-13km 데일리 트레이닝', '페가수스 41 업그레이드 원하는 러너', '발볼 넓어 와이드 SKU 필요한 러너 (정식 출시)', '무릎 보호 원하는 뒤꿈치 착지 러너', '가성비 좋은 올라운더 찾는 분'],
-    notRecommended: ['하프마라톤 이상 롱런 위주 러너', '스피드/템포 훈련 전용화 필요', '초경량 레이싱화 찾는 분', '주 100km+ 고볼륨 훈련 러너', '강한 반발력 슈퍼슈즈 원하는 상급자'],
+    recommended: [
+      "전장 Air Zoom·ReactX의 전환을 시착 비교하려는 러너",
+      '실제일반/와이드상품의 앞코·발등·고정을 확인하려는 러너',
+    ],
+    notRecommended: [
+      "직접 착화에서 압박·전환불편이 해결되지 않는 경우",
+      "와이드명칭만으로 4E발 적합을보장받으려는 경우",
+    ],
   },
-
-  features: ['풀 렝스 곡선형 Air Zoom 유닛 (전작 듀얼 포드 개선)', '36mm 힐 스택 실측 (41 대비 +2.4mm 부드러움)', '한국 와이드 옵션 정식 출시 (남성·여성)', 'ReactX 폼 + 워플 아웃솔 (그립력 개선)', 'BITR Value A등급 (16만원대 가성비 최상위)', '충격흡수 힐 131 SA (RunRepeat 실측)', '에너지 리턴 전족부 61.2% (RunRepeat 실측)'],
-
+  features: [
+    'ReactX · 전장 곡선 Air Zoom · 비플레이트',
+    '286g · 36/22mm · 드롭 14mm (RunRepeat 실험실 검체)',
+    '플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.',
+    "RR 내부 최광폭 96.5mm·엄지 72.3mm·높이 27.0mm 는 한국 와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.",
+  ],
   priceAnalysis: {
-    msrp: 169000,
-    streetPrice: 145000,
-    costPerKm: 282,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
+    alternatives: [
+      'nike-pegasus-41',
+      'asics-gel-nimbus-28',
+      'new-balance-880-v15',
+      'hoka-clifton-10',
+    ],
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 80,
-      text: '페가수스 42는 2026-04-25 RunRepeat 랩 데이터 공개로 변화의 실체가 드러난 버전입니다. 핵심은 "힐은 진짜 개선, 전족부는 마케팅". 힐 스택이 33.6→36mm(실측, +2.4mm) 늘고 힐 SA가 125→131(+6)로 부드러워졌으며, ReactX 폼 + 풀 렝스 Air Zoom 조합이 41의 듀얼 포드 대비 안정적인 힐 착지를 만듭니다. 그러나 나이키가 강조한 "에너지 리턴 +15%"는 실측 기준 힐 +1.6%p / 전족부 0%p로 사실상 마케팅 수준이고, 공식 스펙 전족부 27mm/드롭 10mm vs RunRepeat 실측 22mm/14mm의 5mm 불일치도 확인됐습니다. 한국 러너 입장에서 진짜 의미 있는 변화는 두 가지: ① 169,000원에 한국 와이드 옵션이 남성·여성 모두 정식 출시되어 발볼 4E급도 기본 SKU로 안전하게 갈 수 있고, ② 36mm 힐 스택 + ReactX + Air Zoom 조합이 한강 아스팔트 5-10km 데일리에서 무릎 보호를 41보다 확실하게 잡아준다는 점입니다. BITR은 B티어(Design A / Value A / Performance C, "원 트릭 포니, 6-13km 스윗스팟"), RTR은 8.79/10("더 부드럽지만 286g 무게 열세")으로 평가하며 둘 다 "입문급 데일리 트레이너 가성비 최상위"라는 포지션에 동의했습니다. 286g 무게와 평범한 에너지 리턴 때문에 페이스 훈련이나 하프 이상 롱런은 부적합하므로, 데일리 입문화 1켤레로 16만원대 가성비를 원하면 페가수스 42, 같은 가격대에서 더 가벼운 반발감을 원하면 노바블라스트 5나 페가수스 플러스를 고려하세요.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/nike-pegasus-42',
+      text: "한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm 입니다. RR 브랜드 37/27mm·10mm·297/243g(기준 사이즈미확인),RR286g·36/22mm·14mm 를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다. 제조사의 41대비 에너지리턴최소 15% 개선 주장은 비교시험조건 미확인입니다. RR 힐 57.1/전족 61.2% 와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를 부드러움·무릎보호로,국소마모 0.8mm 를 600km수명으로 바꾸지 않습니다. 일반 US9무게정책에는 드문 US8/8.5의 US9환산예외가 있어 실제라벨 미확인을 남깁니다.",
     },
     {
-        userType: '세대 비교 — 41에서 넘어올 가치가 있나',
-        text: '전작 41의 약점이던 전족부 반발이 개선된 세대입니다. 41은 힐 중심 쿠션이라 중족~전족부 착지에서 퍽퍽한 감각이 있었는데, 42는 풀렝스 Air Zoom으로 그 구간에도 반발이 생겼습니다. 5km 안팎의 이지런에서 체감 차이가 가장 큽니다. 다만 286g의 무게는 그대로라 10km를 넘기면 여전히 느껴지고, 가격도 1만원가량 올랐습니다. 즉 41을 쓰고 있고 전족부 감각에 불만이 없었다면 세일가의 41이 비용 면에서 낫고, 전족부 퍽퍽함이 걸렸다면 넘어올 이유가 됩니다.',
-      },
-    {
-        userType: '예상 적합 — 5~10km 위주 데일리 입문',
-        text: '5~10km를 주력으로 하는 입문 단계의 데일리 트레이너입니다. 10mm 드롭이라 뒤꿈치 착지가 익숙한 초기 단계에서 무리가 없고, 힐 37mm 스택이 아스팔트 충격을 받아냅니다. 286g으로 가벼운 편은 아니지만 속도 훈련이 목적이 아니라면 체감 단점은 크지 않습니다. 16만원대로 주요 브랜드 데일리 중 진입 가격대가 낮은 축이라, 아직 러닝을 계속할지 확신이 없는 단계에서도 부담이 적습니다. 반대로 템포런이나 인터벌 비중을 늘릴 계획이라면 더 가벼운 모델을 함께 검토하세요.',
-      },
-    {
-        userType: '예상 적합 — 발볼 4E급 러너',
-        text: '발볼이 매우 넓은 러너에게 이 세대의 실질적 변화는 라스트가 아니라 유통입니다. RunRepeat 실측 토박스는 72.3mm로 전작 41(72.9mm)과 사실상 같지만, 42는 출시 시점부터 한국 나이키 공식몰에 남성·여성 와이드가 표준가 169,000원으로 정식 편성됐습니다. 전작에서 와이드 SKU를 구하기 어려웠던 문제가 해소된 셈이라, 4E급이라면 표준이 아닌 와이드를 전제로 보는 것이 맞습니다. 힐 36mm 스택에 ReactX와 Air Zoom을 조합해 뒤꿈치 착지의 충격을 분산하고, 드롭은 공식 10mm·실측 14mm로 입문 단계에 무리가 없습니다.',
-      },
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/nike-pegasus-42',
+      text: "정확한 페가수스 42의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. Plus2의 비교문구를 42의 착화 경험으로 채우지 않았습니다. 기존 5~13km상한·하프이상비추천·주 100km금지와 임상보호 등급은 확인한 원문에서 공통 기준으로 입증되지 않아 철회했습니다.",
+    },
   ],
-
   detailedSpecs: {
-    weight: '286g (RunRepeat 실측, US M9 기준 — 41의 281g 대비 +5g)',
-    stackHeight: '힐 37mm / 포어풋 27mm (나이키 공식) — RunRepeat 실측 36/22mm, 전족부 5mm 불일치',
-    drop: '10mm (나이키 공식) — RunRepeat 실측 14mm',
-    midsole: 'ReactX 폼 + 풀 렝스 곡선형 Air Zoom 유닛 (전작 듀얼 포드 구성에서 개선)',
-    plate: '없음 (자연스러운 발 움직임, Air Zoom으로 반발력 보강)',
-    outsole: '고무 + 업데이트된 와플 패턴 (그립력·전환 개선)',
-    upper: '신규 경량 엔지니어드 메쉬',
-    width: '좁음(표준 사이즈 기준) — RunRepeat 랩 토박스 72.3mm(평균 73.2mm, -0.9mm), 랩 본문 "The toebox keeps a classic shape, which means it tapers notably" — 한국 와이드 옵션 정식 출시 (남성·여성, 동일 169,000원)',
-    durability: '600km 이상 예상 (41 아웃솔 0.9mm 마모 깊이 기준, 구성 동일)',
-    price: '₩169,000 (MSRP) / 세일 시 ₩145,000~',
-    costPerKm: '약 ₩282/km (600km 기준)',
-    footType: '평발 OK / 높은 아치 OK / 와이드 옵션으로 발볼 4E급도 가능',
-    landingPattern: '뒤꿈치~미드풋 착지 (드롭 10mm 공식 / 14mm 실측)',
+    weight: "286g (RunRepeat 실험실 검체). 한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm 입니다. RR 브랜드 37/27mm·10mm·297/243g(기준 사이즈미확인),RR286g·36/22mm·14mm 를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.",
+    stackHeight: '36/22mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: "14mm (RunRepeat 실험실 검체). 한국 공시남성약 300g(280mm)·여성 243g(250mm),드롭 10mm 입니다. RR 브랜드 37/27mm·10mm·297/243g(기준 사이즈미확인),RR286g·36/22mm·14mm 를 구분합니다. 실제검체라벨·보정적용 여부는 미확인입니다.",
+    midsole: "ReactX · 전장 곡선 Air Zoom · 비플레이트. 주폼 37.6AC, 힐/전족부 SA 131/91·에너지 리턴 57.1/61.2%. 제조사의 41대비 에너지리턴최소 15% 개선 주장은 비교시험조건 미확인입니다. RR 힐 57.1/전족 61.2% 와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를 부드러움·무릎보호로,국소마모 0.8mm 를 600km수명으로 바꾸지 않습니다. 일반 US9무게정책에는 드문 US8/8.5의 US9환산예외가 있어 실제라벨 미확인을 남깁니다.",
+    plate: '플레이트 없음. 전장 Air Zoom을 카본 플레이트로 해석하지 않습니다.',
+    width: "RR 내부 최광폭 96.5mm·엄지 부위 72.3mm·높이 27mm. RR 내부 최광폭 96.5mm·엄지 72.3mm·높이 27.0mm 는 한국 와이드 검체라고 확인되지 않았습니다. 과거와이드상품을 모든 4E발의 안전보장으로 쓰지 않습니다.",
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: "한국 공식 캐시에는 남성 IB1873-003·IM8332-100,여성 IB1881-007,남성와이드 IR1228-001·여성와이드 IH1847-100 정가 169,000원이 표시됐습니다. 자료는지난주~지난달 캐시여서 현재 가격·판매규격·재고는 미확인입니다. 와이드의 2E/4E문자와 실제폭증가는 미확인이고 둘레 6.35mm 설명을 내부너비 증가로 옮기지 않습니다.",
   },
-
-  similarShoes: ['nike-pegasus-41', 'adidas-supernova-rise-2', 'asics-gel-nimbus-28', 'new-balance-880-v15', 'hoka-clifton-10'],
-  relatedPosts: [
-    { slug: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026', title: '페가수스 42 vs 플러스 2 — 5만원 더 내고 얻는 것과 잃는 것' },
-    { slug: 'pegasus-42-vs-premium-daily-2026', title: '페가수스 42 vs 프리미엄 — 11만원 차이로 와이드가 사라진다' },
-    { slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026', title: '페가수스 42 vs 고스트 17 — 스펙이 같아서 수명이 가른다' },
-    { slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026', title: '페가수스 42 vs 노바블라스트 6 — 데일리 대결' },
-    { slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026', title: '웨이브 라이더 29 vs 페가수스 42 — 같은 값 대결' },
-    { slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026', title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결' },
-    { slug: 'nike-pegasus-41-vs-42-comparison', title: '페가수스 41 vs 42 — 세대 비교' },
-    { slug: 'nike-pegasus-42-review', title: '페가수스 42 심층 후기' },
-    { slug: 'nike-pegasus-premium-vs-vomero-18', title: '페가수스 프리미엄 vs 보메로 18' },
+  similarShoes: [
+    'nike-pegasus-41',
+    'adidas-supernova-rise-2',
+    'asics-gel-nimbus-28',
+    'new-balance-880-v15',
+    'hoka-clifton-10',
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/xG0f5GZl' }, { store: '쿠팡', url: 'https://link.coupang.com/a/h6ZkYWIxG0' }],
+  relatedPosts: [
+    {
+      slug: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026',
+      title: '페가수스 42 vs 플러스 2 — 5만원 더 내고 얻는 것과 잃는 것',
+    },
+    {
+      slug: 'pegasus-42-vs-premium-daily-2026',
+      title: '페가수스 42 vs 프리미엄 — 11만원 차이로 와이드가 사라진다',
+    },
+    {
+      slug: 'brooks-ghost-17-vs-nike-pegasus-42-daily-2026',
+      title: '페가수스 42 vs 고스트 17 — 스펙이 같아서 수명이 가른다',
+    },
+    {
+      slug: 'nike-pegasus-42-vs-asics-novablast-6-daily-2026',
+      title: '페가수스 42 vs 노바블라스트 6 — 데일리 대결',
+    },
+    {
+      slug: 'mizuno-wave-rider-29-vs-nike-pegasus-42-daily-2026',
+      title: '웨이브 라이더 29 vs 페가수스 42 — 같은 값 대결',
+    },
+    {
+      slug: 'pegasus-42-vs-nimbus-28-daily-cushion-2026',
+      title: '페가수스 42 vs 젤 님버스 28 — 데일리 대결',
+    },
+    {
+      slug: 'nike-pegasus-41-vs-42-comparison',
+      title: '페가수스 41 vs 42 — 세대 비교',
+    },
+    {
+      slug: 'nike-pegasus-42-review',
+      title: '페가수스 42 심층 후기',
+    },
+    {
+      slug: 'nike-pegasus-premium-vs-vomero-18',
+      title: '페가수스 프리미엄 vs 보메로 18',
+    },
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/xG0f5GZl',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/h6ZkYWIxG0',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 IB1873-003 · 남성',
+        url: 'https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-XuHjeH83',
+        note: "과거표시정가 169,000원. 캐시목록은 현재옵션·재고보장 아님.",
+      },
+      {
+        label: '한국 공식 캐시 IM8332-100 · 남성',
+        url: 'https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IM8332-100',
+        note: "과거표시정가 169,000원. 캐시목록은 현재옵션·재고보장 아님.",
+      },
+      {
+        label: '한국 공식 캐시 IB1881-007 · 여성',
+        url: 'https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-wsTF7yIV/IB1881-007',
+        note: "과거표시정가 169,000원. 캐시목록은 현재옵션·재고보장 아님.",
+      },
+      {
+        label: '한국 공식 캐시 IR1228-001 · 와이드',
+        url: 'https://www.nike.com/kr/t/%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-hzTwdMlw/IR1228-001',
+        note: "과거표시정가 169,000원. 캐시목록은 현재옵션·재고보장 아님.",
+      },
+      {
+        label: '한국 공식 캐시 IH1847-100 · 와이드',
+        url: 'https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-42-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94%EC%99%80%EC%9D%B4%EB%93%9C-wsTF7yIV/IH1847-100',
+        note: "과거표시정가 169,000원. 캐시목록은 현재옵션·재고보장 아님.",
+      },
+      {
+        label: "Nike 공식 15% 개선 주장",
+        url: 'https://www.nike.com/kr/a/pegasus-42-release-date/',
+        note: "제조사자체주장. 비교시험조건 미확인으로 RR 절대리턴과 직접 비교하지 않음.",
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/nike-pegasus-42',
+        note: "공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 286g·36/22mm·14mm. 제조사의 41대비 에너지리턴최소 15% 개선 주장은 비교시험조건 미확인입니다. RR 힐 57.1/전족 61.2% 와 측정조건이 다르므로 제조사주장이 입증·반박됐다고 단정하지 않습니다. SA를 부드러움·무릎보호로,국소마모 0.8mm 를 600km수명으로 바꾸지 않습니다. 일반 US9무게정책에는 드문 US8/8.5의 US9환산예외가 있어 실제라벨 미확인을 남깁니다.",
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "AC·HA·HC, SA·에너지 리턴, BR·구방식 1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.",
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };

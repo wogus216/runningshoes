@@ -1,6 +1,5 @@
 import type { Shoe } from '@/types/shoe';
 import { shoes as allShoes } from '@/lib/data/shoes';
-import { isCompleteShoe } from '@/types/shoe';
 
 export type ShoePair = {
   slug: string; // 'nike-pegasus-41-vs-asics-gt-2000-14'
@@ -10,6 +9,12 @@ export type ShoePair = {
 };
 
 const TOP_PER_CATEGORY = 10; // 10C2=45 → 6 categories × 45 = 270 pairs max
+
+/** 미확인 스택을 비워도 기존 비교 URL은 유지한다. 표는 생체역학 미확인 값을 처리한다. */
+export function hasComparisonData(shoe: Shoe): boolean {
+  return !!(shoe.specs && shoe.koreanFootFit && shoe.targetUsers &&
+    shoe.priceAnalysis && shoe.features && shoe.reviews);
+}
 
 /**
  * 한 번 색인된 페어 URL은 계속 살려 둔다.
@@ -107,7 +112,7 @@ export const PINNED_SHOES: readonly string[] = [
 function topShoesByCategory(): Map<string, Shoe[]> {
   const m = new Map<string, Shoe[]>();
   for (const s of allShoes) {
-    if (!isCompleteShoe(s)) continue;
+    if (!hasComparisonData(s)) continue;
     if (!m.has(s.category)) m.set(s.category, []);
     m.get(s.category)!.push(s);
   }
@@ -141,7 +146,7 @@ function makePair(x: Shoe, y: Shoe, category: string): ShoePair {
 function restorePinnedPairs(): ShoePair[] {
   const bySlug = new Map<string, Shoe>();
   for (const s of allShoes) {
-    if (isCompleteShoe(s)) bySlug.set(s.slug, s);
+    if (hasComparisonData(s)) bySlug.set(s.slug, s);
   }
 
   const out: ShoePair[] = [];

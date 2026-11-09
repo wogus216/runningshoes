@@ -103,5 +103,11 @@ describe('검증되지 않은 비교 주장 차단', () => {
     expect(JSON.stringify(verdicts)).not.toContain('999g');
     const noPrice = { ...a, price: undefined };
     expect(buildFaqs(noPrice, b).some(f => f.question.includes('가성비'))).toBe(false);
+    const noBiomechanics = { ...a, biomechanics: undefined };
+    const unknownRows = specRows(noBiomechanics, b);
+    for (const label of ['힐 스택', '전족부 스택', '카본 보강 구조']) {
+      expect(unknownRows.find(row => row.label === label)?.a).toBe('-');
+    }
+    expect(buildNarrative(a, b, a.category).join(' ')).not.toContain('더 가볍게 측정됐습니다');
   });
 });

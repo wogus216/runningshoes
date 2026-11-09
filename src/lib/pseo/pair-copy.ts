@@ -108,7 +108,7 @@ export function buildNarrative(a: Shoe, b: Shoe, category: string): string[] {
   const diffs: string[] = [];
   const wa = a.specs?.weight, wb = b.specs?.weight;
   if (wa && wb) {
-    if (Math.abs(wa - wb) >= 10) diffs.push(`무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 더 가볍게 측정됐습니다`);
+    if (Math.abs(wa - wb) >= 10) diffs.push(`표기 무게는 ${withJosa(wa < wb ? an : bn, '이/가')} ${Math.abs(wa - wb)}g 낮습니다. 공시·실측·기준 사이즈는 각 상세 출처를 확인하세요`);
     else diffs.push(`무게는 ${wa}g 대 ${wb}g로 거의 같습니다`);
   }
   const ca = a.specs?.cushioning, cb = b.specs?.cushioning;
@@ -205,8 +205,8 @@ export function specRows(a: Shoe, b: Shoe) {
     },
     {
       label: '카본 보강 구조',
-      a: a.biomechanics?.carbonPlate ? '있음' : '없음',
-      b: b.biomechanics?.carbonPlate ? '있음' : '없음',
+      a: a.biomechanics?.carbonPlate === undefined ? '-' : a.biomechanics.carbonPlate ? '있음' : '없음',
+      b: b.biomechanics?.carbonPlate === undefined ? '-' : b.biomechanics.carbonPlate ? '있음' : '없음',
     },
     {
       label: '쿠셔닝',
