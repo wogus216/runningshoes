@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-ride-19',
   slug: 'saucony-ride-19',
@@ -15,98 +16,149 @@ export const shoe: Shoe = {
   ],
   category: '입문화',
   rating: 4,
-  status: 'new',
   price: 179000,
-  description: '써코니의 대표 데일리 트레이너. 개선된 SCF PWRRUN+ 폼으로 전작보다 부드럽고 반응성 좋은 주행감을 제공하며, 넓어진 전족부·힐 플랫폼으로 안정감을 보강했습니다.',
-  oneliner: '개선된 PWRRUN+와 넓어진 플랫폼, 쿠션을 키운 데일리 트레이너',
-  editorComment: '라이드 19는 전작(라이드 18) 대비 SCF PWRRUN+ 폼을 개선했습니다(브랜드 설명은 "더 가볍고, 부드럽고, 반응성 좋은" 착지감). RunRepeat 실측으로 전족부 미드솔 폭은 127.1mm(라이드 18 122.1mm), 힐은 100.7mm(91.9mm)로 넓어졌지만 토박스는 72.8mm로 전작(73.0mm)과 거의 같습니다. 무게는 실측 278g(남성 US 9 기준)으로 전작(255g)보다 무거워졌고, 랩도 "Heavier than previous version"을 단점으로 꼽았습니다. 17만 9천원으로 라이드 18(15만 9천원)보다 2만원 올랐지만, 미국 기준 $145로 같은 카테고리 중 합리적인 가격입니다. 와이드 옵션 제공으로 발볼 걱정을 덜어주며, 주 3-5회 데일리 훈련에 가장 신뢰할 수 있는 중립화입니다. 500km에서 무조건 교체라는 통념의 출처는 1985년 기계 실험입니다 — 요즘 소재에 재검증된 적이 없는 숫자인 데다, 이 신발의 질소 주입 TPU 계열은 폼 중에서도 내구가 긴 축입니다. 700km 표기를 믿고 아웃솔 마모로 판단하세요.\n\n사이즈·구매 가이드: 토박스가 표준 폭이라 발볼이 보통인 러너에게 잘 맞으며, 넓은 발볼이라면 와이드(2E) 옵션을 선택하세요. 정가 179,000원에 예상 수명 600~800km(추정) 기준 km당 약 220~300원으로 입문화 중 내구성 대비 가성비 최상입니다. 같은 입문·데일리화로는 페가수스 41·고스트 17이 대안입니다.',
-  tags: ['입문화', '데일리', '쿠셔닝', '중립'],
-
+  description: '재배합 PWRRUN+ (eTPU) · 비플레이트 구조의 라이드 19. RunRepeat 실험실 검체 278g·38.7/30.2mm. 한국 확인 가격 179,000원.',
+  oneliner: '재배합 PWRRUN+ (eTPU) · 비플레이트 · 278g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-09 원문 재확인. 한국 남성 와이드 IVORY/GUM S21056-102는 W(와이드), 정가179,000원·확인시 할인152,150원이며250~285mm 선택 가능·290~300mm는 품절 표시였습니다. W를 미확인2E 문자로 바꾸지 않습니다. 여성 와이드 카테고리 카드는 확인했지만 정확 SKU·현재 사이즈 상세는 미확인입니다. DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다. 37.1AC는 폼 경도,BR74·건조율54%는 다른 시험입니다. 과거기계실험·다른TPU소재연구를 이 모델700km 수명·무릎 보호·가성비1위로 전용하지 않습니다. 제조사 개선 설명을 모든18사용자의 업그레이드 체감으로 보장하지 않습니다. DOR David(남성 US9.5)는 정사이즈·앞발 약간 여유와 낮은 앞발·중족 볼륨을 느꼈습니다. 메시·두꺼운 혀·고정이 편했고 힐 슬립이나 본인의 카운터 마찰은 없었습니다. 이전 Ride보다 속도 활용성이 적어 본인의 쉬운 날을 선호했다고 적었습니다. 높은 기계 리턴이 이 개인 경험을 취소하지 않습니다. RR 내부 최광폭96.3mm·엄지72.8mm·높이28.8mm는 한국 와이드 검체라고 확인된 값이 아닙니다. 외부 전족 플랫폼127.1mm와 내부 치수를 혼동하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '데일리',
+    '쿠셔닝',
+    '중립',
+  ],
   specs: {
     weight: 278,
     cushioning: 8,
     responsiveness: 9,
     stability: 6,
-    drop: 8,
-    durability: 700,
+    drop: 8.5,
   },
-
   biomechanics: {
-    stackHeight: { heel: 38.7, forefoot: 30.2 },
+    stackHeight: {
+      heel: 38.7,
+      forefoot: 30.2,
+    },
     drop: 8.5,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'SCF PWRRUN+',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: '재배합 PWRRUN+ (eTPU) · 비플레이트',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
+    wideOptions: true,
   },
-
   targetUsers: {
-    recommended: ['입문 러너', '데일리 트레이닝', '중립 발', '편안한 쿠셔닝 선호'],
-    notRecommended: ['레이싱', '빠른 템포 러닝', '과내전 러너'],
+    recommended: [
+      'PWRRUN+·완만한 로커의 전환을 비교하려는 러너',
+      '한국 실제 W와이드의 발등·힐 고정을 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 발등 압박·고정 문제가 해결되지 않는 경우',
+      '넓은 아웃솔만으로 넓은 발의 공간을 보장받으려는 경우',
+    ],
   },
-
-  features: ['개선된 SCF PWRRUN+ 미드솔', 'FORMFIT 기술', '10mm 넓어진 전족부', '와이드 옵션 제공', '8mm 드롭'],
-
+  features: [
+    '재배합 PWRRUN+ (eTPU) · 비플레이트',
+    '278g · 38.7/30.2mm · 드롭 8.5mm (RunRepeat 실험실 검체)',
+    '플레이트 없음. 넓은 외부 플랫폼과 내부 발 공간을 구분합니다.',
+    'RR 내부 최광폭96.3mm·엄지72.8mm·높이28.8mm는 한국 와이드 검체라고 확인된 값이 아닙니다. 외부 전족 플랫폼127.1mm와 내부 치수를 혼동하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 179000,
-    costPerKm: 256,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'brooks-ghost-17'],
+    alternatives: [
+      'nike-pegasus-41',
+      'asics-gel-nimbus-28',
+      'brooks-ghost-17',
+    ],
   },
-
   detailedSpecs: {
-    weight: '278g (RunRepeat 실측, 남성 US 9 기준) · 기존 표기 255g(출처 불명)',
-    stackHeight: '힐 38.7mm / 포어풋 30.2mm (RunRepeat 실측) · 기존 표기 36/28mm',
-    drop: '8.5mm (RunRepeat 실측) · 브랜드 공식 8mm',
-    midsole: 'SCF PWRRUN+ (개선된 질소 주입 TPU)',
-    plate: '없음',
-    outsole: 'PWRTRAC 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 72.8mm(평균 73.2mm), 랩: "close to the average range for running shoes" · 와이드 — 한국 공식몰 남녀 와이드 판매(2026-10-20 확인)',
-    durability: '700km',
-    price: '₩179,000',
-    costPerKm: '약 ₩256/km (700km 기준)',
-    footType: '중립',
-    landingPattern: '후족부/중족부 착지',
+    weight: '278g (RunRepeat 실험실 검체). DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다.',
+    stackHeight: '38.7/30.2mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.5mm (RunRepeat 실험실 검체). DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다.',
+    midsole: '재배합 PWRRUN+ (eTPU) · 비플레이트. 주폼 37.1AC, 힐/전족부 SA 132/118·에너지 리턴 66.7/70.7%. 37.1AC는 폼 경도,BR74·건조율54%는 다른 시험입니다. 과거기계실험·다른TPU소재연구를 이 모델700km 수명·무릎 보호·가성비1위로 전용하지 않습니다. 제조사 개선 설명을 모든18사용자의 업그레이드 체감으로 보장하지 않습니다.',
+    plate: '플레이트 없음. 넓은 외부 플랫폼과 내부 발 공간을 구분합니다.',
+    width: 'RR 내부 최광폭 96.3mm·엄지 부위 72.8mm·높이 28.8mm. RR 내부 최광폭96.3mm·엄지72.8mm·높이28.8mm는 한국 와이드 검체라고 확인된 값이 아닙니다. 외부 전족 플랫폼127.1mm와 내부 치수를 혼동하지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 남성 와이드 IVORY/GUM S21056-102는 W(와이드), 정가179,000원·확인시 할인152,150원이며250~285mm 선택 가능·290~300mm는 품절 표시였습니다. W를 미확인2E 문자로 바꾸지 않습니다. 여성 와이드 카테고리 카드는 확인했지만 정확 SKU·현재 사이즈 상세는 미확인입니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 85,
-      text: '라이드 19는 전작의 장점을 유지하면서 쿠셔닝을 부드럽게 개선한 안정적 업데이트입니다. 개선된 SCF PWRRUN+ 폼은 경도 37.1 AC(RunRepeat 실측)로 전작(41.3 AC)보다 덜 단단해졌습니다. 278g(실측)에 38.7mm 힐 스택, 8.5mm 드롭 구성으로 무릎 보호가 충분하고, 힐 132 SA 충격흡수와 전족부 에너지 리턴 70.7%(RunRepeat 실측)를 갖췄습니다. 전족부 플랫폼은 넓어졌지만 토박스는 72.8mm로 평균 수준이라, 발볼이 넓다면 한국 공식몰에서 파는 와이드를 고르는 편이 좋습니다. 17만 9천원에 700km 내구성이면 km당 약 256원으로 가성비 최고 수준이고, 통기성은 74 BR(평균 75 BR)로 평균 수준입니다. 라이드 18 사용자라면 더 부드러워진 쿠셔닝을 체감할 수 있어 업그레이드 가치가 충분합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-ride-19',
+      text: 'DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다. 37.1AC는 폼 경도,BR74·건조율54%는 다른 시험입니다. 과거기계실험·다른TPU소재연구를 이 모델700km 수명·무릎 보호·가성비1위로 전용하지 않습니다. 제조사 개선 설명을 모든18사용자의 업그레이드 체감으로 보장하지 않습니다.',
     },
     {
-        userType: '세대 비교 — 라이드 18에서 넘어오는 경우',
-        text: '전작 18과 비교하면 핏에서 가장 큰 변화가 있습니다. 전족부 미드솔 폭이 127.1mm(RunRepeat 실측, 라이드 18 122.1mm)로 넓어져 착지 플랫폼이 커졌고, 와이드 옵션까지 감안하면 발볼 넓은 러너의 선택지가 뚜렷하게 개선된 세대입니다. 착지 감각도 전작보다 부드러워져 관절에 오는 자극이 완만해졌습니다. 다만 무게는 실측 278g으로 전작보다 무거워졌고, 예상 수명 600~800km(추정) 기준 km당 약 220~300원이라 데일리 중 운용 비용이 가장 낮은 편입니다. 반대로 단단한 반발을 선호했다면 전작 쪽 감각이 맞을 수 있습니다.',
-      },
-    {
-        userType: '세대 비교 — 18보다 부드럽고 넓어졌다',
-        text: '전작 18과 비교하면 두 가지가 바뀌었습니다. 힐 스택이 38.7mm(RunRepeat 실측, 라이드 18 35.0mm)로 높아져 장거리 쿠션이 늘었고, 플랫폼이 넓어져 착지가 안정적입니다. 대신 무게는 278g으로 23g 늘었습니다. 빠른 템포런에는 더 가벼운 신발을 따로 두는 편이 맞습니다. km당 약 256원으로 데일리 중 운용 비용이 낮은 축입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-ride-19-review-2026/',
+      text: 'DOR David(남성 US9.5)는 정사이즈·앞발 약간 여유와 낮은 앞발·중족 볼륨을 느꼈습니다. 메시·두꺼운 혀·고정이 편했고 힐 슬립이나 본인의 카운터 마찰은 없었습니다. 이전 Ride보다 속도 활용성이 적어 본인의 쉬운 날을 선호했다고 적었습니다. 높은 기계 리턴이 이 개인 경험을 취소하지 않습니다.',
+    },
   ],
-
-  similarShoes: ['saucony-ride-18', 'nike-pegasus-41', 'brooks-ghost-17', 'asics-gel-nimbus-28'],
+  similarShoes: [
+    'saucony-ride-18',
+    'nike-pegasus-41',
+    'brooks-ghost-17',
+    'asics-gel-nimbus-28',
+  ],
   relatedPosts: [
-    { slug: 'saucony-ride-18-vs-19-comparison', title: '라이드 18 vs 19 — 세대 비교' },
-    { slug: 'saucony-running-shoes-lineup-tier-guide-2026', title: '써코니 러닝화 계급도' },
-    { slug: 'running-shoe-500km-replacement-myth-2026', title: '"500km 교체설"의 진실 — 소재별 수명' },
+    {
+      slug: 'saucony-ride-18-vs-19-comparison',
+      title: '라이드 18 vs 19 — 세대 비교',
+    },
+    {
+      slug: 'saucony-running-shoes-lineup-tier-guide-2026',
+      title: '써코니 러닝화 계급도',
+    },
+    {
+      slug: 'running-shoe-500km-replacement-myth-2026',
+      title: '"500km 교체설"의 진실 — 소재별 수명',
+    },
   ],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZkPEWQq4' }],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZkPEWQq4',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 MEN · S21056-102 · W(와이드)',
+        url: 'https://www.saucony.co.kr/product/detail.html?product_no=319&cate_no=120&display_group=1',
+        note: '확인 상품의 정가·당시 할인·사이즈별 상태만 적용. 결제재고 보장 아님.',
+      },
+      {
+        label: '한국 카테고리 카드 확인 범위',
+        url: 'https://www.saucony.co.kr/product/list.html?cate_no=120',
+        note: '카드는 상품 상세의 SKU·재고 확인과 구분. 전체 목록을 모두 검사한 것은 아님.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-ride-19',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 278g·38.7/30.2mm·8.5mm. 37.1AC는 폼 경도,BR74·건조율54%는 다른 시험입니다. 과거기계실험·다른TPU소재연구를 이 모델700km 수명·무릎 보호·가성비1위로 전용하지 않습니다. 제조사 개선 설명을 모든18사용자의 업그레이드 체감으로 보장하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-ride-19-review-2026/',
+        note: 'DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

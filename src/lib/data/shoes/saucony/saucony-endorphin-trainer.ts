@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-endorphin-trainer',
   slug: 'saucony-endorphin-trainer',
@@ -16,20 +17,22 @@ export const shoe: Shoe = {
   category: '쿠션화',
   rating: 4,
   price: 219000,
-  description: 'Saucony의 프리미엄 트레이너로, IncrediRUN 미드솔을 사용해 엘리트급 에너지 리턴을 데일리 트레이닝에서 경험할 수 있습니다.',
-  oneliner: 'IncrediRUN 폼을 매일 훈련에, 엘리트 감각의 슈퍼트레이너',
-  editorComment: '엔돌핀 엘리트의 IncrediRUN 폼을 121.7mm 초광폭 플랫폼 위에 올려놓은 구조가 이 신발의 핵심입니다. 전족부 76.3% 에너지 리턴은 훈련용치고 파격적인 수치이고, 3/4 길이 카본 플레이트가 추진력을 더합니다. 21만 9천원으로 슈퍼블라스트 2(₩249,000)보다 3만원 저렴하면서 600km 내구성으로 오래 신을 수 있습니다. 다만 285g 무게는 템포런에 투입하기엔 무겁고, 70.1mm 좁은 토박스는 발볼 넓은 한국 러너에게 구매 장벽이 됩니다. 장거리 훈련 위주의 시리어스 러너에게 적합합니다. 카본 트레이너의 강점은 검증 부담이 적다는 것 — 카본 효과는 개인차가 커서(±11%p) 결전화 구매 전 본인 반응을 확인해야 하는데, 600km 내구의 이 신발이면 그 실험을 훈련 속에서 충분히 할 수 있습니다.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 70.1mm(평균 73.2mm)로 좁은 편이고 와이드 옵션이 없으므로, 발볼이 넓다면 반드시 시착 후 반 사이즈 업을 고려하세요. 정가 219,000원에 예상 수명 500~700km(추정) 기준 km당 약 310~440원입니다. 같은 쿠션화 트레이너로는 슈퍼블라스트 2·마하 X 3이 대안입니다.',
-  tags: ['쿠션화', '트레이너', 'IncrediRUN', '프리미엄'],
-
+  description: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본 구조의 엔돌핀 트레이너. RunRepeat 실험실 검체 285g·38.9/32mm. 한국 확인 가격 219,000원.',
+  oneliner: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본 · 285g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-09 원문 재확인. 한국 남성 일반M S20996-110 정가219,000원·확인시 할인131,400원,250/255/260mm 선택 가능·265~300mm는 품절 표시였습니다. 여성S10996-120·342는2~3개월 전 캐시여서 현재 가격·재고 미확인입니다. 별도 한국 와이드 SKU도 미확인입니다. 한국 남성 표기9.9oz(280g)는 기준 사이즈 미표기입니다. 여성 캐시8.9oz(227g)는 단위쌍이 맞지 않아 조용히 보정하지 않았습니다. DOR소개280g(남성 US9)·252g(여성 US8),41/33mm·8mm, RR브랜드42/34mm·8mm, RR실측285g·38.9/32mm·6.9mm는 별도입니다. 상층19.6AC·하층55.7AC를 분리합니다. DOR는 하층PWRRUN을EVA로 설명하며 전체를 IncrediRUN과 같은 폼이라고 쓰지 않습니다. 구방식 비틀림5/5·통기5/5를Nm·BR로 바꾸지 않습니다. 플랫폼폭·힐SA138을 무릎 보호·발목 치료로, 국소마모0.7mm를600km 수명으로 해석하지 않습니다. DOR Matt(남성 US10)은 정사이즈이지만 약간 밀착·낮은 볼륨·테이퍼, 초기 힐 슬립과 끈 조절 후 고정을 느꼈습니다. 본인은 뻣뻣하고 튀는 앞발을 빠른 훈련에 선호했습니다. Andrea는 평소 여성 US9.5에서 반업했다고 적었지만 실제 숫자 라벨은 미확인입니다. 폭·고정은 편했으나 무게·거친 힐 때문에 쉬운 주행을 선호해 두 용도가 갈렸습니다. 젖은 길 접지는 좋지 않았다는 경험과25마일 노출폼 마모는 보편 수명이 아닙니다. RR 내부 최광폭92.3mm·엄지70.1mm·높이28.9mm와 외부 전족 플랫폼 121.7mm를 구분합니다. 넓은 밑창만으로 한국 평균 발이 편하다고 보장하지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '쿠션화',
+    '트레이너',
+    'IncrediRUN',
+    '프리미엄',
+  ],
   specs: {
     weight: 285,
     cushioning: 8,
     responsiveness: 10,
     stability: 6,
-    drop: 7,
-    durability: 600,
+    drop: 6.9,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 38.9,
@@ -37,81 +40,115 @@ export const shoe: Shoe = {
     },
     drop: 6.9,
     carbonPlate: true,
-    plateType: 'flat',
-    midsoleType: 'IncrediRUN + PWRRUN',
-    optimalPace: '4:30-6:30 min/km',
+    plateType: 'three-quarter carbon plate',
+    midsoleType: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['데일리 트레이닝', '장거리', '중상급 러너', '템포 러닝'],
-    notRecommended: ['입문 러너', '레이싱 전용', '과내전 러너'],
+    recommended: [
+      '두 폼층과 약3/4 카본의 전환을 시착 비교하려는 러너',
+      '낮은 볼륨·앞코·초기 힐 고정을 실제 규격에서 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 압박·힐 슬립·전환 불편이 생기는 경우',
+      '수명600km·고정페이스를 구매 보장으로 기대하는 경우',
+    ],
   },
-
-  features: ['IncrediRUN 미드솔', '3/4 카본 플레이트', '6.9mm 드롭', '엘리트급 에너지 리턴'],
-
+  features: [
+    'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본',
+    '285g · 38.9/32mm · 드롭 6.9mm (RunRepeat 실험실 검체)',
+    '한국 공식 약3/4 카본 플레이트. DOR·RR의 뒤꿈치 비플레이트 구간 설명과 구분해 기록합니다.',
+    'RR 내부 최광폭92.3mm·엄지70.1mm·높이28.9mm와 외부 전족 플랫폼 121.7mm를 구분합니다. 넓은 밑창만으로 한국 평균 발이 편하다고 보장하지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 219000,
-    streetPrice: 189000,
-    costPerKm: 365,
     valueRating: 7,
     priceTier: 'premium',
-    alternatives: ['nike-zoom-fly-6', 'asics-superblast-2', 'new-balance-sc-trainer-v3'],
+    alternatives: [
+      'nike-zoom-fly-6',
+      'asics-superblast-2',
+      'new-balance-sc-trainer-v3',
+    ],
   },
-
   detailedSpecs: {
-    weight: '285g (Lab)',
-    stackHeight: '힐 38.9mm / 포어풋 32mm (Lab)',
-    drop: '6.9mm (Lab 측정)',
-    midsole: 'IncrediRUN + PWRRUN (듀얼 폼)',
-    plate: '3/4 길이 카본 플레이트',
-    outsole: '러버 + 강화 EVA',
-    upper: '메쉬 (고통기성)',
-    width: '좁음 (D) · 토박스 70.1mm — RunRepeat 평균 73.2mm보다 3.1mm 좁음, RunRepeat: "undeniably a tapered, race-inspired design" · 와이드 없음(2026-10-20 한국 공식몰 확인)',
-    durability: '600km+',
-    price: '219,000원',
-    costPerKm: '약 ₩365/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '285g (RunRepeat 실험실 검체). 한국 남성 표기9.9oz(280g)는 기준 사이즈 미표기입니다. 여성 캐시8.9oz(227g)는 단위쌍이 맞지 않아 조용히 보정하지 않았습니다. DOR소개280g(남성 US9)·252g(여성 US8),41/33mm·8mm, RR브랜드42/34mm·8mm, RR실측285g·38.9/32mm·6.9mm는 별도입니다.',
+    stackHeight: '38.9/32mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '6.9mm (RunRepeat 실험실 검체). 한국 남성 표기9.9oz(280g)는 기준 사이즈 미표기입니다. 여성 캐시8.9oz(227g)는 단위쌍이 맞지 않아 조용히 보정하지 않았습니다. DOR소개280g(남성 US9)·252g(여성 US8),41/33mm·8mm, RR브랜드42/34mm·8mm, RR실측285g·38.9/32mm·6.9mm는 별도입니다.',
+    midsole: 'IncrediRUN 상층 + PWRRUN 하층 · 약3/4 카본. 주폼 19.6AC·보조 55.7AC, 힐/전족부 SA 138/112·에너지 리턴 68.8/76.3%. 상층19.6AC·하층55.7AC를 분리합니다. DOR는 하층PWRRUN을EVA로 설명하며 전체를 IncrediRUN과 같은 폼이라고 쓰지 않습니다. 구방식 비틀림5/5·통기5/5를Nm·BR로 바꾸지 않습니다. 플랫폼폭·힐SA138을 무릎 보호·발목 치료로, 국소마모0.7mm를600km 수명으로 해석하지 않습니다.',
+    plate: '한국 공식 약3/4 카본 플레이트. DOR·RR의 뒤꿈치 비플레이트 구간 설명과 구분해 기록합니다.',
+    width: 'RR 내부 최광폭 92.3mm·엄지 부위 70.1mm·높이 28.9mm. RR 내부 최광폭92.3mm·엄지70.1mm·높이28.9mm와 외부 전족 플랫폼 121.7mm를 구분합니다. 넓은 밑창만으로 한국 평균 발이 편하다고 보장하지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 남성 일반M S20996-110 정가219,000원·확인시 할인131,400원,250/255/260mm 선택 가능·265~300mm는 품절 표시였습니다. 여성S10996-120·342는2~3개월 전 캐시여서 현재 가격·재고 미확인입니다. 별도 한국 와이드 SKU도 미확인입니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 77,
-      text: '엔돌핀 엘리트의 IncrediRUN 폼을 훈련에서 경험하고 싶은 시리어스 러너를 위한 슈퍼트레이너입니다. 21만원대에 76.3% 에너지 리턴을 데일리 훈련에서 누릴 수 있고, 3/4 카본 플레이트가 추진력을 더해줍니다. 285g에 38.9mm 힐 스택, 6.9mm 드롭(RunRepeat 실측) 구성이고, 121.7mm 초광폭 플랫폼으로 안정성이 뛰어납니다. 힐 138 SA(RunRepeat 실측) 충격흡수로 무릎 보호가 훌륭하고 600km 내구성에 km당 약 365원으로 가성비 좋습니다. 다만 토박스가 70.1mm로 좁아 발볼 넓은 한국 러너는 착화감이 불편할 수 있고, 와이드 옵션도 없어 반사이즈 업을 고려하세요. 285g 무게 때문에 4:30/km 이하 템포런보다는 5분대 이상 장거리 훈련에 더 적합하며, 평발 러너에게도 광폭 플랫폼이 안정감을 제공합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-endorphin-trainer',
+      text: '한국 남성 표기9.9oz(280g)는 기준 사이즈 미표기입니다. 여성 캐시8.9oz(227g)는 단위쌍이 맞지 않아 조용히 보정하지 않았습니다. DOR소개280g(남성 US9)·252g(여성 US8),41/33mm·8mm, RR브랜드42/34mm·8mm, RR실측285g·38.9/32mm·6.9mm는 별도입니다. 상층19.6AC·하층55.7AC를 분리합니다. DOR는 하층PWRRUN을EVA로 설명하며 전체를 IncrediRUN과 같은 폼이라고 쓰지 않습니다. 구방식 비틀림5/5·통기5/5를Nm·BR로 바꾸지 않습니다. 플랫폼폭·힐SA138을 무릎 보호·발목 치료로, 국소마모0.7mm를600km 수명으로 해석하지 않습니다.',
     },
     {
-        userType: '로테이션 — 최상위 레이서 폼을 훈련에서 쓰는 구성',
-        text: '같은 브랜드 최상위 레이서(엘리트 2)의 IncrediRUN 폼을 훈련용 내구성으로 옮긴 구성입니다. 대회 신발과 훈련 신발의 감각 차이를 줄이려는 운용에 맞습니다. 285g으로 무거운 편이지만 에너지 리턴 76.3%라 경사가 섞인 코스에서도 추진이 유지됩니다. 경쟁 모델인 슈퍼블라스트 2(24만 9천원)보다 3만원 낮으면서 내구성 600km라 주행거리를 많이 쌓는 경우 운용 비용에서 유리합니다. 토박스가 70.1mm로 좁아 발볼이 넓다면 시착이 필요합니다.',
-      },
-    {
-        userType: '모델 선택 — 엔돌핀 스피드 5 대비 장거리 안정성',
-        text: '같은 라인의 스피드 5와 비교하면 장거리 쪽에 무게가 실려 있습니다. 3/4 카본 플레이트로 에너지 리턴 76.3%를 확보해 추진력은 스피드보다 앞서고, 플랫폼이 121.7mm로 넓어 30km급 장거리 후반의 접지 안정감이 좋습니다. 대신 285g으로 무거워 짧고 빠른 세션에는 스피드 5가 맞습니다. 토박스가 70.1mm로 좁아 발볼이 넓다면 반 치수 업이 필요하고, 내구성 600km 기준입니다.',
-      },
-    {
-        userType: '적합성 경계 — 5분대 이상 장거리 전용',
-        text: '무게가 용도를 제한합니다. 285g은 슈퍼트레이너 중 무거운 축으로, 같은 가격대의 줌 플라이 6(248g)·하이페리온 맥스 3(283g)보다 무겁습니다. 4:30/km 수준의 템포런에서는 이 무게가 걸림돌이 되므로, 5분대 이상의 장거리 훈련 전용으로 보는 편이 현실적입니다. IncrediRUN 폼의 에너지 리턴 76.3%라는 반발 자체는 확실하고, km당 약 365원으로 운용 비용도 낮습니다. 토박스 70.1mm로 좁아 발볼이 넓다면 제약이 있습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-endorphin-trainer-review-2025/',
+      text: 'DOR Matt(남성 US10)은 정사이즈이지만 약간 밀착·낮은 볼륨·테이퍼, 초기 힐 슬립과 끈 조절 후 고정을 느꼈습니다. 본인은 뻣뻣하고 튀는 앞발을 빠른 훈련에 선호했습니다. Andrea는 평소 여성 US9.5에서 반업했다고 적었지만 실제 숫자 라벨은 미확인입니다. 폭·고정은 편했으나 무게·거친 힐 때문에 쉬운 주행을 선호해 두 용도가 갈렸습니다. 젖은 길 접지는 좋지 않았다는 경험과25마일 노출폼 마모는 보편 수명이 아닙니다.',
+    },
   ],
-
-  similarShoes: ['asics-superblast-2', 'new-balance-sc-trainer-v3', 'hoka-mach-x-3', 'nike-vomero-18'],
+  similarShoes: [
+    'asics-superblast-2',
+    'new-balance-sc-trainer-v3',
+    'hoka-mach-x-3',
+    'nike-vomero-18',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/GM323csQ' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5ZhhoqzGC' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/GM323csQ',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZhhoqzGC',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 MEN · S20996-110 · M(일반)',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=177&display_group=1&product_no=214',
+        note: '확인 상품의 정가·당시 할인·사이즈별 상태만 적용. 결제재고 보장 아님.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-endorphin-trainer',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 285g·38.9/32mm·6.9mm. 상층19.6AC·하층55.7AC를 분리합니다. DOR는 하층PWRRUN을EVA로 설명하며 전체를 IncrediRUN과 같은 폼이라고 쓰지 않습니다. 구방식 비틀림5/5·통기5/5를Nm·BR로 바꾸지 않습니다. 플랫폼폭·힐SA138을 무릎 보호·발목 치료로, 국소마모0.7mm를600km 수명으로 해석하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-endorphin-trainer-review-2025/',
+        note: '한국 남성 표기9.9oz(280g)는 기준 사이즈 미표기입니다. 여성 캐시8.9oz(227g)는 단위쌍이 맞지 않아 조용히 보정하지 않았습니다. DOR소개280g(남성 US9)·252g(여성 US8),41/33mm·8mm, RR브랜드42/34mm·8mm, RR실측285g·38.9/32mm·6.9mm는 별도입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

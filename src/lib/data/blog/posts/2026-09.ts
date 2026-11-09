@@ -5276,142 +5276,83 @@ export const posts_2026_09: BlogPost[] = [
     updatedAt: "2026-11-09",
   },
   {
-    id: 'saucony-endorphin-trainer-review',
-    slug: 'saucony-endorphin-trainer-review',
-    title: '써코니 엔돌핀 트레이너 후기 | 엘리트 레이서 폼을 훈련에서 — 76.3% 에너지 리턴',
-    description:
-      '엔돌핀 트레이너는 엔돌핀 엘리트의 IncrediRUN 폼을 121.7mm 초광폭 플랫폼 위에 올린 슈퍼트레이너입니다. 전족부 76.3% 에너지 리턴은 훈련용치고 파격적이고, 3/4 길이 카본 플레이트가 추진력을 더합니다. 219,000원, 600km 내구성. 다만 285g 무게와 70.1mm 좁은 토박스는 한국 러너가 확인해야 할 지점입니다.',
-    thumbnail: '/images/blog/saucony-endorphin-trainer-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
+    id: "saucony-endorphin-trainer-review",
+    slug: "saucony-endorphin-trainer-review",
+    title: "엔돌핀 트레이너 리뷰 — 같은 신발의 빠른 훈련·이지런 평가가 갈렸습니다",
+    description: "IncrediRUN·PWRRUN과3/4 카본,285g 실측을 구분합니다. 한국 남성 상품·사이즈와 출처별 스택 차이를 확인하고5분대 장거리 전용·600km 수명을 철회했습니다.",
+    thumbnail: "/images/blog/saucony-endorphin-trainer-review.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
     readingTime: 7,
-    tags: ['써코니 엔돌핀트레이너', '슈퍼트레이너', 'IncrediRUN', '카본 트레이너'],
+    tags: [
+      "엔돌핀 트레이너",
+      "써코니",
+      "IncrediRUN",
+      "한국 상품 조건"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>엔돌핀 엘리트의 IncrediRUN 폼을 훈련용 내구성(600km)으로</strong> — 전족부 에너지 리턴 76.3%는 훈련용치고 파격적입니다</li>
-    <li><strong>219,000원으로 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(249,000원)보다 3만원 저렴</strong>합니다</li>
-    <li><strong>285g 무게와 70.1mm 좁은 토박스</strong> — 발볼 넓은 한국 러너는 반사이즈 업이나 시착이 필요합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>장거리 훈련 위주의 시리어스 러너</strong>에게 맞습니다. 4:30/km 이하의 빠른 템포보다는 5분대 이상 장거리 훈련에서 진가가 나옵니다.</p>
-  </div>
-</div>
-
-<h2>레이서 폼을 훈련에서 쓰는 구성</h2>
-<p>엔돌핀 엘리트의 IncrediRUN 폼을 초광폭 플랫폼 위에 올려놓은 구조가 이 신발의 핵심입니다. 대회 신발과 훈련 신발의 감각 차이를 줄이려는 운용에 맞고, 3/4 길이 카본 플레이트가 추진력을 더합니다. 카본화의 효과는 개인차가 커서(연구상 ±11%p) 결전화를 사기 전에 이 신발로 본인의 반응을 확인하는 용도로도 쓸 수 있습니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 실측 70.1mm로 다소 좁고 와이드 옵션이 없습니다. 발볼이 넓다면 반드시 시착 후 반사이즈 업을 고려하세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·아킬레스건·무릎·신 스플린트 전부 good입니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 121.7mm 초광폭 플랫폼이 평발 러너에게도 안정감을 제공합니다</li>
-</ul>
-
-<h2>속도별 활용 — 5분대 이상 장거리 전용</h2>
-<p>285g(랩 실측)은 슈퍼트레이너 중 무거운 축으로, 같은 가격대의 <a href="/shoes/nike-zoom-fly-6">줌 플라이 6</a>(248g, US 9 기준)보다 무겁습니다. 4:30/km 수준의 템포런에서는 이 무게가 걸림돌이 되므로, 5분대 이상의 장거리 훈련 전용으로 보는 편이 현실적입니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>219,000원은 <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>(249,000원)보다 3만원 낮으면서 내구성 600km라 주행거리를 많이 쌓는 경우 운용 비용에서 유리합니다. km당 약 365원입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>데일리 트레이닝·장거리 훈련 위주의 중상급 러너</strong></li>
-  <li><strong>대회 신발과 훈련 신발의 감각 차이를 줄이고 싶은 러너</strong></li>
-  <li>반대로 <strong>입문 러너, 레이싱 전용, 발볼이 넓은 러너</strong>는 다른 모델을 먼저 보세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>엔돌핀 트레이너는 "레이서의 감각을 매일 신을 수 있게"라는 접근을 정직하게 구현한 슈퍼트레이너입니다. 좁은 토박스라는 한계가 명확하지만, 그 조건에 맞는 러너에게는 슈퍼블라스트 2보다 저렴한 가격에 엘리트급 폼을 경험할 수 있는 신발입니다.</p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>RR 실측285g·38.9/32mm·6.9mm, 상층19.6AC·하층55.7AC입니다.</li><li>DOR Matt은 빠른 훈련을, Andrea는 쉬운 주행을 선호해 공통 페이스를 정하지 않습니다.</li><li>한국 남성S20996-110 정가219,000원·당시 할인131,400원,250/255/260mm만 선택 가능이었습니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<h2>두 폼층과 뒤꿈치 비플레이트 구간</h2><p>엔돌핀 트레이너는 IncrediRUN 상층·PWRRUN 하층 사이에 약3/4 카본을 배치합니다. DOR는 하층PWRRUN을EVA로 설명하며 뒤꿈치에는 플레이트가 없는 구간을 구분했습니다. 전체 중창을 최상위 레이서와 같은 폼으로 설명하거나 같은 주행감을 보장하지 않습니다.</p><div class="table-wrap"><table><thead><tr><th>출처·조건</th><th>무게</th><th>힐/전족부·드롭</th></tr></thead><tbody><tr><td>RR 검체</td><td>285g</td><td>38.9/32.0mm·6.9mm</td></tr><tr><td>DOR 소개</td><td>남성US9 280g·여성US8 252g</td><td>41/33mm·8mm</td></tr><tr><td>RR 브랜드 메타·사이즈 미확인</td><td>남성286g·여성264g</td><td>42/34mm·8mm</td></tr><tr><td>한국 확인 남성 상품·사이즈 미표기</td><td>9.9oz(280g)</td><td>이번 한국 공시 미확인</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p>
+<h2>285g으로5분대 전용을 정할 수는 없습니다</h2><p>DOR Matt(남성US10)은 정사이즈이나 낮은 볼륨·테이퍼와 초기 힐 슬립을 느꼈고 끈 조절 후 고정됐다고 적었습니다. 뻣뻣하고 튀는 앞발을 빠른 훈련에 선호했습니다. Andrea는 평소 여성US9.5에서 반업 후 폭·고정은 편했지만 무게·거친 힐 때문에 쉬운 주행을 선호했습니다. 실제 숫자 검체 라벨은 이번 원문에서 미확인입니다.</p><p>같은 신발을 두 사람이 다르게 쓴다는 점을 남깁니다. ‘4:30/km는 무게 때문에 불가’, ‘5분대 장거리 전용’이라는 공통 규칙은 제거했습니다. 실제로 많이 할 주행에서 앞발 굽힘과 힐 전환이 자연스러운지 확인할 수 있습니다.</p>
+<h2>넓은 바닥과 내부 앞코는 따로 보기</h2><p>RR 외부 전족 플랫폼은121.7mm지만 내부 최광폭92.3mm·엄지70.1mm·높이28.9mm입니다. 넓은 밑창을 넓은 내부 공간으로 읽지 않습니다. 상층19.6AC·하층55.7AC, 힐/전족부 SA138/112·리턴68.8/76.3%도 별도 시험입니다. 이 값으로 평발·무릎 보호 등급을 만들지 않습니다.</p>
+<h2>한국 가격·재고와 여성 캐시를 구분</h2><p><a href="https://saucony.co.kr/product/detail.html?cate_no=177&amp;display_group=1&amp;product_no=214" target="_blank" rel="noopener noreferrer">남성S20996-110 일반M</a>은219,000원·확인시 할인131,400원이며250/255/260mm만 선택 가능,265~300mm는 품절 표시였습니다. 여성S10996-120·342는2~3개월 전 캐시여서 현재 재고·가격으로 확정하지 않습니다. 여성 캐시의8.9oz(227g)는 단위쌍이 맞지 않아 조용히 수정하지 않았습니다. 별도 한국 와이드 SKU도 미확인입니다.</p>
+<h2>젖은 길과 수명에서 남겨야 할 한계</h2><p>Andrea는 젖은 길 접지를 좋지 않게 느꼈고25마일 후 노출폼 마모를 기록했습니다. 국소 아웃솔 마모0.7mm와 다른 관찰이며 어느 쪽도600km 수명 증명이 아닙니다. 기존 km당365원·슈퍼블라스트2와 고정3만원 차액·질환별good 표를 철회했습니다. 구방식 비틀림5/5·통기5/5도 Nm·BR로 바꾸지 않습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문과 남은 한계</h2><ul><li><a href="https://runrepeat.com/saucony-endorphin-trainer" target="_blank" rel="noopener noreferrer">RunRepeat 검체 실측</a></li><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-trainer-review-2025/" target="_blank" rel="noopener noreferrer">Doctors of Running 리뷰어별 착화 기록</a></li></ul><p>시험 한 켤레와 소수 리뷰어의 경험으로 개인별 최적 페이스, 보편적인 교체 거리, 부상 예방 순위를 정할 수 없습니다. 한국에서 확인되지 않은 상품 조건은 해외 가격 환산이나 이전 세대 수치로 채우지 않았습니다.</p>
 `,
     faqs: [
       {
-        question: '이 신발로 템포런도 할 수 있나요?',
-        answer:
-          '가능은 하지만 최적은 아닙니다. 285g으로 무거운 편이라 4:30/km 이하 페이스에서는 걸림돌이 됩니다. 5분대 이상의 장거리 훈련에서 진가가 나옵니다.',
+        "question": "빠른 템포런에는 못 쓰나요?",
+        "answer": "Matt은 빠른 훈련, Andrea는 쉬운 주행을 선호했습니다. 무게만으로 공통 페이스 상한을 정하지 않습니다."
       },
       {
-        question: '발볼이 넓은데 신어도 될까요?',
-        answer:
-          '주의가 필요합니다. 토박스가 실측 70.1mm로 좁은 편이고 와이드 옵션이 없습니다. 발볼이 넓다면 매장에서 먼저 시착해보고 반사이즈 업을 고려하세요.',
+        "question": "넓은 밑창이면 발볼도 편한가요?",
+        "answer": "외부 플랫폼121.7mm와 내부 최광폭92.3mm·엄지70.1mm는 다른 위치입니다. 실제 규격에서 압박·고정을 확인하세요."
       },
+      {
+        "question": "600km 수명이 보장되나요?",
+        "answer": "검증된 공통600km 수명은 확인하지 못했습니다. 국소 마모와25마일 관찰을 수명으로 환산하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-09",
   },
   {
-    id: 'saucony-kinvara-16-review',
-    slug: 'saucony-kinvara-16-review',
-    title: '써코니 킨바라 16 후기 | 207g·4mm 로우드롭 — 지면을 느끼며 달리는 미니멀리스트',
-    description:
-      '킨바라 16은 쿠셔닝이 아니라 지면 감각과 발의 자유를 추구하는 경량 데일리화입니다. 207g에 공식 드롭 4mm(실측 4.5mm)로, 충격흡수는 힐 109 SA(RunRepeat 실측)로 로드화 평균(131 SA)보다 낮습니다. 159,000원, 여름 인터벌이나 빠른 페이스 훈련에 날카로운 감각을 줍니다. 다만 기초 근력이 있는 중급 이상 러너 전용입니다.',
-    thumbnail: '/images/blog/saucony-kinvara-16-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
+    id: "saucony-kinvara-16-review",
+    slug: "saucony-kinvara-16-review",
+    title: "써코니 킨바라16 리뷰 —207g·낮은 드롭,15km 상한은 근거가 없습니다",
+    description: "28.0/23.5mm·4.5mm 실측과27.5HA 구방식을 구분합니다. 한국 남성 일반 상품·할인·사이즈를 확인하고 근력 등급·입문자 금지·500km 수명을 철회했습니다.",
+    thumbnail: "/images/blog/saucony-kinvara-16-review.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
     readingTime: 7,
-    tags: ['써코니 킨바라16', '로우드롭', '경량 러닝화', '내추럴 러닝'],
+    tags: [
+      "킨바라16",
+      "써코니",
+      "로우드롭",
+      "HA 경도"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>207g·공식 드롭 4mm(실측 4.5mm)</strong> — 쿠셔닝이 아니라 지면 감각을 추구하는 신발입니다</li>
-    <li><strong>충격흡수가 힐 109 SA(RunRepeat 실측)로 로드화 평균(131 SA)보다 낮습니다.</strong> 종아리·아킬레스건에 부하가 걸리므로 기초 근력이 있는 중급 이상 러너 전용입니다</li>
-    <li><strong>토박스 내구성이 1/5로 약점</strong>입니다. 500km 이후 교체를 각오하세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>지면 감각과 경량을 중시하는 중급 이상 러너</strong>에게 맞습니다. 입문자나 무릎이 약한 러너에게는 권하지 않습니다.</p>
-  </div>
-</div>
-
-<h2>쿠셔닝이 아니라 감각을 위한 신발</h2>
-<p>207g과 공식 4mm 드롭이라는 숫자가 킨바라 16의 정체성을 말해줍니다. 힐 109 SA(RunRepeat 실측) 충격흡수는 로드화 평균(131 SA)보다 낮아, 착지 충격을 신발이 아니라 다리가 상당 부분 감당해야 합니다. 15만 9천원에 이 경량과 통기성 5/5를 제공하는 신발은 드물고, 여름 인터벌이나 빠른 페이스 훈련에 날카로운 감각을 줍니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 RunRepeat 실측 70.8mm(평균 73.2mm)로 좁은 편이고 와이드 옵션이 없습니다. 발볼이 넓다면 시착이 필수입니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·신 스플린트 caution(주의)입니다. 충격흡수가 낮은 만큼 무릎이 약하다면 권하지 않습니다</li>
-  <li><strong>"초보도 신을 수 있나요?"</strong> — 권장하지 않습니다. 기초 근력과 주행거리가 쌓인 뒤 넘어오는 순서가 맞습니다</li>
-</ul>
-
-<h2>거리 상한 — 15km까지가 현실적</h2>
-<p>15km까지는 경량과 낮은 드롭의 반응성이 장점으로 작동하지만, 20km를 넘기면 낮은 충격흡수 때문에 무릎과 발바닥에 부담이 몰립니다. 10~15km 이하 훈련으로 용도를 한정하고, 장거리는 쿠션이 두꺼운 모델로 나누는 운용이 맞습니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>159,000원, 500km 기준 km당 약 318원으로 가성비는 좋습니다. 다만 토박스 내구성이 1/5로 약점이라, 표시된 500km보다 이르게 교체가 필요할 수 있습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>경량화·로우드롭·내추럴 러닝을 선호하는 러너</strong></li>
-  <li><strong>400m 반복 같은 트랙 인터벌을 자주 하는 러너</strong></li>
-  <li>반대로 <strong>입문 러너, 과내전 러너, 맥시멀 쿠셔닝이 필요한 러너</strong>는 다른 모델이 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>킨바라 16은 목적이 분명한 신발입니다. 가볍다는 이유만으로 입문 단계에서 고르면 실패하기 쉽고, 반대로 기초 근력이 쌓인 러너에게는 15km 이하 빠른 훈련에서 확실한 감각을 줍니다. 용도를 정확히 알고 접근해야 하는 신발입니다.</p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>RR 실측207g·28.0/23.5mm·4.5mm입니다.</li><li>경도는 현재 원문도27.5HA로 표시하며 AC는 미확인입니다.</li><li>한국 남성S21020-155 일반M은 정가159,000원·당시 할인111,300원입니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p><div class="table-wrap"><table><thead><tr><th>RunRepeat 항목</th><th>확인 값</th></tr></thead><tbody><tr><td>힐/전족부 SA</td><td>109/100</td></tr><tr><td>힐/전족부 에너지 리턴</td><td>50.3/53.6%</td></tr><tr><td>폼 경도</td><td>27.5 HA (구방식)·AC 미확인</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>94.0/70.8/28.9mm</td></tr><tr><td>30도 굽힘</td><td>12.0N</td></tr><tr><td>국소 아웃솔 마모</td><td>2.0mm — 수명km 아님</td></tr></tbody></table></div><p>RunRepeat 수치는 해당 검체의 실험실 측정입니다. 다른 사이즈·성별·판매 규격에 같은 값이 적용된다고 보장하지 않습니다. SA는 충격흡수, 에너지 리턴은 실험실 반환 에너지 비율, AC는 폼 경도입니다. 서로 다른 시험이므로 하나의 점수로 합치거나 개인 기록·질환 예방 효과로 환산하지 않습니다. 현재 AC와 구방식 HA도 직접 비교하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 시험 방법</a></p>
+<h2>낮은 드롭과 가벼움으로 정할 수 없는 것</h2><p>킨바라16은 PWRRUN을 사용하는 비플레이트 구조입니다. RR 실측4.5mm와 브랜드 메타4mm·29/25mm는 출처 조건이 다릅니다. 브랜드 메타 남성198g·여성179g은 사이즈가 미확인이고 RR207g을 한국 공식 남성US9 무게로 부르지 않습니다.</p><p>힐SA109가 다른 신발보다 작다는 사실만으로 기초 근력 등급, 입문자 금지나 무릎·아킬레스 질환별 안전을 정할 수 없습니다. 기존 ‘15km까지’, ‘20km를 넘으면 부담 집중’, ‘5km만 뛰어도 통증’이라는 공통 예측을 철회했습니다.</p>
+<h2>앞코의 너비와 높이를 따로 확인</h2><p>엄지 부위70.8mm와 내부 높이28.9mm는 다른 방향의 공간입니다. 낮은 드롭·앞코 테이퍼가 관심사라면 평소 양말·인솔을 넣어 발가락 위와 끝이 눌리는지, 뒤쪽을 고정할 때 발등에 압박이 생기는지 확인하세요. 독자 정사이즈 투표를 모든 발의 사이즈 규칙으로 쓰지 않습니다.</p>
+<h2>한국 상품 조건과 와이드 미확인</h2><p><a href="https://saucony.co.kr/product/detail.html?product_no=354&amp;cate_no=122&amp;display_group=1" target="_blank" rel="noopener noreferrer">남성S21020-155 일반M</a>은 정가159,000원·확인시 할인111,300원이었습니다.250~290mm 선택 가능·295/300mm 품절 표시였고 결제 재고는 보장하지 않습니다. 여성 상품 카테고리 카드는 현재 정확한 SKU·재고 상세 확인과 구분했습니다. 한국 별도 와이드 SKU는 미확인이며 전세계 옵션이 없다고 단정하지 않습니다.</p>
+<h2>마모2.0mm로500km를 계산하지 않습니다</h2><p>국소 Dremel 손상2.0mm·토박스1/5·구방식 통기5/5는 서로 다른 시험입니다.500km에서 갑피가 찢어지거나 한국 여름에 누구나 시원하다는 예측으로 옮기지 않았습니다. 수명을 확인하지 못해 km당318원과 비용 순위도 제거했습니다.</p><p>정확한 킨바라16의 DOR 개별 착화 리뷰는 이번 검색에서 확인하지 못했습니다. 이전15세대 경험을16으로 대체하지 않습니다. 현재 신발과 다른 전환을 찾는다면 낮은 플랫폼·앞코 고정을 실제 사용 조건에서 비교할 수 있습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>확인한 원문</h2><p><a href="https://runrepeat.com/saucony-kinvara-16" target="_blank" rel="noopener noreferrer">RunRepeat 킨바라16</a> · <a href="https://www.doctorsofrunning.com/reviews/" target="_blank" rel="noopener noreferrer">DOR 아카이브 확인 범위</a></p>
 `,
     faqs: [
       {
-        question: '입문자가 가볍다는 이유로 사도 될까요?',
-        answer:
-          '권장하지 않습니다. 충격흡수(힐 109 SA, RunRepeat 실측)가 낮아 기초 근력이 없으면 5km만 뛰어도 무릎과 종아리에 부하가 몰립니다. 스택이 확보된 데일리로 시작한 뒤 넘어오는 순서가 안전합니다.',
+        "question": "입문자는 절대 신으면 안 되나요?",
+        "answer": "실측SA·드롭으로 입문자 전체를 금지하거나 기초 근력 등급을 정할 근거는 확인하지 못했습니다. 실제 압박·전환·현재 증상을 확인하세요."
       },
       {
-        question: '풀 마라톤에도 신을 수 있나요?',
-        answer:
-          '권장하지 않습니다. 20km를 넘기면 충격흡수 부족이 누적됩니다. 15km 이하 트랙 인터벌이나 빠른 훈련 전용으로 쓰는 것이 맞습니다.',
+        "question": "15km가 상한인가요?",
+        "answer": "검증된 공통 거리 상한은 확보하지 못했습니다. 기존15km 제한과20km 이후 통증 예측을 철회했습니다."
       },
+      {
+        "question": "27.5는AC인가요?",
+        "answer": "현재 원문은27.5HA로 표시합니다. AC는 미확인이고 다른 신발 AC와 환산·직접 비교하지 않습니다."
+      }
     ],
+    updatedAt: "2026-11-09",
   },
   {
     id: 'saucony-peregrine-16-review',
@@ -5554,217 +5495,119 @@ export const posts_2026_09: BlogPost[] = [
   {
     id: "mizuno-hyperwarp-elite-review",
     slug: "mizuno-hyperwarp-elite-review",
-    title: "미즈노 하이퍼워프 엘리트 후기 | 170g·38mm, 퓨어와 프로 사이 균형점을 찾은 마라톤 레이서",
-    description: "하이퍼워프 엘리트는 미즈노 하이퍼워프 3형제 중 풀 마라톤에 최적화된 모델입니다. 139g 퓨어보다 쿠셔닝이 풍부하고 201g 프로보다 가벼워, 170g·38mm 스택으로 서브3~서브3:30 목표 러너를 겨냥합니다. PEBA 미드솔에 풀렝스 카본 플레이트, 279,000원. 토박스가 좁아 한국 러너는 반사이즈 업이 필요합니다.",
+    title: "하이퍼워프 엘리트 리뷰 — 한국170g 공시와 로커·앞코, 직접 비교할 지점",
+    description: "한국270mm 한쪽170g·38/34.5mm 공시를 DOR164g과 나눠 표시합니다.2E 현재 상품·사이즈와 리뷰어별 전환 차이를 정리하고 Sub3 처방·300km 수명은 철회했습니다.",
     thumbnail: "/images/blog/mizuno-hyperwarp-elite-review.webp",
     author: "산초 에디터",
     publishedAt: "2026-09-11",
-    updatedAt: "2026-10-09",
+    updatedAt: "2026-11-09",
     category: "review",
     readingTime: 7,
     tags: [
-      "미즈노 하이퍼워프 엘리트",
-      "PEBA 카본화",
-      "마라톤 슈퍼슈즈",
-      "풀코스 레이싱화"
+      "하이퍼워프 엘리트",
+      "미즈노",
+      "로커",
+      "한국2E"
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>170g·38mm 스택</strong> — 하이퍼워프 3형제 중 풀 마라톤에 최적화된 균형점입니다</li>
-    <li><strong>드롭 3.5mm의 낮은 구성</strong>이라 전족부·중족부 착지 러너에게 자연스러운 전환을 유도합니다</li>
-    <li><strong>토박스가 좁고(narrow) 와이드 옵션이 없습니다.</strong> 한국 러너는 반사이즈 업과 매장 시착을 권장합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>서브3~서브3:30을 노리는 풀 마라톤 레이스 전용 신발</strong>입니다. 5K~10K가 목표라면 더 가벼운 <a href="/shoes/mizuno-hyperwarp-pure">하이퍼워프 퓨어</a>, 훈련까지 겸하려면 <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a>를 함께 비교해보세요.</p>
-  </div>
-</div>
-
-<h2>3형제 중 왜 엘리트가 마라톤용인가</h2>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>모델</th><th>무게</th><th>힐 스택</th><th>주력 거리</th></tr></thead>
-  <tbody>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pure">퓨어</a></td><td>139g</td><td>34mm</td><td>5K~10K</td></tr>
-    <tr><td><strong>엘리트</strong></td><td><strong>170g</strong></td><td><strong>38mm</strong></td><td><strong>풀 마라톤</strong></td></tr>
-    <tr><td><a href="/shoes/mizuno-hyperwarp-pro">프로</a></td><td>201g</td><td>39mm</td><td>훈련+대회 겸용</td></tr>
-  </tbody>
-</table>
-</div>
-<p>미즈노 하이퍼워프 라인은 거리별로 세 모델을 명확히 갈라뒀습니다. 퓨어가 극한의 경량으로 단거리에, 프로가 접근성으로 훈련 겸용에 초점을 맞췄다면, <strong>엘리트는 그 사이에서 풀 마라톤 후반부 쿠셔닝과 경량을 동시에 잡으려는 모델</strong>입니다. 38mm 힐 스택이 35km 이후에도 충격을 흡수하면서, 170g이라는 무게로 후반 다리 피로를 줄입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁은 편(narrow)이고 와이드 옵션이 없습니다. 반드시 반사이즈 업을 하거나 매장 착화를 먼저 하세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 아킬레스건·무릎은 good이지만 족저근막염·신 스플린트는 caution(주의)입니다. 레이스 전용 설계의 트레이드오프입니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 안정성 점수가 5/10으로 낮은 편이라 평발이나 과내전이 있다면 20km 이후 발 안쪽 피로가 누적될 수 있습니다. 지지가 필요하다면 측면 플레어가 있는 <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a> 쪽을 검토하세요</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p><strong>비교 가격 부분 정정 (2026-11-09):</strong> 베이퍼플라이 4는 확인한 남성 IM8203-001 정가 319,000원·여성 HF6412-102 정가 309,000원으로 상품별 조건이 다릅니다. 단일 차액과 검증되지 않은 300km 수명을 사용한 km당 비용은 철회했습니다. 하이퍼워프의 현재 한국 판매 조건과 이 글 나머지 항목은 별도 재검증이 남아 있습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>서브3~서브3:30 목표의 풀 마라톤 러너</strong> — 이 신발이 겨냥하는 정확한 대상</li>
-  <li><strong>전족부·중족부 착지 러너</strong> — 3.5mm 로우 드롭이 자연스럽게 맞습니다</li>
-  <li>반대로 <strong>5K~10K가 주력이라면</strong> <a href="/shoes/mizuno-hyperwarp-pure">하이퍼워프 퓨어</a>가, <strong>평발이거나 훈련까지 겸하려면</strong> <a href="/shoes/mizuno-hyperwarp-pro">하이퍼워프 프로</a>가 더 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>하이퍼워프 엘리트는 미즈노가 슈퍼슈즈 시장에서 내놓은 균형 잡힌 답입니다. 3형제 중 어느 쪽도 아닌 정확히 풀 마라톤 자리를 겨냥했고, 안정적인 PEBA 플랫폼이 베이퍼플라이 계열과 다른 선택지를 원하는 러너에게 설득력이 있습니다.</p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>한국 공시는270mm 한쪽 약170g·38/34.5mm·3.5mm입니다. RR 독립 실측이 아닙니다.</li><li>DOR 두 리뷰어는 피로한 주행에서 로커를 다르게 느꼈습니다.</li><li>확인 한국2E 두 상품은279,000원·당시 할인223,200원이었습니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<h2>풀코스 기록표 대신 로커 작동감을 봅니다</h2><p>초대 하이퍼워프 엘리트는 ENERZY XP 이중층과 전장 카본을 결합합니다. 한국 공식은 Smooth Speed Plate/3D carbon plate로, DOR는 PEBA·supercritical TPE/TPEE 이중경도 구성으로 설명합니다. DOR 일반 TPE와 상세 TPEE 표기를 화학 분석 결과처럼 통일하지 않았습니다.</p><p>한국 공식270mm 한쪽 약170g과 DOR 남성 US9 소개164g은 다른 조건입니다. DOR와 한국 높이 공시는38/34.5mm·3.5mm이지만 정확 모델의 독립 랩이 없어 개인 사이즈 실측을 보장하지 않습니다.</p>
+<h2>같은 로커가 피로한 날에도 다르게 느껴졌습니다</h2><p>DOR David(남성 US9.5)는 정사이즈·좋은 뒤쪽 고정과 넓지만 빠르게 테이퍼되는 앞쪽을 느꼈습니다. 피로해 뒤꿈치 쪽으로 착지할 때 전족 작동감이 줄어 더 이른 로커를 원했습니다. Andrea는 평소 여성 US9.5에서 US10으로 올린 뒤 편한 폭·고정을 느꼈고 피로한 날도 긍정적으로 평가했습니다.</p><p>따라서 ‘Sub3~3:30의 풀코스 정답’으로 배정하지 않습니다. 현재 신발의 앞코가 눌리는지, 로커가 너무 일찍 또는 늦게 느껴지는지부터 적어 비교할 수 있습니다.</p><h2>한국2E 상품과 사이즈 상태</h2><p>확인한 두 상품은 모두 보통(2E), 정가 279,000원·확인시 판매 223,200원이었습니다. 같은 SKU가 MEN/WOMEN 목록에 함께 노출되지만 상품 자체 성별 명시는 미확인이라 남녀 전용·공용을 확정하지 않습니다. 별도 한국4E와 나머지 판매처 재고도 미확인입니다.</p><div class="table-wrap"><table><thead><tr><th>확인 상품</th><th>당시 선택 가능 사이즈</th></tr></thead><tbody><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12336&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC268899</a></td><td>240/250/255/260/265/270/275/280/285mm</td></tr><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12098&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC267181</a></td><td>240/245/250/255/260/265/270/275/280/285/295mm</td></tr></tbody></table></div><p>사이즈 UI 관찰이며 결제·배송 재고 보장은 아닙니다. <a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GC268899-D.jpg" target="_blank" rel="noopener noreferrer">공식 상세 이미지</a>에서2E·한쪽 무게 기준을 확인했습니다. 이미지 제조년월은 출시일이 아닙니다.</p>
+<h2>넓은 플랫폼·기본2E·발가락 공간은 다릅니다</h2><p>한국2E 표기를 근거로 모든 넓은 발이 편하다고 보장하지 않습니다. 앞발이 넓어도 발가락 끝으로 좁아지는 형상, 낮은 발등 볼륨, 혀·끈 고정이 다른 문제를 만들 수 있습니다. 한 리뷰어의 반업을 공통 사이즈 규칙으로 바꾸지 않았습니다.</p>
+<h2>기존 질환 등급과300km 수명을 철회했습니다</h2><p>‘평발이면20km 이후 안쪽 피로’, ‘35km 이후에도 쿠션 보호’, 질환별good/caution은 확인한 공시·개별 리뷰로 뒷받침되지 않았습니다. 다른 신발의640km 실험도 이 모델300km 수명이 아니므로 km당 비용을 계산하지 않습니다. 퓨어·프로와의 공시·구조 차이는 비교할 수 있지만 거리만으로 정답을 나누지는 않습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>출처와 확인하지 못한 것</h2><p><a href="https://www.doctorsofrunning.com/mizuno-hyperwarp-elite-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 동세대 원문</a> · <a href="https://runrepeat.com/search?q=Hyperwarp" target="_blank" rel="noopener noreferrer">RunRepeat 자체 검색</a> · <a href="https://runrepeat.com/shoe-pipeline" target="_blank" rel="noopener noreferrer">RunRepeat 테스트 계획</a></p><p>정확한 초대 모델의 RR 공개 랩·내부 너비·SA·에너지 리턴·AC/HA는 확보하지 못했습니다. 공시 수치를 실측으로 부르거나 후속2세대·다른 모델로 채우지 않습니다. 제품명과 평점만으로 임상 예방·치료·보편 수명·최적 페이스를 정하지 않습니다.</p>
 `,
     faqs: [
       {
-        "question": "엘리트와 퓨어, 프로 중 뭘 사야 하나요?",
-        "answer": "거리로 결정하세요. 5K~10K 단거리 기록이 목표면 139g의 퓨어, 풀 마라톤이 목표면 170g·38mm 스택의 엘리트, 훈련과 대회를 한 켤레로 겸하려면 201g의 프로가 맞습니다."
+        "question": "평발이면 프로로 바꿔야 하나요?",
+        "answer": "그런 모델별 임상 우위를 확인하지 못했습니다. 같은 플레어를 편하게 느끼는 사람과 불편하게 느끼는 사람이 있어 실제 착화·증상을 봐야 합니다."
       },
       {
-        "question": "평발인데 신어도 되나요?",
-        "answer": "권장하지 않습니다. 안정성 점수가 5/10으로 낮아 평발이나 과내전이 심하면 장거리에서 발 안쪽 피로가 누적될 수 있습니다. 측면 플레어가 있는 하이퍼워프 프로가 상대적으로 안정적입니다."
+        "question": "반 사이즈 업이 필수인가요?",
+        "answer": "David는 정사이즈, Andrea는 반업을 선택했습니다. 개인 규격과 앞코·힐 고정을 확인하세요."
+      },
+      {
+        "question": "170g은 실측인가요?",
+        "answer": "이번 한국 확인 값은270mm 한쪽 제조사 공시입니다. DOR164g 남성US9 소개와 구분하며 RR 실측은 확보하지 못했습니다."
       }
     ],
   },
   {
-    id: 'mizuno-hyperwarp-pro-review',
-    slug: 'mizuno-hyperwarp-pro-review',
-    title: '미즈노 하이퍼워프 프로 후기 | 201g, 3형제 중 가장 실용적인 훈련+대회 겸용 슈퍼트레이너',
-    description:
-      '하이퍼워프 프로는 카본 인퓨즈드 나일론 플레이트를 써서 퓨어·엘리트보다 강성을 낮춘 슈퍼트레이너입니다. 201g·39mm 스택으로 템포런부터 하프·풀 마라톤 대회까지 한 켤레로 커버합니다. 249,000원으로 3형제 중 가장 저렴하고, 극단적 측면 플레어가 발목 안정성을 더합니다.',
-    thumbnail: '/images/blog/mizuno-hyperwarp-pro-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    updatedAt: '2026-10-09',
-    category: 'review' as const,
+    id: "mizuno-hyperwarp-pro-review",
+    slug: "mizuno-hyperwarp-pro-review",
+    title: "하이퍼워프 프로 리뷰 — 카본 혼합 나일론과 플레어, 편안함이 갈린 이유",
+    description: "270mm 한쪽200g 제조사 공시와 DOR201g을 나눠 표시합니다. 한국2E 현재 상품·사이즈와 리뷰어별 반대 체감을 정리하고 발목 불안정 추천·400km 수명을 철회했습니다.",
+    thumbnail: "/images/blog/mizuno-hyperwarp-pro-review.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-11-09",
+    category: "review",
     readingTime: 7,
-    tags: ['미즈노 하이퍼워프 프로', '슈퍼트레이너', '카본 인퓨즈드 나일론', '겸용 레이싱화'],
+    tags: [
+      "하이퍼워프 프로",
+      "미즈노",
+      "카본 혼합 나일론",
+      "플레어"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>카본 인퓨즈드 나일론 플레이트</strong> — 순수 카본보다 유연해 <a href="/shoes/mizuno-hyperwarp-elite">엘리트</a>·<a href="/shoes/mizuno-hyperwarp-pure">퓨어</a>보다 전환이 자연스럽습니다</li>
-    <li><strong>201g·39mm 스택</strong>으로 템포런부터 대회까지 한 켤레로 겸용할 수 있습니다</li>
-    <li><strong>249,000원 — 3형제 중 가장 저렴합니다.</strong> 극단적 측면 플레어가 발목 안정성을 더합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>플레이트가 들어간 신발을 처음 신으면서 안정성도 필요한 러너</strong>에게 맞습니다. 훈련과 대회를 분리 운용하고 순수 반발력을 원한다면 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a> 쪽이 낫습니다.</p>
-  </div>
-</div>
-
-<h2>3형제 중 가장 순화된 성격</h2>
-<p>하이퍼워프 프로는 퓨어·엘리트의 공격적인 성격을 순화해 접근성을 높인 슈퍼트레이너입니다. <strong>카본 인퓨즈드 나일론 플레이트</strong>는 순수 카본보다 유연해 전환이 급격하지 않고, <strong>Enerzy XP 미드솔</strong>은 PEBA보다 안정적이어서 템포런부터 대회까지 폭넓게 활용할 수 있습니다. 카본화의 반응은 개인차가 커서(연구상 러닝 이코노미 ±11%p) 같은 신발로도 득실이 갈리는데, 프로의 비교적 온건한 강성은 그 리스크를 줄이는 방향의 설계입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준(standard)이라 한국 러너 평균 발볼에 무난하지만, 와이드 옵션이 없어 발볼이 아주 넓다면 반사이즈 업을 권장합니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 아킬레스건·무릎·신 스플린트 전부 good입니다. 3형제 중 가장 균형 잡힌 등급입니다</li>
-  <li><strong>"발목이 불안정한데 괜찮을까요?"</strong> — 극단적 측면 플레어가 발목 흔들림을 잡아주는 구조라, 발목 불안정 러너에게 3형제 중 가장 적합합니다</li>
-</ul>
-
-<h2>가격 대비 가치 — 마하 X 3와 같은 값, 겸용성이 다르다</h2>
-<p>249,000원은 <a href="/shoes/hoka-mach-x-3">마하 X 3</a>(249,000원)와 같은 값이고, 차별점은 측면 플레어의 안정감입니다. 스택이 높은 트레이너에서 좌우 흔들림이 신경 쓰였다면 이 구조가 값을 합니다. 400km 내구성 기준 km당 약 623원으로 가성비가 뛰어나지는 않지만, 훈련과 대회를 한 켤레로 겸할 수 있어 실질적 활용도는 높습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>템포런·인터벌 훈련과 하프·풀 마라톤 대회를 한 켤레로 겸하려는 러너</strong></li>
-  <li><strong>발목이 불안정하거나 카본화가 처음인 러너</strong> — 순화된 강성과 측면 플레어</li>
-  <li>반대로 <strong>순수 반발력을 최우선으로 한다면</strong> <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>가, <strong>이지런·리커버리가 목적이라면</strong> 다른 카테고리가 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>하이퍼워프 프로는 "카본화를 매일 신을 수 있게"라는 접근으로 설계된 신발입니다. 3형제 중 가장 저렴하면서 가장 실용적인 위치이고, 극단적 측면 플레어라는 독자적인 안정화 장치가 다른 슈퍼트레이너와의 차별점입니다.</p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>한국270mm 한쪽 공시는 약200g·39/33.5mm·5.5mm입니다.</li><li>DOR의 카본 혼합 나일론을 순수 카본 섬유로 부르지 않습니다.</li><li>같은 외측 플레어를 Matt은 불편하게, Andrea는 자신의 착지에 맞게 느꼈습니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<h2>카본 혼합 나일론과 폼 명칭을 확인</h2><p>한국 공식은 ENERZY XP·Mizuno Wave와 Smooth Speed Assist로 설명합니다. DOR는 전장 supercritical TPEE와 carbon-infused nylon plate로 적었습니다. 카본 혼합 나일론을 순수 카본 섬유 판재로 바꾸거나 모든 카본보다 부드럽다고 단정하지 않습니다. 소재명만으로 기록 향상이나 개인의 부상 위험을 정할 수 없습니다.</p><p>한국 공시 약200g은270mm 한쪽입니다. DOR 소개201g은 남성 US9/여성 US10.5 조건이며 스택39/33.5mm·5.5mm입니다. RR 정확 모델은 파이프라인에 Will be tested로 표시돼 공개된 독립 랩 수치를 확보하지 못했습니다.</p>
+<h2>플레어가 크면 모두에게 안정적인가?</h2><p>DOR Matt(남성 US10)은 낮은 볼륨·약간 짧은 길이·혀 뭉침과 끈 압박을 느꼈습니다. 외측 플레어와 판재 연장의 힐·중족 전환은 거칠고 안쪽으로 밀리는 느낌이 불편했다고 적었습니다. 반면 Andrea는 평소 여성 US9.5에서 US10으로 올린 뒤 앞볼·볼륨·고정이 편했고 같은 플레어가 자신의 외측 중족 착지에 맞았다고 적었습니다.</p><p>이를 평균내어 ‘발목이 불안정하면 프로가 가장 적합’이라고 추천하지 않습니다. 현재 신발에서 좌우 이동이 문제라면 발이 어퍼 안에서 움직이는지, 바닥의 기울기·굴림이 불편한지부터 나눠 확인할 수 있습니다.</p><h2>한국2E 상품과 사이즈 상태</h2><p>확인한 두 상품은 모두 보통(2E), 정가 249,000원·확인시 판매 199,200원이었습니다. 같은 SKU가 MEN/WOMEN 목록에 함께 노출되지만 상품 자체 성별 명시는 미확인이라 남녀 전용·공용을 확정하지 않습니다. 별도 한국4E와 나머지 판매처 재고도 미확인입니다.</p><div class="table-wrap"><table><thead><tr><th>확인 상품</th><th>당시 선택 가능 사이즈</th></tr></thead><tbody><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12337&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC268999</a></td><td>250/255/260/265/270/275/280/285mm</td></tr><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12099&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC267281</a></td><td>250/255/260/265/270/275/280/285/290mm</td></tr></tbody></table></div><p>사이즈 UI 관찰이며 결제·배송 재고 보장은 아닙니다. <a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GC268999-D.jpg" target="_blank" rel="noopener noreferrer">공식 상세 이미지</a>에서2E·한쪽 무게 기준을 확인했습니다. 이미지 제조년월은 출시일이 아닙니다.</p>
+<h2>폭 이름보다 혀·끈·뒤쪽 고정을 확인</h2><p>한국2E는 확인한 기본형 표기이며 독립 실험실 내부 폭은 미확인입니다. 한국 평균 발볼103mm·임계값108mm와 연결해 압박을 예측한 기존 설명은 철회했습니다. 길이를 올리면 앞코가 편해져도 중족·뒤쪽 고정이 달라질 수 있으므로 모든 사람에게 반업을 처방하지 않습니다.</p>
+<h2>마하X3와의 고정 가격 비교·400km 비용은 제거</h2><p>확인한 프로 상품 정가는249,000원·당시 판매199,200원입니다. 마하X3는 확인 상품의 모델 코드 충돌이 남아 단일 차액·동일 가격으로 비교하지 않습니다. 프로의400km 수명·km당623원과 모든PEBA보다 안정적인 폼이라는 주장도 확인하지 못했습니다. 실제 상품의 핏·전환이 해결하려는 문제에 맞는지로 비교할 수 있습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>출처와 확인하지 못한 것</h2><p><a href="https://www.doctorsofrunning.com/mizuno-hyperwarp-pro-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 동세대 원문</a> · <a href="https://runrepeat.com/search?q=Hyperwarp" target="_blank" rel="noopener noreferrer">RunRepeat 자체 검색</a> · <a href="https://runrepeat.com/shoe-pipeline" target="_blank" rel="noopener noreferrer">RunRepeat 테스트 계획</a></p><p>정확한 초대 모델의 RR 공개 랩·내부 너비·SA·에너지 리턴·AC/HA는 확보하지 못했습니다. 공시 수치를 실측으로 부르거나 후속2세대·다른 모델로 채우지 않습니다. 제품명과 평점만으로 임상 예방·치료·보편 수명·최적 페이스를 정하지 않습니다.</p>
 `,
     faqs: [
       {
-        question: '하이퍼워프 프로로 매일 훈련해도 되나요?',
-        answer:
-          '가능합니다. 카본 인퓨즈드 나일론 플레이트가 순수 카본보다 부드럽고 Enerzy XP 미드솔이 안정적이라 템포런부터 대회까지 활용할 수 있습니다. 다만 400km 내구성이라 주행거리가 많으면 운용 비용이 빠르게 올라갑니다.',
+        "question": "발목이 불안정하면 이 모델이 도움이 되나요?",
+        "answer": "임상적 예방·치료 우위는 확인하지 못했습니다. 리뷰어도 같은 플레어에 반대 반응을 보였으므로 실제 고정·전환과 증상을 확인하세요."
       },
       {
-        question: '마하 X 3 대신 이걸 사야 할 이유가 있나요?',
-        answer:
-          '발목이 불안정하거나 스택이 높은 트레이너에서 좌우 흔들림이 걱정된다면 하이퍼워프 프로의 극단적 측면 플레어가 도움이 됩니다. 가격은 둘 다 249,000원으로 같아 가격으로 갈리지는 않습니다.',
+        "question": "매일 신어도400km까지 보장되나요?",
+        "answer": "검증된400km 수명을 확보하지 못했습니다. 주행 거리만으로 성능이나 안전을 보장하지 않습니다."
       },
+      {
+        "question": "카본 함량은 얼마나 되나요?",
+        "answer": "이번 정확모델 원문에서 함량·정확 조성을 확인하지 못했습니다. DOR의 카본 혼합 나일론 명칭을 그대로 구분합니다."
+      }
     ],
   },
   {
-    id: 'mizuno-hyperwarp-pure-review',
-    slug: 'mizuno-hyperwarp-pure-review',
-    title: '미즈노 하이퍼워프 퓨어 후기 | 139g 극한 경량 — 미즈노 역사상 가장 가벼운 레이서',
-    description:
-      '하이퍼워프 퓨어는 139g으로 미즈노 레이싱화 역사상 가장 가벼운 모델입니다. PEBA 미드솔과 풀렝스 카본 플레이트, 34mm 로우 스택으로 5K~10K 단거리 기록 단축에 특화됐습니다. 309,000원, 예상 수명 150~250km(추정)로 순수 레이스데이 전용 무기입니다. 풀 마라톤에는 쿠션이 부족하니 용도를 좁혀서 접근해야 합니다.',
-    thumbnail: '/images/blog/mizuno-hyperwarp-pure-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
-    readingTime: 6,
-    tags: ['미즈노 하이퍼워프 퓨어', '초경량 레이싱화', 'PEBA 카본화', '5K 10K 레이서'],
+    id: "mizuno-hyperwarp-pure-review",
+    slug: "mizuno-hyperwarp-pure-review",
+    title: "하이퍼워프 퓨어 리뷰 — 한국137g·3mm 공시,139g과 다른 조건입니다",
+    description: "한국270mm 한쪽137g·34.5/31.5mm·3mm와 DOR139g·3.5mm를 구분합니다. 현재2E 상품·사이즈, 앞코와 로커를 비교하고200km 수명·10km 상한·질환 등급을 철회했습니다.",
+    thumbnail: "/images/blog/mizuno-hyperwarp-pure-review.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    updatedAt: "2026-11-09",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "하이퍼워프 퓨어",
+      "미즈노",
+      "137g",
+      "낮은 드롭"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>139g — 미즈노 레이싱화 역사상 가장 가볍습니다.</strong> 메타스피드 레이(129g) 다음가는 초경량 체급입니다</li>
-    <li><strong>34mm 로우 스택·3.5mm 드롭</strong>으로 5K~10K 단거리에 최적화됐습니다. 풀 마라톤에는 쿠션이 부족합니다</li>
-    <li><strong>309,000원에 예상 수명 150~250km(추정)</strong> — 이 사이트가 다룬 신발 중 km당 단가가 높은 축(약 1,240~2,060원, 2026-10-23 기준 현재 DB에서 5번째)입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>5K~10K 기록 단축을 노리는 엘리트~상급 러너 전용</strong>입니다. 풀 마라톤이 목표라면 스택이 더 높은 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>를 보세요.</p>
-  </div>
-</div>
-
-<h2>139g, 왜 이렇게까지 가벼운가</h2>
-<p>139g은 미즈노가 슈퍼슈즈 경쟁에 본격 참전했다는 선언에 가까운 무게입니다. PEBA 미드솔의 반응성과 풀렝스 카본 플레이트가 만드는 공격적인 라이드는 빠르게 달릴수록 진가를 발휘하도록 설계됐습니다. 다만 34mm 힐·30.5mm 전족부라는 로우 스택은 <strong>쿠션 여유가 얇다는 뜻</strong>이기도 합니다 — 풀 마라톤 30km 이후에는 이 여유가 바닥날 수 있습니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 좁고(narrow) 와이드 옵션이 없습니다. 발볼이 넓다면 매장에서 반드시 시착해보세요</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·신 스플린트 warning(경고), 아킬레스건·무릎 caution(주의)입니다. 3형제 중 가장 낮은 등급이라 하체 부하에 충분히 적응된 러너에게만 권합니다</li>
-  <li><strong>"평발인데 신어도 되나요?"</strong> — 평발 호환성이 poor(부적합)입니다. 안정성이 부족해 무릎 부담이 커질 수 있으니 피하는 것을 권합니다</li>
-</ul>
-
-<h2>거리를 좁혀서 접근해야 하는 신발</h2>
-<p>같은 라인의 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>(170g·38mm)와는 거리로 갈립니다. 퓨어는 5K~10K에 최적화돼 있어 풀코스가 목표라면 스택이 더 높은 엘리트가 맞습니다. 3.5mm의 낮은 드롭이 전방 추진을 강하게 유도하는 구조라 하체 부하가 크므로, 인터벌 등으로 충분히 적응된 러너가 아니면 부담이 됩니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>309,000원·예상 수명 150~250km(추정) 기준 km당 약 1,240~2,060원입니다. 수명 범위의 가운데값으로 비교하면 이 사이트 신발 DB에서 5번째로 운용 비용이 높습니다(2026-10-23 기준). 가성비를 논할 신발이 아니라, <strong>5K/10K 대회에서 PB 갱신을 노리는 투자</strong>로 접근해야 합니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>5K/10K 기록 단축을 노리는 엘리트~상급 러너</strong></li>
-  <li><strong>전족부 착지에 익숙하고 하체 부하에 적응된 러너</strong></li>
-  <li>반대로 <strong>풀 마라톤이 목표이거나 평발·과내전이 있는 러너</strong>라면 <a href="/shoes/mizuno-hyperwarp-elite">하이퍼워프 엘리트</a>나 다른 모델이 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>하이퍼워프 퓨어는 용도를 극단적으로 좁힌 신발입니다. 139g이라는 숫자 자체가 목적이고, 그 목적에 맞는 거리(5K~10K)와 러너(전족부 착지, 충분한 적응)에게만 투자 가치가 있습니다. 범용성을 기대하고 사면 실망할 신발입니다.</p>
+<div class="tldr"><span class="tldr-label">먼저 확인할 세 가지</span><ul><li>한국 두 상품은270mm 한쪽 약137g·34.5/31.5mm·3mm로 공시합니다.</li><li>DOR 남성 US9 소개는139g·34/30.5mm·3.5mm이며 독립 실측과 다릅니다.</li><li>확인 한국2E 상품은309,000원·당시 할인247,200원입니다.</li></ul></div><p><strong>원문 재확인: 2026-11-09.</strong> 실험실 검체, 제조사 공시, 리뷰어 개인 경험을 나누어 정리했습니다. 한국 가격은 확인한 상품 코드의 조건이며 재고와 할인은 달라질 수 있습니다.</p>
+<h2>서로 다른 공시를 같은 숫자로 보정하지 않습니다</h2><div class="table-wrap"><table><thead><tr><th>출처·조건</th><th>무게</th><th>힐/전족부·드롭</th></tr></thead><tbody><tr><td>한국 공식270mm 한쪽</td><td>약137g</td><td>34.5/31.5mm·3mm</td></tr><tr><td>DOR 소개 남성 US9</td><td>139g</td><td>34/30.5mm·3.5mm</td></tr><tr><td>독립 RR 동세대 랩</td><td>미확인</td><td>미확인</td></tr></tbody></table></div>
+<p>기존 글은139g을 유일한 공시·실측처럼 사용했습니다. 이번 한국 두 상세 이미지는137g·3mm를 안내해 출처 조건을 나눴습니다. 어느 값도 다른 쪽의 오타라고 단정하지 않습니다. 후속 퓨어2의 무게와 스택도 초대 모델의 측정으로 옮기지 않습니다.</p>
+<h2>낮은 플랫폼·카본·완만한 로커의 조합</h2><p>한국 공식은 ENERZY XP와 Smooth Speed Plate/3D carbon plate로, DOR는 전장 PEBA 중창·카본과 낮고 완만한 로커로 설명합니다. 정확한 폼 화학 분석·카본 함량은 미확인입니다. 낮은 드롭이 모든 발을 전족 착지로 강제하거나 특정 기록에서만 효과가 난다는 결론을 만들지 않습니다.</p>
+<h2>사이즈를 올려도 앞길이 여유는 다를 수 있습니다</h2><p>DOR David(남성 US9.5)는 정사이즈, 넓은 중족골 부위와 빠른 발가락 테이퍼·좋은 고정을 느꼈습니다. Andrea는 평소 여성 US9.5에서 US10으로 올린 뒤에도 앞길이 여유가 크지 않았지만 높이·앞볼은 충분하다고 적었습니다. 거친 내부 오버레이 때문에 양말 착화를 선호했습니다. David의 종아리 부담 경험은 다른 러너의 질환 예측이 아닙니다.</p><h2>한국2E 상품과 사이즈 상태</h2><p>확인한 두 상품은 모두 보통(2E), 정가 309,000원·확인시 판매 247,200원이었습니다. 같은 SKU가 MEN/WOMEN 목록에 함께 노출되지만 상품 자체 성별 명시는 미확인이라 남녀 전용·공용을 확정하지 않습니다. 별도 한국4E와 나머지 판매처 재고도 미확인입니다.</p><div class="table-wrap"><table><thead><tr><th>확인 상품</th><th>당시 선택 가능 사이즈</th></tr></thead><tbody><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12335&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC268799</a></td><td>250/255/260/265/270/275/280/285/290mm</td></tr><tr><td><a href="https://kor.mizuno.com/product/detail.html?product_no=12097&amp;cate_no=803&amp;display_group=1&amp;mall=sports" target="_blank" rel="noopener noreferrer">J1GC267081</a></td><td>245/250/260/270/275/280/285/290mm</td></tr></tbody></table></div><p>사이즈 UI 관찰이며 결제·배송 재고 보장은 아닙니다. <a href="https://kor.mizuno.com/web/product/26aw_detail_page/J1GC268799-D.jpg" target="_blank" rel="noopener noreferrer">공식 상세 이미지</a>에서2E·한쪽 무게 기준을 확인했습니다. 이미지 제조년월은 출시일이 아닙니다.</p>
+<h2>‘10km까지만’, ‘30km 후 쿠션 소진’은 철회했습니다</h2><p>확인한 공시와 소수 개인 경험으로 모든 러너의 거리 상한을 정할 수 없습니다. 기존의 무릎·족저근막·정강이 위험 등급,150~250km 수명·km당 단가 순위, 전족 착지 전용과 반업 필수도 근거가 부족해 제거했습니다. 다른 PEBA의450km 시험을 이 모델의200km 수명으로 전용하지 않습니다.</p><p>가벼움 때문에 관심이 있다면 실제 규격에서 발가락 위·끝 공간과 로커 전환을 비교하세요. 길이가 맞아도 굽힘·전환이 불편하다면 무게 하나로 결정하지 않을 수 있습니다.</p><p>평소 신는 양말과 인솔을 준비해 엄지 위 높이, 앞쪽 길이, 중족부 압박, 뒤꿈치 들림을 따로 확인하세요. 끈을 조여 압박을 견뎌야만 고정되는지도 확인할 항목입니다. 직접 착화한 상품의 교환·반품 조건을 먼저 읽으세요. 통증·저림이 생기면 적응 과정이라고 참고 계속 달리기보다 사용을 멈추고 필요한 평가를 받으세요.</p><h2>출처와 확인하지 못한 것</h2><p><a href="https://www.doctorsofrunning.com/mizuno-hyperwarp-pure-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 동세대 원문</a> · <a href="https://runrepeat.com/search?q=Hyperwarp" target="_blank" rel="noopener noreferrer">RunRepeat 자체 검색</a> · <a href="https://runrepeat.com/shoe-pipeline" target="_blank" rel="noopener noreferrer">RunRepeat 테스트 계획</a></p><p>정확한 초대 모델의 RR 공개 랩·내부 너비·SA·에너지 리턴·AC/HA는 확보하지 못했습니다. 공시 수치를 실측으로 부르거나 후속2세대·다른 모델로 채우지 않습니다. 제품명과 평점만으로 임상 예방·치료·보편 수명·최적 페이스를 정하지 않습니다.</p>
 `,
     faqs: [
       {
-        question: '이 신발로 풀 마라톤을 뛸 수 있나요?',
-        answer:
-          '권장하지 않습니다. 34mm 로우 스택이라 쿠션 여유가 얇아 30km 이후 충격 흡수가 부족할 수 있습니다. 풀 마라톤이 목표라면 38mm 스택의 하이퍼워프 엘리트를 권합니다.',
+        "question": "137g과139g 중 어느 것이 맞나요?",
+        "answer": "한국270mm 한쪽 약137g과 DOR 남성US9 소개139g은 조건이 다른 공시입니다. 독립 랩 실측으로 병합하지 않습니다."
       },
       {
-        question: '평발인데 신어도 되나요?',
-        answer:
-          '권장하지 않습니다. 평발 호환성이 poor로 분류돼 있고 안정성도 낮아, 무릎이나 발 안쪽에 부담이 커질 수 있습니다.',
+        "question": "풀코스에는 절대 신으면 안 되나요?",
+        "answer": "이번 근거로 모두에게 적용할10km 상한·풀코스 금지를 정하지 않습니다. 실제 주행 반응·압박·전환과 개인의 준비를 확인해야 합니다."
       },
+      {
+        "question": "200km에서 성능이 끝나나요?",
+        "answer": "이 모델의 검증된200km 수명은 확보하지 못했습니다. 기존 km당 비용과 수명 순위를 철회했습니다."
+      }
     ],
   },
   {

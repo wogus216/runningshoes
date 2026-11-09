@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-09. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'mizuno-hyperwarp-pure',
   slug: 'mizuno-hyperwarp-pure',
@@ -15,98 +16,152 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  status: 'new',
   price: 309000,
-  description: '미즈노의 초경량 엘리트 레이싱화. 139g이라는 극한의 경량에 PEBA 미드솔과 카본 플레이트를 결합해 5K~10K 단거리 레이스에 특화되었습니다.',
-  oneliner: '139g 극한 경량, 5K/10K 단거리 특화 레이서',
-  editorComment: '하이퍼워프 퓨어는 139g이라는 경이적 무게로 미즈노 레이싱 역사를 새로 썼습니다. PEBA 미드솔과 카본 플레이트가 만드는 공격적인 라이드는 빠르게 달릴수록 진가를 발휘합니다. 34mm 힐/30.5mm 전족부의 로우 스택과 3.5mm 드롭은 자연스러운 전족부 착지를 유도하며, 5K~10K에서 기록 단축을 노리는 엘리트에게 최적화되어 있습니다. 30만 9천원으로 비싸지만, 200km 내구성의 순수 레이싱 무기입니다. 반 사이즈 업 권장. PEBA 슈퍼폼의 짧은 수명은 실험으로 확인된 사실입니다 — 450km 실도로 마모에서 굽힘 에너지 리턴 −24.6%. 200km 수명 표기를 감안해 킬로미터를 아껴 쓰세요.\n\n사이즈·구매 가이드: 토박스가 좁은 내로우 폭이고 와이드 옵션이 없으므로 발볼 넓은 러너는 반드시 매장에서 시착 후 반 사이즈 업을 권장합니다. 309,000원에 km당 약 1,545원은 순수 레이스데이 투자로, 5K/10K 대회 기록 단축을 목표로 하는 경우에만 선택하세요. 유사한 단거리 레이서로 메타스피드 레이나 스트릭플라이 2를 함께 비교해보세요.',
-  tags: ['레이싱', '카본', '초경량', '단거리', 'PEBA'],
-
+  description: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커 구조의 하이퍼워프 퓨어. 한국 제조사 공시·270mm 한쪽 (독립 실측 아님) 137g·34.5/31.5mm. 한국 확인 가격 309,000원.',
+  oneliner: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커 · 137g (한국 제조사 공시·270mm 한쪽 (독립 실측 아님))',
+  editorComment: '2026-11-09 원문 재확인. 한국 확인 두 상품은 보통(2E), 정가 309,000원·확인시 판매 247,200원입니다. J1GC268799: 250/255/260/265/270/275/280/285/290mm 선택 가능; J1GC267081: 245/250/260/270/275/280/285/290mm 선택 가능. 같은 SKU가 MEN/WOMEN 목록에 함께 보이나 상품 자체 성별 명시는 미확인이라 남녀 전용·공용을 확정하지 않습니다. 다른 한국4E 상품도 미확인입니다. 한국 공시는 270mm 한쪽 약137g·34.5/31.5mm·3mm입니다. 독립 랩 실측이 아니며 상세 이미지의 제조년월은 출시일이 아닙니다. DOR 소개는 남성 US9 139g·34/30.5mm·3.5mm입니다. 한국 공시 34.5/31.5mm·3mm·270mm 한쪽 약137g과 DOR 34/30.5mm·3.5mm·남성 US9 139g은 다릅니다. RR 독립 실측을 확보하지 못해 어느 공시도 실측으로 승격하지 않습니다. 다른 PEBA의450km 연구를 이 모델200km 수명이나 풀코스30km 후 쿠션 소진 증거로 쓰지 않습니다. DOR David(남성 US9.5)는 정사이즈, 넓은 중족골 부위와 빠른 발가락 테이퍼·좋은 고정을 느꼈으며 본인의 종아리 부담을 더 느꼈다고 적었습니다. Andrea는 평소 여성 US9.5에서 US10으로 올렸어도 앞길이 여유가 크지 않았지만 높이·앞볼·고정은 편했다고 적었습니다. 개인의 착지·사이징 경험으로 모든 러너의 10km 상한이나 반업 필수를 정하지 않습니다. 정확한 동세대 RR의 내부 최광폭·엄지 너비·높이는 미확인입니다. 한국 기본2E를 독립 검체 치수나 모든 넓은 발의 적합성으로 바꾸지 않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본',
+    '초경량',
+    '단거리',
+    'PEBA',
+  ],
   specs: {
-    weight: 139,
+    weight: 137,
     cushioning: 5,
     responsiveness: 10,
     stability: 4,
-    drop: 4,
-    durability: 200,
+    drop: 3,
   },
-
   biomechanics: {
-    stackHeight: { heel: 34, forefoot: 30.5 },
-    drop: 3.5,
+    stackHeight: {
+      heel: 34.5,
+      forefoot: 31.5,
+    },
+    drop: 3,
     carbonPlate: true,
-    plateType: 'full-length carbon',
-    midsoleType: 'PEBA',
-    optimalPace: '2:50-4:00 min/km',
+    plateType: 'full-length carbon (official/DOR)',
+    midsoleType: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'warning',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'caution',
-    shinSplints: 'warning',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'excellent',
   },
-
   targetUsers: {
-    recommended: ['5K/10K 엘리트 레이서', '서브3 마라토너', '전족부 착지 러너', '초경량 선호'],
-    notRecommended: ['입문 러너', '데일리 훈련용', '장거리 마라톤', '발볼 넓은 러너', '힐스트라이커'],
+    recommended: [
+      '실제 2E 상품의 앞코·발등·힐 고정을 시착 비교하려는 러너',
+      '낮은 로커·판재 전환이 자신의 주행에 맞는지 확인하려는 러너',
+    ],
+    notRecommended: [
+      '직접 착화에서 앞코 압박·전환 불편이 생기는 경우',
+      '다른 세대·다른 모델 실측이 혼용된 매물',
+    ],
   },
-
-  features: ['139g 극한 경량', 'PEBA 미드솔', '풀렝스 카본 플레이트', '3.5mm 로우 드롭', '5K/10K 특화'],
-
+  features: [
+    'ENERZY XP · 전장 카본 · 낮고 완만한 로커',
+    '137g · 34.5/31.5mm · 드롭 3mm (한국 제조사 공시·270mm 한쪽 (독립 실측 아님))',
+    '공식 Smooth Speed Plate/3D carbon plate, DOR 전장 카본. 판재와 폼 명칭만으로 전족 착지를 강제로 유도한다고 단정하지 않습니다.',
+    '정확한 동세대 RR의 내부 최광폭·엄지 너비·높이는 미확인입니다. 한국 기본2E를 독립 검체 치수나 모든 넓은 발의 적합성으로 바꾸지 않습니다.',
+  ],
   priceAnalysis: {
     msrp: 309000,
-    costPerKm: 1545,
     valueRating: 5,
     priceTier: 'super-premium',
-    // 2026-10-16: 정가 399,000→309,000 정정 후 가격대(±3만) 기준으로 교체. 메타스피드 레이(399,000)·스트릭플라이 2(219,000)는
-    // 특성이 가장 가까워 similarShoes 에 남긴다.
-    alternatives: ['nike-vaporfly-4', 'adidas-adios-pro-4', 'saucony-endorphin-elite-2'],
+    alternatives: [
+      'nike-vaporfly-4',
+      'adidas-adios-pro-4',
+      'saucony-endorphin-elite-2',
+    ],
   },
-
   detailedSpecs: {
-    weight: '139g (US M9)',
-    stackHeight: '힐 34mm / 포어풋 30.5mm',
-    drop: '3.5mm',
-    midsole: 'PEBA (초경량 폼)',
-    plate: '풀렝스 카본 플레이트',
-    outsole: '최소 러버',
-    upper: '초경량 메쉬',
-    width: '좁음 (반 사이즈 업 권장)',
-    durability: '200km',
-    price: '₩309,000',
-    costPerKm: '약 ₩1,545/km (200km 기준)',
-    footType: '전족부/중족부 착지',
-    landingPattern: '전족부 착지',
+    weight: '137g (한국 제조사 공시·270mm 한쪽 (독립 실측 아님)). 한국 공시는 270mm 한쪽 약137g·34.5/31.5mm·3mm입니다. 독립 랩 실측이 아니며 상세 이미지의 제조년월은 출시일이 아닙니다. DOR 소개는 남성 US9 139g·34/30.5mm·3.5mm입니다.',
+    stackHeight: '34.5/31.5mm (한국 제조사 공시·270mm 한쪽 (독립 실측 아님), 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '3mm (한국 제조사 공시·270mm 한쪽 (독립 실측 아님)). 한국 공시는 270mm 한쪽 약137g·34.5/31.5mm·3mm입니다. 독립 랩 실측이 아니며 상세 이미지의 제조년월은 출시일이 아닙니다. DOR 소개는 남성 US9 139g·34/30.5mm·3.5mm입니다.',
+    midsole: 'ENERZY XP · 전장 카본 · 낮고 완만한 로커. 독립 랩 SA·에너지 리턴·AC/HA 미확인. 한국 공시 34.5/31.5mm·3mm·270mm 한쪽 약137g과 DOR 34/30.5mm·3.5mm·남성 US9 139g은 다릅니다. RR 독립 실측을 확보하지 못해 어느 공시도 실측으로 승격하지 않습니다. 다른 PEBA의450km 연구를 이 모델200km 수명이나 풀코스30km 후 쿠션 소진 증거로 쓰지 않습니다.',
+    plate: '공식 Smooth Speed Plate/3D carbon plate, DOR 전장 카본. 판재와 폼 명칭만으로 전족 착지를 강제로 유도한다고 단정하지 않습니다.',
+    width: '동세대 독립 랩 내부 치수 미확인. 정확한 동세대 RR의 내부 최광폭·엄지 너비·높이는 미확인입니다. 한국 기본2E를 독립 검체 치수나 모든 넓은 발의 적합성으로 바꾸지 않습니다.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 확인 두 상품은 보통(2E), 정가 309,000원·확인시 판매 247,200원입니다. J1GC268799: 250/255/260/265/270/275/280/285/290mm 선택 가능; J1GC267081: 245/250/260/270/275/280/285/290mm 선택 가능. 같은 SKU가 MEN/WOMEN 목록에 함께 보이나 상품 자체 성별 명시는 미확인이라 남녀 전용·공용을 확정하지 않습니다. 다른 한국4E 상품도 미확인입니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 88,
-      text: '139g은 메타스피드 레이(129g) 다음으로 가벼운 수치이며, 미즈노가 드디어 슈퍼슈즈 경쟁에 본격 참전한 결과물입니다. PEBA 미드솔의 반응성이 뛰어나고 풀렝스 카본 플레이트가 추진력을 더하지만, 34mm 로우 스택으로 풀마라톤에는 쿠셔닝이 부족할 수 있습니다. 3.5mm 드롭이 전족부 착지를 유도하며, 2분50초~4분/km 엘리트 페이스에서 진가를 발휘합니다. 토박스가 좁아 발볼 넓은 한국 러너는 반드시 매장에서 시착해야 하며, 반 사이즈 업이 필수이고 와이드 옵션은 없습니다. 30만 9천원에 200km 내구성이라 km당 약 1,545원으로 가성비는 낮지만, 5K/10K에서 기록 단축을 노리는 엘리트에게는 투자 가치가 있습니다. 평발이나 과내전 러너는 안정성 부족으로 무릎 부담이 커질 수 있으니 피하세요. 한국 마라톤 대회 5K/10K 부문에서 PB 갱신을 목표로 하는 러너의 최종 병기입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/mizuno-hyperwarp-pure-review-2026/',
+      text: '한국 공시는 270mm 한쪽 약137g·34.5/31.5mm·3mm입니다. 독립 랩 실측이 아니며 상세 이미지의 제조년월은 출시일이 아닙니다. DOR 소개는 남성 US9 139g·34/30.5mm·3.5mm입니다. 한국 공시 34.5/31.5mm·3mm·270mm 한쪽 약137g과 DOR 34/30.5mm·3.5mm·남성 US9 139g은 다릅니다. RR 독립 실측을 확보하지 못해 어느 공시도 실측으로 승격하지 않습니다. 다른 PEBA의450km 연구를 이 모델200km 수명이나 풀코스30km 후 쿠션 소진 증거로 쓰지 않습니다.',
     },
     {
-        userType: '예상 적합 — 10K 이하 단거리 기록 도전',
-        text: '139g의 극단적 경량에 초점을 맞춘 단거리 레이서입니다. PEBA 미드솔과 카본 플레이트가 전족부에서 스냅을 만들고, 3.5mm의 낮은 드롭이 전방 추진을 유도합니다. 그만큼 쿠션 여유가 적어 충격이 다리로 직접 전달되는 구조라, 인터벌 등으로 하체 부하에 적응된 러너가 아니면 부담이 큽니다. 거리도 10K 안팎을 상한으로 보는 것이 현실적입니다. 토박스가 좁아 발볼이 넓다면 반 치수를 올려도 시착이 필요하고, 내구성 200km로 순수 레이스 전용입니다.',
-      },
-    {
-        userType: '모델 선택 — 퓨어 vs 엘리트(거리로 갈린다)',
-        text: '같은 라인에서 퓨어와 엘리트는 거리로 갈립니다. 퓨어는 139g·34mm 스택으로 5K~10K에 최적화돼 있어, 풀코스에서는 30km 이후 쿠션 여유가 바닥납니다. 풀코스가 목표라면 38mm 스택의 엘리트가 맞습니다. PEBA 미드솔과 카본 플레이트의 반응성 자체는 단거리에서 확실하지만, 3.5mm의 낮은 드롭이 전족부 착지를 강하게 유도하는 구조라 하체 부하가 큽니다. 무릎이 약하거나 평발 성향이면 안정성이 부족해 권하지 않습니다. 309,000원·예상 수명 150~250km(추정) 기준 km당 약 1,240~2,060원이고, 토박스가 좁은 데다 와이드 옵션이 없습니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/mizuno-hyperwarp-pure-review-2026/',
+      text: 'DOR David(남성 US9.5)는 정사이즈, 넓은 중족골 부위와 빠른 발가락 테이퍼·좋은 고정을 느꼈으며 본인의 종아리 부담을 더 느꼈다고 적었습니다. Andrea는 평소 여성 US9.5에서 US10으로 올렸어도 앞길이 여유가 크지 않았지만 높이·앞볼·고정은 편했다고 적었습니다. 개인의 착지·사이징 경험으로 모든 러너의 10km 상한이나 반업 필수를 정하지 않습니다.',
+    },
   ],
-
-  similarShoes: ['asics-metaspeed-ray', 'nike-streakfly-2', 'mizuno-hyperwarp-elite'],
+  similarShoes: [
+    'asics-metaspeed-ray',
+    'nike-streakfly-2',
+    'mizuno-hyperwarp-elite',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [
+  ],
+  verification: {
+    checkedAt: '2026-11-09',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 J1GC268799 · 보통2E',
+        url: 'https://kor.mizuno.com/product/detail.html?product_no=12335&cate_no=803&display_group=1&mall=sports',
+        note: '정가·표시 할인은 확인 상품 범위. 실제 재고는 변동 가능.',
+      },
+      {
+        label: 'J1GC268799 공식 상세 이미지',
+        url: 'https://kor.mizuno.com/web/product/26aw_detail_page/J1GC268799-D.jpg',
+        note: '270mm 한쪽 무게·굽높이·offset·2E 확인. 제조년월은 출시일 아님.',
+      },
+      {
+        label: '한국 J1GC267081 · 보통2E',
+        url: 'https://kor.mizuno.com/product/detail.html?product_no=12097&cate_no=803&display_group=1&mall=sports',
+        note: '정가·표시 할인은 확인 상품 범위. 실제 재고는 변동 가능.',
+      },
+      {
+        label: 'J1GC267081 공식 상세 이미지',
+        url: 'https://cafe24img.poxo.com/mizunokorea/web/product/26aw_detail_page/J1GC267081-D.jpg',
+        note: '270mm 한쪽 무게·굽높이·offset·2E 확인. 제조년월은 출시일 아님.',
+      },
+      {
+        label: 'RunRepeat 자체 검색 확인 범위',
+        url: 'https://runrepeat.com/search?q=Hyperwarp',
+        note: '동세대 정확모델 랩 미확보. 후속 Elite2/Pure2를 전용하지 않음.',
+      },
+      {
+        label: 'RunRepeat 정확 모델 테스트 계획 확인 범위',
+        url: 'https://runrepeat.com/shoe-pipeline',
+        note: 'Pro=Will be tested. Elite2/Pure2는 초대와 별개 모델.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/mizuno-hyperwarp-pure-review-2026/',
+        note: '한국 공시는 270mm 한쪽 약137g·34.5/31.5mm·3mm입니다. 독립 랩 실측이 아니며 상세 이미지의 제조년월은 출시일이 아닙니다. DOR 소개는 남성 US9 139g·34/30.5mm·3.5mm입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.',
+    ],
+  },
 };
