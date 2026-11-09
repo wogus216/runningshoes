@@ -1,9 +1,9 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'on-cloudmonster-3-hyper-lightspray',
   slug: 'on-cloudmonster-3-hyper-lightspray',
-  // 검색 수요 0 (GSC 2026-06 확인) — 동일 시리즈 '클라우드몬스터 3 하이퍼' 검색을 갉아먹어 색인 제외
   noindex: true,
   brand: 'On',
   name: '클라우드몬스터 3 하이퍼 라이트스프레이',
@@ -16,98 +16,118 @@ export const shoe: Shoe = {
   ],
   category: '쿠션화',
   rating: 4.5,
-  price: 319000,
-  description:
-    'On의 LightSpray 로봇 스프레이 일체형 어퍼를 적용한 최상위 초경량 슈퍼트레이너. 일반 하이퍼와 같은 Helion HF 이중 밀도 미드솔에 33g 경량 어퍼를 더해 205g을 달성했고, 맥스쿠션 슈퍼트레이너 중 최상위급 안정성과 통기성을 제공합니다.',
-  oneliner: '로봇이 만든 어퍼, 205g 초경량 슈퍼트레이너',
-  editorComment:
-    '라이트스프레이는 로봇 팔이 폴리머 필라멘트 1.5km를 미드솔 위에 직접 분사해 3분 만에 어퍼를 완성하는 On의 플래그십 제조 기술입니다. 솔기·끈·힐 카운터가 없는 일체형 어퍼(33g)로 일반 클라우드몬스터 3 대비 약 96g(32%)을 덜어내 205g을 만들었고, 미드솔은 일반 하이퍼와 동일한 Helion HF(상단 PEBA계) + Helion(하단) 이중 밀도라 힐 45mm 맥스쿠션에도 "믿기 힘들 만큼 안정적"이라는 평가를 받습니다(BITR A티어, RTR 9.31). 통기성도 최상위권이죠. 다만 어퍼에 패딩이 전혀 없어 초기 아킬레스 자극이 있을 수 있어 On이 전용 보호 양말을 동봉하며, 끈 없는 빡빡한 핏이라 착화에 적응이 필요합니다. 내측 아치 지지가 강해 족저근막염 이력자는 주의하고, 와이드 옵션이 없어 발볼 넓은 한국 러너에겐 선택지가 없습니다. 가격은 319,000원으로 국내 슈퍼트레이너 최고가권 — "로봇 제조 어퍼"라는 기술 프리미엄이 분명합니다. 같은 성능을 6만 원 싸게 원하면 패딩 있는 일반 하이퍼가, 가성비라면 다른 무플레이트 슈퍼트레이너가 합리적입니다.\n\n사이즈·구매 가이드: 토박스가 표준이나 끈 없는 일체형 어퍼 특성상 핏이 빡빡하고 On은 와이드 옵션이 없으니 발볼 넓은 러너에게는 적합하지 않습니다. 예상 수명 480~640km(추정) 기준 km당 약 500~660원으로 On 라인업 최고 비용이므로 주요 훈련·레이스 전용으로 쓰는 것이 현명합니다. 6만 원 저렴한 클라우드몬스터 3 하이퍼와 성능을 비교해 보세요.',
-  tags: ['쿠션화', '슈퍼트레이너', '초경량', '라이트스프레이'],
+  description: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 구조. 한국공식공시, 기준 사이즈미공시 205g·드롭 6mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",
+  oneliner: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층 · 205g (한국공식공시, 기준 사이즈미공시)",
+  editorComment: "2026-11-10 원문 재확인. 한국공식캐시유니섹스 3UG10014837 Regular표시가격 319,000원·한짝 205g(사이즈미공시)·6mm 입니다. 전용 Elite Run Sock High Hyper동봉표시를확인했지만임상보호효과·양말필수규칙은아닙니다. 현재 가격·선택재고·한국 와이드는미확인입니다. 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다. 정확 LS개별 DOR 리뷰는미확인입니다. 기본 3Hyper리뷰의 LS언급을별도 LS착화검증으로승격하지않았습니다. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.",
+  tags: [
+    '쿠션화',
+    '슈퍼트레이너',
+    '초경량',
+    '라이트스프레이',
+  ],
   specs: {
     weight: 205,
     cushioning: 10,
     responsiveness: 8,
     stability: 8,
     drop: 6,
-    durability: 560, // 2026-10-23: detailedSpecs.durability 표기(480-640km 중간값)에 맞춤 — 종전 400
-  },
-  biomechanics: {
-    stackHeight: { heel: 45, forefoot: 39 },
-    drop: 6,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'Helion HF + Helion (이중 밀도)',
-    optimalPace: '4:20-5:40 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'excellent',
   },
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'excellent',
   },
   priceAnalysis: {
-    msrp: 319000,
-    streetPrice: 319000,
-    costPerKm: 570,
     valueRating: 5,
     priceTier: 'super-premium',
-    alternatives: ['on-cloudmonster-3-hyper', 'asics-superblast-3', 'saucony-endorphin-trainer'],
-    valueAdvantages: ['로봇 스프레이 일체형 어퍼(205g)', '맥스쿠션 중 최상위급 안정성', '최상위 통기성', '전용 보호 양말 동봉'],
+    alternatives: [
+      'on-cloudmonster-3-hyper',
+      'asics-superblast-3',
+      'saucony-endorphin-trainer',
+    ],
   },
   targetUsers: {
-    recommended: ['최신 제조 기술과 극강 경량(205g)을 원하는 러너', '통기성·안정성을 최우선하는 러너', '장거리와 템포를 한 켤레로 소화하려는 러너'],
-    notRecommended: ['가성비가 가장 중요한 러너', '발볼 넓은 러너(와이드 옵션 없음)', '족저근막염·아치 통증 이력자', '맨발 착화를 선호하는 러너'],
+    recommended: [
+      "끈없는 LightSpray의실제압박·고정을확인하려는러너",
+      "공식공시와미확인독립 랩을구분하려는러너",
+    ],
+    notRecommended: [
+      "끈조절없는핏에서압박·힐 슬립이해결되지 않는 경우",
+      "일반 3Hyper랩수치를 LS실측이라고안내한매물",
+    ],
   },
   features: [
-    'LightSpray 로봇 스프레이 일체형 어퍼(33g, 솔기·끈 없음)',
-    '205g — 일반 클라우드몬스터 3 대비 약 96g 경량',
-    'Helion HF + Helion 이중 밀도, 힐 45mm 맥스쿠션',
-    '높은 스택 대비 최상위급 안정성과 통기성',
-    '아킬레스 보호 전용 양말 동봉',
+    'LightSpray끈없는어퍼 · Helion HF위층·Helion아래층',
+    "205g · 드롭 6mm (한국공식공시, 기준 사이즈미공시), 스택 미확인",
+    "정확 LightSpray Cloudmonster3Hyper는공식이플레이트없음을명시합니다. 기본 3Hyper랩·핏을 LS로대입하지않습니다.",
+    "한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다.",
   ],
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 88,
-      text: '"로봇이 만든 어퍼"라는 화제성만큼이나 실제 완성도가 높은 슈퍼트레이너입니다. 일반 하이퍼와 같은 Helion HF 이중 밀도 미드솔을 쓰면서 어퍼만 라이트스프레이로 바꿔 205g까지 내렸고, 힐 45mm 맥스쿠션인데도 안정성이 맥스쿠션 트레이너 중 최상위권입니다. 통기성도 격자 구조 덕에 뛰어나 여름 장거리에 강합니다. 다만 어퍼에 패딩이 없어 전용 양말 착용이 사실상 필수이고, 끈 없는 핏이라 착화 적응이 필요합니다. 내측 아치 지지가 강해 족저근막염 이력자는 신중해야 하며, 와이드가 없어 발볼 넓은 러너는 선택이 어렵습니다. 319,000원은 같은 미드솔의 일반 하이퍼(259,000원)보다 6만 원 비싼데, 그 차액은 순수하게 경량 어퍼와 제조 기술 프리미엄입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837',
+      text: "정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다.",
     },
     {
-        userType: '모델 선택 — 슈퍼트레이너 중 최경량 지향',
-        text: '슈퍼트레이너군에서 무게를 최우선으로 둘 때의 선택지입니다. 205g으로 같은 급 경쟁 모델보다 가볍고, 일체형 어퍼라 발과 신발이 붙어 움직이는 감각이 강합니다. 45mm의 높은 스택인데도 흔들림이 적어 30km 장거리에서도 안정적이며, 통기성이 좋아 한여름에 유리합니다. 다만 끈이 없어 당겨 신는 구조라 초기 착용이 어색하고, 조임을 조절할 수 없습니다. 얇은 양말을 신으면 뒤꿈치가 쓸릴 수 있어 두께 확인이 필요합니다. 가격대가 가장 큰 허들입니다.',
-      },
-    {
-        userType: '예상 적합 — 고스택인데 무게를 줄이려는 데일리',
-        text: '힐 45mm의 높은 스택을 유지하면서 205g까지 무게를 줄인 조합이 이 모델의 핵심입니다. 보통 스택이 높으면 좌우 흔들림이 커지는데, 플랫폼 설계로 5:00/km 안팎까지 페이스를 올려도 접지가 흔들리지 않는 편입니다. 로봇 분사 방식의 일체형 어퍼라 통기성이 좋아 한여름 낮 러닝에서 열감이 덜합니다. 다만 끈이 없는 구조라 초기 며칠은 발등 압박이 있을 수 있고, 조임 정도를 조절할 수 없다는 제약이 있습니다. 319,000원으로 데일리 중에서는 진입 가격이 매우 높은 편입니다.',
-      },
+      userType: '원문 기반 확인 범위 · 착화 후기 미확인',
+      source: 'editor',
+      sourceUrl: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837',
+      text: "정확 LS개별 DOR 리뷰는미확인입니다. 기본 3Hyper리뷰의 LS언급을별도 LS착화검증으로승격하지않았습니다.",
+    },
   ],
   detailedSpecs: {
-    weight: '205g (공식, M US8.5 / 실측 약 210g)',
-    stackHeight: '힐 45mm / 포어풋 39mm',
-    drop: '6mm',
-    midsole: 'Helion HF + Helion (이중 밀도)',
-    plate: '없음',
-    outsole: '러버 아웃솔 (RTR 45마일 주행 후 눈에 띄는 마모 없음 — 정성 평가. RunRepeat에 LightSpray 전용 랩 페이지가 없어 mm 단위 마모 실측치는 없음)',
-    upper: 'LightSpray 로봇 스프레이 일체형 (약 33g, 솔기·끈·힐카운터 없음)',
-    width: '표준 (와이드 없음)',
-    durability: '480-640km (어퍼 장기 내구성 미검증)',
-    price: '₩319,000 (On 한국 공식) — 2026-10-01 공식몰 재고 확인: 블랙 아폴로 M25~M28.5 구간 재고 있음, 일부 색상·사이즈 한정("재고 소진 시까지"). 8~9월에는 3회 연속 sold out 이었음',
-    costPerKm: '약 ₩570/km (560km 기준)',
-    footType: '중립',
-    landingPattern: '미드풋 중심',
+    weight: "205g (한국공식공시, 기준 사이즈미공시). 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다.",
+    stackHeight: '정확 모델의 독립 랩·제조사 전체 스택 공시는 미확인입니다. 일반형 수치를 전용하지 않습니다.',
+    drop: "6mm (한국공식공시, 기준 사이즈미공시). 정확 LS모델의독립 랩·스택·내부치수·SA·리턴·경도는미확인입니다. 기존 45/39mm·실측 210g·US8.5기준·기본형과동일성능확정은철회했습니다.",
+    midsole: "LightSpray끈없는어퍼 · Helion HF위층·Helion아래층. 독립 랩 SA·에너지 리턴·AC/HA 미확인. 경량공시 205g 을기본형공시 253g·일반 Cloudmonster3와비교해개인감량·동일성능을보장하지않습니다.480~640km·최상위통기/안정·30km피로보장·족저근막금지·아킬레스보호필수를철회합니다.",
+    plate: "정확 LightSpray Cloudmonster3Hyper는공식이플레이트없음을명시합니다. 기본 3Hyper랩·핏을 LS로대입하지않습니다.",
+    width: "동세대 독립 랩 내부 치수 미확인. 한국캐시 Regular·정사이즈는제조사안내입니다. 끈없는어퍼의압박·길이·힐 고정을실제규격에서확인하세요. 기본형내부폭으로 LS핏을계산하지않습니다.",
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: "한국공식캐시유니섹스 3UG10014837 Regular표시가격 319,000원·한짝 205g(사이즈미공시)·6mm 입니다. 전용 Elite Run Sock High Hyper동봉표시를확인했지만임상보호효과·양말필수규칙은아닙니다. 현재 가격·선택재고·한국 와이드는미확인입니다.",
   },
-  similarShoes: ['on-cloudmonster-3-hyper', 'asics-superblast-3'],
+  similarShoes: [
+    'on-cloudmonster-3-hyper',
+    'asics-superblast-3',
+  ],
   relatedPosts: [
-    { slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026', title: '하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교' },
+    {
+      slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026',
+      title: '하이퍼 vs 3 하이퍼 — 6만원 아래 선택지 비교',
+    },
   ],
   purchaseLinks: [
-    { store: 'On 공식몰', url: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670', isOfficial: true },
-    { store: '네이버', url: 'https://naver.me/GNJlJ6pr' },
+    {
+      store: 'On 공식몰',
+      url: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/black-apollo-shoes-3UG10014670',
+      isOfficial: true,
+    },
+    {
+      store: '네이버',
+      url: 'https://naver.me/GNJlJ6pr',
+    },
   ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: '한국 공식 캐시 3UG10014837 · unisex',
+        url: 'https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837',
+        note: '표시 정가 319000원. 도구 캐시 yesterday; 현재 가격·선택 재고 미확인.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: "AC·HA·HC, SA·에너지 리턴, BR·구방식 1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.",
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+      '동세대 독립 실험실 자료 미확인. 제조사 공시와 DOR 소개를 독립 실측으로 표시하지 않음.',
+      '정확한 동세대 DOR 개별 착화 리뷰 미확인. 다른 세대로 대체하지 않음.',
+    ],
+  },
 };

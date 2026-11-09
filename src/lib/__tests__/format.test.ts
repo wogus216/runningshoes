@@ -29,7 +29,8 @@ describe('formatManwon', () => {
 
   it('실데이터 전 가격·전 가격차에서 종전 두 구현(toFixed(0)·Math.round)과 같다', () => {
     const prices = getShoes().map((s) => s.price).filter((p): p is number => typeof p === 'number');
-    expect(prices.length).toBeGreaterThan(100);
+    // 미확인 정가를 비우더라도 남아 있는 모든 가격·가격차의 표시 규칙을 검사한다.
+    expect(prices.length).toBeGreaterThan(0);
     for (const p of prices) {
       expect(formatManwon(p)).toBe(legacyToFixed(p));
       expect(formatManwon(p)).toBe(legacyRound(p));

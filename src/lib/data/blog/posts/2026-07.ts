@@ -2715,98 +2715,39 @@ export const posts_2026_07: BlogPost[] = [
 `,
   },
   {
-    id: 'nike-acg-zegama-trail-review-2026',
-    slug: 'nike-acg-zegama-trail-review-2026',
-    title: '나이키 ACG 제가마 트레일 후기 | 시리즈 최고 완성도 — 토박스 더 넓어진 맥시멀 쿠션 울트라화',
-    description:
-      '나이키 제가마가 3세대 만에 프리미엄 아웃도어 라인 ACG로 이관됐습니다. ZoomX 비중을 늘리고 새 라스트를 적용했으며, Vibram Megagrip 아웃솔로 그립까지 챙겨 Believe in the Run에서 퍼포먼스 S티어를 받았습니다. 토박스 실측이 전작보다 좁아진 점과, 실측 306g의 무게를 감안해도 선택할 만한 이유를 정리했습니다.',
-    thumbnail: '/images/blog/nike-acg-zegama-trail-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-07-10',
-    category: 'review' as const,
+    id: "nike-acg-zegama-trail-review-2026",
+    slug: "nike-acg-zegama-trail-review-2026",
+    title: "ACG 제가마 트레일 리뷰 — 혼합폼·3.9mm 러그, 록플레이트 표기 정정",
+    description: "RR306g·31.2/27.5mm와 한국남성338g/280mm를 나눕니다. ZoomX+Cushlon3.0 혼합층·록플레이트 없음, 한국SKU별 캐시·와이드 미확인을 정리했습니다.",
+    thumbnail: "/images/shoes/nike/zegama-trail/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-07-10",
+    category: "review",
     readingTime: 7,
-    tags: ['나이키 ACG 제가마', '제가마 트레일', 'ACG', '트레일 러닝화', '울트라 트레일'],
+    tags: [
+      "ACG 제가마",
+      "나이키",
+      "트레일화",
+      "혼합폼"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>나이키 제가마가 프리미엄 아웃도어 라인 ACG로 이관</strong>되며 3세대를 맞았습니다. Believe in the Run은 "제가마 시리즈 중 지금까지 최고"라며 <strong>퍼포먼스 S티어</strong>를 매겼습니다</li>
-    <li>핵심 변화는 <strong>ZoomX 비중 확대 + 새 라스트</strong>입니다. 다만 RunRepeat 실측 토박스는 72.8mm로 전작 제가마 2(76.4mm)보다 오히려 좁아졌고, 가장 넓은 부분(96.9mm)이 트레일 평균보다 넓어 중족부 여유가 남은 정도입니다</li>
-    <li>다만 <strong>실측 306g(나이키 표기 336g)으로 가벼운 편은 아니</strong>고 4mm 저드롭이라 적응이 필요합니다. 한국 정가 219,000원, 빠른 반응형보다는 장거리 울트라 컴포트 용도입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">⛰️</span>
-  <div class="callout-body">
-    <p class="callout-title">제가마, ACG로 승격되다</p>
-    <p>제가마는 2021년 "나이키 트레일 최초로 ZoomX를 얹은 신발"로 처음 나왔고, 2세대(2024)에서 Vibram Megagrip을 더했습니다. 이번 3세대는 이름 자체를 나이키의 프리미엄 아웃도어 라인 <strong>ACG(All Conditions Gear)</strong>로 이관했습니다 — 단순 세대 교체가 아니라 브랜드 포지셔닝 자체를 끌어올린 셈입니다. 나이키 ACG 담당 이사는 22명의 엘리트 트레일 러너로 구성된 자체 레이싱 부서의 피드백을 반영했다고 밝혔습니다.</p>
-  </div>
-</div>
-
-<h2>세대별 변천사</h2>
-<table>
-  <thead><tr><th>세대</th><th>연도</th><th>핵심 변화</th></tr></thead>
-  <tbody>
-    <tr><td>제가마(1세대)</td><td>2021</td><td>나이키 트레일 최초 ZoomX 도입</td></tr>
-    <tr><td>제가마 2</td><td>2024</td><td>Vibram Megagrip 아웃솔 추가</td></tr>
-    <tr><td><strong>ACG 제가마</strong></td><td><strong>2026</strong></td><td><strong>ACG 라인 이관, ZoomX 비중 확대, 새 라스트 적용, 힐 락다운 개선</strong></td></tr>
-  </tbody>
-</table>
-
-<h2>확인된 스펙</h2>
-<table>
-  <thead><tr><th>항목</th><th>ACG 제가마</th><th>제가마 2(참고)</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>306g(RunRepeat 실측, 남성 US 9) · 나이키 표기 336g(남성 M10) / 273g(여성 W8)</td><td>302g</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>38 / 34mm(브랜드 표기) · 31.2 / 27.5mm(RunRepeat 실측)</td><td>30.3 / 26.3mm</td></tr>
-    <tr><td>드롭</td><td>4mm(브랜드 표기) · 3.7mm(실측)</td><td>4.0mm</td></tr>
-    <tr><td>미드솔</td><td>ZoomX(상층) + Cushlon 3.0(하층)</td><td>ZoomX + Cushlon 3.0</td></tr>
-    <tr><td>아웃솔</td><td>Vibram Megagrip(약 2/3 커버리지)</td><td>Vibram Megagrip</td></tr>
-    <tr><td>가격</td><td>$180 / 219,000원(한국)</td><td>$180</td></tr>
-    <tr><td>평가</td><td><strong>BITR S티어(Design A·Value A·Performance S)</strong></td><td>-</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ ACG 제가마 무게·스택·드롭은 나이키 표기와 RunRepeat 랩 실측(남성 US 9)을 함께 적었습니다(2026-04-30 출시). 한국 정가는 nike.com/kr에서 확인했으나 직접 접속이 봇 차단돼 검색 교차검증으로 확정했습니다.</p>
-
-<h2>가장 큰 변화 — 새 라스트와 달라진 토박스</h2>
-<p>전작 제가마 2는 토박스 최대 97.5mm(발가락 부위 76.4mm)로 트레일화치고 넓은 편이었습니다. 이번 ACG 버전은 새 라스트를 적용했는데, <strong>RunRepeat 실측 토박스는 72.8mm로 전작보다 오히려 좁아졌습니다</strong>(트레일 평균 74.3mm). 랩도 "more in line with other Nike shoes"라고 평가했습니다. 가장 넓은 부분은 96.9mm로 트레일 평균(95.7mm)보다 넓어 중족부 여유는 남아 있습니다. 여기에 <strong>힐 카운터 쿠셔닝과 세미 부티 구조</strong>로 락다운을 강화해, "발이 신발을 제어하는 게 아니라 러너가 신발을 제어하는" 느낌을 준다는 평가(BITR)를 받았습니다.</p>
-<p>미드솔은 ZoomX 비중을 늘리고 Cushlon 3.0을 하단에 배치한 듀얼 폼 구조입니다. 힐 38mm(브랜드 표기, 실측 31.2mm)의 넉넉한 스택이 장거리에서 충격을 확실히 흡수하면서도, ZoomX 특유의 반발력을 잃지 않았다는 게 리뷰어들의 공통된 평입니다.</p>
-
-<h2>약점 — 무게와 저드롭 적응</h2>
-<p>나이키 표기는 336g(남성 M10)이지만 RunRepeat 실측은 <strong>306g(남성 US 9)</strong>으로, 가벼운 편은 아닙니다. 빠른 페이스의 반응형 트레일화를 원한다면 이 무게가 걸림돌이 될 수 있습니다.</p>
-<p>드롭도 4mm로 낮은 편이라, 힐 착지가 강하거나 아킬레스건·종아리에 이력이 있는 러너는 적응 기간이 필요합니다. 초기 착화 시 신발끈을 제대로 조이지 않으면 힐 슬립이 생긴다는 지적도 있으니, 첫 착용 때 락다운을 신경 써서 조이세요.</p>
-
-<h2>한국 러너 관점 — 토박스와 가격</h2>
-<p>발볼 넓은 한국 러너에게 나이키 트레일화는 선택지가 많지 않았습니다. <a href="/shoes/nike-ultrafly">울트라플라이</a>가 토박스 76.7mm로 넓은 편이었지만 카본 레이싱화라 완만한 코스 전용이었죠. ACG 제가마는 가장 넓은 부분(실측 96.9mm)이 트레일 평균보다 넓어 중족부 여유가 있지만, 토박스는 실측 72.8mm로 전작(76.4mm)보다 좁아져 <strong>발가락 쪽 공간이 중요한 발볼 넓은 러너</strong>에게는 확실한 대안이 되기 어렵습니다. 별도 와이드 SKU도 없으므로 시착이 필요합니다.</p>
-<p>가격은 219,000원으로, 같은 맥시멀 쿠션 울트라 트레일화인 <a href="/shoes/salomon-ultra-glide-4">살로몬 울트라 글라이드 4</a>(23만원, 와이드 옵션 있음)보다 약간 저렴합니다. 다만 출시 초기(2026-04-30 글로벌)라 한국 정가·내구성 실측치는 교차검증 기준이며, 확정 정보가 나오면 갱신하겠습니다.</p>
-
-<h2>누구에게 맞나</h2>
-<ul>
-  <li><strong>울트라마라톤·장거리 트레일</strong> 위주로 편안함을 최우선한다면 강력 추천</li>
-  <li><strong>중족부 여유</strong>를 원하는 트레일 러너(단, 토박스는 실측 72.8mm로 전작보다 좁아 발가락 공간이 중요하면 시착 필수)</li>
-  <li>반대로 <strong>가벼운 반응형이나 빠른 페이스 레이싱</strong>이 목적이라면 실측 306g도 부담될 수 있어, <a href="/shoes/hoka-speedgoat-6">스피드고트 6</a>(278g)나 <a href="/shoes/asics-metafuji-trail">메타후지 트레일</a>(258g, 카본)을 함께 비교해보세요</li>
-</ul>
-<p>자세한 스펙·가격·구매 정보는 <a href="/shoes/nike-acg-zegama-trail">ACG 제가마 트레일 상세 페이지</a>에서 확인할 수 있습니다. 다른 트레일화와의 비교는 <a href="/blog/speedgoat-6-vs-pulsar-vs-metafuji-trail-2026">트레일화 3파전(스피드고트6 vs 펄사 vs 메타후지)</a>에서, 전체 추천은 <a href="/best/trail">트레일 러닝화 추천</a>에서 확인하세요.</p>
-
-<h2>FAQ</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 제가마 2에서 갈아탈 만한가요?</p>
-    <p class="faq-a">A. 힐 락다운이 개선됐다는 평가가 있지만, 토박스는 RunRepeat 실측 72.8mm로 제가마 2(76.4mm)보다 오히려 좁아졌습니다. 무게도 실측 306g(남성 US 9)으로 가벼운 편은 아니니, 쿠션·락다운 개선을 중시한다면 갈아탈 만하고 발가락 공간이나 경량성이 우선이라면 시착 후 판단하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 산악(북한산·관악산)에서도 쓸 수 있나요?</p>
-    <p class="faq-a">A. Vibram Megagrip 그립은 다양한 지형에서 안정적이라는 평이지만, 이 신발의 강점은 급경사 암반보다 <strong>장거리 편안함</strong>에 있습니다. 완만~중간 난이도 산길 위주의 장거리·울트라에 가장 잘 맞습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 와이드 옵션이 있나요?</p>
-    <p class="faq-a">A. 별도 와이드 SKU는 없습니다. RunRepeat 실측 토박스가 72.8mm로 전작(76.4mm)보다 좁아졌으므로, 발볼이 넓은 러너는 시착 후 결정하세요.</p>
-  </div>
-</div>
-
-<p><small>출처: Believe in the Run(believeintherun.com) ACG 제가마 트레일 리뷰 · RunRepeat(runrepeat.com) 제가마 2 실측 랩 데이터 · 나이키 공식 발표(about.nike.com). 한국 정가는 nike.com/kr 리스팅 기준 교차검증. 작성 2026년 7월 10일.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>상부ZoomX28AC·하부Cushlon3.0 55.9AC의 혼합폼입니다.</li><li>정확RR은 록플레이트가 없다고 명시해 기존 전족록플레이트 설명을 정정합니다.</li><li>내부최광폭96.9mm는 중족부너비가 아닙니다. 엄지72.8mm·높이28.8mm와 따로 봅니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/nike/zegama-trail/side.webp" alt="2026 ACG 제가마 트레일 — 기본 비방수 규격" loading="lazy"/><figcaption>2026 ACG 제가마 트레일 — 기본 비방수 규격</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>306g</td></tr><tr><td>힐/전족 스택·드롭</td><td>31.2/27.5mm·3.7mm</td></tr><tr><td>힐/전족 SA</td><td>130/106</td></tr><tr><td>힐/전족 리턴</td><td>64.5/63.5%</td></tr><tr><td>폼 경도</td><td>28AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>96.9/72.8/28.8mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>맥시멀·울트라라는 표현 전에 확인할 높이</h2><p>한국남성HV8113-400/-103 공시는338g(280mm)·4mm, 여성HV8115-500은271g(250mm)·4mm입니다. 한국전체 스택은 원문미확인입니다. RR브랜드38/34mm·315/271g(사이즈미확인)과 실측31.2/27.5mm·306g을 나눕니다. 공시338g과RR306g의 차이를 감량으로 계산하지 않습니다.</p><p>이중폼이지만100%ZoomX는 아닙니다. 록플레이트가 없다는 정확RR설명을 반영하고 이전 전족보호플레이트 설명은 철회했습니다. 다른GTX·Hike나 이전제가마의 구조를 옮기지 않습니다.</p><h2>젖은 바위의 만능 접지를 보장하지 않습니다</h2><p>Vibram Megagrip과3.9mm러그, 젖은콘크리트0.81은 확인했지만 젖은화강암·진흙 시험이 아닙니다. 모든 험지안전·울트라후반 편안함·장거리피로감소로 확대하지 않습니다. 정확 현행DOR리뷰를 확보하지 못해 다른세대 착화로 채우지 않았습니다.</p><p>실제 규격에서 내리막 앞코접촉·힐들림·발등압박을 확인하세요.4mm드롭으로 아킬레스이력자는금지, 수주간뻐근함을참고적응이라는 기존 처방도 근거부족으로 제거했습니다.</p><h2>한국 색상별 캐시와 현재 재고를 구분</h2><p>남성HV8113-400은 정가219,000원·할인197,100원, -103은219,000원·해당색품절문구, 여성HV8115-500은219,000원이었습니다. 지난주~2개월 캐시여서 현재가격·선택재고·와이드는 미확인입니다. 한색품절을 전체모델품절로 쓰지 않습니다.</p><p>0.9mm국소마모를500km로 환산한 비용과 ‘시리즈최고완성도’라는 단정도 이번 원문 확인범위에 맞게 걷어냈습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%82%A8%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-tD6siwGz/HV8113-400" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8113-400 · men</a> — 표시 정가 219000원. 도구 캐시 last month; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%82%A8%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-tD6siwGz/HV8113-103" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8113-103 · men</a> — 표시 정가 219000원. 도구 캐시 last week; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/acg-%EC%A0%9C%EA%B0%80%EB%A7%88-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EC%97%AC%EC%84%B1-%ED%8A%B8%EB%A0%88%EC%9D%BC-%EB%9F%AC%EB%8B%9D%ED%99%94-brBlZXrH/HV8115-500" target="_blank" rel="noopener noreferrer">한국 공식 캐시 HV8115-500 · women</a> — 표시 정가 219000원. 도구 캐시 2 months ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/nike-acg-zegama-trail" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "전족록플레이트가 있나요?",
+        "answer": "정확RR원문은 록플레이트가 없다고 명시합니다. 기존 보호용플레이트 표기를 정정했습니다."
+      },
+      {
+        "question": "306g인가요338g인가요?",
+        "answer": "RR검체306g과 한국남성280mm공시338g은 조건이 다릅니다. 여성250mm공시271g도 나눠 봅니다."
+      },
+      {
+        "question": "와이드가 한국에 없나요?",
+        "answer": "이번 정확 한국원문에서 현재 와이드SKU·폭·재고를 확인하지 못했습니다. 글로벌Wide메타로 국내판매를 정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'speedgoat-6-vs-pulsar-vs-metafuji-trail-2026',

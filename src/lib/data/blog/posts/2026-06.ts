@@ -7550,121 +7550,39 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'on-cloudrunner-3-review-2026',
-    slug: 'on-cloudrunner-3-review-2026',
-    title: 'On식 \'가벼운 안정화\' — 클라우드러너 3 리뷰 | 카야노 같은 교정은 아니다, 편한 러닝·워킹 겸용엔 합격',
-    description: '온(On)의 안정화 데일리 트레이너 클라우드러너 3. 힐 가이던스(힐 클립)로 흔들림을 잡아주지만, 카야노 같은 본격 교정형 안정화를 기대하면 실망합니다. "최근 최고의 어퍼"라는 극찬과 "벽돌 같은 반발"이라는 혹평이 동시에 나오는 이 신발의 진짜 성격, 안정화 수준, 한국 와이드 부재 이슈, 클라우드러너 2와의 차이를 솔직하게 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudrunner-3-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
+    id: "on-cloudrunner-3-review-2026",
+    slug: "on-cloudrunner-3-review-2026",
+    title: "클라우드러너3 리뷰 — 후족클립·Helion, 평발 교정 보장 없이 비교하기",
+    description: "298g·36.8/28.7mm 실측과DOR317g·31/23mm소개를나눕니다. David의걷기·이지주행경험,한국Regular캐시와600km·와이드부재단정정정을정리합니다.",
+    thumbnail: "/images/shoes/on/cloudrunner3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
     readingTime: 7,
-    tags: ['온', 'On', '클라우드러너 3', '안정화', '힐 가이던스', '과내전', '워킹 겸용', 'CloudTec', '데일리 쿠션화', 'On 안정화'],
+    tags: [
+      "클라우드러너3",
+      "온",
+      "후족클립",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드러너 3는 <strong>힐 가이던스(힐 클립)로 후족부를 잡아주는 "가벼운 안정화"</strong> — 카야노·아드레날린 같은 본격 교정형이 아니라 <strong>경미한 과내전</strong>용입니다</li>
-    <li>평가가 극단으로 갈립니다 — <strong>"최근 최고의 어퍼"(DOR)·9.1점(BGL)</strong> vs <strong>"벽돌 같은 반발"·D티어(BITR)</strong>. 핵심은 <strong>반발이 약하고 무겁지만(실측 298g) 안정·내구·워킹 겸용은 강하다</strong>는 것</li>
-    <li>한국 공식엔 <strong>와이드가 없고</strong>(미국엔 있음) 빠른 훈련엔 부적합 — <strong>편안한 이지런·워킹 겸용 안정화</strong>를 원하는 러너에게 맞습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🦶</span>
-  <div class="callout-body">
-    <p class="callout-title">"안정화는 필요한데, 카야노는 부담스럽다면"</p>
-    <p><a href="/shoes/on-cloudrunner-3">클라우드러너 3</a>는 온(On)의 안정화 데일리 트레이너입니다. 발이 안쪽으로 무너지는 <strong>과내전</strong>을 잡아주되, <a href="/shoes/asics-gel-kayano-32">카야노</a>처럼 무겁고 교정감 강한 본격 안정화와는 결이 다릅니다. 그런데 이 "애매한 포지션" 때문에 해외 리뷰 점수가 극과 극으로 갈려요. 누구에게 맞고 누구에겐 안 맞는지 솔직하게 짚어보겠습니다.</p>
-  </div>
-</div>
-
-<h2>클라우드러너 3, 어떤 신발인가</h2>
-<p>핵심은 <strong>힐 가이던스(Heel Guidance)</strong> 구조입니다. 플라스틱 <strong>힐 클립 + 비대칭 힐 + 후족부 솔 플레어링</strong>으로 착지 때 발뒤꿈치를 안정적으로 잡아 자연스러운 롤링을 유도하죠. 힐 36.8mm / 전족 28.7mm 스택, 8mm 드롭, 약 300g(실측 298g) 무게로 <strong>빠른 훈련보다 편안한 이지런·워킹</strong>에 맞춰진 신발입니다.</p>
-
-<h2>'안정화'의 진실 — 얼마나 잡아주나</h2>
-<p>가장 중요한 포인트입니다. 클라우드러너 3의 안정화는 <strong>"경미한 수준(mild-to-moderate)"</strong>입니다.</p>
-<ul>
-  <li><strong>후족부만</strong> 잡아줍니다 — 힐 클립이 뒤꿈치를 고정하지만, 미드풋·전족부는 중립화에 가깝습니다</li>
-  <li><strong>본격 모션컨트롤이 아닙니다</strong> — <a href="/shoes/asics-gel-kayano-32">카야노</a>나 <a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린</a>보다 훨씬 가벼운 지지입니다</li>
-  <li>따라서 <strong>경미한 과내전</strong>엔 잘 맞지만, <strong>심한 과내전·평발</strong>엔 지지가 부족할 수 있습니다</li>
-</ul>
-<p>"불안정한 중립화는 싫고, 카야노처럼 과한 교정도 싫다"는 러너에게 정확히 들어맞는 중간 지대입니다.</p>
-
-<h2>강점 — 어퍼·안정감·내구성</h2>
-<ul>
-  <li><strong>최상급 어퍼</strong> — Doctors of Running이 "최근 출시작 중 최고의 어퍼"라 극찬했습니다. 발을 부드럽게 감싸 장시간 착화해도 편합니다</li>
-  <li><strong>힐 클립 제로 슬립</strong> — 뒤꿈치가 단단히 고정돼 흔들림·미끄러짐이 없습니다(Boulder Gear Lab 9.1점)</li>
-  <li><strong>내구성 우수</strong> — 아웃솔 마모 0.6mm로 오래 신어도 잘 안 닳습니다. 고중량 러너에게도 무난</li>
-  <li><strong>워킹 겸용</strong> — 안정적이라 출퇴근·종일 착화에도 편합니다</li>
-</ul>
-
-<h2>약점 — 반발과 무게</h2>
-<p>강점만큼 단점도 분명해 평가가 갈립니다.</p>
-<ul>
-  <li><strong>반발이 약합니다</strong> — Helion 폼의 에너지 리턴이 53%로 낮아, Believe in the Run은 <strong>"벽돌 같은 느낌"</strong>이라며 D티어를 줬습니다. 톡 쏘는 추진력은 없습니다</li>
-  <li><strong>무겁습니다</strong> — 약 300g(실측 298g)으로, 빠른 페이스·인터벌엔 둔합니다</li>
-  <li><strong>통기성 제한</strong> — 한여름엔 더울 수 있습니다</li>
-</ul>
-<p>즉 RunRepeat·BGL은 "편안하고 안정적"이라 호평(90점), BITR은 "반발 없고 애매하다"고 혹평 — <strong>무엇을 기대하느냐</strong>에 따라 갈리는 신발입니다.</p>
-
-<h2>클라우드러너 2와 뭐가 다른가</h2>
-<p>전작 <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a> 대비 변화는 분명합니다.</p>
-<table>
-  <thead>
-    <tr><th></th><th>클라우드러너 2</th><th>클라우드러너 3 (이 글)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>무게</strong></td><td>약 275g</td><td>298g (실측, 무거워짐)</td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>33.6mm</td><td>36.8mm (쿠션↑)</td></tr>
-    <tr><td><strong>안정성·어퍼</strong></td><td>기본</td><td>힐 클립·어퍼 개선</td></tr>
-    <tr><td><strong>반발</strong></td><td>57%</td><td>53% (소폭↓)</td></tr>
-  </tbody>
-</table>
-<p>3세대는 <strong>쿠션·안정성·어퍼 품질이 올라간 대신 더 무거워지고 반발은 약간 떨어졌습니다.</strong> "더 안정적이고 편한 워킹 겸용"을 원하면 3, "가벼움"을 원하면 2가 낫습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 러너가 사기 전 체크</p>
-    <ul>
-      <li><strong>한국 공식엔 와이드가 없습니다</strong> — 미국 On에는 Cloudrunner 3 Wide(2E)가 있지만 한국 미출시. 토박스는 71.0mm(RunRepeat 실측)로 랩 평균 73.2mm보다 좁아지는 형태라, <strong>발볼 넓은 러너</strong>는 직구·병행수입의 와이드를 알아봐야 합니다</li>
-      <li><strong>빠른 훈련엔 부적합</strong> — 반발이 약하고 무거워 템포·인터벌용은 아닙니다</li>
-      <li><strong>안정화 기대치</strong> — 심한 과내전·평발이면 지지가 부족할 수 있어 카야노 계열이 안전합니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>살까, 말까 — 경쟁자와 함께</h2>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">이렇게 정리됩니다</p>
-    <ul>
-      <li><strong>맞는 사람</strong>: 경미한 과내전 + 편안한 이지런·워킹 겸용을 원하는 러너, 어퍼 착화감과 내구성을 중시하는 러너, On 디자인을 좋아하는 러너</li>
-      <li><strong>맞지 않는 사람</strong>: 반발·속도를 원하는 러너, 심한 과내전·평발 러너, 가벼운 신발을 원하는 러너</li>
-      <li><strong>대안</strong>: 본격 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>·<a href="/shoes/brooks-adrenaline-gts-25">브룩스 아드레날린 GTS 25</a>·<a href="/shoes/nike-structure-26">나이키 스트럭처 26</a>가 지지력에서 앞섭니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 평발인데 이걸로 충분한가요?</h3>
-<p>경미한 과내전이면 힐 가이던스가 도움이 되지만, <strong>심한 평발·과내전</strong>이면 후족부만 잡아주는 이 구조로는 부족할 수 있습니다. 그럴 땐 <a href="/shoes/asics-gel-kayano-32">카야노</a> 같은 본격 안정화가 안전합니다.</p>
-
-<h3>Q. 러닝과 워킹 둘 다 되나요?</h3>
-<p>네, 그게 이 신발의 강점입니다. 안정적이고 어퍼가 편해 <strong>출퇴근 워킹 + 이지런</strong> 겸용에 잘 맞습니다. 다만 빠른 러닝엔 둔합니다.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>전체 폭은 평균 수준이지만 토박스가 71.0mm(RunRepeat 실측, 랩 평균 73.2mm)로 앞쪽이 좁아지는 형태입니다. <strong>한국 공식 와이드도 없어</strong> 발볼이 넓다면 매장 착화나 직구 와이드를 확인하세요.</p>
-
-<h3>Q. 입문용으로 사도 되나요?</h3>
-<p>안정적이고 내구성이 좋아 무난하지만, 반발이 약해 "달리는 재미"는 덜합니다. 안정감·편안함을 우선한다면 좋은 선택입니다. <a href="/blog/first-running-shoe-guide-2026">첫 러닝화 가이드</a>도 참고하세요.</p>
-
-<h2>마무리</h2>
-<p>클라우드러너 3는 <strong>"가벼운 안정화 + 편한 워킹 겸용"</strong>이라는 자기 자리가 분명한 신발입니다. 반발·속도를 기대하면 "벽돌"처럼 느껴지지만, <strong>안정감·어퍼 착화감·내구성</strong>을 원하면 충분히 만족스럽죠. 핵심은 기대치입니다 — "빠른 러닝화"가 아니라 "<strong>편하고 안정적인 데일리·워킹화</strong>"로 보면 제값을 합니다. 본격 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-32">카야노</a>로, 더 가벼운 On을 원하면 <a href="/shoes/on-cloudrunner-2">클라우드러너 2</a>로 눈을 돌려보세요.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Doctors of Running·Boulder Gear Lab 리뷰를 종합한 내용입니다. 무게·스택은 측정 사이즈 기준에 따라 차이가 있을 수 있습니다(RunRepeat US M9 약 298g 등). 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>비대칭후족클립·Helion·CloudTec을확인했습니다. 가이던스체감은임상교정효과가아닙니다.</li><li>RR298g과DOR David의US9.5홈스케일317g은다른검체조건입니다.</li><li>현재한국와이드없음·600km수명·평발에충분이라는단정을철회했습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/on/cloudrunner3/side.webp" alt="클라우드러너3 — 비대칭후족클립과Helion" loading="lazy"/><figcaption>클라우드러너3 — 비대칭후족클립과Helion</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>298g</td></tr><tr><td>힐/전족 스택·드롭</td><td>36.8/28.7mm·8.1mm</td></tr><tr><td>힐/전족 SA</td><td>130/107</td></tr><tr><td>힐/전족 리턴</td><td>53.2/57%</td></tr><tr><td>폼 경도</td><td>43.6AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>95.5/71/25.2mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>어떤움직임에서클립이느껴지는지 확인</h2><p>DOR David(남성US9.5)는정사이즈·약간넓은중족/전족과높은볼륨·편한고정을느꼈고힐슬립은없었습니다. 이지주행·걷기전환은좋았지만단단한Helion의낮은반발과무게를아쉬워했습니다. 그의가이던스평가는후족에집중되고중족/전족은더중립적이라는의견입니다.</p><p>이를경미한평발은충분·심한평발은다른신발이안전이라는의학적처방으로확대하지않습니다. 실제힐클립압박·고정과주행전환을확인하세요. Speedboard·플레이트소재의명시적근거는이번범위에서미확인입니다.</p><h2>여유있는체감과벤치수치를하나로합치지않기</h2><p>RR내부최광폭95.5mm·엄지71mm·높이25.2mm와David의여유있는체감은조건이다릅니다. RR BR52·건조47%와좋은통기체감도개인주행/수분전달시험의차이로남깁니다.</p><p>한국311/250g은기준사이즈미공시이고DOR317g은실제남성US9.5홈스케일입니다. DOR스택31/23mm는측정법미명시이며RR36.8/28.7mm·8.1mm와같은시험이라고쓰지않습니다.</p><h2>한국Regular와현재와이드를구분</h2><p>남성3MG10071043·여성3WG10050924 캐시Regular표시가격199,000원을확인했습니다. 현재가격·한국와이드·선택재고는미확인입니다. 글로벌Normal/Wide로국내와이드판매·부재를정하지않습니다.</p><p>0.6mm국소마모를600km·km당332원으로환산한설명과장거리관절피로감소보장을철회했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudrunner-3-m-3mg1007/mens/black-black-shoes-3MG10071043" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3MG10071043 · men</a> — 표시 정가 199000원. 도구 캐시 2 days ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.on.com/ko-kr/products/cloudrunner-3-w-3wg1005/womens/white-ivory-shoes-3WG10050924" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3WG10050924 · women</a> — 표시 정가 199000원. 도구 캐시 2 weeks ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/on-cloudrunner-3" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/on-cloudrunner-3-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "평발에충분한안정화인가요?",
+        "answer": "후족가이던스는리뷰어의체감입니다. 평발정도별교정·예방효과를입증하지못해기존처방을철회했습니다."
+      },
+      {
+        "question": "298g인가요317g인가요?",
+        "answer": "RR검체298g과David남성US9.5홈스케일317g은조건이다릅니다. 한국남성공시는311g이며기준사이즈미공시입니다."
+      },
+      {
+        "question": "한국와이드는없나요?",
+        "answer": "현재한국와이드SKU·판매조건을이번에확정하지못했습니다. Regular캐시가전체폭의부재를증명하지않습니다."
+      }
+    ],
   },
   {
     id: "on-cloudsurfer-2-review-2026",
@@ -7849,232 +7767,74 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'on-cloudmonster-3-hyper-review-2026',
-    slug: 'on-cloudmonster-3-hyper-review-2026',
-    title: '카본 없이 슈퍼블라스트와 맞붙는다 — On 클라우드몬스터 3 하이퍼 리뷰 | 25만 9천원 무플레이트 슈퍼트레이너의 균형점',
-    description: '온(On)의 클라우드몬스터 3 하이퍼는 카본 플레이트 없이 Helion HF 이중 밀도 폼으로 장거리·템포 훈련을 받쳐주는 슈퍼트레이너입니다. 힐 45mm 맥스쿠션에 264g 경량, 아식스 슈퍼블라스트와 직접 경쟁하죠. 라이트스프레이 버전보다 6만 원 싸고 어퍼가 편한 이 "합리적 하이퍼"가 한국 러너에게 맞는지, 발볼·평발·가격 관점에서 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudmonster-3-hyper-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['온', 'On', '클라우드몬스터 3 하이퍼', '슈퍼트레이너', 'Helion HF', '무플레이트', '슈퍼블라스트', '마라톤 훈련화', '맥스쿠션', '카본 없는 러닝화'],
+    id: "on-cloudmonster-3-hyper-review-2026",
+    slug: "on-cloudmonster-3-hyper-review-2026",
+    title: "클라우드몬스터3 하이퍼 리뷰 —43.4/34.2mm 실측과6mm 공시를 나눠 보기",
+    description: "264g·리턴66.1/69.4% 검체와 플레이트 없는 이중폼을 정리합니다. DOR 리뷰어별 카운터·주행 차이,한국 캐시·와이드 미확인,450km·무릎보호 단정을 정정합니다.",
+    thumbnail: "/images/shoes/on/cloudmonster3hyper/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "클라우드몬스터3 하이퍼",
+      "온",
+      "무플레이트",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>클라우드몬스터 3 하이퍼는 <strong>카본 플레이트 없이</strong> Helion HF + Helion 이중 밀도 폼으로 반발력을 끌어올린 <strong>슈퍼트레이너</strong> — 힐 45mm 맥스쿠션에 264g 경량입니다</li>
-    <li>경쟁 상대는 <strong>아식스 슈퍼블라스트</strong>. 카본의 부담 없이 장거리·템포를 한 켤레로 소화하려는 러너에게 맞고, <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 버전</a>보다 <strong>6만 원 싸고 어퍼가 편합니다</strong></li>
-    <li>단, <strong>와이드 옵션이 없고</strong> 높은 스택이 평발엔 불안할 수 있으며, <strong>25만 9천원</strong>은 가성비 최우선 러너에겐 부담입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">'슈퍼트레이너'가 뭐냐면</p>
-    <p>요즘 러닝화 시장의 흐름이 <strong>"카본 레이서는 부담스럽고, 데일리화는 심심하다"</strong>는 러너를 위한 중간 지대 — 바로 <strong>슈퍼트레이너</strong>입니다. 카본 플레이트는 빼되 <strong>고반발 슈퍼폼 + 높은 스택</strong>으로 장거리·템포 훈련을 빠르고 편하게 받쳐주죠. <strong>온 클라우드몬스터 3 하이퍼</strong>는 여기에 정확히 올라탄 모델이고, 같은 자리를 노리는 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트 3</a>와 직접 맞붙습니다.</p>
-  </div>
-</div>
-
-<h2>클라우드몬스터 3 하이퍼, 뭐가 특별한가</h2>
-<p>일반 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>가 단일 Helion 폼의 데일리화라면, <strong>하이퍼</strong>는 미드솔을 <strong>이중 밀도</strong>로 업그레이드한 버전입니다.</p>
-<ul>
-  <li><strong>상단 Helion™ HF (PEBA계 하이퍼폼)</strong> — 부드럽고 반발력 있는 슈퍼폼</li>
-  <li><strong>하단 Helion + CloudTec 섀시</strong> — 단단하게 받쳐 높은 스택에서도 흔들림을 잡아줍니다</li>
-</ul>
-<p>그 결과가 <strong>힐 45mm / 전족 39mm 스택(On 공식 · RunRepeat 실측 43.4/34.2mm), 264g(실측, 남성 US 9), 6mm 드롭(공식 · 실측 9.2mm)</strong>의 무플레이트 슈퍼트레이너입니다. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급이고, RunRepeat은 89/100점을 주며 "On 역대 최고의 슈퍼트레이너"라 평했습니다. 카본의 톡 쏘는 추진력 대신 <strong>부드럽지만 무너지지 않는 반발</strong>이 핵심이죠.</p>
-
-<h2>실제로 어떻게 달리나</h2>
-<ul>
-  <li><strong>높은 스택, 그런데 안정적</strong> — 45mm 맥스쿠션인데도 하부 섀시 덕에 장거리에서 자세가 잘 유지됩니다. 슈퍼블라스트보다 하부 플랫폼이 안정적이라는 평이 많습니다</li>
-  <li><strong>범용성</strong> — 회복 조깅부터 마라톤 페이스 템포까지 한 켤레로. "인터벌과 LSD를 하나로 소화"하려는 고마일리지 러너에게 매력적입니다</li>
-  <li><strong>무릎 보호</strong> — 45mm 스택이 충격을 잘 분산해 30km 이후에도 무릎 부담이 덜합니다</li>
-</ul>
-<p>포지션은 카본화와 다릅니다. 레이스 기록 단축이 목적이면 카본 레이서가 맞고, <strong>훈련 강도를 올리면서 다리를 보호</strong>하려는 러너에게 이 신발이 빛납니다.</p>
-
-<h2>라이트스프레이 버전과 뭐가 다를까</h2>
-<p>2026년 클라우드몬스터 3 하이퍼는 <strong>두 가지</strong>로 나옵니다. 헷갈리기 쉬우니 정리합니다.</p>
-<table>
-  <thead>
-    <tr><th></th><th>일반 하이퍼 (이 글)</th><th><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>가격</strong></td><td>259,000원</td><td>319,000원</td></tr>
-    <tr><td><strong>무게</strong></td><td>264g</td><td>205g</td></tr>
-    <tr><td><strong>어퍼</strong></td><td>엔지니어드 메시(패딩 있음)</td><td>로봇 스프레이 일체형(끈·패딩 없음)</td></tr>
-    <tr><td><strong>미드솔</strong></td><td colspan="2" style="text-align:center">동일 (Helion HF + Helion 이중 밀도)</td></tr>
-  </tbody>
-</table>
-<p>핵심은 <strong>미드솔(달리는 느낌)은 같다</strong>는 점입니다. 차이는 어퍼와 무게뿐이죠. 라이트스프레이는 60g 더 가볍고 통기성이 최상이지만, 패딩이 없어 착화에 적응이 필요하고 6만 원 더 비쌉니다. <strong>대부분의 러너에겐 패딩 있고 착화 편한 일반 하이퍼가 합리적</strong>입니다. 라이트스프레이의 로봇 어퍼 기술이 궁금하다면 <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 상세 리뷰</a>를 보세요.</p>
-
-<h2>경쟁자 — 슈퍼블라스트와 비교</h2>
-<p>같은 무플레이트 슈퍼트레이너인 <a href="/shoes/asics-superblast-3">아식스 슈퍼블라스트</a>가 직접 경쟁자입니다. 둘 다 비슷한 스택·무게지만, 클라우드몬스터 3 하이퍼는 <strong>하부 플랫폼 안정성</strong>이, 슈퍼블라스트는 <strong>톡톡 튀는 경쾌함</strong>이 상대적 강점으로 꼽힙니다. 슈퍼블라스트 세대 차이가 궁금하면 <a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2 vs 3 비교</a>도 참고하세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 러너가 사기 전 체크</p>
-    <ul>
-      <li><strong>와이드 옵션이 없습니다</strong> — 토박스 72.8mm로 표준이지만, 발볼 넓은 러너는 장거리에서 앞발이 조일 수 있습니다. 매장 착화를 권합니다</li>
-      <li><strong>평발 주의</strong> — 45mm 높은 스택이 평발 러너에겐 오히려 불안정하게 느껴질 수 있어, 안정화(카야노 계열)를 먼저 고려하는 게 나을 수 있습니다</li>
-      <li><strong>가격</strong> — 25만 9천원은 km당 약 576원으로 레이싱화급 비용입니다. 가성비가 최우선이면 <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">라이닝 레드헤어 9 울트라</a> 같은 10만 원대 대안도 있습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>살까, 말까 — 러너 타입별</h2>
-<div class="callout info">
-  <span class="callout-icon">✅</span>
-  <div class="callout-body">
-    <p class="callout-title">잘 맞는 사람</p>
-    <ul>
-      <li>카본화는 부담스럽지만 <strong>훈련 강도를 올리고 싶은</strong> 러너</li>
-      <li>장거리 easy run과 마라톤 페이스 템포를 <strong>한 켤레로</strong> 소화하려는 고마일리지 러너</li>
-      <li>높은 스택의 <strong>안정감과 무릎 보호</strong>를 중시하는 러너</li>
-      <li>라이트스프레이의 기술 프리미엄(+6만 원)은 굳이 필요 없는 러너</li>
-    </ul>
-  </div>
-</div>
-<div class="callout warning">
-  <span class="callout-icon">🚫</span>
-  <div class="callout-body">
-    <p class="callout-title">맞지 않는 사람</p>
-    <ul>
-      <li><strong>발볼 넓은 러너</strong> — 와이드가 없습니다</li>
-      <li><strong>평발 러너</strong> — 높은 스택의 불안정감 주의</li>
-      <li><strong>가성비 최우선</strong> 러너 — 25만 9천원은 부담</li>
-      <li>낮은 스택의 <strong>직접적인 바닥감</strong>을 원하는 러너</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. 일반 클라우드몬스터 3랑 하이퍼, 뭐가 다른가요?</h3>
-<p>일반 3은 단일 Helion 폼의 <strong>데일리화</strong>(₩229,000), 하이퍼는 Helion HF 이중 밀도에 스택을 높인 <strong>슈퍼트레이너</strong>(₩259,000)입니다. 하이퍼가 더 두툼하고 반발력 있으며 빠른 훈련에 맞습니다.</p>
-
-<h3>Q. 마라톤 대회에 신어도 되나요?</h3>
-<p>완주·서브 목표의 훈련 겸 레이스로는 충분합니다. 다만 <strong>기록 단축</strong>이 핵심이면 카본 레이서가, <strong>훈련+장거리 겸용</strong>이면 이 신발이 맞습니다.</p>
-
-<h3>Q. 슈퍼블라스트랑 뭘 살까요?</h3>
-<p>하부 <strong>안정감</strong>을 중시하면 클라우드몬스터 3 하이퍼, 톡 쏘는 <strong>경쾌함</strong>을 원하면 슈퍼블라스트 쪽입니다. 발볼이 넓다면 둘 다 와이드가 제한적이니 착화 확인이 우선입니다.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스는 표준(72.8mm)이라 보통 발은 무난하지만 <strong>와이드가 없습니다</strong>. 발볼이 넓다면 반 사이즈 업도 근본 해결은 아니니, 매장에서 신어보고 결정하세요.</p>
-
-<h2>마무리</h2>
-<p>클라우드몬스터 3 하이퍼는 "<strong>카본은 부담스럽고 훈련은 더 빠르게</strong>"라는 러너에게 정확히 맞는 무플레이트 슈퍼트레이너입니다. 라이트스프레이 같은 화려한 신기술은 없지만, <strong>패딩 있는 편한 어퍼와 6만 원 싼 가격</strong>으로 오히려 더 실용적이죠. 핵심 갈림길은 둘입니다 — <strong>내 발볼이 표준인가</strong>, 그리고 <strong>25만 9천원의 값을 훈련 빈도로 뽑을 수 있는가</strong>. 두 가지에 "예"라면 슈퍼블라스트와 진지하게 저울질해 볼 만합니다. 더 가벼운 극강 경량을 원하면 <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이</a>, 데일리 위주면 <a href="/shoes/on-cloudmonster-3">일반 클라우드몬스터 3</a>가 답입니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 자료와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. 무게·스택은 측정 기준(공식 vs 랩 실측)에 따라 약간 차이가 있을 수 있습니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>정확3Hyper는 Helion HF위층·Helion아래층·CloudTec의 무플레이트 구조입니다.</li><li>한국공시드롭6mm와RR9.2mm·DOR스택45/39mm는 출처가 다릅니다.</li><li>라이트스프레이와 동일실측·동일주행감이라는 기존 설명은 철회합니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/on/cloudmonster3hyper/side.webp" alt="클라우드몬스터3 하이퍼 — 일반3·초대Hyper·LightSpray와 구분" loading="lazy"/><figcaption>클라우드몬스터3 하이퍼 — 일반3·초대Hyper·LightSpray와 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>264g</td></tr><tr><td>힐/전족 스택·드롭</td><td>43.4/34.2mm·9.2mm</td></tr><tr><td>힐/전족 SA</td><td>139/122</td></tr><tr><td>힐/전족 리턴</td><td>66.1/69.4%</td></tr><tr><td>폼 경도</td><td>37.2AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>95/72.8/27.5mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>높은 스택을 한국 공식 공시로 혼용하지 않기</h2><p>한국공식캐시는 남성253g·여성213.6g(기준사이즈미공시)·6mm이며 전체스택은 미확인입니다. DOR271g(남성US9.5)·45/39mm·6mm, RR브랜드263/215g(사이즈미확인)·37/31mm·6mm와 실측264g·43.4/34.2mm·9.2mm를 나눕니다. DOR소개45/39mm를 한국공식으로 쓴 기존표현을 정정했습니다.</p><p>랩리턴66.1/69.4%와SA139/122는 개인마라톤기록·30km후무릎보호·피로회복을 입증하지 않습니다.</p><h2>두 리뷰어의 카운터·전환 경험도 다릅니다</h2><p>DOR David(남성US9.5)는 여유있는전족볼륨·고정과 단단한카운터를 느꼈지만 쓸림은없었고 이지·롱런을선호했습니다. Matt(남성US10)은 약간넓고높은전족·중족끈조임·좋은힐고정과 조금유연한카운터를 느끼며 일상·롱런·프로그레션·템포를선호했습니다.</p><p>RR카운터4/5와 개인체감, 구방식통기2/5와 David의좋은통기도 다른 정보입니다. 안정성최상위·겨울훈련손실감소·평발위험을 공통결론으로 묶지 않습니다.</p><h2>한국 현재가와 LS 비교의 한계</h2><p>한국캐시남성3MG10065262·여성3WG10045262 Regular표시가격259,000원을 확인했습니다. 현재가격·폭·선택재고는미확인입니다. 캐시잔여수량이나정사이즈안내가 개인적합을보장하지 않습니다.</p><p>정확LightSpray의독립랩·스택은미확인입니다. 같은폼명칭만으로 기본3Hyper와같은성능·주행감·내부폭을적용하지 않습니다.0.5mm국소마모·힐패딩5/5로450km수명·km당576원을만들었던설명은철회했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-hyper-3mg1006/mens/ivory-flurry-shoes-3MG10065262" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3MG10065262 · men</a> — 표시 정가 259000원. 도구 캐시 today; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-hyper-3wg1004/womens/ivory-flurry-shoes-3WG10045262" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3WG10045262 · women</a> — 표시 정가 259000원. 도구 캐시 2 days ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/on-cloudmonster-3-hyper" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/on-cloudmonster-3-hyper-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "공식스택45/39mm인가요?",
+        "answer": "이번 한국본문의 전체스택은미확인입니다.45/39mm는DOR소개이며RR실측43.4/34.2mm와분리합니다."
+      },
+      {
+        "question": "LS와같은성능인가요?",
+        "answer": "정확LS독립랩·스택을확인하지못했습니다. 기본형수치로LS성능을채우지않습니다."
+      },
+      {
+        "question": "평발이면위험한가요?",
+        "answer": "스택·에디터점수만으로평발의부상위험을확정하지않습니다. 실제압박·고정·전환과증상을확인하세요."
+      }
+    ],
   },
   {
-    id: 'on-lightspray-cloudmonster-3-hyper-review-2026',
-    slug: 'on-lightspray-cloudmonster-3-hyper-review-2026',
-    title: '로봇이 3분 만에 \'뿌려서\' 만든 어퍼 — On 라이트스프레이 클라우드몬스터 3 하이퍼 리뷰 | 205g 슈퍼트레이너의 정체 + 3종 라인업 정리',
-    description: '온(On)의 클라우드몬스터 3가 일반·하이퍼·라이트스프레이 하이퍼 3종으로 갈라졌습니다. 그중 화제의 라이트스프레이 버전은 로봇이 폴리머 필라멘트를 미드솔에 직접 분사해 3분 만에 완성하는 일체형 어퍼로 205g 초경량을 달성했죠. 3종이 어떻게 다른지, 라이트스프레이 기술의 실체, 힐 45mm 맥스쿠션의 안정성·통기성, 그리고 31만 9천원이라는 가격이 한국 러너에게 합당한지 정리했습니다.',
-    thumbnail: '/images/blog/on-lightspray-cloudmonster-3-hyper-review-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-08',
-    category: 'review' as const,
-    readingTime: 8,
-    tags: ['온', 'On', '클라우드몬스터 3 하이퍼', '라이트스프레이', 'LightSpray', '슈퍼트레이너', 'Helion HF', '초경량 러닝화', '맥스쿠션', '카본 없는 슈퍼트레이너'],
+    id: "on-lightspray-cloudmonster-3-hyper-review-2026",
+    slug: "on-lightspray-cloudmonster-3-hyper-review-2026",
+    title: "LightSpray 클라우드몬스터3 하이퍼 —205g 공시·끈없는 핏, 별도 랩은 미확인",
+    description: "기본Hyper의리턴·스택을LS실측으로쓰던오류를정정했습니다. 한국단일SKU319,000원캐시와205g공시·동봉양말,현재재고·폭·인솔분리 미확인을 정리합니다.",
+    thumbnail: "/images/shoes/on/cloudmonster3hyperls/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-08",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "LightSpray",
+      "클라우드몬스터3 하이퍼",
+      "온",
+      "끈없는 핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>온의 클라우드몬스터 3는 <strong>3종</strong>으로 나뉩니다 — 일반(₩229,000)·하이퍼(₩259,000)·<strong>라이트스프레이 하이퍼(₩319,000)</strong>. 화제작은 맨 위 라이트스프레이 버전입니다</li>
-    <li><strong>로봇이 폴리머 필라멘트 1.5km를 미드솔 위에 직접 분사해 3분 만에 어퍼를 완성</strong> — 솔기도 끈도 없는 일체형 어퍼로 <strong>205g</strong> 초경량을 달성했습니다(어퍼 무게 33g)</li>
-    <li>힐 45mm 맥스쿠션인데도 <strong>"믿기 힘들 만큼 안정적"</strong>이라는 평가 — 단, 패딩이 없어 착화가 까다롭고 족저근막염 러너는 주의, <strong>31만 9천원</strong>은 국내 슈퍼트레이너 최고가권입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🤖</span>
-  <div class="callout-body">
-    <p class="callout-title">"신발 어퍼를 로봇이 뿌려서 만든다고?"</p>
-    <p>러닝 커뮤니티에서 화제가 된 <strong>On 라이트스프레이 클라우드몬스터 3 하이퍼(LightSpray Cloudmonster 3 Hyper)</strong>는 어퍼를 천으로 재단·봉제하는 대신 <strong>로봇 팔이 열가소성 필라멘트를 미드솔 위에 직접 분사</strong>해 만듭니다. 약 3분, 8개 부품, 솔기·접착제 없음. 그 결과가 <strong>205g</strong>짜리 맥스쿠션 슈퍼트레이너죠. 그런데 사기 전에 알아야 할 게 있습니다 — 클라우드몬스터 3가 올해 <strong>세 가지 버전</strong>으로 갈라졌거든요.</p>
-  </div>
-</div>
-
-<h2>먼저 정리 — 클라우드몬스터 3가 '3종'입니다</h2>
-<p>2026년 온은 클라우드몬스터 3 패밀리를 셋으로 출시했습니다. 이름이 비슷해 헷갈리기 쉬우니 먼저 끊고 갑니다.</p>
-<table>
-  <thead>
-    <tr><th>모델</th><th>가격</th><th>무게</th><th>어퍼</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a></td><td>229,000원</td><td>301g</td><td>일반 메시</td><td>데일리·회복</td></tr>
-    <tr><td><a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a></td><td>259,000원</td><td>264g</td><td>일반 메시</td><td>장거리·템포 슈퍼트레이너</td></tr>
-    <tr><td><strong><a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 하이퍼</a></strong></td><td><strong>319,000원</strong></td><td><strong>205g</strong></td><td><strong>로봇 스프레이 일체형</strong></td><td>초경량 프리미엄 슈퍼트레이너</td></tr>
-  </tbody>
-</table>
-<p>핵심 차이는 <strong>어퍼와 무게</strong>입니다. 일반과 하이퍼는 같은 천 어퍼를 쓰지만, 하이퍼 두 모델은 미드솔에 <strong>Helion™ HF(상단 PEBA계 하이퍼폼) + Helion(하단)</strong> 이중 밀도를 넣어 더 반발력 있고 두툼합니다. 그리고 맨 위 <strong>라이트스프레이</strong>가 여기에 로봇 스프레이 어퍼를 더해 무게를 <strong>일반 대비 96g(약 32%)</strong>이나 덜어낸 버전입니다. 일반 3와 하이퍼의 차이가 궁금하면 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>도 참고하세요.</p>
-
-<h2>라이트스프레이가 뭐길래 — 로봇이 뿌리는 어퍼</h2>
-<p>라이트스프레이(LightSpray™)는 온이 개발한 제조 기술입니다. <strong>로봇 팔이 라스트(신발 골) 위에 폴리머 필라멘트 약 1.5km를 직접 분사</strong>해, 재단·봉제·접착 없이 어퍼 한 장을 통째로 만들어 냅니다.</p>
-<ul>
-  <li><strong>3분 완성</strong> — 전통 어퍼의 수십 개 공정이 한 번의 분사로 압축됩니다</li>
-  <li><strong>솔기·끈·힐 카운터 없음</strong> — 필라멘트가 미드솔에 열로 직접 융착돼 발을 양말처럼 감쌉니다(어퍼 무게 약 33g)</li>
-  <li><strong>친환경</strong> — 온은 비교 레이싱화 대비 <strong>CO₂ 75% 저감</strong>, 자투리 원단·접착제 없음을 내세웁니다</li>
-</ul>
-<p>실제 착화감은 "두 번째 피부"에 가깝다는 평이 많습니다. 격자 구조라 <strong>통기성도 최상위</strong>(양말 색이 비칠 정도). 다만 끈이 없고 빡빡해서 <strong>처음 신을 때 당겨 신는 요령과 적응이 필요</strong>합니다.</p>
-
-<h2>실제로 어떻게 달리나</h2>
-<p>해외 전문 매체 평가는 상당히 높습니다(Believe in the Run A티어, Road Trail Run 9.31/10). 핵심은 셋입니다.</p>
-<ul>
-  <li><strong>높은 스택, 그런데 안정적</strong> — 힐 45mm / 전족 39mm의 맥스쿠션인데도 "믿기 힘들 만큼 안정적"이라는 평가. 맥스쿠션 트레이너 중 안정성 최상위권입니다</li>
-  <li><strong>부드럽지만 무너지지 않는 반발</strong> — 상단 Helion HF(소프트) + 하단 Helion(단단)의 이중 밀도가 푹신함과 탄력을 동시에. 에너지 리턴은 힐 66% / 전족 69%로 슈퍼트레이너급</li>
-  <li><strong>넓은 페이스 대응</strong> — 부드러운 로커 설계로 회복 조깅부터 마라톤 레이스 페이스까지 한 켤레로 커버. "원슈(one-shoe)" 솔루션을 원하는 러너에게 매력적입니다</li>
-</ul>
-<p>포지션은 카본 레이서와 다릅니다. 톡 쏘는 추진력의 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a> 같은 무플레이트 슈퍼트레이너와 직접 경쟁하며, 라이트스프레이는 그보다도 26g 가볍습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">사기 전 꼭 알아야 할 단점</p>
-    <ul>
-      <li><strong>어퍼에 패딩이 전혀 없습니다</strong> — 힐 칼라 지지가 없어 초기 아킬레스 자극이 올 수 있어, 온이 <strong>전용 보호 양말(On Elite Run Sock)을 동봉</strong>합니다. 맨발 착화는 비추천</li>
-      <li><strong>착화 난이도</strong> — 끈 없는 빡빡한 핏이라 처음엔 신기 까다롭고, 뒤꿈치 좁은 러너는 힐 슬립이 생길 수 있습니다</li>
-      <li><strong>족저근막염·아치 통증 이력자 주의</strong> — 내측 아치 지지가 강해 불편할 수 있습니다</li>
-      <li><strong>어퍼 장기 내구성 미검증</strong> — 스프레이 TPU 소재의 장기 데이터가 아직 없습니다(아웃솔 내구성은 우수)</li>
-      <li><strong>인솔(깔창) 분리 불가</strong> — 일체형 구조라 오소틱(맞춤 깔창) 사용자에겐 부적합</li>
-    </ul>
-  </div>
-</div>
-
-<h2>한국 러너 — 살까, 말까</h2>
-<p>발볼은 <strong>표준</strong>이라 보통 발에는 무난하지만(라이트스프레이 자체 토박스 실측은 없고, 72.8mm는 일반 하이퍼의 RunRepeat 실측값입니다), <strong>와이드 옵션이 없습니다</strong>(일체형 어퍼 특성상). 발볼이 매우 넓다면 망설여집니다. 그리고 가격 <strong>319,000원</strong>은 국내 슈퍼트레이너 중 최고가권 — "로봇 제조 어퍼"라는 기술 프리미엄이 분명히 얹혀 있습니다.</p>
-<div class="callout info">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">이렇게 정리됩니다</p>
-    <ul>
-      <li><strong>라이트스프레이 하이퍼(₩319,000)</strong> — 최신 제조 기술과 극강 경량(205g)에 끌리고, 통기성·안정성을 최우선하며, 가격이 부담 없는 얼리어답터</li>
-      <li><strong><a href="/shoes/on-cloudmonster-3-hyper">일반 하이퍼(₩259,000)</a></strong> — 같은 Helion HF 미드솔 성능을 6만 원 싸게. 패딩 있는 일반 어퍼라 착화·핏이 편한 게 오히려 장점. <strong>대부분의 러너에겐 이쪽이 합리적</strong></li>
-      <li><strong>가성비 슈퍼트레이너</strong>를 원한다면 → <a href="/blog/li-ning-red-hare-9-ultra-truth-2026">라이닝 레드헤어 9 울트라</a>(병행·구매대행 약 15만 원, 한국 미정식출시)처럼 절반 값 안팎의 대안도 있습니다</li>
-    </ul>
-  </div>
-</div>
-
-<h2>자주 묻는 질문</h2>
-<h3>Q. '클라우드몬스터 3 하이퍼'랑 '라이트스프레이'랑 같은 거 아닌가요?</h3>
-<p>다릅니다. <strong>일반 하이퍼(₩259,000)</strong>는 천 어퍼, <strong>라이트스프레이 하이퍼(₩319,000)</strong>는 로봇 스프레이 어퍼입니다. 미드솔(Helion HF 이중 밀도)은 같지만 어퍼와 무게(264g vs 205g), 가격이 다릅니다.</p>
-
-<h3>Q. 카본 레이싱화처럼 빠른가요?</h3>
-<p>방향이 다릅니다. 카본 플레이트가 없는 <strong>슈퍼트레이너</strong>라, 톡 쏘는 추진력보다는 <strong>부드럽고 안정적인 장거리·템포 라이드</strong>가 강점입니다. 레이스 기록용이면 카본화가, 훈련+장거리 겸용이면 이쪽이 맞습니다.</p>
-
-<h3>Q. 동봉 양말은 꼭 신어야 하나요?</h3>
-<p>권장합니다. 어퍼에 패딩이 없어 <strong>뒤꿈치·아킬레스 보호</strong>를 위해 온이 전용 양말을 함께 줍니다. 특히 초기 적응 기간엔 신는 게 좋습니다.</p>
-
-<h3>Q. 발볼 넓은데 괜찮나요?</h3>
-<p>토박스는 표준이라 보통 발은 무난하지만(72.8mm는 일반 하이퍼 RunRepeat 실측값이고 라이트스프레이 자체 실측은 없습니다) <strong>와이드 옵션이 없습니다</strong>. 발볼이 매우 넓다면 신중하게, 가능하면 매장에서 신어보고 결정하세요.</p>
-
-<h2>마무리</h2>
-<p>라이트스프레이 클라우드몬스터 3 하이퍼는 "<strong>로봇이 만든 어퍼</strong>"라는 화제성과 205g 경량, 그리고 맥스쿠션치고 뛰어난 안정성으로 분명 매력적인 신발입니다. 다만 <strong>31만 9천원의 기술 프리미엄</strong>이 핵심 갈림길이죠. 그 무게와 신기술에 가치를 둔다면 만족스럽지만, "같은 성능을 더 싸게"라면 <a href="/shoes/on-cloudmonster-3-hyper">일반 하이퍼</a>가, "안정적인 데일리"라면 <a href="/shoes/on-cloudmonster-3">일반 클라우드몬스터 3</a>가 더 합리적입니다. 내 우선순위가 <strong>최신 기술·경량</strong>인지, <strong>가성비</strong>인지부터 정하면 답이 보입니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 On 공식 발표와 RunRepeat·Believe in the Run·Road Trail Run·Doctors of Running 리뷰를 종합한 내용입니다. RunRepeat 랩 수치는 동일 미드솔을 쓰는 비(非)라이트스프레이 하이퍼 기준이며, 라이트스프레이 버전은 어퍼·무게가 다릅니다. 가격은 On 한국 공식(2026-06 기준)이며 변동될 수 있습니다.</p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>정확LS의205g은 기준사이즈가명시되지않은 한국공식 한짝공시입니다.</li><li>독립랩·전체스택·내부폭·SA·리턴·경도는 이번범위에서미확인입니다.</li><li>동봉양말은확인했지만아킬레스보호효능·모든러너의착용의무로바꾸지않습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/on/cloudmonster3hyperls/side.webp" alt="LightSpray Cloudmonster3 Hyper — 끈없는 어퍼의 실제 압박·고정 확인" loading="lazy"/><figcaption>LightSpray Cloudmonster3 Hyper — 끈없는 어퍼의 실제 압박·고정 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>한국공식캐시 확인사항</th><th>범위</th></tr></thead><tbody><tr><td>정확모델·SKU</td><td>LightSpray Cloudmonster3 Hyper·3UG10014837</td></tr><tr><td>성별·핏</td><td>유니섹스·Regular·제조사정사이즈안내</td></tr><tr><td>공시</td><td>한짝205g·6mm,기준사이즈미공시</td></tr><tr><td>폼·플레이트</td><td>Helion HF위층+Helion아래층·CloudTec·플레이트없음명시</td></tr><tr><td>표시가격·동봉</td><td>319,000원·Elite Run Sock High Hyper</td></tr><tr><td>현재가격·선택재고·한국와이드</td><td>미확인</td></tr></tbody></table></div><h2>기본형43.4/34.2mm와66.1/69.4%를 옮기지 않습니다</h2><p>이전 글은 일반3Hyper의랩리턴과45/39mm스택을LS의주행설명에 사용했습니다. 정확LS독립랩을확보하지못해 해당수치를제거했습니다. 폼이름이같아도어퍼·규격·내부공간·동작감각까지동일하다고인증할수없습니다.</p><p>기존실측210g·US8.5기준·일반형대비96g/32%감량도 동일검체조건을확인하지못해철회했습니다. 정확LS의DOR개별리뷰도미확인이고 기본Hyper리뷰의LS언급을별도착화기록으로승격하지않습니다.</p><h2>끈없는어퍼에서는 조절할 수 있는 것부터 확인</h2><p>끈없는일체형어퍼는끈조절로중족압박·힐슬립을바꿀수없습니다. 실제규격에서앞코길이·발등압박·힐고정을확인할이유입니다. 일반형내부너비72.8mm를LS토박스로안내하지않습니다. Regular·정사이즈는제조사안내이며모든발의적합보장은아닙니다.</p><p>전용양말동봉표시는확인했지만임상보호효과는확인하지못했습니다. 족저근막이력자금지·아킬레스보호필수·오소틱사용자부적합·인솔분리불가라는확정도근거범위밖이어서제거했습니다. 인솔교체가필요하다면실제상품의분리·깊이·고정을별도확인하세요.</p><h2>미확인인 성능을 가격 차이로 보장하지 않기</h2><p>단일한국SKU캐시319,000원과기본형캐시259,000원을확인했지만현재가와할인·재고는미확인입니다.6만원이면동일성능을더가볍게산다는결론은내리지않습니다. 캐시의여성일부잔여수량·남성알림목록은실시간선택상태가아닙니다.</p><p>480~640km수명·최상위통기/안정성·30km피로보장은검증하지못해제거했습니다.3분제조·75%CO₂저감등예전수치도이번정확제품확인범위에서재검증하지못해반복하지않습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-hyper-ls-u-3ug1001/unisex/limelight-bloom-shoes-3UG10014837" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3UG10014837 · unisex</a> — 표시 정가 319000원. 도구 캐시 yesterday; 현재 가격·선택 재고 미확인.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "랩리턴66/69%가맞나요?",
+        "answer": "그값은기본3Hyper검체입니다. 정확LS별도랩은미확인이어서LS수치로표시하지않습니다."
+      },
+      {
+        "question": "동봉양말을꼭신어야하나요?",
+        "answer": "동봉표시는확인했지만모든러너의필수착용·임상보호효과를입증하지못했습니다. 실제압박·마찰을확인하세요."
+      },
+      {
+        "question": "인솔분리불가인가요?",
+        "answer": "이번정확원문으로확정하지못했습니다. 인솔교체가필요하다면실제규격의분리·깊이·고정을확인하세요."
+      }
+    ],
   },
   {
     id: 'seoul-7979-running-crew-free-2026',

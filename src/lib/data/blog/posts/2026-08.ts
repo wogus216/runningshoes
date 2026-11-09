@@ -668,151 +668,39 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'nike-pegasus-plus-2-release-2026',
-    slug: 'nike-pegasus-plus-2-release-2026',
-    title:
-      '나이키 페가수스 플러스 2 공식 발표 — 갈렸던 미드솔 논쟁의 답은 ZoomX + 전족부 에어 | 8월 30일 글로벌 출시, 한국은 9월 초',
-    description:
-      '7월에 리크 이미지만 돌던 나이키 페가수스 플러스 2가 공식 발표됐습니다. 소스마다 ZoomX냐 ReactX냐로 갈렸던 미드솔은 ZoomX로 확정됐고, 전족부에 곡선형 Air Zoom 유닛이 겉으로 드러나는 구조가 더해졌습니다. 나이키는 1세대 대비 에너지 리턴이 최소 18% 늘었다고 밝혔습니다. 글로벌 출시는 8월 30일, 한국은 9월 초입니다. 발표 이후 확인된 한국 정가(219,000원)와 RunRepeat 실측(247g·토박스 71.3mm)까지, 1세대·페가수스 42·프리미엄과 어떻게 갈리는지 정리했습니다.',
-    thumbnail: '/images/blog/nike-pegasus-plus-2-release-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-25',
-    updatedAt: '2026-10-23',
-    category: 'review' as const,
+    id: "nike-pegasus-plus-2-release-2026",
+    slug: "nike-pegasus-plus-2-release-2026",
+    title: "페가수스 플러스2 업데이트 — ZoomX·전족Air Zoom, 한국 캐시와 실측 정리",
+    description: "247g·드롭10.4mm 실측과 한국265g/280mm·215g/250mm를 구분합니다.18%주장의 시험조건, 반사디테일 상충과 DOR Andrea의 주행·핏을 정리했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus-plus-2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-25",
+    updatedAt: "2026-11-10",
+    category: "review",
     readingTime: 7,
     tags: [
-      '나이키 페가수스 플러스 2',
-      '페가수스 플러스',
-      '나이키 러닝화',
-      '템포 트레이너',
-      'ZoomX',
-      '신상 러닝화',
+      "페가수스 플러스2",
+      "나이키",
+      "Air Zoom",
+      "핏"
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>미드솔 논쟁이 끝났습니다.</strong> 7월 리크 때 소스마다 ZoomX(프리미엄 폼)와 ReactX(보급형 폼)로 갈렸던 부분은 <strong>ZoomX</strong>로 확정됐고, 여기에 <strong>전족부 곡선형 Air Zoom 유닛</strong>이 겉으로 드러나는 형태로 얹혔습니다</li>
-    <li>나이키는 이 조합이 <strong>1세대 페가수스 플러스 대비 에너지 리턴을 최소 18% 높였다</strong>고 밝혔습니다(제조사 발표 기준). 카본 플레이트는 들어가지 않습니다</li>
-    <li>글로벌 출시는 <strong>8월 30일</strong>, 한국은 <strong>9월 초</strong>로 안내됐습니다. <strong>(10/2 갱신)</strong> 나이키 코리아에서 남·여 <strong>219,000원</strong>에 판매 중으로 바뀐 것을 확인했습니다(9/3에는 "출시 예정") — 1세대와 같은 값입니다. 공식 무게는 약 265g(280mm), 오프셋 10mm</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">7월에 "확정할 수 없다"고 적었던 것들의 답</p>
-    <p>지난 7월, 이 신발은 아직 <a href="/blog/nike-pegasus-plus-2-leak-2026">리크 이미지만 도는 단계</a>였습니다. 그때 저희는 어퍼·실루엣은 여러 소스가 일치하지만 <strong>정작 중요한 미드솔은 소스마다 다르게 말한다</strong>고 정리하면서, 공식 발표가 나오면 갱신하겠다고 적었습니다. 이 글이 그 갱신입니다.</p>
-  </div>
-</div>
-
-<h2>ZoomX냐 ReactX냐 — 공식 답은 ZoomX였다</h2>
-
-<p>7월 리크 단계에서 두 갈래 주장이 있었습니다. 한쪽은 1세대와 같은 <strong>풀렝스 ZoomX에 가시적인 줌에어 포드가 추가된다</strong>고 했고, 다른 쪽은 <strong>ReactX 폼으로 내려간다</strong>고 했습니다. ZoomX는 PEBA 계열의 가볍고 반발력 높은 프리미엄 폼이고, ReactX는 <a href="/shoes/nike-pegasus-42">페가수스 42</a>에 쓰이는 EVA 계열 보급형 폼입니다. 어느 쪽이냐에 따라 이 신발이 상위 라인으로 올라가는지 아래로 내려가는지가 완전히 갈리는 문제였습니다.</p>
-
-<p>나이키 공식 발표는 <strong>ZoomX 미드솔</strong>이라고 명시했습니다. 그리고 리크 쪽 주장 중 "가시적인 에어 유닛"도 사실로 확인됐습니다 — <strong>전족부에 곡선형 Air Zoom 유닛이 밖으로 노출되는 구조</strong>입니다. 즉 두 주장 중 프리미엄 쪽이 맞았고, ReactX 다운그레이드설은 틀렸습니다.</p>
-
-<p>나이키는 이 조합이 <strong>1세대 페가수스 플러스보다 에너지 리턴을 최소 18% 높인다</strong>고 밝혔습니다. 비교 대상이 1세대라는 점이 중요합니다. 1세대도 이미 풀렝스 ZoomX를 쓰던 신발이고, 저희 데이터에서 반응성 항목이 10점 만점에 9점으로 매겨진 모델입니다. 그 위에서 다시 18%를 말하고 있는 것이며, <strong>카본 플레이트 없이</strong> 에어 유닛만으로 그 차이를 만들었다는 것이 나이키의 설명입니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">📐</span>
-  <div class="callout-body">
-    <p class="callout-title">18%는 제조사 주장이지 랩 실측이 아닙니다</p>
-    <p>이 수치는 나이키가 자사 발표에서 밝힌 값입니다. 글을 쓴 8월 25일에는 RunRepeat 같은 독립 랩의 에너지 리턴 측정치가 없었습니다. 제조사가 어떤 조건에서 무엇을 기준으로 쟀는지는 공개되지 않으므로, 실사용 체감과 그대로 일치한다고 보기는 이릅니다. <strong>(10월 18일 갱신)</strong> 10월 12일 게시된 RunRepeat 랩에서는 에너지 리턴이 전족부 69.0%·힐 65.5%로 측정됐습니다. 평균(61.5%)보다는 높지만, RunRepeat은 1세대와 비슷한 수준이라 나이키가 내세운 큰 폭의 향상은 찾지 못했다고 적었습니다.</p>
-  </div>
-</div>
-
-<h2>"템포 트레이너"라는 자리</h2>
-
-<p>나이키가 이 신발에 붙인 규정은 <strong>템포 트레이너</strong>입니다. 매일 신는 데일리도 아니고 대회 날만 꺼내는 레이싱화도 아닌, <strong>속도를 올려 달리는 훈련용</strong>이라는 뜻입니다. 인터벌이나 템포런처럼 평소보다 페이스를 끌어올리는 날에 신는 신발입니다.</p>
-
-<p>페가수스 라인 안에서 이 자리를 보면 구조가 분명해집니다.</p>
-
-<table>
-  <thead>
-    <tr><th>모델</th><th>미드솔</th><th>무게</th><th>한국 정가</th><th>성격</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><a href="/shoes/nike-pegasus-42">페가수스 42</a></td><td>ReactX</td><td>286g</td><td>169,000원</td><td>매일 신는 기본</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-plus">페가수스 플러스</a> (1세대)</td><td>풀렝스 ZoomX</td><td>244g</td><td>219,000원</td><td>가볍고 반응 빠른 스피드 데일리</td></tr>
-    <tr><td><strong>페가수스 플러스 2</strong></td><td>ZoomX + 전족부 Air Zoom</td><td>247g (RunRepeat 실측, US M9) · 공식 258g (US M9)</td><td><strong>219,000원</strong></td><td>템포 트레이너</td></tr>
-    <tr><td><a href="/shoes/nike-pegasus-premium">페가수스 프리미엄</a></td><td>ZoomX+ReactX+에어</td><td>308g</td><td>289,000원</td><td>맥시멀 쿠션 상위판</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 42·플러스 1세대·프리미엄 수치는 저희 데이터베이스 기준(US M9). 플러스 2 무게는 나이키 코리아 제품 페이지의 280mm 기준 공식값이라 기준 사이즈가 다릅니다.</p>
-
-<p>프리미엄과의 차이를 나이키는 <strong>에어 유닛이 신발 전체로 확장되지 않는다</strong>는 점으로 설명합니다. 프리미엄이 폼 세 겹을 쌓아 308g까지 무거워진 맥시멀 노선이라면, 플러스 2는 전족부에만 에어를 두고 <strong>가벼움을 지키는 쪽</strong>입니다. 프리미엄과 플러스는 이름이 비슷해 자주 혼동되지만 지향이 정반대에 가깝습니다. 라인 전체 구조가 궁금하다면 <a href="/blog/nike-running-shoes-lineup-tier-guide-2026">나이키 러닝화 계급도</a>에 정리해 뒀습니다.</p>
-
-<h2>1세대에서 바뀐 것 — 폼 말고도 있다</h2>
-
-<p>미드솔 외에도 몇 가지가 손봐졌습니다.</p>
-
-<ul>
-  <li><strong>라스트(발 본) 교체</strong> — 페가수스 42가 쓰는 MR10 2.0 라스트를 가져왔습니다. 라스트는 신발의 발 모양 틀이라, 바뀌면 핏 감각이 함께 바뀝니다</li>
-  <li><strong>앞볼 공간 확대</strong> — 발가락이 놓이는 부위가 넓어졌습니다</li>
-  <li><strong>중족부 밴드 추가</strong> — 발등을 잡아주는 구조가 더해져 속도를 올릴 때 발이 신발 안에서 밀리는 것을 줄이는 방향입니다</li>
-  <li><strong>어퍼 소재 변경</strong> — 1세대의 Flyknit 니트에서 엔지니어드 메시로 바뀌었습니다(7월 리크 단계에서 이미 여러 소스가 일치했던 부분)</li>
-  <li><strong>경량화</strong> — 전작 대비 10% 가벼워졌다는 서술이 나왔습니다. 발표에 절대 무게(g)는 없었고, 이후 확인된 값은 RunRepeat 실측 247g·나이키 공식 258g(둘 다 US M9)입니다(2026-10-23 기준)</li>
-</ul>
-
-<p>발볼이 넓은 편인 한국 러너 입장에서 <strong>앞볼 확대와 라스트 교체는 눈여겨볼 변화</strong>입니다. 1세대 페가수스 플러스는 저희 DB 분류상 토박스가 좁은 폭(실측 71.6mm)이었는데, 페가수스 42 계열 라스트로 옮겨온 2세대의 RunRepeat 실측 토박스는 <strong>71.3mm</strong>로 1세대와 사실상 같았습니다(평균 73.2mm, 2026-10-23 기준). 공식 설명의 "앞볼 확대"가 토박스 폭 수치로는 확인되지 않은 셈입니다.</p>
-
-<h2>우리 예상이 빗나간 지점 — 출시가 훨씬 빨랐다</h2>
-
-<p>정직하게 적어두겠습니다. 7월 리크 글에서 저희는 <strong>예상 출시를 "2026년 말~2027년 초"</strong>로 적었고, 당시 FAQ에서도 "세대 교체를 기다리기엔 최소 반년 이상 남았다"고 안내했습니다. <strong>실제로는 두 달이 채 걸리지 않았습니다.</strong></p>
-
-<p>리크 이미지가 돈 시점에 이미 발표가 임박해 있었다는 뜻입니다. 리크 단계의 출시 시기 추정은 소스가 불분명한 정보 중에서도 특히 빗나가기 쉽다는 것을 이번에 다시 확인했습니다. 7월에 저 안내를 보고 <a href="/shoes/nike-pegasus-plus">1세대</a>를 구매하신 분께는 예상이 어긋난 셈이라 이 부분을 분명히 밝혀둡니다. 다만 1세대와 2세대는 같은 자리를 놓고 다투는 신발이 아니라 성격이 조금 다릅니다 — 1세대는 풀렝스 ZoomX의 부드럽고 통통 튀는 데일리, 2세대는 전족부 에어를 얹어 속도 구간에 초점을 맞춘 템포 트레이너입니다.</p>
-
-<h2>한국 출시와 가격</h2>
-
-<p>글로벌 출시일은 <strong>8월 30일</strong>이고, 나이키 앱·나이키 온라인 스토어와 주요 리테일러에서 판매됩니다. <strong>한국은 9월 초</strong>로 안내됐으며, 나이키닷컴·나이키 앱·주요 나이키 매장이 판매처로 언급됐습니다.</p>
-
-<p>미국 가격은 소스에 따라 <strong>$165에서 $170 사이</strong>로 다르게 적혀 있습니다. 컬러웨이별로 다를 가능성이 있습니다(9월 3일 출시 예정인 특정 컬러가 $170으로 표기된 사례가 있습니다).</p>
-
-<p><strong>(9월 3일 갱신)</strong> 나이키 코리아 온라인 스토어에 남성·여성 모두 <strong>219,000원</strong>, "출시 예정"(알림 받기)으로 등록됐습니다. 정확한 국내 판매 개시일은 표기되지 않았습니다. <strong>(10월 2일 갱신)</strong> 같은 상품 페이지에서 사이즈 선택과 장바구니가 활성화돼 판매가 시작된 것을 확인했습니다. 구매 선택은 <a href="/blog/nike-pegasus-42-vs-pegasus-plus-2-daily-2026">페가수스 42와의 비교 글</a>에 정리했습니다. <strong>1세대 한국 정가 219,000원과 같은 값</strong>입니다 — 미국에서는 $180→$165로 내렸지만 국내가는 그대로입니다. 제품 페이지에 와이드 옵션은 없고, 공식 무게는 약 265g(280mm 기준)·오프셋 10mm로 적혀 있습니다. 상세 스펙과 적합성 분석은 <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2 상세 페이지</a>에 정리했습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⏳</span>
-  <div class="callout-body">
-    <p class="callout-title">발표에 없던 수치 — 이후 RunRepeat 실측으로 확인했습니다</p>
-    <p>공식 발표에도 <strong>무게(g), 힐·전족부 스택 높이, 드롭</strong>은 포함되지 않았고 독립 랩 측정치도 당시에는 없었습니다. 한국 정가는 9월 3일 나이키 코리아 등록으로 확인됐고(219,000원), 그에 따라 <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a>를 연결했습니다. <strong>(10월 18일 갱신)</strong> 10월 12일 RunRepeat 랩이 게시돼 상세 페이지에 반영했습니다 — 무게 247g, 힐/전족부 스택 37.7/27.3mm, 드롭 10.4mm, 힐 충격흡수 147 SA(평균 131 SA, 1세대 125 SA), 토박스 71.3mm(평균 73.2mm)입니다.</p>
-  </div>
-</div>
-
-<h2>지금 판단이 필요한 사람에게</h2>
-
-<p><strong>템포런·인터벌용 신발을 찾고 있다면</strong> 후보로 볼 가치가 있습니다. 카본 플레이트 없이 반발력을 올린 신발은 플레이트 특유의 뻣뻣함이 부담스러운 러너에게 대안이 됩니다. RunRepeat 실측(247g·힐 충격흡수 147 SA·토박스 71.3mm)이 나왔으니(2026-10-23 기준) <a href="/shoes/nike-pegasus-plus-2">상세 페이지</a> 수치로 판단하면 됩니다.</p>
-
-<p><strong>매일 신을 한 켤레를 찾고 있다면</strong> 이 신발은 목적이 다릅니다. 템포 트레이너는 속도 구간에 맞춰 설계되므로 <a href="/shoes/nike-pegasus-42">페가수스 42</a>처럼 매일의 조깅을 받아내는 신발과는 역할이 갈립니다.</p>
-
-<p><strong>1세대를 이미 갖고 있다면</strong> 서두를 이유는 적습니다. 1세대의 풀렝스 ZoomX는 여전히 가볍고 반응 빠른 구성이고, 2세대는 그것을 대체한다기보다 성격을 속도 쪽으로 옮긴 모델입니다. 두 켤레를 용도별로 나눠 쓰는 편이 자연스럽습니다.</p>
-
-<h2>FAQ</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 카본 플레이트가 들어가나요?</p>
-    <p class="faq-a">A. 들어가지 않습니다. 나이키는 플레이트 없이 ZoomX 폼과 전족부 Air Zoom 유닛의 조합으로 에너지 리턴을 높였다고 설명합니다. 플레이트 특유의 강한 전환감이 부담스러웠던 러너에게는 오히려 이 점이 장점이 될 수 있습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 페가수스 프리미엄과 뭐가 다른가요?</p>
-    <p class="faq-a">A. 에어 유닛의 범위와 지향이 다릅니다. 프리미엄은 에어 유닛이 신발 전체에 걸쳐 있고 폼을 겹겹이 쌓은 맥시멀 쿠션 모델로 308g입니다. 플러스 2는 전족부에만 곡선형 에어를 두고 가벼움을 지키는 템포 트레이너입니다. 이름은 비슷하지만 지향이 반대에 가깝습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 한국 가격은 얼마인가요?</p>
-    <p class="faq-a">A. <strong>219,000원</strong>입니다(나이키 코리아 온라인 스토어, 2026년 9월 3일 확인, 남·여 동일). 1세대 한국 정가와 같은 값이며, 미국 정가가 $180에서 $165로 내려간 것과 달리 국내가는 유지됐습니다. 9월 3일 확인 시점에는 "출시 예정" 상태였고, 10월 2일 재확인에서 판매 중(사이즈 선택·장바구니 활성)으로 바뀌어 있었습니다. 정확한 판매 개시일은 표기돼 있지 않았습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 무게가 얼마나 되나요?</p>
-    <p class="faq-a">A. <strong>RunRepeat 실측 247g, 나이키 공식 스펙 258g</strong>입니다(둘 다 US M9, 2026-10-23 기준). 공식 발표에는 절대 무게 없이 "전작 대비 10% 경량화"라는 서술만 있었고, 이 글 초판에서 1세대 244g에 10%를 적용해 계산한 "220g 안팎"은 실측과 맞지 않았습니다. 측정 주체·사이즈에 따라 값이 달라지니 같은 기준끼리 비교하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 괜찮을까요?</p>
-    <p class="faq-a">A. 공식 설명은 페가수스 42의 MR10 2.0 라스트를 쓰면서 앞볼 공간이 넓어졌다는 것입니다. 다만 이후 나온 RunRepeat 실측 토박스는 71.3mm(평균 73.2mm)로 1세대(71.6mm)와 사실상 같았고, 나이키 코리아에 와이드 옵션도 없습니다(2026-10-23 기준). 발볼이 넓은 편이라면 실물 착화 후 구매를 권합니다.</p>
-  </div>
-</div>
-
-<p><small>출처: 나이키 공식 뉴스룸 발표(about.nike.com, 2026년 8월) · Gear Patrol · GQ 코리아(2026년 8월 21일, 한국 9월 초 출시) · SneakerNews(출시일) · 1세대·페가수스 42·프리미엄 수치는 본 사이트 신발 데이터베이스 기준. 무게·스택·드롭 등 정량 수치는 2026년 8월 25일 기준 미공개였습니다. <strong>2026년 9월 3일 갱신</strong>: 한국 정가 219,000원·공식 무게 약 265g(280mm)·오프셋 10mm·와이드 옵션 없음은 나이키 코리아 온라인 스토어 제품 페이지(nike.com/kr, IM2541-600) 기준. <strong>2026년 10월 18일 갱신</strong>: RunRepeat 랩 실측(2026년 10월 12일 게시) 반영. <strong>2026년 10월 23일 갱신</strong>: 본문·FAQ에 남아 있던 무게·토박스 "미공개" 서술을 실측 기준으로 정리.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>ZoomX와 전족 전폭Air Zoom1개를 사용합니다. 공기 유닛을 카본으로 부르지 않습니다.</li><li>한국남성265g/280mm·여성215g/250mm, RR실측247g은 조건이 다릅니다.</li><li>18%리턴 개선은 제조사 주장으로 귀속하고 RR시험이 입증·반박했다고 단정하지 않습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/nike/pegasus-plus-2/side.webp" alt="페가수스 플러스2 — 훈련용ZoomX와 전족Air Zoom" loading="lazy"/><figcaption>페가수스 플러스2 — 훈련용ZoomX와 전족Air Zoom</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat 검체 항목</th><th>값</th></tr></thead><tbody><tr><td>무게</td><td>247g</td></tr><tr><td>힐/전족 스택·드롭</td><td>37.7/27.3mm·10.4mm</td></tr><tr><td>힐/전족 SA</td><td>147/122</td></tr><tr><td>힐/전족 리턴</td><td>65.5/69%</td></tr><tr><td>폼 경도</td><td>29.8AC</td></tr><tr><td>내부 최광폭/엄지 너비/높이</td><td>94/71.3/26.8mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>출시 예고보다 현재 확인 범위를 보기</h2><p>한국남성IM2541-600·여성IM2543-600 공식 캐시는219,000원과 사이즈목록을 표시했습니다. 남성240~310mm·여성220~260mm라는 목록이 지금 선택 가능한 재고라는 뜻은 아닙니다. 현재가격·와이드·결제재고는 미확인입니다. 과거 예정일이나 장바구니 표시를 현행 전체판매 확정으로 쓰지 않습니다.</p><p>한국 공시는남성265g(280mm)·여성215g(250mm)·10mm, DOR소개270g(남성US10)/226g(여성US8)·38/28mm·10mm입니다. 기존258g US9 확정은 이번 한국 원문에서 재확인되지 않아 정정했습니다.</p><h2>Andrea의 마라톤 강도와 모든 러너의 최적 페이스는 다릅니다</h2><p>DOR Andrea(여성US9.5)는 정사이즈·높은 전족 볼륨과 중간 테이퍼, 끈을 더 조여야 하는 중족과 좋은 뒤쪽 고정을 느꼈습니다. 이지·업템포와 자신의 마라톤 강도를 선호했지만 역치 강도에서 무게가 더 느껴지고 작은 베벨·높은드롭의 힐 전환이 거칠었다고 적었습니다.</p><p>이 경험으로 ‘누구나4:30~6:00전용’, ‘힐착지금지’, ‘아킬레스가약하면안전’이라는 규칙을 만들지 않습니다. 현재 압박·고정과 주로 할 주행에서의 전환을 확인할 수 있습니다.</p><h2>18%주장·반사디테일·접지는 출처를 구분</h2><p>DOR이 전한 Nike18%개선은 제조사 주장이고 비교시험 조건이 RR과 같다고 확인하지 못했습니다. RR65.5/69%만으로 광고가 거짓이거나 개인 기록이 개선된다고 결론내리지 않습니다.</p><p>한국 공식은 반사 디테일을 명시하지만 RR검체는 없음으로 기록합니다. SKU·검체 차이를 이번 근거로 해결하지 못해 양쪽을 남겼습니다. 젖은콘크리트0.49와 Andrea의 좋은 젖은도로 체감도 다른 조건입니다. 정확 원문에서 플레이트 유무를 명시적으로 재확인하지 못해 해당구조는 미확인으로 남깁니다.</p><p>400~500km 추정수명·km당비용·평발금지·기본핏이모두좋아졌다는 기존 단정은 철회했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2541-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2541-600 · men</a> — 표시 정가 219000원. 도구 캐시 last week; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2543-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2543-600 · women</a> — 표시 정가 219000원. 도구 캐시 4 days ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/nike-pegasus-plus-2" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/nike-pegasus-plus-2-review/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul>
 `,
+    faqs: [
+      {
+        "question": "한국에서219,000원인가요?",
+        "answer": "확인한 남녀 두SKU 공식캐시 표시값입니다. 현재가격·선택사이즈·재고는 미확인입니다."
+      },
+      {
+        "question": "18%개선은 RR에서 반박됐나요?",
+        "answer": "비교시험 조건이 같다고 확인하지 못했습니다. 제조사주장과 RR검체의 절대리턴을 같은시험으로 비교하지 않습니다."
+      },
+      {
+        "question": "아킬레스가 약하면 더 안전한가요?",
+        "answer": "공시드롭·스택으로 특정질환 예방·치료효과를 확인하지 못했습니다. 기존보호추천을 철회했습니다."
+      }
+    ],
   },
   {
     id: 'geumcheon-health-run',
@@ -4268,131 +4156,39 @@ export const posts_2026_08: BlogPost[] = [
 `,
   },
   {
-    id: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026',
-    slug: 'on-cloudmonster-hyper-vs-3-hyper-comparison-2026',
-    title: 'On 클라우드몬스터 하이퍼 vs 3 하이퍼 차이 | 같은 25.9만원인데 6g 무거워진 신형이 압도한 이유 — 에너지 리턴 54%→66%, 랩 79점→90점',
-    description:
-      'On 클라우드몬스터 하이퍼(구형)와 클라우드몬스터 3 하이퍼는 둘 다 259,000원, 둘 다 무플레이트, 둘 다 450km입니다. 같은 US M9 실측으로 구형이 6g 가볍지만, 에너지 리턴 54.4%→66.1%, 저온 경화율 21%→7%, 힐 패딩 내구성 1/5→5/5로 신형이 거의 전 항목에서 앞섭니다. RunRepeat 종합은 79점 대 90점. 다만 3 하이퍼는 On 공식 드롭 6mm와 달리 실측이 9.2mm라 로우드롭을 기대하고 사면 안 됩니다. 겨울 훈련과 발볼 관점까지 한국 러너 기준으로 정리했습니다.',
-    thumbnail: '/images/blog/on-cloudmonster-hyper-vs-3-hyper-comparison-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-08-07',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['클라우드몬스터 하이퍼', '클라우드몬스터 3 하이퍼', '온러닝', 'On 러닝화', '슈퍼트레이너', '러닝화 비교', '무플레이트', '클라우드몬스터 차이'],
+    id: "on-cloudmonster-hyper-vs-3-hyper-comparison-2026",
+    slug: "on-cloudmonster-hyper-vs-3-hyper-comparison-2026",
+    title: "초대 클라우드몬스터 하이퍼 vs3 하이퍼 — 리턴·앞코·카운터를 분리해서 비교",
+    description: "258/264g·드롭6.7/9.2mm 랩을비교합니다. 같은값이면신형압승·6g개선·겨울훈련보장대신 리뷰어별핏·주행과한국가격미확인을정리했습니다.",
+    thumbnail: "/images/shoes/on/cloudmonster3hyper/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-08-07",
+    category: "review",
+    readingTime: 7,
+    tags: [
+      "클라우드몬스터 하이퍼",
+      "3 하이퍼",
+      "온",
+      "세대 비교"
+    ],
     faqs: [
       {
-        question: '클라우드몬스터 하이퍼와 3 하이퍼, 뭐가 다른가요?',
-        answer:
-          '가격(둘 다 259,000원), 플레이트 유무(둘 다 없음), 내구성(둘 다 450km)은 같습니다. 갈리는 건 폼 성능입니다. RunRepeat 실측 기준 에너지 리턴이 힐 54.4%에서 66.1%로 11.7%p 올랐고, 저온에서 폼이 굳는 정도(경화율)가 21%에서 7%로 3분의 1이 됐습니다. 힐 패딩 내구성은 1/5에서 5/5로 바뀌었고요. 종합 점수는 RunRepeat 79점 대 90점, Believe in the Run 등급은 C Tier 대 A−입니다. 반대로 구형이 나은 건 무게(258g 대 264g)와 통기성(3/5 대 2/5) 두 가지뿐입니다.',
+        "question": "같은값이면3이압도하나요?",
+        "answer": "초대현재가격과3의현행가를확인하지못해같은값으로고정하지않습니다. 랩리턴과개인핏·전환도다릅니다."
       },
       {
-        question: '"하이퍼"는 더 가벼워진다는 뜻 아닌가요?',
-        answer:
-          'On의 하이퍼 라인은 경량화 라벨이 아니라 Pebax 계열 Helion HF 폼을 얹은 상위 사양을 뜻합니다. 실제로 세대가 올라가며 무게는 258g에서 264g으로 6g 늘었고, 스택은 힐 39.7mm에서 43.4mm로 3.7mm 높아졌습니다(모두 RunRepeat 실측). 가벼워진 게 아니라 폼이 더 두꺼워지고 좋아진 쪽입니다. 참고로 일반 클라우드몬스터 3에는 TPU/나일론 Speedboard가 들어가지만, 하이퍼 라인은 구형·신형 모두 플레이트가 없습니다.',
+        "question": "실측드롭이왜다른가요?",
+        "answer": "공시6mm와절단실측6.7/9.2mm는출처·측정조건이다릅니다. 차이원인을이번자료로확정하지않았습니다."
       },
       {
-        question: '3 하이퍼 드롭이 6mm라던데 맞나요?',
-        answer:
-          'On 공식 발표는 6mm지만 RunRepeat 랩 실측은 9.2mm입니다. RunRepeat은 원문에서 "On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"라고 적었습니다. 3mm 넘는 차이라 로우드롭 신발을 찾는 러너라면 주의해야 합니다. 아킬레스나 종아리에 부담이 있어 일부러 낮은 드롭을 고르는 경우라면 이 신발은 기대와 다를 수 있습니다. 참고로 구형 하이퍼는 공식 6mm에 실측 6.7mm로 오차가 작습니다.',
-      },
-      {
-        question: '발볼 넓은데 괜찮을까요?',
-        answer:
-          '두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않기 때문에 발볼이 넓은 편이라면 반드시 매장 착화를 권합니다. RunRepeat 실측 토박스(엄지 부위·US 9)는 구형 73.3mm, 3 하이퍼 72.8mm로 둘 다 랩 평균(73.2mm) 수준의 표준 폭이고, 3 하이퍼가 0.5mm 좁습니다. 최대폭은 구형 97.9mm, 3 하이퍼 95.0mm입니다.',
-      },
+        "question": "칼라문제가해결됐나요?",
+        "answer": "리뷰어별카운터·칼라체감이다릅니다. 실제규격·양말에서압박·마찰을확인하세요."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>같은 값, 다른 물건</strong> — 둘 다 259,000원·무플레이트·450km인데, 에너지 리턴 54.4%→66.1%, RunRepeat 종합 79점→90점으로 신형이 앞섭니다.</li>
-    <li><strong>구형의 우위는 딱 둘</strong> — 무게 6g(258g 대 264g)과 통기성 한 단계(3/5 대 2/5). 대신 힐 패딩 내구성이 1/5입니다.</li>
-    <li><strong>한국 러너 핵심</strong> — 저온 경화율이 21%에서 7%로 줄어 겨울 훈련에서 차이가 큽니다. 단 3 하이퍼는 공식 6mm와 달리 <strong>실측 드롭이 9.2mm</strong>입니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <p><strong>한 줄 결론</strong> — 같은 25만 9천 원이라면 <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>가 합리적입니다. 6g을 내주고 반발·겨울 성능·내구성을 모두 가져오는 교환이라, 성능만 놓고 보면 구형을 고를 이유를 찾기 어렵습니다. <a href="/shoes/on-cloudmonster-hyper">구형 하이퍼</a>는 한여름 위주로 달리면서 1g이라도 가벼운 쪽을 원할 때만 성립합니다. 개별 심층 리뷰는 <a href="/blog/on-cloudmonster-3-hyper-review-2026">클라우드몬스터 3 하이퍼 리뷰</a>에 정리돼 있습니다.</p>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>클라우드몬스터 하이퍼 (구형)</th><th>클라우드몬스터 3 하이퍼</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>가격</td><td>259,000원</td><td>259,000원</td></tr>
-    <tr><td>무게 (US M9 실측)</td><td><strong>258g</strong></td><td>264g</td></tr>
-    <tr><td>스택 (실측)</td><td>힐 39.7 / 전족 33.0mm</td><td><strong>힐 43.4 / 전족 34.2mm</strong></td></tr>
-    <tr><td>드롭</td><td>공식 6mm / 실측 6.7mm</td><td>공식 6mm / <strong>실측 9.2mm</strong></td></tr>
-    <tr><td>미드솔</td><td>Helion HF (Pebax) + CloudTec</td><td>Helion HF + Helion 이중 + CloudTec</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>충격 흡수 SA (힐/전족)</td><td>138 / 118</td><td>139 / 122</td></tr>
-    <tr><td>에너지 리턴 (힐/전족)</td><td>54.4% / 60.2%</td><td><strong>66.1% / 69.4%</strong></td></tr>
-    <tr><td>저온 경화율</td><td>21%</td><td><strong>7%</strong></td></tr>
-    <tr><td>통기성</td><td><strong>3/5</strong></td><td>2/5</td></tr>
-    <tr><td>유연성</td><td><strong>15.8N</strong></td><td>21.2N</td></tr>
-    <tr><td>힐 패딩 내구성</td><td>1/5</td><td><strong>5/5</strong></td></tr>
-    <tr><td>아웃솔 마모</td><td>0.6mm</td><td><strong>0.5mm</strong></td></tr>
-    <tr><td>내구성 / km당 비용</td><td>450km / 약 576원</td><td>450km / 약 576원</td></tr>
-    <tr><td>랩 종합 점수</td><td>RunRepeat 79 · BITR C Tier</td><td><strong>RunRepeat 90 · BITR A−</strong></td></tr>
-    <tr><td>와이드 옵션</td><td>없음</td><td>없음</td></tr>
-  </tbody>
-</table>
-
-<p><small>수치 출처: RunRepeat 랩 실측(두 모델 모두 US M9 동일 기준), Believe in the Run, Doctors of Running. 가격은 On 코리아 공식 기준. 토박스 너비(RunRepeat 실측, 엄지 부위·US 9)는 구형 73.3mm, 3 하이퍼 72.8mm입니다.</small></p>
-
-<h2>"하이퍼"는 경량화 라벨이 아니다</h2>
-
-<p>이름만 보면 하이퍼가 붙을수록 가벼워질 것 같지만 실제로는 반대입니다. 세대가 올라가며 무게는 258g에서 264g으로 <strong>6g 늘었고</strong>, 힐 스택은 39.7mm에서 43.4mm로 <strong>3.7mm 높아졌습니다</strong>. On의 하이퍼는 경량화 표시가 아니라 Pebax 계열 Helion HF 폼을 얹은 상위 사양을 뜻하는 이름입니다.</p>
-
-<p>여기서 자주 헷갈리는 지점이 하나 더 있습니다. 일반 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>에는 TPU/나일론 Speedboard가 들어가지만, <strong>하이퍼 라인은 구형과 신형 모두 플레이트가 없습니다</strong>. 하이퍼가 상위 사양인데 플레이트는 빠지는 구성이라, 딱딱한 전환을 기대하고 고르면 예상과 다를 수 있습니다.</p>
-
-<h2>클라우드몬스터 하이퍼 (구형) — 가볍고 시원하지만 폼이 낡았다</h2>
-
-<p>258g은 지금 기준으로도 가벼운 축입니다. 통기성 3/5로 신형보다 한 단계 시원하고, 유연성 15.8N으로 발이 접히는 느낌도 자연스럽습니다. 한여름 한강·도림천 러닝에서 발이 덜 답답한 쪽은 이쪽입니다.</p>
-
-<p>문제는 폼 성능입니다. 에너지 리턴이 힐 54.4%로 25만 원대 신발치고 낮고, 저온 경화율 21%는 겨울에 폼이 눈에 띄게 굳는다는 뜻입니다. 특히 <strong>힐 패딩 내구성이 1/5</strong>로 측정됐는데, 이는 뒤꿈치 안쪽이 비교적 빨리 주저앉을 수 있다는 신호입니다. Believe in the Run은 디자인·가치·성능 전 항목에 C Tier를 매겼습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 여름 위주로 달리고, 6g이라도 가벼운 쪽을 원하며, 뒤꿈치 착지가 많지 않은 러너.</p>
-
-<h2>클라우드몬스터 3 하이퍼 — 6g 내주고 거의 전부를 가져왔다</h2>
-
-<p>같은 값에 무게만 6g 늘었을 뿐, 나머지 지표가 전반적으로 올라갔습니다. 에너지 리턴은 힐 66.1%·전족 69.4%로 <strong>11.7%p 상승</strong>했고, 충격 흡수 SA도 힐 139로 소폭 개선됐습니다. 상부 Helion HF에 하부 Helion을 더한 이중 밀도 구성으로 바뀐 결과입니다.</p>
-
-<p>내구성 쪽 변화가 더 큽니다. 구형에서 1/5였던 힐 패딩 내구성이 <strong>5/5</strong>가 됐고, 아웃솔 마모도 0.6mm에서 0.5mm로 줄었습니다. 같은 450km 수명 표기라도 실제 형태 유지력은 다르게 봐야 합니다. RunRepeat 종합 90점, Believe in the Run과 Doctors of Running 모두 A− 평가입니다.</p>
-
-<p>양보한 건 통기성(2/5)과 유연성(21.2N)입니다. 폼이 두꺼워지고 단단해진 대가로 한여름에는 구형보다 덥고, 발이 접히는 느낌은 덜합니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 마라톤 훈련처럼 장거리를 반복하는 러너, 겨울에도 주 3회 이상 달리는 러너, 카본 없이 훈련 강도를 올리고 싶은 러너.</p>
-
-<h2>주의 — 공식 드롭 6mm, 실측은 9.2mm</h2>
-
-<p>3 하이퍼에서 반드시 확인해야 할 지점입니다. On 공식 스펙은 드롭 6mm인데, RunRepeat 랩 실측은 <strong>9.2mm</strong>로 나왔습니다. RunRepeat은 원문에 <em>"On states a drop of 6 mm, but we found a slightly higher one at 9.2 mm"</em>라고 적었습니다.</p>
-
-<p>3mm 넘는 차이는 무시할 수준이 아닙니다. 아킬레스나 종아리 부담 때문에 일부러 낮은 드롭을 고르는 러너라면, 이 신발은 스펙 표를 보고 기대한 것과 다르게 느껴질 수 있습니다. 반대로 뒤꿈치 착지가 많은 러너에게는 오히려 편할 수 있는 방향이고요. 구형 하이퍼는 공식 6mm에 실측 6.7mm로 오차가 작습니다.</p>
-
-<h2>한국 러너 관점 — 겨울, 여름, 발볼</h2>
-
-<ul>
-  <li><strong>겨울 훈련이 많다면 3 하이퍼</strong> — 저온 경화율 21%와 7%의 차이는 체감 영역입니다. 영하권에서 구형은 폼이 굳어 반발이 떨어지는 반면, 신형은 상온에 가까운 감각을 유지합니다. 12~2월에도 주행 거리를 유지하는 러너라면 이 항목 하나로 결론이 납니다.</li>
-  <li><strong>한여름 위주라면 구형에 여지</strong> — 통기성 3/5와 2/5의 한 단계 차이는 7~8월 습한 날씨에서 드러납니다. 다만 힐 패딩 1/5를 감안하면 장기 사용에는 불리합니다.</li>
-  <li><strong>발볼이 넓다면 둘 다 신중히</strong> — 두 모델 모두 와이드 옵션이 없습니다. On은 라인업 전반에서 와이드를 거의 내지 않으므로 반드시 매장 착화를 권합니다. 토박스는 RunRepeat 실측 구형 73.3mm, 3 하이퍼 72.8mm로 둘 다 표준 폭입니다.</li>
-  <li><strong>평발이라면</strong> — 두 모델 다 스택이 높은 편(실측 39.7mm·43.4mm)이라 아치가 낮으면 불안정하게 느껴질 수 있습니다. 안정화가 필요하면 <a href="/shoes/asics-gel-kayano-33">젤 카야노 33</a> 계열을 먼저 보는 편이 낫습니다.</li>
-</ul>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>마라톤·하프 훈련용 한 켤레</strong> → <a href="/shoes/on-cloudmonster-3-hyper">클라우드몬스터 3 하이퍼</a>. 에너지 리턴 66.1%에 힐 패딩 5/5로 반복 훈련을 견딥니다.</li>
-  <li><strong>같은 돈으로 더 가벼운 걸</strong> → <a href="/shoes/on-cloudmonster-3-hyper-lightspray">라이트스프레이 클라우드몬스터 3 하이퍼</a>는 205g이지만 319,000원으로 6만 원 비쌉니다. 자세한 내용은 <a href="/blog/on-lightspray-cloudmonster-3-hyper-review-2026">라이트스프레이 리뷰</a>에 있습니다.</li>
-  <li><strong>슈퍼트레이너를 더 싸게</strong> → <a href="/shoes/asics-superblast-2">아식스 슈퍼블라스트 2</a>가 같은 무플레이트 포지션에서 더 저렴합니다.</li>
-  <li><strong>데일리 쿠션이면 충분하다</strong> → 하이퍼가 아닌 <a href="/shoes/on-cloudmonster-3">클라우드몬스터 3</a>가 229,000원으로 3만 원 저렴합니다. 세대 차이는 <a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 비교</a>에서 다뤘습니다.</li>
-</ul>
-
-<p><small>출처: RunRepeat 랩 실측(클라우드몬스터 하이퍼 / 클라우드몬스터 3 하이퍼, 두 모델 모두 US M9 기준), Believe in the Run, Doctors of Running · 가격은 On 코리아 공식 기준 · 구형 하이퍼는 2026년 8월 현재 판매 중이나 일부 사이즈 재고가 적습니다 · 작성 2026년 8월 7일.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>초대와3Hyper는별도모델이며둘다플레이트없는구조입니다.</li><li>RR리턴54.4/60.2%대66.1/69.4%는검체시험이지개인개선율이아닙니다.</li><li>초대현재한국가격은미확인,3Hyper는259,000원캐시여서같은값이라고고정하지않습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/on/cloudmonster3hyper/side.webp" alt="3Hyper — 초대와카운터·앞코·전환을비교" loading="lazy"/><figcaption>3Hyper — 초대와카운터·앞코·전환을비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat검체</th><th>초대Hyper</th><th>3Hyper</th></tr></thead><tbody><tr><td>무게</td><td>258g</td><td>264g</td></tr><tr><td>힐/전족스택</td><td>39.7/33.0mm</td><td>43.4/34.2mm</td></tr><tr><td>실측드롭</td><td>6.7mm</td><td>9.2mm</td></tr><tr><td>힐/전족SA</td><td>138/118</td><td>139/122</td></tr><tr><td>힐/전족리턴</td><td>54.4/60.2%</td><td>66.1/69.4%</td></tr><tr><td>주폼경도</td><td>34.9AC</td><td>37.2AC</td></tr><tr><td>내부최광폭/엄지너비/높이</td><td>97.9/73.3/26.6mm</td><td>95.0/72.8/27.5mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>랩리턴이신형구매의전부는아닙니다</h2><p>3Hyper의리턴은높지만실측최광부·엄지너비는작고높이는조금더큽니다. 무게6g차이도모든개인사이즈에보장되는차이가아닙니다.초대가잘맞는다면신형의실제규격에서바뀐앞코·카운터·로커가필요한지를볼수있습니다.</p><p>공시드롭은둘다6mm지만실측은6.7/9.2mm입니다.초대DOR44/38mm,3DOR45/39mm와RR절단실측도별도출처입니다.</p><h2>리뷰어별칼라·카운터차이를남깁니다</h2><p>초대DOR에서David(남성US9.5)는낮은양말의칼라마찰을느꼈지만Andrea(여성US9.5)는같은마찰없이앞코·고정을좋게느꼈습니다. Matt(남성US10)은약간길고힐이단단하며전환이늦다고느꼈습니다.</p><p>3Hyper에서David는단단한카운터지만쓸림은없었고Matt은카운터를조금유연하게느꼈습니다.이지·롱런·템포선호도개인별다릅니다. 신형은모든사람의칼라문제를해결했다거나초대는힐착지금지라고단정하지않습니다.</p><h2>한국가격·수명으로승자를만들지않기</h2><p>초대한국상품은목록으로연결돼현재가격·폭·재고미확인입니다.3Hyper남녀확인SKU는259,000원캐시이며현행선택재고는미확인입니다. 같은25.9만원이라는기존비교는철회했습니다.</p><p>초대450km·3Hyper450km와km당비용,저온수치로한국겨울훈련손실이줄어든다는보장·평발위험을확정하지않습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-hyper-3mg1006/mens/ivory-flurry-shoes-3MG10065262" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3MG10065262 · men</a> — 표시 정가 259000원. 도구 캐시 today; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.on.com/ko-kr/products/cloudmonster-3-hyper-3wg1004/womens/ivory-flurry-shoes-3WG10045262" target="_blank" rel="noopener noreferrer">한국 공식 캐시 3WG10045262 · women</a> — 표시 정가 259000원. 도구 캐시 2 days ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/on-cloudmonster-3-hyper" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/on-cloudmonster-3-hyper-review-2026/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul><h2>초대원문</h2><p><a href="https://runrepeat.com/on-cloudmonster-hyper" target="_blank" rel="noopener noreferrer">초대RR</a> · <a href="https://www.doctorsofrunning.com/on-cloudmonster-hyper-review-2024/" target="_blank" rel="noopener noreferrer">초대DOR</a></p>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'nike-hybrid-hyrox-shoes-2026',

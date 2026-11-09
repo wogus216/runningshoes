@@ -3066,115 +3066,39 @@ export const posts_2026_10: BlogPost[] = [
 `,
   },
   {
-    id: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026',
-    slug: 'nike-pegasus-42-vs-pegasus-plus-2-daily-2026',
-    title:
-      '페가수스 42 vs 페가수스 플러스 2 — 5만원 더 내고 얻는 것과 잃는 것 | 한국 판매 시작 후 구매 선택',
-    description:
-      '나이키 코리아에서 페가수스 플러스 2(219,000원)가 판매 중으로 바뀌었습니다. 페가수스 42(169,000원)와는 5만원 차이입니다. 그 돈으로 ZoomX와 전족부 에어 줌, 개선된 핏을 얻는 대신 와이드 옵션과 좁은 힐 걱정 없는 안정감을 내줍니다. 무게·스택·핏·와이드·부상 이력별로 어느 쪽이 맞는지 기준 사이즈와 근거 출처를 밝혀 정리했습니다.',
-    thumbnail: '/images/blog/nike-pegasus-42-vs-pegasus-plus-2-daily-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-02',
-    updatedAt: '2026-10-18',
-    category: 'review' as const,
-    readingTime: 8,
+    id: "nike-pegasus-42-vs-pegasus-plus-2-daily-2026",
+    slug: "nike-pegasus-42-vs-pegasus-plus-2-daily-2026",
+    title: "페가수스42 vs플러스2 —39g 검체차이보다 전족Air·앞코·전환 비교",
+    description: "RR286/247g·드롭14/10.4mm를나란히봅니다. 현재5만원차이·4E보장·평발과착지별안전추천을철회하고공식캐시·개인경험을분리했습니다.",
+    thumbnail: "/images/shoes/nike/pegasus-plus-2/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-02",
+    updatedAt: "2026-11-10",
+    category: "review",
+    readingTime: 7,
     tags: [
-      '페가수스 42',
-      '페가수스 플러스 2',
-      '나이키 데일리 러닝화',
-      '러닝화 비교',
-      'ZoomX',
-      '와이드 러닝화',
+      "페가수스42",
+      "페가수스 플러스2",
+      "나이키",
+      "데일리 비교"
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>둘의 성격이 다릅니다.</strong> 페가수스 42는 ReactX 폼에 풀 렝스 에어 줌을 얹은 <strong>169,000원 입문·데일리</strong>, 플러스 2는 ZoomX에 전족부 에어 줌을 노출한 <strong>219,000원 템포 겸용 데일리</strong>입니다. 값 차이는 5만원입니다</li>
-    <li>플러스 2를 사면 <strong>핏(Doctors of Running 평가 A)과 반발</strong>이 나아지고, 42를 사면 <strong>와이드 옵션(남·여 모두 정식 편성)과 안정적인 힐</strong>을 갖습니다</li>
-    <li>발볼이 넓거나 평발이거나 뒤꿈치로 착지한다면 42, 데일리에 업템포를 섞고 1세대 플러스의 헐거운 핏이 불만이었다면 플러스 2가 맞습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <strong>한 줄 결론</strong> — 5~10km 이지런이 대부분이고 발볼이 넓다면 <a href="/shoes/nike-pegasus-42">페가수스 42</a>가 5만원을 아끼면서 더 안전한 선택입니다. 이지런 사이에 속도 변화를 섞고 핏과 반발을 중시한다면 <a href="/shoes/nike-pegasus-plus-2">페가수스 플러스 2</a>입니다. 플러스 2의 출시 소식과 1세대와의 차이는 <a href="/blog/nike-pegasus-plus-2-release-2026">출시 정리 글</a>에 있습니다.
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-
-<p><strong>(10월 18일 갱신)</strong> 처음 글을 쓴 10월 2일에는 플러스 2의 랩 데이터가 없었지만, 10월 12일 RunRepeat 랩이 게시돼 이제 <strong>두 모델을 같은 랩의 실측으로 나란히</strong> 볼 수 있습니다. 공식 스펙과 실측이 함께 있는 행은 괄호로 출처를 적었습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>페가수스 42</th><th>페가수스 플러스 2</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>한국 정가</td><td><strong>169,000원</strong></td><td><strong>219,000원</strong> (5만원 차)</td></tr>
-    <tr><td>무게</td><td>286g (RunRepeat 실측, US M9)</td><td><strong>247g (RunRepeat 실측)</strong> · 258g (나이키 공식, US M9)</td></tr>
-    <tr><td>힐/전족부 스택</td><td>37/27mm (공식) · 36/22mm (RunRepeat 실측)</td><td>38/28mm (공식) · 37.7/27.3mm (RunRepeat 실측)</td></tr>
-    <tr><td>드롭</td><td>10mm (공식) · 14mm (RunRepeat 실측)</td><td>10mm (공식) · 10.4mm (RunRepeat 실측)</td></tr>
-    <tr><td>힐 충격흡수</td><td>131 SA (RunRepeat 실측)</td><td><strong>147 SA</strong> (RunRepeat 실측)</td></tr>
-    <tr><td>에너지 리턴 (전족부/힐)</td><td>61.2% / 57.1% (RunRepeat 실측)</td><td><strong>69.0% / 65.5%</strong> (RunRepeat 실측)</td></tr>
-    <tr><td>미드솔</td><td>ReactX + 풀 렝스 에어 줌</td><td><strong>ZoomX + 전족부 노출형 에어 줌</strong></td></tr>
-    <tr><td>카본 플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>토박스</td><td>72.3mm (RunRepeat 실측)</td><td>71.3mm (RunRepeat 실측, 평균 73.2mm)</td></tr>
-    <tr><td>와이드 옵션</td><td><strong>남·여 정식 편성</strong></td><td><strong>없음</strong> (나이키 코리아 9/3 확인)</td></tr>
-    <tr><td>외부 평가</td><td>Believe in the Run B 티어 (디자인 A·가치 A·퍼포먼스 C)</td><td>Believe in the Run A 티어 (디자인 A·가치 A·퍼포먼스 B)</td></tr>
-  </tbody>
-</table>
-
-<p><small>무게는 같은 RunRepeat 실측끼리 비교하면 플러스 2가 39g 가볍습니다(247g vs 286g). 나이키 공식 258g과 42의 실측 286g을 빼서 28g 차이로 읽으면 측정 주체가 다른 값끼리의 비교가 됩니다. 스택은 42가 공식값과 실측이 전족부에서 5mm 어긋난 반면, 플러스 2는 공식 38/28mm와 실측 37.7/27.3mm가 1mm 안쪽으로 맞았습니다. 내구성은 km로 환산할 근거가 없어 표에 넣지 않았습니다. 42·플러스 2의 가격과 와이드 여부는 나이키 코리아 기준이며 플러스 2는 2026년 10월 2일 판매 페이지에서 확인했습니다.</small></p>
-
-<h2>페가수스 42 — 169,000원에 와이드까지, 안전한 기본값</h2>
-
-<p>RunRepeat 랩에서 42의 힐 스택은 36mm, 힐 충격흡수(SA)는 131로 41보다 올랐습니다. 나이키가 내세운 에너지 리턴 +15%는 실측으로는 힐 55.5%에서 57.1%, 전족부 61.4%에서 61.2%라 사실상 같았습니다. 즉 이 모델의 진짜 개선은 폼이 아니라 <strong>힐 착지 부드러움과 한국 와이드 정식 편성</strong>입니다. 발볼이 넓은 러너가 표준과 와이드 중에서 고를 수 있다는 점이 한국 러너에게 실용적인 변화입니다.</p>
-
-<p>약점은 무게와 속도감입니다. 286g이라 10km를 넘기면 가벼운 신발은 아니고, Believe in the Run도 퍼포먼스는 C로 봤습니다. 템포나 인터벌에 쓰려면 아쉽습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 5~10km 데일리가 중심인 입문·초중급, 발볼이 넓어 와이드가 필요한 러너, 평발 성향이거나 뒤꿈치 착지가 익숙한 러너.</p>
-
-<h2>페가수스 플러스 2 — 5만원으로 핏과 반발을 산다</h2>
-
-<p>플러스 2는 1세대의 약점이던 미드풋 헐거움과 좁은 토박스를 손봤습니다. Doctors of Running은 자신이 테스트한 나이키 트레이너 중 핏이 가장 좋다고 평가했고, 1세대의 딱딱하던 ZoomX가 중간 정도로 유연해졌다고 짚었습니다. Believe in the Run은 A 티어를 줬지만 전족부 에어 줌의 반발이 템포 훈련을 감당할 만큼은 아니라서 <strong>이름이 말하는 템포 트레이너보다 데일리 트레이너에 가깝다</strong>고 봤습니다.</p>
-
-<p>이 모델에서 조심할 구조는 힐입니다. Doctors of Running은 뒤꿈치가 좁고 미드풋 플랫폼이 매우 좁아 힐 스트라이커에게 불안정할 수 있다고 지적했습니다. 또 와이드 옵션이 없어서 발볼 걱정이 있으면 매장 착화가 먼저입니다. <strong>(10월 18일 갱신)</strong> RunRepeat 랩에서 힐 충격흡수는 147 SA로 42(131 SA)보다 높고, 에너지 리턴도 전족부 69.0%로 42(61.2%)보다 높았습니다. 다만 RunRepeat은 이 반발이 1세대와 비슷한 수준이라 에어 줌이 반발을 끌어올렸다고 보지는 않았습니다. 토박스는 71.3mm로 42(72.3mm)보다 1mm 좁습니다.</p>
-
-<p><strong>✅ 이런 분께</strong> — 이지런 위주지만 가끔 속도를 올리는 러너, 1세대 플러스의 핏이 불만이었던 러너, 앞볼 여유가 표준 폭이면 충분한 러너.</p>
-
-<h2>내게 맞는 건?</h2>
-
-<ul>
-  <li><strong>발볼이 넓다 / 4E급이다</strong> → <a href="/shoes/nike-pegasus-42">페가수스 42</a> 와이드. 플러스 2는 와이드가 없습니다</li>
-  <li><strong>평발·과내전 성향이다</strong> → 42. 플러스 2는 아치 지지가 없는 중립 전용 구조라 권하기 어렵습니다</li>
-  <li><strong>뒤꿈치 착지가 중심이다</strong> → 42. 플러스 2의 좁은 힐·미드풋이 걸릴 수 있습니다</li>
-  <li><strong>이지런에 템포를 섞는다</strong> → <a href="/shoes/nike-pegasus-plus-2">플러스 2</a>. 다만 본격 인터벌·레이스용은 플레이트가 있는 모델을 따로 두세요</li>
-  <li><strong>1세대 <a href="/shoes/nike-pegasus-plus">페가수스 플러스</a>에서 넘어온다</strong> → 핏이 개선됐으므로 플러스 2. 무게는 RunRepeat 실측 247g으로, RunRepeat은 1세대와 거의 같다고 봤습니다</li>
-  <li><strong>예산이 가장 중요하다</strong> → 42. 5만원을 아끼는 쪽이 합리적인 구간이 넓습니다</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 플러스 2는 지금 한국에서 살 수 있나요?</p>
-    <p class="faq-a">A. 2026년 10월 2일 나이키 코리아 상품 페이지(스타일 번호 IM2541-600)에서 219,000원에 사이즈 선택과 장바구니가 활성화된 상태를 확인했습니다. 9월 3일에는 "출시 예정"이었습니다. 색상 3종 이상이 등록돼 있지만 사이즈별 재고는 확인하지 않았습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 플러스 2가 42보다 28g 가벼운가요?</p>
-    <p class="faq-a">A. 28g은 나이키 공식 258g(US M9)과 42의 RunRepeat 실측 286g을 뺀 값이라 측정 주체가 달라 맞지 않습니다. <strong>(10월 18일 갱신)</strong> 같은 RunRepeat 실측끼리 비교하면 플러스 2가 247g, 42가 286g으로 플러스 2가 39g 가볍습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은데 플러스 2를 신어도 되나요?</p>
-    <p class="faq-a">A. 와이드 옵션이 없고, RunRepeat 토박스 실측이 71.3mm로 평균(73.2mm)과 42(72.3mm)보다 조금 좁습니다. RunRepeat도 발볼이 정말 넓은 러너는 다른 신발을 보라고 적었습니다. 발볼이 넓다면 와이드가 있는 42가 안전하고, 플러스 2는 매장 착화 후 결정하세요.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 42 가격이 169,000원이 맞나요?</p>
-    <p class="faq-a">A. 사이트 데이터 기준 한국 정가이며 남·여 와이드도 같은 값으로 편성돼 있습니다. 이번 글 작성 시점에 42 페이지를 다시 열어 확인하지는 않았으니 구매 전 공식몰 가격을 한 번 더 보세요.</p>
-  </div>
-</div>
-
-<p><small>출처: 나이키 코리아 페가수스 플러스 2 상품 페이지(2026년 10월 2일 확인) · 페가수스 42 RunRepeat 랩 데이터(2026년 4월 25일 게시분) · Believe in the Run·Doctors of Running 플러스 2 리뷰 · 나이키 공식 스펙 · 작성 2026년 10월 2일. 플러스 2 RunRepeat 랩 데이터(2026년 10월 12일 게시)는 10월 18일 반영.</small></p>
+<div class="tldr"><span class="tldr-label">구매 전 확인할 세 가지</span><ul><li>42는ReactX·전장곡선Air Zoom,Plus2는훈련용ZoomX·전족전폭Air Zoom1개입니다.</li><li>RR검체286/247g과14/10.4mm드롭은동일개인사이즈의차이를보장하지않습니다.</li><li>한국캐시가격169,000/219,000원을현재5만원차이·4E발안전보장으로쓰지않습니다.</li></ul></div><p><strong>2026-11-09~10 확인 원문을 반영해 11-10 수정했습니다.</strong> 제조사 공시, 실험실 검체, 리뷰어의 개인 경험을 구분합니다. 한국 판매 정보는 확인한 성별·상품 코드·시점에 한정합니다.</p><figure><img src="/images/shoes/nike/pegasus-plus-2/side.webp" alt="플러스2 —42의전장Air와다른전족Air구조" loading="lazy"/><figcaption>플러스2 —42의전장Air와다른전족Air구조</figcaption></figure><div class="table-wrap"><table><thead><tr><th>RunRepeat검체</th><th>42</th><th>Plus2</th></tr></thead><tbody><tr><td>무게</td><td>286g</td><td>247g</td></tr><tr><td>힐/전족스택</td><td>36/22mm</td><td>37.7/27.3mm</td></tr><tr><td>실측드롭</td><td>14mm</td><td>10.4mm</td></tr><tr><td>힐/전족SA</td><td>131/91</td><td>147/122</td></tr><tr><td>힐/전족리턴</td><td>57.1/61.2%</td><td>65.5/69.0%</td></tr><tr><td>폼경도</td><td>37.6AC</td><td>29.8AC</td></tr><tr><td>내부최광폭/엄지너비/높이</td><td>96.5/72.3/27.0mm</td><td>94.0/71.3/26.8mm</td></tr></tbody></table></div><p>SA는 충격흡수, 에너지 리턴은 랩에서 반환된 에너지 비율, AC는 폼 경도입니다. SA가 높다고 무조건 더 부드럽거나 특정 질환에 안전한 것은 아닙니다. RR 일반 검체 정책은 남성US9지만 개별 실제 라벨·폭은 미확인이고 드물게 다른 사이즈의 무게를 환산하는 예외도 있어, 공시와 동일한 검체로 단정하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>쿠션·드롭·어퍼고정을따로비교</h2><p>Plus2의SA·리턴은높지만그것만으로개인속도·무릎안전의우위를정하지않습니다.42의전족스택·드롭과Plus2의Air위치·중족고정이다르므로주로할주행에서전환을확인할수있습니다.</p><p>Plus2 DOR Andrea(여성US9.5)는전족볼륨은넉넉하나중족끈을더조여야했고,이지·자신의마라톤강도를선호했지만더빠른강도에서는무게·거친힐전환을느꼈습니다.42의정확DOR개별리뷰는미확인이어서Plus2리뷰의비교문구로채우지않습니다.</p><h2>와이드명칭과개인4E적합은다릅니다</h2><p>42한국공식캐시에는남성와이드IR1228-001·여성IH1847-100과169,000원이표시됐지만2E/4E문자는미확인입니다. 둘레6.35mm설명을내부너비증가로옮기지않습니다.Plus2남녀IM2541-600·IM2543-600은219,000원캐시이며현재와이드·선택재고미확인입니다.</p><p>현재가격을5만원차이로고정하거나발볼넓음·평발·힐착지면42가안전하다는기존선택표는철회했습니다. 실제길이·엄지위높이·중족압박·힐고정을비교하세요.</p><h2>광고개선율과39g을해석하는범위</h2><p>RR검체39g차이는사이즈가다른공식공시를섞은28g차이보다출처가일관되지만모든사이즈의감량보장은아닙니다. 한국42남성약300g/280mm·여성243g/250mm,Plus2남성265g/280mm·여성215g/250mm의공시도별도남깁니다.</p><p>42의최소15%·Plus2의18%리턴개선은제조사비교시험조건이RR과같다고확인하지못했습니다. RR값으로거짓·입증어느쪽도단정하지않습니다.5~10km안전기본값·입문자금지·질환별보호효과도제거했습니다.</p><h2>시착에서 답할 질문</h2><ul><li>평소 양말·인솔로 엄지 위 높이와 앞쪽 길이가 충분한가?</li><li>끈을 조이면 발등이 눌리거나 저리지는 않는가?</li><li>뒤꿈치를 고정했을 때 칼라가 발목을 문지르는가?</li><li>자신의 주요 주행에서 전환이 자연스러운가?</li></ul><p>신발을 받기 전 교환·반품 조건을 확인하세요. 통증·저림을 견뎌 적응해야 한다는 규칙은 없습니다. 임상적 예방 효과와 질환별 우열은 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문</h2><ul><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EB%82%A8%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2541-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2541-600 · men</a> — 표시 정가 219000원. 도구 캐시 last week; 현재 가격·선택 재고 미확인.</li><li><a href="https://www.nike.com/kr/t/%EB%82%98%EC%9D%B4%ED%82%A4-%ED%8E%98%EA%B0%80%EC%88%98%EC%8A%A4-%ED%94%8C%EB%9F%AC%EC%8A%A4-2-%EC%97%AC%EC%84%B1-%EB%A1%9C%EB%93%9C-%EB%9F%AC%EB%8B%9D%ED%99%94-k7TxLWJb/IM2543-600" target="_blank" rel="noopener noreferrer">한국 공식 캐시 IM2543-600 · women</a> — 표시 정가 219000원. 도구 캐시 4 days ago; 현재 가격·선택 재고 미확인.</li><li><a href="https://runrepeat.com/nike-pegasus-plus-2" target="_blank" rel="noopener noreferrer">RunRepeat 동세대 랩</a></li><li><a href="https://www.doctorsofrunning.com/nike-pegasus-plus-2-review/" target="_blank" rel="noopener noreferrer">Doctors of Running 실제 착화</a></li></ul><h2>42원문</h2><p><a href="https://runrepeat.com/nike-pegasus-42" target="_blank" rel="noopener noreferrer">42RR</a> · <a href="https://www.nike.com/kr/" target="_blank" rel="noopener noreferrer">한국42상품확인범위:현행가격·재고미확인</a></p>
 `,
+    faqs: [
+      {
+        "question": "Plus2가39g가벼운가요?",
+        "answer": "RR각검체는286/247g으로39g차이입니다.모든개인사이즈·성별의차이를보장하지않으며한국공시와섞지않습니다."
+      },
+      {
+        "question": "4E발은42와이드가답인가요?",
+        "answer": "한국와이드캐시를확인했지만2E/4E문자·개인적합성은미확인입니다.실제규격의길이·앞코·고정을확인하세요."
+      },
+      {
+        "question": "평발이나힐착지면42가더안전한가요?",
+        "answer": "그런모델별임상우위를입증하지못했습니다.기존질환·착지별안전선택표를철회했습니다."
+      }
+    ],
   },
   {
     id: 'nike-apex-announcement-super-shoe-baseline-2026',
