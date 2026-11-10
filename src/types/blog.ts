@@ -9,9 +9,12 @@ export interface BlogEvent {
   name: string;
   startDate: string;
   endDate?: string;
+  eventStatus?: 'EventScheduled' | 'EventPostponed' | 'EventRescheduled' | 'EventCancelled';
+  previousStartDate?: string;
   location: {
     name: string;
     address?: string;
+    country?: string;
   };
   organizer?: string;
   url?: string;

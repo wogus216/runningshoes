@@ -25,7 +25,8 @@ export const posts_2026_07: BlogPost[] = [
       "startDate": "2027-02-28",
       "location": {
         "name": "Osaka",
-        "address": "Osaka, Japan"
+        "address": "Osaka, Japan",
+        "country": "JP"
       },
       "organizer": "Osaka Marathon Foundation",
       "url": "https://jtbsports.jp/en/detail/nays3"

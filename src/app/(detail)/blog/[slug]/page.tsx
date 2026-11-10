@@ -145,13 +145,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     name: post.event.name,
     startDate: post.event.startDate,
     ...(post.event.endDate && { endDate: post.event.endDate }),
-    eventStatus: 'https://schema.org/EventScheduled',
+    eventStatus: `https://schema.org/${post.event.eventStatus || 'EventScheduled'}`,
+    ...(post.event.previousStartDate && { previousStartDate: post.event.previousStartDate }),
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
       '@type': 'Place',
       name: post.event.location.name,
-      ...(post.event.location.address && {
-        address: { '@type': 'PostalAddress', streetAddress: post.event.location.address, addressCountry: 'KR' },
+      ...((post.event.location.address || post.event.location.country) && {
+        address: {
+          '@type': 'PostalAddress',
+          ...(post.event.location.address && { streetAddress: post.event.location.address }),
+          ...(post.event.location.country && { addressCountry: post.event.location.country }),
+        },
       }),
     },
     ...(post.event.organizer && {

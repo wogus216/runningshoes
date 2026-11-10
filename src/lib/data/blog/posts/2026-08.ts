@@ -63,7 +63,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-10-18",
       "location": {
         "name": "롯데월드타워 월드파크",
-        "address": "서울특별시 송파구 올림픽로 300"
+        "address": "서울특별시 송파구 올림픽로 300",
+        "country": "KR"
       },
       "organizer": "서울 송파구·롯데백화점",
       "url": "https://www.lotteshopping.com/"
@@ -304,7 +305,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-10-24",
       "location": {
         "name": "인천 상상플랫폼",
-        "address": "인천광역시 제물포구 월미로 33"
+        "address": "인천광역시 제물포구 월미로 33",
+        "country": "KR"
       },
       "organizer": "블렌트(BLENT) — DISNEY RUN INCHEON 2026 운영 사무국",
       "url": "https://www.disneyrunincheon2026.com/"
@@ -436,7 +438,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2027-02-21",
       "location": {
         "name": "Kyoto",
-        "address": "Kyoto, Japan"
+        "address": "Kyoto, Japan",
+        "country": "JP"
       },
       "organizer": "Kyoto Marathon Executive Committee",
       "url": "https://kyoto-marathon.com/en/entry/"
@@ -615,8 +618,9 @@ export const posts_2026_08: BlogPost[] = [
       "name": "2026 인천마라톤",
       "startDate": "2026-11-22",
       "location": {
-        "name": "인천아시아드주경기장",
-        "address": "인천광역시 서구 봉수대로 806"
+        "name": "풀코스 운서역 일원 출발·인천아시아드주경기장 도착, 10km·5km 주경기장 출발·도착",
+        "address": "인천광역시 서해구 봉수대로 806",
+        "country": "KR"
       },
       "organizer": "인천광역시·대한육상연맹",
       "url": "http://www.incheonmarathon.or.kr/"
@@ -779,7 +783,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-10-04",
       "location": {
         "name": "서울어린이대공원",
-        "address": "서울특별시 광진구"
+        "address": "서울특별시 광진구",
+        "country": "KR"
       },
       "organizer": "롯데리아(롯데GRS)",
       "url": "https://www.lotteeatz.com/event/main/selectEvent/18060"
@@ -831,7 +836,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-11-08T09:00:00+09:00",
       "location": {
         "name": "송암스포츠타운 종합경기장",
-        "address": "강원특별자치도 춘천시"
+        "address": "강원특별자치도 춘천시",
+        "country": "KR"
       },
       "organizer": "라운드랩(서린컴퍼니)·강원일보",
       "url": "https://www.kw-marathon.com/index_roundlab.php"
@@ -925,7 +931,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-12-06T07:30:00+09:00",
       "location": {
         "name": "벡스코 제1전시장",
-        "address": "부산광역시 해운대구"
+        "address": "부산광역시 해운대구",
+        "country": "KR"
       },
       "organizer": "부산광역시·KNN·대한육상연맹",
       "url": "https://busanmarathon.com/"
@@ -1458,7 +1465,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-10-25",
       "location": {
         "name": "해운대 벡스코 야외광장",
-        "address": "부산광역시 해운대구"
+        "address": "부산광역시 해운대구",
+        "country": "KR"
       },
       "organizer": "부산일보사",
       "url": "https://busan.wizrun.com/"
@@ -1581,7 +1589,8 @@ export const posts_2026_08: BlogPost[] = [
       "startDate": "2026-10-10",
       "location": {
         "name": "성남 탄천 일대·탄천종합운동장",
-        "address": "경기도 성남시"
+        "address": "경기도 성남시",
+        "country": "KR"
       },
       "organizer": "카카오",
       "url": "https://www.kakaocorp.com/page/detail/12095"

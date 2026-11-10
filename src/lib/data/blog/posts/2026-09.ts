@@ -398,7 +398,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-11-22T07:30:00+09:00",
       "location": {
         "name": "여의도공원 문화의 마당",
-        "address": "서울 영등포구 여의공원로 68"
+        "address": "서울 영등포구 여의공원로 68",
+        "country": "KR"
       },
       "organizer": "칼자이스 · TV CHOSUN · 한국실명예방재단 / 런코리아",
       "url": "https://zeiss-smilerace.kr/marathon/code/8050/",
@@ -996,7 +997,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-11-14T08:00:00+09:00",
       "location": {
         "name": "서울 월드컵공원 평화광장",
-        "address": "서울 마포구 성산동 월드컵로 251"
+        "address": "서울 마포구 성산동 월드컵로 251",
+        "country": "KR"
       },
       "organizer": "희망친구 기아대책 · 롯데마트 · 롯데슈퍼",
       "url": "https://www.tongkeun-run.com/"
@@ -2691,7 +2693,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2027-04-04",
       "location": {
         "name": "파리",
-        "address": "프랑스 파리 (코스 미발표)"
+        "address": "프랑스 파리 (코스 미발표)",
+        "country": "FR"
       },
       "organizer": "Cadence Running United",
       "url": "https://www.asicsmarathondeparis.com/en"
@@ -2757,8 +2760,9 @@ export const posts_2026_09: BlogPost[] = [
       "name": "2026 인천마라톤",
       "startDate": "2026-11-22",
       "location": {
-        "name": "인천아시아드주경기장",
-        "address": "인천광역시 서구 거월로 61"
+        "name": "풀코스 운서역 일원 출발·인천아시아드주경기장 도착, 10km·5km 주경기장 출발·도착",
+        "address": "인천광역시 서해구 봉수대로 806",
+        "country": "KR"
       },
       "organizer": "인천광역시 · 대한육상연맹",
       "url": "https://www.incheonmarathon.or.kr/"
@@ -2846,7 +2850,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-11-22",
       "location": {
         "name": "풀 운서역 출발·인천아시아드 주경기장 도착, 10km·5km 주경기장 출발·도착",
-        "address": "인천광역시"
+        "address": "인천광역시",
+        "country": "KR"
       },
       "organizer": "인천광역시·대한육상연맹",
       "url": "http://www.incheonmarathon.or.kr/"
@@ -2897,7 +2902,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-11-15",
       "location": {
         "name": "고양종합운동장",
-        "address": "경기 고양시"
+        "address": "경기 고양시",
+        "country": "KR"
       },
       "organizer": "가민코리아 · 러너블",
       "url": "https://discover.garmin.com/ko-KR/event/2026/garmin-run/"
@@ -3043,7 +3049,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-11-07",
       "location": {
         "name": "월드컵공원 평화의공원 평화광장",
-        "address": "서울 마포구"
+        "address": "서울 마포구",
+        "country": "KR"
       },
       "organizer": "푸르메재단",
       "url": "https://purmerun.com/"
@@ -3244,7 +3251,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-10-10",
       "location": {
         "name": "올림픽공원 피크닉장",
-        "address": "서울 송파구 올림픽로 424"
+        "address": "서울 송파구 올림픽로 424",
+        "country": "KR"
       },
       "organizer": "사회복지법인 하트-하트재단",
       "url": "https://heartrun.co.kr/"
@@ -3365,7 +3373,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2026-10-25",
       "location": {
         "name": "춘천 공지천교",
-        "address": "강원특별자치도 춘천시"
+        "address": "강원특별자치도 춘천시",
+        "country": "KR"
       },
       "organizer": "조선일보·춘천시·스포츠조선·대한육상연맹",
       "url": "https://www.chuncheonmarathon.com/"
@@ -3476,7 +3485,8 @@ export const posts_2026_09: BlogPost[] = [
       "startDate": "2027-08-29",
       "location": {
         "name": "Sydney",
-        "address": "Sydney, NSW, Australia"
+        "address": "Sydney, NSW, Australia",
+        "country": "AU"
       },
       "organizer": "TCS Sydney Marathon / Pont3",
       "url": "https://www.tcssydneymarathon.com/sign-up"

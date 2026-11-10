@@ -605,7 +605,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-10-02",
       "endDate": "2026-10-04",
       "location": {
-        "name": "제주 (제주월드컵경기장·가시리 한라마 파크 등)"
+        "name": "제주 (제주월드컵경기장·가시리 한라마 파크 등)",
+        "country": "KR"
       },
       "organizer": "서귀포시 (운영 에이플랜)",
       "url": "https://transjeju.utmb.world/"
@@ -1015,7 +1016,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-11-15",
       "location": {
         "name": "임진각 평화누리공원",
-        "address": "경기도 파주시 문산읍 임진각로 148-40"
+        "address": "경기도 파주시 문산읍 임진각로 148-40",
+        "country": "KR"
       },
       "organizer": "손기정기념재단·스포티비뉴스",
       "url": "https://son.wizrun.com/info1"
@@ -1075,7 +1077,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-08-29T19:00:00+09:00",
       "location": {
         "name": "단양생태체육공원",
-        "address": "충청북도 단양군"
+        "address": "충청북도 단양군",
+        "country": "KR"
       },
       "organizer": "단양군육상연맹",
       "url": "http://danyangmarathon.kr/",
@@ -1083,13 +1086,11 @@ export const posts_2026_06: BlogPost[] = [
         {
           "name": "10km",
           "priceKrw": 50000,
-          "availabilityEnds": "2026-07-17",
           "url": "http://danyangmarathon.kr/"
         },
         {
           "name": "5km",
           "priceKrw": 30000,
-          "availabilityEnds": "2026-07-17",
           "url": "http://danyangmarathon.kr/"
         }
       ]
@@ -1655,7 +1656,8 @@ export const posts_2026_06: BlogPost[] = [
       "endDate": "2027-04-25",
       "location": {
         "name": "London",
-        "address": "London, United Kingdom"
+        "address": "London, United Kingdom",
+        "country": "GB"
       },
       "organizer": "London Marathon Events",
       "url": "https://www.londonmarathonevents.co.uk/london-marathon/2027-tcs-london-marathon-double-faqs"
@@ -1775,7 +1777,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-11-01",
       "location": {
         "name": "뉴욕 (스태튼아일랜드 출발)",
-        "address": "미국 뉴욕"
+        "address": "미국 뉴욕",
+        "country": "US"
       },
       "organizer": "New York Road Runners",
       "url": "https://www.nyrr.org/tcsnycmarathon"
@@ -1887,7 +1890,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2027-04-19",
       "location": {
         "name": "보스턴 (홉킨턴 출발)",
-        "address": "미국 보스턴"
+        "address": "미국 보스턴",
+        "country": "US"
       },
       "organizer": "Boston Athletic Association",
       "url": "https://www.baa.org/"
@@ -2023,7 +2027,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-08-30",
       "location": {
         "name": "Sydney",
-        "address": "Sydney, NSW, Australia"
+        "address": "Sydney, NSW, Australia",
+        "country": "AU"
       },
       "organizer": "TCS Sydney Marathon",
       "url": "https://www.multisportaustralia.com.au/races/sydney-marathon-2026"
@@ -2081,7 +2086,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-10-11",
       "location": {
         "name": "시카고 (그랜트파크)",
-        "address": "미국 시카고"
+        "address": "미국 시카고",
+        "country": "US"
       },
       "organizer": "Bank of America Chicago Marathon",
       "url": "https://www.chicagomarathon.com/"
@@ -2131,7 +2137,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2027-03-07",
       "location": {
         "name": "Tokyo",
-        "address": "Tokyo, Japan"
+        "address": "Tokyo, Japan",
+        "country": "JP"
       },
       "organizer": "Tokyo Marathon Foundation",
       "url": "https://www.marathon.tokyo/en/participants/guideline/"
@@ -3166,8 +3173,9 @@ export const posts_2026_06: BlogPost[] = [
       "name": "2026 인천마라톤 (제2회)",
       "startDate": "2026-11-22",
       "location": {
-        "name": "인천아시아드주경기장",
-        "address": "인천광역시 서구 봉수대로 806"
+        "name": "풀코스 운서역 일원 출발·인천아시아드주경기장 도착, 10km·5km 주경기장 출발·도착",
+        "address": "인천광역시 서해구 봉수대로 806",
+        "country": "KR"
       },
       "organizer": "인천광역시·대한육상연맹",
       "url": "http://www.incheonmarathon.or.kr/"
@@ -3253,7 +3261,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-11-15",
       "location": {
         "name": "하프 광화문광장·10km 잠실종합운동장",
-        "address": "서울특별시"
+        "address": "서울특별시",
+        "country": "KR"
       },
       "organizer": "MBN·매일경제",
       "url": "https://www.mbn-seoulmarathon.com/"
@@ -3875,7 +3884,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-11-15",
       "location": {
         "name": "고양종합운동장",
-        "address": "경기 고양시"
+        "address": "경기 고양시",
+        "country": "KR"
       },
       "organizer": "가민코리아 · 러너블",
       "url": "https://discover.garmin.com/ko-KR/event/2026/garmin-run/"
@@ -4329,7 +4339,8 @@ export const posts_2026_06: BlogPost[] = [
       "startDate": "2026-11-15",
       "location": {
         "name": "고양종합운동장",
-        "address": "경기 고양시"
+        "address": "경기 고양시",
+        "country": "KR"
       },
       "organizer": "가민코리아 · 러너블",
       "url": "https://discover.garmin.com/ko-KR/event/2026/garmin-run/"

@@ -504,7 +504,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2027-04-11T08:00:00+09:00",
       "location": {
         "name": "인천아시아드주경기장",
-        "address": "인천광역시 서구 봉오대로 806"
+        "address": "인천광역시 서해구 봉수대로 806",
+        "country": "KR"
       },
       "organizer": "인천 K-마라톤 조직위원회",
       "url": "https://k-player.or.kr/incheon2027/",
@@ -636,7 +637,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2026-11-22T07:30:00+09:00",
       "endDate": "2026-11-22T13:00:00+09:00",
       "location": {
-        "name": "잠실종합운동장"
+        "name": "잠실종합운동장",
+        "country": "KR"
       },
       "organizer": "중앙일보S",
       "url": "https://lgtwinslastrungoodbyejamsil.com/",
@@ -776,7 +778,8 @@ export const posts_2026_10: BlogPost[] = [
       "endDate": "2026-10-31",
       "location": {
         "name": "SETEC 1~3전시실",
-        "address": "서울 강남구 남부순환로 3104"
+        "address": "서울 강남구 남부순환로 3104",
+        "country": "KR"
       },
       "organizer": "러너블",
       "url": "https://www.setec.or.kr/front/schedule/view.do?sIdx=2259"
@@ -866,7 +869,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2026-11-29T07:30:00+09:00",
       "location": {
         "name": "여의도공원 문화의마당",
-        "address": "서울 영등포구 여의공원로 68"
+        "address": "서울 영등포구 여의공원로 68",
+        "country": "KR"
       },
       "organizer": "안중근평화재단청년아카데미",
       "url": "https://ajgrun.kr/info/",
@@ -1016,7 +1020,8 @@ export const posts_2026_10: BlogPost[] = [
       "endDate": "2026-11-28T12:30:00+09:00",
       "location": {
         "name": "하남 미사경정공원",
-        "address": "경기 하남시 미사대로 505"
+        "address": "경기 하남시 미사대로 505",
+        "country": "KR"
       },
       "organizer": "카카오페이",
       "url": "https://fest.kakaopay.com/esg/longrun/offline",
@@ -1380,7 +1385,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2026-11-01",
       "location": {
         "name": "서울",
-        "address": "서울특별시"
+        "address": "서울특별시",
+        "country": "KR"
       },
       "organizer": "JTBC 서울마라톤 사무국",
       "url": "https://marathon.jtbc.com/"
@@ -1521,7 +1527,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2026-11-14T08:30:00+09:00",
       "endDate": "2026-11-14T10:30:00+09:00",
       "location": {
-        "name": "제부도 바닷길 일원·화성 황금해안길"
+        "name": "제부도 바닷길 일원·화성 황금해안길",
+        "country": "KR"
       },
       "organizer": "제부도주민회·콜스에듀케이션",
       "url": "https://www.jebudorun.com/",
@@ -1748,7 +1755,8 @@ export const posts_2026_10: BlogPost[] = [
       "name": "2027 대구국제마라톤",
       "startDate": "2027-02-28T08:00:00+09:00",
       "location": {
-        "name": "국채보상공원 및 대구 시내 일원"
+        "name": "국채보상공원 및 대구 시내 일원",
+        "country": "KR"
       },
       "organizer": "대구광역시",
       "url": "https://daegumarathon.daegu.go.kr/kor/index.do",
@@ -1756,19 +1764,16 @@ export const posts_2026_10: BlogPost[] = [
         {
           "name": "마스터즈 풀코스",
           "priceKrw": 90000,
-          "availabilityEnds": "2026-10-18",
           "url": "https://daegumarathon.daegu.go.kr/korAply/index.do"
         },
         {
           "name": "10km",
           "priceKrw": 60000,
-          "availabilityEnds": "2026-11-01",
           "url": "https://daegumarathon.daegu.go.kr/korAply/index.do"
         },
         {
           "name": "건강달리기(5km)",
           "priceKrw": 30000,
-          "availabilityEnds": "2026-11-01",
           "url": "https://daegumarathon.daegu.go.kr/korAply/index.do"
         }
       ]
@@ -1861,7 +1866,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2027-10-10",
       "location": {
         "name": "시카고 (그랜트파크)",
-        "address": "미국 시카고"
+        "address": "미국 시카고",
+        "country": "US"
       },
       "organizer": "Bank of America Chicago Marathon",
       "url": "https://www.chicagomarathon.com/"
@@ -2117,7 +2123,8 @@ export const posts_2026_10: BlogPost[] = [
       "name": "2026 멕시카나런 with 펩시",
       "startDate": "2026-11-07T08:30:00+09:00",
       "location": {
-        "name": "파주출판도시 일대"
+        "name": "파주출판도시 일대",
+        "country": "KR"
       },
       "url": "https://www.mexicana.co.kr/mobile/community/notice.asp?idx=35557&mode=view"
     },
@@ -2220,7 +2227,8 @@ export const posts_2026_10: BlogPost[] = [
       "startDate": "2026-12-25",
       "endDate": "2026-12-27",
       "location": {
-        "name": "킨텍스 제2전시장 7·8홀 및 회의실"
+        "name": "킨텍스 제2전시장 7·8홀 및 회의실",
+        "country": "KR"
       },
       "organizer": "킨텍스 · F45",
       "url": "https://beatempokorea.com/home/"

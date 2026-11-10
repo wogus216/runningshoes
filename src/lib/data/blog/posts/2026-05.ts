@@ -2034,7 +2034,8 @@ export const posts_2026_05: BlogPost[] = [
       "startDate": "2026-10-11",
       "location": {
         "name": "서울",
-        "address": "서울특별시"
+        "address": "서울특별시",
+        "country": "KR"
       },
       "organizer": "서울레이스 조직위원회",
       "url": "https://www.seoul-race.co.kr/"
@@ -2093,7 +2094,8 @@ export const posts_2026_05: BlogPost[] = [
       "startDate": "2026-10-17",
       "location": {
         "name": "경주시민운동장",
-        "address": "경상북도 경주시"
+        "address": "경상북도 경주시",
+        "country": "KR"
       },
       "organizer": "경상북도·경주시·대한육상연맹·동아일보",
       "url": "https://www.gyeongjumarathon.com/38"
@@ -2151,7 +2153,8 @@ export const posts_2026_05: BlogPost[] = [
       "name": "2027 서울마라톤 겸 제97회 동아마라톤",
       "startDate": "2027-03-21",
       "location": {
-        "name": "풀코스 광화문광장 · 10K 잠실종합운동장 (집결 예정)"
+        "name": "풀코스 광화문광장 · 10K 잠실종합운동장 (집결 예정)",
+        "country": "KR"
       },
       "url": "https://seoul-marathon.com/96"
     },
@@ -2338,7 +2341,8 @@ export const posts_2026_05: BlogPost[] = [
       "startDate": "2026-09-20",
       "location": {
         "name": "공주시민운동장",
-        "address": "충청남도 공주시"
+        "address": "충청남도 공주시",
+        "country": "KR"
       },
       "organizer": "동아마라톤 조직위원회",
       "url": "https://www.gongjumarathon.com/29"
@@ -2483,24 +2487,13 @@ export const posts_2026_05: BlogPost[] = [
       "startDate": "2026-10-05T07:30:00+09:00",
       "location": {
         "name": "광화문광장 앞 대로변",
-        "address": "서울특별시 종로구 세종대로"
+        "address": "서울특별시 종로구 세종대로",
+        "country": "KR"
       },
       "organizer": "서울오픈마라톤 조직위원회",
       "url": "https://seoulopen.or.kr",
-      "offers": [
-        {
-          "name": "하프 (21.0975km)",
-          "priceKrw": 80000,
-          "availabilityEnds": "2026-05-10",
-          "url": "https://seoulopen.or.kr/sub/register.php"
-        },
-        {
-          "name": "10K",
-          "priceKrw": 60000,
-          "availabilityEnds": "2026-05-10",
-          "url": "https://seoulopen.or.kr/sub/register.php"
-        }
-      ]
+      "eventStatus": "EventPostponed",
+      "previousStartDate": "2026-10-05T07:30:00+09:00"
     },
     faqs: [
       {
@@ -2610,7 +2603,8 @@ export const posts_2026_05: BlogPost[] = [
       "startDate": "2026-10-25",
       "location": {
         "name": "춘천 공지천교",
-        "address": "강원특별자치도 춘천시"
+        "address": "강원특별자치도 춘천시",
+        "country": "KR"
       },
       "organizer": "조선일보·춘천시·스포츠조선·대한육상연맹",
       "url": "https://www.chuncheonmarathon.com/"
