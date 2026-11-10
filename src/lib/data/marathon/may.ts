@@ -234,11 +234,54 @@ export const mayEvents: MarathonEvent[] = [
     name: '제13회 거제100K',
     date: '2026-05-30',
     month: '5월',
-    location: '경남 거제',
+    location: '경남 거제 파노라마케이블카 · 동부면 거제중앙로 288',
     region: '경남',
     distances: ['울트라', '트레일'],
     status: '대회종료',
     isMajor: false,
-    description: '100K/62K/37K/27K/15K',
+    description: '2026년 5월 30일 거제 파노라마케이블카를 주무대로 한 제13회 산악 트레일 대회다. 공식은 P100·P62·P37·P27·P15를 구분하며 종목명 숫자를 모두 최종 실측 거리로 해석하면 안 된다. 공식 문서 사이에 출발·종료 시각과 P15 제한시간이 달라 일괄 확정하지 않았다.',
+    website: 'https://geoje100.creatorlink.net/',
+    registrationStart: '2026-01-06',
+    registrationNote: '공식 개요 이미지는 1월 6일 얼리버드 1차·13일 2차·2월 2일 정규 접수와 4월 13일 09:00~17일 23:00 추가 접수를 안내한다. 별도 양도·양수 안내의 4월 13일 10:00~24일 23:00는 추가 접수와 다른 절차다. 양도 금지라는 일반 규정과 제한 기간 양도 안내를 한 가지 조건으로 합치지 않는다.',
+    raceInfo: {
+      entryFees: [
+        { distance: 'P100 · 공식 개요 표시', fee: 240000 },
+        { distance: 'P62 · 공식 개요 표시', fee: 180000 },
+        { distance: 'P37 · 공식 개요 표시', fee: 142000 },
+        { distance: 'P27 · 공식 개요 표시', fee: 95000 },
+        { distance: 'P15 · 공식 개요 표시', fee: 55000 },
+      ],
+    },
+    courseInfo: {
+      courseDescription: '주최사는 거제지맥의 산길과 해안 구간을 잇는 트레일로 설명한다. P100 본문 상단은 98.9km지만 CP 표 합계는 98.3km, 거제시체육회가 첨부한 요강은 98km로 달라 최종 GPS 실측값을 정하지 않았다. P27 페이지에는 2025 제목과 2026 날짜가 함께 있고 첨부 요강 일부에는 P26 표기가 남아 있다. ITRA·UTMB 표시는 주최사 안내이며 별도 기관 최종 결과나 개인 포인트를 검증한 것은 아니다.',
+    },
+    logistics: {
+      bagStorage: true,
+      shuttle: '2026 공식 개요는 서울↔거제 왕복 유료 셔틀과 고현↔행사장 왕복 무료 셔틀을 구분한다. 현재 운행·예약 가능 여부를 확인한 정보는 아니다.',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '주최사 2026 제13회 홈페이지', url: 'https://geoje100.creatorlink.net/' },
+        {
+          title: '2026 개요 이미지·추가 접수·종목별 표시 요금·장소',
+          url: 'https://geoje100.creatorlink.net/%EB%8C%80%ED%9A%8C%EC%95%88%EB%82%B4',
+        },
+        {
+          title: '5월 29~31일 선수 등록·출발·종료 일정 이미지',
+          url: 'https://geoje100.creatorlink.net/%EB%8C%80%ED%9A%8C%EC%9D%BC%EC%A0%95',
+        },
+        { title: '일반 환불·별도 기간 양도 안내', url: 'https://geoje100.creatorlink.net/%EC%B0%B8%EA%B0%80%EC%8B%A0%EC%B2%AD' },
+        { title: '준자급자족·종목별 참가 경험·장비 규정', url: 'https://geoje100.creatorlink.net/%EB%8C%80%ED%9A%8C%EA%B7%9C%EC%A0%95' },
+        { title: 'P100 거리·CP 표·29시간 안내', url: 'https://geoje100.creatorlink.net/P100' },
+        { title: 'P15 공식 본문 · 4시간 표기', url: 'https://geoje100.creatorlink.net/P15' },
+        {
+          title: '거제시체육회 정부 봉사 공고·첨부 대회요강',
+          url: 'https://csv.culture.go.kr/frt/biz/provol/selectProvolView.do?provolId=VOLT_000000000012253',
+        },
+      ],
+      note: '2026 제13회 원문과 거제시체육회 첨부 요강을 대조했다. P100은 개요 04:00, 첨부 요강·CP 표 05:00로 출발이 다르며, 공식 일정의 종료 5월 31일 09:00와 CP 표 10:00도 다르다. 첨부 일정의 “6월 1일(일)”은 2026 달력과 맞지 않아 채택하지 않았다. P15 제한은 웹 4시간·첨부 4시간30분으로 다르다. 4월 13~17일 추가 접수와 13~24일 별도 양도 절차, 일반 환불 규정을 구분한다. 표시 참가비를 얼리버드·개인 실제 결제액으로 보증하지 않는다. 필수장비·완주 경력은 종목별 조건이며 공식 GPX 자체·최종 실거리·개인 기록·실제 지급 결과는 별도 미확인이다.',
+    },
+    lastVerified: '2026-11-11',
   },
 ];
