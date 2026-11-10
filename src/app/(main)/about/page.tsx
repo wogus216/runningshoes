@@ -7,7 +7,7 @@ import { getPostsMeta } from '@/lib/data/blog';
 
 export const metadata: Metadata = {
   title: '사이트 소개',
-  description: '러닝의 모든것은 한국 러너를 위한 데이터 기반 러닝화 정보 사이트입니다. 객관적인 데이터와 전문적인 분석으로 당신에게 맞는 러닝화를 찾아드립니다.',
+  description: '러닝의 모든것은 한국 러너를 위한 데이터 기반 러닝화 정보 사이트입니다. 제품별 공식 자료·실험실 측정·외부 착화 의견과 확인하지 못한 항목을 구분해 비교를 돕습니다.',
   alternates: { canonical: '/about' },
 };
 
@@ -19,7 +19,7 @@ const personJsonLd = {
   alternateName: 'Sancho Editor',
   jobTitle: '러닝화 데이터 분석 에디터',
   description:
-    '2년차 러너, 하프마라톤·10K 완주. AI 기반 학술 논문 분석(PubMed, Nature Scientific Reports)과 RunRepeat 700+ 러닝화 랩 테스트 데이터, Doctors of Running 생체역학 리뷰를 교차 검증해 한국 러너 관점의 데이터 기반 러닝화 분석을 제공.',
+    '제품별 공식 자료와 외부 리뷰를 바탕으로 러닝화의 구조·측정 조건·한국 판매 조건을 정리하는 에디터.',
   url: `${SITE_URL}/about`,
   email: 'sanchokwon216@gmail.com',
   knowsAbout: [
@@ -70,9 +70,9 @@ export default function AboutPage() {
   const newsCount = posts.filter((p) => p.category === 'news').length;
 
   const siteStats = [
-    { label: '러닝화 분석', value: `${shoeCount}개`, desc: `${brandCount}개 브랜드 데이터 검증` },
+    { label: '러닝화 분석', value: `${shoeCount}개`, desc: `${brandCount}개 브랜드 정보 수록` },
     { label: '블로그 글', value: `${postCount}개`, desc: `리뷰 ${reviewCount} · 가이드 ${guideCount} · 뉴스 ${newsCount}` },
-    { label: '데이터 출처', value: '4개', desc: 'RunRepeat · BITR · DOR · 공식 브랜드' },
+    { label: '주요 참고 자료', value: '제품별', desc: '공식 자료 · 실험실 · 전문 리뷰' },
     { label: '운영 시작', value: '2025년', desc: '한국 러너 전용 데이터 분석' },
   ];
 
@@ -132,8 +132,8 @@ export default function AboutPage() {
               <h2 className="text-xl font-semibold text-primary mb-3">운영 배경</h2>
               <p className="leading-relaxed mb-4">
                 해외에는 RunRepeat, Believe in the Run, Doctors of Running 같은 전문 러닝화 리뷰 사이트가 있지만,
-                대부분 영어로 되어 있고 서양인 체형 기준입니다.
-                한국 러너들은 발볼이 넓고, 평발 비율이 높으며, 가격 민감도와 선호하는 브랜드도 다릅니다.
+                영어 자료에서는 한국 판매 가격과 성별·사이즈·폭 옵션을 별도로 확인해야 하는 경우가 있습니다.
+                실험실 검체의 치수와 실제 구매할 제품의 조건을 구분해 읽는 것이 필요합니다.
               </p>
               <p className="leading-relaxed">
                 <strong className="text-primary">러닝의 모든것</strong>은 해외 전문 데이터를 한국 러너 관점에서 재해석하여,
@@ -153,7 +153,8 @@ export default function AboutPage() {
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">데이터 출처</h2>
               <p className="leading-relaxed mb-4">
-                모든 러닝화 데이터는 신뢰할 수 있는 전문 리뷰 사이트의 실측 데이터를 기반으로 합니다:
+                모델별로 확인한 공식 공시, 실험실 검체 측정, 리뷰어의 착화 의견을 구분합니다.
+                모든 모델에 동일한 실측 항목이 있는 것은 아니며, 제품별 출처와 확인 범위는 상세 페이지에 표시합니다:
               </p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2">
@@ -166,11 +167,11 @@ export default function AboutPage() {
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <strong>Doctors of Running</strong> - 물리치료사/의사 관점의 생체역학 분석
+                  <strong>Doctors of Running</strong> - 전문 리뷰와 주행·착화 의견
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="w-2 h-2 rounded-full bg-amber-500"></span>
-                  <strong>공식 브랜드 사이트</strong> - 한국 정가 및 스펙 정보
+                  <strong>공식 브랜드 사이트</strong> - 한국 판매 상품의 공시 가격·규격·폭 옵션
                 </li>
               </ul>
             </div>
@@ -186,17 +187,18 @@ export default function AboutPage() {
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">평가 항목</h2>
               <p className="leading-relaxed mb-4">
-                각 러닝화는 다음 항목을 기준으로 종합적으로 평가됩니다:
+                자료가 확인된 항목을 비교합니다. 제품별 수치의 측정 조건이 다르며,
+                미확인 수명·임상 효과·개인 적합성을 점수로 채우지 않습니다:
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
                 {[
                   { name: '쿠셔닝', desc: '충격 흡수력' },
                   { name: '반발력', desc: '에너지 리턴' },
-                  { name: '안정성', desc: '오버프로네이션 제어' },
-                  { name: '무게', desc: '경량성' },
-                  { name: '착화감', desc: '전반적 편안함' },
-                  { name: '내구성', desc: '예상 수명(km)' },
-                  { name: '가성비', desc: 'km당 비용' },
+                  { name: '지지 구조', desc: '가이드·베이스 설계' },
+                  { name: '무게', desc: '기준 사이즈·측정 조건' },
+                  { name: '착화 의견', desc: '해당 리뷰어의 경험' },
+                  { name: '내구성', desc: '확인된 시험·마모 관찰' },
+                  { name: '가격', desc: '상품·확인 시점 구분' },
                   { name: '그립', desc: '접지력' },
                   { name: '통기성', desc: '어퍼 환기' },
                 ].map((item) => (
@@ -219,35 +221,35 @@ export default function AboutPage() {
             <div>
               <h2 className="text-xl font-semibold text-primary mb-3">한국 러너 특화 정보</h2>
               <p className="leading-relaxed mb-4">
-                서양 리뷰에서 다루지 않는 한국 러너만의 관심사를 중점적으로 다룹니다:
+                한국에서 실제 제품을 비교할 때 필요한 판매 조건과 근거의 한계를 함께 정리합니다:
               </p>
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-primary">발볼 적합성</strong>
-                    <p className="text-sm">한국인의 넓은 발볼에 맞는지, 와이드 옵션 여부</p>
+                    <p className="text-sm">한국 판매 성별·사이즈·와이드 옵션과 실제 착화 시 확인할 부분</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-primary">평발 적합성</strong>
-                    <p className="text-sm">아치 지지력, 안정화 기능 평가</p>
+                    <strong className="text-primary">지지 구조 확인</strong>
+                    <p className="text-sm">가이드·베이스 구조와 리뷰 의견을 개인의 임상 적합성과 구분</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                   <div>
-                    <strong className="text-primary">부상 예방</strong>
-                    <p className="text-sm">무릎, 발바닥, 아킬레스 등 부위별 적합성</p>
+                    <strong className="text-primary">건강 정보의 범위</strong>
+                    <p className="text-sm">제품 구조나 실험실 수치를 부위별 치료·예방 효과로 바꾸지 않음</p>
                   </div>
                 </li>
                 <li className="flex items-start gap-3">
                   <Shield className="w-5 h-5 text-red-500 mt-0.5 flex-shrink-0" />
                   <div>
                     <strong className="text-primary">한국 시장 가격</strong>
-                    <p className="text-sm">한국 공식 사이트 기준 정가 및 가성비 분석</p>
+                    <p className="text-sm">확인한 한국 상품의 가격·시점·묶음 또는 단품 조건</p>
                   </div>
                 </li>
               </ul>
@@ -278,22 +280,21 @@ export default function AboutPage() {
                 러닝 중이며, 하프마라톤·10K 완주 후 풀코스 도전 준비 중입니다.
               </p>
               <p className="leading-relaxed mb-3">
-                AI를 활용한 학술 논문 분석(PubMed, Nature Scientific Reports 등)과 RunRepeat 700개 이상
-                러닝화의 랩 테스트 데이터, Doctors of Running의 생체역학 리뷰를 교차 검증해
-                데이터 기반의 객관적인 분석을 제공합니다.
+                공식 상품 자료·RunRepeat 실험실 측정·전문 리뷰를 제품별로 대조합니다.
+                외부 사이트가 보유한 전체 모델 수를 이 사이트에서 모두 확인한 수로 표시하지 않습니다.
               </p>
               <p className="leading-relaxed mb-3">
-                모든 신발 리뷰에는 실측 수치(토박스 너비, 에너지 리턴율, 충격흡수 SA값 등)를 포함하며,
-                &quot;이 신발 발볼 넓은 사람도 괜찮나요?&quot;에 숫자로 답하는 것이 목표입니다.
+                실측 수치는 출처와 기준 사이즈가 확인된 범위에서 사용합니다. 토박스의 측정 위치·방식과
+                일반 폭·와이드 옵션을 구분하며, 숫자 하나로 개인의 착화감을 판정하지 않습니다.
               </p>
               <div className="rounded-[4px] bg-[var(--bg-warm-alt)] dark:bg-[var(--dark-soft)]/40 border border-border dark:border-[var(--border)]/40 p-4 text-sm">
                 <div className="font-semibold text-primary mb-1">분석 검증 프로세스</div>
                 <ol className="space-y-1 text-secondary list-decimal list-inside">
-                  <li>RunRepeat 랩 실측(SA, HA, 에너지 리턴%, 토박스 너비) 1차 수집</li>
-                  <li>Believe in the Run · Road Trail Run · Doctors of Running 정성 평가 교차 검증</li>
-                  <li>한국 공식몰 가격 + 와이드 옵션 + 출시일 확인</li>
-                  <li>한국 러너 발 특성 반영 — 평발 비율 20% 이상(국내 연구 기준), 토박스 75mm 초과를 와이드 기준으로 적용</li>
-                  <li>발행 전 데이터 정합성 자동 검증(가격·참조·이미지) → 신규 랩 데이터 게시 시 리뷰 갱신</li>
+                  <li>해당 세대·변형의 공식 자료와 외부 원문 확인; 미확인 항목은 구분</li>
+                  <li>실험실 검체 측정과 리뷰어의 착화 의견을 서로 다른 자료로 표시</li>
+                  <li>한국 판매 상품·가격·사이즈·폭 옵션과 확인 시점 대조</li>
+                  <li>인구 집단의 발 특성이나 토박스 단일 경계값으로 개인 적합성·와이드 치수를 추정하지 않음</li>
+                  <li>참조·형식·빌드 검사는 원문의 사실 검증과 별도로 진행; 새 자료 확인 시 해당 내용 갱신</li>
                 </ol>
               </div>
             </div>
@@ -311,7 +312,7 @@ export default function AboutPage() {
               <p className="leading-relaxed">
                 <strong className="text-primary">러닝의 모든것</strong>은 특정 브랜드로부터 협찬을 받지 않으며,
                 모든 리뷰는 객관적인 데이터를 기반으로 작성됩니다.
-                사이트 운영은 제휴 마케팅(네이버 쇼핑 커넥트)을 통해 이루어지며,
+                일부 구매 링크에는 네이버 쇼핑 커넥트·쿠팡 파트너스 제휴 수수료가 적용될 수 있으며,
                 이는 리뷰 내용에 영향을 주지 않습니다.
                 구매 링크를 통해 발생하는 수수료는 사이트 운영과 콘텐츠 제작에 사용됩니다.
               </p>
@@ -342,7 +343,7 @@ export default function AboutPage() {
 
         {/* 최종 수정일 */}
         <p className="text-sm text-tertiary pt-4">
-          최종 수정일: 2026년 5월 19일
+          최종 수정일: 2026년 11월 11일
         </p>
       </div>
     </div>

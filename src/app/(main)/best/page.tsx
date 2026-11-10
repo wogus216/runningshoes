@@ -43,9 +43,9 @@ const groupLabels: Record<string, string> = {
 
 const groupDescriptions: Record<string, string> = {
   category: '입문부터 레이싱까지, 목적에 맞는 러닝화를 찾으세요.',
-  distance: '10K부터 풀마라톤까지, 거리에 맞는 추천.',
+  distance: '거리별 편집 목록의 선정 조건과 착화 확인 사항.',
   attribute: '발볼 비교와 통증이 있을 때 확인할 근거 안내.',
-  price: '한국 공식 사이트 정가 기준, 예산 내 가성비 TOP.',
+  price: '확인한 한국 가격으로 예산 안의 비교 후보 찾기.',
   'brand-category': '브랜드와 카테고리를 교차해 더 세밀하게.',
 };
 
@@ -97,7 +97,7 @@ export default function BestHubPage() {
           러닝화 베스트 가이드
         </h1>
         <p className="max-w-2xl text-secondary leading-relaxed">
-          RunRepeat 랩 테스트 데이터, 한국 러너 발 특성, 가성비를 종합한 추천 가이드입니다. 아래에서 본인 상황에 맞는 가이드를 선택하세요.
+          제품 구조·확인 가격·한국 와이드 옵션으로 비교 후보를 찾는 안내입니다. 각 목록의 선정 조건을 읽고 모델별 출처와 실제 착화감을 확인하세요.
         </p>
       </header>
 
@@ -180,10 +180,10 @@ export default function BestHubPage() {
 
       <section className="bg-surface rounded-[4px] p-6">
         <h2 className="text-base font-semibold text-primary mb-2">
-          더 정확한 추천을 받고 싶다면
+          용도·폭 옵션·예산으로 후보를 좁히려면
         </h2>
         <p className="text-sm text-secondary mb-3">
-          본인의 발 특성, 부상 이력, 예산을 입력하면 {SHOE_COUNT}개 신발 중 맞춤 매칭 결과를 제공합니다.
+          러닝 목적, 와이드 옵션 필요 여부, 예산을 입력하면 {SHOE_COUNT}개 등록 모델에서 조건에 맞는 후보를 찾습니다.
         </p>
         <Link
           href="/recommend"

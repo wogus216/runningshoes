@@ -160,7 +160,7 @@ export default async function ComparePairPage({ params }: PageProps) {
         </h1>
         <p className="text-secondary leading-relaxed">
           같은 {category} 카테고리의 두 모델에서 확인한 공시·실험실 수치와 외부 착화 의견을 비교합니다. 미확인 항목은 비워 두었습니다.
-          무게, 스택, 드롭, 토박스, 가성비까지 항목별 비교 (에디터 평가 포함)를 한눈에 확인하세요.
+          표기·실측 무게, 스택, 드롭과 확인 가격은 기준 사이즈·상품·확인 시점이 다를 수 있으므로 같은 조건인지 함께 읽으세요.
         </p>
       </header>
 
@@ -185,7 +185,7 @@ export default async function ComparePairPage({ params }: PageProps) {
       </section>
 
       <section className="space-y-3">
-        <h2 className="text-xl font-semibold text-primary">항목별 비교 (에디터 평가 포함)</h2>
+        <h2 className="text-xl font-semibold text-primary">확인된 항목 비교</h2>
         <ul className="space-y-2">
           {verdicts.map((v, i) => {
             const winnerName = v.winnerSlug === 'a' ? `${a.brand} ${a.name}` : v.winnerSlug === 'b' ? `${b.brand} ${b.name}` : '동일';

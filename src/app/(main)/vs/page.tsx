@@ -6,8 +6,8 @@ import { SITE_NAME, SITE_URL, DEFAULT_OG_IMAGE } from '@/lib/constants';
 import { breadcrumbJsonLd } from '@/lib/seo/breadcrumb';
 
 export const metadata: Metadata = {
-  title: '러닝화 1:1 비교 — 인기 페어 모음',
-  description: '같은 카테고리의 인기 러닝화 두 모델을 데이터로 직접 비교합니다. 무게, 스택, 드롭, 가성비, 한국 러너 적합성까지.',
+  title: '러닝화 1:1 비교 — 카테고리별 모델 조합',
+  description: '같은 카테고리의 두 모델에서 확인한 무게·스택·드롭·가격과 폭 옵션을 비교합니다. 출처와 측정 조건은 모델별로 확인하세요.',
   alternates: { canonical: '/vs' },
   openGraph: {
       // 페이지가 openGraph 를 지정하면 layout 의 기본 이미지가 병합되지 않고 덮인다
@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     locale: 'ko_KR',
     siteName: SITE_NAME,
     title: '러닝화 1:1 비교',
-    description: '같은 카테고리의 인기 러닝화 두 모델을 데이터로 직접 비교합니다.',
+    description: '같은 카테고리의 두 모델에서 확인한 제품 정보와 측정 조건을 비교합니다.',
   },
 };
 
@@ -34,7 +34,7 @@ export default function VsHubPage() {
     '@id': `${SITE_URL}/vs#collection`,
     url: `${SITE_URL}/vs`,
     name: '러닝화 1:1 비교',
-    description: '같은 카테고리의 인기 러닝화 두 모델을 데이터로 직접 비교합니다.',
+    description: '같은 카테고리의 두 모델에서 확인한 제품 정보와 측정 조건을 비교합니다.',
     inLanguage: 'ko-KR',
     isPartOf: { '@id': `${SITE_URL}/#website` },
     mainEntity: {
@@ -64,7 +64,7 @@ export default function VsHubPage() {
       <header className="space-y-3">
         <h1 className="text-3xl md:text-4xl font-bold text-primary">러닝화 1:1 비교</h1>
         <p className="text-secondary leading-relaxed max-w-3xl">
-          같은 카테고리에서 자주 비교되는 인기 모델 페어를 모았습니다. 각 페어는 무게, 스택, 드롭, 가성비, 발볼 적합성, 부상 예방까지 데이터로 직접 비교합니다.
+          사이트에 등록된 같은 카테고리 모델의 비교 조합입니다. 확인된 무게·스택·드롭·가격과 폭 옵션을 비교하고, 측정 사이즈와 출처를 모델별로 확인하세요. 이 목록은 검색 인기나 부상 예방 효과의 순위가 아닙니다.
         </p>
       </header>
 
