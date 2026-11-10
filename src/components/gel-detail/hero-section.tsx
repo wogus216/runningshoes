@@ -30,7 +30,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
       case 'good': return '좋음';
       case 'moderate': return '보통';
       case 'poor': return '주의';
-      default: return '보통';
+      default: return '미확인';
     }
   };
 
@@ -87,7 +87,7 @@ export function HeroSection({ gel }: HeroSectionProps) {
 
           {/* 별점 */}
           <div className="mb-5">
-            {renderStars(gel.rating)}
+            {gel.rating !== undefined && renderStars(gel.rating)}
           </div>
 
           {/* 태그 */}
@@ -150,24 +150,24 @@ export function HeroSection({ gel }: HeroSectionProps) {
           <div className="grid grid-cols-5 gap-2">
             <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Zap className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.calories}</p>
+              <p className="text-sm font-bold text-primary">{nutrition.calories ?? '미확인'}</p>
               <p className="text-[10px] text-tertiary">kcal</p>
             </div>
             <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Droplets className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.totalCarbs}g</p>
+              <p className="text-sm font-bold text-primary">{nutrition.totalCarbs === undefined ? '미확인' : `${nutrition.totalCarbs}g`}</p>
               <p className="text-[10px] text-tertiary">탄수화물</p>
             </div>
             <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <Coffee className="w-4 h-4 mx-auto mb-1 text-tertiary" />
-              <p className="text-sm font-bold text-primary">{nutrition.caffeine}</p>
+              <p className="text-sm font-bold text-primary">{nutrition.caffeine ?? '미확인'}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
             <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">
               <div className="w-4 h-4 mx-auto mb-1 text-tertiary flex items-center justify-center">
                 <span className="text-xs">🧂</span>
               </div>
-              <p className="text-sm font-bold text-primary">{nutrition.sodium}</p>
+              <p className="text-sm font-bold text-primary">{nutrition.sodium ?? '미확인'}</p>
               <p className="text-[10px] text-tertiary">mg</p>
             </div>
             <div className="rounded-[4px] border border-sky-100 bg-sky-50 p-2 text-center">

@@ -16,7 +16,7 @@ export function UsageGuide({ gel }: UsageGuideProps) {
       <div className="mb-4 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
         <div className="flex items-center gap-2 mb-3">
           <CheckCircle2 className="w-4 h-4 text-sky-700" />
-          <h3 className="text-sm font-bold text-sky-700">추천 대상</h3>
+          <h3 className="text-sm font-bold text-sky-700">계획할 때 확인</h3>
         </div>
         <ul className="space-y-2">
           {guide.bestFor.map((item, index) => (
@@ -47,7 +47,7 @@ export function UsageGuide({ gel }: UsageGuideProps) {
       )}
 
       {/* 적합 거리 */}
-      <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
+      {guide.idealDistance.length > 0 && <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
         <div className="flex items-center gap-2 mb-3">
           <MapPin className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">적합 거리</h3>
@@ -62,7 +62,7 @@ export function UsageGuide({ gel }: UsageGuideProps) {
             </span>
           ))}
         </div>
-      </div>
+      </div>}
 
       {/* 섭취 전략 */}
       <div className="mb-4 rounded-[4px] border border-sky-200 bg-[linear-gradient(180deg,rgba(247,244,237,0.95),rgba(255,255,255,0.94))] p-4">

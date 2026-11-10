@@ -60,7 +60,7 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
           <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-sky-100/45">Gel Panel</p>
         </div>
         <div className="flex overflow-x-auto scrollbar-hide">
-          {tabs.map((tab) => (
+          {tabs.filter((tab) => tab.id !== 'price' || gel.priceAnalysis).map((tab) => (
             <button
               key={tab.id}
               onClick={() => setActiveTab(tab.id)}
@@ -285,8 +285,8 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                     {similarGel.name}
                   </h3>
                   <div className="flex items-center gap-2">
-                    {renderStars(similarGel.rating)}
-                    <span className="text-xs text-tertiary">({similarGel.rating})</span>
+                    {similarGel.rating !== undefined && renderStars(similarGel.rating)}
+                    <span className="text-xs text-tertiary">{similarGel.rating !== undefined ? `(${similarGel.rating})` : '평가 미확인'}</span>
                   </div>
                   {similarGel.price && (
                     <p className="text-sm font-bold text-primary">
@@ -295,8 +295,8 @@ export function GelDetailTabs({ gel, similarGelsData }: GelDetailTabsProps) {
                   )}
                   {similarGel.nutritionFacts && (
                     <div className="flex gap-2 text-xs text-tertiary mt-2">
-                      <span>{similarGel.nutritionFacts.totalCarbs}g 탄수화물</span>
-                      {similarGel.nutritionFacts.caffeine > 0 && (
+                      <span>{similarGel.nutritionFacts.totalCarbs === undefined ? '탄수화물 미확인' : `${similarGel.nutritionFacts.totalCarbs}g 탄수화물`}</span>
+                      {(similarGel.nutritionFacts.caffeine ?? 0) > 0 && (
                         <span>· {similarGel.nutritionFacts.caffeine}mg 카페인</span>
                       )}
                     </div>

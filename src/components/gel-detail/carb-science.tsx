@@ -27,15 +27,17 @@ export function CarbScience({ gel }: CarbScienceProps) {
   const getOsmolalityLabel = () => {
     switch (carb.osmolalityType) {
       case 'hydrogel':
-        return '하이드로젤 (위장 최적)';
+        return '하이드로젤';
       case 'isotonic':
-        return '등장성 (흡수 빠름)';
+        return '등장성 표기';
       case 'standard':
-        return '표준 (물 필요)';
+        return '일반 젤';
       case 'natural':
         return '천연 원료';
       case 'solid':
         return '고체형 (씹어 먹기)';
+      case 'unknown':
+        return '삼투 특성 미확인';
       default:
         return carb.osmolalityType;
     }
@@ -72,7 +74,7 @@ export function CarbScience({ gel }: CarbScienceProps) {
           <div className="flex items-center gap-2">
             <Beaker className="w-4 h-4" />
             <span className="text-sm font-medium">
-              {carb.dualSource ? '듀얼 소스 (2:1 최적)' : '단일 탄수화물'}
+              {carb.dualSource === true ? '복수 탄수화물 원료' : carb.dualSource === false ? '단일 탄수화물 원료' : '원료 구성 구분 미확인'}
             </span>
           </div>
         </div>
@@ -127,10 +129,12 @@ export function CarbScience({ gel }: CarbScienceProps) {
         <div className="rounded-[4px] border border-sky-100 bg-white/82 p-4">
           <h3 className="text-sm font-bold text-primary mb-2">물 섭취 필요</h3>
           <p className="text-secondary text-sm">
-            {carb.waterRequired ? (
-              <span className="font-medium text-amber-700">필수 (함께 마셔야 함)</span>
+            {carb.waterRequired === undefined ? (
+              <span>제품 포장의 섭취 지시 확인</span>
+            ) : carb.waterRequired ? (
+              <span className="font-medium text-amber-700">제조사: 물과 함께 섭취</span>
             ) : (
-              <span className="font-medium text-sky-700">불필요 (단독 섭취 가능)</span>
+              <span className="font-medium text-sky-700">제조사: 삼키기 위한 물 필수 아님 · 수분 계획 별도</span>
             )}
           </p>
         </div>

@@ -62,10 +62,10 @@ export function getSimilarGelsData(slugs: string[]): SimilarGelInfo[] {
           caffeine: gel.nutritionFacts.caffeine,
           calories: gel.nutritionFacts.calories,
         },
-        ratings: {
+        ratings: gel.ratings ? {
           overall: gel.ratings.overall,
           giComfort: gel.ratings.giComfort,
-        },
+        } : undefined,
       });
     }
   }

@@ -33,13 +33,13 @@ export async function generateMetadata({ params }: GelDetailPageProps): Promise<
     };
   }
 
-  const title = `${gel.brand} ${gel.name} 리뷰 | 성분, 맛, 위장 안정성, 가성비 분석`;
+  const title = `${gel.brand} ${gel.name} 제품 정보 | 성분 표시와 섭취 시 확인할 점`;
 
   const descriptionParts = [
     gel.description,
-    `탄수화물 ${gel.nutritionFacts.totalCarbs}g`,
-    `${gel.nutritionFacts.calories}kcal`,
-    gel.nutritionFacts.caffeine > 0 ? `카페인 ${gel.nutritionFacts.caffeine}mg` : null,
+    gel.nutritionFacts.totalCarbs === undefined ? null : `탄수화물 ${gel.nutritionFacts.totalCarbs}g`,
+    gel.nutritionFacts.calories === undefined ? null : `${gel.nutritionFacts.calories}kcal`,
+    (gel.nutritionFacts.caffeine ?? 0) > 0 ? `카페인 ${gel.nutritionFacts.caffeine}mg` : null,
     `${gel.category} 카테고리`,
   ].filter(Boolean);
 
@@ -82,7 +82,7 @@ export async function generateMetadata({ params }: GelDetailPageProps): Promise<
       type: 'article',
       locale: 'ko_KR',
       siteName: SITE_NAME,
-      title: `${gel.brand} ${gel.name} - 에너지 젤 리뷰`,
+      title: `${gel.brand} ${gel.name} - 에너지 젤 제품 정보`,
       description,
       images: [
         {
@@ -95,7 +95,7 @@ export async function generateMetadata({ params }: GelDetailPageProps): Promise<
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${gel.brand} ${gel.name} 리뷰`,
+      title: `${gel.brand} ${gel.name} 제품 정보`,
       description,
       images: [imageUrl],
     },
@@ -105,8 +105,10 @@ export async function generateMetadata({ params }: GelDetailPageProps): Promise<
     other: {
       'article:author': SITE_NAME,
       'article:section': gel.category,
-      'product:price:amount': gel.price?.toString() || '',
-      'product:price:currency': 'KRW',
+      ...(gel.price === undefined ? {} : {
+        'product:price:amount': gel.price.toString(),
+        'product:price:currency': 'KRW',
+      }),
       'product:brand': gel.brand,
     },
   };
@@ -146,20 +148,10 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
       'name': gel.brand,
     },
     'category': '에너지 젤',
-    'offers': {
-      '@type': 'Offer',
-      'priceCurrency': 'KRW',
-      'availability': 'https://schema.org/InStock',
-      'url': `${SITE_URL}/gels/${slug}`,
-      ...(gel.priceAnalysis?.msrp && {
-        'price': gel.priceAnalysis.msrp,
-      }),
-    },
     'additionalProperty': [
-      { '@type': 'PropertyValue', name: '탄수화물', value: `${gel.nutritionFacts.totalCarbs}g` },
-      { '@type': 'PropertyValue', name: '칼로리', value: `${gel.nutritionFacts.calories}kcal` },
-      ...(gel.nutritionFacts.caffeine > 0 ? [{ '@type': 'PropertyValue', name: '카페인', value: `${gel.nutritionFacts.caffeine}mg` }] : []),
-      { '@type': 'PropertyValue', name: '위장 안정성', value: gel.giTolerance.overall },
+      ...(gel.nutritionFacts.totalCarbs === undefined ? [] : [{ '@type': 'PropertyValue', name: '탄수화물', value: `${gel.nutritionFacts.totalCarbs}g` }]),
+      ...(gel.nutritionFacts.calories === undefined ? [] : [{ '@type': 'PropertyValue', name: '칼로리', value: `${gel.nutritionFacts.calories}kcal` }]),
+      ...((gel.nutritionFacts.caffeine ?? 0) > 0 ? [{ '@type': 'PropertyValue', name: '카페인', value: `${gel.nutritionFacts.caffeine}mg` }] : []),
       { '@type': 'PropertyValue', name: '카테고리', value: gel.category },
     ],
   };
@@ -188,7 +180,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
         <div className="grid md:grid-cols-3 gap-3">
           {/* 추천 대상 */}
           <div className="section-card border border-sky-200 bg-sky-50/70 p-4">
-            <h3 className="mb-2 text-sm font-bold text-sky-700">추천 대상</h3>
+            <h3 className="mb-2 text-sm font-bold text-sky-700">계획할 때 확인</h3>
             <ul className="space-y-1.5">
               {gel.usageGuide.bestFor.slice(0, 4).map((item, i) => (
                 <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
@@ -201,7 +193,7 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
 
           {/* 비추천 대상 */}
           <div className="section-card border border-rose-200 bg-rose-50/80 p-4">
-            <h3 className="mb-2 text-sm font-bold text-rose-600">이런 분은 비추</h3>
+            <h3 className="mb-2 text-sm font-bold text-rose-600">개별 확인이 필요한 경우</h3>
             <ul className="space-y-1.5">
               {gel.usageGuide.avoidIf.slice(0, 4).map((item, i) => (
                 <li key={i} className="text-sm text-secondary flex items-start gap-1.5">
@@ -235,7 +227,16 @@ export default async function GelDetailPage({ params }: GelDetailPageProps) {
             <span className="text-lg">🧪</span>
             <div>
               <p className="font-medium text-sm mb-1 text-primary">데이터 출처</p>
-              <p className="text-xs text-secondary">제조사 성분표 · 판매처 가격 표기(확인일 별도 표시) · 에디터 분석 — 후기는 수집하지 않습니다</p>
+              <p className="text-xs text-secondary">확인한 제품·맛·제공량과 아래 출처의 범위를 함께 확인하세요. 현재 판매 포장이 다르면 포장 표시를 우선 확인하세요.</p>
+              {gel.verification && <div className="mt-3 space-y-3 text-xs text-secondary">
+                <p>{gel.verification.checkedAt} 확인 · {gel.verification.scope}</p>
+                <ul className="space-y-2">{gel.verification.notes.map((note) => <li key={note}>{note}</li>)}</ul>
+                <ul className="space-y-2">{gel.verification.sources.map((source) => <li key={source.url}>
+                  <a href={source.url} target="_blank" rel="noopener noreferrer" className="underline">{source.title}</a>
+                  <p>{source.scope}</p>
+                </li>)}</ul>
+              </div>}
+
             </div>
           </div>
         </section>

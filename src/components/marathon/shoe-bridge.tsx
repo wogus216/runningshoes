@@ -163,7 +163,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
 
   const needsGel = profile.hasMarathon || profile.hasHalf || profile.hasUltra;
   const gels = needsGel
-    ? [...ALL_GELS].sort((x, y) => y.rating - x.rating).slice(0, 2)
+    ? ALL_GELS.filter((gel) => typeof gel.nutritionFacts.totalCarbs === 'number').slice(0, 2)
     : [];
   const hubs = hubsFor(profile);
 
@@ -247,7 +247,7 @@ export function MarathonShoeBridge({ distances, eventName, excludeSlugs = [] }: 
                       {g.brand} {g.name}
                     </div>
                     <div className="truncate text-xs text-tertiary">
-                      탄수화물 {g.nutritionFacts.totalCarbs}g
+                      {g.nutritionFacts.totalCarbs === undefined ? '탄수화물 미확인' : `탄수화물 ${g.nutritionFacts.totalCarbs}g`}
                       {typeof g.price === 'number' ? ` · ${g.price.toLocaleString('ko-KR')}원` : ''}
                     </div>
                   </div>

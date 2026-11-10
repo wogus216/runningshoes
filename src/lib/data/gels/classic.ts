@@ -2,690 +2,503 @@ import type { Gel } from '@/types/gel';
 
 export const classicGels: Gel[] = [
   {
-    id: 'gu-roctane-energy-gel',
-    slug: 'gu-roctane-energy-gel',
-    brand: 'GU',
-    name: 'Roctane Energy Gel',
-    category: '가성비',
-    rating: 4,
-    price: 3867,
-    description: 'GU의 프리미엄 라인. 아미노산 1,425mg과 듀얼 소스 탄수화물로 장거리 레이스에 최적화된 울트라 엔듀런스 젤.',
-    tags: ['아미노산', '듀얼소스', '글로벌', '울트라엔듀런스', '미국'],
-    image: '/images/gels/gu/main.webp',
-
-    nutritionFacts: {
-      calories: 100,
-      totalCarbs: 22,
-      carbSource: 'Maltodextrin + Fructose',
-      glucoseFructoseRatio: '약 2:1',
-      caffeine: 35,
-      sodium: 125,
-      potassium: 55,
-      servingSize: 32,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: true,
-      transporterProfile: 'SGLT1 + GLUT5',
-      estimatedOxidationRate: '~66g/hr (3개/hr — 1개 탄수화물 22g 기준)',
-      osmolalityType: 'standard',
-      osmolalityEstimate: 500,
-      osmolalityBasis: 'estimated',
-      waterRequired: true,
-      scienceVerdict: 'Roctane은 기본 GU에 아미노산(류신, 발린, 이소류신 등)을 추가해 근피로 지연 효과. 듀얼 소스 2:1로 장거리 흡수 효율 극대화.',
-    },
-
-    giTolerance: {
-      overall: 'moderate',
-      waterPairing: '필수 (150-200ml)',
-      riskFactors: ['고삼투압 (~500 mOsm)', '카페인 35mg (일부 맛)', '물 없이 먹으면 GI 이슈'],
-      communityFeedback: '카페인 35mg 맛: 블루베리석류·체리라임·바닐라오렌지. 무카페인 맛: 스트로베리키위·레모네이드. 물 150-200ml와 함께 섭취 필요.',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['블루베리 석류 (카페인)', '체리 라임 (카페인)', '바닐라 오렌지 (카페인)', '스트로베리 키위', '레모네이드'],
-      texture: '끈적한 클래식 젤',
-      viscosity: 7,
-      aftertaste: '맛에 따라 다양. 레모네이드는 나트륨 180mg으로 짭짤한 맛 추가.',
-      tasteFatigueRisk: '보통 (5가지 맛 로테이션 가능)',
-    },
-
-    usageGuide: {
-      bestFor: ['풀마라톤 기록 도전', '울트라마라톤', '아미노산 보충 필요', '해외직구 경험 있는 러너'],
-      avoidIf: ['끈적이는 식감 싫은 분', '물 없이 먹고 싶은 분', '국내 즉시 구매 필요'],
-      idealDistance: ['풀마라톤', '울트라마라톤'],
-      intakeStrategy: '매 25분마다 1개 + 반드시 물 150-200ml. 카페인 맛은 후반부(25km~)에 배치.',
-      caffeineStrategy: '블루베리석류/체리라임/바닐라오렌지 맛에 35mg 카페인. 무카페인 맛과 교대 사용.',
-    },
-
-    ratings: {
-      energyKick: 8,
-      giComfort: 5,
-      texture: 4,
-      taste: 7,
-      caffeine: 7,
-      electrolytes: 7,
-      portability: 7,
-      value: 6,
-      transparency: 8,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 3867,
-      bulkPrice: 3867,
-      marathonCost: 19335,
-      yangGangComparison: '양갱(800원) 대비 4.8배. 아미노산 1,425mg + 듀얼 소스는 양갱에 없는 프리미엄. 해외직구 전용.',
-      valueRating: 6,
-      priceTier: 'mid',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '네이버 스마트스토어 (earthpass) 24개 92,800원',
-      alternatives: ['enup-power-gel', 'kolon-perfect-power-gel'],
-    },
-
-    features: [
-      'GU 프리미엄 Roctane 라인',
-      '아미노산 1,425mg (BCAA 포함)',
-      '듀얼 소스 (Maltodextrin + Fructose)',
-      '5가지 맛 (3종 카페인 35mg)',
-      '나트륨 125-180mg (레모네이드)',
-    ],
-
-    reviews: [
-      {
-        userType: '성분 관점 — 기본 GU와의 차이',
-        text: '기본 라인과의 차이는 아미노산(BCAA) 배합과 나트륨 함량입니다. 다만 러닝 중 아미노산 섭취가 후반 근피로를 줄이는지는 연구 결과가 엇갈리므로, 확정된 효과보다 부가 요소로 보는 편이 맞습니다. 30km 이후 보충이 필요한 풀코스에서 나트륨이 높다는 점은 실질적인 이점입니다.',
-      },
-      {
-        userType: '운용 팁 — 카페인 맛을 후반에 배치',
-        text: '맛에 따라 카페인 함량이 달라지는 제품군이라, 카페인이 든 맛을 레이스 후반에 배치하는 운용이 가능합니다. 초반에 무카페인, 30km 이후에 카페인 제품을 넣는 식으로 계획하면 카페인 내성이 생기기 전에 효과를 집중시킬 수 있습니다. 24개 묶음 기준 개당 약 3,867원으로 수입 젤 중에서는 합리적인 구간입니다.',
-      },
-      {
-        userType: '제형 주의 — 점도가 높은 편',
-        text: '점도가 높은 제형이라 호불호가 갈립니다. 달리면서 삼키기에는 묽은 등장(Isotonic) 계열이 편하므로, 페이스를 유지한 채 보충해야 하는 상황이라면 그쪽이 맞습니다. 맛 자체의 평가는 좋은 편이므로, 급수대에서 물과 함께 먹는 운용이면 단점이 줄어듭니다.',
-      },
-    ],
-
-    similarGels: ['enup-power-gel', 'kolon-perfect-power-gel', 'maurten-gel-100'],
-
-    purchaseLinks: [
-      { store: '네이버', url: 'https://naver.me/xjYb3VXn' },
-      { store: '쿠팡', url: 'https://link.coupang.com/a/g7f4AqtLWK' },
-    ],
+  "id": "gu-roctane-energy-gel",
+  "slug": "gu-roctane-energy-gel",
+  "brand": "GU",
+  "name": "Roctane Energy Gel",
+  "category": "가성비",
+  "description": "GU Roctane은 공식 소개상 100kcal 제품군입니다. 탄수화물·나트륨·카페인은 맛별 표시를 확인해야 합니다.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/gu/main.webp",
+  "nutritionFacts": {
+    "calories": 100
   },
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "standard",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
+  },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "선택한 맛의 포장에 적힌 물 동반 지시를 확인하세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "현재 공식 공통 소개는 탄수화물19~21g·나트륨125~180mg입니다. 제품군을 하나의22g·125mg으로 묶지 않았습니다.",
+    "콜드브루 커피는 카페인70mg, 블루베리석류·체리라임 등은35mg으로 안내합니다. 카페인 없는 맛도 별도로 확인해야 합니다."
+  ],
+  "reviews": [],
+  "similarGels": [
+    "enup-power-gel",
+    "kolon-perfect-power-gel",
+    "maurten-gel-100"
+  ],
+  "purchaseLinks": [
+    {
+      "store": "네이버",
+      "url": "https://naver.me/xjYb3VXn"
+    },
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/g7f4AqtLWK"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "현재 공식 공통 소개는 탄수화물19~21g·나트륨125~180mg입니다. 제품군을 하나의22g·125mg으로 묶지 않았습니다.",
+      "콜드브루 커피는 카페인70mg, 블루베리석류·체리라임 등은35mg으로 안내합니다. 카페인 없는 맛도 별도로 확인해야 합니다.",
+      "제조사의 아미노산·피로 관련 설명과 독립 성능·위장 비교 시험을 구분합니다. 모든 러너에게 같은 후반 섭취 시점·물150~200ml를 처방하지 않습니다."
+    ],
+    "sources": [
+      {
+        "title": "GU Roctane 공식 제품",
+        "url": "https://guenergy.com/products/roctane-energy-gel",
+        "scope": "공통 열량·영양 범위·맛별 카페인; 특정 국내 포장 인증 아님"
+      }
+    ]
+  }
+},
   {
-    id: 'kolon-perfect-power-gel',
-    slug: 'kolon-perfect-power-gel',
-    brand: '코오롱제약',
-    name: '퍼펙트 파워젤',
-    category: '가성비',
-    rating: 4,
-    price: 1533,
-    description: '코오롱제약이 만든 국산 에너지 젤. 비타민B, C, 마그네슘, 칼슘까지 포함한 복합 에너지 보충제. 리뷰 3,500개 이상의 검증된 가성비.',
-    tags: ['국산', '가성비', '코오롱제약', '비타민', '마그네슘'],
-    image: '/images/gels/kolon/main.webp',
-
-    nutritionFacts: {
-      calories: 100,
-      totalCarbs: 25,
-      carbSource: '당류가공품 (Maltodextrin + Sugar)',
-      caffeine: 0,
-      sodium: 40,
-      magnesium: 15,
-      servingSize: 40,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: false,
-      transporterProfile: 'SGLT1 주도',
-      estimatedOxidationRate: '~60g/hr',
-      osmolalityType: 'standard',
-      osmolalityBasis: 'estimated',
-      waterRequired: true,
-      scienceVerdict: '단일 소스 SGLT1 한계(60g/hr)이지만 비타민B1, B12, 비타민C, 마그네슘, 칼슘 등 미량영양소 추가가 차별점. 훈련용으로 충분한 스펙.',
-    },
-
-    giTolerance: {
-      overall: 'good',
-      waterPairing: '권장 (물 150ml)',
-      riskFactors: ['표준 삼투압'],
-      communityFeedback: '물 150ml와 함께 섭취 권장. 무카페인. 1포 40g에 마그네슘 15mg.',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['청포도', '꿀홍삼', '아이스블루'],
-      texture: '보통 점도 젤',
-      viscosity: 5,
-      aftertaste: '청포도가 가장 인기. 꿀홍삼은 독특한 한국식 맛.',
-      tasteFatigueRisk: '보통',
-    },
-
-    usageGuide: {
-      bestFor: ['데일리 LSD 훈련', '가성비 우선', '입문 러너', '비타민 보충 원하는 러너'],
-      avoidIf: ['서브3.5 이하 기록 도전 (듀얼 소스 필요)', '프리미엄 제형 선호'],
-      idealDistance: ['훈련용 장거리', '하프마라톤'],
-      intakeStrategy: '매 25-30분마다 1개 + 물 150ml.',
-    },
-
-    ratings: {
-      energyKick: 6,
-      giComfort: 7,
-      texture: 6,
-      taste: 7,
-      caffeine: 5,
-      electrolytes: 6,
-      portability: 7,
-      value: 9,
-      transparency: 7,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 1917,
-      bulkPrice: 1533,
-      marathonCost: 7665,
-      yangGangComparison: '양갱(800원) 대비 1.9배. 에너지 젤 중 최저가급이면서 비타민/마그네슘까지 포함. 양갱→젤 업그레이드 최적.',
-      valueRating: 9,
-      priceTier: 'budget',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '네이버 브랜드스토어 12포 18,400원 (정가 23,000원)',
-      alternatives: ['enup-power-gel', 'sportsix-energy-gel', 'k-yanggang'],
-    },
-
-    features: [
-      '코오롱제약 브랜드 신뢰성',
-      '비타민B1, B12, C + 마그네슘, 칼슘',
-      '3가지 맛 (청포도, 꿀홍삼, 아이스블루)',
-      '리뷰 3,543개 (평점 4.82)',
-      '12포 18,400원 (개당 1,533원)',
-    ],
-
-    reviews: [
-      {
-        userType: '비용 관점 — 양갱에서 젤로 넘어가는 첫 단계',
-        text: '양갱 같은 저가 보충식에서 젤로 넘어갈 때 부담이 가장 적은 가격대입니다. 12포 18,400원 기준 개당 약 1,533원으로 수입 젤(개당 3,500~10,892원)의 절반 이하이고, 풀코스 5개를 써도 8,000원 이하입니다. 100kcal·탄수화물 25g의 기본 스펙에 비타민B·C와 마그네슘이 더해진 구성입니다. 액상이라 씹지 않고 삼킬 수 있어 페이스를 유지한 채 보충할 수 있는 것이 양갱과의 실질적 차이입니다.',
-      },
-      {
-        userType: '예상 적합 — 등산·라이딩 겸용 보충',
-        text: '러닝 외에 등산이나 라이딩까지 겸하는 경우에 무난한 범용 보충식입니다. 100kcal·탄수화물 25g이라 2시간 안팎의 산행 중간 보충으로 적정하고, 40g 소용량이라 저지 주머니에 3~4개를 넣어도 부담이 적습니다. 마그네슘 15mg이 들어 있으나 근경련 예방 효과는 연구상 근거가 확립되지 않았으므로 부가 요소로 보는 편이 맞습니다. 개당 약 1,533원으로 반복 소비해도 비용 부담이 낮습니다.',
-      },
-      {
-        userType: '예상 적합 — 훈련용 보충을 시작하는 러너',
-        text: '장거리 훈련에서 중간 보충을 시작하는 단계에 무난한 제품입니다. 제약사 브랜드라 유통 경로가 안정적이고 국내 접근성이 좋다는 점이 실용적인 장점입니다. 맛이 강하지 않은 편이라 반복 섭취에서 물리는 부담이 적습니다. 다만 나트륨이 40mg으로 낮아, 땀 손실이 큰 여름 대회나 3시간 이상 지속되는 레이스에서는 전해질을 따로 보충해야 합니다. 훈련용으로 쓰고 레이스에는 나트륨·탄수화물 밀도가 높은 제품을 병행하는 운용이 무난합니다.',
-      },
-    ],
-
-    similarGels: ['enup-power-gel', 'k-yanggang', 'sportsix-energy-gel'],
-
-    purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g7f2uERGAS' }],
+  "id": "kolon-perfect-power-gel",
+  "slug": "kolon-perfect-power-gel",
+  "brand": "코오롱제약",
+  "name": "퍼펙트 파워젤",
+  "category": "가성비",
+  "description": "공식 청포도40g 제품 표시는 탄수화물25g·나트륨10mg입니다. 꿀홍삼·아이스블루의 성분을 이 값으로 통일하지 마세요.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/kolon/main.webp",
+  "nutritionFacts": {
+    "totalCarbs": 25,
+    "sodium": 10,
+    "servingSize": 40,
+    "servingUnit": "g",
+    "carbSource": "물엿·말토덱스트린·포도당·과당 등"
   },
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "standard",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
+  },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "청포도·꿀홍삼·아이스블루를 구분하고 포장 지시를 확인하세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "이번 영양표는 공식몰 NEW 청포도40g의 상품필수정보 기준입니다. 원료표에 과당도 있어 단일 소스라고 단정하지 않습니다.",
+    "공식 영양표의 단백질1g미만을1g 또는0g으로 바꿔 입력하지 않았습니다. 열량·카페인·마그네슘은 현재 대조 범위에서 미확인입니다."
+  ],
+  "reviews": [],
+  "similarGels": [
+    "enup-power-gel",
+    "k-yanggang",
+    "sportsix-energy-gel"
+  ],
+  "purchaseLinks": [
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/g7f2uERGAS"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "이번 영양표는 공식몰 NEW 청포도40g의 상품필수정보 기준입니다. 원료표에 과당도 있어 단일 소스라고 단정하지 않습니다.",
+      "공식 영양표의 단백질1g미만을1g 또는0g으로 바꿔 입력하지 않았습니다. 열량·카페인·마그네슘은 현재 대조 범위에서 미확인입니다.",
+      "현재 가격은 묶음·비회원·배송 조건을 별도로 봐야 합니다. 과거 개당 가격을 현재 정가로 싣지 않았습니다."
+    ],
+    "sources": [
+      {
+        "title": "코오롱 공식 NEW 청포도",
+        "url": "https://www.kolonhealth.com/goods/goods_view.php?goodsNo=1000000235",
+        "scope": "40g·탄수화물25g·나트륨10mg·원료표; 다른 맛 별도"
+      }
+    ]
+  }
+},
   {
-    id: 'k-yanggang',
-    slug: 'k-yanggang',
-    brand: 'K-양갱',
-    name: '양갱 (팥/밤)',
-    category: '가성비',
-    rating: 4,
-    price: 800,
-    description: '한국 러너의 독자적 에너지 보충 문화. 전 세계에서 유일한 K-에너지 식품. 위장 안전, 가성비 최강.',
-    tags: ['양갱', 'K-러닝', '가성비', '위장안전', '입문자'],
-    image: '/images/gels/yanggang/main.webp',
-
-    nutritionFacts: {
-      calories: 130,
-      totalCarbs: 35,
-      carbSource: 'Sugar + Starch (설탕 + 물엿)',
-      caffeine: 0,
-      sodium: 10,
-      fiber: 1,
-      servingSize: 50,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: false,
-      transporterProfile: 'SGLT1 주도 (sucrose → glucose + fructose이지만 고체 소화 시간 필요)',
-      estimatedOxidationRate: '~40-50g/hr (고체이므로 젤보다 느림)',
-      osmolalityType: 'solid',
-      osmolalityBasis: 'unknown',
-      waterRequired: false,
-      keyTechnology: '한천(agar) 기반 고체 형태 - 위장에 부담 최소',
-      scienceVerdict: '"먹을 수 있는 탄수화물"이지 "최적화된 연료"는 아님. 서브5+ 러너에게 실질적 대안. 서브3.5 이하는 듀얼 소스 젤이 과학적으로 우위.',
-    },
-
-    giTolerance: {
-      overall: 'excellent',
-      waterPairing: '불필요 (선택)',
-      riskFactors: [],
-      communityFeedback: '고체라 씹어서 섭취. 물은 선택(불필요). 무카페인.',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['팥 (클래식)', '밤', '고구마', '녹차'],
-      texture: '고체 (씹어야 함)',
-      viscosity: 10,
-      aftertaste: '익숙한 한국 간식맛. 달달함.',
-      tasteFatigueRisk: '보통 (고체라 씹는 행위 자체가 피로 유발 가능)',
-    },
-
-    usageGuide: {
-      bestFor: ['펀런/조깅', '입문 러너', '가성비 추구', 'GI 매우 예민', '양갱 러닝 문화 참여'],
-      avoidIf: ['서브3.5 기록 도전 (듀얼 소스 필요)', '고강도 페이스에서 씹기 힘든 분'],
-      idealDistance: ['10K', '하프마라톤', '풀마라톤 (서브5+)'],
-      intakeStrategy: '에이드 300m 전부터 미리 씹기 시작 → 에이드에서 물과 삼킴. 소화 시간 고려해 섭취 20분 전 먹기.',
-    },
-
-    ratings: {
-      energyKick: 5,
-      giComfort: 10,
-      texture: 3,
-      taste: 7,
-      caffeine: 1,
-      electrolytes: 2,
-      portability: 6,
-      value: 10,
-      transparency: 9,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 800,
-      bulkPrice: 500,
-      marathonCost: 4000,
-      yangGangComparison: '양갱이 기준점 자체. 풀마라톤 5개 = 4,000원. Maurten 5개(32,085원)의 약 1/8 가격.',
-      valueRating: 10,
-      priceTier: 'budget',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '편의점 정가',
-      alternatives: ['kolon-perfect-power-gel', 'enup-power-gel'],
-    },
-
-    features: [
-      'K-러닝 문화의 아이콘',
-      '위장 이슈 거의 제로',
-      '편의점 어디서나 구매 가능',
-      '풀마라톤 총 비용 4,000원',
-      '별도 gut training 불필요',
-    ],
-
-    reviews: [
-      {
-        userType: '비용 관점 — Maurten의 약 8분의 1 가격',
-        text: '보충 비용을 최소화하는 선택지입니다. 편의점에서 800원 안팎으로 130kcal·탄수화물 35g을 확보할 수 있어, 풀코스 5개 기준 4,000원 수준입니다. 같은 개수의 Maurten Gel 100(개당 6,417원, 5개 32,085원)과 비교하면 약 8분의 1입니다. 한천 기반이라 위장 부담이 적어 장 훈련(gut training) 없이도 바로 쓸 수 있다는 점이 입문 단계에서 특히 유리합니다. 다만 고체라 씹는 시간이 필요해 페이스를 유지한 채 삼키기는 어렵습니다.',
-      },
-      {
-        userType: '적합성 한계 — 기록 도전 레이스에는 부적합',
-        text: '훈련용과 기록 도전 레이스를 구분해서 봐야 하는 보충식입니다. 고체라 소화에 시간이 걸리고, 탄수화물 산화율이 시간당 40~50g 수준으로 젤(60~75g/hr)보다 낮습니다. 30km 이후 에너지 공급 속도가 결정적인 기록 도전에서는 듀얼 소스(포도당+과당) 젤이 이론상 유리합니다. 반대로 LSD처럼 페이스가 낮고 시간이 긴 훈련에서는 흡수 속도가 문제되지 않아, 비용을 크게 낮추는 선택이 됩니다. 목표에 따라 훈련은 양갱, 레이스는 젤로 나누는 운용이 합리적입니다.',
-      },
-      {
-        userType: '예상 적합 — 완주가 목표인 풀코스 보충',
-        text: '기록보다 완주가 목표인 풀코스에서 비용을 크게 낮추는 선택지입니다. 한천(agar) 기반이라 위장 부담이 적은 편이고, 하나에 130kcal·탄수화물 35g으로 1회 보충량 자체는 일반 젤보다 오히려 많습니다. 고체라 삼키기 어렵다는 점은 운용으로 보완할 수 있는데, 급수대 300m 전부터 씹기 시작해 급수대에서 물과 함께 넘기는 방식이 일반적입니다. 다만 흡수 속도가 젤보다 느려 페이스가 높은 구간에서는 공급이 지연될 수 있어, 목표 기록이 뚜렷하다면 젤과 병행하는 편이 낫습니다.',
-      },
-    ],
-
-    purchaseLinks: [],
-
-    similarGels: ['kolon-perfect-power-gel', 'enup-power-gel', 'up-energy-gel'],
+  "id": "k-yanggang",
+  "slug": "k-yanggang",
+  "brand": "K-양갱",
+  "name": "양갱 (팥/밤)",
+  "category": "가성비",
+  "description": "양갱은 제조사·팥/밤·중량에 따라 표시가 다른 식품입니다. 특정 제품이 정해지지 않은 이 항목에 대표 영양 수치를 적용하지 않습니다.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/yanggang/main.webp",
+  "nutritionFacts": {},
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "solid",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
   },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "씹어 먹는 식품의 실제 제품 표시와 개인 수분 계획을 확인하세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "현재 항목은 특정 제조사·제품번호가 없는 식품군입니다.50g·130kcal·탄수화물35g·카페인0mg을 대표값으로 확정할 수 없습니다.",
+    "실제 구매한 제품의1개 중량·탄수화물·알레르기 표시와 훈련 중 섭취 반응을 확인하세요."
+  ],
+  "reviews": [],
+  "purchaseLinks": [],
+  "similarGels": [
+    "kolon-perfect-power-gel",
+    "enup-power-gel",
+    "up-energy-gel"
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "현재 항목은 특정 제조사·제품번호가 없는 식품군입니다.50g·130kcal·탄수화물35g·카페인0mg을 대표값으로 확정할 수 없습니다.",
+      "실제 구매한 제품의1개 중량·탄수화물·알레르기 표시와 훈련 중 섭취 반응을 확인하세요.",
+      "일반 보급 지침은 양갱과 전문젤의 흡수율·위장 우열을 직접 시험한 자료가 아닙니다."
+    ],
+    "sources": [
+      {
+        "title": "AIS 일반 보급·제품 표시 안내",
+        "url": "https://www.ausport.gov.au/ais/nutrition/supplements/group_a/sports-foods2/sports-gels",
+        "scope": "일반 영양 지침만 참고; 특정 양갱 성분·효과의 근거 아님"
+      }
+    ]
+  }
+},
   {
-    id: 'yohemite-energy-gel',
-    slug: 'yohemite-energy-gel',
-    brand: '요헤미티',
-    name: '에너지 젤 파워젤',
-    category: '가성비',
-    rating: 4,
-    price: 1950,
-    description: '국가대표 신유빈이 선택한 에너지 젤. 메이플시럽 베이스의 부드러운 제형으로 목넘김 최고. 8,500개 이상 리뷰의 검증된 인기 제품.',
-    tags: ['신유빈', '메이플시럽', '부드러운제형', '국산', '인기'],
-    image: '/images/gels/yohemite/main.webp',
-
-    nutritionFacts: {
-      calories: 100,
-      totalCarbs: 25,
-      carbSource: 'Maple Syrup + Glucose (메이플시럽 기반)',
-      caffeine: 0,
-      sodium: 50,
-      servingSize: 40,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: false,
-      transporterProfile: 'SGLT1 주도 (메이플시럽 기반 자연당)',
-      estimatedOxidationRate: '~55-60g/hr',
-      osmolalityType: 'standard',
-      osmolalityBasis: 'estimated',
-      waterRequired: false,
-      keyTechnology: '메이플시럽 기반 자연 탄수화물 - 부드러운 목넘김',
-      scienceVerdict: '단일 소스지만 메이플시럽의 자연당 배합으로 위장 부담 적음. 묽은 제형이라 물 없이도 섭취 가능. 편의성 최고.',
-    },
-
-    giTolerance: {
-      overall: 'good',
-      waterPairing: '불필요 (묽은 제형)',
-      riskFactors: [],
-      communityFeedback: '묽은 제형이라 물 없이 섭취 가능. 무카페인. 1포 40g, 맛 1종(메이플+청사과향).',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['파워젤 (메이플+청사과향)'],
-      texture: '묽고 부드러운 리퀴드 젤',
-      viscosity: 3,
-      aftertaste: '메이플시럽 단맛에 청사과향 상큼함. 텁텁하지 않음.',
-      tasteFatigueRisk: '낮음 (부드러운 맛)',
-    },
-
-    usageGuide: {
-      bestFor: ['입문 러너', '목넘김 예민한 분', '운동 전 에너지 보충', '농구/축구/자전거 등 다양한 스포츠'],
-      avoidIf: ['듀얼 소스 필요한 엘리트 러너', '풀마라톤 서브3 기록 도전'],
-      idealDistance: ['10K', '하프마라톤', '다양한 스포츠'],
-      intakeStrategy: '운동 15-20분 전 1포 섭취. 러닝 중에는 30분마다 1포. 물 없이도 OK.',
-    },
-
-    ratings: {
-      energyKick: 7,
-      giComfort: 8,
-      texture: 9,
-      taste: 8,
-      caffeine: 5,
-      electrolytes: 5,
-      portability: 8,
-      value: 7,
-      transparency: 7,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 2990,
-      bulkPrice: 1950,
-      marathonCost: 9750,
-      yangGangComparison: '양갱(800원) 대비 2.4배. 묽은 제형으로 목넘김이 좋고 물 없이 먹을 수 있는 게 양갱 대비 장점.',
-      valueRating: 7,
-      priceTier: 'entry',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '네이버 브랜드스토어 20개 39,000원 (정가 59,800원)',
-      alternatives: ['kolon-perfect-power-gel', 'onyourmark-energy-gel', 'sportsix-energy-gel'],
-    },
-
-    features: [
-      '국가대표 신유빈 모델',
-      '메이플시럽 기반 자연 탄수화물',
-      '묽고 부드러운 목넘김 (물 불필요)',
-      '리뷰 8,508개 (평점 4.91)',
-      '개봉 편리한 패키지 설계',
-    ],
-
-    reviews: [
-      {
-        userType: '예상 적합 — 첫 젤로 사점 구간을 넘길 때',
-        text: '7~8km 부근에서 에너지가 떨어지는 구간을 처음 보충으로 넘겨보려는 단계에 맞습니다. 메이플시럽 기반이라 100kcal·탄수화물 25g을 인공적인 단맛 없이 섭취할 수 있고, 점도가 묽어 물 없이도 넘길 수 있습니다. 20개 묶음 기준 개당 약 1,950원으로 양갱(800원대)의 2.4배지만, 씹지 않고 삼킬 수 있어 페이스를 유지한 채 보충할 수 있다는 점이 값의 근거입니다.',
-      },
-      {
-        userType: '예상 적합 — 구기 종목 등 러닝 외 활용',
-        text: '러닝뿐 아니라 후반 체력 저하가 오는 구기 종목에서도 쓸 수 있는 범용 보충식입니다. 100kcal·탄수화물 25g으로 흡수가 빠르고, 메이플시럽 기반이라 텁텁하지 않아 운동 중 거부감이 적습니다. 다만 나트륨이 50mg으로 낮아, 땀 손실이 큰 실내 경기나 여름철에는 스포츠 드링크를 병행해야 합니다.',
-      },
-      {
-        userType: '비교 — 국산 젤 3종 중 제형이 가장 묽다',
-        text: '국산 젤 3종을 비교하면 가격은 중간, 제형은 가장 묽은 쪽입니다. 개당 약 1,950원으로 코오롱(1,533원)·스포식스(1,619원)보다 다소 높지만, 점도가 낮아 달리면서 삼키기 가장 편합니다. 수입 젤과 비교하면 절반 수준 가격입니다. 개봉 구조가 편해 페이스를 유지한 채 섭취할 수 있는 것도 실사용 장점입니다. 다만 절취한 꼭지 처리가 불편해, 레이스 중 쓰레기 관리를 고려해야 합니다.',
-      },
-    ],
-
-    similarGels: ['onyourmark-energy-gel', 'kolon-perfect-power-gel', 'sportsix-energy-gel'],
-
-    purchaseLinks: [
-      {
-        store: '네이버',
-        url: 'https://naver.me/FfsbmE4Y',
-      },
-      {
-        // 요헤미티 에너지젤 지속형 보급 파워젤(무카페인, 사이트 데이터와 동일). 쿠팡 병기(2026-09-20).
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/hb4vIaurwi',
-      },
-    ],
+  "id": "yohemite-energy-gel",
+  "slug": "yohemite-energy-gel",
+  "brand": "요헤미티",
+  "name": "에너지 젤 파워젤",
+  "category": "가성비",
+  "description": "요헤미티 기본 에너지젤은 공식몰에서 메이플 수액 기반·무카페인으로 안내합니다. 카페인110 제품과 구분하세요.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/yohemite/main.webp",
+  "nutritionFacts": {
+    "caffeine": 0
   },
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "unknown",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
+  },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "기본형·카페인110을 구분하고 실제 포장의 섭취 지시를 확인하세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "현재 공식 기본형 제품의 무카페인 표기를 확인했습니다. 별도 카페인110은 다른 제품입니다.",
+    "2025년 소비자원 시료40g의 탄수화물24g과 브랜드 퍼포먼스랩의27g 안내가 달라 현재 포장 성분을 하나의 숫자로 확정하지 않았습니다."
+  ],
+  "reviews": [],
+  "similarGels": [
+    "onyourmark-energy-gel",
+    "kolon-perfect-power-gel",
+    "sportsix-energy-gel"
+  ],
+  "purchaseLinks": [
+    {
+      "store": "네이버",
+      "url": "https://naver.me/FfsbmE4Y"
+    },
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/hb4vIaurwi"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "현재 공식 기본형 제품의 무카페인 표기를 확인했습니다. 별도 카페인110은 다른 제품입니다.",
+      "2025년 소비자원 시료40g의 탄수화물24g과 브랜드 퍼포먼스랩의27g 안내가 달라 현재 포장 성분을 하나의 숫자로 확정하지 않았습니다.",
+      "메이플 원료가 누구에게나 혈당 변동·복통을 막는다는 보증은 아닙니다. 제품 상세 이미지의 현재 영양표 대조가 남아 있습니다."
+    ],
+    "sources": [
+      {
+        "title": "요헤미티 기본형 공식 제품",
+        "url": "https://www.yohemite.com/product/?idx=60",
+        "scope": "메이플 수액·무카페인·10포; 카페인110 제외"
+      },
+      {
+        "title": "한국소비자원 2025 시료 비교",
+        "url": "https://ciss.go.kr/DATA/bbs/85/20251120090237541.pdf",
+        "scope": "2025년 시료40g·탄수화물24g; 현재 표기와 구분"
+      }
+    ]
+  }
+},
   {
-    id: 'onyourmark-energy-gel',
-    slug: 'onyourmark-energy-gel',
-    brand: '온유어마크',
-    name: '에너지젤',
-    category: '가성비',
-    rating: 4,
-    price: 2200,
-    description: '포도당 + 아가베시럽 기반의 부드러운 꿀 제형. 레드비트 농축액 2%와 블루베리 주스 함유. HACCP 인증 국산 에너지젤.',
-    tags: ['국산', '포도당', '아가베시럽', '레드비트', 'HACCP', '무카페인'],
-    image: '/images/gels/onyourmark/main.webp',
-
-    nutritionFacts: {
-      calories: 104,
-      totalCarbs: 26,
-      carbSource: '포도당 + 아가베시럽',
-      caffeine: 0,
-      sodium: 30,
-      servingSize: 40,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: false,
-      transporterProfile: 'SGLT1 주도 (포도당 기반)',
-      estimatedOxidationRate: '~55-60g/hr',
-      osmolalityType: 'standard',
-      osmolalityBasis: 'estimated',
-      waterRequired: false,
-      keyTechnology: '포도당 + 아가베시럽 조합 - 빠른 흡수 + 부드러운 단맛',
-      scienceVerdict: '포도당 기반으로 SGLT1 통한 빠른 흡수. 아가베시럽(저GI)이 혈당 급등 완화. 레드비트 농축액의 질산염 효과는 소량이지만 부가가치.',
-    },
-
-    giTolerance: {
-      overall: 'good',
-      waterPairing: '불필요 (부드러운 꿀 제형)',
-      riskFactors: [],
-      communityFeedback: '공식몰 리뷰 81개 평점 5.0, 네이버 리뷰 68개 평점 4.87. 무카페인. 물 없이 섭취 가능.',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['블루베리'],
-      texture: '부드러운 꿀 제형',
-      viscosity: 4,
-      aftertaste: '은은한 블루베리향. 과하지 않은 단맛.',
-      tasteFatigueRisk: '낮음',
-    },
-
-    usageGuide: {
-      bestFor: ['카페인 민감한 러너', '위장 예민한 러너', '자연 원료 선호', 'K-브랜드 지지'],
-      avoidIf: ['맛 다양성 필요', '카페인 부스트 필요', '듀얼 소스 필요'],
-      idealDistance: ['10K', '하프마라톤', '풀마라톤'],
-      intakeStrategy: '러닝 15분 전 1포 섭취. 이후 30분마다 1포. 물 없이도 OK.',
-    },
-
-    ratings: {
-      energyKick: 6,
-      giComfort: 8,
-      texture: 8,
-      taste: 7,
-      caffeine: 5,
-      electrolytes: 4,
-      portability: 7,
-      value: 7,
-      transparency: 8,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 2200,
-      bulkPrice: 2200,
-      marathonCost: 11000,
-      yangGangComparison: '양갱(800원) 대비 2.75배. 레드비트 농축액과 HACCP 인증이 차별점. 포도당 기반 빠른 흡수.',
-      valueRating: 7,
-      priceTier: 'entry',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '공식몰 10포 22,000원 (개당 2,200원)',
-      alternatives: ['yohemite-energy-gel', 'kolon-perfect-power-gel', 'sportsix-energy-gel'],
-    },
-
-    features: [
-      '포도당 + 아가베시럽 자연 배합',
-      '레드비트 농축액 2% + 블루베리 주스',
-      'HACCP 인증 국산 제조',
-      '무카페인 (수면 영향 無)',
-      '부드러운 꿀 제형 (물 불필요)',
-    ],
-
-    reviews: [
-      {
-        userType: '성분 관점 — 레드비트 질산염 배합',
-        text: '국산 젤 중 레드비트 농축액 2%가 들어간 점이 차별점입니다. 질산염은 지구력 향상 근거가 비교적 축적된 성분이지만, 통상적인 효과 연구는 레이스 며칠 전부터 일정량을 꾸준히 섭취하는 프로토콜 기준이므로 레이스 중 1~2회 섭취로 같은 효과를 기대하기는 어렵습니다. 기본 스펙은 104kcal·탄수화물 26g에 포도당 기반이라 흡수가 빠르고, 꿀에 가까운 제형이지만 목넘김은 부드러운 편입니다. 개당 약 2,200원으로 수입 젤의 절반 수준입니다.',
-      },
-      {
-        userType: '예상 적합 — 저녁 러닝·카페인 회피',
-        text: '퇴근 후 저녁 러닝처럼 카페인을 피해야 하는 상황에 맞는 제품입니다. 주요 수입 브랜드(GU·SiS)는 카페인이 든 맛이 많아 선택 시 성분 확인이 필요한 반면, 이 제품은 무카페인이라 취침 전 러닝에서 부담이 없습니다. 아가베시럽 기반이라 혈당이 급격히 올랐다 떨어지는 패턴이 완만한 편입니다. HACCP 인증 국산 제품이라 성분 표기 접근성도 좋습니다. 10km 안팎 러닝에서 중간 1포 보충하는 운용에 맞는 용량입니다.',
-      },
-      {
-        userType: '예상 적합 — 하프 거리 보충',
-        text: '5km 간격으로 3포 안팎을 쓰는 하프 거리에 맞는 용량과 제형입니다. 꿀에 가까운 점도지만 물 없이 삼킬 수 있어, 급수대 위치와 보충 타이밍이 어긋날 때 유용합니다. 다만 맛이 블루베리 한 가지뿐이라, 5개 이상 섭취해야 하는 풀코스에서는 맛 피로가 생길 수 있습니다. 같은 가격대에서 맛이 3종 이상인 제품(코오롱·스포식스)이 있으므로, 풀코스가 주력이라면 그쪽이 낫습니다.',
-      },
-    ],
-
-    similarGels: ['yohemite-energy-gel', 'kolon-perfect-power-gel', 'up-energy-gel'],
-
-    purchaseLinks: [
-      {
-        store: '온유어마크 공식몰',
-        url: 'https://www.onyourmarknutri.com/shop/?idx=1',
-        price: 22000,
-        isOfficial: true,
-      },
-      {
-        store: '네이버 스마트스토어',
-        url: 'https://smartstore.naver.com/onyourmarknutri',
-        isOfficial: true,
-      },
-    ],
+  "id": "onyourmark-energy-gel",
+  "slug": "onyourmark-energy-gel",
+  "brand": "온유어마크",
+  "name": "에너지젤",
+  "category": "가성비",
+  "description": "온유어마크 공식 안내는 에너지젤1박스10포·무카페인으로 표시합니다. 현재 맛·포장의 영양표 대조가 더 필요합니다.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/onyourmark/main.webp",
+  "nutritionFacts": {
+    "caffeine": 0
   },
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "unknown",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
+  },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "제품 포장과 공식 안내의 물 동반 섭취 지시를 확인하세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "공식 상품 페이지의 검색 수집 본문에서10포·무카페인을 확인했습니다. 직접 본문 열기는403으로 제한됐습니다.",
+    "기존40g·104kcal·탄수화물26g·나트륨30mg·포도당+아가베 배합은 이번에 원문 영양표를 확인하지 못해 수치에서 제거했습니다."
+  ],
+  "reviews": [],
+  "similarGels": [
+    "yohemite-energy-gel",
+    "kolon-perfect-power-gel",
+    "up-energy-gel"
+  ],
+  "purchaseLinks": [
+    {
+      "store": "온유어마크 공식몰",
+      "url": "https://www.onyourmarknutri.com/shop/?idx=1",
+      "price": 22000,
+      "isOfficial": true
+    },
+    {
+      "store": "네이버 스마트스토어",
+      "url": "https://smartstore.naver.com/onyourmarknutri",
+      "isOfficial": true
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "공식 상품 페이지의 검색 수집 본문에서10포·무카페인을 확인했습니다. 직접 본문 열기는403으로 제한됐습니다.",
+      "기존40g·104kcal·탄수화물26g·나트륨30mg·포도당+아가베 배합은 이번에 원문 영양표를 확인하지 못해 수치에서 제거했습니다.",
+      "가격·배송·재고와 제품 사진의 현재 포장 일치 여부도 별도 확인 대상입니다."
+    ],
+    "sources": [
+      {
+        "title": "온유어마크 공식 상품",
+        "url": "https://www.onyourmarknutri.com/shop/?idx=1",
+        "scope": "공식 페이지 수집 본문10포·무카페인; 직접접근403·영양표 미확인"
+      }
+    ]
+  }
+},
   {
-    id: 'sportsix-energy-gel',
-    slug: 'sportsix-energy-gel',
-    brand: '스포식스',
-    name: '에너지젤',
-    category: '가성비',
-    rating: 4,
-    price: 1619,
-    description: '소비자보호원 조사에서 알려진 성분 우수 에너지젤. 목넘김 부드럽고 가격 착한 신흥 브랜드. 복숭아·청포도·파인애플(프로) 3가지 맛.',
-    tags: ['국산', '가성비', '소비자보호원', '부드러운제형', '신흥브랜드'],
-    image: '/images/gels/sportsix/main.webp',
-
-    nutritionFacts: {
-      calories: 95,
-      totalCarbs: 24,
-      carbSource: '당류가공품',
-      caffeine: 0,
-      sodium: 35,
-      protein: 0.1,
-      servingSize: 35,
-      servingUnit: 'g',
-    },
-
-    carbScience: {
-      dualSource: false,
-      transporterProfile: 'SGLT1 주도',
-      estimatedOxidationRate: '~55-60g/hr',
-      osmolalityType: 'standard',
-      osmolalityBasis: 'estimated',
-      waterRequired: false,
-      scienceVerdict: '단일 소스이지만 목넘김이 좋아 달리면서 섭취 용이. 소비자보호원 성분 조사에서 양호 판정 받은 이력으로 신뢰도 확보.',
-    },
-
-    giTolerance: {
-      overall: 'good',
-      waterPairing: '불필요 (부드러운 제형)',
-      riskFactors: [],
-      communityFeedback: '물 없이 섭취 가능. 무카페인. 1포 35g, 맛 3종(복숭아·청포도·파인애플 프로).',
-      gutTrainingNeeded: false,
-    },
-
-    flavorProfile: {
-      flavors: ['복숭아', '청포도', '파인애플 (프로)'],
-      texture: '부드러운 젤',
-      viscosity: 4,
-      aftertaste: '과일맛 자연스러움. 먹기 편함.',
-      tasteFatigueRisk: '낮음',
-    },
-
-    usageGuide: {
-      bestFor: ['가성비 우선 러너', '입문자', '다양한 스포츠 (축구, 등산, 자전거)'],
-      avoidIf: ['듀얼 소스 필요한 엘리트 러너', '해외 브랜드 선호'],
-      idealDistance: ['10K', '하프마라톤', '훈련용'],
-      intakeStrategy: '운동 전 1포, 이후 30분마다 1포. 물 없이도 OK.',
-    },
-
-    ratings: {
-      energyKick: 6,
-      giComfort: 8,
-      texture: 8,
-      taste: 7,
-      caffeine: 5,
-      electrolytes: 5,
-      portability: 7,
-      value: 9,
-      transparency: 7,
-      overall: 7,
-    },
-
-    priceAnalysis: {
-      msrp: 3000,
-      bulkPrice: 1619,
-      marathonCost: 8095,
-      yangGangComparison: '양갱(800원) 대비 2배. SET 구매 시 개당 1,619원으로 코오롱(1,533원)과 비슷한 가성비. 부드러운 목넘김은 양갱 대비 큰 장점.',
-      valueRating: 8,
-      priceTier: 'budget',
-      priceCheckedAt: '2026-02-01',
-      priceSource: '네이버 브랜드스토어 2box(16포) SET 25,900원 (정가 48,000원)',
-      alternatives: ['kolon-perfect-power-gel', 'yohemite-energy-gel', 'k-yanggang'],
-    },
-
-    features: [
-      '소비자보호원 성분 조사 양호 판정',
-      '목넘김 부드러운 제형 (물 불필요)',
-      '3가지 맛 (복숭아, 청포도, 파인애플 프로)',
-      'SET 구매 시 개당 1,619원 (최저가급)',
-      '플라스크 증정 이벤트 진행',
-    ],
-
-    reviews: [
-      {
-        userType: '비용 관점 — 국산 젤 중 중간 가격대',
-        text: '95kcal·탄수화물 24g·나트륨 35mg으로 성분 자체는 국산 젤의 표준 수준입니다. 세트 구매 시(16포 25,900원) 개당 약 1,619원으로 같은 국산군(코오롱 1,533원)과 비슷한 구간입니다. 제형이 부드러워 달리면서 삼키기 편한 편입니다. 나트륨이 낮으므로 땀 손실이 큰 조건에서는 전해질을 따로 보충해야 합니다.',
-      },
-      {
-        userType: '비교 — 코오롱 대비 맛 다양성',
-        text: '국산 젤 중 맛 선택지가 넓은 쪽입니다. 복숭아·청포도·파인애플 등으로 로테이션이 가능해, 풀코스처럼 5개 이상 연속 섭취할 때 맛 피로를 관리하기 쉽습니다. 풀코스 5개 기준 약 8,095원으로 같은 개수의 프리미엄 수입 젤(SiS 18,500원·Maurten 32,085원)의 절반 이하이고, 양갱(4,000원)보다는 비싸지만 액상이라 씹지 않고 흡수가 빠릅니다. 세트 구매 시 부속품 증정 같은 프로모션이 붙는 경우가 있어 실구매가가 더 내려갈 수 있습니다.',
-      },
-      {
-        userType: '예상 적합 — 30km 이상 장거리 보충',
-        text: '30km 이상 장거리에서 3~4개를 연속 섭취하는 운용에 맞는 제형입니다. 점도가 낮아 물 없이도 삼킬 수 있어 페이스를 유지한 채 보충하기 쉽고, 급수대 간격이 넓은 코스에서 유리합니다. 다만 나트륨이 35mg으로 낮은 편이라, 땀 손실이 큰 여름 대회나 3시간 이상 지속되는 레이스에서는 전해질 타블렛이나 소금 보충을 따로 계획해야 합니다. 위장 부담이 적은 제형을 찾는 경우의 후보군입니다.',
-      },
-    ],
-
-    similarGels: ['kolon-perfect-power-gel', 'yohemite-energy-gel', 'onyourmark-energy-gel'],
-
-    purchaseLinks: [
-      {
-        store: '네이버',
-        url: 'https://naver.me/xnrJdjJo',
-      },
-      {
-        // 뉴케어 스포식스 에너지젤 청포도맛 8p (개당 1,450원). 네이버 SET가 최저지만 쿠팡 병기(2026-09-20).
-        store: '쿠팡',
-        url: 'https://link.coupang.com/a/hb2IBC4jF6',
-      },
-    ],
+  "id": "sportsix-energy-gel",
+  "slug": "sportsix-energy-gel",
+  "brand": "스포식스",
+  "name": "에너지젤",
+  "category": "가성비",
+  "description": "뉴케어 스포식스 기본 에너지젤은45g 제품군입니다. 제조사는 카페인이 포함된다고 안내하므로 무카페인 제품으로 취급하지 마세요.",
+  "tags": [
+    "제품 표시 확인"
+  ],
+  "image": "/images/gels/sportsix/main.webp",
+  "nutritionFacts": {
+    "servingSize": 45,
+    "servingUnit": "g"
   },
+  "carbScience": {
+    "transporterProfile": "정확한 제품의 원료·배합 표시와 연구 조건을 함께 확인하세요.",
+    "estimatedOxidationRate": "이 제품의 독립 실측 산화율 미확인. 섭취량 계산과 체내 산화율은 다릅니다.",
+    "osmolalityType": "unknown",
+    "osmolalityBasis": "unknown",
+    "scienceVerdict": "제조사 표시 성분은 제품 선택의 자료입니다. 위장 안정성·흡수 우월성·근육경련 예방이나 목표 기록을 보장하는 비교 등급으로 쓰지 않습니다."
+  },
+  "giTolerance": {
+    "overall": "unknown",
+    "waterPairing": "카페인 함유·맛·기본형/프로를 확인하고 실제 포장의 섭취 안내를 따르세요.",
+    "riskFactors": [],
+    "communityFeedback": "실제 제품의 맛·변형·용량과 포장 지시를 확인하세요. 삼키기 위한 물과 운동 중 수분 보충 계획은 구분해야 합니다.",
+    "gutTrainingNeeded": true
+  },
+  "flavorProfile": {
+    "flavors": [],
+    "texture": "독립 실사용 평가 미확인",
+    "aftertaste": "독립 실사용 평가 미확인",
+    "tasteFatigueRisk": "미확인"
+  },
+  "usageGuide": {
+    "bestFor": [
+      "사용할 제품의 정확한 변형·1회량 확인",
+      "음료·음식까지 포함한 탄수화물·카페인 합계 확인"
+    ],
+    "avoidIf": [
+      "개인별 섭취 제한·알레르기 성분 확인이 필요한 경우"
+    ],
+    "idealDistance": [],
+    "intakeStrategy": "거리별 고정 개수보다 실제 제품의 탄수화물 g·예상 시간·급수 기회를 함께 계획하세요. 대회에서 사용할 조합은 훈련 중 반응을 확인하세요."
+  },
+  "features": [
+    "공식몰 패키지 안내에서 기본형45g과 별도 프로 제품을 구분했습니다. 기존35g·95kcal·탄수화물24g 표기는 근거를 확인하지 못해 제거했습니다.",
+    "제조사 보도자료는 기본 에너지젤의 카페인 함유를 명시합니다. 정확한 현재 맛별mg은 미확인입니다."
+  ],
+  "reviews": [],
+  "similarGels": [
+    "kolon-perfect-power-gel",
+    "yohemite-energy-gel",
+    "onyourmark-energy-gel"
+  ],
+  "purchaseLinks": [
+    {
+      "store": "네이버",
+      "url": "https://naver.me/xnrJdjJo"
+    },
+    {
+      "store": "쿠팡",
+      "url": "https://link.coupang.com/a/hb2IBC4jF6"
+    }
+  ],
+  "verification": {
+    "checkedAt": "2026-11-10",
+    "scope": "표시·제품 구분의 부분 재확인. 현재 국내 포장·사진·판매 링크와 제품 전체 효과의 검증 완료 표지가 아닙니다.",
+    "notes": [
+      "공식몰 패키지 안내에서 기본형45g과 별도 프로 제품을 구분했습니다. 기존35g·95kcal·탄수화물24g 표기는 근거를 확인하지 못해 제거했습니다.",
+      "제조사 보도자료는 기본 에너지젤의 카페인 함유를 명시합니다. 정확한 현재 맛별mg은 미확인입니다.",
+      "2025년 소비자원 시료는 탄수화물27g·카페인50mg, 판매 상세는30g·45mg으로 달라 현재 포장 대조가 필요합니다. 시험 시료와 현재 모든 제품을 동일하게 취급하지 않습니다."
+    ],
+    "sources": [
+      {
+        "title": "대상웰라이프 공식 제품 안내",
+        "url": "https://www.wellife.co.kr/products/view/G2001003919",
+        "scope": "기본형45g·프로 변형과 구분"
+      },
+      {
+        "title": "대상웰라이프 공식 보도자료",
+        "url": "https://www.daesangwellife.com/kr/media/news/view?idx=61",
+        "scope": "기본 에너지젤 카페인 함유"
+      },
+      {
+        "title": "한국소비자원 2025 시험 시료",
+        "url": "https://ciss.go.kr/DATA/bbs/85/20251120090237541.pdf",
+        "scope": "2025년 시료의 탄수화물27g·카페인50mg; 현재 라벨 인증 아님"
+      }
+    ]
+  }
+},
 ];

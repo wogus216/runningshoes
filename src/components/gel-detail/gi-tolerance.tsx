@@ -49,7 +49,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
           color: 'text-primary',
           bg: 'bg-surface',
           border: 'border-border',
-          label: '보통',
+          label: '미확인',
           emoji: '🤍'
         };
     }
@@ -62,7 +62,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
       <h2 className="font-bold mb-4 md:mb-5 text-primary">위장 안정성</h2>
 
       {/* GI 등급 표시 */}
-      <div className={cn("rounded-[4px] p-5 mb-5 border", level.bg, level.border)}>
+      {gi.overall !== 'unknown' && <div className={cn("rounded-[4px] p-5 mb-5 border", level.bg, level.border)}>
         <div className="flex items-center gap-3 mb-2">
           <span className="text-3xl">{level.emoji}</span>
           <div>
@@ -70,7 +70,9 @@ export function GITolerance({ gel }: GIToleranceProps) {
             <p className={cn("text-lg font-bold", level.color)}>{level.label}</p>
           </div>
         </div>
-      </div>
+      </div>}
+
+      {gi.overall === 'unknown' && <p className="mb-5 text-sm text-secondary">제품별 위장 안정성의 독립 비교평가 미확인. 개인의 섭취 반응은 훈련 중 확인하세요.</p>}
 
       {/* 물 섭취 요구사항 */}
       <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
@@ -78,16 +80,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
           <Droplets className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">물 섭취 요구사항</h3>
         </div>
-        <p className={cn(
-          "text-sm font-medium",
-          gi.waterPairing === '필수' ? 'text-amber-700' :
-          gi.waterPairing === '권장' ? 'text-sky-700' :
-          'text-slate-700'
-        )}>
-          {gi.waterPairing === '필수' ? '⚠️ 반드시 물과 함께 섭취' :
-           gi.waterPairing === '권장' ? '💧 물과 함께 섭취 권장' :
-           '✅ 물 없이도 섭취 가능'}
-        </p>
+        <p className="text-sm text-secondary">{gi.waterPairing}</p>
       </div>
 
       {/* 위험 요소 */}
@@ -113,7 +106,7 @@ export function GITolerance({ gel }: GIToleranceProps) {
         <div className="mb-4 rounded-[4px] border border-sky-200 bg-sky-50 p-4">
           <div className="flex items-center gap-2 mb-2">
             <Trophy className="w-4 h-4 text-sky-700" />
-            <h3 className="text-sm font-bold text-sky-700">장 훈련 필요</h3>
+            <h3 className="text-sm font-bold text-sky-700">훈련 중 반응 확인</h3>
           </div>
           <p className="text-sm text-secondary">
             레이스 전 훈련 중 반복 섭취로 적응이 필요합니다. 처음 사용 시 소량부터 시작하세요.

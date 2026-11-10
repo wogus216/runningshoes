@@ -3,35 +3,35 @@
 // ============================================
 
 export type GelCategory = '프리미엄' | '스테디셀러' | '가성비';
-export type GelType = 'hydrogel' | 'isotonic' | 'standard' | 'natural' | 'solid';
-export type GILevel = 'excellent' | 'good' | 'moderate' | 'poor';
+export type GelType = 'hydrogel' | 'isotonic' | 'standard' | 'natural' | 'solid' | 'unknown';
+export type GILevel = 'excellent' | 'good' | 'moderate' | 'poor' | 'unknown';
 export type OsmolalityBasis = 'measured' | 'estimated' | 'brand_claim' | 'unknown';
 export type GelPriceTier = 'budget' | 'entry' | 'mid' | 'premium' | 'super-premium';
 
 export interface NutritionFacts {
-  calories: number;           // kcal
-  totalCarbs: number;         // g
-  carbSource: string;         // "Maltodextrin+Fructose", "Rice+Honey" 등
+  calories?: number;           // kcal
+  totalCarbs?: number;         // g
+  carbSource?: string;         // "Maltodextrin+Fructose", "Rice+Honey" 등
   glucoseFructoseRatio?: string; // "2:1", "1:0.8" 등
-  caffeine: number;           // mg (0이면 카페인 없음)
-  sodium: number;             // mg per serving
+  caffeine?: number;           // mg (확인된 무카페인만 0; 미확인은 생략)
+  sodium?: number;             // mg per serving
   potassium?: number;         // mg
   magnesium?: number;         // mg
   fiber?: number;             // g
   fat?: number;               // g
   protein?: number;           // g
-  servingSize: number;        // g or ml
-  servingUnit: 'g' | 'ml';
+  servingSize?: number;        // g or ml
+  servingUnit?: 'g' | 'ml';
 }
 
 export interface CarbScience {
-  dualSource: boolean;
+  dualSource?: boolean;
   transporterProfile: string;   // "SGLT1 only", "SGLT1+GLUT5" 등
   estimatedOxidationRate: string; // "~60g/hr", "~90g/hr" 등
   osmolalityType: GelType;
   osmolalityEstimate?: number;  // mOsm/kg
   osmolalityBasis: OsmolalityBasis;
-  waterRequired: boolean;
+  waterRequired?: boolean;
   keyTechnology?: string;       // "Hydrogel (alginate+pectin)" 등
   scienceVerdict: string;       // 한줄 과학적 평가
 }
@@ -48,7 +48,7 @@ export interface GITolerance {
 export interface FlavorProfile {
   flavors: string[];            // ["오렌지", "레몬", "살구"] 등
   texture: string;              // "묽은 리퀴드", "걸쭉한 젤", "고체" 등
-  viscosity: number;            // 1-10 (1=물, 10=양갱)
+  viscosity?: number;            // 1-10 (1=물, 10=양갱)
   aftertaste: string;           // "깔끔", "텁텁함", "달달함 남음" 등
   tasteFatigueRisk: string;     // "낮음", "보통", "높음"
 }
@@ -106,7 +106,7 @@ export interface Gel {
   brand: string;
   name: string;
   category: GelCategory;
-  rating: number;             // 1-5
+  rating?: number;             // 1-5
   image?: string;
   images?: string[];
   price?: number;             // 개당 가격 (원)
@@ -117,6 +117,13 @@ export interface Gel {
 
   // 영양 성분
   nutritionFacts: NutritionFacts;
+
+  verification?: {
+    checkedAt: string;
+    scope: string;
+    notes: string[];
+    sources: { title: string; url: string; scope: string }[];
+  };
 
   // 탄수화물 과학
   carbScience: CarbScience;
@@ -131,10 +138,10 @@ export interface Gel {
   usageGuide: UsageGuide;
 
   // 점수
-  ratings: GelRatings;
+  ratings?: GelRatings;
 
   // 가격 분석
-  priceAnalysis: GelPriceAnalysis;
+  priceAnalysis?: GelPriceAnalysis;
 
   // 리뷰
   reviews: GelReview[];
@@ -170,14 +177,14 @@ export type SimilarGelInfo = {
   slug: string;
   brand: string;
   name: string;
-  rating: number;
+  rating?: number;
   category: GelCategory;
   image?: string;
   price?: number;
   nutritionFacts?: {
-    totalCarbs: number;
-    caffeine: number;
-    calories: number;
+    totalCarbs?: number;
+    caffeine?: number;
+    calories?: number;
   };
   ratings?: {
     overall: number;

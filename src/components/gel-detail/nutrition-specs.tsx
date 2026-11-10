@@ -7,19 +7,21 @@ type NutritionSpecsProps = {
 export function NutritionSpecs({ gel }: NutritionSpecsProps) {
   const nutrition = gel.nutritionFacts;
 
+  const amount = (value: number | undefined, unit: string) => value === undefined ? '미확인' : `${value} ${unit}`;
+
   const specs = [
-    { label: '열량', value: `${nutrition.calories} kcal` },
-    { label: '탄수화물', value: `${nutrition.totalCarbs} g`, highlight: true },
-    { label: '탄수화물 원료', value: nutrition.carbSource, highlight: true },
+    { label: '열량', value: amount(nutrition.calories, 'kcal') },
+    { label: '탄수화물', value: amount(nutrition.totalCarbs, 'g'), highlight: true },
+    { label: '탄수화물 원료', value: nutrition.carbSource ?? '미확인', highlight: true },
     ...(nutrition.glucoseFructoseRatio ? [{ label: '포도당:과당 비율', value: nutrition.glucoseFructoseRatio, highlight: true }] : []),
-    { label: '카페인', value: `${nutrition.caffeine} mg`, highlight: nutrition.caffeine > 0 },
-    { label: '나트륨', value: `${nutrition.sodium} mg` },
+    { label: '카페인', value: amount(nutrition.caffeine, 'mg'), highlight: (nutrition.caffeine ?? 0) > 0 },
+    { label: '나트륨', value: amount(nutrition.sodium, 'mg') },
     ...(nutrition.potassium ? [{ label: '칼륨', value: `${nutrition.potassium} mg` }] : []),
     ...(nutrition.magnesium ? [{ label: '마그네슘', value: `${nutrition.magnesium} mg` }] : []),
     ...(nutrition.fiber ? [{ label: '식이섬유', value: `${nutrition.fiber} g` }] : []),
     ...(nutrition.fat ? [{ label: '지방', value: `${nutrition.fat} g` }] : []),
     ...(nutrition.protein ? [{ label: '단백질', value: `${nutrition.protein} g` }] : []),
-    { label: '1회 제공량', value: `${nutrition.servingSize} ${nutrition.servingUnit}` },
+    { label: '1회 제공량', value: nutrition.servingSize === undefined || !nutrition.servingUnit ? '미확인' : `${nutrition.servingSize} ${nutrition.servingUnit}` },
   ];
 
   return (
@@ -48,7 +50,7 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
         <div className="space-y-2 text-sm text-secondary">
           <p>
             <span className="font-medium text-sky-700">탄수화물:</span>{' '}
-            {nutrition.carbSource}
+            {nutrition.carbSource ?? '미확인'}
           </p>
           {nutrition.glucoseFructoseRatio && (
             <p>
@@ -56,15 +58,15 @@ export function NutritionSpecs({ gel }: NutritionSpecsProps) {
               {nutrition.glucoseFructoseRatio} (포도당:과당)
             </p>
           )}
-          {nutrition.caffeine > 0 && (
+          {(nutrition.caffeine ?? 0) > 0 && (
             <p>
               <span className="font-medium text-amber-700">카페인:</span>{' '}
-              {nutrition.caffeine}mg (커피 약 {Math.round(nutrition.caffeine / 100)}잔)
+              {nutrition.caffeine}mg
             </p>
           )}
           <p>
             <span className="text-primary font-medium">전해질:</span>{' '}
-            나트륨 {nutrition.sodium}mg
+            나트륨 {amount(nutrition.sodium, 'mg')}
             {nutrition.potassium && `, 칼륨 ${nutrition.potassium}mg`}
             {nutrition.magnesium && `, 마그네슘 ${nutrition.magnesium}mg`}
           </p>

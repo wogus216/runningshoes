@@ -121,12 +121,12 @@ export default function GelsPage() {
                   {/* 핵심 스펙 */}
                   <div className="flex flex-wrap gap-1.5 mb-2">
                     <span className="text-xs px-1.5 py-0.5 bg-surface rounded text-secondary">
-                      {gel.nutritionFacts.totalCarbs}g 탄수화물
+                      {gel.nutritionFacts.totalCarbs === undefined ? '탄수화물 미확인' : `${gel.nutritionFacts.totalCarbs}g 탄수화물`}
                     </span>
                     <span className="text-xs px-1.5 py-0.5 bg-surface rounded text-secondary">
-                      {gel.nutritionFacts.calories}kcal
+                      {gel.nutritionFacts.calories === undefined ? '열량 미확인' : `${gel.nutritionFacts.calories}kcal`}
                     </span>
-                    {gel.nutritionFacts.caffeine > 0 && (
+                    {(gel.nutritionFacts.caffeine ?? 0) > 0 && (
                       <span className="text-xs px-1.5 py-0.5 bg-amber-100 dark:bg-amber-900/30 rounded text-amber-700 dark:text-amber-300">
                         카페인 {gel.nutritionFacts.caffeine}mg
                       </span>
@@ -136,12 +136,12 @@ export default function GelsPage() {
                   {/* 가격 & 평점 */}
                   <div className="flex items-center justify-between">
                     <span className="text-sm font-semibold text-primary">
-                      {gel.price?.toLocaleString()}원
+                      {gel.price === undefined ? '현재 가격 미확인' : `${gel.price.toLocaleString()}원`}
                     </span>
-                    <div className="flex items-center gap-1">
+                    {gel.rating !== undefined && <div className="flex items-center gap-1">
                       <span className="text-yellow-500 text-sm">★</span>
                       <span className="text-sm font-medium text-primary">{gel.rating}</span>
-                    </div>
+                    </div>}
                   </div>
                 </Link>
               ))}

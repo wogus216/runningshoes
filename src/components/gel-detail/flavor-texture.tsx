@@ -59,7 +59,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
       </div>
 
       {/* 점도 바 */}
-      <div className="mb-5">
+      {flavor.viscosity !== undefined && <div className="mb-5">
         <div className="flex items-center gap-2 mb-3">
           <Droplet className="w-4 h-4 text-sky-700" />
           <h3 className="text-sm font-bold text-primary">점도</h3>
@@ -78,7 +78,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
           <span>물처럼 묽음</span>
           <span>양갱처럼 진함</span>
         </div>
-      </div>
+      </div>}
 
       {/* 뒷맛 */}
       <div className="mb-4 rounded-[4px] border border-sky-100 bg-white/82 p-4">
@@ -92,7 +92,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
           "rounded-[4px] p-4 border",
           flavor.tasteFatigueRisk === '낮음' ? 'border-sky-200 bg-sky-50' :
           flavor.tasteFatigueRisk === '보통' ? 'border-amber-200 bg-amber-50' :
-          'border-rose-200 bg-rose-50'
+          flavor.tasteFatigueRisk === '높음' ? 'border-rose-200 bg-rose-50' : 'border-border bg-surface'
         )}
       >
         <h3 className="text-sm font-bold text-primary mb-2">맛 피로도</h3>
@@ -100,6 +100,7 @@ export function FlavorTexture({ gel }: FlavorTextureProps) {
           {flavor.tasteFatigueRisk === '낮음' && '✅ 낮음 - 여러 개 섭취해도 거부감 적음'}
           {flavor.tasteFatigueRisk === '보통' && '⚠️ 보통 - 맛 로테이션 권장'}
           {flavor.tasteFatigueRisk === '높음' && '🚨 높음 - 다양한 맛 준비 필수'}
+          {flavor.tasteFatigueRisk === '미확인' && '독립 실사용 평가 미확인'}
         </p>
       </div>
     </div>

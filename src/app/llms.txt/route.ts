@@ -77,7 +77,7 @@ export function GET() {
 - [신발 추천](${SITE_URL}/recommend): 경험·주간 거리·발 아치·발 너비·부상 이력·예산 기반 매칭 알고리즘
 - [신발 비교](${SITE_URL}/compare): 최대 3족 동시 비교, 스펙·생체역학·가성비 매트릭스
 - [한국 마라톤 일정](${SITE_URL}/marathon): ${events.length}개 대회 (${monthList}월), 접수일/장소/거리/난이도
-- [에너지 젤 가이드](${SITE_URL}/gels): ${gels.length}종 (Maurten·SiS·GU·Honey Stinger 등)
+- [에너지 젤 가이드](${SITE_URL}/gels): ${gels.length}종 (Maurten·SiS·GU·마그온 등)
 - [브랜드별 기술](${SITE_URL}/brands): ${brands.length}개 브랜드의 미드솔 폼·플레이트·아웃솔 기술
 
 ## 신발 데이터 (${shoes.length}종)
