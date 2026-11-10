@@ -4060,175 +4060,47 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-songdo-lee-bongju-marathon',
-    slug: '2026-songdo-lee-bongju-marathon',
-    title: '제1회 송도 이봉주 마라톤 D-3 | 5/15 마감, 6/28 인천 송도 10K·5K — 한국 마라톤 레전드 이름 단 첫 대회',
-    description: '한국 마라톤 최고의 레전드 이봉주 선수의 이름을 단 첫 마라톤이 2026년 6월 28일(일) 인천대학교 송도캠퍼스에서 열립니다. 10km·5km, 각 50,000원, 정원 10,000명 선착순. 접수가 5월 15일까지로 D-3 — 첫 회 대회 정보·코스·신청 전략·신발 추천까지.',
-    thumbnail: '/images/blog/2026-songdo-lee-bongju-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-12',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['송도 이봉주 마라톤', '이봉주', '인천 마라톤', '송도', '6월 마라톤', '대회 일정', '10K', '5K'],
-    event: {
-      name: '제1회 2026 송도 이봉주 마라톤',
-      startDate: '2026-06-28T08:00:00+09:00',
-      location: {
-        name: '인천대학교 송도캠퍼스',
-        address: '인천광역시 연수구 송도동 인천대학교',
+    id: "2026-songdo-lee-bongju-marathon",
+    slug: "2026-songdo-lee-bongju-marathon",
+    title: "송도 이봉주 마라톤 2026 참가 후: 5km 제한시간 차이·기록·분실물",
+    description: "6월 22일 최종 안내는 5km 제한을 1시간 30분으로 적어 FAQ의 1시간과 다릅니다. 기록 계측과 시상 기준, 이미 지난 분실물 보관 기한을 구분해 정리했습니다.",
+    thumbnail: "/images/blog/verified-2026-songdo-lee-bongju-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-12",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "송도 이봉주 마라톤",
+      "이봉주",
+      "인천 마라톤",
+      "송도",
+      "6월 마라톤",
+      "대회 일정",
+      "10K",
+      "5K"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p>2026 송도 이봉주 마라톤의 6월 28일 인천대학교 송도캠퍼스 일정은 지났다. <a href="https://runsongdo.co.kr/" target="_blank" rel="noopener noreferrer">공식 홈</a>은 10km·5km 각 50,000원과 계획 인원 10,000명을 안내한다. 지금은 참가 신청을 재촉하기보다 기록·물품·당시 규정을 확인할 때다.</p>
+<h2>5km 제한시간은 최종 공지와 FAQ가 다르다</h2><p><a href="https://runsongdo.co.kr/faq.php" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 10km 2시간·5km 1시간으로 적지만, <a href="https://runsongdo.co.kr/notice_view.php?no=5" target="_blank" rel="noopener noreferrer">6월 22일 중요 안내</a>는 10km 2시간·5km 1시간 30분으로 안내한다. 초기 FAQ만으로 5km의 최종 운영을 단정할 수 없다.</p><p>최종 공지는 인천대학교 정문 집결과 물품보관소 06:30~10:30 운영도 안내했다. 개인 기록이나 통제 관련 문의가 남았다면 자신이 받은 최종 문자·배번호와 해당 공지를 함께 대조하자. 지난 운영시간을 현재 이용 가능한 서비스로 소개하지 않는다.</p>
+<h2>계측 기록과 입상 순위는 같은 기준이 아니다</h2><p><a href="https://runsongdo.co.kr/precaution.php" target="_blank" rel="noopener noreferrer">공식 유의사항·시상 안내</a>는 기록을 넷타임, 입상 순위를 건타임으로 구분한다. 칩은 배번호 뒤 일회용으로 반납할 필요가 없다고 명시하며, 배정 그룹보다 앞서 출발하면 실격 처리할 수 있다고 적는다.</p><p>두 종목 모두 기록 안내에 포함된다. 다른 대회의 5km 비계측 규정을 그대로 적용하지 말자. FAQ의 종료 후 24시간 내 기록 전송은 안내된 계획이며, 모든 참가자의 실제 수신 완료를 확인한 것은 아니다.</p>
+<h2>분실물 보관 기한은 7월 28일까지였다</h2><p><a href="https://runsongdo.co.kr/notice_view.php?no=6" target="_blank" rel="noopener noreferrer">6월 29일 분실물 공지</a>는 7월 28일까지 한 달 보관하고, 본인 확인 뒤 착불 택배로 보내는 절차를 안내했다. 이 기한은 이미 지났으므로 지금도 물품을 보관하고 있다고 보장할 수 없다.</p><p>남은 문의는 공지의 사무국 1866-1718에서 현재 상태를 확인할 사항이다. 공개 사진만 보고 본인 물품을 확정하거나 타인의 물품을 수령할 수 있다는 뜻도 아니다.</p>
+<h2>접수·환불 날짜와 다음 회차를 구분</h2><p>홈은 결제 완료순 선착순 모집과 5월 29일 17시 환불 기한, 조기 마감 때 기한 변경 가능성을 적는다. FAQ의 ‘접수 마감일까지’라는 일반 설명과 함께 읽어야 한다. 실제 환급 내역은 개인 결제 건마다 확인해야 한다.</p><p>공식 자료에서 확인하지 못한 5월 15일 확정 마감, 메달의 희소 가치, 시간대별 기온·권장 페이스 수치는 제외했다. 송도라는 지역 이름만으로 평탄도나 PB를 보장할 수는 없다.</p>
+<h2>자주 묻는 질문</h2><h3>5km 제한시간은 1시간인가요?</h3><p>FAQ는 1시간, 6월 22일 중요 안내는 1시간 30분으로 다릅니다. 최종 공지와 개인이 받은 안내를 함께 확인해야 합니다.</p><h3>5km는 기록을 재지 않나요?</h3><p>공식은 두 종목의 기록과 칩을 안내하며 기록은 넷타임, 입상은 건타임으로 구분합니다. 다른 대회의 5km 조건과 섞지 않았습니다.</p><h3>분실물을 지금도 받을 수 있나요?</h3><p>공지는 7월 28일까지 보관한다고 안내했습니다. 기한이 지난 현재의 보관·수령 가능 여부는 사무국 확인 사항입니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "5km 제한시간은 1시간인가요?",
+        "answer": "FAQ는 1시간, 6월 22일 중요 안내는 1시간 30분으로 다릅니다. 최종 공지와 개인이 받은 안내를 함께 확인해야 합니다."
       },
-      organizer: '인천광역시육상연맹, 이상커뮤니케이션즈',
-      url: 'https://runsongdo.co.kr',
-      offers: [
-        { name: '10km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
-        { name: '5km', priceKrw: 50000, availabilityEnds: '2026-05-15', url: 'https://runsongdo.co.kr/entryperson.php' },
-      ],
-    },
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>한국 마라톤 전설 이봉주의 이름을 단 첫 대회</strong> — 2026년 6월 28일(일) 인천대학교 송도캠퍼스 08:00 출발</li>
-    <li>10km·5km <strong>각 50,000원</strong>, 정원 10,000명 선착순, 접수 4/20~<strong>5/15(금)</strong> — D-3</li>
-    <li>송도 평지 코스 + 6월 말 한여름 직전 새벽 출발 — 첫 회 대회라 정보가 적지만 이봉주 IP·기념품·만 명 규모로 빠른 매진 우려</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">D-3 — 5월 15일(금) 접수 마감</p>
-    <p>첫 회 + 한국 마라톤 전설 이름 + 만 명 정원의 조합은 6월 대회 중 가장 매진 압력이 큰 라인업입니다. 결정했다면 오늘 안에 <a href="https://runsongdo.co.kr/entryperson.php" target="_blank" rel="noopener">runsongdo.co.kr</a>에서 결제까지 끝내세요. 환불 기한은 5월 29일(금) 17시까지로 비교적 여유 있음.</p>
-  </div>
-</div>
-
-<h2>왜 이번 대회가 특별한가</h2>
-
-<p>이봉주 선수는 1996 애틀랜타 올림픽 마라톤 은메달, 2001 보스턴 마라톤 우승, 한국 최고 기록(2:07:20) 보유자입니다. 한국 러닝의 황금기를 이끈 인물이자 대중적 인지도가 가장 높은 마라토너죠. 그의 이름을 단 마라톤이 <strong>정식 대회로 출범하는 것은 이번이 처음</strong>입니다.</p>
-
-<p>첫 회 대회는 통상 두 가지 성격을 띱니다:</p>
-
-<ul>
-  <li><strong>① 운영 미숙 리스크</strong> — 셔틀버스·물품보관·식수공급·완주 보급 등 처음이라 시행착오 가능</li>
-  <li><strong>② 가치 상승 잠재력</strong> — 1회 완주 메달은 향후 시리즈가 성장할수록 희소성 가치 발생. 1회 참가는 "오리지널 멤버"라는 상징성</li>
-</ul>
-
-<p>이봉주 마라톤은 인천광역시육상연맹이 공동 주최하므로 운영 측면에서 어느 정도 신뢰 가능하지만, 첫 회는 항상 보수적으로 접근하는 게 안전합니다.</p>
-
-<h2>한 눈에 보는 대회 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회명</strong></td><td>제1회 2026 송도 이봉주 마라톤</td></tr>
-    <tr><td><strong>대회일</strong></td><td>2026년 6월 28일(일) 08:00 출발 (07:00 집결)</td></tr>
-    <tr><td><strong>장소</strong></td><td>인천대학교 송도캠퍼스</td></tr>
-    <tr><td><strong>종목</strong></td><td>10km / 5km</td></tr>
-    <tr><td><strong>참가비</strong></td><td>10km <strong>50,000원</strong> / 5km <strong>50,000원</strong> (동일)</td></tr>
-    <tr><td><strong>정원</strong></td><td>10,000명 선착순</td></tr>
-    <tr><td><strong>접수 기간</strong></td><td>2026년 4월 20일 ~ <strong>5월 15일(금)</strong></td></tr>
-    <tr><td><strong>기념품</strong></td><td>기념품, 배번호, 완주메달, 온라인 기록증, 기록칩</td></tr>
-    <tr><td><strong>환불 기한</strong></td><td>5월 29일(금) 17:00까지</td></tr>
-    <tr><td><strong>주최</strong></td><td>인천광역시육상연맹, 이상커뮤니케이션즈</td></tr>
-    <tr><td><strong>접수 사이트</strong></td><td><a href="https://runsongdo.co.kr" target="_blank" rel="noopener">runsongdo.co.kr</a></td></tr>
-    <tr><td><strong>문의</strong></td><td>1866-1718</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">10km와 5km 참가비가 같은 이유</p>
-    <p>일반적으로 10K가 5K보다 5,000~10,000원 비싼데, 이번 대회는 둘 다 50,000원입니다. 첫 회 + 만 명 규모 + 동일 보급·기념품 구성을 노린 가격 책정으로 보입니다. <strong>5km 러너 입장에서는 다소 비싸게 느낄 수 있지만, 10km 러너 입장에서는 합리적</strong>인 가격입니다.</p>
-  </div>
-</div>
-
-<h2>송도 코스 — 평지 + 6월 말 한여름 직전</h2>
-
-<p>인천 송도는 매립 신도시 특성상 <strong>거의 100% 평지</strong>입니다. 송도캠퍼스를 중심으로 센트럴파크·송도해변·국제업무지구·인천대교 방면 등 어디로 코스를 그려도 평탄. PB 친화적 환경입니다.</p>
-
-<p>다만 6월 28일은 <strong>여름의 가장자리</strong>입니다:</p>
-
-<ul>
-  <li><strong>인천 6월 말 평균:</strong> 오전 8시 기온 22~24℃, 습도 75~85%, 일출 5:13</li>
-  <li><strong>바닷가·바람 변수:</strong> 송도는 해안가 매립지라 바람이 강한 날 영향이 있을 수 있음. 출발 시각 8시면 통상 미풍 정도</li>
-  <li><strong>자외선:</strong> 8시 출발이면 이미 자외선 지수 3~5 (보통~높음). 모자·선글라스 권장</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">☀️</span>
-  <div class="callout-body">
-    <p class="callout-title">6월 말 페이스 컨트롤</p>
-    <p>봄·가을 페이스에서 km당 10~15초 늦추는 게 안전합니다. 평소 10K 50분이면 51~52분 목표가 합리적. PB 도전은 부담스럽다면 첫 회 대회 분위기 체험 + 완주 메달 수집에 집중하는 게 현명합니다.</p>
-  </div>
-</div>
-
-<h2>코스별 본인 매칭</h2>
-
-<table>
-  <thead>
-    <tr><th>이런 러너라면</th><th>추천 종목</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>러닝 입문 1년 차 / 5K 완주 경험</strong></td>
-      <td>5km</td>
-      <td>여름 첫 대회로 부담 최소, 완주 메달 + 첫 회 IP 가치</td>
-    </tr>
-    <tr>
-      <td><strong>10K 완주 경험, 하프 도전 전</strong></td>
-      <td>10km</td>
-      <td>평지 + 같은 50K 참가비 → 가성비 우위</td>
-    </tr>
-    <tr>
-      <td><strong>10K PB 도전 (50분 이하)</strong></td>
-      <td>10km</td>
-      <td>송도 평지 + 6월 말 새벽 → 시즌 첫 PB 도전 가능 환경</td>
-    </tr>
-    <tr>
-      <td><strong>가을 풀코스 빌드업 중</strong></td>
-      <td>10km</td>
-      <td>여름 페이스 적응 + 빠른 페이스 점검</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>신발 선택 — 송도 평지 6월 새벽</h2>
-
-<p>6월 말 28℃ 가까운 더위 + 평지 도심 코스 조건에 맞는 후보:</p>
-
-<ul>
-  <li><strong>5km / 10K 가벼운 페이스 — 데일리 트레이너:</strong> <a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>·<a href="/shoes/adidas-adizero-evo-sl">아디다스 에보 SL</a>·<a href="/shoes/new-balance-1080-v15">NB 1080 v15</a></li>
-  <li><strong>10K PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a></li>
-  <li><strong>5km 첫 대회 — 안정감 우선:</strong> <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>·<a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a></li>
-</ul>
-
-<p>발볼 넓으면 와이드 옵션 우선, 여름 대회는 통기성 좋은 메쉬 어퍼 필수. 발에 맞는 신발 후보가 막막하다면 <a href="/recommend">1분 러닝화 추천</a> 또는 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인을 위한 러닝화 추천 TOP 10</a> 참고.</p>
-
-<h2>D-3 액션 플랜</h2>
-
-<ol>
-  <li><strong>오늘~내일 (5/12~13):</strong> 종목 결정(5K vs 10K) → 참가비 50K 결제 → 본인 정보 확인</li>
-  <li><strong>5/15(금):</strong> 최종 마감 — 결정 못 했으면 미루지 말기 (만 명 매진 우려)</li>
-  <li><strong>5/29(금) 17:00:</strong> 환불·정보변경 마지막 기한</li>
-  <li><strong>6월 1~3주차:</strong> 여름 페이스 적응 훈련 (km당 +10초 페이스로 30~50분 베이스런 주 3회)</li>
-  <li><strong>6/28(일) 07:00:</strong> 송도캠퍼스 집결, 08:00 출발</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">같은 날 6/28 다른 대회와 비교</p>
-    <p>같은 6월 28일(일)에 <strong>2026 서울런</strong>도 열립니다(서울·하프/10K/5K, 접수 6/17 마감). 인천 거주·송도 접근성 좋음·이봉주 IP 선호 → 송도 / 서울 거주·하프 옵션 필요 → 서울런. 한 쪽만 선택 가능합니다.</p>
-  </div>
-</div>
-
-<p>여름~가을 마라톤 큐레이션은 <a href="/blog/2026-pohang-iron-run">2026 포항 아이언런 D-19</a>(7/4) → <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 풀코스 접수 가이드</a>(6/24 접수) → <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a> 순으로 빌드업하는 게 자연스럽습니다.</p>
-
-<p><small>출처: runsongdo.co.kr 공식 / runningwikii / 작성일 2026년 5월 12일 기준 / 코스·페이스메이커·이봉주 선수 직접 참여 여부는 주최측 후속 공지 시 본 글 업데이트 예정.</small></p>
-`,
+      {
+        "question": "5km는 기록을 재지 않나요?",
+        "answer": "공식은 두 종목의 기록과 칩을 안내하며 기록은 넷타임, 입상은 건타임으로 구분합니다. 다른 대회의 5km 조건과 섞지 않았습니다."
+      },
+      {
+        "question": "분실물을 지금도 받을 수 있나요?",
+        "answer": "공지는 7월 28일까지 보관한다고 안내했습니다. 기한이 지난 현재의 보관·수령 가능 여부는 사무국 확인 사항입니다."
+      }
+    ],
   },
   {
     id: "2026-nike-alphafly-4-prototype",
@@ -4379,199 +4251,46 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-pohang-iron-run',
-    slug: '2026-pohang-iron-run',
-    title: '2026 포항 아이언런 D-19 | 7/4 영일대 — 3.8·7.87·15.38km 철의 도시 컨셉, 5/31 마감',
-    description: '포스코노동조합이 주최하는 2026 포항 아이언런(IRON RUN)이 7월 4일(토) 영일대해수욕장 장미광장에서 열립니다. 거리 의미가 독특 — 3.8km(포스코 노조 38주년), 7.87km(철의 비중 7.87g/㎤), 15.38km(철의 녹는점 1,538℃). 정원 5,000명, 5월 31일까지 접수.',
-    thumbnail: '/images/blog/2026-pohang-iron-run.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-12',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['포항 아이언런', 'IRON RUN', '포항 마라톤', '영일대', '포스코', '여름 러닝 대회', '대회 일정'],
-    event: {
-      name: '2026 포항 아이언런 (IRON RUN)',
-      startDate: '2026-07-04T08:00:00+09:00',
-      location: {
-        name: '영일대해수욕장 장미광장',
-        address: '경상북도 포항시 북구 영일대해수욕장 장미광장',
+    id: "2026-pohang-iron-run",
+    slug: "2026-pohang-iron-run",
+    title: "포항 아이언런 2026 참가 후: 3.8·7.87·15.38km 기록과 현장 사진",
+    description: "아이언런은 일반적인 5K·10K·하프가 아니라 세 가지 별도 거리입니다. 공식 기록 조회와 현장 사진 안내, 참가비 납부 확인증을 구분하고 과거 접수를 현재 모집으로 안내하지 않습니다.",
+    thumbnail: "/images/blog/verified-2026-pohang-iron-run-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-12",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "포항 아이언런",
+      "IRON RUN",
+      "포항 마라톤",
+      "영일대",
+      "포스코",
+      "여름 러닝 대회",
+      "대회 일정"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p><a href="https://ironrun.kr/ko/" target="_blank" rel="noopener noreferrer">공식 홈</a>은 7월 4일 영일대해수욕장 장미광장 일정의 종료를 표시한다. 사진과 기록을 찾을 때 가장 먼저 확인할 것은 자신이 뛴 거리다. 3.8km·7.87km·15.38km를 5K·10K·하프로 바꾸어 비교하면 안 된다.</p>
+<h2>세 거리에는 서로 다른 상징이 있다</h2><p><a href="https://ironrun.kr/ko/sub1_1.html" target="_blank" rel="noopener noreferrer">공식 요강</a>은 3.8km를 포스코노동조합 창립 38주년, 7.87km를 철의 비중, 15.38km를 철의 녹는점 1,538℃와 연결해 설명한다. 거리는 행사에서 정한 종목이며, 철의 물성이 러닝 효과를 입증하는 설명은 아니다.</p><p>당시 참가비는 순서대로 25,000원·35,000원·40,000원, 모집 계획은 총 5,000명이었다. 계획 인원과 실제 완주자를 구분하며, 어느 종목이 가장 먼저 매진됐는지는 이번에 확인하지 않았다.</p>
+<h2>공식 기록과 GPS는 같은 자료가 아니다</h2><p><a href="https://ironrun.kr/bbs/board.php?bo_table=notice&amp;wr_id=14" target="_blank" rel="noopener noreferrer">공식 참가자 기록 조회 공지</a>는 월드칩 기록 확인 사이트로 연결하고, 기록 문의는 해당 사이트 하단 INFO의 카카오 채널 경로를 안내한다. 공지 목록의 날짜는 7월 1일로 행사 전이지만 조회 경로 안내 자체는 현재 공개돼 있다.</p><p>본인의 연도·행사·종목·배번호를 고른 뒤 결과를 확인하자. 이 글에서 개인 정보를 넣어 조회하거나 기록 정정 문의를 보낸 것은 아니다. 비표준 거리를 10km 공인 기록처럼 취급하지 않는다.</p>
+<h2>현장 사진은 별도 다운로드 공지에서</h2><p><a href="https://ironrun.kr/bbs/board.php?bo_table=notice&amp;wr_id=17" target="_blank" rel="noopener noreferrer">7월 8일 현장 사진 다운로드 공지</a>에는 사진 다운로드로 가는 버튼이 있다. 기록 조회 메뉴와 사진 메뉴는 별도이므로 한쪽에서 결과가 안 보인다고 다른 쪽도 없다고 판단하지 말자.</p><p>버튼이 있다는 사실만으로 모든 참가자의 사진이 존재하거나 영구 보관·상업적 이용이 허용된다고 보장하지 않는다. 실제 사진 목록과 사용 조건은 연결된 공유처에서 확인할 사항이다.</p>
+<h2>납부 확인증과 다른 영수증을 구분</h2><p>공식 요강은 카드 결제와 현금영수증 발급은 불가하며 지출 증빙용 참가비 납부 확인증을 발급한다고 설명한다. 서로 다른 서류를 같은 것으로 안내하지 않았다. 개인의 실제 발급 여부는 공식 사무국 070-7718-7577에서 확인할 사항이다.</p><p>접수는 4월 1일 10시~5월 31일 18시 예정이었다. 신청 뒤 5일 이내 미입금 때 취소될 수 있다는 조건도 과거 운영 내용이다. 장소만으로 큰 오르막이 없다고 단정하거나 모든 러너에게 같은 여름 페이스·급수 간격을 제시하지 않았다.</p>
+<h2>자주 묻는 질문</h2><h3>일반적인 하프·10km·5km 대회인가요?</h3><p>공식 종목은 3.8km·7.87km·15.38km입니다. 일반 거리와 바꾸어 표시하거나 기록을 같은 기준으로 비교하면 안 됩니다.</p><h3>기록과 사진은 어디서 찾나요?</h3><p>공식 기록 공지는 월드칩으로, 7월 8일 사진 공지는 별도 다운로드 경로로 연결합니다. 본인 기록·사진 존재 여부는 각각 확인해야 합니다.</p><h3>참가비 납부 확인증이 현금영수증인가요?</h3><p>공식 요강은 현금영수증 불가와 지출 증빙용 납부 확인증 발급을 구분합니다. 이 글은 개인의 발급이나 세제 효과까지 확인하지 않았습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "일반적인 하프·10km·5km 대회인가요?",
+        "answer": "공식 종목은 3.8km·7.87km·15.38km입니다. 일반 거리와 바꾸어 표시하거나 기록을 같은 기준으로 비교하면 안 됩니다."
       },
-      organizer: '포스코노동조합',
-      url: 'https://ironrun.kr',
-      offers: [
-        { name: '1코스 3.8km (포스코 노조 38주년)', priceKrw: 25000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
-        { name: '2코스 7.87km (철의 비중)', priceKrw: 35000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
-        { name: '3코스 15.38km (철의 녹는점)', priceKrw: 40000, availabilityEnds: '2026-05-31', url: 'https://ironrun.kr' },
-      ],
-    },
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026 포항 아이언런 — <strong>2026년 7월 4일(토) 영일대해수욕장 장미광장 출발</strong>. 정원 5,000명, 4/1~5/31 선착순 접수</li>
-    <li>거리 셋 모두 "철의 도시" 컨셉 — <strong>3.8km(포스코 노조 38주년) / 7.87km(철의 비중 7.87g/㎤) / 15.38km(철의 녹는점 1,538℃ ÷ 100)</strong></li>
-    <li>참가비 25K/35K/40K, 메달+티셔츠+배번+기록증+간식. 7월 초 여름 포항 바닷가 새벽 출발(08:00~08:20)</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⏰</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 D-19 — 5월 31일(일) 마감</p>
-    <p>4월 1일부터 5천 명 선착순. 5월 둘째 주 시점에는 일부 종목 자리가 남아 있지만, 작년 기준 <strong>15.38km 3코스가 가장 먼저 마감</strong>됐습니다. 단체 신청(2인 이상)도 가능하니 크루 단위라면 5월 안에 결정하세요.</p>
-  </div>
-</div>
-
-<h2>왜 이번 대회가 흥미로운가</h2>
-
-<p>국내 마라톤 대회 중 거리에 산업·과학적 의미를 부여한 사례는 손에 꼽힙니다. 포항 아이언런의 세 거리는 단순한 라운드 넘버가 아니라 <strong>"철의 도시 포항"이라는 정체성을 거리 자체로 표현</strong>한 케이스입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>코스</th><th>거리</th><th>의미</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>1코스</strong></td>
-      <td>3.8km</td>
-      <td><strong>포스코노동조합 창립 38주년</strong> — 주최 단체의 역사를 거리로</td>
-    </tr>
-    <tr>
-      <td><strong>2코스</strong></td>
-      <td>7.87km</td>
-      <td><strong>철의 비중 7.87 g/㎤</strong> — 물 1g/㎤ 대비 7.87배 무거운 철의 밀도</td>
-    </tr>
-    <tr>
-      <td><strong>3코스</strong></td>
-      <td>15.38km</td>
-      <td><strong>철의 녹는점 1,538℃</strong> ÷ 100 — 액상 철이 시작되는 온도</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>러너 입장에서 의미가 큰 건 <strong>15.38km</strong>입니다. 국내 일반 마라톤이 5K·10K·하프(21.1km)·풀(42.2km)에 거리가 고정돼 있는데, <strong>10K~하프 사이의 중장거리 옵션</strong>이 거의 없습니다. 15.38km는 하프 도전을 준비하는 러너의 훈련 거리로도 딱 맞고, 10K를 졸업한 러너가 다음 단계로 시도하기에 부담이 적은 거리입니다.</p>
-
-<h2>대회 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">7/4 (토)</span>
-    <span class="stat-sub">08:00 첫 출발</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 마감</span>
-    <span class="stat-value">5/31 (일)</span>
-    <span class="stat-sub">선착순 5,000명</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">장소</span>
-    <span class="stat-value">영일대</span>
-    <span class="stat-sub">장미광장</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">주최</span>
-    <span class="stat-value">포스코</span>
-    <span class="stat-sub">노동조합</span>
-  </div>
-</div>
-
-<h2>종목별 상세</h2>
-
-<table>
-  <thead>
-    <tr><th>코스</th><th>거리</th><th>참가비</th><th>정원</th><th>출발</th><th>제한 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>3코스</strong></td><td>15.38km</td><td>40,000원</td><td>2,500명</td><td>08:00</td><td>150분</td></tr>
-    <tr><td><strong>2코스</strong></td><td>7.87km</td><td>35,000원</td><td>1,500명</td><td>08:10</td><td>100분</td></tr>
-    <tr><td><strong>1코스</strong></td><td>3.8km</td><td>25,000원</td><td>1,000명</td><td>08:20</td><td>60분</td></tr>
-  </tbody>
-</table>
-
-<h2>코스·날씨 — 7월 초 포항 바닷가</h2>
-
-<p>출발·도착 모두 영일대해수욕장 장미광장. 코스는 영일대 해변로 일대를 도는 평지 위주로 알려져 있고, 큰 오르막은 없습니다. 7월 초 포항 평균:</p>
-
-<ul>
-  <li><strong>오전 8시 기온:</strong> 평균 22~25℃, 습도 75~85%</li>
-  <li><strong>일출:</strong> 약 5:15 — 출발 시간에는 이미 해가 떠 있어 자외선 차단 필수</li>
-  <li><strong>바람:</strong> 해변 코스 특성상 바다 쪽 풍속이 변수. 평소 3~5m/s 수준이라 큰 부담은 없음</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">☀️</span>
-  <div class="callout-body">
-    <p class="callout-title">여름 대회 — 페이스 -20초 / km 보수적으로</p>
-    <p>봄가을 대회 기준 자기 페이스에서 km당 15~20초 늦추는 것이 안전합니다. 15.38km 코스라면 평소 하프 페이스보다 1~2분 정도 늦은 페이스로 잡고, 1km마다 물·전해질 보충 권장. 출발 직전 햇볕 노출 최소화(모자·선글라스·자외선 차단제) 필수.</p>
-  </div>
-</div>
-
-<h2>한국 러너 관점 — 어느 코스를 고를까</h2>
-
-<table>
-  <thead>
-    <tr><th>이런 러너라면</th><th>추천 코스</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>러닝 입문 1년 차 / 5K~10K 완주 경험</strong></td>
-      <td>1코스 3.8km</td>
-      <td>여름 첫 대회로 부담 최소. 완주 메달 받는 경험에 집중</td>
-    </tr>
-    <tr>
-      <td><strong>10K 완주, 하프 도전 전</strong></td>
-      <td>2코스 7.87km</td>
-      <td>거리 적응 + 여름 페이스 컨트롤 훈련</td>
-    </tr>
-    <tr>
-      <td><strong>하프 완주 경험 있음, 가을 마라톤 준비 중</strong></td>
-      <td>3코스 15.38km</td>
-      <td>장거리 페이스 유지 + 여름 더위 적응 훈련. 가을 풀 시즌 빌드업 시점에 딱</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2>신발 선택 — 여름 평지 코스 기준</h2>
-
-<p>7월 초 28℃ 가까운 더위 + 평지 해변 코스라는 조건에 맞는 신발 후보:</p>
-
-<ul>
-  <li><strong>1코스 3.8km / 2코스 7.87km — 경량 데일리:</strong> <a href="/shoes/adidas-adizero-evo-sl">아디다스 아디제로 에보 SL</a>(223g)·<a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>·<a href="/shoes/new-balance-rebel-v5">NB 레벨 v5</a></li>
-  <li><strong>3코스 15.38km / PB 도전 — 슈퍼 트레이너 또는 카본화:</strong> <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>·<a href="/shoes/asics-magic-speed-4">매직 스피드 4</a>·<a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a></li>
-  <li><strong>3코스 15.38km / 안전 완주 — 슈퍼 트레이너 또는 쿠션화:</strong> <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(255g)·<a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a>·<a href="/shoes/asics-gel-nimbus-28">님버스 28</a></li>
-</ul>
-
-<p>발볼이 넓으면 와이드 옵션을 우선하고, 여름 대회는 통기성 좋은 메쉬 어퍼가 필수입니다. 본인 발에 맞는 신발이 막막하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
-
-<h2>기념품·접수 방법</h2>
-
-<ul>
-  <li><strong>기념품:</strong> 메달, 기념 티셔츠, 배번표, 기록증, 음료·간식</li>
-  <li><strong>접수:</strong> 공식 홈페이지 <a href="https://ironrun.kr" target="_blank" rel="noopener">ironrun.kr</a></li>
-  <li><strong>접수 방식:</strong> 개인 신청 / 단체 신청(2인 이상)</li>
-  <li><strong>문의:</strong> 070-7718-7577 (평일 11:00~17:00)</li>
-</ul>
-
-<h2>요약 — D-19 액션 플랜</h2>
-
-<ol>
-  <li><strong>이번 주:</strong> 본인 페이스·하프 도전 시점·여름 더위 적응 수준 고려해서 코스 결정</li>
-  <li><strong>5월 안:</strong> ironrun.kr에서 접수 — 15.38km 3코스 우선 마감 우려</li>
-  <li><strong>6월:</strong> 여름 페이스 훈련 시작 — 평소 페이스에서 20초 늦춰 30~60분 베이스런 주 3회</li>
-  <li><strong>대회 1주 전:</strong> 포항 1박 또는 새벽 출발 교통편 확정, 배번·물품 보관 일정 체크</li>
-</ol>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">여름 대회와 가을 마라톤 빌드업</p>
-    <p>7월 포항 아이언런이 7~9월 여름 훈련의 좋은 중간 점검 대회가 됩니다. 가을 풀코스 도전이 목표라면 <a href="/blog/2026-chuncheon-marathon-registration-guide">2026 춘천마라톤 접수 가이드</a>, 동마 시리즈와 묶고 싶다면 <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회 일정 총정리</a>도 참고.</p>
-  </div>
-</div>
-
-<p><small>출처: ironrun.kr 공식 / @runners_now 인스타그램 / runningwikii / 작성일 2026년 5월 12일 기준 / 정원·참가비·코스는 주최측 공지에 따라 변동될 수 있습니다.</small></p>
-`,
+      {
+        "question": "기록과 사진은 어디서 찾나요?",
+        "answer": "공식 기록 공지는 월드칩으로, 7월 8일 사진 공지는 별도 다운로드 경로로 연결합니다. 본인 기록·사진 존재 여부는 각각 확인해야 합니다."
+      },
+      {
+        "question": "참가비 납부 확인증이 현금영수증인가요?",
+        "answer": "공식 요강은 현금영수증 불가와 지출 증빙용 납부 확인증 발급을 구분합니다. 이 글은 개인의 발급이나 세제 효과까지 확인하지 않았습니다."
+      }
+    ],
   },
   {
     id: "2026-asics-kayano-33-launch",
@@ -5052,618 +4771,90 @@ export const posts_2026_05: BlogPost[] = [
     updatedAt: "2026-11-10",
   },
   {
-    id: '2026-daecheongho-marathon',
-    slug: '2026-daecheongho-marathon',
-    title: '2026 청원생명쌀 대청호마라톤 10km·5km D-4 | 풀·하프 매진, 기안84의 호수 코스 마지막 슬롯',
-    description: '제24회 청원생명쌀 대청호마라톤(10/17 토) 풀·하프 이미 매진. 10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시 순차 오픈됩니다. 대청호 호수 둘레 + 청남대 통과 코스, 누적 고도 485m 중상급 난이도. 기안84 효과로 작년 6,500명 역대 최대, 청원생명쌀 4kg 기념품 — 2026 가을 첫 메달의 정답.',
-    thumbnail: '/images/blog/2026-daecheongho-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-07',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['대청호마라톤', '청원생명쌀 대청호', '청주 마라톤', '충북 마라톤', '기안84 마라톤', '가을 마라톤', '호수 마라톤', '대회 일정'],
-    event: {
-      name: '제24회 청원생명쌀 대청호마라톤대회',
-      startDate: '2026-10-17T08:40:00+09:00',
-      location: {
-        name: '문의체육공원 (대청호반 일원)',
-        address: '충북 청주시 상당구 문의면 미천리 138-1',
-      },
-      organizer: '청주시체육회 (주관: MBC충북·K-water 대청지사)',
-      url: 'https://race.cjsports.or.kr/',
-      offers: [
-        { name: '단축코스 (10km, 5/11 10:00 오픈)', priceKrw: 45000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
-        { name: '건강코스 (5km, 5/14 10:00 오픈)', priceKrw: 25000, availabilityEnds: '2026-06-12', url: 'https://race.cjsports.or.kr/' },
-      ],
-    },
+    id: "2026-daecheongho-marathon",
+    slug: "2026-daecheongho-marathon",
+    title: "대청호마라톤 2026 참가 후: 임시 기록·종목별 출발·공사 구간 공지",
+    description: "10월 20일 공지는 임시 기록과 이의신청 뒤 공식 갱신 계획을 구분했습니다. 요강의 종목별 출발, 5km 기록 미제공과 대회 전 공사·유턴 공지를 함께 확인했습니다.",
+    thumbnail: "/images/blog/verified-2026-daecheongho-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-07",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "대청호마라톤",
+      "청원생명쌀 대청호",
+      "청주 마라톤",
+      "충북 마라톤",
+      "기안84 마라톤",
+      "가을 마라톤",
+      "호수 마라톤",
+      "대회 일정"
+    ],
     faqs: [
       {
-        question: '풀코스랑 하프는 정말 매진된 건가요?',
-        answer: '5월 4일에 풀코스(800명), 5월 7일에 하프코스(1,400명) 접수가 순차 오픈됐고 인스타 @runninglife_korea 게시물 기준 "전코스 매진"으로 안내됐습니다. 정확한 잔여 여부는 race.cjsports.or.kr에서 확인하거나 대회 사무국(043-279-8029)에 문의하세요. 매진이 확정이라면 10km(5/11 오픈)·5km(5/14 오픈)가 2026 가을 대청호 메달의 마지막 기회입니다.',
+        "question": "10월 20일 공개 기록이 최종 기록인가요?",
+        "answer": "그 공지는 임시 기록이라고 명시하고 이의신청 종료 후 공식 갱신 계획을 안내했습니다. 현재 본인 조회 화면의 기록 상태는 별도 확인해야 합니다."
       },
       {
-        question: '10km·5km도 어렵다는 게 사실인가요?',
-        answer: '대청호마라톤 풀코스는 누적 획득고도 485m로 전국 마라톤 중 두 번째로 어려운 수준이지만, 10km·5km는 코스 일부만 사용하므로 누적 고도가 훨씬 낮습니다. 다만 호수 둘레 도로의 특성상 완전 평지는 아니며 짧은 오르막이 포함됩니다. 5km는 입문자도 무난, 10km는 평지 10km PB 대비 5-10분 정도 늦어진다고 보면 됩니다.',
+        "question": "모든 종목이 08시에 출발했나요?",
+        "answer": "요강 상세 시간표는 풀 08시 40분·하프 08시 50분·10km와 5km 09시 출발로 구분합니다. 상단 행사 일시와 다릅니다."
       },
       {
-        question: '기안84가 정말 참가하나요?',
-        answer: 'MBC \'나 혼자 산다\'에서 2023년 대청호마라톤 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 대회의 전국 인지도가 급상승했습니다. 2026년 공식 홍보대사 임명 여부는 공식 공지로는 확인되지 않지만, 인스타그램 홍보에 그의 이름이 등장합니다. 기안84의 출연 여부와 별개로 \'나 혼자 산다 코스\'라는 정체성으로 자리 잡은 대회입니다.',
-      },
-      {
-        question: '서울에서 대청호까지 어떻게 가나요?',
-        answer: 'KTX 오송역(서울역에서 약 50분)에서 청주 시내로 환승 후 차량으로 약 30분, 또는 청주 도착 후 택시로 문의면까지 20-30분이 가장 빠릅니다. 자가용은 남청주IC 또는 신탄진IC에서 진입해 호반 주차장·문의중학교 임시주차장을 이용할 수 있지만, 대회 당일 8시-14시 일부 도로 통제가 있어 새벽 도착 또는 전날 청주 시내 숙박이 안전합니다. 셔틀버스 운영 여부는 대회 1개월 전 공지로 확인.',
-      },
-      {
-        question: '10km·5km에 어떤 신발을 신어야 하나요?',
-        answer: '대청호 둘레 아스팔트·포장 수변도로 + 짧은 오르막이 섞인 환경에서는 데일리 트레이너가 정답입니다. 10km는 페가수스 42·1080 v15·GT-2000 14처럼 쿠션과 안정성이 균형 잡힌 모델, 5km는 노바블라스트 5·페가수스 플러스 같은 경량 슈퍼 트레이너도 OK. 카본 레이싱화는 짧은 거리·평지가 아니라 호수 굴곡 코스에서는 효과 대비 부담이 큽니다. 발볼 넓다면 와이드 옵션이 정식 출시된 모델 우선.',
-      },
+        "question": "5km도 칩과 기록증이 있나요?",
+        "answer": "공식 요강은 5km 기록칩 미사용·기록증 없음·시상 없음을 명시합니다. 다른 종목의 모바일 기록증 안내와 구분해야 합니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>제24회 청원생명쌀 대청호마라톤 — 2026년 10월 17일(토) 충북 청주 문의체육공원 출발, 대청호 호수 둘레 + <strong>청남대 통과</strong> 코스</li>
-    <li>풀(5/4 오픈)·하프(5/7 오픈) 이미 매진 → <strong>10km는 5월 11일(월), 5km는 5월 14일(목) 오전 10시</strong> 순차 오픈, 마감일 6월 12일</li>
-    <li>기안84 \'나 혼자 산다\' 효과로 작년 <strong>역대 최대 6,500명</strong> 참가, 청원생명쌀 4kg + 완주 메달 + 비빔밥·떡 현장 제공</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">10km·5km D-4 / D-7 — 2026 가을 첫 메달 마지막 기회</p>
-    <p>풀코스(800명)와 하프코스(1,400명)는 5월 4일·5월 7일 오픈과 함께 빠르게 매진됐습니다. 남은 슬롯은 단축코스(10km, 2,000명) <strong>5월 11일(월) 오전 10시</strong>와 건강코스(5km, 1,800명) <strong>5월 14일(목) 오전 10시</strong>입니다. 기안84 효과로 인기가 매년 급상승 중이라 10km는 빠르게 마감될 가능성이 높습니다. 알람 설정해두세요.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/17 (토)</span>
-    <span class="stat-sub">8:40 출발</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">10km 오픈</span>
-    <span class="stat-value">5/11 (월)</span>
-    <span class="stat-sub">오전 10:00</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">5km 오픈</span>
-    <span class="stat-value">5/14 (목)</span>
-    <span class="stat-sub">오전 10:00</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 마감</span>
-    <span class="stat-value">6/12 (금)</span>
-    <span class="stat-sub">또는 정원 마감 시</span>
-  </div>
-</div>
-
-<h2>접수 일정 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.04 (월) — 완료</span>
-    <span class="timeline-title">풀코스 800명 매진</span>
-    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 5시간</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.07 (목) — 완료</span>
-    <span class="timeline-title">하프코스 1,400명 매진</span>
-    <p class="timeline-desc">참가비 45,000원(학생 30,000원), 제한시간 3시간</p>
-  </div>
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.11 (월) — D-4</span>
-    <span class="timeline-title">단축코스 10km 오픈 (잔여 슬롯)</span>
-    <p class="timeline-desc">정원 2,000명, 참가비 45,000원(학생 30,000원), 제한시간 2시간</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.14 (목) — D-7</span>
-    <span class="timeline-title">건강코스 5km 오픈 (잔여 슬롯)</span>
-    <p class="timeline-desc">정원 1,800명, 참가비 25,000원(학생 15,000원)</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.06.12 (금)</span>
-    <span class="timeline-title">전체 접수 최종 마감</span>
-    <p class="timeline-desc">또는 정원 채워짐 시 조기 마감. 접수 후 7일 내 입금 필수</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.17 (토)</span>
-    <span class="timeline-title">대회 당일 — 문의체육공원 7:30 집결</span>
-    <p class="timeline-desc">10월 중순 충북 평균 15-20도, 호수 단풍 절정</p>
-  </div>
-</div>
-
-<h2>종목별 참가비·정원·매진 현황</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>정원</th><th>참가비 (일반/학생)</th><th>제한시간</th><th>현황</th></tr>
-  </thead>
-  <tbody>
-    <tr style="opacity:0.5;">
-      <td>풀코스</td>
-      <td>42.195km</td>
-      <td>800명</td>
-      <td>45,000 / 30,000원</td>
-      <td>5시간</td>
-      <td><span class="badge-warning">매진</span></td>
-    </tr>
-    <tr style="opacity:0.5;">
-      <td>하프코스</td>
-      <td>21.0975km</td>
-      <td>1,400명</td>
-      <td>45,000 / 30,000원</td>
-      <td>3시간</td>
-      <td><span class="badge-warning">매진</span></td>
-    </tr>
-    <tr>
-      <td><strong>단축코스</strong></td>
-      <td><strong>10km</strong></td>
-      <td><strong>2,000명</strong></td>
-      <td><strong>45,000 / 30,000원</strong></td>
-      <td>2시간</td>
-      <td><span class="badge-positive">5/11 오픈</span></td>
-    </tr>
-    <tr>
-      <td><strong>건강코스</strong></td>
-      <td><strong>5km</strong></td>
-      <td><strong>1,800명</strong></td>
-      <td><strong>25,000 / 15,000원</strong></td>
-      <td>—</td>
-      <td><span class="badge-positive">5/14 오픈</span></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">10km도 45,000원? — 청원생명쌀 4kg 포함</p>
-    <p>10km 참가비가 풀·하프와 동일한 45,000원으로 다소 비싸 보일 수 있는데, <strong>완주자 전원에게 청원생명쌀 4kg + 대회 티셔츠 + 완주 메달</strong>이 제공됩니다. 시중 청원생명쌀 4kg 시세(약 25,000원) + 기념품 가치를 고려하면 사실상 가성비 가을 마라톤 중 최상위입니다. 5km는 25,000원으로 입문자·가족 단위 적합.</p>
-  </div>
-</div>
-
-<h2>왜 대청호인가 — 호수 + 청남대 + 기안84</h2>
-
-<p>대청호마라톤은 대청호 호수 둘레와 <strong>청남대(전직 대통령 전용 별장)</strong>를 통과하는 풍경 코스로 유명합니다. 충북 청주시 문의면 일대에서 열리며, 시간대(8:40 출발) 기준 호반 안개와 가을 단풍이 절정에 이르는 구간을 지납니다.</p>
-
-<p>2023년 MBC \'나 혼자 산다\'에서 기안84가 풀코스를 4시간 47분에 완주하는 모습이 방영된 이후 인지도가 폭발적으로 증가했습니다. 2024년 5천 명대 → 2025년 6,500명(역대 최대) → 2026년 풀·하프 조기 매진으로 이어지는 흐름입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>특징</th><th>대청호마라톤</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>코스 풍경</strong></td><td>대청호 수면, 청남대, 코스모스 꽃길, 가을 단풍</td></tr>
-    <tr><td><strong>풀코스 난이도</strong></td><td>누적 고도 485m — 전국 두 번째 수준 (안동 700m보다는 낮지만 평지 대회 대비 2배)</td></tr>
-    <tr><td><strong>10km·5km 난이도</strong></td><td>풀·하프 코스 일부 사용으로 짧은 오르막 포함, 입문자 도전 가능</td></tr>
-    <tr><td><strong>기념품</strong></td><td>청원생명쌀 4kg(10km 이상) + 티셔츠 + 완주 메달</td></tr>
-    <tr><td><strong>현장 먹거리</strong></td><td>청원생명쌀 비빔밥, 생명쌀떡, 김밥</td></tr>
-    <tr><td><strong>매년 개최 시기</strong></td><td>10월 셋째 주 토요일 (가을 단풍 절정)</td></tr>
-  </tbody>
-</table>
-
-<h2>10km·5km 코스 미리 보기</h2>
-
-<p>풀코스가 누적 고도 485m로 난도가 높은 반면, <strong>10km·5km는 호수 둘레 진입부와 회귀 구간 위주</strong>로 운영됩니다. 풀코스의 격렬한 업힐 구간(전반 17km)은 포함되지 않지만, 호반 도로 특성상 완전 평지는 아닙니다.</p>
-
-<ul>
-  <li><strong>5km</strong> — 문의체육공원 출발·복귀 호반 짧은 루프. 입문자도 안전하게 완주 가능. 호수 풍경 충분.</li>
-  <li><strong>10km</strong> — 호반 둘레 일부 + 청남대 진입로 인접 구간. 짧은 오르막 1-2회 포함. 평지 10km PB 대비 5-10분 늦어진다고 보면 적정.</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">10월 17일 충북 날씨</p>
-    <p>10월 중순 충북 평균 기온 15-20도, 대청호 인근은 새벽 안개가 자주 끼지만 대회 시간(8:40 출발)에는 해소됩니다. 출발 시 13-16도, 종료 시 18-21도 정도로 가을 마라톤 황금 조건입니다. 호수 풍경 + 가을 단풍 + 적정 기온 = 사진 찍기 좋은 환경.</p>
-  </div>
-</div>
-
-<h2>10월 대청호 — 어떤 신발을 신을까</h2>
-
-<p>호반 아스팔트·포장 수변도로 + 짧은 오르막 환경에서는 <strong>데일리 트레이너 또는 경량 슈퍼 트레이너</strong>가 정답입니다. 종목별 추천:</p>
-
-<table>
-  <thead>
-    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>10km (적정 페이스)</strong></td>
-      <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
-    </tr>
-    <tr>
-      <td><strong>10km (PB 도전)</strong></td>
-      <td>경량 슈퍼 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a>, <a href="/shoes/asics-superblast-2">슈퍼블라스트 2</a></td>
-    </tr>
-    <tr>
-      <td><strong>5km (가족 단위)</strong></td>
-      <td>일반 데일리</td>
-      <td><a href="/shoes/asics-novablast-5">노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
-    </tr>
-    <tr>
-      <td><strong>입문 러너 (첫 메달)</strong></td>
-      <td>안정성+쿠션</td>
-      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p>발볼이 넓다면 와이드 옵션이 정식 출시된 페가수스 42·1080 v15·GT-2000 14 우선. <a href="/recommend">맞춤 신발 추천</a>에서 본인 발볼·아치·무게에 맞는 모델을 1분 안에 확인할 수 있습니다.</p>
-
-<h2>교통·숙박</h2>
-
-<table>
-  <thead>
-    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>KTX (권장)</strong></td>
-      <td>서울역 → 오송역(약 50분) → 청주 시내 환승 → 문의체육공원 차량 30분</td>
-      <td>약 1시간 50분</td>
-    </tr>
-    <tr>
-      <td>고속버스</td>
-      <td>동서울·강남 → 청주 시외터미널 → 택시 약 30분</td>
-      <td>약 2시간 30분</td>
-    </tr>
-    <tr>
-      <td>자가용</td>
-      <td>경부고속도로 → 남청주IC 또는 신탄진IC → 문의면</td>
-      <td>약 2시간</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">🚗</span>
-  <div class="callout-body">
-    <p class="callout-title">대회 당일 도로 통제 — 새벽 도착 또는 전날 숙박</p>
-    <p>대회 당일 오전 8시-오후 2시 일부 도로가 통제되며, 호반 주차장·문의중학교 임시주차장은 새벽에 빠르게 만차됩니다. 7시 30분 집결을 고려하면 <strong>전날 청주 시내 숙박</strong>이 안전합니다. 청주 시내 호텔 + 대회 후 청남대 관광 + 청주 한옥마을 1박 2일 일정도 추천. 셔틀버스 운영 여부는 9월 중순 race.cjsports.or.kr 공지로 확인.</p>
-  </div>
-</div>
-
-<h2>2025년 대회 돌아보기</h2>
-
-<p>2025년 제23회 대청호마라톤은 <strong>역대 최대 6,500명</strong>이 참가하며 성황리에 마무리됐습니다(ngonews.kr 보도). 참가 전에 알아둘 점:</p>
-
-<ul>
-  <li>대청호 호수 둘레 + 청남대 통과 코스, 10월 단풍 시즌 개최</li>
-  <li>풀코스는 누적 고도 485m로 평지 대회보다 난도가 높음</li>
-  <li>완주자에게 청원생명쌀 4kg(10km 이상) + 티셔츠 + 메달, 현장에서 비빔밥·떡 제공</li>
-  <li>10km도 호수 둘레 도로라 짧은 오르막이 포함돼 완전 평지 10km보다 어려움</li>
-  <li>2023년 MBC '나 혼자 산다'에서 기안84의 풀코스 완주가 방영된 뒤 전국 인지도가 올라감</li>
-</ul>
-
-<h2>접수 체크리스트</h2>
-
-<div class="cta-box">
-  <h3>10km(5/11)·5km(5/14) 오전 10시 알람 + 준비</h3>
-  <ul>
-    <li>✅ <strong>스마트폰 알람</strong> — 5월 11일 09:55 (10km), 5월 14일 09:55 (5km)</li>
-    <li>✅ <strong>회원가입 미리</strong> — race.cjsports.or.kr 사전 가입으로 접수 시 시간 단축</li>
-    <li>✅ <strong>참가 종목 결정</strong> — 10km(45K) / 5km(25K), 학생 할인 확인</li>
-    <li>✅ <strong>입금 일정</strong> — 접수 완료 후 <strong>7일 이내 입금</strong> 필수</li>
-    <li>✅ <strong>전날 청주 숙박 예약</strong> — 가을 단풍 시즌이라 빠른 마감 주의</li>
-    <li>✅ <strong>러닝화 결정</strong> — <a href="/recommend">1분 추천</a>으로 본인 발에 맞는 모델 확인</li>
-    <li>📱 <strong>접수 사이트</strong>: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">race.cjsports.or.kr</a> (사무국 043-279-8029)</li>
-  </ul>
-</div>
-
-<p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://race.cjsports.or.kr/" target="_blank" rel="noopener">청원생명쌀 대청호마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DYBzCxejySN/" target="_blank" rel="noopener">@runninglife_korea 게시물</a>, <a href="https://www.ngonews.kr/news/articleView.html?idxno=216337" target="_blank" rel="noopener">2025 대회 6,500명 성료 보도</a>, runningwikii. 풀·하프 매진 여부는 인스타 게시물 기반이며, 실시간 확정 매진 여부는 race.cjsports.or.kr에서 확인하세요.
-</p>
-`,
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p>제24회 청원생명쌀 대청호마라톤의 10월 17일 일정이 지났다. <a href="https://race.cjsports.or.kr/01/" target="_blank" rel="noopener noreferrer">공식 요강</a>의 장소는 청주시 상당구 문의면 체육공원이다. 종료된 5월 접수나 지난 잔여석을 현재 신청 기회로 안내하지 않는다.</p>
+<h2>임시 기록과 공식 기록의 갱신을 구분</h2><p><a href="https://race.cjsports.or.kr/04/?group=basic&amp;code=B01&amp;no=8378&amp;bsort=desc&amp;bfsort=wdate&amp;abmode=view" target="_blank" rel="noopener noreferrer">10월 20일 임시 기록 공지</a>는 당시 기록이 임시 상태이며 이의신청 기간 종료 후 일주일 뒤 공식 기록으로 갱신할 예정이라고 설명했다. 이의신청 기한은 10월 23일 17시였다.</p><p>이 계획만으로 현재 모든 기록의 정정이 끝났다고 단정하지 않는다. 본인의 조회 화면에서 임시·공식 표기와 종목·배번호를 대조하자. 새 이의신청을 지금도 받는다는 뜻은 아니며, 남은 문의는 대표전화 043-279-8029에서 확인할 사항이다.</p>
+<h2>08시는 전체 안내, 출발은 종목별로 다르다</h2><p>요강 상단에는 행사 일시 08:00이 적혀 있지만 같은 페이지 상세 시간표는 07:30 집결, 풀코스 08:40·하프 08:50·10km와 5km 09:00 출발로 구분한다. 상단 시각을 모든 종목의 출발로 옮기지 않았다.</p><p>제한시간도 풀 5시간·하프 3시간·10km 2시간·5km 1시간으로 다르다. 5km는 기록칩과 기록증이 없고 시상도 하지 않는다고 명시한다. 모바일 기록증 24시간 내 문자 발송 안내를 5km까지 적용하지 말자.</p>
+<h2>유턴 지도와 공사 안내가 별도로 나왔다</h2><p><a href="https://race.cjsports.or.kr/04/?group=basic&amp;code=B01&amp;no=8282&amp;bsort=desc&amp;bfsort=wdate&amp;abmode=view" target="_blank" rel="noopener noreferrer">10월 2일 풀코스 유턴 공지</a>는 첨부 지도로 유턴 지점을 확인하도록 안내했다. <a href="https://race.cjsports.or.kr/04/?group=basic&amp;code=B01&amp;no=8303&amp;bsort=desc&amp;bfsort=wdate&amp;abmode=view" target="_blank" rel="noopener noreferrer">10월 6일 공사 구간 공지</a>는 풀코스 24.5km·37km 부근 교량 공사와 33km 부근 농수로 공사를 알렸다.</p><p>기록이나 코스를 복기한다면 초기 지도와 후속 운영 공지를 함께 보자. 공사 안내가 모든 참가자의 실제 우회 거리나 현재 공사 상태를 증명하는 것은 아니다. 출처가 불분명한 누적 고도 485m와 일괄 난도 등급은 제외했다.</p>
+<h2>참가비와 모집 계획은 연령·종목별</h2><p>공식 일반 참가비는 풀·하프·10km 각 45,000원, 5km 25,000원이며 고3 이하 표시는 각각 30,000원·15,000원이다. 할인 가격이 곧 모든 연령의 참가 자격을 뜻하지는 않아 종목별 연령 제한도 따로 읽어야 한다.</p><p>6,000명은 모집 계획이다. 요강의 기념품은 긴 세 종목의 쌀과 5km 티셔츠로 구분돼 모든 사람에게 같은 쌀을 지급했다고 요약하지 않았다. 개인 지급·배송과 실제 참가 인원은 별도 확인이다.</p>
+<h2>자주 묻는 질문</h2><h3>10월 20일 공개 기록이 최종 기록인가요?</h3><p>그 공지는 임시 기록이라고 명시하고 이의신청 종료 후 공식 갱신 계획을 안내했습니다. 현재 본인 조회 화면의 기록 상태는 별도 확인해야 합니다.</p><h3>모든 종목이 08시에 출발했나요?</h3><p>요강 상세 시간표는 풀 08시 40분·하프 08시 50분·10km와 5km 09시 출발로 구분합니다. 상단 행사 일시와 다릅니다.</p><h3>5km도 칩과 기록증이 있나요?</h3><p>공식 요강은 5km 기록칩 미사용·기록증 없음·시상 없음을 명시합니다. 다른 종목의 모바일 기록증 안내와 구분해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
   },
   {
-    id: '2026-andong-marathon',
-    slug: '2026-andong-marathon',
-    title: '2026 안동마라톤 접수 시작 D+1 | 10월 4일 획득고도 700m+ 국내 최상급 난코스, 작년 며칠 만에 조기 마감',
-    description: '2026 안동마라톤 접수가 5월 6일(수) 시작됐습니다. 10월 4일(일) 안동시민운동장 출발, 풀·하프·10K·5K 4종목 선착순 1만 명. 획득고도 700m+ 국내 최고 난도 코스, 2026년 신코스 도입(안동호+안포선 고개), 풀 우승자에게 해외 마라톤 참가권 — 작년 며칠 만에 마감된 핫한 가을 도전 마라톤.',
-    thumbnail: '/images/blog/2026-andong-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-07',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['안동마라톤', '안동 마라톤', '경상북도 마라톤', '난코스 마라톤', '가을 마라톤', '도전형 마라톤', '하회마을', '대회 일정'],
-    event: {
-      name: '2026 안동마라톤대회',
-      startDate: '2026-10-04T08:00:00+09:00',
-      location: {
-        name: '안동시민운동장',
-        address: '경상북도 안동시 정하동 417-1',
-      },
-      organizer: '안동시·매일신문사 (대행: ㈜파란상상)',
-      url: 'https://admarathon.kr/andong/',
-      offers: [
-        { name: '풀코스 (42.195km)', priceKrw: 60000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
-        { name: '하프 (21.0975km)', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
-        { name: '10K', priceKrw: 50000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
-        { name: '5K', priceKrw: 30000, availabilityEnds: '2026-05-31', url: 'https://admarathon.kr/andong/' },
-      ],
-    },
+    id: "2026-andong-marathon",
+    slug: "2026-andong-marathon",
+    title: "안동마라톤 2026 참가 후: 5km 기록 제외·사진 구매·접수 최종 마감",
+    description: "10월 6일 공식 공지는 5km 공식 기록 미제공과 사진 원본 유료 구매를 안내합니다. 실제 접수 최종 마감일과 종목별 참가비·참가 자격을 확인하고 근거가 부족한 획득고도 700m 단정은 제외했습니다.",
+    thumbnail: "/images/blog/verified-2026-andong-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-07",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "안동마라톤",
+      "안동 마라톤",
+      "경상북도 마라톤",
+      "난코스 마라톤",
+      "가을 마라톤",
+      "도전형 마라톤",
+      "하회마을",
+      "대회 일정"
+    ],
     faqs: [
       {
-        question: '안동마라톤이 정말 그렇게 어려운가요?',
-        answer: '국내 풀코스 마라톤 중 손꼽히는 난도입니다. 러너 커뮤니티에서 "획득고도 700m+"로 알려져 있고, 12km 이후부터 본격 업다운, 38km 이후 업힐 반복으로 마지막 4km가 가장 힘듭니다. 평지 마라톤(공주백제·서울)에서 sub-3:30이 가능한 러너도 안동에서는 30~40분 늦게 들어옵니다. 평지 PB 도전이 목표라면 안동은 비추천이고, "도전 자체가 목적"이라면 안동만 한 코스가 없습니다.',
+        "question": "5km도 모바일 공식 기록증을 받나요?",
+        "answer": "10월 6일 공식 공지는 5km는 기록칩이 없어 공식 기록을 제공하지 않는다고 안내합니다. 다른 종목의 기록증 설명과 구분해야 합니다."
       },
       {
-        question: '작년에 며칠 만에 마감됐다는 게 사실인가요?',
-        answer: '2025년 안동마라톤은 1만 명 정원이 접수 개시 며칠 만에 조기 마감됐습니다. 2024년 5천 명에서 2배로 늘어난 정원이 그대로 채워졌습니다. 2026년은 신코스 도입으로 관심도가 더 높아졌으니, 풀코스 도전을 마음먹었다면 5월 중에는 결제 완료를 권장합니다.',
+        "question": "사진 원본은 무료인가요?",
+        "answer": "공식은 샤라웃에서 행사명과 배번호로 검색한 뒤 필요하면 유료 구매하도록 안내합니다. 모든 개인 사진의 존재는 보장하지 않습니다."
       },
       {
-        question: '서울에서 안동까지 어떻게 가나요?',
-        answer: 'KTX-이음으로 청량리역·서울역에서 안동역까지 약 2시간~2시간 40분(하행 1일 4회 운행)이 가장 빠릅니다. 안동역에서 안동시민운동장까지는 차량 10분 내외(시내버스 순환2번)입니다. 대회 당일 새벽 첫차로 당일치기도 가능하지만, 7시 집결·8시 출발 시간을 고려하면 전날 안동 시내 숙박이 안전합니다. 동서울터미널 → 안동버스터미널은 약 3시간 소요되며 KTX보다 저렴합니다.',
-      },
-      {
-        question: '풀코스 우승자에게 해외 참가권을 준다는 게 사실인가요?',
-        answer: '2025년 대회 기준 풀·하프 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권 특전이 제공됐습니다. 2026년에도 유사한 특전이 예상되며 정확한 내용은 admarathon.kr/andong/ 공식 공지를 확인하세요. 일반 러너에게도 안동 탈춤페스티벌(10월 초 동시 개최) 연계 혜택과 안동찜닭·간고등어 등 지역 음식 부스가 매력입니다.',
-      },
-      {
-        question: '난코스인 안동에 어떤 신발이 좋은가요?',
-        answer: '획득고도 700m+ 구릉형 도로 코스라 평지용 카본 레이싱화는 부적합합니다. 가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. 추천: ① 풀코스 도전 → 안정성 + 쿠션의 "슈퍼 트레이너" (ASICS 카야노 32, 브룩스 글리세린 22). ② 하프·10K → 데일리 트레이너 (페가수스 42, 1080 v15, GT-2000 14). ③ 5K → 경량 슈퍼 트레이너 (페가수스 플러스). 발볼 넓다면 와이드 옵션 정식 출시된 모델 우선.',
-      },
+        "question": "획득고도 700m는 검증된 공식 수치인가요?",
+        "answer": "이번 확인에서 그 수치를 확정할 공식 측정 근거를 확보하지 못해 삭제했습니다. 개인 GPS 누적 상승과 공식 고저도도 구분해야 합니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026년 10월 4일(일) 안동시민운동장 출발 — 풀·하프·10K·5K 4종목, 선착순 <strong>1만 명</strong></li>
-    <li>접수 <strong>5월 6일(수) 시작</strong>(어제 오픈) — 작년 며칠 만에 마감됐으니 풀코스 도전이라면 5월 안에 결제 권장</li>
-    <li>국내 최상급 난코스 — <strong>획득고도 700m+</strong>, 12km 이후 업다운 + 38km 이후 업힐 반복. 평지 PB가 아닌 "도전형 풀코스"의 정답</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">🔥</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 시작 D+1 — 작년 며칠 만에 조기 마감</p>
-    <p>2025년 안동마라톤은 정원 1만 명이 접수 개시 며칠 만에 채워져 조기 마감됐습니다. 2024년 5천 명 → 2025년 1만 명으로 정원이 2배 증가했음에도 입장권이 빠르게 동났고, 2026년은 신코스 도입(안동호 + 안포선 고개) 발표로 관심도가 더 높아졌습니다. 풀코스 도전을 마음먹었다면 5월 안에 결제를 마쳐두세요.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/4 (일)</span>
-    <span class="stat-sub">8:00 출발</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 시작</span>
-    <span class="stat-value">5/6 (수)~</span>
-    <span class="stat-sub">선착순 1만 명</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">획득고도</span>
-    <span class="stat-value">700m+</span>
-    <span class="stat-sub">국내 최상급</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">풀코스</span>
-    <span class="stat-value">60,000원</span>
-    <span class="stat-sub">제한시간 5시간</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.06 (수) — D+1</span>
-    <span class="timeline-title">접수 시작 — 어제 오픈</span>
-    <p class="timeline-desc">admarathon.kr/andong/ 에서 4종목 모두 일반 선착순 신청. 정원 1만 명</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.05.31 (일) (예상)</span>
-    <span class="timeline-title">접수 마감 또는 정원 도달 시</span>
-    <p class="timeline-desc">선착순 1만 명 채워지면 조기 마감 — 작년 며칠 만에 마감됐던 전례</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 중후반</span>
-    <span class="timeline-title">레이스팩 안내·교통통제 공지</span>
-    <p class="timeline-desc">기념품, 셔틀버스 운영 여부, 코스 통제 시간 공식 발표</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.04 (일)</span>
-    <span class="timeline-title">대회 당일 — 안동시민운동장 7시 집결</span>
-    <p class="timeline-desc">10월 초 안동 평균 18-22도, 일교차 큼. 강수 가능성 (작년 강우)</p>
-  </div>
-</div>
-
-<h2>종목별 참가비 (2025년 기준)</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>참가비</th><th>제한시간 (2025 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>60,000원</td><td>5시간</td></tr>
-    <tr><td>하프</td><td>21.0975km</td><td>50,000원</td><td>2시간 30분</td></tr>
-    <tr><td>10K</td><td>10km</td><td>50,000원</td><td>1시간 30분</td></tr>
-    <tr><td>5K</td><td>5km</td><td>30,000원</td><td>1시간</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">풀·하프 남녀 1위 — 해외 마라톤 참가권 특전</p>
-    <p>2025년 대회 기준 풀코스·하프코스 남녀 1위 4명에게 해외 국제마라톤(예: 베트남 호치민 마라톤) 참가권이 제공됐습니다. 2026년 특전 내역은 5월 중후반 admarathon.kr 공지에서 확인 가능합니다. 일반 러너에게도 <strong>안동 탈춤페스티벌(10월 초 동시 개최)</strong>과 안동찜닭·간고등어 부스가 매력입니다.</p>
-  </div>
-</div>
-
-<h2>왜 안동이 "지옥 코스"라 불리는가</h2>
-
-<p>안동마라톤은 러너 커뮤니티에서 <strong>국내 풀코스 중 가장 어려운 코스 중 하나</strong>로 통합니다. 평지 마라톤(공주백제·서울)과는 완전히 다른 카테고리입니다.</p>
-
-<table>
-  <thead>
-    <tr><th>구간</th><th>특성</th><th>실전 대응</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>0-12km</strong></td>
-      <td>안동시민운동장 출발 → 용정교 → 시내 통과, 평지 위주</td>
-      <td>페이스 욕심 금지, 본 게임은 12km 이후</td>
-    </tr>
-    <tr>
-      <td><strong>12-25km</strong></td>
-      <td>문화관광단지·안동댐 인근, 본격 업다운 시작</td>
-      <td>오르막 짧게·내리막 가볍게, 심박 80% 이하 유지</td>
-    </tr>
-    <tr>
-      <td><strong>25-38km</strong></td>
-      <td>낙동강변 강변로 + 안동호 일부 구간</td>
-      <td>강풍 주의, 보급 포인트 사이 거리 확인</td>
-    </tr>
-    <tr>
-      <td><strong>38-42km</strong></td>
-      <td>업힐 반복 — 마지막 4km가 가장 힘든 구간</td>
-      <td>젤·소금 알약 비축, 워킹 브레이크 허용</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">평지 PB 기록을 그대로 적용하지 마세요</p>
-    <p>평지 마라톤(공주백제·서울)에서 Sub-3:30이 가능한 러너도 안동에서는 보통 30~40분 늦게 들어옵니다. 페이싱 전략은 <strong>"평지 PB + 30분"</strong>을 기준으로 잡고, 첫 12km는 의도적으로 더 천천히 가세요. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱 전략</a>의 "구릉형 코스" 섹션 참고.</p>
-  </div>
-</div>
-
-<h2>2026년 신코스 — 안동호 + 안포선 고개</h2>
-
-<p>2026년 안동마라톤은 <strong>도심 교통통제 부담을 줄이고 자연친화 환경을 강화</strong>한 신코스를 도입했습니다 (2026-01-20 매일신문 보도). 핵심 변경:</p>
-
-<ul>
-  <li><strong>안동호 수변 코스 확장</strong> — 기존 "안동호 악코스" 구간 유지 + 추가 강변 통과</li>
-  <li><strong>안포선 고개 구간 신설</strong> — 마지막 4km 업힐의 마지막 보스 구간</li>
-  <li><strong>도심 통제 최소화</strong> — 시내 비통제 시간 확보로 시민 불편 감소</li>
-  <li><strong>상세 코스도 미공개</strong> — 5월 중후반 공식 발표 예상</li>
-</ul>
-
-<p>신코스로 작년보다 더 어려워질 가능성이 있으니, 풀코스 도전자는 <strong>구릉형 LSD(장거리 지속주) 훈련</strong>을 6-8월에 누적해두세요.</p>
-
-<h2>10월 안동 — 어떤 신발을 신을까</h2>
-
-<p>구릉형 도로 코스 + 10월 초 18-22도 환경에서는 <strong>평지 카본 레이싱화가 부적합</strong>합니다. 종목별 추천:</p>
-
-<table>
-  <thead>
-    <tr><th>종목 / 목표</th><th>추천 카테고리</th><th>예시 모델</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>풀코스 도전 (난코스 완주)</strong></td>
-      <td>안정성 + 쿠션 슈퍼 트레이너</td>
-      <td><a href="/shoes/asics-gel-kayano-32">ASICS 카야노 32</a>, <a href="/shoes/brooks-glycerin-22">브룩스 글리세린 22</a>, <a href="/shoes/asics-superblast-2">ASICS 슈퍼블라스트 2</a></td>
-    </tr>
-    <tr>
-      <td><strong>하프 (안전 페이스)</strong></td>
-      <td>쿠션 데일리 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-42">나이키 페가수스 42</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>, GT-2000 14</td>
-    </tr>
-    <tr>
-      <td><strong>10K (적정 페이스)</strong></td>
-      <td>경량 슈퍼 트레이너</td>
-      <td><a href="/shoes/nike-pegasus-plus">나이키 페가수스 플러스</a>, <a href="/shoes/hoka-mach-x-3">호카 마하 X 3</a></td>
-    </tr>
-    <tr>
-      <td><strong>5K (가벼운 도전)</strong></td>
-      <td>경량 데일리</td>
-      <td><a href="/shoes/asics-novablast-5">ASICS 노바블라스트 5</a>, <a href="/shoes/saucony-kinvara-16">쏘니 킨바라 16</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">카본 플레이트 레이싱화 비추천</p>
-    <p>가파른 오르막에서 카본 플레이트는 종아리·아킬레스 부하를 키우고, 내리막에서 안정성이 떨어집니다. <strong>안동에서 베이퍼플라이/아디오스 프로를 신었다가 경련으로 DNF</strong>하는 사례가 매년 보고됩니다. 도전형 코스에는 안정성·쿠션 모두 갖춘 슈퍼 트레이너가 정답입니다.</p>
-  </div>
-</div>
-
-<h2>교통·숙박</h2>
-
-<table>
-  <thead>
-    <tr><th>수단</th><th>경로</th><th>소요 시간</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>KTX-이음 (권장)</strong></td>
-      <td>청량리역·서울역 → 안동역 (1일 4회) → 시민운동장 차로 10분</td>
-      <td>약 2시간 ~ 2시간 40분</td>
-    </tr>
-    <tr>
-      <td>고속버스</td>
-      <td>동서울터미널 → 안동버스터미널</td>
-      <td>약 3시간</td>
-    </tr>
-    <tr>
-      <td>자가용</td>
-      <td>중앙고속도로 → 서안동IC</td>
-      <td>약 3시간 (대회 당일 통제)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>대회 당일 7시 집결 → 8시 출발이라 새벽 KTX 첫차 도착으로는 빡빡합니다. <strong>전날 안동 시내 숙박</strong>이 안전합니다. 안동 구도심 한옥 게스트하우스나 안동찜닭 골목 인근 호텔이 인기인데, 10월 첫째 주는 <strong>탈춤페스티벌과 겹쳐</strong> 숙박 마감이 매우 빠르니 접수 확정 직후 예약하세요.</p>
-
-<h2>안동의 매력 — 마라톤 + 1박 2일 관광</h2>
-
-<p>안동은 한국 정신문화의 수도로 불리며, 대회 후 1박 2일로 머물기 좋은 도시입니다.</p>
-
-<ul>
-  <li><strong>하회마을 (유네스코 세계문화유산)</strong> — 풍산 류씨 종택, 600년 전통 마을</li>
-  <li><strong>도산서원</strong> — 퇴계 이황의 학문 공간, 사적 170호</li>
-  <li><strong>월영교</strong> — 한국 최장 목책교, 야경이 압권</li>
-  <li><strong>안동찜닭</strong> — 구시장 골목의 본고장, 대회 후 회복 식사</li>
-  <li><strong>간고등어</strong> — 안동 전통 소금 절임, 선물용 인기</li>
-  <li><strong>안동 탈춤페스티벌</strong> — 10월 초 동시 개최, 하회별신굿탈놀이</li>
-</ul>
-
-<h2>2025년 대회로 본 분위기</h2>
-
-<p>2025년 안동마라톤은 <strong>참가자 1만 명, 풀코스 우승 이건희(2:44:37) / 김은아(3:08:03)</strong>를 기록하며 역대 최고 흥행을 기록했습니다. 비가 내리는 악조건에서도 시민 응원이 성황을 이뤘습니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">기록 비교 (2025 안동 vs 평지 대회)</p>
-    <p>안동 풀코스 우승자 2:44:37은 평지 대회(서울국제·공주백제) 동급 러너의 기록 대비 약 5-7분 늦은 수치입니다. 5천 명에서 1만 명으로 정원 2배 확장에도 며칠 만에 마감된 인기는 "고난도 코스 도전" 자체를 즐기는 마니아층 두께를 보여줍니다.</p>
-  </div>
-</div>
-
-<h2>접수 체크리스트</h2>
-
-<div class="cta-box">
-  <h3>5월 안에 결제 끝내기 위한 준비</h3>
-  <ul>
-    <li>✅ <strong>참가 종목 결정</strong> — 풀(60K) / 하프(50K) / 10K(50K) / 5K(30K)</li>
-    <li>✅ <strong>본인 기록 확인</strong> — 풀코스 5시간 컷오프, 하프 2:30, 10K 1:30</li>
-    <li>✅ <strong>구릉형 LSD 훈련 일정</strong> — 6~8월에 30km LSD 4회 이상 누적</li>
-    <li>✅ <strong>전날 숙박 예약</strong> — 탈춤페스티벌 겹침, 결제 직후 즉시</li>
-    <li>✅ <strong>러닝화 결정</strong> — 안정성 + 쿠션 슈퍼 트레이너 (카본 비추천), <a href="/recommend">1분 추천</a> 활용</li>
-    <li>📱 <strong>접수 사이트</strong>: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">admarathon.kr/andong</a></li>
-  </ul>
-</div>
-
-<p class="text-sm text-gray-500 mt-8">
-※ 데이터 출처: <a href="https://admarathon.kr/andong/" target="_blank" rel="noopener">안동마라톤 공식</a>, <a href="https://www.instagram.com/runninglife_korea/p/DX-wut6j2up/" target="_blank" rel="noopener">@runninglife_korea 5월 캘린더</a>, 매일신문(2025·2026 보도), runningwikii(코스·제한시간), 러너 커뮤니티(획득고도 700m+ 추정). 2026년 공식 접수 마감일·신코스 상세도는 admarathon.kr 공지로 최종 확인하세요.
-</p>
-`,
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p>2026 안동마라톤의 10월 4일 안동시민운동장 일정이 지났다. <a href="https://admarathon.kr/andong/text/info" target="_blank" rel="noopener noreferrer">공식 요강</a>은 07:00 집결·08:00 출발 계획을 안내한다. 지나간 5월 접수를 현재 모집으로 소개하지 않고, 기록·사진과 자신의 신청 내역을 확인할 정보로 정리했다.</p>
+<h2>5km에는 공식 기록이 제공되지 않는다</h2><p><a href="https://admarathon.kr/andong/board/notice/?action=view&amp;f_idx=43256&amp;page=1" target="_blank" rel="noopener noreferrer">10월 6일 기록·사진 공지</a>는 5km에 기록칩이 없어 공식 기록을 제공하지 않는다고 명시한다. 요강 일반 기념품 목록의 기록칩·모바일 기록증을 모든 종목의 제공품으로 확장하지 말자.</p><p>다른 종목의 기록 문의는 010-5256-7034로 문자만 가능하다는 조건이다. 본인의 공식 기록과 GPS를 비교하려면 먼저 종목·배번호·조회 연도를 맞춰야 한다. 모든 미계측 원인을 이번 공지만으로 판단할 수는 없다.</p>
+<h2>사진 원본은 필요할 때 유료 구매</h2><p>같은 공지는 샤라웃에서 ‘2026 안동마라톤’을 선택하고 배번호로 사진을 검색한 뒤 확인·구매하도록 안내한다. 원본은 무상 제공되지 않는다고 명시한다.</p><p>공개 조회 경로와 무료 원본 제공은 서로 다른 조건이다. 본인 사진의 존재 여부, 현재 구매 가격과 제공 범위는 연결된 서비스에서 확인해야 한다. 다른 행사명을 고르면 같은 배번호라도 다른 사람의 사진을 볼 수 있다.</p>
+<h2>5월 6일 모집 시작, 8월 18일 최종 마감 공지</h2><p>요강은 5월 6일부터 계획 10,000명 모집으로 적고, <a href="https://admarathon.kr/andong/board/notice/?action=view&amp;f_idx=43227&amp;page=1" target="_blank" rel="noopener noreferrer">8월 18일 최종 마감 공지</a>는 접수가 최종 마감됐다고 알린다. 전년도 조기 마감 속도를 올해 실제 접수 결과처럼 옮기지 않았다.</p><p>표시 참가비는 풀코스 60,000원·하프와 10km 각 50,000원·5km 30,000원이다. 풀·하프 만 19세 이상, 10km 만 14세 이상 조건도 구분한다. 가상계좌 발급 후 24시간 내 입금과 7월 26일 환불 기한은 당시 운영 조건이다.</p>
+<h2>고도 수치와 시상품은 확인 범위대로</h2><p>공식 기준이 분명하지 않은 ‘획득고도 700m+’와 국내 최고 난도 순위는 확정값으로 남기지 않았다. 개인 GPS의 누적 상승과 공식 코스 고저도는 측정 방식이 달라 별도 검증이 필요하다. 특정 누적 고도만으로 카본화를 일괄 금지하지도 않는다.</p><p>요강은 풀·하프 남녀 1위의 호치민 국제마라톤 3박 5일 참가권을 안내하면서 시상 내용 변경 가능성을 적는다. 계획 시상품과 실제 전달 완료는 별도다. 남은 일반 문의처는 031-575-7243이다.</p>
+<h2>자주 묻는 질문</h2><h3>5km도 모바일 공식 기록증을 받나요?</h3><p>10월 6일 공식 공지는 5km는 기록칩이 없어 공식 기록을 제공하지 않는다고 안내합니다. 다른 종목의 기록증 설명과 구분해야 합니다.</p><h3>사진 원본은 무료인가요?</h3><p>공식은 샤라웃에서 행사명과 배번호로 검색한 뒤 필요하면 유료 구매하도록 안내합니다. 모든 개인 사진의 존재는 보장하지 않습니다.</p><h3>획득고도 700m는 검증된 공식 수치인가요?</h3><p>이번 확인에서 그 수치를 확정할 공식 측정 근거를 확보하지 못해 삭제했습니다. 개인 GPS 누적 상승과 공식 고저도도 구분해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
   },
   {
     id: "2026-gongju-baekje-marathon",
@@ -5770,252 +4961,46 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: '2026-gyeongpo-gangneung-marathon',
-    slug: '2026-gyeongpo-gangneung-marathon',
-    title: '2026 경포마라톤 접수 D-13 | 10월 10일 강릉 경포해변 동해안 하프 코스',
-    description: '2026 경포마라톤 접수가 5월 18일(월) 시작됩니다. 10월 10일(토) 강릉 경포해변 출발, 하프·10km·4.7km 동해안 해안선 코스. 풀코스 없음. 2025년 9,300명 역대 최다 — 가족·입문자 친화 가을 대회 총정리.',
-    thumbnail: '/images/blog/2026-gyeongpo-gangneung-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-05',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['경포마라톤', '강릉 마라톤', '강원도 마라톤', '하프마라톤', '가을 마라톤', '동해안 마라톤', '대회 일정'],
-    event: {
-      name: '2026 경포마라톤',
-      startDate: '2026-10-10T08:30:00+09:00',
-      location: {
-        name: '경포해변 중앙광장',
-        address: '강원특별자치도 강릉시 경포로 513',
-      },
-      organizer: '강원도민일보',
-      url: 'http://www.xn--289av7rnxbd06bmrc.com/',
-      offers: [
-        { name: '하프마라톤 (21.0975km)', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
-        { name: '10km', priceKrw: 40000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
-        { name: '4.7km 건강달리기', priceKrw: 30000, availabilityEnds: '2026-06-23', url: 'http://www.xn--289av7rnxbd06bmrc.com/' },
-      ],
-    },
+    id: "2026-gyeongpo-gangneung-marathon",
+    slug: "2026-gyeongpo-gangneung-marathon",
+    title: "경포마라톤 2026 참가 후: 4.7km 비계측·종목별 출발·분실물",
+    description: "공식은 07시 30분 집결 뒤 하프·10km·4.7km를 순차 출발로 안내합니다. 4.7km 비계측, 건타임 시상과 넷타임 기록, 행사 당일 시설 할인과 현재 이용 조건을 구분했습니다.",
+    thumbnail: "/images/blog/verified-2026-gyeongpo-gangneung-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-05",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "경포마라톤",
+      "강릉 마라톤",
+      "강원도 마라톤",
+      "하프마라톤",
+      "가을 마라톤",
+      "동해안 마라톤",
+      "대회 일정"
+    ],
     faqs: [
       {
-        question: '풀코스(42.195km)도 있나요?',
-        answer: '아니요, 2026 경포마라톤은 하프(21.0975km)·10km·4.7km 건강달리기 세 종목만 운영합니다. 2022년 이후 4년 연속 풀코스가 없으며 하프가 최장 거리입니다. 가을 풀코스가 목표라면 같은 10월 25일(예상) 춘천마라톤이 정답입니다.',
+        "question": "4.7km도 공식 기록을 재나요?",
+        "answer": "공식 대회 안내는 4.7km 건강달리기의 계측과 시상이 없다고 명시합니다. 5km로 바꾸어 표기하지 않았습니다."
       },
       {
-        question: '참가비는 얼마인가요?',
-        answer: '2026년 공식 참가비는 5월 18일 접수 오픈 시 발표됩니다. 2025년 기준 하프·10km 40,000원, 5km(현 4.7km) 30,000원이었으며 2026년에는 인상 가능성이 있습니다. 정확한 금액은 공식 홈페이지(경포마라톤.com)에서 접수 시작 후 확인하세요.',
+        "question": "08시 30분까지 집결하면 되나요?",
+        "answer": "공식은 07시 30분 집결·08시 개회식·하프 08시 30분 출발로 구분합니다. 종목별 출발 시각도 다릅니다."
       },
       {
-        question: '서울에서 강릉까지 KTX로 갈 수 있나요?',
-        answer: 'KTX 강릉선으로 서울역·청량리역에서 강릉역까지 약 2시간 소요됩니다. 강릉역에서 경포해변 중앙광장까지는 약 6km, 시내버스 25분 또는 택시 10분 거리입니다. 2025년에는 강릉종합운동장~경포 셔틀버스도 운영됐으며 2026년 운영 여부는 추후 공지 예정입니다.',
-      },
-      {
-        question: '컷오프 시간은 어떻게 되나요?',
-        answer: '2025년 기준 하프 2시간 30분, 10km 2시간이었습니다. 2026년 정식 공지는 대회 전 공식 홈페이지에서 확인하세요. 입문자가 부담 없이 도전할 수 있는 넉넉한 컷오프입니다.',
-      },
-      {
-        question: '발볼 넓은 한국 러너에게 추천할 신발이 있나요?',
-        answer: '경포마라톤 코스는 동해안 해안 도로로 거의 평탄합니다. 하프 PB 도전이라면 카본 레이싱화, 안전 완주는 데일리 트레이너가 적합하며 발볼이 넓다면 와이드 옵션이 있는 모델이 유리합니다. 본인 발 특성에 맞는 추천은 1분 러닝화 추천 페이지를 참고하세요.',
-      },
-      {
-        question: '주차 가능한가요?',
-        answer: '대회 당일 경포해변 중앙광장~강원도립대 후문(영진) 구간이 약 2시간 30분 통제됩니다(2025년 기준 8:20~11:00). 자가용은 권장하지 않으며 KTX·셔틀버스 이용이 안전합니다. 전날 강릉 숙박이 가장 편한 옵션입니다.',
-      },
+        "question": "호텔 시설 할인은 지금도 유효한가요?",
+        "answer": "공지의 대상은 대회 당일 혜택입니다. 현재 상시 할인이나 입장을 보장하지 않으며 해당 시설의 현재 조건을 별도로 확인해야 합니다."
+      }
     ],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li>2026년 10월 10일(토) 강릉 경포해변 중앙광장 출발, 하프·10km·4.7km 동해안 해안선 코스 (풀코스 없음)</li>
-    <li>접수 5월 18일(월) 시작 → 6월 23일(화) 마감, 공식 홈페이지 경포마라톤.com 직접 접수</li>
-    <li>2025년 9,300명 역대 최다 참가 — 가족·입문자 친화 축제형 대회, 강릉 여행과 결합 최적</li>
-  </ul>
-</div>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 시작 D-13 — 5월 18일(월) 오픈</p>
-    <p>대회는 10월 10일(토), 접수는 <strong>2026년 5월 18일(월)부터 6월 23일(화)까지</strong>입니다. 2025년에는 9,300명이 참가해 역대 최다를 기록했고 정원 1만명 기준 빠르게 마감됐습니다. 강릉 가을 여행과 함께 묶을 계획이라면 KTX 좌석부터 확보해두세요.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-
-<div class="stat-grid">
-  <div class="stat-card accent">
-    <span class="stat-label">대회일</span>
-    <span class="stat-value">10/10 (토)</span>
-    <span class="stat-sub">8:30 집결</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">하프 21.0975km</span>
-    <span class="stat-value">최장 거리</span>
-    <span class="stat-sub">컷오프 2:30 (2025 기준)</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">10km · 4.7km</span>
-    <span class="stat-value">3종목</span>
-    <span class="stat-sub">풀코스 없음</span>
-  </div>
-  <div class="stat-card">
-    <span class="stat-label">접수 기간</span>
-    <span class="stat-value">5/18 ~ 6/23</span>
-    <span class="stat-sub">공식 홈페이지 직접 접수</span>
-  </div>
-</div>
-
-<h2>접수부터 대회까지 타임라인</h2>
-
-<div class="timeline">
-  <div class="timeline-item active">
-    <span class="timeline-date">2026.05.18 (월) — D-13</span>
-    <span class="timeline-title">접수 시작</span>
-    <p class="timeline-desc">공식 홈페이지 경포마라톤.com에서 접수 오픈 (단체 25인 이상 별도 신청)</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.06.23 (화)</span>
-    <span class="timeline-title">접수 마감</span>
-    <p class="timeline-desc">2025년 정원(1만명) 기준 조기 마감 가능. 마감일 전 결제 완료 권장</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.09 말 ~ 10월 초</span>
-    <span class="timeline-title">레이스팩 안내 / 통제 공지</span>
-    <p class="timeline-desc">기념품 수령 방법, 셔틀버스 운영, 교통통제 시간 공식 발표</p>
-  </div>
-  <div class="timeline-item">
-    <span class="timeline-date">2026.10.10 (토)</span>
-    <span class="timeline-title">대회 당일 — 경포해변 중앙광장 8:30 집결</span>
-    <p class="timeline-desc">교통통제 8:20~11:00 (2025년 기준), 셔틀버스 운영 시 강릉종합운동장~경포 노선</p>
-  </div>
-</div>
-
-<h2>대회 기본 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회명</strong></td><td>2026 경포마라톤 (12회차 추정)</td></tr>
-    <tr><td><strong>출발 / 도착</strong></td><td>경포해변 중앙광장 (강원특별자치도 강릉시 경포로 513) — 원점 복귀</td></tr>
-    <tr><td><strong>종목</strong></td><td>하프마라톤 21.0975km · 10km · 4.7km 건강달리기</td></tr>
-    <tr><td><strong>주최 · 주관</strong></td><td>강원도민일보 · 강릉시육상연맹</td></tr>
-    <tr><td><strong>접수처</strong></td><td><a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> (공식 홈페이지 직접 접수)</td></tr>
-    <tr><td><strong>문의</strong></td><td>033-651-0112 / kkang7705@naver.com</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">참가비·정원·기념품은 5월 18일 접수 오픈 시 확정</p>
-    <p>2026년 공식 참가비와 종목별 정원은 5월 18일 접수 시작과 함께 발표될 예정입니다. <strong>2025년 기준 참가비는 하프·10km 40,000원, 5km 30,000원</strong>이었고 2024년 대비 인상이 있었던 만큼 2026년에도 변동 가능성이 있습니다. 2025년 시상품은 갤럭시 버즈3(1~5위)·아머핏 종아리 기어(6~10위)였고 기념품은 별도 공지로 안내됐습니다.</p>
-  </div>
-</div>
-
-<h2>동해안 해안선 코스 — 솔향·바다향·커피향</h2>
-
-<p>경포마라톤의 가장 큰 매력은 <strong>강릉 동해안을 따라 달리는 해안선 코스</strong>입니다. 도시 마라톤과 달리 신호 대기·교차로 정차가 적고, 바닷바람과 솔숲을 동시에 만나는 풍경이 한국 가을 대회 중에서도 손꼽히는 매력으로 통합니다.</p>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>코스 (2025년 기준)</th><th>특징</th></tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><strong>하프</strong></td>
-      <td>경포해변 중앙광장 → 경포해안로 → 경포인공폭포 → 연곡해변 → 영진해변 반환 → 원점</td>
-      <td>거의 평탄, 해발 차 미미. 사천·연곡·영진 해변 풍경 연속</td>
-    </tr>
-    <tr>
-      <td><strong>10km</strong></td>
-      <td>경포해변 중앙광장 → 사천 하평교 반환 → 원점</td>
-      <td>하프 코스 축약 버전. 해안 풍경 그대로</td>
-    </tr>
-    <tr>
-      <td><strong>4.7km</strong></td>
-      <td>경포해변 → 경포인공폭포 → 사근진 → 순포습지 → 원점</td>
-      <td>건강달리기. 가족·입문자용. 칩 타이밍 없음</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>코스 전체가 평탄하고 풍경이 좋아 <strong>첫 하프 도전</strong>이나 <strong>가족 동반 러닝 여행</strong>에 잘 맞습니다. 정확한 2026년 코스는 대회 전 공식 홈페이지에서 재확인하세요.</p>
-
-<h2>이 대회는 누구에게 잘 맞나</h2>
-
-<div class="pros-cons">
-  <div class="pros">
-    <div class="pros-title">✓ 이런 러너에게 추천</div>
-    <ul>
-      <li><strong>첫 하프 도전자</strong> — 평탄 해안 코스 + 컷오프 2:30(넉넉)으로 부담 적음</li>
-      <li><strong>가족·커플 러닝 여행</strong> — 4.7km 건강달리기로 함께 참가 가능</li>
-      <li><strong>춘천 광클 실패한 가을 러너</strong> — 같은 10월 동해안 대안 (10/10 토요일)</li>
-      <li><strong>강릉 여행을 좋아하는 러너</strong> — 경포호·안목커피거리·초당순두부와 결합 최적</li>
-      <li><strong>축제형 대회 분위기를 원하는 러너</strong> — 2025년 9,300명 + 관람객 1.2만명 운집</li>
-    </ul>
-  </div>
-  <div class="cons">
-    <div class="cons-title">✕ 이런 러너에겐 비추</div>
-    <ul>
-      <li><strong>풀코스가 목표</strong> — 풀 종목 없음. <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상)</a> 우선</li>
-      <li><strong>토요일 출근 러너</strong> — 토요일 대회, 일정 조정 필수</li>
-      <li><strong>당일치기 수도권 러너</strong> — KTX 왕복 4시간 + 대회 시간 부담. 1박 2일 권장</li>
-      <li><strong>도심 러닝 분위기 선호</strong> — 광화문·여의도 같은 도시 풍경 없음 (자연 코스 위주)</li>
-    </ul>
-  </div>
-</div>
-
-<h2>강릉 여행과 묶는 1박 2일 모델</h2>
-
-<p>경포마라톤이 토요일 오전에 끝나는 점을 활용하면 가을 강릉 여행과 자연스럽게 이어집니다.</p>
-
-<ul>
-  <li><strong>금요일 오후:</strong> KTX 강릉선 청량리역 → 강릉역(약 2시간), 경포 인근 숙소 체크인</li>
-  <li><strong>금요일 저녁:</strong> 초당순두부·강릉 회센터에서 가벼운 식사 (탄수화물 위주)</li>
-  <li><strong>토요일 오전:</strong> 8:30 경포해변 중앙광장 집결 → 11시 전후 완주</li>
-  <li><strong>토요일 오후:</strong> 안목커피거리·경포호 산책·오죽헌 (회복 산책 겸 관광)</li>
-  <li><strong>일요일:</strong> 정동진·주문진 또는 강릉 카페 투어 후 KTX 복귀</li>
-</ul>
-
-<h2>가을 강릉 마라톤 신발 선택</h2>
-
-<p>10월 강릉 평년 기온은 오전 10~16℃ 수준. 해안 도로 평탄 코스라 신발 선택 폭이 넓습니다.</p>
-
-<ul>
-  <li><strong>하프 PB 도전 (1:30~2:00):</strong> 카본 플레이트 레이싱화 또는 슈퍼트레이너. <a href="/best/racing">레이싱화 추천</a></li>
-  <li><strong>하프 안전 완주 (2:00~2:30):</strong> 쿠셔닝 좋은 데일리 트레이너. <a href="/best/daily-trainer">데일리 트레이너 추천</a></li>
-  <li><strong>10km · 4.7km 가족 참가:</strong> 평소 신는 데일리화면 충분</li>
-  <li><strong>발볼 넓은 한국 러너:</strong> 와이드 옵션이 있는 모델 우선. <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국인 러닝화 추천</a> 참고</li>
-</ul>
-
-<p>본인 페이스·발 특성에 맞는 추천이 필요하면 <a href="/recommend">1분 러닝화 추천</a>을 활용해보세요.</p>
-
-<h2>접수 전 체크리스트</h2>
-
-<ul>
-  <li>참가 종목 결정 (하프 / 10km / 4.7km 건강달리기)</li>
-  <li>5월 18일(월) 접수 시작 알람 — 정원 1만명 기준 조기 마감 가능</li>
-  <li>경포마라톤.com 회원가입 사전 준비 (공식 홈페이지 직접 접수)</li>
-  <li>KTX 좌석 선예약 (10월 9~10일 강릉선 빠르게 매진)</li>
-  <li>강릉 숙소 예약 (경포해변·교동 일대 가을 성수기 주의)</li>
-  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·교통통제·셔틀버스)</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🏃</span>
-  <div class="callout-body">
-    <p class="callout-title">가을 시즌 다른 대회와 비교 검토</p>
-    <p>같은 10월 가을 메이저 대회를 함께 검토해보세요 — <a href="/blog/2026-seoul-open-marathon-registration">서울 오픈 마라톤(10/5 예정이던 일정 연기 — 새 날짜 미정)</a>, <a href="/blog/2026-dongma-halfyear-marathon-schedule">2026 하반기 동마 대회</a>(서울레이스 10/11, 경주국제 10/17), <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤(10/25 예상, 풀코스)</a>. 본인 목표(완주/PB/풀/하프)와 일정에 맞춰 1~2개 선택이 정석입니다.</p>
-  </div>
-</div>
-
-<p>주최 측 문의: 033-651-0112 / kkang7705@naver.com</p>
-
-<p>국내 다른 가을 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
-
-<p><small>출처: 경포마라톤 공식 홈페이지 <a href="http://www.xn--289av7rnxbd06bmrc.com/" rel="noopener noreferrer">경포마라톤.com</a> · <a href="https://marathongo.co.kr/raceDetail/domestic/2026-gyeongpo-marathon" rel="noopener noreferrer">마라톤GO 2026 경포마라톤</a> · 강원도민일보 2025 대회 보도 / 작성일 2026년 5월 5일 기준 / 참가비·정원·기념품·코스·교통통제는 5월 18일 접수 오픈 후 공식 공지를 재확인하시기 바랍니다.</small></p>
-`,
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p>2026 경포마라톤의 10월 10일 일정은 지났다. <a href="https://www.xn--289av7rnxbd06bmrc.com/page/vision.php" target="_blank" rel="noopener noreferrer">공식 요강</a>의 종목은 하프·10km·4.7km 건강달리기이며 하프 단체전은 5인 1조다. 4.7km를 편의상 5km라고 바꾸지 않았다.</p>
+<h2>집결 07시 30분과 출발 08시 30분을 구분</h2><p><a href="https://www.xn--289av7rnxbd06bmrc.com/page/info.php" target="_blank" rel="noopener noreferrer">공식 대회 안내</a>는 경포해변 중앙광장 07:30 집결·08:00 개회식, 하프 08:30·10km 08:40·4.7km 08:50 출발로 안내한다. 기존 글의 08:30 집결은 출발과 혼동한 설명이었다.</p><p>하프 제한은 2시간 30분, 10km는 2시간이다. 개인의 실제 출발과 결과를 비교할 때 자신이 신청한 종목과 당시 최종 안내를 함께 확인하자. 다음 회차가 같은 시간표라는 뜻은 아니다.</p>
+<h2>건타임 시상과 넷타임 기록, 4.7km는 제외</h2><p>공식 대회 안내는 입상 순위를 건타임으로, 개인 기록을 넷타임으로 구분한다. 4.7km 건강달리기는 계측과 시상을 하지 않는다고 별도로 명시한다.</p><p>표시 참가비는 하프·10km 각 40,000원, 4.7km 30,000원, 하프 단체전 200,000원이다. 참가비가 있다고 모든 종목의 기록증이 같은 조건으로 제공되는 것은 아니다. 개인 결과의 존재나 기록 정정 완료는 이번에 조회하지 않았다.</p>
+<h2>분실물은 10월 12일 후속 공지에서</h2><p><a href="https://www.xn--289av7rnxbd06bmrc.com/bbs/board.php?bo_table=notice&amp;wr_id=134" target="_blank" rel="noopener noreferrer">공식 분실물 공지</a>는 시계·이어폰·선글라스 등 습득품을 알리고, 사무국에 연락하면 상세 사진으로 본인 여부를 확인해 전달하겠다고 안내한다. 현재도 모든 물품이 남아 있다고 보장한 것은 아니다.</p><p>본인 물품의 특징과 당시 분실 상황을 정리해 033-651-0112로 문의할 사항이다. 현재 홈의 공개 이메일은 kadogn@naver.com으로, 오래된 다른 연락처를 그대로 반복하지 않았다.</p>
+<h2>사우나 할인은 행사 당일 혜택이었다</h2><p><a href="https://www.xn--289av7rnxbd06bmrc.com/bbs/board.php?bo_table=notice&amp;wr_id=132" target="_blank" rel="noopener noreferrer">9월 11일 시설 할인 공지</a>는 대회 당일 스카이베이호텔 경포·세인트존스호텔의 사우나와 부대시설 할인 혜택을 안내한다. 현재도 배번호만 있으면 같은 할인을 받을 수 있다는 상시 혜택이 아니다.</p><p>세부 가격·증빙 조건은 공지의 안내 이미지와 시설의 당시 규정을 확인해야 한다. 이 글에서는 두 시설의 현재 요금·입장 가능 여부나 회복 효과까지 검증하지 않았다. 종료된 혜택을 새로운 방문·결제로 연결하지 않는다.</p>
+<h2>자주 묻는 질문</h2><h3>4.7km도 공식 기록을 재나요?</h3><p>공식 대회 안내는 4.7km 건강달리기의 계측과 시상이 없다고 명시합니다. 5km로 바꾸어 표기하지 않았습니다.</p><h3>08시 30분까지 집결하면 되나요?</h3><p>공식은 07시 30분 집결·08시 개회식·하프 08시 30분 출발로 구분합니다. 종목별 출발 시각도 다릅니다.</p><h3>호텔 시설 할인은 지금도 유효한가요?</h3><p>공지의 대상은 대회 당일 혜택입니다. 현재 상시 할인이나 입장을 보장하지 않으며 해당 시설의 현재 조건을 별도로 확인해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
   },
   {
     id: "2026-seoul-open-marathon-registration",
@@ -6175,122 +5160,44 @@ export const posts_2026_05: BlogPost[] = [
     },
   },
   {
-    id: '2026-anyangcheon-rose-marathon',
-    slug: '2026-anyangcheon-rose-marathon',
-    title: '2026 안양천 장미꽃축제 마라톤 | 5월 23일(토) · 접수 5월 14일 마감',
-    description: '서울 영등포 신정교에서 열리는 2026 안양천 장미꽃축제 마라톤 정보를 정리했습니다. 하프·10K·5K 종목별 참가비, 평탄 코스, 5월 하순 무더위 대응까지 — 접수 마감은 5월 14일.',
-    thumbnail: '/images/blog/2026-anyangcheon-rose-marathon.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-02',
-    category: 'news' as const,
-    readingTime: 5,
-    tags: ['안양천 마라톤', '장미꽃축제', '서울 마라톤', '봄 마라톤', '하프마라톤', '대회 일정'],
-    content: `
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 마감 D-12 — 5월 14일(목)까지</p>
-    <p>대회는 5월 23일(토), 접수는 5월 14일(목)까지입니다. 매년 정원이 차면 조기 마감되는 종목이 있어 참가 의향이 있다면 이번 주 안에 결정하시는 게 좋습니다.</p>
-  </div>
-</div>
-
-<h2>한 눈에 보는 대회 정보</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>대회명</strong></td><td>2026 안양천 장미꽃축제 마라톤</td></tr>
-    <tr><td><strong>일시</strong></td><td>2026년 5월 23일(토)</td></tr>
-    <tr><td><strong>장소</strong></td><td>신정교 하부 영롱이 억새구장 (서울 영등포구 영등포로2길 62)</td></tr>
-    <tr><td><strong>종목</strong></td><td>하프(21.1km) · 10K · 5K</td></tr>
-    <tr><td><strong>접수 마감</strong></td><td>2026년 5월 14일(목)</td></tr>
-    <tr><td><strong>주최</strong></td><td>(사)대한생활체육연맹</td></tr>
-    <tr><td><strong>접수처</strong></td><td><a href="https://roserun.kr/join/register.asp" rel="noopener noreferrer">roserun.kr</a></td></tr>
-  </tbody>
-</table>
-
-<h2>종목별 참가비와 출발 시간</h2>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>참가비</th><th>출발 시간 (공식 홈페이지 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>하프 (21.1km)</strong></td><td>50,000원</td><td>오전 8:00</td></tr>
-    <tr><td><strong>10K</strong></td><td>50,000원</td><td>오전 8:15</td></tr>
-    <tr><td><strong>5K</strong></td><td>45,000원</td><td>오전 8:45</td></tr>
-  </tbody>
-</table>
-
-<div class="callout info">
-  <span class="callout-icon">ℹ️</span>
-  <div class="callout-body">
-    <p class="callout-title">출발 시간은 공식 홈페이지 재확인 필수</p>
-    <p>외부 집계 사이트마다 출발 시간이 09:00 단일로 표기된 곳도 있습니다. 위 시간은 공식 홈페이지(roserun.kr) 기준이며, 대회 1주일 전 최종 안내 문자/이메일을 반드시 확인하세요.</p>
-  </div>
-</div>
-
-<h2>평탄 안양천 자전거도로 — 페이스 유지에 유리</h2>
-
-<p>안양천 마라톤 코스의 가장 큰 매력은 <strong>거의 평탄한 직선 위주의 자전거도로</strong>라는 점입니다. 신정교 출발 후 안양천 수변로를 따라 왕복하는 형태로, 고저차가 거의 없어서 페이스 유지가 쉽습니다.</p>
-
-<ul>
-  <li><strong>노면:</strong> 자전거도로·수변 산책로 포장 양호 — 발목 부담 적음</li>
-  <li><strong>고저차:</strong> 무시할 수준 — PB 도전이나 첫 하프 도전 모두 적합</li>
-  <li><strong>풍경:</strong> 5월 하순 안양천변 장미와 녹음, 강변 자전거도로 특유의 개방감</li>
-  <li><strong>혼잡:</strong> 주말 자전거·산책객과 공유 구간 — 우측 주행 엄수 필수</li>
-</ul>
-
-<h2>5월 23일 — 무더위 대응이 핵심</h2>
-
-<p>5월 하순 서울의 오전 기온은 이미 한여름에 가깝습니다. 평년 5월 23일 서울 일 최고기온은 <strong>약 23~26℃</strong>이며, 자외선 지수는 '매우 높음' 수준입니다. 하프 종목은 8시 출발이라도 골인 직전 10시경에는 이미 20℃를 훌쩍 넘는 경우가 많습니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">초여름 마라톤 체크리스트</p>
-    <p>① 모자/선캡 + 선글라스 필수 ② 자외선 차단제는 땀에 강한 스포츠용 ③ 급수대에서 물 + 머리·목 적시기 ④ 컨디션 이상 시 즉시 페이스 다운 — 이 시기는 PB보다 안전 완주가 우선입니다.</p>
-  </div>
-</div>
-
-<h2>봄~초여름 어떤 러닝화로 뛸까</h2>
-
-<p>안양천 평탄 코스는 신발 선택의 폭이 넓은 편입니다. 본인 목표에 맞춰 고르면 됩니다.</p>
-
-<ul>
-  <li><strong>첫 하프 도전:</strong> 쿠셔닝 든든한 데일리 트레이너가 정답입니다. 안전 완주가 목표라면 무리해서 카본화를 신을 필요가 없어요. <a href="/best/max-cushion">쿠션 러닝화 추천</a>에서 확인하세요.</li>
-  <li><strong>PB 도전 (하프 1:30~2:00 권):</strong> 평탄·서늘한 시간대라면 <a href="/best/daily-trainer">데일리 트레이너 추천</a>도 충분합니다.</li>
-  <li><strong>PB 도전 (서브3 페이스):</strong> 카본 플레이트 레이싱화. <a href="/best/racing">레이싱화 추천</a>을 참고하세요.</li>
-  <li><strong>5K 가족 참여:</strong> 평소 신는 데일리화면 충분합니다.</li>
-</ul>
-
-<p>본인 발볼·체중·주간 거리에 맞는 러닝화가 궁금하다면 <a href="/recommend">1분 러닝화 추천</a>으로 후보를 좁혀보세요.</p>
-
-<h2>접수 전 마지막 체크리스트</h2>
-
-<ul>
-  <li>참가 종목 결정 (하프/10K/5K)</li>
-  <li>roserun.kr 회원가입 및 신청서 작성</li>
-  <li>참가비 입금 — 하나은행 364-910019-84004 / (사)대한생활체육연맹</li>
-  <li>대중교통 이용 권장 — 5호선 오목교역·까치산역 도보 15~20분</li>
-  <li>대회 1주일 전 공식 안내문 재확인 (출발 시각·집결 시각)</li>
-</ul>
-
-<div class="callout success">
-  <span class="callout-icon">🌹</span>
-  <div class="callout-body">
-    <p class="callout-title">대회 후엔 장미꽃축제도 함께</p>
-    <p>안양천 장미꽃축제는 5월 중순부터 6월 초까지 이어집니다. 완주 후 메달 걸고 장미터널 산책 — 봄 시즌 대회만의 특권입니다.</p>
-  </div>
-</div>
-
-<p>주최 측 문의: 02-2636-7775 / start@roserun.kr</p>
-
-<p>국내 다른 봄·여름 대회를 찾고 있다면 <a href="/marathon">2026 마라톤 캘린더</a>에서 월별로 확인할 수 있습니다.</p>
-
-<p><small>출처: 안양천 장미꽃축제 마라톤 공식 홈페이지 <a href="https://roserun.kr/" rel="noopener noreferrer">roserun.kr</a> · 작성일 2026년 5월 2일 기준 / 출발 시각·코스는 주최 측 사정에 따라 변경될 수 있으며, 대회 직전 공식 공지를 재확인하시기 바랍니다.</small></p>
-`,
+    id: "2026-anyangcheon-rose-marathon",
+    slug: "2026-anyangcheon-rose-marathon",
+    title: "안양천 장미꽃축제 마라톤 2026 참가 후: 출발·5km 비계측·배송 기준",
+    description: "공식 요강은 하프 08시·10km 08시 30분·5km 08시 55분을 안내합니다. 기념품 수령은 신청일보다 입금일을 구분하고, 영수증 대체 발급 후속 공지의 지난 기한도 확인했습니다.",
+    thumbnail: "/images/blog/verified-2026-anyangcheon-rose-marathon-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-02",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "안양천 마라톤",
+      "장미꽃축제",
+      "서울 마라톤",
+      "봄 마라톤",
+      "하프마라톤",
+      "대회 일정"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인 사항과 당시 운영 계획을 구분합니다.</small></p>
+<p>2026 안양천 장미꽃축제 마라톤의 5월 23일 신정교 하부 영롱이 억새구장 일정은 지났다. <a href="https://roserun.kr/info/" target="_blank" rel="noopener noreferrer">공식 요강</a>을 기준으로 출발·계측·배송 조건을 다시 정리했다. 지난 접수 기한이나 입금 계좌로 지금 참가비를 보내도록 권하지 않는다.</p>
+<h2>10km는 08시 30분, 5km는 08시 55분 안내</h2><p>공식 홈과 요강은 하프 08:00·10km 08:30·5km 08:55 출발로 적는다. 기존 글의 10km 08:15·5km 08:45는 수정했다. 사이트 하단의 단일 09:00 표기보다 종목별 요강을 함께 확인해야 한다.</p><p>참가비는 하프·10km 각 50,000원·5km 45,000원이다. 동일한 행사라도 출발 시각과 기록 제공이 종목별로 달라 자신의 배번호·종목과 최종 안내를 대조하자.</p>
+<h2>5km에는 기록칩을 사용하지 않는다</h2><p><a href="https://roserun.kr/info/notice.asp" target="_blank" rel="noopener noreferrer">공식 참가 유의사항</a>은 하프·10km에 칩과 기록 측정을 제공하고 5km에는 기록칩을 사용하지 않는다고 명시한다. 계측 기록은 넷타임, 입상 순위는 건타임이라는 안내도 구분한다.</p><p>기록이 보이지 않는 이유를 확인할 때 먼저 비계측 종목인지 살펴야 한다. 모든 미계측이나 기록 차이를 오류로 단정하지 않았다. 배번호가 없거나 칩이 훼손된 경우 등 개인 사정은 해당 내역으로 확인할 사항이다.</p>
+<h2>배송과 현장 수령은 입금일 기준 공지</h2><p><a href="https://roserun.kr/community/view.asp?cates=notice&amp;idx=2161" target="_blank" rel="noopener noreferrer">참가신청·배송 공지</a>는 5월 6일까지 입금 완료하면 택배, 5월 7~14일 입금 완료하면 현장 수령으로 구분하며 사전 발송은 5월 18일 예정이라고 적는다. 먼저 신청했어도 입금이 뒤 기간이면 현장 수령 대상이라는 예시도 있다.</p><p>유의사항 페이지에는 5월 3일/4일을 경계로 나눈 다른 문구가 남아 있다. 어느 한쪽을 전원에게 적용된 확정값으로 숨기지 않고, 구체적인 배송 공지와 본인 결제·수령 안내를 대조하도록 했다. 실제 물품 도착은 이번에 조회하지 않았다.</p>
+<h2>영수증 대체 발급 공지는 별도 절차</h2><p><a href="https://roserun.kr/community/view.asp?cates=notice&amp;idx=4289" target="_blank" rel="noopener noreferrer">7월 공지·7월 30일 수정 안내</a>는 신청 때 현금영수증 발급을 선택한 참가자에게 기부금영수증 대체 발급 절차를 알리고, 신청 기한을 10월 31일로 적는다. 이미 지난 기한을 현재 신규 신청 창구로 소개하지 않는다.</p><p>공지가 발급 계획을 안내했다는 사실과 개인의 실제 발급·신고·공제 결과는 별도다. 사무국의 세제 관련 설명을 모든 참가자에게 동일한 결과가 보장된다는 뜻으로 확장하지 않았다. 남은 문의는 02-2636-7775 또는 공식 카카오 문의 경로에서 확인할 사항이며, 이 사이트에 주민등록번호 등 발급 정보를 제출할 필요는 없다.</p>
+<h2>자주 묻는 질문</h2><h3>10km 출발은 08시 15분이었나요?</h3><p>현재 공식 홈과 요강은 10km 08시 30분·5km 08시 55분을 안내합니다. 기존 글의 시각을 수정하고 하단 단일 09시 표기와도 구분했습니다.</p><h3>5km도 모바일 기록증을 주나요?</h3><p>공식은 하프·10km 기록 측정과 모바일 기록증을 안내하며 5km는 칩을 사용하지 않는다고 명시합니다.</p><h3>배송 대상은 신청한 날짜로 정해지나요?</h3><p>배송 공지는 참가비 입금 완료일을 기준으로 5월 6일까지 택배·7~14일 현장 수령을 구분합니다. 유의사항의 다른 날짜와 개인 수령 안내를 함께 확인해야 합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "10km 출발은 08시 15분이었나요?",
+        "answer": "현재 공식 홈과 요강은 10km 08시 30분·5km 08시 55분을 안내합니다. 기존 글의 시각을 수정하고 하단 단일 09시 표기와도 구분했습니다."
+      },
+      {
+        "question": "5km도 모바일 기록증을 주나요?",
+        "answer": "공식은 하프·10km 기록 측정과 모바일 기록증을 안내하며 5km는 칩을 사용하지 않는다고 명시합니다."
+      },
+      {
+        "question": "배송 대상은 신청한 날짜로 정해지나요?",
+        "answer": "배송 공지는 참가비 입금 완료일을 기준으로 5월 6일까지 택배·7~14일 현장 수령을 구분합니다. 유의사항의 다른 날짜와 개인 수령 안내를 함께 확인해야 합니다."
+      }
+    ],
   },
 ];

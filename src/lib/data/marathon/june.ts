@@ -98,30 +98,41 @@ export const juneEvents: MarathonEvent[] = [
     description: '28K 트레일런',
   },
   {
-    id: 'songdo-lee-bongju-marathon-2026',
-    name: '제1회 송도 이봉주 마라톤',
-    date: '2026-06-28',
-    month: '6월',
-    location: '인천대학교 송도캠퍼스',
-    region: '인천',
-    distances: ['10K', '5K'],
-    status: '대회종료',
+    id: "songdo-lee-bongju-marathon-2026",
+    name: "제1회 송도 이봉주 마라톤",
+    date: "2026-06-28",
+    month: "6월",
+    location: "인천대학교 송도캠퍼스",
+    region: "인천",
+    distances: [
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://runsongdo.co.kr',
-    description: '한국 마라톤 레전드 이봉주의 이름을 단 첫 대회. 송도 평지 코스, 만 명 선착순. 5/15(금) 접수 마감.',
+    website: "https://runsongdo.co.kr",
+    description: "6월 28일 송도 이봉주 마라톤의 10km·5km 일정은 지났다. 공식은 각 50,000원과 계획 인원 10,000명, 넷타임 기록·건타임 시상을 안내한다. 5km 제한시간은 FAQ 1시간과 6월 22일 중요 안내 1시간 30분이 다르므로 최종 공지와 개인 안내를 함께 확인해야 한다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
+      "certification": "없음",
+      "courseDescription": "이번 검증은 기록·시상·제한시간과 후속 공지에 한한다. 송도라는 장소만으로 코스 평탄도나 PB 적합성을 확정하지 않는다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '10K', fee: 50000 },
-        { distance: '5K', fee: 50000 },
+      "entryFees": [
+        {
+          "distance": "10K",
+          "fee": 50000
+        },
+        {
+          "distance": "5K",
+          "fee": 50000
+        }
       ],
-      expectedParticipants: 10000,
-      startTime: '08:00',
+      "expectedParticipants": 10000,
+      "startTime": "08:00"
     },
+    postRaceNote: "6월 29일 분실물 공지는 7월 28일까지 보관·본인 확인 후 착불 택배를 안내했다. 기한이 지난 현재 보관 상태는 미확인이다. 기록 조회와 제한시간 문의도 본인 종목·배번호와 확인할 사항이다. https://runsongdo.co.kr/notice_view.php?no=6 및 https://runsongdo.co.kr/notice_view.php?no=5",
+    registrationNote: "홈은 결제 완료순 선착순 모집과 5월 29일 17시 환불 기한을 안내한다. FAQ는 접수 마감일까지로 적으며 조기 마감 때 환불 기한 변경 조건도 있다. 과거 5월 15일을 확인된 고정 마감으로 반복하지 않는다.",
+    lastVerified: "2026-11-10",
   },
   {
     id: 'seoul-run-2026',

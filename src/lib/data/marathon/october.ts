@@ -321,60 +321,115 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'andong-marathon-2026',
-    name: '2026 안동마라톤',
-    date: '2026-10-04',
-    month: '10월',
-    location: '안동시민운동장',
-    region: '경북',
-    distances: ['풀코스', '하프', '10K', '5K'],
-    status: '대회종료',
+    id: "andong-marathon-2026",
+    name: "2026 안동마라톤",
+    date: "2026-10-04",
+    month: "10월",
+    location: "안동시민운동장",
+    region: "경북",
+    distances: [
+      "풀코스",
+      "하프",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://admarathon.kr/andong/',
-    registrationStart: '2026-05-06',
-    registrationEnd: '2026-08-18',
+    website: "https://admarathon.kr/andong/",
+    registrationStart: "2026-05-06",
+    registrationEnd: "2026-08-18",
     raceKit: {
-      items: ['배번호', '기록칩(5km 제외)', '완주메달', '모바일 기록증', '안내책자', '간식'],
-      byDistance: [
-        { distance: '풀코스', item: '기념 티셔츠·레이스 백·모자·완주 타월' },
-        { distance: '하프·10km', item: '기념 티셔츠·레이스 백' },
-        { distance: '5km', item: '기념 티셔츠' },
+      "items": [
+        "배번호",
+        "기록칩(5km 제외)",
+        "완주메달",
+        "안내책자",
+        "간식"
       ],
-      pending: '공식 고지: 기념품 디자인·항목은 상품성 개선을 위해 변경될 수 있음',
-      images: [
-        { src: '/images/marathon/andong-marathon-2026/kit-1.webp', alt: '2026 안동마라톤 공식 기념 티셔츠' },
-        { src: '/images/marathon/andong-marathon-2026/kit-2.webp', alt: '2026 안동마라톤 공식 레이스 백' },
+      "byDistance": [
+        {
+          "distance": "풀코스",
+          "item": "기념 티셔츠·레이스 백·모자·완주 타월"
+        },
+        {
+          "distance": "하프·10km",
+          "item": "기념 티셔츠·레이스 백"
+        },
+        {
+          "distance": "5km",
+          "item": "기념 티셔츠"
+        },
+        {
+          "distance": "풀·하프·10km",
+          "item": "공식 기록 제공 대상. 5km는 기록칩·공식 기록 미제공"
+        }
       ],
-      verifiedAt: '2026-08-27',
+      "pending": "공식 고지: 기념품 디자인·항목은 상품성 개선을 위해 변경될 수 있음",
+      "images": [
+        {
+          "src": "/images/marathon/andong-marathon-2026/kit-1.webp",
+          "alt": "2026 안동마라톤 공식 기념 티셔츠"
+        },
+        {
+          "src": "/images/marathon/andong-marathon-2026/kit-2.webp",
+          "alt": "2026 안동마라톤 공식 레이스 백"
+        }
+      ],
+      "verifiedAt": "2026-11-10"
     },
-    lastVerified: '2026-08-31',
-    description:
-      '획득고도 700m+ 국내 최상급 난코스. 매일신문 주최로 안동시민운동장에서 열리며, 5월 6일부터 선착순 10,000명 접수로 종료 예정일이 따로 없었고 정원이 차면서 마감됐습니다. 환불 가능 기간도 7월 26일로 종료됐습니다. 참가 자격이 종목마다 갈리는데 풀·하프는 만 19세 이상, 10km는 만 14세 이상, 5km는 나이 제한이 없습니다. 시상이 후한 편이라 풀코스와 하프 남녀 1위에게는 상금이 아니라 2026 호치민 국제마라톤 3박 5일 참가권이 걸려 있고, 안동마라톤 풀코스를 100회 이상 완주하면 100회 단위로 트로피와 지역특산품을 받습니다. 단체는 30인 이상이면 텐트 1동을 제공하며 최다참가단체상은 풀 4점·하프 3점·10km 2점·5km 1점으로 환산해 가립니다.',
+    lastVerified: "2026-11-10",
+    description: "10월 4일 안동마라톤의 풀·하프·10km·5km 일정은 지났다. 10월 6일 공식 공지는 5km 칩·공식 기록 미제공과 샤라웃 사진 원본 유료 구매를 안내한다. 8월 18일 최종 접수 마감 공지가 있으며 10,000명은 모집 계획이다. 근거를 확정하지 못한 획득고도 700m와 국내 최고 난도 표현은 제외했다.",
     courseInfo: {
-      terrain: '언덕',
-      difficulty: '상급',
-      elevationGain: 700,
-      certification: 'KAF',
-      courseDescription:
-        '획득고도 700m+ 의 국내 최상급 난이도 풀코스입니다. 07시 집결·08시 출발인데 한 번에 나가지 않고 종목별로 10분 간격 분할 출발합니다 — 풀 08:00, 하프 08:10·08:15 2차, 10km 08:20·08:25 2차, 5km 08:30 순입니다. 급수대는 전 구간 약 2.5km 간격, 간식은 약 5km 간격으로 놓입니다. 제한시간은 풀 5시간·하프 3시간·10km 2시간·5km 1시간 30분이고, 시간 내 완주가 어렵다고 판단되면 진행요원이 회송 버스 탑승을 권고합니다. 기록은 출발선 통과 시점부터 재는 넷타임이며 시상도 넷타임 기준입니다(5km만 건타임). 다만 5km는 기록칩이 아예 없어 기록이 필요하면 개인이 측정해야 합니다. 출발·반환·골인 매트를 지나지 않으면 기록이 인정되지 않고 배번호는 재발급되지 않습니다. 반려견·유모차·개인형 이동장치는 코스 진입이 제한됩니다.',
+      "certification": "KAF",
+      "courseDescription": "공식 요강은 안동시민운동장 07시 집결·08시 출발 계획이다. 획득고도 700m와 국내 최상급 난도는 공식 측정 기준을 이번에 확정하지 못해 제외했다. 계측·사진은 10월 6일 후속 공지를 따른다. 세부 고저도와 개인 GPS는 별도 확인 대상이다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '풀코스', fee: 60000 },
-        { distance: '하프', fee: 50000 },
-        { distance: '10K', fee: 50000 },
-        { distance: '5K', fee: 30000 },
+      "entryFees": [
+        {
+          "distance": "풀코스",
+          "fee": 60000
+        },
+        {
+          "distance": "하프",
+          "fee": 50000
+        },
+        {
+          "distance": "10K",
+          "fee": 50000
+        },
+        {
+          "distance": "5K",
+          "fee": 30000
+        }
       ],
-      timeLimits: [
-        { distance: '풀코스', hours: 5, minutes: 0 },
-        { distance: '하프', hours: 3, minutes: 0 },
-        { distance: '10K', hours: 2, minutes: 0 },
-        { distance: '5K', hours: 1, minutes: 30 },
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 5,
+          "minutes": 0
+        },
+        {
+          "distance": "하프",
+          "hours": 3,
+          "minutes": 0
+        },
+        {
+          "distance": "10K",
+          "hours": 2,
+          "minutes": 0
+        },
+        {
+          "distance": "5K",
+          "hours": 1,
+          "minutes": 30
+        }
       ],
-      aidInterval: '급수 2.5km마다 · 간식 5km마다',
-      expectedParticipants: 10000,
-      startTime: '08:00',
+      "aidInterval": "급수 2.5km마다 · 간식 5km마다",
+      "expectedParticipants": 10000,
+      "startTime": "08:00"
     },
+    postRaceNote: "공식 기록 문의는 010-5256-7034 문자 전용이다. 사진은 2026 안동마라톤과 배번호로 검색 후 필요하면 유료 구매하는 안내다. 5km 공식 기록·모바일 기록증을 다른 종목과 같이 제공한다고 가정하지 않는다. https://admarathon.kr/andong/board/notice/?action=view&f_idx=43256&page=1",
+    registrationNote: "공식 요강은 5월 6일 모집 시작·7월 26일 환불 기한을 적고, 8월 18일 최종 접수 마감 공지가 있다. 가상계좌는 발급 뒤 24시간 내 입금 완료 조건이었다. https://admarathon.kr/andong/board/notice/?action=view&f_idx=43227&page=1",
   },
   {
   "id": "seoul-open-marathon-2026",
@@ -409,32 +464,44 @@ export const octoberEvents: MarathonEvent[] = [
   }
 },
   {
-    id: 'gyeongpo-marathon-2026',
-    name: '2026 경포마라톤',
-    date: '2026-10-10',
-    month: '10월',
-    location: '경포해변 중앙광장',
-    region: '강원',
-    distances: ['하프', '10K', '5K'],
-    status: '대회종료',
+    id: "gyeongpo-marathon-2026",
+    name: "2026 경포마라톤",
+    date: "2026-10-10",
+    month: "10월",
+    location: "경포해변 중앙광장",
+    region: "강원",
+    distances: [
+      "하프",
+      "10K"
+    ],
+    status: "대회종료",
     isMajor: false,
-    website: 'https://www.xn--289av7rnxbd06bmrc.com/',
-    description:
-      '강릉 경포해변에서 열리는 동해안 평지 하프 코스. 5월 18일 본접수 시작 후 선착순 조기 마감됐고, 6월 30일 추가접수까지 진행돼 현재 전 부문(하프·10K·4.7K) 마감 상태입니다. 하프 단체전(5인 1조)만 사무국 문의로 열려 있습니다.',
+    website: "https://www.xn--289av7rnxbd06bmrc.com/",
+    description: "10월 10일 경포마라톤 일정은 지났다. 실제 종목은 하프·10km·4.7km 건강달리기로 4.7km를 5K로 표시하지 않는다. 07:30 집결·08:00 개회식, 하프 08:30·10km 08:40·4.7km 08:50 출발 계획이었다. 개인 기록은 넷타임·시상은 건타임이며 4.7km는 계측·시상이 없다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription: '동해안 평지 해변 코스.',
+      "certification": "없음",
+      "courseDescription": "공식은 경포해변 중앙광장에서 하프·10km·4.7km 건강달리기를 구분한다. 정확한 고도나 현장 통제·개인 기록을 코스명만으로 보장하지 않는다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 40000 },
-        { distance: '10K', fee: 40000 },
-        { distance: '4.7K 건강달리기', fee: 30000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 40000
+        },
+        {
+          "distance": "10K",
+          "fee": 40000
+        },
+        {
+          "distance": "4.7K 건강달리기",
+          "fee": 30000
+        }
       ],
-      startTime: '08:30',
+      "startTime": "08:30"
     },
+    postRaceNote: "10월 12일 분실물 공지는 사무국 033-651-0112로 문의해 상세 사진 확인 후 전달하는 절차다. 현재 물품 잔존 여부는 미확인이다. 스카이베이호텔 경포·세인트존스호텔 시설 할인은 대회 당일 안내로 상시 혜택이 아니다. https://www.xn--289av7rnxbd06bmrc.com/bbs/board.php?bo_table=notice&wr_id=134 및 https://www.xn--289av7rnxbd06bmrc.com/bbs/board.php?bo_table=notice&wr_id=132",
+    registrationNote: "요강은 5월 18일 10시부터 입금 기준 선착순 모집으로 적는다. 종료된 추가접수 버튼이나 하프 단체 문의를 현재 신규 참가권으로 안내하지 않는다.",
+    lastVerified: "2026-11-10",
   },
   {
     id: "kakao-friends-run-2026",
@@ -887,27 +954,45 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'daecheongho-marathon-2026',
-    name: '2026 청원생명쌀 대청호마라톤',
-    date: '2026-10-17',
-    month: '10월',
-    location: '충북 문의체육공원',
-    region: '충북',
-    distances: ['풀코스', '하프', '10K', '5K'],
-    status: '대회종료',
+    id: "daecheongho-marathon-2026",
+    name: "2026 청원생명쌀 대청호마라톤",
+    date: "2026-10-17",
+    month: "10월",
+    location: "충북 문의체육공원",
+    region: "충북",
+    distances: [
+      "풀코스",
+      "하프",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: false,
-    website: 'https://race.cjsports.or.kr',
-    description:
-      '대청호를 배경으로 달리는 충북 대표 풀코스 마라톤 24회차. 가을 단풍 코스로 유명하며 정원은 6,000명(풀 800·하프 1,400·10km 2,000·5km 1,800). 종목별로 5월 초순~중순에 순차 접수를 시작해 6월 12일 마감됐습니다. 고3 이하 할인가(풀·하프·10km 30,000원, 5km 15,000원)가 별도로 있습니다.',
+    website: "https://race.cjsports.or.kr",
+    description: "10월 17일 제24회 청원생명쌀 대청호마라톤 일정은 지났다. 요강 상세 출발은 풀 08:40·하프 08:50·10km와 5km 09:00으로, 상단 행사 일시 08:00과 구분된다. 5km는 칩·기록증·시상이 없다. 일반 참가비는 풀·하프·10km 각 45,000원·5km 25,000원이며 할인과 참가 연령 조건은 별도다.",
     raceInfo: {
-      entryFees: [
-        { distance: '풀코스', fee: 45000 },
-        { distance: '하프', fee: 45000 },
-        { distance: '10K', fee: 45000 },
-        { distance: '5K', fee: 25000 },
+      "entryFees": [
+        {
+          "distance": "풀코스",
+          "fee": 45000
+        },
+        {
+          "distance": "하프",
+          "fee": 45000
+        },
+        {
+          "distance": "10K",
+          "fee": 45000
+        },
+        {
+          "distance": "5K",
+          "fee": 25000
+        }
       ],
-      startTime: '08:40',
+      "startTime": "08:40"
     },
+    postRaceNote: "10월 20일 공지는 임시 기록이며 이의신청 기한 10월 23일 17시 종료 뒤 일주일 후 공식 갱신할 예정이라고 안내했다. 현재 모든 결과의 정정 완료를 확인한 것은 아니다. 풀코스 24.5·33·37km 부근 공사와 유턴 안내는 별도 대회 전 공지다. https://race.cjsports.or.kr/04/?group=basic&code=B01&no=8378&bsort=desc&bfsort=wdate&abmode=view",
+    lastVerified: "2026-11-10",
   },
   {
     id: "gangnam-peace-marathon-2026",
