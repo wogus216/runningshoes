@@ -47,14 +47,25 @@ export const marchEvents: MarathonEvent[] = [
   },
   {
     id: 'run-your-way-half-2026',
-    name: '2026 Run your way HALF',
-    date: '2026-03-01',
+    name: '2026 Run your way HALF RACE SEOUL',
+    date: '2026-03-02',
     month: '3월',
-    location: '서울 광화문광장',
+    location: '출발 서울 광화문광장 · 도착 잠실종합운동장',
     region: '서울',
     distances: ['하프'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://en.eland.co.kr/news/viewNews?cate=P&cateIdx=904',
+    description: '이랜드 뉴발란스의 2026년 3월 3일 성료 자료는 하프 레이스를 3월 2일 개최했다고 알렸다. 광화문광장에서 출발해 잠실종합운동장에 도착한 21.0975km 대회다. 기존 3월 1일 일정과 올림픽공원 도착 안내를 최종 개최 정보로 사용하지 않는다.',
+    courseInfo: { courseDescription: '주최사 성료 자료상 광화문광장 출발·잠실종합운동장 도착의 21.0975km 하프다. 정확한 경유지·개인 GPS·고도는 이번 자료로 확정하지 않았다.' },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '이랜드 뉴발란스 3월 3일 개최 결과·최종 도착지', url: 'https://en.eland.co.kr/news/viewNews?cate=P&cateIdx=904' },
+      ],
+      note: '2026년 3월 2일 개최분이다. 주최사의 성료 자료로 날짜·출발/도착지를 확인했다. 초기 접수 계획과 최종 개최 정보를 구분하며 참가비·세부 컷오프·개별 물품 지급을 이 자료만으로 확정하지 않는다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'busan-beach-ultra-2026',
@@ -219,13 +230,46 @@ export const marchEvents: MarathonEvent[] = [
   {
     id: 'seoul-k-marathon-2026',
     name: '2026 서울 K-마라톤',
-    date: '2026-03-22',
+    date: '2026-03-29',
     month: '3월',
-    location: '서울 광화문광장',
+    location: '출발 서울 광화문광장 앞 대로 · 도착 무교로',
     region: '서울',
-    distances: ['하프', '10K'],
+    distances: ['하프', '10.5K'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://seoulmarathon.org/sub02/sub01_01.php',
+    description: '최종 공식 대회개요와 교통통제 공지는 2026년 3월 29일 07:30 출발을 안내했다. 초기 3월 22일 공지와 구분해야 한다. 하프와 10K 접수 부문을 운영했으나, 대한육상연맹 실측 뒤 해당 10K 코스를 10.5km로 안내하고 기록증에 10K 구간 기록도 함께 표기한다고 공지했다.',
+    courseInfo: {
+      courseDescription: '대회개요상 광화문광장 앞 대로에서 출발해 무교로에 도착한다. 공식 코스 메뉴는 하프와 10.5km를 구분한다. 10K로 접수한 부문의 실제 코스 안내는 10.5km이며, 공식은 별도 10K 표지·측정기와 10K 구간 기록 표기를 설명했다. 실측 진행 공지 자체를 전체 코스 인증 완료로 확대하지 않는다.',
+    },
+    raceInfo: {
+      entryFees: [
+        { distance: '하프', fee: 70000 },
+        { distance: '10K 접수 부문 · 실측 10.5km', fee: 60000 },
+      ],
+      timeLimits: [
+        { distance: '하프', hours: 2, minutes: 30 },
+      ],
+      startTime: '07:30부터 그룹별 순차 출발',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '최종 2026 대회개요·날짜·참가비·출발/도착지', url: 'https://seoulmarathon.org/sub02/sub01_01.php' },
+        { title: '3월 29일 최종 교통통제 공지', url: 'https://seoulmarathon.org/bbs/board.php?bo_table=id_noticeNew2026&wr_id=29' },
+        {
+          title: '대한육상연맹 실측 후 10.5km 안내',
+          url: 'https://seoulmarathon.org/bbs/board.php?bo_table=id_noticeNew2026&wr_id=24',
+        },
+        {
+          title: '10K 구간 계측·기록증 표기 공지',
+          url: 'https://seoulmarathon.org/bbs/board.php?bo_table=id_noticeNew2026&wr_id=26',
+        },
+        { title: '주최 측 제한시간·그룹별 출발 유의사항', url: 'https://seoulmarathon.org/sub02/sub02_14.php' },
+      ],
+      note: '최종 개최일은 3월 29일이다. 10K 접수 명칭과 10.5km 실측 코스 길이를 구분했다. 유의사항에는 기존 10km 부문 제한시간을 1시간 40분으로 적고 있으므로 10.5km 변경 후의 별도 확정 컷오프와 혼동하지 않도록 확인이 필요하다. 실측 공지는 인증 완료 표지가 아니다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'taehwagang-marathon-2026',

@@ -217,14 +217,39 @@ export const aprilEvents: MarathonEvent[] = [
   },
   {
     id: 'dmz-peace-marathon-2026',
-    name: '2026 DMZ평화마라톤',
+    name: '2026 DMZ 평화마라톤',
     date: '2026-04-19',
     month: '4월',
-    location: '경기 임진각',
+    location: '경기 파주 임진각 평화누리 공연장',
     region: '경기',
     distances: ['하프', '10K', '5K'],
     status: '대회종료',
     isMajor: false,
+    website: 'https://dmzmarathon.newstomato.com/info/outline.aspx',
+    registrationStart: '2026-01-23',
+    description: '공식 요강은 2026년 4월 19일 임진각 평화누리 공연장 08:30 집결·09:30 출발, 하프·10km·5km를 안내했다. 일반 참가비는 종목별 5만원이며 모집 계획은 총 5,000명이다. 15,000원 표시는 통통쿠폰을 보유한 구독회원 등 조건부 할인으로, 일반 참가비와 구분해야 한다.',
+    raceInfo: {
+      entryFees: [
+        { distance: '하프 일반', fee: 50000 },
+        { distance: '10K 일반', fee: 50000 },
+        { distance: '5K 일반', fee: 50000 },
+      ],
+      expectedParticipants: 5000,
+      startTime: '09:30',
+    },
+    courseInfo: {
+      courseDescription: '공식은 5km·10km·하프 지도와 민간인통제구역을 구분해 안내했다. 10km의 통일대교~통일촌사거리, 하프의 통일대교~남북출입사무소 구간은 군 작전 상황에 따라 코스가 조정될 수 있다고 고지했다. 민통선 내 촬영장비 사용·코스 이탈에 관한 주최 측 제한도 해당 안내에서 확인해야 한다. 독립 GPS·고도는 확인하지 않았다.',
+    },
+    factCheck: {
+      checkedAt: '2026-11-11',
+      sources: [
+        { title: '2026 공식 요강·집결/출발·일반 참가비', url: 'https://dmzmarathon.newstomato.com/info/outline.aspx' },
+        { title: '종목별 코스·민통선 구간 운영 안내', url: 'https://dmzmarathon.newstomato.com/course/courseInfo.aspx' },
+        { title: '참가·기록칩·변경 유의사항', url: 'https://dmzmarathon.newstomato.com/info/caution.aspx' },
+      ],
+      note: '2026년 4월 파주 개최분이며 철원 DMZ 대회와 구분한다. 모집 계획은 실제 참가·완주 인원이 아니다. 통통쿠폰 할인은 보유·구독회원 확인 등 조건이 있고 단체 신청에는 적용되지 않는다는 주최 안내다. 정확한 접수 마감 시각·고도·현재 거래 조건은 확정하지 않았다.',
+    },
+    lastVerified: '2026-11-11',
   },
   {
     id: 'songdo-walk-run-2026',

@@ -14,17 +14,6 @@ export const juneEvents: MarathonEvent[] = [
     description: '200K/100K 울트라마라톤',
   },
   {
-    id: 'dawn-riverside-marathon-2026',
-    name: '제23회 새벽강변 국제마라톤',
-    date: '2026-06-07',
-    month: '6월',
-    location: '서울 상암',
-    region: '서울',
-    distances: ['하프', '10K', '5K'],
-    status: '대회종료',
-    isMajor: false,
-  },
-  {
     id: "mind-marathon-2026",
     name: "2026 마인드마라톤",
     date: "2026-06-07",
