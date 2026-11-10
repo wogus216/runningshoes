@@ -26,11 +26,11 @@ export type Problem = {
 export const PROBLEMS: readonly Problem[] = [
   { rank: 1, id: 'first', question: '처음 러닝화를 고르고 있어요',
     criteria: '쿠션 여유, 무게, 가격대를 기준으로 부담 없는 첫 켤레를 찾습니다.', slug: 'beginner',
-    leadCriteria: '첫 켤레는 실패하면 러닝 자체가 싫어집니다. 쿠션 여유·무게·가격대를 함께 보고, ' +
-      '국내에서 실제로 살 수 있는 모델만 남깁니다.',
+    leadCriteria: '입문화로 분류한 모델의 구조·무게·확인 가격을 비교합니다. ' +
+      '국내 출시 정보와 현재 판매처의 사이즈·재고를 따로 확인하세요.',
     keys: ['쿠션 여유', '무게', '가격대', '국내 출시'] },
   { rank: 2, id: 'wide', question: '발볼이 넓어서 선택이 어려워요',
-    criteria: '와이드 출시 여부, 토박스 너비, 갑피 여유를 기준으로 찾습니다.', slug: 'wide-toebox' },
+    criteria: '한국 와이드 옵션을 확인한 모델을 모았습니다. 실제 신을 폭의 착화감을 비교하세요.', slug: 'wide-toebox' },
   { rank: 3, id: 'long', question: '편안하게 오래 달리고 싶어요',
     criteria: '스택 높이, 충격흡수 성향, 로커 구조를 기준으로 찾습니다.', slug: 'max-cushion' },
   { rank: 4, id: 'race', question: '기록을 줄이고 싶어요',
@@ -39,5 +39,5 @@ export const PROBLEMS: readonly Problem[] = [
     criteria: '신발 수치로 판단할 수 있는 것과 임상 근거의 한계를 확인합니다.', slug: 'knee-protection',
     note: '러닝화 정보는 진단이나 치료를 대신하지 않습니다.' },
   { rank: 6, id: 'all', question: '한 켤레로 다양하게 뛰고 싶어요',
-    criteria: '다목적 성향, 내구성 범위, 가격 균형을 기준으로 찾습니다.', slug: 'daily-trainer' },
+    criteria: '일상 훈련용으로 분류한 모델의 구조·확인 가격·착화 조건을 비교합니다.', slug: 'daily-trainer' },
 ] as const;

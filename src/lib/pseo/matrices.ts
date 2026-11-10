@@ -81,9 +81,9 @@ function categoryEntries(): MatrixEntry[] {
     return {
       slug,
       group: 'category' as const,
-      h1: `${kor} 러닝화 추천 TOP — 한국 러너 관점 분석`,
-      metaTitle: `${kor} 러닝화 추천 TOP | ${eng} Best Picks 2026`,
-      metaDescription: `한국 러너를 위한 ${kor} 러닝화 추천. 입력된 스펙과 에디터 평가로 비교하는 목록입니다. 출처와 측정 조건은 개별 모델에서 확인하세요.`,
+      h1: `${kor} 러닝화 비교 — 구조·확인 가격·착화 조건`,
+      metaTitle: `${kor} 러닝화 비교 | ${eng} 모델별 조건`,
+      metaDescription: `${kor}로 분류한 러닝화의 구조와 확인 가격을 비교합니다. 가격이 낮은 순서의 목록이며, 출처·측정 조건·폭 옵션은 개별 모델에서 확인하세요.`,
       intro: angles[kor].intro,
       faq: angles[kor].faq,
       filter: (s) => s.category === kor && hasMinimumData(s),
@@ -224,10 +224,10 @@ function distanceEntries(): MatrixEntry[] {
     {
       slug: 'marathon',
       group: 'distance',
-      h1: '풀마라톤(42.195km) 러닝화 추천',
-      metaTitle: '풀마라톤 러닝화 추천 | 42km 카본/쿠션화 TOP',
+      h1: '풀마라톤(42.195km) 러닝화 비교 후보',
+      metaTitle: '풀마라톤 러닝화 비교 | 레이싱·쿠션화 조건',
       metaDescription:
-        '풀마라톤 완주·기록 단축에 적합한 러닝화. 카본 슈퍼슈즈와 두꺼운 쿠션화 중 본인 페이스에 맞는 선택 가이드.',
+        '레이싱·쿠션화로 분류한 모델을 확인 가격순으로 비교합니다. 목록 선정이 개인의 완주·기록 향상이나 페이스 적합성을 보장하지 않습니다.',
       intro: '거리별로 비교할 후보를 편집 기준으로 모은 목록입니다. 필터는 임상 효과나 개인의 최적 페이스를 입증한 기준이 아닙니다. 러닝 용도·예산·착화감과 개별 모델의 출처를 함께 확인하세요.',
       faq: [
         {
@@ -252,10 +252,10 @@ function distanceEntries(): MatrixEntry[] {
     {
       slug: 'half-marathon',
       group: 'distance',
-      h1: '하프마라톤(21.0975km) 러닝화 추천',
-      metaTitle: '하프마라톤 러닝화 추천 | 21km Best Picks',
+      h1: '하프마라톤(21.0975km) 러닝화 비교 후보',
+      metaTitle: '하프마라톤 러닝화 비교 | 무게·플레이트 조건',
       metaDescription:
-        '하프마라톤에 적합한 러닝화. 가벼운 데일리 트레이너부터 카본화까지 페이스별 추천.',
+        '입문화·안정화 분류를 제외하고, 입력 무게 290g 이하 또는 카본 플레이트 조건으로 모은 편집 목록입니다. 개인 적합성·페이스 순위는 아닙니다.',
       intro: '거리별로 비교할 후보를 편집 기준으로 모은 목록입니다. 필터는 임상 효과나 개인의 최적 페이스를 입증한 기준이 아닙니다. 러닝 용도·예산·착화감과 개별 모델의 출처를 함께 확인하세요.',
       faq: [
         {
@@ -277,10 +277,10 @@ function distanceEntries(): MatrixEntry[] {
     {
       slug: '10k',
       group: 'distance',
-      h1: '10K 러닝화 추천 — 가벼움과 반응성',
-      metaTitle: '10K 러닝화 추천 | 가벼운 러닝화 TOP',
+      h1: '10K 러닝화 비교 후보 — 무게·플레이트 조건',
+      metaTitle: '10K 러닝화 비교 | 무게·플레이트 조건',
       metaDescription:
-        '10K 대회·인터벌·템포런에 적합한 가볍고 반응성 좋은 러닝화. 무게 270g 이하 또는 카본 슈퍼슈즈.',
+        '입문화·안정화 분류를 제외하고, 입력 무게 270g 이하 또는 카본 플레이트 조건으로 모은 편집 목록입니다. 측정 사이즈와 실제 착화를 확인하세요.',
       intro: '거리별로 비교할 후보를 편집 기준으로 모은 목록입니다. 필터는 임상 효과나 개인의 최적 페이스를 입증한 기준이 아닙니다. 러닝 용도·예산·착화감과 개별 모델의 출처를 함께 확인하세요.',
       faq: [
         {
@@ -317,10 +317,10 @@ function brandCategoryEntries(): MatrixEntry[] {
       out.push({
         slug,
         group: 'brand-category',
-        h1: `${brand} ${category} 러닝화 추천 TOP`,
-        metaTitle: `${brand} ${category} 러닝화 추천 | Best ${brand} ${categoryEnglish[category]}`,
-        metaDescription: `${brand}의 ${category} 러닝화 라인업을 한국 러너 관점에서 비교 분석. 토박스, 가성비, 제품 구조까지 비교.`,
-        intro: `${brand}는 ${category} 카테고리에서 ${matches.length}개 모델을 운영합니다. 같은 브랜드 안에서도 모델별로 토박스, 쿠셔닝, 가격대가 크게 다르므로 본인 러닝 목적과 발 특성에 맞는 선택이 중요합니다. 모델별로 확인한 공식·외부 자료와 미확인 항목을 상세 페이지에서 구분해 읽으세요.`,
+        h1: `${brand} ${category} 러닝화 비교`,
+        metaTitle: `${brand} ${category} 러닝화 비교 | ${categoryEnglish[category]} 모델별 조건`,
+        metaDescription: `사이트에 등록된 ${brand} ${category} 모델의 구조·확인 가격·폭 옵션을 비교합니다. 전체 현행 라인업이나 성능 순위를 뜻하지 않습니다.`,
+        intro: `사이트에 등록된 ${brand} 모델 중 ${category}로 분류한 비교 후보는 ${matches.length}개입니다. 브랜드의 전체 현행 라인업 수를 뜻하지 않습니다. 모델별 구조·확인 가격·폭 옵션과 실제 착화감을 비교하고, 출처와 미확인 항목은 상세 페이지에서 확인하세요.`,
         faq: [
           {
             q: `${brand} ${category} 라인 중 입문자에게 가장 무난한 모델은?`,
