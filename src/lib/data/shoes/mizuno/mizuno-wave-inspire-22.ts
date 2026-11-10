@@ -6,9 +6,11 @@ export const shoe: Shoe = {
   slug: 'mizuno-wave-inspire-22',
   brand: 'Mizuno',
   name: '웨이브 인스파이어 22',
-  image: '/images/shoes/mizuno/waveinspire22/side.webp',
+  imageCaption: "웨이브 인스파이어 22 사진(J1GC264407 · White/White/White)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+  imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en/wave-inspire-22/J1GC264407.html"},
+  image: "/images/shoes/mizuno/waveinspire22/side.webp",
   images: [
-    '/images/shoes/mizuno/waveinspire22/side.webp',
+    "/images/shoes/mizuno/waveinspire22/side.webp",
   ],
   category: '안정화',
   price: 169000,

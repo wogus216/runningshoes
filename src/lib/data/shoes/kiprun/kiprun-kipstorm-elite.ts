@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "kiprun-kipstorm-elite",
     brand: "Kiprun",
     name: "킵스톰 엘리트",
+    imageCaption: "킵스톰 엘리트 사진(8961380 · 울트라 화이트,플루오 네온 핑크)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Decathlon 한국 공식 상품 갤러리","url":"https://www.decathlon.co.kr/p/남성-카본-레이싱화-킵스톰-엘리트-kiprun-8961380.html"},
     image: "/images/shoes/kiprun/kipstorm-elite/side.webp",
     images: [
       "/images/shoes/kiprun/kipstorm-elite/side.webp",

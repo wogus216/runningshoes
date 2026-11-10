@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "salomon-pulsar",
     brand: "Salomon",
     name: "펄사",
+    imageCaption: "펄사 사진(L49230100 · Fiery Red / Vanilla Ice / Black)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Salomon 공식 상품 갤러리","url":"https://www.salomon.com/en-us/product/pulsar-li8495/L49230100?sizeId=L49230100037"},
     image: "/images/shoes/salomon/pulsar/side.webp",
     images: [
       "/images/shoes/salomon/pulsar/side.webp",

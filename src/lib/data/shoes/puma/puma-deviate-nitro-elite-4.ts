@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-deviate-nitro-elite-4",
     brand: "Puma",
     name: "디비에이트 나이트로 엘리트 4",
+    imageCaption: "디비에이트 나이트로 엘리트 4 사진(312127-06 · PUMA White-Apple Spritz-Lux Lime)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06"},
     image: "/images/shoes/puma/deviatenitroelite4/side.webp",
     images: [
       "/images/shoes/puma/deviatenitroelite4/side.webp",
       "/images/shoes/puma/deviatenitroelite4/front.webp",
       "/images/shoes/puma/deviatenitroelite4/back.webp",
       "/images/shoes/puma/deviatenitroelite4/angle.webp",
-      "/images/shoes/puma/deviatenitroelite4/detail.webp"
+      "/images/shoes/puma/deviatenitroelite4/official-312127-06-angle.jpg"
     ],
     category: "레이싱",
     description: "NITROFOAM ELITE(A-TPU, RR 귀속) · 카본 PWRPLATE 구조의 디비에이트 나이트로 엘리트 4. RunRepeat 실험실 검체 173g·37.2/28.3mm. 한국 현재 정가 미확인.",

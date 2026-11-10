@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-magmax-nitro-2",
     brand: "Puma",
     name: "매그맥스 나이트로 2",
-    image: "/images/shoes/puma/magMax_NITRO2.webp",
+    imageCaption: "매그맥스 나이트로 2 사진(312125-02 · PUMA White-Silver Mist)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/magmax-nitro-2/312125.html?dwvar_312125_color=02"},
+    image: "/images/shoes/puma/magmaxnitro2/side.webp",
     images: [
       "/images/shoes/puma/magmaxnitro2/side.webp",
       "/images/shoes/puma/magmaxnitro2/front.webp",
       "/images/shoes/puma/magmaxnitro2/back.webp",
       "/images/shoes/puma/magmaxnitro2/top.webp",
-      "/images/shoes/puma/magmaxnitro2/outsole.webp"
+      "/images/shoes/puma/magmaxnitro2/official-312125-02-pair.jpg"
     ],
     category: "쿠션화",
     description: "NITROFOAM · 높은 로커 · PUMAGRIP 구조의 매그맥스 나이트로 2. RunRepeat 실험실 검체 269g·45.5/35mm. 한국 현재 정가 미확인.",

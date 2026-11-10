@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-deviate-nitro-3",
     brand: "Puma",
     name: "디비에이트 나이트로 3",
-    image: "/images/shoes/puma/deviate_NITRO3.webp",
+    imageCaption: "디비에이트 나이트로 3 사진(309707-10 · PUMA White-Feather Gray-PUMA Silver)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://ph.puma.com/ph/en/pd/deviate-nitro%E2%84%A2-3-running-shoes-men/309707.html?dwvar_309707_color=10"},
+    image: "/images/shoes/puma/deviatenitro3/side.webp",
     images: [
       "/images/shoes/puma/deviatenitro3/side.webp",
       "/images/shoes/puma/deviatenitro3/front.webp",
       "/images/shoes/puma/deviatenitro3/back.webp",
       "/images/shoes/puma/deviatenitro3/top.webp",
-      "/images/shoes/puma/deviatenitro3/outsole.webp"
+      "/images/shoes/puma/deviatenitro3/official-309707-10-pair.jpg"
     ],
     category: "쿠션화",
     description: "NITROFOAM 이중 밀도 · 카본 PWRPLATE 구조의 디비에이트 나이트로 3. 실험실 268g·힐/전족부 37.4/27.3mm. 한국 현재 정가 미확인.",

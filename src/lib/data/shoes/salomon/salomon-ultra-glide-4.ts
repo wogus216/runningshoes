@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "salomon-ultra-glide-4",
     brand: "Salomon",
     name: "울트라 글라이드 4",
+    imageCaption: "울트라 글라이드 4 사진(L49221300 · Fiery Red / Vanilla Ice / Black)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Salomon 공식 상품 갤러리","url":"https://www.salomon.com.mx/products/ultra-glide-4-hombre-calzado-trail-running"},
     image: "/images/shoes/salomon/ultraglide4/side.webp",
     images: [
       "/images/shoes/salomon/ultraglide4/side.webp",

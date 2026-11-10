@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "mizuno-hyperwarp-pro",
     brand: "Mizuno",
     name: "하이퍼워프 프로",
+    imageCaption: "하이퍼워프 프로 사진(J1GC267201 · White/Lightning Yellow/Hyper Blue)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en/hyperwarp-pro/J1GC267201.html"},
     image: "/images/shoes/mizuno/hyperwarppro/side.webp",
     images: [
       "/images/shoes/mizuno/hyperwarppro/side.webp",
       "/images/shoes/mizuno/hyperwarppro/top.webp",
       "/images/shoes/mizuno/hyperwarppro/outsole.webp",
       "/images/shoes/mizuno/hyperwarppro/front.webp",
-      "/images/shoes/mizuno/hyperwarppro/back.webp"
+      "/images/shoes/mizuno/hyperwarppro/back.webp",
     ],
     category: "레이싱",
     price: 249000,

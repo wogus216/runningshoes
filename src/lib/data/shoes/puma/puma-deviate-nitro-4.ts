@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "puma-deviate-nitro-4",
     brand: "Puma",
     name: "디비에이트 나이트로 4",
+    imageCaption: "디비에이트 나이트로 4 사진(312123-02 · PUMA White-Feather Gray)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/deviate-nitro-4/312123.html?dwvar_312123_color=02"},
     image: "/images/shoes/puma/deviatenitro4/side.webp",
     images: [
       "/images/shoes/puma/deviatenitro4/side.webp",

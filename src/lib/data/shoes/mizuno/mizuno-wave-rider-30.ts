@@ -8,6 +8,8 @@ export const shoe: Shoe = {
     name: "웨이브 라이더 30",
     category: "데일리",
     price: 179000,
+    imageCaption: "웨이브 라이더 30 사진(J1GM262051 · 화이트/블루/오렌지 (한국 공식 옵션명))입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://kor.mizuno.com/product/detail.html?product_no=12025&cate_no=803&display_group=1"},
     image: "/images/shoes/mizuno/wave-rider-30/side.webp",
     description: "질소 주입 ENERZY NXT 이중폼 · 전장 Wave Plate 구조의 웨이브 라이더 30. RunRepeat 실험실 검체 266g·42.8/33.7mm. 한국 확인 가격 179,000원.",
     oneliner: "질소 주입 ENERZY NXT 이중폼 · 전장 Wave Plate · 266g (RunRepeat 실험실 검체)",

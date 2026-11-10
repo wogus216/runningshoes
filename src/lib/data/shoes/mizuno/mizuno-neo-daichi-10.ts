@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "mizuno-neo-daichi-10",
     brand: "Mizuno",
     name: "네오 다이치 10",
+    imageCaption: "네오 다이치 10 사진(J1GM268051 · Foggy Dew/vulcan/dark Slate)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en-gb/mizuno-neo-daichi-10/J1GM268051.html"},
     image: "/images/shoes/mizuno/neo-daichi-10/side.webp",
     images: [
       "/images/shoes/mizuno/neo-daichi-10/side.webp",
@@ -13,7 +15,7 @@ export const shoe: Shoe = {
       "/images/shoes/mizuno/neo-daichi-10/detail.webp",
       "/images/shoes/mizuno/neo-daichi-10/back.webp",
       "/images/shoes/mizuno/neo-daichi-10/top.webp",
-      "/images/shoes/mizuno/neo-daichi-10/outsole.webp"
+      "/images/shoes/mizuno/neo-daichi-10/outsole.webp",
     ],
     category: "트레일",
     description: "Enerzy NXT · Smooth Speed Assist · 전족 Rock Plate · Vibram 구조. 해외 제조사 공시 · 기준 사이즈 미공시 290g·드롭 6mm, 독립 랩·스택·한국 현재 가격은 미확인입니다.",

@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-velocity-nitro-4",
     brand: "Puma",
     name: "벨로시티 나이트로 4",
-    image: "/images/shoes/puma/velocity_Nitro4 .webp",
+    imageCaption: "벨로시티 나이트로 4 사진(311140-08 · Warm White-Gold Moon)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://us.puma.com/us/en/pd/velocity-nitro-4-mens-road-running-shoes/311140?swatch=08"},
+    image: "/images/shoes/puma/velocitynitro4/side.webp",
     images: [
       "/images/shoes/puma/velocitynitro4/side.webp",
       "/images/shoes/puma/velocitynitro4/front.webp",
       "/images/shoes/puma/velocitynitro4/back.webp",
       "/images/shoes/puma/velocitynitro4/top.webp",
-      "/images/shoes/puma/velocitynitro4/outsole.webp"
+      "/images/shoes/puma/velocitynitro4/official-311140-08-pair.jpg"
     ],
     category: "입문화",
     price: 179000,

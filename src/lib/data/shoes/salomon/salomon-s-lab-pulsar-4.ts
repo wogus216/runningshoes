@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'salomon-s-lab-pulsar-4',
   brand: 'Salomon',
   name: 'S/LAB 펄사 4',
+  imageCaption: "S/LAB 펄사 4 사진(L47770300 · Fiery Red / Vanilla Ice / Andorra (파이어리 레드 / 바닐라 아이스 / 안도라))입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+  imageSource: {"title":"Salomon 공식 상품 갤러리","url":"https://salomon.co.kr/products/l47770300"},
   image: '/images/shoes/salomon/slab-pulsar-4/side.webp',
   images: [
     '/images/shoes/salomon/slab-pulsar-4/side.webp',

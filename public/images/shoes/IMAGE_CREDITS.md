@@ -410,3 +410,47 @@ ASICS 뷰는 SR_RT_GLB·SB_FR_GLB·SB_BK_GLB·SB_FL_GLB·SB_BT_GLB·SB_TP_GLB, H
 - 디비에이트 나이트로 퓨어: [한국 공식 313904-01 갤러리](https://kr.puma.com/kr/ko/pd/deviate-pure-nitro/313904.html?dwvar_313904_color=01), PUMA White / PUMA Silver. 기존 `front.webp`는 제품 대신 “Picture coming soon” 안내가 담겨 있어 갤러리 참조를 제거했습니다. `official-313904-01-pair.jpg`는 해당 공식 갤러리의 페어 사진 원본을 가공 없이 복사한 파일입니다. 기존 side·back·angle·outsole 파일은 각각 공식 sv01·bv·sv02·sv04 사진과 대조했습니다. 파일명 outsole은 기존 이름이며 sv04는 사선 사진입니다.
 - 벨로시티 나이트로5: [한국 공식 312944-05 갤러리](https://kr.puma.com/kr/ko/pd/velocity-nitro-5/312944.html?dwvar_312944_color=05), PUMA White / Ultra Red. 기존 side·angle·top·detail 4장은 각각 sv01·sv04·sv02·sv03 사진과 대조했습니다. top 파일은 위·밑창 페어 사진입니다.
 - 사진 대조는 해당 색상의 이미지 식별 범위이며 현재 선택 재고·가격·한국 폭 옵션의 인증이 아닙니다.
+
+## 2026-11-11 PUMA 나머지 8종·Salomon 3종·Kiprun 2종 사진 대조
+
+사진의 세대·품번·색상·구도를 공식 상품 갤러리와 대조했습니다. PUMA 6종의 로고 안내 이미지는 공식 페어 제품 사진으로, Elite4 캠페인 사진은 공식 단독 제품 사선 사진으로 참조를 바꿨습니다. PUMA 5종의 기존 대표 이미지는 출처를 대조한 해당 모델 갤러리 측면 사진으로 통일했습니다. 새 JPEG 7개는 원본을 재가공 없이 복사했습니다.
+
+| 모델 | 사진 품번·색상 | 공식 갤러리 |
+|---|---|---|
+| puma-deviate-nitro-3 | 309707-10 · PUMA White-Feather Gray-PUMA Silver | [원문](https://ph.puma.com/ph/en/pd/deviate-nitro%E2%84%A2-3-running-shoes-men/309707.html?dwvar_309707_color=10) |
+| puma-deviate-nitro-4 | 312123-02 · PUMA White-Feather Gray | [원문](https://kr.puma.com/kr/ko/pd/deviate-nitro-4/312123.html?dwvar_312123_color=02) |
+| puma-deviate-nitro-elite-3 | 309809-04 · Pure Magenta-Yellow Alert | [원문](https://in.puma.com/in/en/pd/deviate-nitro-elite-3-mens-running-shoes/309809?swatch=04) |
+| puma-deviate-nitro-elite-4 | 312127-06 · PUMA White-Apple Spritz-Lux Lime | [원문](https://kr.puma.com/kr/ko/pd/deviate-nitro-elite-4/312127.html?dwvar_312127_color=06) |
+| puma-fast-r-nitro-elite-3 | 312060-03 · Heat Fire-Sun Stream | [원문](https://kr.puma.com/kr/ko/pd/fast-r-nitro-elite-3/312060.html?dwvar_312060_color=03) |
+| puma-magmax-nitro-2 | 312125-02 · PUMA White-Silver Mist | [원문](https://kr.puma.com/kr/ko/pd/magmax-nitro-2/312125.html?dwvar_312125_color=02) |
+| puma-magnify-nitro-3 | 311046-01 · PUMA Black-PUMA White | [원문](https://kr.puma.com/kr/ko/pd/magnify-nitro-3/311046.html?dwvar_311046_color=01) |
+| puma-velocity-nitro-4 | 311140-08 · Warm White-Gold Moon | [원문](https://us.puma.com/us/en/pd/velocity-nitro-4-mens-road-running-shoes/311140?swatch=08) |
+| salomon-pulsar | L49230100 · Fiery Red / Vanilla Ice / Black | [원문](https://www.salomon.com/en-us/product/pulsar-li8495/L49230100?sizeId=L49230100037) |
+| salomon-ultra-glide-4 | L49221300 · Fiery Red / Vanilla Ice / Black | [원문](https://www.salomon.com.mx/products/ultra-glide-4-hombre-calzado-trail-running) |
+| salomon-s-lab-pulsar-4 | L47770300 · Fiery Red / Vanilla Ice / Andorra (파이어리 레드 / 바닐라 아이스 / 안도라) | [원문](https://salomon.co.kr/products/l47770300) |
+| kiprun-kipstorm-elite | 8961380 · 울트라 화이트,플루오 네온 핑크 | [원문](https://www.decathlon.co.kr/p/남성-카본-레이싱화-킵스톰-엘리트-kiprun-8961380.html) |
+| kiprun-kipsummit-max | 8970093 · 허니 옐로우 | [원문](https://www.decathlon.co.kr/p/남성-트레일러닝화-킵서밋-맥스-kiprun-8970093.html) |
+
+해외 공식 갤러리로 대조한 사진은 한국 판매 옵션·정가의 근거가 아닙니다. 일반 Pulsar의 사진 품번 확인을 구조·성분·한국 판매 상태 확인으로 확대하지 않습니다. 사진 원촬영자·개별 이용 허가는 이 대조 범위에 포함하지 않았습니다.
+
+## 2026-11-11 Mizuno 13종 사진 대조·Horizon8 교정
+
+Horizon8의 기존 BOA 다이얼 신발 사진 5장은 공식 WAVE HORIZON 8과 모델이 달라 한국 공식 SW 상품 J1GC253102 사진 5장으로 교체했습니다. 새 JPEG는 원본을 가공 없이 복사했으며 SW 옵션을 캡션에서 구분했습니다. 다른 12종의 44장은 공식 사진과 모델·색상·구도가 대응합니다. 같은 구도의 원본을 찾지 못한 Inspire21 1장·Flash3 3장·Sky9 1장은 현재 갤러리 참조에서 제외했습니다. Sky9 대표 사진은 대조된 내측 사진으로 바꿨습니다. 기존 파일은 지우지 않았습니다.
+
+| 모델 | 사진 품번·색상 | 공식 갤러리 |
+|---|---|---|
+| mizuno-hyperwarp-elite | J1GC267101 · White/Lightning Yellow/Hyper Blue | [원문](https://emea.mizuno.com/eu/en/hyperwarp-elite/J1GC267101.html) |
+| mizuno-hyperwarp-pro | J1GC267201 · White/Lightning Yellow/Hyper Blue | [원문](https://emea.mizuno.com/eu/en/hyperwarp-pro/J1GC267201.html) |
+| mizuno-hyperwarp-pure | J1GC267001 · White/Lightning Yellow/Hyper Blue | [원문](https://emea.mizuno.com/eu/en/hyperwarp-pure/J1GC267001.html) |
+| mizuno-neo-daichi-10 | J1GM268051 · Foggy Dew/vulcan/dark Slate | [원문](https://emea.mizuno.com/eu/en-gb/mizuno-neo-daichi-10/J1GM268051.html) |
+| mizuno-neo-vista-3 | J1GM261051 · 화이트/블랙/오렌지 (한국 공식 옵션명) | [원문](https://kor.mizuno.com/product/detail.html?product_no=12063&cate_no=803&display_group=1) |
+| mizuno-wave-horizon-8 | J1GC253102 · 블랙/화이트/님버스 클라우드 | [원문](https://kor.mizuno.com/product/wave-horizon-8-sw/10178) |
+| mizuno-wave-inspire-21 | J1GC254401 · Tradewinds/neo mint/frontier blue | [원문](https://emea.mizuno.com/eu/en/wave-inspire-21/J1GC254401.html) |
+| mizuno-wave-inspire-22 | J1GC264407 · White/White/White | [원문](https://emea.mizuno.com/eu/en/wave-inspire-22/J1GC264407.html) |
+| mizuno-wave-rebellion-flash-2 | J1GC243601 · Dubarry/Black/Cranberry | [원문](https://emea.mizuno.com/eu/en/wave-rebellion-flash-2/J1GC243601.html) |
+| mizuno-wave-rebellion-flash-3 | J1GC253501 · White/Fiery Coral 2/Iris Bloom | [원문](https://emea.mizuno.com/eu/en/wave-rebellion-flash-3/J1GC253501.html) |
+| mizuno-wave-rider-29 | J1GC250301 · Odyssey Gray/Capri Breeze/Caly | [원문](https://emea.mizuno.com/eu/en/wave-rider-29/J1GC250301.html) |
+| mizuno-wave-rider-30 | J1GM262051 · 화이트/블루/오렌지 (한국 공식 옵션명) | [원문](https://kor.mizuno.com/product/detail.html?product_no=12025&cate_no=803&display_group=1) |
+| mizuno-wave-sky-9 | J1GC250201 · Baritone Blue/Citrus/Capri Bre | [원문](https://emea.mizuno.com/eu/en/wave-sky-9/J1GC250201.html) |
+
+파일명 front/back/top/outsole과 실제 촬영 구도가 다른 기존 파일이 있습니다. 화면은 공통 이미지 번호로 표시하며 위 식별은 실제 사진과 원본을 대조한 범위입니다. 해외 사진의 품번을 한국 판매·폭·가격·임상 효과로 대입하지 않습니다. 촬영자·이용 허가의 일괄 확인이 아닙니다.

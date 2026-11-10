@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-magnify-nitro-3",
     brand: "Puma",
     name: "매그니파이 나이트로 3",
-    image: "/images/shoes/puma/magnifyNITRO3.webp",
+    imageCaption: "매그니파이 나이트로 3 사진(311046-01 · PUMA Black-PUMA White)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://kr.puma.com/kr/ko/pd/magnify-nitro-3/311046.html?dwvar_311046_color=01"},
+    image: "/images/shoes/puma/magnifynitro3/side.webp",
     images: [
       "/images/shoes/puma/magnifynitro3/side.webp",
       "/images/shoes/puma/magnifynitro3/front.webp",
       "/images/shoes/puma/magnifynitro3/back.webp",
       "/images/shoes/puma/magnifynitro3/top.webp",
-      "/images/shoes/puma/magnifynitro3/outsole.webp"
+      "/images/shoes/puma/magnifynitro3/official-311046-01-pair.jpg"
     ],
     category: "쿠션화",
     description: "전장 NITROFOAM(PEBA, RR/DOR 귀속) · 니트·PWRTAPE 구조의 매그니파이 나이트로 3. RunRepeat 실험실 검체 261g·37.4/25.9mm. 한국 현재 정가 미확인.",

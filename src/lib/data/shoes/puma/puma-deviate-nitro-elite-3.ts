@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "puma-deviate-nitro-elite-3",
     brand: "Puma",
     name: "디비에이트 나이트로 엘리트 3",
-    image: "/images/shoes/puma/deviate_NITROElite3.webp",
+    imageCaption: "디비에이트 나이트로 엘리트 3 사진(309809-04 · Pure Magenta-Yellow Alert)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"PUMA 공식 상품 갤러리","url":"https://in.puma.com/in/en/pd/deviate-nitro-elite-3-mens-running-shoes/309809?swatch=04"},
+    image: "/images/shoes/puma/deviatenitroelite3/side.webp",
     images: [
       "/images/shoes/puma/deviatenitroelite3/side.webp",
       "/images/shoes/puma/deviatenitroelite3/front.webp",
       "/images/shoes/puma/deviatenitroelite3/back.webp",
       "/images/shoes/puma/deviatenitroelite3/top.webp",
-      "/images/shoes/puma/deviatenitroelite3/outsole.webp"
+      "/images/shoes/puma/deviatenitroelite3/official-309809-04-pair.jpg"
     ],
     category: "레이싱",
     description: "NITRO Elite 이중 밀도 · 카본 PWRPLATE 구조의 디비에이트 나이트로 엘리트 3. 실험실 204g·힐/전족부 39.2/28.6mm. 한국 현재 정가 미확인.",

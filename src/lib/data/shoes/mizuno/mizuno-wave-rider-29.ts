@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "mizuno-wave-rider-29",
     brand: "Mizuno",
     name: "웨이브 라이더 29",
+    imageCaption: "웨이브 라이더 29 사진(J1GC250301 · Odyssey Gray/Capri Breeze/Caly)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en/wave-rider-29/J1GC250301.html"},
     image: "/images/shoes/mizuno/waverider29/side.webp",
     images: [
       "/images/shoes/mizuno/waverider29/side.webp",
       "/images/shoes/mizuno/waverider29/front.webp",
       "/images/shoes/mizuno/waverider29/back.webp",
       "/images/shoes/mizuno/waverider29/top.webp",
-      "/images/shoes/mizuno/waverider29/outsole.webp"
+      "/images/shoes/mizuno/waverider29/outsole.webp",
     ],
     category: "데일리",
     description: "Enerzy NXT · 힐/중족 Pebax계 Wave Plate 구조의 웨이브 라이더 29. RunRepeat 실험실 검체 258g·37.5/29.2mm. 한국 현재 정가 미확인.",

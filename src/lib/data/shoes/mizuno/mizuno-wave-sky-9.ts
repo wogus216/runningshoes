@@ -6,13 +6,14 @@ export const shoe: Shoe = {
     slug: "mizuno-wave-sky-9",
     brand: "Mizuno",
     name: "웨이브 스카이 9",
-    image: "/images/shoes/mizuno/wavesky9/side.webp",
+    imageCaption: "웨이브 스카이 9 사진(J1GC250201 · Baritone Blue/Citrus/Capri Bre)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en/wave-sky-9/J1GC250201.html"},
+    image: "/images/shoes/mizuno/wavesky9/back.webp",
     images: [
-      "/images/shoes/mizuno/wavesky9/side.webp",
       "/images/shoes/mizuno/wavesky9/front.webp",
       "/images/shoes/mizuno/wavesky9/back.webp",
       "/images/shoes/mizuno/wavesky9/top.webp",
-      "/images/shoes/mizuno/wavesky9/outsole.webp"
+      "/images/shoes/mizuno/wavesky9/outsole.webp",
     ],
     category: "쿠션화",
     description: "Enerzy NXT 위층 · Enerzy 아래층 · 폼 Wave 형상 구조의 웨이브 스카이 9. RunRepeat 실험실 검체 295g·44.3/38.1mm. 한국 현재 정가 미확인.",

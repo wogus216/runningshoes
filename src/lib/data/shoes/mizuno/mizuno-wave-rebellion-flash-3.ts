@@ -6,13 +6,12 @@ export const shoe: Shoe = {
     slug: "mizuno-wave-rebellion-flash-3",
     brand: "Mizuno",
     name: "웨이브 리벨리온 플래시 3",
+    imageCaption: "웨이브 리벨리온 플래시 3 사진(J1GC253501 · White/Fiery Coral 2/Iris Bloom)입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://emea.mizuno.com/eu/en/wave-rebellion-flash-3/J1GC253501.html"},
     image: "/images/shoes/mizuno/waverebellionflash3/side.webp",
     images: [
       "/images/shoes/mizuno/waverebellionflash3/side.webp",
       "/images/shoes/mizuno/waverebellionflash3/front.webp",
-      "/images/shoes/mizuno/waverebellionflash3/back.webp",
-      "/images/shoes/mizuno/waverebellionflash3/top.webp",
-      "/images/shoes/mizuno/waverebellionflash3/outsole.webp"
     ],
     category: "레이싱",
     description: "Enerzy XP TPEE 위층 · Enerzy NXT EVA 아래층 · 유리섬유 나일론 구조의 웨이브 리벨리온 플래시 3. RunRepeat 실험실 검체 244g·40/32.5mm. 한국 현재 정가 미확인.",

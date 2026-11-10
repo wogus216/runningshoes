@@ -8,6 +8,8 @@ export const shoe: Shoe = {
     name: "네오 비스타 3",
     category: "데일리",
     price: 219000,
+    imageCaption: "네오 비스타 3 사진(J1GM261051 · 화이트/블랙/오렌지 (한국 공식 옵션명))입니다. 공식 상품 사진과 대조했으며 구매할 성별·폭·색상 옵션과 구분하세요.",
+    imageSource: {"title":"Mizuno 공식 상품 갤러리","url":"https://kor.mizuno.com/product/detail.html?product_no=12063&cate_no=803&display_group=1"},
     image: "/images/shoes/mizuno/neo-vista-3/side.webp",
     description: "ENERZY NXT 이중폼 · 유리섬유 보강 Wave Plate 구조의 네오 비스타 3. RunRepeat 실험실 검체 266g·43.5/35mm. 한국 확인 가격 219,000원.",
     oneliner: "ENERZY NXT 이중폼 · 유리섬유 보강 Wave Plate · 266g (RunRepeat 실험실 검체)",
