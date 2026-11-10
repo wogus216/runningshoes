@@ -188,47 +188,26 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
   const registrationClosed = bandOf(event, buildDate) === 'closed';
 
   // JSON-LD: SportsEvent (enriched)
-  const eventStatusMap: Record<string, string> = {
-    '접수중': 'https://schema.org/EventScheduled',
-    '마감': 'https://schema.org/EventScheduled',
-    '대회종료': 'https://schema.org/EventScheduled',
-  };
-
-  const eventAvailability = event.status === '접수중'
-    ? 'https://schema.org/InStock'
-    : 'https://schema.org/SoldOut';
-
   const jsonLd: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'SportsEvent',
     name: event.name,
     startDate: event.date,
-    endDate: event.date,
     description: event.description ||
       `${event.name} - ${event.location}에서 개최되는 ${event.distances.join(', ')} 마라톤 대회입니다.`,
-    eventStatus: event.postponed ? 'https://schema.org/EventPostponed' : eventStatusMap[event.status],
+    eventStatus: event.postponed ? 'https://schema.org/EventPostponed' : 'https://schema.org/EventScheduled',
+    ...(event.postponed && { previousStartDate: event.date }),
     eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
     location: {
       '@type': 'Place',
       name: event.location,
       address: {
         '@type': 'PostalAddress',
-        addressCountry: 'KR',
+        addressCountry: ['오사카', '교토', '도쿄'].includes(event.region) ? 'JP' : 'KR',
         addressRegion: event.region,
       },
     },
-    organizer: {
-      '@type': 'Organization',
-      name: event.name,
-    },
-    sport: 'Marathon',
     ...(event.website && { url: event.website }),
-    ...(event.raceInfo?.expectedParticipants && {
-      maximumAttendeeCapacity: event.raceInfo.expectedParticipants,
-    }),
-    ...(event.raceInfo?.startTime && {
-      doorTime: `${event.date}T${event.raceInfo.startTime}:00+09:00`,
-    }),
   };
 
   // Offers (entry fees) for structured data
@@ -238,18 +217,8 @@ export default async function MarathonDetailPage({ params }: MarathonDetailPageP
       name: `${event.name} ${fee.distance}`,
       price: fee.fee,
       priceCurrency: 'KRW',
-      availability: eventAvailability,
       ...(event.website && { url: event.website }),
     }));
-  } else {
-    // entryFees 없는 경우 기본 Offer (접수 링크만)
-    jsonLd.offers = {
-      '@type': 'Offer',
-      name: event.name,
-      priceCurrency: 'KRW',
-      availability: eventAvailability,
-      ...(event.website && { url: event.website }),
-    };
   }
 
   const breadcrumbLd = breadcrumbJsonLd([
