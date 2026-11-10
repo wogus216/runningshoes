@@ -19,7 +19,7 @@ import { MobileQuickActions } from '@/components/detail/mobile-quick-actions';
 import { PurchaseLinks } from '@/components/detail/purchase-links';
 import { ShoeCrossLinks } from '@/components/pseo/shoe-cross-links';
 import { RelatedPosts } from '@/components/detail/related-posts';
-import { getPostsLinkingToShoe } from '@/lib/data/blog';
+import { getPostBySlug, getPostsLinkingToShoe } from '@/lib/data/blog';
 import { RunningCardPromo } from '@/components/running-card-promo';
 
 type ShoeDetailPageProps = {
@@ -176,7 +176,10 @@ export default async function ShoeDetailPage({ params }: ShoeDetailPageProps) {
 
   // 관련 블로그: curated relatedPosts 우선 배치 + 본문에서 이 신발을 링크한 글로 자동 보충 (slug 중복 제거)
   // curated가 1~2개뿐일 때 자동 링크가 통째로 사라지지 않도록 병합한다 — 최소 4개 확보, curated가 더 많으면 그대로
-  const curated = shoe.relatedPosts ?? [];
+  const curated = (shoe.relatedPosts ?? []).flatMap(({ slug }) => {
+    const post = getPostBySlug(slug);
+    return post ? [{ slug: post.slug, title: post.title }] : [];
+  });
   const curatedSlugs = new Set(curated.map((p) => p.slug));
   const autoLinked = getPostsLinkingToShoe(shoe.slug).filter((p) => !curatedSlugs.has(p.slug));
   const relatedPosts = [...curated, ...autoLinked].slice(0, Math.max(curated.length, 4));
