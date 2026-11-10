@@ -806,85 +806,45 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: '2026-run-seoul-run-registration',
-    slug: '2026-run-seoul-run-registration',
-    title: '런서울런 2026(제20회 일간스포츠 서울마라톤) | 9/13 서울광장 도심 하프·10K — 6/29 10시 선착순, 정원 20% 줄어 광클 주의',
-    description:
-      '서울 도심 한복판을 달리는 런서울런이 9월 13일 서울광장에서 열립니다. 광화문·종로·흥인지문·숭례문을 잇는 평지 헤리티지 코스에 하프·10K 두 종목. 확정 참가비는 하프 80,000원·10km 70,000원(10km는 작년 대비 1.1만원 인상). 6월 29일 오전 10시부터 정원 12,000명 선착순 접수 중이며, 정원이 차면 마감됩니다. 일시·코스·종목·참가비·기념품을 한 장에 정리했습니다.',
-    thumbnail: '/images/blog/2026-run-seoul-run-registration.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-23',
-    updatedAt: '2026-07-20',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['런서울런', '일간스포츠 서울마라톤', '서울 마라톤', '도심 하프', '가을 마라톤', '마라톤 접수'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>런서울런(제20회 일간스포츠 서울마라톤)</strong>이 2026년 9월 13일(일) 서울광장에서 열립니다 — 도심 평지 헤리티지 코스, 하프·10K</li>
-    <li>확정 참가비 <strong>하프 80,000원 / 10km 70,000원</strong> — 10km가 작년 59,000원에서 <strong>1.1만원 인상</strong></li>
-    <li>6월 29일 10시부터 <strong>정원 12,000명 선착순 접수 중</strong>(2025년 참가 15,524명 대비 축소). 고정 마감일 없이 정원이 차면 종료라 서두르는 게 안전</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏙️</span>
-  <div class="callout-body">
-    <p class="callout-title">6월 29일 오전 10시, 선착순 오픈</p>
-    <p>런서울런은 서울 도심 한복판(광화문~종로~을지로)을 통제하고 달리는 초가을 도심 대회입니다. 차로 가득하던 도로를 러너가 점령하는 매력에 매년 1만 명 이상이 몰리죠. 올해는 <strong>정원이 줄어 경쟁이 더 치열</strong>할 전망입니다.</p>
-  </div>
-</div>
-
-<h2>대회 개요</h2>
-<table>
-  <thead><tr><th>항목</th><th>내용</th></tr></thead>
-  <tbody>
-    <tr><td>대회명</td><td>제20회 일간스포츠 서울마라톤 (2026 RUN SEOUL RUN)</td></tr>
-    <tr><td>일시</td><td>2026년 9월 13일(일)</td></tr>
-    <tr><td>출발·도착</td><td>서울광장 (서울 중구 세종대로 110)</td></tr>
-    <tr><td>출발 시각</td><td>하프 07:30 / 10K 07:50</td></tr>
-    <tr><td>종목</td><td>하프마라톤(21km), 10km</td></tr>
-    <tr><td>정원</td><td>결제 완료자 기준 12,000명 (2025년 참가 15,524명 대비 축소)</td></tr>
-    <tr><td>참가비</td><td>하프 80,000원 / 10km 70,000원</td></tr>
-    <tr><td>접수</td><td>6월 29일(월) 10:00 선착순 · 정원 소진 시 마감</td></tr>
-    <tr><td>주최</td><td>이데일리M(일간스포츠)</td></tr>
-  </tbody>
-</table>
-
-<h2>코스 — 서울 도심 평지 헤리티지</h2>
-<p>서울광장에서 출발해 <strong>종각·종로3가를 지나 흥인지문(동대문)에서 반환</strong>, 시청·숭례문·무교로를 거쳐 을지로3가에서 다시 반환해 서울광장으로 들어옵니다. 600년 도읍의 랜드마크(흥인지문·숭례문)를 잇는 코스라 '헤리티지 코스'로 불리죠. <strong>큰 오르막이 없는 평지</strong>라 도심 초행 러너나 하프 입문자도 부담이 적고, 기록을 노리기에도 좋습니다.</p>
-
-<h2>접수·참가비 (2026-07-20 확정가 반영)</h2>
-<p>접수는 <strong>6월 29일(월) 오전 10시</strong>부터 <a href="https://runseoulrun.com/" target="_blank" rel="noopener">공식 홈페이지</a>에서 선착순으로 진행 중입니다. 접수 오픈과 함께 공개된 <strong>2026년 확정 참가비는 하프(21km) 80,000원 / 10km 70,000원</strong>입니다.</p>
-<table>
-  <thead><tr><th>종목</th><th>2026 확정</th><th>2025(제19회)</th><th>인상폭</th></tr></thead>
-  <tbody>
-    <tr><td>하프(21km)</td><td><strong>80,000원</strong></td><td>79,000원</td><td>+1,000원</td></tr>
-    <tr><td>10km</td><td><strong>70,000원</strong></td><td>59,000원</td><td><strong>+11,000원</strong></td></tr>
-  </tbody>
-</table>
-<p><strong>10km가 1만원 넘게 올랐습니다.</strong> 하프는 사실상 동결인데 10km만 19% 인상돼, 두 종목 간 가격차가 2만원에서 1만원으로 좁혀졌습니다. 참가 정보 수정·환불은 <strong>8월 14일(금) 17시까지</strong> 가능합니다.</p>
-
-<h2>정원 축소 → 광클 주의</h2>
-<p>2026년 정원은 <strong>결제 완료자 기준 12,000명</strong>으로, 고정 마감일 없이 정원이 차면 종료됩니다. 2025년(제19회)에는 15,524명이 참가한 것으로 알려져 있어, 그 규모와 비교하면 <strong>약 20% 줄어든 셈</strong>입니다(축소 사유는 공식 발표되지 않았습니다). 수요는 그대로인데 자리가 줄었으니 <strong>하프부터 빠르게 마감될 가능성</strong>이 큽니다.</p>
-
-<h2>기념품·혜택</h2>
-<ul>
-  <li>기념 티셔츠 · 배번호 — <strong>택배 사전 발송</strong>(현장 수령 대기 없음)</li>
-  <li>완주 메달 · 완주 간식 — 현장 지급</li>
-  <li>칩 계측 기록 측정(1만 명 이상 규모 도심 대회 표준)</li>
-</ul>
-<p>같은 가을 서울 도심 대회로는 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>(11/15 광화문~잠실), <a href="/blog/ytn-seoul-tour-marathon-2026">YTN 서울투어마라톤</a>(9/6)도 있습니다. 가을 전체 일정을 한 번에 보려면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 완전정복</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 전 확인</p>
-    <p>참가비는 2026-07-20 공식 접수 페이지에서 확인한 확정가(하프 80,000원·10km 70,000원)입니다. 고정 마감일 없이 <strong>정원 12,000명 소진 시 종료</strong>되므로, 이 글을 보는 시점에 이미 마감됐을 수 있습니다. 잔여 여부와 코스 통제 안내는 <a href="https://runseoulrun.com/" target="_blank" rel="noopener">공식 홈페이지</a>에서 최종 확인하세요.</p>
-  </div>
-</div>
-`,
+    id: "2026-run-seoul-run-registration",
+    slug: "2026-run-seoul-run-registration",
+    title: "런서울런 2026 참가 후: 하프 07시30분·10K 07시50분, 종목별 지급품 구분",
+    description: "공식 시간표의 하프와 10K 출발은 다릅니다. 하프 전용·10K 전용 물품, 조건부 할인권과 기본 기프트를 구분하고, 개인 신청·결제·배송 확인에 쓸 사항을 정리했습니다.",
+    thumbnail: "/images/blog/verified-2026-run-seoul-run-registration-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-23",
+    updatedAt: "2026-11-10",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "런서울런",
+      "일간스포츠 서울마라톤",
+      "서울 마라톤",
+      "도심 하프",
+      "가을 마라톤",
+      "마라톤 접수"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인, 운영 계획과 실제 개인 결과를 구분합니다.</small></p>
+<p>런서울런 2026의 9월 13일 서울광장 일정이 지났다. <a href="https://runseoulrun.com/" target="_blank" rel="noopener noreferrer">공식 홈</a>에 남은 접수 예고를 현재 모집으로 읽지 말고 종목·구매·배송·개인 결과를 구분해 확인하자.</p>
+<h2>같은 행사라도 출발은 종목별로</h2><p>공식 시간표는 하프 07:30, 10K 07:50 출발 계획을 구분한다. 대문에 적힌 07:30을 모든 참가자의 출발 시각으로 요약하면 10K를 놓친다. 06:30 대회장 개방과 러닝 출발도 별개다.</p><p>개인의 배번호·그룹·실제 출발·결과는 해당 안내를 따로 대조해야 한다. 12,000명은 모집 계획으로 실제 전원 출발·완주를 집계한 수가 아니다. 약도만으로 완전 평지·PB보장 등급을 붙이지 않았다.</p>
+<h2>하프와 10K의 현장 물품은 다르다</h2><p>홈의 지급품 목록은 샴푸 50ml와 파워에이드 355ml를 하프 전용, 캐옴 당근을 10K 전용으로 적는다. 두 종목의 물품을 합쳐 모든 참가자에게 같은 구성을 줬다고 안내하지 않는다.</p><p>할리스 5,000원 기프트카드와 땡겨요 3,000원 할인권도 같은 형태가 아니다. 후자는 12,000원 이상 구매 조건으로 적혀 있다. 표시 금액을 무조건 현금처럼 더해 참가비를 상쇄하는 계산은 하지 않는다. 현재 사용 기한·개인 쿠폰 유효성은 별도 확인이다.</p>
+<h2>신청과 결제·수령은 각각 확인</h2><p>공식 FAQ는 회원가입 없는 개인 신청과 카드 결제, 결제자 기준 선착순을 안내하고 단체 신청은 불가하다고 적는다. 일행과 함께 갔다고 단체장이 모두 등록·배송을 처리하는 구조로 가정하지 않는다.</p><p>티셔츠·배번호는 택배, 메달·간식은 현장 지급 계획이었다. 본인이 받은 물품이 다르다면 종목·주문 내역·수령 사진과 적용 공지를 구분해 문의할 항목이다. 기념품 제공 계획을 전원 수령 완료로 확정한 것은 아니다.</p>
+<h2>종료 뒤 문의와 차기 신청을 나누기</h2><p><a href="https://runseoulrun.com/notice" target="_blank" rel="noopener noreferrer">공식 공지 목록</a>에는 2026년 교통 통제·페이스메이커 공지와 2025년 운영 자료가 함께 남아 있다. 연도를 고르지 않고 읽으면 과거 규정을 현재 조건으로 옮길 수 있다. 개인 기록·사진 제공 여부를 이번 목록만으로 확정하지 않았다.</p><p>공개 사무국은 02-338-0344·runseoulrun.edaily@gmail.com이다. 환불·정보 변경의 8월 14일 17시 안내는 이미 지난 조건이다. 차기 모집이나 새 재고는 새 공식 공지로 확인해야 한다.</p>
+<h2>자주 묻는 질문</h2><h3>10K도 07시30분 출발인가요?</h3><p>공식 시간표는 하프 07시30분·10K 07시50분 출발을 구분합니다. 행사 개방 시각과 개인 실제 출발도 별도입니다.</p><h3>기념품 목록 전체를 모든 사람이 받나요?</h3><p>공식은 하프 전용과 10K 전용 품목을 구분합니다. 할인권에는 최소 주문 조건도 있어 모든 표시 금액을 현금처럼 더하면 안 됩니다.</p><h3>일행의 단체 신청이 가능했나요?</h3><p>공식 FAQ는 단체 신청 불가와 개인 신청·카드 결제를 안내합니다. 실제 주문과 수령 내역을 각각 확인해야 합니다.</p>`,
+    faqs: [
+      {
+        "question": "10K도 07시30분 출발인가요?",
+        "answer": "공식 시간표는 하프 07시30분·10K 07시50분 출발을 구분합니다. 행사 개방 시각과 개인 실제 출발도 별도입니다."
+      },
+      {
+        "question": "기념품 목록 전체를 모든 사람이 받나요?",
+        "answer": "공식은 하프 전용과 10K 전용 품목을 구분합니다. 할인권에는 최소 주문 조건도 있어 모든 표시 금액을 현금처럼 더하면 안 됩니다."
+      },
+      {
+        "question": "일행의 단체 신청이 가능했나요?",
+        "answer": "공식 FAQ는 단체 신청 불가와 개인 신청·카드 결제를 안내합니다. 실제 주문과 수령 내역을 각각 확인해야 합니다."
+      }
+    ],
   },
   {
     id: "saucony-triumph-24-review",
@@ -1068,102 +1028,47 @@ export const posts_2026_06: BlogPost[] = [
     updatedAt: '2026-11-09',
   },
   {
-    id: 'ytn-seoul-tour-marathon-2026',
-    slug: 'ytn-seoul-tour-marathon-2026',
-    title: '서울 한복판을 달리는 시티투어 — 2026 YTN 서울투어마라톤 | 9/6 서울광장 출발, 하프·11K 접수 중',
-    description:
-      'YTN이 주최하는 도심 시티투어 마라톤이 9월 6일(일) 서울광장에서 출발합니다. 동대문·숭례문·청계천 등 서울 구도심 랜드마크를 잇는 평탄한 하프·11K 코스로, 가을 레이스 시즌의 첫 문을 여는 대회죠. 접수는 6/17~7/15 선착순(하프 8만·11K 7만 원). 종목·참가비·코스·2025년 대비 변경점까지 정리했습니다.',
-    thumbnail: '/images/blog/ytn-seoul-tour-marathon-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-22',
-    category: 'news' as const,
-    readingTime: 6,
-    tags: ['YTN 서울투어마라톤', '서울투어마라톤', '서울 마라톤', '하프 마라톤', '9월 마라톤', '도심 마라톤', '러닝 대회', '마라톤 접수', '가을 마라톤'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>2026 YTN 서울투어마라톤이 9월 6일(일) 서울광장에서 출발</strong> — 서울 구도심 랜드마크를 잇는 평탄한 <strong>하프·11K 도심 코스</strong>입니다(풀코스 없음, 07:30 출발)</li>
-    <li><strong>접수 진행 중</strong> — 6/17(수)~7/15(수) 선착순, 공식 홈페이지(run.ytn.co.kr). 참가비 <strong>하프 8만 원·11K 7만 원</strong></li>
-    <li>방송사 YTN이 직접 주최하는 <strong>"시티투어" 마라톤</strong>으로, 10월 춘천·11월 도심 대회에 앞서 <strong>가을 레이스 시즌의 문을 여는</strong> 9월 초 대회입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏙️</span>
-  <div class="callout-body">
-    <p class="callout-title">서울 도심을 관광하듯 달린다</p>
-    <p>YTN(와이티엔)이 주최하는 <strong>"서울투어"</strong> 마라톤은 이름 그대로 서울 구도심의 대표 랜드마크를 한 코스에 담은 시티투어형 대회입니다. 서울광장(시청 앞)을 기점으로 동대문·숭례문·청계천을 잇는 평탄한 도심 코스라, <strong>첫 하프에 도전하거나 가을 시즌을 가볍게 시작하려는 러너</strong>에게 잘 맞습니다. 방송사 주최라 코스 곳곳에 카메라가 따라붙는 것도 소소한 매력이죠.</p>
-  </div>
-</div>
-
-<h2>핵심 정보 한눈에</h2>
-<table>
-  <tbody>
-    <tr><td><strong>대회일</strong></td><td>2026년 9월 6일(일) — 07:30 출발</td></tr>
-    <tr><td><strong>종목</strong></td><td>하프(21.0975km) · 11K (풀코스 없음)</td></tr>
-    <tr><td><strong>출발/도착</strong></td><td>서울광장 (서울 중구 세종대로 110)</td></tr>
-    <tr><td><strong>참가비</strong></td><td>하프 80,000원 · 11K 70,000원</td></tr>
-    <tr><td><strong>접수</strong></td><td>6/17(수) 14시 ~ 7/15(수) 17시 · 선착순 (run.ytn.co.kr)</td></tr>
-    <tr><td><strong>규모</strong></td><td>약 1만 5천 명 (2025년 기준)</td></tr>
-    <tr><td><strong>주최</strong></td><td>YTN(와이티엔)</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 대회일·참가비·접수 일정·출발지는 공식 홈페이지(run.ytn.co.kr) 확정 정보입니다. 규모·세부 코스·기념품은 2025년 자료 기준 참고값으로, 2026년 내용은 공식 발표로 확인하세요.</p>
-
-<h2>접수 — 지금 진행 중</h2>
-<p>접수는 <strong>6월 17일(수) 14시에 이미 열렸고, 7월 15일(수) 17시까지 선착순</strong>으로 받습니다. 공식 홈페이지(run.ytn.co.kr)에서 직접 신청하며, 배번호·기록칩은 대회 전 택배로 발송됩니다.</p>
-<p>도심 대형 대회는 마감 시각보다 일찍 정원이 차는 경우가 있으니, 출전이 확실하다면 마감(7/15)을 기다리지 말고 미리 신청해두는 편이 안전합니다.</p>
-
-<h2>코스 — 서울 구도심 역사 벨트</h2>
-<p>서울광장(시청 앞)을 출발해 <strong>동대문(DDP 인근) → 숭례문(남대문) → 청계천</strong>으로 이어지는 서울 구도심의 역사 랜드마크를 잇는 코스입니다. 고저차가 거의 없는 평탄한 포장도로라 <strong>기록 도전이나 첫 하프 완주에 유리</strong>합니다.</p>
-<div class="callout warning">
-  <span class="callout-icon">🗺️</span>
-  <div class="callout-body">
-    <p class="callout-title">2026년 출발지가 바뀌었습니다</p>
-    <p>2025년에는 광화문광장에서 출발했지만, <strong>2026년은 서울광장 출발로 변경</strong>됐습니다. 위 경유지는 2025년 코스를 기준으로 한 참고이며, 출발지 변경에 따라 세부 경로가 달라질 수 있으니 <strong>공식 코스맵을 반드시 확인</strong>하세요.</p>
-  </div>
-</div>
-
-<h2>2025 → 2026, 무엇이 달라졌나</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>2025</th><th>2026</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>대회 시기</td><td>11월 23일</td><td><strong>9월 6일</strong> (가을 초입)</td></tr>
-    <tr><td>출발지</td><td>광화문광장</td><td>서울광장</td></tr>
-    <tr><td>종목</td><td>하프 · 10K</td><td>하프 · <strong>11K</strong></td></tr>
-    <tr><td>참가비</td><td>하프 7만 · 10K 6만</td><td>하프 8만 · 11K 7만</td></tr>
-  </tbody>
-</table>
-<p>가장 큰 변화는 <strong>대회 시기가 11월 말에서 9월 초로 앞당겨진 것</strong>입니다. 9월 초는 아직 늦더위가 남아 있을 수 있으니, 당일 기온을 확인하고 수분·페이스 전략을 보수적으로 잡는 게 좋습니다.</p>
-
-<h2>누구에게 좋은 대회일까</h2>
-<ul>
-  <li><strong>첫 하프 도전자</strong> — 평탄한 도심 코스라 부담이 적습니다. 거리별 체감 난이도가 궁금하면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>를 참고하세요.</li>
-  <li><strong>가을 PB를 준비하는 러너</strong> — 9월 YTN(하프)으로 몸을 풀고 10월 <a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>(풀코스), 11월 <a href="/blog/2026-mbn-seoul-marathon-registration">MBN 서울마라톤</a>으로 이어지는 가을 레이스 시즌을 설계하기 좋습니다.</li>
-  <li><strong>서울 도심을 달려보고 싶은 러너</strong> — 평소 차로 지나던 시청·숭례문·청계천을 두 발로 통과하는 경험이 매력입니다.</li>
-</ul>
-<p>평탄한 도심 하프에는 가볍고 반응 좋은 신발이 어울립니다. 목표 페이스에 따라 <a href="/best/daily-trainer">데일리 트레이너</a> 또는 <a href="/best/half-marathon">하프 추천 신발</a>에서 골라보세요. 본인 발에 맞는 신발을 빠르게 좁히려면 <a href="/recommend">1분 러닝화 추천</a>도 도움이 됩니다.</p>
-
-<div class="callout info">
-  <span class="callout-icon">📌</span>
-  <div class="callout-body">
-    <p class="callout-title">참가 전 체크</p>
-    <ul>
-      <li><strong>교통</strong>: 서울광장은 지하철 1·2호선 시청역 바로 앞입니다. 도심 교통통제가 있으니 <strong>대중교통 이용</strong>을 권장합니다.</li>
-      <li><strong>완주 기념품·제한시간·시상</strong> 등 세부 정보는 공식 홈페이지(run.ytn.co.kr)에서 최신 공지를 확인하세요.</li>
-    </ul>
-  </div>
-</div>
-
-<h2>마무리</h2>
-<p>YTN 서울투어마라톤은 <strong>"기록 경쟁"보다 "서울 도심을 관광하듯 달리는 경험"</strong>에 무게가 실린 대회입니다. 9월 초 개최라 본격적인 가을 레이스 시즌의 문을 여는 대회이기도 하죠. 첫 하프에 도전하거나 가을 시즌을 가볍게 시작하려는 러너라면 좋은 선택지입니다. 핵심은 <strong>7월 15일 접수 마감</strong>을 놓치지 않는 것 — 신청 전 공식 홈페이지에서 코스맵과 세부 정보를 한 번 더 확인하세요. 🏃</p>
-<p>가을 대회 전체 일정은 <a href="/marathon">마라톤 캘린더</a>에서 월별로 비교할 수 있습니다.</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 YTN 서울투어마라톤 공식 홈페이지(run.ytn.co.kr)와 2025년 대회 자료를 종합했습니다. 대회일·참가비·접수 일정·출발지는 공식 확정 정보이며, 규모·세부 코스 경유지·기념품은 2025년 기준 참고값으로 2026년 발표 시 변동될 수 있습니다. 신청 전 공식 홈페이지를 반드시 확인하세요. (작성 2026-06-22)</p>
-`,
+    id: "ytn-seoul-tour-marathon-2026",
+    slug: "ytn-seoul-tour-marathon-2026",
+    title: "YTN서울투어 2026 참가 후: 11KM 구분·기록별 출발·반송 패키지 조건",
+    description: "9월 6일 대회는 하프·11KM였습니다. 종목과 별개로 제출 기록에 따라 출발 그룹을 나누며, 8월 26일 배송 공지는 반송 완료 물품의 현장 수령 조건을 별도로 안내했습니다.",
+    thumbnail: "/images/blog/verified-ytn-seoul-tour-marathon-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-22",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "YTN 서울투어마라톤",
+      "서울투어마라톤",
+      "서울 마라톤",
+      "하프 마라톤",
+      "9월 마라톤",
+      "도심 마라톤",
+      "러닝 대회",
+      "마라톤 접수",
+      "가을 마라톤"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 대회 후 확인, 운영 계획과 실제 개인 결과를 구분합니다.</small></p>
+<p>2026 YTN서울투어마라톤의 9월 6일 일정이 지났다. <a href="https://run.ytn.co.kr/" target="_blank" rel="noopener noreferrer">공식 홈</a>의 종목은 하프와 11KM다. 10km와 같은 거리로 묶거나 과거 접수 버튼을 현재 모집으로 안내하지 않았다.</p>
+<h2>종목과 출발 그룹의 기준은 다르다</h2><p><a href="https://run.ytn.co.kr/community/index02.php" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 07:30부터 신청 종목과 관계없이 제출 기록증에 따라 그룹별 순차 출발한다고 설명한다. 하프·11KM라는 종목 구분만으로 실제 출발 순서가 정해진다고 볼 수 없다.</p><p>기록을 비교할 때 자신의 종목·배번호·그룹을 먼저 확인하자. 개인 GPS와 공식 시간 차이만으로 계측 오류를 확정하지 않는다. <a href="https://run.ytn.co.kr/record/index01.php" target="_blank" rel="noopener noreferrer">공식 기록 조회 메뉴</a>가 있으나 이 글에서 개인 정보를 넣어 결과를 조회한 것은 아니다.</p>
+<h2>접수 예정 종료와 실제 조기 마감은 다르다</h2><p>공식 홈의 6월 17일 14시~7월 10일 17시는 접수 예정 범위다. <a href="https://run.ytn.co.kr/community/index01.php?group=basic&amp;code=B5&amp;abmode=view&amp;no=8124" target="_blank" rel="noopener noreferrer">6월 26일 모집 마감 공지</a>는 모든 코스의 선착순 마감을 알렸다. 7월 10일까지 신청할 수 있었다는 뜻으로 읽으면 안 된다.</p><p>표시 참가비는 하프 8만원·11KM 7만원이었다. 지난 접수 날짜를 현재 모집으로 안내하지 않는다. 실제 신청·결제·환불 처리 여부는 개인 내역과 당시 적용 공지를 대조할 사항이다.</p><h2>배송 계획과 반송 완료 물품의 수령</h2><p><a href="https://run.ytn.co.kr/community/index01.php?group=basic&amp;code=B5&amp;abmode=view&amp;no=13765" target="_blank" rel="noopener noreferrer">8월 26일 사전패키지 공지</a>는 8월 26~28일 발송·27~31일 수령 예상으로 안내했다. 지역별 차이를 명시하며 반송 물품은 반송 처리가 완료된 건에 한해 대회 당일 신분증 확인 후 수령하는 조건이었다.</p><p>따라서 택배가 늦으면 누구나 현장에서 새 패키지를 준다는 뜻이 아니다. 현재는 당일 수령 기간도 지났으므로 미수령 문제는 주문·배송·반송 내역을 정리해 사무국에 확인해야 한다. 실제 전원 배송 완료는 이번에 조회하지 않았다.</p>
+<h2>폭염 대비 공지를 실제 기상으로 바꾸지 않기</h2><p><a href="https://run.ytn.co.kr/community/index01.php?group=basic&amp;code=B5&amp;abmode=view&amp;no=13770" target="_blank" rel="noopener noreferrer">9월 3일 폭염 대비 운영 공지</a>는 추가 급수·골인 얼음물 등의 운영 계획을 소개했다. 9월이라 자동으로 선선한 대회라고 설명하거나 해당 계획을 실제 전 구간 제공 완료로 확정하지 않는다.</p><p>남은 기록·물품 문의는 070-7725-6258·run.ytn@gmail.com 공식 경로에서 확인할 사항이다. 다른 YTN 회차·연도의 안내와도 구분하자.</p>
+<h2>자주 묻는 질문</h2><h3>10km 대회인가요?</h3><p>2026년 공식 종목은 11KM와 하프입니다. 10km로 바꾸어 표시하거나 기록을 같은 거리로 비교하면 안 됩니다.</p><h3>출발은 종목별로 나뉘었나요?</h3><p>공식 FAQ는 종목과 관계없이 제출 기록에 따라 그룹별로 07시30분부터 순차 출발한다고 안내합니다.</p><h3>미수령이면 현장에서 모두 새 패키지를 줬나요?</h3><p>8월 26일 공지는 반송 완료된 물품에 한해 신분증 지참 현장 수령을 안내합니다. 모든 지연 배송을 새 물품 지급으로 보장한 조건이 아닙니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "10km 대회인가요?",
+        "answer": "2026년 공식 종목은 11KM와 하프입니다. 10km로 바꾸어 표시하거나 기록을 같은 거리로 비교하면 안 됩니다."
+      },
+      {
+        "question": "출발은 종목별로 나뉘었나요?",
+        "answer": "공식 FAQ는 종목과 관계없이 제출 기록에 따라 그룹별로 07시30분부터 순차 출발한다고 안내합니다."
+      },
+      {
+        "question": "미수령이면 현장에서 모두 새 패키지를 줬나요?",
+        "answer": "8월 26일 공지는 반송 완료된 물품에 한해 신분증 지참 현장 수령을 안내합니다. 모든 지연 배송을 새 물품 지급으로 보장한 조건이 아닙니다."
+      }
+    ],
   },
   {
     id: "sonkeechung-peace-marathon-2026",
@@ -2600,74 +2505,49 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'gangnam-international-peace-marathon-2026',
-    slug: 'gangnam-international-peace-marathon-2026',
-    title: '참가비 전액이 전쟁고아에게 — 강남국제평화마라톤(국평마) | 강남구·주한미8군 공동주최, 10/5 강남 도심 기부런',
-    description: '"국평마"로 불리는 강남국제평화마라톤은 참가비 전액을 전쟁고아 지원에 기부하는 이색 대회입니다. 강남구와 주한미8군이 공동 주최하고 유니세프가 후원하죠. 풀 3만·하프 2만원대로 참가비가 저렴하고, 봉은사로 강남 도심을 달립니다. 2026 제23회는 10/5(월·대체공휴일) 일정이었습니다 — 종목·참가비·접수 일정과 이 대회가 특별한 이유를 정리했습니다.',
-    thumbnail: '/images/blog/gangnam-international-peace-marathon-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-12',
-    category: 'news' as const,
-    readingTime: 7,
-    tags: ['강남국제평화마라톤', '국평마', '강남 마라톤', '기부 마라톤', '주한미8군', '강남페스티벌', '서울 마라톤', '가을 마라톤', '하반기 대회', '봉은사로'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>참가비 전액이 기부됩니다</strong> — 강남국제평화마라톤("국평마")은 참가비 전액을 전쟁고아 지원에 쓰는 기부형 대회. 강남구와 <strong>주한미8군이 공동 주최</strong>하고 유니세프 한국위원회가 후원합니다.</li>
-    <li><strong>참가비가 저렴합니다</strong> — 풀 3만 · 하프/10K 2만 · 5K 1만원대(전년 기준). 봉은사로에서 출발해 강남 도심을 달리는 평지 코스로, 강남페스티벌과 함께 열립니다.</li>
-    <li><strong>2026 제23회는 10/5(월·대체공휴일) 일정이었습니다</strong> — 서울시 축제포털 기준. 이 글을 쓴 6월 12일에는 종목·참가비·접수일이 공식 미발표(8월경 발표 예상)라 제22회 기준으로 추정했습니다.</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🕊️</span>
-  <div class="callout-body">
-    <p class="callout-title">"국평마"가 다른 대회와 다른 점 — 달리기로 하는 기부</p>
-    <p>대부분의 마라톤은 참가비로 운영비를 충당하지만, 강남국제평화마라톤은 <strong>참가비 전액을 전쟁으로 고통받는 아이들을 돕는 데</strong> 씁니다. 6.25 전쟁의 상흔에서 출발한 한미 우호와 평화의 의미를 담아 <strong>강남구와 주한미8군사령부(EUSA)가 함께</strong> 여는 대회죠. "내 참가비가 곧 기부"라는 점에서, 기록보다 의미를 찾는 러너에게 특별합니다.</p>
-  </div>
-</div>
-
-<h2>강남 도심을 달린다 — 봉은사로 코스</h2>
-
-<p>출발지는 <strong>봉은사로 삼성1동주민센터 앞</strong>(봉은사역 인근)입니다. 코엑스와 봉은사로 일대 <strong>강남 도심을 통제하고 달리는 평지 코스</strong>라, 접근성이 좋고 기록도 잘 나오는 편입니다. 매년 가을 <strong>강남페스티벌</strong>과 함께 열려 축제 분위기 속에서 뛸 수 있죠. 풀코스부터 5km까지 종목이 다양해 가족 단위 참가도 많습니다.</p>
-
-<h2>종목과 참가비 — "이 가격에 기부까지"</h2>
-
-<p>가장 눈에 띄는 건 <strong>저렴한 참가비</strong>입니다. 운영보다 기부에 방점을 둔 대회라 다른 도심 마라톤(보통 6~8만원대)보다 훨씬 낮습니다.</p>
-
-<table>
-  <thead>
-    <tr><th>종목</th><th>거리</th><th>참가비(전년 기준)</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>풀코스</strong></td><td>42.195km</td><td>30,000원</td></tr>
-    <tr><td><strong>하프</strong></td><td>21.1km</td><td>20,000원</td></tr>
-    <tr><td><strong>10K</strong></td><td>10km</td><td>20,000원</td></tr>
-    <tr><td><strong>5K</strong></td><td>5km</td><td>10,000원</td></tr>
-  </tbody>
-</table>
-
-<p>※ 위 참가비는 <strong>제22회(2025) 기준</strong>입니다(작성 시점에는 2026 제23회 공식 금액이 미발표였습니다). 첫 풀코스나 하프 도전을 고민 중이라면 <a href="/blog/race-distance-difficulty-guide-2026">거리별 난이도 가이드</a>로 내 수준에 맞는 거리를 먼저 정하면 좋습니다.</p>
-
-<h2>2026 제23회 일정 — 10/5(월·대체공휴일)</h2>
-
-<p>서울시 축제포털에 <strong>2026 강남페스티벌(10/2~10/5)</strong> 프로그램으로 마라톤이 <strong>10월 5일</strong>에 등재돼 있었습니다(2026년 10월 5일은 개천절 대체공휴일인 월요일입니다). 이 글을 쓴 6월 12일에는 <strong>공식 홈페이지(peacemarathon.co.kr)에 제22회 정보만</strong> 게시돼 있어, 종목·참가비·접수 세부가 미발표 상태였습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">접수는 8월경 예상 — 추첨제</p>
-    <p>전년(제22회)에는 <strong>8월 초 온라인 추첨</strong>으로 접수했고 정원은 약 1만 명이었습니다. 작성 시점에는 2026 제23회도 비슷한 패턴이면 <strong>8월경 peacemarathon.co.kr에서 접수</strong>가 열릴 것으로 봤습니다. 실제 2026 접수 방식은 <a href="/marathon/gangnam-peace-marathon-2026">강남국제평화마라톤 대회 페이지</a>에 정리돼 있습니다. 대회 당일 기록 측정이 궁금하면 <a href="/blog/race-timing-chip-net-gross-time-guide-2026">기록칩·넷타임 정리</a>를 참고하면 됩니다.</p>
-  </div>
-</div>
-
-<h2>가을 강남에서, 의미 있게 한 걸음</h2>
-
-<p>강남국제평화마라톤은 "빠른 기록"보다 <strong>"달리는 행위 자체가 누군가를 돕는다"</strong>는 데 의미가 있는 대회입니다. 저렴한 참가비, 접근성 좋은 강남 도심 코스, 가족 친화 종목까지 갖춰 입문 러너나 가족 참가에도 잘 맞습니다. 10월 가을 시즌, 다른 하반기 대회와 함께 일정을 짜고 싶다면 <a href="/blog/2026-second-half-marathon-schedule-korea">2026 하반기 마라톤 완전정복</a>과 <a href="/marathon">월별 마라톤 캘린더</a>를 참고하세요. 🕊️</p>
-
-<p style="font-size:0.85em;color:#64748b;margin-top:2em;">※ 본 글은 2026-06-12 기준으로 썼으며, 2026 제23회의 대회일(10/5)은 서울시 축제포털 등재 기준, 종목·참가비·접수일은 제22회(2025) 기준 추정이었습니다. 대회일(10/5)은 지났고, 다음 회차는 강남국제평화마라톤 홈페이지(peacemarathon.co.kr)에서 확인하세요.</p>
-`,
+    id: "gangnam-international-peace-marathon-2026",
+    slug: "gangnam-international-peace-marathon-2026",
+    title: "강남국제평화마라톤 2026: 기부 목적·넷타임·종목별 제한시간",
+    description: "공식은 참가비 전액을 아동·청소년 의료비와 교육비에 기부할 계획으로 설명합니다. 넷타임 시상과 종목별 제한시간을 확인하고, 기부 목적과 실제 전달 완료를 구분했습니다.",
+    thumbnail: "/images/blog/verified-gangnam-international-peace-marathon-2026-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-12",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "강남국제평화마라톤",
+      "국평마",
+      "강남 마라톤",
+      "기부 마라톤",
+      "주한미8군",
+      "강남페스티벌",
+      "서울 마라톤",
+      "가을 마라톤",
+      "하반기 대회",
+      "봉은사로"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 운영 계획과 실제 개인 결과를 구분합니다.</small></p>
+<p>제23회 강남국제평화마라톤의 10월 5일 일정이 지났다. <a href="https://peacemarathon.co.kr/" target="_blank" rel="noopener noreferrer">공식 홈</a>과 FAQ를 대조해 기부 목적·기록·신청 조건을 정리했다. 종료된 8월 접수를 현재 모집으로 안내하지 않는다.</p>
+<h2>참가비의 기부 목적과 실제 전달은 별도 확인</h2><p><a href="https://peacemarathon.co.kr/community/faq.php" target="_blank" rel="noopener noreferrer">공식 FAQ</a>는 기부금 전액을 유니세프한국위원회 등 수요처를 통해 전 세계 아동·청소년 의료비와 교육비에 기부한다고 설명한다. 지원 대상을 전쟁고아로만 한정한 설명은 수정했다.</p><p>표시 참가비는 풀코스 3만원·하프와 10km 각 2만원·5km 1만원이다. 기부 목적 공개와 실제 정산·전달 완료, 개인 영수증 발급은 서로 다른 확인 사항이다. 이번 글에서 전달 증빙이나 개인의 공제 가능 여부를 확인한 것은 아니다.</p>
+<h2>기록 계측과 시상 모두 넷타임 안내</h2><p>FAQ는 출발점을 통과한 때부터 계측하는 넷타임을 명시한다. <a href="https://peacemarathon.co.kr/info/caution.php" target="_blank" rel="noopener noreferrer">공식 유의사항</a>도 넷타임 시상을 안내한다. 다른 대회의 건타임 관행을 자동으로 적용하지 않는다.</p><p>기록에 문제가 있다면 배번호 뒤 칩과 출발·반환·도착 계측 지점의 통과 여부를 확인할 사항이다. 개인 GPS와 공식 기록의 차이만으로 원인을 확정할 수는 없다. 자신이 뛴 연도·종목·배번호를 먼저 대조하자.</p>
+<h2>풀코스 5시간, 하프 3시간의 제한</h2><p>현재 유의사항의 제한시간은 풀코스 5시간·하프 3시간·10km와 5km 각 1시간 50분이다. 홈에 적힌 08시 집결·09시 출발 계획과는 다른 항목이다. 개인이 늦게 출발해도 전체 통제시간이 연장되는 것은 아니다.</p><p>코스 약도만으로 정확한 고도·바람·개인 체력 조건을 판단할 수 없어 초보자 적합 등급이나 PB 보장은 제시하지 않았다. 기부 목적의 행사라는 이유만으로 제한시간이나 기록 확인이 불필요한 것도 아니다.</p>
+<h2>구민 우선 접수와 카드 결제 조건</h2><p>공식은 강남구민 우선 접수 이후 종목별 일반 접수를 나눴고, 카드 결제 완료를 접수 확정 조건으로 안내했다. 구민 우선 접수에는 주소 조건과 변경 제한이 있어 일반 접수와 같은 처리로 가정하면 안 된다.</p><p>환불 기한인 8월 26일 17시는 지났다. 미해결 문의는 신청·승인·실제 환급 내역을 구분해 070-7727-1755·spomax_marathon@naver.com 공식 경로에서 확인하자. 전원 배송·기부 전달·개인 결과의 완료 여부는 이번 확인 범위 밖이다.</p>
+<h2>자주 묻는 질문</h2><h3>참가비는 전쟁고아에게만 기부되나요?</h3><p>공식 FAQ는 유니세프한국위원회 등을 통한 전 세계 아동·청소년 의료비와 교육비 지원을 설명합니다. 실제 전달 완료는 별도 확인 사항입니다.</p><h3>시상은 건타임인가요?</h3><p>현재 공식 유의사항은 넷타임 시상을 안내합니다. 다른 대회의 관행을 자동으로 적용하지 않았습니다.</p><h3>하프와 10km의 제한시간은 같나요?</h3><p>공식 유의사항은 풀코스 5시간·하프 3시간·10km와 5km 각 1시간 50분으로 구분합니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "참가비는 전쟁고아에게만 기부되나요?",
+        "answer": "공식 FAQ는 유니세프한국위원회 등을 통한 전 세계 아동·청소년 의료비와 교육비 지원을 설명합니다. 실제 전달 완료는 별도 확인 사항입니다."
+      },
+      {
+        "question": "시상은 건타임인가요?",
+        "answer": "현재 공식 유의사항은 넷타임 시상을 안내합니다. 다른 대회의 관행을 자동으로 적용하지 않았습니다."
+      },
+      {
+        "question": "하프와 10km의 제한시간은 같나요?",
+        "answer": "공식 유의사항은 풀코스 5시간·하프 3시간·10km와 5km 각 1시간 50분으로 구분합니다."
+      }
+    ],
   },
   {
     id: 'seoul-marathon-100-years-history-1931-2030',
@@ -5179,114 +5059,48 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: '2026-seonsa-marathon-gangdong',
-    slug: '2026-seonsa-marathon-gangdong',
-    title: '2026 선사마라톤축제 — 참가비 3만원에 바람막이까지 | 6천년 암사동 유적에서 한강까지, 일정·접수·코스 총정리',
-    description: '서울 강동구 암사동 유적에서 출발해 한강을 달리는 제20회 2026 선사마라톤축제. 2026년 9월 20일 개최, 하프·10K·5K(달리기/걷기) 종목에 전 종목 참가비 3만원 + 초경량 러닝자켓 제공. 강동구민 6/8·일반 6/11 선착순 접수(총 2,800명). 교통통제 없는 한강 평지 코스의 일정·접수·코스·준비 팁을 정리.',
-    thumbnail: '/images/blog/2026-seonsa-marathon-gangdong.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-02',
-    category: 'news' as const,
-    readingTime: 8,
-    tags: ['선사마라톤', '선사마라톤축제', '강동구 마라톤', '암사동 유적', '한강 마라톤', '2026 마라톤', '가을 마라톤', '하프마라톤', '마라톤 접수'],
-    content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>제20회 2026 선사마라톤축제</strong>가 <strong>2026년 9월 20일(일)</strong> 서울 강동구 <strong>암사동 유적</strong>에서 출발해 한강을 달립니다</li>
-    <li><strong>전 종목 참가비 3만원 + 초경량 러닝자켓(바람막이)</strong> 제공 — 가성비 좋은 가을 대회. 하프·10K·5K(달리기/걷기) 4종목</li>
-    <li>접수는 <strong>강동구민 6/8, 일반 6/11 오전 10시 선착순</strong>(총 2,800명). 작년보다 한 달 앞당겨졌고 빠르게 마감되니 서두르세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🏛️</span>
-  <div class="callout-body">
-    <p class="callout-title">6천년 신석기 유적에서 한강까지</p>
-    <p>선사마라톤축제는 국내 최대 신석기 유적인 <strong>서울 암사동 유적</strong>을 알리기 위해 강동구가 여는 대회로, 올해 <strong>20회</strong>를 맞습니다. <strong>암사초록길을 따라 한강으로 바로 진입</strong>하는 평지 코스라 교통통제 없이 안전하고, 10월의 강동선사문화축제(10/16~18)를 앞두고 분위기를 띄우는 선행 행사이기도 합니다. "가을바람 맞으며 한강 뛰고, 참가비 3만원에 바람막이까지" 받는 가성비 대회로 입소문을 타고 있습니다.</p>
-  </div>
-</div>
-
-<h2>2026 선사마라톤축제 한눈에</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>내용</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>대회일</td><td><strong>2026년 9월 20일(일) 오전 9시</strong></td></tr>
-    <tr><td>출발지</td><td>서울 강동구 <strong>암사동 유적</strong> 앞 특설무대</td></tr>
-    <tr><td>종목</td><td><strong>하프(21.1km) · 10km · 5km 달리기 · 5km 걷기</strong></td></tr>
-    <tr><td>참가비</td><td><strong>전 종목 3만원</strong> (초경량 러닝자켓 포함)</td></tr>
-    <tr><td>규모</td><td>총 2,800명 (작년 대비 확대)</td></tr>
-    <tr><td>접수(구민)</td><td>6월 8일 10시 · 선착순 1,000명</td></tr>
-    <tr><td>접수(일반)</td><td><strong>6월 11일 10시 · 선착순 1,800명</strong></td></tr>
-    <tr><td>접수처</td><td>gomarathon.co.kr</td></tr>
-  </tbody>
-</table>
-
-<p class="caption">일정·정원은 주최(강동구 육상연맹) 공지 기준입니다. 종목별 세부 정원·코스 표지 등은 공식 접수 페이지에서 최종 확인하세요.</p>
-
-<h2>핵심 ① — 참가비 3만원에 바람막이까지</h2>
-
-<p>이 대회의 최대 매력은 <strong>가성비</strong>입니다. 하프부터 5km 걷기까지 <strong>전 종목 3만원</strong>인데, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 줍니다. 가을·겨울 러닝에 바로 쓰는 기능성 자켓이라 사실상 참가비 값을 하는 셈이죠. 러닝 재킷의 체온유지성·공기투과도·발수성을 공공기관이 직접 시험한 결과는 <a href="/fabrics/kca-running-jacket-2025">한국소비자원 러닝 재킷 8종 시험</a>에 정리했습니다. 완주자에게는 <strong>완주메달과 기록증</strong>도 제공됩니다.</p>
-
-<h2>핵심 ② — 교통통제 없는 한강 평지 코스</h2>
-
-<p>출발지인 암사동 유적 광장에서 <strong>암사초록길과 암사 토끼굴(생태 터널)</strong>을 지나 <strong>광나루~잠실 한강공원</strong> 구간으로 진입합니다. 한강을 따라 달리는 <strong>평지 코스라 고도 부담이 거의 없어</strong> 기록 도전에도 유리합니다. 일반 도로를 막지 않는 안전한 코스 설계라 초보·가족 참가자도 부담이 적습니다.</p>
-
-<ul>
-  <li><strong>하프(21.1km)</strong> — 제한시간 3시간. 한강 평지라 첫 하프·기록 도전 모두 적합</li>
-  <li><strong>10km</strong> — 제한시간 1시간 30분</li>
-  <li><strong>5km 달리기</strong> — 제한시간 1시간. 입문·가족 추천</li>
-  <li><strong>5km 걷기</strong> — 제한시간 1시간 30분. 누구나 참가 가능</li>
-</ul>
-
-<h2>핵심 ③ — 접수가 한 달 앞당겨졌다, 서두르세요</h2>
-
-<p>작년(19회)은 7월에 접수를 시작했는데, <strong>올해는 6월로 한 달 앞당겨졌습니다.</strong> 강동구민은 <strong>6월 8일</strong>, 일반(비구민)은 <strong>6월 11일 오전 10시</strong>부터 선착순입니다. 정원이 총 2,800명으로 한정적이라 <strong>인기 종목은 빠르게 마감</strong>될 수 있으니, 신청 시각에 맞춰 접속하는 걸 권합니다.</p>
-
-<div class="callout tip">
-  <span class="callout-icon">📅</span>
-  <div class="callout-body">
-    <p class="callout-title">접수 D-DAY 체크</p>
-    <p><strong>일반 참가자는 6월 11일(목) 오전 10시</strong>를 알림으로 등록해두세요. 선착순이라 오픈 직후 접속이 중요합니다. <a href="https://www.gomarathon.co.kr" target="_blank" rel="noopener">gomarathon.co.kr</a>에서 신청하며, 강동구민은 사흘 빠른 6월 8일에 별도 페이지로 접수합니다.</p>
-  </div>
-</div>
-
-<h2>9월 대회, 지금부터 준비하면 충분</h2>
-
-<p>9월 20일이면 <strong>약 3개월 반</strong>의 준비 기간이 있습니다. 무더위·장마가 끼는 시기라 안전하게 거리를 쌓는 게 핵심입니다.</p>
-
-<ul>
-  <li><strong>하프 도전</strong>: 천천히 오래 달리는 LSD로 기초 지구력부터. <a href="/blog/lsd-training-beginner-guide-korea">초보 LSD 훈련 가이드</a></li>
-  <li><strong>페이스 전략</strong>: 평지 한강 코스는 페이스 배분이 기록을 좌우. <a href="/blog/marathon-pacing-mental-strategy-guide">마라톤 페이싱·멘탈 전략</a></li>
-  <li><strong>여름 훈련</strong>: 6~8월 폭염·장마 대비. <a href="/blog/rainy-season-running-guide-korea">장마철 러닝 가이드</a></li>
-  <li><strong>신발 준비</strong>: 한강 평지 완주용 데일리·쿠션화. <a href="/recommend">1분 러닝화 추천</a>으로 본인 조건에 맞는 후보 찾기</li>
-</ul>
-
-<div class="callout tip">
-  <span class="callout-icon">🌊</span>
-  <div class="callout-body">
-    <p class="callout-title">한강 러닝이 처음이라면</p>
-    <p>대회 전 코스를 미리 달려보고 싶다면, 광나루~잠실 한강공원 구간을 가볍게 뛰어보세요. 서울 한강·도심 러닝 코스는 <a href="/blog/seoul-unique-running-courses-7">서울 달리기 좋은 곳 7선</a>에서 정리했습니다. 다른 가을 대회와 함께 일정을 짜려면 <a href="/blog/2026-garmin-run-korea-half-marathon">가민런 코리아</a>·<a href="/blog/2026-chuncheon-marathon-registration-guide">춘천마라톤</a>과 <a href="/marathon">마라톤 캘린더</a>를 참고하세요.</p>
-  </div>
-</div>
-
-<h2>FAQ</h2>
-
-<h3>Q. 강동구민이 아니어도 참가할 수 있나요?</h3>
-<p>네. 일반(비구민)은 <strong>6월 11일 오전 10시</strong>부터 선착순 1,800명을 모집합니다. 강동구민은 사흘 빠른 6월 8일에 별도로 1,000명을 접수합니다. 둘 다 <strong>gomarathon.co.kr</strong>에서 신청합니다.</p>
-
-<h3>Q. 참가비 3만원에 정말 바람막이를 주나요?</h3>
-<p>네. 전 종목 참가비가 3만원으로 동일하고, 모든 참가자에게 <strong>초경량 러닝자켓(바람막이)</strong>을 제공합니다. 완주자에게는 메달과 기록증도 주어져, 가을 대회 중 가성비가 좋은 편입니다.</p>
-
-<h3>Q. 하프가 처음인데 코스가 어렵나요?</h3>
-<p>암사초록길에서 한강으로 진입하는 <strong>평지 위주 코스</strong>라 고도 부담이 적고, 교통통제 없는 안전한 설계입니다. 첫 하프 도전에 적합하지만, 9월까지 LSD로 거리를 점진적으로 늘려두세요. <a href="/blog/lsd-training-beginner-guide-korea">LSD 가이드</a>를 참고하세요.</p>
-
-<h3>Q. 가족과 함께 참가하고 싶어요.</h3>
-<p><strong>5km 걷기(제한시간 1시간 30분)</strong> 종목이 있어 어린이·노약자도 함께할 수 있습니다. 달리기가 부담되면 5km 걷기로 신청해 암사동 유적과 한강을 가볍게 즐기기 좋습니다.</p>
-`,
+    id: "2026-seonsa-marathon-gangdong",
+    slug: "2026-seonsa-marathon-gangdong",
+    title: "선사마라톤 2026 참가 후: 주로 방향·사진 공유 기간·일회용 칩",
+    description: "주최 후속 공지는 하프 진행 방향과 10km 반환 운영을 갱신했습니다. 사진은 공유일부터 3개월 제공 예정이며, 주최는 기록칩이 일회용으로 반납할 필요가 없다고 안내합니다.",
+    thumbnail: "/images/blog/verified-2026-seonsa-marathon-gangdong-20261110.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-02",
+    category: "news",
+    readingTime: 4,
+    tags: [
+      "선사마라톤",
+      "선사마라톤축제",
+      "강동구 마라톤",
+      "암사동 유적",
+      "한강 마라톤",
+      "2026 마라톤",
+      "가을 마라톤",
+      "하프마라톤",
+      "마라톤 접수"
+    ],
+    content: `<p><small>2026년 11월 10일 공개 원문 대조. 운영 계획과 실제 개인 결과를 구분합니다.</small></p>
+<p>제20회 선사마라톤의 9월 20일 일정이 끝났다. <a href="http://www.gomarathon.co.kr/" target="_blank" rel="noopener noreferrer">주최 공식 홈</a>의 기록·사진·후속 공지에서 참가자가 확인할 사항을 정리했다. 과거 6월 접수를 현재 모집으로 안내하지 않는다.</p>
+<h2>하프는 반대 방향, 10km는 잠실 방향 반환</h2><p><a href="http://www.gomarathon.co.kr/s5p1/129884" target="_blank" rel="noopener noreferrer">8월 31일 주로 운영·배송 공지</a>는 하프를 기존 반대 방향, 10km를 잠실대교 방향으로 이동한 뒤 1회 반환, 5km를 기존 방향으로 안내한다. 8월 30일 설명 이후 나온 후속 공지다. 주최는 이를 코스 자체보다 종목별 진행 방향과 순서의 변경으로 설명한다.</p><p>처음 저장한 지도와 최종 운영 설명을 구분하자. 이 자료만으로 정밀 고도나 개인 GPS 결과까지 검증할 수는 없다. 다음 회차도 같은 방향으로 달릴지는 새 공지를 확인해야 한다.</p>
+<h2>사진은 공유일부터 3개월 제공 예정</h2><p><a href="http://www.gomarathon.co.kr/s5p1/130307" target="_blank" rel="noopener noreferrer">9월 21일 사진 안내</a>는 공유 페이지와 비밀번호 0920을 공개하고 공유일부터 3개월 후 삭제할 예정이라고 적는다. 공지 작성일과 실제 공유 시작일을 동일하다고 가정해 별도의 삭제 날짜를 만들지는 않았다.</p><p>주최는 일부 참가자의 사진이 빠지거나 원하는 사진이 없을 수 있다고 설명한다. 자신과 가족·지인의 사진을 확인하는 용도로 안내하며, 모든 사진의 상업적 이용 권한을 제공한 것은 아니다. 본인 사진이 현재 남아 있는지는 공유 페이지에서 확인할 사항이다.</p>
+<h2>주최의 칩 안내는 일회용·반납 불필요</h2><p><a href="http://www.gomarathon.co.kr/s5p1/129689" target="_blank" rel="noopener noreferrer">8월 14일 칩·기록 조회 안내</a>는 배번호 뒤 칩이 일회용으로 반납할 필요가 없다고 명시한다. <a href="https://www.gangdong.go.kr/web/culture/contents/gdc035_020_030" target="_blank" rel="noopener noreferrer">강동구 문화포털</a> 일반 지급품 목록의 ‘대여품’ 표기와 달라 구체적인 주최 안내를 함께 확인했다.</p><p>공식은 모든 계측 지점을 통과해야 정상 기록이 측정되며 매트를 굳이 밟을 필요는 없다고 설명한다. 기록 조회·모바일 기록증과 개인 사진을 넣는 포토 기록증은 기능이 다르다. 본인 결과는 해당 조회 경로에서 확인하자.</p>
+<h2>사전 배송 시작과 실제 수령을 구분</h2><p>8월 31일 공지는 9월 7일부터 러닝 자켓·배번호를 순차 발송한다고 알린다. 초기의 ‘대회 약 2주 전’보다 구체적인 일정이지만, 전원 동시 도착이나 미수령 문제의 해결 완료를 뜻하지는 않는다.</p><p>물품이나 기록 문제가 남았다면 이름·종목·배번호·실제 수령 내역과 적용 공지를 함께 확인하자. 주최 공개 문의처는 02-476-7330이다. 다른 행사의 무료 사진·칩 반납·배송 조건과 섞지 않는 것이 중요하다.</p>
+<h2>자주 묻는 질문</h2><h3>하프는 예전 지도와 같은 방향이었나요?</h3><p>8월 31일 공식 후속 공지는 하프를 기존 반대 방향, 10km를 잠실대교 방향 1회 반환으로 안내합니다. 처음 지도와 최종 운영 설명을 구분해야 합니다.</p><h3>사진은 언제까지 볼 수 있나요?</h3><p>주최는 공유일부터 3개월 제공한 뒤 삭제할 예정이라고 안내합니다. 본인 사진의 존재 여부와 현재 공유 상태는 해당 페이지에서 확인해야 합니다.</p><h3>기록칩은 반납해야 하나요?</h3><p>주최의 8월 14일 공지는 일회용으로 반납 불필요라고 명시합니다. 문화포털 일반 목록의 대여품 표기와 구분했습니다.</p>`,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "하프는 예전 지도와 같은 방향이었나요?",
+        "answer": "8월 31일 공식 후속 공지는 하프를 기존 반대 방향, 10km를 잠실대교 방향 1회 반환으로 안내합니다. 처음 지도와 최종 운영 설명을 구분해야 합니다."
+      },
+      {
+        "question": "사진은 언제까지 볼 수 있나요?",
+        "answer": "주최는 공유일부터 3개월 제공한 뒤 삭제할 예정이라고 안내합니다. 본인 사진의 존재 여부와 현재 공유 상태는 해당 페이지에서 확인해야 합니다."
+      },
+      {
+        "question": "기록칩은 반납해야 하나요?",
+        "answer": "주최의 8월 14일 공지는 일회용으로 반납 불필요라고 명시합니다. 문화포털 일반 목록의 대여품 표기와 구분했습니다."
+      }
+    ],
   },
   {
     id: 'trail-running-appeal-beginner-guide-2026',

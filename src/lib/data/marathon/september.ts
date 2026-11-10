@@ -83,98 +83,122 @@ export const septemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'hyundai-forest-run-2026',
-    name: '2026 현대자동차 포레스트런',
-    date: '2026-09-12',
-    month: '9월',
-    location: '여의도공원 문화의 마당',
-    region: '서울',
-    distances: ['10K'],
-    status: '대회종료',
+    id: "hyundai-forest-run-2026",
+    name: "2026 현대자동차 포레스트런",
+    date: "2026-09-12",
+    month: "9월",
+    location: "여의도공원 문화의 마당",
+    region: "서울",
+    distances: [
+      "10K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://www.hyundai.com/kr/ko/brand/forestrun',
-    registrationStart: '2026-08-03',
-    registrationEnd: '2026-08-06',
-    registrationNote:
-      '접수 종료 — 최종 신청기간은 8월 3일(월) 10시 ~ 8월 6일(목) 23시 59분 선착순이었습니다. 7월 16일 최초 발표의 "7월 23일 개시"에서 변경된 일정입니다(공식 파이널런 안내 2026-08-31 확인)',
+    website: "https://www.hyundai.com/kr/ko/brand/forestrun",
+    registrationStart: "2026-08-03",
+    registrationEnd: "2026-08-06",
+    registrationNote: "접수 종료 — 최종 신청기간은 8월 3일(월) 10시 ~ 8월 6일(목) 23시 59분 선착순이었습니다. 7월 16일 최초 발표의 \"7월 23일 개시\"에서 변경된 일정입니다(공식 파이널런 안내 2026-08-31 확인)",
     raceKit: {
-      items: [
-        '포레스트런 러닝 패키지 — 9월 3일부터 순차 배송',
-        '기념 티셔츠(옥수수 추출물 37% 소로나 섬유, 신청 시 고른 사이즈는 변경 불가)',
-        '나일론 러닝캡',
-        '러닝 짐색 — 당일 물품보관에 필요하므로 반드시 지참',
+      "items": [
+        "포레스트런 러닝 패키지 — 9월 3일부터 순차 배송",
+        "기념 티셔츠(옥수수 추출물 37% 소로나 섬유, 신청 시 고른 사이즈는 변경 불가)",
+        "나일론 러닝캡",
+        "러닝 짐색 — 당일 물품보관에 필요하므로 반드시 지참"
       ],
-      verifiedAt: '2026-08-31',
+      "verifiedAt": "2026-08-31"
     },
-    lastVerified: '2026-08-31',
-    description:
-      '참가자 1인당 나무를 심는 현대자동차 친환경 러닝 캠페인 11회차. 2026년은 봄에서 가을로 옮겨 9월 12일(토) 여의도에서 열리며, UN세계식량계획(WFP)과 협업해 니제르에 10만여 그루를 심는 것이 목표입니다. 러너 한 명이 약 15그루를 기부하는 셈입니다. 참가권 50,000원은 단순 참가비가 아니라 기부금 3만 원 + 참가비 2만 원 구조여서, 기부금 3만 원은 전액 WFP로 가고 기부금 영수증을 따로 발급받을 수 있습니다. 현대Shop에서 선착순 6,500명으로 판매했고 최종 신청기간은 8월 3일 10시부터 8월 6일 23시 59분까지였습니다(7월 16일 최초 발표의 7월 23일 개시에서 변경). 순위를 겨루는 대회가 아니라고 공식이 명시한 비경쟁 러닝입니다.',
+    lastVerified: "2026-11-10",
+    description: "9월 12일 포레스트런 일정은 지났다. 공식 최종 접수는 8월 3~6일이었다. 50,000원은 기부금 30,000원과 참가비 20,000원으로 구분하고 영수증은 별도 본인 확인 절차다. 한 명당 약 15그루는 캠페인 계획으로 실제 식재 완료와 다르다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      courseDescription:
-        '여의도공원 문화의 마당 출발 → 여의서로 하단도로 → 여의서로 → 서강대교 → 광흥창역 사거리(반환) → 같은 길로 복귀하는 왕복 코스입니다. 평지 도심 코스로 완주 제한은 1시간 30분이고, 행사 자체가 오전 6시 30분에 시작해 오후 1시에 끝납니다. 순위 경쟁이 아니라 완주와 기부가 목적인 대회라 페이스 부담이 적습니다. 다만 공식은 "관계 기관 협의에 따라 코스가 변경될 수 있다"고 고지했습니다.',
-      gpx: {
-        file: '/data/gpx/hyundai-forest-run-2026.gpx',
-        source: 'reconstructed',
-        verifiedAt: '2026-08-23',
-        sourceNote:
-          '현대자동차 공식 홈페이지가 텍스트로 밝힌 경유지를 OSM 보행 도로망 위에서 새로 이었다',
-        sourceUrl: 'https://www.hyundai.com/kr/ko/brand/forestrun/forestrun-apply/finalrun',
-      },
+      "courseDescription": "파이널런은 여의도공원에서 서강대교를 지나 광흥창역 인근 반환을 안내한다. 2026 타임테이블은 06:30 집결·07:30 출발이나 같은 페이지에 과거 5월 17일 문구도 남아 있어 구분해야 한다. 기존 재구성 GPX의 정밀 고도·실제 주행 결과는 이번 범위 밖이다.",
+      "gpx": {
+        "file": "/data/gpx/hyundai-forest-run-2026.gpx",
+        "source": "reconstructed",
+        "verifiedAt": "2026-08-23",
+        "sourceNote": "현대자동차 공식 홈페이지가 텍스트로 밝힌 경유지를 OSM 보행 도로망 위에서 새로 이었다",
+        "sourceUrl": "https://www.hyundai.com/kr/ko/brand/forestrun/forestrun-apply/finalrun"
+      }
     },
     raceInfo: {
-      entryFees: [{ distance: '10K', fee: 50000 }],
-      startTime: '06:30',
+      "entryFees": [
+        {
+          "distance": "10K",
+          "fee": 50000
+        }
+      ],
+      "startTime": "07:30"
     },
+    postRaceNote: "공식 기부 참가권은 비경쟁 러닝으로 설명하며 파이널런에는 넷타임 계측 안내가 있다. 비경쟁을 비계측으로 바꾸지 않는다. 영수증은 구매자 전용 공식 안내 경로로 확인하며 실제 발급 완료는 미조회다. https://www.hyundai.com/kr/ko/brand/forestrun/forestrun-apply/donation-ticket",
   },
   {
-    id: 'run-seoul-run-2026',
-    name: '런서울런 2026 (제20회 일간스포츠 서울마라톤)',
-    date: '2026-09-13',
-    month: '9월',
-    location: '서울광장 (서울 중구 세종대로 110)',
-    region: '서울',
-    distances: ['하프', '10K'],
-    status: '대회종료',
+    id: "run-seoul-run-2026",
+    name: "런서울런 2026 (제20회 일간스포츠 서울마라톤)",
+    date: "2026-09-13",
+    month: "9월",
+    location: "서울광장 (서울 중구 세종대로 110)",
+    region: "서울",
+    distances: [
+      "하프",
+      "10K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://runseoulrun.com/',
-    registrationNote: '선착순 12,000명 마감(결제 기준) — 마감일 미고지',
+    website: "https://runseoulrun.com/",
+    registrationNote: "지난 접수는 6월 29일 10시부터 결제 기준 선착순 계획이었다. 공식 FAQ는 개인 신청·카드 결제와 단체 신청 불가를 안내한다. 환불·정보 변경 기한 8월 14일 17시는 지났다.",
     raceKit: {
-      items: [
-        '기념 티셔츠(노스페이스, 택배 발송)',
-        '노스페이스 러닝 양말',
-        '배번호(택배 발송)',
-        '완주메달(현장 지급)',
-        '할리스 기프트 카드 5,000원권',
-        '에너지 젤·리커버리 등 협찬 물품',
+      "items": [
+        "기념 티셔츠(노스페이스, 택배 발송)",
+        "노스페이스 러닝 양말",
+        "배번호(택배 발송)",
+        "완주메달(현장 지급)",
+        "할리스 기프트 카드 5,000원권",
+        "에너지 젤·리커버리 등 협찬 물품"
       ],
-      byDistance: [
-        { distance: '하프', item: '헤어 리커버리 샴푸 50ml·파워에이드 (하프 한정)' },
-        { distance: '10km', item: '캐옴 당근 (10km 한정)' },
+      "byDistance": [
+        {
+          "distance": "하프",
+          "item": "헤어 리커버리 샴푸 50ml·파워에이드 (하프 한정)"
+        },
+        {
+          "distance": "10km",
+          "item": "캐옴 당근 (10km 한정)"
+        }
       ],
-      images: [
-        { src: '/images/marathon/run-seoul-run-2026/kit-1.webp', alt: '2026 런서울런 공식 기념 티셔츠 (노스페이스)' },
-        { src: '/images/marathon/run-seoul-run-2026/kit-2.webp', alt: '2026 런서울런 완주메달 공식 시안' },
-        { src: '/images/marathon/run-seoul-run-2026/kit-3.webp', alt: '2026 런서울런 노스페이스 러닝 양말' },
+      "images": [
+        {
+          "src": "/images/marathon/run-seoul-run-2026/kit-1.webp",
+          "alt": "2026 런서울런 공식 기념 티셔츠 (노스페이스)"
+        },
+        {
+          "src": "/images/marathon/run-seoul-run-2026/kit-2.webp",
+          "alt": "2026 런서울런 완주메달 공식 시안"
+        },
+        {
+          "src": "/images/marathon/run-seoul-run-2026/kit-3.webp",
+          "alt": "2026 런서울런 노스페이스 러닝 양말"
+        }
       ],
-      verifiedAt: '2026-08-27',
+      "verifiedAt": "2026-08-27"
     },
-    lastVerified: '2026-08-27',
-    description:
-      '서울광장에서 출발하는 도심 하프·10km 대회 20회차. 6월 29일 10시부터 결제자 기준 12,000명 선착순 접수로, 고정 마감일 없이 정원 소진 시 종료됩니다. 참가 정보 수정·환불은 8월 14일 17시까지 가능합니다.',
+    lastVerified: "2026-11-10",
+    description: "9월 13일 런서울런 일정은 지났다. 공식 시간표는 하프 07:30·10K 07:50 출발을 구분한다. 표시 참가비는 하프 80,000원·10K 70,000원, 12,000명은 모집 계획이다. 하프 전용·10K 전용 지급품과 최소 주문 조건이 있는 할인권은 별도 항목이다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      courseDescription: '서울광장 출발 도심 코스. 하프 07:30, 10km 07:50 출발.',
+      "courseDescription": "서울광장 일정의 종목별 출발 계획은 하프 07:30·10km 07:50이다. 정확한 고도·난이도·개인 PB를 보장하는 자료는 이번에 확인하지 않았다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 80000 },
-        { distance: '10K', fee: 70000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 80000
+        },
+        {
+          "distance": "10K",
+          "fee": 70000
+        }
       ],
-      startTime: '07:30',
+      "startTime": "07:30"
     },
+    postRaceNote: "기념품 목록은 샴푸·파워에이드를 하프 전용, 캐옴 당근을 10K 전용으로 적는다. 할리스 5,000원 기프트카드와 땡겨요 3,000원 할인권(12,000원 이상 구매 조건)을 모두 무조건 현금처럼 더하지 않는다. 개인 기록·사진·수령 완료는 미조회다. https://runseoulrun.com/",
   },
   {
     id: 'sunsa-marathon-festival-2026',
@@ -445,45 +469,60 @@ export const septemberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'ytn-seoul-tour-marathon-2026',
-    name: '2026 YTN 서울투어마라톤',
-    date: '2026-09-06',
-    month: '9월',
-    location: '서울광장 (서울 중구)',
-    region: '서울',
-    distances: ['하프', '11K'],
-    status: '대회종료',
+    id: "ytn-seoul-tour-marathon-2026",
+    name: "2026 YTN 서울투어마라톤",
+    date: "2026-09-06",
+    month: "9월",
+    location: "서울광장 (서울 중구)",
+    region: "서울",
+    distances: [
+      "하프",
+      "11K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://run.ytn.co.kr',
-    registrationStart: '2026-06-17',
-    registrationEnd: '2026-06-26',
-    registrationNote:
-      '전 코스 선착순 조기 마감 — 6/26 공식 공지(기념품 제작 진행으로 취소·환불 불가). 추가접수·양도 공지 없음(2026-08-27 확인)',
+    website: "https://run.ytn.co.kr",
+    registrationStart: "2026-06-17",
+    registrationEnd: "2026-06-26",
+    registrationNote: "6월 26일 공식 모집 마감 공지는 모든 코스의 선착순 마감과 기념품 제작에 따른 취소·환불 불가를 알렸다. 홈의 7월 10일 17시 표기는 예정 접수 범위로 실제 조기 마감과 구분한다. https://run.ytn.co.kr/community/index01.php?group=basic&code=B5&abmode=view&no=8124",
     raceKit: {
-      items: ['공식 티셔츠(85~115)', '헤드밴드', '양말', '배번호·기록칩', '완주메달'],
-      pending:
-        '완주메달 디자인 공개됨(그레이스케일 목업 수준)·배번호 디자인은 미게시. 티셔츠 공급사 표기가 사이트 안에서 충돌(기념품 페이지 프로-스펙스 vs 발송 공지 무신사 패키지) — 실물 확인 전 단정 보류',
-      images: [{ src: '/images/marathon/ytn-seoul-tour-marathon-2026/kit-1.webp', alt: '2026 서울투어마라톤 공식 기념품 안내 — 무신사 티셔츠·헤드밴드·양말' }],
-      verifiedAt: '2026-08-27',
+      "items": [
+        "공식 티셔츠(85~115)",
+        "헤드밴드",
+        "양말",
+        "배번호·기록칩",
+        "완주메달"
+      ],
+      "pending": "8월 26일 최신 발송 공지는 무신사 패키지를 안내한다. 초기 기념품 페이지와 구분하며 모든 개인 배송·반송 처리는 별도 확인이다.",
+      "images": [
+        {
+          "src": "/images/marathon/ytn-seoul-tour-marathon-2026/kit-1.webp",
+          "alt": "2026 서울투어마라톤 공식 기념품 안내 — 무신사 티셔츠·헤드밴드·양말"
+        }
+      ],
+      "verifiedAt": "2026-11-10"
     },
-    lastVerified: '2026-08-27',
-    description:
-      'YTN 주최 서울 도심 시티투어 마라톤. 서울광장 출발, 동대문·숭례문·청계천 등 구도심 랜드마크를 잇는 평탄한 하프·11K 코스(풀코스 없음). 2026.9.6(일) 07시30분 출발. 참가비 하프 8만·11K 7만 원. 접수는 6/17 열려 전 코스 선착순 조기 마감됐습니다(6/26 공지). 배번호·기록칩·기념품은 현장 수령이 아니라 8/26~28 택배로 사전 발송 — 9/1까지 못 받으면 사무국(070-7725-6258) 확인, 미수령 반송분은 대회 당일 안내센터에서 신분증 지참 수령. 2025년 광화문광장→2026년 서울광장으로 출발지 변경, 11월→9월 초로 시기 이동(단, 교통통제도·집결 안내 일부는 아직 광화문광장 세종대왕상 앞 표기로 사이트 내 불일치).',
+    lastVerified: "2026-11-10",
+    description: "9월 6일 YTN 서울투어마라톤은 하프·11KM 일정이었다. 공식 FAQ는 종목과 관계없이 제출 기록에 따라 07:30부터 그룹별 순차 출발을 안내한다. 예정 접수 종료 7월 10일과 별개로 6월 26일 모든 코스 선착순 마감 공지가 있다. 8월 26일 배송 공지의 현장 수령은 반송 완료 물품에 한한 조건이었다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '초보자',
-      certification: '없음',
-      courseDescription:
-        '2026 공식 코스도 게시됨(종목별 이미지 지도, 고저도·급수 정보는 없음). 11K는 서울광장 출발 → 종로 → 동대문역 반환 → 세종대로·숭례문 → 을지로3가역 반환 → 청계천 광교 → 무교로 피니시. 하프는 여기에 청계천변 왕복(청계9가·고산자교·용두역 반환)이 더해집니다. "현장 상황에 따라 변경될 수 있음" 단서 유지(2026-08-27 공식 코스도 확인).',
+      "certification": "없음",
+      "courseDescription": "2026 공식 코스도 게시됨(종목별 이미지 지도, 고저도·급수 정보는 없음). 11K는 서울광장 출발 → 종로 → 동대문역 반환 → 세종대로·숭례문 → 을지로3가역 반환 → 청계천 광교 → 무교로 피니시. 하프는 여기에 청계천변 왕복(청계9가·고산자교·용두역 반환)이 더해집니다. \"현장 상황에 따라 변경될 수 있음\" 단서 유지(2026-08-27 공식 코스도 확인)."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 80000 },
-        { distance: '11K', fee: 70000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 80000
+        },
+        {
+          "distance": "11K",
+          "fee": 70000
+        }
       ],
-      expectedParticipants: 15000,
-      startTime: '07:30',
+      "expectedParticipants": 15000,
+      "startTime": "07:30"
     },
+    postRaceNote: "반송 완료된 사전 패키지만 당일 신분증 확인 후 현장 수령하도록 안내했다. 일반 배송 지연 전부에 새 물품을 지급한다는 조건은 아니다. 당일 기간이 지난 미수령·기록 문의는 070-7725-6258·run.ytn@gmail.com에서 개인 내역과 확인할 사항이다. https://run.ytn.co.kr/community/index01.php?group=basic&code=B5&abmode=view&no=13765",
   },
   {
     id: 'kimdaejung-peace-marathon-2026',

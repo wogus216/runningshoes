@@ -207,64 +207,83 @@ export const octoberEvents: MarathonEvent[] = [
     postRaceNote: "신청 내역·실제 참가정보·받은 물품을 대조한다. 배번호 기록칩 안내와 실제 기록증 발급 완료는 별개다. 럭키드로우 경품은 기본 완주 물품과 다른 추첨 조건이며 전원 고가 경품 지급을 뜻하지 않는다. 의류는 두 핏·구매 후 사이즈 교환 불가 고지였고 실제 오배송·불량 처리는 별도 문의 대상이다. https://www.lotteeatz.com/event/main/selectEvent/18060",
   },
   {
-    id: 'siheung-half-marathon-2026',
-    name: '2026 시흥시 전국하프마라톤대회 (제12회)',
-    date: '2026-10-05',
-    month: '10월',
-    location: '한국공학대학교 제2캠퍼스 (경기 시흥시 거북섬)',
-    region: '경기',
-    distances: ['하프', '10K', '5K'],
-    // 7월 22일 14시에 접수가 열렸는데 '접수예정'으로 남아 있었다(2026-09-01 정정).
-    // 마감일 없는 선착순이라 registrationEnd 로는 상태를 못 잡는 유형 — registrationNote 로 정직 표기한다.
-    status: '대회종료',
-    registrationStart: '2026-07-22',
-    registrationNote:
-      '7월 22일(수) 14시부터 선착순 5,000명으로 접수했고 마감일은 따로 없었습니다(잔여 수량 미공개). 대회일(10월 5일)이 지났습니다.',
+    id: "siheung-half-marathon-2026",
+    name: "2026 시흥시 전국하프마라톤대회 (제12회)",
+    date: "2026-10-05",
+    month: "10월",
+    location: "한국공학대학교 제2캠퍼스 (경기 시흥시 거북섬)",
+    region: "경기",
+    distances: [
+      "하프",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
+    registrationStart: "2026-07-22",
+    registrationNote: "당시 공식 요강은 7월 22일 14시부터 계획 5,000명 모집, 가상계좌 발급 뒤 24시간 내 결제 완료를 안내했다. 현재 신청은 마감이며 차기 모집과는 별개다.",
     isMajor: false,
-    website: 'https://www.shmarathon.kr/shmarathon/',
-    description:
-      '시화호를 끼고 시화방조제 위를 그대로 왕복하는 직선 아웃앤백 코스. 시화호 권역 대회 중 실제로 방조제를 달리는 유일한 대회입니다. 접수는 7월 22일(수) 14시부터 선착순 5,000명. 대회일 10월 5일은 개천절 대체공휴일(월)이었습니다. 오이도역·시흥시청 무료 셔틀버스 운행이 예정돼 있었고, 올해 코스프레런 부문이 신설됐습니다. 참가 자격은 하프 19세 이상·10km 14세 이상.',
+    website: "https://www.shmarathon.kr/shmarathon/",
+    description: "10월 5일 시흥시 전국하프마라톤 일정은 지났다. 공식 10월 6일 후속 공지는 5km 기록칩·공식 기록 미제공과 샤라웃 사진 원본 유료 구매를 안내한다. 10월 12일은 메달 각인 작업 시작과 순차 배송 안내로 전원 배송 완료 보고가 아니다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      courseDescription:
-        '한국공학대 제2캠퍼스 출발 → 시화방조제 왕복. 고저차가 거의 없는 완전 평지 직선 코스라 기록 노리기 좋지만, 방조제 특성상 그늘과 바람막이가 전혀 없어 해풍에 그대로 노출됩니다. 하프 급수는 5·7.5·10(반환점 부근)·13.5·16.5km 다섯 곳입니다.',
-      gpx: {
-        file: '/data/gpx/siheung-half-marathon-2026.gpx',
-        source: 'reconstructed',
-        verifiedAt: '2026-08-24',
-        sourceNote:
-          "시흥시 공식 대회 안내의 코스 서술 — '한국공학대학교 제2캠퍼스 출발 → 시화방조제 왕복'. 출발지와 방조제 위 도로만 취해 OSM 보행 도로망 위에서 새로 이었다.",
-        sourceUrl: 'https://www.shmarathon.kr/shmarathon/',
-        caveat:
-          "공식은 반환점을 이름으로 밝히지 않았습니다. 코스맵이 10km 급수대를 '반환점 부근'으로 표기한 점과 하프가 21.1km 왕복이라는 조건에서, 분기 없는 방조제 외길 위 편도 10.55km 지점으로 잡았습니다. 실제 반환 지점은 이와 다를 수 있습니다.",
-      },
+      "courseDescription": "공식 요강은 한국공학대학교 제2캠퍼스에서 진행하는 하프·10km·5km를 안내한다. 기존 재구성 GPX의 반환점·고도는 이번 후속 공지 확인으로 새로 인증한 것이 아니다.",
+      "gpx": {
+        "file": "/data/gpx/siheung-half-marathon-2026.gpx",
+        "source": "reconstructed",
+        "verifiedAt": "2026-08-24",
+        "sourceNote": "시흥시 공식 대회 안내의 코스 서술 — '한국공학대학교 제2캠퍼스 출발 → 시화방조제 왕복'. 출발지와 방조제 위 도로만 취해 OSM 보행 도로망 위에서 새로 이었다.",
+        "sourceUrl": "https://www.shmarathon.kr/shmarathon/",
+        "caveat": "공식은 반환점을 이름으로 밝히지 않았습니다. 코스맵이 10km 급수대를 '반환점 부근'으로 표기한 점과 하프가 21.1km 왕복이라는 조건에서, 분기 없는 방조제 외길 위 편도 10.55km 지점으로 잡았습니다. 실제 반환 지점은 이와 다를 수 있습니다."
+      }
     },
     raceInfo: {
-      entryFees: [
-        { distance: '하프', fee: 35000 },
-        { distance: '10K', fee: 35000 },
-        { distance: '5K', fee: 20000 },
+      "entryFees": [
+        {
+          "distance": "하프",
+          "fee": 35000
+        },
+        {
+          "distance": "10K",
+          "fee": 35000
+        },
+        {
+          "distance": "5K",
+          "fee": 20000
+        }
       ],
-      // 공식 코스맵에 표기된 하프 급수 5곳(5·7.5·10·13.5·16.5km).
-      // 5↔16.5, 7.5↔13.5 가 각각 21.1km 로 맞아떨어져 왕복 코스임이 수치로 확인된다
-      aidStations: 5,
-      aidInterval: '약 2.5~3.5km마다',
-      expectedParticipants: 5000,
-      startTime: '09:00',
+      "aidStations": 5,
+      "aidInterval": "약 2.5~3.5km마다",
+      "expectedParticipants": 5000,
+      "startTime": "09:00"
     },
     raceKit: {
-      items: ['배번호', '기록칩(5km 제외)', '완주메달', '기념품', '간식', '모바일 기록증', '안내책자'],
-      byDistance: [{ distance: '5K', item: '햇토미 쌀 3kg' }],
-      pending: '하프·10km 기념품은 공식 표기가 "미정(확정 시 공지)"입니다.',
-      verifiedAt: '2026-08-24',
+      "items": [
+        "배번호",
+        "기록칩(5km 제외)",
+        "완주메달",
+        "기념품",
+        "간식",
+        "안내책자"
+      ],
+      "byDistance": [
+        {
+          "distance": "5K",
+          "item": "햇토미 쌀 3kg"
+        },
+        {
+          "distance": "하프·10K",
+          "item": "공식 기록 제공 대상. 5K는 기록칩·공식 기록 미제공"
+        }
+      ],
+      "pending": "하프·10km 기념품은 공식 표기가 \"미정(확정 시 공지)\"입니다.",
+      "verifiedAt": "2026-11-10"
     },
     logistics: {
-      publicTransport: '오이도역·시흥시청 인근에서 무료 셔틀버스 운행 예정',
-      shuttle: '오이도역, 시흥시청 인근 (운행 예정)',
-      bagStorage: true,
+      "publicTransport": "오이도역·시흥시청 인근에서 무료 셔틀버스 운행 예정",
+      "shuttle": "오이도역, 시흥시청 인근 (운행 예정)",
+      "bagStorage": true
     },
-    lastVerified: '2026-08-24',
+    lastVerified: "2026-11-10",
+    postRaceNote: "기록 문의는 010-5256-7034 문자만 가능하며 5km는 공식 기록 미제공이다. 사진 원본은 샤라웃에서 유료 구매 안내다. 메달 각인·배송은 개별 주소 확인과 실제 배송 내역을 구분해야 한다. https://www.shmarathon.kr/shmarathon/board/notice/?action=view&f_idx=43257&page=1 및 https://www.shmarathon.kr/shmarathon/board/notice/?action=view&f_idx=43260&page=1",
   },
   {
     id: 'transjeju-utmb-2026',
@@ -891,53 +910,92 @@ export const octoberEvents: MarathonEvent[] = [
     },
   },
   {
-    id: 'gangnam-peace-marathon-2026',
-    name: '2026 강남국제평화마라톤 (제23회)',
-    date: '2026-10-05',
-    month: '10월',
-    location: '강남구 봉은사로 (삼성1동주민센터 앞)',
-    region: '서울',
-    distances: ['풀코스', '하프', '10K', '5K'],
-    status: '대회종료',
+    id: "gangnam-peace-marathon-2026",
+    name: "2026 강남국제평화마라톤 (제23회)",
+    date: "2026-10-05",
+    month: "10월",
+    location: "강남구 봉은사로 (삼성1동주민센터 앞)",
+    region: "서울",
+    distances: [
+      "풀코스",
+      "하프",
+      "10K",
+      "5K"
+    ],
+    status: "대회종료",
     isMajor: true,
-    website: 'https://peacemarathon.co.kr',
-    registrationStart: '2026-08-10',
-    registrationNote:
-      '선착순 마감 — 마감일 미고지. 접수가 네 번에 나뉘어 열렸습니다: 강남구민 우선 2,000명 8월 10일(월) 10시 → 풀·하프 8월 11일(화) 10시 → 10km·5km 8월 12일(수) 10시 → 전 코스 8월 13일(목) 10시부터 선착순. 결제까지 마쳐야 접수가 완료됐고, 우선 접수 후에는 주소·코스 변경이 일절 불가했습니다(공식 요강, 2026-08-31 확인)',
+    website: "https://peacemarathon.co.kr",
+    registrationStart: "2026-08-10",
+    registrationNote: "선착순 마감 — 마감일 미고지. 접수가 네 번에 나뉘어 열렸습니다: 강남구민 우선 2,000명 8월 10일(월) 10시 → 풀·하프 8월 11일(화) 10시 → 10km·5km 8월 12일(수) 10시 → 전 코스 8월 13일(목) 10시부터 선착순. 결제까지 마쳐야 접수가 완료됐고, 우선 접수 후에는 주소·코스 변경이 일절 불가했습니다(공식 요강, 2026-08-31 확인)",
     raceKit: {
-      items: ['티셔츠', '번호표', '기록측정용 칩', '완주메달', '완주 간식'],
-      images: [{ src: '/images/marathon/gangnam-peace-marathon-2026/kit-1.webp', alt: '2026 강남국제평화마라톤 공식 기념 티셔츠' }],
-      verifiedAt: '2026-08-27',
+      "items": [
+        "티셔츠",
+        "번호표",
+        "기록측정용 칩",
+        "완주메달",
+        "완주 간식"
+      ],
+      "images": [
+        {
+          "src": "/images/marathon/gangnam-peace-marathon-2026/kit-1.webp",
+          "alt": "2026 강남국제평화마라톤 공식 기념 티셔츠"
+        }
+      ],
+      "verifiedAt": "2026-08-27"
     },
-    lastVerified: '2026-08-31',
-    description:
-      '강남구·주한미8군 공동 주최, 참가비 전액을 전쟁고아 지원에 기부하는 이색 마라톤(유니세프 한국위원회 후원). 2026년 제23회는 10월 5일(월) 대체공휴일 일정으로, 봉은사로 삼성1동주민센터 앞에서 8시 집결·9시 출발이었습니다. 참가비가 풀 3만·하프/10km 2만·5km 1만원으로 저렴한 기부형 대회이고, 풀·하프는 만 18세 이상만 신청할 수 있었습니다. 제한시간은 풀 5시간·하프 3시간·10km/5km 1시간 50분이었습니다.',
+    lastVerified: "2026-11-10",
+    description: "10월 5일 강남국제평화마라톤 일정은 지났다. 공식 FAQ는 참가비 전액을 유니세프한국위원회 등 수요처를 통해 전 세계 아동·청소년 의료비·교육비로 기부할 계획을 설명한다. 전쟁고아만을 대상으로 한정하지 않는다. 기록 계측과 시상은 넷타임 안내이며 실제 기부 전달·개인 결과는 별도 확인이다.",
     courseInfo: {
-      terrain: '평지',
-      difficulty: '중급',
-      certification: '없음',
-      courseDescription:
-        '봉은사로 삼성1동주민센터 앞(봉은사역 4·5번 출구)에서 출발합니다. ⚠️ 공식이 밝힌 가장 중요한 특징은 코스 전 구간이 자전거 도로라는 점입니다 — 도로를 통제해 비우는 방식이 아니라 자전거가 함께 다니는 길을 달리므로, 공식 안내도 "자전거 통행에 유의해 스스로 안전에 각별히 주의하라"고 명시하고 있습니다. 추월이나 무리한 인코스 진입은 피하는 편이 좋습니다. 종목별 코스도는 2026-08-31 기준 전 종목 "COMING SOON"으로 아직 공개되지 않았습니다.',
+      "certification": "없음",
+      "courseDescription": "봉은사로 삼성1동주민센터 앞 08시 집결·09시 출발 일정이었다. 이번 검증은 계측·시상·제한시간과 기부 목적에 한하며, 오래된 코스 미공개 문구로 현재 공개 여부를 판단하지 않는다."
     },
     raceInfo: {
-      entryFees: [
-        { distance: '풀코스', fee: 30000 },
-        { distance: '하프', fee: 20000 },
-        { distance: '10K', fee: 20000 },
-        { distance: '5K', fee: 10000 },
+      "entryFees": [
+        {
+          "distance": "풀코스",
+          "fee": 30000
+        },
+        {
+          "distance": "하프",
+          "fee": 20000
+        },
+        {
+          "distance": "10K",
+          "fee": 20000
+        },
+        {
+          "distance": "5K",
+          "fee": 10000
+        }
       ],
-      timeLimits: [
-        { distance: '풀코스', hours: 5, minutes: 0 },
-        { distance: '하프', hours: 3, minutes: 0 },
-        { distance: '10K', hours: 1, minutes: 50 },
-        { distance: '5K', hours: 1, minutes: 50 },
+      "timeLimits": [
+        {
+          "distance": "풀코스",
+          "hours": 5,
+          "minutes": 0
+        },
+        {
+          "distance": "하프",
+          "hours": 3,
+          "minutes": 0
+        },
+        {
+          "distance": "10K",
+          "hours": 1,
+          "minutes": 50
+        },
+        {
+          "distance": "5K",
+          "hours": 1,
+          "minutes": 50
+        }
       ],
-      // 공식 요강 "8시 집결 / 9시 출발" — 기존 08:00 은 집결 시각을 출발로 잘못 넣은 값이었다
-      startTime: '09:00',
+      "startTime": "09:00"
     },
     logistics: {
-      publicTransport: '지하철 9호선 봉은사역 4·5번 출구 (출발지: 서울 강남구 봉은사로 616 삼성1동 주민센터 앞)',
+      "publicTransport": "지하철 9호선 봉은사역 4·5번 출구 (출발지: 서울 강남구 봉은사로 616 삼성1동 주민센터 앞)"
     },
+    postRaceNote: "공식 유의사항의 제한시간은 풀코스 5시간·하프 3시간·10km와 5km 각 1시간 50분이다. 모든 코스 넷타임 시상 안내를 다른 대회의 건타임 관행과 섞지 않는다. https://peacemarathon.co.kr/info/caution.php 및 https://peacemarathon.co.kr/community/faq.php",
   },
   {
     id: 'gimje-jipyeongseon-marathon-2026',

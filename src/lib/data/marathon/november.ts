@@ -908,7 +908,7 @@ export const novemberEvents: MarathonEvent[] = [
     isMajor: false,
     website: "https://gcrun.co.kr/gcrun/",
     registrationStart: "2026-07-20",
-    registrationNote: "공식 포스터는 7월 20일 14시 접수와 신청 뒤 결제 완료 조건을 안내한다. 접수처 gcrun.co.kr은 이번 접근에서 리디렉션이 반복돼 최신 후속 공지를 충분히 읽지 못했다. 지난 추가접수 기한을 현재 모집으로 안내하지 않는다.",
+    registrationNote: "지난 공식 포스터는 7월 20일 14시 접수와 신청 뒤 결제 완료 조건을 안내한다. 일반 세션으로 현재 후속 공지까지 확인했으며, 과거 추가접수 기한을 현재 모집으로 안내하지 않는다.",
     raceKit: {
       "items": [
         "공식 기념품",
@@ -982,7 +982,7 @@ export const novemberEvents: MarathonEvent[] = [
       ],
       "startTime": "08:00"
     },
-    postRaceNote: "최신 개인 기록·사진·전원 물품 수령은 미조회다. 금천 gcrun.kr과 과천 gcrun.co.kr은 다른 곳이므로 규정을 섞지 않는다. 주최 공식 공지 http://www.gcsports.or.kr/bbs/board.php?bo_table=s4_1&wr_id=312 및 http://www.gcsports.or.kr/bbs/board.php?bo_table=s4_1&wr_id=315",
+    postRaceNote: "11월 9일 공식 후속 공지는 5km 기록칩·공식 기록 미제공, 기록 문의 010-5256-7034 문자 전용과 샤라웃 사진 원본 유료 구매를 안내한다. 개인 기록·사진 유무·구매 완료는 미조회다. https://gcrun.co.kr/gcrun/board/notice/?action=view&f_idx=43280&page=1",
   },
   {
     id: 'jeju-mandarin-marathon-2026',
