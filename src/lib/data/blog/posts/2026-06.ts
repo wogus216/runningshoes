@@ -223,113 +223,39 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'saucony-endorphin-elite-3-preview-2026',
-    slug: 'saucony-endorphin-elite-3-preview-2026',
-    title: '써코니 엔돌핀 엘리트 3 출시 (7/1) | 엘리트 2 대비 뭐가 바뀌나 — 안정성·발볼 손본 신형 카본 레이서',
-    description: '써코니 최상위 카본 레이싱화 엔돌핀 엘리트 3가 2026년 7월 1일 한국 출시됐습니다(정가 36.9만). RunRepeat 역대 최고 80%대 반발의 IncrediRUN 폼은 그대로 두고, 전작 엘리트 2의 약점이던 낮은 안정성을 정조준해 손봤습니다(토박스는 RunRepeat 실측 71.8mm로 여전히 좁음). 측면 컷아웃 제거·포크형 카본 플레이트로 바뀐 변경점을 전작과 나란히 정리하고, 발볼 넓은 한국 러너가 살지 기다릴지 판단을 도와드립니다.',
-    thumbnail: '/images/blog/saucony-endorphin-elite-3-preview-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-30',
-    category: 'review' as const,
+    id: "saucony-endorphin-elite-3-preview-2026",
+    slug: "saucony-endorphin-elite-3-preview-2026",
+    title: "엔돌핀 엘리트2 vs3 — 높은 리턴 다음에 볼 앞코·힐 고정·코너 전환",
+    description: "197/210g 검체와 IncrediRUN·카본 구조를 비교합니다. 리뷰어 사이즈·코너 체감, 공시8mm와 실측7.5/5.7mm, 인솔 분리 상충을 남겼습니다.",
+    thumbnail: "/images/shoes/saucony/endorphinelite3/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-30",
+    category: "review",
     readingTime: 8,
-    tags: ['엔돌핀 엘리트3', '써코니 엔돌핀', '카본 레이싱화', '신상 러닝화', '엔돌핀 엘리트2', '러닝화 출시'],
+    tags: [
+      "엘리트2",
+      "엘리트3",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><a href="/shoes/saucony-endorphin-elite-3">써코니 엔돌핀 엘리트 3</a>가 <strong>2026년 7월 1일 한국 출시</strong>(정가 36.9만). RunRepeat 역대 최고 <strong>80%대 반발의 IncrediRUN 폼은 계승</strong>하면서, 전작의 약점만 손봤습니다</li>
-    <li>핵심 변경 — ① <strong>측면 컷아웃 제거</strong>로 안정성 개선 ② <strong>카본 플레이트 포크형 재설계</strong>로 추진력↑ ③ <strong>토박스는 여전히 좁음</strong> — RunRepeat 실측 71.8mm로 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>(narrow 71mm)와 비슷. 대가는 <strong>무게 +13g(197→210g, 실측)</strong></li>
-    <li><strong>서브3 도전 + 안정성이 부담이던 러너에겐 반가운 업데이트</strong>입니다(발볼 넓은 러너에겐 여전히 불리). RunRepeat 랩 실측 에너지 리턴은 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA입니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🆕</span>
-  <div class="callout-body">
-    <p class="callout-title">엔돌핀 엘리트 3, 7월 1일 한국 상륙</p>
-    <p>써코니 라인업의 꼭대기 — 카본 마라톤 레이싱화 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3</a>가 <strong>7월 1일 한국 공식몰에 론칭</strong>했습니다(정가 369,000원, White/Multi). 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>는 RunRepeat 측정 <strong>역대 최고 에너지 리턴 80.6%</strong>로 <a href="/shoes/nike-alphafly-3">알파플라이 3</a>(힐 74.9%)마저 능가했던 "반발 괴물"이었지만, 동시에 <strong>"너무 불안정하고 발볼이 좁다"</strong>는 평이 따라다녔죠. 엘리트 3는 바로 그 두 약점을 겨냥했습니다. 어떤 점이 바뀌었는지 전작과 나란히 보겠습니다.</p>
-  </div>
-</div>
-
-<h2>엘리트 2 → 엘리트 3, 무엇이 바뀌었나</h2>
-<table>
-  <thead><tr><th>항목</th><th>엘리트 2</th><th>엘리트 3</th></tr></thead>
-  <tbody>
-    <tr><td><strong>정가</strong></td><td>339,000원</td><td>369,000원</td></tr>
-    <tr><td>무게(US 9)</td><td><strong>197g</strong></td><td>210g (+13g)</td></tr>
-    <tr><td>힐 / 전족 스택</td><td>39.9 / 32.4mm</td><td>39.8 / 34.1mm</td></tr>
-    <tr><td>드롭</td><td>7.5mm</td><td>5.7mm <small>(브랜드 공식 8mm)</small></td></tr>
-    <tr><td>미드솔 폼</td><td>IncrediRUN</td><td>IncrediRUN <small>(약간 더 부드럽게)</small></td></tr>
-    <tr><td>카본 플레이트</td><td>평탄형</td><td><strong>리지드+포크형</strong> <small>(추진력↑)</small></td></tr>
-    <tr><td>미드솔 측면</td><td>깊은 컷아웃</td><td><strong>컷아웃 제거</strong> <small>(안정성↑)</small></td></tr>
-    <tr><td>토박스</td><td>좁음(narrow 71mm)</td><td><strong>좁음(narrow 71.8mm)</strong></td></tr>
-    <tr><td>어퍼</td><td>거친 메시</td><td>부드러운 니트</td></tr>
-    <tr><td>힐 카운터</td><td>있음</td><td><strong>없음</strong> <small>(아킬레스 친화)</small></td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택·드롭·토박스는 RunRepeat 랩 실측(남성 US 9), 가격·출시일은 써코니 코리아 공식 기준. 엘리트 3 랩 실측 에너지 리턴은 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA·전족부 131 SA, 경도 15.5 AC입니다.</small></p>
-
-<h2>한국 러너가 주목할 변화 3가지</h2>
-<h3>① 토박스는 여전히 좁다 — 실측 71.8mm</h3>
-<p>엘리트 2의 가장 큰 진입장벽은 <strong>좁은 토박스(narrow, 약 71mm)</strong>였습니다. 반발은 최상위권인데 앞볼 폭이 평균을 밑돌아, 발볼이 넓으면 반발을 살리기 전에 압박이 먼저 왔습니다. 엘리트 3의 토박스는 <strong>RunRepeat 실측 71.8mm(평균 73.2mm)</strong>로 랩이 "heavily tapered"라고 평가해, 엘리트 2와 마찬가지로 좁습니다. 와이드 옵션도 없어, 발볼 때문에 엘리트를 포기했던 한국 러너라면 시착이 필수입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 가이드</a>도 함께 보세요.</p>
-
-<h3>② 안정성을 손봤다 — 컷아웃 제거 + 포크형 플레이트</h3>
-<p>엘리트 2는 안정성이 4/10에 불과해 "완성된 러닝 폼이 없으면 착지가 불안하다"는 지적을 받았습니다. 엘리트 3는 <strong>미드솔 측면의 깊은 컷아웃을 메우고 힐·측면 폼 볼륨을 키워</strong> 미드풋을 채웠고, 카본 플레이트를 <strong>리지드+포크 형태로 재설계</strong>해 앞쪽 추진력과 강성을 높였습니다. 덕분에 중립 안정성이 한 단계 올라왔다는 평가(Doctors of Running B+)지만, 비틀림 강성은 여전히 낮아 <strong>코너나 요철보다는 평탄한 코스(하프~풀)</strong>에 어울립니다.</p>
-
-<h3>③ 무게는 13g 늘었다</h3>
-<p>안정성과 폼 볼륨을 얻은 대가로 무게가 <strong>197g → 210g(RunRepeat 실측)으로 약 13g 증가</strong>했습니다. 슈퍼슈즈 기준으론 여전히 가볍지만, "가장 가볍고 예리한 레이서"를 찾는 엘리트에겐 아쉬운 지점이죠. Road Trail Run 5인 테스터는 <strong>"엘리트 1의 반발 + 엘리트 2의 부드러움을 결합했다"</strong>고 평하며 평균 9.4/10을 줬는데, 무게 증가가 거의 유일한 약점으로 꼽혔습니다.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 정리</p>
-    <p><strong>엘리트 3 = "반발은 그대로, 약점만 손본" 신형</strong>입니다. 80%대 IncrediRUN 반발(실측 힐 80.6%·전족부 81.0%)을 유지하면서 <strong>안정성·어퍼를 개선</strong>했고, 대가는 13g. 특히 <strong>아킬레스 부착부 통증이 있는 러너</strong>(힐 카운터 없음)에게는 전작보다 확실히 친화적입니다. 다만 토박스는 실측 71.8mm로 여전히 좁습니다. 단 부드러운 폼 특성상 <strong>평발·과내전 러너에겐 여전히 비추천</strong>입니다.</p>
-  </div>
-</div>
-
-<h2>살까, 기다릴까 — 엘리트 2 vs 엘리트 3</h2>
-<table>
-  <thead><tr><th>이런 러너라면</th><th>선택</th></tr></thead>
-  <tbody>
-    <tr><td>발볼이 넓어 엘리트 2를 포기했었다</td><td>엘리트 3도 좁음 (토박스 실측 71.8mm) — 시착 필수</td></tr>
-    <tr><td>안정성·포용력 있는 슈퍼슈즈를 원한다</td><td><strong>엘리트 3</strong></td></tr>
-    <tr><td>아킬레스 부착부 통증이 있다</td><td><strong>엘리트 3</strong> (힐 카운터 없음)</td></tr>
-    <tr><td>1g이라도 가벼운 게 최우선이다</td><td><a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> (197g) 또는 다른 경량 레이서</td></tr>
-    <tr><td>엘리트급은 부담, 검증된 카본이 좋다</td><td><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a> (29.9만)</td></tr>
-  </tbody>
-</table>
-<p>엘리트 라인이 부담된다면 써코니 엔돌핀은 아주라→스피드 5→프로 5→엘리트 3의 사다리 구조입니다. 내 레이스·예산에 맞는 칸을 고르는 건 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 4종 라인업 가이드</a>에서 정리했습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⏳</span>
-  <div class="callout-body">
-    <p class="callout-title">RunRepeat 랩 실측 수치</p>
-    <p>엘리트 3의 <strong>RunRepeat 랩 테스트가 게시됐습니다</strong>(남성 US 9 기준). 무게 210g, 스택 힐 39.8mm·전족부 34.1mm, 드롭 5.7mm(브랜드 공식 8mm), 에너지 리턴 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA·전족부 131 SA, 경도 15.5 AC, 토박스 71.8mm(좁음)입니다. 전체 랩 데이터는 <a href="/shoes/saucony-endorphin-elite-3">상세 페이지</a>에서 확인하세요.</p>
-  </div>
-</div>
-
-<h2>한국 러너 관점 FAQ</h2>
-<div class="faq">
-  <p class="faq-q">Q. 발볼 넓은데 엘리트 3 신어도 되나요?</p>
-  <p class="faq-a">A. 권하기 어렵습니다. 엘리트 2는 narrow(71mm)라 발볼 넓으면 사실상 비추천이었고, 엘리트 3도 RunRepeat 실측 토박스 71.8mm(평균 73.2mm)로 랩이 "heavily tapered"라고 평가해 여전히 좁습니다. 와이드 옵션도 없으니, 발볼이 넓다면 매장 착화를 권합니다.</p>
-  <p class="faq-q">Q. 엘리트 2를 이미 가지고 있으면 굳이 바꿀 필요 있나요?</p>
-  <p class="faq-a">A. 순수 반발과 최저 무게가 목적이면 엘리트 2(197g)로 충분합니다. 다만 엘리트 2의 불안정함이 불편했다면, 엘리트 3의 안정성 개선이 체감될 겁니다(토박스는 실측 71.8mm로 여전히 좁습니다). 반발 자체는 같은 IncrediRUN 폼이라 큰 차이가 없습니다.</p>
-  <p class="faq-q">Q. 초보·서브4 러너가 사도 되나요?</p>
-  <p class="faq-a">A. 권하지 않습니다. 엘리트 3는 빠른 페이스(km당 4:30 이내)와 완성된 폼을 전제로 한 레이스 전용 카본화이고, 200km 내구성에 km당 약 1,845원으로 운용 비용도 높습니다. 서브4 이하라면 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>나 <a href="/shoes/saucony-endorphin-pro-5">프로 5</a>가 현실적입니다. 카본화가 처음이면 <a href="/blog/carbon-plate-running-shoes-lineup-tier-guide-2026">카본 플레이트화 비교 가이드</a>를 먼저 보세요.</p>
-  <p class="faq-q">Q. 알파플라이·메타스피드랑 비교하면?</p>
-  <p class="faq-a">A. <a href="/shoes/nike-alphafly-3">알파플라이 3</a>는 더 통통 튀는 에어 기반, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>는 더 단단하고 예리한 라이드입니다. 엘리트 3는 그중에서 <strong>가장 부드럽고 포용력 있는</strong> 슈퍼슈즈로, "딱딱한 카본이 부담스럽다"는 러너에게 어울립니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>전체 스펙·실측·구매 링크는 <a href="/shoes/saucony-endorphin-elite-3">엔돌핀 엘리트 3 상세</a>에서 확인하세요(RunRepeat 랩 실측 반영). 전작과 비교하려면 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2 상세</a>, 써코니 엔돌핀 4종 중 내게 맞는 걸 고르려면 <a href="/blog/saucony-endorphin-lineup-2026-guide">엔돌핀 라인업 가이드</a>를 보세요. 여러 카본화를 나란히 보려면 <a href="/compare">비교 도구</a>, 내 발·목표 추천은 <a href="/recommend">맞춤 추천</a>을 이용하세요.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격·출시일은 써코니 코리아 공식 기준이며 시기·채널에 따라 달라질 수 있습니다. 무게·스택·드롭·토박스·충격흡수·에너지 리턴은 RunRepeat 랩 실측, 변경점은 전문 리뷰(Believe in the Run·Doctors of Running·Road Trail Run) 교차 확인입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>두 모델 모두 검체 리턴이 높지만 신형이 모든 러너의 불안정을 해결했다는 결론은 아닙니다. 엘리트3 리뷰에도 빠른 회전에서의 제어 어려움이 남아 있습니다.</p><p>엘리트3에서 Matt는 정사이즈의 밀착 어퍼를, Andrea는 반 사이즈 올린 편한 앞코를 적었습니다. 같은 치수·사이즈 비교가 아니어서 ‘신형은 발볼 문제가 해결됐다’고 합치지 않습니다.</p><figure><img src="/images/shoes/saucony/endorphinelite3/side.webp" alt="엔돌핀 엘리트3 — 앞코·힐 고정과 방향 전환을 함께 확인" loading="lazy"/><figcaption>엔돌핀 엘리트3 — 앞코·힐 고정과 방향 전환을 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-endorphin-elite-2</td><td>197g</td><td>39.9/32.4mm · 7.5mm</td><td>157/123</td><td>80.6/82.1%</td></tr><tr><td>saucony-endorphin-elite-3</td><td>210g</td><td>39.8/34.1mm · 5.7mm</td><td>160/131</td><td>80.6/81%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>직선에서 좋아도 코너에서는 다를 수 있습니다</h2><p>리턴 수치가 비슷하다고 개인 기록이나 코너 고정도 같아지는 것은 아닙니다. 본인의 실제 규격·양말에서 힐이 움직이는지, 방향을 바꿀 때 과하게 밀리는지 확인할 필요가 있습니다.</p><p>7월1일 한국 출시일·역대 최고 반발·서브3 전용이라는 과거 결론은 이번 원문으로 재확인하지 못했습니다. 한국 정확 상품 캐시는 확인했으나 현재 가격·선택 재고와 별개로 구분합니다.</p><h2>엘리트2 — 핏과 주행에서 갈리는 지점</h2><p>한국은 슬롯형 풀 카본, RR은 곡선형 카본으로 설명합니다. IncrediRUN을 TPEE로 설명한 것은 RR이며 독립 조성 분석으로 확인한 것은 아닙니다.</p><p>RR 내부 최광폭 95.6mm·엄지 71mm·높이 29.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 정사이즈여도 낮고 밀착된 앞코와 토가드 접촉을 느꼈고 극도로 부드러운 힐/중족 전환은 불안정했습니다. David(남성 US9.5)는 좁은 앞발·측면 압박에도 쓸림·힐슬립은 없었으며 적응 후 바운스와 앞발 롤을 좋아했습니다.</p><h2>엘리트2 — 공시·한국 판매 확인 범위</h2><p>DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다.</p><p>한국 공식 캐시: unisex S30994-172 M(일반) 정가339,000원·할인캐시220,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 할인 기간은 열린 캐시10/26~11/9·검색캐시11/4~11/23으로 상충합니다.</p><p>RR 사이즈 투표와 DOR 정사이즈 의견은 같은 집단이 아닙니다. 39.9mm를40mm한계의1mm아래라고 쓴 RR 문구는 산술과 맞지 않아 대회 승인 판정에 쓰지 않습니다. 450km·최적 페이스·질환별 금지 등급을 제거했습니다.</p><h2>엘리트3 — 핏과 주행에서 갈리는 지점</h2><p>RR은 분기형·스푼형, DOR은 fluted 카본으로 설명합니다. 카본의 형상과 전체 폼의 부드러움을 별도로 읽습니다.</p><p>RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10·실측223g)는 조금 밀착되지만 늘어나는 어퍼와 바운스를 좋아했으나 회전 때 미끄러짐·제어 한계를 적었습니다. Andrea는 반 사이즈 올려 편한 사각형 앞코·힐 고정을 느꼈지만 빠른 코너에서 튕겨 나가는 듯했습니다. Andrea의 실제 숫자 사이즈는 미확인입니다.</p><h2>엘리트3 — 공시·한국 판매 확인 범위</h2><p>DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다.</p><p>한국 공식 캐시: unisex S100981-1021 M(일반) 정가369,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=177&amp;display_group=1&amp;product_no=184" target="_blank" rel="noopener noreferrer">kr-elite2</a> — original_opened_cached_web; S30994-172 공용 WHITE/CRIMSON M(일반),339000/220350;220–300,7.0oz(199g)사이즈미공시,슬롯형풀카본.</li><li><a href="https://runrepeat.com/saucony-endorphin-elite-2" target="_blank" rel="noopener noreferrer">엘리트2 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-elite-2-review-2025/" target="_blank" rel="noopener noreferrer">엘리트2 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=1&amp;display_group=2&amp;product_no=479" target="_blank" rel="noopener noreferrer">kr-elite3</a> — original_opened_cached_web; S100981-1021 공용 WHITE/MULTI M(일반),369000;220–300,7.0oz(204g)사이즈미공시;40mm폼/슬롯카본 제조사설명.</li><li><a href="https://runrepeat.com/saucony-endorphin-elite-3" target="_blank" rel="noopener noreferrer">엘리트3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-elite-3-review-2026/" target="_blank" rel="noopener noreferrer">엘리트3 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "엘리트3가 안정성을 해결했나요?",
+        "answer": "개인 경험에 빠른 회전 제어 문제가 남아 있어 모두에게 해결됐다고 보장하지 않습니다."
+      },
+      {
+        "question": "인솔 분리되나요?",
+        "answer": "DOR 비분리·RR 분리 가능이 상충합니다. 실제 구매 규격에서 확인할 항목입니다."
+      },
+      {
+        "question": "같은8mm 드롭인가요?",
+        "answer": "소개 공시는8mm지만 RR 실측은2가7.5mm·3가5.7mm입니다. 공시와 절단 실측을 구분합니다."
+      }
+    ],
   },
   {
     id: 'marathon-club-runners-pick-running-shoes-2026',
@@ -706,130 +632,39 @@ export const posts_2026_06: BlogPost[] = [
     ],
   },
   {
-    id: 'saucony-endorphin-lineup-2026-guide',
-    slug: 'saucony-endorphin-lineup-2026-guide',
-    title: '써코니 엔돌핀 4종 완벽 가이드 | 7/1 라인업 — 아주라·스피드5·프로5·엘리트3, 내 레이스엔 어떤 거?',
-    description: '써코니가 2026 엔돌핀 라인을 전면 리뉴얼했습니다. 한국 공식몰 7/1 기준 아주라(18.9만)·스피드 5(21.9만)·프로 5(29.9만)·엘리트 3(36.9만) 4단 구성으로 정비됐죠. 데일리 슈퍼폼부터 풀카본 레이서까지 — 목표 기록·주간 거리·예산·발볼로 내게 맞는 엔돌핀 한 켤레를 골라드립니다.',
-    thumbnail: '/images/blog/saucony-endorphin-lineup-2026-guide.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-26',
-    category: 'guide' as const,
-    readingTime: 10,
-    tags: ['써코니 엔돌핀', '엔돌핀 스피드 5', '엔돌핀 프로 5', '엔돌핀 아주라', '엔돌핀 엘리트', '러닝화 추천'],
+    id: "saucony-endorphin-lineup-2026-guide",
+    slug: "saucony-endorphin-lineup-2026-guide",
+    title: "엔돌핀 라인업 선택법 — 아주라·스피드5·프로5·엘리트3, 소재보다 내 전환·핏",
+    description: "없음·나일론·카본 구조와 실제 고정을 비교합니다. 목표 기록별 사다리·유일 와이드·공통 수명 대신 아주라/엘리트3의 다른 개인 체감을 남겼습니다.",
+    thumbnail: "/images/shoes/saucony/endorphinazura/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-06-26",
+    category: "guide",
+    readingTime: 8,
+    tags: [
+      "아주라",
+      "엘리트3",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>써코니 엔돌핀이 2026년 4단 라인업으로 정비됐습니다</strong> — 한국 공식몰 7/1 기준 <a href="/shoes/saucony-endorphin-azura">아주라(18.9만)</a> → <a href="/shoes/saucony-endorphin-speed-5">스피드 5(21.9만)</a> → <a href="/shoes/saucony-endorphin-pro-5">프로 5(29.9만)</a> → 엘리트 3(36.9만, 신형). 폼·플레이트·가격이 한 칸씩 올라가는 '사다리' 구조입니다</li>
-    <li><strong>고민은 딱 두 축</strong>입니다 — ① 카본 플레이트가 필요한가(레이스 위주) ② 예산이 어디까지인가. 데일리·입문이면 <strong>아주라</strong>, 훈련+하프 대회를 한 켤레로 잡고 싶으면 <strong>스피드 5(가성비 갓신발)</strong>, 본격 풀마라톤 카본이면 <strong>프로 5</strong>, 서브3 엘리트면 <strong>엘리트 3</strong></li>
-    <li><strong>와이드 옵션은 스피드 5에만 있습니다</strong>(한국 공식몰 남녀 와이드). 아주라·스피드는 표준 토박스라 시착하면 대부분 괜찮지만, 프로 5·엘리트는 좁은 편이라 발볼 넓은 한국 러너는 주의하세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🪜</span>
-  <div class="callout-body">
-    <p class="callout-title">엔돌핀 = 써코니의 '스피드 사다리'</p>
-    <p>써코니의 스피드 라인은 전부 <strong>엔돌핀</strong>이라는 이름을 답니다. 2026년 들어 라인이 대거 갱신되면서 한국 공식몰 기준 <strong>아주라 → 스피드 5 → 프로 5 → 엘리트 3</strong> 4단으로 정리됐습니다. 핵심은 위로 갈수록 <strong>플레이트가 강해지고(없음 → 나일론 → 카본) 폼이 비싸지고(PWRRUN PB → IncrediRUN) 가격이 오른다</strong>는 것. 그래서 "엔돌핀 뭐 사지?"의 답은 모델 스펙 암기가 아니라 <strong>내가 사다리의 어느 칸에 서 있나</strong>를 정하는 데서 나옵니다. 엘리트 3는 7/1 출시 후 RunRepeat 랩 실측이 게시돼 본문 수치에 반영했고, 전작 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a> 실측은 비교용으로 함께 적었습니다. 변경점은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 프리뷰</a> 참고.</p>
-  </div>
-</div>
-
-<h2>엔돌핀 4종 한눈 비교</h2>
-<table>
-  <thead>
-    <tr><th>항목</th><th>아주라</th><th>스피드 5</th><th>프로 5</th><th>엘리트 3</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>포지션</strong></td><td>데일리 슈퍼폼</td><td>만능 템포</td><td>카본 레이서</td><td>엘리트 레이스</td></tr>
-    <tr><td><strong>정가</strong></td><td>189,000원</td><td>219,000원</td><td>299,000원</td><td>369,000원<br><small>(신형)</small></td></tr>
-    <tr><td>무게(US 9)</td><td>241g</td><td>241g</td><td>215g</td><td><strong>210g</strong></td></tr>
-    <tr><td>스택(힐/전족)</td><td>40.7 / 32.7mm</td><td>37 / 27mm</td><td>36.5 / 27.8mm</td><td>39.8 / 34.1mm</td></tr>
-    <tr><td>드롭</td><td>8mm</td><td>8mm</td><td>8.7mm</td><td>5.7mm</td></tr>
-    <tr><td><strong>플레이트</strong></td><td>없음</td><td>나일론</td><td>슬롯 카본</td><td>풀 카본</td></tr>
-    <tr><td>미드솔 폼</td><td>PWRRUN PB</td><td>PWRRUN PB</td><td>PWRRUN HG+PB</td><td><strong>IncrediRUN</strong></td></tr>
-    <tr><td>주 용도</td><td>이지~템포</td><td>템포·하프</td><td>하프~풀 레이스</td><td>풀 레이스데이</td></tr>
-    <tr><td>발볼(토박스)</td><td>표준</td><td>표준</td><td>표준</td><td><strong>좁음</strong></td></tr>
-    <tr><td>km당 비용</td><td><strong>315원</strong></td><td>438원</td><td>997원</td><td>1,845원</td></tr>
-  </tbody>
-</table>
-<p><small>※ 무게·스택·km당 비용은 RunRepeat 실측 및 한국 공식 정가 기준(브랜드 공식 무게는 아주라 240g·프로 5 206g). 드롭은 스피드 5만 브랜드 공식값이고 나머지는 RunRepeat 실측(브랜드 공식은 모두 8mm)입니다.</small></p>
-
-<h2>한 켤레씩 뜯어보기</h2>
-
-<h3>1. 아주라 — 카본 없이도 굴러가는 '입문 슈퍼폼' (18.9만)</h3>
-<p><a href="/shoes/saucony-endorphin-azura">엔돌핀 아주라</a>는 스피드에서 <strong>나일론 플레이트를 빼고 스택을 40mm로 높인 '플레이트리스 퍼포먼스 트레이너'</strong>입니다. 비싼 <strong>PWRRUN PB 슈퍼폼(PEBA 계열)</strong>과 SPEEDROLL 로커가 만드는 스냅피한 전환감이 핵심이라, 플레이트 없이도 충분히 빠르게 굴러갑니다. 6분/km 이지런부터 4분 30초/km 템포런까지 한 켤레로 커버하죠.</p>
-<p>플레이트가 없다는 건 <strong>발목·아킬레스 부담이 적어 매일 신기 편하다</strong>는 뜻입니다. 600km 내구성에 km당 315원으로 엔돌핀 4종 중 <strong>가성비 1위</strong>. "써코니 슈퍼폼이 궁금한데 카본은 부담스럽다"는 입문~중급 러너의 첫 엔돌핀으로 가장 안전한 선택입니다. 경쟁작은 <a href="/shoes/adidas-adizero-evo-sl">아디제로 에보 SL</a>, <a href="/shoes/new-balance-rebel-v5">뉴발란스 레벨 v5</a>, <a href="/shoes/puma-velocity-nitro-4">푸마 벨로시티 나이트로 4</a>입니다.</p>
-
-<h3>2. 스피드 5 — 커뮤니티가 인정한 '가성비 갓신발' (21.9만)</h3>
-<p>러닝 커뮤니티에서 "<strong>갓신발</strong>"이라 불리는 데는 이유가 있습니다. <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>는 21만 9천원에 <strong>에너지 리턴 힐 73.2%·전족부 78.2%(슈퍼슈즈급)</strong>를 제공하면서, 카본이 아닌 <strong>나일론 플레이트</strong>를 써서 매일 훈련에 투입해도 무리가 없습니다. v4 대비 토박스가 넓어져(RunRepeat 실측 72.9mm, 표준) 착화감도 개선됐고, 폼 경도는 실측 44.5 AC로 단단한 편입니다.</p>
-<p>이 신발의 진짜 가치는 <strong>'한 켤레로 다 된다'</strong>는 만능성입니다. 평일 템포·인터벌 훈련은 물론, 하프마라톤 레이스에 그대로 신고 나가도 손색이 없습니다. 통기성도 5/5라 여름 템포런에 쾌적하고, 500km 내구성에 km당 438원. "슈퍼슈즈 사기 전에 실력부터 키우자"는 서브4~서브3:30 목표 러너에게 최적이고, 솔직히 많은 러너에게는 <strong>이 한 켤레면 충분</strong>합니다.</p>
-
-<div class="callout success">
-  <span class="callout-icon">💡</span>
-  <div class="callout-body">
-    <p class="callout-title">엔돌핀 입문이라면 90%는 여기서 끝</p>
-    <p>"엔돌핀 라인 중에 뭐 살까"로 검색해서 여기까지 왔다면, 높은 확률로 답은 <strong>아주라 아니면 스피드 5</strong>입니다. 프로·엘리트는 <strong>대회 기록을 1초라도 당기려는 사람의 무기</strong>이고, 그만큼 내구성(300km/200km)이 짧아 데일리로 쓰면 손해입니다. 훈련 위주면 아주라, 훈련+가끔 레이스면 스피드 5 — 이 둘로 시작하세요.</p>
-  </div>
-</div>
-
-<h3>3. 프로 5 — 안정적인 '풀마라톤 카본' (29.9만)</h3>
-<p><a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>는 본격 카본 레이서입니다. <strong>풀렝스 슬롯형 카본 플레이트</strong>와 PWRRUN HG(상층)+PB(하층) 듀얼 폼으로 215g(RunRepeat 실측, 브랜드 공식 206g) 경량에 강한 추진력을 냅니다. 카본을 슬롯 디자인으로 바꿔 <strong>전환 효율</strong>을 높였고, PWRTRAC 아웃솔이 새로 적용돼 젖은 노면 그립도 좋아졌습니다.</p>
-<p>한국 러너에게 프로 5의 강점은 <strong>안정적인 플랫폼과 가격</strong>입니다. <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>(30.9만)보다 1만원 싸고 플랫폼이 안정적입니다. 다만 토박스는 RunRepeat 실측 69.3mm(평균 73.2mm)로 좁은 편이라, 발볼 때문에 나이키 레이서를 포기했던 러너의 대안은 아닙니다. 다만 300km 내구성에 km당 997원이라 <strong>대회·핵심 훈련 전용</strong>으로 운용하세요. 서브3:30~4 마라토너의 풀코스 카본으로 추천합니다. 둘을 더 깊게 비교한 <a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">프로 4 vs 5 글</a>도 참고하세요.</p>
-
-<h3>4. 엘리트 3 — 순수 반발력 최강의 '레이스데이 무기' (36.9만, 신형)</h3>
-<p>라인 최상단입니다. 엘리트 2가 <strong>RunRepeat 역대 최고 80.6% 에너지 리턴</strong>(<a href="/shoes/nike-alphafly-3">알파플라이 3</a> 힐 74.9%를 능가)을 기록했던 그 <strong>IncrediRUN 폼</strong>에 풀카본 플레이트를 얹은 모델로, 엘리트 3는 그 계보를 잇는 신형입니다(실측 에너지 리턴 힐 80.6%·전족부 81.0%). 200g 안팎(실측 엘리트 2 197g·엘리트 3 210g) 초경량과 극소프트 폼이 만드는 반발력은 경이적이지만, 그 대가로 <strong>안정성이 낮아 완성된 러닝 폼이 필수</strong>입니다.</p>
-<p>냉정하게, 이건 <strong>월 200km 이상 훈련하는 서브3 러너의 레이스데이 전용 무기</strong>입니다. 200km 내구성에 km당 1,845원, 토박스도 좁아(실측 71.8mm) 발볼 넓은 한국 러너에겐 도전적이죠. 서브3:30 이상 페이스가 안 나오면 잠재력을 끌어내기 어려우니, 대부분의 러너에게는 프로 5나 스피드 5가 더 현명합니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">🆕</span>
-  <div class="callout-body">
-    <p class="callout-title">엘리트 3 랩 실측이 나왔습니다</p>
-    <p>엘리트 3는 <strong>2026년 7월 1일 한국 출시됐습니다</strong>(정가 369,000원). RunRepeat 랩 실측은 210g(전작 +13g)·에너지 리턴 힐 80.6%·전족부 81.0%·충격흡수 힐 160 SA·토박스 71.8mm(여전히 좁음)이고, 포크형 카본 플레이트·측면 컷아웃 제거로 개선된 안정성 등 변경점은 <a href="/blog/saucony-endorphin-elite-3-preview-2026">엘리트 3 출시 프리뷰</a>에서 따로 정리했습니다. 검증된 <a href="/shoes/saucony-endorphin-elite-2">엘리트 2</a>도 현행 판매 중입니다.</p>
-  </div>
-</div>
-
-<h2>그래서 당신은 어느 엔돌핀?</h2>
-<table>
-  <thead>
-    <tr><th>이런 러너라면</th><th>추천 모델</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>러닝 1년 미만 · 데일리 훈련 위주 · 예산 20만 이하</td><td><strong>아주라</strong></td><td>플레이트 부담 0, 슈퍼폼 입문, km당 315원</td></tr>
-    <tr><td>훈련도 하고 가끔 하프 대회도 · 한 켤레로 끝내고 싶다</td><td><strong>스피드 5</strong></td><td>나일론 플레이트 만능형, 가성비 갓신발</td></tr>
-    <tr><td>풀마라톤 카본이 필요 · 발볼 좁음~표준 · 서브3:30~4</td><td><strong>프로 5</strong></td><td>안정적 카본, 베이퍼보다 저렴 (토박스는 좁은 편)</td></tr>
-    <tr><td>서브3 도전 · 순수 반발 최강 · 발이 좁은 편</td><td><strong>엘리트 3</strong></td><td>IncrediRUN 80%대 반발, 레이스데이 전용</td></tr>
-  </tbody>
-</table>
-
-<h2>한국 러너가 꼭 알아야 할 3가지</h2>
-<ul>
-  <li><strong>① 와이드 옵션은 스피드 5에만 있습니다</strong>(한국 공식몰 남녀 와이드). 아주라·스피드는 표준(D) 토박스라 발볼 넓어도 시착하면 대부분 맞고, 정 불안하면 스피드 5 와이드를 고려하세요. <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천입니다. 발볼이 고민이라면 <a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 신발 가이드</a>를 먼저 보세요.</li>
-  <li><strong>② 카본은 '항상 빠른 신발'이 아닙니다.</strong> 프로·엘리트의 카본 플레이트는 일정 페이스(3:30~4:30/km) 이상에서 진가가 나옵니다. 그보다 느리면 딱딱하기만 하고 오히려 불편할 수 있어요. <a href="/blog/carbon-plate-shoes-guide-2026">카본화의 작동 원리</a>를 이해하고 사세요.</li>
-  <li><strong>③ 가성비는 아래 두 칸이 압도적입니다.</strong> 내구성까지 반영한 km당 비용은 아주라 315원 · 스피드 438원 vs 프로 997원 · 엘리트 1,845원. 위 두 칸은 대회 전용 무기라 '비싸게 사서 아껴 신는' 신발이라는 점을 감안하세요.</li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <p class="faq-q">Q. 초보인데 엔돌핀 신어도 되나요?</p>
-  <p class="faq-a">A. <strong>아주라와 스피드 5는 OK</strong>입니다. 둘 다 플레이트가 없거나(아주라) 부드러운 나일론(스피드)이라 부상 위험이 낮습니다. 반면 프로 5·엘리트 3는 빠른 페이스와 완성된 폼을 전제로 한 카본화라, 입문 단계에선 권하지 않습니다.</p>
-  <p class="faq-q">Q. 스피드 5 하나로 훈련이랑 대회 둘 다 되나요?</p>
-  <p class="faq-a">A. 됩니다. 그게 스피드 5가 "갓신발"로 불리는 이유예요. 에너지 리턴 힐 73.2%·전족부 78.2%로 하프 레이스에 직접 투입 가능하면서, 나일론 플레이트라 매일 템포·인터벌 훈련에도 부담이 없습니다. 풀마라톤에서 1초까지 짜내는 게 아니라면 이 한 켤레로 충분합니다.</p>
-  <p class="faq-q">Q. 발볼이 넓은데 어떤 게 맞나요?</p>
-  <p class="faq-a">A. 와이드 옵션은 스피드 5에만 있습니다(한국 공식몰 남녀). 데일리인 아주라·스피드 5(표준)는 시착하면 대부분 괜찮고, 발볼이 넓다면 스피드 5 와이드가 가장 무난합니다. <strong>프로 5(실측 69.3mm)와 엘리트는 좁은 편</strong>이라 넓은 발볼엔 비추천이에요.</p>
-  <p class="faq-q">Q. 엘리트 3가 7/1에 나온다는데 기다릴까요?</p>
-  <p class="faq-a">A. 서브3 도전급이 아니라면 굳이 기다릴 이유는 적습니다. 엘리트는 페이스가 받쳐줘야 진가가 나오는 극단적 레이서라, 대부분의 러너에겐 프로 5가 더 합리적입니다. 정말 엘리트급 반발이 지금 필요하면 검증된 엘리트 2가 현행 판매 중입니다.</p>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🔗</span>
-  <div class="callout-body">
-    <p class="callout-title">한 걸음 더</p>
-    <p>써코니 전체 라인을 등급·폼으로 읽는 법은 <a href="/blog/saucony-running-shoes-lineup-tier-guide-2026">써코니 러닝화 계급도 가이드</a>에 정리했습니다. 다른 브랜드 카본 레이서와 비교하려면 <a href="/shoes/nike-vaporfly-4">베이퍼플라이 4</a>, <a href="/shoes/asics-metaspeed-sky-plus">메타스피드 스카이+</a>, <a href="/shoes/adidas-adios-pro-4">아디오스 프로 4</a>, <a href="/shoes/new-balance-sc-elite-v5">SC 엘리트 v5</a>를 함께 보세요. 만능 트레이너 비교는 <a href="/shoes/asics-superblast-3">슈퍼블라스트 3</a>도 추천합니다.</p>
-  </div>
-</div>
-
-<p class="post-disclaimer"><small>※ 가격은 써코니 코리아 공식 정가 기준이며 시기·채널에 따라 달라질 수 있습니다. 엘리트 3 정가는 한국 공식몰 7/1 출시 기준입니다. 랩 수치는 RunRepeat 실측입니다.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>선택의 출발점은 내리막·코너를 포함한 실제 주로와 앞코·힐 고정입니다. ‘데일리→하프→풀→서브3’ 가격 사다리가 모든 러너에게 맞는 처방은 아닙니다.</p><p>아주라는 플레이트가 없어도 로커가 맞지 않은 리뷰어가 있고, 엘리트3는 높은 리턴을 좋아하면서도 빠른 코너를 불편해한 리뷰어가 있습니다. 구조 이름과 개인 편안함을 나누어 볼 필요가 있습니다.</p><figure><img src="/images/shoes/saucony/endorphinazura/side.webp" alt="엔돌핀 아주라 — 플레이트 부재가 모든 러너의 편안함을 보장하지 않습니다." loading="lazy"/><figcaption>엔돌핀 아주라 — 플레이트 부재가 모든 러너의 편안함을 보장하지 않습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-endorphin-azura</td><td>241g</td><td>40.7/32.7mm · 8mm</td><td>137/122</td><td>70.6/74.7%</td></tr><tr><td>saucony-endorphin-elite-3</td><td>210g</td><td>39.8/34.1mm · 5.7mm</td><td>160/131</td><td>80.6/81%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>스피드5·프로5와 비교할 수 있는 구조</h2><p>11월9일 재확인한 스피드5는 PWRRUN PB·날개형 나일론·SPEEDROLL, 프로5 기본형은 PWRRUN HG 위층·PWRRUN PB 아래층과 전족 슬롯이 있는 전장 카본입니다. 플레이트 소재 차이가 러너의 실력 등급이나 목표 기록을 결정하는 것은 아닙니다.</p><p>아주라는 별도 플레이트 없는 로커, 스피드5는 나일론 전환, 프로5·엘리트3는 서로 다른 카본과 폼 조합을 비교하는 후보입니다. 비싼 쪽이 모든 훈련에서 더 편하다거나 입문자는 카본 금지라고 정하지 않습니다.</p><p>스피드5 한국 확인 상품의M/W와219,000원, 프로5 기본형 남성S101360-1002·여성S101308-1008 M정가299,000원은 당시 조건입니다. Pro5 S의339,000원은 다른 모델입니다. 다른 모델의 한국 와이드 부재·현재 전사이즈 재고를 이 정보로 단정하지 않습니다.</p><p><a href="https://runrepeat.com/saucony-endorphin-speed-5" target="_blank" rel="noopener noreferrer">스피드5 RR</a> · <a href="https://runrepeat.com/saucony-endorphin-pro-5" target="_blank" rel="noopener noreferrer">프로5 RR</a> · <a href="https://www.saucony.co.kr/product/detail.html?product_no=583" target="_blank" rel="noopener noreferrer">프로5 한국 남성 기본형</a> · <a href="https://saucony.co.kr/product/남성-엔돌핀-스피드-5-와이드-blackwhite/216/category/42/display/1/" target="_blank" rel="noopener noreferrer">스피드5 한국 와이드 확인 상품</a></p><h2>아주라 — 핏과 주행에서 갈리는 지점</h2><p>플레이트와 별도 강성 보강재가 없는 구조입니다. 플레이트 부재를 발목·아킬레스 부담 감소라는 임상 효과로 바꾸지 않습니다.</p><p>RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 폭과 조금 넓은 앞발, 자극 없는 힐을 느끼고 단단한 폼과 늦은 로커를 다용도로 좋아했지만 느린 움직임은 덜 매끄러웠습니다. Andrea는 길이 때문에 반 사이즈 올렸어도 내측 뒤쪽 사이드월과 강한 토스프링이 불편해 짧은 이지런에만 받아들였습니다. Andrea 실제 숫자 사이즈는 미확인입니다.</p><h2>아주라 — 공시·한국 판매 확인 범위</h2><p>DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다.</p><p>한국 공식 캐시: men S101329-1041 M(일반) 정가189,000원; women S11070-124 M(일반) 정가189,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다.</p><h2>엘리트3 — 핏과 주행에서 갈리는 지점</h2><p>RR은 분기형·스푼형, DOR은 fluted 카본으로 설명합니다. 카본의 형상과 전체 폼의 부드러움을 별도로 읽습니다.</p><p>RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10·실측223g)는 조금 밀착되지만 늘어나는 어퍼와 바운스를 좋아했으나 회전 때 미끄러짐·제어 한계를 적었습니다. Andrea는 반 사이즈 올려 편한 사각형 앞코·힐 고정을 느꼈지만 빠른 코너에서 튕겨 나가는 듯했습니다. Andrea의 실제 숫자 사이즈는 미확인입니다.</p><h2>엘리트3 — 공시·한국 판매 확인 범위</h2><p>DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다.</p><p>한국 공식 캐시: unisex S100981-1021 M(일반) 정가369,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.saucony.co.kr/product/detail.html?cate_no=1&amp;display_group=4&amp;product_no=471" target="_blank" rel="noopener noreferrer">kr-azura-m</a> — original_opened_cached_web; S101329-1041 남성 WHITE/MULTI M(일반),189000;250–300,8.5oz(240g)사이즈미공시,논플레이트.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=82&amp;display_group=1&amp;product_no=309" target="_blank" rel="noopener noreferrer">kr-azura-w</a> — original_opened_cached_web; S11070-124 여성 WHITE/SPLASH M(일반),189000;220–255,8.5oz(212g)원문그대로·사이즈미공시.</li><li><a href="https://runrepeat.com/saucony-endorphin-azura" target="_blank" rel="noopener noreferrer">아주라 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-azura-review-2026/" target="_blank" rel="noopener noreferrer">아주라 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=1&amp;display_group=2&amp;product_no=479" target="_blank" rel="noopener noreferrer">kr-elite3</a> — original_opened_cached_web; S100981-1021 공용 WHITE/MULTI M(일반),369000;220–300,7.0oz(204g)사이즈미공시;40mm폼/슬롯카본 제조사설명.</li><li><a href="https://runrepeat.com/saucony-endorphin-elite-3" target="_blank" rel="noopener noreferrer">엘리트3 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-elite-3-review-2026/" target="_blank" rel="noopener noreferrer">엘리트3 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "초보는 아주라·서브3는 엘리트3인가요?",
+        "answer": "기록만으로 모델을 배정할 근거를 확인하지 못했습니다. 실제 고정·주로·전환을 비교할 수 있습니다."
+      },
+      {
+        "question": "와이드는 스피드5만 있나요?",
+        "answer": "스피드5 확인 상품의M/W는 확인했지만 다른 모델의 전체 폭 부재를 증명하지 않습니다."
+      },
+      {
+        "question": "프로5가339,000원인가요?",
+        "answer": "기본형 확인 한국 정가는299,000원이며 별도Pro5 S의339,000원을 섞지 않습니다."
+      }
+    ],
   },
   {
     id: 'hoka-clifton-11-vs-10-comparison',
@@ -1392,84 +1227,38 @@ export const posts_2026_06: BlogPost[] = [
 `,
   },
   {
-    id: 'saucony-triumph-24-review',
-    slug: 'saucony-triumph-24-review',
-    title: '써코니 트라이엄프 24 리뷰 | 폼 11% 더 넣고 -14g — incrediLUX 폼으로 갈아탄 209,000원 맥스쿠션 가성비',
-    description:
-      '써코니 최고급 데일리 쿠션화 트라이엄프가 24세대에서 폼을 통째로 바꿨습니다. PWRRUN PB(ePEBA) → incrediLUX(ATPU). 써코니 발표로는 폼을 11% 더 넣었는데, 무게는 RunRepeat 실측 272g → 258g으로 14g 가벼워졌습니다 — "부드러운데 멍청하지 않다"는 평을 받으며 BITR A티어, DOR A-를 받았죠. 한국 정가 209,000원으로 본디 9(229,000원)보다 2만 원 저렴합니다(님버스 28은 199,000원). 발볼 넓은 한국 러너를 위한 와이드 옵션과 평발·무릎 적합성까지 정리했습니다.',
-    thumbnail: '/images/blog/saucony-triumph-24-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-06-23',
-    category: 'review' as const,
+    id: "saucony-triumph-24-review",
+    slug: "saucony-triumph-24-review",
+    title: "트라이엄프24 리뷰 — 부드러운 체감과37.5AC, 앞코·걷기에서 확인할 차이",
+    description: "IncrediLUX·258g 검체와 DOR David의 실제 착화 의견을 정리합니다. 공시10mm/실측8mm·한국 M/W 캐시·밑창 carbon rubber를 구분합니다.",
+    thumbnail: "/images/shoes/saucony/triumph24/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-06-23",
+    category: "review",
     readingTime: 8,
-    tags: ['써코니 트라이엄프 24', '트라이엄프', 'incrediLUX', '쿠션화', '맥스쿠션', '러닝화 리뷰'],
+    tags: [
+      "트라이엄프24",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>트라이엄프 24가 폼을 통째로 교체</strong> — PWRRUN PB(ePEBA)에서 신형 incrediLUX(ATPU)로. 써코니 발표로 폼은 11% 늘었는데 무게는 14g 줄었습니다(RunRepeat 실측 272g → 258g)</li>
-    <li>"부드러운데 멍청하지 않다"는 평 — <strong>맥스쿠션이면서 에너지 리턴이 살아 있는</strong> 데일리 쿠션화. BITR A티어, Doctors of Running A-</li>
-    <li>한국 정가 <strong>209,000원</strong>으로 본디 9(229,000원)보다 2만 원 저렴(님버스 28은 199,000원으로 1만 원 더 쌉니다), <strong>와이드(2E) 옵션</strong>도 한국몰 판매. 단 안정화 기능은 없는 완전 중립화</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🛋️</span>
-  <div class="callout-body">
-    <p class="callout-title">"소파인데 살짝 튕기는 소파"</p>
-    <p>트라이엄프는 써코니의 <strong>최고급 데일리 쿠션화</strong>입니다. 매일 편하게 거리를 쌓고 롱런까지 소화하는 '푹신한 만능화' 포지션이죠. 24세대는 한국에 이미 출시돼 <strong>209,000원</strong>에 판매 중이며(와이드 포함), 폼 교체로 시리즈 사상 가장 큰 변화를 맞았습니다.</p>
-  </div>
-</div>
-
-<h2>23 → 24, 무엇이 달라졌나</h2>
-<table>
-  <thead><tr><th>항목</th><th>트라이엄프 23</th><th>트라이엄프 24</th><th>변경</th></tr></thead>
-  <tbody>
-    <tr><td>무게(RunRepeat 실측, 남성 US 9)</td><td>272g</td><td><strong>258g</strong> (공식 250g)</td><td>-14g</td></tr>
-    <tr><td>힐 / 전족 스택(RunRepeat 실측)</td><td>42.3 / 32.3mm</td><td>41.6 / 33.6mm (공식 43 / 33mm)</td><td>힐 -0.7 / 전족 +1.3mm</td></tr>
-    <tr><td>드롭(RunRepeat 실측)</td><td>10.0mm</td><td>8.0mm (공식 10mm)</td><td>-2mm</td></tr>
-    <tr><td><strong>미드솔 폼</strong></td><td>PWRRUN PB (ePEBA)</td><td><strong>incrediLUX (ATPU)</strong></td><td>전면 교체</td></tr>
-    <tr><td>어퍼</td><td>엔지니어드 메시</td><td>더 오픈된 메시(통기성↑)</td><td>여름 쾌적</td></tr>
-    <tr><td>와이드 옵션</td><td>제공</td><td>제공(한국몰 판매)</td><td>유지</td></tr>
-    <tr><td>한국 정가</td><td>—</td><td>209,000원</td><td>—</td></tr>
-  </tbody>
-</table>
-<p class="caption">※ 무게·스택·드롭은 두 세대 모두 RunRepeat 실측(남성 US 9)으로 맞췄고, 괄호 안은 써코니 공식 표기입니다. 24 실측은 SA 힐 152, 에너지 리턴 힐 72.0%·전족 78.5%, 토박스 71.4mm이고, 23 실측은 SA 힐 149·전족 136, 에너지 리턴 힐 67.6%·전족 71.2%, 토박스 71.4mm였습니다.</p>
-
-<h2>핵심 — incrediLUX 폼의 역설</h2>
-<p>이번 세대의 모든 것은 <strong>incrediLUX 폼</strong>으로 통합니다. 기존 PWRRUN PB(ePEBA)를 ATPU(알리파틱 TPU) 기반 슈퍼크리티컬 폼으로 바꿨는데, 결과가 흥미롭습니다. 써코니 공식 발표 그대로 <strong>"발밑 폼을 11% 더 넣었는데 트라이엄프 23보다 거의 0.5온스(약 14g) 가벼워졌다"</strong>는 것. RunRepeat 실측(남성 US 9)으로도 무게가 272g → 258g으로 14g 줄어 발표와 맞고, 스택은 힐 42.3 → 41.6mm·전족 32.3 → 33.6mm로 거의 그대로입니다. <strong>폼은 더 넣었는데 두께는 비슷하고 더 가벼워진</strong> 셈이죠.</p>
-<p>주행 느낌도 좋아졌습니다. Believe in the Run은 <strong>"트라이엄프 역사상 가장 활기찬(pep) 폼"</strong>이라 했고, Doctors of Running은 <strong>"트라이엄프가 진짜 프리미엄 데일리 트레이너처럼 느껴지는 첫 버전"</strong>이라 평했습니다(A-). Road Trail Run 멀티 테스터는 평균 9.3/10. 공통된 칭찬은 <strong>"부드러운데 둔하지 않다"</strong> — 맥스쿠션이면서 에너지 리턴이 살아 있다는 점입니다.</p>
-
-<h2>맥스쿠션 3대장 비교 — 어디에 설까</h2>
-<p>한국에서 트라이엄프 24의 라이벌은 명확합니다. <a href="/shoes/hoka-bondi-9">호카 본디 9</a>, <a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a>, <a href="/shoes/new-balance-1080-v15">뉴발란스 1080 v15</a>죠.</p>
-<ul>
-  <li><strong>vs 본디 9</strong> — 본디는 더 무겁고(303g, 남성 US 9) 구조화된 로커로 '완전 소파'. 트라이엄프 24(실측 258g)는 약 45g 가볍고 에너지 리턴이 더 살아 '튕기는 소파'입니다</li>
-  <li><strong>vs 님버스 28</strong> — 스택은 님버스가 실측 39.5/34.3mm로 힐은 트라이엄프(실측 41.6/33.6mm) 쪽이 더 높습니다. 님버스는 FF BLAST+ + PureGEL로 플랫폼 안정감이 우위, 트라이엄프 24는 무게(실측 258g vs 278g)·반발에서 우위입니다. 가격은 님버스(199,000원)가 1만 원 저렴합니다</li>
-  <li><strong>vs 1080 v15</strong> — 1080은 드롭이 공식 6mm(실측 6.4mm)로 낮아(트라이엄프 24는 공식 10mm, 실측 8.0mm) 더 자연스러운 발걸음. <strong>힐 착지가 많다면 드롭이 더 높은 트라이엄프 24</strong>가 편합니다</li>
-</ul>
-<p>정리하면 <strong>'쿠션 + 반발 균형 + 가성비'가 트라이엄프 24의 자리</strong>입니다. 푹신함 끝판왕은 본디, 안정감은 님버스, 낮은 드롭은 1080. 세 신발을 한 번에 보려면 <a href="/best/max-cushion">맥스 쿠션 러닝화 추천</a>을 참고하세요.</p>
-
-<h2>한국 러너 관점 — 발볼·평발·무릎</h2>
-<ul>
-  <li><strong>발볼 넓은 러너</strong> — <strong>와이드(2E) 옵션이 한국몰에 정식 판매</strong>됩니다. 표준형은 RunRepeat 실측 토박스 71.4mm로 23(71.4mm)과 같은 좁은 편이라, 발볼이 보통 이상이면 와이드를 권합니다(<a href="/best/wide-toebox">발볼 넓은 러너 추천</a> 참고)</li>
-  <li><strong>평발·과내전</strong> — <strong>완전 중립화라 교정 기능이 없습니다.</strong> 경미한 평발 + 쿠션 우선이면 43mm 스택이 발바닥 부하를 줄여줘 허용 범위지만, 오버프로네이션이 뚜렷하면 안정화인 <a href="/shoes/saucony-hurricane-25">써코니 허리케인</a> 계열이 맞습니다</li>
-  <li><strong>무릎</strong> — 43mm 힐 스택의 충격 흡수로 무릎 부하 분산에 유리합니다. 단 무릎 통증 원인이 과내전이라면 쿠션만으로는 부족하니 안정화를 고려하세요</li>
-</ul>
-
-<h2>누구에게 추천하나</h2>
-<ul>
-  <li><strong>추천</strong> — 이지런·롱런용 최고급 쿠션 중립화를 찾는 러너, 맥스쿠션을 원하지만 '무겁고 둔한' 느낌이 싫은 러너, 초~중급 마라톤 훈련용, 발바닥 부하를 줄이고 싶은 러너</li>
-  <li><strong>비추천</strong> — 안정화가 필요한 과내전 러너(→ 허리케인), 낮은 드롭·그라운드 필을 좋아하는 러너, 비 오는 노면 위주로 달리는 러너(젖은 노면 트랙션은 평범)</li>
-</ul>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">두 가지 주의</p>
-    <p>① <strong>안정화가 아닙니다.</strong> 트라이엄프 24는 완전 중립화로, 안정성이 필요하면 써코니 허리케인 26 등 안정화 라인을 보세요. ② <strong>공식 표기와 실측이 다릅니다.</strong> RunRepeat 실측 드롭은 8.0mm로 공식 10mm보다 2mm 낮고, 무게·스택도 공식 값과 갈립니다. 23 → 24 비교표는 실측(남성 US 9) 기준입니다.</p>
-  </div>
-</div>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>David는 아주 부드럽지만 달리기에서 불안정 문제는 없었다고 적었습니다. 이 개인 체감과 폼 자체의 경도37.5AC는 같은 척도가 아닙니다. 걷기·서기에서도 같은 편안함을 느낄지는 별도입니다.</p><p>앞발을 조금 넓게 느낀 리뷰와 RR 내부93.4/71.4mm는 조건이 다릅니다. 실제 규격에서 발가락 위 공간·중족 고정·로커 전환을 살펴볼 수 있습니다.</p><figure><img src="/images/shoes/saucony/triumph24/side.jpg" alt="트라이엄프24 — 폼 경도·전체 체감·앞코 공간을 나누어 확인" loading="lazy"/><figcaption>트라이엄프24 — 폼 경도·전체 체감·앞코 공간을 나누어 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-triumph-24</td><td>258g</td><td>41.6/33.6mm · 8mm</td><td>152/138</td><td>72/78.5%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>공식 변화율보다 확인 가능한 현재 조건</h2><p>폼11% 증량과 모든 사이즈14g 감량, 미확인 BITR/DOR 점수·순위를 이번 검증의 결론으로 쓰지 않습니다. 본문은 정확24의 현재 RR 수치와 David의 실제 착화 조건을 중심으로 바꿨습니다.</p><p>carbon rubber는 밑창 고무입니다. 이름의 carbon을 카본 플레이트로 바꾸지 않으며 별도 플레이트 재료·유무는 이번 정확 원문에서 미확인입니다. 한국 와이드 상품 캐시는 있지만W를2E로 고정하지 않습니다.</p><h2>트라이엄프24 — 핏과 주행에서 갈리는 지점</h2><p>한국 공식의 carbon rubber는 밑창 고무 설명으로 카본 플레이트 증거가 아닙니다. 정확 원문의 별도 플레이트 존재·재료는 미확인입니다.</p><p>RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 힐/중족과 조금 넓은 앞발·좋은 고정을 적었습니다. 아주 부드럽지만 로커와 넓은 바닥 덕분에 본인 달리기에는 불안정 문제가 없었고 걷기·서기는 부드러움 선호에 따라 갈릴 수 있다고 했습니다.</p><h2>트라이엄프24 — 공시·한국 판매 확인 범위</h2><p>DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다.</p><p>한국 공식 캐시: men S100997-1017 M(일반) 정가209,000원·할인캐시188,100원; men S101894-1003 W(와이드) 정가209,000원; women S100994-1002 W(와이드) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=129&amp;display_group=1&amp;product_no=418" target="_blank" rel="noopener noreferrer">kr-triumph24-m</a> — original_opened_cached_web; 남성 S100997-1017 TRIPLE BLACK M(일반),209000/할인188100,250–300.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=129&amp;display_group=1&amp;product_no=502" target="_blank" rel="noopener noreferrer">kr-triumph24-mw</a> — original_opened_cached_web; 남성 S101894-1003 TRIPLE BLACK W(와이드),209000,250–300.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=45&amp;display_group=1&amp;product_no=407" target="_blank" rel="noopener noreferrer">kr-triumph24-ww</a> — original_opened_cached_web; 여성 S100994-1002 FOG/ICE MELT W(와이드),209000,220–255. carbon rubber는 아웃솔 고무 설명.</li><li><a href="https://runrepeat.com/saucony-triumph-24" target="_blank" rel="noopener noreferrer">트라이엄프24 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-triumph-24-review-2026/" target="_blank" rel="noopener noreferrer">트라이엄프24 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "드롭이10mm인가요8mm인가요?",
+        "answer": "DOR 소개43/33mm·10mm와 RR41.6/33.6mm·8mm가 다릅니다. 같은 시험으로 합치지 않습니다."
+      },
+      {
+        "question": "카본 러버면 카본화인가요?",
+        "answer": "아닙니다. 밑창 고무 설명이며 플레이트 유무 근거가 아닙니다."
+      },
+      {
+        "question": "무릎 보호가 더 좋나요?",
+        "answer": "해당 모델의 임상 보호 우위를 확인하지 못해 질환별 등급·보장을 제거했습니다."
+      }
+    ],
   },
   {
     id: 'asics-novablast-6-preview-2026',

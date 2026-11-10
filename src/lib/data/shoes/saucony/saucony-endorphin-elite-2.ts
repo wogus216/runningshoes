@@ -1,29 +1,36 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-endorphin-elite-2',
   slug: 'saucony-endorphin-elite-2',
   brand: 'Saucony',
   name: '엔돌핀 엘리트 2',
   image: '/images/shoes/saucony/endorphin_elite2.webp',
-  images: ['/images/shoes/saucony/endorphinelite2/side.webp', '/images/shoes/saucony/endorphinelite2/top.webp', '/images/shoes/saucony/endorphinelite2/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/endorphinelite2/side.webp',
+    '/images/shoes/saucony/endorphinelite2/top.webp',
+    '/images/shoes/saucony/endorphinelite2/outsole.webp',
+  ],
   category: '레이싱',
   rating: 5,
-  price: 339000,
-  description: 'Saucony의 최상위 레이싱화로, IncrediRUN 미드솔로 역대 최고 80.6% 에너지 리턴을 기록했습니다. 풀렝스 카본 플레이트와 함께 엘리트 퍼포먼스를 제공합니다.',
-  oneliner: '80.6% 에너지 리턴, RunRepeat 역대 최고 기록의 괴물',
-  editorComment: 'RunRepeat Lab 역대 최고 에너지 리턴 80.6%라는 수치는 알파플라이 3(힐 74.9%)도 넘어서는 기록입니다. IncrediRUN 폼의 22.3 AC(RunRepeat 실측, 평균 35.4 AC) 극소프트 경도가 만들어내는 반발력은 경이적이지만, 동시에 안정성 4/10이라는 대가를 치릅니다. 33만 9천원이라는 가격과 200km 내구성은 km당 약 1,695원을 의미하며, 이건 오직 레이스데이에만 꺼내 신는 무기입니다. 월 200km 이상 훈련하는 서브3 러너가 아니면 이 신발의 잠재력을 끌어내기 어렵고, 토박스가 좁아 한국 러너 발볼과의 궁합은 도전적입니다. IncrediRUN은 TPEE 계열이라 순수 PEBA보다 마모 내성 면에서 유리한 소재 선택입니다 — 그래도 레이스 전용 설계인 만큼, 훈련 마일리지는 데일리에 맡기는 운용이 기본입니다.\n\n사이즈·구매 가이드: 토박스가 좁은 편(narrow)이므로 발볼이 넓다면 와이드 옵션이 없어 착용이 어려울 수 있으니 반드시 시착하세요. 정가 339,000원에 예상 수명 150~250km(추정) 기준 km당 약 1,360~2,260원으로 레이스 전용 운용이 필수입니다. 같은 엘리트 레이싱화로는 알파플라이 3·메타스피드 엣지+가 대안입니다.',
-  tags: ['레이싱', '카본', '엘리트', '슈퍼화', '에너지 리턴'],
-
+  description: 'IncrediRUN · 슬롯형 전장 카본 구조의 엔돌핀 엘리트 2. RunRepeat 실험실 검체 197g·39.9/32.4mm. 한국 현재 정가 미확인.',
+  oneliner: 'IncrediRUN · 슬롯형 전장 카본 · 197g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: unisex S30994-172 M(일반) 정가339,000원·할인캐시220,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 할인 기간은 열린 캐시10/26~11/9·검색캐시11/4~11/23으로 상충합니다. DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다. RR 사이즈 투표와 DOR 정사이즈 의견은 같은 집단이 아닙니다. 39.9mm를40mm한계의1mm아래라고 쓴 RR 문구는 산술과 맞지 않아 대회 승인 판정에 쓰지 않습니다. 450km·최적 페이스·질환별 금지 등급을 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 정사이즈여도 낮고 밀착된 앞코와 토가드 접촉을 느꼈고 극도로 부드러운 힐/중족 전환은 불안정했습니다. David(남성 US9.5)는 좁은 앞발·측면 압박에도 쓸림·힐슬립은 없었으며 적응 후 바운스와 앞발 롤을 좋아했습니다. RR 내부 최광폭 95.6mm·엄지 71mm·높이 29.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본',
+    '엘리트',
+    '슈퍼화',
+    '에너지 리턴',
+  ],
   specs: {
     weight: 197,
     cushioning: 10,
     responsiveness: 10,
     stability: 4,
-    drop: 8,
-    durability: 200,
+    drop: 7.5,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 39.9,
@@ -31,81 +38,106 @@ export const shoe: Shoe = {
     },
     drop: 7.5,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'IncrediRUN',
-    optimalPace: '3:00-4:30 min/km',
+    plateType: 'Slotted/forked carbon plate',
+    midsoleType: 'IncrediRUN · 슬롯형 전장 카본',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'fair',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['엘리트 러너', '풀마라톤', '서브-3 목표', 'PR 도전'],
-    notRecommended: ['입문 러너', '데일리 트레이닝', '과내전 러너'],
+    recommended: [
+      '실제 규격에서 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시와 독립 랩·개인 체감의 차이를 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰이나 불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명이나 임상 효과로 읽는 경우',
+    ],
   },
-
-  features: ['IncrediRUN 미드솔', '80.6% 에너지 리턴 (역대 최고)', '풀렝스 카본 플레이트', '197g 경량'],
-
+  features: [
+    'IncrediRUN · 슬롯형 전장 카본',
+    '197g · 39.9/32.4mm · 드롭 7.5mm (RunRepeat 실험실 검체)',
+    '한국은 슬롯형 풀 카본, RR은 곡선형 카본으로 설명합니다. IncrediRUN을 TPEE로 설명한 것은 RR이며 독립 조성 분석으로 확인한 것은 아닙니다.',
+    'RR 내부 최광폭 95.6mm·엄지 71mm·높이 29.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+  ],
   priceAnalysis: {
-    msrp: 339000,
-    streetPrice: 299000,
-    costPerKm: 1695,
     valueRating: 5,
     priceTier: 'super-premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'adidas-adios-pro-4'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-edge-plus',
+      'adidas-adios-pro-4',
+    ],
   },
-
   detailedSpecs: {
-    weight: '197g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 39.9mm / 포어풋 32.4mm (실측)',
-    drop: '7.5mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'IncrediRUN — 에너지 리턴 힐 80.6%·전족부 82.1%, 경도 22.3 AC (RunRepeat 실측)',
-    plate: '풀렝스 카본 플레이트',
-    outsole: '경량 러버',
-    upper: '초경량 메쉬',
-    width: '좁음 (D 단일) — RunRepeat 랩 토박스 71.0mm(평균 73.2mm)로 수치 차이는 2.2mm이나, 랩 본문이 "Where the upper might feel tight for some is in the toebox. We measured just 71.0 mm, which limits natural toe splay"라고 평가 · 와이드 없음',
-    durability: '200km+',
-    price: '339,000원',
-    costPerKm: '약 ₩1,695/km (200km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '197g (RunRepeat 실험실 검체). DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다.',
+    stackHeight: '39.9/32.4mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '7.5mm (RunRepeat 실험실 검체). DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다.',
+    midsole: 'IncrediRUN · 슬롯형 전장 카본. 주폼 22.3AC, 힐/전족부 SA 157/123·에너지 리턴 80.6/82.1%. RR 사이즈 투표와 DOR 정사이즈 의견은 같은 집단이 아닙니다. 39.9mm를40mm한계의1mm아래라고 쓴 RR 문구는 산술과 맞지 않아 대회 승인 판정에 쓰지 않습니다. 450km·최적 페이스·질환별 금지 등급을 제거했습니다.',
+    plate: '한국은 슬롯형 풀 카본, RR은 곡선형 카본으로 설명합니다. IncrediRUN을 TPEE로 설명한 것은 RR이며 독립 조성 분석으로 확인한 것은 아닙니다.',
+    width: 'RR 내부 최광폭 95.6mm·엄지 부위 71mm·높이 29.5mm. RR 내부 최광폭 95.6mm·엄지 71mm·높이 29.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: unisex S30994-172 M(일반) 정가339,000원·할인캐시220,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 할인 기간은 열린 캐시10/26~11/9·검색캐시11/4~11/23으로 상충합니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 86,
-      text: '서브3 이하 엘리트 러너를 위한 최상위 레이싱화입니다. 197g 초경량에 역대 최고 80.6% 에너지 리턴, 힐 157 SA(RunRepeat 실측) 충격흡수로 기록 단축에 최적화되어 있습니다. 40mm 힐 스택에 8mm 드롭 구성이고, IncrediRUN 폼의 극강 반발력은 알파플라이와 비교해도 손색없습니다. 22.3 AC 극소프트 미드솔로 안정성이 낮아 완벽한 러닝 폼이 필요하고, 토박스가 좁아 발볼 넓은 한국 러너에게는 맞지 않습니다. 33만 9천원 프리미엄 가격에 200km 내구성이라 km당 약 1,695원으로 가성비는 좋지 않지만, 대회 전용 최고 성능 레이싱화입니다. 무릎 보호보다 기록 단축에 초점을 맞추고 있으며, 평발이나 과내전 러너에게는 비추천이고 월 200km 이상 훈련하는 시리어스 러너 전용입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-endorphin-elite-2',
+      text: 'DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다. RR 사이즈 투표와 DOR 정사이즈 의견은 같은 집단이 아닙니다. 39.9mm를40mm한계의1mm아래라고 쓴 RR 문구는 산술과 맞지 않아 대회 승인 판정에 쓰지 않습니다. 450km·최적 페이스·질환별 금지 등급을 제거했습니다.',
     },
     {
-        userType: '예상 적합 — 후반 반발 유지가 과제인 마라토너',
-        text: '30km 이후 반발이 죽는 것이 과제인 러너를 겨냥한 최상위 레이서입니다. 에너지 리턴 80.6%는 시판 레이서 중 최상단이고, IncrediRUN 폼이라 후반까지 탄성이 유지되는 성격입니다. 197g의 무게에 22.3 AC(RunRepeat 실측)의 소프트 폼 조합이라, 반발이 강하면서도 착지 충격은 흡수하는 드문 구성입니다. 다만 토박스가 좁아 발볼이 넓다면 맞지 않습니다.',
-      },
-    {
-        userType: '비적합 — 서브3:30 전후 러너',
-        text: '이 모델의 성능 차이는 매우 빠른 페이스에서만 드러납니다. 서브3:30 안팎이라면 같은 라인의 프로 4로도 충분하고, 엘리트 2와의 차이를 체감하려면 3:30/km 수준의 페이스가 필요합니다. 안정성이 4/10으로 낮아 폼이 완성되지 않은 단계에서는 착지가 불안해질 수 있고, 토박스가 좁아(71.0mm) 발볼이 넓으면 장거리 후반에 발가락 압박이 생길 수 있습니다. 339,000원·예상 수명 150~250km(추정) 기준 km당 약 1,360~2,270원이라, 성능을 못 쓰는 상태에서 부담만 큰 선택이 됩니다.',
-      },
-    {
-        userType: '적합성 경계 — 반발은 최상, 발볼은 최악',
-        text: '성능과 핏이 정반대로 갈리는 모델입니다. 반발력만 놓고 보면 최상위 레이서 3파전(알파플라이·메타스피드 스카이+·엔돌핀 엘리트 2) 중 앞서는 편으로, 에너지 리턴 힐 80.6%·전족부 82.1%(RunRepeat 실측)로, 22.3 AC의 극소프트 폼인데도 반발 수치가 최상단입니다. 반대로 토박스는 이 등급에서도 가장 좁은 축이라, 발볼이 넓은 편이면 시착 없이 구매하는 것은 위험합니다. km당 약 1,695원으로 단가도 높아 대회 전용 운용이 전제입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-endorphin-elite-2-review-2025/',
+      text: 'DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 정사이즈여도 낮고 밀착된 앞코와 토가드 접촉을 느꼈고 극도로 부드러운 힐/중족 전환은 불안정했습니다. David(남성 US9.5)는 좁은 앞발·측면 압박에도 쓸림·힐슬립은 없었으며 적응 후 바운스와 앞발 롤을 좋아했습니다.',
+    },
   ],
-
-  similarShoes: ['nike-alphafly-3', 'asics-metaspeed-edge-plus', 'new-balance-sc-elite-v5', 'puma-fast-r-nitro-elite-3'],
+  similarShoes: [
+    'nike-alphafly-3',
+    'asics-metaspeed-edge-plus',
+    'new-balance-sc-elite-v5',
+    'puma-fast-r-nitro-elite-3',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [],
+  purchaseLinks: [
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr-elite2',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=177&display_group=1&product_no=184',
+        note: 'original_opened_cached_web; S30994-172 공용 WHITE/CRIMSON M(일반),339000/220350;220–300,7.0oz(199g)사이즈미공시,슬롯형풀카본.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-endorphin-elite-2',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 197g·39.9/32.4mm·7.5mm. RR 사이즈 투표와 DOR 정사이즈 의견은 같은 집단이 아닙니다. 39.9mm를40mm한계의1mm아래라고 쓴 RR 문구는 산술과 맞지 않아 대회 승인 판정에 쓰지 않습니다. 450km·최적 페이스·질환별 금지 등급을 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-endorphin-elite-2-review-2025/',
+        note: 'DOR 소개199g(남성 US9/여성US10.5)·39.5/31.5mm·8mm와 RR197g·39.9/32.4mm·7.5mm를 나눕니다. 한국199g은 기준 사이즈 미공시입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

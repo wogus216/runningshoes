@@ -1,29 +1,34 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-ride-18',
   slug: 'saucony-ride-18',
   brand: 'Saucony',
   name: '라이드 18',
   image: '/images/shoes/saucony/ride18.webp',
-  images: ['/images/shoes/saucony/ride18/side.webp', '/images/shoes/saucony/ride18/top.webp', '/images/shoes/saucony/ride18/outsole.webp'],
+  images: [
+    '/images/shoes/saucony/ride18/side.webp',
+    '/images/shoes/saucony/ride18/top.webp',
+    '/images/shoes/saucony/ride18/outsole.webp',
+  ],
   category: '입문화',
   rating: 4,
-  price: 159000,
-  description: 'Saucony의 대표 입문화로, PWRRUN+ 미드솔로 편안한 쿠셔닝과 부드러운 착지감을 제공합니다. 데일리 트레이닝에 적합한 올라운더 러닝화입니다.',
-  oneliner: '255g에 통기성 5/5, 여름 데일리 러닝의 가성비 정답',
-  editorComment: '15만 9천원에 255g 경량과 141 SA 충격흡수를 동시에 달성한 점이 라이드 18의 진가입니다. 전작 대비 33g 감량은 체감되는 차이이고, 통기성 5/5 최상위급이라 한국의 덥고 습한 여름 러닝에 최적화되어 있습니다. 미드솔 경도 41.3 AC(RunRepeat 실측, 평균 35.4 AC)는 푹신함보다 단단한 안정감을 선호하는 러너에게 맞고, 페가수스 41(₩159,000/281g)보다 26g 가볍습니다. 와이드 옵션이 있어 발볼 걱정을 덜어주지만, 600km 내구성은 브룩스 고스트(800km)에 비해 짧은 편입니다.\n\n사이즈·구매 가이드: 토박스가 RunRepeat 실측 73.0mm로 표준 폭이라 발볼이 보통인 러너에게 잘 맞으며, 넓은 발볼이라면 와이드(2E) 옵션을 선택하세요. 정가 159,000원에 예상 수명 500~700km(추정) 기준 km당 약 230~320원으로 입문화 중 가성비 최고 수준입니다. 같은 입문화로는 페가수스 41·클리프톤 10이 대안입니다.',
-  tags: ['입문화', '데일리', '쿠셔닝'],
-
+  description: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔 구조의 라이드 18. RunRepeat 실험실 검체 255g·35/26.6mm. 한국 현재 정가 미확인.',
+  oneliner: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔 · 255g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: women S11001-105 와이드 (상품명) 정가159,000원·할인캐시103,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 여성 와이드 검색 원문만 확인했고 현재 URL은 홈으로 이동합니다. 남성·다른 폭의 부재나 단종을 뜻하지 않습니다. DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다. 현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 앞발 측면의 낮은 볼륨·초기 테이퍼와 느껴지는 힐 카운터, 어색한 내측 힐 전환을 적었습니다. David(남성 US9.5)는 약간의 앞코 측면 압박은 있었지만 카운터 패딩은 괜찮았고 완만한 로커·균형 있는 전환을 좋아했습니다. RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '입문화',
+    '데일리',
+    '쿠셔닝',
+  ],
   specs: {
     weight: 255,
     cushioning: 9,
     responsiveness: 6,
     stability: 6,
-    drop: 8,
-    durability: 600,
+    drop: 8.4,
   },
-
   biomechanics: {
     stackHeight: {
       heel: 35,
@@ -32,76 +37,103 @@ export const shoe: Shoe = {
     drop: 8.4,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PWRRUN+',
-    optimalPace: '5:00-7:00 min/km',
+    midsoleType: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['입문 러너', '데일리 트레이닝', '중립 발', '편안한 쿠셔닝 선호'],
-    notRecommended: ['레이싱', '빠른 템포 러닝', '과내전 러너'],
+    recommended: [
+      '실제 규격에서 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시와 독립 랩·개인 체감의 차이를 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰이나 불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명이나 임상 효과로 읽는 경우',
+    ],
   },
-
-  features: ['PWRRUN+ 미드솔', 'FORMFIT 기술', '8.4mm 드롭', '편안한 착화감', '충격흡수 힐 141 SA (RunRepeat 실측)'],
-
+  features: [
+    'PWRRUN+ 비즈TPU · PWRRUN+ 인솔',
+    '255g · 35/26.6mm · 드롭 8.4mm (RunRepeat 실험실 검체)',
+    '플레이트 없는 중립 구조입니다. 전족 바닥의 플레어와 약한 사이드월을 임상 교정 효과로 해석하지 않습니다.',
+    'RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+  ],
   priceAnalysis: {
-    msrp: 159000,
-    streetPrice: 139000,
-    costPerKm: 265,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-1080-v14'],
+    alternatives: [
+      'asics-gel-nimbus-28',
+      'hoka-clifton-10',
+      'new-balance-1080-v14',
+    ],
   },
-
   detailedSpecs: {
-    weight: '255g (남성 US 9 기준, RunRepeat 실측)',
-    stackHeight: '힐 35.0mm / 포어풋 26.6mm (실측)',
-    drop: '8.4mm (실측) / 8mm (브랜드 공식)',
-    midsole: 'PWRRUN+ (질소 주입 TPU) · 충격흡수 141 SA는 RunRepeat 랩 힐 기준',
-    plate: '없음',
-    outsole: 'XT-900 러버',
-    upper: '메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 73.0mm(평균 73.2mm), 랩: "adding a touch more toe room but still being somewhat restrictive for those with wide feet" · 와이드 (2E) 출시. 2026-10-20 한국 공식몰에서는 라이드 18 미등재',
-    durability: '600km+',
-    price: '159,000원',
-    costPerKm: '약 ₩265/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '후족부/중족부 착지',
+    weight: '255g (RunRepeat 실험실 검체). DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다.',
+    stackHeight: '35/26.6mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8.4mm (RunRepeat 실험실 검체). DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다.',
+    midsole: 'PWRRUN+ 비즈TPU · PWRRUN+ 인솔. 주폼 41.3AC, 힐/전족부 SA 141/미확인·에너지 리턴 미확인/미확인%. 현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다.',
+    plate: '플레이트 없는 중립 구조입니다. 전족 바닥의 플레어와 약한 사이드월을 임상 교정 효과로 해석하지 않습니다.',
+    width: 'RR 내부 최광폭 94.4mm·엄지 부위 73mm·높이 32mm. RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: women S11001-105 와이드 (상품명) 정가159,000원·할인캐시103,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 여성 와이드 검색 원문만 확인했고 현재 URL은 홈으로 이동합니다. 남성·다른 폭의 부재나 단종을 뜻하지 않습니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 89,
-      text: '15만원대 최고의 가성비 입문 러닝화입니다. "초보도 신을 수 있나요?" 라이드 시리즈는 입문자를 위해 만들어진 신발입니다. v17 대비 33g 감량된 255g 경량에 35.0mm 힐 스택, 8.4mm 드롭(RunRepeat 실측) 구성이고, 141 SA 충격흡수로 무릎 보호가 뛰어납니다. 미드솔 경도 41.3 AC(RunRepeat 실측)로 푹신한 느낌보다는 단단하고 안정적인 라이드를 제공해 첫 러닝화로 안전한 선택입니다. 54% 에너지 리턴으로 반발력은 평균 수준이지만, 통기성 5/5 최상위급으로 여름에도 쾌적합니다. 토박스 너비는 73.0mm(RunRepeat 실측)로 평균 수준이라 발볼이 넓다면 와이드 옵션을 고르는 편이 좋고, 경도 평발 러너에게도 적합합니다. 600km 내구성에 km당 약 265원이면 가성비 최고 수준이고, 페가수스 41과 함께 가장 추천하는 입문 러닝화입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-ride-18',
+      text: 'DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다. 현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다.',
     },
     {
-        userType: '모델 선택 — 페가수스 대비 가볍고 통기성이 좋은 입문화',
-        text: '입문화 후보로 페가수스 계열과 자주 맞붙는 모델입니다. 255g으로 약 26g 가볍고, 어퍼 통기성이 5/5(RunRepeat 구식 측정)로 좋아 여름철 열감이 덜하다는 점이 차이입니다. 경도 41.3 AC로 미드솔은 단단한 편이지만 141 SA의 충격흡수를 확보해, 단단한 감각을 선호하면서도 관절 부담은 줄이려는 경우에 맞습니다. 토박스는 평균 수준(73.0mm)이지만 와이드 옵션이 있어 발볼 넓은 입문자의 선택지가 됩니다.',
-      },
-    {
-        userType: '세대 비교 — 라이드 17 대비 33g 경량화',
-        text: '전작 17에서 255g으로 약 33g 가벼워진 것이 체감 변화의 핵심입니다. 경도 41.3 AC(RunRepeat 실측)로 미드솔은 단단한 편인데, 푹신함보다 안정감을 주는 성격이라 6분/km 데일리에서 발과 무릎에 피로가 덜 쌓입니다. 맥시멀 쿠션화의 물렁한 감각을 선호하지 않는 경우에 맞습니다. 내구성 600km로 같은 급의 고스트 계열(800km)보다는 짧지만 km당 약 265원으로 운용 비용은 낮습니다. 토박스가 표준 폭이라 발볼이 넓으면 와이드가 필요합니다.',
-      },
-    {
-        userType: '모델 선택 — 클리프톤 대비 지면 감각',
-        text: '같은 데일리 쿠션화군에서 클리프톤 계열과 비교하면 성격이 갈립니다. 255g으로 더 가볍고 경도 41.3 AC라 미드솔이 단단한 편이어서 지면 감각이 남는 반면, 클리프톤은 더 부드럽고 로커로 굴려주는 쪽입니다. 발밑이 물러지는 느낌을 싫어한다면 이쪽이 맞습니다. SA 141의 충격흡수는 확보돼 있어 단단함이 관절 부담으로 직결되지는 않습니다. 아치를 과하게 잡지 않는 중립 설계라 가벼운 평발 성향까지는 대응되고, 2E 와이드가 있어 발볼도 선택지가 있습니다. 통기성이 좋아 여름철 장시간 착용에도 유리합니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-ride-18-review-2025/',
+      text: 'DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 앞발 측면의 낮은 볼륨·초기 테이퍼와 느껴지는 힐 카운터, 어색한 내측 힐 전환을 적었습니다. David(남성 US9.5)는 약간의 앞코 측면 압박은 있었지만 카운터 패딩은 괜찮았고 완만한 로커·균형 있는 전환을 좋아했습니다.',
+    },
   ],
-
-  similarShoes: ['nike-pegasus-41', 'asics-gel-nimbus-28', 'hoka-clifton-10', 'new-balance-880-v15'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5Zj79hA8y' }],
+  similarShoes: [
+    'nike-pegasus-41',
+    'asics-gel-nimbus-28',
+    'hoka-clifton-10',
+    'new-balance-880-v15',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Zj79hA8y',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr-ride18-w',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=154&display_group=1&product_no=144',
+        note: 'indexed_original_body_only_current_url_redirects_home; 여성 Ride18 와이드 CLOUD/DREAM S11001-105; 소비자/판매159000·할인103350;220–255. 원주소 열기는 홈페이지로 이동.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-ride-18',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 255g·35/26.6mm·8.4mm. 현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-ride-18-review-2025/',
+        note: 'DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

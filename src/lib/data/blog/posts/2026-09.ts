@@ -4490,71 +4490,38 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'saucony-guide-19-review',
-    slug: 'saucony-guide-19-review',
-    title: '써코니 가이드 19 후기 | 힐 충격흡수 124→144 SA, 부드러워진 안정화',
-    description:
-      '가이드 19는 "단단한 안정화"라는 인상을 바꾼 세대입니다. 새 PWRRUN 배합으로 힐 충격흡수가 124 SA에서 144 SA로 크게 좋아졌고, 전족부 120mm 초광폭 플랫폼이 지지대 없이도 발이 흔들리지 않게 잡아줍니다. 179,000원, 와이드 옵션 유통. 대신 298g으로 무게가 늘었습니다.',
-    thumbnail: '/images/blog/saucony-guide-19-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 가이드19', '안정화', '과내전', 'PWRRUN'],
+    id: "saucony-guide-19-review",
+    slug: "saucony-guide-19-review",
+    title: "가이드19 리뷰 — 넓은 바닥과 실제 중족 고정은 같은 이야기일까?",
+    description: "298g 검체와 CenterPath 구조를 확인했습니다. Matt·Bach의 다른 반응·고정 체감, 한국 M/W 캐시와 내부 폭·외부 플랫폼 차이를 정리합니다.",
+    thumbnail: "/images/shoes/saucony/guide19/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "가이드19",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>힐 충격흡수가 124 SA에서 144 SA로 크게 좋아졌습니다.</strong> 랩 실측 기준 개선폭입니다</li>
-    <li><strong>전족부 플랫폼이 실측 120mm로 랩 기준 최상위권 광폭</strong>입니다 — 메디얼 포스트 없이도 폭 자체로 안정감을 만듭니다</li>
-    <li><strong>298g으로 무게가 늘었습니다.</strong> 경쾌한 반발보다 편안한 데일리를 지향합니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>안정화를 처음 신거나 단단한 지지가 부담스러웠던 러너</strong>에게 맞습니다. 더 강한 교정이 필요하면 <a href="/shoes/saucony-omni-st-23">옴니 ST 23</a>을, 더 푹신한 프리미엄을 원하면 <a href="/shoes/saucony-hurricane-26">허리케인 26</a>을 비교해보세요.</p>
-  </div>
-</div>
-
-<h2>부드러워진 지지 — 랩 수치로 확인된 변화</h2>
-<p>가이드 19의 핵심 변화는 "부드러워진 지지"입니다. 랩 실측에서 힐 충격흡수가 <strong>144 SA로 전작(124 SA)보다 확연히 좋아졌고</strong>, 전족부 120mm 플랫폼은 랩 기준으로도 가장 넓은 축이라 지지대 없이도 발이 흔들리지 않습니다. 대신 실측 298g(전작 278g)으로 무게가 늘었고 에너지 리턴은 힐 54.8%로 평범해, 경쾌한 반발보다는 편안한 데일리 지향입니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준이지만 <strong>와이드(2E) 옵션이 꾸준히 유통되는 몇 안 되는 안정화</strong>입니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎·신 스플린트 전부 good입니다</li>
-  <li><strong>"평발인데 괜찮을까요?"</strong> — 평발 호환성이 excellent입니다. 강한 교정이 필요하면 <a href="/shoes/saucony-omni-st-23">옴니 ST 23</a> 쪽이 한 단계 위입니다</li>
-</ul>
-
-<h2>가격 대비 가치</h2>
-<p>국내 공식가는 179,000원이고, 2026-10-20 써코니코리아 공식몰 확인 기준 할인은 없습니다. 600km 기준 km당 약 298원입니다. 전작 가이드 18은 2026-10-20 기준 한국 공식몰에서 내려갔습니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>가벼운~중간 과내전의 데일리 러너</strong></li>
-  <li><strong>단단한 안정화가 부담스러웠던 러너</strong> — 부드러워진 지지가 체감 포인트</li>
-  <li><strong>발볼이 넓어 와이드 옵션이 필요한 러너</strong></li>
-  <li>반대로 <strong>경쾌한 반발력이나 가벼운 신발을 원한다면</strong> 다른 카테고리가 맞습니다</li>
-</ul>
-
-<h2>마무리</h2>
-<p>가이드 19는 안정화의 문턱을 낮춘 세대입니다. 지지가 개입하는 느낌이 뚜렷하지 않으면서도 과내전은 확실히 잡아주기 때문에, 안정화가 처음이거나 이전 세대의 단단함이 부담스러웠던 러너에게 자연스러운 입구가 됩니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>전족 바닥120mm는 넓은 접지면입니다. 발이 들어가는 내부 너비120mm나 모든 발의 흔들림 방지를 뜻하지 않습니다. 실제로 Bach는 중족에서 좌우 움직임을 느꼈습니다.</p><p>가이던스가 편한지 보려면 아치 분류보다 발등을 조였을 때 압박과 좌우 움직임, 로커 전환이 자연스러운지를 확인할 수 있습니다. Matt와 Bach의 단단함·반응 체감도 달랐습니다.</p><figure><img src="/images/shoes/saucony/guide19/side.webp" alt="가이드19 — 외부 바닥 폭과 내부 공간·중족 고정을 구분" loading="lazy"/><figcaption>가이드19 — 외부 바닥 폭과 내부 공간·중족 고정을 구분</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-guide-19</td><td>298g</td><td>37.4/31.4mm · 6mm</td><td>144/133</td><td>54.8/61.4%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>안정화라는 분류에서 곧바로 교정 효과로 넘어가지 않기</h2><p>CenterPath의 높은 사이드월·넓은 바닥·비대칭 림은 확인한 설계입니다. 가벼운 평발에는 충분·강한 교정은 옴니가 한 단계 위라는 기존 처방은 모델별 임상 근거가 없어 제거했습니다.</p><p>한국 남녀 와이드 상품 캐시는 확인했지만 W를2E로 바꾸거나 엑스트라 와이드가 현재 국내 판매된다고 단정하지 않습니다. 600km·km당298원, 전작 단종·할인 없음이라는 현재성 주장도 새 원문 범위를 벗어나 정정했습니다.</p><h2>가이드19 — 핏과 주행에서 갈리는 지점</h2><p>넓은 바닥·높은 사이드월·비대칭 림·로커를 사용합니다. 전통 메디얼 포스트가 없다는 설명과 별도 플레이트 유무는 다릅니다. 플레이트 소재·유무의 명시적 근거는 미확인입니다.</p><p>RR 내부 최광폭 96.2mm·엄지 72.8mm·높이 26.8mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 초기 테이퍼가 완화되고 고정이 좋으며 부드럽지만 반응성과 가이던스 체감은 약하다고 적었습니다. Bach는 앞발 공간은 충분하나 중족 좌우 움직임이 오래 신으면 거슬렸고 본인 착지에서는 더 단단하고 반응이 고르게 느껴졌습니다. Bach 실제 착화 사이즈는 미확인입니다.</p><h2>가이드19 — 공시·한국 판매 확인 범위</h2><p>DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다.</p><p>한국 공식 캐시: men S21058-101 M(일반) 정가179,000원·할인캐시152,150원; men S21059-104 W(와이드) 정가179,000원·할인캐시134,250원; women S11059-142 W(와이드) 정가179,000원·할인캐시152,150원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=53&amp;product_no=373" target="_blank" rel="noopener noreferrer">kr-guide19-m</a> — original_opened_cached_web; 남성 S21058-101 TRIPLE BLACK, M(일반),179000/할인152150,250–300. 구매/품절 문구 병존.</li><li><a href="https://www.saucony.co.kr/product/detail.html?cate_no=226&amp;display_group=1&amp;product_no=580" target="_blank" rel="noopener noreferrer">kr-guide19-mw</a> — original_opened_cached_web; 남성 S21059-104 FOSSIL/SHADOW W(와이드),179000/할인134250,250–300.</li><li><a href="https://saucony.co.kr/product/new-%EC%97%AC%EC%84%B1-%EA%B0%80%EC%9D%B4%EB%93%9C-19-%EC%99%80%EC%9D%B4%EB%93%9C-celestial/364/" target="_blank" rel="noopener noreferrer">kr-guide19-ww</a> — original_opened_cached_web; 여성 S11059-142 CELESTIAL W(와이드),179000/할인152150,220–255.</li><li><a href="https://runrepeat.com/saucony-guide-19" target="_blank" rel="noopener noreferrer">가이드19 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-guide-19-review-2026/" target="_blank" rel="noopener noreferrer">가이드19 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '가이드 19와 옴니 ST 23, 뭐가 다른가요?',
-        answer:
-          '겨냥하는 발이 다릅니다. 가이드 19는 298g(RunRepeat 실측)·드롭 6mm로 유도형 지지의 데일리 안정화이고, 옴니 ST 23은 286g(브랜드 공식)·드롭 8mm로 TPU 프레임을 물리적으로 끼운 최상급 안정화입니다. 과내전이 심하다면 옴니 ST 23, 가볍게 시작하려면 가이드 19가 맞습니다.',
+        "question": "전족120mm면 발볼도 넓나요?",
+        "answer": "아닙니다. 외부 플랫폼입니다. 내부 최광폭96.2mm·엄지72.8mm·높이26.8mm와 별도 위치입니다."
       },
       {
-        question: '와이드 옵션이 항상 있나요?',
-        answer:
-          '가이드 라인은 와이드(2E) 옵션이 꾸준히 유통되는 몇 안 되는 안정화입니다. 다만 컬러웨이에 따라 재고가 다를 수 있어 구매 전 공식몰에서 확인하는 것을 권합니다.',
+        "question": "평발에 excellent인가요?",
+        "answer": "모델별 임상 효과를 확인하지 못해 해당 등급과 교정 단계별 처방을 제거했습니다."
       },
+      {
+        "question": "2E인가요?",
+        "answer": "한국 캐시 M/W만 확인했습니다. W를2E로 임의 변환하지 않으며 현재 선택 재고는 미확인입니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: 'saucony-omni-st-23-review',
@@ -4639,73 +4606,38 @@ export const posts_2026_09: BlogPost[] = [
     ],
   },
   {
-    id: 'saucony-hurricane-26-review',
-    slug: 'saucony-hurricane-26-review',
-    title: '써코니 허리케인 26 후기 | IncrediLux 신폼, 41mm(공식) 스택인데 272g(실측)으로 가벼워졌다',
-    description:
-      '허리케인 26은 전작의 PEBA 폼을 신소재 IncrediLux(ATPU)로 전면 교체했습니다. 스택은 브랜드 공식 41/35mm(RunRepeat 실측 38.3/32.4mm)이고, 무게는 RunRepeat 실측 272g으로 전작 25(실측 286g)보다 14g 가볍습니다. 209,000원, 맥스쿠션 안정화 카테고리에서 상당히 가벼운 축입니다. 다만 전작의 단단한 잠금감을 원한다면 공식몰에서 계속 판매 중인 25(199,000원)가 더 맞을 수 있습니다.',
-    thumbnail: '/images/blog/saucony-hurricane-26-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-09-11',
-    category: 'review' as const,
-    readingTime: 7,
-    tags: ['써코니 허리케인26', '안정화', 'IncrediLux', '맥스쿠션'],
+    id: "saucony-hurricane-26-review",
+    slug: "saucony-hurricane-26-review",
+    title: "허리케인26 리뷰 — 새 폼보다 먼저 확인할 내측 프레임·발등·전환",
+    description: "IncrediLUX+PWRRUN과272g 검체를 확인했습니다. 내측 웨지 체감, Matt US10 실측·소개 US9 수치와 RR의 차이, 굽힘 원문 상충을 정리합니다.",
+    thumbnail: "/images/shoes/saucony/hurricane26/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-09-11",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "허리케인26",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>무게는 RunRepeat 실측 272g으로 전작 25(실측 286g)보다 14g 가볍습니다.</strong> 신소재 IncrediLux(ATPU) 덕분입니다</li>
-    <li><strong>맥스쿠션 안정화 카테고리에서 상당히 가벼운 축</strong>입니다</li>
-    <li><strong>전작 25의 단단한 잠금감을 원한다면</strong> 공식몰에서 정가 199,000원에 계속 판매 중인 25가 더 맞을 수 있습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">👟</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론</p>
-    <p><strong>중간 이상 과내전과 장거리 쿠션을 함께 원하는 러너</strong>에게 맞습니다. 카야노급 플래그십 중 더 가볍고 새로운 쪽을 찾는다면 유력한 대안입니다.</p>
-  </div>
-</div>
-
-<h2>"무겁고 단단한" 에서 "가볍고 부드러운"으로</h2>
-<p>허리케인 26의 방향성은 명확합니다 — "무겁고 단단한 프리미엄 안정화"에서 "가볍고 부드러운 맥스쿠션 안정화"로. IncrediLux ATPU 폼으로 RunRepeat 실측 무게는 272g(전작 25 실측 286g보다 14g 가벼움)이고, 안정화 카테고리에서 손꼽히게 가벼운 축입니다. 반응성도 실측으로 확인됩니다 — 에너지 리턴이 힐 67.2%·전족 76.2%로 로드화 평균(전족 61.5%)을 크게 웃돕니다.</p>
-
-<h2>발볼·부상 — 한국 러너가 궁금해할 것들</h2>
-<ul>
-  <li><strong>"발볼 넓은데 괜찮나요?"</strong> — 토박스가 표준이지만 <strong>와이드 옵션이 별도 품번(남성 S101102·여성 S101110)으로 한국 공식몰에서 판매</strong>됩니다</li>
-  <li><strong>"무릎 괜찮나요?"</strong> — 부상 예방 등급이 족저근막염·무릎 excellent(최상위)입니다. 맥스쿠션답게 충격 흡수가 뛰어납니다</li>
-  <li><strong>"여름에도 신을 수 있나요?"</strong> — 여름 호환성이 fair로 다소 아쉽습니다. 어퍼가 두꺼워 한여름에는 열감이 있다는 평이 있어, 겨울~봄 장거리 메인으로 두고 여름은 통기성 좋은 모델과 나누는 운용을 권합니다</li>
-</ul>
-
-<h2>25와 비교 — 가벼워진 대신 잠김감이 줄었다</h2>
-<p>전작 25와 비교하면 가벼워지고 쿠션이 부드러워지면서 지지 감각은 다소 느슨해졌습니다. 발목이 안으로 무너지는 것은 여전히 잡아주지만, 25의 꽉 잡히는 느낌을 기준으로 삼았다면 초기에는 어색할 수 있습니다. 대신 장거리에서 발 피로가 덜해 <strong>하프 이상 위주라면 26이, 과내전 제어 강도를 최우선으로 두면 공식몰에서 계속 판매 중인 25</strong>가 유리합니다.</p>
-
-<h2>가격 대비 가치</h2>
-<p>209,000원은 <a href="/shoes/asics-gel-kayano-32">카야노 32</a>와 비교 대상이 되는 프리미엄 가격대입니다. 예상 수명 550~750km(랩 실측 기반) 기준 km당 약 280~380원입니다. 확실히 잡아주는 감각이 최우선이면 한국 공식몰에서 정가 199,000원에 계속 판매 중인 허리케인 25도 여전히 유효한 선택입니다.</p>
-
-<h2>누구에게 맞을까</h2>
-<ul>
-  <li><strong>중간 이상 과내전 + 장거리 쿠션을 함께 원하는 러너</strong></li>
-  <li><strong>카야노급 플래그십 중 더 가볍고 새로운 쪽을 원하는 러너</strong></li>
-  <li>반대로 <strong>전작의 단단한 잠금감을 원하거나 통기성이 최우선</strong>이라면 25 재고나 다른 모델을 보세요</li>
-</ul>
-
-<h2>마무리</h2>
-<p>허리케인 26은 세대교체 폭이 큰 모델입니다. 신소재 도입으로 "가볍고 부드럽게"라는 방향을 확실히 잡았고, 그 대가로 이전 세대의 단단한 정체성 일부를 내줬습니다. 어느 쪽이 낫냐는 결국 지지 강도와 무게 중 무엇을 우선하느냐의 문제입니다.</p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>허리케인26은 새 폼만이 아니라 PWRRUN 프레임의 개입을 함께 봐야 합니다. Matt는 내측 웨지가 바깥쪽으로 유도하는 느낌을 분명하게 적었습니다. 이 개입이 본인에게 편한지는 시착 질문입니다.</p><p>낮은 발등과 앞코 테이퍼, 힐 고정을 확인하세요. 높은 스택·충격흡수 수치만으로 모든 과내전·평발이나 무릎 통증에 더 안전하다고 정할 수 없습니다.</p><figure><img src="/images/shoes/saucony/hurricane26/side.webp" alt="허리케인26 — 위층 폼과 내측 프레임의 개입을 함께 확인" loading="lazy"/><figcaption>허리케인26 — 위층 폼과 내측 프레임의 개입을 함께 확인</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-hurricane-26</td><td>272g</td><td>38.3/32.4mm · 5.9mm</td><td>145/132</td><td>67.2/76.2%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>272g이 같아도 같은 검체는 아닙니다</h2><p>RR272g은 일반 검체 정책과 개별 라벨 확인 수준을 구분한 실험실 값입니다. DOR Matt도272g을 적었지만 본인의 남성 US10 검체이고, 소개 US9 값은262g입니다. 같은 숫자를 이유로 동일 조건이라고 쓰지 않습니다.</p><p>Matt의70마일 주행은 개인 시험 거리입니다. 짧은 시험·국소 마모를 제품 수명으로 바꾸지 않았고, 전작이 계속 한국 공식몰에서199,000원에 판매된다는 과거 안내도 현재 판매 확인 없이 반복하지 않습니다.</p><h2>허리케인26 — 핏과 주행에서 갈리는 지점</h2><p>플레이트 없이 폼 프레임과 넓은 베이스·사이드월을 사용합니다. DOR Matt는 내측 힐·중족에서 올라오는 PWRRUN을 웨지 구조로 설명했으며 Guide19의 포스트 부재 설명을 그대로 대입하지 않습니다.</p><p>RR 내부 최광폭 95.3mm·엄지 72.2mm·높이 27.4mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 낮은 발등·앞코 테이퍼와 좋은 힐 고정, 로커의 반응성·내측 웨지가 만드는 바깥쪽 유도를 느꼈습니다. 실제 자신의 US10 무게는272g이고70마일은 개인 시험 거리입니다. Bach는 부드러운 탄성과 프레임을 느꼈지만 걷기는 좋아하지 않았습니다. Bach 실제 사이즈는 미확인입니다.</p><h2>허리케인26 — 공시·한국 판매 확인 범위</h2><p>DOR 소개 262g(남성 US9)/232g(여성 US8)·41/35mm·6mm, RR272g·38.3/32.4mm·5.9mm, Matt 실제US10 272g을 나눕니다. 같은272g이어도 동일 검체 조건이 아닙니다.</p><p>한국 공식 캐시: men S101098-1004 M(일반) 정가209,000원; men S101102-1003 W(와이드) 정가209,000원; women S101106-1009 None 정가209,000원; women S101110-1004 와이드 (상품명) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>RR 굽힘 본문17.2N·표17.4N의 상충을 보존합니다. 넓은 플랫폼·내측 유도 체감이 평발 교정·질환 보호를 입증하지 않습니다. 70마일 경험과 국소 마모를600km 수명으로 환산하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.saucony.co.kr/product/detail.html?cate_no=57&amp;display_group=1&amp;product_no=535" target="_blank" rel="noopener noreferrer">kr-hurricane26-m</a> — original_opened_cached_web; 남성 S101098-1004 TRIPLE BLACK M(일반),209000,250–300.</li><li><a href="https://saucony.co.kr/product/%EB%82%A8%EC%84%B1-%ED%97%88%EB%A6%AC%EC%BC%80%EC%9D%B8-26-%EC%99%80%EC%9D%B4%EB%93%9C-triple-black/533/category/44/display/1/" target="_blank" rel="noopener noreferrer">kr-hurricane26-mw</a> — indexed_original_body_after_timeout; 남성 S101102-1003 TRIPLE BLACK W(와이드),209000,250–300.</li><li><a href="https://saucony.co.kr/product/list.html?cate_no=111" target="_blank" rel="noopener noreferrer">kr-hurricane26-womenlist</a> — original_opened_cached_web; 여성 일반 TRIPLE BLACK S101106-1009·와이드 TRIPLE BLACK S101110-1004,209000. 개별상품 열기 Cache miss.</li><li><a href="https://runrepeat.com/saucony-hurricane-26" target="_blank" rel="noopener noreferrer">허리케인26 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-hurricane-26-review-2026/" target="_blank" rel="noopener noreferrer">허리케인26 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
     faqs: [
       {
-        question: '허리케인 25와 26, 뭘 사야 하나요?',
-        answer:
-          '과내전 제어 강도를 최우선으로 둔다면 25(공식몰 정가 199,000원 판매 중), 장거리 편안함과 가벼움을 우선하면 26입니다. 25는 잠기는 감각이 강하고, 26은 가볍고 부드럽습니다.',
+        "question": "카야노보다 더 교정하나요?",
+        "answer": "교정력이나 질환별 임상 우위를 확인하지 못했습니다. 프레임 개입과 실제 착화의 편안함을 확인할 수 있습니다."
       },
       {
-        question: '여름에 신어도 되나요?',
-        answer:
-          '가능하지만 최적은 아닙니다. 여름 호환성이 fair로 평가돼 있고 어퍼가 두꺼워 열감이 있다는 평이 있습니다. 겨울~봄 장거리 메인으로 쓰고 여름엔 통기성 좋은 다른 모델을 병행하는 것을 권합니다.',
+        "question": "실측272g인가요262g인가요?",
+        "answer": "RR 검체272g, DOR 소개 남성US9 262g, Matt 실제US10 272g을 각각 구분합니다."
       },
+      {
+        "question": "굽힘17.2N인가요17.4N인가요?",
+        "answer": "RR 같은 원문의 본문17.2N·표17.4N이 상충합니다. 한 값을 임의로 정답으로 만들지 않았습니다."
+      }
     ],
+    updatedAt: "2026-11-10",
   },
   {
     id: "saucony-triumph-23-review",

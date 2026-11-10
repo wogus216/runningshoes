@@ -178,95 +178,38 @@ export const posts_2026_10: BlogPost[] = [
 `,
   },
   {
-    id: 'saucony-endorphin-speed-6-first-review',
-    slug: 'saucony-endorphin-speed-6-first-review',
-    title: '사코니 엔돌핀 스피드 6 첫 리뷰 | 232g·38/30mm, 5세대보다 단단하고 빠르다 — 한국 출시는 아직',
-    description: '엔돌핀 스피드 6의 첫 독립 리뷰(Doctors of Running, 9월 25일)를 정리했습니다. 폼은 PWRRUN PBX, 스택 38/30mm·드롭 8mm·232g(남성 US 9), 미국 $179.95. 물렁했던 5세대보다 단단하고 반응이 빠르다는 평가와 아웃솔 내구성 우려, 한국 정가·출시일 미발표 상태를 근거와 함께 적었습니다.',
-    thumbnail: '/images/blog/saucony-endorphin-speed-6-first-review.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-30',
-    category: 'news' as const,
-    readingTime: 5,
-    tags: ['엔돌핀 스피드 6', '사코니 신상', 'PWRRUN PBX', '나일론 플레이트', '템포 러닝화', '엔돌핀 스피드 5', '러닝화 신상'],
+    id: "saucony-endorphin-speed-6-first-review",
+    slug: "saucony-endorphin-speed-6-first-review",
+    title: "엔돌핀 스피드6 첫 리뷰 —232g 소개값·나일론 날개, 착화 의견과 미확인 랩 구분",
+    description: "DOR Matt·Bach의 다른 핏·주행·마모 경험을 정리합니다. 232g·38/30mm는 공시 소개이며 정확 RR 랩·한국 출시·현재 가격은 미확인입니다.",
+    thumbnail: "/images/blog/saucony-endorphin-speed-6-first-review.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-10-30",
+    category: "news",
+    readingTime: 8,
+    tags: [
+      "스피드6",
+      "원문 대조",
+      "핏"
+    ],
     faqs: [
-      { question: '엔돌핀 스피드 6은 한국에서 살 수 있나요?', answer: '확인되지 않습니다. 2026년 10월 20일과 26일 사코니코리아 공식몰 엔돌핀 목록과 검색에는 스피드 5만 있었고 6은 없었습니다. 한국 정가와 출시일은 공식 발표가 없습니다. 참고로 5세대 한국 정가는 219,000원입니다.' },
-      { question: '5세대와 무엇이 달라졌나요?', answer: '글로벌 출시는 10월 15일이고 폼이 PWRRUN PB에서 PWRRUN PBX(비즈 PEBA)로 바뀌었습니다. Doctors of Running은 미드솔 스택이 2mm 높아졌고 폼이 더 단단해졌으며 플레이트와 SpeedRoll이 재설계됐다고 적었습니다. 리뷰어는 5세대의 물렁한 느낌에서 더 단단하고 빠른 쪽으로 바뀐 큰 변화라고 평가했습니다.' },
-      { question: '5K 이하 전력 질주용인가요?', answer: '아닙니다. 리뷰어 Matt Klein은 업템포와 빠른 러닝에 가장 잘 맞지만 5K 이하의 전력 질주에는 다소 뻣뻣하다고 했습니다. 공동 리뷰어 Bach Pham은 장거리 훈련과 마라톤까지의 레이스용으로 꼽았습니다.' },
-      { question: '지금 5세대를 사도 되나요?', answer: '한국에서 지금 살 수 있는 것은 5세대이고, 6세대는 한국 판매와 랩 실측이 모두 없어 비교가 불가능합니다. 5세대는 RunRepeat 랩 검증이 끝나 있습니다. 6세대는 한국 정가와 랩 수치가 공개된 뒤 비교하는 쪽이 순서에 맞습니다.' },
+      {
+        "question": "232g은 실측인가요?",
+        "answer": "DOR 소개 공시이며 측정 여부는 미확인입니다. 정확6 독립 랩으로 표시하지 않습니다."
+      },
+      {
+        "question": "바깥 날개가 없어졌나요?",
+        "answer": "정확6 DOR은 안쪽·바깥쪽 나일론 날개를 설명합니다. 제거됐다는 소매 설명을 새 변화로 확정하지 않습니다."
+      },
+      {
+        "question": "한국에 아직 안 나왔나요?",
+        "answer": "정확 한국 상품 원문을 확보하지 못했습니다. 한국 미출시·단종을 확정하지 않습니다."
+      }
     ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>첫 독립 리뷰가 나왔습니다.</strong> Doctors of Running이 9월 25일 게시한 평가에서 6세대는 5세대의 "물렁한" 느낌보다 단단하고 반응이 빠른 신발로 정리됩니다. 폼은 PWRRUN PBX, 스펙표 기준 232g(남성 US 9)·스택 38/30mm·드롭 8mm입니다</li>
-    <li><strong>우려는 아웃솔입니다.</strong> 리뷰어 한 명은 35마일에서 마모가 보이고 뒤꿈치 고무가 떨어질까 걱정된다고 했고, 다른 한 명은 20마일에 큰 마모가 없었지만 뒤꿈치가 얇다고 적었습니다</li>
-    <li><strong>한국 출시는 아직 확인되지 않습니다.</strong> 미국 가격은 $179.95이고, 사코니코리아 공식몰에서는 10월 26일까지 6세대가 보이지 않았습니다</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🧪</span>
-  <div class="callout-body">
-    <p class="callout-title">아직 "측정값"은 아닙니다</p>
-    <p>이 리뷰의 232g·38/30mm가 직접 측정한 수치인지 브랜드 표기인지는 리뷰에 밝혀져 있지 않습니다. RunRepeat 랩 페이지와 Believe in the Run 리뷰는 10월 30일 기준 열리지 않았습니다. 이 글의 수치는 리뷰 1건의 스펙표라는 점을 먼저 전제합니다.</p>
-  </div>
-</div>
-
-<h2>스펙표에 적힌 것</h2>
-
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>엔돌핀 스피드 6</th><th>출처</th></tr></thead>
-  <tbody>
-    <tr><td>무게</td><td>232g(남성 US 9) · 203g(여성 US 8)</td><td>Doctors of Running 스펙표</td></tr>
-    <tr><td>스택·드롭</td><td>힐 38mm / 포어풋 30mm · 드롭 8mm</td><td>같은 스펙표</td></tr>
-    <tr><td>폼</td><td>PWRRUN PBX (비즈 PEBA)</td><td>같은 리뷰</td></tr>
-    <tr><td>플레이트</td><td>재설계된 나일론 플레이트 + 새 SpeedRoll</td><td>같은 리뷰</td></tr>
-    <tr><td>가격·출시</td><td>미국 $179.95 · 2026-10-15</td><td>Running Warehouse 표기(같은 리뷰)</td></tr>
-  </tbody>
-</table>
-</div>
-
-<p>사이트 DB는 이 모델을 한동안 독립 검증이 없는 잠정치로 다뤘고, 무게는 소매점에 따라 195g·222g으로 엇갈렸습니다. 이번 스펙표의 232g은 그 두 값보다 무겁습니다. 5세대는 브랜드 표기 237g, 랩 실측 241g이었으므로 6세대는 5세대보다 5~9g 가벼운 정도로 읽을 수 있습니다. 다만 6세대 수치가 측정값인지가 불명이라 이 비교는 잠정입니다.</p>
-
-<h2>리뷰어가 말한 것 — 단단하고 빠르다</h2>
-<p>두 리뷰어의 평가는 같은 방향입니다. 폼은 5세대보다 "약간 단단하지만 반응이 아주 좋다"고 했고, Matt Klein은 속도를 올릴수록 반발이 더 느껴진다며 5세대의 물렁한 느낌에서 단단하고 빠른 6세대로의 변화를 "엄청난 업데이트"라고 불렀습니다. Bach Pham은 처음엔 단단하지만 몇 분 달리면 풀리고, 무디거나 처지지 않는다고 적었습니다.</p>
-
-<div class="table-wrap">
-<table>
-  <thead><tr><th>용도</th><th>Matt Klein</th><th>Bach Pham</th></tr></thead>
-  <tbody>
-    <tr><td>가장 잘 맞는 페이스</td><td>업템포와 빠른 러닝, 5K 이하 전력질주는 다소 뻣뻣</td><td>장거리 훈련, 마라톤까지의 레이스, 약간 빠른 훈련</td></tr>
-    <tr><td>안정성</td><td>중족부 유도가 있는 안정적인 중립</td><td>SpeedRoll이 몸을 중심에 놓고 앞으로 유도</td></tr>
-    <tr><td>핏</td><td>토박스 테이퍼와 토 가드로 처음엔 짧게 느껴졌다가 약 10마일 뒤 풀림</td><td>표준 사이즈에서 여유 있는 트레이너 핏</td></tr>
-  </tbody>
-</table>
-</div>
-
-<p>어퍼는 앞발이 비칠 만큼 가벼운 메시라 통기성이 좋지만, 안쪽이 약간 거칠어 맨발 착용은 권하지 않았습니다. 이전 모델과의 비교로 Matt는 카본 플레이트의 <a href="/shoes/saucony-endorphin-pro-5">엔돌핀 프로 5</a>보다 이 신발을 고르겠다고 했고, Bach는 6세대가 스피드 3에 더 가깝다고 했습니다.</p>
-
-<h2>우려 — 아웃솔과 플레이트 서술의 충돌</h2>
-<p>내구성은 체크리스트에서 "보통"입니다. Matt는 35마일 시점에 아웃솔에 마모가 시작됐고 뒤꿈치 고무가 떨어질까 걱정된다고 했고, Bach는 20마일에는 큰 마모가 없었지만 이번 판은 뒤꿈치가 얇다고 적었습니다. 두 사람 모두 짧은 거리의 인상이라 수명으로 읽을 수는 없습니다.</p>
-<p>플레이트도 정리가 안 됩니다. 브랜드와 소매점 설명은 "바깥쪽 날개를 없앴다"고 하지만 Matt는 리뷰에서 플레이트에 안쪽과 바깥쪽 날개가 여전히 있어 좌우 강성을 더한다고 적었습니다. 어느 쪽이 맞는지는 분해·실측 자료가 나와야 가려지고, 이 사이트 DB는 이 충돌을 그대로 기록했습니다.</p>
-
-<div class="callout warning">
-  <span class="callout-icon">⚠️</span>
-  <div class="callout-body">
-    <p class="callout-title">한국 구매는 아직 기다려야 합니다</p>
-    <p>사코니코리아 공식몰 엔돌핀 목록과 검색에서 6세대는 10월 20일과 26일 모두 보이지 않았고(대조군으로 스피드 5와 엘리트 3은 노출), 한국 정가·출시일 공식 발표도 찾지 못했습니다. 지금 한국에서 살 수 있는 쪽은 <a href="/shoes/saucony-endorphin-speed-5">엔돌핀 스피드 5</a>(219,000원)입니다. 6세대 DB 페이지는 <a href="/shoes/saucony-endorphin-speed-6">여기</a>입니다.</p>
-  </div>
-</div>
-
-<div class="faq">
-  <h2>자주 묻는 질문</h2>
-  <details><summary>엔돌핀 스피드 6은 한국에서 살 수 있나요?</summary><p>확인되지 않습니다. 10월 20일과 26일 사코니코리아 공식몰에서 6세대는 보이지 않았고 한국 정가·출시일 공식 발표도 없습니다. 5세대 한국 정가는 219,000원입니다.</p></details>
-  <details><summary>5세대와 무엇이 달라졌나요?</summary><p>폼이 PWRRUN PB에서 PBX로 바뀌었고 미드솔 스택이 2mm 높아졌으며, 리뷰어는 물렁한 5세대에서 더 단단하고 빠른 쪽으로 바뀐 큰 변화라고 평가했습니다.</p></details>
-  <details><summary>5K 이하 전력 질주용인가요?</summary><p>아닙니다. Matt Klein은 업템포와 빠른 러닝에 가장 잘 맞고 5K 이하 전력 질주에는 다소 뻣뻣하다고 했습니다.</p></details>
-  <details><summary>지금 5세대를 사도 되나요?</summary><p>한국에서 살 수 있는 것은 5세대뿐이고 랩 검증도 끝나 있습니다. 6세대는 한국 판매와 랩 실측이 모두 없어 지금은 비교가 불가능합니다.</p></details>
-</div>
-
-<p><small>출처: Doctors of Running "Saucony Endorphin Speed 6 Review (2026)"(Matt Klein·Bach Pham, 2026-09-25, 2026-10-30 확인), 사코니코리아 공식몰 엔돌핀 목록(2026-10-20·26 확인). RunRepeat·Believe in the Run 해당 페이지는 2026-10-30 기준 404.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>현재 확인한 것은 DOR의 정확6 착화 의견과 소개 공시입니다. 232g·38/30mm·8mm를 절단 실측이라고 부르지 않습니다. 폼은 PWRRUN PBX 비즈 PEBA, 플레이트는 나일론 날개 구조로 설명됩니다.</p><p>초기 밀착감·강성을 느낀 Matt와 편한 트레이너 핏·구름을 좋아한 Bach의 의견은 다릅니다. 모두가 더 단단하고 빠르게 느꼈다고 묶기보다 실제 앞코·힐 고정을 확인하는 재료로 읽을 수 있습니다.</p><figure><img src="/images/blog/saucony-endorphin-speed-6-first-review.webp" alt="기존 스피드6 소개 이미지 — 독립 실물 검체 사진으로 검증하지 않았습니다." loading="lazy"/><figcaption>기존 스피드6 소개 이미지 — 독립 실물 검체 사진으로 검증하지 않았습니다.</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-endorphin-speed-6</td><td>232g (DOR 소개)</td><td>38/30mm · 8mm (DOR 소개)</td><td>미확인/미확인</td><td>미확인/미확인%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>35마일에서 보인 마모는 파손 확정이 아닙니다</h2><p>Matt는35마일 시점에 마모를 보고 힐 고무를 걱정했지만 실제 떨어졌다고 확인한 것은 아닙니다. Bach는20마일에서 유의한 마모를 보지 못했습니다. 다른 사용자·거리·노면이어서 이를450~550km 수명으로 계산하지 않습니다.</p><p>미국 소매 링크의10월15일 공급 안내로 한국 출시일·가격을 정하지 않습니다. 한국 정확 상품을 찾지 못한 상태는 미출시 확정과 다릅니다. 5세대 저온값을6세대 시험처럼 쓰지도 않습니다.</p><h2>스피드6 — 핏과 주행에서 갈리는 지점</h2><p>정확6의 DOR은 안쪽·바깥쪽 날개가 있는 나일론 플레이트를 설명합니다. 바깥 날개 제거가 새 변화라는 기존 소매 설명은 이번 원문으로 확정하지 않습니다.</p><p>정확6 독립 랩 내부 치수는 미확인입니다. 실제 규격에서 앞코 테이퍼·높이·힐 고정을 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10/EU44/JP28)는 초기 앞코 테이퍼·토가드가 밀착되고 뻣뻣했으나 주행 뒤 정사이즈에 가까워졌으며 빠른 움직임의 반응을 좋아했습니다.35마일에서 마모를 보았지만 힐 고무 파손은 예상 우려입니다. Bach는 편한 트레이너 핏과 구름을 좋아했지만 급내리막에서 조금 흔들렸고20마일에서 큰 마모는 없었습니다. Bach 실제 사이즈는 미확인입니다.</p><h2>스피드6 — 공시·한국 판매 확인 범위</h2><p>232g(남성 US9)/203g(여성 US8)·38/30mm·8mm는 DOR 소개 공시이며 독립 절단 실측이 아닙니다. 정확6 RR 자료는 미확인으로5세대 값을 대입하지 않습니다.</p><p>한국 공식 캐시: 정확6의 한국 상품 원문 미확인. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>미국 소매 링크의2026-10-15 공급 안내는 한국 출시일이 아닙니다. DOR의 개인 마모 차이를500km 수명으로 환산하지 않습니다. 새 폼의 저온 랩이 미확인이므로 겨울 개선·악화와 임상 등급을 추정하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://www.doctorsofrunning.com/saucony-endorphin-speed-6-review/" target="_blank" rel="noopener noreferrer">스피드6 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
   },
   {
     id: 'puma-foreverrun-nitro-3-review-korea-price',
@@ -631,99 +574,38 @@ export const posts_2026_10: BlogPost[] = [
 `,
   },
   {
-    id: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
-    slug: 'hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026',
-    title: '호카 본디 9 vs 써코니 트라이엄프 24 | 같은 41mm 맥스쿠션, 2만 원 싸고 가벼운 쪽은 — 평발·발볼·무릎별 선택',
-    description: '힐 스택이 41mm대로 거의 같은 두 맥스쿠션화를 가격·무게·충격흡수·에너지 리턴·발볼·안정성으로 비교했습니다. 본디 9(229,000원·303g·에너지 리턴 힐 60.2%)와 트라이엄프 24(209,000원·실측 258g·에너지 리턴 힐 72.0%) — 스택은 같고 폼이 다릅니다. 평발·안정 우선이면 본디 9, 가볍고 되돌려주는 맥스쿠션이면 트라이엄프 24. 한국 러너의 발볼·와이드 선택지까지 정리했습니다.',
-    thumbnail: '/images/blog/hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-10-24',
-    category: 'review' as const,
+    id: "hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026",
+    slug: "hoka-bondi-9-vs-saucony-triumph-24-max-cushion-2026",
+    title: "본디9 vs 트라이엄프24 — 같은41mm대여도 앞코 높이·로커·폼은 다르다",
+    description: "본디303g/트라이엄프258g 검체와 실제 앞코·드롭을 비교합니다. 2만원 현재가 차이·평발별 안전 추천·무릎 보호 최상급 단정을 정정했습니다.",
+    thumbnail: "/images/shoes/saucony/triumph24/side.jpg",
+    author: "산초 에디터",
+    publishedAt: "2026-10-24",
+    category: "review",
     readingTime: 8,
-    tags: ['호카 본디 9', '써코니 트라이엄프 24', '맥스쿠션', '쿠션화', '신발 비교', '무릎 보호', '평발', 'incrediLUX'],
+    tags: [
+      "트라이엄프24",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>두 신발의 힐 스택은 41mm대로 거의 같습니다.</strong> 그런데 정가는 본디 9 229,000원 vs 트라이엄프 24 209,000원(2만 원 차이), 무게는 303g vs 실측 258g입니다. 같은 높이를 서로 다른 폼으로 쌓았다는 게 이 비교의 핵심이에요</li>
-    <li><strong>폼이 눌렸다 돌아오는 비율(에너지 리턴)은 본디 9 힐 60.2%, 트라이엄프 24 힐 72.0%.</strong> 충격을 흡수하는 정도(SA, 클수록 많이 흡수)는 146 vs 152로 둘 다 로드화 평균 131 위입니다</li>
-    <li><strong>평발이거나 발이 흔들리는 게 걱정이면 넓은 베이스의 본디 9, 아니면 더 싸고 가벼운 트라이엄프 24.</strong> 기본 폭은 둘 다 평균보다 좁아 발볼이 넓다면 와이드부터 확인하세요</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">🥊</span>
-  <div class="callout-body">
-    <p class="callout-title">한 줄 결론 — 안정성을 사느냐, 가벼움을 사느냐</p>
-    <p><strong>발이 안쪽으로 무너지거나 평발이라 안정감이 우선이다 → 본디 9.</strong> <strong>정상 아치에 푹신하되 덜 무거운 맥스쿠션을 2만 원 싸게 원한다 → 트라이엄프 24.</strong> 둘 다 무릎·아킬레스 보호 평가는 최상급(excellent)이라, 갈림길은 보호 수준이 아니라 발 모양과 무게입니다. 단독 후기는 <a href="/blog/hoka-bondi-9-review">본디 9 후기</a>와 <a href="/blog/saucony-triumph-24-review">트라이엄프 24 리뷰</a>에 있고, 무릎 보호 관점의 종합 정리는 <a href="/blog/max-cushion-running-shoes-knee-protection-2026">무릎 보호 맥스쿠션 가이드</a>에 있습니다.</p>
-  </div>
-</div>
-
-<h2>두 켤레 한눈에 보기</h2>
-<p>먼저 짚을 점이 있습니다. 아래 표의 스택·충격흡수·에너지 리턴·발볼 폭은 RunRepeat 랩 실측이고, 무게와 가격은 출처가 다릅니다 — 트라이엄프 24의 258g은 랩 실측(브랜드 표기 250g)이고 본디 9의 303g은 사이트 DB 표기(남성 US 9)라, 무게 차이는 정확히 45g이 아니라 <strong>40g 안팎</strong>으로 읽는 게 안전합니다.</p>
-<div class="table-wrap">
-<table>
-  <thead><tr><th>항목</th><th>호카 본디 9</th><th>써코니 트라이엄프 24</th></tr></thead>
-  <tbody>
-    <tr><td>가격(정가)</td><td>229,000원</td><td><strong>209,000원</strong> (−2만)</td></tr>
-    <tr><td>무게</td><td>303g (DB 표기)</td><td><strong>258g</strong> (랩 실측)</td></tr>
-    <tr><td>힐 / 포어풋 스택</td><td>41 / 32mm</td><td>41.6 / 33.6mm (실측)</td></tr>
-    <tr><td>드롭</td><td>9mm (실측 9.1mm)</td><td>8.0mm (실측, 브랜드 표기 10mm)</td></tr>
-    <tr><td>미드솔</td><td>Supercritical EVA</td><td>incrediLUX (초임계 A-TPU)</td></tr>
-    <tr><td>플레이트</td><td>없음</td><td>없음</td></tr>
-    <tr><td>충격흡수 SA (힐)</td><td>146</td><td><strong>152</strong> (로드화 평균 131)</td></tr>
-    <tr><td>에너지 리턴 (힐 / 전족부)</td><td>60.2% / 60.3%</td><td><strong>72.0% / 78.5%</strong> (전족부 평균 61.5%)</td></tr>
-    <tr><td>안정성</td><td><strong>8</strong> (플랫폼 123.2mm)</td><td>6 (중립, 지지 구조 없음)</td></tr>
-    <tr><td>토박스 폭</td><td>72.5mm</td><td>71.4mm (RunRepeat 평균 73.2mm)</td></tr>
-    <tr><td>평발 호환</td><td><strong>excellent</strong></td><td>fair</td></tr>
-    <tr><td>정강이 부담 완화</td><td>excellent</td><td>good</td></tr>
-  </tbody>
-</table>
-</div>
-<p><small>데이터 출처: 사이트 신발 DB(RunRepeat 랩 실측·브랜드 공식 스펙) · 트라이엄프 24 정가는 2026-10-20 써코니코리아 공식몰 확인, 본디 9 정가는 DB 기준(이번에 재확인하지 않음). 내구성은 두 신발 모두 추정치라 표에서 뺐습니다.</small></p>
-
-<h2>호카 본디 9 — 넓은 바닥으로 받치는 안정형</h2>
-<p><a href="/shoes/hoka-bondi-9">본디 9</a>의 성격은 폼보다 <strong>바닥 면적</strong>에서 나옵니다. DB 기준 플랫폼이 123.2mm로 넓어 착지할 때 좌우 흔들림이 적고, 그래서 안정성 8·평발 호환 excellent 평가를 받습니다. Supercritical EVA는 SA 146으로 충격을 충분히 흡수하지만, 에너지 리턴은 힐 60.2%·전족부 60.3%로 전족부 평균(61.5%)과 비슷한 수준입니다. 푹신하게 받아주되 되돌려주는 힘은 평범하다는 뜻이에요. 6:00~8:00/km의 느린 페이스, 회복주와 장시간 서 있는 날에 어울립니다.</p>
-<p>약점은 무게와 폭입니다. 303g은 이 비교에서 무거운 쪽이고, 토박스 72.5mm는 평균 73.2mm보다 0.7mm 좁습니다. 와이드 모델이 있지만 국내 재고는 구매 전에 공식 스토어에서 확인해야 합니다(이번 조사에서 재고는 확인하지 못했습니다).</p>
-<p><strong>✅ 이런 분께</strong> — 평발이거나 착지 때 발이 안쪽으로 무너지는 러너, 안정감을 우선하는 러너, 느린 페이스로 거리를 쌓는 러너.</p>
-
-<h2>써코니 트라이엄프 24 — 폼을 바꿔 가볍게 만든 중립형</h2>
-<p><a href="/shoes/saucony-triumph-24">트라이엄프 24</a>의 핵심은 미드솔 교체입니다. 전작의 PWRRUN+ 대신 초임계 A-TPU 계열 incrediLUX를 써서 실측 힐 스택 41.6mm를 258g에 묶었습니다. 충격흡수는 SA 152로 본디 9보다 6 높고, 에너지 리턴은 힐 72.0%·전족부 78.5%로 본디 9보다 12~18%p 높습니다. 같은 높이의 맥스쿠션인데 <strong>푹신함은 같거나 더 크고, 되돌려주는 힘과 가벼움에서 앞선다</strong>는 게 숫자가 보여주는 그림입니다. 정가도 209,000원으로 2만 원 쌉니다.</p>
-<p>다만 되돌려주는 힘이 크다고 템포용이라는 뜻은 아닙니다. 플레이트 없는 258g 맥스쿠션이라 빠른 훈련에는 더 가벼운 트레이너가 맞고, 이 신발의 자리는 이지런·장거리·회복주입니다. 안정성은 6으로 지지 구조가 없는 순수 중립이라 평발 호환은 fair입니다. 토박스는 71.4mm로 랩이 "snug"(꽉 끼는 편)이라 평가했고, 국내 공식몰은 16개 컬러웨이 중 8개가 와이드입니다(2026-10-20 확인). 접지력(CoF 0.86)과 아웃솔 마모(0.6mm, 평균 1.1mm)도 실측에서 양호했습니다.</p>
-<p><strong>✅ 이런 분께</strong> — 정상 아치의 중립 러너, 뒤꿈치 착지가 강한 러너(실측 드롭 8.0mm), 더 가볍고 반응 좋은 맥스쿠션을 싸게 원하는 러너, 발볼이 넓어 와이드 선택지가 필요한 러너.</p>
-
-<h2>내게 맞는 건? — 상황별 정리</h2>
-<ul>
-  <li><strong>평발이다 / 발이 안쪽으로 무너진다</strong> → <a href="/shoes/hoka-bondi-9">본디 9</a>. 넓은 베이스와 평발 호환 excellent가 근거입니다. 과내전 지지가 확실히 필요하면 두 신발 모두 정답이 아니고, 같은 브랜드의 지지형인 <a href="/shoes/saucony-hurricane-26">허리케인 26</a>을 보세요</li>
-  <li><strong>정상 아치, 가벼운 맥스쿠션을 원한다</strong> → <a href="/shoes/saucony-triumph-24">트라이엄프 24</a>. 무게와 가격 모두 앞섭니다</li>
-  <li><strong>발볼이 넓다</strong> → 국내 와이드 컬러웨이가 확인된(16개 중 8개) 트라이엄프 24가 선택지를 확인하기 쉽고, 본디 9는 와이드 재고를 먼저 확인하세요</li>
-  <li><strong>정강이 부담이 걱정이다</strong> → 본디 9(excellent)가 한 등급 위입니다. 무릎은 둘 다 excellent</li>
-  <li><strong>1만 원이라도 더 아끼고 싶다</strong> → 정가 199,000원인 <a href="/shoes/saucony-triumph-23">트라이엄프 23</a>이 있습니다(2026-10-20 공식몰 기준). 비교는 <a href="/blog/saucony-triumph-23-review">트라이엄프 23 후기</a>에서 다뤘습니다</li>
-  <li><strong>본디 9를 다른 맥스쿠션과 견주고 싶다</strong> → <a href="/blog/bondi-9-vs-glycerin-max-2-cushion-2026">본디 9 vs 글리세린 맥스 2</a>, <a href="/blog/hoka-bondi-9-vs-asics-nimbus-28">본디 9 vs 님버스 28</a></li>
-</ul>
-
-<h2>자주 묻는 질문</h2>
-<div class="faq">
-  <div class="faq-item">
-    <p class="faq-q">Q. 무릎이 안 좋은데 둘 중 어느 쪽이 낫나요?</p>
-    <p class="faq-a">A. 사이트 DB 평가로는 무릎 보호가 둘 다 excellent라 우열이 없습니다. 충격흡수 수치도 SA 146 vs 152로 둘 다 평균(131) 위입니다. 갈리는 건 발 모양이라, 발이 흔들려서 무릎이 불편한 경우라면 넓은 베이스의 본디 9가 유리할 수 있습니다. 신발은 충격의 크기를 줄일 뿐 통증을 없애주지는 않으니, 통증이 반복되면 전문의 진단이 먼저입니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 발볼이 넓은 편인데 사이즈는 어떻게 고르나요?</p>
-    <p class="faq-a">A. 토박스는 본디 9 72.5mm, 트라이엄프 24 71.4mm로 둘 다 RunRepeat 평균(73.2mm)보다 좁습니다. 차이는 1.1mm뿐이라 기본 폭은 비슷하다고 보고, 와이드 선택지로 판단하세요. 트라이엄프 24는 국내 공식몰에서 16개 컬러웨이 중 8개가 와이드로 확인됐고, 본디 9는 와이드 재고를 구매 전에 확인해야 합니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 에너지 리턴이 높으면 빨리 달리기 좋은 신발인가요?</p>
-    <p class="faq-a">A. 아닙니다. 에너지 리턴은 폼이 눌렸다 돌아오는 비율이라 같은 높이의 신발끼리 푹신함의 성격을 비교할 때 쓰는 값입니다. 트라이엄프 24도 플레이트 없는 258g 맥스쿠션이라 템포·인터벌에는 더 가벼운 트레이너가 맞고, 두 신발 모두 이지런·장거리·회복주용으로 보는 게 맞습니다.</p>
-  </div>
-  <div class="faq-item">
-    <p class="faq-q">Q. 오래 신으면 어느 쪽이 더 버티나요?</p>
-    <p class="faq-a">A. 이 사이트는 자체 마모 테스트를 하지 않고, 두 신발의 수명도 추정치라 몇 km라고 단정하지 않겠습니다. 확인된 건 트라이엄프 24의 RunRepeat 아웃솔 마모 0.6mm(평균 1.1mm)뿐이고, 본디 9는 같은 기준의 마모 수치를 확보하지 못했습니다(불명).</p>
-  </div>
-</div>
-
-<p><small>출처: 사이트 신발 DB(RunRepeat 랩 실측·브랜드 공식 스펙) · 트라이엄프 24 가격·와이드 컬러웨이는 써코니코리아 공식몰 2026-10-20 확인 · 작성 2026년 10월 24일.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>RR 힐 스택은 본디41.3mm·트라이엄프41.6mm로 가깝지만 앞발 높이·실측 드롭·폼 경도는 다릅니다. 같은 두께라 같은 착화감을 준다고 볼 수 없습니다.</p><p>기존 평발이면 본디·정상 아치면 트라이엄프라는 선택표와 두 모델 모두 무릎·아킬레스 보호 최상급이라는 설명을 철회했습니다. 확인한 구조·검체는 임상 보호 효과가 아닙니다.</p><figure><img src="/images/shoes/saucony/triumph24/side.jpg" alt="트라이엄프24 — 본디9과 앞코 높이·폼·전환을 비교" loading="lazy"/><figcaption>트라이엄프24 — 본디9과 앞코 높이·폼·전환을 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-triumph-24</td><td>258g</td><td>41.6/33.6mm · 8mm</td><td>152/138</td><td>72/78.5%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>본디9에서 확인할 별도 조건</h2><p>11월9일 확인한 본디9 RR 검체는303g·41.3/32.2mm·드롭9.1mm입니다. 힐/전족SA146/133, 리턴60.2/60.3%, 경도43AC이며 공시43/38mm·5mm와 구분합니다. 트라이엄프24의 높은 리턴이 개인 무릎 보호·장거리 편안함 우위를 뜻하지 않습니다.</p><p>본디9의 내부 최광폭94.1mm·엄지72.5mm·높이29.6mm와 트라이엄프24의93.4/71.4/26.1mm는 실제 표준 검체 수치입니다. 한국 현재 와이드와 모든 사이즈의 적합성을 보장하지 않습니다. 본디9 한국 현재 가격은 정확 상품을 확보하지 못해 미확인입니다.</p><p><a href="https://runrepeat.com/hoka-bondi-9" target="_blank" rel="noopener noreferrer">본디9 RR 원문</a> · <a href="https://www.doctorsofrunning.com/hoka-bondi-9-review-2025/" target="_blank" rel="noopener noreferrer">본디9 DOR 원문</a></p><h2>현재2만원 차이는 확인되지 않았습니다</h2><p>본디의 현재 한국 공식 상품 가격은 미확인이고 트라이엄프는209,000원 정가 캐시입니다. 이를 같은 시점 구매가로 묶어2만원 차이로 고정하지 않습니다. 넓은 발이라면 한국 실제 폭 규격과 발등·발가락 위 높이까지 확인하세요.</p><h2>트라이엄프24 — 핏과 주행에서 갈리는 지점</h2><p>한국 공식의 carbon rubber는 밑창 고무 설명으로 카본 플레이트 증거가 아닙니다. 정확 원문의 별도 플레이트 존재·재료는 미확인입니다.</p><p>RR 내부 최광폭 93.4mm·엄지 71.4mm·높이 26.1mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 힐/중족과 조금 넓은 앞발·좋은 고정을 적었습니다. 아주 부드럽지만 로커와 넓은 바닥 덕분에 본인 달리기에는 불안정 문제가 없었고 걷기·서기는 부드러움 선호에 따라 갈릴 수 있다고 했습니다.</p><h2>트라이엄프24 — 공시·한국 판매 확인 범위</h2><p>DOR 소개250g(남성 US9)/216g(여성 US8)·43/33mm·10mm와 RR258g·41.6/33.6mm·8mm를 구분합니다.</p><p>한국 공식 캐시: men S100997-1017 M(일반) 정가209,000원·할인캐시188,100원; men S101894-1003 W(와이드) 정가209,000원; women S100994-1002 W(와이드) 정가209,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.</p><p>David의 여유 있는 앞발·아주 부드러운 체감과 RR 내부93.4/71.4mm·37.5AC는 다른 조건입니다. 저온 경도 변화7%를 겨울 보호 보장으로 해석하지 않습니다. 11%폼 증량·모든 사이즈 감량·650km·질환별 우위 단정을 이번 원문으로 갱신하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=129&amp;display_group=1&amp;product_no=418" target="_blank" rel="noopener noreferrer">kr-triumph24-m</a> — original_opened_cached_web; 남성 S100997-1017 TRIPLE BLACK M(일반),209000/할인188100,250–300.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=129&amp;display_group=1&amp;product_no=502" target="_blank" rel="noopener noreferrer">kr-triumph24-mw</a> — original_opened_cached_web; 남성 S101894-1003 TRIPLE BLACK W(와이드),209000,250–300.</li><li><a href="https://saucony.co.kr/product/detail.html?cate_no=45&amp;display_group=1&amp;product_no=407" target="_blank" rel="noopener noreferrer">kr-triumph24-ww</a> — original_opened_cached_web; 여성 S100994-1002 FOG/ICE MELT W(와이드),209000,220–255. carbon rubber는 아웃솔 고무 설명.</li><li><a href="https://runrepeat.com/saucony-triumph-24" target="_blank" rel="noopener noreferrer">트라이엄프24 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-triumph-24-review-2026/" target="_blank" rel="noopener noreferrer">트라이엄프24 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "둘다41mm면 같은 쿠션인가요?",
+        "answer": "힐 높이가 비슷해도 앞발 스택·폼·로커와 개인 체감은 다릅니다."
+      },
+      {
+        "question": "평발이면 본디가 더 안전한가요?",
+        "answer": "그런 모델별 임상 우위를 확인하지 못해 기존 처방을 제거했습니다."
+      },
+      {
+        "question": "트라이엄프가2만원 저렴한가요?",
+        "answer": "현재 동시점 본디 한국 가격이 미확인이라2만원 차이로 고정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'incheon-k-marathon',

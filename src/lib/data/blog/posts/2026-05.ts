@@ -2863,174 +2863,39 @@ export const posts_2026_05: BlogPost[] = [
 `,
   },
   {
-    id: 'saucony-ride-18-vs-19-comparison',
-    slug: 'saucony-ride-18-vs-19-comparison',
-    title: '사우코니 라이드 18 vs 19 비교 | 부드러워진 신상 19 살까, 통기성 5/5 가성비 18 살까',
-    description: '라이드 18(255g/159,000원)과 19(278g/179,000원)을 풀데이터로 직접 비교. SCF PWRRUN+ 폼 개선 + 전족부 플랫폼 확장 + 내구성 600 → 700km. 사우코니 데일리 트레이너 입문에 18과 19 중 누가 답인지 상황별 매트릭스.',
-    thumbnail: '/images/blog/saucony-ride-18-vs-19-comparison.webp',
-    author: '산초 에디터',
-    publishedAt: '2026-05-25',
-    category: 'review' as const,
-    readingTime: 9,
-    tags: ['사우코니 라이드', '라이드 18', '라이드 19', '러닝화 비교', '사우코니', '입문화', '데일리 트레이너', '가성비 러닝화'],
+    id: "saucony-ride-18-vs-19-comparison",
+    slug: "saucony-ride-18-vs-19-comparison",
+    title: "라이드18 vs19 — 새 폼·로커·앞코를 비교하고, 미확인 리턴은 비워 두기",
+    description: "255/278g·드롭8.4/8.5mm 검체를 비교합니다. 18의 전족SA·리턴 미확인, 19의 넓은 외부 바닥·내부핏과 한국 SKU별 캐시를 나눕니다.",
+    thumbnail: "/images/shoes/saucony/ride18/side.webp",
+    author: "산초 에디터",
+    publishedAt: "2026-05-25",
+    category: "review",
+    readingTime: 8,
+    tags: [
+      "라이드18",
+      "라이드19",
+      "원문 대조",
+      "핏"
+    ],
     content: `
-<div class="tldr">
-  <span class="tldr-label">3줄 요약</span>
-  <ul>
-    <li><strong>무게를 뺀 대부분에서 점진적 개선의 신상 19</strong> (18 ₩159,000 / 19 ₩179,000) — 무게는 278g으로 23g 늘었지만(RunRepeat 실측) 폼·플랫폼·내구성 3개 동시 보강</li>
-    <li>19의 진짜 변화 3가지: <strong>SCF PWRRUN+ 폼 (단단함 → 부드러움)</strong> + <strong>전족부 플랫폼 확장 (실측 122.1 → 127.1mm, 토박스는 72.8mm 평균 수준)</strong> + <strong>내구성 600 → 700km (km당 ₩265 → ₩256)</strong></li>
-    <li>18 이월 13~14만원대 vs 19 정가 17만 9천원. <strong>가성비는 18 압승, 발볼 넓음 + 부드러움 우선이면 19</strong>가 답</li>
-  </ul>
-</div>
-
-<div class="callout info">
-  <span class="callout-icon">📊</span>
-  <div class="callout-body">
-    <p class="callout-title">이 글의 데이터 소스</p>
-    <p>사우코니 한국 공식몰 가격(2026-05-25 기준) + 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / 경도 41.3 AC 등 Lab 측정치). 양 신발 단독 분석은 <a href="/shoes/saucony-ride-18">라이드 18 상세</a> · <a href="/shoes/saucony-ride-19">라이드 19 상세</a>에서 확인.</p>
-  </div>
-</div>
-
-<h2>한눈에 비교</h2>
-
-<table>
-  <thead>
-    <tr><th>항목</th><th>라이드 18</th><th>라이드 19</th><th>차이</th></tr>
-  </thead>
-  <tbody>
-    <tr><td><strong>출시</strong></td><td>2024년</td><td><strong>2026년</strong></td><td>2년차 vs 신상</td></tr>
-    <tr><td><strong>MSRP</strong></td><td>159,000원</td><td><strong>179,000원</strong></td><td>+20,000원</td></tr>
-    <tr><td><strong>이월/세일가</strong></td><td><strong>130,000~145,000원</strong></td><td>165,000~175,000원</td><td>실제 차이 ~3~4만원</td></tr>
-    <tr><td><strong>무게 (US M9)</strong></td><td>255g</td><td>278g (실측)</td><td><strong>+23g (19가 무거움)</strong></td></tr>
-    <tr><td><strong>힐 스택</strong></td><td>35.0mm</td><td>38.7mm (실측)</td><td>+3.7mm</td></tr>
-    <tr><td><strong>전족부 스택</strong></td><td>26.6mm</td><td>30.2mm (실측)</td><td>+3.6mm</td></tr>
-    <tr><td><strong>드롭</strong></td><td>8.4mm (실측)</td><td>8.5mm (실측)</td><td>거의 동일</td></tr>
-    <tr><td><strong>미드솔</strong></td><td>PWRRUN+</td><td><strong>SCF PWRRUN+ (개선 신소재)</strong></td><td>부드러움 ↑</td></tr>
-    <tr><td><strong>전족부 토박스</strong></td><td>73.0mm (평균 수준)</td><td>72.8mm (평균 수준)</td><td>거의 동일 (전족부 플랫폼은 +5mm)</td></tr>
-    <tr><td><strong>충격흡수 SA (힐)</strong></td><td>141</td><td>132 (실측)</td><td>19가 9 낮음</td></tr>
-    <tr><td><strong>경도 (AC)</strong></td><td>41.3 (단단)</td><td>37.1 (실측)</td><td>부드러움 ↑</td></tr>
-    <tr><td><strong>통기성</strong></td><td>5/5 (구식 측정)</td><td>74 BR (평균 75)</td><td>19는 평균 수준</td></tr>
-    <tr><td><strong>한국 와이드 SKU</strong></td><td>2E 출시 (공식몰 미등재)</td><td>와이드 있음 (공식몰 남녀)</td><td>양쪽 모두 출시 ✅</td></tr>
-    <tr><td><strong>내구성</strong></td><td>600km</td><td><strong>700km</strong></td><td>+100km</td></tr>
-    <tr><td><strong>km당 비용</strong></td><td>약 ₩265</td><td><strong>약 ₩256</strong></td><td>-₩9 개선</td></tr>
-    <tr><td><strong>최적 페이스</strong></td><td>5:00~7:00/km</td><td>5:00~7:00/km</td><td>동일</td></tr>
-  </tbody>
-</table>
-
-<h2>19의 진짜 변화 3가지</h2>
-
-<h3>1. SCF PWRRUN+ 폼 — 단단함에서 부드러움으로</h3>
-
-<p>라이드 18의 PWRRUN+ 폼은 경도 41.3 AC(RunRepeat 실측, 평균 35.4 AC)로 <strong>"단단하고 안정적"</strong>이 핵심 정체성이었습니다. 푹신함을 원하는 러너에겐 아쉬웠고, 일부는 "라이드는 가성비 좋은데 좀 더 부드러웠으면" 평가했습니다.</p>
-
-<p>19는 <strong>SCF PWRRUN+ (Super Critical Foam — 초임계 가스 주입 방식)</strong>으로 개선했습니다. 같은 PWRRUN+ 베이스지만 셀 구조가 더 미세하고 균일해져 <strong>착지 직후 부드러움 + 전환 시 반응성</strong>이 동시에 향상됐습니다. 18의 단단한 느낌이 부담스러웠다면 19가 답.</p>
-
-<h3>2. 전족부 플랫폼 확장 — 토박스 폭은 그대로</h3>
-
-<p>라이드 18의 토박스는 RunRepeat 실측 73.0mm로 평균 수준이고, 랩은 발볼 넓은 러너에게 다소 제한적이라고 평가했습니다. 19는 <strong>전족부 미드솔 폭을 127.1mm(라이드 18 122.1mm)로 넓혀</strong> 착지 플랫폼이 커졌지만, 토박스는 72.8mm로 전작과 거의 같습니다. 발볼이 넓다면 표준(D)보다 한국 공식몰에서 파는 와이드를 고르는 편이 맞습니다.</p>
-
-<h3>3. 내구성 600 → 700km — km당 비용 개선</h3>
-
-<p>전작 대비 <strong>아웃솔 내구성 +100km</strong>. 가격은 +20,000원 올랐지만 내구성 증가 폭이 더 커서 <strong>km당 비용은 ₩265 → ₩256으로 ₩9 개선</strong>됩니다. 신상이 가성비도 동시에 잡은 드문 케이스.</p>
-
-<p>주 3~5회 데일리 훈련 기준 700km는 약 6~8개월 사용 가능. 1년 1켤레 사이클에 정확히 맞아떨어집니다.</p>
-
-<h2>가격 시나리오 — 18 이월 vs 19 신상</h2>
-
-<div class="callout success">
-  <span class="callout-icon">💰</span>
-  <div class="callout-body">
-    <p class="callout-title">2026 5~12월 라이드 가격 전망</p>
-    <ul>
-      <li><strong>지금 (2026 5월):</strong> 18 13~14만원 (이월 풀림) / 19 17만 9천원 정가 → 가성비는 18 압승</li>
-      <li><strong>여름 시즌오프 (7~8월):</strong> 18 12~13만원 / 19 16~17만원 일부 할인 시작 → 18 가성비 정점</li>
-      <li><strong>가을 시즌인 (9~10월):</strong> 18 13만원 (재고 빠르게 감소) / 19 17만원 안정 → 18 사이즈 빠짐 주의</li>
-      <li><strong>블랙프라이데이 (11월):</strong> 18 10~12만원 (특가) / 19 14~15만원 → 양쪽 매력적</li>
-      <li><strong>12월~2027년 1월:</strong> 18 사실상 단종 임박 / 19 14~15만원 안정 → 19 위주로 흐름 전환</li>
-    </ul>
-  </div>
-</div>
-
-<h2>상황별 구매 결정 매트릭스</h2>
-
-<table>
-  <thead>
-    <tr><th>상황</th><th>추천</th><th>이유</th></tr>
-  </thead>
-  <tbody>
-    <tr><td>첫 러닝화 + 가성비 우선</td><td><strong>18 이월 13~14만원</strong></td><td>15만원 이하 진입 + 통기성 5/5 + km당 ₩265</td></tr>
-    <tr><td>발볼 4E급 또는 18 토박스 압박 경험</td><td><strong>19 정가 17~18만원</strong></td><td>공식몰 와이드 선택 가능 (토박스 자체는 72.8mm로 18과 거의 같음)</td></tr>
-    <tr><td>단단한 라이드 + 페이스 감각 선호</td><td>18</td><td>경도 41.3 AC의 직진성·반응성 우위</td></tr>
-    <tr><td>부드러운 쿠셔닝 + 장거리</td><td>19</td><td>SCF PWRRUN+ 의 부드러움이 후반부 결정적</td></tr>
-    <tr><td>주 3~5회 데일리 훈련</td><td>19</td><td>700km 내구성 + km당 ₩256 가성비</td></tr>
-    <tr><td>한여름 한강·서울숲 러닝</td><td>둘 다 OK</td><td>18은 통기성 5/5(구식 측정), 19는 74 BR(평균 75)로 평균 수준. 통기성·가성비는 18 우위</td></tr>
-    <tr><td>과내전·심한 평발</td><td>둘 다 비추</td><td>중립화. <a href="/shoes/saucony-guide-18">사우코니 가이드 18</a>(같은 사우코니 안정화) 또는 <a href="/blog/asics-kayano-32-vs-33-comparison">카야노 32/33</a></td></tr>
-  </tbody>
-</table>
-
-<h2>다른 데일리 트레이너와 비교</h2>
-
-<ul>
-  <li><strong><a href="/shoes/nike-pegasus-41">나이키 페가수스 41</a> (281g, 159,000원)</strong> — 라이드의 직접 경쟁자. 라이드 18보다 26g, 라이드 19보다도 3g 무거움(US M9 기준) + 약간 더 부드러운 폼. <a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 비교 →</a></li>
-  <li><strong><a href="/shoes/hoka-clifton-10">호카 클리프턴 10</a> (275g, 199,000원)</strong> — 라이드 18보다 20g 무거움(라이드 19보다는 3g 가벼움, US M9 기준). 맥스 쿠션 + 강한 록커. 가격은 18보다 +4만원, 19보다 +2만원</li>
-  <li><strong><a href="/shoes/asics-gel-nimbus-28">아식스 님버스 28</a> (278g, 199,000원)</strong> — 라이드 18보다 23g 무거움(라이드 19와 같은 무게, RunRepeat 실측 US M9). 4E 와이드 + 진정한 맥스 쿠션. 가격은 18보다 +4만원, 19보다 +2만원</li>
-  <li><strong><a href="/shoes/brooks-ghost-17">브룩스 고스트 17</a> (289g, 169,000원)</strong> — 가격은 라이드 18보다 1만원 비싸고 19보다 1만원 저렴. 내구성 800km로 최강. 다만 통기성은 라이드가 우위</li>
-</ul>
-
-<h2>FAQ</h2>
-
-<h3>Q. 18 → 19 업그레이드 가치 있나요?</h3>
-<p>18이 500km 안 신었다면 그냥 굴리세요. 18에 큰 불만 없으면 굳이 19로 갈 필요 없음. 반대로 <strong>"18이 단단해서 무릎이 좀 아팠다"</strong>거나 <strong>"토박스가 좁게 느껴졌다"</strong>면 19가 답. 폼은 부드러워졌고(41.3 → 37.1 AC, RunRepeat 실측), 토박스는 72.8mm로 18과 거의 같아 발볼 불만은 19 와이드로 해결하는 편이 맞습니다.</p>
-
-<h3>Q. 라이드와 페가수스 41 중 어느 게 좋나요?</h3>
-<p>가성비는 페가수스 41 이월(12~13만원)이 살짝 우위. <strong>무게 + 통기성 + 가격이라면 라이드 18</strong>(255g, 5/5, 13~14만원)이 답. 페가수스 41은 281g + 통기성 4/5. 여름 한강 러너라면 라이드 추천. 사이즈 자주 빠지는 페가수스 41과 달리 라이드 18은 아직 이월 재고 풍부합니다.</p>
-
-<h3>Q. 라이드는 풀코스 가능한가요?</h3>
-<p><strong>Sub-4 ~ Sub-5 완주 페이스라면 가능</strong>. 단 라이드 18의 35mm 힐 스택(19는 실측 38.7mm)은 30km 이후 후반 보호로는 살짝 부족할 수 있습니다. Sub-3:30 이하 도전이라면 카본 슈즈(<a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4/5</a>) 또는 슈퍼트레이너(<a href="/blog/asics-superblast-2-vs-3-comparison">슈퍼블라스트 2/3</a>) 분리 권장. 라이드는 본질적으로 데일리 + 입문 풀코스용입니다.</p>
-
-<h3>Q. 발볼 4E급 한국 러너인데 라이드 살 수 있나요?</h3>
-<p><strong>둘 다 와이드(2E)가 출시됐습니다</strong>(2026-10-20 한국 공식몰에는 19 와이드만 등재). 19의 표준(D) 토박스는 72.8mm로 18(73.0mm)과 거의 같은 평균 수준이라, 발볼이 넓다면 표준보다 와이드를 고르는 편이 맞습니다. 4E 정도면 19 와이드(2E) 권장. 진짜 4E+라면 <a href="/shoes/new-balance-1080-v15">NB 1080 v15</a>(4E 옵션) 또는 <a href="/shoes/asics-gel-nimbus-28">님버스 28</a>(와이드).</p>
-
-<h3>Q. 라이드 18이 이월 풀려서 사이즈 잘 잡힐까요?</h3>
-<p>작성 시점(2026년 5월 말)에는 인기 사이즈(260~275mm) <strong>이월 재고가 풍부했습니다</strong>. 다만 2026-10-20 확인 기준 한국 공식몰에는 라이드 18이 등재돼 있지 않으니 구매 전 판매처 재고를 먼저 확인하세요. 페가수스 41 이월처럼 빠르게 빠지는 모델 아니라 7~8월 시즌오프 12~13만원 시점까지 충분히 기다릴 수 있습니다. 블프(11월) 10~12만원까지 가능성 있지만 그땐 사이즈 빠짐 주의.</p>
-
-<h2>결론 — 내 추천</h2>
-
-<div class="callout success">
-  <span class="callout-icon">🎯</span>
-  <div class="callout-body">
-    <p class="callout-title">가성비·통기성 vs 부드러움·확장된 핏 — 본인 발 조건이 결정</p>
-    <p><strong>첫 사우코니 데일리 + 가성비 우선</strong>이라면 <a href="/shoes/saucony-ride-18">라이드 18</a> 이월 13~14만원이 거의 무조건 답. 페가수스 41보다 26g 가볍고, 통기성 5/5는 한국 여름 러닝에 결정적. 5만원대 절약은 가성비 카본 한 켤레 추가 가능한 차이.</p>
-    <p><strong>발볼 표준~넓음 + 부드러운 쿠셔닝 우선</strong>이라면 <a href="/shoes/saucony-ride-19">라이드 19</a> 정가 17~18만원. 넓어진 전족부 플랫폼(127.1mm) + SCF PWRRUN+ 부드러움이 18과의 차이이고, 토박스는 18과 거의 같아 발볼이 넓다면 와이드를 고르는 편이 맞습니다. 무게는 278g으로 23g 늘었습니다. 700km 내구성으로 km당 ₩256 가성비도 우위.</p>
-    <p><strong>둘 다 처음이거나 결정 못 한다면</strong> 사우코니 오프라인 매장에서 양쪽 동시 시착이 가장 정확. 라이드 시리즈는 "부드러움 vs 단단함"의 미묘한 차이가 결정 포인트라 매장 비교가 답.</p>
-  </div>
-</div>
-
-<p>본인 발 특성·부상 이력에 맞춘 신발 후보는 <a href="/recommend">1분 러닝화 추천</a>에서 받을 수 있습니다.</p>
-
-<h2>다른 카테고리 세대 비교</h2>
-
-<p>라이드가 "사우코니 데일리 트레이너"라면, 본인 러닝 목적에 맞춰 다음 카테고리도 같이 보세요. 모두 동일 비교 포맷.</p>
-
-<ul>
-  <li><a href="/blog/nike-pegasus-41-vs-42-comparison">페가수스 41 vs 42 — 나이키 데일리 트레이너</a> (라이드 직접 경쟁자)</li>
-  <li><a href="/blog/on-cloudmonster-2-vs-3-comparison">클라우드몬스터 2 vs 3 — 맥스 쿠션</a> (장거리·무릎 보호 중시)</li>
-  <li><a href="/blog/asics-magic-speed-4-vs-5-comparison">매직스피드 4 vs 5 — 가성비 카본 레이서</a> (페이스 훈련 분리용)</li>
-  <li><a href="/blog/saucony-endorphin-pro-4-vs-5-comparison">엔돌핀 프로 4 vs 5 — 같은 사우코니 카본</a> (레이스 분리용)</li>
-  <li><a href="/blog/new-balance-1080-v14-vs-v15-comparison">NB 1080 v14 vs v15 — 4E 와이드 쿠션화</a> (발볼 4E급 대안)</li>
-</ul>
-
-<h2>관련 글</h2>
-
-<ul>
-  <li><a href="/blog/wide-feet-running-shoes-korea">발볼 넓은 한국 러너 추천 신발 — 토박스 실측 정리</a></li>
-  <li><a href="/blog/first-running-shoe-guide-2026">첫 러닝화 고르는 법 2026</a></li>
-  <li><a href="/blog/knee-pain-running-shoes">무릎 통증 러너 신발 가이드</a></li>
-  <li><a href="/blog/running-shoe-lifespan-replacement-guide">러닝화 수명·교체 가이드</a></li>
-</ul>
-
-<p><small>출처: 사우코니 한국 공식몰 가격(2026-05-25 기준) / 라이드 18·19 신발 DB 풀데이터(RunRepeat 141 SA / 54% 에너지 리턴 / 경도 41.3 AC 등 Lab 측정치). 가격은 시즌·세일에 따라 변동되니 구매 시점 공식몰·이월 행사 확인 필수.</small></p>
+<p><strong>2026-11-10 원문 대조 업데이트.</strong> 제조사 공시·실험실 검체·개인 착화 의견과 한국 상품 캐시를 구분합니다. 자체 착화 후기가 아닌 원문 기반 분석입니다.</p><h2>먼저 볼 차이</h2><p>18과19의 RR 검체 무게는255/278g입니다. 공시나 모든 개인 사이즈의23g 변화로 확대하지 않습니다. 19의 큰 외부 전족 바닥은 넓은 발을 무조건 수용한다는 뜻도 아닙니다.</p><p>18의 기존54% 리턴은 이번 정확 원문에서 확인하지 못해 비웠습니다. 없는 값을 채워 신형의 반발 우위나 구형의 가성비 압승을 계산하지 않습니다.</p><figure><img src="/images/shoes/saucony/ride18/side.webp" alt="라이드18 —19와 앞코 공간·로커 전환을 비교" loading="lazy"/><figcaption>라이드18 —19와 앞코 공간·로커 전환을 비교</figcaption></figure><div class="table-wrap"><table><thead><tr><th>모델</th><th>무게 · 공시 출처 별도 표기</th><th>스택·드롭 · 공시 출처 별도 표기</th><th>힐/전족 SA</th><th>힐/전족 리턴</th></tr></thead><tbody><tr><td>saucony-ride-18</td><td>255g</td><td>35/26.6mm · 8.4mm</td><td>141/미확인</td><td>미확인/미확인%</td></tr><tr><td>saucony-ride-19</td><td>278g</td><td>38.7/30.2mm · 8.5mm</td><td>132/118</td><td>66.7/70.7%</td></tr></tbody></table></div><p>표의 값은 RunRepeat 검체 또는 별도 표시한 DOR 소개 공시입니다. DOR 소개는 독립 실측이 아닙니다. 일반 정책은 남성 US9지만 개별 라벨·폭·보정 여부는 미확인입니다. 공시와 동일한 검체로 단정하지 않습니다. SA는 충격흡수, 리턴은 시험에서 반환된 에너지 비율이며 부드러움·개인 기록·임상 보호를 뜻하지 않습니다. HA는 구방식, AC는 별도 경도 척도여서 환산하지 않습니다. <a href="https://runrepeat.com/testing-methodology" target="_blank" rel="noopener noreferrer">RunRepeat 측정법</a></p><h2>가격과 수명으로 승자를 미리 만들지 않기</h2><p>18은 여성 와이드 정확 캐시만 확인했고19도 SKU·성별·폭 조건이 나뉩니다. 현재18 이월13~14만원 대19 정가17.9만원이라는 동시점 비교를 확정하지 않습니다.</p><p>18의600km·19의700km와 km당265/256원, 부드러움이면19가 답이라는 단정은 제거했습니다. 실제 규격에서 달라진 로커 시점과 앞코 공간이 본인에게 필요한 변화인지 확인할 수 있습니다.</p><h2>라이드18 — 핏과 주행에서 갈리는 지점</h2><p>플레이트 없는 중립 구조입니다. 전족 바닥의 플레어와 약한 사이드월을 임상 교정 효과로 해석하지 않습니다.</p><p>RR 내부 최광폭 94.4mm·엄지 73mm·높이 32mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.</p><p>DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 앞발 측면의 낮은 볼륨·초기 테이퍼와 느껴지는 힐 카운터, 어색한 내측 힐 전환을 적었습니다. David(남성 US9.5)는 약간의 앞코 측면 압박은 있었지만 카운터 패딩은 괜찮았고 완만한 로커·균형 있는 전환을 좋아했습니다.</p><h2>라이드18 — 공시·한국 판매 확인 범위</h2><p>DOR 소개 274g(남성 US9)/232g(여성 US8)·37/29mm·8mm와 RR255g·35/26.6mm·8.4mm를 구분합니다. RR 재전재 브랜드269g은 사이즈 미확인입니다.</p><p>한국 공식 캐시: women S11001-105 와이드 (상품명) 정가159,000원·할인캐시103,350원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. 여성 와이드 검색 원문만 확인했고 현재 URL은 홈으로 이동합니다. 남성·다른 폭의 부재나 단종을 뜻하지 않습니다.</p><p>현행 원문에서 전족 SA와 힐/전족 리턴은 미확인입니다. 기존 54% 리턴을 반복하지 않습니다. 41.3AC와 구방식 HA는 환산하지 않습니다. 통기성 구방식5/5로 여름 과열 없음·한국 전천후를 보장하지 않고 600km·km당비용·질환별 보호를 제거했습니다.</p><h2>라이드19 — 핏과 주행에서 갈리는 지점</h2><p>플레이트 없음. 넓은 외부 플랫폼과 내부 발 공간을 구분합니다.</p><p>RR 내부 최광폭96.3mm·엄지72.8mm·높이28.8mm는 한국 와이드 검체라고 확인된 값이 아닙니다. 외부 전족 플랫폼127.1mm와 내부 치수를 혼동하지 않습니다.</p><p>DOR David(남성 US9.5)는 정사이즈·앞발 약간 여유와 낮은 앞발·중족 볼륨을 느꼈습니다. 메시·두꺼운 혀·고정이 편했고 힐 슬립이나 본인의 카운터 마찰은 없었습니다. 이전 Ride보다 속도 활용성이 적어 본인의 쉬운 날을 선호했다고 적었습니다. 높은 기계 리턴이 이 개인 경험을 취소하지 않습니다.</p><h2>라이드19 — 공시·한국 판매 확인 범위</h2><p>DOR 소개255g(남성 US9)·218g(여성 US8),38/30mm·8mm입니다. RR브랜드 메타36/28mm·8mm·255/221g(사이즈 미확인), RR랩278g·38.7/30.2mm·8.5mm와 다릅니다. 확인 한국 와이드의 공시 무게·사이즈 기준은 미확인입니다.</p><p>한국 남성 와이드 IVORY/GUM S21056-102는 W(와이드), 정가179,000원·확인시 할인152,150원이며250~285mm 선택 가능·290~300mm는 품절 표시였습니다. W를 미확인2E 문자로 바꾸지 않습니다. 여성 와이드 카테고리 카드는 확인했지만 정확 SKU·현재 사이즈 상세는 미확인입니다.</p><p>37.1AC는 폼 경도,BR74·건조율54%는 다른 시험입니다. 과거기계실험·다른TPU소재연구를 이 모델700km 수명·무릎 보호·가성비1위로 전용하지 않습니다. 제조사 개선 설명을 모든18사용자의 업그레이드 체감으로 보장하지 않습니다.</p><h2>구매 전에 실제로 확인할 것</h2><p>평소 양말·인솔로 앞쪽 길이와 발톱 위 공간, 끈을 조였을 때 발등 압박, 힐 고정과 칼라 마찰을 확인하세요. 발볼 너비 하나로 전체 핏을 결정하지 않습니다. 교환·반품 조건도 먼저 확인할 수 있습니다.</p><p>트레일에서는 자신의 주요 노면과 오르막·내리막·방향 전환에서 고정과 전환을 살펴야 합니다. 젖은 콘크리트 시험 하나가 바위·진흙 접지를 보장하지 않습니다. 통증·저림을 견뎌야 한다는 규칙이나 모델별 질환 예방 효과는 이번 자료로 확인하지 못했습니다.</p><h2>확인한 원문과 접근 범위</h2><ul><li><a href="https://saucony.co.kr/product/detail.html?cate_no=154&amp;display_group=1&amp;product_no=144" target="_blank" rel="noopener noreferrer">kr-ride18-w</a> — indexed_original_body_only_current_url_redirects_home; 여성 Ride18 와이드 CLOUD/DREAM S11001-105; 소비자/판매159000·할인103350;220–255. 원주소 열기는 홈페이지로 이동.</li><li><a href="https://runrepeat.com/saucony-ride-18" target="_blank" rel="noopener noreferrer">라이드18 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-ride-18-review-2025/" target="_blank" rel="noopener noreferrer">라이드18 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li><li><a href="https://www.saucony.co.kr/product/detail.html?product_no=319&amp;cate_no=120&amp;display_group=1" target="_blank" rel="noopener noreferrer">한국 MEN · S21056-102 · W(와이드)</a> — 확인 상품의 정가·당시 할인·사이즈별 상태만 적용. 결제재고 보장 아님.</li><li><a href="https://www.saucony.co.kr/product/list.html?cate_no=120" target="_blank" rel="noopener noreferrer">한국 카테고리 카드 확인 범위</a> — 카드는 상품 상세의 SKU·재고 확인과 구분. 전체 목록을 모두 검사한 것은 아님.</li><li><a href="https://runrepeat.com/saucony-ride-19" target="_blank" rel="noopener noreferrer">라이드19 RR 원문</a> — 정확 모델 검체. 제조사 공시와 분리.</li><li><a href="https://www.doctorsofrunning.com/saucony-ride-19-review-2026/" target="_blank" rel="noopener noreferrer">라이드19 DOR 원문</a> — 소개 공시·실제 착화 사이즈·개인의견 구분.</li></ul>
 `,
+    updatedAt: "2026-11-10",
+    faqs: [
+      {
+        "question": "18의 리턴54%가 맞나요?",
+        "answer": "이번 정확 현행 원문에서 확인하지 못해 제거했습니다. 19의 값으로 대신 채우지 않습니다."
+      },
+      {
+        "question": "19가 넓은 발에 더 맞나요?",
+        "answer": "외부 플랫폼과 내부 공간은 다릅니다. 실제 규격에서 발등·엄지 높이·중족 고정을 확인하세요."
+      },
+      {
+        "question": "18이 더 가성비인가요?",
+        "answer": "현재 같은 조건의 한국 구매가와 검증된 수명이 미확인이라 단정하지 않습니다."
+      }
+    ],
   },
   {
     id: 'new-balance-860-v14-vs-v15-comparison',

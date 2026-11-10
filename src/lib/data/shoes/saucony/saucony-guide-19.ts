@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-guide-19',
   slug: 'saucony-guide-19',
@@ -15,118 +16,129 @@ export const shoe: Shoe = {
   ],
   category: '안정화',
   rating: 4,
-  status: 'new',
-  price: 179000,
-  description:
-    'Saucony 코어 안정화의 2026년 최신판. 더 부드러워진 PWRRUN 폼과 실측 120mm의 초광폭 플랫폼으로 과내전 러너에게 편안한 지지를 제공하며, 아웃솔 러버가 보강돼 내구성이 개선됐습니다.',
-  oneliner: '더 부드러워진 폼 + 초광폭 플랫폼, 2026년 코어 안정화의 기준점',
-  editorComment:
-    '가이드 19는 "단단한 안정화"라는 가이드 라인의 인상을 바꾼 세대입니다. 새 PWRRUN 배합으로 힐 충격흡수가 전작 124 SA에서 144 SA로 크게 좋아졌고, 전족부 플랫폼 실측 120mm는 랩 기준으로도 가장 넓은 축이라 지지대 없이도 발이 흔들리지 않습니다. 대신 실측 298g(전작 278g)으로 무게가 늘었고 에너지 리턴은 힐 54.8%로 평범해, 경쾌한 반발보다는 편안한 데일리 지향입니다. 국내 공식가는 179,000원입니다(2026-10-20 써코니코리아 공식몰 확인, 할인 없음, 해외 정가 $140). 전작 가이드 18은 2026-10-20 기준 한국 공식몰에서 내려갔습니다.\n\n사이즈·구매 가이드: 핏은 정사이즈 기준이며 가이드 라인은 와이드(2E) 옵션이 꾸준히 유통되는 몇 안 되는 안정화입니다. 드롭은 공식 6mm(실측 6.0mm)로, 8mm 이상 드롭에서 갈아탄다면 종아리 적응 기간을 두세요. 강한 교정이 필요하면 젤카야노 32, 더 푹신한 프리미엄이 필요하면 허리케인 26을 비교 대상으로 보세요.',
-  tags: ['안정화', '데일리', '과내전', '광폭플랫폼'],
-
+  description: 'PWRRUN EVA · TPU 인솔 · CenterPath 구조의 가이드 19. RunRepeat 실험실 검체 298g·37.4/31.4mm. 한국 현재 정가 미확인.',
+  oneliner: 'PWRRUN EVA · TPU 인솔 · CenterPath · 298g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S21058-101 M(일반) 정가179,000원·할인캐시152,150원; men S21059-104 W(와이드) 정가179,000원·할인캐시134,250원; women S11059-142 W(와이드) 정가179,000원·할인캐시152,150원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다. 외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 초기 테이퍼가 완화되고 고정이 좋으며 부드럽지만 반응성과 가이던스 체감은 약하다고 적었습니다. Bach는 앞발 공간은 충분하나 중족 좌우 움직임이 오래 신으면 거슬렸고 본인 착지에서는 더 단단하고 반응이 고르게 느껴졌습니다. Bach 실제 착화 사이즈는 미확인입니다. RR 내부 최광폭 96.2mm·엄지 72.8mm·높이 26.8mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '안정화',
+    '데일리',
+    '광폭플랫폼',
+  ],
   specs: {
     weight: 298,
     cushioning: 9,
     responsiveness: 7,
     stability: 8,
     drop: 6,
-    durability: 600,
   },
-
-  biomechanics: {
-    stackHeight: { heel: 37.4, forefoot: 31.4 },
-    drop: 6,
-    carbonPlate: false,
-    plateType: null,
-    midsoleType: 'PWRRUN (2026 개선 배합)',
-    optimalPace: '5:30-7:30 min/km',
-  },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'caution',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'excellent',
-    wideOptions: true,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   priceAnalysis: {
-    msrp: 179000,
-    streetPrice: 179000,
-    costPerKm: 298,
     valueRating: 7,
     priceTier: 'mid',
-    alternatives: ['saucony-guide-18', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
-    valueAdvantages: [
-      '실측 120mm 초광폭 플랫폼의 자연스러운 안정감',
-      '전작 대비 크게 개선된 힐 충격흡수(124→144 SA)',
-      '아웃솔 러버 보강으로 내구성 개선',
-      '와이드(2E) 옵션 제공',
+    alternatives: [
+      'saucony-guide-18',
+      'asics-gel-kayano-32',
+      'brooks-adrenaline-gts-25',
     ],
   },
-
   targetUsers: {
     recommended: [
-      '가벼운~중간 과내전의 데일리 러너',
-      '단단한 안정화가 부담스러웠던 러너',
-      '발볼이 넓어 와이드 옵션이 필요한 러너',
-      '평발로 넓은 접지면이 필요한 러너',
+      '실제 규격에서 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시와 독립 랩·개인 체감의 차이를 확인하려는 러너',
     ],
     notRecommended: [
-      '경쾌한 반발력을 원하는 러너 (에너지 리턴 평범)',
-      '가벼운 신발이 우선인 러너 (298g)',
-      '8mm 이상 드롭이 꼭 필요한 러너',
+      '시착에서 압박·마찰이나 불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명이나 임상 효과로 읽는 경우',
     ],
   },
-
   features: [
-    '2026년 3월 출시된 가이드 라인 최신판 (해외 정가 $140)',
-    '새 PWRRUN 배합 — 힐 충격흡수 144 SA로 전작 대비 대폭 개선',
-    '전족부 실측 120mm의 초광폭 플랫폼 (랩 최상위권)',
-    '아웃솔 러버 커버리지 보강으로 내구성 향상',
-    '공식 6mm 드롭 · 와이드(2E) 옵션 유통',
-    '에너지 리턴 전족부 61.4% (RunRepeat 실측)',
+    'PWRRUN EVA · TPU 인솔 · CenterPath',
+    '298g · 37.4/31.4mm · 드롭 6mm (RunRepeat 실험실 검체)',
+    '넓은 바닥·높은 사이드월·비대칭 림·로커를 사용합니다. 전통 메디얼 포스트가 없다는 설명과 별도 플레이트 유무는 다릅니다. 플레이트 소재·유무의 명시적 근거는 미확인입니다.',
+    'RR 내부 최광폭 96.2mm·엄지 72.8mm·높이 26.8mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
   ],
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 84,
-      text: '가이드 19의 핵심 변화는 "부드러워진 지지"입니다. 랩 실측에서 힐 충격흡수가 144 SA로 전작(124 SA)보다 확연히 좋아졌고, 전족부 120mm 플랫폼은 메디얼 포스트 없이 폭 자체로 안정감을 만듭니다. 대신 298g으로 가벼운 신발은 아니고 에너지 리턴(힐 54.8%)도 평범해서, 템포런보다는 6~7분대 데일리 조깅과 장거리 이지런에 최적화된 세팅입니다. 아웃솔 러버가 보강돼 마모 걱정이 줄어든 것도 데일리 소모품 관점에서 실질적인 개선입니다. 국내 공식가는 179,000원입니다(2026-10-20 공식몰 확인, 할인 없음).',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-guide-19',
+      text: 'DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다. 외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다.',
     },
     {
-      userType: '세대 비교 — 부드러워졌지만 무거워졌다',
-      text: '이전 세대와 비교하면 착지가 눈에 띄게 부드러워지면서도 안쪽으로 쏠리는 움직임은 그대로 잡아줍니다. 전족부 플랫폼이 120mm(RunRepeat 실측)로 넓고, 와이드·엑스트라 와이드 옵션이 있어 발볼 대응도 됩니다. 반대로 무게가 늘어 빠른 세션에는 다른 신발이 필요합니다. 6mm 드롭은 며칠 수준의 짧은 적응으로 넘어가는 편입니다.',
-    },
-    {
-      userType: '예상 적합 — 첫 안정화, 적응 부담이 적다',
-      text: '안정화를 처음 신는 단계에 적응 부담이 적은 구성입니다. 지지가 개입하는 느낌이 뚜렷하지 않고 일반 데일리처럼 굴러가는 성격이라, 교정되는 감각이 불편했던 경우에도 무리가 없습니다. 쿠션도 부드러운 편이라 5km급 조깅에서 관절 부담이 줄어듭니다. 다만 무게가 있어 인터벌 같은 빠른 훈련에서는 둔하게 느껴지므로, 데일리 한 켤레 용도로 보는 편이 맞습니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-guide-19-review-2026/',
+      text: 'DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10)는 초기 테이퍼가 완화되고 고정이 좋으며 부드럽지만 반응성과 가이던스 체감은 약하다고 적었습니다. Bach는 앞발 공간은 충분하나 중족 좌우 움직임이 오래 신으면 거슬렸고 본인 착지에서는 더 단단하고 반응이 고르게 느껴졌습니다. Bach 실제 착화 사이즈는 미확인입니다.',
     },
   ],
-
   detailedSpecs: {
-    weight: '298g (남성 US 9 기준, RunRepeat 실측 — 매체별 275~298g 편차)',
-    stackHeight: '힐 37.4mm / 포어풋 31.4mm (RunRepeat 실측)',
-    drop: '6mm (공식·실측 동일)',
-    midsole: 'PWRRUN (2026 개선 배합) · 에너지 리턴 힐 54.8% (전족부 값 없음 — 반응성 점수는 힐 기준)',
-    plate: '없음',
-    outsole: '러버 보강 아웃솔 (전작 대비 커버리지 확대)',
-    upper: '엔지니어드 메쉬',
-    width: '표준 — RunRepeat 실측 토박스 72.8mm(평균 73.2mm), 전족부 플랫폼 120.0mm(평균 115.1mm) · 한국 공식몰 와이드(남녀)·엑스트라 와이드(남성) 판매(2026-10-20 확인)',
-    durability: '600km',
-    price: '179,000원 (국내 공식가, 2026-10-20 써코니코리아 공식몰 확인, 할인 없음) · 해외 정가 $140',
-    costPerKm: '약 ₩298/km (600km 기준, 잠정가 기준)',
-    footType: '가벼운~중간 과내전 / 평발 데일리 러너',
-    landingPattern: '힐~미드풋 스트라이크',
+    weight: '298g (RunRepeat 실험실 검체). DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다.',
+    stackHeight: '37.4/31.4mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '6mm (RunRepeat 실험실 검체). DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다.',
+    midsole: 'PWRRUN EVA · TPU 인솔 · CenterPath. 주폼 30.5AC, 힐/전족부 SA 144/133·에너지 리턴 54.8/61.4%. 외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다.',
+    plate: '넓은 바닥·높은 사이드월·비대칭 림·로커를 사용합니다. 전통 메디얼 포스트가 없다는 설명과 별도 플레이트 유무는 다릅니다. 플레이트 소재·유무의 명시적 근거는 미확인입니다.',
+    width: 'RR 내부 최광폭 96.2mm·엄지 부위 72.8mm·높이 26.8mm. RR 내부 최광폭 96.2mm·엄지 72.8mm·높이 26.8mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: men S21058-101 M(일반) 정가179,000원·할인캐시152,150원; men S21059-104 W(와이드) 정가179,000원·할인캐시134,250원; women S11059-142 W(와이드) 정가179,000원·할인캐시152,150원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.',
   },
-
-  similarShoes: ['saucony-guide-18', 'asics-gel-kayano-32', 'brooks-adrenaline-gts-25'],
-  purchaseLinks: [{ store: '네이버', url: 'https://search.shopping.naver.com/search/all?query=써코니+가이드+19' }, { store: '쿠팡', url: 'https://link.coupang.com/a/g5Zh1wozTM' }],
+  similarShoes: [
+    'saucony-guide-18',
+    'asics-gel-kayano-32',
+    'brooks-adrenaline-gts-25',
+  ],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://search.shopping.naver.com/search/all?query=써코니+가이드+19',
+    },
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5Zh1wozTM',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr-guide19-m',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=53&product_no=373',
+        note: 'original_opened_cached_web; 남성 S21058-101 TRIPLE BLACK, M(일반),179000/할인152150,250–300. 구매/품절 문구 병존.',
+      },
+      {
+        label: 'kr-guide19-mw',
+        url: 'https://www.saucony.co.kr/product/detail.html?cate_no=226&display_group=1&product_no=580',
+        note: 'original_opened_cached_web; 남성 S21059-104 FOSSIL/SHADOW W(와이드),179000/할인134250,250–300.',
+      },
+      {
+        label: 'kr-guide19-ww',
+        url: 'https://saucony.co.kr/product/new-%EC%97%AC%EC%84%B1-%EA%B0%80%EC%9D%B4%EB%93%9C-19-%EC%99%80%EC%9D%B4%EB%93%9C-celestial/364/',
+        note: 'original_opened_cached_web; 여성 S11059-142 CELESTIAL W(와이드),179000/할인152150,220–255.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-guide-19',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 298g·37.4/31.4mm·6mm. 외부 전족 플랫폼120mm는 내부 발볼120mm가 아닙니다. Matt와 Bach의 부드러움·반응 체감은 하나로 합치지 않습니다. 한국 W/M을 2E/D로 바꾸거나 글로벌 X-Wide를 한국 판매 증거로 쓰지 않습니다. 교정 보장·드롭별 적응 기간·600km 수명을 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-guide-19-review-2026/',
+        note: 'DOR 소개 275g(남성 US9)/252g(여성 US8)·35/29mm·6mm와 RR298g·37.4/31.4mm·6mm는 같은 검체로 확인한 값이 아닙니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

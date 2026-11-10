@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-endorphin-elite-3',
   slug: 'saucony-endorphin-elite-3',
@@ -13,88 +14,134 @@ export const shoe: Shoe = {
   ],
   category: '레이싱',
   rating: 5,
-  price: 369000,
-  description:
-    'Saucony 최상위 카본 마라톤 레이싱화의 신형. 역대 최고 반발의 IncrediRUN 폼은 유지하되, 측면 컷아웃 제거로 안정성을 높여 전작의 약점을 손봤습니다. 토박스는 RunRepeat 실측 71.8mm로 여전히 좁습니다. 2026년 7월 1일 한국 출시.',
-  oneliner: '80%대 반발은 그대로, 안정성을 손본 엘리트 신형 — 토박스는 여전히 좁다',
-  editorComment:
-    'RunRepeat 랩 실측(남성 US 9 기준)으로 무게 210g, 스택 힐 39.8mm·전족부 34.1mm, 드롭 5.7mm(브랜드 공식 8mm), 충격흡수 힐 160 SA·전족부 131 SA, 에너지 리턴 힐 80.6%·전족부 81.0%가 확인됐습니다.\n\n엘리트 3는 "괴물 같은 반발이지만 너무 불안정하고 발볼이 좁다"던 엘리트 2의 약점을 정확히 겨냥한 업데이트입니다. 미드솔 측면의 깊은 컷아웃을 메우고 힐·측면 폼 볼륨을 키워 안정성을 끌어올렸고(RunRepeat도 "Improved stability over previous version"으로 평가하되 여전히 불안정한 편이라고 봤습니다), 카본 플레이트를 평탄형에서 리지드+포크 형태로 바꿔 앞쪽 추진력을 강화했습니다. 다만 토박스는 RunRepeat 실측 71.8mm(평균 73.2mm)로 랩이 "heavily tapered"라고 평가해, 엘리트 2(71.0mm)와 마찬가지로 발볼 넓은 한국 러너에게는 불리합니다. 무게는 실측 210g으로 전작(197g)보다 13g 늘었지만, IncrediRUN 폼의 80%대 반발은 계승됩니다. 카본 반응은 개인차가 큽니다(연구상 ±11%p) — 특히 엘리트 3처럼 강성 높은 포크 카본은 최적 강성을 넘으면 오히려 효율이 나빠질 수 있으니, 대회 전 본인 페이스 검증이 필수입니다.\n\n사이즈·구매 가이드: 와이드 옵션이 없고 토박스가 좁아(RunRepeat 실측 71.8mm) 발볼이 넓다면 시착이 필수입니다. RunRepeat은 사이즈가 약간 작게(Slightly small) 나온다고 평가했습니다. 정가 369,000원에 200km 레이스 전용 운용 기준 km당 약 1,845원으로, 오직 대회·포인트 훈련에만 꺼내 신는 무기입니다. 힐 카운터가 없어 아킬레스 부착부 통증(하글런드 변형 포함) 러너에게는 레이싱화 중 최선의 선택지입니다. 같은 엘리트급으로는 알파플라이 3·메타스피드 스카이+, 검증된 전작 엘리트 2가 대안입니다.',
-  tags: ['레이싱', '카본', '엘리트', '슈퍼화', '에너지 리턴'],
+  description: 'IncrediRUN · 분기·슬롯형 카본 구조의 엔돌핀 엘리트 3. RunRepeat 실험실 검체 210g·39.8/34.1mm. 한국 현재 정가 미확인.',
+  oneliner: 'IncrediRUN · 분기·슬롯형 카본 · 210g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: unisex S100981-1021 M(일반) 정가369,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10·실측223g)는 조금 밀착되지만 늘어나는 어퍼와 바운스를 좋아했으나 회전 때 미끄러짐·제어 한계를 적었습니다. Andrea는 반 사이즈 올려 편한 사각형 앞코·힐 고정을 느꼈지만 빠른 코너에서 튕겨 나가는 듯했습니다. Andrea의 실제 숫자 사이즈는 미확인입니다. RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '레이싱',
+    '카본',
+    '엘리트',
+    '슈퍼화',
+    '에너지 리턴',
+  ],
   specs: {
     weight: 210,
     cushioning: 10,
     responsiveness: 10,
     stability: 5,
     drop: 5.7,
-    durability: 200,
   },
   biomechanics: {
-    stackHeight: { heel: 39.8, forefoot: 34.1 },
+    stackHeight: {
+      heel: 39.8,
+      forefoot: 34.1,
+    },
     drop: 5.7,
     carbonPlate: true,
-    plateType: 'curved',
-    midsoleType: 'IncrediRUN TPEE',
-    optimalPace: '3:00-4:30 min/km',
-  },
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'excellent',
-    kneeIssues: 'caution',
-    shinSplints: 'good',
+    plateType: 'Slotted/forked carbon plate',
+    midsoleType: 'IncrediRUN · 분기·슬롯형 카본',
   },
   koreanFootFit: {
     toBoxWidth: 'narrow',
-    flatFootCompatibility: 'poor',
-    wideOptions: false,
     winterCompatibility: 'fair',
     summerCompatibility: 'good',
   },
   targetUsers: {
-    recommended: ['엘리트 러너', '풀마라톤 레이스', '서브-3 목표', '아킬레스 부착부 통증 러너', '발볼이 좁거나 표준인 레이서'],
-    notRecommended: ['입문 러너', '데일리 트레이닝', '과내전·평발 러너', '단단한 바닥감 선호'],
+    recommended: [
+      '실제 규격에서 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시와 독립 랩·개인 체감의 차이를 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰이나 불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명이나 임상 효과로 읽는 경우',
+    ],
   },
-  features: ['IncrediRUN TPEE 미드솔(80%대 반발 계승)', '리지드+포크 카본 플레이트(추진력 강화)', '측면 컷아웃 제거로 안정성 개선', '토박스 71.8mm (RunRepeat 실측, 좁음)', '210g (RunRepeat 실측)'],
+  features: [
+    'IncrediRUN · 분기·슬롯형 카본',
+    '210g · 39.8/34.1mm · 드롭 5.7mm (RunRepeat 실험실 검체)',
+    'RR은 분기형·스푼형, DOR은 fluted 카본으로 설명합니다. 카본의 형상과 전체 폼의 부드러움을 별도로 읽습니다.',
+    'RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+  ],
   priceAnalysis: {
-    msrp: 369000,
-    streetPrice: 369000,
-    costPerKm: 1845,
     valueRating: 5,
     priceTier: 'super-premium',
-    alternatives: ['nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+    alternatives: [
+      'nike-alphafly-3',
+      'asics-metaspeed-sky-plus',
+      'adidas-adios-pro-4',
+    ],
   },
   detailedSpecs: {
-    weight: '210g (RunRepeat 실측, 남성 US 9 기준) — 전작 197g 대비 +13g',
-    stackHeight: '힐 39.8mm / 포어풋 34.1mm (RunRepeat 실측)',
-    drop: '5.7mm (RunRepeat 실측) · 브랜드 공식 8mm',
-    midsole: 'IncrediRUN TPEE 더블레이어 — 에너지 리턴 힐 80.6%·전족부 81.0%, 경도 15.5 AC (RunRepeat 실측)',
-    plate: '슬롯형 카본 플레이트 (리지드+포크 신설계)',
-    outsole: 'PWRTRAC',
-    upper: '신축성 니트 메쉬 (전작 대비 부드러움·레이스 바이트 개선)',
-    width: '좁음 (D 단일) — RunRepeat 실측 토박스 71.8mm(평균 73.2mm), 랩: "The toebox is heavily tapered… There\'s very little room for natural toe splay here" · 와이드 없음(2026-10-20 한국 공식몰 확인)',
-    durability: '200km+ (레이스 전용)',
-    price: '369,000원 (한국 공식, 7/1 론칭)',
-    costPerKm: '약 ₩1,845/km (200km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '210g (RunRepeat 실험실 검체). DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다.',
+    stackHeight: '39.8/34.1mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '5.7mm (RunRepeat 실험실 검체). DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다.',
+    midsole: 'IncrediRUN · 분기·슬롯형 카본. 주폼 15.5AC, 힐/전족부 SA 160/131·에너지 리턴 80.6/81%. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다.',
+    plate: 'RR은 분기형·스푼형, DOR은 fluted 카본으로 설명합니다. 카본의 형상과 전체 폼의 부드러움을 별도로 읽습니다.',
+    width: 'RR 내부 최광폭 93.8mm·엄지 부위 71.8mm·높이 27.5mm. RR 내부 최광폭 93.8mm·엄지 71.8mm·높이 27.5mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: unisex S100981-1021 M(일반) 정가369,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.',
   },
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 87,
-      text: '엘리트 2의 두 가지 약점(낮은 안정성, 좁은 토박스)을 정조준한 신형입니다. 미드솔 측면 컷아웃을 메우고 폼 볼륨을 키워 안정성을 높였고, 카본 플레이트를 포크 형태로 재설계해 앞쪽 추진력을 강화했습니다. IncrediRUN 폼의 80%대 반발은 유지되며(RunRepeat 실측 에너지 리턴 힐 80.6%·전족부 81.0%, 충격흡수 힐 160 SA), 다만 토박스는 실측 71.8mm로 여전히 좁아 발볼 넓은 한국 러너에게는 불리합니다. 무게도 실측 210g으로 13g 늘어 가장 가볍고 예리한 레이서를 찾는 러너에겐 아쉬울 수 있습니다. 369,000원에 200km 레이스 전용이라 km당 약 1,845원, 오직 대회용 무기입니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-endorphin-elite-3',
+      text: 'DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다.',
     },
     {
-      userType: 'Believe in the Run 리뷰 요약',
-      text: 'Tier B(퍼포먼스 A)로, "교회에서나 받을 법한 용서"라는 표현이 나올 만큼 폼이 부드럽고 포용력이 큽니다. 롱런과 템포 훈련, 레이스데이 모두에서 탄력적인 즐거움을 주는 라이드예요. 전작 대비 안정성이 개선됐지만, 폼이 워낙 부드러워 강하게 밀어붙이는 구간에서는 단단한 신뢰감이 살짝 부족할 수 있습니다. 공격적인 속도감과 바닥감을 원하는 러너보다는, 편안하면서도 빠른 포용형 슈퍼슈즈를 원하는 러너에게 맞습니다.',
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-endorphin-elite-3-review-2026/',
+      text: 'DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR Matt(남성 US10·실측223g)는 조금 밀착되지만 늘어나는 어퍼와 바운스를 좋아했으나 회전 때 미끄러짐·제어 한계를 적었습니다. Andrea는 반 사이즈 올려 편한 사각형 앞코·힐 고정을 느꼈지만 빠른 코너에서 튕겨 나가는 듯했습니다. Andrea의 실제 숫자 사이즈는 미확인입니다.',
     },
-    {
-        userType: '의학·멀티테스터 관점(DOR·RTR) — 아킬레스 부담이 있는 경우',
-        text: '힐 카운터가 없어 아킬레스 부착부 통증이나 하글런드 변형이 있는 러너에게 레이싱화 중 최선으로 평가됩니다. 토박스는 RunRepeat 실측 71.8mm(평균 73.2mm)로 랩이 "heavily tapered"라 평가해 넓은 발에는 맞지 않을 수 있고, 측면 컷아웃 제거로 미드풋이 채워져 중립 안정성이 B+ 수준으로 올라왔습니다. 다만 비틀림 강성이 낮아 코너나 요철 노면에서는 불안정하니 평탄한 코스(하프~풀마라톤)에 어울립니다. 부드러운 미드솔 특성상 평발·과내전 러너에게는 지지가 부족해 권하지 않습니다. 마라톤 페이스(km당 4:30~5:20)에서 5인 테스터 전원이 에너지를 느꼈다는 평가입니다.',
-      },
   ],
-  similarShoes: ['saucony-endorphin-elite-2', 'nike-alphafly-3', 'asics-metaspeed-sky-plus', 'adidas-adios-pro-4'],
+  similarShoes: [
+    'saucony-endorphin-elite-2',
+    'nike-alphafly-3',
+    'asics-metaspeed-sky-plus',
+    'adidas-adios-pro-4',
+  ],
   relatedPosts: [
-    { slug: 'running-shoe-plate-guide-2026', title: '플레이트 완전 해설 — 카본·유리섬유·나일론' },
+    {
+      slug: 'running-shoe-plate-guide-2026',
+      title: '플레이트 완전 해설 — 카본·유리섬유·나일론',
+    },
   ],
-  purchaseLinks: [{ store: '네이버', url: 'https://naver.me/5394IQWo' }],
+  purchaseLinks: [
+    {
+      store: '네이버',
+      url: 'https://naver.me/5394IQWo',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr-elite3',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=1&display_group=2&product_no=479',
+        note: 'original_opened_cached_web; S100981-1021 공용 WHITE/MULTI M(일반),369000;220–300,7.0oz(204g)사이즈미공시;40mm폼/슬롯카본 제조사설명.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-endorphin-elite-3',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 210g·39.8/34.1mm·5.7mm. DOR 인솔 비분리와 RR 분리 가능은 상충합니다. RR 늦은 로커와 Andrea의 이른 로커 체감도 나눕니다. non-Newtonian은 제조사 주장으로 귀속하며 임상 물성이 아닙니다. 힐 카운터 부재만으로 아킬레스·하글런드에 최선이라고 보장하지 않습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-endorphin-elite-3-review-2026/',
+        note: 'DOR 소개207g(남성 US9)/184g(여성 US8)·39.5/31.5mm·8mm와 RR210g·39.8/34.1mm·5.7mm, 한국204g(기준 사이즈 미공시)을 구분합니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };

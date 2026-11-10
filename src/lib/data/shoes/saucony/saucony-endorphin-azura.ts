@@ -1,5 +1,6 @@
 import type { Shoe } from '@/types/shoe';
 
+// 원문 재확인:2026-11-10. 확인 범위와 한계는 verification 참조.
 export const shoe: Shoe = {
   id: 'saucony-endorphin-azura',
   slug: 'saucony-endorphin-azura',
@@ -15,93 +16,132 @@ export const shoe: Shoe = {
   ],
   category: '데일리',
   rating: 4,
-  status: 'new',
-  price: 189000,
-  description: '써코니의 논-플레이트 데일리 퍼포먼스 트레이너. PWRRUN PB 슈퍼폼과 SPEEDROLL 지오메트리로 카본 없이도 빠르고 매끄러운 전환을 제공합니다.',
-  oneliner: '241g에 PWRRUN PB 슈퍼폼, 플레이트 없는 데일리 스피드',
-  editorComment: '엔돌핀 아주라는 엔돌핀 스피드에서 나일론 플레이트를 빼고 스택을 40mm로 높인 "플레이트리스 퍼포먼스 트레이너"입니다. PWRRUN PB 슈퍼폼과 SPEEDROLL 로커가 만드는 스냅피한 전환감이 핵심이며, 이지런부터 템포런까지 다양한 페이스에서 자연스러운 라이드를 제공합니다. 18만 9천원으로 스피드 5(21만 9천원)보다 3만원 저렴하면서 일상 훈련에 더 적합합니다. 경쟁 모델은 아디다스 에보 SL, 뉴발란스 레벨 v5, 푸마 벨로시티 나이트로 4입니다.\n\n사이즈·구매 가이드: 토박스가 표준 폭이며 와이드 옵션이 없으므로, 발볼이 넓다면 반 사이즈 업 또는 시착을 권장합니다. 정가 189,000원에 예상 수명 500~700km(추정) 기준 km당 약 270~380원입니다. 같은 데일리 퍼포먼스 트레이너로는 아디제로 Evo SL·레벨 V5가 대안입니다.',
-  tags: ['데일리', '퍼포먼스 트레이너', '논플레이트', '스피드'],
-
+  description: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음 구조의 엔돌핀 아주라. RunRepeat 실험실 검체 241g·40.7/32.7mm. 한국 현재 정가 미확인.',
+  oneliner: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음 · 241g (RunRepeat 실험실 검체)',
+  editorComment: '2026-11-10 원문 재확인. 한국 공식 캐시: men S101329-1041 M(일반) 정가189,000원; women S11070-124 M(일반) 정가189,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다. DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다. David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다. DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 폭과 조금 넓은 앞발, 자극 없는 힐을 느끼고 단단한 폼과 늦은 로커를 다용도로 좋아했지만 느린 움직임은 덜 매끄러웠습니다. Andrea는 길이 때문에 반 사이즈 올렸어도 내측 뒤쪽 사이드월과 강한 토스프링이 불편해 짧은 이지런에만 받아들였습니다. Andrea 실제 숫자 사이즈는 미확인입니다. RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요. 자체 착화 후기가 아닌 원문 기반 에디터 분석입니다.',
+  tags: [
+    '데일리',
+    '퍼포먼스 트레이너',
+    '논플레이트',
+    '스피드',
+  ],
   specs: {
     weight: 241,
     cushioning: 8,
     responsiveness: 9,
     stability: 6,
     drop: 8,
-    durability: 600,
   },
-
   biomechanics: {
-    stackHeight: { heel: 40.7, forefoot: 32.7 },
+    stackHeight: {
+      heel: 40.7,
+      forefoot: 32.7,
+    },
     drop: 8,
     carbonPlate: false,
     plateType: null,
-    midsoleType: 'PWRRUN PB',
-    optimalPace: '4:00-6:00 min/km',
+    midsoleType: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음',
   },
-
-  injuryPrevention: {
-    plantarFasciitis: 'good',
-    achillesTendinopathy: 'good',
-    kneeIssues: 'good',
-    shinSplints: 'good',
-  },
-
   koreanFootFit: {
     toBoxWidth: 'standard',
-    flatFootCompatibility: 'good',
-    wideOptions: false,
     winterCompatibility: 'good',
     summerCompatibility: 'good',
   },
-
   targetUsers: {
-    recommended: ['데일리 퍼포먼스 훈련', '템포런~이지런 겸용', '가벼운 트레이너 선호', '엔돌핀 라인 입문'],
-    notRecommended: ['대회 레이싱', '안정화 필요 러너', '맥시멀 쿠셔닝 선호'],
+    recommended: [
+      '실제 규격에서 앞코·중족·힐 고정을 비교하려는 러너',
+      '공시와 독립 랩·개인 체감의 차이를 확인하려는 러너',
+    ],
+    notRecommended: [
+      '시착에서 압박·마찰이나 불편한 전환이 남는 경우',
+      '국소 마모·개인 경험을 공통 수명이나 임상 효과로 읽는 경우',
+    ],
   },
-
-  features: ['PWRRUN PB 슈퍼폼', 'SPEEDROLL 로커 지오메트리', 'XT-900 아웃솔', '논-플레이트 디자인', '241g (RunRepeat 실측)'],
-
+  features: [
+    'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음',
+    '241g · 40.7/32.7mm · 드롭 8mm (RunRepeat 실험실 검체)',
+    '플레이트와 별도 강성 보강재가 없는 구조입니다. 플레이트 부재를 발목·아킬레스 부담 감소라는 임상 효과로 바꾸지 않습니다.',
+    'RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+  ],
   priceAnalysis: {
-    msrp: 189000,
-    costPerKm: 315,
     valueRating: 8,
     priceTier: 'mid',
-    alternatives: ['adidas-adizero-evo-sl', 'new-balance-rebel-v5', 'puma-velocity-nitro-4'],
+    alternatives: [
+      'adidas-adizero-evo-sl',
+      'new-balance-rebel-v5',
+      'puma-velocity-nitro-4',
+    ],
   },
-
   detailedSpecs: {
-    weight: '241g (RunRepeat 실측, 남성 US 9 기준) · 브랜드 공식 240g',
-    stackHeight: '힐 40.7mm / 포어풋 32.7mm (RunRepeat 실측) · 브랜드 공식 40/32mm',
-    drop: '8.0mm (RunRepeat 실측) · 브랜드 공식 8mm',
-    midsole: 'PWRRUN PB (PEBA 기반 슈퍼폼) · 경도 40.2 AC(RunRepeat 실측, 평균 35.4 AC보다 단단) · 에너지 리턴 전족부 74.7%',
-    plate: '없음',
-    outsole: 'XT-900 러버',
-    upper: '엔지니어드 메쉬',
-    width: '표준 (D) — RunRepeat 실측 토박스 72.2mm(평균 73.2mm), 랩: "should work well for most runners" · 와이드 없음(2026-10-20 한국 공식몰 확인)',
-    durability: '600km',
-    price: '₩189,000',
-    costPerKm: '약 ₩315/km (600km 기준)',
-    footType: '중립',
-    landingPattern: '중족부/전족부 착지',
+    weight: '241g (RunRepeat 실험실 검체). DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다.',
+    stackHeight: '40.7/32.7mm (RunRepeat 실험실 검체, 힐/전족부). 출처별 다른 공시는 무게 항목 참조.',
+    drop: '8mm (RunRepeat 실험실 검체). DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다.',
+    midsole: 'PWRRUN PB 비즈 PEBA · SPEEDROLL · 플레이트 없음. 주폼 40.2AC, 힐/전족부 SA 137/122·에너지 리턴 70.6/74.7%. David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다.',
+    plate: '플레이트와 별도 강성 보강재가 없는 구조입니다. 플레이트 부재를 발목·아킬레스 부담 감소라는 임상 효과로 바꾸지 않습니다.',
+    width: 'RR 내부 최광폭 94mm·엄지 부위 72.2mm·높이 28.3mm. RR 내부 최광폭 94mm·엄지 72.2mm·높이 28.3mm입니다. 전체 발 적합성이나 한국 와이드 규격으로 바꾸지 말고 실제 길이·높이·고정을 함께 확인하세요.',
+    durability: '검증된 공통 수명 km 미확인. 국소 마모·짧은 착화 후기를 주행 수명으로 환산하지 않습니다.',
+    price: '한국 공식 캐시: men S101329-1041 M(일반) 정가189,000원; women S11070-124 M(일반) 정가189,000원. 현재 가격·폭별 선택 재고는 미확인입니다. 옵션 목록·장바구니·품절 문구를 현재 전체 재고로 해석하지 않습니다. 한국 무게·전체 스택 공시가 없는 제품은 해외 소개로 채우지 않습니다.',
   },
-
   reviews: [
     {
-      userType: '에디터 분석',
-      rating: 84,
-      text: '18만 9천원에 PWRRUN PB 슈퍼폼을 데일리 트레이너에 담은 것이 아주라의 가치입니다. 플레이트 없이도 SPEEDROLL 로커가 빠른 전환을 만들어주고, 40.7mm 힐 스택(RunRepeat 실측)에 8mm 드롭 구성으로 장거리에서도 쿠셔닝을 유지합니다. 241g에 힐 137 SA(RunRepeat 실측, 평균 131 SA) 충격흡수로 무릎 보호가 좋고, 전족부 에너지 리턴 74.7%로 스피드 5(78.2%)보다 낮아 5K 인터벌용 반발은 한 단계 아래지만 6분/km 이지런부터 4:30/km 템포런까지 편안하게 커버합니다. 600km 내구성에 km당 약 315원으로 가성비 우수합니다. 토박스가 표준 사이즈라 발볼 넓은 한국 러너는 반드시 시착하세요. 와이드 옵션이 없어 넓은 발볼 러너는 반사이즈 업을 고려해야 합니다. 평발 러너에게도 40mm 스택 쿠셔닝이 충분한 보호를 제공합니다.',
+      userType: '원문 기반 에디터 분석',
+      source: 'editor',
+      sourceUrl: 'https://runrepeat.com/saucony-endorphin-azura',
+      text: 'DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다. David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다.',
     },
     {
-        userType: '모델 선택 — 아주라 vs 엔돌핀 스피드 5',
-        text: '같은 라인에서 데일리용을 고를 때, 아주라는 플레이트가 없는 쪽입니다. 발목·아킬레스에 걸리는 부담이 적어 매일 신기에 적합하고, 241g(RunRepeat 실측)의 무게라 주 40km 수준의 훈련량에서도 다리에 남는 피로가 적습니다. SPEEDROLL 지오메트리가 5분/km 안팎에서 전환을 매끄럽게 만듭니다. 반대로 반발 자체는 경쟁 모델인 아디제로 에보 SL(209,000원)보다 약한 편이라, 바운스를 우선한다면 그쪽이 맞습니다. 와이드 옵션이 없어 발볼이 넓다면 반 치수 업이 필요하고, 내구성 600km로 운용 비용은 무난합니다.',
-      },
-    {
-        userType: '모델 선택 — 라이드 계열에서 올라오는 단계',
-        text: '기본 데일리에서 퍼포먼스 트레이너로 한 단계 올라가는 지점에 맞습니다. 라이드 계열과 비교하면 241g(RunRepeat 실측)으로 가볍고 반응이 빠른 대신, 40mm 스택으로 쿠션량은 유지해 급격한 변화가 아닙니다. 플레이트가 없어 발목·아킬레스 부담도 적어 적응 기간이 짧습니다. 토박스 폭이 넉넉한 편은 아니라 발볼이 넓으면 주의가 필요하고, 189,000원·km당 약 315원입니다.',
-      },
+      userType: '외부 착화 의견 요약 · Doctors of Running',
+      source: 'editor',
+      sourceUrl: 'https://www.doctorsofrunning.com/saucony-endorphin-azura-review-2026/',
+      text: 'DOR 직접403 이후 검색에 노출된 원문 캐시를 확인했습니다. DOR David(남성 US9.5)는 정사이즈·보통 폭과 조금 넓은 앞발, 자극 없는 힐을 느끼고 단단한 폼과 늦은 로커를 다용도로 좋아했지만 느린 움직임은 덜 매끄러웠습니다. Andrea는 길이 때문에 반 사이즈 올렸어도 내측 뒤쪽 사이드월과 강한 토스프링이 불편해 짧은 이지런에만 받아들였습니다. Andrea 실제 숫자 사이즈는 미확인입니다.',
+    },
   ],
-
-  similarShoes: ['adidas-adizero-evo-sl', 'new-balance-rebel-v5', 'puma-velocity-nitro-4', 'saucony-endorphin-speed-5'],
-  purchaseLinks: [{ store: '쿠팡', url: 'https://link.coupang.com/a/g5ZeyJm3Cm' }],
+  similarShoes: [
+    'adidas-adizero-evo-sl',
+    'new-balance-rebel-v5',
+    'puma-velocity-nitro-4',
+    'saucony-endorphin-speed-5',
+  ],
+  purchaseLinks: [
+    {
+      store: '쿠팡',
+      url: 'https://link.coupang.com/a/g5ZeyJm3Cm',
+    },
+  ],
+  verification: {
+    checkedAt: '2026-11-10',
+    scope: '한국 상품 조건, 해외 실험실·제조사 공시와 외부 착화 의견의 확인 범위를 구분했습니다. 제품 전체 검증 완료 표지가 아닙니다.',
+    sources: [
+      {
+        label: 'kr-azura-m',
+        url: 'https://www.saucony.co.kr/product/detail.html?cate_no=1&display_group=4&product_no=471',
+        note: 'original_opened_cached_web; S101329-1041 남성 WHITE/MULTI M(일반),189000;250–300,8.5oz(240g)사이즈미공시,논플레이트.',
+      },
+      {
+        label: 'kr-azura-w',
+        url: 'https://saucony.co.kr/product/detail.html?cate_no=82&display_group=1&product_no=309',
+        note: 'original_opened_cached_web; S11070-124 여성 WHITE/SPLASH M(일반),189000;220–255,8.5oz(212g)원문그대로·사이즈미공시.',
+      },
+      {
+        label: 'RunRepeat 동세대 실험실 원문',
+        url: 'https://runrepeat.com/saucony-endorphin-azura',
+        note: '공시 일반 검체 정책은 남성 US9. 실제 검체 라벨·폭 미확인. 241g·40.7/32.7mm·8mm. David의 다용도 선호와 Andrea의 단단함·로커 불호를 합쳐 모두에게 편한 데일리라고 정하지 않습니다. BLACK/QUARTZ 170,100원은 검색 캐시 할인이며 열린 캐시와 다르고 현재 가격은 미확인입니다. 반업 일괄 권장·와이드 부재·600km·무릎 보호를 제거했습니다.',
+      },
+      {
+        label: 'Doctors of Running 동세대 원문',
+        url: 'https://www.doctorsofrunning.com/saucony-endorphin-azura-review-2026/',
+        note: 'DOR 소개240g(남성 US9)/212g(여성 US8)·40/32mm·8mm와 RR241g·40.7/32.7mm·8mm를 구분합니다. 한국 남성240g·여성212g은 기준 사이즈 미공시이고 여성8.5oz표기는 DOR7.5oz와 달라 g값만 그대로 남깁니다.',
+      },
+      {
+        label: 'RunRepeat 측정법',
+        url: 'https://runrepeat.com/testing-methodology',
+        note: 'AC·HA·HC, SA·에너지 리턴, BR·구방식1~5와 내부/외부 폭을 구분합니다. 일반 정책은 개별 라벨 확인과 다릅니다.',
+      },
+    ],
+    limitations: [
+      '모델별 임상 예방·치료 등급, 공통 최적 페이스·주행 수명·km당 비용은 미확인으로 제거했습니다.',
+      '에디터 평점·1~10점·발볼 및 계절 분류·구매 링크는 모든 항목을 새로 검증한 수치나 임상 효과가 아닙니다.',
+      '판매 조건은 확인한 상품·시점에 한정합니다. 미확인을 미출시·단종·전국 재고 없음으로 해석하지 않습니다.',
+    ],
+  },
 };
