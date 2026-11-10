@@ -91,6 +91,16 @@ export function HeroSection({ shoe, brandTechnologyUrl }: HeroSectionProps) {
               images={images}
               alt={`${shoe.brand} ${shoe.name}`}
             />
+            {(shoe.imageCaption || shoe.imageSource) && (
+              <p className="mt-3 text-xs leading-relaxed text-secondary">
+                {shoe.imageCaption}{" "}
+                {shoe.imageSource && (
+                  <a href={shoe.imageSource.url} target="_blank" rel="noopener noreferrer" className="underline">
+                    {shoe.imageSource.title}
+                  </a>
+                )}
+              </p>
+            )}
           </div>
 
           <div className="mt-6 space-y-4">

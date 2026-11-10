@@ -117,6 +117,8 @@ export interface Shoe {
   rating?: number; // 산정 근거·조건이 있는 편집 평가만
   image?: string;
   images?: string[];  // 여러 이미지 (슬라이더용)
+  imageCaption?: string;
+  imageSource?: { title: string; url: string };
   status?: ShoeStatus;
   // 검색 색인 제외 플래그. 페이지는 정상 렌더되나 robots noindex 처리.
   // 검색 수요 0인 초니치 변종이 동일 시리즈 상위 모델의 검색을 갉아먹는 카니발라이제이션 방지용.
