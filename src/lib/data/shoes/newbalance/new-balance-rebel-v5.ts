@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "new-balance-rebel-v5",
     brand: "New Balance",
     name: "레벨 V5",
+  imageCaption: "레벨 V5 사진은 뉴발란스 MFCXLD5(Raincloud / Mineral / White) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.com/pd/fuelcell-rebel-v5/MFCXLD5-D-09.html"},
     image: "/images/shoes/newbalance/rebelv5/side.webp",
     images: [
       "/images/shoes/newbalance/rebelv5/side.webp",

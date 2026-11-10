@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "new-balance-balos-v1",
     brand: "New Balance",
     name: "발로스 V1",
+  imageCaption: "발로스 V1 사진은 뉴발란스 MBAL7K8(Afterglow / Dry Lime / Wakame) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.co.ae/en/men/shoes/running/MBALV1-50403.html"},
     image: "/images/shoes/newbalance/balosv1/side.webp",
     images: [
       "/images/shoes/newbalance/balosv1/side.webp",

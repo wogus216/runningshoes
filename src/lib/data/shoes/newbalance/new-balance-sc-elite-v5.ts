@@ -6,13 +6,11 @@ export const shoe: Shoe = {
     slug: "new-balance-sc-elite-v5",
     brand: "New Balance",
     name: "SC Elite V5",
-    image: "/images/shoes/newbalance/scelitev5/side.webp",
+  imageCaption: "SC Elite V5 일반판 MRCELLR5(Urgent Red / White / Black) 공식 사진입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.co.ae/en/men/shoes/running/MRCELV5-50683-PMG-APAC.html"},
+    image: "/images/shoes/newbalance/scelitev5/standard-side.webp",
     images: [
-      "/images/shoes/newbalance/scelitev5/side.webp",
-      "/images/shoes/newbalance/scelitev5/front.webp",
-      "/images/shoes/newbalance/scelitev5/back.webp",
-      "/images/shoes/newbalance/scelitev5/top.webp",
-      "/images/shoes/newbalance/scelitev5/outsole.webp"
+      "/images/shoes/newbalance/scelitev5/standard-side.webp"
     ],
     category: "레이싱",
     description: "PEBA 기반 FuelCell 이중층 · Energy Arc 카본 구조의 SC Elite V5. 실험실 198g·힐/전족부 39.3/28.6mm. 한국 현재 정가 미확인.",

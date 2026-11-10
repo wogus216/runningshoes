@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "new-balance-880-v15",
     brand: "New Balance",
     name: "880 V15",
+  imageCaption: "880 V15 사진은 뉴발란스 M880K15(Black / Black Metallic) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.com/pd/fresh-foam-x-880v15/M880K15-D-115.html"},
     image: "/images/shoes/newbalance/880v15/side.webp",
     images: [
       "/images/shoes/newbalance/880v15/side.webp",

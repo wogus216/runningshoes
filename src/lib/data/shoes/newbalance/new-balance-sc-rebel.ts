@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'new-balance-sc-rebel',
   brand: 'New Balance',
   name: 'SC Rebel V1',
+  imageCaption: "SC Rebel 사진은 뉴발란스 MREBX4A2(Pistachio Butter / Morel) 공식 이미지와 대조했습니다. 한국 공식 갤러리 기록이 있으나 사진 품번을 한국 현재 판매 조건으로 읽지 마세요.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.com/pd/supercomp-rebel/MREBX4A2-D-14.html"},
   image: '/images/shoes/newbalance/screbel/side.webp',
   images: [
     '/images/shoes/newbalance/screbel/side.webp',

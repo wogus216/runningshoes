@@ -6,13 +6,15 @@ export const shoe: Shoe = {
     slug: "new-balance-860-v15",
     brand: "New Balance",
     name: "860 V15",
-    image: "/images/shoes/newbalance/860v15/side.webp",
+  imageCaption: "860 V15 사진은 뉴발란스 M8605OQ(Grey Matter / Sea Salt) 공식 이미지와 대조했습니다. 한국 상품 기록의 품번과 동일 파일인지 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.com/pd/fresh-foam-x-860v15/M8605OQ-2E-16.html"},
+    image: "/images/shoes/newbalance/860v15/angle.webp",
     images: [
-      "/images/shoes/newbalance/860v15/side.webp",
+      "/images/shoes/newbalance/860v15/angle.webp",
       "/images/shoes/newbalance/860v15/front.webp",
       "/images/shoes/newbalance/860v15/back.webp",
       "/images/shoes/newbalance/860v15/top.webp",
-      "/images/shoes/newbalance/860v15/angle.webp"
+      "/images/shoes/newbalance/860v15/side.webp"
     ],
     category: "안정화",
     price: 189000,

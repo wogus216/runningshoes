@@ -6,6 +6,8 @@ export const shoe: Shoe = {
     slug: "new-balance-sc-trainer-v3",
     brand: "New Balance",
     name: "SC Trainer V3",
+  imageCaption: "SC Trainer V3 사진은 뉴발란스 MRCXLW4(White / Cyber Jade / Silver Metallic / Deep Sea) 공식 이미지와 모델·색상·구도를 대조했습니다. 원본 파일 경로는 미확인입니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 이미지 CDN","url":"https://nb.scene7.com/is/image/NB/mrcxlw4_nb_02_i?fmt=webp&wid=880&hei=880"},
     image: "/images/shoes/newbalance/sctrainerv3/side.webp",
     images: [
       "/images/shoes/newbalance/sctrainerv3/side.webp",

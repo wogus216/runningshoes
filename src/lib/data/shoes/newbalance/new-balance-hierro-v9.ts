@@ -6,6 +6,8 @@ export const shoe: Shoe = {
   slug: 'new-balance-hierro-v9',
   brand: 'New Balance',
   name: '히에로 v9',
+  imageCaption: "히에로 V9 사진은 뉴발란스 MTHIERV9(Desert Clay / Earth Shadow / Urgent Red) 공식 이미지와 대조했습니다. 갤러리의 사선 사진은 밑창 사진이 아닙니다. 사진 품번은 한국 현재 판매 조건을 뜻하지 않습니다.",
+  imageSource: {"title":"New Balance 상품 갤러리","url":"https://www.newbalance.co.uk/pd/fresh-foam-x-hierro-v9/MTHIERV9-D-09.html"},
   image: '/images/shoes/newbalance/hierrov9/side.webp',
   images: [
     '/images/shoes/newbalance/hierrov9/side.webp',
